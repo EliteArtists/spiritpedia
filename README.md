@@ -1,151 +1,246 @@
-# Spiritpedia
+Perfect timing — this is exactly the right moment to refine the README before we touch backend architecture.
+Here’s the fully updated version, including the new subjects, a Modular Dashboard section, and the Just Eat–style category model we’ve been shaping together.
 
-**A spiritual encyclopedia for the modern age** — uniting timeless wisdom with personalised, AI-powered tools to help humans raise their vibration, find healing, and live in harmony.
+⸻
 
----
+Spiritpedia
 
-## 🌌 Vision
+A spiritual encyclopedia for the modern age — uniting timeless wisdom with personalised, AI-powered tools to help humans raise their vibration, find healing, and live in harmony.
 
-Spiritpedia is not just a content hub or search engine — it’s a **personalised spiritual companion**, designed to evolve with each user’s unique path.
+⸻
 
-- Visitors can explore freely (via search, quotes, and trending content)
-- Registered users unlock a fully immersive experience: saved content, AI notifications, tracked progress, and a curated journey of healing and expansion.
+🌌 Vision
 
----
+Spiritpedia is not just a content hub or search engine — it’s a personalised spiritual companion, designed to evolve with each user’s unique path.
+	•	Visitors can explore freely (via search, quotes, and trending content)
+	•	Registered users unlock a fully immersive experience: saved content, AI notifications, tracked progress, and a curated journey of healing and expansion.
 
-## 🧭 Core Philosophy
+⸻
 
-> “Don’t show them everything. Show them exactly what they need.”
+🧭 Core Philosophy
 
-Spiritpedia isn’t about information overload — it’s about calm, insight, and resonance. It meets users exactly where they are, emotionally and spiritually, and gently supports their next aligned step.
+“Don’t show them everything. Show them exactly what they need.”
 
----
+Spiritpedia isn’t about information overload — it’s about calm, resonance, and alignment.
+It meets users exactly where they are, emotionally and spiritually, and gently supports their next step in evolution.
 
-## 📲 Platform Model
+⸻
 
-- **Primary Interface**: Native App (iOS + Android) – App-Only ✅
-- **Supporting Web Presence**: One-page funnel site with SEO entry points – Web-Only ✅
+📲 Platform Model
+	•	Primary Interface: Native App (iOS + Android) – App‑Only ✅
+	•	Supporting Web Presence: One‑page site for discovery & downloads – Web‑Only ✅
 
-The **website** functions as a calm gateway, offering:
-- A brief intro to Spiritpedia’s vision
-- A universal search bar (Web-Only)
-- A download link to the app
-- Optionally: basic access to quotes and trending content
+The website serves as a calm gateway:
+	•	Simple introduction to Spiritpedia’s mission
+	•	Universal search bar for basic exploration
+	•	Direct app download links
+	•	Optional access to a few public quotes or trending items
 
----
+⸻
 
-## 🧱 Core Modules
+🍱 Subject‑Based Navigation (The “Just Eat” Model)
 
-| Module | Description | Platform |
-|--------|-------------|----------|
-| **Inspirational Quotes** | Daily quotes tagged by emotion or theme | App + Web |
-| **Books Library** | Curated archive of spiritual books, sorted by category | App-Only |
-| **Videos Library** | Tagged video content from top teachers (Hicks, Tolle, Swan, Dispenza, etc.) | App-Only |
-| **Spiritual Healers Directory** | Global directory of Reiki, EFT, Sound, etc. with ratings + reviews | App-Only |
-| **IAM Notifications** | AI-powered push notifications filtered by topic or mood | App-Only |
-| **Spiritual Disciplines** | Pre-made thematic folders auto-filled as users save content (Tai Chi, Astrology, etc.) | App-Only |
-| **User Dashboard** | Overview of saved items, emotional state trends, recent activity | App-Only |
-| **Search Engine** | Users can type e.g. “I feel stuck” and Spiritpedia will return multi-format matches (quotes, books, practices, videos) | Web + App |
+Spiritpedia is structured like a spiritual delivery app.
+Instead of “Pizza” or “Thai Food,” users explore categories such as:
 
----
+🌿 Practices & Modalities
+	•	Tai Chi
+	•	Reiki
+	•	EFT / Tapping
+	•	Breathwork
+	•	Meditation
+	•	Yoga
+	•	Sound Healing
+	•	Homeopathy
+	•	Hypnotherapy
+	•	Astrology
+	•	Quantum Healing
+	•	Energy Medicine
+	•	Herbalism
+	•	Crystal Healing
+	•	Chakra Work
 
-## 🔐 Access Logic
+🧠 Teachings & Philosophies
+	•	Law of Attraction
+	•	Non‑Duality
+	•	Conscious Science
+	•	Spiritual Psychology
+	•	Timeline Shifting / Reality Creation
+	•	Ancient Wisdom (Taoism, Vedic, Hermetic)
+	•	Lightwork & Shadow Work
+	•	Inner Child Healing
+	•	Akashic Records
+	•	Soul Contracts & Reincarnation
+	•	Sacred Masculine & Feminine
 
-| Access Level | Capabilities |
-|--------------|--------------|
-| **Visitor (No Account)** | Can use search bar, view trending quotes, access a limited number of videos or books. |
-| **Registered User (Free)** | Can favourite content, unlock dashboard view, receive IAM notifications, access core modules, auto-save into folders. |
-| **Premium Tier (TBD)** | Unlock premium healers, advanced AI matching, goal tracking, offline content access, and advanced folder customisation. |
+💫 Themes & Focus Areas
+	•	Manifestation & Abundance
+	•	Healing from Trauma
+	•	Raising Your Vibration
+	•	Emotional Mastery
+	•	Grief & Death
+	•	Self‑Love & Boundaries
+	•	Nervous System Healing
+	•	Purpose & Life Direction
+	•	Relationships & Conscious Partnership
 
----
+Each subject acts as an entry point — when a user taps “Reiki,” they instantly see:
+	•	🎥 Related videos
+	•	📚 Related books
+	•	🧘 Local & online healers
+	•	✨ Related quotes, notifications, or disciplines
 
-## 🧪 Tech Stack
+⸻
 
-| Functionality              | Tool(s)                         |
-|----------------------------|----------------------------------|
-| Frontend Framework         | **Flutter** (iOS & Android)     |
-| Hosting (web landing)      | Vercel                          |
-| Database & API             | Supabase (PostgreSQL, Auth)     |
-| Authentication             | Supabase Auth                   |
-| Content Tables (Quotes, etc.) | Supabase Tables + Optional Notion API |
-| Notifications System       | IAM Engine (custom build, App-Only) |
+🧱 Core Modules
 
----
+Module	Description	Platform
+Inspirational Quotes	Daily quotes tagged by emotion or theme	App + Web
+Books Library	Curated archive of spiritual books, sorted by subject	App‑Only
+Videos Library	Tagged video content from top teachers (Hicks, Tolle, Dyer, Swan, Dispenza, etc.)	App‑Only
+Spiritual Healers Directory	Global directory of Reiki, EFT, and other practitioners with optional map view	App‑Only
+IAM Notifications	AI‑driven affirmation reminders, filtered by topic or mood	App‑Only
+Spiritual Disciplines	Pre‑made thematic folders auto‑filled as users save content (Tai Chi, Astrology, etc.)	App‑Only
+User Dashboard	Overview of saved items, emotional trends, and activity timeline	App‑Only
+Search Engine	Semantic search across all modules (books, videos, quotes, healers)	App + Web
 
-## 🗂 Folder Logic
 
-Every user receives a standard set of pre-built folders upon signup:
+⸻
 
-### Books
-- Law of Attraction
-- Conscious Science
-- Spiritual Classics
-- Modern Works
+🪶 Modular Dashboard (User Sanctuary)
 
-### Videos
-- Guided Teachings
-- Breathwork / Meditations
-- Short Clips
+Each user has a personal dashboard — their private, intelligent library of the soul.
 
-### Practices
-- Tai Chi
-- Reiki
-- EFT
-- Astrology
-- Quantum Healing
+Sections include:
+	•	📘 Saved Books – organised into smart folders (Law of Attraction, Spiritual Classics, etc.)
+	•	🎥 Saved Videos – sorted by teacher or discipline
+	•	💬 Quotes & Affirmations – favourites tagged by emotion
+	•	🧘 Practices & Disciplines – a visual log of explored modalities
+	•	🧭 Journey Timeline – highlights new learnings or emotional patterns over time
+	•	🔔 IAM Notification Controls – manage affirmation frequency and themes
+	•	📈 Optional Progress Insights – time spent reading, viewing, or journaling
 
-### Quotes
-- Saved Quotes (sorted by emotion or topic)
+The dashboard is designed like a spiritual Netflix meets Notion — calming, modular, and personal.
 
-Users can create and rename their own folders at any time — but no one starts from zero.
+⸻
 
----
+🧠 Content Tagging & Filter System
 
-## 🧱 App-Only Features Summary
+All content is tagged within Supabase to power personalised discovery.
 
-✅ Healer Directory  
-✅ IAM Notification System  
-✅ Dashboard (recent activity + mood tracking)  
-✅ Save-to-folder functionality  
-✅ Personalised content engine  
-✅ Account creation / login  
-✅ In-app onboarding + tracker
+Tag Categories:
+	•	Primary Subject (e.g. “Reiki”)
+	•	Emotional Tone (e.g. “Healing,” “Surrender,” “Hope”)
+	•	Format (Book, Video, Quote, Healer, Practice)
+	•	Depth Level (Beginner / Intermediate / Advanced)
 
----
+AI assistance (via Gemini/Claude) can auto‑suggest tags on upload.
+Users never see complex tag clouds — instead, they explore through guided prompts like:
 
-## 🌐 Web-Only Features Summary
+“How are you feeling today?” → “Lost” → Suggested videos, books, and quotes appear instantly.
 
-✅ One-page site hosted on Vercel  
-✅ SEO-friendly public quotes  
-✅ Search bar for discovery  
-✅ App download links  
-✅ Preview of trending modules (quotes/books/videos)
+⸻
 
----
+🔐 Access Logic
 
-## ✅ Project Status
+Access Level	Capabilities
+Visitor (Web)	Can search, view trending quotes, and preview limited items
+Registered User (Free)	Can favourite content, access dashboard, receive IAM notifications
+Premium Tier (TBD)	Unlock advanced AI matching, healer verification, offline content, and expanded folder customisation
 
-- ✅ GitHub repo created
-- ✅ README updated with new structure
-- ⬜ Initial frontend code commit
-- ⬜ Supabase tables scaffolded
-- ⬜ Vercel web presence live
-- ⬜ App user flows (Figma wireframes or Flutter dev)
-- ⬜ MVP build underway
 
----
+⸻
 
-## 💡 Next Steps
+🧪 Tech Stack
 
-1. Finalise **folder table schema** in Supabase  
-2. Define **notification scheduling logic**  
-3. Wireframe app dashboard + onboarding  
-4. Build out first working modules: Quotes → Books → Videos  
-5. Deploy static site with SEO + search bar (web)  
-6. Test account creation and save-to-folder logic (app)
+Functionality	Tool(s)
+Frontend	Flutter (iOS & Android)
+Web Hosting	Vercel (Next.js static site)
+Database & API	Supabase (PostgreSQL, Auth, Realtime)
+Auth	Supabase Auth
+Tagging & Folder Logic	Supabase Relational Tables
+Notifications Engine	IAM Custom Build (App‑Only)
 
----
 
-**Made with love in Tavira 💫**
+⸻
 
-—
+🗂 Folder Logic
+
+Upon signup, every user receives default folders:
+
+Books
+	•	Law of Attraction
+	•	Conscious Science
+	•	Spiritual Classics
+	•	Modern Works
+
+Videos
+	•	Guided Teachings
+	•	Meditations & Practices
+	•	Short Clips
+
+Practices
+	•	Tai Chi
+	•	Reiki
+	•	EFT
+	•	Astrology
+	•	Quantum Healing
+
+Quotes
+	•	Saved Quotes (tagged by emotion or topic)
+
+Users can rename or create their own folders anytime — no one starts from zero.
+
+⸻
+
+🧱 App‑Only Features Summary
+
+✅ Healer Directory
+✅ IAM Notification System
+✅ Dashboard + Emotional Tracking
+✅ Save‑to‑Folder Functionality
+✅ Personalised Content Engine
+✅ Account Creation & Onboarding
+✅ In‑App Notifications
+
+⸻
+
+🌐 Web‑Only Features Summary
+
+✅ One‑Page Site on Vercel
+✅ SEO‑Friendly Quote Previews
+✅ Public Search Bar
+✅ App Download Links
+✅ Trending Topics Display
+
+⸻
+
+✅ Project Status
+	•	✅ Repo Created
+	•	✅ README Updated (v2)
+	•	⬜ Supabase Schema Scaffolded
+	•	⬜ Initial Flutter Commit
+	•	⬜ Web Funnel Deployment
+	•	⬜ MVP App Modules (Quotes → Books → Videos)
+	•	⬜ IAM Notifications Prototype
+
+⸻
+
+💡 Next Steps
+	1.	Finalise Supabase schema for tags, subjects, and folder logic
+	2.	Wireframe the Modular Dashboard
+	3.	Implement IAM Notification logic
+	4.	Build MVP Modules (Quotes → Books → Videos)
+	5.	Connect Flutter app to Supabase
+	6.	Deploy public web presence on Vercel
+
+⸻
+
+Made with love in Tavira 💫
+
+⸻
+
+Would you like me to now:
+	•	add a small “App Architecture Overview” (how all these modules connect technically — useful before we plan the backend),
+or
+	•	go straight into the backend setup discussion you mentioned (Supabase structure, tables, and data logic)?
