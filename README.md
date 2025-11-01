@@ -1,72 +1,151 @@
 # Spiritpedia
 
-**A modern spiritual encyclopedia** bridging science and spirituality — featuring tools, teachings, and practices for raising consciousness.
+**A spiritual encyclopedia for the modern age** — uniting timeless wisdom with personalised, AI-powered tools to help humans raise their vibration, find healing, and live in harmony.
 
-## 🌍 Vision
+---
 
-Spiritpedia is not just a search engine or content hub — it's a personalised spiritual companion. Visitors can browse by topic (e.g. Law of Attraction, Reiki, Tai Chi), but the real value unlocks once a user creates an account and begins:
+## 🌌 Vision
 
-- Favouriting content
-- Receiving custom notifications
-- Saving quotes, books, and videos into pre-made thematic folders
-- Connecting with local or online healers
-- Tracking their spiritual journey over time
+Spiritpedia is not just a content hub or search engine — it’s a **personalised spiritual companion**, designed to evolve with each user’s unique path.
+
+- Visitors can explore freely (via search, quotes, and trending content)
+- Registered users unlock a fully immersive experience: saved content, AI notifications, tracked progress, and a curated journey of healing and expansion.
+
+---
+
+## 🧭 Core Philosophy
+
+> “Don’t show them everything. Show them exactly what they need.”
+
+Spiritpedia isn’t about information overload — it’s about calm, insight, and resonance. It meets users exactly where they are, emotionally and spiritually, and gently supports their next aligned step.
+
+---
+
+## 📲 Platform Model
+
+- **Primary Interface**: Native App (iOS + Android) – App-Only ✅
+- **Supporting Web Presence**: One-page funnel site with SEO entry points – Web-Only ✅
+
+The **website** functions as a calm gateway, offering:
+- A brief intro to Spiritpedia’s vision
+- A universal search bar (Web-Only)
+- A download link to the app
+- Optionally: basic access to quotes and trending content
+
+---
 
 ## 🧱 Core Modules
 
-- **Inspirational Quotes** – Daily quotes, tagged by emotional states
-- **Books** – Searchable archive of spiritual books, with subfolders like "Spiritual Classics", "Law of Attraction", "Science & Spirituality"
-- **Videos** – Tagged video content from teachers like Hicks, Tolle, Dyer, Swan, Dispenza
-- **Healers Directory** – Find local or online healers (Reiki, Sound Healing, EFT, etc.)
-- **IAM Notifications** – Daily or weekly positive affirmations & reminders, filtered by emotion or topic
-- **Spiritual Disciplines** – Pre-populated folders (e.g. Tai Chi, Homeopathy, Astrology, Quantum Healing, etc.) auto-filled as user favourites content
-- **User Dashboard** – Overview of saved items, emotional trends, recent searches
-- **Search Engine** – Users can type how they feel (e.g., “I feel lost”) and Spiritpedia returns content across quotes, books, videos, and practices
+| Module | Description | Platform |
+|--------|-------------|----------|
+| **Inspirational Quotes** | Daily quotes tagged by emotion or theme | App + Web |
+| **Books Library** | Curated archive of spiritual books, sorted by category | App-Only |
+| **Videos Library** | Tagged video content from top teachers (Hicks, Tolle, Swan, Dispenza, etc.) | App-Only |
+| **Spiritual Healers Directory** | Global directory of Reiki, EFT, Sound, etc. with ratings + reviews | App-Only |
+| **IAM Notifications** | AI-powered push notifications filtered by topic or mood | App-Only |
+| **Spiritual Disciplines** | Pre-made thematic folders auto-filled as users save content (Tai Chi, Astrology, etc.) | App-Only |
+| **User Dashboard** | Overview of saved items, emotional state trends, recent activity | App-Only |
+| **Search Engine** | Users can type e.g. “I feel stuck” and Spiritpedia will return multi-format matches (quotes, books, practices, videos) | Web + App |
+
+---
+
+## 🔐 Access Logic
+
+| Access Level | Capabilities |
+|--------------|--------------|
+| **Visitor (No Account)** | Can use search bar, view trending quotes, access a limited number of videos or books. |
+| **Registered User (Free)** | Can favourite content, unlock dashboard view, receive IAM notifications, access core modules, auto-save into folders. |
+| **Premium Tier (TBD)** | Unlock premium healers, advanced AI matching, goal tracking, offline content access, and advanced folder customisation. |
+
+---
 
 ## 🧪 Tech Stack
 
-| Functionality            | Tool(s)                |
-|--------------------------|------------------------|
-| Frontend Framework       | React + Tailwind       |
-| Hosting                  | Vercel                 |
-| Database & API           | Supabase (PostgreSQL, Auth, Realtime) |
-| Auth & Profile Storage   | Supabase Auth + Relational Tables |
-| Quotes, Videos, Books    | Supabase Tables + optional Airtable/Notion API |
-| Notifications System     | IAM Engine (planned)   |
+| Functionality              | Tool(s)                         |
+|----------------------------|----------------------------------|
+| Frontend Framework         | **Flutter** (iOS & Android)     |
+| Hosting (web landing)      | Vercel                          |
+| Database & API             | Supabase (PostgreSQL, Auth)     |
+| Authentication             | Supabase Auth                   |
+| Content Tables (Quotes, etc.) | Supabase Tables + Optional Notion API |
+| Notifications System       | IAM Engine (custom build, App-Only) |
 
-## 🔒 Access Stages
+---
 
-- **Visitor (Not Logged In)**: Can use search, see trending items, and preview quotes
-- **Registered User**: Can favourite content, receive notifications, auto-save to pre-made folders, and unlock dashboard view
+## 🗂 Folder Logic
 
-## 🗂 Folder System Logic
+Every user receives a standard set of pre-built folders upon signup:
 
-Every user receives a standard set of folders upon signup:
+### Books
+- Law of Attraction
+- Conscious Science
+- Spiritual Classics
+- Modern Works
 
-- **Books**
-  - Law of Attraction
-  - Spiritual Classics
-  - Modern Works
-  - Conscious Science
-- **Videos**
-  - Guided Teachings
-  - Short Clips
-  - Practices (e.g., breathwork, meditations)
-- **Practices**
-  - Tai Chi
-  - Reiki
-  - EFT
-  - Homeopathy
-  - Astrology
-- **Quotes**
-  - Saved Quotes (tagged by emotion or topic)
+### Videos
+- Guided Teachings
+- Breathwork / Meditations
+- Short Clips
 
-User can add their own folders, but this baseline ensures no one starts “empty.”
+### Practices
+- Tai Chi
+- Reiki
+- EFT
+- Astrology
+- Quantum Healing
 
-## 🚀 Status
+### Quotes
+- Saved Quotes (sorted by emotion or topic)
+
+Users can create and rename their own folders at any time — but no one starts from zero.
+
+---
+
+## 🧱 App-Only Features Summary
+
+✅ Healer Directory  
+✅ IAM Notification System  
+✅ Dashboard (recent activity + mood tracking)  
+✅ Save-to-folder functionality  
+✅ Personalised content engine  
+✅ Account creation / login  
+✅ In-app onboarding + tracker
+
+---
+
+## 🌐 Web-Only Features Summary
+
+✅ One-page site hosted on Vercel  
+✅ SEO-friendly public quotes  
+✅ Search bar for discovery  
+✅ App download links  
+✅ Preview of trending modules (quotes/books/videos)
+
+---
+
+## ✅ Project Status
 
 - ✅ GitHub repo created
-- ⬜ README completed
-- ⬜ Initial commit of frontend code
-- ⬜ Vercel & Supabase linked
-- ⬜ MVP launch checklist started
+- ✅ README updated with new structure
+- ⬜ Initial frontend code commit
+- ⬜ Supabase tables scaffolded
+- ⬜ Vercel web presence live
+- ⬜ App user flows (Figma wireframes or Flutter dev)
+- ⬜ MVP build underway
+
+---
+
+## 💡 Next Steps
+
+1. Finalise **folder table schema** in Supabase  
+2. Define **notification scheduling logic**  
+3. Wireframe app dashboard + onboarding  
+4. Build out first working modules: Quotes → Books → Videos  
+5. Deploy static site with SEO + search bar (web)  
+6. Test account creation and save-to-folder logic (app)
+
+---
+
+**Made with love in Tavira 💫**
+
+—
