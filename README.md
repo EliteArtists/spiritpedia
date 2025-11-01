@@ -235,7 +235,3 @@ Made with love in Tavira 💫
 
 ⸻
 
-Would you like me to now:
-	•	add a small “App Architecture Overview” (how all these modules connect technically — useful before we plan the backend),
-or
-	•	go straight into the backend setup discussion you mentioned (Supabase structure, tables, and data logic)?
