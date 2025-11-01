@@ -24,3 +24,11 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+/*
+  This is our custom-defined blue gradient for the hero section,
+  based on the Spiritpedia mockup. We can use "hero-gradient"
+  in our components now.
+*/
+.hero-gradient {
+  background: linear-gradient(135deg, #2563eb 0%, #3730a3 100%);
+}
