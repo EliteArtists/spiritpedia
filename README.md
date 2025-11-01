@@ -1,8 +1,3 @@
-Perfect timing — this is exactly the right moment to refine the README before we touch backend architecture.
-Here’s the fully updated version, including the new subjects, a Modular Dashboard section, and the Just Eat–style category model we’ve been shaping together.
-
-⸻
-
 Spiritpedia
 
 A spiritual encyclopedia for the modern age — uniting timeless wisdom with personalised, AI-powered tools to help humans raise their vibration, find healing, and live in harmony.
