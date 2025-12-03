@@ -49,4 +49,30 @@ export async function generateStaticParams() {
   return subjects.map((subject) => ({
     slug: subject.slug,
   }));
+}// Function to fetch content for *client-side* filtering on the homepage
+export async function getHomepageContent(subjectSlug) {
+    if (!subjectSlug) {
+        return { books: [], videos: [], healers: [] };
+    }
+    
+    // Fetch all necessary data in one efficient query pattern (using Promise.all)
+    const results = await Promise.all([
+        supabase.from('books').select('*').eq('subject_slug', subjectSlug),
+        supabase.from('videos').select('title, platform_url').eq('subject_slug', subjectSlug),
+        supabase.from('healers').select('*').eq('subject_slug', subjectSlug),
+    ]);
+
+    // Simple error check
+    const [booksResult, videosResult, healersResult] = results;
+
+    if (booksResult.error || videosResult.error || healersResult.error) {
+        console.error('Error fetching homepage content:', booksResult.error || videosResult.error || healersResult.error);
+        return { books: [], videos: [], healers: [] };
+    }
+
+    return { 
+        books: booksResult.data, 
+        videos: videosResult.data, 
+        healers: healersResult.data 
+    };
 }
