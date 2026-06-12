@@ -7,8 +7,10 @@ export default async function Home({ searchParams }) {
   
   const subjects = await getAllSubjects();
   
-  // The initial subject slug is read directly from the server-side URL params
-  const initialSubjectSlug = searchParams.subject || null; 
+  // The initial subject slug is read from the server-side URL params.
+  // In Next.js 16 searchParams is a Promise and must be awaited before access.
+  const resolvedSearchParams = await searchParams;
+  const initialSubjectSlug = resolvedSearchParams?.subject || null;
 
   return (
     // We wrap the client component in Suspense for error handling and slow loading

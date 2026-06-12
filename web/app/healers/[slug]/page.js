@@ -8,8 +8,10 @@ export default async function HealerProfile({ params }) {
 
   if (error || !healer) return <div className="p-20 text-center font-black uppercase tracking-widest text-gray-200">Healer not found.</div>;
 
-  const { data: books } = await supabase.from('books').select('*').eq('author', healer.name);
-  const { data: videos } = await supabase.from('videos').select('*').ilike('title', `%${healer.name}%`);
+  // Books and videos are now related to a healer via the relational `healer_slug`
+  // column written by the admin "Link Healer / Author" system.
+  const { data: books } = await supabase.from('books').select('*').eq('healer_slug', slug);
+  const { data: videos } = await supabase.from('videos').select('*').eq('healer_slug', slug);
 
   return (
     <main className="min-h-screen bg-white">

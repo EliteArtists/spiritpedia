@@ -20,9 +20,9 @@ export async function getContentBySubjectSlug(subjectSlug) {
     
   // Fetch all necessary data in one efficient query pattern (using Promise.all)
   const results = await Promise.all([
-      supabase.from('books').select('*').eq('subject_slug', subjectSlug),
-      supabase.from('videos').select('title, platform_url').eq('subject_slug', subjectSlug),
-      supabase.from('healers').select('*').eq('subject_slug', subjectSlug),
+      supabase.from('books').select('*').contains('subject_slugs', [subjectSlug]),
+      supabase.from('videos').select('title, platform_url').contains('subject_slugs', [subjectSlug]),
+      supabase.from('healers').select('*').contains('subject_slugs', [subjectSlug]),
   ]);
 
   // Check for any errors
@@ -57,9 +57,9 @@ export async function getHomepageContent(subjectSlug) {
     
     // Fetch all necessary data in one efficient query pattern (using Promise.all)
     const results = await Promise.all([
-        supabase.from('books').select('*').eq('subject_slug', subjectSlug),
-        supabase.from('videos').select('title, platform_url').eq('subject_slug', subjectSlug),
-        supabase.from('healers').select('*').eq('subject_slug', subjectSlug),
+        supabase.from('books').select('*').contains('subject_slugs', [subjectSlug]),
+        supabase.from('videos').select('title, platform_url').contains('subject_slugs', [subjectSlug]),
+        supabase.from('healers').select('*').contains('subject_slugs', [subjectSlug]),
     ]);
 
     // Simple error check
