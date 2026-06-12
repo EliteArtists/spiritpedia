@@ -1,210 +1,196 @@
-'use client';
+// Save this as your backup reference for: app/page.js (or components/HomePageContent.js)
+import React, { suspense } from 'react';
+import { createClient } from '@supabase/supabase-js';
 
-import { useState, useEffect, useCallback } from 'react';
-import { useRouter, useSearchParams } from 'next/navigation';
-import { getContentBySubjectSlug } from '@/data/subjects.js';
-import Link from 'next/link';
+// Initialize the backend bridge client
+const supabase = createClient(
+  process.env.NEXT_PUBLIC_SUPABASE_URL,
+  process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY
+);
 
-const CHAKRA_EMOTIONS = [
-  { label: "I feel unsafe", color: "#d62828" }, { label: "I feel grounded", color: "#d62828" }, { label: "I feel strong", color: "#d62828" },
-  { label: "I feel numb", color: "#f77f00" }, { label: "I feel creative", color: "#f77f00" }, { label: "I feel sensual", color: "#f77f00" },
-  { label: "I feel powerless", color: "#fcbf49" }, { label: "I feel confident", color: "#fcbf49" }, { label: "I feel ready", color: "#fcbf49" },
-  { label: "I feel heartbroken", color: "#80ed99" }, { label: "I feel love", color: "#80ed99" }, { label: "I feel peace", color: "#80ed99" },
-  { label: "I can't express myself", color: "#3f88c5" }, { label: "I feel heard", color: "#3f88c5" }, { label: "I feel open", color: "#3f88c5" },
-  { label: "I feel confused", color: "#6a4c93" }, { label: "I feel clear", color: "#6a4c93" }, { label: "I feel intuitive", color: "#6a4c93" },
-  { label: "I feel disconnected", color: "#d6ccff" }, { label: "I feel connected", color: "#d6ccff" }, { label: "I feel divine", color: "#d6ccff" }
-];
+export default async function HomePage({ searchParams }) {
+  // Gracefully handle query execution matching the updated database names
+  const currentSubjectSlug = searchParams?.subject || null;
 
-const EMOTION_TO_SUBJECT_S_MAP = {
-  "I feel unsafe": ["ancient-wisdom", "energy-medicine"],
-  "I feel grounded": ["ancient-wisdom", "meditation"],
-  "I feel strong": ["ancient-wisdom", "qi-gong"],
-  "I feel numb": ["energy-medicine", "breathwork"],
-  "I feel creative": ["conscious-science", "law-of-attraction"],
-  "I feel sensual": ["masculine-feminine-polarity"],
-  "I feel powerless": ["eft-tapping", "law-of-attraction"],
-  "I feel confident": ["human-design", "conscious-science"],
-  "I feel ready": ["human-design", "astrology"],
-  "I feel heartbroken": ["meditation", "reiki", "sound-healing"],
-  "I feel love": ["meditation", "channelled-teachings"],
-  "I feel peace": ["meditation", "breathwork"],
-  "I can't express myself": ["dreamwork", "channelled-teachings"],
-  "I feel heard": ["channelled-teachings", "mediumship-spirits"],
-  "I feel open": ["channelled-teachings", "energy-medicine"],
-  "I feel confused": ["astrology", "human-design", "conscious-science"],
-  "I feel clear": ["astrology", "ancient-wisdom"],
-  "I feel intuitive": ["astrology", "mediumship-spirits"],
-  "I feel disconnected": ["breathwork", "reiki"],
-  "I feel connected": ["mediumship-spirits", "channelled-teachings"],
-  "I feel divine": ["mediumship-spirits", "ancient-wisdom"]
-};
+  // 1. Concurrent fetching streams to secure all content instantly
+  const [subjectsData, healersData, booksData, videosData] = await Promise.all([
+    supabase.from('subjects').select('*').order('name', { ascending: true }),
+    supabase.from('healers').select('*'),
+    supabase.from('books').select('*'),
+    supabase.from('videos').select('*')
+  ]);
 
-export default function HomePageContent({ allSubjects, initialSubjectSlug }) {
-  const router = useRouter();
-  const searchParams = useSearchParams();
-  const [selectedSlug, setSelectedSlug] = useState(initialSubjectSlug); 
-  const [content, setContent] = useState({ books: [], videos: [], healers: [] });
-  const [isLoading, setIsLoading] = useState(false);
+  const subjects = subjectsData.data || [];
+  const allHealers = healersData.data || [];
+  const allBooks = booksData.data || [];
+  const allVideos = videosData.data || [];
 
-  const fetchContent = useCallback(async (slug) => {
-    if (!slug) { setContent({ books: [], videos: [], healers: [] }); return; }
-    setIsLoading(true);
-    const data = await getContentBySubjectSlug(slug); 
-    if (data.healers) {
-        data.healers.sort((a, b) => (b.ad_rank_score || 0) - (a.ad_rank_score || 0));
-    }
-    setContent(data);
-    setIsLoading(false);
-  }, []);
+  // 2. Filter content surgically based on the active top horizontal navigation scroller
+  const filteredHealers = currentSubjectSlug
+    ? allHealers.filter(healer => healer.subject_slugs?.includes(currentSubjectSlug))
+    : allHealers;
 
-  useEffect(() => {
-    const urlSlug = searchParams.get('subject');
-    if (urlSlug && urlSlug !== selectedSlug) {
-      setSelectedSlug(urlSlug);
-      fetchContent(urlSlug);
-    } else if (!urlSlug && selectedSlug) {
-      setSelectedSlug(null);
-      setContent({ books: [], videos: [], healers: [] });
-    }
-  }, [searchParams, fetchContent, selectedSlug]);
+  const filteredBooks = currentSubjectSlug
+    ? allBooks.filter(book => book.subject_slug === currentSubjectSlug)
+    : allBooks;
 
-  const handleSubjectClick = (slug) => {
-    setSelectedSlug(slug);
-    router.push(`/?subject=${slug}`, undefined, { shallow: true }); 
-  };
-
-  const handleEmotionClick = (label) => {
-    const targetSlugs = EMOTION_TO_SUBJECT_S_MAP[label];
-    if (targetSlugs && targetSlugs.length > 0) {
-      handleSubjectClick(targetSlugs[0]);
-    } else {
-      alert(`Path for "${label}" is being curated!`);
-    }
-  };
+  const filteredVideos = currentSubjectSlug
+    ? allVideos.filter(video => video.subject_slug === currentSubjectSlug)
+    : allVideos;
 
   return (
-    <main className="min-h-screen bg-white">
-      {/* 1. HERO SECTION (LAYOUT FLIPPED) */}
-      <div className="w-full text-white flex flex-col items-center animate-gradient-slow pt-10 pb-20 px-8"
-           style={{ background: 'linear-gradient(135deg, #0a2a66, #3f91ec, #a4c3ec, #0a2a66)', backgroundSize: '400% 400%' }}>
-        
-        {/* SUBJECTS SCROLLER (TOP) */}
-        <div className="w-full max-w-5xl mb-16 overflow-hidden">
-          <p className="text-center text-[10px] font-black mb-4 opacity-50 uppercase tracking-[0.3em] text-white">Explore By Subject</p>
-          {/* added overscroll-x-contain to prevent browser page jumping */}
-          <div className="flex overflow-x-auto space-x-3 pb-4 no-scrollbar justify-start md:justify-center overscroll-x-contain">
-            {allSubjects.map((s) => (
-              <button key={s.slug} onClick={() => handleSubjectClick(s.slug)}
-                className={`flex-shrink-0 px-6 py-2 bg-white/10 hover:bg-white/20 border border-white/20 rounded-full text-[10px] font-black uppercase tracking-widest transition-all backdrop-blur-sm
-                  ${selectedSlug === s.slug ? 'bg-white/40 border-white scale-105 shadow-md' : ''}`}>
-                {s.name}
-              </button>
-            ))}
-          </div>
+    <div className="min-h-screen bg-gradient-to-b from-slate-900 to-indigo-950 text-white font-sans">
+      {/* HEADER HERO ELEMENT */}
+      <header className="py-16 text-center max-w-4xl mx-auto px-4">
+        <h1 className="text-6xl font-extrabold tracking-wider mb-6 bg-clip-text text-transparent bg-gradient-to-r from-teal-400 to-cyan-300">
+          SPIRITPEDIA
+        </h1>
+        <div className="relative max-w-xl mx-auto">
+          <input 
+            type="text" 
+            placeholder="How are you feeling today?" 
+            className="w-full py-4 px-6 rounded-full bg-white/10 border border-white/20 text-white placeholder-white/50 focus:outline-none focus:ring-2 focus:ring-teal-400 backdrop-blur-md"
+          />
         </div>
+      </header>
 
-        {/* LOGO & SEARCH BAR (Logo size reduced) */}
-        <h1 className="text-5xl md:text-6xl font-black mb-10 drop-shadow-lg text-center tracking-tighter uppercase italic leading-none">Spiritpedia</h1>
-        
-        <div className="w-full max-w-2xl relative">
-          <input type="text" placeholder="How are you feeling today?" 
-                 className="w-full pl-8 pr-5 py-5 text-lg text-gray-900 border-none rounded-full shadow-2xl focus:ring-4 focus:ring-white/40 outline-none" />
-        </div>
-      </div>
-
-      {/* 2. CHAKRA EMOTIONS (STAYS BELOW HERO) */}
-      <section className="w-full py-12 bg-white border-b overflow-hidden">
-        <h2 className="text-[10px] font-black text-gray-400 mb-8 px-8 text-center uppercase tracking-[0.3em]">Trending Emotional States</h2>
-        <div className="flex overflow-x-auto space-x-4 pb-4 px-8 no-scrollbar overscroll-x-contain">
-          {CHAKRA_EMOTIONS.map((state, i) => (
-            <button key={i} onClick={() => handleEmotionClick(state.label)}
-              className="flex-shrink-0 px-8 py-4 rounded-2xl text-white font-black text-[10px] uppercase tracking-widest transition-all hover:scale-105 shadow-lg"
-              style={{ backgroundColor: state.color, boxShadow: `0 8px 15px ${state.color}44` }}>
-              {state.label}
-            </button>
+      {/* TOP SCROLLER CATEGORIES */}
+      <section className="max-w-6xl mx-auto px-6 mb-12">
+        <h3 className="text-xs font-semibold uppercase tracking-widest text-teal-400/70 mb-4 text-center">
+          Explore by Subject
+        </h3>
+        <div className="flex gap-3 overflow-x-auto pb-4 scrollbar-hide justify-start md:justify-center">
+          <a 
+            href="?" 
+            className={`px-5 py-2.5 rounded-full text-sm font-medium transition-all duration-200 border whitespace-nowrap ${
+              !currentSubjectSlug 
+                ? 'bg-gradient-to-r from-teal-500 to-cyan-500 border-transparent shadow-lg shadow-cyan-500/20' 
+                : 'bg-white/5 border-white/10 hover:bg-white/10'
+            }`}
+          >
+            🌟 View All
+          </a>
+          {subjects.map((sub) => (
+            <a
+              key={sub.id}
+              href={`?subject=${sub.slug}`}
+              className={`px-5 py-2.5 rounded-full text-sm font-medium transition-all duration-200 border whitespace-nowrap ${
+                currentSubjectSlug === sub.slug
+                  ? 'bg-gradient-to-r from-teal-500 to-cyan-500 border-transparent shadow-lg shadow-cyan-500/20'
+                  : 'bg-white/5 border-white/10 hover:bg-white/10'
+              }`}
+            >
+              {sub.name}
+            </a>
           ))}
         </div>
       </section>
 
-      {/* 3. CONTENT DISPLAY */}
-      <section className="w-full p-8 bg-gray-50 min-h-[400px]">
-        {!selectedSlug ? (
-             <div className="py-32 text-center">
-                <p className="text-gray-200 font-black text-7xl uppercase tracking-tighter opacity-50">Spiritpedia</p>
-                <p className="text-gray-400 font-medium mt-4 italic">Select a path above to begin your journey.</p>
-             </div>
-        ) : (
-            <div className="w-full max-w-6xl mx-auto space-y-16">
-                <div className="text-center mb-16">
-                    <h2 className="text-5xl font-black text-gray-900 uppercase tracking-tighter italic">{selectedSlug.replace(/-/g, ' ')}</h2>
-                    <div className="h-1 w-24 bg-blue-600 mx-auto mt-4 rounded-full"></div>
+      {/* RENDER DYNAMIC SHELVES */}
+      <main className="max-w-6xl mx-auto px-6 pb-24 grid gap-16">
+        
+        {/* SHELF 1: HEALERS DIRECTORY */}
+        <section>
+          <h2 className="text-2xl font-bold tracking-wide border-b border-white/10 pb-3 mb-6 flex items-center gap-2">
+            <span>🛡️</span> Master Practitioners
+          </h2>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {filteredHealers.map((healer) => (
+              <div key={healer.id} className="p-6 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-sm hover:border-white/20 transition-all flex flex-col justify-between">
+                <div>
+                  <div className="flex justify-between items-start mb-3">
+                    <h3 className="text-xl font-bold text-cyan-200">{healer.name}</h3>
+                    {healer.is_famous && (
+                      <span className="px-2.5 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wider bg-amber-400/20 text-amber-300 border border-amber-400/30">
+                        Superhero
+                      </span>
+                    )}
+                  </div>
+                  <p className="text-slate-300 text-sm leading-relaxed mb-4">{healer.bio}</p>
                 </div>
-
-                {isLoading ? (
-                    <p className="text-center text-blue-600 animate-pulse font-bold uppercase tracking-widest py-10">Gathering wisdom...</p>
-                ) : (
-                    <div className="space-y-24">
-                        {content.healers.length > 0 && (
-                            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                              {content.healers.map((h) => (
-                                <div key={h.id} className="bg-white p-8 rounded-3xl shadow-sm border border-gray-50 transition-all hover:shadow-xl relative overflow-hidden">
-                                  <div className={`absolute top-0 right-0 text-white text-[10px] font-black px-4 py-1 rounded-bl-xl uppercase tracking-widest ${h.is_famous ? 'bg-yellow-400' : 'bg-green-400'}`}>
-                                    {h.is_famous ? 'Superhero' : 'Local Hero'}
-                                  </div>
-                                  <Link href={`/healers/${h.healer_slug}`}>
-                                    <h4 className="text-3xl font-black text-gray-900 uppercase tracking-tighter italic hover:text-blue-600 cursor-pointer leading-none">{h.name}</h4>
-                                  </Link>
-                                  <p className="text-gray-400 mt-4 line-clamp-3 text-sm leading-relaxed">{h.bio}</p>
-                                  <div className="mt-8 flex justify-between items-center">
-                                    <Link href={`/healers/${h.healer_slug}`} className="text-blue-600 font-black text-[10px] uppercase tracking-[0.2em] border-b-2 border-blue-600 pb-1">View Profile</Link>
-                                    {h.city && <span className="text-[10px] font-bold text-gray-300 uppercase tracking-widest">📍 {h.city}</span>}
-                                  </div>
-                                </div>
-                              ))}
-                            </div>
-                        )}
-
-                        {content.books.length > 0 && (
-                          <div className="flex overflow-x-auto space-x-6 pb-6 no-scrollbar overscroll-x-contain">
-                            {content.books.map((book) => {
-                              const asinMatch = book.amazon_url?.match(/\/(?:dp|gp\/product)\/([A-Z0-9]{10})/);
-                              const asin = asinMatch ? asinMatch[1] : null;
-                              const coverUrl = book.mock_cover_url?.startsWith('http') ? book.mock_cover_url : (asin ? `https://images.amazon.com/images/P/${asin}.01.LZZZZZZZ.jpg` : 'https://placehold.co/400x600?text=Spiritpedia');
-                              return (
-                                <a key={book.id} href={book.amazon_url} target="_blank" rel="noopener noreferrer" className="flex-shrink-0 w-56 group transition-transform hover:scale-105">
-                                  <img src={coverUrl} alt={book.title} className="w-full h-80 object-cover rounded-xl shadow-lg group-hover:shadow-2xl transition-all" />
-                                </a>
-                              );
-                            })}
-                          </div>
-                        )}
-
-                        {content.videos.length > 0 && (
-                          <div className="flex overflow-x-auto space-x-6 pb-6 no-scrollbar overscroll-x-contain">
-                            {content.videos.map((video) => {
-                              const videoId = video.platform_url?.match(/(?:https?:\/\/)?(?:www\.)?(?:youtube\.com\/watch\?v=|youtu\.be\/)([a-zA-Z0-9_-]{11})/)?.[1];
-                              const thumbUrl = videoId ? `https://img.youtube.com/vi/${videoId}/maxresdefault.jpg` : 'https://placehold.co/600x400?text=Spiritpedia+Video';
-                              return (
-                                <a key={video.id || video.title} href={video.platform_url} target="_blank" rel="noopener noreferrer" className="flex-shrink-0 w-80 group transition-all hover:scale-105">
-                                  <div className="relative aspect-video overflow-hidden rounded-2xl shadow-lg group-hover:shadow-2xl transition-all">
-                                    <img src={thumbUrl} alt={video.title} className="w-full h-full object-cover" />
-                                    <div className="absolute inset-0 bg-black/20 group-hover:bg-black/0 transition-colors flex items-center justify-center">
-                                      <div className="w-12 h-12 bg-white/90 rounded-full flex items-center justify-center shadow-xl opacity-0 group-hover:opacity-100 transition-opacity">
-                                        <div className="w-0 h-0 border-t-[8px] border-t-transparent border-l-[12px] border-l-blue-600 border-b-[8px] border-b-transparent ml-1"></div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                  <p className="mt-3 text-[10px] font-black uppercase tracking-[0.2em] text-gray-400 group-hover:text-pink-600 transition-colors line-clamp-1 px-1">{video.title}</p>
-                                </a>
-                              );
-                            })}
-                          </div>
-                        )}
-                    </div>
+                {healer.city && (
+                  <span className="text-xs text-slate-400 flex items-center gap-1">
+                    📍 {healer.city}
+                  </span>
                 )}
-            </div>
-        )}
-      </section>
-    </main>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        {/* SHELF 2: MULTIMEDIA VIDEO COMPONENT */}
+        <section>
+          <h2 className="text-2xl font-bold tracking-wide border-b border-white/10 pb-3 mb-6 flex items-center gap-2">
+            <span>🎬</span> YouTube Broadcast Library
+          </h2>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {filteredVideos.map((video) => {
+              // Extract the standard ID token to build automated cover layout wrappers
+              const videoId = video.platform_url?.includes('v=') 
+                ? video.platform_url.split('v=')[1]?.split('&')[0] 
+                : video.platform_url?.split('/').pop();
+              
+              return (
+                <div key={video.id} className="overflow-hidden rounded-2xl bg-white/5 border border-white/10 hover:border-white/20 transition-all group">
+                  <a href={video.platform_url} target="_blank" rel="noopener noreferrer" className="block relative aspect-video bg-black">
+                    {videoId ? (
+                      <img 
+                        src={`https://img.youtube.com/vi/${videoId}/mqdefault.jpg`} 
+                        alt={video.title}
+                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                      />
+                    ) : (
+                      <div className="w-full h-full flex items-center justify-center text-slate-500">Video Link</div>
+                    )}
+                    <div className="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                      <div className="w-12 h-12 rounded-full bg-red-600 flex items-center justify-center text-xl font-bold">▶</div>
+                    </div>
+                  </a>
+                  <div className="p-4">
+                    <h4 className="font-semibold text-slate-100 line-clamp-2 hover:text-cyan-300 transition-colors">
+                      <a href={video.platform_url} target="_blank" rel="noopener noreferrer">{video.title}</a>
+                    </h4>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        </section>
+
+        {/* SHELF 3: CURATED ARCHIVE BOOKS */}
+        <section>
+          <h2 className="text-2xl font-bold tracking-wide border-b border-white/10 pb-3 mb-6 flex items-center gap-2">
+            <span>📚</span> Core Literary References
+          </h2>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {filteredBooks.map((book) => (
+              <a 
+                key={book.id}
+                href={book.amazon_url || '#'} 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="p-4 rounded-2xl bg-white/5 border border-white/10 hover:border-white/20 hover:bg-white/10 transition-all flex gap-4 items-center"
+              >
+                <div className="w-16 h-24 bg-slate-800 rounded-lg flex-shrink-0 flex items-center justify-center text-2xl shadow-md overflow-hidden border border-white/10">
+                  {book.mock_cover_url && book.mock_cover_url !== 'NULL' ? (
+                    <img src={book.mock_cover_url} alt={book.title} className="w-full h-full object-cover" />
+                  ) : (
+                    '📖'
+                  )}
+                </div>
+                <div>
+                  <h4 className="font-bold text-slate-100 line-clamp-1">{book.title}</h4>
+                  <p className="text-xs text-slate-400 mt-1">by {book.author}</p>
+                  <span className="inline-block mt-3 text-[10px] font-bold text-teal-400 bg-teal-400/10 px-2 py-0.5 rounded-md border border-teal-400/20 uppercase tracking-wider">
+                    Amazon Link
+                  </span>
+                </div>
+              </a>
+            ))}
+          </div>
+        </section>
+
+      </main>
+    </div>
   );
 }
