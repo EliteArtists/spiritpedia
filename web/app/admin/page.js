@@ -20,6 +20,14 @@ function extractYouTubeId(url) {
   return null;
 }
 
+// Human-readable label persisted to healers.availability_type (drives the
+// modality badge on the healer profile page).
+const AVAILABILITY_LABELS = {
+  worldwide: 'Worldwide (Famous Names)',
+  local: 'Local Only (In-Person)',
+  local_online: 'Local & Online Sessions',
+};
+
 // Convert a free-text name into a web-safe, lowercase, hyphenated slug.
 function slugify(value) {
   return (value || '')
@@ -60,15 +68,24 @@ function AdminDashboard() {
   const [url, setUrl] = useState('');
   const [author, setAuthor] = useState('');
   const [coverUrl, setCoverUrl] = useState('');
+  // Advanced book metadata
+  const [goodreadsUrl, setGoodreadsUrl] = useState('');
+  const [worldOfBooksUrl, setWorldOfBooksUrl] = useState('');
+  const [bookDescription, setBookDescription] = useState('');
   // Healer-specific fields
   const [name, setName] = useState('');
   const [bio, setBio] = useState('');
   const [slug, setSlug] = useState('');
-  const [imageUrl, setImageUrl] = useState('');
+  const [imageUrl1, setImageUrl1] = useState('');
+  const [imageUrl2, setImageUrl2] = useState('');
+  const [imageUrl3, setImageUrl3] = useState('');
   const [availability, setAvailability] = useState('worldwide'); // 'worldwide' | 'local' | 'local_online'
   const [country, setCountry] = useState('');
   const [city, setCity] = useState('');
-  const [categories, setCategories] = useState([]);
+  const [contactEmail, setContactEmail] = useState('');
+  const [contactPhone, setContactPhone] = useState('');
+  const [bookingUrl, setBookingUrl] = useState('');
+  const [subjects, setSubjects] = useState([]);
   const [healers, setHealers] = useState([]); // for relational Link Healer/Author dropdown
   const [linkedHealerSlug, setLinkedHealerSlug] = useState(''); // '' = None / General Content
   const [selectedSlugs, setSelectedSlugs] = useState([]); // multi-tag selection
@@ -86,10 +103,10 @@ function AdminDashboard() {
 
       if (!active) return;
       if (error) {
-        console.error('Failed to load categories:', error);
+        console.error('Failed to load subjects:', error);
         return;
       }
-      setCategories(data || []);
+      setSubjects(data || []);
     }
     loadCategories();
     return () => {
@@ -137,13 +154,21 @@ function AdminDashboard() {
     setUrl('');
     setAuthor('');
     setCoverUrl('');
+    setGoodreadsUrl('');
+    setWorldOfBooksUrl('');
+    setBookDescription('');
     setName('');
     setBio('');
     setSlug('');
-    setImageUrl('');
+    setImageUrl1('');
+    setImageUrl2('');
+    setImageUrl3('');
     setAvailability('worldwide');
     setCountry('');
     setCity('');
+    setContactEmail('');
+    setContactPhone('');
+    setBookingUrl('');
     setLinkedHealerSlug('');
     setSelectedSlugs([]);
   }
@@ -192,20 +217,31 @@ function AdminDashboard() {
           amazon_url: url.trim(),
           author: author.trim() || null,
           mock_cover_url: coverUrl.trim() || null,
+          goodreads_url: goodreadsUrl.trim() || null,
+          worldofbooks_url: worldOfBooksUrl.trim() || null,
+          description: bookDescription.trim() || null,
           healer_slug: linkedHealerSlug || null,
           subject_slugs: tags,
         }));
       } else {
         // Healer: "Worldwide (Famous Names)" flags is_famous; local options carry country/city.
         const isLocal = availability === 'local' || availability === 'local_online';
+        // Collect the three image inputs, drop blanks, store as a clean array.
+        const imageUrls = [imageUrl1, imageUrl2, imageUrl3]
+          .map((s) => s.trim())
+          .filter(Boolean);
         ({ error } = await supabase.from('healers').insert({
           name: name.trim(),
           bio: bio.trim() || null,
           healer_slug: slug.trim(),
-          image_url: imageUrl.trim() || null,
+          image_urls: imageUrls,
           is_famous: availability === 'worldwide',
+          availability_type: AVAILABILITY_LABELS[availability],
           country: isLocal ? country.trim() || null : null,
           city: isLocal ? city.trim() || null : null,
+          contact_email: contactEmail.trim() || null,
+          contact_phone: contactPhone.trim() || null,
+          booking_url: bookingUrl.trim() || null,
           subject_slugs: tags,
         }));
       }
@@ -333,6 +369,36 @@ function AdminDashboard() {
                   className={inputClass}
                 />
               </div>
+              <div>
+                <label className={labelClass}>Goodreads Link (optional)</label>
+                <input
+                  type="text"
+                  value={goodreadsUrl}
+                  onChange={(e) => setGoodreadsUrl(e.target.value)}
+                  placeholder="https://www.goodreads.com/book/..."
+                  className={inputClass}
+                />
+              </div>
+              <div>
+                <label className={labelClass}>World of Books Link (optional)</label>
+                <input
+                  type="text"
+                  value={worldOfBooksUrl}
+                  onChange={(e) => setWorldOfBooksUrl(e.target.value)}
+                  placeholder="https://www.wob.com/..."
+                  className={inputClass}
+                />
+              </div>
+              <div>
+                <label className={labelClass}>Book Description (Synopsis)</label>
+                <textarea
+                  value={bookDescription}
+                  onChange={(e) => setBookDescription(e.target.value)}
+                  placeholder="A short synopsis of the book…"
+                  rows={4}
+                  className={inputClass}
+                />
+              </div>
             </>
           )}
 
@@ -378,11 +444,31 @@ function AdminDashboard() {
               </div>
 
               <div>
-                <label className={labelClass}>Profile Image URL</label>
+                <label className={labelClass}>Profile Image URL 1</label>
                 <input
                   type="text"
-                  value={imageUrl}
-                  onChange={(e) => setImageUrl(e.target.value)}
+                  value={imageUrl1}
+                  onChange={(e) => setImageUrl1(e.target.value)}
+                  placeholder="https://..."
+                  className={inputClass}
+                />
+              </div>
+              <div>
+                <label className={labelClass}>Profile Image URL 2</label>
+                <input
+                  type="text"
+                  value={imageUrl2}
+                  onChange={(e) => setImageUrl2(e.target.value)}
+                  placeholder="https://..."
+                  className={inputClass}
+                />
+              </div>
+              <div>
+                <label className={labelClass}>Profile Image URL 3</label>
+                <input
+                  type="text"
+                  value={imageUrl3}
+                  onChange={(e) => setImageUrl3(e.target.value)}
                   placeholder="https://..."
                   className={inputClass}
                 />
@@ -426,6 +512,38 @@ function AdminDashboard() {
                   </div>
                 </>
               )}
+
+              {/* DIRECT CONTACT DETAILS */}
+              <div>
+                <label className={labelClass}>Contact Email (optional)</label>
+                <input
+                  type="email"
+                  value={contactEmail}
+                  onChange={(e) => setContactEmail(e.target.value)}
+                  placeholder="e.g. hello@practitioner.com"
+                  className={inputClass}
+                />
+              </div>
+              <div>
+                <label className={labelClass}>Contact Phone (optional)</label>
+                <input
+                  type="tel"
+                  value={contactPhone}
+                  onChange={(e) => setContactPhone(e.target.value)}
+                  placeholder="e.g. +1 555 123 4567"
+                  className={inputClass}
+                />
+              </div>
+              <div>
+                <label className={labelClass}>Booking URL (optional)</label>
+                <input
+                  type="text"
+                  value={bookingUrl}
+                  onChange={(e) => setBookingUrl(e.target.value)}
+                  placeholder="https://calendly.com/..."
+                  className={inputClass}
+                />
+              </div>
             </>
           )}
 
@@ -437,11 +555,11 @@ function AdminDashboard() {
                 {selectedSlugs.length} selected
               </span>
             </label>
-            {categories.length === 0 ? (
-              <p className="text-sm text-slate-500">Loading categories…</p>
+            {subjects.length === 0 ? (
+              <p className="text-sm text-slate-500">Loading subjects…</p>
             ) : (
               <div className="flex flex-wrap gap-2">
-                {categories.map((c) => {
+                {subjects.map((c) => {
                   const active = selectedSlugs.includes(c.slug);
                   return (
                     <button

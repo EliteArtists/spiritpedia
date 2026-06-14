@@ -1,4 +1,6 @@
 import { supabase } from '@/utils/supabase';
+import BookCard from '@/components/BookCard';
+import VideoPlayer from '@/components/VideoPlayer';
 import Link from 'next/link';
 
 export default async function HealerProfile({ params }) {
@@ -13,47 +15,127 @@ export default async function HealerProfile({ params }) {
   const { data: books } = await supabase.from('books').select('*').eq('healer_slug', slug);
   const { data: videos } = await supabase.from('videos').select('*').eq('healer_slug', slug);
 
+  // Up to 3 portraits for the hero gallery.
+  const portraits = Array.isArray(healer.image_urls) ? healer.image_urls.filter(Boolean) : [];
+
   return (
     <main className="min-h-screen bg-white">
+      {/* PRESERVED GRADIENT CANVAS — do not alter background fade styles */}
       <div className="w-full p-12 md:p-20 animate-gradient-slow text-white"
            style={{ background: 'linear-gradient(135deg, #0a2a66, #3f91ec, #a4c3ec, #0a2a66)', backgroundSize: '400% 400%' }}>
         <Link href="/" className="text-white/40 hover:text-white mb-12 inline-block uppercase text-[10px] font-black tracking-[0.3em]">&larr; Back to Spiritpedia</Link>
-        <h1 className="text-7xl font-black tracking-tighter mb-4 uppercase italic leading-none">{healer.name}</h1>
-        <p className="text-xl opacity-90 max-w-2xl font-light leading-relaxed mb-10">{healer.bio}</p>
-        <div>
-            <span className={`px-8 py-3 backdrop-blur-md border border-white/20 rounded-full text-[10px] font-black uppercase tracking-[0.2em] ${healer.is_famous ? 'bg-yellow-400 text-white' : 'bg-green-400 text-white'}`}>
-                {healer.is_famous ? 'Superhero' : `Local Hero: ${healer.city || 'Universe'}`}
-            </span>
+
+        {/* HERO GRID: text left, image gallery right */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+          {/* LEFT: name, badge, bio */}
+          <div>
+            <h1 className="text-7xl font-black tracking-tighter mb-4 uppercase italic leading-none">{healer.name}</h1>
+
+            {/* Primary tier badge — symmetry with the homepage badge motif */}
+            <div className="mb-6">
+              {healer.is_famous ? (
+                <span className="bg-[#FEF08A] text-amber-950 font-bold tracking-wider text-[11px] uppercase px-2.5 py-1 rounded-md shadow-sm">
+                  SUPERHERO
+                </span>
+              ) : (
+                <span className="bg-emerald-500 text-white font-bold tracking-wider text-[11px] uppercase px-2.5 py-1 rounded-md shadow-sm">
+                  LOCAL HERO
+                </span>
+              )}
+            </div>
+
+            <p className="text-xl opacity-90 max-w-2xl font-light leading-relaxed">{healer.bio}</p>
+
+            {/* BOOKING ENQUIRIES / CONVERSION TILE — directly below the bio */}
+            {(healer.contact_email || healer.contact_phone || healer.booking_url) && (
+              <div className="mt-8 p-6 rounded-2xl bg-slate-900/40 border border-white/5 backdrop-blur-sm shadow-xl flex flex-col gap-4">
+                {/* Integrated availability pills (replaces the heading) */}
+                <div className="flex flex-wrap items-center gap-3">
+                  <span className="bg-indigo-950/60 text-indigo-300 border border-transparent text-xs px-3 py-1 rounded-full font-medium">
+                    In Person ({healer.city})
+                  </span>
+                  {healer.availability_type?.includes('Online') && (
+                    <span className="bg-purple-950/60 text-purple-300 border border-purple-500/30 text-xs px-3 py-1 rounded-full font-medium">
+                      Online Session available
+                    </span>
+                  )}
+                </div>
+
+                {healer.booking_url && (
+                  <a
+                    href={healer.booking_url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-full text-center py-3 bg-purple-600 hover:bg-purple-500 text-white font-bold text-sm rounded-xl shadow-lg transition-transform hover:scale-[1.01] active:scale-95 cursor-pointer block"
+                  >
+                    Connect with {healer.name.split(' ')[0]}
+                  </a>
+                )}
+
+                <div className="flex justify-center text-center mx-auto w-full gap-6">
+                  {healer.contact_email && (
+                    <a
+                      href={`mailto:${healer.contact_email}?subject=Inquiry via Spiritpedia`}
+                      className="text-sm font-semibold text-white hover:text-emerald-300 underline underline-offset-4 transition-colors"
+                    >
+                      ✉️ {healer.contact_email}
+                    </a>
+                  )}
+                  {healer.contact_phone && (
+                    <a
+                      href={`tel:${healer.contact_phone}`}
+                      className="text-sm font-semibold text-white hover:text-emerald-300 underline underline-offset-4 transition-colors"
+                    >
+                      📞 {healer.contact_phone}
+                    </a>
+                  )}
+                </div>
+              </div>
+            )}
+          </div>
+
+          {/* RIGHT: multi-image portrait gallery (balanced aspect-ratio frames) */}
+          <div className="grid grid-cols-2 gap-4">
+            {portraits.length > 0 ? (
+              portraits.slice(0, 3).map((src, i) => (
+                <img
+                  key={i}
+                  src={src}
+                  alt={`${healer.name} portrait ${i + 1}`}
+                  className={`w-full object-cover rounded-2xl shadow-2xl ${i === 0 ? 'col-span-2 aspect-[16/10]' : 'aspect-square'}`}
+                />
+              ))
+            ) : (
+              <img
+                src="https://placehold.co/600x400?text=Spiritpedia"
+                alt={healer.name}
+                className="col-span-2 w-full aspect-[16/10] object-cover rounded-2xl shadow-2xl"
+              />
+            )}
+          </div>
         </div>
       </div>
 
       <div className="max-w-7xl mx-auto p-8 md:p-20 space-y-32">
-        {/* GALLERY STYLE BOOKS */}
+        {/* CORE LITERARY REFERENCES — interactive BookCard swipe carousel */}
         <section>
-          <div className="flex overflow-x-auto space-x-8 pb-10 no-scrollbar">
-            {books?.length > 0 ? books.map((book) => {
-              const asinMatch = book.amazon_url?.match(/\/(?:dp|gp\/product)\/([A-Z0-9]{10})/);
-              const asin = asinMatch ? asinMatch[1] : null;
-              const coverUrl = book.mock_cover_url?.startsWith('http') ? book.mock_cover_url : (asin ? `https://images.amazon.com/images/P/${asin}.01.LZZZZZZZ.jpg` : 'https://placehold.co/400x600?text=Spiritpedia');
-              return (
-                <div key={book.id} className="flex-shrink-0 w-64 group">
-                  <img src={coverUrl} alt={book.title} className="w-full h-96 object-cover rounded-2xl shadow-xl group-hover:shadow-2xl group-hover:scale-105 transition-all" />
-                </div>
-              );
-            }) : <p className="text-gray-200 font-black uppercase tracking-widest">No works found.</p>}
+          <div className="flex flex-row overflow-x-auto gap-6 pb-4 scroll-smooth snap-x snap-mandatory">
+            {books?.length > 0 ? books.map((book) => (
+              <div key={book.id} className="shrink-0 snap-start w-[240px]">
+                <BookCard book={book} variant="light" />
+              </div>
+            )) : <p className="text-gray-400 font-black uppercase tracking-widest">No works found.</p>}
           </div>
         </section>
 
-        {/* VIDEOS */}
+        {/* YOUTUBE VIDEOS — horizontal swipe carousel */}
         <section>
-          <div className="flex overflow-x-auto space-x-6 pb-6 no-scrollbar">
-            {videos?.length > 0 ? videos.map(v => (
-              <a key={v.id} href={v.platform_url} target="_blank" rel="noreferrer" 
-                 className="flex-shrink-0 w-96 bg-gray-50 p-10 rounded-[3rem] border border-gray-100 shadow-sm hover:shadow-xl transition-all group">
-                <h4 className="text-2xl font-black text-gray-800 uppercase tracking-tighter italic leading-tight group-hover:text-pink-600">{v.title}</h4>
-                <span className="text-blue-500 text-[10px] font-black mt-8 block uppercase tracking-[0.3em]">Watch Teaching &rarr;</span>
-              </a>
-            )) : <p className="text-gray-200 font-black uppercase tracking-widest">No videos yet.</p>}
+          <div className="flex flex-row overflow-x-auto gap-6 pb-4 scroll-smooth snap-x snap-mandatory">
+            {videos?.length > 0 ? videos.map((video) => (
+              <div key={video.id} className="shrink-0 snap-start w-[280px]">
+                <VideoPlayer video={video} />
+              </div>
+            )) : <p className="text-gray-400 font-black uppercase tracking-widest">No videos yet.</p>}
           </div>
         </section>
       </div>
