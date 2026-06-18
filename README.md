@@ -24,10 +24,10 @@ The entry point is always emotional:
 The Next.js web app delivers the full Spiritpedia experience and allows rapid content building and iteration. The Supabase backend is shared — when the Flutter app is built, it connects to the same database. Nothing is rebuilt, only extended.
 
 #### Why Flutter Next
-Push notifications are a core part of the Spiritpedia experience — the IAM (I AM) affirmation system requires reliable native push. Web push on iOS is unreliable. Flutter is the right long-term home.
+Push notifications are a core part of the Spiritpedia experience — the IAM (I AM) affirmation system requires reliable native push. Web push on iOS is unreliable. Flutter is the right long-term home for Spiritpedia.
 
  Bento Subject-Based Navigation (The Just Eat Model)
-Spiritpedia is structured like a spiritual delivery app. Instead of "Pizza" or "Thai Food," users explore subjects such as:
+Spiritpedia is structured like a spiritual discovery app. Instead of "Pizza" or "Thai Food," users explore subjects such as:
 
 🌿 Practices & Modalities
 Tai Chi · Reiki · EFT / Tapping · Breathwork · Meditation · Yoga · Sound Healing · Homeopathy · Hypnotherapy · Astrology · Quantum Healing · Energy Medicine · Herbalism · Crystal Healing · Chakra Work
@@ -45,15 +45,36 @@ Each subject acts as an entry point. When a user selects "Reiki," they instantly
 * ✨ Related quotes and disciplines
 
 👥 Healer Tiers
-All practitioners on Spiritpedia are classified into one of three tiers:
+Spiritpedia uses a three-tier system to classify all practitioners and teachers on the platform. Tiers reflect reach and recognition — and crucially, they are not fixed. Every healer on Spiritpedia has the opportunity to grow and graduate to a higher tier as their audience and impact grows.
 
-| Tier | Badge | Who They Are |
-| :--- | :--- | :--- |
-| ⭐ Superhero | Amber | Global household names. Millions of followers. Books in every bookshop. (Eckhart Tolle, Abraham Hicks, Joe Dispenza) |
-| 🌟 Guide | Blue/Purple | Respected teachers with real audiences. Published or significant YouTube presence. 50k–500k followers. (Teal Swan, Matt Kahn, Kyle Cease) |
-| 🌿 Local Hero | Emerald | Practitioners operating locally or with a small online presence. Paid directory tier. |
+This graduation mechanic is intentional. Spiritpedia is not just a directory — it is a career platform for spiritual practitioners.
 
-*Only Local Heroes pay for their listing (£5–£10/month). Superheroes and Guides are listed for content value.*
+#### ⭐ Superhero (Amber badge)
+Global household names. Mainstream recognition beyond the spiritual community. Their books are in every bookshop. A person with no interest in spirituality has likely heard of them.
+* **Threshold**: 500,000+ followers on a single platform, OR mainstream name recognition regardless of follower count.
+* **Examples**: Eckhart Tolle, Abraham Hicks, Joe Dispenza, Deepak Chopra, Wayne Dyer
+* *Superheroes are listed for platform authority and content value. They do not pay for listings.*
+
+#### ✨ Luminary (Violet badge)
+Respected teachers and practitioners with a real, established audience within the spiritual world. They are known and trusted in the community. They may not yet have crossed into mainstream consciousness, but within their field they carry genuine authority.
+* **Threshold**: 50,000+ followers on a single platform (YouTube, Instagram, Facebook, or equivalent).
+* **Examples**: Teal Swan, Kyle Cease, Matt Kahn, Lu Chin (Qi Yoga)
+* *Luminaries are listed for content and community value. As the platform grows and delivers measurable value to them — bookings, traffic, visibility — a nominal listing fee may apply.*
+* **Graduation**: A Luminary who reaches 500,000+ followers on a single platform, or achieves mainstream name recognition, graduates to Superhero. Their badge updates automatically when an admin updates their tier in the dashboard.
+
+#### 🌿 Local Hero (Emerald badge)
+Practitioners operating locally or with a small online presence. This is the grassroots heart of Spiritpedia — the healers, coaches, and teachers working directly with people in their communities.
+* **Threshold**: Under 50,000 followers across all platforms.
+* **Examples**: Karina Grant (London), local Reiki practitioners, EFT coaches, breathwork facilitators
+* *Local Heroes pay a monthly listing fee (£5–£10/month) to be featured in the directory. Their profile includes contact details, availability, and a direct booking link.*
+* **Graduation**: A Local Hero who reaches 50,000+ followers on a single platform graduates to Luminary. Their badge updates automatically when an admin updates their tier in the dashboard.
+
+#### Tier Summary Table
+| Tier | Badge | Follower Threshold | Pays? |
+| :--- | :--- | :--- | :--- |
+| ⭐ Superhero | Amber | 500k+ on one platform OR mainstream recognition | No |
+| ✨ Luminary | Violet | 50k–499k on one platform | Eventually yes (nominal) |
+| 🌿 Local Hero | Emerald | Under 50k across all platforms | Yes — £5–£10/month |
 
 🧱 Core Modules
 | Module | Description | Platform |
@@ -82,7 +103,7 @@ All practitioners on Spiritpedia are classified into one of three tiers:
 The `/web` directory contains the full Next.js application.
 
 #### Key Pages
-* `/` — Homepage: emotional search, subject filters, healer carousel, books, videos
+* `/` — Homepage — emotional search, subject filters, healer carousel, books, videos
 * `/healers/[slug]` — Individual healer profile with bio, photo mosaic, contact funnel
 * `/library` — Personal saved library, auto-organised by subject
 * `/admin` — Content management dashboard
@@ -101,7 +122,8 @@ The `/web` directory contains the full Next.js application.
 
 #### 2+1 Healer Matrix
 The homepage healer shelf renders in groups of three:
-`[ Superhero | Superhero | Local Hero ]`
+`[ Superhero / Luminary | Superhero / Luminary | Local Hero ]`
+
 If a filtered subject has no Local Heroes, a conversion tile renders automatically to drive healer registrations.
 
 #### My Library
@@ -109,38 +131,39 @@ The library at `/library` reads saved items from local storage (`favorited_books
 
 🗄️ Database Structure (Supabase)
 #### Tables
-* **healers**: `id`, `name`, `slug`, `bio`, `is_famous`, `tier`, `images[]`, `availability_type`, `contact_email`, `contact_phone`, `booking_url`
+* **healers**: `id`, `name`, `slug`, `bio`, `tier`, `images[]`, `availability_type`, `contact_email`, `contact_phone`, `booking_url`
 * **books**: `id`, `title`, `slug`, `cover_url`, `amazon_asin`, `subject_slug`, `healer_id`
 * **videos**: `id`, `title`, `youtube_id`, `thumbnail_url`, `subject_slug`, `healer_id`
 * **subjects**: `id`, `name`, `slug`, `parent_category`
 
-#### Content Ingestion
-Paste a URL → system extracts:
-* YouTube URL → video ID → thumbnail generated automatically
-* Amazon URL → ASIN → book cover generated automatically
+*Note: The legacy is_famous boolean field has been replaced by the tier field (values: superhero / luminary / local_hero). Badge colour and display logic are driven by this field across all components.*
 
 💰 Monetisation
-* **Healer directory listings**: £5–£10/month per Local Hero
+* **Local Hero directory listings**: £5–£10/month per practitioner
+* **Luminary listings (future)**: Nominal fee once platform delivers measurable value
 * **Affiliate links**: Amazon books embedded in content cards
 * **Premium features (Phase 2)**: Personalised journeys, AI coaching, advanced library
 
 ✅ Project Status
-* [x] Supabase backend live
-* [x] Next.js web app core
-* [x] Homepage with emotional search
-* [x] Subject-based filtering
-* [x] Healer profiles with contact funnels
-* [x] Books carousel with affiliate links
-* [x] Video grid with thumbnails
-* [x] My Library with dynamic subject folders
-* [x] Admin dashboard
-* [x] URL parsing automation
-* [ ] Emotion-to-subject mapping (wired)
-* [ ] Guide tier implementation
-* [ ] Vercel production deployment
-* [ ] Content library (target: 5,000 videos + 5,000 books)
-* [ ] Flutter native app (Phase 2)
-* [ ] IAM notification system (Phase 2)
+| Milestone | Status |
+| :--- | :--- |
+| Supabase backend live | ✅ Complete |
+| Next.js web app core | ✅ Complete |
+| Homepage with emotional search bar | ✅ Complete |
+| Subject-based filtering with dropdowns | ✅ Complete |
+| Healer profiles with contact funnels | ✅ Complete |
+| Books carousel with affiliate links | ✅ Complete |
+| Video grid with thumbnails | ✅ Complete |
+| My Library with dynamic subject folders | ✅ Complete |
+| Admin dashboard | ✅ Complete |
+| URL parsing automation (YouTube + Amazon) | ✅ Complete |
+| Three-tier healer system (Superhero / Luminary / Local Hero) | ⬜ In progress |
+| is_famous → tier field migration | ⬜ In progress |
+| Emotion-to-subject mapping wired to search | ⬜ In progress |
+| Vercel production deployment | ⬜ Next |
+| Content library (target: 5,000 videos + 5,000 books) | ⬜ Ongoing |
+| Flutter native app | ⬜ Phase 2 |
+| IAM notification system | ⬜ Phase 2 |
 
 💡 Immediate Next Steps
 1. Wire "How are you feeling today?" search bar to emotion → subject mapping
