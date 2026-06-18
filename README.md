@@ -1,276 +1,151 @@
 Spiritpedia
-
 A spiritual encyclopedia for the modern age — uniting timeless wisdom with personalised, AI-powered tools to help humans raise their vibration, find healing, and live in harmony.
 
-⸻
-
 🌌 Vision
+Spiritpedia is not just a content hub or search engine — it's a personalised spiritual companion, designed to evolve with each user's unique path.
 
-Spiritpedia is not just a content hub or search engine — it’s a personalised spiritual companion, designed to evolve with each user’s unique path.
-	•	Visitors can explore freely (via search, quotes, and trending content)
-	•	Registered users unlock a fully immersive experience: saved content, AI notifications, tracked progress, and a curated journey of healing and expansion.
-
-⸻
+* Visitors can explore freely via subject-based discovery, curated content, and emotional search
+* Registered users unlock a fully immersive experience: saved content, personal library, AI notifications, and a curated journey of healing and expansion
 
 🧭 Core Philosophy
+"Don't show them everything. Show them exactly what they need."
+Spiritpedia isn't about information overload — it's about calm, resonance, and alignment. It meets users exactly where they are, emotionally and spiritually, and gently supports their next step in evolution.
 
-“Don’t show them everything. Show them exactly what they need.”
-
-Spiritpedia isn’t about information overload — it’s about calm, resonance, and alignment.
-It meets users exactly where they are, emotionally and spiritually, and gently supports their next step in evolution.
-
-⸻
+The entry point is always emotional:
+"How are you feeling today?" → "Lost" → Curated videos, books, and healers appear instantly.
 
 📲 Platform Model
-	•	Primary Interface: Native App (iOS + Android) – App‑Only ✅
-	•	Supporting Web Presence: One‑page site for discovery & downloads – Web‑Only ✅
+| Platform | Role | Status |
+| :--- | :--- | :--- |
+| Web App (Next.js) | Primary product — full discovery experience | ✅ Active development |
+| Native App (Flutter) | Phase 2 — iOS & Android with push notifications | ⬜ Planned |
 
-The website serves as a calm gateway:
-	•	Simple introduction to Spiritpedia’s mission
-	•	Universal search bar for basic exploration
-	•	Direct app download links
-	•	Optional access to a few public quotes or trending items
+#### Why Web First
+The Next.js web app delivers the full Spiritpedia experience and allows rapid content building and iteration. The Supabase backend is shared — when the Flutter app is built, it connects to the same database. Nothing is rebuilt, only extended.
 
-⸻
+#### Why Flutter Next
+Push notifications are a core part of the Spiritpedia experience — the IAM (I AM) affirmation system requires reliable native push. Web push on iOS is unreliable. Flutter is the right long-term home.
 
-🍱 Subject‑Based Navigation (The “Just Eat” Model)
-
-Spiritpedia is structured like a spiritual delivery app.
-Instead of “Pizza” or “Thai Food,” users explore categories such as:
+ Bento Subject-Based Navigation (The Just Eat Model)
+Spiritpedia is structured like a spiritual delivery app. Instead of "Pizza" or "Thai Food," users explore subjects such as:
 
 🌿 Practices & Modalities
-	•	Tai Chi
-	•	Reiki
-	•	EFT / Tapping
-	•	Breathwork
-	•	Meditation
-	•	Yoga
-	•	Sound Healing
-	•	Homeopathy
-	•	Hypnotherapy
-	•	Astrology
-	•	Quantum Healing
-	•	Energy Medicine
-	•	Herbalism
-	•	Crystal Healing
-	•	Chakra Work
+Tai Chi · Reiki · EFT / Tapping · Breathwork · Meditation · Yoga · Sound Healing · Homeopathy · Hypnotherapy · Astrology · Quantum Healing · Energy Medicine · Herbalism · Crystal Healing · Chakra Work
 
 🧠 Teachings & Philosophies
-	•	Law of Attraction
-	•	Non‑Duality
-	•	Conscious Science
-	•	Spiritual Psychology
-	•	Timeline Shifting / Reality Creation
-	•	Ancient Wisdom (Taoism, Vedic, Hermetic)
-	•	Lightwork & Shadow Work
-	•	Inner Child Healing
-	•	Akashic Records
-	•	Soul Contracts & Reincarnation
-	•	Sacred Masculine & Feminine
+Law of Attraction · Non-Duality · Conscious Science · Spiritual Psychology · Timeline Shifting · Ancient Wisdom (Taoism, Vedic, Hermetic) · Lightwork & Shadow Work · Inner Child Healing · Akashic Records · Soul Contracts & Reincarnation · Sacred Masculine & Feminine
 
 💫 Themes & Focus Areas
-	•	Manifestation & Abundance
-	•	Healing from Trauma
-	•	Raising Your Vibration
-	•	Emotional Mastery
-	•	Grief & Death
-	•	Self‑Love & Boundaries
-	•	Nervous System Healing
-	•	Purpose & Life Direction
-	•	Relationships & Conscious Partnership
+Manifestation & Abundance · Healing from Trauma · Raising Your Vibration · Emotional Mastery · Grief & Death · Self-Love & Boundaries · Nervous System Healing · Purpose & Life Direction · Relationships & Conscious Partnership
 
-Each subject acts as an entry point — when a user taps “Reiki,” they instantly see:
-	•	🎥 Related videos
-	•	📚 Related books
-	•	🧘 Local & online healers
-	•	✨ Related quotes, notifications, or disciplines
+Each subject acts as an entry point. When a user selects "Reiki," they instantly see:
+* 🎥 Related videos
+* 📚 Related books
+* 🧘 Local & online healers
+* ✨ Related quotes and disciplines
 
-⸻
+👥 Healer Tiers
+All practitioners on Spiritpedia are classified into one of three tiers:
+
+| Tier | Badge | Who They Are |
+| :--- | :--- | :--- |
+| ⭐ Superhero | Amber | Global household names. Millions of followers. Books in every bookshop. (Eckhart Tolle, Abraham Hicks, Joe Dispenza) |
+| 🌟 Guide | Blue/Purple | Respected teachers with real audiences. Published or significant YouTube presence. 50k–500k followers. (Teal Swan, Matt Kahn, Kyle Cease) |
+| 🌿 Local Hero | Emerald | Practitioners operating locally or with a small online presence. Paid directory tier. |
+
+*Only Local Heroes pay for their listing (£5–£10/month). Superheroes and Guides are listed for content value.*
 
 🧱 Core Modules
+| Module | Description | Platform |
+| :--- | :--- | :--- |
+| Emotional Search | "How are you feeling today?" → mapped content | Web + App |
+| Books Library | Curated archive sorted by subject | Web + App |
+| Videos Library | Tagged content from top teachers | Web + App |
+| Healer Directory | Global directory with contact funnels | Web + App |
+| My Library | Personal saved archive, organised by subject | Web + App |
+| IAM Notifications | AI-driven affirmation reminders | App Only |
+| User Dashboard | Saved items, emotional trends, journey timeline | App Only |
 
-Module	Description	Platform
-Inspirational Quotes	Daily quotes tagged by emotion or theme	App + Web
-Books Library	Curated archive of spiritual books, sorted by subject	App‑Only
-Videos Library	Tagged video content from top teachers (Hicks, Tolle, Dyer, Swan, Dispenza, etc.)	App‑Only
-Spiritual Healers Directory	Global directory of Reiki, EFT, and other practitioners with optional map view	App‑Only
-IAM Notifications	AI‑driven affirmation reminders, filtered by topic or mood	App‑Only
-Spiritual Disciplines	Pre‑made thematic folders auto‑filled as users save content (Tai Chi, Astrology, etc.)	App‑Only
-User Dashboard	Overview of saved items, emotional trends, and activity timeline	App‑Only
-Search Engine	Semantic search across all modules (books, videos, quotes, healers)	App + Web
+🗄️ Tech Stack
+| Layer | Technology |
+| :--- | :--- |
+| Web Frontend | Next.js (React) + Tailwind CSS |
+| Web Hosting | Vercel |
+| Native App (Phase 2) | Flutter (iOS & Android) |
+| Database | Supabase (PostgreSQL) |
+| Auth | Supabase Auth |
+| Content Ingestion | URL parsing — YouTube ID + Amazon ASIN extraction |
+| AI Layer | Custom GPT (dual role: user guide + content curator) |
+| Dev Environment | VS Code + Claude Code |
 
+🌐 Web App Architecture
+The `/web` directory contains the full Next.js application.
 
-⸻
+#### Key Pages
+* `/` — Homepage: emotional search, subject filters, healer carousel, books, videos
+* `/healers/[slug]` — Individual healer profile with bio, photo mosaic, contact funnel
+* `/library` — Personal saved library, auto-organised by subject
+* `/admin` — Content management dashboard
 
-🪶 Modular Dashboard (User Sanctuary)
+#### Key Components
+| File | Purpose |
+| :--- | :--- |
+| web/components/HomePageContent.js | Homepage layout, 2+1 healer matrix, subject carousels |
+| web/components/HealerCard.js | Healer card with tier badge and favourite toggle |
+| web/components/BookCard.js | Book card with light/dark variant and affiliate links |
+| web/components/VideoPlayer.js | Video card with thumbnail and favourite toggle |
+| web/components/LibraryView.js | Dynamic library with subject parsing and tri-tab view |
+| web/app/healers/[slug]/page.js | Healer profile page with contact panel |
+| web/app/library/page.js | Library page — hydrates from Supabase |
+| web/app/admin/page.js | Admin dashboard |
 
-Each user has a personal dashboard — their private, intelligent library of the soul.
+#### 2+1 Healer Matrix
+The homepage healer shelf renders in groups of three:
+`[ Superhero | Superhero | Local Hero ]`
+If a filtered subject has no Local Heroes, a conversion tile renders automatically to drive healer registrations.
 
-Sections include:
-	•	📘 Saved Books – organised into smart folders (Law of Attraction, Spiritual Classics, etc.)
-	•	🎥 Saved Videos – sorted by teacher or discipline
-	•	💬 Quotes & Affirmations – favourites tagged by emotion
-	•	🧘 Practices & Disciplines – a visual log of explored modalities
-	•	🧭 Journey Timeline – highlights new learnings or emotional patterns over time
-	•	🔔 IAM Notification Controls – manage affirmation frequency and themes
-	•	📈 Optional Progress Insights – time spent reading, viewing, or journaling
+#### My Library
+The library at `/library` reads saved items from local storage (`favorited_books`, `favorite_videos`, `favorited_healers`), maps them against Supabase subject slugs, and generates folders dynamically. Empty categories are hidden automatically.
 
-The dashboard is designed like a spiritual Netflix meets Notion — calming, modular, and personal.
+🗄️ Database Structure (Supabase)
+#### Tables
+* **healers**: `id`, `name`, `slug`, `bio`, `is_famous`, `tier`, `images[]`, `availability_type`, `contact_email`, `contact_phone`, `booking_url`
+* **books**: `id`, `title`, `slug`, `cover_url`, `amazon_asin`, `subject_slug`, `healer_id`
+* **videos**: `id`, `title`, `youtube_id`, `thumbnail_url`, `subject_slug`, `healer_id`
+* **subjects**: `id`, `name`, `slug`, `parent_category`
 
-⸻
+#### Content Ingestion
+Paste a URL → system extracts:
+* YouTube URL → video ID → thumbnail generated automatically
+* Amazon URL → ASIN → book cover generated automatically
 
-🧠 Content Tagging & Filter System
-
-All content is tagged within Supabase to power personalised discovery.
-
-Tag Categories:
-	•	Primary Subject (e.g. “Reiki”)
-	•	Emotional Tone (e.g. “Healing,” “Surrender,” “Hope”)
-	•	Format (Book, Video, Quote, Healer, Practice)
-	•	Depth Level (Beginner / Intermediate / Advanced)
-
-AI assistance (via Gemini/Claude) can auto‑suggest tags on upload.
-Users never see complex tag clouds — instead, they explore through guided prompts like:
-
-“How are you feeling today?” → “Lost” → Suggested videos, books, and quotes appear instantly.
-
-⸻
-
-🔐 Access Logic
-
-Access Level	Capabilities
-Visitor (Web)	Can search, view trending quotes, and preview limited items
-Registered User (Free)	Can favourite content, access dashboard, receive IAM notifications
-Premium Tier (TBD)	Unlock advanced AI matching, healer verification, offline content, and expanded folder customisation
-
-
-⸻
-
-🧪 Tech Stack
-
-Functionality	Tool(s)
-Frontend	Flutter (iOS & Android)
-Web Hosting	Vercel (Next.js static site)
-Database & API	Supabase (PostgreSQL, Auth, Realtime)
-Auth	Supabase Auth
-Tagging & Folder Logic	Supabase Relational Tables
-Notifications Engine	IAM Custom Build (App‑Only)
-
-
-⸻
-
-🗂 Folder Logic
-
-Upon signup, every user receives default folders:
-
-Books
-	•	Law of Attraction
-	•	Conscious Science
-	•	Spiritual Classics
-	•	Modern Works
-
-Videos
-	•	Guided Teachings
-	•	Meditations & Practices
-	•	Short Clips
-
-Practices
-	•	Tai Chi
-	•	Reiki
-	•	EFT
-	•	Astrology
-	•	Quantum Healing
-
-Quotes
-	•	Saved Quotes (tagged by emotion or topic)
-
-Users can rename or create their own folders anytime — no one starts from zero.
-
-⸻
-
-🧱 App‑Only Features Summary
-
-✅ Healer Directory
-✅ IAM Notification System
-✅ Dashboard + Emotional Tracking
-✅ Save‑to‑Folder Functionality
-✅ Personalised Content Engine
-✅ Account Creation & Onboarding
-✅ In‑App Notifications
-
-⸻
-
-🌐 Web‑Only Features Summary
-
-✅ One‑Page Site on Vercel
-✅ SEO‑Friendly Quote Previews
-✅ Public Search Bar
-✅ App Download Links
-✅ Trending Topics Display
-
-⸻
+💰 Monetisation
+* **Healer directory listings**: £5–£10/month per Local Hero
+* **Affiliate links**: Amazon books embedded in content cards
+* **Premium features (Phase 2)**: Personalised journeys, AI coaching, advanced library
 
 ✅ Project Status
-	•	✅ Repo Created
-	•	✅ README Updated (v2)
-	•	⬜ Supabase Schema Scaffolded
-	•	⬜ Initial Flutter Commit
-	•	⬜ Web Funnel Deployment
-	•	⬜ MVP App Modules (Quotes → Books → Videos)
-	•	⬜ IAM Notifications Prototype
+* [x] Supabase backend live
+* [x] Next.js web app core
+* [x] Homepage with emotional search
+* [x] Subject-based filtering
+* [x] Healer profiles with contact funnels
+* [x] Books carousel with affiliate links
+* [x] Video grid with thumbnails
+* [x] My Library with dynamic subject folders
+* [x] Admin dashboard
+* [x] URL parsing automation
+* [ ] Emotion-to-subject mapping (wired)
+* [ ] Guide tier implementation
+* [ ] Vercel production deployment
+* [ ] Content library (target: 5,000 videos + 5,000 books)
+* [ ] Flutter native app (Phase 2)
+* [ ] IAM notification system (Phase 2)
 
-⸻
-
-💡 Next Steps
-	1.	Finalise Supabase schema for tags, subjects, and folder logic
-	2.	Wireframe the Modular Dashboard
-	3.	Implement IAM Notification logic
-	4.	Build MVP Modules (Quotes → Books → Videos)
-	5.	Connect Flutter app to Supabase
-	6.	Deploy public web presence on Vercel
-
-⸻
+💡 Immediate Next Steps
+1. Wire "How are you feeling today?" search bar to emotion → subject mapping
+2. Implement Guide tier (third healer category between Superhero and Local Hero)
+3. Deploy to Vercel (production)
+4. Begin content build — target 200 videos/week
 
 Made with love in Tavira 💫
-
-⸻
-
-
-⸻
-
-## 🌐 Supporting Web Client (Next.js Funnel Architecture)
-
-The `/web` directory contains a premium, high-performance web explorer built with Next.js and Tailwind CSS to support content discovery and practitioner engagement.
-
-### 🧱 Core Web Systems Engineered
-
-#### 1. Dynamic 2+1 Matrix Healer Shelf
-The profile grid splits database records dynamically utilizing the `is_famous` (Boolean) attribute:
-* **Superheroes (`is_famous: true`)**: Configured in responsive card pairs with matching amber tags.
-* **Local Healers (`is_famous: false`)**: Monetized tier practitioners tagged with high-contrast emerald green location markers.
-* **Page Snapping Layout**: Items map horizontally using sliding contexts:
-  $$Slide = [\text{Superhero}_1, \text{Superhero}_2, \text{LocalHealer}_1]$$
-* **Conversion Spotlight Tile**: If a subject search yields 0 matching local heroes, a dashed-border gradient conversion card renders automatically to incentivize healer registration.
-
-#### 2. Reusable Modular Media Components
-* **`BookCard.js`**: Adaptive component accepting a `variant` prop. The `"light"` switch enforces high-contrast visibility on white subviews. Includes a full-width `+ Want to Read` tracking element.
-* **`VideoPlayer.js` & `HealerCard.js`**: Client-side blocks optimized with absolute-positioned floating favorite heart toggles (`absolute top-3 right-3 z-30`) with custom filter shadows.
-
-#### 3. Self-Organizing Dynamic Library System
-Spiritpedia maps private collections dynamically by tracking state rows within user browser layers:
-* **Data Streams**: Toggling saves pushes unique structural text keys across array blocks: `favorited_books`, `favorite_videos`, and `favorited_healers`.
-* **Dynamic Reduction Parser Engine**: The page subview (`/library`) extracts global catalog arrays concurrently from Supabase server-side. The client loops match items against active tags, generating custom folders on the fly. Empty categories are dropped from the layout dynamically.
-* **Tri-Tab Segment Views**: Clicking a generated subject folder shifts layouts down to display an admin-style navigation selector bar (**Healers**, **Books**, **Videos**) wrapping rows into a balanced matrix (`grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6`).
-
-#### 4. Direct Conversion Contact Funnels
-Practitioner profile pages ingest direct contact attributes (`contact_email`, `contact_phone`, `booking_url`) from Supabase table rows:
-* **Descriptive Availability Pills**: Replaces raw text arrays with clean status indicators: `In Person ({city})` and `Online Session available`.
-* **Dynamic Content Cards**: Hides communication containers unless values exist. Formats action buttons saying `"Connect with [Name]"` pointing directly to scheduling portals.
-
-### 📂 Key Web Component Map
-* `web/app/library/page.js` — Hydrates site catalogs concurrently from database tables.
-* `web/components/LibraryView.js` — Manages real-time bucket reduction algorithms.
-* `web/components/HealerCard.js` — Isolated practitioner block handling floating favorite heart arrays.
-* `web/components/BookCard.js` — Multi-theme affiliate asset supporting global library target array tracking.
-* `web/components/HomePageContent.js` — Houses the primary 5-pillar taxonomy map and responsive row carousels.
-
