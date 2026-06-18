@@ -122,7 +122,7 @@ function AdminDashboard() {
     async function loadHealers() {
       const { data, error } = await supabase
         .from('healers')
-        .select('id, name, slug:healer_slug')
+        .select('id, name, slug:healer_slug, subject_slugs')
         .order('name', { ascending: true });
 
       if (!active) return;
@@ -148,6 +148,20 @@ function AdminDashboard() {
     setSelectedSlugs((prev) =>
       prev.includes(slug) ? prev.filter((s) => s !== slug) : [...prev, slug]
     );
+  }
+
+  // SMART TAG PRE-POPULATION — picking a healer in the relational dropdown seeds
+  // the subject tags with that healer's own subject_slugs, so linked videos/books
+  // inherit their topics by default. Resetting to "None / General Content" clears
+  // the selection back to a fresh, empty slate.
+  function handleHealerLink(slug) {
+    setLinkedHealerSlug(slug);
+    if (!slug) {
+      setSelectedSlugs([]);
+      return;
+    }
+    const match = healers.find((h) => h.slug === slug);
+    setSelectedSlugs(Array.isArray(match?.subject_slugs) ? match.subject_slugs : []);
   }
 
   function resetForm() {
@@ -313,7 +327,7 @@ function AdminDashboard() {
                 <label className={labelClass}>Link Healer / Author</label>
                 <select
                   value={linkedHealerSlug}
-                  onChange={(e) => setLinkedHealerSlug(e.target.value)}
+                  onChange={(e) => handleHealerLink(e.target.value)}
                   className={inputClass}
                 >
                   <option value="">None / General Content</option>
