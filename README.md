@@ -167,7 +167,7 @@ The library at `/library` reads saved items from local storage (`favorited_books
 
 💡 Immediate Next Steps
 1. Wire "How are you feeling today?" search bar to emotion → subject mapping
-2. Implement Guide tier (third healer category between Superhero and Local Hero)
+2. Implement Luminary tier (third healer category between Superhero and Local Hero)
 3. Deploy to Vercel (production)
 4. Begin content build — target 200 videos/week
 

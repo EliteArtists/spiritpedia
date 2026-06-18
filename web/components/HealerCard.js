@@ -51,9 +51,13 @@ export default function HealerCard({ healer, portrait }) {
         {/* Floating text overlay anchored to the baseline */}
         <div className="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/95 via-black/60 to-transparent p-4 pt-16 flex items-center justify-between z-10">
           <h3 className="text-white font-bold text-lg drop-shadow-sm">{healer.name}</h3>
-          {healer.is_famous ? (
+          {healer.tier === 'superhero' ? (
             <span className="px-2.5 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wider bg-amber-100 text-amber-600 border border-amber-300">
               Superhero
+            </span>
+          ) : healer.tier === 'luminary' ? (
+            <span className="bg-violet-600 text-white font-bold text-[11px] tracking-wider uppercase px-2.5 py-1 rounded-md shadow-sm">
+              LUMINARY
             </span>
           ) : (
             <span className="bg-emerald-500 text-white text-[10px] font-bold tracking-wider uppercase px-2 py-0.5 rounded-md shadow-sm">

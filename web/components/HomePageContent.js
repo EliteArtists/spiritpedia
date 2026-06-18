@@ -80,14 +80,18 @@ export default async function HomePage({ initialSubjectSlug }) {
     ? allVideos.filter(video => video.subject_slugs?.includes(currentSubjectSlug))
     : allVideos;
 
-  // Divide practitioners into two tiers.
-  const famousList = filteredHealers.filter((h) => h.is_famous === true);
-  const localList = filteredHealers.filter((h) => h.is_famous === false);
+  // Premium catalog = Superhero + Luminary tiers; Local Hero fills the third slot.
+  // SAFE FALLBACK: any healer that is not explicitly premium (incl. NULL, empty,
+  // or unexpected tier values during backfill) is treated as a Local Hero so no
+  // grassroots practitioner silently disappears from the directory.
+  const isPremium = (h) => h.tier === 'superhero' || h.tier === 'luminary';
+  const premiumList = filteredHealers.filter(isPremium);
+  const localList = filteredHealers.filter((h) => !isPremium(h));
 
-  // Assemble slide pages: each page = 2 famous + 1 local (2+1 block).
-  const pageCount = Math.max(Math.ceil(famousList.length / 2), localList.length);
+  // Assemble slide pages: each page = 2 premium + 1 local (2+1 block).
+  const pageCount = Math.max(Math.ceil(premiumList.length / 2), localList.length);
   const healerPages = Array.from({ length: pageCount }, (_, p) => ({
-    famous: [famousList[p * 2], famousList[p * 2 + 1]],
+    premium: [premiumList[p * 2], premiumList[p * 2 + 1]],
     local: localList[p] || null,
   }));
 
@@ -211,10 +215,10 @@ export default async function HomePage({ initialSubjectSlug }) {
                 key={p}
                 className="w-full grid grid-cols-1 md:grid-cols-3 shrink-0 snap-start gap-6"
               >
-                {/* Two famous slots (empty placeholder holds the column if absent) */}
+                {/* Two premium slots (empty placeholder holds the column if absent) */}
                 {[0, 1].map((i) =>
-                  page.famous[i] ? (
-                    renderHealerCard(page.famous[i])
+                  page.premium[i] ? (
+                    renderHealerCard(page.premium[i])
                   ) : (
                     <div key={`empty-${p}-${i}`} className="hidden md:block" />
                   )

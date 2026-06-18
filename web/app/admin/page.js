@@ -80,6 +80,7 @@ function AdminDashboard() {
   const [imageUrl2, setImageUrl2] = useState('');
   const [imageUrl3, setImageUrl3] = useState('');
   const [availability, setAvailability] = useState('worldwide'); // 'worldwide' | 'local' | 'local_online'
+  const [tier, setTier] = useState('superhero'); // 'superhero' | 'luminary' | 'local_hero'
   const [country, setCountry] = useState('');
   const [city, setCity] = useState('');
   const [contactEmail, setContactEmail] = useState('');
@@ -164,6 +165,7 @@ function AdminDashboard() {
     setImageUrl2('');
     setImageUrl3('');
     setAvailability('worldwide');
+    setTier('superhero');
     setCountry('');
     setCity('');
     setContactEmail('');
@@ -224,7 +226,8 @@ function AdminDashboard() {
           subject_slugs: tags,
         }));
       } else {
-        // Healer: "Worldwide (Famous Names)" flags is_famous; local options carry country/city.
+        // Healer: `tier` classifies the practitioner (superhero / luminary /
+        // local_hero); availability options carry country/city for local healers.
         const isLocal = availability === 'local' || availability === 'local_online';
         // Collect the three image inputs, drop blanks, store as a clean array.
         const imageUrls = [imageUrl1, imageUrl2, imageUrl3]
@@ -235,7 +238,7 @@ function AdminDashboard() {
           bio: bio.trim() || null,
           healer_slug: slug.trim(),
           image_urls: imageUrls,
-          is_famous: availability === 'worldwide',
+          tier,
           availability_type: AVAILABILITY_LABELS[availability],
           country: isLocal ? country.trim() || null : null,
           city: isLocal ? city.trim() || null : null,
@@ -472,6 +475,19 @@ function AdminDashboard() {
                   placeholder="https://..."
                   className={inputClass}
                 />
+              </div>
+
+              <div>
+                <label className={labelClass}>Tier</label>
+                <select
+                  value={tier}
+                  onChange={(e) => setTier(e.target.value)}
+                  className={inputClass}
+                >
+                  <option value="superhero">Superhero</option>
+                  <option value="luminary">Luminary</option>
+                  <option value="local_hero">Local Hero</option>
+                </select>
               </div>
 
               <div>

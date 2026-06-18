@@ -33,9 +33,13 @@ export default async function HealerProfile({ params }) {
 
             {/* Primary tier badge — symmetry with the homepage badge motif */}
             <div className="mb-6">
-              {healer.is_famous ? (
+              {healer.tier === 'superhero' ? (
                 <span className="bg-[#FEF08A] text-amber-950 font-bold tracking-wider text-[11px] uppercase px-2.5 py-1 rounded-md shadow-sm">
                   SUPERHERO
+                </span>
+              ) : healer.tier === 'luminary' ? (
+                <span className="bg-violet-600 text-white font-bold text-[11px] tracking-wider uppercase px-2.5 py-1 rounded-md shadow-sm">
+                  LUMINARY
                 </span>
               ) : (
                 <span className="bg-emerald-500 text-white font-bold tracking-wider text-[11px] uppercase px-2.5 py-1 rounded-md shadow-sm">

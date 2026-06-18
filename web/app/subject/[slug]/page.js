@@ -73,8 +73,18 @@ export default async function SubjectPage({ params }) {
                     <h4 className="text-2xl font-bold text-gray-900">{healer.name}</h4>
                     <p className="text-gray-600 mt-3 leading-relaxed">{healer.bio}</p>
                     <div className="mt-6 flex items-center space-x-4">
-                      <span className={`px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest ${healer.is_famous ? 'bg-yellow-100 text-yellow-700' : 'bg-green-100 text-green-700'}`}>
-                        {healer.is_famous ? '⭐ Famous Teacher' : '📍 Local Practitioner'}
+                      <span className={`px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest ${
+                        healer.tier === 'superhero'
+                          ? 'bg-yellow-100 text-yellow-700'
+                          : healer.tier === 'luminary'
+                          ? 'bg-violet-100 text-violet-700'
+                          : 'bg-green-100 text-green-700'
+                      }`}>
+                        {healer.tier === 'superhero'
+                          ? '⭐ Superhero'
+                          : healer.tier === 'luminary'
+                          ? '✨ Luminary'
+                          : '📍 Local Hero'}
                       </span>
                       {healer.city && <span className="text-gray-400 text-sm font-medium">📍 {healer.city}</span>}
                     </div>
