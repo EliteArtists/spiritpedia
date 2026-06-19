@@ -20,6 +20,14 @@ function extractYouTubeId(url) {
   return null;
 }
 
+// Extract the 10-character Amazon ASIN / ISBN-10 from a product URL. Covers the
+// common /dp/, /gp/product/, /product/ and /ASIN/ path shapes.
+function extractAmazonId(url) {
+  if (!url) return null;
+  const m = url.match(/(?:\/dp\/|\/gp\/product\/|\/product\/|\/ASIN\/)([A-Z0-9]{10})/i);
+  return m ? m[1].toUpperCase() : null;
+}
+
 // Human-readable label persisted to healers.availability_type (drives the
 // modality badge on the healer profile page).
 const AVAILABILITY_LABELS = {
@@ -86,6 +94,13 @@ function AdminDashboard() {
   const [contactEmail, setContactEmail] = useState('');
   const [contactPhone, setContactPhone] = useState('');
   const [bookingUrl, setBookingUrl] = useState('');
+  // Social media + web links (all optional)
+  const [websiteUrl, setWebsiteUrl] = useState('');
+  const [youtubeUrl, setYoutubeUrl] = useState('');
+  const [instagramUrl, setInstagramUrl] = useState('');
+  const [facebookUrl, setFacebookUrl] = useState('');
+  const [twitterUrl, setTwitterUrl] = useState('');
+  const [tiktokUrl, setTiktokUrl] = useState('');
   const [subjects, setSubjects] = useState([]);
   const [healers, setHealers] = useState([]); // for relational Link Healer/Author dropdown
   const [linkedHealerSlug, setLinkedHealerSlug] = useState(''); // '' = None / General Content
@@ -185,6 +200,12 @@ function AdminDashboard() {
     setContactEmail('');
     setContactPhone('');
     setBookingUrl('');
+    setWebsiteUrl('');
+    setYoutubeUrl('');
+    setInstagramUrl('');
+    setFacebookUrl('');
+    setTwitterUrl('');
+    setTiktokUrl('');
     setLinkedHealerSlug('');
     setSelectedSlugs([]);
   }
@@ -221,6 +242,22 @@ function AdminDashboard() {
           ? `https://www.youtube.com/watch?v=${videoId}`
           : url.trim();
 
+        // DUPLICATE GUARD — videos are stored as canonical watch URLs, so an
+        // exact platform_url match means this YouTube ID is already ingested.
+        const { data: videoDupes, error: videoDupeErr } = await supabase
+          .from('videos')
+          .select('id')
+          .eq('platform_url', platformUrl)
+          .limit(1);
+        if (videoDupeErr) throw videoDupeErr;
+        if (videoDupes && videoDupes.length > 0) {
+          setToast({
+            type: 'error',
+            message: 'Duplicate Error: This YouTube video has already been added to Spiritpedia.',
+          });
+          return; // leave form values intact; finally{} clears the saving flag
+        }
+
         ({ error } = await supabase.from('videos').insert({
           title: title.trim(),
           platform_url: platformUrl,
@@ -228,6 +265,23 @@ function AdminDashboard() {
           subject_slugs: tags,
         }));
       } else if (tab === 'book') {
+        // DUPLICATE GUARD — match on the 10-char ASIN / ISBN embedded in the
+        // Amazon URL when present, otherwise fall back to the exact URL.
+        const asin = extractAmazonId(url.trim());
+        let bookDupeQuery = supabase.from('books').select('id').limit(1);
+        bookDupeQuery = asin
+          ? bookDupeQuery.ilike('amazon_url', `%${asin}%`)
+          : bookDupeQuery.eq('amazon_url', url.trim());
+        const { data: bookDupes, error: bookDupeErr } = await bookDupeQuery;
+        if (bookDupeErr) throw bookDupeErr;
+        if (bookDupes && bookDupes.length > 0) {
+          setToast({
+            type: 'error',
+            message: 'Duplicate Error: This book is already active in our catalog.',
+          });
+          return; // leave form values intact; finally{} clears the saving flag
+        }
+
         ({ error } = await supabase.from('books').insert({
           title: title.trim(),
           amazon_url: url.trim(),
@@ -247,6 +301,20 @@ function AdminDashboard() {
         const imageUrls = [imageUrl1, imageUrl2, imageUrl3]
           .map((s) => s.trim())
           .filter(Boolean);
+
+        // DUPLICATE GUARD — block insert if a healer already exists with the
+        // same slug or name.
+        const { data: healerDupes, error: healerDupeErr } = await supabase
+          .from('healers')
+          .select('id')
+          .or(`healer_slug.eq.${slug.trim()},name.eq.${name.trim()}`)
+          .limit(1);
+        if (healerDupeErr) throw healerDupeErr;
+        if (healerDupes && healerDupes.length > 0) {
+          setToast({ type: 'error', message: 'A healer profile with this name already exists' });
+          return; // halt execution; finally{} clears the saving flag
+        }
+
         ({ error } = await supabase.from('healers').insert({
           name: name.trim(),
           bio: bio.trim() || null,
@@ -259,6 +327,12 @@ function AdminDashboard() {
           contact_email: contactEmail.trim() || null,
           contact_phone: contactPhone.trim() || null,
           booking_url: bookingUrl.trim() || null,
+          website_url: websiteUrl.trim() || null,
+          youtube_url: youtubeUrl.trim() || null,
+          instagram_url: instagramUrl.trim() || null,
+          facebook_url: facebookUrl.trim() || null,
+          twitter_url: twitterUrl.trim() || null,
+          tiktok_url: tiktokUrl.trim() || null,
           subject_slugs: tags,
         }));
       }
@@ -571,6 +645,68 @@ function AdminDashboard() {
                   value={bookingUrl}
                   onChange={(e) => setBookingUrl(e.target.value)}
                   placeholder="https://calendly.com/..."
+                  className={inputClass}
+                />
+              </div>
+
+              {/* SOCIAL MEDIA + WEB LINKS — all optional, mapped to *_url columns */}
+              <div>
+                <label className={labelClass}>Website URL (optional)</label>
+                <input
+                  type="text"
+                  value={websiteUrl}
+                  onChange={(e) => setWebsiteUrl(e.target.value)}
+                  placeholder="https://..."
+                  className={inputClass}
+                />
+              </div>
+              <div>
+                <label className={labelClass}>YouTube URL (optional)</label>
+                <input
+                  type="text"
+                  value={youtubeUrl}
+                  onChange={(e) => setYoutubeUrl(e.target.value)}
+                  placeholder="https://www.youtube.com/@..."
+                  className={inputClass}
+                />
+              </div>
+              <div>
+                <label className={labelClass}>Instagram URL (optional)</label>
+                <input
+                  type="text"
+                  value={instagramUrl}
+                  onChange={(e) => setInstagramUrl(e.target.value)}
+                  placeholder="https://www.instagram.com/..."
+                  className={inputClass}
+                />
+              </div>
+              <div>
+                <label className={labelClass}>Facebook URL (optional)</label>
+                <input
+                  type="text"
+                  value={facebookUrl}
+                  onChange={(e) => setFacebookUrl(e.target.value)}
+                  placeholder="https://www.facebook.com/..."
+                  className={inputClass}
+                />
+              </div>
+              <div>
+                <label className={labelClass}>Twitter URL (optional)</label>
+                <input
+                  type="text"
+                  value={twitterUrl}
+                  onChange={(e) => setTwitterUrl(e.target.value)}
+                  placeholder="https://twitter.com/..."
+                  className={inputClass}
+                />
+              </div>
+              <div>
+                <label className={labelClass}>TikTok URL (optional)</label>
+                <input
+                  type="text"
+                  value={tiktokUrl}
+                  onChange={(e) => setTiktokUrl(e.target.value)}
+                  placeholder="https://www.tiktok.com/@..."
                   className={inputClass}
                 />
               </div>
