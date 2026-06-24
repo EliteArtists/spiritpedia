@@ -69,6 +69,43 @@ function TikTokIcon() {
   );
 }
 
+// Compact download glyph for the "Get Download" offering CTA — sized to sit
+// inline with the button label rather than the larger social icon set.
+function DownloadIcon() {
+  return (
+    <svg
+      width={16}
+      height={16}
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth={2.5}
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      aria-hidden="true"
+    >
+      <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+      <polyline points="7 10 12 15 17 10" />
+      <line x1="12" y1="15" x2="12" y2="3" />
+    </svg>
+  );
+}
+
+// The offering card CTA reacts to product_type — courses enrol, downloads grab a
+// file, memberships join, retreats book. Card layout stays identical across all.
+function OfferingCta({ productType }) {
+  if (productType === 'download') {
+    return (
+      <>
+        <DownloadIcon /> Get Download
+      </>
+    );
+  }
+  if (productType === 'membership') return <>Join Now &rarr;</>;
+  if (productType === 'retreat') return <>Book Place &rarr;</>;
+  return <>Enrol Now &rarr;</>;
+}
+
 export default async function HealerProfile({ params }) {
   const { slug } = await params;
 
@@ -285,7 +322,7 @@ export default async function HealerProfile({ params }) {
                       </p>
                     )}
                     <span className="mt-4 inline-flex items-center gap-1 text-sm font-bold text-purple-600 group-hover:text-purple-500 uppercase tracking-wider">
-                      View Course &rarr;
+                      <OfferingCta productType={course.product_type} />
                     </span>
                   </div>
                 </a>

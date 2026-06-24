@@ -85,6 +85,8 @@ function AdminDashboard() {
   const [coursePrice, setCoursePrice] = useState('');
   const [courseImageUrl, setCourseImageUrl] = useState('');
   const [courseSubjects, setCourseSubjects] = useState(''); // comma-separated slug string
+  const [productType, setProductType] = useState('course'); // course | download | membership | retreat
+  const [affiliateStatus, setAffiliateStatus] = useState('none'); // none | applied | active
   // Healer-specific fields
   const [name, setName] = useState('');
   const [bio, setBio] = useState('');
@@ -201,6 +203,8 @@ function AdminDashboard() {
     setCoursePrice('');
     setCourseImageUrl('');
     setCourseSubjects('');
+    setProductType('course');
+    setAffiliateStatus('none');
     setName('');
     setBio('');
     setSlug('');
@@ -347,6 +351,8 @@ function AdminDashboard() {
           image_url: courseImageUrl.trim() || null,
           healer_id: linkedHealer?.id ?? null,
           subject_slugs: tags,
+          product_type: productType,
+          affiliate_status: affiliateStatus,
         }));
       } else {
         // Healer: `tier` classifies the practitioner (superhero / luminary /
@@ -412,6 +418,19 @@ function AdminDashboard() {
   const inputClass =
     'w-full px-4 py-3 rounded-lg bg-slate-800 border border-slate-700 text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-cyan-400 focus:border-transparent';
   const labelClass = 'block text-xs font-bold uppercase tracking-wider text-slate-400 mb-2';
+
+  // Course form copy shifts with the selected product_type so one form serves
+  // courses, downloads, memberships, and retreats with the right terminology.
+  const courseUrlLabel =
+    productType === 'download' ? 'Download Store URL' : productType === 'retreat' ? 'Booking URL' : 'Enrol URL';
+  const courseUrlHelper =
+    productType === 'download'
+      ? 'e.g. DPDCart, Gumroad, direct store link'
+      : productType === 'retreat'
+        ? 'e.g. direct event or application page'
+        : '';
+  const coursePriceLabel = productType === 'membership' ? 'Membership Price' : 'Price';
+  const coursePriceHelper = productType === 'membership' ? 'e.g. From $19.99/month' : '';
 
   return (
     <div className="min-h-screen bg-slate-950 text-white py-12 px-4">
@@ -483,7 +502,7 @@ function AdminDashboard() {
 
               <div>
                 <label className={labelClass}>
-                  {tab === 'video' ? 'YouTube Link' : tab === 'book' ? 'Amazon Link' : 'Direct Course URL'}
+                  {tab === 'video' ? 'YouTube Link' : tab === 'book' ? 'Amazon Link' : courseUrlLabel}
                 </label>
                 <input
                   type="text"
@@ -494,10 +513,13 @@ function AdminDashboard() {
                       ? 'https://www.youtube.com/watch?v=...'
                       : tab === 'book'
                         ? 'https://www.amazon.com/dp/...'
-                        : 'https://www.teachable.com/...'
+                        : 'https://...'
                   }
                   className={inputClass}
                 />
+                {tab === 'course' && courseUrlHelper && (
+                  <p className="mt-3 text-xs text-slate-500">{courseUrlHelper}</p>
+                )}
               </div>
             </>
           )}
@@ -562,6 +584,31 @@ function AdminDashboard() {
           {tab === 'course' && (
             <>
               <div>
+                <label className={labelClass}>Product Type</label>
+                <select
+                  value={productType}
+                  onChange={(e) => setProductType(e.target.value)}
+                  className={inputClass}
+                >
+                  <option value="course">Course</option>
+                  <option value="download">Download</option>
+                  <option value="membership">Membership</option>
+                  <option value="retreat">Retreat</option>
+                </select>
+              </div>
+              <div>
+                <label className={labelClass}>Affiliate Status (internal)</label>
+                <select
+                  value={affiliateStatus}
+                  onChange={(e) => setAffiliateStatus(e.target.value)}
+                  className={inputClass}
+                >
+                  <option value="none">None</option>
+                  <option value="applied">Applied</option>
+                  <option value="active">Active</option>
+                </select>
+              </div>
+              <div>
                 <label className={labelClass}>Description</label>
                 <textarea
                   value={courseDescription}
@@ -572,7 +619,7 @@ function AdminDashboard() {
                 />
               </div>
               <div>
-                <label className={labelClass}>Price</label>
+                <label className={labelClass}>{coursePriceLabel}</label>
                 <input
                   type="text"
                   value={coursePrice}
@@ -580,6 +627,9 @@ function AdminDashboard() {
                   placeholder="e.g. £49 or Free"
                   className={inputClass}
                 />
+                {coursePriceHelper && (
+                  <p className="mt-3 text-xs text-slate-500">{coursePriceHelper}</p>
+                )}
               </div>
               <div>
                 <label className={labelClass}>Image URL</label>
