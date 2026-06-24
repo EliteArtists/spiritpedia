@@ -81,6 +81,10 @@ export default async function HealerProfile({ params }) {
   const { data: books } = await supabase.from('books').select('*').eq('healer_slug', slug);
   const { data: videos } = await supabase.from('videos').select('*').eq('healer_slug', slug);
 
+  // Courses relate to a healer through the relational bigint `healer_id` FK
+  // (not the slug), so key the lookup off the resolved healer record's id.
+  const { data: courses } = await supabase.from('courses').select('*').eq('healer_id', healer.id);
+
   // Up to 3 portraits for the hero gallery.
   const portraits = Array.isArray(healer.image_urls) ? healer.image_urls.filter(Boolean) : [];
 
@@ -238,6 +242,57 @@ export default async function HealerProfile({ params }) {
             )) : <p className="text-gray-400 font-black uppercase tracking-widest">No videos yet.</p>}
           </div>
         </section>
+
+        {/* COURSES — horizontal swipe carousel. Section is hidden entirely when
+            the healer has no associated courses, keeping the layout clean. */}
+        {courses?.length > 0 && (
+          <section>
+            <div className="flex flex-row overflow-x-auto gap-6 pb-4 scroll-smooth snap-x snap-mandatory">
+              {courses.map((course) => (
+                <a
+                  key={course.id}
+                  href={course.course_url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group shrink-0 snap-start w-[300px] flex flex-col rounded-2xl overflow-hidden bg-slate-50 border border-slate-200 shadow-lg hover:shadow-2xl transition-all hover:-translate-y-1"
+                >
+                  {/* Cover image + price badge */}
+                  <div className="relative aspect-[16/9] w-full overflow-hidden bg-slate-200">
+                    {course.image_url ? (
+                      <img
+                        src={course.image_url}
+                        alt={course.title}
+                        className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                      />
+                    ) : (
+                      <div className="w-full h-full flex items-center justify-center text-5xl">🎓</div>
+                    )}
+                    {course.price && (
+                      <span className="absolute top-3 right-3 bg-slate-900 text-white text-xs font-black uppercase tracking-wider px-3 py-1.5 rounded-full shadow-lg">
+                        {course.price}
+                      </span>
+                    )}
+                  </div>
+
+                  {/* Title + description snippet + CTA */}
+                  <div className="flex flex-col flex-1 p-5">
+                    <h3 className="font-black text-lg text-slate-900 tracking-tight leading-tight mb-2 line-clamp-2">
+                      {course.title}
+                    </h3>
+                    {course.description && (
+                      <p className="text-sm text-slate-500 leading-relaxed line-clamp-3 flex-1">
+                        {course.description}
+                      </p>
+                    )}
+                    <span className="mt-4 inline-flex items-center gap-1 text-sm font-bold text-purple-600 group-hover:text-purple-500 uppercase tracking-wider">
+                      View Course &rarr;
+                    </span>
+                  </div>
+                </a>
+              ))}
+            </div>
+          </section>
+        )}
       </div>
     </main>
   );

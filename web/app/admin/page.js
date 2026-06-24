@@ -71,7 +71,7 @@ function AdminDashboard() {
   const secret = searchParams.get('secret');
 
   // Form + UI state
-  const [tab, setTab] = useState('video'); // 'video' | 'book'
+  const [tab, setTab] = useState('video'); // 'video' | 'book' | 'course' | 'healer'
   const [title, setTitle] = useState('');
   const [url, setUrl] = useState('');
   const [author, setAuthor] = useState('');
@@ -80,6 +80,11 @@ function AdminDashboard() {
   const [goodreadsUrl, setGoodreadsUrl] = useState('');
   const [worldOfBooksUrl, setWorldOfBooksUrl] = useState('');
   const [bookDescription, setBookDescription] = useState('');
+  // Course-specific fields (course_url reuses the shared `url` field)
+  const [courseDescription, setCourseDescription] = useState('');
+  const [coursePrice, setCoursePrice] = useState('');
+  const [courseImageUrl, setCourseImageUrl] = useState('');
+  const [courseSubjects, setCourseSubjects] = useState(''); // comma-separated slug string
   // Healer-specific fields
   const [name, setName] = useState('');
   const [bio, setBio] = useState('');
@@ -173,10 +178,15 @@ function AdminDashboard() {
     setLinkedHealerSlug(slug);
     if (!slug) {
       setSelectedSlugs([]);
+      setCourseSubjects('');
       return;
     }
     const match = healers.find((h) => h.slug === slug);
-    setSelectedSlugs(Array.isArray(match?.subject_slugs) ? match.subject_slugs : []);
+    const slugs = Array.isArray(match?.subject_slugs) ? match.subject_slugs : [];
+    setSelectedSlugs(slugs);
+    // The Course form reads its slugs from a comma-separated string, so mirror
+    // the linked healer's tags into that field too for the same pre-population.
+    setCourseSubjects(slugs.join(', '));
   }
 
   function resetForm() {
@@ -187,6 +197,10 @@ function AdminDashboard() {
     setGoodreadsUrl('');
     setWorldOfBooksUrl('');
     setBookDescription('');
+    setCourseDescription('');
+    setCoursePrice('');
+    setCourseImageUrl('');
+    setCourseSubjects('');
     setName('');
     setBio('');
     setSlug('');
@@ -224,10 +238,21 @@ function AdminDashboard() {
       return;
     }
 
-    // The manually selected tags are the direct payload for subject_slugs.
-    const tags = selectedSlugs;
+    // The manually selected tags are the direct payload for subject_slugs. The
+    // Course form supplies its slugs as a comma-separated string instead of the
+    // shared tag chips, so parse those into the same array shape.
+    const tags =
+      tab === 'course'
+        ? courseSubjects.split(',').map((s) => s.trim()).filter(Boolean)
+        : selectedSlugs;
     if (tags.length === 0) {
-      setToast({ type: 'error', message: 'Select at least one subject tag before saving.' });
+      setToast({
+        type: 'error',
+        message:
+          tab === 'course'
+            ? 'Enter at least one subject slug before saving.'
+            : 'Select at least one subject tag before saving.',
+      });
       return;
     }
 
@@ -293,6 +318,36 @@ function AdminDashboard() {
           healer_slug: linkedHealerSlug || null,
           subject_slugs: tags,
         }));
+      } else if (tab === 'course') {
+        // DUPLICATE GUARD — courses carry a UNIQUE constraint on course_url, so
+        // an exact match means this course is already in the catalog. Block the
+        // insert before it round-trips to the database constraint.
+        const { data: courseDupes, error: courseDupeErr } = await supabase
+          .from('courses')
+          .select('id')
+          .eq('course_url', url.trim())
+          .limit(1);
+        if (courseDupeErr) throw courseDupeErr;
+        if (courseDupes && courseDupes.length > 0) {
+          setToast({
+            type: 'error',
+            message: 'Duplicate Error: This course is already active in our catalog.',
+          });
+          return; // leave form values intact; finally{} clears the saving flag
+        }
+
+        // Resolve the relational bigint healer_id from the linked healer slug.
+        const linkedHealer = healers.find((h) => h.slug === linkedHealerSlug);
+
+        ({ error } = await supabase.from('courses').insert({
+          title: title.trim(),
+          description: courseDescription.trim() || null,
+          course_url: url.trim(),
+          price: coursePrice.trim() || null,
+          image_url: courseImageUrl.trim() || null,
+          healer_id: linkedHealer?.id ?? null,
+          subject_slugs: tags,
+        }));
       } else {
         // Healer: `tier` classifies the practitioner (superhero / luminary /
         // local_hero); availability options carry country/city for local healers.
@@ -339,7 +394,8 @@ function AdminDashboard() {
 
       if (error) throw error;
 
-      const savedLabel = tab === 'video' ? 'Video' : tab === 'book' ? 'Book' : 'Healer';
+      const savedLabel =
+        tab === 'video' ? 'Video' : tab === 'book' ? 'Book' : tab === 'course' ? 'Course' : 'Healer';
       setToast({
         type: 'success',
         message: `${savedLabel} saved! Tagged: ${tags.join(', ')}`,
@@ -372,6 +428,7 @@ function AdminDashboard() {
           {[
             { key: 'video', label: '🎬 Add Video' },
             { key: 'book', label: '📚 Add Book' },
+            { key: 'course', label: '🎓 Add Course' },
             { key: 'healer', label: '👤 Add Healer' },
           ].map((t) => (
             <button
@@ -425,12 +482,20 @@ function AdminDashboard() {
               </div>
 
               <div>
-                <label className={labelClass}>{tab === 'video' ? 'YouTube Link' : 'Amazon Link'}</label>
+                <label className={labelClass}>
+                  {tab === 'video' ? 'YouTube Link' : tab === 'book' ? 'Amazon Link' : 'Direct Course URL'}
+                </label>
                 <input
                   type="text"
                   value={url}
                   onChange={(e) => setUrl(e.target.value)}
-                  placeholder={tab === 'video' ? 'https://www.youtube.com/watch?v=...' : 'https://www.amazon.com/dp/...'}
+                  placeholder={
+                    tab === 'video'
+                      ? 'https://www.youtube.com/watch?v=...'
+                      : tab === 'book'
+                        ? 'https://www.amazon.com/dp/...'
+                        : 'https://www.teachable.com/...'
+                  }
                   className={inputClass}
                 />
               </div>
@@ -489,6 +554,56 @@ function AdminDashboard() {
                   rows={4}
                   className={inputClass}
                 />
+              </div>
+            </>
+          )}
+
+          {/* COURSE-ONLY FIELDS */}
+          {tab === 'course' && (
+            <>
+              <div>
+                <label className={labelClass}>Description</label>
+                <textarea
+                  value={courseDescription}
+                  onChange={(e) => setCourseDescription(e.target.value)}
+                  placeholder="What the course covers…"
+                  rows={4}
+                  className={inputClass}
+                />
+              </div>
+              <div>
+                <label className={labelClass}>Price</label>
+                <input
+                  type="text"
+                  value={coursePrice}
+                  onChange={(e) => setCoursePrice(e.target.value)}
+                  placeholder="e.g. £49 or Free"
+                  className={inputClass}
+                />
+              </div>
+              <div>
+                <label className={labelClass}>Image URL</label>
+                <input
+                  type="text"
+                  value={courseImageUrl}
+                  onChange={(e) => setCourseImageUrl(e.target.value)}
+                  placeholder="https://..."
+                  className={inputClass}
+                />
+              </div>
+              <div>
+                <label className={labelClass}>Subject Slugs (comma-separated)</label>
+                <input
+                  type="text"
+                  value={courseSubjects}
+                  onChange={(e) => setCourseSubjects(e.target.value)}
+                  placeholder="e.g. reiki, meditation, energy-healing"
+                  className={inputClass}
+                />
+                <p className="mt-3 text-xs text-slate-500">
+                  Comma-separated slugs written directly to the subject_slugs array. Auto-filled from the
+                  linked healer&apos;s tags when one is selected above.
+                </p>
               </div>
             </>
           )}
@@ -713,7 +828,9 @@ function AdminDashboard() {
             </>
           )}
 
-          {/* MULTI-TAG SUBJECT SELECTOR — shared by Video, Book, and Healer forms */}
+          {/* MULTI-TAG SUBJECT SELECTOR — shared by Video, Book, and Healer forms.
+              The Course form supplies its slugs via its own comma-separated field. */}
+          {tab !== 'course' && (
           <div>
             <label className={labelClass}>
               Subject Tags
@@ -750,13 +867,16 @@ function AdminDashboard() {
               Click to toggle. Selected tags are written directly to the subject_slugs array.
             </p>
           </div>
+          )}
 
           <button
             type="submit"
             disabled={saving}
             className="w-full py-4 rounded-xl font-black uppercase tracking-widest text-slate-950 bg-gradient-to-r from-cyan-400 to-emerald-400 hover:from-cyan-300 hover:to-emerald-300 transition-all disabled:opacity-50 disabled:cursor-not-allowed"
           >
-            {saving ? 'Saving…' : `Save ${tab === 'video' ? 'Video' : tab === 'book' ? 'Book' : 'Healer'}`}
+            {saving
+              ? 'Saving…'
+              : `Save ${tab === 'video' ? 'Video' : tab === 'book' ? 'Book' : tab === 'course' ? 'Course' : 'Healer'}`}
           </button>
         </form>
 
