@@ -106,6 +106,127 @@ function OfferingCta({ productType }) {
   return <>Enrol Now &rarr;</>;
 }
 
+// Free resources are always no-cost — downloads keep the grab-a-file glyph,
+// everything else invites the visitor to access it.
+function FreeResourceCta({ resourceType }) {
+  if (resourceType === 'download') {
+    return (
+      <>
+        <DownloadIcon /> Get Download
+      </>
+    );
+  }
+  return <>Access Free &rarr;</>;
+}
+
+// SECTION SHELF — a labelled horizontal swipe carousel. Section headers reuse
+// the page's established black/uppercase/tight motif; the scroll container keeps
+// the exact snap + spacing behaviour used across the profile.
+function Shelf({ title, children }) {
+  return (
+    <section>
+      <h2 className="text-3xl md:text-4xl font-black uppercase tracking-tighter text-slate-900 mb-8">
+        {title}
+      </h2>
+      <div className="flex flex-row overflow-x-auto gap-6 pb-4 scroll-smooth snap-x snap-mandatory">
+        {children}
+      </div>
+    </section>
+  );
+}
+
+// Offering card — the identical markup used for the courses/downloads/
+// memberships/retreats catalogue. Only the CTA copy shifts (via OfferingCta),
+// so the same card serves every product_type without a visual rewrite.
+function OfferingCard({ item }) {
+  return (
+    <a
+      href={item.course_url}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="group shrink-0 snap-start w-[300px] flex flex-col rounded-2xl overflow-hidden bg-slate-50 border border-slate-200 shadow-lg hover:shadow-2xl transition-all hover:-translate-y-1"
+    >
+      {/* Cover image + price badge */}
+      <div className="relative aspect-[16/9] w-full overflow-hidden bg-slate-200">
+        {item.image_url ? (
+          <img
+            src={item.image_url}
+            alt={item.title}
+            className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+          />
+        ) : (
+          <div className="w-full h-full flex items-center justify-center text-5xl">🎓</div>
+        )}
+        {item.price && (
+          <span className="absolute top-3 right-3 bg-slate-900 text-white text-xs font-black uppercase tracking-wider px-3 py-1.5 rounded-full shadow-lg">
+            {item.price}
+          </span>
+        )}
+      </div>
+
+      {/* Title + description snippet + CTA */}
+      <div className="flex flex-col flex-1 p-5">
+        <h3 className="font-black text-lg text-slate-900 tracking-tight leading-tight mb-2 line-clamp-2">
+          {item.title}
+        </h3>
+        {item.description && (
+          <p className="text-sm text-slate-500 leading-relaxed line-clamp-3 flex-1">
+            {item.description}
+          </p>
+        )}
+        <span className="mt-4 inline-flex items-center gap-1 text-sm font-bold text-purple-600 group-hover:text-purple-500 uppercase tracking-wider">
+          <OfferingCta productType={item.product_type} />
+        </span>
+      </div>
+    </a>
+  );
+}
+
+// Free-resource card — mirrors the offering card's exact dimensions, palette and
+// hover language; the slate price badge is repurposed into a "Free" badge and
+// the link targets resource_url.
+function FreeResourceCard({ item }) {
+  return (
+    <a
+      href={item.resource_url}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="group shrink-0 snap-start w-[300px] flex flex-col rounded-2xl overflow-hidden bg-slate-50 border border-slate-200 shadow-lg hover:shadow-2xl transition-all hover:-translate-y-1"
+    >
+      {/* Cover image + free badge */}
+      <div className="relative aspect-[16/9] w-full overflow-hidden bg-slate-200">
+        {item.image_url ? (
+          <img
+            src={item.image_url}
+            alt={item.title}
+            className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+          />
+        ) : (
+          <div className="w-full h-full flex items-center justify-center text-5xl">✨</div>
+        )}
+        <span className="absolute top-3 right-3 bg-slate-900 text-white text-xs font-black uppercase tracking-wider px-3 py-1.5 rounded-full shadow-lg">
+          Free
+        </span>
+      </div>
+
+      {/* Title + description snippet + CTA */}
+      <div className="flex flex-col flex-1 p-5">
+        <h3 className="font-black text-lg text-slate-900 tracking-tight leading-tight mb-2 line-clamp-2">
+          {item.title}
+        </h3>
+        {item.description && (
+          <p className="text-sm text-slate-500 leading-relaxed line-clamp-3 flex-1">
+            {item.description}
+          </p>
+        )}
+        <span className="mt-4 inline-flex items-center gap-1 text-sm font-bold text-purple-600 group-hover:text-purple-500 uppercase tracking-wider">
+          <FreeResourceCta resourceType={item.resource_type} />
+        </span>
+      </div>
+    </a>
+  );
+}
+
 export default async function HealerProfile({ params }) {
   const { slug } = await params;
 
@@ -121,6 +242,20 @@ export default async function HealerProfile({ params }) {
   // Courses relate to a healer through the relational bigint `healer_id` FK
   // (not the slug), so key the lookup off the resolved healer record's id.
   const { data: courses } = await supabase.from('courses').select('*').eq('healer_id', healer.id);
+
+  // Free resources are the newest offering table, also keyed off the bigint
+  // healer_id. A missing/empty table simply yields null → the section hides.
+  const { data: freeResources } = await supabase.from('free_resources').select('*').eq('healer_id', healer.id);
+
+  // The single `courses` table stores every paid offering, distinguished by
+  // product_type. Split it into its four labelled shelves. Legacy rows predate
+  // the product_type column, so an unset value is treated as a course (the
+  // admin default) rather than being silently dropped.
+  const offerings = Array.isArray(courses) ? courses : [];
+  const courseOfferings = offerings.filter((c) => !c.product_type || c.product_type === 'course');
+  const retreatOfferings = offerings.filter((c) => c.product_type === 'retreat');
+  const downloadOfferings = offerings.filter((c) => c.product_type === 'download');
+  const membershipOfferings = offerings.filter((c) => c.product_type === 'membership');
 
   // Up to 3 portraits for the hero gallery.
   const portraits = Array.isArray(healer.image_urls) ? healer.image_urls.filter(Boolean) : [];
@@ -258,77 +393,76 @@ export default async function HealerProfile({ params }) {
       </div>
 
       <div className="max-w-7xl mx-auto p-8 md:p-20 space-y-32">
-        {/* CORE LITERARY REFERENCES — interactive BookCard swipe carousel */}
-        <section>
-          <div className="flex flex-row overflow-x-auto gap-6 pb-4 scroll-smooth snap-x snap-mandatory">
-            {books?.length > 0 ? books.map((book) => (
-              <div key={book.id} className="shrink-0 snap-start w-[240px]">
-                <BookCard book={book} variant="light" />
-              </div>
-            )) : <p className="text-gray-400 font-black uppercase tracking-widest">No works found.</p>}
-          </div>
-        </section>
+        {/* Each shelf renders only when it holds content — zero-entry categories
+            drop out entirely, leaving no empty rows or orphaned headers. Order is
+            fixed: Videos → Books → Courses → Retreats → Downloads → Memberships →
+            Free Resources. */}
 
-        {/* YOUTUBE VIDEOS — horizontal swipe carousel */}
-        <section>
-          <div className="flex flex-row overflow-x-auto gap-6 pb-4 scroll-smooth snap-x snap-mandatory">
-            {videos?.length > 0 ? videos.map((video) => (
+        {/* 1. VIDEOS */}
+        {videos?.length > 0 && (
+          <Shelf title="Videos">
+            {videos.map((video) => (
               <div key={video.id} className="shrink-0 snap-start w-[280px]">
                 <VideoPlayer video={video} />
               </div>
-            )) : <p className="text-gray-400 font-black uppercase tracking-widest">No videos yet.</p>}
-          </div>
-        </section>
+            ))}
+          </Shelf>
+        )}
 
-        {/* COURSES — horizontal swipe carousel. Section is hidden entirely when
-            the healer has no associated courses, keeping the layout clean. */}
-        {courses?.length > 0 && (
-          <section>
-            <div className="flex flex-row overflow-x-auto gap-6 pb-4 scroll-smooth snap-x snap-mandatory">
-              {courses.map((course) => (
-                <a
-                  key={course.id}
-                  href={course.course_url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="group shrink-0 snap-start w-[300px] flex flex-col rounded-2xl overflow-hidden bg-slate-50 border border-slate-200 shadow-lg hover:shadow-2xl transition-all hover:-translate-y-1"
-                >
-                  {/* Cover image + price badge */}
-                  <div className="relative aspect-[16/9] w-full overflow-hidden bg-slate-200">
-                    {course.image_url ? (
-                      <img
-                        src={course.image_url}
-                        alt={course.title}
-                        className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
-                      />
-                    ) : (
-                      <div className="w-full h-full flex items-center justify-center text-5xl">🎓</div>
-                    )}
-                    {course.price && (
-                      <span className="absolute top-3 right-3 bg-slate-900 text-white text-xs font-black uppercase tracking-wider px-3 py-1.5 rounded-full shadow-lg">
-                        {course.price}
-                      </span>
-                    )}
-                  </div>
+        {/* 2. BOOKS */}
+        {books?.length > 0 && (
+          <Shelf title="Books">
+            {books.map((book) => (
+              <div key={book.id} className="shrink-0 snap-start w-[240px]">
+                <BookCard book={book} variant="light" />
+              </div>
+            ))}
+          </Shelf>
+        )}
 
-                  {/* Title + description snippet + CTA */}
-                  <div className="flex flex-col flex-1 p-5">
-                    <h3 className="font-black text-lg text-slate-900 tracking-tight leading-tight mb-2 line-clamp-2">
-                      {course.title}
-                    </h3>
-                    {course.description && (
-                      <p className="text-sm text-slate-500 leading-relaxed line-clamp-3 flex-1">
-                        {course.description}
-                      </p>
-                    )}
-                    <span className="mt-4 inline-flex items-center gap-1 text-sm font-bold text-purple-600 group-hover:text-purple-500 uppercase tracking-wider">
-                      <OfferingCta productType={course.product_type} />
-                    </span>
-                  </div>
-                </a>
-              ))}
-            </div>
-          </section>
+        {/* 3. COURSES & PROGRAMMES (product_type = 'course') */}
+        {courseOfferings.length > 0 && (
+          <Shelf title="Courses & Programmes">
+            {courseOfferings.map((course) => (
+              <OfferingCard key={course.id} item={course} />
+            ))}
+          </Shelf>
+        )}
+
+        {/* 4. RETREATS (product_type = 'retreat') */}
+        {retreatOfferings.length > 0 && (
+          <Shelf title="Retreats">
+            {retreatOfferings.map((retreat) => (
+              <OfferingCard key={retreat.id} item={retreat} />
+            ))}
+          </Shelf>
+        )}
+
+        {/* 5. DOWNLOADS (product_type = 'download') */}
+        {downloadOfferings.length > 0 && (
+          <Shelf title="Downloads">
+            {downloadOfferings.map((download) => (
+              <OfferingCard key={download.id} item={download} />
+            ))}
+          </Shelf>
+        )}
+
+        {/* 6. MEMBERSHIPS (product_type = 'membership') */}
+        {membershipOfferings.length > 0 && (
+          <Shelf title="Memberships">
+            {membershipOfferings.map((membership) => (
+              <OfferingCard key={membership.id} item={membership} />
+            ))}
+          </Shelf>
+        )}
+
+        {/* 7. FREE RESOURCES (public.free_resources, matched on healer_id) */}
+        {freeResources?.length > 0 && (
+          <Shelf title="Free Resources">
+            {freeResources.map((resource) => (
+              <FreeResourceCard key={resource.id} item={resource} />
+            ))}
+          </Shelf>
         )}
       </div>
     </main>
