@@ -71,7 +71,7 @@ function AdminDashboard() {
   const secret = searchParams.get('secret');
 
   // Form + UI state
-  const [tab, setTab] = useState('video'); // 'video' | 'book' | 'course' | 'healer'
+  const [tab, setTab] = useState('video'); // 'video' | 'book' | 'course' | 'healer' | 'free_resource'
   const [title, setTitle] = useState('');
   const [url, setUrl] = useState('');
   const [author, setAuthor] = useState('');
@@ -87,6 +87,12 @@ function AdminDashboard() {
   const [courseSubjects, setCourseSubjects] = useState(''); // comma-separated slug string
   const [productType, setProductType] = useState('course'); // course | download | membership | retreat
   const [affiliateStatus, setAffiliateStatus] = useState('none'); // none | applied | active
+  // Free-resource fields (resource_url reuses the shared `url` field)
+  const [resourceType, setResourceType] = useState('meditation'); // meditation | download | mini_course | workshop | practice
+  const [freeResourceDescription, setFreeResourceDescription] = useState('');
+  const [freeResourceImageUrl, setFreeResourceImageUrl] = useState('');
+  const [freeResourceSubjects, setFreeResourceSubjects] = useState(''); // comma-separated slug string
+  const [isFeatured, setIsFeatured] = useState(false); // homepage scroller eligibility
   // Healer-specific fields
   const [name, setName] = useState('');
   const [bio, setBio] = useState('');
@@ -181,14 +187,17 @@ function AdminDashboard() {
     if (!slug) {
       setSelectedSlugs([]);
       setCourseSubjects('');
+      setFreeResourceSubjects('');
       return;
     }
     const match = healers.find((h) => h.slug === slug);
     const slugs = Array.isArray(match?.subject_slugs) ? match.subject_slugs : [];
     setSelectedSlugs(slugs);
-    // The Course form reads its slugs from a comma-separated string, so mirror
-    // the linked healer's tags into that field too for the same pre-population.
+    // The Course and Free Resource forms read their slugs from a comma-separated
+    // string, so mirror the linked healer's tags into those fields too for the
+    // same pre-population.
     setCourseSubjects(slugs.join(', '));
+    setFreeResourceSubjects(slugs.join(', '));
   }
 
   function resetForm() {
@@ -205,6 +214,11 @@ function AdminDashboard() {
     setCourseSubjects('');
     setProductType('course');
     setAffiliateStatus('none');
+    setResourceType('meditation');
+    setFreeResourceDescription('');
+    setFreeResourceImageUrl('');
+    setFreeResourceSubjects('');
+    setIsFeatured(false);
     setName('');
     setBio('');
     setSlug('');
@@ -245,17 +259,19 @@ function AdminDashboard() {
     // The manually selected tags are the direct payload for subject_slugs. The
     // Course form supplies its slugs as a comma-separated string instead of the
     // shared tag chips, so parse those into the same array shape.
-    const tags =
-      tab === 'course'
-        ? courseSubjects.split(',').map((s) => s.trim()).filter(Boolean)
-        : selectedSlugs;
+    const usesSlugString = tab === 'course' || tab === 'free_resource';
+    const tags = usesSlugString
+      ? (tab === 'course' ? courseSubjects : freeResourceSubjects)
+          .split(',')
+          .map((s) => s.trim())
+          .filter(Boolean)
+      : selectedSlugs;
     if (tags.length === 0) {
       setToast({
         type: 'error',
-        message:
-          tab === 'course'
-            ? 'Enter at least one subject slug before saving.'
-            : 'Select at least one subject tag before saving.',
+        message: usesSlugString
+          ? 'Enter at least one subject slug before saving.'
+          : 'Select at least one subject tag before saving.',
       });
       return;
     }
@@ -354,6 +370,22 @@ function AdminDashboard() {
           product_type: productType,
           affiliate_status: affiliateStatus,
         }));
+      } else if (tab === 'free_resource') {
+        // Free resource: a no-cost offering (guided meditation, download, mini
+        // course, workshop, or practice). Resolve the relational bigint healer_id
+        // from the linked healer slug, mirroring the Course pipeline.
+        const linkedHealer = healers.find((h) => h.slug === linkedHealerSlug);
+
+        ({ error } = await supabase.from('free_resources').insert({
+          title: title.trim(),
+          description: freeResourceDescription.trim() || null,
+          resource_type: resourceType,
+          resource_url: url.trim(),
+          image_url: freeResourceImageUrl.trim() || null,
+          healer_id: linkedHealer?.id ?? null,
+          subject_slugs: tags,
+          is_featured: isFeatured,
+        }));
       } else {
         // Healer: `tier` classifies the practitioner (superhero / luminary /
         // local_hero); availability options carry country/city for local healers.
@@ -401,7 +433,15 @@ function AdminDashboard() {
       if (error) throw error;
 
       const savedLabel =
-        tab === 'video' ? 'Video' : tab === 'book' ? 'Book' : tab === 'course' ? 'Course' : 'Healer';
+        tab === 'video'
+          ? 'Video'
+          : tab === 'book'
+            ? 'Book'
+            : tab === 'course'
+              ? 'Course'
+              : tab === 'free_resource'
+                ? 'Free Resource'
+                : 'Healer';
       setToast({
         type: 'success',
         message: `${savedLabel} saved! Tagged: ${tags.join(', ')}`,
@@ -449,6 +489,7 @@ function AdminDashboard() {
             { key: 'book', label: '📚 Add Book' },
             { key: 'course', label: '🎓 Add Course' },
             { key: 'healer', label: '👤 Add Healer' },
+            { key: 'free_resource', label: '✨ Add Free Resource' },
           ].map((t) => (
             <button
               key={t.key}
@@ -502,7 +543,13 @@ function AdminDashboard() {
 
               <div>
                 <label className={labelClass}>
-                  {tab === 'video' ? 'YouTube Link' : tab === 'book' ? 'Amazon Link' : courseUrlLabel}
+                  {tab === 'video'
+                    ? 'YouTube Link'
+                    : tab === 'book'
+                      ? 'Amazon Link'
+                      : tab === 'free_resource'
+                        ? 'Resource URL'
+                        : courseUrlLabel}
                 </label>
                 <input
                   type="text"
@@ -653,6 +700,91 @@ function AdminDashboard() {
                 <p className="mt-3 text-xs text-slate-500">
                   Comma-separated slugs written directly to the subject_slugs array. Auto-filled from the
                   linked healer&apos;s tags when one is selected above.
+                </p>
+              </div>
+            </>
+          )}
+
+          {/* FREE RESOURCE-ONLY FIELDS */}
+          {tab === 'free_resource' && (
+            <>
+              <div>
+                <label className={labelClass}>Resource Type</label>
+                <select
+                  value={resourceType}
+                  onChange={(e) => setResourceType(e.target.value)}
+                  className={inputClass}
+                >
+                  <option value="meditation">Meditation</option>
+                  <option value="download">Download</option>
+                  <option value="mini_course">Mini Course</option>
+                  <option value="workshop">Workshop</option>
+                  <option value="practice">Practice</option>
+                </select>
+              </div>
+              <div>
+                <label className={labelClass}>Description</label>
+                <textarea
+                  value={freeResourceDescription}
+                  onChange={(e) => setFreeResourceDescription(e.target.value)}
+                  placeholder="What this free resource offers…"
+                  rows={4}
+                  className={inputClass}
+                />
+              </div>
+              <div>
+                <label className={labelClass}>Image URL</label>
+                <input
+                  type="text"
+                  value={freeResourceImageUrl}
+                  onChange={(e) => setFreeResourceImageUrl(e.target.value)}
+                  placeholder="https://..."
+                  className={inputClass}
+                />
+              </div>
+              <div>
+                <label className={labelClass}>Subject Slugs (comma-separated)</label>
+                <input
+                  type="text"
+                  value={freeResourceSubjects}
+                  onChange={(e) => setFreeResourceSubjects(e.target.value)}
+                  placeholder="e.g. reiki, meditation, energy-healing"
+                  className={inputClass}
+                />
+                <p className="mt-3 text-xs text-slate-500">
+                  Comma-separated slugs written directly to the subject_slugs array. Auto-filled from the
+                  linked healer&apos;s tags when one is selected above.
+                </p>
+              </div>
+              <div>
+                <label className={labelClass}>Featured</label>
+                <button
+                  type="button"
+                  onClick={() => setIsFeatured((v) => !v)}
+                  aria-pressed={isFeatured}
+                  className={`flex items-center gap-3 w-full px-4 py-3 rounded-lg border transition-all ${
+                    isFeatured
+                      ? 'bg-gradient-to-r from-cyan-400/10 to-emerald-400/10 border-emerald-400/50 text-emerald-300'
+                      : 'bg-slate-800 border-slate-700 text-slate-400 hover:border-cyan-400/50'
+                  }`}
+                >
+                  <span
+                    className={`relative inline-flex h-6 w-11 shrink-0 items-center rounded-full transition-colors ${
+                      isFeatured ? 'bg-emerald-400' : 'bg-slate-600'
+                    }`}
+                  >
+                    <span
+                      className={`inline-block h-5 w-5 transform rounded-full bg-white transition-transform ${
+                        isFeatured ? 'translate-x-5' : 'translate-x-0.5'
+                      }`}
+                    />
+                  </span>
+                  <span className="text-sm font-bold">
+                    {isFeatured ? 'Eligible for homepage scroller' : 'Not featured'}
+                  </span>
+                </button>
+                <p className="mt-3 text-xs text-slate-500">
+                  Toggles the is_featured boolean that manages homepage scroller eligibility.
                 </p>
               </div>
             </>
@@ -879,8 +1011,9 @@ function AdminDashboard() {
           )}
 
           {/* MULTI-TAG SUBJECT SELECTOR — shared by Video, Book, and Healer forms.
-              The Course form supplies its slugs via its own comma-separated field. */}
-          {tab !== 'course' && (
+              The Course and Free Resource forms supply their slugs via their own
+              comma-separated fields. */}
+          {tab !== 'course' && tab !== 'free_resource' && (
           <div>
             <label className={labelClass}>
               Subject Tags
@@ -926,7 +1059,17 @@ function AdminDashboard() {
           >
             {saving
               ? 'Saving…'
-              : `Save ${tab === 'video' ? 'Video' : tab === 'book' ? 'Book' : tab === 'course' ? 'Course' : 'Healer'}`}
+              : `Save ${
+                  tab === 'video'
+                    ? 'Video'
+                    : tab === 'book'
+                      ? 'Book'
+                      : tab === 'course'
+                        ? 'Course'
+                        : tab === 'free_resource'
+                          ? 'Free Resource'
+                          : 'Healer'
+                }`}
           </button>
         </form>
 
