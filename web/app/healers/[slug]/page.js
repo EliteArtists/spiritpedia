@@ -239,13 +239,30 @@ export default async function HealerProfile({ params }) {
   const { data: books } = await supabase.from('books').select('*').eq('healer_slug', slug);
   const { data: videos } = await supabase.from('videos').select('*').eq('healer_slug', slug);
 
+  // EXPIRATION WINDOW — offerings are only surfaced while live: the row must be
+  // is_active, and either evergreen (end_date IS NULL) or not yet past its end
+  // date (end_date >= today). today is a YYYY-MM-DD string to match the DATE
+  // column format.
+  const today = new Date().toISOString().slice(0, 10);
+  const liveWindow = `end_date.is.null,end_date.gte.${today}`;
+
   // Courses relate to a healer through the relational bigint `healer_id` FK
   // (not the slug), so key the lookup off the resolved healer record's id.
-  const { data: courses } = await supabase.from('courses').select('*').eq('healer_id', healer.id);
+  const { data: courses } = await supabase
+    .from('courses')
+    .select('*')
+    .eq('healer_id', healer.id)
+    .eq('is_active', true)
+    .or(liveWindow);
 
   // Free resources are the newest offering table, also keyed off the bigint
   // healer_id. A missing/empty table simply yields null → the section hides.
-  const { data: freeResources } = await supabase.from('free_resources').select('*').eq('healer_id', healer.id);
+  const { data: freeResources } = await supabase
+    .from('free_resources')
+    .select('*')
+    .eq('healer_id', healer.id)
+    .eq('is_active', true)
+    .or(liveWindow);
 
   // The single `courses` table stores every paid offering, distinguished by
   // product_type. Split it into its four labelled shelves. Legacy rows predate

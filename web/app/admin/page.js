@@ -87,12 +87,18 @@ function AdminDashboard() {
   const [courseSubjects, setCourseSubjects] = useState(''); // comma-separated slug string
   const [productType, setProductType] = useState('course'); // course | download | membership | retreat
   const [affiliateStatus, setAffiliateStatus] = useState('none'); // none | applied | active
+  // Optional availability window — blank saves as NULL (evergreen content).
+  const [courseStartDate, setCourseStartDate] = useState('');
+  const [courseEndDate, setCourseEndDate] = useState('');
   // Free-resource fields (resource_url reuses the shared `url` field)
   const [resourceType, setResourceType] = useState('meditation'); // meditation | download | mini_course | workshop | practice
   const [freeResourceDescription, setFreeResourceDescription] = useState('');
   const [freeResourceImageUrl, setFreeResourceImageUrl] = useState('');
   const [freeResourceSubjects, setFreeResourceSubjects] = useState(''); // comma-separated slug string
   const [isFeatured, setIsFeatured] = useState(false); // homepage scroller eligibility
+  // Optional availability window — blank saves as NULL (evergreen content).
+  const [freeResourceStartDate, setFreeResourceStartDate] = useState('');
+  const [freeResourceEndDate, setFreeResourceEndDate] = useState('');
   // Healer-specific fields
   const [name, setName] = useState('');
   const [bio, setBio] = useState('');
@@ -214,11 +220,15 @@ function AdminDashboard() {
     setCourseSubjects('');
     setProductType('course');
     setAffiliateStatus('none');
+    setCourseStartDate('');
+    setCourseEndDate('');
     setResourceType('meditation');
     setFreeResourceDescription('');
     setFreeResourceImageUrl('');
     setFreeResourceSubjects('');
     setIsFeatured(false);
+    setFreeResourceStartDate('');
+    setFreeResourceEndDate('');
     setName('');
     setBio('');
     setSlug('');
@@ -369,6 +379,8 @@ function AdminDashboard() {
           subject_slugs: tags,
           product_type: productType,
           affiliate_status: affiliateStatus,
+          start_date: courseStartDate || null,
+          end_date: courseEndDate || null,
         }));
       } else if (tab === 'free_resource') {
         // Free resource: a no-cost offering (guided meditation, download, mini
@@ -385,6 +397,8 @@ function AdminDashboard() {
           healer_id: linkedHealer?.id ?? null,
           subject_slugs: tags,
           is_featured: isFeatured,
+          start_date: freeResourceStartDate || null,
+          end_date: freeResourceEndDate || null,
         }));
       } else {
         // Healer: `tier` classifies the practitioner (superhero / luminary /
@@ -702,6 +716,30 @@ function AdminDashboard() {
                   linked healer&apos;s tags when one is selected above.
                 </p>
               </div>
+              {/* OPTIONAL AVAILABILITY WINDOW — blanks save as NULL (evergreen). */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                <div>
+                  <label className={labelClass}>Start Date (optional)</label>
+                  <input
+                    type="date"
+                    value={courseStartDate}
+                    onChange={(e) => setCourseStartDate(e.target.value)}
+                    className={`${inputClass} [color-scheme:dark]`}
+                  />
+                </div>
+                <div>
+                  <label className={labelClass}>End Date (optional)</label>
+                  <input
+                    type="date"
+                    value={courseEndDate}
+                    onChange={(e) => setCourseEndDate(e.target.value)}
+                    className={`${inputClass} [color-scheme:dark]`}
+                  />
+                </div>
+              </div>
+              <p className="text-xs text-slate-500">
+                Leave both blank for lifetime evergreen content. An End Date expires the listing automatically.
+              </p>
             </>
           )}
 
@@ -787,6 +825,30 @@ function AdminDashboard() {
                   Toggles the is_featured boolean that manages homepage scroller eligibility.
                 </p>
               </div>
+              {/* OPTIONAL AVAILABILITY WINDOW — blanks save as NULL (evergreen). */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                <div>
+                  <label className={labelClass}>Start Date (optional)</label>
+                  <input
+                    type="date"
+                    value={freeResourceStartDate}
+                    onChange={(e) => setFreeResourceStartDate(e.target.value)}
+                    className={`${inputClass} [color-scheme:dark]`}
+                  />
+                </div>
+                <div>
+                  <label className={labelClass}>End Date (optional)</label>
+                  <input
+                    type="date"
+                    value={freeResourceEndDate}
+                    onChange={(e) => setFreeResourceEndDate(e.target.value)}
+                    className={`${inputClass} [color-scheme:dark]`}
+                  />
+                </div>
+              </div>
+              <p className="text-xs text-slate-500">
+                Leave both blank for lifetime evergreen content. An End Date expires the listing automatically.
+              </p>
             </>
           )}
 
