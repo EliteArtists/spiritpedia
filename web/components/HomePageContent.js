@@ -1,9 +1,12 @@
-// Save this as your backup reference for: app/page.js (or components/HomePageContent.js)
-import React, { suspense } from 'react';
 import { createClient } from '@supabase/supabase-js';
 import BookCard from './BookCard.js';
-import VideoPlayer from './VideoPlayer.js';
 import HealerCard from './HealerCard.js';
+import HeroBillboard from './HeroBillboard.js';
+import ContentShelf from './ContentShelf.js';
+import FreeResourceCard from './FreeResourceCard.js';
+import OfferingCard from './OfferingCard.js';
+import SubjectPills from './SubjectPills.js';
+import VideoGrid from './VideoGrid.js';
 
 // Initialize the backend bridge client
 const supabase = createClient(
@@ -11,28 +14,11 @@ const supabase = createClient(
   process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY
 );
 
-// Generic fallback avatar when a healer has no images.
 const DEFAULT_AVATAR = 'https://placehold.co/400x400?text=Spiritpedia';
 
-// 5-Pillar taxonomy: clusters database subject slugs under Master Keys for the
-// premium hover-dropdown navigation.
-const SUBJECT_TAXONOMY = {
-  'Emotional Healing': [
-    'shadow-work', 'self-healing', 'eft-tapping', 'breathwork', 'reiki', 'energy-medicine', 'conscious-relationships', 'quantum-touch',
-  ],
-  Consciousness: [
-    'consciousness', 'conscious-science', 'spiritual-awakening', 'non-duality', 'meditation', 'mindfulness', 'astrology', 'spirituality',
-  ],
-  'Manifestation & Creation': [
-    'manifestation', 'law-of-attraction', 'soul-purpose', 'human-design', 'life-coaching',
-  ],
-  'Mystical & Spiritual Exploration': [
-    'akashic-records', 'mediumship-spirits', 'death-the-afterlife', 'dreamwork', 'mysticism', 'shamanism',
-  ],
-  'Body & Energy': [
-    'tai-chi', 'qi-gong', 'yoga', 'ayurveda', 'sound-healing', 'plant-medicine', 'homeopathy',
-  ],
-};
+// The videos grid reveals 24 at a time client-side; fetch a pool deep enough for
+// a few "Load more" presses without pulling the whole table down the wire.
+const VIDEO_POOL = 96;
 
 // Deterministically pick a portrait from healer.image_urls based on the active
 // subject filter AND the healer's own identifier. Mixing the per-healer seed in
@@ -41,216 +27,221 @@ const SUBJECT_TAXONOMY = {
 function pickPortrait(imageUrls, subjectSlug, seed = '') {
   if (!Array.isArray(imageUrls) || imageUrls.length === 0) return DEFAULT_AVATAR;
   const key = `${subjectSlug || ''}${seed || ''}`;
-  // Sum of character codes modulo array length = stable index per filter+healer.
   let sum = 0;
   for (let i = 0; i < key.length; i++) sum += key.charCodeAt(i);
-  const index = sum % imageUrls.length;
-  return imageUrls[index] || DEFAULT_AVATAR;
+  return imageUrls[sum % imageUrls.length] || DEFAULT_AVATAR;
 }
 
 export default async function HomePage({ initialSubjectSlug }) {
-  // The active subject slug is supplied by the parent server component (app/page.js),
-  // which already awaited searchParams. We consume that prop directly here instead of
-  // re-reading the async searchParams API, which fixes the data filter stream.
   const currentSubjectSlug = initialSubjectSlug || null;
 
-  // 1. Concurrent fetching streams to secure all content instantly
-  const [subjectsData, healersData, booksData, videosData] = await Promise.all([
-    supabase.from('subjects').select('*').order('name', { ascending: true }),
-    supabase.from('healers').select('*'),
-    supabase.from('books').select('*'),
-    supabase.from('videos').select('*')
-  ]);
+  // EXPIRATION WINDOW — an offering only surfaces while it is live: the row must
+  // be is_active, and either evergreen (end_date IS NULL) or not yet past its end
+  // date. `today` is a YYYY-MM-DD string to match the DATE column format, and is
+  // recomputed per request so the window rolls forward on its own.
+  const today = new Date().toISOString().slice(0, 10);
+  const liveWindow = `end_date.is.null,end_date.gte.${today}`;
 
-  const subjects = subjectsData.data || [];
-  const allHealers = healersData.data || [];
-  const allBooks = booksData.data || [];
-  const allVideos = videosData.data || [];
+  // Every query is issued concurrently — one round trip's worth of latency for
+  // the whole page rather than eight stacked sequentially.
+  const [subjectsRes, healersRes, booksRes, videosRes, freeResourcesRes, coursesRes] =
+    await Promise.all([
+      supabase.from('subjects').select('*').order('name', { ascending: true }),
+      supabase.from('healers').select('*'),
+      supabase.from('books').select('*').order('created_at', { ascending: false }),
+      supabase
+        .from('videos')
+        .select('*')
+        .order('created_at', { ascending: false })
+        .limit(VIDEO_POOL),
+      supabase
+        .from('free_resources')
+        .select('*')
+        .eq('is_featured', true)
+        .eq('is_active', true)
+        .or(liveWindow)
+        .order('created_at', { ascending: false }),
+      supabase
+        .from('courses')
+        .select('*')
+        .eq('is_active', true)
+        .or(liveWindow)
+        .order('created_at', { ascending: false }),
+    ]);
 
-  // 2. Filter content surgically based on the active top horizontal navigation scroller
-  const filteredHealers = currentSubjectSlug
-    ? allHealers.filter(healer => healer.subject_slugs?.includes(currentSubjectSlug))
-    : allHealers;
+  const subjects = subjectsRes.data || [];
+  const allHealers = healersRes.data || [];
+  const allBooks = booksRes.data || [];
+  const allVideos = videosRes.data || [];
+  const allFreeResources = freeResourcesRes.data || [];
+  const allCourses = coursesRes.data || [];
 
-  const filteredBooks = currentSubjectSlug
-    ? allBooks.filter(book => book.subject_slugs?.includes(currentSubjectSlug))
-    : allBooks;
+  // Offerings and free resources carry a bigint healer_id, so resolve display
+  // names from the full (unfiltered) healer set — a course's author must still
+  // be nameable when the subject filter has excluded them from the shelves.
+  const healerNameById = new Map(allHealers.map((h) => [h.id, h.name]));
 
-  const filteredVideos = currentSubjectSlug
-    ? allVideos.filter(video => video.subject_slugs?.includes(currentSubjectSlug))
-    : allVideos;
+  // Subject filter — applied to every collection so a chosen pill narrows the
+  // entire page, not just the healer shelves.
+  const bySubject = (rows) =>
+    currentSubjectSlug
+      ? rows.filter((row) => row.subject_slugs?.includes(currentSubjectSlug))
+      : rows;
 
-  // Premium catalog = Superhero + Luminary tiers; Local Hero fills the third slot.
-  // SAFE FALLBACK: any healer that is not explicitly premium (incl. NULL, empty,
-  // or unexpected tier values during backfill) is treated as a Local Hero so no
-  // grassroots practitioner silently disappears from the directory.
+  const healers = bySubject(allHealers);
+  const books = bySubject(allBooks);
+  const videos = bySubject(allVideos);
+  const freeResources = bySubject(allFreeResources);
+  const courses = bySubject(allCourses);
+
+  // TIER SPLIT — the stored values are 'superhero' / 'luminary' / 'local_hero'
+  // (the amber/violet/emerald names describe their badge colours, not the column).
+  // SAFE FALLBACK: anything not explicitly Superhero or Luminary — including NULL
+  // or an unexpected value mid-backfill — falls through to Local Hero, so no
+  // grassroots practitioner silently vanishes from the directory.
   const isPremium = (h) => h.tier === 'superhero' || h.tier === 'luminary';
-  const premiumList = filteredHealers.filter(isPremium);
-  const localList = filteredHealers.filter((h) => !isPremium(h));
+  const superheroes = healers.filter((h) => h.tier === 'superhero');
+  const luminaries = healers.filter((h) => h.tier === 'luminary');
+  const localHeroes = healers.filter((h) => !isPremium(h));
 
-  // Assemble slide pages: each page = 2 premium + 1 local (2+1 block).
-  const pageCount = Math.max(Math.ceil(premiumList.length / 2), localList.length);
-  const healerPages = Array.from({ length: pageCount }, (_, p) => ({
-    premium: [premiumList[p * 2], premiumList[p * 2 + 1]],
-    local: localList[p] || null,
-  }));
+  // The single `courses` table stores every paid offering, distinguished by
+  // product_type. Legacy rows predate the column, so an unset value is treated as
+  // a course (the admin default) rather than being silently dropped.
+  const courseOfferings = courses.filter((c) => !c.product_type || c.product_type === 'course');
+  const retreatOfferings = courses.filter((c) => c.product_type === 'retreat');
+  const downloadOfferings = courses.filter((c) => c.product_type === 'download');
 
-  // Single practitioner media card (used for both tiers). Portrait is computed
-  // server-side; the interactive favorite heart lives in the client HealerCard.
-  const renderHealerCard = (healer) => {
-    const portrait = pickPortrait(
-      healer.image_urls,
-      currentSubjectSlug,
-      healer.healer_slug || String(healer.id)
-    );
-    return <HealerCard key={healer.id} healer={healer} portrait={portrait} />;
-  };
-
-  // Recruitment spotlight shown when a page has no local healer in slot 3.
-  const renderSpotlight = (key) => (
-    <div
-      key={key}
-      className="w-full h-72 rounded-2xl border border-dashed border-purple-400/40 bg-gradient-to-br from-purple-950/40 via-slate-900/50 to-indigo-950/40 p-6 flex flex-col justify-between items-center text-center cursor-pointer group hover:border-purple-400 transition-all duration-300"
-    >
-      <span className="text-xs uppercase tracking-widest text-purple-300/80 font-semibold">Are you a practitioner?</span>
-      <span className="text-2xl font-black text-white leading-tight">Join Our Local Network</span>
-      <span className="text-[11px] text-slate-400">Connect with seekers globally</span>
-    </div>
+  const renderHealer = (healer) => (
+    <HealerCard
+      healer={healer}
+      portrait={pickPortrait(
+        healer.image_urls,
+        currentSubjectSlug,
+        healer.healer_slug || String(healer.id)
+      )}
+    />
   );
 
-  return (
-    <div
-      className="relative min-h-screen animate-gradient-slow text-white font-sans"
-      style={{ background: 'linear-gradient(135deg, #0a2a66, #3f91ec, #a4c3ec, #0a2a66)', backgroundSize: '400% 400%' }}
-    >
-      {/* MY LIBRARY PORTAL */}
-      <a
-        href="/library"
-        className="absolute top-6 right-6 md:right-12 z-50 flex items-center gap-2 px-4 py-2 text-sm font-semibold text-white bg-white/10 hover:bg-white/20 border border-white/20 backdrop-blur-md rounded-full transition-all duration-300 shadow-sm cursor-pointer hover:scale-105 active:scale-95"
-      >
-        ✨ My Library
-      </a>
+  const renderOffering = (item) => (
+    <OfferingCard item={item} healerName={healerNameById.get(item.healer_id)} />
+  );
 
-      {/* HEADER HERO ELEMENT */}
-      <header className="py-16 text-center max-w-4xl mx-auto px-4">
-        <h1 className="text-6xl font-extrabold tracking-wider mb-6 bg-clip-text text-transparent bg-gradient-to-r from-sky-500 via-purple-500 to-pink-500">
-          SPIRITPEDIA
-        </h1>
-        <div className="relative max-w-xl mx-auto">
+  // Preserve the active subject filter when handing off to the subject page.
+  const seeAll = currentSubjectSlug ? `/subject/${currentSubjectSlug}` : null;
+
+  return (
+    <div className="min-h-screen bg-[#0a0f1d] text-white font-sans">
+      {/* 1. NAVIGATION BAR */}
+      <nav className="sticky top-0 z-50 border-b border-white/10 bg-[#0a0f1d]/90 backdrop-blur-md">
+        <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
+          <a
+            href="/"
+            className="bg-gradient-to-r from-sky-500 via-purple-500 to-pink-500 bg-clip-text text-2xl font-extrabold tracking-wider text-transparent"
+          >
+            SPIRITPEDIA
+          </a>
+          <a
+            href="/library"
+            className="flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-2 text-sm font-semibold text-white transition-all duration-300 hover:scale-105 hover:bg-white/20 active:scale-95"
+          >
+            ✦ My Library
+          </a>
+        </div>
+      </nav>
+
+      <div className="mx-auto max-w-7xl px-6">
+        {/* 2. EMOTIONAL SEARCH BAR — the sacred entry point. */}
+        <section className="py-10">
           <input
             type="text"
             placeholder="How are you feeling today?"
-            className="w-full py-4 px-6 rounded-full bg-white/60 border border-white/50 text-slate-700 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-purple-300 backdrop-blur-md shadow-sm"
+            aria-label="How are you feeling today?"
+            className="mx-auto block w-full max-w-2xl rounded-full border border-white/15 bg-[#111827] px-6 py-4 text-center text-lg text-white placeholder-gray-400 shadow-lg transition-all focus:border-[#7c3aed] focus:shadow-[0_0_25px_rgba(124,58,237,0.45)] focus:outline-none"
           />
-        </div>
-      </header>
-
-      {/* TOP SCROLLER CATEGORIES */}
-      <section className="max-w-6xl mx-auto px-6 mb-12">
-        <h3 className="text-xs font-semibold uppercase tracking-widest text-white/70 mb-4 text-center">
-          Explore by Subject
-        </h3>
-        <div className="flex flex-wrap gap-3 justify-center items-start">
-          {/* View All resets the active filter */}
-          <a
-            href="?"
-            className={`px-5 py-2.5 rounded-full text-sm font-medium transition-all duration-200 border whitespace-nowrap ${
-              !currentSubjectSlug
-                ? 'bg-white text-black border-transparent shadow-lg shadow-black/20'
-                : 'bg-white/10 border-white/30 text-white hover:bg-white/20'
-            }`}
-          >
-            🌟 View All
-          </a>
-
-          {/* 5 Master Core Pills, each with a hover dropdown of its sub-subjects */}
-          {Object.entries(SUBJECT_TAXONOMY).map(([pillar, slugs]) => {
-            // Live subjects that belong to this pillar's cluster.
-            const items = subjects.filter((sub) => slugs.includes(sub.slug));
-            const pillarActive = currentSubjectSlug && slugs.includes(currentSubjectSlug);
-            return (
-              <div key={pillar} className="relative group">
-                <button
-                  type="button"
-                  className={`px-5 py-2.5 rounded-full text-sm font-semibold transition-all duration-200 border whitespace-nowrap ${
-                    pillarActive
-                      ? 'bg-white text-black border-transparent shadow-lg shadow-black/20'
-                      : 'bg-white/10 border-white/30 text-white hover:bg-white/20'
-                  }`}
-                >
-                  {pillar}
-                </button>
-
-                {/* Trans-glassmorphism dropdown */}
-                <div className="absolute top-full left-0 mt-1 hidden group-hover:flex bg-white/90 backdrop-blur-md rounded-xl shadow-2xl p-4 z-50 min-w-[260px] md:min-w-[280px] flex-col gap-2 border border-white/20">
-                  {items.length === 0 ? (
-                    <span className="text-xs text-slate-400 italic">Coming soon</span>
-                  ) : (
-                    items.map((sub) => (
-                      <a
-                        key={sub.id}
-                        href={`?subject=${sub.slug}`}
-                        aria-current={currentSubjectSlug === sub.slug ? 'true' : undefined}
-                        className="w-full block text-left px-3 py-2 text-sm text-slate-700 font-medium hover:text-purple-600 hover:bg-slate-50 rounded-lg whitespace-nowrap transition-all duration-200"
-                      >
-                        {sub.name}
-                      </a>
-                    ))
-                  )}
-                </div>
-              </div>
-            );
-          })}
-        </div>
-      </section>
-
-      {/* RENDER DYNAMIC SHELVES */}
-      <main className="max-w-6xl mx-auto px-6 pb-24 grid gap-16">
-        
-        {/* SHELF 1: HEALERS DIRECTORY — 2+1 matrix block-snapping shelf */}
-        <section>
-          <div className="flex flex-row overflow-x-auto gap-6 snap-x snap-mandatory scrollbar-hide w-full">
-            {healerPages.map((page, p) => (
-              <div
-                key={p}
-                className="w-full grid grid-cols-1 md:grid-cols-3 shrink-0 snap-start gap-6"
-              >
-                {/* Two premium slots (empty placeholder holds the column if absent) */}
-                {[0, 1].map((i) =>
-                  page.premium[i] ? (
-                    renderHealerCard(page.premium[i])
-                  ) : (
-                    <div key={`empty-${p}-${i}`} className="hidden md:block" />
-                  )
-                )}
-                {/* Third slot: a local healer, or the recruitment spotlight */}
-                {page.local ? renderHealerCard(page.local) : renderSpotlight(`spotlight-${p}`)}
-              </div>
-            ))}
-          </div>
         </section>
 
-        {/* SHELF 2: CURATED ARCHIVE BOOKS — oversized card-less covers w/ modals */}
-        <section>
-          <div className="border-b border-slate-300/20 pb-3 mb-8 w-full" />
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 w-full">
-            {filteredBooks.map((book) => (
-              <BookCard key={book.id} book={book} />
-            ))}
-          </div>
+        {/* 3. SUBJECT PILLS */}
+        <section className="pb-10">
+          <SubjectPills subjects={subjects} currentSubjectSlug={currentSubjectSlug} />
         </section>
 
-        {/* SHELF 3: MULTIMEDIA VIDEO COMPONENT — inline native players */}
-        <section>
-          <div className="border-b border-slate-300/20 pb-3 mb-8 w-full" />
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {filteredVideos.map((video) => (
-              <VideoPlayer key={video.id} video={video} />
-            ))}
-          </div>
-        </section>
+        {/* 4. HERO BILLBOARD */}
+        <HeroBillboard healers={superheroes} />
 
-      </main>
+        {/* 5. CONTENT SHELVES + 6. VIDEOS
+            grid-cols-1 is load-bearing: an implicit auto column sizes itself to
+            the max-content width of its items, so the shelves' un-wrapped card
+            rows stretched the column (and the whole page) to ~48,000px wide. */}
+        <main className="grid grid-cols-1 gap-14 py-14">
+          <ContentShelf
+            title="Featured Healers"
+            subtitle="Superheroes"
+            items={superheroes}
+            seeAllHref={seeAll}
+            renderItem={renderHealer}
+            itemWidthClass="w-[260px]"
+          />
+
+          <ContentShelf
+            title="Luminaries"
+            subtitle="Rising Voices"
+            items={luminaries}
+            seeAllHref={seeAll}
+            renderItem={renderHealer}
+            itemWidthClass="w-[260px]"
+          />
+
+          <ContentShelf
+            title="Free Resources"
+            subtitle="No Cost, No Catch"
+            items={freeResources}
+            renderItem={(item) => (
+              <FreeResourceCard item={item} healerName={healerNameById.get(item.healer_id)} />
+            )}
+          />
+
+          <ContentShelf
+            title="Books & Literature"
+            subtitle="The Curated Archive"
+            items={books}
+            seeAllHref={seeAll}
+            renderItem={(book) => <BookCard book={book} />}
+            itemWidthClass="w-[200px]"
+          />
+
+          <ContentShelf
+            title="Courses & Programmes"
+            subtitle="Go Deeper"
+            items={courseOfferings}
+            renderItem={renderOffering}
+          />
+
+          <ContentShelf
+            title="Retreats & Live Events"
+            subtitle="In Person"
+            items={retreatOfferings}
+            renderItem={renderOffering}
+          />
+
+          <ContentShelf
+            title="Downloads & Audio"
+            subtitle="Take It With You"
+            items={downloadOfferings}
+            renderItem={renderOffering}
+          />
+
+          <ContentShelf
+            title="Local Heroes"
+            subtitle="Practitioners Near You"
+            items={localHeroes}
+            seeAllHref={seeAll}
+            renderItem={renderHealer}
+            itemWidthClass="w-[260px]"
+          />
+
+          <VideoGrid videos={videos} />
+        </main>
+      </div>
     </div>
   );
 }

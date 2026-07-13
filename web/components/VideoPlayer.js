@@ -14,11 +14,20 @@ function extractId(url) {
 // Thumbnail that swaps to an inline YouTube iframe on click — streams natively
 // inside the site instead of opening a new tab. Includes a floating favorite
 // heart synced to localStorage.
-export default function VideoPlayer({ video }) {
+export default function VideoPlayer({ video, variant }) {
   const [playing, setPlaying] = useState(false);
   const [favorited, setFavorited] = useState(false);
   const videoId = extractId(video.platform_url);
   const favId = String(video.id); // stable per-row identifier
+
+  // The default translucent-white card is tuned for the light surfaces (library,
+  // healer profile). `variant="dark"` swaps in the navy surface used by the
+  // homepage, where slate-900 title text would be unreadable.
+  const isDark = variant === 'dark';
+  const shellClass = isDark
+    ? 'bg-[#111827] border border-white/10 hover:border-[#7c3aed]/60'
+    : 'bg-white/20 backdrop-blur-md border border-white/30';
+  const titleClass = isDark ? 'text-sm font-semibold text-white' : 'text-slate-900 font-semibold';
 
   // Restore favorite state from localStorage on mount.
   useEffect(() => {
@@ -47,7 +56,7 @@ export default function VideoPlayer({ video }) {
   }
 
   return (
-    <div className="overflow-hidden bg-white/20 backdrop-blur-md border border-white/30 rounded-2xl shadow-xl transition-all duration-300 hover:shadow-2xl group">
+    <div className={`overflow-hidden rounded-2xl shadow-xl transition-all duration-300 hover:shadow-2xl group ${shellClass}`}>
       <div className="relative aspect-video bg-black">
         {playing && videoId ? (
           <iframe
@@ -107,7 +116,7 @@ export default function VideoPlayer({ video }) {
         )}
       </div>
       <div className="p-4">
-        <h4 className="text-slate-900 font-semibold leading-snug line-clamp-2">{video.title}</h4>
+        <h4 className={`leading-snug line-clamp-2 ${titleClass}`}>{video.title}</h4>
       </div>
     </div>
   );

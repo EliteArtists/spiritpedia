@@ -2,15 +2,20 @@ import { getContentBySubjectSlug, getAllSubjects } from '../../../data/subjects.
 import Link from 'next/link';
 
 export default async function SubjectPage({ params }) {
-  const { slug } = params;
+  // In Next.js 16 params is a Promise and must be awaited before access. Reading
+  // it synchronously yielded an undefined slug, which crashed prerendering on
+  // slug.replace(). The ?. guards below keep the page renderable even if a route
+  // is ever hit without a slug.
+  const { slug } = await params;
+  const title = slug?.replace(/-/g, ' ') || 'Subject';
   const { books, videos, healers } = await getContentBySubjectSlug(slug);
 
   return (
     <main className="min-h-screen bg-white p-8 md:p-16">
       <Link href="/" className="text-blue-600 hover:underline mb-8 inline-block">&larr; Back to Home</Link>
       
-      <h1 className="text-5xl font-bold text-gray-900 capitalize mb-2">{slug.replace(/-/g, ' ')}</h1>
-      <p className="text-xl text-gray-500 mb-12">Curated content for your journey in {slug.replace(/-/g, ' ')}.</p>
+      <h1 className="text-5xl font-bold text-gray-900 capitalize mb-2">{title}</h1>
+      <p className="text-xl text-gray-500 mb-12">Curated content for your journey in {title}.</p>
 
       <div className="space-y-16">
         
