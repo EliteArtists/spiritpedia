@@ -1,192 +1,216 @@
 'use client';
 
 import { useState, useEffect, useMemo } from 'react';
-import HealerCard from './HealerCard.js';
+import Link from 'next/link';
 import BookCard from './BookCard.js';
+import ContentShelf from './ContentShelf.js';
+import FreeResourceCard from './FreeResourceCard.js';
+import HealerCard from './HealerCard.js';
+import OfferingCard from './OfferingCard.js';
+import SubjectPills from './SubjectPills.js';
 import VideoPlayer from './VideoPlayer.js';
+import { FAVORITE_KEYS, readFavorites } from '../utils/favorites.js';
 
-// Read a localStorage key expected to hold a JSON array; always returns an array.
-function readArray(key) {
-  try {
-    const value = JSON.parse(localStorage.getItem(key) || '[]');
-    return Array.isArray(value) ? value : [];
-  } catch {
-    return [];
-  }
-}
+// My Library — the same streaming shelf language as the homepage, but every shelf
+// is drawn from what this visitor actually saved. No billboard: the library is a
+// workspace, not a storefront, and there is nothing here to promote.
+//
+// Favourites live in localStorage, so the server ships the full catalog and this
+// client component intersects it against the saved ids.
+export default function LibraryView({
+  books = [],
+  videos = [],
+  healers = [],
+  subjects = [],
+  courses = [],
+  freeResources = [],
+  healerNames = [],
+}) {
+  // null = still reading localStorage. Distinct from "read it, found nothing" —
+  // rendering the empty state during that gap would flash "your library is empty"
+  // at someone whose library is full.
+  const [saved, setSaved] = useState(null);
+  const [activeSubject, setActiveSubject] = useState(null);
 
-// Fallback human-readable label for a slug with no matching subjects row.
-function titleCase(slug) {
-  return String(slug)
-    .split('-')
-    .map((w) => (w ? w[0].toUpperCase() + w.slice(1) : w))
-    .join(' ');
-}
-
-// The Dynamic Subject Parser Engine — resolves favorited ids/slugs against the
-// master catalogs, then bucket-sorts every matched entity by its subject_slugs.
-export default function LibraryView({ books = [], videos = [], healers = [], subjects = [] }) {
-  // null = still hydrating from localStorage (avoids an empty-state flash).
-  const [buckets, setBuckets] = useState(null);
-  // Drill-down state.
-  const [selectedSubject, setSelectedSubject] = useState(null);
-  const [activeTab, setActiveTab] = useState('healers');
-
-  // slug -> name lookup for readable folder titles.
-  const nameForSlug = useMemo(() => {
-    const map = {};
-    subjects.forEach((s) => {
-      if (s?.slug) map[s.slug] = s.name;
-    });
-    return (slug) => map[slug] || titleCase(slug);
-  }, [subjects]);
+  const healerNameById = useMemo(
+    () => new Map(healerNames.map((h) => [h.id, h.name])),
+    [healerNames]
+  );
 
   useEffect(() => {
-    const favBookIds = readArray('favorited_books').map(String);
-    const favVideoIds = readArray('favorite_videos').map(String);
-    const favHealerKeys = readArray('favorited_healers').map(String);
+    const savedHealerKeys = readFavorites(FAVORITE_KEYS.healers).map(String);
+    const savedBookIds = readFavorites(FAVORITE_KEYS.books).map(String);
+    const savedVideoIds = readFavorites(FAVORITE_KEYS.videos).map(String);
+    const savedCourseIds = readFavorites(FAVORITE_KEYS.courses).map(String);
+    const savedResourceIds = readFavorites(FAVORITE_KEYS.freeResources).map(String);
 
-    // Look up favorited records in the master catalogs.
-    const matchedBooks = books.filter((b) => favBookIds.includes(String(b.id)));
-    const matchedVideos = videos.filter((v) => favVideoIds.includes(String(v.id)));
-    const matchedHealers = healers.filter(
-      (h) => favHealerKeys.includes(String(h.healer_slug)) || favHealerKeys.includes(String(h.id))
-    );
+    setSaved({
+      // Healers are keyed by slug, but older entries were written by id — accept
+      // either so a long-standing library does not lose rows.
+      healers: healers.filter(
+        (h) =>
+          savedHealerKeys.includes(String(h.healer_slug)) || savedHealerKeys.includes(String(h.id))
+      ),
+      books: books.filter((b) => savedBookIds.includes(String(b.id))),
+      videos: videos.filter((v) => savedVideoIds.includes(String(v.id))),
+      courses: courses.filter((c) => savedCourseIds.includes(String(c.id))),
+      freeResources: freeResources.filter((r) => savedResourceIds.includes(String(r.id))),
+    });
+  }, [healers, books, videos, courses, freeResources]);
 
-    // Bucket reduction: drop each entity into a per-subject folder, split by type.
-    const map = {};
-    const addToBuckets = (item, type) => {
-      const slugs = Array.isArray(item.subject_slugs) ? item.subject_slugs : [];
-      slugs.forEach((slug) => {
-        if (!slug) return;
-        if (!map[slug]) map[slug] = { slug, healers: [], books: [], videos: [] };
-        map[slug][type].push(item);
+  // THE CURATION LAYER — the union of every subject slug across everything the
+  // visitor saved. This is what restricts the pill row: the library only ever
+  // offers a filter that will actually return something.
+  const savedSubjectSlugs = useMemo(() => {
+    if (!saved) return [];
+    const slugs = new Set();
+    Object.values(saved)
+      .flat()
+      .forEach((item) => {
+        (Array.isArray(item.subject_slugs) ? item.subject_slugs : []).forEach((slug) => {
+          if (slug) slugs.add(slug);
+        });
       });
-    };
-    matchedHealers.forEach((h) => addToBuckets(h, 'healers'));
-    matchedBooks.forEach((b) => addToBuckets(b, 'books'));
-    matchedVideos.forEach((v) => addToBuckets(v, 'videos'));
+    return [...slugs];
+  }, [saved]);
 
-    setBuckets(map);
-  }, [books, videos, healers]);
+  const totalSaved = saved ? Object.values(saved).flat().length : 0;
 
-  const bucketList = buckets
-    ? Object.values(buckets).sort((a, b) => nameForSlug(a.slug).localeCompare(nameForSlug(b.slug)))
-    : [];
-  const hasItems = bucketList.length > 0;
+  // Apply the pill filter to a shelf. With no pill selected everything shows.
+  const bySubject = (rows) =>
+    activeSubject ? rows.filter((row) => row.subject_slugs?.includes(activeSubject)) : rows;
 
-  const countFor = (bucket) => bucket.healers.length + bucket.books.length + bucket.videos.length;
+  const renderOffering = (item) => (
+    <OfferingCard item={item} healerName={healerNameById.get(item.healer_id)} />
+  );
 
-  // Open a folder and default to its first non-empty content tab.
-  function openSubject(bucket) {
-    setSelectedSubject(bucket.slug);
-    setActiveTab(
-      bucket.healers.length ? 'healers' : bucket.books.length ? 'books' : 'videos'
-    );
-  }
+  // Paid offerings all live in one table, split apart by product_type. An unset
+  // value means a legacy row, which the admin default treats as a course.
+  const savedCourses = saved?.courses ?? [];
+  const courseOfferings = bySubject(
+    savedCourses.filter((c) => !c.product_type || c.product_type === 'course')
+  );
+  const retreatOfferings = bySubject(savedCourses.filter((c) => c.product_type === 'retreat'));
+  const downloadOfferings = bySubject(savedCourses.filter((c) => c.product_type === 'download'));
 
-  const canvas =
-    'min-h-screen bg-gradient-to-b from-slate-900 via-indigo-950 to-slate-900 text-white p-8 md:p-12 relative font-sans';
-  const activeBucket = selectedSubject ? buckets?.[selectedSubject] : null;
-
-  // ---- DRILL-DOWN VIEW ----
-  if (activeBucket) {
-    const tabs = [
-      { key: 'healers', label: 'Healers', items: activeBucket.healers },
-      { key: 'books', label: 'Books', items: activeBucket.books },
-      { key: 'videos', label: 'Videos', items: activeBucket.videos },
-    ].filter((t) => t.items.length > 0);
-
-    return (
-      <div className={canvas}>
-        <button
-          type="button"
-          onClick={() => setSelectedSubject(null)}
-          className="text-xs font-medium text-slate-400 hover:text-white transition-colors cursor-pointer block mb-8"
-        >
-          &larr; Back to Library
-        </button>
-
-        <h1 className="text-4xl font-black mb-6">{nameForSlug(activeBucket.slug)}</h1>
-
-        {/* Tri-tab segment bar (empty sub-types are hidden) */}
-        <div className="inline-flex rounded-xl bg-white/5 border border-white/10 p-1 gap-1">
-          {tabs.map((t) => (
-            <button
-              key={t.key}
-              type="button"
-              onClick={() => setActiveTab(t.key)}
-              className={`px-5 py-2.5 rounded-lg text-sm font-bold uppercase tracking-wide transition-all ${
-                activeTab === t.key
-                  ? 'bg-gradient-to-r from-cyan-500 to-emerald-500 text-slate-950 shadow-lg'
-                  : 'text-slate-300 hover:text-white'
-              }`}
-            >
-              {t.label} ({t.items.length})
-            </button>
-          ))}
-        </div>
-
-        {/* Active tab content */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
-          {activeTab === 'healers' &&
-            activeBucket.healers.map((healer) => <HealerCard key={healer.id} healer={healer} />)}
-          {activeTab === 'books' &&
-            activeBucket.books.map((book) => <BookCard key={book.id} book={book} variant="light" />)}
-          {activeTab === 'videos' &&
-            activeBucket.videos.map((video) => <VideoPlayer key={video.id} video={video} />)}
-        </div>
-      </div>
-    );
-  }
-
-  // ---- FOLDER LIST / EMPTY STATE ----
   return (
-    <div className={canvas}>
-      {/* Back to Explorer */}
-      <a
-        href="/"
-        className="text-xs font-medium text-slate-400 hover:text-white transition-colors cursor-pointer block mb-8"
-      >
-        &larr; Back to Explorer
-      </a>
+    <div className="min-h-screen bg-[#0a0f1d] text-white font-sans">
+      <nav className="sticky top-0 z-50 border-b border-white/10 bg-[#0a0f1d]/90 backdrop-blur-md">
+        <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
+          <Link
+            href="/"
+            className="bg-gradient-to-r from-sky-500 via-purple-500 to-pink-500 bg-clip-text text-2xl font-extrabold tracking-wider text-transparent"
+          >
+            SPIRITPEDIA
+          </Link>
+          <Link
+            href="/"
+            className="flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-2 text-sm font-semibold text-white transition-all duration-300 hover:scale-105 hover:bg-white/20 active:scale-95"
+          >
+            &larr; Explore
+          </Link>
+        </div>
+      </nav>
 
-      {buckets === null ? null : !hasItems ? (
-        // EMPTY STATE
-        <div className="flex flex-col items-center justify-center text-center min-h-[60vh]">
-          <div className="text-7xl mb-6 opacity-30 select-none">📚</div>
-          <h1 className="text-3xl font-bold mb-3">Your library is empty.</h1>
-          <p className="text-slate-400 max-w-md">
-            Start exploring Spiritpedia to build your unique spiritual archive.
+      <div className="mx-auto max-w-7xl px-6 py-12">
+        <header className="mb-10">
+          <h1 className="text-5xl font-bold text-white">My Library</h1>
+          <p className="mt-3 text-xl text-gray-400">
+            {totalSaved > 0
+              ? `Your saved archive — ${totalSaved} item${totalSaved === 1 ? '' : 's'}.`
+              : 'Your saved archive.'}
           </p>
-        </div>
-      ) : (
-        // SELF-ORGANIZING SUBJECT FOLDERS
-        <div>
-          <h1 className="text-4xl font-black mb-2">My Library</h1>
-          <p className="text-slate-400 mb-10">Your saved archive, organized by subject.</p>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {bucketList.map((bucket) => (
-              <button
-                key={bucket.slug}
-                type="button"
-                onClick={() => openSubject(bucket)}
-                className="text-left p-6 rounded-2xl bg-gradient-to-br from-slate-900/60 to-indigo-950/40 border border-white/10 hover:border-purple-500/40 cursor-pointer shadow-xl transition-all duration-300 transform hover:-translate-y-1 flex flex-col gap-2 relative overflow-hidden group"
-              >
-                <div className="flex items-center justify-between gap-3">
-                  <h3 className="text-xl font-bold text-white">{nameForSlug(bucket.slug)}</h3>
-                  <span className="shrink-0 text-xs font-bold px-2.5 py-0.5 rounded-full bg-purple-500/20 text-purple-200 border border-purple-400/30">
-                    {countFor(bucket)}
-                  </span>
-                </div>
-                <p className="text-xs text-slate-400 uppercase tracking-wider">
-                  {countFor(bucket)} saved item{countFor(bucket) === 1 ? '' : 's'}
-                </p>
-              </button>
-            ))}
+        </header>
+
+        {saved === null ? null : totalSaved === 0 ? (
+          <div className="flex min-h-[50vh] flex-col items-center justify-center text-center">
+            <div className="mb-6 select-none text-7xl opacity-30">📚</div>
+            <h2 className="mb-3 text-3xl font-bold">Your library is empty.</h2>
+            <p className="max-w-md text-gray-400">
+              Tap the heart on any healer, book, video, course, or free resource to build your
+              spiritual archive.
+            </p>
+            <Link
+              href="/"
+              className="mt-8 rounded-full bg-[#7c3aed] px-8 py-3 text-sm font-bold text-white shadow-lg shadow-[#7c3aed]/30 transition-all hover:scale-105 hover:bg-[#6d28d9] active:scale-95"
+            >
+              Start exploring
+            </Link>
           </div>
-        </div>
-      )}
+        ) : (
+          <>
+            {/* Pills restricted to the subjects the visitor's own saved items
+                carry, filtering by client state rather than navigation. */}
+            <section className="pb-10">
+              <SubjectPills
+                subjects={subjects}
+                currentSubjectSlug={activeSubject}
+                allowedSlugs={savedSubjectSlugs}
+                onSelect={setActiveSubject}
+              />
+            </section>
+
+            {/* grid-cols-1 is load-bearing, as on the homepage: an implicit auto
+                column sizes to its items' max-content width, which would stretch
+                the page to the full un-wrapped width of every shelf. */}
+            <main className="grid grid-cols-1 gap-14">
+              <ContentShelf
+                title="Saved Healers"
+                subtitle="Your Practitioners"
+                items={bySubject(saved.healers)}
+                renderItem={(healer) => <HealerCard healer={healer} />}
+                itemWidthClass="w-[260px]"
+              />
+
+              <ContentShelf
+                title="Saved Books"
+                subtitle="Your Reading List"
+                items={bySubject(saved.books)}
+                renderItem={(book) => <BookCard book={book} />}
+                itemWidthClass="w-[200px]"
+              />
+
+              <ContentShelf
+                title="Saved Free Resources"
+                subtitle="No Cost, No Catch"
+                items={bySubject(saved.freeResources)}
+                renderItem={(item) => (
+                  <FreeResourceCard item={item} healerName={healerNameById.get(item.healer_id)} />
+                )}
+              />
+
+              <ContentShelf
+                title="Saved Courses"
+                subtitle="Go Deeper"
+                items={courseOfferings}
+                renderItem={renderOffering}
+              />
+
+              <ContentShelf
+                title="Saved Retreats"
+                subtitle="In Person"
+                items={retreatOfferings}
+                renderItem={renderOffering}
+              />
+
+              <ContentShelf
+                title="Saved Downloads"
+                subtitle="Take It With You"
+                items={downloadOfferings}
+                renderItem={renderOffering}
+              />
+
+              <ContentShelf
+                title="Saved Videos"
+                subtitle="Watch & Learn"
+                items={bySubject(saved.videos)}
+                renderItem={(video) => <VideoPlayer video={video} variant="dark" />}
+                itemWidthClass="w-[320px]"
+              />
+            </main>
+          </>
+        )}
+      </div>
     </div>
   );
 }

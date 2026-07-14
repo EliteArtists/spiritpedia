@@ -1,9 +1,19 @@
-import { getContentBySubjectSlug, getAllSubjects } from '../../../data/subjects.js';
+import { getContentBySubjectSlug, getAllSubjects, getHealerNames } from '../../../data/subjects.js';
 import Link from 'next/link';
 import BookCard from '../../../components/BookCard.js';
 import ContentShelf from '../../../components/ContentShelf.js';
+import FreeResourceCard from '../../../components/FreeResourceCard.js';
 import HealerCard from '../../../components/HealerCard.js';
+import OfferingCard from '../../../components/OfferingCard.js';
 import VideoPlayer from '../../../components/VideoPlayer.js';
+
+// Subject pages stay statically generated (they are the same for every visitor),
+// but they must not be frozen at build time. Supabase queries run through fetch,
+// so without this the Data Cache pins each page to the catalog as it stood at the
+// last deploy — and with content landing continuously, newly-ingested healers,
+// books and videos would never appear until someone happened to rebuild.
+// Regenerate hourly instead.
+export const revalidate = 3600;
 
 export default async function SubjectPage({ params }) {
   // In Next.js 16 params is a Promise and must be awaited before access. Reading
@@ -12,16 +22,35 @@ export default async function SubjectPage({ params }) {
   // is ever hit without a slug.
   const { slug } = await params;
 
-  const [{ books, videos, healers }, subjects] = await Promise.all([
+  const [content, subjects, healerNameById] = await Promise.all([
     getContentBySubjectSlug(slug),
     getAllSubjects(),
+    getHealerNames(),
   ]);
+
+  const { healers, books, videos, courses, freeResources } = content;
 
   // Prefer the subject's real display name ("EFT / Tapping") over a de-hyphenated
   // slug ("eft tapping"), which mangles anything with punctuation or casing.
   const title = subjects.find((s) => s.slug === slug)?.name || slug?.replace(/-/g, ' ') || 'Subject';
 
-  const isEmpty = healers.length === 0 && books.length === 0 && videos.length === 0;
+  // The single `courses` table stores every paid offering, distinguished by
+  // product_type. Legacy rows predate the column, so an unset value is treated as
+  // a course (the admin default) rather than being silently dropped.
+  const courseOfferings = courses.filter((c) => !c.product_type || c.product_type === 'course');
+  const retreatOfferings = courses.filter((c) => c.product_type === 'retreat');
+  const downloadOfferings = courses.filter((c) => c.product_type === 'download');
+
+  const renderOffering = (item) => (
+    <OfferingCard item={item} healerName={healerNameById.get(item.healer_id)} />
+  );
+
+  const isEmpty =
+    healers.length === 0 &&
+    books.length === 0 &&
+    videos.length === 0 &&
+    courses.length === 0 &&
+    freeResources.length === 0;
 
   return (
     <div className="min-h-screen bg-[#0a0f1d] text-white font-sans">
@@ -67,6 +96,7 @@ export default async function SubjectPage({ params }) {
           // grid-cols-1 is load-bearing, exactly as on the homepage: an implicit
           // auto column sizes to its items' max-content width, which would stretch
           // the page to the full un-wrapped width of every shelf.
+          // Shelf order mirrors the homepage so the two pages read identically.
           <main className="grid grid-cols-1 gap-14">
             <ContentShelf
               title="Healers"
@@ -77,11 +107,41 @@ export default async function SubjectPage({ params }) {
             />
 
             <ContentShelf
+              title="Free Resources"
+              subtitle="No Cost, No Catch"
+              items={freeResources}
+              renderItem={(item) => (
+                <FreeResourceCard item={item} healerName={healerNameById.get(item.healer_id)} />
+              )}
+            />
+
+            <ContentShelf
               title="Books & Literature"
               subtitle="The Curated Archive"
               items={books}
               renderItem={(book) => <BookCard book={book} />}
               itemWidthClass="w-[200px]"
+            />
+
+            <ContentShelf
+              title="Courses & Programmes"
+              subtitle="Go Deeper"
+              items={courseOfferings}
+              renderItem={renderOffering}
+            />
+
+            <ContentShelf
+              title="Retreats & Live Events"
+              subtitle="In Person"
+              items={retreatOfferings}
+              renderItem={renderOffering}
+            />
+
+            <ContentShelf
+              title="Downloads & Audio"
+              subtitle="Take It With You"
+              items={downloadOfferings}
+              renderItem={renderOffering}
             />
 
             <ContentShelf

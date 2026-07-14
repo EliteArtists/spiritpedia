@@ -15,6 +15,21 @@ export async function getAllSubjects() {
   return subjects;
 }
 
+// id -> name for every healer on the platform. Offerings and free resources link
+// by the relational bigint healer_id, and a course's author must still be
+// nameable when the author themselves is not tagged with the subject being
+// viewed — so this deliberately spans the whole table, not the filtered set.
+export async function getHealerNames() {
+  const { data, error } = await supabase.from('healers').select('id, name');
+
+  if (error) {
+    console.error('Error fetching healer names:', error);
+    return new Map();
+  }
+
+  return new Map(data.map((h) => [h.id, h.name]));
+}
+
 // Function to fetch content for a specific subject slug.
 //
 // TAG MATCHING — subject_slugs is a Postgres array column, so every filter here
@@ -24,29 +39,51 @@ export async function getAllSubjects() {
 // LIKE/eq-style match would have to reason about the separator, and containment
 // simply never sees one.
 export async function getContentBySubjectSlug(subjectSlug) {
+  // EXPIRATION WINDOW — mirrors the homepage: a paid offering or free resource
+  // only surfaces while it is live (is_active, and either evergreen or not yet
+  // past its end date). Recomputed per request so the window rolls forward.
+  const today = new Date().toISOString().slice(0, 10);
+  const liveWindow = `end_date.is.null,end_date.gte.${today}`;
 
-  // Fetch all necessary data in one efficient query pattern (using Promise.all)
-  const results = await Promise.all([
+  // Every query issued concurrently — one round trip's latency for the whole page.
+  const [booksResult, videosResult, healersResult, coursesResult, freeResourcesResult] =
+    await Promise.all([
       supabase.from('books').select('*').contains('subject_slugs', [subjectSlug]),
       // select('*'), not a narrow projection: VideoPlayer keys its favourites off
       // video.id, and omitting the column silently collapsed every card onto the
       // single favourite id "undefined" — hearting one video hearted them all.
       supabase.from('videos').select('*').contains('subject_slugs', [subjectSlug]),
       supabase.from('healers').select('*').contains('subject_slugs', [subjectSlug]),
-  ]);
+      supabase
+        .from('courses')
+        .select('*')
+        .contains('subject_slugs', [subjectSlug])
+        .eq('is_active', true)
+        .or(liveWindow),
+      // NOTE: no is_featured filter here. That flag is a homepage curation
+      // control; on a subject page the visitor asked for this subject explicitly,
+      // so they should see every live free resource carrying the tag.
+      supabase
+        .from('free_resources')
+        .select('*')
+        .contains('subject_slugs', [subjectSlug])
+        .eq('is_active', true)
+        .or(liveWindow),
+    ]);
 
-  // Check for any errors
-  const [booksResult, videosResult, healersResult] = results;
-
-  if (booksResult.error || videosResult.error || healersResult.error) {
-      console.error('Error in content query:', booksResult.error || videosResult.error || healersResult.error);
-      return { books: [], videos: [], healers: [] };
+  const results = [booksResult, videosResult, healersResult, coursesResult, freeResourcesResult];
+  const failure = results.find((r) => r.error);
+  if (failure) {
+    console.error('Error in content query:', failure.error);
+    return { books: [], videos: [], healers: [], courses: [], freeResources: [] };
   }
 
-  return { 
-      books: booksResult.data, 
-      videos: videosResult.data, 
-      healers: healersResult.data 
+  return {
+    books: booksResult.data,
+    videos: videosResult.data,
+    healers: healersResult.data,
+    courses: coursesResult.data,
+    freeResources: freeResourcesResult.data,
   };
 }
 

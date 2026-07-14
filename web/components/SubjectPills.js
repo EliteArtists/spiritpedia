@@ -31,9 +31,16 @@ export const SUBJECT_TAXONOMY = {
 // without the clip, so opening a pillar paints the panel *over* the Hero
 // Billboard instead of inserting a block that shoves the whole page down.
 //
-// Hover opens it on desktop, tap opens it on touch, and the sub-subject links
-// are the same `?subject=` hrefs as before.
-export default function SubjectPills({ subjects = [], currentSubjectSlug }) {
+// Hover opens it on desktop, tap opens it on touch.
+//
+// Two optional props let My Library reuse this row verbatim:
+//   `allowedSlugs` — restrict the pillars and sub-subjects to the slugs actually
+//     present in the user's saved items, so the library never offers a filter
+//     that would return nothing.
+//   `onSelect`     — filter via client state instead of navigating. When given,
+//     the pills become buttons that call onSelect(slug | null); when omitted they
+//     stay `?subject=` links, exactly as the homepage needs.
+export default function SubjectPills({ subjects = [], currentSubjectSlug, allowedSlugs, onSelect }) {
   const [openPillar, setOpenPillar] = useState(null);
 
   const pillClass = (active) =>
@@ -43,8 +50,17 @@ export default function SubjectPills({ subjects = [], currentSubjectSlug }) {
         : 'bg-transparent text-white border-white/30 hover:border-white/60 hover:bg-white/10'
     }`;
 
+  const isAllowed = (slug) => !allowedSlugs || allowedSlugs.includes(slug);
+
+  // Drop a pillar entirely when none of its subjects are represented.
+  const pillars = Object.entries(SUBJECT_TAXONOMY).filter(([, slugs]) =>
+    slugs.some(isAllowed)
+  );
+
   const openItems = openPillar
-    ? subjects.filter((sub) => SUBJECT_TAXONOMY[openPillar]?.includes(sub.slug))
+    ? subjects.filter(
+        (sub) => SUBJECT_TAXONOMY[openPillar]?.includes(sub.slug) && isAllowed(sub.slug)
+      )
     : [];
 
   return (
@@ -58,11 +74,26 @@ export default function SubjectPills({ subjects = [], currentSubjectSlug }) {
       <div className="w-full flex justify-center items-center">
         <div className="flex max-w-full flex-row gap-3 overflow-x-auto scrollbar-hide pb-1">
           {/* View All resets the active filter */}
-          <a href="?" className={pillClass(!currentSubjectSlug)} onMouseEnter={() => setOpenPillar(null)}>
-            View All
-          </a>
+          {onSelect ? (
+            <button
+              type="button"
+              onClick={() => onSelect(null)}
+              onMouseEnter={() => setOpenPillar(null)}
+              className={pillClass(!currentSubjectSlug)}
+            >
+              View All
+            </button>
+          ) : (
+            <a
+              href="?"
+              className={pillClass(!currentSubjectSlug)}
+              onMouseEnter={() => setOpenPillar(null)}
+            >
+              View All
+            </a>
+          )}
 
-          {Object.entries(SUBJECT_TAXONOMY).map(([pillar, slugs]) => {
+          {pillars.map(([pillar, slugs]) => {
             const pillarActive = Boolean(currentSubjectSlug) && slugs.includes(currentSubjectSlug);
             return (
               <button
@@ -86,20 +117,34 @@ export default function SubjectPills({ subjects = [], currentSubjectSlug }) {
           {openItems.length === 0 ? (
             <span className="text-xs italic text-gray-400">Coming soon</span>
           ) : (
-            openItems.map((sub) => (
-              <a
-                key={sub.slug}
-                href={`?subject=${sub.slug}`}
-                aria-current={currentSubjectSlug === sub.slug ? 'true' : undefined}
-                className={`rounded-lg px-3 py-2 text-sm font-medium whitespace-nowrap transition-all duration-200 ${
-                  currentSubjectSlug === sub.slug
-                    ? 'bg-[#7c3aed] text-white'
-                    : 'text-gray-300 hover:bg-white/10 hover:text-white'
-                }`}
-              >
-                {sub.name}
-              </a>
-            ))
+            openItems.map((sub) => {
+              const subClass = `rounded-lg px-3 py-2 text-sm font-medium whitespace-nowrap transition-all duration-200 ${
+                currentSubjectSlug === sub.slug
+                  ? 'bg-[#7c3aed] text-white'
+                  : 'text-gray-300 hover:bg-white/10 hover:text-white'
+              }`;
+
+              return onSelect ? (
+                <button
+                  key={sub.slug}
+                  type="button"
+                  onClick={() => onSelect(sub.slug)}
+                  aria-current={currentSubjectSlug === sub.slug ? 'true' : undefined}
+                  className={subClass}
+                >
+                  {sub.name}
+                </button>
+              ) : (
+                <a
+                  key={sub.slug}
+                  href={`?subject=${sub.slug}`}
+                  aria-current={currentSubjectSlug === sub.slug ? 'true' : undefined}
+                  className={subClass}
+                >
+                  {sub.name}
+                </a>
+              );
+            })
           )}
         </div>
       )}
