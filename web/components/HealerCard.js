@@ -1,6 +1,7 @@
 'use client';
 
-import { useState, useEffect, useCallback } from 'react';
+import { useState, useEffect } from 'react';
+import CardImage from './CardImage.js';
 
 // Shared localStorage key holding the global array of favorited healer ids.
 const FAV_HEALERS_KEY = 'favorited_healers';
@@ -16,35 +17,8 @@ const DEFAULT_AVATAR = '/avatar-placeholder.svg';
 export default function HealerCard({ healer, portrait }) {
   const [favorited, setFavorited] = useState(false);
 
-  // Holds the src that FAILED, rather than a bare boolean. A dead portrait only
-  // reveals itself when the browser gives up loading it, so the swap has to
-  // happen from onError at runtime — but a boolean would then stay latched: the
-  // homepage re-seeds `portrait` per subject filter, so an ordinary pill click
-  // hands this card a fresh, perfectly good URL that a stuck flag would keep
-  // hidden behind the placeholder. Comparing the failed src against the current
-  // one self-heals on its own, with no reset effect.
-  const [imageError, setImageError] = useState(null);
-
   const favId = healer.healer_slug || String(healer.id);
-  const resolvedSrc =
-    portrait || (Array.isArray(healer.image_urls) && healer.image_urls[0]) || DEFAULT_AVATAR;
-  const imgSrc = imageError === resolvedSrc ? DEFAULT_AVATAR : resolvedSrc;
-
-  // onError alone is not enough for a server-rendered <img>. The browser starts
-  // fetching the portrait from the SSR'd HTML immediately, so a dead URL can fail
-  // BEFORE React hydrates and attaches its handler — the error event fires on a
-  // bare DOM node with nothing listening, React never hears about it, and the card
-  // stays on a broken-image icon forever. (Observed in a production build; dev
-  // hydrates fast enough to hide it.)
-  //
-  // This ref runs at commit and re-checks an image that has already finished
-  // loading: complete && naturalWidth === 0 is precisely "it failed". onError then
-  // covers everything that fails after hydration.
-  const captureBrokenImage = useCallback((node) => {
-    if (node && node.complete && node.naturalWidth === 0) {
-      setImageError(node.getAttribute('src'));
-    }
-  }, []);
+  const imgSrc = portrait || (Array.isArray(healer.image_urls) && healer.image_urls[0]) || null;
 
   // Restore favorite state from the global favorited_healers array on mount.
   useEffect(() => {
@@ -75,11 +49,10 @@ export default function HealerCard({ healer, portrait }) {
     <div className="relative w-full h-72 rounded-2xl overflow-hidden bg-slate-900 shadow-lg group">
       <a href={`/healers/${healer.healer_slug}`} className="block w-full h-full cursor-pointer">
         {/* Edge-to-edge media with a micro-zoom on hover */}
-        <img
-          ref={captureBrokenImage}
+        <CardImage
           src={imgSrc}
           alt={healer.name}
-          onError={() => setImageError(resolvedSrc)}
+          fallbackSrc={DEFAULT_AVATAR}
           className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
         />
         {/* Floating text overlay anchored to the baseline */}

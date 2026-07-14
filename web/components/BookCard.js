@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import CardImage from './CardImage.js';
 
 // Shared localStorage key holding the global array of favorited book ids.
 const FAV_BOOKS_KEY = 'favorited_books';
@@ -55,17 +56,15 @@ export default function BookCard({ book, variant }) {
         onMouseLeave={() => setOpen(false)}
         onClick={() => setOpen((p) => !p)}
       >
-        {hasCover ? (
-          <img
-            src={book.mock_cover_url}
-            alt={book.title}
-            className="w-full aspect-[2/3] object-cover rounded-xl shadow-2xl transition-transform duration-300 hover:scale-105 cursor-pointer"
-          />
-        ) : (
-          <div className="w-full aspect-[2/3] rounded-xl bg-slate-800 flex items-center justify-center text-6xl shadow-2xl cursor-pointer">
-            📖
-          </div>
-        )}
+        {/* A dead cover URL falls back to the same glyph a cover-less book already
+            shows, rather than a broken-image icon. */}
+        <CardImage
+          src={hasCover ? book.mock_cover_url : null}
+          alt={book.title}
+          className="w-full aspect-[2/3] object-cover rounded-xl shadow-2xl transition-transform duration-300 hover:scale-105 cursor-pointer"
+          fallbackEmoji="📖"
+          fallbackClassName="w-full aspect-[2/3] rounded-xl bg-slate-800 flex items-center justify-center text-6xl shadow-2xl cursor-pointer"
+        />
 
         {/* MODAL POPOVER — synopsis + deep links */}
         {open && (

@@ -1,3 +1,4 @@
+import CardImage from './CardImage.js';
 import FavoriteHeart from './FavoriteHeart.js';
 import { FAVORITE_KEYS } from '../utils/favorites.js';
 
@@ -25,15 +26,15 @@ export default function FreeResourceCard({ item, healerName }) {
         {/* Cover image + resource type badge. The badge sits left because the
             heart owns the top-right corner across every card type on the site. */}
         <div className="relative aspect-[16/9] w-full overflow-hidden bg-black/40">
-          {item.image_url ? (
-            <img
-              src={item.image_url}
-              alt={item.title}
-              className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
-            />
-          ) : (
-            <div className="w-full h-full flex items-center justify-center text-5xl">✨</div>
-          )}
+          {/* A dead cover URL falls back to the same glyph a cover-less resource
+              already shows, rather than a broken-image icon. */}
+          <CardImage
+            src={item.image_url}
+            alt={item.title}
+            className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+            fallbackEmoji="✨"
+            fallbackClassName="w-full h-full flex items-center justify-center text-5xl"
+          />
           <span className="absolute top-3 left-3 bg-[#f59e0b] text-[#78350f] text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-full shadow-lg">
             {formatType(item.resource_type)}
           </span>
