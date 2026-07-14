@@ -15,13 +15,23 @@ export async function getAllSubjects() {
   return subjects;
 }
 
-// Function to fetch content for a specific subject slug
+// Function to fetch content for a specific subject slug.
+//
+// TAG MATCHING — subject_slugs is a Postgres array column, so every filter here
+// is an array-containment check (`.contains` → the `@>` operator), NOT a string
+// comparison. Containment matches a slug as one whole element, which is what
+// makes hyphenated tags such as 'eft-tapping' or 'law-of-attraction' safe: a
+// LIKE/eq-style match would have to reason about the separator, and containment
+// simply never sees one.
 export async function getContentBySubjectSlug(subjectSlug) {
-    
+
   // Fetch all necessary data in one efficient query pattern (using Promise.all)
   const results = await Promise.all([
       supabase.from('books').select('*').contains('subject_slugs', [subjectSlug]),
-      supabase.from('videos').select('title, platform_url').contains('subject_slugs', [subjectSlug]),
+      // select('*'), not a narrow projection: VideoPlayer keys its favourites off
+      // video.id, and omitting the column silently collapsed every card onto the
+      // single favourite id "undefined" — hearting one video hearted them all.
+      supabase.from('videos').select('*').contains('subject_slugs', [subjectSlug]),
       supabase.from('healers').select('*').contains('subject_slugs', [subjectSlug]),
   ]);
 
@@ -56,9 +66,10 @@ export async function getHomepageContent(subjectSlug) {
     }
     
     // Fetch all necessary data in one efficient query pattern (using Promise.all)
+    // Same array-containment matching as getContentBySubjectSlug above.
     const results = await Promise.all([
         supabase.from('books').select('*').contains('subject_slugs', [subjectSlug]),
-        supabase.from('videos').select('title, platform_url').contains('subject_slugs', [subjectSlug]),
+        supabase.from('videos').select('*').contains('subject_slugs', [subjectSlug]),
         supabase.from('healers').select('*').contains('subject_slugs', [subjectSlug]),
     ]);
 

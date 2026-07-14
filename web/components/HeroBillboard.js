@@ -43,7 +43,12 @@ export default function HeroBillboard({ healers = [] }) {
   const portrait = Array.isArray(healer.image_urls) ? healer.image_urls.find(Boolean) : null;
 
   return (
-    <section className="relative w-full min-h-[40vh] overflow-hidden rounded-3xl bg-[#111827] border border-white/10">
+    // FIXED FRAME — a deterministic h-[450px] rather than a min-height. The
+    // billboard's content (name length, bio length, dot count) varies per healer,
+    // and with a min-height each rotation resized the frame and shunted every
+    // shelf below it up or down. A fixed height means the 8s rotation never moves
+    // a pixel outside this box; the clamps below keep the copy inside it.
+    <section className="relative w-full h-[450px] overflow-hidden rounded-3xl bg-[#111827] border border-white/10">
       {/* Portrait sits on the right; the gradient sweeps in from the left edge so
           the copy always lands on a dark, legible field. */}
       <div className="absolute inset-y-0 right-0 w-full md:w-3/5">
@@ -62,25 +67,32 @@ export default function HeroBillboard({ healers = [] }) {
       <div className="absolute inset-0 bg-gradient-to-r from-[#0a0f1d] via-[#0a0f1d]/90 to-transparent" />
       <div className="absolute inset-0 bg-gradient-to-r from-[#7c3aed]/40 via-transparent to-transparent" />
 
-      {/* Copy block */}
-      <div className="relative z-10 flex min-h-[40vh] flex-col justify-center gap-4 p-8 md:p-14 max-w-full md:max-w-[55%]">
-        <span className="self-start rounded-full bg-[#fef08a] px-3 py-1 text-[10px] font-bold uppercase tracking-wider text-[#78350f]">
+      {/* Copy block — h-full/max-h-full pins it to the fixed frame, and
+          overflow-hidden means an unusually long name or bio is clipped rather
+          than pushing the CTA out through the bottom edge. */}
+      <div className="relative z-10 flex h-full max-h-full flex-col justify-center gap-4 overflow-hidden p-8 pb-14 md:p-14 md:pb-16 max-w-full md:max-w-[55%]">
+        <span className="shrink-0 self-start rounded-full bg-[#fef08a] px-3 py-1 text-[10px] font-bold uppercase tracking-wider text-[#78350f]">
           Superhero
         </span>
 
-        <h2 className="text-4xl md:text-6xl font-bold leading-tight text-white drop-shadow-lg">
+        {/* A two-line name would eat the bio's space and shift the CTA, so the
+            headline is hard-clamped to one line. */}
+        <h2 className="line-clamp-1 text-4xl md:text-6xl font-bold leading-tight text-white drop-shadow-lg">
           {healer.name}
         </h2>
 
+        {/* truncateBio caps the character count; line-clamp-3 caps the rendered
+            height, which is what actually protects the layout at narrow widths
+            where 120 characters can still wrap past three lines. */}
         {healer.bio && (
-          <p className="max-w-xl text-base leading-relaxed text-gray-300">
+          <p className="line-clamp-3 max-w-xl text-base leading-relaxed text-gray-300">
             {truncateBio(healer.bio)}
           </p>
         )}
 
         <a
           href={`/healers/${healer.healer_slug}`}
-          className="mt-2 self-start rounded-full bg-[#7c3aed] px-7 py-3 text-sm font-bold text-white shadow-lg shadow-[#7c3aed]/30 transition-all hover:bg-[#6d28d9] hover:scale-105 active:scale-95"
+          className="mt-2 shrink-0 self-start rounded-full bg-[#7c3aed] px-7 py-3 text-sm font-bold text-white shadow-lg shadow-[#7c3aed]/30 transition-all hover:bg-[#6d28d9] hover:scale-105 active:scale-95"
         >
           View Profile &rarr;
         </a>

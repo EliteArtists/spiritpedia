@@ -24,9 +24,13 @@ export const SUBJECT_TAXONOMY = {
 
 // Horizontally scrolling pill row with a sub-subject dropdown per pillar.
 //
-// The dropdown panel is rendered BELOW the scroll track rather than absolutely
-// inside it: an overflow-x container also clips its children vertically, so a
-// dropdown nested in the track would be cut off at the first pill's baseline.
+// The dropdown is a true overlay: it is absolutely positioned against the
+// `relative` wrapper below — NOT against the scroll track, because an overflow-x
+// container also clips vertically and a panel nested inside the track would be
+// guillotined at the pills' baseline. Anchoring one level up gets the float
+// without the clip, so opening a pillar paints the panel *over* the Hero
+// Billboard instead of inserting a block that shoves the whole page down.
+//
 // Hover opens it on desktop, tap opens it on touch, and the sub-subject links
 // are the same `?subject=` hrefs as before.
 export default function SubjectPills({ subjects = [], currentSubjectSlug }) {
@@ -44,33 +48,41 @@ export default function SubjectPills({ subjects = [], currentSubjectSlug }) {
     : [];
 
   return (
-    <div onMouseLeave={() => setOpenPillar(null)}>
-      <div className="flex flex-row gap-3 overflow-x-auto scrollbar-hide pb-1">
-        {/* View All resets the active filter */}
-        <a href="?" className={pillClass(!currentSubjectSlug)} onMouseEnter={() => setOpenPillar(null)}>
-          View All
-        </a>
+    // The positioning context the overlay panel anchors to.
+    <div className="relative" onMouseLeave={() => setOpenPillar(null)}>
+      {/* CENTERED VIEWPORT — the flex parent centres the track once the pills are
+          narrower than the page. The track keeps overflow-x-auto and max-w-full,
+          so on a phone it still fills the width and scrolls rather than being
+          centred and clipped. (A scroll container's automatic minimum size is 0,
+          which is what lets it shrink to its content and be centred at all.) */}
+      <div className="w-full flex justify-center items-center">
+        <div className="flex max-w-full flex-row gap-3 overflow-x-auto scrollbar-hide pb-1">
+          {/* View All resets the active filter */}
+          <a href="?" className={pillClass(!currentSubjectSlug)} onMouseEnter={() => setOpenPillar(null)}>
+            View All
+          </a>
 
-        {Object.entries(SUBJECT_TAXONOMY).map(([pillar, slugs]) => {
-          const pillarActive = Boolean(currentSubjectSlug) && slugs.includes(currentSubjectSlug);
-          return (
-            <button
-              key={pillar}
-              type="button"
-              onMouseEnter={() => setOpenPillar(pillar)}
-              onClick={() => setOpenPillar((prev) => (prev === pillar ? null : pillar))}
-              aria-expanded={openPillar === pillar}
-              className={pillClass(pillarActive || openPillar === pillar)}
-            >
-              {pillar}
-            </button>
-          );
-        })}
+          {Object.entries(SUBJECT_TAXONOMY).map(([pillar, slugs]) => {
+            const pillarActive = Boolean(currentSubjectSlug) && slugs.includes(currentSubjectSlug);
+            return (
+              <button
+                key={pillar}
+                type="button"
+                onMouseEnter={() => setOpenPillar(pillar)}
+                onClick={() => setOpenPillar((prev) => (prev === pillar ? null : pillar))}
+                aria-expanded={openPillar === pillar}
+                className={pillClass(pillarActive || openPillar === pillar)}
+              >
+                {pillar}
+              </button>
+            );
+          })}
+        </div>
       </div>
 
-      {/* Sub-subject panel for the open pillar */}
+      {/* Sub-subject panel — floats over the billboard, out of document flow. */}
       {openPillar && (
-        <div className="mt-3 flex flex-wrap gap-2 rounded-2xl border border-white/10 bg-[#111827] p-4 shadow-2xl">
+        <div className="absolute top-full left-0 right-0 z-20 mt-2 flex flex-wrap justify-center gap-2 rounded-2xl border border-white/10 bg-[#111827] p-4 shadow-2xl">
           {openItems.length === 0 ? (
             <span className="text-xs italic text-gray-400">Coming soon</span>
           ) : (
