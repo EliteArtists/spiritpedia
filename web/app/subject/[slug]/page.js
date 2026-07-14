@@ -5,7 +5,7 @@ import ContentShelf from '../../../components/ContentShelf.js';
 import FreeResourceCard from '../../../components/FreeResourceCard.js';
 import HealerCard from '../../../components/HealerCard.js';
 import OfferingCard from '../../../components/OfferingCard.js';
-import VideoPlayer from '../../../components/VideoPlayer.js';
+import VideoGrid from '../../../components/VideoGrid.js';
 
 // Subject pages stay statically generated (they are the same for every visitor),
 // but they must not be frozen at build time. Supabase queries run through fetch,
@@ -144,13 +144,11 @@ export default async function SubjectPage({ params }) {
               renderItem={renderOffering}
             />
 
-            <ContentShelf
-              title="Videos"
-              subtitle="Watch & Learn"
-              items={videos}
-              renderItem={(video) => <VideoPlayer video={video} variant="dark" />}
-              itemWidthClass="w-[320px]"
-            />
+            {/* Videos are the one high-volume collection — a popular subject
+                matches hundreds — so they get the homepage's paginated vertical
+                grid rather than a scroll track that would mount every card at
+                once. Same component, so the two pages cannot drift apart. */}
+            <VideoGrid videos={videos} />
           </main>
         )}
       </div>
