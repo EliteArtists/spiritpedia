@@ -103,40 +103,61 @@ Practitioners operating locally or with a small online presence. This is the gra
 The `/web` directory contains the full Next.js application.
 
 #### Key Pages
-* `/` — Homepage — emotional search, subject filters, healer carousel, books, videos
-* `/healers/[slug]` — Individual healer profile with bio, photo mosaic, contact funnel
+* `/` — Homepage — emotional search, subject pills, hero billboard, content shelves, video grid
+* `/subject/[slug]` — Subject page — every healer, book, and video carrying that subject tag
+* `/healers/[slug]` — Individual healer profile with bio, photo mosaic, offerings, contact funnel
 * `/library` — Personal saved library, auto-organised by subject
-* `/admin` — Content management dashboard
+* `/admin` — Content ingestion dashboard
 
 #### Key Components
 | File | Purpose |
 | :--- | :--- |
-| web/components/HomePageContent.js | Homepage layout, 2+1 healer matrix, subject carousels |
-| web/components/HealerCard.js | Healer card with tier badge and favourite toggle |
-| web/components/BookCard.js | Book card with light/dark variant and affiliate links |
-| web/components/VideoPlayer.js | Video card with thumbnail and favourite toggle |
+| web/components/HomePageContent.js | Homepage data layer + shelf composition |
+| web/components/HeroBillboard.js | Rotating full-bleed Superhero feature (fixed 450px frame) |
+| web/components/SubjectPills.js | 5-pillar subject nav with overlay sub-subject dropdown |
+| web/components/ContentShelf.js | Reusable horizontal-scroll shelf — every homepage row is one |
+| web/components/ShelfRow.js | Shared shelf heading (title / subtitle / "See all") |
+| web/components/VideoGrid.js | Vertical video grid with progressive "Load more" reveal |
+| web/components/HealerCard.js | Healer card — tier badge, favourite toggle, portrait fallback |
+| web/components/BookCard.js | Book cover with synopsis popover and affiliate deep links |
+| web/components/VideoPlayer.js | Thumbnail that swaps to an inline YouTube iframe on click |
+| web/components/OfferingCard.js | Paid offering card — CTA varies by product_type |
+| web/components/FreeResourceCard.js | Free resource card with resource_type badge |
 | web/components/LibraryView.js | Dynamic library with subject parsing and tri-tab view |
-| web/app/healers/[slug]/page.js | Healer profile page with contact panel |
-| web/app/library/page.js | Library page — hydrates from Supabase |
-| web/app/admin/page.js | Admin dashboard |
 
-#### 2+1 Healer Matrix
-The homepage healer shelf renders in groups of three:
-`[ Superhero / Luminary | Superhero / Luminary | Local Hero ]`
+#### Homepage Layout (Streaming Model)
+The homepage is a Netflix-style shelf stack. Top to bottom:
 
-If a filtered subject has no Local Heroes, a conversion tile renders automatically to drive healer registrations.
+`Nav → Emotional search → Subject pills → Hero billboard → Content shelves → Video grid`
+
+The billboard rotates through Superheroes every 8 seconds inside a fixed 450px frame. Below it, each shelf is a `ContentShelf` — Featured Healers, Luminaries, Free Resources, Books, Courses, Retreats, Downloads, Local Heroes — and a shelf whose query returns nothing renders nothing at all rather than an empty heading. The subject filter (`?subject=`) narrows *every* collection on the page, not just the healer rows.
+
+#### 5-Pillar Subject Taxonomy
+The subject pills cluster database subject slugs under five Master Keys, defined in `SUBJECT_TAXONOMY` at the top of `web/components/SubjectPills.js`:
+
+**Emotional Healing · Consciousness · Manifestation & Creation · Mystical & Spiritual Exploration · Body & Energy**
+
+Hovering (or tapping) a pillar floats a panel of its sub-subjects over the billboard. Adding a new subject to a pillar means adding its slug to that map — the pill nav is driven by the taxonomy, while the sub-subject links are driven by the `subjects` table.
 
 #### My Library
 The library at `/library` reads saved items from local storage (`favorited_books`, `favorite_videos`, `favorited_healers`), maps them against Supabase subject slugs, and generates folders dynamically. Empty categories are hidden automatically.
 
 🗄️ Database Structure (Supabase)
 #### Tables
-* **healers**: `id`, `name`, `slug`, `bio`, `tier`, `images[]`, `availability_type`, `contact_email`, `contact_phone`, `booking_url`
-* **books**: `id`, `title`, `slug`, `cover_url`, `amazon_asin`, `subject_slug`, `healer_id`
-* **videos**: `id`, `title`, `youtube_id`, `thumbnail_url`, `subject_slug`, `healer_id`
-* **subjects**: `id`, `name`, `slug`, `parent_category`
+* **healers**: `id`, `name`, `healer_slug`, `bio`, `tier`, `image_urls[]`, `subject_slugs[]`, `availability_type`, `country`, `city`, `contact_email`, `contact_phone`, `booking_url`, `website_url`, `youtube_url`, `instagram_url`, `facebook_url`, `twitter_url`, `tiktok_url`
+* **books**: `id`, `title`, `author`, `description`, `mock_cover_url`, `amazon_url`, `goodreads_url`, `worldofbooks_url`, `subject_slugs[]`, `healer_slug`
+* **videos**: `id`, `title`, `platform_url`, `subject_slugs[]`, `healer_slug`
+* **subjects**: `id`, `name`, `slug`
+* **courses**: `id`, `title`, `description`, `course_url`, `price`, `image_url`, `product_type`, `affiliate_status`, `start_date`, `end_date`, `is_active`, `subject_slugs[]`, `healer_id`
+* **free_resources**: `id`, `title`, `description`, `resource_url`, `resource_type`, `image_url`, `is_featured`, `is_active`, `start_date`, `end_date`, `subject_slugs[]`, `healer_id`
 
-*Note: The legacy is_famous boolean field has been replaced by the tier field (values: superhero / luminary / local_hero). Badge colour and display logic are driven by this field across all components.*
+#### Conventions worth knowing
+* **`subject_slugs` is a Postgres array**, not a string. Every subject filter is an array-containment check (`.contains(...)` → the `@>` operator), which matches a slug as one whole element — that is what makes hyphenated tags like `eft-tapping` safe.
+* **Healers, books, and videos link by `healer_slug`** (text). **Courses and free resources link by `healer_id`** (bigint). The two are not interchangeable.
+* **`tier`** replaces the legacy `is_famous` boolean. Values: `superhero` / `luminary` / `local_hero`. Anything else — including NULL mid-backfill — falls back to Local Hero, so no practitioner silently vanishes.
+* **`courses` stores every paid offering**, split by `product_type`: `course` / `download` / `membership` / `retreat`. An unset value is treated as a course, so legacy rows predating the column still surface.
+* **`free_resources.resource_type`**: `meditation` / `download` / `mini_course` / `workshop` / `practice`.
+* **Expiration is enforced at query level.** Courses and free resources only surface while live: `is_active` is true, and `end_date` is either NULL (evergreen) or not yet past. The window is recomputed per request, so it rolls forward on its own.
 
 💰 Monetisation
 * **Local Hero directory listings**: £5–£10/month per practitioner
@@ -149,26 +170,28 @@ The library at `/library` reads saved items from local storage (`favorited_books
 | :--- | :--- |
 | Supabase backend live | ✅ Complete |
 | Next.js web app core | ✅ Complete |
-| Homepage with emotional search bar | ✅ Complete |
-| Subject-based filtering with dropdowns | ✅ Complete |
-| Healer profiles with contact funnels | ✅ Complete |
-| Books carousel with affiliate links | ✅ Complete |
-| Video grid with thumbnails | ✅ Complete |
+| Three-tier healer system (Superhero / Luminary / Local Hero) | ✅ Complete |
+| is_famous → tier field migration | ✅ Complete |
+| Netflix-style homepage (billboard + shelves + video grid) | ✅ Complete |
+| 5-pillar subject pill navigation | ✅ Complete |
+| Subject pages on the shared dark shelf layout | ✅ Complete |
+| Healer profiles with contact funnels and offerings | ✅ Complete |
+| Courses / retreats / downloads / memberships | ✅ Complete |
+| Free resources shelf | ✅ Complete |
+| Query-level expiration filtering | ✅ Complete |
+| Books with affiliate deep links | ✅ Complete |
 | My Library with dynamic subject folders | ✅ Complete |
-| Admin dashboard | ✅ Complete |
+| Admin ingestion dashboard + duplicate guards | ✅ Complete |
 | URL parsing automation (YouTube + Amazon) | ✅ Complete |
-| Three-tier healer system (Superhero / Luminary / Local Hero) | ⬜ In progress |
-| is_famous → tier field migration | ⬜ In progress |
-| Emotion-to-subject mapping wired to search | ⬜ In progress |
+| Emotion-to-subject mapping wired to search | ⬜ Not started — the search bar is still an inert input |
 | Vercel production deployment | ⬜ Next |
 | Content library (target: 5,000 videos + 5,000 books) | ⬜ Ongoing |
 | Flutter native app | ⬜ Phase 2 |
 | IAM notification system | ⬜ Phase 2 |
 
 💡 Immediate Next Steps
-1. Wire "How are you feeling today?" search bar to emotion → subject mapping
-2. Implement Luminary tier (third healer category between Superhero and Local Hero)
-3. Deploy to Vercel (production)
-4. Begin content build — target 200 videos/week
+1. **Wire "How are you feeling today?" to emotion → subject mapping.** The input renders but has no handler — this is the one core promise of the product that is not yet built.
+2. Deploy to Vercel (production)
+3. Begin content build — target 200 videos/week
 
 Made with love in Tavira 💫
