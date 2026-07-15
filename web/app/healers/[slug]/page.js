@@ -218,12 +218,33 @@ export default async function HealerProfile({ params }) {
           &larr; Back to Spiritpedia
         </Link>
 
-        {/* Tier badge + name — bottom-left, clear of the centred dots. */}
+        {/* Tier badge + name + social — bottom-left, clear of the centred dots. */}
         <div className="absolute bottom-12 left-6 md:left-12 max-w-4xl">
           <TierBadge tier={healer.tier} />
           <h1 className="mt-4 text-5xl md:text-7xl font-bold text-white drop-shadow-lg">
             {healer.name}
           </h1>
+
+          {/* Social row — frosted-glass icon buttons sitting on the cinematic
+              hero, directly beneath the name. Hidden entirely when the healer
+              has no populated channels. */}
+          {socialLinks.length > 0 && (
+            <div className="flex items-center gap-3 mt-4 flex-wrap">
+              {socialLinks.map(({ key, label, url, icon: Icon }) => (
+                <a
+                  key={key}
+                  href={url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={label}
+                  title={label}
+                  className="w-10 h-10 rounded-full bg-white/20 hover:bg-white/40 backdrop-blur-sm transition-colors duration-200 flex items-center justify-center"
+                >
+                  <Icon />
+                </a>
+              ))}
+            </div>
+          )}
         </div>
       </HeroImageRotator>
 
@@ -234,39 +255,16 @@ export default async function HealerProfile({ params }) {
         </section>
       )}
 
-      {/* ── SECTION 3 · SOCIAL + CONTACT ─────────────────────────────────── */}
-      {(socialLinks.length > 0 || hasContact) && (
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto px-6 pb-12">
-          {/* LEFT — social links (hidden entirely when there are none). */}
-          {socialLinks.length > 0 && (
-            <section className="bg-[#111827] rounded-2xl p-6">
-              <h2 className="text-sm uppercase tracking-wider text-gray-400 mb-4">
-                Find {healer.name} Online
-              </h2>
-              <div className="flex flex-wrap items-center gap-3">
-                {socialLinks.map(({ key, label, url, icon: Icon }) => (
-                  <a
-                    key={key}
-                    href={url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label={label}
-                    title={label}
-                    className="w-12 h-12 rounded-full bg-white/10 hover:bg-violet-600 transition-colors flex items-center justify-center"
-                  >
-                    <Icon />
-                  </a>
-                ))}
-              </div>
-            </section>
-          )}
-
-          {/* RIGHT — contact funnel (only when contact details exist). */}
-          {hasContact && (
-            <section className="bg-[#111827] rounded-2xl p-6 flex flex-col gap-4">
-              <h2 className="text-sm uppercase tracking-wider text-gray-400">
-                Connect with {firstName}
-              </h2>
+      {/* ── SECTION 3 · CONTACT ──────────────────────────────────────────── */}
+      {/* The social links now live in the hero overlay; this section is the
+          full-width, page-centred contact funnel, shown only when the healer has
+          an email, phone, or booking link on file. */}
+      {hasContact && (
+        <div className="max-w-2xl mx-auto mb-12 px-6">
+          <section className="bg-[#111827] rounded-2xl p-6 shadow-xl flex flex-col gap-4">
+            <h2 className="text-sm uppercase tracking-wider text-gray-400">
+              Connect with {firstName}
+            </h2>
 
               {/* Availability pills — reuse the profile's established styling. */}
               <div className="flex flex-wrap items-center gap-3">
@@ -317,8 +315,7 @@ export default async function HealerProfile({ params }) {
                   Book with {firstName} &rarr;
                 </a>
               )}
-            </section>
-          )}
+          </section>
         </div>
       )}
 
