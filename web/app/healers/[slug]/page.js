@@ -261,60 +261,56 @@ export default async function HealerProfile({ params }) {
           an email, phone, or booking link on file. */}
       {hasContact && (
         <div className="max-w-2xl mx-auto mb-12 px-6">
-          <section className="bg-[#111827] rounded-2xl p-6 shadow-xl flex flex-col gap-4">
-            <h2 className="text-sm uppercase tracking-wider text-gray-400">
-              Connect with {firstName}
-            </h2>
+          <section className="bg-[#111827] rounded-2xl p-6 shadow-xl">
+            {/* Availability pills — centred across the card. */}
+            <div className="flex flex-wrap gap-2 justify-center mb-6">
+              {healer.city && (
+                <span className="bg-indigo-950/60 text-indigo-300 text-xs px-3 py-1 rounded-full font-medium">
+                  In Person ({healer.city})
+                </span>
+              )}
+              {healer.availability_type?.includes('Online') && (
+                <span className="bg-purple-950/60 text-purple-300 border border-purple-500/30 text-xs px-3 py-1 rounded-full font-medium">
+                  Online Session available
+                </span>
+              )}
+            </div>
 
-              {/* Availability pills — reuse the profile's established styling. */}
-              <div className="flex flex-wrap items-center gap-3">
-                {healer.city && (
-                  <span className="bg-indigo-950/60 text-indigo-300 text-xs px-3 py-1 rounded-full font-medium">
-                    In Person ({healer.city})
-                  </span>
+            {/* Email + phone — side-by-side on wider screens, stacked on mobile. */}
+            {(healer.contact_email || healer.contact_phone) && (
+              <div className="flex flex-col sm:flex-row items-center justify-center gap-6 mb-6 text-sm text-gray-300">
+                {healer.contact_email && (
+                  <a
+                    href={`mailto:${healer.contact_email}?subject=Inquiry via Spiritpedia`}
+                    className="flex items-center gap-2 font-medium transition-colors hover:text-emerald-300"
+                  >
+                    <MailIcon />
+                    <span className="truncate">{healer.contact_email}</span>
+                  </a>
                 )}
-                {healer.availability_type?.includes('Online') && (
-                  <span className="bg-purple-950/60 text-purple-300 border border-purple-500/30 text-xs px-3 py-1 rounded-full font-medium">
-                    Online Session available
-                  </span>
+                {healer.contact_phone && (
+                  <a
+                    href={`tel:${healer.contact_phone}`}
+                    className="flex items-center gap-2 font-medium transition-colors hover:text-emerald-300"
+                  >
+                    <PhoneIcon />
+                    <span>{healer.contact_phone}</span>
+                  </a>
                 )}
               </div>
+            )}
 
-              {/* Email + phone rows. */}
-              {(healer.contact_email || healer.contact_phone) && (
-                <div className="flex flex-col gap-2">
-                  {healer.contact_email && (
-                    <a
-                      href={`mailto:${healer.contact_email}?subject=Inquiry via Spiritpedia`}
-                      className="flex items-center gap-2 text-sm font-medium text-gray-200 transition-colors hover:text-emerald-300"
-                    >
-                      <MailIcon />
-                      <span className="truncate">{healer.contact_email}</span>
-                    </a>
-                  )}
-                  {healer.contact_phone && (
-                    <a
-                      href={`tel:${healer.contact_phone}`}
-                      className="flex items-center gap-2 text-sm font-medium text-gray-200 transition-colors hover:text-emerald-300"
-                    >
-                      <PhoneIcon />
-                      <span>{healer.contact_phone}</span>
-                    </a>
-                  )}
-                </div>
-              )}
-
-              {/* Booking button — full-width purple CTA. */}
-              {healer.booking_url && (
-                <a
-                  href={healer.booking_url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="mt-1 w-full text-center py-3 bg-violet-600 hover:bg-violet-500 text-white font-bold text-sm rounded-xl shadow-lg transition-all hover:scale-[1.01] active:scale-95"
-                >
-                  Book with {firstName} &rarr;
-                </a>
-              )}
+            {/* Booking button — full-width purple CTA. */}
+            {healer.booking_url && (
+              <a
+                href={healer.booking_url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full text-center py-3 bg-violet-600 hover:bg-violet-500 text-white font-bold text-sm rounded-xl shadow-lg transition-all hover:scale-[1.01] active:scale-95 block"
+              >
+                Book with {firstName} &rarr;
+              </a>
+            )}
           </section>
         </div>
       )}
