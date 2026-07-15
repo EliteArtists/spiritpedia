@@ -174,8 +174,12 @@ export default async function HomePage({ initialSubjectSlug }) {
             rows stretched the column (and the whole page) to ~48,000px wide. */}
         <main className="grid grid-cols-1 gap-14 py-14">
           <ContentShelf
-            title="Featured Healers"
-            subtitle="Superheroes"
+            title="Worldwide"
+            badge={
+              <span className="inline-block px-3 py-1 text-xs font-bold uppercase tracking-wider bg-[#fef08a] text-[#78350f] rounded-full mb-2 shadow-sm">
+                SUPERHERO
+              </span>
+            }
             items={superheroes}
             seeAllHref={seeAll}
             renderItem={renderHealer}
@@ -183,8 +187,12 @@ export default async function HomePage({ initialSubjectSlug }) {
           />
 
           <ContentShelf
-            title="Luminaries"
-            subtitle="Rising Voices"
+            title="Rising Voices"
+            badge={
+              <span className="inline-block px-3 py-1 text-xs font-bold uppercase tracking-wider bg-violet-600 text-white rounded-full mb-2 shadow-sm">
+                LUMINARY
+              </span>
+            }
             items={luminaries}
             seeAllHref={seeAll}
             renderItem={renderHealer}
@@ -231,8 +239,12 @@ export default async function HomePage({ initialSubjectSlug }) {
           />
 
           <ContentShelf
-            title="Local Heroes"
-            subtitle="Practitioners Near You"
+            title="Practitioners Near You"
+            badge={
+              <span className="inline-block px-3 py-1 text-xs font-bold uppercase tracking-wider bg-emerald-500 text-white rounded-full mb-2 shadow-sm">
+                LOCAL HERO
+              </span>
+            }
             items={localHeroes}
             seeAllHref={seeAll}
             renderItem={renderHealer}

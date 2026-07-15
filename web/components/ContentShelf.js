@@ -14,6 +14,7 @@ export default function ContentShelf({
   renderItem,
   itemWidthClass = 'w-[300px]',
   emptyHide = true,
+  badge,
 }) {
   const list = Array.isArray(items) ? items.filter(Boolean) : [];
 
@@ -24,7 +25,7 @@ export default function ContentShelf({
   // every card in the row — and the scroll track never actually scrolls.
   return (
     <section className="min-w-0">
-      <ShelfRow title={title} subtitle={subtitle} seeAllHref={seeAllHref} />
+      <ShelfRow title={title} subtitle={subtitle} seeAllHref={seeAllHref} badge={badge} />
 
       <div className="flex flex-row gap-5 overflow-x-auto scrollbar-hide snap-x snap-mandatory scroll-smooth pb-2">
         {list.map((item, index) => (

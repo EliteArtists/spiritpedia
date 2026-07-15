@@ -1,10 +1,15 @@
 // Shelf header — section title on the left, "See all" affordance on the right.
 // Split out from ContentShelf so the videos grid can share the identical heading
 // treatment without inheriting the horizontal scroll container.
-export default function ShelfRow({ title, subtitle, seeAllHref }) {
+//
+// `badge` is an optional node painted directly above the title — the tier shelves
+// use it to float a scaled amber/violet/emerald pill over their heading in place
+// of the plain-text `subtitle`.
+export default function ShelfRow({ title, subtitle, seeAllHref, badge }) {
   return (
     <div className="flex items-end justify-between gap-4 mb-4">
       <div>
+        {badge && <div>{badge}</div>}
         {subtitle && (
           <p className="text-sm text-gray-400 uppercase tracking-wider mb-1">{subtitle}</p>
         )}
