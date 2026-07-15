@@ -1,19 +1,23 @@
 import { supabase } from '@/utils/supabase';
-import BookCard from '@/components/BookCard';
-import VideoPlayer from '@/components/VideoPlayer';
 import Link from 'next/link';
+import BookCard from '@/components/BookCard';
+import ContentShelf from '@/components/ContentShelf';
+import FreeResourceCard from '@/components/FreeResourceCard';
+import HeroImageRotator from '@/components/HeroImageRotator';
+import OfferingCard from '@/components/OfferingCard';
+import VideoPlayer from '@/components/VideoPlayer';
 
-// Lightweight inline SVG icons (no extra dependency) — sized via the parent's
-// font color so they inherit the link button styling cleanly.
+// Social-link glyphs. Sized via className (w-5 h-5) and drawn in currentColor so
+// each inherits the button's white text; no fixed pixel dimensions to fight the
+// Tailwind sizing the brief specifies.
 const iconProps = {
-  width: 22,
-  height: 22,
   viewBox: '0 0 24 24',
   fill: 'none',
   stroke: 'currentColor',
   strokeWidth: 2,
   strokeLinecap: 'round',
   strokeLinejoin: 'round',
+  className: 'w-5 h-5 text-white',
 };
 
 function GlobeIcon() {
@@ -69,161 +73,65 @@ function TikTokIcon() {
   );
 }
 
-// Compact download glyph for the "Get Download" offering CTA — sized to sit
-// inline with the button label rather than the larger social icon set.
-function DownloadIcon() {
+// Envelope + handset glyphs for the contact rows — smaller than the social set so
+// they read as an inline prefix to the address/number text.
+function MailIcon() {
   return (
     <svg
-      width={16}
-      height={16}
       viewBox="0 0 24 24"
       fill="none"
       stroke="currentColor"
-      strokeWidth={2.5}
+      strokeWidth={2}
       strokeLinecap="round"
       strokeLinejoin="round"
       aria-hidden="true"
+      className="w-4 h-4 shrink-0"
     >
-      <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
-      <polyline points="7 10 12 15 17 10" />
-      <line x1="12" y1="15" x2="12" y2="3" />
+      <rect x="2" y="4" width="20" height="16" rx="2" />
+      <path d="m22 7-10 6L2 7" />
     </svg>
   );
 }
 
-// The offering card CTA reacts to product_type — courses enrol, downloads grab a
-// file, memberships join, retreats book. Card layout stays identical across all.
-function OfferingCta({ productType }) {
-  if (productType === 'download') {
-    return (
-      <>
-        <DownloadIcon /> Get Download
-      </>
-    );
-  }
-  if (productType === 'membership') return <>Join Now &rarr;</>;
-  if (productType === 'retreat') return <>Book Place &rarr;</>;
-  return <>Enrol Now &rarr;</>;
-}
-
-// Free resources are always no-cost — downloads keep the grab-a-file glyph,
-// everything else invites the visitor to access it.
-function FreeResourceCta({ resourceType }) {
-  if (resourceType === 'download') {
-    return (
-      <>
-        <DownloadIcon /> Get Download
-      </>
-    );
-  }
-  return <>Access Free &rarr;</>;
-}
-
-// SECTION SHELF — a labelled horizontal swipe carousel. Section headers reuse
-// the page's established black/uppercase/tight motif; the scroll container keeps
-// the exact snap + spacing behaviour used across the profile.
-function Shelf({ title, children }) {
+function PhoneIcon() {
   return (
-    <section>
-      <h2 className="text-3xl md:text-4xl font-black uppercase tracking-tighter text-slate-900 mb-8">
-        {title}
-      </h2>
-      <div className="flex flex-row overflow-x-auto gap-6 pb-4 scroll-smooth snap-x snap-mandatory">
-        {children}
-      </div>
-    </section>
+    <svg
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth={2}
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      aria-hidden="true"
+      className="w-4 h-4 shrink-0"
+    >
+      <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z" />
+    </svg>
   );
 }
 
-// Offering card — the identical markup used for the courses/downloads/
-// memberships/retreats catalogue. Only the CTA copy shifts (via OfferingCta),
-// so the same card serves every product_type without a visual rewrite.
-function OfferingCard({ item }) {
+// Tier badge — matched to the homepage/billboard motif. Anything that is not a
+// known superhero/luminary tier falls back to Local Hero, so no practitioner
+// silently loses their badge mid-backfill.
+function TierBadge({ tier }) {
+  if (tier === 'superhero') {
+    return (
+      <span className="inline-block rounded-full bg-[#fef08a] px-3 py-1 text-[11px] font-bold uppercase tracking-wider text-[#78350f] shadow-sm">
+        Superhero
+      </span>
+    );
+  }
+  if (tier === 'luminary') {
+    return (
+      <span className="inline-block rounded-full bg-violet-600 px-3 py-1 text-[11px] font-bold uppercase tracking-wider text-white shadow-sm">
+        Luminary
+      </span>
+    );
+  }
   return (
-    <a
-      href={item.course_url}
-      target="_blank"
-      rel="noopener noreferrer"
-      className="group shrink-0 snap-start w-[300px] flex flex-col rounded-2xl overflow-hidden bg-slate-50 border border-slate-200 shadow-lg hover:shadow-2xl transition-all hover:-translate-y-1"
-    >
-      {/* Cover image + price badge */}
-      <div className="relative aspect-[16/9] w-full overflow-hidden bg-slate-200">
-        {item.image_url ? (
-          <img
-            src={item.image_url}
-            alt={item.title}
-            className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
-          />
-        ) : (
-          <div className="w-full h-full flex items-center justify-center text-5xl">🎓</div>
-        )}
-        {item.price && (
-          <span className="absolute top-3 right-3 bg-slate-900 text-white text-xs font-black uppercase tracking-wider px-3 py-1.5 rounded-full shadow-lg">
-            {item.price}
-          </span>
-        )}
-      </div>
-
-      {/* Title + description snippet + CTA */}
-      <div className="flex flex-col flex-1 p-5">
-        <h3 className="font-black text-lg text-slate-900 tracking-tight leading-tight mb-2 line-clamp-2">
-          {item.title}
-        </h3>
-        {item.description && (
-          <p className="text-sm text-slate-500 leading-relaxed line-clamp-3 flex-1">
-            {item.description}
-          </p>
-        )}
-        <span className="mt-4 inline-flex items-center gap-1 text-sm font-bold text-purple-600 group-hover:text-purple-500 uppercase tracking-wider">
-          <OfferingCta productType={item.product_type} />
-        </span>
-      </div>
-    </a>
-  );
-}
-
-// Free-resource card — mirrors the offering card's exact dimensions, palette and
-// hover language; the slate price badge is repurposed into a "Free" badge and
-// the link targets resource_url.
-function FreeResourceCard({ item }) {
-  return (
-    <a
-      href={item.resource_url}
-      target="_blank"
-      rel="noopener noreferrer"
-      className="group shrink-0 snap-start w-[300px] flex flex-col rounded-2xl overflow-hidden bg-slate-50 border border-slate-200 shadow-lg hover:shadow-2xl transition-all hover:-translate-y-1"
-    >
-      {/* Cover image + free badge */}
-      <div className="relative aspect-[16/9] w-full overflow-hidden bg-slate-200">
-        {item.image_url ? (
-          <img
-            src={item.image_url}
-            alt={item.title}
-            className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
-          />
-        ) : (
-          <div className="w-full h-full flex items-center justify-center text-5xl">✨</div>
-        )}
-        <span className="absolute top-3 right-3 bg-slate-900 text-white text-xs font-black uppercase tracking-wider px-3 py-1.5 rounded-full shadow-lg">
-          Free
-        </span>
-      </div>
-
-      {/* Title + description snippet + CTA */}
-      <div className="flex flex-col flex-1 p-5">
-        <h3 className="font-black text-lg text-slate-900 tracking-tight leading-tight mb-2 line-clamp-2">
-          {item.title}
-        </h3>
-        {item.description && (
-          <p className="text-sm text-slate-500 leading-relaxed line-clamp-3 flex-1">
-            {item.description}
-          </p>
-        )}
-        <span className="mt-4 inline-flex items-center gap-1 text-sm font-bold text-purple-600 group-hover:text-purple-500 uppercase tracking-wider">
-          <FreeResourceCta resourceType={item.resource_type} />
-        </span>
-      </div>
-    </a>
+    <span className="inline-block rounded-full bg-emerald-500 px-3 py-1 text-[11px] font-bold uppercase tracking-wider text-white shadow-sm">
+      Local Hero
+    </span>
   );
 }
 
@@ -232,22 +140,27 @@ export default async function HealerProfile({ params }) {
 
   const { data: healer, error } = await supabase.from('healers').select('*').eq('healer_slug', slug).single();
 
-  if (error || !healer) return <div className="p-20 text-center font-black uppercase tracking-widest text-gray-200">Healer not found.</div>;
+  if (error || !healer) {
+    return (
+      <div className="min-h-screen bg-[#0a0f1d] flex items-center justify-center p-20 text-center font-bold uppercase tracking-widest text-gray-300">
+        Healer not found.
+      </div>
+    );
+  }
 
-  // Books and videos are now related to a healer via the relational `healer_slug`
-  // column written by the admin "Link Healer / Author" system.
+  // Books and videos relate to a healer via the relational `healer_slug` column
+  // written by the admin "Link Healer / Author" system.
   const { data: books } = await supabase.from('books').select('*').eq('healer_slug', slug);
   const { data: videos } = await supabase.from('videos').select('*').eq('healer_slug', slug);
 
-  // EXPIRATION WINDOW — offerings are only surfaced while live: the row must be
+  // EXPIRATION WINDOW — offerings surface only while live: the row must be
   // is_active, and either evergreen (end_date IS NULL) or not yet past its end
-  // date (end_date >= today). today is a YYYY-MM-DD string to match the DATE
-  // column format.
+  // date. today is a YYYY-MM-DD string to match the DATE column format.
   const today = new Date().toISOString().slice(0, 10);
   const liveWindow = `end_date.is.null,end_date.gte.${today}`;
 
-  // Courses relate to a healer through the relational bigint `healer_id` FK
-  // (not the slug), so key the lookup off the resolved healer record's id.
+  // Courses relate to a healer through the relational bigint `healer_id` FK (not
+  // the slug), so key the lookup off the resolved healer record's id.
   const { data: courses } = await supabase
     .from('courses')
     .select('*')
@@ -255,8 +168,8 @@ export default async function HealerProfile({ params }) {
     .eq('is_active', true)
     .or(liveWindow);
 
-  // Free resources are the newest offering table, also keyed off the bigint
-  // healer_id. A missing/empty table simply yields null → the section hides.
+  // Free resources are also keyed off the bigint healer_id and carry the same
+  // live-window filter. A missing/empty table yields null → the shelf hides.
   const { data: freeResources } = await supabase
     .from('free_resources')
     .select('*')
@@ -264,9 +177,8 @@ export default async function HealerProfile({ params }) {
     .eq('is_active', true)
     .or(liveWindow);
 
-  // The single `courses` table stores every paid offering, distinguished by
-  // product_type. Split it into its four labelled shelves. Legacy rows predate
-  // the product_type column, so an unset value is treated as a course (the
+  // The single `courses` table stores every paid offering, split by product_type.
+  // Legacy rows predate the column, so an unset value is treated as a course (the
   // admin default) rather than being silently dropped.
   const offerings = Array.isArray(courses) ? courses : [];
   const courseOfferings = offerings.filter((c) => !c.product_type || c.product_type === 'course');
@@ -274,11 +186,13 @@ export default async function HealerProfile({ params }) {
   const downloadOfferings = offerings.filter((c) => c.product_type === 'download');
   const membershipOfferings = offerings.filter((c) => c.product_type === 'membership');
 
-  // Up to 3 portraits for the hero gallery.
-  const portraits = Array.isArray(healer.image_urls) ? healer.image_urls.filter(Boolean) : [];
+  // Up to 3 portraits feed the crossfade hero rotator.
+  const portraits = Array.isArray(healer.image_urls) ? healer.image_urls.filter(Boolean).slice(0, 3) : [];
 
-  // SOCIAL + WEB LINKS — only entries with a populated column are kept, so an
-  // icon button renders solely for channels the healer actually filled in.
+  const firstName = healer.name?.split(' ')[0] || healer.name;
+
+  // SOCIAL + WEB LINKS — only entries with a populated column survive, so an icon
+  // button renders solely for channels the healer actually filled in.
   const socialLinks = [
     { key: 'website', label: 'Website', url: healer.website_url, icon: GlobeIcon },
     { key: 'youtube', label: 'YouTube', url: healer.youtube_url, icon: YoutubeIcon },
@@ -288,88 +202,48 @@ export default async function HealerProfile({ params }) {
     { key: 'tiktok', label: 'TikTok', url: healer.tiktok_url, icon: TikTokIcon },
   ].filter((link) => link.url);
 
+  // The contact funnel is the Local Hero directory feature — it only appears when
+  // the healer actually has an email, phone, or booking link on file.
+  const hasContact = Boolean(healer.contact_email || healer.contact_phone || healer.booking_url);
+
   return (
-    <main className="min-h-screen bg-white">
-      {/* PRESERVED GRADIENT CANVAS — do not alter background fade styles */}
-      <div className="w-full p-12 md:p-20 animate-gradient-slow text-white"
-           style={{ background: 'linear-gradient(135deg, #0a2a66, #3f91ec, #a4c3ec, #0a2a66)', backgroundSize: '400% 400%' }}>
-        <Link href="/" className="text-white/40 hover:text-white mb-12 inline-block uppercase text-[10px] font-black tracking-[0.3em]">&larr; Back to Spiritpedia</Link>
+    <main className="min-h-screen bg-[#0a0f1d] text-white font-sans">
+      {/* ── SECTION 1 · CINEMATIC CROSSFADE HERO ─────────────────────────── */}
+      <HeroImageRotator images={portraits} alt={healer.name}>
+        {/* Back link — top-left, above the gradient. */}
+        <Link
+          href="/"
+          className="absolute top-6 left-6 z-10 text-sm text-white/70 transition-colors hover:text-white"
+        >
+          &larr; Back to Spiritpedia
+        </Link>
 
-        {/* HERO GRID: text left, image gallery right */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-          {/* LEFT: name, badge, bio */}
-          <div>
-            <h1 className="text-7xl font-black tracking-tighter mb-4 uppercase italic leading-none">{healer.name}</h1>
+        {/* Tier badge + name — bottom-left, clear of the centred dots. */}
+        <div className="absolute bottom-12 left-6 md:left-12 max-w-4xl">
+          <TierBadge tier={healer.tier} />
+          <h1 className="mt-4 text-5xl md:text-7xl font-bold text-white drop-shadow-lg">
+            {healer.name}
+          </h1>
+        </div>
+      </HeroImageRotator>
 
-            {/* Primary tier badge — symmetry with the homepage badge motif */}
-            <div className="mb-6">
-              {healer.tier === 'superhero' ? (
-                <span className="bg-[#FEF08A] text-amber-950 font-bold tracking-wider text-[11px] uppercase px-2.5 py-1 rounded-md shadow-sm">
-                  SUPERHERO
-                </span>
-              ) : healer.tier === 'luminary' ? (
-                <span className="bg-violet-600 text-white font-bold text-[11px] tracking-wider uppercase px-2.5 py-1 rounded-md shadow-sm">
-                  LUMINARY
-                </span>
-              ) : (
-                <span className="bg-emerald-500 text-white font-bold tracking-wider text-[11px] uppercase px-2.5 py-1 rounded-md shadow-sm">
-                  LOCAL HERO
-                </span>
-              )}
-            </div>
+      {/* ── SECTION 2 · BIO ──────────────────────────────────────────────── */}
+      {healer.bio && (
+        <section className="max-w-4xl mx-auto py-12 px-6">
+          <p className="text-lg leading-relaxed text-gray-300 whitespace-pre-line">{healer.bio}</p>
+        </section>
+      )}
 
-            <p className="text-xl opacity-90 max-w-2xl font-light leading-relaxed">{healer.bio}</p>
-
-            {/* BOOKING ENQUIRIES / CONVERSION TILE — directly below the bio */}
-            {(healer.contact_email || healer.contact_phone || healer.booking_url) && (
-              <div className="mt-8 p-6 rounded-2xl bg-slate-900/40 border border-white/5 backdrop-blur-sm shadow-xl flex flex-col gap-4">
-                {/* Integrated availability pills (replaces the heading) */}
-                <div className="flex flex-wrap items-center gap-3">
-                  <span className="bg-indigo-950/60 text-indigo-300 border border-transparent text-xs px-3 py-1 rounded-full font-medium">
-                    In Person ({healer.city})
-                  </span>
-                  {healer.availability_type?.includes('Online') && (
-                    <span className="bg-purple-950/60 text-purple-300 border border-purple-500/30 text-xs px-3 py-1 rounded-full font-medium">
-                      Online Session available
-                    </span>
-                  )}
-                </div>
-
-                {healer.booking_url && (
-                  <a
-                    href={healer.booking_url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="w-full text-center py-3 bg-purple-600 hover:bg-purple-500 text-white font-bold text-sm rounded-xl shadow-lg transition-transform hover:scale-[1.01] active:scale-95 cursor-pointer block"
-                  >
-                    Connect with {healer.name.split(' ')[0]}
-                  </a>
-                )}
-
-                <div className="flex justify-center text-center mx-auto w-full gap-6">
-                  {healer.contact_email && (
-                    <a
-                      href={`mailto:${healer.contact_email}?subject=Inquiry via Spiritpedia`}
-                      className="text-sm font-semibold text-white hover:text-emerald-300 underline underline-offset-4 transition-colors"
-                    >
-                      ✉️ {healer.contact_email}
-                    </a>
-                  )}
-                  {healer.contact_phone && (
-                    <a
-                      href={`tel:${healer.contact_phone}`}
-                      className="text-sm font-semibold text-white hover:text-emerald-300 underline underline-offset-4 transition-colors"
-                    >
-                      📞 {healer.contact_phone}
-                    </a>
-                  )}
-                </div>
-              </div>
-            )}
-
-            {/* SOCIAL + WEB LINKS ROW — hidden entirely when no channels exist */}
-            {socialLinks.length > 0 && (
-              <div className="mt-8 flex flex-wrap items-center gap-3">
+      {/* ── SECTION 3 · SOCIAL + CONTACT ─────────────────────────────────── */}
+      {(socialLinks.length > 0 || hasContact) && (
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto px-6 pb-12">
+          {/* LEFT — social links (hidden entirely when there are none). */}
+          {socialLinks.length > 0 && (
+            <section className="bg-[#111827] rounded-2xl p-6">
+              <h2 className="text-sm uppercase tracking-wider text-gray-400 mb-4">
+                Find {healer.name} Online
+              </h2>
+              <div className="flex flex-wrap items-center gap-3">
                 {socialLinks.map(({ key, label, url, icon: Icon }) => (
                   <a
                     key={key}
@@ -378,109 +252,139 @@ export default async function HealerProfile({ params }) {
                     rel="noopener noreferrer"
                     aria-label={label}
                     title={label}
-                    className="flex items-center justify-center w-11 h-11 rounded-full bg-white/10 hover:bg-white/20 border border-white/10 text-white transition-transform hover:scale-110 active:scale-95"
+                    className="w-12 h-12 rounded-full bg-white/10 hover:bg-violet-600 transition-colors flex items-center justify-center"
                   >
                     <Icon />
                   </a>
                 ))}
               </div>
-            )}
-          </div>
+            </section>
+          )}
 
-          {/* RIGHT: multi-image portrait gallery (balanced aspect-ratio frames) */}
-          <div className="grid grid-cols-2 gap-4">
-            {portraits.length > 0 ? (
-              portraits.slice(0, 3).map((src, i) => (
-                <img
-                  key={i}
-                  src={src}
-                  alt={`${healer.name} portrait ${i + 1}`}
-                  className={`w-full object-cover rounded-2xl shadow-2xl ${i === 0 ? 'col-span-2 aspect-[16/10]' : 'aspect-square'}`}
-                />
-              ))
-            ) : (
-              <img
-                src="https://placehold.co/600x400?text=Spiritpedia"
-                alt={healer.name}
-                className="col-span-2 w-full aspect-[16/10] object-cover rounded-2xl shadow-2xl"
-              />
-            )}
-          </div>
+          {/* RIGHT — contact funnel (only when contact details exist). */}
+          {hasContact && (
+            <section className="bg-[#111827] rounded-2xl p-6 flex flex-col gap-4">
+              <h2 className="text-sm uppercase tracking-wider text-gray-400">
+                Connect with {firstName}
+              </h2>
+
+              {/* Availability pills — reuse the profile's established styling. */}
+              <div className="flex flex-wrap items-center gap-3">
+                {healer.city && (
+                  <span className="bg-indigo-950/60 text-indigo-300 text-xs px-3 py-1 rounded-full font-medium">
+                    In Person ({healer.city})
+                  </span>
+                )}
+                {healer.availability_type?.includes('Online') && (
+                  <span className="bg-purple-950/60 text-purple-300 border border-purple-500/30 text-xs px-3 py-1 rounded-full font-medium">
+                    Online Session available
+                  </span>
+                )}
+              </div>
+
+              {/* Email + phone rows. */}
+              {(healer.contact_email || healer.contact_phone) && (
+                <div className="flex flex-col gap-2">
+                  {healer.contact_email && (
+                    <a
+                      href={`mailto:${healer.contact_email}?subject=Inquiry via Spiritpedia`}
+                      className="flex items-center gap-2 text-sm font-medium text-gray-200 transition-colors hover:text-emerald-300"
+                    >
+                      <MailIcon />
+                      <span className="truncate">{healer.contact_email}</span>
+                    </a>
+                  )}
+                  {healer.contact_phone && (
+                    <a
+                      href={`tel:${healer.contact_phone}`}
+                      className="flex items-center gap-2 text-sm font-medium text-gray-200 transition-colors hover:text-emerald-300"
+                    >
+                      <PhoneIcon />
+                      <span>{healer.contact_phone}</span>
+                    </a>
+                  )}
+                </div>
+              )}
+
+              {/* Booking button — full-width purple CTA. */}
+              {healer.booking_url && (
+                <a
+                  href={healer.booking_url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-1 w-full text-center py-3 bg-violet-600 hover:bg-violet-500 text-white font-bold text-sm rounded-xl shadow-lg transition-all hover:scale-[1.01] active:scale-95"
+                >
+                  Book with {firstName} &rarr;
+                </a>
+              )}
+            </section>
+          )}
         </div>
-      </div>
+      )}
 
-      <div className="max-w-7xl mx-auto p-8 md:p-20 space-y-32">
-        {/* Each shelf renders only when it holds content — zero-entry categories
-            drop out entirely, leaving no empty rows or orphaned headers. Order is
-            fixed: Videos → Books → Courses → Retreats → Downloads → Memberships →
-            Free Resources. */}
+      {/* ── SECTION 4 · CONTENT SHELVES ──────────────────────────────────── */}
+      {/* grid-cols-1 is load-bearing (same as the homepage/subject page): an
+          implicit auto column would size to each shelf's un-wrapped max-content
+          width and stop the tracks from scrolling. Each ContentShelf hides itself
+          when empty, so zero-content categories leave no orphaned headers. */}
+      <div className="mx-auto max-w-7xl px-6 pb-20 grid grid-cols-1 gap-14">
+        {/* 4a · Videos */}
+        <ContentShelf
+          title="Videos"
+          subtitle="Teachings & Talks"
+          items={videos}
+          renderItem={(video) => <VideoPlayer video={video} variant="dark" />}
+          itemWidthClass="w-[320px]"
+        />
 
-        {/* 1. VIDEOS */}
-        {videos?.length > 0 && (
-          <Shelf title="Videos">
-            {videos.map((video) => (
-              <div key={video.id} className="shrink-0 snap-start w-[280px]">
-                <VideoPlayer video={video} />
-              </div>
-            ))}
-          </Shelf>
-        )}
+        {/* 4b · Books */}
+        <ContentShelf
+          title="Books & Literature"
+          subtitle="The Curated Archive"
+          items={books}
+          renderItem={(book) => <BookCard book={book} />}
+          itemWidthClass="w-[200px]"
+        />
 
-        {/* 2. BOOKS */}
-        {books?.length > 0 && (
-          <Shelf title="Books">
-            {books.map((book) => (
-              <div key={book.id} className="shrink-0 snap-start w-[240px]">
-                <BookCard book={book} variant="light" />
-              </div>
-            ))}
-          </Shelf>
-        )}
+        {/* 4c · Free Resources */}
+        <ContentShelf
+          title="Free Resources"
+          subtitle="No Cost, No Catch"
+          items={freeResources}
+          renderItem={(item) => <FreeResourceCard item={item} />}
+        />
 
-        {/* 3. COURSES & PROGRAMMES (product_type = 'course') */}
-        {courseOfferings.length > 0 && (
-          <Shelf title="Courses & Programmes">
-            {courseOfferings.map((course) => (
-              <OfferingCard key={course.id} item={course} />
-            ))}
-          </Shelf>
-        )}
+        {/* 4d · Courses (product_type = 'course') */}
+        <ContentShelf
+          title="Courses & Programmes"
+          subtitle="Go Deeper"
+          items={courseOfferings}
+          renderItem={(item) => <OfferingCard item={item} />}
+        />
 
-        {/* 4. RETREATS (product_type = 'retreat') */}
-        {retreatOfferings.length > 0 && (
-          <Shelf title="Retreats">
-            {retreatOfferings.map((retreat) => (
-              <OfferingCard key={retreat.id} item={retreat} />
-            ))}
-          </Shelf>
-        )}
+        {/* 4e · Retreats (product_type = 'retreat') */}
+        <ContentShelf
+          title="Retreats & Events"
+          subtitle="Live Experiences"
+          items={retreatOfferings}
+          renderItem={(item) => <OfferingCard item={item} />}
+        />
 
-        {/* 5. DOWNLOADS (product_type = 'download') */}
-        {downloadOfferings.length > 0 && (
-          <Shelf title="Downloads">
-            {downloadOfferings.map((download) => (
-              <OfferingCard key={download.id} item={download} />
-            ))}
-          </Shelf>
-        )}
+        {/* 4f · Downloads (product_type = 'download') */}
+        <ContentShelf
+          title="Downloads & Audio"
+          subtitle="Take It With You"
+          items={downloadOfferings}
+          renderItem={(item) => <OfferingCard item={item} />}
+        />
 
-        {/* 6. MEMBERSHIPS (product_type = 'membership') */}
-        {membershipOfferings.length > 0 && (
-          <Shelf title="Memberships">
-            {membershipOfferings.map((membership) => (
-              <OfferingCard key={membership.id} item={membership} />
-            ))}
-          </Shelf>
-        )}
-
-        {/* 7. FREE RESOURCES (public.free_resources, matched on healer_id) */}
-        {freeResources?.length > 0 && (
-          <Shelf title="Free Resources">
-            {freeResources.map((resource) => (
-              <FreeResourceCard key={resource.id} item={resource} />
-            ))}
-          </Shelf>
-        )}
+        {/* 4g · Memberships (product_type = 'membership') */}
+        <ContentShelf
+          title="Memberships"
+          subtitle="Ongoing Journey"
+          items={membershipOfferings}
+          renderItem={(item) => <OfferingCard item={item} />}
+        />
       </div>
     </main>
   );
