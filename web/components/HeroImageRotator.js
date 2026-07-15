@@ -46,7 +46,10 @@ export default function HeroImageRotator({ images = [], alt = '', children }) {
             className={`absolute inset-0 h-full w-full object-cover transition-opacity ease-in-out ${
               i === index ? 'opacity-100' : 'opacity-0'
             }`}
-            style={{ transitionDuration: `${FADE_MS}ms` }}
+            // object-position center-top (20%) keeps heads and faces in frame:
+            // portraits are cropped from the top fifth rather than dead centre,
+            // so a subject's head is never sliced off across responsive widths.
+            style={{ objectPosition: 'center 20%', transitionDuration: `${FADE_MS}ms` }}
           />
         ))
       ) : (
