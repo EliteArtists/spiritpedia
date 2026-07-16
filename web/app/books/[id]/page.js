@@ -121,7 +121,7 @@ export default async function BookDetail({ params }) {
                 href={book.goodreads_url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-[#372213] hover:bg-[#4a2d1a] text-[#F4F1EA] font-bold text-sm rounded-xl border border-[#372213] py-3 px-6 text-center block w-full"
+                className="bg-[#F4F1EA] hover:bg-[#e8e4dc] text-[#372213] font-bold text-sm rounded-xl border border-[#372213] py-3 px-6 text-center block w-full"
               >
                 View on Goodreads
               </a>
@@ -131,7 +131,7 @@ export default async function BookDetail({ params }) {
                 href={book.worldofbooks_url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-[#111827] hover:bg-[#1a2234] text-white font-bold text-sm rounded-xl border border-white/10 hover:border-white/30 py-3 px-6 text-center block w-full"
+                className="bg-[#2d6a4f] hover:bg-[#235c42] text-white font-bold text-sm rounded-xl border border-white/10 hover:border-white/30 py-3 px-6 text-center block w-full"
               >
                 Find at World of Books
               </a>
