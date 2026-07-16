@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect, Suspense } from 'react';
+import { useState, useEffect, useRef, Suspense } from 'react';
 import { useSearchParams } from 'next/navigation';
 import { supabase } from '@/utils/supabase';
 
@@ -133,6 +133,22 @@ function AdminDashboard() {
   const [publisherFoundedYear, setPublisherFoundedYear] = useState('');
   const [publisherHealerIds, setPublisherHealerIds] = useState([]); // linked healer ids
   const [publisherHealerSearch, setPublisherHealerSearch] = useState(''); // dropdown filter
+  // EDIT PUBLISHER — a second workspace below the create form for updating an
+  // existing house and managing its healer junction links.
+  const [publisherList, setPublisherList] = useState([]); // dropdown options
+  const [selectedPublisherId, setSelectedPublisherId] = useState('');
+  const [editName, setEditName] = useState('');
+  const [editSlug, setEditSlug] = useState('');
+  const [editDescription, setEditDescription] = useState('');
+  const [editWebsite, setEditWebsite] = useState('');
+  const [editLogoUrl, setEditLogoUrl] = useState('');
+  const [editFoundedYear, setEditFoundedYear] = useState('');
+  const [editSubjectSlugs, setEditSubjectSlugs] = useState([]); // pre-checked subject tags
+  const [linkedAuthors, setLinkedAuthors] = useState([]); // [{ healer_id, name }] currently linked
+  const [editNewHealerIds, setEditNewHealerIds] = useState([]); // authors staged to add
+  const [editHealerSearch, setEditHealerSearch] = useState('');
+  const [editSaving, setEditSaving] = useState(false);
+  const [editToast, setEditToast] = useState(null); // self-fading edit-section feedback
   const [saving, setSaving] = useState(false);
   const [toast, setToast] = useState(null); // { type: 'success' | 'error', message }
 
@@ -181,6 +197,29 @@ function AdminDashboard() {
     };
   }, []);
 
+  // PUBLISHER DROPDOWN — load the existing houses for the edit selector, sorted
+  // by name. Bumping `publisherReload` after a save refreshes this list.
+  const [publisherReload, setPublisherReload] = useState(0);
+  useEffect(() => {
+    let active = true;
+    async function loadPublishers() {
+      const { data, error } = await supabase
+        .from('publishers')
+        .select('id, name, slug')
+        .order('name', { ascending: true });
+      if (!active) return;
+      if (error) {
+        console.error('Failed to load publishers:', error);
+        return;
+      }
+      setPublisherList(data || []);
+    }
+    loadPublishers();
+    return () => {
+      active = false;
+    };
+  }, [publisherReload]);
+
   // SECURITY GUARD — render gate after hooks so hook order stays stable.
   if (secret !== 'spiritpass') {
     return <AccessDenied />;
@@ -205,6 +244,145 @@ function AdminDashboard() {
     setPublisherHealerIds((prev) =>
       prev.includes(id) ? prev.filter((x) => x !== id) : [...prev, id]
     );
+  }
+
+  // --- EDIT PUBLISHER handlers --------------------------------------------
+
+  // Brief, self-fading feedback for the edit workspace (pill removal / save).
+  const editToastTimer = useRef(null);
+  function flashEditToast(message, type = 'success') {
+    setEditToast({ type, message });
+    clearTimeout(editToastTimer.current);
+    editToastTimer.current = setTimeout(() => setEditToast(null), 2500);
+  }
+
+  // Fetch the current junction links for a publisher, embedding each healer's
+  // name (and id) for the "currently linked authors" pills.
+  async function fetchLinkedAuthors(publisherId) {
+    const { data } = await supabase
+      .from('publisher_healers')
+      .select('healer_id, healers (name)')
+      .eq('publisher_id', publisherId);
+    return (data || []).map((row) => ({
+      healer_id: row.healer_id,
+      name: row.healers?.name || `#${row.healer_id}`,
+    }));
+  }
+
+  // Selecting a publisher seeds every edit field in one shot: the full row and
+  // its linked authors are fetched in parallel.
+  async function handleSelectPublisher(id) {
+    setSelectedPublisherId(id);
+    setEditToast(null);
+    setEditNewHealerIds([]);
+    setEditHealerSearch('');
+    if (!id) {
+      setLinkedAuthors([]);
+      return;
+    }
+    const [{ data: pub }, authors] = await Promise.all([
+      supabase.from('publishers').select('*').eq('id', id).single(),
+      fetchLinkedAuthors(id),
+    ]);
+    if (pub) {
+      setEditName(pub.name || '');
+      setEditSlug(pub.slug || '');
+      setEditDescription(pub.description || '');
+      setEditWebsite(pub.website_url || '');
+      setEditLogoUrl(pub.logo_url || '');
+      setEditFoundedYear(pub.founded_year != null ? String(pub.founded_year) : '');
+      setEditSubjectSlugs(Array.isArray(pub.subject_slugs) ? pub.subject_slugs : []);
+    }
+    setLinkedAuthors(authors);
+  }
+
+  function handleEditName(value) {
+    setEditName(value);
+    setEditSlug(slugify(value));
+  }
+
+  function toggleEditSubject(slug) {
+    setEditSubjectSlugs((prev) =>
+      prev.includes(slug) ? prev.filter((s) => s !== slug) : [...prev, slug]
+    );
+  }
+
+  function toggleEditNewHealer(id) {
+    setEditNewHealerIds((prev) =>
+      prev.includes(id) ? prev.filter((x) => x !== id) : [...prev, id]
+    );
+  }
+
+  // Remove a currently-linked author: delete the junction row immediately, then
+  // strip the pill from local state so the UI updates without a refetch.
+  async function handleRemoveAuthor(healerId) {
+    const { error } = await supabase
+      .from('publisher_healers')
+      .delete()
+      .eq('publisher_id', selectedPublisherId)
+      .eq('healer_id', healerId);
+    if (error) {
+      flashEditToast(`Remove failed: ${error.message}`, 'error');
+      return;
+    }
+    setLinkedAuthors((prev) => prev.filter((a) => a.healer_id !== healerId));
+    flashEditToast('Author unlinked.');
+  }
+
+  async function handleSaveEdit() {
+    if (!selectedPublisherId) return;
+    if (!editName.trim() || !editSlug.trim()) {
+      flashEditToast('Name and slug are both required.', 'error');
+      return;
+    }
+    const site = editWebsite.trim();
+    if (site && !/^https?:\/\/.+\..+/i.test(site)) {
+      flashEditToast('Website URL must be a valid http(s) address.', 'error');
+      return;
+    }
+    const foundedNum = editFoundedYear.trim() ? parseInt(editFoundedYear.trim(), 10) : null;
+
+    setEditSaving(true);
+    try {
+      // 1. Update the publisher record.
+      const { error: updErr } = await supabase
+        .from('publishers')
+        .update({
+          name: editName.trim(),
+          slug: editSlug.trim(),
+          description: editDescription.trim() || null,
+          website_url: site || null,
+          logo_url: editLogoUrl.trim() || null,
+          founded_year: Number.isFinite(foundedNum) ? foundedNum : null,
+          subject_slugs: editSubjectSlugs,
+        })
+        .eq('id', selectedPublisherId);
+      if (updErr) throw updErr;
+
+      // 2. Bulk-insert any newly staged authors.
+      if (editNewHealerIds.length > 0) {
+        const rows = editNewHealerIds.map((healerId) => ({
+          publisher_id: selectedPublisherId,
+          healer_id: healerId,
+        }));
+        const { error: linkErr } = await supabase.from('publisher_healers').insert(rows);
+        if (linkErr) throw linkErr;
+      }
+
+      // 3. Re-fetch the active junction links + refresh the dropdown (name may
+      //    have changed), then confirm.
+      const authors = await fetchLinkedAuthors(selectedPublisherId);
+      setLinkedAuthors(authors);
+      setEditNewHealerIds([]);
+      setEditHealerSearch('');
+      setPublisherReload((n) => n + 1);
+      flashEditToast('Publisher updated successfully');
+    } catch (err) {
+      console.error('Publisher update failed:', err);
+      flashEditToast(`Update failed: ${err.message || 'unknown error'}`, 'error');
+    } finally {
+      setEditSaving(false);
+    }
   }
 
   // SMART TAG PRE-POPULATION — picking a healer in the relational dropdown seeds
@@ -1362,6 +1540,243 @@ function AdminDashboard() {
                 }`}
           </button>
         </form>
+
+        {/* ================= EDIT EXISTING PUBLISHER ================= */}
+        {tab === 'publisher' && (
+          <>
+            {/* Section divider */}
+            <div className="border-t border-white/10 my-10 text-center relative">
+              <span className="bg-[#0a0f1d] px-4 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-gray-500 text-sm font-medium uppercase tracking-wider">
+                — or edit an existing publisher —
+              </span>
+            </div>
+
+            <div className="bg-slate-900 border border-slate-800 rounded-2xl p-8">
+              <h2 className="text-lg font-semibold text-white mb-6">Edit Existing Publisher</h2>
+
+              {/* Step 1 — pick a publisher to seed the edit form */}
+              <select
+                value={selectedPublisherId}
+                onChange={(e) => handleSelectPublisher(e.target.value)}
+                className={inputClass}
+              >
+                <option value="">Choose a publisher to edit...</option>
+                {publisherList.map((p) => (
+                  <option key={p.id} value={p.id}>
+                    {p.name}
+                  </option>
+                ))}
+              </select>
+
+              {selectedPublisherId && (
+                <div className="mt-6 space-y-6">
+                  <div>
+                    <label className={labelClass}>Publisher Name</label>
+                    <input
+                      type="text"
+                      value={editName}
+                      onChange={(e) => handleEditName(e.target.value)}
+                      className={inputClass}
+                    />
+                  </div>
+
+                  <div>
+                    <label className={labelClass}>Slug</label>
+                    <input
+                      type="text"
+                      value={editSlug}
+                      onChange={(e) => setEditSlug(slugify(e.target.value))}
+                      className={inputClass}
+                    />
+                  </div>
+
+                  <div>
+                    <label className={labelClass}>Description</label>
+                    <textarea
+                      value={editDescription}
+                      onChange={(e) => setEditDescription(e.target.value)}
+                      rows={3}
+                      className={inputClass}
+                    />
+                  </div>
+
+                  <div>
+                    <label className={labelClass}>Website URL</label>
+                    <input
+                      type="url"
+                      value={editWebsite}
+                      onChange={(e) => setEditWebsite(e.target.value)}
+                      className={inputClass}
+                    />
+                  </div>
+
+                  <div>
+                    <label className={labelClass}>Logo Image URL</label>
+                    <input
+                      type="text"
+                      value={editLogoUrl}
+                      onChange={(e) => setEditLogoUrl(e.target.value)}
+                      className={inputClass}
+                    />
+                  </div>
+
+                  <div>
+                    <label className={labelClass}>Founded Year</label>
+                    <input
+                      type="number"
+                      value={editFoundedYear}
+                      onChange={(e) => setEditFoundedYear(e.target.value)}
+                      className={inputClass}
+                    />
+                  </div>
+
+                  {/* Subject tags — pre-checked from the stored subject_slugs */}
+                  <div>
+                    <label className={labelClass}>
+                      Subject Tags
+                      <span className="ml-2 text-cyan-400 normal-case tracking-normal font-semibold">
+                        {editSubjectSlugs.length} selected
+                      </span>
+                    </label>
+                    {subjects.length === 0 ? (
+                      <p className="text-sm text-slate-500">Loading subjects…</p>
+                    ) : (
+                      <div className="flex flex-wrap gap-2">
+                        {subjects.map((c) => {
+                          const active = editSubjectSlugs.includes(c.slug);
+                          return (
+                            <button
+                              key={c.slug}
+                              type="button"
+                              onClick={() => toggleEditSubject(c.slug)}
+                              aria-pressed={active}
+                              className={`px-4 py-2 rounded-full text-sm font-bold border transition-all ${
+                                active
+                                  ? 'bg-gradient-to-r from-cyan-400 to-emerald-400 text-slate-950 border-transparent shadow-lg shadow-cyan-500/20'
+                                  : 'bg-slate-800 text-slate-300 border-slate-700 hover:border-cyan-400/50 hover:text-white'
+                              }`}
+                            >
+                              {active ? '✓ ' : ''}
+                              {c.name}
+                            </button>
+                          );
+                        })}
+                      </div>
+                    )}
+                  </div>
+
+                  {/* Currently linked authors — remove a pill to unlink instantly */}
+                  <div>
+                    <span className="text-xs uppercase tracking-wider text-gray-400 mb-3 block">
+                      Currently Linked Authors
+                    </span>
+                    {linkedAuthors.length === 0 ? (
+                      <p className="text-sm text-slate-500">No authors linked yet.</p>
+                    ) : (
+                      <div className="flex flex-wrap gap-2">
+                        {linkedAuthors.map((a) => (
+                          <span
+                            key={a.healer_id}
+                            className="bg-[#111827] border border-white/10 rounded-full px-3 py-1 text-sm text-white flex items-center gap-2"
+                          >
+                            {a.name}
+                            <button
+                              type="button"
+                              onClick={() => handleRemoveAuthor(a.healer_id)}
+                              className="text-red-400 hover:text-red-300 ml-1 font-bold transition-colors cursor-pointer"
+                            >
+                              ✕
+                            </button>
+                          </span>
+                        ))}
+                      </div>
+                    )}
+                  </div>
+
+                  {/* Add new authors — currently-linked healers are filtered out to
+                      protect the junction table's unique constraint */}
+                  <div>
+                    <span className="text-xs uppercase tracking-wider text-gray-400 mb-3 mt-6 block">
+                      Add New Authors
+                    </span>
+                    <input
+                      type="text"
+                      value={editHealerSearch}
+                      onChange={(e) => setEditHealerSearch(e.target.value)}
+                      placeholder="Search healers by name…"
+                      className={inputClass}
+                    />
+
+                    {editNewHealerIds.length > 0 && (
+                      <div className="flex flex-wrap gap-2 mt-3">
+                        {editNewHealerIds.map((id) => {
+                          const h = healers.find((x) => x.id === id);
+                          return (
+                            <button
+                              key={id}
+                              type="button"
+                              onClick={() => toggleEditNewHealer(id)}
+                              className="px-3 py-1.5 rounded-full text-xs font-bold bg-gradient-to-r from-cyan-400 to-emerald-400 text-slate-950"
+                            >
+                              {h?.name || `#${id}`} ✕
+                            </button>
+                          );
+                        })}
+                      </div>
+                    )}
+
+                    <div className="mt-3 max-h-48 overflow-y-auto rounded-lg border border-slate-700 divide-y divide-slate-800">
+                      {healers
+                        .filter(
+                          (h) =>
+                            !linkedAuthors.some((a) => a.healer_id === h.id) &&
+                            h.name.toLowerCase().includes(editHealerSearch.trim().toLowerCase())
+                        )
+                        .map((h) => {
+                          const active = editNewHealerIds.includes(h.id);
+                          return (
+                            <button
+                              key={h.id}
+                              type="button"
+                              onClick={() => toggleEditNewHealer(h.id)}
+                              className={`w-full text-left px-4 py-2 text-sm transition-colors ${
+                                active ? 'bg-cyan-500/20 text-white font-semibold' : 'text-slate-300 hover:bg-slate-800'
+                              }`}
+                            >
+                              {active ? '✓ ' : ''}
+                              {h.name}
+                            </button>
+                          );
+                        })}
+                    </div>
+                  </div>
+
+                  <button
+                    type="button"
+                    onClick={handleSaveEdit}
+                    disabled={editSaving}
+                    className="w-full py-3 px-6 bg-violet-600 hover:bg-violet-700 text-white font-bold text-sm rounded-xl transition-colors mt-6 block text-center disabled:opacity-50 disabled:cursor-not-allowed"
+                  >
+                    {editSaving ? 'Saving…' : 'Save Changes'}
+                  </button>
+
+                  {editToast && (
+                    <div
+                      className={`mt-4 px-4 py-3 rounded-xl border text-sm font-semibold ${
+                        editToast.type === 'success'
+                          ? 'bg-emerald-500/10 border-emerald-500/40 text-emerald-300'
+                          : 'bg-red-500/10 border-red-500/40 text-red-300'
+                      }`}
+                    >
+                      {editToast.type === 'success' ? '✅ ' : '⚠️ '}
+                      {editToast.message}
+                    </div>
+                  )}
+                </div>
+              )}
+            </div>
+          </>
+        )}
 
         {/* SUCCESS / ERROR TOAST */}
         {toast && (
