@@ -3,6 +3,7 @@ import BookCard from './BookCard.js';
 import HealerCard from './HealerCard.js';
 import HeroBillboard from './HeroBillboard.js';
 import ContentShelf from './ContentShelf.js';
+import EmotionSearch from './EmotionSearch.js';
 import FreeResourceCard from './FreeResourceCard.js';
 import OfferingCard from './OfferingCard.js';
 import SubjectPills from './SubjectPills.js';
@@ -151,14 +152,7 @@ export default async function HomePage({ initialSubjectSlug }) {
 
       <div className="mx-auto max-w-7xl px-6">
         {/* 2. EMOTIONAL SEARCH BAR — the sacred entry point. */}
-        <section className="py-10">
-          <input
-            type="text"
-            placeholder="How are you feeling today?"
-            aria-label="How are you feeling today?"
-            className="mx-auto block w-full max-w-2xl rounded-full border border-white/15 bg-[#111827] px-6 py-4 text-center text-lg text-white placeholder-gray-400 shadow-lg transition-all focus:border-[#7c3aed] focus:shadow-[0_0_25px_rgba(124,58,237,0.45)] focus:outline-none"
-          />
-        </section>
+        <EmotionSearch />
 
         {/* 3. SUBJECT PILLS */}
         <section className="pb-10">
