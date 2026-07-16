@@ -41,13 +41,6 @@ export default function BookCard({ book, variant }) {
 
   const hasCover = book.mock_cover_url && book.mock_cover_url !== 'NULL';
 
-  // Deep-link buttons — only render the ones that actually have a URL.
-  const links = [
-    { label: 'Amazon', url: book.amazon_url, color: 'bg-amber-500 text-white hover:bg-amber-400' },
-    { label: 'Goodreads', url: book.goodreads_url, color: 'bg-[#f4f1ea] text-[#333333] hover:bg-[#ebd9c4]' },
-    { label: 'World of Books', url: book.worldofbooks_url, color: 'bg-[#016847] text-white hover:bg-[#015238]' },
-  ].filter((l) => l.url);
-
   return (
     <div className="flex flex-col items-center">
       {/* Cover + popover, wrapped whole so hovering OR clicking anywhere on the
@@ -70,28 +63,13 @@ export default function BookCard({ book, variant }) {
           fallbackClassName="w-full aspect-[2/3] rounded-xl bg-slate-800 flex items-center justify-center text-6xl shadow-2xl cursor-pointer"
         />
 
-        {/* MODAL POPOVER — synopsis + deep links */}
+        {/* MODAL POPOVER — synopsis only. Purchase deep links live on the book
+            detail page now, so the overlay carries no nested anchors. */}
         {open && (
           <div className="absolute inset-0 z-20 rounded-xl bg-slate-950/95 backdrop-blur-sm text-white p-4 flex flex-col overflow-hidden shadow-2xl border border-white/10">
-            <p className="text-[11px] text-slate-200 leading-relaxed flex-1 line-clamp-4 overflow-hidden mb-3">
+            <p className="text-[11px] text-slate-200 leading-relaxed flex-1 line-clamp-6 overflow-hidden">
               {book.description || 'No synopsis available yet.'}
             </p>
-            {links.length > 0 && (
-              <div className="mt-3 flex flex-col gap-1.5">
-                {links.map((l) => (
-                  <a
-                    key={l.label}
-                    href={l.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    onClick={(e) => e.stopPropagation()}
-                    className={`text-center text-[11px] font-bold uppercase tracking-wider py-1.5 rounded-md transition-colors ${l.color}`}
-                  >
-                    {l.label}
-                  </a>
-                ))}
-              </div>
-            )}
           </div>
         )}
       </Link>

@@ -17,12 +17,13 @@ function Star({ className }) {
 export default async function BookDetail({ params }) {
   const { id } = await params;
 
-  // Join the healer (the linked author) so we can render the "By …" credit from
-  // one round-trip. Books relate to a healer through the text healer_slug column,
-  // but the FK join reads whichever healer row matches.
+  // Books link to a healer by the text `healer_slug` column, which is NOT a
+  // declared foreign key — so a PostgREST embedded join (`healers (...)`) errors
+  // with PGRST200 and would 404 every book. Fetch the book plainly, then resolve
+  // the healer in a second query keyed off the slug, mirroring the rest of the app.
   const { data: book, error } = await supabase
     .from('books')
-    .select('*, healers (name, healer_slug)')
+    .select('*')
     .eq('id', id)
     .single();
 
@@ -30,7 +31,13 @@ export default async function BookDetail({ params }) {
     notFound();
   }
 
-  const healer = book.healers;
+  const { data: healer } = book.healer_slug
+    ? await supabase
+        .from('healers')
+        .select('name, healer_slug')
+        .eq('healer_slug', book.healer_slug)
+        .single()
+    : { data: null };
   // Cover is stored under mock_cover_url; 'NULL' is a legacy sentinel for absent.
   const hasCover = book.mock_cover_url && book.mock_cover_url !== 'NULL';
 
