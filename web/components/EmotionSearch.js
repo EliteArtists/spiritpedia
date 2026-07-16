@@ -5,9 +5,7 @@ import { useRouter } from 'next/navigation';
 import { supabase } from '../utils/supabase.js';
 
 // Filler words/prefixes stripped before matching so "I'm really lost" and "lost"
-// hit the same emotion_mappings row. Multi-word phrases must come before their
-// single-word substrings are considered — order within the list is fine because
-// each is removed as a whole \b-bounded token.
+// hit the same emotion_mappings row. Each is removed as a whole \b-bounded token.
 const FILLERS = ["i feel", "i am", "i'm", 'feeling', 'very', 'so', 'really', 'quite'];
 
 // Subject slugs are hyphenated db keys; these render as friendly labels. Anything
@@ -20,16 +18,28 @@ const SPECIAL_LABELS = {
   nde: 'Near Death Experiences',
 };
 
-// Starter emotions shown as one-tap pills. `label` is the friendly phrasing; `q`
-// is the bare keyword actually queried.
-const SUGGESTIONS = [
-  { label: 'I feel lost', q: 'lost' },
-  { label: 'I feel anxious', q: 'anxious' },
-  { label: 'I feel heartbroken', q: 'heartbroken' },
-  { label: 'I feel stuck', q: 'stuck' },
-  { label: 'I feel disconnected', q: 'disconnected' },
-  { label: 'I feel overwhelmed', q: 'overwhelmed' },
+// Placeholder phrases cycled by the typewriter, alternating uplifting and
+// challenging states so the entry point feels alive and non-judgemental.
+const PHRASES = [
+  'I feel lost',
+  'I feel grateful',
+  'I feel anxious',
+  'I feel excited',
+  'I feel heartbroken',
+  'I feel on top of the world',
+  'I feel stuck',
+  'I feel curious',
+  'I feel overwhelmed',
+  'I feel peaceful',
 ];
+
+// Typewriter timing (ms).
+const TYPE_MS = 80; // per character while typing
+const DELETE_MS = 40; // per character while deleting
+const HOLD_TYPED_MS = 2000; // pause once a phrase is fully typed
+const HOLD_EMPTY_MS = 400; // pause once a phrase is fully deleted
+const INITIAL_DELAY_MS = 1000; // wait before the first phrase begins
+const IDLE_RESUME_MS = 1500; // wait after blur-on-empty before resuming
 
 function normalize(raw) {
   let s = (raw || '').toLowerCase();
@@ -67,10 +77,23 @@ export default function EmotionSearch() {
   const [results, setResults] = useState([]);
   const [open, setOpen] = useState(false);
   const [loading, setLoading] = useState(false);
+
+  // Typewriter state.
+  const [displayText, setDisplayText] = useState('');
+  const [isTyping, setIsTyping] = useState(true);
+  const [phraseIndex, setPhraseIndex] = useState(0);
+  const [isUserActive, setIsUserActive] = useState(false);
+  const [ready, setReady] = useState(false); // gates the initial mount delay
+  const [cursorOn, setCursorOn] = useState(true);
+
   const containerRef = useRef(null);
-  const blurTimer = useRef(null);
+  const blurTimer = useRef(null); // closes the dropdown after a click grace period
+  const idleTimer = useRef(null); // resumes the typewriter after blur-on-empty
+  const typeTimer = useRef(null); // active typewriter step
 
   const normalized = normalize(value);
+
+  // --- Emotional search (unchanged behaviour) ------------------------------
 
   // Debounced live search — 300ms after the last keystroke, look up the cleaned
   // phrase and dedupe to unique subjects.
@@ -111,7 +134,70 @@ export default function EmotionSearch() {
     };
   }, []);
 
-  useEffect(() => () => clearTimeout(blurTimer.current), []);
+  // --- Typewriter animation ------------------------------------------------
+
+  // Hold the first phrase back for a beat after the page mounts.
+  useEffect(() => {
+    const t = setTimeout(() => setReady(true), INITIAL_DELAY_MS);
+    return () => clearTimeout(t);
+  }, []);
+
+  // Single self-scheduling step. Re-runs whenever the visible text or phase
+  // changes, advancing type → hold → delete → next phrase. Paused entirely while
+  // the user is interacting with the input.
+  useEffect(() => {
+    if (!ready || isUserActive) return undefined;
+    const phrase = PHRASES[phraseIndex];
+
+    if (isTyping) {
+      if (displayText.length < phrase.length) {
+        typeTimer.current = setTimeout(
+          () => setDisplayText(phrase.slice(0, displayText.length + 1)),
+          TYPE_MS
+        );
+      } else {
+        // Fully typed → pause, then switch to deleting.
+        typeTimer.current = setTimeout(() => setIsTyping(false), HOLD_TYPED_MS);
+      }
+    } else if (displayText.length > 0) {
+      typeTimer.current = setTimeout(
+        () => setDisplayText(phrase.slice(0, displayText.length - 1)),
+        DELETE_MS
+      );
+    } else {
+      // Fully deleted → pause, then advance to the next phrase and type again.
+      typeTimer.current = setTimeout(() => {
+        setPhraseIndex((i) => (i + 1) % PHRASES.length);
+        setIsTyping(true);
+      }, HOLD_EMPTY_MS);
+    }
+
+    return () => clearTimeout(typeTimer.current);
+  }, [ready, isUserActive, isTyping, displayText, phraseIndex]);
+
+  // Blinking cursor — only while typing; hidden during the deleting phase.
+  useEffect(() => {
+    if (!isTyping) return undefined;
+    const id = setInterval(() => setCursorOn((v) => !v), 500);
+    return () => clearInterval(id);
+  }, [isTyping]);
+
+  // Belt-and-braces: clear every outstanding timer on unmount.
+  useEffect(
+    () => () => {
+      clearTimeout(blurTimer.current);
+      clearTimeout(idleTimer.current);
+      clearTimeout(typeTimer.current);
+    },
+    []
+  );
+
+  // --- Interaction ---------------------------------------------------------
+
+  function activate() {
+    clearTimeout(idleTimer.current);
+    setIsUserActive(true);
+  }
 
   function goToSubject(slug) {
     setOpen(false);
@@ -119,7 +205,7 @@ export default function EmotionSearch() {
   }
 
   // Resolve the single highest-weighted subject for a phrase and route straight
-  // to it — used by Enter/submit and by the suggested pills.
+  // to it — used by Enter/submit.
   async function routeToTop(raw) {
     const norm = normalize(raw);
     if (!norm) return;
@@ -139,28 +225,58 @@ export default function EmotionSearch() {
     else routeToTop(value);
   }
 
-  function handlePill(keyword) {
-    setValue(keyword);
-    routeToTop(keyword);
+  function handleBlur() {
+    // Delay so a click on a result row fires before the dropdown unmounts.
+    blurTimer.current = setTimeout(() => setOpen(false), 150);
+    // If the field is left empty, drift back into the idle animation.
+    if (value === '') {
+      idleTimer.current = setTimeout(() => {
+        setDisplayText('');
+        setIsTyping(true);
+        setIsUserActive(false);
+      }, IDLE_RESUME_MS);
+    }
   }
+
+  // The animated overlay stands in for the placeholder until the user engages.
+  const showOverlay = !isUserActive && value === '';
 
   return (
     <section className="py-10">
       <div ref={containerRef} className="relative mx-auto w-full max-w-2xl">
         <form onSubmit={handleSubmit}>
-          <input
-            type="text"
-            value={value}
-            onChange={(e) => setValue(e.target.value)}
-            onFocus={() => normalized && setOpen(true)}
-            onBlur={() => {
-              // Delay so a click on a result row fires before the dropdown unmounts.
-              blurTimer.current = setTimeout(() => setOpen(false), 150);
-            }}
-            placeholder="How are you feeling today?"
-            aria-label="How are you feeling today?"
-            className="block w-full rounded-full border border-white/15 bg-[#111827] px-6 py-4 text-center text-lg text-white placeholder-gray-400 shadow-lg transition-all focus:border-[#7c3aed] focus:shadow-[0_0_25px_rgba(124,58,237,0.45)] focus:outline-none"
-          />
+          <div className="relative">
+            <input
+              type="text"
+              value={value}
+              onChange={(e) => {
+                activate();
+                setValue(e.target.value);
+              }}
+              onFocus={() => {
+                activate();
+                if (normalized) setOpen(true);
+              }}
+              onBlur={handleBlur}
+              placeholder={isUserActive ? 'How are you feeling today?' : ''}
+              aria-label="How are you feeling today?"
+              className="block w-full rounded-full border border-white/15 bg-[#111827] px-6 py-4 text-center text-lg text-white placeholder-gray-400 shadow-lg transition-all focus:border-[#7c3aed] focus:shadow-[0_0_25px_rgba(124,58,237,0.45)] focus:outline-none"
+            />
+
+            {/* Typewriter overlay — mirrors the input's padding, size and centring */}
+            {showOverlay && (
+              <div className="pointer-events-none absolute inset-0 flex items-center justify-center px-6 text-lg">
+                <span className="text-gray-400">{displayText}</span>
+                {isTyping && (
+                  <span
+                    className={`text-violet-400 ${cursorOn ? 'opacity-100' : 'opacity-0'}`}
+                  >
+                    |
+                  </span>
+                )}
+              </div>
+            )}
+          </div>
         </form>
 
         {open && normalized && (
@@ -185,21 +301,6 @@ export default function EmotionSearch() {
             )}
           </div>
         )}
-      </div>
-
-      {/* Suggested starting emotions */}
-      <div className="mx-auto mt-4 flex max-w-2xl flex-wrap items-center gap-2">
-        <span className="text-gray-500 text-sm mr-2">Try:</span>
-        {SUGGESTIONS.map((s) => (
-          <button
-            key={s.q}
-            type="button"
-            onClick={() => handlePill(s.q)}
-            className="bg-[#111827] hover:bg-white/10 text-gray-300 hover:text-white text-sm px-4 py-2 rounded-full border border-white/10 hover:border-white/20 transition-all cursor-pointer"
-          >
-            {s.label}
-          </button>
-        ))}
       </div>
     </section>
   );
