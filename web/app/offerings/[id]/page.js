@@ -32,8 +32,16 @@ export default async function OfferingDetail({ params }) {
   const subjects = Array.isArray(offering.subject_slugs) ? offering.subject_slugs : [];
 
   return (
-    <main className="min-h-screen bg-[#0a0f1d] text-white">
-      {/* Header — centred badges, title, healer credit, back link */}
+    <main className="relative min-h-screen bg-[#0a0f1d] text-white">
+      {/* Back link — anchored to the page's top-left, above the header */}
+      <Link
+        href="/"
+        className="absolute top-8 left-6 md:left-8 text-sm text-gray-500 hover:text-gray-300 transition-colors z-10"
+      >
+        ← Back to Spiritpedia
+      </Link>
+
+      {/* Header — centred badges, title, healer credit */}
       <header className="max-w-4xl mx-auto pt-12 pb-8 px-6 text-center bg-[#0a0f1d]">
         <div className="flex items-center justify-center gap-3 mb-4">
           <span
@@ -60,13 +68,6 @@ export default async function OfferingDetail({ params }) {
             By {healer.name}
           </Link>
         )}
-
-        <Link
-          href="/"
-          className="block text-sm text-gray-500 hover:text-gray-300 mt-3 transition-colors"
-        >
-          ← Back to Spiritpedia
-        </Link>
       </header>
 
       {/* Body — image + subjects on the left, description + CTA on the right */}
@@ -81,19 +82,6 @@ export default async function OfferingDetail({ params }) {
             />
           ) : (
             <div className="bg-gradient-to-br from-violet-900 to-[#0a0f1d] w-full h-[300px] rounded-2xl" />
-          )}
-
-          {subjects.length > 0 && (
-            <div className="mt-6 flex flex-wrap gap-2">
-              {subjects.map((slug) => (
-                <span
-                  key={slug}
-                  className="bg-[#111827] text-gray-400 text-xs px-3 py-1 rounded-full border border-white/10"
-                >
-                  {slug}
-                </span>
-              ))}
-            </div>
           )}
         </div>
 
@@ -118,6 +106,19 @@ export default async function OfferingDetail({ params }) {
             <span className="text-gray-400 text-center text-sm mt-8 block">
               Contact {healer ? healer.name : 'the healer'} directly for booking information.
             </span>
+          )}
+
+          {subjects.length > 0 && (
+            <div className="mt-8 flex flex-wrap gap-2">
+              {subjects.map((slug) => (
+                <span
+                  key={slug}
+                  className="bg-[#111827] text-gray-400 text-xs px-3 py-1 rounded-full border border-white/10"
+                >
+                  {slug}
+                </span>
+              ))}
+            </div>
           )}
         </div>
       </div>
