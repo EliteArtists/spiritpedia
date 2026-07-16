@@ -50,24 +50,25 @@ export default function BookCard({ book, variant }) {
 
   return (
     <div className="flex flex-col items-center">
-      {/* Cover + popover. Hover previews the synopsis on desktop; clicking the
-          cover routes into the internal book detail page. */}
-      <div
-        className="relative w-full max-w-[220px]"
+      {/* Cover + popover, wrapped whole so hovering OR clicking anywhere on the
+          card routes into the internal book detail page. Hover still previews the
+          synopsis on desktop. The Want to Read button stays a sibling below,
+          outside this link, so it toggles save state without navigating. */}
+      <Link
+        href={`/books/${book.id}`}
+        className="relative w-full max-w-[220px] block"
         onMouseEnter={() => setOpen(true)}
         onMouseLeave={() => setOpen(false)}
       >
         {/* A dead cover URL falls back to the same glyph a cover-less book already
             shows, rather than a broken-image icon. */}
-        <Link href={`/books/${book.id}`}>
-          <CardImage
-            src={hasCover ? book.mock_cover_url : null}
-            alt={book.title}
-            className="w-full aspect-[2/3] object-cover rounded-xl shadow-2xl transition-transform duration-300 hover:scale-105 cursor-pointer"
-            fallbackEmoji="📖"
-            fallbackClassName="w-full aspect-[2/3] rounded-xl bg-slate-800 flex items-center justify-center text-6xl shadow-2xl cursor-pointer"
-          />
-        </Link>
+        <CardImage
+          src={hasCover ? book.mock_cover_url : null}
+          alt={book.title}
+          className="w-full aspect-[2/3] object-cover rounded-xl shadow-2xl transition-transform duration-300 hover:scale-105 cursor-pointer"
+          fallbackEmoji="📖"
+          fallbackClassName="w-full aspect-[2/3] rounded-xl bg-slate-800 flex items-center justify-center text-6xl shadow-2xl cursor-pointer"
+        />
 
         {/* MODAL POPOVER — synopsis + deep links */}
         {open && (
@@ -93,7 +94,7 @@ export default function BookCard({ book, variant }) {
             )}
           </div>
         )}
-      </div>
+      </Link>
 
       {/* FUTURE FAVORITES — persistent Want to Read toggle, directly under the cover */}
       <button
