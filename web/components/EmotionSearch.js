@@ -41,6 +41,12 @@ const HOLD_EMPTY_MS = 400; // pause once a phrase is fully deleted
 const INITIAL_DELAY_MS = 1000; // wait before the first phrase begins
 const IDLE_RESUME_MS = 1500; // wait after blur-on-empty before resuming
 
+// Shared classes for every universal-result row.
+const ROW_CLASS =
+  'flex items-center gap-3 px-3 py-2 rounded-xl hover:bg-white/5 cursor-pointer transition-colors';
+const HEADER_CLASS = 'px-4 pt-3 pb-1 text-xs uppercase tracking-wider text-gray-500 font-medium';
+const EMPTY_UNIVERSAL = { healers: [], books: [], videos: [], subjects: [] };
+
 function normalize(raw) {
   let s = (raw || '').toLowerCase();
   for (const f of FILLERS) {
@@ -71,10 +77,56 @@ function uniqueSubjects(rows) {
   return out;
 }
 
+// Pull the YouTube video ID out of any stored platform_url shape (mirrors the
+// helper in VideoPlayer.js). videos carry no dedicated youtube_id column.
+function extractYouTubeId(url) {
+  if (!url) return null;
+  if (url.includes('v=')) return url.split('v=')[1]?.split('&')[0];
+  return url.split('/').pop();
+}
+
+// Up to two initials for a healer avatar fallback.
+function initials(name) {
+  return (
+    (name || '')
+      .split(/\s+/)
+      .filter(Boolean)
+      .slice(0, 2)
+      .map((w) => w[0].toUpperCase())
+      .join('') || '?'
+  );
+}
+
+// Tiny tier glyph shown at the right edge of a healer row.
+function tierBadge(tier) {
+  if (tier === 'superhero') return { symbol: '★', className: 'text-[#78350f]' };
+  if (tier === 'luminary') return { symbol: '✦', className: 'text-violet-600' };
+  return { symbol: '◆', className: 'text-emerald-500' };
+}
+
+function CompassIcon({ className }) {
+  return (
+    <svg
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      className={className}
+      aria-hidden="true"
+    >
+      <circle cx="12" cy="12" r="10" />
+      <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76" />
+    </svg>
+  );
+}
+
 export default function EmotionSearch() {
   const router = useRouter();
   const [value, setValue] = useState('');
-  const [results, setResults] = useState([]);
+  const [emotions, setEmotions] = useState([]);
+  const [universal, setUniversal] = useState(EMPTY_UNIVERSAL);
   const [open, setOpen] = useState(false);
   const [loading, setLoading] = useState(false);
 
@@ -92,31 +144,56 @@ export default function EmotionSearch() {
   const typeTimer = useRef(null); // active typewriter step
 
   const normalized = normalize(value);
+  const term = value.trim();
 
-  // --- Emotional search (unchanged behaviour) ------------------------------
+  // --- Search: emotion path + universal path, run in parallel --------------
 
-  // Debounced live search — 300ms after the last keystroke, look up the cleaned
-  // phrase and dedupe to unique subjects.
+  // Debounced live search — 300ms after the last keystroke, fire the emotion
+  // lookup and the four universal-table lookups together via Promise.all.
   useEffect(() => {
-    if (!normalized) {
-      setResults([]);
+    if (!term) {
+      setEmotions([]);
+      setUniversal(EMPTY_UNIVERSAL);
       setLoading(false);
-      return;
+      return undefined;
     }
+    const norm = normalize(value);
     setLoading(true);
+    setOpen(true);
     const t = setTimeout(async () => {
-      const { data } = await supabase
-        .from('emotion_mappings')
-        .select('*')
-        .ilike('emotion', `%${normalized}%`)
-        .order('weight', { ascending: false })
-        .limit(12);
-      setResults(uniqueSubjects(data));
+      // Emotion intent only searches when something survives normalisation.
+      const emotionQuery = norm
+        ? supabase
+            .from('emotion_mappings')
+            .select('*')
+            .ilike('emotion', `%${norm}%`)
+            .order('weight', { ascending: false })
+            .limit(12)
+        : Promise.resolve({ data: [] });
+
+      const [emotionRes, healersRes, booksRes, videosRes, subjectsRes] = await Promise.all([
+        emotionQuery,
+        supabase
+          .from('healers')
+          .select('id, name, healer_slug, tier, image_urls')
+          .ilike('name', `%${term}%`)
+          .limit(4),
+        supabase.from('books').select('id, title, mock_cover_url').ilike('title', `%${term}%`).limit(4),
+        supabase.from('videos').select('id, title, platform_url').ilike('title', `%${term}%`).limit(3),
+        supabase.from('subjects').select('id, name, slug').ilike('name', `%${term}%`).limit(3),
+      ]);
+
+      setEmotions(uniqueSubjects(emotionRes.data));
+      setUniversal({
+        healers: healersRes.data || [],
+        books: booksRes.data || [],
+        videos: videosRes.data || [],
+        subjects: subjectsRes.data || [],
+      });
       setLoading(false);
-      setOpen(true);
     }, 300);
     return () => clearTimeout(t);
-  }, [normalized]);
+  }, [value, term]);
 
   // Close on click-outside and Esc so no stale dropdown lingers.
   useEffect(() => {
@@ -134,7 +211,7 @@ export default function EmotionSearch() {
     };
   }, []);
 
-  // --- Typewriter animation ------------------------------------------------
+  // --- Typewriter animation (unchanged) ------------------------------------
 
   // Hold the first phrase back for a beat after the page mounts.
   useEffect(() => {
@@ -156,7 +233,6 @@ export default function EmotionSearch() {
           TYPE_MS
         );
       } else {
-        // Fully typed → pause, then switch to deleting.
         typeTimer.current = setTimeout(() => setIsTyping(false), HOLD_TYPED_MS);
       }
     } else if (displayText.length > 0) {
@@ -165,7 +241,6 @@ export default function EmotionSearch() {
         DELETE_MS
       );
     } else {
-      // Fully deleted → pause, then advance to the next phrase and type again.
       typeTimer.current = setTimeout(() => {
         setPhraseIndex((i) => (i + 1) % PHRASES.length);
         setIsTyping(true);
@@ -199,9 +274,14 @@ export default function EmotionSearch() {
     setIsUserActive(true);
   }
 
-  function goToSubject(slug) {
+  function navigate(path) {
     setOpen(false);
-    router.push(`/subject/${slug}`);
+    router.push(path);
+  }
+
+  function navigateExternal(url) {
+    setOpen(false);
+    if (typeof window !== 'undefined') window.open(url, '_blank', 'noopener,noreferrer');
   }
 
   // Resolve the single highest-weighted subject for a phrase and route straight
@@ -215,13 +295,13 @@ export default function EmotionSearch() {
       .ilike('emotion', `%${norm}%`)
       .order('weight', { ascending: false })
       .limit(1);
-    if (data && data[0]) goToSubject(data[0].subject_slug);
+    if (data && data[0]) navigate(`/subject/${data[0].subject_slug}`);
   }
 
   function handleSubmit(e) {
     e.preventDefault();
-    // Prefer the already-loaded top result; fall back to a fresh lookup.
-    if (results[0]) goToSubject(results[0].subject_slug);
+    // Enter keeps emotion-first intent: route to the top-weighted subject.
+    if (emotions[0]) navigate(`/subject/${emotions[0].subject_slug}`);
     else routeToTop(value);
   }
 
@@ -241,6 +321,9 @@ export default function EmotionSearch() {
   // The animated overlay stands in for the placeholder until the user engages.
   const showOverlay = !isUserActive && value === '';
 
+  const { healers, books, videos, subjects } = universal;
+  const hasUniversal = healers.length || books.length || videos.length || subjects.length;
+
   return (
     <section className="py-10">
       <div ref={containerRef} className="relative mx-auto w-full max-w-2xl">
@@ -255,7 +338,7 @@ export default function EmotionSearch() {
               }}
               onFocus={() => {
                 activate();
-                if (normalized) setOpen(true);
+                if (term) setOpen(true);
               }}
               onBlur={handleBlur}
               placeholder={isUserActive ? 'How are you feeling today?' : ''}
@@ -268,36 +351,121 @@ export default function EmotionSearch() {
               <div className="pointer-events-none absolute inset-0 flex items-center justify-center px-6 text-lg">
                 <span className="text-gray-400">{displayText}</span>
                 {isTyping && (
-                  <span
-                    className={`text-violet-400 ${cursorOn ? 'opacity-100' : 'opacity-0'}`}
-                  >
-                    |
-                  </span>
+                  <span className={`text-violet-400 ${cursorOn ? 'opacity-100' : 'opacity-0'}`}>|</span>
                 )}
               </div>
             )}
           </div>
         </form>
 
-        {open && normalized && (
-          <div className="absolute left-0 right-0 top-full mt-2 z-50 bg-[#111827] border border-white/10 rounded-2xl p-2 shadow-2xl">
-            {results.length > 0 ? (
-              results.map((row) => (
+        {open && term && (
+          <div className="absolute left-0 right-0 top-full mt-2 z-50 max-h-[70vh] overflow-y-auto bg-[#111827] border border-white/10 rounded-2xl p-2 shadow-2xl">
+            {loading ? (
+              <span className="text-gray-500 text-sm px-4 py-3 block text-center">Searching...</span>
+            ) : emotions.length > 0 ? (
+              // Emotion intent wins — show subject suggestions only.
+              emotions.map((row) => (
                 <div
                   key={row.id}
-                  onClick={() => goToSubject(row.subject_slug)}
+                  onClick={() => navigate(`/subject/${row.subject_slug}`)}
                   className="flex items-center justify-between px-4 py-3 text-white text-sm rounded-xl cursor-pointer hover:bg-white/5 transition-colors"
                 >
                   <span>{formatSlug(row.subject_slug)}</span>
                   <span className="text-gray-500">→</span>
                 </div>
               ))
+            ) : hasUniversal ? (
+              <>
+                {healers.length > 0 && (
+                  <>
+                    <div className={HEADER_CLASS}>HEALERS</div>
+                    {healers.map((h) => {
+                      const img = Array.isArray(h.image_urls) && h.image_urls[0] ? h.image_urls[0] : null;
+                      const badge = tierBadge(h.tier);
+                      return (
+                        <div
+                          key={`h-${h.id}`}
+                          onClick={() => navigate(`/healers/${h.healer_slug}`)}
+                          className={ROW_CLASS}
+                        >
+                          {img ? (
+                            <img src={img} alt={h.name} className="w-8 h-8 rounded-full object-cover" />
+                          ) : (
+                            <span className="w-8 h-8 rounded-full bg-violet-600 flex items-center justify-center text-white text-xs font-semibold">
+                              {initials(h.name)}
+                            </span>
+                          )}
+                          <span className="flex-1 text-white text-sm truncate">{h.name}</span>
+                          <span className={`text-sm ${badge.className}`}>{badge.symbol}</span>
+                        </div>
+                      );
+                    })}
+                  </>
+                )}
+
+                {books.length > 0 && (
+                  <>
+                    <div className={HEADER_CLASS}>BOOKS</div>
+                    {books.map((b) => {
+                      const cover = b.mock_cover_url && b.mock_cover_url !== 'NULL' ? b.mock_cover_url : null;
+                      return (
+                        <div
+                          key={`b-${b.id}`}
+                          onClick={() => navigate(`/books/${b.id}`)}
+                          className={ROW_CLASS}
+                        >
+                          {cover ? (
+                            <img src={cover} alt={b.title} className="w-8 h-11 rounded object-cover" />
+                          ) : (
+                            <span className="w-8 h-11 rounded bg-[#0a0f1d] border border-white/10 flex items-center justify-center text-gray-600 text-xs">
+                              📖
+                            </span>
+                          )}
+                          <span className="flex-1 text-white text-sm truncate">{b.title}</span>
+                        </div>
+                      );
+                    })}
+                  </>
+                )}
+
+                {videos.length > 0 && (
+                  <>
+                    <div className={HEADER_CLASS}>VIDEOS</div>
+                    {videos.map((v) => {
+                      const vid = extractYouTubeId(v.platform_url);
+                      const thumb = vid ? `https://img.youtube.com/vi/${vid}/mqdefault.jpg` : null;
+                      const watch = vid ? `https://www.youtube.com/watch?v=${vid}` : v.platform_url;
+                      return (
+                        <div key={`v-${v.id}`} onClick={() => navigateExternal(watch)} className={ROW_CLASS}>
+                          {thumb ? (
+                            <img src={thumb} alt={v.title} className="w-12 h-8 rounded object-cover" />
+                          ) : (
+                            <span className="w-12 h-8 rounded bg-[#0a0f1d] border border-white/10" />
+                          )}
+                          <span className="flex-1 text-white text-sm truncate">{v.title}</span>
+                        </div>
+                      );
+                    })}
+                  </>
+                )}
+
+                {subjects.length > 0 && (
+                  <>
+                    <div className={HEADER_CLASS}>SUBJECTS</div>
+                    {subjects.map((s) => (
+                      <div key={`s-${s.id}`} onClick={() => navigate(`/subject/${s.slug}`)} className={ROW_CLASS}>
+                        <CompassIcon className="w-4 h-4 text-violet-400 shrink-0" />
+                        <span className="flex-1 text-white text-sm truncate">{s.name}</span>
+                      </div>
+                    ))}
+                  </>
+                )}
+              </>
             ) : (
-              !loading && (
-                <span className="text-gray-500 text-sm px-4 py-3 block text-center">
-                  No matches found — try &apos;anxious&apos;, &apos;lost&apos;, or &apos;heartbroken&apos;
-                </span>
-              )
+              <span className="text-gray-500 text-sm px-4 py-3 block text-center">
+                No matches found — try &apos;anxious&apos;, &apos;lost&apos;, or &apos;heartbroken&apos; to explore
+                by feeling, or search for a healer or book
+              </span>
             )}
           </div>
         )}
