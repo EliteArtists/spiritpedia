@@ -48,7 +48,7 @@ export default function BookCard({ book, variant }) {
           synopsis on desktop. The Want to Read button stays a sibling below,
           outside this link, so it toggles save state without navigating. */}
       <Link
-        href={`/books/${book.id}`}
+        href={`/books/${book.slug}`}
         className="relative w-full max-w-[220px] block"
         onMouseEnter={() => setOpen(true)}
         onMouseLeave={() => setOpen(false)}

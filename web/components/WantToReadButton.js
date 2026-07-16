@@ -6,9 +6,9 @@ import { FAVORITE_KEYS, readFavorites, toggleFavorite } from '../utils/favorites
 // "Want to Read" toggle for the book detail page. Persists into the same global
 // `favorited_books` array the rest of the bookshelf uses (FAVORITE_KEYS.books),
 // so a book saved here shows up in My Library and on its card.
-export default function WantToReadButton({ bookId }) {
+export default function WantToReadButton({ bookSlug }) {
   const [active, setActive] = useState(false);
-  const favId = String(bookId);
+  const favId = String(bookSlug);
 
   useEffect(() => {
     setActive(readFavorites(FAVORITE_KEYS.books).map(String).includes(favId));

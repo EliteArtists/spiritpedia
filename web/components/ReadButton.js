@@ -8,9 +8,9 @@ import { readFavorites, toggleFavorite } from '../utils/favorites.js';
 // a reader can track read status independently of their saved list.
 const READ_BOOKS_KEY = 'read_books';
 
-export default function ReadButton({ bookId }) {
+export default function ReadButton({ bookSlug }) {
   const [active, setActive] = useState(false);
-  const favId = String(bookId);
+  const favId = String(bookSlug);
 
   useEffect(() => {
     setActive(readFavorites(READ_BOOKS_KEY).map(String).includes(favId));

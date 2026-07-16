@@ -15,7 +15,7 @@ function Star({ className }) {
 }
 
 export default async function BookDetail({ params }) {
-  const { id } = await params;
+  const { slug } = await params;
 
   // Books link to a healer by the text `healer_slug` column, which is NOT a
   // declared foreign key — so a PostgREST embedded join (`healers (...)`) errors
@@ -24,7 +24,7 @@ export default async function BookDetail({ params }) {
   const { data: book, error } = await supabase
     .from('books')
     .select('*')
-    .eq('id', id)
+    .eq('slug', slug)
     .single();
 
   if (error || !book) {
@@ -68,8 +68,8 @@ export default async function BookDetail({ params }) {
           )}
 
           <div className="mt-4">
-            <WantToReadButton bookId={book.id} />
-            <ReadButton bookId={book.id} />
+            <WantToReadButton bookSlug={book.slug} />
+            <ReadButton bookSlug={book.slug} />
           </div>
         </div>
 

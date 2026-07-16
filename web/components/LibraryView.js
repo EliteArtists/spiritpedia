@@ -51,7 +51,11 @@ export default function LibraryView({
         (h) =>
           savedHealerKeys.includes(String(h.healer_slug)) || savedHealerKeys.includes(String(h.id))
       ),
-      books: books.filter((b) => savedBookIds.includes(String(b.id))),
+      // Books are now keyed by slug (detail-page buttons), but the shelf card
+      // heart still saves by id — accept either so no saved row is lost.
+      books: books.filter(
+        (b) => savedBookIds.includes(String(b.slug)) || savedBookIds.includes(String(b.id))
+      ),
       videos: videos.filter((v) => savedVideoIds.includes(String(v.id))),
       courses: courses.filter((c) => savedCourseIds.includes(String(c.id))),
       freeResources: freeResources.filter((r) => savedResourceIds.includes(String(r.id))),

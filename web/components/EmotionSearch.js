@@ -178,7 +178,7 @@ export default function EmotionSearch() {
           .select('id, name, healer_slug, tier, image_urls')
           .ilike('name', `%${term}%`)
           .limit(4),
-        supabase.from('books').select('id, title, mock_cover_url').ilike('title', `%${term}%`).limit(4),
+        supabase.from('books').select('id, title, slug, mock_cover_url').ilike('title', `%${term}%`).limit(4),
         supabase.from('videos').select('id, title, platform_url').ilike('title', `%${term}%`).limit(3),
         supabase.from('subjects').select('id, name, slug').ilike('name', `%${term}%`).limit(3),
       ]);
@@ -422,7 +422,7 @@ export default function EmotionSearch() {
                           key={`b-${b.id}`}
                           onMouseDown={(e) => {
                             e.preventDefault();
-                            navigate(`/books/${b.id}`);
+                            navigate(`/books/${b.slug}`);
                           }}
                           className={ROW_CLASS}
                         >
