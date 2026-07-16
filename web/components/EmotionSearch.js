@@ -367,7 +367,13 @@ export default function EmotionSearch() {
               emotions.map((row) => (
                 <div
                   key={row.id}
-                  onClick={() => navigate(`/subject/${row.subject_slug}`)}
+                  // onMouseDown (not onClick) + preventDefault fires before the
+                  // input's onBlur and stops it firing at all, so the dropdown
+                  // never closes out from under the navigation.
+                  onMouseDown={(e) => {
+                    e.preventDefault();
+                    navigate(`/subject/${row.subject_slug}`);
+                  }}
                   className="flex items-center justify-between px-4 py-3 text-white text-sm rounded-xl cursor-pointer hover:bg-white/5 transition-colors"
                 >
                   <span>{formatSlug(row.subject_slug)}</span>
@@ -385,7 +391,10 @@ export default function EmotionSearch() {
                       return (
                         <div
                           key={`h-${h.id}`}
-                          onClick={() => navigate(`/healers/${h.healer_slug}`)}
+                          onMouseDown={(e) => {
+                            e.preventDefault();
+                            navigate(`/healers/${h.healer_slug}`);
+                          }}
                           className={ROW_CLASS}
                         >
                           {img ? (
@@ -411,7 +420,10 @@ export default function EmotionSearch() {
                       return (
                         <div
                           key={`b-${b.id}`}
-                          onClick={() => navigate(`/books/${b.id}`)}
+                          onMouseDown={(e) => {
+                            e.preventDefault();
+                            navigate(`/books/${b.id}`);
+                          }}
                           className={ROW_CLASS}
                         >
                           {cover ? (
@@ -436,7 +448,14 @@ export default function EmotionSearch() {
                       const thumb = vid ? `https://img.youtube.com/vi/${vid}/mqdefault.jpg` : null;
                       const watch = vid ? `https://www.youtube.com/watch?v=${vid}` : v.platform_url;
                       return (
-                        <div key={`v-${v.id}`} onClick={() => navigateExternal(watch)} className={ROW_CLASS}>
+                        <div
+                          key={`v-${v.id}`}
+                          onMouseDown={(e) => {
+                            e.preventDefault();
+                            navigateExternal(watch);
+                          }}
+                          className={ROW_CLASS}
+                        >
                           {thumb ? (
                             <img src={thumb} alt={v.title} className="w-12 h-8 rounded object-cover" />
                           ) : (
@@ -453,7 +472,14 @@ export default function EmotionSearch() {
                   <>
                     <div className={HEADER_CLASS}>SUBJECTS</div>
                     {subjects.map((s) => (
-                      <div key={`s-${s.id}`} onClick={() => navigate(`/subject/${s.slug}`)} className={ROW_CLASS}>
+                      <div
+                        key={`s-${s.id}`}
+                        onMouseDown={(e) => {
+                          e.preventDefault();
+                          navigate(`/subject/${s.slug}`);
+                        }}
+                        className={ROW_CLASS}
+                      >
                         <CompassIcon className="w-4 h-4 text-violet-400 shrink-0" />
                         <span className="flex-1 text-white text-sm truncate">{s.name}</span>
                       </div>
