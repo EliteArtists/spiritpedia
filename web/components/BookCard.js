@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import Link from 'next/link';
 import CardImage from './CardImage.js';
 
 // Shared localStorage key holding the global array of favorited book ids.
@@ -49,22 +50,24 @@ export default function BookCard({ book, variant }) {
 
   return (
     <div className="flex flex-col items-center">
-      {/* Cover + popover. Hover opens it on desktop; tap toggles it on mobile. */}
+      {/* Cover + popover. Hover previews the synopsis on desktop; clicking the
+          cover routes into the internal book detail page. */}
       <div
         className="relative w-full max-w-[220px]"
         onMouseEnter={() => setOpen(true)}
         onMouseLeave={() => setOpen(false)}
-        onClick={() => setOpen((p) => !p)}
       >
         {/* A dead cover URL falls back to the same glyph a cover-less book already
             shows, rather than a broken-image icon. */}
-        <CardImage
-          src={hasCover ? book.mock_cover_url : null}
-          alt={book.title}
-          className="w-full aspect-[2/3] object-cover rounded-xl shadow-2xl transition-transform duration-300 hover:scale-105 cursor-pointer"
-          fallbackEmoji="📖"
-          fallbackClassName="w-full aspect-[2/3] rounded-xl bg-slate-800 flex items-center justify-center text-6xl shadow-2xl cursor-pointer"
-        />
+        <Link href={`/books/${book.id}`}>
+          <CardImage
+            src={hasCover ? book.mock_cover_url : null}
+            alt={book.title}
+            className="w-full aspect-[2/3] object-cover rounded-xl shadow-2xl transition-transform duration-300 hover:scale-105 cursor-pointer"
+            fallbackEmoji="📖"
+            fallbackClassName="w-full aspect-[2/3] rounded-xl bg-slate-800 flex items-center justify-center text-6xl shadow-2xl cursor-pointer"
+          />
+        </Link>
 
         {/* MODAL POPOVER — synopsis + deep links */}
         {open && (
