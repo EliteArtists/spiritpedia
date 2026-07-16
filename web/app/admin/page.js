@@ -124,6 +124,15 @@ function AdminDashboard() {
   const [healers, setHealers] = useState([]); // for relational Link Healer/Author dropdown
   const [linkedHealerSlug, setLinkedHealerSlug] = useState(''); // '' = None / General Content
   const [selectedSlugs, setSelectedSlugs] = useState([]); // multi-tag selection
+  // PUBLISHER form — links a publishing house to many healers via publisher_healers.
+  const [publisherName, setPublisherName] = useState('');
+  const [publisherSlug, setPublisherSlug] = useState('');
+  const [publisherDescription, setPublisherDescription] = useState('');
+  const [publisherWebsite, setPublisherWebsite] = useState('');
+  const [publisherLogoUrl, setPublisherLogoUrl] = useState('');
+  const [publisherFoundedYear, setPublisherFoundedYear] = useState('');
+  const [publisherHealerIds, setPublisherHealerIds] = useState([]); // linked healer ids
+  const [publisherHealerSearch, setPublisherHealerSearch] = useState(''); // dropdown filter
   const [saving, setSaving] = useState(false);
   const [toast, setToast] = useState(null); // { type: 'success' | 'error', message }
 
@@ -181,6 +190,20 @@ function AdminDashboard() {
   function toggleTag(slug) {
     setSelectedSlugs((prev) =>
       prev.includes(slug) ? prev.filter((s) => s !== slug) : [...prev, slug]
+    );
+  }
+
+  // Auto-generate the publisher slug from the name as the admin types (they can
+  // still override the slug field manually afterwards).
+  function handlePublisherName(value) {
+    setPublisherName(value);
+    setPublisherSlug(slugify(value));
+  }
+
+  // Toggle a healer id in/out of the publisher's linked-healer selection.
+  function togglePublisherHealer(id) {
+    setPublisherHealerIds((prev) =>
+      prev.includes(id) ? prev.filter((x) => x !== id) : [...prev, id]
     );
   }
 
@@ -250,11 +273,78 @@ function AdminDashboard() {
     setTiktokUrl('');
     setLinkedHealerSlug('');
     setSelectedSlugs([]);
+    setPublisherName('');
+    setPublisherSlug('');
+    setPublisherDescription('');
+    setPublisherWebsite('');
+    setPublisherLogoUrl('');
+    setPublisherFoundedYear('');
+    setPublisherHealerIds([]);
+    setPublisherHealerSearch('');
   }
 
   async function handleSubmit(e) {
     e.preventDefault();
     setToast(null);
+
+    // PUBLISHER — self-contained flow: insert the house, then bulk-link healers
+    // through the publisher_healers join. Handled up front and returned so it
+    // stays clear of the content/healer insert path below.
+    if (tab === 'publisher') {
+      if (!publisherName.trim() || !publisherSlug.trim()) {
+        setToast({ type: 'error', message: 'Publisher name and slug are both required.' });
+        return;
+      }
+      const site = publisherWebsite.trim();
+      if (site && !/^https?:\/\/.+\..+/i.test(site)) {
+        setToast({ type: 'error', message: 'Website URL must be a valid http(s) address.' });
+        return;
+      }
+      const foundedNum = publisherFoundedYear.trim() ? parseInt(publisherFoundedYear.trim(), 10) : null;
+
+      setSaving(true);
+      try {
+        // 1. Insert the publisher and retrieve its generated id.
+        const { data: created, error: pubErr } = await supabase
+          .from('publishers')
+          .insert({
+            name: publisherName.trim(),
+            slug: publisherSlug.trim(),
+            description: publisherDescription.trim() || null,
+            website_url: site || null,
+            logo_url: publisherLogoUrl.trim() || null,
+            founded_year: Number.isFinite(foundedNum) ? foundedNum : null,
+            subject_slugs: selectedSlugs,
+          })
+          .select('id')
+          .single();
+        if (pubErr) throw pubErr;
+
+        // 2 & 3. Map each selected healer to a join row and bulk insert.
+        if (publisherHealerIds.length > 0) {
+          const rows = publisherHealerIds.map((healerId) => ({
+            publisher_id: created.id,
+            healer_id: healerId,
+          }));
+          const { error: linkErr } = await supabase.from('publisher_healers').insert(rows);
+          if (linkErr) throw linkErr;
+        }
+
+        setToast({
+          type: 'success',
+          message: `Publisher saved! Linked ${publisherHealerIds.length} healer${
+            publisherHealerIds.length === 1 ? '' : 's'
+          }.`,
+        });
+        resetForm();
+      } catch (err) {
+        console.error('Publisher save failed:', err);
+        setToast({ type: 'error', message: `Save failed: ${err.message || 'unknown error'}` });
+      } finally {
+        setSaving(false);
+      }
+      return;
+    }
 
     if (tab === 'healer') {
       if (!name.trim() || !slug.trim()) {
@@ -504,6 +594,7 @@ function AdminDashboard() {
             { key: 'course', label: '🎓 Add Course' },
             { key: 'healer', label: '👤 Add Healer' },
             { key: 'free_resource', label: '✨ Add Free Resource' },
+            { key: 'publisher', label: '🏢 Add Publisher' },
           ].map((t) => (
             <button
               key={t.key}
@@ -526,7 +617,7 @@ function AdminDashboard() {
         {/* FORM */}
         <form onSubmit={handleSubmit} className="space-y-6 bg-slate-900 border border-slate-800 rounded-2xl p-8">
           {/* VIDEO + BOOK SHARED FIELDS */}
-          {tab !== 'healer' && (
+          {tab !== 'healer' && tab !== 'publisher' && (
             <>
               <div>
                 <label className={labelClass}>Link Healer / Author</label>
@@ -1072,9 +1163,144 @@ function AdminDashboard() {
             </>
           )}
 
-          {/* MULTI-TAG SUBJECT SELECTOR — shared by Video, Book, and Healer forms.
-              The Course and Free Resource forms supply their slugs via their own
-              comma-separated fields. */}
+          {/* PUBLISHER FIELDS */}
+          {tab === 'publisher' && (
+            <>
+              <div>
+                <label className={labelClass}>Publisher Name</label>
+                <input
+                  type="text"
+                  value={publisherName}
+                  onChange={(e) => handlePublisherName(e.target.value)}
+                  placeholder="e.g. Hay House"
+                  className={inputClass}
+                />
+              </div>
+
+              <div>
+                <label className={labelClass}>Slug (auto-generated)</label>
+                <input
+                  type="text"
+                  value={publisherSlug}
+                  onChange={(e) => setPublisherSlug(slugify(e.target.value))}
+                  placeholder="hay-house"
+                  className={inputClass}
+                />
+                <p className="mt-2 text-xs text-slate-500">
+                  Public profile lives at <span className="text-cyan-400">/publishers/{publisherSlug || 'your-slug'}</span>
+                </p>
+              </div>
+
+              <div>
+                <label className={labelClass}>Description</label>
+                <textarea
+                  value={publisherDescription}
+                  onChange={(e) => setPublisherDescription(e.target.value)}
+                  placeholder="2–3 sentences about the publishing house."
+                  rows={3}
+                  className={inputClass}
+                />
+              </div>
+
+              <div>
+                <label className={labelClass}>Website URL</label>
+                <input
+                  type="url"
+                  value={publisherWebsite}
+                  onChange={(e) => setPublisherWebsite(e.target.value)}
+                  placeholder="https://www.hayhouse.com"
+                  className={inputClass}
+                />
+              </div>
+
+              <div>
+                <label className={labelClass}>Logo Image URL</label>
+                <input
+                  type="text"
+                  value={publisherLogoUrl}
+                  onChange={(e) => setPublisherLogoUrl(e.target.value)}
+                  placeholder="https://…/logo.png"
+                  className={inputClass}
+                />
+              </div>
+
+              <div>
+                <label className={labelClass}>Founded Year (optional)</label>
+                <input
+                  type="number"
+                  value={publisherFoundedYear}
+                  onChange={(e) => setPublisherFoundedYear(e.target.value)}
+                  placeholder="1984"
+                  className={inputClass}
+                />
+              </div>
+
+              {/* LINK HEALERS — searchable, chainable multi-select */}
+              <div>
+                <label className={labelClass}>
+                  Link Healers
+                  <span className="ml-2 text-cyan-400 normal-case tracking-normal font-semibold">
+                    {publisherHealerIds.length} selected
+                  </span>
+                </label>
+                <input
+                  type="text"
+                  value={publisherHealerSearch}
+                  onChange={(e) => setPublisherHealerSearch(e.target.value)}
+                  placeholder="Search healers by name…"
+                  className={inputClass}
+                />
+
+                {publisherHealerIds.length > 0 && (
+                  <div className="flex flex-wrap gap-2 mt-3">
+                    {publisherHealerIds.map((id) => {
+                      const h = healers.find((x) => x.id === id);
+                      return (
+                        <button
+                          key={id}
+                          type="button"
+                          onClick={() => togglePublisherHealer(id)}
+                          className="px-3 py-1.5 rounded-full text-xs font-bold bg-gradient-to-r from-cyan-400 to-emerald-400 text-slate-950"
+                        >
+                          {h?.name || `#${id}`} ✕
+                        </button>
+                      );
+                    })}
+                  </div>
+                )}
+
+                <div className="mt-3 max-h-48 overflow-y-auto rounded-lg border border-slate-700 divide-y divide-slate-800">
+                  {healers
+                    .filter((h) =>
+                      h.name.toLowerCase().includes(publisherHealerSearch.trim().toLowerCase())
+                    )
+                    .map((h) => {
+                      const active = publisherHealerIds.includes(h.id);
+                      return (
+                        <button
+                          key={h.id}
+                          type="button"
+                          onClick={() => togglePublisherHealer(h.id)}
+                          className={`w-full text-left px-4 py-2 text-sm transition-colors ${
+                            active ? 'bg-cyan-500/20 text-white font-semibold' : 'text-slate-300 hover:bg-slate-800'
+                          }`}
+                        >
+                          {active ? '✓ ' : ''}
+                          {h.name}
+                        </button>
+                      );
+                    })}
+                  {healers.length === 0 && (
+                    <p className="px-4 py-2 text-sm text-slate-500">Loading healers…</p>
+                  )}
+                </div>
+              </div>
+            </>
+          )}
+
+          {/* MULTI-TAG SUBJECT SELECTOR — shared by Video, Book, Healer and
+              Publisher forms. The Course and Free Resource forms supply their
+              slugs via their own comma-separated fields. */}
           {tab !== 'course' && tab !== 'free_resource' && (
           <div>
             <label className={labelClass}>
@@ -1130,7 +1356,9 @@ function AdminDashboard() {
                         ? 'Course'
                         : tab === 'free_resource'
                           ? 'Free Resource'
-                          : 'Healer'
+                          : tab === 'publisher'
+                            ? 'Publisher'
+                            : 'Healer'
                 }`}
           </button>
         </form>
