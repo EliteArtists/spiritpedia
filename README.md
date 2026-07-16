@@ -106,8 +106,12 @@ The `/web` directory contains the full Next.js application.
 * `/` — Homepage — emotional search, subject pills, hero billboard, content shelves, video grid
 * `/subject/[slug]` — Subject page — every healer, book, and video carrying that subject tag
 * `/healers/[slug]` — Individual healer profile with bio, photo mosaic, offerings, contact funnel
+* `/books/[slug]` — Book detail page — cover, description, purchase links, Want to Read / Mark as Read, reviews placeholder
+* `/offerings/[id]` — Offering detail page (courses / retreats / downloads / memberships) with contextual CTA
+* `/free-resources/[id]` — Free resource detail page
+* `/publishers/[slug]` — Publishing house profile — linked authors and an auto-curated, paginated books grid
 * `/library` — Personal saved library, auto-organised by subject
-* `/admin` — Content ingestion dashboard
+* `/admin` — Content ingestion dashboard (videos, books, courses, healers, free resources, publishers)
 
 #### Key Components
 | File | Purpose |
@@ -145,15 +149,19 @@ The library at `/library` reads saved items from local storage (`favorited_books
 🗄️ Database Structure (Supabase)
 #### Tables
 * **healers**: `id`, `name`, `healer_slug`, `bio`, `tier`, `image_urls[]`, `subject_slugs[]`, `availability_type`, `country`, `city`, `contact_email`, `contact_phone`, `booking_url`, `website_url`, `youtube_url`, `instagram_url`, `facebook_url`, `twitter_url`, `tiktok_url`
-* **books**: `id`, `title`, `author`, `description`, `mock_cover_url`, `amazon_url`, `goodreads_url`, `worldofbooks_url`, `subject_slugs[]`, `healer_slug`
+* **books**: `id`, `title`, `slug`, `author`, `description`, `mock_cover_url`, `amazon_url`, `goodreads_url`, `worldofbooks_url`, `subject_slugs[]`, `healer_slug`
 * **videos**: `id`, `title`, `platform_url`, `subject_slugs[]`, `healer_slug`
 * **subjects**: `id`, `name`, `slug`
 * **courses**: `id`, `title`, `description`, `course_url`, `price`, `image_url`, `product_type`, `affiliate_status`, `start_date`, `end_date`, `is_active`, `subject_slugs[]`, `healer_id`
 * **free_resources**: `id`, `title`, `description`, `resource_url`, `resource_type`, `image_url`, `is_featured`, `is_active`, `start_date`, `end_date`, `subject_slugs[]`, `healer_id`
+* **publishers**: `id` (uuid), `name`, `slug`, `description`, `website_url`, `logo_url`, `founded_year`, `subject_slugs[]`
+* **publisher_healers**: `id`, `publisher_id` (→ publishers.id), `healer_id` (→ healers.id) — the many-to-many junction linking a publishing house to its authors
+* **emotion_mappings**: `id`, `emotion`, `subject_slug`, `weight` — powers the emotional search bar; one emotion maps to several weighted subjects
 
 #### Conventions worth knowing
 * **`subject_slugs` is a Postgres array**, not a string. Every subject filter is an array-containment check (`.contains(...)` → the `@>` operator), which matches a slug as one whole element — that is what makes hyphenated tags like `eft-tapping` safe.
-* **Healers, books, and videos link by `healer_slug`** (text). **Courses and free resources link by `healer_id`** (bigint). The two are not interchangeable.
+* **Healers, books, and videos link by `healer_slug`** (text). **Courses, free resources, and publishers link by `healer_id`** (bigint, via the `publisher_healers` junction for publishers). The two are not interchangeable.
+* **Books resolve by `slug`**, not id — `/books/[slug]` is SEO-friendly, and `books.slug` is unique and backfilled from the title. Publishers resolve by `slug` too.
 * **`tier`** replaces the legacy `is_famous` boolean. Values: `superhero` / `luminary` / `local_hero`. Anything else — including NULL mid-backfill — falls back to Local Hero, so no practitioner silently vanishes.
 * **`courses` stores every paid offering**, split by `product_type`: `course` / `download` / `membership` / `retreat`. An unset value is treated as a course, so legacy rows predating the column still surface.
 * **`free_resources.resource_type`**: `meditation` / `download` / `mini_course` / `workshop` / `practice`.
@@ -183,15 +191,24 @@ The library at `/library` reads saved items from local storage (`favorited_books
 | My Library with dynamic subject folders | ✅ Complete |
 | Admin ingestion dashboard + duplicate guards | ✅ Complete |
 | URL parsing automation (YouTube + Amazon) | ✅ Complete |
-| Emotion-to-subject mapping wired to search | ⬜ Not started — the search bar is still an inert input |
+| Emotional search bar — emotion → subject mapping wired to the input | ✅ Complete |
+| Animated typewriter homepage search bar | ✅ Complete |
+| Universal search across healers, books, videos, and subjects | ✅ Complete |
+| Offering detail pages (courses / retreats / downloads / free resources) | ✅ Complete |
+| Book detail pages (purchase links, Want to Read, Mark as Read, reviews placeholder) | ✅ Complete |
+| Publisher admin tab + public publisher profile pages | ✅ Complete |
+| Book URLs migrated to SEO-friendly slugs | ✅ Complete |
 | Vercel production deployment | ⬜ Next |
 | Content library (target: 5,000 videos + 5,000 books) | ⬜ Ongoing |
 | Flutter native app | ⬜ Phase 2 |
 | IAM notification system | ⬜ Phase 2 |
 
 💡 Immediate Next Steps
-1. **Wire "How are you feeling today?" to emotion → subject mapping.** The input renders but has no handler — this is the one core promise of the product that is not yet built.
-2. Deploy to Vercel (production)
-3. Begin content build — target 200 videos/week
+1. **Final content sprint** — Deepak Chopra, Bashar, and the remaining missing Superheroes.
+2. **Ascended Masters tier** — Wayne Dyer, Louise Hay, Ram Dass.
+3. **Ancient Teachers category** — Jesus, Buddha, Lao Tzu.
+4. **Publishing Houses content sprint** — Hay House, Awaken Village Press.
+5. Deploy to Vercel (production).
+6. Flutter app build (Phase 2).
 
 Made with love in Tavira 💫
