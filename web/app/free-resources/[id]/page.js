@@ -40,15 +40,14 @@ export default async function FreeResourceDetail({ params }) {
         {/* Darkening scrim so the overlaid text stays legible over any image */}
         <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent" />
 
-        {/* Top-left: back to the healer's profile */}
-        {healer && (
-          <Link
-            href={`/healers/${healer.healer_slug}`}
-            className="absolute top-6 left-6 text-sm text-white/70 hover:text-white transition-colors"
-          >
-            ← Back to {healer.name}
-          </Link>
-        )}
+        {/* Top-left: back to the Spiritpedia homepage. The healer's profile is
+            reachable from the "By …" credit below, so this stays a top-level exit. */}
+        <Link
+          href="/"
+          className="absolute top-6 left-6 text-sm text-white/70 hover:text-white transition-colors"
+        >
+          ← Back to Spiritpedia
+        </Link>
 
         {/* Bottom-left: FREE RESOURCE badge + title (no price badge — always free) */}
         <div className="absolute bottom-6 left-6 right-6">
