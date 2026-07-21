@@ -605,8 +605,25 @@ function AdminDashboard() {
           return; // leave form values intact; finally{} clears the saving flag
         }
 
+        // Books resolve by `slug` on /books/[slug], so every insert MUST carry a
+        // unique slug — a NULL slug 404s the detail page. Generate it from the
+        // title and disambiguate against any existing slug so no two books clash.
+        const baseSlug = slugify(title.trim()) || 'book';
+        let bookSlug = baseSlug;
+        const { data: slugClashes } = await supabase
+          .from('books')
+          .select('slug')
+          .or(`slug.eq.${baseSlug},slug.like.${baseSlug}-%`);
+        const takenSlugs = new Set((slugClashes || []).map((r) => r.slug));
+        if (takenSlugs.has(bookSlug)) {
+          let n = 2;
+          while (takenSlugs.has(`${baseSlug}-${n}`)) n += 1;
+          bookSlug = `${baseSlug}-${n}`;
+        }
+
         ({ error } = await supabase.from('books').insert({
           title: title.trim(),
+          slug: bookSlug,
           amazon_url: url.trim(),
           author: author.trim() || null,
           mock_cover_url: coverUrl.trim() || null,
