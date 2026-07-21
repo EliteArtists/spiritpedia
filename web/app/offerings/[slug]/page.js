@@ -2,24 +2,35 @@ import { supabase } from '@/utils/supabase';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
 
-// This layout is always free, so there's no price badge and one fixed CTA.
-export default async function FreeResourceDetail({ params }) {
-  const { id } = await params;
+// Product-type styling + copy live in one map so the badge colour, badge label,
+// and CTA label all stay in lockstep. An unset product_type falls back to
+// 'course' — the admin default and the legacy pre-column behaviour.
+const PRODUCT_TYPES = {
+  course: { badge: 'bg-violet-600', label: 'COURSE', cta: 'Enrol Now →' },
+  retreat: { badge: 'bg-amber-500', label: 'RETREAT', cta: 'Book Place →' },
+  download: { badge: 'bg-blue-600', label: 'DOWNLOAD', cta: 'Get Download →' },
+  membership: { badge: 'bg-emerald-600', label: 'MEMBERSHIP', cta: 'Join Now →' },
+};
 
-  // Join the healer for the "By …" credit. Free resources relate to a healer
-  // through the bigint healer_id FK.
-  const { data: resource, error } = await supabase
-    .from('free_resources')
+export default async function OfferingDetail({ params }) {
+  const { slug } = await params;
+
+  // Join the healer so we can render the "By …" credit from one round-trip.
+  // Courses relate to a healer through the bigint healer_id FK. Offerings resolve
+  // by the SEO-friendly `slug`, not the UUID id.
+  const { data: offering, error } = await supabase
+    .from('courses')
     .select('*, healers (name, healer_slug)')
-    .eq('id', id)
+    .eq('slug', slug)
     .single();
 
-  if (error || !resource) {
+  if (error || !offering) {
     notFound();
   }
 
-  const healer = resource.healers;
-  const subjects = Array.isArray(resource.subject_slugs) ? resource.subject_slugs : [];
+  const healer = offering.healers;
+  const type = PRODUCT_TYPES[offering.product_type] || PRODUCT_TYPES.course;
+  const subjects = Array.isArray(offering.subject_slugs) ? offering.subject_slugs : [];
 
   return (
     <main className="relative min-h-screen bg-[#0a0f1d] text-white">
@@ -31,16 +42,23 @@ export default async function FreeResourceDetail({ params }) {
         ← Back to Spiritpedia
       </Link>
 
-      {/* Header — centred badge, title, healer credit */}
+      {/* Header — centred badges, title, healer credit */}
       <header className="max-w-4xl mx-auto pt-12 pb-8 px-6 text-center bg-[#0a0f1d]">
         <div className="flex items-center justify-center gap-3 mb-4">
-          <span className="inline-block px-3 py-1 text-xs font-bold uppercase tracking-wider rounded-full bg-teal-600 text-white">
-            FREE RESOURCE
+          <span
+            className={`inline-block px-3 py-1 text-xs font-bold uppercase tracking-wider rounded-full text-white ${type.badge}`}
+          >
+            {type.label}
           </span>
+          {offering.price && (
+            <span className="bg-[#111827] text-white text-xs font-bold px-3 py-1 rounded-full border border-white/10">
+              {offering.price}
+            </span>
+          )}
         </div>
 
         <h1 className="text-3xl md:text-4xl font-bold text-white mt-4 leading-tight">
-          {resource.title}
+          {offering.title}
         </h1>
 
         {healer && (
@@ -57,10 +75,10 @@ export default async function FreeResourceDetail({ params }) {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-start max-w-4xl mx-auto px-6 py-10">
         {/* Left column */}
         <div>
-          {resource.image_url ? (
+          {offering.image_url ? (
             <img
-              src={resource.image_url}
-              alt={resource.title}
+              src={offering.image_url}
+              alt={offering.title}
               className="w-full rounded-2xl object-cover max-h-[400px]"
             />
           ) : (
@@ -70,24 +88,24 @@ export default async function FreeResourceDetail({ params }) {
 
         {/* Right column */}
         <div>
-          {resource.description && (
+          {offering.description && (
             <p className="text-base leading-relaxed text-gray-300 whitespace-pre-line">
-              {resource.description}
+              {offering.description}
             </p>
           )}
 
-          {resource.resource_url ? (
+          {offering.course_url ? (
             <a
-              href={resource.resource_url}
+              href={offering.course_url}
               target="_blank"
               rel="noopener noreferrer"
               className="mt-8 w-full py-4 px-8 bg-violet-600 hover:bg-violet-700 text-white font-bold text-base rounded-2xl transition-colors duration-200 text-center block"
             >
-              Get It Free →
+              {type.cta}
             </a>
           ) : (
             <span className="text-gray-400 text-center text-sm mt-8 block">
-              Contact {healer ? healer.name : 'the healer'} directly for access information.
+              Contact {healer ? healer.name : 'the healer'} directly for booking information.
             </span>
           )}
 

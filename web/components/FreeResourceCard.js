@@ -18,7 +18,7 @@ export default function FreeResourceCard({ item, healerName }) {
   return (
     <div className="group relative h-full">
       <a
-        href={`/free-resources/${item.id}`}
+        href={`/free-resources/${item.slug}`}
         className="flex h-full flex-col rounded-2xl overflow-hidden bg-[#111827] border border-white/10 shadow-lg hover:border-[#7c3aed]/60 hover:shadow-2xl group-hover:-translate-y-1 transition-all"
       >
         {/* Cover image + resource type badge. The badge sits left because the

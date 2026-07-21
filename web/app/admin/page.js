@@ -47,6 +47,23 @@ function slugify(value) {
     .replace(/^-+|-+$/g, ''); // trim edge hyphens
 }
 
+// Build a slug from `rawTitle` that is unique within `table`. Detail pages
+// (/books, /offerings, /free-resources) resolve by slug, so every insert MUST
+// carry one — a NULL slug 404s the page. On a clash with an existing row the
+// slug gains a numeric suffix (-2, -3, …) so no two rows ever collide.
+async function uniqueSlug(table, rawTitle) {
+  const baseSlug = slugify(rawTitle) || table;
+  const { data: clashes } = await supabase
+    .from(table)
+    .select('slug')
+    .or(`slug.eq.${baseSlug},slug.like.${baseSlug}-%`);
+  const taken = new Set((clashes || []).map((r) => r.slug));
+  if (!taken.has(baseSlug)) return baseSlug;
+  let n = 2;
+  while (taken.has(`${baseSlug}-${n}`)) n += 1;
+  return `${baseSlug}-${n}`;
+}
+
 // ---------------------------------------------------------------------------
 // ACCESS DENIED VIEW
 // ---------------------------------------------------------------------------
@@ -606,20 +623,8 @@ function AdminDashboard() {
         }
 
         // Books resolve by `slug` on /books/[slug], so every insert MUST carry a
-        // unique slug — a NULL slug 404s the detail page. Generate it from the
-        // title and disambiguate against any existing slug so no two books clash.
-        const baseSlug = slugify(title.trim()) || 'book';
-        let bookSlug = baseSlug;
-        const { data: slugClashes } = await supabase
-          .from('books')
-          .select('slug')
-          .or(`slug.eq.${baseSlug},slug.like.${baseSlug}-%`);
-        const takenSlugs = new Set((slugClashes || []).map((r) => r.slug));
-        if (takenSlugs.has(bookSlug)) {
-          let n = 2;
-          while (takenSlugs.has(`${baseSlug}-${n}`)) n += 1;
-          bookSlug = `${baseSlug}-${n}`;
-        }
+        // unique slug — a NULL slug 404s the detail page.
+        const bookSlug = await uniqueSlug('books', title.trim());
 
         ({ error } = await supabase.from('books').insert({
           title: title.trim(),
@@ -654,8 +659,12 @@ function AdminDashboard() {
         // Resolve the relational bigint healer_id from the linked healer slug.
         const linkedHealer = healers.find((h) => h.slug === linkedHealerSlug);
 
+        // Offerings resolve by `slug` on /offerings/[slug]; generate a unique one.
+        const courseSlug = await uniqueSlug('courses', title.trim());
+
         ({ error } = await supabase.from('courses').insert({
           title: title.trim(),
+          slug: courseSlug,
           description: courseDescription.trim() || null,
           course_url: url.trim(),
           price: coursePrice.trim() || null,
@@ -673,8 +682,12 @@ function AdminDashboard() {
         // from the linked healer slug, mirroring the Course pipeline.
         const linkedHealer = healers.find((h) => h.slug === linkedHealerSlug);
 
+        // Free resources resolve by `slug` on /free-resources/[slug]; likewise.
+        const freeResourceSlug = await uniqueSlug('free_resources', title.trim());
+
         ({ error } = await supabase.from('free_resources').insert({
           title: title.trim(),
+          slug: freeResourceSlug,
           description: freeResourceDescription.trim() || null,
           resource_type: resourceType,
           resource_url: url.trim(),
