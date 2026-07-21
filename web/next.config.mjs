@@ -5,12 +5,6 @@ const nextConfig = {
     swcPlugins: [],
     optimizeCss: false,
   },
-  compiler: {
-    // Use fallback CSS engine
-    css: {
-      engine: 'postcss',
-    },
-  },
 };
 
 export default nextConfig;
