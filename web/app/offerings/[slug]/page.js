@@ -1,6 +1,8 @@
 import { supabase } from '@/utils/supabase';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
+import BackButton from '@/components/BackButton';
+import { backContextQuery } from '@/utils/backContext';
 
 // Product-type styling + copy live in one map so the badge colour, badge label,
 // and CTA label all stay in lockstep. An unset product_type falls back to
@@ -12,8 +14,10 @@ const PRODUCT_TYPES = {
   membership: { badge: 'bg-emerald-600', label: 'MEMBERSHIP', cta: 'Join Now →' },
 };
 
-export default async function OfferingDetail({ params }) {
+export default async function OfferingDetail({ params, searchParams }) {
   const { slug } = await params;
+  // Contextual back navigation — the linking page supplies its own path + label.
+  const { from, fromTitle } = await searchParams;
 
   // Join the healer so we can render the "By …" credit from one round-trip.
   // Courses relate to a healer through the bigint healer_id FK. Offerings resolve
@@ -34,13 +38,10 @@ export default async function OfferingDetail({ params }) {
 
   return (
     <main className="relative min-h-screen bg-[#0a0f1d] text-white">
-      {/* Back link — anchored to the page's top-left, above the header */}
-      <Link
-        href="/"
-        className="absolute top-8 left-6 md:left-8 text-sm text-gray-500 hover:text-gray-300 transition-colors z-10"
-      >
-        ← Back to Spiritpedia
-      </Link>
+      {/* Back link — anchored to the page's top-left, above the header, context-aware */}
+      <div className="absolute top-8 left-6 md:left-8 z-10">
+        <BackButton from={from} fromTitle={fromTitle} />
+      </div>
 
       {/* Header — centred badges, title, healer credit */}
       <header className="max-w-4xl mx-auto pt-12 pb-8 px-6 text-center bg-[#0a0f1d]">
@@ -63,7 +64,7 @@ export default async function OfferingDetail({ params }) {
 
         {healer && (
           <Link
-            href={`/healers/${healer.healer_slug}`}
+            href={`/healers/${healer.healer_slug}${backContextQuery(`/offerings/${offering.slug}`, offering.title)}`}
             className="text-sm text-violet-400 hover:text-violet-300 mt-2 inline-block"
           >
             By {healer.name}

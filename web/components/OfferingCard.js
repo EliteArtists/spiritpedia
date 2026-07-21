@@ -1,6 +1,7 @@
 import CardImage from './CardImage.js';
 import FavoriteHeart from './FavoriteHeart.js';
 import { FAVORITE_KEYS } from '../utils/favorites.js';
+import { backContextQuery } from '../utils/backContext.js';
 
 // Compact download glyph, sized to sit inline with a button label.
 export function DownloadIcon() {
@@ -46,11 +47,11 @@ function OfferingCta({ productType }) {
 // The favourite heart is a sibling of the <a>, not a child — a button inside an
 // anchor is invalid nesting. `group` therefore lives on the wrapper so the card's
 // hover effects still reach into the link.
-export default function OfferingCard({ item, healerName }) {
+export default function OfferingCard({ item, healerName, from, fromTitle }) {
   return (
     <div className="group relative h-full">
       <a
-        href={`/offerings/${item.slug}`}
+        href={`/offerings/${item.slug}${backContextQuery(from, fromTitle)}`}
         className="flex h-full flex-col rounded-2xl overflow-hidden bg-[#111827] border border-white/10 shadow-lg hover:border-[#7c3aed]/60 hover:shadow-2xl group-hover:-translate-y-1 transition-all"
       >
         {/* Cover image + price badge. The badge sits left because the heart owns

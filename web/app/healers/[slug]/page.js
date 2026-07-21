@@ -1,6 +1,6 @@
 import { supabase } from '@/utils/supabase';
-import Link from 'next/link';
 import BookCard from '@/components/BookCard';
+import BackButton from '@/components/BackButton';
 import ContentShelf from '@/components/ContentShelf';
 import FreeResourceCard from '@/components/FreeResourceCard';
 import HeroImageRotator from '@/components/HeroImageRotator';
@@ -135,8 +135,10 @@ function TierBadge({ tier }) {
   );
 }
 
-export default async function HealerProfile({ params }) {
+export default async function HealerProfile({ params, searchParams }) {
   const { slug } = await params;
+  // Contextual back navigation — whatever page linked here supplies its path + label.
+  const { from, fromTitle } = await searchParams;
 
   const { data: healer, error } = await supabase.from('healers').select('*').eq('healer_slug', slug).single();
 
@@ -191,6 +193,10 @@ export default async function HealerProfile({ params }) {
 
   const firstName = healer.name?.split(' ')[0] || healer.name;
 
+  // Every detail-page card on this profile carries the healer as its back-context,
+  // so tapping a book/offering/resource and pressing back returns here, not home.
+  const fromHealer = `/healers/${slug}`;
+
   // SOCIAL + WEB LINKS — only entries with a populated column survive, so an icon
   // button renders solely for channels the healer actually filled in.
   const socialLinks = [
@@ -210,13 +216,10 @@ export default async function HealerProfile({ params }) {
     <main className="min-h-screen bg-[#0a0f1d] text-white font-sans">
       {/* ── SECTION 1 · CINEMATIC CROSSFADE HERO ─────────────────────────── */}
       <HeroImageRotator images={portraits} alt={healer.name}>
-        {/* Back link — top-left, above the gradient. */}
-        <Link
-          href="/"
-          className="absolute top-6 left-6 z-10 text-sm text-white/70 transition-colors hover:text-white"
-        >
-          &larr; Back to Spiritpedia
-        </Link>
+        {/* Back link — top-left, above the gradient, context-aware. */}
+        <div className="absolute top-6 left-6 z-10">
+          <BackButton from={from} fromTitle={fromTitle} />
+        </div>
 
         {/* Tier badge + name + social — bottom-left, clear of the centred dots. */}
         <div className="absolute bottom-12 left-6 md:left-12 max-w-4xl">
@@ -335,7 +338,7 @@ export default async function HealerProfile({ params }) {
           title="Books & Literature"
           subtitle="The Curated Archive"
           items={books}
-          renderItem={(book) => <BookCard book={book} />}
+          renderItem={(book) => <BookCard book={book} from={fromHealer} fromTitle={healer.name} />}
           itemWidthClass="w-[200px]"
         />
 
@@ -344,7 +347,7 @@ export default async function HealerProfile({ params }) {
           title="Free Resources"
           subtitle="No Cost, No Catch"
           items={freeResources}
-          renderItem={(item) => <FreeResourceCard item={item} />}
+          renderItem={(item) => <FreeResourceCard item={item} from={fromHealer} fromTitle={healer.name} />}
         />
 
         {/* 4d · Courses (product_type = 'course') */}
@@ -352,7 +355,7 @@ export default async function HealerProfile({ params }) {
           title="Courses & Programmes"
           subtitle="Go Deeper"
           items={courseOfferings}
-          renderItem={(item) => <OfferingCard item={item} />}
+          renderItem={(item) => <OfferingCard item={item} from={fromHealer} fromTitle={healer.name} />}
         />
 
         {/* 4e · Retreats (product_type = 'retreat') */}
@@ -360,7 +363,7 @@ export default async function HealerProfile({ params }) {
           title="Retreats & Events"
           subtitle="Live Experiences"
           items={retreatOfferings}
-          renderItem={(item) => <OfferingCard item={item} />}
+          renderItem={(item) => <OfferingCard item={item} from={fromHealer} fromTitle={healer.name} />}
         />
 
         {/* 4f · Downloads (product_type = 'download') */}
@@ -368,7 +371,7 @@ export default async function HealerProfile({ params }) {
           title="Downloads & Audio"
           subtitle="Take It With You"
           items={downloadOfferings}
-          renderItem={(item) => <OfferingCard item={item} />}
+          renderItem={(item) => <OfferingCard item={item} from={fromHealer} fromTitle={healer.name} />}
         />
 
         {/* 4g · Memberships (product_type = 'membership') */}
@@ -376,7 +379,7 @@ export default async function HealerProfile({ params }) {
           title="Memberships"
           subtitle="Ongoing Journey"
           items={membershipOfferings}
-          renderItem={(item) => <OfferingCard item={item} />}
+          renderItem={(item) => <OfferingCard item={item} from={fromHealer} fromTitle={healer.name} />}
         />
       </div>
     </main>

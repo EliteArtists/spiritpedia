@@ -1,8 +1,10 @@
 import { supabase } from '@/utils/supabase';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
+import BackButton from '@/components/BackButton';
 import ReadButton from '@/components/ReadButton';
 import WantToReadButton from '@/components/WantToReadButton';
+import { backContextQuery } from '@/utils/backContext';
 
 // Filled-outline star glyph. Sized/coloured by the caller via className so the
 // same shape serves the inline rating row and the large empty-state icon.
@@ -14,8 +16,11 @@ function Star({ className }) {
   );
 }
 
-export default async function BookDetail({ params }) {
+export default async function BookDetail({ params, searchParams }) {
   const { slug } = await params;
+  // Contextual back navigation — whatever page linked here passes its own path
+  // and label via ?from=&fromTitle=, so the back link returns the user there.
+  const { from, fromTitle } = await searchParams;
 
   // Books link to a healer by the text `healer_slug` column, which is NOT a
   // declared foreign key — so a PostgREST embedded join (`healers (...)`) errors
@@ -43,13 +48,10 @@ export default async function BookDetail({ params }) {
 
   return (
     <main className="relative min-h-screen bg-[#0a0f1d] pb-16">
-      {/* Back link — anchored to the page's top-left */}
-      <Link
-        href="/"
-        className="absolute top-8 left-6 md:left-8 text-sm text-gray-500 hover:text-gray-300 transition-colors z-10"
-      >
-        ← Back to Spiritpedia
-      </Link>
+      {/* Back link — anchored to the page's top-left, context-aware */}
+      <div className="absolute top-8 left-6 md:left-8 z-10">
+        <BackButton from={from} fromTitle={fromTitle} />
+      </div>
 
       {/* Two-column body — fixed 280px cover column, fluid detail column */}
       <div className="max-w-4xl mx-auto px-6 pt-20 pb-12 grid grid-cols-1 md:grid-cols-[280px_1fr] gap-10 items-start">
@@ -81,7 +83,7 @@ export default async function BookDetail({ params }) {
 
           {healer ? (
             <Link
-              href={`/healers/${healer.healer_slug}`}
+              href={`/healers/${healer.healer_slug}${backContextQuery(`/books/${book.slug}`, book.title)}`}
               className="text-sm text-violet-400 hover:text-violet-300 mb-4 inline-block"
             >
               By {healer.name}

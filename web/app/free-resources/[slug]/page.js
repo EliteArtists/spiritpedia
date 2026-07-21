@@ -1,10 +1,14 @@
 import { supabase } from '@/utils/supabase';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
+import BackButton from '@/components/BackButton';
+import { backContextQuery } from '@/utils/backContext';
 
 // This layout is always free, so there's no price badge and one fixed CTA.
-export default async function FreeResourceDetail({ params }) {
+export default async function FreeResourceDetail({ params, searchParams }) {
   const { slug } = await params;
+  // Contextual back navigation — the linking page supplies its own path + label.
+  const { from, fromTitle } = await searchParams;
 
   // Join the healer for the "By …" credit. Free resources relate to a healer
   // through the bigint healer_id FK. They resolve by the SEO-friendly `slug`,
@@ -24,13 +28,10 @@ export default async function FreeResourceDetail({ params }) {
 
   return (
     <main className="relative min-h-screen bg-[#0a0f1d] text-white">
-      {/* Back link — anchored to the page's top-left, above the header */}
-      <Link
-        href="/"
-        className="absolute top-8 left-6 md:left-8 text-sm text-gray-500 hover:text-gray-300 transition-colors z-10"
-      >
-        ← Back to Spiritpedia
-      </Link>
+      {/* Back link — anchored to the page's top-left, above the header, context-aware */}
+      <div className="absolute top-8 left-6 md:left-8 z-10">
+        <BackButton from={from} fromTitle={fromTitle} />
+      </div>
 
       {/* Header — centred badge, title, healer credit */}
       <header className="max-w-4xl mx-auto pt-12 pb-8 px-6 text-center bg-[#0a0f1d]">
@@ -46,7 +47,7 @@ export default async function FreeResourceDetail({ params }) {
 
         {healer && (
           <Link
-            href={`/healers/${healer.healer_slug}`}
+            href={`/healers/${healer.healer_slug}${backContextQuery(`/free-resources/${resource.slug}`, resource.title)}`}
             className="text-sm text-violet-400 hover:text-violet-300 mt-2 inline-block"
           >
             By {healer.name}

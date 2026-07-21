@@ -3,13 +3,14 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import CardImage from './CardImage.js';
+import { backContextQuery } from '../utils/backContext.js';
 
 // Shared localStorage key holding the global array of favorited book ids.
 const FAV_BOOKS_KEY = 'favorited_books';
 
 // Oversized book cover with a hover/click synopsis popover and a persistent
 // "Want to Read" favorite toggle. Rendered card-less on the homepage canvas.
-export default function BookCard({ book, variant }) {
+export default function BookCard({ book, variant, from, fromTitle }) {
   const [open, setOpen] = useState(false);
   const [wantToRead, setWantToRead] = useState(false);
 
@@ -48,7 +49,7 @@ export default function BookCard({ book, variant }) {
           synopsis on desktop. The Want to Read button stays a sibling below,
           outside this link, so it toggles save state without navigating. */}
       <Link
-        href={`/books/${book.slug}`}
+        href={`/books/${book.slug}${backContextQuery(from, fromTitle)}`}
         className="relative w-full max-w-[220px] block"
         onMouseEnter={() => setOpen(true)}
         onMouseLeave={() => setOpen(false)}

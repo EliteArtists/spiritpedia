@@ -1,6 +1,7 @@
 import CardImage from './CardImage.js';
 import FavoriteHeart from './FavoriteHeart.js';
 import { FAVORITE_KEYS } from '../utils/favorites.js';
+import { backContextQuery } from '../utils/backContext.js';
 
 // Turn a stored resource_type ('mini_course') into a badge label ('MINI COURSE').
 function formatType(resourceType) {
@@ -14,11 +15,11 @@ function formatType(resourceType) {
 // The favourite heart is a sibling of the <a>, not a child — a button inside an
 // anchor is invalid nesting. `group` therefore lives on the wrapper so the card's
 // hover effects still reach into the link.
-export default function FreeResourceCard({ item, healerName }) {
+export default function FreeResourceCard({ item, healerName, from, fromTitle }) {
   return (
     <div className="group relative h-full">
       <a
-        href={`/free-resources/${item.slug}`}
+        href={`/free-resources/${item.slug}${backContextQuery(from, fromTitle)}`}
         className="flex h-full flex-col rounded-2xl overflow-hidden bg-[#111827] border border-white/10 shadow-lg hover:border-[#7c3aed]/60 hover:shadow-2xl group-hover:-translate-y-1 transition-all"
       >
         {/* Cover image + resource type badge. The badge sits left because the

@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { supabase } from '../utils/supabase.js';
+import { backContextQuery } from '../utils/backContext.js';
 
 // Filler words/prefixes stripped before matching so "I'm really lost" and "lost"
 // hit the same emotion_mappings row. Each is removed as a whole \b-bounded token.
@@ -46,6 +47,10 @@ const ROW_CLASS =
   'flex items-center gap-3 px-3 py-2 rounded-xl hover:bg-white/5 cursor-pointer transition-colors';
 const HEADER_CLASS = 'px-4 pt-3 pb-1 text-xs uppercase tracking-wider text-gray-500 font-medium';
 const EMPTY_UNIVERSAL = { healers: [], books: [], videos: [], subjects: [] };
+
+// The search dropdown is a homepage-level entry point, so any detail page it
+// opens gets "← Back to Spiritpedia" as its contextual back link.
+const SEARCH_BACK = backContextQuery('/', 'Spiritpedia');
 
 function normalize(raw) {
   let s = (raw || '').toLowerCase();
@@ -393,7 +398,7 @@ export default function EmotionSearch() {
                           key={`h-${h.id}`}
                           onMouseDown={(e) => {
                             e.preventDefault();
-                            navigate(`/healers/${h.healer_slug}`);
+                            navigate(`/healers/${h.healer_slug}${SEARCH_BACK}`);
                           }}
                           className={ROW_CLASS}
                         >
@@ -422,7 +427,7 @@ export default function EmotionSearch() {
                           key={`b-${b.id}`}
                           onMouseDown={(e) => {
                             e.preventDefault();
-                            navigate(`/books/${b.slug}`);
+                            navigate(`/books/${b.slug}${SEARCH_BACK}`);
                           }}
                           className={ROW_CLASS}
                         >

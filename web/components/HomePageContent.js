@@ -124,7 +124,12 @@ export default async function HomePage({ initialSubjectSlug }) {
   );
 
   const renderOffering = (item) => (
-    <OfferingCard item={item} healerName={healerNameById.get(item.healer_id)} />
+    <OfferingCard
+      item={item}
+      healerName={healerNameById.get(item.healer_id)}
+      from="/"
+      fromTitle="Spiritpedia"
+    />
   );
 
   // Preserve the active subject filter when handing off to the subject page.
@@ -198,7 +203,12 @@ export default async function HomePage({ initialSubjectSlug }) {
             subtitle="No Cost, No Catch"
             items={freeResources}
             renderItem={(item) => (
-              <FreeResourceCard item={item} healerName={healerNameById.get(item.healer_id)} />
+              <FreeResourceCard
+                item={item}
+                healerName={healerNameById.get(item.healer_id)}
+                from="/"
+                fromTitle="Spiritpedia"
+              />
             )}
           />
 
@@ -207,7 +217,7 @@ export default async function HomePage({ initialSubjectSlug }) {
             subtitle="The Curated Archive"
             items={books}
             seeAllHref={seeAll}
-            renderItem={(book) => <BookCard book={book} />}
+            renderItem={(book) => <BookCard book={book} from="/" fromTitle="Spiritpedia" />}
             itemWidthClass="w-[200px]"
           />
 

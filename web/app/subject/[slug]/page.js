@@ -41,8 +41,16 @@ export default async function SubjectPage({ params }) {
   const retreatOfferings = courses.filter((c) => c.product_type === 'retreat');
   const downloadOfferings = courses.filter((c) => c.product_type === 'download');
 
+  // Detail-page cards on this subject page carry the subject as their back-context.
+  const fromSubject = `/subject/${slug}`;
+
   const renderOffering = (item) => (
-    <OfferingCard item={item} healerName={healerNameById.get(item.healer_id)} />
+    <OfferingCard
+      item={item}
+      healerName={healerNameById.get(item.healer_id)}
+      from={fromSubject}
+      fromTitle={title}
+    />
   );
 
   const isEmpty =
@@ -111,7 +119,12 @@ export default async function SubjectPage({ params }) {
               subtitle="No Cost, No Catch"
               items={freeResources}
               renderItem={(item) => (
-                <FreeResourceCard item={item} healerName={healerNameById.get(item.healer_id)} />
+                <FreeResourceCard
+                  item={item}
+                  healerName={healerNameById.get(item.healer_id)}
+                  from={fromSubject}
+                  fromTitle={title}
+                />
               )}
             />
 
@@ -119,7 +132,7 @@ export default async function SubjectPage({ params }) {
               title="Books & Literature"
               subtitle="The Curated Archive"
               items={books}
-              renderItem={(book) => <BookCard book={book} />}
+              renderItem={(book) => <BookCard book={book} from={fromSubject} fromTitle={title} />}
               itemWidthClass="w-[200px]"
             />
 
