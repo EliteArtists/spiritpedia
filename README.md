@@ -111,7 +111,7 @@ The `/web` directory contains the full Next.js application.
 * `/free-resources/[id]` — Free resource detail page
 * `/publishers/[slug]` — Publishing house profile — linked authors and an auto-curated, paginated books grid
 * `/library` — Personal saved library, auto-organised by subject
-* `/admin` — Content ingestion dashboard (videos, books, courses, healers, free resources, publishers)
+* `/admin` — Content ingestion dashboard (videos, books, courses, healers, free resources, publishers). **Protected by password login** — a session-cookie auth screen at `/admin/login`, gated by `web/proxy.js`. The password lives only in the `ADMIN_PASSWORD` environment variable (never in the codebase); it must be set both locally in `web/.env.local` and in Vercel → Settings → Environment Variables.
 
 #### Key Components
 | File | Purpose |
@@ -198,6 +198,7 @@ The library at `/library` reads saved items from local storage (`favorited_books
 | Book detail pages (purchase links, Want to Read, Mark as Read, reviews placeholder) | ✅ Complete |
 | Publisher admin tab + public publisher profile pages | ✅ Complete |
 | Book URLs migrated to SEO-friendly slugs | ✅ Complete |
+| Admin authentication — password login + session cookie (`ADMIN_PASSWORD` env var) | ✅ Complete |
 | Vercel production deployment | ⬜ Next |
 | Content library (target: 5,000 videos + 5,000 books) | ⬜ Ongoing |
 | Flutter native app | ⬜ Phase 2 |
