@@ -1,7 +1,6 @@
 'use client';
 
 import { useState, useEffect, useRef, Suspense } from 'react';
-import { useSearchParams } from 'next/navigation';
 import { supabase } from '@/utils/supabase';
 
 // Extract the canonical YouTube video ID from any common URL shape.
@@ -65,28 +64,10 @@ async function uniqueSlug(table, rawTitle) {
 }
 
 // ---------------------------------------------------------------------------
-// ACCESS DENIED VIEW
-// ---------------------------------------------------------------------------
-function AccessDenied() {
-  return (
-    <div className="min-h-screen flex flex-col items-center justify-center bg-slate-950 text-white px-6">
-      <div className="text-6xl mb-6">🔒</div>
-      <h1 className="text-3xl font-black uppercase tracking-widest text-red-400">Access Denied</h1>
-      <p className="mt-4 text-slate-400 text-center max-w-md">
-        You do not have permission to view the Admin Ingestion Dashboard.
-        A valid access secret is required.
-      </p>
-    </div>
-  );
-}
-
-// ---------------------------------------------------------------------------
-// DASHBOARD (reads searchParams — must live under a Suspense boundary)
+// DASHBOARD — access is enforced by web/middleware.js (session cookie), so the
+// page itself renders unconditionally once the middleware has let it through.
 // ---------------------------------------------------------------------------
 function AdminDashboard() {
-  const searchParams = useSearchParams();
-  const secret = searchParams.get('secret');
-
   // Form + UI state
   const [tab, setTab] = useState('video'); // 'video' | 'book' | 'course' | 'healer' | 'free_resource'
   const [title, setTitle] = useState('');
@@ -236,11 +217,6 @@ function AdminDashboard() {
       active = false;
     };
   }, [publisherReload]);
-
-  // SECURITY GUARD — render gate after hooks so hook order stays stable.
-  if (secret !== 'spiritpass') {
-    return <AccessDenied />;
-  }
 
   // Toggle a subject slug in/out of the active multi-tag selection.
   function toggleTag(slug) {
@@ -787,6 +763,15 @@ function AdminDashboard() {
   return (
     <div className="min-h-screen bg-slate-950 text-white py-12 px-4">
       <div className="max-w-2xl mx-auto">
+        {/* Sign out — POSTs to the logout route, which clears the session
+            cookie and redirects back to /admin/login. */}
+        <div className="flex justify-end mb-2">
+          <form action="/api/admin/logout" method="POST">
+            <button type="submit" className="text-gray-500 hover:text-white text-sm transition-colors">
+              Sign out
+            </button>
+          </form>
+        </div>
         <header className="mb-8 text-center">
           <h1 className="text-4xl font-black tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 to-emerald-400">
             Admin Ingestion Dashboard
@@ -1827,7 +1812,8 @@ function AdminDashboard() {
 }
 
 // ---------------------------------------------------------------------------
-// PAGE — Suspense boundary required for useSearchParams in a Client Component.
+// PAGE — the dashboard is a heavy client tree; the Suspense boundary keeps the
+// initial paint cheap while it hydrates.
 // ---------------------------------------------------------------------------
 export default function AdminPage() {
   return (
