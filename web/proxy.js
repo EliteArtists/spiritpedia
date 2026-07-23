@@ -3,8 +3,9 @@ import { ADMIN_SESSION_COOKIE, computeSessionToken } from './utils/adminAuth';
 
 // Gate every /admin route behind a valid session cookie. The login screen stays
 // reachable, and the auth API routes live under /api (outside this matcher), so
-// they are never intercepted here.
-export async function middleware(request) {
+// they are never intercepted here. (Next 16 "proxy" convention — the successor
+// to the deprecated `middleware` file/function.)
+export async function proxy(request) {
   const { pathname } = request.nextUrl;
 
   // The login screen must always be reachable, or there is no way back in.
