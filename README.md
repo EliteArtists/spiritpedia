@@ -107,8 +107,8 @@ The `/web` directory contains the full Next.js application.
 * `/subject/[slug]` — Subject page — every healer, book, and video carrying that subject tag
 * `/healers/[slug]` — Individual healer profile with bio, photo mosaic, offerings, contact funnel
 * `/books/[slug]` — Book detail page — cover, description, purchase links, Want to Read / Mark as Read, reviews placeholder
-* `/offerings/[id]` — Offering detail page (courses / retreats / downloads / memberships) with contextual CTA
-* `/free-resources/[id]` — Free resource detail page
+* `/offerings/[slug]` — Offering detail page (courses / retreats / downloads / memberships) with contextual CTA
+* `/free-resources/[slug]` — Free resource detail page
 * `/publishers/[slug]` — Publishing house profile — linked authors and an auto-curated, paginated books grid
 * `/library` — Personal saved library, auto-organised by subject
 * `/admin` — Content ingestion dashboard (videos, books, courses, healers, free resources, publishers). **Protected by password login** — a session-cookie auth screen at `/admin/login`, gated by `web/proxy.js`. The password lives only in the `ADMIN_PASSWORD` environment variable (never in the codebase); it must be set both locally in `web/.env.local` and in Vercel → Settings → Environment Variables.

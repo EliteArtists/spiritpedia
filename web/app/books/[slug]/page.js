@@ -6,6 +6,9 @@ import ReadButton from '@/components/ReadButton';
 import WantToReadButton from '@/components/WantToReadButton';
 import { backContextQuery } from '@/utils/backContext';
 
+// Hourly ceiling on staleness — see the note in app/page.js.
+export const revalidate = 3600;
+
 // Filled-outline star glyph. Sized/coloured by the caller via className so the
 // same shape serves the inline rating row and the large empty-state icon.
 function Star({ className }) {

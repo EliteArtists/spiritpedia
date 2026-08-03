@@ -7,6 +7,11 @@ import HeroImageRotator from '@/components/HeroImageRotator';
 import OfferingCard from '@/components/OfferingCard';
 import VideoPlayer from '@/components/VideoPlayer';
 
+// Hourly ceiling on staleness — see the note in app/page.js. Reading
+// searchParams for the back link already makes this route per-request, so this
+// is a guard against a future refactor silently freezing the profile.
+export const revalidate = 3600;
+
 // Social-link glyphs. Sized via className (w-5 h-5) and drawn in currentColor so
 // each inherits the button's white text; no fixed pixel dimensions to fight the
 // Tailwind sizing the brief specifies.

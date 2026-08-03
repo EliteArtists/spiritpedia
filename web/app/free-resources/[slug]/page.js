@@ -4,6 +4,9 @@ import Link from 'next/link';
 import BackButton from '@/components/BackButton';
 import { backContextQuery } from '@/utils/backContext';
 
+// Hourly ceiling on staleness — see the note in app/page.js.
+export const revalidate = 3600;
+
 // This layout is always free, so there's no price badge and one fixed CTA.
 export default async function FreeResourceDetail({ params, searchParams }) {
   const { slug } = await params;

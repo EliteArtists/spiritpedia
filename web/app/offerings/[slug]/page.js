@@ -4,6 +4,9 @@ import Link from 'next/link';
 import BackButton from '@/components/BackButton';
 import { backContextQuery } from '@/utils/backContext';
 
+// Hourly ceiling on staleness — see the note in app/page.js.
+export const revalidate = 3600;
+
 // Product-type styling + copy live in one map so the badge colour, badge label,
 // and CTA label all stay in lockstep. An unset product_type falls back to
 // 'course' — the admin default and the legacy pre-column behaviour.

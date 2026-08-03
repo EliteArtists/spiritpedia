@@ -3,6 +3,9 @@ import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import PublisherBooksGrid from '@/components/PublisherBooksGrid';
 
+// Hourly ceiling on staleness — see the note in app/page.js.
+export const revalidate = 3600;
+
 // First portrait for a linked healer. healers store an image_urls[] array plus a
 // singular image_url; there is no portrait_url column.
 function healerPortrait(h) {
