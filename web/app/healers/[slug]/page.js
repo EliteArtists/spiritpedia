@@ -217,111 +217,138 @@ export default async function HealerProfile({ params, searchParams }) {
   // the healer actually has an email, phone, or booking link on file.
   const hasContact = Boolean(healer.contact_email || healer.contact_phone || healer.booking_url);
 
+  // NOTE ON THE BIO SCROLL BOX
+  // The brief asked for a word-count trigger (>300 words → scroll). That was
+  // tried and abandoned: word count is a poor proxy for rendered height in a
+  // narrow column. Wim Hof's bio is 289 words — under the threshold — yet wraps
+  // to roughly 800px here and pushed the shelves off the fold, which is the
+  // exact failure the scroll box exists to prevent.
+  //
+  // Capping the height unconditionally instead lets CSS measure the real
+  // overflow: a bio only scrolls when it genuinely exceeds 300px, whatever its
+  // word count, font size, or column width. Short bios (Eckhart Tolle, 55 words)
+  // render as plain flowing text with no scrollbar, exactly as before.
+
   return (
     <main className="min-h-screen bg-[#0a0f1d] text-white font-sans">
-      {/* ── SECTION 1 · CINEMATIC CROSSFADE HERO ─────────────────────────── */}
-      <HeroImageRotator images={portraits} alt={healer.name}>
-        {/* Back link — top-left, above the gradient, context-aware. */}
-        <div className="absolute top-6 left-6 z-10">
-          <BackButton from={from} fromTitle={fromTitle} />
-        </div>
+      {/* ── SECTION 1 · TWO-COLUMN PROFILE HERO ──────────────────────────── */}
+      {/* Portrait left (~40%), identity + bio + contact right (~60%). Replaces
+          the old full-bleed cinematic banner, which cropped faces and stretched
+          images inconsistently across the directory. */}
+      <section className="bg-[#0a0f1d] px-6 py-12">
+        <div className="max-w-5xl mx-auto">
+          {/* Back link — very top left, context-aware, above the columns. */}
+          <div className="mb-8">
+            <BackButton from={from} fromTitle={fromTitle} />
+          </div>
 
-        {/* Tier badge + name + social — bottom-left, clear of the centred dots. */}
-        <div className="absolute bottom-12 left-6 md:left-12 max-w-4xl">
-          <TierBadge tier={healer.tier} />
-          <h1 className="mt-4 text-5xl md:text-7xl font-bold text-white drop-shadow-lg">
-            {healer.name}
-          </h1>
+          <div className="grid grid-cols-1 md:grid-cols-[2fr_3fr] gap-10">
+            {/* 1a · LEFT — contained rotating portrait + indicator dots. */}
+            <HeroImageRotator images={portraits} alt={healer.name} />
 
-          {/* Social row — frosted-glass icon buttons sitting on the cinematic
-              hero, directly beneath the name. Hidden entirely when the healer
-              has no populated channels. */}
-          {socialLinks.length > 0 && (
-            <div className="flex items-center gap-3 mt-4 flex-wrap">
-              {socialLinks.map(({ key, label, url, icon: Icon }) => (
-                <a
-                  key={key}
-                  href={url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label={label}
-                  title={label}
-                  className="w-10 h-10 rounded-full bg-white/20 hover:bg-white/40 backdrop-blur-sm transition-colors duration-200 flex items-center justify-center"
-                >
-                  <Icon />
-                </a>
-              ))}
-            </div>
-          )}
-        </div>
-      </HeroImageRotator>
+            {/* 1b · RIGHT — name, tier, social, bio, contact. */}
+            <div className="min-w-0">
+              <h1 className="text-4xl font-bold text-white">{healer.name}</h1>
 
-      {/* ── SECTION 2 · BIO ──────────────────────────────────────────────── */}
-      {healer.bio && (
-        <section className="max-w-4xl mx-auto py-12 px-6">
-          <p className="text-lg leading-relaxed text-gray-300 whitespace-pre-line">{healer.bio}</p>
-        </section>
-      )}
-
-      {/* ── SECTION 3 · CONTACT ──────────────────────────────────────────── */}
-      {/* The social links now live in the hero overlay; this section is the
-          full-width, page-centred contact funnel, shown only when the healer has
-          an email, phone, or booking link on file. */}
-      {hasContact && (
-        <div className="max-w-2xl mx-auto mb-12 px-6">
-          <section className="bg-[#111827] rounded-2xl p-6 shadow-xl">
-            {/* Availability pills — centred across the card. */}
-            <div className="flex flex-wrap gap-2 justify-center mb-6">
-              {healer.city && (
-                <span className="bg-indigo-950/60 text-indigo-300 text-xs px-3 py-1 rounded-full font-medium">
-                  In Person ({healer.city})
-                </span>
-              )}
-              {healer.availability_type?.includes('Online') && (
-                <span className="bg-purple-950/60 text-purple-300 border border-purple-500/30 text-xs px-3 py-1 rounded-full font-medium">
-                  Online Session available
-                </span>
-              )}
-            </div>
-
-            {/* Email + phone — side-by-side on wider screens, stacked on mobile. */}
-            {(healer.contact_email || healer.contact_phone) && (
-              <div className="flex flex-col sm:flex-row items-center justify-center gap-6 mb-6 text-sm text-gray-300">
-                {healer.contact_email && (
-                  <a
-                    href={`mailto:${healer.contact_email}?subject=Inquiry via Spiritpedia`}
-                    className="flex items-center gap-2 font-medium transition-colors hover:text-emerald-300"
-                  >
-                    <MailIcon />
-                    <span className="truncate">{healer.contact_email}</span>
-                  </a>
-                )}
-                {healer.contact_phone && (
-                  <a
-                    href={`tel:${healer.contact_phone}`}
-                    className="flex items-center gap-2 font-medium transition-colors hover:text-emerald-300"
-                  >
-                    <PhoneIcon />
-                    <span>{healer.contact_phone}</span>
-                  </a>
-                )}
+              <div className="mt-3">
+                <TierBadge tier={healer.tier} />
               </div>
-            )}
 
-            {/* Booking button — full-width purple CTA. */}
-            {healer.booking_url && (
-              <a
-                href={healer.booking_url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-full text-center py-3 bg-violet-600 hover:bg-violet-500 text-white font-bold text-sm rounded-xl shadow-lg transition-all hover:scale-[1.01] active:scale-95 block"
-              >
-                Book with {firstName} &rarr;
-              </a>
-            )}
-          </section>
+              {/* Social row — the same frosted-glass icon buttons as before,
+                  moved off the image and onto the dark column. Hidden entirely
+                  when the healer has no populated channels. */}
+              {socialLinks.length > 0 && (
+                <div className="flex items-center gap-3 mt-5 flex-wrap">
+                  {socialLinks.map(({ key, label, url, icon: Icon }) => (
+                    <a
+                      key={key}
+                      href={url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label={label}
+                      title={label}
+                      className="w-10 h-10 rounded-full bg-white/20 hover:bg-white/40 backdrop-blur-sm transition-colors duration-200 flex items-center justify-center"
+                    >
+                      <Icon />
+                    </a>
+                  ))}
+                </div>
+              )}
+
+              {/* Bio — long ones scroll in place so the two columns stay aligned
+                  and the shelves below never get pushed off the fold. pr-4 keeps
+                  the text clear of the scrollbar gutter when one appears. */}
+              {healer.bio && (
+                <div className="mt-6 max-h-[300px] overflow-y-auto pr-4">
+                  <p className="text-base leading-relaxed text-gray-300 whitespace-pre-line">
+                    {healer.bio}
+                  </p>
+                </div>
+              )}
+
+              {/* Contact funnel — the Local Hero directory feature, shown only
+                  when the healer has an email, phone, or booking link on file.
+                  Left-aligned here to sit with the rest of the column rather
+                  than centred as it was when it spanned the page. */}
+              {hasContact && (
+                <section className="mt-8 bg-[#111827] rounded-2xl p-6 shadow-xl">
+                  {(healer.city || healer.availability_type?.includes('Online')) && (
+                    <div className="flex flex-wrap gap-2 mb-5">
+                      {healer.city && (
+                        <span className="bg-indigo-950/60 text-indigo-300 text-xs px-3 py-1 rounded-full font-medium">
+                          In Person ({healer.city})
+                        </span>
+                      )}
+                      {healer.availability_type?.includes('Online') && (
+                        <span className="bg-purple-950/60 text-purple-300 border border-purple-500/30 text-xs px-3 py-1 rounded-full font-medium">
+                          Online Session available
+                        </span>
+                      )}
+                    </div>
+                  )}
+
+                  {/* Email + phone — stacked, since the column is too narrow to
+                      sit them side by side without truncating the address. */}
+                  {(healer.contact_email || healer.contact_phone) && (
+                    <div className="flex flex-col gap-3 mb-5 text-sm text-gray-300">
+                      {healer.contact_email && (
+                        <a
+                          href={`mailto:${healer.contact_email}?subject=Inquiry via Spiritpedia`}
+                          className="flex items-center gap-2 font-medium transition-colors hover:text-emerald-300"
+                        >
+                          <MailIcon />
+                          <span className="truncate">{healer.contact_email}</span>
+                        </a>
+                      )}
+                      {healer.contact_phone && (
+                        <a
+                          href={`tel:${healer.contact_phone}`}
+                          className="flex items-center gap-2 font-medium transition-colors hover:text-emerald-300"
+                        >
+                          <PhoneIcon />
+                          <span>{healer.contact_phone}</span>
+                        </a>
+                      )}
+                    </div>
+                  )}
+
+                  {/* Booking button — full-width purple CTA. */}
+                  {healer.booking_url && (
+                    <a
+                      href={healer.booking_url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="w-full text-center py-3 bg-violet-600 hover:bg-violet-500 text-white font-bold text-sm rounded-xl shadow-lg transition-all hover:scale-[1.01] active:scale-95 block"
+                    >
+                      Book with {firstName} &rarr;
+                    </a>
+                  )}
+                </section>
+              )}
+            </div>
+          </div>
         </div>
-      )}
+      </section>
 
       {/* ── SECTION 4 · CONTENT SHELVES ──────────────────────────────────── */}
       {/* grid-cols-1 is load-bearing (same as the homepage/subject page): an
