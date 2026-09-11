@@ -62,13 +62,24 @@ export default function HealerCard({ healer, portrait }) {
             <span className="px-2.5 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wider bg-amber-100 text-amber-600 border border-amber-300">
               Superhero
             </span>
+          ) : healer.tier === 'ascended_master' ? (
+            <span className="bg-[#c9a84c] text-[#1a1a1a] font-bold text-[11px] tracking-wider uppercase px-2.5 py-1 rounded-md shadow-sm">
+              ASCENDED MASTER
+            </span>
           ) : healer.tier === 'luminary' ? (
             <span className="bg-violet-600 text-white font-bold text-[11px] tracking-wider uppercase px-2.5 py-1 rounded-md shadow-sm">
               LUMINARY
             </span>
-          ) : (
+          ) : healer.tier === 'local_hero' ? (
             <span className="bg-emerald-500 text-white text-[10px] font-bold tracking-wider uppercase px-2 py-0.5 rounded-md shadow-sm">
               Local Hero
+            </span>
+          ) : (
+            // Unknown or NULL tier — a neutral badge rather than borrowing Local
+            // Hero's, so a tier added to the database before the UI is visibly
+            // unstyled instead of silently mislabelled.
+            <span className="bg-gray-500 text-white text-[10px] font-bold tracking-wider uppercase px-2 py-0.5 rounded-md shadow-sm">
+              Teacher
             </span>
           )}
         </div>

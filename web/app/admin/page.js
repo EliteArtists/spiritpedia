@@ -106,7 +106,11 @@ function AdminDashboard() {
   const [imageUrl3, setImageUrl3] = useState('');
   const [entityType, setEntityType] = useState('individual'); // 'individual' | 'channel' | 'app'
   const [availability, setAvailability] = useState('worldwide'); // 'worldwide' | 'local' | 'local_online'
-  const [tier, setTier] = useState('superhero'); // 'superhero' | 'luminary' | 'local_hero'
+  const [tier, setTier] = useState('superhero'); // 'superhero' | 'ascended_master' | 'luminary' | 'local_hero'
+  // Lifespan — Ascended Masters only. Kept as strings while editing so the
+  // inputs can be cleared; parsed to integers (or NULL) at submit.
+  const [birthYear, setBirthYear] = useState('');
+  const [deathYear, setDeathYear] = useState('');
   const [country, setCountry] = useState('');
   const [city, setCity] = useState('');
   const [contactEmail, setContactEmail] = useState('');
@@ -433,6 +437,8 @@ function AdminDashboard() {
     setEntityType('individual');
     setAvailability('worldwide');
     setTier('superhero');
+    setBirthYear('');
+    setDeathYear('');
     setCountry('');
     setCity('');
     setContactEmail('');
@@ -686,6 +692,13 @@ function AdminDashboard() {
         const effectiveAvailability = isPlatform ? 'worldwide' : availability;
         const isLocal =
           effectiveAvailability === 'local' || effectiveAvailability === 'local_online';
+        // Lifespan is only collected for Ascended Masters; any value typed
+        // before switching tier is discarded rather than persisted.
+        const toYear = (value) => {
+          const n = parseInt(value, 10);
+          return Number.isFinite(n) ? n : null;
+        };
+        const isAscended = tier === 'ascended_master';
         // Collect the three image inputs, drop blanks, store as a clean array.
         const imageUrls = [imageUrl1, imageUrl2, imageUrl3]
           .map((s) => s.trim())
@@ -710,6 +723,8 @@ function AdminDashboard() {
           healer_slug: slug.trim(),
           image_urls: imageUrls,
           tier,
+          birth_year: isAscended ? toYear(birthYear) : null,
+          death_year: isAscended ? toYear(deathYear) : null,
           entity_type: entityType,
           availability_type: AVAILABILITY_LABELS[effectiveAvailability],
           country: isLocal ? country.trim() || null : null,
@@ -1238,10 +1253,45 @@ function AdminDashboard() {
                   className={inputClass}
                 >
                   <option value="superhero">Superhero</option>
+                  <option value="ascended_master">Ascended Master</option>
                   <option value="luminary">Luminary</option>
                   <option value="local_hero">Local Hero</option>
                 </select>
               </div>
+
+              {/* Lifespan — shown only for Ascended Masters, who are by
+                  definition no longer living. Rendered on the profile page as
+                  "1931 — 2015", or "b. 1931" when only the birth year is known. */}
+              {tier === 'ascended_master' && (
+                <div className="grid grid-cols-2 gap-4">
+                  <div>
+                    <label className={labelClass}>Birth Year (optional)</label>
+                    <input
+                      type="number"
+                      inputMode="numeric"
+                      min="1"
+                      max="2100"
+                      value={birthYear}
+                      onChange={(e) => setBirthYear(e.target.value)}
+                      placeholder="e.g. 1931"
+                      className={inputClass}
+                    />
+                  </div>
+                  <div>
+                    <label className={labelClass}>Death Year (optional)</label>
+                    <input
+                      type="number"
+                      inputMode="numeric"
+                      min="1"
+                      max="2100"
+                      value={deathYear}
+                      onChange={(e) => setDeathYear(e.target.value)}
+                      placeholder="e.g. 2015"
+                      className={inputClass}
+                    />
+                  </div>
+                </div>
+              )}
 
               {/* Availability only applies to individuals — channels and apps
                   save as Worldwide (see the insert payload). Country/City are

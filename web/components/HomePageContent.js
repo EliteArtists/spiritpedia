@@ -95,12 +95,15 @@ export default async function HomePage({ initialSubjectSlug }) {
   const freeResources = bySubject(allFreeResources);
   const courses = bySubject(allCourses);
 
-  // TIER SPLIT — the stored values are 'superhero' / 'luminary' / 'local_hero'
-  // (the amber/violet/emerald names describe their badge colours, not the column).
-  // SAFE FALLBACK: anything not explicitly Superhero or Luminary — including NULL
-  // or an unexpected value mid-backfill — falls through to Local Hero, so no
-  // grassroots practitioner silently vanishes from the directory.
-  const isPremium = (h) => h.tier === 'superhero' || h.tier === 'luminary';
+  // TIER SPLIT — the stored values are 'superhero' / 'ascended_master' /
+  // 'luminary' / 'local_hero' (the amber/gold/violet/emerald names describe
+  // their badge colours, not the column).
+  // SAFE FALLBACK: anything not explicitly a premium tier — including NULL or an
+  // unexpected value mid-backfill — still surfaces in the Local Hero shelf, so
+  // no practitioner silently vanishes from the directory. (The card itself
+  // renders a neutral "Teacher" badge for such rows rather than Local Hero's.)
+  const isPremium = (h) =>
+    h.tier === 'superhero' || h.tier === 'ascended_master' || h.tier === 'luminary';
 
   // ENTITY SPLIT — `entity_type` separates people from platforms. 'channel'
   // (YouTube channels, collectives) and 'app' (Headspace) get their own shelf;
@@ -112,6 +115,7 @@ export default async function HomePage({ initialSubjectSlug }) {
   const platforms = healers.filter(isPlatform);
 
   const superheroes = individuals.filter((h) => h.tier === 'superhero');
+  const ascendedMasters = individuals.filter((h) => h.tier === 'ascended_master');
   const luminaries = individuals.filter((h) => h.tier === 'luminary');
   const localHeroes = healers.filter((h) => !isPremium(h));
 
@@ -216,6 +220,17 @@ export default async function HomePage({ initialSubjectSlug }) {
               </span>
             }
             items={localHeroes}
+            seeAllHref={seeAll}
+            renderItem={renderHealer}
+            itemWidthClass="w-[260px]"
+          />
+
+          {/* Deceased teachers whose work is foundational. Hidden until the
+              first one is tagged — ContentShelf's emptyHide default. */}
+          <ContentShelf
+            title="Timeless Teachers"
+            subtitle="The Ancestors"
+            items={ascendedMasters}
             seeAllHref={seeAll}
             renderItem={renderHealer}
             itemWidthClass="w-[260px]"

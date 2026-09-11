@@ -105,8 +105,11 @@ function initials(name) {
 // Tiny tier glyph shown at the right edge of a healer row.
 function tierBadge(tier) {
   if (tier === 'superhero') return { symbol: '★', className: 'text-[#78350f]' };
+  if (tier === 'ascended_master') return { symbol: '✧', className: 'text-[#c9a84c]' };
   if (tier === 'luminary') return { symbol: '✦', className: 'text-violet-600' };
-  return { symbol: '◆', className: 'text-emerald-500' };
+  if (tier === 'local_hero') return { symbol: '◆', className: 'text-emerald-500' };
+  // Unknown or NULL tier — neutral, matching the "Teacher" card badge.
+  return { symbol: '●', className: 'text-gray-500' };
 }
 
 function CompassIcon({ className }) {

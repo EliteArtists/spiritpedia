@@ -115,14 +115,21 @@ function PhoneIcon() {
   );
 }
 
-// Tier badge — matched to the homepage/billboard motif. Anything that is not a
-// known superhero/luminary tier falls back to Local Hero, so no practitioner
-// silently loses their badge mid-backfill.
+// Tier badge — matched to the homepage/billboard motif. An unknown or NULL tier
+// gets a neutral "Teacher" badge rather than borrowing Local Hero's, so a tier
+// that reaches the database before the UI is visibly unstyled, not mislabelled.
 function TierBadge({ tier }) {
   if (tier === 'superhero') {
     return (
       <span className="inline-block rounded-full bg-[#fef08a] px-3 py-1 text-[11px] font-bold uppercase tracking-wider text-[#78350f] shadow-sm">
         Superhero
+      </span>
+    );
+  }
+  if (tier === 'ascended_master') {
+    return (
+      <span className="inline-block rounded-full bg-[#c9a84c] px-3 py-1 text-[11px] font-bold uppercase tracking-wider text-[#1a1a1a] shadow-sm">
+        Ascended Master
       </span>
     );
   }
@@ -133,9 +140,16 @@ function TierBadge({ tier }) {
       </span>
     );
   }
+  if (tier === 'local_hero') {
+    return (
+      <span className="inline-block rounded-full bg-emerald-500 px-3 py-1 text-[11px] font-bold uppercase tracking-wider text-white shadow-sm">
+        Local Hero
+      </span>
+    );
+  }
   return (
-    <span className="inline-block rounded-full bg-emerald-500 px-3 py-1 text-[11px] font-bold uppercase tracking-wider text-white shadow-sm">
-      Local Hero
+    <span className="inline-block rounded-full bg-gray-500 px-3 py-1 text-[11px] font-bold uppercase tracking-wider text-white shadow-sm">
+      Teacher
     </span>
   );
 }
@@ -253,6 +267,16 @@ export default async function HealerProfile({ params, searchParams }) {
               <div className="mt-3">
                 <TierBadge tier={healer.tier} />
               </div>
+
+              {/* Lifespan — only when a birth year is recorded. A death year
+                  closes the range; without one the person is presumed living. */}
+              {healer.birth_year && (
+                <p className="text-sm text-gray-400 mt-1">
+                  {healer.death_year
+                    ? `${healer.birth_year} — ${healer.death_year}`
+                    : `b. ${healer.birth_year}`}
+                </p>
+              )}
 
               {/* Social row — the same frosted-glass icon buttons as before,
                   moved off the image and onto the dark column. Hidden entirely
