@@ -104,6 +104,7 @@ function AdminDashboard() {
   const [imageUrl1, setImageUrl1] = useState('');
   const [imageUrl2, setImageUrl2] = useState('');
   const [imageUrl3, setImageUrl3] = useState('');
+  const [entityType, setEntityType] = useState('individual'); // 'individual' | 'channel' | 'app'
   const [availability, setAvailability] = useState('worldwide'); // 'worldwide' | 'local' | 'local_online'
   const [tier, setTier] = useState('superhero'); // 'superhero' | 'luminary' | 'local_hero'
   const [country, setCountry] = useState('');
@@ -429,6 +430,7 @@ function AdminDashboard() {
     setImageUrl1('');
     setImageUrl2('');
     setImageUrl3('');
+    setEntityType('individual');
     setAvailability('worldwide');
     setTier('superhero');
     setCountry('');
@@ -677,7 +679,13 @@ function AdminDashboard() {
       } else {
         // Healer: `tier` classifies the practitioner (superhero / luminary /
         // local_hero); availability options carry country/city for local healers.
-        const isLocal = availability === 'local' || availability === 'local_online';
+        // Channels and apps have no availability of their own — they are
+        // reachable from anywhere — so they always persist as Worldwide, which
+        // is what every existing channel/app row carries.
+        const isPlatform = entityType !== 'individual';
+        const effectiveAvailability = isPlatform ? 'worldwide' : availability;
+        const isLocal =
+          effectiveAvailability === 'local' || effectiveAvailability === 'local_online';
         // Collect the three image inputs, drop blanks, store as a clean array.
         const imageUrls = [imageUrl1, imageUrl2, imageUrl3]
           .map((s) => s.trim())
@@ -702,7 +710,8 @@ function AdminDashboard() {
           healer_slug: slug.trim(),
           image_urls: imageUrls,
           tier,
-          availability_type: AVAILABILITY_LABELS[availability],
+          entity_type: entityType,
+          availability_type: AVAILABILITY_LABELS[effectiveAvailability],
           country: isLocal ? country.trim() || null : null,
           city: isLocal ? city.trim() || null : null,
           contact_email: contactEmail.trim() || null,
@@ -1156,6 +1165,19 @@ function AdminDashboard() {
               </div>
 
               <div>
+                <label className={labelClass}>Entity Type</label>
+                <select
+                  value={entityType}
+                  onChange={(e) => setEntityType(e.target.value)}
+                  className={inputClass}
+                >
+                  <option value="individual">Individual</option>
+                  <option value="channel">Channel (YouTube/content channel)</option>
+                  <option value="app">App (wellness/meditation app)</option>
+                </select>
+              </div>
+
+              <div>
                 <label className={labelClass}>Bio</label>
                 <textarea
                   value={bio}
@@ -1221,21 +1243,27 @@ function AdminDashboard() {
                 </select>
               </div>
 
-              <div>
-                <label className={labelClass}>Availability Type</label>
-                <select
-                  value={availability}
-                  onChange={(e) => setAvailability(e.target.value)}
-                  className={inputClass}
-                >
-                  <option value="worldwide">Worldwide (Famous Names)</option>
-                  <option value="local">Local Only (In-Person)</option>
-                  <option value="local_online">Local &amp; Online Sessions</option>
-                </select>
-              </div>
+              {/* Availability only applies to individuals — channels and apps
+                  save as Worldwide (see the insert payload). Country/City are
+                  sub-fields of this select, so they follow it out of view. */}
+              {entityType === 'individual' && (
+                <div>
+                  <label className={labelClass}>Availability Type</label>
+                  <select
+                    value={availability}
+                    onChange={(e) => setAvailability(e.target.value)}
+                    className={inputClass}
+                  >
+                    <option value="worldwide">Worldwide (Famous Names)</option>
+                    <option value="local">Local Only (In-Person)</option>
+                    <option value="local_online">Local &amp; Online Sessions</option>
+                  </select>
+                </div>
+              )}
 
               {/* Country + City slide open for either Local option */}
-              {(availability === 'local' || availability === 'local_online') && (
+              {entityType === 'individual' &&
+                (availability === 'local' || availability === 'local_online') && (
                 <>
                   <div>
                     <label className={labelClass}>Country</label>
