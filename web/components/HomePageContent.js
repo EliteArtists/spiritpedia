@@ -101,8 +101,18 @@ export default async function HomePage({ initialSubjectSlug }) {
   // or an unexpected value mid-backfill — falls through to Local Hero, so no
   // grassroots practitioner silently vanishes from the directory.
   const isPremium = (h) => h.tier === 'superhero' || h.tier === 'luminary';
-  const superheroes = healers.filter((h) => h.tier === 'superhero');
-  const luminaries = healers.filter((h) => h.tier === 'luminary');
+
+  // ENTITY SPLIT — `entity_type` separates people from platforms. 'channel'
+  // (YouTube channels, collectives) and 'app' (Headspace) get their own shelf;
+  // everything else is an individual. NULL is treated as individual so rows
+  // predating the column — or a database without it yet — keep rendering in
+  // the tier shelves exactly as before.
+  const isPlatform = (h) => h.entity_type === 'channel' || h.entity_type === 'app';
+  const individuals = healers.filter((h) => !isPlatform(h));
+  const platforms = healers.filter(isPlatform);
+
+  const superheroes = individuals.filter((h) => h.tier === 'superhero');
+  const luminaries = individuals.filter((h) => h.tier === 'luminary');
   const localHeroes = healers.filter((h) => !isPremium(h));
 
   // The single `courses` table stores every paid offering, distinguished by
@@ -193,6 +203,17 @@ export default async function HomePage({ initialSubjectSlug }) {
               </span>
             }
             items={luminaries}
+            seeAllHref={seeAll}
+            renderItem={renderHealer}
+            itemWidthClass="w-[260px]"
+          />
+
+          {/* Channels and apps, regardless of tier. Hidden outright when there
+              are none — ContentShelf's emptyHide default handles that. */}
+          <ContentShelf
+            title="Explore These Channels"
+            subtitle="Platforms & Channels"
+            items={platforms}
             seeAllHref={seeAll}
             renderItem={renderHealer}
             itemWidthClass="w-[260px]"
