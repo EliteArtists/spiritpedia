@@ -208,6 +208,19 @@ export default async function HomePage({ initialSubjectSlug }) {
             itemWidthClass="w-[260px]"
           />
 
+          <ContentShelf
+            title="Practitioners Near You"
+            badge={
+              <span className="inline-block px-3 py-1 text-xs font-bold uppercase tracking-wider bg-emerald-500 text-white rounded-full mb-2 shadow-sm">
+                LOCAL HERO
+              </span>
+            }
+            items={localHeroes}
+            seeAllHref={seeAll}
+            renderItem={renderHealer}
+            itemWidthClass="w-[260px]"
+          />
+
           {/* Channels and apps, regardless of tier. Hidden outright when there
               are none — ContentShelf's emptyHide default handles that. */}
           <ContentShelf
@@ -261,19 +274,6 @@ export default async function HomePage({ initialSubjectSlug }) {
             subtitle="Take It With You"
             items={downloadOfferings}
             renderItem={renderOffering}
-          />
-
-          <ContentShelf
-            title="Practitioners Near You"
-            badge={
-              <span className="inline-block px-3 py-1 text-xs font-bold uppercase tracking-wider bg-emerald-500 text-white rounded-full mb-2 shadow-sm">
-                LOCAL HERO
-              </span>
-            }
-            items={localHeroes}
-            seeAllHref={seeAll}
-            renderItem={renderHealer}
-            itemWidthClass="w-[260px]"
           />
 
           <VideoGrid videos={videos} />
