@@ -6,6 +6,7 @@ import FreeResourceCard from '../../../components/FreeResourceCard.js';
 import HealerCard from '../../../components/HealerCard.js';
 import OfferingCard from '../../../components/OfferingCard.js';
 import VideoGrid from '../../../components/VideoGrid.js';
+import { buildMetadata } from '../../../utils/seo.js';
 
 // Subject pages stay statically generated (they are the same for every visitor),
 // but they must not be frozen at build time. Supabase queries run through fetch,
@@ -14,6 +15,22 @@ import VideoGrid from '../../../components/VideoGrid.js';
 // books and videos would never appear until someone happened to rebuild.
 // Regenerate hourly instead.
 export const revalidate = 3600;
+
+// Share card: the subject's display name and a line describing what the page
+// collects. No entity image — the site-wide default share image applies. An
+// unknown slug is not a 404 (the page renders empty shelves), so the title
+// simply falls back to the de-hyphenated slug like the page heading does.
+export async function generateMetadata({ params }) {
+  const { slug } = await params;
+  const subjects = await getAllSubjects();
+  const name = subjects.find((s) => s.slug === slug)?.name || slug?.replace(/-/g, ' ') || 'Subject';
+
+  return buildMetadata({
+    title: name,
+    description: `Healers, books, videos, courses and free resources on ${name} — curated by Spiritpedia.`,
+    path: `/subject/${slug}`,
+  });
+}
 
 export default async function SubjectPage({ params }) {
   // In Next.js 16 params is a Promise and must be awaited before access. Reading

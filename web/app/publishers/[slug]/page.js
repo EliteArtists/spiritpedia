@@ -2,6 +2,7 @@ import { supabase } from '@/utils/supabase';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import PublisherBooksGrid from '@/components/PublisherBooksGrid';
+import { buildMetadata, notFoundMetadata, pickImage } from '@/utils/seo';
 
 // Hourly ceiling on staleness — see the note in app/page.js.
 export const revalidate = 3600;
@@ -15,6 +16,26 @@ function healerPortrait(h) {
 
 function initial(name) {
   return (name || '?').trim().charAt(0).toUpperCase() || '?';
+}
+
+// Share card: publisher name, description, logo. Falls back to a generic line
+// when the row has no description so the card is never blank.
+export async function generateMetadata({ params }) {
+  const { slug } = await params;
+  const { data: publisher } = await supabase
+    .from('publishers')
+    .select('name, description, logo_url')
+    .eq('slug', slug)
+    .single();
+  if (!publisher) return notFoundMetadata('Publisher');
+
+  return buildMetadata({
+    title: publisher.name,
+    description:
+      publisher.description || `Authors and books from ${publisher.name} on Spiritpedia.`,
+    path: `/publishers/${slug}`,
+    image: pickImage(publisher.logo_url),
+  });
 }
 
 export default async function PublisherProfile({ params }) {

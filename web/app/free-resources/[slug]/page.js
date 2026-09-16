@@ -3,11 +3,32 @@ import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import BackButton from '@/components/BackButton';
 import { backContextQuery } from '@/utils/backContext';
+import { buildMetadata, notFoundMetadata, pickImage } from '@/utils/seo';
 
 // Hourly ceiling on staleness — see the note in app/page.js.
 export const revalidate = 3600;
 
 // This layout is always free, so there's no price badge and one fixed CTA.
+// Share card: resource title (with the healer's name when linked), its
+// description and image. Same join as the page.
+export async function generateMetadata({ params }) {
+  const { slug } = await params;
+  const { data: resource } = await supabase
+    .from('free_resources')
+    .select('title, description, image_url, healers (name)')
+    .eq('slug', slug)
+    .single();
+  if (!resource) return notFoundMetadata('Resource');
+
+  const healerName = resource.healers?.name;
+  return buildMetadata({
+    title: healerName ? `${resource.title} — ${healerName}` : resource.title,
+    description: resource.description,
+    path: `/free-resources/${slug}`,
+    image: pickImage(resource.image_url),
+  });
+}
+
 export default async function FreeResourceDetail({ params, searchParams }) {
   const { slug } = await params;
   // Contextual back navigation — the linking page supplies its own path + label.

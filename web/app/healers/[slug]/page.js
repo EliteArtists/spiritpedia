@@ -6,6 +6,7 @@ import FreeResourceCard from '@/components/FreeResourceCard';
 import HeroImageRotator from '@/components/HeroImageRotator';
 import OfferingCard from '@/components/OfferingCard';
 import VideoPlayer from '@/components/VideoPlayer';
+import { buildMetadata, notFoundMetadata, pickImage } from '@/utils/seo';
 
 // Hourly ceiling on staleness — see the note in app/page.js. Reading
 // searchParams for the back link already makes this route per-request, so this
@@ -152,6 +153,26 @@ function TierBadge({ tier }) {
       Teacher
     </span>
   );
+}
+
+// Share card: name, opening of the bio, first portrait. og:type 'profile'
+// tells crawlers this is a person page. A missing slug yields a noindex head.
+export async function generateMetadata({ params }) {
+  const { slug } = await params;
+  const { data: healer } = await supabase
+    .from('healers')
+    .select('name, bio, image_urls, image_url')
+    .eq('healer_slug', slug)
+    .single();
+  if (!healer) return notFoundMetadata('Healer');
+
+  return buildMetadata({
+    title: healer.name,
+    description: healer.bio,
+    path: `/healers/${slug}`,
+    image: pickImage(healer.image_urls?.[0], healer.image_url),
+    type: 'profile',
+  });
 }
 
 export default async function HealerProfile({ params, searchParams }) {

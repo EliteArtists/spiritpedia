@@ -5,6 +5,7 @@ import BackButton from '@/components/BackButton';
 import ReadButton from '@/components/ReadButton';
 import WantToReadButton from '@/components/WantToReadButton';
 import { backContextQuery } from '@/utils/backContext';
+import { buildMetadata, notFoundMetadata, pickImage } from '@/utils/seo';
 
 // Hourly ceiling on staleness — see the note in app/page.js.
 export const revalidate = 3600;
@@ -17,6 +18,26 @@ function Star({ className }) {
       <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14l-5-4.87 6.91-1.01L12 2z" />
     </svg>
   );
+}
+
+// Share card: "Title by Author", the synopsis, the cover. og:type 'book' is the
+// Open Graph vertical for this page. pickImage drops the legacy 'NULL' cover.
+export async function generateMetadata({ params }) {
+  const { slug } = await params;
+  const { data: book } = await supabase
+    .from('books')
+    .select('title, author, description, mock_cover_url')
+    .eq('slug', slug)
+    .single();
+  if (!book) return notFoundMetadata('Book');
+
+  return buildMetadata({
+    title: book.author ? `${book.title} by ${book.author}` : book.title,
+    description: book.description,
+    path: `/books/${slug}`,
+    image: pickImage(book.mock_cover_url),
+    type: 'book',
+  });
 }
 
 export default async function BookDetail({ params, searchParams }) {

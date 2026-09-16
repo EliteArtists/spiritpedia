@@ -10,6 +10,14 @@ import LibraryView from '@/components/LibraryView';
 // their library. Observed exactly that — a saved video 404'd out of the shelves
 // because the baked snapshot predated it.
 export const dynamic = 'force-dynamic';
+
+// The library is per-visitor (localStorage), so a shared link shows an empty
+// shelf to anyone else. Give it a proper title but keep it out of the index.
+export const metadata = {
+  title: 'My Library',
+  description: 'Your saved healers, books, videos and resources, organised by subject.',
+  robots: { index: false, follow: true },
+};
 // Site-wide hourly ISR floor, declared for consistency with the other pages.
 // force-dynamic above wins outright — the route still renders per request and
 // its fetches stay uncached. If you are here to resolve the apparent conflict,

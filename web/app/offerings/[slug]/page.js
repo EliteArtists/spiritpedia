@@ -3,6 +3,7 @@ import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import BackButton from '@/components/BackButton';
 import { backContextQuery } from '@/utils/backContext';
+import { buildMetadata, notFoundMetadata, pickImage } from '@/utils/seo';
 
 // Hourly ceiling on staleness — see the note in app/page.js.
 export const revalidate = 3600;
@@ -16,6 +17,26 @@ const PRODUCT_TYPES = {
   download: { badge: 'bg-blue-600', label: 'DOWNLOAD', cta: 'Get Download →' },
   membership: { badge: 'bg-emerald-600', label: 'MEMBERSHIP', cta: 'Join Now →' },
 };
+
+// Share card: offering title (with the healer's name when linked), its
+// description and image. Same join as the page so the author is nameable.
+export async function generateMetadata({ params }) {
+  const { slug } = await params;
+  const { data: offering } = await supabase
+    .from('courses')
+    .select('title, description, image_url, healers (name)')
+    .eq('slug', slug)
+    .single();
+  if (!offering) return notFoundMetadata('Offering');
+
+  const healerName = offering.healers?.name;
+  return buildMetadata({
+    title: healerName ? `${offering.title} — ${healerName}` : offering.title,
+    description: offering.description,
+    path: `/offerings/${slug}`,
+    image: pickImage(offering.image_url),
+  });
+}
 
 export default async function OfferingDetail({ params, searchParams }) {
   const { slug } = await params;
