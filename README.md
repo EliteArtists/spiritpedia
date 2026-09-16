@@ -17,7 +17,7 @@ The entry point is always emotional:
 📲 Platform Model
 | Platform | Role | Status |
 | :--- | :--- | :--- |
-| Web App (Next.js) | Primary product — full discovery experience | ✅ Active development |
+| Web App (Next.js) | Primary product — full discovery experience | ✅ Live at [spirit-pedia.com](https://spirit-pedia.com) |
 | Native App (Flutter) | Phase 2 — iOS & Android with push notifications | ⬜ Planned |
 
 #### Why Web First
@@ -45,15 +45,21 @@ Each subject acts as an entry point. When a user selects "Reiki," they instantly
 * ✨ Related quotes and disciplines
 
 👥 Healer Tiers
-Spiritpedia uses a three-tier system to classify all practitioners and teachers on the platform. Tiers reflect reach and recognition — and crucially, they are not fixed. Every healer on Spiritpedia has the opportunity to grow and graduate to a higher tier as their audience and impact grows.
+Spiritpedia uses a four-tier system to classify all practitioners and teachers on the platform. Three tiers reflect reach and recognition — and crucially, they are not fixed. Every living healer on Spiritpedia has the opportunity to grow and graduate to a higher tier as their audience and impact grows. The fourth tier, Ascended Master, honours teachers who have passed on and sits outside the graduation ladder.
 
 This graduation mechanic is intentional. Spiritpedia is not just a directory — it is a career platform for spiritual practitioners.
 
 #### ⭐ Superhero (Amber badge)
 Global household names. Mainstream recognition beyond the spiritual community. Their books are in every bookshop. A person with no interest in spirituality has likely heard of them.
 * **Threshold**: 500,000+ followers on a single platform, OR mainstream name recognition regardless of follower count.
-* **Examples**: Eckhart Tolle, Abraham Hicks, Joe Dispenza, Deepak Chopra, Wayne Dyer
+* **Examples**: Eckhart Tolle, Abraham Hicks, Joe Dispenza, Deepak Chopra
 * *Superheroes are listed for platform authority and content value. They do not pay for listings.*
+
+#### 🕊️ Ascended Master (Gold badge)
+Teachers who have passed on but whose work remains foundational. They are shown in the **Timeless Teachers** shelf on the homepage rather than alongside living practitioners, and their profile carries a lifespan (`1931 — 2015`, or `b. 1931` when only the birth year is known).
+* **Threshold**: Deceased, with a body of work that still shapes the field.
+* **Examples**: Wayne Dyer, Louise Hay, Ram Dass
+* *Ascended Masters are listed for their legacy and content value. They do not pay for listings, and they are not part of the graduation ladder.*
 
 #### ✨ Luminary (Violet badge)
 Respected teachers and practitioners with a real, established audience within the spiritual world. They are known and trusted in the community. They may not yet have crossed into mainstream consciousness, but within their field they carry genuine authority.
@@ -73,8 +79,17 @@ Practitioners operating locally or with a small online presence. This is the gra
 | Tier | Badge | Follower Threshold | Pays? |
 | :--- | :--- | :--- | :--- |
 | ⭐ Superhero | Amber | 500k+ on one platform OR mainstream recognition | No |
+| 🕊️ Ascended Master | Gold | Deceased; foundational body of work | No |
 | ✨ Luminary | Violet | 50k–499k on one platform | Eventually yes (nominal) |
 | 🌿 Local Hero | Emerald | Under 50k across all platforms | Yes — £5–£10/month |
+
+#### Entity Types
+Not every entry in the healers table is a person. `entity_type` separates the two:
+* **individual** — a practitioner or teacher. Appears in the tier shelves and, for Superheroes, the hero billboard.
+* **channel** — a YouTube channel, podcast, or collective.
+* **app** — a wellness or meditation app (e.g. Headspace).
+
+Channels and apps keep their `tier` but are pulled out of the tier shelves into the **Explore These Channels** shelf. They have no availability of their own and always save as Worldwide. A NULL `entity_type` is treated as individual.
 
 🧱 Core Modules
 | Module | Description | Platform |
@@ -122,7 +137,7 @@ The `/web` directory contains the full Next.js application.
 | web/components/ContentShelf.js | Reusable horizontal-scroll shelf — every homepage row is one |
 | web/components/ShelfRow.js | Shared shelf heading (title / subtitle / "See all") |
 | web/components/VideoGrid.js | Vertical video grid with progressive "Load more" reveal |
-| web/components/HealerCard.js | Healer card — tier badge, favourite toggle, portrait fallback |
+| web/components/HealerCard.js | Healer card — four-tier badge, favourite toggle, portrait fallback |
 | web/components/BookCard.js | Book cover with synopsis popover and affiliate deep links |
 | web/components/VideoPlayer.js | Thumbnail that swaps to an inline YouTube iframe on click |
 | web/components/OfferingCard.js | Paid offering card — CTA varies by product_type |
@@ -134,7 +149,18 @@ The homepage is a Netflix-style shelf stack. Top to bottom:
 
 `Nav → Emotional search → Subject pills → Hero billboard → Content shelves → Video grid`
 
-The billboard rotates through Superheroes every 8 seconds inside a fixed 450px frame. Below it, each shelf is a `ContentShelf` — Featured Healers, Luminaries, Free Resources, Books, Courses, Retreats, Downloads, Local Heroes — and a shelf whose query returns nothing renders nothing at all rather than an empty heading. The subject filter (`?subject=`) narrows *every* collection on the page, not just the healer rows.
+The billboard rotates through Superheroes (individuals only) every 8 seconds inside a fixed 450px frame. Below it, each shelf is a `ContentShelf`, in this order:
+
+| Shelf | Who appears |
+| :--- | :--- |
+| **Worldwide** | Superheroes (individuals) |
+| **Rising Voices** | Luminaries (individuals) |
+| **Practitioners Near You** | Local Heroes |
+| **Timeless Teachers** | Ascended Masters |
+| **Explore These Channels** | Channels and apps, regardless of tier |
+| Free Resources · Books & Literature · Courses & Programmes · Retreats & Live Events · Downloads & Audio | Content shelves |
+
+A shelf whose query returns nothing renders nothing at all rather than an empty heading. The subject filter (`?subject=`) narrows *every* collection on the page, not just the healer rows.
 
 #### 5-Pillar Subject Taxonomy
 The subject pills cluster database subject slugs under five Master Keys, defined in `SUBJECT_TAXONOMY` at the top of `web/components/SubjectPills.js`:
@@ -148,7 +174,7 @@ The library at `/library` reads saved items from local storage (`favorited_books
 
 🗄️ Database Structure (Supabase)
 #### Tables
-* **healers**: `id`, `name`, `healer_slug`, `bio`, `tier`, `image_urls[]`, `subject_slugs[]`, `availability_type`, `country`, `city`, `contact_email`, `contact_phone`, `booking_url`, `website_url`, `youtube_url`, `instagram_url`, `facebook_url`, `twitter_url`, `tiktok_url`
+* **healers**: `id`, `name`, `healer_slug`, `bio`, `tier`, `entity_type`, `birth_year`, `death_year`, `image_urls[]`, `subject_slugs[]`, `availability_type`, `country`, `city`, `contact_email`, `contact_phone`, `booking_url`, `website_url`, `youtube_url`, `instagram_url`, `facebook_url`, `twitter_url`, `tiktok_url`
 * **books**: `id`, `title`, `slug`, `author`, `description`, `mock_cover_url`, `amazon_url`, `goodreads_url`, `worldofbooks_url`, `subject_slugs[]`, `healer_slug`
 * **videos**: `id`, `title`, `platform_url`, `subject_slugs[]`, `healer_slug`
 * **subjects**: `id`, `name`, `slug`
@@ -162,7 +188,9 @@ The library at `/library` reads saved items from local storage (`favorited_books
 * **`subject_slugs` is a Postgres array**, not a string. Every subject filter is an array-containment check (`.contains(...)` → the `@>` operator), which matches a slug as one whole element — that is what makes hyphenated tags like `eft-tapping` safe.
 * **Healers, books, and videos link by `healer_slug`** (text). **Courses, free resources, and publishers link by `healer_id`** (bigint, via the `publisher_healers` junction for publishers). The two are not interchangeable.
 * **Books resolve by `slug`**, not id — `/books/[slug]` is SEO-friendly, and `books.slug` is unique and backfilled from the title. Publishers resolve by `slug` too.
-* **`tier`** replaces the legacy `is_famous` boolean. Values: `superhero` / `luminary` / `local_hero`. Anything else — including NULL mid-backfill — falls back to Local Hero, so no practitioner silently vanishes.
+* **`tier`** replaces the legacy `is_famous` boolean. Values: `superhero` / `ascended_master` / `luminary` / `local_hero`. Anything else — including NULL mid-backfill — still surfaces in the Practitioners Near You shelf so no practitioner silently vanishes, but the card renders a neutral grey "Teacher" badge rather than borrowing Local Hero's, so bad data is visible instead of mislabelled.
+* **`entity_type`**: `individual` / `channel` / `app`. NULL is treated as `individual`. Channels and apps are filtered out of the tier shelves and the billboard in memory — no separate query.
+* **`birth_year` / `death_year`** are optional integers, collected in the admin form only when the tier is Ascended Master. The profile shows `1931 — 2015` when both are set, `b. 1931` when only the birth year is known, and nothing when neither is.
 * **`courses` stores every paid offering**, split by `product_type`: `course` / `download` / `membership` / `retreat`. An unset value is treated as a course, so legacy rows predating the column still surface.
 * **`free_resources.resource_type`**: `meditation` / `download` / `mini_course` / `workshop` / `practice`.
 * **Expiration is enforced at query level.** Courses and free resources only surface while live: `is_active` is true, and `end_date` is either NULL (evergreen) or not yet past. The window is recomputed per request, so it rolls forward on its own.
@@ -178,7 +206,7 @@ The library at `/library` reads saved items from local storage (`favorited_books
 | :--- | :--- |
 | Supabase backend live | ✅ Complete |
 | Next.js web app core | ✅ Complete |
-| Three-tier healer system (Superhero / Luminary / Local Hero) | ✅ Complete |
+| Four-tier healer system (Superhero / Ascended Master / Luminary / Local Hero) | ✅ Complete |
 | is_famous → tier field migration | ✅ Complete |
 | Netflix-style homepage (billboard + shelves + video grid) | ✅ Complete |
 | 5-pillar subject pill navigation | ✅ Complete |
@@ -199,17 +227,31 @@ The library at `/library` reads saved items from local storage (`favorited_books
 | Publisher admin tab + public publisher profile pages | ✅ Complete |
 | Book URLs migrated to SEO-friendly slugs | ✅ Complete |
 | Admin authentication — password login + session cookie (`ADMIN_PASSWORD` env var) | ✅ Complete |
-| Vercel production deployment | ⬜ Next |
+| Entity types — channels and apps split into their own shelf | ✅ Complete |
+| Ascended Master tier — gold badge, Timeless Teachers shelf, lifespan | ✅ Complete |
+| Vercel production deployment — live at [spirit-pedia.com](https://spirit-pedia.com) | ✅ Complete |
+| Open Graph meta tags | ⬜ In progress |
 | Content library (target: 5,000 videos + 5,000 books) | ⬜ Ongoing |
 | Flutter native app | ⬜ Phase 2 |
 | IAM notification system | ⬜ Phase 2 |
 
+📊 Content Library (approximate)
+| Collection | Count |
+| :--- | :--- |
+| Healers | 130+ |
+| Videos | 1,800+ |
+| Books | 600+ |
+| Courses & offerings | 750+ |
+| Free resources | 150+ |
+
 💡 Immediate Next Steps
-1. **Final content sprint** — Deepak Chopra, Bashar, and the remaining missing Superheroes.
-2. **Ascended Masters tier** — Wayne Dyer, Louise Hay, Ram Dass.
-3. **Ancient Teachers category** — Jesus, Buddha, Lao Tzu.
-4. **Publishing Houses content sprint** — Hay House, Awaken Village Press.
-5. Deploy to Vercel (production).
-6. Flutter app build (Phase 2).
+| Item | Status |
+| :--- | :--- |
+| Ascended Masters tier — Wayne Dyer, Louise Hay, Ram Dass | ✅ Complete (code and content) |
+| Vercel deployment — live at [spirit-pedia.com](https://spirit-pedia.com) | ✅ Complete |
+| Open Graph meta tags — rich link previews for every page | ⬜ In progress (current task) |
+| Publishing Houses content sprint — Hay House, Awaken Village Press | ⬜ In progress |
+| Ancient Teachers — Jesus, Buddha, Lao Tzu; needs its own tier infrastructure | ⬜ Next |
+| Flutter app build | ⬜ Phase 2 |
 
 Made with love in Tavira 💫
