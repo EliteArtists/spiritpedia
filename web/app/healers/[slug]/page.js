@@ -228,8 +228,12 @@ export default async function HealerProfile({ params, searchParams }) {
   ].filter((link) => link.url);
 
   // The contact funnel is the Local Hero directory feature — it only appears when
-  // the healer actually has an email, phone, or booking link on file.
-  const hasContact = Boolean(healer.contact_email || healer.contact_phone || healer.booking_url);
+  // the healer actually has an email, phone, or booking link on file. Ascended
+  // Masters are deceased, so the whole card (availability pills, email, phone,
+  // booking button) is suppressed for them even if legacy contact data exists.
+  const hasContact =
+    healer.tier !== 'ascended_master' &&
+    Boolean(healer.contact_email || healer.contact_phone || healer.booking_url);
 
   // NOTE ON THE BIO SCROLL BOX
   // The brief asked for a word-count trigger (>300 words → scroll). That was
