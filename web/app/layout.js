@@ -35,14 +35,17 @@ export const metadata = {
   description: DEFAULT_DESCRIPTION,
   applicationName: SITE_NAME,
   alternates: { canonical: "/" },
-  // The golden star symbol is the favicon at every size and the site-wide
-  // share image. There is no app/opengraph-image.js any more — a file-based
-  // image would override these `images` entries, so the symbol is declared
-  // here and reused by buildMetadata() for any entity without its own image.
+  // Tab icon: the star on the brand's navy ground, a 512px square, so it
+  // reads as a solid mark in light and dark tab strips alike. (The
+  // transparent starburst collapsed to a faint dot at 16px.) The transparent
+  // version stays the site-wide share image below — there is no
+  // app/opengraph-image.js any more, since a file-based image would override
+  // these `images` entries; buildMetadata() reuses it for any entity without
+  // an image of its own.
   icons: {
-    icon: "/Transparent_Symbol.png",
-    apple: "/Transparent_Symbol.png",
-    shortcut: "/Transparent_Symbol.png",
+    icon: "/Spiritpedia_Symbol.png",
+    apple: "/Spiritpedia_Symbol.png",
+    shortcut: "/Spiritpedia_Symbol.png",
   },
   openGraph: {
     type: "website",
