@@ -184,7 +184,11 @@ export default async function HomePage({ initialSubjectSlug }) {
             <span className="text-base font-bold tracking-wider text-white">Spiritpedia</span>
           </a>
           <div className="flex items-center gap-3">
-            <ShareButton url={SITE_URL} title={DEFAULT_TITLE} />
+            {/* Share is desktop/tablet only — on a phone the OS share sheet is a
+                tap away on every detail page, and the header needs the room. */}
+            <div className="hidden md:flex">
+              <ShareButton url={SITE_URL} title={DEFAULT_TITLE} />
+            </div>
             <a
               href="/library"
               className="flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-2 text-sm font-semibold text-white transition-all duration-300 hover:scale-105 hover:bg-white/20 active:scale-95"
