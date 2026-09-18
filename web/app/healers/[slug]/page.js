@@ -8,6 +8,7 @@ import OfferingCard from '@/components/OfferingCard';
 import VideoPlayer from '@/components/VideoPlayer';
 import ShareButton from '@/components/ShareButton';
 import { buildMetadata, notFoundMetadata, pickImage, SITE_URL } from '@/utils/seo';
+import { formatLifespan, LIFESPAN_BADGE_CLASS } from '@/utils/lifespan';
 
 // Hourly ceiling on staleness — see the note in app/page.js. Reading
 // searchParams for the back link already makes this route per-request, so this
@@ -120,7 +121,10 @@ function PhoneIcon() {
 // Tier badge — matched to the homepage/billboard motif. An unknown or NULL tier
 // gets a neutral "Teacher" badge rather than borrowing Local Hero's, so a tier
 // that reaches the database before the UI is visibly unstyled, not mislabelled.
-function TierBadge({ tier }) {
+// Ascended Masters are the exception: their badge IS the lifespan ("1926 —
+// 2017" / "b. 1926"), and it is omitted entirely when no years are recorded.
+function TierBadge({ healer }) {
+  const { tier } = healer;
   if (tier === 'superhero') {
     return (
       <span className="inline-block rounded-full bg-[#fef08a] px-3 py-1 text-[11px] font-bold uppercase tracking-wider text-[#78350f] shadow-sm">
@@ -129,11 +133,8 @@ function TierBadge({ tier }) {
     );
   }
   if (tier === 'ascended_master') {
-    return (
-      <span className="inline-block rounded-full bg-[#c9a84c] px-3 py-1 text-[11px] font-bold uppercase tracking-wider text-[#1a1a1a] shadow-sm">
-        Ascended Master
-      </span>
-    );
+    const lifespan = formatLifespan(healer);
+    return lifespan ? <span className={LIFESPAN_BADGE_CLASS}>{lifespan}</span> : null;
   }
   if (tier === 'luminary') {
     return (
@@ -295,18 +296,8 @@ export default async function HealerProfile({ params, searchParams }) {
               <h1 className="text-4xl font-bold text-white">{healer.name}</h1>
 
               <div className="mt-3">
-                <TierBadge tier={healer.tier} />
+                <TierBadge healer={healer} />
               </div>
-
-              {/* Lifespan — only when a birth year is recorded. A death year
-                  closes the range; without one the person is presumed living. */}
-              {healer.birth_year && (
-                <p className="text-sm text-gray-400 mt-1">
-                  {healer.death_year
-                    ? `${healer.birth_year} — ${healer.death_year}`
-                    : `b. ${healer.birth_year}`}
-                </p>
-              )}
 
               {/* Social row — the same frosted-glass icon buttons as before,
                   moved off the image and onto the dark column. Hidden entirely

@@ -25,7 +25,9 @@ export function truncate(text, max = 160, fallback = DEFAULT_DESCRIPTION) {
 
 // A usable image URL or null. Filters the 'NULL' string that legacy book rows
 // carry in mock_cover_url, and anything that is not an absolute http(s) URL —
-// crawlers cannot resolve a relative path or a bare filename.
+// crawlers cannot resolve a relative path or a bare filename. A null here
+// makes buildMetadata fall back to the symbol. (A URL that is well-formed but
+// 404s cannot be caught at metadata time without fetching it per request.)
 export function pickImage(...candidates) {
   for (const c of candidates) {
     if (typeof c === 'string' && /^https?:\/\//i.test(c) && c !== 'NULL') return c;
@@ -33,12 +35,14 @@ export function pickImage(...candidates) {
   return null;
 }
 
-// The site-wide share image, rendered by app/opengraph-image.js (and its
-// twitter-image twin). Referenced by path — the root layout's metadataBase
-// makes it absolute. Next appends a cache-busting hash when it injects the
-// file-based image itself; the bare path serves the same PNG.
-export const DEFAULT_OG_IMAGE = { url: '/opengraph-image', width: 1200, height: 630 };
-export const DEFAULT_TWITTER_IMAGE = { url: '/twitter-image', width: 1200, height: 630 };
+// The site-wide share image: the golden star symbol in /public. It is the
+// fallback for every surface — a healer with no portrait, a book with no
+// cover, an offering or resource with no image, a publisher with no logo, and
+// the homepage itself. Referenced by path; the root layout's metadataBase
+// makes it absolute for crawlers.
+export const DEFAULT_IMAGE_PATH = '/Transparent_Symbol.png';
+export const DEFAULT_OG_IMAGE = { url: DEFAULT_IMAGE_PATH };
+export const DEFAULT_TWITTER_IMAGE = { url: DEFAULT_IMAGE_PATH };
 
 // Assemble a Next.js Metadata object for one page.
 //   title       — page-specific; the root layout's template appends " | Spiritpedia"

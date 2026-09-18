@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import CardImage from './CardImage.js';
+import { formatLifespan, LIFESPAN_BADGE_CLASS } from '../utils/lifespan.js';
 
 // Shared localStorage key holding the global array of favorited healer ids.
 const FAV_HEALERS_KEY = 'favorited_healers';
@@ -11,14 +12,43 @@ const FAV_HEALERS_KEY = 'favorited_healers';
 // remote placeholder service would be one more link in the same broken chain.
 const DEFAULT_AVATAR = '/avatar-placeholder.svg';
 
+// Rotating cards advance every 5s with a 1.5s opacity fade (the duration-[1500ms]
+// class on each frame) — the same cadence as HeroImageRotator.
+const ROTATE_MS = 5000;
+
 // Practitioner media card with a floating favorite heart. `portrait` is usually
 // computed server-side (homepage rotator); when omitted (e.g. the library view)
-// it falls back to the healer's first image or a generic avatar.
-export default function HealerCard({ healer, portrait }) {
+// it falls back to the healer's first image or a generic avatar. `heightClass`
+// lets a shelf run a taller card (the Timeless Teachers shelf pairs a wider
+// track with h-[420px]) without a second card component.
+//
+// `rotate` turns the artwork into a slow crossfade through every portrait in
+// image_urls — HeroImageRotator's pattern, stacked frames fading in place. With
+// one image (or none) it renders the static card exactly as before, so the prop
+// is safe to pass for a whole shelf.
+export default function HealerCard({ healer, portrait, heightClass = 'h-72', rotate = false }) {
   const [favorited, setFavorited] = useState(false);
 
   const favId = healer.healer_slug || String(healer.id);
   const imgSrc = portrait || (Array.isArray(healer.image_urls) && healer.image_urls[0]) || null;
+  const isAscended = healer.tier === 'ascended_master';
+
+  const frames = rotate && Array.isArray(healer.image_urls) ? healer.image_urls.filter(Boolean) : [];
+  const rotating = frames.length > 1;
+  const [frame, setFrame] = useState(0);
+
+  // Start each rotating card on a random frame so a shelf of them does not
+  // fade in lockstep. Done in an effect, not during render, so the server and
+  // client agree on frame 0 at hydration.
+  useEffect(() => {
+    if (rotating) setFrame(Math.floor(Math.random() * frames.length));
+  }, [rotating, frames.length]);
+
+  useEffect(() => {
+    if (!rotating) return undefined;
+    const timer = setInterval(() => setFrame((prev) => (prev + 1) % frames.length), ROTATE_MS);
+    return () => clearInterval(timer);
+  }, [rotating, frames.length]);
 
   // Restore favorite state from the global favorited_healers array on mount.
   useEffect(() => {
@@ -46,27 +76,56 @@ export default function HealerCard({ healer, portrait }) {
   }
 
   return (
-    <div className="relative w-full h-72 rounded-2xl overflow-hidden bg-slate-900 shadow-lg group">
+    <div className={`relative w-full ${heightClass} rounded-2xl overflow-hidden bg-slate-900 shadow-lg group`}>
       <a href={`/healers/${healer.healer_slug}`} className="block w-full h-full cursor-pointer">
-        {/* Edge-to-edge media with a micro-zoom on hover */}
-        <CardImage
-          src={imgSrc}
-          alt={healer.name}
-          fallbackSrc={DEFAULT_AVATAR}
-          className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-        />
-        {/* Floating text overlay anchored to the baseline */}
-        <div className="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/95 via-black/60 to-transparent p-4 pt-16 flex items-center justify-between z-10">
+        {/* Edge-to-edge media with a micro-zoom on hover. Rotating cards stack
+            every portrait and fade between them; the hover zoom is moved to
+            the wrapper so the whole stack scales together. */}
+        {rotating ? (
+          <div className="w-full h-full transition-transform duration-500 group-hover:scale-105">
+            {frames.map((src, i) => (
+              <CardImage
+                key={src}
+                src={src}
+                alt={healer.name}
+                fallbackSrc={DEFAULT_AVATAR}
+                className={`absolute inset-0 w-full h-full object-cover transition-opacity ease-in-out duration-[1500ms] ${
+                  i === frame ? 'opacity-100' : 'opacity-0'
+                }`}
+              />
+            ))}
+          </div>
+        ) : (
+          <CardImage
+            src={imgSrc}
+            alt={healer.name}
+            fallbackSrc={DEFAULT_AVATAR}
+            className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+          />
+        )}
+        {/* Ascended Masters wear their lifespan, not a tier label, and it sits
+            top-left of the card (the heart owns top-right) rather than in the
+            baseline bar. No pill at all when no years are recorded. */}
+        {isAscended && formatLifespan(healer) && (
+          <span className={`absolute top-3 left-3 z-10 ${LIFESPAN_BADGE_CLASS}`}>
+            {formatLifespan(healer)}
+          </span>
+        )}
+
+        {/* Floating text overlay anchored to the baseline. Name left + tier pill
+            right for every tier except Ascended Masters, whose name sits alone
+            on the right. */}
+        <div
+          className={`absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/95 via-black/60 to-transparent p-4 pt-16 flex items-center z-10 ${
+            isAscended ? 'justify-end text-right' : 'justify-between'
+          }`}
+        >
           <h3 className="text-white font-bold text-lg drop-shadow-sm">{healer.name}</h3>
           {healer.tier === 'superhero' ? (
             <span className="px-2.5 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wider bg-amber-100 text-amber-600 border border-amber-300">
               Superhero
             </span>
-          ) : healer.tier === 'ascended_master' ? (
-            <span className="bg-[#c9a84c] text-[#1a1a1a] font-bold text-[11px] tracking-wider uppercase px-2.5 py-1 rounded-md shadow-sm">
-              ASCENDED MASTER
-            </span>
-          ) : healer.tier === 'luminary' ? (
+          ) : isAscended ? null : healer.tier === 'luminary' ? (
             <span className="bg-violet-600 text-white font-bold text-[11px] tracking-wider uppercase px-2.5 py-1 rounded-md shadow-sm">
               LUMINARY
             </span>

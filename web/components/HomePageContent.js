@@ -118,6 +118,17 @@ export default async function HomePage({ initialSubjectSlug }) {
 
   const superheroes = individuals.filter((h) => h.tier === 'superhero');
   const ascendedMasters = individuals.filter((h) => h.tier === 'ascended_master');
+  // The billboard rotates through both tiers, interleaved so roughly every
+  // fourth slide is an Ascended Master. Table order put all 14 Masters after
+  // 50 Superheroes, which meant they only surfaced once a visitor had sat
+  // through the whole Superhero run. Three Superheroes, then one Master,
+  // repeating; whichever list runs out first, the remainder of the other is
+  // appended so nobody is dropped.
+  const billboardHealers = [];
+  for (let s = 0, a = 0; s < superheroes.length || a < ascendedMasters.length; ) {
+    for (let k = 0; k < 3 && s < superheroes.length; k += 1) billboardHealers.push(superheroes[s++]);
+    if (a < ascendedMasters.length) billboardHealers.push(ascendedMasters[a++]);
+  }
   const luminaries = individuals.filter((h) => h.tier === 'luminary');
   const localHeroes = healers.filter((h) => !isPremium(h));
 
@@ -128,7 +139,9 @@ export default async function HomePage({ initialSubjectSlug }) {
   const retreatOfferings = courses.filter((c) => c.product_type === 'retreat');
   const downloadOfferings = courses.filter((c) => c.product_type === 'download');
 
-  const renderHealer = (healer) => (
+  // Card renderer factory — `cardProps` lets one shelf vary the card (the
+  // Timeless Teachers shelf runs a taller card) without a second component.
+  const healerRenderer = (cardProps = {}) => (healer) => (
     <HealerCard
       healer={healer}
       portrait={pickPortrait(
@@ -136,8 +149,10 @@ export default async function HomePage({ initialSubjectSlug }) {
         currentSubjectSlug,
         healer.healer_slug || String(healer.id)
       )}
+      {...cardProps}
     />
   );
+  const renderHealer = healerRenderer();
 
   const renderOffering = (item) => (
     <OfferingCard
@@ -184,7 +199,7 @@ export default async function HomePage({ initialSubjectSlug }) {
         </section>
 
         {/* 4. HERO BILLBOARD */}
-        <HeroBillboard healers={superheroes} />
+        <HeroBillboard healers={billboardHealers} />
 
         {/* 5. CONTENT SHELVES + 6. VIDEOS
             grid-cols-1 is load-bearing: an implicit auto column sizes itself to
@@ -231,14 +246,17 @@ export default async function HomePage({ initialSubjectSlug }) {
           />
 
           {/* Deceased teachers whose work is foundational. Hidden until the
-              first one is tagged — ContentShelf's emptyHide default. */}
+              first one is tagged — ContentShelf's emptyHide default. Runs a
+              wider track and a much taller card than the other healer shelves
+              (320×420 vs 260×288), and each card slowly crossfades through
+              its portraits, so the row reads as its own cinematic moment. */}
           <ContentShelf
             title="Timeless Teachers"
-            subtitle="The Ancestors"
+            subtitle="Ascended Masters"
             items={ascendedMasters}
             seeAllHref={seeAll}
-            renderItem={renderHealer}
-            itemWidthClass="w-[260px]"
+            renderItem={healerRenderer({ heightClass: 'h-[420px]', rotate: true })}
+            itemWidthClass="w-[320px]"
           />
 
           {/* Channels and apps, regardless of tier. Hidden outright when there

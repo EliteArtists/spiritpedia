@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useRef, useState } from 'react';
+import { formatLifespan } from '../utils/lifespan.js';
 
 const ROTATE_MS = 8000;
 const BIO_CHARS = 120;
@@ -15,10 +16,11 @@ function truncateBio(bio) {
   return `${(lastSpace > 0 ? cut.slice(0, lastSpace) : cut).trimEnd()}…`;
 }
 
-// Full-bleed rotating feature for the Superhero tier. Renders server-side at
-// index 0, then on mount jumps to a random Superhero — doing the randomisation in
-// an effect rather than during render keeps the server and client markup
-// identical, so a fresh face on every page load costs no hydration mismatch.
+// Full-bleed rotating feature for the Superhero and Ascended Master tiers.
+// Renders server-side at index 0, then on mount jumps to a random healer — doing
+// the randomisation in an effect rather than during render keeps the server and
+// client markup identical, so a fresh face on every page load costs no
+// hydration mismatch.
 export default function HeroBillboard({ healers = [] }) {
   const [index, setIndex] = useState(0);
   const dotsRef = useRef(null);
@@ -93,15 +95,26 @@ export default function HeroBillboard({ healers = [] }) {
           overflow-hidden means an unusually long name or bio is clipped rather
           than pushing the CTA out through the bottom edge. */}
       <div className="relative z-10 flex h-full max-h-full flex-col justify-center gap-2 md:gap-4 overflow-hidden p-5 pb-10 md:p-14 md:pb-16 max-w-[75%] md:max-w-[55%]">
-        <span className="shrink-0 self-start rounded-full bg-[#fef08a] px-3 py-1 text-[10px] font-bold uppercase tracking-wider text-[#78350f]">
-          Superhero
-        </span>
+        {/* Superheroes wear the amber tier pill above the name. Ascended
+            Masters get no pill — their lifespan sits beneath the name instead
+            (below), or nothing at all when no years are recorded. */}
+        {healer.tier === 'superhero' && (
+          <span className="shrink-0 self-start rounded-full bg-[#fef08a] px-3 py-1 text-[10px] font-bold uppercase tracking-wider text-[#78350f]">
+            Superhero
+          </span>
+        )}
 
         {/* A two-line name would eat the bio's space and shift the CTA, so the
             headline is hard-clamped to one line. */}
         <h2 className="line-clamp-1 text-2xl md:text-6xl font-bold leading-tight text-white drop-shadow-lg">
           {healer.name}
         </h2>
+
+        {healer.tier === 'ascended_master' && formatLifespan(healer) && (
+          <p className="shrink-0 self-start -mt-1 md:-mt-2 rounded-full bg-black/30 backdrop-blur-sm px-3 py-1 text-sm font-light tracking-widest text-white/60">
+            {formatLifespan(healer)}
+          </p>
+        )}
 
         {/* truncateBio caps the character count; line-clamp-3 caps the rendered
             height, which is what actually protects the layout at narrow widths
