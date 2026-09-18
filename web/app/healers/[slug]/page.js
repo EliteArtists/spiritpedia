@@ -6,7 +6,8 @@ import FreeResourceCard from '@/components/FreeResourceCard';
 import HeroImageRotator from '@/components/HeroImageRotator';
 import OfferingCard from '@/components/OfferingCard';
 import VideoPlayer from '@/components/VideoPlayer';
-import { buildMetadata, notFoundMetadata, pickImage } from '@/utils/seo';
+import ShareButton from '@/components/ShareButton';
+import { buildMetadata, notFoundMetadata, pickImage, SITE_URL } from '@/utils/seo';
 
 // Hourly ceiling on staleness — see the note in app/page.js. Reading
 // searchParams for the back link already makes this route per-request, so this
@@ -276,9 +277,13 @@ export default async function HealerProfile({ params, searchParams }) {
           images inconsistently across the directory. */}
       <section className="bg-[#0a0f1d] px-6 py-12">
         <div className="max-w-5xl mx-auto">
-          {/* Back link — very top left, context-aware, above the columns. */}
-          <div className="mb-8">
+          {/* Back link top-left, share button top-right, above the columns. */}
+          <div className="mb-8 flex items-center justify-between gap-4">
             <BackButton from={from} fromTitle={fromTitle} />
+            <ShareButton
+              url={`${SITE_URL}/healers/${healer.healer_slug}`}
+              title={`${healer.name} — Spiritpedia`}
+            />
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-[2fr_3fr] gap-10">

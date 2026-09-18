@@ -5,7 +5,8 @@ import BackButton from '@/components/BackButton';
 import ReadButton from '@/components/ReadButton';
 import WantToReadButton from '@/components/WantToReadButton';
 import { backContextQuery } from '@/utils/backContext';
-import { buildMetadata, notFoundMetadata, pickImage } from '@/utils/seo';
+import ShareButton from '@/components/ShareButton';
+import { buildMetadata, notFoundMetadata, pickImage, SITE_URL } from '@/utils/seo';
 
 // Hourly ceiling on staleness — see the note in app/page.js.
 export const revalidate = 3600;
@@ -101,9 +102,16 @@ export default async function BookDetail({ params, searchParams }) {
 
         {/* Right column — title, author, rating, description, purchase links */}
         <div>
-          <h1 className="text-3xl md:text-4xl font-bold text-white leading-tight mb-2">
-            {book.title}
-          </h1>
+          <div className="flex items-start justify-between gap-4 mb-2">
+            <h1 className="text-3xl md:text-4xl font-bold text-white leading-tight">
+              {book.title}
+            </h1>
+            <ShareButton
+              className="shrink-0 mt-1"
+              url={`${SITE_URL}/books/${book.slug}`}
+              title={`${book.title} — Spiritpedia`}
+            />
+          </div>
 
           {healer ? (
             <Link

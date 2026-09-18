@@ -3,7 +3,8 @@ import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import BackButton from '@/components/BackButton';
 import { backContextQuery } from '@/utils/backContext';
-import { buildMetadata, notFoundMetadata, pickImage } from '@/utils/seo';
+import ShareButton from '@/components/ShareButton';
+import { buildMetadata, notFoundMetadata, pickImage, SITE_URL } from '@/utils/seo';
 
 // Hourly ceiling on staleness — see the note in app/page.js.
 export const revalidate = 3600;
@@ -82,9 +83,16 @@ export default async function OfferingDetail({ params, searchParams }) {
           )}
         </div>
 
-        <h1 className="text-3xl md:text-4xl font-bold text-white mt-4 leading-tight">
-          {offering.title}
-        </h1>
+        <div className="mt-4 flex items-start justify-center gap-3">
+          <h1 className="text-3xl md:text-4xl font-bold text-white leading-tight">
+            {offering.title}
+          </h1>
+          <ShareButton
+            className="shrink-0 mt-1"
+            url={`${SITE_URL}/offerings/${offering.slug}`}
+            title={`${offering.title} — Spiritpedia`}
+          />
+        </div>
 
         {healer && (
           <Link

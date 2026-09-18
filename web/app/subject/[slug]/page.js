@@ -6,7 +6,8 @@ import FreeResourceCard from '../../../components/FreeResourceCard.js';
 import HealerCard from '../../../components/HealerCard.js';
 import OfferingCard from '../../../components/OfferingCard.js';
 import VideoGrid from '../../../components/VideoGrid.js';
-import { buildMetadata } from '../../../utils/seo.js';
+import ShareButton from '../../../components/ShareButton.jsx';
+import { buildMetadata, SITE_URL } from '../../../utils/seo.js';
 
 // Subject pages stay statically generated (they are the same for every visitor),
 // but they must not be frozen at build time. Supabase queries run through fetch,
@@ -106,11 +107,18 @@ export default async function SubjectPage({ params }) {
           &larr; Back to Home
         </Link>
 
-        <header className="mb-14">
-          <h1 className="text-5xl font-bold capitalize text-white">{title}</h1>
-          <p className="mt-3 text-xl text-gray-400">
-            Curated content for your journey in {title}.
-          </p>
+        <header className="mb-14 flex items-start justify-between gap-4">
+          <div>
+            <h1 className="text-5xl font-bold capitalize text-white">{title}</h1>
+            <p className="mt-3 text-xl text-gray-400">
+              Curated content for your journey in {title}.
+            </p>
+          </div>
+          <ShareButton
+            className="shrink-0 mt-2"
+            url={`${SITE_URL}/subject/${slug}`}
+            title={`${title} on Spiritpedia`}
+          />
         </header>
 
         {isEmpty ? (

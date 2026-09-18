@@ -8,6 +8,8 @@ import FreeResourceCard from './FreeResourceCard.js';
 import OfferingCard from './OfferingCard.js';
 import SubjectPills from './SubjectPills.js';
 import VideoGrid from './VideoGrid.js';
+import ShareButton from './ShareButton.jsx';
+import { SITE_URL, DEFAULT_TITLE } from '../utils/seo.js';
 
 // Initialize the backend bridge client
 const supabase = createClient(
@@ -160,12 +162,15 @@ export default async function HomePage({ initialSubjectSlug }) {
           >
             SPIRITPEDIA
           </a>
-          <a
-            href="/library"
-            className="flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-2 text-sm font-semibold text-white transition-all duration-300 hover:scale-105 hover:bg-white/20 active:scale-95"
-          >
-            ✦ My Library
-          </a>
+          <div className="flex items-center gap-3">
+            <ShareButton url={SITE_URL} title={DEFAULT_TITLE} />
+            <a
+              href="/library"
+              className="flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-2 text-sm font-semibold text-white transition-all duration-300 hover:scale-105 hover:bg-white/20 active:scale-95"
+            >
+              ✦ My Library
+            </a>
+          </div>
         </div>
       </nav>
 
