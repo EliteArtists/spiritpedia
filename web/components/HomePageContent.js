@@ -171,11 +171,17 @@ export default async function HomePage({ initialSubjectSlug }) {
       {/* 1. NAVIGATION BAR */}
       <nav className="sticky top-0 z-50 border-b border-white/10 bg-[#0a0f1d]/90 backdrop-blur-md">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
-          <a
-            href="/"
-            className="bg-gradient-to-r from-sky-500 via-purple-500 to-pink-500 bg-clip-text text-2xl font-extrabold tracking-wider text-transparent"
-          >
-            SPIRITPEDIA
+          {/* Logo unit — star mark + wordmark, one link. The mark is h-8, the
+              same height the text-2xl wordmark occupied, so the bar's height
+              (set by the 40px share button anyway) does not move. */}
+          <a href="/" className="flex items-center gap-2">
+            <img
+              src="/Spiritpedia_Header_Symbol.png"
+              alt=""
+              aria-hidden="true"
+              className="h-10 w-10 object-contain"
+            />
+            <span className="text-base font-bold tracking-wider text-white">Spiritpedia</span>
           </a>
           <div className="flex items-center gap-3">
             <ShareButton url={SITE_URL} title={DEFAULT_TITLE} />

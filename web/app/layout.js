@@ -43,9 +43,9 @@ export const metadata = {
   // these `images` entries; buildMetadata() reuses it for any entity without
   // an image of its own.
   icons: {
-    icon: "/Spiritpedia_Favicon.png",
-    apple: "/Spiritpedia_Favicon.png",
-    shortcut: "/Spiritpedia_Favicon.png",
+    icon: "/Spiritpedia_Favicon_Circle.png",
+    apple: "/Spiritpedia_Favicon_Circle.png",
+    shortcut: "/Spiritpedia_Favicon_Circle.png",
   },
   openGraph: {
     type: "website",
