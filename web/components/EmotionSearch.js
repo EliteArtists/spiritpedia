@@ -4,10 +4,18 @@ import { useEffect, useRef, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { supabase } from '../utils/supabase.js';
 import { backContextQuery } from '../utils/backContext.js';
-
-// Filler words/prefixes stripped before matching so "I'm really lost" and "lost"
-// hit the same emotion_mappings row. Each is removed as a whole \b-bounded token.
-const FILLERS = ["i feel", "i am", "i'm", 'feeling', 'very', 'so', 'really', 'quite'];
+import {
+  normaliseQuery,
+  checkCrisis,
+  checkAmbiguous,
+  checkSoftTier,
+  needsMedicalDisclaimer,
+  resolveEmotionSearch,
+  CRISIS_INTERSTITIAL,
+  DUAL_PATH,
+  SOFT_TIER_LINE,
+  MEDICAL_DISCLAIMER,
+} from '../utils/emotionSearchPatterns.js';
 
 // Subject slugs are hyphenated db keys; these render as friendly labels. Anything
 // not special-cased is title-cased word by word.
@@ -52,13 +60,56 @@ const EMPTY_UNIVERSAL = { healers: [], books: [], videos: [], subjects: [] };
 // opens gets "← Back to Spiritpedia" as its contextual back link.
 const SEARCH_BACK = backContextQuery('/', 'Spiritpedia');
 
-function normalize(raw) {
-  let s = (raw || '').toLowerCase();
-  for (const f of FILLERS) {
-    s = s.replace(new RegExp(`\\b${f}\\b`, 'g'), ' ');
-  }
-  return s.replace(/\s+/g, ' ').trim();
+// Exact-match lookup — the contract resolveEmotionSearch() expects. The
+// candidate cascade calls this once per candidate and stops at the first with
+// rows, so these must be equality hits against the indexed `emotion` column.
+async function lookupExactEmotion(emotion) {
+  const { data } = await supabase
+    .from('emotion_mappings')
+    .select('id, emotion, subject_slug, weight')
+    .eq('emotion', emotion)
+    .order('weight', { ascending: false });
+  return data || [];
 }
+
+// Last resort only, once every exact candidate has missed: the old substring
+// behaviour, so a partial phrase still surfaces something rather than nothing.
+async function lookupPartialEmotion(normalised) {
+  const { data } = await supabase
+    .from('emotion_mappings')
+    .select('id, emotion, subject_slug, weight')
+    .ilike('emotion', `%${normalised}%`)
+    .order('weight', { ascending: false })
+    .limit(12);
+  return data || [];
+}
+
+// The dual path's "exploring" option names its own subjects. `hearing voices`
+// and its variants are deliberately absent from emotion_mappings, so without
+// this the cascade returns nothing and someone who just answered a sensitive
+// question lands on an empty dropdown. Shaped like mapping rows so the render
+// path does not care where they came from.
+function rowsFromSubjects(slugs) {
+  return slugs.map((slug, i) => ({
+    id: `dual-${slug}`,
+    subject_slug: slug,
+    weight: slugs.length - i,
+  }));
+}
+
+// Decorate a bare row set the same way resolveEmotionSearch() would, so the
+// fallback paths carry the soft-tier line and medical disclaimer too.
+function decorate(rows, normalised, matchedEmotion = null) {
+  return {
+    type: 'results',
+    matchedEmotion,
+    rows,
+    softTier: checkSoftTier(normalised) ? SOFT_TIER_LINE : null,
+    medicalDisclaimer: needsMedicalDisclaimer(rows) ? MEDICAL_DISCLAIMER : null,
+  };
+}
+
+const CRISIS_RESULT = (category) => ({ type: 'crisis', category, content: CRISIS_INTERSTITIAL });
 
 function formatSlug(slug) {
   if (SPECIAL_LABELS[slug]) return SPECIAL_LABELS[slug];
@@ -133,8 +184,11 @@ function CompassIcon({ className }) {
 export default function EmotionSearch() {
   const router = useRouter();
   const [value, setValue] = useState('');
-  const [emotions, setEmotions] = useState([]);
+  // The module's resolution object: { type: 'crisis' | 'dual_path' | 'results'
+  // | 'no_results' }. Everything the dropdown renders derives from this.
+  const [resolution, setResolution] = useState(null);
   const [universal, setUniversal] = useState(EMPTY_UNIVERSAL);
+  const [dualPathAnswer, setDualPathAnswer] = useState(null);
   const [open, setOpen] = useState(false);
   const [loading, setLoading] = useState(false);
 
@@ -151,36 +205,59 @@ export default function EmotionSearch() {
   const idleTimer = useRef(null); // resumes the typewriter after blur-on-empty
   const typeTimer = useRef(null); // active typewriter step
 
-  const normalized = normalize(value);
   const term = value.trim();
 
   // --- Search: emotion path + universal path, run in parallel --------------
 
-  // Debounced live search — 300ms after the last keystroke, fire the emotion
-  // lookup and the four universal-table lookups together via Promise.all.
+  // THE PIPELINE. The order below is the module's contract and is not
+  // negotiable: normalise → crisis → dual path → cascade → soft tier →
+  // disclaimer. The two safety gates run SYNCHRONOUSLY on every keystroke,
+  // ahead of the 300ms debounce and ahead of every network call — a crisis
+  // interstitial must not wait on a timer, and the lookup must never run.
   useEffect(() => {
     if (!term) {
-      setEmotions([]);
+      setResolution(null);
       setUniversal(EMPTY_UNIVERSAL);
       setLoading(false);
       return undefined;
     }
-    const norm = normalize(value);
+
+    const normalised = normaliseQuery(value);
+
+    // GATE 1 — crisis. Suppresses the emotion lookup AND the universal search:
+    // book covers under a suicidal phrase would be worse than nothing.
+    const crisis = checkCrisis(normalised);
+    if (crisis.intercept) {
+      setResolution(CRISIS_RESULT(crisis.category));
+      setUniversal(EMPTY_UNIVERSAL);
+      setLoading(false);
+      setOpen(true);
+      return undefined;
+    }
+
+    // GATE 2 — the dual path, and the crisis branch of its answer.
+    if (dualPathAnswer === 'distressing') {
+      setResolution(CRISIS_RESULT('acute_crisis'));
+      setUniversal(EMPTY_UNIVERSAL);
+      setLoading(false);
+      setOpen(true);
+      return undefined;
+    }
+    if (!dualPathAnswer && checkAmbiguous(normalised)) {
+      setResolution({ type: 'dual_path', content: DUAL_PATH });
+      setUniversal(EMPTY_UNIVERSAL);
+      setLoading(false);
+      setOpen(true);
+      return undefined;
+    }
+
     setLoading(true);
     setOpen(true);
     const t = setTimeout(async () => {
-      // Emotion intent only searches when something survives normalisation.
-      const emotionQuery = norm
-        ? supabase
-            .from('emotion_mappings')
-            .select('*')
-            .ilike('emotion', `%${norm}%`)
-            .order('weight', { ascending: false })
-            .limit(12)
-        : Promise.resolve({ data: [] });
-
       const [emotionRes, healersRes, booksRes, videosRes, subjectsRes] = await Promise.all([
-        emotionQuery,
+        // Steps 1-6 live inside the module; lookupExactEmotion is the injected
+        // contract, one indexed equality hit per candidate.
+        resolveEmotionSearch(value, lookupExactEmotion, { dualPathAnswer }),
         supabase
           .from('healers')
           .select('id, name, healer_slug, tier, image_urls')
@@ -191,7 +268,21 @@ export default function EmotionSearch() {
         supabase.from('subjects').select('id, name, slug').ilike('name', `%${term}%`).limit(3),
       ]);
 
-      setEmotions(uniqueSubjects(emotionRes.data));
+      let resolved = emotionRes;
+
+      // Partial match, only once every exact candidate has missed.
+      if (resolved.type === 'no_results') {
+        const partial = await lookupPartialEmotion(normalised);
+        if (partial.length) resolved = decorate(partial, normalised);
+      }
+
+      // And if even that misses, honour the answer the user just gave us.
+      if (resolved.type === 'no_results' && dualPathAnswer === 'exploring') {
+        const option = DUAL_PATH.options.find((o) => o.key === 'exploring');
+        resolved = decorate(rowsFromSubjects(option.subjects), normalised);
+      }
+
+      setResolution(resolved);
       setUniversal({
         healers: healersRes.data || [],
         books: booksRes.data || [],
@@ -201,7 +292,7 @@ export default function EmotionSearch() {
       setLoading(false);
     }, 300);
     return () => clearTimeout(t);
-  }, [value, term]);
+  }, [value, term, dualPathAnswer]);
 
   // Close on click-outside and Esc so no stale dropdown lingers.
   useEffect(() => {
@@ -292,25 +383,57 @@ export default function EmotionSearch() {
     if (typeof window !== 'undefined') window.open(url, '_blank', 'noopener,noreferrer');
   }
 
-  // Resolve the single highest-weighted subject for a phrase and route straight
-  // to it — used by Enter/submit.
+  // Enter/submit runs the SAME pipeline as the dropdown. It previously issued
+  // its own ilike query, which would have routed straight past the crisis
+  // intercept to a subject page — the one bypass that must not exist.
   async function routeToTop(raw) {
-    const norm = normalize(raw);
-    if (!norm) return;
-    const { data } = await supabase
-      .from('emotion_mappings')
-      .select('*')
-      .ilike('emotion', `%${norm}%`)
-      .order('weight', { ascending: false })
-      .limit(1);
-    if (data && data[0]) navigate(`/subject/${data[0].subject_slug}`);
+    const normalised = normaliseQuery(raw);
+    if (!normalised) return;
+
+    const crisis = checkCrisis(normalised);
+    if (crisis.intercept) {
+      setResolution(CRISIS_RESULT(crisis.category));
+      setUniversal(EMPTY_UNIVERSAL);
+      setOpen(true);
+      return;
+    }
+    if (!dualPathAnswer && checkAmbiguous(normalised)) {
+      setResolution({ type: 'dual_path', content: DUAL_PATH });
+      setUniversal(EMPTY_UNIVERSAL);
+      setOpen(true);
+      return;
+    }
+
+    const resolved = await resolveEmotionSearch(raw, lookupExactEmotion, { dualPathAnswer });
+    if (resolved.type === 'results' && resolved.rows[0]) {
+      navigate(`/subject/${resolved.rows[0].subject_slug}`);
+      return;
+    }
+    const partial = await lookupPartialEmotion(normalised);
+    if (partial[0]) navigate(`/subject/${partial[0].subject_slug}`);
   }
 
   function handleSubmit(e) {
     e.preventDefault();
-    // Enter keeps emotion-first intent: route to the top-weighted subject.
-    if (emotions[0]) navigate(`/subject/${emotions[0].subject_slug}`);
-    else routeToTop(value);
+    // A crisis interstitial or an unanswered dual path owns the screen —
+    // Enter must not navigate out from under either of them.
+    if (resolution && (resolution.type === 'crisis' || resolution.type === 'dual_path')) return;
+    if (resolution?.type === 'results' && resolution.rows[0]) {
+      navigate(`/subject/${resolution.rows[0].subject_slug}`);
+      return;
+    }
+    routeToTop(value);
+  }
+
+  // Returns the person to an ordinary search from the interstitial: clears the
+  // field and every trace of the intercepted query.
+  function returnToSearch() {
+    setValue('');
+    setResolution(null);
+    setUniversal(EMPTY_UNIVERSAL);
+    setDualPathAnswer(null);
+    setOpen(false);
+    setIsUserActive(true);
   }
 
   function handleBlur() {
@@ -331,6 +454,10 @@ export default function EmotionSearch() {
 
   const { healers, books, videos, subjects } = universal;
   const hasUniversal = healers.length || books.length || videos.length || subjects.length;
+  const isCrisis = resolution?.type === 'crisis';
+  const isDualPath = resolution?.type === 'dual_path';
+  // Six unique subjects, weight order preserved — as before.
+  const emotions = resolution?.type === 'results' ? uniqueSubjects(resolution.rows) : [];
 
   return (
     <section className="py-10">
@@ -342,6 +469,8 @@ export default function EmotionSearch() {
               value={value}
               onChange={(e) => {
                 activate();
+                // A new query is a new question — never carry an old answer on.
+                setDualPathAnswer(null);
                 setValue(e.target.value);
               }}
               onFocus={() => {
@@ -368,26 +497,103 @@ export default function EmotionSearch() {
 
         {open && term && (
           <div className="absolute left-0 right-0 top-full mt-2 z-50 max-h-[70vh] overflow-y-auto bg-[#111827] border border-white/10 rounded-2xl p-2 shadow-2xl">
-            {loading ? (
+            {isCrisis ? (
+              /* THE INTERSTITIAL. Nothing else renders on this screen — no
+                 carousels, no universal results, no warning icons, no red.
+                 The platform's ordinary calm voice, and a real way back. */
+              <div className="px-5 py-6 text-left">
+                <h2 className="text-white text-base font-semibold">
+                  {CRISIS_INTERSTITIAL.heading}
+                </h2>
+                {CRISIS_INTERSTITIAL.body.map((para) => (
+                  <p key={para.slice(0, 24)} className="mt-3 text-sm leading-relaxed text-gray-300">
+                    {para}
+                  </p>
+                ))}
+
+                <a
+                  href={CRISIS_INTERSTITIAL.primaryAction.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onMouseDown={(e) => e.preventDefault()}
+                  className="mt-5 inline-block rounded-full bg-[#7c3aed] px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-[#6d28d9]"
+                >
+                  {CRISIS_INTERSTITIAL.primaryAction.label}
+                </a>
+                <p className="mt-2 text-xs text-gray-500">
+                  {CRISIS_INTERSTITIAL.primaryAction.note}
+                </p>
+
+                {/* A real, obvious, unshamed way out — not a tiny close icon. */}
+                <button
+                  type="button"
+                  onMouseDown={(e) => {
+                    e.preventDefault();
+                    returnToSearch();
+                  }}
+                  className="mt-5 block w-full rounded-full border border-white/20 bg-white/5 px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-white/10"
+                >
+                  {CRISIS_INTERSTITIAL.secondaryAction.label}
+                </button>
+
+                <p className="mt-4 text-sm text-gray-400">{CRISIS_INTERSTITIAL.closing}</p>
+              </div>
+            ) : isDualPath ? (
+              /* Both options carry identical weight — same classes, same size,
+                 no primary/secondary styling, no clinical vocabulary. */
+              <div className="px-5 py-6 text-left">
+                <h2 className="text-white text-base font-semibold">{DUAL_PATH.heading}</h2>
+                <p className="mt-2 text-sm leading-relaxed text-gray-300">{DUAL_PATH.body}</p>
+                <div className="mt-4 flex flex-col gap-3">
+                  {DUAL_PATH.options.map((option) => (
+                    <button
+                      key={option.key}
+                      type="button"
+                      onMouseDown={(e) => {
+                        e.preventDefault();
+                        setDualPathAnswer(option.key);
+                      }}
+                      className="rounded-xl border border-white/15 bg-white/5 px-4 py-3 text-left text-sm text-white transition-colors hover:bg-white/10"
+                    >
+                      {option.label}
+                    </button>
+                  ))}
+                </div>
+              </div>
+            ) : loading ? (
               <span className="text-gray-500 text-sm px-4 py-3 block text-center">Searching...</span>
             ) : emotions.length > 0 ? (
               // Emotion intent wins — show subject suggestions only.
-              emotions.map((row) => (
-                <div
-                  key={row.id}
-                  // onMouseDown (not onClick) + preventDefault fires before the
-                  // input's onBlur and stops it firing at all, so the dropdown
-                  // never closes out from under the navigation.
-                  onMouseDown={(e) => {
-                    e.preventDefault();
-                    navigate(`/subject/${row.subject_slug}`);
-                  }}
-                  className="flex items-center justify-between px-4 py-3 text-white text-sm rounded-xl cursor-pointer hover:bg-white/5 transition-colors"
-                >
-                  <span>{formatSlug(row.subject_slug)}</span>
-                  <span className="text-gray-500">→</span>
-                </div>
-              ))
+              <>
+                {emotions.map((row) => (
+                  <div
+                    key={row.id}
+                    // onMouseDown (not onClick) + preventDefault fires before the
+                    // input's onBlur and stops it firing at all, so the dropdown
+                    // never closes out from under the navigation.
+                    onMouseDown={(e) => {
+                      e.preventDefault();
+                      navigate(`/subject/${row.subject_slug}`);
+                    }}
+                    className="flex items-center justify-between px-4 py-3 text-white text-sm rounded-xl cursor-pointer hover:bg-white/5 transition-colors"
+                  >
+                    <span>{formatSlug(row.subject_slug)}</span>
+                    <span className="text-gray-500">→</span>
+                  </div>
+                ))}
+
+                {/* Beneath the results it qualifies, never above them. */}
+                {resolution?.medicalDisclaimer && (
+                  <p className="px-4 pt-2 text-xs text-gray-500">{resolution.medicalDisclaimer}</p>
+                )}
+
+                {/* Soft tier — quiet. No icon, no alert box, no border, last. */}
+                {resolution?.softTier && (
+                  <p className="px-4 pb-2 pt-3 text-xs leading-relaxed text-gray-500">
+                    {resolution.softTier}
+                  </p>
+                )}
+              </>
             ) : hasUniversal ? (
               <>
                 {healers.length > 0 && (
