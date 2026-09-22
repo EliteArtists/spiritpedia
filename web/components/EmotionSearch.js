@@ -461,6 +461,20 @@ export default function EmotionSearch() {
 
   return (
     <section className="py-10">
+      {/* Sets up the search bar for a first-time visitor, who would otherwise
+          have no idea an emotion is a valid thing to type into it. Sits inside
+          this section, directly above the input, rather than in the page
+          layout — out there the section's own py-10 pushed it 40px clear of
+          the field and it read as belonging to the navbar.
+
+          Deliberately outside containerRef: the dropdown anchors to that div
+          with `top-full`, so a paragraph inside it would push the results
+          down below this line. */}
+      <p className="mb-3 text-center text-sm text-gray-400">
+        Tell us how you feel. We&apos;ll find the teachers, practices and resources that can
+        help.
+      </p>
+
       <div ref={containerRef} className="relative mx-auto w-full max-w-2xl">
         <form onSubmit={handleSubmit}>
           <div className="relative">

@@ -129,6 +129,12 @@ export default async function HomePage({ initialSubjectSlug }) {
     for (let k = 0; k < 3 && s < superheroes.length; k += 1) billboardHealers.push(superheroes[s++]);
     if (a < ascendedMasters.length) billboardHealers.push(ascendedMasters[a++]);
   }
+
+  // Where the rotation opens. Recomputed per request (the homepage renders
+  // dynamically), so consecutive visits lead with different teachers.
+  const billboardStart = billboardHealers.length
+    ? Math.floor(Math.random() * billboardHealers.length)
+    : 0;
   const luminaries = individuals.filter((h) => h.tier === 'luminary');
   const localHeroes = healers.filter((h) => !isPremium(h));
 
@@ -200,7 +206,13 @@ export default async function HomePage({ initialSubjectSlug }) {
       </nav>
 
       <div className="mx-auto max-w-7xl px-6">
-        {/* 2. EMOTIONAL SEARCH BAR — the sacred entry point. */}
+        {/* The page's one H1. Visually hidden — the design leads with the
+            search bar, but search engines and screen readers still need a
+            heading that names the page. */}
+        <h1 className="sr-only">Spiritpedia — Discover Wisdom. Explore Consciousness.</h1>
+
+        {/* 2. EMOTIONAL SEARCH BAR — the sacred entry point. It carries its
+            own one-line introduction, so the two stay together. */}
         <EmotionSearch />
 
         {/* 3. SUBJECT PILLS */}
@@ -208,8 +220,11 @@ export default async function HomePage({ initialSubjectSlug }) {
           <SubjectPills subjects={subjects} currentSubjectSlug={currentSubjectSlug} />
         </section>
 
-        {/* 4. HERO BILLBOARD */}
-        <HeroBillboard healers={billboardHealers} />
+        {/* 4. HERO BILLBOARD — the opening slide is chosen here, on the
+            server, so the first paint is already a random face. Choosing it
+            inside the component instead meant every visitor saw slide 0 until
+            hydration finished, then watched it jump. */}
+        <HeroBillboard healers={billboardHealers} startIndex={billboardStart} />
 
         {/* 5. CONTENT SHELVES + 6. VIDEOS
             grid-cols-1 is load-bearing: an implicit auto column sizes itself to

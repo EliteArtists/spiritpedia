@@ -16,6 +16,43 @@ const DEFAULT_AVATAR = '/avatar-placeholder.svg';
 // class on each frame) — the same cadence as HeroImageRotator.
 const ROTATE_MS = 5000;
 
+// What each tier actually means, for a first-time visitor who has no idea the
+// badges are a ranking. Keyed by the stored tier value.
+const TIER_TOOLTIPS = {
+  superhero: 'One of the most influential spiritual teachers in the world',
+  luminary: 'A respected and established spiritual teacher',
+  local_hero: 'A practitioner available in your area',
+  ascended_master: 'A timeless teacher whose legacy lives on',
+};
+
+// Wraps a badge so hovering it floats an explanation beside it. Named group
+// (`group/tier`) so it cannot collide with the card's own `group` hover, which
+// drives the image zoom, or the heart's `group/healerheart`.
+//
+// `placement` matters because the card is overflow-hidden: a tooltip opening
+// upward from the Ascended Master pill (which sits at the card's TOP-left)
+// renders outside the card and is clipped away entirely. Badges in the
+// baseline bar open upward; the top-left pill opens downward.
+//
+// pointer-events-none keeps the tooltip out of the way of the card link
+// underneath it, and a tier with no copy renders the badge alone.
+function TierTooltip({ tier, children, placement = 'above' }) {
+  const copy = TIER_TOOLTIPS[tier];
+  if (!copy) return children;
+  const position = placement === 'below' ? 'top-full left-0 mt-2' : 'bottom-full right-0 mb-2';
+  return (
+    <span className="relative group/tier shrink-0">
+      {children}
+      <span
+        role="tooltip"
+        className={`pointer-events-none invisible absolute ${position} z-30 w-48 rounded-lg border border-white/10 bg-[#0a0f1d]/95 px-3 py-2 text-[11px] font-normal normal-case leading-snug tracking-normal text-gray-300 opacity-0 shadow-xl backdrop-blur-sm transition-opacity duration-200 group-hover/tier:visible group-hover/tier:opacity-100`}
+      >
+        {copy}
+      </span>
+    </span>
+  );
+}
+
 // Practitioner media card with a floating favorite heart. `portrait` is usually
 // computed server-side (homepage rotator); when omitted (e.g. the library view)
 // it falls back to the healer's first image or a generic avatar. `heightClass`
@@ -107,8 +144,10 @@ export default function HealerCard({ healer, portrait, heightClass = 'h-72', rot
             top-left of the card (the heart owns top-right) rather than in the
             baseline bar. No pill at all when no years are recorded. */}
         {isAscended && formatLifespan(healer) && (
-          <span className={`absolute top-3 left-3 z-10 ${LIFESPAN_BADGE_CLASS}`}>
-            {formatLifespan(healer)}
+          <span className="absolute top-3 left-3 z-10">
+            <TierTooltip tier={healer.tier} placement="below">
+              <span className={LIFESPAN_BADGE_CLASS}>{formatLifespan(healer)}</span>
+            </TierTooltip>
           </span>
         )}
 
@@ -122,17 +161,23 @@ export default function HealerCard({ healer, portrait, heightClass = 'h-72', rot
         >
           <h3 className="text-white font-bold text-lg drop-shadow-sm">{healer.name}</h3>
           {healer.tier === 'superhero' ? (
-            <span className="px-2.5 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wider bg-amber-100 text-amber-600 border border-amber-300">
-              Superhero
-            </span>
+            <TierTooltip tier="superhero">
+              <span className="block px-2.5 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wider bg-amber-100 text-amber-600 border border-amber-300">
+                Superhero
+              </span>
+            </TierTooltip>
           ) : isAscended ? null : healer.tier === 'luminary' ? (
-            <span className="bg-violet-600 text-white font-bold text-[11px] tracking-wider uppercase px-2.5 py-1 rounded-md shadow-sm">
-              LUMINARY
-            </span>
+            <TierTooltip tier="luminary">
+              <span className="block bg-violet-600 text-white font-bold text-[11px] tracking-wider uppercase px-2.5 py-1 rounded-md shadow-sm">
+                LUMINARY
+              </span>
+            </TierTooltip>
           ) : healer.tier === 'local_hero' ? (
-            <span className="bg-emerald-500 text-white text-[10px] font-bold tracking-wider uppercase px-2 py-0.5 rounded-md shadow-sm">
-              Local Hero
-            </span>
+            <TierTooltip tier="local_hero">
+              <span className="block bg-emerald-500 text-white text-[10px] font-bold tracking-wider uppercase px-2 py-0.5 rounded-md shadow-sm">
+                Local Hero
+              </span>
+            </TierTooltip>
           ) : (
             // Unknown or NULL tier — a neutral badge rather than borrowing Local
             // Hero's, so a tier added to the database before the UI is visibly

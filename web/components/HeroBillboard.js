@@ -17,17 +17,13 @@ function truncateBio(bio) {
 }
 
 // Full-bleed rotating feature for the Superhero and Ascended Master tiers.
-// Renders server-side at index 0, then on mount jumps to a random healer — doing
-// the randomisation in an effect rather than during render keeps the server and
-// client markup identical, so a fresh face on every page load costs no
-// hydration mismatch.
-export default function HeroBillboard({ healers = [] }) {
-  const [index, setIndex] = useState(0);
+// `startIndex` is chosen on the server and used as the initial state, so the
+// server HTML and the first client render agree — a fresh face on every page
+// load with no hydration mismatch and, unlike randomising in an effect, no
+// flash of the same opening slide before it corrects itself.
+export default function HeroBillboard({ healers = [], startIndex = 0 }) {
+  const [index, setIndex] = useState(startIndex);
   const dotsRef = useRef(null);
-
-  useEffect(() => {
-    if (healers.length > 1) setIndex(Math.floor(Math.random() * healers.length));
-  }, [healers.length]);
 
   // Auto-advance. Re-arming on `index` means a dot click also resets the timer,
   // so a manually chosen slide gets its full 8 seconds on screen.
