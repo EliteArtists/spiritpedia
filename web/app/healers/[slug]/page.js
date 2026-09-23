@@ -325,9 +325,21 @@ export default async function HealerProfile({ params, searchParams }) {
                   the text clear of the scrollbar gutter when one appears. */}
               {healer.bio && (
                 <div className="mt-6 max-h-[300px] overflow-y-auto pr-4">
-                  <p className="text-base leading-relaxed text-gray-300 whitespace-pre-line">
-                    {healer.bio}
-                  </p>
+                  {/* Split into real paragraphs rather than relying on
+                      whitespace-pre-line. That preserved a blank line where the
+                      copy had one, but gave nothing at all to the bios written
+                      with single newlines between paragraphs — they ran together
+                      as one wall of text. Splitting on every newline treats both
+                      the same and puts the spacing in the margin. Blank lines
+                      drop out via the trim filter, so no empty tags. */}
+                  {healer.bio
+                    .split('\n')
+                    .filter((para) => para.trim())
+                    .map((para, i) => (
+                      <p key={i} className="text-base leading-relaxed text-gray-300 mb-4 last:mb-0">
+                        {para.trim()}
+                      </p>
+                    ))}
                 </div>
               )}
 
