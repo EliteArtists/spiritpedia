@@ -6,6 +6,7 @@
 // stays and is documented instead.
 export const FAVORITE_KEYS = {
   healers: 'favorited_healers',
+  publishers: 'favorited_publishers',
   books: 'favorited_books',
   videos: 'favorite_videos',
   courses: 'favorited_courses',

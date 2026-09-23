@@ -1,8 +1,10 @@
 import { supabase } from '@/utils/supabase';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
-import PublisherBooksGrid from '@/components/PublisherBooksGrid';
+import BookCard from '@/components/BookCard';
+import ContentShelf from '@/components/ContentShelf';
 import { buildMetadata, notFoundMetadata, pickImage } from '@/utils/seo';
+import { backContextQuery } from '@/utils/backContext';
 
 // Hourly ceiling on staleness — see the note in app/page.js.
 export const revalidate = 3600;
@@ -16,6 +18,16 @@ function healerPortrait(h) {
 
 function initial(name) {
   return (name || '?').trim().charAt(0).toUpperCase() || '?';
+}
+
+// Author shelves run most-prominent first. The order mirrors the tier table in
+// the README and the homepage shelf stack: Superhero, Ascended Master,
+// Luminary, Local Hero. An unknown or NULL tier sorts last rather than being
+// dropped, so no author silently loses their shelf mid-backfill.
+const TIER_ORDER = { superhero: 0, ascended_master: 1, luminary: 2, local_hero: 3 };
+
+function tierRank(tier) {
+  return TIER_ORDER[tier] ?? 4;
 }
 
 // Share card: publisher name, description, logo. Falls back to a generic line
@@ -62,9 +74,15 @@ export default async function PublisherProfile({ params }) {
 
   const authors = (links || []).map((row) => row.healers).filter(Boolean);
 
+  // Anything opened from here should offer its way back to THIS publisher
+  // rather than the homepage — the same ?from=/?fromTitle= pair every other
+  // detail link on the site carries.
+  const backHere = backContextQuery(`/publishers/${slug}`, publisher.name);
+
   // 3. Auto-curated book list: every book authored by a linked healer. Books
   //    relate to a healer by the text healer_slug column (not healer_id), so
-  //    match on the linked healers' slugs.
+  //    match on the linked healers' slugs. One query for the whole page; the
+  //    rows are grouped per author below rather than re-queried per shelf.
   const authorSlugs = authors.map((a) => a.healer_slug).filter(Boolean);
   let books = [];
   if (authorSlugs.length > 0) {
@@ -75,6 +93,24 @@ export default async function PublisherProfile({ params }) {
       .order('created_at', { ascending: false });
     books = bookRows || [];
   }
+
+  // One shelf per author, most prominent first. An author with nothing on the
+  // shelf gets no shelf at all — they still appear in the authors row above,
+  // which is the whole roster.
+  const booksByAuthor = new Map();
+  for (const book of books) {
+    if (!booksByAuthor.has(book.healer_slug)) booksByAuthor.set(book.healer_slug, []);
+    booksByAuthor.get(book.healer_slug).push(book);
+  }
+
+  const authorShelves = authors
+    .map((author) => ({ author, books: booksByAuthor.get(author.healer_slug) || [] }))
+    .filter((shelf) => shelf.books.length > 0)
+    .sort(
+      (a, b) =>
+        tierRank(a.author.tier) - tierRank(b.author.tier) ||
+        (a.author.name || '').localeCompare(b.author.name || '')
+    );
 
   return (
     <main className="min-h-screen bg-[#0a0f1d] text-white">
@@ -120,10 +156,29 @@ export default async function PublisherProfile({ params }) {
               </div>
             )}
 
+            {/* Capped and scrollable, like the healer profile bio: a long
+                publisher history would otherwise push the authors and titles
+                off the fold entirely.
+
+                Split on newlines so the paragraph breaks the copy was written
+                with actually survive — rendered as one string they collapsed
+                into a single 2,000-character block. Blank lines between
+                paragraphs drop out via the trim filter, so the spacing comes
+                from the margin rather than from empty <p> tags. */}
             {publisher.description && (
-              <p className="text-base text-gray-400 mt-4 leading-relaxed max-w-2xl">
-                {publisher.description}
-              </p>
+              <div className="mt-4 max-h-[300px] overflow-y-auto pr-4">
+                {publisher.description
+                  .split('\n')
+                  .filter((para) => para.trim())
+                  .map((para, i) => (
+                    <p
+                      key={i}
+                      className="text-base text-gray-400 leading-relaxed max-w-2xl mb-4 last:mb-0"
+                    >
+                      {para.trim()}
+                    </p>
+                  ))}
+              </div>
             )}
           </div>
         </div>
@@ -138,7 +193,7 @@ export default async function PublisherProfile({ params }) {
                 return (
                   <Link
                     key={a.id}
-                    href={`/healers/${a.healer_slug}`}
+                    href={`/healers/${a.healer_slug}${backHere}`}
                     className="flex flex-col items-center gap-2 shrink-0 w-16 group"
                   >
                     {portrait ? (
@@ -164,11 +219,25 @@ export default async function PublisherProfile({ params }) {
           </div>
         )}
 
-        {/* Auto-curated books */}
+        {/* Auto-curated books, one shelf per author. A single combined shelf
+            buried every author but the few whose titles happened to sort first;
+            split by author, each one gets their own row. */}
         <div>
-          <span className="text-lg font-bold text-white mb-4 block">Published Titles</span>
-          {books.length > 0 ? (
-            <PublisherBooksGrid books={books} />
+          <span className="text-lg font-bold text-white mb-6 block">Published Titles</span>
+          {authorShelves.length > 0 ? (
+            <div className="grid grid-cols-1 gap-12">
+              {authorShelves.map(({ author, books: authorBooks }) => (
+                <ContentShelf
+                  key={author.id}
+                  title={author.name}
+                  items={authorBooks}
+                  renderItem={(book) => (
+                    <BookCard book={book} from={`/publishers/${slug}`} fromTitle={publisher.name} />
+                  )}
+                  itemWidthClass="w-[200px]"
+                />
+              ))}
+            </div>
           ) : (
             <p className="text-gray-500 text-sm">No published titles linked yet.</p>
           )}

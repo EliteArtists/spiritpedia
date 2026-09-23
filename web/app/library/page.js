@@ -15,7 +15,8 @@ export const dynamic = 'force-dynamic';
 // shelf to anyone else. Give it a proper title but keep it out of the index.
 export const metadata = {
   title: 'My Library',
-  description: 'Your saved healers, books, videos and resources, organised by subject.',
+  description:
+    'Your saved healers, publishers, books, videos and resources, organised by subject.',
   robots: { index: false, follow: true },
 };
 // Site-wide hourly ISR floor, declared for consistency with the other pages.
@@ -36,17 +37,27 @@ export default async function LibraryPage() {
   const today = new Date().toISOString().slice(0, 10);
   const liveWindow = `end_date.is.null,end_date.gte.${today}`;
 
-  const [booksRes, videosRes, healersRes, subjectsRes, coursesRes, freeResourcesRes] =
-    await Promise.all([
-      supabase.from('books').select('*'),
-      supabase.from('videos').select('*'),
-      supabase.from('healers').select('*'),
-      supabase.from('subjects').select('name, slug'),
-      supabase.from('courses').select('*').eq('is_active', true).or(liveWindow),
-      // No is_featured filter: that flag curates the homepage shelf. If the
-      // visitor saved a free resource, it belongs in their library either way.
-      supabase.from('free_resources').select('*').eq('is_active', true).or(liveWindow),
-    ]);
+  const [
+    booksRes,
+    videosRes,
+    healersRes,
+    subjectsRes,
+    coursesRes,
+    freeResourcesRes,
+    publishersRes,
+  ] = await Promise.all([
+    supabase.from('books').select('*'),
+    supabase.from('videos').select('*'),
+    supabase.from('healers').select('*'),
+    supabase.from('subjects').select('name, slug'),
+    supabase.from('courses').select('*').eq('is_active', true).or(liveWindow),
+    // No is_featured filter: that flag curates the homepage shelf. If the
+    // visitor saved a free resource, it belongs in their library either way.
+    supabase.from('free_resources').select('*').eq('is_active', true).or(liveWindow),
+    // The embedded aggregate carries the author count, so the saved card reads
+    // identically to the one on the homepage.
+    supabase.from('publishers').select('*, publisher_healers(count)'),
+  ]);
 
   const healers = healersRes.data || [];
 
@@ -58,6 +69,7 @@ export default async function LibraryPage() {
       subjects={subjectsRes.data || []}
       courses={coursesRes.data || []}
       freeResources={freeResourcesRes.data || []}
+      publishers={publishersRes.data || []}
       healerNames={healers.map((h) => ({ id: h.id, name: h.name }))}
     />
   );

@@ -8,6 +8,7 @@ import ContentShelf from './ContentShelf.js';
 import FreeResourceCard from './FreeResourceCard.js';
 import HealerCard from './HealerCard.js';
 import OfferingCard from './OfferingCard.js';
+import PublisherCard from './PublisherCard.jsx';
 import SubjectPills from './SubjectPills.js';
 import VideoPlayer from './VideoPlayer.js';
 import { FAVORITE_KEYS, readFavorites } from '../utils/favorites.js';
@@ -25,6 +26,7 @@ export default function LibraryView({
   subjects = [],
   courses = [],
   freeResources = [],
+  publishers = [],
   healerNames = [],
 }) {
   // null = still reading localStorage. Distinct from "read it, found nothing" —
@@ -44,6 +46,7 @@ export default function LibraryView({
     const savedVideoIds = readFavorites(FAVORITE_KEYS.videos).map(String);
     const savedCourseIds = readFavorites(FAVORITE_KEYS.courses).map(String);
     const savedResourceIds = readFavorites(FAVORITE_KEYS.freeResources).map(String);
+    const savedPublisherSlugs = readFavorites(FAVORITE_KEYS.publishers).map(String);
 
     setSaved({
       // Healers are keyed by slug, but older entries were written by id — accept
@@ -57,11 +60,14 @@ export default function LibraryView({
       books: books.filter(
         (b) => savedBookIds.includes(String(b.slug)) || savedBookIds.includes(String(b.id))
       ),
+      // Publisher hearts save the slug, which is also what the card and the
+      // profile route key on.
+      publishers: publishers.filter((p) => savedPublisherSlugs.includes(String(p.slug))),
       videos: videos.filter((v) => savedVideoIds.includes(String(v.id))),
       courses: courses.filter((c) => savedCourseIds.includes(String(c.id))),
       freeResources: freeResources.filter((r) => savedResourceIds.includes(String(r.id))),
     });
-  }, [healers, books, videos, courses, freeResources]);
+  }, [healers, books, videos, courses, freeResources, publishers]);
 
   // THE CURATION LAYER — the union of every subject slug across everything the
   // visitor saved. This is what restricts the pill row: the library only ever
@@ -127,8 +133,8 @@ export default function LibraryView({
             <div className="mb-6 select-none text-7xl opacity-30">📚</div>
             <h2 className="mb-3 text-3xl font-bold">Your library is empty.</h2>
             <p className="max-w-md text-gray-400">
-              Tap the heart on any healer, book, video, course, or free resource to build your
-              spiritual archive.
+              Tap the heart on any healer, publisher, book, video, course, or free resource to
+              build your spiritual archive.
             </p>
             <Link
               href="/"
@@ -159,6 +165,21 @@ export default function LibraryView({
                 subtitle="Your Practitioners"
                 items={bySubject(saved.healers)}
                 renderItem={(healer) => <HealerCard healer={healer} />}
+                itemWidthClass="w-[260px]"
+              />
+
+              {/* Between the healers and the content: a publishing house is
+                  closer to a person you follow than to a thing you read. */}
+              <ContentShelf
+                title="Saved Publishers"
+                subtitle="Your Publishing Houses"
+                items={bySubject(saved.publishers)}
+                renderItem={(publisher) => (
+                  <PublisherCard
+                    publisher={publisher}
+                    authorCount={publisher.publisher_healers?.[0]?.count ?? 0}
+                  />
+                )}
                 itemWidthClass="w-[260px]"
               />
 

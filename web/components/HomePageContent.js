@@ -2,6 +2,7 @@ import { createClient } from '@supabase/supabase-js';
 import HealerCard from './HealerCard.js';
 import HeroBillboard from './HeroBillboard.js';
 import ContentShelf from './ContentShelf.js';
+import PublisherCard from './PublisherCard.jsx';
 import EmotionSearch from './EmotionSearch.js';
 import SubjectPills from './SubjectPills.js';
 import ShareButton from './ShareButton.jsx';
@@ -37,13 +38,21 @@ export default async function HomePage({ initialSubjectSlug }) {
   // no longer pulled here at all — ExploreMore fetches each one from the client
   // when a visitor actually asks for it. That removed the bulk of an 8MB
   // document and the great majority of its images.
-  const [subjectsRes, healersRes] = await Promise.all([
+  const [subjectsRes, healersRes, publishersRes] = await Promise.all([
     supabase.from('subjects').select('*').order('name', { ascending: true }),
     supabase.from('healers').select('*'),
+    // The embedded aggregate counts the publisher_healers junction rows per
+    // publisher in the same round trip, so the card can say "18 authors"
+    // without a second query or pulling the join table down whole.
+    supabase
+      .from('publishers')
+      .select('*, publisher_healers(count)')
+      .order('name', { ascending: true }),
   ]);
 
   const subjects = subjectsRes.data || [];
   const allHealers = healersRes.data || [];
+  const allPublishers = publishersRes.data || [];
 
   // Offerings and free resources carry a bigint healer_id, so their cards need
   // display names. Sent to ExploreMore as id/name pairs built from the full
@@ -60,6 +69,8 @@ export default async function HomePage({ initialSubjectSlug }) {
       : rows;
 
   const healers = bySubject(allHealers);
+  // Narrowed by the active pill like every other collection on the page.
+  const publishers = bySubject(allPublishers);
 
   // TIER SPLIT — the stored values are 'superhero' / 'ascended_master' /
   // 'luminary' / 'local_hero' (the amber/gold/violet/emerald names describe
@@ -219,6 +230,22 @@ export default async function HomePage({ initialSubjectSlug }) {
             seeAllHref={seeAll}
             renderItem={healerRenderer({ heightClass: 'h-[420px]', rotate: true })}
             itemWidthClass="w-[320px]"
+          />
+
+          {/* Publishing houses. Hidden outright when the table is empty, or
+              when the active subject matches none of them — ContentShelf's
+              emptyHide default. */}
+          <ContentShelf
+            title="Publishing Houses"
+            subtitle="Publishers"
+            items={publishers}
+            renderItem={(publisher) => (
+              <PublisherCard
+                publisher={publisher}
+                authorCount={publisher.publisher_healers?.[0]?.count ?? 0}
+              />
+            )}
+            itemWidthClass="w-[260px]"
           />
 
           {/* Channels and apps, regardless of tier. Hidden outright when there
