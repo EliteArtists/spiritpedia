@@ -1,15 +1,12 @@
 import { createClient } from '@supabase/supabase-js';
-import BookCard from './BookCard.js';
 import HealerCard from './HealerCard.js';
 import HeroBillboard from './HeroBillboard.js';
 import ContentShelf from './ContentShelf.js';
 import EmotionSearch from './EmotionSearch.js';
-import FreeResourceCard from './FreeResourceCard.js';
-import OfferingCard from './OfferingCard.js';
 import SubjectPills from './SubjectPills.js';
-import VideoGrid from './VideoGrid.js';
 import ShareButton from './ShareButton.jsx';
 import SiteLogo from './SiteLogo.jsx';
+import ExploreMore from './ExploreMore.jsx';
 import { SITE_URL, DEFAULT_TITLE } from '../utils/seo.js';
 
 // Initialize the backend bridge client
@@ -19,10 +16,6 @@ const supabase = createClient(
 );
 
 const DEFAULT_AVATAR = 'https://placehold.co/400x400?text=Spiritpedia';
-
-// The videos grid reveals 24 at a time client-side; fetch a pool deep enough for
-// a few "Load more" presses without pulling the whole table down the wire.
-const VIDEO_POOL = 96;
 
 // Deterministically pick a portrait from healer.image_urls based on the active
 // subject filter AND the healer's own identifier. Mixing the per-healer seed in
@@ -39,51 +32,25 @@ function pickPortrait(imageUrls, subjectSlug, seed = '') {
 export default async function HomePage({ initialSubjectSlug }) {
   const currentSubjectSlug = initialSubjectSlug || null;
 
-  // EXPIRATION WINDOW — an offering only surfaces while it is live: the row must
-  // be is_active, and either evergreen (end_date IS NULL) or not yet past its end
-  // date. `today` is a YYYY-MM-DD string to match the DATE column format, and is
-  // recomputed per request so the window rolls forward on its own.
-  const today = new Date().toISOString().slice(0, 10);
-  const liveWindow = `end_date.is.null,end_date.gte.${today}`;
-
-  // Every query is issued concurrently — one round trip's worth of latency for
-  // the whole page rather than eight stacked sequentially.
-  const [subjectsRes, healersRes, booksRes, videosRes, freeResourcesRes, coursesRes] =
-    await Promise.all([
-      supabase.from('subjects').select('*').order('name', { ascending: true }),
-      supabase.from('healers').select('*'),
-      supabase.from('books').select('*').order('created_at', { ascending: false }),
-      supabase
-        .from('videos')
-        .select('*')
-        .order('created_at', { ascending: false })
-        .limit(VIDEO_POOL),
-      supabase
-        .from('free_resources')
-        .select('*')
-        .eq('is_featured', true)
-        .eq('is_active', true)
-        .or(liveWindow)
-        .order('created_at', { ascending: false }),
-      supabase
-        .from('courses')
-        .select('*')
-        .eq('is_active', true)
-        .or(liveWindow)
-        .order('created_at', { ascending: false }),
-    ]);
+  // The page fetches only what it renders on arrival: the subject list and the
+  // healers. Books, videos, courses, retreats, downloads and free resources are
+  // no longer pulled here at all — ExploreMore fetches each one from the client
+  // when a visitor actually asks for it. That removed the bulk of an 8MB
+  // document and the great majority of its images.
+  const [subjectsRes, healersRes] = await Promise.all([
+    supabase.from('subjects').select('*').order('name', { ascending: true }),
+    supabase.from('healers').select('*'),
+  ]);
 
   const subjects = subjectsRes.data || [];
   const allHealers = healersRes.data || [];
-  const allBooks = booksRes.data || [];
-  const allVideos = videosRes.data || [];
-  const allFreeResources = freeResourcesRes.data || [];
-  const allCourses = coursesRes.data || [];
 
-  // Offerings and free resources carry a bigint healer_id, so resolve display
-  // names from the full (unfiltered) healer set — a course's author must still
-  // be nameable when the subject filter has excluded them from the shelves.
-  const healerNameById = new Map(allHealers.map((h) => [h.id, h.name]));
+  // Offerings and free resources carry a bigint healer_id, so their cards need
+  // display names. Sent to ExploreMore as id/name pairs built from the full
+  // (unfiltered) healer set — a course's author must still be nameable when the
+  // subject filter has excluded them from the shelves. A few KB, versus
+  // re-querying healers from the client for every shelf that opens.
+  const healerNames = allHealers.map((h) => [h.id, h.name]);
 
   // Subject filter — applied to every collection so a chosen pill narrows the
   // entire page, not just the healer shelves.
@@ -93,10 +60,6 @@ export default async function HomePage({ initialSubjectSlug }) {
       : rows;
 
   const healers = bySubject(allHealers);
-  const books = bySubject(allBooks);
-  const videos = bySubject(allVideos);
-  const freeResources = bySubject(allFreeResources);
-  const courses = bySubject(allCourses);
 
   // TIER SPLIT — the stored values are 'superhero' / 'ascended_master' /
   // 'luminary' / 'local_hero' (the amber/gold/violet/emerald names describe
@@ -139,13 +102,6 @@ export default async function HomePage({ initialSubjectSlug }) {
   const luminaries = individuals.filter((h) => h.tier === 'luminary');
   const localHeroes = healers.filter((h) => !isPremium(h));
 
-  // The single `courses` table stores every paid offering, distinguished by
-  // product_type. Legacy rows predate the column, so an unset value is treated as
-  // a course (the admin default) rather than being silently dropped.
-  const courseOfferings = courses.filter((c) => !c.product_type || c.product_type === 'course');
-  const retreatOfferings = courses.filter((c) => c.product_type === 'retreat');
-  const downloadOfferings = courses.filter((c) => c.product_type === 'download');
-
   // Card renderer factory — `cardProps` lets one shelf vary the card (the
   // Timeless Teachers shelf runs a taller card) without a second component.
   const healerRenderer = (cardProps = {}) => (healer) => (
@@ -160,15 +116,6 @@ export default async function HomePage({ initialSubjectSlug }) {
     />
   );
   const renderHealer = healerRenderer();
-
-  const renderOffering = (item) => (
-    <OfferingCard
-      item={item}
-      healerName={healerNameById.get(item.healer_id)}
-      from="/"
-      fromTitle="Spiritpedia"
-    />
-  );
 
   // Preserve the active subject filter when handing off to the subject page.
   const seeAll = currentSubjectSlug ? `/subject/${currentSubjectSlug}` : null;
@@ -285,51 +232,9 @@ export default async function HomePage({ initialSubjectSlug }) {
             itemWidthClass="w-[260px]"
           />
 
-          <ContentShelf
-            title="Free Resources"
-            subtitle="No Cost, No Catch"
-            items={freeResources}
-            renderItem={(item) => (
-              <FreeResourceCard
-                item={item}
-                healerName={healerNameById.get(item.healer_id)}
-                from="/"
-                fromTitle="Spiritpedia"
-              />
-            )}
-          />
-
-          <ContentShelf
-            title="Books & Literature"
-            subtitle="The Curated Archive"
-            items={books}
-            seeAllHref={seeAll}
-            renderItem={(book) => <BookCard book={book} from="/" fromTitle="Spiritpedia" />}
-            itemWidthClass="w-[200px]"
-          />
-
-          <ContentShelf
-            title="Courses & Programmes"
-            subtitle="Go Deeper"
-            items={courseOfferings}
-            renderItem={renderOffering}
-          />
-
-          <ContentShelf
-            title="Retreats & Live Events"
-            subtitle="In Person"
-            items={retreatOfferings}
-            renderItem={renderOffering}
-          />
-
-          <ContentShelf
-            title="Downloads & Audio"
-            subtitle="Take It With You"
-            items={downloadOfferings}
-            renderItem={renderOffering}
-          />
-
-          <VideoGrid videos={videos} />
+          {/* Everything below here is fetched on demand — see ExploreMore.
+              None of it is in the initial payload. */}
+          <ExploreMore subjectSlug={currentSubjectSlug} healerNames={healerNames} />
         </main>
       </div>
     </div>

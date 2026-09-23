@@ -461,20 +461,6 @@ export default function EmotionSearch() {
 
   return (
     <section className="py-10">
-      {/* Sets up the search bar for a first-time visitor, who would otherwise
-          have no idea an emotion is a valid thing to type into it. Sits inside
-          this section, directly above the input, rather than in the page
-          layout — out there the section's own py-10 pushed it 40px clear of
-          the field and it read as belonging to the navbar.
-
-          Deliberately outside containerRef: the dropdown anchors to that div
-          with `top-full`, so a paragraph inside it would push the results
-          down below this line. */}
-      <p className="mb-3 text-center text-sm text-gray-400">
-        Tell us how you feel. We&apos;ll find the teachers, practices and resources that can
-        help.
-      </p>
-
       <div ref={containerRef} className="relative mx-auto w-full max-w-2xl">
         <form onSubmit={handleSubmit}>
           <div className="relative">
@@ -626,7 +612,13 @@ export default function EmotionSearch() {
                           className={ROW_CLASS}
                         >
                           {img ? (
-                            <img src={img} alt={h.name} className="w-8 h-8 rounded-full object-cover" />
+                            <img
+                              src={img}
+                              alt={h.name}
+                              loading="lazy"
+                              decoding="async"
+                              className="w-8 h-8 rounded-full object-cover"
+                            />
                           ) : (
                             <span className="w-8 h-8 rounded-full bg-violet-600 flex items-center justify-center text-white text-xs font-semibold">
                               {initials(h.name)}
@@ -655,7 +647,13 @@ export default function EmotionSearch() {
                           className={ROW_CLASS}
                         >
                           {cover ? (
-                            <img src={cover} alt={b.title} className="w-8 h-11 rounded object-cover" />
+                            <img
+                              src={cover}
+                              alt={b.title}
+                              loading="lazy"
+                              decoding="async"
+                              className="w-8 h-11 rounded object-cover"
+                            />
                           ) : (
                             <span className="w-8 h-11 rounded bg-[#0a0f1d] border border-white/10 flex items-center justify-center text-gray-600 text-xs">
                               📖
@@ -685,7 +683,13 @@ export default function EmotionSearch() {
                           className={ROW_CLASS}
                         >
                           {thumb ? (
-                            <img src={thumb} alt={v.title} className="w-12 h-8 rounded object-cover" />
+                            <img
+                              src={thumb}
+                              alt={v.title}
+                              loading="lazy"
+                              decoding="async"
+                              className="w-12 h-8 rounded object-cover"
+                            />
                           ) : (
                             <span className="w-12 h-8 rounded bg-[#0a0f1d] border border-white/10" />
                           )}

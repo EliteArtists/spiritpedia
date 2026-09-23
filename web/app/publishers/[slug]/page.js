@@ -143,6 +143,8 @@ export default async function PublisherProfile({ params }) {
                   >
                     {portrait ? (
                       <img
+                        loading="lazy"
+                        decoding="async"
                         src={portrait}
                         alt={a.name}
                         className="w-12 h-12 rounded-full object-cover border border-white/10 group-hover:border-violet-400/60 transition-colors"

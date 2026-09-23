@@ -59,6 +59,12 @@ export default function CardImage({
       ref={captureBrokenImage}
       src={shownSrc}
       alt={alt}
+      // Every card image is below the fold on arrival — the homepage alone
+      // renders hundreds of them. Deferring the fetch until each is near the
+      // viewport is the single biggest saving available here, and it changes
+      // nothing visually.
+      loading="lazy"
+      decoding="async"
       // Idempotent: if the fallback image also 404s this re-sets the same value,
       // so the component settles on the fallback rather than looping.
       onError={() => setFailedSrc(src)}
