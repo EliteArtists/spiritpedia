@@ -7,6 +7,7 @@ import HealerCard from '../../../components/HealerCard.js';
 import OfferingCard from '../../../components/OfferingCard.js';
 import VideoGrid from '../../../components/VideoGrid.js';
 import ShareButton from '../../../components/ShareButton.jsx';
+import SiteLogo from '../../../components/SiteLogo.jsx';
 import { buildMetadata, SITE_URL } from '../../../utils/seo.js';
 
 // Subject pages stay statically generated (they are the same for every visitor),
@@ -84,12 +85,7 @@ export default async function SubjectPage({ params }) {
           longer drops the user from a dark canvas onto a white one. */}
       <nav className="sticky top-0 z-50 border-b border-white/10 bg-[#0a0f1d]/90 backdrop-blur-md">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
-          <Link
-            href="/"
-            className="bg-gradient-to-r from-sky-500 via-purple-500 to-pink-500 bg-clip-text text-2xl font-extrabold tracking-wider text-transparent"
-          >
-            SPIRITPEDIA
-          </Link>
+          <SiteLogo />
           <Link
             href="/library"
             className="flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-2 text-sm font-semibold text-white transition-all duration-300 hover:scale-105 hover:bg-white/20 active:scale-95"

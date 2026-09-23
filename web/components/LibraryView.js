@@ -3,6 +3,7 @@
 import { useState, useEffect, useMemo } from 'react';
 import Link from 'next/link';
 import BookCard from './BookCard.js';
+import SiteLogo from './SiteLogo.jsx';
 import ContentShelf from './ContentShelf.js';
 import FreeResourceCard from './FreeResourceCard.js';
 import HealerCard from './HealerCard.js';
@@ -101,12 +102,7 @@ export default function LibraryView({
     <div className="min-h-screen bg-[#0a0f1d] text-white font-sans">
       <nav className="sticky top-0 z-50 border-b border-white/10 bg-[#0a0f1d]/90 backdrop-blur-md">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
-          <Link
-            href="/"
-            className="bg-gradient-to-r from-sky-500 via-purple-500 to-pink-500 bg-clip-text text-2xl font-extrabold tracking-wider text-transparent"
-          >
-            SPIRITPEDIA
-          </Link>
+          <SiteLogo />
           <Link
             href="/"
             className="flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-2 text-sm font-semibold text-white transition-all duration-300 hover:scale-105 hover:bg-white/20 active:scale-95"

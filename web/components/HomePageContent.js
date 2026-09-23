@@ -9,6 +9,7 @@ import OfferingCard from './OfferingCard.js';
 import SubjectPills from './SubjectPills.js';
 import VideoGrid from './VideoGrid.js';
 import ShareButton from './ShareButton.jsx';
+import SiteLogo from './SiteLogo.jsx';
 import { SITE_URL, DEFAULT_TITLE } from '../utils/seo.js';
 
 // Initialize the backend bridge client
@@ -177,18 +178,7 @@ export default async function HomePage({ initialSubjectSlug }) {
       {/* 1. NAVIGATION BAR */}
       <nav className="sticky top-0 z-50 border-b border-white/10 bg-[#0a0f1d]/90 backdrop-blur-md">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
-          {/* Logo unit — star mark + wordmark, one link. The mark is h-8, the
-              same height the text-2xl wordmark occupied, so the bar's height
-              (set by the 40px share button anyway) does not move. */}
-          <a href="/" className="flex items-center gap-2">
-            <img
-              src="/Spiritpedia_Header_Symbol.png"
-              alt=""
-              aria-hidden="true"
-              className="h-10 w-10 object-contain"
-            />
-            <span className="text-base font-bold tracking-wider text-white">Spiritpedia</span>
-          </a>
+          <SiteLogo />
           <div className="flex items-center gap-3">
             {/* Share is desktop/tablet only — on a phone the OS share sheet is a
                 tap away on every detail page, and the header needs the room. */}
