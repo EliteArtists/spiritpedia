@@ -18,12 +18,13 @@ export default function LibraryBar() {
 
   return (
     // Floats free of the page rather than sitting in a bar: no full-width panel,
-    // so the content it passes over stays visible. The translucent ground plus
-    // blur and shadow are what keep the label readable against whatever happens
-    // to scroll beneath it.
+    // so the content it passes over stays visible. It wears the same #7c3aed as
+    // an active subject pill, which is the site's one "this is selected, act on
+    // it" colour — solid, so it reads over whatever scrolls beneath rather than
+    // relying on a blur.
     <Link
       href="/library"
-      className="fixed bottom-6 left-1/2 z-50 -translate-x-1/2 rounded-full border border-white/10 bg-[#0a0f1d]/80 px-6 py-2 text-sm font-semibold text-white shadow-lg backdrop-blur-sm transition-all duration-300 hover:scale-105 hover:bg-[#0a0f1d]/95 active:scale-95"
+      className="fixed bottom-6 left-1/2 z-50 -translate-x-1/2 rounded-full border border-white/10 bg-[#7c3aed] px-6 py-2 text-sm font-semibold text-white shadow-lg transition-all duration-300 hover:scale-105 hover:bg-[#6d28d9] active:scale-95"
     >
       ✦ My Library
     </Link>

@@ -1,5 +1,4 @@
 import { getContentBySubjectSlug, getAllSubjects, getHealerNames } from '../../../data/subjects.js';
-import Link from 'next/link';
 import BookCard from '../../../components/BookCard.js';
 import ContentShelf from '../../../components/ContentShelf.js';
 import FreeResourceCard from '../../../components/FreeResourceCard.js';
@@ -85,24 +84,13 @@ export default async function SubjectPage({ params }) {
           longer drops the user from a dark canvas onto a white one. */}
       <nav className="sticky top-0 z-50 border-b border-white/10 bg-[#0a0f1d]/90 backdrop-blur-md">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
+          {/* My Library lives in the floating button now, which is on every
+              page — a second copy here was the same link twice on one screen. */}
           <SiteLogo />
-          <Link
-            href="/library"
-            className="flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-2 text-sm font-semibold text-white transition-all duration-300 hover:scale-105 hover:bg-white/20 active:scale-95"
-          >
-            ✦ My Library
-          </Link>
         </div>
       </nav>
 
       <div className="mx-auto max-w-7xl px-6 py-12">
-        <Link
-          href="/"
-          className="mb-8 inline-block text-sm font-semibold text-[#7c3aed] transition-colors hover:text-[#a78bfa]"
-        >
-          &larr; Back to Home
-        </Link>
-
         <header className="mb-14 flex items-start justify-between gap-4">
           <div>
             <h1 className="text-5xl font-bold capitalize text-white">{title}</h1>

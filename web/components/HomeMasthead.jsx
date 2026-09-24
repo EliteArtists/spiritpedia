@@ -62,11 +62,12 @@ export default function HomeMasthead({ subjects, currentSubjectSlug, shareUrl, s
             </div>
 
             {/* Account — a placeholder holding its position in the bar until
-                the real account area lands. */}
+                the real account area lands. h-10 w-10 rounded-full matches the
+                share button beside it exactly, so the pair reads as one set. */}
             <a
               href="#"
               aria-label="Account"
-              className="flex h-8 w-8 items-center justify-center rounded-full border border-white/20 text-white/60 transition-colors hover:border-white/40 hover:text-white"
+              className="flex h-10 w-10 items-center justify-center rounded-full border border-white/20 text-white/60 transition-colors hover:border-white/40 hover:text-white"
             >
               <svg
                 viewBox="0 0 24 24"
@@ -75,7 +76,7 @@ export default function HomeMasthead({ subjects, currentSubjectSlug, shareUrl, s
                 strokeWidth="2"
                 strokeLinecap="round"
                 strokeLinejoin="round"
-                className="h-4 w-4"
+                className="h-5 w-5"
                 aria-hidden="true"
               >
                 <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
