@@ -1,5 +1,6 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import SiteFooter from "@/components/SiteFooter";
 import {
   SITE_URL,
   SITE_NAME,
@@ -69,9 +70,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased flex min-h-screen flex-col`}
       >
         {children}
+        <SiteFooter />
       </body>
     </html>
   );
