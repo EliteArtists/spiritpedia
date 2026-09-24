@@ -1,8 +1,12 @@
 @import "tailwindcss";
 
+/* Spiritpedia is a dark-only site: every page paints #0a0f1d. These were
+   create-next-app's light defaults, which left the <body> itself white —
+   visible wherever the page's own background did not reach, such as the
+   padding that reserves room for the floating My Library button. */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #0a0f1d;
+  --foreground: #ededed;
 }
 
 @theme inline {
@@ -12,9 +16,11 @@
   --font-mono: var(--font-geist-mono);
 }
 
+/* No light/dark split to make: the palette is the same either way. Left in
+   place so the intent is explicit rather than looking like an omission. */
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: #0a0f1d;
     --foreground: #ededed;
   }
 }

@@ -1,6 +1,7 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import SiteFooter from "@/components/SiteFooter";
+import LibraryBar from "@/components/LibraryBar";
 import {
   SITE_URL,
   SITE_NAME,
@@ -70,10 +71,13 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased flex min-h-screen flex-col`}
+        // pb-20 reserves the strip the fixed library bar occupies, so the
+        // footer's last line is never sitting underneath it.
+        className={`${geistSans.variable} ${geistMono.variable} antialiased flex min-h-screen flex-col pb-20`}
       >
         {children}
         <SiteFooter />
+        <LibraryBar />
       </body>
     </html>
   );

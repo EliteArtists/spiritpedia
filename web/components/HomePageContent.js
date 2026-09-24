@@ -3,10 +3,7 @@ import HealerCard from './HealerCard.js';
 import HeroBillboard from './HeroBillboard.js';
 import ContentShelf from './ContentShelf.js';
 import PublisherCard from './PublisherCard.jsx';
-import EmotionSearch from './EmotionSearch.js';
-import SubjectPills from './SubjectPills.js';
-import ShareButton from './ShareButton.jsx';
-import SiteLogo from './SiteLogo.jsx';
+import HomeMasthead from './HomeMasthead.jsx';
 import ExploreMore from './ExploreMore.jsx';
 import { SITE_URL, DEFAULT_TITLE } from '../utils/seo.js';
 
@@ -133,41 +130,17 @@ export default async function HomePage({ initialSubjectSlug }) {
 
   return (
     <div className="min-h-screen bg-[#0a0f1d] text-white font-sans">
-      {/* 1. NAVIGATION BAR */}
-      <nav className="sticky top-0 z-50 border-b border-white/10 bg-[#0a0f1d]/90 backdrop-blur-md">
-        <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
-          <SiteLogo />
-          <div className="flex items-center gap-3">
-            {/* Share is desktop/tablet only — on a phone the OS share sheet is a
-                tap away on every detail page, and the header needs the room. */}
-            <div className="hidden md:flex">
-              <ShareButton url={SITE_URL} title={DEFAULT_TITLE} />
-            </div>
-            <a
-              href="/library"
-              className="flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-2 text-sm font-semibold text-white transition-all duration-300 hover:scale-105 hover:bg-white/20 active:scale-95"
-            >
-              ✦ My Library
-            </a>
-          </div>
-        </div>
-      </nav>
+      {/* 1-3. MASTHEAD, SEARCH AND SUBJECT PILLS — one client component
+          because the navbar and the pills hand the top of the viewport over to
+          each other as you scroll. */}
+      <HomeMasthead
+        subjects={subjects}
+        currentSubjectSlug={currentSubjectSlug}
+        shareUrl={SITE_URL}
+        shareTitle={DEFAULT_TITLE}
+      />
 
-      <div className="mx-auto max-w-7xl px-6">
-        {/* The page's one H1. Visually hidden — the design leads with the
-            search bar, but search engines and screen readers still need a
-            heading that names the page. */}
-        <h1 className="sr-only">Spiritpedia — Discover Wisdom. Explore Consciousness.</h1>
-
-        {/* 2. EMOTIONAL SEARCH BAR — the sacred entry point. It carries its
-            own one-line introduction, so the two stay together. */}
-        <EmotionSearch />
-
-        {/* 3. SUBJECT PILLS */}
-        <section className="pb-10">
-          <SubjectPills subjects={subjects} currentSubjectSlug={currentSubjectSlug} />
-        </section>
-
+      <div className="mx-auto max-w-7xl px-6 pt-10">
         {/* 4. HERO BILLBOARD — the opening slide is chosen here, on the
             server, so the first paint is already a random face. Choosing it
             inside the component instead meant every visitor saw slide 0 until
