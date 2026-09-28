@@ -2,10 +2,17 @@
 // these so titles, descriptions and share images stay consistent across the
 // site, and the site-wide constants live in exactly one place.
 
-// Canonical origin. The apex domain 301s to www, so this is the host every
-// absolute URL (og:url, og:image, canonical) should carry — a crawler that
-// follows the redirect would otherwise see a mismatched og:url.
-export const SITE_URL = 'https://www.spirit-pedia.com';
+// Canonical origin — the host every absolute URL (canonical, og:url, og:image)
+// carries. Changing this line moves all of them at once; nothing else in the
+// codebase hard-codes a domain.
+//
+// spiritpedia.co is the primary domain. The apex and www both answer 200 with
+// no redirect between them, and spirit-pedia.com still resolves to the same
+// deployment, so three hosts serve identical pages. The canonical tag is what
+// tells a crawler which one to index and consolidate ranking onto — without it
+// they compete as duplicates. (A 301 from the other two at the DNS/host level
+// would make that belt and braces, but it is a Vercel setting, not a code one.)
+export const SITE_URL = 'https://www.spiritpedia.co';
 export const SITE_NAME = 'Spiritpedia';
 export const DEFAULT_TITLE = 'Spiritpedia — Discover Wisdom. Explore Consciousness.';
 export const DEFAULT_DESCRIPTION =
