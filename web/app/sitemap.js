@@ -31,14 +31,15 @@ export const revalidate = 3600;
 // of every 36 rows before it was paginated on id.)
 const PAGE = 1000;
 
-async function fetchAll(table, columns) {
+// `refine` narrows the query before it is paged — used for the live-offering
+// window below. It has to be applied per page rather than to the results,
+// or the 1,000-row cap would count rows that are then thrown away.
+async function fetchAll(table, columns, refine = (q) => q) {
   const rows = [];
   for (let from = 0; ; from += PAGE) {
-    const { data, error } = await supabase
-      .from(table)
-      .select(columns)
-      .order('id', { ascending: true })
-      .range(from, from + PAGE - 1);
+    const { data, error } = await refine(
+      supabase.from(table).select(columns).order('id', { ascending: true })
+    ).range(from, from + PAGE - 1);
 
     // A failed page must not silently shorten the sitemap. Submitting a partial
     // file tells Google the missing URLs are gone; better to surface it in the
@@ -59,6 +60,11 @@ async function fetchAll(table, columns) {
 // what Google uses to prioritise a crawl. Stamping every entry with `new Date()`
 // instead would claim the whole site changed today, every day, and a lastmod
 // that is always now is a signal crawlers learn to ignore.
+// Local date in the YYYY-MM-DD form PostgREST compares a date column against.
+function today() {
+  return new Date().toISOString().slice(0, 10);
+}
+
 function entry(path, priority, changeFrequency, lastModified) {
   return {
     url: `${SITE_URL}${path}`,
@@ -74,7 +80,17 @@ export default async function sitemap() {
     fetchAll('subjects', 'slug, created_at'),
     fetchAll('books', 'slug, created_at'),
     fetchAll('publishers', 'slug, created_at'),
-    fetchAll('courses', 'slug, created_at'),
+    // Offerings are filtered to the live window the shelves themselves use:
+    // is_active, and either evergreen (no end_date) or not yet past it. An
+    // expired retreat's page still renders, so this is not about broken links
+    // — it is that the site deliberately links to none of them, and a sitemap
+    // should not ask Google to crawl what the site has switched off. Today
+    // that removes 66 of 1,103 — 65 past their end_date plus one switched off
+    // that had also expired. Recomputed per rebuild, so the window rolls
+    // forward on its own.
+    fetchAll('courses', 'slug, created_at', (q) =>
+      q.eq('is_active', true).or(`end_date.is.null,end_date.gte.${today()}`)
+    ),
     fetchAll('free_resources', 'slug, created_at'),
   ]);
 
