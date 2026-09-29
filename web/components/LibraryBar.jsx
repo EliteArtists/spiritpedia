@@ -10,11 +10,18 @@ import { usePathname } from 'next/navigation';
 // It lives here rather than in the navbar because the navbar now scrolls away.
 // Client component for the same reason as SiteFooter: the root layout wraps
 // /admin too, and a server layout is not told which route is rendering.
-const HIDDEN_PREFIX = '/admin';
+//
+// Hidden on /admin, and on /auth: a sign-in screen should hold one task and
+// nothing else, and inviting someone into a library they cannot open yet is a
+// door that leads nowhere.
+const HIDDEN_PREFIXES = ['/admin', '/auth'];
 
 export default function LibraryBar() {
   const pathname = usePathname();
-  if (pathname === HIDDEN_PREFIX || pathname?.startsWith(`${HIDDEN_PREFIX}/`)) return null;
+  const hidden = HIDDEN_PREFIXES.some(
+    (prefix) => pathname === prefix || pathname?.startsWith(`${prefix}/`)
+  );
+  if (hidden) return null;
 
   return (
     // Floats free of the page rather than sitting in a bar: no full-width panel,
