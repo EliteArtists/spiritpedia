@@ -1,10 +1,13 @@
 'use client';
 
-import { useEffect, useRef, useState } from 'react';
+import { useCallback, useEffect, useRef, useState } from 'react';
+import { useRouter } from 'next/navigation';
 import EmotionSearch from './EmotionSearch.js';
+import PractitionerModal from './PractitionerModal.jsx';
 import ShareButton from './ShareButton.jsx';
 import SiteLogo from './SiteLogo.jsx';
 import SubjectPills from './SubjectPills.js';
+import { getSession, supabaseAuth } from '../utils/supabaseAuth.js';
 
 // The homepage's top block — masthead, search, subject pills — kept together in
 // one client component because the first and last of those have to coordinate.
@@ -26,6 +29,49 @@ import SubjectPills from './SubjectPills.js';
 export default function HomeMasthead({ subjects, currentSubjectSlug, shareUrl, shareTitle }) {
   const [handedOff, setHandedOff] = useState(false);
   const sentinelRef = useRef(null);
+  const router = useRouter();
+
+  // Who the account button is for. Starts null — "not known yet" — because the
+  // session lives in localStorage and the server has no way to read it, so the
+  // first render on every visit is necessarily ignorant. It resolves within a
+  // frame of mount, long before anyone can click.
+  const [signedIn, setSignedIn] = useState(null);
+  const [askingUserType, setAskingUserType] = useState(false);
+
+  useEffect(() => {
+    let cancelled = false;
+
+    // getSession() rather than getUser(): this reads storage instead of making
+    // a network round trip, and the worst a stale answer can do here is send
+    // someone to the wrong one of two pages. /account verifies properly before
+    // showing anything — a navigation choice is not an access grant.
+    getSession().then(({ data }) => {
+      if (!cancelled) setSignedIn(Boolean(data));
+    });
+
+    // Keeps the button honest after a sign-in or sign-out that happened
+    // elsewhere — another tab, or a session expiring under us.
+    const { data: subscription } = supabaseAuth.auth.onAuthStateChange((_event, session) => {
+      if (!cancelled) setSignedIn(Boolean(session));
+    });
+
+    return () => {
+      cancelled = true;
+      subscription?.subscription?.unsubscribe();
+    };
+  }, []);
+
+  const onAccountClick = useCallback(() => {
+    if (signedIn) {
+      router.push('/account');
+      return;
+    }
+    // Covers both false and the not-yet-known null: someone who is signed in
+    // and clicks inside the first frame gets asked a question they did not
+    // need, which is recoverable. Sending a signed-out visitor to /account
+    // would bounce them straight back out again.
+    setAskingUserType(true);
+  }, [signedIn, router]);
 
   useEffect(() => {
     const el = sentinelRef.current;
@@ -61,12 +107,17 @@ export default function HomeMasthead({ subjects, currentSubjectSlug, shareUrl, s
               <ShareButton url={shareUrl} title={shareTitle} />
             </div>
 
-            {/* Account — a placeholder holding its position in the bar until
-                the real account area lands. h-10 w-10 rounded-full matches the
-                share button beside it exactly, so the pair reads as one set. */}
-            <a
-              href="#"
-              aria-label="Account"
+            {/* Account. Signed in, it goes to /account; signed out, it opens
+                the practitioner question that begins sign-up. A button rather
+                than the href="#" it used to be — that anchor went nowhere and
+                announced itself to a screen reader as a link. h-10 w-10
+                rounded-full matches the share button beside it exactly, so the
+                pair reads as one set. */}
+            <button
+              type="button"
+              onClick={onAccountClick}
+              aria-label={signedIn ? 'Your account' : 'Sign in or create an account'}
+              aria-haspopup={signedIn ? undefined : 'dialog'}
               className="flex h-10 w-10 items-center justify-center rounded-full border border-white/20 text-white/60 transition-colors hover:border-white/40 hover:text-white"
             >
               <svg
@@ -82,7 +133,7 @@ export default function HomeMasthead({ subjects, currentSubjectSlug, shareUrl, s
                 <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
                 <circle cx="12" cy="7" r="4" />
               </svg>
-            </a>
+            </button>
           </div>
         </div>
       </nav>
@@ -112,6 +163,8 @@ export default function HomeMasthead({ subjects, currentSubjectSlug, shareUrl, s
           <SubjectPills subjects={subjects} currentSubjectSlug={currentSubjectSlug} />
         </div>
       </section>
+
+      <PractitionerModal open={askingUserType} onClose={() => setAskingUserType(false)} />
     </>
   );
 }
