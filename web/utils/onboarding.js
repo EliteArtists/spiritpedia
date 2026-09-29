@@ -61,23 +61,30 @@ export async function migrateFavourites(userId) {
 // Written with the auth client, so RLS sees the new user as themselves. The
 // insert trigger pins verification_status to 'pending' and linked_healer_slug
 // to NULL whatever is sent, which is why neither is passed.
+//
+// ONE STATEMENT, not a read followed by a write. Two callers race here now —
+// the verify page and the app-wide AuthSync listener both run this the moment a
+// session appears — and a select-then-insert would let both read "no row" and
+// both try to create one, the loser failing on the primary key. INSERT ... ON
+// CONFLICT DO NOTHING is decided by the database instead.
+//
+// ignoreDuplicates is the important half: an existing row is left completely
+// alone. Without it a returning practitioner whose sessionStorage has expired
+// would be rewritten as an explorer on their next visit, silently demoting
+// them.
 export async function ensureProfile(userId, userType) {
   if (!userId) return { error: { message: 'No user.' } };
 
-  const { data: existing } = await supabaseAuth
-    .from('user_profiles')
-    .select('id')
-    .eq('id', userId)
-    .maybeSingle();
+  const { error } = await supabaseAuth.from('user_profiles').upsert(
+    {
+      id: userId,
+      user_type:
+        userType === USER_TYPES.practitioner ? USER_TYPES.practitioner : USER_TYPES.explorer,
+    },
+    { onConflict: 'id', ignoreDuplicates: true }
+  );
 
-  if (existing) return { error: null, created: false };
-
-  const { error } = await supabaseAuth.from('user_profiles').insert({
-    id: userId,
-    user_type: userType === USER_TYPES.practitioner ? USER_TYPES.practitioner : USER_TYPES.explorer,
-  });
-
-  return { error: error || null, created: !error };
+  return { error: error || null };
 }
 
 // Addresses that say nothing about who someone works for. A domain match on any

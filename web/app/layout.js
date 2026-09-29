@@ -2,6 +2,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import SiteFooter from "@/components/SiteFooter";
 import LibraryBar from "@/components/LibraryBar";
+import AuthSync from "@/components/AuthSync";
 import {
   SITE_URL,
   SITE_NAME,
@@ -84,6 +85,10 @@ export default function RootLayout({ children }) {
         {children}
         <SiteFooter />
         <LibraryBar />
+        {/* Renders nothing. Guarantees a signed-in visitor has a profile row
+            and that their saved library has been migrated, however they
+            arrived — see components/AuthSync.jsx. */}
+        <AuthSync />
       </body>
     </html>
   );
