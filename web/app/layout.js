@@ -65,6 +65,12 @@ export const metadata = {
     images: [{ ...DEFAULT_TWITTER_IMAGE, alt: DEFAULT_TITLE }],
   },
   robots: { index: true, follow: true },
+  // Google Search Console ownership proof. Next renders this as
+  // <meta name="google-site-verification"> — Google re-checks it periodically,
+  // so it stays on the site rather than being removed once verified.
+  verification: {
+    google: '_jYbgZqMxKpP5MwtZ1iirWZCQ9DHTwS8Cj3hi5xEzJE',
+  },
 };
 
 export default function RootLayout({ children }) {
