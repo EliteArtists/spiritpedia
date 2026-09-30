@@ -3,6 +3,7 @@ import "./globals.css";
 import SiteFooter from "@/components/SiteFooter";
 import LibraryBar from "@/components/LibraryBar";
 import AuthSync from "@/components/AuthSync";
+import Analytics from "@/components/Analytics";
 import {
   SITE_URL,
   SITE_NAME,
@@ -89,6 +90,10 @@ export default function RootLayout({ children }) {
             and that their saved library has been migrated, however they
             arrived — see components/AuthSync.jsx. */}
         <AuthSync />
+
+        {/* Google Analytics 4 — excluded from /admin, and from any build
+            without a measurement ID. See components/Analytics.jsx. */}
+        <Analytics />
       </body>
     </html>
   );

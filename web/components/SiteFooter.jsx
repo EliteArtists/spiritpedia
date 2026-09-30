@@ -1,5 +1,6 @@
 'use client';
 
+import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
 // Site-wide footer, rendered once from the root layout.
@@ -30,13 +31,16 @@ export default function SiteFooter() {
         <p className="mt-4">
           © 2026 Spiritpedia
           <span aria-hidden="true"> · </span>
-          <a href="#" className="transition-colors hover:text-gray-300">
+          {/* next/link rather than a bare anchor: these are internal routes,
+              so they should be client-navigated and prefetched like every other
+              link on the site. They pointed at "#" until the pages existed. */}
+          <Link href="/privacy" className="transition-colors hover:text-gray-300">
             Privacy Policy
-          </a>
+          </Link>
           <span aria-hidden="true"> · </span>
-          <a href="#" className="transition-colors hover:text-gray-300">
+          <Link href="/terms" className="transition-colors hover:text-gray-300">
             Terms of Use
-          </a>
+          </Link>
         </p>
       </div>
     </footer>
