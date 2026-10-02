@@ -4,10 +4,20 @@ import { adminClient, isAdminRequest, NOT_CONFIGURED } from '@/utils/supabaseAdm
 export const dynamic = 'force-dynamic';
 
 // The label healers.availability_type carries, keyed by what user_profiles
-// stores. Same map the ingestion form uses, so an approved practitioner is
-// indistinguishable from a hand-entered healer.
+// stores.
+//
+// NOT quite the ingestion form's map. That form is for an admin adding a known
+// figure, so its 'worldwide' label reads "Worldwide (Famous Names)" — which is
+// simply false about someone who registered themselves and picked "Worldwide"
+// from a dropdown, and it was being written onto Local Heroes.
+//
+// The replacement is not a bare "Worldwide" either. The healer profile decides
+// whether to show the "Online Session available" badge with
+// availability_type.includes('Online'), so a label without that word silently
+// drops the badge from exactly the practitioners who are most available
+// online. The wording carries it deliberately.
 const AVAILABILITY_LABELS = {
-  worldwide: 'Worldwide (Famous Names)',
+  worldwide: 'Worldwide (Online Sessions)',
   local: 'Local Only (In-Person)',
   local_online: 'Local & Online Sessions',
 };

@@ -1,235 +1,190 @@
 'use client';
 
-import { Suspense, useCallback, useEffect, useRef, useState } from 'react';
-import ContentIngestion from '@/components/admin/ContentIngestion';
-import { FlagsTab, MailshotsTab, MessagesTab } from '@/components/admin/AdminPlaceholders';
-import {
-  AccountsTab,
-  ClaimsTab,
-  PractitionersTab,
-  StatsTab,
-} from '@/components/admin/AdminLiveTabs';
+import { useCallback, useMemo, useState } from 'react';
+import SectionHeading from '@/components/admin/SectionHeading';
+import StatStrip from '@/components/admin/StatStrip';
+import QueueTable from '@/components/admin/QueueTable';
+import QueueReviewer from '@/components/admin/QueueReviewer';
+import { useAdminData } from '@/components/admin/AdminData';
+import DataProblem from '@/components/admin/DataProblem';
+import { Placeholder } from '@/components/admin/AdminPlaceholders';
+import { QUEUE_TYPES, buildQueue } from '@/components/admin/queue';
 
-// The dashboard shell. Access is enforced by proxy.js (session cookie), so this
-// renders unconditionally once the middleware has let it through.
-//
-// The ingestion form is NOT reimplemented here. It lives unchanged in
-// components/admin/ContentIngestion.jsx — the same component, with the same
-// handlers and the same fields — and this file only decides when to show it.
-
-const TABS = [
-  { key: 'practitioners', label: 'Practitioners', live: true },
-  { key: 'accounts', label: 'Accounts', live: true },
-  { key: 'messages', label: 'Messages', live: false },
-  { key: 'claims', label: 'Claims', live: true },
-  { key: 'flags', label: 'Flags', live: false },
-  { key: 'mailshots', label: 'Mailshots', live: false },
-  { key: 'stats', label: 'Stats', live: true },
-  { key: 'ingestion', label: 'Content Ingestion', live: true },
+// Filters. The three with no table yet are rendered and disabled rather than
+// omitted: the shape of the finished queue is visible, and a count of 0 is not
+// claimed for something that has never been measured.
+const FILTERS = [
+  { key: 'all', label: 'All' },
+  { key: 'application', label: 'Applications' },
+  { key: 'claim', label: 'Claims' },
+  { key: 'message', label: 'Messages' },
+  { key: 'flag', label: 'Flags' },
+  { key: 'content', label: 'Content' },
 ];
 
-function AdminDashboard() {
-  const [tab, setTab] = useState('practitioners');
-  const [overview, setOverview] = useState({ loading: true, profiles: null, counts: {}, error: null });
-  const [busyId, setBusyId] = useState(null);
+export default function AdminInboxPage() {
+  const { profiles, loading, reload, accountsAvailable, error } = useAdminData();
+  const [filter, setFilter] = useState('all');
+  const [selectedId, setSelectedId] = useState(null);
+  const [busy, setBusy] = useState(false);
   const [toast, setToast] = useState(null);
-  const ingestionRef = useRef(null);
 
-  // Fetch only — no state. Keeping the request pure lets the mount effect own
-  // its own cancellation and lets onDecision reuse it without either one
-  // reaching into the other's lifecycle.
-  const fetchOverview = useCallback(async () => {
-    try {
-      const res = await fetch('/api/admin/overview', { cache: 'no-store' });
-      const json = await res.json();
-      return {
-        loading: false,
-        // null (not []) means "could not be read" — the tabs render a reason
-        // rather than an empty list that would read as "nobody has signed up".
-        profiles: json.profiles ?? null,
-        counts: json.counts || {},
-        error: json.error || null,
-      };
-    } catch (err) {
-      return { loading: false, profiles: null, counts: {}, error: err.message };
+  const queue = useMemo(() => buildQueue(profiles), [profiles]);
+  const visible = useMemo(
+    () => (filter === 'all' ? queue : queue.filter((i) => i.type === filter)),
+    [queue, filter]
+  );
+  const selected = visible.find((i) => i.id === selectedId) || null;
+
+  const counts = useMemo(() => {
+    const out = { all: queue.length };
+    for (const key of Object.keys(QUEUE_TYPES)) {
+      out[key] = QUEUE_TYPES[key].live ? queue.filter((i) => i.type === key).length : null;
     }
-  }, []);
+    return out;
+  }, [queue]);
 
-  const load = useCallback(async () => {
-    setOverview(await fetchOverview());
-  }, [fetchOverview]);
-
-  useEffect(() => {
-    let cancelled = false;
-    (async () => {
-      const next = await fetchOverview();
-      if (!cancelled) setOverview(next);
-    })();
-    return () => {
-      cancelled = true;
-    };
-  }, [fetchOverview]);
-
-  const onDecision = useCallback(
-    async (id, action, options = {}) => {
-      setBusyId(id);
+  const decide = useCallback(
+    async (item, action, options = {}) => {
+      setBusy(true);
       setToast(null);
       try {
         const res = await fetch('/api/admin/practitioner', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ id, action, ...options }),
+          body: JSON.stringify({ id: item.profileId, action, ...options }),
         });
         const json = await res.json();
         if (!res.ok || json.error) {
           setToast({ type: 'error', message: json.message || json.error || 'That did not work.' });
-        } else {
-          setToast({
-            type: 'success',
-            message:
-              action === 'approve'
-                ? `Approved — published as /healers/${json.healer_slug}`
-                : 'Application rejected.',
-          });
-          await load();
+          setBusy(false);
+          return false;
         }
+        setToast({
+          type: 'success',
+          message:
+            action === 'approve'
+              ? `Approved — published as /healers/${json.healer_slug}`
+              : 'Application rejected.',
+        });
+        await reload();
+        setBusy(false);
+        return true;
       } catch (err) {
         setToast({ type: 'error', message: err.message });
+        setBusy(false);
+        return false;
       }
-      setBusyId(null);
     },
-    [load]
+    [reload]
   );
 
-  const goToIngestion = () => {
-    setTab('ingestion');
-    // Runs after the tab has rendered, so the target exists to scroll to.
-    requestAnimationFrame(() => {
-      ingestionRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    });
-  };
+  const onDecision = useCallback(
+    async (item, action, options) => {
+      const ok = await decide(item, action, options);
+      // A handled item is gone from the queue, so staying on it would show a
+      // stale record. Close back to the list.
+      if (ok) setSelectedId(null);
+    },
+    [decide]
+  );
 
-  const accountsAvailable = Array.isArray(overview.profiles);
-  const pendingCount = accountsAvailable
-    ? overview.profiles.filter(
-        (p) => p.verification_status === 'pending' && p.user_type === 'practitioner'
-      ).length
-    : null;
+  // Approve and move straight on. The next item is read BEFORE the decision,
+  // because reload() rebuilds the queue and the index would otherwise point
+  // somewhere else by the time we used it.
+  const onApproveAndNext = useCallback(
+    async (item, options) => {
+      const index = visible.findIndex((i) => i.id === item.id);
+      const next = visible[index + 1] || null;
+      const ok = await decide(item, 'approve', options);
+      setSelectedId(ok ? (next?.id ?? null) : item.id);
+    },
+    [decide, visible]
+  );
 
   return (
-    <div className="min-h-screen bg-slate-950 px-4 py-10 text-white">
-      <div className="mx-auto max-w-5xl">
-        <div className="mb-2 flex justify-end">
-          <form action="/api/admin/logout" method="POST">
+    <>
+      <SectionHeading
+        title="Inbox"
+        subtitle={
+          // "Nothing waiting" while the data is still in flight is a claim we
+          // cannot make yet — and it read as a contradiction next to the
+          // Loading panel below it.
+          loading
+            ? 'Checking the queue…'
+            : // With no data, "Nothing waiting" is a claim about an empty queue
+              // rather than an unread one.
+              !accountsAvailable
+              ? 'Queue unavailable'
+              : queue.length === 0
+                ? 'Nothing waiting'
+                : `${queue.length} item${queue.length === 1 ? '' : 's'} in the queue`
+        }
+      />
+
+      <StatStrip />
+
+      {toast && (
+        <div
+          className={`mb-5 rounded-xl border p-4 text-sm ${
+            toast.type === 'success'
+              ? 'border-emerald-500/40 bg-emerald-500/10 text-emerald-300'
+              : 'border-red-500/40 bg-red-500/10 text-red-300'
+          }`}
+        >
+          {toast.type === 'success' ? '✅ ' : '⚠️ '}
+          {toast.message}
+        </div>
+      )}
+
+      <div className="mb-5 flex flex-wrap gap-2">
+        {FILTERS.map((f) => {
+          const count = f.key === 'all' ? counts.all : counts[f.key];
+          const live = f.key === 'all' || QUEUE_TYPES[f.key]?.live;
+          const active = filter === f.key;
+          return (
             <button
-              type="submit"
-              className="text-sm text-gray-500 transition-colors hover:text-white"
+              key={f.key}
+              type="button"
+              disabled={!live}
+              title={live ? undefined : 'Coming soon'}
+              onClick={() => {
+                setFilter(f.key);
+                setSelectedId(null);
+              }}
+              className={`rounded-full px-4 py-2 text-xs font-bold transition-colors ${
+                active
+                  ? 'bg-[#7c3aed] text-white'
+                  : live
+                    ? 'border border-white/15 text-slate-300 hover:bg-white/5 hover:text-white'
+                    : 'cursor-not-allowed border border-white/5 text-slate-600'
+              }`}
             >
-              Sign out
+              {f.label} {live ? `(${count})` : '· soon'}
             </button>
-          </form>
-        </div>
-
-        <header className="text-center">
-          <h1 className="bg-gradient-to-r from-cyan-400 to-emerald-400 bg-clip-text text-4xl font-black tracking-tight text-transparent">
-            Spiritpedia Admin
-          </h1>
-          <p className="mt-2 text-sm text-slate-400">
-            Review practitioners, watch the numbers, and add content.
-          </p>
-        </header>
-
-        <div className="mt-8 flex justify-center">
-          <button
-            type="button"
-            onClick={goToIngestion}
-            className="rounded-full bg-gradient-to-r from-cyan-500 to-emerald-500 px-8 py-4 text-sm font-black uppercase tracking-wide text-slate-950 shadow-lg transition-transform hover:scale-[1.02] active:scale-[0.98]"
-          >
-            ⚙ Content Ingestion →
-          </button>
-        </div>
-
-        {/* Horizontally scrollable on narrow screens; the scrollbar is hidden
-            because eight tabs on a phone should feel like a swipe, not a
-            widget. */}
-        <nav className="mt-8 overflow-x-auto [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
-          <div className="flex w-max gap-1 rounded-xl border border-slate-800 bg-slate-900 p-1">
-            {TABS.map((t) => {
-              const active = tab === t.key;
-              const badge = t.key === 'practitioners' && pendingCount ? ` (${pendingCount})` : '';
-              return (
-                <button
-                  key={t.key}
-                  type="button"
-                  onClick={() => setTab(t.key)}
-                  aria-current={active ? 'page' : undefined}
-                  className={`whitespace-nowrap rounded-lg px-4 py-2.5 text-xs font-bold uppercase tracking-wide transition-all ${
-                    active
-                      ? 'bg-gradient-to-r from-cyan-500 to-emerald-500 text-slate-950 shadow-lg'
-                      : t.live
-                        ? 'text-slate-400 hover:text-white'
-                        : 'text-slate-600 hover:text-slate-400'
-                  }`}
-                >
-                  {t.label}
-                  {badge}
-                </button>
-              );
-            })}
-          </div>
-        </nav>
-
-        {toast && (
-          <div
-            className={`mt-6 rounded-xl border p-4 text-sm ${
-              toast.type === 'success'
-                ? 'border-emerald-500/40 bg-emerald-500/10 text-emerald-300'
-                : 'border-red-500/40 bg-red-500/10 text-red-300'
-            }`}
-          >
-            {toast.type === 'success' ? '✅ ' : '⚠️ '}
-            {toast.message}
-          </div>
-        )}
-
-        <div className="mt-8">
-          {overview.loading && tab !== 'ingestion' ? (
-            <p className="py-16 text-center text-sm text-slate-600">Loading…</p>
-          ) : (
-            <>
-              {tab === 'practitioners' && (
-                <PractitionersTab
-                  profiles={overview.profiles}
-                  onDecision={onDecision}
-                  busyId={busyId}
-                />
-              )}
-              {tab === 'accounts' && <AccountsTab profiles={overview.profiles} />}
-              {tab === 'messages' && <MessagesTab />}
-              {tab === 'claims' && <ClaimsTab profiles={overview.profiles} />}
-              {tab === 'flags' && <FlagsTab />}
-              {tab === 'mailshots' && <MailshotsTab />}
-              {tab === 'stats' && (
-                <StatsTab counts={overview.counts} accountsAvailable={accountsAvailable} />
-              )}
-            </>
-          )}
-
-          {/* Kept mounted but hidden rather than unmounted, so a half-filled
-              ingestion form is not thrown away by a glance at another tab. */}
-          <div ref={ingestionRef} hidden={tab !== 'ingestion'}>
-            <ContentIngestion />
-          </div>
-        </div>
+          );
+        })}
       </div>
-    </div>
-  );
-}
 
-export default function AdminPage() {
-  return (
-    <Suspense fallback={<div className="min-h-screen bg-slate-950" />}>
-      <AdminDashboard />
-    </Suspense>
+      {loading ? (
+        <Placeholder icon="◴" title="Loading…" />
+      ) : !accountsAvailable ? (
+        <DataProblem error={error} what="The queue" />
+      ) : selected ? (
+        <QueueReviewer
+          items={visible}
+          selected={selected}
+          onSelect={(item) => setSelectedId(item.id)}
+          onClose={() => setSelectedId(null)}
+          onDecision={onDecision}
+          onApproveAndNext={onApproveAndNext}
+          busy={busy}
+        />
+      ) : visible.length === 0 ? (
+        <Placeholder icon="✓" title="Nothing in the queue" body="New applications and claims appear here." />
+      ) : (
+        <QueueTable items={visible} onOpen={(item) => setSelectedId(item.id)} selectedId={selectedId} />
+      )}
+    </>
   );
 }
