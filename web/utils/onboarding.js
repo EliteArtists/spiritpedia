@@ -2,7 +2,7 @@
 
 import { supabaseAuth } from './supabaseAuth.js';
 import { FAVORITE_KEYS, readFavorites } from './favorites.js';
-import { USER_TYPES } from './userType.js';
+import { USER_TYPES, getUserType } from './userType.js';
 
 // Everything that happens in the seconds after a code is accepted: move what
 // the visitor saved while anonymous onto their account, give them a profile
@@ -75,16 +75,93 @@ export async function migrateFavourites(userId) {
 export async function ensureProfile(userId, userType) {
   if (!userId) return { error: { message: 'No user.' } };
 
+  const isPractitioner = userType === USER_TYPES.practitioner;
+
   const { error } = await supabaseAuth.from('user_profiles').upsert(
     {
       id: userId,
-      user_type:
-        userType === USER_TYPES.practitioner ? USER_TYPES.practitioner : USER_TYPES.explorer,
+      user_type: isPractitioner ? USER_TYPES.practitioner : USER_TYPES.explorer,
     },
     { onConflict: 'id', ignoreDuplicates: true }
   );
 
-  return { error: error || null };
+  if (error) return { error };
+
+  // UPGRADE AN EXISTING ROW, never downgrade one.
+  //
+  // ignoreDuplicates leaves an existing profile completely untouched, which is
+  // what protects a practitioner from being reset to explorer by an empty
+  // sessionStorage. But it also means someone who already had a row before
+  // choosing practitioner — anyone who signed in once as an explorer, or whose
+  // row was created by AuthSync a moment earlier — keeps saying explorer while
+  // being routed to the practitioner setup form. Observed exactly that.
+  //
+  // Narrowed to rows currently reading 'explorer', so this can only ever move
+  // in one direction. A pending answer of 'explorer' changes nothing at all.
+  if (isPractitioner) {
+    await supabaseAuth
+      .from('user_profiles')
+      .update({ user_type: USER_TYPES.practitioner })
+      .eq('id', userId)
+      .eq('user_type', USER_TYPES.explorer);
+  }
+
+  return { error: null };
+}
+
+// THE CHOICE, CARRIED ACROSS THE GAP between submitting an email and verifying
+// it. sessionStorage alone cannot do this: clicking the magic link in the email
+// may open a different browser, or a phone when the choice was made on a
+// desktop, and sessionStorage is per-tab. pending_user_types is keyed by email,
+// so it survives all of that.
+//
+// Written through /api/pending-user-type rather than directly — see the note in
+// that route for why an anonymous client cannot reliably write this table.
+export async function recordPendingUserType(email, userType) {
+  try {
+    const res = await fetch('/api/pending-user-type', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ email, userType }),
+    });
+    return { ok: res.ok };
+  } catch {
+    // Never block sign-up for this. sessionStorage still covers the common
+    // case of finishing in the same tab, and the type defaults to explorer.
+    return { ok: false };
+  }
+}
+
+// Read the recorded choice back, once authenticated.
+//
+// The RLS policy only returns the row whose email matches the caller's own JWT,
+// so this cannot be used to ask what anyone else chose. sessionStorage is the
+// fallback, not the primary: it is right more often in the same-tab case but
+// absent entirely on a magic link opened elsewhere.
+//
+// `consume` deletes the row after reading, so a stale answer cannot outlive the
+// sign-up it belonged to.
+export async function readPendingUserType(email, { consume = false } = {}) {
+  const address = (email || '').trim().toLowerCase();
+  if (!address) return getUserType();
+
+  try {
+    const { data } = await supabaseAuth
+      .from('pending_user_types')
+      .select('user_type')
+      .eq('email', address)
+      .maybeSingle();
+
+    if (consume && data) {
+      await supabaseAuth.from('pending_user_types').delete().eq('email', address);
+    }
+
+    if (data?.user_type) return data.user_type;
+  } catch {
+    // Fall through to sessionStorage.
+  }
+
+  return getUserType();
 }
 
 // Addresses that say nothing about who someone works for. A domain match on any

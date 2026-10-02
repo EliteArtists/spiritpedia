@@ -4,6 +4,8 @@ import { useCallback, useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import AuthShell from '@/components/AuthShell';
 import { getSession, signInWithOtp } from '@/utils/supabaseAuth';
+import { recordPendingUserType } from '@/utils/onboarding';
+import { getUserType } from '@/utils/userType';
 
 // Sign in and sign up are the same page, because they are the same action:
 // type your address, receive a code. signInWithOtp creates the user if the
@@ -35,7 +37,15 @@ export default function SignupPage() {
       setError(null);
       setSending(true);
 
-      const { error: sendError } = await signInWithOtp(email);
+      const address = email.trim().toLowerCase();
+
+      // Recorded BEFORE the code is sent, so the answer is already stored by
+      // the time any link in that email can be clicked. Not awaited for its
+      // result beyond completion: a failure here costs the magic-link path its
+      // memory, not the sign-up itself.
+      await recordPendingUserType(address, getUserType());
+
+      const { error: sendError } = await signInWithOtp(address);
 
       if (sendError) {
         // Supabase's own wording is shown when it is useful (rate limits say so
@@ -47,7 +57,7 @@ export default function SignupPage() {
 
       // The address travels in the URL so the verify page can name it and
       // resend to it. Encoded — a + in an address is legal and common.
-      router.push(`/auth/verify?email=${encodeURIComponent(email.trim().toLowerCase())}`);
+      router.push(`/auth/verify?email=${encodeURIComponent(address)}`);
     },
     [email, sending, router]
   );

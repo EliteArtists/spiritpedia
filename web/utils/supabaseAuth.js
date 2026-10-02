@@ -68,9 +68,21 @@ export async function signInWithOtp(email) {
     return { data: null, error: { message: 'Please enter your email address.' } };
   }
 
+  // emailRedirectTo decides where the magic link in that same email lands. Left
+  // unset, Supabase sends it to the project's Site URL — the production
+  // homepage — which on localhost means the link leaves the machine you are
+  // testing on, and in production means the verify page never runs and nobody
+  // is routed by their practitioner choice. window.location.origin sends people
+  // back where they started. The URL must be allow-listed in Supabase under
+  // Authentication -> URL Configuration, or it silently falls back to Site URL.
+  const redirectTo =
+    typeof window !== 'undefined'
+      ? `${window.location.origin}/auth/verify?email=${encodeURIComponent(address)}`
+      : undefined;
+
   const { data, error } = await supabaseAuth.auth.signInWithOtp({
     email: address,
-    options: { shouldCreateUser: true },
+    options: { shouldCreateUser: true, emailRedirectTo: redirectTo },
   });
 
   return { data, error };

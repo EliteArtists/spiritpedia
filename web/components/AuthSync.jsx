@@ -3,8 +3,7 @@
 import { useEffect, useRef } from 'react';
 import { usePathname } from 'next/navigation';
 import { supabaseAuth } from '../utils/supabaseAuth.js';
-import { ensureProfile, migrateFavourites } from '../utils/onboarding.js';
-import { getUserType } from '../utils/userType.js';
+import { ensureProfile, migrateFavourites, readPendingUserType } from '../utils/onboarding.js';
 
 // Makes "having a session" the thing that guarantees a profile row, rather than
 // "having passed through /auth/verify".
@@ -39,7 +38,7 @@ export default function AuthSync() {
 
     let cancelled = false;
 
-    const sync = async (userId) => {
+    const sync = async (userId, email) => {
       if (!userId || cancelled || syncedRef.current.has(userId)) return;
       // Claimed before awaiting anything, so two events arriving in the same
       // tick cannot both get through.
@@ -51,7 +50,18 @@ export default function AuthSync() {
         // again on the next sign-in. That retry is the second thing this
         // listener buys us.
         await migrateFavourites(userId);
-        await ensureProfile(userId, getUserType());
+
+        // The same recorded choice the verify page reads, and for the same
+        // reason — but this listener runs everywhere, so it may well get there
+        // first. ensureProfile is ON CONFLICT DO NOTHING, meaning whichever of
+        // the two wins decides the user_type permanently; if this one guessed
+        // 'explorer' from an empty sessionStorage it would quietly demote a
+        // practitioner who clicked their magic link on another device.
+        //
+        // Read without consuming: the verify page deletes the row once it has
+        // routed on it, and deleting here could pull it out from under that.
+        const userType = await readPendingUserType(email);
+        await ensureProfile(userId, userType);
       } catch {
         // Background repair. It must never surface an error over whatever the
         // visitor is actually reading, and the next page load tries again.
@@ -75,11 +85,12 @@ export default function AuthSync() {
 
       const userId = session?.user?.id;
       if (!userId) return;
+      const email = session?.user?.email;
 
       // Deferred out of the callback on purpose. supabase-js runs these inside
       // an internal lock, and calling back into the client from within it can
       // deadlock; a zero timeout puts the work on the next tick, outside it.
-      setTimeout(() => sync(userId), 0);
+      setTimeout(() => sync(userId, email), 0);
     });
 
     return () => {

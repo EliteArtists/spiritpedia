@@ -4,10 +4,20 @@ import { Suspense, useCallback, useEffect, useRef, useState } from 'react';
 import Link from 'next/link';
 import { useRouter, useSearchParams } from 'next/navigation';
 import AuthShell from '@/components/AuthShell';
-import { getUser, signInWithOtp, verifyOtp } from '@/utils/supabaseAuth';
-import { ensureProfile, migrateFavourites, resolveDestination } from '@/utils/onboarding';
-import { getUserType } from '@/utils/userType';
+import { getUser, signInWithOtp, supabaseAuth, verifyOtp } from '@/utils/supabaseAuth';
+import {
+  ensureProfile,
+  migrateFavourites,
+  readPendingUserType,
+  resolveDestination,
+} from '@/utils/onboarding';
 
+// Set by Supabase, not chosen here: Authentication -> Providers -> Email ->
+// Email OTP Length, which accepts 6 to 10. It is 6, so this is 6; if it is ever
+// changed there, this line has to follow or every code will be rejected.
+//
+// Every piece of logic below derives from it — focus advance, paste spreading,
+// auto-submit, maxLength — so this is the only place the number appears.
 const LENGTH = 6;
 const EMPTY = Array(LENGTH).fill('');
 
@@ -35,12 +45,12 @@ function VerifyForm() {
   // When the code being typed was sent. Set on mount rather than in useRef's
   // initialiser, which would call Date.now() on every render.
   const sentAtRef = useRef(null);
-  // Guards the auto-submit: without it, every re-render with six digits present
+  // Guards the auto-submit: without it, every re-render with a full row present
   // would fire another verification.
   const submittedRef = useRef(null);
 
   // No email in the URL means the page was reached sideways and has nothing to
-  // verify against. Send them back rather than show six boxes that cannot work.
+  // verify against. Send them back rather than show boxes that cannot work.
   useEffect(() => {
     if (!email) router.replace('/auth/signup');
   }, [email, router]);
@@ -58,6 +68,68 @@ function VerifyForm() {
   useEffect(() => {
     if (status === 'idle' && error) inputsRef.current[0]?.focus();
   }, [status, error]);
+
+  // Everything that happens once a session exists, whichever way it arrived:
+  // typing the code here, or clicking the magic link in the same email and
+  // landing back on this page already signed in.
+  //
+  // None of it may strand someone on this screen. The account exists from the
+  // moment the session does, so every step reports failure rather than throwing.
+  const complete = useCallback(async () => {
+    setStatus('finishing');
+
+    const { data: user } = await getUser();
+
+    // The recorded choice beats sessionStorage, and is consumed as it is read
+    // so a stale answer cannot outlive the sign-up it belonged to. A magic link
+    // opened on a different device has no sessionStorage at all — this lookup
+    // is the only thing that knows the person chose practitioner.
+    const userType = await readPendingUserType(user?.email || email, { consume: true });
+
+    // Favourites first — it is the step with something to lose. It never
+    // deletes localStorage, so a failure here is invisible and retried at the
+    // next sign-in.
+    await migrateFavourites(user?.id);
+    await ensureProfile(user?.id, userType);
+
+    let destination = '/';
+    try {
+      destination = await resolveDestination(user, userType);
+    } catch {
+      // A lookup failure must not trap a verified user on the code screen.
+      destination = userType === 'practitioner' ? '/auth/practitioner-setup' : '/';
+    }
+
+    router.replace(destination);
+  }, [email, router]);
+
+  // MAGIC LINK ARRIVAL. Clicking the link in the email verifies server-side and
+  // redirects here with a session already established, so there is no code to
+  // type and the six boxes would be a dead end. Finding a session on mount
+  // means exactly that, so the completion path runs immediately.
+  //
+  // detectSessionInUrl resolves the token asynchronously after mount, so this
+  // waits for the auth client to report rather than reading storage once and
+  // concluding there is nobody there.
+  useEffect(() => {
+    let cancelled = false;
+
+    const { data: subscription } = supabaseAuth.auth.onAuthStateChange((event, session) => {
+      if (cancelled) return;
+      if (event !== 'INITIAL_SESSION' && event !== 'SIGNED_IN') return;
+      if (!session?.user) return;
+      // Deferred out of the callback: supabase-js holds an internal lock here
+      // and calling back into the client from inside it can deadlock.
+      setTimeout(() => {
+        if (!cancelled) complete();
+      }, 0);
+    });
+
+    return () => {
+      cancelled = true;
+      subscription?.subscription?.unsubscribe();
+    };
+  }, [complete]);
 
   const submit = useCallback(
     async (value) => {
@@ -82,31 +154,10 @@ function VerifyForm() {
         return;
       }
 
-      // Verified. What follows must not be able to strand someone on this
-      // screen: every step below reports failure rather than throwing, because
-      // the account exists from this moment whether or not the extras succeed.
-      setStatus('finishing');
-
-      const { data: user } = await getUser();
-      const userType = getUserType();
-
-      // Favourites first — it is the step with something to lose. It never
-      // deletes localStorage, so a failure here is invisible and retried at the
-      // next sign-in.
-      await migrateFavourites(user?.id);
-      await ensureProfile(user?.id, userType);
-
-      let destination = '/';
-      try {
-        destination = await resolveDestination(user, userType);
-      } catch {
-        // A lookup failure must not trap a verified user on the code screen.
-        destination = userType === 'practitioner' ? '/auth/practitioner-setup' : '/';
-      }
-
-      router.replace(destination);
+      // Verified. Hand off to the shared completion path below.
+      await complete();
     },
-    [email, status, router]
+    [email, status, complete]
   );
 
   // Auto-submit is driven from the events that complete the code, not from an
@@ -115,7 +166,7 @@ function VerifyForm() {
   // a state change and cascade a render to do it.
   //
   // Guarded on the code itself, so a re-render — or a stray change event on an
-  // already-full row — cannot verify the same six digits twice.
+  // already-full row — cannot verify the same code twice.
   const maybeSubmit = useCallback(
     (next) => {
       const value = next.join('');
@@ -240,6 +291,10 @@ function VerifyForm() {
             onChange={(e) => onChange(index, e.target.value)}
             onKeyDown={(e) => onKeyDown(index, e)}
             onFocus={(e) => e.target.select()}
+            // 6*44 + 5*8 = 304px, inside both the shell's 384px and the
+            // ~342px available at a 390px viewport. (Eight boxes at this size
+            // came to 408px and overflowed both, which is why the 8-digit
+            // version had to shrink them.)
             className="h-14 w-11 rounded-xl border border-white/15 bg-[#111827] text-center text-xl font-semibold text-white caret-[#7c3aed] focus:border-[#7c3aed] focus:outline-none disabled:opacity-60"
           />
         ))}
