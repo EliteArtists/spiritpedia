@@ -2,6 +2,9 @@
 
 import { useState, useEffect, useRef } from 'react';
 import { supabase } from '@/utils/supabase';
+// Reads stay on the anon client above. Writes go through the server, so the
+// anon key can lose its write grants without this form losing its job.
+import { adminWrite } from '@/utils/adminWrite';
 
 // Extract the canonical YouTube video ID from any common URL shape.
 function extractYouTubeId(url) {
@@ -314,11 +317,11 @@ export default function ContentIngestion() {
   // Remove a currently-linked author: delete the junction row immediately, then
   // strip the pill from local state so the UI updates without a refetch.
   async function handleRemoveAuthor(healerId) {
-    const { error } = await supabase
-      .from('publisher_healers')
-      .delete()
-      .eq('publisher_id', selectedPublisherId)
-      .eq('healer_id', healerId);
+    const { error } = await adminWrite({
+      table: 'publisher_healers',
+      op: 'delete',
+      match: { publisher_id: selectedPublisherId, healer_id: healerId },
+    });
     if (error) {
       flashEditToast(`Remove failed: ${error.message}`, 'error');
       return;
@@ -343,9 +346,11 @@ export default function ContentIngestion() {
     setEditSaving(true);
     try {
       // 1. Update the publisher record.
-      const { error: updErr } = await supabase
-        .from('publishers')
-        .update({
+      const { error: updErr } = await adminWrite({
+        table: 'publishers',
+        op: 'update',
+        match: { id: selectedPublisherId },
+        values: {
           name: editName.trim(),
           slug: editSlug.trim(),
           description: editDescription.trim() || null,
@@ -353,8 +358,8 @@ export default function ContentIngestion() {
           logo_url: editLogoUrl.trim() || null,
           founded_year: Number.isFinite(foundedNum) ? foundedNum : null,
           subject_slugs: editSubjectSlugs,
-        })
-        .eq('id', selectedPublisherId);
+        },
+      });
       if (updErr) throw updErr;
 
       // 2. Bulk-insert any newly staged authors.
@@ -363,7 +368,11 @@ export default function ContentIngestion() {
           publisher_id: selectedPublisherId,
           healer_id: healerId,
         }));
-        const { error: linkErr } = await supabase.from('publisher_healers').insert(rows);
+        const { error: linkErr } = await adminWrite({
+          table: 'publisher_healers',
+          op: 'insert',
+          values: rows,
+        });
         if (linkErr) throw linkErr;
       }
 
@@ -484,9 +493,12 @@ export default function ContentIngestion() {
       setSaving(true);
       try {
         // 1. Insert the publisher and retrieve its generated id.
-        const { data: created, error: pubErr } = await supabase
-          .from('publishers')
-          .insert({
+        const { data: created, error: pubErr } = await adminWrite({
+          table: 'publishers',
+          op: 'insert',
+          select: 'id',
+          single: true,
+          values: {
             name: publisherName.trim(),
             slug: publisherSlug.trim(),
             description: publisherDescription.trim() || null,
@@ -494,9 +506,8 @@ export default function ContentIngestion() {
             logo_url: publisherLogoUrl.trim() || null,
             founded_year: Number.isFinite(foundedNum) ? foundedNum : null,
             subject_slugs: selectedSlugs,
-          })
-          .select('id')
-          .single();
+          },
+        });
         if (pubErr) throw pubErr;
 
         // 2 & 3. Map each selected healer to a join row and bulk insert.
@@ -505,7 +516,11 @@ export default function ContentIngestion() {
             publisher_id: created.id,
             healer_id: healerId,
           }));
-          const { error: linkErr } = await supabase.from('publisher_healers').insert(rows);
+          const { error: linkErr } = await adminWrite({
+          table: 'publisher_healers',
+          op: 'insert',
+          values: rows,
+        });
           if (linkErr) throw linkErr;
         }
 
@@ -582,12 +597,12 @@ export default function ContentIngestion() {
           return; // leave form values intact; finally{} clears the saving flag
         }
 
-        ({ error } = await supabase.from('videos').insert({
+        ({ error } = await adminWrite({ table: 'videos', op: 'insert', values: {
           title: title.trim(),
           platform_url: platformUrl,
           healer_slug: linkedHealerSlug || null,
           subject_slugs: tags,
-        }));
+        } }));
       } else if (tab === 'book') {
         // DUPLICATE GUARD — match on the 10-char ASIN / ISBN embedded in the
         // Amazon URL when present, otherwise fall back to the exact URL.
@@ -610,7 +625,7 @@ export default function ContentIngestion() {
         // unique slug — a NULL slug 404s the detail page.
         const bookSlug = await uniqueSlug('books', title.trim());
 
-        ({ error } = await supabase.from('books').insert({
+        ({ error } = await adminWrite({ table: 'books', op: 'insert', values: {
           title: title.trim(),
           slug: bookSlug,
           amazon_url: url.trim(),
@@ -621,7 +636,7 @@ export default function ContentIngestion() {
           description: bookDescription.trim() || null,
           healer_slug: linkedHealerSlug || null,
           subject_slugs: tags,
-        }));
+        } }));
       } else if (tab === 'course') {
         // DUPLICATE GUARD — courses carry a UNIQUE constraint on course_url, so
         // an exact match means this course is already in the catalog. Block the
@@ -646,7 +661,7 @@ export default function ContentIngestion() {
         // Offerings resolve by `slug` on /offerings/[slug]; generate a unique one.
         const courseSlug = await uniqueSlug('courses', title.trim());
 
-        ({ error } = await supabase.from('courses').insert({
+        ({ error } = await adminWrite({ table: 'courses', op: 'insert', values: {
           title: title.trim(),
           slug: courseSlug,
           description: courseDescription.trim() || null,
@@ -659,7 +674,7 @@ export default function ContentIngestion() {
           affiliate_status: affiliateStatus,
           start_date: courseStartDate || null,
           end_date: courseEndDate || null,
-        }));
+        } }));
       } else if (tab === 'free_resource') {
         // Free resource: a no-cost offering (guided meditation, download, mini
         // course, workshop, or practice). Resolve the relational bigint healer_id
@@ -669,7 +684,7 @@ export default function ContentIngestion() {
         // Free resources resolve by `slug` on /free-resources/[slug]; likewise.
         const freeResourceSlug = await uniqueSlug('free_resources', title.trim());
 
-        ({ error } = await supabase.from('free_resources').insert({
+        ({ error } = await adminWrite({ table: 'free_resources', op: 'insert', values: {
           title: title.trim(),
           slug: freeResourceSlug,
           description: freeResourceDescription.trim() || null,
@@ -681,7 +696,7 @@ export default function ContentIngestion() {
           is_featured: isFeatured,
           start_date: freeResourceStartDate || null,
           end_date: freeResourceEndDate || null,
-        }));
+        } }));
       } else {
         // Healer: `tier` classifies the practitioner (superhero / luminary /
         // local_hero); availability options carry country/city for local healers.
@@ -717,7 +732,7 @@ export default function ContentIngestion() {
           return; // halt execution; finally{} clears the saving flag
         }
 
-        ({ error } = await supabase.from('healers').insert({
+        ({ error } = await adminWrite({ table: 'healers', op: 'insert', values: {
           name: name.trim(),
           bio: bio.trim() || null,
           healer_slug: slug.trim(),
@@ -739,7 +754,7 @@ export default function ContentIngestion() {
           twitter_url: twitterUrl.trim() || null,
           tiktok_url: tiktokUrl.trim() || null,
           subject_slugs: tags,
-        }));
+        } }));
       }
 
       if (error) throw error;

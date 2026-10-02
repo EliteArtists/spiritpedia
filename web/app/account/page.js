@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import SiteLogo from '@/components/SiteLogo';
 import { getUser, signOut, supabaseAuth } from '@/utils/supabaseAuth';
+import PractitionerDashboard from '@/components/PractitionerDashboard';
 
 const SUPPORT_EMAIL = 'love@spiritpedia.co';
 
@@ -103,6 +104,11 @@ export default function AccountPage() {
   // on being a practitioner any more — the one person who most needs to read it
   // is no longer one. Pending and approved stay practitioner-only.
   const notice = status === 'rejected' ? STATUS_NOTICES.rejected : isPractitioner ? STATUS_NOTICES[status] : null;
+
+  // An approved practitioner gets the dashboard instead of the account summary.
+  // Same URL, no redirect and no link to follow — the page simply renders
+  // differently for them. Every other state below is untouched.
+  const showDashboard = isPractitioner && status === 'approved';
   const healerSlug = state.profile?.linked_healer_slug;
 
   return (
@@ -113,9 +119,44 @@ export default function AccountPage() {
         </div>
       </nav>
 
-      <div className="mx-auto max-w-xl px-6 py-14">
-        <h1 className="text-3xl font-bold">My Account</h1>
+      <div className={`mx-auto px-6 py-14 ${showDashboard ? 'max-w-3xl' : 'max-w-xl'}`}>
+        <h1 className="text-3xl font-bold">{showDashboard ? 'Your practice' : 'My Account'}</h1>
 
+        {showDashboard && (
+          <>
+            <p className="mt-1 text-sm text-gray-500">
+              Signed in as {state.email}
+              {healerSlug && (
+                <>
+                  {' · '}
+                  <Link
+                    href={`/healers/${healerSlug}`}
+                    className="text-[#a78bfa] transition-colors hover:text-white"
+                  >
+                    View your public profile →
+                  </Link>
+                </>
+              )}
+            </p>
+
+            <div className="mt-8">
+              <PractitionerDashboard email={state.email} />
+            </div>
+
+            <div className="mt-10">
+              <button
+                type="button"
+                onClick={onSignOut}
+                disabled={signingOut}
+                className="w-full rounded-full px-6 py-3 text-sm font-semibold text-gray-500 transition-colors hover:text-white disabled:opacity-50"
+              >
+                {signingOut ? 'Signing out…' : 'Sign out'}
+              </button>
+            </div>
+          </>
+        )}
+
+        {!showDashboard && (
         <dl className="mt-8 divide-y divide-white/10 rounded-2xl border border-white/10 bg-[#111827]">
           {state.profile?.full_name && (
             <div className="flex items-center justify-between gap-4 px-5 py-4">
@@ -134,8 +175,9 @@ export default function AccountPage() {
             </dd>
           </div>
         </dl>
+        )}
 
-        {notice && (
+        {!showDashboard && notice && (
           <div className={`mt-6 rounded-2xl border p-5 text-left ${notice.className}`}>
             <p className="text-sm font-semibold">{notice.title}</p>
             <p className="mt-1 text-sm leading-relaxed opacity-90">{notice.body}</p>
@@ -171,7 +213,7 @@ export default function AccountPage() {
             floating button is already on this screen, and putting a second one
             in the page repeats the duplication that was stripped out of the
             subject and library navs. */}
-        <div className="mt-10">
+        <div className="mt-10" hidden={showDashboard}>
           <button
             type="button"
             onClick={onSignOut}
