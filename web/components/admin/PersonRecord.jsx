@@ -297,7 +297,12 @@ export default function PersonRecord({ personId, onBack, backLabel, onChanged })
   const displayName =
     (p.full_name || '').trim() || (p.email ? p.email.split('@')[0] : '') || 'Explorer';
 
-  const images = Array.isArray(p.image_urls) ? p.image_urls.filter(Boolean) : [];
+  // An explorer has one profile picture; a practitioner has a gallery, because
+  // a listing is judged on more than one photograph. The extras are kept in the
+  // database either way — someone rejected back to explorer keeps what they
+  // uploaded, and gets it back if they resubmit — they are simply not shown.
+  const allImages = Array.isArray(p.image_urls) ? p.image_urls.filter(Boolean) : [];
+  const images = practitioner ? allImages : allImages.slice(0, 1);
 
   const saveStatus = async () => {
     setSavingStatus(true);
@@ -400,28 +405,37 @@ export default function PersonRecord({ personId, onBack, backLabel, onChanged })
             auth user — irreversible from here and far too much to hang off one
             click without a typed confirmation. */}
         <div className="mt-5 flex flex-wrap items-center gap-2 border-t border-white/10 pt-5">
-          <label className="text-[10px] font-bold uppercase tracking-wider text-slate-500">
-            Status
-            <select
-              value={status}
-              onChange={(e) => setStatus(e.target.value)}
-              className="ml-2 rounded-lg border border-slate-700 bg-[#0a0f1d] px-3 py-1.5 text-sm font-normal normal-case tracking-normal text-white"
-            >
-              {STATUSES.map((s) => (
-                <option key={s} value={s}>
-                  {s}
-                </option>
-              ))}
-            </select>
-          </label>
-          <button
-            type="button"
-            onClick={saveStatus}
-            disabled={savingStatus || status === p.verification_status}
-            className="rounded-full bg-[#7c3aed] px-4 py-2 text-xs font-bold text-white transition-colors hover:bg-[#6d28d9] disabled:cursor-not-allowed disabled:opacity-40"
-          >
-            {savingStatus ? 'Saving…' : 'Save status'}
-          </button>
+          {/* Verification belongs to practitioners. An explorer is not pending,
+              approved or rejected — they have an account — and offering a
+              dropdown would invite setting a state that means nothing, on a row
+              that may still carry a stale 'rejected' from a review cycle that
+              ended when they were reverted. */}
+          {hasVisibleStatus(p) && (
+            <>
+              <label className="text-[10px] font-bold uppercase tracking-wider text-slate-500">
+                Status
+                <select
+                  value={status}
+                  onChange={(e) => setStatus(e.target.value)}
+                  className="ml-2 rounded-lg border border-slate-700 bg-[#0a0f1d] px-3 py-1.5 text-sm font-normal normal-case tracking-normal text-white"
+                >
+                  {STATUSES.map((s) => (
+                    <option key={s} value={s}>
+                      {s}
+                    </option>
+                  ))}
+                </select>
+              </label>
+              <button
+                type="button"
+                onClick={saveStatus}
+                disabled={savingStatus || status === p.verification_status}
+                className="rounded-full bg-[#7c3aed] px-4 py-2 text-xs font-bold text-white transition-colors hover:bg-[#6d28d9] disabled:cursor-not-allowed disabled:opacity-40"
+              >
+                {savingStatus ? 'Saving…' : 'Save status'}
+              </button>
+            </>
+          )}
           <button
             type="button"
             title="Messaging coming soon"

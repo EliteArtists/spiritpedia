@@ -10,8 +10,11 @@ import PersonRecord from '@/components/admin/PersonRecord';
 import { StatusPill } from '@/components/admin/QueueTable';
 import { deriveStatus, hasVisibleStatus } from '@/components/admin/queue';
 
-const TYPE_FILTERS = [
-  { key: 'all', label: 'All' },
+// Two populations, not one list with a filter on top. A practitioner is
+// somebody being reviewed and listed; an explorer is somebody with an account.
+// They are looked at for different reasons, so they get their own tabs — and
+// the status filter only makes sense on one of them.
+const TABS = [
   { key: 'practitioner', label: 'Practitioners' },
   { key: 'explorer', label: 'Explorers' },
 ];
@@ -42,14 +45,15 @@ function PeopleView() {
   const from = params.get('from');
 
   const [query, setQuery] = useState('');
-  const [type, setType] = useState('all');
+  // Practitioners first: the tab with work in it.
+  const [tab, setTab] = useState('practitioner');
   const [status, setStatus] = useState('all');
 
   const rows = useMemo(() => {
     if (!Array.isArray(profiles)) return [];
     const q = query.trim().toLowerCase();
     return profiles.filter((p) => {
-      if (type !== 'all' && (p.user_type || 'explorer') !== type) return false;
+      if ((p.user_type || 'explorer') !== tab) return false;
       // Explorers have no status, so a status filter simply excludes them
       // rather than matching them against a value they do not carry.
       if (status !== 'all' && (!hasVisibleStatus(p) || deriveStatus(p) !== status)) return false;
@@ -58,7 +62,17 @@ function PeopleView() {
         .filter(Boolean)
         .some((v) => String(v).toLowerCase().includes(q));
     });
-  }, [profiles, query, type, status]);
+  }, [profiles, query, tab, status]);
+
+  // Tab counts come from the whole set, not the filtered rows — a tab should
+  // say how many people are in it, not how many survive the current search.
+  const tabCounts = useMemo(() => {
+    const out = { practitioner: 0, explorer: 0 };
+    for (const p of Array.isArray(profiles) ? profiles : []) {
+      out[(p.user_type || 'explorer') === 'practitioner' ? 'practitioner' : 'explorer'] += 1;
+    }
+    return out;
+  }, [profiles]);
 
   if (personId) {
     return (
@@ -84,6 +98,28 @@ function PeopleView() {
         <DataProblem error={error} what="Accounts" />
       ) : (
         <>
+          <div className="mb-5 flex flex-wrap gap-1 border-b border-white/10">
+            {TABS.map((t) => (
+              <button
+                key={t.key}
+                type="button"
+                onClick={() => {
+                  setTab(t.key);
+                  // A status chosen on one tab is meaningless on the other.
+                  setStatus('all');
+                }}
+                className={`rounded-t-lg px-4 py-2.5 text-sm font-semibold transition-colors ${
+                  tab === t.key
+                    ? 'border-b-2 border-[#7c3aed] text-white'
+                    : 'text-slate-500 hover:text-white'
+                }`}
+              >
+                {t.label}
+                <span className="ml-2 text-xs tabular-nums opacity-60">{tabCounts[t.key]}</span>
+              </button>
+            ))}
+          </div>
+
           <div className="mb-5 flex flex-wrap items-center gap-2">
             <label className="min-w-[200px] flex-1">
               <span className="sr-only">Search people</span>
@@ -95,18 +131,10 @@ function PeopleView() {
                 className="w-full rounded-full border border-white/10 bg-[#111827] px-4 py-2 text-sm text-white placeholder:text-slate-600 focus:border-[#7c3aed] focus:outline-none"
               />
             </label>
+            {/* Status only applies to practitioners, so it is not offered on
+                the Explorers tab at all. */}
             <select
-              value={type}
-              onChange={(e) => setType(e.target.value)}
-              className="rounded-full border border-white/10 bg-[#111827] px-4 py-2 text-sm text-white"
-            >
-              {TYPE_FILTERS.map((f) => (
-                <option key={f.key} value={f.key}>
-                  {f.label}
-                </option>
-              ))}
-            </select>
-            <select
+              hidden={tab !== 'practitioner'}
               value={status}
               onChange={(e) => setStatus(e.target.value)}
               className="rounded-full border border-white/10 bg-[#111827] px-4 py-2 text-sm text-white"
@@ -120,7 +148,7 @@ function PeopleView() {
           </div>
 
           <p className="mb-3 text-xs text-slate-500">
-            {rows.length} of {profiles.length} shown
+            {rows.length} of {tabCounts[tab]} shown
           </p>
 
           {rows.length === 0 ? (
