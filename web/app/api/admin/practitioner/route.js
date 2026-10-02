@@ -61,9 +61,15 @@ export async function POST(request) {
   if (!id) return NextResponse.json({ error: 'missing_id' }, { status: 400 });
 
   if (action === 'reject') {
+    // Rejection hands the account back to being an ordinary explorer. They keep
+    // everything an explorer has — the library, the saved items — and lose only
+    // the pending practitioner listing. verification_status stays 'rejected' so
+    // the account page can explain what happened and offer a resubmission; it
+    // is user_type that decides what they ARE, and they are no longer a
+    // practitioner awaiting review.
     const { error } = await supabase
       .from('user_profiles')
-      .update({ verification_status: 'rejected' })
+      .update({ verification_status: 'rejected', user_type: 'explorer' })
       .eq('id', id);
     if (error) return NextResponse.json({ error: error.message }, { status: 500 });
     return NextResponse.json({ ok: true, verification_status: 'rejected' });

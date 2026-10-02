@@ -3,7 +3,7 @@
 import { useCallback, useEffect, useState } from 'react';
 import Link from 'next/link';
 import { StatusPill } from './QueueTable.jsx';
-import { deriveStatus, timeAgo } from './queue.js';
+import { deriveStatus, hasVisibleStatus, timeAgo } from './queue.js';
 import { Placeholder } from './AdminPlaceholders.jsx';
 
 const TABS = ['Profile', 'Content', 'Admin Notes', 'Activity'];
@@ -291,6 +291,14 @@ export default function PersonRecord({ personId, onBack, backLabel, onChanged })
   const initial = ((p.full_name || p.email || '?').trim()[0] || '?').toUpperCase();
   const place = [p.location_city, p.location_country].filter(Boolean).join(', ');
 
+  // "Unnamed account" was accurate and useless — most explorers never give a
+  // name, so the whole list read the same. The email's local part is what the
+  // person actually calls themselves, and it is already on screen beneath.
+  const displayName =
+    (p.full_name || '').trim() || (p.email ? p.email.split('@')[0] : '') || 'Explorer';
+
+  const images = Array.isArray(p.image_urls) ? p.image_urls.filter(Boolean) : [];
+
   const saveStatus = async () => {
     setSavingStatus(true);
     setToast(null);
@@ -331,7 +339,7 @@ export default function PersonRecord({ personId, onBack, backLabel, onChanged })
             {initial}
           </span>
           <div className="min-w-0 flex-1">
-            <h3 className="text-xl font-bold text-white">{p.full_name || 'Unnamed account'}</h3>
+            <h3 className="text-xl font-bold text-white">{displayName}</h3>
             <p className="break-all text-sm text-slate-400">{p.email}</p>
             <div className="mt-2 flex flex-wrap items-center gap-2">
               <span
@@ -343,13 +351,31 @@ export default function PersonRecord({ personId, onBack, backLabel, onChanged })
               >
                 {practitioner ? 'Practitioner' : 'Explorer'}
               </span>
-              <StatusPill status={deriveStatus(p)} />
+              {hasVisibleStatus(p) && <StatusPill status={deriveStatus(p)} />}
               {healer && (
                 <span className="rounded-full border border-violet-500/40 bg-violet-500/10 px-2.5 py-0.5 text-[10px] font-bold uppercase tracking-wider text-violet-300">
                   {TIER_WORDS[healer.tier] || healer.tier}
                 </span>
               )}
             </div>
+            {/* The images they uploaded. The Inbox reviewer already showed
+                these; the record is where someone looks when deciding what a
+                person actually is, and it was the one place they were missing. */}
+            {images.length > 0 && (
+              <div className="mt-3 flex flex-wrap gap-2">
+                {images.map((url) => (
+                  <a key={url} href={url} target="_blank" rel="noopener noreferrer">
+                    <img
+                      src={url}
+                      alt=""
+                      loading="lazy"
+                      className="h-14 w-14 rounded-lg border border-white/10 object-cover transition-transform hover:scale-105"
+                    />
+                  </a>
+                ))}
+              </div>
+            )}
+
             <p className="mt-2 text-xs text-slate-600">
               Member since {formatDate(p.created_at)}
               {p.last_sign_in_at ? ` · last seen ${timeAgo(p.last_sign_in_at)} ago` : ''}

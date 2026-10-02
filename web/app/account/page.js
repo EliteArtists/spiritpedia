@@ -25,6 +25,10 @@ const STATUS_NOTICES = {
     className: 'border-red-400/30 bg-red-400/5 text-red-200',
     title: 'Your application was not approved',
     body: `Contact us at ${SUPPORT_EMAIL} and we will look at it again.`,
+    // A rejection should not read as a closed door. The setup form loads their
+    // existing answers, so this is an edit rather than starting again.
+    footnote: 'You can update your details and resubmit at any time.',
+    action: { href: '/auth/practitioner-setup', label: 'Update and resubmit →' },
   },
 };
 
@@ -93,7 +97,12 @@ export default function AccountPage() {
   // should still see a working account page, not a broken one.
   const userType = state.profile?.user_type === 'practitioner' ? 'practitioner' : 'explorer';
   const isPractitioner = userType === 'practitioner';
-  const notice = isPractitioner ? STATUS_NOTICES[state.profile?.verification_status] : null;
+  const status = state.profile?.verification_status;
+
+  // A rejection reverts the account to explorer, so the notice cannot be gated
+  // on being a practitioner any more — the one person who most needs to read it
+  // is no longer one. Pending and approved stay practitioner-only.
+  const notice = status === 'rejected' ? STATUS_NOTICES.rejected : isPractitioner ? STATUS_NOTICES[status] : null;
   const healerSlug = state.profile?.linked_healer_slug;
 
   return (
@@ -134,7 +143,20 @@ export default function AccountPage() {
             {/* The link only appears when there is actually a profile to open.
                 An approved practitioner with no linked slug yet would otherwise
                 get a link to /healers/undefined. */}
-            {state.profile?.verification_status === 'approved' && healerSlug && (
+            {notice.footnote && (
+              <p className="mt-3 text-sm leading-relaxed opacity-90">{notice.footnote}</p>
+            )}
+
+            {notice.action && (
+              <Link
+                href={notice.action.href}
+                className="mt-4 inline-block rounded-full bg-[#7c3aed] px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-[#6d28d9]"
+              >
+                {notice.action.label}
+              </Link>
+            )}
+
+            {status === 'approved' && healerSlug && (
               <Link
                 href={`/healers/${healerSlug}`}
                 className="mt-3 inline-block text-sm font-semibold underline underline-offset-4 hover:text-white"

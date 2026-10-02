@@ -1,6 +1,6 @@
 'use client';
 
-import { useCallback, useMemo, useState } from 'react';
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import SectionHeading from '@/components/admin/SectionHeading';
 import StatStrip from '@/components/admin/StatStrip';
 import QueueTable from '@/components/admin/QueueTable';
@@ -28,6 +28,24 @@ export default function AdminInboxPage() {
   const [selectedId, setSelectedId] = useState(null);
   const [busy, setBusy] = useState(false);
   const [toast, setToast] = useState(null);
+
+  // FRESH ON EVERY VISIT.
+  //
+  // The data provider lives in the admin layout, which persists across route
+  // changes, so it fetched once per full page load and the Inbox then served
+  // whatever it had — an approval made in another tab, or a practitioner who
+  // applied while the dashboard was open, simply would not appear. Re-fetching
+  // when this page mounts makes clicking Inbox mean "show me what is there
+  // now".
+  //
+  // The ref keeps it to once per mount: reload sets state, and calling it
+  // unguarded from an effect would re-run on the render it causes.
+  const refreshedRef = useRef(false);
+  useEffect(() => {
+    if (refreshedRef.current) return;
+    refreshedRef.current = true;
+    reload();
+  }, [reload]);
 
   const queue = useMemo(() => buildQueue(profiles), [profiles]);
   const visible = useMemo(

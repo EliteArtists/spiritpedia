@@ -73,6 +73,18 @@ export function deriveStatus(profile) {
   return profile.verification_status || 'pending';
 }
 
+// Whether a status is worth showing at all.
+//
+// Only a practitioner has a verification state that means anything: an explorer
+// is not pending, approved or rejected — they simply have an account. And a
+// rejection now reverts the account to explorer, so the stale 'rejected' left
+// on the row would otherwise brand them with a badge for a review cycle that is
+// over. The badge returns by itself if they resubmit, because resubmitting
+// makes them a practitioner again.
+export function hasVisibleStatus(profile) {
+  return profile?.user_type === 'practitioner';
+}
+
 export function timeAgo(iso) {
   if (!iso) return '—';
   const seconds = Math.max(0, Math.floor((Date.now() - new Date(iso).getTime()) / 1000));

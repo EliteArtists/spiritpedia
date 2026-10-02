@@ -8,7 +8,7 @@ import { Placeholder } from '@/components/admin/AdminPlaceholders';
 import DataProblem from '@/components/admin/DataProblem';
 import PersonRecord from '@/components/admin/PersonRecord';
 import { StatusPill } from '@/components/admin/QueueTable';
-import { deriveStatus } from '@/components/admin/queue';
+import { deriveStatus, hasVisibleStatus } from '@/components/admin/queue';
 
 const TYPE_FILTERS = [
   { key: 'all', label: 'All' },
@@ -50,7 +50,9 @@ function PeopleView() {
     const q = query.trim().toLowerCase();
     return profiles.filter((p) => {
       if (type !== 'all' && (p.user_type || 'explorer') !== type) return false;
-      if (status !== 'all' && deriveStatus(p) !== status) return false;
+      // Explorers have no status, so a status filter simply excludes them
+      // rather than matching them against a value they do not carry.
+      if (status !== 'all' && (!hasVisibleStatus(p) || deriveStatus(p) !== status)) return false;
       if (!q) return true;
       return [p.full_name, p.email, p.modality, p.linked_healer_slug]
         .filter(Boolean)
@@ -150,7 +152,7 @@ function PeopleView() {
                     >
                       {p.user_type === 'practitioner' ? 'Practitioner' : 'Explorer'}
                     </span>
-                    <StatusPill status={deriveStatus(p)} />
+                    {hasVisibleStatus(p) && <StatusPill status={deriveStatus(p)} />}
                     <button
                       type="button"
                       onClick={() => router.push(`/admin/people?person=${encodeURIComponent(p.id)}`)}

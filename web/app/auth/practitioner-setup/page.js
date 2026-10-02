@@ -59,6 +59,8 @@ export default function PractitionerSetupPage() {
   const router = useRouter();
   const [user, setUser] = useState(null);
   const [checking, setChecking] = useState(true);
+  // True when they are back after a rejection, so the page can say so.
+  const [returning, setReturning] = useState(false);
   const [form, setForm] = useState(EMPTY_FORM);
   const [subjects, setSubjects] = useState([]);
   const [images, setImages] = useState([]);
@@ -71,15 +73,43 @@ export default function PractitionerSetupPage() {
 
   useEffect(() => {
     let cancelled = false;
-    getUser().then(({ data }) => {
+
+    (async () => {
+      const { data } = await getUser();
       if (cancelled) return;
       if (!data) {
         router.replace('/auth/signup');
         return;
       }
       setUser(data);
+
+      // Load whatever they have already told us. Someone whose application was
+      // rejected is coming back to CHANGE something, not to retype it from
+      // memory — an empty form would lose the work and make a small correction
+      // feel like starting over.
+      const { data: existing } = await supabaseAuth
+        .from('user_profiles')
+        .select('*')
+        .eq('id', data.id)
+        .maybeSingle();
+
+      if (cancelled) return;
+      if (existing) {
+        setForm((prev) => {
+          const next = { ...prev };
+          for (const key of Object.keys(EMPTY_FORM)) {
+            if (existing[key] !== null && existing[key] !== undefined) next[key] = existing[key];
+          }
+          return next;
+        });
+        if (Array.isArray(existing.subject_slugs)) setSubjects(existing.subject_slugs);
+        if (Array.isArray(existing.image_urls)) setImages(existing.image_urls);
+        setReturning(existing.verification_status === 'rejected');
+      }
+
       setChecking(false);
-    });
+    })();
+
     return () => {
       cancelled = true;
     };
@@ -207,6 +237,22 @@ export default function PractitionerSetupPage() {
         return;
       }
 
+      // Put the application back in the queue. The upsert above cannot: the
+      // field-protection trigger pins verification_status, so a rejected
+      // applicant would keep writing new answers into a row that still reads
+      // 'rejected' and never reappears in the Inbox. The route verifies the
+      // caller's own token and only ever writes 'pending'.
+      if (mode === 'submit') {
+        const { data: sessionData } = await supabaseAuth.auth.getSession();
+        const token = sessionData?.session?.access_token;
+        if (token) {
+          await fetch('/api/profile/resubmit', {
+            method: 'POST',
+            headers: { Authorization: `Bearer ${token}` },
+          }).catch(() => {});
+        }
+      }
+
       router.replace(mode === 'submit' ? '/auth/pending' : '/account');
     },
     [saving, form, subjects, images, user, router]
@@ -222,8 +268,17 @@ export default function PractitionerSetupPage() {
 
   return (
     <AuthShell maxWidthClass="max-w-xl">
-      <h1 className="mt-8 text-3xl font-bold">Tell us about your practice</h1>
+      <h1 className="mt-8 text-3xl font-bold">
+        {returning ? 'Update your application' : 'Tell us about your practice'}
+      </h1>
       <p className="mt-2 text-sm text-gray-500">(You can edit all of this later in settings)</p>
+
+      {returning && (
+        <p className="mt-4 rounded-xl border border-white/10 bg-[#111827] p-4 text-left text-sm leading-relaxed text-gray-400">
+          Your previous application was not approved. Your details are below as you left them —
+          change whatever you would like us to look at again, and resubmit.
+        </p>
+      )}
 
       <Section title="Images">
         <div
