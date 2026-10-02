@@ -1,4 +1,3 @@
-import { createClient } from '@supabase/supabase-js';
 import HealerCard from './HealerCard.js';
 import HeroBillboard from './HeroBillboard.js';
 import ContentShelf from './ContentShelf.js';
@@ -7,11 +6,15 @@ import HomeMasthead from './HomeMasthead.jsx';
 import ExploreMore from './ExploreMore.jsx';
 import { SITE_URL, DEFAULT_TITLE } from '../utils/seo.js';
 
-// Initialize the backend bridge client
-const supabase = createClient(
-  process.env.NEXT_PUBLIC_SUPABASE_URL,
-  process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY
-);
+// The shared anonymous data client, not a second one built here.
+//
+// This file is a server component, and the client it used to create took the
+// supabase-js defaults — persistSession and autoRefreshToken both true. Nothing
+// ever signs in through it, so no session was ever stored, but a module-level
+// singleton that CAN hold one lives in a long-running Node process shared by
+// every visitor. utils/supabase.js exists precisely to be stateless, and this
+// was the one place that bypassed it.
+import { supabase } from '../utils/supabase.js';
 
 const DEFAULT_AVATAR = 'https://placehold.co/400x400?text=Spiritpedia';
 
