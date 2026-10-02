@@ -130,7 +130,10 @@ The `/web` directory contains the full Next.js application.
 * `/free-resources/[slug]` — Free resource detail page
 * `/publishers/[slug]` — Publishing house profile — bio, linked authors, and one auto-curated book shelf per author
 * `/library` — Personal saved library, auto-organised by subject
-* `/admin` — Content ingestion dashboard (videos, books, courses, healers, free resources, publishers). **Protected by password login** — a session-cookie auth screen at `/admin/login`, gated by `web/proxy.js`. The password lives only in the `ADMIN_PASSWORD` environment variable (never in the codebase); it must be set both locally in `web/.env.local` and in Vercel → Settings → Environment Variables.
+* `/privacy`, `/terms` — holding pages, `noindex` until written
+* `/account` — account centre; becomes the Practitioner Dashboard for an approved practitioner. See Accounts & Authentication
+* `/auth/*` — signup, verify, claim, practitioner-setup, pending
+* `/admin` — CRM dashboard. **Protected by password login** — a session-cookie auth screen at `/admin/login`, gated by `web/proxy.js`. The password lives only in the `ADMIN_PASSWORD` environment variable (never in the codebase); it must be set both locally in `web/.env.local` and in Vercel → Settings → Environment Variables. See Admin (CRM)
 
 #### Key Components
 | File | Purpose |
@@ -307,6 +310,110 @@ writing.**
 #### My Library
 The library at `/library` reads saved items from local storage (`favorited_healers`, `favorited_publishers`, `favorited_books`, `favorite_videos`, `favorited_courses`, `favorited_free_resources`), maps them against Supabase subject slugs, and generates folders dynamically. Empty categories are hidden automatically.
 
+🔐 Accounts & Authentication
+Email OTP only — no passwords, no social providers. Supabase Auth issues a
+6-digit code (JWT expiry 24h; the length is the dashboard's "Email OTP Length"
+setting, not ours, and `LENGTH` in the verify page must follow it).
+
+#### Routes
+* `/auth/signup` — email entry. `signInWithOtp` with `shouldCreateUser`, so sign-in and sign-up are one action
+* `/auth/verify` — six code boxes, paste support, auto-submit. Also the magic-link landing page: a session present on mount means the link signed them in, so it completes instead of showing boxes
+* `/auth/claim` — offered when an email matches an existing healer
+* `/auth/practitioner-setup` — the application form; pre-loads existing answers so a rejected applicant edits rather than retypes
+* `/auth/pending` — post-submission holding page
+* `/account` — renders differently per state (see below)
+
+#### Two Supabase clients, deliberately
+* `utils/supabase.js` — anonymous, **stateless** (`persistSession: false`). Imported by server components, which share one long-running Node process; a client that persisted a session there could answer one visitor with another's identity
+* `utils/supabaseAuth.js` — browser-only, holds the session (`persistSession`/`autoRefreshToken` true)
+
+`utils/supabaseAdmin.js` is the service-role client. Server only, never imported by a client component.
+
+#### AuthSync
+`components/AuthSync.jsx` mounts from the root layout and creates the profile row
+plus migrates localStorage favourites **whenever a session appears** — not just
+on the verify page. Without it, a magic-link click or any returning visit left an
+account with no profile. `INITIAL_SESSION` repairs existing damage on next visit.
+
+#### The practitioner/explorer choice
+`pending_user_types` carries it between submitting an email and verifying it,
+keyed by email so it survives a magic link opened on another device.
+sessionStorage alone cannot. Written via `/api/pending-user-type` (service role):
+the table has no anon SELECT policy, which also makes an anonymous UPSERT fail
+and an anonymous UPDATE silently match zero rows.
+
+#### /account states
+| State | Renders |
+| :--- | :--- |
+| explorer | account summary — email, type, sign out |
+| practitioner · pending | "under review" notice |
+| practitioner · approved | **Practitioner Dashboard** — Profile / Content / Settings tabs |
+| rejected | notice + "update and resubmit" link. Rejection also reverts `user_type` to explorer |
+
+A status badge is only ever shown for practitioners. An explorer is not pending anything.
+
+🛠️ Admin (CRM)
+`/admin`, gated by `proxy.js` (session cookie from `ADMIN_PASSWORD`). Sidebar shell; nine sections.
+
+| Section | State |
+| :--- | :--- |
+| Inbox | live — unified queue of applications and claims, three-pane reviewer, Approve / Reject / Approve & Next |
+| People | live — Practitioners / Explorers tabs, search, 360° record with Profile, Content, Admin Notes, Activity |
+| Claims | live — record of claimed profiles |
+| Analytics | live — counts |
+| Ingestion | live — the original ingestion form, unchanged |
+| Content · Messages · Flags · Mailshots · Settings | placeholders |
+
+Needs `SUPABASE_SERVICE_ROLE_KEY` and `ADMIN_NAME` in the environment. Without
+them the data sections show a named reason, never an empty list — an empty list
+would claim nobody has signed up.
+
+**Derived, not stored:** an application showing `incomplete` is a practitioner who
+pressed "Skip for now", detected by the absence of `full_name`/`modality`. The
+field-protection trigger pins `verification_status`, so the form could not write
+such a state anyway. Approve is disabled for these — a healer with no name has no
+reachable slug.
+
+**Claimed vs admin-ingested** is decided by comparing `healers.created_at` with
+`user_profiles.created_at`: approval creates the healer row, a claim links to one
+that already existed. There is no claims table; a `claimed_at` column should
+replace this.
+
+🔒 Security model
+Write access is the thing to understand before changing anything here.
+
+* **The anon key ships in every page bundle.** Anything it may write, any visitor may write. It previously held UPDATE on `healers` and INSERT on four tables — fixed in `0007`
+* **All content writes are server-side**, via `/api/admin/write` (admin cookie) and `/api/practitioner/profile` (user token). Reads stay in the browser
+* **`user_profiles` carries a BEFORE INSERT OR UPDATE trigger** pinning `verification_status`, `linked_healer_slug`, `id` and `created_at` against ordinary callers. RLS is row-level and cannot express column limits. `service_role` and direct SQL pass through
+* **`claim_healer_profile()`** is the only browser-reachable path to those two columns. It re-checks the caller's email server-side and never trusts a slug from the client. This is why `healers.contact_email` is read-only in the practitioner dashboard — an editable one would let a practitioner hand someone else a claim
+* **`admin_notes` has RLS with no policies at all.** Notes *about* people; the subject must never be able to read them
+
+#### API routes
+| Route | Guard |
+| :--- | :--- |
+| `/api/admin/*` | admin session cookie, re-checked per route (`/api` is outside `proxy.js`'s matcher) |
+| `/api/practitioner/profile` | user access token; slug read from their own profile row; writable fields are an allowlist |
+| `/api/profile/resubmit` | user access token; only ever writes `pending` |
+| `/api/pending-user-type` | open by design — pre-authentication, writes a value that grants nothing |
+
+📈 Analytics & SEO
+* GA4 via `@next/third-parties`, excluded from `/admin`, rendered only when `NEXT_PUBLIC_GA_MEASUREMENT_ID` is set. **No consent gate yet** — see Next Steps
+* Dynamic `sitemap.xml` (~2,630 URLs) and `robots.txt`. Paginated with an `id` tiebreaker: PostgREST caps responses at 1,000 rows and truncates silently
+* Transactional email via Resend, `love@spiritpedia.co`. `utils/resend.js` does **not** affect sign-in codes — those are sent by Supabase Auth through its own SMTP
+
+🗄️ Migrations
+Run in order from `supabase/migrations/`. There is no migration runner; paste into the Supabase SQL editor.
+
+| File | Purpose |
+| :--- | :--- |
+| `0001_user_profiles` | profile table, RLS, field-protection trigger |
+| `0002_user_favourites` | saved items, unique on (user, type, slug) |
+| `0003_claim_healer_profile` | the claim RPC; replaces 0001's trigger function |
+| `0004_pending_user_types` | practitioner/explorer choice across the verification gap |
+| `0005_admin_notes` | internal notes; RLS on, no policies |
+| `0006_lock_down_content_writes` | **superseded** — dropped policies by guessed name and silently did nothing |
+| `0007_force_content_read_only` | enumerates `pg_policies` and drops by actual name. Ends with a SELECT so the result is visible rather than assumed |
+
 🗄️ Database Structure (Supabase)
 #### Tables
 * **healers**: `id`, `name`, `healer_slug`, `bio`, `tier`, `entity_type`, `birth_year`, `death_year`, `image_urls[]`, `subject_slugs[]`, `availability_type`, `country`, `city`, `contact_email`, `contact_phone`, `booking_url`, `website_url`, `youtube_url`, `instagram_url`, `facebook_url`, `twitter_url`, `tiktok_url`
@@ -317,6 +424,10 @@ The library at `/library` reads saved items from local storage (`favorited_heale
 * **free_resources**: `id`, `title`, `description`, `resource_url`, `resource_type`, `image_url`, `is_featured`, `is_active`, `start_date`, `end_date`, `subject_slugs[]`, `healer_id`
 * **publishers**: `id` (uuid), `name`, `slug`, `description`, `website_url`, `logo_url`, `founded_year`, `subject_slugs[]`
 * **publisher_healers**: `id`, `publisher_id` (→ publishers.id), `healer_id` (→ healers.id) — the many-to-many junction linking a publishing house to its authors
+* **user_profiles**: `id` (→ auth.users), `user_type`, `verification_status`, `linked_healer_slug`, `full_name`, `modality`, `bio`, location, socials, `subject_slugs[]`, `image_urls[]`. Carries the field-protection trigger
+* **user_favourites**: `user_id`, `content_type`, `content_slug` — unique together. `content_slug` holds a slug for healers/publishers/books and a numeric id for videos/courses/resources
+* **pending_user_types**: `email` (PK), `user_type` — consumed and deleted at verification
+* **admin_notes**: `subject_user_id`, `body`, `created_by` — service role only
 * **emotion_mappings**: `id`, `emotion`, `subject_slug`, `weight` — powers the emotional search bar; one emotion maps to several weighted subjects. 3,488 rows covering 693 distinct emotions and all 42 subjects
 
 #### Conventions worth knowing
@@ -373,6 +484,13 @@ The library at `/library` reads saved items from local storage (`favorited_heale
 | Homepage performance — on-demand shelves, lazy images, video pagination | ✅ Complete |
 | Sticky subject pills + navbar handoff + floating My Library button | ✅ Complete |
 | Site-wide footer with health disclaimer | ✅ Complete |
+| Dynamic sitemap + robots.txt + canonical domain + GSC verification | ✅ Complete |
+| Email OTP auth — signup, verify, magic link, session persistence | ✅ Complete |
+| Practitioner onboarding — setup form, claim flow, resubmission after rejection | ✅ Complete |
+| Admin CRM — sidebar shell, unified inbox queue, 360° people view, admin notes | ✅ Complete |
+| Practitioner dashboard at /account — profile editing, content list, settings | ✅ Complete |
+| All content writes moved server-side; anon write access closed | ✅ Complete |
+| GA4 analytics (no consent gate yet) | ⚠️ Partial |
 | Content library (target: 5,000 videos + 5,000 books) | ⬜ Ongoing |
 | Flutter native app | ⬜ Phase 2 |
 | IAM notification system | ⬜ Phase 2 |
@@ -380,7 +498,7 @@ The library at `/library` reads saved items from local storage (`favorited_heale
 📊 Content Library
 | Collection | Count |
 | :--- | :--- |
-| Healers | 127 |
+| Healers | 128 |
 | Videos | 2,269 |
 | Books | 963 |
 | Courses & offerings | 1,103 |
@@ -388,26 +506,33 @@ The library at `/library` reads saved items from local storage (`favorited_heale
 | Publishing houses | 2 (Hay House, Sounds True) |
 | Subjects | 42 |
 | Emotion mappings | 3,488 rows · 693 emotions |
-
-Healers by tier: 62 Superhero · 48 Luminary · 14 Ascended Master · 3 Local Hero.
+| Registered accounts | 6 (1 approved practitioner) |
+| Saved items | 25 |
 
 💡 Immediate Next Steps
 | Item | Status |
 | :--- | :--- |
-| Ascended Masters tier — Wayne Dyer, Louise Hay, Ram Dass | ✅ Complete |
-| Publishing Houses — shelf, profiles, per-author book shelves, favourites | ✅ Complete |
-| Emotional mapping system — crisis intercept, dual path, soft tier, disclaimer | ✅ Complete |
-| Homepage performance fix — 8MB → 824KB | ✅ Complete |
-| Social sharing — Open Graph tags and share buttons | ✅ Complete |
-| Site-wide footer + health disclaimer | ✅ Complete |
-| [spiritpedia.co](https://spiritpedia.co) live | ✅ Complete |
-| **User Onboarding Flow** | ⬜ **Current task** |
-| Backend / Admin System | ⬜ Next |
-| Google Analytics GA4 | ⬜ Next |
-| Ancient Teachers — Jesus, Buddha, Lao Tzu; needs its own tier infrastructure | ⬜ Next |
-| Privacy Policy and Terms of Use pages — the footer links are placeholders | ⬜ Open |
-| `SITE_URL` still points at `www.spirit-pedia.com` — canonical and og:url tags on spiritpedia.co name the old domain | ⬜ Open |
+| Email OTP auth + practitioner onboarding | ✅ Complete |
+| Admin CRM phases 1–3 | ✅ Complete |
+| Practitioner dashboard | ✅ Complete |
+| Anon write lockdown across content tables | ✅ Complete |
+| **GA4 consent gate** — cookies are set with no consent on a UK/EU-facing site | ⬜ **Open** |
+| Privacy Policy and Terms of Use — pages exist but are holding text, `noindex` | ⬜ Open |
+| `content_submissions` staging table — needed before practitioners can add content. `videos`/`books` have no published flag and are read wholesale by the homepage, subject pages and sitemap | ⬜ Open |
+| `claimed_at` column to replace the `created_at` comparison | ⬜ Open |
+| Delete account — unwired by design; needs a typed confirmation | ⬜ Open |
+| Admin phases 4+ — flags, messages, content moderation, publisher claims. Each needs its own table | ⬜ Next |
+| Ancient Teachers tier | ⬜ Next |
 | Content library (target: 5,000 videos + 5,000 books) | ⬜ Ongoing |
 | Flutter app build | ⬜ Phase 2 |
+
+#### Environment variables
+`NEXT_PUBLIC_SUPABASE_URL` · `NEXT_PUBLIC_SUPABASE_ANON_KEY` · `ADMIN_PASSWORD` ·
+`SUPABASE_SERVICE_ROLE_KEY` · `ADMIN_NAME` · `RESEND_API_KEY` ·
+`NEXT_PUBLIC_GA_MEASUREMENT_ID`
+
+`SUPABASE_SERVICE_ROLE_KEY` bypasses every RLS policy. It must never carry a
+`NEXT_PUBLIC_` prefix, and must be set in Vercel or the admin data sections stay
+empty.
 
 Made with love in Tavira 💫
