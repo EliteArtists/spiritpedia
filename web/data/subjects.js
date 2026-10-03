@@ -15,19 +15,31 @@ export async function getAllSubjects() {
   return subjects;
 }
 
-// id -> name for every healer on the platform. Offerings and free resources link
-// by the relational bigint healer_id, and a course's author must still be
-// nameable when the author themselves is not tagged with the subject being
-// viewed — so this deliberately spans the whole table, not the filtered set.
+// Display names for every healer on the platform, keyed BOTH ways, because the
+// content tables do not agree on how they point at a healer:
+//
+//   byId   — a Map, for offerings and free resources, which link by the
+//            relational bigint healer_id. Server-side only.
+//   bySlug — an ARRAY of [healer_slug, name] pairs, for videos, which link by
+//            the text healer_slug. Pairs rather than a Map because this one
+//            crosses into a client component, and an array is the shape the
+//            homepage already hands to the same component.
+//
+// Deliberately spans the whole table, not the subject-filtered set: a course's
+// author must still be nameable when the author themselves is not tagged with
+// the subject being viewed, and a video's healer likewise.
 export async function getHealerNames() {
-  const { data, error } = await supabase.from('healers').select('id, name');
+  const { data, error } = await supabase.from('healers').select('id, name, healer_slug');
 
   if (error) {
     console.error('Error fetching healer names:', error);
-    return new Map();
+    return { byId: new Map(), bySlug: [] };
   }
 
-  return new Map(data.map((h) => [h.id, h.name]));
+  return {
+    byId: new Map(data.map((h) => [h.id, h.name])),
+    bySlug: data.filter((h) => h.healer_slug).map((h) => [h.healer_slug, h.name]),
+  };
 }
 
 // Function to fetch content for a specific subject slug.
@@ -38,6 +50,21 @@ export async function getHealerNames() {
 // makes hyphenated tags such as 'eft-tapping' or 'law-of-attraction' safe: a
 // LIKE/eq-style match would have to reason about the separator, and containment
 // simply never sees one.
+//
+// VIDEOS ARE NOT HERE. They used to be, and the whole matching pool — up to a
+// thousand rows — was serialised into the page's HTML so that twenty-four of
+// them could be rendered. That alone put /subject/self-healing at 4.9MB. The
+// VideoShelves client component fetches them on the client instead, which also
+// lifts the thousand-row ceiling that was silently costing self-healing 45 of
+// its 1,045 videos.
+//
+// TODO — the four queries below still have that ceiling. PostgREST caps a
+// response at 1,000 rows and reports no error when it truncates, so the first
+// subject whose books, courses, free resources or healers cross that line will
+// quietly lose the remainder. self-healing is already at 547 courses and 465
+// books, and consciousness at 386 courses. The fix is `.range()` paging on a
+// unique, ordered column (id — created_at is not unique, bulk imports share a
+// timestamp), as web/app/sitemap.js does. Out of scope here; a separate task.
 export async function getContentBySubjectSlug(subjectSlug) {
   // EXPIRATION WINDOW — mirrors the homepage: a paid offering or free resource
   // only surfaces while it is live (is_active, and either evergreen or not yet
@@ -46,13 +73,9 @@ export async function getContentBySubjectSlug(subjectSlug) {
   const liveWindow = `end_date.is.null,end_date.gte.${today}`;
 
   // Every query issued concurrently — one round trip's latency for the whole page.
-  const [booksResult, videosResult, healersResult, coursesResult, freeResourcesResult] =
+  const [booksResult, healersResult, coursesResult, freeResourcesResult] =
     await Promise.all([
       supabase.from('books').select('*').contains('subject_slugs', [subjectSlug]),
-      // select('*'), not a narrow projection: VideoPlayer keys its favourites off
-      // video.id, and omitting the column silently collapsed every card onto the
-      // single favourite id "undefined" — hearting one video hearted them all.
-      supabase.from('videos').select('*').contains('subject_slugs', [subjectSlug]),
       supabase.from('healers').select('*').contains('subject_slugs', [subjectSlug]),
       supabase
         .from('courses')
@@ -71,16 +94,15 @@ export async function getContentBySubjectSlug(subjectSlug) {
         .or(liveWindow),
     ]);
 
-  const results = [booksResult, videosResult, healersResult, coursesResult, freeResourcesResult];
+  const results = [booksResult, healersResult, coursesResult, freeResourcesResult];
   const failure = results.find((r) => r.error);
   if (failure) {
     console.error('Error in content query:', failure.error);
-    return { books: [], videos: [], healers: [], courses: [], freeResources: [] };
+    return { books: [], healers: [], courses: [], freeResources: [] };
   }
 
   return {
     books: booksResult.data,
-    videos: videosResult.data,
     healers: healersResult.data,
     courses: coursesResult.data,
     freeResources: freeResourcesResult.data,

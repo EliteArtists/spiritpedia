@@ -4,7 +4,7 @@ import ContentShelf from '../../../components/ContentShelf.js';
 import FreeResourceCard from '../../../components/FreeResourceCard.js';
 import HealerCard from '../../../components/HealerCard.js';
 import OfferingCard from '../../../components/OfferingCard.js';
-import VideoGrid from '../../../components/VideoGrid.js';
+import VideoShelves from '../../../components/VideoShelves.jsx';
 import ShareButton from '../../../components/ShareButton.jsx';
 import SiteLogo from '../../../components/SiteLogo.jsx';
 import { buildMetadata, SITE_URL } from '../../../utils/seo.js';
@@ -40,13 +40,16 @@ export default async function SubjectPage({ params }) {
   // is ever hit without a slug.
   const { slug } = await params;
 
-  const [content, subjects, healerNameById] = await Promise.all([
+  const [content, subjects, healerNames] = await Promise.all([
     getContentBySubjectSlug(slug),
     getAllSubjects(),
     getHealerNames(),
   ]);
 
-  const { healers, books, videos, courses, freeResources } = content;
+  const { healers, books, courses, freeResources } = content;
+  // byId for the offering and free-resource cards, bySlug for the video cards —
+  // the two tables point at a healer differently. See getHealerNames().
+  const { byId: healerNameById, bySlug: healerNamesBySlug } = healerNames;
 
   // Prefer the subject's real display name ("EFT / Tapping") over a de-hyphenated
   // slug ("eft tapping"), which mangles anything with punctuation or casing.
@@ -71,10 +74,14 @@ export default async function SubjectPage({ params }) {
     />
   );
 
+  // Videos are no longer counted here — they are not fetched on the server any
+  // more. A subject carrying videos and nothing else would therefore read as
+  // empty; there is no such subject today (homeopathy is the only one with none
+  // of the four, and its single video is below the shelf threshold anyway), but
+  // it is the one case this branch now gets wrong.
   const isEmpty =
     healers.length === 0 &&
     books.length === 0 &&
-    videos.length === 0 &&
     courses.length === 0 &&
     freeResources.length === 0;
 
@@ -167,10 +174,21 @@ export default async function SubjectPage({ params }) {
             />
 
             {/* Videos are the one high-volume collection — a popular subject
-                matches hundreds — so they get the homepage's paginated vertical
-                grid rather than a scroll track that would mount every card at
-                once. Same component, so the two pages cannot drift apart. */}
-            <VideoGrid videos={videos} />
+                matches hundreds, self-healing over a thousand — so they are
+                fetched from the client rather than shipped in this page's HTML,
+                and grouped into a shelf per teacher rather than listed flat.
+                The same component the homepage's Videos tab uses, given the
+                same subject slug, so the two cannot drift apart.
+
+                from/fromTitle give each card its back-context, so a video
+                opened from here offers "Back to {title}" rather than the
+                generic "Back to Videos". */}
+            <VideoShelves
+              subjectSlug={slug}
+              healerNames={healerNamesBySlug}
+              from={fromSubject}
+              fromTitle={title}
+            />
           </main>
         )}
       </div>

@@ -56,7 +56,12 @@ const CARD_COLUMNS = 'id, title, slug, platform_url, healer_slug';
 // away and already in memory — revealing them costs no query.
 const FILTERED_VISIBLE_SHELVES = 15;
 
-export default function VideoShelves({ healerNames = [], subjectSlug = null }) {
+export default function VideoShelves({
+  healerNames = [],
+  subjectSlug = null,
+  from,
+  fromTitle,
+}) {
   const [shelves, setShelves] = useState(null);
   const [error, setError] = useState(null);
   const [showAll, setShowAll] = useState(false);
@@ -273,6 +278,10 @@ export default function VideoShelves({ healerNames = [], subjectSlug = null }) {
               video={video}
               variant="dark"
               healerName={nameBySlug.current.get(video.healer_slug)}
+              // Back-context, where the caller has one. The homepage passes
+              // neither, so its cards keep falling back to "Back to Videos".
+              from={from}
+              fromTitle={fromTitle}
             />
           )}
         />
