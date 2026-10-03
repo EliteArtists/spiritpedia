@@ -6,7 +6,6 @@ import ContentShelf from './ContentShelf.js';
 import FreeResourceCard from './FreeResourceCard.js';
 import OfferingCard from './OfferingCard.js';
 import ShelfRow from './ShelfRow.js';
-import VideoPlayer from './VideoPlayer.js';
 import { supabase } from '../utils/supabase.js';
 
 // Homepage discovery section.
@@ -19,21 +18,7 @@ import { supabase } from '../utils/supabase.js';
 //
 // Shelves stack in the order they were chosen and stay open. The chooser
 // follows the last opened shelf, carrying whatever is left, and disappears
-// once all six are open.
-
-// Videos arrive a page at a time, fetched per press rather than sliced from a
-// pre-loaded pool — pooling is what made the homepage heavy in the first place.
-const VIDEO_PAGE = 12;
-
-// Paging needs a TOTAL order, not just a sort key. Videos were bulk-imported in
-// batches that share a created_at to the microsecond, so ordering on that alone
-// leaves Postgres free to break ties differently per query — pages then overlap
-// and some rows become unreachable. Measured: three pages returned 36 rows but
-// only 28 distinct videos. `id` is unique, so it settles every tie.
-const VIDEO_ORDER = [
-  ['created_at', { ascending: false }],
-  ['id', { ascending: false }],
-];
+// once all five are open.
 
 const SECTIONS = [
   { key: 'free-resources', label: 'Free Resources', subtitle: 'No Cost, No Catch' },
@@ -46,7 +31,6 @@ const SECTIONS = [
   { key: 'courses', label: 'Courses & Programmes', subtitle: 'Go Deeper' },
   { key: 'retreats', label: 'Retreats & Live Events', subtitle: 'In Person' },
   { key: 'downloads', label: 'Downloads & Audio', subtitle: 'Take It With You' },
-  { key: 'videos', label: 'Videos', subtitle: 'Watch & Learn' },
 ];
 
 // An offering only surfaces while it is live: is_active, and either evergreen
@@ -67,10 +51,6 @@ export default function ExploreMore({ subjectSlug = null, healerNames = [] }) {
   const [order, setOrder] = useState([]);
   const [rows, setRows] = useState({});
   const [loading, setLoading] = useState({});
-  // Videos page separately from the other shelves: `videosDone` goes true once a
-  // batch comes back short, which is what retires the button.
-  const [videosDone, setVideosDone] = useState(false);
-  const [loadingMoreVideos, setLoadingMoreVideos] = useState(false);
 
   // Offerings live in one table split by product_type, so Courses, Retreats and
   // Downloads share a single fetch rather than pulling it three times. Keyed by
@@ -123,13 +103,6 @@ export default function ExploreMore({ subjectSlug = null, healerNames = [] }) {
         );
         return data || [];
       }
-      if (key === 'videos') {
-        const { data } = await withSubject(
-          supabase.from('videos').select('*').order(...VIDEO_ORDER[0]).order(...VIDEO_ORDER[1]).range(0, VIDEO_PAGE - 1),
-          slug
-        );
-        return data || [];
-      }
       // The three offering shelves, split off one cached fetch. A legacy row
       // with no product_type is treated as a course, as it always has been.
       const offerings = await loadCourses(slug);
@@ -148,8 +121,6 @@ export default function ExploreMore({ subjectSlug = null, healerNames = [] }) {
       try {
         const data = await fetchSection(key, slug);
         setRows((prev) => ({ ...prev, [key]: data }));
-        // A first page shorter than a full one means there is nothing beyond it.
-        if (key === 'videos') setVideosDone(data.length < VIDEO_PAGE);
       } catch {
         // A failed fetch leaves an empty shelf rather than a broken page.
         setRows((prev) => ({ ...prev, [key]: [] }));
@@ -163,31 +134,6 @@ export default function ExploreMore({ subjectSlug = null, healerNames = [] }) {
   // Appends the next page to what is already on screen. Offset comes from the
   // rows in hand, so it stays correct no matter how many presses have happened,
   // and the subject filter is whatever the shelf is currently showing.
-  const loadMoreVideos = useCallback(async () => {
-    setLoadingMoreVideos(true);
-    try {
-      const current = rows.videos || [];
-      const { data } = await withSubject(
-        supabase
-          .from('videos')
-          .select('*')
-          .order(...VIDEO_ORDER[0])
-          .order(...VIDEO_ORDER[1])
-          .range(current.length, current.length + VIDEO_PAGE - 1),
-        subjectSlug
-      );
-      const batch = data || [];
-      setRows((prev) => ({ ...prev, videos: [...(prev.videos || []), ...batch] }));
-      if (batch.length < VIDEO_PAGE) setVideosDone(true);
-    } catch {
-      // Leave what is already on screen and retire the button rather than
-      // offering a press that will not work.
-      setVideosDone(true);
-    } finally {
-      setLoadingMoreVideos(false);
-    }
-  }, [rows.videos, subjectSlug]);
-
   function open(key) {
     setOrder((prev) => (prev.includes(key) ? prev : [...prev, key]));
     load(key, subjectSlug);
@@ -214,18 +160,6 @@ export default function ExploreMore({ subjectSlug = null, healerNames = [] }) {
 
     if (loading[key] && !data) return <ShelfSkeleton key={key} section={section} />;
     if (!data) return null;
-
-    if (key === 'videos') {
-      return (
-        <VideoPreview
-          key={key}
-          videos={data}
-          hasMore={!videosDone}
-          loadingMore={loadingMoreVideos}
-          onLoadMore={loadMoreVideos}
-        />
-      );
-    }
 
     const renderItem =
       key === 'books'
@@ -316,35 +250,3 @@ function ShelfSkeleton({ section }) {
   );
 }
 
-// Videos stay on the homepage: each press fetches the next page and appends it
-// below, so nobody is navigated away mid-browse.
-function VideoPreview({ videos, hasMore, loadingMore, onLoadMore }) {
-  return (
-    <section className="min-w-0">
-      <ShelfRow title="Videos" subtitle="Watch & Learn" />
-
-      {videos.length === 0 ? (
-        <p className="text-sm text-gray-500">No videos here yet.</p>
-      ) : (
-        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-          {videos.map((video) => (
-            <VideoPlayer key={video.id} video={video} variant="dark" />
-          ))}
-        </div>
-      )}
-
-      {hasMore && videos.length > 0 && (
-        <div className="mt-6">
-          <button
-            type="button"
-            onClick={onLoadMore}
-            disabled={loadingMore}
-            className="rounded-full bg-[#7c3aed] px-8 py-3 text-sm font-bold text-white shadow-lg shadow-[#7c3aed]/30 transition-all hover:bg-[#6d28d9] hover:scale-105 active:scale-95 disabled:cursor-default disabled:opacity-60 disabled:hover:scale-100"
-          >
-            {loadingMore ? 'Loading…' : 'Load more videos'}
-          </button>
-        </div>
-      )}
-    </section>
-  );
-}

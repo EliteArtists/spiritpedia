@@ -22,7 +22,7 @@ function extractId(url) {
 // `from`/`fromTitle` are optional context — a healer page passes its own path
 // and name so the back link returns there. Without them the detail page falls
 // back to "Back to Videos".
-export default function VideoPlayer({ video, variant, from, fromTitle }) {
+export default function VideoPlayer({ video, variant, from, fromTitle, healerName }) {
   const [favorited, setFavorited] = useState(false);
   const videoId = extractId(video.platform_url);
   const favId = String(video.id); // stable per-row identifier
@@ -123,6 +123,15 @@ export default function VideoPlayer({ video, variant, from, fromTitle }) {
         <Link href={href} className={`leading-snug line-clamp-2 block ${titleClass}`}>
           {video.title}
         </Link>
+        {/* Resolved from a slug->name map passed in by the page, so a shelf of
+            twenty cards costs one lookup rather than twenty queries. Omitted
+            where the caller has no map — the healer page, where every card is
+            that healer anyway. */}
+        {healerName && (
+          <p className={`mt-1 truncate text-xs ${isDark ? 'text-gray-500' : 'text-slate-600'}`}>
+            {healerName}
+          </p>
+        )}
       </div>
     </div>
   );

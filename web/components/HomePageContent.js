@@ -4,6 +4,7 @@ import ContentShelf from './ContentShelf.js';
 import PublisherCard from './PublisherCard.jsx';
 import HomeMasthead from './HomeMasthead.jsx';
 import ExploreMore from './ExploreMore.jsx';
+import HomeTabs from './HomeTabs.jsx';
 import { SITE_URL, DEFAULT_TITLE } from '../utils/seo.js';
 
 // The shared anonymous data client, not a second one built here.
@@ -60,6 +61,14 @@ export default async function HomePage({ initialSubjectSlug }) {
   // subject filter has excluded them from the shelves. A few KB, versus
   // re-querying healers from the client for every shelf that opens.
   const healerNames = allHealers.map((h) => [h.id, h.name]);
+
+  // A SECOND map, keyed by slug rather than id. Videos link to a healer by the
+  // text `healer_slug`, where courses and free resources use the bigint
+  // `healer_id` — the two are not interchangeable, so the video shelves need
+  // their own lookup. ~129 entries, a few KB, versus a query per card.
+  const healerNamesBySlug = allHealers
+    .filter((h) => h.healer_slug)
+    .map((h) => [h.healer_slug, h.name]);
 
   // Subject filter — applied to every collection so a chosen pill narrows the
   // entire page, not just the healer shelves.
@@ -144,6 +153,9 @@ export default async function HomePage({ initialSubjectSlug }) {
       />
 
       <div className="mx-auto max-w-7xl px-6 pt-10">
+        {/* The masthead above stays put on both tabs — it is the page's hero,
+            not part of either view. Everything below it swaps. */}
+        <HomeTabs healerNames={healerNamesBySlug} subjectSlug={currentSubjectSlug}>
         {/* 4. HERO BILLBOARD — the opening slide is chosen here, on the
             server, so the first paint is already a random face. Choosing it
             inside the component instead meant every visitor saw slide 0 until
@@ -239,6 +251,7 @@ export default async function HomePage({ initialSubjectSlug }) {
               None of it is in the initial payload. */}
           <ExploreMore subjectSlug={currentSubjectSlug} healerNames={healerNames} />
         </main>
+        </HomeTabs>
       </div>
     </div>
   );
