@@ -1,6 +1,8 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import Link from 'next/link';
+import { backContextQuery } from '../utils/backContext.js';
 
 const FAV_KEY = 'favorite_videos';
 
@@ -11,14 +13,25 @@ function extractId(url) {
   return url.split('/').pop();
 }
 
-// Thumbnail that swaps to an inline YouTube iframe on click — streams natively
-// inside the site instead of opening a new tab. Includes a floating favorite
-// heart synced to localStorage.
-export default function VideoPlayer({ video, variant }) {
-  const [playing, setPlaying] = useState(false);
+// Video card. The thumbnail now opens /videos/[slug] rather than playing in
+// place: the video page is where the embed, the healer link, sharing and
+// reviews live, and a card that played inline was a dead end with nowhere to go
+// afterwards. The heart still toggles from the card, so saving something does
+// not cost a page load.
+//
+// `from`/`fromTitle` are optional context — a healer page passes its own path
+// and name so the back link returns there. Without them the detail page falls
+// back to "Back to Videos".
+export default function VideoPlayer({ video, variant, from, fromTitle }) {
   const [favorited, setFavorited] = useState(false);
   const videoId = extractId(video.platform_url);
   const favId = String(video.id); // stable per-row identifier
+
+  // Guarded: a video without a slug has no page, so the card falls back to the
+  // platform link rather than routing to /videos/undefined.
+  const href = video.slug
+    ? `/videos/${video.slug}${from ? backContextQuery(from, fromTitle) : ''}`
+    : video.platform_url || '/';
 
   // The default translucent-white card is tuned for the light surfaces (library,
   // healer profile). `variant="dark"` swaps in the navy surface used by the
@@ -58,20 +71,10 @@ export default function VideoPlayer({ video, variant }) {
   return (
     <div className={`overflow-hidden rounded-2xl shadow-xl transition-all duration-300 hover:shadow-2xl group ${shellClass}`}>
       <div className="relative aspect-video bg-black">
-        {playing && videoId ? (
-          <iframe
-            className="w-full h-full"
-            src={`https://www.youtube.com/embed/${videoId}?autoplay=1&rel=0`}
-            title={video.title}
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowFullScreen
-          />
-        ) : (
-          <>
-            <button
-              type="button"
-              onClick={() => setPlaying(true)}
-              aria-label={`Play ${video.title}`}
+        <>
+            <Link
+              href={href}
+              aria-label={`Open ${video.title}`}
               className="block w-full h-full"
             >
               {videoId ? (
@@ -88,7 +91,7 @@ export default function VideoPlayer({ video, variant }) {
               <div className="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
                 <div className="w-12 h-12 rounded-full bg-red-600 flex items-center justify-center text-xl font-bold text-white">▶</div>
               </div>
-            </button>
+            </Link>
 
             {/* Floating favorite heart — sits above the play button (z-30) */}
             <button
@@ -115,10 +118,11 @@ export default function VideoPlayer({ video, variant }) {
               </svg>
             </button>
           </>
-        )}
       </div>
       <div className="p-4">
-        <h4 className={`leading-snug line-clamp-2 ${titleClass}`}>{video.title}</h4>
+        <Link href={href} className={`leading-snug line-clamp-2 block ${titleClass}`}>
+          {video.title}
+        </Link>
       </div>
     </div>
   );

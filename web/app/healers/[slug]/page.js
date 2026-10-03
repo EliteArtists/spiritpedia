@@ -418,7 +418,14 @@ export default async function HealerProfile({ params, searchParams }) {
           title="Videos"
           subtitle="Teachings & Talks"
           items={videos}
-          renderItem={(video) => <VideoPlayer video={video} variant="dark" />}
+          renderItem={(video) => (
+            <VideoPlayer
+              video={video}
+              variant="dark"
+              from={`/healers/${slug}`}
+              fromTitle={healer.name}
+            />
+          )}
           itemWidthClass="w-[320px]"
         />
 
