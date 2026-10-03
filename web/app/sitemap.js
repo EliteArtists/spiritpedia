@@ -75,10 +75,13 @@ function entry(path, priority, changeFrequency, lastModified) {
 }
 
 export default async function sitemap() {
-  const [healers, subjects, books, publishers, offerings, freeResources] = await Promise.all([
+  const [healers, subjects, books, videos, publishers, offerings, freeResources] = await Promise.all([
     fetchAll('healers', 'healer_slug, created_at'),
     fetchAll('subjects', 'slug, created_at'),
     fetchAll('books', 'slug, created_at'),
+    // 2,269 rows, so this is the one that most needs fetchAll's paging: a plain
+    // select would return the first 1,000 and drop the rest without an error.
+    fetchAll('videos', 'slug, created_at'),
     fetchAll('publishers', 'slug, created_at'),
     // Offerings are filtered to the live window the shelves themselves use:
     // is_active, and either evergreen (no end_date) or not yet past it. An
@@ -119,6 +122,7 @@ export default async function sitemap() {
     // Catalogue pages. The rows behind them rarely change once written, so a
     // monthly hint spends crawl budget on the profiles and subjects instead.
     ...withSlug(books, 'slug').map((b) => entry(`/books/${b.slug}`, 0.7, 'monthly', b.created_at)),
+    ...withSlug(videos, 'slug').map((v) => entry(`/videos/${v.slug}`, 0.7, 'monthly', v.created_at)),
     ...withSlug(publishers, 'slug').map((p) =>
       entry(`/publishers/${p.slug}`, 0.7, 'monthly', p.created_at)
     ),
