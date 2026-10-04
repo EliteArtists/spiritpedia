@@ -11,6 +11,7 @@ import {
   MIXED_OFFSET_CEILING,
   NEW_LIMIT,
   PAGE_SIZE,
+  PILLAR_POOL,
   SHELF_LIMIT,
   VIDEO_PILLARS,
 } from '../utils/videoShelves.js';
@@ -50,6 +51,19 @@ import {
 // — the widest column — is exactly the thing we have already filtered on.
 const CARD_COLUMNS = 'id, title, slug, platform_url, healer_slug';
 
+// Thin a pillar's pool down to one shelf by taking every nth row rather than
+// the first twenty, so a shelf is not one creator's batch end to end. The step
+// is derived from what actually came back, so a short pool (a small pillar, or
+// a window that ran off the end) still yields as many cards as it can rather
+// than a third of a shelf.
+function stride(rows, size = SHELF_LIMIT) {
+  if (rows.length <= size) return rows;
+  const step = Math.floor(rows.length / size);
+  const out = [];
+  for (let i = 0; i < rows.length && out.length < size; i += step) out.push(rows[i]);
+  return out;
+}
+
 // How many filtered shelves show before the fold. `meditation` clears the
 // three-video threshold fifty-four times over, which is a very long page to
 // hand someone who only wanted to see who teaches it. The rest are one tap
@@ -85,19 +99,29 @@ export default function VideoShelves({
   const loadDefault = useCallback(async () => {
     const mixedOffset = Math.floor(Math.random() * MIXED_OFFSET_CEILING);
 
-    const queries = [
-      // Lead shelf — most recently ingested.
+    // `.overlaps` is the array-overlap operator (&&) — a video matches a pillar
+    // when it carries ANY slug in the group. The two passes below build their
+    // own query rather than sharing a half-built one: select() takes the count
+    // options, so a shared builder that had already called select() would need
+    // a second call, and the second does not replace the first — the count
+    // comes back undefined and every shelf silently falls back to offset 0,
+    // which is exactly the bug this function is fixing.
+    const pillarCount = (pillar) =>
+      supabase
+        .from('videos')
+        .select('id', { count: 'exact', head: true })
+        .overlaps('subject_slugs', pillar.slugs);
+
+    const pillarRows = (pillar) =>
+      supabase.from('videos').select('*').overlaps('subject_slugs', pillar.slugs);
+
+    // FIRST PASS — how big each pillar is. head:true returns the count and no
+    // rows, so five of these cost a header apiece. Issued alongside the two
+    // shelves that need no count, not before them.
+    const firstPass = await Promise.all([
+      // Lead shelf — most recently ingested. This one SHOULD be the newest;
+      // that is what it says it is.
       supabase.from('videos').select('*').order('id', { ascending: false }).limit(NEW_LIMIT),
-      // One per pillar. `.overlaps` is the array-overlap operator (&&), which
-      // is what matches a video tagged with ANY slug in the group.
-      ...VIDEO_PILLARS.map((pillar) =>
-        supabase
-          .from('videos')
-          .select('*')
-          .overlaps('subject_slugs', pillar.slugs)
-          .order('id', { ascending: false })
-          .limit(SHELF_LIMIT)
-      ),
       // Catch-all. A random window rather than a fixed one, so the row differs
       // between visits instead of being the same twenty forever.
       supabase
@@ -105,24 +129,46 @@ export default function VideoShelves({
         .select('*')
         .order('id', { ascending: true })
         .range(mixedOffset, mixedOffset + SHELF_LIMIT - 1),
-    ];
+      ...VIDEO_PILLARS.map(pillarCount),
+    ]);
 
-    const results = await Promise.all(queries);
-    const rows = results.map((r) => r.data || []);
+    const [newest, mixed, ...counts] = firstPass;
+
+    // SECOND PASS — twenty from somewhere inside each pillar. The offset is
+    // bounded by that pillar's own count so the window is always full, and a
+    // count that could not be read falls back to the top of the pillar rather
+    // than to an empty shelf.
+    const windows = await Promise.all(
+      VIDEO_PILLARS.map((pillar, i) => {
+        // A count that could not be read leaves offset 0 — the top of the
+        // pillar, a full shelf, and the old behaviour. Better a correct shelf
+        // than a clever empty one, but it is why the count query above is
+        // written out in full rather than chained onto a shared builder.
+        const total = counts[i]?.count ?? 0;
+        const span = Math.max(0, total - PILLAR_POOL);
+        const offset = span > 0 ? Math.floor(Math.random() * span) : 0;
+        return pillarRows(pillar)
+          // range() needs a deterministic order or the same offset returns
+          // different rows each call. id is unique; created_at is not — the
+          // bulk imports gave thousands of rows the same timestamp.
+          .order('id', { ascending: false })
+          .range(offset, offset + PILLAR_POOL - 1);
+      })
+    );
 
     return [
-      { key: 'new', title: 'New to Spiritpedia', subtitle: 'Just added', items: rows[0] },
+      { key: 'new', title: 'New to Spiritpedia', subtitle: 'Just added', items: newest.data || [] },
       ...VIDEO_PILLARS.map((pillar, i) => ({
         key: pillar.title,
         title: pillar.title,
         subtitle: 'Watch & Learn',
-        items: rows[i + 1],
+        items: stride(windows[i].data || []),
       })),
       {
         key: 'mixed',
         title: 'Watch & Learn',
         subtitle: 'A little of everything',
-        items: rows[rows.length - 1],
+        items: mixed.data || [],
       },
     ];
   }, []);

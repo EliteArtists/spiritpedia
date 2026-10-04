@@ -42,6 +42,37 @@ export const VIDEO_PILLARS = [
 export const NEW_LIMIT = 24;
 export const SHELF_LIMIT = 20;
 
+// WHY THE PILLAR SHELVES DO NOT LEAD WITH THE NEWEST.
+//
+// They used to: each one took the twenty most recent videos touching its
+// pillar. The filter was right and always had been — every row on the Emotional
+// Healing shelf genuinely carried shadow-work or conscious-relationships — but
+// four of the five shelves still opened with the same astrology batch, because
+// that batch was the newest in the table and its videos carry a second tag that
+// lands in a different pillar each time:
+//
+//   'Mars-Saturn Conjunction Transit Stories'    astrology + consciousness + shadow-work
+//   'Venus-Jupiter Conjunction Transit Stories'  astrology + conscious-relationships + soul-purpose
+//   'Roland Orzabal on Astrology, Fate, Tears'   astrology + soul-purpose + spirituality
+//
+// So "newest in this pillar" meant "newest in the table" five times over. The
+// shelves were never identical — three to five rows in twenty — but they read
+// as one batch, which is the complaint.
+//
+// A random window fixes it at the root and gives the shelves a different face
+// each visit, the way the catch-all row already works. The offset is taken
+// against each pillar's own count so the whole pillar is reachable, not just
+// its recent end.
+//
+// The window is three times the shelf, read and then strided — every third row
+// — rather than twenty consecutive ones. Ids are sequential within an ingest,
+// and an ingest is one creator's back catalogue, so twenty in a row is twenty
+// videos by the same person: the first pass at this produced a Consciousness
+// shelf of twenty Tyler Henry readings and an Emotional Healing shelf of twenty
+// Yoga With Kassandra classes. Correct, on-subject, and monotonous. A stride of
+// three spans roughly three batches for the same twenty cards.
+export const PILLAR_POOL = SHELF_LIMIT * 3;
+
 // "Watch & Learn" is meant to be a different row each visit rather than the
 // same twenty forever. The offset is bounded well inside the table's 2,269 rows
 // so the window is always populated — no count query, and no empty shelf if the
