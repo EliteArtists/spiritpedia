@@ -1,7 +1,10 @@
 'use client';
 
-import { useCallback, useEffect, useState } from 'react';
+import { useCallback, useEffect, useMemo, useState } from 'react';
 import Link from 'next/link';
+import { useRouter } from 'next/navigation';
+import { supabase } from '@/utils/supabase.js';
+import ConfirmDelete from './ConfirmDelete.jsx';
 import { StatusPill } from './QueueTable.jsx';
 import { deriveStatus, hasVisibleStatus, timeAgo } from './queue.js';
 import { Placeholder } from './AdminPlaceholders.jsx';
@@ -25,6 +28,20 @@ function formatDate(value) {
     hour: '2-digit',
     minute: '2-digit',
   });
+}
+
+const inputClass =
+  'w-full rounded-lg border border-white/10 bg-[#0a0f1d] px-3 py-2 text-sm text-white placeholder:text-slate-600 focus:border-[#7c3aed] focus:outline-none';
+
+const labelClass = 'text-[10px] font-bold uppercase tracking-wider text-slate-500';
+
+function LabelledField({ label, children }) {
+  return (
+    <label className="block">
+      <span className={labelClass}>{label}</span>
+      <span className="mt-1 block">{children}</span>
+    </label>
+  );
 }
 
 function Field({ label, value, href }) {
@@ -252,14 +269,233 @@ function NotesTab({ personId }) {
   );
 }
 
+/* ── PROFILE TAB ───────────────────────────────────────────────────────── */
+
+// The fields an admin may correct on somebody's behalf. Kept in step with
+// PROFILE_COLUMNS in app/api/admin/person/route.js, which is the allowlist that
+// actually enforces it — this list only decides what gets a box drawn round it.
+const TEXT_FIELDS = [
+  ['full_name', 'Name'],
+  ['modality', 'Modality'],
+  ['location_city', 'City'],
+  ['location_country', 'Country'],
+  ['website_url', 'Website'],
+  ['booking_url', 'Booking URL'],
+  ['youtube_url', 'YouTube'],
+  ['instagram_url', 'Instagram'],
+  ['facebook_url', 'Facebook'],
+  ['tiktok_url', 'TikTok'],
+  ['twitter_url', 'X / Twitter'],
+  ['availability_type', 'Availability'],
+];
+
+function ProfileTab({ profile, healer, onSaved }) {
+  const [draft, setDraft] = useState(profile);
+  const [subjects, setSubjects] = useState([]);
+  const [saving, setSaving] = useState(false);
+  const [toast, setToast] = useState(null);
+
+  // Reset whenever the record behind this reloads, so a save elsewhere on the
+  // page does not leave a stale draft on screen.
+  useEffect(() => {
+    setDraft(profile);
+  }, [profile]);
+
+  useEffect(() => {
+    let cancelled = false;
+    (async () => {
+      const { data } = await supabase.from('subjects').select('slug, name').order('name');
+      if (!cancelled) setSubjects(data || []);
+    })();
+    return () => {
+      cancelled = true;
+    };
+  }, []);
+
+  const changes = useMemo(() => {
+    const out = {};
+    for (const [key] of TEXT_FIELDS) {
+      if ((profile[key] ?? null) !== (draft[key] ?? null)) out[key] = draft[key] ?? null;
+    }
+    if ((profile.bio ?? null) !== (draft.bio ?? null)) out.bio = draft.bio ?? null;
+    if ((profile.user_type ?? null) !== (draft.user_type ?? null)) out.user_type = draft.user_type;
+    if (
+      JSON.stringify(profile.subject_slugs || []) !== JSON.stringify(draft.subject_slugs || [])
+    ) {
+      out.subject_slugs = draft.subject_slugs || [];
+    }
+    return out;
+  }, [profile, draft]);
+
+  const dirty = Object.keys(changes).length > 0;
+  const set = (key, value) => setDraft((prev) => ({ ...prev, [key]: value }));
+
+  const toggleSubject = (slug) => {
+    const current = draft.subject_slugs || [];
+    set(
+      'subject_slugs',
+      current.includes(slug) ? current.filter((s) => s !== slug) : [...current, slug]
+    );
+  };
+
+  const save = async () => {
+    if (!dirty || saving) return;
+    setSaving(true);
+    setToast(null);
+    try {
+      const res = await fetch('/api/admin/person', {
+        method: 'PATCH',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ id: profile.id, profile: changes }),
+      });
+      const json = await res.json();
+      if (!res.ok || json.error) {
+        setToast({ type: 'error', message: json.message || json.error || `Save failed (${res.status})` });
+      } else {
+        const n = Object.keys(changes).length;
+        setToast({ type: 'success', message: `Saved. ${n} field${n === 1 ? '' : 's'} updated.` });
+        await onSaved?.();
+      }
+    } catch (err) {
+      setToast({ type: 'error', message: err.message });
+    }
+    setSaving(false);
+  };
+
+  return (
+    <>
+      <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+        {TEXT_FIELDS.map(([key, label]) => (
+          <LabelledField key={key} label={label}>
+            <input
+              type="text"
+              value={draft[key] ?? ''}
+              onChange={(e) => set(key, e.target.value === '' ? null : e.target.value)}
+              className={inputClass}
+            />
+          </LabelledField>
+        ))}
+
+        <LabelledField label="Account type">
+          <select
+            value={draft.user_type || 'explorer'}
+            onChange={(e) => set('user_type', e.target.value)}
+            className={inputClass}
+          >
+            <option value="practitioner">Practitioner</option>
+            <option value="explorer">Explorer</option>
+          </select>
+        </LabelledField>
+
+        <Field label="Entity type" value={healer?.entity_type} />
+
+        <div className="sm:col-span-2">
+          <LabelledField label="Bio">
+            <textarea
+              rows={6}
+              value={draft.bio ?? ''}
+              onChange={(e) => set('bio', e.target.value === '' ? null : e.target.value)}
+              className={`${inputClass} resize-y leading-relaxed`}
+            />
+          </LabelledField>
+        </div>
+
+        <div className="sm:col-span-2">
+          <p className={labelClass}>Subjects · {(draft.subject_slugs || []).length}</p>
+          <div className="mt-2 flex flex-wrap gap-1.5">
+            {subjects.map((s) => {
+              const on = (draft.subject_slugs || []).includes(s.slug);
+              return (
+                <button
+                  key={s.slug}
+                  type="button"
+                  onClick={() => toggleSubject(s.slug)}
+                  aria-pressed={on}
+                  className={`rounded-full border px-2.5 py-1 text-[11px] font-semibold transition-colors ${
+                    on
+                      ? 'border-[#7c3aed] bg-[#7c3aed]/20 text-white'
+                      : 'border-slate-700 text-slate-400 hover:border-slate-500 hover:text-white'
+                  }`}
+                >
+                  {s.slug}
+                </button>
+              );
+            })}
+          </div>
+        </div>
+
+        {/* READ-ONLY, each for its own reason.
+            Email is not a column on user_profiles at all — it lives on
+            auth.users, and changing it changes the identity every magic code is
+            sent to. TODO: a deliberate "change sign-in email" action, with
+            confirmation, not a text box among the others.
+            The claim is set only by claim_healer_profile(), which re-checks the
+            person's email against the healer row; a box here would be a way
+            round that check, so the API refuses the column outright.
+            Status keeps the dedicated control above — it is the one field with
+            a trigger pinned against every caller but the service role. */}
+        <div className="sm:col-span-2">
+          <dl className="grid grid-cols-1 gap-4 border-t border-white/10 pt-4 sm:grid-cols-3">
+            <Field label="Email (sign-in identity)" value={profile.email} />
+            <Field
+              label="Linked healer (claim)"
+              value={profile.linked_healer_slug}
+              href={profile.linked_healer_slug ? `/healers/${profile.linked_healer_slug}` : undefined}
+            />
+            <Field label="Verification status" value={profile.verification_status} />
+          </dl>
+        </div>
+      </div>
+
+      <div className="mt-5 flex flex-wrap items-center gap-3 border-t border-white/10 pt-5">
+        <button
+          type="button"
+          onClick={save}
+          disabled={!dirty || saving}
+          className="rounded-full bg-[#7c3aed] px-5 py-2 text-xs font-bold text-white transition-colors hover:bg-[#6d28d9] disabled:cursor-not-allowed disabled:opacity-40"
+        >
+          {saving ? 'Saving…' : 'Save changes'}
+        </button>
+        <button
+          type="button"
+          onClick={() => {
+            setDraft(profile);
+            setToast(null);
+          }}
+          disabled={!dirty || saving}
+          className="rounded-full border border-white/15 px-4 py-2 text-xs font-bold text-slate-300 transition-colors hover:bg-white/5 hover:text-white disabled:cursor-not-allowed disabled:opacity-40"
+        >
+          Discard
+        </button>
+        <span className="text-xs text-slate-500">
+          {dirty
+            ? `${Object.keys(changes).length} unsaved change${Object.keys(changes).length === 1 ? '' : 's'}`
+            : 'No changes'}
+        </span>
+        {toast && (
+          <span className={`text-xs ${toast.type === 'success' ? 'text-emerald-400' : 'text-red-400'}`}>
+            {toast.message}
+          </span>
+        )}
+      </div>
+    </>
+  );
+}
+
 /* ── THE RECORD ────────────────────────────────────────────────────────── */
 
 export default function PersonRecord({ personId, onBack, backLabel, onChanged }) {
+  const router = useRouter();
   const [data, setData] = useState(null);
   const [tab, setTab] = useState('Profile');
   const [status, setStatus] = useState('');
   const [savingStatus, setSavingStatus] = useState(false);
   const [toast, setToast] = useState(null);
+
+  const [confirmingDelete, setConfirmingDelete] = useState(false);
+  const [deleting, setDeleting] = useState(false);
+  const [deleteError, setDeleteError] = useState(null);
+  const [deleted, setDeleted] = useState(null);
 
   const load = useCallback(async () => {
     const res = await fetch(`/api/admin/person?id=${encodeURIComponent(personId)}`, { cache: 'no-store' });
@@ -289,7 +525,6 @@ export default function PersonRecord({ personId, onBack, backLabel, onChanged })
   const healer = data.healer;
   const practitioner = p.user_type === 'practitioner';
   const initial = ((p.full_name || p.email || '?').trim()[0] || '?').toUpperCase();
-  const place = [p.location_city, p.location_country].filter(Boolean).join(', ');
 
   // "Unnamed account" was accurate and useless — most explorers never give a
   // name, so the whole list read the same. The email's local part is what the
@@ -324,6 +559,40 @@ export default function PersonRecord({ personId, onBack, backLabel, onChanged })
       setToast({ type: 'error', message: err.message });
     }
     setSavingStatus(false);
+  };
+
+  const confirmDelete = async () => {
+    if (deleting) return;
+    setDeleting(true);
+    setDeleteError(null);
+    try {
+      const res = await fetch('/api/admin/person', {
+        method: 'DELETE',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ id: personId }),
+      });
+      const json = await res.json();
+      if (!res.ok || json.error) {
+        // Left open on purpose. A modal that closes on failure is
+        // indistinguishable from one that closed on success.
+        setDeleteError(json.message || json.error || `Delete failed (${res.status})`);
+        setDeleting(false);
+        return;
+      }
+
+      setDeleted(
+        json.orphaned_healer_slug
+          ? `Account deleted. The healer listing "${json.orphaned_healer_slug}" is now unclaimed.`
+          : 'Account deleted.'
+      );
+      // Refresh the dashboard payload so the list this returns to no longer
+      // carries the row, then go back to it.
+      await onChanged?.();
+      setTimeout(() => router.push('/admin/people'), 900);
+    } catch (err) {
+      setDeleteError(err.message);
+      setDeleting(false);
+    }
   };
 
   const visibleTabs = practitioner ? TABS : TABS.filter((t) => t !== 'Profile' && t !== 'Content');
@@ -443,10 +712,16 @@ export default function PersonRecord({ personId, onBack, backLabel, onChanged })
           >
             Message
           </button>
+          {/* Wired now that there IS a confirmation step. Kept visually apart
+              from the primary action: a red outline, at the end of the row. */}
           <button
             type="button"
-            title="Deleting an account removes their profile, saved library and notes and cannot be undone — needs a confirmation step before it is wired"
-            className="cursor-not-allowed rounded-full border border-red-500/20 px-4 py-2 text-xs font-bold text-red-500/40"
+            onClick={() => {
+              setDeleteError(null);
+              setDeleted(null);
+              setConfirmingDelete(true);
+            }}
+            className="rounded-full border border-red-500/40 px-4 py-2 text-xs font-bold text-red-400 transition-colors hover:bg-red-500/10 hover:text-red-300"
           >
             Delete account
           </button>
@@ -480,55 +755,40 @@ export default function PersonRecord({ personId, onBack, backLabel, onChanged })
 
       <div className="mt-5">
         {tab === 'Profile' && practitioner && (
-          <dl className="grid grid-cols-1 gap-4 sm:grid-cols-2">
-            <Field label="Modality" value={p.modality} />
-            <Field label="Location" value={place} />
-            <Field label="Website" value={p.website_url} href={p.website_url} />
-            <Field label="Booking" value={p.booking_url} href={p.booking_url} />
-            <Field label="Availability" value={p.availability_type} />
-            <Field label="Entity type" value={healer?.entity_type} />
-            <Field
-              label="Linked healer"
-              value={p.linked_healer_slug}
-              href={p.linked_healer_slug ? `/healers/${p.linked_healer_slug}` : undefined}
-            />
-            <Field label="YouTube" value={p.youtube_url} href={p.youtube_url} />
-            <Field label="Instagram" value={p.instagram_url} href={p.instagram_url} />
-            <Field label="Facebook" value={p.facebook_url} href={p.facebook_url} />
-            <Field label="TikTok" value={p.tiktok_url} href={p.tiktok_url} />
-            <Field label="X" value={p.twitter_url} href={p.twitter_url} />
-            {p.bio && (
-              <div className="sm:col-span-2">
-                <dt className="text-[10px] font-bold uppercase tracking-wider text-slate-500">Bio</dt>
-                <dd className="mt-1 max-h-48 overflow-y-auto whitespace-pre-line text-sm leading-relaxed text-slate-300">
-                  {p.bio}
-                </dd>
-              </div>
-            )}
-            {Array.isArray(p.subject_slugs) && p.subject_slugs.length > 0 && (
-              <div className="sm:col-span-2">
-                <dt className="text-[10px] font-bold uppercase tracking-wider text-slate-500">
-                  Subjects
-                </dt>
-                <dd className="mt-2 flex flex-wrap gap-1.5">
-                  {p.subject_slugs.map((slug) => (
-                    <span
-                      key={slug}
-                      className="rounded-full border border-slate-700 px-2.5 py-0.5 text-[10px] font-semibold text-slate-400"
-                    >
-                      {slug}
-                    </span>
-                  ))}
-                </dd>
-              </div>
-            )}
-          </dl>
+          <ProfileTab
+            profile={p}
+            healer={healer}
+            onSaved={async () => {
+              await load();
+              onChanged?.();
+            }}
+          />
         )}
 
         {tab === 'Content' && practitioner && <ContentTab healer={healer} content={data.content} />}
         {tab === 'Admin Notes' && <NotesTab personId={personId} />}
         {tab === 'Activity' && <Placeholder icon="◷" title="Activity log coming soon" />}
       </div>
+
+      <ConfirmDelete
+        open={confirmingDelete}
+        title={`Delete ${displayName}?`}
+        body="This will permanently remove their account and cannot be undone."
+        consequences={[
+          'Their profile and everything they saved to My Library',
+          'Every internal admin note written about them',
+          'Their sign-in identity — the email can register again from scratch',
+          ...(p.linked_healer_slug
+            ? [`Their public healer listing "${p.linked_healer_slug}" is NOT deleted; it becomes unclaimed`]
+            : []),
+        ]}
+        confirmLabel="Delete account"
+        busy={deleting}
+        error={deleteError}
+        done={deleted}
+        onCancel={() => setConfirmingDelete(false)}
+        onConfirm={confirmDelete}
+      />
     </>
   );
 }
