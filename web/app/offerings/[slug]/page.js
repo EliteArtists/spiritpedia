@@ -5,7 +5,7 @@ import BackButton from '@/components/BackButton';
 import { backContextQuery } from '@/utils/backContext';
 import ShareButton from '@/components/ShareButton';
 import { buildMetadata, notFoundMetadata, pickImage, SITE_URL } from '@/utils/seo';
-import ReviewPlaceholder, { RatingRow } from '@/components/ReviewPlaceholder';
+import ReviewSection, { RatingRow } from '@/components/ReviewSection';
 
 // Hourly ceiling on staleness — see the note in app/page.js.
 export const revalidate = 3600;
@@ -105,7 +105,11 @@ export default async function OfferingDetail({ params, searchParams }) {
         )}
 
         {/* Star rating row — empty until community reviews exist */}
-        <RatingRow className="mt-6" />
+        <RatingRow
+          className="mt-6"
+          contentType="course"
+          contentSlug={offering.slug}
+        />
       </header>
 
       {/* Body — image + subjects on the left, description + CTA on the right */}
@@ -162,7 +166,7 @@ export default async function OfferingDetail({ params, searchParams }) {
       </div>
 
       {/* Community reviews — empty state placeholder */}
-      <ReviewPlaceholder />
+      <ReviewSection contentType="course" contentSlug={offering.slug} />
     </main>
   );
 }

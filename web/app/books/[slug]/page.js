@@ -7,7 +7,7 @@ import WantToReadButton from '@/components/WantToReadButton';
 import { backContextQuery } from '@/utils/backContext';
 import ShareButton from '@/components/ShareButton';
 import { buildMetadata, notFoundMetadata, pickImage, SITE_URL } from '@/utils/seo';
-import ReviewPlaceholder, { RatingRow } from '@/components/ReviewPlaceholder';
+import ReviewSection, { RatingRow } from '@/components/ReviewSection';
 
 // Hourly ceiling on staleness — see the note in app/page.js.
 export const revalidate = 3600;
@@ -116,7 +116,11 @@ export default async function BookDetail({ params, searchParams }) {
           )}
 
           {/* Star rating row — empty until community reviews exist */}
-          <RatingRow className="mb-6" />
+          <RatingRow
+          className="mb-6"
+          contentType="book"
+          contentSlug={book.slug}
+        />
 
           {book.description && (
             <p className="text-base leading-relaxed text-gray-300 whitespace-pre-line mb-8">
@@ -164,7 +168,7 @@ export default async function BookDetail({ params, searchParams }) {
       </div>
 
       {/* Community reviews — empty state placeholder */}
-      <ReviewPlaceholder />
+      <ReviewSection contentType="book" contentSlug={book.slug} />
     </main>
   );
 }

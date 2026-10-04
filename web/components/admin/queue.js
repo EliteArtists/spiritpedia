@@ -41,6 +41,13 @@ export const QUEUE_TYPES = {
     live: false,
     chip: 'border-amber-500/40 bg-amber-500/10 text-amber-300',
   },
+  review: {
+    key: 'review',
+    label: 'Review',
+    icon: '📝',
+    live: true,
+    chip: 'border-amber-500/40 bg-amber-500/10 text-amber-300',
+  },
 };
 
 export const STATUS_STYLES = {
@@ -113,7 +120,10 @@ const TIER_WORDS = {
 // Build the queue from everything currently readable. Sources with no table yet
 // contribute nothing — the chips for those say "soon" rather than "0", because
 // zero is a measurement and these have not been measured.
-export function buildQueue(profiles) {
+//
+// `reviews` is optional and defaults to none, so a caller that has not been
+// taught about them yet still gets a queue rather than an exception.
+export function buildQueue(profiles, reviews = []) {
   if (!Array.isArray(profiles)) return [];
   const items = [];
 
@@ -161,6 +171,32 @@ export function buildQueue(profiles) {
         profile,
       });
     }
+  }
+
+  // A pending review is the one queue item that is not about a person.
+  //
+  // It carries `href` instead of a `profile`, and that single field is what
+  // keeps it out of the three-pane reviewer: QueueTable sends a row with an
+  // href straight to that page rather than opening it in place. Without it the
+  // reviewer would fall through to its claim branch, read `item.profile.email`
+  // off an object that has none, and link to /healers/undefined.
+  //
+  // Moderating a review is a two-second judgement on a body of text, which is
+  // what the Reviews tab is for. The Inbox's job here is to say one is waiting.
+  for (const review of Array.isArray(reviews) ? reviews : []) {
+    items.push({
+      id: `review:${review.id}`,
+      type: 'review',
+      at: review.created_at,
+      // author_name is supplied by the reviewer and may be blank. The same
+      // fallback the public review card uses, so one person reads the same way
+      // in both places.
+      person: review.author_name || 'A Spiritpedia member',
+      title: `${review.rating}-star review`,
+      detail: `${review.content_type} · ${review.content_slug}`,
+      status: 'pending',
+      href: '/admin/reviews',
+    });
   }
 
   // Newest first. created_at can tie across a bulk import, so id breaks the tie

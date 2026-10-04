@@ -17,13 +17,14 @@ const FILTERS = [
   { key: 'all', label: 'All' },
   { key: 'application', label: 'Applications' },
   { key: 'claim', label: 'Claims' },
+  { key: 'review', label: 'Reviews' },
   { key: 'message', label: 'Messages' },
   { key: 'flag', label: 'Flags' },
   { key: 'content', label: 'Content' },
 ];
 
 export default function AdminInboxPage() {
-  const { profiles, loading, reload, accountsAvailable, error } = useAdminData();
+  const { profiles, pendingReviews, loading, reload, accountsAvailable, error } = useAdminData();
   const [filter, setFilter] = useState('all');
   const [selectedId, setSelectedId] = useState(null);
   const [busy, setBusy] = useState(false);
@@ -47,7 +48,7 @@ export default function AdminInboxPage() {
     reload();
   }, [reload]);
 
-  const queue = useMemo(() => buildQueue(profiles), [profiles]);
+  const queue = useMemo(() => buildQueue(profiles, pendingReviews), [profiles, pendingReviews]);
   const visible = useMemo(
     () => (filter === 'all' ? queue : queue.filter((i) => i.type === filter)),
     [queue, filter]
@@ -199,7 +200,11 @@ export default function AdminInboxPage() {
           busy={busy}
         />
       ) : visible.length === 0 ? (
-        <Placeholder icon="✓" title="Nothing in the queue" body="New applications and claims appear here." />
+        <Placeholder
+          icon="✓"
+          title="Nothing in the queue"
+          body="New applications, claims and reviews appear here."
+        />
       ) : (
         <QueueTable items={visible} onOpen={(item) => setSelectedId(item.id)} selectedId={selectedId} />
       )}

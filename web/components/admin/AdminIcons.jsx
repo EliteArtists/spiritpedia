@@ -46,6 +46,11 @@ export const Icons = {
       <circle cx="12" cy="12" r="3" />
     </svg>
   ),
+  reviews: (p) => (
+    <svg {...base} {...p}>
+      <path d="M12 3l2.7 5.5 6 .9-4.35 4.2 1.03 6-5.38-2.83L6.62 19.6l1.03-6L3.3 9.4l6-.9L12 3z" />
+    </svg>
+  ),
   flags: (p) => (
     <svg {...base} {...p}>
       <path d="M5 21V4M5 4h11l-2 4 2 4H5" />

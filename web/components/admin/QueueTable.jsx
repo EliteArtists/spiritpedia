@@ -1,6 +1,7 @@
 'use client';
 
 import { QUEUE_TYPES, STATUS_STYLES, timeAgo } from './queue.js';
+import Link from 'next/link';
 
 function TypeChip({ type }) {
   const meta = QUEUE_TYPES[type] || QUEUE_TYPES.application;
@@ -62,13 +63,26 @@ export default function QueueTable({ items, onOpen, selectedId }) {
               <StatusPill status={item.status} />
             </span>
             <span className="flex items-center justify-start gap-1 md:justify-end">
-              <button
-                type="button"
-                onClick={() => onOpen(item)}
-                className="rounded-full bg-white/10 px-4 py-1.5 text-xs font-bold text-white transition-colors hover:bg-white/20"
-              >
-                Open
-              </button>
+              {/* A row that names its own destination goes there. The
+                  three-pane reviewer only knows how to render the sources that
+                  hang off a profile, so anything else says where it belongs and
+                  is sent rather than opened. */}
+              {item.href ? (
+                <Link
+                  href={item.href}
+                  className="rounded-full bg-white/10 px-4 py-1.5 text-xs font-bold text-white transition-colors hover:bg-white/20"
+                >
+                  Open
+                </Link>
+              ) : (
+                <button
+                  type="button"
+                  onClick={() => onOpen(item)}
+                  className="rounded-full bg-white/10 px-4 py-1.5 text-xs font-bold text-white transition-colors hover:bg-white/20"
+                >
+                  Open
+                </button>
+              )}
               {/* The kebab has nothing behind it until there are bulk and
                   per-item actions to put there. Disabled rather than omitted so
                   the row matches the design, and titled so it explains itself. */}

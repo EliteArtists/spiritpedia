@@ -23,6 +23,10 @@ export function AdminDataProvider({ children }) {
     // null (not []) means "could not be read" — the sections render a reason
     // rather than an empty list, which would read as "nobody has signed up".
     profiles: null,
+    // [] rather than null: an unreadable queue is already signalled by
+    // `profiles` being null, and a second null would make every consumer check
+    // twice for the same outage.
+    pendingReviews: [],
     counts: {},
     error: null,
   });
@@ -48,6 +52,7 @@ export function AdminDataProvider({ children }) {
       return {
         loading: false,
         profiles: json.profiles ?? null,
+        pendingReviews: json.pendingReviews || [],
         counts: json.counts || {},
         error: json.error || null,
       };
@@ -55,6 +60,7 @@ export function AdminDataProvider({ children }) {
       return {
         loading: false,
         profiles: null,
+        pendingReviews: [],
         counts: {},
         error: err?.name === 'AbortError' ? 'unreachable' : err.message,
       };
@@ -86,9 +92,24 @@ export function AdminDataProvider({ children }) {
     : 0;
   const claims = accountsAvailable ? state.profiles.filter((p) => p.linked_healer_slug).length : 0;
 
+  // WHAT THE BADGE MEANS. It used to count practitioner applications, which was
+  // accurate and too narrow: a review sitting unmoderated is a thing waiting on
+  // the admin just as much. The number is now everything that needs a decision,
+  // which is what a badge on an inbox is read as.
+  const pendingReviewCount = state.pendingReviews?.length || 0;
+  const pendingActions = pendingApplications + pendingReviewCount;
+
   return (
     <AdminDataContext.Provider
-      value={{ ...state, reload, accountsAvailable, pendingApplications, claims }}
+      value={{
+        ...state,
+        reload,
+        accountsAvailable,
+        pendingApplications,
+        pendingReviewCount,
+        pendingActions,
+        claims,
+      }}
     >
       {children}
     </AdminDataContext.Provider>

@@ -17,6 +17,7 @@ const NAV = [
   { href: '/admin/content', label: 'Content', icon: 'content' },
   { href: '/admin/messages', label: 'Messages', icon: 'messages' },
   { href: '/admin/claims', label: 'Claims', icon: 'claims' },
+  { href: '/admin/reviews', label: 'Reviews', icon: 'reviews' },
   { href: '/admin/flags', label: 'Flags', icon: 'flags' },
   { href: '/admin/mailshots', label: 'Mailshots', icon: 'mailshots' },
   { href: '/admin/analytics', label: 'Analytics', icon: 'analytics' },
@@ -61,7 +62,7 @@ function NavItem({ item, pathname, badgeCount }) {
 }
 
 function Sidebar({ pathname }) {
-  const { pendingApplications } = useAdminData();
+  const { pendingActions } = useAdminData();
 
   return (
     <aside className="fixed inset-y-0 left-0 z-40 flex w-16 flex-col border-r border-white/10 bg-[#111827] md:w-60">
@@ -88,7 +89,7 @@ function Sidebar({ pathname }) {
             key={item.href}
             item={item}
             pathname={pathname}
-            badgeCount={item.badge === 'inbox' ? pendingApplications : 0}
+            badgeCount={item.badge === 'inbox' ? pendingActions : 0}
           />
         ))}
 
@@ -118,15 +119,18 @@ function Sidebar({ pathname }) {
 }
 
 function TopBar({ adminName }) {
-  const { pendingApplications, loading, accountsAvailable } = useAdminData();
+  const { pendingActions, loading, accountsAvailable } = useAdminData();
   const initial = (adminName || 'A').trim().charAt(0).toUpperCase();
 
-  // Phase 1 counts only what exists. Messages, flags and content submissions
-  // have no tables yet, so a larger number here would be invented.
+  // Counts only what exists. Messages, flags and content submissions have no
+  // tables yet, so a larger number here would be invented.
+  //
+  // The same number as the sidebar badge, on purpose: two counts under one
+  // heading of "attention" that disagreed would be read as a fault in one.
   // null means "do not know" — while loading, and when the queue could not be
   // read at all. Saying "Nothing needs your attention" in either case would be
   // reassurance we have not earned.
-  const needsAttention = loading || !accountsAvailable ? null : pendingApplications;
+  const needsAttention = loading || !accountsAvailable ? null : pendingActions;
 
   return (
     <header className="fixed inset-x-0 top-0 z-30 border-b border-white/10 bg-[#0a0f1d]/90 pl-16 backdrop-blur-md md:pl-60">
@@ -165,16 +169,16 @@ function TopBar({ adminName }) {
           <button
             type="button"
             title="Notifications — coming soon"
-            aria-label={`Notifications: ${pendingApplications} unread`}
+            aria-label={`Notifications: ${pendingActions} unread`}
             className="relative flex h-10 w-10 cursor-not-allowed items-center justify-center rounded-full border border-white/10 text-slate-500"
           >
             <Icons.bell className="h-5 w-5" />
             <span
               className={`absolute -right-1 -top-1 flex h-5 min-w-5 items-center justify-center rounded-full px-1 text-[10px] font-bold tabular-nums ${
-                pendingApplications > 0 ? 'bg-[#7c3aed] text-white' : 'bg-slate-800 text-slate-500'
+                pendingActions > 0 ? 'bg-[#7c3aed] text-white' : 'bg-slate-800 text-slate-500'
               }`}
             >
-              {pendingApplications}
+              {pendingActions}
             </span>
           </button>
 

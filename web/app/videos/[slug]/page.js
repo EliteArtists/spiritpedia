@@ -5,7 +5,7 @@ import BackButton from '@/components/BackButton';
 import { backContextQuery } from '@/utils/backContext';
 import ShareButton from '@/components/ShareButton';
 import { buildMetadata, notFoundMetadata, SITE_URL } from '@/utils/seo';
-import ReviewPlaceholder, { RatingRow } from '@/components/ReviewPlaceholder';
+import ReviewSection, { RatingRow } from '@/components/ReviewSection';
 
 // Hourly ceiling on staleness — see the note in app/page.js.
 export const revalidate = 3600;
@@ -157,7 +157,11 @@ export default async function VideoDetail({ params, searchParams }) {
         )}
 
         {/* Star rating row — empty until community reviews exist */}
-        <RatingRow className="mt-6 mb-6" />
+        <RatingRow
+          className="mt-6 mb-6"
+          contentType="video"
+          contentSlug={video.slug}
+        />
 
         {/* Shelf actions — placeholders, matching the book page's un-wired
             buttons. Rendered as disabled rather than omitted so the shape of
@@ -198,7 +202,7 @@ export default async function VideoDetail({ params, searchParams }) {
       </div>
 
       {/* Community reviews — empty state placeholder */}
-      <ReviewPlaceholder />
+      <ReviewSection contentType="video" contentSlug={video.slug} />
     </main>
   );
 }

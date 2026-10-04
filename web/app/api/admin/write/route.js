@@ -25,6 +25,10 @@ const TABLES = new Set([
   'free_resources',
   'publishers',
   'publisher_healers',
+  // Moderation. The service role is the only thing that may set reviews.status
+  // — the table's trigger pins it against the author on both insert and
+  // update, so approving one cannot be done from the browser session.
+  'reviews',
 ]);
 
 const OPS = new Set(['insert', 'update', 'delete']);

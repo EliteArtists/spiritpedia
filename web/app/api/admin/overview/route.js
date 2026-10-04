@@ -36,7 +36,10 @@ export async function GET() {
   }
 
   if (!supabase) {
-    return NextResponse.json({ ...NOT_CONFIGURED, counts, profiles: null }, { status: 200 });
+    return NextResponse.json(
+      { ...NOT_CONFIGURED, counts, profiles: null, pendingReviews: [] },
+      { status: 200 }
+    );
   }
 
   const { data: profiles, error } = await supabase
@@ -47,6 +50,19 @@ export async function GET() {
   if (error) {
     return NextResponse.json({ error: 'query_failed', message: error.message, counts }, { status: 200 });
   }
+
+  // Reviews waiting on a moderator. Needs the service role for the same reason
+  // the profiles above do: the public policy on reviews is `status =
+  // 'approved'`, so the anonymous key cannot see a pending one at all — that is
+  // what moderation means here, not a filter the UI applies.
+  //
+  // Only the columns the queue row renders. The body is deliberately absent:
+  // the Inbox lists what is waiting, and reading it is the Reviews tab's job.
+  const { data: pendingReviews } = await supabase
+    .from('reviews')
+    .select('id, content_type, content_slug, rating, author_name, created_at')
+    .eq('status', 'pending')
+    .order('created_at', { ascending: false });
 
   // user_profiles has no email column — the address lives in auth.users, which
   // only the service role can read. One listUsers call and a lookup map is far
@@ -68,6 +84,11 @@ export async function GET() {
   ).length;
   counts.claims = withEmail.filter((p) => p.linked_healer_slug).length;
   counts.users_this_week = withEmail.filter((p) => p.created_at && p.created_at >= since).length;
+  counts.pending_reviews = (pendingReviews || []).length;
 
-  return NextResponse.json({ profiles: withEmail, counts });
+  return NextResponse.json({
+    profiles: withEmail,
+    pendingReviews: pendingReviews || [],
+    counts,
+  });
 }
