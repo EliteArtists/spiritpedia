@@ -94,3 +94,53 @@ export const FILTERED_SHELF_LIMIT = 12;
 // query pages rather than trusting a single response. The largest subject today
 // is `meditation` at 817 videos — under the cap, but only just.
 export const PAGE_SIZE = 1000;
+
+// ── "FOR YOU" ────────────────────────────────────────────────────────────
+//
+// Subject matching against what someone has already saved. Not a
+// recommendation engine, and the scoring is the whole of it.
+//
+// RANKING BY RAW COUNT DOES NOT WORK HERE, which is worth stating because it
+// is the obvious thing to try. Across the 1,092 healers and books people
+// actually save from, self-healing is on 50% of items, spirituality 43%,
+// consciousness 37%. Counting tags therefore measures what the catalogue is
+// tagged with, not what the person likes: six accounts with entirely different
+// libraries all came out with a top three inside the Consciousness pillar, and
+// two came out byte-identical. The shelf would have been a second Consciousness
+// row sitting above the first.
+//
+// Dividing by how common a slug is in the catalogue fixes it. The same six
+// accounts then produce conscious-science / energy-medicine / meditation,
+// soul-purpose / meditation / breathwork, ancient-wisdom / law-of-attraction /
+// meditation — distinct, and recognisably their own.
+//
+// Measured once, by hand, from healers + books. Not read at runtime: it would
+// be six count queries to re-derive numbers that move by a percentage point a
+// month. Worth re-measuring after any large ingest.
+export const GLOBAL_TAG_FREQUENCY = {
+  'self-healing': 0.5,
+  spirituality: 0.43,
+  consciousness: 0.37,
+  meditation: 0.27,
+  mindfulness: 0.24,
+  'spiritual-awakening': 0.24,
+};
+
+// For every other slug. Deliberately below the lowest measured value, so an
+// unlisted tag is treated as rarer than the six that needed naming and gets a
+// mild boost rather than a penalty.
+export const DEFAULT_TAG_FREQUENCY = 0.15;
+
+// A publishing house is tagged across half the taxonomy — Sounds True alone
+// carries six Consciousness-pillar slugs — so one tap on a publisher would
+// otherwise decide the whole ranking. Two slugs is enough to register that the
+// save happened without letting it speak for the person.
+export const PUBLISHER_SLUG_CAP = 2;
+
+// THE SIGNAL THRESHOLD. Three saves is a visitor looking around; the shelf
+// should not claim to know them. And breadth without depth — every slug
+// contributed by exactly one item — is noise, because a single broadly-tagged
+// healer can carry 28 slugs on its own.
+export const FOR_YOU_MIN_FAVOURITES = 4;
+export const FOR_YOU_TOP_SLUGS = 3;
+export const FOR_YOU_MIN_VIDEOS = 3;

@@ -5,13 +5,20 @@ import Link from 'next/link';
 import ContentShelf from './ContentShelf.js';
 import VideoPlayer from './VideoPlayer.js';
 import { supabase } from '../utils/supabase.js';
+import { getSession, supabaseAuth } from '../utils/supabaseAuth.js';
 import {
+  DEFAULT_TAG_FREQUENCY,
   FILTERED_MIN_VIDEOS,
   FILTERED_SHELF_LIMIT,
+  FOR_YOU_MIN_FAVOURITES,
+  FOR_YOU_MIN_VIDEOS,
+  FOR_YOU_TOP_SLUGS,
+  GLOBAL_TAG_FREQUENCY,
   MIXED_OFFSET_CEILING,
   NEW_LIMIT,
   PAGE_SIZE,
   PILLAR_POOL,
+  PUBLISHER_SLUG_CAP,
   SHELF_LIMIT,
   VIDEO_PILLARS,
 } from '../utils/videoShelves.js';
@@ -35,6 +42,30 @@ import {
 // One query per healer would be fifty-odd round trips for `meditation` alone;
 // one query for the subject and a Map is a single trip, and the rows are thin
 // (five columns, no images) so the saving is real either way.
+
+// WHICH CLIENT READS WHAT, because this file now uses both and they are not
+// interchangeable. The video pool goes through `supabase`, the anonymous
+// client: public tables, public data, shared with server components and holding
+// no session. Favourites go through `supabaseAuth`, the browser client that
+// does hold one — user_favourites is guarded by `auth.uid() = user_id`, so the
+// anonymous client reads zero rows from it and reports no error at all. Reading
+// favourites on the wrong client does not fail; it silently says "this person
+// has saved nothing", forever.
+
+// Where a saved item's subject slugs actually live. user_favourites records
+// only a content_type and a content_slug, and that slug is three different
+// shapes depending on the type — a text slug for healers and publishers, a
+// bigint for books and videos, a UUID for courses and free resources. (The
+// comment on the 0002 migration says courses and free resources are numeric.
+// They are not.)
+const FAVOURITE_SOURCES = {
+  healer: { table: 'healers', column: 'healer_slug', numeric: false },
+  publisher: { table: 'publishers', column: 'slug', numeric: false },
+  book: { table: 'books', column: 'id', numeric: true },
+  video: { table: 'videos', column: 'id', numeric: true },
+  course: { table: 'courses', column: 'id', numeric: false },
+  free_resource: { table: 'free_resources', column: 'id', numeric: false },
+};
 
 // TODO — "Most Watched on YouTube". Needs a view_count column on videos and a
 // scheduled job to refresh it from the YouTube Data API (videos.list takes 50
@@ -70,6 +101,119 @@ function stride(rows, size = SHELF_LIMIT) {
 // away and already in memory — revealing them costs no query.
 const FILTERED_VISIBLE_SHELVES = 15;
 
+// Build the "For You" shelf, or return null. Every failure path returns null:
+// an unreadable favourite, a missing session, a thin profile and an empty pool
+// all produce the same thing, which is no shelf and no explanation. A shelf
+// that apologises for itself is worse than one that is not there.
+async function loadForYou() {
+  const { data: session } = await getSession();
+  if (!session?.user?.id) return null;
+
+  const { data: favourites, error: favouritesError } = await supabaseAuth
+    .from('user_favourites')
+    .select('content_type, content_slug')
+    .eq('user_id', session.user.id);
+
+  if (favouritesError || !favourites || favourites.length < FOR_YOU_MIN_FAVOURITES) return null;
+
+  // Group by type so each source table is hit once, not once per favourite.
+  const byType = new Map();
+  for (const favourite of favourites) {
+    const list = byType.get(favourite.content_type);
+    if (list) list.push(favourite.content_slug);
+    else byType.set(favourite.content_type, [favourite.content_slug]);
+  }
+
+  // The ids of videos they have already saved, kept for the exclusion below.
+  const savedVideoIds = (byType.get('video') || [])
+    .map((value) => Number(value))
+    .filter((value) => Number.isFinite(value));
+
+  const lookups = [];
+  for (const [type, values] of byType) {
+    const source = FAVOURITE_SOURCES[type];
+    // An unknown content_type is skipped rather than guessed at, and an empty
+    // list never reaches .in() — PostgREST rejects `in.()` outright.
+    if (!source || values.length === 0) continue;
+
+    const keys = source.numeric
+      ? values.map((value) => Number(value)).filter((value) => Number.isFinite(value))
+      : values;
+    if (keys.length === 0) continue;
+
+    lookups.push(
+      supabase
+        .from(source.table)
+        .select(`${source.column}, subject_slugs`)
+        .in(source.column, keys)
+        .then(({ data, error }) => ({ type, rows: error ? [] : data || [] }))
+    );
+  }
+
+  const resolved = await Promise.all(lookups);
+
+  // How many of this person's saves carry each slug. One item contributes a
+  // slug once, however the item is tagged.
+  const saveCount = new Map();
+  for (const { type, rows } of resolved) {
+    for (const row of rows) {
+      const slugs = row.subject_slugs || [];
+      const contributed = type === 'publisher' ? slugs.slice(0, PUBLISHER_SLUG_CAP) : slugs;
+      for (const slug of contributed) saveCount.set(slug, (saveCount.get(slug) || 0) + 1);
+    }
+  }
+
+  if (saveCount.size === 0) return null;
+
+  // DEPTH, not breadth. One healer can be tagged with 28 subjects on its own,
+  // so a profile where nothing was saved twice says nothing about taste.
+  const hasDepth = [...saveCount.values()].some((count) => count > 1);
+  if (!hasDepth) return null;
+
+  const topSlugs = [...saveCount.entries()]
+    .map(([slug, count]) => ({
+      slug,
+      // Divided by how common the slug is across the catalogue — see the note
+      // in utils/videoShelves.js for why the raw count is the wrong measure.
+      score: count / (GLOBAL_TAG_FREQUENCY[slug] ?? DEFAULT_TAG_FREQUENCY),
+    }))
+    // Slug A-Z settles ties, so the same profile gives the same three rather
+    // than whatever order the Map happened to hold.
+    .sort((a, b) => b.score - a.score || a.slug.localeCompare(b.slug))
+    .slice(0, FOR_YOU_TOP_SLUGS)
+    .map((entry) => entry.slug);
+
+  if (topSlugs.length === 0) return null;
+
+  // The pool query — the anonymous client again, and the same count-then-window
+  // shape the pillar shelves use, so this row behaves like its neighbours.
+  const withFilters = (query) => {
+    const scoped = query.overlaps('subject_slugs', topSlugs);
+    return savedVideoIds.length > 0
+      ? scoped.not('id', 'in', `(${savedVideoIds.join(',')})`)
+      : scoped;
+  };
+
+  const { count, error: countError } = await withFilters(
+    supabase.from('videos').select('id', { count: 'exact', head: true })
+  );
+  if (countError) return null;
+
+  const span = Math.max(0, (count ?? 0) - PILLAR_POOL);
+  const offset = span > 0 ? Math.floor(Math.random() * span) : 0;
+
+  const { data, error } = await withFilters(supabase.from('videos').select('*'))
+    .order('id', { ascending: false })
+    .range(offset, offset + PILLAR_POOL - 1);
+
+  if (error) return null;
+
+  const items = stride(data || []);
+  if (items.length < FOR_YOU_MIN_VIDEOS) return null;
+
+  return { key: 'for-you', title: 'For You', subtitle: 'Based on what you have saved', items };
+}
+
 export default function VideoShelves({
   healerNames = [],
   subjectSlug = null,
@@ -79,6 +223,12 @@ export default function VideoShelves({
   const [shelves, setShelves] = useState(null);
   const [error, setError] = useState(null);
   const [showAll, setShowAll] = useState(false);
+
+  // Resolved separately from the seven below and prepended when it arrives, so
+  // the session check and up to six favourite lookups never hold up a shelf
+  // that does not depend on them. null means "no shelf" — not yet resolved and
+  // resolved to nothing look the same, deliberately: both render nothing.
+  const [forYou, setForYou] = useState(null);
 
   // slug -> name. Built once from the map the server component passes down, so
   // a card can show its healer without a query of its own.
@@ -94,6 +244,14 @@ export default function VideoShelves({
   // Today the subject pills are plain anchors, so changing the filter reloads
   // the document and this map starts empty again. It earns its keep the moment
   // those pills become client-side — and costs nothing until then.
+  //
+  // KNOWN LIMITATION: the key is the subject slug and nothing else, so a
+  // sign-in or sign-out while this component is mounted does not invalidate
+  // anything. The "For You" row is held in its own state rather than in here,
+  // so it is not stale — but it is also not recomputed, because its effect
+  // depends only on subjectSlug. Signing in mid-session therefore leaves the
+  // row absent until the next page load. Full page loads hide this today;
+  // subscribing to onAuthStateChange is the fix when they stop.
   const cache = useRef(new Map());
 
   const loadDefault = useCallback(async () => {
@@ -235,6 +393,31 @@ export default function VideoShelves({
       }));
   }, []);
 
+  // Default mode only. A subject filter is already an explicit statement of
+  // what someone wants, and answering it with a row based on something else
+  // would be arguing with them.
+  useEffect(() => {
+    if (subjectSlug) {
+      setForYou(null);
+      return undefined;
+    }
+
+    let cancelled = false;
+    loadForYou()
+      .then((shelf) => {
+        if (!cancelled) setForYou(shelf);
+      })
+      // Nothing here is worth an error state. If it could not be worked out,
+      // the shelf does not appear and the tab is exactly as it was.
+      .catch(() => {
+        if (!cancelled) setForYou(null);
+      });
+
+    return () => {
+      cancelled = true;
+    };
+  }, [subjectSlug]);
+
   useEffect(() => {
     const key = subjectSlug || '';
     const cached = cache.current.get(key);
@@ -310,9 +493,14 @@ export default function VideoShelves({
   const visible = capped ? shelves.slice(0, FILTERED_VISIBLE_SHELVES) : shelves;
   const hidden = shelves.length - visible.length;
 
+  // Prepended at render rather than mixed into the shelves array, so the cached
+  // seven stay exactly what loadDefault returned. forYou is null in filtered
+  // mode, so the cap arithmetic above never sees it.
+  const rendered = forYou ? [forYou, ...visible] : visible;
+
   return (
     <div className="grid grid-cols-1 gap-14 py-14">
-      {visible.map((shelf) => (
+      {rendered.map((shelf) => (
         <ContentShelf
           key={shelf.key}
           title={shelf.title}
