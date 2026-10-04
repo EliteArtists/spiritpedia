@@ -1,4 +1,4 @@
-import { resend } from './resend.js';
+import { getResend } from './resend.js';
 
 // SERVER ONLY, because utils/resend.js is. Importing this from a client
 // component would put the SDK in a public bundle and leave RESEND_API_KEY
@@ -54,7 +54,10 @@ export async function sendEmail({ to, subject, html, text }) {
   }
 
   try {
-    const { data, error } = await resend.emails.send({
+    // Constructed here, not at module load: the client must not exist until
+    // something actually sends, or `next build` evaluates this file without an
+    // environment and the constructor throws.
+    const { data, error } = await getResend().emails.send({
       from: FROM,
       replyTo: REPLY_TO,
       bcc: BCC,
