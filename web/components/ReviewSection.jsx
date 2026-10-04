@@ -217,6 +217,20 @@ function ReviewForm({ contentType, contentSlug, existing, profileName, onSaved }
     setSaving(false);
     forget(contentType, contentSlug);
     onSaved?.();
+
+    // "We have your review." Fire-and-forget on purpose: the confirmation on
+    // screen is already there, and nothing about a failed email is the
+    // reviewer's problem. The route takes the recipient from this session's own
+    // token, not from anything sent here.
+    const { data: sessionData } = await supabaseAuth.auth.getSession();
+    const token = sessionData?.session?.access_token;
+    if (token) {
+      fetch('/api/email/review-received', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${token}` },
+        body: JSON.stringify({ contentType, contentSlug }),
+      }).catch(() => {});
+    }
   };
 
   if (done) {

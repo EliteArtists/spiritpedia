@@ -56,6 +56,20 @@ export async function migrateFavourites(userId) {
   return { attempted: rows.length, saved: error ? 0 : rows.length, error: error || null };
 }
 
+// Ask the server to send a welcome. The API key is server-only, so the browser
+// can do no more than this — and each route identifies the recipient by the
+// caller's own access token rather than by anything sent in the body.
+async function sendWelcome(path) {
+  const { data } = await supabaseAuth.auth.getSession();
+  const token = data?.session?.access_token;
+  if (!token) return;
+
+  await fetch(path, {
+    method: 'POST',
+    headers: { Authorization: `Bearer ${token}` },
+  });
+}
+
 // Create the profile row if it is not already there.
 //
 // Written with the auth client, so RLS sees the new user as themselves. The
@@ -77,15 +91,38 @@ export async function ensureProfile(userId, userType) {
 
   const isPractitioner = userType === USER_TYPES.practitioner;
 
-  const { error } = await supabaseAuth.from('user_profiles').upsert(
-    {
-      id: userId,
-      user_type: isPractitioner ? USER_TYPES.practitioner : USER_TYPES.explorer,
-    },
-    { onConflict: 'id', ignoreDuplicates: true }
-  );
+  // .select() turns this into the only reliable "was the account created just
+  // now?" signal there is. ON CONFLICT DO NOTHING returns the row it inserted
+  // and nothing at all when it collided, so exactly one of the two racing
+  // callers sees a row back — which is precisely the one that should send the
+  // welcome. Without it, the welcome would go out on every single sign-in.
+  const { data: inserted, error } = await supabaseAuth
+    .from('user_profiles')
+    .upsert(
+      {
+        id: userId,
+        user_type: isPractitioner ? USER_TYPES.practitioner : USER_TYPES.explorer,
+      },
+      { onConflict: 'id', ignoreDuplicates: true }
+    )
+    .select('id');
 
   if (error) return { error };
+
+  const created = Array.isArray(inserted) && inserted.length > 0;
+
+  // The welcome, once, for a brand new account — the practitioner one or the
+  // explorer one, decided by the same answer that decided the row.
+  //
+  // Fired here rather than at either call site because this is the one place
+  // that knows the row is new, and because firing it twice from two racing
+  // callers would be two emails. Not awaited: a new member should never wait on
+  // an email, and the route reports nothing they could act on.
+  if (created) {
+    sendWelcome(
+      isPractitioner ? '/api/email/practitioner-welcome' : '/api/email/explorer-welcome'
+    ).catch(() => {});
+  }
 
   // UPGRADE AN EXISTING ROW, never downgrade one.
   //

@@ -14,10 +14,12 @@ import { supabase } from '@/utils/supabase';
 // so anon sees approved rows and nothing else, by design. Pending reviews come
 // from /api/admin/reviews, which holds the service role.
 //
-// Writes go through /api/admin/write. The table's trigger pins `status` against
-// every ordinary caller on both insert and update, so an author cannot approve
-// themselves; the service role is the one path that may set it, and that route
-// is where it lives.
+// Moderation goes through PATCH /api/admin/reviews, not the generic write
+// route: approving a review also emails the person who wrote it, and the
+// decision and the notice belong in one place. The service role is the one
+// thing that may set `status` — the table's trigger pins it against every
+// ordinary caller on both insert and update, so an author cannot approve
+// themselves.
 
 const TABS = [
   { key: 'pending', label: 'Pending' },
@@ -93,33 +95,25 @@ export default function AdminReviewsPage() {
     setBusyId(review.id);
     setToast(null);
     try {
-      const res = await fetch('/api/admin/write', {
-        method: 'POST',
+      const res = await fetch('/api/admin/reviews', {
+        method: 'PATCH',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          table: 'reviews',
-          op: 'update',
-          values: { status },
-          match: { id: review.id },
-          // The row comes back so the change can be CHECKED rather than
-          // assumed. A BEFORE UPDATE trigger that rewrites the column returns
-          // success and a 200 with nothing altered, and an admin pressing
-          // Approve would be told it worked every time while the review stayed
-          // in the queue. Ask what the row says now.
-          select: 'id, status',
-          single: true,
-        }),
+        body: JSON.stringify({ id: review.id, status }),
       });
       const json = await res.json();
       if (!res.ok || json.error) {
-        setToast({ type: 'error', message: json.error || `Failed (${res.status})` });
-      } else if (json.data && json.data.status !== status) {
-        setToast({
-          type: 'error',
-          message: `The database refused the change — the review is still ${json.data.status}. The reviews_pin_author trigger freezes status against every caller, including the service role; it needs the role exemption migration 0003 uses.`,
-        });
+        // The route re-reads the row and refuses to claim success for a write
+        // the database rewrote, so its message is the honest one.
+        setToast({ type: 'error', message: json.message || json.error || `Failed (${res.status})` });
       } else {
-        setToast({ type: 'success', message: `Review ${status}.` });
+        setToast({
+          type: 'success',
+          // Said plainly, because an email going out is a thing the admin has
+          // just caused and would otherwise have no way of knowing about.
+          message: json.notified
+            ? `Review ${status}. The reviewer has been emailed.`
+            : `Review ${status}.`,
+        });
         const { rows, error: reloadError } = await load();
         setReviews(rows);
         setError(reloadError);
