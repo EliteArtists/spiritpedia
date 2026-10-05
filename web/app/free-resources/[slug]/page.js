@@ -80,7 +80,7 @@ export default async function FreeResourceDetail({ params, searchParams }) {
 
         {healer && (
           <Link
-            href={`/healers/${healer.healer_slug}${backContextQuery(`/free-resources/${resource.slug}`, resource.title)}`}
+            href={`/healers/${healer.healer_slug}${backContextQuery(`/free-resources/${resource.slug}${backContextQuery(from, fromTitle)}`, resource.title)}`}
             className="text-sm text-violet-400 hover:text-violet-300 mt-2 inline-block"
           >
             By {healer.name}

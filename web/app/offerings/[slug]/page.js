@@ -97,7 +97,7 @@ export default async function OfferingDetail({ params, searchParams }) {
 
         {healer && (
           <Link
-            href={`/healers/${healer.healer_slug}${backContextQuery(`/offerings/${offering.slug}`, offering.title)}`}
+            href={`/healers/${healer.healer_slug}${backContextQuery(`/offerings/${offering.slug}${backContextQuery(from, fromTitle)}`, offering.title)}`}
             className="text-sm text-violet-400 hover:text-violet-300 mt-2 inline-block"
           >
             By {healer.name}

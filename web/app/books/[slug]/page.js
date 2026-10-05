@@ -106,7 +106,7 @@ export default async function BookDetail({ params, searchParams }) {
 
           {healer ? (
             <Link
-              href={`/healers/${healer.healer_slug}${backContextQuery(`/books/${book.slug}`, book.title)}`}
+              href={`/healers/${healer.healer_slug}${backContextQuery(`/books/${book.slug}${backContextQuery(from, fromTitle)}`, book.title)}`}
               className="text-sm text-violet-400 hover:text-violet-300 mb-4 inline-block"
             >
               By {healer.name}

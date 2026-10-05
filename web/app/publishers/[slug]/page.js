@@ -50,7 +50,7 @@ export async function generateMetadata({ params }) {
   });
 }
 
-export default async function PublisherProfile({ params }) {
+export default async function PublisherProfile({ params, searchParams }) {
   const { slug } = await params;
 
   // 1. Resolve the publisher by slug.
@@ -77,7 +77,15 @@ export default async function PublisherProfile({ params }) {
   // Anything opened from here should offer its way back to THIS publisher
   // rather than the homepage — the same ?from=/?fromTitle= pair every other
   // detail link on the site carries.
-  const backHere = backContextQuery(`/publishers/${slug}`, publisher.name);
+  // This page's own url, query string included, so a healer reached from here
+  // can step back to the publisher WITH whatever brought the visitor to the
+  // publisher still attached. The page had no searchParams at all before, so it
+  // was a dead end in both directions.
+  const { from, fromTitle } = (await searchParams) || {};
+  const backHere = backContextQuery(
+    `/publishers/${slug}${backContextQuery(from, fromTitle)}`,
+    publisher.name
+  );
 
   // 3. Auto-curated book list: every book authored by a linked healer. Books
   //    relate to a healer by the text healer_slug column (not healer_id), so

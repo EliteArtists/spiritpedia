@@ -16,9 +16,26 @@ export default async function Home({ searchParams }) {
   const resolvedSearchParams = await searchParams;
   const initialSubjectSlug = resolvedSearchParams?.subject || null;
 
+  // The view state the URL carries: which tab, and which Explore More shelves
+  // were open. Rebuilt into a search string and handed down so the first render
+  // on the server already matches what the visitor is coming back to — without
+  // it a refresh of /?tab=videos would paint Discover and correct itself a
+  // frame later. Only these three keys are passed on; anything else in the URL
+  // is not this page's business.
+  const initialSearch = new URLSearchParams(
+    Object.entries({
+      subject: resolvedSearchParams?.subject,
+      tab: resolvedSearchParams?.tab,
+      shelves: resolvedSearchParams?.shelves,
+    }).filter(([, value]) => typeof value === 'string' && value !== '')
+  ).toString();
+
   return (
     <Suspense>
-      <HomePageContent initialSubjectSlug={initialSubjectSlug} />
+      <HomePageContent
+        initialSubjectSlug={initialSubjectSlug}
+        initialSearch={initialSearch ? `?${initialSearch}` : ''}
+      />
     </Suspense>
   );
 }

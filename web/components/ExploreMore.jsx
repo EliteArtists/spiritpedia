@@ -1,12 +1,19 @@
 'use client';
 
-import { useCallback, useEffect, useRef, useState } from 'react';
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import BookCard from './BookCard.js';
 import ContentShelf from './ContentShelf.js';
 import FreeResourceCard from './FreeResourceCard.js';
 import OfferingCard from './OfferingCard.js';
 import ShelfRow from './ShelfRow.js';
 import { supabase } from '../utils/supabase.js';
+import {
+  homeHref,
+  readShelves,
+  setHomeParam,
+  SHELVES_PARAM,
+  useHomeSearch,
+} from '../utils/homeViewState.js';
 
 // Homepage discovery section.
 //
@@ -49,14 +56,23 @@ function withSubject(query, subjectSlug) {
 export default function ExploreMore({
   subjectSlug = null,
   healerNames = [],
-  // Where a card's detail page should send somebody back to. Supplied by the
-  // page rather than assumed here: this used to hardcode "/" and every card
-  // below silently dropped the active subject filter.
-  from = '/',
+  initialSearch = '',
   fromTitle = 'Spiritpedia',
 }) {
-  // Click order is the render order.
-  const [order, setOrder] = useState([]);
+  // WHICH SHELVES ARE OPEN LIVES IN THE URL, so coming back from a detail page
+  // restores them rather than collapsing everything the visitor had opened.
+  // Click order is still the render order — the parameter preserves it.
+  const search = useHomeSearch(initialSearch);
+  const order = useMemo(
+    // Filtered against SECTIONS so a hand-edited or stale parameter cannot ask
+    // for a shelf that does not exist.
+    () => readShelves(search).filter((key) => SECTIONS.some((s) => s.key === key)),
+    [search]
+  );
+
+  // Where a card's detail page should send somebody back to: the homepage URL
+  // as it currently stands, open shelves included.
+  const from = homeHref(search);
   const [rows, setRows] = useState({});
   const [loading, setLoading] = useState({});
 
@@ -143,9 +159,30 @@ export default function ExploreMore({
   // rows in hand, so it stays correct no matter how many presses have happened,
   // and the subject filter is whatever the shelf is currently showing.
   function open(key) {
-    setOrder((prev) => (prev.includes(key) ? prev : [...prev, key]));
-    load(key, subjectSlug);
+    if (order.includes(key)) return;
+    // replaceState, not a navigation: opening a shelf is a change of view, and
+    // it must not become a step the browser's Back button walks through. The
+    // fetch is left to the effect above, which is what also covers a shelf that
+    // arrived open in the URL — doing both here would fetch twice.
+    setHomeParam(SHELVES_PARAM, [...order, key].join(','));
   }
+
+  // A SHELF RESTORED FROM THE URL HAS TO FETCH ITSELF.
+  //
+  // `order` now comes from the query string, so arriving at ?shelves=books,
+  // or stepping back to a page that had them open, puts a shelf in the render
+  // list that nothing ever asked the database for — it would render as nothing
+  // at all. open() loads on click; this loads everything that arrived already
+  // open. The ref makes it once per shelf per subject rather than once per
+  // render.
+  const requested = useRef(new Set());
+  useEffect(() => {
+    for (const key of order) {
+      if (requested.current.has(key)) continue;
+      requested.current.add(key);
+      load(key, subjectSlug);
+    }
+  }, [order, subjectSlug, load]);
 
   // A subject pill changes the filter under shelves that are already open, so
   // every one of them is re-fetched against the new subject. Skipped on mount,
@@ -157,6 +194,7 @@ export default function ExploreMore({
     if (previousSubject.current === subjectSlug) return;
     previousSubject.current = subjectSlug;
     coursesCache.current = { key: null, promise: null };
+    requested.current = new Set(openedRef.current);
     openedRef.current.forEach((key) => load(key, subjectSlug));
   }, [subjectSlug, load]);
 

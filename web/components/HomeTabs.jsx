@@ -2,6 +2,13 @@
 
 import { useState } from 'react';
 import VideoShelves from './VideoShelves.jsx';
+import {
+  homeHref,
+  readParam,
+  setHomeParam,
+  TAB_PARAM,
+  useHomeSearch,
+} from '../utils/homeViewState.js';
 
 // The homepage's two views, below the masthead.
 //
@@ -26,18 +33,31 @@ export default function HomeTabs({
   children,
   healerNames = [],
   subjectSlug = null,
-  from,
+  initialSearch = '',
   fromTitle,
 }) {
-  // Discover is the default: it is what returning visitors already know, and it
-  // is the half that costs nothing extra to show.
-  const [tab, setTab] = useState('discover');
-  const [videosOpened, setVideosOpened] = useState(false);
+  // The URL is the state. Discover is the default — it is what returning
+  // visitors already know, and the half that costs nothing extra to show — but
+  // ?tab=videos brings someone straight back to where they were.
+  const search = useHomeSearch(initialSearch);
+  const tab = readParam(search, TAB_PARAM) === 'videos' ? 'videos' : 'discover';
+
+  // Not in the URL, and should not be: this is "has the tab ever been opened in
+  // this page view", which is what keeps the seven queries from running twice.
+  // It starts true when the URL already says videos, so arriving there mounts
+  // the shelves without waiting for a click that will never come.
+  const [videosOpened, setVideosOpened] = useState(tab === 'videos');
 
   const select = (key) => {
-    setTab(key);
     if (key === 'videos') setVideosOpened(true);
+    // Written with replaceState, so switching tabs does not add a history entry
+    // and Back still means the page before this one.
+    setHomeParam(TAB_PARAM, key === 'videos' ? 'videos' : null);
   };
+
+  // What a video card hands its detail page. Built from the live URL, so it
+  // carries the subject, the tab and any open shelves exactly as they stand.
+  const from = homeHref(search);
 
   return (
     <>

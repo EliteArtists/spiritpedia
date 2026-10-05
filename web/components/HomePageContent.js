@@ -31,7 +31,7 @@ function pickPortrait(imageUrls, subjectSlug, seed = '') {
   return imageUrls[sum % imageUrls.length] || DEFAULT_AVATAR;
 }
 
-export default async function HomePage({ initialSubjectSlug }) {
+export default async function HomePage({ initialSubjectSlug, initialSearch = '' }) {
   const currentSubjectSlug = initialSubjectSlug || null;
 
   // The page fetches only what it renders on arrival: the subject list and the
@@ -148,7 +148,11 @@ export default async function HomePage({ initialSubjectSlug }) {
   // (The browser's own back button was always fine — it restores the URL. This
   // is about the in-page "← Back to …" link, which is a real href and has to be
   // told.)
-  const fromPath = currentSubjectSlug ? `/?subject=${currentSubjectSlug}` : '/';
+  // The LABEL is decided here, where the subject's display name is already in
+  // hand. The PATH is not: it has to include the tab and the open shelves, and
+  // those change without this server component re-rendering. HomeTabs and
+  // ExploreMore each build it from the live URL instead — see
+  // utils/homeViewState.js.
   const fromLabel =
     (currentSubjectSlug && subjects.find((s) => s.slug === currentSubjectSlug)?.name) ||
     'Spiritpedia';
@@ -174,7 +178,7 @@ export default async function HomePage({ initialSubjectSlug }) {
         <HomeTabs
           healerNames={healerNamesBySlug}
           subjectSlug={currentSubjectSlug}
-          from={fromPath}
+          initialSearch={initialSearch}
           fromTitle={fromLabel}
         >
         {/* 4. HERO BILLBOARD — the opening slide is chosen here, on the
@@ -273,7 +277,7 @@ export default async function HomePage({ initialSubjectSlug }) {
           <ExploreMore
             subjectSlug={currentSubjectSlug}
             healerNames={healerNames}
-            from={fromPath}
+            initialSearch={initialSearch}
             fromTitle={fromLabel}
           />
         </main>

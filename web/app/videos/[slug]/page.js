@@ -120,7 +120,7 @@ export default async function VideoDetail({ params, searchParams }) {
 
         {healer && (
           <Link
-            href={`/healers/${healer.healer_slug}${backContextQuery(`/videos/${video.slug}`, video.title)}`}
+            href={`/healers/${healer.healer_slug}${backContextQuery(`/videos/${video.slug}${backContextQuery(from, fromTitle)}`, video.title)}`}
             className="text-sm text-violet-400 hover:text-violet-300 mb-6 inline-block"
           >
             By {healer.name}
