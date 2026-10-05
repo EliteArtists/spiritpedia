@@ -137,6 +137,22 @@ export default async function HomePage({ initialSubjectSlug }) {
   );
   const renderHealer = healerRenderer();
 
+  // WHERE A DETAIL PAGE SHOULD SEND SOMEBODY BACK TO.
+  //
+  // The homepage used to tell its cards `from="/"`, which threw the filter away:
+  // open a video from `/?subject=astrology`, press Back, and you landed on the
+  // unfiltered homepage having lost what you were looking at. The subject filter
+  // lives only in the URL, so the origin has to carry the query string or there
+  // is nothing to come back to.
+  //
+  // (The browser's own back button was always fine — it restores the URL. This
+  // is about the in-page "← Back to …" link, which is a real href and has to be
+  // told.)
+  const fromPath = currentSubjectSlug ? `/?subject=${currentSubjectSlug}` : '/';
+  const fromLabel =
+    (currentSubjectSlug && subjects.find((s) => s.slug === currentSubjectSlug)?.name) ||
+    'Spiritpedia';
+
   // Preserve the active subject filter when handing off to the subject page.
   const seeAll = currentSubjectSlug ? `/subject/${currentSubjectSlug}` : null;
 
@@ -155,7 +171,12 @@ export default async function HomePage({ initialSubjectSlug }) {
       <div className="mx-auto max-w-7xl px-6 pt-10">
         {/* The masthead above stays put on both tabs — it is the page's hero,
             not part of either view. Everything below it swaps. */}
-        <HomeTabs healerNames={healerNamesBySlug} subjectSlug={currentSubjectSlug}>
+        <HomeTabs
+          healerNames={healerNamesBySlug}
+          subjectSlug={currentSubjectSlug}
+          from={fromPath}
+          fromTitle={fromLabel}
+        >
         {/* 4. HERO BILLBOARD — the opening slide is chosen here, on the
             server, so the first paint is already a random face. Choosing it
             inside the component instead meant every visitor saw slide 0 until
@@ -249,7 +270,12 @@ export default async function HomePage({ initialSubjectSlug }) {
 
           {/* Everything below here is fetched on demand — see ExploreMore.
               None of it is in the initial payload. */}
-          <ExploreMore subjectSlug={currentSubjectSlug} healerNames={healerNames} />
+          <ExploreMore
+            subjectSlug={currentSubjectSlug}
+            healerNames={healerNames}
+            from={fromPath}
+            fromTitle={fromLabel}
+          />
         </main>
         </HomeTabs>
       </div>

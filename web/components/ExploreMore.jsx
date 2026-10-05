@@ -46,7 +46,15 @@ function withSubject(query, subjectSlug) {
   return subjectSlug ? query.contains('subject_slugs', [subjectSlug]) : query;
 }
 
-export default function ExploreMore({ subjectSlug = null, healerNames = [] }) {
+export default function ExploreMore({
+  subjectSlug = null,
+  healerNames = [],
+  // Where a card's detail page should send somebody back to. Supplied by the
+  // page rather than assumed here: this used to hardcode "/" and every card
+  // below silently dropped the active subject filter.
+  from = '/',
+  fromTitle = 'Spiritpedia',
+}) {
   // Click order is the render order.
   const [order, setOrder] = useState([]);
   const [rows, setRows] = useState({});
@@ -163,22 +171,22 @@ export default function ExploreMore({ subjectSlug = null, healerNames = [] }) {
 
     const renderItem =
       key === 'books'
-        ? (book) => <BookCard book={book} from="/" fromTitle="Spiritpedia" />
+        ? (book) => <BookCard book={book} from={from} fromTitle={fromTitle} />
         : key === 'free-resources'
           ? (item) => (
               <FreeResourceCard
                 item={item}
                 healerName={healerNameById.current.get(item.healer_id)}
-                from="/"
-                fromTitle="Spiritpedia"
+                from={from}
+                fromTitle={fromTitle}
               />
             )
           : (item) => (
               <OfferingCard
                 item={item}
                 healerName={healerNameById.current.get(item.healer_id)}
-                from="/"
-                fromTitle="Spiritpedia"
+                from={from}
+                fromTitle={fromTitle}
               />
             );
 

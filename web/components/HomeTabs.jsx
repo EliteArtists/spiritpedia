@@ -22,7 +22,13 @@ const TABS = [
   { key: 'discover', label: 'Discover' },
 ];
 
-export default function HomeTabs({ children, healerNames = [], subjectSlug = null }) {
+export default function HomeTabs({
+  children,
+  healerNames = [],
+  subjectSlug = null,
+  from,
+  fromTitle,
+}) {
   // Discover is the default: it is what returning visitors already know, and it
   // is the half that costs nothing extra to show.
   const [tab, setTab] = useState('discover');
@@ -62,7 +68,12 @@ export default function HomeTabs({ children, healerNames = [], subjectSlug = nul
 
       {videosOpened && (
         <div hidden={tab !== 'videos'}>
-          <VideoShelves healerNames={healerNames} subjectSlug={subjectSlug} />
+          <VideoShelves
+            healerNames={healerNames}
+            subjectSlug={subjectSlug}
+            from={from}
+            fromTitle={fromTitle}
+          />
         </div>
       )}
     </>
