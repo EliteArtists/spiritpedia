@@ -1,3 +1,4 @@
+import { notFound } from 'next/navigation';
 import { supabase } from '@/utils/supabase';
 import BookCard from '@/components/BookCard';
 import BackButton from '@/components/BackButton';
@@ -184,12 +185,18 @@ export default async function HealerProfile({ params, searchParams }) {
 
   const { data: healer, error } = await supabase.from('healers').select('*').eq('healer_slug', slug).single();
 
+  // A REAL 404, not a 200 that says "not found".
+  //
+  // This used to render its own message, which looked right and was wrong where
+  // it counts: the response carried HTTP 200, so a crawler that had indexed a
+  // listing kept it in the index as a live page after the healer was deleted,
+  // and a monitor checking for broken links saw nothing broken. Every other
+  // detail page already calls notFound(); this was the one that did not.
+  //
+  // generateMetadata above has always returned notFoundMetadata('Healer'), so
+  // the noindex was right while the status code was not.
   if (error || !healer) {
-    return (
-      <div className="min-h-screen bg-[#0a0f1d] flex items-center justify-center p-20 text-center font-bold uppercase tracking-widest text-gray-300">
-        Healer not found.
-      </div>
-    );
+    notFound();
   }
 
   // Books and videos relate to a healer via the relational `healer_slug` column
