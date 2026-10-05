@@ -17,7 +17,7 @@ import { supabase } from '@/utils/supabase';
 // which holds the service role and the admin cookie — the anon key has had no
 // write grant on any content table since migration 0007.
 
-const TABS = ['Profile', 'Content', 'Admin Notes'];
+const TABS = ['Profile', 'Content', 'Outreach', 'Admin Notes'];
 
 const TIERS = [
   { value: 'superhero', label: 'Superhero' },
@@ -271,6 +271,290 @@ function ContentTab({ slug, healerId }) {
           </Link>
         )}
       />
+    </>
+  );
+}
+
+/* ── OUTREACH TAB ──────────────────────────────────────────────────────── */
+
+const JOURNEY_STATUS_STYLES = {
+  running: 'border-emerald-500/40 bg-emerald-500/10 text-emerald-300',
+  paused: 'border-amber-500/40 bg-amber-500/10 text-amber-300',
+  stopped: 'border-slate-700 bg-slate-800 text-slate-400',
+};
+
+function journeyDate(value) {
+  if (!value) return '—';
+  return new Date(value).toLocaleDateString('en-GB', {
+    day: 'numeric',
+    month: 'short',
+    year: 'numeric',
+  });
+}
+
+// The five-email outreach sequence, started by hand and stopped by itself.
+//
+// Everything here is admin-only and goes through /api/admin/journey: the
+// healer_journeys table has RLS on and no policies at all, so the browser's
+// anonymous key cannot read a word of it. That is deliberate — it is a record
+// of what was sent to somebody who has not joined.
+function OutreachTab({ healer }) {
+  const [state, setState] = useState(null); // { journey, claimed }
+  const [busy, setBusy] = useState(false);
+  const [toast, setToast] = useState(null);
+  const [confirmingStop, setConfirmingStop] = useState(false);
+  const [reason, setReason] = useState('');
+
+  const slug = healer.healer_slug;
+
+  const read = useCallback(async () => {
+    const res = await fetch(`/api/admin/journey/${encodeURIComponent(slug)}`, {
+      cache: 'no-store',
+    });
+    const json = await res.json();
+    return res.ok && !json.error ? json : { journey: null, claimed: false, error: json.error };
+  }, [slug]);
+
+  useEffect(() => {
+    let cancelled = false;
+    read().then((next) => {
+      if (!cancelled) setState(next);
+    });
+    return () => {
+      cancelled = true;
+    };
+  }, [read]);
+
+  const start = async () => {
+    if (busy) return;
+    setBusy(true);
+    setToast(null);
+    try {
+      const res = await fetch('/api/admin/journey/start', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ healer_slug: slug }),
+      });
+      const json = await res.json();
+      if (!res.ok || json.error) {
+        setToast({ type: 'error', message: json.message || json.error });
+      } else {
+        setToast({
+          type: 'success',
+          message: json.redirected
+            ? `Email 1 sent to ${json.emailSentTo} — the test address, not the practitioner.`
+            : `Email 1 sent to ${json.emailSentTo}.`,
+        });
+        setState(await read());
+      }
+    } catch (err) {
+      setToast({ type: 'error', message: err.message });
+    }
+    setBusy(false);
+  };
+
+  const setStatus = async (status, stopReason) => {
+    if (busy) return;
+    setBusy(true);
+    setToast(null);
+    try {
+      const res = await fetch(`/api/admin/journey/${encodeURIComponent(slug)}`, {
+        method: 'PATCH',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ status, stop_reason: stopReason }),
+      });
+      const json = await res.json();
+      if (!res.ok || json.error) setToast({ type: 'error', message: json.message || json.error });
+      else {
+        setToast({ type: 'success', message: `Journey ${status}.` });
+        setConfirmingStop(false);
+        setReason('');
+        setState(await read());
+      }
+    } catch (err) {
+      setToast({ type: 'error', message: err.message });
+    }
+    setBusy(false);
+  };
+
+  if (!state) return <Placeholder icon="◴" title="Loading…" />;
+
+  const { journey, claimed } = state;
+
+  // NOTHING RUNNING — the start button, and the reasons it might refuse.
+  if (!journey) {
+    const blocked = claimed
+      ? 'This healer has claimed their account.'
+      : !healer.contact_email
+        ? 'No contact email — add one to the healer profile first.'
+        : null;
+
+    return (
+      <>
+        <p className="text-sm leading-relaxed text-slate-400">
+          Five emails over twelve weeks, inviting this practitioner to talk and to claim their
+          listing. It stops by itself the moment they claim it.
+        </p>
+
+        {blocked && (
+          <p className="mt-4 rounded-xl border border-slate-700 bg-slate-800/50 p-4 text-sm text-slate-300">
+            {blocked}
+          </p>
+        )}
+
+        <div className="mt-5 flex flex-wrap items-center gap-3">
+          <button
+            type="button"
+            onClick={start}
+            disabled={busy || Boolean(blocked)}
+            className="rounded-full bg-[#7c3aed] px-5 py-2.5 text-sm font-bold text-white transition-colors hover:bg-[#6d28d9] disabled:cursor-not-allowed disabled:opacity-40"
+          >
+            {busy ? 'Sending…' : 'Start Journey'}
+          </button>
+          {!blocked && (
+            <span className="text-xs text-slate-500">
+              Email 1 goes immediately to{' '}
+              <span className="font-mono">{healer.contact_email}</span>
+            </span>
+          )}
+          {toast && (
+            <span className={`text-xs ${toast.type === 'success' ? 'text-emerald-400' : 'text-red-400'}`}>
+              {toast.message}
+            </span>
+          )}
+        </div>
+      </>
+    );
+  }
+
+  // RUNNING OR PAUSED — the status card.
+  const steps = journey.schedule || [];
+
+  return (
+    <>
+      <div className="rounded-2xl border border-white/10 bg-[#0a0f1d] p-5">
+        <div className="flex flex-wrap items-center justify-between gap-3">
+          <div>
+            <p className="text-[10px] font-bold uppercase tracking-wider text-slate-500">
+              Journey started
+            </p>
+            <p className="mt-0.5 text-sm font-semibold text-white">
+              {journeyDate(journey.started_at)}
+            </p>
+          </div>
+
+          <div className="flex flex-wrap items-center gap-2">
+            <span
+              className={`rounded-full border px-2.5 py-0.5 text-[10px] font-bold uppercase tracking-wider ${
+                JOURNEY_STATUS_STYLES[journey.status] || JOURNEY_STATUS_STYLES.stopped
+              }`}
+            >
+              {journey.status}
+            </span>
+
+            {journey.status === 'running' && (
+              <button
+                type="button"
+                onClick={() => setStatus('paused')}
+                disabled={busy}
+                className="rounded-full border border-white/15 px-4 py-1.5 text-xs font-bold text-slate-300 transition-colors hover:bg-white/5 hover:text-white disabled:opacity-40"
+              >
+                Pause
+              </button>
+            )}
+            {journey.status === 'paused' && (
+              <button
+                type="button"
+                onClick={() => setStatus('running')}
+                disabled={busy}
+                className="rounded-full bg-[#7c3aed] px-4 py-1.5 text-xs font-bold text-white transition-colors hover:bg-[#6d28d9] disabled:opacity-40"
+              >
+                Resume
+              </button>
+            )}
+            <button
+              type="button"
+              onClick={() => setConfirmingStop((v) => !v)}
+              disabled={busy}
+              className="rounded-full border border-red-500/40 px-4 py-1.5 text-xs font-bold text-red-400 transition-colors hover:bg-red-500/10 disabled:opacity-40"
+            >
+              Stop
+            </button>
+          </div>
+        </div>
+
+        {claimed && (
+          <p className="mt-4 rounded-xl border border-emerald-500/30 bg-emerald-500/5 p-3 text-xs text-emerald-300">
+            This healer has claimed their account. The next daily run will stop the journey.
+          </p>
+        )}
+
+        {/* Stopping asks why. The reason is the only record of what happened —
+            a reply asking to stop and a sequence that simply ran out look
+            identical in the data otherwise. */}
+        {confirmingStop && (
+          <div className="mt-4 rounded-xl border border-red-500/30 bg-red-500/5 p-4">
+            <p className="text-sm font-bold text-red-300">Stop this journey?</p>
+            <p className="mt-1 text-xs leading-relaxed text-red-200/70">
+              No further emails are sent. The record is kept, and a new journey can be started
+              later.
+            </p>
+            <input
+              type="text"
+              value={reason}
+              onChange={(e) => setReason(e.target.value)}
+              placeholder="Why — asked to stop, interview arranged, …"
+              className="mt-3 w-full rounded-lg border border-white/10 bg-[#0a0f1d] px-3 py-2 text-sm text-white placeholder:text-slate-600 focus:border-[#7c3aed] focus:outline-none"
+            />
+            <div className="mt-3 flex justify-end gap-2">
+              <button
+                type="button"
+                onClick={() => setConfirmingStop(false)}
+                className="rounded-full border border-white/15 px-4 py-1.5 text-xs font-bold text-slate-300 hover:bg-white/5"
+              >
+                Cancel
+              </button>
+              <button
+                type="button"
+                onClick={() => setStatus('stopped', reason.trim() || undefined)}
+                disabled={busy}
+                className="rounded-full bg-red-600 px-5 py-1.5 text-xs font-bold text-white hover:bg-red-500 disabled:opacity-40"
+              >
+                Stop journey
+              </button>
+            </div>
+          </div>
+        )}
+
+        <ul className="mt-5 divide-y divide-white/5 border-t border-white/10">
+          {steps.map((step) => (
+            <li key={step.number} className="flex items-center justify-between gap-3 py-2.5">
+              <span className="text-sm text-white">Email {step.number}</span>
+              <span className="text-xs text-slate-500">
+                {step.sentAt ? (
+                  <span className="text-emerald-400">Sent {journeyDate(step.sentAt)}</span>
+                ) : journey.status === 'running' ? (
+                  <>Scheduled {journeyDate(step.dueAt)}</>
+                ) : (
+                  <>Was due {journeyDate(step.dueAt)}</>
+                )}
+              </span>
+            </li>
+          ))}
+        </ul>
+
+        {toast && (
+          <p className={`mt-4 text-xs ${toast.type === 'success' ? 'text-emerald-400' : 'text-red-400'}`}>
+            {toast.message}
+          </p>
+        )}
+      </div>
+
+      <p className="mt-4 text-xs leading-relaxed text-slate-600">
+        Emails 2 to 5 go out 21, 42, 63 and 84 days after the start, one per day at most, sent by
+        the daily job. Only emails that are due are sent, and a claim stops the sequence whatever
+        stage it has reached.
+      </p>
     </>
   );
 }
@@ -796,6 +1080,8 @@ export default function AdminHealerRecordPage({ params }) {
         )}
 
         {tab === 'Content' && <ContentTab slug={healer.healer_slug} healerId={healer.id} />}
+
+        {tab === 'Outreach' && <OutreachTab healer={healer} />}
 
         {tab === 'Admin Notes' && (
           <Placeholder
