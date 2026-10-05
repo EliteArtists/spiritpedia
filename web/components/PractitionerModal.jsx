@@ -132,16 +132,23 @@ export default function PractitionerModal({ open, onClose }) {
           </svg>
         </button>
 
-        <span aria-hidden="true" className="block text-2xl text-[#a78bfa]">
-          ✦
-        </span>
+        {/* The same star the masthead carries, rather than a typographic
+            lookalike — SiteLogo.jsx and AdminShell use this file too, so the
+            mark stays one asset. Decorative: the heading below says what this
+            is, and announcing the logo would add nothing. */}
+        <img
+          src="/Spiritpedia_Header_Symbol.png"
+          alt=""
+          aria-hidden="true"
+          className="mx-auto block h-10 w-10 object-contain"
+        />
 
         <h2 id={titleId} className="mt-4 text-2xl font-bold leading-snug text-white">
-          Are you a spiritual practitioner or healer?
+          Are you a practitioner?
         </h2>
 
         <p id={descId} className="mt-3 text-sm leading-relaxed text-gray-400">
-          This shapes what we ask you next. It takes a moment.
+          This shapes what we ask you next.
         </p>
 
         <div className="mt-8 flex flex-col gap-3">
@@ -156,7 +163,7 @@ export default function PractitionerModal({ open, onClose }) {
           {/* Sits under the Yes button because that is the choice that needs
               reassuring — saying yes does not trade away the explorer's site. */}
           <p className="-mt-1 text-xs leading-relaxed text-gray-500">
-            You can still explore, view and save content
+            (You can still explore, view and save content)
           </p>
 
           <button
