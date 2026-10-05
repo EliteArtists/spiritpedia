@@ -125,36 +125,91 @@ function ContentList({ title, items, render }) {
   );
 }
 
-function ContentTab({ slug }) {
+// EVERYTHING A HEALER HAS, which takes two different joins.
+//
+// Videos and books carry the healer's text slug; courses and free resources
+// carry the bigint id. Two keys, four tables — and the reason this tab showed
+// only half of it for so long is that it was handed the slug alone, so the two
+// id-keyed tables were simply never asked for. 1,103 courses and 461 free
+// resources were invisible here while the delete dialog on the same page was
+// already counting them.
+//
+// NOTHING IS FILTERED BY is_active OR end_date, deliberately. The public pages
+// hide an expired offering because a visitor cannot buy it; an admin screen
+// that did the same would be lying about what the database holds.
+function ContentTab({ slug, healerId }) {
   const [content, setContent] = useState(null);
   const [error, setError] = useState(null);
 
   useEffect(() => {
     let cancelled = false;
     (async () => {
-      const [videos, books] = await Promise.all([
+      const [videos, books, courses, resources] = await Promise.all([
         supabase.from('videos').select('id, title, slug, platform_url').eq('healer_slug', slug),
         supabase.from('books').select('id, title, slug').eq('healer_slug', slug),
+        supabase.from('courses').select('id, title, slug, product_type').eq('healer_id', healerId),
+        supabase
+          .from('free_resources')
+          .select('id, title, slug, resource_type')
+          .eq('healer_id', healerId),
       ]);
       if (cancelled) return;
-      const failure = videos.error || books.error;
+      const failure = videos.error || books.error || courses.error || resources.error;
       if (failure) setError(failure.message);
-      else setContent({ videos: videos.data || [], books: books.data || [] });
+      else
+        setContent({
+          videos: videos.data || [],
+          books: books.data || [],
+          courses: courses.data || [],
+          resources: resources.data || [],
+        });
     })();
     return () => {
       cancelled = true;
     };
-  }, [slug]);
+  }, [slug, healerId]);
 
   if (error) return <DataProblem error={error} what="This healer's content" />;
   if (!content) return <Placeholder icon="◴" title="Loading content…" />;
 
-  const total = content.videos.length + content.books.length;
+  // One table, split by product_type, using the same rule as the public subject
+  // page so the two can never disagree about what a thing is.
+  //
+  // Courses is the CATCH-ALL. The column holds six values, not the three with
+  // their own shelf — membership, meditation and podcast between them account
+  // for 106 rows, and a screen whose job is showing what exists must not drop
+  // them on the floor. A null product_type lands here too, as it does publicly.
+  const retreats = content.courses.filter((c) => c.product_type === 'retreat');
+  const downloads = content.courses.filter((c) => c.product_type === 'download');
+  const courses = content.courses.filter(
+    (c) => c.product_type !== 'retreat' && c.product_type !== 'download'
+  );
+
+  const counts = [
+    ['Videos', content.videos.length],
+    ['Books', content.books.length],
+    ['Courses', courses.length],
+    ['Retreats', retreats.length],
+    ['Downloads', downloads.length],
+    ['Free Resources', content.resources.length],
+  ];
+  const total = counts.reduce((sum, [, n]) => sum + n, 0);
+
+  // Offerings all resolve under /offerings/[slug] whatever their product_type —
+  // they are one table and one route.
+  const offeringLink = (item) => (
+    <Link href={`/offerings/${item.slug}`} target="_blank" className="text-cyan-400 hover:text-cyan-300">
+      {item.title}
+      {item.product_type && item.product_type !== 'course' ? (
+        <span className="ml-2 text-xs text-slate-500">{item.product_type}</span>
+      ) : null}
+    </Link>
+  );
 
   return (
     <>
-      <div className="grid grid-cols-2 gap-2">
-        {[['Videos', content.videos.length], ['Books', content.books.length]].map(([label, n]) => (
+      <div className="grid grid-cols-2 gap-2 sm:grid-cols-3">
+        {counts.map(([label, n]) => (
           <div key={label} className="rounded-xl border border-white/10 bg-[#0a0f1d] px-4 py-3">
             <p className="text-2xl font-black tabular-nums text-white">{n}</p>
             <p className="mt-0.5 text-[10px] font-semibold uppercase tracking-wider text-slate-500">
@@ -192,6 +247,27 @@ function ContentTab({ slug }) {
         render={(b) => (
           <Link href={`/books/${b.slug}`} target="_blank" className="text-cyan-400 hover:text-cyan-300">
             {b.title}
+          </Link>
+        )}
+      />
+      {/* ContentList renders nothing when its list is empty, so a healer with
+          no retreats shows no Retreats heading — no guards needed here. */}
+      <ContentList title="Courses & Programmes" items={courses} render={offeringLink} />
+      <ContentList title="Retreats & Live Events" items={retreats} render={offeringLink} />
+      <ContentList title="Downloads & Audio" items={downloads} render={offeringLink} />
+      <ContentList
+        title="Free Resources"
+        items={content.resources}
+        render={(r) => (
+          <Link
+            href={`/free-resources/${r.slug}`}
+            target="_blank"
+            className="text-cyan-400 hover:text-cyan-300"
+          >
+            {r.title}
+            {r.resource_type ? (
+              <span className="ml-2 text-xs text-slate-500">{r.resource_type}</span>
+            ) : null}
           </Link>
         )}
       />
@@ -719,7 +795,7 @@ export default function AdminHealerRecordPage({ params }) {
           </>
         )}
 
-        {tab === 'Content' && <ContentTab slug={healer.healer_slug} />}
+        {tab === 'Content' && <ContentTab slug={healer.healer_slug} healerId={healer.id} />}
 
         {tab === 'Admin Notes' && (
           <Placeholder
