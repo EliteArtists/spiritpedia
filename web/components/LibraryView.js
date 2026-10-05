@@ -9,6 +9,7 @@ import FreeResourceCard from './FreeResourceCard.js';
 import HealerCard from './HealerCard.js';
 import OfferingCard from './OfferingCard.js';
 import PublisherCard from './PublisherCard.jsx';
+import LibrarySignupNudge from './LibrarySignupNudge.jsx';
 import SubjectPills from './SubjectPills.js';
 import VideoPlayer from './VideoPlayer.js';
 import { FAVORITE_KEYS, readFavorites } from '../utils/favorites.js';
@@ -145,6 +146,11 @@ export default function LibraryView({
           </div>
         ) : (
           <>
+            {/* Only reachable with something saved — the empty branch is above.
+                The card decides for itself whether the visitor is signed in,
+                and renders nothing if they are. */}
+            <LibrarySignupNudge />
+
             {/* Pills restricted to the subjects the visitor's own saved items
                 carry, filtering by client state rather than navigation. */}
             <section className="pb-10">

@@ -14,7 +14,10 @@ import { usePathname } from 'next/navigation';
 // Hidden on /admin, and on /auth: a sign-in screen should hold one task and
 // nothing else, and inviting someone into a library they cannot open yet is a
 // door that leads nowhere.
-const HIDDEN_PREFIXES = ['/admin', '/auth'];
+//
+// And hidden on /library itself, where it is a button offering to take you
+// where you already are — it floats over the first shelf to say so.
+const HIDDEN_PREFIXES = ['/admin', '/auth', '/library'];
 
 export default function LibraryBar() {
   const pathname = usePathname();
