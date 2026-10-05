@@ -7,6 +7,7 @@ import SectionHeading from '@/components/admin/SectionHeading';
 import { Placeholder } from '@/components/admin/AdminPlaceholders';
 import DataProblem from '@/components/admin/DataProblem';
 import { useAdminData } from '@/components/admin/AdminData';
+import CardImage from '@/components/CardImage';
 import ConfirmDelete from '@/components/admin/ConfirmDelete';
 import { supabase } from '@/utils/supabase';
 
@@ -107,7 +108,126 @@ function ReadOnly({ label, value }) {
 
 /* ── CONTENT TAB ───────────────────────────────────────────────────────── */
 
-function ContentList({ title, items, render }) {
+// WHERE A ROW'S PICTURE LIVES, which is not the same column twice. Books keep
+// it in mock_cover_url; courses and free resources in image_url. Videos have no
+// column at all — their thumbnail is derived from the YouTube id in
+// platform_url at render time, so there is nothing to store and nothing to edit.
+const IMAGE_COLUMN = {
+  videos: null,
+  books: 'mock_cover_url',
+  courses: 'image_url',
+  free_resources: 'image_url',
+};
+
+function youTubeThumb(platformUrl) {
+  const match = platformUrl?.match(/(?:v=|youtu\.be\/)([a-zA-Z0-9_-]{11})/);
+  return match ? `https://img.youtube.com/vi/${match[1]}/mqdefault.jpg` : null;
+}
+
+// The 40×40 at the head of a row, and the field that replaces it.
+//
+// SHOWING IT IS HALF THE POINT. 577 rows across these tables point at
+// encrypted-tbn0.gstatic.com — Google's image cache rather than a publisher's
+// own host. Those resolve today and are not a promise; when they stop, the
+// public cards fall back to a placeholder and say nothing. A thumbnail here is
+// where that becomes visible.
+//
+// CardImage is reused rather than a bare <img> so a dead URL renders exactly
+// the placeholder the public site renders, and for the reason that component
+// exists: an <img> that fails before hydration never fires onError, so a
+// complete-check is needed as well.
+function RowThumb({ item, column, onSave, saving }) {
+  const [editing, setEditing] = useState(false);
+  const [value, setValue] = useState('');
+  const [error, setError] = useState(null);
+
+  const stored = column ? item[column] : null;
+  const src = column ? stored : youTubeThumb(item.platform_url);
+  const readOnly = !column;
+
+  const open = () => {
+    if (readOnly) return;
+    setValue(stored || '');
+    setError(null);
+    setEditing(true);
+  };
+
+  const save = async () => {
+    const next = value.trim();
+    // Empty clears the picture, which is a legitimate thing to want. Anything
+    // else has to look like a URL — a pasted filename would render as a broken
+    // image on every public card and nowhere say why.
+    if (next && !/^https?:\/\//i.test(next)) {
+      setError('That does not look like a URL.');
+      return;
+    }
+    const ok = await onSave(item, column, next || null);
+    if (ok) setEditing(false);
+    else setError('Could not save that.');
+  };
+
+  return (
+    <>
+      <button
+        type="button"
+        onClick={open}
+        disabled={readOnly}
+        title={readOnly ? 'Thumbnail comes from YouTube' : 'Change image'}
+        aria-label={readOnly ? undefined : `Change image for ${item.title}`}
+        className={`h-10 w-10 shrink-0 overflow-hidden rounded border border-white/10 bg-[#0a0f1d] ${
+          readOnly ? 'cursor-default' : 'cursor-pointer transition-colors hover:border-[#7c3aed]'
+        }`}
+      >
+        <CardImage
+          src={src}
+          alt=""
+          className="h-full w-full object-cover"
+          fallbackEmoji="▦"
+          fallbackClassName="flex h-full w-full items-center justify-center text-slate-700"
+        />
+      </button>
+
+      {editing && (
+        <div className="absolute inset-x-0 top-full z-10 mt-1 rounded-xl border border-white/10 bg-[#111827] p-3 shadow-xl">
+          <input
+            type="text"
+            value={value}
+            autoFocus
+            onChange={(e) => setValue(e.target.value)}
+            onKeyDown={(e) => {
+              if (e.key === 'Enter') save();
+              if (e.key === 'Escape') setEditing(false);
+            }}
+            placeholder="https://… — leave empty to remove the image"
+            className="w-full rounded-lg border border-white/10 bg-[#0a0f1d] px-3 py-2 text-xs text-white placeholder:text-slate-600 focus:border-[#7c3aed] focus:outline-none"
+          />
+          <div className="mt-2 flex items-center justify-between gap-3">
+            <span className="text-[11px] text-red-400">{error || ''}</span>
+            <span className="flex gap-2">
+              <button
+                type="button"
+                onClick={() => setEditing(false)}
+                className="rounded-full border border-white/15 px-3 py-1 text-[11px] font-bold text-slate-300 hover:bg-white/5"
+              >
+                Cancel
+              </button>
+              <button
+                type="button"
+                onClick={save}
+                disabled={saving}
+                className="rounded-full bg-[#7c3aed] px-4 py-1 text-[11px] font-bold text-white hover:bg-[#6d28d9] disabled:opacity-40"
+              >
+                {saving ? 'Saving…' : 'Save'}
+              </button>
+            </span>
+          </div>
+        </div>
+      )}
+    </>
+  );
+}
+
+function ContentList({ title, items, render, onDelete, imageColumn, onSaveImage, savingImageId }) {
   if (items.length === 0) return null;
   return (
     <div className="mt-6">
@@ -116,8 +236,44 @@ function ContentList({ title, items, render }) {
       </p>
       <ul className="mt-2 divide-y divide-white/5 rounded-xl border border-white/10">
         {items.map((item) => (
-          <li key={item.id} className="px-4 py-2.5 text-sm">
-            {render(item)}
+          <li
+            key={item.id}
+            className="group/row relative flex items-center gap-3 px-4 py-2.5 text-sm"
+          >
+            {/* relative on the row, so the editor panel below can anchor to it
+                rather than to the page. */}
+            <RowThumb
+              item={item}
+              column={imageColumn}
+              onSave={onSaveImage}
+              saving={savingImageId === item.id}
+            />
+            <span className="min-w-0 flex-1">{render(item)}</span>
+            {onDelete && (
+              // Barely there until the row is hovered: a list of fifty videos
+              // should read as a list, not as fifty invitations to delete
+              // something. It stays reachable by keyboard regardless — opacity
+              // hides it from the eye, not from focus or a screen reader.
+              <button
+                type="button"
+                onClick={() => onDelete(item)}
+                aria-label={`Delete ${item.title}`}
+                title="Delete"
+                className="shrink-0 rounded-full p-1.5 text-slate-600 opacity-0 transition-all hover:bg-red-500/10 hover:text-red-400 focus:opacity-100 group-hover/row:opacity-100"
+              >
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  aria-hidden="true"
+                  className="h-4 w-4"
+                >
+                  <path d="M18 6 6 18M6 6l12 12" />
+                </svg>
+              </button>
+            )}
           </li>
         ))}
       </ul>
@@ -137,20 +293,44 @@ function ContentList({ title, items, render }) {
 // NOTHING IS FILTERED BY is_active OR end_date, deliberately. The public pages
 // hide an expired offering because a visitor cannot buy it; an admin screen
 // that did the same would be lying about what the database holds.
+// Which table a row belongs to, and what to call it when asking. Keyed by the
+// bucket the UI groups rows into rather than by table, because three of the six
+// buckets are the same table split by product_type.
+const DELETABLE = {
+  videos: { table: 'videos', noun: 'video' },
+  books: { table: 'books', noun: 'book' },
+  courses: { table: 'courses', noun: 'offering' },
+  retreats: { table: 'courses', noun: 'retreat' },
+  downloads: { table: 'courses', noun: 'download' },
+  resources: { table: 'free_resources', noun: 'free resource' },
+};
+
 function ContentTab({ slug, healerId }) {
   const [content, setContent] = useState(null);
   const [error, setError] = useState(null);
+
+  // The row awaiting confirmation: { bucket, item } or null. One piece of state
+  // for all six lists, because only one thing can be being deleted at a time.
+  const [pending, setPending] = useState(null);
+  const [deleting, setDeleting] = useState(false);
+  const [deleteError, setDeleteError] = useState(null);
+
+  // The row whose image is being written, so only that thumbnail says "Saving…".
+  const [savingImageId, setSavingImageId] = useState(null);
 
   useEffect(() => {
     let cancelled = false;
     (async () => {
       const [videos, books, courses, resources] = await Promise.all([
         supabase.from('videos').select('id, title, slug, platform_url').eq('healer_slug', slug),
-        supabase.from('books').select('id, title, slug').eq('healer_slug', slug),
-        supabase.from('courses').select('id, title, slug, product_type').eq('healer_id', healerId),
+        supabase.from('books').select('id, title, slug, mock_cover_url').eq('healer_slug', slug),
+        supabase
+          .from('courses')
+          .select('id, title, slug, product_type, image_url')
+          .eq('healer_id', healerId),
         supabase
           .from('free_resources')
-          .select('id, title, slug, resource_type')
+          .select('id, title, slug, resource_type, image_url')
           .eq('healer_id', healerId),
       ]);
       if (cancelled) return;
@@ -168,6 +348,120 @@ function ContentTab({ slug, healerId }) {
       cancelled = true;
     };
   }, [slug, healerId]);
+
+  // DELETING ONE PIECE OF CONTENT.
+  //
+  // Through /api/admin/write, like every other content write: the anon key has
+  // had no delete grant on these tables since migration 0007, and the route
+  // refuses any delete without a match clause so this cannot widen beyond the
+  // one row.
+  //
+  // The list is corrected in place rather than refetched. Four queries to
+  // redraw a list we already hold, minus one row, would be slower and would
+  // flash the whole tab through its loading state for a change the admin can
+  // already see.
+  const confirmDelete = async () => {
+    if (!pending || deleting) return;
+    const { bucket, item } = pending;
+    const source = DELETABLE[bucket];
+    if (!source) return;
+
+    setDeleting(true);
+    setDeleteError(null);
+    try {
+      const res = await fetch('/api/admin/write', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          table: source.table,
+          op: 'delete',
+          match: { id: item.id },
+        }),
+      });
+      const json = await res.json();
+      if (!res.ok || json.error) {
+        setDeleteError(json.error || `Delete failed (${res.status})`);
+        setDeleting(false);
+        return;
+      }
+
+      // Courses, retreats and downloads are three views of one array, so the
+      // row is removed from whichever array actually holds it rather than from
+      // the bucket it was displayed in.
+      const key = source.table === 'free_resources' ? 'resources' : source.table;
+      setContent((prev) => ({
+        ...prev,
+        [key]: (prev[key] || []).filter((row) => row.id !== item.id),
+      }));
+      setPending(null);
+    } catch (err) {
+      setDeleteError(err.message);
+    }
+    setDeleting(false);
+  };
+
+  // CHANGING A ROW'S PICTURE.
+  //
+  // Through /api/admin/write like every other content write — the anon key has
+  // had no write grant on these tables since migration 0007 — and matched on
+  // the primary key, so it touches exactly one row.
+  //
+  // The column differs by table and is passed in rather than guessed, because
+  // books call it mock_cover_url and the other two call it image_url. Written
+  // back into the list in memory rather than refetched, for the same reason the
+  // delete is: redrawing four queries to change one string would flash the
+  // whole tab through its loading state.
+  const saveImage = async (item, column, url) => {
+    if (!column || savingImageId) return false;
+    setSavingImageId(item.id);
+    try {
+      // books is the only table using mock_cover_url, so the column identifies
+      // it outright. image_url is shared, so the row's own shape settles it: a
+      // free resource carries resource_type, an offering does not.
+      const target =
+        column === 'mock_cover_url'
+          ? 'books'
+          : item.resource_type !== undefined
+            ? 'free_resources'
+            : 'courses';
+
+      const res = await fetch('/api/admin/write', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          table: target,
+          op: 'update',
+          values: { [column]: url },
+          match: { id: item.id },
+          select: `id, ${column}`,
+          single: true,
+        }),
+      });
+      const json = await res.json();
+      if (!res.ok || json.error) {
+        setSavingImageId(null);
+        return false;
+      }
+
+      const key = target === 'free_resources' ? 'resources' : target;
+      setContent((prev) => ({
+        ...prev,
+        [key]: (prev[key] || []).map((row) =>
+          row.id === item.id ? { ...row, [column]: url } : row
+        ),
+      }));
+      setSavingImageId(null);
+      return true;
+    } catch {
+      setSavingImageId(null);
+      return false;
+    }
+  };
+
+  const askDelete = (bucket) => (item) => {
+    setDeleteError(null);
+    setPending({ bucket, item });
+  };
 
   if (error) return <DataProblem error={error} what="This healer's content" />;
   if (!content) return <Placeholder icon="◴" title="Loading content…" />;
@@ -231,6 +525,10 @@ function ContentTab({ slug, healerId }) {
       <ContentList
         title="Videos"
         items={content.videos}
+        onDelete={askDelete('videos')}
+        imageColumn={null}
+        onSaveImage={saveImage}
+        savingImageId={savingImageId}
         render={(v) =>
           v.slug ? (
             <Link href={`/videos/${v.slug}`} target="_blank" className="text-cyan-400 hover:text-cyan-300">
@@ -244,6 +542,10 @@ function ContentTab({ slug, healerId }) {
       <ContentList
         title="Books"
         items={content.books}
+        onDelete={askDelete('books')}
+        imageColumn={IMAGE_COLUMN.books}
+        onSaveImage={saveImage}
+        savingImageId={savingImageId}
         render={(b) => (
           <Link href={`/books/${b.slug}`} target="_blank" className="text-cyan-400 hover:text-cyan-300">
             {b.title}
@@ -252,12 +554,40 @@ function ContentTab({ slug, healerId }) {
       />
       {/* ContentList renders nothing when its list is empty, so a healer with
           no retreats shows no Retreats heading — no guards needed here. */}
-      <ContentList title="Courses & Programmes" items={courses} render={offeringLink} />
-      <ContentList title="Retreats & Live Events" items={retreats} render={offeringLink} />
-      <ContentList title="Downloads & Audio" items={downloads} render={offeringLink} />
+      <ContentList
+        title="Courses & Programmes"
+        items={courses}
+        render={offeringLink}
+        onDelete={askDelete('courses')}
+        imageColumn={IMAGE_COLUMN.courses}
+        onSaveImage={saveImage}
+        savingImageId={savingImageId}
+      />
+      <ContentList
+        title="Retreats & Live Events"
+        items={retreats}
+        render={offeringLink}
+        onDelete={askDelete('retreats')}
+        imageColumn={IMAGE_COLUMN.courses}
+        onSaveImage={saveImage}
+        savingImageId={savingImageId}
+      />
+      <ContentList
+        title="Downloads & Audio"
+        items={downloads}
+        render={offeringLink}
+        onDelete={askDelete('downloads')}
+        imageColumn={IMAGE_COLUMN.courses}
+        onSaveImage={saveImage}
+        savingImageId={savingImageId}
+      />
       <ContentList
         title="Free Resources"
         items={content.resources}
+        onDelete={askDelete('resources')}
+        imageColumn={IMAGE_COLUMN.free_resources}
+        onSaveImage={saveImage}
+        savingImageId={savingImageId}
         render={(r) => (
           <Link
             href={`/free-resources/${r.slug}`}
@@ -270,6 +600,23 @@ function ContentTab({ slug, healerId }) {
             ) : null}
           </Link>
         )}
+      />
+
+      {/* The same dialog the healer delete uses, so one confirmation looks and
+          behaves the same everywhere in the admin. */}
+      <ConfirmDelete
+        open={Boolean(pending)}
+        title={pending ? `Delete this ${DELETABLE[pending.bucket]?.noun}?` : ''}
+        body={pending?.item?.title || ''}
+        consequences={[
+          'It is removed from the database, not hidden — this cannot be undone',
+          'Anyone holding a link to its public page will get a 404',
+        ]}
+        confirmLabel="Delete"
+        busy={deleting}
+        error={deleteError}
+        onCancel={() => setPending(null)}
+        onConfirm={confirmDelete}
       />
     </>
   );
