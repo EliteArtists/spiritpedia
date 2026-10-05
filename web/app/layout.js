@@ -4,6 +4,7 @@ import SiteFooter from "@/components/SiteFooter";
 import LibraryBar from "@/components/LibraryBar";
 import AuthSync from "@/components/AuthSync";
 import Analytics from "@/components/Analytics";
+import CookieBanner from "@/components/CookieBanner";
 import {
   SITE_URL,
   SITE_NAME,
@@ -91,9 +92,13 @@ export default function RootLayout({ children }) {
             arrived — see components/AuthSync.jsx. */}
         <AuthSync />
 
-        {/* Google Analytics 4 — excluded from /admin, and from any build
-            without a measurement ID. See components/Analytics.jsx. */}
+        {/* Google Analytics 4 — excluded from /admin, from any build without a
+            measurement ID, and from every visit until cookies are accepted.
+            See components/Analytics.jsx. */}
         <Analytics />
+
+        {/* The question that gates it. Renders nothing once answered. */}
+        <CookieBanner />
       </body>
     </html>
   );
