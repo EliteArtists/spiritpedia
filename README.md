@@ -1,6 +1,42 @@
 Spiritpedia
 A spiritual encyclopedia for the modern age — uniting timeless wisdom with personalised, AI-powered tools to help humans raise their vibration, find healing, and live in harmony.
 
+🚀 Getting Oriented
+**The app is not at the root of this repo.** It lives in `web/`; there is no
+root `package.json`.
+
+```
+spiritpedia/
+├── web/                    the Next.js app — run everything from here
+│   ├── app/                routes (App Router): pages, /api, sitemap, robots
+│   ├── components/         UI, with components/admin/ for the dashboard
+│   ├── utils/              Supabase clients, email, audit logic, helpers
+│   ├── proxy.js            password gate on /admin (Next 16 proxy convention)
+│   └── vercel.json         the two cron schedules
+└── supabase/migrations/    SQL, run by hand in order — there is no runner
+```
+
+```bash
+cd web
+npm install
+npm run dev          # localhost:3000
+npm run build        # what Vercel runs
+npx eslint app components utils
+```
+
+Node 24, Next 16.2 (App Router + Turbopack), React 19, Tailwind 4. Dependencies
+are deliberately few: `@supabase/supabase-js`, `resend`, `@next/third-parties`.
+
+**You need `web/.env.local` before anything works** — see Environment variables
+at the foot of this file. It is gitignored (`.env*`) and must never be committed.
+
+#### The five things that will bite you first
+1. **PostgREST caps every response at 1,000 rows and does not say so.** Any query that can exceed it pages with `.range()` ordered by `id`. Never order by `created_at` alone — the bulk import gave thousands of rows the same timestamp to the microsecond, so ties resolve differently per query and rows become unreachable.
+2. **There are two Supabase clients and they are not interchangeable.** `utils/supabase.js` is anonymous and stateless, for server components. `utils/supabaseAuth.js` is browser-only and holds the session. `utils/supabaseAdmin.js` is the service role and must never reach a client component.
+3. **The anon key ships in every page bundle.** Anything it may write, any visitor may write. All content writes go through server routes.
+4. **Two different keys point at a healer.** Videos and books carry a text `healer_slug`; courses and free resources carry a bigint `healer_id`. Forgetting this is why the admin Content tab once showed only half a healer's work.
+5. **`supabase-js` returns `{ data: null, error }` rather than throwing.** A trailing `|| []` turns "the database was unreachable" into "there is no content", and the page renders an empty shelf with no sign anything went wrong.
+
 🌌 Vision
 Spiritpedia is not just a content hub or search engine — it's a personalised spiritual companion, designed to evolve with each user's unique path.
 
@@ -131,10 +167,10 @@ The `/web` directory contains the full Next.js application.
 * `/free-resources/[slug]` — Free resource detail page
 * `/publishers/[slug]` — Publishing house profile — bio, linked authors, and one auto-curated book shelf per author
 * `/library` — Personal saved library, auto-organised by subject
-* `/privacy`, `/terms` — holding pages, `noindex` until written
+* `/privacy`, `/terms` — holding pages, `noindex` until written (linked from the footer)
 * `/account` — account centre; becomes the Practitioner Dashboard for an approved practitioner. See Accounts & Authentication
 * `/auth/*` — signup, verify, claim, practitioner-setup, pending
-* `/admin` — CRM dashboard, ten sections. **Protected by password login** — a session-cookie auth screen at `/admin/login`, gated by `web/proxy.js`. The password lives only in the `ADMIN_PASSWORD` environment variable (never in the codebase); it must be set both locally in `web/.env.local` and in Vercel → Settings → Environment Variables. See Admin (CRM)
+* `/admin` — CRM dashboard, eleven sections. **Protected by password login** — a session-cookie auth screen at `/admin/login`, gated by `web/proxy.js`. The password lives only in the `ADMIN_PASSWORD` environment variable (never in the codebase); it must be set both locally in `web/.env.local` and in Vercel → Settings → Environment Variables. See Admin (CRM)
 
 #### Key Components
 | File | Purpose |
@@ -162,6 +198,16 @@ The `/web` directory contains the full Next.js application.
 | web/components/ShareButton.jsx | Share control — native OS sheet on touch devices, dropdown menu elsewhere |
 | web/components/LibraryView.js | Dynamic library with subject parsing and tri-tab view |
 | web/components/ReviewSection.jsx | Community reviews — the summary line, the list, and the submission form |
+| web/components/PractitionerModal.jsx | The signed-out account sheet — what an account is for, and the way in |
+| web/components/LibrarySignupNudge.jsx | Inline prompt on a populated library: saves live in this browser until there is an account |
+| web/components/CookieBanner.jsx | The consent gate in front of GA4 |
+| web/components/Analytics.jsx | GA4, rendered only after consent and never on /admin |
+| web/components/PractitionerDashboard.jsx | The approved practitioner's own dashboard at /account |
+| web/components/FavoriteHeart.js | The save control, shared by every card type |
+| web/components/WantToReadButton.js · ReadButton.js | Book reading state, stored per browser |
+| web/components/BackButton.jsx | Back link that honours the `?from=` chain rather than browser history |
+| web/components/AuthShell.jsx | The frame every /auth screen renders inside |
+| web/components/HeroImageRotator.js | The crossfade over a healer's three portraits |
 | web/components/admin/ConfirmDelete.jsx | The confirmation in front of every irreversible admin action |
 
 `DeferredShelves.jsx` was the first attempt at deferring the lower shelves. It
@@ -187,8 +233,9 @@ and someone switching back and forth never refetches. See The Videos tab.
 **The navbar** carries the logo on the left, and a share button plus an account
 icon on the right. The share button is desktop and tablet only — on a phone the
 OS share sheet is one tap away on every detail page, and the header needs the
-room. The account icon is a placeholder holding its position in the bar until
-the account area is built; it links nowhere yet.
+room. The account icon goes to `/account` when there is a session and opens the
+`PractitionerModal` when there is not — it never guesses, because the session is
+read on mount and starts as "not known yet" rather than as "signed out".
 
 **The pills stay at the top.** The navbar is pinned while you scroll the search
 bar away, then slides up and out at the exact moment the subject pills reach the
@@ -201,8 +248,9 @@ nothing below them can jump when they dock.
 
 **The floating library button** — `✦ My Library`, violet, fixed bottom-centre —
 renders from the root layout, so it follows the visitor across every page except
-`/admin`. It replaced the per-page My Library links that used to sit in each
-navbar.
+three: `/admin`, `/auth/*` (a sign-in screen should hold one task), and
+`/library` itself, where it was a button offering to take you where you already
+were. It replaced the per-page My Library links that used to sit in each navbar.
 
 The billboard rotates every 8 seconds inside a fixed frame (450px desktop, 300px
 mobile) through Superheroes and Ascended Masters interleaved three-to-one, so a
@@ -349,9 +397,11 @@ way back to Hay House rather than the homepage.
 Rendered once from the root layout, so it appears on every page except `/admin`.
 It carries a health disclaimer — warm rather than legalistic, framing informed
 choice and professional advice as part of the journey rather than a warning
-against it — a copyright line, and placeholder Privacy Policy and Terms of Use
-links. **Those two links are `href="#"` and go nowhere yet; the pages still need
-writing.**
+against it — a copyright line, and Privacy Policy and Terms of Use links. Those
+two links now resolve to real routes; **the pages behind them are still holding
+text and carry `robots: { index: false }`** until a policy is written. The
+`noindex` is deliberate — a page whose body says it is not finished is worse
+indexed than absent.
 
 #### My Library
 The library at `/library` reads saved items from local storage (`favorited_healers`, `favorited_publishers`, `favorited_books`, `favorite_videos`, `favorited_courses`, `favorited_free_resources`), maps them against Supabase subject slugs, and generates folders dynamically. Empty categories are hidden automatically.
@@ -424,22 +474,31 @@ the review stayed in the queue, which is why `/api/admin/reviews` re-reads the r
 and answers `409` rather than trusting a 200.
 
 🛠️ Admin (CRM)
-`/admin`, gated by `proxy.js` (session cookie from `ADMIN_PASSWORD`). Sidebar shell; ten sections.
+`/admin`, gated by `proxy.js` (session cookie from `ADMIN_PASSWORD`). Sidebar shell; eleven sections.
 
 | Section | State |
 | :--- | :--- |
-| Inbox | live — unified queue of applications, claims and pending reviews; three-pane reviewer; Approve / Reject / Approve & Next |
+| Inbox | live — unified queue of applications, claims, pending reviews and broken images; three-pane reviewer; Approve / Reject / Approve & Next |
 | People | live — Practitioners / Explorers tabs, search, 360° record with editable Profile, Content, Admin Notes, Activity, and a working Delete |
-| Content | live — the **Healer Directory**: all 129 records, searchable, filterable by subject and claim state, each opening an editor |
+| Content | live — the **Healer Directory**: all 126 records, searchable, filterable by subject and claim state, each opening a four-tab editor |
 | Reviews | live — Pending / Approved / Rejected, Approve and Reject, emails the reviewer |
 | Claims | live — record of claimed profiles |
 | Analytics | live — counts |
 | Ingestion | live — the original ingestion form, unchanged |
 | Messages · Flags · Mailshots · Settings | placeholders |
 
+**The healer record has four tabs** — Profile, Content, Outreach, Admin Notes.
+Content lists all six collections (videos, books, courses, retreats, downloads,
+free resources); it used to show only videos and books, because the two tables
+that hold the rest are reached by `healer_id` rather than by `healer_slug` and
+the query simply never ran. Every row carries a 40×40 thumbnail that opens an
+inline URL editor, and a delete control that appears on hover and stays
+reachable by keyboard. Videos are the exception: their thumbnail is derived from
+the YouTube id at render time, so there is nothing to store and nothing to edit.
+
 **The Healer Directory** was the gap behind "why don't pre-loaded healers appear
-in People?". They never could: People lists *accounts* (`user_profiles`, 6 rows),
-and a pre-loaded healer has none. The two populations meet only where an account
+in People?". They never could: People lists *accounts* (`user_profiles`, 1 row
+today), and a pre-loaded healer has none. The two populations meet only where an account
 has claimed a profile. The directory pages on `id`, selects only the five columns
 the list renders, and the record editor writes 21 fields through
 `/api/admin/write`. `healer_slug` is **not** among them — videos and books find
@@ -459,10 +518,14 @@ every internal note. Deleting a healer orphans its content and nothing in the
 schema stops it, so the dialog counts the videos, books, offerings and resources
 that will be left pointing at nobody before it asks.
 
-**The Inbox badge counts everything pending**, applications and reviews alike, and
-the same number feeds the top bar and the bell. A review in the queue carries an
-`href` rather than a profile, which is what keeps it out of the three-pane
-reviewer and sends it to the Reviews tab instead.
+**The Inbox badge counts everything pending** — applications, reviews and broken
+images alike — and the same number feeds the top bar and the bell. A queue item
+that carries an `href` rather than a profile is sent straight to its destination
+instead of opening in the three-pane reviewer, which only knows how to render
+the sources hanging off a profile. Reviews use that to reach the Reviews tab;
+broken images use it to reach the healer's own editor, on the tab that holds the
+field they need (`?tab=content` for a content image, `?tab=profile` for a
+portrait).
 
 Needs `SUPABASE_SERVICE_ROLE_KEY` and `ADMIN_NAME` in the environment. Without
 them the data sections show a named reason, never an empty list — an empty list
@@ -497,15 +560,19 @@ Write access is the thing to understand before changing anything here.
 | `/api/pending-user-type` | open by design — pre-authentication, writes a value that grants nothing |
 | `/api/admin/reviews` | admin cookie. `GET` returns the moderation queue (the anon key cannot see a pending review at all); `PATCH` sets the status **and** emails the reviewer |
 | `/api/email/*` | user access token, verified against Supabase. **None of them take a user id** — identity comes from the token, because a route that emailed whichever id it was handed would be a way to send mail to any account on the platform |
+| `/api/admin/journey/*` | admin cookie. `start` begins a claim sequence; `[healer_slug]` reads or stops one |
+| `/api/cron/*` | `CRON_SECRET`, as `Authorization: Bearer <secret>` (which Vercel sends of its own accord) or `x-cron-secret` so the route can be exercised by hand. Returns **503** when the secret is unset and **401** when it is wrong — the two are different problems and should not look alike |
 
 📈 Analytics & SEO
-* GA4 via `@next/third-parties`, excluded from `/admin`, rendered only when `NEXT_PUBLIC_GA_MEASUREMENT_ID` is set. **No consent gate yet** — see Next Steps
-* Dynamic `sitemap.xml` (4,899 URLs, video pages included) and `robots.txt`. Paginated with an `id` tiebreaker: PostgREST caps responses at 1,000 rows and truncates silently
+* GA4 via `@next/third-parties`, excluded from `/admin`, rendered only when `NEXT_PUBLIC_GA_MEASUREMENT_ID` is set **and only after the visitor has accepted**. Spiritpedia is UK/EU-facing, where an analytics cookie needs agreement before it is set — so not rendering the component *is* the gate: `@next/third-parties` injects the script tag, and with nothing rendered nothing is requested, no cookie is written, and there is no gtag to tear down if they decline. The choice lives in `localStorage` under `sp_cookie_consent` (`utils/consent.js`), read through `useSyncExternalStore` so the banner and the script agree without a round trip
+* Dynamic `sitemap.xml` (4,895 URLs, video pages included) and `robots.txt`. Paginated with an `id` tiebreaker: PostgREST caps responses at 1,000 rows and truncates silently
 * Transactional email via Resend — see below
 
 📧 Transactional Email
-Five emails, all through `utils/email.js`, which decides the from address, the
+Ten emails, all through `utils/email.js`, which decides the from address, the
 reply-to, the BCC and the failure policy once.
+
+**Five transactional**, sent in response to something the person just did:
 
 | # | Email | Fires |
 | :--- | :--- | :--- |
@@ -514,6 +581,8 @@ reply-to, the BCC and the failure policy once.
 | 3 | Review received | a review is submitted |
 | 4 | Review approved | a moderator approves it |
 | 5 | Review rejected | a moderator rejects it |
+
+**Five outreach**, the healer claim journey — see below.
 
 From `Spiritpedia <hello@accounts.spiritpedia.co>` — a subdomain, so a
 deliverability problem with transactional mail cannot damage the reputation of the
@@ -545,6 +614,77 @@ slug and the templates drop the "by …" clause rather than render it empty.
 `utils/resend.js` does **not** affect sign-in codes — those are sent by Supabase
 Auth through its own SMTP.
 
+✉️ Healer Email Journey
+An unclaimed healer has a profile on Spiritpedia they have never seen. The
+journey is five plain-text emails over twelve weeks inviting them to claim it,
+started by hand from the **Outreach** tab on their record and run by a daily
+cron.
+
+`JOURNEY_SCHEDULE = [0, 21, 42, 63, 84]` — day 0, then every three weeks.
+
+**They are plain text with no HTML and no links, on purpose.** Every call to
+action is "reply to this email". A cold first contact that looks like a
+newsletter is filtered like one, and a reply is the only response that starts a
+relationship rather than a click-through. They are sent from
+`love@spiritpedia.co` rather than the `accounts.` subdomain the transactional
+mail uses, because this is a person writing to a person.
+
+**The sequence stops the moment the profile is claimed**, checked on every run
+rather than once at the start — so somebody who joins on day 22 never receives
+email 3. It also stops if the healer row is deleted or loses its contact address.
+
+**At most one email per journey per run, lowest-numbered first.** A missed day is
+worked through one at a time rather than three landing together.
+
+**The double-send guard is the write itself.** There is no `sending` status to
+leak if the process dies: the run claims the slot with a conditional update
+(`.update({ sent_3_at: now }).is('sent_3_at', null)`) and only the caller that
+gets a row back sends. If the send then fails the timestamp is put back to null
+and tomorrow tries again.
+
+`0009` uses a **partial** unique index (`WHERE status <> 'stopped'`) rather than
+a plain UNIQUE on `healer_slug`, so a stopped journey stays in the table as
+history and a healer can be restarted later.
+
+🖼️ Broken Images Audit
+2,890 image URLs across this catalogue point at somebody else's server, and
+**274 of the 377 healer portraits point at Google's image cache**. They resolve
+today and that is not a promise. When one stops, the public card falls back to a
+placeholder and says nothing — so a shelf quietly empties of pictures and the
+first report is a visitor's.
+
+A daily cron checks them and writes failures to `broken_images`, surfaced as a
+**Broken Images** filter in the admin Inbox. Saving a replacement URL clears the
+row immediately; an image that recovers on its own clears at the next audit.
+
+| | Cadence | Why |
+| :--- | :--- | :--- |
+| Content images (2,513) | a seventh per day | A full pass measured ~164s against a Vercel function ceiling of 60s |
+| Healer portraits (377) | every day, in full | 10s, and the portrait is the first thing a visitor sees |
+
+**Portraits are an array, not a column.** `healers.image_urls` holds three, and
+all three are on screen — the healer page runs a crossfade rotator over them and
+the homepage card picks one by an index seeded on the active subject filter.
+Auditing only `[0]` would miss two thirds of them.
+
+**Most of the work was avoiding false positives**, and every rule below is there
+because the naive version was measured and found wrong:
+
+* **A User-Agent is mandatory.** Two of fourteen sampled hosts answer 403 without one and 200 with it.
+* **A 404 is definitive and surfaces at once; a 403 must fail twice.** Two hosts answer 4xx to a burst of twenty concurrent requests and 200 to the same URL alone — an identical dry run minutes apart returned 7 failures and then 5.
+* **A 200 can still be a broken image.** `app.karinagrant.co.uk` answers every image request with HTTP 200, `content-type: text/html` and 599 bytes of its single-page-app shell. It never 404s. Ten of her offerings point at it.
+* **…but "not `image/*`" is not the test.** Of 25 such responses, 12 were served as `application/octet-stream` by S3, CloudFront and Akamai and every one was a real JPEG or PNG. Document types are believed; vague ones get a 64-byte ranged GET and are judged on their magic bytes.
+* **An HTTP 202 is a bot challenge, not a verdict.** Recorded as *undetermined* — neither broken nor healthy — and counted in the run's output, because "found nothing" and "could not look" are different claims.
+* **The audit was provoking those challenges itself.** One healer's 21 free resources sat at consecutive ids and went out as a single 21-wide burst at one server. URLs are now dealt out round-robin by host, which cut 21 false positives to zero.
+
+`record_id` is **text**: `books.id` is a bigint but `courses.id` and
+`free_resources.id` are UUIDs. One row per record, so a healer with two dead
+portraits is still one healer to go and fix.
+
+Content targets rotate by a daily offset, so a run cut short by its 40s deadline
+does not skip the same rows every day — a permanent silent blind spot being
+exactly what this feature exists to prevent.
+
 🗄️ Migrations
 Run in order from `supabase/migrations/`. There is no migration runner; paste into the Supabase SQL editor.
 
@@ -558,6 +698,8 @@ Run in order from `supabase/migrations/`. There is no migration runner; paste in
 | `0006_lock_down_content_writes` | **superseded** — dropped policies by guessed name and silently did nothing |
 | `0007_force_content_read_only` | enumerates `pg_policies` and drops by actual name. Ends with a SELECT so the result is visible rather than assumed |
 | `0008_reviews` | the reviews table, its RLS, and the trigger that pins `status` and `author_healer_slug`. **Amended after the fact** to exempt the service role — the first version froze `status` against every caller, which meant no review could ever be approved |
+| `0009_healer_journeys` | the claim-outreach sequence. A **partial** unique index (`WHERE status <> 'stopped'`) rather than a plain UNIQUE, so a stopped journey survives as history and a healer can be restarted |
+| `0010_broken_images` | the image audit queue. **Amended after the fact** to add `healers` to the `table_name` CHECK when portraits joined the audit; the `ALTER` is a second statement rather than an edit to the `CREATE`, so the file reads in the order the database received it |
 
 🗄️ Database Structure (Supabase)
 #### Tables
@@ -574,6 +716,8 @@ Run in order from `supabase/migrations/`. There is no migration runner; paste in
 * **pending_user_types**: `email` (PK), `user_type` — consumed and deleted at verification
 * **admin_notes**: `subject_user_id`, `body`, `created_by` — service role only. `subject_user_id` is a foreign key onto `auth.users`, so a note can only be attached to an account; an unclaimed healer cannot have one
 * **reviews**: `id`, `user_id` (→ auth.users), `content_type`, `content_slug`, `rating` (1–5), `body`, `author_name`, `author_healer_slug`, `status`, `created_at`. Unique on (user, type, slug). Public read is `status = 'approved'`; the author can read their own whatever its state
+* **healer_journeys**: `id` (uuid), `healer_slug` (→ healers, ON DELETE CASCADE), `status`, `stop_reason`, `started_at`, `sent_1_at` … `sent_5_at`, `created_at`. Service role only. One running journey per healer, enforced by a partial unique index so stopped ones remain
+* **broken_images**: `id`, `table_name`, `record_id`, `healer_slug`, `title`, `image_url`, `status_code`, `failures`, `first_seen_at`, `detected_at`. Unique on (`table_name`, `record_id`); RLS on with no policy at all, so only the service role can see it. `record_id` is **text** because books use bigint ids while courses and free resources use UUIDs
 * **emotion_mappings**: `id`, `emotion`, `subject_slug`, `weight` — powers the emotional search bar; one emotion maps to several weighted subjects. 3,488 rows covering 693 distinct emotions and all 42 subjects
 
 #### Conventions worth knowing
@@ -584,8 +728,8 @@ Run in order from `supabase/migrations/`. There is no migration runner; paste in
 * **`tier`** replaces the legacy `is_famous` boolean. Values: `superhero` / `ascended_master` / `luminary` / `local_hero`. Anything else — including NULL mid-backfill — still surfaces in the Practitioners Near You shelf so no practitioner silently vanishes, but the card renders a neutral grey "Teacher" badge rather than borrowing Local Hero's, so bad data is visible instead of mislabelled.
 * **`entity_type`**: `individual` / `channel` / `app`. NULL is treated as `individual`. Channels and apps are filtered out of the tier shelves and the billboard in memory — no separate query.
 * **`birth_year` / `death_year`** are optional integers, collected in the admin form only when the tier is Ascended Master. The profile shows `1931 — 2015` when both are set, `b. 1931` when only the birth year is known, and nothing when neither is.
-* **`courses` stores every paid offering**, split by `product_type`: `course` / `download` / `membership` / `retreat`. An unset value is treated as a course, so legacy rows predating the column still surface.
-* **`free_resources.resource_type`**: `meditation` / `download` / `mini_course` / `workshop` / `practice`.
+* **`courses` stores every paid offering**, split by `product_type`. Live counts: `course` 501 · `download` 370 · `retreat` 121 · `membership` 107 · `meditation` 3 · `podcast` 1. An unset value is treated as a course, so legacy rows predating the column still surface — and the last two show the column is free text, not an enum, so a new value appears rather than erroring.
+* **`free_resources.resource_type`**: `practice` 213 · `download` 132 · `meditation` 64 · `workshop` 35 · `mini_course` 15 · `course` 1 · `membership` 1. Free text again; the last two are strays from ingestion rather than intended categories.
 * **Subject pages fetch no videos on the server.** They used to, and the whole matching pool was serialised into the HTML so that 24 of them could render — `/subject/self-healing` was 4.9 MB. Videos now load from the client and group into one shelf per teacher. The remaining four collections are still `select('*')` and still uncapped; there is a TODO on that query naming the numbers.
 * **Expiration is enforced at query level.** Courses and free resources only surface while live: `is_active` is true, and `end_date` is either NULL (evergreen) or not yet past. The window is recomputed per request, so it rolls forward on its own.
 
@@ -647,53 +791,95 @@ Run in order from `supabase/migrations/`. There is no migration runner; paste in
 | Community reviews — submission, moderation queue, public display | ✅ Complete |
 | Pending reviews in the admin inbox; badge counts all pending actions | ✅ Complete |
 | Transactional email via Resend — welcomes and review notices | ✅ Complete |
-| GA4 analytics (no consent gate yet) | ⚠️ Partial |
+| Healer email journey — five-email claim sequence, admin Outreach tab, daily cron | ✅ Complete |
+| Cookie consent banner gating GA4 | ✅ Complete |
+| Admin content tab shows all six collections; row delete + inline image editing | ✅ Complete |
+| Deleted healer pages return a real 404 | ✅ Complete |
+| Logged-out account modal; library signup nudge | ✅ Complete |
+| Broken images audit — daily cron, admin queue, soft-404 and bot-challenge handling | ✅ Complete |
+| Healer portrait auditing — all three `image_urls`, daily | ✅ Complete |
+| GA4 analytics | ✅ Complete |
 | Content library (target: 5,000 videos + 5,000 books) | ⬜ Ongoing |
 | Flutter native app | ⬜ Phase 2 |
 | IAM notification system | ⬜ Phase 2 |
 
 📊 Content Library
+Measured against production on **6 October 2026**.
+
 | Collection | Count |
 | :--- | :--- |
-| Healers | 129 |
+| Healers | 126 — 61 Superhero · 48 Luminary · 14 Ascended Master · 3 Local Hero |
+| | by entity: 116 individual · 9 channel · 1 app |
 | Videos | 2,269 |
 | Books | 963 |
 | Courses & offerings | 1,103 |
 | Free resources | 461 |
-| Publishing houses | 2 (Hay House, Sounds True) |
+| Publishing houses | 2 (Hay House, Sounds True) · 34 author links |
 | Subjects | 42 |
-| Emotion mappings | 3,488 rows · 693 emotions |
-| Registered accounts | 6 (2 approved practitioners) |
-| Saved items | 27 |
-| Reviews | 2 |
+| Emotion mappings | 3,488 rows · 693 emotions · all 42 subjects |
+| Sitemap URLs | 4,895 |
+| Registered accounts | 1 |
+| Saved items | 10 |
+| Reviews | 0 |
+| Healer journeys | 0 started |
+| Broken images queued | 42 |
+
+The account, favourite and review numbers are low because the test accounts were
+cleared out — those features are built and exercised, not unused. **126 healers,
+not 129**: Stan Grof was an empty duplicate and was deleted through the admin
+dashboard.
 
 💡 Immediate Next Steps
-| Item | Status |
+**Blocking, in rough order of consequence:**
+
+| Item | Why it matters |
 | :--- | :--- |
-| Email OTP auth + practitioner onboarding | ✅ Complete |
-| Admin CRM phases 1–3 | ✅ Complete |
-| Practitioner dashboard | ✅ Complete |
-| Anon write lockdown across content tables | ✅ Complete |
-| **GA4 consent gate** — cookies are set with no consent on a UK/EU-facing site | ⬜ **Open** |
-| Privacy Policy and Terms of Use — pages exist but are holding text, `noindex` | ⬜ Open |
-| `content_submissions` staging table — needed before practitioners can add content. `videos`/`books` have no published flag and are read wholesale by the homepage, subject pages and sitemap | ⬜ Open |
-| Reviews for healers and publishers — the table's constraint already allows both; only the UI is missing | ⬜ Open |
-| `claimed_at` column to replace the `created_at` comparison | ⬜ Open |
-| Delete account | ✅ Complete |
-| **No record that an email was sent** — no table, no column. Approve a review twice and the reviewer is emailed twice; a failed send leaves nothing to retry from. Fine while these are courtesies, not before mailshots | ⬜ **Open** |
-| Subject page payload — the four server-fetched collections are still `select('*')` and uncapped. `/subject/self-healing` is 4.7 MB | ⬜ Open |
-| Admin phases 4+ — flags, messages, publisher claims. Each needs its own table | ⬜ Next |
-| Ancient Teachers tier | ⬜ Next |
-| Content library (target: 5,000 videos + 5,000 books) | ⬜ Ongoing |
-| Flutter app build | ⬜ Phase 2 |
+| **Verify `CRON_SECRET` in Vercel** | Production returned 401 with the local value, so a value is set but differs. **Both scheduled jobs are silently doing nothing until this is reconciled** — a 401 looks like a healthy response in the Vercel cron log |
+| **Privacy Policy and Terms of Use** | Pages exist, linked from the footer, but hold placeholder text and carry `noindex`. A UK/EU-facing site collecting emails and setting analytics cookies needs both written |
+| **No record that an email was sent** | No table, no column. Approve a review twice and the reviewer is emailed twice; a failed send leaves nothing to retry from. Fine while these are courtesies — not before mailshots |
+| `content_submissions` staging table | Needed before practitioners can add content. `videos`/`books` have no published flag and are read wholesale by the homepage, subject pages and sitemap |
+
+**Known gaps, not urgent:**
+
+| Item | Note |
+| :--- | :--- |
+| Subject page payload | The four server-fetched collections are still `select('*')` and uncapped. There is a TODO on that query naming the numbers |
+| `claimed_at` column | Claimed status is still inferred by comparing `healers.created_at` with `user_profiles.created_at`. A column would make it a property of the row |
+| Reviews for healers and publishers | The table's constraint already allows both; only the UI is missing |
+| Branded 404 page | There is no `app/not-found.js`, so a dead URL gets the Next.js default |
+| Video thumbnails are unaudited | They come from `img.youtube.com`, derived rather than stored, so the broken-images audit cannot see them. A deleted or private video returns a placeholder with a 404. Catching those needs the YouTube Data API |
+| Four portraits the audit cannot read | wim-hof, jason-stephenson, justin-perry and mikao-usui sit behind hosts that challenge any non-browser client. Worth checking by hand |
+| Admin phases 4+ | Flags, messages, publisher claims. Each needs its own table |
+| Ancient Teachers tier | Planned |
+| Content library | Target: 5,000 videos + 5,000 books — ongoing |
+| Flutter app build | Phase 2 |
 
 #### Environment variables
-`NEXT_PUBLIC_SUPABASE_URL` · `NEXT_PUBLIC_SUPABASE_ANON_KEY` · `ADMIN_PASSWORD` ·
-`SUPABASE_SERVICE_ROLE_KEY` · `ADMIN_NAME` · `RESEND_API_KEY` ·
-`NEXT_PUBLIC_GA_MEASUREMENT_ID`
+| Variable | Needed for |
+| :--- | :--- |
+| `NEXT_PUBLIC_SUPABASE_URL` · `NEXT_PUBLIC_SUPABASE_ANON_KEY` | everything |
+| `SUPABASE_SERVICE_ROLE_KEY` | admin data, both crons, every server-side write |
+| `ADMIN_PASSWORD` · `ADMIN_NAME` | the admin login and its greeting |
+| `RESEND_API_KEY` | all ten emails |
+| `CRON_SECRET` | the two scheduled jobs |
+| `NEXT_PUBLIC_GA_MEASUREMENT_ID` | GA4, after consent |
 
 `SUPABASE_SERVICE_ROLE_KEY` bypasses every RLS policy. It must never carry a
 `NEXT_PUBLIC_` prefix, and must be set in Vercel or the admin data sections stay
-empty.
+empty. `RESEND_API_KEY` has no `NEXT_PUBLIC_` prefix for the same reason — email
+cannot be sent from the browser, which is why each client-side trigger has a thin
+server route.
+
+#### Scheduled jobs
+`web/vercel.json`, both guarded by `CRON_SECRET`:
+
+| Job | Schedule |
+| :--- | :--- |
+| `/api/cron/broken-images` | `0 7 * * *` |
+| `/api/cron/journey-emails` | `0 8 * * *` |
+
+**`vercel.json` must sit in `web/`, not the repo root**, and Vercel's Root
+Directory must be set to `web` — the app is not at the top of this repo and a
+root-level `vercel.json` is ignored without a word.
 
 Made with love in Tavira 💫
