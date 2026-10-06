@@ -1,6 +1,10 @@
 {
   "crons": [
     {
+      "path": "/api/cron/broken-images",
+      "schedule": "0 7 * * *"
+    },
+    {
       "path": "/api/cron/journey-emails",
       "schedule": "0 8 * * *"
     }

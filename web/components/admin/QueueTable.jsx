@@ -70,9 +70,12 @@ export default function QueueTable({ items, onOpen, selectedId }) {
               {item.href ? (
                 <Link
                   href={item.href}
-                  className="rounded-full bg-white/10 px-4 py-1.5 text-xs font-bold text-white transition-colors hover:bg-white/20"
+                  className="whitespace-nowrap rounded-full bg-white/10 px-4 py-1.5 text-xs font-bold text-white transition-colors hover:bg-white/20"
                 >
-                  Open
+                  {/* "Open" for a review, which is a thing to read. "Fix" for a
+                      broken image, which is a thing to repair — the row says
+                      what the click is for rather than only where it goes. */}
+                  {item.action || 'Open'}
                 </Link>
               ) : (
                 <button

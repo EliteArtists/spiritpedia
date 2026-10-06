@@ -5,6 +5,8 @@
 // into the same shape, which is what lets one row component render an
 // application, a claim, a flag and a message without knowing the difference.
 
+import { NOT_AN_IMAGE, TABLE_LABELS } from '@/utils/brokenImages';
+
 export const QUEUE_TYPES = {
   application: {
     key: 'application',
@@ -48,9 +50,17 @@ export const QUEUE_TYPES = {
     live: true,
     chip: 'border-amber-500/40 bg-amber-500/10 text-amber-300',
   },
+  broken_image: {
+    key: 'broken_image',
+    label: 'Broken image',
+    icon: '🖼️',
+    live: true,
+    chip: 'border-orange-500/40 bg-orange-500/10 text-orange-300',
+  },
 };
 
 export const STATUS_STYLES = {
+  broken: 'border-orange-500/40 bg-orange-500/10 text-orange-300',
   pending: 'border-amber-500/40 bg-amber-500/10 text-amber-300',
   incomplete: 'border-slate-600 bg-slate-800 text-slate-400',
   approved: 'border-emerald-500/40 bg-emerald-500/10 text-emerald-300',
@@ -106,6 +116,40 @@ export function timeAgo(iso) {
   return `${months} month${months === 1 ? '' : 's'}`;
 }
 
+// A URL short enough for a queue row but still identifying.
+//
+// The host is the part that matters at a glance — 577 of these point at
+// encrypted-tbn0.gstatic.com, so "all of today's failures share one host" is
+// the single most useful thing a list of them can show, and it is the host that
+// says it. The filename is kept because it is what distinguishes two rows on
+// the same host; the middle of the path is what goes.
+export function truncateUrl(url, max = 48) {
+  if (!url) return '';
+  if (url.length <= max) return url;
+
+  try {
+    const { host, pathname } = new URL(url);
+    const file = pathname.split('/').filter(Boolean).pop() || '';
+    const short = `${host}/…/${file}`;
+    return short.length <= max ? short : `${short.slice(0, max - 1)}…`;
+  } catch {
+    // Not parseable as a URL, which is itself worth seeing rather than hiding.
+    return `${url.slice(0, max - 1)}…`;
+  }
+}
+
+// What went wrong, in words rather than a status line.
+//
+// 415 is the audit's own verdict for a 200 that carried a web page instead of
+// a picture — app.karinagrant.co.uk answers every image request with its
+// single-page-app shell and never 404s. Rendering that as "HTTP 415" would
+// describe a response nobody sent; rendering the 200 it really was would read
+// as a bug in the audit. It says what it means instead.
+export function describeFailure(status) {
+  if (status === NOT_AN_IMAGE) return 'Not an image';
+  return status ? `HTTP ${status}` : 'No response';
+}
+
 function personName(profile) {
   return (profile.full_name || '').trim() || profile.email || 'Unnamed account';
 }
@@ -121,9 +165,10 @@ const TIER_WORDS = {
 // contribute nothing — the chips for those say "soon" rather than "0", because
 // zero is a measurement and these have not been measured.
 //
-// `reviews` is optional and defaults to none, so a caller that has not been
-// taught about them yet still gets a queue rather than an exception.
-export function buildQueue(profiles, reviews = []) {
+// `reviews` and `brokenImages` are optional and default to none, so a caller
+// that has not been taught about them yet still gets a queue rather than an
+// exception.
+export function buildQueue(profiles, reviews = [], brokenImages = []) {
   if (!Array.isArray(profiles)) return [];
   const items = [];
 
@@ -196,6 +241,45 @@ export function buildQueue(profiles, reviews = []) {
       detail: `${review.content_type} · ${review.content_slug}`,
       status: 'pending',
       href: '/admin/reviews',
+    });
+  }
+
+  // A broken image is the other queue item that is about a thing rather than a
+  // person, and it uses the same `href` escape hatch as a review: QueueReviewer
+  // only knows how to render the sources hanging off a profile, so anything
+  // else names its destination and is sent there instead of opened in place.
+  //
+  // The route is the healer's own Content tab, which is where the thumbnail and
+  // the field that replaces it already live — so "Fix" lands on the control
+  // rather than near it.
+  for (const row of Array.isArray(brokenImages) ? brokenImages : []) {
+    items.push({
+      id: `broken_image:${row.table_name}:${row.record_id}`,
+      type: 'broken_image',
+      // first_seen_at, not detected_at. The Time column answers "how long has
+      // this been wrong" — detected_at is the last audit that confirmed it and
+      // is never more than a week old, so it would read as though every broken
+      // image appeared this week.
+      at: row.first_seen_at,
+      person: row.healer_slug || 'Unattributed content',
+      title: `${TABLE_LABELS[row.table_name] || row.table_name} · ${row.title || 'Untitled'}`,
+      // The status code earns its place: a 404 is a missing file and a 403 is a
+      // host that has started refusing us, and they are fixed differently.
+      detail: [describeFailure(row.status_code), truncateUrl(row.image_url)]
+        .filter(Boolean)
+        .join(' · '),
+      status: 'broken',
+      action: 'Fix →',
+      // A row whose healer could not be resolved still has somewhere to go: the
+      // directory. /admin/content/null would be a 404 and would strand it.
+      //
+      // A PROFILE PHOTO IS EDITED ON A DIFFERENT TAB. The content thumbnails
+      // live on Content; a healer's three portraits are the Images field on
+      // Profile. Sending a portrait row to ?tab=content would land the admin
+      // on a list that does not contain the thing they came to fix.
+      href: row.healer_slug
+        ? `/admin/content/${row.healer_slug}?tab=${row.table_name === 'healers' ? 'profile' : 'content'}`
+        : '/admin/content',
     });
   }
 

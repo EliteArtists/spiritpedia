@@ -27,6 +27,7 @@ export function AdminDataProvider({ children }) {
     // `profiles` being null, and a second null would make every consumer check
     // twice for the same outage.
     pendingReviews: [],
+    brokenImages: [],
     counts: {},
     error: null,
   });
@@ -53,6 +54,7 @@ export function AdminDataProvider({ children }) {
         loading: false,
         profiles: json.profiles ?? null,
         pendingReviews: json.pendingReviews || [],
+        brokenImages: json.brokenImages || [],
         counts: json.counts || {},
         error: json.error || null,
       };
@@ -61,6 +63,7 @@ export function AdminDataProvider({ children }) {
         loading: false,
         profiles: null,
         pendingReviews: [],
+        brokenImages: [],
         counts: {},
         error: err?.name === 'AbortError' ? 'unreachable' : err.message,
       };
@@ -97,7 +100,14 @@ export function AdminDataProvider({ children }) {
   // the admin just as much. The number is now everything that needs a decision,
   // which is what a badge on an inbox is read as.
   const pendingReviewCount = state.pendingReviews?.length || 0;
-  const pendingActions = pendingApplications + pendingReviewCount;
+
+  // Broken images count toward the badge for the same reason reviews do: it is
+  // a thing waiting on the admin. The route already applies the failures >= 2
+  // threshold, so this is the number worth acting on rather than the number
+  // recorded — and it falls to zero on its own when the next audit finds the
+  // images restored, which is what makes the badge trustworthy.
+  const brokenImageCount = state.brokenImages?.length || 0;
+  const pendingActions = pendingApplications + pendingReviewCount + brokenImageCount;
 
   return (
     <AdminDataContext.Provider
@@ -107,6 +117,7 @@ export function AdminDataProvider({ children }) {
         accountsAvailable,
         pendingApplications,
         pendingReviewCount,
+        brokenImageCount,
         pendingActions,
         claims,
       }}

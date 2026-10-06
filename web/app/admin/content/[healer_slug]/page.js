@@ -2,7 +2,7 @@
 
 import { use, useCallback, useEffect, useMemo, useState } from 'react';
 import Link from 'next/link';
-import { useRouter } from 'next/navigation';
+import { useRouter, useSearchParams } from 'next/navigation';
 import SectionHeading from '@/components/admin/SectionHeading';
 import { Placeholder } from '@/components/admin/AdminPlaceholders';
 import DataProblem from '@/components/admin/DataProblem';
@@ -442,6 +442,30 @@ function ContentTab({ slug, healerId }) {
         setSavingImageId(null);
         return false;
       }
+
+      // CLEAR THE QUEUE ROW NOW, not at the next audit.
+      //
+      // The audit visits a seventh of the catalogue a day, so a row fixed here
+      // would otherwise sit in the Inbox for up to a week still claiming to be
+      // broken — and an admin who has just fixed something and watched it stay
+      // in the queue stops believing the queue. Deleting on save makes the
+      // count mean "still wrong".
+      //
+      // Deliberately not awaited for its result beyond this: if the delete
+      // fails the image is still fixed, and the next audit clears the row by
+      // itself. Failing the save over it would be the wrong trade.
+      await fetch('/api/admin/write', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          table: 'broken_images',
+          op: 'delete',
+          // record_id is text — books use bigint ids, courses and free
+          // resources use UUIDs — so the id is stringified to match what the
+          // audit stored.
+          match: { table_name: target, record_id: String(item.id) },
+        }),
+      }).catch(() => {});
 
       const key = target === 'free_resources' ? 'resources' : target;
       setContent((prev) => ({
@@ -919,7 +943,20 @@ export default function AdminHealerRecordPage({ params }) {
   const [subjects, setSubjects] = useState([]);
   const [error, setError] = useState(null);
 
-  const [tab, setTab] = useState('Profile');
+  // ?tab=content OPENS ON THE CONTENT TAB, which is what makes the Inbox's
+  // "Fix" button land on the thumbnail rather than one click away from it. A
+  // queue row that deposits you on a Profile form and leaves you to find the
+  // broken picture yourself is a link to a page, not a fix.
+  //
+  // Read once, as the initial value only. Changing the tab afterwards must not
+  // write to the URL: this page is reached from the Inbox and from the healer
+  // directory, and a back button that stepped through four tabs before
+  // returning to the list would be worse than one that goes back.
+  const searchParams = useSearchParams();
+  const requestedTab = TABS.find(
+    (t) => t.toLowerCase() === (searchParams.get('tab') || '').toLowerCase()
+  );
+  const [tab, setTab] = useState(requestedTab || 'Profile');
   const [draft, setDraft] = useState({});
   const [saving, setSaving] = useState(false);
   const [toast, setToast] = useState(null);
@@ -1062,6 +1099,31 @@ export default function AdminHealerRecordPage({ params }) {
           setHealer(fresh);
           setDraft(fresh);
         }
+        // CLEAR THE PORTRAIT ROW NOW, not at the next audit.
+        //
+        // Content thumbnails do this in saveImage(); a healer's three
+        // portraits are edited as part of the whole-draft save, so the same
+        // clearing has to happen here or a fixed face photo would sit in the
+        // Inbox until tomorrow's run still claiming to be broken.
+        //
+        // Only when the images were actually touched — saving a phone number
+        // should not quietly dismiss a genuine finding. The next audit re-adds
+        // the row if the new URL is broken too, so a wrong guess costs a day,
+        // not a permanent blind spot.
+        if (changes.image_urls || changes.image_url) {
+          await fetch('/api/admin/write', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+              table: 'broken_images',
+              op: 'delete',
+              // record_id is text across every audited table; healers.id is a
+              // bigint, so it is stringified to match what the audit stored.
+              match: { table_name: 'healers', record_id: String(healer.id) },
+            }),
+          }).catch(() => {});
+        }
+
         const n = Object.keys(changes).length;
         setToast({ type: 'success', message: `Saved. ${n} field${n === 1 ? '' : 's'} updated.` });
       }
@@ -1332,8 +1394,23 @@ export default function AdminHealerRecordPage({ params }) {
                 <div className="mt-1 space-y-2">
                   {[...(draft.image_urls || []), ''].map((url, i) => (
                     <div key={i} className="flex items-center gap-2">
+                      {/* CardImage, not a bare <img>: a dead portrait renders
+                          the same ▦ placeholder the public site renders,
+                          instead of the browser's broken-image icon. 73% of
+                          these URLs point at Google's image cache, so this is
+                          the field where a broken one is actually noticed —
+                          and an <img> that fails before hydration never fires
+                          onError, which is the case CardImage exists for. */}
                       {url ? (
-                        <img src={url} alt="" className="h-9 w-9 shrink-0 rounded border border-white/10 object-cover" />
+                        <span className="h-9 w-9 shrink-0 overflow-hidden rounded border border-white/10 bg-[#0a0f1d]">
+                          <CardImage
+                            src={url}
+                            alt=""
+                            className="h-full w-full object-cover"
+                            fallbackEmoji="▦"
+                            fallbackClassName="flex h-full w-full items-center justify-center text-slate-700"
+                          />
+                        </span>
                       ) : (
                         <span className="h-9 w-9 shrink-0 rounded border border-dashed border-white/10" />
                       )}

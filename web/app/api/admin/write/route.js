@@ -29,6 +29,11 @@ const TABLES = new Set([
   // — the table's trigger pins it against the author on both insert and
   // update, so approving one cannot be done from the browser session.
   'reviews',
+  // The broken-image queue, so saving a replacement URL clears the row that
+  // reported it. RLS on that table has no policy at all, so the anon key
+  // cannot see it, let alone delete from it — this route's service role is the
+  // only way in, and the admin session cookie is what gates it.
+  'broken_images',
 ]);
 
 const OPS = new Set(['insert', 'update', 'delete']);

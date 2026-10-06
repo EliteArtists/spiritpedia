@@ -1,5 +1,6 @@
 import { NextResponse } from 'next/server';
 import { adminClient, isAdminRequest, NOT_CONFIGURED } from '@/utils/supabaseAdmin';
+import { MIN_FAILURES } from '@/utils/brokenImages';
 
 export const dynamic = 'force-dynamic';
 
@@ -37,7 +38,7 @@ export async function GET() {
 
   if (!supabase) {
     return NextResponse.json(
-      { ...NOT_CONFIGURED, counts, profiles: null, pendingReviews: [] },
+      { ...NOT_CONFIGURED, counts, profiles: null, pendingReviews: [], brokenImages: [] },
       { status: 200 }
     );
   }
@@ -64,6 +65,24 @@ export async function GET() {
     .eq('status', 'pending')
     .order('created_at', { ascending: false });
 
+  // Images that failed their audit, and only the ones worth showing.
+  //
+  // failures >= MIN_FAILURES is the whole dampener: a row is recorded on its
+  // first failure so the second can be counted, but one failed fetch is far
+  // more often a timeout or a rate-limited burst than a missing file, and
+  // surfacing those would put hundreds of healthy images in the queue on the
+  // first bad afternoon.
+  //
+  // Needs the service role: broken_images has RLS on with no policy at all, so
+  // the anon key cannot read it. Oldest first — a thing that has been broken
+  // for a month is more urgent than one that broke yesterday, which is the
+  // opposite of how an application queue reads.
+  const { data: brokenImages } = await supabase
+    .from('broken_images')
+    .select('table_name, record_id, healer_slug, title, image_url, status_code, failures, first_seen_at')
+    .gte('failures', MIN_FAILURES)
+    .order('first_seen_at', { ascending: true });
+
   // user_profiles has no email column — the address lives in auth.users, which
   // only the service role can read. One listUsers call and a lookup map is far
   // cheaper than a getUserById per profile.
@@ -85,10 +104,12 @@ export async function GET() {
   counts.claims = withEmail.filter((p) => p.linked_healer_slug).length;
   counts.users_this_week = withEmail.filter((p) => p.created_at && p.created_at >= since).length;
   counts.pending_reviews = (pendingReviews || []).length;
+  counts.broken_images = (brokenImages || []).length;
 
   return NextResponse.json({
     profiles: withEmail,
     pendingReviews: pendingReviews || [],
+    brokenImages: brokenImages || [],
     counts,
   });
 }

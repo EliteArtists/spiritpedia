@@ -18,13 +18,15 @@ const FILTERS = [
   { key: 'application', label: 'Applications' },
   { key: 'claim', label: 'Claims' },
   { key: 'review', label: 'Reviews' },
+  { key: 'broken_image', label: 'Broken Images' },
   { key: 'message', label: 'Messages' },
   { key: 'flag', label: 'Flags' },
   { key: 'content', label: 'Content' },
 ];
 
 export default function AdminInboxPage() {
-  const { profiles, pendingReviews, loading, reload, accountsAvailable, error } = useAdminData();
+  const { profiles, pendingReviews, brokenImages, loading, reload, accountsAvailable, error } =
+    useAdminData();
   const [filter, setFilter] = useState('all');
   const [selectedId, setSelectedId] = useState(null);
   const [busy, setBusy] = useState(false);
@@ -48,7 +50,10 @@ export default function AdminInboxPage() {
     reload();
   }, [reload]);
 
-  const queue = useMemo(() => buildQueue(profiles, pendingReviews), [profiles, pendingReviews]);
+  const queue = useMemo(
+    () => buildQueue(profiles, pendingReviews, brokenImages),
+    [profiles, pendingReviews, brokenImages]
+  );
   const visible = useMemo(
     () => (filter === 'all' ? queue : queue.filter((i) => i.type === filter)),
     [queue, filter]
