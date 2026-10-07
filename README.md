@@ -350,9 +350,9 @@ into `web/components/EmotionSearch.js`.
 The gates run in a fixed order, and the order is not negotiable:
 
 1. **Normalise.** Lowercase, strip accents and apostrophe variants, then peel
-   112 lead-in phrases (`i feel`, `i have been feeling`, `why do i always`),
+   117 lead-in phrases (`i feel`, `i have been feeling`, `why do i always`),
    determiners and trailing filler until a bare emotion is left.
-2. **Crisis intercept.** 103 phrases across seven categories — suicidal
+2. **Crisis intercept.** 171 phrases across seven categories — suicidal
    ideation, self-harm, eating disorder, active abuse, sexual assault, child
    protection, acute crisis. A match suppresses *everything*, including
    universal search, and renders an interstitial pointing to
@@ -366,15 +366,70 @@ The gates run in a fixed order, and the order is not negotiable:
    bar asks, warmly and with both options carrying equal weight, and maps on the
    answer.
 4. **Soft tier.** Phrases that are heavy but not emergencies ("hopeless", "i
-   hate myself") return results with a gentler framing line above them.
-5. **Lookup.** A candidate cascade from the normalised query, exact match first;
-   a partial (`ilike`) match is the last resort, never the first.
+   hate myself", "hate my body") return results with a gentler framing line.
+   The line now also renders on the no-results screen, which is where an
+   unmatched heavy phrase lands — the one tier whose whole purpose is to say
+   "there is help" used to say nothing there.
+5. **Lookup.** Four passes, in this order, each running only when the one
+   before it found nothing. See *How a phrase finds its subjects* below.
 6. **Medical disclaimer.** Results weighted towards quantum healing, homeopathy,
    energy medicine or ayurveda carry *"Complementary to, not a replacement for,
    medical care."*
 
-The mapping data lives in `emotion_mappings`: **693 distinct emotions** across
-**3,488 weighted rows**, covering **all 42 subjects**.
+The mapping data lives in `emotion_mappings`: **701 distinct emotions** across
+**3,531 weighted rows**, covering **all 42 subjects**.
+
+#### How a phrase finds its subjects
+The vocabulary was never the weak part. An audit of 51 phrases of the kind
+people actually type found **7 matched**, while "my mum died", "broken heart"
+and "end of my marriage" all sat in the table unreachable — because the person
+had written "my mum JUST died", "my heart IS broken", "my marriage ENDED". The
+lookup only ever found an exact stored phrase, so it worked when the query was
+`[known lead-in] + [exact stored emotion]` and nothing else.
+
+Four passes now, first hit wins:
+
+| # | Pass | Finds |
+| :--- | :--- | :--- |
+| 1 | **Candidate cascade** | The query as typed, then one candidate per matching lead-in, shortest prefix first. Exact equality on the indexed `emotion` column |
+| 2 | **Content-token containment** | A stored emotion whose every content word appears in the query. "my mum just died" → `my mum died` |
+| 3 | **Reverse substring** | A stored emotion appearing whole inside the query |
+| 4 | **Forward substring** | A stored emotion *containing* the query — for bare words, where a one-word query really is part of a longer phrase |
+
+**Pass 2 requires full coverage of the stored phrase**, and that threshold is
+the difference between it working and it being worse than nothing. A looser
+half-the-words rule reached 86% coverage and produced "everyone else has it
+figured out" → `burnt out`, matching on the word "out". For someone describing
+how they feel, a confidently wrong answer is worse than an honest blank.
+
+**Pass 4 must match a whole word, bounded at both ends.** Unbounded, "hope"
+found `hopeless` and a search for hope returned the depression bundle. Bounding
+only the start does not fix it — "hopeless" *begins* with "hope". Hyphens count
+as boundaries, so "tapping" still reaches `eft-tapping`.
+
+**Passes 3 and 4 both exist on purpose.** Reversing the comparison rather than
+adding to it took "anger" from working to not working: a sentence needs the
+reverse, a bare word needs the forward.
+
+**When a query is nothing but stopwords**, the token list empties and pass 2
+would be skipped entirely — "i feel nothing" and "i dont know who i am anymore"
+both strip to zero. One retry then runs against a much smaller set of pure
+function words, where "nothing", "who" and "know" survive. Fallback only:
+running it by default would let "who" and "know" match far too much.
+
+Two things worth knowing about the shape of the data. Stored emotions are
+short — roughly 70% are one or two words — while people type five to seven, so
+the matcher's whole job is spanning that gap. And noun/adjective pairs are not
+interchangeable: `angry` was stored and `anger` was not, `sad` and not
+`sadness`. Those are rows, not code, and worth sweeping for rather than fixing
+one at a time.
+
+#### When nothing matches
+The dead end used to read *"No matches found — try 'anxious', 'lost', or
+'heartbroken'"*, which asks someone who has just written down how they feel to
+go away and feel it more simply. It now puts the shortfall on Spiritpedia and
+offers the words as clickable examples that fill the box, rather than as
+instructions.
 
 #### Publishing Houses
 A publishing house is a first-class entity, not a text field on a book. Houses
@@ -718,7 +773,7 @@ Run in order from `supabase/migrations/`. There is no migration runner; paste in
 * **reviews**: `id`, `user_id` (→ auth.users), `content_type`, `content_slug`, `rating` (1–5), `body`, `author_name`, `author_healer_slug`, `status`, `created_at`. Unique on (user, type, slug). Public read is `status = 'approved'`; the author can read their own whatever its state
 * **healer_journeys**: `id` (uuid), `healer_slug` (→ healers, ON DELETE CASCADE), `status`, `stop_reason`, `started_at`, `sent_1_at` … `sent_5_at`, `created_at`. Service role only. One running journey per healer, enforced by a partial unique index so stopped ones remain
 * **broken_images**: `id`, `table_name`, `record_id`, `healer_slug`, `title`, `image_url`, `status_code`, `failures`, `first_seen_at`, `detected_at`. Unique on (`table_name`, `record_id`); RLS on with no policy at all, so only the service role can see it. `record_id` is **text** because books use bigint ids while courses and free resources use UUIDs
-* **emotion_mappings**: `id`, `emotion`, `subject_slug`, `weight` — powers the emotional search bar; one emotion maps to several weighted subjects. 3,488 rows covering 693 distinct emotions and all 42 subjects
+* **emotion_mappings**: `id` (uuid), `emotion`, `subject_slug`, `weight`, `created_at` — powers the emotional search bar; one emotion maps to several weighted subjects, 5–8 of them, so a search returns a shelf rather than a single link. 3,531 rows covering 701 distinct emotions and all 42 subjects. Unique on (`emotion`, `subject_slug`), so additions can be written `ON CONFLICT DO NOTHING` and re-run safely. Emotions are stored lower-case and **apostrophe-free** (`im`, not `I'm`) — the matcher normalises the same way, and a row stored with an apostrophe would never match
 
 #### Conventions worth knowing
 * **`subject_slugs` is a Postgres array**, not a string. Every subject filter is an array-containment check (`.contains(...)` → the `@>` operator), which matches a slug as one whole element — that is what makes hyphenated tags like `eft-tapping` safe.
@@ -772,6 +827,8 @@ Run in order from `supabase/migrations/`. There is no migration runner; paste in
 | Share button — native OS sheet on mobile, dropdown on desktop | ✅ Complete |
 | Brand identity — gold star mark, Spiritpedia wordmark, circular favicon | ✅ Complete |
 | Emotional mapping system — crisis intercept, dual path, soft tier, medical disclaimer | ✅ Complete |
+| Emotion search matching — content-token containment, bounded substring passes, stopword fallback | ✅ Complete |
+| Crisis intercept widened to oblique phrasings (171 phrases) | ✅ Complete |
 | Publishing Houses — homepage shelf, profiles, per-author shelves, favourites | ✅ Complete |
 | Homepage performance — on-demand shelves, lazy images, video pagination | ✅ Complete |
 | Sticky subject pills + navbar handoff + floating My Library button | ✅ Complete |
@@ -816,7 +873,7 @@ Measured against production on **6 October 2026**.
 | Free resources | 461 |
 | Publishing houses | 2 (Hay House, Sounds True) · 34 author links |
 | Subjects | 42 |
-| Emotion mappings | 3,488 rows · 693 emotions · all 42 subjects |
+| Emotion mappings | 3,531 rows · 701 emotions · all 42 subjects |
 | Sitemap URLs | 4,895 |
 | Registered accounts | 1 |
 | Saved items | 10 |
