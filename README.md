@@ -906,6 +906,11 @@ dashboard.
 | Branded 404 page | There is no `app/not-found.js`, so a dead URL gets the Next.js default |
 | Video thumbnails are unaudited | They come from `img.youtube.com`, derived rather than stored, so the broken-images audit cannot see them. A deleted or private video returns a placeholder with a 404. Catching those needs the YouTube Data API |
 | Four portraits the audit cannot read | wim-hof, jason-stephenson, justin-perry and mikao-usui sit behind hosts that challenge any non-browser client. Worth checking by hand |
+| Emotion search — four phrases still unmatched | From the 73-phrase live audit: *"I keep making the same mistakes"*, *"why do I always mess things up"*, *"nothing makes sense anymore"*, *"I feel nothing"* is fixed but these are not. The first two have near-misses in the table (`cant make mistakes`, `ruin good things`) whose words do not align; the third shares no word with anything stored. Rows, not code |
+| Emotion search — noun forms missing | `angry` was stored without `anger`, `sad` without `sadness`, `confused` without `confusion`. All three are now added, but they were found one at a time. Worth sweeping every stored adjective for its missing noun rather than waiting for each to surface |
+| Emotion search — no bundle for hope | Bounding the substring pass stopped `hope` returning the depression bundle via `hopeless`, which was the bug; it now returns nothing from the mapping. `faith` and `optimism` are not stored either, so there is no positive-register bundle to mirror. A small territory worth filling |
+| Emotion search — typos miss entirely | `i feel anziuos`, `im deprresed`. There is no fuzzy matching by design. Adding it needs a distance threshold and carries real precision risk — the thing this matcher has been tuned hardest against — so it is a deliberate decision, not an oversight |
+| Emotion search — a subject's own name buries the subject | Typing `yoga`, `breathwork`, `manifestation`, `law of attraction` or `shadow work` returns universal hits with the SUBJECTS row last, under up to eight titles. `meditation` is the exception because it is also a stored emotion. Ranking, not coverage |
 | Admin phases 4+ | Flags, messages, publisher claims. Each needs its own table |
 | Ancient Teachers tier | Planned |
 | Content library | Target: 5,000 videos + 5,000 books — ongoing |
