@@ -120,13 +120,38 @@ async function lookupReverseContained(normalised) {
 
   // The original direction: a stored emotion CONTAINING the query. Useless
   // for a sentence, correct for a bare word.
+  //
+  // FIX A — IT MUST BE A WHOLE WORD.
+  //
+  // Unbounded, this matched any stored emotion with the query anywhere inside
+  // it, and "hope" found "hopeless": the live audit had a search for hope
+  // returning the depression bundle — self-healing, breathwork, meditation,
+  // yoga — which is close to the opposite of what was asked for.
+  //
+  // Bounding only the START does not fix it, because "hopeless" begins with
+  // "hope" at position 0. The match has to be bounded at BOTH ends, so "hope"
+  // is rejected by the "less" that follows it while "anger" is still found
+  // inside "festering anger" — the case this fallback exists for.
+  //
+  // The ilike stays as the cheap indexed prefilter; the boundary test runs on
+  // what comes back, which keeps it independent of how PostgREST handles
+  // regex.
   const { data } = await supabase
     .from('emotion_mappings')
     .select('id, emotion, subject_slug, weight')
     .ilike('emotion', `%${normalised}%`)
     .order('weight', { ascending: false })
-    .limit(12);
-  return data || [];
+    .limit(60);
+
+  const bounded = wholeWordRegex(normalised);
+  return (data || []).filter((row) => bounded.test(row.emotion));
+}
+
+// Hyphens count as boundaries alongside whitespace, so "tapping" still finds
+// "eft-tapping" rather than being blocked by its own punctuation.
+function wholeWordRegex(phrase) {
+  const escaped = phrase.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  return new RegExp(`(?:^|[\\s-])${escaped}(?:[\\s-]|$)`, 'i');
 }
 
 // The candidate vocabulary for containment: every stored emotion sharing at

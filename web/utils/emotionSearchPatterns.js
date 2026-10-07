@@ -370,10 +370,39 @@ const CONTENT_STOPWORDS = new Set([
   'know', 'think', 'it', 'its', 'own', 'too', 'now', 'today',
 ]);
 
-function contentTokens(s) {
+/* FIX B — WHAT TO DO WHEN THE QUERY IS ALL STOPWORDS.
+ *
+ * The list above is tuned for sentences with a noun in them. Some of the most
+ * common things people type have none: "i feel nothing" and "i dont know who
+ * i am anymore" both strip to ZERO tokens, so containment never ran at all
+ * and the search returned a blank.
+ *
+ * The words doing the work in those two are exactly the ones a generic
+ * stopword list throws away — "nothing", "who", "know". So when the strict
+ * pass empties the query, it is retried against this much smaller set of
+ * pure function words, where those survive.
+ *
+ * Only ever a FALLBACK. Running relaxed by default would let "who", "what"
+ * and "know" match far too much; it earns its keep precisely because it runs
+ * when the alternative is nothing at all. */
+const CORE_STOPWORDS = new Set([
+  'i', 'im', 'ive', 'id', 'we', 'you', 'me', 'my', 'mine',
+  'a', 'an', 'the', 'this', 'that', 'these', 'those',
+  'to', 'of', 'in', 'on', 'at', 'for', 'from', 'with',
+  'and', 'or', 'but', 'if', 'as', 'than', 'then', 'so',
+  'is', 'are', 'was', 'were', 'be', 'been', 'being', 'am',
+  'do', 'does', 'did', 'have', 'has', 'had',
+  'will', 'would', 'can', 'could', 'should',
+  'cant', 'dont', 'wont', 'didnt', 'doesnt', 'isnt', 'arent', 'wasnt',
+  'it', 'its', 'too', 'now', 'just', 'really', 'very', 'quite',
+  'all', 'always', 'still', 'again', 'like', 'feel', 'feeling', 'feels',
+]);
+
+function contentTokens(s, relaxed = false) {
+  const stop = relaxed ? CORE_STOPWORDS : CONTENT_STOPWORDS;
   return String(s || '')
     .split(' ')
-    .filter((w) => w && !CONTENT_STOPWORDS.has(w));
+    .filter((w) => w && !stop.has(w));
 }
 
 /* The best stored emotion whose content words ALL appear in the query.
@@ -386,13 +415,15 @@ function contentTokens(s) {
  * `vocabulary` is a list of stored emotion strings. Supplying only the ones
  * that share a word with the query is the caller's business; this function
  * works on whatever it is handed. */
-function bestContainedEmotion(normalised, vocabulary) {
-  const queryWords = new Set(contentTokens(normalised));
+function bestContainedEmotion(normalised, vocabulary, relaxed = false) {
+  const queryWords = new Set(contentTokens(normalised, relaxed));
   if (!queryWords.size) return null;
 
   let best = null;
   for (const emotion of vocabulary || []) {
-    const words = contentTokens(emotion);
+    // The stored phrase is tokenised the same way as the query, or the two
+    // sides would be measured against different rulers.
+    const words = contentTokens(emotion, relaxed);
     // An emotion made only of stopwords would match everything. The cascade
     // reaches both of those already.
     if (!words.length) continue;
@@ -766,17 +797,26 @@ async function resolveEmotionSearch(rawQuery, lookup, opts = {}) {
   // it this step is skipped and the function behaves exactly as before.
   let containedVia = null;
   if ((!rows || !rows.length) && typeof opts.vocabularyLookup === 'function') {
-    const words = contentTokens(normalised);
-    if (words.length) {
-      const vocabulary = await opts.vocabularyLookup(words);
-      const hit = bestContainedEmotion(normalised, vocabulary);
-      if (hit) {
-        const containedRows = await lookup(hit);
-        if (containedRows && containedRows.length) {
-          rows = containedRows;
-          matched = hit;
-          containedVia = hit;
-        }
+    // Strict first. Relaxed only if the strict pass left nothing to search
+    // with — see CORE_STOPWORDS. Two attempts at most.
+    const attempts = [];
+    const strict = contentTokens(normalised);
+    if (strict.length) attempts.push({ words: strict, relaxed: false });
+    else {
+      const loose = contentTokens(normalised, true);
+      if (loose.length) attempts.push({ words: loose, relaxed: true });
+    }
+
+    for (const attempt of attempts) {
+      const vocabulary = await opts.vocabularyLookup(attempt.words);
+      const hit = bestContainedEmotion(normalised, vocabulary, attempt.relaxed);
+      if (!hit) continue;
+      const containedRows = await lookup(hit);
+      if (containedRows && containedRows.length) {
+        rows = containedRows;
+        matched = hit;
+        containedVia = hit;
+        break;
       }
     }
   }
@@ -816,6 +856,7 @@ const SpiritpediaEmotionSearch = {
   buildLookupCandidates,
   contentTokens,
   bestContainedEmotion,
+  CORE_STOPWORDS,
   stripOnce,
   stripAll,
   checkCrisis,
@@ -843,6 +884,7 @@ export {
   buildLookupCandidates,
   contentTokens,
   bestContainedEmotion,
+  CORE_STOPWORDS,
   stripOnce,
   stripAll,
   checkCrisis,
