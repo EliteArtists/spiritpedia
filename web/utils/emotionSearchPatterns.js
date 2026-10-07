@@ -153,6 +153,19 @@ const STRIP_PREFIXES = [
   'feeling very',
   'feeling so',
   'feeling',
+  // --- bare pronoun openers ---
+  //
+  // Added 2026-10-07. "dont know what to do" is a stored emotion; "i dont
+  // know what to do" is what people type, and nothing in the list above
+  // reached it — the nearest entry is "i dont know what to do ABOUT", which
+  // requires a word the user did not write. One of only two stored emotions
+  // made entirely of stopwords (the other is "why me"), so the content-token
+  // fallback below cannot reach them either. These strip to them exactly.
+  'ive',
+  'id',
+  'im',
+  'i',
+  'we',
   // --- bare intensifiers ---
   'really',
   'very',
@@ -299,6 +312,113 @@ function buildLookupCandidates(normalised) {
 
 
 /* ---------------------------------------------------------------------
+ * 2b. CONTENT-TOKEN CONTAINMENT  (added 2026-10-07)
+ *
+ * THE CASCADE ABOVE ONLY EVER FINDS AN EXACT STORED PHRASE. It strips known
+ * lead-ins and tries each result as an equality lookup, so it succeeds only
+ * when the query is [known prefix] + [exact stored emotion] and nothing more.
+ * Any extra word anywhere and it returns nothing.
+ *
+ * Measured against 51 phrases of the kind people actually type: 7 matched.
+ * The vocabulary was not the problem — "my mum died", "broken heart" and
+ * "end of my marriage" are all stored, and all three were unreachable because
+ * the person wrote "my mum JUST died", "my heart IS broken", "my marriage
+ * ENDED".
+ *
+ * So: after the cascade misses, find the stored emotion whose every content
+ * word appears somewhere in the query. "my mum just died" contains both "mum"
+ * and "died", so "my mum died" matches.
+ *
+ * FULL COVERAGE OF THE STORED PHRASE IS REQUIRED, and that threshold is the
+ * difference between this working and this being worse than nothing. A looser
+ * rule — half the stored words — lifted coverage to 86% and produced
+ * "everyone else has it figured out" -> "burnt out", matching on the word
+ * "out". For someone describing how they feel, a confidently wrong answer is
+ * worse than an honest blank.
+ *
+ * Stopwords carry the same lesson. "all the time" is already a strip suffix,
+ * but inside a longer sentence it survives, and without "time" and "out" on
+ * this list "my chest feels tight all the time" matches "angry all the time".
+ * ------------------------------------------------------------------- */
+
+/* Words that carry no emotional signal. Deliberately broad: a token that
+ * survives here has to be worth matching on by itself.
+ *
+ * Checked against the vocabulary: exactly TWO stored emotions are made
+ * entirely of these — "dont know what to do" and "why me". Both are reachable
+ * by the bare-pronoun prefixes added above, which is why they were added. */
+const CONTENT_STOPWORDS = new Set([
+  'i', 'im', 'ive', 'id', 'we', 'you', 'me', 'my', 'mine',
+  /* 'myself' is deliberately NOT a stopword. It is the difference between
+   * "i hate myself" and "i hate the way i look": with it stripped, the stored
+   * phrase reduces to the single token "hate" and hijacks every sentence
+   * containing that word — including one about body image, which would then
+   * also raise the soft-tier support line meant for self-directed hatred.
+   * Self-reference is signal here, not noise. */
+  'a', 'an', 'the', 'this', 'that', 'these', 'those', 'some', 'any',
+  'to', 'of', 'in', 'on', 'at', 'for', 'from', 'with', 'into', 'over',
+  'up', 'down', 'and', 'or', 'but', 'if', 'as', 'than', 'then', 'so',
+  'is', 'are', 'was', 'were', 'be', 'been', 'being', 'am', 'do', 'does',
+  'did', 'have', 'has', 'had', 'will', 'would', 'can', 'could', 'should',
+  'cant', 'dont', 'wont', 'didnt', 'doesnt', 'isnt', 'arent', 'wasnt',
+  'feel', 'feeling', 'feels', 'felt', 'like', 'just', 'really', 'very',
+  'quite', 'much', 'more', 'most', 'all', 'always', 'still', 'again',
+  'anymore', 'about', 'what', 'whats', 'why', 'how', 'when', 'where',
+  'who', 'which', 'there', 'here', 'way', 'time', 'out', 'else',
+  'everything', 'anything', 'nothing', 'everyone', 'anyone', 'nobody',
+  'keep', 'keeps', 'get', 'got', 'going', 'go', 'want', 'wants', 'need',
+  'know', 'think', 'it', 'its', 'own', 'too', 'now', 'today',
+]);
+
+function contentTokens(s) {
+  return String(s || '')
+    .split(' ')
+    .filter((w) => w && !CONTENT_STOPWORDS.has(w));
+}
+
+/* The best stored emotion whose content words ALL appear in the query.
+ *
+ * Ranked by how many content words it covers — a two-word match is more
+ * specific than a one-word match, so "my mum died" beats "mum guilt" on
+ * "my mum just died". Ties go to the SHORTER stored string, which favours the
+ * canonical form: "life purpose" over "whats my purpose".
+ *
+ * `vocabulary` is a list of stored emotion strings. Supplying only the ones
+ * that share a word with the query is the caller's business; this function
+ * works on whatever it is handed. */
+function bestContainedEmotion(normalised, vocabulary) {
+  const queryWords = new Set(contentTokens(normalised));
+  if (!queryWords.size) return null;
+
+  let best = null;
+  for (const emotion of vocabulary || []) {
+    const words = contentTokens(emotion);
+    // An emotion made only of stopwords would match everything. The cascade
+    // reaches both of those already.
+    if (!words.length) continue;
+    if (!words.every((w) => queryWords.has(w))) continue;
+
+    /* Most content words wins — a two-word match is more specific than a
+     * one-word one, so "my mum died" beats "mum guilt" on "my mum just died".
+     *
+     * Ties go to the LONGER stored string, and that is not arbitrary: on
+     * "i cant sleep because my mind wont stop", both "cant sleep" and
+     * "cant stop" reduce to a single content token, and preferring the
+     * shorter picked "cant stop" by one character. The longer phrase is the
+     * more specific one and here it is also the right one. */
+    if (
+      !best ||
+      words.length > best.count ||
+      (words.length === best.count && emotion.length > best.emotion.length)
+    ) {
+      best = { emotion, count: words.length };
+    }
+  }
+  return best ? best.emotion : null;
+}
+
+
+/* ---------------------------------------------------------------------
  * 3. CRISIS INTERCEPT (Phase 4b)
  *
  * Checked BEFORE the mapping lookup. If a query matches, the lookup
@@ -322,6 +442,61 @@ const CRISIS_PATTERNS = {
     'better off without me', 'better off dead', 'dont want to be here anymore',
     'dont want to live', 'cant go on', 'cant keep going', 'ready to give up on life',
     'planning to end', 'how to kill myself',
+
+    /* WIDENED 2026-10-07 — the oblique register.
+     *
+     * The list above catches people who say it plainly. Testing 19 realistic
+     * phrasings against it, 16 went straight through and returned an empty
+     * dropdown. They were safe only by accident: nothing matched them, so
+     * nothing was served. The content-token fallback added in the same release
+     * removes that accident, which is why these ship together and not one
+     * after the other.
+     *
+     * Still multi-word wherever a single word would misfire. "disappear"
+     * alone would catch "i want my anxiety to disappear"; "want to disappear"
+     * does not. Verified against all 693 stored emotions: zero collisions. */
+    'want to disappear', 'wish i could disappear', 'just disappear',
+    'nobody would miss me', 'no one would miss me', 'nobody would care if i',
+    'no one would notice if i', 'nobody needs me',
+    'whats the point of anything', 'whats the point of living',
+    'whats the point of being alive', 'no point in anything',
+    'cant do this anymore', 'cant take this anymore', 'cant take it anymore',
+    'cant live like this anymore', 'cant handle this anymore',
+    'giving up on everything', 'give up on everything', 'feel like giving up on',
+    'want it all to stop', 'want it to all stop', 'want it all to end',
+    'want everything to stop', 'make it all stop', 'want the pain to stop',
+    'thinking about ending', 'been thinking about ending', 'thought about ending it',
+    'thinking of ending it', 'ending things',
+    'dont see a way forward', 'cant see a way forward', 'no way forward',
+    'theres no way out', 'no way out of this', 'see no future',
+    'dont see a future', 'no future for me',
+    'life isnt worth living', 'life is not worth living', 'not worth living',
+    'had enough of living', 'tired of living', 'done with life',
+    'burden to everyone', 'burden to my family', 'im a burden',
+    'everyone would be better off', 'world would be better without me',
+    'go to sleep and not wake up', 'not wake up tomorrow',
+    'dont want to wake up', 'hope i dont wake up',
+
+    /* INVISIBILITY — moved here from the soft tier on Ross's call
+     * (2026-10-07), having first been placed there.
+     *
+     * The argument for the soft tier was that feeling invisible is more often
+     * loneliness than suicidality, and that a full-screen takeover misfires on
+     * the majority who type it. The argument for here is that the cost of the
+     * two mistakes is not symmetrical: a lonely person shown a helpline has
+     * been over-served, and a suicidal person shown a carousel of videos has
+     * been failed. Ross's call, and on that reading it is the right one.
+     *
+     * Consequence to know rather than discover: 'i feel invisible' is broad
+     * enough to catch "i feel invisible at work", which will now be
+     * intercepted. That is accepted, not overlooked. Narrow it by removing
+     * that one entry and keeping only the longer forms. */
+    'i feel invisible to everyone', 'feel invisible to everyone',
+    'invisible to everyone', 'i feel invisible', 'feel invisible',
+    'nobody sees me', 'no one sees me', 'nobody notices me',
+    'no one notices me', 'nobody even sees me',
+    'i feel like i dont exist', 'feel like i dont exist',
+    'like i dont exist', 'i dont exist to anyone',
   ],
   self_harm: [
     'self harm', 'selfharm', 'self harming', 'harm myself', 'harming myself',
@@ -481,6 +656,12 @@ const DUAL_PATH = {
  *   hate my body  -> Body image & embodiment
  * ------------------------------------------------------------------- */
 
+/* Invisibility briefly lived here and now sits in the hard intercept above —
+ * see the note there. This tier is back to the three it was approved with.
+ *
+ * The crisis check runs first and returns, so a phrase in both lists would
+ * never reach this one; keeping it in a single place avoids a second list to
+ * remember when either changes. */
 const SOFT_TIER_PATTERNS = ['i hate myself', 'hopeless', 'hate my body'];
 const SOFT_TIER_COMPILED = SOFT_TIER_PATTERNS.map(buildPhraseRegex);
 
@@ -576,14 +757,50 @@ async function resolveEmotionSearch(rawQuery, lookup, opts = {}) {
     if (rows && rows.length) { matched = candidate; break; }
   }
 
+  // 3b — content-token containment, ONLY once every exact candidate has
+  // missed. The cascade still runs first and still wins, so nothing that
+  // resolved before this existed resolves differently now.
+  //
+  // `vocabularyLookup` is injected like `lookup`: given the query's content
+  // words it returns stored emotion strings worth testing. Optional — without
+  // it this step is skipped and the function behaves exactly as before.
+  let containedVia = null;
+  if ((!rows || !rows.length) && typeof opts.vocabularyLookup === 'function') {
+    const words = contentTokens(normalised);
+    if (words.length) {
+      const vocabulary = await opts.vocabularyLookup(words);
+      const hit = bestContainedEmotion(normalised, vocabulary);
+      if (hit) {
+        const containedRows = await lookup(hit);
+        if (containedRows && containedRows.length) {
+          rows = containedRows;
+          matched = hit;
+          containedVia = hit;
+        }
+      }
+    }
+  }
+
   if (!rows || !rows.length) {
-    return { type: 'no_results', normalised, triedCandidates: candidates };
+    return {
+      type: 'no_results',
+      normalised,
+      triedCandidates: candidates,
+      // The support line belongs on this screen too. Someone who types
+      // "hopeless" or "i feel invisible" and matches nothing was previously
+      // shown a bare dead end — the one tier whose entire purpose is to say
+      // "there is help" said nothing, because it only ever decorated results.
+      softTier: checkSoftTier(normalised) ? SOFT_TIER_LINE : null,
+    };
   }
 
   // 4 — soft tier and disclaimer decorate the results; they never replace them
   return {
     type: 'results',
     matchedEmotion: matched,
+    // Which path found it, so the caller can tell an exact hit from an
+    // inferred one — and so a future session can measure the split.
+    via: containedVia ? 'containment' : 'cascade',
     rows,
     softTier: checkSoftTier(normalised) ? SOFT_TIER_LINE : null,
     medicalDisclaimer: needsMedicalDisclaimer(rows) ? MEDICAL_DISCLAIMER : null,
@@ -597,6 +814,8 @@ async function resolveEmotionSearch(rawQuery, lookup, opts = {}) {
 const SpiritpediaEmotionSearch = {
   normaliseQuery,
   buildLookupCandidates,
+  contentTokens,
+  bestContainedEmotion,
   stripOnce,
   stripAll,
   checkCrisis,
@@ -611,6 +830,7 @@ const SpiritpediaEmotionSearch = {
   CRISIS_PATTERNS,
   AMBIGUOUS_PATTERNS,
   SOFT_TIER_PATTERNS,
+  CONTENT_STOPWORDS,
   CRISIS_INTERSTITIAL,
   DUAL_PATH,
   SOFT_TIER_LINE,
@@ -621,6 +841,8 @@ const SpiritpediaEmotionSearch = {
 export {
   normaliseQuery,
   buildLookupCandidates,
+  contentTokens,
+  bestContainedEmotion,
   stripOnce,
   stripAll,
   checkCrisis,
@@ -635,6 +857,7 @@ export {
   CRISIS_PATTERNS,
   AMBIGUOUS_PATTERNS,
   SOFT_TIER_PATTERNS,
+  CONTENT_STOPWORDS,
   CRISIS_INTERSTITIAL,
   DUAL_PATH,
   SOFT_TIER_LINE,

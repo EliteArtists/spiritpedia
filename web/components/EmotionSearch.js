@@ -11,6 +11,7 @@ import {
   checkSoftTier,
   needsMedicalDisclaimer,
   resolveEmotionSearch,
+  contentTokens,
   CRISIS_INTERSTITIAL,
   DUAL_PATH,
   SOFT_TIER_LINE,
@@ -72,9 +73,53 @@ async function lookupExactEmotion(emotion) {
   return data || [];
 }
 
-// Last resort only, once every exact candidate has missed: the old substring
-// behaviour, so a partial phrase still surfaces something rather than nothing.
-async function lookupPartialEmotion(normalised) {
+// FIX 3 — THE SUBSTRING TEST WAS THE WRONG WAY ROUND.
+//
+// It asked `emotion ILIKE %<whole query>%`: which stored emotion CONTAINS the
+// user's entire sentence? For a sentence the answer is always none. A stored
+// emotion of "lost" can never contain "i feel completely lost today", so this
+// fired on 1 of 51 test phrases and was, in effect, dead code.
+//
+// The useful question is the reverse — does the QUERY contain a stored
+// emotion? That cannot be expressed as a PostgREST filter: `.ilike()` takes a
+// column on the left, and `.ilike('<user text>', ...)` would be read as a
+// column named after whatever the person typed. The comparison has to happen
+// where the query string lives, which is here.
+//
+// So: ask the database for emotions sharing a word with the query (cheap,
+// indexed, narrow), then test containment locally. Measured at 0.6 KB per
+// search against 106 KB to download the whole vocabulary up front — and it
+// cannot go stale, which a cached vocabulary would.
+// BOTH DIRECTIONS, and the second one is not redundant — it is a regression
+// this fix caused and then had to undo.
+//
+// Reversing the comparison fixed sentences and broke single words. `anger` is
+// not a stored emotion, but `festering anger` is, and the ORIGINAL direction
+// found it: a one-word query genuinely is a substring of a longer stored
+// phrase. Replacing the old direction rather than adding to it took "anger"
+// from working to not working, which the test set caught.
+//
+// So the reverse runs first (it is the one that handles how people actually
+// write), and the original forward substring stays as the last resort. The
+// net effect is strictly additive: nothing that resolved before can stop
+// resolving now.
+async function lookupReverseContained(normalised) {
+  const words = contentTokens(normalised);
+
+  if (words.length) {
+    const vocabulary = await lookupEmotionVocabulary(words);
+    // Longest first: "broken heart" should win over "broken" where both are
+    // present in the sentence.
+    const ordered = [...new Set(vocabulary)].sort((a, b) => b.length - a.length);
+    const hit = ordered.find((emotion) => normalised.includes(emotion));
+    if (hit) {
+      const rows = await lookupExactEmotion(hit);
+      if (rows.length) return rows;
+    }
+  }
+
+  // The original direction: a stored emotion CONTAINING the query. Useless
+  // for a sentence, correct for a bare word.
   const { data } = await supabase
     .from('emotion_mappings')
     .select('id, emotion, subject_slug, weight')
@@ -82,6 +127,32 @@ async function lookupPartialEmotion(normalised) {
     .order('weight', { ascending: false })
     .limit(12);
   return data || [];
+}
+
+// The candidate vocabulary for containment: every stored emotion sharing at
+// least one content word with the query.
+//
+// One request, and a small one — the filter is an OR of ILIKEs over the
+// indexed `emotion` column, capped so a very common word cannot return the
+// table. Tokens are alphanumeric by the time they arrive (normaliseQuery has
+// already removed punctuation), so none of them can break out of the filter
+// syntax; the guard below is belt and braces.
+const VOCAB_TOKEN_LIMIT = 8;
+const VOCAB_ROW_LIMIT = 400;
+
+async function lookupEmotionVocabulary(words) {
+  const safe = words
+    .filter((w) => /^[a-z0-9-]+$/.test(w))
+    .slice(0, VOCAB_TOKEN_LIMIT);
+  if (!safe.length) return [];
+
+  const { data } = await supabase
+    .from('emotion_mappings')
+    .select('emotion')
+    .or(safe.map((w) => `emotion.ilike.%${w}%`).join(','))
+    .limit(VOCAB_ROW_LIMIT);
+
+  return [...new Set((data || []).map((r) => r.emotion))];
 }
 
 // The dual path's "exploring" option names its own subjects. `hearing voices`
@@ -257,7 +328,12 @@ export default function EmotionSearch() {
       const [emotionRes, healersRes, booksRes, videosRes, subjectsRes] = await Promise.all([
         // Steps 1-6 live inside the module; lookupExactEmotion is the injected
         // contract, one indexed equality hit per candidate.
-        resolveEmotionSearch(value, lookupExactEmotion, { dualPathAnswer }),
+        resolveEmotionSearch(value, lookupExactEmotion, {
+          dualPathAnswer,
+          // FIX 1 — runs inside the module, after the cascade misses and
+          // before this is called no_results. Order of operations unchanged.
+          vocabularyLookup: lookupEmotionVocabulary,
+        }),
         supabase
           .from('healers')
           .select('id, name, healer_slug, tier, image_urls')
@@ -270,9 +346,13 @@ export default function EmotionSearch() {
 
       let resolved = emotionRes;
 
-      // Partial match, only once every exact candidate has missed.
+      // Reverse substring, only once the cascade AND content-token
+      // containment have both missed. Containment makes this nearly
+      // redundant — it catches "broken heart" inside a sentence where the
+      // words are adjacent — but it still earns its place for stored phrases
+      // whose words are all stopwords bar one.
       if (resolved.type === 'no_results') {
-        const partial = await lookupPartialEmotion(normalised);
+        const partial = await lookupReverseContained(normalised);
         if (partial.length) resolved = decorate(partial, normalised);
       }
 
@@ -404,13 +484,24 @@ export default function EmotionSearch() {
       return;
     }
 
-    const resolved = await resolveEmotionSearch(raw, lookupExactEmotion, { dualPathAnswer });
+    const resolved = await resolveEmotionSearch(raw, lookupExactEmotion, {
+      dualPathAnswer,
+      vocabularyLookup: lookupEmotionVocabulary,
+    });
     if (resolved.type === 'results' && resolved.rows[0]) {
       navigate(`/subject/${resolved.rows[0].subject_slug}`);
       return;
     }
-    const partial = await lookupPartialEmotion(normalised);
-    if (partial[0]) navigate(`/subject/${partial[0].subject_slug}`);
+    const partial = await lookupReverseContained(normalised);
+    if (partial[0]) {
+      navigate(`/subject/${partial[0].subject_slug}`);
+      return;
+    }
+    // Nothing matched. Open the dropdown on the dead-end rather than
+    // navigating somewhere arbitrary — pressing Enter should never land
+    // someone on a subject page that has nothing to do with what they wrote.
+    setResolution({ type: 'no_results', normalised, softTier: null });
+    setOpen(true);
   }
 
   function handleSubmit(e) {
@@ -720,10 +811,58 @@ export default function EmotionSearch() {
                 )}
               </>
             ) : (
-              <span className="text-gray-500 text-sm px-4 py-3 block text-center">
-                No matches found — try &apos;anxious&apos;, &apos;lost&apos;, or &apos;heartbroken&apos; to explore
-                by feeling, or search for a healer or book
-              </span>
+              /* FIX 4 — THE DEAD END.
+                 It used to read "No matches found — try 'anxious', 'lost', or
+                 'heartbroken'". That asks someone who has just written down
+                 how they feel to go away and feel it more simply, which is
+                 the precise thing this product exists not to do. It also
+                 reads as an error about them rather than about us.
+                 What replaces it keeps the one genuinely useful part — that
+                 shorter works better here — but puts the shortfall on
+                 Spiritpedia, offers the words as examples rather than
+                 instructions, and leaves the door open. */
+              <div className="px-5 py-4 text-center">
+                <p className="text-sm text-gray-300">
+                  We haven&apos;t found a match for that yet.
+                </p>
+                <p className="mt-1.5 text-sm text-gray-500">
+                  A few words often works best here — something like{' '}
+                  <button
+                    type="button"
+                    onMouseDown={(e) => { e.preventDefault(); setValue('overwhelmed'); }}
+                    className="text-violet-300 underline-offset-2 hover:underline"
+                  >
+                    overwhelmed
+                  </button>
+                  ,{' '}
+                  <button
+                    type="button"
+                    onMouseDown={(e) => { e.preventDefault(); setValue('disconnected'); }}
+                    className="text-violet-300 underline-offset-2 hover:underline"
+                  >
+                    disconnected
+                  </button>
+                  {' '}or{' '}
+                  <button
+                    type="button"
+                    onMouseDown={(e) => { e.preventDefault(); setValue('lost'); }}
+                    className="text-violet-300 underline-offset-2 hover:underline"
+                  >
+                    lost
+                  </button>
+                  . Or browse by subject below.
+                </p>
+                {/* The soft-tier support line reaches this screen now. Someone
+                    who types "hopeless" or "i feel invisible" and matches
+                    nothing used to get the bare dead end — the one tier whose
+                    whole purpose is to say "there is help" said nothing,
+                    because it only ever decorated results. */}
+                {resolution?.softTier && (
+                  <p className="mt-3 text-xs leading-relaxed text-gray-500">
+                    {resolution.softTier}
+                  </p>
+                )}
+              </div>
             )}
           </div>
         )}
