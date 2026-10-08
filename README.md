@@ -801,30 +801,33 @@ Run in order from `supabase/migrations/`. There is no migration runner; paste in
 | `0007_force_content_read_only` | enumerates `pg_policies` and drops by actual name. Ends with a SELECT so the result is visible rather than assumed |
 | `0008_reviews` | the reviews table, its RLS, and the trigger that pins `status` and `author_healer_slug`. **Amended after the fact** to exempt the service role — the first version froze `status` against every caller, which meant no review could ever be approved |
 | `0009_healer_journeys` | the claim-outreach sequence. A **partial** unique index (`WHERE status <> 'stopped'`) rather than a plain UNIQUE, so a stopped journey survives as history and a healer can be restarted |
-| `0010_broken_images` | the image audit queue. **Amended after the fact** to add `healers` to the `table_name` CHECK when portraits joined the audit; the `ALTER` is a second statement rather than an edit to the `CREATE`, so the file reads in the order the database received it |
+| `0010_broken_images` | the image audit queue. **Amended after the fact** to add `healers` to the `table_name` CHECK when portraits joined the audit; the `ALTER` is a second statement rather than an edit to the `CREATE`, so the file reads in the order the database received it. Reconciled against production 8 Oct 2026 and carries a verification block that compares a database to the file |
+| `0011_emotion_vocabulary` | the 43 emotion rows added by hand during the emotion-search work, read back out of production rather than retyped. `ON CONFLICT … DO UPDATE SET weight`, so the file is the authority on those rows and safe to re-run. **Does not stand alone** — see the warning below |
 
 🧨 Database state not captured in this repository
 **The repository does not tell you what the live database contains.** Three
 kinds of drift exist, all deliberate, none recoverable from git alone.
 
-#### 1. SQL applied by hand that is in NO migration file
-`supabase/migrations/` ends at `0010`. These writes happened in the Supabase
-SQL editor and were never written to a file:
+#### 1. The emotion vocabulary — PARTLY captured, and the rest is missing
+43 rows were applied by hand on 7 Oct 2026 and existed in no file. They are
+now captured in **`0011_emotion_vocabulary.sql`**, read back out of production
+and verified row-for-row against it, so that gap is closed.
 
-| What | When | Rows |
-| :--- | :--- | :--- |
-| `emotion_mappings` vocabulary additions — `anger`, `i feel empty`, `i feel like im going in circles`, `sadness`, `despair`, `confusion`, `i dont know what i want from life`, `i feel nothing` | 6–8 Oct 2026 | **+43** |
+**The larger gap is not.** Nothing in `supabase/migrations/` creates the
+`emotion_mappings` table, and the original seed — `spiritpedia-emotion-mappings.sql`,
+roughly **3,488 rows across 693 emotions** — **is not in this repository.** It
+is referenced in the header of `web/utils/emotionSearchPatterns.js` and
+nowhere else.
 
-`emotion_mappings` is therefore **3,531 rows / 701 emotions** in production,
-against the 3,488 / 693 a fresh reading of the repo would imply. The inserts
-were written `ON CONFLICT (emotion, subject_slug) DO NOTHING`, so they are
-safe to re-run; they are reproducible from the git history of this README and
-from the session that added them, but **not from any file in `supabase/`**.
+So production holds **3,531 rows / 701 emotions**, of which this repo can
+reproduce **43**. A database rebuilt from `supabase/migrations/` alone has no
+`emotion_mappings` table at all, and `0011` will fail against it — which is
+the right outcome, because it reports a missing seed rather than quietly
+shipping a search with 2% of its vocabulary.
 
-**If you ever rebuild this database from `supabase/migrations/` alone, the
-emotion search will regress** — eight emotions people actually type will stop
-matching. Writing a `0011_emotion_vocabulary.sql` capturing these is the
-cleanest way to close this gap and is listed under Next Steps.
+**Finding or re-exporting that seed file is the single most valuable piece of
+database housekeeping left.** Until then, the production database is the only
+copy of the emotional-search vocabulary that exists.
 
 #### 2. Migrations applied before their file existed
 * **`0010_broken_images`** — the table was created by hand on 6 Oct, and the file written afterwards as the record. Its `CHECK` constraint was then **altered in production** to add `healers`; that `ALTER` is the second statement in the file. The file is idempotent and matches the live schema (verified by probing all four `table_name` values and confirming `videos` is still rejected).
@@ -978,7 +981,7 @@ dashboard.
 
 | Item | Why it matters |
 | :--- | :--- |
-| **`0011_emotion_vocabulary.sql`** | 43 rows of emotion vocabulary live only in production, in no migration file. Rebuild the database from `supabase/migrations/` alone and the emotion search silently regresses. See *Database state not captured in this repository* |
+| **Export the `emotion_mappings` seed** | `0011` now captures the 43 hand-added rows, but the other **3,488 rows and the table itself exist in no file**. Production is the only copy of the emotional-search vocabulary. `pg_dump` that table to `supabase/seed/` — it is the highest-value housekeeping left |
 | **Privacy Policy and Terms of Use** | Pages exist, linked from the footer, but hold placeholder text and carry `noindex`. A UK/EU-facing site collecting emails and setting analytics cookies needs both written |
 | **No record that an email was sent** | No table, no column. Approve a review twice and the reviewer is emailed twice; a failed send leaves nothing to retry from. Fine while these are courtesies — not before mailshots |
 | `content_submissions` staging table | Needed before practitioners can add content. `videos`/`books` have no published flag and are read wholesale by the homepage, subject pages and sitemap |
