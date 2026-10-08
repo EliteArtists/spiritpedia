@@ -1,6 +1,44 @@
 Spiritpedia
 A spiritual encyclopedia for the modern age — uniting timeless wisdom with personalised, AI-powered tools to help humans raise their vibration, find healing, and live in harmony.
 
+🤝 HANDOVER — read this first
+**The Spiritpedia web platform is complete. The next phase of development is
+Flutter.** This README is written to hand the project to someone — or some
+session — with no prior context.
+
+#### Known-good baseline
+| | |
+| :--- | :--- |
+| Repository | `https://github.com/EliteArtists/spiritpedia` |
+| Branch | `main` — the only branch; there is no develop/staging branch |
+| Last code change | **`7c9cc47`** (8 October 2026) — everything after it is documentation only, so `7c9cc47` is the known-good baseline for the running site |
+| Production | Vercel, auto-deploying every push to `main` |
+| Live at | **https://www.spiritpedia.co** — `spiritpedia.co` and the legacy `spirit-pedia.com` both 301 here |
+| Supabase project | `uzmvcgewxgvnybdhvsyx` (`https://uzmvcgewxgvnybdhvsyx.supabase.co`) |
+
+Every commit on `main` is deployed. There is no release process, no staging
+environment and no feature flags: merging to `main` *is* shipping. **Verified
+working in production as of 8 October 2026** — the site serves, and the daily
+`broken-images` cron ran at 07:00 UTC that morning and wrote 8 rows, which is
+end-to-end proof that Vercel's Root Directory, `vercel.json` and `CRON_SECRET`
+are all correctly configured.
+
+#### Vercel settings that are not in this repo
+* **Root Directory must be `web`.** The Next app is not at the repo root, and `web/vercel.json` — which declares both cron schedules — is ignored unless Vercel is pointed at `web`. It currently is; do not change it.
+* Environment variables are set in the Vercel dashboard, not in any file here. See *Environment variables* at the foot of this README for the full list.
+
+#### What "complete" means
+Everything in *Project Status* below is built, deployed and in use. What remains
+is listed in *Immediate Next Steps* and *Deliberately unfinished* — none of it
+blocks a Flutter build, because Flutter talks to the same Supabase project and
+inherits the same schema, RLS policies and server routes.
+
+#### Before you touch Flutter
+Read *Getting Oriented* (immediately below), *Security model*, and *Database
+state not captured in this repository*. The third one matters most: **parts of
+the live database were applied by hand and exist in no migration file**, so a
+fresh clone does not tell you what the database actually contains.
+
 🚀 Getting Oriented
 **The app is not at the root of this repo.** It lives in `web/`; there is no
 root `package.json`.
@@ -53,8 +91,8 @@ The entry point is always emotional:
 📲 Platform Model
 | Platform | Role | Status |
 | :--- | :--- | :--- |
-| Web App (Next.js) | Primary product — full discovery experience | ✅ Live at [spiritpedia.co](https://spiritpedia.co) |
-| Native App (Flutter) | Phase 2 — iOS & Android with push notifications | ⬜ Planned |
+| Web App (Next.js) | Primary product — full discovery experience | ✅ **Complete and live** at [www.spiritpedia.co](https://www.spiritpedia.co) |
+| Native App (Flutter) | **The current phase** — iOS & Android with push notifications | ⬜ Not started |
 
 #### Domains
 `spiritpedia.co` is the primary domain and the one to share. The original
@@ -65,6 +103,15 @@ The Next.js web app delivers the full Spiritpedia experience and allows rapid co
 
 #### Why Flutter Next
 Push notifications are a core part of the Spiritpedia experience — the IAM (I AM) affirmation system requires reliable native push. Web push on iOS is unreliable. Flutter is the right long-term home for Spiritpedia.
+
+#### What Flutter inherits, and what it does not
+The Flutter app connects to **the same Supabase project**. It inherits the
+schema, the RLS policies, the field-protection triggers and the
+`claim_healer_profile()` RPC for free. Plan around three things:
+
+* **Every write that matters is behind a Next.js API route, not RLS.** `/api/admin/write`, `/api/practitioner/profile`, `/api/profile/resubmit` and the `/api/email/*` routes hold the service role or verify a user token. Since migration `0007` the anon key has **no write grant on any content table**, so a Flutter client using the anon key can read everything and write almost nothing. Flutter must either call these same HTTP routes or get its own server-side equivalents. Do not solve this by loosening RLS.
+* **Auth is email OTP only** — no passwords, no social providers. `supabase_flutter` handles this, but the `pending_user_types` hop (the practitioner/explorer choice carried across the verification gap, keyed by email so it survives a magic link opened on another device) is a Spiritpedia-specific pattern that will need porting.
+* **The emotional-search safety gates are client-side logic in `utils/emotionSearchPatterns.js`** — crisis intercept, dual path, soft tier. They are pure functions with no database or network dependency, which makes them portable, but **they must be ported, not skipped.** A Flutter search box that reaches the mapping lookup without the crisis intercept in front of it would hand a list of videos to someone in a crisis. That is the one piece of this codebase where a shortcut is genuinely dangerous.
 
  Bento Subject-Based Navigation (The Just Eat Model)
 Spiritpedia is structured like a spiritual discovery app. Instead of "Pizza" or "Thai Food," users explore subjects such as:
@@ -191,7 +238,7 @@ The `/web` directory contains the full Next.js application.
 | web/components/CardImage.js | Card artwork — lazy-loaded, and survives a dead image URL |
 | web/components/HealerCard.js | Healer card — four-tier badge, tier tooltip, favourite toggle, portrait fallback |
 | web/components/PublisherCard.jsx | Publishing house card — logo panel, author count, favourite toggle |
-| web/components/BookCard.js | Book cover with synopsis popover and affiliate deep links |
+| web/components/BookCard.js | Book cover with synopsis popover. Links internally to `/books/[slug]` — it carries **no** outbound purchase links |
 | web/components/VideoPlayer.js | Video card — thumbnail routes to `/videos/[slug]`, heart saves without a page load |
 | web/components/OfferingCard.js | Paid offering card — CTA varies by product_type |
 | web/components/FreeResourceCard.js | Free resource card with resource_type badge |
@@ -552,7 +599,7 @@ reachable by keyboard. Videos are the exception: their thumbnail is derived from
 the YouTube id at render time, so there is nothing to store and nothing to edit.
 
 **The Healer Directory** was the gap behind "why don't pre-loaded healers appear
-in People?". They never could: People lists *accounts* (`user_profiles`, 1 row
+in People?". They never could: People lists *accounts* (`user_profiles`, 2 rows
 today), and a pre-loaded healer has none. The two populations meet only where an account
 has claimed a profile. The directory pages on `id`, selects only the five columns
 the list renders, and the record editor writes 21 fields through
@@ -756,6 +803,43 @@ Run in order from `supabase/migrations/`. There is no migration runner; paste in
 | `0009_healer_journeys` | the claim-outreach sequence. A **partial** unique index (`WHERE status <> 'stopped'`) rather than a plain UNIQUE, so a stopped journey survives as history and a healer can be restarted |
 | `0010_broken_images` | the image audit queue. **Amended after the fact** to add `healers` to the `table_name` CHECK when portraits joined the audit; the `ALTER` is a second statement rather than an edit to the `CREATE`, so the file reads in the order the database received it |
 
+🧨 Database state not captured in this repository
+**The repository does not tell you what the live database contains.** Three
+kinds of drift exist, all deliberate, none recoverable from git alone.
+
+#### 1. SQL applied by hand that is in NO migration file
+`supabase/migrations/` ends at `0010`. These writes happened in the Supabase
+SQL editor and were never written to a file:
+
+| What | When | Rows |
+| :--- | :--- | :--- |
+| `emotion_mappings` vocabulary additions — `anger`, `i feel empty`, `i feel like im going in circles`, `sadness`, `despair`, `confusion`, `i dont know what i want from life`, `i feel nothing` | 6–8 Oct 2026 | **+43** |
+
+`emotion_mappings` is therefore **3,531 rows / 701 emotions** in production,
+against the 3,488 / 693 a fresh reading of the repo would imply. The inserts
+were written `ON CONFLICT (emotion, subject_slug) DO NOTHING`, so they are
+safe to re-run; they are reproducible from the git history of this README and
+from the session that added them, but **not from any file in `supabase/`**.
+
+**If you ever rebuild this database from `supabase/migrations/` alone, the
+emotion search will regress** — eight emotions people actually type will stop
+matching. Writing a `0011_emotion_vocabulary.sql` capturing these is the
+cleanest way to close this gap and is listed under Next Steps.
+
+#### 2. Migrations applied before their file existed
+* **`0010_broken_images`** — the table was created by hand on 6 Oct, and the file written afterwards as the record. Its `CHECK` constraint was then **altered in production** to add `healers`; that `ALTER` is the second statement in the file. The file is idempotent and matches the live schema (verified by probing all four `table_name` values and confirming `videos` is still rejected).
+* **`0008_reviews`** — amended after the fact to exempt the service role from the status-pinning trigger. The file in the repo is the corrected version.
+
+#### 3. Live data that is not seed data
+| Table | State | Note |
+| :--- | :--- | :--- |
+| `broken_images` | **43 rows, all queued** (`failures >= 2`) | Real findings. 15×404, 14×403, 13×415 soft-404, 1 no-response. By table: 33 courses, 6 free resources, 3 books, 1 healer portrait |
+| `healer_journeys` | **0** | Infrastructure is live and the cron runs, but **no journey has ever been started for a real healer**. Starting one sends a real email to a real practitioner — deliberate that none has been |
+| `user_profiles` | **2** | The original test accounts were deleted. Low numbers mean the accounts features are unused, not unbuilt |
+| `user_favourites` | 10 | |
+| `reviews` | **0** | The review system is complete and exercised; nothing has been submitted since the test rows were cleared |
+| `healers` | 126 | Was 129. "Stan Grof" (id 132) was an empty duplicate deleted via the admin dashboard; "Stanislav Grof" (id 133, 78 items) is the real record and is intact |
+
 🗄️ Database Structure (Supabase)
 #### Tables
 * **healers**: `id`, `name`, `healer_slug`, `bio`, `tier`, `entity_type`, `birth_year`, `death_year`, `image_urls[]`, `subject_slugs[]`, `availability_type`, `country`, `city`, `contact_email`, `contact_phone`, `booking_url`, `website_url`, `youtube_url`, `instagram_url`, `facebook_url`, `twitter_url`, `tiktok_url`
@@ -791,8 +875,11 @@ Run in order from `supabase/migrations/`. There is no migration runner; paste in
 💰 Monetisation
 * **Local Hero directory listings**: £5–£10/month per practitioner
 * **Luminary listings (future)**: Nominal fee once platform delivers measurable value
-* **Affiliate links**: Amazon books embedded in content cards
+* **Amazon affiliate links**: investigated and specified, **not yet built** — see *Amazon Associates* under Next Steps
 * **Premium features (Phase 2)**: Personalised journeys, AI coaching, advanced library
+
+No revenue is currently collected. Nothing on the site is monetised today:
+909 books carry an `amazon_url` and **not one carries an affiliate tag**.
 
 ✅ Project Status
 | Milestone | Status |
@@ -861,7 +948,7 @@ Run in order from `supabase/migrations/`. There is no migration runner; paste in
 | IAM notification system | ⬜ Phase 2 |
 
 📊 Content Library
-Measured against production on **6 October 2026**.
+Measured against production on **8 October 2026**.
 
 | Collection | Count |
 | :--- | :--- |
@@ -875,11 +962,11 @@ Measured against production on **6 October 2026**.
 | Subjects | 42 |
 | Emotion mappings | 3,531 rows · 701 emotions · all 42 subjects |
 | Sitemap URLs | 4,895 |
-| Registered accounts | 1 |
+| Registered accounts | 2 |
 | Saved items | 10 |
 | Reviews | 0 |
 | Healer journeys | 0 started |
-| Broken images queued | 42 |
+| Broken images queued | 43 |
 
 The account, favourite and review numbers are low because the test accounts were
 cleared out — those features are built and exercised, not unused. **126 healers,
@@ -891,10 +978,96 @@ dashboard.
 
 | Item | Why it matters |
 | :--- | :--- |
-| **Verify `CRON_SECRET` in Vercel** | Production returned 401 with the local value, so a value is set but differs. **Both scheduled jobs are silently doing nothing until this is reconciled** — a 401 looks like a healthy response in the Vercel cron log |
+| **`0011_emotion_vocabulary.sql`** | 43 rows of emotion vocabulary live only in production, in no migration file. Rebuild the database from `supabase/migrations/` alone and the emotion search silently regresses. See *Database state not captured in this repository* |
 | **Privacy Policy and Terms of Use** | Pages exist, linked from the footer, but hold placeholder text and carry `noindex`. A UK/EU-facing site collecting emails and setting analytics cookies needs both written |
 | **No record that an email was sent** | No table, no column. Approve a review twice and the reviewer is emailed twice; a failed send leaves nothing to retry from. Fine while these are courtesies — not before mailshots |
 | `content_submissions` staging table | Needed before practitioners can add content. `videos`/`books` have no published flag and are read wholesale by the homepage, subject pages and sitemap |
+
+#### Amazon Associates — specified, not built
+Investigated 8 October 2026. **No code was written.** The decisions below are
+made; what follows is a build brief, not an open question.
+
+**Current state.** 909 of 963 books have an `amazon_url`; **none carries an
+affiliate tag**, so nothing earns. 903 have an extractable ASIN, all distinct.
+Links are rendered in exactly **one place** — `app/books/[slug]/page.js`, the
+"Buy on Amazon" button — so this is one helper and one call site, not a sweep.
+(`BookCard.js` does *not* link to Amazon; cards link internally to
+`/books/[slug]`.)
+
+**Marketplace split — the decision that shapes everything.** Associates
+accounts are *per-marketplace*: a `.co.uk` tag earns nothing on `amazon.com`
+and vice versa, and the link still works, so the failure is silent.
+
+```
+719  www.amazon.com
+184  www.amazon.co.uk
+  1  us.amazon.com
+```
+
+**Decided: UK is the primary account.** Both tags are needed; the tag is chosen
+from the stored URL's host, held in env as `AMAZON_TAG_UK` / `AMAZON_TAG_US`.
+
+**Build: `utils/affiliate.js`, injecting the tag at RENDER time — never stored
+in the database.**
+
+```
+amazonAffiliateUrl(rawUrl) →
+  parse host        → pick the tag for that marketplace
+  extract ASIN      → rebuild canonical https://{host}/dp/{ASIN}?tag={tag}
+  not a valid Amazon product URL → return null
+```
+
+Why render-time and not a migration over 909 rows: a tag changes (account
+switch, new marketplace, campaign tag) and stored that is 909 rows to rewrite
+each time, against one env var computed. The database stays a record of *what
+the product is*, not of how it is monetised, and there is no risk of a
+half-migrated table where some rows earn and some do not.
+
+Rebuilding canonically also strips ingestion cruft. Stored URLs carry
+`ref_=ast_author_dp_rw&th=1&psc=1&dib=eyJ2IjoiMSJ9…` — roughly 200 characters
+of someone else's session token. `https://www.amazon.com/dp/B00DJ735O4?tag=…`
+is equivalent and far less likely to break.
+
+**Returning `null` fixes a live bug.** Two data faults are in production now:
+
+* **Five rows have Goodreads URLs in the `amazon_url` column**, so they render an orange "Buy on Amazon" button that goes to Goodreads.
+* **One ASIN is malformed** — `/dp/BFK6VHWVV` is 9 characters; ASINs are 10. That link is broken.
+
+A validating helper makes those four buttons disappear rather than mislead.
+Cleaning the six rows in SQL is the alternative; doing both is better.
+
+**Compliance — the part that gets accounts terminated.**
+
+| Requirement | State |
+| :--- | :--- |
+| **Disclosure** | **Absent.** There is no affiliate disclosure anywhere on the site. Required by Amazon's Operating Agreement *and* FTC/UK ASA. The footer disclaimer covers health, not commercial relationships |
+| **Placement** | **Decided: inline, under each purchase button** — not a footer line only |
+| **`rel`** | Purchase links need `rel="sponsored noopener noreferrer"`. All 16 outbound links on the site currently use `rel="noopener noreferrer"` |
+| **Email** | Affiliate links **must never** go in email. All current emails link to `spiritpedia.co` pages, so this is compliant today — **the risk is the planned Mailshots tab.** A "new books" mailshot must link to Spiritpedia book pages, which then carry the affiliate link |
+| **Prices** | Do not display prices. Permitted only via the Product Advertising API, because stale prices mislead. The site shows none today — keep it that way |
+| **Qualification** | A new account must make **three qualifying sales within 180 days** or it is closed |
+
+**Disclosure must ship in the SAME release as the tags.** Monetised links
+without disclosure is the single thing most likely to terminate the account,
+and it is also the easiest thing to defer to "the next PR". Do not separate
+them.
+
+**A second prize: the book covers.** 568 of 957 covers are hotlinked from
+`m.media-amazon.com` and ~350 more from Google's image cache — both unlicensed,
+and the same fragility the broken-images audit exists to catch. Associates
+membership unlocks the **Product Advertising API**, which grants a licensed
+right to serve Amazon product imagery plus live titles and prices. That would
+make 568 covers legitimate, remove the largest cluster from the broken-images
+queue, and allow prices. PA-API access requires the three qualifying sales
+first, so it is **phase two**.
+
+**Explicitly later, not now:** OneLink (Amazon's geo-redirect — better revenue,
+but needs both accounts plus a third-party script on every book page), PA-API,
+and affiliate treatment of the **4 courses** whose `course_url` points at
+Amazon.
+
+**Scope:** the code is small — one helper, one call site, one `rel` change, one
+disclosure component. A day at most. The constraint is sequencing, not effort.
 
 **Known gaps, not urgent:**
 
@@ -915,6 +1088,87 @@ dashboard.
 | Ancient Teachers tier | Planned |
 | Content library | Target: 5,000 videos + 5,000 books — ongoing |
 | Flutter app build | Phase 2 |
+
+🔧 Operational knowledge
+Things learned the hard way that neither the code nor the git log will tell you.
+
+#### Verifying a change against real data
+There is **no test suite**. Verification has been: run the real logic against
+the real database from a Node script, then confirm in a real browser. Both
+matter — several defects were only visible in one or the other.
+
+* `web/utils/*.js` are plain ES modules with no React or Next dependency, so a `node --input-type=module` script can import them directly and exercise the genuine code path against production Supabase. This is how the emotion-search coverage numbers were produced.
+* **Do not trust a harness that re-implements the pipeline.** One measurement in this project was wrong because the harness drifted from the component after an edit; the before/after numbers were quietly meaningless until the harness was re-synced. If you build one, have it import the same functions the component imports.
+* To compare before/after honestly, extract the previous version with `git show HEAD:web/utils/foo.js > /tmp/old.js` and import both. Comparing against a flag inside the *current* module measures nothing.
+
+#### Driving the homepage search box in a browser
+The emotion search input **cannot be driven by synthetic DOM events.** Setting
+`input.value` and dispatching an `input` event — even with the React value
+tracker reset — does not update React state, so the dropdown never opens. Real
+CDP keystrokes work. The reliable sequence is: click the element **by its
+accessibility ref** (clicking by coordinate often fails to hold focus, and the
+typewriter placeholder resumes, which is the tell), then `type`, then wait ~2s
+for the 300ms debounce plus network, then read the dropdown from the DOM. The
+dropdown is the non-`<form>` child of the input's `form.parentElement`.
+
+#### Reading results correctly
+The search dropdown renders **two different things in the same panel**: the
+emotion carousel (bare subject rows) and universal search hits (under
+`HEALERS` / `BOOKS` / `VIDEOS` / `SUBJECTS` headers). A non-empty panel does
+**not** mean the emotion mapping matched — an early audit over-counted
+successes until the two were separated. Check whether the first line is a
+section header.
+
+#### THERE IS ONLY ONE DATABASE
+`web/.env.local` points at the **same Supabase project as production**
+(`uzmvcgewxgvnybdhvsyx`). There is no staging database, no seed file and no
+local Postgres.
+
+**Running the app on localhost reads and writes live production data.** Every
+admin action taken against `localhost:3000` — editing a healer, deleting a
+row, approving a review, saving an image URL, starting a journey — lands in the
+database the public site is serving. During development of the broken-images
+audit, local cron runs wrote 43 real rows into production; that was intended,
+but it is the same mechanism that would make an accidental delete permanent.
+
+Work accordingly: prefer dry-run flags, restore anything you change for a test
+(capture the original value first), and treat "it's only localhost" as false
+here.
+
+#### Local development
+A dev server may already be running on port 3000 — `npm run dev` will detect it
+and exit rather than start a second one, which is easy to misread as a failure.
+Check with `lsof -ti:3000`.
+
+#### Things that are safe to re-run
+* Every migration in `supabase/migrations/` (all use `IF NOT EXISTS` / `DROP … IF EXISTS`).
+* The hand-run `emotion_mappings` inserts (`ON CONFLICT DO NOTHING`).
+* The broken-images cron, with `?dry=1` to check without writing and `?shard=N` to audit a named seventh.
+
+#### Things that are not
+* Starting a healer journey — it sends real email to a real practitioner.
+* Deleting an account — it removes the `auth.users` row and three foreign keys cascade off it, taking the profile, the saved library and every internal note.
+* Deleting a healer — it orphans their content; nothing in the schema stops it.
+
+🚧 Deliberately unfinished
+Things that look like faults and are not. Each was a decision; none should be
+"fixed" without knowing why it is this way.
+
+| Thing | Why it is like this |
+| :--- | :--- |
+| **No `healer_journeys` has ever been started** | Starting one sends a real email to a real practitioner. The infrastructure, admin Outreach tab, cron and all five templates are finished and tested; nobody has pressed go. That is a business decision, not a bug |
+| **Journey emails are plain text with no HTML and no links** | Every CTA is "reply to this email". A cold first contact that looks like a newsletter is filtered like one, and a reply starts a relationship where a click does not. Do not "improve" them into HTML |
+| **Claims count sits at 0 in the Inbox** | `claim_healer_profile()` auto-approves a genuine claim, so a real claim never waits for a decision. `/admin/claims` is the record; the Inbox is a worklist |
+| **The admin search box and notification bell are inert** | Rendered and disabled so the bar is laid out for what is coming. Titled so they explain themselves |
+| **Messages / Flags / Mailshots / Settings are placeholders** | Each needs its own table first |
+| **`courses.affiliate_status` is effectively unused** | 1,097 `none`, 5 `null`, 1 `direct` — and `direct` is not one of the three values the ingestion form offers (`none` / `applied` / `active`). Dead column with drifted data; decide its fate before relying on it |
+| **One pre-existing lint error in `components/EmotionSearch.js`** | `react-hooks/set-state-in-effect` at the `setResolution(null)` guard. Predates recent work; the same rule errors in seven other components. Not introduced by the emotion-search fixes |
+| **Typos are not matched in emotion search** | No fuzzy matching, by choice. A distance threshold carries exactly the precision risk the matcher has been tuned against. A decision, not an oversight |
+| **Four healer portraits the broken-images audit cannot read** | wim-hof, jason-stephenson, justin-perry, mikao-usui sit behind hosts that challenge any non-browser client, with a real Chrome UA too. The audit records them as *undetermined* and says nothing, which is correct. Check them by hand |
+| **`broken_images` counts "undetermined" separately** | An HTTP 202 bot challenge is neither broken nor healthy. The run reports the count rather than guessing, because "found nothing" and "could not look" are different claims |
+| **Video thumbnails are unaudited** | Derived from the YouTube id at render, not stored, so there is no column to check. A deleted or private video returns a placeholder with a 404 and the audit cannot see it |
+| **`/privacy` and `/terms` carry `robots: { index: false }`** | Deliberate while they hold placeholder text — a page whose body says it is unfinished is worse indexed than absent. Drop the robots line when real policies are written |
+| **Subject pages still `select('*')` uncapped** | Known, with a TODO on the query naming the numbers. Below the 1,000-row cap today |
 
 #### Environment variables
 | Variable | Needed for |
@@ -942,6 +1196,15 @@ server route.
 
 **`vercel.json` must sit in `web/`, not the repo root**, and Vercel's Root
 Directory must be set to `web` — the app is not at the top of this repo and a
-root-level `vercel.json` is ignored without a word.
+root-level `vercel.json` is ignored without a word. **Both are correctly
+configured and verified running**: the broken-images audit fired at 07:00 UTC
+on 8 October 2026 and wrote 8 rows.
+
+Vercel sends `Authorization: Bearer <CRON_SECRET>` using **its own** copy of
+the variable, so the cron authenticates regardless of what any local
+`.env.local` holds. A local `CRON_SECRET` that differs from Vercel's is
+harmless — it only means you cannot trigger the production route by hand. Do
+not mistake a 401 from a manual curl for a broken cron; **503 would mean the
+variable is unset, 401 means it is set and you presented the wrong one.**
 
 Made with love in Tavira 💫
