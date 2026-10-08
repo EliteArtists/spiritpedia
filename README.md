@@ -13,6 +13,8 @@ session — with no prior context.
 | Branch | `main` — the only branch; there is no develop/staging branch |
 | Last code change | **`7c9cc47`** (8 October 2026) — everything after it is documentation only, so `7c9cc47` is the known-good baseline for the running site |
 | Production | Vercel, auto-deploying every push to `main` |
+| Vercel team | `eliteartists-projects` |
+| Vercel project | **`spiritpedia-e58y`** — *not* the one called `spiritpedia`. See below |
 | Live at | **https://www.spiritpedia.co** — `spiritpedia.co` and the legacy `spirit-pedia.com` both 301 here |
 | Supabase project | `uzmvcgewxgvnybdhvsyx` (`https://uzmvcgewxgvnybdhvsyx.supabase.co`) |
 
@@ -23,9 +25,41 @@ working in production as of 8 October 2026** — the site serves, and the daily
 end-to-end proof that Vercel's Root Directory, `vercel.json` and `CRON_SECRET`
 are all correctly configured.
 
+#### TWO Vercel projects exist — only one serves the site
+The team `eliteartists-projects` holds **two projects building this same
+repository**, and the names are misleading:
+
+| Project | Serves | |
+| :--- | :--- | :--- |
+| **`spiritpedia-e58y`** | **www.spiritpedia.co, spiritpedia.co, spirit-pedia.com, www.spirit-pedia.com** | ← the live site |
+| `spiritpedia` | `spiritpedia.vercel.app` only | a parallel build nobody visits |
+
+Both rebuild on every push to `main` and both currently report Ready, so the
+duplicate is wasteful rather than broken. **The trap is environment
+variables:** setting a key on the project called `spiritpedia` changes
+nothing the public sees. Any env work — the Amazon affiliate tags, a rotated
+Resend key — must go on **`spiritpedia-e58y`**.
+
+Worth deleting the spare, once someone confirms nothing references
+`spiritpedia.vercel.app`.
+
 #### Vercel settings that are not in this repo
 * **Root Directory must be `web`.** The Next app is not at the repo root, and `web/vercel.json` — which declares both cron schedules — is ignored unless Vercel is pointed at `web`. It currently is; do not change it.
-* Environment variables are set in the Vercel dashboard, not in any file here. See *Environment variables* at the foot of this README for the full list.
+* Environment variables are set in the Vercel dashboard, not in any file here — **on `spiritpedia-e58y`**. See *Environment variables* at the foot of this README for the full list.
+* Node 24.x on Vercel.
+* `npx vercel ls` / `vercel inspect <url>` work from `web/` once authenticated, and are the quickest way to confirm a deploy succeeded.
+
+#### A secret-scanner false alarm, already investigated
+`.env.local` **was** committed in two early commits (`90a3b95`, `e8f0d72`) and
+removed in `4b8735b`. It is gitignored now and not in the current tree, but it
+remains in git history, so any secret scanner will flag this repository.
+
+**It is benign, and this was checked rather than assumed.** The committed file
+contained only `NEXT_PUBLIC_SUPABASE_URL` and `NEXT_PUBLIC_SUPABASE_ANON_KEY`
+— both public by design, since they ship in every page bundle — and both
+values have changed since. `SUPABASE_SERVICE_ROLE_KEY`, `ADMIN_PASSWORD`,
+`RESEND_API_KEY` and `CRON_SECRET` have **never** been committed in any form.
+No rotation is needed and no history rewrite is warranted.
 
 #### What "complete" means
 Everything in *Project Status* below is built, deployed and in use. What remains
