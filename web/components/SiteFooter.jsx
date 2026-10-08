@@ -41,6 +41,10 @@ export default function SiteFooter() {
           <Link href="/terms" className="transition-colors hover:text-gray-300">
             Terms of Use
           </Link>
+          <span aria-hidden="true"> · </span>
+          <Link href="/affiliate-disclosure" className="transition-colors hover:text-gray-300">
+            Affiliate Disclosure
+          </Link>
         </p>
       </div>
     </footer>

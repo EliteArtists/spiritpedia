@@ -8,6 +8,7 @@ import { backContextQuery } from '@/utils/backContext';
 import ShareButton from '@/components/ShareButton';
 import { buildMetadata, notFoundMetadata, pickImage, SITE_URL } from '@/utils/seo';
 import ReviewSection, { RatingRow } from '@/components/ReviewSection';
+import { amazonAffiliateUrl } from '@/utils/affiliate';
 
 // Hourly ceiling on staleness — see the note in app/page.js.
 export const revalidate = 3600;
@@ -61,6 +62,11 @@ export default async function BookDetail({ params, searchParams }) {
     : { data: null };
   // Cover is stored under mock_cover_url; 'NULL' is a legacy sentinel for absent.
   const hasCover = book.mock_cover_url && book.mock_cover_url !== 'NULL';
+  // Canonical /dp/ link, tagged only when that marketplace's env var is set.
+  // null for anything that is not a real Amazon product link — a Goodreads URL
+  // in the amazon_url column, a malformed ASIN — so the button is hidden rather
+  // than sending someone somewhere misleading. See utils/affiliate.js.
+  const amazon = amazonAffiliateUrl(book.amazon_url);
 
   return (
     <main className="relative min-h-screen bg-[#0a0f1d] pb-16">
@@ -130,15 +136,31 @@ export default async function BookDetail({ params, searchParams }) {
 
           {/* Purchase links — each renders only when its URL is present */}
           <div className="flex flex-col gap-3">
-            {book.amazon_url && (
-              <a
-                href={book.amazon_url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-[#FF9900] hover:bg-[#e68900] text-black font-bold text-sm rounded-xl py-3 px-6 text-center block w-full"
-              >
-                Buy on Amazon
-              </a>
+            {amazon && (
+              <div>
+                {/* rel="sponsored" marks a paid link to search engines, as
+                    Google's link guidelines require for affiliate links. */}
+                <a
+                  href={amazon.url}
+                  target="_blank"
+                  rel="sponsored noopener noreferrer"
+                  className="bg-[#FF9900] hover:bg-[#e68900] text-black font-bold text-sm rounded-xl py-3 px-6 text-center block w-full"
+                >
+                  Buy on Amazon
+                </a>
+                {/* Disclosure sits directly under the link it discloses, and
+                    only when that link actually carries a tag. Required by the
+                    Associates Operating Agreement and by FTC / UK ASA rules —
+                    never ship a tag without it. */}
+                {amazon.tagged && (
+                  <p className="mt-2 text-xs leading-relaxed text-gray-500">
+                    <Link href="/affiliate-disclosure" className="transition-colors hover:text-gray-300">
+                      As an Amazon Associate, Spiritpedia earns from qualifying purchases. It never
+                      changes what we recommend.
+                    </Link>
+                  </p>
+                )}
+              </div>
             )}
             {book.goodreads_url && (
               <a
@@ -160,7 +182,7 @@ export default async function BookDetail({ params, searchParams }) {
                 Find at World of Books
               </a>
             )}
-            {!book.amazon_url && !book.goodreads_url && !book.worldofbooks_url && (
+            {!amazon && !book.goodreads_url && !book.worldofbooks_url && (
               <span className="text-gray-500 text-sm mt-4 block">Purchase links coming soon.</span>
             )}
           </div>
@@ -169,6 +191,21 @@ export default async function BookDetail({ params, searchParams }) {
 
       {/* Community reviews — empty state placeholder */}
       <ReviewSection contentType="book" contentSlug={book.slug} />
+
+      {/* ──────────────────────────────────────────────────────────────────
+          ONELINK — NOT YET ENABLED. Amazon's geo-redirect script loads here,
+          on book pages only, once both Associates accounts are linked in
+          OneLink. Add `import Script from 'next/script'` above, then:
+
+            <Script
+              src="https://z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&adInstanceId=…"
+              strategy="lazyOnload"
+            />
+
+          Copy the exact src from the OneLink dashboard rather than this
+          placeholder. It is a third-party script on every book page, so the
+          affiliate disclosure page should mention it when it goes live.
+          ────────────────────────────────────────────────────────────────── */}
     </main>
   );
 }

@@ -94,6 +94,7 @@ npm install
 npm run dev          # localhost:3000
 npm run build        # what Vercel runs
 npx eslint app components utils
+npm test             # node --test over utils/**/*.test.mjs (affiliate helper only, so far)
 ```
 
 Node 24, Next 16.2 (App Router + Turbopack), React 19, Tailwind 4. Dependencies
@@ -912,11 +913,12 @@ copy of the emotional-search vocabulary that exists.
 💰 Monetisation
 * **Local Hero directory listings**: £5–£10/month per practitioner
 * **Luminary listings (future)**: Nominal fee once platform delivers measurable value
-* **Amazon affiliate links**: investigated and specified, **not yet built** — see *Amazon Associates* under Next Steps
+* **Amazon affiliate links**: **built** — Amazon.com (primary) and Amazon.co.uk tags injected at render, with disclosure. See *Amazon Associates* below
 * **Premium features (Phase 2)**: Personalised journeys, AI coaching, advanced library
 
-No revenue is currently collected. Nothing on the site is monetised today:
-909 books carry an `amazon_url` and **not one carries an affiliate tag**.
+Amazon links earn **only once `AMAZON_TAG_US` / `AMAZON_TAG_UK` are set on
+`spiritpedia-e58y` and it has redeployed.** Until then every Amazon link is a
+clean, untagged `/dp/` link and no disclosure line shows.
 
 ✅ Project Status
 | Milestone | Status |
@@ -932,7 +934,8 @@ No revenue is currently collected. Nothing on the site is monetised today:
 | Courses / retreats / downloads / memberships | ✅ Complete |
 | Free resources shelf | ✅ Complete |
 | Query-level expiration filtering | ✅ Complete |
-| Books with affiliate deep links | ✅ Complete |
+| Books with purchase links (Amazon, Goodreads, World of Books) | ✅ Complete |
+| Amazon Associates — render-time tags (US primary, UK), inline disclosure, `/affiliate-disclosure` | ✅ Built — earns once the env vars are set |
 | My Library with dynamic subject folders | ✅ Complete |
 | Admin ingestion dashboard + duplicate guards | ✅ Complete |
 | URL parsing automation (YouTube + Amazon) | ✅ Complete |
@@ -1020,74 +1023,95 @@ dashboard.
 | **No record that an email was sent** | No table, no column. Approve a review twice and the reviewer is emailed twice; a failed send leaves nothing to retry from. Fine while these are courtesies — not before mailshots |
 | `content_submissions` staging table | Needed before practitioners can add content. `videos`/`books` have no published flag and are read wholesale by the homepage, subject pages and sitemap |
 
-#### Amazon Associates — specified, not built
-Investigated 8 October 2026. **No code was written.** The decisions below are
-made; what follows is a build brief, not an open question.
+#### Amazon Associates — built
+Specified and built 8 October 2026. Tags and disclosure shipped in the **same
+release**, and must stay that way: a monetised link without disclosure is the
+single thing most likely to terminate an Associates account.
 
-**Current state.** 909 of 963 books have an `amazon_url`; **none carries an
-affiliate tag**, so nothing earns. 903 have an extractable ASIN, all distinct.
-Links are rendered in exactly **one place** — `app/books/[slug]/page.js`, the
-"Buy on Amazon" button — so this is one helper and one call site, not a sweep.
-(`BookCard.js` does *not* link to Amazon; cards link internally to
-`/books/[slug]`.)
+**Accounts.** Associates accounts are *per-marketplace*: a `.co.uk` tag earns
+nothing on `amazon.com` and vice versa, and the link still works, so a wrong
+tag fails silently. Each link is tagged for the marketplace it already points at.
 
-**Marketplace split — the decision that shapes everything.** Associates
-accounts are *per-marketplace*: a `.co.uk` tag earns nothing on `amazon.com`
-and vice versa, and the link still works, so the failure is silent.
-
-```
-719  www.amazon.com
-184  www.amazon.co.uk
-  1  us.amazon.com
-```
-
-**Decided: UK is the primary account.** Both tags are needed; the tag is chosen
-from the stored URL's host, held in env as `AMAZON_TAG_UK` / `AMAZON_TAG_US`.
-
-**Build: `utils/affiliate.js`, injecting the tag at RENDER time — never stored
-in the database.**
+| Store | Role | Env var | Tag |
+| :--- | :--- | :--- | :--- |
+| Amazon.com | **Primary** | `AMAZON_TAG_US` | `spiritpedia-20` |
+| Amazon.co.uk | Secondary | `AMAZON_TAG_UK` | `spiritpedia03-21` |
 
 ```
-amazonAffiliateUrl(rawUrl) →
-  parse host        → pick the tag for that marketplace
-  extract ASIN      → rebuild canonical https://{host}/dp/{ASIN}?tag={tag}
-  not a valid Amazon product URL → return null
+719  www.amazon.com   (incl. 1 us.amazon.com, treated as .com)  → US tag
+184  www.amazon.co.uk                                           → UK tag
+  6  rejected — no button                                        (see below)
 ```
 
-Why render-time and not a migration over 909 rows: a tag changes (account
-switch, new marketplace, campaign tag) and stored that is 909 rows to rewrite
-each time, against one env var computed. The database stays a record of *what
-the product is*, not of how it is monetised, and there is no risk of a
-half-migrated table where some rows earn and some do not.
+**`web/utils/affiliate.js` — the only place a tag is decided.** Plain ES
+module, no React or Next, tested by `npm test` (`utils/affiliate.test.mjs`,
+every case a real stored URL).
 
-Rebuilding canonically also strips ingestion cruft. Stored URLs carry
-`ref_=ast_author_dp_rw&th=1&psc=1&dib=eyJ2IjoiMSJ9…` — roughly 200 characters
-of someone else's session token. `https://www.amazon.com/dp/B00DJ735O4?tag=…`
-is equivalent and far less likely to break.
+* `STORES` maps each Amazon host to an env var and a display name: `.com`, `.co.uk`, `.es`, `.de`, `.fr`, `.it`, `.ca`, `.com.au` → `AMAZON_TAG_US` / `_UK` / `_ES` / `_DE` / `_FR` / `_IT` / `_CA` / `_AU`. A leading `www.`, `us.`, `smile.` or `m.` is ignored.
+* `amazonAffiliateUrl(rawUrl)` → `{ url, tagged }` or `null`. Accepts the `/dp/`, `/gp/product/`, `/product/` and `/ASIN/` path shapes (book 283 is stored as `/gp/product/`), requires exactly 10 characters ending at a path or query boundary, and rebuilds as `https://www.{host}/dp/{ASIN}` — dropping every stored query param (`ref_`, `th`, `psc`, `dib` — roughly 200 characters of someone else's session). `?tag=` is appended only for an active store.
+* `activeStores()` lists the stores with a live tag. `/affiliate-disclosure` names exactly these, so it can never claim a programme the site is not in.
 
-**Returning `null` fixes a live bug.** Two data faults are in production now:
+**A STORE EARNS ONLY WHEN ITS ENV VAR IS SET.** Unset, its links are clean and
+untagged and no disclosure line shows. Adding a marketplace later is a new env
+var on **`spiritpedia-e58y`** — no code change — provided its host is already
+in `STORES` (the eight above are). Env vars are read at render, but book pages
+are ISR-cached for an hour and the disclosure page is built statically, so
+**setting or changing a var needs a redeploy** to take effect everywhere.
 
-* **Five rows have Goodreads URLs in the `amazon_url` column**, so they render an orange "Buy on Amazon" button that goes to Goodreads.
-* **One ASIN is malformed** — `/dp/BFK6VHWVV` is 9 characters; ASINs are 10. That link is broken.
+**Never stored.** Tags are computed at render and never written to
+`books.amazon_url`. The database records *what the product is*, not how it is
+monetised: a tag change is one env var rather than 900 rows to rewrite, and
+there is no half-migrated table where some rows earn and some do not.
 
-A validating helper makes those four buttons disappear rather than mislead.
-Cleaning the six rows in SQL is the alternative; doing both is better.
+**Where it renders.** Exactly one place — the "Buy on Amazon" button in
+`app/books/[slug]/page.js`. (`BookCard.js` links internally to `/books/[slug]`,
+not to Amazon.) The button carries `rel="sponsored noopener noreferrer"`;
+Goodreads and World of Books are not monetised and keep `rel="noopener noreferrer"`
+with no disclosure. When `tagged` is true, one muted line sits directly under the
+Amazon button only, linking to `/affiliate-disclosure`:
+*"As an Amazon Associate, Spiritpedia earns from qualifying purchases. It never
+changes what we recommend."* The footer links the page too, after Terms of Use.
+It is indexable and in the sitemap.
 
-**Compliance — the part that gets accounts terminated.**
+**Rejected rows — the button is hidden rather than misleading.** Six rows in
+production fail the helper and render no Amazon button:
+
+* **Books 114, 115, 133, 169, 171** have Goodreads URLs in `amazon_url`.
+* **Book 633** has a malformed ASIN — `/dp/BFK6VHWVV` is 9 characters.
+
+They need fixing editorially. This lists every row the helper rejects:
+
+```sql
+SELECT id, slug, title, amazon_url AS bad_value
+FROM public.books
+WHERE amazon_url IS NOT NULL AND btrim(amazon_url) <> ''
+  AND NOT (
+    regexp_replace(lower(substring(btrim(amazon_url) FROM '^https?://([^/?#:]+)')),
+                   '^(www|us|smile|m)\.', '')
+      IN ('amazon.com','amazon.co.uk','amazon.es','amazon.de','amazon.fr',
+          'amazon.it','amazon.ca','amazon.com.au')
+    AND substring(btrim(amazon_url) FROM '^https?://[^/?#]+([^?#]*)')
+      ~* '/(dp|gp/product|product|ASIN)/[A-Z0-9]{10}([/?#]|$)'
+  )
+ORDER BY id;
+```
+
+**Compliance.**
 
 | Requirement | State |
 | :--- | :--- |
-| **Disclosure** | **Absent.** There is no affiliate disclosure anywhere on the site. Required by Amazon's Operating Agreement *and* FTC/UK ASA. The footer disclaimer covers health, not commercial relationships |
-| **Placement** | **Decided: inline, under each purchase button** — not a footer line only |
-| **`rel`** | Purchase links need `rel="sponsored noopener noreferrer"`. All 16 outbound links on the site currently use `rel="noopener noreferrer"` |
-| **Email** | Affiliate links **must never** go in email. All current emails link to `spiritpedia.co` pages, so this is compliant today — **the risk is the planned Mailshots tab.** A "new books" mailshot must link to Spiritpedia book pages, which then carry the affiliate link |
-| **Prices** | Do not display prices. Permitted only via the Product Advertising API, because stale prices mislead. The site shows none today — keep it that way |
+| **Disclosure** | Inline under every tagged Amazon button, plus `/affiliate-disclosure` linked from the footer |
+| **`rel`** | `sponsored noopener noreferrer` on the Amazon button only |
+| **Email** | **Standing rule: affiliate links never go in email** (Amazon Operating Agreement). Every email links to `spiritpedia.co` pages. Future mailshots link to Spiritpedia book pages — which then carry the affiliate link — **never to Amazon directly** |
+| **Prices** | Do not display prices. Permitted only via the Product Advertising API, because stale prices mislead. The site shows none — keep it that way |
 | **Qualification** | A new account must make **three qualifying sales within 180 days** or it is closed |
 
-**Disclosure must ship in the SAME release as the tags.** Monetised links
-without disclosure is the single thing most likely to terminate the account,
-and it is also the easiest thing to defer to "the next PR". Do not separate
-them.
+**OneLink — not enabled.** Amazon's geo-redirect would earn on visitors sent
+to the "wrong" marketplace. A marked, commented-out `next/script`
+(`strategy="lazyOnload"`) placeholder sits at the foot of the JSX in
+`app/books/[slug]/page.js`, so it loads on book pages only. It needs both
+accounts linked in the OneLink dashboard first, and the disclosure page should
+mention the third-party script when it goes live.
 
 **A second prize: the book covers.** 568 of 957 covers are hotlinked from
 `m.media-amazon.com` and ~350 more from Google's image cache — both unlicensed,
@@ -1098,13 +1122,8 @@ make 568 covers legitimate, remove the largest cluster from the broken-images
 queue, and allow prices. PA-API access requires the three qualifying sales
 first, so it is **phase two**.
 
-**Explicitly later, not now:** OneLink (Amazon's geo-redirect — better revenue,
-but needs both accounts plus a third-party script on every book page), PA-API,
-and affiliate treatment of the **4 courses** whose `course_url` points at
-Amazon.
-
-**Scope:** the code is small — one helper, one call site, one `rel` change, one
-disclosure component. A day at most. The constraint is sequencing, not effort.
+**Explicitly later:** OneLink, PA-API, and affiliate treatment of the
+**4 courses** whose `course_url` points at Amazon.
 
 **Known gaps, not urgent:**
 
@@ -1130,8 +1149,10 @@ disclosure component. A day at most. The constraint is sequencing, not effort.
 Things learned the hard way that neither the code nor the git log will tell you.
 
 #### Verifying a change against real data
-There is **no test suite**. Verification has been: run the real logic against
-the real database from a Node script, then confirm in a real browser. Both
+There is **almost no test suite** — `npm test` covers `utils/affiliate.js` only
+(Node's built-in runner, no dependency). Otherwise verification has been: run
+the real logic against the real database from a Node script, then confirm in a
+real browser. Both
 matter — several defects were only visible in one or the other.
 
 * `web/utils/*.js` are plain ES modules with no React or Next dependency, so a `node --input-type=module` script can import them directly and exercise the genuine code path against production Supabase. This is how the emotion-search coverage numbers were produced.
@@ -1216,6 +1237,7 @@ Things that look like faults and are not. Each was a decision; none should be
 | `RESEND_API_KEY` | all ten emails |
 | `CRON_SECRET` | the two scheduled jobs |
 | `NEXT_PUBLIC_GA_MEASUREMENT_ID` | GA4, after consent |
+| `AMAZON_TAG_US` · `AMAZON_TAG_UK` | Amazon Associates tags (`spiritpedia-20`, `spiritpedia03-21`). A store earns only when its var is set; `_ES` `_DE` `_FR` `_IT` `_CA` `_AU` are recognised and unset. Redeploy after changing. See *Amazon Associates* |
 
 `SUPABASE_SERVICE_ROLE_KEY` bypasses every RLS policy. It must never carry a
 `NEXT_PUBLIC_` prefix, and must be set in Vercel or the admin data sections stay

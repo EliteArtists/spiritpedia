@@ -108,6 +108,11 @@ export default async function sitemap() {
     // reshuffles per request and new healers land on the shelves continuously.
     entry('', 1, 'daily'),
 
+    // The one legal page with finished copy. /privacy and /terms stay out
+    // until theirs is written — they carry noindex while they are placeholders.
+    // Fixed lastmod: the copy changes when it is edited, not per request.
+    entry('/affiliate-disclosure', 0.3, 'yearly', '2026-10-08'),
+
     // Profiles are the substance of the site and the pages worth ranking.
     ...withSlug(healers, 'healer_slug').map((h) =>
       entry(`/healers/${h.healer_slug}`, 0.9, 'weekly', h.created_at)
