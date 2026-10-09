@@ -192,20 +192,10 @@ export default async function BookDetail({ params, searchParams }) {
       {/* Community reviews — empty state placeholder */}
       <ReviewSection contentType="book" contentSlug={book.slug} />
 
-      {/* ──────────────────────────────────────────────────────────────────
-          ONELINK — NOT YET ENABLED. Amazon's geo-redirect script loads here,
-          on book pages only, once both Associates accounts are linked in
-          OneLink. Add `import Script from 'next/script'` above, then:
-
-            <Script
-              src="https://z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&adInstanceId=…"
-              strategy="lazyOnload"
-            />
-
-          Copy the exact src from the OneLink dashboard rather than this
-          placeholder. It is a third-party script on every book page, so the
-          affiliate disclosure page should mention it when it goes live.
-          ────────────────────────────────────────────────────────────────── */}
+      {/* ONELINK needs no site code. Amazon redirects international visitors
+          server-side from the tracking ID already on the link, so there is no
+          script to add here. It is configured in the US and UK Associates
+          dashboards — see Amazon Associates in the README. */}
     </main>
   );
 }

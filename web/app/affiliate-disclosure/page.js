@@ -44,9 +44,12 @@ export default function AffiliateDisclosurePage() {
 
           {stores.length > 0 ? (
             <p>
-              We take part in the Amazon Associates Programme in the following stores:{' '}
-              {formatStoreList(stores)}. As an Amazon Associate, Spiritpedia earns from qualifying
-              purchases.
+              {/* "Other international stores": OneLink and the US account's
+                  Global Earning Preferences earn in more countries than we
+                  hold accounts for, so the named list is not exhaustive. */}
+              We take part in the Amazon Associates Programme, including{' '}
+              {formatStoreList(stores)}, as well as Amazon&apos;s other international stores. As an
+              Amazon Associate, Spiritpedia earns from qualifying purchases.
             </p>
           ) : (
             // No AMAZON_TAG_* var is set, so no link on the site carries a tag.

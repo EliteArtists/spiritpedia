@@ -913,12 +913,12 @@ copy of the emotional-search vocabulary that exists.
 💰 Monetisation
 * **Local Hero directory listings**: £5–£10/month per practitioner
 * **Luminary listings (future)**: Nominal fee once platform delivers measurable value
-* **Amazon affiliate links**: **built** — Amazon.com (primary) and Amazon.co.uk tags injected at render, with disclosure. See *Amazon Associates* below
+* **Amazon affiliate links**: **live** — `.com` and `.co.uk` links tagged at render, with disclosure; OneLink redirects international visitors to Canada, Spain and Australia too. See *Amazon Associates* below
 * **Premium features (Phase 2)**: Personalised journeys, AI coaching, advanced library
 
-Amazon links earn **only once `AMAZON_TAG_US` / `AMAZON_TAG_UK` are set on
-`spiritpedia-e58y` and it has redeployed.** Until then every Amazon link is a
-clean, untagged `/dp/` link and no disclosure line shows.
+Amazon is the only revenue source switched on. A store earns only while its
+`AMAZON_TAG_*` var is set on `spiritpedia-e58y`; unset, its links fall back to
+clean, untagged `/dp/` links and no disclosure line shows.
 
 ✅ Project Status
 | Milestone | Status |
@@ -1032,10 +1032,24 @@ single thing most likely to terminate an Associates account.
 nothing on `amazon.com` and vice versa, and the link still works, so a wrong
 tag fails silently. Each link is tagged for the marketplace it already points at.
 
-| Store | Role | Env var | Tag |
+Five accounts, all linked to the US account. Every env var below is set on
+**`spiritpedia-e58y`** (Production).
+
+| Store | Role | Env var | Tracking ID |
 | :--- | :--- | :--- | :--- |
 | Amazon.com | **Primary** | `AMAZON_TAG_US` | `spiritpedia-20` |
-| Amazon.co.uk | Secondary | `AMAZON_TAG_UK` | `spiritpedia03-21` |
+| Amazon.co.uk | Linked | `AMAZON_TAG_UK` | `spiritpedia03-21` |
+| Amazon.ca | Linked | `AMAZON_TAG_CA` | `spiritpedia0d-20` |
+| Amazon.es | Linked | `AMAZON_TAG_ES` | `spiritpedi093-21` |
+| Amazon.com.au | Linked | `AMAZON_TAG_AU` | `spiritpedia-22` |
+
+Only `.com` and `.co.uk` links exist in `books.amazon_url` today, so only those
+two tags appear in links. The other three vars are set so that
+`/affiliate-disclosure` names each store we hold an account in — Canada, Spain
+and Australia earn through OneLink redirects — and so any future `.ca`, `.es` or
+`.com.au` link is tagged correctly without a code change. The page adds "as well
+as Amazon's other international stores" for the countries Global Earning
+Preferences reach without an account of our own.
 
 ```
 719  www.amazon.com   (incl. 1 us.amazon.com, treated as .com)  → US tag
@@ -1049,7 +1063,7 @@ every case a real stored URL).
 
 * `STORES` maps each Amazon host to an env var and a display name: `.com`, `.co.uk`, `.es`, `.de`, `.fr`, `.it`, `.ca`, `.com.au` → `AMAZON_TAG_US` / `_UK` / `_ES` / `_DE` / `_FR` / `_IT` / `_CA` / `_AU`. A leading `www.`, `us.`, `smile.` or `m.` is ignored.
 * `amazonAffiliateUrl(rawUrl)` → `{ url, tagged }` or `null`. Accepts the `/dp/`, `/gp/product/`, `/product/` and `/ASIN/` path shapes (book 283 is stored as `/gp/product/`), requires exactly 10 characters ending at a path or query boundary, and rebuilds as `https://www.{host}/dp/{ASIN}` — dropping every stored query param (`ref_`, `th`, `psc`, `dib` — roughly 200 characters of someone else's session). `?tag=` is appended only for an active store.
-* `activeStores()` lists the stores with a live tag. `/affiliate-disclosure` names exactly these, so it can never claim a programme the site is not in.
+* `activeStores()` lists the stores with a live tag. `/affiliate-disclosure` names these, followed by "as well as Amazon's other international stores" — OneLink and the US account's Global Earning Preferences earn in more countries than we hold accounts for.
 
 **A STORE EARNS ONLY WHEN ITS ENV VAR IS SET.** Unset, its links are clean and
 untagged and no disclosure line shows. Adding a marketplace later is a new env
@@ -1104,14 +1118,27 @@ ORDER BY id;
 | **`rel`** | `sponsored noopener noreferrer` on the Amazon button only |
 | **Email** | **Standing rule: affiliate links never go in email** (Amazon Operating Agreement). Every email links to `spiritpedia.co` pages. Future mailshots link to Spiritpedia book pages — which then carry the affiliate link — **never to Amazon directly** |
 | **Prices** | Do not display prices. Permitted only via the Product Advertising API, because stale prices mislead. The site shows none — keep it that way |
-| **Qualification** | A new account must make **three qualifying sales within 180 days** or it is closed |
+| **Qualification** | **Each of the five accounts** must make **three qualifying sales by around 6 April 2027** (180 days from sign-up) or it is closed. **Our own purchases do not count** |
 
-**OneLink — not enabled.** Amazon's geo-redirect would earn on visitors sent
-to the "wrong" marketplace. A marked, commented-out `next/script`
-(`strategy="lazyOnload"`) placeholder sits at the foot of the JSX in
-`app/books/[slug]/page.js`, so it loads on book pages only. It needs both
-accounts linked in the OneLink dashboard first, and the disclosure page should
-mention the third-party script when it goes live.
+**OneLink — configured, and needs no site code.** Amazon's geo-redirect sends
+an international visitor to their local store and swaps in the matching
+tracking ID, server-side, from the tag already on the link. There is no script
+or snippet to add; the old OneTag/`onejs` JavaScript is retired. A note in
+`app/books/[slug]/page.js` says so, where a script placeholder used to sit.
+
+It is configured per *home* account, and each OneLink rewrites links carrying
+that account's own tracking ID — which is why both sides are set up:
+
+* **US side** (covers the 719 `.com` links tagged `spiritpedia-20`): Global
+  Earning Preferences on for 10 countries. Australia has its own default
+  tracking ID in OneLink.
+* **UK side** (covers the 184 `.co.uk` links tagged `spiritpedia03-21`): OneLink
+  configured with the US, Canada, Spain and Australia tracking IDs; redirect
+  preference **"Closest Possible Match"**.
+
+If redirects stop, check that every destination country still has a default
+tracking ID in both dashboards — Amazon's FAQ names that as the usual cause.
+Third-party link shorteners are not redirected; ours are plain `/dp/` links.
 
 **A second prize: the book covers.** 568 of 957 covers are hotlinked from
 `m.media-amazon.com` and ~350 more from Google's image cache — both unlicensed,
@@ -1122,8 +1149,8 @@ make 568 covers legitimate, remove the largest cluster from the broken-images
 queue, and allow prices. PA-API access requires the three qualifying sales
 first, so it is **phase two**.
 
-**Explicitly later:** OneLink, PA-API, and affiliate treatment of the
-**4 courses** whose `course_url` points at Amazon.
+**Explicitly later:** PA-API, and affiliate treatment of the **4 courses**
+whose `course_url` points at Amazon.
 
 **Known gaps, not urgent:**
 
@@ -1237,7 +1264,7 @@ Things that look like faults and are not. Each was a decision; none should be
 | `RESEND_API_KEY` | all ten emails |
 | `CRON_SECRET` | the two scheduled jobs |
 | `NEXT_PUBLIC_GA_MEASUREMENT_ID` | GA4, after consent |
-| `AMAZON_TAG_US` · `AMAZON_TAG_UK` | Amazon Associates tags (`spiritpedia-20`, `spiritpedia03-21`). A store earns only when its var is set; `_ES` `_DE` `_FR` `_IT` `_CA` `_AU` are recognised and unset. Redeploy after changing. See *Amazon Associates* |
+| `AMAZON_TAG_US` · `_UK` · `_CA` · `_ES` · `_AU` | Amazon Associates tracking IDs, all set. A store is tagged and named on `/affiliate-disclosure` only when its var is set; `_DE` `_FR` `_IT` are recognised and unset. Redeploy after changing. See *Amazon Associates* |
 
 `SUPABASE_SERVICE_ROLE_KEY` bypasses every RLS policy. It must never carry a
 `NEXT_PUBLIC_` prefix, and must be set in Vercel or the admin data sections stay
