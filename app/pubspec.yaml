@@ -35,7 +35,9 @@ flutter:
   assets:
     - assets/images/
     - assets/fonts/Geist-OFL.txt
-    # The shared crisis/safety phrase list arrives here in Phase 1a.
+    # The crisis/safety phrase list, shared with the website. A symlink to
+    # web/shared/emotion-safety.json — ONE file, so the two cannot drift.
+    - assets/safety/emotion-safety.json
 
   # Geist — the website's typeface, bundled rather than fetched at runtime so
   # the app makes no font request to Google. SIL Open Font Licence:

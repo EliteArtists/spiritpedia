@@ -16,11 +16,21 @@
  * at the bottom. In particular the crisis check runs BEFORE the mapping
  * lookup — it is a pre-match intercept, not a filter on results.
  *
+ * WHERE THE DATA LIVES (2026-10-09): every list, phrase, threshold and
+ * copy string is in web/shared/emotion-safety.json — ONE file, read by
+ * this module AND by the Flutter app (app/lib/core/safety/), so the two
+ * can never drift. This module keeps the logic and the reasons; edit the
+ * JSON to change what is matched. web/shared/emotion-safety.cases.json
+ * pins the behaviour, and both `npm test` and `flutter test` check it.
+ *
  * INTEGRATION NOTE (2026-09-22): this file is the delivered module,
  * unchanged apart from its final block — the CommonJS/window tail was
  * replaced with ES module exports so Next can bundle it. No pattern,
  * phrase, threshold, copy string or ordering has been altered.
  * ===================================================================== */
+
+import SAFETY from '../shared/emotion-safety.json' with { type: 'json' };
+
 
 
 /* ---------------------------------------------------------------------
@@ -35,7 +45,7 @@
  * quote and the curly one that iOS and Word insert automatically.
  * ------------------------------------------------------------------- */
 
-const APOSTROPHES = /['‘’ʼ`´]/g;
+const APOSTROPHES = new RegExp('[' + SAFETY.normalisation.apostropheCharacters + ']', 'g');
 
 function normaliseQuery(raw) {
   if (!raw) return '';
@@ -61,135 +71,20 @@ function normaliseQuery(raw) {
  * lower-case and apostrophe-free.
  * ------------------------------------------------------------------- */
 
-const STRIP_PREFIXES = [
-  // --- multi-clause openers ---
-  'i have been struggling with',
-  'i have been feeling like',
-  'i dont know how to deal with',
-  'i dont know how to cope with',
-  'i dont know what to do about',
-  'i am struggling to cope with',
-  'im struggling to cope with',
-  'can you help me with',
-  'i have been feeling',
-  'ive been feeling',
-  'i am struggling with',
-  'im struggling with',
-  'i am going through',
-  'im going through',
-  'i am dealing with',
-  'im dealing with',
-  'i am suffering from',
-  'im suffering from',
-  'what to do about',
-  'what do i do about',
-  'what do i do when',
-  'how do i deal with',
-  'how do i cope with',
-  'how do i stop',
-  'how do i get over',
-  'how do i let go of',
-  'how do i find',
-  'how do i',
-  'how to stop',
-  'how to get over',
-  'how to deal with',
-  'how to cope with',
-  'how to',
-  'why do i keep',
-  'why do i always',
-  'why am i so',
-  'why am i',
-  'why do i',
-  'help me with',
-  'help me to',
-  'help with',
-  'i need help with',
-  'i want to stop',
-  'i want to learn',
-  'i want to feel',
-  'i want to be',
-  'i want to',
-  'i need to feel',
-  'i need to',
-  'i would like to',
-  'id like to',
-  'i keep on',
-  'i keep',
-  'i cannot stop',
-  'i cant stop',
-  'i cant seem to',
-  'i cant',
-  'i dont want to feel',
-  'i dont want to be',
-  'i always feel',
-  'i often feel',
-  'i just feel',
-  'i still feel',
-  'i sometimes feel',
-  'i have been',
-  'ive been',
-  'i am feeling',
-  'im feeling',
-  'i feel like',
-  'i feel so',
-  'i feel',
-  'im so',
-  'im really',
-  'im very',
-  'i am so',
-  'i am really',
-  'i am very',
-  'i am',
-  'im',
-  'looking for',
-  'searching for',
-  'show me',
-  'find me',
-  'anything for',
-  'something for',
-  'content about',
-  'teachers for',
-  'books about',
-  'feeling really',
-  'feeling very',
-  'feeling so',
-  'feeling',
-  // --- bare pronoun openers ---
-  //
-  // Added 2026-10-07. "dont know what to do" is a stored emotion; "i dont
-  // know what to do" is what people type, and nothing in the list above
-  // reached it — the nearest entry is "i dont know what to do ABOUT", which
-  // requires a word the user did not write. One of only two stored emotions
-  // made entirely of stopwords (the other is "why me"), so the content-token
-  // fallback below cannot reach them either. These strip to them exactly.
-  'ive',
-  'id',
-  'im',
-  'i',
-  'we',
-  // --- bare intensifiers ---
-  'really',
-  'very',
-  'quite',
-  'so',
-  'super',
-  'incredibly',
-  'extremely',
-  'totally',
-  'completely',
-  'absolutely',
-  'a bit',
-  'a little',
-  'kind of',
-  'kinda',
-  'sort of',
-  'somewhat',
-  'always',
-  'constantly',
-  'still',
-  'just',
-];
+/* The list itself is SAFETY.stripPrefixes. Notes that belong to it:
+ *
+ * - It opens with the multi-clause openers, then the shorter ones.
+ * - BARE PRONOUN OPENERS ('ive', 'id', 'im', 'i', 'we'), added 2026-10-07.
+ *   "dont know what to do" is a stored emotion; "i dont know what to do" is
+ *   what people type, and nothing in the list above reached it — the nearest
+ *   entry is "i dont know what to do ABOUT", which requires a word the user
+ *   did not write. One of only two stored emotions made entirely of stopwords
+ *   (the other is "why me"), so the content-token fallback below cannot reach
+ *   them either. These strip to them exactly.
+ * - BARE INTENSIFIERS ('really', 'very', … 'just') close the list.
+ * - 'im' appears twice. Harmless — candidates are de-duplicated — and kept
+ *   so the list is byte-for-byte what was approved. */
+const STRIP_PREFIXES = SAFETY.stripPrefixes;
 
 /* Leading determiners. Stripped AFTER the prefixes above — see build
  * report §4.2. Without this, "what to do about my inner critic" stalls
@@ -197,20 +92,10 @@ const STRIP_PREFIXES = [
  * Stored emotions that legitimately begin with a determiner ("my mum
  * died", "the void", "my chart", "my calling", "my ego") are unharmed,
  * because the raw normalised query is always tried FIRST. */
-const STRIP_DETERMINERS = ['my', 'the', 'this', 'that', 'some', 'a', 'an'];
+const STRIP_DETERMINERS = SAFETY.stripDeterminers;
 
 /* Trailing filler that adds nothing to a lookup. */
-const STRIP_SUFFIXES = [
-  'right now',
-  'at the moment',
-  'all the time',
-  'lately',
-  'today',
-  'these days',
-  'again',
-  'please',
-  'help',
-];
+const STRIP_SUFFIXES = SAFETY.stripSuffixes;
 
 function escapeForRegex(s) {
   return s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
@@ -241,7 +126,7 @@ function stripOnce(s) {
 function stripAll(s) {
   let prev = s;
   let out = s;
-  for (let i = 0; i < 6; i++) {           // bounded; no while(true)
+  for (let i = 0; i < SAFETY.maxStripPasses; i++) {           // bounded; no while(true)
     out = stripOnce(prev);
     out = out.replace(DETERMINER_RE, '').trim() || out;
     if (out === prev) break;
@@ -278,7 +163,7 @@ function stripAll(s) {
  * indexed equality lookups — a handful is cheap.
  * ------------------------------------------------------------------- */
 
-const MAX_CANDIDATES = 10;
+const MAX_CANDIDATES = SAFETY.maxCandidates;
 
 function buildLookupCandidates(normalised) {
   const out = [];
@@ -349,28 +234,13 @@ function buildLookupCandidates(normalised) {
  * Checked against the vocabulary: exactly TWO stored emotions are made
  * entirely of these — "dont know what to do" and "why me". Both are reachable
  * by the bare-pronoun prefixes added above, which is why they were added. */
-const CONTENT_STOPWORDS = new Set([
-  'i', 'im', 'ive', 'id', 'we', 'you', 'me', 'my', 'mine',
-  /* 'myself' is deliberately NOT a stopword. It is the difference between
-   * "i hate myself" and "i hate the way i look": with it stripped, the stored
-   * phrase reduces to the single token "hate" and hijacks every sentence
-   * containing that word — including one about body image, which would then
-   * also raise the soft-tier support line meant for self-directed hatred.
-   * Self-reference is signal here, not noise. */
-  'a', 'an', 'the', 'this', 'that', 'these', 'those', 'some', 'any',
-  'to', 'of', 'in', 'on', 'at', 'for', 'from', 'with', 'into', 'over',
-  'up', 'down', 'and', 'or', 'but', 'if', 'as', 'than', 'then', 'so',
-  'is', 'are', 'was', 'were', 'be', 'been', 'being', 'am', 'do', 'does',
-  'did', 'have', 'has', 'had', 'will', 'would', 'can', 'could', 'should',
-  'cant', 'dont', 'wont', 'didnt', 'doesnt', 'isnt', 'arent', 'wasnt',
-  'feel', 'feeling', 'feels', 'felt', 'like', 'just', 'really', 'very',
-  'quite', 'much', 'more', 'most', 'all', 'always', 'still', 'again',
-  'anymore', 'about', 'what', 'whats', 'why', 'how', 'when', 'where',
-  'who', 'which', 'there', 'here', 'way', 'time', 'out', 'else',
-  'everything', 'anything', 'nothing', 'everyone', 'anyone', 'nobody',
-  'keep', 'keeps', 'get', 'got', 'going', 'go', 'want', 'wants', 'need',
-  'know', 'think', 'it', 'its', 'own', 'too', 'now', 'today',
-]);
+/* 'myself' is deliberately NOT a stopword. It is the difference between
+ * "i hate myself" and "i hate the way i look": with it stripped, the stored
+ * phrase reduces to the single token "hate" and hijacks every sentence
+ * containing that word — including one about body image, which would then
+ * also raise the soft-tier support line meant for self-directed hatred.
+ * Self-reference is signal here, not noise. */
+const CONTENT_STOPWORDS = new Set(SAFETY.contentStopwords);
 
 /* FIX B — WHAT TO DO WHEN THE QUERY IS ALL STOPWORDS.
  *
@@ -387,18 +257,7 @@ const CONTENT_STOPWORDS = new Set([
  * Only ever a FALLBACK. Running relaxed by default would let "who", "what"
  * and "know" match far too much; it earns its keep precisely because it runs
  * when the alternative is nothing at all. */
-const CORE_STOPWORDS = new Set([
-  'i', 'im', 'ive', 'id', 'we', 'you', 'me', 'my', 'mine',
-  'a', 'an', 'the', 'this', 'that', 'these', 'those',
-  'to', 'of', 'in', 'on', 'at', 'for', 'from', 'with',
-  'and', 'or', 'but', 'if', 'as', 'than', 'then', 'so',
-  'is', 'are', 'was', 'were', 'be', 'been', 'being', 'am',
-  'do', 'does', 'did', 'have', 'has', 'had',
-  'will', 'would', 'can', 'could', 'should',
-  'cant', 'dont', 'wont', 'didnt', 'doesnt', 'isnt', 'arent', 'wasnt',
-  'it', 'its', 'too', 'now', 'just', 'really', 'very', 'quite',
-  'all', 'always', 'still', 'again', 'like', 'feel', 'feeling', 'feels',
-]);
+const CORE_STOPWORDS = new Set(SAFETY.coreStopwords);
 
 function contentTokens(s, relaxed = false) {
   const stop = relaxed ? CORE_STOPWORDS : CONTENT_STOPWORDS;
@@ -466,108 +325,35 @@ function bestContainedEmotion(normalised, vocabulary, relaxed = false) {
  * only, if anything at all.
  * ------------------------------------------------------------------- */
 
-const CRISIS_PATTERNS = {
-  suicidal_ideation: [
-    'suicidal', 'suicide', 'kill myself', 'killing myself', 'want to die',
-    'want to be dead', 'wish i was dead', 'wish i were dead', 'end my life',
-    'ending my life', 'end it all', 'take my own life', 'no reason to live',
-    'nothing to live for', 'no point living', 'no point in living',
-    'better off without me', 'better off dead', 'dont want to be here anymore',
-    'dont want to live', 'cant go on', 'cant keep going', 'ready to give up on life',
-    'planning to end', 'how to kill myself',
-
-    /* WIDENED 2026-10-07 — the oblique register.
-     *
-     * The list above catches people who say it plainly. Testing 19 realistic
-     * phrasings against it, 16 went straight through and returned an empty
-     * dropdown. They were safe only by accident: nothing matched them, so
-     * nothing was served. The content-token fallback added in the same release
-     * removes that accident, which is why these ship together and not one
-     * after the other.
-     *
-     * Still multi-word wherever a single word would misfire. "disappear"
-     * alone would catch "i want my anxiety to disappear"; "want to disappear"
-     * does not. Verified against all 693 stored emotions: zero collisions. */
-    'want to disappear', 'wish i could disappear', 'just disappear',
-    'nobody would miss me', 'no one would miss me', 'nobody would care if i',
-    'no one would notice if i', 'nobody needs me',
-    'whats the point of anything', 'whats the point of living',
-    'whats the point of being alive', 'no point in anything',
-    'cant do this anymore', 'cant take this anymore', 'cant take it anymore',
-    'cant live like this anymore', 'cant handle this anymore',
-    'giving up on everything', 'give up on everything', 'feel like giving up on',
-    'want it all to stop', 'want it to all stop', 'want it all to end',
-    'want everything to stop', 'make it all stop', 'want the pain to stop',
-    'thinking about ending', 'been thinking about ending', 'thought about ending it',
-    'thinking of ending it', 'ending things',
-    'dont see a way forward', 'cant see a way forward', 'no way forward',
-    'theres no way out', 'no way out of this', 'see no future',
-    'dont see a future', 'no future for me',
-    'life isnt worth living', 'life is not worth living', 'not worth living',
-    'had enough of living', 'tired of living', 'done with life',
-    'burden to everyone', 'burden to my family', 'im a burden',
-    'everyone would be better off', 'world would be better without me',
-    'go to sleep and not wake up', 'not wake up tomorrow',
-    'dont want to wake up', 'hope i dont wake up',
-
-    /* INVISIBILITY — moved here from the soft tier on Ross's call
-     * (2026-10-07), having first been placed there.
-     *
-     * The argument for the soft tier was that feeling invisible is more often
-     * loneliness than suicidality, and that a full-screen takeover misfires on
-     * the majority who type it. The argument for here is that the cost of the
-     * two mistakes is not symmetrical: a lonely person shown a helpline has
-     * been over-served, and a suicidal person shown a carousel of videos has
-     * been failed. Ross's call, and on that reading it is the right one.
-     *
-     * Consequence to know rather than discover: 'i feel invisible' is broad
-     * enough to catch "i feel invisible at work", which will now be
-     * intercepted. That is accepted, not overlooked. Narrow it by removing
-     * that one entry and keeping only the longer forms. */
-    'i feel invisible to everyone', 'feel invisible to everyone',
-    'invisible to everyone', 'i feel invisible', 'feel invisible',
-    'nobody sees me', 'no one sees me', 'nobody notices me',
-    'no one notices me', 'nobody even sees me',
-    'i feel like i dont exist', 'feel like i dont exist',
-    'like i dont exist', 'i dont exist to anyone',
-  ],
-  self_harm: [
-    'self harm', 'selfharm', 'self harming', 'harm myself', 'harming myself',
-    'hurt myself', 'hurting myself', 'cutting myself', 'cut myself',
-    'burning myself', 'want to hurt myself', 'urge to cut',
-  ],
-  eating_disorder: [
-    'anorexia', 'anorexic', 'bulimia', 'bulimic', 'eating disorder',
-    'purging after eating', 'making myself sick after eating', 'starving myself',
-    'stop eating to lose', 'binge and purge', 'binge eating disorder',
-    'restricting food', 'scared to eat', 'cant stop binging',
-  ],
-  active_abuse: [
-    'domestic violence', 'domestic abuse', 'abusive partner', 'abusive husband',
-    'abusive wife', 'abusive relationship', 'he hits me', 'she hits me',
-    'he beats me', 'my partner hits me', 'scared of my husband',
-    'scared of my wife', 'scared of my partner', 'afraid he will hurt me',
-    'afraid of my partner', 'threatens to hurt me', 'im being abused',
-    'being abused', 'physically abused', 'he threatens me',
-  ],
-  sexual_assault: [
-    'raped', 'was raped', 'rape', 'sexual assault', 'sexually assaulted',
-    'assaulted me', 'sexual abuse', 'sexually abused', 'molested',
-    'without my consent',
-  ],
-  child_protection: [
-    'child abuse', 'child is being hurt', 'my child is being abused',
-    'worried about a child', 'someone is hurting my child',
-    'child is in danger', 'abusing a child',
-  ],
-  acute_crisis: [
-    'psychosis', 'psychotic', 'schizophrenia', 'having a breakdown',
-    'mental breakdown', 'losing touch with reality', 'paranoid delusions',
-    'they are watching me', 'they are following me', 'voices telling me to',
-    'voices tell me to hurt', 'cant tell what is real', 'in crisis',
-    'emergency mental health', 'i need urgent help',
-  ],
-};
+/* Seven categories, checked in this order; the first that matches wins.
+ * The phrases are SAFETY.crisisPatterns. Notes that belong to them:
+ *
+ * WIDENED 2026-10-07 — the oblique register (from 'want to disappear' to
+ * 'hope i dont wake up' in suicidal_ideation). The original list caught
+ * people who say it plainly. Testing 19 realistic phrasings against it, 16
+ * went straight through and returned an empty dropdown. They were safe only by
+ * accident: nothing matched them, so nothing was served. The content-token
+ * fallback added in the same release removes that accident, which is why
+ * these ship together and not one after the other. Still multi-word wherever
+ * a single word would misfire: "disappear" alone would catch "i want my
+ * anxiety to disappear"; "want to disappear" does not. Verified against all
+ * 693 stored emotions: zero collisions.
+ *
+ * INVISIBILITY ('i feel invisible to everyone' … 'i dont exist to anyone') —
+ * moved here from the soft tier on Ross's call (2026-10-07), having first
+ * been placed there. The argument for the soft tier was that feeling
+ * invisible is more often loneliness than suicidality, and that a full-screen
+ * takeover misfires on the majority who type it. The argument for here is
+ * that the cost of the two mistakes is not symmetrical: a lonely person shown
+ * a helpline has been over-served, and a suicidal person shown a carousel of
+ * videos has been failed. Ross's call, and on that reading it is the right
+ * one. Consequence to know rather than discover: 'i feel invisible' is broad
+ * enough to catch "i feel invisible at work", which will now be intercepted.
+ * That is accepted, not overlooked. Narrow it by removing that one entry and
+ * keeping only the longer forms. */
+const CRISIS_PATTERNS = Object.fromEntries(
+  SAFETY.crisisPatterns.map(({ category, phrases }) => [category, phrases])
+);
 
 /* Word-boundary containment, so "rape" does not fire inside "grape" and
  * "in crisis" does not fire inside a longer benign phrase by accident. */
@@ -601,31 +387,14 @@ function checkCrisis(normalised) {
  * maintain its own jurisdiction-by-jurisdiction list.
  * ------------------------------------------------------------------- */
 
-const CRISIS_INTERSTITIAL = {
-  heading: 'We want to make sure you have the right support',
-  body: [
-    'Thank you for telling us how you are feeling. That takes something, and we do not want to hand you a list of videos in response to it.',
-    'What you are carrying deserves a real person, not a library. There are people trained for exactly this, available right now, free and confidential — wherever in the world you are.',
-  ],
-  primaryAction: {
-    label: 'Find someone to talk to',
-    href: 'https://findahelpline.com/',
-    note: 'Finds free, confidential support in your country — by phone, text or chat.',
-  },
-  secondaryAction: {
-    label: 'Take me back to Spiritpedia',
-    behaviour: 'returnToSearch',
-  },
-  closing: 'Whenever you are ready, we will still be here.',
-
-  /* Presentation requirements — these are part of the deliverable:
-   *  - "Take me back" must be a real, obvious, unshamed way out.
-   *    Not greyed out. Not a tiny close icon in a corner.
-   *  - No content carousels render on this screen. None.
-   *  - No clinical vocabulary, no diagnosis language, no warning icons,
-   *    no red. Keep the platform's calm visual language.
-   *  - Do not ask the user to confirm or explain what they meant. */
-};
+/* Presentation requirements — these are part of the deliverable:
+ *  - "Take me back" must be a real, obvious, unshamed way out.
+ *    Not greyed out. Not a tiny close icon in a corner.
+ *  - No content carousels render on this screen. None.
+ *  - No clinical vocabulary, no diagnosis language, no warning icons,
+ *    no red. Keep the platform's calm visual language.
+ *  - Do not ask the user to confirm or explain what they meant. */
+const CRISIS_INTERSTITIAL = SAFETY.crisisInterstitial;
 
 
 /* ---------------------------------------------------------------------
@@ -639,14 +408,7 @@ const CRISIS_INTERSTITIAL = {
  * carrying equal visual weight.
  * ------------------------------------------------------------------- */
 
-const AMBIGUOUS_PATTERNS = [
-  'hearing voices', 'i hear voices', 'i keep hearing voices',
-  'voices in my head', 'hearing a voice',
-  'seeing things', 'i see things that arent there', 'seeing things that arent there',
-  'spirits are talking to me', 'spirits talking to me', 'something is talking to me',
-  'i think im losing my mind', 'losing my mind', 'am i losing my mind',
-  'going mad', 'am i going mad',
-];
+const AMBIGUOUS_PATTERNS = SAFETY.ambiguousPatterns;
 
 const AMBIGUOUS_COMPILED = AMBIGUOUS_PATTERNS.map(buildPhraseRegex);
 
@@ -654,26 +416,10 @@ function checkAmbiguous(normalised) {
   return AMBIGUOUS_COMPILED.some((re) => re.test(normalised));
 }
 
-const DUAL_PATH = {
-  heading: 'That can mean very different things',
-  body: 'We would rather ask than guess. Which is closer to where you are?',
-  options: [
-    {
-      key: 'exploring',
-      label: 'I am exploring channelling and spiritual communication',
-      subjects: ['channelled-teachings', 'mediumship-spirits', 'mysticism'],
-      behaviour: 'continueToResults',
-    },
-    {
-      key: 'distressing',
-      label: 'This is frightening or distressing me',
-      behaviour: 'showInterstitial',
-    },
-  ],
-  /* Presentation: equal visual weight on both options — no primary/
-   * secondary styling, no ordering that implies a "right" answer, no
-   * clinical vocabulary anywhere on this screen. */
-};
+/* Presentation: equal visual weight on both options — no primary/
+ * secondary styling, no ordering that implies a "right" answer, no
+ * clinical vocabulary anywhere on this screen. */
+const DUAL_PATH = SAFETY.dualPath;
 
 
 /* ---------------------------------------------------------------------
@@ -695,16 +441,14 @@ const DUAL_PATH = {
  * The crisis check runs first and returns, so a phrase in both lists would
  * never reach this one; keeping it in a single place avoids a second list to
  * remember when either changes. */
-const SOFT_TIER_PATTERNS = ['i hate myself', 'hopeless', 'hate my body'];
+const SOFT_TIER_PATTERNS = SAFETY.softTierPatterns;
 const SOFT_TIER_COMPILED = SOFT_TIER_PATTERNS.map(buildPhraseRegex);
 
 function checkSoftTier(normalised) {
   return SOFT_TIER_COMPILED.some((re) => re.test(normalised));
 }
 
-const SOFT_TIER_LINE =
-  'If this is heavier than it looks from the outside, talking to someone can help. ' +
-  'findahelpline.com finds free, confidential support in your country.';
+const SOFT_TIER_LINE = SAFETY.softTierLine;
 
 /* Presentation: quiet. Small, muted text. No icon, no coloured alert
  * box, no border. Rendered AFTER the carousels, never above them. */
@@ -726,10 +470,10 @@ const SOFT_TIER_LINE =
  * To narrow it to weight >= 2, set MEDICAL_MIN_WEIGHT to 2.
  * ------------------------------------------------------------------- */
 
-const MEDICAL_SUBJECTS = ['quantum-healing', 'homeopathy', 'energy-medicine', 'ayurveda'];
-const MEDICAL_MIN_WEIGHT = 1;
+const MEDICAL_SUBJECTS = SAFETY.medicalSubjects;
+const MEDICAL_MIN_WEIGHT = SAFETY.medicalMinWeight;
 
-const MEDICAL_DISCLAIMER = 'Complementary to, not a replacement for, medical care.';
+const MEDICAL_DISCLAIMER = SAFETY.medicalDisclaimer;
 
 function needsMedicalDisclaimer(rows) {
   return (rows || []).some(
