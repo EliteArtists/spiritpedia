@@ -47,6 +47,8 @@ class Healer {
     this.country,
     this.city,
     this.bookingUrl,
+    this.contactEmail,
+    this.contactPhone,
     this.websiteUrl,
     this.youtubeUrl,
     this.instagramUrl,
@@ -70,6 +72,8 @@ class Healer {
     country: _text(j['country']),
     city: _text(j['city']),
     bookingUrl: _text(j['booking_url']),
+    contactEmail: _text(j['contact_email']),
+    contactPhone: _text(j['contact_phone']),
     websiteUrl: _text(j['website_url']),
     youtubeUrl: _text(j['youtube_url']),
     instagramUrl: _text(j['instagram_url']),
@@ -92,6 +96,8 @@ class Healer {
   final String? country;
   final String? city;
   final String? bookingUrl;
+  final String? contactEmail;
+  final String? contactPhone;
   final String? websiteUrl;
   final String? youtubeUrl;
   final String? instagramUrl;

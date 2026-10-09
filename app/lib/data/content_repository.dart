@@ -27,6 +27,28 @@ abstract class ContentRepository {
   Future<List<Video>> videoPool({List<String>? subjects, int poolSize = 60});
   Future<List<Video>> mixedVideos({int poolSize = 60});
   Future<List<Video>> videosForSubject(String subject);
+
+  /// Detail pages. null = no such row (the page shows "not found").
+  Future<Book?> book(String slug);
+  Future<Video?> video(String slug);
+  Future<Offering?> offering(String slug);
+  Future<FreeResource?> freeResource(String slug);
+
+  /// A teacher's page: their books and videos (by the text healer_slug), and
+  /// their live offerings and free resources (by the bigint healer_id).
+  Future<List<Book>> booksByHealers(List<String> healerSlugs);
+  Future<List<Video>> videosByHealer(String healerSlug);
+  Future<List<Offering>> liveOfferingsForHealer(int healerId);
+  Future<List<FreeResource>> liveFreeResourcesForHealer(int healerId);
+
+  /// A publisher's linked authors (healer ids), from publisher_healers.
+  Future<List<int>> publisherAuthorIds(String publisherId);
+
+  /// My Library: the saved rows, by slug.
+  Future<List<Book>> booksBySlugs(List<String> slugs);
+  Future<List<Video>> videosBySlugs(List<String> slugs);
+  Future<List<Offering>> offeringsBySlugs(List<String> slugs);
+  Future<List<FreeResource>> freeResourcesBySlugs(List<String> slugs);
 }
 
 class SupabaseContentRepository implements ContentRepository {
@@ -210,6 +232,122 @@ class SupabaseContentRepository implements ContentRepository {
     );
     return [for (final r in rows) Video.fromJson(r)];
   }
+
+  Future<Map<String, dynamic>?> _one(String table, String slug) =>
+      _db.from(table).select().eq('slug', slug).maybeSingle();
+
+  @override
+  Future<Book?> book(String slug) async {
+    final r = await _one('books', slug);
+    return r == null ? null : Book.fromJson(r);
+  }
+
+  @override
+  Future<Video?> video(String slug) async {
+    final r = await _one('videos', slug);
+    return r == null ? null : Video.fromJson(r);
+  }
+
+  @override
+  Future<Offering?> offering(String slug) async {
+    final r = await _one('courses', slug);
+    return r == null ? null : Offering.fromJson(r);
+  }
+
+  @override
+  Future<FreeResource?> freeResource(String slug) async {
+    final r = await _one('free_resources', slug);
+    return r == null ? null : FreeResource.fromJson(r);
+  }
+
+  @override
+  Future<List<Book>> booksByHealers(List<String> healerSlugs) async {
+    if (healerSlugs.isEmpty) return const [];
+    final rows = await _all(
+      () => _db
+          .from('books')
+          .select()
+          .inFilter('healer_slug', healerSlugs)
+          .order('created_at', ascending: false)
+          .order('id', ascending: false),
+    );
+    return [for (final r in rows) Book.fromJson(r)];
+  }
+
+  @override
+  Future<List<Video>> videosByHealer(String healerSlug) async {
+    final rows = await _all(
+      () => _db
+          .from('videos')
+          .select(_videoColumns)
+          .eq('healer_slug', healerSlug)
+          .order('id', ascending: false),
+    );
+    return [for (final r in rows) Video.fromJson(r)];
+  }
+
+  @override
+  Future<List<Offering>> liveOfferingsForHealer(int healerId) async {
+    final rows = await _db
+        .from('courses')
+        .select()
+        .eq('healer_id', healerId)
+        .eq('is_active', true)
+        .or(_liveWindow)
+        .order('created_at', ascending: false);
+    return [for (final r in rows) Offering.fromJson(r)];
+  }
+
+  @override
+  Future<List<FreeResource>> liveFreeResourcesForHealer(int healerId) async {
+    final rows = await _db
+        .from('free_resources')
+        .select()
+        .eq('healer_id', healerId)
+        .eq('is_active', true)
+        .or(_liveWindow)
+        .order('created_at', ascending: false);
+    return [for (final r in rows) FreeResource.fromJson(r)];
+  }
+
+  @override
+  Future<List<int>> publisherAuthorIds(String publisherId) async {
+    final rows = await _db
+        .from('publisher_healers')
+        .select('healer_id')
+        .eq('publisher_id', publisherId);
+    return [for (final r in rows) (r['healer_id'] as num).toInt()];
+  }
+
+  Future<List<Map<String, dynamic>>> _bySlugs(
+    String table,
+    List<String> slugs, {
+    String columns = '*',
+  }) async => slugs.isEmpty
+      ? const []
+      : await _db.from(table).select(columns).inFilter('slug', slugs);
+
+  @override
+  Future<List<Book>> booksBySlugs(List<String> slugs) async => [
+    for (final r in await _bySlugs('books', slugs)) Book.fromJson(r),
+  ];
+
+  @override
+  Future<List<Video>> videosBySlugs(List<String> slugs) async => [
+    for (final r in await _bySlugs('videos', slugs, columns: _videoColumns))
+      Video.fromJson(r),
+  ];
+
+  @override
+  Future<List<Offering>> offeringsBySlugs(List<String> slugs) async => [
+    for (final r in await _bySlugs('courses', slugs)) Offering.fromJson(r),
+  ];
+
+  @override
+  Future<List<FreeResource>> freeResourcesBySlugs(List<String> slugs) async => [
+    for (final r in await _bySlugs('free_resources', slugs))
+      FreeResource.fromJson(r),
+  ];
 }
 
 /// Healer names by id and by slug, for cards whose rows only carry a key.

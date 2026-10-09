@@ -1,7 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
+import 'features/detail/book_screen.dart';
+import 'features/detail/offering_screen.dart';
+import 'features/detail/publisher_screen.dart';
+import 'features/detail/teacher_screen.dart';
+import 'features/detail/video_screen.dart';
 import 'features/home/home_screen.dart';
+import 'features/library/library_screen.dart';
 import 'features/search/search_screen.dart';
 import 'features/shell/app_shell.dart';
 import 'features/subject/subject_screen.dart';
@@ -45,12 +51,7 @@ GoRouter buildRouter() => GoRouter(
           routes: [
             GoRoute(
               path: '/library',
-              builder: (context, state) => const PlaceholderScreen(
-                title: 'My Library',
-                icon: Icons.bookmark_border,
-                comingIn:
-                    'Saving teachers, books and videos arrives in Phase 1d.',
-              ),
+              builder: (context, state) => const LibraryScreen(),
             ),
           ],
         ),
@@ -79,23 +80,18 @@ GoRouter buildRouter() => GoRouter(
       path: '/feel',
       builder: (context, state) => const SearchScreen(standalone: true),
     ),
-    for (final (path, label) in [
-      ('/healers/:slug', 'Teacher'),
-      ('/books/:slug', 'Book'),
-      ('/videos/:slug', 'Video'),
-      ('/publishers/:slug', 'Publisher'),
-      ('/offerings/:slug', 'Offering'),
-      ('/free-resources/:slug', 'Free resource'),
+    for (final (path, screen) in <(String, Widget Function(String))>[
+      ('/healers/:slug', (slug) => TeacherScreen(slug: slug)),
+      ('/books/:slug', (slug) => BookScreen(slug: slug)),
+      ('/videos/:slug', (slug) => VideoScreen(slug: slug)),
+      ('/publishers/:slug', (slug) => PublisherScreen(slug: slug)),
+      ('/offerings/:slug', (slug) => OfferingScreen(slug: slug)),
+      ('/free-resources/:slug', (slug) => FreeResourceScreen(slug: slug)),
     ])
       GoRoute(
         parentNavigatorKey: _rootKey,
         path: path,
-        builder: (context, state) => PlaceholderScreen(
-          title: label,
-          icon: Icons.auto_awesome_outlined,
-          comingIn:
-              '${state.pathParameters['slug']}\n\nDetail pages arrive in Phase 1d.',
-        ),
+        builder: (context, state) => screen(state.pathParameters['slug']!),
       ),
   ],
 );
