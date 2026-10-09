@@ -2,5 +2,10 @@
   "APP_ENV": "prod",
   "SUPABASE_URL": "https://uzmvcgewxgvnybdhvsyx.supabase.co",
   "SUPABASE_ANON_KEY": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InV6bXZjZ2V3eGd2bnliZGh2c3l4Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzUwNjc0OTAsImV4cCI6MjA5MDY0MzQ5MH0.83Bb17N6yDRHem9i8B3N_UJzGt17nUfkbQKukYa_qPU",
-  "API_BASE_URL": "https://www.spiritpedia.co"
+  "API_BASE_URL": "https://www.spiritpedia.co",
+  "AMAZON_TAG_US": "spiritpedia-20",
+  "AMAZON_TAG_UK": "spiritpedia03-21",
+  "AMAZON_TAG_CA": "spiritpedia0d-20",
+  "AMAZON_TAG_ES": "spiritpedi093-21",
+  "AMAZON_TAG_AU": "spiritpedia-22"
 }
