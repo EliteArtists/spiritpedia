@@ -137,12 +137,36 @@ them with the same phrase lists and the same order. A search box that reaches
 crisis.
 
 #### The Flutter app — where it stands
-**Phase 0 is built:** `app/`, bundle ID `co.spiritpedia.app` on both platforms,
-Flutter pinned to **3.47.7**, the website's colours and Geist type, tier
-badges, the static launch screen and the shooting-star intro (every cold
-start, ~1.6 s, tap to skip, off under Reduce Motion), four placeholder tabs,
-and a read-only Supabase connection. Run it with
-`flutter run --dart-define-from-file=config/prod.json` from `app/`.
+**Phases 0 and 1 are built** (10 Oct 2026). The app reads live content and
+writes nothing; accounts come in Phase 2.
+
+* **Phase 0:** `app/`, bundle ID `co.spiritpedia.app` on both platforms,
+  Flutter pinned to **3.47.7**, the website's colours and Geist type, tier
+  badges, the static launch screen and the shooting-star intro (every cold
+  start, ~1.6 s, tap to skip, off under Reduce Motion), and a read-only
+  Supabase connection.
+* **1a — one crisis phrase list.** `web/shared/emotion-safety.json` is the
+  single source for the website and the app (the app bundles it through a
+  symlink). `web/shared/emotion-safety.cases.json` is checked by both
+  `npm test` and `flutter test`, so the two cannot drift.
+* **1b — Explore.** Five tabs (Home, Videos, Search, Library, Account). Home
+  mirrors the website: the feeling search, subject pills, billboard, healer and
+  publisher shelves, Explore More. Videos has subject shelves with at most two
+  videos per teacher. Subject pages.
+* **1c — emotional search.** Full screen. The crisis check runs on every
+  keystroke before any request: a crisis phrase shows the crisis screen and
+  sends nothing (tested for every phrase). Then the dual path, soft-tier line,
+  medical disclaimer, universal search and the gentle no-match screen.
+* **1d — detail pages.** Teacher, book, video, publisher, offering and free
+  resource. Book pages build Amazon links with a Dart port of
+  `utils/affiliate.js` (same test cases) and tag them from the five
+  `AMAZON_TAG_*` values in `app/config/prod.json`; the disclosure sits at the
+  bottom of the purchase section, only when the link is tagged. Videos play in
+  YouTube's privacy-enhanced (nocookie) player. Every outbound link opens
+  outside the app. Saves (heart, Want to Read, Read) are kept **on the device
+  only**, as slugs, and listed in the Library tab.
+
+Run it with `flutter run --dart-define-from-file=config/prod.json` from `app/`.
 
 Decisions for v1, settled 9 Oct 2026:
 * **iPhone only, portrait only.** No iPad layout.
@@ -213,7 +237,7 @@ The entry point is always emotional:
 | Platform | Role | Status |
 | :--- | :--- | :--- |
 | Web App (Next.js) | Primary product — full discovery experience | ✅ **Complete and live** at [www.spiritpedia.co](https://www.spiritpedia.co) |
-| Native App (Flutter) | **The current phase** — iOS & Android with push notifications | 🟡 Phase 0 done — skeleton, theme, intro. In `app/` |
+| Native App (Flutter) | **The current phase** — iOS & Android with push notifications | 🟡 Phases 0–1 done — explore, emotional search, detail pages, device saves. In `app/` |
 
 #### Domains
 `spiritpedia.co` is the primary domain and the one to share. The original
@@ -1078,7 +1102,8 @@ clean, untagged `/dp/` links and no disclosure line shows.
 | GA4 analytics | ✅ Complete |
 | Content library (target: 5,000 videos + 5,000 books) | ⬜ Ongoing |
 | Flutter native app — Phase 0 (skeleton, theme, launch screen, intro, tabs) | ✅ Complete |
-| Flutter native app — Phases 1–4 (explore, accounts, push, stores) | ⬜ In progress |
+| Flutter native app — Phase 1 (shared crisis list, explore, emotional search, detail pages) | ✅ Complete |
+| Flutter native app — Phases 2–4 (accounts, push, stores) | ⬜ Next |
 | IAM notification system | ⬜ Phase 2 |
 
 📊 Content Library
@@ -1143,6 +1168,11 @@ and Australia earn through OneLink redirects — and so any future `.ca`, `.es` 
 `.com.au` link is tagged correctly without a code change. The page adds "as well
 as Amazon's other international stores" for the countries Global Earning
 Preferences reach without an account of our own.
+
+**The app carries the same five tags** in `app/config/prod.json`
+(`AMAZON_TAG_US`, `_UK`, `_CA`, `_ES`, `_AU`), read at build time. They are not
+read from Vercel, so a tag change means editing both places — the Vercel env
+var for the website and `app/config/prod.json` for the next app build.
 
 ```
 719  www.amazon.com   (incl. 1 us.amazon.com, treated as .com)  → US tag
@@ -1263,7 +1293,7 @@ whose `course_url` points at Amazon.
 | Admin phases 4+ | Flags, messages, publisher claims. Each needs its own table |
 | Ancient Teachers tier | Planned |
 | Content library | Target: 5,000 videos + 5,000 books — ongoing |
-| Flutter app build | Phase 0 done; phases 1–4 in `app/README.md` |
+| Flutter app build | Phases 0–1 done; phases 2–4 in `app/README.md` |
 
 🔧 Operational knowledge
 Things learned the hard way that neither the code nor the git log will tell you.

@@ -19,7 +19,7 @@ missing values instead of crashing.
 
 | File | What it points at | Committed |
 | :--- | :--- | :--- |
-| `config/prod.json` | the live Supabase project and `https://www.spiritpedia.co` | yes — public values only |
+| `config/prod.json` | the live Supabase project, `https://www.spiritpedia.co` and the five Amazon Associates tags (`AMAZON_TAG_*`, same values as the website's Vercel env vars) | yes — public values only |
 | `config/dev.json` | the dev Supabase project and a local `next dev` (Phase 2) | **no** — copy `config/dev.example.json` |
 
 **Never put the service-role key in the app.** The anon key is public by
@@ -47,14 +47,22 @@ lib/
   main.dart            starts Supabase, holds the launch screen, locks portrait
   app.dart             MaterialApp + the intro overlay above the router
   router.dart          go_router; paths mirror the website's
-  core/                config, Supabase client (reads only)
+  core/                config, Supabase client (reads only), crisis safety
+                       (Dart port of the shared JSON), Amazon links, outbound links
+  data/                models, the read-only content repository, shelf rules
   theme/               the website's colours and type (Geist)
-  shared/widgets/      tier badges, placeholders
+  shared/widgets/      tier badges, cards, shelves, images
   features/
     intro/             the shooting-star opening animation
-    shell/             the four tabs
-    home/              Explore (Phase 0 placeholder)
-assets/                star, Geist + its licence, launch-screen source images
+    shell/             the five tabs
+    home/              Explore: feeling search, pills, billboard, shelves
+    videos/            subject shelves, max two per teacher
+    subject/           subject pages
+    search/            emotional search with the crisis intercept
+    detail/            teacher, book, video, publisher, offering, free resource
+    library/           saves on the device, and the Library tab
+assets/                star, Geist + its licence, launch-screen source images,
+                       safety/emotion-safety.json (symlink to web/shared/)
 ```
 
 State management is **Riverpod** (no code generation); navigation is
@@ -85,10 +93,10 @@ State management is **Riverpod** (no code generation); navigation is
 | Phase | Scope |
 | :--- | :--- |
 | 0 | Skeleton, theme, launch screen, intro, tabs ✅ |
-| 1a | Shared crisis phrase list (one JSON file, used by website and app) |
-| 1b | Explore: home shelves, subject pills, subject pages |
-| 1c | Emotional search with the crisis intercept |
-| 1d | Healer, book, video, publisher and offering pages; saved items on the device |
+| 1a | Shared crisis phrase list (one JSON file, used by website and app) ✅ |
+| 1b | Explore: home shelves, subject pills, subject pages ✅ |
+| 1c | Emotional search with the crisis intercept ✅ |
+| 1d | Healer, book, video, publisher and offering pages; saved items on the device ✅ |
 | 2 | Email-code sign-in, My Library sync, reviews, account deletion |
 | 3 | Push notifications |
 | 4 | Store readiness |
