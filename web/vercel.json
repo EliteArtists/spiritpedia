@@ -7,6 +7,10 @@
     {
       "path": "/api/cron/journey-emails",
       "schedule": "0 8 * * *"
+    },
+    {
+      "path": "/api/cron/pending-signups",
+      "schedule": "0 6 * * *"
     }
   ]
 }

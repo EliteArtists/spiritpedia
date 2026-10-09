@@ -44,7 +44,7 @@ Worth deleting the spare, once someone confirms nothing references
 `spiritpedia.vercel.app`.
 
 #### Vercel settings that are not in this repo
-* **Root Directory must be `web`.** The Next app is not at the repo root, and `web/vercel.json` — which declares both cron schedules — is ignored unless Vercel is pointed at `web`. It currently is; do not change it.
+* **Root Directory must be `web`.** The Next app is not at the repo root, and `web/vercel.json` — which declares all three cron schedules — is ignored unless Vercel is pointed at `web`. It currently is; do not change it.
 * Environment variables are set in the Vercel dashboard, not in any file here — **on `spiritpedia-e58y`**. See *Environment variables* at the foot of this README for the full list.
 * Node 24.x on Vercel.
 * `npx vercel ls` / `vercel inspect <url>` work from `web/` once authenticated, and are the quickest way to confirm a deploy succeeded.
@@ -573,7 +573,10 @@ account with no profile. `INITIAL_SESSION` repairs existing damage on next visit
 keyed by email so it survives a magic link opened on another device.
 sessionStorage alone cannot. Written via `/api/pending-user-type` (service role):
 the table has no anon SELECT policy, which also makes an anonymous UPSERT fail
-and an anonymous UPDATE silently match zero rows.
+and an anonymous UPDATE silently match zero rows. Each write re-stamps
+`created_at`, and `/api/cron/pending-signups` deletes rows older than 24 hours
+every day, so an abandoned sign-up's address is gone within two days — the
+figure the Privacy Policy gives.
 
 #### /account states
 | State | Renders |
@@ -890,7 +893,7 @@ copy of the emotional-search vocabulary that exists.
 * **publisher_healers**: `id`, `publisher_id` (→ publishers.id), `healer_id` (→ healers.id) — the many-to-many junction linking a publishing house to its authors
 * **user_profiles**: `id` (→ auth.users), `user_type`, `verification_status`, `linked_healer_slug`, `full_name`, `modality`, `bio`, location, socials, `subject_slugs[]`, `image_urls[]`. Carries the field-protection trigger
 * **user_favourites**: `user_id`, `content_type`, `content_slug` — unique together. `content_slug` is **three different shapes**: a text slug for healers and publishers, a bigint for books and videos, and a **UUID** for courses and free resources. (The migration comment calls the last two numeric. They are not.) `reviews.content_slug` deliberately does not inherit this — there it is always the slug
-* **pending_user_types**: `email` (PK), `user_type` — consumed and deleted at verification
+* **pending_user_types**: `email` (PK), `user_type`, `created_at` — consumed and deleted at verification; anything older than 24 hours is deleted by the daily `pending-signups` cron
 * **admin_notes**: `subject_user_id`, `body`, `created_by` — service role only. `subject_user_id` is a foreign key onto `auth.users`, so a note can only be attached to an account; an unclaimed healer cannot have one
 * **reviews**: `id`, `user_id` (→ auth.users), `content_type`, `content_slug`, `rating` (1–5), `body`, `author_name`, `author_healer_slug`, `status`, `created_at`. Unique on (user, type, slug). Public read is `status = 'approved'`; the author can read their own whatever its state
 * **healer_journeys**: `id` (uuid), `healer_slug` (→ healers, ON DELETE CASCADE), `status`, `stop_reason`, `started_at`, `sent_1_at` … `sent_5_at`, `created_at`. Service role only. One running journey per healer, enforced by a partial unique index so stopped ones remain
@@ -1229,6 +1232,7 @@ Check with `lsof -ti:3000`.
 * Every migration in `supabase/migrations/` (all use `IF NOT EXISTS` / `DROP … IF EXISTS`).
 * The hand-run `emotion_mappings` inserts (`ON CONFLICT DO NOTHING`).
 * The broken-images cron, with `?dry=1` to check without writing and `?shard=N` to audit a named seventh.
+* The pending-signups cron. `?dry=1` reports how many rows it would delete, without deleting them.
 
 #### Things that are not
 * Starting a healer journey — it sends real email to a real practitioner.
@@ -1258,10 +1262,10 @@ Things that look like faults and are not. Each was a decision; none should be
 | Variable | Needed for |
 | :--- | :--- |
 | `NEXT_PUBLIC_SUPABASE_URL` · `NEXT_PUBLIC_SUPABASE_ANON_KEY` | everything |
-| `SUPABASE_SERVICE_ROLE_KEY` | admin data, both crons, every server-side write |
+| `SUPABASE_SERVICE_ROLE_KEY` | admin data, all three crons, every server-side write |
 | `ADMIN_PASSWORD` · `ADMIN_NAME` | the admin login and its greeting |
 | `RESEND_API_KEY` | all ten emails |
-| `CRON_SECRET` | the two scheduled jobs |
+| `CRON_SECRET` | the three scheduled jobs |
 | `NEXT_PUBLIC_GA_MEASUREMENT_ID` | GA4, after consent |
 | `AMAZON_TAG_US` · `_UK` · `_CA` · `_ES` · `_AU` | Amazon Associates tracking IDs, all set. A store is tagged and named on `/affiliate-disclosure` only when its var is set; `_DE` `_FR` `_IT` are recognised and unset. Redeploy after changing. See *Amazon Associates* |
 
@@ -1272,12 +1276,16 @@ cannot be sent from the browser, which is why each client-side trigger has a thi
 server route.
 
 #### Scheduled jobs
-`web/vercel.json`, both guarded by `CRON_SECRET`:
+`web/vercel.json`, all guarded by `CRON_SECRET`:
 
-| Job | Schedule |
-| :--- | :--- |
-| `/api/cron/broken-images` | `0 7 * * *` |
-| `/api/cron/journey-emails` | `0 8 * * *` |
+| Job | Schedule | Does |
+| :--- | :--- | :--- |
+| `/api/cron/pending-signups` | `0 6 * * *` | Deletes `pending_user_types` rows older than 24 hours — unfinished sign-ups. Returns a count, never addresses |
+| `/api/cron/broken-images` | `0 7 * * *` | Image audit |
+| `/api/cron/journey-emails` | `0 8 * * *` | Healer outreach sequence |
+
+All three are daily, which is the most a Hobby plan allows — a schedule that
+runs more often fails the deploy. Vercel allows 100 cron jobs per project.
 
 **`vercel.json` must sit in `web/`, not the repo root**, and Vercel's Root
 Directory must be set to `web` — the app is not at the top of this repo and a

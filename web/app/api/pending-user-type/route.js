@@ -38,9 +38,16 @@ export async function POST(request) {
     return NextResponse.json({ error: 'invalid_email' }, { status: 400 });
   }
 
+  // created_at is re-stamped on every write, not left at the column default.
+  // The daily cleanup (api/cron/pending-signups) deletes rows older than 24
+  // hours; measured from the FIRST attempt, someone who abandoned sign-up and
+  // came back days later could lose their choice mid-way through the second.
   const { error } = await supabase
     .from('pending_user_types')
-    .upsert({ email, user_type: userType }, { onConflict: 'email' });
+    .upsert(
+      { email, user_type: userType, created_at: new Date().toISOString() },
+      { onConflict: 'email' }
+    );
 
   if (error) {
     return NextResponse.json({ error: error.message }, { status: 500 });

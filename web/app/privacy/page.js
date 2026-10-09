@@ -68,7 +68,7 @@ export default function PrivacyPage() {
           <li>
             While you&apos;re signing up, we briefly hold your email address and that choice, so it
             survives if you open your code on another device. It is deleted once you finish
-            signing up.
+            signing up, or automatically within two days if you don&apos;t.
           </li>
           <li>
             Your saved items and any reviews you write. A review is shown publicly with the name
@@ -194,8 +194,8 @@ export default function PrivacyPage() {
             months.
           </li>
           <li>
-            Unfinished sign-ups — the email address and choice you entered, until you finish
-            signing up or ask us to remove it.
+            Unfinished sign-ups — the email address and choice you entered are deleted
+            automatically within two days.
           </li>
           <li>Analytics — 2 months.</li>
           <li>Emails to us — as long as needed to deal with them.</li>
