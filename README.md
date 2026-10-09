@@ -11,7 +11,7 @@ session — with no prior context.
 | :--- | :--- |
 | Repository | `https://github.com/EliteArtists/spiritpedia` |
 | Branch | `main` — the only branch; there is no develop/staging branch |
-| Last code change | **`7c9cc47`** (8 October 2026) — everything after it is documentation only, so `7c9cc47` is the known-good baseline for the running site |
+| Last application change | **`96b0342`** (9 October 2026) — the daily cleanup of unfinished sign-ups. Everything after it is documentation, SQL backups and code comments, so `96b0342` is the known-good baseline for the running site |
 | Production | Vercel, auto-deploying every push to `main` |
 | Vercel team | `eliteartists-projects` |
 | Vercel project | **`spiritpedia-e58y`** — *not* the one called `spiritpedia`. See below |
@@ -20,10 +20,24 @@ session — with no prior context.
 
 Every commit on `main` is deployed. There is no release process, no staging
 environment and no feature flags: merging to `main` *is* shipping. **Verified
-working in production as of 8 October 2026** — the site serves, and the daily
-`broken-images` cron ran at 07:00 UTC that morning and wrote 8 rows, which is
-end-to-end proof that Vercel's Root Directory, `vercel.json` and `CRON_SECRET`
-are all correctly configured.
+working in production as of 9 October 2026** — `96b0342` deployed Ready
+(`dpl_HVXujjp6hRAWcaeUsogM3Hhyftx1`), Vercel lists all three cron jobs, and the
+daily `broken-images` cron ran at 07:00 UTC on 8 October and wrote 8 rows,
+which is end-to-end proof that Vercel's Root Directory, `vercel.json` and
+`CRON_SECRET` are all correctly configured.
+
+#### What changed on 8–9 October 2026
+| Change | Commit | Where to read more |
+| :--- | :--- | :--- |
+| **Security update** — `npm audit fix`: Next.js 16.2.11 → **16.4.0**, **0 production vulnerabilities**. Five high-severity advisories remain in the lint toolchain (`eslint-config-next` → … → `braces`); fixing them needs `--force` and a breaking downgrade, so they were left. They do not ship | `4251e22` | — |
+| **Amazon Associates** — render-time tags for `.com` (`spiritpedia-20`, primary) and `.co.uk` (`spiritpedia03-21`), inline disclosure, `/affiliate-disclosure`. Five accounts (US, UK, CA, ES, AU) linked; OneLink configured in the US and UK dashboards and needs no site code | `3b70aa5`, `fcd51ee` | *Amazon Associates* |
+| **Legal pages** — Terms of Use and Privacy Policy on `/terms` and `/privacy`, every technical claim checked against the code; footer **Cookie settings** that can withdraw consent; agreement line at sign-up; YouTube embeds moved to `youtube-nocookie.com` | `2081a99` | `components/LegalPage.jsx`, *Site-wide Footer* |
+| **Unfinished sign-ups cleanup** — daily `/api/cron/pending-signups` deletes `pending_user_types` rows older than 24 hours, so the Privacy Policy's "within two days" is true | `96b0342` | *Scheduled jobs* |
+| **Database backups** — the complete production schema as `supabase/migrations/0000_production_baseline.sql` (pg_dump, verified by rebuilding it), and the full `emotion_mappings` vocabulary as `supabase/seed/emotion_mappings.sql`. The repo can now rebuild the database's structure; content data is still production-only | this commit | *Database state and rebuilding it* |
+
+The legal pages are a careful draft, not legal advice: have a solicitor or
+data-protection specialist review them before public promotion, and check
+whether the ICO data protection fee applies.
 
 #### TWO Vercel projects exist — only one serves the site
 The team `eliteartists-projects` holds **two projects building this same
@@ -69,9 +83,57 @@ inherits the same schema, RLS policies and server routes.
 
 #### Before you touch Flutter
 Read *Getting Oriented* (immediately below), *Security model*, and *Database
-state not captured in this repository*. The third one matters most: **parts of
-the live database were applied by hand and exist in no migration file**, so a
-fresh clone does not tell you what the database actually contains.
+state and rebuilding it*. The third one matters most: much of the live
+database was built by hand in the dashboard. Since 9 October 2026
+**`supabase/migrations/0000_production_baseline.sql` is the complete schema**,
+exported from production with `pg_dump` and proven to rebuild it — but the
+content rows themselves (healers, books, videos…) are still only in production.
+
+#### For the Flutter build
+The app uses **the same Supabase project** and the same anon key. That key can
+read every content table and write almost nothing (migration `0007`), so writes
+take one of two paths. Do not loosen RLS to shorten either.
+
+**1. Next.js API routes on `https://www.spiritpedia.co`.** Each takes the
+signed-in user's Supabase access token as `Authorization: Bearer <token>` and
+identifies the user from it — never from the body.
+
+| Route | Method | When the app calls it |
+| :--- | :--- | :--- |
+| `/api/pending-user-type` | POST `{ email, userType }` | **No token** — before the code is verified. Records explorer/practitioner against the email |
+| `/api/email/explorer-welcome` · `/api/email/practitioner-welcome` | POST | Once, when the profile row is first created |
+| `/api/email/review-received` | POST `{ contentType, contentSlug }` | After the user submits a review |
+| `/api/practitioner/profile` | GET · PATCH | An **approved** practitioner reads or edits their own listing (allow-listed fields only) |
+| `/api/profile/resubmit` | POST | A **rejected** applicant puts their application back to pending |
+
+`/api/admin/*` is the web dashboard's, behind a password cookie — not for the app.
+
+**2. Direct Supabase calls with the user's session**, enforced by RLS and the
+field-protection triggers: upsert their own `user_profiles` row, upsert their
+own `user_favourites`, upsert their own `reviews` (the trigger forces
+`status = 'pending'`), delete their own `pending_user_types` row, call the
+`claim_healer_profile()` RPC, and upload images to the `practitioner-images`
+storage bucket.
+
+**Sign-in is an emailed six-digit code — no passwords, no social providers.**
+1. The user enters an email (and, on the practitioner path, the choice is sent to `/api/pending-user-type`).
+2. `auth.signInWithOtp({ email, shouldCreateUser: true })` — the same call signs up and signs in, and its response never reveals whether the address had an account.
+3. The user types the code: `auth.verifyOTP({ email, token, type: 'email' })`. (`'magiclink'` rejects a typed code.)
+4. With a session: read the user's own `pending_user_types` row and delete it; upsert `user_profiles` `{ id, user_type }` with `ignoreDuplicates` — **only if that inserted a row**, call the matching welcome route; copy locally saved items into `user_favourites`.
+
+The web version of steps 1–4 is `utils/supabaseAuth.js`, `utils/onboarding.js`
+and `components/AuthSync.jsx`. An app also needs its own redirect URL
+allow-listed in Supabase (Authentication → URL Configuration) for the link
+in the same email.
+
+**The crisis intercept must be ported, not skipped.** `utils/emotionSearchPatterns.js`
+runs `checkCrisis()` on every keystroke, **before** any lookup or network call;
+a match shows the crisis screen (`CRISIS_INTERSTITIAL`, linking to
+findahelpline.com) and sends nothing. The dual path, soft tier and medical
+disclaimer sit behind it. They are pure functions with no dependencies — port
+them with the same phrase lists and the same order. A search box that reaches
+`emotion_mappings` without that gate would hand a list of videos to someone in
+crisis.
 
 🚀 Getting Oriented
 **The app is not at the root of this repo.** It lives in `web/`; there is no
@@ -84,8 +146,10 @@ spiritpedia/
 │   ├── components/         UI, with components/admin/ for the dashboard
 │   ├── utils/              Supabase clients, email, audit logic, helpers
 │   ├── proxy.js            password gate on /admin (Next 16 proxy convention)
-│   └── vercel.json         the two cron schedules
-└── supabase/migrations/    SQL, run by hand in order — there is no runner
+│   └── vercel.json         the three cron schedules
+└── supabase/
+    ├── migrations/         SQL, run by hand — 0000 is the full schema baseline
+    └── seed/               emotion_mappings.sql — the search vocabulary
 ```
 
 ```bash
@@ -826,10 +890,20 @@ does not skip the same rows every day — a permanent silent blind spot being
 exactly what this feature exists to prevent.
 
 🗄️ Migrations
-Run in order from `supabase/migrations/`. There is no migration runner; paste into the Supabase SQL editor.
+There is no migration runner; paste into the Supabase SQL editor.
+
+**To rebuild the database in a new, empty Supabase project:** run
+`0000_production_baseline.sql`, then `supabase/seed/emotion_mappings.sql`.
+That is the whole schema plus the search vocabulary. `0001`–`0011` are the
+history the baseline already contains — running them afterwards is harmless
+and unnecessary.
+
+**To change the live database:** write the next numbered file (`0012_…`),
+idempotent, and run it by hand — as before.
 
 | File | Purpose |
 | :--- | :--- |
+| `0000_production_baseline` | **the complete `public` schema**, `pg_dump --schema-only` from production on 9 Oct 2026, plus the `practitioner-images` storage bucket and its policies. No data. For an **empty** project only: it is plain `CREATE TABLE`, so it stops at the first table that already exists — correct, since it must never be run against production. See the file header for the four small edits made to pg_dump's output |
 | `0001_user_profiles` | profile table, RLS, field-protection trigger |
 | `0002_user_favourites` | saved items, unique on (user, type, slug) |
 | `0003_claim_healer_profile` | the claim RPC; replaces 0001's trigger function |
@@ -840,32 +914,25 @@ Run in order from `supabase/migrations/`. There is no migration runner; paste in
 | `0008_reviews` | the reviews table, its RLS, and the trigger that pins `status` and `author_healer_slug`. **Amended after the fact** to exempt the service role — the first version froze `status` against every caller, which meant no review could ever be approved |
 | `0009_healer_journeys` | the claim-outreach sequence. A **partial** unique index (`WHERE status <> 'stopped'`) rather than a plain UNIQUE, so a stopped journey survives as history and a healer can be restarted |
 | `0010_broken_images` | the image audit queue. **Amended after the fact** to add `healers` to the `table_name` CHECK when portraits joined the audit; the `ALTER` is a second statement rather than an edit to the `CREATE`, so the file reads in the order the database received it. Reconciled against production 8 Oct 2026 and carries a verification block that compares a database to the file |
-| `0011_emotion_vocabulary` | the 43 emotion rows added by hand during the emotion-search work, read back out of production rather than retyped. `ON CONFLICT … DO UPDATE SET weight`, so the file is the authority on those rows and safe to re-run. **Does not stand alone** — see the warning below |
+| `0011_emotion_vocabulary` | the 43 emotion rows added by hand during the emotion-search work, read back out of production rather than retyped. `ON CONFLICT … DO UPDATE SET weight`, so the file is the authority on those rows and safe to re-run — but re-running resets their weights. Needs the table from `0000`. The full vocabulary, these 43 included, is `supabase/seed/emotion_mappings.sql` |
 
-🧨 Database state not captured in this repository
-**The repository does not tell you what the live database contains.** Three
-kinds of drift exist, all deliberate, none recoverable from git alone.
+🧨 Database state and rebuilding it
+**Since 9 October 2026 the repository can rebuild the database's structure and
+its search vocabulary — but not its content.**
 
-#### 1. The emotion vocabulary — PARTLY captured, and the rest is missing
-43 rows were applied by hand on 7 Oct 2026 and existed in no file. They are
-now captured in **`0011_emotion_vocabulary.sql`**, read back out of production
-and verified row-for-row against it, so that gap is closed.
+#### 1. Captured: the schema and the emotion vocabulary
+* **Schema** — `supabase/migrations/0000_production_baseline.sql`, exported with `pg_dump 17.6 --schema-only --schema=public` (production runs Postgres 17.6). It holds every table — including the nine that no numbered migration creates (`healers`, `books`, `videos`, `subjects`, `courses`, `free_resources`, `publishers`, `publisher_healers`, `emotion_mappings`) — with constraints, indexes, functions, triggers, RLS policies and grants, plus the `practitioner-images` bucket and its four storage policies.
+* **Search vocabulary** — `supabase/seed/emotion_mappings.sql`: all **3,531 rows / 701 emotions / 42 subjects**, ids and timestamps kept, `ON CONFLICT DO NOTHING`. The original `spiritpedia-emotion-mappings.sql` seed was never committed; this replaces it.
+* **How it was verified** — the dump's object counts matched the live catalog (16 tables, all with RLS; 24 policies; 46 constraints; 43 indexes; 3 functions; 2 triggers). Then the baseline and seed were loaded into a throwaway local Postgres 17.6 (with stand-ins for Supabase's `auth` and `storage` schemas) and the rebuilt database matched production on every one of those counts and on the vocabulary; re-running the seed changed nothing; and `0001`–`0011` all ran cleanly on top.
+* **Re-export** after any schema change, the same way, so the baseline does not drift. A connection string is needed for `pg_dump`; keep it out of `.env.local` once done — nothing in the app uses one.
 
-**The larger gap is not.** Nothing in `supabase/migrations/` creates the
-`emotion_mappings` table, and the original seed — `spiritpedia-emotion-mappings.sql`,
-roughly **3,488 rows across 693 emotions** — **is not in this repository.** It
-is referenced in the header of `web/utils/emotionSearchPatterns.js` and
-nowhere else.
-
-So production holds **3,531 rows / 701 emotions**, of which this repo can
-reproduce **43**. A database rebuilt from `supabase/migrations/` alone has no
-`emotion_mappings` table at all, and `0011` will fail against it — which is
-the right outcome, because it reports a missing seed rather than quietly
-shipping a search with 2% of its vocabulary.
-
-**Finding or re-exporting that seed file is the single most valuable piece of
-database housekeeping left.** Until then, the production database is the only
-copy of the emotional-search vocabulary that exists.
+#### Still NOT captured: the content
+Healers, books, videos, courses, free resources, publishers and subjects —
+the content itself — exist only in production. So do accounts, favourites,
+reviews and the broken-images queue. Supabase's own backups cover them; there
+is no copy in this repository, by design (it is live data, not seed). A
+periodic `pg_dump --data-only` of the content tables to private storage — not
+to git — would close that gap.
 
 #### 2. Migrations applied before their file existed
 * **`0010_broken_images`** — the table was created by hand on 6 Oct, and the file written afterwards as the record. Its `CHECK` constraint was then **altered in production** to add `healers`; that `ALTER` is the second statement in the file. The file is idempotent and matches the live schema (verified by probing all four `table_name` values and confirming `videos` is still rejected).
@@ -896,9 +963,9 @@ copy of the emotional-search vocabulary that exists.
 * **pending_user_types**: `email` (PK), `user_type`, `created_at` — consumed and deleted at verification; anything older than 24 hours is deleted by the daily `pending-signups` cron
 * **admin_notes**: `subject_user_id`, `body`, `created_by` — service role only. `subject_user_id` is a foreign key onto `auth.users`, so a note can only be attached to an account; an unclaimed healer cannot have one
 * **reviews**: `id`, `user_id` (→ auth.users), `content_type`, `content_slug`, `rating` (1–5), `body`, `author_name`, `author_healer_slug`, `status`, `created_at`. Unique on (user, type, slug). Public read is `status = 'approved'`; the author can read their own whatever its state
-* **healer_journeys**: `id` (uuid), `healer_slug` (→ healers, ON DELETE CASCADE), `status`, `stop_reason`, `started_at`, `sent_1_at` … `sent_5_at`, `created_at`. Service role only. One running journey per healer, enforced by a partial unique index so stopped ones remain
+* **healer_journeys**: `id` (uuid), `healer_slug` (→ healers, ON DELETE CASCADE), `status`, `stop_reason`, `started_at`, `email_1_sent_at` … `email_5_sent_at`, `created_at`. Service role only. One running journey per healer, enforced by a partial unique index so stopped ones remain
 * **broken_images**: `id`, `table_name`, `record_id`, `healer_slug`, `title`, `image_url`, `status_code`, `failures`, `first_seen_at`, `detected_at`. Unique on (`table_name`, `record_id`); RLS on with no policy at all, so only the service role can see it. `record_id` is **text** because books use bigint ids while courses and free resources use UUIDs
-* **emotion_mappings**: `id` (uuid), `emotion`, `subject_slug`, `weight`, `created_at` — powers the emotional search bar; one emotion maps to several weighted subjects, 5–8 of them, so a search returns a shelf rather than a single link. 3,531 rows covering 701 distinct emotions and all 42 subjects. Unique on (`emotion`, `subject_slug`), so additions can be written `ON CONFLICT DO NOTHING` and re-run safely. Emotions are stored lower-case and **apostrophe-free** (`im`, not `I'm`) — the matcher normalises the same way, and a row stored with an apostrophe would never match
+* **emotion_mappings**: `id` (uuid), `emotion`, `subject_slug`, `weight`, `created_at` — powers the emotional search bar; one emotion maps to several weighted subjects, 5–8 of them, so a search returns a shelf rather than a single link. 3,531 rows covering 701 distinct emotions and all 42 subjects. Unique on (`emotion`, `subject_slug`), so additions can be written `ON CONFLICT DO NOTHING` and re-run safely. **Every row is backed up in `supabase/seed/emotion_mappings.sql`** (exported 9 Oct 2026). Emotions are stored lower-case and **apostrophe-free** (`im`, not `I'm`) — the matcher normalises the same way, and a row stored with an apostrophe would never match
 
 #### Conventions worth knowing
 * **`subject_slugs` is a Postgres array**, not a string. Every subject filter is an array-containment check (`.contains(...)` → the `@>` operator), which matches a slug as one whole element — that is what makes hyphenated tags like `eft-tapping` safe.
@@ -1022,7 +1089,7 @@ dashboard.
 
 | Item | Why it matters |
 | :--- | :--- |
-| **Export the `emotion_mappings` seed** | `0011` now captures the 43 hand-added rows, but the other **3,488 rows and the table itself exist in no file**. Production is the only copy of the emotional-search vocabulary. `pg_dump` that table to `supabase/seed/` — it is the highest-value housekeeping left |
+| **Back up the content data** | The schema (`0000_production_baseline.sql`) and the search vocabulary (`supabase/seed/`) are now in the repo, but healers, books, videos and the rest exist only in production and in Supabase's own backups. A periodic `pg_dump --data-only` to private storage — not git — would close the gap |
 | **No record that an email was sent** | No table, no column. Approve a review twice and the reviewer is emailed twice; a failed send leaves nothing to retry from. Fine while these are courtesies — not before mailshots |
 | `content_submissions` staging table | Needed before practitioners can add content. `videos`/`books` have no published flag and are read wholesale by the homepage, subject pages and sitemap |
 
@@ -1209,8 +1276,9 @@ section header.
 
 #### THERE IS ONLY ONE DATABASE
 `web/.env.local` points at the **same Supabase project as production**
-(`uzmvcgewxgvnybdhvsyx`). There is no staging database, no seed file and no
-local Postgres.
+(`uzmvcgewxgvnybdhvsyx`). There is no staging database and no local Postgres.
+(`supabase/seed/` holds only the search vocabulary, not content to develop
+against.)
 
 **Running the app on localhost reads and writes live production data.** Every
 admin action taken against `localhost:3000` — editing a healer, deleting a
@@ -1229,8 +1297,9 @@ and exit rather than start a second one, which is easy to misread as a failure.
 Check with `lsof -ti:3000`.
 
 #### Things that are safe to re-run
-* Every migration in `supabase/migrations/` (all use `IF NOT EXISTS` / `DROP … IF EXISTS`).
-* The hand-run `emotion_mappings` inserts (`ON CONFLICT DO NOTHING`).
+* Migrations `0001`–`0011` (all idempotent — verified 9 Oct 2026 by running them on top of a rebuilt database). **Not `0000_production_baseline.sql`**: that is for an empty project and stops at the first existing table.
+* `supabase/seed/emotion_mappings.sql` (`ON CONFLICT DO NOTHING` — changes nothing where the rows exist).
+* `0011_emotion_vocabulary.sql` — but note it is `ON CONFLICT … DO UPDATE SET weight`, not `DO NOTHING`: re-running it *resets* those 43 rows' weights to the file's values. That is deliberate (the file is the authority on them), but it will undo any weight edited by hand since.
 * The broken-images cron, with `?dry=1` to check without writing and `?shard=N` to audit a named seventh.
 * The pending-signups cron. `?dry=1` reports how many rows it would delete, without deleting them.
 

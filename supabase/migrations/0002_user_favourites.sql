@@ -9,7 +9,11 @@ CREATE TABLE IF NOT EXISTS public.user_favourites (
 
 COMMENT ON TABLE public.user_favourites IS 'Saved items per user. Migrated from localStorage on first sign-in.';
 COMMENT ON COLUMN public.user_favourites.content_type IS 'healer, publisher, book, video, course or free_resource';
-COMMENT ON COLUMN public.user_favourites.content_slug IS 'Whatever identifier the heart stored: a slug for healers, publishers and books, a numeric id for videos, courses and free resources. Not always a slug despite the name.';
+-- Corrected 9 Oct 2026. The first version said books store a slug and courses
+-- and free resources a numeric id; production holds bigint ids for books and
+-- UUIDs for courses and free resources. Re-running this file applies the
+-- corrected text — the comment is metadata, so nothing else changes.
+COMMENT ON COLUMN public.user_favourites.content_slug IS 'Whatever identifier the heart stored: a text slug for healers and publishers, a bigint id for books and videos, and a UUID for courses and free resources. Not always a slug despite the name.';
 
 CREATE INDEX IF NOT EXISTS user_favourites_user_id_idx ON public.user_favourites (user_id);
 

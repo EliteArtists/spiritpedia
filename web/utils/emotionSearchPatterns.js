@@ -6,7 +6,9 @@
  * Phase 4b — crisis intercept, interstitial copy, dual path, soft tier,
  *            medical-care disclaimer
  *
- * Companion to spiritpedia-emotion-mappings.sql (686 emotions, 3,430 rows).
+ * Companion to the emotion_mappings table — exported in full to
+ * supabase/seed/emotion_mappings.sql (701 emotions, 3,531 rows, 9 Oct 2026).
+ * The original seed, spiritpedia-emotion-mappings.sql, was never committed.
  * Spec: claude/emotion-mapping-phase1-review.md  (approved 2026-09-19)
  * Build notes: claude/emotion-mapping-build-report.md
  *
