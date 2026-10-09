@@ -2,6 +2,7 @@
 
 import { useCallback, useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
+import Link from 'next/link';
 import AuthShell from '@/components/AuthShell';
 import { getSession, signInWithOtp } from '@/utils/supabaseAuth';
 import { recordPendingUserType } from '@/utils/onboarding';
@@ -108,6 +109,20 @@ export default function SignupPage() {
 
       <p className="mt-8 text-xs leading-relaxed text-gray-600">
         We will email you a six-digit code. It is valid for one hour.
+      </p>
+
+      {/* Sign-in and sign-up are the same action here, so this sits on every
+          visit. The same line is on the My Library sign-up nudge. */}
+      <p className="mt-3 text-xs leading-relaxed text-gray-500">
+        By continuing, you agree to our{' '}
+        <Link href="/terms" className="underline underline-offset-2 hover:text-gray-300">
+          Terms of Use
+        </Link>{' '}
+        and{' '}
+        <Link href="/privacy" className="underline underline-offset-2 hover:text-gray-300">
+          Privacy Policy
+        </Link>
+        .
       </p>
     </AuthShell>
   );

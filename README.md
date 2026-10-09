@@ -249,7 +249,7 @@ The `/web` directory contains the full Next.js application.
 * `/free-resources/[slug]` — Free resource detail page
 * `/publishers/[slug]` — Publishing house profile — bio, linked authors, and one auto-curated book shelf per author
 * `/library` — Personal saved library, auto-organised by subject
-* `/privacy`, `/terms` — holding pages, `noindex` until written (linked from the footer)
+* `/privacy`, `/terms` — the Privacy Policy and Terms of Use, built on `components/LegalPage.jsx`; indexable and in the sitemap. The working copy of the wording is `legal-draft.md` at the repo root, which is **deliberately not committed**
 * `/account` — account centre; becomes the Practitioner Dashboard for an approved practitioner. See Accounts & Authentication
 * `/auth/*` — signup, verify, claim, practitioner-setup, pending
 * `/admin` — CRM dashboard, eleven sections. **Protected by password login** — a session-cookie auth screen at `/admin/login`, gated by `web/proxy.js`. The password lives only in the `ADMIN_PASSWORD` environment variable (never in the codebase); it must be set both locally in `web/.env.local` and in Vercel → Settings → Environment Variables. See Admin (CRM)
@@ -534,11 +534,11 @@ way back to Hay House rather than the homepage.
 Rendered once from the root layout, so it appears on every page except `/admin`.
 It carries a health disclaimer — warm rather than legalistic, framing informed
 choice and professional advice as part of the journey rather than a warning
-against it — a copyright line, and Privacy Policy and Terms of Use links. Those
-two links now resolve to real routes; **the pages behind them are still holding
-text and carry `robots: { index: false }`** until a policy is written. The
-`noindex` is deliberate — a page whose body says it is not finished is worse
-indexed than absent.
+against it — a copyright line, and links to the Privacy Policy, Terms of Use,
+Affiliate Disclosure and **Cookie settings**. Cookie settings is a button: it
+reopens the cookie banner so a choice can be changed. Declining after
+accepting deletes the `_ga` cookies and reloads the page, because unmounting
+the analytics component does not unload a gtag that has already run.
 
 #### My Library
 The library at `/library` reads saved items from local storage (`favorited_healers`, `favorited_publishers`, `favorited_books`, `favorite_videos`, `favorited_courses`, `favorited_free_resources`), maps them against Supabase subject slugs, and generates folders dynamically. Empty categories are hidden automatically.
@@ -977,6 +977,7 @@ clean, untagged `/dp/` links and no disclosure line shows.
 | Transactional email via Resend — welcomes and review notices | ✅ Complete |
 | Healer email journey — five-email claim sequence, admin Outreach tab, daily cron | ✅ Complete |
 | Cookie consent banner gating GA4 | ✅ Complete |
+| Terms of Use and Privacy Policy, Cookie settings in the footer, agreement line at sign-up | ✅ Complete |
 | Admin content tab shows all six collections; row delete + inline image editing | ✅ Complete |
 | Deleted healer pages return a real 404 | ✅ Complete |
 | Logged-out account modal; library signup nudge | ✅ Complete |
@@ -1019,7 +1020,6 @@ dashboard.
 | Item | Why it matters |
 | :--- | :--- |
 | **Export the `emotion_mappings` seed** | `0011` now captures the 43 hand-added rows, but the other **3,488 rows and the table itself exist in no file**. Production is the only copy of the emotional-search vocabulary. `pg_dump` that table to `supabase/seed/` — it is the highest-value housekeeping left |
-| **Privacy Policy and Terms of Use** | Pages exist, linked from the footer, but hold placeholder text and carry `noindex`. A UK/EU-facing site collecting emails and setting analytics cookies needs both written |
 | **No record that an email was sent** | No table, no column. Approve a review twice and the reviewer is emailed twice; a failed send leaves nothing to retry from. Fine while these are courtesies — not before mailshots |
 | `content_submissions` staging table | Needed before practitioners can add content. `videos`/`books` have no published flag and are read wholesale by the homepage, subject pages and sitemap |
 
@@ -1252,7 +1252,6 @@ Things that look like faults and are not. Each was a decision; none should be
 | **Four healer portraits the broken-images audit cannot read** | wim-hof, jason-stephenson, justin-perry, mikao-usui sit behind hosts that challenge any non-browser client, with a real Chrome UA too. The audit records them as *undetermined* and says nothing, which is correct. Check them by hand |
 | **`broken_images` counts "undetermined" separately** | An HTTP 202 bot challenge is neither broken nor healthy. The run reports the count rather than guessing, because "found nothing" and "could not look" are different claims |
 | **Video thumbnails are unaudited** | Derived from the YouTube id at render, not stored, so there is no column to check. A deleted or private video returns a placeholder with a 404 and the audit cannot see it |
-| **`/privacy` and `/terms` carry `robots: { index: false }`** | Deliberate while they hold placeholder text — a page whose body says it is unfinished is worse indexed than absent. Drop the robots line when real policies are written |
 | **Subject pages still `select('*')` uncapped** | Known, with a TODO on the query naming the numbers. Below the 1,000-row cap today |
 
 #### Environment variables

@@ -5,10 +5,9 @@ import { getResend } from './resend.js';
 // undefined besides.
 //
 // Everything Spiritpedia sends goes through sendEmail, so the from address,
-// the reply-to and the failure policy are decided once. Two files already
-// disagree about the support address — app/account/page.js says
-// love@spiritpedia.co and PractitionerDashboard.jsx says hello@spiritpedia.co —
-// and a third copy per template would make that permanent.
+// the reply-to and the failure policy are decided once. The support address is
+// love@spiritpedia.co everywhere — app/account/page.js, PractitionerDashboard.jsx
+// and the legal pages — and a copy per template is how those once drifted apart.
 //
 // NOT the sign-in codes. Those are sent by Supabase Auth from inside Supabase's
 // own infrastructure and never touch this file.

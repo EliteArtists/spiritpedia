@@ -1,6 +1,6 @@
 'use client';
 
-import { ACCEPTED, DECLINED, setConsent, useConsent } from '../utils/consent.js';
+import { ACCEPTED, DECLINED, setConsent, useConsent, useCookieSettingsOpen } from '../utils/consent.js';
 
 // The cookie notice.
 //
@@ -15,11 +15,13 @@ import { ACCEPTED, DECLINED, setConsent, useConsent } from '../utils/consent.js'
 // both of them.
 export default function CookieBanner() {
   const consent = useConsent();
+  const reopened = useCookieSettingsOpen();
 
   // undefined is "not known yet" — the server render and the frame before the
   // client reads storage. Rendering nothing there is what stops the banner
-  // flashing at a returning visitor who answered months ago.
-  if (consent !== null) return null;
+  // flashing at a returning visitor who answered months ago. "Cookie settings"
+  // in the footer reopens it after a choice, so the choice can be changed.
+  if (consent !== null && !reopened) return null;
 
   return (
     <div
@@ -38,6 +40,9 @@ export default function CookieBanner() {
           <p className="mt-1 text-sm leading-relaxed text-gray-400">
             We use cookies to improve your experience and understand how Spiritpedia is used. You
             can accept all cookies or decline non-essential ones.
+            {reopened && (consent === ACCEPTED || consent === DECLINED) && (
+              <> You currently have them {consent === ACCEPTED ? 'accepted' : 'declined'}.</>
+            )}
           </p>
         </div>
 

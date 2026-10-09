@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
+import CookieSettingsLink from './CookieSettingsLink';
 
 // Site-wide footer, rendered once from the root layout.
 //
@@ -45,6 +46,8 @@ export default function SiteFooter() {
           <Link href="/affiliate-disclosure" className="transition-colors hover:text-gray-300">
             Affiliate Disclosure
           </Link>
+          <span aria-hidden="true"> · </span>
+          <CookieSettingsLink className="transition-colors hover:text-gray-300" />
         </p>
       </div>
     </footer>

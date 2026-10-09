@@ -2,6 +2,7 @@
 
 import { useCallback, useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
+import Link from 'next/link';
 import { getSession, signInWithOtp } from '../utils/supabaseAuth.js';
 import { recordPendingUserType } from '../utils/onboarding.js';
 import { getUserType } from '../utils/userType.js';
@@ -73,8 +74,9 @@ export default function LibrarySignupNudge() {
   return (
     <section className="mb-10 rounded-2xl border border-white/10 bg-[#111827] p-6 md:p-8">
       <p className="text-sm leading-relaxed text-gray-300">
-        Your library is stored on this browser only. Create a free account so your library follows
-        you everywhere. Spiritpedia doesn&apos;t use passwords — put your email in the box below and
+        Your library is stored on this browser only. Create a free account and we&apos;ll keep a
+        copy of it with your account, not just here. Spiritpedia doesn&apos;t use passwords — put
+        your email in the box below and
         we&apos;ll send you a magic link:
       </p>
 
@@ -102,6 +104,19 @@ export default function LibrarySignupNudge() {
       </form>
 
       {error && <p className="mt-3 text-xs text-red-400">{error}</p>}
+
+      {/* Same line as /auth/signup — this form creates an account too. */}
+      <p className="mt-3 text-xs leading-relaxed text-gray-500">
+        By continuing, you agree to our{' '}
+        <Link href="/terms" className="underline underline-offset-2 hover:text-gray-300">
+          Terms of Use
+        </Link>{' '}
+        and{' '}
+        <Link href="/privacy" className="underline underline-offset-2 hover:text-gray-300">
+          Privacy Policy
+        </Link>
+        .
+      </p>
     </section>
   );
 }

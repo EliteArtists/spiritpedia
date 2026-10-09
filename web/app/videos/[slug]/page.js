@@ -128,12 +128,15 @@ export default async function VideoDetail({ params, searchParams }) {
         )}
 
         {/* Player — 16:9, responsive. aspect-video keeps the ratio without the
-            padding-top trick, so the iframe can simply fill its box. */}
+            padding-top trick, so the iframe can simply fill its box.
+            youtube-nocookie.com is YouTube's privacy-enhanced mode: it does not
+            set YouTube's cookies until the visitor plays the video. The Privacy
+            Policy describes exactly this — change both together. */}
         {videoId ? (
           <div className="aspect-video w-full overflow-hidden rounded-2xl bg-black shadow-2xl">
             <iframe
               className="h-full w-full"
-              src={`https://www.youtube.com/embed/${videoId}?rel=0`}
+              src={`https://www.youtube-nocookie.com/embed/${videoId}?rel=0`}
               title={video.title}
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowFullScreen

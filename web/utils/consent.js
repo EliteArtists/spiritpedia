@@ -75,6 +75,7 @@ export function useConsent() {
 }
 
 export function setConsent(value) {
+  const previous = snapshot;
   try {
     localStorage.setItem(CONSENT_KEY, value);
   } catch {
@@ -83,5 +84,69 @@ export function setConsent(value) {
     // even when it cannot be remembered.
   }
   refresh();
+  closeCookieSettings();
   window.dispatchEvent(new CustomEvent(CONSENT_EVENT, { detail: value }));
+
+  // WITHDRAWING CONSENT. Declining before accepting needs no teardown — gtag was
+  // never loaded. Declining AFTER accepting (via Cookie settings) does: the
+  // script is already on the page and its cookies are already set, and
+  // unmounting <Analytics> removes neither. So delete the _ga cookies and
+  // reload, which leaves a page that never loads gtag. The Privacy Policy
+  // promises consent can be withdrawn at any time; this is what makes it true.
+  if (previous === ACCEPTED && value === DECLINED) {
+    clearAnalyticsCookies();
+    window.location.reload();
+  }
+}
+
+// GA sets _ga and _ga_<ID> on the widest domain it can (.spiritpedia.co), so
+// a delete has to name that domain — a cookie is only removed by a write that
+// matches the domain and path it was set with. Try the host and every parent.
+function clearAnalyticsCookies() {
+  const parts = window.location.hostname.split('.');
+  const domains = [null];
+  for (let i = 0; i < parts.length - 1; i += 1) domains.push(`.${parts.slice(i).join('.')}`);
+
+  const names = document.cookie
+    .split(';')
+    .map((c) => c.split('=')[0].trim())
+    .filter((name) => /^_ga(_|$)/.test(name));
+
+  for (const name of names) {
+    for (const domain of domains) {
+      document.cookie = `${name}=; Max-Age=0; path=/${domain ? `; domain=${domain}` : ''}`;
+    }
+  }
+}
+
+// COOKIE SETTINGS — reopening the banner after a choice has been made.
+//
+// Not part of the consent value: "the banner is open" is a UI state for this
+// page only, and must not survive a reload or reach other tabs. So it is a
+// second, in-memory store beside the first. setConsent() closes it.
+const SETTINGS_EVENT = 'sp:cookie-settings';
+let settingsOpen = false;
+
+function subscribeSettings(onChange) {
+  window.addEventListener(SETTINGS_EVENT, onChange);
+  return () => window.removeEventListener(SETTINGS_EVENT, onChange);
+}
+
+export function useCookieSettingsOpen() {
+  return useSyncExternalStore(
+    subscribeSettings,
+    () => settingsOpen,
+    () => false
+  );
+}
+
+export function openCookieSettings() {
+  settingsOpen = true;
+  window.dispatchEvent(new Event(SETTINGS_EVENT));
+}
+
+function closeCookieSettings() {
+  if (!settingsOpen) return;
+  settingsOpen = false;
+  window.dispatchEvent(new Event(SETTINGS_EVENT));
 }

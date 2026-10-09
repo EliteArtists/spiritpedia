@@ -9,7 +9,7 @@ const BUCKET = 'practitioner-images';
 const MAX_IMAGES = 3;
 const MAX_IMAGE_BYTES = 5 * 1024 * 1024;
 const ACCEPTED = ['image/jpeg', 'image/png', 'image/webp', 'image/gif'];
-const SUPPORT_EMAIL = 'hello@spiritpedia.co';
+const SUPPORT_EMAIL = 'love@spiritpedia.co';
 
 const SOCIAL_FIELDS = [
   ['youtube_url', 'YouTube', 'https://youtube.com/@yourchannel'],
