@@ -29,7 +29,9 @@ void main() {
     byEmotion = {};
     for (final row in cases['vocabulary'] as List) {
       final r = row as List;
-      byEmotion.putIfAbsent(r[0] as String, () => []).add(MappingRow(r[1] as String, r[2] as int));
+      byEmotion
+          .putIfAbsent(r[0] as String, () => [])
+          .add(MappingRow(r[1] as String, r[2] as int));
     }
     fixtureEmotions = byEmotion.keys.toList()..sort();
   });
@@ -38,10 +40,13 @@ void main() {
   Future<List<String>> vocabularyLookup(List<String> words) async =>
       fixtureEmotions.where((e) => e.split(' ').any(words.contains)).toList();
 
-  test('the app bundles the shared file itself, byte for byte (via the symlink)', () async {
-    final bundled = await rootBundle.loadString(emotionSafetyAsset);
-    expect(bundled, _sharedJson.readAsStringSync());
-  });
+  test(
+    'the app bundles the shared file itself, byte for byte (via the symlink)',
+    () async {
+      final bundled = await rootBundle.loadString(emotionSafetyAsset);
+      expect(bundled, _sharedJson.readAsStringSync());
+    },
+  );
 
   test('function cases', () {
     final list = cases['functionCases'] as List;
@@ -51,16 +56,35 @@ void main() {
       final where = jsonEncode(c['input']);
       final n = safety.normaliseQuery(c['input'] as String);
       expect(n, c['normalised'], reason: 'normaliseQuery $where');
-      expect(safety.buildLookupCandidates(n), c['candidates'], reason: 'candidates $where');
+      expect(
+        safety.buildLookupCandidates(n),
+        c['candidates'],
+        reason: 'candidates $where',
+      );
       expect(safety.stripOnce(n), c['stripOnce'], reason: 'stripOnce $where');
       expect(safety.stripAll(n), c['stripAll'], reason: 'stripAll $where');
       expect(safety.contentTokens(n), c['tokens'], reason: 'tokens $where');
-      expect(safety.contentTokens(n, relaxed: true), c['tokensRelaxed'], reason: 'tokensRelaxed $where');
-      expect(safety.bestContainedEmotion(n, fixtureEmotions), c['contained'], reason: 'contained $where');
-      expect(safety.bestContainedEmotion(n, fixtureEmotions, relaxed: true), c['containedRelaxed'],
-          reason: 'containedRelaxed $where');
+      expect(
+        safety.contentTokens(n, relaxed: true),
+        c['tokensRelaxed'],
+        reason: 'tokensRelaxed $where',
+      );
+      expect(
+        safety.bestContainedEmotion(n, fixtureEmotions),
+        c['contained'],
+        reason: 'contained $where',
+      );
+      expect(
+        safety.bestContainedEmotion(n, fixtureEmotions, relaxed: true),
+        c['containedRelaxed'],
+        reason: 'containedRelaxed $where',
+      );
       expect(safety.checkCrisis(n), c['crisis'], reason: 'crisis $where');
-      expect(safety.checkAmbiguous(n), c['ambiguous'], reason: 'ambiguous $where');
+      expect(
+        safety.checkAmbiguous(n),
+        c['ambiguous'],
+        reason: 'ambiguous $where',
+      );
       expect(safety.checkSoftTier(n), c['softTier'], reason: 'softTier $where');
     }
   });
@@ -74,7 +98,11 @@ void main() {
         dualPathAnswer: c['dualPathAnswer'] as String?,
         vocabularyLookup: vocabularyLookup,
       );
-      expect(r.toComparable(), c['expected'], reason: 'resolve ${jsonEncode(c['input'])} / ${c['dualPathAnswer']}');
+      expect(
+        r.toComparable(),
+        c['expected'],
+        reason: 'resolve ${jsonEncode(c['input'])} / ${c['dualPathAnswer']}',
+      );
     }
   });
 
@@ -85,8 +113,16 @@ void main() {
         for (final r in c['rows'] as List)
           MappingRow((r as Map)['subject_slug'] as String, r['weight'] as int),
       ];
-      expect(safety.needsMedicalDisclaimer(rows), c['needsDisclaimer'], reason: c['emotion'] as String);
-      expect(safety.medicalDisclaimerSubjects(rows), c['subjects'], reason: c['emotion'] as String);
+      expect(
+        safety.needsMedicalDisclaimer(rows),
+        c['needsDisclaimer'],
+        reason: c['emotion'] as String,
+      );
+      expect(
+        safety.medicalDisclaimerSubjects(rows),
+        c['subjects'],
+        reason: c['emotion'] as String,
+      );
     }
   });
 
@@ -108,17 +144,32 @@ void main() {
         return [];
       }
 
-      await safety.resolve(c['input'] as String, spy,
-          dualPathAnswer: c['dualPathAnswer'] as String?, vocabularyLookup: spyVocab);
-      expect(called, isFalse, reason: 'lookup ran for crisis input ${jsonEncode(c['input'])}');
+      await safety.resolve(
+        c['input'] as String,
+        spy,
+        dualPathAnswer: c['dualPathAnswer'] as String?,
+        vocabularyLookup: spyVocab,
+      );
+      expect(
+        called,
+        isFalse,
+        reason: 'lookup ran for crisis input ${jsonEncode(c['input'])}',
+      );
     }
   });
 
   test('the crisis screen and dual path copy come from the shared file', () {
-    final json = jsonDecode(_sharedJson.readAsStringSync()) as Map<String, dynamic>;
-    expect(safety.crisisInterstitial.heading, (json['crisisInterstitial'] as Map)['heading']);
+    final json =
+        jsonDecode(_sharedJson.readAsStringSync()) as Map<String, dynamic>;
+    expect(
+      safety.crisisInterstitial.heading,
+      (json['crisisInterstitial'] as Map)['heading'],
+    );
     expect(safety.crisisInterstitial.primaryHref, 'https://findahelpline.com/');
-    expect(safety.dualPath.options.map((o) => o.key), ['exploring', 'distressing']);
+    expect(safety.dualPath.options.map((o) => o.key), [
+      'exploring',
+      'distressing',
+    ]);
     expect(safety.crisisCategories.length, 7);
   });
 }

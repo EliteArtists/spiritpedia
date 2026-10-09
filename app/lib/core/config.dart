@@ -14,7 +14,9 @@ class AppConfig {
 
   static const String env = String.fromEnvironment('APP_ENV');
   static const String supabaseUrl = String.fromEnvironment('SUPABASE_URL');
-  static const String supabaseAnonKey = String.fromEnvironment('SUPABASE_ANON_KEY');
+  static const String supabaseAnonKey = String.fromEnvironment(
+    'SUPABASE_ANON_KEY',
+  );
 
   /// Where the Next.js API routes live. Every write goes through these.
   static const String apiBaseUrl = String.fromEnvironment('API_BASE_URL');
@@ -24,9 +26,9 @@ class AppConfig {
   /// Names of required values that were not supplied, so a build without its
   /// config file fails with a clear message instead of a null-pointer crash.
   static List<String> get missing => [
-        if (env.isEmpty) 'APP_ENV',
-        if (supabaseUrl.isEmpty) 'SUPABASE_URL',
-        if (supabaseAnonKey.isEmpty) 'SUPABASE_ANON_KEY',
-        if (apiBaseUrl.isEmpty) 'API_BASE_URL',
-      ];
+    if (env.isEmpty) 'APP_ENV',
+    if (supabaseUrl.isEmpty) 'SUPABASE_URL',
+    if (supabaseAnonKey.isEmpty) 'SUPABASE_ANON_KEY',
+    if (apiBaseUrl.isEmpty) 'API_BASE_URL',
+  ];
 }

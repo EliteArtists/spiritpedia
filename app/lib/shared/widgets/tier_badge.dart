@@ -44,10 +44,15 @@ class TierBadge extends StatelessWidget {
         decoration: BoxDecoration(
           color: style.background,
           borderRadius: BorderRadius.circular(style.pill ? 999 : 6),
-          border: style.border == null ? null : Border.all(color: style.border!),
+          border: style.border == null
+              ? null
+              : Border.all(color: style.border!),
         ),
         child: Padding(
-          padding: EdgeInsets.symmetric(horizontal: style.pill ? 10 : 9, vertical: 3),
+          padding: EdgeInsets.symmetric(
+            horizontal: style.pill ? 10 : 9,
+            vertical: 3,
+          ),
           child: Text(
             style.label.toUpperCase(),
             style: TextStyle(
@@ -65,39 +70,39 @@ class TierBadge extends StatelessWidget {
   }
 
   static _BadgeStyle _styleFor(Tier? tier) => switch (tier) {
-        Tier.superhero => const _BadgeStyle(
-            label: 'Superhero',
-            background: SpTierColors.superheroBackground,
-            text: SpTierColors.superheroText,
-            border: SpTierColors.superheroBorder,
-            pill: true,
-            fontSize: 10,
-          ),
-        Tier.luminary => const _BadgeStyle(
-            label: 'Luminary',
-            background: SpTierColors.luminaryBackground,
-            text: Colors.white,
-            fontSize: 11,
-          ),
-        Tier.localHero => const _BadgeStyle(
-            label: 'Local Hero',
-            background: SpTierColors.localHeroBackground,
-            text: Colors.white,
-            fontSize: 10,
-          ),
-        Tier.ascendedMaster => const _BadgeStyle(
-            label: 'Ascended Master',
-            background: SpTierColors.ascendedBackground,
-            text: SpTierColors.ascendedText,
-            fontSize: 10,
-          ),
-        null => const _BadgeStyle(
-            label: 'Teacher',
-            background: SpTierColors.unknownBackground,
-            text: Colors.white,
-            fontSize: 10,
-          ),
-      };
+    Tier.superhero => const _BadgeStyle(
+      label: 'Superhero',
+      background: SpTierColors.superheroBackground,
+      text: SpTierColors.superheroText,
+      border: SpTierColors.superheroBorder,
+      pill: true,
+      fontSize: 10,
+    ),
+    Tier.luminary => const _BadgeStyle(
+      label: 'Luminary',
+      background: SpTierColors.luminaryBackground,
+      text: Colors.white,
+      fontSize: 11,
+    ),
+    Tier.localHero => const _BadgeStyle(
+      label: 'Local Hero',
+      background: SpTierColors.localHeroBackground,
+      text: Colors.white,
+      fontSize: 10,
+    ),
+    Tier.ascendedMaster => const _BadgeStyle(
+      label: 'Ascended Master',
+      background: SpTierColors.ascendedBackground,
+      text: SpTierColors.ascendedText,
+      fontSize: 10,
+    ),
+    null => const _BadgeStyle(
+      label: 'Teacher',
+      background: SpTierColors.unknownBackground,
+      text: Colors.white,
+      fontSize: 10,
+    ),
+  };
 }
 
 class _BadgeStyle {

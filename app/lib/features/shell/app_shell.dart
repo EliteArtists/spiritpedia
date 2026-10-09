@@ -21,18 +21,20 @@ class AppShell extends StatelessWidget {
         ),
         destinations: const [
           NavigationDestination(
-            icon: Icon(Icons.explore_outlined),
-            selectedIcon: Icon(Icons.explore),
-            label: 'Explore',
+            icon: Icon(Icons.home_outlined),
+            selectedIcon: Icon(Icons.home),
+            label: 'Home',
           ),
           NavigationDestination(
-            icon: Icon(Icons.search),
-            label: 'Search',
+            icon: Icon(Icons.play_circle_outline),
+            selectedIcon: Icon(Icons.play_circle),
+            label: 'Videos',
           ),
+          NavigationDestination(icon: Icon(Icons.search), label: 'Search'),
           NavigationDestination(
             icon: Icon(Icons.bookmark_border),
             selectedIcon: Icon(Icons.bookmark),
-            label: 'My Library',
+            label: 'Library',
           ),
           NavigationDestination(
             icon: Icon(Icons.person_outline),

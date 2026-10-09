@@ -59,13 +59,19 @@ ThemeData buildSpiritpediaTheme() {
         (states) => TextStyle(
           fontFamily: 'Geist',
           fontSize: 12,
-          fontWeight: states.contains(WidgetState.selected) ? FontWeight.w600 : FontWeight.w500,
-          color: states.contains(WidgetState.selected) ? SpColors.text : SpColors.textMuted,
+          fontWeight: states.contains(WidgetState.selected)
+              ? FontWeight.w600
+              : FontWeight.w500,
+          color: states.contains(WidgetState.selected)
+              ? SpColors.text
+              : SpColors.textMuted,
         ),
       ),
       iconTheme: WidgetStateProperty.resolveWith(
         (states) => IconThemeData(
-          color: states.contains(WidgetState.selected) ? SpColors.link : SpColors.textMuted,
+          color: states.contains(WidgetState.selected)
+              ? SpColors.link
+              : SpColors.textMuted,
         ),
       ),
     ),
@@ -74,7 +80,10 @@ ThemeData buildSpiritpediaTheme() {
         backgroundColor: SpColors.primary,
         foregroundColor: Colors.white,
         shape: const StadiumBorder(),
-        textStyle: const TextStyle(fontFamily: 'Geist', fontWeight: FontWeight.w600),
+        textStyle: const TextStyle(
+          fontFamily: 'Geist',
+          fontWeight: FontWeight.w600,
+        ),
       ),
     ),
     dividerTheme: const DividerThemeData(color: SpColors.border, space: 1),

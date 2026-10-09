@@ -19,7 +19,9 @@ class PlaceholderScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text(title, style: const TextStyle(fontWeight: FontWeight.w700))),
+      appBar: AppBar(
+        title: Text(title, style: const TextStyle(fontWeight: FontWeight.w700)),
+      ),
       body: Center(
         child: Padding(
           padding: const EdgeInsets.all(32),
@@ -31,7 +33,11 @@ class PlaceholderScreen extends StatelessWidget {
               Text(
                 comingIn,
                 textAlign: TextAlign.center,
-                style: const TextStyle(color: SpColors.textMuted, fontSize: 15, height: 1.5),
+                style: const TextStyle(
+                  color: SpColors.textMuted,
+                  fontSize: 15,
+                  height: 1.5,
+                ),
               ),
             ],
           ),

@@ -33,11 +33,16 @@ class MappingRow {
   final String subjectSlug;
   final int weight;
 
-  Map<String, Object?> toJson() => {'subject_slug': subjectSlug, 'weight': weight};
+  Map<String, Object?> toJson() => {
+    'subject_slug': subjectSlug,
+    'weight': weight,
+  };
 
   @override
   bool operator ==(Object other) =>
-      other is MappingRow && other.subjectSlug == subjectSlug && other.weight == weight;
+      other is MappingRow &&
+      other.subjectSlug == subjectSlug &&
+      other.weight == weight;
 
   @override
   int get hashCode => Object.hash(subjectSlug, weight);
@@ -70,7 +75,11 @@ class CrisisInterstitial {
 }
 
 class DualPathOption {
-  const DualPathOption({required this.key, required this.label, required this.subjects});
+  const DualPathOption({
+    required this.key,
+    required this.label,
+    required this.subjects,
+  });
 
   final String key; // 'exploring' | 'distressing'
   final String label;
@@ -78,7 +87,11 @@ class DualPathOption {
 }
 
 class DualPath {
-  const DualPath({required this.heading, required this.body, required this.options});
+  const DualPath({
+    required this.heading,
+    required this.body,
+    required this.options,
+  });
 
   final String heading;
   final String body;
@@ -118,25 +131,29 @@ class EmotionSearchResult {
   /// The same shape the JavaScript returns (content objects named by key), so
   /// the shared test cases can compare the two directly.
   Map<String, Object?> toComparable() => switch (type) {
-        'empty' => {'type': type},
-        'crisis' => {'type': type, 'category': category, 'content': 'crisisInterstitial'},
-        'dual_path' => {'type': type, 'content': 'dualPath'},
-        'no_results' => {
-            'type': type,
-            'normalised': normalised,
-            'triedCandidates': triedCandidates,
-            'softTier': softTier,
-          },
-        _ => {
-            'type': type,
-            'matchedEmotion': matchedEmotion,
-            'via': via,
-            'rows': [for (final r in rows) r.toJson()],
-            'softTier': softTier,
-            'medicalDisclaimer': medicalDisclaimer,
-            'medicalDisclaimerSubjects': medicalDisclaimerSubjects,
-          },
-      };
+    'empty' => {'type': type},
+    'crisis' => {
+      'type': type,
+      'category': category,
+      'content': 'crisisInterstitial',
+    },
+    'dual_path' => {'type': type, 'content': 'dualPath'},
+    'no_results' => {
+      'type': type,
+      'normalised': normalised,
+      'triedCandidates': triedCandidates,
+      'softTier': softTier,
+    },
+    _ => {
+      'type': type,
+      'matchedEmotion': matchedEmotion,
+      'via': via,
+      'rows': [for (final r in rows) r.toJson()],
+      'softTier': softTier,
+      'medicalDisclaimer': medicalDisclaimer,
+      'medicalDisclaimerSubjects': medicalDisclaimerSubjects,
+    },
+  };
 }
 
 class EmotionSafety {
@@ -158,27 +175,35 @@ class EmotionSafety {
     required this.medicalSubjects,
     required this.medicalMinWeight,
     required this.medicalDisclaimer,
-  })  : _apostrophes = RegExp('[$apostropheCharacters]'),
-        _prefixRe = _buildStripRegex(stripPrefixes, start: true),
-        _determinerRe = _buildStripRegex(stripDeterminers, start: true),
-        _suffixRe = _buildStripRegex(stripSuffixes, start: false),
-        _crisisCompiled = [
-          for (final c in crisisCategories)
-            (category: c.category, regexes: [for (final p in c.phrases) _phraseRegex(p)]),
-        ],
-        _ambiguousCompiled = [for (final p in ambiguousPatterns) _phraseRegex(p)],
-        _softTierCompiled = [for (final p in softTierPatterns) _phraseRegex(p)];
+  }) : _apostrophes = RegExp('[$apostropheCharacters]'),
+       _prefixRe = _buildStripRegex(stripPrefixes, start: true),
+       _determinerRe = _buildStripRegex(stripDeterminers, start: true),
+       _suffixRe = _buildStripRegex(stripSuffixes, start: false),
+       _crisisCompiled = [
+         for (final c in crisisCategories)
+           (
+             category: c.category,
+             regexes: [for (final p in c.phrases) _phraseRegex(p)],
+           ),
+       ],
+       _ambiguousCompiled = [
+         for (final p in ambiguousPatterns) _phraseRegex(p),
+       ],
+       _softTierCompiled = [for (final p in softTierPatterns) _phraseRegex(p)];
 
   factory EmotionSafety.parse(String json) =>
       EmotionSafety.fromJson(jsonDecode(json) as Map<String, dynamic>);
 
   factory EmotionSafety.fromJson(Map<String, dynamic> j) {
-    List<String> strings(Object? v) => [for (final s in v! as List) s as String];
+    List<String> strings(Object? v) => [
+      for (final s in v! as List) s as String,
+    ];
     final ci = j['crisisInterstitial'] as Map<String, dynamic>;
     final dp = j['dualPath'] as Map<String, dynamic>;
     return EmotionSafety._(
       apostropheCharacters:
-          (j['normalisation'] as Map<String, dynamic>)['apostropheCharacters'] as String,
+          (j['normalisation'] as Map<String, dynamic>)['apostropheCharacters']
+              as String,
       stripPrefixes: strings(j['stripPrefixes']),
       stripDeterminers: strings(j['stripDeterminers']),
       stripSuffixes: strings(j['stripSuffixes']),
@@ -211,7 +236,9 @@ class EmotionSafety {
             DualPathOption(
               key: (o as Map<String, dynamic>)['key'] as String,
               label: o['label'] as String,
-              subjects: o['subjects'] == null ? const [] : strings(o['subjects']),
+              subjects: o['subjects'] == null
+                  ? const []
+                  : strings(o['subjects']),
             ),
         ],
       ),
@@ -276,18 +303,28 @@ class EmotionSafety {
 
   /// JavaScript's Array.prototype.sort is stable; Dart's List.sort is not.
   /// Ties keep their original order, exactly as on the website.
-  static List<String> _stableSortedByLength(List<String> items, {required bool descending}) {
+  static List<String> _stableSortedByLength(
+    List<String> items, {
+    required bool descending,
+  }) {
     final indexed = [for (var i = 0; i < items.length; i++) (i, items[i])];
     indexed.sort((a, b) {
-      final byLength = descending ? b.$2.length - a.$2.length : a.$2.length - b.$2.length;
+      final byLength = descending
+          ? b.$2.length - a.$2.length
+          : a.$2.length - b.$2.length;
       return byLength != 0 ? byLength : a.$1 - b.$1;
     });
     return [for (final e in indexed) e.$2];
   }
 
   static RegExp _buildStripRegex(List<String> patterns, {required bool start}) {
-    final ordered = _stableSortedByLength(patterns, descending: true).map(_escapeForRegex).join('|');
-    return start ? RegExp('^(?:$ordered)\\b\\s*') : RegExp('\\s*\\b(?:$ordered)\$');
+    final ordered = _stableSortedByLength(
+      patterns,
+      descending: true,
+    ).map(_escapeForRegex).join('|');
+    return start
+        ? RegExp('^(?:$ordered)\\b\\s*')
+        : RegExp('\\s*\\b(?:$ordered)\$');
   }
 
   String stripOnce(String s) {
@@ -320,13 +357,10 @@ class EmotionSafety {
     push(normalised); // 1. exactly as typed
 
     // 2. every matching prefix, shortest first (retains the most words)
-    final matching = _stableSortedByLength(
-      [
-        for (final p in stripPrefixes)
-          if (RegExp('^${_escapeForRegex(p)}\\b').hasMatch(normalised)) p,
-      ],
-      descending: false,
-    );
+    final matching = _stableSortedByLength([
+      for (final p in stripPrefixes)
+        if (RegExp('^${_escapeForRegex(p)}\\b').hasMatch(normalised)) p,
+    ], descending: false);
     for (final p in matching) {
       final rest = normalised.substring(p.length).trim();
       push(rest);
@@ -355,7 +389,11 @@ class EmotionSafety {
     ];
   }
 
-  String? bestContainedEmotion(String normalised, List<String> vocabulary, {bool relaxed = false}) {
+  String? bestContainedEmotion(
+    String normalised,
+    List<String> vocabulary, {
+    bool relaxed = false,
+  }) {
     final queryWords = contentTokens(normalised, relaxed: relaxed).toSet();
     if (queryWords.isEmpty) return null;
 
@@ -388,17 +426,23 @@ class EmotionSafety {
     return null;
   }
 
-  bool checkAmbiguous(String normalised) => _ambiguousCompiled.any((re) => re.hasMatch(normalised));
+  bool checkAmbiguous(String normalised) =>
+      _ambiguousCompiled.any((re) => re.hasMatch(normalised));
 
-  bool checkSoftTier(String normalised) => _softTierCompiled.any((re) => re.hasMatch(normalised));
+  bool checkSoftTier(String normalised) =>
+      _softTierCompiled.any((re) => re.hasMatch(normalised));
 
-  bool needsMedicalDisclaimer(List<MappingRow> rows) => rows
-      .any((r) => medicalSubjects.contains(r.subjectSlug) && r.weight >= medicalMinWeight);
+  bool needsMedicalDisclaimer(List<MappingRow> rows) => rows.any(
+    (r) =>
+        medicalSubjects.contains(r.subjectSlug) && r.weight >= medicalMinWeight,
+  );
 
   List<String> medicalDisclaimerSubjects(List<MappingRow> rows) => [
-        for (final r in rows)
-          if (medicalSubjects.contains(r.subjectSlug) && r.weight >= medicalMinWeight) r.subjectSlug,
-      ];
+    for (final r in rows)
+      if (medicalSubjects.contains(r.subjectSlug) &&
+          r.weight >= medicalMinWeight)
+        r.subjectSlug,
+  ];
 
   // ── 8. the required flow, in the required order ──────────────────────────
 
@@ -413,7 +457,9 @@ class EmotionSafety {
 
     // 1 — crisis intercept. Before the lookup. Always.
     final crisis = checkCrisis(normalised);
-    if (crisis != null) return EmotionSearchResult._(type: 'crisis', category: crisis);
+    if (crisis != null) {
+      return EmotionSearchResult._(type: 'crisis', category: crisis);
+    }
 
     // 2 — dual path, unless the user has already answered it
     final answered = dualPathAnswer != null && dualPathAnswer.isNotEmpty;
@@ -421,7 +467,10 @@ class EmotionSafety {
       return const EmotionSearchResult._(type: 'dual_path');
     }
     if (dualPathAnswer == 'distressing') {
-      return const EmotionSearchResult._(type: 'crisis', category: 'acute_crisis');
+      return const EmotionSearchResult._(
+        type: 'crisis',
+        category: 'acute_crisis',
+      );
     }
 
     // 3 — mapping lookup via the candidate cascade
@@ -449,7 +498,11 @@ class EmotionSafety {
       }
       for (final attempt in attempts) {
         final vocabulary = await vocabularyLookup(attempt.words);
-        final hit = bestContainedEmotion(normalised, vocabulary, relaxed: attempt.relaxed);
+        final hit = bestContainedEmotion(
+          normalised,
+          vocabulary,
+          relaxed: attempt.relaxed,
+        );
         if (hit == null) continue;
         final containedRows = await lookup(hit);
         if (containedRows.isNotEmpty) {
@@ -477,7 +530,9 @@ class EmotionSafety {
       via: containedVia != null ? 'containment' : 'cascade',
       rows: rows,
       softTier: checkSoftTier(normalised) ? softTierLine : null,
-      medicalDisclaimer: needsMedicalDisclaimer(rows) ? medicalDisclaimer : null,
+      medicalDisclaimer: needsMedicalDisclaimer(rows)
+          ? medicalDisclaimer
+          : null,
       medicalDisclaimerSubjects: medicalDisclaimerSubjects(rows),
     );
   }

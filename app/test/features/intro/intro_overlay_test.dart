@@ -5,23 +5,33 @@ import 'package:spiritpedia/features/intro/intro_overlay.dart';
 const _home = Text('HOME', textDirection: TextDirection.ltr);
 
 Widget _app() => const MaterialApp(
-      home: IntroOverlay(removeNativeSplash: false, child: Scaffold(body: Center(child: _home))),
-    );
+  home: IntroOverlay(
+    removeNativeSplash: false,
+    child: Scaffold(body: Center(child: _home)),
+  ),
+);
 
 /// The intro waits for the star image to decode before it starts. Image
 /// decoding is real async work, so give it a moment outside fake time.
 Future<void> _letStarDecode(WidgetTester tester) async {
-  await tester.runAsync(() => Future<void>.delayed(const Duration(milliseconds: 300)));
+  await tester.runAsync(
+    () => Future<void>.delayed(const Duration(milliseconds: 300)),
+  );
   await tester.pump();
 }
 
 void main() {
-  testWidgets('plays over the home screen, then gets out of the way', (tester) async {
+  testWidgets('plays over the home screen, then gets out of the way', (
+    tester,
+  ) async {
     await tester.pumpWidget(_app());
     await _letStarDecode(tester);
 
     expect(find.bySemanticsLabel('Skip intro'), findsOneWidget);
-    expect(find.text('HOME'), findsOneWidget); // built underneath from the start
+    expect(
+      find.text('HOME'),
+      findsOneWidget,
+    ); // built underneath from the start
 
     await tester.pump(const Duration(milliseconds: 800)); // mid-flight
     expect(find.bySemanticsLabel('Skip intro'), findsOneWidget);

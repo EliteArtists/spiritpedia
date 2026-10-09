@@ -44,13 +44,15 @@ class IntroOverlay extends StatefulWidget {
   State<IntroOverlay> createState() => _IntroOverlayState();
 }
 
-class _IntroOverlayState extends State<IntroOverlay> with SingleTickerProviderStateMixin {
-  late final AnimationController _controller = AnimationController(
-    vsync: this,
-    duration: widget.duration,
-  )..addStatusListener((status) {
-      if (status == AnimationStatus.completed && mounted) setState(() => _done = true);
-    });
+class _IntroOverlayState extends State<IntroOverlay>
+    with SingleTickerProviderStateMixin {
+  late final AnimationController _controller =
+      AnimationController(vsync: this, duration: widget.duration)
+        ..addStatusListener((status) {
+          if (status == AnimationStatus.completed && mounted) {
+            setState(() => _done = true);
+          }
+        });
 
   bool _started = false;
   bool _done = false;
@@ -61,7 +63,8 @@ class _IntroOverlayState extends State<IntroOverlay> with SingleTickerProviderSt
     if (_started) return;
     _started = true;
 
-    final features = WidgetsBinding.instance.platformDispatcher.accessibilityFeatures;
+    final features =
+        WidgetsBinding.instance.platformDispatcher.accessibilityFeatures;
     if (features.reduceMotion || features.disableAnimations) {
       // No motion at all: hand straight over to the home screen.
       _done = true;
@@ -84,7 +87,11 @@ class _IntroOverlayState extends State<IntroOverlay> with SingleTickerProviderSt
 
   void _skip() {
     if (_done || _controller.value >= 1) return;
-    _controller.animateTo(1, duration: const Duration(milliseconds: 200), curve: Curves.easeOut);
+    _controller.animateTo(
+      1,
+      duration: const Duration(milliseconds: 200),
+      curve: Curves.easeOut,
+    );
   }
 
   @override
@@ -102,8 +109,16 @@ class _IntroOverlayState extends State<IntroOverlay> with SingleTickerProviderSt
       child: widget.child,
       builder: (context, home) {
         final t = _controller.value;
-        final reveal = const Interval(0.45, 0.95, curve: Curves.easeInOut).transform(t);
-        final homeScale = lerpDouble(1.06, 1.0, Curves.easeOut.transform(reveal))!;
+        final reveal = const Interval(
+          0.45,
+          0.95,
+          curve: Curves.easeInOut,
+        ).transform(t);
+        final homeScale = lerpDouble(
+          1.06,
+          1.0,
+          Curves.easeOut.transform(reveal),
+        )!;
 
         return Stack(
           fit: StackFit.expand,
@@ -141,12 +156,22 @@ class _IntroFrame extends StatelessWidget {
         final size = constraints.biggest;
         final path = _ShootingPath(size);
 
-        final glow = const Interval(0.0, 0.25, curve: Curves.easeOut).transform(t);
-        final shoot = const Interval(0.25, 0.85, curve: Curves.easeInCubic).transform(t);
-        final fade = 1 - const Interval(0.72, 0.88, curve: Curves.easeIn).transform(t);
+        final glow = const Interval(
+          0.0,
+          0.25,
+          curve: Curves.easeOut,
+        ).transform(t);
+        final shoot = const Interval(
+          0.25,
+          0.85,
+          curve: Curves.easeInCubic,
+        ).transform(t);
+        final fade =
+            1 - const Interval(0.72, 0.88, curve: Curves.easeIn).transform(t);
 
         final position = path.at(shoot);
-        final width = IntroOverlay.startStarWidth *
+        final width =
+            IntroOverlay.startStarWidth *
             lerpDouble(1.0, 1.18, glow)! *
             lerpDouble(1.0, 0.28, shoot)!;
         final angle = 0.7 * shoot;
@@ -154,9 +179,13 @@ class _IntroFrame extends StatelessWidget {
         return Stack(
           fit: StackFit.expand,
           children: [
-            ColoredBox(color: SpColors.background.withValues(alpha: veilOpacity)),
+            ColoredBox(
+              color: SpColors.background.withValues(alpha: veilOpacity),
+            ),
             if (shoot > 0)
-              CustomPaint(painter: _TrailPainter(path: path, head: shoot, opacity: fade)),
+              CustomPaint(
+                painter: _TrailPainter(path: path, head: shoot, opacity: fade),
+              ),
             Positioned(
               left: position.dx - width / 2,
               top: position.dy - width / 2,
@@ -178,7 +207,10 @@ class _IntroFrame extends StatelessWidget {
                   ),
                   child: Transform.rotate(
                     angle: angle,
-                    child: const Image(image: IntroOverlay.starAsset, fit: BoxFit.contain),
+                    child: const Image(
+                      image: IntroOverlay.starAsset,
+                      fit: BoxFit.contain,
+                    ),
                   ),
                 ),
               ),
@@ -194,9 +226,9 @@ class _IntroFrame extends StatelessWidget {
 /// the launch screen draws it) up and away past the top-right corner.
 class _ShootingPath {
   _ShootingPath(Size size)
-      : start = size.center(Offset.zero),
-        control = Offset(size.width * 0.86, size.height * 0.46),
-        end = Offset(size.width * 1.25, -size.height * 0.12);
+    : start = size.center(Offset.zero),
+      control = Offset(size.width * 0.86, size.height * 0.46),
+      end = Offset(size.width * 1.25, -size.height * 0.12);
 
   final Offset start;
   final Offset control;
@@ -211,7 +243,11 @@ class _ShootingPath {
 /// The trail: the recent part of the flight, drawn as short segments that taper
 /// and fade towards the tail.
 class _TrailPainter extends CustomPainter {
-  _TrailPainter({required this.path, required this.head, required this.opacity});
+  _TrailPainter({
+    required this.path,
+    required this.head,
+    required this.opacity,
+  });
 
   final _ShootingPath path;
   final double head;
@@ -235,12 +271,16 @@ class _TrailPainter extends CustomPainter {
       final k = (i + 1) / _segments; // 0 at the tail → 1 at the star
       paint
         ..strokeWidth = 1 + 9 * k * k
-        ..color = Color.lerp(SpColors.gold, Colors.white, k * 0.6)!
-            .withValues(alpha: opacity * k * 0.9);
+        ..color = Color.lerp(
+          SpColors.gold,
+          Colors.white,
+          k * 0.6,
+        )!.withValues(alpha: opacity * k * 0.9);
       canvas.drawLine(path.at(a), path.at(b), paint);
     }
   }
 
   @override
-  bool shouldRepaint(_TrailPainter old) => old.head != head || old.opacity != opacity;
+  bool shouldRepaint(_TrailPainter old) =>
+      old.head != head || old.opacity != opacity;
 }

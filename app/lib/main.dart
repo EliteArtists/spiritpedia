@@ -7,6 +7,7 @@ import 'package:supabase_flutter/supabase_flutter.dart';
 
 import 'app.dart';
 import 'core/config.dart';
+import 'core/retry.dart';
 import 'theme/colors.dart';
 
 Future<void> main() async {
@@ -34,9 +35,12 @@ Future<void> main() async {
 
   // supabase_flutter 2.18 calls the public key `publishableKey` (formerly
   // anonKey). It is the same anon key the website ships — never a secret key.
-  await Supabase.initialize(url: AppConfig.supabaseUrl, publishableKey: AppConfig.supabaseAnonKey);
+  await Supabase.initialize(
+    url: AppConfig.supabaseUrl,
+    publishableKey: AppConfig.supabaseAnonKey,
+  );
 
-  runApp(const ProviderScope(child: SpiritpediaApp()));
+  runApp(const ProviderScope(retry: spiritpediaRetry, child: SpiritpediaApp()));
 }
 
 /// Shown instead of crashing when the app was started without its config file.
@@ -57,7 +61,11 @@ class _ConfigMissingApp extends StatelessWidget {
             child: Text(
               'Missing build configuration: ${missing.join(', ')}.\n\n'
               'Run with:\nflutter run --dart-define-from-file=config/prod.json',
-              style: const TextStyle(color: SpColors.text, fontSize: 15, height: 1.5),
+              style: const TextStyle(
+                color: SpColors.text,
+                fontSize: 15,
+                height: 1.5,
+              ),
             ),
           ),
         ),
