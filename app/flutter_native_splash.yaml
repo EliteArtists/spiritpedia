@@ -1,0 +1,24 @@
+# The static native launch screen — what the phone shows while the app starts,
+# before any Flutter code runs. Kept deliberately plain: the website's dark
+# background and the gold star, centred. The animated intro
+# (lib/features/intro/) starts from exactly this frame, so the hand-off is
+# seamless.
+#
+# Regenerate after changing anything here:
+#   dart run flutter_native_splash:create
+flutter_native_splash:
+  color: "#0a0f1d"
+  # 480 px, treated as the 4x image → about 120 pt on screen.
+  image: assets/splash/splash_star.png
+
+  android_12:
+    color: "#0a0f1d"
+    # Android 12+ draws the splash icon in a 288 dp square and masks it to a
+    # circle; the star sits centred inside that circle at about 120 dp.
+    image: assets/splash/android12_star.png
+    icon_background_color: "#0a0f1d"
+
+  # Portrait iPhone only for v1, but full-screen behaviour is the same on any
+  # device; nothing to vary here.
+  fullscreen: false
+  web: false

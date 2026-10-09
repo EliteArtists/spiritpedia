@@ -1,0 +1,55 @@
+name: spiritpedia
+description: "Spiritpedia — discover spiritual teachers, books and practices, starting from how you feel."
+publish_to: 'none'
+
+# Store version + build number. Bump the build number (+N) for every upload.
+version: 0.1.0+1
+
+# PINNED. Builds must use exactly this Flutter (and its bundled Dart), so the
+# app builds the same way on any machine. Upgrading Flutter is a deliberate,
+# reviewed change: edit both lines, run `flutter pub upgrade`, re-test, commit
+# the new pubspec.lock.
+environment:
+  sdk: 3.13.5
+  flutter: 3.47.7
+
+dependencies:
+  flutter:
+    sdk: flutter
+  supabase_flutter: ^2.18.2
+  flutter_riverpod: ^3.4.3
+  go_router: ^18.0.2
+  # Holds the static launch screen until the intro's first frame is ready
+  # (preserve/remove in main.dart and the intro). Its generator, run with
+  # `dart run flutter_native_splash:create`, reads flutter_native_splash.yaml.
+  flutter_native_splash: ^2.4.8
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/fonts/Geist-OFL.txt
+    # The shared crisis/safety phrase list arrives here in Phase 1a.
+
+  # Geist — the website's typeface, bundled rather than fetched at runtime so
+  # the app makes no font request to Google. SIL Open Font Licence:
+  # assets/fonts/Geist-OFL.txt (registered in lib/main.dart for the licence page).
+  fonts:
+    - family: Geist
+      fonts:
+        - asset: assets/fonts/Geist-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/Geist-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Geist-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/Geist-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/Geist-Black.ttf
+          weight: 900

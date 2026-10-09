@@ -62,6 +62,7 @@ Worth deleting the spare, once someone confirms nothing references
 * Environment variables are set in the Vercel dashboard, not in any file here — **on `spiritpedia-e58y`**. See *Environment variables* at the foot of this README for the full list.
 * Node 24.x on Vercel.
 * `npx vercel ls` / `vercel inspect <url>` work from `web/` once authenticated, and are the quickest way to confirm a deploy succeeded.
+* **Only website changes deploy.** `web/vercel.json` sets `ignoreCommand` → `web/scripts/vercel-ignore-build.sh`, which skips the build when nothing under `web/` changed since the **last successful deployment** (`VERCEL_GIT_PREVIOUS_SHA`, not `HEAD^`, so a multi-commit push is judged as a whole). App-only and README-only pushes show in Vercel as **Canceled** — that is the rule working, not a failure. When in doubt (no previous SHA, shallow history, git error) it builds. Both Vercel projects read the same file.
 
 #### A secret-scanner false alarm, already investigated
 `.env.local` **was** committed in two early commits (`90a3b95`, `e8f0d72`) and
@@ -135,18 +136,39 @@ them with the same phrase lists and the same order. A search box that reaches
 `emotion_mappings` without that gate would hand a list of videos to someone in
 crisis.
 
+#### The Flutter app — where it stands
+**Phase 0 is built:** `app/`, bundle ID `co.spiritpedia.app` on both platforms,
+Flutter pinned to **3.47.7**, the website's colours and Geist type, tier
+badges, the static launch screen and the shooting-star intro (every cold
+start, ~1.6 s, tap to skip, off under Reduce Motion), four placeholder tabs,
+and a read-only Supabase connection. Run it with
+`flutter run --dart-define-from-file=config/prod.json` from `app/`.
+
+Decisions for v1, settled 9 Oct 2026:
+* **iPhone only, portrait only.** No iPad layout.
+* **Explorers only.** Practitioner application, claim and dashboard stay on the website.
+* **In-app account deletion** via a shared server route, built in Phase 2 — Apple requires it, and the website gets the same option.
+* **My Library syncs** through `user_favourites` in Phase 2, after fixing the book-favourites mismatch (cards save a book's numeric id, the book page saves its slug).
+* **A dev Supabase project** before Phase 2, so development never writes to production.
+* **No analytics** in the app. Push (Firebase) in Phase 3; the Apple developer identity and push content are decided then.
+* **Amazon disclosure** sits at the bottom of the purchase section in the app.
+
+Phases, and how each is tested: `app/README.md`.
+
 🚀 Getting Oriented
 **The app is not at the root of this repo.** It lives in `web/`; there is no
 root `package.json`.
 
 ```
 spiritpedia/
+├── app/                    the Flutter app (iPhone + Android) — see app/README.md
 ├── web/                    the Next.js app — run everything from here
 │   ├── app/                routes (App Router): pages, /api, sitemap, robots
 │   ├── components/         UI, with components/admin/ for the dashboard
 │   ├── utils/              Supabase clients, email, audit logic, helpers
 │   ├── proxy.js            password gate on /admin (Next 16 proxy convention)
-│   └── vercel.json         the three cron schedules
+│   ├── scripts/            vercel-ignore-build.sh — skip deploys that do not touch web/
+│   └── vercel.json         the three cron schedules + the skip rule
 └── supabase/
     ├── migrations/         SQL, run by hand — 0000 is the full schema baseline
     └── seed/               emotion_mappings.sql — the search vocabulary
@@ -191,7 +213,7 @@ The entry point is always emotional:
 | Platform | Role | Status |
 | :--- | :--- | :--- |
 | Web App (Next.js) | Primary product — full discovery experience | ✅ **Complete and live** at [www.spiritpedia.co](https://www.spiritpedia.co) |
-| Native App (Flutter) | **The current phase** — iOS & Android with push notifications | ⬜ Not started |
+| Native App (Flutter) | **The current phase** — iOS & Android with push notifications | 🟡 Phase 0 done — skeleton, theme, intro. In `app/` |
 
 #### Domains
 `spiritpedia.co` is the primary domain and the one to share. The original
@@ -1055,7 +1077,8 @@ clean, untagged `/dp/` links and no disclosure line shows.
 | Healer portrait auditing — all three `image_urls`, daily | ✅ Complete |
 | GA4 analytics | ✅ Complete |
 | Content library (target: 5,000 videos + 5,000 books) | ⬜ Ongoing |
-| Flutter native app | ⬜ Phase 2 |
+| Flutter native app — Phase 0 (skeleton, theme, launch screen, intro, tabs) | ✅ Complete |
+| Flutter native app — Phases 1–4 (explore, accounts, push, stores) | ⬜ In progress |
 | IAM notification system | ⬜ Phase 2 |
 
 📊 Content Library
@@ -1240,7 +1263,7 @@ whose `course_url` points at Amazon.
 | Admin phases 4+ | Flags, messages, publisher claims. Each needs its own table |
 | Ancient Teachers tier | Planned |
 | Content library | Target: 5,000 videos + 5,000 books — ongoing |
-| Flutter app build | Phase 2 |
+| Flutter app build | Phase 0 done; phases 1–4 in `app/README.md` |
 
 🔧 Operational knowledge
 Things learned the hard way that neither the code nor the git log will tell you.
