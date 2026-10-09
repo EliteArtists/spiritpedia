@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
 import 'features/home/home_screen.dart';
+import 'features/search/search_screen.dart';
 import 'features/shell/app_shell.dart';
 import 'features/subject/subject_screen.dart';
 import 'features/videos/videos_screen.dart';
@@ -36,11 +37,7 @@ GoRouter buildRouter() => GoRouter(
           routes: [
             GoRoute(
               path: '/search',
-              builder: (context, state) => const PlaceholderScreen(
-                title: 'Search',
-                icon: Icons.search,
-                comingIn: 'The emotional search — with its crisis safeguard — arrives in Phase 1c.',
-              ),
+              builder: (context, state) => const SearchScreen(),
             ),
           ],
         ),
@@ -80,11 +77,7 @@ GoRouter buildRouter() => GoRouter(
     GoRoute(
       parentNavigatorKey: _rootKey,
       path: '/feel',
-      builder: (context, state) => const PlaceholderScreen(
-        title: 'How are you feeling?',
-        icon: Icons.search,
-        comingIn: 'The full-screen emotional search arrives in Phase 1c.',
-      ),
+      builder: (context, state) => const SearchScreen(standalone: true),
     ),
     for (final (path, label) in [
       ('/healers/:slug', 'Teacher'),
