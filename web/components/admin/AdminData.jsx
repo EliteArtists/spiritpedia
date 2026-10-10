@@ -28,6 +28,7 @@ export function AdminDataProvider({ children }) {
     // twice for the same outage.
     pendingReviews: [],
     brokenImages: [],
+    accountDeletions: [],
     counts: {},
     error: null,
   });
@@ -55,6 +56,7 @@ export function AdminDataProvider({ children }) {
         profiles: json.profiles ?? null,
         pendingReviews: json.pendingReviews || [],
         brokenImages: json.brokenImages || [],
+        accountDeletions: json.accountDeletions || [],
         counts: json.counts || {},
         error: json.error || null,
       };
@@ -64,6 +66,7 @@ export function AdminDataProvider({ children }) {
         profiles: null,
         pendingReviews: [],
         brokenImages: [],
+        accountDeletions: [],
         counts: {},
         error: err?.name === 'AbortError' ? 'unreachable' : err.message,
       };

@@ -1,11 +1,16 @@
 import { buildMetadata } from '@/utils/seo';
-import { A, ADDRESS, ENTITY, LAST_UPDATED, LegalPage, List, Mail, Rows, Section, Sub } from '@/components/LegalPage';
+import { A, ADDRESS, ENTITY, LegalPage, List, Mail, Rows, Section, Sub } from '@/components/LegalPage';
 import CookieSettingsLink from '@/components/CookieSettingsLink';
 
 // Privacy Policy. Every technical claim here was checked against the codebase
 // on 9 October 2026 — see legal-draft.md (not committed). If you change how the
 // site handles data — a new provider, search logging, a cookie, the YouTube
 // embed — change this page in the same commit.
+// Its own date, separate from the Terms (LAST_UPDATED in LegalPage), because
+// the two now change independently. Updated for self-serve account deletion
+// and synced saved items.
+const PRIVACY_UPDATED = '10 October 2026';
+
 export const metadata = buildMetadata({
   title: 'Privacy Policy',
   description: 'What personal information Spiritpedia collects, why, and what you can do about it.',
@@ -16,7 +21,7 @@ export default function PrivacyPage() {
   return (
     <LegalPage
       title="Privacy Policy"
-      updated={LAST_UPDATED}
+      updated={PRIVACY_UPDATED}
       intro={
         <p>
           This policy explains what personal information Spiritpedia — the website and apps —
@@ -49,8 +54,9 @@ export default function PrivacyPage() {
           </li>
           <li>
             <strong className="text-white">Saved items</strong> — the teachers, books, videos and
-            other things you save are stored in your own browser. If you have an account, we also
-            keep a copy with your account when you sign in.
+            other things you save are stored in your own browser, or on your phone in the app. If
+            you have an account and are signed in, they are kept with your account, so they match
+            on every device you use; signing out removes them from that browser or phone.
           </li>
           <li>
             <strong className="text-white">The emotional search</strong> — we don&apos;t save what
@@ -186,8 +192,16 @@ export default function PrivacyPage() {
       <Section title="6. How long we keep it">
         <List>
           <li>
-            Account data, saved items and reviews — until you delete your account, or ask us to
-            delete them.
+            Account data, saved items and reviews — until you delete your account. You can do that
+            yourself at any time from your account page on the website or in the app, and it takes
+            effect immediately; or ask us to do it for you.
+          </li>
+          <li>
+            If you deleted an account linked to a public teacher profile, the profile stays on
+            Spiritpedia, unclaimed. We remove the contact details and photos you added to it, and
+            keep only a note that the account was closed and which profile it was linked to — not
+            your email or name — so that we know to review it. Ask us if you&apos;d like the profile
+            removed altogether.
           </li>
           <li>
             Practitioner profiles — while the profile is listed; declined applications for 12
@@ -207,7 +221,10 @@ export default function PrivacyPage() {
         <List>
           <li>give you a copy of your data</li>
           <li>correct anything that&apos;s wrong</li>
-          <li>delete your data</li>
+          <li>
+            delete your data — you can also delete your account yourself, from your account page on
+            the website or in the app
+          </li>
           <li>restrict or object to how we use it — including objecting to being featured as a teacher</li>
           <li>send your data to you or another service in a portable format</li>
           <li>withdraw consent, for example to analytics cookies, at any time</li>

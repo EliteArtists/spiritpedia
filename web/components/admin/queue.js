@@ -50,6 +50,13 @@ export const QUEUE_TYPES = {
     live: true,
     chip: 'border-amber-500/40 bg-amber-500/10 text-amber-300',
   },
+  closed_account: {
+    key: 'closed_account',
+    label: 'Closed account',
+    icon: '🗂️',
+    live: true,
+    chip: 'border-slate-500/40 bg-slate-500/10 text-slate-300',
+  },
   broken_image: {
     key: 'broken_image',
     label: 'Broken image',
@@ -60,6 +67,7 @@ export const QUEUE_TYPES = {
 };
 
 export const STATUS_STYLES = {
+  review: 'border-slate-500/40 bg-slate-500/10 text-slate-300',
   broken: 'border-orange-500/40 bg-orange-500/10 text-orange-300',
   pending: 'border-amber-500/40 bg-amber-500/10 text-amber-300',
   incomplete: 'border-slate-600 bg-slate-800 text-slate-400',
@@ -168,7 +176,7 @@ const TIER_WORDS = {
 // `reviews` and `brokenImages` are optional and default to none, so a caller
 // that has not been taught about them yet still gets a queue rather than an
 // exception.
-export function buildQueue(profiles, reviews = [], brokenImages = []) {
+export function buildQueue(profiles, reviews = [], brokenImages = [], accountDeletions = []) {
   if (!Array.isArray(profiles)) return [];
   const items = [];
 
@@ -280,6 +288,33 @@ export function buildQueue(profiles, reviews = [], brokenImages = []) {
       href: row.healer_slug
         ? `/admin/content/${row.healer_slug}?tab=${row.table_name === 'healers' ? 'profile' : 'content'}`
         : '/admin/content',
+    });
+  }
+
+  // A listing whose owner deleted their account (account_deletions, 0013). The
+  // account and everything on it are already gone; what is left is the public
+  // listing, still showing the contact details and photos they added. Sent to
+  // the listing's Profile tab, where those fields are edited and where the
+  // banner marks it reviewed.
+  for (const row of Array.isArray(accountDeletions) ? accountDeletions : []) {
+    items.push({
+      id: `closed_account:${row.id}`,
+      type: 'closed_account',
+      at: row.deleted_at,
+      person: row.linked_healer_slug,
+      title: 'Owner deleted their account',
+      detail: [
+        `/healers/${row.linked_healer_slug}`,
+        'remove the contact details they added',
+        row.kept_image_count
+          ? `${row.kept_image_count} uploaded photo${row.kept_image_count === 1 ? '' : 's'} still shown`
+          : null,
+      ]
+        .filter(Boolean)
+        .join(' · '),
+      status: 'review',
+      action: 'Review →',
+      href: `/admin/content/${row.linked_healer_slug}?tab=profile&closed=${row.id}`,
     });
   }
 

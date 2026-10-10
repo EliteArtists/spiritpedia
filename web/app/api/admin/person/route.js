@@ -1,5 +1,6 @@
 import { NextResponse } from 'next/server';
 import { adminClient, isAdminRequest, NOT_CONFIGURED } from '@/utils/supabaseAdmin';
+import { deleteAccount } from '@/utils/deleteAccount';
 
 export const dynamic = 'force-dynamic';
 
@@ -160,8 +161,8 @@ export async function PATCH(request) {
 //   user_favourites.user_id       (0002)
 //   admin_notes.subject_user_id   (0005)
 //
-// So one delete takes the profile, everything they saved, and every internal
-// note written about them. None of it is recoverable, which is why the client
+// (and reviews.user_id, 0008). So one delete takes the profile, everything
+// they saved, their reviews and every internal note written about them. None of it is recoverable, which is why the client
 // puts a confirmation in front of this and why the route refuses to guess an
 // id from anything but an explicit one.
 //
@@ -186,18 +187,13 @@ export async function DELETE(request) {
 
   if (!id) return NextResponse.json({ error: 'missing_id' }, { status: 400 });
 
-  // Read the profile first, so the response can say what was removed and the
-  // caller is not left guessing whether the id even existed.
-  const { data: profile } = await supabase
-    .from('user_profiles')
-    .select('linked_healer_slug')
-    .eq('id', id)
-    .maybeSingle();
-
-  const { error } = await supabase.auth.admin.deleteUser(id);
-
-  if (error) {
-    return NextResponse.json({ error: error.message }, { status: 500 });
+  // The shared implementation (utils/deleteAccount.js) — the same one the
+  // self-serve route uses, so an admin deletion also removes uploaded photos
+  // the listing does not display. source 'admin' writes no Inbox record: the
+  // admin is the one looking.
+  const result = await deleteAccount(supabase, id, { source: 'admin' });
+  if (!result.ok) {
+    return NextResponse.json({ error: result.error }, { status: result.status });
   }
 
   return NextResponse.json({
@@ -205,6 +201,6 @@ export async function DELETE(request) {
     deleted: id,
     // Surfaced so the admin knows a public listing is now unclaimed rather than
     // gone, without having to go and look.
-    orphaned_healer_slug: profile?.linked_healer_slug || null,
+    orphaned_healer_slug: result.linkedHealerSlug,
   });
 }

@@ -38,7 +38,7 @@ export async function GET() {
 
   if (!supabase) {
     return NextResponse.json(
-      { ...NOT_CONFIGURED, counts, profiles: null, pendingReviews: [], brokenImages: [] },
+      { ...NOT_CONFIGURED, counts, profiles: null, pendingReviews: [], brokenImages: [], accountDeletions: [] },
       { status: 200 }
     );
   }
@@ -83,6 +83,15 @@ export async function GET() {
     .gte('failures', MIN_FAILURES)
     .order('first_seen_at', { ascending: true });
 
+  // Accounts with a claimed listing that their owner deleted, still to be
+  // reviewed (migration 0013). Service role only, like broken_images. A
+  // missing table (migration not yet run) reads as none rather than failing.
+  const { data: accountDeletions } = await supabase
+    .from('account_deletions')
+    .select('id, deleted_at, source, linked_healer_slug, kept_image_count')
+    .is('resolved_at', null)
+    .order('deleted_at', { ascending: true });
+
   // user_profiles has no email column — the address lives in auth.users, which
   // only the service role can read. One listUsers call and a lookup map is far
   // cheaper than a getUserById per profile.
@@ -105,11 +114,13 @@ export async function GET() {
   counts.users_this_week = withEmail.filter((p) => p.created_at && p.created_at >= since).length;
   counts.pending_reviews = (pendingReviews || []).length;
   counts.broken_images = (brokenImages || []).length;
+  counts.closed_accounts = (accountDeletions || []).length;
 
   return NextResponse.json({
     profiles: withEmail,
     pendingReviews: pendingReviews || [],
     brokenImages: brokenImages || [],
+    accountDeletions: accountDeletions || [],
     counts,
   });
 }

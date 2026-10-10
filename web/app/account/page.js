@@ -6,6 +6,7 @@ import { useRouter } from 'next/navigation';
 import SiteLogo from '@/components/SiteLogo';
 import { getUser, signOut, supabaseAuth } from '@/utils/supabaseAuth';
 import PractitionerDashboard from '@/components/PractitionerDashboard';
+import DeleteAccount from '@/components/DeleteAccount';
 
 const SUPPORT_EMAIL = 'love@spiritpedia.co';
 
@@ -206,6 +207,12 @@ export default function AccountPage() {
                 View your profile →
               </Link>
             )}
+          </div>
+        )}
+
+        {!showDashboard && (
+          <div className="mt-6">
+            <DeleteAccount hasListing={Boolean(healerSlug)} />
           </div>
         )}
 

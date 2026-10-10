@@ -3,6 +3,7 @@
 import { use, useCallback, useEffect, useMemo, useState } from 'react';
 import Link from 'next/link';
 import { useRouter, useSearchParams } from 'next/navigation';
+import ClosedAccountBanner from '@/components/admin/ClosedAccountBanner';
 import SectionHeading from '@/components/admin/SectionHeading';
 import { Placeholder } from '@/components/admin/AdminPlaceholders';
 import DataProblem from '@/components/admin/DataProblem';
@@ -1290,6 +1291,7 @@ export default function AdminHealerRecordPage({ params }) {
       </div>
 
       <div className="mt-5">
+        <ClosedAccountBanner closedId={searchParams.get('closed')} />
         {tab === 'Profile' && (
           <>
             <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">

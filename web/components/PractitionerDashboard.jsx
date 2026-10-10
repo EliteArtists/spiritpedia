@@ -3,6 +3,7 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
 import Link from 'next/link';
 import { supabaseAuth } from '../utils/supabaseAuth.js';
+import DeleteAccount from './DeleteAccount.jsx';
 
 const TABS = ['Profile', 'Content', 'Settings'];
 const BUCKET = 'practitioner-images';
@@ -446,7 +447,6 @@ function ContentTab({ content, claimed }) {
 /* ── SETTINGS ──────────────────────────────────────────────────────────── */
 
 function SettingsTab({ email }) {
-  const [note, setNote] = useState(null);
   return (
     <div className="flex flex-col gap-5 text-left">
       <div className="rounded-2xl border border-white/10 bg-[#111827] p-5">
@@ -454,20 +454,9 @@ function SettingsTab({ email }) {
         <p className="mt-1 break-all text-sm text-white">{email}</p>
       </div>
 
-      <div className="rounded-2xl border border-white/10 p-5">
-        <p className="text-sm font-semibold text-white">Delete account</p>
-        {/* Deliberately unwired. Deleting cascades through the profile, saved
-            library and admin notes and removes the auth user — irreversible,
-            and not something to hang off one click. */}
-        <button
-          type="button"
-          onClick={() => setNote(`To delete your account, contact us at ${SUPPORT_EMAIL}.`)}
-          className="mt-3 rounded-full border border-red-500/40 px-5 py-2.5 text-sm font-semibold text-red-300 transition-colors hover:bg-red-500/10"
-        >
-          Delete account
-        </button>
-        {note && <p className="mt-3 text-sm text-gray-400">{note}</p>}
-      </div>
+      {/* Self-serve: POST /api/account/delete, the same route the app uses.
+          An approved practitioner always has a listing. */}
+      <DeleteAccount hasListing />
     </div>
   );
 }
