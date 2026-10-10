@@ -8,6 +8,7 @@ import '../../shared/widgets/net_image.dart';
 import '../../shared/widgets/shelf.dart';
 import '../../theme/colors.dart';
 import '../library/saved_items.dart';
+import '../star/star_layer.dart';
 import 'detail_providers.dart';
 import 'detail_widgets.dart';
 
@@ -26,10 +27,14 @@ class PublisherScreen extends ConsumerWidget {
       notFoundLabel: 'publisher',
       saveKind: SavedKind.publishers,
       saveSlug: slug,
+      sharePath: '/publishers/$slug',
+      shareTitle: (c) => c.publisher.name,
       builder: (context, c) {
         final p = c.publisher;
         return ListView(
-          padding: const EdgeInsets.only(bottom: 40),
+          padding: const EdgeInsets.only(
+            bottom: 40 + FloatingHomeStar.clearance,
+          ),
           children: [
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 20),

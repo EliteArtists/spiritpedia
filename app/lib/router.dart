@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
 import 'features/account/account_screen.dart';
+import 'features/books/books_screen.dart';
 import 'features/detail/book_screen.dart';
 import 'features/detail/offering_screen.dart';
 import 'features/detail/publisher_screen.dart';
@@ -18,7 +19,8 @@ final _rootKey = GlobalKey<NavigatorState>();
 
 /// All navigation. Detail paths mirror the website's (/healers/:slug,
 /// /books/:slug, …), so a spiritpedia.co link can later open the same screen.
-/// Detail pages and the full-screen search open above the tab bar.
+/// Home is a tab with no button — the star is the way there. Detail pages,
+/// My Library, Account and the full-screen search open above the tab bar.
 GoRouter buildRouter() => GoRouter(
   navigatorKey: _rootKey,
   initialLocation: '/',
@@ -42,28 +44,31 @@ GoRouter buildRouter() => GoRouter(
         StatefulShellBranch(
           routes: [
             GoRoute(
+              path: '/books',
+              builder: (context, state) => const BooksScreen(),
+            ),
+          ],
+        ),
+        StatefulShellBranch(
+          routes: [
+            GoRoute(
               path: '/search',
               builder: (context, state) => const SearchScreen(),
             ),
           ],
         ),
-        StatefulShellBranch(
-          routes: [
-            GoRoute(
-              path: '/library',
-              builder: (context, state) => const LibraryScreen(),
-            ),
-          ],
-        ),
-        StatefulShellBranch(
-          routes: [
-            GoRoute(
-              path: '/account',
-              builder: (context, state) => const AccountScreen(),
-            ),
-          ],
-        ),
       ],
+    ),
+    // My Library and Account open from the top bar, above the tab bar.
+    GoRoute(
+      parentNavigatorKey: _rootKey,
+      path: '/library',
+      builder: (context, state) => const LibraryScreen(),
+    ),
+    GoRoute(
+      parentNavigatorKey: _rootKey,
+      path: '/account',
+      builder: (context, state) => const AccountScreen(),
     ),
     GoRoute(
       parentNavigatorKey: _rootKey,

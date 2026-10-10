@@ -6,6 +6,8 @@ import '../../data/providers.dart';
 import '../../shared/widgets/cards.dart';
 import '../../shared/widgets/shelf.dart';
 import '../../theme/colors.dart';
+import '../detail/detail_widgets.dart';
+import '../star/star_layer.dart';
 import '../account/account_providers.dart';
 import 'saved_items.dart';
 
@@ -100,13 +102,13 @@ class LibraryScreen extends ConsumerWidget {
     final signedIn = ref.watch(accountProvider).signedIn;
 
     return Scaffold(
-      body: SafeArea(
-        bottom: false,
+      appBar: AppBar(),
+      body: WithHomeStar(
         child: CustomScrollView(
           slivers: [
             const SliverToBoxAdapter(
               child: Padding(
-                padding: EdgeInsets.fromLTRB(20, 18, 20, 4),
+                padding: EdgeInsets.fromLTRB(20, 0, 20, 4),
                 child: Text(
                   'My Library',
                   style: TextStyle(fontSize: 28, fontWeight: FontWeight.w700),
@@ -250,6 +252,9 @@ class LibraryScreen extends ConsumerWidget {
                   const SizedBox(height: 32),
                 ],
               ),
+            const SliverToBoxAdapter(
+              child: SizedBox(height: FloatingHomeStar.clearance),
+            ),
           ],
         ),
       ),

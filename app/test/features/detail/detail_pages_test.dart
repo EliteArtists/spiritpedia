@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_test/flutter_test.dart';
+import 'package:spiritpedia/core/links/share.dart';
 import 'package:spiritpedia/core/retry.dart';
 import 'package:spiritpedia/data/providers.dart';
 import 'package:spiritpedia/features/detail/book_screen.dart';
@@ -10,6 +11,7 @@ import 'package:spiritpedia/features/detail/teacher_screen.dart';
 import 'package:spiritpedia/features/detail/video_screen.dart';
 import 'package:spiritpedia/features/library/library_screen.dart';
 import 'package:spiritpedia/features/library/saved_items.dart';
+import 'package:spiritpedia/features/star/star_layer.dart';
 import 'package:spiritpedia/theme/theme.dart';
 import 'package:spiritpedia/features/account/account_providers.dart';
 
@@ -35,6 +37,9 @@ void main() {
         .resetPhysicalSize(),
   );
 
+  final shared = <Uri>[];
+  setUp(shared.clear);
+
   Future<MemorySavedStore> pump(
     WidgetTester tester,
     Widget screen, {
@@ -48,6 +53,9 @@ void main() {
           accountServiceProvider.overrideWithValue(FakeAccountService()),
           contentRepositoryProvider.overrideWithValue(FakeContentRepository()),
           savedStoreProvider.overrideWithValue(saved),
+          shareLauncherProvider.overrideWithValue(
+            (link, title, origin) async => shared.add(link),
+          ),
           videoPlayerBuilderProvider.overrideWithValue(
             (id, title) => Text('player:$id', key: const ValueKey('player')),
           ),
@@ -143,10 +151,15 @@ void main() {
       tester,
       const TeacherScreen(slug: 'eckhart-tolle'),
     );
-    await tester.tap(find.byTooltip('Save to My Library'));
+    // The page's own heart, in the app bar (the cards below have theirs).
+    Finder heart(String tooltip) => find.descendant(
+      of: find.byType(AppBar),
+      matching: find.byTooltip(tooltip),
+    );
+    await tester.tap(heart('Save to My Library'));
     await tester.pumpAndSettle();
     expect(store.data[SavedKind.healers], ['eckhart-tolle']);
-    await tester.tap(find.byTooltip('Remove from My Library'));
+    await tester.tap(heart('Remove from My Library'));
     await tester.pumpAndSettle();
     expect(store.data[SavedKind.healers], isEmpty);
   });
@@ -189,5 +202,34 @@ void main() {
   testWidgets('an empty library explains how to fill it', (tester) async {
     await pump(tester, const LibraryScreen());
     expect(find.text('Nothing saved yet.'), findsOneWidget);
+  });
+
+  testWidgets('every detail page shares its own spiritpedia.co link', (
+    tester,
+  ) async {
+    const site = 'https://www.spiritpedia.co';
+    for (final (screen, path) in <(Widget, String)>[
+      (const BookScreen(slug: 'the-power-of-now'), '/books/the-power-of-now'),
+      (const VideoScreen(slug: 'video-1'), '/videos/video-1'),
+      (const TeacherScreen(slug: 'eckhart-tolle'), '/healers/eckhart-tolle'),
+      (const PublisherScreen(slug: 'hay-house'), '/publishers/hay-house'),
+      (const OfferingScreen(slug: 'breath-course'), '/offerings/breath-course'),
+      (
+        const FreeResourceScreen(slug: 'free-meditation'),
+        '/free-resources/free-meditation',
+      ),
+    ]) {
+      await pump(tester, screen);
+      await tester.tap(find.byTooltip('Share'));
+      await tester.pump();
+      expect(shared.last, Uri.parse('$site$path'), reason: path);
+    }
+    expect(shared, hasLength(6));
+  });
+
+  testWidgets('detail pages float the star, labelled Home', (tester) async {
+    await pump(tester, const BookScreen(slug: 'the-power-of-now'));
+    expect(find.byType(FloatingHomeStar), findsOneWidget);
+    expect(find.bySemanticsLabel('Home'), findsOneWidget);
   });
 }

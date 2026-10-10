@@ -7,6 +7,7 @@ import 'package:go_router/go_router.dart';
 import 'features/intro/intro_overlay.dart';
 import 'features/notifications/notifications_controller.dart';
 import 'features/notifications/push_messaging.dart';
+import 'features/star/star_layer.dart';
 import 'router.dart';
 import 'theme/theme.dart';
 
@@ -22,7 +23,7 @@ class SpiritpediaApp extends ConsumerStatefulWidget {
 
 /// The tabs: a notification leading to one switches to it rather than
 /// stacking a second copy on top.
-const _tabRoutes = {'/', '/videos', '/search', '/library', '/account'};
+const _tabRoutes = {'/', '/videos', '/books', '/search'};
 
 class _SpiritpediaAppState extends ConsumerState<SpiritpediaApp> {
   late final GoRouter _router = buildRouter();
@@ -87,9 +88,13 @@ class _SpiritpediaAppState extends ConsumerState<SpiritpediaApp> {
       routerConfig: _router,
       // The intro sits ABOVE the router, so the real home screen is built
       // underneath it and genuinely revealed — not navigated to afterwards.
-      builder: (context, child) => widget.playIntro
-          ? IntroOverlay(child: child ?? const SizedBox.shrink())
-          : child ?? const SizedBox.shrink(),
+      // The star layer sits above everything, so a star can fly from any
+      // screen to any other.
+      builder: (context, child) => StarLayer(
+        child: widget.playIntro
+            ? IntroOverlay(child: child ?? const SizedBox.shrink())
+            : child ?? const SizedBox.shrink(),
+      ),
     );
   }
 }

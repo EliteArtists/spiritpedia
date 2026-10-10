@@ -6,14 +6,21 @@ import '../../data/providers.dart';
 import '../../data/shelf_rules.dart';
 import '../../theme/colors.dart';
 
-/// "View All" and the five pillars. Tapping a pillar opens its subjects in a
-/// sheet — the website's hover panel, as a phone would show it. The chosen
-/// subject narrows the whole screen, and is named underneath with a way out.
-class SubjectPills extends ConsumerWidget {
-  const SubjectPills({super.key, required this.filter});
+/// "View All" and the five pillars, as one horizontally scrolling row. Tapping
+/// a pillar opens its subjects in a sheet — the website's hover panel, as a
+/// phone would show it. The chosen subject narrows the whole screen.
+class SubjectPillRow extends ConsumerWidget {
+  const SubjectPillRow({
+    super.key,
+    required this.filter,
+    this.leadingPadding = 20,
+  });
 
-  /// Which screen's filter this row controls (Home or Videos).
+  /// Which screen's filter this row controls (Home, Videos or Books).
   final NotifierProvider<SubjectFilter, String?> filter;
+
+  /// Room at the start of the row — wider while the star is docked there.
+  final double leadingPadding;
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
@@ -21,63 +28,25 @@ class SubjectPills extends ConsumerWidget {
     final subjects = ref.watch(subjectsProvider).value ?? const <Subject>[];
     final activePillar = pillarOf(current);
 
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        SizedBox(
-          height: 42,
-          child: ListView(
-            scrollDirection: Axis.horizontal,
-            padding: const EdgeInsets.symmetric(horizontal: 20),
-            children: [
-              _Pill(
-                label: 'View All',
-                active: current == null,
-                onTap: () => ref.read(filter.notifier).select(null),
-              ),
-              for (final pillar in subjectPillars.keys)
-                _Pill(
-                  label: pillar,
-                  active: activePillar == pillar,
-                  onTap: () =>
-                      _openPillar(context, ref, pillar, subjects, current),
-                ),
-            ],
+    return SizedBox(
+      height: 42,
+      child: ListView(
+        scrollDirection: Axis.horizontal,
+        padding: EdgeInsets.only(left: leadingPadding, right: 20),
+        children: [
+          _Pill(
+            label: 'View All',
+            active: current == null,
+            onTap: () => ref.read(filter.notifier).select(null),
           ),
-        ),
-        if (current != null)
-          Padding(
-            padding: const EdgeInsets.fromLTRB(20, 12, 20, 0),
-            child: Row(
-              children: [
-                const Icon(
-                  Icons.filter_alt_outlined,
-                  size: 16,
-                  color: SpColors.textMuted,
-                ),
-                const SizedBox(width: 6),
-                Flexible(
-                  child: Text(
-                    'Showing ${subjectName(subjects, current)}',
-                    overflow: TextOverflow.ellipsis,
-                    style: const TextStyle(
-                      fontSize: 13.5,
-                      color: SpColors.textMuted,
-                    ),
-                  ),
-                ),
-                TextButton(
-                  onPressed: () => ref.read(filter.notifier).select(null),
-                  style: TextButton.styleFrom(
-                    foregroundColor: SpColors.link,
-                    visualDensity: VisualDensity.compact,
-                  ),
-                  child: const Text('Clear'),
-                ),
-              ],
+          for (final pillar in subjectPillars.keys)
+            _Pill(
+              label: pillar,
+              active: activePillar == pillar,
+              onTap: () => _openPillar(context, ref, pillar, subjects, current),
             ),
-          ),
-      ],
+        ],
+      ),
     );
   }
 
@@ -144,6 +113,48 @@ class SubjectPills extends ConsumerWidget {
             ],
           ),
         ),
+      ),
+    );
+  }
+}
+
+/// The chosen subject, named under the pill row, with a way out.
+class SubjectFilterNote extends ConsumerWidget {
+  const SubjectFilterNote({super.key, required this.filter});
+
+  final NotifierProvider<SubjectFilter, String?> filter;
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    final current = ref.watch(filter);
+    if (current == null) return const SizedBox.shrink();
+    final subjects = ref.watch(subjectsProvider).value ?? const <Subject>[];
+    return Padding(
+      padding: const EdgeInsets.fromLTRB(20, 4, 20, 0),
+      child: Row(
+        children: [
+          const Icon(
+            Icons.filter_alt_outlined,
+            size: 16,
+            color: SpColors.textMuted,
+          ),
+          const SizedBox(width: 6),
+          Flexible(
+            child: Text(
+              'Showing ${subjectName(subjects, current)}',
+              overflow: TextOverflow.ellipsis,
+              style: const TextStyle(fontSize: 13.5, color: SpColors.textMuted),
+            ),
+          ),
+          TextButton(
+            onPressed: () => ref.read(filter.notifier).select(null),
+            style: TextButton.styleFrom(
+              foregroundColor: SpColors.link,
+              visualDensity: VisualDensity.compact,
+            ),
+            child: const Text('Clear'),
+          ),
+        ],
       ),
     );
   }

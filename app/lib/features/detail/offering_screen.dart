@@ -39,6 +39,8 @@ class OfferingScreen extends ConsumerWidget {
       notFoundLabel: 'offering',
       saveKind: SavedKind.offerings,
       saveSlug: slug,
+      sharePath: '/offerings/$slug',
+      shareTitle: (o) => o.title,
       builder: (context, o) {
         final type = _productTypes[o.productType] ?? _productTypes['course']!;
         return _OfferingLayout(
@@ -79,6 +81,8 @@ class FreeResourceScreen extends ConsumerWidget {
       notFoundLabel: 'resource',
       saveKind: SavedKind.freeResources,
       saveSlug: slug,
+      sharePath: '/free-resources/$slug',
+      shareTitle: (r) => r.title,
       builder: (context, r) => _OfferingLayout(
         badges: const [_Pill('FREE RESOURCE', background: Color(0xFF0D9488))],
         title: r.title,

@@ -1,14 +1,17 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
 import '../../data/models.dart';
 import '../../data/shelf_rules.dart';
+import '../../features/library/saved_items.dart';
 import '../../theme/colors.dart';
 import 'net_image.dart';
 import 'tier_badge.dart';
 
 // The website's cards, adapted to a phone. Every card opens the matching
-// detail page at the same path the website uses.
+// detail page at the same path the website uses, and carries the website's
+// heart in its top-right corner.
 
 BorderRadius get _radius => BorderRadius.circular(14);
 
@@ -33,6 +36,39 @@ class _Tappable extends StatelessWidget {
         child: Material(
           color: SpColors.surface,
           child: InkWell(onTap: onTap, child: child),
+        ),
+      ),
+    );
+  }
+}
+
+/// The heart on a card, as the website draws it: an outline that fills red
+/// when saved. Its own 44-point tap target — a tap saves, and never opens the
+/// card underneath.
+class CardHeart extends ConsumerWidget {
+  const CardHeart({super.key, required this.kind, required this.slug});
+
+  final SavedKind kind;
+  final String slug;
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    final saved = ref.watch(savedItemsProvider)[kind]?.contains(slug) ?? false;
+    return Positioned(
+      top: 2,
+      right: 2,
+      child: IconButton(
+        tooltip: saved ? 'Remove from My Library' : 'Save to My Library',
+        constraints: const BoxConstraints.tightFor(width: 44, height: 44),
+        padding: EdgeInsets.zero,
+        onPressed: slug.isEmpty
+            ? null
+            : () => ref.read(savedItemsProvider.notifier).toggle(kind, slug),
+        icon: Icon(
+          saved ? Icons.favorite : Icons.favorite_border,
+          size: 24,
+          color: saved ? const Color(0xFFEF4444) : Colors.white,
+          shadows: const [Shadow(color: Color(0xB3000000), blurRadius: 6)],
         ),
       ),
     );
@@ -109,6 +145,7 @@ class HealerCard extends StatelessWidget {
               ],
             ),
           ),
+          CardHeart(kind: SavedKind.healers, slug: healer.slug),
         ],
       ),
     );
@@ -129,7 +166,13 @@ class BookCard extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Expanded(
-            child: NetImage(url: book.coverUrl, fallbackLabel: book.title),
+            child: Stack(
+              fit: StackFit.expand,
+              children: [
+                NetImage(url: book.coverUrl, fallbackLabel: book.title),
+                CardHeart(kind: SavedKind.books, slug: book.slug),
+              ],
+            ),
           ),
           Padding(
             padding: const EdgeInsets.fromLTRB(10, 9, 10, 10),
@@ -160,8 +203,10 @@ class _ImageTextCard extends StatelessWidget {
     this.byline,
     this.description,
     this.cta,
+    this.heart,
   });
 
+  final CardHeart? heart;
   final String label;
   final VoidCallback onTap;
   final String? imageUrl;
@@ -210,6 +255,7 @@ class _ImageTextCard extends StatelessWidget {
                       ),
                     ),
                   ),
+                ?heart,
               ],
             ),
           ),
@@ -290,6 +336,7 @@ class OfferingCard extends StatelessWidget {
     byline: healerName,
     description: offering.description,
     cta: offering.ctaLabel,
+    heart: CardHeart(kind: SavedKind.offerings, slug: offering.slug),
   );
 }
 
@@ -308,6 +355,7 @@ class FreeResourceCard extends StatelessWidget {
     badge: resource.typeLabel,
     byline: healerName,
     description: resource.description,
+    heart: CardHeart(kind: SavedKind.freeResources, slug: resource.slug),
   );
 }
 
@@ -325,44 +373,52 @@ class PublisherCard extends StatelessWidget {
     return _Tappable(
       label: publisher.name,
       onTap: () => context.push('/publishers/${publisher.slug}'),
-      child: Padding(
-        padding: const EdgeInsets.all(14),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Expanded(
-              child: ClipRRect(
-                borderRadius: BorderRadius.circular(10),
-                child: ColoredBox(
-                  color: Colors.white,
-                  child: Padding(
-                    padding: const EdgeInsets.all(14),
-                    child: NetImage(
-                      url: publisher.logoUrl,
-                      fit: BoxFit.contain,
-                      fallbackLabel: publisher.name,
-                    ),
-                  ),
-                ),
-              ),
-            ),
-            const SizedBox(height: 12),
-            Text(
-              publisher.name,
-              style: const TextStyle(fontSize: 15, fontWeight: FontWeight.w700),
-            ),
-            if (meta.isNotEmpty) ...[
-              const SizedBox(height: 3),
-              Text(
-                meta,
-                style: const TextStyle(fontSize: 12, color: SpColors.textMuted),
-              ),
-            ],
-          ],
-        ),
+      child: Stack(
+        fit: StackFit.expand,
+        children: [
+          _publisherBody(meta),
+          CardHeart(kind: SavedKind.publishers, slug: publisher.slug),
+        ],
       ),
     );
   }
+
+  Widget _publisherBody(String meta) => Padding(
+    padding: const EdgeInsets.all(14),
+    child: Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Expanded(
+          child: ClipRRect(
+            borderRadius: BorderRadius.circular(10),
+            child: ColoredBox(
+              color: Colors.white,
+              child: Padding(
+                padding: const EdgeInsets.all(14),
+                child: NetImage(
+                  url: publisher.logoUrl,
+                  fit: BoxFit.contain,
+                  fallbackLabel: publisher.name,
+                ),
+              ),
+            ),
+          ),
+        ),
+        const SizedBox(height: 12),
+        Text(
+          publisher.name,
+          style: const TextStyle(fontSize: 15, fontWeight: FontWeight.w700),
+        ),
+        if (meta.isNotEmpty) ...[
+          const SizedBox(height: 3),
+          Text(
+            meta,
+            style: const TextStyle(fontSize: 12, color: SpColors.textMuted),
+          ),
+        ],
+      ],
+    ),
+  );
 }
 
 class VideoCard extends StatelessWidget {
@@ -397,6 +453,7 @@ class VideoCard extends StatelessWidget {
                     ),
                   ),
                 ),
+                CardHeart(kind: SavedKind.videos, slug: video.slug),
               ],
             ),
           ),

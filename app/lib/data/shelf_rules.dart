@@ -214,3 +214,31 @@ List<Video> capPerTeacher(
   }
   return out;
 }
+
+/// The Books tab's version of [capPerTeacher]: at most [perAuthor] books by
+/// one author in a shelf — the teacher's slug when the book has one, the
+/// stored author otherwise.
+List<Book> capPerAuthor(
+  List<Book> pool, {
+  int size = videoShelfSize,
+  int perAuthor = maxVideosPerTeacher,
+}) {
+  final counts = <String, int>{};
+  final out = <Book>[];
+  for (final b in pool) {
+    if (out.length >= size) break;
+    final key = b.healerSlug ?? b.author?.toLowerCase() ?? 'book:${b.id}';
+    final n = counts[key] ?? 0;
+    if (n >= perAuthor) continue;
+    counts[key] = n + 1;
+    out.add(b);
+  }
+  return out;
+}
+
+/// Every [step]th item, then the next offset, and so on — a stable mix of a
+/// newest-first list, so the mixed shelf is not just the newest again.
+List<T> spreadOut<T>(List<T> items, {int step = 7}) => [
+  for (var offset = 0; offset < step; offset++)
+    for (var i = offset; i < items.length; i += step) items[i],
+];

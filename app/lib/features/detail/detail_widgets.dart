@@ -3,12 +3,15 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
 import '../../core/links/open_link.dart';
+import '../../core/links/share.dart';
 import '../../data/providers.dart';
 import '../../theme/colors.dart';
 import '../library/saved_items.dart';
+import '../star/star_layer.dart';
 
-/// Every detail page's frame: an app bar with the save heart, and the
-/// loading, error and not-found states, so each page only draws its content.
+/// Every detail page's frame: an app bar with share and the save heart, the
+/// star floating where the tab bar would be, and the loading, error and
+/// not-found states, so each page only draws its content.
 class DetailScaffold<T> extends ConsumerWidget {
   const DetailScaffold({
     super.key,
@@ -18,6 +21,8 @@ class DetailScaffold<T> extends ConsumerWidget {
     required this.builder,
     this.saveKind,
     this.saveSlug,
+    this.sharePath,
+    this.shareTitle,
   });
 
   final AsyncValue<T?> value;
@@ -27,44 +32,69 @@ class DetailScaffold<T> extends ConsumerWidget {
   final SavedKind? saveKind;
   final String? saveSlug;
 
+  /// The page's path, shared as its spiritpedia.co link ("/books/slug").
+  final String? sharePath;
+  final String Function(T item)? shareTitle;
+
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final item = value.value;
     return Scaffold(
       appBar: AppBar(
         actions: [
+          if (sharePath != null && item != null)
+            ShareIconButton(
+              path: sharePath!,
+              title: shareTitle?.call(item) ?? 'Spiritpedia',
+            ),
           if (saveKind != null && saveSlug != null && item != null)
             SaveHeart(kind: saveKind!, slug: saveSlug!),
         ],
       ),
-      body: value.when(
-        loading: () => const Center(
-          child: CircularProgressIndicator(color: SpColors.link),
-        ),
-        error: (_, _) => Center(
-          child: Column(
-            mainAxisSize: MainAxisSize.min,
-            children: [
-              const Text(
-                'This page could not be loaded.',
-                style: TextStyle(color: SpColors.textMuted),
-              ),
-              const SizedBox(height: 12),
-              FilledButton(onPressed: onRetry, child: const Text('Try again')),
-            ],
+      body: WithHomeStar(
+        child: value.when(
+          loading: () => const Center(
+            child: CircularProgressIndicator(color: SpColors.link),
           ),
-        ),
-        data: (item) => item == null
-            ? Center(
-                child: Text(
-                  'This $notFoundLabel is no longer on Spiritpedia.',
-                  style: const TextStyle(color: SpColors.textMuted),
+          error: (_, _) => Center(
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                const Text(
+                  'This page could not be loaded.',
+                  style: TextStyle(color: SpColors.textMuted),
                 ),
-              )
-            : builder(context, item),
+                const SizedBox(height: 12),
+                FilledButton(
+                  onPressed: onRetry,
+                  child: const Text('Try again'),
+                ),
+              ],
+            ),
+          ),
+          data: (item) => item == null
+              ? Center(
+                  child: Text(
+                    'This $notFoundLabel is no longer on Spiritpedia.',
+                    style: const TextStyle(color: SpColors.textMuted),
+                  ),
+                )
+              : builder(context, item),
+        ),
       ),
     );
   }
+}
+
+/// A page with the floating home star at its foot.
+class WithHomeStar extends StatelessWidget {
+  const WithHomeStar({super.key, required this.child});
+
+  final Widget child;
+
+  @override
+  Widget build(BuildContext context) =>
+      Stack(fit: StackFit.expand, children: [child, const FloatingHomeStar()]);
 }
 
 /// Save to My Library — on this device only.
@@ -88,7 +118,13 @@ class SaveHeart extends ConsumerWidget {
   }
 }
 
-const detailPadding = EdgeInsets.fromLTRB(20, 4, 20, 40);
+/// The bottom leaves room to scroll the last content clear of the star.
+const detailPadding = EdgeInsets.fromLTRB(
+  20,
+  4,
+  20,
+  40 + FloatingHomeStar.clearance,
+);
 
 class DetailTitle extends StatelessWidget {
   const DetailTitle(this.text, {super.key, this.center = false});

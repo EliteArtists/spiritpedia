@@ -5,6 +5,8 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../core/config.dart';
 import '../../core/links/open_link.dart';
 import '../../theme/colors.dart';
+import '../detail/detail_widgets.dart';
+import '../star/star_layer.dart';
 import '../notifications/notifications_section.dart';
 import 'account_providers.dart';
 import 'account_service.dart';
@@ -21,10 +23,15 @@ class AccountScreen extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     final account = ref.watch(accountProvider);
     return Scaffold(
-      body: SafeArea(
-        bottom: false,
+      appBar: AppBar(),
+      body: WithHomeStar(
         child: ListView(
-          padding: const EdgeInsets.fromLTRB(20, 18, 20, 40),
+          padding: const EdgeInsets.fromLTRB(
+            20,
+            0,
+            20,
+            40 + FloatingHomeStar.clearance,
+          ),
           children: [
             Text(
               account.signedIn ? 'My Account' : 'Your account',

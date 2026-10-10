@@ -10,6 +10,8 @@ import '../../data/models.dart';
 import '../../data/providers.dart';
 import '../../shared/widgets/net_image.dart';
 import '../../theme/colors.dart';
+import '../star/star_layer.dart';
+import '../star/star_page.dart';
 import 'emotion_search_controller.dart';
 import 'search_repository.dart';
 
@@ -150,9 +152,10 @@ class _SearchState extends ConsumerState<_Search> {
                     hintStyle: const TextStyle(color: SpColors.textMuted),
                     filled: true,
                     fillColor: SpColors.surface,
-                    prefixIcon: const Icon(
-                      Icons.search,
-                      color: SpColors.textMuted,
+                    // The star, where the magnifying glass was: home.
+                    prefixIcon: const Padding(
+                      padding: EdgeInsets.only(left: 6, right: 2),
+                      child: StarAnchor(size: 26),
                     ),
                     suffixIcon: _search.text.isEmpty
                         ? null
@@ -184,9 +187,13 @@ class _SearchState extends ConsumerState<_Search> {
           ),
         ),
         Expanded(
-          child: AnimatedSwitcher(
-            duration: const Duration(milliseconds: 160),
-            child: KeyedSubtree(key: ValueKey(_search.view), child: _body()),
+          child: _TabBarClearance(
+            // The Search tab: every view can scroll clear of the tab bar.
+            value: widget.standalone ? 0 : StarPage.tabBarClearance,
+            child: AnimatedSwitcher(
+              duration: const Duration(milliseconds: 160),
+              child: KeyedSubtree(key: ValueKey(_search.view), child: _body()),
+            ),
           ),
         ),
       ],
@@ -223,6 +230,21 @@ class _SearchState extends ConsumerState<_Search> {
 
 // ── Views ────────────────────────────────────────────────────────────────────
 
+/// Extra room under each view's last item, so the floating tab bar never
+/// covers it — scroll padding, so nothing above it moves.
+class _TabBarClearance extends InheritedWidget {
+  const _TabBarClearance({required this.value, required super.child});
+
+  final double value;
+
+  static double of(BuildContext context) =>
+      context.dependOnInheritedWidgetOfExactType<_TabBarClearance>()?.value ??
+      0;
+
+  @override
+  bool updateShouldNotify(_TabBarClearance old) => old.value != value;
+}
+
 class _Idle extends StatelessWidget {
   const _Idle({required this.onPick});
 
@@ -240,7 +262,12 @@ class _Idle extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListView(
-      padding: const EdgeInsets.fromLTRB(24, 28, 24, 24),
+      padding: EdgeInsets.fromLTRB(
+        24,
+        28,
+        24,
+        24 + _TabBarClearance.of(context),
+      ),
       children: [
         const Text(
           'Tell us how you feel, in your own words.',
@@ -286,7 +313,12 @@ class _CrisisPanel extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListView(
-      padding: const EdgeInsets.fromLTRB(24, 24, 24, 32),
+      padding: EdgeInsets.fromLTRB(
+        24,
+        24,
+        24,
+        32 + _TabBarClearance.of(context),
+      ),
       children: [
         Text(
           content.heading,
@@ -360,7 +392,12 @@ class _DualPathPanel extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListView(
-      padding: const EdgeInsets.fromLTRB(24, 24, 24, 32),
+      padding: EdgeInsets.fromLTRB(
+        24,
+        24,
+        24,
+        32 + _TabBarClearance.of(context),
+      ),
       children: [
         Text(
           content.heading,
@@ -437,7 +474,12 @@ class _Results extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     final names = ref.watch(subjectsProvider).value;
     return ListView(
-      padding: const EdgeInsets.fromLTRB(16, 8, 16, 32),
+      padding: EdgeInsets.fromLTRB(
+        16,
+        8,
+        16,
+        32 + _TabBarClearance.of(context),
+      ),
       children: [
         for (final row in subjects)
           ListTile(
@@ -514,7 +556,7 @@ class _Universal extends StatelessWidget {
     );
 
     return ListView(
-      padding: const EdgeInsets.only(bottom: 32),
+      padding: EdgeInsets.only(bottom: 32 + _TabBarClearance.of(context)),
       children: [
         if (results.healers.isNotEmpty) header('HEALERS'),
         for (final h in results.healers)
@@ -600,7 +642,12 @@ class _NoMatch extends ConsumerWidget {
       ),
     );
     return ListView(
-      padding: const EdgeInsets.fromLTRB(24, 20, 24, 32),
+      padding: EdgeInsets.fromLTRB(
+        24,
+        20,
+        24,
+        32 + _TabBarClearance.of(context),
+      ),
       children: [
         const Text(
           "We haven't found a match for that yet.",

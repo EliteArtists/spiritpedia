@@ -26,7 +26,7 @@ final publishersProvider = FutureProvider<List<Publisher>>(
   (ref) => ref.watch(contentRepositoryProvider).publishers(),
 );
 
-/// A subject filter (null = View All). Home and Videos each keep their own,
+/// A subject filter (null = View All). Home, Videos and Books each keep their own,
 /// as the website's tabs share a URL but the app's tabs are separate screens.
 class SubjectFilter extends Notifier<String?> {
   @override
@@ -39,6 +39,9 @@ final homeSubjectProvider = NotifierProvider<SubjectFilter, String?>(
   SubjectFilter.new,
 );
 final videosSubjectProvider = NotifierProvider<SubjectFilter, String?>(
+  SubjectFilter.new,
+);
+final booksSubjectProvider = NotifierProvider<SubjectFilter, String?>(
   SubjectFilter.new,
 );
 
@@ -188,6 +191,72 @@ final videoShelvesProvider = FutureProvider.family<List<VideoShelf>, String?>((
         videos: more,
       ),
   ].where((s) => s.videos.isNotEmpty).toList();
+});
+
+// ── Books ────────────────────────────────────────────────────────────────────
+
+class BookShelf {
+  const BookShelf({
+    required this.title,
+    required this.subtitle,
+    required this.books,
+  });
+
+  final String title;
+  final String subtitle;
+  final List<Book> books;
+}
+
+/// The Books tab's shelves, built like Videos: View All shows New, the five
+/// pillars and a mixed shelf; a chosen subject shows its newest books, then
+/// the next batch. Never more than two books by one author in a shelf.
+final bookShelvesProvider = FutureProvider.family<List<BookShelf>, String?>((
+  ref,
+  subject,
+) async {
+  final repo = ref.watch(contentRepositoryProvider);
+  final all = await repo.books(subject: subject); // newest first
+
+  if (subject == null) {
+    return [
+      BookShelf(
+        title: 'New to Spiritpedia',
+        subtitle: 'Just added',
+        books: capPerAuthor(all),
+      ),
+      for (final pillar in videoPillarOrder)
+        BookShelf(
+          title: pillar,
+          subtitle: 'Read & reflect',
+          books: capPerAuthor([
+            for (final b in all)
+              if (b.subjectSlugs.any(subjectPillars[pillar]!.contains)) b,
+          ]),
+        ),
+      BookShelf(
+        title: 'From the Library',
+        subtitle: 'A little of everything',
+        books: capPerAuthor(spreadOut(all)),
+      ),
+    ].where((s) => s.books.isNotEmpty).toList();
+  }
+
+  final latest = capPerAuthor(all);
+  final shown = {for (final b in latest) b.id};
+  final more = capPerAuthor([
+    for (final b in all)
+      if (!shown.contains(b.id)) b,
+  ]);
+  final name = subjectName(await ref.watch(subjectsProvider.future), subject);
+  return [
+    BookShelf(
+      title: 'Latest in $name',
+      subtitle: '${all.length} books',
+      books: latest,
+    ),
+    if (more.isNotEmpty)
+      BookShelf(title: 'More in $name', subtitle: 'Keep reading', books: more),
+  ].where((s) => s.books.isNotEmpty).toList();
 });
 
 // ── Subject page ─────────────────────────────────────────────────────────────

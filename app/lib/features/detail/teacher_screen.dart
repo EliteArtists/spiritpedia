@@ -10,6 +10,7 @@ import '../../shared/widgets/shelf.dart';
 import '../../shared/widgets/tier_badge.dart';
 import '../../theme/colors.dart';
 import '../library/saved_items.dart';
+import '../star/star_layer.dart';
 import 'detail_providers.dart';
 import 'detail_widgets.dart';
 
@@ -28,6 +29,8 @@ class TeacherScreen extends ConsumerWidget {
       notFoundLabel: 'teacher',
       saveKind: SavedKind.healers,
       saveSlug: slug,
+      sharePath: '/healers/$slug',
+      shareTitle: (c) => c.healer.name,
       builder: (context, c) => _Teacher(content: c),
     );
   }
@@ -61,7 +64,7 @@ class _Teacher extends StatelessWidget {
         );
 
     return ListView(
-      padding: const EdgeInsets.only(bottom: 40),
+      padding: const EdgeInsets.only(bottom: 40 + FloatingHomeStar.clearance),
       children: [
         Padding(
           padding: const EdgeInsets.symmetric(horizontal: 20),

@@ -36,6 +36,8 @@ class VideoScreen extends ConsumerWidget {
       notFoundLabel: 'video',
       saveKind: SavedKind.videos,
       saveSlug: slug,
+      sharePath: '/videos/$slug',
+      shareTitle: (v) => v.title,
       builder: (context, video) {
         final id = video.youtubeId;
         final url = video.platformUrl;

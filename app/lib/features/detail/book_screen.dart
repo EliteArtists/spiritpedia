@@ -34,6 +34,8 @@ class BookScreen extends ConsumerWidget {
       notFoundLabel: 'book',
       saveKind: SavedKind.books,
       saveSlug: slug,
+      sharePath: '/books/$slug',
+      shareTitle: (b) => b.title,
       builder: (context, book) => ListView(
         padding: detailPadding,
         children: [
