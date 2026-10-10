@@ -112,11 +112,13 @@ class SupabaseAccountService implements AccountService {
         shouldCreateUser: true,
       );
     } on AuthException catch (e) {
-      throw AccountError(
-        e.statusCode == '429'
-            ? 'Too many codes requested. Please wait a minute and try again.'
-            : 'We could not send a code just now. Please try again.',
-      );
+      throw AccountError(switch ((e.statusCode, e.code)) {
+        ('429', _) =>
+          'Too many codes requested. Please wait a minute and try again.',
+        (_, 'email_address_invalid') =>
+          "That email address doesn't look right. Please check it.",
+        _ => 'We could not send a code just now. Please try again.',
+      });
     }
   }
 
