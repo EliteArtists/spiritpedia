@@ -1,25 +1,14 @@
 'use client';
 
-import { useEffect, useState } from 'react';
-import { readFavorites, toggleFavorite } from '../utils/favorites.js';
+import { FAVORITE_KEYS } from '../utils/favorites.js';
+import { useFavorite } from '../utils/useFavorite.js';
 
 // "Mark as Read" toggle for the book detail page. Persists into a dedicated
 // `read_books` array (separate from the `favorited_books` want-to-read shelf) so
-// a reader can track read status independently of their saved list.
-const READ_BOOKS_KEY = 'read_books';
-
+// a reader can track read status independently of their saved list. Signed in,
+// it syncs as content_type 'book_read'.
 export default function ReadButton({ bookSlug }) {
-  const [active, setActive] = useState(false);
-  const favId = String(bookSlug);
-
-  useEffect(() => {
-    setActive(readFavorites(READ_BOOKS_KEY).map(String).includes(favId));
-  }, [favId]);
-
-  function toggle() {
-    const next = toggleFavorite(READ_BOOKS_KEY, favId);
-    if (next) setActive(next.map(String).includes(favId));
-  }
+  const [active, toggle] = useFavorite(FAVORITE_KEYS.readBooks, bookSlug);
 
   return (
     <button

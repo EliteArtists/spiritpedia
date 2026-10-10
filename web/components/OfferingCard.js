@@ -88,7 +88,7 @@ export default function OfferingCard({ item, healerName, from, fromTitle }) {
         </div>
       </a>
 
-      <FavoriteHeart storageKey={FAVORITE_KEYS.courses} itemId={item.id} label={item.title} />
+      <FavoriteHeart storageKey={FAVORITE_KEYS.courses} itemId={item.slug} label={item.title} />
     </div>
   );
 }

@@ -2,10 +2,10 @@
 
 import { useState, useEffect } from 'react';
 import CardImage from './CardImage.js';
+import { FAVORITE_KEYS } from '../utils/favorites.js';
+import { useFavorite } from '../utils/useFavorite.js';
 import { formatLifespan, LIFESPAN_BADGE_CLASS } from '../utils/lifespan.js';
 
-// Shared localStorage key holding the global array of favorited healer ids.
-const FAV_HEALERS_KEY = 'favorited_healers';
 
 // Served from /public, so the fallback survives exactly the conditions that kill
 // the portrait: a dead third-party CDN, an offline network, a blocked host. A
@@ -64,9 +64,8 @@ function TierTooltip({ tier, children, placement = 'above' }) {
 // one image (or none) it renders the static card exactly as before, so the prop
 // is safe to pass for a whole shelf.
 export default function HealerCard({ healer, portrait, heightClass = 'h-72', rotate = false }) {
-  const [favorited, setFavorited] = useState(false);
-
-  const favId = healer.healer_slug || String(healer.id);
+  // Saved by slug — the same key the app and user_favourites use.
+  const [favorited, toggleSaved] = useFavorite(FAVORITE_KEYS.healers, healer.healer_slug);
   const imgSrc = portrait || (Array.isArray(healer.image_urls) && healer.image_urls[0]) || null;
   const isAscended = healer.tier === 'ascended_master';
 
@@ -87,29 +86,10 @@ export default function HealerCard({ healer, portrait, heightClass = 'h-72', rot
     return () => clearInterval(timer);
   }, [rotating, frames.length]);
 
-  // Restore favorite state from the global favorited_healers array on mount.
-  useEffect(() => {
-    try {
-      const list = JSON.parse(localStorage.getItem(FAV_HEALERS_KEY) || '[]');
-      setFavorited(Array.isArray(list) && list.includes(favId));
-    } catch {
-      /* localStorage unavailable — ignore */
-    }
-  }, [favId]);
-
-  // Toggle this healer (Superhero or Local Hero) in/out of favorited_healers.
   function toggleFavorite(e) {
     e.preventDefault();
     e.stopPropagation();
-    try {
-      const raw = JSON.parse(localStorage.getItem(FAV_HEALERS_KEY) || '[]');
-      const arr = Array.isArray(raw) ? raw : [];
-      const next = arr.includes(favId) ? arr.filter((id) => id !== favId) : [...arr, favId];
-      localStorage.setItem(FAV_HEALERS_KEY, JSON.stringify(next));
-      setFavorited(next.includes(favId));
-    } catch {
-      /* ignore persistence failure */
-    }
+    toggleSaved();
   }
 
   return (

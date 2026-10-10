@@ -52,19 +52,18 @@ import {
 // favourites on the wrong client does not fail; it silently says "this person
 // has saved nothing", forever.
 
-// Where a saved item's subject slugs actually live. user_favourites records
-// only a content_type and a content_slug, and that slug is three different
-// shapes depending on the type — a text slug for healers and publishers, a
-// bigint for books and videos, a UUID for courses and free resources. (The
-// comment on the 0002 migration says courses and free resources are numeric.
-// They are not.)
+// Where a saved item's subject slugs actually live. user_favourites records a
+// content_type and a content_slug, and since migration 0012 the slug is always
+// a slug (until then books and videos held ids, courses and free resources
+// UUIDs). A book marked as read says as much about taste as one saved.
 const FAVOURITE_SOURCES = {
-  healer: { table: 'healers', column: 'healer_slug', numeric: false },
-  publisher: { table: 'publishers', column: 'slug', numeric: false },
-  book: { table: 'books', column: 'id', numeric: true },
-  video: { table: 'videos', column: 'id', numeric: true },
-  course: { table: 'courses', column: 'id', numeric: false },
-  free_resource: { table: 'free_resources', column: 'id', numeric: false },
+  healer: { table: 'healers', column: 'healer_slug' },
+  publisher: { table: 'publishers', column: 'slug' },
+  book: { table: 'books', column: 'slug' },
+  book_read: { table: 'books', column: 'slug' },
+  video: { table: 'videos', column: 'slug' },
+  course: { table: 'courses', column: 'slug' },
+  free_resource: { table: 'free_resources', column: 'slug' },
 };
 
 // TODO — "Most Watched on YouTube". Needs a view_count column on videos and a
@@ -124,10 +123,11 @@ async function loadForYou() {
     else byType.set(favourite.content_type, [favourite.content_slug]);
   }
 
-  // The ids of videos they have already saved, kept for the exclusion below.
-  const savedVideoIds = (byType.get('video') || [])
-    .map((value) => Number(value))
-    .filter((value) => Number.isFinite(value));
+  // The videos they have already saved, kept for the exclusion below. Quoted
+  // for PostgREST's in-list; slugs never contain a double quote.
+  const savedVideoSlugs = (byType.get('video') || [])
+    .filter((value) => value && !value.includes('"'))
+    .map((value) => `"${value}"`);
 
   const lookups = [];
   for (const [type, values] of byType) {
@@ -136,10 +136,7 @@ async function loadForYou() {
     // list never reaches .in() — PostgREST rejects `in.()` outright.
     if (!source || values.length === 0) continue;
 
-    const keys = source.numeric
-      ? values.map((value) => Number(value)).filter((value) => Number.isFinite(value))
-      : values;
-    if (keys.length === 0) continue;
+    const keys = values;
 
     lookups.push(
       supabase
@@ -189,8 +186,8 @@ async function loadForYou() {
   // shape the pillar shelves use, so this row behaves like its neighbours.
   const withFilters = (query) => {
     const scoped = query.overlaps('subject_slugs', topSlugs);
-    return savedVideoIds.length > 0
-      ? scoped.not('id', 'in', `(${savedVideoIds.join(',')})`)
+    return savedVideoSlugs.length > 0
+      ? scoped.not('slug', 'in', `(${savedVideoSlugs.join(',')})`)
       : scoped;
   };
 

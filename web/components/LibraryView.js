@@ -12,7 +12,7 @@ import PublisherCard from './PublisherCard.jsx';
 import LibrarySignupNudge from './LibrarySignupNudge.jsx';
 import SubjectPills from './SubjectPills.js';
 import VideoPlayer from './VideoPlayer.js';
-import { FAVORITE_KEYS, readFavorites } from '../utils/favorites.js';
+import { FAVORITE_KEYS, FAVORITES_EVENT, readFavorites } from '../utils/favorites.js';
 
 // My Library — the same streaming shelf language as the homepage, but every shelf
 // is drawn from what this visitor actually saved. No billboard: the library is a
@@ -42,32 +42,29 @@ export default function LibraryView({
   );
 
   useEffect(() => {
-    const savedHealerKeys = readFavorites(FAVORITE_KEYS.healers).map(String);
-    const savedBookIds = readFavorites(FAVORITE_KEYS.books).map(String);
-    const savedVideoIds = readFavorites(FAVORITE_KEYS.videos).map(String);
-    const savedCourseIds = readFavorites(FAVORITE_KEYS.courses).map(String);
-    const savedResourceIds = readFavorites(FAVORITE_KEYS.freeResources).map(String);
-    const savedPublisherSlugs = readFavorites(FAVORITE_KEYS.publishers).map(String);
-
-    setSaved({
-      // Healers are keyed by slug, but older entries were written by id — accept
-      // either so a long-standing library does not lose rows.
-      healers: healers.filter(
-        (h) =>
-          savedHealerKeys.includes(String(h.healer_slug)) || savedHealerKeys.includes(String(h.id))
-      ),
-      // Books are now keyed by slug (detail-page buttons), but the shelf card
-      // heart still saves by id — accept either so no saved row is lost.
-      books: books.filter(
-        (b) => savedBookIds.includes(String(b.slug)) || savedBookIds.includes(String(b.id))
-      ),
-      // Publisher hearts save the slug, which is also what the card and the
-      // profile route key on.
-      publishers: publishers.filter((p) => savedPublisherSlugs.includes(String(p.slug))),
-      videos: videos.filter((v) => savedVideoIds.includes(String(v.id))),
-      courses: courses.filter((c) => savedCourseIds.includes(String(c.id))),
-      freeResources: freeResources.filter((r) => savedResourceIds.includes(String(r.id))),
-    });
+    // Every list holds slugs (utils/favorites.js). The id match is kept only
+    // for a save the one-off conversion could not resolve yet, so a library
+    // never loses a row while that runs.
+    const pick = (rows, key, slugOf) => {
+      const savedKeys = readFavorites(key).map(String);
+      return rows.filter(
+        (row) => savedKeys.includes(String(slugOf(row))) || savedKeys.includes(String(row.id))
+      );
+    };
+    const refresh = () =>
+      setSaved({
+        healers: pick(healers, FAVORITE_KEYS.healers, (h) => h.healer_slug),
+        books: pick(books, FAVORITE_KEYS.books, (b) => b.slug),
+        publishers: pick(publishers, FAVORITE_KEYS.publishers, (p) => p.slug),
+        videos: pick(videos, FAVORITE_KEYS.videos, (v) => v.slug),
+        courses: pick(courses, FAVORITE_KEYS.courses, (c) => c.slug),
+        freeResources: pick(freeResources, FAVORITE_KEYS.freeResources, (r) => r.slug),
+      });
+    refresh();
+    // Follow changes: an unsave from a card on this page, the conversion, or
+    // the account's list arriving after sign-in.
+    window.addEventListener(FAVORITES_EVENT, refresh);
+    return () => window.removeEventListener(FAVORITES_EVENT, refresh);
   }, [healers, books, videos, courses, freeResources, publishers]);
 
   // THE CURATION LAYER — the union of every subject slug across everything the

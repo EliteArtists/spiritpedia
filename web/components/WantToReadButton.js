@@ -1,23 +1,14 @@
 'use client';
 
-import { useEffect, useState } from 'react';
-import { FAVORITE_KEYS, readFavorites, toggleFavorite } from '../utils/favorites.js';
+import { FAVORITE_KEYS } from '../utils/favorites.js';
+import { useFavorite } from '../utils/useFavorite.js';
 
 // "Want to Read" toggle for the book detail page. Persists into the same global
 // `favorited_books` array the rest of the bookshelf uses (FAVORITE_KEYS.books),
-// so a book saved here shows up in My Library and on its card.
+// by slug like the book card, so a book saved here shows up in My Library and
+// on its card.
 export default function WantToReadButton({ bookSlug }) {
-  const [active, setActive] = useState(false);
-  const favId = String(bookSlug);
-
-  useEffect(() => {
-    setActive(readFavorites(FAVORITE_KEYS.books).map(String).includes(favId));
-  }, [favId]);
-
-  function toggle() {
-    const next = toggleFavorite(FAVORITE_KEYS.books, favId);
-    if (next) setActive(next.map(String).includes(favId));
-  }
+  const [active, toggle] = useFavorite(FAVORITE_KEYS.books, bookSlug);
 
   return (
     <button

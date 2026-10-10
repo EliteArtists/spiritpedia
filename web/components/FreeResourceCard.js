@@ -54,7 +54,7 @@ export default function FreeResourceCard({ item, healerName, from, fromTitle }) 
         </div>
       </a>
 
-      <FavoriteHeart storageKey={FAVORITE_KEYS.freeResources} itemId={item.id} label={item.title} />
+      <FavoriteHeart storageKey={FAVORITE_KEYS.freeResources} itemId={item.slug} label={item.title} />
     </div>
   );
 }

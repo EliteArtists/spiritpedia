@@ -1,7 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
-import { readFavorites, toggleFavorite } from '../utils/favorites.js';
+import { useFavorite } from '../utils/useFavorite.js';
 
 // Floating favourite heart, shared by the offering and free-resource cards.
 //
@@ -17,21 +16,12 @@ export default function FavoriteHeart({
   // Publisher cards sit it on a white logo panel, so they pass a darker tone.
   idleClassName = 'text-white hover:text-red-400 hover:scale-110',
 }) {
-  const [favorited, setFavorited] = useState(false);
-  const favId = String(itemId);
-
-  // localStorage is unreadable during SSR, so the server always renders the
-  // un-favourited heart and the real state is restored on mount. Doing this in an
-  // effect (rather than during render) is what keeps the two markups identical.
-  useEffect(() => {
-    setFavorited(readFavorites(storageKey).map(String).includes(favId));
-  }, [storageKey, favId]);
+  const [favorited, toggle] = useFavorite(storageKey, itemId);
 
   function handleToggle(e) {
     e.preventDefault();
     e.stopPropagation();
-    const next = toggleFavorite(storageKey, favId);
-    if (next) setFavorited(next.includes(favId));
+    toggle();
   }
 
   return (

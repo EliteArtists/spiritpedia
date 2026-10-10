@@ -1,10 +1,10 @@
 'use client';
 
-import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { backContextQuery } from '../utils/backContext.js';
+import { FAVORITE_KEYS } from '../utils/favorites.js';
+import { useFavorite } from '../utils/useFavorite.js';
 
-const FAV_KEY = 'favorite_videos';
 
 // Pull the YouTube video ID out of any stored platform_url shape.
 function extractId(url) {
@@ -23,9 +23,9 @@ function extractId(url) {
 // and name so the back link returns there. Without them the detail page falls
 // back to "Back to Videos".
 export default function VideoPlayer({ video, variant, from, fromTitle, healerName }) {
-  const [favorited, setFavorited] = useState(false);
   const videoId = extractId(video.platform_url);
-  const favId = String(video.id); // stable per-row identifier
+  // Saved by slug — the same key the app and user_favourites use.
+  const [favorited, toggleSaved] = useFavorite(FAVORITE_KEYS.videos, video.slug);
 
   // Guarded: a video without a slug has no page, so the card falls back to the
   // platform link rather than routing to /videos/undefined.
@@ -42,30 +42,12 @@ export default function VideoPlayer({ video, variant, from, fromTitle, healerNam
     : 'bg-white/20 backdrop-blur-md border border-white/30';
   const titleClass = isDark ? 'text-sm font-semibold text-white' : 'text-slate-900 font-semibold';
 
-  // Restore favorite state from localStorage on mount.
-  useEffect(() => {
-    try {
-      const list = JSON.parse(localStorage.getItem(FAV_KEY) || '[]');
-      setFavorited(Array.isArray(list) && list.includes(favId));
-    } catch {
-      /* localStorage unavailable — ignore */
-    }
-  }, [favId]);
-
-  // Toggle this video's id in/out of the favorites array. preventDefault +
-  // stopPropagation keep the click from triggering the iframe play button.
+  // preventDefault + stopPropagation keep the click from triggering the
+  // iframe play button.
   function toggleFavorite(e) {
     e.preventDefault();
     e.stopPropagation();
-    try {
-      const raw = JSON.parse(localStorage.getItem(FAV_KEY) || '[]');
-      const arr = Array.isArray(raw) ? raw : [];
-      const next = arr.includes(favId) ? arr.filter((id) => id !== favId) : [...arr, favId];
-      localStorage.setItem(FAV_KEY, JSON.stringify(next));
-      setFavorited(next.includes(favId));
-    } catch {
-      /* ignore persistence failure */
-    }
+    toggleSaved();
   }
 
   return (

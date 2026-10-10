@@ -30,6 +30,26 @@ export const revalidate = 3600;
 //
 // The favourites live only in the browser, so the server cannot know what the
 // visitor saved — it ships the full catalog and the client does the intersection.
+// PostgREST returns at most 1,000 rows per request, silently. With 2,269 videos
+// and 963 books (Oct 2026), a plain select('*') left more than half the videos
+// out of the catalog — a saved one never appeared here. Paged, ordered by id so
+// the pages neither overlap nor skip.
+async function selectAll(table) {
+  const PAGE = 1000;
+  const rows = [];
+  for (let from = 0; ; from += PAGE) {
+    const { data, error } = await supabase
+      .from(table)
+      .select('*')
+      .order('id', { ascending: true })
+      .range(from, from + PAGE - 1);
+    if (error) return { data: rows.length ? rows : null, error };
+    rows.push(...(data || []));
+    if (!data || data.length < PAGE) break;
+  }
+  return { data: rows, error: null };
+}
+
 export default async function LibraryPage() {
   // Saved offerings still respect the live window: a course the visitor
   // favourited months ago should drop out of their library once it has expired,
@@ -46,9 +66,9 @@ export default async function LibraryPage() {
     freeResourcesRes,
     publishersRes,
   ] = await Promise.all([
-    supabase.from('books').select('*'),
-    supabase.from('videos').select('*'),
-    supabase.from('healers').select('*'),
+    selectAll('books'),
+    selectAll('videos'),
+    selectAll('healers'),
     supabase.from('subjects').select('name, slug'),
     supabase.from('courses').select('*').eq('is_active', true).or(liveWindow),
     // No is_featured filter: that flag curates the homepage shelf. If the

@@ -1,43 +1,24 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import Link from 'next/link';
 import CardImage from './CardImage.js';
 import { backContextQuery } from '../utils/backContext.js';
-
-// Shared localStorage key holding the global array of favorited book ids.
-const FAV_BOOKS_KEY = 'favorited_books';
+import { FAVORITE_KEYS } from '../utils/favorites.js';
+import { useFavorite } from '../utils/useFavorite.js';
 
 // Oversized book cover with a hover/click synopsis popover and a persistent
 // "Want to Read" favorite toggle. Rendered card-less on the homepage canvas.
 export default function BookCard({ book, variant, from, fromTitle }) {
   const [open, setOpen] = useState(false);
-  const [wantToRead, setWantToRead] = useState(false);
+  // Saved by slug, the same as the book page's Want to Read button — until
+  // October 2026 this card saved the numeric id and the page the slug, so the
+  // two never agreed.
+  const [wantToRead, toggleSaved] = useFavorite(FAVORITE_KEYS.books, book.slug);
 
-  const favId = String(book.id);
-
-  // Restore the favorite state from the global favorited_books array on mount.
-  useEffect(() => {
-    try {
-      const list = JSON.parse(localStorage.getItem(FAV_BOOKS_KEY) || '[]');
-      setWantToRead(Array.isArray(list) && list.includes(favId));
-    } catch {
-      /* localStorage unavailable — ignore */
-    }
-  }, [favId]);
-
-  // Toggle this book's id in/out of the single favorited_books array.
   function toggleWantToRead(e) {
     e.stopPropagation();
-    try {
-      const raw = JSON.parse(localStorage.getItem(FAV_BOOKS_KEY) || '[]');
-      const arr = Array.isArray(raw) ? raw : [];
-      const next = arr.includes(favId) ? arr.filter((id) => id !== favId) : [...arr, favId];
-      localStorage.setItem(FAV_BOOKS_KEY, JSON.stringify(next));
-      setWantToRead(next.includes(favId));
-    } catch {
-      /* ignore persistence failure */
-    }
+    toggleSaved();
   }
 
   const hasCover = book.mock_cover_url && book.mock_cover_url !== 'NULL';

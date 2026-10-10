@@ -4,6 +4,12 @@ import { useEffect, useRef } from 'react';
 import { usePathname } from 'next/navigation';
 import { supabaseAuth } from '../utils/supabaseAuth.js';
 import { ensureProfile, migrateFavourites, readPendingUserType } from '../utils/onboarding.js';
+import { FAVORITES_EVENT } from '../utils/favorites.js';
+import {
+  clearSavesAfterSignOut,
+  normaliseLegacyFavourites,
+  writeThroughToggle,
+} from '../utils/favouritesSync.js';
 
 // Makes "having a session" the thing that guarantees a profile row, rather than
 // "having passed through /auth/verify".
@@ -30,6 +36,8 @@ export default function AuthSync() {
   // same SIGNED_IN-shaped events repeatedly, and without this the work would
   // repeat for as long as the tab stayed open.
   const syncedRef = useRef(new Set());
+  // The signed-in user, for writing each heart through to their account.
+  const userRef = useRef(null);
 
   const active = !(pathname === HIDDEN_PREFIX || pathname?.startsWith(`${HIDDEN_PREFIX}/`));
 
@@ -38,6 +46,20 @@ export default function AuthSync() {
 
     let cancelled = false;
 
+    // Every visitor, signed in or not: convert hearts saved as ids before
+    // October 2026 to slugs. Once per browser; a no-op after that.
+    normaliseLegacyFavourites().catch(() => {});
+
+    // Signed in, every heart is written through to the account as it is
+    // tapped. Signed out there is no one to write to and this does nothing.
+    const onFavorite = (event) => {
+      const { key, id, saved } = event.detail || {};
+      const userId = userRef.current;
+      if (!userId || !id) return;
+      writeThroughToggle(userId, key, id, saved).catch(() => {});
+    };
+    window.addEventListener(FAVORITES_EVENT, onFavorite);
+
     const sync = async (userId, email) => {
       if (!userId || cancelled || syncedRef.current.has(userId)) return;
       // Claimed before awaiting anything, so two events arriving in the same
@@ -45,10 +67,10 @@ export default function AuthSync() {
       syncedRef.current.add(userId);
 
       try {
-        // Favourites first: it is the step with something to lose, and it never
-        // deletes localStorage, so a failure here is invisible and simply tried
-        // again on the next sign-in. That retry is the second thing this
-        // listener buys us.
+        // Favourites first: it is the step with something to lose. Local saves
+        // are replaced by the account's list only after the account has taken
+        // them, so a failure here is invisible and simply tried again on the
+        // next load. That retry is the second thing this listener buys us.
         await migrateFavourites(userId);
 
         // The same recorded choice the verify page reads, and for the same
@@ -71,6 +93,8 @@ export default function AuthSync() {
 
     const { data: subscription } = supabaseAuth.auth.onAuthStateChange((event, session) => {
       if (event === 'SIGNED_OUT') {
+        clearSavesAfterSignOut(userRef.current);
+        userRef.current = null;
         // Let a later sign-in — possibly a different person on a shared
         // machine — sync again rather than being skipped as already done.
         syncedRef.current.clear();
@@ -85,6 +109,7 @@ export default function AuthSync() {
 
       const userId = session?.user?.id;
       if (!userId) return;
+      userRef.current = userId;
       const email = session?.user?.email;
 
       // Deferred out of the callback on purpose. supabase-js runs these inside
@@ -95,6 +120,7 @@ export default function AuthSync() {
 
     return () => {
       cancelled = true;
+      window.removeEventListener(FAVORITES_EVENT, onFavorite);
       subscription?.subscription?.unsubscribe();
     };
   }, [active]);

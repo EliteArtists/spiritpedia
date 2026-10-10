@@ -1,59 +1,22 @@
 'use client';
 
 import { supabaseAuth } from './supabaseAuth.js';
-import { FAVORITE_KEYS, readFavorites } from './favorites.js';
+import { syncFavouritesWithAccount } from './favouritesSync.js';
 import { USER_TYPES, getUserType } from './userType.js';
 
 // Everything that happens in the seconds after a code is accepted: move what
 // the visitor saved while anonymous onto their account, give them a profile
 // row, and work out where they should land.
 
-// localStorage key -> the content_type recorded in user_favourites.
+// Move saved items to the account, then make this browser's library the
+// account's. utils/favouritesSync.js does the work; this name stays because the
+// verify page and AuthSync both call it at the moment a session appears.
 //
-// Read from FAVORITE_KEYS rather than spelled out here, because one of them is
-// not what you would guess: videos live under the singular `favorite_videos`,
-// while everything else is `favorited_*`. Hard-coding the plural would migrate
-// every category except videos and look like it had worked.
-const FAVOURITE_SOURCES = [
-  [FAVORITE_KEYS.healers, 'healer'],
-  [FAVORITE_KEYS.publishers, 'publisher'],
-  [FAVORITE_KEYS.books, 'book'],
-  [FAVORITE_KEYS.videos, 'video'],
-  [FAVORITE_KEYS.courses, 'course'],
-  [FAVORITE_KEYS.freeResources, 'free_resource'],
-];
-
-// Move saved items to the account.
-//
-// NOTHING IS DELETED FROM localStorage, here or anywhere else. The brief asks
-// that local data survive a failed write; the simplest way to guarantee that is
-// never to remove it at all. The library still reads from localStorage, so a
-// partial or failed migration costs the visitor nothing — they do not notice,
-// and the next sign-in tries again. Clearing it becomes safe only once the
-// library reads from Supabase instead, which is a later step.
-//
-// Upserted on (user_id, content_type, content_slug), so signing in on a second
-// device merges that device's saves rather than duplicating the first's.
+// Nothing local is replaced unless the account accepted this browser's saves,
+// so a failure costs the visitor nothing and the next sign-in tries again.
 export async function migrateFavourites(userId) {
-  if (!userId) return { attempted: 0, saved: 0, error: null };
-
-  const rows = [];
-  for (const [key, contentType] of FAVOURITE_SOURCES) {
-    for (const id of readFavorites(key)) {
-      const value = String(id).trim();
-      if (value) rows.push({ user_id: userId, content_type: contentType, content_slug: value });
-    }
-  }
-
-  if (rows.length === 0) return { attempted: 0, saved: 0, error: null };
-
-  const { error } = await supabaseAuth
-    .from('user_favourites')
-    .upsert(rows, { onConflict: 'user_id,content_type,content_slug', ignoreDuplicates: true });
-
-  // A failure is reported, not thrown. Losing the migration must never cost
-  // someone the account they just created — localStorage still holds it all.
-  return { attempted: rows.length, saved: error ? 0 : rows.length, error: error || null };
+  if (!userId) return;
+  await syncFavouritesWithAccount(userId);
 }
 
 // Ask the server to send a welcome. The API key is server-only, so the browser

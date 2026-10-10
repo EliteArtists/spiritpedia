@@ -86,9 +86,9 @@ function VerifyForm() {
     // is the only thing that knows the person chose practitioner.
     const userType = await readPendingUserType(user?.email || email, { consume: true });
 
-    // Favourites first — it is the step with something to lose. It never
-    // deletes localStorage, so a failure here is invisible and retried at the
-    // next sign-in.
+    // Favourites first — it is the step with something to lose. Local saves
+    // are replaced by the account's list only once the account has taken them,
+    // so a failure here is invisible and retried at the next sign-in.
     await migrateFavourites(user?.id);
     await ensureProfile(user?.id, userType);
 
