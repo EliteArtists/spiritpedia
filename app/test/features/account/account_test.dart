@@ -73,6 +73,19 @@ void main() {
   }
 
   group('signing in', () {
+    testWidgets('the email field carries no iOS AutoFill hint', (tester) async {
+      // Regression guard: AutofillHints.email made iOS stop accepting typing
+      // after the first character (see account_screen.dart).
+      await pumpAccount(tester);
+      final field = tester.widget<TextField>(
+        find.byKey(const ValueKey('email-field')),
+      );
+      expect(field.autofillHints, anyOf(isNull, isEmpty));
+      expect(field.keyboardType, TextInputType.emailAddress);
+      expect(field.autocorrect, isFalse);
+      expect(field.enableSuggestions, isFalse);
+    });
+
     testWidgets('email, then the 6-digit code; a wrong code says so', (
       tester,
     ) async {

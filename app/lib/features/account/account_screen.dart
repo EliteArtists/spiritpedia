@@ -149,8 +149,13 @@ class _SignInFormState extends ConsumerState<SignInForm> {
             key: const ValueKey('email-field'),
             controller: _email,
             keyboardType: TextInputType.emailAddress,
-            autofillHints: const [AutofillHints.email],
+            // NO autofillHints here. With AutofillHints.email, iOS AutoFill
+            // offered suggestions on this field and, in testing on the live
+            // build, stopped turning key presses into text after the first
+            // character (the log showed ~37 presses received, 2 inserted).
+            // A plain email field, suggestions off, types normally.
             autocorrect: false,
+            enableSuggestions: false,
             textInputAction: TextInputAction.send,
             onSubmitted: (_) => _send(),
             decoration: _fieldDecoration('Email address'),
