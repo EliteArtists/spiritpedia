@@ -3,7 +3,7 @@ description: "Spiritpedia — discover spiritual teachers, books and practices, 
 publish_to: 'none'
 
 # Store version + build number. Bump the build number (+N) for every upload.
-version: 0.1.0+1
+version: 1.0.0+1
 
 # PINNED. Builds must use exactly this Flutter (and its bundled Dart), so the
 # app builds the same way on any machine. Upgrading Flutter is a deliberate,
@@ -38,6 +38,7 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^6.0.0
+  flutter_launcher_icons: ^0.14.4
 
 flutter:
   uses-material-design: true

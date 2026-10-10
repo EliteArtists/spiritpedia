@@ -1,0 +1,15 @@
+# App icons — `dart run flutter_launcher_icons` after changing the source.
+#
+# Source: Spiritpedia_App_Icon_1024.png (1024×1024, full-bleed), flattened to
+# assets/icon/app_icon.png with no alpha channel (App Store Connect rejects
+# icons with one). The Android adaptive foreground is the same artwork: the
+# tool insets it 16% on each side, which puts it inside the safe zone every
+# launcher mask keeps, on the artwork's own navy (#000B26).
+flutter_launcher_icons:
+  image_path: "assets/icon/app_icon.png"
+  ios: true
+  remove_alpha_ios: true
+  android: true
+  min_sdk_android: 21
+  adaptive_icon_background: "#000B26"
+  adaptive_icon_foreground: "assets/icon/app_icon.png"
