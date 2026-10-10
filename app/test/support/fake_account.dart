@@ -109,4 +109,42 @@ class FakeAccountService implements AccountService {
     calls.add('removeFavourite:${row.contentType}:${row.slug}');
     favouriteRows[userId]?.remove(row);
   }
+
+  final pushTokens = <String, String>{}; // token → user id
+  final prefsByUser = <String, NotificationPrefs>{};
+  int welcomeCalls = 0;
+
+  @override
+  Future<void> registerPushToken(
+    String token, {
+    required String platform,
+  }) async {
+    calls.add('registerPushToken:$platform');
+    pushTokens[token] = _current!.id;
+  }
+
+  @override
+  Future<void> removePushToken(String token) async {
+    calls.add('removePushToken');
+    if (pushTokens[token] == _current?.id) pushTokens.remove(token);
+  }
+
+  @override
+  Future<NotificationPrefs> notificationPrefs(String userId) async =>
+      prefsByUser[userId] ?? const NotificationPrefs();
+
+  @override
+  Future<void> saveNotificationPrefs(
+    String userId,
+    NotificationPrefs prefs,
+  ) async {
+    calls.add('savePrefs:${prefs.general}:${prefs.iamAffirmations}');
+    prefsByUser[userId] = prefs;
+  }
+
+  @override
+  Future<void> sendWelcomePush() async {
+    calls.add('sendWelcomePush');
+    welcomeCalls++;
+  }
 }

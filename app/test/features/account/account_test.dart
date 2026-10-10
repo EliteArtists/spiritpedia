@@ -7,6 +7,7 @@ import 'package:spiritpedia/features/account/account_providers.dart';
 import 'package:spiritpedia/features/account/account_screen.dart';
 import 'package:spiritpedia/features/account/account_service.dart';
 import 'package:spiritpedia/features/library/saved_items.dart';
+import 'package:spiritpedia/features/notifications/notifications_controller.dart';
 import 'package:spiritpedia/theme/theme.dart';
 
 import '../../support/fake_account.dart';
@@ -45,6 +46,7 @@ void main() {
       overrides: [
         accountServiceProvider.overrideWithValue(service),
         savedStoreProvider.overrideWithValue(store),
+        pushDeviceStoreProvider.overrideWithValue(MemoryPushDeviceStore()),
         contentRepositoryProvider.overrideWithValue(FakeContentRepository()),
       ],
     );

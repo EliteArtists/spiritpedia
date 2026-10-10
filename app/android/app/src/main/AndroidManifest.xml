@@ -2,6 +2,9 @@
     <!-- Release builds need this to reach Supabase and the website's API.
          Flutter's template only grants it to debug and profile builds. -->
     <uses-permission android:name="android.permission.INTERNET"/>
+    <!-- Android 13+: notifications need the person's permission, asked only
+         after the in-app "Would you like notifications?" screen. -->
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
     <application
         android:label="Spiritpedia"
         android:name="${applicationName}"
@@ -27,6 +30,24 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
+        <!-- Push (Firebase Cloud Messaging only). No token is created until the
+             person says yes in the app (auto-init off); Analytics is never
+             included, and is switched off here as a belt-and-braces. -->
+        <meta-data
+            android:name="firebase_messaging_auto_init_enabled"
+            android:value="false"/>
+        <meta-data
+            android:name="firebase_analytics_collection_deactivated"
+            android:value="true"/>
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_channel_id"
+            android:value="general"/>
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/ic_notification"/>
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/notification_color"/>
         <!-- Don't delete the meta-data below.
              This is used by the Flutter tool to generate GeneratedPluginRegistrant.java -->
         <meta-data

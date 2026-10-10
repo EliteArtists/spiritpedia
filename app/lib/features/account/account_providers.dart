@@ -5,6 +5,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../core/config.dart';
 import '../../core/supabase_providers.dart';
 import '../library/saved_items.dart';
+import '../notifications/notifications_controller.dart';
 import 'account_service.dart';
 
 final accountServiceProvider = Provider<AccountService>(
@@ -90,6 +91,9 @@ class AccountController extends Notifier<AccountState> {
       _service.verifyCode(email, code);
 
   Future<void> signOut() async {
+    // Notifications first, while still signed in: row-level security lets
+    // only the owner remove their device token.
+    await ref.read(notificationsProvider.notifier).forgetThisPhone();
     await ref
         .read(savedItemsProvider.notifier)
         .clearAfterSignOut(state.user?.id);
@@ -100,6 +104,11 @@ class AccountController extends Notifier<AccountState> {
   /// on the phone is cleared either.
   Future<void> deleteAccount() async {
     await _service.deleteAccount();
+    // The server removed the device token with the account; this clears it
+    // from Firebase and the phone.
+    await ref
+        .read(notificationsProvider.notifier)
+        .forgetThisPhone(fromAccount: false);
     await ref.read(savedItemsProvider.notifier).clearAll();
     try {
       await _service.signOut();

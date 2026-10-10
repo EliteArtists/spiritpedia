@@ -21,6 +21,15 @@ class AccountProfile {
   bool get isPractitioner => userType == 'practitioner';
 }
 
+/// Which kinds of notification the account wants (notification_preferences).
+/// No row = the defaults: general on, IAM affirmations off.
+class NotificationPrefs {
+  const NotificationPrefs({this.general = true, this.iamAffirmations = false});
+
+  final bool general;
+  final bool iamAffirmations;
+}
+
 /// One saved item as user_favourites holds it.
 typedef FavouriteRow = ({String contentType, String slug});
 
@@ -63,6 +72,20 @@ abstract class AccountService {
   Future<List<FavouriteRow>> favourites(String userId);
   Future<void> addFavourites(String userId, List<FavouriteRow> rows);
   Future<void> removeFavourite(String userId, FavouriteRow row);
+
+  /// This install's notification token, for the signed-in account
+  /// (register_push_token — moves it from another account if needed).
+  Future<void> registerPushToken(String token, {required String platform});
+
+  /// Forget this install's token (turning notifications off, signing out).
+  Future<void> removePushToken(String token);
+
+  Future<NotificationPrefs> notificationPrefs(String userId);
+  Future<void> saveNotificationPrefs(String userId, NotificationPrefs prefs);
+
+  /// The welcome notification (POST /api/push/welcome) — once ever per
+  /// account; the server decides, so calling it again does nothing.
+  Future<void> sendWelcomePush();
 }
 
 class AccountError implements Exception {
@@ -246,6 +269,50 @@ class SupabaseAccountService implements AccountService {
           onConflict: 'user_id,content_type,content_slug',
           ignoreDuplicates: true,
         );
+  }
+
+  @override
+  Future<void> registerPushToken(String token, {required String platform}) =>
+      _db.rpc(
+        'register_push_token',
+        params: {'p_token': token, 'p_platform': platform},
+      );
+
+  @override
+  Future<void> removePushToken(String token) async {
+    await _db.from('push_tokens').delete().eq('token', token);
+  }
+
+  @override
+  Future<NotificationPrefs> notificationPrefs(String userId) async {
+    final row = await _db
+        .from('notification_preferences')
+        .select('general, iam_affirmations')
+        .eq('user_id', userId)
+        .maybeSingle();
+    if (row == null) return const NotificationPrefs();
+    return NotificationPrefs(
+      general: row['general'] as bool? ?? true,
+      iamAffirmations: row['iam_affirmations'] as bool? ?? false,
+    );
+  }
+
+  @override
+  Future<void> saveNotificationPrefs(
+    String userId,
+    NotificationPrefs prefs,
+  ) async {
+    await _db.from('notification_preferences').upsert({
+      'user_id': userId,
+      'general': prefs.general,
+      'iam_affirmations': prefs.iamAffirmations,
+      'updated_at': DateTime.now().toUtc().toIso8601String(),
+    });
+  }
+
+  @override
+  Future<void> sendWelcomePush() async {
+    await _post('/api/push/welcome');
   }
 
   @override

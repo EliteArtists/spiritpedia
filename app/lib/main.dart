@@ -8,7 +8,10 @@ import 'package:supabase_flutter/supabase_flutter.dart';
 import 'app.dart';
 import 'core/auth/secure_session_storage.dart';
 import 'core/config.dart';
+import 'core/firebase/firebase_setup.dart';
 import 'core/retry.dart';
+import 'features/notifications/notifications_controller.dart';
+import 'features/notifications/push_messaging.dart';
 import 'theme/colors.dart';
 
 Future<void> main() async {
@@ -48,7 +51,21 @@ Future<void> main() async {
     ),
   );
 
-  runApp(const ProviderScope(retry: spiritpediaRetry, child: SpiritpediaApp()));
+  // Push notifications (Firebase Cloud Messaging only). Starting Firebase
+  // creates no token — that waits for the person to say yes in Account. If
+  // this build has no Firebase config, push is simply unavailable.
+  final pushReady = await initFirebase();
+
+  runApp(
+    ProviderScope(
+      retry: spiritpediaRetry,
+      overrides: [
+        if (pushReady)
+          pushMessagingProvider.overrideWithValue(FirebasePushMessaging()),
+      ],
+      child: const SpiritpediaApp(),
+    ),
+  );
 }
 
 /// Shown instead of crashing when the app was started without its config file.

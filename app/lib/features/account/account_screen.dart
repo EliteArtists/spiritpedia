@@ -5,6 +5,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../core/config.dart';
 import '../../core/links/open_link.dart';
 import '../../theme/colors.dart';
+import '../notifications/notifications_section.dart';
 import 'account_providers.dart';
 import 'account_service.dart';
 
@@ -343,6 +344,8 @@ class _SignedInState extends ConsumerState<_SignedIn> {
             height: 1.5,
           ),
         ),
+        const SizedBox(height: 20),
+        const NotificationsSection(),
         if (profile?.isPractitioner == true) ...[
           const SizedBox(height: 18),
           _Note(
