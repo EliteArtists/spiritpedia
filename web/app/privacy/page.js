@@ -7,8 +7,8 @@ import CookieSettingsLink from '@/components/CookieSettingsLink';
 // site handles data — a new provider, search logging, a cookie, the YouTube
 // embed — change this page in the same commit.
 // Its own date, separate from the Terms (LAST_UPDATED in LegalPage), because
-// the two now change independently. Updated for self-serve account deletion
-// and synced saved items.
+// the two now change independently. Updated for self-serve account deletion,
+// synced saved items, and app notifications (Firebase Cloud Messaging).
 const PRIVACY_UPDATED = '10 October 2026';
 
 export const metadata = buildMetadata({
@@ -83,6 +83,24 @@ export default function PrivacyPage() {
           <li>Basic sign-in records (for example, when you last signed in).</li>
         </List>
 
+        <Sub>If you turn on notifications in the app</Sub>
+        <List>
+          <li>
+            Only if you choose to — the app asks first, and you need to be signed in. We then store
+            a notification token (an address your phone gives us so a notification can reach it),
+            whether it is an iPhone or Android phone, and the app version, linked to your account.
+          </li>
+          <li>
+            Which kinds of notification you want (for example, general updates). You can change
+            this in the app at any time.
+          </li>
+          <li>
+            Notifications are delivered through Google Firebase Cloud Messaging, which handles the
+            token and the message to get it to your phone. We don&apos;t use any other Firebase
+            service, and nothing is used for analytics or advertising.
+          </li>
+        </List>
+
         <Sub>When you apply or are listed as a practitioner</Sub>
         <List>
           <li>
@@ -120,6 +138,7 @@ export default function PrivacyPage() {
               'Performing our agreement with you',
             ],
             ['Analytics to understand how Spiritpedia is used', 'Your consent, through the cookie banner'],
+            ['Send app notifications you have chosen to receive', 'Your consent, which you can withdraw at any time'],
             [
               'Feature established teachers and invite them to claim their profile',
               'Our legitimate interest in building a useful directory — balanced against your rights, and you can object at any time',
@@ -158,7 +177,8 @@ export default function PrivacyPage() {
           </li>
           <li>
             <strong className="text-white">Google</strong> — Google Analytics, only with your
-            consent, and Google Workspace, which holds the emails you send us.
+            consent; Google Workspace, which holds the emails you send us; and, if you turn on
+            notifications in the app, Firebase Cloud Messaging, which delivers them.
           </li>
         </List>
         <p>
@@ -197,6 +217,11 @@ export default function PrivacyPage() {
             effect immediately; or ask us to do it for you.
           </li>
           <li>
+            Notification tokens — until you turn notifications off, sign out of the app, delete your
+            account, or the token stops working (for example, after the app is removed). Your
+            notification choices are kept with your account until you delete it.
+          </li>
+          <li>
             If you deleted an account linked to a public teacher profile, the profile stays on
             Spiritpedia, unclaimed. We remove the contact details and photos you added to it, and
             keep only a note that the account was closed and which profile it was linked to — not
@@ -227,7 +252,7 @@ export default function PrivacyPage() {
           </li>
           <li>restrict or object to how we use it — including objecting to being featured as a teacher</li>
           <li>send your data to you or another service in a portable format</li>
-          <li>withdraw consent, for example to analytics cookies, at any time</li>
+          <li>withdraw consent, for example to analytics cookies or app notifications, at any time</li>
         </List>
         <p>
           Email <Mail />. We&apos;ll respond within one month. If you&apos;re a featured teacher and

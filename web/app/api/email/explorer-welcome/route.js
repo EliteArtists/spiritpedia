@@ -2,6 +2,7 @@ import { NextResponse } from 'next/server';
 import { createClient } from '@supabase/supabase-js';
 import { adminClient } from '@/utils/supabaseAdmin';
 import { firstNameFrom, sendExplorerWelcome } from '@/utils/email';
+import { sendWelcomePush } from '@/utils/push';
 
 export const dynamic = 'force-dynamic';
 
@@ -57,5 +58,10 @@ export async function POST(request) {
 
   // 200 either way. The caller is not waiting and has nothing to do with a
   // failure; the log is where a lost email is found.
-  return NextResponse.json({ ok: true, sent: result.sent });
+  // The welcome notification goes alongside it — once ever per account, and
+  // only if a device has already allowed notifications (usually it has not
+  // yet; the app then sends it at the first opt-in). Never holds up the email.
+  const push = await sendWelcomePush(supabase, user.id).catch(() => ({ status: 'failed' }));
+
+  return NextResponse.json({ ok: true, sent: result.sent, push: push.status });
 }
