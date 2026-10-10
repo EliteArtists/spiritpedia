@@ -22,16 +22,32 @@ void main() {
   final enabled = _email.isNotEmpty && _code.isNotEmpty;
 
   test('sign in, profile, saved items, delete — against dev', () async {
-    expect(Uri.parse(_url).host, 'khtpbnofcavoerorajni.supabase.co', reason: 'dev only');
-    final db = SupabaseClient(_url, _anon, authOptions: const AuthClientOptions(autoRefreshToken: false));
+    expect(
+      Uri.parse(_url).host,
+      'khtpbnofcavoerorajni.supabase.co',
+      reason: 'dev only',
+    );
+    final db = SupabaseClient(
+      _url,
+      _anon,
+      authOptions: const AuthClientOptions(autoRefreshToken: false),
+    );
     final service = SupabaseAccountService(db, apiBaseUrl: _api);
 
     await service.verifyCode(_email, _code);
     final user = service.currentUser!;
     expect(user.email, cleanEmail(_email));
 
-    expect(await service.ensureProfile(user.id), isTrue, reason: 'new account → created');
-    expect(await service.ensureProfile(user.id), isFalse, reason: 'second call → left alone');
+    expect(
+      await service.ensureProfile(user.id),
+      isTrue,
+      reason: 'new account → created',
+    );
+    expect(
+      await service.ensureProfile(user.id),
+      isFalse,
+      reason: 'second call → left alone',
+    );
     expect((await service.profile(user.id))?.userType, 'explorer');
 
     await service.addFavourites(user.id, [
@@ -39,16 +55,22 @@ void main() {
       (contentType: 'book_read', slug: 'brain-states'),
       (contentType: 'healer', slug: 'eckhart-tolle'),
     ]);
-    await service.addFavourites(user.id, [(contentType: 'book', slug: 'brain-states')]); // duplicate: ignored
+    await service.addFavourites(user.id, [
+      (contentType: 'book', slug: 'brain-states'),
+    ]); // duplicate: ignored
     expect((await service.favourites(user.id)).toSet(), {
       (contentType: 'book', slug: 'brain-states'),
       (contentType: 'book_read', slug: 'brain-states'),
       (contentType: 'healer', slug: 'eckhart-tolle'),
     });
-    await service.removeFavourite(user.id, (contentType: 'healer', slug: 'eckhart-tolle'));
+    await service.removeFavourite(user.id, (
+      contentType: 'healer',
+      slug: 'eckhart-tolle',
+    ));
     expect(await service.favourites(user.id), hasLength(2));
 
-    await service.sendWelcome(); // local next dev has no email key: nothing is sent
+    await service
+        .sendWelcome(); // local next dev has no email key: nothing is sent
     await service.deleteAccount();
 
     // The old session can no longer read anything of the account.
