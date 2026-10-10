@@ -18,8 +18,14 @@ class AppConfig {
     'SUPABASE_ANON_KEY',
   );
 
-  /// Where the Next.js API routes live. Every write goes through these.
+  /// Where the Next.js API routes live: account deletion and emails. (The
+  /// person's own profile and saved items are written directly, under RLS.)
   static const String apiBaseUrl = String.fromEnvironment('API_BASE_URL');
+
+  /// The public website, for pages people read — Privacy, Terms, the affiliate
+  /// disclosure. Always production, even in a dev build, whose API_BASE_URL
+  /// points at a local `next dev`.
+  static const String siteUrl = 'https://www.spiritpedia.co';
 
   static bool get isProduction => env == 'prod';
 

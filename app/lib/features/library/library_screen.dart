@@ -6,6 +6,7 @@ import '../../data/providers.dart';
 import '../../shared/widgets/cards.dart';
 import '../../shared/widgets/shelf.dart';
 import '../../theme/colors.dart';
+import '../account/account_providers.dart';
 import 'saved_items.dart';
 
 /// What is saved, as rows, in the order it was saved (newest first). A saved
@@ -87,8 +88,7 @@ final libraryProvider = FutureProvider<LibraryContent>((ref) async {
   );
 });
 
-/// My Library — what this device has saved. Signing in to keep it across
-/// devices comes in Phase 2.
+/// My Library — what is saved, on this phone or (signed in) with the account.
 class LibraryScreen extends ConsumerWidget {
   const LibraryScreen({super.key});
 
@@ -97,6 +97,7 @@ class LibraryScreen extends ConsumerWidget {
     final library = ref.watch(libraryProvider);
     final directory = ref.watch(healerDirectoryProvider).value;
     final content = library.value;
+    final signedIn = ref.watch(accountProvider).signedIn;
 
     return Scaffold(
       body: SafeArea(
@@ -112,12 +113,17 @@ class LibraryScreen extends ConsumerWidget {
                 ),
               ),
             ),
-            const SliverToBoxAdapter(
+            SliverToBoxAdapter(
               child: Padding(
-                padding: EdgeInsets.fromLTRB(20, 0, 20, 8),
+                padding: const EdgeInsets.fromLTRB(20, 0, 20, 8),
                 child: Text(
-                  'Saved on this device.',
-                  style: TextStyle(fontSize: 13.5, color: SpColors.textFaint),
+                  signedIn
+                      ? 'Kept with your account — the same on spiritpedia.co.'
+                      : 'Saved on this phone. Sign in under Account to keep them on every device.',
+                  style: const TextStyle(
+                    fontSize: 13.5,
+                    color: SpColors.textFaint,
+                  ),
                 ),
               ),
             ),

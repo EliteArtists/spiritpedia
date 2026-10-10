@@ -6,6 +6,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 
 import 'app.dart';
+import 'core/auth/secure_session_storage.dart';
 import 'core/config.dart';
 import 'core/retry.dart';
 import 'theme/colors.dart';
@@ -35,9 +36,16 @@ Future<void> main() async {
 
   // supabase_flutter 2.18 calls the public key `publishableKey` (formerly
   // anonKey). It is the same anon key the website ships — never a secret key.
+  //
+  // The session is kept in secure storage (lib/core/auth), and sign-in is the
+  // emailed 6-digit code — the app never handles a sign-in link.
   await Supabase.initialize(
     url: AppConfig.supabaseUrl,
     publishableKey: AppConfig.supabaseAnonKey,
+    authOptions: FlutterAuthClientOptions(
+      localStorage: SecureSessionStorage(),
+      detectSessionInUri: false,
+    ),
   );
 
   runApp(const ProviderScope(retry: spiritpediaRetry, child: SpiritpediaApp()));

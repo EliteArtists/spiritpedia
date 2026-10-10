@@ -4,12 +4,15 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:spiritpedia/app.dart';
 import 'package:spiritpedia/core/retry.dart';
 import 'package:spiritpedia/data/providers.dart';
+import 'package:spiritpedia/features/account/account_providers.dart';
 
+import 'support/fake_account.dart';
 import 'support/fake_content.dart';
 
 Widget _app({bool fail = false}) => ProviderScope(
   retry: spiritpediaRetry,
   overrides: [
+    accountServiceProvider.overrideWithValue(FakeAccountService()),
     contentRepositoryProvider.overrideWithValue(
       FakeContentRepository(fail: fail),
     ),

@@ -170,7 +170,7 @@ class PurchaseLinks extends StatelessWidget {
             child: GestureDetector(
               onTap: () => openExternal(
                 context,
-                '${AppConfig.apiBaseUrl.isEmpty ? 'https://www.spiritpedia.co' : AppConfig.apiBaseUrl}/affiliate-disclosure',
+                '${AppConfig.siteUrl}/affiliate-disclosure',
               ),
               child: const Text(
                 amazonDisclosure,

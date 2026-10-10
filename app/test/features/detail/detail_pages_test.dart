@@ -11,7 +11,9 @@ import 'package:spiritpedia/features/detail/video_screen.dart';
 import 'package:spiritpedia/features/library/library_screen.dart';
 import 'package:spiritpedia/features/library/saved_items.dart';
 import 'package:spiritpedia/theme/theme.dart';
+import 'package:spiritpedia/features/account/account_providers.dart';
 
+import '../../support/fake_account.dart';
 import '../../support/fake_content.dart';
 
 const _tags = {'AMAZON_TAG_US': 'us-tag-20'};
@@ -43,6 +45,7 @@ void main() {
       ProviderScope(
         retry: spiritpediaRetry,
         overrides: [
+          accountServiceProvider.overrideWithValue(FakeAccountService()),
           contentRepositoryProvider.overrideWithValue(FakeContentRepository()),
           savedStoreProvider.overrideWithValue(saved),
           videoPlayerBuilderProvider.overrideWithValue(

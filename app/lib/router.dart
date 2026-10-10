@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
+import 'features/account/account_screen.dart';
 import 'features/detail/book_screen.dart';
 import 'features/detail/offering_screen.dart';
 import 'features/detail/publisher_screen.dart';
@@ -12,7 +13,6 @@ import 'features/search/search_screen.dart';
 import 'features/shell/app_shell.dart';
 import 'features/subject/subject_screen.dart';
 import 'features/videos/videos_screen.dart';
-import 'shared/widgets/placeholder_screen.dart';
 
 final _rootKey = GlobalKey<NavigatorState>();
 
@@ -59,11 +59,7 @@ GoRouter buildRouter() => GoRouter(
           routes: [
             GoRoute(
               path: '/account',
-              builder: (context, state) => const PlaceholderScreen(
-                title: 'Account',
-                icon: Icons.person_outline,
-                comingIn: 'Signing in with an emailed code arrives in Phase 2.',
-              ),
+              builder: (context, state) => const AccountScreen(),
             ),
           ],
         ),

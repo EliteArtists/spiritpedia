@@ -13,7 +13,9 @@ import 'package:spiritpedia/features/search/emotion_search_controller.dart';
 import 'package:spiritpedia/features/search/search_repository.dart';
 import 'package:spiritpedia/features/search/search_screen.dart';
 import 'package:spiritpedia/theme/theme.dart';
+import 'package:spiritpedia/features/account/account_providers.dart';
 
+import '../../support/fake_account.dart';
 import '../../support/fake_content.dart';
 
 final _json = File('../web/shared/emotion-safety.json').readAsStringSync();
@@ -191,6 +193,7 @@ void main() {
           overrides: [
             emotionSafetyProvider.overrideWithValue(AsyncData(_safety)),
             searchRepositoryProvider.overrideWithValue(repo),
+            accountServiceProvider.overrideWithValue(FakeAccountService()),
             contentRepositoryProvider.overrideWithValue(
               FakeContentRepository(),
             ),
