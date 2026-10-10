@@ -28,6 +28,9 @@ abstract class IntroPrefs {
 
   /// The full intro has been seen; [off] also switches off the short one.
   Future<void> markSeen({required bool off});
+
+  /// As if the app were new: the next intro is the full one (debug builds).
+  Future<void> reset();
 }
 
 class PreferencesIntroPrefs implements IntroPrefs {
@@ -54,6 +57,14 @@ class PreferencesIntroPrefs implements IntroPrefs {
       if (off) await _prefs.setBool(_off, true);
     } catch (_) {}
   }
+
+  @override
+  Future<void> reset() async {
+    try {
+      await _prefs.remove(_seen);
+      await _prefs.remove(_off);
+    } catch (_) {}
+  }
 }
 
 class MemoryIntroPrefs implements IntroPrefs {
@@ -67,11 +78,33 @@ class MemoryIntroPrefs implements IntroPrefs {
   @override
   Future<void> markSeen({required bool off}) async =>
       value = off ? IntroKind.none : IntroKind.short;
+
+  @override
+  Future<void> reset() async => value = IntroKind.full;
 }
 
 final introPrefsProvider = Provider<IntroPrefs>(
   (ref) => PreferencesIntroPrefs(),
 );
+
+/// Bumped to play the intro again without restarting the app — the debug-only
+/// "Replay intro" in Account. The app keys the intro on it, so a bump builds
+/// a fresh one.
+class IntroReplay extends Notifier<int> {
+  @override
+  int build() => 0;
+
+  void bump() => state++;
+}
+
+final introReplayProvider = NotifierProvider<IntroReplay, int>(IntroReplay.new);
+
+/// Everything a first launch shows, shown again: the intro now (and, once
+/// they exist, the onboarding and the tier tips). Debug builds only.
+Future<void> replayFirstLaunch(WidgetRef ref) async {
+  await ref.read(introPrefsProvider).reset();
+  ref.read(introReplayProvider.notifier).bump();
+}
 
 enum _Phase { waiting, greeting, flying, callout, done }
 

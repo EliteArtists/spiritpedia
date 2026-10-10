@@ -92,7 +92,10 @@ class _SpiritpediaAppState extends ConsumerState<SpiritpediaApp> {
       // screen to any other.
       builder: (context, child) => StarLayer(
         child: widget.playIntro
-            ? IntroOverlay(child: child ?? const SizedBox.shrink())
+            ? IntroOverlay(
+                key: ValueKey(ref.watch(introReplayProvider)),
+                child: child ?? const SizedBox.shrink(),
+              )
             : child ?? const SizedBox.shrink(),
       ),
     );

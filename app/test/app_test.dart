@@ -217,4 +217,12 @@ void main() {
       ); // 7 shelves at most
     },
   );
+
+  testWidgets('debug builds: Account offers "Replay intro"', (tester) async {
+    await start(tester);
+    await tester.tap(find.byTooltip('Account'));
+    await tester.pumpAndSettle();
+    expect(find.text('Replay intro'), findsOneWidget);
+    expect(find.text('DEBUG BUILD ONLY'), findsOneWidget);
+  });
 }

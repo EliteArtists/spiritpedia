@@ -150,6 +150,45 @@ void main() {
     });
   });
 
+  testWidgets('"Replay intro" plays the first launch again, even when off', (
+    tester,
+  ) async {
+    final prefs = MemoryIntroPrefs(IntroKind.none);
+    await tester.pumpWidget(
+      ProviderScope(
+        overrides: [introPrefsProvider.overrideWithValue(prefs)],
+        child: MaterialApp(
+          builder: (context, child) => StarLayer(
+            child: Consumer(
+              builder: (context, ref, _) => IntroOverlay(
+                key: ValueKey(ref.watch(introReplayProvider)),
+                removeNativeSplash: false,
+                child: child!,
+              ),
+            ),
+          ),
+          home: Scaffold(
+            body: Consumer(
+              builder: (context, ref, _) => TextButton(
+                onPressed: () => replayFirstLaunch(ref),
+                child: const Text('Replay intro'),
+              ),
+            ),
+          ),
+        ),
+      ),
+    );
+    await _letStarDecode(tester);
+    expect(_skip, findsNothing);
+
+    await tester.tap(find.text('Replay intro'));
+    await tester.pump();
+    await _letStarDecode(tester);
+    await tester.pump(const Duration(milliseconds: 1500));
+    expect(find.text(IntroOverlay.greeting), findsOneWidget);
+    expect(prefs.value, IntroKind.full);
+  });
+
   test('starts at the launch screen size: 480 px at 4x = 120 pt', () {
     expect(IntroOverlay.startStarWidth, 120);
   });

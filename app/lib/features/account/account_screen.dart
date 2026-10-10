@@ -1,13 +1,16 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:go_router/go_router.dart';
 
 import '../../core/config.dart';
 import '../../core/links/open_link.dart';
 import '../../theme/colors.dart';
 import '../detail/detail_widgets.dart';
-import '../star/star_layer.dart';
+import '../intro/intro_overlay.dart';
 import '../notifications/notifications_section.dart';
+import '../star/star_layer.dart';
 import 'account_providers.dart';
 import 'account_service.dart';
 
@@ -44,6 +47,8 @@ class AccountScreen extends ConsumerWidget {
               const SignInForm(),
             const SizedBox(height: 36),
             const _Links(),
+            // Never in a release build — TestFlight and the App Store.
+            if (kDebugMode) const _DebugTools(),
           ],
         ),
       ),
@@ -576,6 +581,59 @@ class _DeleteAccountState extends ConsumerState<_DeleteAccount> {
             ),
           ],
         ],
+      ),
+    );
+  }
+}
+
+// ── Debug builds only ────────────────────────────────────────────────────────
+
+/// Tools for checking first-launch screens without reinstalling. Compiled
+/// out of release builds: kDebugMode is a constant false there.
+class _DebugTools extends ConsumerWidget {
+  const _DebugTools();
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    return Padding(
+      padding: const EdgeInsets.only(top: 28),
+      child: Container(
+        padding: const EdgeInsets.fromLTRB(16, 12, 16, 12),
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(14),
+          border: Border.all(color: const Color(0x66F59E0B)),
+        ),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            const Text(
+              'DEBUG BUILD ONLY',
+              style: TextStyle(
+                fontSize: 11,
+                fontWeight: FontWeight.w700,
+                letterSpacing: 1,
+                color: Color(0xFFF59E0B),
+              ),
+            ),
+            const SizedBox(height: 6),
+            Align(
+              alignment: Alignment.centerLeft,
+              child: OutlinedButton.icon(
+                onPressed: () async {
+                  GoRouter.of(context).go('/');
+                  await replayFirstLaunch(ref);
+                },
+                icon: const Icon(Icons.replay, size: 18),
+                label: const Text('Replay intro'),
+                style: OutlinedButton.styleFrom(
+                  foregroundColor: SpColors.text,
+                  side: const BorderSide(color: SpColors.border),
+                  shape: const StadiumBorder(),
+                ),
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }
