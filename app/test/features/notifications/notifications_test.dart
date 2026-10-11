@@ -158,6 +158,56 @@ void main() {
     expect(account.prefsByUser[_userId]?.general, isTrue);
   });
 
+  test('turning on waits for the iPhone\'s Apple token before asking for '
+      'one (TestFlight build 4/5 asked at once, and failed)', () async {
+    account.restoreSession(_email);
+    final c = container();
+    await settle();
+    expect(await c.read(notificationsProvider.notifier).turnOn(), isTrue);
+    expect(push.tokenRequests, [true]);
+    expect(account.pushTokens, hasLength(1));
+  });
+
+  test(
+    'if Apple\'s token never comes: a clear message, nothing saved',
+    () async {
+      account.restoreSession(_email);
+      push.appleTokenNeverCame = true;
+      final c = container();
+      await settle();
+      expect(await c.read(notificationsProvider.notifier).turnOn(), isFalse);
+      expect(
+        c.read(notificationsProvider).error,
+        contains('hasn’t connected to the notification service'),
+      );
+      expect(account.pushTokens, isEmpty);
+      expect(device.value, isFalse);
+      expect(account.calls, isNot(contains('sendWelcomePush')));
+    },
+  );
+
+  group('waiting for Apple\'s token', () {
+    test('returns it as soon as it arrives', () async {
+      var asks = 0;
+      final token = await waitForApnsToken(
+        () async => ++asks < 3 ? null : 'apns',
+        patience: const Duration(seconds: 2),
+        every: const Duration(milliseconds: 5),
+      );
+      expect(token, 'apns');
+      expect(asks, 3);
+    });
+
+    test('gives up after its patience', () async {
+      final token = await waitForApnsToken(
+        () async => null,
+        patience: const Duration(milliseconds: 40),
+        every: const Duration(milliseconds: 5),
+      );
+      expect(token, isNull);
+    });
+  });
+
   test(
     'turning off removes the token from the account and from Firebase',
     () async {

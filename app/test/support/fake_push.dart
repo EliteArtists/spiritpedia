@@ -34,8 +34,16 @@ class FakePushMessaging implements PushMessaging {
   Future<void> enableAutoInit(bool enabled) async =>
       calls.add('autoInit:$enabled');
 
+  /// Null until set: like an iPhone whose Apple token never came.
+  bool appleTokenNeverCame = false;
+  final tokenRequests = <bool>[]; // waitForApple, per request
+
   @override
-  Future<String?> token() async => currentToken ??= 'token-${++_issued}';
+  Future<String?> token({bool waitForApple = false}) async {
+    tokenRequests.add(waitForApple);
+    if (appleTokenNeverCame) return null;
+    return currentToken ??= 'token-${++_issued}';
+  }
 
   @override
   Stream<String> get tokenRefreshes => refreshes.stream;

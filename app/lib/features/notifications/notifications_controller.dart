@@ -143,10 +143,11 @@ class NotificationsController extends Notifier<NotificationsState> {
   }
 
   Future<void> _register() async {
-    final token = await _messaging.token();
+    final token = await _messaging.token(waitForApple: true);
     if (token == null) {
       throw const AccountError(
-        'Notifications could not be set up on this phone.',
+        'Your phone hasn’t connected to the notification service yet. '
+        'Check you’re online, then try again.',
       );
     }
     await _account.registerPushToken(
@@ -198,6 +199,9 @@ class NotificationsController extends Notifier<NotificationsState> {
       // Once ever per account — the server decides; never blocks turning on.
       unawaited(_account.sendWelcomePush().catchError((_) {}));
       return true;
+    } on AccountError catch (e) {
+      state = state.copyWith(busy: false, error: e.message);
+      return false;
     } catch (_) {
       state = state.copyWith(
         busy: false,

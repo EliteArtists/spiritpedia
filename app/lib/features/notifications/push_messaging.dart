@@ -1,6 +1,7 @@
 import 'dart:async';
 
 import 'package:firebase_messaging/firebase_messaging.dart';
+import 'package:flutter/foundation.dart';
 
 /// What the phone says about notification permission for Spiritpedia.
 enum PushPermission {
@@ -37,7 +38,11 @@ abstract class PushMessaging {
   Future<PushPermission> requestPermission();
 
   Future<void> enableAutoInit(bool enabled);
-  Future<String?> token();
+
+  /// This phone's notification token, or null. [waitForApple]: on an
+  /// iPhone, first wait (a few seconds at most) for Apple's own push token —
+  /// needed straight after the person says yes, see [waitForApnsToken].
+  Future<String?> token({bool waitForApple = false});
   Stream<String> get tokenRefreshes;
   Future<void> deleteToken();
 
@@ -49,6 +54,25 @@ abstract class PushMessaging {
 
   /// Tapped while the app was closed: it opened the app.
   Future<PushNote?> initialNote();
+}
+
+/// Apple's push token, waited for. With auto-init off until the person says
+/// yes, the iPhone only registers with Apple at that moment, and Apple's
+/// token arrives a little later — usually well under a second, longer on a
+/// slow connection. Asked every [every] for up to [patience]; null if it
+/// never came (offline, or push not set up for this build).
+Future<String?> waitForApnsToken(
+  Future<String?> Function() apnsToken, {
+  Duration patience = const Duration(seconds: 10),
+  Duration every = const Duration(milliseconds: 250),
+}) async {
+  final deadline = DateTime.now().add(patience);
+  while (true) {
+    final token = await apnsToken();
+    if (token != null) return token;
+    if (!DateTime.now().isBefore(deadline)) return null;
+    await Future<void>.delayed(every);
+  }
 }
 
 PushNote _note(RemoteMessage m) => PushNote(
@@ -92,7 +116,18 @@ class FirebasePushMessaging implements PushMessaging {
   Future<void> enableAutoInit(bool enabled) => _fm.setAutoInitEnabled(enabled);
 
   @override
-  Future<String?> token() => _fm.getToken();
+  Future<String?> token({bool waitForApple = false}) async {
+    if (defaultTargetPlatform == TargetPlatform.iOS) {
+      // Firebase refuses to issue a token before Apple's has arrived — it
+      // throws "apns-token-not-set". Asking for it then is no error, just
+      // nothing to register yet.
+      final apns = waitForApple
+          ? await waitForApnsToken(_fm.getAPNSToken)
+          : await _fm.getAPNSToken();
+      if (apns == null) return null;
+    }
+    return _fm.getToken();
+  }
 
   @override
   Stream<String> get tokenRefreshes => _fm.onTokenRefresh;
@@ -124,7 +159,7 @@ class UnavailablePushMessaging implements PushMessaging {
   @override
   Future<void> enableAutoInit(bool enabled) async {}
   @override
-  Future<String?> token() async => null;
+  Future<String?> token({bool waitForApple = false}) async => null;
   @override
   Stream<String> get tokenRefreshes => const Stream.empty();
   @override
