@@ -1,3 +1,5 @@
+import 'dart:io';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_test/flutter_test.dart';
@@ -20,6 +22,10 @@ import 'package:spiritpedia/features/search/search_screen.dart';
 import 'support/fake_account.dart';
 import 'support/fake_content.dart';
 import 'support/fake_push.dart';
+
+final _safety = EmotionSafety.parse(
+  File('../web/shared/emotion-safety.json').readAsStringSync(),
+);
 
 /// The search, answering nothing — these tests only open it.
 class _NoSearch implements SearchRepository {
@@ -45,6 +51,9 @@ Widget _app({bool fail = false, FakePushMessaging? push}) => ProviderScope(
     ),
     savedStoreProvider.overrideWithValue(MemorySavedStore()),
     searchRepositoryProvider.overrideWithValue(_NoSearch()),
+    // The crisis phrases, read straight from the shared file: an asset load
+    // completes only in a file's first test.
+    emotionSafetyProvider.overrideWithValue(AsyncData(_safety)),
     typewriterRunsProvider.overrideWithValue(false),
   ],
   child: const SpiritpediaApp(playIntro: false),
@@ -474,5 +483,40 @@ void main() {
       await tester.pump(const Duration(milliseconds: 80));
       expect(find.byType(SlipstreamFrame), findsNothing);
     });
+  });
+
+  group('every search box focuses and takes typing', () {
+    for (final tab in ['Discover', 'Videos', 'Books']) {
+      testWidgets(tab, (tester) async {
+        await start(tester);
+        if (tab != 'Discover') {
+          await tester.tap(find.text(tab).last);
+          await tester.pumpAndSettle();
+        }
+        // The tab's search box opens the search…
+        await tester.tap(find.byType(FeelingTypewriter).hitTestable().first);
+        await tester.pumpAndSettle();
+        final field = find.byType(TextField);
+        expect(field, findsOneWidget);
+
+        // …with the field focused and the keyboard asked for.
+        final editable = tester.state<EditableTextState>(
+          find.byType(EditableText),
+        );
+        expect(editable.widget.focusNode.hasFocus, isTrue, reason: 'focus');
+        expect(tester.testTextInput.isVisible, isTrue, reason: 'keyboard');
+
+        // Typing arrives through the platform's text input, as on a phone.
+        tester.testTextInput.enterText('abraham');
+        await tester.pump();
+        expect(editable.textEditingValue.text, 'abraham');
+
+        // Tapping the field again keeps it typing.
+        await tester.tap(field);
+        await tester.pump();
+        expect(editable.widget.focusNode.hasFocus, isTrue);
+        await tester.pumpAndSettle();
+      });
+    }
   });
 }
