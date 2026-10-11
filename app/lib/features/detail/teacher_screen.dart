@@ -45,10 +45,6 @@ class _Teacher extends StatelessWidget {
   Widget build(BuildContext context) {
     final h = content.healer;
     final offerings = content.offerings;
-    final memberships = [
-      for (final o in offerings)
-        if (o.productType == 'membership') o,
-    ];
     final split = splitOfferings(offerings);
     final name = h.name;
 
@@ -119,7 +115,7 @@ class _Teacher extends StatelessWidget {
         offeringShelf('Courses & Programmes', 'Go Deeper', split.courses),
         offeringShelf('Retreats & Events', 'Live Experiences', split.retreats),
         offeringShelf('Downloads & Audio', 'Take It With You', split.downloads),
-        offeringShelf('Memberships', 'Ongoing Journey', memberships),
+        offeringShelf('Memberships', 'Ongoing Journey', split.memberships),
       ],
     );
   }

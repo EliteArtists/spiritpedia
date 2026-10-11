@@ -3,12 +3,19 @@ import 'package:go_router/go_router.dart';
 
 import 'slipstream.dart';
 
-/// Where Home's star is resting right now — the search box, or the start of
-/// the sticky pill row. Home registers itself with the [StarLayer].
-abstract interface class HomeStarTarget {
+/// A tab's page (Discover, Videos, Books): where its star is resting right
+/// now — the search box, or the start of the sticky pill row — and a way back
+/// to its top. Each registers itself with the [StarLayer] under its path.
+abstract interface class TabStarTarget {
   Rect? restingRect();
-  void scrollToTop();
+
+  /// Back to the top: animated when the person can see it, at once when the
+  /// tab is about to be revealed.
+  void scrollToTop({bool animate = true});
 }
+
+/// The tabs, by path. Discover is first, and where the app opens.
+const tabPaths = ['/', '/videos', '/books'];
 
 /// The layer every star flight is drawn on, above the whole app.
 ///
@@ -49,11 +56,15 @@ class _Flight {
 class StarLayerState extends State<StarLayer> with TickerProviderStateMixin {
   final _flights = <Object, _Flight>{};
 
-  /// Home, once it has been built.
-  HomeStarTarget? home;
+  /// The tabs' pages, by path, once built.
+  final tabs = <String, TabStarTarget>{};
 
-  /// True while a star is on its way to Home: Home hides its resting star.
-  final homeHidden = ValueNotifier<bool>(false);
+  /// Discover — where the intro's star lands.
+  TabStarTarget? get discover => tabs['/'];
+
+  /// The tab a star is on its way into, if any: that tab hides its resting
+  /// star until the flight lands.
+  final incoming = ValueNotifier<String?>(null);
 
   /// [box] in this layer's coordinates.
   Rect? rectOfBox(RenderObject? box) {
@@ -116,7 +127,7 @@ class StarLayerState extends State<StarLayer> with TickerProviderStateMixin {
     for (final f in _flights.values) {
       f.controller.dispose();
     }
-    homeHidden.dispose();
+    incoming.dispose();
     super.dispose();
   }
 
@@ -152,39 +163,46 @@ class StarLayerState extends State<StarLayer> with TickerProviderStateMixin {
   }
 }
 
-/// Takes the person home, the star flying from [from] (where they tapped it)
-/// into Home's resting star. On Home already: back to the top.
-Future<void> goHome(BuildContext context, {Rect? from}) async {
+/// What the star does. On a tab: back to that tab's top. On a page opened
+/// over the tabs (a book, a teacher, My Library, the search…): back to the
+/// tab it was opened from, at the top, the star flying from [from] (where it
+/// was tapped) into that tab's search box. The subject filter is never
+/// touched.
+Future<void> starTapped(BuildContext context, {Rect? from}) async {
   final layer = StarLayer.maybeOf(context);
   final router = GoRouter.of(context);
-  // The page on top. Not the configuration's uri: that leaves out pages
-  // pushed over the tabs (a book opened from Home still reads as '/').
   final config = router.routerDelegate.currentConfiguration;
-  final here = config.lastOrNull?.matchedLocation ?? config.uri.path;
-  if (here == '/') {
-    layer?.home?.scrollToTop();
+  // The configuration's uri is the tab underneath; pages pushed over it
+  // only show in its last match.
+  final tab = tabPaths.contains(config.uri.path) ? config.uri.path : '/';
+  final top = config.lastOrNull?.matchedLocation ?? config.uri.path;
+  final target = layer?.tabs[tab];
+  if (top == tab) {
+    target?.scrollToTop();
     return;
   }
+  target?.scrollToTop(animate: false);
   if (layer == null || from == null) {
-    router.go('/');
+    router.go(tab);
     return;
   }
-  layer.homeHidden.value = true;
-  router.go('/');
-  // Let Home lay out where it is going to be before aiming at it.
+  layer.incoming.value = tab;
+  router.go(tab);
+  // Let the tab lay out where it is going to be before aiming at it.
   await WidgetsBinding.instance.endOfFrame;
   try {
     await layer.fly(
-      owner: layer.homeHidden,
+      owner: layer.incoming,
       from: from,
-      to: () => layer.home?.restingRect(),
+      to: () => layer.tabs[tab]?.restingRect(),
     );
   } finally {
-    layer.homeHidden.value = false;
+    layer.incoming.value = null;
   }
 }
 
-/// A resting star: tapping it goes home. Screen readers call it "Home".
+/// A resting star: tapping it goes back to the tab's top ([starTapped]).
+/// Screen readers call it "Home".
 ///
 /// [visible] false leaves its space but hides the star — while a flight is
 /// carrying it elsewhere. [starKey] marks the star itself, for aiming flights.
@@ -216,7 +234,7 @@ class _StarAnchorState extends State<StarAnchor> {
   void _tap() {
     if (widget.onTap != null) return widget.onTap!();
     final layer = StarLayer.maybeOf(context);
-    goHome(
+    starTapped(
       context,
       from: layer?.rectOfBox(_key.currentContext?.findRenderObject()),
     );

@@ -21,12 +21,11 @@ class SpiritpediaApp extends ConsumerStatefulWidget {
   ConsumerState<SpiritpediaApp> createState() => _SpiritpediaAppState();
 }
 
-/// The tabs: a notification leading to one switches to it rather than
-/// stacking a second copy on top.
-const _tabRoutes = {'/', '/videos', '/books', '/search'};
+/// What a link to a screen this version does not have shows, over Discover.
+const unknownLinkMessage = 'This needs a newer version of Spiritpedia';
 
 class _SpiritpediaAppState extends ConsumerState<SpiritpediaApp> {
-  late final GoRouter _router = buildRouter();
+  late final GoRouter _router = buildRouter(onUnknownLink: (_) => _unknown());
   final _messenger = GlobalKey<ScaffoldMessengerState>();
   final _subs = <StreamSubscription<PushNote>>[];
 
@@ -49,12 +48,33 @@ class _SpiritpediaAppState extends ConsumerState<SpiritpediaApp> {
     super.dispose();
   }
 
-  /// Only in-app paths from our own messages: "/library", "/books/slug".
+  /// Only in-app paths from our own messages: "/library", "/books/slug". A
+  /// tab is switched to rather than stacked; a screen this version does not
+  /// know opens Discover with a quiet note.
   void _open(String? route) {
     if (route == null || !route.startsWith('/') || route.startsWith('//')) {
       return;
     }
-    _tabRoutes.contains(route) ? _router.go(route) : _router.push(route);
+    final uri = Uri.tryParse(route);
+    if (uri == null || _router.configuration.findMatch(uri).isError) {
+      _router.go('/');
+      return _unknown();
+    }
+    tabPaths.contains(uri.path) ? _router.go(route) : _router.push(route);
+  }
+
+  void _unknown() {
+    // After the frame: this can arrive while the router is mid-navigation.
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      _messenger.currentState
+        ?..hideCurrentSnackBar()
+        ..showSnackBar(
+          const SnackBar(
+            content: Text(unknownLinkMessage),
+            duration: Duration(seconds: 4),
+          ),
+        );
+    });
   }
 
   /// While the app is open: a quiet in-app banner, not a system notification.

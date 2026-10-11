@@ -174,7 +174,12 @@ String truncateBio(String? bio, {int max = 120}) {
 }
 
 /// Offerings split by product_type, as the website's shelves do.
-({List<Offering> courses, List<Offering> retreats, List<Offering> downloads})
+({
+  List<Offering> courses,
+  List<Offering> retreats,
+  List<Offering> downloads,
+  List<Offering> memberships,
+})
 splitOfferings(List<Offering> offerings) => (
   courses: [
     for (final o in offerings)
@@ -187,6 +192,10 @@ splitOfferings(List<Offering> offerings) => (
   downloads: [
     for (final o in offerings)
       if (o.productType == 'download') o,
+  ],
+  memberships: [
+    for (final o in offerings)
+      if (o.productType == 'membership') o,
   ],
 );
 

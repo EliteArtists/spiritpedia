@@ -26,8 +26,10 @@ final publishersProvider = FutureProvider<List<Publisher>>(
   (ref) => ref.watch(contentRepositoryProvider).publishers(),
 );
 
-/// A subject filter (null = View All). Home, Videos and Books each keep their own,
-/// as the website's tabs share a URL but the app's tabs are separate screens.
+/// The subject filter (null = View All), one for Discover, Videos and Books
+/// together — as on the website, where the tabs share the page's ?subject=.
+/// Switching tabs and tapping the star keep it; only Clear (or View All)
+/// changes it back.
 class SubjectFilter extends Notifier<String?> {
   @override
   String? build() => null;
@@ -35,13 +37,7 @@ class SubjectFilter extends Notifier<String?> {
   void select(String? slug) => state = slug;
 }
 
-final homeSubjectProvider = NotifierProvider<SubjectFilter, String?>(
-  SubjectFilter.new,
-);
-final videosSubjectProvider = NotifierProvider<SubjectFilter, String?>(
-  SubjectFilter.new,
-);
-final booksSubjectProvider = NotifierProvider<SubjectFilter, String?>(
+final subjectFilterProvider = NotifierProvider<SubjectFilter, String?>(
   SubjectFilter.new,
 );
 
@@ -55,13 +51,17 @@ String subjectName(List<Subject>? subjects, String slug) {
 
 // ── Explore More ─────────────────────────────────────────────────────────────
 
-/// The five on-demand sections, in the website's order (ExploreMore.jsx).
+/// The on-demand sections, in the website's order (ExploreMore.jsx), then
+/// Memberships.
 enum ExploreSection {
   freeResources('Free Resources', 'No cost, no catch'),
   books('Books & Literature', 'The curated archive'),
   courses('Courses & Programmes', 'Go deeper'),
   retreats('Retreats & Live Events', 'In person'),
-  downloads('Downloads & Audio', 'Take it with you');
+  downloads('Downloads & Audio', 'Take it with you'),
+  // Not on the website's Explore More (yet): its 102 live memberships show
+  // only on teachers' pages there.
+  memberships('Memberships', 'Ongoing journey');
 
   const ExploreSection(this.label, this.subtitle);
 
@@ -106,12 +106,14 @@ final exploreSectionProvider =
         case ExploreSection.courses:
         case ExploreSection.retreats:
         case ExploreSection.downloads:
+        case ExploreSection.memberships:
           final split = splitOfferings(
             await ref.watch(_liveOfferingsProvider(subject).future),
           );
           return switch (section) {
             ExploreSection.courses => split.courses,
             ExploreSection.retreats => split.retreats,
+            ExploreSection.memberships => split.memberships,
             _ => split.downloads,
           };
       }

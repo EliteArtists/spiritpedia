@@ -8,15 +8,15 @@ import '../../theme/colors.dart';
 import '../star/star_layer.dart';
 import 'tab_bar_state.dart';
 
-/// The tabs: Home (reached by the star — it has no button), then Videos, Books
-/// and Search in the floating pill. Each keeps its own navigation history
-/// (go_router's StatefulShellRoute), so switching tabs never loses your place.
+/// The tabs — Discover (where the app opens), Videos and Books — in the
+/// floating pill. Each keeps its own navigation history (go_router's
+/// StatefulShellRoute), so switching tabs never loses your place.
 class AppShell extends ConsumerWidget {
   const AppShell({super.key, required this.navigationShell});
 
   final StatefulNavigationShell navigationShell;
 
-  static const _home = 0;
+  static const _discover = 0;
 
   void _go(int index) => navigationShell.goBranch(
     index,
@@ -30,10 +30,10 @@ class AppShell extends ConsumerWidget {
     // Out of the way while a subject tray is open, back when it closes.
     final covered = ref.watch(tabBarCoverProvider) > 0;
     return PopScope(
-      // Android's back button: from another tab, back goes home first.
-      canPop: navigationShell.currentIndex == _home,
+      // Android's back button: from another tab, back goes to Discover first.
+      canPop: navigationShell.currentIndex == _discover,
       onPopInvokedWithResult: (didPop, _) {
-        if (!didPop) _go(_home);
+        if (!didPop) _go(_discover);
       },
       child: Scaffold(
         body: Stack(
@@ -81,18 +81,19 @@ class AppShell extends ConsumerWidget {
   }
 }
 
-/// Videos · Books · Search, in a floating pill. On Home none is selected.
+/// Discover · Videos · Books, in a floating pill of dark frosted glass; the
+/// chosen tab in the site's violet.
 class PillTabBar extends StatelessWidget {
   const PillTabBar({super.key, required this.current, required this.onSelect});
 
-  /// The shell's branch index (0 = Home, 1 = Videos, 2 = Books, 3 = Search).
+  /// The shell's branch index (0 = Discover, 1 = Videos, 2 = Books).
   final int current;
   final ValueChanged<int> onSelect;
 
   static const _tabs = [
+    (0, 'Discover', Icons.explore_outlined, Icons.explore),
     (1, 'Videos', Icons.play_circle_outline, Icons.play_circle),
     (2, 'Books', Icons.menu_book_outlined, Icons.menu_book),
-    (3, 'Search', Icons.search, Icons.search),
   ];
 
   @override
@@ -158,20 +159,15 @@ class _PillTab extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // The chosen tab in the star's gold.
-    final colour = selected ? SpColors.gold : const Color(0xD9FFFFFF);
+    final colour = selected ? Colors.white : const Color(0xD9FFFFFF);
     return Semantics(
       button: true,
       selected: selected,
       label: label,
       excludeSemantics: true,
       child: Material(
-        color: selected ? const Color(0x24F5B301) : Colors.transparent,
-        shape: StadiumBorder(
-          side: selected
-              ? const BorderSide(color: Color(0x66F5B301), width: 0.8)
-              : BorderSide.none,
-        ),
+        color: selected ? SpColors.primary : Colors.transparent,
+        shape: const StadiumBorder(),
         child: InkWell(
           customBorder: const StadiumBorder(),
           onTap: onTap,

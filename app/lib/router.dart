@@ -19,11 +19,19 @@ final _rootKey = GlobalKey<NavigatorState>();
 
 /// All navigation. Detail paths mirror the website's (/healers/:slug,
 /// /books/:slug, …), so a spiritpedia.co link can later open the same screen.
-/// Home is a tab with no button — the star is the way there. Detail pages,
-/// My Library, Account and the full-screen search open above the tab bar.
-GoRouter buildRouter() => GoRouter(
+/// The tabs are Discover ('/', where the app opens — the website's homepage),
+/// Videos and Books. Detail pages, My Library, Account and the full-screen
+/// search open above the tab bar.
+///
+/// A link to a screen this version does not have opens Discover, and
+/// [onUnknownLink] says so — never an error page.
+GoRouter buildRouter({void Function(Uri)? onUnknownLink}) => GoRouter(
   navigatorKey: _rootKey,
   initialLocation: '/',
+  onException: (context, state, router) {
+    router.go('/');
+    onUnknownLink?.call(state.uri);
+  },
   routes: [
     StatefulShellRoute.indexedStack(
       builder: (context, state, shell) => AppShell(navigationShell: shell),
@@ -46,14 +54,6 @@ GoRouter buildRouter() => GoRouter(
             GoRoute(
               path: '/books',
               builder: (context, state) => const BooksScreen(),
-            ),
-          ],
-        ),
-        StatefulShellBranch(
-          routes: [
-            GoRoute(
-              path: '/search',
-              builder: (context, state) => const SearchScreen(),
             ),
           ],
         ),
@@ -80,6 +80,12 @@ GoRouter buildRouter() => GoRouter(
       parentNavigatorKey: _rootKey,
       path: '/feel',
       builder: (context, state) => const SearchScreen(standalone: true),
+    ),
+    // There was a Search tab; links to it open the search.
+    GoRoute(
+      parentNavigatorKey: _rootKey,
+      path: '/search',
+      redirect: (context, state) => '/feel',
     ),
     for (final (path, screen) in <(String, Widget Function(String))>[
       ('/healers/:slug', (slug) => TeacherScreen(slug: slug)),

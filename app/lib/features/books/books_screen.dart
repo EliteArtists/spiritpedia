@@ -15,11 +15,12 @@ class BooksScreen extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final subject = ref.watch(booksSubjectProvider);
+    final subject = ref.watch(subjectFilterProvider);
     final shelves = ref.watch(bookShelvesProvider(subject));
 
     return StarPage(
-      filter: booksSubjectProvider,
+      filter: subjectFilterProvider,
+      tabPath: '/books',
       onRefresh: () async {
         ref.invalidate(bookShelvesProvider(subject));
         await ref.read(bookShelvesProvider(subject).future);

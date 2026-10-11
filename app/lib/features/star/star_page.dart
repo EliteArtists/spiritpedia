@@ -22,7 +22,7 @@ class StarPage extends ConsumerStatefulWidget {
     required this.filter,
     required this.slivers,
     required this.onRefresh,
-    this.isHome = false,
+    required this.tabPath,
   });
 
   final NotifierProvider<SubjectFilter, String?> filter;
@@ -31,8 +31,9 @@ class StarPage extends ConsumerStatefulWidget {
   final List<Widget> slivers;
   final Future<void> Function() onRefresh;
 
-  /// Home is where every other star flies back to.
-  final bool isHome;
+  /// Which tab this is ('/', '/videos' or '/books'): a star tapped on a page
+  /// opened from here flies back here.
+  final String tabPath;
 
   /// Room under a tab's last content, clear of the floating tab bar.
   static const tabBarClearance = 110.0;
@@ -41,14 +42,14 @@ class StarPage extends ConsumerStatefulWidget {
   ConsumerState<StarPage> createState() => _StarPageState();
 }
 
-class _StarPageState extends ConsumerState<StarPage> implements HomeStarTarget {
+class _StarPageState extends ConsumerState<StarPage> implements TabStarTarget {
   final _scroll = ScrollController();
   final _boxStar = GlobalKey(debugLabel: 'box star');
   final _dockStar = GlobalKey(debugLabel: 'dock star');
   bool _docked = false;
   bool _flying = false;
   StarLayerState? _layer;
-  final _noLayer = ValueNotifier(false); // only without a StarLayer (tests)
+  final _noLayer = ValueNotifier<String?>(null); // only without a StarLayer
 
   @override
   void initState() {
@@ -60,25 +61,33 @@ class _StarPageState extends ConsumerState<StarPage> implements HomeStarTarget {
   void didChangeDependencies() {
     super.didChangeDependencies();
     _layer = StarLayer.maybeOf(context);
-    if (widget.isHome) _layer?.home = this;
+    _layer?.tabs[widget.tabPath] = this;
   }
 
   @override
   void dispose() {
-    if (widget.isHome && _layer?.home == this) _layer?.home = null;
+    if (_layer?.tabs[widget.tabPath] == this) {
+      _layer?.tabs.remove(widget.tabPath);
+    }
     _scroll.dispose();
     _noLayer.dispose();
     super.dispose();
   }
 
-  // ── HomeStarTarget ──
+  // ── TabStarTarget ──
 
   @override
   Rect? restingRect() => _layer?.rectOfKey(_docked ? _dockStar : _boxStar);
 
   @override
-  void scrollToTop() {
+  void scrollToTop({bool animate = true}) {
     if (!_scroll.hasClients) return;
+    if (!animate) {
+      _scroll.jumpTo(0);
+      // Not on screen, so no flight back into the box: just rest there.
+      if (_docked) setState(() => _docked = false);
+      return;
+    }
     _scroll.animateTo(
       0,
       duration: const Duration(milliseconds: 450),
@@ -128,14 +137,14 @@ class _StarPageState extends ConsumerState<StarPage> implements HomeStarTarget {
 
   @override
   Widget build(BuildContext context) {
-    final homeHidden = _layer?.homeHidden ?? _noLayer;
+    final incoming = _layer?.incoming ?? _noLayer;
     return Scaffold(
       body: SafeArea(
         bottom: false,
-        child: ValueListenableBuilder<bool>(
-          valueListenable: homeHidden,
-          builder: (context, incoming, _) {
-            final hidden = _flying || (widget.isHome && incoming);
+        child: ValueListenableBuilder<String?>(
+          valueListenable: incoming,
+          builder: (context, arriving, _) {
+            final hidden = _flying || arriving == widget.tabPath;
             return RefreshIndicator(
               color: SpColors.link,
               onRefresh: widget.onRefresh,

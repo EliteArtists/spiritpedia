@@ -4,24 +4,46 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:go_router/go_router.dart';
 import 'package:spiritpedia/app.dart';
 import 'package:spiritpedia/core/retry.dart';
+import 'package:spiritpedia/core/safety/emotion_safety.dart';
 import 'package:spiritpedia/data/providers.dart';
 import 'package:spiritpedia/features/account/account_providers.dart';
 import 'package:spiritpedia/features/library/saved_items.dart';
+import 'package:spiritpedia/features/notifications/notifications_controller.dart';
+import 'package:spiritpedia/features/notifications/push_messaging.dart';
 import 'package:spiritpedia/features/shell/app_shell.dart';
 import 'package:spiritpedia/features/star/star_layer.dart';
 import 'package:spiritpedia/features/search/feeling_placeholder.dart';
+import 'package:spiritpedia/features/search/search_repository.dart';
+import 'package:spiritpedia/features/search/search_screen.dart';
 
 import 'support/fake_account.dart';
 import 'support/fake_content.dart';
+import 'support/fake_push.dart';
 
-Widget _app({bool fail = false}) => ProviderScope(
+/// The search, answering nothing — these tests only open it.
+class _NoSearch implements SearchRepository {
+  @override
+  Future<List<MappingRow>> exactEmotion(String emotion) async => const [];
+  @override
+  Future<List<String>> vocabulary(List<String> words) async => const [];
+  @override
+  Future<List<MappingRow>> forwardSubstring(String normalised) async =>
+      const [];
+  @override
+  Future<UniversalResults> universal(String term) async =>
+      UniversalResults.empty;
+}
+
+Widget _app({bool fail = false, FakePushMessaging? push}) => ProviderScope(
   retry: spiritpediaRetry,
   overrides: [
+    if (push != null) pushMessagingProvider.overrideWithValue(push),
     accountServiceProvider.overrideWithValue(FakeAccountService()),
     contentRepositoryProvider.overrideWithValue(
       FakeContentRepository(fail: fail),
     ),
     savedStoreProvider.overrideWithValue(MemorySavedStore()),
+    searchRepositoryProvider.overrideWithValue(_NoSearch()),
     typewriterRunsProvider.overrideWithValue(false),
   ],
   child: const SpiritpediaApp(playIntro: false),
@@ -52,25 +74,27 @@ void main() {
     await tester.pump(const Duration(milliseconds: 100));
   }
 
-  testWidgets('a floating pill of three tabs: Videos, Books, Search', (
+  testWidgets('a floating pill: Discover, Videos, Books; Discover on launch', (
     tester,
   ) async {
     await start(tester);
     final pill = find.byType(PillTabBar);
-    for (final label in ['Videos', 'Books', 'Search']) {
+    for (final label in ['Discover', 'Videos', 'Books']) {
       expect(
         find.descendant(of: pill, matching: find.text(label)),
         findsOneWidget,
         reason: label,
       );
     }
-    // No Home tab, and no Library or Account tabs.
-    for (final label in ['Home', 'Library', 'Account']) {
+    // No Search tab, and no Home, Library or Account tabs.
+    for (final label in ['Search', 'Home', 'Library', 'Account']) {
       expect(
         find.descendant(of: pill, matching: find.text(label)),
         findsNothing,
       );
     }
+    expect(tester.widget<PillTabBar>(pill).current, 0); // Discover
+    expect(find.text('Worldwide'), findsOneWidget); // the homepage's shelves
   });
 
   testWidgets('the top bar: My Library and Account, and no wordmark', (
@@ -88,21 +112,23 @@ void main() {
     expect(find.text('Your account'), findsOneWidget);
   });
 
-  testWidgets('the star sits in the search box, labelled Home, and goes home', (
-    tester,
-  ) async {
+  testWidgets('the star sits in the search box, labelled Home; on a tab it '
+      'stays on that tab', (tester) async {
     await start(tester);
     expect(find.bySemanticsLabel('Home'), findsWidgets);
-    expect(find.byIcon(Icons.search), findsOneWidget); // only the Search tab's
+    expect(find.byIcon(Icons.search), findsNothing); // no Search tab
 
     await tester.tap(find.text('Books').last);
     await tester.pumpAndSettle();
     expect(find.text('The Power of Now'), findsWidgets);
 
-    // Books has its own star in its own search box.
+    // Books has its own star in its own search box: back to Books' top.
     await tester.tap(find.byType(StarAnchor).hitTestable().first);
     await tester.pumpAndSettle();
-    expect(find.text('Worldwide'), findsOneWidget); // Home again
+    expect(
+      tester.widget<PillTabBar>(find.byType(PillTabBar)).current,
+      2,
+    ); // still Books
   });
 
   testWidgets(
@@ -177,7 +203,7 @@ void main() {
     final container = ProviderScope.containerOf(
       tester.element(find.byType(SpiritpediaApp)),
     );
-    container.read(homeSubjectProvider.notifier).select('breathwork');
+    container.read(subjectFilterProvider.notifier).select('breathwork');
     await tester.pump();
     await tester.pump(const Duration(milliseconds: 100));
 
@@ -285,5 +311,113 @@ void main() {
     await tester.pumpAndSettle();
     expect(find.byType(FloatingHomeStar), findsNothing);
     expect(find.text('Worldwide'), findsOneWidget); // Home
+  });
+
+  testWidgets('the subject filter carries across the tabs and the star', (
+    tester,
+  ) async {
+    await start(tester);
+    final container = ProviderScope.containerOf(
+      tester.element(find.byType(SpiritpediaApp)),
+    );
+    container.read(subjectFilterProvider.notifier).select('meditation');
+    await tester.pump();
+    await tester.pump(const Duration(milliseconds: 100));
+
+    for (final tab in ['Videos', 'Books', 'Discover']) {
+      await tester.tap(find.text(tab).last);
+      await tester.pumpAndSettle();
+      expect(find.text('Showing Meditation'), findsOneWidget, reason: tab);
+    }
+    await tester.tap(find.byType(StarAnchor).hitTestable().first);
+    await tester.pumpAndSettle();
+    expect(container.read(subjectFilterProvider), 'meditation');
+
+    await tester.tap(find.text('Clear'));
+    await tester.pump();
+    expect(container.read(subjectFilterProvider), isNull);
+  });
+
+  testWidgets('from a page opened on Books, the star goes back to Books, '
+      'filter kept', (tester) async {
+    await start(tester);
+    final container = ProviderScope.containerOf(
+      tester.element(find.byType(SpiritpediaApp)),
+    );
+    container.read(subjectFilterProvider.notifier).select('meditation');
+    await tester.tap(find.text('Books').last);
+    await tester.pumpAndSettle();
+    GoRouter.of(tester.element(find.byType(PillTabBar)))
+        .push('/books/the-power-of-now');
+    await tester.pumpAndSettle();
+
+    await tester.tap(
+      find.descendant(
+        of: find.byType(FloatingHomeStar),
+        matching: find.byType(StarAnchor),
+      ),
+    );
+    await tester.pumpAndSettle();
+    expect(find.byType(FloatingHomeStar), findsNothing);
+    expect(tester.widget<PillTabBar>(find.byType(PillTabBar)).current, 2);
+    expect(container.read(subjectFilterProvider), 'meditation');
+  });
+
+  group('links from notifications', () {
+    Future<FakePushMessaging> launch(WidgetTester tester) async {
+      final push = FakePushMessaging();
+      await tester.pumpWidget(_app(push: push));
+      await tester.pump();
+      await tester.pump(const Duration(milliseconds: 100));
+      return push;
+    }
+
+    testWidgets('a screen this version lacks: Discover, with a quiet note', (
+      tester,
+    ) async {
+      final push = await launch(tester);
+      await tester.tap(find.text('Books').last);
+      await tester.pumpAndSettle();
+      push.openedNotes.add(const PushNote(route: '/deep-research'));
+      await tester.pumpAndSettle();
+      expect(tester.widget<PillTabBar>(find.byType(PillTabBar)).current, 0);
+      expect(find.text(unknownLinkMessage), findsOneWidget);
+      expect(tester.takeException(), isNull);
+    });
+
+    testWidgets('/search opens the search; /library and /account still work', (
+      tester,
+    ) async {
+      final push = await launch(tester);
+      final router = GoRouter.of(tester.element(find.byType(PillTabBar)));
+      push.openedNotes.add(const PushNote(route: '/search'));
+      await tester.pumpAndSettle();
+      expect(
+        router.routerDelegate.currentConfiguration.last.matchedLocation,
+        '/feel', // the search screen
+      );
+      router.pop();
+      await tester.pumpAndSettle();
+
+      push.openedNotes.add(const PushNote(route: '/library'));
+      await tester.pumpAndSettle();
+      expect(find.text('My Library'), findsWidgets);
+      await tester.pageBack();
+      await tester.pumpAndSettle();
+
+      push.openedNotes.add(const PushNote(route: '/account'));
+      await tester.pumpAndSettle();
+      expect(find.text('Your account'), findsOneWidget);
+    });
+  });
+
+  testWidgets('an unknown link typed into the router also lands on Discover', (
+    tester,
+  ) async {
+    await start(tester);
+    GoRouter.of(tester.element(find.byType(PillTabBar))).go('/deep-research');
+    await tester.pumpAndSettle();
+    expect(find.text('Worldwide'), findsOneWidget);
+    expect(find.text(unknownLinkMessage), findsOneWidget);
   });
 }

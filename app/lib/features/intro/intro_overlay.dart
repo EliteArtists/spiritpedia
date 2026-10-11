@@ -171,7 +171,7 @@ class _IntroOverlayState extends ConsumerState<IntroOverlay>
     if (_started) return;
     _started = true;
     _still = reduceMotion(context);
-    _layer?.homeHidden.value = true;
+    _layer?.incoming.value = '/';
     _start();
   }
 
@@ -200,7 +200,7 @@ class _IntroOverlayState extends ConsumerState<IntroOverlay>
     _greet.reset();
     _fly.reset();
     _still = reduceMotion(context);
-    _layer?.homeHidden.value = true;
+    _layer?.incoming.value = '/';
     setState(() => _phase = _Phase.waiting);
     _start();
   }
@@ -221,7 +221,7 @@ class _IntroOverlayState extends ConsumerState<IntroOverlay>
   }
 
   void _land() {
-    _layer?.homeHidden.value = false;
+    _layer?.incoming.value = null;
     if (_kind == IntroKind.full) {
       setState(() => _phase = _Phase.callout);
     } else {
@@ -230,7 +230,7 @@ class _IntroOverlayState extends ConsumerState<IntroOverlay>
   }
 
   void _finish() {
-    _layer?.homeHidden.value = false;
+    _layer?.incoming.value = null;
     if (mounted) setState(() => _phase = _Phase.done);
   }
 
@@ -264,7 +264,7 @@ class _IntroOverlayState extends ConsumerState<IntroOverlay>
   }
 
   Rect _homeRect(Size size) {
-    final rect = _layer?.home?.restingRect();
+    final rect = _layer?.discover?.restingRect();
     if (rect != null) return rect;
     // Home not laid out yet: roughly where its search box star sits.
     final top = MediaQuery.paddingOf(context).top;

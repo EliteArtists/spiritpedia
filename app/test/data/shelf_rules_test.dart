@@ -67,21 +67,20 @@ void main() {
     expect(shelf.length, 4); // two of eight, two of three
   });
 
-  test(
-    'offerings split into courses (incl. unset type), retreats and downloads',
-    () {
-      final split = splitOfferings(const [
-        Offering(id: '1', slug: 'a', title: 'a'),
-        Offering(id: '2', slug: 'b', title: 'b', productType: 'course'),
-        Offering(id: '3', slug: 'c', title: 'c', productType: 'retreat'),
-        Offering(id: '4', slug: 'd', title: 'd', productType: 'download'),
-        Offering(id: '5', slug: 'e', title: 'e', productType: 'membership'),
-      ]);
-      expect(split.courses.map((o) => o.id), ['1', '2']);
-      expect(split.retreats.map((o) => o.id), ['3']);
-      expect(split.downloads.map((o) => o.id), ['4']);
-    },
-  );
+  test('offerings split into courses (incl. unset type), retreats, downloads '
+      'and memberships', () {
+    final split = splitOfferings(const [
+      Offering(id: '1', slug: 'a', title: 'a'),
+      Offering(id: '2', slug: 'b', title: 'b', productType: 'course'),
+      Offering(id: '3', slug: 'c', title: 'c', productType: 'retreat'),
+      Offering(id: '4', slug: 'd', title: 'd', productType: 'download'),
+      Offering(id: '5', slug: 'e', title: 'e', productType: 'membership'),
+    ]);
+    expect(split.courses.map((o) => o.id), ['1', '2']);
+    expect(split.retreats.map((o) => o.id), ['3']);
+    expect(split.downloads.map((o) => o.id), ['4']);
+    expect(split.memberships.map((o) => o.id), ['5']);
+  });
 
   test('truncateBio matches the website (120 characters, cut at a word)', () {
     expect(

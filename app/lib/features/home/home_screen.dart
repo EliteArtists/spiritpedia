@@ -22,14 +22,14 @@ class HomeScreen extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final subject = ref.watch(homeSubjectProvider);
+    final subject = ref.watch(subjectFilterProvider);
     final healers = ref.watch(healersProvider);
     final publishers =
         ref.watch(publishersProvider).value ?? const <Publisher>[];
 
     return StarPage(
-      isHome: true,
-      filter: homeSubjectProvider,
+      filter: subjectFilterProvider,
+      tabPath: '/',
       onRefresh: () async {
         ref.invalidate(healersProvider);
         ref.invalidate(publishersProvider);

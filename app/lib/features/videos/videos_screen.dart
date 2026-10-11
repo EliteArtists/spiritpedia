@@ -15,12 +15,13 @@ class VideosScreen extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final subject = ref.watch(videosSubjectProvider);
+    final subject = ref.watch(subjectFilterProvider);
     final shelves = ref.watch(videoShelvesProvider(subject));
     final directory = ref.watch(healerDirectoryProvider).value;
 
     return StarPage(
-      filter: videosSubjectProvider,
+      filter: subjectFilterProvider,
+      tabPath: '/videos',
       onRefresh: () async {
         ref.invalidate(videoShelvesProvider(subject));
         await ref.read(videoShelvesProvider(subject).future);
