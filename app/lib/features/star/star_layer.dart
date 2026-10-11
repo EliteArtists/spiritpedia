@@ -157,7 +157,10 @@ class StarLayerState extends State<StarLayer> with TickerProviderStateMixin {
 Future<void> goHome(BuildContext context, {Rect? from}) async {
   final layer = StarLayer.maybeOf(context);
   final router = GoRouter.of(context);
-  final here = router.routerDelegate.currentConfiguration.uri.path;
+  // The page on top. Not the configuration's uri: that leaves out pages
+  // pushed over the tabs (a book opened from Home still reads as '/').
+  final config = router.routerDelegate.currentConfiguration;
+  final here = config.lastOrNull?.matchedLocation ?? config.uri.path;
   if (here == '/') {
     layer?.home?.scrollToTop();
     return;

@@ -9,7 +9,6 @@ import '../../core/links/open_link.dart';
 import '../../theme/colors.dart';
 import '../detail/detail_widgets.dart';
 import '../intro/intro_overlay.dart';
-import '../shell/tab_bar_state.dart';
 import '../notifications/notifications_section.dart';
 import '../star/star_layer.dart';
 import 'account_providers.dart';
@@ -634,22 +633,6 @@ class _DebugTools extends ConsumerWidget {
                   shape: const StadiumBorder(),
                 ),
               ),
-            ),
-            const SizedBox(height: 14),
-            const Text(
-              'Tab bar colour',
-              style: TextStyle(fontSize: 13, color: SpColors.textMuted),
-            ),
-            const SizedBox(height: 6),
-            SegmentedButton<TabBarLook>(
-              showSelectedIcon: false,
-              segments: const [
-                ButtonSegment(value: TabBarLook.violet, label: Text('Violet')),
-                ButtonSegment(value: TabBarLook.light, label: Text('Light')),
-              ],
-              selected: {ref.watch(tabBarLookProvider)},
-              onSelectionChanged: (s) =>
-                  ref.read(tabBarLookProvider.notifier).set(s.single),
             ),
           ],
         ),

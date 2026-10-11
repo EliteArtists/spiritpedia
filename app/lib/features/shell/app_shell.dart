@@ -65,7 +65,6 @@ class AppShell extends ConsumerWidget {
                               child: PillTabBar(
                                 current: navigationShell.currentIndex,
                                 onSelect: _go,
-                                look: ref.watch(tabBarLookProvider),
                               ),
                             ),
                           ),
@@ -84,17 +83,11 @@ class AppShell extends ConsumerWidget {
 
 /// Videos · Books · Search, in a floating pill. On Home none is selected.
 class PillTabBar extends StatelessWidget {
-  const PillTabBar({
-    super.key,
-    required this.current,
-    required this.onSelect,
-    this.look = TabBarLook.violet,
-  });
+  const PillTabBar({super.key, required this.current, required this.onSelect});
 
   /// The shell's branch index (0 = Home, 1 = Videos, 2 = Books, 3 = Search).
   final int current;
   final ValueChanged<int> onSelect;
-  final TabBarLook look;
 
   static const _tabs = [
     (1, 'Videos', Icons.play_circle_outline, Icons.play_circle),
@@ -104,7 +97,6 @@ class PillTabBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final colours = _PillColours.of(look);
     // The shadow sits outside the clip, so the bar lifts off the page.
     return DecoratedBox(
       decoration: const BoxDecoration(
@@ -123,9 +115,11 @@ class PillTabBar extends StatelessWidget {
           filter: ImageFilter.blur(sigmaX: 18, sigmaY: 18),
           child: DecoratedBox(
             decoration: BoxDecoration(
-              color: colours.bar,
+              // Dark frosted glass: see-through charcoal over the blur,
+              // with a thin light edge.
+              color: const Color(0xA61C1F26),
               borderRadius: BorderRadius.circular(999),
-              border: Border.all(color: colours.edge),
+              border: Border.all(color: const Color(0x38FFFFFF), width: 0.8),
             ),
             child: Padding(
               padding: const EdgeInsets.all(5),
@@ -137,7 +131,6 @@ class PillTabBar extends StatelessWidget {
                       label: label,
                       icon: current == index ? selectedIcon : icon,
                       selected: current == index,
-                      colours: colours,
                       onTap: () => onSelect(index),
                     ),
                 ],
@@ -150,66 +143,35 @@ class PillTabBar extends StatelessWidget {
   }
 }
 
-/// The bar's colours in each [TabBarLook].
-class _PillColours {
-  const _PillColours({
-    required this.bar,
-    required this.edge,
-    required this.tab,
-    required this.chosen,
-    required this.chosenTab,
-  });
-
-  final Color bar;
-  final Color edge;
-  final Color tab; // an unchosen tab's icon and label
-  final Color chosen; // the chosen tab's pill
-  final Color chosenTab; // …and its icon and label
-
-  static _PillColours of(TabBarLook look) => switch (look) {
-    TabBarLook.violet => const _PillColours(
-      bar: Color(0xF27C3AED), // the site's violet
-      edge: Color(0x40FFFFFF),
-      tab: Color(0xE6FFFFFF),
-      chosen: Colors.white,
-      chosenTab: SpColors.primary,
-    ),
-    TabBarLook.light => const _PillColours(
-      bar: Color(0xF2F3F4F6), // gray-100, frosted
-      edge: Color(0x99FFFFFF),
-      tab: Color(0xFF374151), // gray-700
-      chosen: SpColors.primary,
-      chosenTab: Colors.white,
-    ),
-  };
-}
-
 class _PillTab extends StatelessWidget {
   const _PillTab({
     required this.label,
     required this.icon,
     required this.selected,
-    required this.colours,
     required this.onTap,
   });
 
   final String label;
   final IconData icon;
   final bool selected;
-  final _PillColours colours;
   final VoidCallback onTap;
 
   @override
   Widget build(BuildContext context) {
-    final colour = selected ? colours.chosenTab : colours.tab;
+    // The chosen tab in the star's gold.
+    final colour = selected ? SpColors.gold : const Color(0xD9FFFFFF);
     return Semantics(
       button: true,
       selected: selected,
       label: label,
       excludeSemantics: true,
       child: Material(
-        color: selected ? colours.chosen : Colors.transparent,
-        shape: const StadiumBorder(),
+        color: selected ? const Color(0x24F5B301) : Colors.transparent,
+        shape: StadiumBorder(
+          side: selected
+              ? const BorderSide(color: Color(0x66F5B301), width: 0.8)
+              : BorderSide.none,
+        ),
         child: InkWell(
           customBorder: const StadiumBorder(),
           onTap: onTap,

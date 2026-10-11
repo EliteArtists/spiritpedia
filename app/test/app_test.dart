@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_test/flutter_test.dart';
+import 'package:go_router/go_router.dart';
 import 'package:spiritpedia/app.dart';
 import 'package:spiritpedia/core/retry.dart';
 import 'package:spiritpedia/data/providers.dart';
 import 'package:spiritpedia/features/account/account_providers.dart';
 import 'package:spiritpedia/features/library/saved_items.dart';
 import 'package:spiritpedia/features/shell/app_shell.dart';
-import 'package:spiritpedia/features/shell/tab_bar_state.dart';
 import 'package:spiritpedia/features/star/star_layer.dart';
 import 'package:spiritpedia/features/search/feeling_placeholder.dart';
 
@@ -267,20 +267,23 @@ void main() {
     expect(find.byType(ShaderMask), findsOneWidget);
   });
 
-  testWidgets('the tab bar comes in two looks', (tester) async {
+  testWidgets('the star at the foot of a page opened from Home goes home', (
+    tester,
+  ) async {
     await start(tester);
-    final container = ProviderScope.containerOf(
-      tester.element(find.byType(SpiritpediaApp)),
+    GoRouter.of(tester.element(find.byType(PillTabBar)))
+        .push('/books/the-power-of-now');
+    await tester.pumpAndSettle();
+    expect(find.byType(FloatingHomeStar), findsOneWidget);
+
+    await tester.tap(
+      find.descendant(
+        of: find.byType(FloatingHomeStar),
+        matching: find.byType(StarAnchor),
+      ),
     );
-    expect(
-      tester.widget<PillTabBar>(find.byType(PillTabBar)).look,
-      TabBarLook.violet,
-    );
-    container.read(tabBarLookProvider.notifier).set(TabBarLook.light);
-    await tester.pump();
-    expect(
-      tester.widget<PillTabBar>(find.byType(PillTabBar)).look,
-      TabBarLook.light,
-    );
+    await tester.pumpAndSettle();
+    expect(find.byType(FloatingHomeStar), findsNothing);
+    expect(find.text('Worldwide'), findsOneWidget); // Home
   });
 }
