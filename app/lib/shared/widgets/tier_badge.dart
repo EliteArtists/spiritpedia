@@ -105,6 +105,50 @@ class TierBadge extends StatelessWidget {
   };
 }
 
+/// A healer's badge: the tier for a teacher; for a channel or an app, what
+/// it is — never a teacher's tier, which describes a person.
+class HealerBadge extends StatelessWidget {
+  const HealerBadge({super.key, required this.tier, this.entityType});
+
+  final String? tier;
+  final String? entityType;
+
+  @override
+  Widget build(BuildContext context) {
+    final platform = switch (entityType) {
+      'channel' => 'Channel',
+      'app' => 'App',
+      _ => null,
+    };
+    if (platform == null) return TierBadge(tier: tier);
+    return Semantics(
+      label: platform,
+      excludeSemantics: true,
+      child: DecoratedBox(
+        decoration: BoxDecoration(
+          color: SpColors.surfaceRaised,
+          borderRadius: BorderRadius.circular(999),
+          border: Border.all(color: const Color(0x33FFFFFF)),
+        ),
+        child: Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 3),
+          child: Text(
+            platform.toUpperCase(),
+            style: const TextStyle(
+              fontFamily: 'Geist',
+              fontSize: 10,
+              fontWeight: FontWeight.w700,
+              letterSpacing: 0.5,
+              color: SpColors.text,
+              height: 1.4,
+            ),
+          ),
+        ),
+      ),
+    );
+  }
+}
+
 class _BadgeStyle {
   const _BadgeStyle({
     required this.label,

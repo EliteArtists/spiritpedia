@@ -111,11 +111,12 @@ class HealerShelves {
           if (!h.isPlatform && h.tier == 'ascended_master') h,
       ],
       // SAFE FALLBACK: anything not a premium tier — NULL included — shows here,
-      // so no practitioner silently vanishes. (Platforms are not excluded,
-      // matching the website.)
+      // so no practitioner silently vanishes. Channels and apps are left out:
+      // they have their own shelf. (The website lets them in here too —
+      // HomePageContent.js filters `healers`, not `individuals`.)
       localHeroes = [
         for (final h in healers)
-          if (!_isPremium(h)) h,
+          if (!h.isPlatform && !_isPremium(h)) h,
       ],
       platforms = [
         for (final h in healers)

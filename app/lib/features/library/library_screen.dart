@@ -183,14 +183,30 @@ class LibraryScreen extends ConsumerWidget {
             else
               SliverList.list(
                 children: [
-                  Shelf(
-                    title: 'Teachers',
-                    itemCount: content.healers.length,
-                    itemWidth: 172,
-                    height: 240,
-                    itemBuilder: (_, i) =>
-                        HealerCard(healer: content.healers[i]),
-                  ),
+                  // Saved channels and apps apart from saved teachers.
+                  for (final (title, people) in [
+                    (
+                      'Teachers',
+                      [
+                        for (final h in content.healers)
+                          if (!h.isPlatform) h,
+                      ],
+                    ),
+                    (
+                      'Channels & Apps',
+                      [
+                        for (final h in content.healers)
+                          if (h.isPlatform) h,
+                      ],
+                    ),
+                  ])
+                    Shelf(
+                      title: title,
+                      itemCount: people.length,
+                      itemWidth: 172,
+                      height: 240,
+                      itemBuilder: (_, i) => HealerCard(healer: people[i]),
+                    ),
                   Shelf(
                     title: 'Want to Read',
                     itemCount: content.books.length,

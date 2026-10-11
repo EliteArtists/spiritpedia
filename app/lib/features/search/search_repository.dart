@@ -46,6 +46,9 @@ class SupabaseSearchRepository implements SearchRepository {
 
   final SupabaseClient _db;
 
+  /// The same client, for the plain search beside this one.
+  SupabaseClient get client => _db;
+
   static List<MappingRow> _rows(List<Map<String, dynamic>> data) => [
     for (final r in data)
       MappingRow(r['subject_slug'] as String, (r['weight'] as num).toInt()),

@@ -12,6 +12,9 @@ import '../../shared/widgets/net_image.dart';
 import '../../theme/colors.dart';
 import '../star/star_layer.dart';
 import '../star/star_page.dart';
+import '../star/slipstream.dart';
+import '../star/twinkle.dart';
+import 'content_search.dart';
 import 'emotion_search_controller.dart';
 import 'feeling_placeholder.dart';
 import 'search_repository.dart';
@@ -25,13 +28,27 @@ final searchRepositoryProvider = Provider<SearchRepository>(
   (ref) => SupabaseSearchRepository(ref.watch(supabaseProvider)),
 );
 
-/// The full-screen emotional search. [standalone] is the version pushed from
-/// Home's "How are you feeling today?", with its own close button; the Search
-/// tab shows the same screen in place.
+/// The plain engine, on the same connection as the feelings engine. A
+/// stand-in repository (in tests) gets its universal search instead.
+final contentSearchProvider = Provider<ContentSearch>((ref) {
+  final repository = ref.watch(searchRepositoryProvider);
+  return repository is SupabaseSearchRepository
+      ? SupabaseContentSearch(repository.client)
+      : UniversalContentSearch(repository);
+});
+
+/// The full-screen search: feelings and names in one box. [standalone] is the
+/// version pushed from a tab's search box, with its own close button. [scope]
+/// is which box: Discover searches everything, Videos and Books their own.
 class SearchScreen extends ConsumerWidget {
-  const SearchScreen({super.key, this.standalone = false});
+  const SearchScreen({
+    super.key,
+    this.standalone = false,
+    this.scope = SearchScope.all,
+  });
 
   final bool standalone;
+  final SearchScope scope;
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
@@ -55,6 +72,7 @@ class SearchScreen extends ConsumerWidget {
             safety: s,
             repository: ref.watch(searchRepositoryProvider),
             standalone: standalone,
+            scope: scope,
           ),
         ),
       ),
@@ -67,11 +85,13 @@ class _Search extends ConsumerStatefulWidget {
     required this.safety,
     required this.repository,
     required this.standalone,
+    required this.scope,
   });
 
   final EmotionSafety safety;
   final SearchRepository repository;
   final bool standalone;
+  final SearchScope scope;
 
   @override
   ConsumerState<_Search> createState() => _SearchState();
@@ -81,11 +101,19 @@ class _SearchState extends ConsumerState<_Search> {
   late final EmotionSearchController _search = EmotionSearchController(
     safety: widget.safety,
     repository: widget.repository,
+    plain: ref.read(contentSearchProvider),
+    scope: widget.scope,
   )..addListener(_changed);
+
+  /// "See all": which group, and its fuller list.
+  (ResultKind, Future<List<Object>>)? _seeAll;
   final _field = TextEditingController();
   final _focus = FocusNode();
 
-  void _changed() => setState(() {});
+  void _changed() => setState(() {
+    // A new search (or none) leaves any "See all" behind.
+    if (_search.view != SearchView.results) _seeAll = null;
+  });
 
   @override
   void initState() {
@@ -153,8 +181,14 @@ class _SearchState extends ConsumerState<_Search> {
                     // Example feelings typed out until someone taps in; then
                     // the question, until they type.
                     hint: _focus.hasFocus
-                        ? const Text(
-                            feelingQuestion,
+                        ? Text(
+                            switch (widget.scope) {
+                              SearchScope.all => feelingQuestion,
+                              SearchScope.videos =>
+                                'Search videos, or say how you feel',
+                              SearchScope.books =>
+                                'Search books, or say how you feel',
+                            },
                             maxLines: 1,
                             overflow: TextOverflow.ellipsis,
                             style: TextStyle(
@@ -171,9 +205,13 @@ class _SearchState extends ConsumerState<_Search> {
                     filled: true,
                     fillColor: SpColors.surface,
                     // The star, where the magnifying glass was: home.
-                    prefixIcon: const Padding(
-                      padding: EdgeInsets.only(left: 6, right: 2),
-                      child: StarAnchor(size: 26),
+                    prefixIcon: Padding(
+                      padding: const EdgeInsets.only(left: 6, right: 2),
+                      // It twinkles while the results load.
+                      child: StarAnchor(
+                        size: 26,
+                        thinking: _search.view == SearchView.loading,
+                      ),
                     ),
                     suffixIcon: _search.text.isEmpty
                         ? null
@@ -228,16 +266,23 @@ class _SearchState extends ConsumerState<_Search> {
       content: widget.safety.dualPath,
       onAnswer: _search.answerDualPath,
     ),
-    SearchView.loading => const Center(
-      child: Text('Searching…', style: TextStyle(color: SpColors.textMuted)),
+    // The star thinks while results load.
+    SearchView.loading => Center(
+      child: Semantics(
+        label: 'Searching',
+        child: const SizedBox(width: 56, height: 56, child: TwinklingStar()),
+      ),
+    ),
+    SearchView.results when _seeAll != null => _SeeAll(
+      kind: _seeAll!.$1,
+      items: _seeAll!.$2,
+      onBack: () => setState(() => _seeAll = null),
     ),
     SearchView.results => _Results(
-      subjects: _search.subjects,
-      medicalDisclaimer: _search.medicalDisclaimer,
-      softTier: _search.softTier,
-      onOpen: _openSubject,
+      search: _search,
+      onOpenSubject: _openSubject,
+      onSeeAll: (kind) => setState(() => _seeAll = (kind, _search.more(kind))),
     ),
-    SearchView.universal => _Universal(results: _search.universal),
     SearchView.noMatch => _NoMatch(
       softTier: _search.softTier,
       onPick: _fill,
@@ -475,31 +520,30 @@ String _subjectLabel(List<Subject>? subjects, String slug) {
           .join(' ');
 }
 
+/// Everything a search found, in one list: Spiritpedia Suggests, then the
+/// feeling's matches and the name-and-title matches — titles first when the
+/// words name something ([EmotionSearchController.titlesFirst]) — each group
+/// with "See all".
 class _Results extends ConsumerWidget {
   const _Results({
-    required this.subjects,
-    required this.onOpen,
-    this.medicalDisclaimer,
-    this.softTier,
+    required this.search,
+    required this.onOpenSubject,
+    required this.onSeeAll,
   });
 
-  final List<MappingRow> subjects;
-  final String? medicalDisclaimer;
-  final String? softTier;
-  final ValueChanged<String> onOpen;
+  final EmotionSearchController search;
+  final ValueChanged<String> onOpenSubject;
+  final ValueChanged<ResultKind> onSeeAll;
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final names = ref.watch(subjectsProvider).value;
-    return ListView(
-      padding: EdgeInsets.fromLTRB(
-        16,
-        8,
-        16,
-        32 + _TabBarClearance.of(context),
-      ),
-      children: [
-        for (final row in subjects)
+    final suggestions = search.suggestions;
+
+    final feeling = <Widget>[
+      if (search.scope == SearchScope.all && search.subjects.isNotEmpty) ...[
+        const _GroupHeader('FOR HOW YOU FEEL'),
+        for (final row in search.subjects)
           ListTile(
             title: Text(
               _subjectLabel(names, row.subjectSlug),
@@ -510,54 +554,243 @@ class _Results extends ConsumerWidget {
               color: SpColors.textFaint,
               size: 20,
             ),
-            onTap: () => onOpen(row.subjectSlug),
+            onTap: () => onOpenSubject(row.subjectSlug),
           ),
-        // Beneath the results it qualifies, never above them.
-        if (medicalDisclaimer != null)
-          Padding(
-            padding: const EdgeInsets.fromLTRB(16, 8, 16, 0),
-            child: Text(
-              medicalDisclaimer!,
-              style: const TextStyle(fontSize: 13, color: SpColors.textFaint),
+      ],
+      // On Videos and Books: the feeling's videos or books themselves.
+      if (search.scope != SearchScope.all && !search.feelings.isEmpty) ...[
+        const _GroupHeader('FOR HOW YOU FEEL'),
+        for (final item in <Object>[
+          ...search.feelings.videos,
+          ...search.feelings.books,
+        ].take(search.perKind))
+          ResultTile(item: item),
+      ],
+      // Beneath the results it qualifies, never above them.
+      if (search.medicalDisclaimer != null)
+        Padding(
+          padding: const EdgeInsets.fromLTRB(16, 8, 16, 0),
+          child: Text(
+            search.medicalDisclaimer!,
+            style: const TextStyle(fontSize: 13, color: SpColors.textFaint),
+          ),
+        ),
+      // Quiet: small, muted, after the results.
+      if (search.softTier != null)
+        Padding(
+          padding: const EdgeInsets.fromLTRB(16, 14, 16, 0),
+          child: Text(
+            search.softTier!,
+            style: const TextStyle(
+              fontSize: 13,
+              color: SpColors.textFaint,
+              height: 1.5,
             ),
           ),
-        // Quiet: small, muted, after the results.
-        if (softTier != null)
-          Padding(
-            padding: const EdgeInsets.fromLTRB(16, 14, 16, 0),
-            child: Text(
-              softTier!,
-              style: const TextStyle(
-                fontSize: 13,
-                color: SpColors.textFaint,
-                height: 1.5,
-              ),
-            ),
-          ),
+        ),
+    ];
+
+    final named = <Widget>[
+      for (final kind in search.content.kinds) ...[
+        _GroupHeader(
+          kind.label.toUpperCase(),
+          // A full group may have more behind it.
+          onSeeAll: search.content.byKind[kind]!.length >= search.perKind
+              ? () => onSeeAll(kind)
+              : null,
+        ),
+        for (final item in search.content.byKind[kind]!) ResultTile(item: item),
+      ],
+    ];
+
+    return ListView(
+      padding: EdgeInsets.only(bottom: 32 + _TabBarClearance.of(context)),
+      children: [
+        if (!suggestions.isEmpty) _Suggests(suggestions: suggestions),
+        if (search.titlesFirst) ...[
+          ...named,
+          ...feeling,
+        ] else ...[
+          ...feeling,
+          ...named,
+        ],
       ],
     );
   }
 }
 
-class _Universal extends StatelessWidget {
-  const _Universal({required this.results});
+class _GroupHeader extends StatelessWidget {
+  const _GroupHeader(this.label, {this.onSeeAll});
 
-  final UniversalResults results;
+  final String label;
+  final VoidCallback? onSeeAll;
 
   @override
   Widget build(BuildContext context) {
-    Widget header(String label) => Padding(
-      padding: const EdgeInsets.fromLTRB(16, 18, 16, 6),
-      child: Text(
-        label,
-        style: const TextStyle(
-          fontSize: 11.5,
-          fontWeight: FontWeight.w700,
-          letterSpacing: 1.1,
-          color: SpColors.textFaint,
+    return Padding(
+      padding: const EdgeInsets.fromLTRB(16, 18, 4, 2),
+      child: Row(
+        children: [
+          Expanded(
+            child: Semantics(
+              header: true,
+              child: Text(
+                label,
+                style: const TextStyle(
+                  fontSize: 11.5,
+                  fontWeight: FontWeight.w700,
+                  letterSpacing: 1.1,
+                  color: SpColors.textFaint,
+                ),
+              ),
+            ),
+          ),
+          if (onSeeAll != null)
+            TextButton(
+              onPressed: onSeeAll,
+              style: TextButton.styleFrom(foregroundColor: SpColors.link),
+              child: const Text('See all'),
+            ),
+        ],
+      ),
+    );
+  }
+}
+
+/// One video and one book, picked by relevance alone.
+class _Suggests extends StatelessWidget {
+  const _Suggests({required this.suggestions});
+
+  final Suggestions suggestions;
+
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: const EdgeInsets.fromLTRB(12, 12, 12, 4),
+      // Material, not a painted box, so its rows' taps still ripple.
+      child: Material(
+        color: SpColors.surface,
+        clipBehavior: Clip.antiAlias,
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(16),
+          side: BorderSide(color: SpColors.gold.withValues(alpha: 0.35)),
+        ),
+        child: Padding(
+          padding: const EdgeInsets.only(bottom: 6),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              const Padding(
+                padding: EdgeInsets.fromLTRB(16, 14, 16, 2),
+                child: Row(
+                  children: [
+                    SizedBox(width: 18, height: 18, child: StarSprite()),
+                    SizedBox(width: 8),
+                    Text(
+                      'Spiritpedia Suggests',
+                      style: TextStyle(
+                        fontSize: 15,
+                        fontWeight: FontWeight.w700,
+                        color: SpColors.gold,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+              if (suggestions.video != null)
+                ResultTile(item: suggestions.video!),
+              if (suggestions.book != null) ResultTile(item: suggestions.book!),
+            ],
+          ),
         ),
       ),
     );
+  }
+}
+
+/// "See all" for one group: more of it, with the way back to every result.
+class _SeeAll extends StatelessWidget {
+  const _SeeAll({
+    required this.kind,
+    required this.items,
+    required this.onBack,
+  });
+
+  final ResultKind kind;
+  final Future<List<Object>> items;
+  final VoidCallback onBack;
+
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      children: [
+        Padding(
+          padding: const EdgeInsets.fromLTRB(4, 0, 16, 0),
+          child: Row(
+            children: [
+              IconButton(
+                tooltip: 'All results',
+                onPressed: onBack,
+                icon: const Icon(Icons.arrow_back),
+              ),
+              Expanded(
+                child: Text(
+                  kind.label,
+                  style: const TextStyle(
+                    fontSize: 18,
+                    fontWeight: FontWeight.w700,
+                  ),
+                ),
+              ),
+            ],
+          ),
+        ),
+        Expanded(
+          child: FutureBuilder<List<Object>>(
+            future: items,
+            builder: (context, snap) {
+              if (!snap.hasData && !snap.hasError) {
+                return const Center(
+                  child: SizedBox(
+                    width: 48,
+                    height: 48,
+                    child: TwinklingStar(),
+                  ),
+                );
+              }
+              final list = snap.data ?? const <Object>[];
+              if (list.isEmpty) {
+                return const Center(
+                  child: Text(
+                    'Nothing more to show.',
+                    style: TextStyle(color: SpColors.textMuted),
+                  ),
+                );
+              }
+              return ListView(
+                padding: EdgeInsets.only(
+                  bottom: 32 + _TabBarClearance.of(context),
+                ),
+                children: [for (final item in list) ResultTile(item: item)],
+              );
+            },
+          ),
+        ),
+      ],
+    );
+  }
+}
+
+/// One result, whatever it is: a picture, a name or title, a quiet line
+/// saying what it is, and where it leads.
+class ResultTile extends ConsumerWidget {
+  const ResultTile({super.key, required this.item});
+
+  final Object item;
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    final directory = ref.watch(healerDirectoryProvider).value;
     Widget thumb(
       String? url,
       String label, {
@@ -572,70 +805,60 @@ class _Universal extends StatelessWidget {
         child: NetImage(url: url, fallbackLabel: label),
       ),
     );
-
-    return ListView(
-      padding: EdgeInsets.only(bottom: 32 + _TabBarClearance.of(context)),
-      children: [
-        if (results.healers.isNotEmpty) header('HEALERS'),
-        for (final h in results.healers)
-          ListTile(
-            leading: thumb(
-              (h['image_urls'] as List?)?.whereType<String>().firstOrNull,
-              '${h['name']}',
-              round: true,
-            ),
-            title: Text('${h['name']}'),
-            onTap: () => context.push('/healers/${h['healer_slug']}'),
-          ),
-        if (results.books.isNotEmpty) header('BOOKS'),
-        for (final b in results.books)
-          ListTile(
-            leading: thumb(
-              b['mock_cover_url'] as String?,
-              '${b['title']}',
-              w: 34,
-              h: 50,
-            ),
-            title: Text(
-              '${b['title']}',
-              maxLines: 2,
+    final (
+      Widget? leading,
+      String title,
+      String? line,
+      String path,
+    ) = switch (item) {
+      Healer h => (
+        thumb(h.imageUrls.firstOrNull, h.name, round: true),
+        h.name,
+        h.isPlatform ? (h.entityType == 'app' ? 'App' : 'Channel') : 'Teacher',
+        '/healers/${h.slug}',
+      ),
+      Video v => (
+        thumb(v.thumbnailUrl, v.title, w: 64, h: 36),
+        v.title,
+        directory?.bySlug(v.healerSlug)?.name,
+        '/videos/${v.slug}',
+      ),
+      Book b => (
+        thumb(b.coverUrl, b.title, w: 34, h: 50),
+        b.title,
+        b.author ?? directory?.bySlug(b.healerSlug)?.name,
+        '/books/${b.slug}',
+      ),
+      Offering o => (
+        thumb(o.imageUrl, o.title, w: 56, h: 40),
+        o.title,
+        directory?.byId(o.healerId)?.name,
+        '/offerings/${o.slug}',
+      ),
+      FreeResource r => (
+        thumb(r.imageUrl, r.title, w: 56, h: 40),
+        r.title,
+        'Free · ${r.typeLabel}',
+        '/free-resources/${r.slug}',
+      ),
+      Subject s => (null, s.name, 'Subject', '/subject/${s.slug}'),
+      _ => (null, '', null, '/'),
+    };
+    return ListTile(
+      leading: leading,
+      title: Text(title, maxLines: 2, overflow: TextOverflow.ellipsis),
+      subtitle: line == null
+          ? null
+          : Text(
+              line,
+              maxLines: 1,
               overflow: TextOverflow.ellipsis,
+              style: const TextStyle(fontSize: 13, color: SpColors.textMuted),
             ),
-            onTap: () => context.push('/books/${b['slug']}'),
-          ),
-        if (results.videos.isNotEmpty) header('VIDEOS'),
-        for (final v in results.videos)
-          ListTile(
-            leading: thumb(
-              Video(
-                id: 0,
-                slug: '',
-                title: '',
-                platformUrl: v['platform_url'] as String?,
-              ).thumbnailUrl,
-              '${v['title']}',
-              w: 64,
-              h: 36,
-            ),
-            title: Text(
-              '${v['title']}',
-              maxLines: 2,
-              overflow: TextOverflow.ellipsis,
-            ),
-            onTap: () => context.push('/videos/${v['slug']}'),
-          ),
-        if (results.subjects.isNotEmpty) header('SUBJECTS'),
-        for (final s in results.subjects)
-          ListTile(
-            title: Text('${s['name']}'),
-            trailing: const Icon(
-              Icons.arrow_forward,
-              color: SpColors.textFaint,
-              size: 20,
-            ),
-            onTap: () => context.push('/subject/${s['slug']}'),
-          ),
-      ],
+      trailing: item is Subject
+          ? const Icon(Icons.arrow_forward, color: SpColors.textFaint, size: 20)
+          : null,
+      onTap: () => context.push(path),
     );
   }
 }

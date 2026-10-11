@@ -3,29 +3,44 @@ import 'dart:async';
 import 'package:flutter/foundation.dart';
 
 import '../../core/safety/emotion_safety.dart';
+import '../../data/models.dart';
+import 'content_search.dart';
 import 'search_repository.dart';
 
 /// What the search screen shows.
-enum SearchView { idle, crisis, dualPath, loading, results, universal, noMatch }
+enum SearchView { idle, crisis, dualPath, loading, results, noMatch }
 
 /// The search's behaviour, as the website's EmotionSearch.js — kept apart from
 /// the screen so it can be tested without one.
 ///
 /// THE TWO SAFETY GATES RUN ON EVERY KEYSTROKE, BEFORE THE 300 ms DEBOUNCE
 /// AND BEFORE ANY REQUEST. A crisis phrase shows the crisis screen at once and
-/// sends nothing — not the emotion lookup, not the universal search. Words
+/// sends nothing — not the emotion lookup, not the plain search. Words
 /// typed before a phrase is complete can already have gone out as an ordinary
 /// search (the Privacy Policy says so); the complete phrase never does.
 class EmotionSearchController extends ChangeNotifier {
   EmotionSearchController({
     required this.safety,
     required this.repository,
+    ContentSearch? plain,
+    this.scope = SearchScope.all,
     this.debounce = const Duration(milliseconds: 300),
-  });
+  }) : plain = plain ?? UniversalContentSearch(repository);
 
   final EmotionSafety safety;
+
+  /// The feelings engine's reads (the emotion mapping).
   final SearchRepository repository;
+
+  /// The plain engine: names and titles.
+  final ContentSearch plain;
+
+  /// Which box this is: Discover (everything), Videos or Books.
+  final SearchScope scope;
   final Duration debounce;
+
+  /// Matches shown per group before "See all".
+  int get perKind => scope == SearchScope.all ? 3 : 12;
 
   String _text = '';
   String? _dualPathAnswer;
@@ -34,7 +49,9 @@ class EmotionSearchController extends ChangeNotifier {
   List<MappingRow> _rows = const [];
   String? _softTier;
   String? _medicalDisclaimer;
-  UniversalResults _universal = UniversalResults.empty;
+  ContentResults _content = ContentResults.empty;
+  FeelingMatches _feelings = FeelingMatches.empty;
+  Suggestions _suggestions = Suggestions.none;
   Timer? _timer;
   int _generation = 0;
 
@@ -43,7 +60,34 @@ class EmotionSearchController extends ChangeNotifier {
   String? get crisisCategory => _crisisCategory;
   String? get softTier => _softTier;
   String? get medicalDisclaimer => _medicalDisclaimer;
-  UniversalResults get universal => _universal;
+
+  /// The plain engine's matches, by group.
+  ContentResults get content => _content;
+
+  /// On Videos and Books: what the feeling found there.
+  FeelingMatches get feelings => _feelings;
+
+  /// Spiritpedia Suggests: one video and one book, by relevance alone.
+  Suggestions get suggestions => _suggestions;
+
+  /// Whether name and title matches lead, above the feeling's subjects: when
+  /// something is called what was typed, and the words are more than a
+  /// feeling ("September Astrology Forecast 2026"), or no feeling matched.
+  bool get titlesFirst {
+    final q = _text.trim().toLowerCase();
+    if (_rows.isEmpty) return true;
+    if (searchWords(q).length < 3) return false;
+    bool named(Object o) => switch (o) {
+      Video v => v.title.toLowerCase().contains(q),
+      Book b => b.title.toLowerCase().contains(q),
+      Healer h => h.name.toLowerCase().contains(q),
+      Offering o => o.title.toLowerCase().contains(q),
+      FreeResource r => r.title.toLowerCase().contains(q),
+      Subject s => s.name.toLowerCase().contains(q),
+      _ => false,
+    };
+    return _content.byKind.values.any((items) => items.any(named));
+  }
 
   /// Up to six distinct subjects, strongest first (uniqueSubjects()).
   List<MappingRow> get subjects {
@@ -68,7 +112,9 @@ class EmotionSearchController extends ChangeNotifier {
     _rows = const [];
     _softTier = null;
     _medicalDisclaimer = null;
-    _universal = UniversalResults.empty;
+    _content = ContentResults.empty;
+    _feelings = FeelingMatches.empty;
+    _suggestions = Suggestions.none;
     _crisisCategory = null;
   }
 
@@ -135,11 +181,11 @@ class EmotionSearchController extends ChangeNotifier {
           dualPathAnswer: _dualPathAnswer,
           vocabularyLookup: repository.vocabulary,
         ),
-        repository.universal(term),
+        plain.search(term, scope: scope, perKind: perKind),
       ]);
       if (generation != _generation) return;
       var resolved = results[0] as EmotionSearchResult;
-      _universal = results[1] as UniversalResults;
+      _content = results[1] as ContentResults;
 
       var rows = resolved.type == 'results'
           ? resolved.rows
@@ -162,17 +208,33 @@ class EmotionSearchController extends ChangeNotifier {
         ];
       }
 
+      // The feeling's strongest subjects: their videos and books, for the
+      // Videos and Books boxes and for Suggests.
+      if (rows.isNotEmpty) {
+        final top = <String>{};
+        for (final r in rows) {
+          if (top.length == 3) break;
+          top.add(r.subjectSlug);
+        }
+        _feelings = await plain.forSubjects(top.toList(), scope: scope);
+        if (generation != _generation) return;
+      }
+      _suggestions = suggest(
+        term: term,
+        rows: rows,
+        videos: [..._content.of<Video>(ResultKind.videos), ..._feelings.videos],
+        books: [..._content.of<Book>(ResultKind.books), ..._feelings.books],
+      );
+
       _softTier = safety.checkSoftTier(normalised) ? safety.softTierLine : null;
       if (rows.isNotEmpty) {
         _rows = rows;
         _medicalDisclaimer = safety.needsMedicalDisclaimer(rows)
             ? safety.medicalDisclaimer
             : null;
-        return _set(SearchView.results);
       }
-      return _set(
-        _universal.isEmpty ? SearchView.noMatch : SearchView.universal,
-      );
+      final found = rows.isNotEmpty || !_content.isEmpty || !_feelings.isEmpty;
+      return _set(found ? SearchView.results : SearchView.noMatch);
     } catch (_) {
       if (generation != _generation) return;
       return _set(SearchView.noMatch);
@@ -192,6 +254,16 @@ class EmotionSearchController extends ChangeNotifier {
       }
     }
     return repository.forwardSubstring(normalised);
+  }
+
+  /// "See all" for one group: more of it, for the text already shown —
+  /// which has passed the gates. Nothing is sent from any other view.
+  Future<List<Object>> more(ResultKind kind) async {
+    if (_view != SearchView.results) return const [];
+    // The gates again — "See all" must never bypass them.
+    final normalised = safety.normaliseQuery(_text);
+    if (safety.checkCrisis(normalised) != null) return const [];
+    return plain.more(_text.trim(), kind);
   }
 
   /// Pressing search on the keyboard: open the best subject if there is one

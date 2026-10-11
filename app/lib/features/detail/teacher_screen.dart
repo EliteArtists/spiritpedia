@@ -190,7 +190,9 @@ class _Badge extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    if (!healer.isAscendedMaster) return TierBadge(tier: healer.tier);
+    if (!healer.isAscendedMaster) {
+      return HealerBadge(tier: healer.tier, entityType: healer.entityType);
+    }
     final lifespan = formatLifespan(healer);
     if (lifespan == null) return const SizedBox.shrink();
     return DecoratedBox(
@@ -275,7 +277,8 @@ class _Contact extends StatelessWidget {
             h.bookingUrl != null);
     if (!show) return const SizedBox.shrink();
     final online = h.availabilityType?.contains('Online') ?? false;
-    final firstName = h.name.split(' ').first;
+    // "Book with Eckhart" — but a channel is booked by its whole name.
+    final firstName = h.isPlatform ? h.name : h.name.split(' ').first;
 
     Widget pill(String text, Color bg, Color fg) => DecoratedBox(
       decoration: BoxDecoration(

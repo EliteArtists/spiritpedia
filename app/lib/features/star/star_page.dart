@@ -154,6 +154,12 @@ class _StarPageState extends ConsumerState<StarPage> implements TabStarTarget {
                   const SliverToBoxAdapter(child: TopBar()),
                   SliverToBoxAdapter(
                     child: StarSearchBox(
+                      // Videos and Books search only their own kind.
+                      searchPath: switch (widget.tabPath) {
+                        '/videos' => '/feel?in=videos',
+                        '/books' => '/feel?in=books',
+                        _ => '/feel',
+                      },
                       starKey: _boxStar,
                       starVisible: !hidden && !_docked,
                     ),
@@ -221,9 +227,13 @@ class StarSearchBox extends StatelessWidget {
     super.key,
     required this.starKey,
     this.starVisible = true,
+    this.searchPath = '/feel',
   });
 
   final GlobalKey starKey;
+
+  /// The search this box opens.
+  final String searchPath;
   final bool starVisible;
 
   @override
@@ -235,7 +245,7 @@ class StarSearchBox extends StatelessWidget {
         shape: const StadiumBorder(side: BorderSide(color: SpColors.border)),
         child: InkWell(
           customBorder: const StadiumBorder(),
-          onTap: () => context.push('/feel'),
+          onTap: () => context.push(searchPath),
           child: SizedBox(
             height: 56,
             child: Row(
@@ -248,7 +258,11 @@ class StarSearchBox extends StatelessWidget {
                 Expanded(
                   child: Semantics(
                     button: true,
-                    label: 'How are you feeling today? Search',
+                    label: searchPath.contains('in=videos')
+                        ? 'Search videos, or say how you feel'
+                        : searchPath.contains('in=books')
+                        ? 'Search books, or say how you feel'
+                        : 'How are you feeling today? Search',
                     excludeSemantics: true,
                     // Example feelings typed out, as on the website; the
                     // search it opens asks the question itself.

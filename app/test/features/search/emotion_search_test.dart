@@ -290,7 +290,7 @@ void main() {
       await tester.enterText(find.byType(TextField), 'eckhart');
       await tester.pump(settle);
       await tester.pumpAndSettle();
-      expect(find.text('HEALERS'), findsOneWidget);
+      expect(find.text('TEACHERS'), findsOneWidget);
       expect(find.text('Eckhart Tolle'), findsOneWidget);
     });
 

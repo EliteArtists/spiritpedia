@@ -46,8 +46,14 @@ class SubjectScreen extends ConsumerWidget {
             ),
           ),
           data: (c) {
-            final teacherShelves =
-                directory?.videosByTeacher(c.videos) ?? const [];
+            // Teachers' videos first, then channels'.
+            final byHealer = directory?.videosByTeacher(c.videos) ?? const [];
+            final teacherShelves = [
+              for (final g in byHealer)
+                if (!g.healer.isPlatform) g,
+              for (final g in byHealer)
+                if (g.healer.isPlatform) g,
+            ];
             return ListView(
               padding: const EdgeInsets.only(
                 bottom: 32 + FloatingHomeStar.clearance,
@@ -91,14 +97,33 @@ class SubjectScreen extends ConsumerWidget {
                       ),
                     ),
                   ),
-                Shelf(
-                  title: 'Healers',
-                  subtitle: 'Practitioners & Teachers',
-                  itemCount: c.healers.length,
-                  itemWidth: 172,
-                  height: 240,
-                  itemBuilder: (_, i) => HealerCard(healer: c.healers[i]),
-                ),
+                // Teachers apart from channels and apps, as on Discover.
+                for (final (title, subtitle, people) in [
+                  (
+                    'Teachers',
+                    'Practitioners & Teachers',
+                    [
+                      for (final h in c.healers)
+                        if (!h.isPlatform) h,
+                    ],
+                  ),
+                  (
+                    'Channels & Apps',
+                    'Platforms & Channels',
+                    [
+                      for (final h in c.healers)
+                        if (h.isPlatform) h,
+                    ],
+                  ),
+                ])
+                  Shelf(
+                    title: title,
+                    subtitle: subtitle,
+                    itemCount: people.length,
+                    itemWidth: 172,
+                    height: 240,
+                    itemBuilder: (_, i) => HealerCard(healer: people[i]),
+                  ),
                 Shelf(
                   title: 'Free Resources',
                   subtitle: 'No cost, no catch',
@@ -139,7 +164,9 @@ class SubjectScreen extends ConsumerWidget {
                 for (final group in teacherShelves)
                   Shelf(
                     title: group.healer.name,
-                    subtitle: '${group.total} videos',
+                    subtitle: group.healer.isPlatform
+                        ? '${group.healer.entityType == 'app' ? 'App' : 'Channel'} · ${group.total} videos'
+                        : '${group.total} videos',
                     itemCount: group.videos.length,
                     itemWidth: 250,
                     height: 232,

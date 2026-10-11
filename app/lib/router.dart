@@ -10,6 +10,7 @@ import 'features/detail/teacher_screen.dart';
 import 'features/detail/video_screen.dart';
 import 'features/home/home_screen.dart';
 import 'features/library/library_screen.dart';
+import 'features/search/content_search.dart';
 import 'features/search/search_screen.dart';
 import 'features/shell/app_shell.dart';
 import 'features/subject/subject_screen.dart';
@@ -79,7 +80,12 @@ GoRouter buildRouter({void Function(Uri)? onUnknownLink}) => GoRouter(
     GoRoute(
       parentNavigatorKey: _rootKey,
       path: '/feel',
-      builder: (context, state) => const SearchScreen(standalone: true),
+      // ?in=videos or ?in=books: the Videos or Books box, which searches only
+      // its own kind. Otherwise everything (Discover's box).
+      builder: (context, state) => SearchScreen(
+        standalone: true,
+        scope: SearchScope.fromName(state.uri.queryParameters['in']),
+      ),
     ),
     // There was a Search tab; links to it open the search.
     GoRoute(

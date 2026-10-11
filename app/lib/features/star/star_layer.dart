@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
 import 'slipstream.dart';
+import 'twinkle.dart';
 
 /// A tab's page (Discover, Videos, Books): where its star is resting right
 /// now — the search box, or the start of the sticky pill row — and a way back
@@ -214,9 +215,13 @@ class StarAnchor extends StatefulWidget {
     this.starKey,
     this.onTap,
     this.tapTarget = 44,
+    this.thinking = false,
   });
 
   final double size;
+
+  /// Twinkles while something loads (search results).
+  final bool thinking;
   final bool visible;
   final GlobalKey? starKey;
   final VoidCallback? onTap;
@@ -262,7 +267,9 @@ class _StarAnchorState extends State<StarAnchor> {
                 duration: widget.visible
                     ? const Duration(milliseconds: 140)
                     : Duration.zero,
-                child: const StarSprite(),
+                child: widget.thinking
+                    ? const TwinklingStar()
+                    : const StarSprite(),
               ),
             ),
           ),

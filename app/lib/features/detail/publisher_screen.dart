@@ -96,60 +96,80 @@ class PublisherScreen extends ConsumerWidget {
                 ],
               ),
             ),
-            if (c.authors.isNotEmpty) ...[
-              const Padding(
-                padding: EdgeInsets.fromLTRB(20, 30, 20, 12),
-                child: Text(
-                  'Our Authors',
-                  style: TextStyle(fontSize: 19, fontWeight: FontWeight.w700),
-                ),
+            // Channels and apps linked to the house are not its authors.
+            for (final (heading, people) in [
+              (
+                'Our Authors',
+                [
+                  for (final a in c.authors)
+                    if (!a.isPlatform) a,
+                ],
               ),
-              SizedBox(
-                height: 92,
-                child: ListView.separated(
-                  scrollDirection: Axis.horizontal,
-                  padding: const EdgeInsets.symmetric(horizontal: 20),
-                  itemCount: c.authors.length,
-                  separatorBuilder: (_, _) => const SizedBox(width: 16),
-                  itemBuilder: (context, i) {
-                    final a = c.authors[i];
-                    return GestureDetector(
-                      onTap: () => context.push('/healers/${a.slug}'),
-                      child: SizedBox(
-                        width: 66,
-                        child: Column(
-                          children: [
-                            ClipOval(
-                              child: SizedBox(
-                                width: 54,
-                                height: 54,
-                                child: NetImage(
-                                  url: a.imageUrls.firstOrNull,
-                                  fallbackLabel: a.name,
-                                  alignment: Alignment.topCenter,
+              (
+                'Channels & Apps',
+                [
+                  for (final a in c.authors)
+                    if (a.isPlatform) a,
+                ],
+              ),
+            ])
+              if (people.isNotEmpty) ...[
+                Padding(
+                  padding: const EdgeInsets.fromLTRB(20, 30, 20, 12),
+                  child: Text(
+                    heading,
+                    style: const TextStyle(
+                      fontSize: 19,
+                      fontWeight: FontWeight.w700,
+                    ),
+                  ),
+                ),
+                SizedBox(
+                  height: 92,
+                  child: ListView.separated(
+                    scrollDirection: Axis.horizontal,
+                    padding: const EdgeInsets.symmetric(horizontal: 20),
+                    itemCount: people.length,
+                    separatorBuilder: (_, _) => const SizedBox(width: 16),
+                    itemBuilder: (context, i) {
+                      final a = people[i];
+                      return GestureDetector(
+                        onTap: () => context.push('/healers/${a.slug}'),
+                        child: SizedBox(
+                          width: 66,
+                          child: Column(
+                            children: [
+                              ClipOval(
+                                child: SizedBox(
+                                  width: 54,
+                                  height: 54,
+                                  child: NetImage(
+                                    url: a.imageUrls.firstOrNull,
+                                    fallbackLabel: a.name,
+                                    alignment: Alignment.topCenter,
+                                  ),
                                 ),
                               ),
-                            ),
-                            const SizedBox(height: 6),
-                            Text(
-                              a.name,
-                              maxLines: 2,
-                              overflow: TextOverflow.ellipsis,
-                              textAlign: TextAlign.center,
-                              style: const TextStyle(
-                                fontSize: 11.5,
-                                height: 1.2,
-                                color: SpColors.textMuted,
+                              const SizedBox(height: 6),
+                              Text(
+                                a.name,
+                                maxLines: 2,
+                                overflow: TextOverflow.ellipsis,
+                                textAlign: TextAlign.center,
+                                style: const TextStyle(
+                                  fontSize: 11.5,
+                                  height: 1.2,
+                                  color: SpColors.textMuted,
+                                ),
                               ),
-                            ),
-                          ],
+                            ],
+                          ),
                         ),
-                      ),
-                    );
-                  },
+                      );
+                    },
+                  ),
                 ),
-              ),
-            ],
+              ],
             const Padding(
               padding: EdgeInsets.fromLTRB(20, 26, 20, 0),
               child: Text(
