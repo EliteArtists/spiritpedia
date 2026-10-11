@@ -15,11 +15,20 @@ enum SearchScope {
   videos,
   books;
 
-  /// The kinds this box shows.
+  /// The kinds this box shows. Every box shows teachers and channels found
+  /// by name; Videos and Books then only their own kind.
   List<ResultKind> get kinds => switch (this) {
     SearchScope.all => ResultKind.values,
-    SearchScope.videos => const [ResultKind.videos],
-    SearchScope.books => const [ResultKind.books],
+    SearchScope.videos => const [
+      ResultKind.teachers,
+      ResultKind.channels,
+      ResultKind.videos,
+    ],
+    SearchScope.books => const [
+      ResultKind.teachers,
+      ResultKind.channels,
+      ResultKind.books,
+    ],
   };
 
   static SearchScope fromName(String? name) =>
@@ -29,20 +38,30 @@ enum SearchScope {
 /// The groups results come in, in the order they are shown. Channels and
 /// apps are never mixed in with teachers.
 enum ResultKind {
-  teachers('Teachers'),
-  channels('Channels & Apps'),
-  videos('Videos'),
-  books('Books'),
-  subjects('Subjects'),
-  courses('Courses & Programmes'),
-  retreats('Retreats & Live Events'),
-  downloads('Downloads & Audio'),
-  memberships('Memberships'),
-  freeResources('Free Resources');
+  teachers('Teachers', 'teacher', 'teachers'),
+  channels('Channels & Apps', 'channel or app', 'channels & apps'),
+  videos('Videos', 'video', 'videos'),
+  books('Books', 'book', 'books'),
+  subjects('Subjects', 'subject', 'subjects'),
+  courses('Courses & Programmes', 'course', 'courses'),
+  retreats('Retreats & Live Events', 'retreat or event', 'retreats & events'),
+  downloads('Downloads & Audio', 'download', 'downloads'),
+  memberships('Memberships', 'membership', 'memberships'),
+  freeResources('Free Resources', 'free resource', 'free resources');
 
-  const ResultKind(this.label);
+  const ResultKind(this.label, this.one, this.many);
 
   final String label;
+  final String one;
+  final String many;
+
+  /// "1 book", "6 books", "100+ books".
+  String count(int n) => n >= ContentSearch.countCap
+      ? '${ContentSearch.countCap}+ $many'
+      : '$n ${n == 1 ? one : many}';
+
+  /// People and platforms, found by name: shown first, as profile cards.
+  bool get isProfile => this == teachers || this == channels;
 }
 
 /// Plain-search results by kind. Values are the app's models: [Healer],
@@ -93,6 +112,12 @@ abstract class ContentSearch {
     List<String> subjects, {
     required SearchScope scope,
   });
+
+  /// How many name and title matches there are of each of [kinds] — for the
+  /// Videos and Books boxes' "Also found" line. Counted up to [countCap].
+  Future<Map<ResultKind, int>> counts(String term, Iterable<ResultKind> kinds);
+
+  static const countCap = 100;
 }
 
 /// The words of a plain search: lower case, letters and digits, without the
@@ -284,6 +309,77 @@ class SupabaseContentSearch implements ContentSearch {
   }
 
   @override
+  Future<Map<ResultKind, int>> counts(
+    String term,
+    Iterable<ResultKind> kinds,
+  ) async {
+    final wanted = kinds.toSet();
+    bool any(Iterable<ResultKind> ks) => ks.any(wanted.contains);
+    const cap = ContentSearch.countCap;
+    Future<List<Map<String, dynamic>>> rows(
+      PostgrestFilterBuilder<PostgrestList> q,
+      String column,
+    ) => _matching(q, column, term).limit(cap);
+    Future<List<Map<String, dynamic>>> none() async => const [];
+
+    // Only the ids (and the column that splits them): light reads.
+    final r = await Future.wait([
+      any([ResultKind.teachers, ResultKind.channels])
+          ? rows(_db.from('healers').select('id, entity_type'), 'name')
+          : none(),
+      wanted.contains(ResultKind.videos)
+          ? rows(_db.from('videos').select('id'), 'title')
+          : none(),
+      wanted.contains(ResultKind.books)
+          ? rows(_db.from('books').select('id'), 'title')
+          : none(),
+      wanted.contains(ResultKind.subjects)
+          ? rows(_db.from('subjects').select('slug'), 'name')
+          : none(),
+      any(_offeringKinds)
+          ? rows(
+              _db
+                  .from('courses')
+                  .select('id, product_type')
+                  .eq('is_active', true)
+                  .or(_liveWindow),
+              'title',
+            )
+          : none(),
+      wanted.contains(ResultKind.freeResources)
+          ? rows(
+              _db
+                  .from('free_resources')
+                  .select('id')
+                  .eq('is_active', true)
+                  .or(_liveWindow),
+              'title',
+            )
+          : none(),
+    ]);
+    bool platform(Map<String, dynamic> h) =>
+        h['entity_type'] == 'channel' || h['entity_type'] == 'app';
+    String type(Map<String, dynamic> o) =>
+        (o['product_type'] as String?) ?? 'course';
+    final all = {
+      ResultKind.teachers: r[0].where((h) => !platform(h)).length,
+      ResultKind.channels: r[0].where(platform).length,
+      ResultKind.videos: r[1].length,
+      ResultKind.books: r[2].length,
+      ResultKind.subjects: r[3].length,
+      ResultKind.courses: r[4].where((o) => type(o) == 'course').length,
+      ResultKind.retreats: r[4].where((o) => type(o) == 'retreat').length,
+      ResultKind.downloads: r[4].where((o) => type(o) == 'download').length,
+      ResultKind.memberships: r[4].where((o) => type(o) == 'membership').length,
+      ResultKind.freeResources: r[5].length,
+    };
+    return {
+      for (final e in all.entries)
+        if (wanted.contains(e.key) && e.value > 0) e.key: e.value,
+    };
+  }
+
+  @override
   Future<FeelingMatches> forSubjects(
     List<String> subjects, {
     required SearchScope scope,
@@ -392,6 +488,18 @@ class UniversalContentSearch implements ContentSearch {
     List<String> subjects, {
     required SearchScope scope,
   }) async => FeelingMatches.empty;
+
+  @override
+  Future<Map<ResultKind, int>> counts(
+    String term,
+    Iterable<ResultKind> kinds,
+  ) async {
+    final all = await search(term, scope: SearchScope.all, perKind: 60);
+    return {
+      for (final k in kinds)
+        if (all.byKind[k]?.isNotEmpty ?? false) k: all.byKind[k]!.length,
+    };
+  }
 }
 
 /// [items] with the best title matches first ([relevance] on the title

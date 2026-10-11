@@ -26,9 +26,13 @@ final _rootKey = GlobalKey<NavigatorState>();
 ///
 /// A link to a screen this version does not have opens Discover, and
 /// [onUnknownLink] says so — never an error page.
-GoRouter buildRouter({void Function(Uri)? onUnknownLink}) => GoRouter(
+GoRouter buildRouter({
+  void Function(Uri)? onUnknownLink,
+  List<NavigatorObserver> observers = const [],
+}) => GoRouter(
   navigatorKey: _rootKey,
   initialLocation: '/',
+  observers: observers,
   onException: (context, state, router) {
     router.go('/');
     onUnknownLink?.call(state.uri);
@@ -82,9 +86,12 @@ GoRouter buildRouter({void Function(Uri)? onUnknownLink}) => GoRouter(
       path: '/feel',
       // ?in=videos or ?in=books: the Videos or Books box, which searches only
       // its own kind. Otherwise everything (Discover's box).
+      // extra: words to search at once ("Search everywhere"), passed in
+      // memory rather than in the location.
       builder: (context, state) => SearchScreen(
         standalone: true,
         scope: SearchScope.fromName(state.uri.queryParameters['in']),
+        initialQuery: state.extra is String ? state.extra! as String : null,
       ),
     ),
     // There was a Search tab; links to it open the search.

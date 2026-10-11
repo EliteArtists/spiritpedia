@@ -4,6 +4,7 @@ import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_test/flutter_test.dart';
+import 'package:go_router/go_router.dart';
 import 'package:spiritpedia/core/safety/emotion_safety.dart';
 import 'package:spiritpedia/data/models.dart';
 import 'package:spiritpedia/data/providers.dart';
@@ -121,6 +122,20 @@ class _Plain implements ContentSearch {
   Future<List<Object>> more(String term, ResultKind kind) async {
     calls.add('more:$kind');
     return [_forecast, _calmVideo];
+  }
+
+  @override
+  Future<Map<ResultKind, int>> counts(
+    String term,
+    Iterable<ResultKind> kinds,
+  ) async {
+    calls.add('counts:$term');
+    const found = {
+      ResultKind.books: 6,
+      ResultKind.courses: 2,
+      ResultKind.freeResources: 1,
+    };
+    return {for (final k in kinds) k: ?found[k]};
   }
 
   @override
@@ -259,7 +274,10 @@ void main() {
           search.onChanged('anxious');
           await Future<void>.delayed(_settle);
           expect(plain.scopes, [scope]);
-          expect(search.content.kinds.every((k) => k == kind), isTrue);
+          expect(
+            search.content.kinds.every((k) => k == kind || k.isProfile),
+            isTrue,
+          );
           // The feeling finds that kind only.
           if (scope == SearchScope.videos) {
             expect(search.feelings.books, isEmpty);
@@ -271,6 +289,44 @@ void main() {
             expect(search.suggestions.book, _calmBook);
           }
         }
+      },
+    );
+
+    test('Videos: teachers and channels by name too, and what else the '
+        'words find', () async {
+      final plain = _Plain();
+      final search = EmotionSearchController(
+        safety: _safety,
+        repository: _Feelings(),
+        plain: plain,
+        scope: SearchScope.videos,
+      );
+      addTearDown(search.dispose);
+      search.onChanged('tolle');
+      await Future<void>.delayed(_settle);
+      expect(search.content.of<Healer>(ResultKind.teachers), hasLength(1));
+      expect(search.content.of<Healer>(ResultKind.channels), hasLength(1));
+      expect(search.alsoFound, {
+        ResultKind.books: 6,
+        ResultKind.courses: 2,
+        ResultKind.freeResources: 1,
+      });
+    });
+
+    test(
+      'Discover counts nothing extra: it already shows everything',
+      () async {
+        final plain = _Plain();
+        final search = EmotionSearchController(
+          safety: _safety,
+          repository: _Feelings(),
+          plain: plain,
+        );
+        addTearDown(search.dispose);
+        search.onChanged('tolle');
+        await Future<void>.delayed(_settle);
+        expect(search.alsoFound, isEmpty);
+        expect(plain.calls.where((c) => c.startsWith('counts')), isEmpty);
       },
     );
 
@@ -504,6 +560,82 @@ void main() {
       await tester.tap(find.byTooltip('All results'));
       await tester.pumpAndSettle();
       expect(find.text('Spiritpedia Suggests'), findsOneWidget);
+    });
+
+    Widget app(Widget home, _Plain plain, _Feelings feelings) => ProviderScope(
+      overrides: [
+        typewriterRunsProvider.overrideWithValue(false),
+        emotionSafetyProvider.overrideWithValue(AsyncData(_safety)),
+        searchRepositoryProvider.overrideWithValue(feelings),
+        contentSearchProvider.overrideWithValue(plain),
+        accountServiceProvider.overrideWithValue(FakeAccountService()),
+        contentRepositoryProvider.overrideWithValue(FakeContentRepository()),
+      ],
+      child: MaterialApp.router(
+        theme: buildSpiritpediaTheme(),
+        routerConfig: GoRouter(
+          routes: [
+            GoRoute(path: '/', builder: (_, _) => home),
+            GoRoute(
+              path: '/feel',
+              builder: (_, state) => SearchScreen(
+                standalone: true,
+                initialQuery: state.extra as String?,
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+
+    testWidgets('Videos: profile cards first, then "Also found … Search '
+        'everywhere", which opens Discover\'s search for the same words', (
+      tester,
+    ) async {
+      final plain = _Plain();
+      await tester.pumpWidget(
+        app(const SearchScreen(scope: SearchScope.videos), plain, _Feelings()),
+      );
+      await tester.pump();
+      await tester.enterText(find.byType(TextField), 'tolle');
+      await tester.pump(_settle);
+      await tester.pumpAndSettle();
+
+      expect(find.text('TEACHERS & CHANNELS'), findsOneWidget);
+      expect(find.text('Eckhart Tolle'), findsOneWidget);
+      expect(find.text('Tolle TV'), findsOneWidget);
+      expect(
+        find.textContaining(
+          'Also found: 6 books, 2 courses, 1 free resource · ',
+        ),
+        findsOneWidget,
+      );
+
+      await tester.tap(find.textContaining('Search everywhere'));
+      await tester.pumpAndSettle();
+      await tester.pump(_settle);
+      await tester.pumpAndSettle();
+      expect(plain.scopes, [SearchScope.videos, SearchScope.all]);
+      expect(plain.calls.where((c) => c == 'search:tolle'), hasLength(2));
+    });
+
+    testWidgets('words handed to the search still meet the crisis intercept '
+        'first', (tester) async {
+      final plain = _Plain();
+      final feelings = _Feelings();
+      await tester.pumpWidget(
+        app(
+          const SearchScreen(standalone: true, initialQuery: 'I want to die'),
+          plain,
+          feelings,
+        ),
+      );
+      await tester.pump();
+      await tester.pump(_settle);
+      await tester.pumpAndSettle();
+      expect(find.text(_safety.crisisInterstitial.heading), findsOneWidget);
+      expect(plain.calls, isEmpty);
+      expect(feelings.calls, isEmpty);
     });
 
     testWidgets('the crisis panel comes first in the Videos box too', (

@@ -11,6 +11,7 @@ import 'package:spiritpedia/features/library/saved_items.dart';
 import 'package:spiritpedia/features/notifications/notifications_controller.dart';
 import 'package:spiritpedia/features/notifications/push_messaging.dart';
 import 'package:spiritpedia/features/shell/app_shell.dart';
+import 'package:spiritpedia/features/star/slipstream.dart';
 import 'package:spiritpedia/features/star/star_layer.dart';
 import 'package:spiritpedia/features/search/feeling_placeholder.dart';
 import 'package:spiritpedia/features/search/search_repository.dart';
@@ -419,5 +420,59 @@ void main() {
     await tester.pumpAndSettle();
     expect(find.text('Worldwide'), findsOneWidget);
     expect(find.text(unknownLinkMessage), findsOneWidget);
+  });
+
+  group('the star moves with the pages', () {
+    Future<void> openBook(WidgetTester tester) async {
+      GoRouter.of(tester.element(find.byType(PillTabBar)))
+          .push('/books/the-power-of-now');
+      await tester.pump(); // the page is pushed
+      await tester.pump(); // …and built: the flight begins
+    }
+
+    testWidgets('opening a page, and going back (button or swipe)', (
+      tester,
+    ) async {
+      await start(tester);
+      await openBook(tester);
+      await tester.pump(const Duration(milliseconds: 80));
+      expect(find.byType(SlipstreamFrame), findsOneWidget); // box → foot
+      await tester.pumpAndSettle();
+      expect(find.byType(SlipstreamFrame), findsNothing);
+
+      // Back: the back button and the swipe-back gesture both pop the page.
+      await tester.pageBack();
+      await tester.pump();
+      await tester.pump(const Duration(milliseconds: 80));
+      expect(find.byType(SlipstreamFrame), findsOneWidget); // foot → box
+      await tester.pumpAndSettle();
+      expect(find.byType(SlipstreamFrame), findsNothing);
+      expect(
+        tester
+            .widgetList<StarAnchor>(
+              find.byType(StarAnchor, skipOffstage: false),
+            )
+            .first
+            .visible,
+        isTrue,
+      ); // resting in the search box again
+    });
+
+    testWidgets('with Reduce Motion there is no flight', (tester) async {
+      tester.platformDispatcher.accessibilityFeaturesTestValue =
+          const FakeAccessibilityFeatures(reduceMotion: true);
+      addTearDown(
+        tester.platformDispatcher.clearAccessibilityFeaturesTestValue,
+      );
+      await start(tester);
+      await openBook(tester);
+      await tester.pump(const Duration(milliseconds: 80));
+      expect(find.byType(SlipstreamFrame), findsNothing);
+      await tester.pumpAndSettle();
+      await tester.pageBack();
+      await tester.pump();
+      await tester.pump(const Duration(milliseconds: 80));
+      expect(find.byType(SlipstreamFrame), findsNothing);
+    });
   });
 }

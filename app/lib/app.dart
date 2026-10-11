@@ -25,7 +25,12 @@ class SpiritpediaApp extends ConsumerStatefulWidget {
 const unknownLinkMessage = 'This needs a newer version of Spiritpedia';
 
 class _SpiritpediaAppState extends ConsumerState<SpiritpediaApp> {
-  late final GoRouter _router = buildRouter(onUnknownLink: (_) => _unknown());
+  final _starLayer = GlobalKey<StarLayerState>();
+  late final GoRouter _router = buildRouter(
+    onUnknownLink: (_) => _unknown(),
+    // The star moves with every page change, back and swipe-back included.
+    observers: [StarFlightObserver(() => _starLayer.currentState)],
+  );
   final _messenger = GlobalKey<ScaffoldMessengerState>();
   final _subs = <StreamSubscription<PushNote>>[];
 
@@ -111,6 +116,7 @@ class _SpiritpediaAppState extends ConsumerState<SpiritpediaApp> {
       // The star layer sits above everything, so a star can fly from any
       // screen to any other.
       builder: (context, child) => StarLayer(
+        key: _starLayer,
         child: widget.playIntro
             ? IntroOverlay(child: child ?? const SizedBox.shrink())
             : child ?? const SizedBox.shrink(),

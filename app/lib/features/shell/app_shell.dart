@@ -18,22 +18,35 @@ class AppShell extends ConsumerWidget {
 
   static const _discover = 0;
 
-  void _go(int index) => navigationShell.goBranch(
-    index,
-    // Tapping the tab you are already on returns it to its first screen.
-    initialLocation: index == navigationShell.currentIndex,
-  );
+  void _go(BuildContext context, int index) {
+    void go() => navigationShell.goBranch(
+      index,
+      // Tapping the tab you are already on returns it to its first screen.
+      initialLocation: index == navigationShell.currentIndex,
+    );
+    final layer = StarLayer.maybeOf(context);
+    if (layer == null) return go();
+    // The star flies if it rests somewhere else on the new tab.
+    layer.followTabs(
+      tabPaths[navigationShell.currentIndex],
+      tabPaths[index],
+      go,
+    );
+  }
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final typing = MediaQuery.viewInsetsOf(context).bottom > 0;
+    // Which tab is showing, for star flights between pages.
+    StarLayer.maybeOf(context)?.currentTab =
+        tabPaths[navigationShell.currentIndex];
     // Out of the way while a subject tray is open, back when it closes.
     final covered = ref.watch(tabBarCoverProvider) > 0;
     return PopScope(
       // Android's back button: from another tab, back goes to Discover first.
       canPop: navigationShell.currentIndex == _discover,
       onPopInvokedWithResult: (didPop, _) {
-        if (!didPop) _go(_discover);
+        if (!didPop) _go(context, _discover);
       },
       child: Scaffold(
         body: Stack(
@@ -64,7 +77,7 @@ class AppShell extends ConsumerWidget {
                               fit: BoxFit.scaleDown,
                               child: PillTabBar(
                                 current: navigationShell.currentIndex,
-                                onSelect: _go,
+                                onSelect: (i) => _go(context, i),
                               ),
                             ),
                           ),

@@ -8,6 +8,7 @@ import '../../core/safety/emotion_safety.dart';
 import '../../core/supabase_providers.dart';
 import '../../data/models.dart';
 import '../../data/providers.dart';
+import '../../shared/widgets/cards.dart';
 import '../../shared/widgets/net_image.dart';
 import '../../theme/colors.dart';
 import '../star/star_layer.dart';
@@ -45,10 +46,16 @@ class SearchScreen extends ConsumerWidget {
     super.key,
     this.standalone = false,
     this.scope = SearchScope.all,
+    this.initialQuery,
   });
 
   final bool standalone;
   final SearchScope scope;
+
+  /// Words to search for at once ("Search everywhere" from Videos or
+  /// Books). They go through the box like typing — the crisis intercept
+  /// first.
+  final String? initialQuery;
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
@@ -73,6 +80,7 @@ class SearchScreen extends ConsumerWidget {
             repository: ref.watch(searchRepositoryProvider),
             standalone: standalone,
             scope: scope,
+            initialQuery: initialQuery,
           ),
         ),
       ),
@@ -86,12 +94,14 @@ class _Search extends ConsumerStatefulWidget {
     required this.repository,
     required this.standalone,
     required this.scope,
+    this.initialQuery,
   });
 
   final EmotionSafety safety;
   final SearchRepository repository;
   final bool standalone;
   final SearchScope scope;
+  final String? initialQuery;
 
   @override
   ConsumerState<_Search> createState() => _SearchState();
@@ -119,7 +129,13 @@ class _SearchState extends ConsumerState<_Search> {
   void initState() {
     super.initState();
     _focus.addListener(_changed); // the placeholder changes on focus
-    if (widget.standalone) {
+    final query = widget.initialQuery?.trim() ?? '';
+    if (query.isNotEmpty) {
+      // As if typed: through the gates, then the search.
+      WidgetsBinding.instance.addPostFrameCallback((_) {
+        if (mounted) _fill(query);
+      });
+    } else if (widget.standalone) {
       WidgetsBinding.instance.addPostFrameCallback(
         (_) => _focus.requestFocus(),
       );
@@ -211,6 +227,7 @@ class _SearchState extends ConsumerState<_Search> {
                       child: StarAnchor(
                         size: 26,
                         thinking: _search.view == SearchView.loading,
+                        pageStar: true,
                       ),
                     ),
                     suffixIcon: _search.text.isEmpty
@@ -590,8 +607,15 @@ class _Results extends ConsumerWidget {
         ),
     ];
 
+    // Teachers and channels found by name: their profile cards, first, in
+    // every box.
+    final profiles = <Healer>[
+      ...search.content.of<Healer>(ResultKind.teachers),
+      ...search.content.of<Healer>(ResultKind.channels),
+    ];
+
     final named = <Widget>[
-      for (final kind in search.content.kinds) ...[
+      for (final kind in search.content.kinds.where((k) => !k.isProfile)) ...[
         _GroupHeader(
           kind.label.toUpperCase(),
           // A full group may have more behind it.
@@ -603,9 +627,32 @@ class _Results extends ConsumerWidget {
       ],
     ];
 
+    final ownKind = search.scope == SearchScope.videos
+        ? ResultKind.videos
+        : ResultKind.books;
+    final nothingHere =
+        search.scope != SearchScope.all &&
+        profiles.isEmpty &&
+        named.isEmpty &&
+        search.feelings.isEmpty;
+
     return ListView(
       padding: EdgeInsets.only(bottom: 32 + _TabBarClearance.of(context)),
       children: [
+        if (profiles.isNotEmpty) ...[
+          const _GroupHeader('TEACHERS & CHANNELS'),
+          SizedBox(
+            height: 240,
+            child: ListView.separated(
+              scrollDirection: Axis.horizontal,
+              padding: const EdgeInsets.symmetric(horizontal: 16),
+              itemCount: profiles.length,
+              separatorBuilder: (_, _) => const SizedBox(width: 12),
+              itemBuilder: (_, i) =>
+                  SizedBox(width: 172, child: HealerCard(healer: profiles[i])),
+            ),
+          ),
+        ],
         if (!suggestions.isEmpty) _Suggests(suggestions: suggestions),
         if (search.titlesFirst) ...[
           ...named,
@@ -614,7 +661,73 @@ class _Results extends ConsumerWidget {
           ...feeling,
           ...named,
         ],
+        if (nothingHere)
+          Padding(
+            padding: const EdgeInsets.fromLTRB(16, 20, 16, 0),
+            child: Text(
+              'No ${ownKind.many} match that.',
+              style: const TextStyle(fontSize: 15, color: SpColors.textMuted),
+            ),
+          ),
+        if (search.alsoFound.isNotEmpty)
+          _AlsoFound(
+            counts: search.alsoFound,
+            onSearchEverywhere: () =>
+                context.push('/feel', extra: search.text.trim()),
+          ),
       ],
+    );
+  }
+}
+
+/// One quiet line under a Videos or Books search: what the same words find
+/// elsewhere, and the way to see it all — Discover's search, which runs the
+/// crisis intercept first like every search.
+class _AlsoFound extends StatelessWidget {
+  const _AlsoFound({required this.counts, required this.onSearchEverywhere});
+
+  final Map<ResultKind, int> counts;
+  final VoidCallback onSearchEverywhere;
+
+  @override
+  Widget build(BuildContext context) {
+    final found = [
+      for (final k in ResultKind.values)
+        if (counts[k] case final n?) k.count(n),
+    ].join(', ');
+    return Padding(
+      padding: const EdgeInsets.fromLTRB(16, 22, 16, 0),
+      child: Semantics(
+        button: true,
+        label: 'Also found: $found. Search everywhere',
+        excludeSemantics: true,
+        child: InkWell(
+          onTap: onSearchEverywhere,
+          borderRadius: BorderRadius.circular(8),
+          child: Padding(
+            padding: const EdgeInsets.symmetric(vertical: 10),
+            child: Text.rich(
+              TextSpan(
+                children: [
+                  TextSpan(text: 'Also found: $found · '),
+                  const TextSpan(
+                    text: 'Search everywhere',
+                    style: TextStyle(
+                      color: SpColors.link,
+                      fontWeight: FontWeight.w600,
+                    ),
+                  ),
+                ],
+              ),
+              style: const TextStyle(
+                fontSize: 13.5,
+                color: SpColors.textMuted,
+                height: 1.45,
+              ),
+            ),
+          ),
+        ),
+      ),
     );
   }
 }

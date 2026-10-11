@@ -80,6 +80,10 @@ class _StarPageState extends ConsumerState<StarPage> implements TabStarTarget {
   Rect? restingRect() => _layer?.rectOfKey(_docked ? _dockStar : _boxStar);
 
   @override
+  Rect? settledRect() =>
+      settledRectOf(_docked ? _dockStar : _boxStar, ModalRoute.of(context));
+
+  @override
   void scrollToTop({bool animate = true}) {
     if (!_scroll.hasClients) return;
     if (!animate) {

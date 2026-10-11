@@ -10,6 +10,10 @@ import 'twinkle.dart';
 abstract interface class TabStarTarget {
   Rect? restingRect();
 
+  /// Where the star will rest once the tab's page is still — ignoring the
+  /// slide of a page transition in progress. In this layer's coordinates.
+  Rect? settledRect();
+
   /// Back to the top: animated when the person can see it, at once when the
   /// tab is about to be revealed.
   void scrollToTop({bool animate = true});
@@ -63,9 +67,87 @@ class StarLayerState extends State<StarLayer> with TickerProviderStateMixin {
   /// Discover — where the intro's star lands.
   TabStarTarget? get discover => tabs['/'];
 
-  /// The tab a star is on its way into, if any: that tab hides its resting
-  /// star until the flight lands.
+  /// The tab whose star is in flight, if any — on its way in or out: that tab
+  /// hides its resting star until the flight lands.
   final incoming = ValueNotifier<String?>(null);
+
+  /// The tab on screen (the shell says), whatever pages cover it.
+  String? currentTab;
+
+  /// Each page's one resting star — a detail page's floating star, the
+  /// search's — by the page it is on. Tabs' stars are in [tabs] instead.
+  final _pageStars = <_StarAnchorState>{};
+
+  _StarAnchorState? _pageStarOf(Route<dynamic> route) =>
+      _pageStars.where((a) => a._route == route).firstOrNull;
+
+  /// The star moving with the pages, as the navigator pushes or pops one:
+  /// from where it is on the page leaving (or the tab under it) to where it
+  /// will rest on the page arriving. Back button and swipe-back alike.
+  /// Skipped while another flight owns the star (a tap on it, the intro),
+  /// and when the two places are the same (one detail page to another).
+  Future<void> followPages({
+    required Route<dynamic> leaving,
+    required Route<dynamic> arriving,
+    required bool popping,
+  }) async {
+    if (!mounted || incoming.value != null) return;
+    final fromStar = _pageStarOf(leaving);
+    final fromTab = fromStar == null ? currentTab : null;
+    final from =
+        fromStar?.rect ??
+        (fromTab == null ? null : tabs[fromTab]?.restingRect());
+    if (from == null) return;
+    // A page being pushed is built on the next frame.
+    if (!popping) await WidgetsBinding.instance.endOfFrame;
+    if (!mounted || incoming.value != null) return;
+
+    final toStar = _pageStarOf(arriving);
+    final toTab = toStar == null ? currentTab : null;
+    Rect? target() => toStar != null
+        ? toStar.settledRect
+        : (toTab == null ? null : tabs[toTab]?.settledRect());
+    final first = target();
+    if (first == null || (first.center - from.center).distance < 4) return;
+
+    fromStar?.suppress(true);
+    toStar?.suppress(true);
+    incoming.value = toTab ?? fromTab;
+    try {
+      await fly(owner: incoming, from: from, to: target);
+    } finally {
+      if (!popping) fromStar?.suppress(false); // a popped page is gone
+      toStar?.suppress(false);
+      if (mounted) incoming.value = null;
+    }
+  }
+
+  /// Switching tabs: if the star rests somewhere else on the new tab (one
+  /// scrolled to its pill row, the other not), it flies there.
+  Future<void> followTabs(
+    String from,
+    String to,
+    VoidCallback switchTabs,
+  ) async {
+    final start = tabs[from]?.restingRect();
+    switchTabs();
+    if (start == null || from == to || incoming.value != null) return;
+    await WidgetsBinding.instance.endOfFrame;
+    final end = tabs[to]?.restingRect();
+    if (!mounted || end == null || (end.center - start.center).distance < 4) {
+      return;
+    }
+    incoming.value = to;
+    try {
+      await fly(
+        owner: incoming,
+        from: start,
+        to: () => tabs[to]?.restingRect(),
+      );
+    } finally {
+      if (mounted) incoming.value = null;
+    }
+  }
 
   /// [box] in this layer's coordinates.
   Rect? rectOfBox(RenderObject? box) {
@@ -216,12 +298,17 @@ class StarAnchor extends StatefulWidget {
     this.onTap,
     this.tapTarget = 44,
     this.thinking = false,
+    this.pageStar = false,
   });
 
   final double size;
 
   /// Twinkles while something loads (search results).
   final bool thinking;
+
+  /// This page's one resting star (a detail page's floating star, the
+  /// search's): when pages change, the star flies from here or to here.
+  final bool pageStar;
   final bool visible;
   final GlobalKey? starKey;
   final VoidCallback? onTap;
@@ -233,8 +320,37 @@ class StarAnchor extends StatefulWidget {
 
 class _StarAnchorState extends State<StarAnchor> {
   final _ownKey = GlobalKey();
+  StarLayerState? _layer;
+  Route<dynamic>? _route;
+  bool _suppressed = false; // hidden while a flight carries the star
 
   GlobalKey get _key => widget.starKey ?? _ownKey;
+
+  @override
+  void didChangeDependencies() {
+    super.didChangeDependencies();
+    _layer?._pageStars.remove(this);
+    _layer = StarLayer.maybeOf(context);
+    _route = ModalRoute.of(context);
+    if (widget.pageStar) _layer?._pageStars.add(this);
+  }
+
+  @override
+  void dispose() {
+    _layer?._pageStars.remove(this);
+    super.dispose();
+  }
+
+  void suppress(bool hidden) {
+    if (mounted && hidden != _suppressed) setState(() => _suppressed = hidden);
+  }
+
+  /// Where the star is now, in the layer's coordinates.
+  Rect? get rect => _layer?.rectOfKey(_key);
+
+  /// Where it will be once its page has finished sliding: its place within
+  /// the page. Pages fill the screen, so that is its place on screen too.
+  Rect? get settledRect => settledRectOf(_key, _route);
 
   void _tap() {
     if (widget.onTap != null) return widget.onTap!();
@@ -263,8 +379,8 @@ class _StarAnchorState extends State<StarAnchor> {
               width: widget.size,
               height: widget.size,
               child: AnimatedOpacity(
-                opacity: widget.visible ? 1 : 0,
-                duration: widget.visible
+                opacity: widget.visible && !_suppressed ? 1 : 0,
+                duration: widget.visible && !_suppressed
                     ? const Duration(milliseconds: 140)
                     : Duration.zero,
                 child: widget.thinking
@@ -302,7 +418,50 @@ class FloatingHomeStar extends StatelessWidget {
       right: 0,
       bottom: bottomOffset(context),
       // Just the star — no disc behind it.
-      child: const Center(child: StarAnchor(size: 64, tapTarget: 72)),
+      child: const Center(
+        child: StarAnchor(size: 64, tapTarget: 72, pageStar: true),
+      ),
+    );
+  }
+}
+
+/// [key]'s place within [route]'s page — unmoved by the page's transition —
+/// which, as pages fill the screen, is where it will be once the page is
+/// still.
+Rect? settledRectOf(GlobalKey key, Route<dynamic>? route) {
+  final box = key.currentContext?.findRenderObject();
+  final page = (route is ModalRoute ? route.subtreeContext : null)
+      ?.findRenderObject();
+  if (box is! RenderBox || page is! RenderBox) return null;
+  if (!box.attached || !page.attached || !box.hasSize) return null;
+  return box.localToGlobal(Offset.zero, ancestor: page) & box.size;
+}
+
+/// Tells the [StarLayer] when the root navigator changes page, so the star
+/// moves with it ([StarLayerState.followPages]). Sheets and dialogs are not
+/// pages and are left alone.
+class StarFlightObserver extends NavigatorObserver {
+  StarFlightObserver(this.layer);
+
+  final StarLayerState? Function() layer;
+
+  @override
+  void didPush(Route<dynamic> route, Route<dynamic>? previousRoute) {
+    if (route is! PageRoute || previousRoute is! PageRoute) return;
+    layer()?.followPages(
+      leaving: previousRoute,
+      arriving: route,
+      popping: false,
+    );
+  }
+
+  @override
+  void didPop(Route<dynamic> route, Route<dynamic>? previousRoute) {
+    if (route is! PageRoute || previousRoute is! PageRoute) return;
+    layer()?.followPages(
+      leaving: route,
+      arriving: previousRoute,
+      popping: true,
     );
   }
 }

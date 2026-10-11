@@ -52,6 +52,7 @@ class EmotionSearchController extends ChangeNotifier {
   ContentResults _content = ContentResults.empty;
   FeelingMatches _feelings = FeelingMatches.empty;
   Suggestions _suggestions = Suggestions.none;
+  Map<ResultKind, int> _alsoFound = const {};
   Timer? _timer;
   int _generation = 0;
 
@@ -69,6 +70,10 @@ class EmotionSearchController extends ChangeNotifier {
 
   /// Spiritpedia Suggests: one video and one book, by relevance alone.
   Suggestions get suggestions => _suggestions;
+
+  /// On Videos and Books: how many of each other kind the same words find
+  /// everywhere — "Also found: 6 books, 2 courses · Search everywhere".
+  Map<ResultKind, int> get alsoFound => _alsoFound;
 
   /// Whether name and title matches lead, above the feeling's subjects: when
   /// something is called what was typed, and the words are more than a
@@ -115,6 +120,7 @@ class EmotionSearchController extends ChangeNotifier {
     _content = ContentResults.empty;
     _feelings = FeelingMatches.empty;
     _suggestions = Suggestions.none;
+    _alsoFound = const {};
     _crisisCategory = null;
   }
 
@@ -182,10 +188,16 @@ class EmotionSearchController extends ChangeNotifier {
           vocabularyLookup: repository.vocabulary,
         ),
         plain.search(term, scope: scope, perKind: perKind),
+        if (scope != SearchScope.all)
+          plain.counts(term, [
+            for (final k in ResultKind.values)
+              if (!scope.kinds.contains(k)) k,
+          ]),
       ]);
       if (generation != _generation) return;
       var resolved = results[0] as EmotionSearchResult;
       _content = results[1] as ContentResults;
+      if (results.length > 2) _alsoFound = results[2] as Map<ResultKind, int>;
 
       var rows = resolved.type == 'results'
           ? resolved.rows
@@ -233,7 +245,11 @@ class EmotionSearchController extends ChangeNotifier {
             ? safety.medicalDisclaimer
             : null;
       }
-      final found = rows.isNotEmpty || !_content.isEmpty || !_feelings.isEmpty;
+      final found =
+          rows.isNotEmpty ||
+          !_content.isEmpty ||
+          !_feelings.isEmpty ||
+          _alsoFound.isNotEmpty; // a way out to everything else
       return _set(found ? SearchView.results : SearchView.noMatch);
     } catch (_) {
       if (generation != _generation) return;
