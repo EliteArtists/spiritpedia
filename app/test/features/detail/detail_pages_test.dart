@@ -231,5 +231,18 @@ void main() {
     await pump(tester, const BookScreen(slug: 'the-power-of-now'));
     expect(find.byType(FloatingHomeStar), findsOneWidget);
     expect(find.bySemanticsLabel('Home'), findsOneWidget);
+    // Twice its old 32 pt, and nothing drawn behind it.
+    final star = find.descendant(
+      of: find.byType(FloatingHomeStar),
+      matching: find.byType(StarAnchor),
+    );
+    expect(tester.widget<StarAnchor>(star).size, 64);
+    expect(
+      find.descendant(
+        of: find.byType(FloatingHomeStar),
+        matching: find.byType(DecoratedBox),
+      ),
+      findsNothing,
+    );
   });
 }

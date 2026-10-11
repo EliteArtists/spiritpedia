@@ -88,8 +88,7 @@ final introPrefsProvider = Provider<IntroPrefs>(
 );
 
 /// Bumped to play the intro again without restarting the app — the debug-only
-/// "Replay intro" in Account. The app keys the intro on it, so a bump builds
-/// a fresh one.
+/// "Replay intro" in Account. The intro listens, and starts over.
 class IntroReplay extends Notifier<int> {
   @override
   int build() => 0;
@@ -101,9 +100,14 @@ final introReplayProvider = NotifierProvider<IntroReplay, int>(IntroReplay.new);
 
 /// Everything a first launch shows, shown again: the intro now (and, once
 /// they exist, the onboarding and the tier tips). Debug builds only.
+///
+/// Reads what it needs at once, so the screen that called it (Account) may
+/// close straight away — a widget's ref is unusable once it has gone.
 Future<void> replayFirstLaunch(WidgetRef ref) async {
-  await ref.read(introPrefsProvider).reset();
-  ref.read(introReplayProvider.notifier).bump();
+  final prefs = ref.read(introPrefsProvider);
+  final replay = ref.read(introReplayProvider.notifier);
+  await prefs.reset();
+  replay.bump();
 }
 
 enum _Phase { waiting, greeting, flying, callout, done }
@@ -157,6 +161,7 @@ class _IntroOverlayState extends ConsumerState<IntroOverlay>
   IntroKind _kind = IntroKind.short;
   bool _still = false; // Reduce Motion
   bool _started = false;
+  int _run = 0; // which play this is; a replay makes older ones stand down
   StarLayerState? _layer;
 
   @override
@@ -171,11 +176,12 @@ class _IntroOverlayState extends ConsumerState<IntroOverlay>
   }
 
   Future<void> _start() async {
+    final run = _run;
     final kind = await ref.read(introPrefsProvider).kind();
     // Decode the star before the launch screen goes away, so the first frame
     // of the intro is identical to the launch screen rather than blank.
     if (mounted) await precacheImage(starAsset, context).catchError((_) {});
-    if (!mounted) return;
+    if (!mounted || run != _run) return;
     _kind = kind;
     _removeNativeSplash();
     if (kind == IntroKind.none || (kind == IntroKind.short && _still)) {
@@ -184,7 +190,19 @@ class _IntroOverlayState extends ConsumerState<IntroOverlay>
     if (kind == IntroKind.short) return _flyHome();
     setState(() => _phase = _Phase.greeting);
     await _greet.forward().orCancel.catchError((_) {});
-    if (mounted && _phase == _Phase.greeting) _flyHome();
+    if (mounted && run == _run && _phase == _Phase.greeting) _flyHome();
+  }
+
+  /// "Replay intro": from the top, over whatever is on screen (Home — the
+  /// button goes there first).
+  void _replay() {
+    _run++;
+    _greet.reset();
+    _fly.reset();
+    _still = reduceMotion(context);
+    _layer?.homeHidden.value = true;
+    setState(() => _phase = _Phase.waiting);
+    _start();
   }
 
   void _removeNativeSplash() {
@@ -193,12 +211,13 @@ class _IntroOverlayState extends ConsumerState<IntroOverlay>
 
   Future<void> _flyHome() async {
     if (_still) return _land();
+    final run = _run;
     setState(() => _phase = _Phase.flying);
     _fly.duration = Duration(
       milliseconds: _kind == IntroKind.full ? 1100 : 950,
     );
     await _fly.forward().orCancel.catchError((_) {});
-    if (mounted) _land();
+    if (mounted && run == _run) _land();
   }
 
   void _land() {
@@ -258,6 +277,7 @@ class _IntroOverlayState extends ConsumerState<IntroOverlay>
 
   @override
   Widget build(BuildContext context) {
+    ref.listen(introReplayProvider, (_, _) => _replay());
     if (_phase == _Phase.done) return widget.child;
     return Stack(
       fit: StackFit.expand,

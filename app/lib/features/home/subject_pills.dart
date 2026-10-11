@@ -5,6 +5,7 @@ import '../../data/models.dart';
 import '../../data/providers.dart';
 import '../../data/shelf_rules.dart';
 import '../../theme/colors.dart';
+import '../shell/tab_bar_state.dart';
 
 /// "View All" and the five pillars, as one horizontally scrolling row. Tapping
 /// a pillar opens its subjects in a sheet — the website's hover panel, as a
@@ -62,7 +63,7 @@ class SubjectPillRow extends ConsumerWidget {
         for (final s in subjects)
           if (s.slug == slug) s,
     ];
-    showModalBottomSheet<void>(
+    final sheet = showModalBottomSheet<void>(
       context: context,
       backgroundColor: SpColors.surface,
       showDragHandle: true,
@@ -115,6 +116,8 @@ class SubjectPillRow extends ConsumerWidget {
         ),
       ),
     );
+    // The floating tab bar steps aside while the tray is open.
+    ref.read(tabBarCoverProvider.notifier).whileShowing(sheet);
   }
 }
 

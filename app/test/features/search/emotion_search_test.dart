@@ -14,6 +14,7 @@ import 'package:spiritpedia/features/search/search_repository.dart';
 import 'package:spiritpedia/features/search/search_screen.dart';
 import 'package:spiritpedia/theme/theme.dart';
 import 'package:spiritpedia/features/account/account_providers.dart';
+import 'package:spiritpedia/features/search/feeling_placeholder.dart';
 
 import '../../support/fake_account.dart';
 import '../../support/fake_content.dart';
@@ -191,6 +192,7 @@ void main() {
       await tester.pumpWidget(
         ProviderScope(
           overrides: [
+            typewriterRunsProvider.overrideWithValue(false),
             emotionSafetyProvider.overrideWithValue(AsyncData(_safety)),
             searchRepositoryProvider.overrideWithValue(repo),
             accountServiceProvider.overrideWithValue(FakeAccountService()),

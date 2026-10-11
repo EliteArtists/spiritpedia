@@ -242,3 +242,34 @@ List<T> spreadOut<T>(List<T> items, {int step = 7}) => [
   for (var offset = 0; offset < step; offset++)
     for (var i = offset; i < items.length; i += step) items[i],
 ];
+
+/// How much of a book or video is about [pillar]: the share of its subjects
+/// that belong to it. Most items carry several subjects across pillars, so a
+/// pillar shelf leads with what is mostly about that pillar.
+double pillarFit(List<String> subjectSlugs, String pillar) {
+  if (subjectSlugs.isEmpty) return 0;
+  final inPillar = subjectPillars[pillar] ?? const [];
+  return subjectSlugs.where(inPillar.contains).length / subjectSlugs.length;
+}
+
+/// The items of [pool] about [pillar] (any of its subjects), best fit first
+/// and otherwise in [pool]'s order, leaving out any in [shown].
+List<T> pillarCandidates<T>(
+  List<T> pool,
+  String pillar, {
+  required List<String> Function(T) subjects,
+  required Object Function(T) id,
+  Set<Object> shown = const {},
+}) {
+  final scored = <(T, double, int)>[
+    for (final (i, item) in pool.indexed)
+      if (!shown.contains(id(item)))
+        if (pillarFit(subjects(item), pillar) case final fit when fit > 0)
+          (item, fit, i),
+  ];
+  scored.sort((a, b) {
+    final byFit = b.$2.compareTo(a.$2);
+    return byFit != 0 ? byFit : a.$3.compareTo(b.$3);
+  });
+  return [for (final (item, _, _) in scored) item];
+}

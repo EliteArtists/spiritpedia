@@ -149,22 +149,41 @@ final videoShelvesProvider = FutureProvider.family<List<VideoShelf>, String?>((
         repo.videoPool(subjects: subjectPillars[pillar]),
       repo.mixedVideos(),
     ]);
+    // As with Books: no video on two shelves, and each pillar leads with the
+    // videos most about it.
+    final shown = <Object>{};
+    List<Video> take(List<Video> pool) {
+      final shelf = capPerTeacher([
+        for (final v in pool)
+          if (!shown.contains(v.id)) v,
+      ]);
+      shown.addAll(shelf.map((v) => v.id));
+      return shelf;
+    }
+
     return [
       VideoShelf(
         title: 'New to Spiritpedia',
         subtitle: 'Just added',
-        videos: capPerTeacher(results.first),
+        videos: take(results.first),
       ),
       for (var i = 0; i < videoPillarOrder.length; i++)
         VideoShelf(
           title: videoPillarOrder[i],
           subtitle: 'Watch & learn',
-          videos: capPerTeacher(results[i + 1]),
+          videos: take(
+            pillarCandidates(
+              results[i + 1],
+              videoPillarOrder[i],
+              subjects: (v) => v.subjectSlugs,
+              id: (v) => v.id,
+            ),
+          ),
         ),
       VideoShelf(
         title: 'Watch & Learn',
         subtitle: 'A little of everything',
-        videos: capPerTeacher(results.last),
+        videos: take(results.last),
       ),
     ].where((s) => s.videos.isNotEmpty).toList();
   }
@@ -218,25 +237,48 @@ final bookShelvesProvider = FutureProvider.family<List<BookShelf>, String?>((
   final all = await repo.books(subject: subject); // newest first
 
   if (subject == null) {
-    return [
+    // Most books carry several subjects, so without care every shelf would
+    // lead with the same newest books. No book appears on two shelves, and
+    // each pillar leads with the books most about it.
+    final shown = <Object>{};
+    List<Book> take(List<Book> pool) {
+      final shelf = capPerAuthor(pool);
+      shown.addAll(shelf.map((b) => b.id));
+      return shelf;
+    }
+
+    final shelves = [
       BookShelf(
         title: 'New to Spiritpedia',
         subtitle: 'Just added',
-        books: capPerAuthor(all),
+        books: take(all),
       ),
       for (final pillar in videoPillarOrder)
         BookShelf(
           title: pillar,
           subtitle: 'Read & reflect',
-          books: capPerAuthor([
-            for (final b in all)
-              if (b.subjectSlugs.any(subjectPillars[pillar]!.contains)) b,
-          ]),
+          books: take(
+            pillarCandidates(
+              all,
+              pillar,
+              subjects: (b) => b.subjectSlugs,
+              id: (b) => b.id,
+              shown: shown,
+            ),
+          ),
         ),
+    ];
+    return [
+      ...shelves,
       BookShelf(
         title: 'From the Library',
         subtitle: 'A little of everything',
-        books: capPerAuthor(spreadOut(all)),
+        books: take(
+          spreadOut([
+            for (final b in all)
+              if (!shown.contains(b.id)) b,
+          ]),
+        ),
       ),
     ].where((s) => s.books.isNotEmpty).toList();
   }

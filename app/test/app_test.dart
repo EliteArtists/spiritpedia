@@ -7,7 +7,9 @@ import 'package:spiritpedia/data/providers.dart';
 import 'package:spiritpedia/features/account/account_providers.dart';
 import 'package:spiritpedia/features/library/saved_items.dart';
 import 'package:spiritpedia/features/shell/app_shell.dart';
+import 'package:spiritpedia/features/shell/tab_bar_state.dart';
 import 'package:spiritpedia/features/star/star_layer.dart';
+import 'package:spiritpedia/features/search/feeling_placeholder.dart';
 
 import 'support/fake_account.dart';
 import 'support/fake_content.dart';
@@ -20,6 +22,7 @@ Widget _app({bool fail = false}) => ProviderScope(
       FakeContentRepository(fail: fail),
     ),
     savedStoreProvider.overrideWithValue(MemorySavedStore()),
+    typewriterRunsProvider.overrideWithValue(false),
   ],
   child: const SpiritpediaApp(playIntro: false),
 );
@@ -224,5 +227,60 @@ void main() {
     await tester.pumpAndSettle();
     expect(find.text('Replay intro'), findsOneWidget);
     expect(find.text('DEBUG BUILD ONLY'), findsOneWidget);
+  });
+
+  testWidgets('a subject tray hides the floating bar until it closes', (
+    tester,
+  ) async {
+    await start(tester);
+    double barOpacity() => tester
+        .widget<AnimatedOpacity>(
+          find.ancestor(
+            of: find.byType(PillTabBar),
+            matching: find.byType(AnimatedOpacity),
+          ),
+        )
+        .opacity;
+
+    expect(barOpacity(), 1);
+    await tester.tap(find.text('Emotional Healing'));
+    await tester.pumpAndSettle();
+    expect(find.text('Breathwork'), findsWidgets); // the tray is open
+    expect(barOpacity(), 0);
+
+    await tester.tapAt(const Offset(200, 100)); // dismiss the tray
+    await tester.pumpAndSettle();
+    expect(barOpacity(), 1);
+  });
+
+  testWidgets('docked, the star has no backing: the pills fade beneath it', (
+    tester,
+  ) async {
+    tester.view.physicalSize = const Size(1290, 2796);
+    await start(tester);
+    expect(find.byType(ShaderMask), findsNothing);
+    await tester.drag(
+      find.byType(CustomScrollView).first,
+      const Offset(0, -500),
+    );
+    await tester.pumpAndSettle();
+    expect(find.byType(ShaderMask), findsOneWidget);
+  });
+
+  testWidgets('the tab bar comes in two looks', (tester) async {
+    await start(tester);
+    final container = ProviderScope.containerOf(
+      tester.element(find.byType(SpiritpediaApp)),
+    );
+    expect(
+      tester.widget<PillTabBar>(find.byType(PillTabBar)).look,
+      TabBarLook.violet,
+    );
+    container.read(tabBarLookProvider.notifier).set(TabBarLook.light);
+    await tester.pump();
+    expect(
+      tester.widget<PillTabBar>(find.byType(PillTabBar)).look,
+      TabBarLook.light,
+    );
   });
 }

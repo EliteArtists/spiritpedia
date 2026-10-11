@@ -27,6 +27,18 @@ Future<void> _letStarDecode(WidgetTester tester) async {
 
 final _skip = find.bySemanticsLabel('Skip intro');
 
+/// Like the phone's storage: the reset takes a moment, by which time the
+/// screen that asked for it may have closed.
+class _SlowPrefs extends MemoryIntroPrefs {
+  _SlowPrefs(super.value);
+
+  @override
+  Future<void> reset() async {
+    await Future<void>.delayed(const Duration(milliseconds: 600));
+    await super.reset();
+  }
+}
+
 void main() {
   testWidgets('first launch: the greeting, the flight, then the callout', (
     tester,
@@ -150,44 +162,70 @@ void main() {
     });
   });
 
-  testWidgets('"Replay intro" plays the first launch again, even when off', (
-    tester,
-  ) async {
-    final prefs = MemoryIntroPrefs(IntroKind.none);
-    await tester.pumpWidget(
-      ProviderScope(
-        overrides: [introPrefsProvider.overrideWithValue(prefs)],
-        child: MaterialApp(
-          builder: (context, child) => StarLayer(
-            child: Consumer(
-              builder: (context, ref, _) => IntroOverlay(
-                key: ValueKey(ref.watch(introReplayProvider)),
-                removeNativeSplash: false,
-                child: child!,
-              ),
+  testWidgets(
+    '"Replay intro" plays the first launch again, even when off, from a '
+    'screen that closes as it is tapped (as Account does)',
+    (tester) async {
+      final prefs = _SlowPrefs(IntroKind.none);
+      await tester.pumpWidget(
+        ProviderScope(
+          overrides: [introPrefsProvider.overrideWithValue(prefs)],
+          child: MaterialApp(
+            builder: (context, child) => StarLayer(
+              child: IntroOverlay(removeNativeSplash: false, child: child!),
             ),
-          ),
-          home: Scaffold(
-            body: Consumer(
-              builder: (context, ref, _) => TextButton(
-                onPressed: () => replayFirstLaunch(ref),
-                child: const Text('Replay intro'),
+            home: Builder(
+              builder: (context) => Scaffold(
+                body: Column(
+                  children: [
+                    _home,
+                    TextButton(
+                      onPressed: () => Navigator.of(context).push(
+                        MaterialPageRoute<void>(
+                          builder: (_) => Scaffold(
+                            body: Consumer(
+                              builder: (context, ref, _) => TextButton(
+                                onPressed: () {
+                                  replayFirstLaunch(ref);
+                                  Navigator.of(context).pop();
+                                },
+                                child: const Text('Replay intro'),
+                              ),
+                            ),
+                          ),
+                        ),
+                      ),
+                      child: const Text('Account'),
+                    ),
+                  ],
+                ),
               ),
             ),
           ),
         ),
-      ),
-    );
-    await _letStarDecode(tester);
-    expect(_skip, findsNothing);
+      );
+      await _letStarDecode(tester);
+      expect(_skip, findsNothing);
 
-    await tester.tap(find.text('Replay intro'));
-    await tester.pump();
-    await _letStarDecode(tester);
-    await tester.pump(const Duration(milliseconds: 1500));
-    expect(find.text(IntroOverlay.greeting), findsOneWidget);
-    expect(prefs.value, IntroKind.full);
-  });
+      await tester.tap(find.text('Account'));
+      await tester.pumpAndSettle();
+      await tester.tap(find.text('Replay intro'));
+      await tester.pump();
+      await tester.pump(const Duration(milliseconds: 400)); // Account closes
+      await tester.pump(const Duration(milliseconds: 400)); // the reset lands
+      await _letStarDecode(tester);
+      await tester.pump(const Duration(milliseconds: 1100));
+      expect(find.text(IntroOverlay.greeting), findsOneWidget);
+      expect(prefs.value, IntroKind.full);
+      expect(tester.takeException(), isNull);
+
+      // And it plays through to the callout as on a first launch.
+      await tester.pump(const Duration(milliseconds: 1400));
+      await tester.pump(const Duration(milliseconds: 1200));
+      await tester.pump();
+      expect(find.text(IntroOverlay.callout), findsOneWidget);
+    },
+  );
 
   test('starts at the launch screen size: 480 px at 4x = 120 pt', () {
     expect(IntroOverlay.startStarWidth, 120);

@@ -261,7 +261,7 @@ class FloatingHomeStar extends StatelessWidget {
       MediaQuery.paddingOf(context).bottom + 12;
 
   /// Room to leave under a page's last content so it can scroll clear.
-  static const clearance = 96.0;
+  static const clearance = 104.0;
 
   @override
   Widget build(BuildContext context) {
@@ -273,23 +273,8 @@ class FloatingHomeStar extends StatelessWidget {
       left: 0,
       right: 0,
       bottom: bottomOffset(context),
-      child: Center(
-        child: DecoratedBox(
-          decoration: BoxDecoration(
-            shape: BoxShape.circle,
-            color: const Color(0xEB111827),
-            border: Border.all(color: const Color(0x26FFFFFF)),
-            boxShadow: const [
-              BoxShadow(
-                color: Color(0x66000000),
-                blurRadius: 18,
-                offset: Offset(0, 6),
-              ),
-            ],
-          ),
-          child: const StarAnchor(size: 32, tapTarget: 60),
-        ),
-      ),
+      // Just the star — no disc behind it.
+      child: const Center(child: StarAnchor(size: 64, tapTarget: 72)),
     );
   }
 }

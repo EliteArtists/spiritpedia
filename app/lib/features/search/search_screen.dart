@@ -13,6 +13,7 @@ import '../../theme/colors.dart';
 import '../star/star_layer.dart';
 import '../star/star_page.dart';
 import 'emotion_search_controller.dart';
+import 'feeling_placeholder.dart';
 import 'search_repository.dart';
 
 /// The shared safety data, from the bundled web/shared/emotion-safety.json.
@@ -89,6 +90,7 @@ class _SearchState extends ConsumerState<_Search> {
   @override
   void initState() {
     super.initState();
+    _focus.addListener(_changed); // the placeholder changes on focus
     if (widget.standalone) {
       WidgetsBinding.instance.addPostFrameCallback(
         (_) => _focus.requestFocus(),
@@ -148,8 +150,24 @@ class _SearchState extends ConsumerState<_Search> {
                   autocorrect: true,
                   style: const TextStyle(fontSize: 17),
                   decoration: InputDecoration(
-                    hintText: 'How are you feeling today?',
-                    hintStyle: const TextStyle(color: SpColors.textMuted),
+                    // Example feelings typed out until someone taps in; then
+                    // the question, until they type.
+                    hint: _focus.hasFocus
+                        ? const Text(
+                            feelingQuestion,
+                            maxLines: 1,
+                            overflow: TextOverflow.ellipsis,
+                            style: TextStyle(
+                              fontSize: 17,
+                              color: SpColors.textMuted,
+                            ),
+                          )
+                        : const FeelingTypewriter(
+                            style: TextStyle(
+                              fontSize: 17,
+                              color: SpColors.textMuted,
+                            ),
+                          ),
                     filled: true,
                     fillColor: SpColors.surface,
                     // The star, where the magnifying glass was: home.

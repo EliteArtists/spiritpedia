@@ -5,6 +5,7 @@ import 'package:go_router/go_router.dart';
 import '../../data/providers.dart';
 import '../../theme/colors.dart';
 import '../home/subject_pills.dart';
+import '../search/feeling_placeholder.dart';
 import 'star_layer.dart';
 
 /// The frame Home, Videos and Books share, as the website's pages do: the top
@@ -203,8 +204,9 @@ class TopBar extends StatelessWidget {
   }
 }
 
-/// "How are you feeling today?" with the star where the magnifying glass
-/// was. The box opens the search; the star takes you home.
+/// The search box, typing example feelings as the website's does, with the
+/// star where the magnifying glass was. The box opens the search, which asks
+/// "How are you feeling today?"; the star takes you home.
 class StarSearchBox extends StatelessWidget {
   const StarSearchBox({
     super.key,
@@ -239,12 +241,9 @@ class StarSearchBox extends StatelessWidget {
                     button: true,
                     label: 'How are you feeling today? Search',
                     excludeSemantics: true,
-                    child: const Text(
-                      'How are you feeling today?',
-                      maxLines: 1,
-                      overflow: TextOverflow.ellipsis,
-                      style: TextStyle(fontSize: 16, color: SpColors.textMuted),
-                    ),
+                    // Example feelings typed out, as on the website; the
+                    // search it opens asks the question itself.
+                    child: const FeelingTypewriter(),
                   ),
                 ),
                 const SizedBox(width: 20),
@@ -289,29 +288,18 @@ class _PillsHeader extends SliverPersistentHeaderDelegate {
           Align(
             alignment: Alignment.centerLeft,
             child: TweenAnimationBuilder<double>(
-              tween: Tween(end: docked ? _dockWidth : 20),
+              tween: Tween(end: docked ? 1 : 0),
               duration: const Duration(milliseconds: 260),
               curve: Curves.easeOutCubic,
-              builder: (context, lead, _) =>
-                  SubjectPillRow(filter: filter, leadingPadding: lead),
-            ),
-          ),
-          // The pills slide under the docked star, fading out beneath it.
-          if (docked)
-            const Positioned(
-              left: 0,
-              top: 0,
-              bottom: 0,
-              width: _dockWidth,
-              child: DecoratedBox(
-                decoration: BoxDecoration(
-                  gradient: LinearGradient(
-                    stops: [0.75, 1],
-                    colors: [SpColors.background, Color(0x000A0F1D)],
-                  ),
+              builder: (context, t, _) => _FadeUnderStar(
+                amount: t,
+                child: SubjectPillRow(
+                  filter: filter,
+                  leadingPadding: 20 + (_dockWidth - 20) * t,
                 ),
               ),
             ),
+          ),
           Positioned(
             left: 8,
             top: 0,
@@ -340,4 +328,35 @@ class _PillsHeader extends SliverPersistentHeaderDelegate {
       old.docked != docked ||
       old.starVisible != starVisible ||
       old.filter != filter;
+}
+
+/// While the star is docked, pills scrolled to the left slide underneath it
+/// and fade away there — no backing behind the star, just the page.
+class _FadeUnderStar extends StatelessWidget {
+  const _FadeUnderStar({required this.amount, required this.child});
+
+  /// 0 undocked (no fade) to 1 docked.
+  final double amount;
+  final Widget child;
+
+  // Gone by the star's middle, fully back by its trailing edge.
+  static const _clearTo = 30.0;
+  static const _fullFrom = 54.0;
+
+  @override
+  Widget build(BuildContext context) {
+    if (amount <= 0) return child;
+    return ShaderMask(
+      blendMode: BlendMode.dstIn,
+      shaderCallback: (bounds) {
+        final w = bounds.width;
+        final faded = Colors.white.withValues(alpha: 1 - amount);
+        return LinearGradient(
+          colors: [faded, faded, Colors.white],
+          stops: [0, _clearTo / w, _fullFrom / w],
+        ).createShader(bounds);
+      },
+      child: child,
+    );
+  }
 }
