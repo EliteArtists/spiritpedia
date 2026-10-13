@@ -267,10 +267,11 @@ class _IntroOverlayState extends ConsumerState<IntroOverlay>
   Rect _homeRect(Size size) {
     final rect = _layer?.discover?.restingRect();
     if (rect != null) return rect;
-    // Home not laid out yet: roughly where its search box star sits.
+    // Home not laid out yet: roughly where its search box star sits — the
+    // first row under the status bar (8 above a 56-high box, the star 22 in).
     final top = MediaQuery.paddingOf(context).top;
     return Rect.fromCenter(
-      center: Offset(42, top + 52 + 32),
+      center: Offset(42, top + 8 + 28),
       width: 28,
       height: 28,
     );
