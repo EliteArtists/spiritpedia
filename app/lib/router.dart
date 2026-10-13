@@ -73,7 +73,8 @@ GoRouter buildRouter({
     GoRoute(
       parentNavigatorKey: _rootKey,
       path: '/account',
-      builder: (context, state) => const AccountScreen(),
+      builder: (context, state) =>
+          AccountScreen(show: state.uri.queryParameters['show']),
     ),
     GoRoute(
       parentNavigatorKey: _rootKey,

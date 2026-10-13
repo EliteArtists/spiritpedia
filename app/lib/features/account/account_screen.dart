@@ -21,11 +21,42 @@ const supportEmail = 'love@spiritpedia.co';
 /// The Account tab: sign in with an emailed code, or — signed in — the
 /// account, sign out and delete. Explorers only; practitioners manage their
 /// profile on the website.
-class AccountScreen extends ConsumerWidget {
-  const AccountScreen({super.key});
+class AccountScreen extends ConsumerStatefulWidget {
+  const AccountScreen({super.key, this.show});
+
+  /// A part of the page to bring into view on opening: 'notifications' (the
+  /// menu's Notifications, /account?show=notifications).
+  final String? show;
 
   @override
-  Widget build(BuildContext context, WidgetRef ref) {
+  ConsumerState<AccountScreen> createState() => _AccountScreenState();
+}
+
+class _AccountScreenState extends ConsumerState<AccountScreen> {
+  final _notifications = GlobalKey(debugLabel: 'notifications');
+
+  @override
+  void initState() {
+    super.initState();
+    if (widget.show == 'notifications') {
+      // After the first frames, when the section has its place.
+      Future<void>.delayed(const Duration(milliseconds: 350), () {
+        final target = _notifications.currentContext;
+        if (!mounted || target == null || !target.mounted) return;
+        Scrollable.ensureVisible(
+          target,
+          alignment: 0.15,
+          duration: MediaQuery.disableAnimationsOf(context)
+              ? Duration.zero
+              : const Duration(milliseconds: 400),
+          curve: Curves.easeOutCubic,
+        );
+      });
+    }
+  }
+
+  @override
+  Widget build(BuildContext context) {
     final account = ref.watch(accountProvider);
     return Scaffold(
       appBar: AppBar(),
@@ -44,7 +75,7 @@ class AccountScreen extends ConsumerWidget {
             ),
             const SizedBox(height: 20),
             if (account.signedIn)
-              _SignedIn(account: account)
+              _SignedIn(account: account, notificationsKey: _notifications)
             else
               const SignInForm(),
             const SizedBox(height: 36),
@@ -294,9 +325,10 @@ class _PrimaryButton extends StatelessWidget {
 // ── Signed in ────────────────────────────────────────────────────────────────
 
 class _SignedIn extends ConsumerStatefulWidget {
-  const _SignedIn({required this.account});
+  const _SignedIn({required this.account, this.notificationsKey});
 
   final AccountState account;
+  final GlobalKey? notificationsKey;
 
   @override
   ConsumerState<_SignedIn> createState() => _SignedInState();
@@ -398,7 +430,10 @@ class _SignedInState extends ConsumerState<_SignedIn> {
           ),
         ),
         const SizedBox(height: 22),
-        const NotificationsSection(),
+        KeyedSubtree(
+          key: widget.notificationsKey,
+          child: const NotificationsSection(),
+        ),
         const _BlockedReviewers(),
         if (profile?.isPractitioner == true) ...[
           const SizedBox(height: 12),

@@ -5,6 +5,7 @@ import 'package:go_router/go_router.dart';
 import '../../data/providers.dart';
 import '../../theme/colors.dart';
 import '../home/subject_pills.dart';
+import '../menu/app_menu.dart';
 import '../search/feeling_placeholder.dart';
 import 'star_layer.dart';
 import 'tier_tips.dart';
@@ -188,7 +189,6 @@ class _StarPageState extends ConsumerState<StarPage> implements TabStarTarget {
                     child: CustomScrollView(
                       controller: _scroll,
                       slivers: [
-                        const SliverToBoxAdapter(child: TopBar()),
                         SliverToBoxAdapter(
                           child: StarSearchBox(
                             // Videos and Books search only their own kind.
@@ -199,6 +199,9 @@ class _StarPageState extends ConsumerState<StarPage> implements TabStarTarget {
                             },
                             starKey: _boxStar,
                             starVisible: !hidden && !_docked,
+                            // The menu scrolls away with the search bar; only
+                            // the star docks in the pills.
+                            trailing: const MenuButton(),
                           ),
                         ),
                         SliverPersistentHeader(
@@ -246,34 +249,6 @@ class _StarPageState extends ConsumerState<StarPage> implements TabStarTarget {
   }
 }
 
-/// My Library and Account, on the right. Nothing on the left: the star is the
-/// brand.
-class TopBar extends StatelessWidget {
-  const TopBar({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.fromLTRB(12, 4, 8, 0),
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.end,
-        children: [
-          IconButton(
-            tooltip: 'My Library',
-            onPressed: () => context.push('/library'),
-            icon: const Icon(Icons.bookmark_border),
-          ),
-          IconButton(
-            tooltip: 'Account',
-            onPressed: () => context.push('/account'),
-            icon: const Icon(Icons.person_outline),
-          ),
-        ],
-      ),
-    );
-  }
-}
-
 /// The search box, typing example feelings as the website's does, with the
 /// star where the magnifying glass was. The box opens the search, which asks
 /// "How are you feeling today?"; the star takes you home.
@@ -283,9 +258,13 @@ class StarSearchBox extends StatelessWidget {
     required this.starKey,
     this.starVisible = true,
     this.searchPath = '/feel',
+    this.trailing,
   });
 
   final GlobalKey starKey;
+
+  /// Beside the box, at the end of the row (the menu button).
+  final Widget? trailing;
 
   /// The search this box opens.
   final String searchPath;
@@ -293,43 +272,53 @@ class StarSearchBox extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.fromLTRB(20, 4, 20, 16),
-      child: Material(
-        color: SpColors.surface,
-        shape: const StadiumBorder(side: BorderSide(color: SpColors.border)),
-        child: InkWell(
-          customBorder: const StadiumBorder(),
-          onTap: () => context.push(searchPath),
-          child: SizedBox(
-            height: 56,
-            child: Row(
-              children: [
-                const SizedBox(width: 8),
-                StarAnchor(size: 28, starKey: starKey, visible: starVisible),
-                const SizedBox(width: 6),
-                // Expanded + ellipsis: on a narrow phone or with large
-                // accessibility text the question truncates, never overflows.
-                Expanded(
-                  child: Semantics(
-                    button: true,
-                    label: searchPath.contains('in=videos')
-                        ? 'Search videos, or say how you feel'
-                        : searchPath.contains('in=books')
-                        ? 'Search books, or say how you feel'
-                        : 'How are you feeling today? Search',
-                    excludeSemantics: true,
-                    // Example feelings typed out, as on the website; the
-                    // search it opens asks the question itself.
-                    child: const FeelingTypewriter(),
-                  ),
+    final box = Material(
+      color: SpColors.surface,
+      shape: const StadiumBorder(side: BorderSide(color: SpColors.border)),
+      child: InkWell(
+        customBorder: const StadiumBorder(),
+        onTap: () => context.push(searchPath),
+        child: SizedBox(
+          height: 56,
+          child: Row(
+            children: [
+              const SizedBox(width: 8),
+              StarAnchor(size: 28, starKey: starKey, visible: starVisible),
+              const SizedBox(width: 6),
+              // Expanded + ellipsis: on a narrow phone or with large
+              // accessibility text the question truncates, never overflows.
+              Expanded(
+                child: Semantics(
+                  button: true,
+                  label: searchPath.contains('in=videos')
+                      ? 'Search videos, or say how you feel'
+                      : searchPath.contains('in=books')
+                      ? 'Search books, or say how you feel'
+                      : 'How are you feeling today? Search',
+                  excludeSemantics: true,
+                  // Example feelings typed out, as on the website; the
+                  // search it opens asks the question itself.
+                  child: const FeelingTypewriter(),
                 ),
-                const SizedBox(width: 20),
-              ],
-            ),
+              ),
+              const SizedBox(width: 20),
+            ],
           ),
         ),
       ),
+    );
+    final trailing = this.trailing;
+    return Padding(
+      padding: EdgeInsets.fromLTRB(20, 8, trailing == null ? 20 : 8, 16),
+      child: trailing == null
+          ? box
+          : Row(
+              children: [
+                Expanded(child: box),
+                const SizedBox(width: 4),
+                trailing,
+              ],
+            ),
     );
   }
 }

@@ -44,12 +44,16 @@ class _NoSearch implements SearchRepository {
       UniversalResults.empty;
 }
 
-Widget _app({bool fail = false, FakePushMessaging? push}) => ProviderScope(
+Widget _app({
+  bool fail = false,
+  FakePushMessaging? push,
+  FakeAccountService? account,
+}) => ProviderScope(
   retry: spiritpediaRetry,
   overrides: [
     reviewsServiceProvider.overrideWithValue(FakeReviewsService()),
     if (push != null) pushMessagingProvider.overrideWithValue(push),
-    accountServiceProvider.overrideWithValue(FakeAccountService()),
+    accountServiceProvider.overrideWithValue(account ?? FakeAccountService()),
     contentRepositoryProvider.overrideWithValue(
       FakeContentRepository(fail: fail),
     ),
@@ -111,19 +115,142 @@ void main() {
     expect(find.text('Worldwide'), findsOneWidget); // the homepage's shelves
   });
 
-  testWidgets('the top bar: My Library and Account, and no wordmark', (
-    tester,
-  ) async {
-    await start(tester);
-    expect(find.text('Spiritpedia'), findsNothing);
-    await tester.tap(find.byTooltip('My Library'));
-    await tester.pumpAndSettle();
-    expect(find.text('My Library'), findsWidgets);
-    await tester.pageBack();
-    await tester.pumpAndSettle();
-    await tester.tap(find.byTooltip('Account'));
-    await tester.pumpAndSettle();
-    expect(find.text('Your account'), findsOneWidget);
+  group('the header and its menu', () {
+    final menuButton = find.byKey(const ValueKey('menu-button'));
+    final menu = find.byKey(const ValueKey('app-menu'));
+
+    Future<void> openMenu(WidgetTester tester) async {
+      await tester.tap(menuButton);
+      await tester.pumpAndSettle();
+      expect(menu, findsOneWidget);
+    }
+
+    testWidgets('one row: the search bar with the star, and the menu', (
+      tester,
+    ) async {
+      await start(tester);
+      expect(find.text('Spiritpedia'), findsNothing); // no wordmark
+      expect(find.byTooltip('My Library'), findsNothing); // no icon row
+      expect(find.byTooltip('Account'), findsNothing);
+      final search = find.bySemanticsLabel('How are you feeling today? Search');
+      expect(menuButton, findsOneWidget);
+      // Side by side, the search bar taking most of the row.
+      final box = tester.getRect(search);
+      final button = tester.getRect(menuButton);
+      expect((box.center.dy - button.center.dy).abs(), lessThan(4));
+      expect(button.left, greaterThan(box.right));
+      // The search bar runs from the 20px margin to the button: about 80% of
+      // this 430-wide screen.
+      expect((button.left - 4 - 20) / 430, closeTo(0.8, 0.05));
+    });
+
+    testWidgets('Videos and Books have the same menu', (tester) async {
+      await start(tester);
+      for (final tab in ['Videos', 'Books']) {
+        await tester.tap(
+          find.descendant(
+            of: find.byType(PillTabBar),
+            matching: find.text(tab),
+          ),
+        );
+        await tester.pumpAndSettle();
+        await tester.tap(menuButton.hitTestable());
+        await tester.pumpAndSettle();
+        expect(menu, findsOneWidget, reason: tab);
+        await tester.tapAt(const Offset(20, 400)); // outside it: closes
+        await tester.pumpAndSettle();
+        expect(menu, findsNothing, reason: tab);
+      }
+    });
+
+    testWidgets('the menu scrolls away with the search bar; the star docks', (
+      tester,
+    ) async {
+      await start(tester);
+      await tester.drag(
+        find.byType(CustomScrollView).first,
+        const Offset(0, -600),
+      );
+      await tester.pumpAndSettle();
+      expect(menuButton.hitTestable(), findsNothing);
+      expect(find.text('View All').hitTestable(), findsOneWidget); // pills stay
+    });
+
+    testWidgets('signed out: Sign in at the top, then My Library', (
+      tester,
+    ) async {
+      await start(tester);
+      await openMenu(tester);
+      final signIn = find.byKey(const ValueKey('menu-sign-in'));
+      final library = find.byKey(const ValueKey('menu-library'));
+      expect(
+        tester.getTopLeft(signIn).dy,
+        lessThan(tester.getTopLeft(library).dy),
+      );
+      expect(find.byKey(const ValueKey('menu-account')), findsNothing);
+      for (final label in [
+        'Share Spiritpedia',
+        'Terms of Use',
+        'Privacy Policy',
+        'Contact',
+        'love@spiritpedia.co',
+      ]) {
+        expect(find.text(label), findsOneWidget, reason: label);
+      }
+      await tester.tap(signIn);
+      await tester.pumpAndSettle();
+      expect(menu, findsNothing);
+      expect(find.text('Your account'), findsOneWidget);
+    });
+
+    testWidgets(
+      'signed in: My Library with its count, Account, Notifications',
+      (tester) async {
+        final account = FakeAccountService()
+          ..restoreSession('seeker@example.com');
+        await tester.pumpWidget(_app(account: account));
+        await tester.pump();
+        await tester.pump(const Duration(milliseconds: 100));
+        await tester.tap(find.byTooltip('Save to My Library').first);
+        await tester.pumpAndSettle();
+
+        await openMenu(tester);
+        expect(find.byKey(const ValueKey('menu-sign-in')), findsNothing);
+        final library = find.byKey(const ValueKey('menu-library'));
+        expect(
+          find.descendant(of: library, matching: find.text('1')),
+          findsOneWidget,
+        );
+        expect(find.text('seeker@example.com'), findsOneWidget);
+
+        await tester.tap(library);
+        await tester.pumpAndSettle();
+        expect(find.text('My Library'), findsWidgets);
+        await tester.pageBack();
+        await tester.pumpAndSettle();
+
+        await openMenu(tester);
+        await tester.tap(find.byKey(const ValueKey('menu-account')));
+        await tester.pumpAndSettle();
+        expect(find.text('My Account'), findsOneWidget);
+        await tester.pageBack();
+        await tester.pumpAndSettle();
+
+        await openMenu(tester);
+        await tester.tap(find.byKey(const ValueKey('menu-notifications')));
+        await tester.pumpAndSettle();
+        expect(find.text('My Account'), findsOneWidget);
+        expect(find.text('Notifications'), findsOneWidget);
+      },
+    );
+
+    testWidgets('a swipe to the right puts the menu away', (tester) async {
+      await start(tester);
+      await openMenu(tester);
+      await tester.fling(menu, const Offset(300, 0), 1200);
+      await tester.pumpAndSettle();
+      expect(menu, findsNothing);
+    });
   });
 
   testWidgets('the star sits in the search box, labelled Home; on a tab it '
@@ -349,7 +476,9 @@ void main() {
 
   testWidgets('debug builds: Account offers "Replay intro"', (tester) async {
     await start(tester);
-    await tester.tap(find.byTooltip('Account'));
+    await tester.tap(find.byKey(const ValueKey('menu-button')));
+    await tester.pumpAndSettle();
+    await tester.tap(find.byKey(const ValueKey('menu-sign-in')));
     await tester.pumpAndSettle();
     expect(find.text('Replay intro'), findsOneWidget);
     expect(find.text('DEBUG BUILD ONLY'), findsOneWidget);
