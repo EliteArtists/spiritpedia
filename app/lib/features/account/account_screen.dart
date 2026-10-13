@@ -13,7 +13,6 @@ import '../notifications/notifications_section.dart';
 import '../reviews/reviews_providers.dart';
 import '../reviews/reviews_service.dart';
 import '../star/star_layer.dart';
-import '../star/tier_tips.dart';
 import 'account_providers.dart';
 import 'account_service.dart';
 
@@ -400,8 +399,6 @@ class _SignedInState extends ConsumerState<_SignedIn> {
         ),
         const SizedBox(height: 22),
         const NotificationsSection(),
-        const SizedBox(height: 12),
-        const _StarTips(),
         const _BlockedReviewers(),
         if (profile?.isPractitioner == true) ...[
           const SizedBox(height: 12),
@@ -472,32 +469,6 @@ class _CardTitle extends StatelessWidget {
     text,
     style: const TextStyle(fontSize: 15, fontWeight: FontWeight.w600),
   );
-}
-
-/// The star's tier tips, on or off (on this phone).
-class _StarTips extends ConsumerWidget {
-  const _StarTips();
-
-  @override
-  Widget build(BuildContext context, WidgetRef ref) {
-    final tips = ref.watch(tierTipsProvider);
-    return _Card(
-      padding: const EdgeInsets.fromLTRB(18, 6, 10, 6),
-      child: SwitchListTile(
-        key: const ValueKey('star-tips'),
-        contentPadding: EdgeInsets.zero,
-        title: const _CardTitle('Star tips'),
-        subtitle: const Text(
-          'The star explains each teacher badge the first time you see it.',
-          style: TextStyle(color: SpColors.textFaint, fontSize: 13),
-        ),
-        value: tips.enabled,
-        onChanged: tips.loaded
-            ? (v) => ref.read(tierTipsProvider.notifier).setEnabled(v)
-            : null,
-      ),
-    );
-  }
 }
 
 /// Reviewers this person blocked, to unblock. Only shown when there are any.

@@ -19,7 +19,7 @@ import 'package:spiritpedia/features/search/feeling_placeholder.dart';
 import 'package:spiritpedia/features/search/search_repository.dart';
 import 'package:spiritpedia/features/search/search_screen.dart';
 import 'package:spiritpedia/features/reviews/reviews_providers.dart';
-import 'package:spiritpedia/features/star/tier_tips.dart';
+import 'package:spiritpedia/shared/widgets/cards.dart';
 
 import 'support/fake_account.dart';
 import 'support/fake_content.dart';
@@ -48,7 +48,6 @@ Widget _app({bool fail = false, FakePushMessaging? push}) => ProviderScope(
   retry: spiritpediaRetry,
   overrides: [
     reviewsServiceProvider.overrideWithValue(FakeReviewsService()),
-    tierTipsPrefsProvider.overrideWithValue(MemoryTierTipsPrefs()),
     if (push != null) pushMessagingProvider.overrideWithValue(push),
     accountServiceProvider.overrideWithValue(FakeAccountService()),
     contentRepositoryProvider.overrideWithValue(
@@ -180,13 +179,31 @@ void main() {
     },
   );
 
-  testWidgets(
-    'a tier shelf in view: the star shows its tip, once, tapped away',
-    (tester) async {
-      await start(tester);
+  group('tier badges explain themselves', () {
+    Future<void> pause(WidgetTester tester) async {
+      // The bubble fades in and out over a fraction of a second.
       await tester.pump(const Duration(milliseconds: 400));
-      // All three tier shelves are on this tall screen; only the first speaks.
-      expect(find.byKey(const ValueKey('tier-tip')), findsOneWidget);
+      await tester.pump(const Duration(milliseconds: 400));
+    }
+
+    final tip = find.byKey(const ValueKey('tier-tip'));
+    Finder shelfBadge(String label) =>
+        find.bySemanticsLabel('$label badge: what it means');
+
+    testWidgets('nothing appears by itself', (tester) async {
+      await start(tester);
+      await pause(tester);
+      expect(find.text('Worldwide'), findsOneWidget);
+      expect(tip, findsNothing);
+    });
+
+    testWidgets('tapping a shelf badge: the star explains it, every time', (
+      tester,
+    ) async {
+      await start(tester);
+      await tester.tap(shelfBadge('Superhero'));
+      await pause(tester);
+      expect(tip, findsOneWidget);
       expect(find.text('Superheroes'), findsOneWidget);
       expect(
         find.text(
@@ -194,17 +211,59 @@ void main() {
         ),
         findsOneWidget,
       );
-      expect(find.text('Luminaries'), findsNothing);
 
-      await tester.tap(find.byKey(const ValueKey('tier-tip')));
-      await tester.pump(const Duration(milliseconds: 400));
-      await tester.pump(const Duration(milliseconds: 400)); // faded away
-      expect(find.byKey(const ValueKey('tier-tip')), findsNothing);
-      // At most one per visit: the next waits.
-      expect(find.text('Luminaries'), findsNothing);
-      expect(find.text('Worldwide'), findsOneWidget); // the shelf, untouched
-    },
-  );
+      // A tap anywhere closes it, and only closes it.
+      await tester.tapAt(const Offset(200, 1500));
+      await pause(tester);
+      expect(tip, findsNothing);
+      expect(find.text('Worldwide'), findsOneWidget); // still on Discover
+
+      // Again: it shows again.
+      await tester.tap(shelfBadge('Superhero'));
+      await pause(tester);
+      expect(find.text('Superheroes'), findsOneWidget);
+      // Tapping the bubble itself closes it too.
+      await tester.tap(tip);
+      await pause(tester);
+      expect(tip, findsNothing);
+
+      for (final (badge, title, line) in [
+        (
+          'Luminary',
+          'Luminaries',
+          'A respected and established spiritual teacher.',
+        ),
+        (
+          'Local Hero',
+          'Local Heroes',
+          'A practitioner available in your area.',
+        ),
+      ]) {
+        await tester.tap(shelfBadge(badge));
+        await pause(tester);
+        expect(find.text(title), findsOneWidget, reason: badge);
+        expect(find.text(line), findsOneWidget, reason: badge);
+        await tester.tapAt(const Offset(200, 1500));
+        await pause(tester);
+      }
+    });
+
+    testWidgets("a badge on a teacher's card still opens the teacher", (
+      tester,
+    ) async {
+      await start(tester);
+      final cardBadge = find
+          .descendant(
+            of: find.byType(HealerCard),
+            matching: find.text('SUPERHERO'),
+          )
+          .first;
+      await tester.tap(cardBadge);
+      await tester.pumpAndSettle();
+      expect(tip, findsNothing);
+      expect(find.text('Worldwide'), findsNothing); // on the teacher's page
+    });
+  });
 
   testWidgets('a heart on a card saves without opening the card', (
     tester,

@@ -17,7 +17,6 @@ import 'package:spiritpedia/features/detail/detail_widgets.dart';
 import 'package:spiritpedia/theme/theme.dart';
 import 'package:spiritpedia/features/account/account_providers.dart';
 import 'package:spiritpedia/features/reviews/reviews_providers.dart';
-import 'package:spiritpedia/features/star/tier_tips.dart';
 
 import '../../support/fake_account.dart';
 import '../../support/fake_content.dart';
@@ -56,7 +55,6 @@ void main() {
         retry: spiritpediaRetry,
         overrides: [
           reviewsServiceProvider.overrideWithValue(FakeReviewsService()),
-          tierTipsPrefsProvider.overrideWithValue(MemoryTierTipsPrefs()),
           accountServiceProvider.overrideWithValue(FakeAccountService()),
           contentRepositoryProvider.overrideWithValue(FakeContentRepository()),
           savedStoreProvider.overrideWithValue(saved),

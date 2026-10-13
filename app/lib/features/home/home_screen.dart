@@ -81,44 +81,47 @@ class HomeScreen extends ConsumerWidget {
                 ),
               ),
               SliverToBoxAdapter(
-                child: TierTipTrigger(
-                  tip: TierTip.superhero,
-                  child: healerShelf(
-                    'Worldwide',
-                    shelves.superheroes,
-                    badge: const ShelfBadge(
-                      label: 'SUPERHERO',
-                      background: Color(0xFFFEF08A),
-                      foreground: Color(0xFF78350F),
-                    ),
+                child: healerShelf(
+                  'Worldwide',
+                  shelves.superheroes,
+                  badge: ShelfBadge(
+                    label: 'SUPERHERO',
+                    onTap: () => ref
+                        .read(tierTipProvider.notifier)
+                        .show(TierTip.superhero),
+                    semanticLabel: 'Superhero badge: what it means',
+                    background: Color(0xFFFEF08A),
+                    foreground: Color(0xFF78350F),
                   ),
                 ),
               ),
               SliverToBoxAdapter(
-                child: TierTipTrigger(
-                  tip: TierTip.luminary,
-                  child: healerShelf(
-                    'Rising Voices',
-                    shelves.luminaries,
-                    badge: const ShelfBadge(
-                      label: 'LUMINARY',
-                      background: Color(0xFF7C3AED),
-                      foreground: Colors.white,
-                    ),
+                child: healerShelf(
+                  'Rising Voices',
+                  shelves.luminaries,
+                  badge: ShelfBadge(
+                    label: 'LUMINARY',
+                    onTap: () => ref
+                        .read(tierTipProvider.notifier)
+                        .show(TierTip.luminary),
+                    semanticLabel: 'Luminary badge: what it means',
+                    background: Color(0xFF7C3AED),
+                    foreground: Colors.white,
                   ),
                 ),
               ),
               SliverToBoxAdapter(
-                child: TierTipTrigger(
-                  tip: TierTip.localHero,
-                  child: healerShelf(
-                    'Practitioners Near You',
-                    shelves.localHeroes,
-                    badge: const ShelfBadge(
-                      label: 'LOCAL HERO',
-                      background: Color(0xFF10B981),
-                      foreground: Colors.white,
-                    ),
+                child: healerShelf(
+                  'Practitioners Near You',
+                  shelves.localHeroes,
+                  badge: ShelfBadge(
+                    label: 'LOCAL HERO',
+                    onTap: () => ref
+                        .read(tierTipProvider.notifier)
+                        .show(TierTip.localHero),
+                    semanticLabel: 'Local Hero badge: what it means',
+                    background: Color(0xFF10B981),
+                    foreground: Colors.white,
                   ),
                 ),
               ),

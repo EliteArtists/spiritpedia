@@ -10,7 +10,6 @@ import 'package:spiritpedia/features/library/saved_items.dart';
 import 'package:spiritpedia/features/notifications/notifications_controller.dart';
 import 'package:spiritpedia/theme/theme.dart';
 import 'package:spiritpedia/features/reviews/reviews_providers.dart';
-import 'package:spiritpedia/features/star/tier_tips.dart';
 
 import '../../support/fake_account.dart';
 import '../../support/fake_content.dart';
@@ -48,7 +47,6 @@ void main() {
       retry: spiritpediaRetry,
       overrides: [
         reviewsServiceProvider.overrideWithValue(FakeReviewsService()),
-        tierTipsPrefsProvider.overrideWithValue(MemoryTierTipsPrefs()),
         accountServiceProvider.overrideWithValue(service),
         savedStoreProvider.overrideWithValue(store),
         pushDeviceStoreProvider.overrideWithValue(MemoryPushDeviceStore()),
@@ -386,17 +384,6 @@ void main() {
         tester.getTopLeft(delete).dy - tester.getBottomLeft(signOut).dy,
         lessThan(80),
       );
-    });
-
-    testWidgets('Star tips can be switched off, on this phone', (tester) async {
-      service.restoreSession(_email);
-      final c = await pumpAccount(tester);
-      final tile = find.byKey(const ValueKey('star-tips'));
-      expect(tester.widget<SwitchListTile>(tile).value, isTrue);
-      await tester.tap(tile);
-      await tester.pumpAndSettle();
-      expect(c.read(tierTipsProvider).enabled, isFalse);
-      expect(await c.read(tierTipsPrefsProvider).enabled(), isFalse);
     });
 
     group('change email', () {

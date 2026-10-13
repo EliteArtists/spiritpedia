@@ -58,7 +58,14 @@ class Shelf extends StatelessWidget {
                     children: [
                       if (badge != null)
                         Padding(
-                          padding: const EdgeInsets.only(bottom: 8),
+                          // A tappable badge brings its own room around it.
+                          padding: EdgeInsets.only(
+                            bottom:
+                                badge is ShelfBadge &&
+                                    (badge as ShelfBadge).onTap != null
+                                ? 0
+                                : 8,
+                          ),
                           child: badge,
                         ),
                       if (subtitle != null)
@@ -121,14 +128,40 @@ class ShelfBadge extends StatelessWidget {
     required this.label,
     required this.background,
     required this.foreground,
+    this.onTap,
+    this.semanticLabel,
   });
 
   final String label;
   final Color background;
   final Color foreground;
 
+  /// Tappable badges (the tier shelves on Discover) explain themselves.
+  final VoidCallback? onTap;
+  final String? semanticLabel;
+
   @override
   Widget build(BuildContext context) {
+    final pill = _pill();
+    if (onTap == null) return pill;
+    // A finger-sized target around a small pill: the extra room is above,
+    // below and to the right, so the pill itself does not move sideways.
+    return Semantics(
+      button: true,
+      label: semanticLabel ?? label,
+      excludeSemantics: true,
+      child: GestureDetector(
+        behavior: HitTestBehavior.opaque,
+        onTap: onTap,
+        child: Padding(
+          padding: const EdgeInsets.fromLTRB(0, 10, 18, 10),
+          child: pill,
+        ),
+      ),
+    );
+  }
+
+  Widget _pill() {
     return DecoratedBox(
       decoration: BoxDecoration(
         color: background,

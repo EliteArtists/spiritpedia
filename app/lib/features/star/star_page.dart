@@ -166,7 +166,7 @@ class _StarPageState extends ConsumerState<StarPage> implements TabStarTarget {
   Widget build(BuildContext context) {
     final incoming = _layer?.incoming ?? _noLayer;
     if (_hasTips) {
-      ref.listen(tierTipsProvider.select((t) => t.showing), (_, tip) {
+      ref.listen(tierTipProvider, (_, tip) {
         if (tip != null) _placeTip();
       });
     }
@@ -222,6 +222,18 @@ class _StarPageState extends ConsumerState<StarPage> implements TabStarTarget {
                     ),
                   ),
                 ),
+                // While a tier tip is open, a touch anywhere closes it — and
+                // only closes it, so it never opens what was underneath.
+                if (_hasTips && ref.watch(tierTipProvider) != null)
+                  Positioned.fill(
+                    child: GestureDetector(
+                      key: const ValueKey('tier-tip-close'),
+                      behavior: HitTestBehavior.opaque,
+                      onTap: ref.read(tierTipProvider.notifier).close,
+                      onPanDown: (_) =>
+                          ref.read(tierTipProvider.notifier).close(),
+                    ),
+                  ),
                 // The tip hangs from the star, never while it flies.
                 if (_hasTips && tipStar != null && !hidden)
                   TierTipBubble(star: tipStar),
