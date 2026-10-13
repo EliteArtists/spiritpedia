@@ -11,7 +11,8 @@ export const metadata = buildMetadata({
 
 // Its own date, not the shared LAST_UPDATED: 13 October 2026 added the line on
 // reporting, blocking and the 24-hour promise (§7, for App Store guideline
-// 1.2); the Privacy Policy did not change.
+// 1.2) and self-serve account deletion (§14, as the Privacy Policy already
+// described it).
 const TERMS_UPDATED = '13 October 2026';
 
 export default function TermsPage() {
@@ -187,8 +188,15 @@ export default function TermsPage() {
 
       <Section title="14. Closing your account">
         <p>
-          You can stop using Spiritpedia at any time. To delete your account and its data, email{' '}
-          <Mail />.
+          You can stop using Spiritpedia at any time, and delete your account yourself whenever you
+          like: in the app, go to Account and tap Delete account; on the website, use the Delete
+          account option on your account page. It takes effect straight away and removes your
+          account, your saved items and any reviews you have written. If you have claimed a teacher
+          profile, the profile stays on Spiritpedia, unclaimed, without the details you added.
+        </p>
+        <p>
+          If you can&apos;t sign in, or would rather we did it for you, email <Mail /> and we&apos;ll
+          delete it.
         </p>
       </Section>
 
