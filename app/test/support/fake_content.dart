@@ -198,9 +198,34 @@ class FakeContentRepository implements ContentRepository {
   Future<Video?> video(String slug) async =>
       allVideos.where((v) => v.slug == slug).firstOrNull;
 
+  /// Retreats with dates: one to come, one that has ended.
+  static const upcomingRetreat = Offering(
+    id: 'o9',
+    slug: 'lake-retreat',
+    title: 'Lake Retreat',
+    url: 'https://example.com/lake',
+    productType: 'retreat',
+    healerId: 2,
+    startDate: '2099-09-18',
+    endDate: '2099-09-20',
+  );
+  static const pastRetreat = Offering(
+    id: 'o8',
+    slug: 'old-retreat',
+    title: 'Old Retreat',
+    url: 'https://example.com/old',
+    productType: 'retreat',
+    healerId: 2,
+    startDate: '2020-07-23',
+    endDate: '2020-08-02',
+  );
+
   @override
-  Future<Offering?> offering(String slug) async =>
-      slug == course.slug ? course : null;
+  Future<Offering?> offering(String slug) async => [
+    course,
+    upcomingRetreat,
+    pastRetreat,
+  ].where((o) => o.slug == slug).firstOrNull;
 
   @override
   Future<FreeResource?> freeResource(String slug) async =>

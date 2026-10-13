@@ -89,6 +89,16 @@ const _calmBook = Book(
 class _Plain implements ContentSearch {
   final calls = <String>[];
   final scopes = <SearchScope>[];
+  Map<String, int> saves = const {};
+
+  @override
+  Future<Map<String, int>> saveCounts(String type, List<String> slugs) async {
+    calls.add('saves:$type');
+    return {
+      for (final slug in slugs)
+        if (saves[slug] != null) slug: saves[slug]!,
+    };
+  }
 
   @override
   Future<ContentResults> search(
@@ -368,6 +378,53 @@ void main() {
       expect(r.of<Offering>(ResultKind.retreats).single.id, '2');
       expect(r.of<Offering>(ResultKind.downloads).single.id, '3');
       expect(r.of<Offering>(ResultKind.memberships).single.id, '4');
+    });
+
+    test('Suggests: saves break a tie, but never beat a title match', () {
+      const a = Book(id: 1, slug: 'a', title: 'Calm', subjectSlugs: ['x']);
+      const b = Book(id: 2, slug: 'b', title: 'Calm', subjectSlugs: ['x']);
+      expect(
+        suggest(
+          term: 'calm',
+          rows: const [],
+          videos: const [],
+          books: const [a, b],
+          bookSaves: const {'b': 3},
+        ).book,
+        b,
+      );
+      // The cap: a thousand saves are worth no more than ten.
+      expect(saveBonus(1000), saveBonus(10));
+      expect(saveBonus(10), lessThan(600));
+      const titled = Book(id: 3, slug: 'c', title: 'Calm Mind');
+      const fitting = Book(
+        id: 4,
+        slug: 'd',
+        title: 'Rest',
+        subjectSlugs: ['x'],
+      );
+      expect(
+        suggest(
+          term: 'calm mind',
+          rows: const [MappingRow('x', 9)],
+          videos: const [],
+          books: const [fitting, titled],
+          bookSaves: const {'d': 1000},
+        ).book,
+        titled,
+      );
+      // And saves never make an irrelevant item a suggestion.
+      const unrelated = Video(id: 5, slug: 'v', title: 'Gardening');
+      expect(
+        suggest(
+          term: 'calm',
+          rows: const [],
+          videos: const [unrelated],
+          books: const [],
+          videoSaves: const {'v': 1000},
+        ).video,
+        isNull,
+      );
     });
 
     test('Suggests is relevance only: a shop link changes nothing', () {

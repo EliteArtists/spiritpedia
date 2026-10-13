@@ -9,9 +9,12 @@ import 'package:spiritpedia/features/account/account_service.dart';
 import 'package:spiritpedia/features/library/saved_items.dart';
 import 'package:spiritpedia/features/notifications/notifications_controller.dart';
 import 'package:spiritpedia/theme/theme.dart';
+import 'package:spiritpedia/features/reviews/reviews_providers.dart';
+import 'package:spiritpedia/features/star/tier_tips.dart';
 
 import '../../support/fake_account.dart';
 import '../../support/fake_content.dart';
+import '../../support/fake_reviews.dart';
 
 const _email = 'Seeker@Example.com';
 const _userId = 'user-seeker@example.com';
@@ -44,6 +47,8 @@ void main() {
     final c = ProviderContainer(
       retry: spiritpediaRetry,
       overrides: [
+        reviewsServiceProvider.overrideWithValue(FakeReviewsService()),
+        tierTipsPrefsProvider.overrideWithValue(MemoryTierTipsPrefs()),
         accountServiceProvider.overrideWithValue(service),
         savedStoreProvider.overrideWithValue(store),
         pushDeviceStoreProvider.overrideWithValue(MemoryPushDeviceStore()),
@@ -279,7 +284,7 @@ void main() {
   group('deleting the account', () {
     Future<void> openDelete(WidgetTester tester) async {
       await tester.scrollUntilVisible(find.text('Delete account').last, 200);
-      await tester.tap(find.widgetWithText(OutlinedButton, 'Delete account'));
+      await tester.tap(find.byKey(const ValueKey('delete-account')));
       await tester.pumpAndSettle();
     }
 
@@ -356,6 +361,144 @@ void main() {
         ),
         findsOneWidget,
       );
+    });
+  });
+
+  group('the refreshed account', () {
+    testWidgets('Delete account is a red button straight under Sign out', (
+      tester,
+    ) async {
+      service.restoreSession(_email);
+      await pumpAccount(tester);
+      final signOut = find.widgetWithText(OutlinedButton, 'Sign out');
+      final delete = find.byKey(const ValueKey('delete-account'));
+      expect(
+        tester.widget<FilledButton>(delete).style!.backgroundColor!.resolve({}),
+        const Color(0xFFDC2626),
+      );
+      expect(
+        tester.getTopLeft(delete).dy,
+        greaterThan(tester.getTopLeft(signOut).dy),
+      );
+      // Nothing between them but the sign-out note: no heading of its own.
+      expect(find.text('Delete account'), findsOneWidget);
+      expect(
+        tester.getTopLeft(delete).dy - tester.getBottomLeft(signOut).dy,
+        lessThan(80),
+      );
+    });
+
+    testWidgets('Star tips can be switched off, on this phone', (tester) async {
+      service.restoreSession(_email);
+      final c = await pumpAccount(tester);
+      final tile = find.byKey(const ValueKey('star-tips'));
+      expect(tester.widget<SwitchListTile>(tile).value, isTrue);
+      await tester.tap(tile);
+      await tester.pumpAndSettle();
+      expect(c.read(tierTipsProvider).enabled, isFalse);
+      expect(await c.read(tierTipsPrefsProvider).enabled(), isFalse);
+    });
+
+    group('change email', () {
+      Future<ProviderContainer> start(WidgetTester tester) async {
+        service.restoreSession(_email);
+        final c = await pumpAccount(tester);
+        await tester.tap(find.byKey(const ValueKey('change-email')));
+        await tester.pumpAndSettle();
+        await tester.enterText(
+          find.byKey(const ValueKey('new-email-field')),
+          ' New@Example.com ',
+        );
+        await tester.tap(find.byKey(const ValueKey('change-email-go')));
+        await tester.pumpAndSettle();
+        return c;
+      }
+
+      testWidgets('two codes, then the account shows the new address', (
+        tester,
+      ) async {
+        final c = await start(tester);
+        expect(service.calls, contains('requestEmailChange:new@example.com'));
+        expect(find.text('Code sent to new@example.com'), findsOneWidget);
+        expect(find.text('Code sent to seeker@example.com'), findsOneWidget);
+
+        await tester.enterText(
+          find.byKey(const ValueKey('new-address-code')),
+          FakeAccountService.newAddressCode,
+        );
+        await tester.enterText(
+          find.byKey(const ValueKey('current-address-code')),
+          FakeAccountService.currentAddressCode,
+        );
+        await tester.tap(find.byKey(const ValueKey('change-email-go')));
+        await tester.pumpAndSettle();
+
+        expect(c.read(accountProvider).user!.email, 'new@example.com');
+        expect(c.read(accountProvider).user!.id, _userId); // same account
+        expect(find.text('new@example.com'), findsOneWidget);
+        expect(find.text('Your email is now new@example.com.'), findsOneWidget);
+        expect(find.byKey(const ValueKey('change-email-form')), findsNothing);
+      });
+
+      testWidgets('a wrong second code keeps the first, and says which', (
+        tester,
+      ) async {
+        final c = await start(tester);
+        await tester.enterText(
+          find.byKey(const ValueKey('new-address-code')),
+          FakeAccountService.newAddressCode,
+        );
+        await tester.enterText(
+          find.byKey(const ValueKey('current-address-code')),
+          '999999',
+        );
+        await tester.tap(find.byKey(const ValueKey('change-email-go')));
+        await tester.pumpAndSettle();
+        expect(
+          find.text(
+            "The code sent to your current address didn't work. Please check it.",
+          ),
+          findsOneWidget,
+        );
+        expect(find.text('Confirmed'), findsOneWidget); // the new address's
+        expect(c.read(accountProvider).user!.email, 'seeker@example.com');
+
+        await tester.enterText(
+          find.byKey(const ValueKey('current-address-code')),
+          FakeAccountService.currentAddressCode,
+        );
+        await tester.tap(find.byKey(const ValueKey('change-email-go')));
+        await tester.pumpAndSettle();
+        expect(c.read(accountProvider).user!.email, 'new@example.com');
+        // The accepted code was not sent again.
+        expect(
+          service.calls.where((c) => c == 'confirmEmailChange:new@example.com'),
+          hasLength(1),
+        );
+      });
+
+      testWidgets('an address already in use, or the same one, is refused', (
+        tester,
+      ) async {
+        service.takenEmails.add('taken@example.com');
+        service.restoreSession(_email);
+        await pumpAccount(tester);
+        await tester.tap(find.byKey(const ValueKey('change-email')));
+        await tester.pumpAndSettle();
+        final field = find.byKey(const ValueKey('new-email-field'));
+        await tester.enterText(field, 'seeker@example.com');
+        await tester.tap(find.byKey(const ValueKey('change-email-go')));
+        await tester.pumpAndSettle();
+        expect(find.text("That's already your email address."), findsOneWidget);
+        await tester.enterText(field, 'taken@example.com');
+        await tester.tap(find.byKey(const ValueKey('change-email-go')));
+        await tester.pumpAndSettle();
+        expect(
+          find.text('That email address already belongs to another account.'),
+          findsOneWidget,
+        );
+        expect(find.byKey(const ValueKey('new-address-code')), findsNothing);
+      });
     });
   });
 }

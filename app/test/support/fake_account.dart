@@ -48,6 +48,43 @@ class FakeAccountService implements AccountService {
     restoreSession(email);
   }
 
+  /// The codes the email change "sends": to the current and new address.
+  static const currentAddressCode = '111111';
+  static const newAddressCode = '222222';
+  String? pendingEmail;
+  final _confirmed = <String>{};
+  final takenEmails = <String>{};
+
+  @override
+  Future<void> requestEmailChange(String newEmail) async {
+    calls.add('requestEmailChange:${cleanEmail(newEmail)}');
+    if (takenEmails.contains(cleanEmail(newEmail))) {
+      throw const AccountError(
+        'That email address already belongs to another account.',
+      );
+    }
+    pendingEmail = cleanEmail(newEmail);
+    _confirmed.clear();
+  }
+
+  @override
+  Future<bool> confirmEmailChange(String email, String code) async {
+    calls.add('confirmEmailChange:${cleanEmail(email)}');
+    final current = _current!;
+    final ok =
+        (cleanEmail(email) == pendingEmail && code == newAddressCode) ||
+        (cleanEmail(email) == current.email && code == currentAddressCode);
+    if (!ok || _confirmed.contains(cleanEmail(email))) {
+      throw const AccountError("That code didn't work. Please try again.");
+    }
+    _confirmed.add(cleanEmail(email));
+    if (_confirmed.length < 2) return false;
+    _current = AccountUser(id: current.id, email: pendingEmail!);
+    pendingEmail = null;
+    _changes.add(_current);
+    return true;
+  }
+
   @override
   Future<void> signOut() async {
     calls.add('signOut');

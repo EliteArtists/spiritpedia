@@ -186,10 +186,10 @@ splitOfferings(List<Offering> offerings) => (
     for (final o in offerings)
       if (o.productType == null || o.productType == 'course') o,
   ],
-  retreats: [
+  retreats: soonestFirst([
     for (final o in offerings)
       if (o.productType == 'retreat') o,
-  ],
+  ]),
   downloads: [
     for (final o in offerings)
       if (o.productType == 'download') o,
@@ -199,6 +199,24 @@ splitOfferings(List<Offering> offerings) => (
       if (o.productType == 'membership') o,
   ],
 );
+
+/// Retreats by when they happen: the soonest first (one on now counts from
+/// its start), then any without dates in the order they came. Stable, so
+/// retreats on the same day keep the website's order.
+List<Offering> soonestFirst(List<Offering> retreats) {
+  final indexed = [...retreats.indexed];
+  indexed.sort((a, b) {
+    final x = a.$2.starts ?? a.$2.ends;
+    final y = b.$2.starts ?? b.$2.ends;
+    if (x == null || y == null) {
+      if (x != y) return x == null ? 1 : -1;
+      return a.$1.compareTo(b.$1);
+    }
+    final c = x.compareTo(y);
+    return c != 0 ? c : a.$1.compareTo(b.$1);
+  });
+  return [for (final (_, o) in indexed) o];
+}
 
 /// Videos per shelf, and the most any one teacher may have in it.
 const videoShelfSize = 20;

@@ -1,11 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
+import '../../core/format/dates.dart';
 import '../../data/models.dart';
 import '../../data/providers.dart';
 import '../../shared/widgets/net_image.dart';
 import '../../theme/colors.dart';
 import '../library/saved_items.dart';
+import '../reviews/reviews_section.dart';
+import '../reviews/reviews_service.dart';
 import 'detail_providers.dart';
 import 'detail_widgets.dart';
 
@@ -61,6 +64,10 @@ class OfferingScreen extends ConsumerWidget {
           ctaUrl: o.url,
           missingCta: 'booking',
           subjects: o.subjectSlugs,
+          reviews: offeringReviews(o.slug),
+          when: o.when,
+          phase: o.phase,
+          ends: o.ends,
         );
       },
     );
@@ -93,6 +100,7 @@ class FreeResourceScreen extends ConsumerWidget {
         ctaUrl: r.url,
         missingCta: 'access',
         subjects: r.subjectSlugs,
+        reviews: freeResourceReviews(r.slug),
       ),
     );
   }
@@ -109,6 +117,10 @@ class _OfferingLayout extends ConsumerWidget {
     required this.ctaUrl,
     required this.missingCta,
     required this.subjects,
+    required this.reviews,
+    this.when,
+    this.phase = DatePhase.undated,
+    this.ends,
   });
 
   final List<Widget> badges;
@@ -120,6 +132,12 @@ class _OfferingLayout extends ConsumerWidget {
   final String? ctaUrl;
   final String missingCta;
   final List<String> subjects;
+  final ReviewTarget reviews;
+
+  /// "18–20 Sep 2026", for a dated offering; null otherwise.
+  final String? when;
+  final DatePhase phase;
+  final DateTime? ends;
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
@@ -137,6 +155,12 @@ class _OfferingLayout extends ConsumerWidget {
         DetailTitle(title, center: true),
         const SizedBox(height: 8),
         Center(child: ByLine(healerId: healerId)),
+        const SizedBox(height: 10),
+        Center(child: ReviewSummary(reviews)),
+        if (when != null) ...[
+          const SizedBox(height: 16),
+          _When(when: when!, phase: phase, ends: ends),
+        ],
         const SizedBox(height: 22),
         ClipRRect(
           borderRadius: BorderRadius.circular(18),
@@ -162,7 +186,17 @@ class _OfferingLayout extends ConsumerWidget {
         ],
         const SizedBox(height: 24),
         if (ctaUrl != null)
-          OutboundButton(label: ctaLabel, url: ctaUrl!)
+          // An event that has ended keeps its link (the page may hold the
+          // next dates), but it is no longer the page's main call.
+          phase == DatePhase.ended
+              ? OutboundButton(
+                  label: ctaLabel,
+                  url: ctaUrl!,
+                  background: Colors.transparent,
+                  foreground: SpColors.textMuted,
+                  border: SpColors.border,
+                )
+              : OutboundButton(label: ctaLabel, url: ctaUrl!)
         else
           Text(
             'Contact ${healer?.name ?? 'the healer'} directly for $missingCta information.',
@@ -173,7 +207,74 @@ class _OfferingLayout extends ConsumerWidget {
           const SizedBox(height: 26),
           SubjectChips(subjects),
         ],
+        ReviewSection(reviews),
       ],
+    );
+  }
+}
+
+/// When it takes place — and, once it has begun or finished, where it stands.
+class _When extends StatelessWidget {
+  const _When({required this.when, required this.phase, this.ends});
+
+  final String when;
+  final DatePhase phase;
+  final DateTime? ends;
+
+  @override
+  Widget build(BuildContext context) {
+    final ended = phase == DatePhase.ended;
+    final status = switch (phase) {
+      DatePhase.ended => 'This took place $when — it has ended.',
+      DatePhase.onNow =>
+        ends == today()
+            ? 'On now — it ends today.'
+            : 'On now — until ${shortDate(ends!)}.',
+      _ => null,
+    };
+    return Container(
+      key: const ValueKey('offering-when'),
+      padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+      decoration: BoxDecoration(
+        color: SpColors.surface,
+        borderRadius: BorderRadius.circular(14),
+        border: Border.all(
+          color: ended ? SpColors.border : const Color(0x66F59E0B),
+        ),
+      ),
+      child: Row(
+        children: [
+          Icon(
+            Icons.event_outlined,
+            size: 20,
+            color: ended ? SpColors.textFaint : const Color(0xFFF59E0B),
+          ),
+          const SizedBox(width: 12),
+          Expanded(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                if (!ended)
+                  Text(
+                    when,
+                    style: const TextStyle(
+                      fontSize: 15,
+                      fontWeight: FontWeight.w600,
+                    ),
+                  ),
+                if (status != null)
+                  Text(
+                    status,
+                    style: TextStyle(
+                      fontSize: ended ? 14 : 13,
+                      color: SpColors.textMuted,
+                    ),
+                  ),
+              ],
+            ),
+          ),
+        ],
+      ),
     );
   }
 }

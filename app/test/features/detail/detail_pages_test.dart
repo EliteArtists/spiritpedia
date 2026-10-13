@@ -12,11 +12,16 @@ import 'package:spiritpedia/features/detail/video_screen.dart';
 import 'package:spiritpedia/features/library/library_screen.dart';
 import 'package:spiritpedia/features/library/saved_items.dart';
 import 'package:spiritpedia/features/star/star_layer.dart';
+import 'package:spiritpedia/shared/widgets/cards.dart';
+import 'package:spiritpedia/features/detail/detail_widgets.dart';
 import 'package:spiritpedia/theme/theme.dart';
 import 'package:spiritpedia/features/account/account_providers.dart';
+import 'package:spiritpedia/features/reviews/reviews_providers.dart';
+import 'package:spiritpedia/features/star/tier_tips.dart';
 
 import '../../support/fake_account.dart';
 import '../../support/fake_content.dart';
+import '../../support/fake_reviews.dart';
 
 const _tags = {'AMAZON_TAG_US': 'us-tag-20'};
 
@@ -50,6 +55,8 @@ void main() {
       ProviderScope(
         retry: spiritpediaRetry,
         overrides: [
+          reviewsServiceProvider.overrideWithValue(FakeReviewsService()),
+          tierTipsPrefsProvider.overrideWithValue(MemoryTierTipsPrefs()),
           accountServiceProvider.overrideWithValue(FakeAccountService()),
           contentRepositoryProvider.overrideWithValue(FakeContentRepository()),
           savedStoreProvider.overrideWithValue(saved),
@@ -244,5 +251,61 @@ void main() {
       ),
       findsNothing,
     );
+  });
+
+  group('retreat dates', () {
+    testWidgets('a retreat to come: its dates, and the booking button', (
+      tester,
+    ) async {
+      await pump(
+        tester,
+        OfferingScreen(slug: FakeContentRepository.upcomingRetreat.slug),
+      );
+      expect(find.byKey(const ValueKey('offering-when')), findsOneWidget);
+      expect(find.text('18–20 Sep 2099'), findsOneWidget);
+      expect(find.textContaining('ended'), findsNothing);
+      final book = tester.widget<OutboundButton>(find.byType(OutboundButton));
+      expect(book.label, 'Book Place →');
+      expect(book.background, isNot(Colors.transparent));
+    });
+
+    testWidgets('an ended retreat says so, and its link steps back', (
+      tester,
+    ) async {
+      await pump(
+        tester,
+        OfferingScreen(slug: FakeContentRepository.pastRetreat.slug),
+      );
+      expect(
+        find.text('This took place 23 Jul – 2 Aug 2020 — it has ended.'),
+        findsOneWidget,
+      );
+      final book = tester.widget<OutboundButton>(find.byType(OutboundButton));
+      expect(book.background, Colors.transparent);
+    });
+
+    testWidgets('an undated course shows no dates', (tester) async {
+      await pump(
+        tester,
+        OfferingScreen(slug: FakeContentRepository.course.slug),
+      );
+      expect(find.byKey(const ValueKey('offering-when')), findsNothing);
+    });
+
+    testWidgets('a retreat card carries its dates', (tester) async {
+      await pump(
+        tester,
+        const Scaffold(
+          body: SizedBox(
+            width: 260,
+            height: 330,
+            child: OfferingCard(
+              offering: FakeContentRepository.upcomingRetreat,
+            ),
+          ),
+        ),
+      );
+      expect(find.text('18–20 Sep 2099'), findsOneWidget);
+    });
   });
 }

@@ -57,6 +57,15 @@ abstract class AccountService {
 
   Future<void> signOut();
 
+  /// Change email, step 1. Supabase emails a code to the NEW address and —
+  /// with "Secure email change" on, as it is — another to the CURRENT one.
+  Future<void> requestEmailChange(String newEmail);
+
+  /// Step 2, once per code: [email] is the address that code was sent to.
+  /// True once the change is complete (the last code); false after the first
+  /// of two. Throws [AccountError] if the code is wrong or expired.
+  Future<bool> confirmEmailChange(String email, String code);
+
   /// Create the explorer profile if there is none — never overwrite one. True
   /// if it was created just now (a brand new account).
   Future<bool> ensureProfile(String userId);
@@ -160,6 +169,39 @@ class SupabaseAccountService implements AccountService {
 
   @override
   Future<void> signOut() => _db.auth.signOut(scope: SignOutScope.local);
+
+  @override
+  Future<void> requestEmailChange(String newEmail) async {
+    try {
+      await _db.auth.updateUser(UserAttributes(email: cleanEmail(newEmail)));
+    } on AuthException catch (e) {
+      throw AccountError(switch ((e.statusCode, e.code)) {
+        (_, 'email_exists') =>
+          'That email address already belongs to another account.',
+        ('429', _) || (_, 'over_email_send_rate_limit') =>
+          'Too many codes requested. Please wait a minute and try again.',
+        (_, 'email_address_invalid') || (_, 'validation_failed') =>
+          "That email address doesn't look right. Please check it.",
+        _ => 'We could not send the codes just now. Please try again.',
+      });
+    }
+  }
+
+  @override
+  Future<bool> confirmEmailChange(String email, String code) async {
+    try {
+      // The first of the two codes is accepted without a session; the second
+      // returns one, carrying the new address.
+      final res = await _db.auth.verifyOTP(
+        email: cleanEmail(email),
+        token: code.replaceAll(RegExp(r'\s'), ''),
+        type: OtpType.emailChange,
+      );
+      return res.session != null;
+    } on AuthException {
+      throw const AccountError("That code didn't work. Please try again.");
+    }
+  }
 
   @override
   Future<bool> ensureProfile(String userId) async {

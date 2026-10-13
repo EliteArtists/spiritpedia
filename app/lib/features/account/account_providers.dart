@@ -62,7 +62,13 @@ class AccountController extends Notifier<AccountState> {
       await ref.read(savedItemsProvider.notifier).clearAfterSignOut(previous);
       return;
     }
-    if (_syncedUserId == user.id) return; // token refreshes repeat the event
+    if (_syncedUserId == user.id) {
+      // Token refreshes repeat the event; a changed email arrives this way.
+      if (state.user?.email != user.email) {
+        state = AccountState.signedIn(user, profile: state.profile);
+      }
+      return;
+    }
     _syncedUserId = user.id;
     state = AccountState.signedIn(
       user,
@@ -89,6 +95,19 @@ class AccountController extends Notifier<AccountState> {
 
   Future<void> verifyCode(String email, String code) =>
       _service.verifyCode(email, code);
+
+  Future<void> requestEmailChange(String newEmail) =>
+      _service.requestEmailChange(newEmail);
+
+  /// True once the email has changed; the account then shows the new one.
+  Future<bool> confirmEmailChange(String email, String code) async {
+    final done = await _service.confirmEmailChange(email, code);
+    final user = _service.currentUser;
+    if (done && user != null) {
+      state = AccountState.signedIn(user, profile: state.profile);
+    }
+    return done;
+  }
 
   Future<void> signOut() async {
     // Notifications first, while still signed in: row-level security lets

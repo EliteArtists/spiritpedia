@@ -5,6 +5,8 @@
 // videos and books carry a text `healer_slug`; courses and free resources carry
 // a bigint `healer_id`.
 
+import '../core/format/dates.dart';
+
 List<String> _strings(Object? v) => v is List
     ? [
         for (final s in v)
@@ -243,6 +245,35 @@ class Offering {
 
   /// An unset product_type is a course, so legacy rows still surface.
   String get kind => productType ?? 'course';
+
+  DateTime? get starts => parseDay(startDate);
+  DateTime? get ends => parseDay(endDate);
+
+  /// Dates are shown for retreats, and for any other offering that has a
+  /// start date (a course or membership beginning on a day). An end date alone
+  /// on a course is its listing's expiry, not an event, so it is not shown.
+  bool get showsDates => starts != null || (kind == 'retreat' && ends != null);
+
+  DatePhase get phase =>
+      showsDates ? datePhase(starts, ends) : DatePhase.undated;
+
+  /// "18–20 Sep 2026" — or null when this offering shows no dates.
+  String? get when => showsDates ? dateRange(starts, ends) : null;
+
+  /// The line on a card: the dates, "On now · until 11 Oct 2026" once it has
+  /// begun, or "Ended · …" (lists hide those; a saved one can still show).
+  String? get whenLine {
+    final range = when;
+    if (range == null) return null;
+    return switch (phase) {
+      DatePhase.onNow =>
+        ends == today()
+            ? 'On now · ends today'
+            : 'On now · until ${shortDate(ends!)}',
+      DatePhase.ended => 'Ended · $range',
+      _ => range,
+    };
+  }
 
   /// The website's card call-to-action (OfferingCard.js → OfferingCta).
   String get ctaLabel => switch (productType) {

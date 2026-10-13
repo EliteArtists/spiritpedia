@@ -18,10 +18,13 @@ import 'package:spiritpedia/features/star/star_layer.dart';
 import 'package:spiritpedia/features/search/feeling_placeholder.dart';
 import 'package:spiritpedia/features/search/search_repository.dart';
 import 'package:spiritpedia/features/search/search_screen.dart';
+import 'package:spiritpedia/features/reviews/reviews_providers.dart';
+import 'package:spiritpedia/features/star/tier_tips.dart';
 
 import 'support/fake_account.dart';
 import 'support/fake_content.dart';
 import 'support/fake_push.dart';
+import 'support/fake_reviews.dart';
 
 final _safety = EmotionSafety.parse(
   File('../web/shared/emotion-safety.json').readAsStringSync(),
@@ -44,6 +47,8 @@ class _NoSearch implements SearchRepository {
 Widget _app({bool fail = false, FakePushMessaging? push}) => ProviderScope(
   retry: spiritpediaRetry,
   overrides: [
+    reviewsServiceProvider.overrideWithValue(FakeReviewsService()),
+    tierTipsPrefsProvider.overrideWithValue(MemoryTierTipsPrefs()),
     if (push != null) pushMessagingProvider.overrideWithValue(push),
     accountServiceProvider.overrideWithValue(FakeAccountService()),
     contentRepositoryProvider.overrideWithValue(
@@ -172,6 +177,32 @@ void main() {
       );
       await tester.pumpAndSettle();
       expect(restingInBox(), isTrue);
+    },
+  );
+
+  testWidgets(
+    'a tier shelf in view: the star shows its tip, once, tapped away',
+    (tester) async {
+      await start(tester);
+      await tester.pump(const Duration(milliseconds: 400));
+      // All three tier shelves are on this tall screen; only the first speaks.
+      expect(find.byKey(const ValueKey('tier-tip')), findsOneWidget);
+      expect(find.text('Superheroes'), findsOneWidget);
+      expect(
+        find.text(
+          'One of the most influential spiritual teachers in the world.',
+        ),
+        findsOneWidget,
+      );
+      expect(find.text('Luminaries'), findsNothing);
+
+      await tester.tap(find.byKey(const ValueKey('tier-tip')));
+      await tester.pump(const Duration(milliseconds: 400));
+      await tester.pump(const Duration(milliseconds: 400)); // faded away
+      expect(find.byKey(const ValueKey('tier-tip')), findsNothing);
+      // At most one per visit: the next waits.
+      expect(find.text('Luminaries'), findsNothing);
+      expect(find.text('Worldwide'), findsOneWidget); // the shelf, untouched
     },
   );
 

@@ -7,6 +7,7 @@ import '../../theme/colors.dart';
 import '../home/subject_pills.dart';
 import '../search/feeling_placeholder.dart';
 import 'star_layer.dart';
+import 'tier_tips.dart';
 
 /// The frame Home, Videos and Books share, as the website's pages do: the top
 /// bar (My Library and Account on the right), the search box with the star
@@ -50,6 +51,27 @@ class _StarPageState extends ConsumerState<StarPage> implements TabStarTarget {
   bool _flying = false;
   StarLayerState? _layer;
   final _noLayer = ValueNotifier<String?>(null); // only without a StarLayer
+  final _frame = GlobalKey(debugLabel: 'star page');
+
+  /// Where the star is in this page, for a tier tip to hang from it.
+  Rect? _tipStar;
+
+  bool get _hasTips => widget.tabPath == '/';
+
+  void _placeTip() {
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      if (!mounted) return;
+      final frame = _frame.currentContext?.findRenderObject();
+      final star = (_docked ? _dockStar : _boxStar).currentContext
+          ?.findRenderObject();
+      Rect? rect;
+      if (frame is RenderBox && star is RenderBox && star.hasSize) {
+        final topLeft = star.localToGlobal(Offset.zero, ancestor: frame);
+        rect = topLeft & star.size;
+      }
+      if (rect != _tipStar) setState(() => _tipStar = rect);
+    });
+  }
 
   @override
   void initState() {
@@ -137,11 +159,17 @@ class _StarPageState extends ConsumerState<StarPage> implements TabStarTarget {
       to: () => layer.rectOfKey(dock ? _dockStar : _boxStar),
     );
     if (landed && mounted) setState(() => _flying = false);
+    if (_hasTips) _placeTip();
   }
 
   @override
   Widget build(BuildContext context) {
     final incoming = _layer?.incoming ?? _noLayer;
+    if (_hasTips) {
+      ref.listen(tierTipsProvider.select((t) => t.showing), (_, tip) {
+        if (tip != null) _placeTip();
+      });
+    }
     return Scaffold(
       body: SafeArea(
         bottom: false,
@@ -149,44 +177,55 @@ class _StarPageState extends ConsumerState<StarPage> implements TabStarTarget {
           valueListenable: incoming,
           builder: (context, arriving, _) {
             final hidden = _flying || arriving == widget.tabPath;
-            return RefreshIndicator(
-              color: SpColors.link,
-              onRefresh: widget.onRefresh,
-              child: CustomScrollView(
-                controller: _scroll,
-                slivers: [
-                  const SliverToBoxAdapter(child: TopBar()),
-                  SliverToBoxAdapter(
-                    child: StarSearchBox(
-                      // Videos and Books search only their own kind.
-                      searchPath: switch (widget.tabPath) {
-                        '/videos' => '/feel?in=videos',
-                        '/books' => '/feel?in=books',
-                        _ => '/feel',
-                      },
-                      starKey: _boxStar,
-                      starVisible: !hidden && !_docked,
+            final tipStar = _tipStar;
+            return Stack(
+              key: _frame,
+              children: [
+                Positioned.fill(
+                  child: RefreshIndicator(
+                    color: SpColors.link,
+                    onRefresh: widget.onRefresh,
+                    child: CustomScrollView(
+                      controller: _scroll,
+                      slivers: [
+                        const SliverToBoxAdapter(child: TopBar()),
+                        SliverToBoxAdapter(
+                          child: StarSearchBox(
+                            // Videos and Books search only their own kind.
+                            searchPath: switch (widget.tabPath) {
+                              '/videos' => '/feel?in=videos',
+                              '/books' => '/feel?in=books',
+                              _ => '/feel',
+                            },
+                            starKey: _boxStar,
+                            starVisible: !hidden && !_docked,
+                          ),
+                        ),
+                        SliverPersistentHeader(
+                          pinned: true,
+                          delegate: _PillsHeader(
+                            filter: widget.filter,
+                            docked: _docked,
+                            starVisible: !hidden && _docked,
+                            starKey: _dockStar,
+                          ),
+                        ),
+                        SliverToBoxAdapter(
+                          child: SubjectFilterNote(filter: widget.filter),
+                        ),
+                        const SliverToBoxAdapter(child: SizedBox(height: 20)),
+                        ...widget.slivers,
+                        const SliverToBoxAdapter(
+                          child: SizedBox(height: StarPage.tabBarClearance),
+                        ),
+                      ],
                     ),
                   ),
-                  SliverPersistentHeader(
-                    pinned: true,
-                    delegate: _PillsHeader(
-                      filter: widget.filter,
-                      docked: _docked,
-                      starVisible: !hidden && _docked,
-                      starKey: _dockStar,
-                    ),
-                  ),
-                  SliverToBoxAdapter(
-                    child: SubjectFilterNote(filter: widget.filter),
-                  ),
-                  const SliverToBoxAdapter(child: SizedBox(height: 20)),
-                  ...widget.slivers,
-                  const SliverToBoxAdapter(
-                    child: SizedBox(height: StarPage.tabBarClearance),
-                  ),
-                ],
-              ),
+                ),
+                // The tip hangs from the star, never while it flies.
+                if (_hasTips && tipStar != null && !hidden)
+                  TierTipBubble(star: tipStar),
+              ],
             );
           },
         ),

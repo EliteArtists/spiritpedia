@@ -10,6 +10,8 @@ import '../../core/links/open_link.dart';
 import '../../data/models.dart';
 import '../../theme/colors.dart';
 import '../library/saved_items.dart';
+import '../reviews/reviews_section.dart';
+import '../reviews/reviews_service.dart';
 import 'detail_providers.dart';
 import 'detail_widgets.dart';
 
@@ -47,6 +49,8 @@ class VideoScreen extends ConsumerWidget {
             DetailTitle(video.title),
             const SizedBox(height: 8),
             ByLine(healerSlug: video.healerSlug),
+            const SizedBox(height: 10),
+            ReviewSummary(videoReviews(video.slug)),
             const SizedBox(height: 18),
             AspectRatio(
               aspectRatio: 16 / 9,
@@ -74,6 +78,7 @@ class VideoScreen extends ConsumerWidget {
               const SizedBox(height: 26),
               SubjectChips(video.subjectSlugs),
             ],
+            ReviewSection(videoReviews(video.slug)),
           ],
         );
       },

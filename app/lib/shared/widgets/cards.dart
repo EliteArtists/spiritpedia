@@ -204,9 +204,13 @@ class _ImageTextCard extends StatelessWidget {
     this.description,
     this.cta,
     this.heart,
+    this.when,
   });
 
   final CardHeart? heart;
+
+  /// A dated offering's dates ("18–20 Sep 2026"), under the title.
+  final String? when;
   final String label;
   final VoidCallback onTap;
   final String? imageUrl;
@@ -275,6 +279,31 @@ class _ImageTextCard extends StatelessWidget {
                       height: 1.3,
                     ),
                   ),
+                  if (when != null) ...[
+                    const SizedBox(height: 4),
+                    Row(
+                      children: [
+                        const Icon(
+                          Icons.event_outlined,
+                          size: 13,
+                          color: Color(0xFFFBBF24),
+                        ),
+                        const SizedBox(width: 4),
+                        Expanded(
+                          child: Text(
+                            when!,
+                            maxLines: 1,
+                            overflow: TextOverflow.ellipsis,
+                            style: const TextStyle(
+                              fontSize: 12,
+                              fontWeight: FontWeight.w600,
+                              color: Color(0xFFFBBF24),
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ],
                   if (byline != null) ...[
                     const SizedBox(height: 4),
                     Text(
@@ -291,7 +320,9 @@ class _ImageTextCard extends StatelessWidget {
                     const SizedBox(height: 6),
                     Text(
                       description!,
-                      maxLines: 2,
+                      // A date line takes one of the description's lines, so
+                      // every card in a shelf stays the same height.
+                      maxLines: when == null ? 2 : 1,
                       overflow: TextOverflow.ellipsis,
                       style: const TextStyle(
                         fontSize: 12.5,
@@ -337,6 +368,7 @@ class OfferingCard extends StatelessWidget {
     description: offering.description,
     cta: offering.ctaLabel,
     heart: CardHeart(kind: SavedKind.offerings, slug: offering.slug),
+    when: offering.whenLine,
   );
 }
 

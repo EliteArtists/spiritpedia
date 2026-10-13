@@ -8,6 +8,8 @@ import '../../data/models.dart';
 import '../../shared/widgets/net_image.dart';
 import '../../theme/colors.dart';
 import '../library/saved_items.dart';
+import '../reviews/reviews_section.dart';
+import '../reviews/reviews_service.dart';
 import 'detail_providers.dart';
 import 'detail_widgets.dart';
 
@@ -72,6 +74,8 @@ class BookScreen extends ConsumerWidget {
           DetailTitle(book.title),
           const SizedBox(height: 8),
           ByLine(healerSlug: book.healerSlug, fallback: book.author),
+          const SizedBox(height: 10),
+          ReviewSummary(bookReviews(book.slug)),
           const SizedBox(height: 18),
           Row(
             children: [
@@ -107,6 +111,7 @@ class BookScreen extends ConsumerWidget {
             const SizedBox(height: 26),
             SubjectChips(book.subjectSlugs),
           ],
+          ReviewSection(bookReviews(book.slug)),
         ],
       ),
     );

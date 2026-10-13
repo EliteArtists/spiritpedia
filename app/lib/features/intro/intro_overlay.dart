@@ -3,11 +3,13 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:flutter_native_splash/flutter_native_splash.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+
 import 'package:shared_preferences/shared_preferences.dart';
 
 import '../../theme/colors.dart';
 import '../star/slipstream.dart';
 import '../star/star_layer.dart';
+import '../star/tier_tips.dart';
 
 /// Which intro this launch gets.
 enum IntroKind {
@@ -98,15 +100,16 @@ class IntroReplay extends Notifier<int> {
 
 final introReplayProvider = NotifierProvider<IntroReplay, int>(IntroReplay.new);
 
-/// Everything a first launch shows, shown again: the intro now (and, once
-/// they exist, the onboarding and the tier tips). Debug builds only.
+/// Everything a first launch shows, shown again: the intro and the tier tips
+/// (and, once it exists, the onboarding). Debug builds only.
 ///
 /// Reads what it needs at once, so the screen that called it (Account) may
 /// close straight away — a widget's ref is unusable once it has gone.
 Future<void> replayFirstLaunch(WidgetRef ref) async {
   final prefs = ref.read(introPrefsProvider);
   final replay = ref.read(introReplayProvider.notifier);
-  await prefs.reset();
+  final tips = ref.read(tierTipsProvider.notifier);
+  await (prefs.reset(), tips.reset()).wait;
   replay.bump();
 }
 

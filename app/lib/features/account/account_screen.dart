@@ -10,7 +10,10 @@ import '../../theme/colors.dart';
 import '../detail/detail_widgets.dart';
 import '../intro/intro_overlay.dart';
 import '../notifications/notifications_section.dart';
+import '../reviews/reviews_providers.dart';
+import '../reviews/reviews_service.dart';
 import '../star/star_layer.dart';
+import '../star/tier_tips.dart';
 import 'account_providers.dart';
 import 'account_service.dart';
 
@@ -302,71 +305,113 @@ class _SignedIn extends ConsumerStatefulWidget {
 
 class _SignedInState extends ConsumerState<_SignedIn> {
   bool _signingOut = false;
+  bool _changingEmail = false;
 
   @override
   Widget build(BuildContext context) {
     final user = widget.account.user!;
     final profile = widget.account.profile;
-    Widget row(String label, String value) => Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 18, vertical: 14),
-      child: Row(
-        children: [
-          Text(
-            label,
-            style: const TextStyle(color: SpColors.textMuted, fontSize: 14),
-          ),
-          const SizedBox(width: 16),
-          Expanded(
-            child: Text(
-              value,
-              textAlign: TextAlign.right,
-              style: const TextStyle(fontSize: 14, fontWeight: FontWeight.w500),
+    Widget row(String label, Widget value) => Padding(
+      padding: const EdgeInsets.fromLTRB(18, 6, 8, 6),
+      child: ConstrainedBox(
+        constraints: const BoxConstraints(minHeight: 40),
+        child: Row(
+          children: [
+            Text(
+              label,
+              style: const TextStyle(color: SpColors.textMuted, fontSize: 14),
             ),
-          ),
-        ],
+            const SizedBox(width: 16),
+            Expanded(child: value),
+          ],
+        ),
       ),
     );
+    const valueStyle = TextStyle(fontSize: 14, fontWeight: FontWeight.w500);
 
     return Column(
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
-        DecoratedBox(
-          decoration: BoxDecoration(
-            color: SpColors.surface,
-            borderRadius: BorderRadius.circular(16),
-            border: Border.all(color: SpColors.border),
-          ),
+        _Card(
+          padding: EdgeInsets.zero,
           child: Column(
             children: [
-              row('Email', user.email),
+              row(
+                'Email',
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.end,
+                  children: [
+                    Flexible(
+                      child: Text(
+                        user.email,
+                        textAlign: TextAlign.right,
+                        overflow: TextOverflow.ellipsis,
+                        style: valueStyle,
+                      ),
+                    ),
+                    if (!_changingEmail)
+                      TextButton(
+                        key: const ValueKey('change-email'),
+                        onPressed: () => setState(() => _changingEmail = true),
+                        style: TextButton.styleFrom(
+                          foregroundColor: SpColors.link,
+                          padding: const EdgeInsets.symmetric(horizontal: 10),
+                          minimumSize: const Size(0, 36),
+                        ),
+                        child: const Text('Change'),
+                      )
+                    else
+                      const SizedBox(width: 10),
+                  ],
+                ),
+              ),
               const Divider(height: 1),
               row(
                 'Account type',
-                profile?.isPractitioner == true ? 'Practitioner' : 'Explorer',
+                Padding(
+                  padding: const EdgeInsets.only(right: 10),
+                  child: Text(
+                    profile?.isPractitioner == true
+                        ? 'Practitioner'
+                        : 'Explorer',
+                    textAlign: TextAlign.right,
+                    style: valueStyle,
+                  ),
+                ),
               ),
             ],
           ),
         ),
-        const SizedBox(height: 14),
+        if (_changingEmail) ...[
+          const SizedBox(height: 12),
+          ChangeEmailForm(
+            currentEmail: user.email,
+            onClose: () => setState(() => _changingEmail = false),
+          ),
+        ],
+        const SizedBox(height: 10),
         const Text(
           'Your saved items are kept with your account and match on spiritpedia.co.',
           style: TextStyle(
-            fontSize: 13.5,
+            fontSize: 13,
             color: SpColors.textFaint,
             height: 1.5,
           ),
         ),
-        const SizedBox(height: 20),
+        const SizedBox(height: 22),
         const NotificationsSection(),
+        const SizedBox(height: 12),
+        const _StarTips(),
+        const _BlockedReviewers(),
         if (profile?.isPractitioner == true) ...[
-          const SizedBox(height: 18),
+          const SizedBox(height: 12),
           _Note(
             text: 'Your practitioner profile is managed on the website.',
             action: 'Open spiritpedia.co/account',
             url: '${AppConfig.siteUrl}/account',
           ),
         ],
-        const SizedBox(height: 24),
+        const SizedBox(height: 28),
         SizedBox(
           height: 50,
           child: OutlinedButton(
@@ -390,9 +435,384 @@ class _SignedInState extends ConsumerState<_SignedIn> {
           textAlign: TextAlign.center,
           style: TextStyle(fontSize: 12.5, color: SpColors.textFaint),
         ),
-        const SizedBox(height: 28),
+        const SizedBox(height: 14),
         _DeleteAccount(hasListing: profile?.linkedHealerSlug != null),
       ],
+    );
+  }
+}
+
+/// A rounded card on the page's surface colour: every group on this screen.
+class _Card extends StatelessWidget {
+  const _Card({
+    required this.child,
+    this.padding = const EdgeInsets.fromLTRB(18, 16, 18, 14),
+  });
+
+  final Widget child;
+  final EdgeInsetsGeometry padding;
+
+  // A Material, not a coloured box: switches and list rows ink on it.
+  @override
+  Widget build(BuildContext context) => Material(
+    color: SpColors.surface,
+    borderRadius: BorderRadius.circular(16),
+    clipBehavior: Clip.antiAlias,
+    child: Padding(padding: padding, child: child),
+  );
+}
+
+class _CardTitle extends StatelessWidget {
+  const _CardTitle(this.text);
+
+  final String text;
+
+  @override
+  Widget build(BuildContext context) => Text(
+    text,
+    style: const TextStyle(fontSize: 15, fontWeight: FontWeight.w600),
+  );
+}
+
+/// The star's tier tips, on or off (on this phone).
+class _StarTips extends ConsumerWidget {
+  const _StarTips();
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    final tips = ref.watch(tierTipsProvider);
+    return _Card(
+      padding: const EdgeInsets.fromLTRB(18, 6, 10, 6),
+      child: SwitchListTile(
+        key: const ValueKey('star-tips'),
+        contentPadding: EdgeInsets.zero,
+        title: const _CardTitle('Star tips'),
+        subtitle: const Text(
+          'The star explains each teacher badge the first time you see it.',
+          style: TextStyle(color: SpColors.textFaint, fontSize: 13),
+        ),
+        value: tips.enabled,
+        onChanged: tips.loaded
+            ? (v) => ref.read(tierTipsProvider.notifier).setEnabled(v)
+            : null,
+      ),
+    );
+  }
+}
+
+/// Reviewers this person blocked, to unblock. Only shown when there are any.
+class _BlockedReviewers extends ConsumerWidget {
+  const _BlockedReviewers();
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    final blocked = ref.watch(blockedReviewersProvider).value ?? const [];
+    if (blocked.isEmpty) return const SizedBox.shrink();
+    return Padding(
+      padding: const EdgeInsets.only(top: 12),
+      child: _Card(
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: [
+            const _CardTitle('Blocked reviewers'),
+            const SizedBox(height: 4),
+            const Text(
+              "You don't see their reviews.",
+              style: TextStyle(fontSize: 13, color: SpColors.textFaint),
+            ),
+            const SizedBox(height: 6),
+            for (final b in blocked)
+              Row(
+                children: [
+                  Expanded(
+                    child: Text(b.name, style: const TextStyle(fontSize: 14)),
+                  ),
+                  TextButton(
+                    key: ValueKey('unblock-${b.id}'),
+                    onPressed: () => _unblock(context, ref, b),
+                    style: TextButton.styleFrom(foregroundColor: SpColors.link),
+                    child: const Text('Unblock'),
+                  ),
+                ],
+              ),
+          ],
+        ),
+      ),
+    );
+  }
+
+  Future<void> _unblock(
+    BuildContext context,
+    WidgetRef ref,
+    BlockedReviewer b,
+  ) async {
+    final userId = ref.read(signedInUserIdProvider);
+    if (userId == null) return;
+    final messenger = ScaffoldMessenger.of(context);
+    try {
+      await ref.read(reviewsServiceProvider).unblock(userId, b.id);
+    } catch (_) {
+      messenger.showSnackBar(
+        const SnackBar(
+          content: Text('That could not be done just now. Please try again.'),
+        ),
+      );
+      return;
+    }
+    ref.invalidate(blockedReviewersProvider);
+    ref.invalidate(reviewsProvider);
+    messenger.showSnackBar(SnackBar(content: Text('${b.name} is unblocked.')));
+  }
+}
+
+/// Change email: the new address, then two codes — one sent to the new
+/// address, one to the current (Supabase's "Secure email change"). The email
+/// changes only when both are in. A code already accepted is not asked for
+/// again, so a mistyped second code does not mean starting over.
+class ChangeEmailForm extends ConsumerStatefulWidget {
+  const ChangeEmailForm({
+    super.key,
+    required this.currentEmail,
+    required this.onClose,
+  });
+
+  final String currentEmail;
+  final VoidCallback onClose;
+
+  @override
+  ConsumerState<ChangeEmailForm> createState() => _ChangeEmailFormState();
+}
+
+class _ChangeEmailFormState extends ConsumerState<ChangeEmailForm> {
+  static const codeLength = _SignInFormState.codeLength;
+  static final _emailShape = _SignInFormState._emailShape;
+
+  final _email = TextEditingController();
+  final _newCode = TextEditingController();
+  final _currentCode = TextEditingController();
+  String? _sentTo;
+  bool _newDone = false;
+  bool _currentDone = false;
+  bool _busy = false;
+  String? _error;
+
+  @override
+  void dispose() {
+    _email.dispose();
+    _newCode.dispose();
+    _currentCode.dispose();
+    super.dispose();
+  }
+
+  Future<void> _send() async {
+    final email = cleanEmail(_email.text);
+    if (!_emailShape.hasMatch(email)) {
+      setState(() => _error = 'Please enter the new email address.');
+      return;
+    }
+    if (email == cleanEmail(widget.currentEmail)) {
+      setState(() => _error = "That's already your email address.");
+      return;
+    }
+    setState(() {
+      _busy = true;
+      _error = null;
+    });
+    try {
+      await ref.read(accountProvider.notifier).requestEmailChange(email);
+      if (mounted) setState(() => _sentTo = email);
+    } on AccountError catch (e) {
+      if (mounted) setState(() => _error = e.message);
+    } catch (_) {
+      if (mounted) {
+        setState(() => _error = 'Something went wrong. Please try again.');
+      }
+    } finally {
+      if (mounted) setState(() => _busy = false);
+    }
+  }
+
+  Future<void> _confirm() async {
+    final newCode = _newCode.text.trim();
+    final currentCode = _currentCode.text.trim();
+    if ((!_newDone && newCode.length != codeLength) ||
+        (!_currentDone && currentCode.length != codeLength)) {
+      setState(() => _error = 'Enter both $codeLength-digit codes.');
+      return;
+    }
+    setState(() {
+      _busy = true;
+      _error = null;
+    });
+    final account = ref.read(accountProvider.notifier);
+    var done = false;
+    try {
+      if (!_newDone) {
+        try {
+          done = await account.confirmEmailChange(_sentTo!, newCode);
+          _newDone = true;
+        } on AccountError {
+          _newCode.clear();
+          throw const AccountError(
+            "The code sent to your new address didn't work. Please check it.",
+          );
+        }
+      }
+      if (!done && !_currentDone) {
+        try {
+          done = await account.confirmEmailChange(
+            widget.currentEmail,
+            currentCode,
+          );
+          _currentDone = true;
+        } on AccountError {
+          _currentCode.clear();
+          throw const AccountError(
+            "The code sent to your current address didn't work. Please check it.",
+          );
+        }
+      }
+      if (!mounted) return;
+      if (done) {
+        ScaffoldMessenger.of(
+          context,
+        ).showSnackBar(SnackBar(content: Text('Your email is now $_sentTo.')));
+        widget.onClose();
+      }
+    } on AccountError catch (e) {
+      if (mounted) setState(() => _error = e.message);
+    } catch (_) {
+      if (mounted) {
+        setState(() => _error = 'Something went wrong. Please try again.');
+      }
+    } finally {
+      if (mounted) setState(() => _busy = false);
+    }
+  }
+
+  Widget _codeField(
+    TextEditingController controller,
+    String label,
+    Key key, {
+    required bool done,
+  }) => Padding(
+    padding: const EdgeInsets.only(top: 12),
+    child: Column(
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      children: [
+        Text(
+          label,
+          style: const TextStyle(fontSize: 13.5, color: SpColors.textMuted),
+        ),
+        const SizedBox(height: 6),
+        if (done)
+          const Row(
+            children: [
+              Icon(Icons.check_circle, size: 18, color: Color(0xFF34D399)),
+              SizedBox(width: 6),
+              Text('Confirmed', style: TextStyle(color: Color(0xFF34D399))),
+            ],
+          )
+        else
+          TextField(
+            key: key,
+            controller: controller,
+            keyboardType: TextInputType.number,
+            autofillHints: const [AutofillHints.oneTimeCode],
+            inputFormatters: [
+              FilteringTextInputFormatter.digitsOnly,
+              LengthLimitingTextInputFormatter(codeLength),
+            ],
+            textAlign: TextAlign.center,
+            style: const TextStyle(
+              fontSize: 22,
+              letterSpacing: 8,
+              fontWeight: FontWeight.w600,
+            ),
+            decoration: _fieldDecoration('••••••'),
+          ),
+      ],
+    ),
+  );
+
+  @override
+  Widget build(BuildContext context) {
+    final sentTo = _sentTo;
+    return _Card(
+      child: Column(
+        key: const ValueKey('change-email-form'),
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: [
+          const _CardTitle('Change email'),
+          const SizedBox(height: 6),
+          Text(
+            sentTo == null
+                ? "We'll send a code to the new address, and another to ${widget.currentEmail} to check it's you."
+                : 'Enter the two $codeLength-digit codes we sent. Your email changes once both are in.',
+            style: const TextStyle(
+              fontSize: 13.5,
+              height: 1.5,
+              color: SpColors.textMuted,
+            ),
+          ),
+          if (sentTo == null) ...[
+            const SizedBox(height: 12),
+            TextField(
+              key: const ValueKey('new-email-field'),
+              controller: _email,
+              keyboardType: TextInputType.emailAddress,
+              autocorrect: false,
+              enableSuggestions: false,
+              textInputAction: TextInputAction.send,
+              onSubmitted: (_) => _send(),
+              decoration: _fieldDecoration('New email address'),
+            ),
+          ] else ...[
+            _codeField(
+              _newCode,
+              'Code sent to $sentTo',
+              const ValueKey('new-address-code'),
+              done: _newDone,
+            ),
+            _codeField(
+              _currentCode,
+              'Code sent to ${widget.currentEmail}',
+              const ValueKey('current-address-code'),
+              done: _currentDone,
+            ),
+          ],
+          if (_error != null)
+            Padding(
+              padding: const EdgeInsets.only(top: 10),
+              child: Text(
+                _error!,
+                style: const TextStyle(color: Color(0xFFFCA5A5), fontSize: 14),
+              ),
+            ),
+          const SizedBox(height: 14),
+          Row(
+            children: [
+              FilledButton(
+                key: const ValueKey('change-email-go'),
+                onPressed: _busy ? null : (sentTo == null ? _send : _confirm),
+                child: Text(
+                  _busy
+                      ? (sentTo == null ? 'Sending…' : 'Checking…')
+                      : (sentTo == null ? 'Send codes' : 'Change email'),
+                ),
+              ),
+              const SizedBox(width: 8),
+              TextButton(
+                onPressed: _busy ? null : widget.onClose,
+                style: TextButton.styleFrom(
+                  foregroundColor: SpColors.textMuted,
+                ),
+                child: const Text('Cancel'),
+              ),
+            ],
+          ),
+        ],
+      ),
     );
   }
 }
@@ -477,109 +897,101 @@ class _DeleteAccountState extends ConsumerState<_DeleteAccount> {
 
   @override
   Widget build(BuildContext context) {
+    if (!_open) {
+      return SizedBox(
+        height: 50,
+        child: FilledButton(
+          key: const ValueKey('delete-account'),
+          onPressed: () => setState(() => _open = true),
+          style: FilledButton.styleFrom(
+            backgroundColor: const Color(0xFFDC2626),
+            foregroundColor: Colors.white,
+            shape: const StadiumBorder(),
+          ),
+          child: const Text('Delete account'),
+        ),
+      );
+    }
     return Container(
       padding: const EdgeInsets.all(18),
       decoration: BoxDecoration(
+        color: const Color(0x14DC2626),
         borderRadius: BorderRadius.circular(16),
-        border: Border.all(color: SpColors.border),
+        border: Border.all(color: const Color(0x66EF4444)),
       ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
           const Text(
-            'Delete account',
-            style: TextStyle(fontSize: 15, fontWeight: FontWeight.w600),
+            'This permanently deletes your account, your saved items and any reviews you have written. It cannot be undone.',
+            style: TextStyle(
+              fontSize: 14,
+              height: 1.5,
+              color: Color(0xFFD1D5DB),
+            ),
           ),
-          const SizedBox(height: 12),
-          if (!_open)
-            Align(
-              alignment: Alignment.centerLeft,
-              child: OutlinedButton(
-                onPressed: () => setState(() => _open = true),
-                style: OutlinedButton.styleFrom(
-                  foregroundColor: const Color(0xFFFCA5A5),
-                  side: const BorderSide(color: Color(0x66EF4444)),
-                  shape: const StadiumBorder(),
-                ),
-                child: const Text('Delete account'),
-              ),
-            )
-          else ...[
+          if (widget.hasListing) ...[
+            const SizedBox(height: 8),
             const Text(
-              'This permanently deletes your account, your saved items and any reviews you have written. It cannot be undone.',
+              'Your public teacher profile stays on Spiritpedia, unclaimed. We will remove the contact details and photos you added to it. If you would like the profile removed entirely, email $supportEmail.',
               style: TextStyle(
                 fontSize: 14,
                 height: 1.5,
                 color: Color(0xFFD1D5DB),
               ),
             ),
-            if (widget.hasListing) ...[
-              const SizedBox(height: 8),
-              const Text(
-                'Your public teacher profile stays on Spiritpedia, unclaimed. We will remove the contact details and photos you added to it. If you would like the profile removed entirely, email $supportEmail.',
-                style: TextStyle(
-                  fontSize: 14,
-                  height: 1.5,
-                  color: Color(0xFFD1D5DB),
+          ],
+          const SizedBox(height: 14),
+          const Text(
+            'Type DELETE to confirm',
+            style: TextStyle(fontSize: 13.5, color: SpColors.textMuted),
+          ),
+          const SizedBox(height: 8),
+          TextField(
+            key: const ValueKey('confirm-delete'),
+            controller: _typed,
+            autocorrect: false,
+            textCapitalization: TextCapitalization.characters,
+            onChanged: (_) => setState(() {}),
+            decoration: _fieldDecoration('DELETE'),
+          ),
+          if (_error != null)
+            Padding(
+              padding: const EdgeInsets.only(top: 10),
+              child: Text(
+                _error!,
+                style: const TextStyle(color: Color(0xFFFCA5A5), fontSize: 14),
+              ),
+            ),
+          const SizedBox(height: 14),
+          Wrap(
+            spacing: 8,
+            runSpacing: 8,
+            children: [
+              FilledButton(
+                onPressed: _typed.text.trim() == 'DELETE' && !_deleting
+                    ? _delete
+                    : null,
+                style: FilledButton.styleFrom(
+                  backgroundColor: const Color(0xFFDC2626),
                 ),
+                child: Text(_deleting ? 'Deleting…' : 'Delete my account'),
+              ),
+              TextButton(
+                onPressed: _deleting
+                    ? null
+                    : () => setState(() {
+                        _open = false;
+                        _typed.clear();
+                        _error = null;
+                      }),
+                style: TextButton.styleFrom(
+                  foregroundColor: SpColors.textMuted,
+                ),
+                child: const Text('Cancel'),
               ),
             ],
-            const SizedBox(height: 14),
-            const Text(
-              'Type DELETE to confirm',
-              style: TextStyle(fontSize: 13.5, color: SpColors.textMuted),
-            ),
-            const SizedBox(height: 8),
-            TextField(
-              key: const ValueKey('confirm-delete'),
-              controller: _typed,
-              autocorrect: false,
-              textCapitalization: TextCapitalization.characters,
-              onChanged: (_) => setState(() {}),
-              decoration: _fieldDecoration('DELETE'),
-            ),
-            if (_error != null)
-              Padding(
-                padding: const EdgeInsets.only(top: 10),
-                child: Text(
-                  _error!,
-                  style: const TextStyle(
-                    color: Color(0xFFFCA5A5),
-                    fontSize: 14,
-                  ),
-                ),
-              ),
-            const SizedBox(height: 14),
-            Wrap(
-              spacing: 8,
-              runSpacing: 8,
-              children: [
-                FilledButton(
-                  onPressed: _typed.text.trim() == 'DELETE' && !_deleting
-                      ? _delete
-                      : null,
-                  style: FilledButton.styleFrom(
-                    backgroundColor: const Color(0xFFDC2626),
-                  ),
-                  child: Text(_deleting ? 'Deleting…' : 'Delete my account'),
-                ),
-                const SizedBox(width: 8),
-                TextButton(
-                  onPressed: _deleting
-                      ? null
-                      : () => setState(() {
-                          _open = false;
-                          _typed.clear();
-                          _error = null;
-                        }),
-                  style: TextButton.styleFrom(
-                    foregroundColor: SpColors.textMuted,
-                  ),
-                  child: const Text('Cancel'),
-                ),
-              ],
-            ),
-          ],
+          ),
         ],
       ),
     );

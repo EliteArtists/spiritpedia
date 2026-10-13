@@ -10,10 +10,13 @@ import 'package:spiritpedia/features/library/saved_items.dart';
 import 'package:spiritpedia/features/notifications/notifications_controller.dart';
 import 'package:spiritpedia/features/notifications/push_messaging.dart';
 import 'package:spiritpedia/theme/theme.dart';
+import 'package:spiritpedia/features/reviews/reviews_providers.dart';
+import 'package:spiritpedia/features/star/tier_tips.dart';
 
 import '../../support/fake_account.dart';
 import '../../support/fake_content.dart';
 import '../../support/fake_push.dart';
+import '../../support/fake_reviews.dart';
 
 const _email = 'seeker@example.com';
 const _userId = 'user-seeker@example.com';
@@ -48,6 +51,8 @@ void main() {
     final c = ProviderContainer(
       retry: spiritpediaRetry,
       overrides: [
+        reviewsServiceProvider.overrideWithValue(FakeReviewsService()),
+        tierTipsPrefsProvider.overrideWithValue(MemoryTierTipsPrefs()),
         accountServiceProvider.overrideWithValue(account),
         savedStoreProvider.overrideWithValue(MemorySavedStore()),
         contentRepositoryProvider.overrideWithValue(FakeContentRepository()),

@@ -117,6 +117,10 @@ abstract class ContentSearch {
   /// Videos and Books boxes' "Also found" line. Counted up to [countCap].
   Future<Map<ResultKind, int>> counts(String term, Iterable<ResultKind> kinds);
 
+  /// How many people saved each of [slugs] ('book' or 'video'): totals only,
+  /// from save_counts() (migration 0016). Absent means none. For Suggests.
+  Future<Map<String, int>> saveCounts(String type, List<String> slugs);
+
   static const countCap = 100;
 }
 
@@ -136,6 +140,19 @@ List<String> searchWords(String term) {
 }
 
 class SupabaseContentSearch implements ContentSearch {
+  @override
+  Future<Map<String, int>> saveCounts(String type, List<String> slugs) async {
+    if (slugs.isEmpty) return const {};
+    final rows = await _db.rpc(
+      'save_counts',
+      params: {'p_type': type, 'p_slugs': slugs.toSet().take(200).toList()},
+    );
+    return {
+      for (final r in rows as List)
+        r['content_slug'] as String: (r['saves'] as num).toInt(),
+    };
+  }
+
   SupabaseContentSearch(this._db);
 
   final SupabaseClient _db;
@@ -457,6 +474,10 @@ ContentResults groupResults({
 /// counting repositories): the older universal search, read as plain-search
 /// results. Every match counts as a teacher — it carries no entity type.
 class UniversalContentSearch implements ContentSearch {
+  @override
+  Future<Map<String, int>> saveCounts(String type, List<String> slugs) async =>
+      const {};
+
   UniversalContentSearch(this._repository);
 
   final SearchRepository _repository;
@@ -531,10 +552,10 @@ List<Object> byTitleMatch(List<Object> items, String term) {
 
 // ── Spiritpedia Suggests ─────────────────────────────────────────────────────
 
-/// One video and one book, chosen by relevance alone: how well the title
-/// matches what was typed, then how strongly it fits the feeling's subjects.
-/// Nothing else — no shop links, prices, ranking scores or partner data are
-/// even read (see the columns above).
+/// One video and one book, chosen by relevance: how well the title matches
+/// what was typed, how strongly it fits the feeling's subjects, and — a
+/// little — how many people saved it. Nothing else: no shop links, prices,
+/// ranking scores or partner data are even read (see the columns above).
 class Suggestions {
   const Suggestions({this.video, this.book});
 
@@ -574,28 +595,43 @@ double relevance({
   return score;
 }
 
+/// Points per person who saved an item, and the most saves can add: enough
+/// to break a tie or settle a close call, never enough to beat a title match
+/// (600 points and up).
+const savePoints = 5;
+const maxSavePoints = 50;
+
+double saveBonus(int saves) =>
+    (saves * savePoints).clamp(0, maxSavePoints).toDouble();
+
 /// The best video and book among [videos] and [books]; ties go to the earlier
-/// (newer) one. Nothing with no relevance at all is suggested.
+/// (newer) one. Nothing with no relevance at all is suggested — saves only
+/// add to an item that is relevant already. [videoSaves] and [bookSaves]
+/// are save counts by slug.
 Suggestions suggest({
   required String term,
   required List<MappingRow> rows,
   required List<Video> videos,
   required List<Book> books,
+  Map<String, int> videoSaves = const {},
+  Map<String, int> bookSaves = const {},
 }) {
   T? best<T>(
     List<T> items,
     String Function(T) title,
     List<String> Function(T) subjects,
+    int Function(T) saves,
   ) {
     T? top;
     var topScore = 0.0;
     for (final item in items) {
-      final s = relevance(
+      var s = relevance(
         title: title(item),
         subjectSlugs: subjects(item),
         term: term,
         rows: rows,
       );
+      if (s > 0) s += saveBonus(saves(item));
       if (s > topScore) {
         top = item;
         topScore = s;
@@ -605,7 +641,17 @@ Suggestions suggest({
   }
 
   return Suggestions(
-    video: best<Video>(videos, (v) => v.title, (v) => v.subjectSlugs),
-    book: best<Book>(books, (b) => b.title, (b) => b.subjectSlugs),
+    video: best<Video>(
+      videos,
+      (v) => v.title,
+      (v) => v.subjectSlugs,
+      (v) => videoSaves[v.slug] ?? 0,
+    ),
+    book: best<Book>(
+      books,
+      (b) => b.title,
+      (b) => b.subjectSlugs,
+      (b) => bookSaves[b.slug] ?? 0,
+    ),
   );
 }

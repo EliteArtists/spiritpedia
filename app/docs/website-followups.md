@@ -1,7 +1,7 @@
 # Website follow-ups (found while building the app; the website is unchanged)
 
 Kept here, in `app/`, so recording them does not trigger a website deploy.
-Line numbers are as of October 2026 (app build 1.0.0 (5)).
+Line numbers are as of October 2026 (app builds 1.0.0 (5) to (7)).
 
 ## Channels and apps mixed in with teachers
 
@@ -64,3 +64,24 @@ They appear only on teachers' pages (`web/app/healers/[slug]/page.js:238,
   dropped ("September Astrology Forecast 2026" finds astrology, not the
   video). Its universal search also matches the whole phrase only, so words
   out of order miss. The app searches both engines and shows both.
+
+## Reviews: report and block (app build 1.0.0 (7))
+
+The app has a "⋯" menu on every review someone else wrote: Report review
+(a reason and an optional note → `report_review()`, migration 0015) and Block
+this reviewer (`block_review_author()`). The website's public review section
+(`web/components/ReviewSection.jsx`, `ReviewCard` at 316-359) has neither. The
+database already hides a blocked reviewer's reviews from the blocker on the
+website too (the read policy), but there is no way to block or unblock there,
+and no "Blocked reviewers" list on the website's account page.
+
+## Offering dates
+
+The website never shows when a retreat or dated course takes place:
+`web/components/OfferingCard.js` and `web/app/offerings/[slug]/page.js` read
+`start_date`/`end_date` but render neither. Lists hide offerings whose end date
+has passed; an ended offering's page still opens with no notice. The app now
+shows the dates on cards and pages ("18–20 Sep 2026", "On now · until …"),
+says "This took place … — it has ended." on an ended page, and sorts retreat
+shelves soonest first (`app/lib/core/format/dates.dart`,
+`app/lib/data/shelf_rules.dart` → `soonestFirst`).

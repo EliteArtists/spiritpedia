@@ -231,11 +231,30 @@ class EmotionSearchController extends ChangeNotifier {
         _feelings = await plain.forSubjects(top.toList(), scope: scope);
         if (generation != _generation) return;
       }
+      final videos = [
+        ..._content.of<Video>(ResultKind.videos),
+        ..._feelings.videos,
+      ];
+      final books = [
+        ..._content.of<Book>(ResultKind.books),
+        ..._feelings.books,
+      ];
+      // A small signal, never a reason to fail: no counts, no bonus.
+      Future<Map<String, int>> saves(String type, List<String> slugs) => plain
+          .saveCounts(type, slugs)
+          .catchError((_) => const <String, int>{});
+      final (videoSaves, bookSaves) = await (
+        saves('video', [for (final v in videos) v.slug]),
+        saves('book', [for (final b in books) b.slug]),
+      ).wait;
+      if (generation != _generation) return;
       _suggestions = suggest(
         term: term,
         rows: rows,
-        videos: [..._content.of<Video>(ResultKind.videos), ..._feelings.videos],
-        books: [..._content.of<Book>(ResultKind.books), ..._feelings.books],
+        videos: videos,
+        books: books,
+        videoSaves: videoSaves,
+        bookSaves: bookSaves,
       );
 
       _softTier = safety.checkSoftTier(normalised) ? safety.softTierLine : null;
