@@ -22,11 +22,13 @@ export const QUEUE_TYPES = {
     live: true,
     chip: 'border-violet-500/40 bg-violet-500/10 text-violet-300',
   },
+  // A reported review (review_reports, migration 0015). The key stays 'flag'
+  // — the Inbox filter and the /admin/flags page were built for it.
   flag: {
     key: 'flag',
-    label: 'Flag',
+    label: 'Report',
     icon: '🚩',
-    live: false,
+    live: true,
     chip: 'border-red-500/40 bg-red-500/10 text-red-300',
   },
   message: {
@@ -176,7 +178,21 @@ const TIER_WORDS = {
 // `reviews` and `brokenImages` are optional and default to none, so a caller
 // that has not been taught about them yet still gets a queue rather than an
 // exception.
-export function buildQueue(profiles, reviews = [], brokenImages = [], accountDeletions = []) {
+const REPORT_REASONS = {
+  spam: 'spam',
+  offensive: 'offensive or hateful',
+  harassment: 'harassment',
+  misleading: 'false or misleading',
+  other: 'something else',
+};
+
+export function buildQueue(
+  profiles,
+  reviews = [],
+  brokenImages = [],
+  accountDeletions = [],
+  reports = []
+) {
   if (!Array.isArray(profiles)) return [];
   const items = [];
 
@@ -315,6 +331,23 @@ export function buildQueue(profiles, reviews = [], brokenImages = [], accountDel
       status: 'review',
       action: 'Review →',
       href: `/admin/content/${row.linked_healer_slug}?tab=profile&closed=${row.id}`,
+    });
+  }
+
+  // A member reported a review. Decided on the Reports page, where the
+  // snapshot of the review and the ban control live — the same `href` escape
+  // hatch as a review.
+  for (const report of Array.isArray(reports) ? reports : []) {
+    items.push({
+      id: `flag:${report.id}`,
+      type: 'flag',
+      at: report.created_at,
+      person: report.review_author_name || 'A Spiritpedia member',
+      title: `Reported review · ${REPORT_REASONS[report.reason] || report.reason}`,
+      detail: `${report.content_type} · ${report.content_slug} · decide within 24 hours`,
+      status: 'review',
+      action: 'Decide →',
+      href: '/admin/flags',
     });
   }
 

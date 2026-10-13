@@ -29,6 +29,7 @@ export function AdminDataProvider({ children }) {
     pendingReviews: [],
     brokenImages: [],
     accountDeletions: [],
+    openReports: [],
     counts: {},
     error: null,
   });
@@ -57,6 +58,7 @@ export function AdminDataProvider({ children }) {
         pendingReviews: json.pendingReviews || [],
         brokenImages: json.brokenImages || [],
         accountDeletions: json.accountDeletions || [],
+        openReports: json.openReports || [],
         counts: json.counts || {},
         error: json.error || null,
       };
@@ -67,6 +69,7 @@ export function AdminDataProvider({ children }) {
         pendingReviews: [],
         brokenImages: [],
         accountDeletions: [],
+        openReports: [],
         counts: {},
         error: err?.name === 'AbortError' ? 'unreachable' : err.message,
       };
@@ -110,7 +113,11 @@ export function AdminDataProvider({ children }) {
   // recorded — and it falls to zero on its own when the next audit finds the
   // images restored, which is what makes the badge trustworthy.
   const brokenImageCount = state.brokenImages?.length || 0;
-  const pendingActions = pendingApplications + pendingReviewCount + brokenImageCount;
+  // A reported review is the most urgent of all: the Terms promise a decision
+  // within 24 hours.
+  const openReportCount = state.openReports?.length || 0;
+  const pendingActions =
+    pendingApplications + pendingReviewCount + brokenImageCount + openReportCount;
 
   return (
     <AdminDataContext.Provider
@@ -121,6 +128,7 @@ export function AdminDataProvider({ children }) {
         pendingApplications,
         pendingReviewCount,
         brokenImageCount,
+        openReportCount,
         pendingActions,
         claims,
       }}

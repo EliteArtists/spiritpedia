@@ -37,16 +37,6 @@ export function MessagesTab() {
   );
 }
 
-export function FlagsTab() {
-  return (
-    <Placeholder
-      icon="⚑"
-      title="Content flags — coming soon"
-      body="When users report broken links or incorrect content, flags will appear here."
-    />
-  );
-}
-
 const disabledField =
   'w-full cursor-not-allowed rounded-lg border border-slate-800 bg-slate-900/60 px-4 py-3 text-sm text-slate-600';
 

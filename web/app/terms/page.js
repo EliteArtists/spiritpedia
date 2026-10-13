@@ -1,5 +1,5 @@
 import { buildMetadata } from '@/utils/seo';
-import { A, ADDRESS, ENTITY, LAST_UPDATED, LegalPage, List, Mail, Section } from '@/components/LegalPage';
+import { A, ADDRESS, ENTITY, LegalPage, List, Mail, Section } from '@/components/LegalPage';
 
 // Terms of Use. Wording reviewed against the codebase on 9 October 2026 — see
 // legal-draft.md (not committed) for the working copy and what was corrected.
@@ -9,9 +9,14 @@ export const metadata = buildMetadata({
   path: '/terms',
 });
 
+// Its own date, not the shared LAST_UPDATED: 13 October 2026 added the line on
+// reporting, blocking and the 24-hour promise (§7, for App Store guideline
+// 1.2); the Privacy Policy did not change.
+const TERMS_UPDATED = '13 October 2026';
+
 export default function TermsPage() {
   return (
-    <LegalPage title="Terms of Use" updated={LAST_UPDATED}>
+    <LegalPage title="Terms of Use" updated={TERMS_UPDATED}>
       <Section title="1. Who we are">
         <p>
           Spiritpedia is run by {ENTITY}, {ADDRESS}. You can reach us at <Mail />.
@@ -117,6 +122,12 @@ export default function TermsPage() {
           <li>includes someone else&apos;s personal information, or content you don&apos;t have the right to share</li>
           <li>is advertising or spam</li>
         </List>
+        <p>
+          We have no tolerance for objectionable content or abusive users. You can report any
+          review from its page, and you can block a reviewer so you no longer see their reviews.
+          We look at every report within 24 hours, remove content that breaks these terms, and
+          remove the right to post from anyone who posts it.
+        </p>
       </Section>
 
       <Section title="8. Other people’s content and links">

@@ -10,7 +10,7 @@ import DataProblem from '@/components/admin/DataProblem';
 import { Placeholder } from '@/components/admin/AdminPlaceholders';
 import { QUEUE_TYPES, buildQueue } from '@/components/admin/queue';
 
-// Filters. The three with no table yet are rendered and disabled rather than
+// Filters. The two with no table yet are rendered and disabled rather than
 // omitted: the shape of the finished queue is visible, and a count of 0 is not
 // claimed for something that has never been measured.
 const FILTERS = [
@@ -21,7 +21,7 @@ const FILTERS = [
   { key: 'broken_image', label: 'Broken Images' },
   { key: 'closed_account', label: 'Closed Accounts' },
   { key: 'message', label: 'Messages' },
-  { key: 'flag', label: 'Flags' },
+  { key: 'flag', label: 'Reports' },
   { key: 'content', label: 'Content' },
 ];
 
@@ -31,6 +31,7 @@ export default function AdminInboxPage() {
     pendingReviews,
     brokenImages,
     accountDeletions,
+    openReports,
     loading,
     reload,
     accountsAvailable,
@@ -60,8 +61,8 @@ export default function AdminInboxPage() {
   }, [reload]);
 
   const queue = useMemo(
-    () => buildQueue(profiles, pendingReviews, brokenImages, accountDeletions),
-    [profiles, pendingReviews, brokenImages, accountDeletions]
+    () => buildQueue(profiles, pendingReviews, brokenImages, accountDeletions, openReports),
+    [profiles, pendingReviews, brokenImages, accountDeletions, openReports]
   );
   const visible = useMemo(
     () => (filter === 'all' ? queue : queue.filter((i) => i.type === filter)),

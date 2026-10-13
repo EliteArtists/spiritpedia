@@ -18,7 +18,7 @@ const NAV = [
   { href: '/admin/messages', label: 'Messages', icon: 'messages' },
   { href: '/admin/claims', label: 'Claims', icon: 'claims' },
   { href: '/admin/reviews', label: 'Reviews', icon: 'reviews' },
-  { href: '/admin/flags', label: 'Flags', icon: 'flags' },
+  { href: '/admin/flags', label: 'Reports', icon: 'flags' },
   { href: '/admin/mailshots', label: 'Mailshots', icon: 'mailshots' },
   { href: '/admin/analytics', label: 'Analytics', icon: 'analytics' },
   { href: '/admin/ingestion', label: 'Ingestion', icon: 'ingestion' },
@@ -122,8 +122,8 @@ function TopBar({ adminName }) {
   const { pendingActions, loading, accountsAvailable } = useAdminData();
   const initial = (adminName || 'A').trim().charAt(0).toUpperCase();
 
-  // Counts only what exists. Messages, flags and content submissions have no
-  // tables yet, so a larger number here would be invented.
+  // Counts only what exists. Messages and content submissions have no tables
+  // yet, so a larger number here would be invented.
   //
   // The same number as the sidebar badge, on purpose: two counts under one
   // heading of "attention" that disagreed would be read as a fault in one.

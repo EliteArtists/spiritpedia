@@ -410,9 +410,11 @@ export function StatsTab({ counts, accountsAvailable }) {
             value={accountsAvailable ? c.claims : 'n/a'}
             tone={accountsAvailable && c.claims > 0 ? 'alert' : 'quiet'}
           />
-          {/* Flags have no table yet, so this is a literal zero rather than a
-              count of nothing — labelled quiet so it does not read as live. */}
-          <StatCard label="Content flags" value={0} tone="quiet" />
+          <StatCard
+            label="Reported reviews"
+            value={accountsAvailable ? c.open_reports ?? 0 : 'n/a'}
+            tone={accountsAvailable && c.open_reports > 0 ? 'alert' : 'quiet'}
+          />
         </div>
       </section>
 

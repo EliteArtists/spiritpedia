@@ -38,7 +38,15 @@ export async function GET() {
 
   if (!supabase) {
     return NextResponse.json(
-      { ...NOT_CONFIGURED, counts, profiles: null, pendingReviews: [], brokenImages: [], accountDeletions: [] },
+      {
+        ...NOT_CONFIGURED,
+        counts,
+        profiles: null,
+        pendingReviews: [],
+        brokenImages: [],
+        accountDeletions: [],
+        openReports: [],
+      },
       { status: 200 }
     );
   }
@@ -92,6 +100,16 @@ export async function GET() {
     .is('resolved_at', null)
     .order('deleted_at', { ascending: true });
 
+  // Reviews members have reported and nobody has decided on yet (migration
+  // 0015). Service role only: a reporter can read their own reports, nobody
+  // else's. Only what the queue row shows; the snapshot and the decision are
+  // the Reports page's.
+  const { data: openReports } = await supabase
+    .from('review_reports')
+    .select('id, reason, content_type, content_slug, review_author_name, review_rating, created_at')
+    .eq('status', 'open')
+    .order('created_at', { ascending: true });
+
   // user_profiles has no email column — the address lives in auth.users, which
   // only the service role can read. One listUsers call and a lookup map is far
   // cheaper than a getUserById per profile.
@@ -115,12 +133,14 @@ export async function GET() {
   counts.pending_reviews = (pendingReviews || []).length;
   counts.broken_images = (brokenImages || []).length;
   counts.closed_accounts = (accountDeletions || []).length;
+  counts.open_reports = (openReports || []).length;
 
   return NextResponse.json({
     profiles: withEmail,
     pendingReviews: pendingReviews || [],
     brokenImages: brokenImages || [],
     accountDeletions: accountDeletions || [],
+    openReports: openReports || [],
     counts,
   });
 }

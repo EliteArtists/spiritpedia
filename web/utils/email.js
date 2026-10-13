@@ -217,6 +217,57 @@ The Spiritpedia team`,
   });
 }
 
+/* ── 6. REVIEW REPORTED (to the admin) ─────────────────────────────────── */
+
+// A member reported a review from the app (review_reports, migration 0015).
+// To the admin, at once: Apple's guideline 1.2 expects reports to be acted on
+// within 24 hours, and the Terms promise it. Everything quoted here was typed
+// by members, so all of it is escaped before it goes into the HTML.
+const REPORT_REASONS = {
+  spam: 'Spam or advertising',
+  offensive: 'Offensive or hateful',
+  harassment: 'Harassment or bullying',
+  misleading: 'False or misleading',
+  other: 'Something else',
+};
+
+function escapeHtml(value) {
+  return String(value ?? '')
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#39;');
+}
+
+export async function sendReviewReported({ report, title, url, adminUrl }) {
+  const reason = REPORT_REASONS[report.reason] || report.reason;
+  const author = report.review_author_name || 'A Spiritpedia member';
+  const stars = report.review_rating ? `${report.review_rating}-star` : 'A';
+  const lines = [
+    `${stars} review of ${title} by ${author} was reported: ${reason}.`,
+    report.note ? `Their note: "${report.note}"` : null,
+    '',
+    'The review, as it was when reported:',
+    report.review_body || '(no text, rating only)',
+    '',
+    `Where it is: ${url}`,
+    `Decide in the dashboard: ${adminUrl}`,
+    '',
+    'Reports are promised a decision within 24 hours.',
+  ].filter((line) => line !== null);
+  return sendEmail({
+    to: ADMIN_EMAIL,
+    subject: `Review reported: ${reason} — ${title}`,
+    text: lines.join('\n'),
+    html: `<p>${escapeHtml(stars)} review of <strong>${escapeHtml(title)}</strong> by ${escapeHtml(author)} was reported: <strong>${escapeHtml(reason)}</strong>.</p>${
+      report.note ? `<p>Their note: “${escapeHtml(report.note)}”</p>` : ''
+    }<p>The review, as it was when reported:</p><blockquote style="border-left:3px solid #ccc;margin:0;padding:4px 12px;white-space:pre-line">${escapeHtml(
+      report.review_body || '(no text, rating only)'
+    )}</blockquote><p><a href="${escapeHtml(url)}">Where it is</a> · <a href="${escapeHtml(adminUrl)}">Decide in the dashboard</a></p><p>Reports are promised a decision within 24 hours.</p>`,
+  });
+}
+
 /* ── HEALER OUTREACH JOURNEY ───────────────────────────────────────────── */
 
 // Cold outreach to a practitioner who has a listing but has not joined.
