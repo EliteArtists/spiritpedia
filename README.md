@@ -137,47 +137,36 @@ them with the same phrase lists and the same order. A search box that reaches
 crisis.
 
 #### The Flutter app — where it stands
-**Phases 0 and 1 are built** (10 Oct 2026). The app reads live content and
-writes nothing; accounts come in Phase 2.
+**In TestFlight as 1.0.0 (12), 14 October 2026.** iPhone only, portrait only.
+**`app/README.md` is the app's full handover:** structure, dev and live,
+build and upload, what is built, migrations 0015–0018, the admin Reports page,
+known issues and next steps. Read it before changing the app.
 
-* **Phase 0:** `app/`, bundle ID `co.spiritpedia.app` on both platforms,
-  Flutter pinned to **3.47.7**, the website's colours and Geist type, tier
-  badges, the static launch screen and the shooting-star intro (every cold
-  start, ~1.6 s, tap to skip, off under Reduce Motion), and a read-only
-  Supabase connection.
-* **1a — one crisis phrase list.** `web/shared/emotion-safety.json` is the
-  single source for the website and the app (the app bundles it through a
-  symlink). `web/shared/emotion-safety.cases.json` is checked by both
-  `npm test` and `flutter test`, so the two cannot drift.
-* **1b — Explore.** Five tabs (Home, Videos, Search, Library, Account). Home
-  mirrors the website: the feeling search, subject pills, billboard, healer and
-  publisher shelves, Explore More. Videos has subject shelves with at most two
-  videos per teacher. Subject pages.
-* **1c — emotional search.** Full screen. The crisis check runs on every
-  keystroke before any request: a crisis phrase shows the crisis screen and
-  sends nothing (tested for every phrase). Then the dual path, soft-tier line,
-  medical disclaimer, universal search and the gentle no-match screen.
-* **1d — detail pages.** Teacher, book, video, publisher, offering and free
-  resource. Book pages build Amazon links with a Dart port of
-  `utils/affiliate.js` (same test cases) and tag them from the five
-  `AMAZON_TAG_*` values in `app/config/prod.json`; the disclosure sits at the
-  bottom of the purchase section, only when the link is tagged. Videos play in
-  YouTube's privacy-enhanced (nocookie) player. Every outbound link opens
-  outside the app. Saves (heart, Want to Read, Read) are kept **on the device
-  only**, as slugs, and listed in the Library tab.
+Built so far:
+* **Phases 0–3a:** the launch screen and intro; the shared crisis phrase list;
+  explore, emotional search and detail pages; email-code sign-in, My Library
+  sync and self-serve account deletion; push notifications (Firebase Cloud
+  Messaging only).
+* **A1–A3 and onboarding:**
+  * Discover · Videos · Books, with the star's flight rules.
+  * A one-row header and a right-side frosted menu.
+  * Two-engine search with scoped tabs and Spiritpedia Suggests.
+  * Channels kept apart from teachers.
+  * Reviews with report, block and ban.
+  * Dates on offerings.
+  * **Tailor Spiritpedia:** More of, ranked in three levels, and Never show.
+    The rules are in `app/docs/personalisation.md`.
 
-Run it with `flutter run --dart-define-from-file=config/prod.json` from `app/`.
+**The crisis intercept runs first in every search box, on every keystroke,
+before anything is sent** — in the app exactly as on the website, from the
+same `web/shared/emotion-safety.json`, with tests that type every phrase into
+every box. Tailoring never touches it. See the top of `app/README.md`.
 
-Decisions for v1, settled 9 Oct 2026:
-* **iPhone only, portrait only.** No iPad layout.
-* **Explorers only.** Practitioner application, claim and dashboard stay on the website.
-* **In-app account deletion** via a shared server route, built in Phase 2 — Apple requires it, and the website gets the same option.
-* **My Library syncs** through `user_favourites` in Phase 2, after fixing the book-favourites mismatch (cards save a book's numeric id, the book page saves its slug).
-* **A dev Supabase project** before Phase 2, so development never writes to production.
-* **No analytics** in the app. Push (Firebase) in Phase 3; the Apple developer identity and push content are decided then.
-* **Amazon disclosure** sits at the bottom of the purchase section in the app.
+Build numbers: 1–9 and 11–12. **10 was an accidental duplicate of 9**
+uploaded from Xcode; the next build is 13. Upload is IPA → Transporter.
 
-Phases, and how each is tested: `app/README.md`.
+Website issues found while building the app, not yet fixed:
+`app/docs/website-followups.md`.
 
 🚀 Getting Oriented
 **The app is not at the root of this repo.** It lives in `web/`; there is no
@@ -237,7 +226,7 @@ The entry point is always emotional:
 | Platform | Role | Status |
 | :--- | :--- | :--- |
 | Web App (Next.js) | Primary product — full discovery experience | ✅ **Complete and live** at [www.spiritpedia.co](https://www.spiritpedia.co) |
-| Native App (Flutter) | **The current phase** — iOS & Android with push notifications | 🟡 Phases 0–1 done — explore, emotional search, detail pages, device saves. In `app/` |
+| Native App (Flutter) | **The current phase** — iPhone first, with push notifications | 🟡 In TestFlight, 1.0.0 (12): accounts, search, reviews, notifications, tailoring. In `app/` — see `app/README.md` |
 
 #### Domains
 `spiritpedia.co` is the primary domain and the one to share. The original
@@ -961,6 +950,17 @@ idempotent, and run it by hand — as before.
 | `0009_healer_journeys` | the claim-outreach sequence. A **partial** unique index (`WHERE status <> 'stopped'`) rather than a plain UNIQUE, so a stopped journey survives as history and a healer can be restarted |
 | `0010_broken_images` | the image audit queue. **Amended after the fact** to add `healers` to the `table_name` CHECK when portraits joined the audit; the `ALTER` is a second statement rather than an edit to the `CREATE`, so the file reads in the order the database received it. Reconciled against production 8 Oct 2026 and carries a verification block that compares a database to the file |
 | `0011_emotion_vocabulary` | the 43 emotion rows added by hand during the emotion-search work, read back out of production rather than retyped. `ON CONFLICT … DO UPDATE SET weight`, so the file is the authority on those rows and safe to re-run — but re-running resets their weights. Needs the table from `0000`. The full vocabulary, these 43 included, is `supabase/seed/emotion_mappings.sql` |
+| `0012_favourites_slugs` | every `user_favourites.content_slug` becomes a slug (the website and app both save slugs now); records `book_read` as a content type |
+| `0013_account_deletions` | `account_deletions`: a note, with no personal data, that an account with a claimed listing was deleted, for the admin Inbox |
+| `0014_push_notifications` | `push_tokens`, `notification_preferences` and the send record; `register_push_token()`. Owner-only; cascades with the account |
+| `0015_review_moderation` | review reports (with a snapshot), blocks and bans; `report_review()`, `block_review_author()`; blocked reviewers hidden from the blocker; banned accounts can't post |
+| `0016_save_counts` | `save_counts(type, slugs)`: save totals for books and videos, for Spiritpedia Suggests |
+| `0017_user_interests` | `user_interests`: a member's More of subjects, owner-only, checked against `subjects` |
+| `0018_hidden_subjects` | adds Never show (`hidden_subjects`) to the same row; a subject can't be in both |
+
+`0012`–`0018` are **on dev and live**. Since `0014`, every migration runs on the
+dev project (`khtpbnof…`) first, is checked there with temporary accounts,
+then runs on live and is checked read-only.
 
 🧨 Database state and rebuilding it
 **Since 9 October 2026 the repository can rebuild the database's structure and
@@ -1293,7 +1293,7 @@ whose `course_url` points at Amazon.
 | Admin phases 4+ | Flags, messages, publisher claims. Each needs its own table |
 | Ancient Teachers tier | Planned |
 | Content library | Target: 5,000 videos + 5,000 books — ongoing |
-| Flutter app build | Phases 0–1 done; phases 2–4 in `app/README.md` |
+| Flutter app build | In TestFlight as 1.0.0 (12); status, next steps and known issues in `app/README.md` |
 
 🔧 Operational knowledge
 Things learned the hard way that neither the code nor the git log will tell you.

@@ -1,107 +1,399 @@
-# Spiritpedia — the app
+# Spiritpedia: the app
 
-The Flutter app for iPhone and Android. Same Supabase project, same accounts
-and the same content as the website in `../web`. Read the root README's
-**Handover → For the Flutter build** first.
+The Flutter app for iPhone, in TestFlight as **1.0.0 (12)** (14 October 2026).
+It uses the same Supabase database, the same accounts and the same content as
+the website in `../web`. This file is written so that a new session, with none
+of the earlier conversations, can pick the app up.
 
-## Run it
+Read the root README's **Handover → For the Flutter build** for the database
+and website side.
+
+---
+
+## ⚠️ The crisis intercept: read before touching search
+
+**Every search box in the app runs the crisis check first, on every
+keystroke, before anything else and before anything is sent anywhere.** A
+crisis phrase shows the crisis screen (findahelpline.com), and nothing goes to
+any engine: not the feelings lookup, not the name search, not "See all", not
+the keyboard's search key. The dual-path question ("hearing voices") comes
+next, then the soft-tier line and the medical disclaimer.
+
+- **One phrase list for the website and the app:** `web/shared/emotion-safety.json`.
+  The app bundles it through a symlink (`assets/safety/`), and
+  `web/shared/emotion-safety.cases.json` is checked by both `npm test` and
+  `flutter test`, so the two cannot drift.
+- **The code:** `lib/core/safety/emotion_safety.dart`, a port of the website's
+  `utils/emotionSearchPatterns.js`, and the gates at the top of
+  `lib/features/search/emotion_search_controller.dart` (`_evaluate`, `more`,
+  `submit`).
+- **The tests:** `test/features/search/two_engines_test.dart` ("the crisis
+  intercept stays first in every search box") types every phrase, plain and
+  as "I feel …", into all three boxes, and checks that neither engine received
+  a single call.
+- **Nothing personal overrides it.** Tailoring (More of, Never show) is
+  applied only after the gates and never looks at them; there is a test for
+  that too.
+
+Do not shorten, reorder or skip these gates, and keep those tests passing.
+Change the phrases only in the shared JSON.
+
+---
+
+## Overview
+
+### Structure
+
+```
+lib/
+  main.dart             starts Supabase and Firebase, holds the launch screen, portrait only
+  app.dart              MaterialApp.router; the star layer and the intro sit above the router
+  router.dart           go_router; paths mirror the website's (/healers/:slug, /books/:slug …)
+  core/                 config, Supabase client, crisis safety, Amazon links, dates, retry
+  data/                 models, the read-only content repository, shelf_rules.dart (pure rules)
+  theme/                the website's colours and type (Geist)
+  shared/widgets/       cards, shelves, tier badges, images
+  features/
+    intro/              first-launch intro, later-launch flight, then onboarding
+    interests/          Tailor Spiritpedia: More of and Never show, the picker, onboarding
+    shell/              Discover · Videos · Books, the floating pill
+    star/               the star: its layer, flights (slipstream), StarPage, tier tips
+    home/               Discover: For You, billboard, shelves, pills, Explore More
+    videos/ books/      the other two tabs
+    search/             two-engine search, Spiritpedia Suggests, the crisis screen
+    detail/             teacher, book, video, publisher, offering, free resource
+    subject/            subject pages
+    reviews/            reviews with report, block and the ban rule
+    library/            My Library: saves on the phone, synced with the account
+    account/            sign-in, My Account, change email, delete account
+    notifications/      push notifications
+    menu/               the right-side frosted menu
+docs/
+  personalisation.md    what More of and Never show change, in plain English
+  website-followups.md  website issues found while building the app (not fixed)
+```
+
+State is **Riverpod 3** (no code generation). Riverpod retries a failing
+provider on its own, so providers catch their own errors
+(`core/retry.dart` → `spiritpediaRetry`). Navigation is **go_router**.
+
+### How it talks to Supabase and the website
+
+- **Reads** use the anon key, directly from Supabase. RLS allows reading
+  content and nothing else.
+- **A person's own rows** are written with their own session, under RLS:
+  `user_profiles`, `user_favourites`, `reviews` (forced to pending),
+  `user_interests`, `notification_preferences`. Some go through
+  `SECURITY DEFINER` functions instead: `register_push_token`,
+  `report_review`, `block_review_author`, `save_counts`.
+- **Anything needing the server's key** goes through the website's API
+  routes, with the person's access token (`Authorization: Bearer …`):
+
+  | Route | When |
+  | :--- | :--- |
+  | `/api/email/explorer-welcome` | once, when the profile row is first created |
+  | `/api/email/review-received` | after a review is submitted |
+  | `/api/email/review-reported` | after a review is reported (emails love@) |
+  | `/api/account/delete` | Delete account |
+  | `/api/push/welcome` | after notifications are turned on: the welcome notification, once per account |
+
+- **Never put the service-role key in the app, and never loosen RLS** to
+  make something easier. The anon key is public by design.
+
+Sign-in is an emailed six-digit code (no passwords). Changing an email address
+uses Supabase's "Secure email change": a code to the new address and one to the
+current one. All of this is in `features/account/account_service.dart`, behind
+an interface that `test/support/fake_account.dart` fakes for the tests.
+
+### Dev and live
+
+| | Dev | Live |
+| :--- | :--- | :--- |
+| Supabase project | `khtpbnof…` | `uzmvcgewxgvnybdhvsyx` |
+| App config | `config/dev.json` (**not committed**; copy `config/dev.example.json`) | `config/prod.json` (committed: public values and the Amazon tags) |
+| Website env | `web/.env.development.local` | `web/.env.local` |
+| API routes | `http://localhost:3000` (`npm run dev` in `web/`) | `https://www.spiritpedia.co` |
+| Firebase | `core/firebase/options_dev.dart` | `core/firebase/options_prod.dart` |
 
 ```bash
 cd app
 flutter pub get
-flutter run --dart-define-from-file=config/prod.json      # live data, read-only
+flutter run --dart-define-from-file=config/prod.json   # live data
+flutter run --dart-define-from-file=config/dev.json    # dev database, local website
 ```
 
-In VS Code, the **Spiritpedia (prod config)** launch configuration does the same.
+Without the config the app opens on a screen naming what is missing. Flutter
+is pinned to **3.47.7** (Dart 3.13.5) and `pubspec.lock` pins everything. iOS
+plugins come through Swift Package Manager, so there is no Podfile.
 
-Without `--dart-define-from-file` the app starts on a screen naming the
-missing values instead of crashing.
+**Migrations run on dev first, then live.** The person running the project
+pastes each SQL file into the Supabase SQL editor themselves. Check each one
+on dev with temporary accounts (deleted afterwards), and on live with
+read-only checks only.
 
-| File | What it points at | Committed |
-| :--- | :--- | :--- |
-| `config/prod.json` | the live Supabase project, `https://www.spiritpedia.co` and the five Amazon Associates tags (`AMAZON_TAG_*`, same values as the website's Vercel env vars) | yes — public values only |
-| `config/dev.json` | the dev Supabase project and a local `next dev` (Phase 2) | **no** — copy `config/dev.example.json` |
-
-**Never put the service-role key in the app.** The anon key is public by
-design — the website ships it in every page — and RLS protects the data.
-
-## Pinned versions
-
-Flutter is pinned to **3.47.7** (Dart 3.13.5) in `pubspec.yaml`; the build
-refuses any other version. `pubspec.lock` pins every package and plugin. iOS
-plugins come through Swift Package Manager (Flutter's default since 3.4x), so
-there is no Podfile. Upgrading Flutter is a deliberate change: edit the pins,
-`flutter pub upgrade`, re-test on both simulators, commit the lock file.
-
-## Checks
+### Checks
 
 ```bash
-flutter analyze
-flutter test
+flutter analyze        # must say "No issues found"
+flutter test           # 229 tests at build 12, all passing
 ```
 
-## Layout
+Screenshots for review come from a temporary integration test (a "tour") that
+prints `SHOT:name` markers while a background loop runs `xcrun simctl io …
+screenshot`. Tours are deleted afterwards and never committed.
 
-```
-lib/
-  main.dart            starts Supabase, holds the launch screen, locks portrait
-  app.dart             MaterialApp + the intro overlay above the router
-  router.dart          go_router; paths mirror the website's
-  core/                config, Supabase client (reads only), crisis safety
-                       (Dart port of the shared JSON), Amazon links, outbound links
-  data/                models, the read-only content repository, shelf rules
-  theme/               the website's colours and type (Geist)
-  shared/widgets/      tier badges, cards, shelves, images
-  features/
-    intro/             the shooting-star opening animation
-    shell/             the five tabs
-    home/              Explore: feeling search, pills, billboard, shelves
-    videos/            subject shelves, max two per teacher
-    subject/           subject pages
-    search/            emotional search with the crisis intercept
-    detail/            teacher, book, video, publisher, offering, free resource
-    library/           saves on the device, and the Library tab
-assets/                star, Geist + its licence, launch-screen source images,
-                       safety/emotion-safety.json (symlink to web/shared/)
-```
+### Build and upload
 
-State management is **Riverpod** (no code generation); navigation is
-**go_router**.
+1. **Bump the build number** in `pubspec.yaml` (`version: 1.0.0+N`). Every
+   TestFlight upload needs a new one.
+2. `flutter analyze` and `flutter test`, then check it in the simulator.
+3. `flutter build ipa --release --dart-define-from-file=config/prod.json`
+4. Check the IPA (unzip it): `CFBundleVersion` is N, and the entitlements say
+   `aps-environment` **production**.
+5. Upload `build/ios/ipa/Spiritpedia.ipa` with **Transporter**. The person
+   running the project uploads; there is no App Store Connect API key on this
+   Mac.
 
-## The launch screen and intro
+**Build numbers so far:** 1–9 and 11–12 are real builds. **Build 10 was an
+accidental duplicate of build 9**, uploaded from Xcode, so the numbering
+jumped from 9 to 11. The next build is **13**.
 
-1. **Static launch screen** — native, generated from `flutter_native_splash.yaml`
-   (`dart run flutter_native_splash:create` after any change): the website's
-   dark background and the gold star, centred at 120 pt.
-2. **Intro** (`lib/features/intro/intro_overlay.dart`) — starts from exactly
-   that frame, then the star glows, shoots off to the top right with a fading
-   trail, and the home screen is revealed underneath. About 1.6 s, on every
-   cold start. A tap skips it; iOS Reduce Motion or Android's Remove
-   animations skips it entirely.
+The Mac's disk has filled up during a build before. `flutter clean` frees the
+app's `build/` folder (about 7 GB), and everything in it is regenerated.
 
-## Decisions for v1
+**iPhone only, portrait only.** iPad is Phase B. Bundle ID `co.spiritpedia.app`.
+App-only pushes don't redeploy the website (`web/scripts/vercel-ignore-build.sh`);
+anything under `web/` deploys live.
 
-- iPhone only (no iPad layout) and portrait only, on both platforms.
-- Explorers only: practitioner application, claim and dashboard stay on the website.
-- Writes go through the website's API routes — never directly, never by loosening RLS.
-- No analytics or crash reporting. Push notifications (Firebase) come in Phase 3.
-- Amazon affiliate disclosure sits at the **bottom of the purchase section**,
-  not directly under the Amazon button (Phase 1d).
+---
 
-## Phases
+## What's built
 
-| Phase | Scope |
+### Phases 0–3a
+
+| Phase | What |
 | :--- | :--- |
-| 0 | Skeleton, theme, launch screen, intro, tabs ✅ |
-| 1a | Shared crisis phrase list (one JSON file, used by website and app) ✅ |
-| 1b | Explore: home shelves, subject pills, subject pages ✅ |
-| 1c | Emotional search with the crisis intercept ✅ |
-| 1d | Healer, book, video, publisher and offering pages; saved items on the device ✅ |
-| 2 | Email-code sign-in, My Library sync, reviews, account deletion |
-| 3 | Push notifications |
-| 4 | Store readiness |
+| 0 | Skeleton, theme, native launch screen, intro |
+| 1a | One crisis phrase list for the website and the app |
+| 1b | Explore: shelves, subject pills, subject pages |
+| 1c | Emotional search, the crisis intercept first |
+| 1d | Teacher, book, video, publisher, offering and free-resource pages; saves on the phone |
+| 2 | Email-code sign-in, profile, My Library sync (every save a slug, migration 0012), self-serve account deletion (0013) |
+| 3a | Push notifications through Firebase Cloud Messaging only (0014) |
 
-## Not the website
+### A1–A3, onboarding and tailoring (builds 5–12)
 
-Changes here do not redeploy the website: `web/vercel.json` skips any build
-where nothing under `web/` changed (see `web/scripts/vercel-ignore-build.sh`).
+**Discover · Videos · Books.**
+- A floating pill of dark frosted glass. Discover is where the app opens.
+- Each tab keeps its own history.
+- One subject filter carries across all three tabs and the star.
+
+**The star's rules.**
+- **On a tab page** the star rests in the search bar. When the bar scrolls
+  away, it flies into the start of the sticky pill row (the pills fade
+  beneath it). Scrolling back, it flies back.
+- **On detail pages** the star sits at the foot of the page. Tapping it goes
+  home to the tab you came from, with the filter kept.
+- **Every page change** is a flight along the slipstream.
+- **There is only ever one star on screen** (`features/star/star_layer.dart`).
+- **First launch:**
+  - The star greets ("I am your guiding star") and flies into the search bar.
+  - A callout says "Tap me anytime to come home", with Got it or Don't show
+    me again.
+  - Onboarding follows.
+- **Later launches:** just the flight. After "Don't show me again", nothing.
+- **Reduce Motion:** no flights anywhere. The first launch still shows its
+  messages.
+- **Tier badges in shelf headings** (Superhero, Luminary, Local Hero) are
+  tappable every time. The star explains what the tier means, and a tap
+  anywhere closes it. Nothing appears on its own.
+- **Debug builds only:** "Replay intro" in Account replays the intro and
+  onboarding.
+
+**The header and the menu.**
+- **One row:** the search bar with the star (about 80% of the width), then a
+  menu button. They scroll away together; the star docks.
+- **The menu** is a right-side frosted drawer (`features/menu/app_menu.dart`).
+  It holds:
+  - Sign in (signed out only).
+  - My Library, with a count.
+  - Account and Notifications (signed in only).
+  - Tailor Spiritpedia.
+  - Share Spiritpedia.
+  - Terms, Privacy, Affiliate Disclosure and Contact (love@).
+
+**Search: two engines, scoped tabs, and Suggests.**
+- **The two engines.** Every box runs the feelings engine (`emotion_mappings`)
+  and the name-and-title search together, and shows both. A title that
+  contains a feeling word still shows ("September Astrology Forecast 2026").
+- **Scoped tabs.** Discover's box searches everything. The Videos and Books
+  boxes search their own kind, with an "Also found: …" line and a way to
+  search everywhere.
+- **Spiritpedia Suggests.** One video and one book, chosen by relevance (title
+  match, the feeling's subjects), with small bonuses for how many people saved
+  it (migration 0016) and for the person's More of subjects. A bonus never
+  beats a title match.
+
+**Channels kept apart from teachers.**
+- Rows in `healers` with `entity_type` `channel` or `app` never sit with
+  teachers. They have their own shelf, their own search group, and no tier
+  badge.
+- The website still mixes them (see `docs/website-followups.md`).
+
+**Reviews with report, block and ban** (migration 0015, App Store guideline 1.2).
+- **Report:** every review someone else wrote has a "⋯" menu with Report
+  review. It asks for a reason and an optional note, and saves a snapshot of
+  the review.
+- **Block:** the same menu has Block this reviewer, which hides all their
+  reviews from you everywhere. Blocked reviewers are listed in Account, where
+  you can unblock them.
+- **Ban:** a banned account can't post or edit reviews. Only the admin can
+  ban.
+
+**Dates on offerings.**
+- Retreats and dated courses show "18–20 Sep 2026" or "On now · until …".
+- An ended page says "This took place … — it has ended." and its
+  call-to-action goes quiet.
+- Retreat shelves are soonest first (`core/format/dates.dart`,
+  `shelf_rules.dart` → `soonestFirst`).
+
+**Explore More** has Free Resources, Courses & Programmes, Retreats & Live
+Events, Downloads & Audio, and Memberships. Books & Literature is left out:
+Books has its own tab.
+
+**Onboarding and Tailor Spiritpedia** (migrations 0017 and 0018).
+- **When onboarding appears:** once, straight after the first-launch intro.
+- **The question:** "What interests you most?" shows the five pillars as
+  Discover-style pills. Each opens into subject chips, with "All of [pillar]"
+  first.
+- **The buttons:** "Explore Spiritpedia →" and "Skip for now". A quiet
+  "Anything you'd rather not see?" opens the same picker in Never show mode.
+- **Afterwards:** "Tailor Spiritpedia" in Account and the menu is one screen
+  with More of and Never show.
+- **More of** ranks in three levels everywhere: the chosen subjects, then the
+  rest of their pillars, then everything else. Discover gets a For You shelf.
+- **Never show:** an item goes if any of its subjects is hidden. A teacher,
+  channel or publisher goes only if every subject they cover is hidden. A
+  search by name finds hidden things behind "You've hidden this subject. Show
+  anyway?"
+- **Storage:** saved on the phone at once. When signed in, also saved to the
+  account; the account wins if both have choices.
+- **The full rules are in `docs/personalisation.md`.** Change that file and
+  `data/shelf_rules.dart` together.
+
+**Push notifications.**
+- Firebase Cloud Messaging only. Firebase starts only after the person says
+  yes, and only when signed in.
+- The device token is registered with `register_push_token`.
+  `notification_preferences` holds General (on) and IAM affirmations (off,
+  for later).
+- The server sends through `web/utils/push.js`, using the Firebase service
+  account in Vercel.
+- The welcome notification is sent once per account by `/api/push/welcome`.
+
+**My Account.**
+- Email, with change email (two codes).
+- Account type.
+- Tailor Spiritpedia.
+- Notifications.
+- Blocked reviewers.
+- Sign out (clears the phone's saves and tailoring; the account keeps them).
+- Delete account (red, confirmed).
+
+**Already done: don't rebuild.** Website link previews: books and videos show
+their cover or thumbnail, title and description when shared, for example in
+WhatsApp.
+
+---
+
+## Key docs
+
+- **`docs/personalisation.md`**: exactly what More of and Never show change
+  on Discover, Videos, Books, the pills, search and Suggests, what is never
+  touched, and Discover's shelf order before and after.
+- **`docs/website-followups.md`**: website issues found while building the
+  app, unfixed. It covers channels mixed with teachers, memberships, search,
+  report and block on the website, and offering dates. It lives in `app/` so
+  that editing it doesn't redeploy the website.
+
+---
+
+## Migrations 0015–0018
+
+All four are **on dev and on live**, and each was verified after it ran.
+
+| File | What it does |
+| :--- | :--- |
+| `0015_review_moderation` | **Tables:** `review_reports` (each holds a snapshot of the review as reported), `user_blocks` and `review_bans`. **Functions:** `report_review()`, `block_review_author()` and `review_posting_banned()`. **Rules:** the public reviews read policy hides blocked reviewers from the person who blocked them, and the reviews trigger refuses banned accounts |
+| `0016_save_counts` | `save_counts(type, slugs)`: how many people saved each book or video, totals only and at most 200 slugs. Used by Suggests |
+| `0017_user_interests` | `user_interests`: one row per account, holding `subjects` (More of). Owner-only RLS, no signed-out access, deleted with the account. A trigger checks every slug against `public.subjects` and removes duplicates. A row means "has chosen", even if it's empty |
+| `0018_hidden_subjects` | Adds `hidden_subjects` (Never show) to the same row. The trigger now checks both lists and refuses a subject that is in both |
+
+Earlier migrations (0000–0014) are described in the root README.
+
+---
+
+## Admin: reported reviews
+
+- **`/admin/flags`** is the **Reports** page (`web/app/admin/flags/page.js`).
+  - **Tabs:** Open, Resolved, Dismissed and Banned reviewers.
+  - **Each report shows** the review as reported next to how it stands now,
+    the reason and note, who reported it, and how long it has waited. The
+    Terms promise a decision within 24 hours, so a report shows red after a
+    day.
+  - **Actions:** Take review down, Ban reviewer (takes all their reviews down
+    and resolves their open reports), Dismiss, Mark resolved and Lift ban.
+- **Open reports** also show in the admin Inbox and the overview stats.
+- **Every report** emails love@ at once (`/api/email/review-reported`,
+  `utils/email.js` → `sendReviewReported`).
+- **The Terms:** §7 has the no-tolerance line for abusive content. §14
+  describes self-serve deletion (app: Account → Delete account; website:
+  account page), with love@ as the fallback.
+
+---
+
+## Known issues and parked items
+
+- **Turning notifications off doesn't remove the device token.** The
+  preference saves as off, but the `push_tokens` row stays. Parked until the
+  final notifications pass.
+- **The welcome notification is sometimes not sent.** One test turned
+  notifications on, registered the token and saved General as on, but no
+  welcome was recorded. Parked with the item above.
+- **The welcome tray needs a redesign.** Parked.
+- **Firebase should move to love@.** Move the Firebase project to
+  love@spiritpedia.co before launch.
+- **Dev can't use custom email templates.** The dev Supabase project is on
+  the free plan, so its sign-in and change-email emails use Supabase's default
+  templates. On live, check that the Change Email Address template sends the
+  code (`{{ .Token }}`), as the app asks for a typed code.
+
+---
+
+## Next steps
+
+1. **The polish pass**, across the whole app, from testing build 12 on a
+   phone.
+2. **Phase B: iPad.** Today the app is iPhone only and portrait only.
+3. **The website follow-ups** in `docs/website-followups.md`, plus a public
+   "⋯" (report and block) on the website's reviews.
+4. **The before-launch list:**
+   - The notification issues above.
+   - The Firebase move.
+   - The welcome tray.
+   - Have the Terms and Privacy Policy reviewed (they're a careful draft, not
+     legal advice).
+   - App Store listing and screenshots.
+
+---
+
+## Ways of working that have held
+
+- **Plan first, then build after an OK.** A new migration is shown before
+  anyone runs it.
+- **Before every TestFlight upload:** run the tests and show the simulator.
+- **Website changes deploy live,** so their diff is shown before pushing. App
+  pushes don't deploy.
+- **Never print secrets.** Scripts read keys from the env files without
+  echoing them.
+- **Don't commit `web/AGENTS.md`.**
