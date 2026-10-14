@@ -95,6 +95,11 @@ abstract class AccountService {
   /// The welcome notification (POST /api/push/welcome) — once ever per
   /// account; the server decides, so calling it again does nothing.
   Future<void> sendWelcomePush();
+
+  /// The subjects the account chose (user_interests, migration 0017): null
+  /// if it never has, which is not the same as an empty choice.
+  Future<List<String>?> interests(String userId);
+  Future<void> saveInterests(String userId, List<String> subjectSlugs);
 }
 
 class AccountError implements Exception {
@@ -355,6 +360,28 @@ class SupabaseAccountService implements AccountService {
   @override
   Future<void> sendWelcomePush() async {
     await _post('/api/push/welcome');
+  }
+
+  @override
+  Future<List<String>?> interests(String userId) async {
+    final row = await _db
+        .from('user_interests')
+        .select('subjects')
+        .eq('user_id', userId)
+        .maybeSingle();
+    if (row == null) return null;
+    return [
+      for (final s in row['subjects'] as List? ?? const [])
+        if (s is String) s,
+    ];
+  }
+
+  @override
+  Future<void> saveInterests(String userId, List<String> subjectSlugs) async {
+    await _db.from('user_interests').upsert({
+      'user_id': userId,
+      'subjects': subjectSlugs,
+    });
   }
 
   @override

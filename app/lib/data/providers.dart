@@ -1,6 +1,7 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../core/supabase_providers.dart';
+import '../features/interests/interests.dart';
 import 'content_repository.dart';
 import 'models.dart';
 import 'shelf_rules.dart';
@@ -52,10 +53,10 @@ String subjectName(List<Subject>? subjects, String slug) {
 // ── Explore More ─────────────────────────────────────────────────────────────
 
 /// The on-demand sections, in the website's order (ExploreMore.jsx), then
-/// Memberships.
+/// Memberships. The website's "Books & Literature" is left out: the app has a
+/// Books tab of its own.
 enum ExploreSection {
   freeResources('Free Resources', 'No cost, no catch'),
-  books('Books & Literature', 'The curated archive'),
   courses('Courses & Programmes', 'Go deeper'),
   retreats('Retreats & Live Events', 'In person'),
   downloads('Downloads & Audio', 'Take it with you'),
@@ -99,8 +100,6 @@ final exploreSectionProvider =
       final (section, subject) = key;
       final repo = ref.watch(contentRepositoryProvider);
       switch (section) {
-        case ExploreSection.books:
-          return repo.books(subject: subject);
         case ExploreSection.freeResources:
           return repo.featuredFreeResources(subject: subject);
         case ExploreSection.courses:
@@ -143,14 +142,20 @@ final videoShelvesProvider = FutureProvider.family<List<VideoShelf>, String?>((
   subject,
 ) async {
   final repo = ref.watch(contentRepositoryProvider);
+  final chosen = ref.watch(interestSubjectsProvider);
 
   if (subject == null) {
+    // Someone's chosen interests: their pillars come first, and each shelf
+    // but New leads with what carries their subjects.
+    final pillars = pillarsByInterest(chosen, videoPillarOrder);
     final results = await Future.wait([
       repo.newestVideos(limit: 60),
-      for (final pillar in videoPillarOrder)
+      for (final pillar in pillars)
         repo.videoPool(subjects: subjectPillars[pillar]),
       repo.mixedVideos(),
     ]);
+    List<Video> boost(List<Video> pool) =>
+        interestFirst(pool, chosen, (v) => v.subjectSlugs);
     // As with Books: no video on two shelves, and each pillar leads with the
     // videos most about it.
     final shown = <Object>{};
@@ -169,23 +174,25 @@ final videoShelvesProvider = FutureProvider.family<List<VideoShelf>, String?>((
         subtitle: 'Just added',
         videos: take(results.first),
       ),
-      for (var i = 0; i < videoPillarOrder.length; i++)
+      for (var i = 0; i < pillars.length; i++)
         VideoShelf(
-          title: videoPillarOrder[i],
+          title: pillars[i],
           subtitle: 'Watch & learn',
           videos: take(
-            pillarCandidates(
-              results[i + 1],
-              videoPillarOrder[i],
-              subjects: (v) => v.subjectSlugs,
-              id: (v) => v.id,
+            boost(
+              pillarCandidates(
+                results[i + 1],
+                pillars[i],
+                subjects: (v) => v.subjectSlugs,
+                id: (v) => v.id,
+              ),
             ),
           ),
         ),
       VideoShelf(
         title: 'Watch & Learn',
         subtitle: 'A little of everything',
-        videos: take(results.last),
+        videos: take(boost(results.last)),
       ),
     ].where((s) => s.videos.isNotEmpty).toList();
   }
@@ -236,9 +243,14 @@ final bookShelvesProvider = FutureProvider.family<List<BookShelf>, String?>((
   subject,
 ) async {
   final repo = ref.watch(contentRepositoryProvider);
+  final chosen = ref.watch(interestSubjectsProvider);
   final all = await repo.books(subject: subject); // newest first
 
   if (subject == null) {
+    // As on Videos: chosen interests' pillars first, and each shelf but New
+    // leads with what carries the chosen subjects.
+    List<Book> boost(List<Book> pool) =>
+        interestFirst(pool, chosen, (b) => b.subjectSlugs);
     // Most books carry several subjects, so without care every shelf would
     // lead with the same newest books. No book appears on two shelves, and
     // each pillar leads with the books most about it.
@@ -255,17 +267,19 @@ final bookShelvesProvider = FutureProvider.family<List<BookShelf>, String?>((
         subtitle: 'Just added',
         books: take(all),
       ),
-      for (final pillar in videoPillarOrder)
+      for (final pillar in pillarsByInterest(chosen, videoPillarOrder))
         BookShelf(
           title: pillar,
           subtitle: 'Read & reflect',
           books: take(
-            pillarCandidates(
-              all,
-              pillar,
-              subjects: (b) => b.subjectSlugs,
-              id: (b) => b.id,
-              shown: shown,
+            boost(
+              pillarCandidates(
+                all,
+                pillar,
+                subjects: (b) => b.subjectSlugs,
+                id: (b) => b.id,
+                shown: shown,
+              ),
             ),
           ),
         ),
@@ -276,10 +290,12 @@ final bookShelvesProvider = FutureProvider.family<List<BookShelf>, String?>((
         title: 'From the Library',
         subtitle: 'A little of everything',
         books: take(
-          spreadOut([
-            for (final b in all)
-              if (!shown.contains(b.id)) b,
-          ]),
+          boost(
+            spreadOut([
+              for (final b in all)
+                if (!shown.contains(b.id)) b,
+            ]),
+          ),
         ),
       ),
     ].where((s) => s.books.isNotEmpty).toList();

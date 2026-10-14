@@ -8,7 +8,7 @@ import '../../shared/widgets/cards.dart';
 import '../../shared/widgets/shelf.dart';
 import '../../theme/colors.dart';
 
-/// Explore More (ExploreMore.jsx): five sections fetched only when the visitor
+/// Explore More (ExploreMore.jsx): its sections fetched only when the visitor
 /// asks for them. Opened sections appear as shelves, in the order opened; the
 /// rest stay as tiles underneath.
 class ExploreMore extends ConsumerWidget {
@@ -155,16 +155,14 @@ class _SectionShelf extends ConsumerWidget {
             message: 'Nothing here yet for this subject.',
           );
         }
-        final isBooks = section == ExploreSection.books;
         return Shelf(
           title: section.label,
           subtitle: section.subtitle,
           itemCount: items.length,
-          itemWidth: isBooks ? 140 : 250,
-          height: isBooks ? 262 : 300,
+          itemWidth: 250,
+          height: 300,
           onSeeAll: seeAll,
           itemBuilder: (context, i) => switch (items[i]) {
-            final Book b => BookCard(book: b),
             final FreeResource r => FreeResourceCard(
               resource: r,
               healerName: directory?.byId(r.healerId)?.name,

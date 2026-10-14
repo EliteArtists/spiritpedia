@@ -11,6 +11,7 @@ import '../../data/providers.dart';
 import '../../shared/widgets/cards.dart';
 import '../../shared/widgets/net_image.dart';
 import '../../theme/colors.dart';
+import '../interests/interests.dart';
 import '../star/star_layer.dart';
 import '../star/star_page.dart';
 import '../star/slipstream.dart';
@@ -113,6 +114,7 @@ class _SearchState extends ConsumerState<_Search> {
     repository: widget.repository,
     plain: ref.read(contentSearchProvider),
     scope: widget.scope,
+    interests: () => mounted ? ref.read(interestSubjectsProvider) : const {},
   )..addListener(_changed);
 
   /// "See all": which group, and its fuller list.

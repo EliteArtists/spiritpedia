@@ -25,7 +25,11 @@ class EmotionSearchController extends ChangeNotifier {
     ContentSearch? plain,
     this.scope = SearchScope.all,
     this.debounce = const Duration(milliseconds: 300),
-  }) : plain = plain ?? UniversalContentSearch(repository);
+    Set<String> Function()? interests,
+  }) : plain = plain ?? UniversalContentSearch(repository),
+       interests = interests ?? _noInterests;
+
+  static Set<String> _noInterests() => const {};
 
   final EmotionSafety safety;
 
@@ -38,6 +42,9 @@ class EmotionSearchController extends ChangeNotifier {
   /// Which box this is: Discover (everything), Videos or Books.
   final SearchScope scope;
   final Duration debounce;
+
+  /// The subjects the person chose — a small boost in Spiritpedia Suggests.
+  final Set<String> Function() interests;
 
   /// Matches shown per group before "See all".
   int get perKind => scope == SearchScope.all ? 3 : 12;
@@ -255,6 +262,7 @@ class EmotionSearchController extends ChangeNotifier {
         books: books,
         videoSaves: videoSaves,
         bookSaves: bookSaves,
+        interests: interests(),
       );
 
       _softTier = safety.checkSoftTier(normalised) ? safety.softTierLine : null;

@@ -17,6 +17,7 @@ class FakeAccountService implements AccountService {
       <String, List<FavouriteRow>>{}; // user id → newest first
   final deletedUsers = <String>{};
   AccountUser? _current;
+  final interestsByUser = <String, List<String>>{};
   bool failDelete = false;
   bool offline = false;
 
@@ -118,6 +119,7 @@ class FakeAccountService implements AccountService {
     deletedUsers.add(id);
     profiles.remove(id);
     favouriteRows.remove(id);
+    interestsByUser.remove(id);
   }
 
   void _check() {
@@ -183,5 +185,19 @@ class FakeAccountService implements AccountService {
   Future<void> sendWelcomePush() async {
     calls.add('sendWelcomePush');
     welcomeCalls++;
+  }
+
+  @override
+  Future<List<String>?> interests(String userId) async {
+    if (offline) throw const AccountError('offline');
+    final v = interestsByUser[userId];
+    return v == null ? null : [...v];
+  }
+
+  @override
+  Future<void> saveInterests(String userId, List<String> subjectSlugs) async {
+    if (offline) throw const AccountError('offline');
+    calls.add('saveInterests:${subjectSlugs.join(',')}');
+    interestsByUser[userId] = [...subjectSlugs];
   }
 }

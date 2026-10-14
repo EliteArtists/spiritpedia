@@ -8,7 +8,10 @@ import '../../core/config.dart';
 import '../../core/links/open_link.dart';
 import '../../core/links/share.dart';
 import '../../theme/colors.dart';
+import '../../data/providers.dart';
 import '../account/account_providers.dart';
+import '../interests/interests.dart';
+import '../interests/interests_picker.dart';
 import '../library/saved_items.dart';
 
 const _supportEmail = 'love@spiritpedia.co';
@@ -63,6 +66,10 @@ class AppMenu extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     final account = ref.watch(accountProvider);
     final saved = savedCount(ref.watch(savedItemsProvider));
+    final interests = interestsSummary(
+      ref.watch(interestsProvider).subjects,
+      ref.watch(subjectsProvider).value,
+    );
     final width = (MediaQuery.sizeOf(context).width * 0.84).clamp(0.0, 340.0);
     final router = GoRouter.of(context);
 
@@ -111,6 +118,13 @@ class AppMenu extends ConsumerWidget {
         ),
       ],
       _Item(
+        key: const ValueKey('menu-interests'),
+        icon: Icons.tune_rounded,
+        label: 'Your interests',
+        detail: interests ?? 'Choose what you see first',
+        onTap: () => go('/interests'),
+      ),
+      _Item(
         key: const ValueKey('menu-share'),
         icon: Icons.ios_share_rounded,
         label: 'Share Spiritpedia',
@@ -128,6 +142,13 @@ class AppMenu extends ConsumerWidget {
         label: 'Privacy Policy',
         quiet: true,
         onTap: () => open('${AppConfig.siteUrl}/privacy'),
+      ),
+      _Item(
+        key: const ValueKey('menu-affiliate'),
+        icon: Icons.handshake_outlined,
+        label: 'Affiliate Disclosure',
+        quiet: true,
+        onTap: () => open('${AppConfig.siteUrl}/affiliate-disclosure'),
       ),
       _Item(
         icon: Icons.mail_outline_rounded,

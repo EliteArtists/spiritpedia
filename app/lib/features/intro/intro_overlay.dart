@@ -6,7 +6,9 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import 'package:shared_preferences/shared_preferences.dart';
 
+import '../../data/providers.dart';
 import '../../theme/colors.dart';
+import '../interests/interests_picker.dart';
 import '../star/slipstream.dart';
 import '../star/star_layer.dart';
 
@@ -99,8 +101,8 @@ class IntroReplay extends Notifier<int> {
 
 final introReplayProvider = NotifierProvider<IntroReplay, int>(IntroReplay.new);
 
-/// Everything a first launch shows, shown again: the intro now (and, once
-/// it exists, the onboarding). Debug builds only.
+/// Everything a first launch shows, shown again: the intro, then the
+/// onboarding ("What interests you most?"). Debug builds only.
 ///
 /// Reads what it needs at once, so the screen that called it (Account) may
 /// close straight away — a widget's ref is unusable once it has gone.
@@ -111,7 +113,7 @@ Future<void> replayFirstLaunch(WidgetRef ref) async {
   replay.bump();
 }
 
-enum _Phase { waiting, greeting, flying, callout, done }
+enum _Phase { waiting, greeting, flying, callout, onboarding, done }
 
 /// The opening, played over the real home screen, which is already built
 /// underneath and is revealed as the star arrives in its search box.
@@ -120,6 +122,9 @@ enum _Phase { waiting, greeting, flying, callout, done }
 /// launch screen left it — glows, "I am your guiding star"; it flies along
 /// the slipstream into Home's search box as the dark veil lifts; then "Tap me
 /// anytime to come home", with "Got it" and "Don't show me again".
+///
+/// Then, on the first launch only, the onboarding: "What interests you
+/// most?" — never on a later launch.
 ///
 /// Later launches (about 1 s): just the flight. After "Don't show me again":
 /// nothing. With Reduce Motion there is no flight: the first launch still
@@ -254,6 +259,14 @@ class _IntroOverlayState extends ConsumerState<IntroOverlay>
 
   Future<void> _dismiss({required bool off}) async {
     unawaited(ref.read(introPrefsProvider).markSeen(off: off));
+    // Only a first launch gets here (the callout is the full intro's), so
+    // the onboarding follows it once — and never a later launch.
+    if (mounted) setState(() => _phase = _Phase.onboarding);
+  }
+
+  /// Onboarding done or skipped: Discover, View All, nothing filtered.
+  void _onboarded() {
+    ref.read(subjectFilterProvider.notifier).select(null);
     _finish();
   }
 
@@ -285,7 +298,25 @@ class _IntroOverlayState extends ConsumerState<IntroOverlay>
       fit: StackFit.expand,
       children: [
         widget.child,
-        if (_phase == _Phase.callout)
+        if (_phase == _Phase.onboarding)
+          Positioned.fill(
+            child: TweenAnimationBuilder<double>(
+              tween: Tween(begin: 0, end: 1),
+              duration: _still
+                  ? Duration.zero
+                  : const Duration(milliseconds: 380),
+              curve: Curves.easeOut,
+              builder: (context, t, child) => Opacity(
+                opacity: t,
+                child: Transform.translate(
+                  offset: Offset(0, 16 * (1 - t)),
+                  child: child,
+                ),
+              ),
+              child: OnboardingScreen(onDone: _onboarded),
+            ),
+          )
+        else if (_phase == _Phase.callout)
           _Callout(
             star: _homeRect(MediaQuery.sizeOf(context)),
             onGotIt: () => _dismiss(off: false),

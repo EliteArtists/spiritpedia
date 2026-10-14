@@ -3,6 +3,7 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:spiritpedia/data/models.dart';
 import 'package:spiritpedia/data/providers.dart';
 import 'package:spiritpedia/data/shelf_rules.dart';
+import 'package:spiritpedia/features/interests/interests.dart';
 
 import '../support/fake_content.dart';
 
@@ -89,5 +90,38 @@ void main() {
     expect(pillarFit(['yoga', 'ayurveda'], 'Body & Energy'), 1.0);
     expect(pillarFit(['yoga', 'meditation'], 'Body & Energy'), 0.5);
     expect(pillarFit(const [], 'Body & Energy'), 0);
+  });
+
+  test('chosen interests: their pillar first, their books leading — New '
+      'stays newest', () async {
+    final container = ProviderContainer(
+      overrides: [
+        contentRepositoryProvider.overrideWithValue(_ManyBooks()),
+        interestsStoreProvider.overrideWithValue(
+          MemoryInterestsStore(
+            const Interests(subjects: ['yoga'], chosen: true),
+          ),
+        ),
+      ],
+    );
+    addTearDown(container.dispose);
+    container.read(interestsProvider);
+    await Future<void>.delayed(Duration.zero);
+    final unchosen = ProviderContainer(
+      overrides: [contentRepositoryProvider.overrideWithValue(_ManyBooks())],
+    );
+    addTearDown(unchosen.dispose);
+    final plain = await unchosen.read(bookShelvesProvider(null).future);
+    final shelves = await container.read(bookShelvesProvider(null).future);
+
+    expect(shelves.first.title, 'New to Spiritpedia');
+    expect(
+      [for (final b in shelves.first.books) b.id],
+      [for (final b in plain.first.books) b.id],
+    );
+    expect(shelves[1].title, 'Body & Energy');
+    expect(shelves[1].books.first.subjectSlugs, contains('yoga'));
+    // Every pillar is still there: shaped, never narrowed.
+    expect(shelves.length, plain.length);
   });
 }

@@ -6,8 +6,11 @@ import 'package:go_router/go_router.dart';
 
 import '../../core/config.dart';
 import '../../core/links/open_link.dart';
+import '../../data/providers.dart';
 import '../../theme/colors.dart';
 import '../detail/detail_widgets.dart';
+import '../interests/interests.dart';
+import '../interests/interests_picker.dart';
 import '../intro/intro_overlay.dart';
 import '../notifications/notifications_section.dart';
 import '../reviews/reviews_providers.dart';
@@ -76,8 +79,11 @@ class _AccountScreenState extends ConsumerState<AccountScreen> {
             const SizedBox(height: 20),
             if (account.signedIn)
               _SignedIn(account: account, notificationsKey: _notifications)
-            else
+            else ...[
               const SignInForm(),
+              const SizedBox(height: 28),
+              const YourInterestsCard(),
+            ],
             const SizedBox(height: 36),
             const _Links(),
             // Never in a release build — TestFlight and the App Store.
@@ -430,6 +436,8 @@ class _SignedInState extends ConsumerState<_SignedIn> {
           ),
         ),
         const SizedBox(height: 22),
+        const YourInterestsCard(),
+        const SizedBox(height: 22),
         KeyedSubtree(
           key: widget.notificationsKey,
           child: const NotificationsSection(),
@@ -470,6 +478,44 @@ class _SignedInState extends ConsumerState<_SignedIn> {
         const SizedBox(height: 14),
         _DeleteAccount(hasListing: profile?.linkedHealerSlug != null),
       ],
+    );
+  }
+}
+
+/// "Your interests": what was chosen at onboarding, and the way back into
+/// the same picker. Signed in or out — the choice works either way.
+class YourInterestsCard extends ConsumerWidget {
+  const YourInterestsCard({super.key});
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    final summary = interestsSummary(
+      ref.watch(interestsProvider).subjects,
+      ref.watch(subjectsProvider).value,
+    );
+    return _Card(
+      padding: EdgeInsets.zero,
+      child: ListTile(
+        key: const ValueKey('account-interests'),
+        onTap: () => context.push('/interests'),
+        contentPadding: const EdgeInsets.fromLTRB(18, 6, 12, 6),
+        leading: const Icon(Icons.tune_rounded, color: SpColors.link),
+        minLeadingWidth: 24,
+        title: const Text(
+          'Your interests',
+          style: TextStyle(fontSize: 15, fontWeight: FontWeight.w600),
+        ),
+        subtitle: Text(
+          summary ?? 'Choose the subjects you see first',
+          maxLines: 1,
+          overflow: TextOverflow.ellipsis,
+          style: const TextStyle(fontSize: 13, color: SpColors.textMuted),
+        ),
+        trailing: const Icon(
+          Icons.chevron_right_rounded,
+          color: SpColors.textMuted,
+        ),
+      ),
     );
   }
 }

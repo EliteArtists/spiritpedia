@@ -5,11 +5,13 @@ import '../../data/models.dart';
 import '../../data/providers.dart';
 import '../../data/shelf_rules.dart';
 import '../../theme/colors.dart';
+import '../interests/interests.dart';
 import '../shell/tab_bar_state.dart';
 
-/// "View All" and the five pillars, as one horizontally scrolling row. Tapping
-/// a pillar opens its subjects in a sheet — the website's hover panel, as a
-/// phone would show it. The chosen subject narrows the whole screen.
+/// "View All" and the five pillars, as one horizontally scrolling row — the
+/// pillars holding someone's chosen interests first. Tapping a pillar opens
+/// its subjects in a sheet — the website's hover panel, as a phone would show
+/// it. The chosen subject narrows the whole screen.
 class SubjectPillRow extends ConsumerWidget {
   const SubjectPillRow({
     super.key,
@@ -28,6 +30,7 @@ class SubjectPillRow extends ConsumerWidget {
     final current = ref.watch(filter);
     final subjects = ref.watch(subjectsProvider).value ?? const <Subject>[];
     final activePillar = pillarOf(current);
+    final pillars = pillarsByInterest(ref.watch(interestSubjectsProvider));
 
     return SizedBox(
       height: 42,
@@ -40,7 +43,7 @@ class SubjectPillRow extends ConsumerWidget {
             active: current == null,
             onTap: () => ref.read(filter.notifier).select(null),
           ),
-          for (final pillar in subjectPillars.keys)
+          for (final pillar in pillars)
             _Pill(
               label: pillar,
               active: activePillar == pillar,

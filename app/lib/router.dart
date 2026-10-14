@@ -9,6 +9,7 @@ import 'features/detail/publisher_screen.dart';
 import 'features/detail/teacher_screen.dart';
 import 'features/detail/video_screen.dart';
 import 'features/home/home_screen.dart';
+import 'features/interests/interests_picker.dart';
 import 'features/library/library_screen.dart';
 import 'features/search/content_search.dart';
 import 'features/search/search_screen.dart';
@@ -75,6 +76,11 @@ GoRouter buildRouter({
       path: '/account',
       builder: (context, state) =>
           AccountScreen(show: state.uri.queryParameters['show']),
+    ),
+    GoRoute(
+      parentNavigatorKey: _rootKey,
+      path: '/interests',
+      builder: (context, state) => const InterestsScreen(),
     ),
     GoRoute(
       parentNavigatorKey: _rootKey,

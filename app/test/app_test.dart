@@ -9,6 +9,8 @@ import 'package:spiritpedia/core/retry.dart';
 import 'package:spiritpedia/core/safety/emotion_safety.dart';
 import 'package:spiritpedia/data/providers.dart';
 import 'package:spiritpedia/features/account/account_providers.dart';
+import 'package:spiritpedia/features/home/subject_pills.dart';
+import 'package:spiritpedia/features/interests/interests.dart';
 import 'package:spiritpedia/features/library/saved_items.dart';
 import 'package:spiritpedia/features/notifications/notifications_controller.dart';
 import 'package:spiritpedia/features/notifications/push_messaging.dart';
@@ -20,6 +22,7 @@ import 'package:spiritpedia/features/search/search_repository.dart';
 import 'package:spiritpedia/features/search/search_screen.dart';
 import 'package:spiritpedia/features/reviews/reviews_providers.dart';
 import 'package:spiritpedia/shared/widgets/cards.dart';
+import 'package:spiritpedia/shared/widgets/shelf.dart';
 
 import 'support/fake_account.dart';
 import 'support/fake_content.dart';
@@ -48,6 +51,7 @@ Widget _app({
   bool fail = false,
   FakePushMessaging? push,
   FakeAccountService? account,
+  MemoryInterestsStore? interests,
 }) => ProviderScope(
   retry: spiritpediaRetry,
   overrides: [
@@ -58,6 +62,9 @@ Widget _app({
       FakeContentRepository(fail: fail),
     ),
     savedStoreProvider.overrideWithValue(MemorySavedStore()),
+    interestsStoreProvider.overrideWithValue(
+      interests ?? MemoryInterestsStore(),
+    ),
     searchRepositoryProvider.overrideWithValue(_NoSearch()),
     // The crisis phrases, read straight from the shared file: an asset load
     // completes only in a file's first test.
@@ -66,6 +73,17 @@ Widget _app({
   ],
   child: const SpiritpediaApp(playIntro: false),
 );
+
+/// The pill row's labels, in order (as far as it is built).
+List<String> _pills(WidgetTester tester) => [
+  for (final t in tester.widgetList<Text>(
+    find.descendant(
+      of: find.byType(SubjectPillRow).first,
+      matching: find.byType(Text),
+    ),
+  ))
+    t.data ?? '',
+];
 
 void main() {
   // A phone-width screen, tall enough that the shelves under the billboard are
@@ -189,14 +207,20 @@ void main() {
       );
       expect(find.byKey(const ValueKey('menu-account')), findsNothing);
       for (final label in [
+        'Your interests',
         'Share Spiritpedia',
         'Terms of Use',
         'Privacy Policy',
+        'Affiliate Disclosure',
         'Contact',
         'love@spiritpedia.co',
       ]) {
         expect(find.text(label), findsOneWidget, reason: label);
       }
+      // Affiliate Disclosure beside Terms and Privacy.
+      double y(String label) => tester.getTopLeft(find.text(label)).dy;
+      expect(y('Privacy Policy'), lessThan(y('Affiliate Disclosure')));
+      expect(y('Affiliate Disclosure'), lessThan(y('Contact')));
       await tester.tap(signIn);
       await tester.pumpAndSettle();
       expect(menu, findsNothing);
@@ -244,12 +268,101 @@ void main() {
       },
     );
 
+    testWidgets('"Your interests" opens the picker; saving shows in the menu', (
+      tester,
+    ) async {
+      final interests = MemoryInterestsStore();
+      await tester.pumpWidget(_app(interests: interests));
+      await tester.pump();
+      await tester.pump(const Duration(milliseconds: 100));
+      await openMenu(tester);
+      expect(find.text('Choose what you see first'), findsOneWidget);
+      await tester.tap(find.byKey(const ValueKey('menu-interests')));
+      await tester.pumpAndSettle();
+      expect(find.text('What interests you most?'), findsOneWidget);
+      await tester.tap(find.text('Consciousness'));
+      await tester.pumpAndSettle();
+      await tester.tap(find.text('Meditation'));
+      await tester.pump();
+      await tester.tap(find.byKey(const ValueKey('interests-save')));
+      await tester.pumpAndSettle();
+      expect(interests.value.subjects, ['meditation']);
+      expect(find.text('Your interests are saved'), findsOneWidget);
+
+      await openMenu(tester);
+      expect(
+        find.descendant(
+          of: find.byKey(const ValueKey('menu-interests')),
+          matching: find.text('Meditation'),
+        ),
+        findsOneWidget,
+      );
+    });
+
     testWidgets('a swipe to the right puts the menu away', (tester) async {
       await start(tester);
       await openMenu(tester);
       await tester.fling(menu, const Offset(300, 0), 1200);
       await tester.pumpAndSettle();
       expect(menu, findsNothing);
+    });
+  });
+
+  group('chosen interests shape the app, never lock it', () {
+    testWidgets('none chosen: no For You shelf, the pills in their order', (
+      tester,
+    ) async {
+      await start(tester);
+      expect(find.text('For You'), findsNothing);
+      expect(_pills(tester).take(2), ['View All', 'Emotional Healing']);
+    });
+
+    testWidgets('chosen: For You leads Discover with their teachers, and '
+        'their pillars lead the pills', (tester) async {
+      await tester.pumpWidget(
+        _app(
+          interests: MemoryInterestsStore(
+            const Interests(subjects: ['consciousness'], chosen: true),
+          ),
+        ),
+      );
+      await tester.pump();
+      await tester.pump(const Duration(milliseconds: 100));
+      final forYou = find.ancestor(
+        of: find.text('For You'),
+        matching: find.byType(Shelf),
+      );
+      expect(forYou, findsOneWidget);
+      expect(
+        find.descendant(of: forYou, matching: find.text('Eckhart Tolle')),
+        findsWidgets,
+      );
+      expect(
+        find.descendant(of: forYou, matching: find.text('Wim Hof')),
+        findsNothing,
+      );
+      // Above everything else.
+      expect(
+        tester.getTopLeft(find.text('For You')).dy,
+        lessThan(tester.getTopLeft(find.text('Worldwide')).dy),
+      );
+      expect(_pills(tester).take(2), ['View All', 'Consciousness']);
+      // Nothing is filtered: every shelf is still there.
+      expect(find.text('Worldwide'), findsOneWidget);
+      expect(find.text('Wim Hof'), findsWidgets);
+    });
+
+    testWidgets('Explore More has no Books & Literature: Books has its tab', (
+      tester,
+    ) async {
+      await start(tester);
+      await tester.scrollUntilVisible(
+        find.text('Free Resources'),
+        300,
+        scrollable: find.byType(Scrollable).first,
+      );
+      expect(find.text('Free Resources'), findsOneWidget);
+      expect(find.text('Books & Literature'), findsNothing);
     });
   });
 

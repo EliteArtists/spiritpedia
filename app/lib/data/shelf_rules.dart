@@ -301,3 +301,58 @@ List<T> pillarCandidates<T>(
   });
   return [for (final (item, _, _) in scored) item];
 }
+
+/// The ranking boost for someone's chosen subjects (onboarding, Account →
+/// Your interests): items carrying more of [chosen] move ahead, everything
+/// else keeps [items]' order. Nothing is removed, so it shapes a shelf
+/// without narrowing it. No choice, no change.
+List<T> interestFirst<T>(
+  List<T> items,
+  Set<String> chosen,
+  List<String> Function(T) subjects,
+) {
+  if (chosen.isEmpty) return items;
+  final scored = [
+    for (final (i, item) in items.indexed)
+      (item, subjects(item).where(chosen.contains).length, i),
+  ];
+  scored.sort((a, b) {
+    final c = b.$2.compareTo(a.$2);
+    return c != 0 ? c : a.$3.compareTo(b.$3);
+  });
+  return [for (final (item, _, _) in scored) item];
+}
+
+/// Discover's "For You": what carries any of [chosen], most chosen subjects
+/// first, at most [size].
+List<T> forYou<T>(
+  List<T> items,
+  Set<String> chosen,
+  List<String> Function(T) subjects, {
+  int size = videoShelfSize,
+}) {
+  if (chosen.isEmpty) return const [];
+  return interestFirst(
+    [
+      for (final item in items)
+        if (subjects(item).any(chosen.contains)) item,
+    ],
+    chosen,
+    subjects,
+  ).take(size).toList();
+}
+
+/// [pillars] (default: the pill row's order) with those holding a chosen
+/// subject first, most chosen subjects first; the rest keep their order.
+List<String> pillarsByInterest(Set<String> chosen, [List<String>? pillars]) {
+  final order = pillars ?? subjectPillars.keys.toList();
+  if (chosen.isEmpty) return order;
+  int hits(String p) =>
+      (subjectPillars[p] ?? const []).where(chosen.contains).length;
+  final indexed = [...order.indexed];
+  indexed.sort((a, b) {
+    final c = hits(b.$2).compareTo(hits(a.$2));
+    return c != 0 ? c : a.$1.compareTo(b.$1);
+  });
+  return [for (final (_, p) in indexed) p];
+}

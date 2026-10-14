@@ -9,6 +9,7 @@ import '../../data/shelf_rules.dart';
 import '../../shared/widgets/cards.dart';
 import '../../shared/widgets/shelf.dart';
 import '../../theme/colors.dart';
+import '../interests/interests.dart';
 import '../star/star_page.dart';
 import '../star/tier_tips.dart';
 import 'billboard.dart';
@@ -16,7 +17,8 @@ import 'explore_more.dart';
 
 /// Home — mirrors the website's homepage (HomePageContent.js): the feeling
 /// question, the subject pills, the billboard, the healer and publisher
-/// shelves, and Explore More. The chosen subject narrows all of it. The frame
+/// shelves, and Explore More; and, for someone who chose interests, a For You
+/// shelf first. The chosen subject narrows all of it. The frame
 /// (top bar, star search box, sticky pills) is the shared [StarPage].
 class HomeScreen extends ConsumerWidget {
   const HomeScreen({super.key});
@@ -24,6 +26,11 @@ class HomeScreen extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final subject = ref.watch(subjectFilterProvider);
+    // Chosen interests shape View All — a For You shelf, and each shelf
+    // leading with them — and never a chosen subject, which is narrow already.
+    final chosen = subject == null
+        ? ref.watch(interestSubjectsProvider)
+        : const <String>{};
     final healers = ref.watch(healersProvider);
     final publishers =
         ref.watch(publishersProvider).value ?? const <Publisher>[];
@@ -46,7 +53,19 @@ class HomeScreen extends ConsumerWidget {
           ],
           data: (all) {
             final shelves = HealerShelves(
-              bySubject(all, subject, (h) => h.subjectSlugs),
+              interestFirst(
+                bySubject(all, subject, (h) => h.subjectSlugs),
+                chosen,
+                (h) => h.subjectSlugs,
+              ),
+            );
+            final forYouHealers = forYou(
+              [
+                for (final h in all)
+                  if (!h.isPlatform) h,
+              ],
+              chosen,
+              (h) => h.subjectSlugs,
             );
             final seeAll = subject == null
                 ? null
@@ -74,6 +93,14 @@ class HomeScreen extends ConsumerWidget {
                   HealerCard(healer: items[i], subjectSlug: subject),
             );
             return [
+              if (forYouHealers.isNotEmpty)
+                SliverToBoxAdapter(
+                  child: healerShelf(
+                    'For You',
+                    forYouHealers,
+                    subtitle: 'From the subjects you chose',
+                  ),
+                ),
               SliverToBoxAdapter(
                 child: Billboard(
                   key: ValueKey(subject),
