@@ -8,8 +8,9 @@ import CookieSettingsLink from '@/components/CookieSettingsLink';
 // embed — change this page in the same commit.
 // Its own date, separate from the Terms (LAST_UPDATED in LegalPage), because
 // the two now change independently. Updated for self-serve account deletion,
-// synced saved items, and app notifications (Firebase Cloud Messaging).
-const PRIVACY_UPDATED = '10 October 2026';
+// synced saved items, app notifications (Firebase Cloud Messaging), and the
+// subjects chosen and hidden in the app (explicit consent).
+const PRIVACY_UPDATED = '14 October 2026';
 
 export const metadata = buildMetadata({
   title: 'Privacy Policy',
@@ -101,6 +102,25 @@ export default function PrivacyPage() {
           </li>
         </List>
 
+        <Sub>If you tailor Spiritpedia</Sub>
+        <List>
+          <li>
+            In the app you can choose subjects you&apos;d like to see more of (for example,
+            meditation or shadow work), and subjects you&apos;d rather not see at all (for example,
+            shamanism). Both are optional — you can skip them.
+          </li>
+          <li>
+            Your choices are kept on your phone. If you&apos;re signed in, they are also stored with
+            your account so they follow you to another device; if you choose before signing in,
+            they are added to your account when you sign in.
+          </li>
+          <li>
+            We use them only to tailor what you see in Spiritpedia — a &ldquo;For You&rdquo; shelf,
+            the order of subjects, which books, videos and offerings come first, and what is left
+            out. They are never shown to anyone else, shared, or used for advertising.
+          </li>
+        </List>
+
         <Sub>When you apply or are listed as a practitioner</Sub>
         <List>
           <li>
@@ -139,6 +159,10 @@ export default function PrivacyPage() {
             ],
             ['Analytics to understand how Spiritpedia is used', 'Your consent, through the cookie banner'],
             ['Send app notifications you have chosen to receive', 'Your consent, which you can withdraw at any time'],
+            [
+              'Tailor what you see, and hide what you\'d rather not see, from the subjects you chose',
+              'Your explicit consent — choosing is optional, and you can change or clear your choices at any time',
+            ],
             [
               'Feature established teachers and invite them to claim their profile',
               'Our legitimate interest in building a useful directory — balanced against your rights, and you can object at any time',
@@ -220,6 +244,10 @@ export default function PrivacyPage() {
             Notification tokens — until you turn notifications off, sign out of the app, delete your
             account, or the token stops working (for example, after the app is removed). Your
             notification choices are kept with your account until you delete it.
+          </li>
+          <li>
+            Your chosen and hidden subjects — until you change or clear them (Account → Tailor
+            Spiritpedia in the app) or delete your account.
           </li>
           <li>
             If you deleted an account linked to a public teacher profile, the profile stays on
