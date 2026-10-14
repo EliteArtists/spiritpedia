@@ -302,29 +302,60 @@ List<T> pillarCandidates<T>(
   return [for (final (item, _, _) in scored) item];
 }
 
-/// The ranking boost for someone's chosen subjects (onboarding, Account →
-/// Your interests): items carrying more of [chosen] move ahead, everything
-/// else keeps [items]' order. Nothing is removed, so it shapes a shelf
-/// without narrowing it. No choice, no change.
-List<T> interestFirst<T>(
+// ── Tailoring (docs/personalisation.md) ─────────────────────────────────────
+// "More of" ranks in three levels; "Never show" hides. Change the doc with
+// these.
+
+/// The subjects sharing a pillar with any of [chosen], [chosen] left out:
+/// level 2 of the ranking.
+Set<String> pillarMates(Set<String> chosen) => {
+  for (final slugs in subjectPillars.values)
+    if (slugs.any(chosen.contains))
+      for (final s in slugs)
+        if (!chosen.contains(s)) s,
+};
+
+/// Where an item ranks for someone who chose [chosen]: 0 if it carries a
+/// chosen subject, 1 if it carries another subject of the same pillar
+/// ([mates], from [pillarMates]), 2 otherwise.
+int interestLevel(
+  List<String> subjects,
+  Set<String> chosen, [
+  Set<String>? mates,
+]) {
+  if (subjects.any(chosen.contains)) return 0;
+  if (subjects.any((mates ?? pillarMates(chosen)).contains)) return 1;
+  return 2;
+}
+
+/// The "More of" ranking: [chosen] subjects first (those carrying more of
+/// them first), then the rest of their pillars, then everything else — each
+/// level in [items]' own order. Nothing is removed. No choice, no change.
+List<T> byInterest<T>(
   List<T> items,
   Set<String> chosen,
   List<String> Function(T) subjects,
 ) {
   if (chosen.isEmpty) return items;
+  final mates = pillarMates(chosen);
   final scored = [
     for (final (i, item) in items.indexed)
-      (item, subjects(item).where(chosen.contains).length, i),
+      (
+        item,
+        interestLevel(subjects(item), chosen, mates),
+        subjects(item).where(chosen.contains).length,
+        i,
+      ),
   ];
   scored.sort((a, b) {
-    final c = b.$2.compareTo(a.$2);
-    return c != 0 ? c : a.$3.compareTo(b.$3);
+    if (a.$2 != b.$2) return a.$2.compareTo(b.$2);
+    if (a.$3 != b.$3) return b.$3.compareTo(a.$3);
+    return a.$4.compareTo(b.$4);
   });
-  return [for (final (item, _, _) in scored) item];
+  return [for (final (item, _, _, _) in scored) item];
 }
 
-/// Discover's "For You": what carries any of [chosen], most chosen subjects
-/// first, at most [size].
+/// Discover's "For You": levels 1 and 2 of [byInterest], at most [size].
 List<T> forYou<T>(
   List<T> items,
   Set<String> chosen,
@@ -332,20 +363,83 @@ List<T> forYou<T>(
   int size = videoShelfSize,
 }) {
   if (chosen.isEmpty) return const [];
-  return interestFirst(
+  final mates = pillarMates(chosen);
+  return byInterest(
     [
       for (final item in items)
-        if (subjects(item).any(chosen.contains)) item,
+        if (interestLevel(subjects(item), chosen, mates) < 2) item,
     ],
     chosen,
     subjects,
   ).take(size).toList();
 }
 
+/// "Never show", for an item (video, book, course, retreat, download,
+/// membership, free resource): hidden if ANY of its subjects is hidden.
+bool isHiddenItem(List<String> subjects, Set<String> hidden) =>
+    hidden.isNotEmpty && subjects.any(hidden.contains);
+
+/// "Never show", for a teacher, channel or publisher: hidden only if EVERY
+/// subject they cover is hidden. No subjects, never hidden.
+bool isHiddenTeacher(List<String> subjects, Set<String> hidden) =>
+    hidden.isNotEmpty && subjects.isNotEmpty && subjects.every(hidden.contains);
+
+/// [items] without the hidden ones, by the item rule.
+List<T> withoutHidden<T>(
+  List<T> items,
+  Set<String> hidden,
+  List<String> Function(T) subjects,
+) => hidden.isEmpty
+    ? items
+    : [
+        for (final item in items)
+          if (!isHiddenItem(subjects(item), hidden)) item,
+      ];
+
+/// [teachers] without the hidden ones, by the teacher rule.
+List<T> withoutHiddenTeachers<T>(
+  List<T> teachers,
+  Set<String> hidden,
+  List<String> Function(T) subjects,
+) => hidden.isEmpty
+    ? teachers
+    : [
+        for (final t in teachers)
+          if (!isHiddenTeacher(subjects(t), hidden)) t,
+      ];
+
+/// Any content model's subjects (the app's models all carry them).
+List<String> subjectsOf(Object item) => switch (item) {
+  Healer h => h.subjectSlugs,
+  Video v => v.subjectSlugs,
+  Book b => b.subjectSlugs,
+  Offering o => o.subjectSlugs,
+  FreeResource r => r.subjectSlugs,
+  Publisher p => p.subjectSlugs,
+  Subject s => [s.slug],
+  _ => const [],
+};
+
+/// Whether [item] is hidden: teachers and publishers by the teacher rule,
+/// everything else by the item rule.
+bool isHidden(Object item, Set<String> hidden) => switch (item) {
+  Healer h => isHiddenTeacher(h.subjectSlugs, hidden),
+  Publisher p => isHiddenTeacher(p.subjectSlugs, hidden),
+  _ => isHiddenItem(subjectsOf(item), hidden),
+};
+
 /// [pillars] (default: the pill row's order) with those holding a chosen
 /// subject first, most chosen subjects first; the rest keep their order.
-List<String> pillarsByInterest(Set<String> chosen, [List<String>? pillars]) {
-  final order = pillars ?? subjectPillars.keys.toList();
+/// A pillar whose every subject is in [hidden] is left out.
+List<String> pillarsByInterest(
+  Set<String> chosen, [
+  List<String>? pillars,
+  Set<String> hidden = const {},
+]) {
+  final order = [
+    for (final p in pillars ?? subjectPillars.keys.toList())
+      if (!(subjectPillars[p] ?? const <String>[]).every(hidden.contains)) p,
+  ];
   if (chosen.isEmpty) return order;
   int hits(String p) =>
       (subjectPillars[p] ?? const []).where(chosen.contains).length;

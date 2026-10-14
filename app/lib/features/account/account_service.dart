@@ -33,6 +33,10 @@ class NotificationPrefs {
 /// One saved item as user_favourites holds it.
 typedef FavouriteRow = ({String contentType, String slug});
 
+/// One account's user_interests row: subjects to see more of, and subjects
+/// never to show.
+typedef TailoringRow = ({List<String> subjects, List<String> hidden});
+
 /// Everything accounts need from Supabase and the website's API routes — an
 /// interface so tests can run the whole flow without a network.
 ///
@@ -96,10 +100,11 @@ abstract class AccountService {
   /// account; the server decides, so calling it again does nothing.
   Future<void> sendWelcomePush();
 
-  /// The subjects the account chose (user_interests, migration 0017): null
-  /// if it never has, which is not the same as an empty choice.
-  Future<List<String>?> interests(String userId);
-  Future<void> saveInterests(String userId, List<String> subjectSlugs);
+  /// The account's tailoring (user_interests, migrations 0017 and 0018):
+  /// More of and Never show. Null if it never chose, which is not the same
+  /// as choosing nothing.
+  Future<TailoringRow?> interests(String userId);
+  Future<void> saveInterests(String userId, TailoringRow row);
 }
 
 class AccountError implements Exception {
@@ -363,24 +368,29 @@ class SupabaseAccountService implements AccountService {
   }
 
   @override
-  Future<List<String>?> interests(String userId) async {
+  Future<TailoringRow?> interests(String userId) async {
     final row = await _db
         .from('user_interests')
-        .select('subjects')
+        .select('subjects, hidden_subjects')
         .eq('user_id', userId)
         .maybeSingle();
     if (row == null) return null;
-    return [
-      for (final s in row['subjects'] as List? ?? const [])
+    List<String> strings(Object? v) => [
+      for (final s in v as List? ?? const [])
         if (s is String) s,
     ];
+    return (
+      subjects: strings(row['subjects']),
+      hidden: strings(row['hidden_subjects']),
+    );
   }
 
   @override
-  Future<void> saveInterests(String userId, List<String> subjectSlugs) async {
+  Future<void> saveInterests(String userId, TailoringRow row) async {
     await _db.from('user_interests').upsert({
       'user_id': userId,
-      'subjects': subjectSlugs,
+      'subjects': row.subjects,
+      'hidden_subjects': row.hidden,
     });
   }
 

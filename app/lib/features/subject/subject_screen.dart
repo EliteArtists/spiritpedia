@@ -7,12 +7,79 @@ import '../../shared/widgets/cards.dart';
 import '../../shared/widgets/shelf.dart';
 import '../../theme/colors.dart';
 import '../detail/detail_widgets.dart';
+import '../interests/interests.dart';
 import '../star/star_layer.dart';
 
 /// A subject page (web/app/subject/[slug]/page.js): healers, free resources,
 /// books, courses, retreats, downloads, and video shelves per teacher.
-class SubjectScreen extends ConsumerWidget {
+///
+/// A subject the person hid (Never show) asks first: "You've hidden this
+/// subject. Show anyway?" — and then shows it.
+class SubjectScreen extends ConsumerStatefulWidget {
   const SubjectScreen({super.key, required this.slug});
+
+  final String slug;
+
+  @override
+  ConsumerState<SubjectScreen> createState() => _SubjectScreenState();
+}
+
+class _SubjectScreenState extends ConsumerState<SubjectScreen> {
+  bool _showAnyway = false;
+
+  @override
+  Widget build(BuildContext context) {
+    final hidden = ref.watch(hiddenSubjectsProvider).contains(widget.slug);
+    if (hidden && !_showAnyway) {
+      final name = subjectName(ref.watch(subjectsProvider).value, widget.slug);
+      return Scaffold(
+        appBar: AppBar(),
+        body: WithHomeStar(
+          child: Center(
+            child: Padding(
+              padding: const EdgeInsets.all(32),
+              child: Column(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  const Icon(
+                    Icons.visibility_off_outlined,
+                    color: SpColors.textFaint,
+                    size: 32,
+                  ),
+                  const SizedBox(height: 14),
+                  Text(
+                    name,
+                    textAlign: TextAlign.center,
+                    style: const TextStyle(
+                      fontSize: 22,
+                      fontWeight: FontWeight.w700,
+                    ),
+                  ),
+                  const SizedBox(height: 8),
+                  const Text(
+                    'You’ve hidden this subject.',
+                    style: TextStyle(color: SpColors.textMuted, fontSize: 15),
+                  ),
+                  const SizedBox(height: 10),
+                  TextButton(
+                    key: const ValueKey('subject-show-anyway'),
+                    onPressed: () => setState(() => _showAnyway = true),
+                    style: TextButton.styleFrom(foregroundColor: SpColors.link),
+                    child: const Text('Show anyway?'),
+                  ),
+                ],
+              ),
+            ),
+          ),
+        ),
+      );
+    }
+    return _SubjectBody(slug: widget.slug);
+  }
+}
+
+class _SubjectBody extends ConsumerWidget {
+  const _SubjectBody({required this.slug});
 
   final String slug;
 

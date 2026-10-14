@@ -359,6 +359,50 @@ void main() {
       expect(interests.value.chosen, isFalse);
     });
 
+    testWidgets('"Anything you’d rather not see?" hides subjects at once; '
+        'More of then keeps them, and cannot take them', (tester) async {
+      final interests = MemoryInterestsStore();
+      await tester.pumpWidget(_app(MemoryIntroPrefs(), interests: interests));
+      await _throughIntro(tester);
+      await tester.tap(find.text('Anything you’d rather not see?'));
+      await tester.pumpAndSettle();
+      expect(find.byKey(const ValueKey('never-show-sheet')), findsOneWidget);
+      await tester.tap(
+        find.byKey(
+          const ValueKey('never-pillar-Mystical & Spiritual Exploration'),
+        ),
+      );
+      await tester.pumpAndSettle();
+      await tester.tap(find.byKey(const ValueKey('never-shamanism')));
+      await tester.pump();
+      await tester.tap(find.byKey(const ValueKey('never-show-done')));
+      await tester.pumpAndSettle();
+      expect(interests.value.hidden, ['shamanism']);
+      expect(find.text('Hidden: 1 · Change'), findsOneWidget);
+
+      // Under More of, Shamanism is shown but cannot be chosen.
+      await tester.tap(
+        find.byKey(
+          const ValueKey('interest-pillar-Mystical & Spiritual Exploration'),
+        ),
+      );
+      await tester.pumpAndSettle();
+      expect(find.textContaining('Hidden'), findsWidgets);
+      expect(
+        find.byWidgetPredicate(
+          (w) =>
+              w is FilterChip && w.key == const ValueKey('interest-shamanism'),
+        ),
+        findsNothing,
+      );
+      await tester.tap(find.byKey(const ValueKey('interest-dreamwork')));
+      await tester.pump();
+      await tester.tap(find.text('Explore Spiritpedia →'));
+      await tester.pumpAndSettle();
+      expect(interests.value.subjects, ['dreamwork']);
+      expect(interests.value.hidden, ['shamanism']);
+    });
+
     testWidgets('"Skip for now" saves nothing', (tester) async {
       final interests = MemoryInterestsStore();
       await tester.pumpWidget(_app(MemoryIntroPrefs(), interests: interests));

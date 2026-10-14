@@ -2,6 +2,7 @@ import 'package:supabase_flutter/supabase_flutter.dart';
 
 import '../../core/safety/emotion_safety.dart';
 import '../../data/models.dart';
+import '../../data/shelf_rules.dart';
 import 'search_repository.dart';
 
 /// The search's second engine: plain search by name and title, beside the
@@ -604,21 +605,29 @@ const maxSavePoints = 50;
 double saveBonus(int saves) =>
     (saves * savePoints).clamp(0, maxSavePoints).toDouble();
 
-/// Points per chosen interest (onboarding, Account → Your interests) an item
-/// carries, and the most they can add: like saves, enough to settle a close
-/// call between relevant items, never enough to beat a title match.
+/// The "More of" bonus (docs/personalisation.md), in the same three levels
+/// as the shelves: per chosen subject an item carries, up to a cap; less
+/// for another subject of the same pillar; nothing otherwise. Like saves,
+/// enough to settle a close call between relevant items, never enough to
+/// beat a title match.
 const interestPoints = 20;
 const maxInterestPoints = 60;
+const pillarPoints = 10;
 
-double interestBonus(List<String> subjectSlugs, Set<String> interests) =>
-    (subjectSlugs.where(interests.contains).length * interestPoints)
-        .clamp(0, maxInterestPoints)
-        .toDouble();
+double interestBonus(List<String> subjectSlugs, Set<String> interests) {
+  if (interests.isEmpty) return 0;
+  final hits = subjectSlugs.where(interests.contains).length;
+  if (hits > 0) {
+    return (hits * interestPoints).clamp(0, maxInterestPoints).toDouble();
+  }
+  return interestLevel(subjectSlugs, interests) == 1 ? pillarPoints * 1.0 : 0;
+}
 
 /// The best video and book among [videos] and [books]; ties go to the earlier
 /// (newer) one. Nothing with no relevance at all is suggested — saves and
 /// [interests] only add to an item that is relevant already. [videoSaves] and
-/// [bookSaves] are save counts by slug.
+/// [bookSaves] are save counts by slug. Nothing with a [hidden] subject is
+/// ever suggested.
 Suggestions suggest({
   required String term,
   required List<MappingRow> rows,
@@ -627,6 +636,7 @@ Suggestions suggest({
   Map<String, int> videoSaves = const {},
   Map<String, int> bookSaves = const {},
   Set<String> interests = const {},
+  Set<String> hidden = const {},
 }) {
   T? best<T>(
     List<T> items,
@@ -637,6 +647,7 @@ Suggestions suggest({
     T? top;
     var topScore = 0.0;
     for (final item in items) {
+      if (isHiddenItem(subjects(item), hidden)) continue;
       var s = relevance(
         title: title(item),
         subjectSlugs: subjects(item),

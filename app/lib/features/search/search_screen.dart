@@ -115,6 +115,7 @@ class _SearchState extends ConsumerState<_Search> {
     plain: ref.read(contentSearchProvider),
     scope: widget.scope,
     interests: () => mounted ? ref.read(interestSubjectsProvider) : const {},
+    hidden: () => mounted ? ref.read(hiddenSubjectsProvider) : const {},
   )..addListener(_changed);
 
   /// "See all": which group, and its fuller list.
@@ -636,11 +637,13 @@ class _Results extends ConsumerWidget {
         search.scope != SearchScope.all &&
         profiles.isEmpty &&
         named.isEmpty &&
-        search.feelings.isEmpty;
+        search.feelings.isEmpty &&
+        search.heldBack.isEmpty;
 
     return ListView(
       padding: EdgeInsets.only(bottom: 32 + _TabBarClearance.of(context)),
       children: [
+        if (!search.heldBack.isEmpty) _HiddenNote(onShow: search.showHidden),
         if (profiles.isNotEmpty) ...[
           const _GroupHeader('TEACHERS & CHANNELS'),
           SizedBox(
@@ -680,6 +683,41 @@ class _Results extends ConsumerWidget {
       ],
     );
   }
+}
+
+/// Never show (docs/personalisation.md): what was found by name but carries
+/// a hidden subject waits behind one gentle line, and one tap.
+class _HiddenNote extends StatelessWidget {
+  const _HiddenNote({required this.onShow});
+
+  final VoidCallback onShow;
+
+  @override
+  Widget build(BuildContext context) => Padding(
+    key: const ValueKey('search-hidden-note'),
+    padding: const EdgeInsets.fromLTRB(16, 10, 8, 2),
+    child: Row(
+      children: [
+        const Icon(
+          Icons.visibility_off_outlined,
+          size: 18,
+          color: SpColors.textFaint,
+        ),
+        const SizedBox(width: 8),
+        const Expanded(
+          child: Text(
+            'You’ve hidden this subject.',
+            style: TextStyle(fontSize: 14, color: SpColors.textMuted),
+          ),
+        ),
+        TextButton(
+          onPressed: onShow,
+          style: TextButton.styleFrom(foregroundColor: SpColors.link),
+          child: const Text('Show anyway?'),
+        ),
+      ],
+    ),
+  );
 }
 
 /// One quiet line under a Videos or Books search: what the same words find

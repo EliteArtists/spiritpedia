@@ -124,4 +124,38 @@ void main() {
     // Every pillar is still there: shaped, never narrowed.
     expect(shelves.length, plain.length);
   });
+
+  test(
+    'Never show: no book with a hidden subject on any shelf, New included',
+    () async {
+      final container = ProviderContainer(
+        overrides: [
+          contentRepositoryProvider.overrideWithValue(_ManyBooks()),
+          interestsStoreProvider.overrideWithValue(
+            MemoryInterestsStore(
+              const Interests(hidden: ['yoga', 'mysticism'], chosen: true),
+            ),
+          ),
+        ],
+      );
+      addTearDown(container.dispose);
+      container.read(interestsProvider);
+      await Future<void>.delayed(Duration.zero);
+      final shelves = await container.read(bookShelvesProvider(null).future);
+      expect(shelves.first.title, 'New to Spiritpedia');
+      for (final shelf in shelves) {
+        for (final b in shelf.books) {
+          expect(b.subjectSlugs, isNot(contains('yoga')), reason: shelf.title);
+          expect(b.subjectSlugs, isNot(contains('mysticism')));
+        }
+      }
+      // Self-healing books without Yoga are still there.
+      expect(
+        shelves
+            .expand((s) => s.books)
+            .any((b) => b.subjectSlugs.contains('self-healing')),
+        isTrue,
+      );
+    },
+  );
 }

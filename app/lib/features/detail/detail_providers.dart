@@ -2,6 +2,8 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../data/models.dart';
 import '../../data/providers.dart';
+import '../../data/shelf_rules.dart';
+import '../interests/interests.dart';
 
 /// A teacher's page: the healer comes from the already-loaded directory; the
 /// rest is fetched for this page only.
@@ -25,6 +27,7 @@ final teacherProvider = FutureProvider.family<TeacherContent?, String>((
   ref,
   slug,
 ) async {
+  final hidden = ref.watch(hiddenSubjectsProvider);
   final healer = (await ref.watch(healerDirectoryProvider.future)).bySlug(slug);
   if (healer == null) return null;
   final repo = ref.watch(contentRepositoryProvider);
@@ -34,12 +37,18 @@ final teacherProvider = FutureProvider.family<TeacherContent?, String>((
     repo.liveOfferingsForHealer(healer.id),
     repo.liveFreeResourcesForHealer(healer.id),
   ).wait;
+  // The teacher's page opens whatever is hidden; their items follow Never
+  // show, one by one.
+  List<T> visible<T extends Object>(List<T> items) => [
+    for (final i in items)
+      if (!isHidden(i, hidden)) i,
+  ];
   return TeacherContent(
     healer: healer,
-    videos: videos,
-    books: books,
-    offerings: offerings,
-    freeResources: freeResources,
+    videos: visible(videos),
+    books: visible(books),
+    offerings: visible(offerings),
+    freeResources: visible(freeResources),
   );
 });
 
@@ -86,20 +95,29 @@ final publisherProvider = FutureProvider.family<PublisherContent?, String>((
   ref,
   slug,
 ) async {
+  final hidden = ref.watch(hiddenSubjectsProvider);
   final publisher = (await ref.watch(publishersProvider.future))
       .where((p) => p.slug == slug)
       .firstOrNull;
   if (publisher == null) return null;
   final repo = ref.watch(contentRepositoryProvider);
   final directory = await ref.watch(healerDirectoryProvider.future);
-  final authors = [
-    for (final id in await repo.publisherAuthorIds(publisher.id))
-      ?directory.byId(id),
-  ];
-  final books = await repo.booksByHealers([
-    for (final a in authors)
-      if (a.slug.isNotEmpty) a.slug,
-  ]);
+  final authors = withoutHiddenTeachers(
+    [
+      for (final id in await repo.publisherAuthorIds(publisher.id))
+        ?directory.byId(id),
+    ],
+    hidden,
+    (a) => a.subjectSlugs,
+  );
+  final books = withoutHidden(
+    await repo.booksByHealers([
+      for (final a in authors)
+        if (a.slug.isNotEmpty) a.slug,
+    ]),
+    hidden,
+    (b) => b.subjectSlugs,
+  );
   final shelves =
       [
         for (final a in authors)

@@ -98,25 +98,38 @@ final exploreSectionProvider =
       key,
     ) async {
       final (section, subject) = key;
-      final repo = ref.watch(contentRepositoryProvider);
-      switch (section) {
-        case ExploreSection.freeResources:
-          return repo.featuredFreeResources(subject: subject);
-        case ExploreSection.courses:
-        case ExploreSection.retreats:
-        case ExploreSection.downloads:
-        case ExploreSection.memberships:
-          final split = splitOfferings(
-            await ref.watch(_liveOfferingsProvider(subject).future),
-          );
-          return switch (section) {
-            ExploreSection.courses => split.courses,
-            ExploreSection.retreats => split.retreats,
-            ExploreSection.memberships => split.memberships,
-            _ => split.downloads,
-          };
-      }
+      final hidden = ref.watch(hiddenSubjectsProvider);
+      return [
+        for (final item in await _exploreSection(ref, section, subject))
+          if (!isHidden(item, hidden)) item,
+      ];
     });
+
+/// One Explore More section, before Never show is applied.
+Future<List<Object>> _exploreSection(
+  Ref ref,
+  ExploreSection section,
+  String? subject,
+) async {
+  final repo = ref.watch(contentRepositoryProvider);
+  switch (section) {
+    case ExploreSection.freeResources:
+      return repo.featuredFreeResources(subject: subject);
+    case ExploreSection.courses:
+    case ExploreSection.retreats:
+    case ExploreSection.downloads:
+    case ExploreSection.memberships:
+      final split = splitOfferings(
+        await ref.watch(_liveOfferingsProvider(subject).future),
+      );
+      return switch (section) {
+        ExploreSection.courses => split.courses,
+        ExploreSection.retreats => split.retreats,
+        ExploreSection.memberships => split.memberships,
+        _ => split.downloads,
+      };
+  }
+}
 
 // ── Videos ───────────────────────────────────────────────────────────────────
 
@@ -143,19 +156,26 @@ final videoShelvesProvider = FutureProvider.family<List<VideoShelf>, String?>((
 ) async {
   final repo = ref.watch(contentRepositoryProvider);
   final chosen = ref.watch(interestSubjectsProvider);
+  final hidden = ref.watch(hiddenSubjectsProvider);
+  // Never show: no video with a hidden subject, on any shelf.
+  List<Video> visible(List<Video> pool) =>
+      withoutHidden(pool, hidden, (v) => v.subjectSlugs);
 
   if (subject == null) {
-    // Someone's chosen interests: their pillars come first, and each shelf
-    // but New leads with what carries their subjects.
-    final pillars = pillarsByInterest(chosen, videoPillarOrder);
-    final results = await Future.wait([
-      repo.newestVideos(limit: 60),
-      for (final pillar in pillars)
-        repo.videoPool(subjects: subjectPillars[pillar]),
-      repo.mixedVideos(),
-    ]);
+    // More of (docs/personalisation.md): their pillars come first, and each
+    // shelf but New is ranked in three levels.
+    final pillars = pillarsByInterest(chosen, videoPillarOrder, hidden);
+    final results = [
+      for (final pool in await Future.wait([
+        repo.newestVideos(limit: 60),
+        for (final pillar in pillars)
+          repo.videoPool(subjects: subjectPillars[pillar]),
+        repo.mixedVideos(),
+      ]))
+        visible(pool),
+    ];
     List<Video> boost(List<Video> pool) =>
-        interestFirst(pool, chosen, (v) => v.subjectSlugs);
+        byInterest(pool, chosen, (v) => v.subjectSlugs);
     // As with Books: no video on two shelves, and each pillar leads with the
     // videos most about it.
     final shown = <Object>{};
@@ -198,7 +218,7 @@ final videoShelvesProvider = FutureProvider.family<List<VideoShelf>, String?>((
   }
 
   // One subject: the newest, two per teacher; then the next batch, likewise.
-  final all = await repo.videosForSubject(subject);
+  final all = visible(await repo.videosForSubject(subject));
   final latest = capPerTeacher(all);
   final shown = {for (final v in latest) v.id};
   final more = capPerTeacher([
@@ -244,13 +264,19 @@ final bookShelvesProvider = FutureProvider.family<List<BookShelf>, String?>((
 ) async {
   final repo = ref.watch(contentRepositoryProvider);
   final chosen = ref.watch(interestSubjectsProvider);
-  final all = await repo.books(subject: subject); // newest first
+  final hidden = ref.watch(hiddenSubjectsProvider);
+  // Never show: no book with a hidden subject, on any shelf. Newest first.
+  final all = withoutHidden(
+    await repo.books(subject: subject),
+    hidden,
+    (b) => b.subjectSlugs,
+  );
 
   if (subject == null) {
-    // As on Videos: chosen interests' pillars first, and each shelf but New
-    // leads with what carries the chosen subjects.
+    // As on Videos: their pillars first, and each shelf but New ranked in
+    // three levels.
     List<Book> boost(List<Book> pool) =>
-        interestFirst(pool, chosen, (b) => b.subjectSlugs);
+        byInterest(pool, chosen, (b) => b.subjectSlugs);
     // Most books carry several subjects, so without care every shelf would
     // lead with the same newest books. No book appears on two shelves, and
     // each pillar leads with the books most about it.
@@ -267,7 +293,7 @@ final bookShelvesProvider = FutureProvider.family<List<BookShelf>, String?>((
         subtitle: 'Just added',
         books: take(all),
       ),
-      for (final pillar in pillarsByInterest(chosen, videoPillarOrder))
+      for (final pillar in pillarsByInterest(chosen, videoPillarOrder, hidden))
         BookShelf(
           title: pillar,
           subtitle: 'Read & reflect',
@@ -355,6 +381,10 @@ final subjectContentProvider = FutureProvider.family<SubjectContent, String>((
   slug,
 ) async {
   final repo = ref.watch(contentRepositoryProvider);
+  // Never show: everything carrying another hidden subject is left out. This
+  // subject itself, if hidden, is the page's own business — it asks first
+  // ("Show anyway?"), and then shows it.
+  final hidden = {...ref.watch(hiddenSubjectsProvider)}..remove(slug);
   final results = await Future.wait<Object>([
     repo.healersForSubject(slug),
     repo.freeResourcesForSubject(slug),
@@ -362,14 +392,18 @@ final subjectContentProvider = FutureProvider.family<SubjectContent, String>((
     repo.liveOfferings(subject: slug),
     repo.videosForSubject(slug),
   ]);
-  final offerings = splitOfferings(results[3] as List<Offering>);
+  List<T> visible<T extends Object>(List<T> items) => [
+    for (final i in items)
+      if (!isHidden(i, hidden)) i,
+  ];
+  final offerings = splitOfferings(visible(results[3] as List<Offering>));
   return SubjectContent(
-    healers: results[0] as List<Healer>,
-    freeResources: results[1] as List<FreeResource>,
-    books: results[2] as List<Book>,
+    healers: visible(results[0] as List<Healer>),
+    freeResources: visible(results[1] as List<FreeResource>),
+    books: visible(results[2] as List<Book>),
     courses: offerings.courses,
     retreats: offerings.retreats,
     downloads: offerings.downloads,
-    videos: results[4] as List<Video>,
+    videos: visible(results[4] as List<Video>),
   );
 });

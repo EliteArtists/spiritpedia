@@ -31,6 +31,8 @@ class HomeScreen extends ConsumerWidget {
     final chosen = subject == null
         ? ref.watch(interestSubjectsProvider)
         : const <String>{};
+    // Never show: everywhere, a chosen subject included.
+    final hidden = ref.watch(hiddenSubjectsProvider);
     final healers = ref.watch(healersProvider);
     final publishers =
         ref.watch(publishersProvider).value ?? const <Publisher>[];
@@ -51,9 +53,16 @@ class HomeScreen extends ConsumerWidget {
               child: _Problem(onRetry: () => ref.invalidate(healersProvider)),
             ),
           ],
-          data: (all) {
+          data: (everyone) {
+            // A teacher or channel goes only if every subject they cover is
+            // hidden (docs/personalisation.md).
+            final all = withoutHiddenTeachers(
+              everyone,
+              hidden,
+              (h) => h.subjectSlugs,
+            );
             final shelves = HealerShelves(
-              interestFirst(
+              byInterest(
                 bySubject(all, subject, (h) => h.subjectSlugs),
                 chosen,
                 (h) => h.subjectSlugs,
@@ -71,7 +80,7 @@ class HomeScreen extends ConsumerWidget {
                 ? null
                 : () => context.push('/subject/$subject');
             final shownPublishers = bySubject(
-              publishers,
+              withoutHiddenTeachers(publishers, hidden, (p) => p.subjectSlugs),
               subject,
               (p) => p.subjectSlugs,
             );

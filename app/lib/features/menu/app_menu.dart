@@ -66,8 +66,8 @@ class AppMenu extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     final account = ref.watch(accountProvider);
     final saved = savedCount(ref.watch(savedItemsProvider));
-    final interests = interestsSummary(
-      ref.watch(interestsProvider).subjects,
+    final tailoring = tailoringSummary(
+      ref.watch(interestsProvider),
       ref.watch(subjectsProvider).value,
     );
     final width = (MediaQuery.sizeOf(context).width * 0.84).clamp(0.0, 340.0);
@@ -118,11 +118,11 @@ class AppMenu extends ConsumerWidget {
         ),
       ],
       _Item(
-        key: const ValueKey('menu-interests'),
+        key: const ValueKey('menu-tailor'),
         icon: Icons.tune_rounded,
-        label: 'Your interests',
-        detail: interests ?? 'Choose what you see first',
-        onTap: () => go('/interests'),
+        label: 'Tailor Spiritpedia',
+        detail: tailoring ?? 'More of what you love, none of what you don’t',
+        onTap: () => go('/tailor'),
       ),
       _Item(
         key: const ValueKey('menu-share'),

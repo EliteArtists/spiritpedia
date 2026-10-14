@@ -207,7 +207,7 @@ void main() {
       );
       expect(find.byKey(const ValueKey('menu-account')), findsNothing);
       for (final label in [
-        'Your interests',
+        'Tailor Spiritpedia',
         'Share Spiritpedia',
         'Terms of Use',
         'Privacy Policy',
@@ -268,32 +268,52 @@ void main() {
       },
     );
 
-    testWidgets('"Your interests" opens the picker; saving shows in the menu', (
-      tester,
-    ) async {
+    testWidgets('"Tailor Spiritpedia": More of and Never show, one screen; '
+        'saving shows in the menu', (tester) async {
       final interests = MemoryInterestsStore();
       await tester.pumpWidget(_app(interests: interests));
       await tester.pump();
       await tester.pump(const Duration(milliseconds: 100));
       await openMenu(tester);
-      expect(find.text('Choose what you see first'), findsOneWidget);
-      await tester.tap(find.byKey(const ValueKey('menu-interests')));
+      expect(find.text('Your interests'), findsNothing);
+      await tester.tap(find.byKey(const ValueKey('menu-tailor')));
       await tester.pumpAndSettle();
-      expect(find.text('What interests you most?'), findsOneWidget);
-      await tester.tap(find.text('Consciousness'));
-      await tester.pumpAndSettle();
-      await tester.tap(find.text('Meditation'));
-      await tester.pump();
-      await tester.tap(find.byKey(const ValueKey('interests-save')));
-      await tester.pumpAndSettle();
+      expect(find.text('Tailor Spiritpedia'), findsOneWidget);
+      expect(find.text('More of'), findsOneWidget);
+      expect(find.text('Never show'), findsOneWidget);
+
+      Future<void> tap(String key) async {
+        final f = find.byKey(ValueKey(key));
+        await tester.ensureVisible(f);
+        await tester.pumpAndSettle();
+        await tester.tap(f);
+        await tester.pumpAndSettle();
+      }
+
+      await tap('interest-pillar-Consciousness');
+      await tap('interest-meditation');
+      await tap('never-pillar-Mystical & Spiritual Exploration');
+      await tap('never-shamanism');
+      // Meditation is More of: under Never show it cannot be chosen.
+      await tap('never-pillar-Consciousness');
+      expect(
+        tester.widget<Chip>(find.byKey(const ValueKey('never-meditation'))),
+        isNotNull,
+      );
+      expect(find.textContaining('In More of'), findsOneWidget);
+      await tap('tailor-save');
       expect(interests.value.subjects, ['meditation']);
-      expect(find.text('Your interests are saved'), findsOneWidget);
+      expect(interests.value.hidden, ['shamanism']);
+      expect(
+        find.text('Saved: Spiritpedia is tailored to you'),
+        findsOneWidget,
+      );
 
       await openMenu(tester);
       expect(
         find.descendant(
-          of: find.byKey(const ValueKey('menu-interests')),
-          matching: find.text('Meditation'),
+          of: find.byKey(const ValueKey('menu-tailor')),
+          matching: find.text('More of: Meditation · Hidden: shamanism'),
         ),
         findsOneWidget,
       );
@@ -350,6 +370,60 @@ void main() {
       // Nothing is filtered: every shelf is still there.
       expect(find.text('Worldwide'), findsOneWidget);
       expect(find.text('Wim Hof'), findsWidgets);
+    });
+
+    group('Never show', () {
+      Widget hiding(List<String> hidden) => _app(
+        interests: MemoryInterestsStore(
+          Interests(hidden: hidden, chosen: true),
+        ),
+      );
+
+      testWidgets('a teacher goes only when every subject they cover is '
+          'hidden', (tester) async {
+        await tester.pumpWidget(hiding(['breathwork']));
+        await tester.pump();
+        await tester.pump(const Duration(milliseconds: 100));
+        // Wim Hof and Local One teach only Breathwork; Eckhart Tolle teaches
+        // Meditation and Consciousness.
+        expect(find.text('Wim Hof'), findsNothing);
+        expect(find.text('Local One'), findsNothing);
+        expect(find.text('Eckhart Tolle'), findsWidgets);
+
+        await tester.pumpWidget(hiding(['meditation']));
+        await tester.pump();
+        await tester.pump(const Duration(milliseconds: 100));
+        // Eckhart Tolle also covers Consciousness: still there.
+        expect(find.text('Eckhart Tolle'), findsWidgets);
+      });
+
+      testWidgets('Videos: any hidden subject and the video goes', (
+        tester,
+      ) async {
+        await tester.pumpWidget(hiding(['breathwork']));
+        await tester.pump();
+        await tester.tap(find.text('Videos').last);
+        await tester.pump();
+        await tester.pump(const Duration(milliseconds: 200));
+        expect(find.textContaining('by eckhart-tolle'), findsWidgets);
+        // Wim Hof's videos are Breathwork + Meditation.
+        expect(find.textContaining('by wim-hof'), findsNothing);
+      });
+
+      testWidgets('a hidden subject\'s page asks first', (tester) async {
+        await tester.pumpWidget(hiding(['breathwork']));
+        await tester.pump();
+        await tester.pump(const Duration(milliseconds: 100));
+        GoRouter.of(tester.element(find.byType(PillTabBar)))
+            .push('/subject/breathwork');
+        await tester.pumpAndSettle();
+        expect(find.text('You’ve hidden this subject.'), findsOneWidget);
+        expect(find.text('Wim Hof'), findsNothing);
+        await tester.tap(find.byKey(const ValueKey('subject-show-anyway')));
+        await tester.pumpAndSettle();
+        expect(find.text('You’ve hidden this subject.'), findsNothing);
+        expect(find.text('Wim Hof'), findsWidgets);
+      });
     });
 
     testWidgets('Explore More has no Books & Literature: Books has its tab', (

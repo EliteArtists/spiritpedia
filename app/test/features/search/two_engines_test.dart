@@ -706,4 +706,80 @@ void main() {
       expect(plain.calls, isEmpty);
     });
   });
+
+  group('Never show (docs/personalisation.md)', () {
+    EmotionSearchController hiding(Set<String> hidden, _Plain plain) {
+      final search = EmotionSearchController(
+        safety: _safety,
+        repository: _Feelings(),
+        plain: plain,
+        hidden: () => hidden,
+      );
+      addTearDown(search.dispose);
+      return search;
+    }
+
+    test('found by name: held back, "Show anyway" shows them for this '
+        'search only', () async {
+      final search = hiding({'astrology'}, _Plain());
+      search.onChanged('September Astrology Forecast 2026');
+      await Future<void>.delayed(_settle);
+
+      expect(search.view, SearchView.results);
+      final videos = search.content.of<Video>(ResultKind.videos);
+      expect(videos, isNot(contains(_forecast)));
+      expect(videos, contains(_calmVideo)); // not hidden
+      expect(search.heldBack.of<Video>(ResultKind.videos), [_forecast]);
+      // The hidden subject is not offered as a feeling's subject either,
+      // and never suggested.
+      expect(search.subjects, isEmpty);
+      expect(search.suggestions.video, isNot(_forecast));
+
+      search.showHidden();
+      expect(search.heldBack.isEmpty, isTrue);
+      expect(search.content.of<Video>(ResultKind.videos), contains(_forecast));
+      expect(await search.more(ResultKind.videos), contains(_forecast));
+
+      // A new search starts hidden again.
+      search.onChanged('September Astrology Forecast');
+      await Future<void>.delayed(_settle);
+      expect(search.heldBack.of<Video>(ResultKind.videos), [_forecast]);
+      expect(await search.more(ResultKind.videos), isNot(contains(_forecast)));
+    });
+
+    test('only hidden matches: still results, with the note', () async {
+      final search = hiding({'astrology', 'breathwork'}, _Plain());
+      search.onChanged('forecast');
+      await Future<void>.delayed(_settle);
+      expect(search.view, SearchView.results);
+      expect(search.content.isEmpty, isTrue);
+      expect(search.heldBack.isEmpty, isFalse);
+    });
+
+    test('a feeling leaves hidden things out quietly — no note', () async {
+      final search = EmotionSearchController(
+        safety: _safety,
+        repository: _Feelings(),
+        plain: _Plain(),
+        scope: SearchScope.videos,
+        hidden: () => {'breathwork'},
+      );
+      addTearDown(search.dispose);
+      search.onChanged('anxious');
+      await Future<void>.delayed(_settle);
+      // Both feeling videos carry Breathwork.
+      expect(search.feelings.videos, isEmpty);
+      expect(search.heldBack.isEmpty, isTrue);
+      expect(search.subjects.map((r) => r.subjectSlug), ['meditation']);
+    });
+
+    test('the crisis intercept is untouched by it', () async {
+      final plain = _Plain();
+      final search = hiding({'meditation', 'breathwork'}, plain);
+      search.onChanged('I want to die');
+      expect(search.view, SearchView.crisis);
+      await Future<void>.delayed(_settle);
+      expect(plain.calls, isEmpty);
+    });
+  });
 }

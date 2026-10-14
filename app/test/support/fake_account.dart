@@ -17,7 +17,7 @@ class FakeAccountService implements AccountService {
       <String, List<FavouriteRow>>{}; // user id → newest first
   final deletedUsers = <String>{};
   AccountUser? _current;
-  final interestsByUser = <String, List<String>>{};
+  final interestsByUser = <String, TailoringRow>{};
   bool failDelete = false;
   bool offline = false;
 
@@ -188,16 +188,20 @@ class FakeAccountService implements AccountService {
   }
 
   @override
-  Future<List<String>?> interests(String userId) async {
+  Future<TailoringRow?> interests(String userId) async {
     if (offline) throw const AccountError('offline');
-    final v = interestsByUser[userId];
-    return v == null ? null : [...v];
+    return interestsByUser[userId];
   }
 
   @override
-  Future<void> saveInterests(String userId, List<String> subjectSlugs) async {
+  Future<void> saveInterests(String userId, TailoringRow row) async {
     if (offline) throw const AccountError('offline');
-    calls.add('saveInterests:${subjectSlugs.join(',')}');
-    interestsByUser[userId] = [...subjectSlugs];
+    calls.add(
+      'saveInterests:${row.subjects.join(',')}|${row.hidden.join(',')}',
+    );
+    interestsByUser[userId] = (
+      subjects: [...row.subjects],
+      hidden: [...row.hidden],
+    );
   }
 }

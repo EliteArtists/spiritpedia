@@ -8,7 +8,7 @@ import '../../theme/colors.dart';
 import '../star/slipstream.dart';
 import 'interests.dart';
 
-/// Under the question, in onboarding and in Account → Your interests.
+/// Under the question, in onboarding and in Account → Tailor Spiritpedia.
 const interestsNote =
     'Optional. We use your choices only to tailor what you see; never shared. '
     'Change or clear them anytime in Account.';
@@ -25,18 +25,42 @@ const _pillarLook = <String, (IconData, Color)>{
   'Body & Energy': (Icons.spa_outlined, Color(0xFF6EE7B7)),
 };
 
+/// What the picker chooses (docs/personalisation.md).
+enum PickerMode {
+  /// "More of": violet, as the Discover pills.
+  moreOf('interest', SpColors.primary, 'Hidden'),
+
+  /// "Never show": a muted rose, with an eye-off mark on what is chosen.
+  neverShow('never', Color(0xFF8E2A4F), 'In More of');
+
+  const PickerMode(this.keyPrefix, this.fill, this.otherLabel);
+
+  /// Keeps the two pickers' chips apart on one screen.
+  final String keyPrefix;
+  final Color fill;
+
+  /// Beside a subject that is in the other list, and so cannot be chosen.
+  final String otherLabel;
+}
+
 /// The five pillars as the Discover pills; tapping one opens its subjects
 /// underneath as chips, "All of [pillar]" first. Several can be open at
-/// once, and any combination chosen.
+/// once, and any combination chosen. A subject in [other] — the other
+/// list — is shown but cannot be chosen: nothing is "More of" and "Never
+/// show" at once.
 class InterestsPicker extends ConsumerStatefulWidget {
   const InterestsPicker({
     super.key,
     required this.selected,
     required this.onChanged,
+    this.mode = PickerMode.moreOf,
+    this.other = const {},
   });
 
   final Set<String> selected;
   final ValueChanged<Set<String>> onChanged;
+  final PickerMode mode;
+  final Set<String> other;
 
   @override
   ConsumerState<InterestsPicker> createState() => _InterestsPickerState();
@@ -59,6 +83,8 @@ class _InterestsPickerState extends ConsumerState<InterestsPicker> {
   Widget build(BuildContext context) {
     final subjects = ref.watch(subjectsProvider).value ?? const <Subject>[];
     final still = reduceMotion(context);
+    final mode = widget.mode;
+    final prefix = mode.keyPrefix;
     String name(String slug) {
       for (final s in subjects) {
         if (s.slug == slug) return s.name;
@@ -74,9 +100,10 @@ class _InterestsPickerState extends ConsumerState<InterestsPicker> {
       children: [
         for (final pillar in subjectPillars.keys) ...[
           _PillarPill(
-            key: ValueKey('interest-pillar-$pillar'),
+            key: ValueKey('$prefix-pillar-$pillar'),
             label: pillar,
             look: _pillarLook[pillar]!,
+            fill: mode.fill,
             open: _open.contains(pillar),
             chosen: subjectPillars[pillar]!
                 .where(widget.selected.contains)
@@ -99,22 +126,27 @@ class _InterestsPickerState extends ConsumerState<InterestsPicker> {
                       spacing: 8,
                       runSpacing: 10,
                       children: [
-                        _chip(
-                          key: ValueKey('interest-all-$pillar'),
-                          label: 'All of $pillar',
-                          selected: subjectPillars[pillar]!.every(
-                            widget.selected.contains,
+                        // "All of" takes every subject it can — not those
+                        // in the other list.
+                        if ([
+                              for (final s in subjectPillars[pillar]!)
+                                if (!widget.other.contains(s)) s,
+                            ]
+                            case final open when open.isNotEmpty)
+                          _chip(
+                            key: ValueKey('$prefix-all-$pillar'),
+                            label: 'All of $pillar',
+                            selected: open.every(widget.selected.contains),
+                            accent: _pillarLook[pillar]!.$2,
+                            onSelected: (on) => _toggle(open, on),
                           ),
-                          accent: _pillarLook[pillar]!.$2,
-                          onSelected: (on) =>
-                              _toggle(subjectPillars[pillar]!, on),
-                        ),
                         for (final slug in subjectPillars[pillar]!)
                           _chip(
-                            key: ValueKey('interest-$slug'),
+                            key: ValueKey('$prefix-$slug'),
                             label: name(slug),
                             selected: widget.selected.contains(slug),
                             accent: _pillarLook[pillar]!.$2,
+                            taken: widget.other.contains(slug),
                             onSelected: (on) => _toggle([slug], on),
                           ),
                       ],
@@ -132,33 +164,76 @@ class _InterestsPickerState extends ConsumerState<InterestsPicker> {
     required bool selected,
     required Color accent,
     required ValueChanged<bool> onSelected,
-  }) => FilterChip(
-    key: key,
-    label: Text(label),
-    selected: selected,
-    showCheckmark: true,
-    checkmarkColor: Colors.white,
-    selectedColor: SpColors.primary,
-    backgroundColor: SpColors.surface,
-    side: BorderSide(
-      color: selected ? Colors.transparent : accent.withValues(alpha: 0.35),
-    ),
-    labelStyle: const TextStyle(
-      fontFamily: 'Geist',
-      fontWeight: FontWeight.w500,
-      color: SpColors.text,
-    ),
-    onSelected: onSelected,
-  );
+    bool taken = false,
+  }) {
+    final never = widget.mode == PickerMode.neverShow;
+    if (taken) {
+      // In the other list: shown, so nothing seems missing, but not here.
+      return Semantics(
+        label: '$label, ${widget.mode.otherLabel}',
+        excludeSemantics: true,
+        child: Chip(
+          key: key,
+          label: Text.rich(
+            TextSpan(
+              children: [
+                TextSpan(text: label),
+                TextSpan(
+                  text: '  ${widget.mode.otherLabel}',
+                  style: const TextStyle(
+                    fontSize: 11.5,
+                    color: SpColors.textFaint,
+                  ),
+                ),
+              ],
+            ),
+          ),
+          backgroundColor: SpColors.background,
+          side: const BorderSide(color: SpColors.border),
+          labelStyle: const TextStyle(
+            fontFamily: 'Geist',
+            fontWeight: FontWeight.w500,
+            color: SpColors.textFaint,
+          ),
+        ),
+      );
+    }
+    return FilterChip(
+      key: key,
+      label: Text(label),
+      selected: selected,
+      showCheckmark: !never,
+      checkmarkColor: Colors.white,
+      avatar: never && selected
+          ? const Icon(
+              Icons.visibility_off_outlined,
+              size: 16,
+              color: Colors.white,
+            )
+          : null,
+      selectedColor: widget.mode.fill,
+      backgroundColor: SpColors.surface,
+      side: BorderSide(
+        color: selected ? Colors.transparent : accent.withValues(alpha: 0.35),
+      ),
+      labelStyle: const TextStyle(
+        fontFamily: 'Geist',
+        fontWeight: FontWeight.w500,
+        color: SpColors.text,
+      ),
+      onSelected: onSelected,
+    );
+  }
 }
 
-/// A pillar, drawn as the Discover pills are: a stadium outline, filled
-/// violet once something in it is chosen.
+/// A pillar, drawn as the Discover pills are: a stadium outline, filled once
+/// something in it is chosen (violet for More of, rose for Never show).
 class _PillarPill extends StatelessWidget {
   const _PillarPill({
     super.key,
     required this.label,
     required this.look,
+    required this.fill,
     required this.open,
     required this.chosen,
     required this.onTap,
@@ -166,6 +241,7 @@ class _PillarPill extends StatelessWidget {
 
   final String label;
   final (IconData, Color) look;
+  final Color fill;
   final bool open;
   final int chosen;
   final VoidCallback onTap;
@@ -180,7 +256,7 @@ class _PillarPill extends StatelessWidget {
       label: chosen > 0 ? '$label, $chosen chosen' : label,
       excludeSemantics: true,
       child: Material(
-        color: active ? SpColors.primary : Colors.transparent,
+        color: active ? fill : Colors.transparent,
         shape: StadiumBorder(
           side: BorderSide(
             color: active
@@ -252,7 +328,8 @@ class _PillarPill extends StatelessWidget {
 
 /// "What interests you most?" — once, straight after the first-launch intro.
 /// Choosing saves at once (phone, and the account if signed in); skipping,
-/// or exploring with nothing chosen, saves nothing and changes nothing.
+/// or exploring with nothing chosen, saves no More of and changes nothing.
+/// "Anything you'd rather not see?" opens the same picker for Never show.
 class OnboardingScreen extends ConsumerStatefulWidget {
   const OnboardingScreen({super.key, required this.onDone});
 
@@ -265,6 +342,10 @@ class OnboardingScreen extends ConsumerStatefulWidget {
 class _OnboardingScreenState extends ConsumerState<OnboardingScreen> {
   late Set<String> _selected = {...ref.read(interestsProvider).subjects};
 
+  /// "Anything you'd rather not see?" is open. A panel of its own, not a
+  /// sheet: onboarding plays above the app's navigator.
+  bool _never = false;
+
   void _explore() {
     if (_selected.isNotEmpty) {
       ref.read(interestsProvider.notifier).choose(_selected);
@@ -272,120 +353,259 @@ class _OnboardingScreenState extends ConsumerState<OnboardingScreen> {
     widget.onDone();
   }
 
+  Future<void> _neverDone(Set<String>? hidden) async {
+    setState(() => _never = false);
+    if (hidden == null) return;
+    await ref.read(interestsProvider.notifier).hide(hidden);
+  }
+
   @override
   Widget build(BuildContext context) {
+    final hidden = {...ref.watch(interestsProvider).hidden};
     return Material(
       key: const ValueKey('onboarding'),
       color: SpColors.background,
       child: SafeArea(
-        child: Column(
-          children: [
-            Expanded(
-              child: ListView(
-                padding: const EdgeInsets.fromLTRB(24, 28, 24, 24),
+        child: _never
+            ? _NeverShowPanel(
+                hidden: hidden,
+                moreOf: _selected,
+                onDone: _neverDone,
+              )
+            : Column(
                 children: [
-                  const Center(
-                    child: SizedBox(width: 64, height: 64, child: StarSprite()),
-                  ),
-                  const SizedBox(height: 22),
-                  const Text(
-                    'Welcome to Spiritpedia.',
-                    textAlign: TextAlign.center,
-                    style: TextStyle(
-                      fontSize: 27,
-                      fontWeight: FontWeight.w700,
-                      letterSpacing: -0.3,
+                  Expanded(
+                    child: ListView(
+                      padding: const EdgeInsets.fromLTRB(24, 28, 24, 24),
+                      children: [
+                        const Center(
+                          child: SizedBox(
+                            width: 64,
+                            height: 64,
+                            child: StarSprite(),
+                          ),
+                        ),
+                        const SizedBox(height: 22),
+                        const Text(
+                          'Welcome to Spiritpedia.',
+                          textAlign: TextAlign.center,
+                          style: TextStyle(
+                            fontSize: 27,
+                            fontWeight: FontWeight.w700,
+                            letterSpacing: -0.3,
+                          ),
+                        ),
+                        const SizedBox(height: 10),
+                        const Text(
+                          'A universe of wisdom is waiting to be explored.',
+                          textAlign: TextAlign.center,
+                          style: TextStyle(
+                            fontSize: 16,
+                            height: 1.45,
+                            color: SpColors.textMuted,
+                          ),
+                        ),
+                        const SizedBox(height: 30),
+                        const Text(
+                          'What interests you most?',
+                          style: TextStyle(
+                            fontSize: 21,
+                            fontWeight: FontWeight.w700,
+                          ),
+                        ),
+                        const SizedBox(height: 6),
+                        const Text(
+                          interestsNote,
+                          style: TextStyle(
+                            fontSize: 13,
+                            height: 1.45,
+                            color: SpColors.textFaint,
+                          ),
+                        ),
+                        const SizedBox(height: 20),
+                        InterestsPicker(
+                          selected: _selected,
+                          other: hidden,
+                          onChanged: (v) => setState(() => _selected = v),
+                        ),
+                      ],
                     ),
                   ),
-                  const SizedBox(height: 10),
-                  const Text(
-                    'A universe of wisdom is waiting to be explored.',
-                    textAlign: TextAlign.center,
-                    style: TextStyle(
-                      fontSize: 16,
-                      height: 1.45,
-                      color: SpColors.textMuted,
+                  Padding(
+                    padding: const EdgeInsets.fromLTRB(24, 8, 24, 4),
+                    child: SizedBox(
+                      width: double.infinity,
+                      height: 52,
+                      child: FilledButton(
+                        key: const ValueKey('onboarding-explore'),
+                        onPressed: _explore,
+                        style: FilledButton.styleFrom(
+                          backgroundColor: SpColors.primary,
+                          shape: const StadiumBorder(),
+                        ),
+                        child: const Text(
+                          'Explore Spiritpedia →',
+                          style: TextStyle(
+                            fontSize: 16,
+                            fontWeight: FontWeight.w700,
+                          ),
+                        ),
+                      ),
                     ),
                   ),
-                  const SizedBox(height: 30),
-                  const Text(
-                    'What interests you most?',
-                    style: TextStyle(fontSize: 21, fontWeight: FontWeight.w700),
+                  TextButton(
+                    key: const ValueKey('onboarding-skip'),
+                    onPressed: widget.onDone,
+                    style: TextButton.styleFrom(
+                      foregroundColor: SpColors.textMuted,
+                    ),
+                    child: const Text('Skip for now'),
                   ),
-                  const SizedBox(height: 6),
-                  const Text(
-                    interestsNote,
-                    style: TextStyle(
-                      fontSize: 13,
-                      height: 1.45,
-                      color: SpColors.textFaint,
+                  TextButton(
+                    key: const ValueKey('onboarding-never-show'),
+                    onPressed: () => setState(() => _never = true),
+                    style: TextButton.styleFrom(
+                      foregroundColor: SpColors.textFaint,
+                      textStyle: const TextStyle(fontSize: 13),
+                      visualDensity: VisualDensity.compact,
+                    ),
+                    child: Text(
+                      hidden.isEmpty
+                          ? 'Anything you’d rather not see?'
+                          : 'Hidden: ${hidden.length} · Change',
                     ),
                   ),
-                  const SizedBox(height: 20),
-                  InterestsPicker(
-                    selected: _selected,
-                    onChanged: (v) => setState(() => _selected = v),
-                  ),
+                  const SizedBox(height: 2),
                 ],
               ),
-            ),
-            Padding(
-              padding: const EdgeInsets.fromLTRB(24, 8, 24, 4),
-              child: SizedBox(
-                width: double.infinity,
-                height: 52,
-                child: FilledButton(
-                  key: const ValueKey('onboarding-explore'),
-                  onPressed: _explore,
-                  style: FilledButton.styleFrom(
-                    backgroundColor: SpColors.primary,
-                    shape: const StadiumBorder(),
-                  ),
-                  child: const Text(
-                    'Explore Spiritpedia →',
-                    style: TextStyle(fontSize: 16, fontWeight: FontWeight.w700),
-                  ),
-                ),
-              ),
-            ),
-            TextButton(
-              key: const ValueKey('onboarding-skip'),
-              onPressed: widget.onDone,
-              style: TextButton.styleFrom(foregroundColor: SpColors.textMuted),
-              child: const Text('Skip for now'),
-            ),
-            const SizedBox(height: 4),
-          ],
-        ),
       ),
     );
   }
 }
 
-/// Account → Your interests (and the menu's): the same picker, saved on
-/// "Save". Clearing everything and saving is a choice too.
-class InterestsScreen extends ConsumerStatefulWidget {
-  const InterestsScreen({super.key});
+/// Onboarding's "Anything you'd rather not see?": the picker in Never show
+/// mode. [onDone] gets what is hidden on "Done", or null on "Back". [moreOf]
+/// cannot be hidden.
+class _NeverShowPanel extends StatefulWidget {
+  const _NeverShowPanel({
+    required this.hidden,
+    required this.moreOf,
+    required this.onDone,
+  });
+
+  final Set<String> hidden;
+  final Set<String> moreOf;
+  final ValueChanged<Set<String>?> onDone;
 
   @override
-  ConsumerState<InterestsScreen> createState() => _InterestsScreenState();
+  State<_NeverShowPanel> createState() => _NeverShowPanelState();
 }
 
-class _InterestsScreenState extends ConsumerState<InterestsScreen> {
-  late Set<String> _selected = {...ref.read(interestsProvider).subjects};
+class _NeverShowPanelState extends State<_NeverShowPanel> {
+  late Set<String> _hidden = {...widget.hidden};
+
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      key: const ValueKey('never-show-sheet'),
+      children: [
+        Align(
+          alignment: Alignment.centerLeft,
+          // No tooltip: onboarding has no overlay to show one in.
+          child: Semantics(
+            label: 'Back',
+            button: true,
+            excludeSemantics: true,
+            child: IconButton(
+              key: const ValueKey('never-show-back'),
+              onPressed: () => widget.onDone(null),
+              icon: const Icon(Icons.arrow_back_rounded),
+            ),
+          ),
+        ),
+        Expanded(
+          child: ListView(
+            padding: const EdgeInsets.fromLTRB(24, 4, 24, 16),
+            children: [
+              const Text(
+                'Anything you’d rather not see?',
+                style: TextStyle(fontSize: 21, fontWeight: FontWeight.w700),
+              ),
+              const SizedBox(height: 6),
+              const Text(
+                _neverNote,
+                style: TextStyle(
+                  fontSize: 13,
+                  height: 1.45,
+                  color: SpColors.textFaint,
+                ),
+              ),
+              const SizedBox(height: 20),
+              InterestsPicker(
+                mode: PickerMode.neverShow,
+                selected: _hidden,
+                other: widget.moreOf,
+                onChanged: (v) => setState(() => _hidden = v),
+              ),
+            ],
+          ),
+        ),
+        Padding(
+          padding: const EdgeInsets.fromLTRB(24, 8, 24, 16),
+          child: SizedBox(
+            width: double.infinity,
+            height: 52,
+            child: FilledButton(
+              key: const ValueKey('never-show-done'),
+              onPressed: () => widget.onDone(_hidden),
+              style: FilledButton.styleFrom(
+                backgroundColor: SpColors.primary,
+                shape: const StadiumBorder(),
+              ),
+              child: const Text(
+                'Done',
+                style: TextStyle(fontSize: 16, fontWeight: FontWeight.w700),
+              ),
+            ),
+          ),
+        ),
+      ],
+    );
+  }
+}
+
+const _neverNote =
+    'Optional. Anything with these subjects stays out of Discover, Videos '
+    'and Books. You can still find it by searching for it.';
+
+/// Account → Tailor Spiritpedia (and the menu's): More of and Never show,
+/// the same picker twice, saved together on "Save". Clearing everything and
+/// saving is a choice too.
+class TailorScreen extends ConsumerStatefulWidget {
+  const TailorScreen({super.key});
+
+  @override
+  ConsumerState<TailorScreen> createState() => _TailorScreenState();
+}
+
+class _TailorScreenState extends ConsumerState<TailorScreen> {
+  late Set<String> _more = {...ref.read(interestsProvider).subjects};
+  late Set<String> _never = {...ref.read(interestsProvider).hidden};
 
   Future<void> _save() async {
     final messenger = ScaffoldMessenger.of(context);
     final navigator = Navigator.of(context);
-    await ref.read(interestsProvider.notifier).choose(_selected);
+    await ref
+        .read(interestsProvider.notifier)
+        .tailor(subjects: _more, hidden: _never);
     messenger
       ..hideCurrentSnackBar()
       ..showSnackBar(
         SnackBar(
           content: Text(
-            _selected.isEmpty
-                ? 'Your interests are cleared'
-                : 'Your interests are saved',
+            _more.isEmpty && _never.isEmpty
+                ? 'Spiritpedia is back to how everyone sees it'
+                : 'Saved: Spiritpedia is tailored to you',
           ),
         ),
       );
@@ -394,14 +614,23 @@ class _InterestsScreenState extends ConsumerState<InterestsScreen> {
 
   @override
   Widget build(BuildContext context) {
+    const heading = TextStyle(fontSize: 21, fontWeight: FontWeight.w700);
+    const note = TextStyle(
+      fontSize: 13,
+      height: 1.45,
+      color: SpColors.textFaint,
+    );
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Your interests'),
+        title: const Text('Tailor Spiritpedia'),
         actions: [
-          if (_selected.isNotEmpty)
+          if (_more.isNotEmpty || _never.isNotEmpty)
             TextButton(
-              key: const ValueKey('interests-clear'),
-              onPressed: () => setState(() => _selected = {}),
+              key: const ValueKey('tailor-clear'),
+              onPressed: () => setState(() {
+                _more = {};
+                _never = {};
+              }),
               style: TextButton.styleFrom(foregroundColor: SpColors.link),
               child: const Text('Clear all'),
             ),
@@ -414,23 +643,35 @@ class _InterestsScreenState extends ConsumerState<InterestsScreen> {
               child: ListView(
                 padding: const EdgeInsets.fromLTRB(20, 8, 20, 24),
                 children: [
+                  const Text(interestsNote, style: note),
+                  const SizedBox(height: 22),
+                  const Text('More of', style: heading),
+                  const SizedBox(height: 4),
                   const Text(
-                    'What interests you most?',
-                    style: TextStyle(fontSize: 21, fontWeight: FontWeight.w700),
+                    'Shown first on Discover, Videos and Books, and in '
+                    'Spiritpedia Suggests.',
+                    style: note,
                   ),
-                  const SizedBox(height: 6),
-                  const Text(
-                    interestsNote,
-                    style: TextStyle(
-                      fontSize: 13,
-                      height: 1.45,
-                      color: SpColors.textFaint,
-                    ),
-                  ),
-                  const SizedBox(height: 20),
+                  const SizedBox(height: 16),
                   InterestsPicker(
-                    selected: _selected,
-                    onChanged: (v) => setState(() => _selected = v),
+                    key: const ValueKey('tailor-more-of'),
+                    selected: _more,
+                    other: _never,
+                    onChanged: (v) => setState(() => _more = v),
+                  ),
+                  const SizedBox(height: 18),
+                  const Divider(),
+                  const SizedBox(height: 18),
+                  const Text('Never show', style: heading),
+                  const SizedBox(height: 4),
+                  const Text(_neverNote, style: note),
+                  const SizedBox(height: 16),
+                  InterestsPicker(
+                    key: const ValueKey('tailor-never-show'),
+                    mode: PickerMode.neverShow,
+                    selected: _never,
+                    other: _more,
+                    onChanged: (v) => setState(() => _never = v),
                   ),
                 ],
               ),
@@ -441,7 +682,7 @@ class _InterestsScreenState extends ConsumerState<InterestsScreen> {
                 width: double.infinity,
                 height: 52,
                 child: FilledButton(
-                  key: const ValueKey('interests-save'),
+                  key: const ValueKey('tailor-save'),
                   onPressed: _save,
                   style: FilledButton.styleFrom(
                     backgroundColor: SpColors.primary,
@@ -461,11 +702,25 @@ class _InterestsScreenState extends ConsumerState<InterestsScreen> {
   }
 }
 
-/// A short summary of the choice, for Account and the menu: "Meditation,
-/// Yoga and 3 more", or null if nothing is chosen.
+/// A short summary of a list, for Account and the menu: "Meditation, Yoga
+/// and 3 more", or null if nothing is chosen.
 String? interestsSummary(List<String> slugs, List<Subject>? subjects) {
   if (slugs.isEmpty) return null;
   final names = [for (final s in slugs) subjectName(subjects, s)];
   if (names.length <= 2) return names.join(' and ');
   return '${names.take(2).join(', ')} and ${names.length - 2} more';
+}
+
+/// Both lists in one line: "More of: Yoga · Hidden: Shamanism", or null.
+String? tailoringSummary(Interests interests, List<Subject>? subjects) {
+  final more = interestsSummary(interests.subjects, subjects);
+  final never = interestsSummary(interests.hidden, subjects);
+  return [
+    if (more != null) 'More of: $more',
+    if (never != null) 'Hidden: $never',
+  ].join(' · ').nullIfEmpty;
+}
+
+extension on String {
+  String? get nullIfEmpty => isEmpty ? null : this;
 }

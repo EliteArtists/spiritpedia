@@ -9,7 +9,8 @@ import '../interests/interests.dart';
 import '../shell/tab_bar_state.dart';
 
 /// "View All" and the five pillars, as one horizontally scrolling row — the
-/// pillars holding someone's chosen interests first. Tapping a pillar opens
+/// pillars holding someone's chosen interests first, and none whose every
+/// subject they hid. Tapping a pillar opens
 /// its subjects in a sheet — the website's hover panel, as a phone would show
 /// it. The chosen subject narrows the whole screen.
 class SubjectPillRow extends ConsumerWidget {
@@ -30,7 +31,12 @@ class SubjectPillRow extends ConsumerWidget {
     final current = ref.watch(filter);
     final subjects = ref.watch(subjectsProvider).value ?? const <Subject>[];
     final activePillar = pillarOf(current);
-    final pillars = pillarsByInterest(ref.watch(interestSubjectsProvider));
+    final hidden = ref.watch(hiddenSubjectsProvider);
+    final pillars = pillarsByInterest(
+      ref.watch(interestSubjectsProvider),
+      null,
+      hidden,
+    );
 
     return SizedBox(
       height: 42,
@@ -61,10 +67,13 @@ class SubjectPillRow extends ConsumerWidget {
     List<Subject> subjects,
     String? current,
   ) {
+    // Never show: a hidden subject is left out of its pillar's list.
+    final hidden = ref.read(hiddenSubjectsProvider);
     final inPillar = [
       for (final slug in subjectPillars[pillar]!)
-        for (final s in subjects)
-          if (s.slug == slug) s,
+        if (!hidden.contains(slug))
+          for (final s in subjects)
+            if (s.slug == slug) s,
     ];
     final sheet = showModalBottomSheet<void>(
       context: context,

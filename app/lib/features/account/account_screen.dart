@@ -82,7 +82,7 @@ class _AccountScreenState extends ConsumerState<AccountScreen> {
             else ...[
               const SignInForm(),
               const SizedBox(height: 28),
-              const YourInterestsCard(),
+              const TailorCard(),
             ],
             const SizedBox(height: 36),
             const _Links(),
@@ -436,7 +436,7 @@ class _SignedInState extends ConsumerState<_SignedIn> {
           ),
         ),
         const SizedBox(height: 22),
-        const YourInterestsCard(),
+        const TailorCard(),
         const SizedBox(height: 22),
         KeyedSubtree(
           key: widget.notificationsKey,
@@ -482,32 +482,32 @@ class _SignedInState extends ConsumerState<_SignedIn> {
   }
 }
 
-/// "Your interests": what was chosen at onboarding, and the way back into
-/// the same picker. Signed in or out — the choice works either way.
-class YourInterestsCard extends ConsumerWidget {
-  const YourInterestsCard({super.key});
+/// "Tailor Spiritpedia": More of and Never show, and the way back into the
+/// picker. Signed in or out — the choice works either way.
+class TailorCard extends ConsumerWidget {
+  const TailorCard({super.key});
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final summary = interestsSummary(
-      ref.watch(interestsProvider).subjects,
+    final summary = tailoringSummary(
+      ref.watch(interestsProvider),
       ref.watch(subjectsProvider).value,
     );
     return _Card(
       padding: EdgeInsets.zero,
       child: ListTile(
-        key: const ValueKey('account-interests'),
-        onTap: () => context.push('/interests'),
+        key: const ValueKey('account-tailor'),
+        onTap: () => context.push('/tailor'),
         contentPadding: const EdgeInsets.fromLTRB(18, 6, 12, 6),
         leading: const Icon(Icons.tune_rounded, color: SpColors.link),
         minLeadingWidth: 24,
         title: const Text(
-          'Your interests',
+          'Tailor Spiritpedia',
           style: TextStyle(fontSize: 15, fontWeight: FontWeight.w600),
         ),
         subtitle: Text(
-          summary ?? 'Choose the subjects you see first',
-          maxLines: 1,
+          summary ?? 'Subjects to see more of, or never',
+          maxLines: 2,
           overflow: TextOverflow.ellipsis,
           style: const TextStyle(fontSize: 13, color: SpColors.textMuted),
         ),

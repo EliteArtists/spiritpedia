@@ -26,31 +26,66 @@ typedef _Item = ({String id, List<String> subjects});
 List<String> _subjects(_Item i) => i.subjects;
 
 void main() {
-  group('the ranking rules', () {
+  group('More of: three levels (docs/personalisation.md)', () {
+    // Someone who chose only Reiki (Emotional Healing).
     const items = <_Item>[
-      (id: 'a', subjects: ['yoga']),
-      (id: 'b', subjects: ['meditation']),
-      (id: 'c', subjects: ['meditation', 'shadow-work']),
-      (id: 'd', subjects: []),
+      (id: 'yoga', subjects: ['yoga']),
+      (id: 'energy', subjects: ['energy-medicine']),
+      (id: 'none', subjects: []),
+      (id: 'reiki', subjects: ['reiki']),
+      (id: 'quantum', subjects: ['quantum-touch', 'astrology']),
+      (id: 'reiki+', subjects: ['reiki', 'self-healing']),
     ];
+    List<String> ids(List<_Item> l) => [for (final i in l) i.id];
 
     test('no choice changes nothing', () {
-      expect(interestFirst(items, const {}, _subjects), same(items));
+      expect(byInterest(items, const {}, _subjects), same(items));
       expect(forYou(items, const {}, _subjects), isEmpty);
       expect(pillarsByInterest(const {}), subjectPillars.keys.toList());
     });
 
-    test('chosen subjects move ahead, more of them first; nothing removed', () {
-      final ranked = interestFirst(items, {
-        'meditation',
+    test('Reiki, then the rest of Emotional Healing, then everything else; '
+        'each level in its own order, nothing removed', () {
+      expect(ids(byInterest(items, {'reiki'}, _subjects)), [
+        'reiki', // level 1, in order
+        'reiki+',
+        'energy', // level 2: Energy Medicine, Quantum Touch
+        'quantum',
+        'yoga', // level 3, in order
+        'none',
+      ]);
+      expect(interestLevel(['reiki'], {'reiki'}), 0);
+      expect(interestLevel(['self-healing'], {'reiki'}), 1);
+      expect(interestLevel(['yoga'], {'reiki'}), 2);
+      expect(pillarMates({'reiki'}), {
         'shadow-work',
-      }, _subjects);
-      expect([for (final i in ranked) i.id], ['c', 'b', 'a', 'd']);
+        'self-healing',
+        'eft-tapping',
+        'breathwork',
+        'energy-medicine',
+        'conscious-relationships',
+        'quantum-touch',
+      });
     });
 
-    test('For You holds only what carries a chosen subject', () {
-      final shelf = forYou(items, {'meditation'}, _subjects);
-      expect([for (final i in shelf) i.id], ['b', 'c']);
+    test('in level 1, more chosen subjects first', () {
+      expect(ids(byInterest(items, {'reiki', 'self-healing'}, _subjects)), [
+        'reiki+',
+        'reiki',
+        'energy',
+        'quantum',
+        'yoga',
+        'none',
+      ]);
+    });
+
+    test('For You: levels 1 and 2 only', () {
+      expect(ids(forYou(items, {'reiki'}, _subjects)), [
+        'reiki',
+        'reiki+',
+        'energy',
+        'quantum',
+      ]);
     });
 
     test('pillars holding chosen subjects lead the pill row', () {
@@ -113,10 +148,73 @@ void main() {
         ).video,
         calm,
       );
-      expect(interestBonus(['a', 'b', 'c', 'd'], {'a', 'b', 'c', 'd'}), 60);
+      // Level 2 counts too, less than level 1.
+      expect(
+        suggest(
+          term: 'anxious',
+          rows: rows,
+          videos: [calm, still],
+          books: [],
+          interests: {'mindfulness'}, // Meditation's pillar, Consciousness
+        ).video,
+        still,
+      );
+      expect(interestBonus(['reiki'], {'reiki'}), 20);
+      expect(interestBonus(['self-healing'], {'reiki'}), 10);
+      expect(interestBonus(['yoga'], {'reiki'}), 0);
+      expect(
+        interestBonus(
+          ['reiki', 'breathwork', 'eft-tapping', 'self-healing'],
+          {'reiki', 'breathwork', 'eft-tapping', 'self-healing'},
+        ),
+        60,
+      );
     });
 
-    test('the summary for Account and the menu', () {
+    test('Suggests never suggests a hidden item, however relevant', () {
+      const calm = Video(
+        id: 1,
+        slug: 'calm',
+        title: 'Calm',
+        subjectSlugs: ['breathwork', 'shamanism'],
+      );
+      const still = Video(
+        id: 2,
+        slug: 'still',
+        title: 'Still',
+        subjectSlugs: ['meditation'],
+      );
+      const rows = [MappingRow('breathwork', 10), MappingRow('meditation', 1)];
+      expect(
+        suggest(
+          term: 'calm',
+          rows: rows,
+          videos: [calm, still],
+          books: [],
+          hidden: {'shamanism'},
+        ).video,
+        still,
+      );
+    });
+
+    test('the summaries for Account and the menu', () {
+      const names = [
+        Subject(slug: 'yoga', name: 'Yoga'),
+        Subject(slug: 'shamanism', name: 'Shamanism'),
+      ];
+      expect(tailoringSummary(Interests.none, names), isNull);
+      expect(
+        tailoringSummary(
+          const Interests(
+            subjects: ['yoga'],
+            hidden: ['shamanism'],
+            chosen: true,
+          ),
+          names,
+        ),
+        'More of: Yoga · Hidden: Shamanism',
+      );
+
       expect(interestsSummary(const [], null), isNull);
       const subjects = [
         Subject(slug: 'yoga', name: 'Yoga'),
@@ -128,6 +226,58 @@ void main() {
         interestsSummary(['yoga', 'reiki', 'a', 'b'], subjects),
         'Yoga, Reiki and 2 more',
       );
+    });
+  });
+
+  group('Never show: the rules (docs/personalisation.md)', () {
+    test('an item goes if ANY of its subjects is hidden', () {
+      expect(
+        isHiddenItem(['death-the-afterlife', 'shamanism'], {'shamanism'}),
+        isTrue,
+      );
+      expect(isHiddenItem(['death-the-afterlife'], {'shamanism'}), isFalse);
+      expect(isHiddenItem(const [], {'shamanism'}), isFalse);
+      expect(isHiddenItem(['shamanism'], const {}), isFalse);
+    });
+
+    test('a teacher goes only if EVERY subject they cover is hidden', () {
+      expect(isHiddenTeacher(['shamanism'], {'shamanism'}), isTrue);
+      expect(isHiddenTeacher(['shamanism', 'yoga'], {'shamanism'}), isFalse);
+      expect(isHiddenTeacher(const [], {'shamanism'}), isFalse);
+      final teacher = FakeContentRepository.healer(
+        1,
+        't',
+        'T',
+        'superhero',
+        subjects: ['shamanism', 'yoga'],
+      );
+      expect(isHidden(teacher, {'shamanism'}), isFalse);
+      expect(isHidden(teacher, {'shamanism', 'yoga'}), isTrue);
+      const book = Book(
+        id: 1,
+        slug: 'b',
+        title: 'B',
+        subjectSlugs: ['shamanism', 'yoga'],
+      );
+      expect(isHidden(book, {'shamanism'}), isTrue);
+    });
+
+    test('a pillar whose every subject is hidden leaves the pill row', () {
+      final mystical = {...subjectPillars['Mystical & Spiritual Exploration']!};
+      expect(
+        pillarsByInterest(const {}, null, mystical),
+        isNot(contains('Mystical & Spiritual Exploration')),
+      );
+      expect(
+        pillarsByInterest(const {}, null, {'shamanism'}),
+        contains('Mystical & Spiritual Exploration'),
+      );
+    });
+
+    test('nothing is More of and Never show at once', () {
+      final tidy = tidyInterests(['yoga', 'reiki'], ['reiki', 'shamanism']);
+      expect(tidy.subjects, ['yoga']);
+      expect(tidy.hidden, ['reiki', 'shamanism']);
     });
   });
 
@@ -195,24 +345,24 @@ void main() {
         await settle();
         account.restoreSession(_email);
         await settle();
-        expect(account.interestsByUser[_userId], ['yoga']);
+        expect(account.interestsByUser[_userId]?.subjects, ['yoga']);
       },
     );
 
     test('phone and account both chose: the account wins', () async {
       phone.value = const Interests(subjects: ['yoga'], chosen: true);
-      account.interestsByUser[_userId] = ['meditation'];
+      account.interestsByUser[_userId] = (subjects: ['meditation'], hidden: []);
       account.restoreSession(_email);
       final c = container();
       await settle();
       expect(c.read(interestsProvider).subjects, ['meditation']);
       expect(phone.value.subjects, ['meditation']);
-      expect(account.interestsByUser[_userId], ['meditation']);
+      expect(account.interestsByUser[_userId]?.subjects, ['meditation']);
     });
 
     test('an account that chose nothing wins too', () async {
       phone.value = const Interests(subjects: ['yoga'], chosen: true);
-      account.interestsByUser[_userId] = [];
+      account.interestsByUser[_userId] = (subjects: [], hidden: []);
       account.restoreSession(_email);
       final c = container();
       await settle();
@@ -225,15 +375,15 @@ void main() {
       final c = container();
       await settle();
       await c.read(interestsProvider.notifier).choose(['soul-purpose']);
-      expect(account.interestsByUser[_userId], ['soul-purpose']);
+      expect(account.interestsByUser[_userId]?.subjects, ['soul-purpose']);
       // Clearing is a choice as well.
       await c.read(interestsProvider.notifier).choose([]);
-      expect(account.interestsByUser[_userId], isEmpty);
+      expect(account.interestsByUser[_userId]?.subjects, isEmpty);
     });
 
     test('offline: the phone keeps it and sends it next time, over the '
         "account's older choice", () async {
-      account.interestsByUser[_userId] = ['meditation'];
+      account.interestsByUser[_userId] = (subjects: ['meditation'], hidden: []);
       account.restoreSession(_email);
       final c = container();
       await settle();
@@ -244,7 +394,7 @@ void main() {
 
       account.offline = false;
       await c.read(interestsProvider.notifier).syncWithAccount(_userId);
-      expect(account.interestsByUser[_userId], ['yoga']);
+      expect(account.interestsByUser[_userId]?.subjects, ['yoga']);
       expect(phone.pending, isFalse);
       expect(c.read(interestsProvider).subjects, ['yoga']);
     });
@@ -258,7 +408,7 @@ void main() {
       await settle();
       expect(phone.value.chosen, isFalse);
       expect(c.read(interestsProvider).subjects, isEmpty);
-      expect(account.interestsByUser[_userId], ['yoga']);
+      expect(account.interestsByUser[_userId]?.subjects, ['yoga']);
     });
 
     test('account deletion: nothing stays on the phone', () async {
@@ -270,6 +420,51 @@ void main() {
       await settle();
       expect(phone.value.chosen, isFalse);
       expect(account.interestsByUser, isEmpty);
+    });
+
+    test(
+      'Never show: kept, synced and won by the account the same way',
+      () async {
+        phone.value = const Interests(hidden: ['shamanism'], chosen: true);
+        container();
+        await settle();
+        account.restoreSession(_email);
+        await settle();
+        expect(account.interestsByUser[_userId]?.hidden, ['shamanism']);
+      },
+    );
+
+    test("hiding keeps More of; choosing keeps what's hidden", () async {
+      account.restoreSession(_email);
+      final c = container();
+      await settle();
+      final tailoring = c.read(interestsProvider.notifier);
+      await tailoring.choose(['yoga', 'reiki']);
+      await tailoring.hide(['shamanism', 'reiki']);
+      expect(phone.value.subjects, ['yoga']); // reiki gave way
+      expect(phone.value.hidden, ['reiki', 'shamanism']);
+      await tailoring.choose(['ayurveda']);
+      expect(phone.value.hidden, ['reiki', 'shamanism']);
+      expect(account.interestsByUser[_userId]?.subjects, ['ayurveda']);
+      expect(account.interestsByUser[_userId]?.hidden, ['reiki', 'shamanism']);
+      expect(c.read(hiddenSubjectsProvider), {'reiki', 'shamanism'});
+    });
+
+    test('the account wins with both lists', () async {
+      phone.value = const Interests(
+        subjects: ['yoga'],
+        hidden: ['astrology'],
+        chosen: true,
+      );
+      account.interestsByUser[_userId] = (
+        subjects: ['meditation'],
+        hidden: ['shamanism'],
+      );
+      account.restoreSession(_email);
+      final c = container();
+      await settle();
+      expect(c.read(interestsProvider).hidden, ['shamanism']);
+      expect(phone.value.hidden, ['shamanism']);
     });
   });
 }
