@@ -360,13 +360,36 @@ Earlier migrations (0000–0014) are described in the root README.
 - **The welcome notification is sometimes not sent.** One test turned
   notifications on, registered the token and saved General as on, but no
   welcome was recorded. Parked with the item above.
-- **The welcome tray needs a redesign.** Parked.
-- **Firebase should move to love@.** Move the Firebase project to
-  love@spiritpedia.co before launch.
+- **The welcome tray needs a redesign.** In-app messages (the welcome is the
+  first) mustn't appear abruptly. The plan:
+  - Wait until the person is on a main tab.
+  - Then the star flies down with its usual animation and lands on a tray
+    carrying the message.
+  - Never repeat "I am your guiding star".
+  - Swipe or tap to dismiss; it hides by itself after a few seconds.
+  - Frosted styling, to match the rest of the app.
+- **Firebase must move to love@spiritpedia.co.** Both projects (dev, and live
+  `spiritpedia-d190c`) are under the Elite Artists Google account, which will
+  be archived in about a month (mid-November 2026). The first attempt was
+  blocked by the Google Cloud organisation policy
+  `iam.disableServiceAccountKeyCreation` on the spiritpedia.co organisation.
+  In order:
+  1. Turn that policy off for the spiritpedia.co organisation.
+  2. Recreate both projects under love@. A half-built love@ dev project
+     already exists; finish it rather than starting again.
+  3. Upload the APNs key to both.
+  4. Swap the server keys (`FIREBASE_PROJECT_ID`, `FIREBASE_CLIENT_EMAIL`,
+     `FIREBASE_PRIVATE_KEY`, in the local `.env` files and in Vercel) and
+     the FlutterFire config (`lib/core/firebase/options_dev.dart` and
+     `options_prod.dart`).
+  5. Redeploy the website, then ship a new build and check a notification
+     arrives on dev and live.
+  6. Only then delete the Elite Artists projects.
 - **Dev can't use custom email templates.** The dev Supabase project is on
   the free plan, so its sign-in and change-email emails use Supabase's default
-  templates. On live, check that the Change Email Address template sends the
-  code (`{{ .Token }}`), as the app asks for a typed code.
+  templates. Live is fine: its Change Email Address template includes the
+  code (`{{ .Token }}`), fixed and tested on 14 October 2026 (codes reached
+  both addresses and the email changed).
 
 ---
 
@@ -379,7 +402,8 @@ Earlier migrations (0000–0014) are described in the root README.
    "⋯" (report and block) on the website's reviews.
 4. **The before-launch list:**
    - The notification issues above.
-   - The Firebase move.
+   - The Firebase move (before the Elite Artists account is archived,
+     mid-November 2026).
    - The welcome tray.
    - Have the Terms and Privacy Policy reviewed (they're a careful draft, not
      legal advice).
