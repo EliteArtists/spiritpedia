@@ -6,7 +6,7 @@ import Link from 'next/link';
 import AuthShell from '@/components/AuthShell';
 import { getSession, signInWithOtp } from '@/utils/supabaseAuth';
 import { recordPendingUserType } from '@/utils/onboarding';
-import { getUserType } from '@/utils/userType';
+import { getUserType, setUserType, USER_TYPES } from '@/utils/userType';
 
 // Sign in and sign up are the same page, because they are the same action:
 // type your address, receive a code. signInWithOtp creates the user if the
@@ -18,6 +18,19 @@ export default function SignupPage() {
   const [email, setEmail] = useState('');
   const [sending, setSending] = useState(false);
   const [error, setError] = useState(null);
+
+  // The app's "I share my work" lands here as ?as=practitioner, having skipped
+  // the masthead's question — the answer it would have given. Only ever
+  // practitioner; anything else leaves the stored answer alone.
+  useEffect(() => {
+    try {
+      if (new URLSearchParams(window.location.search).get('as') === USER_TYPES.practitioner) {
+        setUserType(USER_TYPES.practitioner);
+      }
+    } catch {
+      // No URL to read: the page asks nothing more of it.
+    }
+  }, []);
 
   // Someone already signed in has no business on a sign-in page.
   useEffect(() => {

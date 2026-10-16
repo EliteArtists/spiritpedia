@@ -415,30 +415,16 @@ Earlier migrations (0000–0014) are described in the root README.
 - **The first notification is sometimes not sent.** One test turned
   notifications on, registered the token and saved General as on, but no
   welcome was recorded. Parked with the item above.
-- **An email change on live didn't end where expected (found 16 October
-  2026; both accounts kept, nothing deleted).** A change from rossbaiken@ to
-  wiseoly@ on 14 October left two live accounts: rossbaiken@ (its saves and
-  tailoring) and wiseoly@, a new, empty account created on 15 October at
-  17:26 UTC by signing in with that address. The admin reads emails live from
-  Supabase Auth, so a completed change would show there by itself.
-  - `auth.audit_log_entries` is empty for these days: this project doesn't
-    record these events there.
-  - **From the account's own auth record** (admin API, read-only): change
-    codes were last sent on 14 Oct at 12:23:10 UTC; the account's email
-    identity was rewritten at 12:23:45; no change is pending now; the address
-    is rossbaiken@; it then signed in with rossbaiken@ at 18:00.
-  - **On dev** (same Supabase Auth version, v2.197.0), only a *completed*
-    change rewrites the identity; one code alone leaves the change pending,
-    and a later sign-in doesn't clear it. And the app says "Your email is now
-    …" only once the server returns a session, which only the second code
-    does.
-  - **Most likely, then:** the change to wiseoly@ completed earlier on 14
-    October, and a second change back to rossbaiken@ was requested at 12:23:10
-    and completed at 12:23:45. That would leave exactly these records.
-  - **To confirm:** the "Confirm Change of Email" emails in both Gmail
-    inboxes on 14 October (how many, and which way each one changes), or
-    Supabase Dashboard → Logs → Auth for 14 October, if the plan's log
-    retention still covers it.
+- **Email change: probably working; retest during final testing.** On 14
+  October a live account was changed from rossbaiken@ to wiseoly@ and back
+  again while testing, so rossbaiken@ ended unchanged, and signing in with
+  wiseoly@ on 15 October made a separate, new account. Both accounts are
+  kept. The auth records fit that exactly (the identity is rewritten only
+  when a change completes, checked on dev, same Supabase Auth version). The
+  admin reads emails live from Supabase Auth, so a completed change shows
+  there by itself. In final testing: change an email on live, check both
+  codes arrive, that the app shows the new address, and that the admin does
+  too.
 - **The welcome tray needs a redesign.** In-app messages mustn't appear
   abruptly. (Pushes now show as iPhone banners, so this is for messages the
   app shows itself.) The plan:

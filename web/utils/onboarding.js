@@ -98,12 +98,21 @@ export async function ensureProfile(userId, userType) {
   //
   // Narrowed to rows currently reading 'explorer', so this can only ever move
   // in one direction. A pending answer of 'explorer' changes nothing at all.
+  //
+  // An account made as an explorer — in the app, before "I share my work" —
+  // gets the practitioner welcome when it is upgraded here, as it would have
+  // had it signed up as one. Only when a row actually changed, so it is sent
+  // once.
   if (isPractitioner) {
-    await supabaseAuth
+    const { data: upgraded } = await supabaseAuth
       .from('user_profiles')
       .update({ user_type: USER_TYPES.practitioner })
       .eq('id', userId)
-      .eq('user_type', USER_TYPES.explorer);
+      .eq('user_type', USER_TYPES.explorer)
+      .select('id');
+    if (!created && Array.isArray(upgraded) && upgraded.length > 0) {
+      sendWelcome('/api/email/practitioner-welcome').catch(() => {});
+    }
   }
 
   return { error: null };
