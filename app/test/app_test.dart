@@ -786,6 +786,14 @@ void main() {
       );
       expect(conductor.visitCount, 5);
       expect(conductor.records[StarAsk.area]?.times, 1);
+      // The star has landed on the tray (and left the search box).
+      final trayStar = tester.widget<AnimatedOpacity>(
+        find.descendant(
+          of: find.byKey(const ValueKey('star-tray')),
+          matching: find.byType(AnimatedOpacity),
+        ),
+      );
+      expect(trayStar.opacity, 1);
       await tester.tap(find.byKey(const ValueKey('star-not-now')));
       await tester.pumpAndSettle();
       expect(find.byKey(const ValueKey('star-tray')), findsNothing);

@@ -61,6 +61,7 @@ class _Flight {
 
 class StarLayerState extends State<StarLayer> with TickerProviderStateMixin {
   final _flights = <Object, _Flight>{};
+  bool _gone = false;
 
   /// The tabs' pages, by path, once built.
   final tabs = <String, TabStarTarget>{};
@@ -201,16 +202,20 @@ class StarLayerState extends State<StarLayer> with TickerProviderStateMixin {
       return false;
     } finally {
       if (_flights[owner] == flight) _flights.remove(owner);
-      controller.dispose();
+      // The layer may have gone mid-flight (the app closing): it has
+      // disposed this already.
+      if (!_gone) controller.dispose();
       if (mounted) setState(() {});
     }
   }
 
   @override
   void dispose() {
+    _gone = true;
     for (final f in _flights.values) {
       f.controller.dispose();
     }
+    _flights.clear();
     incoming.dispose();
     super.dispose();
   }

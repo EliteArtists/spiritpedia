@@ -367,7 +367,7 @@ class _StarTrayHostState extends ConsumerState<StarTrayHost> {
         to: () => layer.tabs[tab]?.restingRect(),
       );
     }
-    layer?.incoming.value = null;
+    if (mounted) layer?.incoming.value = null;
   }
 
   @override
