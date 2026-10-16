@@ -211,8 +211,12 @@ anything under `web/` deploys live.
 - **Tier badges in shelf headings** (Superhero, Luminary, Local Hero) are
   tappable every time. The star explains what the tier means, and a tap
   anywhere closes it. Nothing appears on its own.
-- **Debug builds only:** "Replay intro" in Account replays the intro and
-  onboarding.
+- **Debug builds only:** in Account, "Replay intro" replays the intro and
+  onboarding; "Star visits" shows the visit count, with "Set to 5" (the area
+  question), "Set to 7" (the name question) and "Reset star questions" (clears
+  the area, the name, the "Not now" answers and the count). And
+  `flutter run --dart-define=START_ROUTE=/account` opens on that screen.
+  None of it is in TestFlight or App Store builds (`kDebugMode`).
 
 **The header and the menu.**
 - **One row:** the search bar with the star (about 80% of the width), then a

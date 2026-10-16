@@ -15,6 +15,8 @@ import '../intro/intro_overlay.dart';
 import '../notifications/notifications_section.dart';
 import '../reviews/reviews_providers.dart';
 import '../reviews/reviews_service.dart';
+import '../area/area.dart';
+import '../star/conductor.dart';
 import '../star/star_layer.dart';
 import 'account_providers.dart';
 import 'display_name.dart';
@@ -1204,9 +1206,119 @@ class _DebugTools extends ConsumerWidget {
                 ),
               ),
             ),
+            const SizedBox(height: 14),
+            const _StarVisits(),
           ],
         ),
       ),
+    );
+  }
+}
+
+/// DEBUG BUILDS ONLY: the star's visit count (lib/features/star/conductor.dart)
+/// and its questions, to test them without waiting for real visits.
+class _StarVisits extends ConsumerStatefulWidget {
+  const _StarVisits();
+
+  @override
+  ConsumerState<_StarVisits> createState() => _StarVisitsState();
+}
+
+class _StarVisitsState extends ConsumerState<_StarVisits> {
+  String? _note;
+
+  Future<void> _set(int visit, StarAsk ask) async {
+    final conductor = ref.read(conductorProvider.notifier);
+    final answered = ask == StarAsk.area
+        ? ref.read(areaProvider).place != null
+        : ref.read(displayNameProvider) != null;
+    await conductor.debugSetVisit(visit, ask);
+    if (!mounted) return;
+    setState(
+      () => _note = answered
+          ? 'Visit $visit — but the ${ask == StarAsk.area ? 'area' : 'name'} '
+                'is already set, so the star won’t ask. Reset first.'
+          : ask == StarAsk.name && ref.read(areaProvider).place == null
+          ? 'Visit $visit — but your area isn’t set, so the star asks about '
+                'the area first (one question a session).'
+          : 'Visit $visit. Go back to Discover: the star asks after about '
+                '3 seconds.',
+    );
+  }
+
+  Future<void> _reset() async {
+    final area = ref.read(areaProvider.notifier);
+    final name = ref.read(displayNameProvider.notifier);
+    final conductor = ref.read(conductorProvider.notifier);
+    await area.set(null);
+    await name.set(null);
+    await conductor.debugReset();
+    if (mounted) {
+      setState(
+        () => _note =
+            'Cleared: area, name, “Not now” answers and the count. The next '
+            'launch is visit 1.',
+      );
+    }
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final visit = ref.watch(conductorProvider).visit;
+    final style = OutlinedButton.styleFrom(
+      foregroundColor: SpColors.text,
+      side: const BorderSide(color: SpColors.border),
+      shape: const StadiumBorder(),
+      visualDensity: VisualDensity.compact,
+    );
+    return Column(
+      key: const ValueKey('debug-star-visits'),
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Text(
+          'Star visits: $visit',
+          key: const ValueKey('debug-visit-count'),
+          style: const TextStyle(fontWeight: FontWeight.w600),
+        ),
+        const SizedBox(height: 2),
+        const Text(
+          'Area question from visit 5, name question from visit 7.',
+          style: TextStyle(fontSize: 12.5, color: SpColors.textMuted),
+        ),
+        const SizedBox(height: 8),
+        Wrap(
+          spacing: 8,
+          runSpacing: 6,
+          children: [
+            OutlinedButton(
+              key: const ValueKey('debug-visit-5'),
+              onPressed: () => _set(5, StarAsk.area),
+              style: style,
+              child: const Text('Set to 5'),
+            ),
+            OutlinedButton(
+              key: const ValueKey('debug-visit-7'),
+              onPressed: () => _set(7, StarAsk.name),
+              style: style,
+              child: const Text('Set to 7'),
+            ),
+            OutlinedButton(
+              key: const ValueKey('debug-star-reset'),
+              onPressed: _reset,
+              style: style,
+              child: const Text('Reset star questions'),
+            ),
+          ],
+        ),
+        if (_note != null)
+          Padding(
+            padding: const EdgeInsets.only(top: 8),
+            child: Text(
+              _note!,
+              style: const TextStyle(fontSize: 12.5, color: SpColors.textMuted),
+            ),
+          ),
+      ],
     );
   }
 }

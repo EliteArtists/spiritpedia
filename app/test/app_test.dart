@@ -865,6 +865,43 @@ void main() {
       expect(find.byKey(const ValueKey('star-tray')), findsNothing);
     });
 
+    testWidgets('debug builds: the visit count, "Set to 5" and "Reset star '
+        'questions"', (tester) async {
+      final conductor = MemoryConductorStore(visitCount: 1);
+      final area = MemoryAreaStore();
+      await tester.pumpWidget(_app(conductor: conductor, area: area));
+      await tester.pump();
+      GoRouter.of(tester.element(find.byType(PillTabBar))).push('/account');
+      await tester.pumpAndSettle();
+      final count = find.byKey(const ValueKey('debug-visit-count'));
+      await tester.ensureVisible(count);
+      expect(find.text('Star visits: 2'), findsOneWidget); // this launch
+      await tester.tap(find.byKey(const ValueKey('debug-visit-5')));
+      await tester.pumpAndSettle();
+      expect(find.text('Star visits: 5'), findsOneWidget);
+      expect(conductor.visitCount, 5);
+
+      // Back on Discover, the star asks.
+      GoRouter.of(tester.element(find.byType(Navigator).first)).pop();
+      await tester.pumpAndSettle();
+      await tester.pump(const Duration(seconds: 4));
+      await tester.pumpAndSettle();
+      expect(find.byKey(const ValueKey('star-ask-area')), findsOneWidget);
+      await tester.tap(find.byKey(const ValueKey('star-not-now')));
+      await tester.pumpAndSettle();
+
+      GoRouter.of(tester.element(find.byType(PillTabBar))).push('/account');
+      await tester.pumpAndSettle();
+      final reset = find.byKey(const ValueKey('debug-star-reset'));
+      await tester.ensureVisible(reset);
+      await tester.tap(reset);
+      await tester.pumpAndSettle();
+      expect(find.text('Star visits: 0'), findsOneWidget);
+      expect(conductor.visitCount, 0);
+      expect(conductor.records, isEmpty);
+      expect(area.value.place, isNull);
+    });
+
     testWidgets('Tailor Spiritpedia: "Your area" at the top', (tester) async {
       await tester.pumpWidget(
         _app(

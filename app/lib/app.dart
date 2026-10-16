@@ -1,5 +1,6 @@
 import 'dart:async';
 
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
@@ -47,7 +48,15 @@ class _SpiritpediaAppState extends ConsumerState<SpiritpediaApp> {
     // own banner (FirebasePushMessaging.showWhileOpen); tapped, it opens here.
     _subs.add(messaging.opened.listen((note) => _open(note.route)));
     messaging.initialNote().then((note) => _open(note?.route));
+    // DEBUG BUILDS ONLY: open on a screen, over Discover —
+    //   flutter run --dart-define=START_ROUTE=/account
+    // Compiled out of release builds (kDebugMode is a constant).
+    if (kDebugMode && _startRoute.isNotEmpty) {
+      WidgetsBinding.instance.addPostFrameCallback((_) => _open(_startRoute));
+    }
   }
+
+  static const _startRoute = String.fromEnvironment('START_ROUTE');
 
   @override
   void dispose() {

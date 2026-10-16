@@ -86,6 +86,10 @@ abstract class ConductorStore {
   Future<void> setVisits(int n);
   Future<AskRecord> record(StarAsk ask);
   Future<void> setRecord(StarAsk ask, AskRecord record);
+
+  /// Forget the count and every answer (debug builds' "Reset star
+  /// questions").
+  Future<void> reset();
 }
 
 class PreferencesConductorStore implements ConductorStore {
@@ -122,6 +126,18 @@ class PreferencesConductorStore implements ConductorStore {
   }
 
   @override
+  Future<void> reset() async {
+    try {
+      await _prefs.remove('star_visits');
+      for (final ask in StarAsk.values) {
+        await _prefs.remove('star_ask_${ask.name}_times');
+        await _prefs.remove('star_ask_${ask.name}_visit');
+        await _prefs.remove('star_ask_${ask.name}_at');
+      }
+    } catch (_) {}
+  }
+
+  @override
   Future<void> setRecord(StarAsk ask, AskRecord r) async {
     try {
       await _prefs.setInt('star_ask_${ask.name}_times', r.times);
@@ -154,6 +170,12 @@ class MemoryConductorStore implements ConductorStore {
   @override
   Future<void> setRecord(StarAsk ask, AskRecord record) async =>
       records[ask] = record;
+
+  @override
+  Future<void> reset() async {
+    visitCount = 0;
+    records.clear();
+  }
 }
 
 final conductorStoreProvider = Provider<ConductorStore>(
@@ -178,9 +200,13 @@ class ConductorState {
     this.appeared = false,
     this.searched = false,
     this.asking,
+    this.tick = 0,
   });
 
   final int visit;
+
+  /// Bumped by the debug controls: the tray looks again.
+  final int tick;
   final bool appeared;
   final bool searched;
   final StarAsk? asking;
@@ -196,6 +222,7 @@ class ConductorState {
     appeared: appeared ?? this.appeared,
     searched: searched ?? this.searched,
     asking: clearAsking ? null : (asking ?? this.asking),
+    tick: tick,
   );
 }
 
@@ -208,7 +235,26 @@ class Conductor extends Notifier<ConductorState> {
     final store = ref.read(conductorStoreProvider);
     final visit = await store.visits() + 1;
     await store.setVisits(visit);
-    if (ref.mounted) state = ConductorState(visit: visit);
+    if (ref.mounted) state = ConductorState(visit: visit, tick: state.tick);
+  }
+
+  /// DEBUG BUILDS ONLY (Account): make this session visit [visit], with
+  /// [ask] never asked before — so the star asks it on the next quiet
+  /// moment on a main tab.
+  Future<void> debugSetVisit(int visit, StarAsk ask) async {
+    final store = ref.read(conductorStoreProvider);
+    await store.setVisits(visit);
+    await store.setRecord(ask, _neverAsked);
+    if (ref.mounted) {
+      state = ConductorState(visit: visit, tick: state.tick + 1);
+    }
+  }
+
+  /// DEBUG BUILDS ONLY: the count and every answer forgotten. The next
+  /// launch is visit 1.
+  Future<void> debugReset() async {
+    await ref.read(conductorStoreProvider).reset();
+    if (ref.mounted) state = ConductorState(tick: state.tick + 1);
   }
 
   /// The search opened: the star keeps quiet for the rest of the session.
@@ -372,6 +418,11 @@ class _StarTrayHostState extends ConsumerState<StarTrayHost> {
 
   @override
   Widget build(BuildContext context) {
+    // The debug controls changed the visit: look for a quiet moment again.
+    ref.listen(conductorProvider.select((s) => s.tick), (_, _) {
+      _tries = 0;
+      _schedule();
+    });
     final asking = ref.watch(conductorProvider).asking;
     if (asking == null) return const SizedBox.shrink();
     return Positioned(
