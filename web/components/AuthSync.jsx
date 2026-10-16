@@ -4,7 +4,8 @@ import { useEffect, useRef } from 'react';
 import { usePathname } from 'next/navigation';
 import { supabaseAuth } from '../utils/supabaseAuth.js';
 import { ensureProfile, migrateFavourites, readPendingUserType } from '../utils/onboarding.js';
-import { FAVORITES_EVENT } from '../utils/favorites.js';
+import { FAVORITES_EVENT, readFavorites, toggleFavorite } from '../utils/favorites.js';
+import { takePendingSave } from '../utils/savePrompt.js';
 import {
   clearSavesAfterSignOut,
   normaliseLegacyFavourites,
@@ -84,6 +85,14 @@ export default function AuthSync() {
         // routed on it, and deleting here could pull it out from under that.
         const userType = await readPendingUserType(email);
         await ensureProfile(userId, userType);
+
+        // The save that asked for this sign-in (components/SavePrompt.jsx),
+        // made now that the account's library is here, so nothing overwrites
+        // it. The toggle's own event writes it through to the account.
+        const pending = takePendingSave();
+        if (pending && !readFavorites(pending.key).map(String).includes(pending.slug)) {
+          toggleFavorite(pending.key, pending.slug);
+        }
       } catch {
         // Background repair. It must never surface an error over whatever the
         // visitor is actually reading, and the next page load tries again.

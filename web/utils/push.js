@@ -23,10 +23,13 @@ const SCOPE = 'https://www.googleapis.com/auth/firebase.messaging';
 const ANDROID_COLOR = '#7C3AED';
 export const CHANNELS = { general: 'general' };
 
+// The first notification, straight after someone turns notifications on:
+// once per account, a quiet test that the light reaches them. No title — the
+// banner already says "Spiritpedia" — and nothing to open: tapping it just
+// opens the app. (It replaced "Welcome to Spiritpedia ✨ / I'm your guiding
+// star…" in build 13: the intro has already said who the star is.)
 export const WELCOME = {
-  title: 'Welcome to Spiritpedia ✨',
-  body: 'I’m your guiding star — your saved teachers, books and videos are with you wherever you go.',
-  data: { route: '/library' },
+  body: '✦ Testing, testing… just checking my light reaches you. Nothing to do. I’ll only shine when it matters.',
 };
 
 // The service account from env, or null if any part is missing. Vercel stores

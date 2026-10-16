@@ -2,6 +2,8 @@
 
 import { useCallback, useEffect, useState } from 'react';
 import { FAVORITES_EVENT, readFavorites, toggleFavorite } from './favorites.js';
+import { askToSave } from './savePrompt.js';
+import { getSession } from './supabaseAuth.js';
 
 // One saved/not-saved toggle — every heart and shelf button on the site.
 //
@@ -10,6 +12,9 @@ import { FAVORITES_EVENT, readFavorites, toggleFavorite } from './favorites.js';
 // markup identical. It also follows later changes: the same item toggled
 // elsewhere on the page, or the whole list replaced by the account's copy
 // after sign-in.
+//
+// Saving needs an account: signed out, a tap that would save asks first
+// (utils/savePrompt.js). Removing never asks.
 export function useFavorite(storageKey, slug) {
   const favId = slug ? String(slug) : '';
   const [saved, setSaved] = useState(false);
@@ -25,8 +30,16 @@ export function useFavorite(storageKey, slug) {
     return () => window.removeEventListener(FAVORITES_EVENT, onChange);
   }, [storageKey, favId]);
 
-  const toggle = useCallback(() => {
+  const toggle = useCallback(async () => {
     if (!favId) return;
+    const saving = !readFavorites(storageKey).map(String).includes(favId);
+    if (saving) {
+      const { data: session } = await getSession();
+      if (!session) {
+        askToSave(storageKey, favId);
+        return;
+      }
+    }
     const next = toggleFavorite(storageKey, favId);
     if (next) setSaved(next.includes(favId));
   }, [storageKey, favId]);

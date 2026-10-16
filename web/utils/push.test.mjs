@@ -166,8 +166,14 @@ test('welcome: exactly once, however many times it is asked for', async () => {
   assert.deepEqual(again.map((r) => r.status), ['already_sent', 'already_sent']);
   // Both of the account's devices, once each.
   assert.deepEqual(google.sent.map((m) => m.token).sort(), ['ipad', 'phone']);
-  assert.equal(google.sent[0].notification.title, 'Welcome to Spiritpedia ✨');
-  assert.match(google.sent[0].notification.body, /guiding star/);
+  // The test note: no title, nothing to open, never "guiding star" again.
+  assert.equal(google.sent[0].notification.title, undefined);
+  assert.equal(
+    google.sent[0].notification.body,
+    '✦ Testing, testing… just checking my light reaches you. Nothing to do. I’ll only shine when it matters.'
+  );
+  assert.doesNotMatch(google.sent[0].notification.body, /guiding star/);
+  assert.deepEqual(google.sent[0].data, {});
 });
 
 test('welcome: nothing recorded without a device, so a later opt-in still gets it', async () => {

@@ -3,6 +3,7 @@ import "./globals.css";
 import SiteFooter from "@/components/SiteFooter";
 import LibraryBar from "@/components/LibraryBar";
 import AuthSync from "@/components/AuthSync";
+import SavePrompt from "@/components/SavePrompt";
 import Analytics from "@/components/Analytics";
 import CookieBanner from "@/components/CookieBanner";
 import {
@@ -91,6 +92,8 @@ export default function RootLayout({ children }) {
             and that their saved library has been migrated, however they
             arrived — see components/AuthSync.jsx. */}
         <AuthSync />
+        {/* A signed-out heart asks first: saving needs an account. */}
+        <SavePrompt />
 
         {/* Google Analytics 4 — excluded from /admin, from any build without a
             measurement ID, and from every visit until cookies are accepted.
