@@ -167,8 +167,8 @@ before anything is sent** — in the app exactly as on the website, from the
 same `web/shared/emotion-safety.json`, with tests that type every phrase into
 every box. Tailoring never touches it. See the top of `app/README.md`.
 
-Build numbers: 1–9 and 11–13. **10 was an accidental duplicate of 9**
-uploaded from Xcode; the next build is 14. Upload is IPA → Transporter.
+Build numbers: 1–9 and 11–14. **10 was an accidental duplicate of 9**
+uploaded from Xcode; the next build is 15. Upload is IPA → Transporter.
 
 Website issues found while building the app, not yet fixed:
 `app/docs/website-followups.md`.

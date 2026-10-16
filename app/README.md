@@ -155,9 +155,9 @@ screenshot`. Tours are deleted afterwards and never committed.
    running the project uploads; there is no App Store Connect API key on this
    Mac.
 
-**Build numbers so far:** 1–9 and 11–13 are real builds. **Build 10 was an
+**Build numbers so far:** 1–9 and 11–14 are real builds. **Build 10 was an
 accidental duplicate of build 9**, uploaded from Xcode, so the numbering
-jumped from 9 to 11. The next build is **14**.
+jumped from 9 to 11. The next build is **15**.
 
 The Mac's disk has filled up during a build before. `flutter clean` frees the
 app's `build/` folder (about 7 GB), and everything in it is regenerated.
