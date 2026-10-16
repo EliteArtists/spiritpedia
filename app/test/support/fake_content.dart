@@ -16,6 +16,8 @@ class FakeContentRepository implements ContentRepository {
     List<String> subjects = const ['meditation'],
     int? born,
     int? died,
+    int? place,
+    String? availability,
   }) => Healer(
     id: id,
     slug: slug,
@@ -27,6 +29,8 @@ class FakeContentRepository implements ContentRepository {
     bio: '$name teaches presence.',
     birthYear: born,
     deathYear: died,
+    placeId: place,
+    availabilityType: availability,
   );
 
   final List<Healer> allHealers = [
@@ -39,8 +43,24 @@ class FakeContentRepository implements ContentRepository {
     ),
     healer(2, 'wim-hof', 'Wim Hof', 'superhero', subjects: ['breathwork']),
     healer(3, 'rising-one', 'Rising One', 'luminary'),
-    healer(4, 'local-one', 'Local One', 'local_hero', subjects: ['breathwork']),
-    healer(5, 'no-tier', 'No Tier Yet', null),
+    // In person in London only; online from Manchester.
+    healer(
+      4,
+      'local-one',
+      'Local One',
+      'local_hero',
+      subjects: ['breathwork'],
+      place: 2643743,
+      availability: 'Local Only (In-Person)',
+    ),
+    healer(
+      5,
+      'no-tier',
+      'No Tier Yet',
+      null,
+      place: 2643123,
+      availability: 'Local & Online Sessions',
+    ),
     healer(
       6,
       'alan-watts',
@@ -257,6 +277,53 @@ class FakeContentRepository implements ContentRepository {
   Future<List<FreeResource>> liveFreeResourcesForHealer(int healerId) async => [
     if (healerId == resource.healerId) resource,
   ];
+
+  /// The towns the fakes know.
+  static const london = Place(
+    id: 2643743,
+    name: 'London',
+    region: 'England',
+    country: 'United Kingdom',
+    lat: 51.5085,
+    lng: -0.1257,
+  );
+  static const croydon = Place(
+    id: 2652053,
+    name: 'Croydon',
+    region: 'England',
+    country: 'United Kingdom',
+    lat: 51.3816,
+    lng: -0.0981,
+  );
+  static const manchester = Place(
+    id: 2643123,
+    name: 'Manchester',
+    region: 'England',
+    country: 'United Kingdom',
+    lat: 53.4809,
+    lng: -2.2374,
+  );
+  List<Place> places = const [london, croydon, manchester];
+
+  @override
+  Future<List<Place>> placesByIds(List<int> ids) async => [
+    for (final p in places)
+      if (ids.contains(p.id)) p,
+  ];
+
+  @override
+  Future<List<Place>> searchPlaces(String query) async => [
+    for (final p in places)
+      if (query.trim().length >= 2 &&
+          p.name.toLowerCase().startsWith(query.trim().toLowerCase()))
+        p,
+  ];
+
+  /// What "Use my location" finds.
+  Place? nearest = london;
+
+  @override
+  Future<Place?> nearestPlace(double lat, double lng) async => nearest;
 
   /// Overridable: each teacher's content subjects, by slug.
   Map<String, List<List<String>>> teacherContent = const {};

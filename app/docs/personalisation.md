@@ -162,7 +162,29 @@ Shamanism is missing from the Mystical & Spiritual Exploration list.
 
 ---
 
-## 4. Where the choices are kept
+## 4. Your area: Practitioners Near You
+
+An area is a **town and its country** (public.places, migration 0019: GeoNames
+towns of 5,000+ people). Never a position: "Use my location" takes one
+approximate position, rounds it to about 1 km, asks `nearest_place` for the
+town, and keeps only the town. Practitioners get their town from their city
+and country automatically (`healers.place_id`, by trigger).
+
+| No area | Area set |
+|---|---|
+| Everyone, as before, with **"Set your area"** under the title | 1. In person **within 50 km**, nearest first. 2. Then everyone who offers sessions **online** (availability says "Online"), from anywhere. Local-only practitioners elsewhere are left out. "Near London, United Kingdom · Change"; if nobody is near: "No practitioners near London yet — these offer online sessions." |
+
+Within each group the usual order is kept (More of first), and Never show
+still applies. The same rules run on the website (`web/utils/area.js`) and in
+the app (`shelf_rules.dart` → `nearYou`); change both together.
+
+Where it is set: the shelf's "Set your area" / "Change", **Tailor Spiritpedia →
+Your area**, and the star's question (around the 5th visit; see
+`lib/features/star/conductor.dart`). Kept like the choices below.
+
+---
+
+## 5. Where the choices are kept
 
 - **On the phone, straight away**, so they work signed out.
 - **In the account when signed in** (`user_interests`, migrations 0017 and
@@ -173,6 +195,8 @@ Shamanism is missing from the Mystical & Spiritual Exploration list.
   no admin access. They are never shared or used for advertising.
 - **Signing out** clears them from the phone; they stay in the account.
   **Deleting the account** deletes them.
+- **Your area** is kept the same way (user_preferences, migration 0019), on
+  the phone and in the website's browser storage.
 
 The rules in this document live in `lib/data/shelf_rules.dart`
 (`interestLevel`, `byInterest`, `forYou`, `isHiddenItem`, `isHiddenTeacher`,

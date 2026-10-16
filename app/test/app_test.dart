@@ -12,6 +12,10 @@ import 'package:spiritpedia/data/models.dart';
 import 'package:spiritpedia/data/providers.dart';
 import 'package:spiritpedia/data/shelf_rules.dart';
 import 'package:spiritpedia/features/account/account_providers.dart';
+import 'package:spiritpedia/features/account/display_name.dart';
+import 'package:spiritpedia/features/area/area.dart';
+import 'package:spiritpedia/features/area/location_source.dart';
+import 'package:spiritpedia/features/star/conductor.dart';
 import 'package:spiritpedia/features/home/subject_pills.dart';
 import 'package:spiritpedia/features/interests/interests.dart';
 import 'package:spiritpedia/features/interests/interests_picker.dart';
@@ -28,9 +32,11 @@ import 'package:spiritpedia/features/search/search_repository.dart';
 import 'package:spiritpedia/features/search/search_screen.dart';
 import 'package:spiritpedia/features/reviews/reviews_providers.dart';
 import 'package:spiritpedia/shared/widgets/cards.dart';
+import 'package:spiritpedia/shared/widgets/shelf.dart';
 
 import 'support/fake_account.dart';
 import 'support/fake_content.dart';
+import 'support/fake_location.dart';
 import 'support/fake_push.dart';
 import 'support/fake_reviews.dart';
 
@@ -59,6 +65,10 @@ Widget _app({
   MemoryInterestsStore? interests,
   FakeContentRepository? content,
   _TailorIntro? tailorIntro,
+  MemoryAreaStore? area,
+  MemoryNameStore? name,
+  MemoryConductorStore? conductor,
+  LocationSource? location,
 }) => ProviderScope(
   retry: spiritpediaRetry,
   overrides: [
@@ -78,6 +88,12 @@ Widget _app({
     emotionSafetyProvider.overrideWithValue(AsyncData(_safety)),
     typewriterRunsProvider.overrideWithValue(false),
     tailorIntroPrefsProvider.overrideWithValue(tailorIntro ?? _TailorIntro()),
+    areaStoreProvider.overrideWithValue(area ?? MemoryAreaStore()),
+    nameStoreProvider.overrideWithValue(name ?? MemoryNameStore()),
+    conductorStoreProvider.overrideWithValue(
+      conductor ?? MemoryConductorStore(),
+    ),
+    locationSourceProvider.overrideWithValue(location ?? FakeLocation()),
   ],
   child: const SpiritpediaApp(playIntro: false),
 );
@@ -683,6 +699,182 @@ void main() {
       );
       expect(find.text('Free Resources'), findsOneWidget);
       expect(find.text('Books & Literature'), findsNothing);
+    });
+  });
+
+  group('your area and the star\'s questions', () {
+    Finder nearShelf() => find.ancestor(
+      of: find.text('Practitioners Near You'),
+      matching: find.byType(Shelf),
+    );
+    List<String> nearNames(WidgetTester tester) => [
+      for (final c in tester.widgetList<HealerCard>(
+        find.descendant(of: nearShelf(), matching: find.byType(HealerCard)),
+      ))
+        c.healer.name,
+    ];
+
+    testWidgets('no area: everyone, and "Set your area"; typing a town ranks '
+        'the shelf: near in person first, then online', (tester) async {
+      await start(tester);
+      expect(nearNames(tester), ['Local One', 'No Tier Yet']);
+      await tester.ensureVisible(find.byKey(const ValueKey('set-your-area')));
+      await tester.pumpAndSettle();
+      await tester.tap(find.byKey(const ValueKey('set-your-area')));
+      await tester.pumpAndSettle();
+      expect(find.byKey(const ValueKey('area-sheet')), findsOneWidget);
+      await tester.tap(find.byKey(const ValueKey('area-type-city')));
+      await tester.pumpAndSettle();
+      await tester.enterText(find.byKey(const ValueKey('area-search')), 'Man');
+      await tester.pump(const Duration(milliseconds: 300));
+      await tester.pumpAndSettle();
+      await tester.tap(find.byKey(const ValueKey('area-result-2643123')));
+      await tester.pumpAndSettle();
+      // In Manchester: No Tier Yet sees people there; Local One is London
+      // in person only, so out.
+      expect(find.text('Near Manchester, United Kingdom'), findsOneWidget);
+      expect(nearNames(tester), ['No Tier Yet']);
+    });
+
+    testWidgets('"Use my location": a town, never a position', (tester) async {
+      final location = FakeLocation();
+      final area = MemoryAreaStore();
+      await tester.pumpWidget(_app(location: location, area: area));
+      await tester.pump();
+      await tester.pump(const Duration(milliseconds: 100));
+      await tester.ensureVisible(find.byKey(const ValueKey('set-your-area')));
+      await tester.pumpAndSettle();
+      await tester.tap(find.byKey(const ValueKey('set-your-area')));
+      await tester.pumpAndSettle();
+      await tester.tap(find.byKey(const ValueKey('area-use-location')));
+      await tester.pumpAndSettle();
+      expect(location.asked, 1);
+      expect(area.value.place?.name, 'London');
+      expect(find.text('Near London, United Kingdom'), findsOneWidget);
+      expect(nearNames(tester), ['Local One', 'No Tier Yet']);
+    });
+
+    testWidgets('location refused before: say so, offer Settings or typing', (
+      tester,
+    ) async {
+      final location = FakeLocation(problem: LocationProblem.blocked);
+      await tester.pumpWidget(_app(location: location));
+      await tester.pump();
+      await tester.pump(const Duration(milliseconds: 100));
+      await tester.ensureVisible(find.byKey(const ValueKey('set-your-area')));
+      await tester.pumpAndSettle();
+      await tester.tap(find.byKey(const ValueKey('set-your-area')));
+      await tester.pumpAndSettle();
+      await tester.tap(find.byKey(const ValueKey('area-use-location')));
+      await tester.pumpAndSettle();
+      expect(find.textContaining('can’t see your location'), findsOneWidget);
+      await tester.tap(find.text('Open Settings'));
+      expect(location.settings, 1);
+    });
+
+    testWidgets('the 5th visit: the star asks about the area, once a session; '
+        '"Not now" puts it away', (tester) async {
+      final conductor = MemoryConductorStore(visitCount: 4);
+      await tester.pumpWidget(_app(conductor: conductor));
+      await tester.pump();
+      await tester.pump(const Duration(seconds: 4));
+      await tester.pumpAndSettle();
+      expect(find.byKey(const ValueKey('star-ask-area')), findsOneWidget);
+      expect(
+        find.text('Shall I show you practitioners near you?'),
+        findsOneWidget,
+      );
+      expect(conductor.visitCount, 5);
+      expect(conductor.records[StarAsk.area]?.times, 1);
+      await tester.tap(find.byKey(const ValueKey('star-not-now')));
+      await tester.pumpAndSettle();
+      expect(find.byKey(const ValueKey('star-tray')), findsNothing);
+      // Once a session: nothing more, however long they stay.
+      await tester.pump(const Duration(seconds: 10));
+      await tester.pumpAndSettle();
+      expect(find.byKey(const ValueKey('star-tray')), findsNothing);
+    });
+
+    testWidgets('before the 5th visit, or once the search is open: nothing', (
+      tester,
+    ) async {
+      await tester.pumpWidget(
+        _app(conductor: MemoryConductorStore(visitCount: 3)),
+      );
+      await tester.pump();
+      await tester.pump(const Duration(seconds: 4));
+      await tester.pumpAndSettle();
+      expect(find.byKey(const ValueKey('star-tray')), findsNothing);
+
+      await tester.pumpWidget(const SizedBox());
+      await tester.pumpWidget(
+        _app(conductor: MemoryConductorStore(visitCount: 4)),
+      );
+      await tester.pump();
+      await tester.tap(find.byType(FeelingTypewriter).hitTestable().first);
+      await tester.pumpAndSettle();
+      GoRouter.of(tester.element(find.byType(Navigator).first)).pop();
+      await tester.pumpAndSettle();
+      await tester.pump(const Duration(seconds: 10));
+      await tester.pumpAndSettle();
+      expect(find.byKey(const ValueKey('star-tray')), findsNothing);
+    });
+
+    testWidgets('the 7th visit, area set: the star asks their name, and greets '
+        'them by it', (tester) async {
+      final name = MemoryNameStore();
+      await tester.pumpWidget(
+        _app(
+          conductor: MemoryConductorStore(visitCount: 6),
+          area: MemoryAreaStore(
+            const Area(place: FakeContentRepository.london, chosen: true),
+          ),
+          name: name,
+        ),
+      );
+      await tester.pump();
+      await tester.pump(const Duration(seconds: 4));
+      await tester.pumpAndSettle();
+      expect(find.byKey(const ValueKey('star-ask-name')), findsOneWidget);
+      expect(
+        find.text(
+          'Would you like to share your name? I’ll use it only to greet you '
+          'here and in my emails.',
+        ),
+        findsOneWidget,
+      );
+      await tester.enterText(
+        find.byKey(const ValueKey('star-name-field')),
+        '  Ross  ',
+      );
+      await tester.tap(find.byKey(const ValueKey('star-name-save')));
+      await tester.pump();
+      await tester.pump(const Duration(milliseconds: 100));
+      expect(find.text('Lovely to meet you, Ross.'), findsOneWidget);
+      expect(name.value, 'Ross');
+      await tester.pump(const Duration(seconds: 2));
+      await tester.pumpAndSettle();
+      expect(find.byKey(const ValueKey('star-tray')), findsNothing);
+    });
+
+    testWidgets('Tailor Spiritpedia: "Your area" at the top', (tester) async {
+      await tester.pumpWidget(
+        _app(
+          area: MemoryAreaStore(
+            const Area(place: FakeContentRepository.london, chosen: true),
+          ),
+        ),
+      );
+      await tester.pump();
+      GoRouter.of(tester.element(find.byType(PillTabBar))).push('/tailor');
+      await tester.pumpAndSettle();
+      expect(find.byKey(const ValueKey('tailor-your-area')), findsOneWidget);
+      expect(find.text('London, England, United Kingdom'), findsOneWidget);
+      await tester.tap(find.byKey(const ValueKey('tailor-area-clear')));
+      await tester.pumpAndSettle();
+      expect(find.textContaining('Not set.'), findsOneWidget);
+      await tester.pump(TailorStarFrame.linger);
+      await tester.pumpAndSettle();
     });
   });
 

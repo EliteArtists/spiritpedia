@@ -3,6 +3,8 @@ import 'dart:convert';
 import 'package:http/http.dart' as http;
 import 'package:supabase_flutter/supabase_flutter.dart';
 
+import '../../data/models.dart';
+
 /// A signed-in person, as the app needs them.
 class AccountUser {
   const AccountUser({required this.id, required this.email});
@@ -13,10 +15,17 @@ class AccountUser {
 
 /// The person's profile row (user_profiles), the parts the app shows.
 class AccountProfile {
-  const AccountProfile({required this.userType, this.linkedHealerSlug});
+  const AccountProfile({
+    required this.userType,
+    this.linkedHealerSlug,
+    this.fullName,
+  });
 
   final String userType; // 'explorer' | 'practitioner'
   final String? linkedHealerSlug;
+
+  /// The name they gave (user_profiles.full_name): greetings and emails.
+  final String? fullName;
 
   bool get isPractitioner => userType == 'practitioner';
 }
@@ -110,7 +119,19 @@ abstract class AccountService {
   /// as choosing nothing.
   Future<TailoringRow?> interests(String userId);
   Future<void> saveInterests(String userId, TailoringRow row);
+
+  /// The account's area (user_preferences, migration 0019): null if none is
+  /// set. [AreaRow.place] null with a row: set, then cleared.
+  Future<AreaRow?> area(String userId);
+  Future<void> saveArea(String userId, Place? place);
+
+  /// The name used to greet them, here and in emails
+  /// (user_profiles.full_name). Null clears it.
+  Future<void> saveDisplayName(String userId, String? name);
 }
+
+/// One account's user_preferences row.
+typedef AreaRow = ({Place? place});
 
 class AccountError implements Exception {
   const AccountError(this.message);
@@ -238,13 +259,14 @@ class SupabaseAccountService implements AccountService {
   Future<AccountProfile?> profile(String userId) async {
     final row = await _db
         .from('user_profiles')
-        .select('user_type, linked_healer_slug')
+        .select('user_type, linked_healer_slug, full_name')
         .eq('id', userId)
         .maybeSingle();
     if (row == null) return null;
     return AccountProfile(
       userType: (row['user_type'] as String?) ?? 'explorer',
       linkedHealerSlug: row['linked_healer_slug'] as String?,
+      fullName: (row['full_name'] as String?)?.trim().nullIfEmpty,
     );
   }
 
@@ -415,6 +437,36 @@ class SupabaseAccountService implements AccountService {
   }
 
   @override
+  Future<AreaRow?> area(String userId) async {
+    final row = await _db
+        .from('user_preferences')
+        .select('place:places(id, name, region, country, lat, lng)')
+        .eq('user_id', userId)
+        .maybeSingle();
+    if (row == null) return null;
+    final place = row['place'];
+    return (
+      place: place is Map<String, dynamic> ? Place.fromJson(place) : null,
+    );
+  }
+
+  @override
+  Future<void> saveArea(String userId, Place? place) async {
+    await _db.from('user_preferences').upsert({
+      'user_id': userId,
+      'area_place_id': place?.id,
+    });
+  }
+
+  @override
+  Future<void> saveDisplayName(String userId, String? name) async {
+    await _db
+        .from('user_profiles')
+        .update({'full_name': name?.trim().nullIfEmpty})
+        .eq('id', userId);
+  }
+
+  @override
   Future<void> removeFavourite(String userId, FavouriteRow row) async {
     await _db
         .from('user_favourites')
@@ -423,4 +475,8 @@ class SupabaseAccountService implements AccountService {
         .eq('content_type', row.contentType)
         .eq('content_slug', row.slug);
   }
+}
+
+extension on String {
+  String? get nullIfEmpty => isEmpty ? null : this;
 }

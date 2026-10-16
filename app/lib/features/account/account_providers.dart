@@ -4,10 +4,12 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../core/config.dart';
 import '../../core/supabase_providers.dart';
+import '../area/area.dart';
 import '../interests/interests.dart';
 import '../library/saved_items.dart';
 import '../notifications/notifications_controller.dart';
 import 'account_service.dart';
+import 'display_name.dart';
 
 final accountServiceProvider = Provider<AccountService>(
   (ref) => SupabaseAccountService(
@@ -73,8 +75,12 @@ class AccountController extends Notifier<AccountState> {
       // Both read before the first wait: the ref may be gone after it.
       final saved = ref.read(savedItemsProvider.notifier);
       final interests = ref.read(interestsProvider.notifier);
+      final area = ref.read(areaProvider.notifier);
+      final name = ref.read(displayNameProvider.notifier);
       await saved.clearAfterSignOut(previous);
       await interests.clearAfterSignOut(previous);
+      await area.clearAfterSignOut(previous);
+      await name.clearAfterSignOut(previous);
       return;
     }
     if (_syncedUserId == user.id) {
@@ -96,13 +102,17 @@ class AccountController extends Notifier<AccountState> {
 
     // Saves first: it is the step with something to lose.
     final interests = ref.read(interestsProvider.notifier);
+    final area = ref.read(areaProvider.notifier);
+    final name = ref.read(displayNameProvider.notifier);
     await ref.read(savedItemsProvider.notifier).syncWithAccount(user.id);
     await interests.syncWithAccount(user.id);
+    await area.syncWithAccount(user.id);
     try {
       // A new account is asked how it will use Spiritpedia first; the
       // welcome follows the answer.
       final created = await _service.ensureProfile(user.id);
       final profile = await _service.profile(user.id);
+      await name.syncWithAccount(user.id, profile?.fullName);
       if (_syncedUserId == user.id) {
         state = AccountState.signedIn(user, profile: profile, isNew: created);
       }
@@ -160,10 +170,14 @@ class AccountController extends Notifier<AccountState> {
     // only the owner remove their device token.
     final saved = ref.read(savedItemsProvider.notifier);
     final interests = ref.read(interestsProvider.notifier);
+    final area = ref.read(areaProvider.notifier);
+    final name = ref.read(displayNameProvider.notifier);
     final userId = state.user?.id;
     await ref.read(notificationsProvider.notifier).forgetThisPhone();
     await saved.clearAfterSignOut(userId);
     await interests.clearAfterSignOut(userId);
+    await area.clearAfterSignOut(userId);
+    await name.clearAfterSignOut(userId);
     await _service.signOut();
   }
 
@@ -171,6 +185,8 @@ class AccountController extends Notifier<AccountState> {
   /// on the phone is cleared either.
   Future<void> deleteAccount() async {
     final interests = ref.read(interestsProvider.notifier);
+    final area = ref.read(areaProvider.notifier);
+    final name = ref.read(displayNameProvider.notifier);
     await _service.deleteAccount();
     // The server removed the device token with the account; this clears it
     // from Firebase and the phone.
@@ -179,6 +195,8 @@ class AccountController extends Notifier<AccountState> {
         .forgetThisPhone(fromAccount: false);
     await ref.read(savedItemsProvider.notifier).clearAll();
     await interests.clearAll();
+    await area.clearAll();
+    await name.clearAll();
     try {
       await _service.signOut();
     } catch (_) {

@@ -52,6 +52,17 @@ final hidingProvider = Provider<Hiding>((ref) {
   );
 });
 
+/// Practitioners' towns, by id — only fetched once someone has an area.
+final healerPlacesProvider = FutureProvider<Map<int, Place>>((ref) async {
+  final healers = await ref.watch(healersProvider.future);
+  final ids = {
+    for (final h in healers)
+      if (h.placeId != null) h.placeId!,
+  }.toList();
+  final places = await ref.watch(contentRepositoryProvider).placesByIds(ids);
+  return {for (final p in places) p.id: p};
+});
+
 /// The subject filter (null = View All), one for Discover, Videos and Books
 /// together — as on the website, where the tabs share the page's ?subject=.
 /// Switching tabs and tapping the star keep it; only Clear (or View All)

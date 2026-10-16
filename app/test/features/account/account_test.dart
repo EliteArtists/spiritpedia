@@ -4,6 +4,8 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:spiritpedia/core/retry.dart';
 import 'package:spiritpedia/data/providers.dart';
 import 'package:spiritpedia/features/account/account_providers.dart';
+import 'package:spiritpedia/features/account/display_name.dart';
+import 'package:spiritpedia/features/area/area.dart';
 import 'package:spiritpedia/features/account/account_screen.dart';
 import 'package:spiritpedia/features/account/account_service.dart';
 import 'package:spiritpedia/features/library/saved_items.dart';
@@ -37,8 +39,12 @@ void main() {
 
   late FakeAccountService service;
   late MemorySavedStore store;
+  late MemoryAreaStore areaStore;
+  late MemoryNameStore nameStore;
   setUp(() {
     service = FakeAccountService();
+    areaStore = MemoryAreaStore();
+    nameStore = MemoryNameStore();
     store = MemorySavedStore();
   });
 
@@ -51,6 +57,8 @@ void main() {
         savedStoreProvider.overrideWithValue(store),
         pushDeviceStoreProvider.overrideWithValue(MemoryPushDeviceStore()),
         contentRepositoryProvider.overrideWithValue(FakeContentRepository()),
+        areaStoreProvider.overrideWithValue(areaStore),
+        nameStoreProvider.overrideWithValue(nameStore),
       ],
     );
     addTearDown(c.dispose);
@@ -187,6 +195,56 @@ void main() {
         expect(service.calls, isNot(contains('sendWelcome')));
       },
     );
+  });
+
+  group('your area and your name follow the account', () {
+    const london = FakeContentRepository.london;
+
+    test('set signed out, attached at sign-in; the account keeps them; '
+        'sign-out forgets them on the phone', () async {
+      final c = container();
+      await c.read(areaProvider.notifier).set(london);
+      await c.read(displayNameProvider.notifier).set('Ross');
+      expect(service.calls, isNot(contains('saveArea:${london.id}')));
+
+      await c.read(accountProvider.notifier).verifyCode(_email, '123456');
+      await settle();
+      expect(service.areasByUser[_userId]?.place?.id, london.id);
+      expect(service.profiles[_userId]?.fullName, 'Ross');
+
+      await c.read(accountProvider.notifier).signOut();
+      await settle();
+      expect(c.read(areaProvider).place, isNull);
+      expect(c.read(displayNameProvider), isNull);
+      expect(areaStore.value.chosen, isFalse);
+    });
+
+    test("the account's area and name win at sign-in", () async {
+      service.areasByUser[_userId] = (place: FakeContentRepository.manchester);
+      service.profiles[_userId] = const AccountProfile(
+        userType: 'explorer',
+        fullName: 'Ross Baiken',
+      );
+      final c = container();
+      await c.read(areaProvider.notifier).set(london);
+      await c.read(displayNameProvider.notifier).set('Someone Else');
+      await c.read(accountProvider.notifier).verifyCode(_email, '123456');
+      await settle();
+      expect(c.read(areaProvider).place?.name, 'Manchester');
+      expect(c.read(displayNameProvider), 'Ross Baiken');
+    });
+
+    test('signed in, a change reaches the account at once', () async {
+      final c = container();
+      await c.read(accountProvider.notifier).verifyCode(_email, '123456');
+      await settle();
+      await c.read(areaProvider.notifier).set(london);
+      await c.read(displayNameProvider.notifier).set('Ross');
+      expect(service.areasByUser[_userId]?.place?.id, london.id);
+      expect(service.profiles[_userId]?.fullName, 'Ross');
+      await c.read(areaProvider.notifier).set(null);
+      expect(service.areasByUser[_userId]?.place, isNull);
+    });
   });
 
   group('My Library sync', () {

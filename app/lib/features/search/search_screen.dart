@@ -15,6 +15,7 @@ import '../../theme/colors.dart';
 import '../interests/interests.dart';
 import '../star/star_layer.dart';
 import '../star/star_page.dart';
+import '../star/conductor.dart';
 import '../star/slipstream.dart';
 import '../star/twinkle.dart';
 import 'content_search.dart';
@@ -132,6 +133,11 @@ class _SearchState extends ConsumerState<_Search> {
   @override
   void initState() {
     super.initState();
+    // The star asks nothing more this session (lib/features/star/conductor.dart).
+    // After the frame: not while the widget tree is being built.
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      if (mounted) ref.read(conductorProvider.notifier).searchOpened();
+    });
     _focus.addListener(_changed); // the placeholder changes on focus
     final query = widget.initialQuery?.trim() ?? '';
     if (query.isNotEmpty) {

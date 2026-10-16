@@ -17,6 +17,7 @@ import '../reviews/reviews_providers.dart';
 import '../reviews/reviews_service.dart';
 import '../star/star_layer.dart';
 import 'account_providers.dart';
+import 'display_name.dart';
 import 'account_service.dart';
 
 const supportEmail = 'love@spiritpedia.co';
@@ -439,6 +440,8 @@ class _SignedInState extends ConsumerState<_SignedIn> {
           ),
         ),
         const SizedBox(height: 22),
+        const NameCard(),
+        const SizedBox(height: 12),
         const TailorCard(),
         const SizedBox(height: 22),
         KeyedSubtree(
@@ -518,6 +521,106 @@ class TailorCard extends ConsumerWidget {
           Icons.chevron_right_rounded,
           color: SpColors.textMuted,
         ),
+      ),
+    );
+  }
+}
+
+/// "Your name": the name Spiritpedia greets them by, here and in its emails
+/// (user_profiles.full_name). Editable, and clearable.
+class NameCard extends ConsumerStatefulWidget {
+  const NameCard({super.key});
+
+  @override
+  ConsumerState<NameCard> createState() => _NameCardState();
+}
+
+class _NameCardState extends ConsumerState<NameCard> {
+  bool _editing = false;
+  final _name = TextEditingController();
+
+  @override
+  void dispose() {
+    _name.dispose();
+    super.dispose();
+  }
+
+  Future<void> _save() async {
+    await ref.read(displayNameProvider.notifier).set(_name.text);
+    if (mounted) setState(() => _editing = false);
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final name = ref.watch(displayNameProvider);
+    return _Card(
+      child: Column(
+        key: const ValueKey('account-name'),
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: [
+          const _CardTitle('Your name'),
+          const SizedBox(height: 4),
+          const Text(
+            'Used only to greet you here and in our emails.',
+            style: TextStyle(fontSize: 13, color: SpColors.textMuted),
+          ),
+          const SizedBox(height: 10),
+          if (_editing) ...[
+            TextField(
+              key: const ValueKey('account-name-field'),
+              controller: _name,
+              autofocus: true,
+              maxLength: maxNameLength,
+              textCapitalization: TextCapitalization.words,
+              textInputAction: TextInputAction.done,
+              onSubmitted: (_) => _save(),
+              decoration: _fieldDecoration('Your name'),
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.end,
+              children: [
+                TextButton(
+                  onPressed: () => setState(() => _editing = false),
+                  style: TextButton.styleFrom(
+                    foregroundColor: SpColors.textMuted,
+                  ),
+                  child: const Text('Cancel'),
+                ),
+                TextButton(
+                  key: const ValueKey('account-name-save'),
+                  onPressed: _save,
+                  style: TextButton.styleFrom(foregroundColor: SpColors.link),
+                  child: const Text(
+                    'Save',
+                    style: TextStyle(fontWeight: FontWeight.w700),
+                  ),
+                ),
+              ],
+            ),
+          ] else
+            Row(
+              children: [
+                Expanded(
+                  child: Text(
+                    name ?? 'Not set',
+                    style: TextStyle(
+                      fontSize: 16,
+                      color: name == null ? SpColors.textFaint : SpColors.text,
+                    ),
+                  ),
+                ),
+                TextButton(
+                  key: const ValueKey('account-name-edit'),
+                  onPressed: () => setState(() {
+                    _name.text = name ?? '';
+                    _editing = true;
+                  }),
+                  style: TextButton.styleFrom(foregroundColor: SpColors.link),
+                  child: Text(name == null ? 'Add' : 'Change'),
+                ),
+              ],
+            ),
+        ],
       ),
     );
   }

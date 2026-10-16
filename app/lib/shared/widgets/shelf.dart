@@ -18,6 +18,8 @@ class Shelf extends StatelessWidget {
     this.badge,
     this.onSeeAll,
     this.onTitleTap,
+    this.note,
+    this.keepWhenEmpty = false,
   });
 
   final String title;
@@ -30,10 +32,17 @@ class Shelf extends StatelessWidget {
   final VoidCallback? onSeeAll;
   final VoidCallback? onTitleTap;
 
+  /// A line under the title: "Near London · Change", "Set your area".
+  final Widget? note;
+
+  /// Shown (title and note) even with nothing in it — when the note
+  /// explains why.
+  final bool keepWhenEmpty;
+
   @override
   Widget build(BuildContext context) {
     // Like the website: an empty shelf is hidden, never shown as a gap.
-    if (itemCount == 0) return const SizedBox.shrink();
+    if (itemCount == 0 && !keepWhenEmpty) return const SizedBox.shrink();
     final titleText = Text(
       title,
       style: const TextStyle(
@@ -87,6 +96,7 @@ class Shelf extends StatelessWidget {
                               onTap: onTitleTap,
                               child: titleText,
                             ),
+                      ?note,
                     ],
                   ),
                 ),
@@ -102,18 +112,20 @@ class Shelf extends StatelessWidget {
               ],
             ),
           ),
-          const SizedBox(height: 14),
-          SizedBox(
-            height: height,
-            child: ListView.separated(
-              scrollDirection: Axis.horizontal,
-              padding: const EdgeInsets.symmetric(horizontal: 20),
-              itemCount: itemCount,
-              separatorBuilder: (_, _) => const SizedBox(width: 14),
-              itemBuilder: (context, i) =>
-                  SizedBox(width: itemWidth, child: itemBuilder(context, i)),
+          if (itemCount > 0) ...[
+            const SizedBox(height: 14),
+            SizedBox(
+              height: height,
+              child: ListView.separated(
+                scrollDirection: Axis.horizontal,
+                padding: const EdgeInsets.symmetric(horizontal: 20),
+                itemCount: itemCount,
+                separatorBuilder: (_, _) => const SizedBox(width: 14),
+                itemBuilder: (context, i) =>
+                    SizedBox(width: itemWidth, child: itemBuilder(context, i)),
+              ),
             ),
-          ),
+          ],
         ],
       ),
     );

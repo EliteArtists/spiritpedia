@@ -136,7 +136,7 @@ read-only checks only.
 
 ```bash
 flutter analyze        # must say "No issues found"
-flutter test           # 240 tests at build 13, all passing
+flutter test           # 259 tests at build 15, all passing
 ```
 
 Screenshots for review come from a temporary integration test (a "tour") that
@@ -346,6 +346,26 @@ is saved.
   and sends the practitioner welcome (`web/utils/onboarding.js` →
   `ensureProfile`). No explorer welcome.
 
+**Your area, the conductor and your name** (build 15; migration 0019)
+- **Practitioners Near You** uses the person's area: in person within 50 km,
+  nearest first, then online practitioners from anywhere. An area is a town
+  (`places`), never a position; the rules are in `docs/personalisation.md` §4.
+- **Setting it:** "Set your area" on the shelf, Tailor Spiritpedia → Your
+  area, or the star's question. "Use my location" asks iOS for approximate
+  location only (`NSLocationDefaultAccuracyReduced`), once, through
+  `geolocator`; "Type my city" searches `places`.
+- **The conductor** (`features/star/conductor.dart`): the star does at most
+  one thing a session (a cold start, or back after 30+ minutes). Session 1 is
+  the intro. From the 5th visit, "Shall I show you practitioners near you?";
+  from the 7th, "Would you like to share your name? I'll use it only to greet
+  you here and in my emails." Each asks once, then once more 15+ visits and
+  3+ weeks later, then never. Only on a main tab with nothing open, after
+  about 3 seconds, and never in a session where the search has been opened.
+  The star flies down onto a frosted tray; swiping it away is "Not now".
+- **The name** is `user_profiles.full_name` (the emails already use it):
+  phone + account, editable in Account → Your name. Later launches greet
+  "Welcome back, Ross" before the short flight.
+
 **My Account.**
 - Email, with change email (two codes).
 - Account type.
@@ -373,7 +393,7 @@ WhatsApp.
 
 ---
 
-## Migrations 0015–0018
+## Migrations 0015–0019
 
 All four are **on dev and on live**, and each was verified after it ran.
 
@@ -383,6 +403,7 @@ All four are **on dev and on live**, and each was verified after it ran.
 | `0016_save_counts` | `save_counts(type, slugs)`: how many people saved each book or video, totals only and at most 200 slugs. Used by Suggests |
 | `0017_user_interests` | `user_interests`: one row per account, holding `subjects` (More of). Owner-only RLS, no signed-out access, deleted with the account. A trigger checks every slug against `public.subjects` and removes duplicates. A row means "has chosen", even if it's empty |
 | `0018_hidden_subjects` | Adds `hidden_subjects` (Never show) to the same row. The trigger now checks both lists and refuses a subject that is in both |
+| `0019_places_and_areas` | `places` (GeoNames towns of 5,000+, imported from `places.csv` through the dashboard), `healers.place_id` set by trigger from city and country, `user_preferences` (each member's area; owner-only), and `nearest_place(lat, lng)`, which returns a town and stores nothing |
 
 Earlier migrations (0000–0014) are described in the root README.
 

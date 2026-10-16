@@ -7,6 +7,8 @@ import '../../data/shelf_rules.dart';
 import '../../theme/colors.dart';
 import '../star/slipstream.dart';
 import '../star/star_layer.dart';
+import '../area/area.dart';
+import '../area/area_sheet.dart';
 import 'interests.dart';
 import 'tailor_star.dart';
 
@@ -606,6 +608,10 @@ class _TailorScreenState extends ConsumerState<TailorScreen> {
                 builder: (context, top) => ListView(
                   padding: EdgeInsets.fromLTRB(20, 8 + top, 20, 24),
                   children: [
+                    const YourArea(),
+                    const SizedBox(height: 18),
+                    const Divider(),
+                    const SizedBox(height: 18),
                     const Text('More of', style: heading),
                     const SizedBox(height: 4),
                     const Text(
@@ -660,6 +666,63 @@ class _TailorScreenState extends ConsumerState<TailorScreen> {
           ],
         ),
       ),
+    );
+  }
+}
+
+/// Tailor Spiritpedia's "Your area": the town Practitioners Near You uses.
+/// Saved as soon as it is chosen, apart from the Save button below.
+class YourArea extends ConsumerWidget {
+  const YourArea({super.key});
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    final place = ref.watch(areaProvider).place;
+    return Column(
+      key: const ValueKey('tailor-your-area'),
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        const Text(
+          'Your area',
+          style: TextStyle(fontSize: 21, fontWeight: FontWeight.w700),
+        ),
+        const SizedBox(height: 4),
+        Text(
+          place == null
+              ? 'Not set. Practitioners Near You shows everyone until it is.'
+              : place.fullLabel,
+          style: TextStyle(
+            fontSize: place == null ? 13 : 16,
+            height: 1.45,
+            color: place == null ? SpColors.textFaint : SpColors.text,
+          ),
+        ),
+        Row(
+          children: [
+            TextButton(
+              key: const ValueKey('tailor-area-change'),
+              onPressed: () => showAreaSheet(context),
+              style: TextButton.styleFrom(
+                foregroundColor: SpColors.link,
+                padding: EdgeInsets.zero,
+              ),
+              child: Text(place == null ? 'Set your area' : 'Change'),
+            ),
+            if (place != null) ...[
+              const SizedBox(width: 16),
+              TextButton(
+                key: const ValueKey('tailor-area-clear'),
+                onPressed: () => ref.read(areaProvider.notifier).set(null),
+                style: TextButton.styleFrom(
+                  foregroundColor: SpColors.textMuted,
+                  padding: EdgeInsets.zero,
+                ),
+                child: const Text('Clear'),
+              ),
+            ],
+          ],
+        ),
+      ],
     );
   }
 }

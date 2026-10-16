@@ -9,6 +9,8 @@ import '../../data/shelf_rules.dart';
 import '../../shared/widgets/cards.dart';
 import '../../shared/widgets/shelf.dart';
 import '../../theme/colors.dart';
+import '../area/area.dart';
+import '../area/area_sheet.dart';
 import '../interests/hidden_empty.dart';
 import '../interests/interests.dart';
 import '../star/star_layer.dart';
@@ -47,6 +49,10 @@ class HomeScreen extends ConsumerWidget {
         ? ref.watch(forYouProvider).value
         : null;
     final directory = ref.watch(healerDirectoryProvider).value;
+    final area = ref.watch(areaProvider).place;
+    final places = area == null
+        ? const <int, Place>{}
+        : ref.watch(healerPlacesProvider).value ?? const <int, Place>{};
     final healers = ref.watch(healersProvider);
     final publishers =
         ref.watch(publishersProvider).value ?? const <Publisher>[];
@@ -92,10 +98,14 @@ class HomeScreen extends ConsumerWidget {
               Widget? badge,
               String? subtitle,
               bool tall = false,
+              Widget? note,
+              bool keepWhenEmpty = false,
             }) => Shelf(
               title: title,
               subtitle: subtitle,
               badge: badge,
+              note: note,
+              keepWhenEmpty: keepWhenEmpty,
               itemCount: items.length,
               itemWidth: tall ? 230 : 172,
               height: tall ? 330 : 240,
@@ -103,6 +113,10 @@ class HomeScreen extends ConsumerWidget {
               itemBuilder: (_, i) =>
                   HealerCard(healer: items[i], subjectSlug: subject),
             );
+            // Practitioners Near You, for their area (docs/personalisation.md):
+            // in person within 50 km, nearest first; then online ones.
+            final near = nearYou(shelves.localHeroes, area, places);
+            final nearby = [...near.near, ...near.online];
             // Never show emptied every shelf: say so, never a blank screen.
             final nothingLeft =
                 !hiding.isEmpty &&
@@ -175,7 +189,9 @@ class HomeScreen extends ConsumerWidget {
               SliverToBoxAdapter(
                 child: healerShelf(
                   'Practitioners Near You',
-                  shelves.localHeroes,
+                  nearby,
+                  note: AreaNote(area: area, nearCount: near.near.length),
+                  keepWhenEmpty: area != null,
                   badge: ShelfBadge(
                     label: 'LOCAL HERO',
                     onTap: () => ref
@@ -277,6 +293,62 @@ class _Problem extends StatelessWidget {
           ),
           const SizedBox(height: 16),
           FilledButton(onPressed: onRetry, child: const Text('Try again')),
+        ],
+      ),
+    );
+  }
+}
+
+/// Under Practitioners Near You: "Set your area" for anyone who wants it
+/// sooner than the star asks; with an area, where it is and a way to change
+/// it — and, when nobody is near yet, that the ones shown work online.
+class AreaNote extends StatelessWidget {
+  const AreaNote({super.key, required this.area, required this.nearCount});
+
+  final Place? area;
+  final int nearCount;
+
+  @override
+  Widget build(BuildContext context) {
+    final place = area;
+    final text = place == null
+        ? null
+        : nearCount > 0
+        ? 'Near ${place.label}'
+        : 'No practitioners near ${place.name} yet — these offer online sessions.';
+    return Padding(
+      padding: const EdgeInsets.only(top: 2),
+      child: Wrap(
+        crossAxisAlignment: WrapCrossAlignment.center,
+        children: [
+          if (text != null)
+            Padding(
+              padding: const EdgeInsets.only(right: 4),
+              child: Text(
+                text,
+                style: const TextStyle(
+                  fontSize: 13.5,
+                  color: SpColors.textMuted,
+                ),
+              ),
+            ),
+          TextButton(
+            key: const ValueKey('set-your-area'),
+            onPressed: () => showAreaSheet(context),
+            style: TextButton.styleFrom(
+              foregroundColor: SpColors.link,
+              padding: EdgeInsets.zero,
+              minimumSize: const Size(0, 32),
+              tapTargetSize: MaterialTapTargetSize.shrinkWrap,
+            ),
+            child: Text(
+              place == null ? 'Set your area' : 'Change',
+              style: const TextStyle(
+                fontSize: 13.5,
+                fontWeight: FontWeight.w600,
+              ),
+            ),
+          ),
         ],
       ),
     );

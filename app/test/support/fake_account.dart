@@ -1,5 +1,6 @@
 import 'dart:async';
 
+import 'package:spiritpedia/data/models.dart';
 import 'package:spiritpedia/features/account/account_service.dart';
 
 /// An in-memory account backend: users, codes, profiles and user_favourites,
@@ -116,6 +117,33 @@ class FakeAccountService implements AccountService {
 
   @override
   Future<void> sendWelcome() async => calls.add('sendWelcome');
+
+  final areasByUser = <String, AreaRow>{};
+
+  @override
+  Future<AreaRow?> area(String userId) async {
+    if (offline) throw Exception('offline');
+    return areasByUser[userId];
+  }
+
+  @override
+  Future<void> saveArea(String userId, Place? place) async {
+    if (offline) throw Exception('offline');
+    calls.add('saveArea:${place?.id}');
+    areasByUser[userId] = (place: place);
+  }
+
+  @override
+  Future<void> saveDisplayName(String userId, String? name) async {
+    if (offline) throw Exception('offline');
+    calls.add('saveDisplayName:$name');
+    final p = profiles[userId];
+    profiles[userId] = AccountProfile(
+      userType: p?.userType ?? 'explorer',
+      linkedHealerSlug: p?.linkedHealerSlug,
+      fullName: name,
+    );
+  }
 
   @override
   Future<void> recordPractitionerIntent(String email) async =>

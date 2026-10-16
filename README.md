@@ -963,6 +963,7 @@ idempotent, and run it by hand — as before.
 | `0016_save_counts` | `save_counts(type, slugs)`: save totals for books and videos, for Spiritpedia Suggests |
 | `0017_user_interests` | `user_interests`: a member's More of subjects, owner-only, checked against `subjects` |
 | `0018_hidden_subjects` | adds Never show (`hidden_subjects`) to the same row; a subject can't be in both |
+| `0019_places_and_areas` | `places` (GeoNames towns, 5,000+), `healers.place_id` by trigger, `user_preferences` (a member's area, owner-only), `nearest_place()`. Areas are towns, never positions |
 
 `0012`–`0018` are **on dev and live**. Since `0014`, every migration runs on the
 dev project (`khtpbnof…`) first, is checked there with temporary accounts,

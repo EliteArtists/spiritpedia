@@ -6,6 +6,7 @@ import 'package:go_router/go_router.dart';
 
 import '../../data/providers.dart';
 import '../../theme/colors.dart';
+import '../star/conductor.dart';
 import '../star/star_layer.dart';
 import 'tab_bar_state.dart';
 
@@ -59,6 +60,8 @@ class AppShell extends ConsumerWidget {
         body: Stack(
           children: [
             navigationShell,
+            // The star's one appearance a session (its questions).
+            const StarTrayHost(),
             if (!typing)
               Positioned(
                 left: 0,

@@ -1,6 +1,8 @@
 // The website's shelf rules, as pure functions so they can be tested. Each one
 // names the web file it mirrors; change both together.
 
+import 'dart:math' as math;
+
 import 'models.dart';
 
 /// The five pillars and their subjects, in the website's order
@@ -502,4 +504,56 @@ List<String> pillarsByInterest(
     return c != 0 ? c : a.$1.compareTo(b.$1);
   });
   return [for (final (_, p) in indexed) p];
+}
+
+// ── Your area (Practitioners Near You) ──────────────────────────────────────
+
+/// How far "near" reaches for in-person sessions.
+const nearRadiusKm = 50.0;
+
+/// Kilometres between two towns' centres (the haversine formula).
+double distanceKm(Place a, Place b) {
+  const r = 6371.0;
+  double rad(double d) => d * math.pi / 180;
+  final dLat = rad(b.lat - a.lat);
+  final dLng = rad(b.lng - a.lng);
+  final h =
+      math.pow(math.sin(dLat / 2), 2) +
+      math.cos(rad(a.lat)) *
+          math.cos(rad(b.lat)) *
+          math.pow(math.sin(dLng / 2), 2);
+  return 2 * r * math.asin(math.min(1, math.sqrt(h)));
+}
+
+/// Practitioners Near You for someone in [area]: those within
+/// [nearRadiusKm] who see people in person, nearest first; then everyone
+/// who offers sessions online, from anywhere, in [practitioners]' order.
+/// Local-only practitioners elsewhere are left out. [places] are the
+/// practitioners' towns, by id. No area: [practitioners] as they are.
+({List<Healer> near, List<Healer> online}) nearYou(
+  List<Healer> practitioners,
+  Place? area,
+  Map<int, Place> places,
+) {
+  if (area == null) return (near: practitioners, online: const []);
+  final near = <(Healer, double, int)>[];
+  for (final (i, h) in practitioners.indexed) {
+    final town = places[h.placeId];
+    if (town == null) continue;
+    final km = distanceKm(area, town);
+    if (km <= nearRadiusKm) near.add((h, km, i));
+  }
+  near.sort((a, b) {
+    final c = a.$2.compareTo(b.$2);
+    return c != 0 ? c : a.$3.compareTo(b.$3);
+  });
+  final nearOnes = [for (final (h, _, _) in near) h];
+  final shown = {for (final h in nearOnes) h.id};
+  return (
+    near: nearOnes,
+    online: [
+      for (final h in practitioners)
+        if (h.offersOnline && !shown.contains(h.id)) h,
+    ],
+  );
 }

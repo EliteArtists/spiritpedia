@@ -6,7 +6,9 @@ import 'package:spiritpedia/data/providers.dart';
 import 'package:spiritpedia/features/account/account_providers.dart';
 import 'package:spiritpedia/features/interests/interests.dart';
 import 'package:spiritpedia/features/interests/interests_picker.dart';
+import 'package:spiritpedia/features/account/display_name.dart';
 import 'package:spiritpedia/features/intro/intro_overlay.dart';
+import 'package:spiritpedia/features/star/conductor.dart';
 import 'package:spiritpedia/features/star/star_layer.dart';
 
 import '../../support/fake_account.dart';
@@ -15,25 +17,33 @@ import '../../support/fake_content.dart';
 const _home = Text('HOME', textDirection: TextDirection.ltr);
 
 /// Everything the onboarding touches, without a network.
-List<Override> _offline({MemoryInterestsStore? interests}) => [
+List<Override> _offline({
+  MemoryInterestsStore? interests,
+  MemoryNameStore? name,
+}) => [
   accountServiceProvider.overrideWithValue(FakeAccountService()),
   contentRepositoryProvider.overrideWithValue(FakeContentRepository()),
   interestsStoreProvider.overrideWithValue(interests ?? MemoryInterestsStore()),
+  nameStoreProvider.overrideWithValue(name ?? MemoryNameStore()),
+  conductorStoreProvider.overrideWithValue(MemoryConductorStore()),
 ];
 
-Widget _app(MemoryIntroPrefs prefs, {MemoryInterestsStore? interests}) =>
-    ProviderScope(
-      overrides: [
-        introPrefsProvider.overrideWithValue(prefs),
-        ..._offline(interests: interests),
-      ],
-      child: MaterialApp(
-        builder: (context, child) => StarLayer(
-          child: IntroOverlay(removeNativeSplash: false, child: child!),
-        ),
-        home: const Scaffold(body: Center(child: _home)),
-      ),
-    );
+Widget _app(
+  MemoryIntroPrefs prefs, {
+  MemoryInterestsStore? interests,
+  MemoryNameStore? name,
+}) => ProviderScope(
+  overrides: [
+    introPrefsProvider.overrideWithValue(prefs),
+    ..._offline(interests: interests, name: name),
+  ],
+  child: MaterialApp(
+    builder: (context, child) => StarLayer(
+      child: IntroOverlay(removeNativeSplash: false, child: child!),
+    ),
+    home: const Scaffold(body: Center(child: _home)),
+  ),
+);
 
 /// The intro waits for the star image to decode before it starts. Image
 /// decoding is real async work, so give it a moment outside fake time.
@@ -137,6 +147,26 @@ void main() {
     await tester.pump(const Duration(milliseconds: 500));
     expect(find.text(IntroOverlay.greeting), findsNothing);
     await tester.pump(const Duration(milliseconds: 600));
+    await tester.pump();
+    expect(_skip, findsNothing);
+    expect(find.text(IntroOverlay.callout), findsNothing);
+  });
+
+  testWidgets('later launches, with a name shared: "Welcome back, Ross"', (
+    tester,
+  ) async {
+    await tester.pumpWidget(
+      _app(
+        MemoryIntroPrefs(IntroKind.short),
+        name: MemoryNameStore('Ross Baiken'),
+      ),
+    );
+    await _letStarDecode(tester);
+    await tester.pump(const Duration(milliseconds: 700));
+    expect(find.text('Welcome back, Ross'), findsOneWidget);
+    expect(find.text(IntroOverlay.greeting), findsNothing);
+    await tester.pump(const Duration(milliseconds: 1600)); // greeting ends
+    await tester.pump(const Duration(milliseconds: 1200)); // the flight
     await tester.pump();
     expect(_skip, findsNothing);
     expect(find.text(IntroOverlay.callout), findsNothing);

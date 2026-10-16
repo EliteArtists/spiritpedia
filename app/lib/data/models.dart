@@ -57,6 +57,7 @@ class Healer {
     this.facebookUrl,
     this.twitterUrl,
     this.tiktokUrl,
+    this.placeId,
   });
 
   factory Healer.fromJson(Map<String, dynamic> j) => Healer(
@@ -82,6 +83,7 @@ class Healer {
     facebookUrl: _text(j['facebook_url']),
     twitterUrl: _text(j['twitter_url']),
     tiktokUrl: _text(j['tiktok_url']),
+    placeId: (j['place_id'] as num?)?.toInt(),
   );
 
   final int id;
@@ -107,10 +109,64 @@ class Healer {
   final String? twitterUrl;
   final String? tiktokUrl;
 
+  /// Their town (public.places, migration 0019), from city and country.
+  final int? placeId;
+
   /// Channels and apps get their own shelf; NULL is an individual.
   bool get isPlatform => entityType == 'channel' || entityType == 'app';
 
   bool get isAscendedMaster => tier == 'ascended_master';
+
+  /// Offers sessions online — the website's own test (healer profile:
+  /// availability_type.includes('Online')).
+  bool get offersOnline =>
+      availabilityType?.toLowerCase().contains('online') ?? false;
+}
+
+/// A town (public.places, migration 0019): the only kind of location
+/// Spiritpedia keeps — a member's area, a practitioner's town. Its
+/// coordinates are the town centre's, never anyone's own.
+class Place {
+  const Place({
+    required this.id,
+    required this.name,
+    required this.country,
+    this.region,
+    this.lat = 0,
+    this.lng = 0,
+  });
+
+  factory Place.fromJson(Map<String, dynamic> j) => Place(
+    id: (j['id'] as num).toInt(),
+    name: (j['name'] as String?) ?? '',
+    region: _text(j['region']),
+    country: (j['country'] as String?) ?? '',
+    lat: (j['lat'] as num?)?.toDouble() ?? 0,
+    lng: (j['lng'] as num?)?.toDouble() ?? 0,
+  );
+
+  Map<String, Object?> toJson() => {
+    'id': id,
+    'name': name,
+    'region': region,
+    'country': country,
+    'lat': lat,
+    'lng': lng,
+  };
+
+  final int id;
+  final String name;
+  final String? region;
+  final String country;
+  final double lat;
+  final double lng;
+
+  /// "London, United Kingdom".
+  String get label => '$name, $country';
+
+  /// "London, England, United Kingdom" — to tell towns of one name apart.
+  String get fullLabel =>
+      [name, if (region != null && region != name) region!, country].join(', ');
 }
 
 class Book {

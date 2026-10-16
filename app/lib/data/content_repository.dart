@@ -47,6 +47,16 @@ abstract class ContentRepository {
   /// something is hidden.
   Future<Map<String, List<List<String>>>> teacherContentSubjects();
 
+  /// Towns by id (practitioners' places, for distances).
+  Future<List<Place>> placesByIds(List<int> ids);
+
+  /// "Type my city": towns whose name starts with [query], biggest first.
+  Future<List<Place>> searchPlaces(String query);
+
+  /// "Use my location": the nearest town to an already-rounded position, or
+  /// null if none is within about 110 km. Nothing is stored.
+  Future<Place?> nearestPlace(double lat, double lng);
+
   /// A publisher's linked authors (healer ids), from publisher_healers.
   Future<List<int>> publisherAuthorIds(String publisherId);
 
@@ -56,6 +66,9 @@ abstract class ContentRepository {
   Future<List<Offering>> offeringsBySlugs(List<String> slugs);
   Future<List<FreeResource>> freeResourcesBySlugs(List<String> slugs);
 }
+
+/// A position as it leaves the phone: two decimal places, about 1 km.
+double roundForPrivacy(double v) => (v * 100).roundToDouble() / 100;
 
 class SupabaseContentRepository implements ContentRepository {
   SupabaseContentRepository(this._db, {Random? random})
@@ -372,6 +385,46 @@ class SupabaseContentRepository implements ContentRepository {
       add(slugOf[(r['healer_id'] as num?)?.toInt()], r['subject_slugs']);
     }
     return out;
+  }
+
+  static const _placeColumns = 'id, name, region, country, lat, lng';
+
+  @override
+  Future<List<Place>> placesByIds(List<int> ids) async {
+    if (ids.isEmpty) return const [];
+    final rows = await _db
+        .from('places')
+        .select(_placeColumns)
+        .inFilter('id', ids);
+    return [for (final r in rows) Place.fromJson(r)];
+  }
+
+  @override
+  Future<List<Place>> searchPlaces(String query) async {
+    // Letters, spaces, hyphens and apostrophes only: it goes into a pattern.
+    final q = query.trim().replaceAll(
+      RegExp(r"[^\p{L}\s\-']", unicode: true),
+      '',
+    );
+    if (q.length < 2) return const [];
+    final rows = await _db
+        .from('places')
+        .select(_placeColumns)
+        .or('name.ilike."$q*",ascii_name.ilike."$q*"')
+        .order('population', ascending: false)
+        .limit(8);
+    return [for (final r in rows) Place.fromJson(r)];
+  }
+
+  @override
+  Future<Place?> nearestPlace(double lat, double lng) async {
+    final rows = await _db.rpc(
+      'nearest_place',
+      params: {'p_lat': roundForPrivacy(lat), 'p_lng': roundForPrivacy(lng)},
+    );
+    if (rows is! List || rows.isEmpty) return null;
+    final id = (rows.first['id'] as num).toInt();
+    return (await placesByIds([id])).firstOrNull;
   }
 
   @override

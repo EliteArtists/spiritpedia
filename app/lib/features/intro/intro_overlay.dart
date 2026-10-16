@@ -9,6 +9,8 @@ import 'package:shared_preferences/shared_preferences.dart';
 import '../../data/providers.dart';
 import '../../theme/colors.dart';
 import '../interests/interests_picker.dart';
+import '../account/display_name.dart';
+import '../star/conductor.dart';
 import '../star/slipstream.dart';
 import '../star/star_layer.dart';
 
@@ -165,6 +167,10 @@ class _IntroOverlayState extends ConsumerState<IntroOverlay>
 
   _Phase _phase = _Phase.waiting;
   IntroKind _kind = IntroKind.short;
+
+  /// What the star says before it flies: who it is, the first time; on a
+  /// later launch, for someone who shared their name, "Welcome back, Ross".
+  String _caption = IntroOverlay.greeting;
   bool _still = false; // Reduce Motion
   bool _started = false;
   int _run = 0; // which play this is; a replay makes older ones stand down
@@ -184,6 +190,9 @@ class _IntroOverlayState extends ConsumerState<IntroOverlay>
   Future<void> _start() async {
     final run = _run;
     final kind = await ref.read(introPrefsProvider).kind();
+    final name = kind == IntroKind.short
+        ? firstNameOf(await ref.read(nameStoreProvider).load())
+        : null;
     // Decode the star before the launch screen goes away, so the first frame
     // of the intro is identical to the launch screen rather than blank.
     if (mounted) await precacheImage(starAsset, context).catchError((_) {});
@@ -193,7 +202,16 @@ class _IntroOverlayState extends ConsumerState<IntroOverlay>
     if (kind == IntroKind.none || (kind == IntroKind.short && _still)) {
       return _finish();
     }
-    if (kind == IntroKind.short) return _flyHome();
+    if (kind == IntroKind.short) {
+      if (name == null) return _flyHome();
+      _caption = 'Welcome back, $name';
+      _greet.duration = const Duration(milliseconds: 1600);
+    } else {
+      _caption = IntroOverlay.greeting;
+      _greet.duration = const Duration(milliseconds: 2400);
+      // The full intro is this session's one appearance of the star.
+      ref.read(conductorProvider.notifier).introPlayed();
+    }
     setState(() => _phase = _Phase.greeting);
     await _greet.forward().orCancel.catchError((_) {});
     if (mounted && run == _run && _phase == _Phase.greeting) _flyHome();
@@ -425,12 +443,12 @@ class _IntroOverlayState extends ConsumerState<IntroOverlay>
                     // The intro sits above the app's pages, outside any
                     // Material: without one, Flutter draws text in its
                     // debug style (the deformed, underlined look).
-                    child: const Material(
+                    child: Material(
                       type: MaterialType.transparency,
                       child: Text(
-                        IntroOverlay.greeting,
+                        _caption,
                         textAlign: TextAlign.center,
-                        style: TextStyle(
+                        style: const TextStyle(
                           fontSize: 24,
                           fontWeight: FontWeight.w600,
                           letterSpacing: -0.2,
