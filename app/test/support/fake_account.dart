@@ -25,6 +25,16 @@ class FakeAccountService implements AccountService {
 
   /// Sign someone in directly, as a restored session would.
   void restoreSession(String email) {
+    // A restored session belongs to an account that already exists.
+    profiles.putIfAbsent(
+      _idFor(email),
+      () => const AccountProfile(userType: 'explorer'),
+    );
+    _signIn(email);
+  }
+
+  /// Signed in by code: a new address becomes a new account.
+  void _signIn(String email) {
     _current = AccountUser(id: _idFor(email), email: cleanEmail(email));
     _changes.add(_current);
   }
@@ -46,7 +56,7 @@ class FakeAccountService implements AccountService {
     if (code != this.code) {
       throw const AccountError("That code didn't work. Please try again.");
     }
-    restoreSession(email);
+    _signIn(email);
   }
 
   /// The codes the email change "sends": to the current and new address.
@@ -106,6 +116,10 @@ class FakeAccountService implements AccountService {
 
   @override
   Future<void> sendWelcome() async => calls.add('sendWelcome');
+
+  @override
+  Future<void> recordPractitionerIntent(String email) async =>
+      calls.add('practitionerIntent:$email');
 
   @override
   Future<void> deleteAccount() async {

@@ -4,6 +4,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
+import 'features/account/account_providers.dart';
+import 'features/account/user_type_card.dart';
 import 'features/interests/tailor_star.dart';
 import 'features/intro/intro_overlay.dart';
 import 'features/notifications/notifications_controller.dart';
@@ -87,6 +89,17 @@ class _SpiritpediaAppState extends ConsumerState<SpiritpediaApp> {
 
   @override
   Widget build(BuildContext context) {
+    // A brand-new account, however it signed in (Account, the save prompt):
+    // "How will you use Spiritpedia?", once.
+    ref.listen(accountProvider, (previous, next) {
+      if (!next.isNew || (previous?.isNew ?? false)) return;
+      WidgetsBinding.instance.addPostFrameCallback((_) {
+        final navigator = _router.routerDelegate.navigatorKey.currentContext;
+        if (navigator != null && navigator.mounted) {
+          askHowTheyWillUseIt(navigator, ref);
+        }
+      });
+    });
     return MaterialApp.router(
       title: 'Spiritpedia',
       debugShowCheckedModeBanner: false,

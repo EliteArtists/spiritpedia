@@ -79,6 +79,11 @@ abstract class AccountService {
   /// The website's welcome email for a new explorer.
   Future<void> sendWelcome();
 
+  /// Notes [email] as joining to share their work (the website's
+  /// /api/pending-user-type, as its own sign-up does), so the website's
+  /// application flow takes it from there.
+  Future<void> recordPractitionerIntent(String email);
+
   /// Delete the account (POST /api/account/delete). Throws [AccountError].
   Future<void> deleteAccount();
 
@@ -259,6 +264,21 @@ class SupabaseAccountService implements AccountService {
   @override
   Future<void> sendWelcome() async {
     await _post('/api/email/explorer-welcome');
+  }
+
+  @override
+  Future<void> recordPractitionerIntent(String email) async {
+    // No token: the website's own sign-up records it before the code is
+    // sent. Only ever "practitioner" for this email; the website reads it
+    // back only for the account that signs in with it.
+    await _http.post(
+      Uri.parse('$apiBaseUrl/api/pending-user-type'),
+      headers: {'Content-Type': 'application/json'},
+      body: jsonEncode({
+        'email': cleanEmail(email),
+        'userType': 'practitioner',
+      }),
+    );
   }
 
   @override

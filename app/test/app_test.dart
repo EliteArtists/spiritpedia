@@ -904,6 +904,21 @@ void main() {
       expect(find.text('Worldwide'), findsOneWidget); // where they were
       expect(find.byTooltip('Remove from My Library'), findsOneWidget);
       expect(account.favouriteRows['user-new@example.com'], hasLength(1));
+
+      // A brand-new account: "How will you use Spiritpedia?", once.
+      expect(find.byKey(const ValueKey('user-type-card')), findsOneWidget);
+      expect(find.text('How will you use Spiritpedia?'), findsOneWidget);
+      expect(account.calls, isNot(contains('sendWelcome')));
+      await tester.tap(find.byKey(const ValueKey('user-type-sharing')));
+      await tester.pumpAndSettle();
+      expect(find.text('Continue on spiritpedia.co'), findsOneWidget);
+      await tester.tap(find.byKey(const ValueKey('user-type-back')));
+      await tester.pumpAndSettle();
+      await tester.tap(find.byKey(const ValueKey('user-type-exploring')));
+      await tester.pumpAndSettle();
+      expect(find.byKey(const ValueKey('user-type-card')), findsNothing);
+      expect(account.calls, contains('sendWelcome'));
+      expect(find.text('Worldwide'), findsOneWidget);
     });
   });
 

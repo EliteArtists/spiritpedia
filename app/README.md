@@ -334,6 +334,18 @@ is saved.
   banner (`FirebasePushMessaging.showWhileOpen`, said at every launch). The
   grey in-app tray for pushes is gone.
 
+**How will you use Spiritpedia?** (for build 14, `account/user_type_card.dart`)
+- Once, for a brand-new account however it signed in (Account, the save
+  prompt): "I'm exploring" or "I share my work".
+- **Exploring** carries on in the app and sends the explorer welcome. Putting
+  the card away counts as exploring. The welcome waits for the answer.
+- **Sharing** (practitioners now; channels, apps and publishers later) notes
+  the email as a practitioner-to-be (`/api/pending-user-type`) and opens
+  `spiritpedia.co/auth/signup?as=practitioner`. Signing in there with the same
+  email takes them to the application, upgrades the account to practitioner
+  and sends the practitioner welcome (`web/utils/onboarding.js` →
+  `ensureProfile`). No explorer welcome.
+
 **My Account.**
 - Email, with change email (two codes).
 - Account type.
@@ -403,18 +415,30 @@ Earlier migrations (0000–0014) are described in the root README.
 - **The first notification is sometimes not sent.** One test turned
   notifications on, registered the token and saved General as on, but no
   welcome was recorded. Parked with the item above.
-- **An email change on live didn't complete (found 16 October 2026).** A
-  change from one address to another on 14 October left two separate live
-  accounts: the old address unchanged (with its saves), and the new address
-  as a fresh account created on 15 October. The admin reads emails live from
-  Supabase Auth, so a completed change would show there by itself. Next: read
-  `auth.audit_log_entries` for 14–15 October to see which step stopped.
-- **Sign-up type in the app.** The app records every new account as an
-  explorer and never asks. The proposal (not built): only for a brand-new
-  account, one card, "How will you use Spiritpedia?" — "I'm exploring" stays
-  in the app; "I share my work" (practitioners now; channels, apps and
-  publishers later) records a pending practitioner type and opens the
-  website's application flow.
+- **An email change on live didn't end where expected (found 16 October
+  2026; both accounts kept, nothing deleted).** A change from rossbaiken@ to
+  wiseoly@ on 14 October left two live accounts: rossbaiken@ (its saves and
+  tailoring) and wiseoly@, a new, empty account created on 15 October at
+  17:26 UTC by signing in with that address. The admin reads emails live from
+  Supabase Auth, so a completed change would show there by itself.
+  - `auth.audit_log_entries` is empty for these days: this project doesn't
+    record these events there.
+  - **From the account's own auth record** (admin API, read-only): change
+    codes were last sent on 14 Oct at 12:23:10 UTC; the account's email
+    identity was rewritten at 12:23:45; no change is pending now; the address
+    is rossbaiken@; it then signed in with rossbaiken@ at 18:00.
+  - **On dev** (same Supabase Auth version, v2.197.0), only a *completed*
+    change rewrites the identity; one code alone leaves the change pending,
+    and a later sign-in doesn't clear it. And the app says "Your email is now
+    …" only once the server returns a session, which only the second code
+    does.
+  - **Most likely, then:** the change to wiseoly@ completed earlier on 14
+    October, and a second change back to rossbaiken@ was requested at 12:23:10
+    and completed at 12:23:45. That would leave exactly these records.
+  - **To confirm:** the "Confirm Change of Email" emails in both Gmail
+    inboxes on 14 October (how many, and which way each one changes), or
+    Supabase Dashboard → Logs → Auth for 14 October, if the plan's log
+    retention still covers it.
 - **The welcome tray needs a redesign.** In-app messages mustn't appear
   abruptly. (Pushes now show as iPhone banners, so this is for messages the
   app shows itself.) The plan:

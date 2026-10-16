@@ -22,15 +22,24 @@ class AccountState {
   const AccountState.signedOut()
     : status = AccountStatus.signedOut,
       user = null,
-      profile = null;
-  const AccountState.signedIn(AccountUser this.user, {this.profile})
-    : status = AccountStatus.signedIn;
+      profile = null,
+      isNew = false;
+  const AccountState.signedIn(
+    AccountUser this.user, {
+    this.profile,
+    this.isNew = false,
+  }) : status = AccountStatus.signedIn;
 
   final AccountStatus status;
   final AccountUser? user;
 
   /// null until loaded, or if the row could not be read.
   final AccountProfile? profile;
+
+  /// A brand-new account that has not yet said how it will use Spiritpedia
+  /// ("How will you use Spiritpedia?", [AccountController.chooseExploring],
+  /// [AccountController.chooseSharing]). Its welcome waits for the answer.
+  final bool isNew;
 
   bool get signedIn => status == AccountStatus.signedIn;
 }
@@ -71,7 +80,11 @@ class AccountController extends Notifier<AccountState> {
     if (_syncedUserId == user.id) {
       // Token refreshes repeat the event; a changed email arrives this way.
       if (state.user?.email != user.email) {
-        state = AccountState.signedIn(user, profile: state.profile);
+        state = AccountState.signedIn(
+          user,
+          profile: state.profile,
+          isNew: state.isNew,
+        );
       }
       return;
     }
@@ -86,17 +99,42 @@ class AccountController extends Notifier<AccountState> {
     await ref.read(savedItemsProvider.notifier).syncWithAccount(user.id);
     await interests.syncWithAccount(user.id);
     try {
-      if (await _service.ensureProfile(user.id)) {
-        unawaited(_service.sendWelcome().catchError((_) {}));
-      }
+      // A new account is asked how it will use Spiritpedia first; the
+      // welcome follows the answer.
+      final created = await _service.ensureProfile(user.id);
       final profile = await _service.profile(user.id);
       if (_syncedUserId == user.id) {
-        state = AccountState.signedIn(user, profile: profile);
+        state = AccountState.signedIn(user, profile: profile, isNew: created);
       }
     } catch (_) {
       // A background repair: the next start tries again.
       _syncedUserId = null;
     }
+  }
+
+  /// "I'm exploring" — or the question put away: the explorer welcome,
+  /// and the app carries on as it is.
+  Future<void> chooseExploring() async {
+    final user = state.user;
+    if (user == null || !state.isNew) return;
+    state = AccountState.signedIn(user, profile: state.profile);
+    try {
+      await _service.sendWelcome();
+    } catch (_) {}
+  }
+
+  /// "I share my work": the account is noted as a practitioner-to-be by its
+  /// email (the website's pending_user_types), so signing in on the website
+  /// takes them to its application and makes them a practitioner there. The
+  /// caller opens the website. No explorer welcome: the website sends the
+  /// practitioner one.
+  Future<void> chooseSharing() async {
+    final user = state.user;
+    if (user == null || !state.isNew) return;
+    state = AccountState.signedIn(user, profile: state.profile);
+    try {
+      await _service.recordPractitionerIntent(user.email);
+    } catch (_) {}
   }
 
   Future<void> sendCode(String email) => _service.sendCode(email);

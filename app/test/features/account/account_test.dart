@@ -133,18 +133,44 @@ void main() {
       expect(find.text('Explorer'), findsOneWidget);
     });
 
-    test('a new account gets a profile and ONE welcome; a returning one gets neither', () async {
+    test('a new account is asked first, then gets ONE welcome; a returning '
+        'one is asked nothing and gets none', () async {
       final c = container();
       await c.read(accountProvider.notifier).verifyCode(_email, '123456');
       await settle();
       expect(service.profiles[_userId]?.userType, 'explorer');
+      // "How will you use Spiritpedia?" comes before the welcome.
+      expect(c.read(accountProvider).isNew, isTrue);
+      expect(service.calls, isNot(contains('sendWelcome')));
+      await c.read(accountProvider.notifier).chooseExploring();
+      expect(c.read(accountProvider).isNew, isFalse);
       expect(service.calls.where((x) => x == 'sendWelcome'), hasLength(1));
 
       await c.read(accountProvider.notifier).signOut();
       await c.read(accountProvider.notifier).verifyCode(_email, '123456');
       await settle();
+      expect(c.read(accountProvider).isNew, isFalse);
+      await c.read(accountProvider.notifier).chooseExploring(); // no-op
       expect(service.calls.where((x) => x == 'sendWelcome'), hasLength(1));
     });
+
+    test(
+      '"I share my work": noted for the website, no explorer welcome',
+      () async {
+        final c = container();
+        await c.read(accountProvider.notifier).verifyCode(_email, '123456');
+        await settle();
+        await c.read(accountProvider.notifier).chooseSharing();
+        expect(c.read(accountProvider).isNew, isFalse);
+        expect(
+          service.calls,
+          contains('practitionerIntent:seeker@example.com'),
+        );
+        expect(service.calls, isNot(contains('sendWelcome')));
+        // The app itself still says explorer until the website says otherwise.
+        expect(service.profiles[_userId]?.userType, 'explorer');
+      },
+    );
 
     test(
       'an existing practitioner profile is never reset to explorer',
