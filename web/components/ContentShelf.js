@@ -4,6 +4,8 @@ import ShelfRow from './ShelfRow.js';
 // retreats, downloads, free resources) is one of these — the only thing that
 // changes is the card renderer and the fixed track width each card occupies.
 //
+// `note` is an optional line under the heading (Practitioners Near You's area).
+//
 // `emptyHide` is the default: a shelf whose query came back with nothing renders
 // nothing at all rather than an empty heading over blank space.
 export default function ContentShelf({
@@ -15,6 +17,7 @@ export default function ContentShelf({
   itemWidthClass = 'w-[300px]',
   emptyHide = true,
   badge,
+  note,
 }) {
   const list = Array.isArray(items) ? items.filter(Boolean) : [];
 
@@ -26,6 +29,8 @@ export default function ContentShelf({
   return (
     <section className="min-w-0">
       <ShelfRow title={title} subtitle={subtitle} seeAllHref={seeAllHref} badge={badge} />
+      {/* A line under the heading: "Near London · Change", "Set your area". */}
+      {note && <div className="-mt-2 mb-4">{note}</div>}
 
       <div className="flex flex-row gap-5 overflow-x-auto scrollbar-hide snap-x snap-mandatory scroll-smooth pb-2">
         {list.map((item, index) => (

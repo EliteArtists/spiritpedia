@@ -6,6 +6,8 @@ import { supabaseAuth } from '../utils/supabaseAuth.js';
 import { ensureProfile, migrateFavourites, readPendingUserType } from '../utils/onboarding.js';
 import { FAVORITES_EVENT, readFavorites, toggleFavorite } from '../utils/favorites.js';
 import { takePendingSave } from '../utils/savePrompt.js';
+import { writeArea } from '../utils/area.js';
+import { syncAreaWithAccount } from '../utils/areaSync.js';
 import {
   clearSavesAfterSignOut,
   normaliseLegacyFavourites,
@@ -93,6 +95,9 @@ export default function AuthSync() {
         if (pending && !readFavorites(pending.key).map(String).includes(pending.slug)) {
           toggleFavorite(pending.key, pending.slug);
         }
+
+        // Their area for Practitioners Near You, as the app keeps it.
+        await syncAreaWithAccount(userId);
       } catch {
         // Background repair. It must never surface an error over whatever the
         // visitor is actually reading, and the next page load tries again.
@@ -103,6 +108,8 @@ export default function AuthSync() {
     const { data: subscription } = supabaseAuth.auth.onAuthStateChange((event, session) => {
       if (event === 'SIGNED_OUT') {
         clearSavesAfterSignOut(userRef.current);
+        // The account keeps the area; this browser forgets it, as on the phone.
+        if (userRef.current) writeArea(null);
         userRef.current = null;
         // Let a later sign-in — possibly a different person on a shared
         // machine — sync again rather than being skipped as already done.

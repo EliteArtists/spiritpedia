@@ -5,6 +5,7 @@ import PublisherCard from './PublisherCard.jsx';
 import HomeMasthead from './HomeMasthead.jsx';
 import ExploreMore from './ExploreMore.jsx';
 import HomeTabs from './HomeTabs.jsx';
+import NearYouShelf from './NearYouShelf.jsx';
 import { SITE_URL, DEFAULT_TITLE } from '../utils/seo.js';
 
 // The shared anonymous data client, not a second one built here.
@@ -122,6 +123,21 @@ export default async function HomePage({ initialSubjectSlug, initialSearch = '' 
   const luminaries = individuals.filter((h) => h.tier === 'luminary');
   const localHeroes = healers.filter((h) => !isPremium(h));
 
+  // Practitioners Near You is ordered in the browser, for the visitor's own
+  // area (components/NearYouShelf.jsx). It needs their towns — the few the
+  // shelf holds — and the portraits chosen here.
+  const nearPlaceIds = [...new Set(localHeroes.map((h) => h.place_id).filter(Boolean))];
+  const { data: nearPlaceRows } = nearPlaceIds.length
+    ? await supabase.from('places').select('id, name, region, country, lat, lng').in('id', nearPlaceIds)
+    : { data: [] };
+  const nearPlaces = Object.fromEntries((nearPlaceRows || []).map((p) => [p.id, p]));
+  const nearPortraits = Object.fromEntries(
+    localHeroes.map((h) => {
+      const seed = h.healer_slug || String(h.id);
+      return [seed, pickPortrait(h.image_urls, currentSubjectSlug, seed)];
+    })
+  );
+
   // Card renderer factory — `cardProps` lets one shelf vary the card (the
   // Timeless Teachers shelf runs a taller card) without a second component.
   const healerRenderer = (cardProps = {}) => (healer) => (
@@ -218,17 +234,16 @@ export default async function HomePage({ initialSubjectSlug, initialSearch = '' 
             itemWidthClass="w-[260px]"
           />
 
-          <ContentShelf
-            title="Practitioners Near You"
+          <NearYouShelf
             badge={
               <span className="inline-block px-3 py-1 text-xs font-bold uppercase tracking-wider bg-emerald-500 text-white rounded-full mb-2 shadow-sm">
                 LOCAL HERO
               </span>
             }
-            items={localHeroes}
+            practitioners={localHeroes}
+            places={nearPlaces}
+            portraits={nearPortraits}
             seeAllHref={seeAll}
-            renderItem={renderHealer}
-            itemWidthClass="w-[260px]"
           />
 
           {/* Deceased teachers whose work is foundational. Hidden until the

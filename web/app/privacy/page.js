@@ -10,7 +10,7 @@ import CookieSettingsLink from '@/components/CookieSettingsLink';
 // the two now change independently. Updated for self-serve account deletion,
 // synced saved items, app notifications (Firebase Cloud Messaging), and the
 // subjects chosen and hidden in the app (explicit consent).
-const PRIVACY_UPDATED = '14 October 2026';
+const PRIVACY_UPDATED = '16 October 2026';
 
 export const metadata = buildMetadata({
   title: 'Privacy Policy',
@@ -121,6 +121,43 @@ export default function PrivacyPage() {
           </li>
         </List>
 
+        <Sub>If you set your area</Sub>
+        <List>
+          <li>
+            To show practitioners near you, you can set your area — on the website or in the
+            app. It is always optional. Your area is a town and its country (for example,
+            &ldquo;London, United Kingdom&rdquo;), never your exact location.
+          </li>
+          <li>
+            You can type your town, or let us find it. If you choose &ldquo;Use my location&rdquo;,
+            your browser or phone gives an approximate position once; we round it to about a
+            kilometre, send it to our database provider to look up the nearest town, keep the town
+            and discard the position. We never store or keep your position, and we never track
+            where you go.
+          </li>
+          <li>
+            Your area is kept in your browser or on your phone. If you&apos;re signed in, it is also
+            stored with your account so it follows you to another device. It is never shown to
+            practitioners or anyone else, shared, or used for advertising.
+          </li>
+          <li>
+            Town names and their locations come from GeoNames (geonames.org), used under the
+            Creative Commons Attribution 4.0 licence.
+          </li>
+        </List>
+
+        <Sub>If you share your name</Sub>
+        <List>
+          <li>
+            In the app you can share your name. It is optional, and we use it only to greet you
+            (for example, &ldquo;Welcome back, Ross&rdquo;) and in the emails we send you.
+          </li>
+          <li>
+            It is kept on your phone and, if you&apos;re signed in, with your account. You can
+            change or remove it at any time in Account.
+          </li>
+        </List>
+
         <Sub>When you apply or are listed as a practitioner</Sub>
         <List>
           <li>
@@ -162,6 +199,14 @@ export default function PrivacyPage() {
             [
               'Tailor what you see, and hide what you\'d rather not see, from the subjects you chose',
               'Your explicit consent — choosing is optional, and you can change or clear your choices at any time',
+            ],
+            [
+              'Show practitioners near you, from the area you set',
+              'Your consent — setting an area is optional, and you can change or clear it at any time',
+            ],
+            [
+              'Greet you by name in the app and in our emails',
+              'Your consent — sharing your name is optional, and you can change or remove it at any time',
             ],
             [
               'Feature established teachers and invite them to claim their profile',
@@ -248,6 +293,12 @@ export default function PrivacyPage() {
           <li>
             Your chosen and hidden subjects — until you change or clear them (Account → Tailor
             Spiritpedia in the app) or delete your account.
+          </li>
+          <li>
+            Your area and your name — until you change or clear them (your area: Tailor
+            Spiritpedia in the app, or &ldquo;Change&rdquo; on Practitioners Near You; your name:
+            Account in the app) or delete your account. A position used to find your town is
+            never kept.
           </li>
           <li>
             If you deleted an account linked to a public teacher profile, the profile stays on
