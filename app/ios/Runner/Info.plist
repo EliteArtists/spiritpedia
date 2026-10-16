@@ -67,6 +67,8 @@
 	</array>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>Spiritpedia uses your approximate location once, to find your town and show practitioners near you. Only your town and country are kept — never your exact location.</string>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>Spiritpedia uses your approximate location once, to find your town and show practitioners near you. Only your town and country are kept — never your exact location.</string>
 	<key>NSLocationDefaultAccuracyReduced</key>
 	<true/>
 </dict>

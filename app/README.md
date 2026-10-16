@@ -155,9 +155,9 @@ screenshot`. Tours are deleted afterwards and never committed.
    running the project uploads; there is no App Store Connect API key on this
    Mac.
 
-**Build numbers so far:** 1–9 and 11–15 are real builds. **Build 10 was an
+**Build numbers so far:** 1–9 and 11–16 are real builds. **Build 10 was an
 accidental duplicate of build 9**, uploaded from Xcode, so the numbering
-jumped from 9 to 11. The next build is **16**.
+jumped from 9 to 11. The next build is **17**.
 
 The Mac's disk has filled up during a build before. `flutter clean` frees the
 app's `build/` folder (about 7 GB), and everything in it is regenerated.
@@ -353,7 +353,15 @@ is saved.
 - **Setting it:** "Set your area" on the shelf, Tailor Spiritpedia → Your
   area, or the star's question. "Use my location" asks iOS for approximate
   location only (`NSLocationDefaultAccuracyReduced`), once, through
-  `geolocator`; "Type my city" searches `places`.
+  `geolocator`; "Type my city" searches `places`. It only ever asks for
+  "When In Use": with `NSLocationWhenInUseUsageDescription` present,
+  geolocator_apple never asks for Always. `NSLocationAlwaysAndWhenInUse-
+  UsageDescription` (same wording) is there only because Apple's upload scan
+  sees the package's unused Always code (ITMS-90683, build 15). The app never
+  asks for full accuracy and uses no other privacy-sensitive API (checked in
+  the build-15 binary: no camera, photos, microphone, contacts, calendar,
+  Bluetooth, motion, health or tracking; `LAContext` comes from secure storage
+  but biometrics are never used, so no Face ID string is needed).
 - **The conductor** (`features/star/conductor.dart`): the star does at most
   one thing a session (a cold start, or back after 30+ minutes). Session 1 is
   the intro. From the 5th visit, "Shall I show you practitioners near you?";

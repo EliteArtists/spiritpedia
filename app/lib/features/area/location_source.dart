@@ -42,6 +42,11 @@ class DeviceLocationSource implements LocationSource {
       }
       var permission = await Geolocator.checkPermission();
       if (permission == LocationPermission.denied) {
+        // "When In Use" only, never "Always": with NSLocationWhenInUseUsage-
+        // Description in Info.plist, geolocator_apple always asks for When In
+        // Use (PermissionHandler.m). The Always description is there only
+        // because Apple's scan sees the package's unused Always code
+        // (ITMS-90683). Nothing here asks for full accuracy either.
         permission = await Geolocator.requestPermission();
       }
       if (permission == LocationPermission.denied) {
