@@ -1,6 +1,7 @@
 # Spiritpedia: the app
 
-The Flutter app for iPhone, in TestFlight as **1.0.0 (12)** (14 October 2026).
+The Flutter app for iPhone: **1.0.0 (13)** built 16 October 2026; build 12 is
+in TestFlight.
 It uses the same Supabase database, the same accounts and the same content as
 the website in `../web`. This file is written so that a new session, with none
 of the earlier conversations, can pick the app up.
@@ -135,7 +136,7 @@ read-only checks only.
 
 ```bash
 flutter analyze        # must say "No issues found"
-flutter test           # 229 tests at build 12, all passing
+flutter test           # 240 tests at build 13, all passing
 ```
 
 Screenshots for review come from a temporary integration test (a "tour") that
@@ -154,9 +155,9 @@ screenshot`. Tours are deleted afterwards and never committed.
    running the project uploads; there is no App Store Connect API key on this
    Mac.
 
-**Build numbers so far:** 1–9 and 11–12 are real builds. **Build 10 was an
+**Build numbers so far:** 1–9 and 11–13 are real builds. **Build 10 was an
 accidental duplicate of build 9**, uploaded from Xcode, so the numbering
-jumped from 9 to 11. The next build is **13**.
+jumped from 9 to 11. The next build is **14**.
 
 The Mac's disk has filled up during a build before. `flutter clean` frees the
 app's `build/` folder (about 7 GB), and everything in it is regenerated.
@@ -181,7 +182,7 @@ anything under `web/` deploys live.
 | 2 | Email-code sign-in, profile, My Library sync (every save a slug, migration 0012), self-serve account deletion (0013) |
 | 3a | Push notifications through Firebase Cloud Messaging only (0014) |
 
-### A1–A3, onboarding and tailoring (builds 5–12)
+### A1–A3, onboarding and tailoring (builds 5–13)
 
 **Discover · Videos · Books.**
 - A floating pill of dark frosted glass. Discover is where the app opens.
@@ -196,12 +197,15 @@ anything under `web/` deploys live.
   home to the tab you came from, with the filter kept.
 - **Every page change** is a flight along the slipstream.
 - **There is only ever one star on screen** (`features/star/star_layer.dart`).
+- **Press and hold the star, anywhere:** My Library, with a light haptic
+  tap (`starHeld`). A normal tap is unchanged.
 - **First launch:**
   - The star greets ("I am your guiding star") and flies into the search bar.
-  - A callout says "Tap me anytime to come home", with Got it or Don't show
-    me again.
-  - Onboarding follows.
-- **Later launches:** just the flight. After "Don't show me again", nothing.
+    The intro sits above the app's pages, so its text needs its own
+    `Material`; without one Flutter draws it in its debug style.
+  - A callout says "Tap me anytime to come home", with just Got it.
+  - Onboarding follows, fading in over the callout as it fades out.
+- **Later launches:** just the flight.
 - **Reduce Motion:** no flights anywhere. The first launch still shows its
   messages.
 - **Tier badges in shelf headings** (Superhero, Luminary, Local Hero) are
@@ -220,6 +224,9 @@ anything under `web/` deploys live.
   - Account and Notifications (signed in only).
   - Tailor Spiritpedia.
   - Share Spiritpedia.
+  - The website's footer statement ("Spiritpedia celebrates the
+    transformative power…", `siteStatement`, word for word from
+    `web/components/SiteFooter.jsx`).
   - Terms, Privacy, Affiliate Disclosure and Contact (love@).
 
 **Search: two engines, scoped tabs, and Suggests.**
@@ -259,7 +266,24 @@ anything under `web/` deploys live.
 
 **Explore More** has Free Resources, Courses & Programmes, Retreats & Live
 Events, Downloads & Audio, and Memberships. Books & Literature is left out:
-Books has its own tab.
+Books has its own tab. A tapped card becomes its shelf (no close control). All
+shelves start closed on each launch and close again when Tailor Spiritpedia
+is saved.
+
+**Saving needs an account** (app and website, build 13).
+- Signed out, a heart or Save opens a warm prompt: "Save it to your Library.
+  Create a free account so your saves follow you everywhere." → Sign in /
+  Create account (6-digit code, in the same sheet) or Not now
+  (`features/library/save_prompt.dart`).
+- After signing in, the save completes and the person is still where they
+  were (`SavedItems.saveAfterSignIn`, made once the account's Library is
+  down).
+- Removing a save never asks. Browsing, search and Tailor Spiritpedia stay
+  open to everyone. Saves already on a phone still move into the account at
+  sign-in.
+- The website does the same (`web/components/SavePrompt.jsx`,
+  `web/utils/savePrompt.js`), with no "Explorer or Practitioner?" question:
+  saving signs someone up as an explorer.
 
 **Onboarding and Tailor Spiritpedia** (migrations 0017 and 0018).
 - **When onboarding appears:** once, straight after the first-launch intro.
@@ -269,12 +293,24 @@ Books has its own tab.
 - **The buttons:** "Explore Spiritpedia →" and "Skip for now". A quiet
   "Anything you'd rather not see?" opens the same picker in Never show mode.
 - **Afterwards:** "Tailor Spiritpedia" in Account and the menu is one screen
-  with More of and Never show.
+  with More of and Never show. It is the star's space: the star flies in,
+  floats at the top and types its introduction while the choices scroll
+  underneath; then it can be swiped away, or glides down to the foot. "Don't
+  show me again" stops it (`interests/tailor_star.dart`).
+- **The pills and chips** have no icons or symbols; they read like the
+  Discover pills.
 - **More of** ranks in three levels everywhere: the chosen subjects, then the
-  rest of their pillars, then everything else. Discover gets a For You shelf.
-- **Never show:** an item goes if any of its subjects is hidden. A teacher,
-  channel or publisher goes only if every subject they cover is hidden. A
-  search by name finds hidden things behind "You've hidden this subject. Show
+  rest of their pillars, then everything else.
+- **For You** on Discover's View All shows one content type per visit, in
+  rotation: Free Resources → Courses & Programmes → Downloads & Audio →
+  Retreats & Live Events (upcoming only) → Memberships. A type with nothing
+  relevant is skipped; the turn is remembered between launches.
+- **Never show:** an item goes if any of its subjects is hidden, unless it
+  also carries a More of subject (More of wins). A teacher, channel or
+  publisher goes only if every subject they cover is hidden; a teacher or
+  channel whose content is all hidden goes too. A view left empty shows the
+  star: "You've hidden most subjects. Adjust in Tailor Spiritpedia". A search
+  by name finds hidden things behind "You've hidden this subject. Show
   anyway?"
 - **Storage:** saved on the phone at once. When signed in, also saved to the
   account; the account wins if both have choices.
@@ -289,7 +325,14 @@ Books has its own tab.
   for later).
 - The server sends through `web/utils/push.js`, using the Firebase service
   account in Vercel.
-- The welcome notification is sent once per account by `/api/push/welcome`.
+- **The first notification** is sent once per account by `/api/push/welcome`
+  as soon as someone turns notifications on: "✦ Testing, testing… just
+  checking my light reaches you. Nothing to do. I'll only shine when it
+  matters." No title, nothing to open. It replaced the old welcome ("Welcome
+  to Spiritpedia ✨ / I'm your guiding star…") in build 13.
+- **While the app is open**, every notification shows as the iPhone's own
+  banner (`FirebasePushMessaging.showWhileOpen`, said at every launch). The
+  grey in-app tray for pushes is gone.
 
 **My Account.**
 - Email, with change email (two codes).
@@ -357,11 +400,24 @@ Earlier migrations (0000–0014) are described in the root README.
 - **Turning notifications off doesn't remove the device token.** The
   preference saves as off, but the `push_tokens` row stays. Parked until the
   final notifications pass.
-- **The welcome notification is sometimes not sent.** One test turned
+- **The first notification is sometimes not sent.** One test turned
   notifications on, registered the token and saved General as on, but no
   welcome was recorded. Parked with the item above.
-- **The welcome tray needs a redesign.** In-app messages (the welcome is the
-  first) mustn't appear abruptly. The plan:
+- **An email change on live didn't complete (found 16 October 2026).** A
+  change from one address to another on 14 October left two separate live
+  accounts: the old address unchanged (with its saves), and the new address
+  as a fresh account created on 15 October. The admin reads emails live from
+  Supabase Auth, so a completed change would show there by itself. Next: read
+  `auth.audit_log_entries` for 14–15 October to see which step stopped.
+- **Sign-up type in the app.** The app records every new account as an
+  explorer and never asks. The proposal (not built): only for a brand-new
+  account, one card, "How will you use Spiritpedia?" — "I'm exploring" stays
+  in the app; "I share my work" (practitioners now; channels, apps and
+  publishers later) records a pending practitioner type and opens the
+  website's application flow.
+- **The welcome tray needs a redesign.** In-app messages mustn't appear
+  abruptly. (Pushes now show as iPhone banners, so this is for messages the
+  app shows itself.) The plan:
   - Wait until the person is on a main tab.
   - Then the star flies down with its usual animation and lands on a tray
     carrying the message.
@@ -387,15 +443,15 @@ Earlier migrations (0000–0014) are described in the root README.
   6. Only then delete the Elite Artists projects.
 - **Dev can't use custom email templates.** The dev Supabase project is on
   the free plan, so its sign-in and change-email emails use Supabase's default
-  templates. Live is fine: its Change Email Address template includes the
-  code (`{{ .Token }}`), fixed and tested on 14 October 2026 (codes reached
-  both addresses and the email changed).
+  templates. Live's Change Email Address template includes the code
+  (`{{ .Token }}`), fixed on 14 October 2026; codes reached both addresses.
+  (But see the email-change item above.)
 
 ---
 
 ## Next steps
 
-1. **The polish pass**, across the whole app, from testing build 12 on a
+1. **The polish pass**, across the whole app, from testing build 13 on a
    phone.
 2. **Phase B: iPad.** Today the app is iPhone only and portrait only.
 3. **The website follow-ups** in `docs/website-followups.md`, plus a public

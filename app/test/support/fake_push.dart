@@ -16,7 +16,6 @@ class FakePushMessaging implements PushMessaging {
   String? currentToken;
   int _issued = 0;
   final refreshes = StreamController<String>.broadcast();
-  final foregroundNotes = StreamController<PushNote>.broadcast();
   final openedNotes = StreamController<PushNote>.broadcast();
   PushNote? launchedFrom;
 
@@ -53,9 +52,6 @@ class FakePushMessaging implements PushMessaging {
     calls.add('deleteToken');
     currentToken = null;
   }
-
-  @override
-  Stream<PushNote> get foreground => foregroundNotes.stream;
 
   @override
   Stream<PushNote> get opened => openedNotes.stream;

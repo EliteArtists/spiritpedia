@@ -149,3 +149,102 @@ class _FeelingTypewriterState extends ConsumerState<FeelingTypewriter>
     );
   }
 }
+
+/// [text] typed out once, as the search box types its feelings (the same
+/// speed, the same violet cursor), and then kept: for the star speaking.
+/// With Reduce Motion — or with the typewriter off, in widget tests — it is
+/// all there at once. [onDone] is called once it is all shown.
+class TypedOnce extends ConsumerStatefulWidget {
+  const TypedOnce(this.text, {super.key, this.style, this.onDone});
+
+  final String text;
+  final TextStyle? style;
+  final VoidCallback? onDone;
+
+  @override
+  ConsumerState<TypedOnce> createState() => _TypedOnceState();
+}
+
+class _TypedOnceState extends ConsumerState<TypedOnce>
+    with SingleTickerProviderStateMixin {
+  late final Ticker _ticker = createTicker(_tick);
+  int _shown = 0;
+  bool _cursor = true;
+  bool _started = false;
+  bool _done = false;
+
+  void _tick(Duration elapsed) {
+    final shown = (elapsed.inMilliseconds ~/ _typeMs).clamp(
+      0,
+      widget.text.length,
+    );
+    final cursor = (elapsed.inMilliseconds ~/ _blinkMs).isEven;
+    if (shown != _shown || cursor != _cursor) {
+      setState(() {
+        _shown = shown;
+        _cursor = cursor;
+      });
+    }
+    if (shown == widget.text.length) _finish();
+  }
+
+  void _finish() {
+    if (_done) return;
+    _done = true;
+    _ticker.stop();
+    // After this frame: the caller may rebuild around the finished text.
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      if (mounted) widget.onDone?.call();
+    });
+  }
+
+  @override
+  void didChangeDependencies() {
+    super.didChangeDependencies();
+    if (_started) return;
+    _started = true;
+    if (reduceMotion(context) || !ref.read(typewriterRunsProvider)) {
+      _shown = widget.text.length;
+      _finish();
+    } else {
+      _ticker.start();
+    }
+  }
+
+  @override
+  void dispose() {
+    _ticker.dispose();
+    super.dispose();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final style =
+        widget.style ?? const TextStyle(fontSize: 16, color: SpColors.text);
+    return Semantics(
+      label: widget.text,
+      excludeSemantics: true,
+      // The whole text is always laid out, the rest invisible, so the
+      // bubble is its final size from the start and nothing shifts.
+      child: Text.rich(
+        TextSpan(
+          children: [
+            TextSpan(text: widget.text.substring(0, _shown)),
+            if (!_done)
+              TextSpan(
+                text: '|',
+                style: TextStyle(
+                  color: _cursor ? SpColors.link : Colors.transparent,
+                ),
+              ),
+            TextSpan(
+              text: widget.text.substring(_shown),
+              style: const TextStyle(color: Colors.transparent),
+            ),
+          ],
+        ),
+        style: style,
+      ),
+    );
+  }
+}

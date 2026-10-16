@@ -131,6 +131,20 @@ class AppMenu extends ConsumerWidget {
         onTap: () => share(context, ref, '/', 'Spiritpedia'),
       ),
       const _Divider(),
+      // The website's footer statement, word for word
+      // (web/components/SiteFooter.jsx). Change both together.
+      const Padding(
+        key: ValueKey('menu-statement'),
+        padding: EdgeInsets.fromLTRB(22, 8, 22, 10),
+        child: Text(
+          siteStatement,
+          style: TextStyle(
+            fontSize: 12.5,
+            height: 1.55,
+            color: SpColors.textFaint,
+          ),
+        ),
+      ),
       _Item(
         icon: Icons.description_outlined,
         label: 'Terms of Use',
@@ -241,6 +255,15 @@ class AppMenu extends ConsumerWidget {
     );
   }
 }
+
+/// The website's footer statement (web/components/SiteFooter.jsx).
+const siteStatement =
+    'Spiritpedia celebrates the transformative power of spiritual practice, '
+    'alternative therapies and personal growth. The teachers and resources '
+    'here have helped millions of people live healthier, more conscious '
+    'lives. As with any health or wellbeing journey, we encourage you to make '
+    'informed choices — and to consult a healthcare professional where '
+    'appropriate.';
 
 class _Item extends StatelessWidget {
   const _Item({

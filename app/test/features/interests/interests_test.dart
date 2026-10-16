@@ -251,16 +251,77 @@ void main() {
         'superhero',
         subjects: ['shamanism', 'yoga'],
       );
-      expect(isHidden(teacher, {'shamanism'}), isFalse);
-      expect(isHidden(teacher, {'shamanism', 'yoga'}), isTrue);
+      expect(const Hiding(subjects: {'shamanism'})(teacher), isFalse);
+      expect(const Hiding(subjects: {'shamanism', 'yoga'})(teacher), isTrue);
       const book = Book(
         id: 1,
         slug: 'b',
         title: 'B',
         subjectSlugs: ['shamanism', 'yoga'],
       );
-      expect(isHidden(book, {'shamanism'}), isTrue);
+      expect(const Hiding(subjects: {'shamanism'})(book), isTrue);
     });
+
+    test('More of beats Never show: an item with a More of subject stays', () {
+      expect(
+        isHiddenItem(['reiki', 'shamanism'], {'shamanism'}, {'reiki'}),
+        isFalse,
+      );
+      expect(
+        isHiddenItem(['yoga', 'shamanism'], {'shamanism'}, {'reiki'}),
+        isTrue,
+      );
+      const both = Book(
+        id: 2,
+        slug: 'b2',
+        title: 'B2',
+        subjectSlugs: ['reiki', 'shamanism'],
+      );
+      const hiding = Hiding(subjects: {'shamanism'}, moreOf: {'reiki'});
+      expect(hiding(both), isFalse);
+      expect(hiding.items([both], (b) => b.subjectSlugs), [both]);
+    });
+
+    test(
+      'a teacher whose content is ALL hidden goes too: no empty profiles',
+      () {
+        final content = {
+          'all-hidden': [
+            ['shamanism'],
+            ['shamanism', 'yoga'],
+          ],
+          'some-left': [
+            ['shamanism'],
+            ['yoga'],
+          ],
+          'saved-by-more-of': [
+            ['shamanism', 'reiki'],
+          ],
+          'no-content': <List<String>>[],
+        };
+        expect(
+          teachersWithAllContentHidden(content, {'shamanism'}, {'reiki'}),
+          {'all-hidden'},
+        );
+        expect(teachersWithAllContentHidden(content, const {}), isEmpty);
+
+        final teacher = FakeContentRepository.healer(
+          3,
+          'all-hidden',
+          'A',
+          'superhero',
+          subjects: ['yoga', 'meditation'],
+        );
+        final hiding = Hiding(
+          subjects: const {'shamanism'},
+          emptyTeachers: teachersWithAllContentHidden(content, {'shamanism'}),
+        );
+        expect(hiding(teacher), isTrue);
+        // On a hidden subject's page, after "Show anyway", the subject rule
+        // only.
+        expect(hiding.showing('shamanism')(teacher), isFalse);
+      },
+    );
 
     test('a pillar whose every subject is hidden leaves the pill row', () {
       final mystical = {...subjectPillars['Mystical & Spiritual Exploration']!};

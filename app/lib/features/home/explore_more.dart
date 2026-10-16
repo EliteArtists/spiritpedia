@@ -7,6 +7,7 @@ import '../../data/providers.dart';
 import '../../shared/widgets/cards.dart';
 import '../../shared/widgets/shelf.dart';
 import '../../theme/colors.dart';
+import '../interests/hidden_empty.dart';
 
 /// Explore More (ExploreMore.jsx): its sections fetched only when the visitor
 /// asks for them. Opened sections appear as shelves, in the order opened; the
@@ -148,7 +149,17 @@ class _SectionShelf extends ConsumerWidget {
         title: section.label,
         message: 'Could not load this section.',
       ),
-      data: (items) {
+      data: (rows) {
+        final items = rows.items;
+        if (rows.hiddenAll) {
+          return Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              _Title(section.label),
+              const HiddenEmptyState(compact: true),
+            ],
+          );
+        }
         if (items.isEmpty) {
           return _MessageShelf(
             title: section.label,
@@ -202,14 +213,25 @@ class _MessageShelf extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Text(
-            title,
-            style: const TextStyle(fontSize: 21, fontWeight: FontWeight.w700),
-          ),
+          Text(title, style: _Title.style),
           const SizedBox(height: 10),
           Text(message, style: const TextStyle(color: SpColors.textMuted)),
         ],
       ),
     );
   }
+}
+
+class _Title extends StatelessWidget {
+  const _Title(this.text);
+
+  final String text;
+
+  static const style = TextStyle(fontSize: 21, fontWeight: FontWeight.w700);
+
+  @override
+  Widget build(BuildContext context) => Padding(
+    padding: const EdgeInsets.fromLTRB(20, 0, 20, 10),
+    child: Text(text, style: style),
+  );
 }

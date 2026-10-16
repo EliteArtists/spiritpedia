@@ -121,7 +121,7 @@ class LibraryScreen extends ConsumerWidget {
                 child: Text(
                   signedIn
                       ? 'Kept with your account — the same on spiritpedia.co.'
-                      : 'Saved on this phone. Sign in under Account to keep them on every device.',
+                      : 'Sign in to save — your Library then follows you everywhere.',
                   style: const TextStyle(
                     fontSize: 13.5,
                     color: SpColors.textFaint,

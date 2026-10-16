@@ -82,15 +82,37 @@ void main() {
     expect(find.text('HOME'), findsOneWidget); // built underneath throughout
     await tester.pump(const Duration(milliseconds: 1500));
     expect(find.text(IntroOverlay.greeting), findsOneWidget);
+    // Drawn in the app's text style, not Flutter's debug one: it sits in a
+    // Material, so it has no yellow underline.
+    expect(
+      find.ancestor(
+        of: find.text(IntroOverlay.greeting),
+        matching: find.byType(Material),
+      ),
+      findsWidgets,
+    );
+    final greeting = tester.widget<RichText>(
+      find.descendant(
+        of: find.text(IntroOverlay.greeting),
+        matching: find.byType(RichText),
+      ),
+    );
+    expect(greeting.text.style?.decoration, isNot(TextDecoration.underline));
 
     await tester.pump(const Duration(milliseconds: 1000)); // greeting ends
     await tester.pump(const Duration(milliseconds: 1200)); // the flight
     await tester.pump();
     expect(find.text(IntroOverlay.callout), findsOneWidget);
-    expect(find.text('Don’t show me again'), findsOneWidget);
+    // Just "Got it": no second line, no "Don't show me again".
+    expect(find.text('Don’t show me again'), findsNothing);
+    expect(
+      find.textContaining('Wherever you are in Spiritpedia'),
+      findsNothing,
+    );
 
     await tester.tap(find.text('Got it'));
     await tester.pump();
+    await tester.pump(const Duration(milliseconds: 600)); // into the welcome
     expect(find.text(IntroOverlay.callout), findsNothing);
     expect(prefs.value, IntroKind.short); // the full intro is once only
   });
@@ -104,29 +126,6 @@ void main() {
     await tester.pump(const Duration(milliseconds: 1200));
     await tester.pump();
     expect(find.text(IntroOverlay.callout), findsOneWidget);
-  });
-
-  testWidgets('"Don’t show me again" switches the intro off entirely', (
-    tester,
-  ) async {
-    final prefs = MemoryIntroPrefs();
-    await tester.pumpWidget(_app(prefs));
-    await _letStarDecode(tester);
-    await tester.tap(_skip);
-    await tester.pump();
-    await tester.pump(const Duration(milliseconds: 1200));
-    await tester.pump();
-    await tester.tap(find.text('Don’t show me again'));
-    await tester.pump();
-    expect(prefs.value, IntroKind.none);
-
-    // The next launch: straight onto Home.
-    await tester.pumpWidget(const SizedBox());
-    await tester.pumpWidget(_app(prefs));
-    await _letStarDecode(tester);
-    expect(_skip, findsNothing);
-    expect(find.text(IntroOverlay.greeting), findsNothing);
-    expect(find.text('HOME'), findsOneWidget);
   });
 
   testWidgets('later launches: just the short flight, no messages', (
@@ -415,19 +414,6 @@ void main() {
       await tester.pumpAndSettle();
       expect(_onboarding, findsNothing);
       expect(interests.value.chosen, isFalse);
-    });
-
-    testWidgets('"Don’t show me again" on the callout still leads to it', (
-      tester,
-    ) async {
-      await tester.pumpWidget(_app(MemoryIntroPrefs()));
-      await _letStarDecode(tester);
-      await tester.pump(const Duration(milliseconds: 2500));
-      await tester.pump(const Duration(milliseconds: 1200));
-      await tester.pump();
-      await tester.tap(find.text('Don’t show me again'));
-      await tester.pumpAndSettle();
-      expect(_onboarding, findsOneWidget);
     });
 
     testWidgets('never on a later launch', (tester) async {

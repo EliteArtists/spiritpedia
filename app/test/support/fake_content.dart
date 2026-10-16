@@ -113,19 +113,25 @@ class FakeContentRepository implements ContentRepository {
     ),
   ];
 
-  @override
-  Future<List<FreeResource>> featuredFreeResources({String? subject}) async =>
-      const [];
+  /// Overridable: Explore More's free resources, and offerings beyond the
+  /// two every test has.
+  List<FreeResource> featured = const [];
+  List<Offering> moreOfferings = const [];
 
   @override
-  Future<List<Offering>> liveOfferings({String? subject}) async => const [
-    Offering(id: 'o1', slug: 'breath-course', title: 'Breath Course'),
-    Offering(
+  Future<List<FreeResource>> featuredFreeResources({String? subject}) async =>
+      featured;
+
+  @override
+  Future<List<Offering>> liveOfferings({String? subject}) async => [
+    const Offering(id: 'o1', slug: 'breath-course', title: 'Breath Course'),
+    const Offering(
       id: 'o2',
       slug: 'bali-retreat',
       title: 'Bali Retreat',
       productType: 'retreat',
     ),
+    ...moreOfferings,
   ];
 
   @override
@@ -251,6 +257,13 @@ class FakeContentRepository implements ContentRepository {
   Future<List<FreeResource>> liveFreeResourcesForHealer(int healerId) async => [
     if (healerId == resource.healerId) resource,
   ];
+
+  /// Overridable: each teacher's content subjects, by slug.
+  Map<String, List<List<String>>> teacherContent = const {};
+
+  @override
+  Future<Map<String, List<List<String>>>> teacherContentSubjects() async =>
+      teacherContent;
 
   @override
   Future<List<int>> publisherAuthorIds(String publisherId) async => [1];

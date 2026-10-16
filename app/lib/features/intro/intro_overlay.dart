@@ -299,28 +299,46 @@ class _IntroOverlayState extends ConsumerState<IntroOverlay>
       children: [
         widget.child,
         if (_phase == _Phase.onboarding)
+          // One movement: the callout fades out as the welcome fades in over
+          // the same veil, so Home is never uncovered in between.
           Positioned.fill(
             child: TweenAnimationBuilder<double>(
               tween: Tween(begin: 0, end: 1),
               duration: _still
                   ? Duration.zero
-                  : const Duration(milliseconds: 380),
-              curve: Curves.easeOut,
-              builder: (context, t, child) => Opacity(
-                opacity: t,
-                child: Transform.translate(
-                  offset: Offset(0, 16 * (1 - t)),
-                  child: child,
-                ),
+                  : const Duration(milliseconds: 520),
+              curve: Curves.easeInOutCubic,
+              builder: (context, t, onboarding) => Stack(
+                fit: StackFit.expand,
+                children: [
+                  if (t < 1)
+                    IgnorePointer(
+                      child: Opacity(
+                        opacity: 1 - t,
+                        child: _Callout(
+                          star: _homeRect(MediaQuery.sizeOf(context)),
+                          onGotIt: () {},
+                        ),
+                      ),
+                    ),
+                  Opacity(
+                    opacity: t,
+                    child: Transform.scale(
+                      scale: 0.985 + 0.015 * t,
+                      child: onboarding,
+                    ),
+                  ),
+                ],
               ),
-              child: OnboardingScreen(onDone: _onboarded),
+              child: RepaintBoundary(
+                child: OnboardingScreen(onDone: _onboarded),
+              ),
             ),
           )
         else if (_phase == _Phase.callout)
           _Callout(
             star: _homeRect(MediaQuery.sizeOf(context)),
             onGotIt: () => _dismiss(off: false),
-            onNeverAgain: () => _dismiss(off: true),
           )
         else
           Positioned.fill(
@@ -404,13 +422,19 @@ class _IntroOverlayState extends ConsumerState<IntroOverlay>
                   // "Skip intro" button it sits on.
                   child: Semantics(
                     container: true,
-                    child: const Text(
-                      IntroOverlay.greeting,
-                      textAlign: TextAlign.center,
-                      style: TextStyle(
-                        fontSize: 24,
-                        fontWeight: FontWeight.w600,
-                        letterSpacing: -0.2,
+                    // The intro sits above the app's pages, outside any
+                    // Material: without one, Flutter draws text in its
+                    // debug style (the deformed, underlined look).
+                    child: const Material(
+                      type: MaterialType.transparency,
+                      child: Text(
+                        IntroOverlay.greeting,
+                        textAlign: TextAlign.center,
+                        style: TextStyle(
+                          fontSize: 24,
+                          fontWeight: FontWeight.w600,
+                          letterSpacing: -0.2,
+                        ),
                       ),
                     ),
                   ),
@@ -425,15 +449,10 @@ class _IntroOverlayState extends ConsumerState<IntroOverlay>
 
 /// "Tap me anytime to come home", pointing at the star in the search box.
 class _Callout extends StatelessWidget {
-  const _Callout({
-    required this.star,
-    required this.onGotIt,
-    required this.onNeverAgain,
-  });
+  const _Callout({required this.star, required this.onGotIt});
 
   final Rect star;
   final VoidCallback onGotIt;
-  final VoidCallback onNeverAgain;
 
   @override
   Widget build(BuildContext context) {
@@ -468,37 +487,20 @@ class _Callout extends StatelessWidget {
                     IntroOverlay.callout,
                     style: TextStyle(fontSize: 18, fontWeight: FontWeight.w600),
                   ),
-                  const SizedBox(height: 6),
-                  const Text(
-                    'Wherever you are in Spiritpedia, the star brings you back here.',
-                    style: TextStyle(
-                      fontSize: 14,
-                      height: 1.45,
-                      color: SpColors.textMuted,
+                  const SizedBox(height: 4),
+                  Align(
+                    alignment: Alignment.centerRight,
+                    child: TextButton(
+                      key: const ValueKey('intro-got-it'),
+                      onPressed: onGotIt,
+                      style: TextButton.styleFrom(
+                        foregroundColor: SpColors.link,
+                      ),
+                      child: const Text(
+                        'Got it',
+                        style: TextStyle(fontWeight: FontWeight.w700),
+                      ),
                     ),
-                  ),
-                  const SizedBox(height: 8),
-                  Row(
-                    children: [
-                      TextButton(
-                        onPressed: onNeverAgain,
-                        style: TextButton.styleFrom(
-                          foregroundColor: SpColors.textMuted,
-                        ),
-                        child: const Text('Don’t show me again'),
-                      ),
-                      const Spacer(),
-                      TextButton(
-                        onPressed: onGotIt,
-                        style: TextButton.styleFrom(
-                          foregroundColor: SpColors.link,
-                        ),
-                        child: const Text(
-                          'Got it',
-                          style: TextStyle(fontWeight: FontWeight.w700),
-                        ),
-                      ),
-                    ],
                   ),
                 ],
               ),

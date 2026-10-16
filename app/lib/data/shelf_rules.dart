@@ -375,38 +375,99 @@ List<T> forYou<T>(
 }
 
 /// "Never show", for an item (video, book, course, retreat, download,
-/// membership, free resource): hidden if ANY of its subjects is hidden.
-bool isHiddenItem(List<String> subjects, Set<String> hidden) =>
-    hidden.isNotEmpty && subjects.any(hidden.contains);
+/// membership, free resource): hidden if ANY of its subjects is hidden —
+/// unless it also carries a [moreOf] subject: "More of" beats "Never show".
+bool isHiddenItem(
+  List<String> subjects,
+  Set<String> hidden, [
+  Set<String> moreOf = const {},
+]) =>
+    hidden.isNotEmpty &&
+    subjects.any(hidden.contains) &&
+    !subjects.any(moreOf.contains);
 
-/// "Never show", for a teacher, channel or publisher: hidden only if EVERY
-/// subject they cover is hidden. No subjects, never hidden.
+/// "Never show", for a teacher, channel or publisher, by their subjects:
+/// hidden only if EVERY subject they cover is hidden. No subjects, never
+/// hidden. (A teacher whose content is all hidden goes too: [Hiding].)
 bool isHiddenTeacher(List<String> subjects, Set<String> hidden) =>
     hidden.isNotEmpty && subjects.isNotEmpty && subjects.every(hidden.contains);
 
-/// [items] without the hidden ones, by the item rule.
-List<T> withoutHidden<T>(
-  List<T> items,
-  Set<String> hidden,
-  List<String> Function(T) subjects,
-) => hidden.isEmpty
-    ? items
-    : [
-        for (final item in items)
-          if (!isHiddenItem(subjects(item), hidden)) item,
-      ];
+/// The teachers and channels whose content — videos, books, courses,
+/// retreats, downloads, memberships and free resources — is ALL hidden for
+/// someone, by the item rule: [content] is each teacher's items' subjects,
+/// by teacher slug. A teacher with no content is not in it.
+Set<String> teachersWithAllContentHidden(
+  Map<String, List<List<String>>> content,
+  Set<String> hidden, [
+  Set<String> moreOf = const {},
+]) => hidden.isEmpty
+    ? const {}
+    : {
+        for (final MapEntry(key: slug, value: items) in content.entries)
+          if (items.isNotEmpty &&
+              items.every((s) => isHiddenItem(s, hidden, moreOf)))
+            slug,
+      };
 
-/// [teachers] without the hidden ones, by the teacher rule.
-List<T> withoutHiddenTeachers<T>(
-  List<T> teachers,
-  Set<String> hidden,
-  List<String> Function(T) subjects,
-) => hidden.isEmpty
-    ? teachers
-    : [
-        for (final t in teachers)
-          if (!isHiddenTeacher(subjects(t), hidden)) t,
-      ];
+/// Everything "Never show" hides for one person (docs/personalisation.md).
+class Hiding {
+  const Hiding({
+    this.subjects = const {},
+    this.moreOf = const {},
+    this.emptyTeachers = const {},
+  });
+
+  static const none = Hiding();
+
+  /// Never show.
+  final Set<String> subjects;
+
+  /// More of: an item carrying one of these is shown whatever else it has.
+  final Set<String> moreOf;
+
+  /// Teacher slugs whose every piece of content is hidden
+  /// ([teachersWithAllContentHidden]): no empty profiles.
+  final Set<String> emptyTeachers;
+
+  bool get isEmpty => subjects.isEmpty;
+
+  /// As if [slug] were not hidden — a hidden subject's page, after "Show
+  /// anyway". Teachers then follow the subject rule only.
+  Hiding showing(String slug) =>
+      Hiding(subjects: {...subjects}..remove(slug), moreOf: moreOf);
+
+  bool item(List<String> subjects) =>
+      isHiddenItem(subjects, this.subjects, moreOf);
+
+  bool teacher(Healer h) =>
+      isHiddenTeacher(h.subjectSlugs, subjects) ||
+      (subjects.isNotEmpty && emptyTeachers.contains(h.slug));
+
+  /// Whether [o] is hidden: teachers and publishers by the teacher rule,
+  /// everything else by the item rule.
+  bool call(Object o) => switch (o) {
+    Healer h => teacher(h),
+    Publisher p => isHiddenTeacher(p.subjectSlugs, subjects),
+    _ => item(subjectsOf(o)),
+  };
+
+  /// [items] without the hidden ones, by the item rule.
+  List<T> items<T>(List<T> items, List<String> Function(T) subjectsOf) =>
+      isEmpty
+      ? items
+      : [
+          for (final i in items)
+            if (!item(subjectsOf(i))) i,
+        ];
+
+  /// [items] without the hidden ones, each by its own rule.
+  List<T> visible<T extends Object>(List<T> items) => isEmpty
+      ? items
+      : [
+          for (final i in items)
+            if (!call(i)) i,
+        ];
+}
 
 /// Any content model's subjects (the app's models all carry them).
 List<String> subjectsOf(Object item) => switch (item) {
@@ -418,14 +479,6 @@ List<String> subjectsOf(Object item) => switch (item) {
   Publisher p => p.subjectSlugs,
   Subject s => [s.slug],
   _ => const [],
-};
-
-/// Whether [item] is hidden: teachers and publishers by the teacher rule,
-/// everything else by the item rule.
-bool isHidden(Object item, Set<String> hidden) => switch (item) {
-  Healer h => isHiddenTeacher(h.subjectSlugs, hidden),
-  Publisher p => isHiddenTeacher(p.subjectSlugs, hidden),
-  _ => isHiddenItem(subjectsOf(item), hidden),
 };
 
 /// [pillars] (default: the pill row's order) with those holding a chosen

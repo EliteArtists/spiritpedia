@@ -6,23 +6,23 @@ import '../../data/providers.dart';
 import '../../data/shelf_rules.dart';
 import '../../theme/colors.dart';
 import '../star/slipstream.dart';
+import '../star/star_layer.dart';
 import 'interests.dart';
+import 'tailor_star.dart';
 
 /// Under the question, in onboarding and in Account → Tailor Spiritpedia.
 const interestsNote =
     'Optional. We use your choices only to tailor what you see; never shared. '
     'Change or clear them anytime in Account.';
 
-/// Each pillar's outline icon and soft accent — the app's colours, no emoji.
-const _pillarLook = <String, (IconData, Color)>{
-  'Emotional Healing': (Icons.favorite_border_rounded, Color(0xFFF9A8D4)),
-  'Consciousness': (Icons.self_improvement_rounded, SpColors.link),
-  'Manifestation & Creation': (Icons.auto_awesome_outlined, SpColors.gold),
-  'Mystical & Spiritual Exploration': (
-    Icons.nightlight_outlined,
-    Color(0xFF93C5FD),
-  ),
-  'Body & Energy': (Icons.spa_outlined, Color(0xFF6EE7B7)),
+/// Each pillar's soft accent — the app's colours. No icons or symbols: the
+/// pills read exactly as the Discover pills do.
+const _pillarAccent = <String, Color>{
+  'Emotional Healing': Color(0xFFF9A8D4),
+  'Consciousness': SpColors.link,
+  'Manifestation & Creation': SpColors.gold,
+  'Mystical & Spiritual Exploration': Color(0xFF93C5FD),
+  'Body & Energy': Color(0xFF6EE7B7),
 };
 
 /// What the picker chooses (docs/personalisation.md).
@@ -30,7 +30,7 @@ enum PickerMode {
   /// "More of": violet, as the Discover pills.
   moreOf('interest', SpColors.primary, 'Hidden'),
 
-  /// "Never show": a muted rose, with an eye-off mark on what is chosen.
+  /// "Never show": a muted rose.
   neverShow('never', Color(0xFF8E2A4F), 'In More of');
 
   const PickerMode(this.keyPrefix, this.fill, this.otherLabel);
@@ -102,7 +102,7 @@ class _InterestsPickerState extends ConsumerState<InterestsPicker> {
           _PillarPill(
             key: ValueKey('$prefix-pillar-$pillar'),
             label: pillar,
-            look: _pillarLook[pillar]!,
+            accent: _pillarAccent[pillar]!,
             fill: mode.fill,
             open: _open.contains(pillar),
             chosen: subjectPillars[pillar]!
@@ -137,7 +137,7 @@ class _InterestsPickerState extends ConsumerState<InterestsPicker> {
                             key: ValueKey('$prefix-all-$pillar'),
                             label: 'All of $pillar',
                             selected: open.every(widget.selected.contains),
-                            accent: _pillarLook[pillar]!.$2,
+                            accent: _pillarAccent[pillar]!,
                             onSelected: (on) => _toggle(open, on),
                           ),
                         for (final slug in subjectPillars[pillar]!)
@@ -145,7 +145,7 @@ class _InterestsPickerState extends ConsumerState<InterestsPicker> {
                             key: ValueKey('$prefix-$slug'),
                             label: name(slug),
                             selected: widget.selected.contains(slug),
-                            accent: _pillarLook[pillar]!.$2,
+                            accent: _pillarAccent[pillar]!,
                             taken: widget.other.contains(slug),
                             onSelected: (on) => _toggle([slug], on),
                           ),
@@ -166,7 +166,6 @@ class _InterestsPickerState extends ConsumerState<InterestsPicker> {
     required ValueChanged<bool> onSelected,
     bool taken = false,
   }) {
-    final never = widget.mode == PickerMode.neverShow;
     if (taken) {
       // In the other list: shown, so nothing seems missing, but not here.
       return Semantics(
@@ -202,15 +201,7 @@ class _InterestsPickerState extends ConsumerState<InterestsPicker> {
       key: key,
       label: Text(label),
       selected: selected,
-      showCheckmark: !never,
-      checkmarkColor: Colors.white,
-      avatar: never && selected
-          ? const Icon(
-              Icons.visibility_off_outlined,
-              size: 16,
-              color: Colors.white,
-            )
-          : null,
+      showCheckmark: false,
       selectedColor: widget.mode.fill,
       backgroundColor: SpColors.surface,
       side: BorderSide(
@@ -226,13 +217,14 @@ class _InterestsPickerState extends ConsumerState<InterestsPicker> {
   }
 }
 
-/// A pillar, drawn as the Discover pills are: a stadium outline, filled once
-/// something in it is chosen (violet for More of, rose for Never show).
+/// A pillar, drawn exactly as the Discover pills are: a stadium outline,
+/// filled once something in it is chosen (violet for More of, rose for Never
+/// show), tinted with its accent while open. Just its name.
 class _PillarPill extends StatelessWidget {
   const _PillarPill({
     super.key,
     required this.label,
-    required this.look,
+    required this.accent,
     required this.fill,
     required this.open,
     required this.chosen,
@@ -240,7 +232,7 @@ class _PillarPill extends StatelessWidget {
   });
 
   final String label;
-  final (IconData, Color) look;
+  final Color accent;
   final Color fill;
   final bool open;
   final int chosen;
@@ -249,7 +241,6 @@ class _PillarPill extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final active = chosen > 0;
-    final (icon, accent) = look;
     return Semantics(
       button: true,
       expanded: open,
@@ -270,53 +261,19 @@ class _PillarPill extends StatelessWidget {
           customBorder: const StadiumBorder(),
           onTap: onTap,
           child: SizedBox(
-            height: 44,
+            height: 42,
             child: Padding(
-              padding: const EdgeInsets.only(left: 14, right: 12),
-              child: Row(
-                mainAxisSize: MainAxisSize.min,
-                children: [
-                  Icon(icon, size: 19, color: active ? Colors.white : accent),
-                  const SizedBox(width: 9),
-                  Flexible(
-                    child: Text(
-                      label,
-                      overflow: TextOverflow.ellipsis,
-                      style: const TextStyle(
-                        fontSize: 15,
-                        fontWeight: FontWeight.w600,
-                      ),
-                    ),
+              padding: const EdgeInsets.symmetric(horizontal: 18),
+              child: Align(
+                widthFactor: 1,
+                child: Text(
+                  label,
+                  overflow: TextOverflow.ellipsis,
+                  style: const TextStyle(
+                    fontSize: 14,
+                    fontWeight: FontWeight.w600,
                   ),
-                  if (active) ...[
-                    const SizedBox(width: 8),
-                    Container(
-                      padding: const EdgeInsets.symmetric(
-                        horizontal: 7,
-                        vertical: 1,
-                      ),
-                      decoration: BoxDecoration(
-                        color: Colors.white.withValues(alpha: 0.22),
-                        borderRadius: BorderRadius.circular(99),
-                      ),
-                      child: Text(
-                        '$chosen',
-                        style: const TextStyle(
-                          fontSize: 12,
-                          fontWeight: FontWeight.w700,
-                        ),
-                      ),
-                    ),
-                  ],
-                  const SizedBox(width: 4),
-                  Icon(
-                    open
-                        ? Icons.keyboard_arrow_up_rounded
-                        : Icons.keyboard_arrow_down_rounded,
-                    size: 20,
-                    color: SpColors.textMuted,
-                  ),
-                ],
+                ),
               ),
             ),
           ),
@@ -595,9 +552,12 @@ class _TailorScreenState extends ConsumerState<TailorScreen> {
   Future<void> _save() async {
     final messenger = ScaffoldMessenger.of(context);
     final navigator = Navigator.of(context);
+    final opened = ref.read(exploreMoreOpenedProvider.notifier);
     await ref
         .read(interestsProvider.notifier)
         .tailor(subjects: _more, hidden: _never);
+    // A fresh start: Explore More's shelves close again.
+    opened.closeAll();
     messenger
       ..hideCurrentSnackBar()
       ..showSnackBar(
@@ -640,40 +600,42 @@ class _TailorScreenState extends ConsumerState<TailorScreen> {
         child: Column(
           children: [
             Expanded(
-              child: ListView(
-                padding: const EdgeInsets.fromLTRB(20, 8, 20, 24),
-                children: [
-                  const Text(interestsNote, style: note),
-                  const SizedBox(height: 22),
-                  const Text('More of', style: heading),
-                  const SizedBox(height: 4),
-                  const Text(
-                    'Shown first on Discover, Videos and Books, and in '
-                    'Spiritpedia Suggests.',
-                    style: note,
-                  ),
-                  const SizedBox(height: 16),
-                  InterestsPicker(
-                    key: const ValueKey('tailor-more-of'),
-                    selected: _more,
-                    other: _never,
-                    onChanged: (v) => setState(() => _more = v),
-                  ),
-                  const SizedBox(height: 18),
-                  const Divider(),
-                  const SizedBox(height: 18),
-                  const Text('Never show', style: heading),
-                  const SizedBox(height: 4),
-                  const Text(_neverNote, style: note),
-                  const SizedBox(height: 16),
-                  InterestsPicker(
-                    key: const ValueKey('tailor-never-show'),
-                    mode: PickerMode.neverShow,
-                    selected: _never,
-                    other: _more,
-                    onChanged: (v) => setState(() => _never = v),
-                  ),
-                ],
+              // The star's space: it speaks at the top while this scrolls
+              // underneath it.
+              child: TailorStarFrame(
+                builder: (context, top) => ListView(
+                  padding: EdgeInsets.fromLTRB(20, 8 + top, 20, 24),
+                  children: [
+                    const Text('More of', style: heading),
+                    const SizedBox(height: 4),
+                    const Text(
+                      'Shown first on Discover, Videos and Books, and in '
+                      'Spiritpedia Suggests.',
+                      style: note,
+                    ),
+                    const SizedBox(height: 16),
+                    InterestsPicker(
+                      key: const ValueKey('tailor-more-of'),
+                      selected: _more,
+                      other: _never,
+                      onChanged: (v) => setState(() => _more = v),
+                    ),
+                    const SizedBox(height: 18),
+                    const Divider(),
+                    const SizedBox(height: 18),
+                    const Text('Never show', style: heading),
+                    const SizedBox(height: 16),
+                    InterestsPicker(
+                      key: const ValueKey('tailor-never-show'),
+                      mode: PickerMode.neverShow,
+                      selected: _never,
+                      other: _more,
+                      onChanged: (v) => setState(() => _never = v),
+                    ),
+                    // Clear of the star once it rests at the foot.
+                    const SizedBox(height: FloatingHomeStar.clearance - 24),
+                  ],
+                ),
               ),
             ),
             Padding(

@@ -46,9 +46,6 @@ abstract class PushMessaging {
   Stream<String> get tokenRefreshes;
   Future<void> deleteToken();
 
-  /// Arrives while the app is open — shown as an in-app banner.
-  Stream<PushNote> get foreground;
-
   /// Tapped while the app was in the background.
   Stream<PushNote> get opened;
 
@@ -103,13 +100,22 @@ class FirebasePushMessaging implements PushMessaging {
       badge: true,
       sound: true,
     );
-    // While the app is open the in-app banner shows it, not a system banner.
-    await _fm.setForegroundNotificationPresentationOptions(
-      alert: false,
-      badge: true,
-      sound: true,
-    );
+    await showWhileOpen();
     return _map(settings.authorizationStatus);
+  }
+
+  /// While the app is open, a notification shows as the iPhone's own
+  /// banner, as when it is closed. iOS forgets this between launches, so it
+  /// is said at every start (main.dart) — it asks nothing of the person.
+  static Future<void> showWhileOpen() async {
+    try {
+      await FirebaseMessaging.instance
+          .setForegroundNotificationPresentationOptions(
+            alert: true,
+            badge: true,
+            sound: true,
+          );
+    } catch (_) {}
   }
 
   @override
@@ -134,9 +140,6 @@ class FirebasePushMessaging implements PushMessaging {
 
   @override
   Future<void> deleteToken() => _fm.deleteToken();
-
-  @override
-  Stream<PushNote> get foreground => FirebaseMessaging.onMessage.map(_note);
 
   @override
   Stream<PushNote> get opened =>
@@ -164,8 +167,6 @@ class UnavailablePushMessaging implements PushMessaging {
   Stream<String> get tokenRefreshes => const Stream.empty();
   @override
   Future<void> deleteToken() async {}
-  @override
-  Stream<PushNote> get foreground => const Stream.empty();
   @override
   Stream<PushNote> get opened => const Stream.empty();
   @override

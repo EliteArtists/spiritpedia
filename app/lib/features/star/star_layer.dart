@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:go_router/go_router.dart';
 
 import 'slipstream.dart';
@@ -284,8 +285,19 @@ Future<void> starTapped(BuildContext context, {Rect? from}) async {
   }
 }
 
-/// A resting star: tapping it goes back to the tab's top ([starTapped]).
-/// Screen readers call it "Home".
+/// Press and hold the star, anywhere: My Library, with a light tap of the
+/// phone. Already there, nothing happens.
+void starHeld(BuildContext context) {
+  final router = GoRouter.of(context);
+  final config = router.routerDelegate.currentConfiguration;
+  final top = config.lastOrNull?.matchedLocation ?? config.uri.path;
+  if (top == '/library') return;
+  HapticFeedback.lightImpact();
+  router.push('/library');
+}
+
+/// A resting star: tapping it goes back to the tab's top ([starTapped]);
+/// holding it opens My Library ([starHeld]). Screen readers call it "Home".
 ///
 /// [visible] false leaves its space but hides the star — while a flight is
 /// carrying it elsewhere. [starKey] marks the star itself, for aiming flights.
@@ -366,10 +378,12 @@ class _StarAnchorState extends State<StarAnchor> {
     return Semantics(
       button: true,
       label: 'Home',
+      onLongPressHint: 'My Library',
       excludeSemantics: true,
       child: GestureDetector(
         behavior: HitTestBehavior.opaque,
         onTap: _tap,
+        onLongPress: () => starHeld(context),
         child: SizedBox(
           width: widget.tapTarget,
           height: widget.tapTarget,
@@ -429,9 +443,20 @@ class FloatingHomeStar extends StatelessWidget {
 /// which, as pages fill the screen, is where it will be once the page is
 /// still.
 Rect? settledRectOf(GlobalKey key, Route<dynamic>? route) {
-  final box = key.currentContext?.findRenderObject();
-  final page = (route is ModalRoute ? route.subtreeContext : null)
-      ?.findRenderObject();
+  // Either may have just left the tree (a page closing, a star moving on)
+  // while a flight still asks where to go.
+  final starContext = key.currentContext;
+  final pageContext = route is ModalRoute ? route.subtreeContext : null;
+  if (starContext == null || !starContext.mounted) return null;
+  if (pageContext == null || !pageContext.mounted) return null;
+  final RenderObject? box;
+  final RenderObject? page;
+  try {
+    box = starContext.findRenderObject();
+    page = pageContext.findRenderObject();
+  } on FlutterError {
+    return null; // deactivated this frame, not yet unmounted
+  }
   if (box is! RenderBox || page is! RenderBox) return null;
   if (!box.attached || !page.attached || !box.hasSize) return null;
   return box.localToGlobal(Offset.zero, ancestor: page) & box.size;

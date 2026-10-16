@@ -48,14 +48,17 @@ void main() {
     WidgetTester tester,
     Widget screen, {
     MemorySavedStore? store,
+    bool signedIn = false,
   }) async {
     final saved = store ?? MemorySavedStore();
+    final account = FakeAccountService();
+    if (signedIn) account.restoreSession('ann@example.com');
     await tester.pumpWidget(
       ProviderScope(
         retry: spiritpediaRetry,
         overrides: [
           reviewsServiceProvider.overrideWithValue(FakeReviewsService()),
-          accountServiceProvider.overrideWithValue(FakeAccountService()),
+          accountServiceProvider.overrideWithValue(account),
           contentRepositoryProvider.overrideWithValue(FakeContentRepository()),
           savedStoreProvider.overrideWithValue(saved),
           shareLauncherProvider.overrideWithValue(
@@ -111,19 +114,20 @@ void main() {
       expect(find.byKey(const ValueKey('amazon-disclosure')), findsNothing);
     });
 
-    testWidgets('Want to Read saves on the device, and My Library shows it', (
+    testWidgets('Want to Read saves (signed in), and My Library shows it', (
       tester,
     ) async {
       final store = await pump(
         tester,
         const BookScreen(slug: 'the-power-of-now', amazonTags: _tags),
+        signedIn: true,
       );
       await tester.tap(find.text('+ Want to Read'));
       await tester.pumpAndSettle();
       expect(find.text('✓ On Your List'), findsOneWidget);
       expect(store.data[SavedKind.books], ['the-power-of-now']);
 
-      await pump(tester, const LibraryScreen(), store: store);
+      await pump(tester, const LibraryScreen(), store: store, signedIn: true);
       expect(find.text('Want to Read'), findsOneWidget);
       expect(find.text('The Power of Now'), findsOneWidget);
     });
@@ -155,6 +159,7 @@ void main() {
     final store = await pump(
       tester,
       const TeacherScreen(slug: 'eckhart-tolle'),
+      signedIn: true,
     );
     // The page's own heart, in the app bar (the cards below have theirs).
     Finder heart(String tooltip) => find.descendant(
@@ -167,6 +172,19 @@ void main() {
     await tester.tap(heart('Remove from My Library'));
     await tester.pumpAndSettle();
     expect(store.data[SavedKind.healers], isEmpty);
+  });
+
+  testWidgets('signed out, Want to Read asks first and saves nothing yet', (
+    tester,
+  ) async {
+    final store = await pump(
+      tester,
+      const BookScreen(slug: 'the-power-of-now', amazonTags: _tags),
+    );
+    await tester.tap(find.text('+ Want to Read'));
+    await tester.pumpAndSettle();
+    expect(find.text('Save it to your Library.'), findsOneWidget);
+    expect(store.data[SavedKind.books] ?? const [], isEmpty);
   });
 
   testWidgets('video: the privacy-enhanced player and a way out to YouTube', (

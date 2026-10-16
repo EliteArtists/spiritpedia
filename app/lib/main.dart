@@ -55,6 +55,7 @@ Future<void> main() async {
   // creates no token — that waits for the person to say yes in Account. If
   // this build has no Firebase config, push is simply unavailable.
   final pushReady = await initFirebase();
+  if (pushReady) await FirebasePushMessaging.showWhileOpen();
 
   runApp(
     ProviderScope(

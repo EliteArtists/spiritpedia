@@ -627,7 +627,7 @@ double interestBonus(List<String> subjectSlugs, Set<String> interests) {
 /// (newer) one. Nothing with no relevance at all is suggested — saves and
 /// [interests] only add to an item that is relevant already. [videoSaves] and
 /// [bookSaves] are save counts by slug. Nothing with a [hidden] subject is
-/// ever suggested.
+/// ever suggested — unless it also carries one of [interests] (More of).
 Suggestions suggest({
   required String term,
   required List<MappingRow> rows,
@@ -647,7 +647,7 @@ Suggestions suggest({
     T? top;
     var topScore = 0.0;
     for (final item in items) {
-      if (isHiddenItem(subjects(item), hidden)) continue;
+      if (isHiddenItem(subjects(item), hidden, interests)) continue;
       var s = relevance(
         title: title(item),
         subjectSlugs: subjects(item),

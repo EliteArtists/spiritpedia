@@ -138,6 +138,22 @@ class SavedItems extends Notifier<Map<SavedKind, List<String>>> {
   bool contains(SavedKind kind, String slug) =>
       state[kind]?.contains(slug) ?? false;
 
+  /// A save waiting for its sign-in (the save prompt): made as soon as the
+  /// account's Library has been brought down, so nothing overwrites it.
+  ({SavedKind kind, String slug})? _pending;
+
+  void saveAfterSignIn(SavedKind kind, String slug) =>
+      _pending = (kind: kind, slug: slug);
+
+  /// "Not now": the waiting save is dropped.
+  void cancelPendingSave() => _pending = null;
+
+  Future<void> _completePending() async {
+    final p = _pending;
+    _pending = null;
+    if (p != null && !contains(p.kind, p.slug)) await toggle(p.kind, p.slug);
+  }
+
   Future<void> toggle(SavedKind kind, String slug) async {
     await _loaded; // never let the first read overwrite a tap made before it
     final current = [...?state[kind]];
@@ -189,6 +205,7 @@ class SavedItems extends Notifier<Map<SavedKind, List<String>>> {
     } catch (_) {
       // Offline or refused: keep what the device has; the next start retries.
     }
+    await _completePending();
   }
 
   /// Sign-out: the device's lists go with the account — but only once they

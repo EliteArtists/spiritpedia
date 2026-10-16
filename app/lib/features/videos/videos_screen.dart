@@ -5,6 +5,7 @@ import '../../data/providers.dart';
 import '../../shared/widgets/cards.dart';
 import '../../shared/widgets/shelf.dart';
 import '../../theme/colors.dart';
+import '../interests/hidden_empty.dart';
 import '../star/star_page.dart';
 
 /// Videos — shelves by subject, never more than two videos per teacher in a
@@ -18,6 +19,7 @@ class VideosScreen extends ConsumerWidget {
     final subject = ref.watch(subjectFilterProvider);
     final shelves = ref.watch(videoShelvesProvider(subject));
     final directory = ref.watch(healerDirectoryProvider).value;
+    final hiding = !ref.watch(hidingProvider).isEmpty;
 
     return StarPage(
       filter: subjectFilterProvider,
@@ -61,15 +63,18 @@ class VideosScreen extends ConsumerWidget {
           ],
           data: (list) => list.isEmpty
               ? [
-                  const SliverToBoxAdapter(
-                    child: Padding(
-                      padding: EdgeInsets.all(32),
-                      child: Text(
-                        'No videos for this subject yet.',
-                        style: TextStyle(color: SpColors.textMuted),
+                  if (hiding)
+                    const SliverToBoxAdapter(child: HiddenEmptyState())
+                  else
+                    const SliverToBoxAdapter(
+                      child: Padding(
+                        padding: EdgeInsets.all(32),
+                        child: Text(
+                          'No videos for this subject yet.',
+                          style: TextStyle(color: SpColors.textMuted),
+                        ),
                       ),
                     ),
-                  ),
                 ]
               : [
                   for (final shelf in list)

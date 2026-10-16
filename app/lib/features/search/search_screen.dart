@@ -8,6 +8,7 @@ import '../../core/safety/emotion_safety.dart';
 import '../../core/supabase_providers.dart';
 import '../../data/models.dart';
 import '../../data/providers.dart';
+import '../../data/shelf_rules.dart';
 import '../../shared/widgets/cards.dart';
 import '../../shared/widgets/net_image.dart';
 import '../../theme/colors.dart';
@@ -115,7 +116,7 @@ class _SearchState extends ConsumerState<_Search> {
     plain: ref.read(contentSearchProvider),
     scope: widget.scope,
     interests: () => mounted ? ref.read(interestSubjectsProvider) : const {},
-    hidden: () => mounted ? ref.read(hiddenSubjectsProvider) : const {},
+    hidden: () => mounted ? ref.read(hidingProvider) : Hiding.none,
   )..addListener(_changed);
 
   /// "See all": which group, and its fuller list.

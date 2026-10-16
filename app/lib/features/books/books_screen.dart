@@ -5,6 +5,7 @@ import '../../data/providers.dart';
 import '../../shared/widgets/cards.dart';
 import '../../shared/widgets/shelf.dart';
 import '../../theme/colors.dart';
+import '../interests/hidden_empty.dart';
 import '../star/star_page.dart';
 
 /// Books — built like Videos: shelves by pillar, never more than two books by
@@ -17,6 +18,7 @@ class BooksScreen extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     final subject = ref.watch(subjectFilterProvider);
     final shelves = ref.watch(bookShelvesProvider(subject));
+    final hiding = !ref.watch(hidingProvider).isEmpty;
 
     return StarPage(
       filter: subjectFilterProvider,
@@ -59,15 +61,18 @@ class BooksScreen extends ConsumerWidget {
         ],
         data: (list) => list.isEmpty
             ? [
-                const SliverToBoxAdapter(
-                  child: Padding(
-                    padding: EdgeInsets.all(32),
-                    child: Text(
-                      'No books for this subject yet.',
-                      style: TextStyle(color: SpColors.textMuted),
+                if (hiding)
+                  const SliverToBoxAdapter(child: HiddenEmptyState())
+                else
+                  const SliverToBoxAdapter(
+                    child: Padding(
+                      padding: EdgeInsets.all(32),
+                      child: Text(
+                        'No books for this subject yet.',
+                        style: TextStyle(color: SpColors.textMuted),
+                      ),
                     ),
                   ),
-                ),
               ]
             : [
                 for (final shelf in list)

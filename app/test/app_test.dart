@@ -3,14 +3,20 @@ import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_test/flutter_test.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 import 'package:go_router/go_router.dart';
 import 'package:spiritpedia/app.dart';
 import 'package:spiritpedia/core/retry.dart';
 import 'package:spiritpedia/core/safety/emotion_safety.dart';
+import 'package:spiritpedia/data/models.dart';
 import 'package:spiritpedia/data/providers.dart';
+import 'package:spiritpedia/data/shelf_rules.dart';
 import 'package:spiritpedia/features/account/account_providers.dart';
 import 'package:spiritpedia/features/home/subject_pills.dart';
 import 'package:spiritpedia/features/interests/interests.dart';
+import 'package:spiritpedia/features/interests/interests_picker.dart';
+import 'package:spiritpedia/features/interests/tailor_star.dart';
+import 'package:spiritpedia/features/menu/app_menu.dart';
 import 'package:spiritpedia/features/library/saved_items.dart';
 import 'package:spiritpedia/features/notifications/notifications_controller.dart';
 import 'package:spiritpedia/features/notifications/push_messaging.dart';
@@ -22,7 +28,6 @@ import 'package:spiritpedia/features/search/search_repository.dart';
 import 'package:spiritpedia/features/search/search_screen.dart';
 import 'package:spiritpedia/features/reviews/reviews_providers.dart';
 import 'package:spiritpedia/shared/widgets/cards.dart';
-import 'package:spiritpedia/shared/widgets/shelf.dart';
 
 import 'support/fake_account.dart';
 import 'support/fake_content.dart';
@@ -52,6 +57,8 @@ Widget _app({
   FakePushMessaging? push,
   FakeAccountService? account,
   MemoryInterestsStore? interests,
+  FakeContentRepository? content,
+  _TailorIntro? tailorIntro,
 }) => ProviderScope(
   retry: spiritpediaRetry,
   overrides: [
@@ -59,7 +66,7 @@ Widget _app({
     if (push != null) pushMessagingProvider.overrideWithValue(push),
     accountServiceProvider.overrideWithValue(account ?? FakeAccountService()),
     contentRepositoryProvider.overrideWithValue(
-      FakeContentRepository(fail: fail),
+      content ?? FakeContentRepository(fail: fail),
     ),
     savedStoreProvider.overrideWithValue(MemorySavedStore()),
     interestsStoreProvider.overrideWithValue(
@@ -70,9 +77,20 @@ Widget _app({
     // completes only in a file's first test.
     emotionSafetyProvider.overrideWithValue(AsyncData(_safety)),
     typewriterRunsProvider.overrideWithValue(false),
+    tailorIntroPrefsProvider.overrideWithValue(tailorIntro ?? _TailorIntro()),
   ],
   child: const SpiritpediaApp(playIntro: false),
 );
+
+class _TailorIntro implements TailorIntroPrefs {
+  bool showing = true;
+
+  @override
+  Future<bool> show() async => showing;
+
+  @override
+  Future<void> turnOff() async => showing = false;
+}
 
 /// The pill row's labels, in order (as far as it is built).
 List<String> _pills(WidgetTester tester) => [
@@ -319,6 +337,141 @@ void main() {
       );
     });
 
+    testWidgets('the website\'s statement sits just above the legal links', (
+      tester,
+    ) async {
+      await start(tester);
+      await openMenu(tester);
+      final statement = find.byKey(const ValueKey('menu-statement'));
+      await tester.scrollUntilVisible(
+        statement,
+        200,
+        scrollable: find.descendant(
+          of: menu,
+          matching: find.byType(Scrollable),
+        ),
+      );
+      expect(find.text(siteStatement), findsOneWidget);
+      expect(
+        siteStatement,
+        startsWith(
+          'Spiritpedia celebrates the transformative power of spiritual '
+          'practice',
+        ),
+      );
+      expect(
+        tester.getTopLeft(statement).dy,
+        lessThan(tester.getTopLeft(find.text('Terms of Use')).dy),
+      );
+    });
+
+    group('Tailor Spiritpedia is the star\'s space', () {
+      Future<void> openTailor(WidgetTester tester) async {
+        GoRouter.of(tester.element(find.byType(PillTabBar))).push('/tailor');
+        await tester.pump();
+        await tester.pump(const Duration(milliseconds: 500));
+      }
+
+      final words = find.byKey(const ValueKey('tailor-star-words'));
+
+      testWidgets('the star speaks at the top, then glides to the foot', (
+        tester,
+      ) async {
+        await start(tester);
+        await openTailor(tester);
+        expect(words, findsOneWidget);
+        expect(find.text('Don’t show me again'), findsOneWidget);
+        // The quiet lines are gone: the star says it now.
+        expect(find.text(interestsNote), findsNothing);
+        expect(
+          find.textContaining('stays out of Discover, Videos'),
+          findsNothing,
+        );
+        // Nothing blocked: the choices scroll and can be tapped meanwhile.
+        final pill = find.byKey(const ValueKey('never-pillar-Body & Energy'));
+        await tester.ensureVisible(pill);
+        await tester.pump();
+        await tester.tap(pill);
+        await tester.pump(const Duration(milliseconds: 300));
+        expect(find.byKey(const ValueKey('never-yoga')), findsOneWidget);
+
+        await tester.pump(TailorStarFrame.linger);
+        await tester.pumpAndSettle();
+        expect(words, findsNothing);
+        expect(find.byType(StarAnchor), findsWidgets); // resting at the foot
+      });
+
+      testWidgets('"Don’t show me again": the next visit is quiet', (
+        tester,
+      ) async {
+        final intro = _TailorIntro();
+        await tester.pumpWidget(_app(tailorIntro: intro));
+        await tester.pump();
+        await tester.pump(const Duration(milliseconds: 100));
+        await openTailor(tester);
+        await tester.tap(find.byKey(const ValueKey('tailor-star-never')));
+        await tester.pumpAndSettle();
+        expect(intro.showing, isFalse);
+        expect(words, findsNothing);
+
+        Navigator.of(tester.element(find.byType(TailorStarFrame))).pop();
+        await tester.pumpAndSettle();
+        await openTailor(tester);
+        await tester.pumpAndSettle();
+        expect(words, findsNothing);
+      });
+
+      testWidgets('the pills are just their names, as on Discover', (
+        tester,
+      ) async {
+        await start(tester);
+        await openTailor(tester);
+        final pill = find.byKey(
+          const ValueKey('interest-pillar-Body & Energy'),
+        );
+        expect(
+          find.descendant(of: pill, matching: find.byType(Icon)),
+          findsNothing,
+        );
+        await tester.ensureVisible(pill);
+        await tester.pump();
+        await tester.tap(pill);
+        await tester.pump(const Duration(milliseconds: 300));
+        final yoga = find.byKey(const ValueKey('interest-yoga'));
+        await tester.ensureVisible(yoga);
+        await tester.pump(const Duration(milliseconds: 500));
+        await tester.tap(yoga);
+        await tester.pump();
+        final chip = tester.widget<FilterChip>(yoga);
+        expect(chip.selected, isTrue);
+        expect(chip.showCheckmark, isFalse);
+        expect(chip.avatar, isNull);
+        expect(
+          find.descendant(of: pill, matching: find.text('1')),
+          findsNothing,
+        );
+        await tester.pump(TailorStarFrame.linger);
+        await tester.pumpAndSettle();
+      });
+
+      testWidgets('saving closes Explore More\'s shelves again', (
+        tester,
+      ) async {
+        await start(tester);
+        final container = ProviderScope.containerOf(
+          tester.element(find.byType(SpiritpediaApp)),
+        );
+        container
+            .read(exploreMoreOpenedProvider.notifier)
+            .open(ExploreSection.courses);
+        await openTailor(tester);
+        final save = find.byKey(const ValueKey('tailor-save'));
+        await tester.tap(save);
+        await tester.pumpAndSettle();
+        expect(container.read(exploreMoreOpenedProvider), isEmpty);
+      });
+    });
+
     testWidgets('a swipe to the right puts the menu away', (tester) async {
       await start(tester);
       await openMenu(tester);
@@ -337,10 +490,35 @@ void main() {
       expect(_pills(tester).take(2), ['View All', 'Emotional Healing']);
     });
 
-    testWidgets('chosen: For You leads Discover with their teachers, and '
-        'their pillars lead the pills', (tester) async {
+    testWidgets('chosen: For You leads Discover with one content type per '
+        'visit, and their pillars lead the pills', (tester) async {
+      await SharedPreferencesAsync().setInt('for_you_turn', -1);
+      final content = FakeContentRepository()
+        ..featured = const [
+          FreeResource(
+            id: 'f1',
+            slug: 'free-stillness',
+            title: 'Free Stillness',
+            subjectSlugs: ['consciousness'],
+          ),
+          FreeResource(
+            id: 'f2',
+            slug: 'free-stretch',
+            title: 'Free Stretch',
+            subjectSlugs: ['yoga'],
+          ),
+        ]
+        ..moreOfferings = const [
+          Offering(
+            id: 'o3',
+            slug: 'awake-course',
+            title: 'Awake Course',
+            subjectSlugs: ['spiritual-awakening'],
+          ),
+        ];
       await tester.pumpWidget(
         _app(
+          content: content,
           interests: MemoryInterestsStore(
             const Interests(subjects: ['consciousness'], chosen: true),
           ),
@@ -348,28 +526,46 @@ void main() {
       );
       await tester.pump();
       await tester.pump(const Duration(milliseconds: 100));
-      final forYou = find.ancestor(
-        of: find.text('For You'),
-        matching: find.byType(Shelf),
+      final forYou = find.byKey(const ValueKey('for-you'));
+      expect(find.text('For You · Free Resources'), findsOneWidget);
+      expect(
+        find.descendant(of: forYou, matching: find.text('Free Stillness')),
+        findsOneWidget,
       );
-      expect(forYou, findsOneWidget);
+      // Not one of their subjects, nor of their pillars.
+      expect(
+        find.descendant(of: forYou, matching: find.text('Free Stretch')),
+        findsNothing,
+      );
+      // No teachers: they have the shelves below.
       expect(
         find.descendant(of: forYou, matching: find.text('Eckhart Tolle')),
-        findsWidgets,
-      );
-      expect(
-        find.descendant(of: forYou, matching: find.text('Wim Hof')),
         findsNothing,
       );
       // Above everything else.
       expect(
-        tester.getTopLeft(find.text('For You')).dy,
+        tester.getTopLeft(find.text('For You · Free Resources')).dy,
         lessThan(tester.getTopLeft(find.text('Worldwide')).dy),
       );
       expect(_pills(tester).take(2), ['View All', 'Consciousness']);
       // Nothing is filtered: every shelf is still there.
       expect(find.text('Worldwide'), findsOneWidget);
       expect(find.text('Wim Hof'), findsWidgets);
+
+      // The next visit: the next type with something relevant (Awake
+      // Course: the same pillar). The types with nothing are skipped.
+      final container = ProviderScope.containerOf(
+        tester.element(find.byType(SpiritpediaApp)),
+      );
+      container.read(forYouTurnProvider.notifier).landed();
+      await tester.pump();
+      await tester.pump(const Duration(milliseconds: 100));
+      expect(find.text('For You · Courses & Programmes'), findsOneWidget);
+      expect(find.text('Awake Course'), findsWidgets);
+      container.read(forYouTurnProvider.notifier).landed();
+      await tester.pump();
+      await tester.pump(const Duration(milliseconds: 100));
+      expect(find.text('For You · Free Resources'), findsOneWidget);
     });
 
     group('Never show', () {
@@ -378,6 +574,56 @@ void main() {
           Interests(hidden: hidden, chosen: true),
         ),
       );
+
+      testWidgets('everything hidden: the star says so, never a blank screen', (
+        tester,
+      ) async {
+        await tester.pumpWidget(
+          hiding([for (final s in subjectPillars.values) ...s]),
+        );
+        await tester.pump();
+        await tester.pump(const Duration(milliseconds: 100));
+        expect(find.byKey(const ValueKey('hidden-empty')), findsOneWidget);
+        expect(find.text('You’ve hidden most subjects.'), findsOneWidget);
+        expect(find.text('Worldwide'), findsNothing);
+
+        await tester.tap(find.text('Videos').last);
+        await tester.pumpAndSettle();
+        expect(find.byKey(const ValueKey('hidden-empty')), findsWidgets);
+
+        await tester.tap(
+          find.byKey(const ValueKey('hidden-empty-tailor')).hitTestable(),
+        );
+        await tester.pump();
+        await tester.pump(const Duration(milliseconds: 500));
+        expect(find.text('Tailor Spiritpedia'), findsOneWidget);
+        await tester.pump(TailorStarFrame.linger);
+        await tester.pumpAndSettle();
+      });
+
+      testWidgets('a teacher whose content is all hidden goes too', (
+        tester,
+      ) async {
+        final content = FakeContentRepository()
+          ..teacherContent = {
+            'eckhart-tolle': [
+              ['shamanism'],
+            ],
+          };
+        await tester.pumpWidget(
+          _app(
+            content: content,
+            interests: MemoryInterestsStore(
+              const Interests(hidden: ['shamanism'], chosen: true),
+            ),
+          ),
+        );
+        await tester.pump();
+        await tester.pump(const Duration(milliseconds: 100));
+        await tester.pump(const Duration(milliseconds: 100));
+        expect(find.text('Eckhart Tolle'), findsNothing);
+        expect(find.text('Wim Hof'), findsWidgets);
+      });
 
       testWidgets('a teacher goes only when every subject they cover is '
           'hidden', (tester) async {
@@ -438,6 +684,25 @@ void main() {
       expect(find.text('Free Resources'), findsOneWidget);
       expect(find.text('Books & Literature'), findsNothing);
     });
+  });
+
+  testWidgets('press and hold the star: My Library, from anywhere', (
+    tester,
+  ) async {
+    await start(tester);
+    await tester.longPress(find.byType(StarAnchor).hitTestable().first);
+    await tester.pumpAndSettle();
+    expect(find.text('My Library'), findsWidgets);
+    expect(find.text('Worldwide'), findsNothing);
+
+    // From a page's own star too; on My Library itself, nothing happens.
+    await tester.longPress(find.byType(StarAnchor).hitTestable().last);
+    await tester.pumpAndSettle();
+    expect(find.text('My Library'), findsWidgets);
+    // A tap is unchanged: home.
+    await tester.tap(find.byType(StarAnchor).hitTestable().last);
+    await tester.pumpAndSettle();
+    expect(find.text('Worldwide'), findsOneWidget);
   });
 
   testWidgets('the star sits in the search box, labelled Home; on a tab it '
@@ -582,12 +847,64 @@ void main() {
   testWidgets('a heart on a card saves without opening the card', (
     tester,
   ) async {
-    await start(tester);
+    final account = FakeAccountService()..restoreSession('ann@example.com');
+    await tester.pumpWidget(_app(account: account));
+    await tester.pump();
+    await tester.pump(const Duration(milliseconds: 100));
     final heart = find.byTooltip('Save to My Library').first;
     await tester.tap(heart);
     await tester.pumpAndSettle();
     expect(find.text('Worldwide'), findsOneWidget); // still on Home
     expect(find.byTooltip('Remove from My Library'), findsOneWidget);
+  });
+
+  group('saving needs an account', () {
+    testWidgets('signed out: a warm prompt; "Not now" saves nothing', (
+      tester,
+    ) async {
+      await start(tester);
+      await tester.tap(find.byTooltip('Save to My Library').first);
+      await tester.pumpAndSettle();
+      expect(find.byKey(const ValueKey('save-prompt')), findsOneWidget);
+      expect(find.text('Save it to your Library.'), findsOneWidget);
+      expect(
+        find.text('Create a free account so your saves follow you everywhere.'),
+        findsOneWidget,
+      );
+      await tester.tap(find.byKey(const ValueKey('save-prompt-not-now')));
+      await tester.pumpAndSettle();
+      expect(find.byKey(const ValueKey('save-prompt')), findsNothing);
+      expect(find.byTooltip('Remove from My Library'), findsNothing);
+    });
+
+    testWidgets('signing in from the prompt completes the save, right here', (
+      tester,
+    ) async {
+      final account = FakeAccountService();
+      await tester.pumpWidget(_app(account: account));
+      await tester.pump();
+      await tester.pump(const Duration(milliseconds: 100));
+      await tester.tap(find.byTooltip('Save to My Library').first);
+      await tester.pumpAndSettle();
+      await tester.tap(find.byKey(const ValueKey('save-prompt-sign-in')));
+      await tester.pumpAndSettle();
+      await tester.enterText(
+        find.byKey(const ValueKey('email-field')),
+        'new@example.com',
+      );
+      await tester.tap(find.text('Email me a code'));
+      await tester.pumpAndSettle();
+      await tester.enterText(
+        find.byKey(const ValueKey('code-field')),
+        '123456',
+      );
+      await tester.pumpAndSettle();
+
+      expect(find.byKey(const ValueKey('save-prompt')), findsNothing);
+      expect(find.text('Worldwide'), findsOneWidget); // where they were
+      expect(find.byTooltip('Remove from My Library'), findsOneWidget);
+      expect(account.favouriteRows['user-new@example.com'], hasLength(1));
+    });
   });
 
   testWidgets(

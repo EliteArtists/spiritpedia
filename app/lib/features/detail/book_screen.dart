@@ -7,6 +7,7 @@ import '../../core/links/open_link.dart';
 import '../../data/models.dart';
 import '../../shared/widgets/net_image.dart';
 import '../../theme/colors.dart';
+import '../library/save_prompt.dart';
 import '../library/saved_items.dart';
 import '../reviews/reviews_section.dart';
 import '../reviews/reviews_service.dart';
@@ -214,8 +215,7 @@ class _ShelfToggle extends ConsumerWidget {
     return SizedBox(
       height: 46,
       child: FilledButton(
-        onPressed: () =>
-            ref.read(savedItemsProvider.notifier).toggle(kind, slug),
+        onPressed: () => saveOrAsk(context, ref, kind, slug),
         style: FilledButton.styleFrom(
           backgroundColor: active ? SpColors.primary : SpColors.surface,
           foregroundColor: Colors.white,

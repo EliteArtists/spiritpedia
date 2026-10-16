@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
+import 'features/interests/tailor_star.dart';
 import 'features/intro/intro_overlay.dart';
 import 'features/notifications/notifications_controller.dart';
 import 'features/notifications/push_messaging.dart';
@@ -37,10 +38,12 @@ class _SpiritpediaAppState extends ConsumerState<SpiritpediaApp> {
   @override
   void initState() {
     super.initState();
+    // Known before Tailor Spiritpedia is first opened (its star's place).
+    ref.read(tailorIntroShowProvider);
     final messaging = ref.read(pushMessagingProvider);
-    _subs
-      ..add(messaging.foreground.listen(_showBanner))
-      ..add(messaging.opened.listen((note) => _open(note.route)));
+    // A notification arriving while the app is open shows as the iPhone's
+    // own banner (FirebasePushMessaging.showWhileOpen); tapped, it opens here.
+    _subs.add(messaging.opened.listen((note) => _open(note.route)));
     messaging.initialNote().then((note) => _open(note?.route));
   }
 
@@ -80,26 +83,6 @@ class _SpiritpediaAppState extends ConsumerState<SpiritpediaApp> {
           ),
         );
     });
-  }
-
-  /// While the app is open: a quiet in-app banner, not a system notification.
-  void _showBanner(PushNote note) {
-    final text = [note.title, note.body].whereType<String>().join('\n');
-    if (text.isEmpty) return;
-    _messenger.currentState
-      ?..hideCurrentSnackBar()
-      ..showSnackBar(
-        SnackBar(
-          content: Text(text),
-          duration: const Duration(seconds: 6),
-          action: note.route == null
-              ? null
-              : SnackBarAction(
-                  label: 'Open',
-                  onPressed: () => _open(note.route),
-                ),
-        ),
-      );
   }
 
   @override

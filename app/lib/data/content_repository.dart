@@ -41,6 +41,12 @@ abstract class ContentRepository {
   Future<List<Offering>> liveOfferingsForHealer(int healerId);
   Future<List<FreeResource>> liveFreeResourcesForHealer(int healerId);
 
+  /// Every teacher's content, as each item's subjects, by teacher slug —
+  /// what their page would show: videos, books, and live courses and free
+  /// resources. For "Never show" (no empty profiles); fetched only when
+  /// something is hidden.
+  Future<Map<String, List<List<String>>>> teacherContentSubjects();
+
   /// A publisher's linked authors (healer ids), from publisher_healers.
   Future<List<int>> publisherAuthorIds(String publisherId);
 
@@ -308,6 +314,64 @@ class SupabaseContentRepository implements ContentRepository {
         .or(_liveWindow)
         .order('created_at', ascending: false);
     return [for (final r in rows) FreeResource.fromJson(r)];
+  }
+
+  @override
+  Future<Map<String, List<List<String>>>> teacherContentSubjects() async {
+    final results = await Future.wait([
+      _all(() => _db.from('healers').select('id, healer_slug').order('id')),
+      _all(
+        () => _db
+            .from('videos')
+            .select('id, healer_slug, subject_slugs')
+            .not('healer_slug', 'is', null)
+            .order('id'),
+      ),
+      _all(
+        () => _db
+            .from('books')
+            .select('id, healer_slug, subject_slugs')
+            .not('healer_slug', 'is', null)
+            .order('id'),
+      ),
+      _all(
+        () => _db
+            .from('courses')
+            .select('id, healer_id, subject_slugs')
+            .eq('is_active', true)
+            .or(_liveWindow)
+            .order('id'),
+      ),
+      _all(
+        () => _db
+            .from('free_resources')
+            .select('id, healer_id, subject_slugs')
+            .eq('is_active', true)
+            .or(_liveWindow)
+            .order('id'),
+      ),
+    ]);
+    final slugOf = {
+      for (final r in results[0])
+        (r['id'] as num).toInt(): (r['healer_slug'] as String?) ?? '',
+    };
+    final out = <String, List<List<String>>>{};
+    void add(String? slug, Object? subjects) {
+      if (slug == null || slug.isEmpty) return;
+      (out[slug] ??= []).add([
+        if (subjects is List)
+          for (final s in subjects)
+            if (s is String) s,
+      ]);
+    }
+
+    for (final r in [...results[1], ...results[2]]) {
+      add(r['healer_slug'] as String?, r['subject_slugs']);
+    }
+    for (final r in [...results[3], ...results[4]]) {
+      add(slugOf[(r['healer_id'] as num?)?.toInt()], r['subject_slugs']);
+    }
+    return out;
   }
 
   @override

@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
+import '../../data/providers.dart';
 import '../../theme/colors.dart';
 import '../star/star_layer.dart';
 import 'tab_bar_state.dart';
@@ -18,7 +19,13 @@ class AppShell extends ConsumerWidget {
 
   static const _discover = 0;
 
-  void _go(BuildContext context, int index) {
+  void _go(BuildContext context, WidgetRef ref, int index) {
+    // Landing on Discover's View All turns For You to its next content type.
+    if (index == _discover &&
+        navigationShell.currentIndex != _discover &&
+        ref.read(subjectFilterProvider) == null) {
+      ref.read(forYouTurnProvider.notifier).landed();
+    }
     void go() => navigationShell.goBranch(
       index,
       // Tapping the tab you are already on returns it to its first screen.
@@ -46,7 +53,7 @@ class AppShell extends ConsumerWidget {
       // Android's back button: from another tab, back goes to Discover first.
       canPop: navigationShell.currentIndex == _discover,
       onPopInvokedWithResult: (didPop, _) {
-        if (!didPop) _go(context, _discover);
+        if (!didPop) _go(context, ref, _discover);
       },
       child: Scaffold(
         body: Stack(
@@ -77,7 +84,7 @@ class AppShell extends ConsumerWidget {
                               fit: BoxFit.scaleDown,
                               child: PillTabBar(
                                 current: navigationShell.currentIndex,
-                                onSelect: (i) => _go(context, i),
+                                onSelect: (i) => _go(context, ref, i),
                               ),
                             ),
                           ),

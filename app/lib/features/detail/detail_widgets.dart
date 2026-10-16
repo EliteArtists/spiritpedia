@@ -6,6 +6,7 @@ import '../../core/links/open_link.dart';
 import '../../core/links/share.dart';
 import '../../data/providers.dart';
 import '../../theme/colors.dart';
+import '../library/save_prompt.dart';
 import '../library/saved_items.dart';
 import '../star/star_layer.dart';
 
@@ -97,7 +98,7 @@ class WithHomeStar extends StatelessWidget {
       Stack(fit: StackFit.expand, children: [child, const FloatingHomeStar()]);
 }
 
-/// Save to My Library — on this device only.
+/// Save to My Library — with an account ([saveOrAsk]).
 class SaveHeart extends ConsumerWidget {
   const SaveHeart({super.key, required this.kind, required this.slug});
 
@@ -109,7 +110,7 @@ class SaveHeart extends ConsumerWidget {
     final saved = ref.watch(savedItemsProvider)[kind]?.contains(slug) ?? false;
     return IconButton(
       tooltip: saved ? 'Remove from My Library' : 'Save to My Library',
-      onPressed: () => ref.read(savedItemsProvider.notifier).toggle(kind, slug),
+      onPressed: () => saveOrAsk(context, ref, kind, slug),
       icon: Icon(
         saved ? Icons.favorite : Icons.favorite_border,
         color: saved ? const Color(0xFFEF4444) : SpColors.text,

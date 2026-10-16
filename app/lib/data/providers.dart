@@ -1,4 +1,5 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 import '../core/supabase_providers.dart';
 import '../features/interests/interests.dart';
@@ -26,6 +27,30 @@ final healerDirectoryProvider = FutureProvider<HealerDirectory>(
 final publishersProvider = FutureProvider<List<Publisher>>(
   (ref) => ref.watch(contentRepositoryProvider).publishers(),
 );
+
+// ── Never show (docs/personalisation.md) ─────────────────────────────────────
+
+/// Each teacher's content subjects, by slug — fetched only once something is
+/// hidden, for the "no empty profiles" rule.
+final _teacherContentProvider = FutureProvider<Map<String, List<List<String>>>>(
+  (ref) => ref.watch(contentRepositoryProvider).teacherContentSubjects(),
+);
+
+/// Everything Never show hides for this person. Teachers whose content is
+/// all hidden join in once their content has loaded (a moment, at most).
+final hidingProvider = Provider<Hiding>((ref) {
+  final hidden = ref.watch(hiddenSubjectsProvider);
+  if (hidden.isEmpty) return Hiding.none;
+  final moreOf = ref.watch(interestSubjectsProvider);
+  final content = ref.watch(_teacherContentProvider).value;
+  return Hiding(
+    subjects: hidden,
+    moreOf: moreOf,
+    emptyTeachers: content == null
+        ? const {}
+        : teachersWithAllContentHidden(content, hidden, moreOf),
+  );
+});
 
 /// The subject filter (null = View All), one for Discover, Videos and Books
 /// together — as on the website, where the tabs share the page's ?subject=.
@@ -71,6 +96,7 @@ enum ExploreSection {
 }
 
 /// Which sections the visitor has opened, in the order they opened them.
+/// Held in memory only, so every launch starts with them all closed.
 class ExploreMoreOpened extends Notifier<List<ExploreSection>> {
   @override
   List<ExploreSection> build() => const [];
@@ -78,6 +104,9 @@ class ExploreMoreOpened extends Notifier<List<ExploreSection>> {
   void open(ExploreSection section) {
     if (!state.contains(section)) state = [...state, section];
   }
+
+  /// All closed again — after Tailor Spiritpedia is saved.
+  void closeAll() => state = const [];
 }
 
 final exploreMoreOpenedProvider =
@@ -93,17 +122,19 @@ final _liveOfferingsProvider = FutureProvider.family<List<Offering>, String?>(
 );
 
 final exploreSectionProvider =
-    FutureProvider.family<List<Object>, (ExploreSection, String?)>((
+    FutureProvider.family<ExploreRows, (ExploreSection, String?)>((
       ref,
       key,
     ) async {
       final (section, subject) = key;
-      final hidden = ref.watch(hiddenSubjectsProvider);
-      return [
-        for (final item in await _exploreSection(ref, section, subject))
-          if (!isHidden(item, hidden)) item,
-      ];
+      final hiding = ref.watch(hidingProvider);
+      final all = await _exploreSection(ref, section, subject);
+      final shown = hiding.visible(all);
+      return (items: shown, hiddenAll: shown.isEmpty && all.isNotEmpty);
     });
+
+/// An Explore More section's items, and whether Never show emptied it.
+typedef ExploreRows = ({List<Object> items, bool hiddenAll});
 
 /// One Explore More section, before Never show is applied.
 Future<List<Object>> _exploreSection(
@@ -131,6 +162,78 @@ Future<List<Object>> _exploreSection(
   }
 }
 
+// ── For You ──────────────────────────────────────────────────────────────────
+
+/// Which turn of the For You rotation Discover's View All is on. Moves on
+/// each time someone lands there — a launch, switching to Discover, choosing
+/// View All — and is remembered between launches, so the rotation carries on.
+class ForYouTurn extends Notifier<int> {
+  static const _key = 'for_you_turn';
+
+  @override
+  int build() {
+    _restore();
+    return 0;
+  }
+
+  Future<void> _restore() async {
+    try {
+      final saved = await SharedPreferencesAsync().getInt(_key) ?? -1;
+      if (!ref.mounted) return;
+      state = saved + 1 + state;
+      await SharedPreferencesAsync().setInt(_key, state);
+    } catch (_) {}
+  }
+
+  void landed() {
+    state++;
+    SharedPreferencesAsync().setInt(_key, state).catchError((_) {});
+  }
+}
+
+final forYouTurnProvider = NotifierProvider<ForYouTurn, int>(ForYouTurn.new);
+
+/// The content types For You rotates through, in order.
+const forYouSections = [
+  ExploreSection.freeResources,
+  ExploreSection.courses,
+  ExploreSection.downloads,
+  ExploreSection.retreats,
+  ExploreSection.memberships,
+];
+
+/// Discover's For You: one content type per turn, from their More of
+/// subjects (level 1, then level 2 — docs/personalisation.md), hidden
+/// subjects respected. A type with nothing relevant is skipped; retreats are
+/// upcoming only, soonest first. Null when they chose nothing, or nothing
+/// is relevant.
+final forYouProvider =
+    FutureProvider<({ExploreSection section, List<Object> items})?>((
+      ref,
+    ) async {
+      final chosen = ref.watch(interestSubjectsProvider);
+      if (chosen.isEmpty) return null;
+      final turn = ref.watch(forYouTurnProvider);
+      final available = <({ExploreSection section, List<Object> items})>[];
+      for (final section in forYouSections) {
+        var items = (await ref.watch(
+          exploreSectionProvider((section, null)).future,
+        )).items;
+        if (section == ExploreSection.retreats) {
+          final today = DateTime.now();
+          final day = DateTime(today.year, today.month, today.day);
+          items = [
+            for (final o in items.cast<Offering>())
+              if ((o.starts ?? o.ends) case final d? when !d.isBefore(day)) o,
+          ];
+        }
+        final picked = forYou(items, chosen, subjectsOf);
+        if (picked.isNotEmpty) available.add((section: section, items: picked));
+      }
+      if (available.isEmpty) return null;
+      return available[turn % available.length];
+    });
+
 // ── Videos ───────────────────────────────────────────────────────────────────
 
 class VideoShelf {
@@ -156,10 +259,12 @@ final videoShelvesProvider = FutureProvider.family<List<VideoShelf>, String?>((
 ) async {
   final repo = ref.watch(contentRepositoryProvider);
   final chosen = ref.watch(interestSubjectsProvider);
-  final hidden = ref.watch(hiddenSubjectsProvider);
-  // Never show: no video with a hidden subject, on any shelf.
+  final hiding = ref.watch(hidingProvider);
+  final hidden = hiding.subjects;
+  // Never show: no video with a hidden subject (and no More of one), on any
+  // shelf.
   List<Video> visible(List<Video> pool) =>
-      withoutHidden(pool, hidden, (v) => v.subjectSlugs);
+      hiding.items(pool, (v) => v.subjectSlugs);
 
   if (subject == null) {
     // More of (docs/personalisation.md): their pillars come first, and each
@@ -264,11 +369,12 @@ final bookShelvesProvider = FutureProvider.family<List<BookShelf>, String?>((
 ) async {
   final repo = ref.watch(contentRepositoryProvider);
   final chosen = ref.watch(interestSubjectsProvider);
-  final hidden = ref.watch(hiddenSubjectsProvider);
-  // Never show: no book with a hidden subject, on any shelf. Newest first.
-  final all = withoutHidden(
+  final hiding = ref.watch(hidingProvider);
+  final hidden = hiding.subjects;
+  // Never show: no book with a hidden subject (and no More of one), on any
+  // shelf. Newest first.
+  final all = hiding.items(
     await repo.books(subject: subject),
-    hidden,
     (b) => b.subjectSlugs,
   );
 
@@ -384,7 +490,7 @@ final subjectContentProvider = FutureProvider.family<SubjectContent, String>((
   // Never show: everything carrying another hidden subject is left out. This
   // subject itself, if hidden, is the page's own business — it asks first
   // ("Show anyway?"), and then shows it.
-  final hidden = {...ref.watch(hiddenSubjectsProvider)}..remove(slug);
+  final hiding = ref.watch(hidingProvider).showing(slug);
   final results = await Future.wait<Object>([
     repo.healersForSubject(slug),
     repo.freeResourcesForSubject(slug),
@@ -392,10 +498,7 @@ final subjectContentProvider = FutureProvider.family<SubjectContent, String>((
     repo.liveOfferings(subject: slug),
     repo.videosForSubject(slug),
   ]);
-  List<T> visible<T extends Object>(List<T> items) => [
-    for (final i in items)
-      if (!isHidden(i, hidden)) i,
-  ];
+  List<T> visible<T extends Object>(List<T> items) => hiding.visible(items);
   final offerings = splitOfferings(visible(results[3] as List<Offering>));
   return SubjectContent(
     healers: visible(results[0] as List<Healer>),

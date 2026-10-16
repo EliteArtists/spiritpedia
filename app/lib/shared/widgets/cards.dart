@@ -4,6 +4,7 @@ import 'package:go_router/go_router.dart';
 
 import '../../data/models.dart';
 import '../../data/shelf_rules.dart';
+import '../../features/library/save_prompt.dart';
 import '../../features/library/saved_items.dart';
 import '../../theme/colors.dart';
 import 'net_image.dart';
@@ -63,7 +64,7 @@ class CardHeart extends ConsumerWidget {
         padding: EdgeInsets.zero,
         onPressed: slug.isEmpty
             ? null
-            : () => ref.read(savedItemsProvider.notifier).toggle(kind, slug),
+            : () => saveOrAsk(context, ref, kind, slug),
         icon: Icon(
           saved ? Icons.favorite : Icons.favorite_border,
           size: 24,

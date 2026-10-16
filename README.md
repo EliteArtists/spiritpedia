@@ -137,7 +137,8 @@ them with the same phrase lists and the same order. A search box that reaches
 crisis.
 
 #### The Flutter app — where it stands
-**In TestFlight as 1.0.0 (12), 14 October 2026.** iPhone only, portrait only.
+**Built as 1.0.0 (13), 16 October 2026** (build 12 is in TestFlight). iPhone
+only, portrait only.
 **`app/README.md` is the app's full handover:** structure, dev and live,
 build and upload, what is built, migrations 0015–0018, the admin Reports page,
 known issues and next steps. Read it before changing the app.
@@ -154,16 +155,20 @@ Built so far:
   * Channels kept apart from teachers.
   * Reviews with report, block and ban.
   * Dates on offerings.
-  * **Tailor Spiritpedia:** More of, ranked in three levels, and Never show.
-    The rules are in `app/docs/personalisation.md`.
+  * **Tailor Spiritpedia:** More of, ranked in three levels, and Never show
+    (More of wins when an item has both). For You rotates one content type
+    per visit. The rules are in `app/docs/personalisation.md`.
+  * **Saving needs an account**, in the app and on the website: a signed-out
+    heart opens "Save it to your Library", with sign-in by 6-digit code in
+    place; the save completes after it.
 
 **The crisis intercept runs first in every search box, on every keystroke,
 before anything is sent** — in the app exactly as on the website, from the
 same `web/shared/emotion-safety.json`, with tests that type every phrase into
 every box. Tailoring never touches it. See the top of `app/README.md`.
 
-Build numbers: 1–9 and 11–12. **10 was an accidental duplicate of 9**
-uploaded from Xcode; the next build is 13. Upload is IPA → Transporter.
+Build numbers: 1–9 and 11–13. **10 was an accidental duplicate of 9**
+uploaded from Xcode; the next build is 14. Upload is IPA → Transporter.
 
 Website issues found while building the app, not yet fixed:
 `app/docs/website-followups.md`.
@@ -226,7 +231,7 @@ The entry point is always emotional:
 | Platform | Role | Status |
 | :--- | :--- | :--- |
 | Web App (Next.js) | Primary product — full discovery experience | ✅ **Complete and live** at [www.spiritpedia.co](https://www.spiritpedia.co) |
-| Native App (Flutter) | **The current phase** — iPhone first, with push notifications | 🟡 In TestFlight, 1.0.0 (12): accounts, search, reviews, notifications, tailoring. In `app/` — see `app/README.md` |
+| Native App (Flutter) | **The current phase** — iPhone first, with push notifications | 🟡 1.0.0 (13) built for TestFlight: accounts, search, reviews, notifications, tailoring. In `app/` — see `app/README.md` |
 
 #### Domains
 `spiritpedia.co` is the primary domain and the one to share. The original
@@ -380,11 +385,12 @@ The `/web` directory contains the full Next.js application.
 | web/components/LibraryView.js | Dynamic library with subject parsing and tri-tab view |
 | web/components/ReviewSection.jsx | Community reviews — the summary line, the list, and the submission form |
 | web/components/PractitionerModal.jsx | The signed-out account sheet — what an account is for, and the way in |
-| web/components/LibrarySignupNudge.jsx | Inline prompt on a populated library: saves live in this browser until there is an account |
+| web/components/LibrarySignupNudge.jsx | Inline prompt on a populated library: saves made before accounts were required live in this browser until there is one |
 | web/components/CookieBanner.jsx | The consent gate in front of GA4 |
 | web/components/Analytics.jsx | GA4, rendered only after consent and never on /admin |
 | web/components/PractitionerDashboard.jsx | The approved practitioner's own dashboard at /account |
 | web/components/FavoriteHeart.js | The save control, shared by every card type |
+| web/components/SavePrompt.jsx | Saving needs an account: a signed-out heart or Save opens "Save it to your Library", with sign-in by 6-digit code in place; the save is made after sign-in (`utils/savePrompt.js`, AuthSync) |
 | web/components/WantToReadButton.js · ReadButton.js | Book reading state, stored per browser |
 | web/components/BackButton.jsx | Back link that honours the `?from=` chain rather than browser history |
 | web/components/AuthShell.jsx | The frame every /auth screen renders inside |
@@ -1293,7 +1299,7 @@ whose `course_url` points at Amazon.
 | Admin phases 4+ | Flags, messages, publisher claims. Each needs its own table |
 | Ancient Teachers tier | Planned |
 | Content library | Target: 5,000 videos + 5,000 books — ongoing |
-| Flutter app build | In TestFlight as 1.0.0 (12); status, next steps and known issues in `app/README.md` |
+| Flutter app build | 1.0.0 (13) built for TestFlight; status, next steps and known issues in `app/README.md` |
 
 🔧 Operational knowledge
 Things learned the hard way that neither the code nor the git log will tell you.

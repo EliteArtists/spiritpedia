@@ -713,7 +713,7 @@ void main() {
         safety: _safety,
         repository: _Feelings(),
         plain: plain,
-        hidden: () => hidden,
+        hidden: () => Hiding(subjects: hidden),
       );
       addTearDown(search.dispose);
       return search;
@@ -762,7 +762,7 @@ void main() {
         repository: _Feelings(),
         plain: _Plain(),
         scope: SearchScope.videos,
-        hidden: () => {'breathwork'},
+        hidden: () => const Hiding(subjects: {'breathwork'}),
       );
       addTearDown(search.dispose);
       search.onChanged('anxious');

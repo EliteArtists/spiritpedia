@@ -7,6 +7,7 @@ import '../../shared/widgets/cards.dart';
 import '../../shared/widgets/shelf.dart';
 import '../../theme/colors.dart';
 import '../detail/detail_widgets.dart';
+import '../interests/hidden_empty.dart';
 import '../interests/interests.dart';
 import '../star/star_layer.dart';
 
@@ -150,7 +151,10 @@ class _SubjectBody extends ConsumerWidget {
                     ],
                   ),
                 ),
-                if (c.isEmpty)
+                if (c.isEmpty &&
+                    !ref.watch(hidingProvider).showing(slug).isEmpty)
+                  const HiddenEmptyState()
+                else if (c.isEmpty)
                   const Padding(
                     padding: EdgeInsets.symmetric(horizontal: 20),
                     child: Card(

@@ -100,7 +100,10 @@ class _AccountScreenState extends ConsumerState<AccountScreen> {
 /// Two steps, as on the website: an email address, then the 6-digit code.
 /// There is no separate sign-up — a new address becomes an account.
 class SignInForm extends ConsumerStatefulWidget {
-  const SignInForm({super.key});
+  const SignInForm({super.key, this.intro});
+
+  /// The words above the email field; the account page's own by default.
+  final String? intro;
 
   @override
   ConsumerState<SignInForm> createState() => _SignInFormState();
@@ -187,7 +190,7 @@ class _SignInFormState extends ConsumerState<SignInForm> {
       children: [
         Text(
           sentTo == null
-              ? 'Sign in to keep your saved teachers, books and videos on every device — here and on spiritpedia.co. No password: we email you a code.'
+              ? widget.intro ?? 'Sign in to keep your saved teachers, books and videos on every device — here and on spiritpedia.co. No password: we email you a code.'
               : 'Enter the $codeLength-digit code we sent to $sentTo.',
           style: const TextStyle(
             fontSize: 15,

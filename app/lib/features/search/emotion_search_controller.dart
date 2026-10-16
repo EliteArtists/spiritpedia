@@ -27,12 +27,13 @@ class EmotionSearchController extends ChangeNotifier {
     this.scope = SearchScope.all,
     this.debounce = const Duration(milliseconds: 300),
     Set<String> Function()? interests,
-    Set<String> Function()? hidden,
+    Hiding Function()? hidden,
   }) : plain = plain ?? UniversalContentSearch(repository),
        interests = interests ?? _none,
-       hidden = hidden ?? _none;
+       hidden = hidden ?? _nothingHidden;
 
   static Set<String> _none() => const {};
+  static Hiding _nothingHidden() => Hiding.none;
 
   final EmotionSafety safety;
 
@@ -49,11 +50,10 @@ class EmotionSearchController extends ChangeNotifier {
   /// The subjects the person chose — a small boost in Spiritpedia Suggests.
   final Set<String> Function() interests;
 
-  /// The subjects the person never wants shown (docs/personalisation.md).
-  /// Name and title matches carrying one are held back behind "Show
-  /// anyway?"; what a feeling finds simply leaves them out. The safety gates
-  /// never look at it.
-  final Set<String> Function() hidden;
+  /// What the person never wants shown (docs/personalisation.md). Name and
+  /// title matches it hides are held back behind "Show anyway?"; what a
+  /// feeling finds simply leaves them out. The safety gates never look at it.
+  final Hiding Function() hidden;
 
   /// Matches shown per group before "See all".
   int get perKind => scope == SearchScope.all ? 3 : 12;
@@ -137,7 +137,7 @@ class EmotionSearchController extends ChangeNotifier {
     final seen = <String>{};
     final out = <MappingRow>[];
     for (final r in _rows) {
-      if (never.contains(r.subjectSlug)) continue;
+      if (never.subjects.contains(r.subjectSlug)) continue;
       if (seen.add(r.subjectSlug)) out.add(r);
       if (out.length == 6) break;
     }
@@ -241,7 +241,7 @@ class EmotionSearchController extends ChangeNotifier {
       var resolved = results[0] as EmotionSearchResult;
       _content = results[1] as ContentResults;
       final never = hidden();
-      if (never.isNotEmpty && !_showHidden) {
+      if (!never.isEmpty && !_showHidden) {
         final (shown, held) = _split(_content, never);
         _content = shown;
         _heldBack = held;
@@ -282,8 +282,8 @@ class EmotionSearchController extends ChangeNotifier {
         // A feeling did not ask for anything by name: hidden is just left out.
         final never = hidden();
         _feelings = FeelingMatches(
-          videos: withoutHidden(found.videos, never, (v) => v.subjectSlugs),
-          books: withoutHidden(found.books, never, (b) => b.subjectSlugs),
+          videos: never.items(found.videos, (v) => v.subjectSlugs),
+          books: never.items(found.books, (b) => b.subjectSlugs),
         );
       }
       final videos = [
@@ -311,7 +311,7 @@ class EmotionSearchController extends ChangeNotifier {
         videoSaves: videoSaves,
         bookSaves: bookSaves,
         interests: interests(),
-        hidden: hidden(),
+        hidden: hidden().subjects,
       );
 
       _softTier = safety.checkSoftTier(normalised) ? safety.softTierLine : null;
@@ -359,24 +359,19 @@ class EmotionSearchController extends ChangeNotifier {
     final items = await plain.more(_text.trim(), kind);
     final never = hidden();
     if (_showHidden || never.isEmpty) return items;
-    return [
-      for (final i in items)
-        if (!isHidden(i, never)) i,
-    ];
+    return never.visible(items);
   }
 
   /// Matches carrying a hidden subject, apart from the rest.
   static (ContentResults, ContentResults) _split(
     ContentResults results,
-    Set<String> never,
+    Hiding never,
   ) {
     final shown = <ResultKind, List<Object>>{};
     final held = <ResultKind, List<Object>>{};
     for (final MapEntry(key: kind, value: items) in results.byKind.entries) {
       for (final item in items) {
-        (isHidden(item, never) ? held : shown)
-            .putIfAbsent(kind, () => [])
-            .add(item);
+        (never(item) ? held : shown).putIfAbsent(kind, () => []).add(item);
       }
     }
     return (ContentResults(shown), ContentResults(held));
