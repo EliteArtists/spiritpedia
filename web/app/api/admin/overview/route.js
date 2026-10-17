@@ -93,11 +93,12 @@ export async function GET() {
     .order('first_seen_at', { ascending: true });
 
   // Accounts with a claimed listing that their owner deleted, still to be
-  // reviewed (migration 0013). Service role only, like broken_images. A
-  // missing table (migration not yet run) reads as none rather than failing.
+  // reviewed (migration 0013; a publisher listing since 0022). Service role
+  // only, like broken_images. A missing table (migration not yet run) reads as
+  // none rather than failing.
   const { data: accountDeletions } = await supabase
     .from('account_deletions')
-    .select('id, deleted_at, source, linked_healer_slug, kept_image_count')
+    .select('id, deleted_at, source, linked_healer_slug, linked_publisher_id, kept_image_count, publishers(name, slug)')
     .is('resolved_at', null)
     .order('deleted_at', { ascending: true });
 

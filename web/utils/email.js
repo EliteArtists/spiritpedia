@@ -1,4 +1,5 @@
 import { getResend } from './resend.js';
+import { claimDecisionMessage } from './claimRequests.js';
 
 // SERVER ONLY, because utils/resend.js is. Importing this from a client
 // component would put the SDK in a public bundle and leave RESEND_API_KEY
@@ -215,6 +216,22 @@ With love,
 The Spiritpedia team`,
     html: `<p>Hi ${firstName},</p><p>Thank you for taking the time to review ${title}${byLine(creatorName)}.</p><p>After assessing your submission, we're unable to publish your review.</p><p>Please email <a href="mailto:${ADMIN_EMAIL}">${ADMIN_EMAIL}</a> for more information. Or reply to this email.</p><p>If you think we've misunderstood your review, please do reply to this email.</p><p>With love,<br>The Spiritpedia team</p>`,
   });
+}
+
+/* ── 5b. CLAIM DECIDED ─────────────────────────────────────────────────── */
+
+// A "Request to claim it" was approved or rejected in the Inbox
+// (/api/admin/claim-request). The wording is in utils/claimRequests.js.
+export async function sendClaimDecision({ email, firstName, decision, listingName, listingPath }) {
+  const message = claimDecisionMessage({
+    decision,
+    firstName,
+    listingName,
+    listingUrl: `${SITE}${listingPath}`,
+    accountUrl: `${SITE}/account`,
+    supportEmail: ADMIN_EMAIL,
+  });
+  return sendEmail({ to: email, ...message });
 }
 
 /* ── 6. REVIEW REPORTED (to the admin) ─────────────────────────────────── */

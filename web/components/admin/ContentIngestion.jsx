@@ -70,9 +70,11 @@ async function uniqueSlug(table, rawTitle) {
 // DASHBOARD — access is enforced by web/middleware.js (session cookie), so the
 // page itself renders unconditionally once the middleware has let it through.
 // ---------------------------------------------------------------------------
-export default function ContentIngestion() {
+// `initialPublisherId` (from ?publisher=) opens the Publisher tab with that
+// publisher loaded into Edit Existing Publisher.
+export default function ContentIngestion({ initialPublisherId = null } = {}) {
   // Form + UI state
-  const [tab, setTab] = useState('video'); // 'video' | 'book' | 'course' | 'healer' | 'free_resource'
+  const [tab, setTab] = useState(initialPublisherId ? 'publisher' : 'video'); // 'video' | 'book' | 'course' | 'healer' | 'free_resource' | 'publisher'
   const [title, setTitle] = useState('');
   const [url, setUrl] = useState('');
   const [author, setAuthor] = useState('');
@@ -296,6 +298,17 @@ export default function ContentIngestion() {
     }
     setLinkedAuthors(authors);
   }
+
+  // Opened from the Inbox on a publisher (?publisher=): load it once.
+  const seededPublisher = useRef(false);
+  useEffect(() => {
+    if (!initialPublisherId || seededPublisher.current) return undefined;
+    const timer = setTimeout(() => {
+      seededPublisher.current = true;
+      handleSelectPublisher(initialPublisherId);
+    }, 0);
+    return () => clearTimeout(timer);
+  });
 
   function handleEditName(value) {
     setEditName(value);

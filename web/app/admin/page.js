@@ -106,9 +106,10 @@ export default function AdminInboxPage() {
         setToast({
           type: 'success',
           message: item.request
-            ? action === 'approve'
-              ? `Claim approved — ${item.person} now manages the listing.`
-              : 'Claim request rejected.'
+            ? (action === 'approve'
+                ? `Claim approved — ${item.person} now manages the listing.`
+                : 'Claim request rejected.') +
+              (json.notified ? ' They have been emailed.' : ' The email to them did not go — tell them yourself.')
             : action === 'approve'
               ? json.publisher_slug
                 ? `Approved — published as /publishers/${json.publisher_slug}`

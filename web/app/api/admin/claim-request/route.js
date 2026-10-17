@@ -1,6 +1,7 @@
 import { randomInt } from 'node:crypto';
 import { NextResponse } from 'next/server';
 import { adminClient, isAdminRequest, NOT_CONFIGURED } from '@/utils/supabaseAdmin';
+import { firstNameFrom, sendClaimDecision } from '@/utils/email';
 
 export const dynamic = 'force-dynamic';
 
@@ -13,12 +14,45 @@ export const dynamic = 'force-dynamic';
 //             outreach journey to it.
 //   reject  — closes the request.
 //
+// Approving or rejecting emails the claimant the decision
+// (utils/email.js → sendClaimDecision). The email never undoes the decision.
+//
 // The admin confirms first, by emailing the listing's own published address
 // (the Inbox drafts it) or by seeing the code. `proof` records which.
 
 const PROOFS = ['listing_email', 'code', 'other'];
 // No 0/O or 1/I, so a code read off a screen is typed back right.
 const CODE_LETTERS = 'ABCDEFGHJKLMNPQRSTUVWXYZ23456789';
+
+// The claimant hears the decision. Everything here is a courtesy: a failure is
+// logged and the decision stands. → true when the email was accepted.
+async function tellClaimant(supabase, claim, decision) {
+  try {
+    const [{ data: authUser }, { data: profile }] = await Promise.all([
+      supabase.auth.admin.getUserById(claim.user_id),
+      supabase.from('user_profiles').select('full_name').eq('id', claim.user_id).maybeSingle(),
+    ]);
+    const email = authUser?.user?.email;
+    if (!email) return false;
+    const listingName = claim.healer_slug ? claim.healers?.name : claim.publishers?.name;
+    const listingPath = claim.healer_slug
+      ? `/healers/${claim.healer_slug}`
+      : claim.publishers?.slug
+        ? `/publishers/${claim.publishers.slug}`
+        : '/';
+    const result = await sendClaimDecision({
+      email,
+      firstName: firstNameFrom(profile?.full_name),
+      decision,
+      listingName,
+      listingPath,
+    });
+    return Boolean(result.sent);
+  } catch (err) {
+    console.error('[claim-request] decision email failed:', err);
+    return false;
+  }
+}
 
 function makeCode() {
   let out = '';
@@ -38,7 +72,7 @@ export async function POST(request) {
 
   const { data: claim } = await supabase
     .from('claim_requests')
-    .select('id, user_id, healer_slug, publisher_id, status, proof_code')
+    .select('id, user_id, healer_slug, publisher_id, status, proof_code, healers(name), publishers(name, slug)')
     .eq('id', id)
     .maybeSingle();
   if (!claim) return NextResponse.json({ error: 'not_found' }, { status: 404 });
@@ -63,7 +97,8 @@ export async function POST(request) {
       .update({ status: 'rejected', decided_at: new Date().toISOString() })
       .eq('id', id);
     if (error) return NextResponse.json({ error: error.message }, { status: 500 });
-    return NextResponse.json({ ok: true, status: 'rejected' });
+    const notified = await tellClaimant(supabase, claim, 'rejected');
+    return NextResponse.json({ ok: true, status: 'rejected', notified });
   }
 
   if (action !== 'approve') return NextResponse.json({ error: 'unknown_action' }, { status: 400 });
@@ -124,5 +159,13 @@ export async function POST(request) {
     .eq(claim.healer_slug ? 'healer_slug' : 'publisher_id', wanted)
     .neq('status', 'stopped');
 
-  return NextResponse.json({ ok: true, status: 'approved', healer_slug: claim.healer_slug, publisher_id: claim.publisher_id });
+  const notified = await tellClaimant(supabase, claim, 'approved');
+
+  return NextResponse.json({
+    ok: true,
+    status: 'approved',
+    healer_slug: claim.healer_slug,
+    publisher_id: claim.publisher_id,
+    notified,
+  });
 }

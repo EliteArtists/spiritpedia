@@ -351,10 +351,10 @@ export default function PrivacyPage() {
             found nothing — 90 days.
           </li>
           <li>
-            If you deleted an account linked to a public teacher profile, the profile stays on
-            Spiritpedia, unclaimed. We remove the contact details and photos you added to it, and
-            keep only a note that the account was closed and which profile it was linked to — not
-            your email or name — so that we know to review it. Ask us if you&apos;d like the profile
+            If you deleted an account linked to a public profile (a teacher&apos;s, or a
+            publisher&apos;s), the profile stays on Spiritpedia, unclaimed. We remove the contact
+            details and photos you added to it, and keep only a note that the account was closed and
+            which profile it was linked to — not your email or name — so that we know to review it. Ask us if you&apos;d like the profile
             removed altogether.
           </li>
           <li>

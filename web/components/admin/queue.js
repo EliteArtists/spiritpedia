@@ -328,6 +328,29 @@ export function buildQueue(
   // the listing's Profile tab, where those fields are edited and where the
   // banner marks it reviewed.
   for (const row of Array.isArray(accountDeletions) ? accountDeletions : []) {
+    // A publisher listing (migration 0022): its owner could edit only the
+    // description and website, so that is what to check. Publishers are
+    // edited in Ingestion, which opens on this one.
+    if (row.linked_publisher_id) {
+      const name = row.publishers?.name || 'A publisher';
+      items.push({
+        id: `closed_account:${row.id}`,
+        type: 'closed_account',
+        at: row.deleted_at,
+        person: name,
+        title: 'Owner deleted their account',
+        detail: [
+          row.publishers?.slug ? `/publishers/${row.publishers.slug}` : null,
+          'check the description and website they edited',
+        ]
+          .filter(Boolean)
+          .join(' · '),
+        status: 'review',
+        action: 'Review →',
+        href: `/admin/ingestion?publisher=${row.linked_publisher_id}&closed=${row.id}`,
+      });
+      continue;
+    }
     items.push({
       id: `closed_account:${row.id}`,
       type: 'closed_account',
