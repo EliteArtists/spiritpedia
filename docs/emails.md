@@ -5,8 +5,9 @@ in the guiding star's voice. Report only: nothing here has been changed.
 
 There are **three senders**:
 
-1. **The website, through Resend** (`web/utils/email.js`). Eleven emails: six
-   transactional, five outreach. The app never sends email itself; it calls the
+1. **The website, through Resend** (`web/utils/email.js`). Thirteen emails:
+   eight transactional, five outreach. (The two claim-decision emails, 6a and
+   6b, were added on 17 October 2026.) The app never sends email itself; it calls the
    website's routes.
 2. **Supabase Auth**, through its own email settings. The sign-in codes and the
    change-email codes. Their wording lives in the Supabase dashboard, not in
@@ -40,6 +41,8 @@ There are **three senders**:
 | 4 | **Review approved** | The admin approves the review (Admin → Reviews; `/api/admin/reviews`) | hello@accounts | The reviewer | Your review of {title} is now live | "Your review… has been accepted and is now live"; thanks them, says it helps others decide; link: View your review |
 | 5 | **Review rejected** | The admin rejects the review (Admin → Reviews) | hello@accounts | The reviewer | An update on your review of {title} | "After assessing your submission, we're unable to publish your review"; asks them to email love@ or reply for more information, or if we misunderstood |
 | 6 | **Review reported** (to the admin) | A member reports a review from the app's "⋯" menu. Route `/api/email/review-reported` | hello@accounts | **love@spiritpedia.co** | Review reported: {reason} — {title} | Factual: the star rating, title, author, reason, their note, the review's text as it was, links to it and to the dashboard, and "Reports are promised a decision within 24 hours." No greeting or sign-off |
+| 6a | **Claim approved** | The admin approves a "Request to claim it" in the Inbox (`/api/admin/claim-request`) | hello@accounts | The claimant | Your claim to {listing} is approved | "Your request to manage {listing} on Spiritpedia has been approved. The listing is now linked to your account"; links: your account page, view your listing |
+| 6b | **Claim rejected** | The admin rejects a "Request to claim it" | hello@accounts | The claimant | An update on your claim to {listing} | "We weren't able to confirm that the listing is yours, so we can't link it to your account"; reply or write to love@ if we've got it wrong |
 | 7 | **Journey 1** (practitioner outreach) | The admin starts a claim journey on an unclaimed practitioner (Admin → record → Outreach; `/api/admin/journey/start`). Sent at once | **love@spiritpedia.co** | The practitioner's `contact_email` (or `JOURNEY_TEST_EMAIL` while that is set) | We came across your work | Found their work online; Spiritpedia explained; invites an interview; says we made a short public listing they haven't approved, offers the link, claiming, corrections or removal, all by replying |
 | 8 | **Journey 2** | Day 21, by the daily cron (`/api/cron/journey-emails`), unless the profile was claimed or removed | love@ | As above | A place for your work on Spiritpedia | A follow-up: established teachers (Eckhart Tolle, Abraham Hicks, Ram Dass) sit beside newer practitioners; reply to claim, or to be removed or stop the emails |
 | 9 | **Journey 3** | Day 42, cron | love@ | As above | Help people find your services on Spiritpedia | Finding a practitioner starts with a question; Spiritpedia puts teachings and services together, online or in person; reply to claim; or to be removed |

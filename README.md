@@ -44,7 +44,7 @@ inventory is `docs/emails.md`; the personalisation rules are
 | :--- | :--- |
 | **Website** | Live at **https://www.spiritpedia.co** (Next.js on Vercel). Every push that changes `web/` deploys to production |
 | **App** | Flutter, iPhone and iPad. **1.0.0 (19)** is built (`app/build/ios/ipa/Spiritpedia.ipa` and `app/build/ios/archive/Runner.xcarchive`) and waiting to be uploaded. **Build 16 is the last one uploaded to TestFlight.** Not yet on the App Store |
-| **Database** | Supabase. Two projects: **live** (`uzmvcgew…`) and **dev** (`khtpbnof…`). Migrations `0000`–`0021` are on both |
+| **Database** | Supabase. Two projects: **live** (`uzmvcgew…`) and **dev** (`khtpbnof…`). Migrations `0000`–`0021` are on both; `0022` is written and waiting to be run |
 | **Push** | Firebase Cloud Messaging only, with an APNs key. The Firebase projects must move to the love@ Google account before mid-November 2026 (§16) |
 | **Repository** | `https://github.com/EliteArtists/spiritpedia`, branch `main` only. No staging environment, no feature flags |
 
@@ -100,7 +100,7 @@ These have held throughout and the project owner expects them.
 | **Hosting** | Vercel, team `eliteartists-projects`, project **`spiritpedia-e58y`** (see §4: there are two projects) |
 | **Database and auth** | Supabase (Postgres 17, PostgREST, Supabase Auth with emailed 6-digit codes). **Live** and **dev** projects |
 | **Push** | Firebase Cloud Messaging only, for both platforms. The website sends through FCM's HTTP v1 API with a service account (`web/utils/push.js`, no Admin SDK). iOS delivery uses an **APNs auth key** uploaded to each Firebase project |
-| **Email** | Resend for the website's eleven emails (`web/utils/email.js`); Supabase Auth's own SMTP for sign-in and change-email codes |
+| **Email** | Resend for the website's thirteen emails (`web/utils/email.js`); Supabase Auth's own SMTP for sign-in and change-email codes |
 | **Analytics** | GA4 on the website, only after cookie consent. The app has no analytics SDK; Admin → Activity is first-party totals (§9.9) |
 | **Places** | GeoNames towns of 5,000+ people, imported into the `places` table |
 | **Affiliate** | Amazon Associates, five stores, tagged at render (§17.6) |
@@ -412,6 +412,12 @@ afterwards; live is checked read-only.
 - Dashboard reads, service role only: `activity_top`, `subject_rising`,
   `search_misses_top` (minimum 2), `signups_by_day`.
 
+**`0022_closed_publisher_accounts`** — *written 17 Oct 2026; run on dev, then
+live, before the website change that uses it is pushed.*
+- `account_deletions.linked_publisher_id` (→ `publishers`, ON DELETE SET NULL),
+  so deleting an account that managed a publisher flags that listing for
+  review, as a healer listing already was. Still no personal data.
+
 ### 8.2 0000–0011
 
 | File | What |
@@ -483,7 +489,7 @@ Auth: **Bearer** = the user's Supabase access token, verified with Supabase;
 | Route | Auth | What |
 | :--- | :--- | :--- |
 | `POST /api/activity` | Public, Bearer optional | Activity batch `{platform, events}` (≤32 KB) → `cleanBatch()` → RPC `log_activity` (§9.9) |
-| `POST /api/account/delete` | Bearer | `{confirm:'DELETE', source}` → `utils/deleteAccount.js`: deletes the auth user (cascades), their photos, and notes a claimed listing in `account_deletions` |
+| `POST /api/account/delete` | Bearer | `{confirm:'DELETE', source}` → `utils/deleteAccount.js`: deletes the auth user (cascades), their photos, and notes a claimed listing (healer, or publisher since `0022`) in `account_deletions` |
 | `POST /api/pending-user-type` | Public (pre-auth) | Records explorer/practitioner against an email |
 | `GET`/`PATCH /api/practitioner/profile` | Bearer | An approved practitioner's own listing and content; allow-listed fields only (`contact_email` and `tier` excluded) |
 | `GET`/`PATCH /api/publisher/profile` | Bearer | A publisher's own row; `description` and `website_url` only |
@@ -546,7 +552,7 @@ without them the data sections say why rather than showing an empty list.
 
 | Section | What |
 | :--- | :--- |
-| **Inbox** (`/admin`) | One queue: applications, claim requests, reported reviews, pending reviews, broken images, closed accounts. A two-pane reviewer: pick the tier and the kind of listing (pre-filled from `described_as`), approve or reject, handle claim requests |
+| **Inbox** (`/admin`) | One queue: applications, claim requests, reported reviews, pending reviews, broken images, closed accounts (a healer listing opens its editor; a publisher opens Ingestion on that publisher, since `0022`). A two-pane reviewer: pick the tier and the kind of listing (pre-filled from `described_as`), approve or reject, handle claim requests |
 | **People** | Practitioners and Explorers; a record with Profile, Content and Admin Notes; edit; delete (removes the `auth.users` row; everything personal cascades) |
 | **Content** | The directory of every listing, and a record editor (`/admin/content/[healer_slug]`) for the listing and all six content types, with the Outreach (journey) controls |
 | **Claims** | The record of claimed listings |
@@ -575,8 +581,9 @@ are dead code.
 - **No match → "Request to claim it"** (`claim_requests`). The admin decides in
   the Inbox: first by emailing the listing's published address, else by a
   `SPIRITPEDIA-XXXXXX` code the claimant posts on their channel or site.
-  Approving links the listing and stops any outreach journey. **Claimants are
-  not emailed the decision automatically** (§16).
+  Approving links the listing and stops any outreach journey. **The claimant
+  is emailed the decision** (approved or rejected, §9.7), and the Inbox says
+  whether that email went.
 - **Dashboards at `/account`:** `PractitionerDashboard` (profile, content,
   photo uploads to their own storage folder) and `PublisherDashboard`.
 - **"✦ Official"**: `healers.official`, Spiritpedia's own listing. Shown instead
@@ -597,7 +604,7 @@ are dead code.
 
 ### 9.7 Emails
 
-Eleven from the website, all through `utils/email.js` (Resend; templates
+Thirteen from the website, all through `utils/email.js` (Resend; templates
 inline). A failed email never fails the action that triggered it, and Resend's
 "resolved with an error" is checked, not just exceptions. Nothing records that
 an email was sent (§16).
@@ -609,6 +616,7 @@ an email was sent (§16).
 | 3 | Review received | `/api/email/review-received` |
 | 4–5 | Review approved / rejected | `/api/admin/reviews` |
 | 6 | Review reported (to love@) | `/api/email/review-reported` |
+| 6a–6b | Claim approved / rejected (to the claimant; wording in `utils/claimRequests.js`) | `/api/admin/claim-request` |
 | 7–11 | Healer outreach journey, emails 1–5 | `/api/admin/journey/start` (1); the `journey-emails` cron (2–5) |
 
 Sign-in and change-email codes are Supabase Auth's (templates in the
@@ -663,7 +671,7 @@ a manual run). **503 means the secret is unset; 401 means it's wrong.**
 
 | Job | UTC | Does |
 | :--- | :--- | :--- |
-| `/api/cron/activity-purge` | 05:00 | RPC `purge_activity()` |
+| `/api/cron/activity-purge` | 05:00 | Retention: RPC `purge_activity()`, and deletes every decided claim request 12 months after its decision (`utils/claimRequests.js`; pending requests are never touched) |
 | `/api/cron/pending-signups` | 06:00 | Deletes `pending_user_types` older than 24 h (`?dry=1` counts only) |
 | `/api/cron/broken-images` | 07:00 | Audits a seventh of the content image URLs plus every portrait (§17.8). `?dry=1`, `?shard=N` |
 | `/api/cron/journey-emails` | 08:00 | The outreach journey |
@@ -687,8 +695,8 @@ welcome email. Admin → push-test sends a test.
   reopens the banner, and declining after accepting deletes the `_ga` cookies.
 - Privacy Policy and Terms (`components/LegalPage.jsx`) are dated
   **17 October 2026**. They are a careful draft, **not legal advice**: have a
-  solicitor or data-protection specialist review them before public promotion,
-  and check whether the ICO data protection fee applies.
+  solicitor review them before public promotion — the full list of questions
+  for the solicitor is in §16.1.
 
 ### 9.13 What deploys
 
@@ -1203,10 +1211,27 @@ browser walk-throughs had typed made-up addresses into the sign-in form.
    admin show the new address). An earlier test left two live accounts
    (rossbaiken@ and wiseoly@); both are kept.
 5. **The polish pass** across the app (from testing build 13 on a phone).
-6. **Legal review:** a solicitor or data-protection specialist should review
-   the Terms and Privacy Policy before public promotion; check the ICO data
-   protection fee. *No shortlist of solicitors is kept in this repository —
-   record the chosen firm here.*
+6. **Questions for a solicitor** (before public promotion; the legal pages are
+   a careful draft, not legal advice):
+   1. **The legal pages:** the Terms of Use and the Privacy Policy, as a whole.
+   2. **Trademark:** registering "Spiritpedia" (and the star mark).
+   3. **Marketing emails as a sole trader:** what consent and opt-out rules
+      apply to outreach and future mailshots sent by a sole trader.
+   4. **Spiritual interests as sensitive data:** whether Tailor Spiritpedia's
+      choices and learned subjects count as special category data (religious
+      or philosophical beliefs) under UK GDPR, and what that requires.
+   5. **Activity-learning consent:** whether the switch (off by default, its
+      wording, the consent timestamp, deletion when turned off) is valid
+      consent.
+   6. **Location data:** approximate location, rounded to a town and stored as
+      a town only — what the Privacy Policy must say.
+   7. **Mentioning Netflix in ads:** whether advertising can compare
+      Spiritpedia to Netflix by name.
+   8. **The App Store seller name vs the Privacy Policy's named controller:**
+      whether they must match, and how.
+   9. **BCC-ing every email to a Gmail archive:** whether that's acceptable,
+      and what to say about it.
+   10. **The UK ICO data protection fee:** whether it applies.
 7. **App Store listing:** description, keywords, screenshots (iPhone and
    iPad), the privacy label above.
 
@@ -1218,8 +1243,6 @@ browser walk-throughs had typed made-up addresses into the sign-in form.
   `docs/emails.md`.
 - **Publisher outreach:** no wording exists, so the journey cron skips publisher
   journeys. Write it, then start outreach to publishers.
-- **Claimants aren't emailed a decision.** `/api/admin/claim-request` sends
-  nothing; the admin emails by hand.
 - **No record that an email was sent** (no table): approving a review twice
   emails twice, and a failed send leaves nothing to retry. Needed before
   mailshots.
@@ -1232,11 +1255,6 @@ browser walk-throughs had typed made-up addresses into the sign-in form.
 - `app/docs/website-followups.md`: issues found while building the app
   (channels mixed with teachers, memberships, search, offering dates), unfixed.
 - **Report and block on website reviews** ("⋯" as in the app).
-- **Deleting a publisher account doesn't flag the listing.**
-  `utils/deleteAccount.js` writes `account_deletions` for a claimed
-  `linked_healer_slug` only, never `linked_publisher_id`.
-- **`claim_requests` promises deletion 12 months after a decision** (table
-  comment), but nothing implements it — add it to `purge_activity()` or a cron.
 - **Back up the content:** a periodic `pg_dump --data-only` of the content
   tables to private storage, not git.
 - **A `content_submissions` staging table** before practitioners add content
