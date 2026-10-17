@@ -6,6 +6,7 @@ import '../features/interests/interests.dart';
 import 'content_repository.dart';
 import 'models.dart';
 import 'shelf_rules.dart';
+import '../features/learning/learning.dart';
 
 /// The one place screens get content from. Overridden in widget tests.
 final contentRepositoryProvider = Provider<ContentRepository>(
@@ -223,7 +224,8 @@ final forYouProvider =
       ref,
     ) async {
       final chosen = ref.watch(interestSubjectsProvider);
-      if (chosen.isEmpty) return null;
+      final learned = ref.watch(learnedProvider);
+      if (chosen.isEmpty && learned.isEmpty) return null;
       final turn = ref.watch(forYouTurnProvider);
       final available = <({ExploreSection section, List<Object> items})>[];
       for (final section in forYouSections) {
@@ -238,7 +240,7 @@ final forYouProvider =
               if ((o.starts ?? o.ends) case final d? when !d.isBefore(day)) o,
           ];
         }
-        final picked = forYou(items, chosen, subjectsOf);
+        final picked = forYou(items, chosen, subjectsOf, learned: learned);
         if (picked.isNotEmpty) available.add((section: section, items: picked));
       }
       if (available.isEmpty) return null;
@@ -270,6 +272,7 @@ final videoShelvesProvider = FutureProvider.family<List<VideoShelf>, String?>((
 ) async {
   final repo = ref.watch(contentRepositoryProvider);
   final chosen = ref.watch(interestSubjectsProvider);
+  final learned = ref.watch(learnedProvider);
   final hiding = ref.watch(hidingProvider);
   final hidden = hiding.subjects;
   // Never show: no video with a hidden subject (and no More of one), on any
@@ -280,7 +283,12 @@ final videoShelvesProvider = FutureProvider.family<List<VideoShelf>, String?>((
   if (subject == null) {
     // More of (docs/personalisation.md): their pillars come first, and each
     // shelf but New is ranked in three levels.
-    final pillars = pillarsByInterest(chosen, videoPillarOrder, hidden);
+    final pillars = pillarsByInterest(
+      chosen,
+      videoPillarOrder,
+      hidden,
+      learned,
+    );
     final results = [
       for (final pool in await Future.wait([
         repo.newestVideos(limit: 60),
@@ -291,7 +299,7 @@ final videoShelvesProvider = FutureProvider.family<List<VideoShelf>, String?>((
         visible(pool),
     ];
     List<Video> boost(List<Video> pool) =>
-        byInterest(pool, chosen, (v) => v.subjectSlugs);
+        byInterest(pool, chosen, (v) => v.subjectSlugs, learned: learned);
     // As with Books: no video on two shelves, and each pillar leads with the
     // videos most about it.
     final shown = <Object>{};
@@ -380,6 +388,7 @@ final bookShelvesProvider = FutureProvider.family<List<BookShelf>, String?>((
 ) async {
   final repo = ref.watch(contentRepositoryProvider);
   final chosen = ref.watch(interestSubjectsProvider);
+  final learned = ref.watch(learnedProvider);
   final hiding = ref.watch(hidingProvider);
   final hidden = hiding.subjects;
   // Never show: no book with a hidden subject (and no More of one), on any
@@ -393,7 +402,7 @@ final bookShelvesProvider = FutureProvider.family<List<BookShelf>, String?>((
     // As on Videos: their pillars first, and each shelf but New ranked in
     // three levels.
     List<Book> boost(List<Book> pool) =>
-        byInterest(pool, chosen, (b) => b.subjectSlugs);
+        byInterest(pool, chosen, (b) => b.subjectSlugs, learned: learned);
     // Most books carry several subjects, so without care every shelf would
     // lead with the same newest books. No book appears on two shelves, and
     // each pillar leads with the books most about it.
@@ -410,7 +419,12 @@ final bookShelvesProvider = FutureProvider.family<List<BookShelf>, String?>((
         subtitle: 'Just added',
         books: take(all),
       ),
-      for (final pillar in pillarsByInterest(chosen, videoPillarOrder, hidden))
+      for (final pillar in pillarsByInterest(
+        chosen,
+        videoPillarOrder,
+        hidden,
+        learned,
+      ))
         BookShelf(
           title: pillar,
           subtitle: 'Read & reflect',

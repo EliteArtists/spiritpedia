@@ -7,6 +7,7 @@ import '../../data/shelf_rules.dart';
 import '../../theme/colors.dart';
 import '../interests/interests.dart';
 import '../shell/tab_bar_state.dart';
+import '../learning/learning.dart';
 
 /// "View All" and the five pillars, as one horizontally scrolling row — the
 /// pillars holding someone's chosen interests first, and none whose every
@@ -36,6 +37,7 @@ class SubjectPillRow extends ConsumerWidget {
       ref.watch(interestSubjectsProvider),
       null,
       hidden,
+      ref.watch(learnedProvider),
     );
 
     return SizedBox(
@@ -117,6 +119,16 @@ class SubjectPillRow extends ConsumerWidget {
                           fontWeight: FontWeight.w500,
                         ),
                         onSelected: (_) {
+                          // A subject pill on Discover, a filter on Videos
+                          // or Books (activity learning, migration 0021).
+                          ref
+                              .read(activityLogProvider)
+                              .subjects(
+                                filter == subjectFilterProvider
+                                    ? 'pill'
+                                    : 'filter',
+                                [s.slug],
+                              );
                           ref.read(filter.notifier).select(s.slug);
                           Navigator.of(sheetContext).pop();
                         },

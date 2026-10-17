@@ -1,20 +1,7 @@
-'use client';
+import { redirect } from 'next/navigation';
 
-import SectionHeading from '@/components/admin/SectionHeading';
-import { useAdminData } from '@/components/admin/AdminData';
-import { StatsTab } from '@/components/admin/AdminLiveTabs';
-import { Placeholder } from '@/components/admin/AdminPlaceholders';
-
+// "Analytics" became Admin → Activity (migration 0021), which keeps the
+// database totals at its foot. Old bookmarks land there.
 export default function AdminAnalyticsPage() {
-  const { counts, loading, accountsAvailable } = useAdminData();
-  return (
-    <>
-      <SectionHeading title="Analytics" subtitle="Live counts from the database" />
-      {loading ? (
-        <Placeholder icon="◴" title="Loading…" />
-      ) : (
-        <StatsTab counts={counts} accountsAvailable={accountsAvailable} />
-      )}
-    </>
-  );
+  redirect('/admin/activity');
 }

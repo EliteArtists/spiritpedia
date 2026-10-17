@@ -66,6 +66,9 @@ export async function ensureProfile(userId, userType) {
       {
         id: userId,
         user_type: isPractitioner ? USER_TYPES.practitioner : USER_TYPES.explorer,
+        // Where the account was made, for Admin → Activity's sign-ups
+        // (migration 0021). Only on the insert: an existing row is untouched.
+        signup_platform: 'web',
       },
       { onConflict: 'id', ignoreDuplicates: true }
     )

@@ -11,6 +11,7 @@ import '../../theme/colors.dart';
 import '../detail/detail_widgets.dart';
 import '../interests/interests.dart';
 import '../interests/interests_picker.dart';
+import '../learning/learning.dart';
 import '../intro/intro_overlay.dart';
 import '../notifications/notifications_section.dart';
 import '../reviews/reviews_providers.dart';
@@ -1229,20 +1230,25 @@ class _StarVisitsState extends ConsumerState<_StarVisits> {
 
   Future<void> _set(int visit, StarAsk ask) async {
     final conductor = ref.read(conductorProvider.notifier);
-    final answered = ask == StarAsk.area
-        ? ref.read(areaProvider).place != null
-        : ref.read(displayNameProvider) != null;
+    final signedIn = ref.read(signedInUserIdProvider) != null;
+    final learning = ref.read(learningProvider);
+    final answered = switch (ask) {
+      StarAsk.learning => !signedIn || learning,
+      StarAsk.area => ref.read(areaProvider).place != null,
+      StarAsk.name => ref.read(displayNameProvider) != null,
+    };
     await conductor.debugSetVisit(visit, ask);
     if (!mounted) return;
     setState(
-      () => _note = answered
-          ? 'Visit $visit — but the ${ask == StarAsk.area ? 'area' : 'name'} '
-                'is already set, so the star won’t ask. Reset first.'
-          : ask == StarAsk.name && ref.read(areaProvider).place == null
-          ? 'Visit $visit — but your area isn’t set, so the star asks about '
-                'the area first (one question a session).'
+      () => _note = ask == StarAsk.learning && answered
+          ? 'Visit $visit — but the star only asks to learn when you’re '
+                'signed in with learning off.'
+          : answered
+          ? 'Visit $visit — but the ${ask.name} is already set, so the star '
+                'won’t ask. Reset first.'
           : 'Visit $visit. Go back to Discover: the star asks after about '
-                '3 seconds.',
+                '3 seconds — the first question not yet answered, in order: '
+                'learning, area, name.',
     );
   }
 
@@ -1282,7 +1288,8 @@ class _StarVisitsState extends ConsumerState<_StarVisits> {
         ),
         const SizedBox(height: 2),
         const Text(
-          'Area question from visit 5, name question from visit 7.',
+          'Learning question from visit 3 (signed in), area from 5, name '
+          'from 7.',
           style: TextStyle(fontSize: 12.5, color: SpColors.textMuted),
         ),
         const SizedBox(height: 8),
@@ -1290,6 +1297,12 @@ class _StarVisitsState extends ConsumerState<_StarVisits> {
           spacing: 8,
           runSpacing: 6,
           children: [
+            OutlinedButton(
+              key: const ValueKey('debug-visit-3'),
+              onPressed: () => _set(3, StarAsk.learning),
+              style: style,
+              child: const Text('Set to 3'),
+            ),
             OutlinedButton(
               key: const ValueKey('debug-visit-5'),
               onPressed: () => _set(5, StarAsk.area),

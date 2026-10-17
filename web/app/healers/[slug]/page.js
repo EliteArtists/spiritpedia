@@ -10,6 +10,7 @@ import VideoPlayer from '@/components/VideoPlayer';
 import ShareButton from '@/components/ShareButton';
 import { buildMetadata, notFoundMetadata, pickImage, SITE_URL } from '@/utils/seo';
 import { formatLifespan, LIFESPAN_BADGE_CLASS } from '@/utils/lifespan';
+import TrackOpen from '@/components/TrackOpen';
 
 // Hourly ceiling on staleness — see the note in app/page.js. Reading
 // searchParams for the back link already makes this route per-request, so this
@@ -287,6 +288,7 @@ export default async function HealerProfile({ params, searchParams }) {
 
   return (
     <main className="min-h-screen bg-[#0a0f1d] text-white font-sans">
+      <TrackOpen type="healer" slug={healer.healer_slug} subjects={healer.subject_slugs} />
       {/* ── SECTION 1 · TWO-COLUMN PROFILE HERO ──────────────────────────── */}
       {/* Portrait left (~40%), identity + bio + contact right (~60%). Replaces
           the old full-bleed cinematic banner, which cropped faces and stretched
@@ -297,6 +299,8 @@ export default async function HealerProfile({ params, searchParams }) {
           <div className="mb-8 flex items-center justify-between gap-4">
             <BackButton from={from} fromTitle={fromTitle} />
             <ShareButton
+            contentType="healer"
+            contentSlug={healer.healer_slug}
               url={`${SITE_URL}/healers/${healer.healer_slug}`}
               title={`${healer.name} — Spiritpedia`}
             />

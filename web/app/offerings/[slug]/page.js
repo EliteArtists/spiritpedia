@@ -6,6 +6,7 @@ import { backContextQuery } from '@/utils/backContext';
 import ShareButton from '@/components/ShareButton';
 import { buildMetadata, notFoundMetadata, pickImage, SITE_URL } from '@/utils/seo';
 import ReviewSection, { RatingRow } from '@/components/ReviewSection';
+import TrackOpen from '@/components/TrackOpen';
 
 // Hourly ceiling on staleness — see the note in app/page.js.
 export const revalidate = 3600;
@@ -64,6 +65,7 @@ export default async function OfferingDetail({ params, searchParams }) {
 
   return (
     <main className="relative min-h-screen bg-[#0a0f1d] text-white">
+      <TrackOpen type="course" slug={offering.slug} subjects={offering.subject_slugs} />
       {/* Back link — anchored to the page's top-left, above the header, context-aware */}
       <div className="absolute top-8 left-6 md:left-8 z-10">
         <BackButton from={from} fromTitle={fromTitle} />
@@ -89,6 +91,8 @@ export default async function OfferingDetail({ params, searchParams }) {
             {offering.title}
           </h1>
           <ShareButton
+            contentType="course"
+            contentSlug={offering.slug}
             className="shrink-0 mt-1"
             url={`${SITE_URL}/offerings/${offering.slug}`}
             title={`${offering.title} — Spiritpedia`}

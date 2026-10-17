@@ -9,7 +9,9 @@ import { StatusPill } from './QueueTable.jsx';
 import { deriveStatus, hasVisibleStatus, timeAgo } from './queue.js';
 import { Placeholder } from './AdminPlaceholders.jsx';
 
-const TABS = ['Profile', 'Content', 'Admin Notes', 'Activity'];
+// No Activity tab, by design (migration 0021): admin sees totals in
+// Admin → Activity, never one person's browsing.
+const TABS = ['Profile', 'Content', 'Admin Notes'];
 const STATUSES = ['pending', 'approved', 'rejected'];
 
 const TIER_WORDS = {
@@ -767,7 +769,6 @@ export default function PersonRecord({ personId, onBack, backLabel, onChanged })
 
         {tab === 'Content' && practitioner && <ContentTab healer={healer} content={data.content} />}
         {tab === 'Admin Notes' && <NotesTab personId={personId} />}
-        {tab === 'Activity' && <Placeholder icon="◷" title="Activity log coming soon" />}
       </div>
 
       <ConfirmDelete

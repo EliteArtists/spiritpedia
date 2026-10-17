@@ -4,7 +4,8 @@ import { useEffect, useRef } from 'react';
 import { usePathname } from 'next/navigation';
 import { supabaseAuth } from '../utils/supabaseAuth.js';
 import { ensureProfile, migrateFavourites, readPendingUserType } from '../utils/onboarding.js';
-import { FAVORITES_EVENT, readFavorites, toggleFavorite } from '../utils/favorites.js';
+import { CONTENT_TYPES, FAVORITES_EVENT, readFavorites, toggleFavorite } from '../utils/favorites.js';
+import { trackContent } from '../utils/activity.js';
 import { takePendingSave } from '../utils/savePrompt.js';
 import { writeArea } from '../utils/area.js';
 import { syncAreaWithAccount } from '../utils/areaSync.js';
@@ -94,6 +95,7 @@ export default function AuthSync() {
         const pending = takePendingSave();
         if (pending && !readFavorites(pending.key).map(String).includes(pending.slug)) {
           toggleFavorite(pending.key, pending.slug);
+          if (CONTENT_TYPES[pending.key]) trackContent('save', CONTENT_TYPES[pending.key], pending.slug);
         }
 
         // Their area for Practitioners Near You, as the app keeps it.

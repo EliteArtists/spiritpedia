@@ -17,6 +17,7 @@ import {
   SOFT_TIER_LINE,
   MEDICAL_DISCLAIMER,
 } from '../utils/emotionSearchPatterns.js';
+import { trackSearch } from '../utils/activity.js';
 
 // Subject slugs are hyphenated db keys; these render as friendly labels. Anything
 // not special-cased is title-cased word by word.
@@ -300,6 +301,7 @@ export default function EmotionSearch() {
   const blurTimer = useRef(null); // closes the dropdown after a click grace period
   const idleTimer = useRef(null); // resumes the typewriter after blur-on-empty
   const typeTimer = useRef(null); // active typewriter step
+  const settleTimer = useRef(null); // counts a search once it has settled
 
   const term = value.trim();
 
@@ -395,8 +397,31 @@ export default function EmotionSearch() {
         subjects: subjectsRes.data || [],
       });
       setLoading(false);
+
+      // COUNTED ONCE IT SETTLES (utils/activity.js), a moment after the last
+      // keystroke, so "r", "re", "rei" are not three searches. Only ever
+      // here, past both safety gates above: a crisis search returns before
+      // this and is never counted. With results, only the subjects it led to
+      // travel; the words travel only when nothing at all was found.
+      clearTimeout(settleTimer.current);
+      settleTimer.current = setTimeout(() => {
+        const nothing =
+          resolved.type === 'no_results' &&
+          !(healersRes.data || []).length &&
+          !(booksRes.data || []).length &&
+          !(videosRes.data || []).length &&
+          !(subjectsRes.data || []).length;
+        if (resolved.type === 'results') {
+          trackSearch({ subjects: [...new Set(resolved.rows.map((row) => row.subject_slug))].slice(0, 3) });
+        } else if (nothing) {
+          trackSearch({ term, noResults: true });
+        }
+      }, 1500);
     }, 300);
-    return () => clearTimeout(t);
+    return () => {
+      clearTimeout(t);
+      clearTimeout(settleTimer.current);
+    };
   }, [value, term, dualPathAnswer]);
 
   // Close on click-outside and Esc so no stale dropdown lingers.

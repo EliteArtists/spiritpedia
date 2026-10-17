@@ -5,6 +5,7 @@ import 'package:spiritpedia/core/safety/emotion_safety.dart';
 import 'package:spiritpedia/data/models.dart';
 import 'package:spiritpedia/data/providers.dart';
 import 'package:spiritpedia/data/shelf_rules.dart';
+import 'package:spiritpedia/features/account/account_service.dart';
 import 'package:spiritpedia/features/account/account_providers.dart';
 import 'package:spiritpedia/features/interests/interests.dart';
 import 'package:spiritpedia/features/interests/interests_picker.dart';
@@ -26,6 +27,88 @@ typedef _Item = ({String id, List<String> subjects});
 List<String> _subjects(_Item i) => i.subjects;
 
 void main() {
+  group('Learned subjects: level 2, just below More of (migration 0021)', () {
+    const items = <_Item>[
+      (id: 'yoga', subjects: ['yoga']),
+      (id: 'energy', subjects: ['energy-medicine']),
+      (id: 'none', subjects: []),
+      (id: 'reiki', subjects: ['reiki']),
+      (id: 'astro', subjects: ['astrology']),
+      (id: 'tarot', subjects: ['astrology', 'yoga']),
+    ];
+    List<String> ids(List<_Item> l) => [for (final i in l) i.id];
+
+    test('More of, then learned (most explored first), then the rest of the '
+        'More of pillars, then everything else; nothing removed', () {
+      final ranked = byInterest(
+        items,
+        {'reiki'},
+        _subjects,
+        learned: {'astrology': 4, 'yoga': 6},
+      );
+      expect(ids(ranked), [
+        'reiki', // More of
+        'tarot', // learned: astrology 4 + yoga 6
+        'yoga', // learned: yoga 6
+        'astro', // learned: astrology 4
+        'energy', // the rest of Emotional Healing
+        'none',
+      ]);
+      expect(interestLevel(['astrology'], {'reiki'}, null, {'astrology': 4}), 1);
+    });
+
+    test('learned alone ranks for someone who chose nothing', () {
+      expect(ids(byInterest(items, const {}, _subjects, learned: {'yoga': 5})), [
+        'yoga',
+        'tarot',
+        'energy',
+        'none',
+        'reiki',
+        'astro',
+      ]);
+      expect(
+        ids(forYou(items, const {}, _subjects, learned: {'yoga': 5})),
+        ['yoga', 'tarot'],
+      );
+      expect(
+        pillarsByInterest(const {}, null, const {}, {'yoga': 5}).first,
+        pillarOf('yoga'),
+      );
+    });
+
+    test('scores halve every 30 days; the top 5 above the minimum, never a '
+        'More of or Never show subject', () {
+      final now = DateTime.utc(2026, 10, 18);
+      AffinityRow row(String s, double score, int daysAgo) =>
+          (subject: s, score: score, updatedAt: now.subtract(Duration(days: daysAgo)));
+      expect(fadedScore(8, now.subtract(const Duration(days: 30)), now), closeTo(4, 1e-9));
+      expect(fadedScore(8, now.subtract(const Duration(days: 60)), now), closeTo(2, 1e-9));
+      final learned = learnedSubjects(
+        [
+          row('yoga', 10, 0),
+          row('reiki', 50, 0), // More of: left out
+          row('astrology', 50, 0), // Never show: left out
+          row('tarot-ish', 5, 60), // 1.25 after 60 days: below the minimum
+          row('breathwork', 4, 0),
+          row('meditation', 9, 0),
+          row('mindfulness', 8, 0),
+          row('qi-gong', 7, 0),
+          row('tai-chi', 6, 0),
+        ],
+        now: now,
+        chosen: {'reiki'},
+        hidden: {'astrology'},
+      );
+      expect(learned.keys.toList(), [
+        'yoga',
+        'meditation',
+        'mindfulness',
+        'qi-gong',
+        'tai-chi',
+      ]);
+    });
+  });
+
   group('More of: three levels (docs/personalisation.md)', () {
     // Someone who chose only Reiki (Emotional Healing).
     const items = <_Item>[
@@ -55,8 +138,9 @@ void main() {
         'none',
       ]);
       expect(interestLevel(['reiki'], {'reiki'}), 0);
-      expect(interestLevel(['self-healing'], {'reiki'}), 1);
-      expect(interestLevel(['yoga'], {'reiki'}), 2);
+      // Level 2 is what has been learned (none here), so the pillar is 3.
+      expect(interestLevel(['self-healing'], {'reiki'}), 2);
+      expect(interestLevel(['yoga'], {'reiki'}), 3);
       expect(pillarMates({'reiki'}), {
         'shadow-work',
         'self-healing',

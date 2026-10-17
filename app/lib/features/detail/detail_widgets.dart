@@ -7,6 +7,7 @@ import '../../core/links/share.dart';
 import '../../data/providers.dart';
 import '../../theme/colors.dart';
 import '../library/save_prompt.dart';
+import '../learning/learning.dart';
 import '../library/saved_items.dart';
 import '../star/star_layer.dart';
 
@@ -80,11 +81,45 @@ class DetailScaffold<T> extends ConsumerWidget {
                     style: const TextStyle(color: SpColors.textMuted),
                   ),
                 )
+              : saveKind != null && saveSlug != null
+              ? _CountsOpen(
+                  type: saveKind!.contentType,
+                  slug: saveSlug!,
+                  child: builder(context, item),
+                )
               : builder(context, item),
         ),
       ),
     );
   }
+}
+
+/// Counts the page being opened (activity learning, migration 0021) once
+/// it has something to show. The queue skips a repeat within the session.
+class _CountsOpen extends ConsumerStatefulWidget {
+  const _CountsOpen({
+    required this.type,
+    required this.slug,
+    required this.child,
+  });
+
+  final String type;
+  final String slug;
+  final Widget child;
+
+  @override
+  ConsumerState<_CountsOpen> createState() => _CountsOpenState();
+}
+
+class _CountsOpenState extends ConsumerState<_CountsOpen> {
+  @override
+  void initState() {
+    super.initState();
+    ref.read(activityLogProvider).open(widget.type, widget.slug);
+  }
+
+  @override
+  Widget build(BuildContext context) => widget.child;
 }
 
 /// A page with the floating home star at its foot.

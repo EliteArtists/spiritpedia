@@ -1,6 +1,7 @@
 'use client';
 
 import { useCallback, useEffect, useId, useRef, useState } from 'react';
+import { trackContent } from '../utils/activity.js';
 
 // Share button for detail pages and the homepage nav.
 //
@@ -54,7 +55,9 @@ function shareTargets(url, title) {
   ];
 }
 
-export default function ShareButton({ url, title, className = '' }) {
+// contentType and contentSlug, when given, count a share of that item
+// (utils/activity.js).
+export default function ShareButton({ url, title, className = '', contentType, contentSlug }) {
   const [open, setOpen] = useState(false);
   const [copied, setCopied] = useState(false);
   const [nativeShare, setNativeShare] = useState(false);
@@ -93,6 +96,8 @@ export default function ShareButton({ url, title, className = '' }) {
   // Clear the toast timer if the component unmounts mid-toast.
   useEffect(() => () => clearTimeout(copiedTimer.current), []);
 
+  const shared = useCallback(() => trackContent('share', contentType, contentSlug), [contentType, contentSlug]);
+
   const showCopied = useCallback(() => {
     setCopied(true);
     clearTimeout(copiedTimer.current);
@@ -117,16 +122,18 @@ export default function ShareButton({ url, title, className = '' }) {
       }
       setOpen(false);
       showCopied();
+      shared();
     } catch {
       // Clipboard permission denied — leave the menu open so the user can
       // pick another target rather than seeing a false "copied" toast.
     }
-  }, [url, showCopied]);
+  }, [url, showCopied, shared]);
 
   const onButtonClick = useCallback(async () => {
     if (nativeShare) {
       try {
         await navigator.share({ title, url });
+        shared();
         return;
       } catch (err) {
         // AbortError = the user closed the sheet. Anything else means the
@@ -135,7 +142,7 @@ export default function ShareButton({ url, title, className = '' }) {
       }
     }
     setOpen((v) => !v);
-  }, [nativeShare, title, url]);
+  }, [nativeShare, title, url, shared]);
 
   const targets = shareTargets(url, title);
 
@@ -167,7 +174,10 @@ export default function ShareButton({ url, title, className = '' }) {
               href={href}
               target={key === 'email' ? undefined : '_blank'}
               rel={key === 'email' ? undefined : 'noopener noreferrer'}
-              onClick={() => setOpen(false)}
+              onClick={() => {
+                setOpen(false);
+                shared();
+              }}
               className="flex cursor-pointer items-center gap-3 rounded-lg px-4 py-2 text-sm text-white hover:bg-white/5"
             >
               <Icon />

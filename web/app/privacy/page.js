@@ -60,12 +60,21 @@ export default function PrivacyPage() {
             on every device you use; signing out removes them from that browser or phone.
           </li>
           <li>
-            <strong className="text-white">The emotional search</strong> — we don&apos;t save what
-            you type into the search bar, and it isn&apos;t linked to you or your account. To find
-            matches, each search is sent to our database provider, whose short-lived technical
-            logs can briefly include it. If what you type matches one of our crisis phrases, the
-            search stops in your browser: nothing more is sent, and we show you where to find
-            support instead.
+            <strong className="text-white">The emotional search</strong> — what you type isn&apos;t
+            linked to you or your account. To find matches, each search is sent to our database
+            provider, whose short-lived technical logs can briefly include it. When a search finds
+            nothing at all, we count its words, without recording who searched, so we can see what
+            people look for that we don&apos;t have yet; anything containing an email address or a
+            phone number is never kept. If what you type matches one of our crisis phrases, the
+            search stops in your browser or the app: nothing more is sent, it is never counted,
+            and we show you where to find support instead.
+          </li>
+          <li>
+            <strong className="text-white">Counts of what&apos;s popular</strong> — we count how
+            often things are opened, saved, shared and searched for, on the website and in the
+            app, without recording who did it: no name, account, device or IP address is kept with
+            these totals, and nothing is stored on your device to make them. They help us see what
+            people find useful and what&apos;s missing.
           </li>
         </List>
 
@@ -158,6 +167,24 @@ export default function PrivacyPage() {
           </li>
         </List>
 
+        <Sub>If you let Spiritpedia learn from what you explore</Sub>
+        <List>
+          <li>
+            It is off unless you turn it on (&ldquo;Let Spiritpedia learn from what I
+            explore&rdquo;, in Tailor Spiritpedia in the app or on your account page). With your
+            permission, we note what you open, watch, save, share and review, the subject pills
+            and filters you tap, and the subjects your searches lead to, and use them to put more
+            of what you love first. We never store the words you search for here.
+          </li>
+          <li>
+            It is used only to tailor what you see. It is never shown to our team, never shared
+            and never used for advertising, and it never hides anything from you.
+          </li>
+          <li>
+            You can turn it off at any time, and what we&apos;ve learned is deleted straight away.
+          </li>
+        </List>
+
         <Sub>When you apply or are listed — as a practitioner, channel, podcast, app, publisher or organisation</Sub>
         <List>
           <li>
@@ -213,6 +240,14 @@ export default function PrivacyPage() {
             [
               'Greet you by name in the app and in our emails',
               'Your consent — sharing your name is optional, and you can change or remove it at any time',
+            ],
+            [
+              'Learn from what you explore to tailor what you see',
+              'Your consent — it is off unless you turn it on, and you can turn it off at any time',
+            ],
+            [
+              'Count, without recording who, what is opened, saved and searched for',
+              'Our legitimate interest in improving Spiritpedia — the totals identify no one',
             ],
             [
               'Feature established teachers and invite them to claim their profile',
@@ -305,6 +340,15 @@ export default function PrivacyPage() {
             Spiritpedia in the app, or &ldquo;Change&rdquo; on Practitioners Near You; your name:
             Account in the app) or delete your account. A position used to find your town is
             never kept.
+          </li>
+          <li>
+            If you let Spiritpedia learn from what you explore: each thing you do is kept for 30
+            days; what has been learned from it is kept until you turn learning off or delete your
+            account, when it is deleted straight away.
+          </li>
+          <li>
+            Anonymous totals of what is opened, saved and searched for — 25 months. Searches that
+            found nothing — 90 days.
           </li>
           <li>
             If you deleted an account linked to a public teacher profile, the profile stays on

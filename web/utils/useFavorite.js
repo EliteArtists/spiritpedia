@@ -1,7 +1,8 @@
 'use client';
 
 import { useCallback, useEffect, useState } from 'react';
-import { FAVORITES_EVENT, readFavorites, toggleFavorite } from './favorites.js';
+import { CONTENT_TYPES, FAVORITES_EVENT, readFavorites, toggleFavorite } from './favorites.js';
+import { trackContent } from './activity.js';
 import { askToSave } from './savePrompt.js';
 import { getSession } from './supabaseAuth.js';
 
@@ -42,6 +43,9 @@ export function useFavorite(storageKey, slug) {
     }
     const next = toggleFavorite(storageKey, favId);
     if (next) setSaved(next.includes(favId));
+    // A save or an unsave (utils/activity.js). "Read" marks are not saves.
+    const type = CONTENT_TYPES[storageKey];
+    if (next && type && type !== 'book_read') trackContent(saving ? 'save' : 'unsave', type, favId);
   }, [storageKey, favId]);
 
   return [saved, toggle];

@@ -11,6 +11,7 @@ import '../../theme/colors.dart';
 import '../account/account_providers.dart';
 import 'reviews_providers.dart';
 import 'reviews_service.dart';
+import '../learning/learning.dart';
 
 // Community reviews, as on the website's content pages: a summary line under
 // the title and the block at the foot. Approved reviews only; writing needs an
@@ -456,6 +457,13 @@ class _ReviewFormState extends ConsumerState<ReviewForm> {
       return;
     }
     unawaited(service.notifyReceived(widget.target).catchError((_) {}));
+    // A new review (activity learning, migration 0021); an edit is not a
+    // second one.
+    if (!_editing) {
+      ref
+          .read(activityLogProvider)
+          .content('review', widget.target.type, widget.target.slug);
+    }
     ref.invalidate(reviewsProvider(widget.target));
     if (!mounted) return;
     final messenger = ScaffoldMessenger.of(context);

@@ -3,6 +3,10 @@
   "ignoreCommand": "bash scripts/vercel-ignore-build.sh",
   "crons": [
     {
+      "path": "/api/cron/activity-purge",
+      "schedule": "0 5 * * *"
+    },
+    {
       "path": "/api/cron/broken-images",
       "schedule": "0 7 * * *"
     },

@@ -4,6 +4,7 @@ import { useCallback, useEffect, useMemo, useState } from 'react';
 import Link from 'next/link';
 import { supabase } from '../utils/supabase.js';
 import { getSession, supabaseAuth } from '../utils/supabaseAuth.js';
+import { trackContent } from '../utils/activity.js';
 
 // COMMUNITY REVIEWS — the live version of what used to be a placeholder.
 //
@@ -215,6 +216,8 @@ function ReviewForm({ contentType, contentSlug, existing, profileName, onSaved }
 
     setDone(editing ? 'updated' : 'submitted');
     setSaving(false);
+    // A new review (utils/activity.js); an edit is not a second one.
+    if (!editing) trackContent('review', contentType, contentSlug);
     forget(contentType, contentSlug);
     onSaved?.();
 

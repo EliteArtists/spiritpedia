@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import { trackSubjects } from '../utils/activity.js';
 
 // 5-Pillar taxonomy: clusters database subject slugs under Master Keys for the
 // pill navigation. Order here is the order the pills render in.
@@ -128,7 +129,11 @@ export default function SubjectPills({ subjects = [], currentSubjectSlug, allowe
                 <button
                   key={sub.slug}
                   type="button"
-                  onClick={() => onSelect(sub.slug)}
+                  onClick={() => {
+                    // A filter on Videos or Books (utils/activity.js).
+                    trackSubjects('filter', sub.slug);
+                    onSelect(sub.slug);
+                  }}
                   aria-current={currentSubjectSlug === sub.slug ? 'true' : undefined}
                   className={subClass}
                 >
@@ -138,6 +143,9 @@ export default function SubjectPills({ subjects = [], currentSubjectSlug, allowe
                 <a
                   key={sub.slug}
                   href={`?subject=${sub.slug}`}
+                  // A subject pill on Discover (utils/activity.js). The link
+                  // reloads the page; the queue is sent as it is left.
+                  onClick={() => trackSubjects('pill', sub.slug)}
                   aria-current={currentSubjectSlug === sub.slug ? 'true' : undefined}
                   className={subClass}
                 >

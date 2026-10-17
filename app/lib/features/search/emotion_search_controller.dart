@@ -27,12 +27,17 @@ class EmotionSearchController extends ChangeNotifier {
     this.scope = SearchScope.all,
     this.debounce = const Duration(milliseconds: 300),
     Set<String> Function()? interests,
+    Map<String, double> Function()? learned,
     Hiding Function()? hidden,
+    this.onSettled,
+    this.settleAfter = const Duration(milliseconds: 1500),
   }) : plain = plain ?? UniversalContentSearch(repository),
        interests = interests ?? _none,
+       learned = learned ?? _nothingLearned,
        hidden = hidden ?? _nothingHidden;
 
   static Set<String> _none() => const {};
+  static Map<String, double> _nothingLearned() => const {};
   static Hiding _nothingHidden() => Hiding.none;
 
   final EmotionSafety safety;
@@ -49,6 +54,18 @@ class EmotionSearchController extends ChangeNotifier {
 
   /// The subjects the person chose — a small boost in Spiritpedia Suggests.
   final Set<String> Function() interests;
+
+  /// What Spiritpedia has learned they explore (level 2 of the ranking) — a
+  /// smaller boost in Suggests.
+  final Map<String, double> Function() learned;
+
+  /// A search that has settled (activity learning, migration 0021): a
+  /// moment after its results, with the subjects it led to — or, when
+  /// nothing at all was found, its words. Only ever after both safety
+  /// gates: a crisis search never reaches it.
+  final void Function({List<String> subjects, String? term})? onSettled;
+  final Duration settleAfter;
+  Timer? _settle;
 
   /// What the person never wants shown (docs/personalisation.md). Name and
   /// title matches it hides are held back behind "Show anyway?"; what a
@@ -185,6 +202,7 @@ class EmotionSearchController extends ChangeNotifier {
     _showHidden = false;
     _dualPathAnswer = null;
     _timer?.cancel();
+    _settle?.cancel();
     _generation++;
     _clearResults();
     _set(SearchView.idle);
@@ -192,6 +210,7 @@ class EmotionSearchController extends ChangeNotifier {
 
   void _evaluate() {
     _timer?.cancel();
+    _settle?.cancel();
     _generation++; // any search still in flight is now stale
     _clearResults();
 
@@ -311,6 +330,7 @@ class EmotionSearchController extends ChangeNotifier {
         videoSaves: videoSaves,
         bookSaves: bookSaves,
         interests: interests(),
+        learned: learned(),
         hidden: hidden().subjects,
       );
 
@@ -327,11 +347,31 @@ class EmotionSearchController extends ChangeNotifier {
           !_heldBack.isEmpty || // "Show anyway?"
           !_feelings.isEmpty ||
           _alsoFound.isNotEmpty; // a way out to everything else
+      _settleLater(generation, found ? subjects : const [], term, found);
       return _set(found ? SearchView.results : SearchView.noMatch);
     } catch (_) {
       if (generation != _generation) return;
       return _set(SearchView.noMatch);
     }
+  }
+
+  void _settleLater(
+    int generation,
+    List<MappingRow> found,
+    String term,
+    bool anything,
+  ) {
+    final settled = onSettled;
+    if (settled == null) return;
+    _settle?.cancel();
+    _settle = Timer(settleAfter, () {
+      if (generation != _generation) return;
+      if (found.isNotEmpty) {
+        settled(subjects: [for (final r in found.take(3)) r.subjectSlug]);
+      } else if (!anything) {
+        settled(term: term);
+      }
+    });
   }
 
   /// EmotionSearch.js → lookupReverseContained().
@@ -418,6 +458,7 @@ class EmotionSearchController extends ChangeNotifier {
   @override
   void dispose() {
     _timer?.cancel();
+    _settle?.cancel();
     super.dispose();
   }
 }

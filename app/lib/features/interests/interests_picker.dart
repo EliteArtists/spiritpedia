@@ -11,6 +11,7 @@ import '../area/area.dart';
 import '../area/area_sheet.dart';
 import 'interests.dart';
 import 'tailor_star.dart';
+import '../learning/learning_switch.dart';
 
 /// Under the question, in onboarding and in Account → Tailor Spiritpedia.
 const interestsNote =
@@ -638,6 +639,10 @@ class _TailorScreenState extends ConsumerState<TailorScreen> {
                       other: _more,
                       onChanged: (v) => setState(() => _never = v),
                     ),
+                    const SizedBox(height: 18),
+                    const Divider(),
+                    const SizedBox(height: 18),
+                    const LearningSwitch(),
                     // Clear of the star once it rests at the foot.
                     const SizedBox(height: FloatingHomeStar.clearance - 24),
                   ],

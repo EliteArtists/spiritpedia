@@ -614,15 +614,27 @@ double saveBonus(int saves) =>
 /// beat a title match.
 const interestPoints = 20;
 const maxInterestPoints = 60;
+const learnedPoints = 15;
 const pillarPoints = 10;
 
-double interestBonus(List<String> subjectSlugs, Set<String> interests) {
-  if (interests.isEmpty) return 0;
+/// Level 1, More of: per chosen subject, up to the cap. Level 2, a subject
+/// Spiritpedia has learned they explore: [learnedPoints]. Level 3, another
+/// subject of a More of pillar: [pillarPoints].
+double interestBonus(
+  List<String> subjectSlugs,
+  Set<String> interests, [
+  Map<String, double> learned = const {},
+]) {
+  if (interests.isEmpty && learned.isEmpty) return 0;
   final hits = subjectSlugs.where(interests.contains).length;
   if (hits > 0) {
     return (hits * interestPoints).clamp(0, maxInterestPoints).toDouble();
   }
-  return interestLevel(subjectSlugs, interests) == 1 ? pillarPoints * 1.0 : 0;
+  return switch (interestLevel(subjectSlugs, interests, null, learned)) {
+    1 => learnedPoints * 1.0,
+    2 => pillarPoints * 1.0,
+    _ => 0,
+  };
 }
 
 /// The best video and book among [videos] and [books]; ties go to the earlier
@@ -638,6 +650,7 @@ Suggestions suggest({
   Map<String, int> videoSaves = const {},
   Map<String, int> bookSaves = const {},
   Set<String> interests = const {},
+  Map<String, double> learned = const {},
   Set<String> hidden = const {},
 }) {
   T? best<T>(
@@ -657,7 +670,9 @@ Suggestions suggest({
         rows: rows,
       );
       if (s > 0) {
-        s += saveBonus(saves(item)) + interestBonus(subjects(item), interests);
+        s +=
+            saveBonus(saves(item)) +
+            interestBonus(subjects(item), interests, learned);
       }
       if (s > topScore) {
         top = item;

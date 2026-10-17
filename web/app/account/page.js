@@ -8,6 +8,7 @@ import { getUser, signOut, supabaseAuth } from '@/utils/supabaseAuth';
 import PractitionerDashboard from '@/components/PractitionerDashboard';
 import PublisherDashboard from '@/components/PublisherDashboard';
 import DeleteAccount from '@/components/DeleteAccount';
+import LearningSwitch from '@/components/LearningSwitch';
 
 const SUPPORT_EMAIL = 'love@spiritpedia.co';
 
@@ -63,7 +64,7 @@ export default function AccountPage() {
         .maybeSingle();
 
       if (cancelled) return;
-      setState({ status: 'ready', email: user.email, profile: profile || null });
+      setState({ status: 'ready', email: user.email, userId: user.id, profile: profile || null });
     })();
 
     return () => {
@@ -151,6 +152,10 @@ export default function AccountPage() {
               )}
             </div>
 
+            <div className="mt-8">
+              <LearningSwitch userId={state.userId} />
+            </div>
+
             <div className="mt-10">
               <button
                 type="button"
@@ -214,6 +219,12 @@ export default function AccountPage() {
                 View your profile →
               </Link>
             )}
+          </div>
+        )}
+
+        {!showDashboard && (
+          <div className="mt-6">
+            <LearningSwitch userId={state.userId} />
           </div>
         )}
 

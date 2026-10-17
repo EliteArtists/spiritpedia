@@ -5,6 +5,7 @@ import BookCard from '@/components/BookCard';
 import ContentShelf from '@/components/ContentShelf';
 import { buildMetadata, notFoundMetadata, pickImage } from '@/utils/seo';
 import { backContextQuery } from '@/utils/backContext';
+import TrackOpen from '@/components/TrackOpen';
 
 // Hourly ceiling on staleness — see the note in app/page.js.
 export const revalidate = 3600;
@@ -122,6 +123,7 @@ export default async function PublisherProfile({ params, searchParams }) {
 
   return (
     <main className="min-h-screen bg-[#0a0f1d] text-white">
+      <TrackOpen type="publisher" slug={publisher.slug} subjects={publisher.subject_slugs} />
       <div className="max-w-5xl mx-auto px-6 py-12">
         <Link href="/" className="text-sm text-gray-500 hover:text-gray-300 mb-8 block transition-colors">
           ← Back to Spiritpedia

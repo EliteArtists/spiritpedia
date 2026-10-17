@@ -133,6 +133,30 @@ class FakeAccountService implements AccountService {
     areasByUser[userId] = (place: place);
   }
 
+  final learningByUser = <String, bool>{};
+  final affinityByUser = <String, List<AffinityRow>>{};
+
+  @override
+  Future<bool> learning(String userId) async {
+    if (offline) throw Exception('offline');
+    return learningByUser[userId] ?? false;
+  }
+
+  @override
+  Future<void> saveLearning(String userId, bool on) async {
+    if (offline) throw Exception('offline');
+    calls.add('saveLearning:$on');
+    learningByUser[userId] = on;
+    // As the database does: off deletes what was learned.
+    if (!on) affinityByUser.remove(userId);
+  }
+
+  @override
+  Future<List<AffinityRow>> affinity(String userId) async {
+    if (offline) throw Exception('offline');
+    return affinityByUser[userId] ?? const [];
+  }
+
   @override
   Future<void> saveDisplayName(String userId, String? name) async {
     if (offline) throw Exception('offline');

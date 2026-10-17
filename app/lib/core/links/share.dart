@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:share_plus/share_plus.dart';
 
+import '../../features/learning/learning.dart';
+
 /// The website's address — web/utils/seo.js → SITE_URL. Every shared link is
 /// the matching page on it, so it opens in a browser for anyone.
 const siteUrl = 'https://www.spiritpedia.co';
@@ -50,6 +52,11 @@ Future<void> share(
       : box.localToGlobal(Offset.zero) & box.size;
   try {
     await ref.read(shareLauncherProvider)(siteLink(path), title, origin);
+    // A share of an item (activity learning, migration 0021).
+    final content = contentOfPath(path);
+    if (content != null) {
+      ref.read(activityLogProvider).content('share', content.type, content.slug);
+    }
   } catch (_) {
     // The sheet could not open; nothing to undo.
   }

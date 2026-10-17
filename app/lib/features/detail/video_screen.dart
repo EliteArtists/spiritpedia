@@ -14,6 +14,7 @@ import '../reviews/reviews_section.dart';
 import '../reviews/reviews_service.dart';
 import 'detail_providers.dart';
 import 'detail_widgets.dart';
+import '../learning/learning.dart';
 
 /// The embedded player. A provider so widget tests, which have no web view,
 /// can swap in a stand-in.
@@ -56,22 +57,32 @@ class VideoScreen extends ConsumerWidget {
               aspectRatio: 16 / 9,
               child: ClipRRect(
                 borderRadius: BorderRadius.circular(16),
-                child: id != null
-                    ? ColoredBox(
-                        color: Colors.black,
-                        child: player(id, video.title),
-                      )
-                    : _NoEmbed(url: url),
+                // A touch on the player is pressing play: a watch start
+                // (activity learning, migration 0021).
+                child: Listener(
+                  onPointerDown: (_) =>
+                      ref.read(activityLogProvider).watch(video.slug),
+                  child: id != null
+                      ? ColoredBox(
+                          color: Colors.black,
+                          child: player(id, video.title),
+                        )
+                      : _NoEmbed(url: url),
+                ),
               ),
             ),
             if (url != null) ...[
               const SizedBox(height: 18),
-              OutboundButton(
-                label: id != null
-                    ? 'Watch on YouTube'
-                    : 'Watch on ${platformName(url)}',
-                url: url,
-                background: const Color(0xFFFF0000),
+              Listener(
+                onPointerDown: (_) =>
+                    ref.read(activityLogProvider).watch(video.slug),
+                child: OutboundButton(
+                  label: id != null
+                      ? 'Watch on YouTube'
+                      : 'Watch on ${platformName(url)}',
+                  url: url,
+                  background: const Color(0xFFFF0000),
+                ),
               ),
             ],
             if (video.subjectSlugs.isNotEmpty) ...[

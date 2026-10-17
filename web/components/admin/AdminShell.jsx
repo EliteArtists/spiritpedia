@@ -20,7 +20,7 @@ const NAV = [
   { href: '/admin/reviews', label: 'Reviews', icon: 'reviews' },
   { href: '/admin/flags', label: 'Reports', icon: 'flags' },
   { href: '/admin/mailshots', label: 'Mailshots', icon: 'mailshots' },
-  { href: '/admin/analytics', label: 'Analytics', icon: 'analytics' },
+  { href: '/admin/activity', label: 'Activity', icon: 'analytics' },
   { href: '/admin/ingestion', label: 'Ingestion', icon: 'ingestion' },
 ];
 

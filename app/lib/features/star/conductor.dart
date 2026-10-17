@@ -7,9 +7,11 @@ import 'package:go_router/go_router.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 import '../../theme/colors.dart';
+import '../account/account_providers.dart';
 import '../account/display_name.dart';
 import '../area/area.dart';
 import '../area/area_sheet.dart';
+import '../learning/learning.dart';
 import 'slipstream.dart';
 import 'star_layer.dart';
 
@@ -21,8 +23,10 @@ import 'star_layer.dart';
 //
 //   1. the first-launch intro and onboarding (session 1; IntroOverlay)
 //   2. (later: in-app messages — the welcome tray)
-//   3. "Shall I show you practitioners near you?"  — from the 5th visit
-//   4. "Would you like to share your name?"         — from the 7th visit
+//   3. "Shall I learn from what you explore?"       — from the 3rd visit,
+//      signed in only, while learning is off (migration 0021)
+//   4. "Shall I show you practitioners near you?"  — from the 5th visit
+//   5. "Would you like to share your name?"         — from the 7th visit
 //
 // A question asks once; if it is put away ("Not now", or swiped), once
 // more, at least 15 visits and 3 weeks later; then never. Answered — the
@@ -33,7 +37,7 @@ import 'star_layer.dart';
 // in which the search has been opened — so never near the crisis intercept.
 
 /// What the star can ask.
-enum StarAsk { area, name }
+enum StarAsk { learning, area, name }
 
 /// A question's history: how many times it has been asked, and when last.
 typedef AskRecord = ({int times, int lastVisit, DateTime? lastAt});
@@ -41,7 +45,7 @@ typedef AskRecord = ({int times, int lastVisit, DateTime? lastAt});
 const _neverAsked = (times: 0, lastVisit: 0, lastAt: null);
 
 /// The visit from which each question may be asked.
-const askFromVisit = {StarAsk.area: 5, StarAsk.name: 7};
+const askFromVisit = {StarAsk.learning: 3, StarAsk.area: 5, StarAsk.name: 7};
 
 /// After it is put away once: this many more visits, and this long.
 const askAgainAfterVisits = 15;
@@ -61,14 +65,25 @@ bool mayAsk(StarAsk ask, int visit, AskRecord record, DateTime now) {
       !now.isBefore(at.add(askAgainAfter));
 }
 
-/// This session's one question, if any: the area first, then the name.
+/// This session's one question, if any: learning first (only when
+/// [mayLearn]: signed in, with learning off), then the area, then the name.
 StarAsk? nextAsk({
   required int visit,
   required bool hasArea,
   required bool hasName,
   required Map<StarAsk, AskRecord> records,
   required DateTime now,
+  bool mayLearn = false,
 }) {
+  if (mayLearn &&
+      mayAsk(
+        StarAsk.learning,
+        visit,
+        records[StarAsk.learning] ?? _neverAsked,
+        now,
+      )) {
+    return StarAsk.learning;
+  }
   if (!hasArea &&
       mayAsk(StarAsk.area, visit, records[StarAsk.area] ?? _neverAsked, now)) {
     return StarAsk.area;
@@ -275,6 +290,8 @@ class Conductor extends Notifier<ConductorState> {
     final now = ref.read(conductorClockProvider)();
     final hasArea = ref.read(areaProvider).place != null;
     final hasName = ref.read(displayNameProvider) != null;
+    final mayLearn =
+        ref.read(signedInUserIdProvider) != null && !ref.read(learningProvider);
     final records = {
       for (final ask in StarAsk.values) ask: await store.record(ask),
     };
@@ -285,6 +302,7 @@ class Conductor extends Notifier<ConductorState> {
       hasName: hasName,
       records: records,
       now: now,
+      mayLearn: mayLearn,
     );
     if (ask == null) return null;
     final r = records[ask]!;
@@ -437,6 +455,7 @@ class _StarTrayHostState extends ConsumerState<StarTrayHost> {
           starKey: _trayStar,
           starVisible: _landed,
           child: switch (asking) {
+            StarAsk.learning => _LearningAsk(onDone: _close),
             StarAsk.area => _AreaAsk(onDone: _close),
             StarAsk.name => _NameAsk(onDone: _close),
           },
@@ -550,6 +569,91 @@ class _AreaAsk extends StatelessWidget {
             TextButton(
               key: const ValueKey('star-not-now'),
               onPressed: onDone,
+              style: TextButton.styleFrom(
+                foregroundColor: SpColors.textMuted,
+                visualDensity: VisualDensity.compact,
+              ),
+              child: const Text('Not now'),
+            ),
+          ],
+        ),
+      ],
+    );
+  }
+}
+
+/// "Let Spiritpedia learn from what I explore", asked by the star.
+class _LearningAsk extends ConsumerStatefulWidget {
+  const _LearningAsk({required this.onDone});
+
+  final VoidCallback onDone;
+
+  static const question =
+      'Shall I learn from what you explore, to put more of what you love '
+      'first?';
+  static const promise =
+      'Used only to tailor what you see. Never shown to our team, never '
+      'shared, never used for advertising. Turn off anytime.';
+
+  @override
+  ConsumerState<_LearningAsk> createState() => _LearningAskState();
+}
+
+class _LearningAskState extends ConsumerState<_LearningAsk> {
+  String? _said;
+
+  Future<void> _yes() async {
+    final ok = await ref.read(learningProvider.notifier).set(true);
+    if (!mounted) return;
+    setState(
+      () => _said = ok
+          ? 'Thank you. You can turn this off in Tailor Spiritpedia.'
+          : 'That didn’t save. You can turn it on in Tailor Spiritpedia.',
+    );
+    await Future<void>.delayed(const Duration(milliseconds: 1800));
+    if (mounted) widget.onDone();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    if (_said != null) {
+      return Padding(
+        padding: const EdgeInsets.only(top: 6, bottom: 8),
+        child: Text(_said!, style: _question),
+      );
+    }
+    return Column(
+      key: const ValueKey('star-ask-learning'),
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        const Text(_LearningAsk.question, style: _question),
+        const SizedBox(height: 6),
+        const Text(
+          _LearningAsk.promise,
+          style: TextStyle(
+            fontSize: 13,
+            height: 1.4,
+            color: SpColors.textMuted,
+          ),
+        ),
+        const SizedBox(height: 8),
+        Wrap(
+          spacing: 8,
+          runSpacing: 4,
+          children: [
+            FilledButton(
+              key: const ValueKey('star-learning-yes'),
+              onPressed: _yes,
+              style: FilledButton.styleFrom(
+                backgroundColor: SpColors.primary,
+                shape: const StadiumBorder(),
+                visualDensity: VisualDensity.compact,
+              ),
+              child: const Text('Yes, learn'),
+            ),
+            TextButton(
+              key: const ValueKey('star-not-now'),
+              onPressed: widget.onDone,
               style: TextButton.styleFrom(
                 foregroundColor: SpColors.textMuted,
                 visualDensity: VisualDensity.compact,

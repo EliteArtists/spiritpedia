@@ -18,6 +18,7 @@ import '../star/star_page.dart';
 import '../star/tier_tips.dart';
 import 'billboard.dart';
 import 'explore_more.dart';
+import '../learning/learning.dart';
 
 /// Home — mirrors the website's homepage (HomePageContent.js): the feeling
 /// question, the subject pills, the billboard, the healer and publisher
@@ -43,6 +44,10 @@ class HomeScreen extends ConsumerWidget {
     final chosen = subject == null
         ? ref.watch(interestSubjectsProvider)
         : const <String>{};
+    // And what Spiritpedia has learned they explore, just below them.
+    final learned = subject == null
+        ? ref.watch(learnedProvider)
+        : const <String, double>{};
     // Never show: everywhere, a chosen subject included.
     final hiding = ref.watch(hidingProvider);
     final forYouShelf = subject == null
@@ -82,6 +87,7 @@ class HomeScreen extends ConsumerWidget {
                 bySubject(all, subject, (h) => h.subjectSlugs),
                 chosen,
                 (h) => h.subjectSlugs,
+                learned: learned,
               ),
             );
             final seeAll = subject == null

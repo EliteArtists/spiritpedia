@@ -4,6 +4,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 import '../account/account_providers.dart';
+import '../learning/learning.dart';
 
 /// What can be saved, the device key each list lives under, and the
 /// content_type it has in user_favourites — the same types the website uses,
@@ -160,6 +161,13 @@ class SavedItems extends Notifier<Map<SavedKind, List<String>>> {
     final saving = !current.contains(slug);
     saving ? current.insert(0, slug) : current.remove(slug);
     state = {...state, kind: current};
+    // A save or an unsave (activity learning, migration 0021). "Read"
+    // marks are not saves.
+    if (kind.contentType != 'book_read') {
+      ref
+          .read(activityLogProvider)
+          .content(saving ? 'save' : 'unsave', kind.contentType, slug);
+    }
     await _store.write(kind, current);
 
     // Write through to the account. A failure is not shown: the next sign-in

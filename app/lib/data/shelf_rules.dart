@@ -307,8 +307,39 @@ List<T> pillarCandidates<T>(
 }
 
 // ── Tailoring (docs/personalisation.md) ─────────────────────────────────────
-// "More of" ranks in three levels; "Never show" hides. Change the doc with
+// Ranking has four levels: "More of", then the subjects Spiritpedia has
+// learned (only for someone who turned learning on), then the rest of the More
+// of pillars, then everything else. "Never show" hides. Change the doc with
 // these.
+
+/// How learning reads its scores (migration 0021): each halves every 30 days
+/// from when it was stored. A subject counts as learned from [learnedMinimum]
+/// (a save, say, or a few opens), and at most [learnedTop] of them, highest
+/// first. More of and Never show subjects are left out: More of already ranks
+/// first, and learning never brings back what someone hid.
+const learnedHalfLifeDays = 30.0;
+const learnedMinimum = 3.0;
+const learnedTop = 5;
+
+double fadedScore(double score, DateTime updatedAt, DateTime now) {
+  final days = now.difference(updatedAt).inSeconds / 86400;
+  return days <= 0 ? score : score * math.pow(0.5, days / learnedHalfLifeDays);
+}
+
+Map<String, double> learnedSubjects(
+  Iterable<({String subject, double score, DateTime updatedAt})> rows, {
+  required DateTime now,
+  Set<String> chosen = const {},
+  Set<String> hidden = const {},
+}) {
+  final scored = [
+    for (final r in rows)
+      if (!chosen.contains(r.subject) && !hidden.contains(r.subject))
+        (r.subject, fadedScore(r.score, r.updatedAt, now)),
+  ]..removeWhere((e) => e.$2 < learnedMinimum);
+  scored.sort((a, b) => b.$2.compareTo(a.$2));
+  return {for (final (s, v) in scored.take(learnedTop)) s: v};
+}
 
 /// The subjects sharing a pillar with any of [chosen], [chosen] left out:
 /// level 2 of the ranking.
@@ -319,62 +350,74 @@ Set<String> pillarMates(Set<String> chosen) => {
         if (!chosen.contains(s)) s,
 };
 
-/// Where an item ranks for someone who chose [chosen]: 0 if it carries a
-/// chosen subject, 1 if it carries another subject of the same pillar
-/// ([mates], from [pillarMates]), 2 otherwise.
+/// Where an item ranks: 0 if it carries a [chosen] (More of) subject, 1 if
+/// it carries a [learned] one, 2 if another subject of a More of pillar
+/// ([mates], from [pillarMates]), 3 otherwise.
 int interestLevel(
   List<String> subjects,
   Set<String> chosen, [
   Set<String>? mates,
+  Map<String, double> learned = const {},
 ]) {
   if (subjects.any(chosen.contains)) return 0;
-  if (subjects.any((mates ?? pillarMates(chosen)).contains)) return 1;
-  return 2;
+  if (subjects.any(learned.containsKey)) return 1;
+  if (subjects.any((mates ?? pillarMates(chosen)).contains)) return 2;
+  return 3;
 }
 
-/// The "More of" ranking: [chosen] subjects first (those carrying more of
-/// them first), then the rest of their pillars, then everything else — each
-/// level in [items]' own order. Nothing is removed. No choice, no change.
+double _learnedWeight(List<String> subjects, Map<String, double> learned) =>
+    subjects.fold(0, (sum, s) => sum + (learned[s] ?? 0));
+
+/// The ranking: [chosen] subjects first (those carrying more of them first),
+/// then [learned] subjects (the most explored first), then the rest of the
+/// More of pillars, then everything else — otherwise in [items]' own order.
+/// Nothing is removed. No choice and nothing learned, no change.
 List<T> byInterest<T>(
   List<T> items,
   Set<String> chosen,
-  List<String> Function(T) subjects,
-) {
-  if (chosen.isEmpty) return items;
+  List<String> Function(T) subjects, {
+  Map<String, double> learned = const {},
+}) {
+  if (chosen.isEmpty && learned.isEmpty) return items;
   final mates = pillarMates(chosen);
   final scored = [
     for (final (i, item) in items.indexed)
       (
         item,
-        interestLevel(subjects(item), chosen, mates),
+        interestLevel(subjects(item), chosen, mates, learned),
         subjects(item).where(chosen.contains).length,
+        _learnedWeight(subjects(item), learned),
         i,
       ),
   ];
   scored.sort((a, b) {
     if (a.$2 != b.$2) return a.$2.compareTo(b.$2);
     if (a.$3 != b.$3) return b.$3.compareTo(a.$3);
-    return a.$4.compareTo(b.$4);
+    if (a.$4 != b.$4) return b.$4.compareTo(a.$4);
+    return a.$5.compareTo(b.$5);
   });
-  return [for (final (item, _, _, _) in scored) item];
+  return [for (final (item, _, _, _, _) in scored) item];
 }
 
-/// Discover's "For You": levels 1 and 2 of [byInterest], at most [size].
+/// Discover's "For You": the first three levels of [byInterest] (More of,
+/// learned, the rest of the More of pillars), at most [size].
 List<T> forYou<T>(
   List<T> items,
   Set<String> chosen,
   List<String> Function(T) subjects, {
   int size = videoShelfSize,
+  Map<String, double> learned = const {},
 }) {
-  if (chosen.isEmpty) return const [];
+  if (chosen.isEmpty && learned.isEmpty) return const [];
   final mates = pillarMates(chosen);
   return byInterest(
     [
       for (final item in items)
-        if (interestLevel(subjects(item), chosen, mates) < 2) item,
+        if (interestLevel(subjects(item), chosen, mates, learned) < 3) item,
     ],
     chosen,
     subjects,
+    learned: learned,
   ).take(size).toList();
 }
 
@@ -486,24 +529,30 @@ List<String> subjectsOf(Object item) => switch (item) {
 };
 
 /// [pillars] (default: the pill row's order) with those holding a chosen
-/// subject first, most chosen subjects first; the rest keep their order.
-/// A pillar whose every subject is in [hidden] is left out.
+/// subject first, most chosen subjects first; then those holding a [learned]
+/// one, most explored first; the rest keep their order. A pillar whose every
+/// subject is in [hidden] is left out.
 List<String> pillarsByInterest(
   Set<String> chosen, [
   List<String>? pillars,
   Set<String> hidden = const {},
+  Map<String, double> learned = const {},
 ]) {
   final order = [
     for (final p in pillars ?? subjectPillars.keys.toList())
       if (!(subjectPillars[p] ?? const <String>[]).every(hidden.contains)) p,
   ];
-  if (chosen.isEmpty) return order;
+  if (chosen.isEmpty && learned.isEmpty) return order;
   int hits(String p) =>
       (subjectPillars[p] ?? const []).where(chosen.contains).length;
+  double explored(String p) =>
+      _learnedWeight(subjectPillars[p] ?? const [], learned);
   final indexed = [...order.indexed];
   indexed.sort((a, b) {
     final c = hits(b.$2).compareTo(hits(a.$2));
-    return c != 0 ? c : a.$1.compareTo(b.$1);
+    if (c != 0) return c;
+    final l = explored(b.$2).compareTo(explored(a.$2));
+    return l != 0 ? l : a.$1.compareTo(b.$1);
   });
   return [for (final (_, p) in indexed) p];
 }

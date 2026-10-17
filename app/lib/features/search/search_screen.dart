@@ -22,6 +22,7 @@ import 'content_search.dart';
 import 'emotion_search_controller.dart';
 import 'feeling_placeholder.dart';
 import 'search_repository.dart';
+import '../learning/learning.dart';
 
 /// The shared safety data, from the bundled web/shared/emotion-safety.json.
 final emotionSafetyProvider = FutureProvider<EmotionSafety>(
@@ -117,7 +118,15 @@ class _SearchState extends ConsumerState<_Search> {
     plain: ref.read(contentSearchProvider),
     scope: widget.scope,
     interests: () => mounted ? ref.read(interestSubjectsProvider) : const {},
+    learned: () => mounted ? ref.read(learnedProvider) : const {},
     hidden: () => mounted ? ref.read(hidingProvider) : Hiding.none,
+    // A settled search (activity learning): never a crisis one — the
+    // controller only calls this past both safety gates.
+    onSettled: ({subjects = const [], term}) {
+      if (mounted) {
+        ref.read(activityLogProvider).search(subjects: subjects, term: term);
+      }
+    },
   )..addListener(_changed);
 
   /// "See all": which group, and its fuller list.

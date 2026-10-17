@@ -128,10 +128,23 @@ abstract class AccountService {
   /// The name used to greet them, here and in emails
   /// (user_profiles.full_name). Null clears it.
   Future<void> saveDisplayName(String userId, String? name);
+
+  /// "Let Spiritpedia learn from what I explore"
+  /// (user_preferences.learning_enabled, migration 0021). Off unless turned
+  /// on. Turning it off deletes what was learned, in the database.
+  Future<bool> learning(String userId);
+  Future<void> saveLearning(String userId, bool on);
+
+  /// What has been learned (subject_affinity): each subject's score as last
+  /// stored, and when — it halves every 30 days from then.
+  Future<List<AffinityRow>> affinity(String userId);
 }
 
 /// One account's user_preferences row.
 typedef AreaRow = ({Place? place});
+
+/// One learned subject, as stored.
+typedef AffinityRow = ({String subject, double score, DateTime updatedAt});
 
 class AccountError implements Exception {
   const AccountError(this.message);
@@ -247,7 +260,8 @@ class SupabaseAccountService implements AccountService {
     final inserted = await _db
         .from('user_profiles')
         .upsert(
-          {'id': userId, 'user_type': 'explorer'},
+          // Where the account was made, for Admin → Activity (0021).
+          {'id': userId, 'user_type': 'explorer', 'signup_platform': 'app'},
           onConflict: 'id',
           ignoreDuplicates: true,
         )
@@ -456,6 +470,40 @@ class SupabaseAccountService implements AccountService {
       'user_id': userId,
       'area_place_id': place?.id,
     });
+  }
+
+  @override
+  Future<bool> learning(String userId) async {
+    final row = await _db
+        .from('user_preferences')
+        .select('learning_enabled')
+        .eq('user_id', userId)
+        .maybeSingle();
+    return row?['learning_enabled'] == true;
+  }
+
+  @override
+  Future<void> saveLearning(String userId, bool on) async {
+    await _db.from('user_preferences').upsert({
+      'user_id': userId,
+      'learning_enabled': on,
+    });
+  }
+
+  @override
+  Future<List<AffinityRow>> affinity(String userId) async {
+    final rows = await _db
+        .from('subject_affinity')
+        .select('subject_slug, score, updated_at')
+        .eq('user_id', userId);
+    return [
+      for (final r in rows)
+        (
+          subject: r['subject_slug'] as String,
+          score: (r['score'] as num).toDouble(),
+          updatedAt: DateTime.parse(r['updated_at'] as String),
+        ),
+    ];
   }
 
   @override

@@ -772,6 +772,39 @@ void main() {
       expect(location.settings, 1);
     });
 
+    testWidgets('the 3rd visit, signed in: the star asks to learn; "Yes, '
+        'learn" turns it on (migration 0021)', (tester) async {
+      final account = FakeAccountService()..restoreSession('seeker@example.com');
+      final conductor = MemoryConductorStore(visitCount: 2);
+      await tester.pumpWidget(_app(account: account, conductor: conductor));
+      await tester.pump();
+      await tester.pump(const Duration(seconds: 4));
+      await tester.pumpAndSettle();
+      expect(find.byKey(const ValueKey('star-ask-learning')), findsOneWidget);
+      expect(
+        find.textContaining('Never shown to our team, never shared'),
+        findsOneWidget,
+      );
+      await tester.tap(find.byKey(const ValueKey('star-learning-yes')));
+      await tester.pump();
+      expect(account.learningByUser.values.single, isTrue);
+      await tester.pump(const Duration(seconds: 2));
+      await tester.pumpAndSettle();
+      expect(find.byKey(const ValueKey('star-tray')), findsNothing);
+    });
+
+    testWidgets('the 3rd visit, signed out: the star does not ask to learn', (
+      tester,
+    ) async {
+      final conductor = MemoryConductorStore(visitCount: 2);
+      await tester.pumpWidget(_app(conductor: conductor));
+      await tester.pump();
+      await tester.pump(const Duration(seconds: 4));
+      await tester.pumpAndSettle();
+      expect(find.byKey(const ValueKey('star-tray')), findsNothing);
+      expect(conductor.records[StarAsk.learning], isNull);
+    });
+
     testWidgets('the 5th visit: the star asks about the area, once a session; '
         '"Not now" puts it away', (tester) async {
       final conductor = MemoryConductorStore(visitCount: 4);

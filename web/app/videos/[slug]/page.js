@@ -6,6 +6,8 @@ import { backContextQuery } from '@/utils/backContext';
 import ShareButton from '@/components/ShareButton';
 import { buildMetadata, notFoundMetadata, SITE_URL } from '@/utils/seo';
 import ReviewSection, { RatingRow } from '@/components/ReviewSection';
+import TrackOpen from '@/components/TrackOpen';
+import TrackWatch from '@/components/TrackWatch';
 
 // Hourly ceiling on staleness — see the note in app/page.js.
 export const revalidate = 3600;
@@ -103,6 +105,7 @@ export default async function VideoDetail({ params, searchParams }) {
 
   return (
     <main className="relative min-h-screen bg-[#0a0f1d] pb-16">
+      <TrackOpen type="video" slug={video.slug} subjects={video.subject_slugs} />
       {/* Back link — anchored to the page's top-left, context-aware */}
       <div className="absolute top-8 left-6 md:left-8 z-10">
         <BackButton from={from} fromTitle={fromTitle || 'Videos'} />
@@ -112,6 +115,8 @@ export default async function VideoDetail({ params, searchParams }) {
         <div className="flex items-start justify-between gap-4 mb-2">
           <h1 className="text-3xl md:text-4xl font-bold text-white leading-tight">{video.title}</h1>
           <ShareButton
+            contentType="video"
+            contentSlug={video.slug}
             className="shrink-0 mt-1"
             url={`${SITE_URL}/videos/${video.slug}`}
             title={`${video.title} — Spiritpedia`}
@@ -132,6 +137,7 @@ export default async function VideoDetail({ params, searchParams }) {
             youtube-nocookie.com is YouTube's privacy-enhanced mode: it does not
             set YouTube's cookies until the visitor plays the video. The Privacy
             Policy describes exactly this — change both together. */}
+        <TrackWatch slug={video.slug}>
         {videoId ? (
           <div className="aspect-video w-full overflow-hidden rounded-2xl bg-black shadow-2xl">
             <iframe
@@ -158,6 +164,7 @@ export default async function VideoDetail({ params, searchParams }) {
             No video link available
           </div>
         )}
+        </TrackWatch>
 
         {/* Star rating row — empty until community reviews exist */}
         <RatingRow
