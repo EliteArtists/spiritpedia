@@ -44,7 +44,7 @@ inventory is `docs/emails.md`; the personalisation rules are
 | :--- | :--- |
 | **Website** | Live at **https://www.spiritpedia.co** (Next.js on Vercel). Every push that changes `web/` deploys to production |
 | **App** | Flutter, iPhone and iPad. **1.0.0 (19)** is built (`app/build/ios/ipa/Spiritpedia.ipa` and `app/build/ios/archive/Runner.xcarchive`) and waiting to be uploaded. **Build 16 is the last one uploaded to TestFlight.** Not yet on the App Store |
-| **Database** | Supabase. Two projects: **live** (`uzmvcgew…`) and **dev** (`khtpbnof…`). Migrations `0000`–`0021` are on both; `0022` is written and waiting to be run |
+| **Database** | Supabase. Two projects: **live** (`uzmvcgew…`) and **dev** (`khtpbnof…`). Migrations `0000`–`0022` are on both |
 | **Push** | Firebase Cloud Messaging only, with an APNs key. The Firebase projects must move to the love@ Google account before mid-November 2026 (§16) |
 | **Repository** | `https://github.com/EliteArtists/spiritpedia`, branch `main` only. No staging environment, no feature flags |
 
@@ -308,7 +308,7 @@ editor **on dev first, then live**, by the project owner. Dev is checked with
 throwaway users created through the Admin API (no email) and deleted
 afterwards; live is checked read-only.
 
-### 8.1 0012–0021 (on dev and live)
+### 8.1 0012–0022 (on dev and live)
 
 **`0012_favourites_slugs`** — data only, in one transaction.
 - Rewrites legacy `user_favourites.content_slug` values (numeric ids for books,
@@ -412,8 +412,7 @@ afterwards; live is checked read-only.
 - Dashboard reads, service role only: `activity_top`, `subject_rising`,
   `search_misses_top` (minimum 2), `signups_by_day`.
 
-**`0022_closed_publisher_accounts`** — *written 17 Oct 2026; run on dev, then
-live, before the website change that uses it is pushed.*
+**`0022_closed_publisher_accounts`** (17 Oct 2026)
 - `account_deletions.linked_publisher_id` (→ `publishers`, ON DELETE SET NULL),
   so deleting an account that managed a publisher flags that listing for
   review, as a healer listing already was. Still no personal data.
@@ -439,13 +438,13 @@ live, before the website change that uses it is pushed.*
 
 In a new, empty project: `0000_production_baseline.sql`, then
 `supabase/seed/emotion_mappings.sql` (3,531 rows / 701 emotions / 42 subjects),
-then `0012`–`0021` in order, then import `places` from GeoNames and re-run the
+then `0012`–`0022` in order, then import `places` from GeoNames and re-run the
 `healers.place_id` backfill at the end of `0019`. `0001`–`0011` are already in
 the baseline (harmless to re-run). The content rows are **not** in the repo: a
 periodic `pg_dump --data-only` of the content tables to private storage (not
 git) is an open item.
 
-**Safe to re-run:** `0001`–`0021` (idempotent; `0011` resets its 43 weights),
+**Safe to re-run:** `0001`–`0022` (idempotent; `0011` resets its 43 weights),
 the seed. **Never** run `0000` against an existing database.
 
 ---
