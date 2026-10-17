@@ -137,7 +137,7 @@ them with the same phrase lists and the same order. A search box that reaches
 crisis.
 
 #### The Flutter app — where it stands
-**Built as 1.0.0 (17), 17 October 2026** (build 16 is the last uploaded to TestFlight). iPhone
+**Built as 1.0.0 (18), 17 October 2026** (activity learning; build 16 is the last uploaded to TestFlight). iPhone
 only, portrait only.
 **`app/README.md` is the app's full handover:** structure, dev and live,
 build and upload, what is built, migrations 0015–0018, the admin Reports page,
@@ -250,7 +250,7 @@ The entry point is always emotional:
 | Platform | Role | Status |
 | :--- | :--- | :--- |
 | Web App (Next.js) | Primary product — full discovery experience | ✅ **Complete and live** at [www.spiritpedia.co](https://www.spiritpedia.co) |
-| Native App (Flutter) | **The current phase** — iPhone first, with push notifications | 🟡 1.0.0 (17) built for TestFlight: accounts, search, reviews, notifications, tailoring. In `app/` — see `app/README.md` |
+| Native App (Flutter) | **The current phase** — iPhone first, with push notifications | 🟡 1.0.0 (18) built for TestFlight: accounts, search, reviews, notifications, tailoring. In `app/` — see `app/README.md` |
 
 #### Domains
 `spiritpedia.co` is the primary domain and the one to share. The original
@@ -1322,7 +1322,7 @@ whose `course_url` points at Amazon.
 | Admin phases 4+ | Flags, messages, publisher claims. Each needs its own table |
 | Ancient Teachers tier | Planned |
 | Content library | Target: 5,000 videos + 5,000 books — ongoing |
-| Flutter app build | 1.0.0 (17) built for TestFlight; status, next steps and known issues in `app/README.md` |
+| Flutter app build | 1.0.0 (18) built for TestFlight; status, next steps and known issues in `app/README.md` |
 
 🔧 Operational knowledge
 Things learned the hard way that neither the code nor the git log will tell you.

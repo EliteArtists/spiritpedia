@@ -1,8 +1,12 @@
 # Spiritpedia: the app
 
-The Flutter app for iPhone: **1.0.0 (17)** built 17 October 2026 (Organisation listings count as
-channels; Spiritpedia Official first, with its badge); build 16 is the last
-uploaded to TestFlight.
+The Flutter app for iPhone: **1.0.0 (18)** built 17 October 2026: activity learning ("Let Spiritpedia
+learn from what I explore", asked by the star at visit 3, the switch in
+Tailor Spiritpedia; learned subjects rank just below More of — see
+`docs/personalisation.md` §6). Build 17 added Organisation listings and
+Spiritpedia Official. Build 16 is the last uploaded to TestFlight. **Before
+submitting 18, update the App Store privacy label** (Product Interaction and
+Search History).
 It uses the same Supabase database, the same accounts and the same content as
 the website in `../web`. This file is written so that a new session, with none
 of the earlier conversations, can pick the app up.
@@ -137,7 +141,7 @@ read-only checks only.
 
 ```bash
 flutter analyze        # must say "No issues found"
-flutter test           # 261 tests at build 17, all passing
+flutter test           # 278 tests at build 18, all passing
 ```
 
 Screenshots for review come from a temporary integration test (a "tour") that
