@@ -137,7 +137,7 @@ them with the same phrase lists and the same order. A search box that reaches
 crisis.
 
 #### The Flutter app — where it stands
-**Built as 1.0.0 (13), 16 October 2026** (build 12 is in TestFlight). iPhone
+**Built as 1.0.0 (17), 17 October 2026** (build 16 is the last uploaded to TestFlight). iPhone
 only, portrait only.
 **`app/README.md` is the app's full handover:** structure, dev and live,
 build and upload, what is built, migrations 0015–0018, the admin Reports page,
@@ -214,6 +214,25 @@ at the foot of this file. It is gitignored (`.env*`) and must never be committed
 4. **Two different keys point at a healer.** Videos and books carry a text `healer_slug`; courses and free resources carry a bigint `healer_id`. Forgetting this is why the admin Content tab once showed only half a healer's work.
 5. **`supabase-js` returns `{ data: null, error }` rather than throwing.** A trailing `|| []` turns "the database was unreachable" into "there is no content", and the page renders an empty shelf with no sign anything went wrong.
 
+#### Test accounts must never cause an email
+The dev project was warned (October 2026) for a high bounce rate: browser
+walk-throughs had typed made-up addresses into the sign-in form, so Supabase
+emailed codes that bounced, and the website emailed welcomes after them.
+* **Create test users through the Admin API with the email already confirmed**
+  (`POST /auth/v1/admin/users` with `email_confirm: true`). Nothing is sent.
+  Sign them in with a password grant, or `admin/generate_link` for a code —
+  neither sends anything.
+* **Never type a test address into the sign-in form** (website or app): that is
+  what sends the code. To be signed in in a browser, put the session into
+  localStorage under `spiritpedia-auth` instead.
+* **Create the test user's `user_profiles` row up front**, so the website's
+  first-sign-in welcome (`ensureProfile`) is not sent.
+* **If a test really needs an email to arrive**, use plus-addressing on a real
+  inbox, e.g. `rossbaiken+test1@gmail.com`. Never a made-up or no-mailbox
+  address.
+* The outreach journey has its own guard: `JOURNEY_TEST_EMAIL` redirects every
+  journey email while it is set.
+
 🌌 Vision
 Spiritpedia is not just a content hub or search engine — it's a personalised spiritual companion, designed to evolve with each user's unique path.
 
@@ -231,7 +250,7 @@ The entry point is always emotional:
 | Platform | Role | Status |
 | :--- | :--- | :--- |
 | Web App (Next.js) | Primary product — full discovery experience | ✅ **Complete and live** at [www.spiritpedia.co](https://www.spiritpedia.co) |
-| Native App (Flutter) | **The current phase** — iPhone first, with push notifications | 🟡 1.0.0 (13) built for TestFlight: accounts, search, reviews, notifications, tailoring. In `app/` — see `app/README.md` |
+| Native App (Flutter) | **The current phase** — iPhone first, with push notifications | 🟡 1.0.0 (17) built for TestFlight: accounts, search, reviews, notifications, tailoring. In `app/` — see `app/README.md` |
 
 #### Domains
 `spiritpedia.co` is the primary domain and the one to share. The original
@@ -314,8 +333,11 @@ Not every entry in the healers table is a person. `entity_type` separates the tw
 * **individual** — a practitioner or teacher. Appears in the tier shelves and, for Superheroes, the hero billboard.
 * **channel** — a YouTube channel, podcast, or collective.
 * **app** — a wellness or meditation app (e.g. Headspace).
+* **organisation** — a network, school or community (e.g. The Shift Network). Added in migration 0020.
 
-Channels and apps keep their `tier` but are pulled out of the tier shelves into the **Explore These Channels** shelf. They have no availability of their own and always save as Worldwide. A NULL `entity_type` is treated as individual.
+Channels, apps and organisations keep their `tier` but are pulled out of the tier shelves (and Practitioners Near You) into the **Explore These Channels** shelf. A NULL `entity_type` is treated as individual. `healers.official` marks Spiritpedia's own profile: the "✦ Official" badge, first in Explore These Channels, admin only. **Publishers** are their own table (`publishers`), not an entity type.
+
+Everyone who shares their work signs up the same way (`user_type` 'practitioner' now means "shares their work"). The admin sets the kind of listing at approval in the Inbox, pre-filled from the optional "What best describes you?" (`user_profiles.described_as`); approving a publisher creates or links a `publishers` row (`user_profiles.linked_publisher_id`). Claims are matched against every listing, healers and publishers alike; anyone whose email doesn't match can "Request to claim it" (`claim_requests`), decided in the Inbox — first by emailing the listing's published address, else by a code on its channel or site. Logic shared by the pages: `web/utils/listings.js`.
 
 🧱 Core Modules
 | Module | Description | Platform |
@@ -1300,7 +1322,7 @@ whose `course_url` points at Amazon.
 | Admin phases 4+ | Flags, messages, publisher claims. Each needs its own table |
 | Ancient Teachers tier | Planned |
 | Content library | Target: 5,000 videos + 5,000 books — ongoing |
-| Flutter app build | 1.0.0 (13) built for TestFlight; status, next steps and known issues in `app/README.md` |
+| Flutter app build | 1.0.0 (17) built for TestFlight; status, next steps and known issues in `app/README.md` |
 
 🔧 Operational knowledge
 Things learned the hard way that neither the code nor the git log will tell you.

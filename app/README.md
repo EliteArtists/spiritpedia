@@ -1,7 +1,8 @@
 # Spiritpedia: the app
 
-The Flutter app for iPhone: **1.0.0 (13)** built 16 October 2026; build 12 is
-in TestFlight.
+The Flutter app for iPhone: **1.0.0 (17)** built 17 October 2026 (Organisation listings count as
+channels; Spiritpedia Official first, with its badge); build 16 is the last
+uploaded to TestFlight.
 It uses the same Supabase database, the same accounts and the same content as
 the website in `../web`. This file is written so that a new session, with none
 of the earlier conversations, can pick the app up.
@@ -136,12 +137,18 @@ read-only checks only.
 
 ```bash
 flutter analyze        # must say "No issues found"
-flutter test           # 259 tests at build 15, all passing
+flutter test           # 261 tests at build 17, all passing
 ```
 
 Screenshots for review come from a temporary integration test (a "tour") that
 prints `SHOT:name` markers while a background loop runs `xcrun simctl io …
 screenshot`. Tours are deleted afterwards and never committed.
+
+**Test accounts never cause an email** (the dev project was warned for
+bounces): create them through the Admin API with the email already confirmed,
+never by typing an address into the app's or website's sign-in, and use
+plus-addressing on a real inbox if an email must arrive. The full rule is in
+the root README, "Test accounts must never cause an email".
 
 ### Build and upload
 
