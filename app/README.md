@@ -14,8 +14,9 @@ It uses the same Supabase database, the same accounts and the same content as
 the website in `../web`. This file is written so that a new session, with none
 of the earlier conversations, can pick the app up.
 
-Read the root README's **Handover → For the Flutter build** for the database
-and website side.
+The root `README.md` is the full handover (stack, identifiers, secrets, the
+website, every migration, release, known issues); this file is the app's
+detail.
 
 ---
 
@@ -100,7 +101,7 @@ provider on its own, so providers catch their own errors
 
   | Route | When |
   | :--- | :--- |
-  | `/api/email/explorer-welcome` | once, when the profile row is first created |
+  | `/api/email/explorer-welcome` | once, when a new account answers "I'm exploring" (or puts the card away) |
   | `/api/email/review-received` | after a review is submitted |
   | `/api/email/review-reported` | after a review is reported (emails love@) |
   | `/api/account/delete` | Delete account |
@@ -165,16 +166,21 @@ the root README, "Test accounts must never cause an email".
 3. `flutter build ipa --release --dart-define-from-file=config/prod.json`
 4. Check the IPA (unzip it): `CFBundleVersion` is N, and the entitlements say
    `aps-environment` **production**.
-5. Upload `build/ios/ipa/Spiritpedia.ipa` with **Transporter**. The person
-   running the project uploads; there is no App Store Connect API key on this
-   Mac.
+5. Upload: either `open build/ios/archive/Runner.xcarchive` (Xcode adds it
+   to the Organizer) → select `1.0.0 (N)` → **Distribute App** → App Store
+   Connect → Upload, then quit Xcode; or drag `build/ios/ipa/Spiritpedia.ipa`
+   into **Transporter**. The person running the project uploads; there is no
+   App Store Connect API key on this Mac. Then the App Privacy label and
+   screenshots: root README §12.6.
 
-**Build numbers so far:** 1–9 and 11–16 are real builds. **Build 10 was an
-accidental duplicate of build 9**, uploaded from Xcode, so the numbering
-jumped from 9 to 11. The next build is **17**.
+**Build numbers so far:** 1–9 and 11–19 are real builds (what each added:
+root README §10.1). **Build 10 was an accidental duplicate of build 9**,
+uploaded from Xcode, so the numbering jumped from 9 to 11. Build 16 is the
+last uploaded to TestFlight; 19 is built. The next build is **20**.
 
-The Mac's disk has filled up during a build before. `flutter clean` frees the
-app's `build/` folder (about 7 GB), and everything in it is regenerated.
+The Mac has run out of disk and memory during builds: one simulator at a
+time, the Xcode app closed, never the test suite during a tour, and check free
+space before a release build (root README §13).
 
 **iPhone (portrait only) and iPad (every way round, Split View and resizable
 windows; not full-screen-only).** Bundle ID `co.spiritpedia.app`.
@@ -331,10 +337,11 @@ is saved.
   show me again" stops it (`interests/tailor_star.dart`).
 - **The pills and chips** have no icons or symbols; they read like the
   Discover pills.
-- **More of** ranks in three levels everywhere: the chosen subjects, then the
-  rest of their pillars, then everything else.
-- **For You** on Discover's View All shows one content type per visit, in
-  rotation: Free Resources → Courses & Programmes → Downloads & Audio →
+- **More of** ranks everywhere: the chosen subjects, then (since build 18)
+  learned subjects, then the rest of the chosen pillars, then everything else
+  (`interestLevel` 0–3).
+- **For You** on Discover's View All shows one content type per landing
+  (each launch, switching to Discover, or choosing View All), in rotation: Free Resources → Courses & Programmes → Downloads & Audio →
   Retreats & Live Events (upcoming only) → Memberships. A type with nothing
   relevant is skipped; the turn is remembered between launches.
 - **Never show:** an item goes if any of its subjects is hidden, unless it
@@ -350,8 +357,9 @@ is saved.
   `data/shelf_rules.dart` together.
 
 **Push notifications.**
-- Firebase Cloud Messaging only. Firebase starts only after the person says
-  yes, and only when signed in.
+- Firebase Cloud Messaging only. Firebase starts at launch, but no device
+  token exists until the person says yes (signed in) in Account →
+  Notifications.
 - The device token is registered with `register_push_token`.
   `notification_preferences` holds General (on) and IAM affirmations (off,
   for later).
@@ -396,7 +404,8 @@ is saved.
   but biometrics are never used, so no Face ID string is needed).
 - **The conductor** (`features/star/conductor.dart`): the star does at most
   one thing a session (a cold start, or back after 30+ minutes). Session 1 is
-  the intro. From the 5th visit, "Shall I show you practitioners near you?";
+  the intro. From the 3rd visit, signed in with learning off, "Shall I learn
+  from what you explore?" (build 18); from the 5th visit, "Shall I show you practitioners near you?";
   from the 7th, "Would you like to share your name? I'll use it only to greet
   you here and in my emails." Each asks once, then once more 15+ visits and
   3+ weeks later, then never. Only on a main tab with nothing open, after
@@ -433,9 +442,10 @@ WhatsApp.
 
 ---
 
-## Migrations 0015–0019
+## Migrations 0015–0021
 
-All four are **on dev and on live**, and each was verified after it ran.
+All are **on dev and on live**, and each was verified after it ran. The root
+README §8 describes every migration in full.
 
 | File | What it does |
 | :--- | :--- |
@@ -444,6 +454,9 @@ All four are **on dev and on live**, and each was verified after it ran.
 | `0017_user_interests` | `user_interests`: one row per account, holding `subjects` (More of). Owner-only RLS, no signed-out access, deleted with the account. A trigger checks every slug against `public.subjects` and removes duplicates. A row means "has chosen", even if it's empty |
 | `0018_hidden_subjects` | Adds `hidden_subjects` (Never show) to the same row. The trigger now checks both lists and refuses a subject that is in both |
 | `0019_places_and_areas` | `places` (GeoNames towns of 5,000+, imported from `places.csv` through the dashboard), `healers.place_id` set by trigger from city and country, `user_preferences` (each member's area; owner-only), and `nearest_place(lat, lng)`, which returns a town and stores nothing |
+
+| `0020_listings_and_claims` | Account types: `described_as`, `linked_publisher_id`, `healers.official`, the `organisation` entity type, `publishers.contact_email`, `claim_publisher_profile()`, `claim_requests`, publisher journeys |
+| `0021_activity_learning` | Activity learning: `learning_enabled`, `activity_events` and `subject_affinity` (the member's own, opt-in), anonymous daily totals and search misses, `log_activity()` (service role only), `purge_activity()`, the dashboard reads |
 
 Earlier migrations (0000–0014) are described in the root README.
 
@@ -470,9 +483,11 @@ Earlier migrations (0000–0014) are described in the root README.
 
 ## Known issues and parked items
 
-- **Turning notifications off doesn't remove the device token.** The
-  preference saves as off, but the `push_tokens` row stays. Parked until the
-  final notifications pass.
+- **The General switch doesn't remove the device token.** The preference
+  saves as off, but the `push_tokens` row stays ("Turn off on this phone" does
+  delete it). And "forget this phone" at sign-out asks for the token without
+  waiting for Apple's, so if it isn't ready the row stays and the error is
+  swallowed. Parked until the final notifications pass.
 - **The first notification is sometimes not sent.** One test turned
   notifications on, registered the token and saved General as on, but no
   welcome was recorded. Parked with the item above.

@@ -1,1454 +1,1404 @@
-Spiritpedia
-A spiritual encyclopedia for the modern age — uniting timeless wisdom with personalised, AI-powered tools to help humans raise their vibration, find healing, and live in harmony.
+# Spiritpedia
 
-🤝 HANDOVER — read this first
-**The Spiritpedia web platform is complete. The next phase of development is
-Flutter.** This README is written to hand the project to someone — or some
-session — with no prior context.
+A spiritual encyclopedia for the modern age: timeless wisdom, gathered in one
+calm place, with an emotional way in. "How are you feeling today?" → "Lost" →
+the teachers, videos, books and practices that meet you there.
 
-#### Known-good baseline
-| | |
-| :--- | :--- |
-| Repository | `https://github.com/EliteArtists/spiritpedia` |
-| Branch | `main` — the only branch; there is no develop/staging branch |
-| Last application change | **`96b0342`** (9 October 2026) — the daily cleanup of unfinished sign-ups. Everything after it is documentation, SQL backups and code comments, so `96b0342` is the known-good baseline for the running site |
-| Production | Vercel, auto-deploying every push to `main` |
-| Vercel team | `eliteartists-projects` |
-| Vercel project | **`spiritpedia-e58y`** — *not* the one called `spiritpedia`. See below |
-| Live at | **https://www.spiritpedia.co** — `spiritpedia.co` and the legacy `spirit-pedia.com` both 301 here |
-| Supabase project | `uzmvcgewxgvnybdhvsyx` (`https://uzmvcgewxgvnybdhvsyx.supabase.co`) |
+**This README is the handover.** It is written for a developer taking the
+project over tomorrow with no access to any earlier conversation. It was
+rebuilt on 17 October 2026 and checked against the code, not memory. Where it
+and the code disagree, the code is right and this file should be fixed.
 
-Every commit on `main` is deployed. There is no release process, no staging
-environment and no feature flags: merging to `main` *is* shipping. **Verified
-working in production as of 9 October 2026** — `96b0342` deployed Ready
-(`dpl_HVXujjp6hRAWcaeUsogM3Hhyftx1`), Vercel lists all three cron jobs, and the
-daily `broken-images` cron ran at 07:00 UTC on 8 October and wrote 8 rows,
-which is end-to-end proof that Vercel's Root Directory, `vercel.json` and
-`CRON_SECRET` are all correctly configured.
-
-#### What changed on 8–9 October 2026
-| Change | Commit | Where to read more |
-| :--- | :--- | :--- |
-| **Security update** — `npm audit fix`: Next.js 16.2.11 → **16.4.0**, **0 production vulnerabilities**. Five high-severity advisories remain in the lint toolchain (`eslint-config-next` → … → `braces`); fixing them needs `--force` and a breaking downgrade, so they were left. They do not ship | `4251e22` | — |
-| **Amazon Associates** — render-time tags for `.com` (`spiritpedia-20`, primary) and `.co.uk` (`spiritpedia03-21`), inline disclosure, `/affiliate-disclosure`. Five accounts (US, UK, CA, ES, AU) linked; OneLink configured in the US and UK dashboards and needs no site code | `3b70aa5`, `fcd51ee` | *Amazon Associates* |
-| **Legal pages** — Terms of Use and Privacy Policy on `/terms` and `/privacy`, every technical claim checked against the code; footer **Cookie settings** that can withdraw consent; agreement line at sign-up; YouTube embeds moved to `youtube-nocookie.com` | `2081a99` | `components/LegalPage.jsx`, *Site-wide Footer* |
-| **Unfinished sign-ups cleanup** — daily `/api/cron/pending-signups` deletes `pending_user_types` rows older than 24 hours, so the Privacy Policy's "within two days" is true | `96b0342` | *Scheduled jobs* |
-| **Database backups** — the complete production schema as `supabase/migrations/0000_production_baseline.sql` (pg_dump, verified by rebuilding it), and the full `emotion_mappings` vocabulary as `supabase/seed/emotion_mappings.sql`. The repo can now rebuild the database's structure; content data is still production-only | this commit | *Database state and rebuilding it* |
-
-The legal pages are a careful draft, not legal advice: have a solicitor or
-data-protection specialist review them before public promotion, and check
-whether the ICO data protection fee applies.
-
-#### TWO Vercel projects exist — only one serves the site
-The team `eliteartists-projects` holds **two projects building this same
-repository**, and the names are misleading:
-
-| Project | Serves | |
-| :--- | :--- | :--- |
-| **`spiritpedia-e58y`** | **www.spiritpedia.co, spiritpedia.co, spirit-pedia.com, www.spirit-pedia.com** | ← the live site |
-| `spiritpedia` | `spiritpedia.vercel.app` only | a parallel build nobody visits |
-
-Both rebuild on every push to `main` and both currently report Ready, so the
-duplicate is wasteful rather than broken. **The trap is environment
-variables:** setting a key on the project called `spiritpedia` changes
-nothing the public sees. Any env work — the Amazon affiliate tags, a rotated
-Resend key — must go on **`spiritpedia-e58y`**.
-
-Worth deleting the spare, once someone confirms nothing references
-`spiritpedia.vercel.app`.
-
-#### Vercel settings that are not in this repo
-* **Root Directory must be `web`.** The Next app is not at the repo root, and `web/vercel.json` — which declares all three cron schedules — is ignored unless Vercel is pointed at `web`. It currently is; do not change it.
-* Environment variables are set in the Vercel dashboard, not in any file here — **on `spiritpedia-e58y`**. See *Environment variables* at the foot of this README for the full list.
-* Node 24.x on Vercel.
-* `npx vercel ls` / `vercel inspect <url>` work from `web/` once authenticated, and are the quickest way to confirm a deploy succeeded.
-* **Only website changes deploy.** `web/vercel.json` sets `ignoreCommand` → `web/scripts/vercel-ignore-build.sh`, which skips the build when nothing under `web/` changed since the **last successful deployment** (`VERCEL_GIT_PREVIOUS_SHA`, not `HEAD^`, so a multi-commit push is judged as a whole). App-only and README-only pushes show in Vercel as **Canceled** — that is the rule working, not a failure. When in doubt (no previous SHA, shallow history, git error) it builds. Both Vercel projects read the same file.
-
-#### A secret-scanner false alarm, already investigated
-`.env.local` **was** committed in two early commits (`90a3b95`, `e8f0d72`) and
-removed in `4b8735b`. It is gitignored now and not in the current tree, but it
-remains in git history, so any secret scanner will flag this repository.
-
-**It is benign, and this was checked rather than assumed.** The committed file
-contained only `NEXT_PUBLIC_SUPABASE_URL` and `NEXT_PUBLIC_SUPABASE_ANON_KEY`
-— both public by design, since they ship in every page bundle — and both
-values have changed since. `SUPABASE_SERVICE_ROLE_KEY`, `ADMIN_PASSWORD`,
-`RESEND_API_KEY` and `CRON_SECRET` have **never** been committed in any form.
-No rotation is needed and no history rewrite is warranted.
-
-#### What "complete" means
-Everything in *Project Status* below is built, deployed and in use. What remains
-is listed in *Immediate Next Steps* and *Deliberately unfinished* — none of it
-blocks a Flutter build, because Flutter talks to the same Supabase project and
-inherits the same schema, RLS policies and server routes.
-
-#### Before you touch Flutter
-Read *Getting Oriented* (immediately below), *Security model*, and *Database
-state and rebuilding it*. The third one matters most: much of the live
-database was built by hand in the dashboard. Since 9 October 2026
-**`supabase/migrations/0000_production_baseline.sql` is the complete schema**,
-exported from production with `pg_dump` and proven to rebuild it — but the
-content rows themselves (healers, books, videos…) are still only in production.
-
-#### For the Flutter build
-The app uses **the same Supabase project** and the same anon key. That key can
-read every content table and write almost nothing (migration `0007`), so writes
-take one of two paths. Do not loosen RLS to shorten either.
-
-**1. Next.js API routes on `https://www.spiritpedia.co`.** Each takes the
-signed-in user's Supabase access token as `Authorization: Bearer <token>` and
-identifies the user from it — never from the body.
-
-| Route | Method | When the app calls it |
-| :--- | :--- | :--- |
-| `/api/pending-user-type` | POST `{ email, userType }` | **No token** — before the code is verified. Records explorer/practitioner against the email |
-| `/api/email/explorer-welcome` · `/api/email/practitioner-welcome` | POST | Once, when the profile row is first created |
-| `/api/email/review-received` | POST `{ contentType, contentSlug }` | After the user submits a review |
-| `/api/practitioner/profile` | GET · PATCH | An **approved** practitioner reads or edits their own listing (allow-listed fields only) |
-| `/api/profile/resubmit` | POST | A **rejected** applicant puts their application back to pending |
-
-`/api/admin/*` is the web dashboard's, behind a password cookie — not for the app.
-
-**2. Direct Supabase calls with the user's session**, enforced by RLS and the
-field-protection triggers: upsert their own `user_profiles` row, upsert their
-own `user_favourites`, upsert their own `reviews` (the trigger forces
-`status = 'pending'`), delete their own `pending_user_types` row, call the
-`claim_healer_profile()` RPC, and upload images to the `practitioner-images`
-storage bucket.
-
-**Sign-in is an emailed six-digit code — no passwords, no social providers.**
-1. The user enters an email (and, on the practitioner path, the choice is sent to `/api/pending-user-type`).
-2. `auth.signInWithOtp({ email, shouldCreateUser: true })` — the same call signs up and signs in, and its response never reveals whether the address had an account.
-3. The user types the code: `auth.verifyOTP({ email, token, type: 'email' })`. (`'magiclink'` rejects a typed code.)
-4. With a session: read the user's own `pending_user_types` row and delete it; upsert `user_profiles` `{ id, user_type }` with `ignoreDuplicates` — **only if that inserted a row**, call the matching welcome route; copy locally saved items into `user_favourites`.
-
-The web version of steps 1–4 is `utils/supabaseAuth.js`, `utils/onboarding.js`
-and `components/AuthSync.jsx`. An app also needs its own redirect URL
-allow-listed in Supabase (Authentication → URL Configuration) for the link
-in the same email.
-
-**The crisis intercept must be ported, not skipped.** `utils/emotionSearchPatterns.js`
-runs `checkCrisis()` on every keystroke, **before** any lookup or network call;
-a match shows the crisis screen (`CRISIS_INTERSTITIAL`, linking to
-findahelpline.com) and sends nothing. The dual path, soft tier and medical
-disclaimer sit behind it. They are pure functions with no dependencies — port
-them with the same phrase lists and the same order. A search box that reaches
-`emotion_mappings` without that gate would hand a list of videos to someone in
-crisis.
-
-#### The Flutter app — where it stands
-**Built as 1.0.0 (19), 17 October 2026** (the iPad, Phase B; build 16 is the last uploaded to TestFlight).
-iPhone (portrait only) and iPad (every way round, Split View).
-**`app/README.md` is the app's full handover:** structure, dev and live,
-build and upload, what is built, migrations 0015–0018, the admin Reports page,
-known issues and next steps. Read it before changing the app.
-
-Built so far:
-* **Phases 0–3a:** the launch screen and intro; the shared crisis phrase list;
-  explore, emotional search and detail pages; email-code sign-in, My Library
-  sync and self-serve account deletion; push notifications (Firebase Cloud
-  Messaging only).
-* **A1–A3 and onboarding:**
-  * Discover · Videos · Books, with the star's flight rules.
-  * A one-row header and a right-side frosted menu.
-  * Two-engine search with scoped tabs and Spiritpedia Suggests.
-  * Channels kept apart from teachers.
-  * Reviews with report, block and ban.
-  * Dates on offerings.
-  * **Tailor Spiritpedia:** More of, ranked in three levels, and Never show
-    (More of wins when an item has both). For You rotates one content type
-    per visit. The rules are in `app/docs/personalisation.md`.
-  * **Saving needs an account**, in the app and on the website: a signed-out
-    heart opens "Save it to your Library", with sign-in by 6-digit code in
-    place; the save completes after it.
-
-**The crisis intercept runs first in every search box, on every keystroke,
-before anything is sent** — in the app exactly as on the website, from the
-same `web/shared/emotion-safety.json`, with tests that type every phrase into
-every box. Tailoring never touches it. See the top of `app/README.md`.
-
-Build numbers: 1–9 and 11–16. **10 was an accidental duplicate of 9**
-uploaded from Xcode; the next build is 17. Upload is IPA → Transporter.
-
-Website issues found while building the app, not yet fixed:
+The app has a second, more detailed file: **`app/README.md`**. The email
+inventory is `docs/emails.md`; the personalisation rules are
+`app/docs/personalisation.md`; website issues found while building the app are
 `app/docs/website-followups.md`.
 
-🚀 Getting Oriented
-**The app is not at the root of this repo.** It lives in `web/`; there is no
-root `package.json`.
+---
+
+## Contents
+
+1. [Where things stand](#1-where-things-stand)
+2. [Rules for working on this project](#2-rules-for-working-on-this-project)
+3. [Tech stack and how the pieces fit](#3-tech-stack-and-how-the-pieces-fit)
+4. [Key identifiers](#4-key-identifiers)
+5. [Where secrets live (names only)](#5-where-secrets-live-names-only)
+6. [Repository layout](#6-repository-layout)
+7. [The database](#7-the-database)
+8. [Migrations](#8-migrations)
+9. [The website](#9-the-website)
+10. [The app](#10-the-app)
+11. [The crisis intercept (website and app)](#11-the-crisis-intercept-website-and-app)
+12. [Run, test, build and release](#12-run-test-build-and-release)
+13. [This Mac: memory and disk](#13-this-mac-memory-and-disk)
+14. [Test accounts must never cause an email](#14-test-accounts-must-never-cause-an-email)
+15. [Things that will bite you](#15-things-that-will-bite-you)
+16. [Known issues, open items and what's next](#16-known-issues-open-items-and-whats-next)
+17. [Reference](#17-reference)
+
+---
+
+## 1. Where things stand
+
+| | State on 17 October 2026 |
+| :--- | :--- |
+| **Website** | Live at **https://www.spiritpedia.co** (Next.js on Vercel). Every push that changes `web/` deploys to production |
+| **App** | Flutter, iPhone and iPad. **1.0.0 (19)** is built (`app/build/ios/ipa/Spiritpedia.ipa` and `app/build/ios/archive/Runner.xcarchive`) and waiting to be uploaded. **Build 16 is the last one uploaded to TestFlight.** Not yet on the App Store |
+| **Database** | Supabase. Two projects: **live** (`uzmvcgew…`) and **dev** (`khtpbnof…`). Migrations `0000`–`0021` are on both |
+| **Push** | Firebase Cloud Messaging only, with an APNs key. The Firebase projects must move to the love@ Google account before mid-November 2026 (§16) |
+| **Repository** | `https://github.com/EliteArtists/spiritpedia`, branch `main` only. No staging environment, no feature flags |
+
+**Before submitting build 19 in App Store Connect:**
+- Update the App Privacy label (§12.6): add **Device ID** and **Sensitive Info**,
+  and **Product Personalization** as a purpose on Product Interaction and
+  Search History.
+- Add **13-inch iPad screenshots** (2064 × 2752). Twenty portrait screenshots
+  from the iPad simulator are on the Desktop of the development Mac, in
+  "Spiritpedia iPad screenshots".
+- Check the App Store description doesn't say "iPhone only".
+
+---
+
+## 2. Rules for working on this project
+
+These have held throughout and the project owner expects them.
+
+1. **Plan first; build after an OK.** Show a plan (and any migration's SQL)
+   before building.
+2. **Never print secrets.** Scripts read keys from the env files without
+   echoing them. The project owner pastes secret keys into files themselves.
+3. **Nothing touches the live site or live database without approval.**
+   - **Migrations: dev first, then live.** The project owner pastes each SQL
+     file into the Supabase SQL editor. Check dev with throwaway accounts
+     (deleted afterwards) and live with read-only checks only.
+   - **Pushes that change `web/` deploy live**, so show the diff and wait for an
+     OK first. Pushes that only change `app/`, `supabase/`, `docs/` or the root
+     README don't deploy.
+4. **Never loosen RLS, and never put the service-role key in the app.** The
+   anon key is public by design. Writes that need the server's key go through
+   the website's API routes.
+5. **Admin API calls (`/auth/v1/admin/...`) are for dev only.**
+6. **The crisis intercept stays first and unchanged in every search box,** and
+   its tests must pass (§11).
+7. **Test accounts never cause an email** (§14).
+8. **App builds:** bump the build number before every TestFlight upload; run
+   `flutter analyze` and `flutter test` and show the simulator before building.
+9. **Dashboard work** (Supabase, Vercel, Firebase, App Store Connect): the
+   project owner does it from exact, numbered, click-by-click steps.
+10. **Don't commit `web/AGENTS.md`** (gitignored; `next dev` rewrites it).
+11. **On this Mac:** one simulator at a time, the Xcode app kept closed, and
+    never the full test suite during a simulator tour (§13).
+
+---
+
+## 3. Tech stack and how the pieces fit
+
+| Layer | Technology |
+| :--- | :--- |
+| **App** | Flutter **3.47.7** / Dart **3.13.5** (pinned in `pubspec.yaml`). Riverpod 3 (no code generation), go_router, `supabase_flutter` 2.18, `firebase_core` + `firebase_messaging`, `flutter_secure_storage` (the session), `shared_preferences`, `geolocator` (approximate location), `webview_flutter` (the YouTube player), `cached_network_image`, `share_plus`, `url_launcher`, `flutter_native_splash`. iOS 15+, iPhone and iPad. iOS plugins come through Swift Package Manager: **there is no Podfile** |
+| **Website** | Next.js **16.4** (App Router, Turbopack, `proxy.js` instead of middleware), React 19, Tailwind 4, `@supabase/supabase-js` 2, `resend`, `@next/third-parties` (GA4). Node 24 |
+| **Hosting** | Vercel, team `eliteartists-projects`, project **`spiritpedia-e58y`** (see §4: there are two projects) |
+| **Database and auth** | Supabase (Postgres 17, PostgREST, Supabase Auth with emailed 6-digit codes). **Live** and **dev** projects |
+| **Push** | Firebase Cloud Messaging only, for both platforms. The website sends through FCM's HTTP v1 API with a service account (`web/utils/push.js`, no Admin SDK). iOS delivery uses an **APNs auth key** uploaded to each Firebase project |
+| **Email** | Resend for the website's eleven emails (`web/utils/email.js`); Supabase Auth's own SMTP for sign-in and change-email codes |
+| **Analytics** | GA4 on the website, only after cookie consent. The app has no analytics SDK; Admin → Activity is first-party totals (§9.9) |
+| **Places** | GeoNames towns of 5,000+ people, imported into the `places` table |
+| **Affiliate** | Amazon Associates, five stores, tagged at render (§17.6) |
+
+```
+            ┌──────────────── Flutter app (iPhone, iPad) ────────────────┐
+            │  reads content with the anon key; writes the person's own  │
+            │  rows with their session (RLS); everything else ↓          │
+            └───────┬───────────────────────────────┬────────────────────┘
+                    │ Supabase (anon key + session)  │ HTTPS + Bearer token
+                    ▼                                ▼
+   ┌──────────── Supabase ────────────┐   ┌──── www.spiritpedia.co (Vercel) ────┐
+   │ Postgres + RLS + definer RPCs    │◄──│ Next.js pages + /api routes          │
+   │ Auth (6-digit email codes)       │   │ service-role key, Resend, FCM, crons │
+   │ Storage: practitioner-images     │   └───────────────┬──────────────────────┘
+   └──────────────────────────────────┘                   │ FCM HTTP v1
+                                                           ▼
+                                              Firebase Cloud Messaging → APNs → iPhone
+```
+
+- **Reads** come straight from Supabase with the anon key. RLS lets it read
+  content and nothing personal.
+- **A person's own rows** (profile, saves, reviews, interests, area, push
+  preferences) are written with their own session, under RLS and
+  field-protection triggers, or through `SECURITY DEFINER` RPCs that take the
+  identity from `auth.uid()`.
+- **Anything that needs the service-role key** (emails, push, account deletion,
+  activity logging, admin) goes through a website API route, which identifies
+  the caller from their `Authorization: Bearer <access token>`, never from the
+  request body.
+
+---
+
+## 4. Key identifiers
+
+None of these are secrets.
+
+| What | Value |
+| :--- | :--- |
+| GitHub | `EliteArtists/spiritpedia`, branch `main` |
+| Website | **https://www.spiritpedia.co**. `spiritpedia.co`, `spirit-pedia.com` and `www.spirit-pedia.com` all redirect to it |
+| Vercel | Team `eliteartists-projects`. **`spiritpedia-e58y` serves the site** and holds every environment variable. A second project, `spiritpedia`, builds the same repo and serves only `spiritpedia.vercel.app`; nobody visits it, and setting a variable there changes nothing the public sees. Worth deleting once someone confirms nothing uses that URL. Root Directory must be **`web`**; Node 24 |
+| Supabase live | `uzmvcgewxgvnybdhvsyx` (`https://uzmvcgewxgvnybdhvsyx.supabase.co`) |
+| Supabase dev | `khtpbnofcavoerorajni` (free plan, so it can't use custom email templates) |
+| Firebase live | `spiritpedia-d190c`, sender ID `225029060380` (`app/lib/core/firebase/options_prod.dart`) |
+| Firebase dev | `spiritpedia-dev`, sender ID `333017406784` (`options_dev.dart`) |
+| Firebase owner | Both projects are under the **Elite Artists** Google account, archived around mid-November 2026. They must move to love@spiritpedia.co first (§16) |
+| Apple | Team ID `KT2XV84345`. Bundle ID **`co.spiritpedia.app`** (tests: `co.spiritpedia.app.RunnerTests`). Android `applicationId` is also `co.spiritpedia.app` |
+| APNs | `aps-environment` is `development` in `Runner.entitlements`; App Store export signs it as **production** (check every IPA, §12.5). The APNs auth key is uploaded in each Firebase project's Cloud Messaging settings |
+| Email addresses | Transactional from `Spiritpedia <hello@accounts.spiritpedia.co>`; journey (outreach) emails from `love@spiritpedia.co`; reply-to `love@spiritpedia.co`; every send blind-copied to an archive Gmail inbox |
+| Admin | `https://www.spiritpedia.co/admin`, password login (§9.4) |
+| Amazon Associates | US `spiritpedia-20` (primary), UK `spiritpedia03-21`, CA `spiritpedia0d-20`, ES `spiritpedi093-21`, AU `spiritpedia-22` (§17.6) |
+| Simulators used for tours | iPhone 18 Pro `049C050F-9F21-44FE-B91A-B77FA3DBFB72` (iOS 27.0); iPad Pro 13-inch (M5) `57392128-5E80-4596-B073-B91810411A87` (iOS 26.5) |
+
+---
+
+## 5. Where secrets live (names only)
+
+**Never print, paste or commit a value.**
+
+| File / place | Holds | In git? |
+| :--- | :--- | :--- |
+| `web/.env.local` (points at **live**) | `NEXT_PUBLIC_SUPABASE_URL`, `NEXT_PUBLIC_SUPABASE_ANON_KEY`, `SUPABASE_SERVICE_ROLE_KEY`, `ADMIN_PASSWORD`, `ADMIN_NAME`, `RESEND_API_KEY`, `NEXT_PUBLIC_GA_MEASUREMENT_ID`, `JOURNEY_TEST_EMAIL`, `CRON_SECRET` | No (`.env*` in `web/.gitignore`) |
+| `web/.env.development.local` (points at **dev**; `next dev` loads it over `.env.local`) | `NEXT_PUBLIC_SUPABASE_URL`, `NEXT_PUBLIC_SUPABASE_ANON_KEY`, `SUPABASE_SERVICE_ROLE_KEY`, `RESEND_API_KEY`, `NEXT_PUBLIC_GA_MEASUREMENT_ID`, `FIREBASE_PROJECT_ID`, `FIREBASE_CLIENT_EMAIL`, `FIREBASE_PRIVATE_KEY` | No |
+| Vercel → `spiritpedia-e58y` → Settings → Environment Variables | Everything the live site needs: the Supabase three, `ADMIN_PASSWORD`, `ADMIN_NAME`, `RESEND_API_KEY`, `CRON_SECRET`, `NEXT_PUBLIC_GA_MEASUREMENT_ID`, `FIREBASE_PROJECT_ID` / `_CLIENT_EMAIL` / `_PRIVATE_KEY` (the **live** push service account lives only here), `AMAZON_TAG_US` / `_UK` / `_CA` / `_ES` / `_AU` | — |
+| `app/config/dev.json` | `APP_ENV`, `SUPABASE_URL`, `SUPABASE_ANON_KEY`, `API_BASE_URL` (dev; copy `dev.example.json`) | No (`app/.gitignore`) |
+| `app/config/prod.json` | The same four (live) plus `AMAZON_TAG_US` / `_UK` / `_CA` / `_ES` / `_AU` | **Yes, on purpose**: only public values |
+| Firebase console | The APNs auth key (`.p8`), and the service accounts behind `FIREBASE_*` | — |
+| Supabase dashboard | Auth email templates and SMTP sender; the service-role key | — |
+
+- **`ADMIN_PASSWORD` is shared with live.** Never type it into a browser in a
+  test; a script may read it from `web/.env.local` without printing it.
+- `SUPABASE_SERVICE_ROLE_KEY`, `RESEND_API_KEY` and the `FIREBASE_*` keys have
+  no `NEXT_PUBLIC_` prefix, deliberately: they must never reach a browser.
+- **An old, benign leak:** `web/.env.local` was committed in two early commits
+  (`90a3b95`, `e8f0d72`) and removed in `4b8735b`. It held only the public URL
+  and anon key, both since changed. Secret scanners will flag the history; no
+  rotation or history rewrite is needed.
+- `legal-draft.md` (the working copy of the legal wording) is deliberately
+  never committed.
+
+---
+
+## 6. Repository layout
 
 ```
 spiritpedia/
-├── app/                    the Flutter app (iPhone + Android) — see app/README.md
-├── web/                    the Next.js app — run everything from here
-│   ├── app/                routes (App Router): pages, /api, sitemap, robots
-│   ├── components/         UI, with components/admin/ for the dashboard
-│   ├── utils/              Supabase clients, email, audit logic, helpers
-│   ├── proxy.js            password gate on /admin (Next 16 proxy convention)
-│   ├── scripts/            vercel-ignore-build.sh — skip deploys that do not touch web/
-│   └── vercel.json         the three cron schedules + the skip rule
+├── README.md               this handover
+├── docs/emails.md          every email the platform sends (before the rewrite)
+├── app/                    the Flutter app — see app/README.md
+│   ├── lib/                main.dart, app.dart, router.dart, core/, data/, theme/, shared/, features/
+│   ├── test/               292 tests (fakes in test/support/)
+│   ├── integration_test/   search_typing_test.dart (tours go here temporarily, never committed)
+│   ├── assets/safety/      symlink → web/shared/emotion-safety.json
+│   ├── config/             dev.json (ignored), dev.example.json, prod.json
+│   ├── docs/               personalisation.md, website-followups.md
+│   ├── ios/  android/
+│   └── pubspec.yaml        version 1.0.0+19
+├── web/                    the Next.js site — run web commands from here
+│   ├── app/                pages, /api routes, sitemap, robots
+│   ├── components/         UI; components/admin/ for the dashboard
+│   ├── utils/              Supabase clients, email, push, activity, listings… (+ *.test.mjs)
+│   ├── shared/             emotion-safety.json (+ .cases.json): the crisis phrases for web AND app
+│   ├── proxy.js            the password gate on /admin
+│   ├── scripts/            vercel-ignore-build.sh; generate-emotion-safety-cases.mjs
+│   └── vercel.json         four cron schedules + the deploy-skip rule
 └── supabase/
-    ├── migrations/         SQL, run by hand — 0000 is the full schema baseline
+    ├── migrations/         0000 (schema baseline) … 0021, run by hand
     └── seed/               emotion_mappings.sql — the search vocabulary
 ```
+
+There is no root `package.json`, no Supabase CLI project, no `CLAUDE.md`.
+
+---
+
+## 7. The database
+
+### 7.1 Live and dev
+
+| | Live | Dev |
+| :--- | :--- | :--- |
+| Project | `uzmvcgewxgvnybdhvsyx` | `khtpbnofcavoerorajni` |
+| Used by | www.spiritpedia.co; `web/.env.local`; `app/config/prod.json` | `npm run dev` (`web/.env.development.local`); `app/config/dev.json` |
+| Content | The real catalogue | A copy of the content tables (ids copied from live) |
+| Plan | Paid (custom email templates) | Free (Supabase's default email templates) |
+
+**`npm run dev` in `web/` uses dev**, because Next loads
+`.env.development.local` over `.env.local`. Anything that reads `.env.local`
+directly (a Node script, `next start`) is talking to **live**: treat it as
+production.
+
+Content (healers, books, videos, courses, free resources, publishers,
+subjects) exists only in the databases and Supabase's own backups. The repo
+holds the schema and the search vocabulary, not the content (§8.3).
+
+### 7.2 Tables (26 in `public`)
+
+**Content** — made in the dashboard before migrations existed; in `0000`.
+Anyone can read; only the service role writes (migration `0007`).
+- `healers`: every listing that isn't a publisher — people, channels, apps,
+  organisations. Key columns: `healer_slug` (text, the public key), `name`,
+  `bio`, `tier`, `entity_type`, `official`, `image_urls[3]`, `subject_slugs[]`,
+  `availability_type`, `city`, `country`, `place_id`, `contact_email`, socials,
+  `birth_year`/`death_year`.
+- `books`, `videos`, `courses` (every paid offering, split by `product_type`:
+  course, retreat, download, membership…), `free_resources` (`resource_type`).
+- `subjects` (42), `publishers` (+ `contact_email`), `publisher_healers`
+  (publisher ↔ author), `emotion_mappings` (emotion → weighted subjects).
+
+**Each member's own** — owner-only under RLS unless noted.
+- `user_profiles`: `user_type` (explorer / practitioner = "shares their
+  work"), `verification_status`, `linked_healer_slug`, `linked_publisher_id`,
+  `described_as`, `full_name`, `signup_platform` (web/app), application fields.
+  A trigger pins the admin-controlled columns.
+- `user_favourites`: saves (`content_type`, `content_slug` — always a slug since
+  `0012`; `book_read` marks a book as read).
+- `pending_user_types`: explorer/practitioner chosen before the code is typed.
+- `reviews`: public when `status = 'approved'`.
+- `user_interests` (More of `subjects`, Never show `hidden_subjects`),
+  `user_preferences` (area `area_place_id`, `learning_enabled`).
+- `push_tokens`, `notification_preferences`, `user_blocks`, `review_reports`
+  (the reporter reads their own), `claim_requests`.
+- `activity_events`, `subject_affinity`: opt-in learning data.
+
+**Reference:** `places` (GeoNames towns; public read).
+
+**Service role only** (RLS on, no policies): `admin_notes`,
+`healer_journeys`, `broken_images`, `account_deletions`, `notification_sends`,
+`review_bans`, `activity_daily`, `subject_daily`, `search_misses`.
+
+**Storage:** the public `practitioner-images` bucket. Each user can write and
+delete only in their own `auth.uid()` folder.
+
+### 7.3 Security conventions
+
+- **RLS is on for every table.** A service-role-only table is "RLS on, no
+  policies" and says so in its `COMMENT`.
+- **New functions are granted to `anon` by default in Supabase.** Every
+  function therefore starts with `REVOKE ALL ON FUNCTION … FROM PUBLIC, anon`
+  and grants exactly who may call it: `authenticated`, or `service_role` only.
+  The two read RPCs meant for signed-out visitors (`save_counts`,
+  `nearest_place`) are granted to `anon` and `authenticated` on purpose.
+- **Checked writes go through `SECURITY DEFINER` RPCs** with
+  `SET search_path = public, pg_temp`. They take the identity from
+  `auth.uid()`, and take an object (a review id), never a user id.
+- **Protection triggers** (`user_profiles_protect_admin_fields`,
+  `reviews_pin_author`) pin the columns admins control. They yield to roles
+  other than `anon`/`authenticated` (that is how the service role moderates),
+  and the profile trigger also yields to the transaction-local
+  `app.claim_verified` flag that only the claim RPCs set.
+- **Client inserts are shaped by policy:** a claim request can only be created
+  as `pending`, with no proof fields.
+- **Personal data is minimised:** no coordinates stored, no personal data in
+  `account_deletions`, anonymous totals in their own tables, purge windows, and
+  consent-triggered deletion of learned data.
+- Migrations are idempotent (`IF NOT EXISTS`, `DROP … IF EXISTS` before
+  `CREATE`), and most end with a read-only check `SELECT`.
+
+---
+
+## 8. Migrations
+
+There is no migration runner. Each file is pasted into the Supabase SQL
+editor **on dev first, then live**, by the project owner. Dev is checked with
+throwaway users created through the Admin API (no email) and deleted
+afterwards; live is checked read-only.
+
+### 8.1 0012–0021 (on dev and live)
+
+**`0012_favourites_slugs`** — data only, in one transaction.
+- Rewrites legacy `user_favourites.content_slug` values (numeric ids for books,
+  videos, healers; UUIDs for courses and free resources) to the item's slug,
+  so the website and app save the same thing.
+- A converted row that would clash with the unique key is dropped and the
+  original kept; rows matching nothing are left alone.
+- Records `book_read` as a content type (a comment; there's no CHECK).
+
+**`0013_account_deletions`**
+- `account_deletions` (`deleted_at`, `source` website/app, `user_type`,
+  `linked_healer_slug`, `kept_image_count`, `resolved_at`): a note, with **no
+  personal data**, that an account with a claimed listing was deleted, so the
+  admin Inbox can review the listing. Service role only.
+
+**`0014_push_notifications`**
+- `push_tokens` (`token` unique, `platform` ios/android, `app_version`,
+  `last_seen_at`): the owner can read and delete; there's no insert policy.
+- `register_push_token(p_token, p_platform, p_app_version)` — definer,
+  signed-in only. Upserts on the token (a token held by another account moves
+  to the caller) and keeps each account's 10 most recent tokens.
+- `notification_preferences` (`general` default on, `iam_affirmations` default
+  off and reserved): owner select/insert/update.
+- `notification_sends` (`user_id`, `kind` = 'welcome', unique): the guard that
+  sends the welcome push once per account. Service role only.
+
+**`0015_review_moderation`** (App Store guideline 1.2)
+- `review_reports`: reason (spam / offensive / harassment / misleading /
+  other), note ≤500, a **snapshot** of the review as reported, status (open /
+  resolved / dismissed). One report per reporter per review.
+- `user_blocks` (blocker → blocked): the public reviews read policy now hides
+  reviews by anyone the reader has blocked.
+- `review_bans`: service role only; the reviews trigger refuses banned
+  accounts.
+- RPCs (definer, `authenticated`): `report_review(id, reason, note)` (not your
+  own; a repeat returns NULL), `block_review_author(review_id)`,
+  `review_posting_banned()`.
+
+**`0016_save_counts`**
+- `save_counts(type, slugs[])` — definer, callable signed out. Totals only,
+  for books ("Want to Read" saves) and videos, at most 200 slugs. Feeds
+  Spiritpedia Suggests.
+
+**`0017_user_interests`**
+- `user_interests` (`user_id` PK, `subjects[]` ≤100): owner-only; `anon` has no
+  access. A row means "has chosen", even if empty.
+- A trigger removes duplicates, sorts, and refuses any slug not in `subjects`
+  (an array can't carry a foreign key).
+
+**`0018_hidden_subjects`**
+- Adds `hidden_subjects[]` (Never show) to the same row. The trigger checks
+  both lists and refuses a subject that's in both.
+
+**`0019_places_and_areas`**
+- `places`: GeoNames towns of 5,000+ (`name`, `ascii_name`, `region`,
+  `country_code`, `country`, `lat`/`lng` NUMERIC(7,4), `population`), public
+  read. Data imported by hand from a `places.csv` that isn't in the repo.
+- `healers.place_id`, set by trigger from `city` + `country` through
+  `resolve_place()` (knows aliases like UK/England → GB; picks the most
+  populous). The file ends with a backfill that must be re-run after an import.
+- `user_preferences` (`area_place_id`): owner-only.
+- `nearest_place(lat, lng)`: rounds to 2 decimal places, searches about 110 km,
+  returns one town, stores nothing. Callable signed out.
+
+**`0020_listings_and_claims`** (account types)
+- `user_profiles.described_as` (practitioner, channel, podcast, app, publisher,
+  organisation, not_sure — a hint for the admin) and `linked_publisher_id`
+  (pinned by the protection trigger, which is redefined).
+- `healers_entity_type_known` CHECK (individual, channel, app, organisation, or
+  NULL); `healers.official` (admin-only); `publishers.contact_email`.
+- `claim_publisher_profile(slug)`: matches on the publisher's contact email, or
+  the email's own (non-free-mail) domain in `website_url`; then makes the
+  profile an approved practitioner linked to the publisher.
+- `claim_requests`: for someone whose email doesn't match a listing. Exactly
+  one of `healer_slug` / `publisher_id`; `connection` text; status pending /
+  approved / rejected / withdrawn; `proof` (listing_email / code / other),
+  `proof_code`. The owner can only insert a bare pending request and read their
+  own; deciding goes through the server. One pending request per user per
+  listing.
+- `healer_journeys` can now target a publisher (`publisher_id`; exactly one of
+  the two).
+
+**`0021_activity_learning`**
+- `user_preferences.learning_enabled` (default **off**) and
+  `learning_changed_at` (the consent timestamp, set by trigger);
+  `user_profiles.signup_platform` (web/app).
+- **Layer 1, the member's own:** `activity_events` and `subject_affinity`
+  (score ≥0, 30-day half-life). Owner can read and delete. No search words
+  stored. Switching learning off (or deleting the row) deletes both, by
+  trigger.
+- **Layer 2, anonymous totals** (service role only): `activity_daily`,
+  `subject_daily`, `search_misses` (1–60 chars).
+- `log_activity(platform, events, user)` — definer, **service role only**, the
+  only writer. ≤50 events; allow-listed kinds and content types; ≤20 subjects,
+  each checked; always adds to the totals; records a search miss only without
+  '@' or a run of 3+ digits; writes per-user events and scores only if that
+  member has learning on, skipping their Never show subjects. Weights: open 1,
+  watch 2, save 4, unsave −4 (floor 0), share 3, review 3, pill/filter/search 1.
+- `purge_activity()` (daily cron): events after 30 days, search misses after
+  90, totals after 25 months.
+- Dashboard reads, service role only: `activity_top`, `subject_rising`,
+  `search_misses_top` (minimum 2), `signups_by_day`.
+
+### 8.2 0000–0011
+
+| File | What |
+| :--- | :--- |
+| `0000_production_baseline` | `pg_dump --schema-only` of live `public` on 9 Oct 2026, plus the `practitioner-images` bucket and policies. **For an empty project only**: it's plain `CREATE TABLE` and stops at the first existing table |
+| `0001_user_profiles` | Profiles, RLS, the field-protection trigger |
+| `0002_user_favourites` | Saves, unique on (user, type, slug) |
+| `0003_claim_healer_profile` | The claim RPC (email or domain match); the trigger respects `app.claim_verified` and the service role |
+| `0004_pending_user_types` | The explorer/practitioner choice across the verification gap, keyed by email |
+| `0005_admin_notes` | Internal notes; RLS on, no policies |
+| `0006_lock_down_content_writes` | **Superseded**: dropped policies by guessed names and did nothing |
+| `0007_force_content_read_only` | Drops every policy on the 8 content tables by its real name and recreates public read only |
+| `0008_reviews` | Reviews, RLS, the trigger that pins `status`/`author_healer_slug` (amended to yield to the service role) |
+| `0009_healer_journeys` | The claim-outreach sequence; partial unique index so stopped journeys remain |
+| `0010_broken_images` | The image-audit queue (amended to allow `healers`) |
+| `0011_emotion_vocabulary` | 43 hand-added emotion rows; `ON CONFLICT … DO UPDATE SET weight`, so re-running resets their weights |
+
+### 8.3 Rebuilding a database from the repo
+
+In a new, empty project: `0000_production_baseline.sql`, then
+`supabase/seed/emotion_mappings.sql` (3,531 rows / 701 emotions / 42 subjects),
+then `0012`–`0021` in order, then import `places` from GeoNames and re-run the
+`healers.place_id` backfill at the end of `0019`. `0001`–`0011` are already in
+the baseline (harmless to re-run). The content rows are **not** in the repo: a
+periodic `pg_dump --data-only` of the content tables to private storage (not
+git) is an open item.
+
+**Safe to re-run:** `0001`–`0021` (idempotent; `0011` resets its 43 weights),
+the seed. **Never** run `0000` against an existing database.
+
+---
+
+## 9. The website
+
+`web/`, Next.js 16 App Router. The homepage and content pages are server
+components reading Supabase with the anonymous, **stateless** client
+(`utils/supabase.js`). Anything about the visitor happens in the browser with
+`utils/supabaseAuth.js`, because the session lives in `localStorage`
+(`spiritpedia-auth`) and the server can't see it: protected pages mount, ask,
+then redirect. `utils/supabaseAdmin.js` is the service role, server only.
+
+### 9.1 Pages
+
+| Path | What |
+| :--- | :--- |
+| `/` | Homepage: masthead, emotional search, sticky subject pills, then **Videos** and **Discover** tabs (§17.3). `?subject=` narrows every shelf |
+| `/subject/[slug]` | Everything tagged with a subject; one video shelf per teacher (ISR, hourly) |
+| `/healers/[slug]` | A listing: portraits, bio, socials, contact, offerings. "✦ Spiritpedia Official" when `healers.official` |
+| `/publishers/[slug]` | A publishing house: bio, authors, one book shelf per author |
+| `/books/[slug]` · `/videos/[slug]` · `/offerings/[slug]` · `/free-resources/[slug]` | Detail pages, with reviews |
+| `/library` | My Library (saves, by subject) |
+| `/privacy` · `/terms` · `/affiliate-disclosure` | Legal pages (Privacy and Terms dated 17 October 2026) |
+| `/auth/signup` | Email in, 6-digit code out. Sign-in and sign-up are one action |
+| `/auth/verify` | Six code boxes; also where a magic link lands |
+| `/auth/practitioner-setup` | One application form for everyone who shares their work; "What best describes you?" is an optional hint |
+| `/auth/claim` | Offered when the email matches a listing (healer or publisher) |
+| `/auth/claim-request` | "Request to claim it" when it doesn't match |
+| `/auth/pending` | After an application |
+| `/account` | Account centre; becomes the Practitioner or Publisher dashboard when approved; the learning switch; Delete account |
+| `/admin/*` | The admin (§9.4) |
+| `sitemap.xml` · `robots.txt` | Dynamic; paged with an `id` tiebreaker |
+
+### 9.2 API routes
+
+Auth: **Bearer** = the user's Supabase access token, verified with Supabase;
+**Admin** = the admin cookie, re-checked in each route (`/api` is outside
+`proxy.js`); **Cron** = `CRON_SECRET`.
+
+| Route | Auth | What |
+| :--- | :--- | :--- |
+| `POST /api/activity` | Public, Bearer optional | Activity batch `{platform, events}` (≤32 KB) → `cleanBatch()` → RPC `log_activity` (§9.9) |
+| `POST /api/account/delete` | Bearer | `{confirm:'DELETE', source}` → `utils/deleteAccount.js`: deletes the auth user (cascades), their photos, and notes a claimed listing in `account_deletions` |
+| `POST /api/pending-user-type` | Public (pre-auth) | Records explorer/practitioner against an email |
+| `GET`/`PATCH /api/practitioner/profile` | Bearer | An approved practitioner's own listing and content; allow-listed fields only (`contact_email` and `tier` excluded) |
+| `GET`/`PATCH /api/publisher/profile` | Bearer | A publisher's own row; `description` and `website_url` only |
+| `POST /api/profile/resubmit` | Bearer | A rejected applicant goes back to pending |
+| `POST /api/email/explorer-welcome` | Bearer | Explorer welcome email, and the welcome push |
+| `POST /api/email/practitioner-welcome` | Bearer | Practitioner welcome (only for practitioners) |
+| `POST /api/email/review-received` | Bearer | "We've got your review" |
+| `POST /api/email/review-reported` | Bearer | Emails love@ about a report (the app calls it) |
+| `POST /api/push/welcome` | Bearer | The first notification, once per account |
+| `POST /api/admin/login` · `logout` | Public · Admin | The admin cookie (24 h, httpOnly) |
+| `GET /api/admin/overview` | Admin | Counts and the Inbox queue |
+| `GET /api/admin/activity` | Admin | Admin → Activity totals |
+| `POST /api/admin/practitioner` | Admin | Approve (creates a `healers` row, or creates/links a `publishers` row) or reject an application |
+| `POST /api/admin/claim-request` | Admin | Make a `SPIRITPEDIA-XXXXXX` code, approve (links the listing, stops any journey) or reject |
+| `GET`/`PATCH`/`DELETE /api/admin/person` | Admin | A person's record; delete their account |
+| `GET`/`POST /api/admin/notes` | Admin | Internal notes (`ADMIN_NAME` as author) |
+| `GET`/`PATCH /api/admin/reviews` | Admin | Moderation queue; PATCH also emails the reviewer. Re-reads the row and answers 409 if the status didn't change |
+| `GET`/`PATCH /api/admin/review-reports` | Admin | Reports: take down, ban/unban, resolve, dismiss |
+| `PATCH /api/admin/account-deletions` | Admin | Mark a closed-account item resolved |
+| `POST /api/admin/journey/start` · `GET`/`PATCH /api/admin/journey/[healer_slug]` | Admin | Start (sends email 1), read, stop or resume an outreach journey |
+| `POST /api/admin/write` | Admin | Generic insert/update/delete on an allow-list of content tables (the content editor and ingestion) |
+| `POST /api/admin/push-test` | Admin | Sends a test push to an account by email |
+| `GET /api/cron/*` | Cron | The four scheduled jobs (§9.10) |
+
+### 9.3 Sign-in and sessions
+
+- **Email code only** — no passwords, no social sign-in. `signInWithOtp`
+  with `shouldCreateUser: true` (the response never reveals whether the address
+  had an account), then `verifyOtp({ type: 'email' })`. The code length is
+  Supabase's "Email OTP Length" setting.
+- **`components/AuthSync.jsx`**, mounted in the root layout, does the
+  first-session work whenever a session appears (verify page, magic link or a
+  returning visit): merges saves into `user_favourites`, `ensureProfile`, makes
+  a save waiting on sign-in, syncs the area, and writes each heart through to
+  the account.
+- **`ensureProfile`** (`utils/onboarding.js`) upserts `user_profiles` with
+  `ON CONFLICT DO NOTHING` and `.select()`: only the caller that actually
+  created the row gets it back and sends the welcome, so two racing callers
+  send one email. It sets `signup_platform: 'web'`, and upgrades explorer →
+  practitioner (never down).
+- **The explorer/practitioner choice** crosses the verification gap in
+  `pending_user_types` (keyed by email, so it survives a magic link on another
+  device), written through `/api/pending-user-type`; the daily
+  `pending-signups` cron deletes rows older than 24 hours.
+- **A refused session never loops** (`utils/sessionCheck.js`, 17 Oct 2026).
+  `getUser()` classifies Supabase's answer: refused (`bad_jwt`,
+  `user_not_found`, `session_not_found`, 400/401/403/404…) clears the saved
+  session in this browser (`signOut({scope:'local'})`) so every page agrees the
+  visitor is signed out; unreachable (offline, 5xx) keeps it, and `/account`
+  shows **Try again** instead of redirecting. Before this, `/account` (asks
+  Supabase) and `/auth/signup` (reads the saved copy) bounced a stale session
+  back and forth for ever. Tested in `utils/sessionCheck.test.mjs`.
+
+### 9.4 Admin
+
+`/admin`, behind `proxy.js`: the cookie `spiritpedia-admin-session` must equal
+SHA-256 of `spiritpedia-admin::<ADMIN_PASSWORD>`. With `ADMIN_PASSWORD` unset,
+access is always denied. Needs `SUPABASE_SERVICE_ROLE_KEY` and `ADMIN_NAME`;
+without them the data sections say why rather than showing an empty list.
+
+| Section | What |
+| :--- | :--- |
+| **Inbox** (`/admin`) | One queue: applications, claim requests, reported reviews, pending reviews, broken images, closed accounts. A two-pane reviewer: pick the tier and the kind of listing (pre-filled from `described_as`), approve or reject, handle claim requests |
+| **People** | Practitioners and Explorers; a record with Profile, Content and Admin Notes; edit; delete (removes the `auth.users` row; everything personal cascades) |
+| **Content** | The directory of every listing, and a record editor (`/admin/content/[healer_slug]`) for the listing and all six content types, with the Outreach (journey) controls |
+| **Claims** | The record of claimed listings |
+| **Reviews** | Pending / Approved / Rejected; approve or reject emails the reviewer |
+| **Reports** (`/admin/flags`) | Reported reviews: the snapshot beside the current text, reason, reporter, age (red after 24 h, as the Terms promise). Take down, ban the reviewer (takes all their reviews down), dismiss, resolve, lift ban |
+| **Activity** | Totals only, never one person (§9.9). `/admin/analytics` redirects here |
+| **Ingestion** | The content ingestion form (YouTube id and Amazon ASIN parsing, duplicate guards) |
+| Messages · Mailshots · Settings | Placeholders |
+
+`PractitionersTab` and `AccountsTab` in `components/admin/AdminLiveTabs.jsx`
+are dead code.
+
+### 9.5 Account types, listings and claims
+
+- **One sign-up for everyone who shares their work.** `user_type` is
+  `explorer` or `practitioner` ("shares their work"). What kind of listing it
+  becomes is decided by the admin at approval: a `healers` row with
+  `entity_type` individual / channel / app / organisation, or a `publishers`
+  row (`linked_publisher_id`). The applicant's "What best describes you?"
+  (`described_as`) only pre-fills that choice.
+- **Claims** are matched against every listing, healers and publishers alike
+  (`utils/onboarding.js` → `findClaimableListing`; `utils/listings.js` →
+  `chooseClaim`, where more than one match means no automatic claim). A match
+  calls `claim_healer_profile()` or `claim_publisher_profile()`, the only
+  browser paths to the pinned columns.
+- **No match → "Request to claim it"** (`claim_requests`). The admin decides in
+  the Inbox: first by emailing the listing's published address, else by a
+  `SPIRITPEDIA-XXXXXX` code the claimant posts on their channel or site.
+  Approving links the listing and stops any outreach journey. **Claimants are
+  not emailed the decision automatically** (§16).
+- **Dashboards at `/account`:** `PractitionerDashboard` (profile, content,
+  photo uploads to their own storage folder) and `PublisherDashboard`.
+- **"✦ Official"**: `healers.official`, Spiritpedia's own listing. Shown instead
+  of a tier, first among channels; set only by the admin.
+- Platforms (channel, app, organisation) are kept out of Practitioners Near
+  You (`isPlatform`).
+
+### 9.6 Reviews and moderation
+
+- On books, videos, offerings and free resources. **Nothing is public until
+  approved** — enforced by the read policy (`status = 'approved'`), not the UI.
+- The `reviews_pin_author` trigger forces `status = 'pending'`, derives
+  `author_healer_slug` from the author's own profile, freezes them on update,
+  refuses banned accounts, and yields to the service role so moderators can
+  approve. A second submission upserts on (user, type, slug): an edit.
+- **Report and block exist in the app only** ("⋯" on each review); the website
+  has no report/block button yet (§16). Every report emails love@ at once.
+
+### 9.7 Emails
+
+Eleven from the website, all through `utils/email.js` (Resend; templates
+inline). A failed email never fails the action that triggered it, and Resend's
+"resolved with an error" is checked, not just exceptions. Nothing records that
+an email was sent (§16).
+
+| # | Email | Sent by |
+| :--- | :--- | :--- |
+| 1 | Explorer welcome | `/api/email/explorer-welcome` (website: `ensureProfile` on a new explorer; app: after "I'm exploring") |
+| 2 | Practitioner welcome | `/api/email/practitioner-welcome` |
+| 3 | Review received | `/api/email/review-received` |
+| 4–5 | Review approved / rejected | `/api/admin/reviews` |
+| 6 | Review reported (to love@) | `/api/email/review-reported` |
+| 7–11 | Healer outreach journey, emails 1–5 | `/api/admin/journey/start` (1); the `journey-emails` cron (2–5) |
+
+Sign-in and change-email codes are Supabase Auth's (templates in the
+dashboard; live's Change Email template includes `{{ .Token }}`). The full
+inventory, wording and the plan to rewrite them in the star's voice:
+`docs/emails.md`.
+
+**Standing rule: affiliate links never go in email** (Amazon's agreement).
+
+### 9.8 The healer outreach journey
+
+Five **plain-text** emails over twelve weeks (`JOURNEY_SCHEDULE = [0, 21, 42,
+63, 84]` days), from love@, inviting an unclaimed listing to claim it. Every
+call to action is "reply to this email"; no HTML, no links, on purpose. Started
+by hand from a listing's Outreach tab; the daily cron sends at most one due
+email per journey; it stops the moment the listing is claimed or loses its
+contact address. The double-send guard is the write itself: a conditional
+update claims that email's "sent" timestamp before sending, and puts it back
+if the send fails. `JOURNEY_TEST_EMAIL` redirects every journey email while
+set. **No journey has ever been started for a real listing** — starting one
+emails a real person. Since `0020` a journey can target a publisher, but the
+cron skips publisher journeys (no publisher wording yet).
+
+### 9.9 Activity (and Admin → Activity)
+
+- **Browser:** `utils/activity.js` queues events (an item opened twice in a
+  visit counts once) and sends them every 30 s, at 20 events, or when the page
+  is hidden (`keepalive`). Signals: page opens (`components/TrackOpen.jsx`),
+  video plays (`TrackWatch.jsx`), saves and unsaves, shares, new reviews, pill
+  and filter taps, and settled searches (the subjects found, or the words only
+  when nothing was found). Nothing is sent from `/admin`.
+- **Server:** `/api/activity` → `utils/activityGuard.js` `cleanBatch()` drops
+  anything malformed and **drops a search whose words match a crisis phrase**
+  (and strips the words, keeping subjects, from an ambiguous one) → looks up
+  subjects for content events → RPC `log_activity` with the caller's id when a
+  Bearer token is present. Whether anything personal is kept is decided in the
+  database (the member's `learning_enabled`).
+- **The switch:** `components/LearningSwitch.jsx` on `/account` — "Let
+  Spiritpedia learn from what I explore. Used only to tailor what you see.
+  Never shown to our team, never shared, never used for advertising. Turn off
+  anytime." Off by default; turning it off deletes what was learned.
+- **Admin → Activity:** totals only (7 / 30 / 90 days; All / Web / App): most
+  opened and saved, subjects rising, searches with no results (only terms seen
+  at least twice), sign-ups by day and platform. Popularity-led, never
+  commission-led.
+
+### 9.10 Scheduled jobs (`web/vercel.json`)
+
+All `GET`, all daily (the most a Hobby plan allows), guarded by `CRON_SECRET`
+as `Authorization: Bearer` (Vercel sends its own copy) or `x-cron-secret` (for
+a manual run). **503 means the secret is unset; 401 means it's wrong.**
+
+| Job | UTC | Does |
+| :--- | :--- | :--- |
+| `/api/cron/activity-purge` | 05:00 | RPC `purge_activity()` |
+| `/api/cron/pending-signups` | 06:00 | Deletes `pending_user_types` older than 24 h (`?dry=1` counts only) |
+| `/api/cron/broken-images` | 07:00 | Audits a seventh of the content image URLs plus every portrait (§17.8). `?dry=1`, `?shard=N` |
+| `/api/cron/journey-emails` | 08:00 | The outreach journey |
+
+`vercel.json` must stay in `web/` and Vercel's Root Directory must be `web`.
+
+### 9.11 Push (server side)
+
+`utils/push.js` signs a JWT with the service account (`FIREBASE_PROJECT_ID`,
+`FIREBASE_CLIENT_EMAIL`, `FIREBASE_PRIVATE_KEY`) and calls FCM HTTP v1
+directly. Dead tokens are removed. The welcome push is sent once per account
+(`notification_sends`) by `/api/push/welcome` and alongside the explorer
+welcome email. Admin → push-test sends a test.
+
+### 9.12 Analytics, consent and legal
+
+- GA4 (`components/Analytics.jsx`) renders only when
+  `NEXT_PUBLIC_GA_MEASUREMENT_ID` is set, the visitor has accepted, and the page
+  isn't `/admin`. Not rendering *is* the gate: no script, no cookie. The choice
+  is `localStorage` `sp_cookie_consent`; the footer's **Cookie settings**
+  reopens the banner, and declining after accepting deletes the `_ga` cookies.
+- Privacy Policy and Terms (`components/LegalPage.jsx`) are dated
+  **17 October 2026**. They are a careful draft, **not legal advice**: have a
+  solicitor or data-protection specialist review them before public promotion,
+  and check whether the ICO data protection fee applies.
+
+### 9.13 What deploys
+
+`web/vercel.json` → `ignoreCommand` → `scripts/vercel-ignore-build.sh`: Vercel
+skips the build when nothing under `web/` changed since the **last successful
+deployment** (`VERCEL_GIT_PREVIOUS_SHA`). App-, Supabase-, docs- and
+README-only pushes show as **Canceled** in Vercel — the rule working. In doubt
+(no previous SHA, git error) it builds.
+
+---
+
+## 10. The app
+
+`app/`. The detail (structure, every rule, migrations as the app sees them,
+admin Reports) is in **`app/README.md`**; this section is the overview.
+
+### 10.1 Builds 1–19
+
+Version `1.0.0+N`. Phases 0–3a (9–10 Oct 2026, as `0.1.0+1`) came first:
+skeleton and intro, one shared crisis phrase list, Explore, emotional search,
+detail pages, email-code sign-in with Library sync and account deletion, push.
+
+| Build | Date | What it added |
+| :--- | :--- | :--- |
+| 1 | 10 Oct | App icon, 1.0.0, App Store build settings |
+| 2 | 10 Oct | The star, the floating tab bar, Books, sharing, hearts on cards |
+| 3 | 11 Oct | Fixes and polish |
+| 4 | 11 Oct | Discover · Videos · Books with one subject filter; the star returns to its tab |
+| 5 | 11 Oct | Two-engine search; channels kept apart from teachers; the star flies on every page change |
+| 6 | 11 Oct | Push notifications turn on (waits for Apple's token) |
+| 7 | 13 Oct | Reviews with report and block; tier tips; My Account refresh; email change; retreat dates; saves in Suggests |
+| 8 | 13 Oct | Tier badges explain themselves when tapped (no automatic tips) |
+| 9 | 13 Oct | One-row header and the frosted menu |
+| 10 | — | **Not a real build**: an accidental duplicate of 9, uploaded from Xcode |
+| 11 | 14 Oct | Onboarding interests, For You, Affiliate Disclosure |
+| 12 | 14 Oct | Tailor Spiritpedia: More of and Never show |
+| 13 | 16 Oct | More of beats Never show; saving needs an account; the Tailor star; For You rotation; the new welcome push |
+| 14 | 16 Oct | "How will you use Spiritpedia?" |
+| 15 | 16 Oct | Your area (Practitioners Near You); the star's conductor; the area and name questions; "Welcome back" |
+| 16 | 16 Oct | The Always-location purpose string Apple's upload scan wanted (ITMS-90683). **Last build uploaded to TestFlight** |
+| 17 | 17 Oct | Account types: Organisation listings shown as channels; "✦ Official" |
+| 18 | 17 Oct | Activity learning ("Let Spiritpedia learn from what I explore") |
+| 19 | 17 Oct | **The iPad**: the same app laid out for the larger screen, both orientations, Split View |
+
+### 10.2 Structure and startup
+
+- `lib/main.dart`: keeps the native splash up; locks to portrait **only on a
+  phone** (the screen's shorter side under 600 pt); starts Supabase with the
+  session in the Keychain (`core/auth/secure_session_storage.dart`; a stale
+  Keychain session from a previous install is cleared); starts Firebase
+  (`initFirebase()`, live or dev options by `APP_ENV`; failing quietly means no
+  push); shows a "missing configuration" screen instead of crashing without
+  `--dart-define-from-file`.
+- `lib/app.dart`: `MaterialApp.router`, dark only. Above the router, from the
+  outside in: larger text on iPad, the **star layer** (so a star can fly from
+  any screen to any other), and the **intro**. Notification taps open in-app
+  paths. Debug builds accept `--dart-define=START_ROUTE=/account`.
+- `lib/router.dart` (go_router): three tabs — `/` Discover, `/videos`,
+  `/books` — each with its own history; `/library`, `/account`, `/tailor`,
+  `/subject/:slug`, `/feel` (search; `?in=videos|books`); detail pages
+  `/healers/`, `/books/`, `/videos/`, `/publishers/`, `/offerings/`,
+  `/free-resources/:slug` (the website's paths, so shared links match).
+- State is **Riverpod 3** without code generation; providers catch their own
+  errors (`core/retry.dart`).
+- The **menu** (`features/menu/app_menu.dart`) is a right-side frosted panel:
+  Sign in (signed out), My Library, Account, Notifications, Tailor
+  Spiritpedia, Share Spiritpedia, the website's footer statement, Terms,
+  Privacy, Affiliate Disclosure, Contact.
+
+### 10.3 The star and its conductor
+
+There is **only ever one star on screen** (`features/star/star_layer.dart`).
+- **Intro** (`features/intro/intro_overlay.dart`). First launch: "I am your
+  guiding star" (2.4 s), a flight into Discover's search box, the callout "Tap
+  me anytime to come home" (Got it), then onboarding. Later launches: just the
+  flight, after "Welcome back, {name}" if a name is set. Reduce Motion: no
+  flights.
+- **Where it lives.** On a tab, in the search box; when the box scrolls away it
+  flies into the start of the sticky pill row (the pills fade beneath it), and
+  back. On other pages it floats at the foot (`FloatingHomeStar`); a tap goes
+  home to the tab you came from, keeping the filter; press and hold opens My
+  Library. Every page change is a flight along the slipstream (420–950 ms).
+- **Tier tips.** The Superhero, Luminary and Local Hero badges on shelf
+  headings explain the tier when tapped; nothing appears on its own.
+- **The conductor** (`features/star/conductor.dart`) decides the star's one
+  appearance per **session** (a cold start, or back after 30+ minutes).
+  Session 1 is the intro. Then, in priority order:
+  - from visit **3**, signed in with learning off: "Shall I learn from what you
+    explore?" (Yes, learn / Not now);
+  - from visit **5**, with no area: "Shall I show you practitioners near you?"
+    (Use my location / Type my city / Not now);
+  - from visit **7**, with no name: "Would you like to share your name?".
+  Each is asked once, then once more at least 15 visits and 21 days later, then
+  never. It waits for a quiet moment (a main tab on top, nothing open, the
+  search not opened this session, 3 seconds), then flies down onto a frosted
+  tray; swiping it away is "Not now". If the intro played this session, that
+  was the appearance.
+- **Debug builds only** (Account): Replay intro; "Star visits: N" with Set to
+  3 / 5 / 7; Reset star questions. None of it reaches TestFlight.
+
+### 10.4 Search: two engines, behind the crisis gate
+
+`features/search/emotion_search_controller.dart`, 300 ms debounce. Every box
+runs, in order: **(1) the crisis check** (synchronous, before anything is sent
+— §11); **(2) the dual-path question** for ambiguous phrases; then **both
+engines in parallel**:
+- **Feelings:** `emotion_mappings` through the shared normaliser — exact
+  emotion, the candidate cascade, then whole-word substring passes.
+- **Names and titles:** `features/search/content_search.dart`, every word
+  required, across teachers, channels, videos, books, subjects, courses and
+  free resources.
+
+Both show. **Scopes:** Discover's box searches everything; the Videos and
+Books boxes search their own kind, with an "Also found" line. **Spiritpedia
+Suggests:** one video and one book, ranked by relevance (title +1000/+600,
+words matched, mapping weight), with small bonuses that never beat a title
+match (people's saves via `save_counts`, More of, learned subjects, same
+pillar). Never show holds name matches back behind "You've hidden this subject.
+Show anyway?". 1.5 s after results settle, the search counts for activity
+learning — never a crisis search.
+
+### 10.5 Tailor Spiritpedia and onboarding
+
+- **Onboarding** (first launch, after the intro): "Welcome to Spiritpedia. What
+  interests you most?" — the five pillars, each opening into subject chips;
+  "Explore Spiritpedia →" or "Skip for now"; "Anything you'd rather not see?"
+  opens the same picker in Never show mode.
+- **Tailor Spiritpedia** (menu, Account): Your area, **More of**, **Never
+  show**, and the learning switch. The star flies in and speaks its
+  introduction at the top while the choices scroll beneath ("Don't show me
+  again" stops it).
+- **Storage:** on the phone at once; signed in, also `user_interests`. Unsynced
+  local changes win at sign-in, then the account, else local is uploaded.
+- **Never show** hides an item if *any* of its subjects is hidden — unless it
+  also has a More of subject (More of wins). A teacher, channel or publisher
+  goes only if *every* subject they cover is hidden. An emptied view shows the
+  star: "You've hidden most subjects. Adjust in Tailor Spiritpedia".
+
+### 10.6 Personalisation ranking
+
+`lib/data/shelf_rules.dart` (pure functions, tested) and
+`app/docs/personalisation.md` (the same rules in plain English — change them
+together). Nothing is ever removed by ranking, only reordered.
+- **`interestLevel`:** 0 = carries a More of subject; **1 = a learned
+  subject** (activity learning); 2 = another subject in a More of pillar; 3 =
+  everything else. Ties: more chosen subjects, then learned weight, then the
+  original order.
+- **For You** (Discover, View All): levels 0–2, one content type per landing in
+  rotation — Free Resources → Courses & Programmes → Downloads & Audio →
+  Retreats & Live Events (upcoming) → Memberships.
+- **Shelves:** Worldwide (Superheroes), Rising Voices (Luminaries),
+  Practitioners Near You (Local Heroes and untiered), Timeless Teachers
+  (Ascended Masters), Publishing Houses, Explore These Channels (channels, apps,
+  organisations; Official first). The billboard runs three Superheroes then
+  one Ascended Master.
+- **Learned subjects:** each score halves every 30 days; only scores ≥3, top
+  five, never a More of or Never show subject.
+
+### 10.7 Activity learning (build 18)
+
+`lib/features/learning/learning.dart`. A queue of events (an item opened
+again within 30 minutes isn't a second open) sent to `/api/activity` every
+30 s, at 20 events, or when the app goes to the background, kept on the phone
+if it can't go. Signals: opens, video plays, saves and unsaves, shares, new
+reviews, pill and filter taps, settled searches. **Everyone's events feed the
+anonymous totals; only a signed-in member with the switch on has their own
+events and scores kept** — decided on the server. The switch is in Tailor
+Spiritpedia, off by default, and the star asks from visit 3. Learned subjects
+rank at level 1 (§10.6).
+
+### 10.8 Location and Practitioners Near You (build 15)
+
+- An area is a **town** from `places`, never a position.
+- "Use my location" asks iOS once for **approximate** location, **When In Use**
+  only (`NSLocationDefaultAccuracyReduced`); the position is rounded to 2
+  decimal places (about 1 km) before `nearest_place()`, which stores nothing.
+  "Type my city" searches `places`.
+- **Practitioners Near You:** in person within **50 km**, nearest first, then
+  online practitioners from anywhere. With no area, everyone shows.
+- The Always-location purpose string exists only because Apple's upload scan
+  sees geolocator's unused code (ITMS-90683); the app never asks for Always.
+
+### 10.9 Accounts and account types
+
+- Sign-in by emailed 6-digit code, in Account or in place from the save
+  prompt. **Saving needs an account** on both platforms: a signed-out heart
+  opens "Save it to your Library", and the save completes after sign-in. Saves
+  already on a phone move into the account at sign-in.
+- **"How will you use Spiritpedia?"** once, for a new account: "I'm exploring"
+  (or putting it away) sends the explorer welcome; "I share my work" records the
+  choice (`/api/pending-user-type`) and opens
+  `spiritpedia.co/auth/signup?as=practitioner`, where the one application form
+  lives. Listings are created and approved on the website (§9.5).
+- **My Account:** email (change email uses two codes), account type, Your name
+  (`user_profiles.full_name`), Tailor Spiritpedia, Notifications, Blocked
+  reviewers, Sign out (clears the phone's saves and tailoring; the account
+  keeps them), Delete account (`/api/account/delete`).
+- The app shows "✦ Official" listings first among channels, and organisations
+  as channels.
+
+### 10.10 Reviews and moderation (build 7, migration 0015)
+
+Approved reviews (newest first) plus your own whatever its state; posting
+upserts into `reviews` (forced to pending). Every review someone else wrote has
+"⋯": **Report review** (reason, optional note; a snapshot is kept; love@ is
+emailed) and **Block this reviewer** (hides all their reviews from you; listed
+in Account to unblock). A banned account can't post. The admin decides on
+Reports (§9.4). This is what App Store guideline 1.2 asks for.
+
+### 10.11 Notifications
+
+- Firebase starts at launch, but **no token exists until the person says yes**
+  in Account → Notifications: permission → token (waits for Apple's) →
+  `register_push_token` → `notification_preferences` (General on; IAM
+  affirmations off, reserved) → `/api/push/welcome` sends, once per account:
+  "✦ Testing, testing… just checking my light reaches you. Nothing to do. I'll
+  only shine when it matters."
+- While the app is open, pushes show as the iPhone's own banner. Token refresh
+  re-registers. "Turn off on this phone" deletes the token row; sign-out
+  forgets the phone. Known issues in §16.
+
+### 10.12 iPad (build 19)
+
+`lib/theme/layout.dart` follows the **window's width, never the device**:
+under 600 pt is the phone layout, byte-for-byte as before (every iPhone, and a
+narrow Split View window); 600–1000 regular; 1000+ wide. Regular and wide get
+cards ×1.2 / ×1.3, margins 32 / 48, text ×1.1, and maximum widths — reading
+720, forms and sheets 560, trays 520, video 900, search row 760. The billboard
+puts the portrait at the right; teacher and book pages put the picture beside
+the words. iPad supports all four orientations and Split View (no
+`UIRequiresFullScreen`; iPadOS 26 resizes every app anyway); iPhone stays
+portrait. `test/ipad_test.dart` opens every screen at ten iPad and Split View
+sizes. **Landscape has been checked in layout renders, not yet on a real
+iPad.**
+
+### 10.13 Detail pages, links, the video player
+
+Teacher, book, video, publisher, offering and free-resource pages share
+`DetailScaffold` (share, save heart, the floating star). Shares are
+`https://www.spiritpedia.co{path}`. Outbound links open in the browser, never an
+in-app web view. Amazon links are rebuilt as `/dp/{ASIN}` with the store's tag
+from `prod.json`. Videos play in a WebView embedding `youtube-nocookie.com`,
+inline.
+
+---
+
+## 11. The crisis intercept (website and app)
+
+**Every search box, on both platforms, runs the crisis check first, on every
+keystroke, before anything else and before anything is sent anywhere.** A match
+shows the crisis screen — warm, no clinical vocabulary, a link to
+[findahelpline.com](https://findahelpline.com) for free, confidential support
+in the visitor's own country, and a real "Take me back to Spiritpedia" — and
+nothing reaches any engine, the Enter/search key included.
+
+- **One phrase list:** `web/shared/emotion-safety.json`. 171 crisis phrases in
+  seven categories (suicidal ideation 93, self-harm 12, eating disorder 14,
+  active abuse 20, sexual assault 10, child protection 7, acute crisis 15); 16
+  dual-path phrases ("hearing voices": channelling or distress? — asked, never
+  guessed; "distressing" goes to the crisis screen); the soft-tier line; the
+  medical disclaimer ("Complementary to, not a replacement for, medical care.")
+  for quantum healing, homeopathy, energy medicine and ayurveda results; the
+  normalisation lists.
+- **The website:** `web/utils/emotionSearchPatterns.js` in
+  `components/EmotionSearch.js`. **The app:** `lib/core/safety/emotion_safety.dart`
+  (a port), reading the same file through the symlink `app/assets/safety/`;
+  the gates sit at the top of `emotion_search_controller.dart`.
+- **They can't drift:** `web/shared/emotion-safety.cases.json` (regenerate with
+  `web/scripts/generate-emotion-safety-cases.mjs`) is checked by both
+  `npm test` and `flutter test`. `app/test/features/search/two_engines_test.dart`
+  types every phrase, plain and as "I feel …", into every box and checks no
+  engine received a call; `learning_test.dart` checks no crisis search is ever
+  logged; `/api/activity` re-checks on the server.
+- **Nothing personal touches it.** More of, Never show and learning apply only
+  after the gates.
+
+Change phrases only in the shared JSON. Never shorten, reorder or skip the
+gates. On 17 October 2026 the four crisis test files ran 20 times in a row on
+their own with no hang.
+
+---
+
+## 12. Run, test, build and release
+
+### 12.1 Website
 
 ```bash
 cd web
 npm install
-npm run dev          # localhost:3000
-npm run build        # what Vercel runs
+npm run dev            # http://localhost:3000, against DEV (.env.development.local)
+npm test               # node --test: 57 tests in utils/*.test.mjs
 npx eslint app components utils
-npm test             # node --test over utils/**/*.test.mjs (affiliate helper only, so far)
+npm run build          # what Vercel runs
 ```
 
-Node 24, Next 16.2 (App Router + Turbopack), React 19, Tailwind 4. Dependencies
-are deliberately few: `@supabase/supabase-js`, `resend`, `@next/third-parties`.
+A dev server may already be on port 3000 (`lsof -ti:3000`); `npm run dev` then
+exits, which looks like a failure. **Deploying is pushing to `main`** with a
+change under `web/` — show the diff and get an OK first. Confirm a deploy with
+`npx vercel ls` from `web/`, or by checking the live page.
 
-**You need `web/.env.local` before anything works** — see Environment variables
-at the foot of this file. It is gitignored (`.env*`) and must never be committed.
+### 12.2 App
 
-#### The five things that will bite you first
-1. **PostgREST caps every response at 1,000 rows and does not say so.** Any query that can exceed it pages with `.range()` ordered by `id`. Never order by `created_at` alone — the bulk import gave thousands of rows the same timestamp to the microsecond, so ties resolve differently per query and rows become unreachable.
-2. **There are two Supabase clients and they are not interchangeable.** `utils/supabase.js` is anonymous and stateless, for server components. `utils/supabaseAuth.js` is browser-only and holds the session. `utils/supabaseAdmin.js` is the service role and must never reach a client component.
-3. **The anon key ships in every page bundle.** Anything it may write, any visitor may write. All content writes go through server routes.
-4. **Two different keys point at a healer.** Videos and books carry a text `healer_slug`; courses and free resources carry a bigint `healer_id`. Forgetting this is why the admin Content tab once showed only half a healer's work.
-5. **`supabase-js` returns `{ data: null, error }` rather than throwing.** A trailing `|| []` turns "the database was unreachable" into "there is no content", and the page renders an empty shelf with no sign anything went wrong.
+```bash
+cd app
+flutter pub get
+flutter run --dart-define-from-file=config/dev.json    # dev database + local website (npm run dev)
+flutter run --dart-define-from-file=config/prod.json   # live data
+flutter analyze        # must say "No issues found"
+flutter test           # 292 tests, all passing at build 19
+```
 
-#### Test accounts must never cause an email
-The dev project was warned (October 2026) for a high bounce rate: browser
-walk-throughs had typed made-up addresses into the sign-in form, so Supabase
-emailed codes that bounced, and the website emailed welcomes after them.
-* **Create test users through the Admin API with the email already confirmed**
-  (`POST /auth/v1/admin/users` with `email_confirm: true`). Nothing is sent.
-  Sign them in with a password grant, or `admin/generate_link` for a code —
-  neither sends anything.
-* **Never type a test address into the sign-in form** (website or app): that is
-  what sends the code. To be signed in in a browser, put the session into
-  localStorage under `spiritpedia-auth` instead.
-* **Create the test user's `user_profiles` row up front**, so the website's
-  first-sign-in welcome (`ensureProfile`) is not sent.
-* **If a test really needs an email to arrive**, use plus-addressing on a real
-  inbox, e.g. `rossbaiken+test1@gmail.com`. Never a made-up or no-mailbox
+In this environment Flutter is run through a clean login shell:
+`env -i HOME="$HOME" USER="$USER" TERM=xterm-256color SHELL=/bin/zsh /bin/zsh -l -i -c 'cd …/app && flutter test'`.
+
+### 12.3 Simulator tours (screenshots)
+
+A temporary integration test drives the real app (dev config) and prints
+`SHOT:<name>`; a shell loop reading its output runs
+`xcrun simctl io <udid> screenshot <file>` on each marker. The test is
+**deleted afterwards and never committed**. Boot one simulator, run the tour,
+**shut it down**. Notes:
+- Xcode 27 has no Simulator app; its device window is **DeviceHub**
+  (`/Applications/Xcode.app/Contents/Applications/DeviceHub.app`).
+  `simctl` can't rotate a device, and an app's own request to rotate is
+  ignored on an iPad that supports Split View — so landscape needs DeviceHub
+  or a real iPad.
+- If the intro plays, that's the star's appearance for the visit: test the
+  conductor's trays with the intro off.
+
+### 12.4 Before a TestFlight build
+
+1. Bump `version: 1.0.0+N` in `app/pubspec.yaml`. **Every upload needs a new
+   number**, and the archive you upload must be the one built after the bump.
+2. `flutter analyze` and `flutter test` (and `npm test` if `web/` changed).
+3. Look at it in the simulator (show the project owner).
+4. Commit and push (app pushes don't deploy).
+
+### 12.5 Build
+
+```bash
+cd app
+flutter build ipa --release --dart-define-from-file=config/prod.json
+```
+
+This makes `build/ios/archive/Runner.xcarchive` and
+`build/ios/ipa/Spiritpedia.ipa`. Check the IPA:
+
+```bash
+mkdir /tmp/ipa && cd /tmp/ipa && unzip -q …/app/build/ios/ipa/Spiritpedia.ipa
+/usr/libexec/PlistBuddy -c 'Print :CFBundleVersion' Payload/Runner.app/Info.plist   # N
+codesign -d --entitlements :- Payload/Runner.app | grep -A1 aps-environment         # production
+```
+
+Also check `UIDeviceFamily` is 1 and 2 and the iPad orientations are present.
+Building the IPA replaces the previous one in the same folder.
+
+### 12.6 Upload
+
+The project owner uploads (there is no App Store Connect API key on this Mac).
+Two ways:
+
+**A. Xcode, Distribute App** (uses the archive):
+1. In Terminal: `open app/build/ios/archive/Runner.xcarchive` — Xcode opens and
+   adds the archive to the Organizer (Window → Organizer → Archives).
+2. Select the **Runner** archive whose version reads `1.0.0 (N)`.
+3. **Distribute App** → **App Store Connect** → **Upload** → leave automatic
+   signing and the defaults → **Upload**.
+4. Quit Xcode when it finishes (this Mac runs short of memory with it open).
+
+Build 10 was an accidental re-upload from Xcode; check the version in the
+Organizer before pressing Distribute.
+
+**B. Transporter:** drag `app/build/ios/ipa/Spiritpedia.ipa` into Apple's
+Transporter app → Deliver.
+
+Then in **App Store Connect → Spiritpedia**:
+- The build appears under TestFlight after processing; answer the export
+  compliance question (standard encryption only).
+- **App Privacy** must match what the app collects. The correct label from
+  build 18 on, all **linked to the user, not used for tracking**:
+
+  | Data type | Purposes |
+  | :--- | :--- |
+  | Name | App Functionality |
+  | Email Address | App Functionality |
+  | Coarse Location | App Functionality |
+  | User ID | App Functionality |
+  | Device ID (the push token) | App Functionality |
+  | Product Interaction | App Functionality, Analytics, Product Personalization |
+  | Search History | App Functionality, Analytics, Product Personalization |
+  | Other User Content (reviews, reports, blocks) | App Functionality |
+  | Sensitive Info (Tailor interests and learned subjects: religious or philosophical beliefs) | App Functionality, Product Personalization |
+
+  Nothing else: no Health data, contacts, photos, purchases, advertising ID,
+  crash or performance data, and no tracking (no analytics SDK in the app).
+- **Screenshots:** iPhone, and from build 19 a 13-inch iPad set (2064 × 2752
+  portrait or 2752 × 2064 landscape).
+
+### 12.7 Migrations
+
+Write the next numbered file, idempotent, revoking default function grants
+(§7.3), ending with a check `SELECT`. Show it before anyone runs it. The
+project owner runs it on **dev**; check it with throwaway users (Admin API,
+email confirmed, deleted afterwards). Then **live**, checked read-only. Update
+§8 here.
+
+---
+
+## 13. This Mac: memory and disk
+
+The development Mac has run out of both.
+- **Memory:** run **one simulator at a time** and shut each down after
+  (`xcrun simctl list devices booted`; `xcrun simctl shutdown <udid>`). Keep the
+  Xcode app closed — builds run from the command line. **Never run the full
+  test suite while a simulator tour runs.**
+- **Disk** (228 GB): on 17 October 2026 it was full (130 MB free) during a
+  build. Regenerable space, and how much it was then: `app/build` (keep
+  `ipa/` and `archive/` until uploaded), `app/.dart_tool` (4 GB; `flutter pub
+  get` recreates it), `web/.next`, Xcode `DerivedData` (3.5 GB), simulator
+  data (`xcrun simctl erase <udid>`; the iPhone simulator had grown to 6.9 GB),
+  `~/.gradle` (5 GB, Android only). Clearing them took it to 27 GB free.
+  Check `df -h /System/Volumes/Data` before a release build (it needs a few GB).
+- `~/Library/Developer/Xcode/Archives` holds archives named "App …" from
+  February–May 2026: **another project's, not Spiritpedia's — don't delete.**
+
+---
+
+## 14. Test accounts must never cause an email
+
+The dev Supabase project was warned in October 2026 for a high bounce rate:
+browser walk-throughs had typed made-up addresses into the sign-in form.
+
+- **Create test users through the Admin API with the email already confirmed**
+  (`POST /auth/v1/admin/users` with `email_confirm: true`) — on dev only.
+  Nothing is sent. Sign them in with a password grant, or
+  `admin/generate_link` for a code; neither sends anything.
+- **Never type a test address into the sign-in form** (website or app). For a
+  signed-in browser, put the session into `localStorage` under
+  `spiritpedia-auth`.
+- **Create the test user's `user_profiles` row up front**, so the first-sign-in
+  welcome isn't sent.
+- **If a test really needs an email to arrive**, use plus-addressing on a real
+  inbox (e.g. `rossbaiken+test1@gmail.com`). Never a made-up or no-mailbox
   address.
-* The outreach journey has its own guard: `JOURNEY_TEST_EMAIL` redirects every
-  journey email while it is set.
+- `JOURNEY_TEST_EMAIL` redirects every outreach email while set.
+- Delete test users afterwards.
 
-🌌 Vision
-Spiritpedia is not just a content hub or search engine — it's a personalised spiritual companion, designed to evolve with each user's unique path.
+---
 
-* Visitors can explore freely via subject-based discovery, curated content, and emotional search
-* Registered users unlock a fully immersive experience: saved content, personal library, AI notifications, and a curated journey of healing and expansion
+## 15. Things that will bite you
 
-🧭 Core Philosophy
-"Don't show them everything. Show them exactly what they need."
-Spiritpedia isn't about information overload — it's about calm, resonance, and alignment. It meets users exactly where they are, emotionally and spiritually, and gently supports their next step in evolution.
+1. **PostgREST caps every response at 1,000 rows, silently.** Page with
+   `.range()` ordered by `id`, never `created_at` alone (the bulk import gave
+   thousands of rows the same timestamp).
+2. **Three Supabase clients on the website**, not interchangeable:
+   `utils/supabase.js` (anonymous, stateless, server components),
+   `utils/supabaseAuth.js` (browser, holds the session),
+   `utils/supabaseAdmin.js` (service role, server only).
+3. **The anon key ships in every page and in the app.** Anything it may write,
+   anyone may write.
+4. **Two keys point at a listing:** videos and books carry a text
+   `healer_slug`; courses and free resources a bigint `healer_id`.
+5. **supabase-js returns `{ data: null, error }` instead of throwing.** A
+   trailing `|| []` turns "unreachable" into "nothing here".
+6. **`.env.local` is live.** A Node script reading it writes to production.
+7. **`healer_slug` must never be renamed** — content finds its listing by that
+   text, and the public page would 404.
+8. **Deleting an account** removes the `auth.users` row and cascades through
+   every personal table. **Deleting a listing** orphans its content.
+   **Starting a journey** emails a real person. None of these can be undone.
+9. **Env var changes need a redeploy** on Vercel (book pages are cached for an
+   hour; the affiliate page is static).
+10. **Riverpod 3:** a notifier must not `ref.invalidate` a provider that
+    watches that same notifier — it's a circular dependency error.
 
-The entry point is always emotional:
-"How are you feeling today?" → "Lost" → Curated videos, books, and healers appear instantly.
+---
 
-📲 Platform Model
-| Platform | Role | Status |
-| :--- | :--- | :--- |
-| Web App (Next.js) | Primary product — full discovery experience | ✅ **Complete and live** at [www.spiritpedia.co](https://www.spiritpedia.co) |
-| Native App (Flutter) | **The current phase** — iPhone first, with push notifications | 🟡 1.0.0 (19) built for TestFlight, iPhone and iPad: accounts, search, reviews, notifications, tailoring. In `app/` — see `app/README.md` |
+## 16. Known issues, open items and what's next
 
-#### Domains
-`spiritpedia.co` is the primary domain and the one to share. The original
-`spirit-pedia.com` still resolves and serves the same Vercel deployment.
+### 16.1 Before the App Store launch
 
-#### Why Web First
-The Next.js web app delivers the full Spiritpedia experience and allows rapid content building and iteration. The Supabase backend is shared — when the Flutter app is built, it connects to the same database. Nothing is rebuilt, only extended.
+1. **Upload build 19** with the privacy label and iPad screenshots (§12.6), and
+   check landscape on a real iPad or in DeviceHub.
+2. **The Firebase move — deadline mid-November 2026.** Both Firebase projects
+   (dev, and live `spiritpedia-d190c`) belong to the Elite Artists Google
+   account, which will be archived. The first attempt was blocked by the Google
+   Cloud organisation policy `iam.disableServiceAccountKeyCreation` on the
+   spiritpedia.co organisation. In order:
+   1. Turn that policy off for the spiritpedia.co organisation.
+   2. Recreate both projects under love@spiritpedia.co (a half-built love@ dev
+      project exists — finish it).
+   3. Upload the APNs key to both.
+   4. Swap `FIREBASE_PROJECT_ID`, `FIREBASE_CLIENT_EMAIL`,
+      `FIREBASE_PRIVATE_KEY` (in `web/.env.development.local` and Vercel) and
+      the FlutterFire options (`app/lib/core/firebase/options_dev.dart`,
+      `options_prod.dart`).
+   5. Redeploy the website, ship a build, and check a notification arrives on
+      dev and live.
+   6. Only then delete the Elite Artists projects.
+3. **Notifications, the final pass:**
+   - The **General** switch saves the preference but leaves the device token
+     registered (only "Turn off on this phone" removes it).
+   - "Forget this phone" (sign-out) asks for the token without waiting for
+     Apple's; if that's not ready the row stays, and the error is swallowed.
+   - **The first notification is sometimes not sent:** one test registered the
+     token and saved General on, but no welcome was recorded.
+   - **The welcome tray needs a redesign:** in-app messages must never appear
+     abruptly — wait for a main tab, the star flies down onto a frosted tray,
+     never repeat "I am your guiding star", swipe or tap to dismiss, hide
+     after a few seconds.
+4. **Email change: retest on live** (change, both codes arrive, the app and
+   admin show the new address). An earlier test left two live accounts
+   (rossbaiken@ and wiseoly@); both are kept.
+5. **The polish pass** across the app (from testing build 13 on a phone).
+6. **Legal review:** a solicitor or data-protection specialist should review
+   the Terms and Privacy Policy before public promotion; check the ICO data
+   protection fee. *No shortlist of solicitors is kept in this repository —
+   record the chosen firm here.*
+7. **App Store listing:** description, keywords, screenshots (iPhone and
+   iPad), the privacy label above.
 
-#### Why Flutter Next
-Push notifications are a core part of the Spiritpedia experience — the IAM (I AM) affirmation system requires reliable native push. Web push on iOS is unreliable. Flutter is the right long-term home for Spiritpedia.
+### 16.2 Emails
 
-#### What Flutter inherits, and what it does not
-The Flutter app connects to **the same Supabase project**. It inherits the
-schema, the RLS policies, the field-protection triggers and the
-`claim_healer_profile()` RPC for free. Plan around three things:
+- **Rewrite every email in the star's voice.** The inventory and what's needed
+  first (copy the live Supabase templates and SMTP sender; decide "I" the star
+  vs "we" the team; the outreach journey probably stays in the team's voice):
+  `docs/emails.md`.
+- **Publisher outreach:** no wording exists, so the journey cron skips publisher
+  journeys. Write it, then start outreach to publishers.
+- **Claimants aren't emailed a decision.** `/api/admin/claim-request` sends
+  nothing; the admin emails by hand.
+- **No record that an email was sent** (no table): approving a review twice
+  emails twice, and a failed send leaves nothing to retry. Needed before
+  mailshots.
+- **No outreach journey has ever been started** for a real listing — a business
+  decision; everything is built and tested.
+- Dev Supabase is on the free plan: its sign-in emails use default templates.
 
-* **Every write that matters is behind a Next.js API route, not RLS.** `/api/admin/write`, `/api/practitioner/profile`, `/api/profile/resubmit` and the `/api/email/*` routes hold the service role or verify a user token. Since migration `0007` the anon key has **no write grant on any content table**, so a Flutter client using the anon key can read everything and write almost nothing. Flutter must either call these same HTTP routes or get its own server-side equivalents. Do not solve this by loosening RLS.
-* **Auth is email OTP only** — no passwords, no social providers. `supabase_flutter` handles this, but the `pending_user_types` hop (the practitioner/explorer choice carried across the verification gap, keyed by email so it survives a magic link opened on another device) is a Spiritpedia-specific pattern that will need porting.
-* **The emotional-search safety gates are client-side logic in `utils/emotionSearchPatterns.js`** — crisis intercept, dual path, soft tier. They are pure functions with no database or network dependency, which makes them portable, but **they must be ported, not skipped.** A Flutter search box that reaches the mapping lookup without the crisis intercept in front of it would hand a list of videos to someone in a crisis. That is the one piece of this codebase where a shortcut is genuinely dangerous.
+### 16.3 Website follow-ups and gaps
 
- Bento Subject-Based Navigation (The Just Eat Model)
-Spiritpedia is structured like a spiritual discovery app. Instead of "Pizza" or "Thai Food," users explore subjects such as:
+- `app/docs/website-followups.md`: issues found while building the app
+  (channels mixed with teachers, memberships, search, offering dates), unfixed.
+- **Report and block on website reviews** ("⋯" as in the app).
+- **Deleting a publisher account doesn't flag the listing.**
+  `utils/deleteAccount.js` writes `account_deletions` for a claimed
+  `linked_healer_slug` only, never `linked_publisher_id`.
+- **`claim_requests` promises deletion 12 months after a decision** (table
+  comment), but nothing implements it — add it to `purge_activity()` or a cron.
+- **Back up the content:** a periodic `pg_dump --data-only` of the content
+  tables to private storage, not git.
+- **A `content_submissions` staging table** before practitioners add content
+  themselves (content tables have no "published" flag).
+- **Delete the spare Vercel project** `spiritpedia` once nothing needs
+  `spiritpedia.vercel.app`.
+- Dead code: `PractitionersTab`, `AccountsTab` in
+  `components/admin/AdminLiveTabs.jsx`.
+- Smaller: a branded 404 page; reviews for healers and publishers (the table
+  allows them; no UI); a `claimed_at` column (claimed status is inferred);
+  Admin Messages / Mailshots / Settings are placeholders; subject pages still
+  `select('*')` four collections uncapped (a TODO names the numbers).
 
-🌿 Practices & Modalities
-Tai Chi · Reiki · EFT / Tapping · Breathwork · Meditation · Yoga · Sound Healing · Homeopathy · Hypnotherapy · Astrology · Quantum Healing · Energy Medicine · Herbalism · Crystal Healing · Chakra Work
+### 16.4 What's next
 
-🧠 Teachings & Philosophies
-Law of Attraction · Non-Duality · Conscious Science · Spiritual Psychology · Timeline Shifting · Ancient Wisdom (Taoism, Vedic, Hermetic) · Lightwork & Shadow Work · Inner Child Healing · Akashic Records · Soul Contracts & Reincarnation · Sacred Masculine & Feminine
+- **Android.** Not started as a product. What exists: Flutter's `android/`
+  folder (`applicationId` `co.spiritpedia.app`), Android apps registered in the
+  FlutterFire options, `push_tokens.platform` accepts `android`, and the Gradle
+  setup has built before. Needed: a Play Console listing and signing key,
+  Android FCM checked end to end, the location permission strings and
+  approximate-location flow on Android, a pass over every screen (the app was
+  designed and tested on iPhone/iPad), Play's data safety form (same data as
+  §12.6), and Android back behaviour (already goes to Discover first).
+- **The content ingestion tool.** Today: Admin → Ingestion
+  (`components/admin/ContentIngestion.jsx`), one item at a time with YouTube-id and
+  Amazon-ASIN parsing and duplicate guards. The target library is 5,000 videos
+  and 5,000 books; a faster ingestion tool is the next content step. *Its design
+  isn't specified anywhere in the repo yet.*
+- **IAM affirmations:** the reserved `notification_preferences.iam_affirmations`
+  switch (off) is waiting for the affirmation notifications.
+- **Amazon:** each of the five Associates accounts needs three qualifying sales
+  by about 6 April 2027 or it closes; the Product Advertising API (licensed
+  covers, prices) needs those sales first (§17.6).
 
-💫 Themes & Focus Areas
-Manifestation & Abundance · Healing from Trauma · Raising Your Vibration · Emotional Mastery · Grief & Death · Self-Love & Boundaries · Nervous System Healing · Purpose & Life Direction · Relationships & Conscious Partnership
+---
 
-Each subject acts as an entry point. When a user selects "Reiki," they instantly see:
-* 🎥 Related videos
-* 📚 Related books
-* 🧘 Local & online healers
-* ✨ Related quotes and disciplines
+## 17. Reference
 
-👥 Healer Tiers
-Spiritpedia uses a four-tier system to classify all practitioners and teachers on the platform. Three tiers reflect reach and recognition — and crucially, they are not fixed. Every living healer on Spiritpedia has the opportunity to grow and graduate to a higher tier as their audience and impact grows. The fourth tier, Ascended Master, honours teachers who have passed on and sits outside the graduation ladder.
+### 17.1 Listing tiers
 
-This graduation mechanic is intentional. Spiritpedia is not just a directory — it is a career platform for spiritual practitioners.
+Three tiers reflect reach and can be graduated by the admin; Ascended Master
+honours teachers who have died.
 
-#### ⭐ Superhero (Amber badge)
-Global household names. Mainstream recognition beyond the spiritual community. Their books are in every bookshop. A person with no interest in spirituality has likely heard of them.
-* **Threshold**: 500,000+ followers on a single platform, OR mainstream name recognition regardless of follower count.
-* **Examples**: Eckhart Tolle, Abraham Hicks, Joe Dispenza, Deepak Chopra
-* *Superheroes are listed for platform authority and content value. They do not pay for listings.*
-
-#### 🕊️ Ascended Master (Gold badge)
-Teachers who have passed on but whose work remains foundational. They are shown in the **Timeless Teachers** shelf on the homepage rather than alongside living practitioners, and their profile carries a lifespan (`1931 — 2015`, or `b. 1931` when only the birth year is known).
-* **Threshold**: Deceased, with a body of work that still shapes the field.
-* **Examples**: Wayne Dyer, Louise Hay, Ram Dass
-* *Ascended Masters are listed for their legacy and content value. They do not pay for listings, and they are not part of the graduation ladder.*
-
-#### ✨ Luminary (Violet badge)
-Respected teachers and practitioners with a real, established audience within the spiritual world. They are known and trusted in the community. They may not yet have crossed into mainstream consciousness, but within their field they carry genuine authority.
-* **Threshold**: 50,000+ followers on a single platform (YouTube, Instagram, Facebook, or equivalent).
-* **Examples**: Teal Swan, Kyle Cease, Matt Kahn, Lu Chin (Qi Yoga)
-* *Luminaries are listed for content and community value. As the platform grows and delivers measurable value to them — bookings, traffic, visibility — a nominal listing fee may apply.*
-* **Graduation**: A Luminary who reaches 500,000+ followers on a single platform, or achieves mainstream name recognition, graduates to Superhero. Their badge updates automatically when an admin updates their tier in the dashboard.
-
-#### 🌿 Local Hero (Emerald badge)
-Practitioners operating locally or with a small online presence. This is the grassroots heart of Spiritpedia — the healers, coaches, and teachers working directly with people in their communities.
-* **Threshold**: Under 50,000 followers across all platforms.
-* **Examples**: Karina Grant (London), local Reiki practitioners, EFT coaches, breathwork facilitators
-* *Local Heroes pay a monthly listing fee (£5–£10/month) to be featured in the directory. Their profile includes contact details, availability, and a direct booking link.*
-* **Graduation**: A Local Hero who reaches 50,000+ followers on a single platform graduates to Luminary. Their badge updates automatically when an admin updates their tier in the dashboard.
-
-#### Tier Summary Table
-| Tier | Badge | Follower Threshold | Pays? |
+| Tier | Badge | Threshold | Pays? |
 | :--- | :--- | :--- | :--- |
-| ⭐ Superhero | Amber | 500k+ on one platform OR mainstream recognition | No |
-| 🕊️ Ascended Master | Gold | Deceased; foundational body of work | No |
-| ✨ Luminary | Violet | 50k–499k on one platform | Eventually yes (nominal) |
-| 🌿 Local Hero | Emerald | Under 50k across all platforms | Yes — £5–£10/month |
-
-#### Entity Types
-Not every entry in the healers table is a person. `entity_type` separates the two:
-* **individual** — a practitioner or teacher. Appears in the tier shelves and, for Superheroes, the hero billboard.
-* **channel** — a YouTube channel, podcast, or collective.
-* **app** — a wellness or meditation app (e.g. Headspace).
-* **organisation** — a network, school or community (e.g. The Shift Network). Added in migration 0020.
-
-Channels, apps and organisations keep their `tier` but are pulled out of the tier shelves (and Practitioners Near You) into the **Explore These Channels** shelf. A NULL `entity_type` is treated as individual. `healers.official` marks Spiritpedia's own profile: the "✦ Official" badge, first in Explore These Channels, admin only. **Publishers** are their own table (`publishers`), not an entity type.
-
-Everyone who shares their work signs up the same way (`user_type` 'practitioner' now means "shares their work"). The admin sets the kind of listing at approval in the Inbox, pre-filled from the optional "What best describes you?" (`user_profiles.described_as`); approving a publisher creates or links a `publishers` row (`user_profiles.linked_publisher_id`). Claims are matched against every listing, healers and publishers alike; anyone whose email doesn't match can "Request to claim it" (`claim_requests`), decided in the Inbox — first by emailing the listing's published address, else by a code on its channel or site. Logic shared by the pages: `web/utils/listings.js`.
-
-🧱 Core Modules
-| Module | Description | Platform |
-| :--- | :--- | :--- |
-| Emotional Search | "How are you feeling today?" → mapped content | Web + App |
-| Books Library | Curated archive sorted by subject | Web + App |
-| Videos Library | Tagged content from top teachers | Web + App |
-| Healer Directory | Global directory with contact funnels | Web + App |
-| My Library | Personal saved archive, organised by subject | Web + App |
-| IAM Notifications | AI-driven affirmation reminders | App Only |
-| User Dashboard | Saved items, emotional trends, journey timeline | App Only |
-
-🗄️ Tech Stack
-| Layer | Technology |
-| :--- | :--- |
-| Web Frontend | Next.js (React) + Tailwind CSS |
-| Web Hosting | Vercel |
-| Native App (Phase 2) | Flutter (iOS & Android) |
-| Database | Supabase (PostgreSQL) |
-| Auth | Supabase Auth |
-| Content Ingestion | URL parsing — YouTube ID + Amazon ASIN extraction |
-| AI Layer | Custom GPT (dual role: user guide + content curator) |
-| Dev Environment | VS Code + Claude Code |
-
-🌐 Web App Architecture
-The `/web` directory contains the full Next.js application.
-
-#### Key Pages
-* `/` — Homepage — masthead, emotional search, sticky subject pills, then two tabs: **Videos** and **Discover**. Discover is the billboard, healer and publisher shelves and on-demand Explore More; Videos is seven shelves fetched only when the tab is opened
-* `/subject/[slug]` — Subject page — every healer, book and offering carrying that tag, then one video shelf per teacher
-* `/healers/[slug]` — Individual healer profile with bio, photo mosaic, offerings, contact funnel
-* `/books/[slug]` — Book detail page — cover, description, purchase links, Want to Read / Mark as Read, community reviews
-* `/videos/[slug]` — Video detail page — 16:9 embed, teacher credit, share, community reviews
-* `/offerings/[slug]` — Offering detail page (courses / retreats / downloads / memberships) with contextual CTA
-* `/free-resources/[slug]` — Free resource detail page
-* `/publishers/[slug]` — Publishing house profile — bio, linked authors, and one auto-curated book shelf per author
-* `/library` — Personal saved library, auto-organised by subject
-* `/privacy`, `/terms` — the Privacy Policy and Terms of Use, built on `components/LegalPage.jsx`; indexable and in the sitemap. The working copy of the wording is `legal-draft.md` at the repo root, which is **deliberately not committed**
-* `/account` — account centre; becomes the Practitioner Dashboard for an approved practitioner. See Accounts & Authentication
-* `/auth/*` — signup, verify, claim, practitioner-setup, pending
-* `/admin` — CRM dashboard, eleven sections. **Protected by password login** — a session-cookie auth screen at `/admin/login`, gated by `web/proxy.js`. The password lives only in the `ADMIN_PASSWORD` environment variable (never in the codebase); it must be set both locally in `web/.env.local` and in Vercel → Settings → Environment Variables. See Admin (CRM)
-
-#### Key Components
-| File | Purpose |
-| :--- | :--- |
-| web/components/HomePageContent.js | Homepage data layer + shelf composition (server component) |
-| web/components/HomeMasthead.jsx | Navbar + search + subject pills, and the scroll handoff between them |
-| web/components/SiteLogo.jsx | The gold star + "Spiritpedia" wordmark, as one link home — shared by every nav |
-| web/components/SiteFooter.jsx | Site-wide footer — health disclaimer and legal links |
-| web/components/LibraryBar.jsx | Floating "✦ My Library" button, fixed bottom-centre on every page |
-| web/components/HomeTabs.jsx | The Videos / Discover tabs. Videos mounts on first click, then stays mounted and hidden |
-| web/components/VideoShelves.jsx | Every video shelf — the seven defaults, the per-teacher shelves under a subject filter, and For You |
-| web/components/ExploreMore.jsx | On-demand shelves — nothing below the healer rows is fetched until asked for |
-| web/components/EmotionSearch.js | The emotional search bar and every gate in front of it |
-| web/components/HeroBillboard.js | Rotating full-bleed feature — Superheroes interleaved with Ascended Masters |
-| web/components/SubjectPills.js | 5-pillar subject nav with overlay sub-subject dropdown |
-| web/components/ContentShelf.js | Reusable horizontal-scroll shelf — every homepage row is one |
-| web/components/ShelfRow.js | Shared shelf heading (title / subtitle / "See all") |
-| web/components/CardImage.js | Card artwork — lazy-loaded, and survives a dead image URL |
-| web/components/HealerCard.js | Healer card — four-tier badge, tier tooltip, favourite toggle, portrait fallback |
-| web/components/PublisherCard.jsx | Publishing house card — logo panel, author count, favourite toggle |
-| web/components/BookCard.js | Book cover with synopsis popover. Links internally to `/books/[slug]` — it carries **no** outbound purchase links |
-| web/components/VideoPlayer.js | Video card — thumbnail routes to `/videos/[slug]`, heart saves without a page load |
-| web/components/OfferingCard.js | Paid offering card — CTA varies by product_type |
-| web/components/FreeResourceCard.js | Free resource card with resource_type badge |
-| web/components/ShareButton.jsx | Share control — native OS sheet on touch devices, dropdown menu elsewhere |
-| web/components/LibraryView.js | Dynamic library with subject parsing and tri-tab view |
-| web/components/ReviewSection.jsx | Community reviews — the summary line, the list, and the submission form |
-| web/components/PractitionerModal.jsx | The signed-out account sheet — what an account is for, and the way in |
-| web/components/LibrarySignupNudge.jsx | Inline prompt on a populated library: saves made before accounts were required live in this browser until there is one |
-| web/components/CookieBanner.jsx | The consent gate in front of GA4 |
-| web/components/Analytics.jsx | GA4, rendered only after consent and never on /admin |
-| web/components/PractitionerDashboard.jsx | The approved practitioner's own dashboard at /account |
-| web/components/FavoriteHeart.js | The save control, shared by every card type |
-| web/components/SavePrompt.jsx | Saving needs an account: a signed-out heart or Save opens "Save it to your Library", with sign-in by 6-digit code in place; the save is made after sign-in (`utils/savePrompt.js`, AuthSync) |
-| web/components/WantToReadButton.js · ReadButton.js | Book reading state, stored per browser |
-| web/components/BackButton.jsx | Back link that honours the `?from=` chain rather than browser history |
-| web/components/AuthShell.jsx | The frame every /auth screen renders inside |
-| web/components/HeroImageRotator.js | The crossfade over a healer's three portraits |
-| web/components/admin/ConfirmDelete.jsx | The confirmation in front of every irreversible admin action |
-
-`DeferredShelves.jsx` was the first attempt at deferring the lower shelves. It
-deferred only the *rendering* — the data still arrived with the page — so it was
-removed when `ExploreMore.jsx` replaced it with a genuine on-demand fetch.
-`VideoGrid.js` went the same way: a flat paginated grid, replaced by
-`VideoShelves.jsx` grouping videos per teacher.
-
-#### Homepage Layout (Streaming Model)
-The homepage is a Netflix-style shelf stack behind two tabs. Top to bottom:
-
-`Navbar → Emotional search → Subject pills → Videos | Discover tabs → the chosen tab`
-
-**Discover** is the default and is everything the homepage already was:
-`Hero billboard → Healer & publisher shelves → Explore More`. It is passed into
-the tab component as children, so it stays server-rendered and arrives in the
-initial payload exactly as before.
-
-**Videos** fetches nothing until its tab is clicked, then stays mounted and
-hidden rather than unmounting — so a visitor who never opens it costs nothing,
-and someone switching back and forth never refetches. See The Videos tab.
-
-**The navbar** carries the logo on the left, and a share button plus an account
-icon on the right. The share button is desktop and tablet only — on a phone the
-OS share sheet is one tap away on every detail page, and the header needs the
-room. The account icon goes to `/account` when there is a session and opens the
-`PractitionerModal` when there is not — it never guesses, because the session is
-read on mount and starts as "not known yet" rather than as "signed out".
-
-**The pills stay at the top.** The navbar is pinned while you scroll the search
-bar away, then slides up and out at the exact moment the subject pills reach the
-top, leaving the pills docked in its place. One bar is always at the top of the
-viewport and the two never overlap. The trigger is a zero-height sentinel in
-normal flow directly above the pills — a sticky element cannot be observed for
-this itself, because once docked it stays in view and never reports leaving.
-Both bars use `position: sticky`, so neither leaves the document flow and
-nothing below them can jump when they dock.
-
-**The floating library button** — `✦ My Library`, violet, fixed bottom-centre —
-renders from the root layout, so it follows the visitor across every page except
-three: `/admin`, `/auth/*` (a sign-in screen should hold one task), and
-`/library` itself, where it was a button offering to take you where you already
-were. It replaced the per-page My Library links that used to sit in each navbar.
-
-The billboard rotates every 8 seconds inside a fixed frame (450px desktop, 300px
-mobile) through Superheroes and Ascended Masters interleaved three-to-one, so a
-Timeless Teacher surfaces early instead of after fifty Superheroes. The opening
-slide is chosen on the server, so each visit leads with a different face and
-there is no jump after hydration.
-
-Below it, each shelf is a `ContentShelf`, in this order:
-
-| Shelf | Who appears |
-| :--- | :--- |
-| **Worldwide** | Superheroes (individuals) |
-| **Rising Voices** | Luminaries (individuals) |
-| **Practitioners Near You** | Local Heroes |
-| **Timeless Teachers** | Ascended Masters |
-| **Publishing Houses** | Publishers, with their author counts |
-| **Explore These Channels** | Channels and apps, regardless of tier |
-| **Explore More** | Free Resources · Books & Literature · Courses & Programmes · Retreats & Live Events · Downloads & Audio · Videos — **fetched on demand** |
-
-A shelf whose query returns nothing renders nothing at all rather than an empty heading. The subject filter (`?subject=`) narrows *every* collection on the page, not just the healer rows.
-
-#### The Videos tab
-2,269 videos, shelved three different ways depending on what the visitor has
-asked for.
-
-**No filter — seven shelves.** *New to Spiritpedia* (the 24 most recent), one per
-pillar, and a mixed *Watch & Learn* catch-all. The pillar shelves do **not** lead
-with the newest, and that is deliberate: they used to, and because the most
-recent ingest was one large astrology batch whose videos each carry a second tag
-landing in a different pillar, four of the five shelves opened with the same
-batch. Each pillar now reads a random window inside its own result set, bounded
-by its own count, and takes every third row of a window three shelves deep — ids
-are sequential within an ingest and an ingest is one creator's back catalogue, so
-twenty consecutive rows is twenty videos by the same person.
-
-**With `?subject=` — one shelf per teacher**, biggest first. Entities with fewer
-than three videos in that subject are dropped, each shelf caps at twelve cards and
-is titled with a link to the teacher's profile, and fifteen shelves show before a
-*Show N more*. A single paginated query grouped in the browser, rather than one
-query per teacher.
-
-**For You** — prepended for a signed-in member with enough signal. Subject
-matching against what they have already saved, and the scoring is the whole of
-it: ranking saved tags by raw count measures what the *catalogue* is tagged with,
-not what the person likes. Across the healers and books people actually save
-from, `self-healing` is on 50% of items, `spirituality` 43%, `consciousness` 37%
-— every account came out with a top three inside the Consciousness pillar and two
-came out identical. Dividing each tag by how common it is separates them. Two
-guards keep it honest: four saves minimum, and at least one slug saved more than
-once, because a single healer can carry 28 subject tags and breadth without depth
-says nothing.
-
-#### 5-Pillar Subject Taxonomy
-The subject pills cluster database subject slugs under five Master Keys, defined in `SUBJECT_TAXONOMY` at the top of `web/components/SubjectPills.js`:
-
-**Emotional Healing · Consciousness · Manifestation & Creation · Mystical & Spiritual Exploration · Body & Energy**
-
-Hovering (or tapping) a pillar floats a panel of its sub-subjects over the billboard. Adding a new subject to a pillar means adding its slug to that map — the pill nav is driven by the taxonomy, while the sub-subject links are driven by the `subjects` table.
-
-#### Explore More — On-Demand Shelves
-Everything below the healer rows is fetched by the client only when a visitor
-asks for it. A card grid — *"What would you like to discover?"* — offers the
-sections not yet open; pressing one fetches that shelf's rows and opens it
-beneath a skeleton placeholder. Shelves stack in the order they were chosen and
-stay open, the chooser follows the last one carrying whatever is left, and it
-disappears once all five are open. Videos left this grid when they got their own
-tab.
-
-This is what fixed the homepage's weight. The page used to fetch and render
-every shelf on arrival — books, videos, courses, retreats, downloads and free
-resources — for content most visitors never scrolled to:
-
-| | Before | After |
-| :--- | :--- | :--- |
-| First-load payload | ~8 MB | ~824 KB |
-| Image requests | 2,142 | 17 |
-
-Two changes got there. The server component now fetches only subjects, healers
-and publishers; and every card image goes through `CardImage`, which carries
-`loading="lazy"` and `decoding="async"` so artwork is fetched as it nears the
-viewport. The hero billboard stays eager — it is the page's LCP element.
-
-Every paged query in the codebase orders by `id`, never `created_at` alone. The
-bulk import gave thousands of rows the same `created_at` to the microsecond, and
-ordering on that leaves Postgres free to break ties differently per query — pages
-overlap and some rows become unreachable. Measured before the fix: three pages of
-videos returned 36 rows but only 28 distinct ones. `id` is unique, so it settles
-every tie.
-
-#### Emotional Search & the Mapping System
-The search bar is the sacred entry point, and it is also where the platform is
-most exposed. Someone typing how they feel may be looking for a meditation — or
-may be in real trouble. The mapping system lives in
-`web/utils/emotionSearchPatterns.js` (pure, no database, no network) and is wired
-into `web/components/EmotionSearch.js`.
-
-The gates run in a fixed order, and the order is not negotiable:
-
-1. **Normalise.** Lowercase, strip accents and apostrophe variants, then peel
-   117 lead-in phrases (`i feel`, `i have been feeling`, `why do i always`),
-   determiners and trailing filler until a bare emotion is left.
-2. **Crisis intercept.** 171 phrases across seven categories — suicidal
-   ideation, self-harm, eating disorder, active abuse, sexual assault, child
-   protection, acute crisis. A match suppresses *everything*, including
-   universal search, and renders an interstitial pointing to
-   [findahelpline.com](https://findahelpline.com/) — free, confidential support
-   in the visitor's own country. No carousels render on that screen, no clinical
-   vocabulary, no red, and "Take me back to Spiritpedia" is a real, unshamed way
-   out. The intercept also guards the Enter key, not just the debounced
-   keystroke path.
-3. **Dual path.** 16 phrases — "hearing voices" chief among them — mean
-   channelling to one person and psychosis to another. Rather than guess, the
-   bar asks, warmly and with both options carrying equal weight, and maps on the
-   answer.
-4. **Soft tier.** Phrases that are heavy but not emergencies ("hopeless", "i
-   hate myself", "hate my body") return results with a gentler framing line.
-   The line now also renders on the no-results screen, which is where an
-   unmatched heavy phrase lands — the one tier whose whole purpose is to say
-   "there is help" used to say nothing there.
-5. **Lookup.** Four passes, in this order, each running only when the one
-   before it found nothing. See *How a phrase finds its subjects* below.
-6. **Medical disclaimer.** Results weighted towards quantum healing, homeopathy,
-   energy medicine or ayurveda carry *"Complementary to, not a replacement for,
-   medical care."*
-
-The mapping data lives in `emotion_mappings`: **701 distinct emotions** across
-**3,531 weighted rows**, covering **all 42 subjects**.
-
-#### How a phrase finds its subjects
-The vocabulary was never the weak part. An audit of 51 phrases of the kind
-people actually type found **7 matched**, while "my mum died", "broken heart"
-and "end of my marriage" all sat in the table unreachable — because the person
-had written "my mum JUST died", "my heart IS broken", "my marriage ENDED". The
-lookup only ever found an exact stored phrase, so it worked when the query was
-`[known lead-in] + [exact stored emotion]` and nothing else.
-
-Four passes now, first hit wins:
-
-| # | Pass | Finds |
-| :--- | :--- | :--- |
-| 1 | **Candidate cascade** | The query as typed, then one candidate per matching lead-in, shortest prefix first. Exact equality on the indexed `emotion` column |
-| 2 | **Content-token containment** | A stored emotion whose every content word appears in the query. "my mum just died" → `my mum died` |
-| 3 | **Reverse substring** | A stored emotion appearing whole inside the query |
-| 4 | **Forward substring** | A stored emotion *containing* the query — for bare words, where a one-word query really is part of a longer phrase |
-
-**Pass 2 requires full coverage of the stored phrase**, and that threshold is
-the difference between it working and it being worse than nothing. A looser
-half-the-words rule reached 86% coverage and produced "everyone else has it
-figured out" → `burnt out`, matching on the word "out". For someone describing
-how they feel, a confidently wrong answer is worse than an honest blank.
-
-**Pass 4 must match a whole word, bounded at both ends.** Unbounded, "hope"
-found `hopeless` and a search for hope returned the depression bundle. Bounding
-only the start does not fix it — "hopeless" *begins* with "hope". Hyphens count
-as boundaries, so "tapping" still reaches `eft-tapping`.
-
-**Passes 3 and 4 both exist on purpose.** Reversing the comparison rather than
-adding to it took "anger" from working to not working: a sentence needs the
-reverse, a bare word needs the forward.
-
-**When a query is nothing but stopwords**, the token list empties and pass 2
-would be skipped entirely — "i feel nothing" and "i dont know who i am anymore"
-both strip to zero. One retry then runs against a much smaller set of pure
-function words, where "nothing", "who" and "know" survive. Fallback only:
-running it by default would let "who" and "know" match far too much.
-
-Two things worth knowing about the shape of the data. Stored emotions are
-short — roughly 70% are one or two words — while people type five to seven, so
-the matcher's whole job is spanning that gap. And noun/adjective pairs are not
-interchangeable: `angry` was stored and `anger` was not, `sad` and not
-`sadness`. Those are rows, not code, and worth sweeping for rather than fixing
-one at a time.
-
-#### When nothing matches
-The dead end used to read *"No matches found — try 'anxious', 'lost', or
-'heartbroken'"*, which asks someone who has just written down how they feel to
-go away and feel it more simply. It now puts the shortfall on Spiritpedia and
-offers the words as clickable examples that fill the box, rather than as
-instructions.
-
-#### Publishing Houses
-A publishing house is a first-class entity, not a text field on a book. Houses
-appear in their own homepage shelf, each card showing the logo and a live author
-count read straight from the `publisher_healers` junction in the same query.
-
-A profile at `/publishers/[slug]` carries the house's bio (paragraph breaks
-preserved, capped and scrollable so a long history cannot push the catalogue off
-the fold), a row of linked authors, and then **one book shelf per author**,
-ordered by tier — Superhero first, an unknown tier last rather than dropped. A
-single combined shelf buried every author but the few whose titles happened to
-sort first.
-
-Publishers can be favourited like anything else, and saved houses get their own
-**Saved Publishers** section in My Library. Every link out of a publisher profile
-carries `?from=` / `?fromTitle=`, so a healer opened from Hay House offers its
-way back to Hay House rather than the homepage.
-
-#### Site-wide Footer
-Rendered once from the root layout, so it appears on every page except `/admin`.
-It carries a health disclaimer — warm rather than legalistic, framing informed
-choice and professional advice as part of the journey rather than a warning
-against it — a copyright line, and links to the Privacy Policy, Terms of Use,
-Affiliate Disclosure and **Cookie settings**. Cookie settings is a button: it
-reopens the cookie banner so a choice can be changed. Declining after
-accepting deletes the `_ga` cookies and reloads the page, because unmounting
-the analytics component does not unload a gtag that has already run.
-
-#### My Library
-The library at `/library` reads saved items from local storage (`favorited_healers`, `favorited_publishers`, `favorited_books`, `favorite_videos`, `favorited_courses`, `favorited_free_resources`), maps them against Supabase subject slugs, and generates folders dynamically. Empty categories are hidden automatically.
-
-🔐 Accounts & Authentication
-Email OTP only — no passwords, no social providers. Supabase Auth issues a
-6-digit code (JWT expiry 24h; the length is the dashboard's "Email OTP Length"
-setting, not ours, and `LENGTH` in the verify page must follow it).
-
-#### Routes
-* `/auth/signup` — email entry. `signInWithOtp` with `shouldCreateUser`, so sign-in and sign-up are one action
-* `/auth/verify` — six code boxes, paste support, auto-submit. Also the magic-link landing page: a session present on mount means the link signed them in, so it completes instead of showing boxes
-* `/auth/claim` — offered when an email matches an existing healer
-* `/auth/practitioner-setup` — the application form; pre-loads existing answers so a rejected applicant edits rather than retypes
-* `/auth/pending` — post-submission holding page
-* `/account` — renders differently per state (see below)
-
-#### Two Supabase clients, deliberately
-* `utils/supabase.js` — anonymous, **stateless** (`persistSession: false`). Imported by server components, which share one long-running Node process; a client that persisted a session there could answer one visitor with another's identity
-* `utils/supabaseAuth.js` — browser-only, holds the session (`persistSession`/`autoRefreshToken` true)
-
-`utils/supabaseAdmin.js` is the service-role client. Server only, never imported by a client component.
-
-#### AuthSync
-`components/AuthSync.jsx` mounts from the root layout and creates the profile row
-plus migrates localStorage favourites **whenever a session appears** — not just
-on the verify page. Without it, a magic-link click or any returning visit left an
-account with no profile. `INITIAL_SESSION` repairs existing damage on next visit.
-
-#### The practitioner/explorer choice
-`pending_user_types` carries it between submitting an email and verifying it,
-keyed by email so it survives a magic link opened on another device.
-sessionStorage alone cannot. Written via `/api/pending-user-type` (service role):
-the table has no anon SELECT policy, which also makes an anonymous UPSERT fail
-and an anonymous UPDATE silently match zero rows. Each write re-stamps
-`created_at`, and `/api/cron/pending-signups` deletes rows older than 24 hours
-every day, so an abandoned sign-up's address is gone within two days — the
-figure the Privacy Policy gives.
-
-#### /account states
-| State | Renders |
-| :--- | :--- |
-| explorer | account summary — email, type, sign out |
-| practitioner · pending | "under review" notice |
-| practitioner · approved | **Practitioner Dashboard** — Profile / Content / Settings tabs |
-| rejected | notice + "update and resubmit" link. Rejection also reverts `user_type` to explorer |
-
-A status badge is only ever shown for practitioners. An explorer is not pending anything.
-
-⭐ Community Reviews
-Live on books, videos, offerings and free resources. **Nothing is public until a
-moderator approves it**, and that is enforced by the read policy rather than the
-UI: `status = 'approved'`, so the anonymous key cannot see a pending review at
-all. The author's own copy therefore needs their session, and so does every
-write.
-
-Three columns are never sent from the browser. `status` and `author_healer_slug`
-belong to the table's trigger, which forces the first to `pending` and derives the
-second from the submitter's own profile — a slug taken from the payload would let
-anyone link their name to someone else's healer page. `author_name` is the one
-field the trigger cannot fill, because `user_profiles` is readable only by its
-owner and a public list has no way to join for it afterwards.
-
-A second submission upserts on `(user_id, content_type, content_slug)`, so editing
-a review is an edit rather than a second row. An approved practitioner's name on
-a review links to their profile; everyone else's is plain text.
-
-**The trigger freezes `status` for `anon` and `authenticated` and yields to the
-service role.** Without that exemption nothing could ever be approved — a
-`BEFORE UPDATE` trigger runs for every role, and the service role bypasses RLS,
-not triggers. The first version of this reported "approved" on every press while
-the review stayed in the queue, which is why `/api/admin/reviews` re-reads the row
-and answers `409` rather than trusting a 200.
-
-🛠️ Admin (CRM)
-`/admin`, gated by `proxy.js` (session cookie from `ADMIN_PASSWORD`). Sidebar shell; eleven sections.
-
-| Section | State |
-| :--- | :--- |
-| Inbox | live — unified queue of applications, claims, pending reviews and broken images; three-pane reviewer; Approve / Reject / Approve & Next |
-| People | live — Practitioners / Explorers tabs, search, 360° record with editable Profile, Content, Admin Notes, Activity, and a working Delete |
-| Content | live — the **Healer Directory**: all 126 records, searchable, filterable by subject and claim state, each opening a four-tab editor |
-| Reviews | live — Pending / Approved / Rejected, Approve and Reject, emails the reviewer |
-| Claims | live — record of claimed profiles |
-| Analytics | live — counts |
-| Ingestion | live — the original ingestion form, unchanged |
-| Messages · Flags · Mailshots · Settings | placeholders |
-
-**The healer record has four tabs** — Profile, Content, Outreach, Admin Notes.
-Content lists all six collections (videos, books, courses, retreats, downloads,
-free resources); it used to show only videos and books, because the two tables
-that hold the rest are reached by `healer_id` rather than by `healer_slug` and
-the query simply never ran. Every row carries a 40×40 thumbnail that opens an
-inline URL editor, and a delete control that appears on hover and stays
-reachable by keyboard. Videos are the exception: their thumbnail is derived from
-the YouTube id at render time, so there is nothing to store and nothing to edit.
-
-**The Healer Directory** was the gap behind "why don't pre-loaded healers appear
-in People?". They never could: People lists *accounts* (`user_profiles`, 2 rows
-today), and a pre-loaded healer has none. The two populations meet only where an account
-has claimed a profile. The directory pages on `id`, selects only the five columns
-the list renders, and the record editor writes 21 fields through
-`/api/admin/write`. `healer_slug` is **not** among them — videos and books find
-their healer by that text, not a foreign key, so renaming it would orphan their
-content and 404 the public page.
-
-**Claimed status has no column.** `healers` carries no owner field; the link is
-recorded only as `user_profiles.linked_healer_slug`, so the badge reads the
-profiles the dashboard has already fetched. Where those cannot be read the badge
-is absent rather than confidently wrong. A `claimed_at` column would make it a
-property of the row.
-
-**Deletes are wired, both behind the same confirmation dialog.** Deleting an
-account removes the `auth.users` row — which is what actually removes the person,
-since three foreign keys cascade off it, taking the profile, the saved library and
-every internal note. Deleting a healer orphans its content and nothing in the
-schema stops it, so the dialog counts the videos, books, offerings and resources
-that will be left pointing at nobody before it asks.
-
-**The Inbox badge counts everything pending** — applications, reviews and broken
-images alike — and the same number feeds the top bar and the bell. A queue item
-that carries an `href` rather than a profile is sent straight to its destination
-instead of opening in the three-pane reviewer, which only knows how to render
-the sources hanging off a profile. Reviews use that to reach the Reviews tab;
-broken images use it to reach the healer's own editor, on the tab that holds the
-field they need (`?tab=content` for a content image, `?tab=profile` for a
-portrait).
-
-Needs `SUPABASE_SERVICE_ROLE_KEY` and `ADMIN_NAME` in the environment. Without
-them the data sections show a named reason, never an empty list — an empty list
-would claim nobody has signed up.
-
-**Derived, not stored:** an application showing `incomplete` is a practitioner who
-pressed "Skip for now", detected by the absence of `full_name`/`modality`. The
-field-protection trigger pins `verification_status`, so the form could not write
-such a state anyway. Approve is disabled for these — a healer with no name has no
-reachable slug.
-
-**Claimed vs admin-ingested** is decided by comparing `healers.created_at` with
-`user_profiles.created_at`: approval creates the healer row, a claim links to one
-that already existed. There is no claims table; a `claimed_at` column should
-replace this.
-
-🔒 Security model
-Write access is the thing to understand before changing anything here.
-
-* **The anon key ships in every page bundle.** Anything it may write, any visitor may write. It previously held UPDATE on `healers` and INSERT on four tables — fixed in `0007`
-* **All content writes are server-side**, via `/api/admin/write` (admin cookie) and `/api/practitioner/profile` (user token). Reads stay in the browser
-* **`user_profiles` carries a BEFORE INSERT OR UPDATE trigger** pinning `verification_status`, `linked_healer_slug`, `id` and `created_at` against ordinary callers. RLS is row-level and cannot express column limits. `service_role` and direct SQL pass through
-* **`claim_healer_profile()`** is the only browser-reachable path to those two columns. It re-checks the caller's email server-side and never trusts a slug from the client. This is why `healers.contact_email` is read-only in the practitioner dashboard — an editable one would let a practitioner hand someone else a claim
-* **`admin_notes` has RLS with no policies at all.** Notes *about* people; the subject must never be able to read them
-
-#### API routes
-| Route | Guard |
-| :--- | :--- |
-| `/api/admin/*` | admin session cookie, re-checked per route (`/api` is outside `proxy.js`'s matcher) |
-| `/api/practitioner/profile` | user access token; slug read from their own profile row; writable fields are an allowlist |
-| `/api/profile/resubmit` | user access token; only ever writes `pending` |
-| `/api/pending-user-type` | open by design — pre-authentication, writes a value that grants nothing |
-| `/api/admin/reviews` | admin cookie. `GET` returns the moderation queue (the anon key cannot see a pending review at all); `PATCH` sets the status **and** emails the reviewer |
-| `/api/email/*` | user access token, verified against Supabase. **None of them take a user id** — identity comes from the token, because a route that emailed whichever id it was handed would be a way to send mail to any account on the platform |
-| `/api/admin/journey/*` | admin cookie. `start` begins a claim sequence; `[healer_slug]` reads or stops one |
-| `/api/cron/*` | `CRON_SECRET`, as `Authorization: Bearer <secret>` (which Vercel sends of its own accord) or `x-cron-secret` so the route can be exercised by hand. Returns **503** when the secret is unset and **401** when it is wrong — the two are different problems and should not look alike |
-
-📈 Analytics & SEO
-* GA4 via `@next/third-parties`, excluded from `/admin`, rendered only when `NEXT_PUBLIC_GA_MEASUREMENT_ID` is set **and only after the visitor has accepted**. Spiritpedia is UK/EU-facing, where an analytics cookie needs agreement before it is set — so not rendering the component *is* the gate: `@next/third-parties` injects the script tag, and with nothing rendered nothing is requested, no cookie is written, and there is no gtag to tear down if they decline. The choice lives in `localStorage` under `sp_cookie_consent` (`utils/consent.js`), read through `useSyncExternalStore` so the banner and the script agree without a round trip
-* Dynamic `sitemap.xml` (4,895 URLs, video pages included) and `robots.txt`. Paginated with an `id` tiebreaker: PostgREST caps responses at 1,000 rows and truncates silently
-* Transactional email via Resend — see below
-
-📧 Transactional Email
-Ten emails, all through `utils/email.js`, which decides the from address, the
-reply-to, the BCC and the failure policy once.
-
-**Five transactional**, sent in response to something the person just did:
-
-| # | Email | Fires |
-| :--- | :--- | :--- |
-| 1 | Explorer welcome | account created, `user_type = explorer` |
-| 2 | Practitioner welcome | account created, `user_type = practitioner` |
-| 3 | Review received | a review is submitted |
-| 4 | Review approved | a moderator approves it |
-| 5 | Review rejected | a moderator rejects it |
-
-**Five outreach**, the healer claim journey — see below.
-
-From `Spiritpedia <hello@accounts.spiritpedia.co>` — a subdomain, so a
-deliverability problem with transactional mail cannot damage the reputation of the
-root domain the team send from by hand. Reply-to is `love@spiritpedia.co`, because
-an email people cannot answer is a dead end. Every send is blind-copied to an
-archive inbox, since nothing in the schema records that an email went out.
-
-**A failed email never fails the action that triggered it.** Approving a
-practitioner publishes them whether or not the congratulations arrived, so
-`sendEmail` swallows everything and logs. It also inspects the SDK's `error`
-field rather than only catching: **Resend resolves on a rejected send**, so an
-unverified domain would otherwise be reported as success.
-
-**The welcomes hang off the one signal that distinguishes a new account from a
-returning one.** `ensureProfile` upserts `ON CONFLICT DO NOTHING` on every
-sign-in, so treating that as a creation would email a welcome every time somebody
-signed in. Adding `.select()` makes the insert return its row and the collision
-return nothing — which also settles the race for free, since two callers run
-`ensureProfile` concurrently by design and exactly one sees a row back.
-
-**Email cannot be sent from the browser**: `RESEND_API_KEY` has no
-`NEXT_PUBLIC_` prefix, deliberately. Each client-side trigger therefore has a thin
-server route, and `utils/contentMeta.js` resolves a `content_type` + slug pair to
-a title and creator name — three different joins, because books keep the author
-inline, books and videos join `healers` by text slug, and courses and free
-resources by bigint id. Nothing there throws; an unknown item falls back to its
-slug and the templates drop the "by …" clause rather than render it empty.
-
-`utils/resend.js` does **not** affect sign-in codes — those are sent by Supabase
-Auth through its own SMTP.
-
-✉️ Healer Email Journey
-An unclaimed healer has a profile on Spiritpedia they have never seen. The
-journey is five plain-text emails over twelve weeks inviting them to claim it,
-started by hand from the **Outreach** tab on their record and run by a daily
-cron.
-
-`JOURNEY_SCHEDULE = [0, 21, 42, 63, 84]` — day 0, then every three weeks.
-
-**They are plain text with no HTML and no links, on purpose.** Every call to
-action is "reply to this email". A cold first contact that looks like a
-newsletter is filtered like one, and a reply is the only response that starts a
-relationship rather than a click-through. They are sent from
-`love@spiritpedia.co` rather than the `accounts.` subdomain the transactional
-mail uses, because this is a person writing to a person.
-
-**The sequence stops the moment the profile is claimed**, checked on every run
-rather than once at the start — so somebody who joins on day 22 never receives
-email 3. It also stops if the healer row is deleted or loses its contact address.
-
-**At most one email per journey per run, lowest-numbered first.** A missed day is
-worked through one at a time rather than three landing together.
-
-**The double-send guard is the write itself.** There is no `sending` status to
-leak if the process dies: the run claims the slot with a conditional update
-(`.update({ sent_3_at: now }).is('sent_3_at', null)`) and only the caller that
-gets a row back sends. If the send then fails the timestamp is put back to null
-and tomorrow tries again.
-
-`0009` uses a **partial** unique index (`WHERE status <> 'stopped'`) rather than
-a plain UNIQUE on `healer_slug`, so a stopped journey stays in the table as
-history and a healer can be restarted later.
-
-🖼️ Broken Images Audit
-2,890 image URLs across this catalogue point at somebody else's server, and
-**274 of the 377 healer portraits point at Google's image cache**. They resolve
-today and that is not a promise. When one stops, the public card falls back to a
-placeholder and says nothing — so a shelf quietly empties of pictures and the
-first report is a visitor's.
-
-A daily cron checks them and writes failures to `broken_images`, surfaced as a
-**Broken Images** filter in the admin Inbox. Saving a replacement URL clears the
-row immediately; an image that recovers on its own clears at the next audit.
-
-| | Cadence | Why |
-| :--- | :--- | :--- |
-| Content images (2,513) | a seventh per day | A full pass measured ~164s against a Vercel function ceiling of 60s |
-| Healer portraits (377) | every day, in full | 10s, and the portrait is the first thing a visitor sees |
-
-**Portraits are an array, not a column.** `healers.image_urls` holds three, and
-all three are on screen — the healer page runs a crossfade rotator over them and
-the homepage card picks one by an index seeded on the active subject filter.
-Auditing only `[0]` would miss two thirds of them.
-
-**Most of the work was avoiding false positives**, and every rule below is there
-because the naive version was measured and found wrong:
-
-* **A User-Agent is mandatory.** Two of fourteen sampled hosts answer 403 without one and 200 with it.
-* **A 404 is definitive and surfaces at once; a 403 must fail twice.** Two hosts answer 4xx to a burst of twenty concurrent requests and 200 to the same URL alone — an identical dry run minutes apart returned 7 failures and then 5.
-* **A 200 can still be a broken image.** `app.karinagrant.co.uk` answers every image request with HTTP 200, `content-type: text/html` and 599 bytes of its single-page-app shell. It never 404s. Ten of her offerings point at it.
-* **…but "not `image/*`" is not the test.** Of 25 such responses, 12 were served as `application/octet-stream` by S3, CloudFront and Akamai and every one was a real JPEG or PNG. Document types are believed; vague ones get a 64-byte ranged GET and are judged on their magic bytes.
-* **An HTTP 202 is a bot challenge, not a verdict.** Recorded as *undetermined* — neither broken nor healthy — and counted in the run's output, because "found nothing" and "could not look" are different claims.
-* **The audit was provoking those challenges itself.** One healer's 21 free resources sat at consecutive ids and went out as a single 21-wide burst at one server. URLs are now dealt out round-robin by host, which cut 21 false positives to zero.
-
-`record_id` is **text**: `books.id` is a bigint but `courses.id` and
-`free_resources.id` are UUIDs. One row per record, so a healer with two dead
-portraits is still one healer to go and fix.
-
-Content targets rotate by a daily offset, so a run cut short by its 40s deadline
-does not skip the same rows every day — a permanent silent blind spot being
-exactly what this feature exists to prevent.
-
-🗄️ Migrations
-There is no migration runner; paste into the Supabase SQL editor.
-
-**To rebuild the database in a new, empty Supabase project:** run
-`0000_production_baseline.sql`, then `supabase/seed/emotion_mappings.sql`.
-That is the whole schema plus the search vocabulary. `0001`–`0011` are the
-history the baseline already contains — running them afterwards is harmless
-and unnecessary.
-
-**To change the live database:** write the next numbered file (`0012_…`),
-idempotent, and run it by hand — as before.
-
-| File | Purpose |
-| :--- | :--- |
-| `0000_production_baseline` | **the complete `public` schema**, `pg_dump --schema-only` from production on 9 Oct 2026, plus the `practitioner-images` storage bucket and its policies. No data. For an **empty** project only: it is plain `CREATE TABLE`, so it stops at the first table that already exists — correct, since it must never be run against production. See the file header for the four small edits made to pg_dump's output |
-| `0001_user_profiles` | profile table, RLS, field-protection trigger |
-| `0002_user_favourites` | saved items, unique on (user, type, slug) |
-| `0003_claim_healer_profile` | the claim RPC; replaces 0001's trigger function |
-| `0004_pending_user_types` | practitioner/explorer choice across the verification gap |
-| `0005_admin_notes` | internal notes; RLS on, no policies |
-| `0006_lock_down_content_writes` | **superseded** — dropped policies by guessed name and silently did nothing |
-| `0007_force_content_read_only` | enumerates `pg_policies` and drops by actual name. Ends with a SELECT so the result is visible rather than assumed |
-| `0008_reviews` | the reviews table, its RLS, and the trigger that pins `status` and `author_healer_slug`. **Amended after the fact** to exempt the service role — the first version froze `status` against every caller, which meant no review could ever be approved |
-| `0009_healer_journeys` | the claim-outreach sequence. A **partial** unique index (`WHERE status <> 'stopped'`) rather than a plain UNIQUE, so a stopped journey survives as history and a healer can be restarted |
-| `0010_broken_images` | the image audit queue. **Amended after the fact** to add `healers` to the `table_name` CHECK when portraits joined the audit; the `ALTER` is a second statement rather than an edit to the `CREATE`, so the file reads in the order the database received it. Reconciled against production 8 Oct 2026 and carries a verification block that compares a database to the file |
-| `0011_emotion_vocabulary` | the 43 emotion rows added by hand during the emotion-search work, read back out of production rather than retyped. `ON CONFLICT … DO UPDATE SET weight`, so the file is the authority on those rows and safe to re-run — but re-running resets their weights. Needs the table from `0000`. The full vocabulary, these 43 included, is `supabase/seed/emotion_mappings.sql` |
-| `0012_favourites_slugs` | every `user_favourites.content_slug` becomes a slug (the website and app both save slugs now); records `book_read` as a content type |
-| `0013_account_deletions` | `account_deletions`: a note, with no personal data, that an account with a claimed listing was deleted, for the admin Inbox |
-| `0014_push_notifications` | `push_tokens`, `notification_preferences` and the send record; `register_push_token()`. Owner-only; cascades with the account |
-| `0015_review_moderation` | review reports (with a snapshot), blocks and bans; `report_review()`, `block_review_author()`; blocked reviewers hidden from the blocker; banned accounts can't post |
-| `0016_save_counts` | `save_counts(type, slugs)`: save totals for books and videos, for Spiritpedia Suggests |
-| `0017_user_interests` | `user_interests`: a member's More of subjects, owner-only, checked against `subjects` |
-| `0018_hidden_subjects` | adds Never show (`hidden_subjects`) to the same row; a subject can't be in both |
-| `0019_places_and_areas` | `places` (GeoNames towns, 5,000+), `healers.place_id` by trigger, `user_preferences` (a member's area, owner-only), `nearest_place()`. Areas are towns, never positions |
-
-`0012`–`0018` are **on dev and live**. Since `0014`, every migration runs on the
-dev project (`khtpbnof…`) first, is checked there with temporary accounts,
-then runs on live and is checked read-only.
-
-🧨 Database state and rebuilding it
-**Since 9 October 2026 the repository can rebuild the database's structure and
-its search vocabulary — but not its content.**
-
-#### 1. Captured: the schema and the emotion vocabulary
-* **Schema** — `supabase/migrations/0000_production_baseline.sql`, exported with `pg_dump 17.6 --schema-only --schema=public` (production runs Postgres 17.6). It holds every table — including the nine that no numbered migration creates (`healers`, `books`, `videos`, `subjects`, `courses`, `free_resources`, `publishers`, `publisher_healers`, `emotion_mappings`) — with constraints, indexes, functions, triggers, RLS policies and grants, plus the `practitioner-images` bucket and its four storage policies.
-* **Search vocabulary** — `supabase/seed/emotion_mappings.sql`: all **3,531 rows / 701 emotions / 42 subjects**, ids and timestamps kept, `ON CONFLICT DO NOTHING`. The original `spiritpedia-emotion-mappings.sql` seed was never committed; this replaces it.
-* **How it was verified** — the dump's object counts matched the live catalog (16 tables, all with RLS; 24 policies; 46 constraints; 43 indexes; 3 functions; 2 triggers). Then the baseline and seed were loaded into a throwaway local Postgres 17.6 (with stand-ins for Supabase's `auth` and `storage` schemas) and the rebuilt database matched production on every one of those counts and on the vocabulary; re-running the seed changed nothing; and `0001`–`0011` all ran cleanly on top.
-* **Re-export** after any schema change, the same way, so the baseline does not drift. A connection string is needed for `pg_dump`; keep it out of `.env.local` once done — nothing in the app uses one.
-
-#### Still NOT captured: the content
-Healers, books, videos, courses, free resources, publishers and subjects —
-the content itself — exist only in production. So do accounts, favourites,
-reviews and the broken-images queue. Supabase's own backups cover them; there
-is no copy in this repository, by design (it is live data, not seed). A
-periodic `pg_dump --data-only` of the content tables to private storage — not
-to git — would close that gap.
-
-#### 2. Migrations applied before their file existed
-* **`0010_broken_images`** — the table was created by hand on 6 Oct, and the file written afterwards as the record. Its `CHECK` constraint was then **altered in production** to add `healers`; that `ALTER` is the second statement in the file. The file is idempotent and matches the live schema (verified by probing all four `table_name` values and confirming `videos` is still rejected).
-* **`0008_reviews`** — amended after the fact to exempt the service role from the status-pinning trigger. The file in the repo is the corrected version.
-
-#### 3. Live data that is not seed data
-| Table | State | Note |
-| :--- | :--- | :--- |
-| `broken_images` | **43 rows, all queued** (`failures >= 2`) | Real findings. 15×404, 14×403, 13×415 soft-404, 1 no-response. By table: 33 courses, 6 free resources, 3 books, 1 healer portrait |
-| `healer_journeys` | **0** | Infrastructure is live and the cron runs, but **no journey has ever been started for a real healer**. Starting one sends a real email to a real practitioner — deliberate that none has been |
-| `user_profiles` | **2** | The original test accounts were deleted. Low numbers mean the accounts features are unused, not unbuilt |
-| `user_favourites` | 10 | |
-| `reviews` | **0** | The review system is complete and exercised; nothing has been submitted since the test rows were cleared |
-| `healers` | 126 | Was 129. "Stan Grof" (id 132) was an empty duplicate deleted via the admin dashboard; "Stanislav Grof" (id 133, 78 items) is the real record and is intact |
-
-🗄️ Database Structure (Supabase)
-#### Tables
-* **healers**: `id`, `name`, `healer_slug`, `bio`, `tier`, `entity_type`, `birth_year`, `death_year`, `image_urls[]`, `subject_slugs[]`, `availability_type`, `country`, `city`, `contact_email`, `contact_phone`, `booking_url`, `website_url`, `youtube_url`, `instagram_url`, `facebook_url`, `twitter_url`, `tiktok_url`
-* **books**: `id`, `title`, `slug`, `author`, `description`, `mock_cover_url`, `amazon_url`, `goodreads_url`, `worldofbooks_url`, `subject_slugs[]`, `healer_slug`
-* **videos**: `id`, `title`, `slug`, `platform_url`, `subject_slugs[]`, `healer_slug`
-* **subjects**: `id`, `name`, `slug`
-* **courses**: `id`, `title`, `description`, `course_url`, `price`, `image_url`, `product_type`, `affiliate_status`, `start_date`, `end_date`, `is_active`, `subject_slugs[]`, `healer_id`
-* **free_resources**: `id`, `title`, `description`, `resource_url`, `resource_type`, `image_url`, `is_featured`, `is_active`, `start_date`, `end_date`, `subject_slugs[]`, `healer_id`
-* **publishers**: `id` (uuid), `name`, `slug`, `description`, `website_url`, `logo_url`, `founded_year`, `subject_slugs[]`
-* **publisher_healers**: `id`, `publisher_id` (→ publishers.id), `healer_id` (→ healers.id) — the many-to-many junction linking a publishing house to its authors
-* **user_profiles**: `id` (→ auth.users), `user_type`, `verification_status`, `linked_healer_slug`, `full_name`, `modality`, `bio`, location, socials, `subject_slugs[]`, `image_urls[]`. Carries the field-protection trigger
-* **user_favourites**: `user_id`, `content_type`, `content_slug` — unique together. `content_slug` is **three different shapes**: a text slug for healers and publishers, a bigint for books and videos, and a **UUID** for courses and free resources. (The migration comment calls the last two numeric. They are not.) `reviews.content_slug` deliberately does not inherit this — there it is always the slug
-* **pending_user_types**: `email` (PK), `user_type`, `created_at` — consumed and deleted at verification; anything older than 24 hours is deleted by the daily `pending-signups` cron
-* **admin_notes**: `subject_user_id`, `body`, `created_by` — service role only. `subject_user_id` is a foreign key onto `auth.users`, so a note can only be attached to an account; an unclaimed healer cannot have one
-* **reviews**: `id`, `user_id` (→ auth.users), `content_type`, `content_slug`, `rating` (1–5), `body`, `author_name`, `author_healer_slug`, `status`, `created_at`. Unique on (user, type, slug). Public read is `status = 'approved'`; the author can read their own whatever its state
-* **healer_journeys**: `id` (uuid), `healer_slug` (→ healers, ON DELETE CASCADE), `status`, `stop_reason`, `started_at`, `email_1_sent_at` … `email_5_sent_at`, `created_at`. Service role only. One running journey per healer, enforced by a partial unique index so stopped ones remain
-* **broken_images**: `id`, `table_name`, `record_id`, `healer_slug`, `title`, `image_url`, `status_code`, `failures`, `first_seen_at`, `detected_at`. Unique on (`table_name`, `record_id`); RLS on with no policy at all, so only the service role can see it. `record_id` is **text** because books use bigint ids while courses and free resources use UUIDs
-* **emotion_mappings**: `id` (uuid), `emotion`, `subject_slug`, `weight`, `created_at` — powers the emotional search bar; one emotion maps to several weighted subjects, 5–8 of them, so a search returns a shelf rather than a single link. 3,531 rows covering 701 distinct emotions and all 42 subjects. Unique on (`emotion`, `subject_slug`), so additions can be written `ON CONFLICT DO NOTHING` and re-run safely. **Every row is backed up in `supabase/seed/emotion_mappings.sql`** (exported 9 Oct 2026). Emotions are stored lower-case and **apostrophe-free** (`im`, not `I'm`) — the matcher normalises the same way, and a row stored with an apostrophe would never match
-
-#### Conventions worth knowing
-* **`subject_slugs` is a Postgres array**, not a string. Every subject filter is an array-containment check (`.contains(...)` → the `@>` operator), which matches a slug as one whole element — that is what makes hyphenated tags like `eft-tapping` safe.
-* **Healers, books, and videos link by `healer_slug`** (text). **Courses, free resources, and publishers link by `healer_id`** (bigint, via the `publisher_healers` junction for publishers). The two are not interchangeable.
-* **Books resolve by `slug`**, not id — `/books/[slug]` is SEO-friendly, and `books.slug` is unique and backfilled from the title. Publishers and videos resolve by `slug` too. Checked across all 4,796 rows in the four content tables: no null slugs, no duplicates.
-* **PostgREST caps a response at 1,000 rows and reports no error when it truncates.** Every query that can exceed it pages with `.range()` on `id`. `/subject/self-healing` was silently losing 45 of its 1,045 videos before its video query moved to the client.
-* **`tier`** replaces the legacy `is_famous` boolean. Values: `superhero` / `ascended_master` / `luminary` / `local_hero`. Anything else — including NULL mid-backfill — still surfaces in the Practitioners Near You shelf so no practitioner silently vanishes, but the card renders a neutral grey "Teacher" badge rather than borrowing Local Hero's, so bad data is visible instead of mislabelled.
-* **`entity_type`**: `individual` / `channel` / `app`. NULL is treated as `individual`. Channels and apps are filtered out of the tier shelves and the billboard in memory — no separate query.
-* **`birth_year` / `death_year`** are optional integers, collected in the admin form only when the tier is Ascended Master. The profile shows `1931 — 2015` when both are set, `b. 1931` when only the birth year is known, and nothing when neither is.
-* **`courses` stores every paid offering**, split by `product_type`. Live counts: `course` 501 · `download` 370 · `retreat` 121 · `membership` 107 · `meditation` 3 · `podcast` 1. An unset value is treated as a course, so legacy rows predating the column still surface — and the last two show the column is free text, not an enum, so a new value appears rather than erroring.
-* **`free_resources.resource_type`**: `practice` 213 · `download` 132 · `meditation` 64 · `workshop` 35 · `mini_course` 15 · `course` 1 · `membership` 1. Free text again; the last two are strays from ingestion rather than intended categories.
-* **Subject pages fetch no videos on the server.** They used to, and the whole matching pool was serialised into the HTML so that 24 of them could render — `/subject/self-healing` was 4.9 MB. Videos now load from the client and group into one shelf per teacher. The remaining four collections are still `select('*')` and still uncapped; there is a TODO on that query naming the numbers.
-* **Expiration is enforced at query level.** Courses and free resources only surface while live: `is_active` is true, and `end_date` is either NULL (evergreen) or not yet past. The window is recomputed per request, so it rolls forward on its own.
-
-💰 Monetisation
-* **Local Hero directory listings**: £5–£10/month per practitioner
-* **Luminary listings (future)**: Nominal fee once platform delivers measurable value
-* **Amazon affiliate links**: **live** — `.com` and `.co.uk` links tagged at render, with disclosure; OneLink redirects international visitors to Canada, Spain and Australia too. See *Amazon Associates* below
-* **Premium features (Phase 2)**: Personalised journeys, AI coaching, advanced library
-
-Amazon is the only revenue source switched on. A store earns only while its
-`AMAZON_TAG_*` var is set on `spiritpedia-e58y`; unset, its links fall back to
-clean, untagged `/dp/` links and no disclosure line shows.
-
-✅ Project Status
-| Milestone | Status |
-| :--- | :--- |
-| Supabase backend live | ✅ Complete |
-| Next.js web app core | ✅ Complete |
-| Four-tier healer system (Superhero / Ascended Master / Luminary / Local Hero) | ✅ Complete |
-| is_famous → tier field migration | ✅ Complete |
-| Netflix-style homepage (billboard + shelves + video grid) | ✅ Complete |
-| 5-pillar subject pill navigation | ✅ Complete |
-| Subject pages on the shared dark shelf layout | ✅ Complete |
-| Healer profiles with contact funnels and offerings | ✅ Complete |
-| Courses / retreats / downloads / memberships | ✅ Complete |
-| Free resources shelf | ✅ Complete |
-| Query-level expiration filtering | ✅ Complete |
-| Books with purchase links (Amazon, Goodreads, World of Books) | ✅ Complete |
-| Amazon Associates — render-time tags (US primary, UK), inline disclosure, `/affiliate-disclosure` | ✅ Built — earns once the env vars are set |
-| My Library with dynamic subject folders | ✅ Complete |
-| Admin ingestion dashboard + duplicate guards | ✅ Complete |
-| URL parsing automation (YouTube + Amazon) | ✅ Complete |
-| Emotional search bar — emotion → subject mapping wired to the input | ✅ Complete |
-| Animated typewriter homepage search bar | ✅ Complete |
-| Universal search across healers, books, videos, and subjects | ✅ Complete |
-| Offering detail pages (courses / retreats / downloads / free resources) | ✅ Complete |
-| Book detail pages (purchase links, Want to Read, Mark as Read, reviews) | ✅ Complete |
-| Publisher admin tab + public publisher profile pages | ✅ Complete |
-| Book URLs migrated to SEO-friendly slugs | ✅ Complete |
-| Admin authentication — password login + session cookie (`ADMIN_PASSWORD` env var) | ✅ Complete |
-| Entity types — channels and apps split into their own shelf | ✅ Complete |
-| Ascended Master tier — gold badge, Timeless Teachers shelf, lifespan | ✅ Complete |
-| Vercel production deployment — live at [spiritpedia.co](https://spiritpedia.co) | ✅ Complete |
-| Open Graph + Twitter card metadata across every page | ✅ Complete |
-| Share button — native OS sheet on mobile, dropdown on desktop | ✅ Complete |
-| Brand identity — gold star mark, Spiritpedia wordmark, circular favicon | ✅ Complete |
-| Emotional mapping system — crisis intercept, dual path, soft tier, medical disclaimer | ✅ Complete |
-| Emotion search matching — content-token containment, bounded substring passes, stopword fallback | ✅ Complete |
-| Crisis intercept widened to oblique phrasings (171 phrases) | ✅ Complete |
-| Publishing Houses — homepage shelf, profiles, per-author shelves, favourites | ✅ Complete |
-| Homepage performance — on-demand shelves, lazy images, video pagination | ✅ Complete |
-| Sticky subject pills + navbar handoff + floating My Library button | ✅ Complete |
-| Site-wide footer with health disclaimer | ✅ Complete |
-| Dynamic sitemap + robots.txt + canonical domain + GSC verification | ✅ Complete |
-| Email OTP auth — signup, verify, magic link, session persistence | ✅ Complete |
-| Practitioner onboarding — setup form, claim flow, resubmission after rejection | ✅ Complete |
-| Admin CRM — sidebar shell, unified inbox queue, 360° people view, admin notes | ✅ Complete |
-| Practitioner dashboard at /account — profile editing, content list, settings | ✅ Complete |
-| All content writes moved server-side; anon write access closed | ✅ Complete |
-| Video detail pages at `/videos/[slug]`, in the sitemap | ✅ Complete |
-| Homepage Videos / Discover tabs — seven shelves, fetched on demand | ✅ Complete |
-| Per-teacher video shelves under a subject filter, on the homepage and subject pages | ✅ Complete |
-| "For You" personalised video shelf, rarity-weighted | ✅ Complete |
-| Admin Healer Directory + record editor, editable People profiles | ✅ Complete |
-| Working deletes for accounts and healer records, behind a confirmation | ✅ Complete |
-| Community reviews — submission, moderation queue, public display | ✅ Complete |
-| Pending reviews in the admin inbox; badge counts all pending actions | ✅ Complete |
-| Transactional email via Resend — welcomes and review notices | ✅ Complete |
-| Healer email journey — five-email claim sequence, admin Outreach tab, daily cron | ✅ Complete |
-| Cookie consent banner gating GA4 | ✅ Complete |
-| Terms of Use and Privacy Policy, Cookie settings in the footer, agreement line at sign-up | ✅ Complete |
-| Admin content tab shows all six collections; row delete + inline image editing | ✅ Complete |
-| Deleted healer pages return a real 404 | ✅ Complete |
-| Logged-out account modal; library signup nudge | ✅ Complete |
-| Broken images audit — daily cron, admin queue, soft-404 and bot-challenge handling | ✅ Complete |
-| Healer portrait auditing — all three `image_urls`, daily | ✅ Complete |
-| GA4 analytics | ✅ Complete |
-| Content library (target: 5,000 videos + 5,000 books) | ⬜ Ongoing |
-| Flutter native app — Phase 0 (skeleton, theme, launch screen, intro, tabs) | ✅ Complete |
-| Flutter native app — Phase 1 (shared crisis list, explore, emotional search, detail pages) | ✅ Complete |
-| Flutter native app — Phases 2–4 (accounts, push, stores) | ⬜ Next |
-| IAM notification system | ⬜ Phase 2 |
-
-📊 Content Library
-Measured against production on **8 October 2026**.
-
-| Collection | Count |
-| :--- | :--- |
-| Healers | 126 — 61 Superhero · 48 Luminary · 14 Ascended Master · 3 Local Hero |
-| | by entity: 116 individual · 9 channel · 1 app |
-| Videos | 2,269 |
-| Books | 963 |
-| Courses & offerings | 1,103 |
-| Free resources | 461 |
-| Publishing houses | 2 (Hay House, Sounds True) · 34 author links |
-| Subjects | 42 |
-| Emotion mappings | 3,531 rows · 701 emotions · all 42 subjects |
-| Sitemap URLs | 4,895 |
-| Registered accounts | 2 |
-| Saved items | 10 |
-| Reviews | 0 |
-| Healer journeys | 0 started |
-| Broken images queued | 43 |
-
-The account, favourite and review numbers are low because the test accounts were
-cleared out — those features are built and exercised, not unused. **126 healers,
-not 129**: Stan Grof was an empty duplicate and was deleted through the admin
-dashboard.
-
-💡 Immediate Next Steps
-**Blocking, in rough order of consequence:**
-
-| Item | Why it matters |
-| :--- | :--- |
-| **Back up the content data** | The schema (`0000_production_baseline.sql`) and the search vocabulary (`supabase/seed/`) are now in the repo, but healers, books, videos and the rest exist only in production and in Supabase's own backups. A periodic `pg_dump --data-only` to private storage — not git — would close the gap |
-| **No record that an email was sent** | No table, no column. Approve a review twice and the reviewer is emailed twice; a failed send leaves nothing to retry from. Fine while these are courtesies — not before mailshots |
-| `content_submissions` staging table | Needed before practitioners can add content. `videos`/`books` have no published flag and are read wholesale by the homepage, subject pages and sitemap |
-
-#### Amazon Associates — built
-Specified and built 8 October 2026. Tags and disclosure shipped in the **same
-release**, and must stay that way: a monetised link without disclosure is the
-single thing most likely to terminate an Associates account.
-
-**Accounts.** Associates accounts are *per-marketplace*: a `.co.uk` tag earns
-nothing on `amazon.com` and vice versa, and the link still works, so a wrong
-tag fails silently. Each link is tagged for the marketplace it already points at.
-
-Five accounts, all linked to the US account. Every env var below is set on
-**`spiritpedia-e58y`** (Production).
-
-| Store | Role | Env var | Tracking ID |
-| :--- | :--- | :--- | :--- |
-| Amazon.com | **Primary** | `AMAZON_TAG_US` | `spiritpedia-20` |
-| Amazon.co.uk | Linked | `AMAZON_TAG_UK` | `spiritpedia03-21` |
-| Amazon.ca | Linked | `AMAZON_TAG_CA` | `spiritpedia0d-20` |
-| Amazon.es | Linked | `AMAZON_TAG_ES` | `spiritpedi093-21` |
-| Amazon.com.au | Linked | `AMAZON_TAG_AU` | `spiritpedia-22` |
-
-Only `.com` and `.co.uk` links exist in `books.amazon_url` today, so only those
-two tags appear in links. The other three vars are set so that
-`/affiliate-disclosure` names each store we hold an account in — Canada, Spain
-and Australia earn through OneLink redirects — and so any future `.ca`, `.es` or
-`.com.au` link is tagged correctly without a code change. The page adds "as well
-as Amazon's other international stores" for the countries Global Earning
-Preferences reach without an account of our own.
-
-**The app carries the same five tags** in `app/config/prod.json`
-(`AMAZON_TAG_US`, `_UK`, `_CA`, `_ES`, `_AU`), read at build time. They are not
-read from Vercel, so a tag change means editing both places — the Vercel env
-var for the website and `app/config/prod.json` for the next app build.
-
-```
-719  www.amazon.com   (incl. 1 us.amazon.com, treated as .com)  → US tag
-184  www.amazon.co.uk                                           → UK tag
-  6  rejected — no button                                        (see below)
-```
-
-**`web/utils/affiliate.js` — the only place a tag is decided.** Plain ES
-module, no React or Next, tested by `npm test` (`utils/affiliate.test.mjs`,
-every case a real stored URL).
-
-* `STORES` maps each Amazon host to an env var and a display name: `.com`, `.co.uk`, `.es`, `.de`, `.fr`, `.it`, `.ca`, `.com.au` → `AMAZON_TAG_US` / `_UK` / `_ES` / `_DE` / `_FR` / `_IT` / `_CA` / `_AU`. A leading `www.`, `us.`, `smile.` or `m.` is ignored.
-* `amazonAffiliateUrl(rawUrl)` → `{ url, tagged }` or `null`. Accepts the `/dp/`, `/gp/product/`, `/product/` and `/ASIN/` path shapes (book 283 is stored as `/gp/product/`), requires exactly 10 characters ending at a path or query boundary, and rebuilds as `https://www.{host}/dp/{ASIN}` — dropping every stored query param (`ref_`, `th`, `psc`, `dib` — roughly 200 characters of someone else's session). `?tag=` is appended only for an active store.
-* `activeStores()` lists the stores with a live tag. `/affiliate-disclosure` names these, followed by "as well as Amazon's other international stores" — OneLink and the US account's Global Earning Preferences earn in more countries than we hold accounts for.
-
-**A STORE EARNS ONLY WHEN ITS ENV VAR IS SET.** Unset, its links are clean and
-untagged and no disclosure line shows. Adding a marketplace later is a new env
-var on **`spiritpedia-e58y`** — no code change — provided its host is already
-in `STORES` (the eight above are). Env vars are read at render, but book pages
-are ISR-cached for an hour and the disclosure page is built statically, so
-**setting or changing a var needs a redeploy** to take effect everywhere.
-
-**Never stored.** Tags are computed at render and never written to
-`books.amazon_url`. The database records *what the product is*, not how it is
-monetised: a tag change is one env var rather than 900 rows to rewrite, and
-there is no half-migrated table where some rows earn and some do not.
-
-**Where it renders.** Exactly one place — the "Buy on Amazon" button in
-`app/books/[slug]/page.js`. (`BookCard.js` links internally to `/books/[slug]`,
-not to Amazon.) The button carries `rel="sponsored noopener noreferrer"`;
-Goodreads and World of Books are not monetised and keep `rel="noopener noreferrer"`
-with no disclosure. When `tagged` is true, one muted line sits directly under the
-Amazon button only, linking to `/affiliate-disclosure`:
-*"As an Amazon Associate, Spiritpedia earns from qualifying purchases. It never
-changes what we recommend."* The footer links the page too, after Terms of Use.
-It is indexable and in the sitemap.
-
-**Rejected rows — the button is hidden rather than misleading.** Six rows in
-production fail the helper and render no Amazon button:
-
-* **Books 114, 115, 133, 169, 171** have Goodreads URLs in `amazon_url`.
-* **Book 633** has a malformed ASIN — `/dp/BFK6VHWVV` is 9 characters.
-
-They need fixing editorially. This lists every row the helper rejects:
-
-```sql
-SELECT id, slug, title, amazon_url AS bad_value
-FROM public.books
-WHERE amazon_url IS NOT NULL AND btrim(amazon_url) <> ''
-  AND NOT (
-    regexp_replace(lower(substring(btrim(amazon_url) FROM '^https?://([^/?#:]+)')),
-                   '^(www|us|smile|m)\.', '')
-      IN ('amazon.com','amazon.co.uk','amazon.es','amazon.de','amazon.fr',
-          'amazon.it','amazon.ca','amazon.com.au')
-    AND substring(btrim(amazon_url) FROM '^https?://[^/?#]+([^?#]*)')
-      ~* '/(dp|gp/product|product|ASIN)/[A-Z0-9]{10}([/?#]|$)'
-  )
-ORDER BY id;
-```
-
-**Compliance.**
-
-| Requirement | State |
-| :--- | :--- |
-| **Disclosure** | Inline under every tagged Amazon button, plus `/affiliate-disclosure` linked from the footer |
-| **`rel`** | `sponsored noopener noreferrer` on the Amazon button only |
-| **Email** | **Standing rule: affiliate links never go in email** (Amazon Operating Agreement). Every email links to `spiritpedia.co` pages. Future mailshots link to Spiritpedia book pages — which then carry the affiliate link — **never to Amazon directly** |
-| **Prices** | Do not display prices. Permitted only via the Product Advertising API, because stale prices mislead. The site shows none — keep it that way |
-| **Qualification** | **Each of the five accounts** must make **three qualifying sales by around 6 April 2027** (180 days from sign-up) or it is closed. **Our own purchases do not count** |
-
-**OneLink — configured, and needs no site code.** Amazon's geo-redirect sends
-an international visitor to their local store and swaps in the matching
-tracking ID, server-side, from the tag already on the link. There is no script
-or snippet to add; the old OneTag/`onejs` JavaScript is retired. A note in
-`app/books/[slug]/page.js` says so, where a script placeholder used to sit.
-
-It is configured per *home* account, and each OneLink rewrites links carrying
-that account's own tracking ID — which is why both sides are set up:
-
-* **US side** (covers the 719 `.com` links tagged `spiritpedia-20`): Global
-  Earning Preferences on for 10 countries. Australia has its own default
-  tracking ID in OneLink.
-* **UK side** (covers the 184 `.co.uk` links tagged `spiritpedia03-21`): OneLink
-  configured with the US, Canada, Spain and Australia tracking IDs; redirect
-  preference **"Closest Possible Match"**.
-
-If redirects stop, check that every destination country still has a default
-tracking ID in both dashboards — Amazon's FAQ names that as the usual cause.
-Third-party link shorteners are not redirected; ours are plain `/dp/` links.
-
-**A second prize: the book covers.** 568 of 957 covers are hotlinked from
-`m.media-amazon.com` and ~350 more from Google's image cache — both unlicensed,
-and the same fragility the broken-images audit exists to catch. Associates
-membership unlocks the **Product Advertising API**, which grants a licensed
-right to serve Amazon product imagery plus live titles and prices. That would
-make 568 covers legitimate, remove the largest cluster from the broken-images
-queue, and allow prices. PA-API access requires the three qualifying sales
-first, so it is **phase two**.
-
-**Explicitly later:** PA-API, and affiliate treatment of the **4 courses**
-whose `course_url` points at Amazon.
-
-**Known gaps, not urgent:**
-
-| Item | Note |
-| :--- | :--- |
-| Subject page payload | The four server-fetched collections are still `select('*')` and uncapped. There is a TODO on that query naming the numbers |
-| `claimed_at` column | Claimed status is still inferred by comparing `healers.created_at` with `user_profiles.created_at`. A column would make it a property of the row |
-| Reviews for healers and publishers | The table's constraint already allows both; only the UI is missing |
-| Branded 404 page | There is no `app/not-found.js`, so a dead URL gets the Next.js default |
-| Video thumbnails are unaudited | They come from `img.youtube.com`, derived rather than stored, so the broken-images audit cannot see them. A deleted or private video returns a placeholder with a 404. Catching those needs the YouTube Data API |
-| Four portraits the audit cannot read | wim-hof, jason-stephenson, justin-perry and mikao-usui sit behind hosts that challenge any non-browser client. Worth checking by hand |
-| Emotion search — four phrases still unmatched | From the 73-phrase live audit: *"I keep making the same mistakes"*, *"why do I always mess things up"*, *"nothing makes sense anymore"*, *"I feel nothing"* is fixed but these are not. The first two have near-misses in the table (`cant make mistakes`, `ruin good things`) whose words do not align; the third shares no word with anything stored. Rows, not code |
-| Emotion search — noun forms missing | `angry` was stored without `anger`, `sad` without `sadness`, `confused` without `confusion`. All three are now added, but they were found one at a time. Worth sweeping every stored adjective for its missing noun rather than waiting for each to surface |
-| Emotion search — no bundle for hope | Bounding the substring pass stopped `hope` returning the depression bundle via `hopeless`, which was the bug; it now returns nothing from the mapping. `faith` and `optimism` are not stored either, so there is no positive-register bundle to mirror. A small territory worth filling |
-| Emotion search — typos miss entirely | `i feel anziuos`, `im deprresed`. There is no fuzzy matching by design. Adding it needs a distance threshold and carries real precision risk — the thing this matcher has been tuned hardest against — so it is a deliberate decision, not an oversight |
-| Emotion search — a subject's own name buries the subject | Typing `yoga`, `breathwork`, `manifestation`, `law of attraction` or `shadow work` returns universal hits with the SUBJECTS row last, under up to eight titles. `meditation` is the exception because it is also a stored emotion. Ranking, not coverage |
-| Admin phases 4+ | Flags, messages, publisher claims. Each needs its own table |
-| Ancient Teachers tier | Planned |
-| Content library | Target: 5,000 videos + 5,000 books — ongoing |
-| Flutter app build | 1.0.0 (18) built for TestFlight; status, next steps and known issues in `app/README.md` |
-
-🔧 Operational knowledge
-Things learned the hard way that neither the code nor the git log will tell you.
-
-#### Verifying a change against real data
-There is **almost no test suite** — `npm test` covers `utils/affiliate.js` only
-(Node's built-in runner, no dependency). Otherwise verification has been: run
-the real logic against the real database from a Node script, then confirm in a
-real browser. Both
-matter — several defects were only visible in one or the other.
-
-* `web/utils/*.js` are plain ES modules with no React or Next dependency, so a `node --input-type=module` script can import them directly and exercise the genuine code path against production Supabase. This is how the emotion-search coverage numbers were produced.
-* **Do not trust a harness that re-implements the pipeline.** One measurement in this project was wrong because the harness drifted from the component after an edit; the before/after numbers were quietly meaningless until the harness was re-synced. If you build one, have it import the same functions the component imports.
-* To compare before/after honestly, extract the previous version with `git show HEAD:web/utils/foo.js > /tmp/old.js` and import both. Comparing against a flag inside the *current* module measures nothing.
-
-#### Driving the homepage search box in a browser
-The emotion search input **cannot be driven by synthetic DOM events.** Setting
-`input.value` and dispatching an `input` event — even with the React value
-tracker reset — does not update React state, so the dropdown never opens. Real
-CDP keystrokes work. The reliable sequence is: click the element **by its
-accessibility ref** (clicking by coordinate often fails to hold focus, and the
-typewriter placeholder resumes, which is the tell), then `type`, then wait ~2s
-for the 300ms debounce plus network, then read the dropdown from the DOM. The
-dropdown is the non-`<form>` child of the input's `form.parentElement`.
-
-#### Reading results correctly
-The search dropdown renders **two different things in the same panel**: the
-emotion carousel (bare subject rows) and universal search hits (under
-`HEALERS` / `BOOKS` / `VIDEOS` / `SUBJECTS` headers). A non-empty panel does
-**not** mean the emotion mapping matched — an early audit over-counted
-successes until the two were separated. Check whether the first line is a
-section header.
-
-#### THERE IS ONLY ONE DATABASE
-`web/.env.local` points at the **same Supabase project as production**
-(`uzmvcgewxgvnybdhvsyx`). There is no staging database and no local Postgres.
-(`supabase/seed/` holds only the search vocabulary, not content to develop
-against.)
-
-**Running the app on localhost reads and writes live production data.** Every
-admin action taken against `localhost:3000` — editing a healer, deleting a
-row, approving a review, saving an image URL, starting a journey — lands in the
-database the public site is serving. During development of the broken-images
-audit, local cron runs wrote 43 real rows into production; that was intended,
-but it is the same mechanism that would make an accidental delete permanent.
-
-Work accordingly: prefer dry-run flags, restore anything you change for a test
-(capture the original value first), and treat "it's only localhost" as false
-here.
-
-#### Local development
-A dev server may already be running on port 3000 — `npm run dev` will detect it
-and exit rather than start a second one, which is easy to misread as a failure.
-Check with `lsof -ti:3000`.
-
-#### Things that are safe to re-run
-* Migrations `0001`–`0011` (all idempotent — verified 9 Oct 2026 by running them on top of a rebuilt database). **Not `0000_production_baseline.sql`**: that is for an empty project and stops at the first existing table.
-* `supabase/seed/emotion_mappings.sql` (`ON CONFLICT DO NOTHING` — changes nothing where the rows exist).
-* `0011_emotion_vocabulary.sql` — but note it is `ON CONFLICT … DO UPDATE SET weight`, not `DO NOTHING`: re-running it *resets* those 43 rows' weights to the file's values. That is deliberate (the file is the authority on them), but it will undo any weight edited by hand since.
-* The broken-images cron, with `?dry=1` to check without writing and `?shard=N` to audit a named seventh.
-* The pending-signups cron. `?dry=1` reports how many rows it would delete, without deleting them.
-
-#### Things that are not
-* Starting a healer journey — it sends real email to a real practitioner.
-* Deleting an account — it removes the `auth.users` row and three foreign keys cascade off it, taking the profile, the saved library and every internal note.
-* Deleting a healer — it orphans their content; nothing in the schema stops it.
-
-🚧 Deliberately unfinished
-Things that look like faults and are not. Each was a decision; none should be
-"fixed" without knowing why it is this way.
-
-| Thing | Why it is like this |
-| :--- | :--- |
-| **No `healer_journeys` has ever been started** | Starting one sends a real email to a real practitioner. The infrastructure, admin Outreach tab, cron and all five templates are finished and tested; nobody has pressed go. That is a business decision, not a bug |
-| **Journey emails are plain text with no HTML and no links** | Every CTA is "reply to this email". A cold first contact that looks like a newsletter is filtered like one, and a reply starts a relationship where a click does not. Do not "improve" them into HTML |
-| **Claims count sits at 0 in the Inbox** | `claim_healer_profile()` auto-approves a genuine claim, so a real claim never waits for a decision. `/admin/claims` is the record; the Inbox is a worklist |
-| **The admin search box and notification bell are inert** | Rendered and disabled so the bar is laid out for what is coming. Titled so they explain themselves |
-| **Messages / Flags / Mailshots / Settings are placeholders** | Each needs its own table first |
-| **`courses.affiliate_status` is effectively unused** | 1,097 `none`, 5 `null`, 1 `direct` — and `direct` is not one of the three values the ingestion form offers (`none` / `applied` / `active`). Dead column with drifted data; decide its fate before relying on it |
-| **One pre-existing lint error in `components/EmotionSearch.js`** | `react-hooks/set-state-in-effect` at the `setResolution(null)` guard. Predates recent work; the same rule errors in seven other components. Not introduced by the emotion-search fixes |
-| **Typos are not matched in emotion search** | No fuzzy matching, by choice. A distance threshold carries exactly the precision risk the matcher has been tuned against. A decision, not an oversight |
-| **Four healer portraits the broken-images audit cannot read** | wim-hof, jason-stephenson, justin-perry, mikao-usui sit behind hosts that challenge any non-browser client, with a real Chrome UA too. The audit records them as *undetermined* and says nothing, which is correct. Check them by hand |
-| **`broken_images` counts "undetermined" separately** | An HTTP 202 bot challenge is neither broken nor healthy. The run reports the count rather than guessing, because "found nothing" and "could not look" are different claims |
-| **Video thumbnails are unaudited** | Derived from the YouTube id at render, not stored, so there is no column to check. A deleted or private video returns a placeholder with a 404 and the audit cannot see it |
-| **Subject pages still `select('*')` uncapped** | Known, with a TODO on the query naming the numbers. Below the 1,000-row cap today |
-
-#### Environment variables
-| Variable | Needed for |
-| :--- | :--- |
-| `NEXT_PUBLIC_SUPABASE_URL` · `NEXT_PUBLIC_SUPABASE_ANON_KEY` | everything |
-| `SUPABASE_SERVICE_ROLE_KEY` | admin data, all three crons, every server-side write |
-| `ADMIN_PASSWORD` · `ADMIN_NAME` | the admin login and its greeting |
-| `RESEND_API_KEY` | all ten emails |
-| `CRON_SECRET` | the three scheduled jobs |
-| `NEXT_PUBLIC_GA_MEASUREMENT_ID` | GA4, after consent |
-| `AMAZON_TAG_US` · `_UK` · `_CA` · `_ES` · `_AU` | Amazon Associates tracking IDs, all set. A store is tagged and named on `/affiliate-disclosure` only when its var is set; `_DE` `_FR` `_IT` are recognised and unset. Redeploy after changing. See *Amazon Associates* |
-
-`SUPABASE_SERVICE_ROLE_KEY` bypasses every RLS policy. It must never carry a
-`NEXT_PUBLIC_` prefix, and must be set in Vercel or the admin data sections stay
-empty. `RESEND_API_KEY` has no `NEXT_PUBLIC_` prefix for the same reason — email
-cannot be sent from the browser, which is why each client-side trigger has a thin
-server route.
-
-#### Scheduled jobs
-`web/vercel.json`, all guarded by `CRON_SECRET`:
-
-| Job | Schedule | Does |
-| :--- | :--- | :--- |
-| `/api/cron/pending-signups` | `0 6 * * *` | Deletes `pending_user_types` rows older than 24 hours — unfinished sign-ups. Returns a count, never addresses |
-| `/api/cron/broken-images` | `0 7 * * *` | Image audit |
-| `/api/cron/journey-emails` | `0 8 * * *` | Healer outreach sequence |
-
-All three are daily, which is the most a Hobby plan allows — a schedule that
-runs more often fails the deploy. Vercel allows 100 cron jobs per project.
-
-**`vercel.json` must sit in `web/`, not the repo root**, and Vercel's Root
-Directory must be set to `web` — the app is not at the top of this repo and a
-root-level `vercel.json` is ignored without a word. **Both are correctly
-configured and verified running**: the broken-images audit fired at 07:00 UTC
-on 8 October 2026 and wrote 8 rows.
-
-Vercel sends `Authorization: Bearer <CRON_SECRET>` using **its own** copy of
-the variable, so the cron authenticates regardless of what any local
-`.env.local` holds. A local `CRON_SECRET` that differs from Vercel's is
-harmless — it only means you cannot trigger the production route by hand. Do
-not mistake a 401 from a manual curl for a broken cron; **503 would mean the
-variable is unset, 401 means it is set and you presented the wrong one.**
+| ⭐ Superhero | Amber | 500k+ followers on one platform, or mainstream recognition | No |
+| 🕊️ Ascended Master | Gold | Deceased; foundational work. Shown in Timeless Teachers with a lifespan (`1931 — 2015`, or `b. 1931`) | No |
+| ✨ Luminary | Violet | 50k–499k on one platform | Eventually, nominally |
+| 🌿 Local Hero | Emerald | Under 50k across all platforms | Planned: £5–£10/month |
+
+`tier` values: `superhero`, `ascended_master`, `luminary`, `local_hero`.
+Anything else (including NULL) still appears in Practitioners Near You, with a
+neutral "Teacher" badge.
+
+### 17.2 Entity types
+
+`healers.entity_type`: **individual** (NULL counts as individual), **channel**
+(YouTube channel, podcast, collective), **app**, **organisation** (since
+`0020`). Channels, apps and organisations keep their tier but leave the tier
+shelves, the billboard and Practitioners Near You for **Explore These
+Channels**. **Publishers** are their own table, not an entity type.
+`healers.official` marks Spiritpedia's own listing.
+
+### 17.3 Subjects and the homepage
+
+- **Five pillars** (`SUBJECT_TAXONOMY` in `web/components/SubjectPills.js`; the
+  app mirrors them): Emotional Healing · Consciousness · Manifestation &
+  Creation · Mystical & Spiritual Exploration · Body & Energy. 42 subjects in
+  `subjects`; `subject_slugs` is a Postgres array matched with `@>` (so
+  `eft-tapping` is one whole element).
+- **Homepage:** navbar → emotional search → sticky subject pills → **Videos |
+  Discover** tabs. **Discover** (default, server-rendered): the billboard
+  (Superheroes and Ascended Masters three-to-one, rotating every 8 s), then
+  Worldwide, Rising Voices, Practitioners Near You, Timeless Teachers,
+  Publishing Houses, Explore These Channels, and **Explore More**, whose
+  shelves (Free Resources, Books, Courses, Retreats, Downloads) are fetched
+  only when chosen (first load went from ~8 MB to ~824 KB). **Videos** fetches
+  nothing until opened: New to Spiritpedia, one shelf per pillar, Watch &
+  Learn; with a subject filter, one shelf per teacher; and **For You** for a
+  signed-in member with enough saves (rarity-weighted).
+- An empty shelf renders nothing. Courses and free resources show only while
+  `is_active` and not past `end_date`.
+
+### 17.4 How a phrase finds its subjects (both platforms)
+
+After normalising (lower-case, apostrophes stripped, ~117 lead-ins like "i
+feel" peeled), four passes, first hit wins:
+1. **Candidate cascade** — the query, then one candidate per lead-in, exact on
+   the indexed `emotion` column.
+2. **Content-token containment** — a stored emotion whose every content word is
+   in the query ("my mum just died" → `my mum died`). Full coverage only; a
+   looser rule matched "figured out" to `burnt out`.
+3. **Reverse substring** — a stored emotion inside the query.
+4. **Forward substring** — a stored emotion containing the query, whole words
+   only (so "hope" doesn't find `hopeless`).
+
+A query that is only stopwords retries against a smaller stopword set.
+`emotion_mappings`: 701 emotions, 3,531 weighted rows, all 42 subjects, stored
+lower-case and apostrophe-free. No fuzzy matching, by choice. Known gaps:
+missing noun forms, a few unmatched phrases, typos.
+
+### 17.5 Publishing houses
+
+First-class entities: a homepage shelf with live author counts
+(`publisher_healers`), profiles with one book shelf per author (by tier),
+favourites (Saved Publishers in My Library). Since `0020` a publisher can be
+claimed and has its own dashboard.
+
+### 17.6 Amazon Associates
+
+- Tags are decided in one place per platform (`web/utils/affiliate.js`,
+  `app/lib/core/affiliate/amazon.dart`) and **never stored**: each link is
+  rebuilt as `https://www.{host}/dp/{ASIN}` and tagged for the store it already
+  points at, from `AMAZON_TAG_US` / `_UK` / `_CA` / `_ES` / `_AU` (`_DE` `_FR`
+  `_IT` recognised, unset). Website: Vercel variables. App: `app/config/prod.json`
+  — **change both** when a tag changes.
+- Only the book page's "Buy on Amazon" button is monetised
+  (`rel="sponsored noopener noreferrer"`), with a one-line disclosure under it
+  and `/affiliate-disclosure` in the footer. No prices shown. Never in email.
+- OneLink is configured in the US and UK dashboards (no site code).
+- Six book rows have unusable Amazon URLs and show no button (Goodreads URLs in
+  `amazon_url` for books 114, 115, 133, 169, 171; a 9-character ASIN on 633).
+- **Each account needs three qualifying sales by about 6 April 2027** (our own
+  purchases don't count). PA-API (licensed covers and prices) comes after.
+
+### 17.7 Content (measured on live, 8 October 2026)
+
+126 listings (61 Superhero, 48 Luminary, 14 Ascended Master, 3 Local Hero; 116
+individual, 9 channel, 1 app at the time) · 2,269 videos · 963 books · 1,103
+courses and offerings · 461 free resources · 2 publishers (Hay House, Sounds
+True) · 42 subjects · 4,895 sitemap URLs. Target: 5,000 videos and 5,000 books.
+
+### 17.8 The broken-images audit
+
+A daily cron checks the catalogue's 2,890 external image URLs (a seventh of
+content images per day, every healer portrait — all three `image_urls` —
+daily) and queues failures in `broken_images`, shown in the admin Inbox.
+Rules learned from false positives: always send a User-Agent; a 404 is final,
+a 403 must fail twice; a 200 with an HTML body is a broken image; vague content
+types are judged by their magic bytes; a 202 is a bot challenge (recorded as
+undetermined); URLs are dealt round-robin by host. Saving a new URL clears the
+row. Video thumbnails (derived from YouTube) and four portraits behind bot
+challenges (wim-hof, jason-stephenson, justin-perry, mikao-usui) can't be
+audited.
+
+### 17.9 Deliberately unfinished (don't "fix" without knowing why)
+
+- No outreach journey started; journey emails are plain text with no links.
+- The admin search box and bell are rendered but inert.
+- No fuzzy matching in emotion search.
+- `courses.affiliate_status` is effectively unused, with drifted values.
+- `broken_images` counts "undetermined" separately from broken.
+
+### 17.10 Verifying a change
+
+- `web/utils/*.js` are plain ES modules: a `node --input-type=module` script can
+  import the real code and run it against a database. Never re-implement the
+  pipeline in a harness; compare old and new by importing
+  `git show HEAD:file` beside the current file.
+- Driving the website's search box in a browser needs real keystrokes (click by
+  accessibility ref, type, wait ~2 s); synthetic input events don't update React.
+- The search dropdown shows two things: the emotion carousel and universal hits
+  under section headers. A non-empty panel doesn't mean the emotion matched.
 
 Made with love in Tavira 💫
