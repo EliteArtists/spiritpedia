@@ -30,6 +30,7 @@ export function AdminDataProvider({ children }) {
     brokenImages: [],
     accountDeletions: [],
     openReports: [],
+    claimRequests: [],
     counts: {},
     error: null,
   });
@@ -59,6 +60,7 @@ export function AdminDataProvider({ children }) {
         brokenImages: json.brokenImages || [],
         accountDeletions: json.accountDeletions || [],
         openReports: json.openReports || [],
+        claimRequests: json.claimRequests || [],
         counts: json.counts || {},
         error: json.error || null,
       };
@@ -70,6 +72,7 @@ export function AdminDataProvider({ children }) {
         brokenImages: [],
         accountDeletions: [],
         openReports: [],
+        claimRequests: [],
         counts: {},
         error: err?.name === 'AbortError' ? 'unreachable' : err.message,
       };
@@ -116,8 +119,10 @@ export function AdminDataProvider({ children }) {
   // A reported review is the most urgent of all: the Terms promise a decision
   // within 24 hours.
   const openReportCount = state.openReports?.length || 0;
+  // Someone asking to manage a listing (claim_requests, migration 0020).
+  const claimRequestCount = state.claimRequests?.length || 0;
   const pendingActions =
-    pendingApplications + pendingReviewCount + brokenImageCount + openReportCount;
+    pendingApplications + pendingReviewCount + brokenImageCount + openReportCount + claimRequestCount;
 
   return (
     <AdminDataContext.Provider
@@ -129,6 +134,7 @@ export function AdminDataProvider({ children }) {
         pendingReviewCount,
         brokenImageCount,
         openReportCount,
+        claimRequestCount,
         pendingActions,
         claims,
       }}

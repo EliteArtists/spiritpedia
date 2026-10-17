@@ -37,6 +37,8 @@ function ClaimForm() {
   const router = useRouter();
   const params = useSearchParams();
   const slug = (params.get('slug') || '').trim();
+  // A publisher (migration 0020) or, as before, a healer of any kind.
+  const isPublisher = params.get('kind') === 'publisher';
 
   const [healer, setHealer] = useState(null);
   const [loading, setLoading] = useState(true);
@@ -63,11 +65,21 @@ function ClaimForm() {
 
       // Read through the anonymous client: healers are public, and this needs
       // no privileges the visitor does not already have as a reader.
-      const { data } = await supabase
-        .from('healers')
-        .select('name, healer_slug, tier, image_urls, image_url, city, country')
-        .eq('healer_slug', slug)
-        .maybeSingle();
+      // Publishers are shaped into the same card: name, logo, no tier.
+      const { data } = isPublisher
+        ? await supabase
+            .from('publishers')
+            .select('name, slug, logo_url')
+            .eq('slug', slug)
+            .maybeSingle()
+            .then(({ data: p }) => ({
+              data: p && { name: p.name, healer_slug: p.slug, image_url: p.logo_url, publisher: true },
+            }))
+        : await supabase
+            .from('healers')
+            .select('name, healer_slug, tier, image_urls, image_url, city, country')
+            .eq('healer_slug', slug)
+            .maybeSingle();
 
       if (cancelled) return;
       if (!data) {
@@ -82,7 +94,7 @@ function ClaimForm() {
     return () => {
       cancelled = true;
     };
-  }, [slug, router]);
+  }, [slug, isPublisher, router]);
 
   const claim = useCallback(async () => {
     if (claiming) return;
@@ -98,9 +110,11 @@ function ClaimForm() {
     // nothing, which is the worst of both worlds. claim_healer_profile()
     // re-checks the email against the healer server side and is the only path
     // permitted to write those two fields.
-    const { error: rpcError } = await supabaseAuth.rpc('claim_healer_profile', {
-      p_slug: healer.healer_slug,
-    });
+    // claim_publisher_profile() is the same check against a publisher.
+    const { error: rpcError } = await supabaseAuth.rpc(
+      healer.publisher ? 'claim_publisher_profile' : 'claim_healer_profile',
+      { p_slug: healer.healer_slug }
+    );
 
     if (rpcError) {
       setError(
@@ -142,7 +156,13 @@ function ClaimForm() {
         <p className="mt-5 text-xl font-bold text-white">{healer.name}</p>
         {place && <p className="mt-1 text-xs text-gray-500">{place}</p>}
         <div className="mt-3">
-          <TierBadge tier={healer.tier} />
+          {healer.publisher ? (
+            <span className="inline-block rounded-full bg-gray-500 px-3 py-1 text-[10px] font-bold uppercase tracking-wider text-white">
+              Publisher
+            </span>
+          ) : (
+            <TierBadge tier={healer.tier} />
+          )}
         </div>
       </div>
 
@@ -157,7 +177,7 @@ function ClaimForm() {
           disabled={claiming}
           className="w-full rounded-full bg-[#7c3aed] px-6 py-4 text-base font-semibold text-white shadow-lg transition-all duration-200 hover:bg-[#6d28d9] hover:scale-[1.02] active:scale-[0.98] disabled:cursor-not-allowed disabled:opacity-50 disabled:hover:scale-100"
         >
-          {claiming ? 'Claiming…' : 'Yes, this is me →'}
+          {claiming ? 'Claiming…' : healer.publisher ? 'Yes, this is us →' : 'Yes, this is me →'}
         </button>
 
         <button
@@ -166,7 +186,7 @@ function ClaimForm() {
           disabled={claiming}
           className="w-full rounded-full border border-white/20 px-6 py-4 text-base font-semibold text-white transition-all duration-200 hover:border-white/40 hover:bg-white/5 disabled:opacity-50"
         >
-          This isn&apos;t me — continue setup
+          {healer.publisher ? 'This isn’t us' : 'This isn’t me'} — continue setup
         </button>
       </div>
 

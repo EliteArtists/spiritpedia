@@ -17,6 +17,7 @@ import { SITE_URL, DEFAULT_TITLE } from '../utils/seo.js';
 // every visitor. utils/supabase.js exists precisely to be stateless, and this
 // was the one place that bypassed it.
 import { supabase } from '../utils/supabase.js';
+import { isPlatform, officialFirst } from '../utils/listings.js';
 
 const DEFAULT_AVATAR = 'https://placehold.co/400x400?text=Spiritpedia';
 
@@ -93,13 +94,13 @@ export default async function HomePage({ initialSubjectSlug, initialSearch = '' 
     h.tier === 'superhero' || h.tier === 'ascended_master' || h.tier === 'luminary';
 
   // ENTITY SPLIT — `entity_type` separates people from platforms. 'channel'
-  // (YouTube channels, collectives) and 'app' (Headspace) get their own shelf;
-  // everything else is an individual. NULL is treated as individual so rows
-  // predating the column — or a database without it yet — keep rendering in
-  // the tier shelves exactly as before.
-  const isPlatform = (h) => h.entity_type === 'channel' || h.entity_type === 'app';
+  // (YouTube channels, podcasts), 'app' (Headspace) and 'organisation' (The
+  // Shift Network) get their own shelf, Spiritpedia Official first
+  // (utils/listings.js, migration 0020); everything else is an individual.
+  // NULL is treated as individual so rows predating the column keep rendering
+  // in the tier shelves exactly as before.
   const individuals = healers.filter((h) => !isPlatform(h));
-  const platforms = healers.filter(isPlatform);
+  const platforms = officialFirst(healers.filter(isPlatform));
 
   const superheroes = individuals.filter((h) => h.tier === 'superhero');
   const ascendedMasters = individuals.filter((h) => h.tier === 'ascended_master');
@@ -121,7 +122,9 @@ export default async function HomePage({ initialSubjectSlug, initialSearch = '' 
     ? Math.floor(Math.random() * billboardHealers.length)
     : 0;
   const luminaries = individuals.filter((h) => h.tier === 'luminary');
-  const localHeroes = healers.filter((h) => !isPremium(h));
+  // People only: a channel or app approved at the default tier is not a
+  // practitioner near anyone.
+  const localHeroes = individuals.filter((h) => !isPremium(h));
 
   // Practitioners Near You is ordered in the browser, for the visitor's own
   // area (components/NearYouShelf.jsx). It needs their towns — the few the
@@ -276,7 +279,7 @@ export default async function HomePage({ initialSubjectSlug, initialSearch = '' 
             itemWidthClass="w-[260px]"
           />
 
-          {/* Channels and apps, regardless of tier. Hidden outright when there
+          {/* Channels, apps and organisations, regardless of tier. Hidden outright when there
               are none — ContentShelf's emptyHide default handles that. */}
           <ContentShelf
             title="Explore These Channels"

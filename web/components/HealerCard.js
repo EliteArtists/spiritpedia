@@ -63,6 +63,9 @@ function TierTooltip({ tier, children, placement = 'above' }) {
 // image_urls — HeroImageRotator's pattern, stacked frames fading in place. With
 // one image (or none) it renders the static card exactly as before, so the prop
 // is safe to pass for a whole shelf.
+export const OFFICIAL_BADGE_CLASS =
+  'block shrink-0 rounded-md bg-white px-2 py-0.5 text-[10px] font-bold uppercase tracking-wider text-[#4c1d95] shadow-sm';
+
 export default function HealerCard({ healer, portrait, heightClass = 'h-72', rotate = false }) {
   // Saved by slug — the same key the app and user_favourites use.
   const [favorited, toggleSaved] = useFavorite(FAVORITE_KEYS.healers, healer.healer_slug);
@@ -140,7 +143,11 @@ export default function HealerCard({ healer, portrait, heightClass = 'h-72', rot
           }`}
         >
           <h3 className="text-white font-bold text-lg drop-shadow-sm">{healer.name}</h3>
-          {healer.tier === 'superhero' ? (
+          {/* Spiritpedia's own profile wears Official instead of a tier
+              (healers.official, migration 0020). */}
+          {healer.official ? (
+            <span className={OFFICIAL_BADGE_CLASS}>✦ Official</span>
+          ) : healer.tier === 'superhero' ? (
             <TierTooltip tier="superhero">
               <span className="block px-2.5 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wider bg-amber-100 text-amber-600 border border-amber-300">
                 Superhero

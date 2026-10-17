@@ -39,7 +39,7 @@ export default function PendingPage() {
       </h1>
 
       <p className="mt-4 text-sm leading-relaxed text-gray-400">
-        We&apos;re reviewing your practitioner profile. We&apos;ll be in touch at{' '}
+        We&apos;re reviewing your profile. We&apos;ll be in touch at{' '}
         {/* Until the address is known the sentence still reads; it does not
             flash the word "null" or collapse mid-clause. */}
         <span className="font-semibold text-white">{email || 'your email address'}</span> within a

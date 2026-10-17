@@ -126,6 +126,14 @@ function PhoneIcon() {
 // 2017" / "b. 1926"), and it is omitted entirely when no years are recorded.
 function TierBadge({ healer }) {
   const { tier } = healer;
+  // Spiritpedia's own profile (healers.official, migration 0020).
+  if (healer.official) {
+    return (
+      <span className="inline-block rounded-full bg-white px-3 py-1 text-[11px] font-bold uppercase tracking-wider text-[#4c1d95] shadow-sm">
+        ✦ Spiritpedia Official
+      </span>
+    );
+  }
   if (tier === 'superhero') {
     return (
       <span className="inline-block rounded-full bg-[#fef08a] px-3 py-1 text-[11px] font-bold uppercase tracking-wider text-[#78350f] shadow-sm">

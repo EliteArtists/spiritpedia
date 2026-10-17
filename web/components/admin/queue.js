@@ -6,6 +6,7 @@
 // application, a claim, a flag and a message without knowing the difference.
 
 import { NOT_AN_IMAGE, TABLE_LABELS } from '@/utils/brokenImages';
+import { describedAsLabel } from '@/utils/listings';
 
 export const QUEUE_TYPES = {
   application: {
@@ -86,13 +87,18 @@ export const STATUS_STYLES = {
 // practitioner approving themselves, so the form could not write 'incomplete'
 // even if asked to.
 //
-// Deriving it from the absence of the two fields a healer row cannot be built
-// without costs nothing, needs no migration, and is self-correcting: the moment
-// someone finishes the form they stop being incomplete.
+// Deriving it from the absence of the fields a listing cannot be built without
+// costs nothing, needs no migration, and is self-correcting: the moment someone
+// finishes the form they stop being incomplete.
+//
+// A name, and something to say about the work: the one form for everyone
+// (migration 0020) asks for a description, and applications made before it
+// asked for a modality instead, so either counts.
 export function isIncomplete(profile) {
   if (profile.user_type !== 'practitioner') return false;
   if (profile.verification_status !== 'pending') return false;
-  return !(profile.full_name || '').trim() || !(profile.modality || '').trim();
+  const said = (profile.bio || '').trim() || (profile.modality || '').trim();
+  return !(profile.full_name || '').trim() || !said;
 }
 
 export function deriveStatus(profile) {
@@ -164,11 +170,11 @@ function personName(profile) {
   return (profile.full_name || '').trim() || profile.email || 'Unnamed account';
 }
 
-const TIER_WORDS = {
-  superhero: 'Superhero',
-  ascended_master: 'Ascended Master',
-  luminary: 'Luminary',
-  local_hero: 'Local Hero',
+const LISTING_WORDS = {
+  individual: 'Practitioner',
+  channel: 'Channel',
+  app: 'App',
+  organisation: 'Organisation',
 };
 
 // Build the queue from everything currently readable. Sources with no table yet
@@ -191,7 +197,8 @@ export function buildQueue(
   reviews = [],
   brokenImages = [],
   accountDeletions = [],
-  reports = []
+  reports = [],
+  claimRequests = []
 ) {
   if (!Array.isArray(profiles)) return [];
   const items = [];
@@ -206,10 +213,18 @@ export function buildQueue(
         profileId: profile.id,
         at: profile.created_at,
         person: personName(profile),
-        title: incomplete ? 'Incomplete practitioner application' : 'New practitioner application',
+        // The kind of listing is the admin's to set; what they said of
+        // themselves, if anything, is shown as theirs.
+        title: incomplete ? 'Incomplete application' : 'New application',
         detail: incomplete
           ? 'Started setup but has not submitted details'
-          : [TIER_WORDS.local_hero, profile.modality, place].filter(Boolean).join(' · '),
+          : [
+              profile.described_as ? `Says: ${describedAsLabel(profile.described_as)}` : null,
+              profile.modality,
+              place,
+            ]
+              .filter(Boolean)
+              .join(' · '),
         status: deriveStatus(profile),
         profile,
       });
@@ -348,6 +363,24 @@ export function buildQueue(
       status: 'review',
       action: 'Decide →',
       href: '/admin/flags',
+    });
+  }
+
+  // "Request to claim it" (claim_requests, migration 0020): someone whose email
+  // did not match the listing. Opened in place, like an application.
+  for (const request of Array.isArray(claimRequests) ? claimRequests : []) {
+    const listing = request.healers || request.publishers || {};
+    const kind = request.publisher_id ? 'Publisher' : LISTING_WORDS[listing.entity_type] || 'Practitioner';
+    items.push({
+      id: `claim_request:${request.id}`,
+      type: 'claim',
+      profileId: request.user_id,
+      at: request.created_at,
+      person: request.requester_email || 'A Spiritpedia member',
+      title: `${kind} claim request · ${listing.name || 'a listing'}`,
+      detail: request.connection,
+      status: 'pending',
+      request,
     });
   }
 

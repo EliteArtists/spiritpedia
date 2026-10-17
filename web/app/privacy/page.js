@@ -10,7 +10,7 @@ import CookieSettingsLink from '@/components/CookieSettingsLink';
 // the two now change independently. Updated for self-serve account deletion,
 // synced saved items, app notifications (Firebase Cloud Messaging), and the
 // subjects chosen and hidden in the app (explicit consent).
-const PRIVACY_UPDATED = '16 October 2026';
+const PRIVACY_UPDATED = '17 October 2026';
 
 export const metadata = buildMetadata({
   title: 'Privacy Policy',
@@ -71,7 +71,7 @@ export default function PrivacyPage() {
 
         <Sub>When you create an account</Sub>
         <List>
-          <li>Your email address and whether you joined as an explorer or a practitioner.</li>
+          <li>Your email address and whether you joined to explore or to share your work.</li>
           <li>
             While you&apos;re signing up, we briefly hold your email address and that choice, so it
             survives if you open your code on another device. It is deleted once you finish
@@ -158,12 +158,18 @@ export default function PrivacyPage() {
           </li>
         </List>
 
-        <Sub>When you apply or are listed as a practitioner</Sub>
+        <Sub>When you apply or are listed — as a practitioner, channel, podcast, app, publisher or organisation</Sub>
         <List>
           <li>
-            What you give us: name, modality, bio, location, website and social links, images,
-            subjects and contact details. Most of this appears on your public profile — that is
-            its purpose.
+            What you give us: name, what you do, description, whether you offer sessions in person
+            and, if so, your town, website and social links, images or logo, subjects, how you
+            describe yourself, and contact details. Most of this appears on your public profile —
+            that is its purpose.
+          </li>
+          <li>
+            If you ask to claim a listing: which listing, and what you tell us about how you&apos;re
+            connected to it. To confirm a request, we may email the contact address published for
+            that listing, or ask you to place a short code on its channel or website.
           </li>
           <li>
             Internal notes we make while reviewing your application or profile. These are never
@@ -308,9 +314,10 @@ export default function PrivacyPage() {
             removed altogether.
           </li>
           <li>
-            Practitioner profiles — while the profile is listed; declined applications for 12
-            months.
+            Profiles (practitioners, channels, podcasts, apps, publishers and organisations) — while
+            the profile is listed; declined applications for 12 months.
           </li>
+          <li>Requests to claim a listing — 12 months after we decide them.</li>
           <li>
             Unfinished sign-ups — the email address and choice you entered are deleted
             automatically within two days.
@@ -357,7 +364,7 @@ export default function PrivacyPage() {
           rows={[
             [
               'Essential (browser storage)',
-              'Keeps you signed in, remembers your cookie choice, and remembers your explorer or practitioner choice while you sign up',
+              'Keeps you signed in, remembers your cookie choice, and remembers whether you\'re exploring or sharing your work while you sign up',
               'No — Spiritpedia can’t work without it',
             ],
             [

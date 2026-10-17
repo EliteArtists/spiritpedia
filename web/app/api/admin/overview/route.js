@@ -46,6 +46,7 @@ export async function GET() {
         brokenImages: [],
         accountDeletions: [],
         openReports: [],
+        claimRequests: [],
       },
       { status: 200 }
     );
@@ -110,6 +111,18 @@ export async function GET() {
     .eq('status', 'open')
     .order('created_at', { ascending: true });
 
+  // "Request to claim it" (claim_requests, migration 0020), still undecided.
+  // Owners can read only their own, so this needs the service role too. With
+  // the listing's name and published contact address, which is how the admin
+  // confirms it.
+  const { data: claimRows } = await supabase
+    .from('claim_requests')
+    .select(
+      'id, user_id, healer_slug, publisher_id, connection, proof_code, created_at, healers(name, entity_type, contact_email, website_url, youtube_url), publishers(name, slug, contact_email, website_url)'
+    )
+    .eq('status', 'pending')
+    .order('created_at', { ascending: true });
+
   // user_profiles has no email column — the address lives in auth.users, which
   // only the service role can read. One listUsers call and a lookup map is far
   // cheaper than a getUserById per profile.
@@ -120,6 +133,11 @@ export async function GET() {
   const withEmail = (profiles || []).map((profile) => ({
     ...profile,
     email: emails.get(profile.id) || null,
+  }));
+
+  const claimRequests = (claimRows || []).map((row) => ({
+    ...row,
+    requester_email: emails.get(row.user_id) || null,
   }));
 
   counts.users = withEmail.length;
@@ -134,6 +152,7 @@ export async function GET() {
   counts.broken_images = (brokenImages || []).length;
   counts.closed_accounts = (accountDeletions || []).length;
   counts.open_reports = (openReports || []).length;
+  counts.claim_requests = claimRequests.length;
 
   return NextResponse.json({
     profiles: withEmail,
@@ -141,6 +160,7 @@ export async function GET() {
     brokenImages: brokenImages || [],
     accountDeletions: accountDeletions || [],
     openReports: openReports || [],
+    claimRequests,
     counts,
   });
 }

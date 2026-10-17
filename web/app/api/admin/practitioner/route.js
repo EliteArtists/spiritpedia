@@ -1,5 +1,6 @@
 import { NextResponse } from 'next/server';
 import { adminClient, isAdminRequest, NOT_CONFIGURED } from '@/utils/supabaseAdmin';
+import { ENTITY_TYPES } from '@/utils/listings';
 
 export const dynamic = 'force-dynamic';
 
@@ -22,8 +23,11 @@ const AVAILABILITY_LABELS = {
   local_online: 'Local & Online Sessions',
 };
 
+// Channels, apps and organisations do not hold sessions unless they said so:
+// their label carries no "Online", so no "Online Session available" badge.
+const PLATFORM_AVAILABILITY = 'Worldwide';
+
 const TIERS = ['superhero', 'ascended_master', 'luminary', 'local_hero'];
-const ENTITY_TYPES = ['individual', 'channel', 'app'];
 
 function slugify(value) {
   return (value || '')
@@ -38,9 +42,9 @@ function slugify(value) {
 // Approving must never collide with an existing healer_slug — the column is how
 // every book, video and route finds a practitioner, so a duplicate would merge
 // two people's work.
-async function uniqueSlug(supabase, base) {
-  const { data } = await supabase.from('healers').select('healer_slug').ilike('healer_slug', `${base}%`);
-  const taken = new Set((data || []).map((row) => row.healer_slug));
+async function uniqueSlug(supabase, base, table = 'healers', column = 'healer_slug') {
+  const { data } = await supabase.from(table).select(column).ilike(column, `${base}%`);
+  const taken = new Set((data || []).map((row) => row[column]));
   if (!taken.has(base)) return base;
   let n = 2;
   while (taken.has(`${base}-${n}`)) n += 1;
@@ -56,7 +60,7 @@ export async function POST(request) {
   if (!supabase) return NextResponse.json(NOT_CONFIGURED, { status: 503 });
 
   const body = await request.json().catch(() => ({}));
-  const { action, id, tier = 'local_hero', entityType = 'individual' } = body;
+  const { action, id, tier = 'local_hero', entityType = 'individual', publisherId = null } = body;
 
   if (!id) return NextResponse.json({ error: 'missing_id' }, { status: 400 });
 
@@ -80,8 +84,10 @@ export async function POST(request) {
   }
 
   // Never trust the dropdown values off the wire — a bad tier would render an
-  // unstyled badge across the whole site.
-  if (!TIERS.includes(tier) || !ENTITY_TYPES.includes(entityType)) {
+  // unstyled badge across the whole site. 'publisher' is not an entity_type: it
+  // makes a publishers row instead (migration 0020).
+  const isPublisher = entityType === 'publisher';
+  if (!isPublisher && (!TIERS.includes(tier) || !ENTITY_TYPES.includes(entityType))) {
     return NextResponse.json({ error: 'invalid_tier_or_entity_type' }, { status: 400 });
   }
 
@@ -95,15 +101,20 @@ export async function POST(request) {
     return NextResponse.json({ error: 'profile_not_found' }, { status: 404 });
   }
 
-  // Already linked: approve in place rather than creating a second healer row
-  // for the same person. Pressing Approve twice is an ordinary slip.
-  if (profile.linked_healer_slug) {
+  // Already linked: approve in place rather than creating a second listing for
+  // the same person. Pressing Approve twice is an ordinary slip.
+  if (profile.linked_healer_slug || profile.linked_publisher_id) {
     const { error } = await supabase
       .from('user_profiles')
       .update({ verification_status: 'approved' })
       .eq('id', id);
     if (error) return NextResponse.json({ error: error.message }, { status: 500 });
-    return NextResponse.json({ ok: true, healer_slug: profile.linked_healer_slug, reused: true });
+    return NextResponse.json({
+      ok: true,
+      healer_slug: profile.linked_healer_slug,
+      publisher_id: profile.linked_publisher_id,
+      reused: true,
+    });
   }
 
   const { data: authUser } = await supabase.auth.admin.getUserById(id);
@@ -114,7 +125,13 @@ export async function POST(request) {
     return NextResponse.json({ error: 'no_name', message: 'This profile has no name to publish.' }, { status: 400 });
   }
 
+  if (isPublisher) return approvePublisher(supabase, { id, profile, name, email, publisherId });
+
   const healerSlug = await uniqueSlug(supabase, slugify(name));
+  const availability =
+    entityType !== 'individual' && profile.availability_type !== 'local' && profile.availability_type !== 'local_online'
+      ? PLATFORM_AVAILABILITY
+      : AVAILABILITY_LABELS[profile.availability_type] || AVAILABILITY_LABELS.worldwide;
 
   const { error: insertError } = await supabase.from('healers').insert({
     name,
@@ -124,7 +141,7 @@ export async function POST(request) {
     entity_type: entityType,
     image_urls: profile.image_urls || [],
     subject_slugs: profile.subject_slugs || [],
-    availability_type: AVAILABILITY_LABELS[profile.availability_type] || AVAILABILITY_LABELS.worldwide,
+    availability_type: availability,
     city: profile.location_city || null,
     country: profile.location_country || null,
     contact_email: email,
@@ -157,4 +174,59 @@ export async function POST(request) {
   }
 
   return NextResponse.json({ ok: true, healer_slug: healerSlug });
+}
+
+// A publisher: link an existing publishers row (chosen by the admin), or
+// create one from the application. The account is linked by
+// linked_publisher_id, which only the service role or a verified claim may
+// write (migration 0020).
+async function approvePublisher(supabase, { id, profile, name, email, publisherId }) {
+  let targetId = null;
+  let slug = null;
+
+  if (publisherId) {
+    const { data: existing } = await supabase
+      .from('publishers')
+      .select('id, slug, contact_email')
+      .eq('id', publisherId)
+      .maybeSingle();
+    if (!existing) return NextResponse.json({ error: 'publisher_not_found' }, { status: 404 });
+    targetId = existing.id;
+    slug = existing.slug;
+    // Fill a missing contact address; never replace one already published.
+    if (!existing.contact_email && email) {
+      await supabase.from('publishers').update({ contact_email: email }).eq('id', existing.id);
+    }
+  } else {
+    slug = await uniqueSlug(supabase, slugify(name), 'publishers', 'slug');
+    const { data: created, error: insertError } = await supabase
+      .from('publishers')
+      .insert({
+        name,
+        slug,
+        description: profile.bio || null,
+        website_url: profile.website_url || null,
+        logo_url: (profile.image_urls || []).find(Boolean) || null,
+        subject_slugs: profile.subject_slugs || [],
+        contact_email: email,
+      })
+      .select('id')
+      .single();
+    if (insertError) return NextResponse.json({ error: insertError.message }, { status: 500 });
+    targetId = created.id;
+  }
+
+  const { error: linkError } = await supabase
+    .from('user_profiles')
+    .update({ verification_status: 'approved', linked_publisher_id: targetId })
+    .eq('id', id);
+
+  if (linkError) {
+    return NextResponse.json(
+      { error: 'partial', message: `Publisher ${slug} is ready but the profile was not linked: ${linkError.message}` },
+      { status: 500 }
+    );
+  }
+
+  return NextResponse.json({ ok: true, publisher_slug: slug });
 }

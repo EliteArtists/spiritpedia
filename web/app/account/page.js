@@ -6,6 +6,7 @@ import { useRouter } from 'next/navigation';
 import SiteLogo from '@/components/SiteLogo';
 import { getUser, signOut, supabaseAuth } from '@/utils/supabaseAuth';
 import PractitionerDashboard from '@/components/PractitionerDashboard';
+import PublisherDashboard from '@/components/PublisherDashboard';
 import DeleteAccount from '@/components/DeleteAccount';
 
 const SUPPORT_EMAIL = 'love@spiritpedia.co';
@@ -21,7 +22,7 @@ const STATUS_NOTICES = {
   approved: {
     className: 'border-emerald-400/30 bg-emerald-400/5 text-emerald-200',
     title: 'Your profile is live',
-    body: 'Your practice is listed on Spiritpedia.',
+    body: 'Your work is listed on Spiritpedia.',
   },
   rejected: {
     className: 'border-red-400/30 bg-red-400/5 text-red-200',
@@ -57,7 +58,7 @@ export default function AccountPage() {
       // and the anonymous client would see nothing at all.
       const { data: profile } = await supabaseAuth
         .from('user_profiles')
-        .select('user_type, verification_status, linked_healer_slug, full_name')
+        .select('user_type, verification_status, linked_healer_slug, linked_publisher_id, full_name')
         .eq('id', user.id)
         .maybeSingle();
 
@@ -109,8 +110,10 @@ export default function AccountPage() {
   // An approved practitioner gets the dashboard instead of the account summary.
   // Same URL, no redirect and no link to follow — the page simply renders
   // differently for them. Every other state below is untouched.
-  const showDashboard = isPractitioner && status === 'approved';
   const healerSlug = state.profile?.linked_healer_slug;
+  // A publisher's account (migration 0020) has its own, smaller dashboard.
+  const publisherId = state.profile?.linked_publisher_id;
+  const showDashboard = isPractitioner && status === 'approved' && Boolean(healerSlug || publisherId);
 
   return (
     <main className="min-h-screen bg-[#0a0f1d] text-white">
@@ -121,7 +124,7 @@ export default function AccountPage() {
       </nav>
 
       <div className={`mx-auto px-6 py-14 ${showDashboard ? 'max-w-3xl' : 'max-w-xl'}`}>
-        <h1 className="text-3xl font-bold">{showDashboard ? 'Your practice' : 'My Account'}</h1>
+        <h1 className="text-3xl font-bold">{showDashboard ? 'Your work' : 'My Account'}</h1>
 
         {showDashboard && (
           <>
@@ -141,7 +144,11 @@ export default function AccountPage() {
             </p>
 
             <div className="mt-8">
-              <PractitionerDashboard email={state.email} />
+              {healerSlug ? (
+                <PractitionerDashboard email={state.email} />
+              ) : (
+                <PublisherDashboard />
+              )}
             </div>
 
             <div className="mt-10">
@@ -172,7 +179,7 @@ export default function AccountPage() {
           <div className="flex items-center justify-between gap-4 px-5 py-4">
             <dt className="text-sm text-gray-500">Account type</dt>
             <dd className="text-sm font-medium text-white">
-              {isPractitioner ? 'Practitioner' : 'Explorer'}
+              {isPractitioner ? 'Sharing my work' : 'Explorer'}
             </dd>
           </div>
         </dl>
@@ -212,7 +219,7 @@ export default function AccountPage() {
 
         {!showDashboard && (
           <div className="mt-6">
-            <DeleteAccount hasListing={Boolean(healerSlug)} />
+            <DeleteAccount hasListing={Boolean(healerSlug || publisherId)} />
           </div>
         )}
 

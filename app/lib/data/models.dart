@@ -58,6 +58,7 @@ class Healer {
     this.twitterUrl,
     this.tiktokUrl,
     this.placeId,
+    this.official = false,
   });
 
   factory Healer.fromJson(Map<String, dynamic> j) => Healer(
@@ -84,6 +85,7 @@ class Healer {
     twitterUrl: _text(j['twitter_url']),
     tiktokUrl: _text(j['tiktok_url']),
     placeId: (j['place_id'] as num?)?.toInt(),
+    official: j['official'] == true,
   );
 
   final int id;
@@ -112,8 +114,23 @@ class Healer {
   /// Their town (public.places, migration 0019), from city and country.
   final int? placeId;
 
-  /// Channels and apps get their own shelf; NULL is an individual.
-  bool get isPlatform => entityType == 'channel' || entityType == 'app';
+  /// Spiritpedia's own profile (healers.official, migration 0020): the
+  /// Official badge, first among the channels.
+  final bool official;
+
+  /// Channels, apps and organisations get their own shelf; NULL is an
+  /// individual. The website's rule too (web/utils/listings.js).
+  bool get isPlatform =>
+      entityType == 'channel' ||
+      entityType == 'app' ||
+      entityType == 'organisation';
+
+  /// What a platform is, in a word: "App", "Organisation" or "Channel".
+  String get platformLabel => switch (entityType) {
+    'app' => 'App',
+    'organisation' => 'Organisation',
+    _ => 'Channel',
+  };
 
   bool get isAscendedMaster => tier == 'ascended_master';
 

@@ -3,6 +3,7 @@
 import { supabaseAuth } from './supabaseAuth.js';
 import { syncFavouritesWithAccount } from './favouritesSync.js';
 import { USER_TYPES, getUserType } from './userType.js';
+import { chooseClaim, claimPath } from './listings.js';
 
 // Everything that happens in the seconds after a code is accepted: move what
 // the visitor saved while anonymous onto their account, give them a profile
@@ -184,51 +185,62 @@ const FREE_MAIL_DOMAINS = new Set([
   'btinternet.com', 'sky.com', 'virginmedia.com', 'talktalk.net', 'tutanota.com',
 ]);
 
-// Does this email look like it belongs to a healer already on Spiritpedia?
+// Does this email look like it belongs to a listing already on Spiritpedia —
+// any listing, a healer of any kind or a publisher (migration 0020)?
 //
 // Two tests, strongest first:
-//   1. healers.contact_email matches exactly. Unambiguous.
-//   2. The email's domain appears in website_url or youtube_url — but only for
-//      a domain the person could plausibly own. karina@karinagrant.co.uk
-//      matching karinagrant.co.uk is evidence; anyone@gmail.com matching a
-//      healer who listed a Gmail address is not.
+//   1. The listing's contact_email matches exactly. Unambiguous.
+//   2. The email's domain appears in the listing's website (or, for healers,
+//      YouTube) link — but only for a domain the person could plausibly own.
+//      karina@karinagrant.co.uk matching karinagrant.co.uk is evidence;
+//      anyone@gmail.com matching a healer who listed a Gmail address is not.
 //
-// A domain matching MORE THAN ONE healer returns no claim. Two practitioners
-// sharing a clinic domain is ordinary, and guessing between them would invite
-// someone to claim a colleague's profile. They go through the normal setup and
-// can ask for a claim there.
-export async function findClaimableHealer(email) {
+// More than one match, across healers and publishers together, returns no
+// claim. Two practitioners sharing a clinic domain is ordinary, and guessing
+// between them would invite someone to claim a colleague's profile. They go
+// through the normal setup and can request a claim there.
+//
+// The database re-checks all of this when the claim is made
+// (claim_healer_profile / claim_publisher_profile); this only decides where to
+// send them.
+export async function findClaimableListing(email) {
   const address = (email || '').trim().toLowerCase();
-  if (!address.includes('@')) return { slug: null, reason: 'no-email' };
+  if (!address.includes('@')) return null;
+  // ilike treats % and _ as wildcards; an address may contain an underscore.
+  const exactPattern = address.replace(/[\\%_]/g, (c) => `\\${c}`);
 
-  const { data: exact } = await supabaseAuth
-    .from('healers')
-    .select('healer_slug')
-    .ilike('contact_email', address)
-    .limit(2);
-
-  if (exact?.length === 1) return { slug: exact[0].healer_slug, reason: 'contact-email' };
-  if (exact?.length > 1) return { slug: null, reason: 'ambiguous-email' };
+  const [{ data: exactHealers }, { data: exactPublishers }] = await Promise.all([
+    supabaseAuth.from('healers').select('healer_slug').ilike('contact_email', exactPattern).limit(2),
+    supabaseAuth.from('publishers').select('slug').ilike('contact_email', exactPattern).limit(2),
+  ]);
+  const exact = chooseClaim(
+    (exactHealers || []).map((r) => r.healer_slug),
+    (exactPublishers || []).map((r) => r.slug)
+  );
+  if (exact) return exact.ambiguous ? null : exact;
 
   const domain = address.split('@')[1];
-  if (!domain || FREE_MAIL_DOMAINS.has(domain)) return { slug: null, reason: 'free-domain' };
+  if (!domain || FREE_MAIL_DOMAINS.has(domain)) return null;
 
-  const { data: byDomain } = await supabaseAuth
-    .from('healers')
-    .select('healer_slug')
-    .or(`website_url.ilike.%${domain}%,youtube_url.ilike.%${domain}%`)
-    .limit(2);
-
-  if (byDomain?.length === 1) return { slug: byDomain[0].healer_slug, reason: 'domain' };
-  if (byDomain?.length > 1) return { slug: null, reason: 'ambiguous-domain' };
-
-  return { slug: null, reason: 'no-match' };
+  const [{ data: domainHealers }, { data: domainPublishers }] = await Promise.all([
+    supabaseAuth
+      .from('healers')
+      .select('healer_slug')
+      .or(`website_url.ilike.%${domain}%,youtube_url.ilike.%${domain}%`)
+      .limit(2),
+    supabaseAuth.from('publishers').select('slug').ilike('website_url', `%${domain}%`).limit(2),
+  ]);
+  const byDomain = chooseClaim(
+    (domainHealers || []).map((r) => r.healer_slug),
+    (domainPublishers || []).map((r) => r.slug)
+  );
+  return byDomain && !byDomain.ambiguous ? byDomain : null;
 }
 
 // Where a newly verified user goes next.
 export async function resolveDestination(user, userType) {
   if (userType !== USER_TYPES.practitioner) return '/';
 
-  const { slug } = await findClaimableHealer(user?.email);
-  return slug ? `/auth/claim?slug=${encodeURIComponent(slug)}` : '/auth/practitioner-setup';
+  const claim = await findClaimableListing(user?.email);
+  return claimPath(claim) || '/auth/practitioner-setup';
 }

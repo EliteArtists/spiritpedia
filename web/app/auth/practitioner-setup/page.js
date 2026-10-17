@@ -2,13 +2,16 @@
 
 import { useCallback, useEffect, useRef, useState } from 'react';
 import { useRouter } from 'next/navigation';
+import Link from 'next/link';
 import AuthShell from '@/components/AuthShell';
 import { getUser, supabaseAuth } from '@/utils/supabaseAuth';
-import {
-  AVAILABILITY_OPTIONS,
-  SUBJECT_SLUGS,
-  subjectLabel,
-} from '@/utils/practitionerSubjects';
+import { SUBJECT_SLUGS, subjectLabel } from '@/utils/practitionerSubjects';
+import { DESCRIBED_AS_OPTIONS, availabilityFor, inPersonFrom } from '@/utils/listings';
+
+// ONE FORM FOR EVERYONE who shares their work: practitioners, channels,
+// podcasts, apps, publishers and organisations (migration 0020). Nobody picks a
+// type up front. "What best describes you?" is optional and only a hint: the
+// admin sets the kind of listing at approval, and can change it later.
 
 const BUCKET = 'practitioner-images';
 const MAX_IMAGE_BYTES = 5 * 1024 * 1024;
@@ -23,6 +26,7 @@ const EMPTY_FORM = {
   location_city: '',
   location_country: '',
   availability_type: 'worldwide',
+  described_as: '',
   youtube_url: '',
   instagram_url: '',
   facebook_url: '',
@@ -49,6 +53,23 @@ function Field({ label, hint, required, children, htmlFor }) {
       {hint && <p className="mt-1 text-xs text-gray-500">{hint}</p>}
       <div className="mt-2">{children}</div>
     </div>
+  );
+}
+
+function ChoiceButton({ selected, onClick, children }) {
+  return (
+    <button
+      type="button"
+      aria-pressed={selected}
+      onClick={onClick}
+      className={`rounded-full px-6 py-2 text-sm font-semibold transition-colors ${
+        selected
+          ? 'bg-[#7c3aed] text-white'
+          : 'border border-white/20 text-gray-300 hover:border-white/40 hover:text-white'
+      }`}
+    >
+      {children}
+    </button>
   );
 }
 
@@ -116,6 +137,12 @@ export default function PractitionerSetupPage() {
   }, [router]);
 
   const set = (key) => (event) => setForm((prev) => ({ ...prev, [key]: event.target.value }));
+
+  // "Do you offer sessions in person?" and "online too?", kept as the
+  // availability key the profile has always stored.
+  const { inPerson, online } = inPersonFrom(form.availability_type);
+  const setSessions = (next) =>
+    setForm((prev) => ({ ...prev, availability_type: availabilityFor({ inPerson, online, ...next }) }));
 
   const toggleSubject = (slug) =>
     setSubjects((prev) => (prev.includes(slug) ? prev.filter((s) => s !== slug) : [...prev, slug]));
@@ -187,11 +214,11 @@ export default function PractitionerSetupPage() {
 
       if (mode === 'submit') {
         if (!form.full_name.trim()) {
-          setError('Please tell us your name.');
+          setError('Please tell us your name, or your work’s name.');
           return;
         }
-        if (!form.modality.trim()) {
-          setError('Please tell us what you practise.');
+        if (!form.bio.trim()) {
+          setError('Please describe your work in a few lines.');
           return;
         }
       }
@@ -207,11 +234,13 @@ export default function PractitionerSetupPage() {
               user_type: 'practitioner',
               full_name: form.full_name.trim(),
               bio: form.bio.trim() || null,
-              modality: form.modality.trim(),
+              modality: form.modality.trim() || null,
+              described_as: form.described_as || null,
               website_url: form.website_url.trim() || null,
               booking_url: form.booking_url.trim() || null,
-              location_city: form.location_city.trim() || null,
-              location_country: form.location_country.trim() || null,
+              // A town only for those who meet people in person.
+              location_city: inPerson ? form.location_city.trim() || null : null,
+              location_country: inPerson ? form.location_country.trim() || null : null,
               availability_type: form.availability_type,
               youtube_url: form.youtube_url.trim() || null,
               instagram_url: form.instagram_url.trim() || null,
@@ -255,7 +284,7 @@ export default function PractitionerSetupPage() {
 
       router.replace(mode === 'submit' ? '/auth/pending' : '/account');
     },
-    [saving, form, subjects, images, user, router]
+    [saving, form, inPerson, subjects, images, user, router]
   );
 
   if (checking) {
@@ -269,9 +298,21 @@ export default function PractitionerSetupPage() {
   return (
     <AuthShell maxWidthClass="max-w-xl">
       <h1 className="mt-8 text-3xl font-bold">
-        {returning ? 'Update your application' : 'Tell us about your practice'}
+        {returning ? 'Update your application' : 'Tell us about your work'}
       </h1>
       <p className="mt-2 text-sm text-gray-500">(You can edit all of this later in settings)</p>
+
+      {!returning && (
+        <p className="mt-4 text-sm text-gray-400">
+          Is your work already on Spiritpedia?{' '}
+          <Link
+            href="/auth/claim-request"
+            className="font-semibold text-[#a78bfa] underline-offset-2 hover:text-white hover:underline"
+          >
+            Request to claim it →
+          </Link>
+        </p>
+      )}
 
       {returning && (
         <p className="mt-4 rounded-xl border border-white/10 bg-[#111827] p-4 text-left text-sm leading-relaxed text-gray-400">
@@ -280,7 +321,7 @@ export default function PractitionerSetupPage() {
         </p>
       )}
 
-      <Section title="Images">
+      <Section title="Images or logo">
         <div
           onDragOver={(e) => {
             e.preventDefault();
@@ -347,8 +388,13 @@ export default function PractitionerSetupPage() {
         )}
       </Section>
 
-      <Section title="About you">
-        <Field label="Full practitioner name" required htmlFor="full_name">
+      <Section title="About your work">
+        <Field
+          label="Name"
+          hint="(Your name, or your channel, podcast, app, publisher or organisation’s name)"
+          required
+          htmlFor="full_name"
+        >
           <input
             id="full_name"
             value={form.full_name}
@@ -367,9 +413,26 @@ export default function PractitionerSetupPage() {
           />
         </Field>
 
+        <Field label="What best describes you? (optional)" htmlFor="described_as">
+          <select
+            id="described_as"
+            value={form.described_as}
+            onChange={set('described_as')}
+            className={inputClass}
+          >
+            <option value="">Choose…</option>
+            {DESCRIBED_AS_OPTIONS.map((option) => (
+              <option key={option.value} value={option.value}>
+                {option.label}
+              </option>
+            ))}
+          </select>
+        </Field>
+
         <Field
-          label="Bio / about your practice"
+          label="Description"
           hint="(This appears on your Spiritpedia profile)"
+          required
           htmlFor="bio"
         >
           <textarea
@@ -382,77 +445,94 @@ export default function PractitionerSetupPage() {
         </Field>
       </Section>
 
-      <Section title="Your practice">
-        <Field label="Modality / practice" required htmlFor="modality">
+      <Section title="What you do">
+        <Field label="In a few words (optional)" htmlFor="modality">
           <input
             id="modality"
             value={form.modality}
             onChange={set('modality')}
-            placeholder="e.g. Reiki, Homeopathy, Yoga Teacher..."
+            placeholder="e.g. Reiki, a meditation podcast, books on mysticism…"
             className={inputClass}
           />
         </Field>
 
-        <Field label="Website URL" htmlFor="website_url">
+        <fieldset>
+          <legend className="block text-sm font-medium text-gray-300">
+            Do you offer sessions in person?
+          </legend>
+          <div className="mt-2 flex gap-2">
+            <ChoiceButton selected={inPerson} onClick={() => setSessions({ inPerson: true })}>
+              Yes
+            </ChoiceButton>
+            <ChoiceButton selected={!inPerson} onClick={() => setSessions({ inPerson: false })}>
+              No
+            </ChoiceButton>
+          </div>
+        </fieldset>
+
+        {inPerson && (
+          <>
+            <p className="-mt-1 text-xs text-gray-500">
+              (Where you see people, so those nearby can find you)
+            </p>
+            <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+              <Field label="Town or city" htmlFor="location_city">
+                <input
+                  id="location_city"
+                  value={form.location_city}
+                  onChange={set('location_city')}
+                  placeholder="London"
+                  className={inputClass}
+                />
+              </Field>
+              <Field label="Country" htmlFor="location_country">
+                <input
+                  id="location_country"
+                  value={form.location_country}
+                  onChange={set('location_country')}
+                  placeholder="United Kingdom"
+                  className={inputClass}
+                />
+              </Field>
+            </div>
+            <fieldset>
+              <legend className="block text-sm font-medium text-gray-300">
+                Do you also offer sessions online?
+              </legend>
+              <div className="mt-2 flex gap-2">
+                <ChoiceButton selected={online} onClick={() => setSessions({ online: true })}>
+                  Yes
+                </ChoiceButton>
+                <ChoiceButton selected={!online} onClick={() => setSessions({ online: false })}>
+                  No
+                </ChoiceButton>
+              </div>
+            </fieldset>
+          </>
+        )}
+      </Section>
+
+      <Section title="Links">
+        <Field label="Website" htmlFor="website_url">
           <input
             id="website_url"
             type="url"
             value={form.website_url}
             onChange={set('website_url')}
-            placeholder="https://yourpractice.com"
+            placeholder="https://yourwork.com"
             className={inputClass}
           />
         </Field>
 
-        <Field label="Booking URL" htmlFor="booking_url">
+        <Field label="Booking link (if people book with you)" htmlFor="booking_url">
           <input
             id="booking_url"
             type="url"
             value={form.booking_url}
             onChange={set('booking_url')}
-            placeholder="https://yourpractice.com/book"
+            placeholder="https://yourwork.com/book"
             className={inputClass}
           />
-        </Field>
-
-        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
-          <Field label="City" htmlFor="location_city">
-            <input
-              id="location_city"
-              value={form.location_city}
-              onChange={set('location_city')}
-              placeholder="London"
-              className={inputClass}
-            />
-          </Field>
-          <Field label="Country" htmlFor="location_country">
-            <input
-              id="location_country"
-              value={form.location_country}
-              onChange={set('location_country')}
-              placeholder="United Kingdom"
-              className={inputClass}
-            />
-          </Field>
-        </div>
-
-        <Field
-          label="Availability"
-          hint="(This helps users find practitioners near them)"
-          htmlFor="availability_type"
-        >
-          <select
-            id="availability_type"
-            value={form.availability_type}
-            onChange={set('availability_type')}
-            className={inputClass}
-          >
-            {AVAILABILITY_OPTIONS.map((option) => (
-              <option key={option.value} value={option.value}>
-                {option.label}
-              </option>
-            ))}
-          </select>
         </Field>
       </Section>
 
@@ -510,7 +590,7 @@ export default function PractitionerSetupPage() {
       </Section>
 
       <Section title="Your subjects">
-        <p className="-mt-2 text-sm text-gray-400">Click all that apply to your practice</p>
+        <p className="-mt-2 text-sm text-gray-400">Click all that apply to your work</p>
         <div className="flex flex-wrap gap-2">
           {SUBJECT_SLUGS.map((slug) => {
             const selected = subjects.includes(slug);

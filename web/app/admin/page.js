@@ -32,6 +32,7 @@ export default function AdminInboxPage() {
     brokenImages,
     accountDeletions,
     openReports,
+    claimRequests,
     loading,
     reload,
     accountsAvailable,
@@ -61,8 +62,8 @@ export default function AdminInboxPage() {
   }, [reload]);
 
   const queue = useMemo(
-    () => buildQueue(profiles, pendingReviews, brokenImages, accountDeletions, openReports),
-    [profiles, pendingReviews, brokenImages, accountDeletions, openReports]
+    () => buildQueue(profiles, pendingReviews, brokenImages, accountDeletions, openReports, claimRequests),
+    [profiles, pendingReviews, brokenImages, accountDeletions, openReports, claimRequests]
   );
   const visible = useMemo(
     () => (filter === 'all' ? queue : queue.filter((i) => i.type === filter)),
@@ -83,11 +84,19 @@ export default function AdminInboxPage() {
       setBusy(true);
       setToast(null);
       try {
-        const res = await fetch('/api/admin/practitioner', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ id: item.profileId, action, ...options }),
-        });
+        // A claim request (migration 0020) is decided on its own route, by its
+        // own id; applications and verified claims by the account's.
+        const res = item.request
+          ? await fetch('/api/admin/claim-request', {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify({ id: item.request.id, action, ...options }),
+            })
+          : await fetch('/api/admin/practitioner', {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify({ id: item.profileId, action, ...options }),
+            });
         const json = await res.json();
         if (!res.ok || json.error) {
           setToast({ type: 'error', message: json.message || json.error || 'That did not work.' });
@@ -96,9 +105,14 @@ export default function AdminInboxPage() {
         }
         setToast({
           type: 'success',
-          message:
-            action === 'approve'
-              ? `Approved — published as /healers/${json.healer_slug}`
+          message: item.request
+            ? action === 'approve'
+              ? `Claim approved — ${item.person} now manages the listing.`
+              : 'Claim request rejected.'
+            : action === 'approve'
+              ? json.publisher_slug
+                ? `Approved — published as /publishers/${json.publisher_slug}`
+                : `Approved — published as /healers/${json.healer_slug}`
               : 'Application rejected.',
         });
         await reload();
@@ -122,6 +136,26 @@ export default function AdminInboxPage() {
     },
     [decide]
   );
+
+  // A claim request's code: made once, shown in place, the request stays open.
+  const onClaimCode = useCallback(async (item) => {
+    try {
+      const res = await fetch('/api/admin/claim-request', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ id: item.request.id, action: 'code' }),
+      });
+      const json = await res.json();
+      if (!res.ok || json.error) {
+        setToast({ type: 'error', message: json.message || json.error || 'That did not work.' });
+        return null;
+      }
+      return json.proof_code;
+    } catch (err) {
+      setToast({ type: 'error', message: err.message });
+      return null;
+    }
+  }, []);
 
   // Approve and move straight on. The next item is read BEFORE the decision,
   // because reload() rebuilds the queue and the index would otherwise point
@@ -212,6 +246,7 @@ export default function AdminInboxPage() {
           onClose={() => setSelectedId(null)}
           onDecision={onDecision}
           onApproveAndNext={onApproveAndNext}
+          onClaimCode={onClaimCode}
           busy={busy}
         />
       ) : visible.length === 0 ? (

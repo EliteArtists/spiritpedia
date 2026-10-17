@@ -141,7 +141,11 @@ class HealerCard extends StatelessWidget {
                 ),
                 if (!ascended) ...[
                   const SizedBox(height: 8),
-                  HealerBadge(tier: healer.tier, entityType: healer.entityType),
+                  HealerBadge(
+                    tier: healer.tier,
+                    entityType: healer.entityType,
+                    official: healer.official,
+                  ),
                 ],
               ],
             ),

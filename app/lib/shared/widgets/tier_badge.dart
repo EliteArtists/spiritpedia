@@ -105,21 +105,31 @@ class TierBadge extends StatelessWidget {
   };
 }
 
-/// A healer's badge: the tier for a teacher; for a channel or an app, what
-/// it is — never a teacher's tier, which describes a person.
+/// A healer's badge: the tier for a teacher; for a channel, an app or an
+/// organisation, what it is — never a teacher's tier, which describes a
+/// person. Spiritpedia's own profile says Official.
 class HealerBadge extends StatelessWidget {
-  const HealerBadge({super.key, required this.tier, this.entityType});
+  const HealerBadge({
+    super.key,
+    required this.tier,
+    this.entityType,
+    this.official = false,
+  });
 
   final String? tier;
   final String? entityType;
+  final bool official;
 
   @override
   Widget build(BuildContext context) {
-    final platform = switch (entityType) {
-      'channel' => 'Channel',
-      'app' => 'App',
-      _ => null,
-    };
+    final platform = official
+        ? '✦ Official'
+        : switch (entityType) {
+            'channel' => 'Channel',
+            'app' => 'App',
+            'organisation' => 'Organisation',
+            _ => null,
+          };
     if (platform == null) return TierBadge(tier: tier);
     return Semantics(
       label: platform,

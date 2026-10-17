@@ -32,6 +32,7 @@ const ENTITY_TYPES = [
   { value: 'individual', label: 'Individual' },
   { value: 'channel', label: 'Channel' },
   { value: 'app', label: 'App' },
+  { value: 'organisation', label: 'Organisation' },
 ];
 
 // The three labels the ingestion form writes. The column is free text and six
@@ -80,6 +81,9 @@ const EDITABLE = [
   'image_urls',
   'image_url',
   'is_famous',
+  // Spiritpedia's own profile (migration 0020): the Official badge, first in
+  // Explore These Channels. Only the admin can set it.
+  'official',
 ];
 
 const inputClass =
@@ -1375,6 +1379,16 @@ export default function AdminHealerRecordPage({ params }) {
                   className="h-4 w-4 accent-[#7c3aed]"
                 />
                 <span className={labelClass}>Famous name</span>
+              </label>
+
+              <label className="flex items-center gap-2 self-end pb-2">
+                <input
+                  type="checkbox"
+                  checked={Boolean(draft.official)}
+                  onChange={(e) => set('official', e.target.checked)}
+                  className="h-4 w-4 accent-[#7c3aed]"
+                />
+                <span className={labelClass}>Spiritpedia Official</span>
               </label>
 
               <div className="sm:col-span-2">

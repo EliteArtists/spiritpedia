@@ -974,7 +974,7 @@ class ResultTile extends ConsumerWidget {
       Healer h => (
         thumb(h.imageUrls.firstOrNull, h.name, round: true),
         h.name,
-        h.isPlatform ? (h.entityType == 'app' ? 'App' : 'Channel') : 'Teacher',
+        h.isPlatform ? h.platformLabel : 'Teacher',
         '/healers/${h.slug}',
       ),
       Video v => (

@@ -13,7 +13,7 @@ export const metadata = buildMetadata({
 // reporting, blocking and the 24-hour promise (§7, for App Store guideline
 // 1.2) and self-serve account deletion (§14, as the Privacy Policy already
 // described it).
-const TERMS_UPDATED = '13 October 2026';
+const TERMS_UPDATED = '17 October 2026';
 
 export default function TermsPage() {
   return (
@@ -64,13 +64,23 @@ export default function TermsPage() {
         </p>
       </Section>
 
-      <Section title="5. Practitioners and teachers">
+      <Section title="5. Practitioners, channels, apps, publishers and organisations">
         <p>
-          <strong className="text-white">Applying as a practitioner.</strong> We review every
-          application and may approve, decline or ask for changes. You must give accurate
-          information about yourself and your work, and keep it up to date. Once you&apos;re
-          approved, changes you make to your profile appear straight away; we may edit or remove
-          anything that breaks these terms.
+          <strong className="text-white">Sharing your work.</strong> Practitioners, channels,
+          podcasts, apps, publishers and organisations all apply the same way. We review every
+          application and may approve, decline or ask for changes, and we decide how a listing is
+          shown (for example, as a practitioner, a channel or a publisher) and may change that
+          later. You must give accurate information about yourself and your work, and keep it up
+          to date. Once you&apos;re approved, changes you make to your profile appear straight
+          away; we may edit or remove anything that breaks these terms.
+        </p>
+        <p>
+          <strong className="text-white">Claiming a listing.</strong> Only claim or manage a
+          listing you are entitled to represent — your own, or one you are authorised to act for.
+          We may ask you to prove it, for example by confirming through the listing&apos;s
+          published contact address or placing a short code on its channel or website, and we may
+          refuse or withdraw a claim. You are responsible for what you publish on a listing you
+          manage.
         </p>
         <p>
           <strong className="text-white">Teachers we feature.</strong> Many profiles on

@@ -6,13 +6,17 @@ import { setUserType, USER_TYPES } from '../utils/userType.js';
 
 // The first question of sign-up, asked before the email is.
 //
-// Knowing whether someone is a practitioner or an explorer changes what the
-// signup form asks for, so it is settled up front rather than buried as a radio
-// button on a long form. The answer rides in sessionStorage to /auth/signup.
+// Knowing whether someone shares their work or is here to explore changes what
+// the signup form asks for, so it is settled up front rather than buried as a
+// radio button on a long form. The answer rides in sessionStorage to
+// /auth/signup. "Yes" is stored as 'practitioner', which now means anyone who
+// shares their work — practitioner, channel, podcast, app, publisher or
+// organisation (migration 0020). What kind of listing they are is asked, if at
+// all, on the one setup form, and decided by the admin at approval.
 //
-// The wording under "Yes" is doing real work: a practitioner reading a
-// two-button choice may reasonably fear that saying yes puts them on a
-// different, narrower version of the site. It says plainly that it does not.
+// The wording under "Yes" is doing real work: someone reading a two-button
+// choice may reasonably fear that saying yes puts them on a different, narrower
+// version of the site. It says plainly that it does not.
 
 const SIGNUP_PATH = '/auth/signup';
 
@@ -144,11 +148,11 @@ export default function PractitionerModal({ open, onClose }) {
         />
 
         <h2 id={titleId} className="mt-4 text-2xl font-bold leading-snug text-white">
-          Are you a practitioner?
+          Do you share your work on Spiritpedia?
         </h2>
 
         <p id={descId} className="mt-3 text-sm leading-relaxed text-gray-400">
-          This shapes what we ask you next.
+          Practitioner, channel, podcast, app, publisher or organisation: everyone&apos;s welcome.
         </p>
 
         <div className="mt-8 flex flex-col gap-3">
@@ -157,7 +161,7 @@ export default function PractitionerModal({ open, onClose }) {
             onClick={() => choose(USER_TYPES.practitioner)}
             className="w-full rounded-full bg-[#7c3aed] px-6 py-4 text-base font-semibold text-white shadow-lg transition-all duration-200 hover:bg-[#6d28d9] hover:scale-[1.02] active:scale-[0.98]"
           >
-            Yes, I am a practitioner
+            Yes, I share my work
           </button>
 
           {/* Sits under the Yes button because that is the choice that needs

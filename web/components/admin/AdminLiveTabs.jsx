@@ -15,6 +15,7 @@ const ENTITY_TYPES = [
   { value: 'individual', label: 'Individual' },
   { value: 'channel', label: 'Channel' },
   { value: 'app', label: 'App' },
+  { value: 'organisation', label: 'Organisation' },
 ];
 
 const STATUS_STYLES = {

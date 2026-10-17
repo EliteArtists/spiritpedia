@@ -41,8 +41,12 @@ export async function GET(request) {
   const tally = { processed: 0, sent: 0, stopped: 0, errors: 0 };
 
   for (const journey of journeys || []) {
-    tally.processed += 1;
     const slug = journey.healer_slug;
+    // A journey to a publisher (migration 0020) has no healer to read. Nothing
+    // starts one yet — it comes with the outreach emails' publisher wording —
+    // so one found here is left alone rather than stopped as removed.
+    if (!slug) continue;
+    tally.processed += 1;
 
     try {
       const { data: healer } = await supabase

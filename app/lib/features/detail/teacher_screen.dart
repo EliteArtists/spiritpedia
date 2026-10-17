@@ -191,7 +191,11 @@ class _Badge extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     if (!healer.isAscendedMaster) {
-      return HealerBadge(tier: healer.tier, entityType: healer.entityType);
+      return HealerBadge(
+        tier: healer.tier,
+        entityType: healer.entityType,
+        official: healer.official,
+      );
     }
     final lifespan = formatLifespan(healer);
     if (lifespan == null) return const SizedBox.shrink();

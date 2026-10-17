@@ -1,9 +1,11 @@
 'use client';
 
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { QUEUE_TYPES, isIncomplete, timeAgo } from './queue.js';
 import { StatusPill } from './QueueTable.jsx';
+import { supabase } from '@/utils/supabase';
+import { LISTING_TYPES, describedAsLabel, inPersonFrom, suggestedListingType } from '@/utils/listings';
 
 const TIERS = [
   { value: 'local_hero', label: 'Local Hero' },
@@ -12,11 +14,6 @@ const TIERS = [
   { value: 'ascended_master', label: 'Ascended Master' },
 ];
 
-const ENTITY_TYPES = [
-  { value: 'individual', label: 'Individual' },
-  { value: 'channel', label: 'Channel' },
-  { value: 'app', label: 'App' },
-];
 
 /* ── LEFT PANE — the queue stays visible while you work ─────────────────── */
 
@@ -70,11 +67,35 @@ function Field({ label, value, mono }) {
 function ApplicationDetail({ item, busy, onDecision, onApproveAndNext, hasNext }) {
   const p = item.profile;
   const [tier, setTier] = useState('local_hero');
-  const [entityType, setEntityType] = useState('individual');
+  // Pre-filled from what they said of themselves; "Not sure" or nothing leaves
+  // it for the admin to choose (migration 0020).
+  const [entityType, setEntityType] = useState(() => suggestedListingType(p.described_as));
+  // A publisher: link one already listed, or '' to create one.
+  const [publisherId, setPublisherId] = useState('');
+  const [publishers, setPublishers] = useState([]);
   const [note, setNote] = useState(null);
 
   const incomplete = isIncomplete(p);
   const place = [p.location_city, p.location_country].filter(Boolean).join(', ');
+  const { inPerson, online } = inPersonFrom(p.availability_type);
+  const isPublisher = entityType === 'publisher';
+  const blocked = incomplete || !entityType;
+  const options = { tier, entityType, publisherId: isPublisher ? publisherId || null : null };
+
+  useEffect(() => {
+    if (!isPublisher || publishers.length) return undefined;
+    let cancelled = false;
+    supabase
+      .from('publishers')
+      .select('id, name')
+      .order('name')
+      .then(({ data }) => {
+        if (!cancelled) setPublishers(data || []);
+      });
+    return () => {
+      cancelled = true;
+    };
+  }, [isPublisher, publishers.length]);
 
   return (
     <>
@@ -93,7 +114,7 @@ function ApplicationDetail({ item, busy, onDecision, onApproveAndNext, hasNext }
           <p className="text-sm font-bold text-slate-300">This application is incomplete</p>
           <p className="mt-1 text-sm leading-relaxed text-slate-400">
             They started the setup form and pressed &quot;Skip for now&quot;, so there is no name or
-            modality to publish. Approving would create a healer profile with no name and no URL
+            description to publish. Approving would create a healer profile with no name and no URL
             anyone could reach, so it is blocked until they finish. Message them to nudge, or reject
             if the account looks abandoned.
           </p>
@@ -103,8 +124,12 @@ function ApplicationDetail({ item, busy, onDecision, onApproveAndNext, hasNext }
       <dl className="grid grid-cols-1 gap-4 sm:grid-cols-2">
         <Field label="Name" value={p.full_name} />
         <Field label="Email" value={p.email} mono />
-        <Field label="Modality" value={p.modality} />
-        <Field label="Location" value={place} />
+        <Field label="Says they are" value={describedAsLabel(p.described_as)} />
+        <Field label="What they do" value={p.modality} />
+        <Field
+          label="In person"
+          value={inPerson ? `Yes${place ? `, ${place}` : ''}${online ? ' · online too' : ''}` : 'No'}
+        />
         <Field label="Website" value={p.website_url} mono />
         <Field label="Booking" value={p.booking_url} mono />
       </dl>
@@ -147,20 +172,39 @@ function ApplicationDetail({ item, busy, onDecision, onApproveAndNext, hasNext }
 
       <div className="mt-6 grid grid-cols-1 gap-3 sm:grid-cols-2">
         <label className="text-[10px] font-bold uppercase tracking-wider text-slate-500">
-          Entity type
+          Listing type
           <select
             value={entityType}
             onChange={(e) => setEntityType(e.target.value)}
             disabled={incomplete}
             className="mt-1 w-full rounded-lg border border-slate-700 bg-[#0a0f1d] px-3 py-2 text-sm font-normal normal-case tracking-normal text-white disabled:opacity-50"
           >
-            {ENTITY_TYPES.map((o) => (
+            {!entityType && <option value="">Choose…</option>}
+            {LISTING_TYPES.map((o) => (
               <option key={o.value} value={o.value}>
                 {o.label}
               </option>
             ))}
           </select>
         </label>
+        {isPublisher ? (
+          <label className="text-[10px] font-bold uppercase tracking-wider text-slate-500">
+            Publisher
+            <select
+              value={publisherId}
+              onChange={(e) => setPublisherId(e.target.value)}
+              disabled={incomplete}
+              className="mt-1 w-full rounded-lg border border-slate-700 bg-[#0a0f1d] px-3 py-2 text-sm font-normal normal-case tracking-normal text-white disabled:opacity-50"
+            >
+              <option value="">Create a new publisher</option>
+              {publishers.map((o) => (
+                <option key={o.id} value={o.id}>
+                  Link to {o.name}
+                </option>
+              ))}
+            </select>
+          </label>
+        ) : (
         <label className="text-[10px] font-bold uppercase tracking-wider text-slate-500">
           Tier
           <select
@@ -176,14 +220,21 @@ function ApplicationDetail({ item, busy, onDecision, onApproveAndNext, hasNext }
             ))}
           </select>
         </label>
+        )}
       </div>
 
       <div className="mt-5 flex flex-wrap gap-2">
         <button
           type="button"
-          disabled={busy || incomplete}
-          title={incomplete ? 'Needs a name and modality before it can be published' : undefined}
-          onClick={() => onDecision(item, 'approve', { tier, entityType })}
+          disabled={busy || blocked}
+          title={
+            incomplete
+              ? 'Needs a name and a description before it can be published'
+              : !entityType
+                ? 'Choose the listing type first'
+                : undefined
+          }
+          onClick={() => onDecision(item, 'approve', options)}
           className="rounded-full bg-emerald-500 px-5 py-2.5 text-sm font-bold text-slate-950 transition-colors hover:bg-emerald-400 disabled:cursor-not-allowed disabled:opacity-40"
         >
           Approve
@@ -192,8 +243,8 @@ function ApplicationDetail({ item, busy, onDecision, onApproveAndNext, hasNext }
         {hasNext && (
           <button
             type="button"
-            disabled={busy || incomplete}
-            onClick={() => onApproveAndNext(item, { tier, entityType })}
+            disabled={busy || blocked}
+            onClick={() => onApproveAndNext(item, options)}
             className="rounded-full bg-[#7c3aed] px-5 py-2.5 text-sm font-bold text-white transition-colors hover:bg-[#6d28d9] disabled:cursor-not-allowed disabled:opacity-40"
           >
             Approve &amp; Next →
@@ -264,6 +315,129 @@ function ClaimDetail({ item, busy, onDecision }) {
   );
 }
 
+/* ── CENTRE PANE — claim request (migration 0020) ──────────────────────── */
+
+// The email to the listing's own published address: the first proof. Opened in
+// the admin's mail app, to send from love@ and edit as they like.
+function confirmMailto(listing, requesterEmail) {
+  const subject = `Your listing on Spiritpedia: ${listing.name}`;
+  const body = [
+    'Hello,',
+    '',
+    `Someone has asked to manage the listing for ${listing.name} on Spiritpedia, using the address ${requesterEmail}.`,
+    '',
+    'If that is you or someone you work with, please reply to confirm and we will give them access. If not, just let us know and nothing will change.',
+    '',
+    'With love,',
+    'The Spiritpedia team',
+  ].join('\n');
+  return `mailto:${listing.contact_email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+}
+
+function ClaimRequestDetail({ item, busy, onDecision, onClaimCode }) {
+  const r = item.request;
+  const listing = r.healers || r.publishers || {};
+  const isPublisher = Boolean(r.publisher_id);
+  const href = isPublisher ? `/publishers/${listing.slug}` : `/healers/${r.healer_slug}`;
+  const [proof, setProof] = useState(listing.contact_email ? 'listing_email' : 'code');
+  const [code, setCode] = useState(r.proof_code || null);
+  const checkAt = listing.youtube_url || listing.website_url;
+
+  return (
+    <>
+      <dl className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+        <Field label="Asked by" value={r.requester_email} mono />
+        <Field label="Listing" value={listing.name} />
+        <Field label="Listing's published email" value={listing.contact_email} mono />
+        <Field label="Website or channel" value={checkAt} mono />
+      </dl>
+
+      <div className="mt-5">
+        <p className="text-[10px] font-bold uppercase tracking-wider text-slate-500">How they say they are connected</p>
+        <p className="mt-1 whitespace-pre-line text-sm leading-relaxed text-slate-300">{r.connection}</p>
+      </div>
+
+      <div className="mt-5 flex flex-wrap gap-2">
+        <Link
+          href={href}
+          target="_blank"
+          className="rounded-full border border-white/20 px-5 py-2 text-sm font-bold text-white transition-colors hover:bg-white/5"
+        >
+          View listing →
+        </Link>
+        {listing.contact_email ? (
+          <a
+            href={confirmMailto(listing, r.requester_email)}
+            className="rounded-full border border-white/20 px-5 py-2 text-sm font-bold text-white transition-colors hover:bg-white/5"
+          >
+            1. Email the listing to confirm
+          </a>
+        ) : (
+          <span className="self-center text-xs text-slate-500">No published email: use a code.</span>
+        )}
+        <button
+          type="button"
+          disabled={busy}
+          onClick={async () => setCode((await onClaimCode(item)) || code)}
+          className="rounded-full border border-white/20 px-5 py-2 text-sm font-bold text-white transition-colors hover:bg-white/5 disabled:opacity-40"
+        >
+          {code ? 'Show the code' : '2. Or make a code'}
+        </button>
+      </div>
+
+      {code && (
+        <div className="mt-4 rounded-xl border border-slate-700 bg-slate-800/50 p-4 text-sm leading-relaxed text-slate-300">
+          <p>
+            Code: <span className="font-mono font-bold text-white">{code}</span>
+          </p>
+          <p className="mt-1 text-slate-400">
+            Ask {r.requester_email} to add it to the channel&apos;s About text or the website for a day, then check{' '}
+            {checkAt ? (
+              <a href={checkAt} target="_blank" rel="noreferrer" className="underline underline-offset-2 hover:text-white">
+                the listing&apos;s link
+              </a>
+            ) : (
+              'the listing’s link'
+            )}
+            .
+          </p>
+        </div>
+      )}
+
+      <div className="mt-6 flex flex-wrap items-end gap-2">
+        <label className="text-[10px] font-bold uppercase tracking-wider text-slate-500">
+          Confirmed by
+          <select
+            value={proof}
+            onChange={(e) => setProof(e.target.value)}
+            className="mt-1 block rounded-lg border border-slate-700 bg-[#0a0f1d] px-3 py-2 text-sm font-normal normal-case tracking-normal text-white"
+          >
+            <option value="listing_email">The listing&apos;s email replied</option>
+            <option value="code">The code is on their channel or site</option>
+            <option value="other">Something else</option>
+          </select>
+        </label>
+        <button
+          type="button"
+          disabled={busy}
+          onClick={() => onDecision(item, 'approve', { proof })}
+          className="rounded-full bg-emerald-500 px-5 py-2.5 text-sm font-bold text-slate-950 transition-colors hover:bg-emerald-400 disabled:cursor-not-allowed disabled:opacity-40"
+        >
+          Approve claim
+        </button>
+        <button
+          type="button"
+          disabled={busy}
+          onClick={() => onDecision(item, 'reject')}
+          className="rounded-full border border-red-500/50 px-5 py-2.5 text-sm font-bold text-red-300 transition-colors hover:bg-red-500/10 disabled:opacity-40"
+        >
+          Reject
+        </button>
+      </div>
+    </>
+  );
+}
+
 /* ── THE THREE-PANE LAYOUT ─────────────────────────────────────────────── */
 
 export default function QueueReviewer({
@@ -273,6 +447,7 @@ export default function QueueReviewer({
   onClose,
   onDecision,
   onApproveAndNext,
+  onClaimCode,
   busy,
 }) {
   const index = items.findIndex((i) => i.id === selected?.id);
@@ -332,14 +507,17 @@ export default function QueueReviewer({
         <div className="mt-6">
           {selected.type === 'application' ? (
             <ApplicationDetail
+              key={selected.id}
               item={selected}
               busy={busy}
               onDecision={onDecision}
               onApproveAndNext={onApproveAndNext}
               hasNext={hasNext}
             />
+          ) : selected.request ? (
+            <ClaimRequestDetail key={selected.id} item={selected} busy={busy} onDecision={onDecision} onClaimCode={onClaimCode} />
           ) : (
-            <ClaimDetail item={selected} busy={busy} onDecision={onDecision} />
+            <ClaimDetail key={selected.id} item={selected} busy={busy} onDecision={onDecision} />
           )}
         </div>
       </section>

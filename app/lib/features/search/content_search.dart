@@ -159,7 +159,7 @@ class SupabaseContentSearch implements ContentSearch {
   final SupabaseClient _db;
 
   static const _healerColumns =
-      'id, name, healer_slug, tier, entity_type, image_urls, subject_slugs';
+      'id, name, healer_slug, tier, entity_type, official, image_urls, subject_slugs';
   static const _videoColumns =
       'id, title, slug, platform_url, healer_slug, subject_slugs';
   // No shop links: Suggests chooses by relevance, and never sees them.
@@ -376,7 +376,9 @@ class SupabaseContentSearch implements ContentSearch {
           : none(),
     ]);
     bool platform(Map<String, dynamic> h) =>
-        h['entity_type'] == 'channel' || h['entity_type'] == 'app';
+        h['entity_type'] == 'channel' ||
+        h['entity_type'] == 'app' ||
+        h['entity_type'] == 'organisation';
     String type(Map<String, dynamic> o) =>
         (o['product_type'] as String?) ?? 'course';
     final all = {

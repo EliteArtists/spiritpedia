@@ -236,7 +236,7 @@ class _SubjectBody extends ConsumerWidget {
                   Shelf(
                     title: group.healer.name,
                     subtitle: group.healer.isPlatform
-                        ? '${group.healer.entityType == 'app' ? 'App' : 'Channel'} · ${group.total} videos'
+                        ? '${group.healer.platformLabel} · ${group.total} videos'
                         : '${group.total} videos',
                     itemCount: group.videos.length,
                     itemWidth: 250,

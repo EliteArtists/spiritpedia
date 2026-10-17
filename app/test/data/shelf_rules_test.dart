@@ -41,6 +41,31 @@ void main() {
     expect(s.platforms.map((h) => h.slug), ['a-channel']);
   });
 
+  test('organisations are channels; Spiritpedia Official comes first', () {
+    const c = Healer(id: 1, slug: 'c', name: 'C', entityType: 'channel');
+    const org = Healer(
+      id: 2,
+      slug: 'shift',
+      name: 'The Shift Network',
+      entityType: 'organisation',
+      tier: 'local_hero',
+    );
+    const sp = Healer(
+      id: 3,
+      slug: 'spiritpedia',
+      name: 'Spiritpedia',
+      entityType: 'organisation',
+      official: true,
+    );
+    final s = HealerShelves(const [c, org, sp]);
+    expect(s.platforms.map((h) => h.slug), ['spiritpedia', 'c', 'shift']);
+    // Never a practitioner near anyone, whatever its tier.
+    expect(s.localHeroes, isEmpty);
+    expect(org.platformLabel, 'Organisation');
+    expect(Healer.fromJson({'id': 3, 'official': true}).official, isTrue);
+    expect(Healer.fromJson({'id': 4}).official, isFalse);
+  });
+
   test(
     'billboard: three Superheroes, then one Ascended Master, nobody dropped',
     () {

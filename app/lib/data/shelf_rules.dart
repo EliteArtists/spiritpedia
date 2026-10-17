@@ -113,16 +113,18 @@ class HealerShelves {
           if (!h.isPlatform && h.tier == 'ascended_master') h,
       ],
       // SAFE FALLBACK: anything not a premium tier — NULL included — shows here,
-      // so no practitioner silently vanishes. Channels and apps are left out:
-      // they have their own shelf. (The website lets them in here too —
-      // HomePageContent.js filters `healers`, not `individuals`.)
+      // so no practitioner silently vanishes. Channels, apps and organisations
+      // are left out: they have their own shelf (as on the website).
       localHeroes = [
         for (final h in healers)
           if (!h.isPlatform && !_isPremium(h)) h,
       ],
+      // Spiritpedia Official first, the rest in the order they came.
       platforms = [
         for (final h in healers)
-          if (h.isPlatform) h,
+          if (h.isPlatform && h.official) h,
+        for (final h in healers)
+          if (h.isPlatform && !h.official) h,
       ];
 
   final List<Healer> superheroes;

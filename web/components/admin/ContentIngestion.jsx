@@ -1197,6 +1197,7 @@ export default function ContentIngestion() {
                   <option value="individual">Individual</option>
                   <option value="channel">Channel (YouTube/content channel)</option>
                   <option value="app">App (wellness/meditation app)</option>
+                  <option value="organisation">Organisation (network, school or community)</option>
                 </select>
               </div>
 
