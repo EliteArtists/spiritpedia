@@ -40,6 +40,8 @@ export default function AccountPage() {
   const router = useRouter();
   const [state, setState] = useState({ status: 'checking' });
   const [signingOut, setSigningOut] = useState(false);
+  // Bumped by "Try again" to run the check once more.
+  const [attempt, setAttempt] = useState(0);
 
   useEffect(() => {
     let cancelled = false;
@@ -47,9 +49,18 @@ export default function AccountPage() {
     (async () => {
       // getUser() rather than getSession(): this page decides whether to show
       // someone their own account, so the answer has to come from Supabase
-      // rather than from whatever the browser's storage claims.
-      const { data: user } = await getUser();
+      // rather than from whatever the browser's storage claims. A session it
+      // refuses is cleared by getUser(), so /auth/signup does not send them
+      // straight back here.
+      const { data: user, error } = await getUser();
       if (cancelled) return;
+      // Not known (offline, Supabase down): say so and offer to try again.
+      // Redirecting would bounce off /auth/signup, which still sees the
+      // saved session, and back here — the loop this replaces.
+      if (error) {
+        setState({ status: 'unreachable' });
+        return;
+      }
       if (!user) {
         router.replace('/auth/signup');
         return;
@@ -70,7 +81,7 @@ export default function AccountPage() {
     return () => {
       cancelled = true;
     };
-  }, [router]);
+  }, [router, attempt]);
 
   const onSignOut = useCallback(async () => {
     if (signingOut) return;
@@ -81,7 +92,7 @@ export default function AccountPage() {
     router.replace('/');
   }, [signingOut, router]);
 
-  if (state.status === 'checking') {
+  if (state.status === 'checking' || state.status === 'unreachable') {
     return (
       <main className="min-h-screen bg-[#0a0f1d] text-white">
         <nav className="border-b border-white/10">
@@ -89,9 +100,25 @@ export default function AccountPage() {
             <SiteLogo />
           </div>
         </nav>
-        <p className="mx-auto max-w-3xl px-6 py-20 text-center text-sm text-gray-500">
-          Checking your session…
-        </p>
+        {state.status === 'checking' ? (
+          <p className="mx-auto max-w-3xl px-6 py-20 text-center text-sm text-gray-500">
+            Checking your session…
+          </p>
+        ) : (
+          <div className="mx-auto max-w-3xl px-6 py-20 text-center">
+            <p className="text-sm text-gray-400">We couldn’t reach your account just now.</p>
+            <button
+              type="button"
+              onClick={() => {
+                setState({ status: 'checking' });
+                setAttempt((n) => n + 1);
+              }}
+              className="mt-4 rounded-full border border-white/15 px-5 py-2 text-sm text-white transition-colors hover:border-white/40"
+            >
+              Try again
+            </button>
+          </div>
+        )}
       </main>
     );
   }

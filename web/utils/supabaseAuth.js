@@ -1,6 +1,7 @@
 'use client';
 
 import { createClient } from '@supabase/supabase-js';
+import { checkSession } from './sessionCheck.js';
 
 // Authentication — email OTP only. No passwords, no social providers.
 //
@@ -134,12 +135,10 @@ export async function getSession() {
 // The authenticated user, verified against Supabase rather than read from
 // storage. A network round trip, and the one to use before showing anyone
 // anything that is theirs. Returns null when nobody is signed in — which is an
-// answer, not a failure, so no error is surfaced for it.
+// answer, not a failure, so no error is surfaced for it. A saved session
+// Supabase refuses is cleared here, so getSession() agrees straight after
+// (the /account ↔ /auth/signup loop, utils/sessionCheck.js). An error means
+// the check could not be made: offline, or Supabase down.
 export async function getUser() {
-  const { data, error } = await supabaseAuth.auth.getUser();
-  if (error) {
-    const missing = error.name === 'AuthSessionMissingError' || error.status === 401;
-    return { data: null, error: missing ? null : error };
-  }
-  return { data: data?.user ?? null, error: null };
+  return checkSession(supabaseAuth.auth);
 }
