@@ -9,6 +9,7 @@ import '../../data/shelf_rules.dart';
 import '../../shared/widgets/net_image.dart';
 import '../../shared/widgets/tier_badge.dart';
 import '../../theme/colors.dart';
+import '../../theme/layout.dart';
 
 /// The hero billboard (HeroBillboard.js): Superheroes and Ascended Masters,
 /// three-to-one, starting from a random slide each launch, advancing every
@@ -72,12 +73,13 @@ class _BillboardState extends State<Billboard> {
   Widget build(BuildContext context) {
     final healers = widget.healers;
     if (healers.isEmpty) return const SizedBox.shrink();
+    final layout = SpLayout.of(context);
     return Padding(
-      padding: const EdgeInsets.fromLTRB(20, 0, 20, 34),
+      padding: EdgeInsets.fromLTRB(layout.gutter, 0, layout.gutter, 34),
       child: ClipRRect(
         borderRadius: BorderRadius.circular(20),
         child: SizedBox(
-          height: 440,
+          height: _height(context, layout),
           child: Stack(
             children: [
               PageView.builder(
@@ -104,6 +106,14 @@ class _BillboardState extends State<Billboard> {
   }
 }
 
+/// 440 on a phone, as always. On an iPad, larger with the cards — but never
+/// more than 60% of a short landscape screen, so a shelf still shows below.
+double _height(BuildContext context, SpLayout layout) {
+  if (layout.isCompact) return 440;
+  final screen = MediaQuery.sizeOf(context).height;
+  return min(440 * layout.cardScale, max(440.0, screen * 0.6));
+}
+
 class _Slide extends StatelessWidget {
   const _Slide({required this.healer});
 
@@ -112,16 +122,38 @@ class _Slide extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final lifespan = healer.isAscendedMaster ? formatLifespan(healer) : null;
+    // An iPad's billboard is far wider than tall: the portrait keeps its
+    // shape at the right, fading into the words at the left, instead of
+    // being cropped to a strip of forehead.
+    final wide = !SpLayout.of(context).isCompact;
+    final portrait = NetImage(
+      url: billboardPortrait(healer),
+      fallbackLabel: healer.name,
+      alignment: Alignment.topCenter,
+    );
     return GestureDetector(
       onTap: () => context.push('/healers/${healer.slug}'),
-      child: Stack(
-        fit: StackFit.expand,
-        children: [
-          NetImage(
-            url: billboardPortrait(healer),
-            fallbackLabel: healer.name,
-            alignment: Alignment.topCenter,
-          ),
+      child: LayoutBuilder(
+        builder: (context, box) =>
+            _frame(context, box, wide, portrait, lifespan),
+      ),
+    );
+  }
+
+  Widget _frame(
+    BuildContext context,
+    BoxConstraints box,
+    bool wide,
+    Widget portrait,
+    String? lifespan,
+  ) {
+    final portraitWidth = min(box.maxHeight * 0.9, box.maxWidth * 0.55);
+    final textWidth = min(480.0, box.maxWidth - portraitWidth * 0.75 - 40);
+    return Stack(
+      fit: StackFit.expand,
+      children: [
+        if (!wide) ...[
+          portrait,
           const DecoratedBox(
             decoration: BoxDecoration(
               gradient: LinearGradient(
@@ -136,69 +168,100 @@ class _Slide extends StatelessWidget {
               ),
             ),
           ),
-          Positioned(
-            left: 20,
-            right: 20,
-            bottom: 40,
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                if (healer.tier == 'superhero')
-                  const TierBadge(tier: 'superhero'),
-                if (lifespan != null)
-                  DecoratedBox(
-                    decoration: BoxDecoration(
-                      color: const Color(0x4D000000),
-                      borderRadius: BorderRadius.circular(999),
-                      border: Border.all(color: const Color(0x33FFFFFF)),
-                    ),
-                    child: Padding(
-                      padding: const EdgeInsets.symmetric(
-                        horizontal: 12,
-                        vertical: 4,
-                      ),
-                      child: Text(
-                        lifespan,
-                        style: const TextStyle(
-                          fontSize: 12,
-                          fontWeight: FontWeight.w300,
-                          letterSpacing: 1.6,
-                        ),
-                      ),
-                    ),
-                  ),
-                const SizedBox(height: 12),
-                Text(
-                  healer.name,
-                  maxLines: 1,
-                  overflow: TextOverflow.ellipsis,
-                  style: const TextStyle(
-                    fontSize: 32,
-                    fontWeight: FontWeight.w700,
-                    height: 1.1,
+        ] else
+          Stack(
+            fit: StackFit.expand,
+            children: [
+              const DecoratedBox(
+                decoration: BoxDecoration(
+                  gradient: LinearGradient(
+                    begin: Alignment.centerLeft,
+                    end: Alignment.centerRight,
+                    colors: [Color(0xFF0A0F1D), Color(0xFF1E1B4B)],
                   ),
                 ),
-                const SizedBox(height: 10),
-                Text(
-                  truncateBio(healer.bio),
-                  maxLines: 3,
-                  overflow: TextOverflow.ellipsis,
-                  style: const TextStyle(
-                    fontSize: 14,
-                    color: Color(0xFFD1D5DB),
-                    height: 1.45,
-                  ),
+              ),
+              Positioned(
+                right: 0,
+                top: 0,
+                bottom: 0,
+                width: portraitWidth,
+                // The portrait's left side fades into the background, so
+                // there is no edge where it meets the words.
+                child: ShaderMask(
+                  blendMode: BlendMode.dstIn,
+                  shaderCallback: (rect) => const LinearGradient(
+                    stops: [0, 0.4],
+                    colors: [Color(0x00FFFFFF), Color(0xFFFFFFFF)],
+                  ).createShader(rect),
+                  child: portrait,
                 ),
-                const SizedBox(height: 16),
-                FilledButton(
-                  onPressed: () => context.push('/healers/${healer.slug}'),
-                  child: const Text('View Profile →'),
-                ),
-              ],
-            ),
+              ),
+            ],
           ),
-        ],
-      ),
+        Positioned(
+          left: wide ? 40 : 20,
+          right: wide ? null : 20,
+          bottom: 40,
+          width: wide ? textWidth : null,
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              if (healer.tier == 'superhero')
+                const TierBadge(tier: 'superhero'),
+              if (lifespan != null)
+                DecoratedBox(
+                  decoration: BoxDecoration(
+                    color: const Color(0x4D000000),
+                    borderRadius: BorderRadius.circular(999),
+                    border: Border.all(color: const Color(0x33FFFFFF)),
+                  ),
+                  child: Padding(
+                    padding: const EdgeInsets.symmetric(
+                      horizontal: 12,
+                      vertical: 4,
+                    ),
+                    child: Text(
+                      lifespan,
+                      style: const TextStyle(
+                        fontSize: 12,
+                        fontWeight: FontWeight.w300,
+                        letterSpacing: 1.6,
+                      ),
+                    ),
+                  ),
+                ),
+              const SizedBox(height: 12),
+              Text(
+                healer.name,
+                maxLines: 1,
+                overflow: TextOverflow.ellipsis,
+                style: const TextStyle(
+                  fontSize: 32,
+                  fontWeight: FontWeight.w700,
+                  height: 1.1,
+                ),
+              ),
+              const SizedBox(height: 10),
+              Text(
+                truncateBio(healer.bio),
+                maxLines: 3,
+                overflow: TextOverflow.ellipsis,
+                style: const TextStyle(
+                  fontSize: 14,
+                  color: Color(0xFFD1D5DB),
+                  height: 1.45,
+                ),
+              ),
+              const SizedBox(height: 16),
+              FilledButton(
+                onPressed: () => context.push('/healers/${healer.slug}'),
+                child: const Text('View Profile →'),
+              ),
+            ],
+          ),
+        ),
+      ],
     );
   }
 }

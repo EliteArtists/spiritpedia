@@ -137,8 +137,8 @@ them with the same phrase lists and the same order. A search box that reaches
 crisis.
 
 #### The Flutter app — where it stands
-**Built as 1.0.0 (18), 17 October 2026** (activity learning; build 16 is the last uploaded to TestFlight). iPhone
-only, portrait only.
+**Built as 1.0.0 (19), 17 October 2026** (the iPad, Phase B; build 16 is the last uploaded to TestFlight).
+iPhone (portrait only) and iPad (every way round, Split View).
 **`app/README.md` is the app's full handover:** structure, dev and live,
 build and upload, what is built, migrations 0015–0018, the admin Reports page,
 known issues and next steps. Read it before changing the app.
@@ -250,7 +250,7 @@ The entry point is always emotional:
 | Platform | Role | Status |
 | :--- | :--- | :--- |
 | Web App (Next.js) | Primary product — full discovery experience | ✅ **Complete and live** at [www.spiritpedia.co](https://www.spiritpedia.co) |
-| Native App (Flutter) | **The current phase** — iPhone first, with push notifications | 🟡 1.0.0 (18) built for TestFlight: accounts, search, reviews, notifications, tailoring. In `app/` — see `app/README.md` |
+| Native App (Flutter) | **The current phase** — iPhone first, with push notifications | 🟡 1.0.0 (19) built for TestFlight, iPhone and iPad: accounts, search, reviews, notifications, tailoring. In `app/` — see `app/README.md` |
 
 #### Domains
 `spiritpedia.co` is the primary domain and the one to share. The original

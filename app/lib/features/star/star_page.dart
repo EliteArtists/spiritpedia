@@ -4,6 +4,7 @@ import 'package:go_router/go_router.dart';
 
 import '../../data/providers.dart';
 import '../../theme/colors.dart';
+import '../../theme/layout.dart';
 import '../home/subject_pills.dart';
 import '../menu/app_menu.dart';
 import '../search/feeling_placeholder.dart';
@@ -308,17 +309,23 @@ class StarSearchBox extends StatelessWidget {
       ),
     );
     final trailing = this.trailing;
-    return Padding(
-      padding: EdgeInsets.fromLTRB(20, 8, trailing == null ? 20 : 8, 16),
-      child: trailing == null
-          ? box
-          : Row(
-              children: [
-                Expanded(child: box),
-                const SizedBox(width: 4),
-                trailing,
-              ],
-            ),
+    // On an iPad the row is centred and never wider than a comfortable
+    // search box (SpLayout.searchRowWidth); the star's flights measure where
+    // it is, wherever that is.
+    return Readable(
+      maxWidth: SpLayout.searchRowWidth,
+      child: Padding(
+        padding: EdgeInsets.fromLTRB(20, 8, trailing == null ? 20 : 8, 16),
+        child: trailing == null
+            ? box
+            : Row(
+                children: [
+                  Expanded(child: box),
+                  const SizedBox(width: 4),
+                  trailing,
+                ],
+              ),
+      ),
     );
   }
 }
@@ -348,6 +355,9 @@ class _PillsHeader extends SliverPersistentHeaderDelegate {
 
   @override
   Widget build(BuildContext context, double shrinkOffset, bool overlaps) {
+    // On an iPad the row starts at the page margin, and the docked star
+    // with it; on a phone the shift is 0.
+    final shift = SpLayout.of(context).gutter - 20;
     return ColoredBox(
       color: SpColors.background,
       child: Stack(
@@ -360,15 +370,16 @@ class _PillsHeader extends SliverPersistentHeaderDelegate {
               curve: Curves.easeOutCubic,
               builder: (context, t, _) => _FadeUnderStar(
                 amount: t,
+                shift: shift,
                 child: SubjectPillRow(
                   filter: filter,
-                  leadingPadding: 20 + (_dockWidth - 20) * t,
+                  leadingPadding: shift + 20 + (_dockWidth - 20) * t,
                 ),
               ),
             ),
           ),
           Positioned(
-            left: 8,
+            left: 8 + shift,
             top: 0,
             bottom: 0,
             child: Center(
@@ -400,10 +411,17 @@ class _PillsHeader extends SliverPersistentHeaderDelegate {
 /// While the star is docked, pills scrolled to the left slide underneath it
 /// and fade away there — no backing behind the star, just the page.
 class _FadeUnderStar extends StatelessWidget {
-  const _FadeUnderStar({required this.amount, required this.child});
+  const _FadeUnderStar({
+    required this.amount,
+    required this.child,
+    this.shift = 0,
+  });
 
   /// 0 undocked (no fade) to 1 docked.
   final double amount;
+
+  /// How far the star sits further in than on a phone (an iPad's margin).
+  final double shift;
   final Widget child;
 
   // Gone by the star's middle, fully back by its trailing edge.
@@ -420,7 +438,7 @@ class _FadeUnderStar extends StatelessWidget {
         final faded = Colors.white.withValues(alpha: 1 - amount);
         return LinearGradient(
           colors: [faded, faded, Colors.white],
-          stops: [0, _clearTo / w, _fullFrom / w],
+          stops: [0, (_clearTo + shift) / w, (_fullFrom + shift) / w],
         ).createShader(bounds);
       },
       child: child,

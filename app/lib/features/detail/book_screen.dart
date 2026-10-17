@@ -13,6 +13,7 @@ import '../reviews/reviews_section.dart';
 import '../reviews/reviews_service.dart';
 import 'detail_providers.dart';
 import 'detail_widgets.dart';
+import '../../theme/layout.dart';
 
 /// The words the Associates Operating Agreement and FTC / UK ASA rules
 /// require wherever a tagged link appears — the website's wording.
@@ -40,43 +41,9 @@ class BookScreen extends ConsumerWidget {
       sharePath: '/books/$slug',
       shareTitle: (b) => b.title,
       builder: (context, book) => ListView(
-        padding: detailPadding,
+        padding: readingPadding(context, detailPadding),
         children: [
-          Center(
-            child: SizedBox(
-              width: 210,
-              child: book.coverUrl == null
-                  ? Container(
-                      height: 300,
-                      decoration: BoxDecoration(
-                        color: SpColors.surface,
-                        borderRadius: BorderRadius.circular(12),
-                      ),
-                      alignment: Alignment.center,
-                      child: const Text(
-                        'No cover available',
-                        style: TextStyle(
-                          fontSize: 13,
-                          color: SpColors.textFaint,
-                        ),
-                      ),
-                    )
-                  : ClipRRect(
-                      borderRadius: BorderRadius.circular(12),
-                      child: NetImage(
-                        url: book.coverUrl,
-                        fit: BoxFit.contain,
-                        fallbackLabel: book.title,
-                      ),
-                    ),
-            ),
-          ),
-          const SizedBox(height: 22),
-          DetailTitle(book.title),
-          const SizedBox(height: 8),
-          ByLine(healerSlug: book.healerSlug, fallback: book.author),
-          const SizedBox(height: 10),
-          ReviewSummary(bookReviews(book.slug)),
+          ..._head(context, book),
           const SizedBox(height: 18),
           Row(
             children: [
@@ -116,6 +83,60 @@ class BookScreen extends ConsumerWidget {
         ],
       ),
     );
+  }
+
+  /// The cover and what sits under it. On an iPad (regular or wide) the
+  /// cover sits beside the title instead of above it.
+  List<Widget> _head(BuildContext context, Book book) {
+    final cover = SizedBox(
+      width: 210,
+      child: book.coverUrl == null
+          ? Container(
+              height: 300,
+              decoration: BoxDecoration(
+                color: SpColors.surface,
+                borderRadius: BorderRadius.circular(12),
+              ),
+              alignment: Alignment.center,
+              child: const Text(
+                'No cover available',
+                style: TextStyle(fontSize: 13, color: SpColors.textFaint),
+              ),
+            )
+          : ClipRRect(
+              borderRadius: BorderRadius.circular(12),
+              child: NetImage(
+                url: book.coverUrl,
+                fit: BoxFit.contain,
+                fallbackLabel: book.title,
+              ),
+            ),
+    );
+    final words = [
+      DetailTitle(book.title),
+      const SizedBox(height: 8),
+      ByLine(healerSlug: book.healerSlug, fallback: book.author),
+      const SizedBox(height: 10),
+      ReviewSummary(bookReviews(book.slug)),
+    ];
+    if (SpLayout.of(context).isCompact) {
+      return [Center(child: cover), const SizedBox(height: 22), ...words];
+    }
+    return [
+      Row(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          cover,
+          const SizedBox(width: 28),
+          Expanded(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [const SizedBox(height: 8), ...words],
+            ),
+          ),
+        ],
+      ),
+    ];
   }
 }
 

@@ -13,6 +13,7 @@ import 'features/notifications/notifications_controller.dart';
 import 'features/notifications/push_messaging.dart';
 import 'features/star/star_layer.dart';
 import 'router.dart';
+import 'theme/layout.dart';
 import 'theme/theme.dart';
 
 class SpiritpediaApp extends ConsumerStatefulWidget {
@@ -120,12 +121,56 @@ class _SpiritpediaAppState extends ConsumerState<SpiritpediaApp> {
       // underneath it and genuinely revealed — not navigated to afterwards.
       // The star layer sits above everything, so a star can fly from any
       // screen to any other.
-      builder: (context, child) => StarLayer(
-        key: _starLayer,
-        child: widget.playIntro
-            ? IntroOverlay(child: child ?? const SizedBox.shrink())
-            : child ?? const SizedBox.shrink(),
+      builder: (context, child) => _LargerText(
+        child: StarLayer(
+          key: _starLayer,
+          child: widget.playIntro
+              ? IntroOverlay(child: child ?? const SizedBox.shrink())
+              : child ?? const SizedBox.shrink(),
+        ),
       ),
     );
   }
+}
+
+/// On an iPad's wider window, text a little larger (SpLayout.textScale), on
+/// top of the person's own text size. A phone is untouched.
+class _LargerText extends StatelessWidget {
+  const _LargerText({required this.child});
+
+  final Widget child;
+
+  @override
+  Widget build(BuildContext context) {
+    final layout = SpLayout.of(context);
+    if (layout.isCompact) return child;
+    final media = MediaQuery.of(context);
+    return MediaQuery(
+      data: media.copyWith(
+        textScaler: _Scaled(media.textScaler, layout.textScale),
+      ),
+      child: child,
+    );
+  }
+}
+
+class _Scaled extends TextScaler {
+  const _Scaled(this.base, this.factor);
+
+  final TextScaler base;
+  final double factor;
+
+  @override
+  double scale(double fontSize) => base.scale(fontSize) * factor;
+
+  @override
+  // ignore: deprecated_member_use
+  double get textScaleFactor => base.textScaleFactor * factor;
+
+  @override
+  bool operator ==(Object other) =>
+      other is _Scaled && other.base == base && other.factor == factor;
+
+  @override
+  int get hashCode => Object.hash(base, factor);
 }

@@ -1,4 +1,5 @@
 import 'dart:async';
+import 'dart:math';
 import 'dart:ui' show ImageFilter;
 
 import 'package:flutter/material.dart';
@@ -14,6 +15,7 @@ import '../area/area_sheet.dart';
 import '../learning/learning.dart';
 import 'slipstream.dart';
 import 'star_layer.dart';
+import '../../theme/layout.dart';
 
 // ── The conductor ───────────────────────────────────────────────────────────
 //
@@ -443,9 +445,15 @@ class _StarTrayHostState extends ConsumerState<StarTrayHost> {
     });
     final asking = ref.watch(conductorProvider).asking;
     if (asking == null) return const SizedBox.shrink();
+    // On an iPad the tray is a tray's width (SpLayout.trayWidth), centred
+    // over the star; on a phone, edge to edge as before.
+    final side = max(
+      14.0,
+      SpLayout.of(context).centredInset(SpLayout.trayWidth),
+    );
     return Positioned(
-      left: 14,
-      right: 14,
+      left: side,
+      right: side,
       bottom: FloatingHomeStar.bottomOffset(context) + 78,
       child: Dismissible(
         key: ValueKey('star-tray-$asking'),

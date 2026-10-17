@@ -22,6 +22,7 @@ import '../star/star_layer.dart';
 import 'account_providers.dart';
 import 'display_name.dart';
 import 'account_service.dart';
+import '../../theme/layout.dart';
 
 const supportEmail = 'love@spiritpedia.co';
 
@@ -68,12 +69,17 @@ class _AccountScreenState extends ConsumerState<AccountScreen> {
     return Scaffold(
       appBar: AppBar(),
       body: WithHomeStar(
+        // On an iPad, a centred column a form's width (SpLayout.formWidth).
         child: ListView(
-          padding: const EdgeInsets.fromLTRB(
-            20,
-            0,
-            20,
-            40 + FloatingHomeStar.clearance,
+          padding: readingPadding(
+            context,
+            const EdgeInsets.fromLTRB(
+              20,
+              0,
+              20,
+              40 + FloatingHomeStar.clearance,
+            ),
+            SpLayout.formWidth,
           ),
           children: [
             Text(

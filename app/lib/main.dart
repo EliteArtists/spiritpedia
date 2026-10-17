@@ -21,8 +21,15 @@ Future<void> main() async {
   // ready (IntroOverlay removes it), so there is no flash in between.
   FlutterNativeSplash.preserve(widgetsBinding: binding);
 
-  // Portrait only for v1 (also set natively in Info.plist and the manifest).
-  await SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp]);
+  // A phone is portrait only (also set natively in Info.plist and the
+  // manifest). An iPad turns every way, in any window size (Phase B). Told
+  // apart by the screen, not the window: every phone's shorter side is under
+  // 600 points, every iPad's over 700.
+  final display = binding.platformDispatcher.displays.first;
+  final screen = display.size / display.devicePixelRatio;
+  if (screen.shortestSide < 600) {
+    await SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp]);
+  }
 
   // Geist ships with the app; its licence belongs on the licences page.
   LicenseRegistry.addLicense(() async* {

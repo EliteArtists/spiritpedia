@@ -11,6 +11,7 @@ import '../library/saved_items.dart';
 import '../star/star_layer.dart';
 import 'detail_providers.dart';
 import 'detail_widgets.dart';
+import '../../theme/layout.dart';
 
 /// A publishing house (web/app/publishers/[slug]/page.js): its authors, then
 /// one shelf of titles per author.
@@ -37,63 +38,67 @@ class PublisherScreen extends ConsumerWidget {
           ),
           children: [
             Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 20),
-              child: Column(
-                children: [
-                  Container(
-                    width: 120,
-                    height: 120,
-                    padding: const EdgeInsets.all(14),
-                    decoration: BoxDecoration(
-                      color: SpColors.surface,
-                      borderRadius: BorderRadius.circular(14),
-                      border: Border.all(color: SpColors.border),
-                    ),
-                    child: p.logoUrl == null
-                        ? Center(
-                            child: Text(
-                              p.name.isEmpty ? '?' : p.name[0].toUpperCase(),
-                              style: const TextStyle(
-                                fontSize: 46,
-                                fontWeight: FontWeight.w700,
-                                color: SpColors.link,
+              padding: EdgeInsets.symmetric(
+                horizontal: SpLayout.of(context).gutter,
+              ),
+              child: Readable(
+                child: Column(
+                  children: [
+                    Container(
+                      width: 120,
+                      height: 120,
+                      padding: const EdgeInsets.all(14),
+                      decoration: BoxDecoration(
+                        color: SpColors.surface,
+                        borderRadius: BorderRadius.circular(14),
+                        border: Border.all(color: SpColors.border),
+                      ),
+                      child: p.logoUrl == null
+                          ? Center(
+                              child: Text(
+                                p.name.isEmpty ? '?' : p.name[0].toUpperCase(),
+                                style: const TextStyle(
+                                  fontSize: 46,
+                                  fontWeight: FontWeight.w700,
+                                  color: SpColors.link,
+                                ),
                               ),
+                            )
+                          : NetImage(
+                              url: p.logoUrl,
+                              fit: BoxFit.contain,
+                              fallbackLabel: p.name,
                             ),
-                          )
-                        : NetImage(
-                            url: p.logoUrl,
-                            fit: BoxFit.contain,
-                            fallbackLabel: p.name,
-                          ),
-                  ),
-                  const SizedBox(height: 18),
-                  DetailTitle(p.name, center: true),
-                  if (p.foundedYear != null) ...[
-                    const SizedBox(height: 6),
-                    Text(
-                      'Founded ${p.foundedYear}',
-                      style: const TextStyle(
-                        fontSize: 14,
-                        color: SpColors.textMuted,
-                      ),
                     ),
-                  ],
-                  if (p.websiteUrl != null)
-                    TextButton(
-                      onPressed: () => openExternal(context, p.websiteUrl!),
-                      style: TextButton.styleFrom(
-                        foregroundColor: SpColors.link,
+                    const SizedBox(height: 18),
+                    DetailTitle(p.name, center: true),
+                    if (p.foundedYear != null) ...[
+                      const SizedBox(height: 6),
+                      Text(
+                        'Founded ${p.foundedYear}',
+                        style: const TextStyle(
+                          fontSize: 14,
+                          color: SpColors.textMuted,
+                        ),
                       ),
-                      child: const Text(
-                        'Visit Website →',
-                        style: TextStyle(fontWeight: FontWeight.w600),
+                    ],
+                    if (p.websiteUrl != null)
+                      TextButton(
+                        onPressed: () => openExternal(context, p.websiteUrl!),
+                        style: TextButton.styleFrom(
+                          foregroundColor: SpColors.link,
+                        ),
+                        child: const Text(
+                          'Visit Website →',
+                          style: TextStyle(fontWeight: FontWeight.w600),
+                        ),
                       ),
-                    ),
-                  if (p.description != null) ...[
-                    const SizedBox(height: 12),
-                    Expandable(p.description!),
+                    if (p.description != null) ...[
+                      const SizedBox(height: 12),
+                      Expandable(p.description!),
+                    ],
                   ],
-                ],
+                ),
               ),
             ),
             // Channels and apps linked to the house are not its authors.
@@ -115,7 +120,12 @@ class PublisherScreen extends ConsumerWidget {
             ])
               if (people.isNotEmpty) ...[
                 Padding(
-                  padding: const EdgeInsets.fromLTRB(20, 30, 20, 12),
+                  padding: EdgeInsets.fromLTRB(
+                    SpLayout.of(context).gutter,
+                    30,
+                    SpLayout.of(context).gutter,
+                    12,
+                  ),
                   child: Text(
                     heading,
                     style: const TextStyle(
@@ -128,7 +138,9 @@ class PublisherScreen extends ConsumerWidget {
                   height: 92,
                   child: ListView.separated(
                     scrollDirection: Axis.horizontal,
-                    padding: const EdgeInsets.symmetric(horizontal: 20),
+                    padding: EdgeInsets.symmetric(
+                      horizontal: SpLayout.of(context).gutter,
+                    ),
                     itemCount: people.length,
                     separatorBuilder: (_, _) => const SizedBox(width: 16),
                     itemBuilder: (context, i) {
@@ -170,17 +182,27 @@ class PublisherScreen extends ConsumerWidget {
                   ),
                 ),
               ],
-            const Padding(
-              padding: EdgeInsets.fromLTRB(20, 26, 20, 0),
-              child: Text(
+            Padding(
+              padding: EdgeInsets.fromLTRB(
+                SpLayout.of(context).gutter,
+                26,
+                SpLayout.of(context).gutter,
+                0,
+              ),
+              child: const Text(
                 'Published Titles',
                 style: TextStyle(fontSize: 19, fontWeight: FontWeight.w700),
               ),
             ),
             if (c.shelves.isEmpty)
-              const Padding(
-                padding: EdgeInsets.fromLTRB(20, 10, 20, 0),
-                child: Text(
+              Padding(
+                padding: EdgeInsets.fromLTRB(
+                  SpLayout.of(context).gutter,
+                  10,
+                  SpLayout.of(context).gutter,
+                  0,
+                ),
+                child: const Text(
                   'No published titles linked yet.',
                   style: TextStyle(fontSize: 14, color: SpColors.textFaint),
                 ),

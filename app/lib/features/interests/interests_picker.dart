@@ -12,6 +12,7 @@ import '../area/area_sheet.dart';
 import 'interests.dart';
 import 'tailor_star.dart';
 import '../learning/learning_switch.dart';
+import '../../theme/layout.dart';
 
 /// Under the question, in onboarding and in Account → Tailor Spiritpedia.
 const interestsNote =
@@ -336,7 +337,10 @@ class _OnboardingScreenState extends ConsumerState<OnboardingScreen> {
                 children: [
                   Expanded(
                     child: ListView(
-                      padding: const EdgeInsets.fromLTRB(24, 28, 24, 24),
+                      padding: readingPadding(
+                        context,
+                        const EdgeInsets.fromLTRB(24, 28, 24, 24),
+                      ),
                       children: [
                         const Center(
                           child: SizedBox(
@@ -392,7 +396,11 @@ class _OnboardingScreenState extends ConsumerState<OnboardingScreen> {
                     ),
                   ),
                   Padding(
-                    padding: const EdgeInsets.fromLTRB(24, 8, 24, 4),
+                    padding: readingPadding(
+                      context,
+                      const EdgeInsets.fromLTRB(24, 8, 24, 4),
+                      SpLayout.formWidth,
+                    ),
                     child: SizedBox(
                       width: double.infinity,
                       height: 52,
@@ -485,7 +493,10 @@ class _NeverShowPanelState extends State<_NeverShowPanel> {
         ),
         Expanded(
           child: ListView(
-            padding: const EdgeInsets.fromLTRB(24, 4, 24, 16),
+            padding: readingPadding(
+              context,
+              const EdgeInsets.fromLTRB(24, 4, 24, 16),
+            ),
             children: [
               const Text(
                 'Anything you’d rather not see?',
@@ -511,7 +522,11 @@ class _NeverShowPanelState extends State<_NeverShowPanel> {
           ),
         ),
         Padding(
-          padding: const EdgeInsets.fromLTRB(24, 8, 24, 16),
+          padding: readingPadding(
+            context,
+            const EdgeInsets.fromLTRB(24, 8, 24, 16),
+            SpLayout.formWidth,
+          ),
           child: SizedBox(
             width: double.infinity,
             height: 52,
@@ -607,7 +622,10 @@ class _TailorScreenState extends ConsumerState<TailorScreen> {
               // underneath it.
               child: TailorStarFrame(
                 builder: (context, top) => ListView(
-                  padding: EdgeInsets.fromLTRB(20, 8 + top, 20, 24),
+                  padding: readingPadding(
+                    context,
+                    EdgeInsets.fromLTRB(20, 8 + top, 20, 24),
+                  ),
                   children: [
                     const YourArea(),
                     const SizedBox(height: 18),
@@ -650,7 +668,11 @@ class _TailorScreenState extends ConsumerState<TailorScreen> {
               ),
             ),
             Padding(
-              padding: const EdgeInsets.fromLTRB(20, 8, 20, 12),
+              padding: readingPadding(
+                context,
+                const EdgeInsets.fromLTRB(20, 8, 20, 12),
+                SpLayout.formWidth,
+              ),
               child: SizedBox(
                 width: double.infinity,
                 height: 52,

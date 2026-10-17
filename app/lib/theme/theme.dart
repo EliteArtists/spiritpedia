@@ -87,5 +87,10 @@ ThemeData buildSpiritpediaTheme() {
       ),
     ),
     dividerTheme: const DividerThemeData(color: SpColors.border, space: 1),
+    // Sheets are never wider than a form on an iPad (SpLayout.formWidth);
+    // a phone is narrower than this anyway.
+    bottomSheetTheme: const BottomSheetThemeData(
+      constraints: BoxConstraints(maxWidth: 560),
+    ),
   );
 }

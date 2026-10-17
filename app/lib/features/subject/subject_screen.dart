@@ -10,6 +10,7 @@ import '../detail/detail_widgets.dart';
 import '../interests/hidden_empty.dart';
 import '../interests/interests.dart';
 import '../star/star_layer.dart';
+import '../../theme/layout.dart';
 
 /// A subject page (web/app/subject/[slug]/page.js): healers, free resources,
 /// books, courses, retreats, downloads, and video shelves per teacher.
@@ -128,7 +129,12 @@ class _SubjectBody extends ConsumerWidget {
               ),
               children: [
                 Padding(
-                  padding: const EdgeInsets.fromLTRB(20, 4, 20, 28),
+                  padding: EdgeInsets.fromLTRB(
+                    SpLayout.of(context).gutter,
+                    4,
+                    SpLayout.of(context).gutter,
+                    28,
+                  ),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
@@ -155,9 +161,11 @@ class _SubjectBody extends ConsumerWidget {
                     !ref.watch(hidingProvider).showing(slug).isEmpty)
                   const HiddenEmptyState()
                 else if (c.isEmpty)
-                  const Padding(
-                    padding: EdgeInsets.symmetric(horizontal: 20),
-                    child: Card(
+                  Padding(
+                    padding: EdgeInsets.symmetric(
+                      horizontal: SpLayout.of(context).gutter,
+                    ),
+                    child: const Card(
                       child: Padding(
                         padding: EdgeInsets.all(28),
                         child: Text(

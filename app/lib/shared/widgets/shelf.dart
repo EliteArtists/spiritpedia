@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../theme/colors.dart';
+import '../../theme/layout.dart';
 
 /// A titled, horizontally scrolling row — the website's ContentShelf.
 ///
@@ -43,6 +44,11 @@ class Shelf extends StatelessWidget {
   Widget build(BuildContext context) {
     // Like the website: an empty shelf is hidden, never shown as a gap.
     if (itemCount == 0 && !keepWhenEmpty) return const SizedBox.shrink();
+    // On an iPad, bigger cards and wider margins; the width shows more of
+    // them. A phone is unchanged (scale 1, margin 20).
+    final layout = SpLayout.of(context);
+    final scale = layout.cardScale;
+    final gutter = layout.gutter;
     final titleText = Text(
       title,
       style: const TextStyle(
@@ -57,7 +63,7 @@ class Shelf extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 20),
+            padding: EdgeInsets.symmetric(horizontal: gutter),
             child: Row(
               crossAxisAlignment: CrossAxisAlignment.end,
               children: [
@@ -115,14 +121,16 @@ class Shelf extends StatelessWidget {
           if (itemCount > 0) ...[
             const SizedBox(height: 14),
             SizedBox(
-              height: height,
+              height: height * scale,
               child: ListView.separated(
                 scrollDirection: Axis.horizontal,
-                padding: const EdgeInsets.symmetric(horizontal: 20),
+                padding: EdgeInsets.symmetric(horizontal: gutter),
                 itemCount: itemCount,
-                separatorBuilder: (_, _) => const SizedBox(width: 14),
-                itemBuilder: (context, i) =>
-                    SizedBox(width: itemWidth, child: itemBuilder(context, i)),
+                separatorBuilder: (_, _) => SizedBox(width: 14 * scale),
+                itemBuilder: (context, i) => SizedBox(
+                  width: itemWidth * scale,
+                  child: itemBuilder(context, i),
+                ),
               ),
             ),
           ],

@@ -23,6 +23,7 @@ import 'emotion_search_controller.dart';
 import 'feeling_placeholder.dart';
 import 'search_repository.dart';
 import '../learning/learning.dart';
+import '../../theme/layout.dart';
 
 /// The shared safety data, from the bundled web/shared/emotion-safety.json.
 final emotionSafetyProvider = FutureProvider<EmotionSafety>(
@@ -193,89 +194,91 @@ class _SearchState extends ConsumerState<_Search> {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        Padding(
-          padding: const EdgeInsets.fromLTRB(16, 12, 16, 8),
-          child: Row(
-            children: [
-              if (widget.standalone)
-                IconButton(
-                  tooltip: 'Close',
-                  onPressed: () => context.pop(),
-                  icon: const Icon(Icons.close),
-                ),
-              Expanded(
-                child: TextField(
-                  controller: _field,
-                  focusNode: _focus,
-                  onChanged: _search.onChanged,
-                  onSubmitted: (_) => _submit(),
-                  textInputAction: TextInputAction.search,
-                  autocorrect: true,
-                  style: const TextStyle(fontSize: 17),
-                  decoration: InputDecoration(
-                    // Example feelings typed out until someone taps in; then
-                    // the question, until they type.
-                    hint: _focus.hasFocus
-                        ? Text(
-                            switch (widget.scope) {
-                              SearchScope.all => feelingQuestion,
-                              SearchScope.videos =>
-                                'Search videos, or say how you feel',
-                              SearchScope.books =>
-                                'Search books, or say how you feel',
-                            },
-                            maxLines: 1,
-                            overflow: TextOverflow.ellipsis,
-                            style: TextStyle(
-                              fontSize: 17,
-                              color: SpColors.textMuted,
+        Readable(
+          child: Padding(
+            padding: const EdgeInsets.fromLTRB(16, 12, 16, 8),
+            child: Row(
+              children: [
+                if (widget.standalone)
+                  IconButton(
+                    tooltip: 'Close',
+                    onPressed: () => context.pop(),
+                    icon: const Icon(Icons.close),
+                  ),
+                Expanded(
+                  child: TextField(
+                    controller: _field,
+                    focusNode: _focus,
+                    onChanged: _search.onChanged,
+                    onSubmitted: (_) => _submit(),
+                    textInputAction: TextInputAction.search,
+                    autocorrect: true,
+                    style: const TextStyle(fontSize: 17),
+                    decoration: InputDecoration(
+                      // Example feelings typed out until someone taps in; then
+                      // the question, until they type.
+                      hint: _focus.hasFocus
+                          ? Text(
+                              switch (widget.scope) {
+                                SearchScope.all => feelingQuestion,
+                                SearchScope.videos =>
+                                  'Search videos, or say how you feel',
+                                SearchScope.books =>
+                                  'Search books, or say how you feel',
+                              },
+                              maxLines: 1,
+                              overflow: TextOverflow.ellipsis,
+                              style: TextStyle(
+                                fontSize: 17,
+                                color: SpColors.textMuted,
+                              ),
+                            )
+                          : const FeelingTypewriter(
+                              style: TextStyle(
+                                fontSize: 17,
+                                color: SpColors.textMuted,
+                              ),
                             ),
-                          )
-                        : const FeelingTypewriter(
-                            style: TextStyle(
-                              fontSize: 17,
-                              color: SpColors.textMuted,
-                            ),
-                          ),
-                    filled: true,
-                    fillColor: SpColors.surface,
-                    // The star, where the magnifying glass was: home.
-                    prefixIcon: Padding(
-                      padding: const EdgeInsets.only(left: 6, right: 2),
-                      // It twinkles while the results load.
-                      child: StarAnchor(
-                        size: 26,
-                        thinking: _search.view == SearchView.loading,
-                        pageStar: true,
+                      filled: true,
+                      fillColor: SpColors.surface,
+                      // The star, where the magnifying glass was: home.
+                      prefixIcon: Padding(
+                        padding: const EdgeInsets.only(left: 6, right: 2),
+                        // It twinkles while the results load.
+                        child: StarAnchor(
+                          size: 26,
+                          thinking: _search.view == SearchView.loading,
+                          pageStar: true,
+                        ),
                       ),
-                    ),
-                    suffixIcon: _search.text.isEmpty
-                        ? null
-                        : IconButton(
-                            tooltip: 'Clear',
-                            icon: const Icon(Icons.close),
-                            onPressed: _clear,
-                          ),
-                    contentPadding: const EdgeInsets.symmetric(vertical: 16),
-                    border: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(999),
-                      borderSide: const BorderSide(color: SpColors.border),
-                    ),
-                    enabledBorder: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(999),
-                      borderSide: const BorderSide(color: SpColors.border),
-                    ),
-                    focusedBorder: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(999),
-                      borderSide: const BorderSide(
-                        color: SpColors.primary,
-                        width: 1.5,
+                      suffixIcon: _search.text.isEmpty
+                          ? null
+                          : IconButton(
+                              tooltip: 'Clear',
+                              icon: const Icon(Icons.close),
+                              onPressed: _clear,
+                            ),
+                      contentPadding: const EdgeInsets.symmetric(vertical: 16),
+                      border: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(999),
+                        borderSide: const BorderSide(color: SpColors.border),
+                      ),
+                      enabledBorder: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(999),
+                        borderSide: const BorderSide(color: SpColors.border),
+                      ),
+                      focusedBorder: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(999),
+                        borderSide: const BorderSide(
+                          color: SpColors.primary,
+                          width: 1.5,
+                        ),
                       ),
                     ),
                   ),
                 ),
-              ),
-            ],
+              ],
+            ),
           ),
         ),
         Expanded(
@@ -361,11 +364,9 @@ class _Idle extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListView(
-      padding: EdgeInsets.fromLTRB(
-        24,
-        28,
-        24,
-        24 + _TabBarClearance.of(context),
+      padding: readingPadding(
+        context,
+        EdgeInsets.fromLTRB(24, 28, 24, 24 + _TabBarClearance.of(context)),
       ),
       children: [
         const Text(
@@ -412,11 +413,9 @@ class _CrisisPanel extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListView(
-      padding: EdgeInsets.fromLTRB(
-        24,
-        24,
-        24,
-        32 + _TabBarClearance.of(context),
+      padding: readingPadding(
+        context,
+        EdgeInsets.fromLTRB(24, 24, 24, 32 + _TabBarClearance.of(context)),
       ),
       children: [
         Text(
@@ -491,11 +490,9 @@ class _DualPathPanel extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListView(
-      padding: EdgeInsets.fromLTRB(
-        24,
-        24,
-        24,
-        32 + _TabBarClearance.of(context),
+      padding: readingPadding(
+        context,
+        EdgeInsets.fromLTRB(24, 24, 24, 32 + _TabBarClearance.of(context)),
       ),
       children: [
         Text(
@@ -657,20 +654,25 @@ class _Results extends ConsumerWidget {
         search.heldBack.isEmpty;
 
     return ListView(
-      padding: EdgeInsets.only(bottom: 32 + _TabBarClearance.of(context)),
+      padding: readingPadding(
+        context,
+        EdgeInsets.only(bottom: 32 + _TabBarClearance.of(context)),
+      ),
       children: [
         if (!search.heldBack.isEmpty) _HiddenNote(onShow: search.showHidden),
         if (profiles.isNotEmpty) ...[
           const _GroupHeader('TEACHERS & CHANNELS'),
           SizedBox(
-            height: 240,
+            height: 240 * SpLayout.of(context).cardScale,
             child: ListView.separated(
               scrollDirection: Axis.horizontal,
               padding: const EdgeInsets.symmetric(horizontal: 16),
               itemCount: profiles.length,
               separatorBuilder: (_, _) => const SizedBox(width: 12),
-              itemBuilder: (_, i) =>
-                  SizedBox(width: 172, child: HealerCard(healer: profiles[i])),
+              itemBuilder: (_, i) => SizedBox(
+                width: 172 * SpLayout.of(context).cardScale,
+                child: HealerCard(healer: profiles[i]),
+              ),
             ),
           ),
         ],

@@ -5,6 +5,7 @@ import '../../data/models.dart';
 import '../../data/providers.dart';
 import '../../data/shelf_rules.dart';
 import '../../theme/colors.dart';
+import '../../theme/layout.dart';
 import '../interests/interests.dart';
 import '../shell/tab_bar_state.dart';
 import '../learning/learning.dart';
@@ -44,7 +45,10 @@ class SubjectPillRow extends ConsumerWidget {
       height: 42,
       child: ListView(
         scrollDirection: Axis.horizontal,
-        padding: EdgeInsets.only(left: leadingPadding, right: 20),
+        padding: EdgeInsets.only(
+          left: leadingPadding,
+          right: SpLayout.of(context).gutter,
+        ),
         children: [
           _Pill(
             label: 'View All',
@@ -121,14 +125,10 @@ class SubjectPillRow extends ConsumerWidget {
                         onSelected: (_) {
                           // A subject pill on Discover, a filter on Videos
                           // or Books (activity learning, migration 0021).
-                          ref
-                              .read(activityLogProvider)
-                              .subjects(
-                                filter == subjectFilterProvider
-                                    ? 'pill'
-                                    : 'filter',
-                                [s.slug],
-                              );
+                          ref.read(activityLogProvider).subjects(
+                            filter == subjectFilterProvider ? 'pill' : 'filter',
+                            [s.slug],
+                          );
                           ref.read(filter.notifier).select(s.slug);
                           Navigator.of(sheetContext).pop();
                         },
@@ -156,8 +156,9 @@ class SubjectFilterNote extends ConsumerWidget {
     final current = ref.watch(filter);
     if (current == null) return const SizedBox.shrink();
     final subjects = ref.watch(subjectsProvider).value ?? const <Subject>[];
+    final side = SpLayout.of(context).gutter;
     return Padding(
-      padding: const EdgeInsets.fromLTRB(20, 4, 20, 0),
+      padding: EdgeInsets.fromLTRB(side, 4, side, 0),
       child: Row(
         children: [
           const Icon(

@@ -10,6 +10,7 @@ import '../detail/detail_widgets.dart';
 import '../star/star_layer.dart';
 import '../account/account_providers.dart';
 import 'saved_items.dart';
+import '../../theme/layout.dart';
 
 /// What is saved, as rows, in the order it was saved (newest first). A saved
 /// slug whose row has since gone is simply not shown.
@@ -100,16 +101,17 @@ class LibraryScreen extends ConsumerWidget {
     final directory = ref.watch(healerDirectoryProvider).value;
     final content = library.value;
     final signedIn = ref.watch(accountProvider).signedIn;
+    final side = SpLayout.of(context).gutter;
 
     return Scaffold(
       appBar: AppBar(),
       body: WithHomeStar(
         child: CustomScrollView(
           slivers: [
-            const SliverToBoxAdapter(
+            SliverToBoxAdapter(
               child: Padding(
-                padding: EdgeInsets.fromLTRB(20, 0, 20, 4),
-                child: Text(
+                padding: EdgeInsets.fromLTRB(side, 0, side, 4),
+                child: const Text(
                   'My Library',
                   style: TextStyle(fontSize: 28, fontWeight: FontWeight.w700),
                 ),
@@ -117,7 +119,7 @@ class LibraryScreen extends ConsumerWidget {
             ),
             SliverToBoxAdapter(
               child: Padding(
-                padding: const EdgeInsets.fromLTRB(20, 0, 20, 8),
+                padding: EdgeInsets.fromLTRB(side, 0, side, 8),
                 child: Text(
                   signedIn
                       ? 'Kept with your account — the same on spiritpedia.co.'
@@ -151,32 +153,35 @@ class LibraryScreen extends ConsumerWidget {
                 hasScrollBody: false,
                 child: Padding(
                   padding: EdgeInsets.all(32),
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Icon(
-                        Icons.favorite_border,
-                        size: 40,
-                        color: SpColors.textFaint,
-                      ),
-                      SizedBox(height: 14),
-                      Text(
-                        'Nothing saved yet.',
-                        style: TextStyle(
-                          fontSize: 17,
-                          fontWeight: FontWeight.w600,
+                  child: Readable(
+                    maxWidth: SpLayout.formWidth,
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Icon(
+                          Icons.favorite_border,
+                          size: 40,
+                          color: SpColors.textFaint,
                         ),
-                      ),
-                      SizedBox(height: 8),
-                      Text(
-                        'Tap the heart on a teacher, book, video or offering to keep it here.',
-                        textAlign: TextAlign.center,
-                        style: TextStyle(
-                          color: SpColors.textMuted,
-                          height: 1.5,
+                        SizedBox(height: 14),
+                        Text(
+                          'Nothing saved yet.',
+                          style: TextStyle(
+                            fontSize: 17,
+                            fontWeight: FontWeight.w600,
+                          ),
                         ),
-                      ),
-                    ],
+                        SizedBox(height: 8),
+                        Text(
+                          'Tap the heart on a teacher, book, video or offering to keep it here.',
+                          textAlign: TextAlign.center,
+                          style: TextStyle(
+                            color: SpColors.textMuted,
+                            height: 1.5,
+                          ),
+                        ),
+                      ],
+                    ),
                   ),
                 ),
               )

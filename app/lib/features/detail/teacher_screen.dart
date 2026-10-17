@@ -13,6 +13,7 @@ import '../library/saved_items.dart';
 import '../star/star_layer.dart';
 import 'detail_providers.dart';
 import 'detail_widgets.dart';
+import '../../theme/layout.dart';
 
 /// A teacher's page (web/app/healers/[slug]/page.js): portraits, name, tier,
 /// social links, bio, the contact card, then their shelves.
@@ -62,27 +63,7 @@ class _Teacher extends StatelessWidget {
     return ListView(
       padding: const EdgeInsets.only(bottom: 40 + FloatingHomeStar.clearance),
       children: [
-        Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 20),
-          child: _Portraits(urls: h.imageUrls.take(3).toList(), name: name),
-        ),
-        Padding(
-          padding: const EdgeInsets.fromLTRB(20, 20, 20, 0),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              DetailTitle(name),
-              const SizedBox(height: 10),
-              _Badge(healer: h),
-              _Social(healer: h),
-              if (h.bio != null) ...[
-                const SizedBox(height: 20),
-                Expandable(h.bio!),
-              ],
-              _Contact(healer: h),
-            ],
-          ),
-        ),
+        ..._head(context, h, name),
         const SizedBox(height: 12),
         Shelf(
           title: 'Videos',
@@ -122,6 +103,49 @@ class _Teacher extends StatelessWidget {
 }
 
 /// Up to three portraits, swiped, with dots — HeroImageRotator's job.
+/// The portraits and the words about them. On an iPad the portraits sit
+/// beside the words, at a sensible size, instead of filling the width.
+List<Widget> _head(BuildContext context, Healer h, String name) {
+  final layout = SpLayout.of(context);
+  final portraits = _Portraits(urls: h.imageUrls.take(3).toList(), name: name);
+  final words = Column(
+    crossAxisAlignment: CrossAxisAlignment.start,
+    children: [
+      DetailTitle(name),
+      const SizedBox(height: 10),
+      _Badge(healer: h),
+      _Social(healer: h),
+      if (h.bio != null) ...[const SizedBox(height: 20), Expandable(h.bio!)],
+      _Contact(healer: h),
+    ],
+  );
+  if (layout.isCompact) {
+    return [
+      Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 20),
+        child: portraits,
+      ),
+      Padding(padding: const EdgeInsets.fromLTRB(20, 20, 20, 0), child: words),
+    ];
+  }
+  return [
+    Padding(
+      padding: EdgeInsets.fromLTRB(layout.gutter, 8, layout.gutter, 12),
+      child: Row(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          SizedBox(
+            width: layout.size == WidthClass.wide ? 400 : 320,
+            child: portraits,
+          ),
+          const SizedBox(width: 32),
+          Expanded(child: Readable(centre: false, child: words)),
+        ],
+      ),
+    ),
+  ];
+}
+
 class _Portraits extends StatefulWidget {
   const _Portraits({required this.urls, required this.name});
 

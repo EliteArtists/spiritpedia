@@ -1,12 +1,15 @@
 # Spiritpedia: the app
 
-The Flutter app for iPhone: **1.0.0 (18)** built 17 October 2026: activity learning ("Let Spiritpedia
-learn from what I explore", asked by the star at visit 3, the switch in
-Tailor Spiritpedia; learned subjects rank just below More of — see
-`docs/personalisation.md` §6). Build 17 added Organisation listings and
-Spiritpedia Official. Build 16 is the last uploaded to TestFlight. **Before
-submitting 18, update the App Store privacy label** (Product Interaction and
-Search History).
+The Flutter app for iPhone and iPad: **1.0.0 (19)** built 17 October 2026:
+the iPad (Phase B) — the same screens, flow, star and features, laid out for
+the larger screen, both ways round and in Split View; iPhone is unchanged.
+Build 18 added activity learning ("Let Spiritpedia learn from what I
+explore", asked by the star at visit 3, the switch in Tailor Spiritpedia;
+learned subjects rank just below More of — see `docs/personalisation.md` §6).
+Build 16 is the last uploaded to TestFlight. **Before submitting 19:** update
+the App Store privacy label (add Device ID; Sensitive Info; Product
+Personalization on Product Interaction and Search History), and add 13-inch
+iPad screenshots (2064 × 2752).
 It uses the same Supabase database, the same accounts and the same content as
 the website in `../web`. This file is written so that a new session, with none
 of the earlier conversations, can pick the app up.
@@ -52,7 +55,7 @@ Change the phrases only in the shared JSON.
 
 ```
 lib/
-  main.dart             starts Supabase and Firebase, holds the launch screen, portrait only
+  main.dart             starts Supabase and Firebase, holds the launch screen, portrait only on a phone
   app.dart              MaterialApp.router; the star layer and the intro sit above the router
   router.dart           go_router; paths mirror the website's (/healers/:slug, /books/:slug …)
   core/                 config, Supabase client, crisis safety, Amazon links, dates, retry
@@ -141,7 +144,7 @@ read-only checks only.
 
 ```bash
 flutter analyze        # must say "No issues found"
-flutter test           # 278 tests at build 18, all passing
+flutter test           # 292 tests at build 19, all passing
 ```
 
 Screenshots for review come from a temporary integration test (a "tour") that
@@ -173,7 +176,21 @@ jumped from 9 to 11. The next build is **17**.
 The Mac's disk has filled up during a build before. `flutter clean` frees the
 app's `build/` folder (about 7 GB), and everything in it is regenerated.
 
-**iPhone only, portrait only.** iPad is Phase B. Bundle ID `co.spiritpedia.app`.
+**iPhone (portrait only) and iPad (every way round, Split View and resizable
+windows; not full-screen-only).** Bundle ID `co.spiritpedia.app`.
+
+**The iPad layout** (`lib/theme/layout.dart`) follows the window's width, never
+the device: under 600 points is the phone layout, exactly as before (every
+iPhone, and an iPad's narrow Split View window); 600–1000 is regular, 1000+ is
+wide. Regular and wide get bigger cards (×1.2 / ×1.3, in `Shelf`), wider
+margins (32 / 48), text ×1.1, reading columns of 720 points, forms and sheets
+of 560, the star's trays 520, the video player 900, the search row 760. On an
+iPad the billboard puts the portrait at the right, and the teacher and book
+pages put the portrait or cover beside the words. `test/ipad_test.dart` opens
+every screen at 10 iPad and Split View sizes and fails on any overflow, and
+checks that every iPhone width is the phone layout. Rotating the simulator
+needs DeviceHub (Xcode 27 has no Simulator app or command-line rotate); an
+app's request to turn is ignored on an iPad that allows Split View.
 App-only pushes don't redeploy the website (`web/scripts/vercel-ignore-build.sh`);
 anything under `web/` deploys live.
 
@@ -507,7 +524,8 @@ Earlier migrations (0000–0014) are described in the root README.
 
 1. **The polish pass**, across the whole app, from testing build 13 on a
    phone.
-2. **Phase B: iPad.** Today the app is iPhone only and portrait only.
+2. **Phase B: iPad** is built (build 19). Next: real landscape checks on a
+   device or in DeviceHub, and iPad screenshots for the App Store.
 3. **The website follow-ups** in `docs/website-followups.md`, plus a public
    "⋯" (report and block) on the website's reviews.
 4. **The before-launch list:**

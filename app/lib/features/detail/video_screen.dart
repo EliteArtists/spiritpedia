@@ -15,6 +15,7 @@ import '../reviews/reviews_service.dart';
 import 'detail_providers.dart';
 import 'detail_widgets.dart';
 import '../learning/learning.dart';
+import '../../theme/layout.dart';
 
 /// The embedded player. A provider so widget tests, which have no web view,
 /// can swap in a stand-in.
@@ -44,8 +45,10 @@ class VideoScreen extends ConsumerWidget {
       builder: (context, video) {
         final id = video.youtubeId;
         final url = video.platformUrl;
+        // The player is never wider than SpLayout.videoWidth: on a 13-inch
+        // iPad, full width would fill the screen.
         return ListView(
-          padding: detailPadding,
+          padding: readingPadding(context, detailPadding, SpLayout.videoWidth),
           children: [
             DetailTitle(video.title),
             const SizedBox(height: 8),

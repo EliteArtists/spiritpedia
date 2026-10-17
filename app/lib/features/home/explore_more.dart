@@ -8,6 +8,7 @@ import '../../shared/widgets/cards.dart';
 import '../../shared/widgets/shelf.dart';
 import '../../theme/colors.dart';
 import '../interests/hidden_empty.dart';
+import '../../theme/layout.dart';
 
 /// Explore More (ExploreMore.jsx): its sections fetched only when the visitor
 /// asks for them. Opened sections appear as shelves, in the order opened; the
@@ -25,6 +26,7 @@ class ExploreMore extends ConsumerWidget {
         if (!opened.contains(s)) s,
     ];
 
+    final layout = SpLayout.of(context);
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
@@ -32,7 +34,7 @@ class ExploreMore extends ConsumerWidget {
           _SectionShelf(section: section, subject: subject),
         if (remaining.isNotEmpty)
           Padding(
-            padding: const EdgeInsets.fromLTRB(20, 8, 20, 24),
+            padding: EdgeInsets.fromLTRB(layout.gutter, 8, layout.gutter, 24),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
@@ -59,7 +61,12 @@ class ExploreMore extends ConsumerWidget {
                 ),
                 const SizedBox(height: 18),
                 GridView.count(
-                  crossAxisCount: 2,
+                  // More tiles a row on an iPad: 3 upright, 4 on its side.
+                  crossAxisCount: switch (layout.size) {
+                    WidthClass.compact => 2,
+                    WidthClass.regular => 3,
+                    WidthClass.wide => 4,
+                  },
                   shrinkWrap: true,
                   physics: const NeverScrollableScrollPhysics(),
                   mainAxisSpacing: 12,
@@ -209,7 +216,12 @@ class _MessageShelf extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.fromLTRB(20, 0, 20, 34),
+      padding: EdgeInsets.fromLTRB(
+        SpLayout.of(context).gutter,
+        0,
+        SpLayout.of(context).gutter,
+        34,
+      ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
@@ -231,7 +243,12 @@ class _Title extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) => Padding(
-    padding: const EdgeInsets.fromLTRB(20, 0, 20, 10),
+    padding: EdgeInsets.fromLTRB(
+      SpLayout.of(context).gutter,
+      0,
+      SpLayout.of(context).gutter,
+      10,
+    ),
     child: Text(text, style: style),
   );
 }

@@ -9,6 +9,7 @@ import '../../theme/colors.dart';
 import '../search/feeling_placeholder.dart';
 import '../star/slipstream.dart';
 import '../star/star_layer.dart';
+import '../../theme/layout.dart';
 
 /// What the star says as Tailor Spiritpedia opens.
 const tailorStarIntro =
@@ -178,8 +179,9 @@ class _TailorStarFrameState extends ConsumerState<TailorStarFrame> {
         ),
         if (_star == _Star.speaking)
           Positioned(
-            left: 12,
-            right: 12,
+            left: 12 + SpLayout.of(context).centredInset(SpLayout.readingWidth),
+            right:
+                12 + SpLayout.of(context).centredInset(SpLayout.readingWidth),
             top: 4,
             child: Dismissible(
               key: const ValueKey('tailor-star'),

@@ -11,6 +11,7 @@ import '../reviews/reviews_section.dart';
 import '../reviews/reviews_service.dart';
 import 'detail_providers.dart';
 import 'detail_widgets.dart';
+import '../../theme/layout.dart';
 
 /// The website's PRODUCT_TYPES (web/app/offerings/[slug]/page.js).
 const _productTypes = {
@@ -143,7 +144,7 @@ class _OfferingLayout extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     final healer = ref.watch(healerDirectoryProvider).value?.byId(healerId);
     return ListView(
-      padding: detailPadding,
+      padding: readingPadding(context, detailPadding),
       children: [
         Wrap(
           alignment: WrapAlignment.center,

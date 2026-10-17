@@ -1,4 +1,5 @@
 import 'dart:async';
+import 'dart:math';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_native_splash/flutter_native_splash.dart';
@@ -13,6 +14,7 @@ import '../account/display_name.dart';
 import '../star/conductor.dart';
 import '../star/slipstream.dart';
 import '../star/star_layer.dart';
+import '../../theme/layout.dart';
 
 /// Which intro this launch gets.
 enum IntroKind {
@@ -300,9 +302,11 @@ class _IntroOverlayState extends ConsumerState<IntroOverlay>
     if (rect != null) return rect;
     // Home not laid out yet: roughly where its search box star sits — the
     // first row under the status bar (8 above a 56-high box, the star 22 in).
+    // On an iPad the search row is centred (SpLayout.searchRowWidth).
     final top = MediaQuery.paddingOf(context).top;
+    final row = SpLayout.of(context).centredInset(SpLayout.searchRowWidth);
     return Rect.fromCenter(
-      center: Offset(42, top + 8 + 28),
+      center: Offset(row + 42, top + 8 + 28),
       width: 28,
       height: 28,
     );
@@ -474,6 +478,7 @@ class _Callout extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final compact = SpLayout.of(context).isCompact;
     return Stack(
       fit: StackFit.expand,
       children: [
@@ -489,8 +494,11 @@ class _Callout extends StatelessWidget {
           child: GestureDetector(onTap: onGotIt, child: const _Halo()),
         ),
         Positioned(
-          left: 20,
-          right: 20,
+          // Under the star: on an iPad, a card's width from the star's
+          // side rather than the whole screen.
+          left: compact ? 20 : max(20.0, star.left - 20),
+          right: compact ? 20 : null,
+          width: compact ? null : 440,
           top: star.bottom + 22,
           child: Material(
             color: SpColors.surface,
