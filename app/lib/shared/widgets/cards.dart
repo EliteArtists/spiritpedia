@@ -76,8 +76,9 @@ class CardHeart extends ConsumerWidget {
   }
 }
 
-/// Portrait card: photo, name, and the tier pill — except Ascended Masters,
-/// whose name stands alone, as on the website's HealerCard.
+/// Portrait card: photo; the tier (with ✓ Verified, or ✦ Official) top left,
+/// the heart top right; the name, and a channel's type bottom right. An
+/// Ascended Master's name stands alone, as on the website's HealerCard.
 class HealerCard extends StatelessWidget {
   const HealerCard({super.key, required this.healer, this.subjectSlug});
 
@@ -139,14 +140,25 @@ class HealerCard extends StatelessWidget {
                     height: 1.2,
                   ),
                 ),
-                if (!ascended) ...[
+                if (healer.isPlatform) ...[
                   const SizedBox(height: 8),
-                  // Tier, type, ✓ Verified or ✦ Official: each one the star
-                  // explains, and a tap on it never opens the card.
-                  ListingBadgeRow.healer(healer),
+                  Align(
+                    alignment: Alignment.centerRight,
+                    child: ListingBadgeRow.healer(
+                      healer,
+                      kinds: ListingBadgeRow.typeOnly,
+                    ),
+                  ),
                 ],
               ],
             ),
+          ),
+          // Each badge the star explains; a tap on one never opens the card.
+          Positioned(
+            top: 10,
+            left: 10,
+            right: 48, // clear of the heart
+            child: ListingBadgeRow.healer(healer, kinds: ListingBadgeRow.top),
           ),
           CardHeart(kind: SavedKind.healers, slug: healer.slug),
         ],
@@ -412,6 +424,13 @@ class PublisherCard extends StatelessWidget {
         fit: StackFit.expand,
         children: [
           _publisherBody(meta),
+          // Top left, as on every card: its tier and ✓ Verified.
+          Positioned(
+            top: 22,
+            left: 22,
+            right: 52,
+            child: ListingBadgeRow.publisher(publisher),
+          ),
           CardHeart(kind: SavedKind.publishers, slug: publisher.slug),
         ],
       ),
@@ -446,9 +465,6 @@ class PublisherCard extends StatelessWidget {
           overflow: TextOverflow.ellipsis,
           style: const TextStyle(fontSize: 15, fontWeight: FontWeight.w700),
         ),
-        // Its tier (Superstar, Shining Star, Rising Star) and ✓ Verified.
-        const SizedBox(height: 4),
-        ListingBadgeRow.publisher(publisher),
         if (meta.isNotEmpty) ...[
           const SizedBox(height: 3),
           Text(

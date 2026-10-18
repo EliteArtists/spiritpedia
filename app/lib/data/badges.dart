@@ -44,18 +44,20 @@ String? typeLabel(String? entityType) => switch (entityType) {
   _ => null,
 };
 
-/// What the star says when a tier badge is tapped, by the tier's name.
+/// What the star says when a tier badge is tapped, by the tier's name. The
+/// top two tiers say the same for people and platforms.
+const worldwideTip =
+    'A worldwide reach, with over a million followers across social media.';
+const futureTip =
+    'Hundreds of thousands of followers: the superstars of the future.';
+
 const tierTips = {
-  'Superhero': 'One of the most influential spiritual teachers in the world.',
-  'Luminary': 'A respected and established spiritual teacher.',
+  'Superhero': worldwideTip,
+  'Luminary': futureTip,
   'Local Hero': 'A practitioner available in your area.',
   'Ascended Master': 'A timeless teacher whose legacy lives on.',
-  'Superstar':
-      'A household name: one of the most-followed voices in spirituality, '
-      'with a million or more people following along.',
-  'Shining Star':
-      'Established and much loved, with hundreds of thousands of people '
-      'following along.',
+  'Superstar': worldwideTip,
+  'Shining Star': futureTip,
   'Rising Star':
       'A rising voice, and worth finding early: under a hundred thousand '
       'followers, for now.',

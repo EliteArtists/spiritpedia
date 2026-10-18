@@ -128,12 +128,14 @@ class ListingBadgeRow extends ConsumerWidget {
     this.verified = false,
     this.official = false,
     this.alignment = WrapAlignment.start,
+    this.kinds,
   });
 
   ListingBadgeRow.healer(
     Healer h, {
     Key? key,
     WrapAlignment alignment = WrapAlignment.start,
+    Set<BadgeKind>? kinds,
   }) : this(
          key: key,
          name: h.name,
@@ -142,7 +144,14 @@ class ListingBadgeRow extends ConsumerWidget {
          verified: h.verified,
          official: h.official,
          alignment: alignment,
+         kinds: kinds,
        );
+
+  /// The tier and its company, for a card's top left.
+  static const top = {BadgeKind.tier, BadgeKind.verified, BadgeKind.official};
+
+  /// The type, for a card's bottom right.
+  static const typeOnly = {BadgeKind.type};
 
   ListingBadgeRow.publisher(Publisher p, {Key? key})
     : this(
@@ -160,15 +169,21 @@ class ListingBadgeRow extends ConsumerWidget {
   final bool official;
   final WrapAlignment alignment;
 
+  /// Only these (a card puts its tier top left and its type bottom right).
+  final Set<BadgeKind>? kinds;
+
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final badges = listingBadges(
-      name: name,
-      tier: tier,
-      entityType: entityType,
-      verified: verified,
-      official: official,
-    );
+    final badges = [
+      for (final b in listingBadges(
+        name: name,
+        tier: tier,
+        entityType: entityType,
+        verified: verified,
+        official: official,
+      ))
+        if (kinds?.contains(b.kind) ?? true) b,
+    ];
     if (badges.isEmpty) return const SizedBox.shrink();
     return Wrap(
       spacing: 6,

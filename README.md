@@ -43,12 +43,12 @@ inventory is `docs/emails.md`; the personalisation rules are
 | | State on 18 October 2026 |
 | :--- | :--- |
 | **Website** | Live at **https://www.spiritpedia.co** (Next.js on Vercel). Every push that changes `web/` deploys to production |
-| **App** | Flutter, iPhone and iPad. **1.0.0 (20)** is built (`app/build/ios/ipa/Spiritpedia.ipa` and `app/build/ios/archive/Runner.xcarchive`) and waiting to be uploaded; build 19's are kept in `app/build/build19/` until it is uploaded or skipped. **Build 16 is the last one uploaded to TestFlight.** Not yet on the App Store |
+| **App** | Flutter, iPhone and iPad. **1.0.0 (21)** is built (`app/build/ios/ipa/Spiritpedia.ipa` and `app/build/ios/archive/Runner.xcarchive`) and waiting to be uploaded; build 19's are kept in `app/build/build19/` until it is uploaded or skipped. **Build 16 is the last one uploaded to TestFlight.** Not yet on the App Store |
 | **Database** | Supabase. Two projects: **live** (`uzmvcgew…`) and **dev** (`khtpbnof…`). Migrations `0000`–`0023` are on both |
 | **Push** | Firebase Cloud Messaging only, with an APNs key. The Firebase projects must move to the love@ Google account before mid-November 2026 (§16) |
 | **Repository** | `https://github.com/EliteArtists/spiritpedia`, branch `main` only. No staging environment, no feature flags |
 
-**Before submitting build 20 in App Store Connect:**
+**Before submitting build 21 in App Store Connect:**
 - Update the App Privacy label (§12.6): add **Device ID** and **Sensitive Info**,
   and **Product Personalization** as a purpose on Product Interaction and
   Search History.
@@ -735,7 +735,7 @@ README-only pushes show as **Canceled** in Vercel — the rule working. In doubt
 `app/`. The detail (structure, every rule, migrations as the app sees them,
 admin Reports) is in **`app/README.md`**; this section is the overview.
 
-### 10.1 Builds 1–20
+### 10.1 Builds 1–21
 
 Version `1.0.0+N`. Phases 0–3a (9–10 Oct 2026, as `0.1.0+1`) came first:
 skeleton and intro, one shared crisis phrase list, Explore, emotional search,
@@ -762,7 +762,8 @@ detail pages, email-code sign-in with Library sync and account deletion, push.
 | 17 | 17 Oct | Account types: Organisation listings shown as channels; "✦ Official" |
 | 18 | 17 Oct | Activity learning ("Let Spiritpedia learn from what I explore") |
 | 19 | 17 Oct | **The iPad**: the same app laid out for the larger screen, both orientations, Split View |
-| 20 | 18 Oct | Badges (tiers by type, ✓ Verified, ✦ OFFICIAL, every badge explained by the star); Official reviews; Explore More as real shelves; the iPad two-stars fix |
+| 20 | 18 Oct | *Built, never uploaded (replaced by 21).* Badges (tiers by type, ✓ Verified, ✦ OFFICIAL, every badge explained by the star); Official reviews; Explore More as real shelves; the iPad two-stars fix |
+| 21 | 18 Oct | Build 20, plus: the tier badge top left on cards (type bottom right); the top two tiers' tips reworded |
 
 ### 10.2 Structure and startup
 
@@ -1365,11 +1366,12 @@ approve).
 | Green | Local Hero | Rising Star | `local_hero` |
 
 Ascended Master (`ascended_master`) stays as it is, for people only: shown in
-Timeless Teachers with a lifespan (`1931 — 2015`, or `b. 1931`). Guidance for
-channels, shown in admin: Superstar ≈ household name, 1M+ followers; Shining
-Star ≈ established, 100k–1M; Rising Star ≈ growing, under 100k. For people the
-old thresholds still guide: Superhero 500k+ on one platform or mainstream
-recognition; Luminary 50k–499k; Local Hero under 50k.
+Timeless Teachers with a lifespan (`1931 — 2015`, or `b. 1931`). Guidance,
+shown in admin and matching the star's tips: Superhero / Superstar ≈ worldwide
+reach, 1M+ followers across social media; Luminary / Shining Star ≈ hundreds of
+thousands; Local Hero ≈ a practitioner available in their area; Rising Star ≈
+growing, under 100k. On cards the tier (with ✓ Verified, or ✦ Official) sits
+top left, the heart top right, a channel's type bottom right.
 
 Every listing except Spiritpedia shows its tier, on cards and profiles,
 website and app; channels, apps and organisations also show their type, beside

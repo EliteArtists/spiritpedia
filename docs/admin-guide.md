@@ -25,10 +25,12 @@ listing never buys a tier.
 
 Ascended Master stays as it is, for people only.
 
-Guidance for channels (shown in admin beside the tier dropdown):
-- **Superstar:** a household name, ~1M+ followers
-- **Shining Star:** established, ~100k–1M
-- **Rising Star:** growing, under ~100k
+Guidance (shown in admin beside the tier dropdown, the same measures as the
+star's tips):
+- **Superhero / Superstar:** worldwide reach, 1M+ followers across social media
+- **Luminary / Shining Star:** hundreds of thousands of followers
+- **Local Hero:** a practitioner available in their area
+- **Rising Star:** growing, under 100k
 
 ### Where each badge shows
 
@@ -58,11 +60,11 @@ it:
 
 | Badge | The star says |
 | :--- | :--- |
-| Superhero | One of the most influential spiritual teachers in the world. |
-| Luminary | A respected and established spiritual teacher. |
+| Superhero | A worldwide reach, with over a million followers across social media. |
+| Luminary | Hundreds of thousands of followers: the superstars of the future. |
 | Local Hero | A practitioner available in your area. |
-| Superstar | A household name: one of the most-followed voices in spirituality, with a million or more people following along. |
-| Shining Star | Established and much loved, with hundreds of thousands of people following along. |
+| Superstar | A worldwide reach, with over a million followers across social media. |
+| Shining Star | Hundreds of thousands of followers: the superstars of the future. |
 | Rising Star | A rising voice, and worth finding early: under a hundred thousand followers, for now. |
 | ✓ Verified | This page is run by [name] themselves. They've confirmed it's theirs, so what you see here comes straight from them. |
 | ✦ OFFICIAL | This is my home: Spiritpedia's own page. Our videos, our reviews, and where you can always find us. |

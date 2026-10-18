@@ -19,16 +19,8 @@ class TierTip {
   final Color accent;
 
   // A shelf's badge: the whole shelf, so plural.
-  static const superhero = TierTip(
-    'Superheroes',
-    'One of the most influential spiritual teachers in the world.',
-    _gold,
-  );
-  static const luminary = TierTip(
-    'Luminaries',
-    'A respected and established spiritual teacher.',
-    _purple,
-  );
+  static const superhero = TierTip('Superheroes', worldwideTip, _gold);
+  static const luminary = TierTip('Luminaries', futureTip, _purple);
   static const localHero = TierTip(
     'Local Heroes',
     'A practitioner available in your area.',

@@ -1214,7 +1214,7 @@ void main() {
       expect(find.text('Superheroes'), findsOneWidget);
       expect(
         find.text(
-          'One of the most influential spiritual teachers in the world.',
+          'A worldwide reach, with over a million followers across social media.',
         ),
         findsOneWidget,
       );
@@ -1238,7 +1238,7 @@ void main() {
         (
           'Luminary',
           'Luminaries',
-          'A respected and established spiritual teacher.',
+          'Hundreds of thousands of followers: the superstars of the future.',
         ),
         (
           'Local Hero',
@@ -1292,14 +1292,29 @@ void main() {
         find.descendant(of: card, matching: find.text('LUMINARY')),
         findsNothing,
       );
+      // The tier top left, the type bottom right, the name between.
+      final cardBox = tester.getRect(card);
+      final tier = tester.getRect(
+        find.descendant(of: card, matching: find.text('SHINING STAR')),
+      );
+      final type = tester.getRect(
+        find.descendant(of: card, matching: find.text('CHANNEL')),
+      );
+      final name = tester.getRect(
+        find.descendant(of: card, matching: find.text('A Channel')),
+      );
+      expect(tier.top - cardBox.top, lessThan(30));
+      expect(tier.left - cardBox.left, lessThan(30));
+      expect(cardBox.bottom - type.bottom, lessThan(30));
+      expect(cardBox.right - type.right, lessThan(30));
+      expect(name.top, greaterThan(tier.bottom));
       await tester.tap(
         find.descendant(of: card, matching: find.text('SHINING STAR')),
       );
       await pause(tester);
       expect(
         find.text(
-          'Established and much loved, with hundreds of thousands of people '
-          'following along.',
+          'Hundreds of thousands of followers: the superstars of the future.',
         ),
         findsOneWidget,
       );
