@@ -5,6 +5,8 @@ import CardImage from './CardImage.js';
 import { FAVORITE_KEYS } from '../utils/favorites.js';
 import { useFavorite } from '../utils/useFavorite.js';
 import { formatLifespan, LIFESPAN_BADGE_CLASS } from '../utils/lifespan.js';
+import ListingBadges from './ListingBadges.jsx';
+import { TIER_TIPS } from '../utils/badges.js';
 
 
 // Served from /public, so the fallback survives exactly the conditions that kill
@@ -16,13 +18,10 @@ const DEFAULT_AVATAR = '/avatar-placeholder.svg';
 // class on each frame) — the same cadence as HeroImageRotator.
 const ROTATE_MS = 5000;
 
-// What each tier actually means, for a first-time visitor who has no idea the
-// badges are a ranking. Keyed by the stored tier value.
+// The Ascended Master lifespan pill's explanation. Every other badge is a
+// ListingBadges pill with the star's tip (utils/badges.js).
 const TIER_TOOLTIPS = {
-  superhero: 'One of the most influential spiritual teachers in the world',
-  luminary: 'A respected and established spiritual teacher',
-  local_hero: 'A practitioner available in your area',
-  ascended_master: 'A timeless teacher whose legacy lives on',
+  ascended_master: TIER_TIPS['Ascended Master'],
 };
 
 // Wraps a badge so hovering it floats an explanation beside it. Named group
@@ -63,9 +62,6 @@ function TierTooltip({ tier, children, placement = 'above' }) {
 // image_urls — HeroImageRotator's pattern, stacked frames fading in place. With
 // one image (or none) it renders the static card exactly as before, so the prop
 // is safe to pass for a whole shelf.
-export const OFFICIAL_BADGE_CLASS =
-  'block shrink-0 rounded-md bg-white px-2 py-0.5 text-[10px] font-bold uppercase tracking-wider text-[#4c1d95] shadow-sm';
-
 export default function HealerCard({ healer, portrait, heightClass = 'h-72', rotate = false }) {
   // Saved by slug — the same key the app and user_favourites use.
   const [favorited, toggleSaved] = useFavorite(FAVORITE_KEYS.healers, healer.healer_slug);
@@ -143,36 +139,9 @@ export default function HealerCard({ healer, portrait, heightClass = 'h-72', rot
           }`}
         >
           <h3 className="text-white font-bold text-lg drop-shadow-sm">{healer.name}</h3>
-          {/* Spiritpedia's own profile wears Official instead of a tier
-              (healers.official, migration 0020). */}
-          {healer.official ? (
-            <span className={OFFICIAL_BADGE_CLASS}>✦ Official</span>
-          ) : healer.tier === 'superhero' ? (
-            <TierTooltip tier="superhero">
-              <span className="block px-2.5 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wider bg-amber-100 text-amber-600 border border-amber-300">
-                Superhero
-              </span>
-            </TierTooltip>
-          ) : isAscended ? null : healer.tier === 'luminary' ? (
-            <TierTooltip tier="luminary">
-              <span className="block bg-violet-600 text-white font-bold text-[11px] tracking-wider uppercase px-2.5 py-1 rounded-md shadow-sm">
-                LUMINARY
-              </span>
-            </TierTooltip>
-          ) : healer.tier === 'local_hero' ? (
-            <TierTooltip tier="local_hero">
-              <span className="block bg-emerald-500 text-white text-[10px] font-bold tracking-wider uppercase px-2 py-0.5 rounded-md shadow-sm">
-                Local Hero
-              </span>
-            </TierTooltip>
-          ) : (
-            // Unknown or NULL tier — a neutral badge rather than borrowing Local
-            // Hero's, so a tier added to the database before the UI is visibly
-            // unstyled instead of silently mislabelled.
-            <span className="bg-gray-500 text-white text-[10px] font-bold tracking-wider uppercase px-2 py-0.5 rounded-md shadow-sm">
-              Teacher
-            </span>
-          )}
+          {/* Tier, type, ✓ Verified or ✦ Official, each explained by the star
+              (utils/badges.js, migration 0023). Spiritpedia shows no tier. */}
+          <ListingBadges listing={healer} className="justify-end" />
         </div>
       </a>
 

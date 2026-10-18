@@ -118,31 +118,4 @@ export async function generateStaticParams() {
   return subjects.map((subject) => ({
     slug: subject.slug,
   }));
-}// Function to fetch content for *client-side* filtering on the homepage
-export async function getHomepageContent(subjectSlug) {
-    if (!subjectSlug) {
-        return { books: [], videos: [], healers: [] };
-    }
-    
-    // Fetch all necessary data in one efficient query pattern (using Promise.all)
-    // Same array-containment matching as getContentBySubjectSlug above.
-    const results = await Promise.all([
-        supabase.from('books').select('*').contains('subject_slugs', [subjectSlug]),
-        supabase.from('videos').select('*').contains('subject_slugs', [subjectSlug]),
-        supabase.from('healers').select('*').contains('subject_slugs', [subjectSlug]),
-    ]);
-
-    // Simple error check
-    const [booksResult, videosResult, healersResult] = results;
-
-    if (booksResult.error || videosResult.error || healersResult.error) {
-        console.error('Error fetching homepage content:', booksResult.error || videosResult.error || healersResult.error);
-        return { books: [], videos: [], healers: [] };
-    }
-
-    return { 
-        books: booksResult.data, 
-        videos: videosResult.data, 
-        healers: healersResult.data 
-    };
 }

@@ -58,3 +58,18 @@ test('claim paths name publishers', () => {
   assert.equal(claimPath({ kind: 'publisher', slug: 'a b' }), '/auth/claim?slug=a%20b&kind=publisher');
   assert.equal(claimPath(null), null);
 });
+
+test('a publisher’s authors are its people, never its channels', async () => {
+  const { authorCount } = await import('./listings.js');
+  const publisher = {
+    publisher_healers: [
+      { healers: { entity_type: 'individual' } },
+      { healers: { entity_type: null } },
+      { healers: { entity_type: 'channel' } },
+      { healers: { entity_type: 'app' } },
+      { healers: null },
+    ],
+  };
+  assert.equal(authorCount(publisher), 2);
+  assert.equal(authorCount({}), 0);
+});

@@ -1,4 +1,5 @@
 import { getContentBySubjectSlug, getAllSubjects, getHealerNames } from '../../../data/subjects.js';
+import { isPlatform, officialFirst } from '../../../utils/listings.js';
 import BookCard from '../../../components/BookCard.js';
 import ContentShelf from '../../../components/ContentShelf.js';
 import FreeResourceCard from '../../../components/FreeResourceCard.js';
@@ -28,7 +29,7 @@ export async function generateMetadata({ params }) {
 
   return buildMetadata({
     title: name,
-    description: `Healers, books, videos, courses and free resources on ${name} — curated by Spiritpedia.`,
+    description: `Teachers, channels, books, videos, courses and free resources on ${name} — curated by Spiritpedia.`,
     path: `/subject/${slug}`,
   });
 }
@@ -125,7 +126,17 @@ export default async function SubjectPage({ params }) {
             <ContentShelf
               title="Healers"
               subtitle="Practitioners & Teachers"
-              items={healers}
+              items={healers.filter((h) => !isPlatform(h))}
+              renderItem={(healer) => <HealerCard healer={healer} />}
+              itemWidthClass="w-[260px]"
+            />
+
+            {/* Channels, apps and organisations apart from the teachers, as on
+                the homepage; Spiritpedia's own first. */}
+            <ContentShelf
+              title="Channels"
+              subtitle="Channels, Apps & Organisations"
+              items={officialFirst(healers.filter(isPlatform))}
               renderItem={(healer) => <HealerCard healer={healer} />}
               itemWidthClass="w-[260px]"
             />

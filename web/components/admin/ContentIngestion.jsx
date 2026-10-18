@@ -5,6 +5,7 @@ import { supabase } from '@/utils/supabase';
 // Reads stay on the anon client above. Writes go through the server, so the
 // anon key can lose its write grants without this form losing its job.
 import { adminWrite } from '@/utils/adminWrite';
+import { PLATFORM_TIER_GUIDANCE, tierOptions } from '@/utils/badges';
 
 // Extract the canonical YouTube video ID from any common URL shape.
 function extractYouTubeId(url) {
@@ -72,6 +73,28 @@ async function uniqueSlug(table, rawTitle) {
 // ---------------------------------------------------------------------------
 // `initialPublisherId` (from ?publisher=) opens the Publisher tab with that
 // publisher loaded into Edit Existing Publisher.
+// A publisher's tier (migration 0023): Superstar, Shining Star or Rising
+// Star, set by the admin and never for sale (utils/badges.js).
+function PublisherTierField({ value, onChange }) {
+  return (
+    <div>
+      <label className="block text-xs font-bold uppercase tracking-wider text-slate-400 mb-2">Tier</label>
+      <select
+        value={value}
+        onChange={(e) => onChange(e.target.value)}
+        className="w-full px-4 py-3 rounded-lg bg-slate-800 border border-slate-700 text-white focus:outline-none focus:ring-2 focus:ring-cyan-400 focus:border-transparent"
+      >
+        {tierOptions('publisher').map((t) => (
+          <option key={t.value} value={t.value}>
+            {t.label}
+          </option>
+        ))}
+      </select>
+      <span className="mt-1.5 block text-[11px] leading-snug text-slate-500">{PLATFORM_TIER_GUIDANCE.join(' · ')}</span>
+    </div>
+  );
+}
+
 export default function ContentIngestion({ initialPublisherId = null } = {}) {
   // Form + UI state
   const [tab, setTab] = useState(initialPublisherId ? 'publisher' : 'video'); // 'video' | 'book' | 'course' | 'healer' | 'free_resource' | 'publisher'
@@ -139,6 +162,7 @@ export default function ContentIngestion({ initialPublisherId = null } = {}) {
   const [publisherWebsite, setPublisherWebsite] = useState('');
   const [publisherLogoUrl, setPublisherLogoUrl] = useState('');
   const [publisherFoundedYear, setPublisherFoundedYear] = useState('');
+  const [publisherTier, setPublisherTier] = useState('local_hero');
   const [publisherHealerIds, setPublisherHealerIds] = useState([]); // linked healer ids
   const [publisherHealerSearch, setPublisherHealerSearch] = useState(''); // dropdown filter
   // EDIT PUBLISHER — a second workspace below the create form for updating an
@@ -151,6 +175,7 @@ export default function ContentIngestion({ initialPublisherId = null } = {}) {
   const [editWebsite, setEditWebsite] = useState('');
   const [editLogoUrl, setEditLogoUrl] = useState('');
   const [editFoundedYear, setEditFoundedYear] = useState('');
+  const [editTier, setEditTier] = useState('local_hero');
   const [editSubjectSlugs, setEditSubjectSlugs] = useState([]); // pre-checked subject tags
   const [linkedAuthors, setLinkedAuthors] = useState([]); // [{ healer_id, name }] currently linked
   const [editNewHealerIds, setEditNewHealerIds] = useState([]); // authors staged to add
@@ -294,6 +319,7 @@ export default function ContentIngestion({ initialPublisherId = null } = {}) {
       setEditWebsite(pub.website_url || '');
       setEditLogoUrl(pub.logo_url || '');
       setEditFoundedYear(pub.founded_year != null ? String(pub.founded_year) : '');
+      setEditTier(pub.tier || 'local_hero');
       setEditSubjectSlugs(Array.isArray(pub.subject_slugs) ? pub.subject_slugs : []);
     }
     setLinkedAuthors(authors);
@@ -370,6 +396,7 @@ export default function ContentIngestion({ initialPublisherId = null } = {}) {
           website_url: site || null,
           logo_url: editLogoUrl.trim() || null,
           founded_year: Number.isFinite(foundedNum) ? foundedNum : null,
+          tier: editTier,
           subject_slugs: editSubjectSlugs,
         },
       });
@@ -480,6 +507,7 @@ export default function ContentIngestion({ initialPublisherId = null } = {}) {
     setPublisherWebsite('');
     setPublisherLogoUrl('');
     setPublisherFoundedYear('');
+    setPublisherTier('local_hero');
     setPublisherHealerIds([]);
     setPublisherHealerSearch('');
   }
@@ -518,6 +546,7 @@ export default function ContentIngestion({ initialPublisherId = null } = {}) {
             website_url: site || null,
             logo_url: publisherLogoUrl.trim() || null,
             founded_year: Number.isFinite(foundedNum) ? foundedNum : null,
+            tier: publisherTier,
             subject_slugs: selectedSlugs,
           },
         });
@@ -1528,6 +1557,8 @@ export default function ContentIngestion({ initialPublisherId = null } = {}) {
                 />
               </div>
 
+              <PublisherTierField value={publisherTier} onChange={setPublisherTier} />
+
               {/* LINK HEALERS — searchable, chainable multi-select */}
               <div>
                 <label className={labelClass}>
@@ -1744,6 +1775,8 @@ export default function ContentIngestion({ initialPublisherId = null } = {}) {
                       className={inputClass}
                     />
                   </div>
+
+                  <PublisherTierField value={editTier} onChange={setEditTier} />
 
                   {/* Subject tags — pre-checked from the stored subject_slugs */}
                   <div>

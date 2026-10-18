@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { supabase } from '../utils/supabase.js';
 import { getSession, supabaseAuth } from '../utils/supabaseAuth.js';
 import { trackContent } from '../utils/activity.js';
+import { reviewNameReserved } from '../utils/badges.js';
 
 // COMMUNITY REVIEWS — the live version of what used to be a placeholder.
 //
@@ -45,7 +46,7 @@ function readApproved(contentType, contentSlug) {
       key,
       supabase
         .from('reviews')
-        .select('id, rating, body, author_name, author_healer_slug, created_at')
+        .select('id, rating, body, author_name, author_healer_slug, author_official, created_at')
         .eq('content_type', contentType)
         .eq('content_slug', contentSlug)
         .order('created_at', { ascending: false })
@@ -162,7 +163,7 @@ function StarPicker({ value, onChange }) {
   );
 }
 
-function ReviewForm({ contentType, contentSlug, existing, profileName, onSaved }) {
+function ReviewForm({ contentType, contentSlug, existing, profileName, official, onSaved }) {
   const [rating, setRating] = useState(existing?.rating || 0);
   const [body, setBody] = useState(existing?.body || '');
   const [name, setName] = useState(existing?.author_name || profileName || '');
@@ -178,6 +179,12 @@ function ReviewForm({ contentType, contentSlug, existing, profileName, onSaved }
 
   const submit = async () => {
     if (rating === 0 || saving) return;
+    // "Spiritpedia" is reserved for Spiritpedia's own account. The database
+    // would save the review with no name; saying so here is kinder.
+    if (!official && reviewNameReserved(name)) {
+      setError('“Spiritpedia” is reserved for our own reviews. Please use your own name.');
+      return;
+    }
     setSaving(true);
     setError(null);
 
@@ -254,18 +261,25 @@ function ReviewForm({ contentType, contentSlug, existing, profileName, onSaved }
         <StarPicker value={rating} onChange={setRating} />
       </div>
 
-      <label className="mt-5 block">
-        <span className="text-xs font-semibold uppercase tracking-wider text-gray-500">
-          Your name
-        </span>
-        <input
-          type="text"
-          value={name}
-          onChange={(e) => setName(e.target.value)}
-          placeholder="How your name appears on the review"
-          className={`${inputClass} mt-1.5`}
-        />
-      </label>
+      {official ? (
+        <p className="mt-5 flex items-center gap-2 text-xs text-gray-400">
+          Posting as <span className="font-semibold text-white">Spiritpedia</span>
+          <span className={OFFICIAL_PILL}>✦ Official</span>
+        </p>
+      ) : (
+        <label className="mt-5 block">
+          <span className="text-xs font-semibold uppercase tracking-wider text-gray-500">
+            Your name
+          </span>
+          <input
+            type="text"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            placeholder="How your name appears on the review"
+            className={`${inputClass} mt-1.5`}
+          />
+        </label>
+      )}
 
       <label className="mt-4 block">
         <span className="text-xs font-semibold uppercase tracking-wider text-gray-500">
@@ -316,8 +330,13 @@ const STATUS_STYLES = {
   approved: 'border-emerald-500/40 bg-emerald-500/10 text-emerald-300',
 };
 
+// Spiritpedia's own reviews wear the Official badge, so they are never taken
+// for an ordinary reader's (reviews.author_official, migration 0023).
+const OFFICIAL_PILL =
+  'rounded-md bg-white px-2 py-0.5 text-[10px] font-bold uppercase tracking-wider text-[#4c1d95] shadow-sm';
+
 function ReviewCard({ review, status }) {
-  const name = review.author_name || 'A Spiritpedia member';
+  const name = review.author_official ? 'Spiritpedia' : review.author_name || 'A Spiritpedia member';
 
   return (
     <li className="border-t border-white/10 py-6 first:border-t-0">
@@ -355,6 +374,7 @@ function ReviewCard({ review, status }) {
         ) : (
           <span className="font-semibold text-gray-400">{name}</span>
         )}
+        {review.author_official && <span className={`ml-2 ${OFFICIAL_PILL}`}>✦ Official</span>}
         {review.created_at ? ` · ${formatDate(review.created_at)}` : ''}
       </p>
     </li>
@@ -368,6 +388,7 @@ export default function ReviewSection({ contentType, contentSlug }) {
   const [mine, setMine] = useState(undefined); // undefined = not checked, null = none
   const [signedIn, setSignedIn] = useState(null);
   const [profileName, setProfileName] = useState('');
+  const [official, setOfficial] = useState(false);
 
   const loadApproved = useCallback(() => {
     readApproved(contentType, contentSlug).then(setApproved);
@@ -386,24 +407,37 @@ export default function ReviewSection({ contentType, contentSlug }) {
     try {
       const { data: session } = await getSession();
       const userId = session?.user?.id;
-      if (!userId) return { signedIn: false, review: null, name: '' };
+      if (!userId) return { signedIn: false, review: null, name: '', official: false };
 
       const [{ data: review }, { data: profile }] = await Promise.all([
         supabaseAuth
           .from('reviews')
-          .select('id, rating, body, author_name, author_healer_slug, status, created_at')
+          .select('id, rating, body, author_name, author_healer_slug, author_official, status, created_at')
           .eq('user_id', userId)
           .eq('content_type', contentType)
           .eq('content_slug', contentSlug)
           .maybeSingle(),
-        supabaseAuth.from('user_profiles').select('full_name').eq('id', userId).maybeSingle(),
+        supabaseAuth.from('user_profiles').select('full_name, linked_healer_slug').eq('id', userId).maybeSingle(),
       ]);
 
-      return { signedIn: true, review: review || null, name: profile?.full_name || '' };
+      // Spiritpedia's own account posts as "Spiritpedia ✦ OFFICIAL": the
+      // database decides (reviews_pin_author, migration 0023); this only
+      // shapes the form to match.
+      let official = false;
+      if (profile?.linked_healer_slug) {
+        const { data: listing } = await supabase
+          .from('healers')
+          .select('official')
+          .eq('healer_slug', profile.linked_healer_slug)
+          .maybeSingle();
+        official = Boolean(listing?.official);
+      }
+
+      return { signedIn: true, review: review || null, name: profile?.full_name || '', official };
     } catch {
       // Treated as signed out. A reader who cannot be identified is offered
       // the sign-in line, which is the honest answer either way.
-      return { signedIn: false, review: null, name: '' };
+      return { signedIn: false, review: null, name: '', official: false };
     }
   }, [contentType, contentSlug]);
 
@@ -411,6 +445,7 @@ export default function ReviewSection({ contentType, contentSlug }) {
     setSignedIn(result.signedIn);
     setMine(result.review);
     setProfileName(result.name);
+    setOfficial(result.official);
   }, []);
 
   useEffect(() => {
@@ -479,6 +514,7 @@ export default function ReviewSection({ contentType, contentSlug }) {
             contentSlug={contentSlug}
             existing={mine}
             profileName={profileName}
+            official={official}
             onSaved={() => {
               loadApproved();
               resolveMine().then(applyMine);

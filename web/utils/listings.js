@@ -27,7 +27,7 @@ export function describedAsLabel(value) {
 // What the admin can make an application into. 'publisher' is not an
 // entity_type: approving one creates or links a publishers row instead.
 export const LISTING_TYPES = [
-  { value: 'individual', label: 'Practitioner' },
+  { value: 'individual', label: 'Individual' },
   { value: 'channel', label: 'Channel or podcast' },
   { value: 'app', label: 'App' },
   { value: 'organisation', label: 'Organisation' },
@@ -56,6 +56,13 @@ export function suggestedListingType(describedAs) {
 export function isPlatform(healer) {
   const t = healer?.entity_type;
   return t === 'channel' || t === 'app' || t === 'organisation';
+}
+
+// A publisher's "N authors": the people among its linked listings, never its
+// channels or apps. Reads the embed publisher_healers(healers(entity_type)).
+export function authorCount(publisher) {
+  const links = Array.isArray(publisher?.publisher_healers) ? publisher.publisher_healers : [];
+  return links.filter((link) => link?.healers && !isPlatform(link.healers)).length;
 }
 
 // Spiritpedia Official first, everything else in the order it came.

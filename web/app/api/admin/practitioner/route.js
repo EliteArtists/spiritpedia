@@ -1,6 +1,7 @@
 import { NextResponse } from 'next/server';
 import { adminClient, isAdminRequest, NOT_CONFIGURED } from '@/utils/supabaseAdmin';
 import { ENTITY_TYPES } from '@/utils/listings';
+import { firstNameFrom, sendClaimDecision, sendListingLive } from '@/utils/email';
 
 export const dynamic = 'force-dynamic';
 
@@ -28,6 +29,45 @@ const AVAILABILITY_LABELS = {
 const PLATFORM_AVAILABILITY = 'Worldwide';
 
 const TIERS = ['superhero', 'ascended_master', 'luminary', 'local_hero'];
+// Ascended Master is for people only (utils/badges.js).
+const PLATFORM_TIERS = ['superhero', 'luminary', 'local_hero'];
+
+// "Your listing is live" to the owner (utils/listingApproved.js). Never
+// throws and never undoes the approval: the response says whether it went,
+// and the admin's message says so.
+async function tellOwner({ email, fullName, listingName, listingPath }) {
+  if (!email) return false;
+  try {
+    const result = await sendListingLive({
+      email,
+      firstName: firstNameFrom(fullName),
+      listingName,
+      listingPath,
+    });
+    return Boolean(result?.sent);
+  } catch (err) {
+    console.error('[approve] listing live email failed:', err);
+    return false;
+  }
+}
+
+// A claimed listing approved: the claim approval email, never "live".
+async function tellClaimant({ email, fullName, listingName, listingPath }) {
+  if (!email) return false;
+  try {
+    const result = await sendClaimDecision({
+      email,
+      firstName: firstNameFrom(fullName),
+      decision: 'approved',
+      listingName,
+      listingPath,
+    });
+    return Boolean(result?.sent);
+  } catch (err) {
+    console.error('[approve] claim approved email failed:', err);
+    return false;
+  }
+}
 
 function slugify(value) {
   return (value || '')
@@ -87,7 +127,8 @@ export async function POST(request) {
   // unstyled badge across the whole site. 'publisher' is not an entity_type: it
   // makes a publishers row instead (migration 0020).
   const isPublisher = entityType === 'publisher';
-  if (!isPublisher && (!TIERS.includes(tier) || !ENTITY_TYPES.includes(entityType))) {
+  const allowedTiers = isPublisher || (entityType && entityType !== 'individual') ? PLATFORM_TIERS : TIERS;
+  if (!allowedTiers.includes(tier) || (!isPublisher && !ENTITY_TYPES.includes(entityType))) {
     return NextResponse.json({ error: 'invalid_tier_or_entity_type' }, { status: 400 });
   }
 
@@ -103,29 +144,48 @@ export async function POST(request) {
 
   // Already linked: approve in place rather than creating a second listing for
   // the same person. Pressing Approve twice is an ordinary slip.
+  const { data: authUser } = await supabase.auth.admin.getUserById(id);
+  const email = authUser?.user?.email || null;
+
   if (profile.linked_healer_slug || profile.linked_publisher_id) {
     const { error } = await supabase
       .from('user_profiles')
       .update({ verification_status: 'approved' })
       .eq('id', id);
     if (error) return NextResponse.json({ error: error.message }, { status: 500 });
+    // Already linked means a claim of a listing that was public all along: no
+    // "Your listing is live". The claim approval email says it is theirs now
+    // (utils/claimRequests.js, as for a claim request). Approve pressed on
+    // something already approved is not news, so no email (notified: null).
+    let notified = null;
+    if (profile.verification_status !== 'approved') {
+      const listing = profile.linked_healer_slug
+        ? await supabase.from('healers').select('name').eq('healer_slug', profile.linked_healer_slug).maybeSingle()
+        : await supabase.from('publishers').select('name, slug').eq('id', profile.linked_publisher_id).maybeSingle();
+      notified = await tellClaimant({
+        email,
+        fullName: profile.full_name,
+        listingName: listing.data?.name,
+        listingPath: profile.linked_healer_slug
+          ? `/healers/${profile.linked_healer_slug}`
+          : `/publishers/${listing.data?.slug || ''}`,
+      });
+    }
     return NextResponse.json({
       ok: true,
       healer_slug: profile.linked_healer_slug,
       publisher_id: profile.linked_publisher_id,
       reused: true,
+      notified,
     });
   }
-
-  const { data: authUser } = await supabase.auth.admin.getUserById(id);
-  const email = authUser?.user?.email || null;
 
   const name = (profile.full_name || '').trim();
   if (!name) {
     return NextResponse.json({ error: 'no_name', message: 'This profile has no name to publish.' }, { status: 400 });
   }
 
-  if (isPublisher) return approvePublisher(supabase, { id, profile, name, email, publisherId });
+  if (isPublisher) return approvePublisher(supabase, { id, profile, name, email, publisherId, tier });
 
   const healerSlug = await uniqueSlug(supabase, slugify(name));
   const availability =
@@ -173,26 +233,34 @@ export async function POST(request) {
     );
   }
 
-  return NextResponse.json({ ok: true, healer_slug: healerSlug });
+  const notified = await tellOwner({
+    email,
+    fullName: profile.full_name,
+    listingName: name,
+    listingPath: `/healers/${healerSlug}`,
+  });
+  return NextResponse.json({ ok: true, healer_slug: healerSlug, notified });
 }
 
 // A publisher: link an existing publishers row (chosen by the admin), or
 // create one from the application. The account is linked by
 // linked_publisher_id, which only the service role or a verified claim may
 // write (migration 0020).
-async function approvePublisher(supabase, { id, profile, name, email, publisherId }) {
+async function approvePublisher(supabase, { id, profile, name, email, publisherId, tier }) {
   let targetId = null;
   let slug = null;
+  let listingName = name;
 
   if (publisherId) {
     const { data: existing } = await supabase
       .from('publishers')
-      .select('id, slug, contact_email')
+      .select('id, slug, name, contact_email')
       .eq('id', publisherId)
       .maybeSingle();
     if (!existing) return NextResponse.json({ error: 'publisher_not_found' }, { status: 404 });
     targetId = existing.id;
     slug = existing.slug;
+    listingName = existing.name;
     // Fill a missing contact address; never replace one already published.
     if (!existing.contact_email && email) {
       await supabase.from('publishers').update({ contact_email: email }).eq('id', existing.id);
@@ -209,6 +277,7 @@ async function approvePublisher(supabase, { id, profile, name, email, publisherI
         logo_url: (profile.image_urls || []).find(Boolean) || null,
         subject_slugs: profile.subject_slugs || [],
         contact_email: email,
+        tier,
       })
       .select('id')
       .single();
@@ -228,5 +297,11 @@ async function approvePublisher(supabase, { id, profile, name, email, publisherI
     );
   }
 
-  return NextResponse.json({ ok: true, publisher_slug: slug });
+  const notified = await tellOwner({
+    email,
+    fullName: profile.full_name,
+    listingName,
+    listingPath: `/publishers/${slug}`,
+  });
+  return NextResponse.json({ ok: true, publisher_slug: slug, notified });
 }

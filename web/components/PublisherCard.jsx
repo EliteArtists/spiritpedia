@@ -1,6 +1,7 @@
 import CardImage from './CardImage.js';
 import FavoriteHeart from './FavoriteHeart.js';
 import { FAVORITE_KEYS } from '../utils/favorites.js';
+import ListingBadges from './ListingBadges.jsx';
 
 // Publishing house card for the homepage shelf.
 //
@@ -39,6 +40,8 @@ export default function PublisherCard({ publisher, authorCount = 0 }) {
 
         <div className="flex flex-1 flex-col p-4">
           <h3 className="text-sm font-semibold leading-snug text-white">{publisher.name}</h3>
+          {/* Its tier (Superstar, Shining Star, Rising Star) and ✓ Verified. */}
+          <ListingBadges listing={publisher} entityType="publisher" align="left" className="mt-2" />
           {meta && <p className="mt-1 text-xs text-gray-400">{meta}</p>}
           <span className="mt-4 inline-flex items-center gap-1.5 text-sm font-bold uppercase tracking-wider text-[#7c3aed] transition-colors group-hover:text-[#a78bfa]">
             View Publisher &rarr;

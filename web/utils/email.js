@@ -1,5 +1,6 @@
 import { getResend } from './resend.js';
 import { claimDecisionMessage } from './claimRequests.js';
+import { listingLiveMessage } from './listingApproved.js';
 
 // SERVER ONLY, because utils/resend.js is. Importing this from a client
 // component would put the SDK in a public bundle and leave RESEND_API_KEY
@@ -225,6 +226,21 @@ The Spiritpedia team`,
 export async function sendClaimDecision({ email, firstName, decision, listingName, listingPath }) {
   const message = claimDecisionMessage({
     decision,
+    firstName,
+    listingName,
+    listingUrl: `${SITE}${listingPath}`,
+    accountUrl: `${SITE}/account`,
+    supportEmail: ADMIN_EMAIL,
+  });
+  return sendEmail({ to: email, ...message });
+}
+
+/* ── 5c. LISTING LIVE ──────────────────────────────────────────────────── */
+
+// The admin approved someone's listing (/api/admin/practitioner). The wording
+// is in utils/listingApproved.js.
+export async function sendListingLive({ email, firstName, listingName, listingPath }) {
+  const message = listingLiveMessage({
     firstName,
     listingName,
     listingUrl: `${SITE}${listingPath}`,

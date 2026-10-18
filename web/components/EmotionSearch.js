@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useRef, useState } from 'react';
+import { Fragment, useEffect, useRef, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { supabase } from '../utils/supabase.js';
 import { backContextQuery } from '../utils/backContext.js';
@@ -18,6 +18,7 @@ import {
   MEDICAL_DISCLAIMER,
 } from '../utils/emotionSearchPatterns.js';
 import { trackSearch } from '../utils/activity.js';
+import { isPerson, typeLabel } from '../utils/badges.js';
 
 // Subject slugs are hyphenated db keys; these render as friendly labels. Anything
 // not special-cased is title-cased word by word.
@@ -250,8 +251,10 @@ function initials(name) {
   );
 }
 
-// Tiny tier glyph shown at the right edge of a healer row.
-function tierBadge(tier) {
+// Tiny tier glyph shown at the right edge of a healer row. Spiritpedia's own
+// listing has no tier: it wears the Official star.
+function tierBadge(tier, official) {
+  if (official) return { symbol: '✦', className: 'text-white' };
   if (tier === 'superhero') return { symbol: '★', className: 'text-[#78350f]' };
   if (tier === 'ascended_master') return { symbol: '✧', className: 'text-[#c9a84c]' };
   if (tier === 'luminary') return { symbol: '✦', className: 'text-violet-600' };
@@ -363,7 +366,7 @@ export default function EmotionSearch() {
         }),
         supabase
           .from('healers')
-          .select('id, name, healer_slug, tier, image_urls')
+          .select('id, name, healer_slug, tier, image_urls, entity_type, official')
           .ilike('name', `%${term}%`)
           .limit(4),
         supabase.from('books').select('id, title, slug, mock_cover_url').ilike('title', `%${term}%`).limit(4),
@@ -737,12 +740,20 @@ export default function EmotionSearch() {
               </>
             ) : hasUniversal ? (
               <>
-                {healers.length > 0 && (
-                  <>
-                    <div className={HEADER_CLASS}>HEALERS</div>
-                    {healers.map((h) => {
+                {/* People and platforms apart (utils/badges.js): a channel is
+                    never listed as a teacher. */}
+                {[
+                  { key: 'people', title: 'TEACHERS', items: healers.filter((h) => isPerson(h.entity_type)) },
+                  { key: 'platforms', title: 'CHANNELS', items: healers.filter((h) => !isPerson(h.entity_type)) },
+                ]
+                  .filter((group) => group.items.length > 0)
+                  .map((group) => (
+                  <Fragment key={group.key}>
+                    <div className={HEADER_CLASS}>{group.title}</div>
+                    {group.items.map((h) => {
                       const img = Array.isArray(h.image_urls) && h.image_urls[0] ? h.image_urls[0] : null;
-                      const badge = tierBadge(h.tier);
+                      const badge = tierBadge(h.tier, h.official);
+                      const type = typeLabel(h.entity_type);
                       return (
                         <div
                           key={`h-${h.id}`}
@@ -766,12 +777,13 @@ export default function EmotionSearch() {
                             </span>
                           )}
                           <span className="flex-1 text-white text-sm truncate">{h.name}</span>
+                          {type && <span className="text-[10px] font-bold uppercase tracking-wider text-gray-500">{type}</span>}
                           <span className={`text-sm ${badge.className}`}>{badge.symbol}</span>
                         </div>
                       );
                     })}
-                  </>
-                )}
+                  </Fragment>
+                ))}
 
                 {books.length > 0 && (
                   <>

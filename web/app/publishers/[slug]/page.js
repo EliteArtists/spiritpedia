@@ -6,6 +6,8 @@ import ContentShelf from '@/components/ContentShelf';
 import { buildMetadata, notFoundMetadata, pickImage } from '@/utils/seo';
 import { backContextQuery } from '@/utils/backContext';
 import TrackOpen from '@/components/TrackOpen';
+import ListingBadges from '@/components/ListingBadges';
+import { isPlatform } from '@/utils/listings';
 
 // Hourly ceiling on staleness — see the note in app/page.js.
 export const revalidate = 3600;
@@ -70,10 +72,13 @@ export default async function PublisherProfile({ params, searchParams }) {
   //    exist — image_urls/image_url carry the portrait.)
   const { data: links } = await supabase
     .from('publisher_healers')
-    .select('healer_id, healers (id, name, healer_slug, image_urls, image_url, tier)')
+    .select('healer_id, healers (id, name, healer_slug, image_urls, image_url, tier, entity_type)')
     .eq('publisher_id', publisher.id);
 
-  const authors = (links || []).map((row) => row.healers).filter(Boolean);
+  // People are its authors; a linked channel or app is listed apart.
+  const linked = (links || []).map((row) => row.healers).filter(Boolean);
+  const authors = linked.filter((h) => !isPlatform(h));
+  const channels = linked.filter(isPlatform);
 
   // Anything opened from here should offer its way back to THIS publisher
   // rather than the homepage — the same ?from=/?fromTitle= pair every other
@@ -147,6 +152,8 @@ export default async function PublisherProfile({ params, searchParams }) {
 
           <div className="text-center md:text-left">
             <h1 className="text-3xl md:text-5xl font-bold text-white">{publisher.name}</h1>
+            {/* Its tier and ✓ Verified (utils/badges.js, migration 0023). */}
+            <ListingBadges listing={publisher} entityType="publisher" size="profile" placement="below" align="left" className="mt-3" />
 
             {(publisher.founded_year || publisher.website_url) && (
               <div className="mt-2">
@@ -193,12 +200,18 @@ export default async function PublisherProfile({ params, searchParams }) {
           </div>
         </div>
 
-        {/* Linked healers */}
-        {authors.length > 0 && (
-          <div className="mb-12">
-            <span className="text-lg font-bold text-white mb-4 block">Our Authors</span>
+        {/* Linked listings: its authors, and apart from them any channels or
+            apps (utils/listings.js → isPlatform). */}
+        {[
+          { key: 'authors', title: 'Our Authors', list: authors },
+          { key: 'channels', title: 'Our Channels', list: channels },
+        ]
+          .filter((group) => group.list.length > 0)
+          .map((group) => (
+          <div key={group.key} className="mb-12">
+            <span className="text-lg font-bold text-white mb-4 block">{group.title}</span>
             <div className="flex gap-6 overflow-x-auto pb-2">
-              {authors.map((a) => {
+              {group.list.map((a) => {
                 const portrait = healerPortrait(a);
                 return (
                   <Link
@@ -227,7 +240,7 @@ export default async function PublisherProfile({ params, searchParams }) {
               })}
             </div>
           </div>
-        )}
+        ))}
 
         {/* Auto-curated books, one shelf per author. A single combined shelf
             buried every author but the few whose titles happened to sort first;

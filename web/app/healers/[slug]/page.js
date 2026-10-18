@@ -11,6 +11,8 @@ import ShareButton from '@/components/ShareButton';
 import { buildMetadata, notFoundMetadata, pickImage, SITE_URL } from '@/utils/seo';
 import { formatLifespan, LIFESPAN_BADGE_CLASS } from '@/utils/lifespan';
 import TrackOpen from '@/components/TrackOpen';
+import ListingBadges from '@/components/ListingBadges';
+import { actionLabel, actionUrl, isPerson, withScheme } from '@/utils/badges';
 
 // Hourly ceiling on staleness — see the note in app/page.js. Reading
 // searchParams for the back link already makes this route per-request, so this
@@ -120,70 +122,41 @@ function PhoneIcon() {
   );
 }
 
-// Tier badge — matched to the homepage/billboard motif. An unknown or NULL tier
-// gets a neutral "Teacher" badge rather than borrowing Local Hero's, so a tier
-// that reaches the database before the UI is visibly unstyled, not mislabelled.
-// Ascended Masters are the exception: their badge IS the lifespan ("1926 —
-// 2017" / "b. 1926"), and it is omitted entirely when no years are recorded.
-function TierBadge({ healer }) {
-  const { tier } = healer;
-  // Spiritpedia's own profile (healers.official, migration 0020).
-  if (healer.official) {
-    return (
-      <span className="inline-block rounded-full bg-white px-3 py-1 text-[11px] font-bold uppercase tracking-wider text-[#4c1d95] shadow-sm">
-        ✦ Spiritpedia Official
-      </span>
-    );
-  }
-  if (tier === 'superhero') {
-    return (
-      <span className="inline-block rounded-full bg-[#fef08a] px-3 py-1 text-[11px] font-bold uppercase tracking-wider text-[#78350f] shadow-sm">
-        Superhero
-      </span>
-    );
-  }
-  if (tier === 'ascended_master') {
+// Badges (utils/badges.js, migration 0023): tier, type, ✓ Verified or
+// ✦ Official, each explained by the star. Ascended Masters are the exception:
+// their badge IS the lifespan ("1926 — 2017" / "b. 1926"), omitted entirely
+// when no years are recorded.
+function ProfileBadges({ healer }) {
+  if (healer.tier === 'ascended_master' && !healer.official) {
     const lifespan = formatLifespan(healer);
-    return lifespan ? <span className={LIFESPAN_BADGE_CLASS}>{lifespan}</span> : null;
-  }
-  if (tier === 'luminary') {
     return (
-      <span className="inline-block rounded-full bg-violet-600 px-3 py-1 text-[11px] font-bold uppercase tracking-wider text-white shadow-sm">
-        Luminary
+      <span className="flex flex-wrap items-center gap-1.5">
+        {lifespan && <span className={LIFESPAN_BADGE_CLASS}>{lifespan}</span>}
+        <ListingBadges listing={healer} size="profile" placement="below" align="left" />
       </span>
     );
   }
-  if (tier === 'local_hero') {
-    return (
-      <span className="inline-block rounded-full bg-emerald-500 px-3 py-1 text-[11px] font-bold uppercase tracking-wider text-white shadow-sm">
-        Local Hero
-      </span>
-    );
-  }
-  return (
-    <span className="inline-block rounded-full bg-gray-500 px-3 py-1 text-[11px] font-bold uppercase tracking-wider text-white shadow-sm">
-      Teacher
-    </span>
-  );
+  return <ListingBadges listing={healer} size="profile" placement="below" align="left" />;
 }
 
 // Share card: name, opening of the bio, first portrait. og:type 'profile'
-// tells crawlers this is a person page. A missing slug yields a noindex head.
+// tells crawlers this is a person page; a channel, app or organisation is a
+// 'website'. A missing slug yields a noindex head.
 export async function generateMetadata({ params }) {
   const { slug } = await params;
   const { data: healer } = await supabase
     .from('healers')
-    .select('name, bio, image_urls, image_url')
+    .select('name, bio, image_urls, image_url, entity_type')
     .eq('healer_slug', slug)
     .single();
-  if (!healer) return notFoundMetadata('Healer');
+  if (!healer) return notFoundMetadata('Profile');
 
   return buildMetadata({
     title: healer.name,
     description: healer.bio,
     path: `/healers/${slug}`,
     image: pickImage(healer.image_urls?.[0], healer.image_url),
-    type: 'profile',
+    type: isPerson(healer.entity_type) ? 'profile' : 'website',
   });
 }
 
@@ -249,7 +222,10 @@ export default async function HealerProfile({ params, searchParams }) {
   // Up to 3 portraits feed the crossfade hero rotator.
   const portraits = Array.isArray(healer.image_urls) ? healer.image_urls.filter(Boolean).slice(0, 3) : [];
 
-  const firstName = healer.name?.split(' ')[0] || healer.name;
+  // "Book with Eckhart →" for a practitioner, "Visit {name} →" for everyone
+  // else (utils/badges.js).
+  const action = { label: actionLabel(healer), url: actionUrl(healer) };
+  const person = isPerson(healer.entity_type);
 
   // Every detail-page card on this profile carries the healer as its back-context,
   // so tapping a book/offering/resource and pressing back returns here, not home.
@@ -264,7 +240,9 @@ export default async function HealerProfile({ params, searchParams }) {
     { key: 'facebook', label: 'Facebook', url: healer.facebook_url, icon: FacebookIcon },
     { key: 'twitter', label: 'Twitter', url: healer.twitter_url, icon: TwitterIcon },
     { key: 'tiktok', label: 'TikTok', url: healer.tiktok_url, icon: TikTokIcon },
-  ].filter((link) => link.url);
+  ]
+    .map((link) => ({ ...link, url: withScheme(link.url) }))
+    .filter((link) => link.url);
 
   // The contact funnel is the Local Hero directory feature — it only appears when
   // the healer actually has an email, phone, or booking link on file. Ascended
@@ -272,7 +250,7 @@ export default async function HealerProfile({ params, searchParams }) {
   // booking button) is suppressed for them even if legacy contact data exists.
   const hasContact =
     healer.tier !== 'ascended_master' &&
-    Boolean(healer.contact_email || healer.contact_phone || healer.booking_url);
+    Boolean(healer.contact_email || healer.contact_phone || action.url);
 
   // NOTE ON THE BIO SCROLL BOX
   // The brief asked for a word-count trigger (>300 words → scroll). That was
@@ -315,7 +293,7 @@ export default async function HealerProfile({ params, searchParams }) {
               <h1 className="text-4xl font-bold text-white">{healer.name}</h1>
 
               <div className="mt-3">
-                <TierBadge healer={healer} />
+                <ProfileBadges healer={healer} />
               </div>
 
               {/* Social row — the same frosted-glass icon buttons as before,
@@ -368,7 +346,7 @@ export default async function HealerProfile({ params, searchParams }) {
                   than centred as it was when it spanned the page. */}
               {hasContact && (
                 <section className="mt-8 bg-[#111827] rounded-2xl p-6 shadow-xl">
-                  {(healer.city || healer.availability_type?.includes('Online')) && (
+                  {person && (healer.city || healer.availability_type?.includes('Online')) && (
                     <div className="flex flex-wrap gap-2 mb-5">
                       {healer.city && (
                         <span className="bg-indigo-950/60 text-indigo-300 text-xs px-3 py-1 rounded-full font-medium">
@@ -408,15 +386,15 @@ export default async function HealerProfile({ params, searchParams }) {
                     </div>
                   )}
 
-                  {/* Booking button — full-width purple CTA. */}
-                  {healer.booking_url && (
+                  {/* Booking (or Visit) button — full-width purple CTA. */}
+                  {action.url && (
                     <a
-                      href={healer.booking_url}
+                      href={action.url}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="w-full text-center py-3 bg-violet-600 hover:bg-violet-500 text-white font-bold text-sm rounded-xl shadow-lg transition-all hover:scale-[1.01] active:scale-95 block"
                     >
-                      Book with {firstName} &rarr;
+                      {action.label}
                     </a>
                   )}
                 </section>

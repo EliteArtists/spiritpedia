@@ -82,8 +82,11 @@ Admin → Inbox → the application.
 3. **Approve.** The listing goes live, and the owner is emailed "Your listing
    on Spiritpedia is live" with links to it and to their account page. The
    message at the top says whether the email went; if it didn't, tell them
-   yourself. Approving a resubmitted listing emails them again; pressing
-   Approve twice does not.
+   yourself. Pressing Approve twice sends nothing more.
+
+**Approving a claim** ("Approve claim", or a request in the Inbox): the
+listing was public already, so the owner gets "Your claim to … is approved",
+never "Your listing is live".
 
 ✓ Verified appears on the listing by itself.
 

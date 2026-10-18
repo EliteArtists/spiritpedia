@@ -74,9 +74,9 @@ export default async function LibraryPage() {
     // No is_featured filter: that flag curates the homepage shelf. If the
     // visitor saved a free resource, it belongs in their library either way.
     supabase.from('free_resources').select('*').eq('is_active', true).or(liveWindow),
-    // The embedded aggregate carries the author count, so the saved card reads
+    // The embed carries what the author count needs, so the saved card reads
     // identically to the one on the homepage.
-    supabase.from('publishers').select('*, publisher_healers(count)'),
+    supabase.from('publishers').select('*, publisher_healers(healers(entity_type))'),
   ]);
 
   const healers = healersRes.data || [];

@@ -6,13 +6,37 @@ import { QUEUE_TYPES, isIncomplete, timeAgo } from './queue.js';
 import { StatusPill } from './QueueTable.jsx';
 import { supabase } from '@/utils/supabase';
 import { LISTING_TYPES, describedAsLabel, inPersonFrom, suggestedListingType } from '@/utils/listings';
+import { PLATFORM_TIER_GUIDANCE, isPerson, tierOptions } from '@/utils/badges';
 
-const TIERS = [
-  { value: 'local_hero', label: 'Local Hero' },
-  { value: 'luminary', label: 'Luminary' },
-  { value: 'superhero', label: 'Superhero' },
-  { value: 'ascended_master', label: 'Ascended Master' },
-];
+// The tier dropdown names the tiers for the listing's type: Superhero,
+// Luminary, Local Hero for people; Superstar, Shining Star, Rising Star for
+// everyone else (utils/badges.js).
+function TierField({ entityType, tier, setTier, disabled }) {
+  const options = tierOptions(entityType);
+  const person = isPerson(entityType);
+  return (
+    <label className="text-[10px] font-bold uppercase tracking-wider text-slate-500">
+      Tier
+      <select
+        value={tier}
+        onChange={(e) => setTier(e.target.value)}
+        disabled={disabled}
+        className="mt-1 w-full rounded-lg border border-slate-700 bg-[#0a0f1d] px-3 py-2 text-sm font-normal normal-case tracking-normal text-white disabled:opacity-50"
+      >
+        {options.map((o) => (
+          <option key={o.value} value={o.value}>
+            {o.label}
+          </option>
+        ))}
+      </select>
+      {!person && (
+        <span className="mt-1.5 block text-[11px] font-normal normal-case leading-snug tracking-normal text-slate-500">
+          {PLATFORM_TIER_GUIDANCE.join(' · ')}
+        </span>
+      )}
+    </label>
+  );
+}
 
 
 /* ── LEFT PANE — the queue stays visible while you work ─────────────────── */
@@ -69,7 +93,12 @@ function ApplicationDetail({ item, busy, onDecision, onApproveAndNext, hasNext }
   const [tier, setTier] = useState('local_hero');
   // Pre-filled from what they said of themselves; "Not sure" or nothing leaves
   // it for the admin to choose (migration 0020).
-  const [entityType, setEntityType] = useState(() => suggestedListingType(p.described_as));
+  const [entityType, setEntityTypeRaw] = useState(() => suggestedListingType(p.described_as));
+  // Ascended Master is for people only: a channel falls back to Rising Star.
+  const setEntityType = (value) => {
+    setEntityTypeRaw(value);
+    if (!isPerson(value) && tier === 'ascended_master') setTier('local_hero');
+  };
   // A publisher: link one already listed, or '' to create one.
   const [publisherId, setPublisherId] = useState('');
   const [publishers, setPublishers] = useState([]);
@@ -186,8 +215,18 @@ function ApplicationDetail({ item, busy, onDecision, onApproveAndNext, hasNext }
               </option>
             ))}
           </select>
+          {/* Their own sign-up answer, to file them by. */}
+          <span className="mt-1.5 block text-[11px] font-normal normal-case leading-snug tracking-normal text-slate-500">
+            They described themselves as: {describedAsLabel(p.described_as) || 'no answer'}
+          </span>
         </label>
-        {isPublisher ? (
+        <TierField
+          entityType={entityType}
+          tier={tier}
+          setTier={setTier}
+          disabled={incomplete || !entityType}
+        />
+        {isPublisher && (
           <label className="text-[10px] font-bold uppercase tracking-wider text-slate-500">
             Publisher
             <select
@@ -204,22 +243,6 @@ function ApplicationDetail({ item, busy, onDecision, onApproveAndNext, hasNext }
               ))}
             </select>
           </label>
-        ) : (
-        <label className="text-[10px] font-bold uppercase tracking-wider text-slate-500">
-          Tier
-          <select
-            value={tier}
-            onChange={(e) => setTier(e.target.value)}
-            disabled={incomplete}
-            className="mt-1 w-full rounded-lg border border-slate-700 bg-[#0a0f1d] px-3 py-2 text-sm font-normal normal-case tracking-normal text-white disabled:opacity-50"
-          >
-            {TIERS.map((o) => (
-              <option key={o.value} value={o.value}>
-                {o.label}
-              </option>
-            ))}
-          </select>
-        </label>
         )}
       </div>
 

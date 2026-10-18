@@ -3,35 +3,11 @@
 import { Suspense, useCallback, useEffect, useState } from 'react';
 import { useRouter, useSearchParams } from 'next/navigation';
 import AuthShell from '@/components/AuthShell';
+import ListingBadges from '@/components/ListingBadges';
 import { supabase } from '@/utils/supabase';
 import { supabaseAuth, getUser } from '@/utils/supabaseAuth';
 
 const SETUP_PATH = '/auth/practitioner-setup';
-
-// Tier badges, matching the styling HealerCard uses on the shelves so the
-// profile a practitioner is being shown looks like the one visitors see.
-const TIER_BADGES = {
-  superhero: {
-    label: 'Superhero',
-    className: 'bg-amber-100 text-amber-600 border border-amber-300',
-  },
-  luminary: { label: 'Luminary', className: 'bg-violet-600 text-white' },
-  local_hero: { label: 'Local Hero', className: 'bg-emerald-500 text-white' },
-  ascended_master: { label: 'Ascended Master', className: 'bg-[#fef08a] text-[#78350f]' },
-};
-
-function TierBadge({ tier }) {
-  // An unrecognised or NULL tier gets the same neutral badge the cards use,
-  // rather than borrowing another tier's colours and mislabelling the profile.
-  const badge = TIER_BADGES[tier] || { label: 'Teacher', className: 'bg-gray-500 text-white' };
-  return (
-    <span
-      className={`inline-block rounded-full px-3 py-1 text-[10px] font-bold uppercase tracking-wider ${badge.className}`}
-    >
-      {badge.label}
-    </span>
-  );
-}
 
 function ClaimForm() {
   const router = useRouter();
@@ -69,15 +45,22 @@ function ClaimForm() {
       const { data } = isPublisher
         ? await supabase
             .from('publishers')
-            .select('name, slug, logo_url')
+            .select('name, slug, logo_url, tier, verified')
             .eq('slug', slug)
             .maybeSingle()
             .then(({ data: p }) => ({
-              data: p && { name: p.name, healer_slug: p.slug, image_url: p.logo_url, publisher: true },
+              data: p && {
+                name: p.name,
+                healer_slug: p.slug,
+                image_url: p.logo_url,
+                tier: p.tier,
+                verified: p.verified,
+                entity_type: 'publisher',
+              },
             }))
         : await supabase
             .from('healers')
-            .select('name, healer_slug, tier, image_urls, image_url, city, country')
+            .select('name, healer_slug, tier, entity_type, verified, official, image_urls, image_url, city, country')
             .eq('healer_slug', slug)
             .maybeSingle();
 
@@ -156,13 +139,8 @@ function ClaimForm() {
         <p className="mt-5 text-xl font-bold text-white">{healer.name}</p>
         {place && <p className="mt-1 text-xs text-gray-500">{place}</p>}
         <div className="mt-3">
-          {healer.publisher ? (
-            <span className="inline-block rounded-full bg-gray-500 px-3 py-1 text-[10px] font-bold uppercase tracking-wider text-white">
-              Publisher
-            </span>
-          ) : (
-            <TierBadge tier={healer.tier} />
-          )}
+          {/* The badges visitors see on the listing (utils/badges.js). */}
+          <ListingBadges listing={healer} size="profile" align="left" className="justify-center" />
         </div>
       </div>
 

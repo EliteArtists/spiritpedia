@@ -13,6 +13,7 @@ import LibrarySignupNudge from './LibrarySignupNudge.jsx';
 import SubjectPills from './SubjectPills.js';
 import VideoPlayer from './VideoPlayer.js';
 import { FAVORITE_KEYS, FAVORITES_EVENT, readFavorites } from '../utils/favorites.js';
+import { authorCount, isPlatform } from '../utils/listings.js';
 
 // My Library — the same streaming shelf language as the homepage, but every shelf
 // is drawn from what this visitor actually saved. No billboard: the library is a
@@ -166,7 +167,16 @@ export default function LibraryView({
               <ContentShelf
                 title="Saved Healers"
                 subtitle="Your Practitioners"
-                items={bySubject(saved.healers)}
+                items={bySubject(saved.healers.filter((h) => !isPlatform(h)))}
+                renderItem={(healer) => <HealerCard healer={healer} />}
+                itemWidthClass="w-[260px]"
+              />
+
+              {/* Channels, apps and organisations apart from the teachers. */}
+              <ContentShelf
+                title="Saved Channels"
+                subtitle="Channels, Apps & Organisations"
+                items={bySubject(saved.healers.filter(isPlatform))}
                 renderItem={(healer) => <HealerCard healer={healer} />}
                 itemWidthClass="w-[260px]"
               />
@@ -180,7 +190,7 @@ export default function LibraryView({
                 renderItem={(publisher) => (
                   <PublisherCard
                     publisher={publisher}
-                    authorCount={publisher.publisher_healers?.[0]?.count ?? 0}
+                    authorCount={authorCount(publisher)}
                   />
                 )}
                 itemWidthClass="w-[260px]"

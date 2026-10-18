@@ -2,6 +2,8 @@ import HealerCard from './HealerCard.js';
 import HeroBillboard from './HeroBillboard.js';
 import ContentShelf from './ContentShelf.js';
 import PublisherCard from './PublisherCard.jsx';
+import { Tipped } from './ListingBadges.jsx';
+import { TIER_TIPS } from '../utils/badges.js';
 import HomeMasthead from './HomeMasthead.jsx';
 import ExploreMore from './ExploreMore.jsx';
 import HomeTabs from './HomeTabs.jsx';
@@ -17,7 +19,7 @@ import { SITE_URL, DEFAULT_TITLE } from '../utils/seo.js';
 // every visitor. utils/supabase.js exists precisely to be stateless, and this
 // was the one place that bypassed it.
 import { supabase } from '../utils/supabase.js';
-import { isPlatform, officialFirst } from '../utils/listings.js';
+import { authorCount, isPlatform, officialFirst } from '../utils/listings.js';
 
 const DEFAULT_AVATAR = 'https://placehold.co/400x400?text=Spiritpedia';
 
@@ -44,12 +46,12 @@ export default async function HomePage({ initialSubjectSlug, initialSearch = '' 
   const [subjectsRes, healersRes, publishersRes] = await Promise.all([
     supabase.from('subjects').select('*').order('name', { ascending: true }),
     supabase.from('healers').select('*'),
-    // The embedded aggregate counts the publisher_healers junction rows per
-    // publisher in the same round trip, so the card can say "18 authors"
-    // without a second query or pulling the join table down whole.
+    // The embed brings each publisher's linked listings' types in the same
+    // round trip, so the card can say "18 authors", counting people only
+    // (utils/listings.js → authorCount).
     supabase
       .from('publishers')
-      .select('*, publisher_healers(count)')
+      .select('*, publisher_healers(healers(entity_type))')
       .order('name', { ascending: true }),
   ]);
 
@@ -214,9 +216,11 @@ export default async function HomePage({ initialSubjectSlug, initialSearch = '' 
           <ContentShelf
             title="Worldwide"
             badge={
-              <span className="inline-block px-3 py-1 text-xs font-bold uppercase tracking-wider bg-[#fef08a] text-[#78350f] rounded-full mb-2 shadow-sm">
-                SUPERHERO
-              </span>
+              <Tipped tip={TIER_TIPS['Superhero']} label="Superhero" placement="below" align="left">
+                <span className="inline-block px-3 py-1 text-xs font-bold uppercase tracking-wider bg-[#fef08a] text-[#78350f] rounded-full mb-2 shadow-sm">
+                  SUPERHERO
+                </span>
+              </Tipped>
             }
             items={superheroes}
             seeAllHref={seeAll}
@@ -227,9 +231,11 @@ export default async function HomePage({ initialSubjectSlug, initialSearch = '' 
           <ContentShelf
             title="Rising Voices"
             badge={
-              <span className="inline-block px-3 py-1 text-xs font-bold uppercase tracking-wider bg-violet-600 text-white rounded-full mb-2 shadow-sm">
-                LUMINARY
-              </span>
+              <Tipped tip={TIER_TIPS['Luminary']} label="Luminary" placement="below" align="left">
+                <span className="inline-block px-3 py-1 text-xs font-bold uppercase tracking-wider bg-violet-600 text-white rounded-full mb-2 shadow-sm">
+                  LUMINARY
+                </span>
+              </Tipped>
             }
             items={luminaries}
             seeAllHref={seeAll}
@@ -239,9 +245,11 @@ export default async function HomePage({ initialSubjectSlug, initialSearch = '' 
 
           <NearYouShelf
             badge={
-              <span className="inline-block px-3 py-1 text-xs font-bold uppercase tracking-wider bg-emerald-500 text-white rounded-full mb-2 shadow-sm">
-                LOCAL HERO
-              </span>
+              <Tipped tip={TIER_TIPS['Local Hero']} label="Local Hero" placement="below" align="left">
+                <span className="inline-block px-3 py-1 text-xs font-bold uppercase tracking-wider bg-emerald-500 text-white rounded-full mb-2 shadow-sm">
+                  LOCAL HERO
+                </span>
+              </Tipped>
             }
             practitioners={localHeroes}
             places={nearPlaces}
@@ -273,7 +281,7 @@ export default async function HomePage({ initialSubjectSlug, initialSearch = '' 
             renderItem={(publisher) => (
               <PublisherCard
                 publisher={publisher}
-                authorCount={publisher.publisher_healers?.[0]?.count ?? 0}
+                authorCount={authorCount(publisher)}
               />
             )}
             itemWidthClass="w-[260px]"

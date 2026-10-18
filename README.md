@@ -634,11 +634,11 @@ an email was sent (§16).
 | :--- | :--- | :--- |
 | 1 | Explorer welcome | `/api/email/explorer-welcome` (website: `ensureProfile` on a new explorer; app: after "I'm exploring") |
 | 2 | Practitioner welcome | `/api/email/practitioner-welcome` |
-| 2a | Listing live (to the owner, on every approval: practitioner, channel, app, organisation, publisher; wording in `utils/listingApproved.js`) | `/api/admin/practitioner` |
+| 2a | Listing live (to the owner of a new listing: practitioner, channel, app, organisation, publisher; wording in `utils/listingApproved.js`). A claimed listing gets 6a instead | `/api/admin/practitioner` |
 | 3 | Review received | `/api/email/review-received` |
 | 4–5 | Review approved / rejected | `/api/admin/reviews` |
 | 6 | Review reported (to love@) | `/api/email/review-reported` |
-| 6a–6b | Claim approved / rejected (to the claimant; wording in `utils/claimRequests.js`) | `/api/admin/claim-request` |
+| 6a–6b | Claim approved / rejected (to the claimant; wording in `utils/claimRequests.js`) | `/api/admin/claim-request`; 6a also from `/api/admin/practitioner` ("Approve claim") |
 | 7–11 | Healer outreach journey, emails 1–5 | `/api/admin/journey/start` (1); the `journey-emails` cron (2–5) |
 
 Sign-in and change-email codes are Supabase Auth's (templates in the

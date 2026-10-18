@@ -11,6 +11,7 @@ import { useAdminData } from '@/components/admin/AdminData';
 import CardImage from '@/components/CardImage';
 import ConfirmDelete from '@/components/admin/ConfirmDelete';
 import { supabase } from '@/utils/supabase';
+import { PLATFORM_TIER_GUIDANCE, isPerson, tierOptions } from '@/utils/badges';
 
 // ONE HEALER RECORD — read, and edit the fields that are safe to edit here.
 //
@@ -21,12 +22,6 @@ import { supabase } from '@/utils/supabase';
 
 const TABS = ['Profile', 'Content', 'Outreach', 'Admin Notes'];
 
-const TIERS = [
-  { value: 'superhero', label: 'Superhero' },
-  { value: 'ascended_master', label: 'Ascended Master' },
-  { value: 'luminary', label: 'Luminary' },
-  { value: 'local_hero', label: 'Local Hero' },
-];
 
 const ENTITY_TYPES = [
   { value: 'individual', label: 'Individual' },
@@ -81,9 +76,8 @@ const EDITABLE = [
   'image_urls',
   'image_url',
   'is_famous',
-  // Spiritpedia's own profile (migration 0020): the Official badge, first in
-  // Explore These Channels. Only the admin can set it.
-  'official',
+  // No 'official' or 'verified': both set themselves from the account linked to
+  // the listing (migration 0023), and the database ignores anything sent.
 ];
 
 const inputClass =
@@ -1317,12 +1311,23 @@ export default function AdminHealerRecordPage({ params }) {
                   className={inputClass}
                 >
                   <option value="">No tier</option>
-                  {TIERS.map((t) => (
+                  {/* Named for the listing's type (utils/badges.js). */}
+                  {tierOptions(draft.entity_type).map((t) => (
                     <option key={t.value} value={t.value}>
                       {t.label}
                     </option>
                   ))}
                 </select>
+                {!isPerson(draft.entity_type) && (
+                  <span className="mt-1.5 block text-[11px] leading-snug text-slate-500">
+                    {PLATFORM_TIER_GUIDANCE.join(' · ')}
+                  </span>
+                )}
+                {healer.official && (
+                  <span className="mt-1.5 block text-[11px] leading-snug text-slate-500">
+                    Spiritpedia’s own listing shows ✦ OFFICIAL and no tier.
+                  </span>
+                )}
               </LabelledField>
 
               <LabelledField label="Entity type">
@@ -1381,15 +1386,14 @@ export default function AdminHealerRecordPage({ params }) {
                 <span className={labelClass}>Famous name</span>
               </label>
 
-              <label className="flex items-center gap-2 self-end pb-2">
-                <input
-                  type="checkbox"
-                  checked={Boolean(draft.official)}
-                  onChange={(e) => set('official', e.target.checked)}
-                  className="h-4 w-4 accent-[#7c3aed]"
-                />
-                <span className={labelClass}>Spiritpedia Official</span>
-              </label>
+              {/* Automatic, never ticked (migration 0023): ✓ Verified once an
+                  approved account is linked; ✦ OFFICIAL for love@spiritpedia.co's. */}
+              <p className="self-end pb-2 text-[11px] leading-snug text-slate-500">
+                <span className={labelClass}>Badges</span>
+                <br />
+                {healer.official ? '✦ Official' : healer.verified ? '✓ Verified' : 'Not claimed'}
+                <span className="text-slate-600"> · set automatically</span>
+              </p>
 
               <div className="sm:col-span-2">
                 <LabelledField label="Bio">

@@ -4,6 +4,7 @@ import { useCallback, useEffect, useRef, useState } from 'react';
 import Link from 'next/link';
 import { supabaseAuth } from '../utils/supabaseAuth.js';
 import DeleteAccount from './DeleteAccount.jsx';
+import { tierName } from '../utils/badges.js';
 
 const TABS = ['Profile', 'Content', 'Settings'];
 const BUCKET = 'practitioner-images';
@@ -71,12 +72,6 @@ function Collapsible({ title, defaultOpen, children }) {
   );
 }
 
-const TIER_WORDS = {
-  superhero: 'Superhero',
-  ascended_master: 'Ascended Master',
-  luminary: 'Luminary',
-  local_hero: 'Local Hero',
-};
 
 /* ── PROFILE ───────────────────────────────────────────────────────────── */
 
@@ -310,7 +305,10 @@ function ProfileTab({ healer, onSaved }) {
         </p>
         <dl className="mt-4 grid grid-cols-1 gap-4 sm:grid-cols-2">
           <Managed label="Name" value={healer.name} />
-          <Managed label="Tier" value={TIER_WORDS[healer.tier] || healer.tier} />
+          <Managed
+            label="Tier"
+            value={healer.official ? 'Official' : tierName(healer.tier, healer.entity_type) || healer.tier}
+          />
           <Managed label="Availability" value={healer.availability_type} />
           <Managed
             label="Subjects"
