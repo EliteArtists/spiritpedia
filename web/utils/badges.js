@@ -52,15 +52,18 @@ export function typeLabel(entityType) {
   return TYPES[entityType] || null;
 }
 
-// What the star says when a badge is tapped. Keyed by the tier's name.
+// What the star says when a badge is tapped. Keyed by the tier's name. The
+// top two tiers say the same for people and platforms.
+const WORLDWIDE = 'A worldwide reach, with over a million followers across social media.';
+const FUTURE = 'Hundreds of thousands of followers: the superstars of the future.';
+
 export const TIER_TIPS = {
-  Superhero: 'One of the most influential spiritual teachers in the world.',
-  Luminary: 'A respected and established spiritual teacher.',
+  Superhero: WORLDWIDE,
+  Luminary: FUTURE,
   'Local Hero': 'A practitioner available in your area.',
   'Ascended Master': 'A timeless teacher whose legacy lives on.',
-  Superstar:
-    'A household name: one of the most-followed voices in spirituality, with a million or more people following along.',
-  'Shining Star': 'Established and much loved, with hundreds of thousands of people following along.',
+  Superstar: WORLDWIDE,
+  'Shining Star': FUTURE,
   'Rising Star': 'A rising voice, and worth finding early: under a hundred thousand followers, for now.',
 };
 
@@ -71,12 +74,23 @@ export function verifiedTip(name) {
 export const OFFICIAL_TIP =
   'This is my home: Spiritpedia’s own page. Our videos, our reviews, and where you can always find us.';
 
-// Beside the admin's tier dropdown, for anything that is not a person.
+// Beside the admin's tier dropdown: the tips' own measures.
 export const PLATFORM_TIER_GUIDANCE = [
-  'Superstar: a household name, ~1M+ followers',
-  'Shining Star: established, ~100k–1M',
-  'Rising Star: growing, under ~100k',
+  'Superstar: worldwide reach, 1M+ followers across social media',
+  'Shining Star: hundreds of thousands of followers',
+  'Rising Star: growing, under 100k',
 ];
+
+export const PEOPLE_TIER_GUIDANCE = [
+  'Superhero: worldwide reach, 1M+ followers across social media',
+  'Luminary: hundreds of thousands of followers',
+  'Local Hero: a practitioner available in their area',
+];
+
+// The guidance for this kind of listing.
+export function tierGuidance(entityType) {
+  return isPerson(entityType) ? PEOPLE_TIER_GUIDANCE : PLATFORM_TIER_GUIDANCE;
+}
 
 // The admin's tier dropdown for this kind of listing.
 export function tierOptions(entityType) {

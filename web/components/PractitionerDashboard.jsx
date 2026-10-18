@@ -369,11 +369,11 @@ function ContentTab({ content, claimed }) {
           whole — so anything added here would be live on the site and submitted
           to Google before anyone had looked at it. That needs a staging table
           and a review queue, which is its own piece of work. */}
-      <p className="rounded-2xl border border-white/10 bg-[#111827] p-5 text-sm leading-relaxed text-gray-400">
-        {claimed
-          ? `This is everything listed under your profile. Editing is coming soon — to add or change something in the meantime, email ${SUPPORT_EMAIL}.`
-          : `Your content is managed by the Spiritpedia team. To suggest additions or changes, contact ${SUPPORT_EMAIL}.`}
-      </p>
+      {claimed && (
+        <p className="rounded-2xl border border-white/10 bg-[#111827] p-5 text-sm leading-relaxed text-gray-400">
+          {`This is everything listed under your profile. Editing is coming soon — to add or change something in the meantime, email ${SUPPORT_EMAIL}.`}
+        </p>
+      )}
 
       {total === 0 && <p className="text-sm text-gray-500">Nothing is listed under your profile yet.</p>}
 

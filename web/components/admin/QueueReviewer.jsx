@@ -6,14 +6,13 @@ import { QUEUE_TYPES, isIncomplete, timeAgo } from './queue.js';
 import { StatusPill } from './QueueTable.jsx';
 import { supabase } from '@/utils/supabase';
 import { LISTING_TYPES, describedAsLabel, inPersonFrom, suggestedListingType } from '@/utils/listings';
-import { PLATFORM_TIER_GUIDANCE, isPerson, tierOptions } from '@/utils/badges';
+import { isPerson, tierGuidance, tierOptions } from '@/utils/badges';
 
 // The tier dropdown names the tiers for the listing's type: Superhero,
 // Luminary, Local Hero for people; Superstar, Shining Star, Rising Star for
 // everyone else (utils/badges.js).
 function TierField({ entityType, tier, setTier, disabled }) {
   const options = tierOptions(entityType);
-  const person = isPerson(entityType);
   return (
     <label className="text-[10px] font-bold uppercase tracking-wider text-slate-500">
       Tier
@@ -29,11 +28,9 @@ function TierField({ entityType, tier, setTier, disabled }) {
           </option>
         ))}
       </select>
-      {!person && (
-        <span className="mt-1.5 block text-[11px] font-normal normal-case leading-snug tracking-normal text-slate-500">
-          {PLATFORM_TIER_GUIDANCE.join(' · ')}
-        </span>
-      )}
+      <span className="mt-1.5 block text-[11px] font-normal normal-case leading-snug tracking-normal text-slate-500">
+        {tierGuidance(entityType).join(' · ')}
+      </span>
     </label>
   );
 }

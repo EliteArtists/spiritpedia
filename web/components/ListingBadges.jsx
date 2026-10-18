@@ -108,8 +108,12 @@ export default function ListingBadges({
   placement = 'above',
   align = 'right',
   className = '',
+  kinds = null,
 }) {
-  const badges = listingBadges(listing, entityType ?? listing?.entity_type);
+  // `kinds`: only these (a card puts its tier top left, its type bottom right).
+  const badges = listingBadges(listing, entityType ?? listing?.entity_type).filter(
+    (b) => !kinds || kinds.includes(b.kind)
+  );
   if (!badges.length) return null;
   return (
     <span className={`flex flex-wrap items-center gap-1.5 ${className}`}>

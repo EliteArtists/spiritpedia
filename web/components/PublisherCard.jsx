@@ -28,7 +28,16 @@ export default function PublisherCard({ publisher, authorCount = 0 }) {
         {/* A light panel so dark wordmarks stay legible — most publisher logos
             are black-on-white, which would disappear against the card's own
             ground. The logo is padded right so it never sits under the heart. */}
-        <div className="flex aspect-[16/9] w-full items-center justify-center bg-white p-5 pr-12">
+        <div className="relative flex aspect-[16/9] w-full items-center justify-center bg-white p-5 pr-12">
+          {/* Top left, as on every card: its tier (Superstar, Shining Star,
+              Rising Star) and ✓ Verified. The heart owns top right. */}
+          <ListingBadges
+            listing={publisher}
+            entityType="publisher"
+            placement="below"
+            align="left"
+            className="absolute top-3 left-3 z-10"
+          />
           <CardImage
             src={publisher.logo_url}
             alt={publisher.name}
@@ -40,8 +49,6 @@ export default function PublisherCard({ publisher, authorCount = 0 }) {
 
         <div className="flex flex-1 flex-col p-4">
           <h3 className="text-sm font-semibold leading-snug text-white">{publisher.name}</h3>
-          {/* Its tier (Superstar, Shining Star, Rising Star) and ✓ Verified. */}
-          <ListingBadges listing={publisher} entityType="publisher" align="left" className="mt-2" />
           {meta && <p className="mt-1 text-xs text-gray-400">{meta}</p>}
           <span className="mt-4 inline-flex items-center gap-1.5 text-sm font-bold uppercase tracking-wider text-[#7c3aed] transition-colors group-hover:text-[#a78bfa]">
             View Publisher &rarr;

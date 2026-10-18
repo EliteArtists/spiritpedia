@@ -119,29 +119,34 @@ export default function HealerCard({ healer, portrait, heightClass = 'h-72', rot
             className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
           />
         )}
-        {/* Ascended Masters wear their lifespan, not a tier label, and it sits
-            top-left of the card (the heart owns top-right) rather than in the
-            baseline bar. No pill at all when no years are recorded. */}
-        {isAscended && formatLifespan(healer) && (
-          <span className="absolute top-3 left-3 z-10">
+        {/* Top left (the heart owns top right): the tier with ✓ Verified, or
+            ✦ Official, each explained by the star (utils/badges.js). Ascended
+            Masters wear their lifespan instead; no pill when no years are
+            recorded. */}
+        <span className="absolute top-3 left-3 right-14 z-10 flex flex-wrap items-center gap-1.5">
+          {isAscended && formatLifespan(healer) && (
             <TierTooltip tier={healer.tier} placement="below">
               <span className={LIFESPAN_BADGE_CLASS}>{formatLifespan(healer)}</span>
             </TierTooltip>
-          </span>
-        )}
+          )}
+          <ListingBadges
+            listing={healer}
+            kinds={['tier', 'verified', 'official']}
+            placement="below"
+            align="left"
+          />
+        </span>
 
-        {/* Floating text overlay anchored to the baseline. Name left + tier pill
-            right for every tier except Ascended Masters, whose name sits alone
-            on the right. */}
+        {/* Floating text overlay anchored to the baseline. Name left, and a
+            channel's, app's or organisation's type bottom right. Ascended
+            Masters' names sit alone on the right. */}
         <div
           className={`absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/95 via-black/60 to-transparent p-4 pt-16 flex items-center z-10 ${
             isAscended ? 'justify-end text-right' : 'justify-between'
           }`}
         >
           <h3 className="text-white font-bold text-lg drop-shadow-sm">{healer.name}</h3>
-          {/* Tier, type, ✓ Verified or ✦ Official, each explained by the star
-              (utils/badges.js, migration 0023). Spiritpedia shows no tier. */}
-          <ListingBadges listing={healer} className="justify-end" />
+          <ListingBadges listing={healer} kinds={['type']} className="justify-end shrink-0" />
         </div>
       </a>
 

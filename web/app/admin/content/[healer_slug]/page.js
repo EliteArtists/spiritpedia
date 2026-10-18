@@ -11,7 +11,7 @@ import { useAdminData } from '@/components/admin/AdminData';
 import CardImage from '@/components/CardImage';
 import ConfirmDelete from '@/components/admin/ConfirmDelete';
 import { supabase } from '@/utils/supabase';
-import { PLATFORM_TIER_GUIDANCE, isPerson, tierOptions } from '@/utils/badges';
+import { tierGuidance, tierOptions } from '@/utils/badges';
 
 // ONE HEALER RECORD — read, and edit the fields that are safe to edit here.
 //
@@ -1318,11 +1318,9 @@ export default function AdminHealerRecordPage({ params }) {
                     </option>
                   ))}
                 </select>
-                {!isPerson(draft.entity_type) && (
-                  <span className="mt-1.5 block text-[11px] leading-snug text-slate-500">
-                    {PLATFORM_TIER_GUIDANCE.join(' · ')}
-                  </span>
-                )}
+                <span className="mt-1.5 block text-[11px] leading-snug text-slate-500">
+                  {tierGuidance(draft.entity_type).join(' · ')}
+                </span>
                 {healer.official && (
                   <span className="mt-1.5 block text-[11px] leading-snug text-slate-500">
                     Spiritpedia’s own listing shows ✦ OFFICIAL and no tier.

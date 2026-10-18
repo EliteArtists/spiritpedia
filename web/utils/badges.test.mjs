@@ -31,10 +31,13 @@ test('every tier has the star’s tip, in the approved words', () => {
   for (const name of ['Superhero', 'Luminary', 'Local Hero', 'Superstar', 'Shining Star', 'Rising Star']) {
     assert.ok(TIER_TIPS[name], name);
   }
-  assert.equal(
-    TIER_TIPS.Superstar,
-    'A household name: one of the most-followed voices in spirituality, with a million or more people following along.'
-  );
+  const worldwide = 'A worldwide reach, with over a million followers across social media.';
+  const future = 'Hundreds of thousands of followers: the superstars of the future.';
+  assert.equal(TIER_TIPS.Superstar, worldwide);
+  assert.equal(TIER_TIPS.Superhero, worldwide);
+  assert.equal(TIER_TIPS['Shining Star'], future);
+  assert.equal(TIER_TIPS.Luminary, future);
+  assert.equal(TIER_TIPS['Local Hero'], 'A practitioner available in your area.');
   assert.equal(TIER_TIPS['Rising Star'], 'A rising voice, and worth finding early: under a hundred thousand followers, for now.');
   assert.equal(
     verifiedTip('Jane Doe'),
