@@ -4,6 +4,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
+import '../../data/badges.dart';
+import '../../shared/widgets/tier_badge.dart';
 import '../../core/config.dart';
 import '../../core/format/dates.dart';
 import '../../core/links/open_link.dart';
@@ -261,6 +263,16 @@ class ReviewCard extends ConsumerWidget {
                       )
                     : name,
               ),
+              // Spiritpedia's own reviews wear ✦ OFFICIAL, so they are never
+              // taken for an ordinary reader's.
+              if (review.authorOfficial) ...[
+                const SizedBox(width: 8),
+                const ListingBadgeRow(
+                  name: 'Spiritpedia',
+                  tier: null,
+                  official: true,
+                ),
+              ],
               if (review.createdAt != null)
                 Text(
                   ' · ${shortDate(review.createdAt!.toLocal())}',
@@ -340,6 +352,7 @@ class _WriteOrSignIn extends StatelessWidget {
             target: target,
             existing: data.mine,
             profileName: data.profileName,
+            official: data.official,
           ),
         ),
         icon: Icon(editing ? Icons.edit_outlined : Icons.rate_review_outlined),
@@ -389,11 +402,16 @@ class ReviewForm extends ConsumerStatefulWidget {
     required this.target,
     this.existing,
     this.profileName,
+    this.official = false,
   });
 
   final ReviewTarget target;
   final Review? existing;
   final String? profileName;
+
+  /// Spiritpedia's own account: no name to type, it posts as Spiritpedia
+  /// ✦ OFFICIAL.
+  final bool official;
 
   @override
   ConsumerState<ReviewForm> createState() => _ReviewFormState();
@@ -424,6 +442,16 @@ class _ReviewFormState extends ConsumerState<ReviewForm> {
     if (_rating == 0 || _saving) return;
     if (userId == null) {
       setState(() => _error = 'Your session has ended. Please sign in again.');
+      return;
+    }
+    // "Spiritpedia" is reserved for our own reviews. The database would save
+    // the review with no name; saying so here is kinder.
+    if (!widget.official && reviewNameReserved(_name.text)) {
+      setState(
+        () => _error =
+            '“Spiritpedia” is reserved for our own reviews. Please use your '
+            'own name.',
+      );
       return;
     }
     setState(() {
@@ -512,15 +540,38 @@ class _ReviewFormState extends ConsumerState<ReviewForm> {
               onChanged: (n) => setState(() => _rating = n),
             ),
             const SizedBox(height: 18),
-            const _Label('YOUR NAME'),
-            TextField(
-              key: const ValueKey('review-name'),
-              controller: _name,
-              maxLength: 80,
-              textCapitalization: TextCapitalization.words,
-              decoration: _decoration('How your name appears on the review')
-                  .copyWith(counterText: ''),
-            ),
+            if (widget.official)
+              const Wrap(
+                key: ValueKey('review-as-official'),
+                crossAxisAlignment: WrapCrossAlignment.center,
+                children: [
+                  Text(
+                    'Posting as ',
+                    style: TextStyle(fontSize: 13, color: SpColors.textMuted),
+                  ),
+                  Text(
+                    'Spiritpedia',
+                    style: TextStyle(fontSize: 13, fontWeight: FontWeight.w700),
+                  ),
+                  SizedBox(width: 8),
+                  ListingBadgeRow(
+                    name: 'Spiritpedia',
+                    tier: null,
+                    official: true,
+                  ),
+                ],
+              )
+            else ...[
+              const _Label('YOUR NAME'),
+              TextField(
+                key: const ValueKey('review-name'),
+                controller: _name,
+                maxLength: 80,
+                textCapitalization: TextCapitalization.words,
+                decoration: _decoration('How your name appears on the review')
+                    .copyWith(counterText: ''),
+              ),
+            ],
             const SizedBox(height: 12),
             const _Label('YOUR REVIEW (OPTIONAL)'),
             TextField(

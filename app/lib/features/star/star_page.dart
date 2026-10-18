@@ -9,7 +9,6 @@ import '../home/subject_pills.dart';
 import '../menu/app_menu.dart';
 import '../search/feeling_placeholder.dart';
 import 'star_layer.dart';
-import 'tier_tips.dart';
 
 /// The frame Home, Videos and Books share, as the website's pages do: the top
 /// bar (My Library and Account on the right), the search box with the star
@@ -52,28 +51,9 @@ class _StarPageState extends ConsumerState<StarPage> implements TabStarTarget {
   bool _docked = false;
   bool _flying = false;
   StarLayerState? _layer;
-  final _noLayer = ValueNotifier<String?>(null); // only without a StarLayer
-  final _frame = GlobalKey(debugLabel: 'star page');
-
-  /// Where the star is in this page, for a tier tip to hang from it.
-  Rect? _tipStar;
-
-  bool get _hasTips => widget.tabPath == '/';
-
-  void _placeTip() {
-    WidgetsBinding.instance.addPostFrameCallback((_) {
-      if (!mounted) return;
-      final frame = _frame.currentContext?.findRenderObject();
-      final star = (_docked ? _dockStar : _boxStar).currentContext
-          ?.findRenderObject();
-      Rect? rect;
-      if (frame is RenderBox && star is RenderBox && star.hasSize) {
-        final topLeft = star.localToGlobal(Offset.zero, ancestor: frame);
-        rect = topLeft & star.size;
-      }
-      if (rect != _tipStar) setState(() => _tipStar = rect);
-    });
-  }
+  final _noLayer = ValueNotifier<Set<String>>(
+    const {},
+  ); // only without a StarLayer
 
   @override
   void initState() {
@@ -161,27 +141,19 @@ class _StarPageState extends ConsumerState<StarPage> implements TabStarTarget {
       to: () => layer.rectOfKey(dock ? _dockStar : _boxStar),
     );
     if (landed && mounted) setState(() => _flying = false);
-    if (_hasTips) _placeTip();
   }
 
   @override
   Widget build(BuildContext context) {
-    final incoming = _layer?.incoming ?? _noLayer;
-    if (_hasTips) {
-      ref.listen(tierTipProvider, (_, tip) {
-        if (tip != null) _placeTip();
-      });
-    }
+    final held = _layer?.held ?? _noLayer;
     return Scaffold(
       body: SafeArea(
         bottom: false,
-        child: ValueListenableBuilder<String?>(
-          valueListenable: incoming,
-          builder: (context, arriving, _) {
-            final hidden = _flying || arriving == widget.tabPath;
-            final tipStar = _tipStar;
+        child: ValueListenableBuilder<Set<String>>(
+          valueListenable: held,
+          builder: (context, heldTabs, _) {
+            final hidden = _flying || heldTabs.contains(widget.tabPath);
             return Stack(
-              key: _frame,
               children: [
                 Positioned.fill(
                   child: RefreshIndicator(
@@ -226,21 +198,6 @@ class _StarPageState extends ConsumerState<StarPage> implements TabStarTarget {
                     ),
                   ),
                 ),
-                // While a tier tip is open, a touch anywhere closes it — and
-                // only closes it, so it never opens what was underneath.
-                if (_hasTips && ref.watch(tierTipProvider) != null)
-                  Positioned.fill(
-                    child: GestureDetector(
-                      key: const ValueKey('tier-tip-close'),
-                      behavior: HitTestBehavior.opaque,
-                      onTap: ref.read(tierTipProvider.notifier).close,
-                      onPanDown: (_) =>
-                          ref.read(tierTipProvider.notifier).close(),
-                    ),
-                  ),
-                // The tip hangs from the star, never while it flies.
-                if (_hasTips && tipStar != null && !hidden)
-                  TierTipBubble(star: tipStar),
               ],
             );
           },

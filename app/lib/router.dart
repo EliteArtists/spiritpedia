@@ -8,6 +8,8 @@ import 'features/detail/offering_screen.dart';
 import 'features/detail/publisher_screen.dart';
 import 'features/detail/teacher_screen.dart';
 import 'features/detail/video_screen.dart';
+import 'data/providers.dart';
+import 'features/home/explore_more.dart';
 import 'features/home/home_screen.dart';
 import 'features/interests/interests_picker.dart';
 import 'features/library/library_screen.dart';
@@ -112,6 +114,20 @@ GoRouter buildRouter({
       parentNavigatorKey: _rootKey,
       path: '/search',
       redirect: (context, state) => '/feel',
+    ),
+    // An Explore More section's See all (?subject= the one chosen on
+    // Discover). An unknown section is Free Resources.
+    GoRoute(
+      parentNavigatorKey: _rootKey,
+      path: '/explore/:section',
+      builder: (context, state) => ExploreAllScreen(
+        section:
+            ExploreSection.values
+                .where((s) => s.name == state.pathParameters['section'])
+                .firstOrNull ??
+            ExploreSection.freeResources,
+        subject: state.uri.queryParameters['subject'],
+      ),
     ),
     for (final (path, screen) in <(String, Widget Function(String))>[
       ('/healers/:slug', (slug) => TeacherScreen(slug: slug)),

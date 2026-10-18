@@ -103,7 +103,9 @@ class SupabaseSearchRepository implements SearchRepository {
     final results = await Future.wait([
       _db
           .from('healers')
-          .select('id, name, healer_slug, tier, image_urls')
+          .select(
+            'id, name, healer_slug, tier, entity_type, official, verified, image_urls',
+          )
           .ilike('name', like)
           .limit(4),
       _db

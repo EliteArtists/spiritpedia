@@ -16,6 +16,7 @@ import 'package:spiritpedia/features/account/display_name.dart';
 import 'package:spiritpedia/features/area/area.dart';
 import 'package:spiritpedia/features/area/location_source.dart';
 import 'package:spiritpedia/features/star/conductor.dart';
+import 'package:spiritpedia/features/home/explore_more.dart';
 import 'package:spiritpedia/features/home/subject_pills.dart';
 import 'package:spiritpedia/features/interests/interests.dart';
 import 'package:spiritpedia/features/interests/interests_picker.dart';
@@ -118,6 +119,13 @@ List<String> _pills(WidgetTester tester) => [
   ))
     t.data ?? '',
 ];
+
+const _freeResource = FreeResource(
+  id: 'f1',
+  slug: 'a-free-guide',
+  title: 'A Free Guide',
+  subjectSlugs: ['meditation'],
+);
 
 void main() {
   // A phone-width screen, tall enough that the shelves under the billboard are
@@ -469,23 +477,6 @@ void main() {
         await tester.pump(TailorStarFrame.linger);
         await tester.pumpAndSettle();
       });
-
-      testWidgets('saving closes Explore More\'s shelves again', (
-        tester,
-      ) async {
-        await start(tester);
-        final container = ProviderScope.containerOf(
-          tester.element(find.byType(SpiritpediaApp)),
-        );
-        container
-            .read(exploreMoreOpenedProvider.notifier)
-            .open(ExploreSection.courses);
-        await openTailor(tester);
-        final save = find.byKey(const ValueKey('tailor-save'));
-        await tester.tap(save);
-        await tester.pumpAndSettle();
-        expect(container.read(exploreMoreOpenedProvider), isEmpty);
-      });
     });
 
     testWidgets('a swipe to the right puts the menu away', (tester) async {
@@ -691,7 +682,12 @@ void main() {
     testWidgets('Explore More has no Books & Literature: Books has its tab', (
       tester,
     ) async {
-      await start(tester);
+      await tester.pumpWidget(
+        _app(
+          content: FakeContentRepository()..featured = const [_freeResource],
+        ),
+      );
+      await tester.pump();
       await tester.scrollUntilVisible(
         find.text('Free Resources'),
         300,
@@ -700,6 +696,75 @@ void main() {
       expect(find.text('Free Resources'), findsOneWidget);
       expect(find.text('Books & Literature'), findsNothing);
     });
+  });
+
+  testWidgets('Explore More: a real shelf for every section, each fetched '
+      'only as it comes near; one fetch for all four offering shelves; See '
+      'all opens the whole section', (tester) async {
+    // A phone's height, so the bottom of Discover starts off screen.
+    tester.view.physicalSize = const Size(1290, 2796);
+    tester.view.devicePixelRatio = 3;
+    final content = FakeContentRepository()
+      ..featured = const [_freeResource]
+      ..moreOfferings = const [
+        Offering(
+          id: 'o3',
+          slug: 'monthly-circle',
+          title: 'Monthly Circle',
+          productType: 'membership',
+        ),
+      ];
+    await tester.pumpWidget(_app(content: content));
+    await tester.pump();
+    await tester.pump(const Duration(milliseconds: 100));
+    expect(content.featuredCalls, 0);
+    expect(content.offeringsCalls, 0);
+    expect(find.text('EXPLORE MORE'), findsNothing); // no boxes any more
+
+    final scrollable = find.byType(Scrollable).first;
+    await tester.scrollUntilVisible(
+      find.text('Free Resources'),
+      300,
+      scrollable: scrollable,
+    );
+    await tester.pumpAndSettle();
+    expect(content.featuredCalls, 1);
+    expect(find.text('A Free Guide'), findsOneWidget);
+    for (final title in [
+      'Courses & Programmes',
+      'Retreats & Live Events',
+      'Memberships',
+    ]) {
+      await tester.scrollUntilVisible(
+        find.text(title),
+        300,
+        scrollable: scrollable,
+      );
+    }
+    await tester.pumpAndSettle();
+    expect(content.offeringsCalls, 1); // four shelves, one fetch
+    expect(content.featuredCalls, 1); // kept, not fetched again
+    expect(find.text('Monthly Circle'), findsOneWidget);
+    // Downloads has nothing: no shelf, never an empty one.
+    expect(find.text('Downloads & Audio'), findsNothing);
+
+    await tester.scrollUntilVisible(
+      find.text('Courses & Programmes'),
+      -300,
+      scrollable: scrollable,
+    );
+    final courses = find.ancestor(
+      of: find.text('Courses & Programmes'),
+      matching: find.byType(Shelf),
+    );
+    final seeAll = find.descendant(of: courses, matching: find.text('See all'));
+    await tester.ensureVisible(seeAll);
+    await tester.pumpAndSettle();
+    await tester.tap(seeAll);
+    await tester.pumpAndSettle();
+    expect(find.byType(ExploreAllScreen), findsOneWidget);
+    expect(find.text('Breath Course'), findsOneWidget);
+    expect(find.text('Go deeper'), findsOneWidget);
   });
 
   group('your area and the star\'s questions', () {
@@ -774,7 +839,8 @@ void main() {
 
     testWidgets('the 3rd visit, signed in: the star asks to learn; "Yes, '
         'learn" turns it on (migration 0021)', (tester) async {
-      final account = FakeAccountService()..restoreSession('seeker@example.com');
+      final account = FakeAccountService()
+        ..restoreSession('seeker@example.com');
       final conductor = MemoryConductorStore(visitCount: 2);
       await tester.pumpWidget(_app(account: account, conductor: conductor));
       await tester.pump();
@@ -792,6 +858,98 @@ void main() {
       await tester.pumpAndSettle();
       expect(find.byKey(const ValueKey('star-tray')), findsNothing);
     });
+
+    // There is only ever one star: resting stars showing, plus any in flight.
+    int starsShowing(WidgetTester tester) =>
+        tester
+            .widgetList<AnimatedOpacity>(
+              find.ancestor(
+                of: find.byType(StarSprite),
+                matching: find.byType(AnimatedOpacity),
+              ),
+            )
+            .where((o) => o.opacity == 1)
+            .length +
+        tester.widgetList(find.byType(SlipstreamFrame)).length;
+
+    bool trayStarShowing(WidgetTester tester) =>
+        tester
+            .widget<AnimatedOpacity>(
+              find.descendant(
+                of: find.byKey(const ValueKey('star-tray')),
+                matching: find.byType(AnimatedOpacity),
+              ),
+            )
+            .opacity ==
+        1;
+
+    for (final (device, size) in [
+      ('iPhone', const Size(1290, 9000)),
+      ('iPad', const Size(2048, 9000)),
+    ]) {
+      testWidgets('$device: one star, even when the star comes home from a '
+          'page just as it is time to ask; it leaves home, asks, and flies '
+          'back', (tester) async {
+        tester.view.physicalSize = size;
+        tester.view.devicePixelRatio = device == 'iPad' ? 2 : 3;
+        final account = FakeAccountService()
+          ..restoreSession('seeker@example.com');
+        await tester.pumpWidget(
+          _app(
+            account: account,
+            conductor: MemoryConductorStore(visitCount: 2),
+          ),
+        );
+        await tester.pump();
+        expect(starsShowing(tester), 1);
+        // A page opened, and closed just before the star's 3 seconds: its
+        // flight home is still going when the moment comes.
+        GoRouter.of(tester.element(find.byType(PillTabBar)))
+            .push('/books/the-power-of-now');
+        await tester.pump();
+        await tester.pump(const Duration(milliseconds: 2500));
+        await tester.pageBack();
+        await tester.pump();
+        for (var i = 0; i < 180; i++) {
+          await tester.pump(const Duration(milliseconds: 50));
+          expect(starsShowing(tester), 1, reason: 'frame $i');
+        }
+        await tester.pumpAndSettle();
+        expect(find.byKey(const ValueKey('star-ask-learning')), findsOneWidget);
+        expect(trayStarShowing(tester), isTrue);
+        expect(starsShowing(tester), 1); // on the tray; the box is empty
+
+        // Something else letting go of the star (the intro landing, a flight
+        // between pages ending) never shows it while the tray has it.
+        final layer = tester.state<StarLayerState>(find.byType(StarLayer));
+        final other = Object();
+        layer.hold(other, '/');
+        layer.release(other);
+        await tester.pump();
+        expect(starsShowing(tester), 1);
+
+        // Nor does switching tabs under the tray.
+        await tester.tap(
+          find.descendant(
+            of: find.byType(PillTabBar),
+            matching: find.text('Videos'),
+          ),
+        );
+        await tester.pumpAndSettle();
+        expect(starsShowing(tester), 1);
+
+        // "Not now": it flies back, and rests in the search box again.
+        await tester.tap(find.byKey(const ValueKey('star-not-now')));
+        await tester.pump();
+        await tester.pump(const Duration(milliseconds: 80));
+        expect(find.byType(SlipstreamFrame), findsOneWidget);
+        expect(starsShowing(tester), 1);
+        await tester.pumpAndSettle();
+        expect(find.byKey(const ValueKey('star-tray')), findsNothing);
+        expect(starsShowing(tester), 1);
+        expect(layer.busy, isFalse);
+      });
+    }
 
     testWidgets('the 3rd visit, signed out: the star does not ask to learn', (
       tester,
@@ -1097,9 +1255,8 @@ void main() {
       }
     });
 
-    testWidgets("a badge on a teacher's card still opens the teacher", (
-      tester,
-    ) async {
+    testWidgets('a badge on a card: the star explains it, and the card '
+        'stays shut', (tester) async {
       await start(tester);
       final cardBadge = find
           .descendant(
@@ -1108,9 +1265,153 @@ void main() {
           )
           .first;
       await tester.tap(cardBadge);
+      await pause(tester);
+      expect(tip, findsOneWidget);
+      expect(find.text('Superhero'), findsOneWidget);
+      expect(find.text('Worldwide'), findsOneWidget); // still on Discover
+    });
+
+    testWidgets('a channel wears its tier by a platform\'s name, beside its '
+        'type, and the star explains it', (tester) async {
+      await start(tester);
+      final card = find.ancestor(
+        of: find.text('A Channel'),
+        matching: find.byType(HealerCard),
+      );
+      await tester.ensureVisible(card);
       await tester.pumpAndSettle();
+      expect(
+        find.descendant(of: card, matching: find.text('SHINING STAR')),
+        findsOneWidget,
+      );
+      expect(
+        find.descendant(of: card, matching: find.text('CHANNEL')),
+        findsOneWidget,
+      );
+      expect(
+        find.descendant(of: card, matching: find.text('LUMINARY')),
+        findsNothing,
+      );
+      await tester.tap(
+        find.descendant(of: card, matching: find.text('SHINING STAR')),
+      );
+      await pause(tester);
+      expect(
+        find.text(
+          'Established and much loved, with hundreds of thousands of people '
+          'following along.',
+        ),
+        findsOneWidget,
+      );
+    });
+
+    final spiritpedia = FakeContentRepository.healer(
+      8,
+      'spiritpedia',
+      'Spiritpedia',
+      'local_hero', // stored, never shown
+      entity: 'channel',
+      official: true,
+      verified: true,
+      booking: 'https://www.spiritpedia.co',
+    );
+    final verifiedTeacher = FakeContentRepository.healer(
+      9,
+      'jane-doe',
+      'Jane Doe',
+      'luminary',
+      verified: true,
+      booking: 'https://janedoe.example',
+    );
+
+    testWidgets('Spiritpedia: ✦ OFFICIAL and no tier, first in Explore These '
+        'Channels', (tester) async {
+      await tester.pumpWidget(
+        _app(content: FakeContentRepository(extraHealers: [spiritpedia])),
+      );
+      await tester.pump();
+      await tester.pump(const Duration(milliseconds: 100));
+      final shelf = find.ancestor(
+        of: find.text('Explore These Channels'),
+        matching: find.byType(Shelf),
+      );
+      await tester.ensureVisible(shelf);
+      await tester.pumpAndSettle();
+      final cards = tester
+          .widgetList<HealerCard>(
+            find.descendant(of: shelf, matching: find.byType(HealerCard)),
+          )
+          .map((c) => c.healer.slug)
+          .toList();
+      expect(cards.first, 'spiritpedia');
+      final card = find.ancestor(
+        of: find.text('Spiritpedia'),
+        matching: find.byType(HealerCard),
+      );
+      expect(
+        find.descendant(of: card, matching: find.text('✦ OFFICIAL')),
+        findsOneWidget,
+      );
+      expect(
+        find.descendant(of: card, matching: find.text('RISING STAR')),
+        findsNothing,
+      );
+      expect(
+        find.descendant(of: card, matching: find.text('✓ VERIFIED')),
+        findsNothing,
+      );
+    });
+
+    testWidgets('Spiritpedia\'s page: Visit, never Book with; its badge says '
+        'this is the star\'s home', (tester) async {
+      await tester.pumpWidget(
+        _app(content: FakeContentRepository(extraHealers: [spiritpedia])),
+      );
+      await tester.pump();
+      GoRouter.of(tester.element(find.byType(PillTabBar)))
+          .push('/healers/spiritpedia');
+      await tester.pumpAndSettle();
+      expect(find.text('✦ OFFICIAL'), findsOneWidget);
+      expect(find.text('Visit Spiritpedia →'), findsOneWidget);
+      expect(find.textContaining('Book with'), findsNothing);
+      await tester.tap(find.text('✦ OFFICIAL'));
+      await pause(tester);
+      expect(tip, findsOneWidget);
+      expect(
+        find.text(
+          'This is my home: Spiritpedia’s own page. Our videos, our reviews, '
+          'and where you can always find us.',
+        ),
+        findsOneWidget,
+      );
+      // A tap anywhere closes it, and the page stays.
+      await tester.tapAt(const Offset(200, 600));
+      await pause(tester);
       expect(tip, findsNothing);
-      expect(find.text('Worldwide'), findsNothing); // on the teacher's page
+      expect(find.text('Visit Spiritpedia →'), findsOneWidget);
+    });
+
+    testWidgets('a claimed teacher: ✓ Verified beside the tier, explained by '
+        'the star; booked by first name', (tester) async {
+      await tester.pumpWidget(
+        _app(content: FakeContentRepository(extraHealers: [verifiedTeacher])),
+      );
+      await tester.pump();
+      GoRouter.of(tester.element(find.byType(PillTabBar)))
+          .push('/healers/jane-doe');
+      await tester.pumpAndSettle();
+      expect(find.text('LUMINARY'), findsOneWidget);
+      expect(find.text('✓ VERIFIED'), findsOneWidget);
+      expect(find.text('Book with Jane →'), findsOneWidget);
+      await tester.tap(find.text('✓ VERIFIED'));
+      await pause(tester);
+      expect(
+        find.text(
+          'This page is run by Jane Doe themselves. They’ve confirmed it’s '
+          'theirs, so what you see here comes straight from them.',
+        ),
+        findsOneWidget,
+      );
     });
   });
 

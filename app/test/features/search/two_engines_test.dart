@@ -518,21 +518,32 @@ void main() {
     });
   });
 
-  testWidgets('a channel wears "Channel", never a teacher\'s tier', (
-    tester,
-  ) async {
+  testWidgets('a channel wears its tier, named for platforms, beside its '
+      'type; a teacher, the teacher\'s name for it', (tester) async {
     await tester.pumpWidget(
-      const MaterialApp(
-        home: Column(
-          children: [
-            HealerBadge(tier: 'superhero', entityType: 'channel'),
-            HealerBadge(tier: 'superhero', entityType: 'app'),
-            HealerBadge(tier: 'superhero'),
-          ],
+      const ProviderScope(
+        child: MaterialApp(
+          home: Column(
+            children: [
+              ListingBadgeRow(
+                name: 'Chan',
+                tier: 'superhero',
+                entityType: 'channel',
+              ),
+              ListingBadgeRow(
+                name: 'An app',
+                tier: 'luminary',
+                entityType: 'app',
+              ),
+              ListingBadgeRow(name: 'Teacher', tier: 'superhero'),
+            ],
+          ),
         ),
       ),
     );
+    expect(find.text('SUPERSTAR'), findsOneWidget);
     expect(find.text('CHANNEL'), findsOneWidget);
+    expect(find.text('SHINING STAR'), findsOneWidget);
     expect(find.text('APP'), findsOneWidget);
     expect(find.text('SUPERHERO'), findsOneWidget);
   });

@@ -3,9 +3,12 @@ import 'package:spiritpedia/data/models.dart';
 
 /// Fixed content for widget tests — no network.
 class FakeContentRepository implements ContentRepository {
-  FakeContentRepository({this.fail = false});
+  FakeContentRepository({this.fail = false, this.extraHealers = const []});
 
   final bool fail;
+
+  /// More listings for one test (Spiritpedia's own, a verified teacher…).
+  final List<Healer> extraHealers;
 
   static Healer healer(
     int id,
@@ -18,6 +21,10 @@ class FakeContentRepository implements ContentRepository {
     int? died,
     int? place,
     String? availability,
+    bool official = false,
+    bool verified = false,
+    String? booking,
+    String? website,
   }) => Healer(
     id: id,
     slug: slug,
@@ -31,6 +38,10 @@ class FakeContentRepository implements ContentRepository {
     deathYear: died,
     placeId: place,
     availabilityType: availability,
+    official: official,
+    verified: verified,
+    bookingUrl: booking,
+    websiteUrl: website,
   );
 
   final List<Healer> allHealers = [
@@ -109,7 +120,7 @@ class FakeContentRepository implements ContentRepository {
   @override
   Future<List<Healer>> healers() async {
     _check();
-    return allHealers;
+    return [...allHealers, ...extraHealers];
   }
 
   @override
@@ -138,12 +149,19 @@ class FakeContentRepository implements ContentRepository {
   List<FreeResource> featured = const [];
   List<Offering> moreOfferings = const [];
 
+  /// How often Explore More's two fetches were made.
+  int featuredCalls = 0;
+  int offeringsCalls = 0;
+
   @override
-  Future<List<FreeResource>> featuredFreeResources({String? subject}) async =>
-      featured;
+  Future<List<FreeResource>> featuredFreeResources({String? subject}) async {
+    featuredCalls++;
+    return featured;
+  }
 
   @override
   Future<List<Offering>> liveOfferings({String? subject}) async => [
+    if (++offeringsCalls < 0) throw StateError('never'),
     const Offering(id: 'o1', slug: 'breath-course', title: 'Breath Course'),
     const Offering(
       id: 'o2',

@@ -117,10 +117,11 @@ class SupabaseContentRepository implements ContentRepository {
 
   @override
   Future<List<Publisher>> publishers() async {
-    // The embedded aggregate counts each publisher's authors in one round trip.
+    // The embed brings each publisher's linked listings' types in one round
+    // trip, so its author count is people only (Publisher.fromJson).
     final rows = await _db
         .from('publishers')
-        .select('*, publisher_healers(count)')
+        .select('*, publisher_healers(healers(entity_type))')
         .order('name');
     return [for (final r in rows) Publisher.fromJson(r)];
   }

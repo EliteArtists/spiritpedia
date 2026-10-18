@@ -3,6 +3,7 @@ import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
+import '../../data/badges.dart';
 import '../../core/links/open_link.dart';
 import '../../core/safety/emotion_safety.dart';
 import '../../core/supabase_providers.dart';
@@ -985,7 +986,13 @@ class ResultTile extends ConsumerWidget {
       Healer h => (
         thumb(h.imageUrls.firstOrNull, h.name, round: true),
         h.name,
-        h.isPlatform ? h.platformLabel : 'Teacher',
+        // What it is, and its tier by the right name (data/badges.dart).
+        h.official
+            ? '✦ Official'
+            : [
+                h.isPlatform ? h.platformLabel : 'Teacher',
+                ?tierName(h.tier, h.entityType),
+              ].join(' · '),
         '/healers/${h.slug}',
       ),
       Video v => (

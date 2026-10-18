@@ -107,25 +107,6 @@ enum ExploreSection {
   final String subtitle;
 }
 
-/// Which sections the visitor has opened, in the order they opened them.
-/// Held in memory only, so every launch starts with them all closed.
-class ExploreMoreOpened extends Notifier<List<ExploreSection>> {
-  @override
-  List<ExploreSection> build() => const [];
-
-  void open(ExploreSection section) {
-    if (!state.contains(section)) state = [...state, section];
-  }
-
-  /// All closed again — after Tailor Spiritpedia is saved.
-  void closeAll() => state = const [];
-}
-
-final exploreMoreOpenedProvider =
-    NotifierProvider<ExploreMoreOpened, List<ExploreSection>>(
-      ExploreMoreOpened.new,
-    );
-
 /// Live offerings for a subject, fetched once and split three ways — courses,
 /// retreats and downloads all come from the same `courses` table.
 final _liveOfferingsProvider = FutureProvider.family<List<Offering>, String?>(

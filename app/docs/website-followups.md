@@ -5,6 +5,10 @@ Line numbers are as of October 2026 (app builds 1.0.0 (5) to (7)).
 
 ## Channels and apps mixed in with teachers
 
+**Fixed on the website, 18 October 2026** (with the badges, migration 0023):
+every item below except the minor ones. Channels keep their tier, named
+Superstar, Shining Star or Rising Star, beside their type. Kept for the record.
+
 The `healers` table holds teachers (`entity_type` `individual` or NULL) and
 platforms (`channel`, `app`). Only the homepage tells them apart
 (`components/HomePageContent.js:99-101`); no other public page reads

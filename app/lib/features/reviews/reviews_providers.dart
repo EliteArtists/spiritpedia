@@ -20,6 +20,7 @@ class ReviewsData {
     this.signedIn = false,
     this.profileName,
     this.banned = false,
+    this.official = false,
   });
 
   final List<Review> approved;
@@ -29,6 +30,9 @@ class ReviewsData {
   final bool signedIn;
   final String? profileName;
   final bool banned;
+
+  /// Signed in as Spiritpedia's own account.
+  final bool official;
 
   int get count => approved.length;
 
@@ -57,10 +61,11 @@ final reviewsProvider = FutureProvider.autoDispose
           .approved(target)
           .catchError((_) => <Review>[]);
       if (userId == null) return ReviewsData(approved: approved);
-      final (mine, name, banned) = await (
+      final (mine, name, banned, official) = await (
         service.mine(userId, target).catchError((_) => null),
         service.profileName(userId).catchError((_) => null),
         service.postingBanned().catchError((_) => false),
+        service.postsAsOfficial(userId).catchError((_) => false),
       ).wait;
       return ReviewsData(
         approved: approved,
@@ -68,6 +73,7 @@ final reviewsProvider = FutureProvider.autoDispose
         signedIn: true,
         profileName: name,
         banned: banned,
+        official: official,
       );
     });
 

@@ -181,6 +181,77 @@ void main() {
     },
   );
 
+  testWidgets('Spiritpedia\'s own review: named Spiritpedia, wearing '
+      '✦ OFFICIAL, never mistaken for a reader\'s', (tester) async {
+    reviews.addApproved(
+      _book,
+      const Review(
+        id: 3,
+        rating: 5,
+        body: 'One of our favourites.',
+        authorName: 'Spiritpedia',
+        authorHealerSlug: 'spiritpedia',
+        authorOfficial: true,
+      ),
+      author: 'official-id',
+    );
+    await pumpBook(tester);
+    final row = find.ancestor(
+      of: find.text('Spiritpedia'),
+      matching: find.byType(Row),
+    );
+    expect(
+      find.descendant(of: row.first, matching: find.text('✦ OFFICIAL')),
+      findsOneWidget,
+    );
+    // Ordinary readers' names wear nothing.
+    expect(find.text('✦ OFFICIAL'), findsOneWidget);
+  });
+
+  testWidgets('"Spiritpedia" is reserved: anyone else is asked to use their '
+      'own name, and nothing is saved', (tester) async {
+    reviews.profileNames[_me] = 'Spiritpedia';
+    await pumpBook(tester, signedIn: true);
+    await tester.tap(find.byKey(const ValueKey('write-review')));
+    await tester.pumpAndSettle();
+    await tester.tap(find.byKey(const ValueKey('rate-5')));
+    await tester.pump();
+    await tester.tap(find.byKey(const ValueKey('submit-review')));
+    await tester.pumpAndSettle();
+    expect(
+      find.text(
+        '“Spiritpedia” is reserved for our own reviews. Please use your own '
+        'name.',
+      ),
+      findsOneWidget,
+    );
+    expect(reviews.calls.where((c) => c.startsWith('save')), isEmpty);
+
+    await tester.enterText(find.byKey(const ValueKey('review-name')), 'Sam');
+    await tester.tap(find.byKey(const ValueKey('submit-review')));
+    await tester.pumpAndSettle();
+    expect(reviews.mineByUser[(_me, _book)]!.authorName, 'Sam');
+  });
+
+  testWidgets('signed in as Spiritpedia: no name to type, it posts as '
+      'Spiritpedia ✦ OFFICIAL', (tester) async {
+    reviews
+      ..profileNames[_me] = 'Spiritpedia'
+      ..officialUsers.add(_me);
+    await pumpBook(tester, signedIn: true);
+    await tester.tap(find.byKey(const ValueKey('write-review')));
+    await tester.pumpAndSettle();
+    expect(find.byKey(const ValueKey('review-name')), findsNothing);
+    expect(find.byKey(const ValueKey('review-as-official')), findsOneWidget);
+    await tester.tap(find.byKey(const ValueKey('rate-5')));
+    await tester.pump();
+    await tester.tap(find.byKey(const ValueKey('submit-review')));
+    await tester.pumpAndSettle();
+    final mine = reviews.mineByUser[(_me, _book)]!;
+    expect(mine.authorOfficial, isTrue);
+    expect(mine.displayName, 'Spiritpedia');
+  });
+
   testWidgets('an approved review of your own has no "⋯"', (tester) async {
     reviews.mineByUser[(_me, _book)] = _kind;
     await pumpBook(tester, signedIn: true);

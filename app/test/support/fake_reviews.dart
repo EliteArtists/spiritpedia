@@ -1,3 +1,4 @@
+import 'package:spiritpedia/data/badges.dart';
 import 'package:spiritpedia/features/reviews/reviews_service.dart';
 
 /// An in-memory reviews backend that keeps the server's rules: approved
@@ -13,6 +14,9 @@ class FakeReviewsService implements ReviewsService {
   /// Each person's own review, whatever its status.
   final mineByUser = <(String, ReviewTarget), Review>{};
   final profileNames = <String, String>{};
+
+  /// Accounts that are Spiritpedia's own (its listing is Official).
+  final officialUsers = <String>{};
   final reported = <(int, ReportReason, String?)>[];
   final blocks = <String, List<BlockedReviewer>>{}; // blocker → blocked
   bool banned = false;
@@ -49,6 +53,10 @@ class FakeReviewsService implements ReviewsService {
   Future<bool> postingBanned() async => banned;
 
   @override
+  Future<bool> postsAsOfficial(String userId) async =>
+      officialUsers.contains(userId);
+
+  @override
   Future<void> save(
     String userId,
     ReviewTarget target, {
@@ -61,13 +69,20 @@ class FakeReviewsService implements ReviewsService {
       throw const ReviewError('Reviews are not available for this account.');
     }
     final before = mineByUser[(userId, target)];
+    // The trigger (migration 0023): Spiritpedia's own account is named
+    // Spiritpedia and Official; anyone else using that name gets none.
+    final official = officialUsers.contains(userId);
+    final name = authorName?.trim() ?? '';
     mineByUser[(userId, target)] = Review(
       id: before?.id ?? _nextId++,
       rating: rating,
       body: body?.trim().isEmpty ?? true ? null : body!.trim(),
-      authorName: authorName?.trim().isEmpty ?? true
+      authorName: official
+          ? 'Spiritpedia'
+          : name.isEmpty || reviewNameReserved(name)
           ? null
-          : authorName!.trim(),
+          : name,
+      authorOfficial: official,
       createdAt: DateTime(2026, 10, 13),
       // The trigger: new reviews are pending; an edit keeps its status.
       status: before?.status ?? 'pending',

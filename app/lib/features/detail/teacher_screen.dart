@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
+import '../../data/badges.dart';
 import '../../core/links/open_link.dart';
 import '../../data/models.dart';
 import '../../data/shelf_rules.dart';
@@ -215,11 +216,7 @@ class _Badge extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     if (!healer.isAscendedMaster) {
-      return HealerBadge(
-        tier: healer.tier,
-        entityType: healer.entityType,
-        official: healer.official,
-      );
+      return ListingBadgeRow.healer(healer);
     }
     final lifespan = formatLifespan(healer);
     if (lifespan == null) return const SizedBox.shrink();
@@ -250,14 +247,19 @@ class _Social extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final links = [
-      ('Website', healer.websiteUrl, Icons.language),
-      ('YouTube', healer.youtubeUrl, Icons.smart_display_outlined),
-      ('Instagram', healer.instagramUrl, Icons.camera_alt_outlined),
-      ('Facebook', healer.facebookUrl, Icons.facebook),
-      ('Twitter', healer.twitterUrl, Icons.alternate_email),
-      ('TikTok', healer.tiktokUrl, Icons.music_note_outlined),
-    ].where((l) => l.$2 != null).toList();
+    final links =
+        [
+              ('Website', healer.websiteUrl, Icons.language),
+              ('YouTube', healer.youtubeUrl, Icons.smart_display_outlined),
+              ('Instagram', healer.instagramUrl, Icons.camera_alt_outlined),
+              ('Facebook', healer.facebookUrl, Icons.facebook),
+              ('Twitter', healer.twitterUrl, Icons.alternate_email),
+              ('TikTok', healer.tiktokUrl, Icons.music_note_outlined),
+            ]
+            // "www.example.com" typed without https:// still opens.
+            .map((l) => (l.$1, withScheme(l.$2), l.$3))
+            .where((l) => l.$2 != null)
+            .toList();
     if (links.isEmpty) return const SizedBox.shrink();
     return Padding(
       padding: const EdgeInsets.only(top: 16),
@@ -288,8 +290,8 @@ class _Social extends StatelessWidget {
   }
 }
 
-/// The contact card — only when there is an email, phone or booking link, and
-/// never for an Ascended Master.
+/// The contact card — only when there is an email, phone or a link for its
+/// button, and never for an Ascended Master.
 class _Contact extends StatelessWidget {
   const _Contact({required this.healer});
 
@@ -298,15 +300,23 @@ class _Contact extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final h = healer;
+    // "Book with Eckhart →" for a practitioner; "Visit {name} →" for
+    // everyone else, Spiritpedia included (data/badges.dart).
+    final actionLink = actionUrl(
+      entityType: h.entityType,
+      bookingUrl: h.bookingUrl,
+      websiteUrl: h.websiteUrl,
+      official: h.official,
+    );
     final show =
         !h.isAscendedMaster &&
         (h.contactEmail != null ||
             h.contactPhone != null ||
-            h.bookingUrl != null);
+            actionLink != null);
     if (!show) return const SizedBox.shrink();
-    final online = h.availabilityType?.contains('Online') ?? false;
-    // "Book with Eckhart" — but a channel is booked by its whole name.
-    final firstName = h.isPlatform ? h.name : h.name.split(' ').first;
+    // Sessions are a person's: a channel shows no In Person or Online pill.
+    final person = isPerson(h.entityType);
+    final online = person && (h.availabilityType?.contains('Online') ?? false);
 
     Widget pill(String text, Color bg, Color fg) => DecoratedBox(
       decoration: BoxDecoration(
@@ -355,14 +365,14 @@ class _Contact extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          if (h.city != null || online)
+          if ((person && h.city != null) || online)
             Padding(
               padding: const EdgeInsets.only(bottom: 14),
               child: Wrap(
                 spacing: 8,
                 runSpacing: 8,
                 children: [
-                  if (h.city != null)
+                  if (person && h.city != null)
                     pill(
                       'In Person (${h.city})',
                       const Color(0x991E1B4B),
@@ -397,9 +407,16 @@ class _Contact extends StatelessWidget {
                 path: h.contactPhone!.replaceAll(' ', ''),
               ).toString(),
             ),
-          if (h.bookingUrl != null) ...[
+          if (actionLink != null) ...[
             const SizedBox(height: 12),
-            OutboundButton(label: 'Book with $firstName →', url: h.bookingUrl!),
+            OutboundButton(
+              label: actionLabel(
+                name: h.name,
+                entityType: h.entityType,
+                official: h.official,
+              ),
+              url: actionLink,
+            ),
           ],
         ],
       ),

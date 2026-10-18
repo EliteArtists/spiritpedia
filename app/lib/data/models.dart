@@ -1,3 +1,5 @@
+import 'badges.dart';
+
 // The content tables, as the app reads them. Field names follow the database
 // (README → "Database Structure"); only what the app displays is parsed.
 //
@@ -59,6 +61,7 @@ class Healer {
     this.tiktokUrl,
     this.placeId,
     this.official = false,
+    this.verified = false,
   });
 
   factory Healer.fromJson(Map<String, dynamic> j) => Healer(
@@ -86,6 +89,7 @@ class Healer {
     tiktokUrl: _text(j['tiktok_url']),
     placeId: (j['place_id'] as num?)?.toInt(),
     official: j['official'] == true,
+    verified: j['verified'] == true,
   );
 
   final int id;
@@ -114,9 +118,13 @@ class Healer {
   /// Their town (public.places, migration 0019), from city and country.
   final int? placeId;
 
-  /// Spiritpedia's own profile (healers.official, migration 0020): the
-  /// Official badge, first among the channels.
+  /// Spiritpedia's own profile (healers.official, set automatically since
+  /// migration 0023): ✦ OFFICIAL and no tier, first among the channels.
   final bool official;
+
+  /// ✓ Verified: the owner has confirmed it is theirs (healers.verified,
+  /// migration 0023). Automatic.
+  final bool verified;
 
   /// Channels, apps and organisations get their own shelf; NULL is an
   /// individual. The website's rule too (web/utils/listings.js).
@@ -408,14 +416,26 @@ class Publisher {
     this.foundedYear,
     this.subjectSlugs = const [],
     this.authorCount = 0,
+    this.tier,
+    this.verified = false,
   });
 
   factory Publisher.fromJson(Map<String, dynamic> j) {
-    // `publisher_healers(count)` arrives as [{count: N}].
-    final counts = j['publisher_healers'];
-    final count = counts is List && counts.isNotEmpty
-        ? (counts.first as Map)['count']
-        : 0;
+    // `publisher_healers(healers(entity_type))`: its authors are the people
+    // among its linked listings, never its channels or apps. (Older queries'
+    // `publisher_healers(count)` arrives as [{count: N}].)
+    final links = j['publisher_healers'];
+    var count = 0;
+    if (links is List) {
+      for (final link in links.whereType<Map>()) {
+        if (link['count'] is num) {
+          count += (link['count'] as num).toInt();
+        } else if (link['healers'] is Map &&
+            isPerson((link['healers'] as Map)['entity_type'] as String?)) {
+          count++;
+        }
+      }
+    }
     return Publisher(
       id: '${j['id']}',
       slug: (j['slug'] as String?) ?? '',
@@ -425,7 +445,9 @@ class Publisher {
       logoUrl: _text(j['logo_url']),
       foundedYear: (j['founded_year'] as num?)?.toInt(),
       subjectSlugs: _strings(j['subject_slugs']),
-      authorCount: (count as num?)?.toInt() ?? 0,
+      authorCount: count,
+      tier: j['tier'] as String?,
+      verified: j['verified'] == true,
     );
   }
 
@@ -438,4 +460,10 @@ class Publisher {
   final int? foundedYear;
   final List<String> subjectSlugs;
   final int authorCount;
+
+  /// Superstar, Shining Star or Rising Star (publishers.tier, migration 0023).
+  final String? tier;
+
+  /// ✓ Verified: an approved account manages it. Automatic.
+  final bool verified;
 }

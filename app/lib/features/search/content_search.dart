@@ -159,7 +159,8 @@ class SupabaseContentSearch implements ContentSearch {
   final SupabaseClient _db;
 
   static const _healerColumns =
-      'id, name, healer_slug, tier, entity_type, official, image_urls, subject_slugs';
+      'id, name, healer_slug, tier, entity_type, official, verified, image_urls, '
+      'subject_slugs';
   static const _videoColumns =
       'id, title, slug, platform_url, healer_slug, subject_slugs';
   // No shop links: Suggests chooses by relevance, and never sees them.

@@ -23,6 +23,7 @@ class Review {
     this.body,
     this.authorName,
     this.authorHealerSlug,
+    this.authorOfficial = false,
     this.createdAt,
     this.status = 'approved',
   });
@@ -33,6 +34,7 @@ class Review {
     body: r['body'] as String?,
     authorName: r['author_name'] as String?,
     authorHealerSlug: r['author_healer_slug'] as String?,
+    authorOfficial: r['author_official'] == true,
     createdAt: DateTime.tryParse(r['created_at'] as String? ?? ''),
     status: r['status'] as String? ?? 'approved',
   );
@@ -42,6 +44,10 @@ class Review {
   final String? body;
   final String? authorName;
   final String? authorHealerSlug;
+
+  /// Posted by Spiritpedia's own account (reviews.author_official, set by the
+  /// database, migration 0023): shown as Spiritpedia ✦ OFFICIAL.
+  final bool authorOfficial;
   final DateTime? createdAt;
 
   /// pending, approved or rejected. Only the author ever sees anything but
@@ -50,6 +56,7 @@ class Review {
 
   /// The website's fallback for a review posted without a name.
   String get displayName {
+    if (authorOfficial) return 'Spiritpedia';
     final name = authorName?.trim() ?? '';
     return name.isEmpty ? 'A Spiritpedia member' : name;
   }
@@ -111,6 +118,10 @@ abstract class ReviewsService {
   /// True if the admin has stopped this account posting reviews.
   Future<bool> postingBanned();
 
+  /// True for Spiritpedia's own account: its reviews post as Spiritpedia
+  /// ✦ OFFICIAL (the database decides; this only shapes the form).
+  Future<bool> postsAsOfficial(String userId);
+
   /// Write or edit the person's review. The database makes it pending.
   Future<void> save(
     String userId,
@@ -145,7 +156,8 @@ class SupabaseReviewsService implements ReviewsService {
 
   static const _pageLimit = 50;
   static const _columns =
-      'id, rating, body, author_name, author_healer_slug, created_at';
+      'id, rating, body, author_name, author_healer_slug, author_official, '
+      'created_at';
 
   @override
   Future<List<Review>> approved(ReviewTarget target) async {
@@ -180,6 +192,23 @@ class SupabaseReviewsService implements ReviewsService {
         .eq('id', userId)
         .maybeSingle();
     return row?['full_name'] as String?;
+  }
+
+  @override
+  Future<bool> postsAsOfficial(String userId) async {
+    final profile = await _db
+        .from('user_profiles')
+        .select('linked_healer_slug')
+        .eq('id', userId)
+        .maybeSingle();
+    final slug = profile?['linked_healer_slug'] as String?;
+    if (slug == null) return false;
+    final listing = await _db
+        .from('healers')
+        .select('official')
+        .eq('healer_slug', slug)
+        .maybeSingle();
+    return listing?['official'] == true;
   }
 
   @override

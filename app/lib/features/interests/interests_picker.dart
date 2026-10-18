@@ -570,12 +570,9 @@ class _TailorScreenState extends ConsumerState<TailorScreen> {
   Future<void> _save() async {
     final messenger = ScaffoldMessenger.of(context);
     final navigator = Navigator.of(context);
-    final opened = ref.read(exploreMoreOpenedProvider.notifier);
     await ref
         .read(interestsProvider.notifier)
         .tailor(subjects: _more, hidden: _never);
-    // A fresh start: Explore More's shelves close again.
-    opened.closeAll();
     messenger
       ..hideCurrentSnackBar()
       ..showSnackBar(

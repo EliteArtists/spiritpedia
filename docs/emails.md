@@ -5,7 +5,7 @@ in the guiding star's voice. Report only: nothing here has been changed.
 
 There are **three senders**:
 
-1. **The website, through Resend** (`web/utils/email.js`). Thirteen emails:
+1. **The website, through Resend** (`web/utils/email.js`). Fourteen emails:
    eight transactional, five outreach. (The two claim-decision emails, 6a and
    6b, were added on 17 October 2026.) The app never sends email itself; it calls the
    website's routes.
@@ -37,6 +37,7 @@ There are **three senders**:
 |---|---|---|---|---|---|---|
 | 1 | **Explorer welcome** | A new account is created as an explorer: on the website at sign-up, or in the app (since build 14, after "I'm exploring" on "How will you use Spiritpedia?"). Route `/api/email/explorer-welcome`, once per account | hello@accounts | The new member | Welcome to Spiritpedia | "Welcome to Spiritpedia. It's a place to follow the teachers, practices and ideas that speak to you…"; invites them to save favourites to My Library; link: Explore Spiritpedia |
 | 2 | **Practitioner welcome** | A new account is created as a practitioner on the website; or (since 16 October) an app account is upgraded to practitioner when they sign in on the website after "I share my work". Route `/api/email/practitioner-welcome`; skipped unless the account is a practitioner | hello@accounts | The new practitioner | Welcome to Spiritpedia | "We're glad you're here both as a practitioner and as someone who can explore the work of others"; their practitioner space; link: Continue your practitioner setup |
+| 2a | **Listing live** | The admin approves a listing in the Inbox (`/api/admin/practitioner`): a practitioner, channel, app, organisation or publisher, or a resubmission. Not when Approve is pressed again on an approved one | hello@accounts | The owner | Your listing on Spiritpedia is live | "Good news: {listing} is now live on Spiritpedia"; links: see it here, your account page; reply or write to love@ for anything they can't edit (`utils/listingApproved.js`) |
 | 3 | **Review received** | A member submits a review, on the website or in the app. Route `/api/email/review-received` | hello@accounts | The reviewer | We've received your review of {title} | "Thank you for reviewing {title} by {creator}. Your review is now with our team for assessment. We'll email you once we've reviewed it." |
 | 4 | **Review approved** | The admin approves the review (Admin → Reviews; `/api/admin/reviews`) | hello@accounts | The reviewer | Your review of {title} is now live | "Your review… has been accepted and is now live"; thanks them, says it helps others decide; link: View your review |
 | 5 | **Review rejected** | The admin rejects the review (Admin → Reviews) | hello@accounts | The reviewer | An update on your review of {title} | "After assessing your submission, we're unable to publish your review"; asks them to email love@ or reply for more information, or if we misunderstood |

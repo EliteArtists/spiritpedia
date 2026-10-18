@@ -141,11 +141,9 @@ class HealerCard extends StatelessWidget {
                 ),
                 if (!ascended) ...[
                   const SizedBox(height: 8),
-                  HealerBadge(
-                    tier: healer.tier,
-                    entityType: healer.entityType,
-                    official: healer.official,
-                  ),
+                  // Tier, type, ✓ Verified or ✦ Official: each one the star
+                  // explains, and a tap on it never opens the card.
+                  ListingBadgeRow.healer(healer),
                 ],
               ],
             ),
@@ -444,8 +442,13 @@ class PublisherCard extends StatelessWidget {
         const SizedBox(height: 12),
         Text(
           publisher.name,
+          maxLines: 1,
+          overflow: TextOverflow.ellipsis,
           style: const TextStyle(fontSize: 15, fontWeight: FontWeight.w700),
         ),
+        // Its tier (Superstar, Shining Star, Rising Star) and ✓ Verified.
+        const SizedBox(height: 4),
+        ListingBadgeRow.publisher(publisher),
         if (meta.isNotEmpty) ...[
           const SizedBox(height: 3),
           Text(

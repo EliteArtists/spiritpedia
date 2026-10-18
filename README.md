@@ -44,7 +44,7 @@ inventory is `docs/emails.md`; the personalisation rules are
 | :--- | :--- |
 | **Website** | Live at **https://www.spiritpedia.co** (Next.js on Vercel). Every push that changes `web/` deploys to production |
 | **App** | Flutter, iPhone and iPad. **1.0.0 (19)** is built (`app/build/ios/ipa/Spiritpedia.ipa` and `app/build/ios/archive/Runner.xcarchive`) and waiting to be uploaded. **Build 16 is the last one uploaded to TestFlight.** Not yet on the App Store |
-| **Database** | Supabase. Two projects: **live** (`uzmvcgew…`) and **dev** (`khtpbnof…`). Migrations `0000`–`0022` are on both |
+| **Database** | Supabase. Two projects: **live** (`uzmvcgew…`) and **dev** (`khtpbnof…`). Migrations `0000`–`0022` are on both; `0023` (badges, Official reviews) is on dev, live next |
 | **Push** | Firebase Cloud Messaging only, with an APNs key. The Firebase projects must move to the love@ Google account before mid-November 2026 (§16) |
 | **Repository** | `https://github.com/EliteArtists/spiritpedia`, branch `main` only. No staging environment, no feature flags |
 
@@ -308,7 +308,7 @@ editor **on dev first, then live**, by the project owner. Dev is checked with
 throwaway users created through the Admin API (no email) and deleted
 afterwards; live is checked read-only.
 
-### 8.1 0012–0022 (on dev and live)
+### 8.1 0012–0023 (0012–0022 on dev and live; 0023 on dev)
 
 **`0012_favourites_slugs`** — data only, in one transaction.
 - Rewrites legacy `user_favourites.content_slug` values (numeric ids for books,
@@ -416,6 +416,24 @@ afterwards; live is checked read-only.
 - `account_deletions.linked_publisher_id` (→ `publishers`, ON DELETE SET NULL),
   so deleting an account that managed a publisher flags that listing for
   review, as a healer listing already was. Still no personal data.
+
+**`0023_badges_and_official_reviews`** (18 Oct 2026)
+- `healers.verified`, `publishers.verified` and `healers.official` now set
+  themselves: `refresh_listing_badges()` (definer; reads `auth.users` for the
+  love@spiritpedia.co account) recomputes them, run by a statement trigger on
+  `user_profiles` (insert, delete, and updates of `linked_healer_slug`,
+  `linked_publisher_id`, `verification_status`). Verified = an approved
+  account is linked; Official = that account is love@spiritpedia.co. The
+  `listings_pin_badges` triggers keep every other write (the admin's included)
+  from changing them.
+- `publishers.tier` (`superhero`/`luminary`/`local_hero`, default
+  `local_hero`); Hay House and Sounds True start as `superhero`.
+- `reviews.author_official`: set by `reviews_pin_author` from the author's
+  linked listing's `official`, frozen after. An Official review is always
+  named "Spiritpedia"; anyone else whose name contains "spiritpedia"
+  (`review_name_reserved()`, ignoring case and punctuation) is saved with no
+  name.
+- The Spiritpedia listing becomes a Channel with https links.
 
 ### 8.2 0000–0011
 
@@ -598,12 +616,16 @@ are dead code.
   `author_healer_slug` from the author's own profile, freezes them on update,
   refuses banned accounts, and yields to the service role so moderators can
   approve. A second submission upserts on (user, type, slug): an edit.
+- **Official reviews (0023):** from the love@spiritpedia.co account, the
+  trigger sets `author_official` and the name "Spiritpedia"; both pages show
+  **Spiritpedia ✦ OFFICIAL**. The name is reserved for everyone else (the
+  forms say so; the database saves such a review with no name).
 - **Report and block exist in the app only** ("⋯" on each review); the website
   has no report/block button yet (§16). Every report emails love@ at once.
 
 ### 9.7 Emails
 
-Thirteen from the website, all through `utils/email.js` (Resend; templates
+Fourteen from the website, all through `utils/email.js` (Resend; templates
 inline). A failed email never fails the action that triggered it, and Resend's
 "resolved with an error" is checked, not just exceptions. Nothing records that
 an email was sent (§16).
@@ -612,6 +634,7 @@ an email was sent (§16).
 | :--- | :--- | :--- |
 | 1 | Explorer welcome | `/api/email/explorer-welcome` (website: `ensureProfile` on a new explorer; app: after "I'm exploring") |
 | 2 | Practitioner welcome | `/api/email/practitioner-welcome` |
+| 2a | Listing live (to the owner, on every approval: practitioner, channel, app, organisation, publisher; wording in `utils/listingApproved.js`) | `/api/admin/practitioner` |
 | 3 | Review received | `/api/email/review-received` |
 | 4–5 | Review approved / rejected | `/api/admin/reviews` |
 | 6 | Review reported (to love@) | `/api/email/review-reported` |
@@ -712,7 +735,7 @@ README-only pushes show as **Canceled** in Vercel — the rule working. In doubt
 `app/`. The detail (structure, every rule, migrations as the app sees them,
 admin Reports) is in **`app/README.md`**; this section is the overview.
 
-### 10.1 Builds 1–19
+### 10.1 Builds 1–20
 
 Version `1.0.0+N`. Phases 0–3a (9–10 Oct 2026, as `0.1.0+1`) came first:
 skeleton and intro, one shared crisis phrase list, Explore, emotional search,
@@ -739,6 +762,7 @@ detail pages, email-code sign-in with Library sync and account deletion, push.
 | 17 | 17 Oct | Account types: Organisation listings shown as channels; "✦ Official" |
 | 18 | 17 Oct | Activity learning ("Let Spiritpedia learn from what I explore") |
 | 19 | 17 Oct | **The iPad**: the same app laid out for the larger screen, both orientations, Split View |
+| 20 | — | *Next.* Badges (tiers by type, ✓ Verified, ✦ OFFICIAL, every badge explained by the star); Official reviews; Explore More as real shelves; the iPad two-stars fix |
 
 ### 10.2 Structure and startup
 
@@ -931,7 +955,26 @@ portrait. `test/ipad_test.dart` opens every screen at ten iPad and Split View
 sizes. **Landscape has been checked in layout renders, not yet on a real
 iPad.**
 
-### 10.13 Detail pages, links, the video player
+### 10.13 Badges and Explore More shelves (build 20)
+
+- **Badges** (`lib/data/badges.dart`, the website's `web/utils/badges.js`
+  word for word; README §17.1): `ListingBadgeRow` on cards, teacher and
+  publisher pages and the billboard. Every badge is tappable; the star
+  explains it. The tip bubble (`StarTipHost` in `star/tier_tips.dart`) lives
+  on the `StarLayer` and hangs from wherever the star rests: below it in the
+  search box or pill row, above it at the foot of a page. A tap anywhere
+  closes it, and only closes it.
+- **Explore More** (`home/explore_more.dart`): a shelf per section in a lazy
+  `SliverList`, so each shelf (and its fetch) is built only as it comes within
+  the scroll view's cache extent. The list's first child is empty on purpose:
+  a sliver list always builds its first child at once. The four offering
+  shelves share one fetch; results are kept for the session and shared with
+  For You. See all → `/explore/:section?subject=` (`ExploreAllScreen`).
+- **The star never doubles up:** hiding the resting star is counted per
+  holder (`StarLayerState.hold`/`release`), and the star's tray waits until
+  no flight or intro is carrying the star.
+
+### 10.14 Detail pages, links, the video player
 
 Teacher, book, video, publisher, offering and free-resource pages share
 `DetailScaffold` (share, save heart, the floating star). Shares are
@@ -1251,8 +1294,13 @@ browser walk-throughs had typed made-up addresses into the sign-in form.
 
 ### 16.3 Website follow-ups and gaps
 
-- `app/docs/website-followups.md`: issues found while building the app
-  (channels mixed with teachers, memberships, search, offering dates), unfixed.
+- `app/docs/website-followups.md`: issues found while building the app.
+  Channels mixed with teachers: fixed (18 Oct 2026). Memberships, search and
+  offering dates: open.
+- **Explore More on the website** is still tiles that fetch on demand. Real
+  shelves would load as fast if each fetched only as it scrolls into view
+  (an IntersectionObserver, as the app does with its cache extent) and asked
+  for 12 rows rather than every live offering.
 - **Report and block on website reviews** ("⋯" as in the app).
 - **Back up the content:** a periodic `pg_dump --data-only` of the content
   tables to private storage, not git.
@@ -1292,30 +1340,48 @@ browser walk-throughs had typed made-up addresses into the sign-in form.
 
 ## 17. Reference
 
-### 17.1 Listing tiers
+### 17.1 Badges explained
 
-Three tiers reflect reach and can be graduated by the admin; Ascended Master
-honours teachers who have died.
+Copied in full in `docs/admin-guide.md` (with the star's tips and how to
+approve).
 
-| Tier | Badge | Threshold | Pays? |
+- **Type:** what it is. Practitioner (shown as "Individual" in admin),
+  Channel (YouTube or podcast), App, Organisation, Publisher. Set at approval.
+- **Tier:** how big it is. Set by the admin. **Never for sale:** paying for a
+  listing never buys a tier.
+- **✓ Verified:** the owner has confirmed it's theirs. Automatic, no checkbox
+  (`verified`, migration 0023).
+- **✦ OFFICIAL:** Spiritpedia's own account only. Automatic, no checkbox
+  (`healers.official`, migration 0023). No tier badge.
+
+| Colour | Practitioners | Channels, apps, organisations, publishers | Stored as |
 | :--- | :--- | :--- | :--- |
-| ⭐ Superhero | Amber | 500k+ followers on one platform, or mainstream recognition | No |
-| 🕊️ Ascended Master | Gold | Deceased; foundational work. Shown in Timeless Teachers with a lifespan (`1931 — 2015`, or `b. 1931`) | No |
-| ✨ Luminary | Violet | 50k–499k on one platform | Eventually, nominally |
-| 🌿 Local Hero | Emerald | Under 50k across all platforms | Planned: £5–£10/month |
+| Gold | Superhero | Superstar | `superhero` |
+| Purple | Luminary | Shining Star | `luminary` |
+| Green | Local Hero | Rising Star | `local_hero` |
 
-`tier` values: `superhero`, `ascended_master`, `luminary`, `local_hero`.
-Anything else (including NULL) still appears in Practitioners Near You, with a
-neutral "Teacher" badge.
+Ascended Master (`ascended_master`) stays as it is, for people only: shown in
+Timeless Teachers with a lifespan (`1931 — 2015`, or `b. 1931`). Guidance for
+channels, shown in admin: Superstar ≈ household name, 1M+ followers; Shining
+Star ≈ established, 100k–1M; Rising Star ≈ growing, under 100k. For people the
+old thresholds still guide: Superhero 500k+ on one platform or mainstream
+recognition; Luminary 50k–499k; Local Hero under 50k.
+
+Every listing except Spiritpedia shows its tier, on cards and profiles,
+website and app; channels, apps and organisations also show their type, beside
+the tier. The button says **Book with [first name] →** for practitioners and
+**Visit [name] →** for everyone else, Spiritpedia included.
 
 ### 17.2 Entity types
 
 `healers.entity_type`: **individual** (NULL counts as individual), **channel**
 (YouTube channel, podcast, collective), **app**, **organisation** (since
-`0020`). Channels, apps and organisations keep their tier but leave the tier
-shelves, the billboard and Practitioners Near You for **Explore These
-Channels**. **Publishers** are their own table, not an entity type.
-`healers.official` marks Spiritpedia's own listing.
+`0020`). Channels, apps and organisations keep their tier (named Superstar,
+Shining Star, Rising Star) but leave the tier shelves, the billboard and
+Practitioners Near You for **Explore These Channels**, Spiritpedia's own first.
+On subject pages, in search and in My Library they are listed apart from the
+teachers, on both platforms. **Publishers** are their own table, with a tier
+since `0023`.
 
 ### 17.3 Subjects and the homepage
 

@@ -344,6 +344,7 @@ class _StarTrayHostState extends ConsumerState<StarTrayHost> {
   final _trayStar = GlobalKey();
   bool _landed = false; // the star has reached the tray
   int _tries = 0;
+  StarLayerState? _layer; // for letting go of the star on dispose
 
   @override
   void initState() {
@@ -365,6 +366,7 @@ class _StarTrayHostState extends ConsumerState<StarTrayHost> {
   @override
   void dispose() {
     _wait?.cancel();
+    if (_layer case final layer?) _release(layer);
     _lifecycle.dispose();
     super.dispose();
   }
@@ -381,9 +383,12 @@ class _StarTrayHostState extends ConsumerState<StarTrayHost> {
     _wait = Timer(ref.read(conductorDelayProvider), _tryNow);
   }
 
-  /// A main tab on screen, and nothing over it: no page, sheet or menu.
+  /// A main tab on screen, and nothing over it: no page, sheet or menu —
+  /// and the star at home in it, not still on its way there (the intro, a
+  /// flight back from a page). There is only ever one star.
   bool _quiet() {
     if (!mounted) return false;
+    if (StarLayer.maybeOf(context)?.busy ?? false) return false;
     final router = GoRouter.maybeOf(context);
     final root = Navigator.maybeOf(context, rootNavigator: true);
     if (router == null || root == null) return false;
@@ -403,13 +408,17 @@ class _StarTrayHostState extends ConsumerState<StarTrayHost> {
 
   /// The star leaves the tab's search box for the tray.
   Future<void> _flyDown() async {
-    final layer = StarLayer.maybeOf(context);
+    final layer = _layer = StarLayer.maybeOf(context);
     final tab = layer?.currentTab;
     final from = tab == null ? null : layer?.tabs[tab]?.restingRect();
     setState(() => _landed = false);
     await WidgetsBinding.instance.endOfFrame;
-    if (layer != null && tab != null && from != null && mounted) {
-      layer.incoming.value = tab; // its resting star hides while away
+    if (!mounted) return;
+    // The resting star hides while away — on every tab, so switching tabs
+    // under the tray shows none either. Held by the tray: nothing else
+    // finishing (a flight, the intro) can show it before the tray lets go.
+    _hold(layer);
+    if (layer != null && tab != null && from != null) {
       await layer.fly(
         owner: this,
         from: from,
@@ -433,7 +442,19 @@ class _StarTrayHostState extends ConsumerState<StarTrayHost> {
         to: () => layer.tabs[tab]?.restingRect(),
       );
     }
-    if (mounted) layer?.incoming.value = null;
+    _release(layer);
+  }
+
+  void _hold(StarLayerState? layer) {
+    for (final t in tabPaths) {
+      layer?.hold((this, t), t);
+    }
+  }
+
+  void _release(StarLayerState? layer) {
+    for (final t in tabPaths) {
+      layer?.release((this, t));
+    }
   }
 
   @override

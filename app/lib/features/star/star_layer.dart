@@ -3,6 +3,7 @@ import 'package:flutter/services.dart';
 import 'package:go_router/go_router.dart';
 
 import 'slipstream.dart';
+import 'tier_tips.dart';
 import 'twinkle.dart';
 
 /// A tab's page (Discover, Videos, Books): where its star is resting right
@@ -69,9 +70,30 @@ class StarLayerState extends State<StarLayer> with TickerProviderStateMixin {
   /// Discover — where the intro's star lands.
   TabStarTarget? get discover => tabs['/'];
 
-  /// The tab whose star is in flight, if any — on its way in or out: that tab
-  /// hides its resting star until the flight lands.
-  final incoming = ValueNotifier<String?>(null);
+  /// Who is carrying a tab's star away right now — a flight between pages
+  /// or tabs, the intro, the star's tray — and which tab's. That tab hides
+  /// its resting star until every one of them has let go, so one finishing
+  /// never shows a star another is still carrying.
+  final _holds = <Object, String>{};
+
+  /// The tabs whose resting star is hidden ([hold]).
+  final held = ValueNotifier<Set<String>>(const {});
+
+  /// Whether anything is carrying the star now (a flight, the intro, the
+  /// tray): other movements leave it alone until it is back.
+  bool get busy => _holds.isNotEmpty;
+
+  /// [owner] carries [tab]'s star away: it hides until [release].
+  void hold(Object owner, String tab) {
+    _holds[owner] = tab;
+    held.value = _holds.values.toSet();
+  }
+
+  /// [owner] has put the star back (a no-op if it held nothing).
+  void release(Object owner) {
+    if (_holds.remove(owner) == null || _gone) return;
+    held.value = _holds.values.toSet();
+  }
 
   /// The tab on screen (the shell says), whatever pages cover it.
   String? currentTab;
@@ -83,6 +105,20 @@ class StarLayerState extends State<StarLayer> with TickerProviderStateMixin {
   _StarAnchorState? _pageStarOf(Route<dynamic> route) =>
       _pageStars.where((a) => a._route == route).firstOrNull;
 
+  /// Where the star is resting on screen now: the page on top's own star (a
+  /// detail page's foot, the search's), or else the tab's. For the star's
+  /// tips (tier_tips.dart → StarTipHost).
+  Rect? restingStarRect() {
+    final onPage = _pageStars
+        .where((a) => a._route?.isCurrent ?? false)
+        .map((a) => a.rect)
+        .nonNulls
+        .firstOrNull;
+    if (onPage != null) return onPage;
+    final tab = currentTab;
+    return tab == null ? null : tabs[tab]?.restingRect();
+  }
+
   /// The star moving with the pages, as the navigator pushes or pops one:
   /// from where it is on the page leaving (or the tab under it) to where it
   /// will rest on the page arriving. Back button and swipe-back alike.
@@ -93,7 +129,7 @@ class StarLayerState extends State<StarLayer> with TickerProviderStateMixin {
     required Route<dynamic> arriving,
     required bool popping,
   }) async {
-    if (!mounted || incoming.value != null) return;
+    if (!mounted || busy) return;
     final fromStar = _pageStarOf(leaving);
     final fromTab = fromStar == null ? currentTab : null;
     final from =
@@ -102,7 +138,7 @@ class StarLayerState extends State<StarLayer> with TickerProviderStateMixin {
     if (from == null) return;
     // A page being pushed is built on the next frame.
     if (!popping) await WidgetsBinding.instance.endOfFrame;
-    if (!mounted || incoming.value != null) return;
+    if (!mounted || busy) return;
 
     final toStar = _pageStarOf(arriving);
     final toTab = toStar == null ? currentTab : null;
@@ -114,13 +150,15 @@ class StarLayerState extends State<StarLayer> with TickerProviderStateMixin {
 
     fromStar?.suppress(true);
     toStar?.suppress(true);
-    incoming.value = toTab ?? fromTab;
+    final flight = Object();
+    final tab = toTab ?? fromTab;
+    if (tab != null) hold(flight, tab);
     try {
-      await fly(owner: incoming, from: from, to: target);
+      await fly(owner: held, from: from, to: target);
     } finally {
       if (!popping) fromStar?.suppress(false); // a popped page is gone
       toStar?.suppress(false);
-      if (mounted) incoming.value = null;
+      release(flight);
     }
   }
 
@@ -133,21 +171,18 @@ class StarLayerState extends State<StarLayer> with TickerProviderStateMixin {
   ) async {
     final start = tabs[from]?.restingRect();
     switchTabs();
-    if (start == null || from == to || incoming.value != null) return;
+    if (start == null || from == to || busy) return;
     await WidgetsBinding.instance.endOfFrame;
     final end = tabs[to]?.restingRect();
     if (!mounted || end == null || (end.center - start.center).distance < 4) {
       return;
     }
-    incoming.value = to;
+    final flight = Object();
+    hold(flight, to);
     try {
-      await fly(
-        owner: incoming,
-        from: start,
-        to: () => tabs[to]?.restingRect(),
-      );
+      await fly(owner: held, from: start, to: () => tabs[to]?.restingRect());
     } finally {
-      if (mounted) incoming.value = null;
+      release(flight);
     }
   }
 
@@ -216,7 +251,8 @@ class StarLayerState extends State<StarLayer> with TickerProviderStateMixin {
       f.controller.dispose();
     }
     _flights.clear();
-    incoming.dispose();
+    _holds.clear();
+    held.dispose();
     super.dispose();
   }
 
@@ -226,6 +262,7 @@ class StarLayerState extends State<StarLayer> with TickerProviderStateMixin {
       fit: StackFit.expand,
       children: [
         widget.child,
+        StarTipHost(layer: this),
         for (final entry in _flights.entries)
           Positioned.fill(
             key: ObjectKey(entry.value),
@@ -275,18 +312,19 @@ Future<void> starTapped(BuildContext context, {Rect? from}) async {
     router.go(tab);
     return;
   }
-  layer.incoming.value = tab;
+  final flight = Object();
+  layer.hold(flight, tab);
   router.go(tab);
   // Let the tab lay out where it is going to be before aiming at it.
   await WidgetsBinding.instance.endOfFrame;
   try {
     await layer.fly(
-      owner: layer.incoming,
+      owner: layer.held,
       from: from,
       to: () => layer.tabs[tab]?.restingRect(),
     );
   } finally {
-    layer.incoming.value = null;
+    layer.release(flight);
   }
 }
 

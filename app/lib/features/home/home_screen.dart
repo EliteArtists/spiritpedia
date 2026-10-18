@@ -235,7 +235,9 @@ class HomeScreen extends ConsumerWidget {
                   subtitle: 'Platforms & Channels',
                 ),
               ),
-              SliverToBoxAdapter(child: ExploreMore(subject: subject)),
+              // A shelf for each Explore More section, each fetched only as
+              // it comes within reach of the screen.
+              exploreMoreShelves(subject: subject),
             ];
           },
         ),

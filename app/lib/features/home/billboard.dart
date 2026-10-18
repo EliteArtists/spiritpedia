@@ -207,8 +207,8 @@ class _Slide extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              if (healer.tier == 'superhero')
-                const TierBadge(tier: 'superhero'),
+              // Its tier (and ✓ Verified), which the star explains.
+              if (healer.tier == 'superhero') ListingBadgeRow.healer(healer),
               if (lifespan != null)
                 DecoratedBox(
                   decoration: BoxDecoration(

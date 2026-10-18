@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
+import '../../data/badges.dart';
+import '../../shared/widgets/tier_badge.dart';
 import '../../core/links/open_link.dart';
 import '../../shared/widgets/cards.dart';
 import '../../shared/widgets/net_image.dart';
@@ -72,6 +74,9 @@ class PublisherScreen extends ConsumerWidget {
                     ),
                     const SizedBox(height: 18),
                     DetailTitle(p.name, center: true),
+                    // Its tier and ✓ Verified, which the star explains.
+                    const SizedBox(height: 8),
+                    ListingBadgeRow.publisher(p),
                     if (p.foundedYear != null) ...[
                       const SizedBox(height: 6),
                       Text(
@@ -82,15 +87,15 @@ class PublisherScreen extends ConsumerWidget {
                         ),
                       ),
                     ],
-                    if (p.websiteUrl != null)
+                    if (withScheme(p.websiteUrl) case final site?)
                       TextButton(
-                        onPressed: () => openExternal(context, p.websiteUrl!),
+                        onPressed: () => openExternal(context, site),
                         style: TextButton.styleFrom(
                           foregroundColor: SpColors.link,
                         ),
-                        child: const Text(
-                          'Visit Website →',
-                          style: TextStyle(fontWeight: FontWeight.w600),
+                        child: Text(
+                          actionLabel(name: p.name, entityType: publisherType),
+                          style: const TextStyle(fontWeight: FontWeight.w600),
                         ),
                       ),
                     if (p.description != null) ...[
