@@ -1372,6 +1372,9 @@ void main() {
           .push('/healers/spiritpedia');
       await tester.pumpAndSettle();
       expect(find.text('✦ OFFICIAL'), findsOneWidget);
+      // Verified too in the database, but Official alone on the page.
+      expect(find.text('✓ VERIFIED'), findsNothing);
+      expect(find.textContaining('RISING STAR'), findsNothing);
       expect(find.text('Visit Spiritpedia →'), findsOneWidget);
       expect(find.textContaining('Book with'), findsNothing);
       await tester.tap(find.text('✦ OFFICIAL'));

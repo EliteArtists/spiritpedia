@@ -158,11 +158,21 @@ class SupabaseContentRepository implements ContentRepository {
     return [for (final r in rows) FreeResource.fromJson(r)];
   }
 
+  /// What a card, For You and Never show need from each offering — not its
+  /// link or affiliate status, which only its own page reads (offering()).
+  static const _offeringCardColumns =
+      'id, slug, title, description, price, image_url, product_type, '
+      'healer_id, start_date, end_date, subject_slugs';
+
   @override
   Future<List<Offering>> liveOfferings({String? subject}) async {
     final rows = await _all(
       () => _withSubject(
-        _db.from('courses').select().eq('is_active', true).or(_liveWindow),
+        _db
+            .from('courses')
+            .select(_offeringCardColumns)
+            .eq('is_active', true)
+            .or(_liveWindow),
         subject,
       ).order('created_at', ascending: false).order('id', ascending: false),
     );

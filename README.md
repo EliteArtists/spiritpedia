@@ -40,15 +40,15 @@ inventory is `docs/emails.md`; the personalisation rules are
 
 ## 1. Where things stand
 
-| | State on 17 October 2026 |
+| | State on 18 October 2026 |
 | :--- | :--- |
 | **Website** | Live at **https://www.spiritpedia.co** (Next.js on Vercel). Every push that changes `web/` deploys to production |
-| **App** | Flutter, iPhone and iPad. **1.0.0 (19)** is built (`app/build/ios/ipa/Spiritpedia.ipa` and `app/build/ios/archive/Runner.xcarchive`) and waiting to be uploaded. **Build 16 is the last one uploaded to TestFlight.** Not yet on the App Store |
-| **Database** | Supabase. Two projects: **live** (`uzmvcgew…`) and **dev** (`khtpbnof…`). Migrations `0000`–`0022` are on both; `0023` (badges, Official reviews) is on dev, live next |
+| **App** | Flutter, iPhone and iPad. **1.0.0 (20)** is built (`app/build/ios/ipa/Spiritpedia.ipa` and `app/build/ios/archive/Runner.xcarchive`) and waiting to be uploaded; build 19's are kept in `app/build/build19/` until it is uploaded or skipped. **Build 16 is the last one uploaded to TestFlight.** Not yet on the App Store |
+| **Database** | Supabase. Two projects: **live** (`uzmvcgew…`) and **dev** (`khtpbnof…`). Migrations `0000`–`0023` are on both |
 | **Push** | Firebase Cloud Messaging only, with an APNs key. The Firebase projects must move to the love@ Google account before mid-November 2026 (§16) |
 | **Repository** | `https://github.com/EliteArtists/spiritpedia`, branch `main` only. No staging environment, no feature flags |
 
-**Before submitting build 19 in App Store Connect:**
+**Before submitting build 20 in App Store Connect:**
 - Update the App Privacy label (§12.6): add **Device ID** and **Sensitive Info**,
   and **Product Personalization** as a purpose on Product Interaction and
   Search History.
@@ -308,7 +308,7 @@ editor **on dev first, then live**, by the project owner. Dev is checked with
 throwaway users created through the Admin API (no email) and deleted
 afterwards; live is checked read-only.
 
-### 8.1 0012–0023 (0012–0022 on dev and live; 0023 on dev)
+### 8.1 0012–0023 (on dev and live)
 
 **`0012_favourites_slugs`** — data only, in one transaction.
 - Rewrites legacy `user_favourites.content_slug` values (numeric ids for books,
@@ -762,7 +762,7 @@ detail pages, email-code sign-in with Library sync and account deletion, push.
 | 17 | 17 Oct | Account types: Organisation listings shown as channels; "✦ Official" |
 | 18 | 17 Oct | Activity learning ("Let Spiritpedia learn from what I explore") |
 | 19 | 17 Oct | **The iPad**: the same app laid out for the larger screen, both orientations, Split View |
-| 20 | — | *Next.* Badges (tiers by type, ✓ Verified, ✦ OFFICIAL, every badge explained by the star); Official reviews; Explore More as real shelves; the iPad two-stars fix |
+| 20 | 18 Oct | Badges (tiers by type, ✓ Verified, ✦ OFFICIAL, every badge explained by the star); Official reviews; Explore More as real shelves; the iPad two-stars fix |
 
 ### 10.2 Structure and startup
 
@@ -970,6 +970,10 @@ iPad.**
   a sliver list always builds its first child at once. The four offering
   shelves share one fetch; results are kept for the session and shared with
   For You. See all → `/explore/:section?subject=` (`ExploreAllScreen`).
+  The offerings query asks only for the columns cards need
+  (`_offeringCardColumns`): 230 KB over the wire for all 1,025 live
+  offerings, against 251 KB for `*`. The description is most of it; a short
+  description column (a computed column, by migration) would cut far more.
 - **The star never doubles up:** hiding the resting star is counted per
   holder (`StarLayerState.hold`/`release`), and the star's tray waits until
   no flight or intro is carrying the star.
