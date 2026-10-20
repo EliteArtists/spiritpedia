@@ -1,6 +1,7 @@
 import { getResend } from './resend.js';
 import { claimDecisionMessage } from './claimRequests.js';
 import { listingLiveMessage } from './listingApproved.js';
+import { submissionDecisionMessage } from './contentSubmissions.js';
 
 // SERVER ONLY, because utils/resend.js is. Importing this from a client
 // component would put the SDK in a public bundle and leave RESEND_API_KEY
@@ -245,6 +246,38 @@ export async function sendListingLive({ email, firstName, listingName, listingPa
     listingName,
     listingUrl: `${SITE}${listingPath}`,
     accountUrl: `${SITE}/account`,
+    supportEmail: ADMIN_EMAIL,
+  });
+  return sendEmail({ to: email, ...message });
+}
+
+/* ── 5d. CONTENT DECIDED ───────────────────────────────────────────────── */
+
+// The admin approved or turned down something an owner added or changed
+// (/api/admin/submissions, migration 0024). The wording is in
+// utils/contentSubmissions.js.
+export async function sendSubmissionDecision({
+  email,
+  firstName,
+  decision,
+  kind,
+  title,
+  what,
+  contentType,
+  slug,
+  reason,
+  note,
+}) {
+  const message = submissionDecisionMessage({
+    decision,
+    kind,
+    firstName,
+    title,
+    what,
+    itemUrl: contentUrl(contentType, slug),
+    accountUrl: `${SITE}/account`,
+    reason,
+    note,
     supportEmail: ADMIN_EMAIL,
   });
   return sendEmail({ to: email, ...message });

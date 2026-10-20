@@ -15,6 +15,7 @@ const NAV = [
   { href: '/admin', label: 'Inbox', icon: 'inbox', badge: 'inbox' },
   { href: '/admin/people', label: 'People', icon: 'people' },
   { href: '/admin/content', label: 'Content', icon: 'content' },
+  { href: '/admin/submissions', label: 'From owners', icon: 'ingestion' },
   { href: '/admin/messages', label: 'Messages', icon: 'messages' },
   { href: '/admin/claims', label: 'Claims', icon: 'claims' },
   { href: '/admin/reviews', label: 'Reviews', icon: 'reviews' },

@@ -33,6 +33,7 @@ export default function AdminInboxPage() {
     accountDeletions,
     openReports,
     claimRequests,
+    contentSubmissions,
     loading,
     reload,
     accountsAvailable,
@@ -62,8 +63,9 @@ export default function AdminInboxPage() {
   }, [reload]);
 
   const queue = useMemo(
-    () => buildQueue(profiles, pendingReviews, brokenImages, accountDeletions, openReports, claimRequests),
-    [profiles, pendingReviews, brokenImages, accountDeletions, openReports, claimRequests]
+    () =>
+      buildQueue(profiles, pendingReviews, brokenImages, accountDeletions, openReports, claimRequests, contentSubmissions),
+    [profiles, pendingReviews, brokenImages, accountDeletions, openReports, claimRequests, contentSubmissions]
   );
   const visible = useMemo(
     () => (filter === 'all' ? queue : queue.filter((i) => i.type === filter)),
@@ -263,7 +265,7 @@ export default function AdminInboxPage() {
         <Placeholder
           icon="✓"
           title="Nothing in the queue"
-          body="New applications, claims and reviews appear here."
+          body="New applications, claims, reviews and content from owners appear here."
         />
       ) : (
         <QueueTable items={visible} onOpen={(item) => setSelectedId(item.id)} selectedId={selectedId} />

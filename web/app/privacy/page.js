@@ -10,7 +10,7 @@ import CookieSettingsLink from '@/components/CookieSettingsLink';
 // the two now change independently. Updated for self-serve account deletion,
 // synced saved items, app notifications (Firebase Cloud Messaging), and the
 // subjects chosen and hidden in the app (explicit consent).
-const PRIVACY_UPDATED = '17 October 2026';
+const PRIVACY_UPDATED = '20 October 2026';
 
 export const metadata = buildMetadata({
   title: 'Privacy Policy',
@@ -362,6 +362,12 @@ export default function PrivacyPage() {
             the profile is listed; declined applications for 12 months.
           </li>
           <li>Requests to claim a listing — 12 months after we decide them.</li>
+          <li>
+            Content you send us to add to your listing or change — 12 months after we decide it (or
+            you withdraw it). An image you upload but never send is deleted within two days. What
+            you remove from your listing is deleted straight away, with its reviews and saves; we
+            keep a note of what was removed, when, and by whom, so it isn&apos;t added back.
+          </li>
           <li>
             Unfinished sign-ups — the email address and choice you entered are deleted
             automatically within two days.

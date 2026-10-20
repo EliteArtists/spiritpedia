@@ -47,6 +47,7 @@ export async function GET() {
         accountDeletions: [],
         openReports: [],
         claimRequests: [],
+        contentSubmissions: [],
       },
       { status: 200 }
     );
@@ -124,6 +125,14 @@ export async function GET() {
     .eq('status', 'pending')
     .order('created_at', { ascending: true });
 
+  // Content owners added or changed (content_submissions, migration 0024),
+  // still undecided. Service role only. Before 0024 runs this reads as none.
+  const { data: submissionRows } = await supabase
+    .from('content_submissions')
+    .select('id, user_id, kind, content_type, fields, author_pending, created_at, healers(name), publishers(name)')
+    .eq('status', 'pending')
+    .order('created_at', { ascending: true });
+
   // user_profiles has no email column — the address lives in auth.users, which
   // only the service role can read. One listUsers call and a lookup map is far
   // cheaper than a getUserById per profile.
@@ -154,6 +163,7 @@ export async function GET() {
   counts.closed_accounts = (accountDeletions || []).length;
   counts.open_reports = (openReports || []).length;
   counts.claim_requests = claimRequests.length;
+  counts.content_submissions = (submissionRows || []).length;
 
   return NextResponse.json({
     profiles: withEmail,
@@ -162,6 +172,10 @@ export async function GET() {
     accountDeletions: accountDeletions || [],
     openReports: openReports || [],
     claimRequests,
+    contentSubmissions: (submissionRows || []).map((row) => ({
+      ...row,
+      person: withEmail.find((p) => p.id === row.user_id)?.full_name || emails.get(row.user_id) || null,
+    })),
     counts,
   });
 }

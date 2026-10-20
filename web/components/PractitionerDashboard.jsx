@@ -1,10 +1,10 @@
 'use client';
 
 import { useCallback, useEffect, useRef, useState } from 'react';
-import Link from 'next/link';
 import { supabaseAuth } from '../utils/supabaseAuth.js';
 import DeleteAccount from './DeleteAccount.jsx';
 import { tierName } from '../utils/badges.js';
+import OwnContent from './OwnContent.jsx';
 
 const TABS = ['Profile', 'Content', 'Settings'];
 const BUCKET = 'practitioner-images';
@@ -340,107 +340,7 @@ function ProfileTab({ healer, onSaved }) {
 
 /* ── CONTENT ───────────────────────────────────────────────────────────── */
 
-function ContentGroup({ title, items, render }) {
-  if (items.length === 0) return null;
-  return (
-    <section>
-      <h3 className="text-xs font-bold uppercase tracking-wider text-[#a78bfa]">
-        {title} · {items.length}
-      </h3>
-      <ul className="mt-3 divide-y divide-white/5 rounded-2xl border border-white/10">
-        {items.map((item) => (
-          <li key={item.id} className="flex items-center gap-3 px-4 py-3">
-            {render(item)}
-          </li>
-        ))}
-      </ul>
-    </section>
-  );
-}
-
-function ContentTab({ content, claimed }) {
-  const total =
-    content.videos.length + content.books.length + content.courses.length + content.free_resources.length;
-
-  return (
-    <div className="flex flex-col gap-6 text-left">
-      {/* Editing is deferred on purpose. videos and books have no published
-          flag, and the homepage, subject pages and sitemap read those tables
-          whole — so anything added here would be live on the site and submitted
-          to Google before anyone had looked at it. That needs a staging table
-          and a review queue, which is its own piece of work. */}
-      {claimed && (
-        <p className="rounded-2xl border border-white/10 bg-[#111827] p-5 text-sm leading-relaxed text-gray-400">
-          {`This is everything listed under your profile. Editing is coming soon — to add or change something in the meantime, email ${SUPPORT_EMAIL}.`}
-        </p>
-      )}
-
-      {total === 0 && <p className="text-sm text-gray-500">Nothing is listed under your profile yet.</p>}
-
-      <ContentGroup
-        title="Videos"
-        items={content.videos}
-        render={(v) => (
-          <>
-            <span className="flex-1 text-sm text-white">{v.title}</span>
-            {v.platform_url && (
-              <a href={v.platform_url} target="_blank" rel="noopener noreferrer" className="text-xs text-[#a78bfa] hover:text-white">
-                View →
-              </a>
-            )}
-          </>
-        )}
-      />
-      <ContentGroup
-        title="Books"
-        items={content.books}
-        render={(b) => (
-          <>
-            {b.mock_cover_url && (
-              <img src={b.mock_cover_url} alt="" loading="lazy" className="h-12 w-9 rounded object-cover" />
-            )}
-            <span className="flex-1 text-sm text-white">{b.title}</span>
-            <Link href={`/books/${b.slug}`} target="_blank" className="text-xs text-[#a78bfa] hover:text-white">
-              View →
-            </Link>
-          </>
-        )}
-      />
-      <ContentGroup
-        title="Courses & offerings"
-        items={content.courses}
-        render={(c) => (
-          <>
-            {c.image_url && <img src={c.image_url} alt="" loading="lazy" className="h-12 w-12 rounded object-cover" />}
-            <span className="flex-1 text-sm text-white">
-              {c.title}
-              {c.product_type && <span className="ml-2 text-xs text-gray-500">{c.product_type}</span>}
-            </span>
-            <Link href={`/offerings/${c.slug}`} target="_blank" className="text-xs text-[#a78bfa] hover:text-white">
-              View →
-            </Link>
-          </>
-        )}
-      />
-      <ContentGroup
-        title="Free resources"
-        items={content.free_resources}
-        render={(r) => (
-          <>
-            {r.image_url && <img src={r.image_url} alt="" loading="lazy" className="h-12 w-12 rounded object-cover" />}
-            <span className="flex-1 text-sm text-white">
-              {r.title}
-              {r.resource_type && <span className="ml-2 text-xs text-gray-500">{r.resource_type}</span>}
-            </span>
-            <Link href={`/free-resources/${r.slug}`} target="_blank" className="text-xs text-[#a78bfa] hover:text-white">
-              View →
-            </Link>
-          </>
-        )}
-      />
-    </div>
-  );
-}
+// Add, edit and remove what's on the listing (migration 0024): OwnContent.
 
 /* ── SETTINGS ──────────────────────────────────────────────────────────── */
 
@@ -542,7 +442,7 @@ export default function PractitionerDashboard({ email }) {
       </div>
 
       {tab === 'Profile' && <ProfileTab healer={data.healer} onSaved={load} />}
-      {tab === 'Content' && <ContentTab content={data.content} claimed={data.claimed} />}
+      {tab === 'Content' && <OwnContent as="healer" />}
       {tab === 'Settings' && <SettingsTab email={data.email || email} />}
     </>
   );

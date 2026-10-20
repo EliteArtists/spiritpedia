@@ -18,6 +18,11 @@
 // the publisher). That row holds no personal data.
 
 export const PRACTITIONER_IMAGES_BUCKET = 'practitioner-images';
+// Images waiting with content they sent (migration 0024): content-submissions/
+// {user id}/…. Their submissions cascade with the account; these go too. Images
+// already approved live under practitioner-images/content/ and stay, with the
+// listing.
+export const SUBMISSION_IMAGES_BUCKET = 'content-submissions';
 
 // Which uploaded files can go: every one the public listing does not display.
 // A listing image is a public URL ending in /practitioner-images/{path}.
@@ -32,11 +37,11 @@ export function splitImages(paths, listingImageUrls = []) {
   return { keep, remove };
 }
 
-async function listUploads(supabase, userId) {
+async function listUploads(supabase, userId, bucket = PRACTITIONER_IMAGES_BUCKET) {
   const paths = [];
   for (let offset = 0; ; offset += 100) {
     const { data, error } = await supabase.storage
-      .from(PRACTITIONER_IMAGES_BUCKET)
+      .from(bucket)
       .list(userId, { limit: 100, offset });
     if (error || !data) break;
     paths.push(...data.filter((f) => f.name && f.id).map((f) => `${userId}/${f.name}`));
@@ -118,6 +123,8 @@ export async function deleteAccount(supabase, userId, { source }) {
     const { data: removed } = await supabase.storage.from(PRACTITIONER_IMAGES_BUCKET).remove(remove);
     removedImages = removed?.length || 0;
   }
+  const waiting = await listUploads(supabase, userId, SUBMISSION_IMAGES_BUCKET);
+  if (waiting.length > 0) await supabase.storage.from(SUBMISSION_IMAGES_BUCKET).remove(waiting);
 
   return {
     ok: true,

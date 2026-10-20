@@ -67,6 +67,24 @@ async function uniqueSlug(table, rawTitle) {
   return `${baseSlug}-${n}`;
 }
 
+
+// An owner removed this from their listing (content_removals, migration 0024),
+// so ingestion doesn't add it back. → a message to show, or null.
+async function removedByOwner(type, link) {
+  if (!link) return null;
+  try {
+    const res = await fetch(`/api/admin/submissions?type=${encodeURIComponent(type)}&removed=${encodeURIComponent(link)}`, {
+      cache: 'no-store',
+    });
+    const json = await res.json();
+    const r = json.removal;
+    if (!r) return null;
+    return `Not added: ${r.removed_by_name || 'its owner'} removed “${r.title || 'this'}” from their listing on ${new Date(r.removed_at).toLocaleDateString('en-GB')}.`;
+  } catch {
+    return null;
+  }
+}
+
 // ---------------------------------------------------------------------------
 // DASHBOARD — access is enforced by web/middleware.js (session cookie), so the
 // page itself renders unconditionally once the middleware has let it through.
@@ -638,6 +656,11 @@ export default function ContentIngestion({ initialPublisherId = null } = {}) {
           });
           return; // leave form values intact; finally{} clears the saving flag
         }
+        const videoRemoved = await removedByOwner('video', platformUrl);
+        if (videoRemoved) {
+          setToast({ type: 'error', message: videoRemoved });
+          return;
+        }
 
         ({ error } = await adminWrite({ table: 'videos', op: 'insert', values: {
           title: title.trim(),
@@ -661,6 +684,11 @@ export default function ContentIngestion({ initialPublisherId = null } = {}) {
             message: 'Duplicate Error: This book is already active in our catalog.',
           });
           return; // leave form values intact; finally{} clears the saving flag
+        }
+        const bookRemoved = await removedByOwner('book', url.trim());
+        if (bookRemoved) {
+          setToast({ type: 'error', message: bookRemoved });
+          return;
         }
 
         // Books resolve by `slug` on /books/[slug], so every insert MUST carry a
@@ -696,6 +724,11 @@ export default function ContentIngestion({ initialPublisherId = null } = {}) {
           });
           return; // leave form values intact; finally{} clears the saving flag
         }
+        const courseRemoved = await removedByOwner('course', url.trim());
+        if (courseRemoved) {
+          setToast({ type: 'error', message: courseRemoved });
+          return;
+        }
 
         // Resolve the relational bigint healer_id from the linked healer slug.
         const linkedHealer = healers.find((h) => h.slug === linkedHealerSlug);
@@ -722,6 +755,12 @@ export default function ContentIngestion({ initialPublisherId = null } = {}) {
         // course, workshop, or practice). Resolve the relational bigint healer_id
         // from the linked healer slug, mirroring the Course pipeline.
         const linkedHealer = healers.find((h) => h.slug === linkedHealerSlug);
+
+        const resourceRemoved = await removedByOwner('free_resource', url.trim());
+        if (resourceRemoved) {
+          setToast({ type: 'error', message: resourceRemoved });
+          return;
+        }
 
         // Free resources resolve by `slug` on /free-resources/[slug]; likewise.
         const freeResourceSlug = await uniqueSlug('free_resources', title.trim());

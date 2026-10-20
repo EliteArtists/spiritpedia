@@ -31,6 +31,7 @@ export function AdminDataProvider({ children }) {
     accountDeletions: [],
     openReports: [],
     claimRequests: [],
+    contentSubmissions: [],
     counts: {},
     error: null,
   });
@@ -61,6 +62,7 @@ export function AdminDataProvider({ children }) {
         accountDeletions: json.accountDeletions || [],
         openReports: json.openReports || [],
         claimRequests: json.claimRequests || [],
+        contentSubmissions: json.contentSubmissions || [],
         counts: json.counts || {},
         error: json.error || null,
       };
@@ -73,6 +75,7 @@ export function AdminDataProvider({ children }) {
         accountDeletions: [],
         openReports: [],
         claimRequests: [],
+        contentSubmissions: [],
         counts: {},
         error: err?.name === 'AbortError' ? 'unreachable' : err.message,
       };
@@ -121,8 +124,15 @@ export function AdminDataProvider({ children }) {
   const openReportCount = state.openReports?.length || 0;
   // Someone asking to manage a listing (claim_requests, migration 0020).
   const claimRequestCount = state.claimRequests?.length || 0;
+  // Content an owner added or changed (migration 0024).
+  const contentSubmissionCount = state.contentSubmissions?.length || 0;
   const pendingActions =
-    pendingApplications + pendingReviewCount + brokenImageCount + openReportCount + claimRequestCount;
+    pendingApplications +
+    pendingReviewCount +
+    brokenImageCount +
+    openReportCount +
+    claimRequestCount +
+    contentSubmissionCount;
 
   return (
     <AdminDataContext.Provider
@@ -135,6 +145,7 @@ export function AdminDataProvider({ children }) {
         brokenImageCount,
         openReportCount,
         claimRequestCount,
+        contentSubmissionCount,
         pendingActions,
         claims,
       }}

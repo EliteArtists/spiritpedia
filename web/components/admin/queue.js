@@ -39,11 +39,12 @@ export const QUEUE_TYPES = {
     live: false,
     chip: 'border-sky-500/40 bg-sky-500/10 text-sky-300',
   },
+  // Content an owner added or changed (content_submissions, migration 0024).
   content: {
     key: 'content',
     label: 'Content',
     icon: '🎬',
-    live: false,
+    live: true,
     chip: 'border-amber-500/40 bg-amber-500/10 text-amber-300',
   },
   review: {
@@ -166,6 +167,20 @@ export function describeFailure(status) {
   return status ? `HTTP ${status}` : 'No response';
 }
 
+const SUBMISSION_WORDS = {
+  video: 'video',
+  book: 'book',
+  free_resource: 'free resource',
+  course: 'course',
+  retreat: 'retreat',
+  membership: 'membership',
+  download: 'download',
+};
+
+function submissionWhat(row) {
+  return SUBMISSION_WORDS[row.content_type === 'course' ? row.fields?.product_type || 'course' : row.content_type] || 'item';
+}
+
 function personName(profile) {
   return (profile.full_name || '').trim() || profile.email || 'Unnamed account';
 }
@@ -198,7 +213,8 @@ export function buildQueue(
   brokenImages = [],
   accountDeletions = [],
   reports = [],
-  claimRequests = []
+  claimRequests = [],
+  contentSubmissions = []
 ) {
   if (!Array.isArray(profiles)) return [];
   const items = [];
@@ -404,6 +420,31 @@ export function buildQueue(
       detail: request.connection,
       status: 'pending',
       request,
+    });
+  }
+
+  // Content an owner added or changed (content_submissions, migration 0024).
+  // Decided on its own page, with the preview, the checks and the editable
+  // fields: the same `href` escape hatch as a review.
+  for (const row of Array.isArray(contentSubmissions) ? contentSubmissions : []) {
+    const what = submissionWhat(row);
+    const listing = row.healers?.name || row.publishers?.name || 'their listing';
+    items.push({
+      id: `content:${row.id}`,
+      type: 'content',
+      at: row.created_at,
+      person: row.person || listing,
+      title: row.kind === 'edit' ? `Edit to ${what} · ${row.fields?.title || 'Untitled'}` : `New ${what} from ${listing}`,
+      detail: [
+        row.kind === 'edit' ? null : row.fields?.title,
+        row.author_pending ? 'author not on Spiritpedia yet' : null,
+        row.publishers?.name ? `from ${row.publishers.name}` : null,
+      ]
+        .filter(Boolean)
+        .join(' · '),
+      status: 'pending',
+      action: 'Review →',
+      href: `/admin/submissions/${row.id}`,
     });
   }
 

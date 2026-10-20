@@ -4,10 +4,12 @@ import { useCallback, useEffect, useState } from 'react';
 import Link from 'next/link';
 import { supabaseAuth } from '../utils/supabaseAuth.js';
 import DeleteAccount from './DeleteAccount.jsx';
+import OwnContent from './OwnContent.jsx';
 
 // A publisher's dashboard (migration 0020): its description and website, which
-// it may change itself (/api/publisher/profile). The name, logo and the authors
-// it publishes are changed by Spiritpedia, on request.
+// it may change itself (/api/publisher/profile), and since 0024 the books it
+// adds for its authors (OwnContent). The name, logo and the authors it
+// publishes are changed by Spiritpedia, on request.
 
 const SUPPORT_EMAIL = 'love@spiritpedia.co';
 const input =
@@ -115,6 +117,11 @@ export default function PublisherDashboard() {
         </a>
         .
       </p>
+
+      <div className="mt-10 border-t border-white/10 pt-8">
+        <h2 className="mb-5 text-lg font-semibold text-white">Your books</h2>
+        <OwnContent as="publisher" />
+      </div>
 
       <div className="mt-8">
         <DeleteAccount hasListing />
