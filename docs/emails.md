@@ -5,9 +5,10 @@ in the guiding star's voice. Report only: nothing here has been changed.
 
 There are **three senders**:
 
-1. **The website, through Resend** (`web/utils/email.js`). Fourteen emails:
-   eight transactional, five outreach. (The two claim-decision emails, 6a and
-   6b, were added on 17 October 2026.) The app never sends email itself; it calls the
+1. **The website, through Resend** (`web/utils/email.js`). Sixteen emails:
+   ten transactional, five outreach. (The two claim-decision emails, 6a and
+   6b, were added on 17 October 2026; Listing live, 2a, on 19 October; the two
+   content-decision emails, 6c and 6d, on 20 October.) The app never sends email itself; it calls the
    website's routes.
 2. **Supabase Auth**, through its own email settings. The sign-in codes and the
    change-email codes. Their wording lives in the Supabase dashboard, not in
@@ -44,6 +45,8 @@ There are **three senders**:
 | 6 | **Review reported** (to the admin) | A member reports a review from the app's "⋯" menu. Route `/api/email/review-reported` | hello@accounts | **love@spiritpedia.co** | Review reported: {reason} — {title} | Factual: the star rating, title, author, reason, their note, the review's text as it was, links to it and to the dashboard, and "Reports are promised a decision within 24 hours." No greeting or sign-off |
 | 6a | **Claim approved** | The admin approves a "Request to claim it" in the Inbox (`/api/admin/claim-request`); also when the admin approves an email-verified claim ("Approve claim", `/api/admin/practitioner`) | hello@accounts | The claimant | Your claim to {listing} is approved | "Your request to manage {listing} on Spiritpedia has been approved. The listing is now linked to your account"; links: your account page, view your listing |
 | 6b | **Claim rejected** | The admin rejects a "Request to claim it" | hello@accounts | The claimant | An update on your claim to {listing} | "We weren't able to confirm that the listing is yours, so we can't link it to your account"; reply or write to love@ if we've got it wrong |
+| 6c | **Content approved** | The admin approves something an owner added or changed (Admin → Inbox → Content → Approve; `/api/admin/submissions`, migration 0024) | hello@accounts | The owner | New: Your {video/book/course/retreat/membership/free resource} "{title}" is now live on Spiritpedia. Edit: Your changes to "{title}" are live | "Your {what} "{title}" is now live on Spiritpedia" (or "Your changes to "{title}" are now live"); links: see it here, your account page, where they can add, change or remove anything (`utils/contentSubmissions.js`) |
+| 6d | **Content not added** | The admin rejects it, choosing a reason (not their own work, link doesn't work, not a fit, already listed, or something else with a note) | hello@accounts | The owner | New: We couldn't add "{title}". Edit: We couldn't change "{title}" | "We couldn't add "{title}" to Spiritpedia" (or "make your changes to"); the reason and the admin's note; for an edit, the live version is unchanged; edit it and send it again from the account page; reply or write to love@ |
 | 7 | **Journey 1** (practitioner outreach) | The admin starts a claim journey on an unclaimed practitioner (Admin → record → Outreach; `/api/admin/journey/start`). Sent at once | **love@spiritpedia.co** | The practitioner's `contact_email` (or `JOURNEY_TEST_EMAIL` while that is set) | We came across your work | Found their work online; Spiritpedia explained; invites an interview; says we made a short public listing they haven't approved, offers the link, claiming, corrections or removal, all by replying |
 | 8 | **Journey 2** | Day 21, by the daily cron (`/api/cron/journey-emails`), unless the profile was claimed or removed | love@ | As above | A place for your work on Spiritpedia | A follow-up: established teachers (Eckhart Tolle, Abraham Hicks, Ram Dass) sit beside newer practitioners; reply to claim, or to be removed or stop the emails |
 | 9 | **Journey 3** | Day 42, cron | love@ | As above | Help people find your services on Spiritpedia | Finding a practitioner starts with a question; Spiritpedia puts teachings and services together, online or in person; reply to claim; or to be removed |

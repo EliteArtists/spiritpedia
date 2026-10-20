@@ -82,7 +82,8 @@ Admin → Inbox → the application.
 2. **Tier.** The names follow the type (Superhero… for an Individual;
    Superstar… for everything else), with the guidance underneath for channels.
 3. **Approve.** The listing goes live, and the owner is emailed "Your listing
-   on Spiritpedia is live" with links to it and to their account page. The
+   on Spiritpedia is live" with links to it and to their account page, where
+   they can add their own content. The
    message at the top says whether the email went; if it didn't, tell them
    yourself. Pressing Approve twice sends nothing more.
 
@@ -91,6 +92,66 @@ listing was public already, so the owner gets "Your claim to … is approved",
 never "Your listing is live".
 
 ✓ Verified appears on the listing by itself.
+
+## Content from owners
+
+Verified owners manage their own content from their account page ("Your work"
+→ Content). Publishers do it from their dashboard, under "Your books". It's
+on the website only. The app's account page links there.
+
+**What they can do:**
+- **Add** a video, book, course, retreat, membership or free resource. A
+  publisher adds books only, choosing one of its linked authors, or "Author not
+  on Spiritpedia yet" with the name in the notes.
+- **Edit** anything live on their listing, including what you added. The live
+  version stays up, unchanged, until you approve. One edit per item can wait at
+  a time.
+- **Remove** anything live on their listing. It's gone at once, with no
+  approval and no email, and its reviews and saves go with it. A publisher can
+  edit and remove only the books it added. An author with their own account
+  controls everything on their own listing.
+- **Withdraw** something still waiting, and **edit and send again** something
+  you turned down.
+
+Images are uploaded (JPEG, PNG or WebP, up to 5 MB), never linked. They stay
+private until you approve.
+
+### Reviewing one
+
+Admin → Inbox → Content (or "From owners" in the sidebar) → the item.
+
+1. **Read the checks at the top:**
+   - **Already on Spiritpedia:** Approve is blocked. Reject as "already listed".
+   - **Removed by its owner:** someone removed this link before. Your call.
+   - **Link check:** whether the link opens. Amazon and some sites refuse
+     automatic checks, so open it yourself when it says so.
+   - **Their notes.**
+2. **Edit anything:** every field, and the subjects (1 to 5, from the list).
+   For an edit, a changed field is outlined and shows what it "Was".
+   "How it will look" shows the card as it will appear.
+3. **Courses:** set the affiliate status. **Free resources:** Featured.
+4. **Author not on Spiritpedia yet** (a publisher's book): create the author
+   in Ingestion and link them to the publisher. Then press "Refresh list",
+   choose them, and approve.
+5. **Approve:** a new item goes live at once. For an edit, only the changed
+   fields change. They're emailed (6c in `docs/emails.md`).
+6. **Reject:** choose a reason, and add a note if you like (required for
+   "something else"). They're emailed (6d) and can edit and send it again.
+
+The message at the top says whether the email went; if it didn't, tell them
+yourself.
+
+### Removals
+
+"From owners" lists everything owners removed: who, what, when, and how many
+reviews and saves went with it. Ingestion won't add a removed link back. It
+says who removed it and when.
+
+### Retention
+
+Decided submissions are deleted 12 months after the decision, and an image
+uploaded but never sent after two days, by the daily clean-up. The Privacy
+Policy says so.
 
 ## Changing a tier or type later
 

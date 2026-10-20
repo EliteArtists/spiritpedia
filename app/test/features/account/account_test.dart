@@ -433,7 +433,9 @@ void main() {
       service.restoreSession(_email);
       await pumpAccount(tester);
       expect(
-        find.text('Your practitioner profile is managed on the website.'),
+        find.text(
+          'Your listing is managed on the website: your profile, and adding, editing or removing what’s on it.',
+        ),
         findsOneWidget,
       );
       await openDelete(tester);

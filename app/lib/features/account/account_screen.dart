@@ -461,7 +461,7 @@ class _SignedInState extends ConsumerState<_SignedIn> {
         if (profile?.isPractitioner == true) ...[
           const SizedBox(height: 12),
           _Note(
-            text: 'Your practitioner profile is managed on the website.',
+            text: 'Your listing is managed on the website: your profile, and adding, editing or removing what’s on it.',
             action: 'Open spiritpedia.co/account',
             url: '${AppConfig.siteUrl}/account',
           ),

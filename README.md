@@ -44,7 +44,7 @@ inventory is `docs/emails.md`; the personalisation rules are
 | :--- | :--- |
 | **Website** | Live at **https://www.spiritpedia.co** (Next.js on Vercel). Every push that changes `web/` deploys to production |
 | **App** | Flutter, iPhone and iPad. **1.0.0 (21)** is built (`app/build/ios/ipa/Spiritpedia.ipa` and `app/build/ios/archive/Runner.xcarchive`) and waiting to be uploaded; build 19's are kept in `app/build/build19/` until it is uploaded or skipped. **Build 16 is the last one uploaded to TestFlight.** Not yet on the App Store |
-| **Database** | Supabase. Two projects: **live** (`uzmvcgew…`) and **dev** (`khtpbnof…`). Migrations `0000`–`0023` are on both |
+| **Database** | Supabase. Two projects: **live** (`uzmvcgew…`) and **dev** (`khtpbnof…`). Migrations `0000`–`0024` are on both |
 | **Push** | Firebase Cloud Messaging only, with an APNs key. The Firebase projects must move to the love@ Google account before mid-November 2026 (§16) |
 | **Repository** | `https://github.com/EliteArtists/spiritpedia`, branch `main` only. No staging environment, no feature flags |
 
@@ -308,7 +308,7 @@ editor **on dev first, then live**, by the project owner. Dev is checked with
 throwaway users created through the Admin API (no email) and deleted
 afterwards; live is checked read-only.
 
-### 8.1 0012–0023 (on dev and live)
+### 8.1 0012–0024 (on dev and live)
 
 **`0012_favourites_slugs`** — data only, in one transaction.
 - Rewrites legacy `user_favourites.content_slug` values (numeric ids for books,
@@ -435,6 +435,25 @@ afterwards; live is checked read-only.
   name.
 - The Spiritpedia listing becomes a Channel with https links.
 
+**`0024_content_submissions`** (20 Oct 2026). Owners manage their own content (§9.5a).
+- `content_submissions`: what a verified owner added (`kind` `new`) or changed
+  (`edit`, with `target_id`), waiting for the admin. `fields` holds the
+  proposed values in the target table's column names; `suggested_subjects`
+  (≤5); `notes`; `image_path` (in the holding bucket); `author_pending` for a
+  publisher's book by an author not on Spiritpedia yet. One pending edit per
+  item (partial unique index). RLS: the owner reads their own; **every write
+  is the service role** (the website's routes check ownership). Decided rows
+  deleted after 12 months.
+- `content_removals`: who removed what and when, with its link, and how many
+  reviews and saves went with it. Service role only. Ingestion checks it.
+- `remove_owned_content(type, id, user, name)` (definer, service role only):
+  in one transaction deletes the item, its `reviews` and `user_favourites`
+  (by type and slug), its `broken_images` row, withdraws any pending edit to
+  it, and writes the removal.
+- Storage bucket `content-submissions`: **private**, no policies, 5 MB, JPEG,
+  PNG or WebP. Uploads go through `/api/content/image`; an approved image is
+  copied to `practitioner-images/content/` (public) and the held copy deleted.
+
 ### 8.2 0000–0011
 
 | File | What |
@@ -510,6 +529,8 @@ Auth: **Bearer** = the user's Supabase access token, verified with Supabase;
 | `POST /api/pending-user-type` | Public (pre-auth) | Records explorer/practitioner against an email |
 | `GET`/`PATCH /api/practitioner/profile` | Bearer | An approved practitioner's own listing and content; allow-listed fields only (`contact_email` and `tier` excluded) |
 | `GET`/`PATCH /api/publisher/profile` | Bearer | A publisher's own row; `description` and `website_url` only |
+| `GET`/`POST /api/content` | Bearer | A verified owner's content (`?as=healer\|publisher`): live items, waiting and turned-down submissions; POST `submit` (new or edit), `resubmit`, `withdraw`, `remove` (immediate, via `remove_owned_content`), `youtube_title` (YouTube oEmbed) (0024) |
+| `POST /api/content/image` | Bearer | An image for a submission, checked by its first bytes, into the private `content-submissions` bucket under the owner's folder |
 | `POST /api/profile/resubmit` | Bearer | A rejected applicant goes back to pending |
 | `POST /api/email/explorer-welcome` | Bearer | Explorer welcome email, and the welcome push |
 | `POST /api/email/practitioner-welcome` | Bearer | Practitioner welcome (only for practitioners) |
@@ -521,6 +542,7 @@ Auth: **Bearer** = the user's Supabase access token, verified with Supabase;
 | `GET /api/admin/activity` | Admin | Admin → Activity totals |
 | `POST /api/admin/practitioner` | Admin | Approve (creates a `healers` row, or creates/links a `publishers` row) or reject an application |
 | `POST /api/admin/claim-request` | Admin | Make a `SPIRITPEDIA-XXXXXX` code, approve (links the listing, stops any journey) or reject |
+| `GET`/`POST /api/admin/submissions` | Admin | Owners' content (0024): the waiting list and removals; one with its live row, duplicate, removal and link checks; approve (inserts, or applies only the changed columns of an edit; publishes the image) or reject with a reason. Emails the owner. `?removed=&type=` for ingestion |
 | `GET`/`PATCH`/`DELETE /api/admin/person` | Admin | A person's record; delete their account |
 | `GET`/`POST /api/admin/notes` | Admin | Internal notes (`ADMIN_NAME` as author) |
 | `GET`/`PATCH /api/admin/reviews` | Admin | Moderation queue; PATCH also emails the reviewer. Re-reads the row and answers 409 if the status didn't change |
@@ -602,11 +624,36 @@ are dead code.
   is emailed the decision** (approved or rejected, §9.7), and the Inbox says
   whether that email went.
 - **Dashboards at `/account`:** `PractitionerDashboard` (profile, content,
-  photo uploads to their own storage folder) and `PublisherDashboard`.
+  photo uploads to their own storage folder) and `PublisherDashboard`. Both
+  manage content through `OwnContent` (§9.5a).
 - **"✦ Official"**: `healers.official`, Spiritpedia's own listing. Shown instead
   of a tier, first among channels; set only by the admin.
 - Platforms (channel, app, organisation) are kept out of Practitioners Near
   You (`isPlatform`).
+
+### 9.5a Owners' own content (0024)
+
+- **Who:** an approved account linked to its listing (Verified). A practitioner,
+  channel, app or organisation manages everything on its listing; a publisher
+  adds books for one of its linked authors (or "Author not on Spiritpedia
+  yet", named in the notes) and manages only the books it added.
+- **Add** (video, book, course, retreat, membership, free resource) and **edit**
+  wait for the admin; the live row is untouched until approval, and approving
+  an edit applies only the columns that changed. **Remove** is immediate, with
+  the item's reviews and saves.
+- **Rules** (`utils/contentSubmissions.js`, shared by both sides and tested):
+  https links only, never made up; YouTube links stored as the standard watch
+  link, the title filled in from YouTube; Amazon product links on a store
+  `utils/affiliate.js` knows, stored without any tag; 1–5 subjects from the
+  list; retreats need dates; duplicates refused against live items and
+  waiting submissions; 20 waiting per account. An edit isn't blocked by
+  something already live that today's rules wouldn't accept, unless they
+  change it.
+- **Images:** upload only, held privately until approved (§8.1, 0024).
+- **Admin:** Inbox → Content, or "From owners" (`/admin/submissions`), which
+  also lists removals. The review page (`/admin/submissions/[id]`) has the
+  editable form, the real card as a preview, and the checks. `docs/admin-guide.md`.
+- **The app** has no content editing; its account page links to the website.
 
 ### 9.6 Reviews and moderation
 
@@ -625,7 +672,7 @@ are dead code.
 
 ### 9.7 Emails
 
-Fourteen from the website, all through `utils/email.js` (Resend; templates
+Sixteen from the website, all through `utils/email.js` (Resend; templates
 inline). A failed email never fails the action that triggered it, and Resend's
 "resolved with an error" is checked, not just exceptions. Nothing records that
 an email was sent (§16).
@@ -639,6 +686,7 @@ an email was sent (§16).
 | 4–5 | Review approved / rejected | `/api/admin/reviews` |
 | 6 | Review reported (to love@) | `/api/email/review-reported` |
 | 6a–6b | Claim approved / rejected (to the claimant; wording in `utils/claimRequests.js`) | `/api/admin/claim-request`; 6a also from `/api/admin/practitioner` ("Approve claim") |
+| 6c–6d | Content approved / not added (to the owner; new item or edit; wording in `utils/contentSubmissions.js`) | `/api/admin/submissions` |
 | 7–11 | Healer outreach journey, emails 1–5 | `/api/admin/journey/start` (1); the `journey-emails` cron (2–5) |
 
 Sign-in and change-email codes are Supabase Auth's (templates in the
@@ -693,7 +741,7 @@ a manual run). **503 means the secret is unset; 401 means it's wrong.**
 
 | Job | UTC | Does |
 | :--- | :--- | :--- |
-| `/api/cron/activity-purge` | 05:00 | Retention: RPC `purge_activity()`, and deletes every decided claim request 12 months after its decision (`utils/claimRequests.js`; pending requests are never touched) |
+| `/api/cron/activity-purge` | 05:00 | Retention: RPC `purge_activity()`; deletes every decided claim request, and every decided content submission (with any image it held), 12 months after its decision (`utils/claimRequests.js`, `utils/contentSubmissions.js`; pending ones are never touched); and images uploaded to the holding bucket but never sent, after two days |
 | `/api/cron/pending-signups` | 06:00 | Deletes `pending_user_types` older than 24 h (`?dry=1` counts only) |
 | `/api/cron/broken-images` | 07:00 | Audits a seventh of the content image URLs plus every portrait (§17.8). `?dry=1`, `?shard=N` |
 | `/api/cron/journey-emails` | 08:00 | The outreach journey |
@@ -1309,8 +1357,8 @@ browser walk-throughs had typed made-up addresses into the sign-in form.
 - **Report and block on website reviews** ("⋯" as in the app).
 - **Back up the content:** a periodic `pg_dump --data-only` of the content
   tables to private storage, not git.
-- **A `content_submissions` staging table** before practitioners add content
-  themselves (content tables have no "published" flag).
+- **"Suggest a change"**: the public flagging content that isn't theirs.
+  Separate from owners' own edits (0024), and later.
 - **Delete the spare Vercel project** `spiritpedia` once nothing needs
   `spiritpedia.vercel.app`.
 - Dead code: `PractitionersTab`, `AccountsTab` in
