@@ -109,6 +109,15 @@ export async function GET(request) {
         healerSlug: healer.healer_slug,
       });
 
+      // On Resend's suppression list: it bounced or they complained. Never
+      // written to again (utils/journey.js → DO_NOT_CONTACT).
+      if (result.suppressed) {
+        await supabase.from('healer_journeys').update({ [column]: null }).eq('id', journey.id);
+        await stop(supabase, journey.id, 'suppressed');
+        tally.stopped += 1;
+        continue;
+      }
+
       if (!result.sent) {
         await supabase
           .from('healer_journeys')

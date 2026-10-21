@@ -20,6 +20,8 @@ function ClaimForm() {
   const [loading, setLoading] = useState(true);
   const [claiming, setClaiming] = useState(false);
   const [error, setError] = useState(null);
+  // Signed in with an address that isn't the listing's: they can still ask.
+  const [mismatch, setMismatch] = useState(false);
 
   // No slug, no healer, or nobody signed in — there is nothing to claim, so
   // send them to the ordinary setup route rather than showing an empty card.
@@ -34,8 +36,11 @@ function ClaimForm() {
 
       const { data: user } = await getUser();
       if (cancelled) return;
+      // Signed out — an outreach email's claim link, usually. Through sign-up
+      // as a practitioner, carrying the listing, and back here after the code.
       if (!user) {
-        router.replace('/auth/signup');
+        const kind = isPublisher ? '&kind=publisher' : '';
+        router.replace(`/auth/signup?as=practitioner&claim=${encodeURIComponent(slug)}${kind}`);
         return;
       }
 
@@ -100,6 +105,7 @@ function ClaimForm() {
     );
 
     if (rpcError) {
+      setMismatch(Boolean(rpcError.message?.includes('does not match')));
       setError(
         rpcError.message?.includes('does not match')
           ? 'That profile does not match your email address.'
@@ -171,6 +177,15 @@ function ClaimForm() {
       {error && (
         <p role="alert" className="mt-5 text-sm leading-relaxed text-red-400">
           {error}
+        </p>
+      )}
+      {mismatch && (
+        <p className="mt-3 text-sm leading-relaxed text-gray-400">
+          If it&rsquo;s yours, you can{' '}
+          <a href="/auth/claim-request" className="font-semibold text-white underline">
+            ask us to check and link it to your account
+          </a>
+          .
         </p>
       )}
     </AuthShell>

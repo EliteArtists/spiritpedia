@@ -18,6 +18,34 @@ export async function isClaimed(supabase, slug) {
   return Array.isArray(data) && data.length > 0;
 }
 
+// Stop reasons that mean "never write to this listing again": they asked us to
+// stop, asked for the listing to be removed, or their address bounced or
+// complained. A journey that ended this way blocks any new one.
+export const DO_NOT_CONTACT = {
+  asked_to_stop: 'They asked us to stop emailing.',
+  removal_requested: 'They asked for the listing to be removed.',
+  suppressed: 'Their address bounced or marked an email as spam.',
+};
+
+// The reason a listing must not be written to again, or null.
+export async function doNotContactReason(supabase, slug) {
+  const { data } = await supabase
+    .from('healer_journeys')
+    .select('stop_reason')
+    .eq('healer_slug', slug)
+    .eq('status', 'stopped')
+    .in('stop_reason', Object.keys(DO_NOT_CONTACT))
+    .limit(1);
+  const reason = Array.isArray(data) && data[0]?.stop_reason;
+  return reason ? DO_NOT_CONTACT[reason] : null;
+}
+
+// The outreach wording is written for one person. Channels, apps, publishers
+// and organisations get their own versions later.
+export function outreachAllowedFor(entityType) {
+  return !entityType || entityType === 'individual';
+}
+
 export function sentAtColumn(n) {
   return `email_${n}_sent_at`;
 }

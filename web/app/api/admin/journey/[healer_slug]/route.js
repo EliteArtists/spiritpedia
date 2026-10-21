@@ -1,6 +1,6 @@
 import { NextResponse } from 'next/server';
 import { adminClient, isAdminRequest, NOT_CONFIGURED } from '@/utils/supabaseAdmin';
-import { isClaimed, schedule } from '@/utils/journey';
+import { doNotContactReason, isClaimed, schedule } from '@/utils/journey';
 
 export const dynamic = 'force-dynamic';
 
@@ -33,10 +33,13 @@ export async function GET(request, { params }) {
   // without a second round trip — and so the Start button can be disabled for a
   // healer who has joined since the page loaded.
   const claimed = await isClaimed(supabase, slug);
+  // Why Start must stay off for good, if it must.
+  const doNotContact = journey ? null : await doNotContactReason(supabase, slug);
 
   return NextResponse.json({
     journey: journey ? { ...journey, schedule: schedule(journey) } : null,
     claimed,
+    doNotContact,
   });
 }
 

@@ -150,3 +150,121 @@ export function formatWhen(value) {
   const time = date.toLocaleTimeString('en-GB', { hour: '2-digit', minute: '2-digit', timeZone: 'UTC' });
   return `${day}, ${time} UTC`;
 }
+
+/* ── C1–C8. PRACTITIONER OUTREACH ──────────────────────────────────────── */
+
+// The first name in a listing's name, past any title: "Dr Jane Smith" → Jane.
+// '' when there is nothing usable, and the greeting is then "Hello,".
+const TITLES = new Set(['dr', 'mr', 'mrs', 'ms', 'miss', 'mx', 'prof', 'professor', 'rev', 'revd', 'sir', 'dame']);
+export function practitionerFirstName(listingName) {
+  const words = (listingName || '').trim().split(/\s+/).filter(Boolean);
+  const first = words.find((word) => !TITLES.has(word.toLowerCase().replace(/\.$/, '')));
+  return first || '';
+}
+
+// Removal and stopping are offered in every email, and nothing promises
+// bookings, exposure or prices: the wording is the approved copy, unchanged.
+const OUTREACH = {
+  1: {
+    subject: 'An invitation from Spiritpedia',
+    body: ({ profileUrl, claimUrl }) => [
+      'We came across your work on social sites and wanted to get in contact.',
+      "Spiritpedia is a place where people can discover spiritual teachers and practitioners, explore their work and find out how to book their services. We'd love to interview you about what you do and the people you help. Would you be open to a conversation? You can simply reply to this email.",
+      `We've also made a short public listing for you from information available online. You can view it here: ${profileUrl}. You haven't joined Spiritpedia or approved the listing. If you'd like to take charge of it, you can claim it here: ${claimUrl}.`,
+      "If anything is inaccurate, or you'd rather we remove the listing, reply and we'll take care of it. The interview is entirely optional.",
+    ],
+  },
+  2: {
+    subject: 'A place for your work on Spiritpedia',
+    body: ({ profileUrl, claimUrl }) => [
+      'We wanted to follow up on our invitation to Spiritpedia.',
+      "People can explore the work of Eckhart Tolle, Abraham Hicks, Ram Dass and other established teachers here, alongside practitioners they may be discovering for the first time. We'd love your work to be part of that discovery.",
+      `We've created a short public listing for you, but you haven't joined or approved it. You can view it here: ${profileUrl}.`,
+      `If you'd like to take charge of it, you can claim it here: ${claimUrl}.`,
+      "If you'd prefer us to remove it or stop these emails, simply reply and we'll take care of it.",
+    ],
+  },
+  3: {
+    subject: 'Help people find the services you offer',
+    body: ({ profileUrl, claimUrl }) => [
+      "Finding a practitioner often starts with a question: who can help me with what I'm going through?",
+      'Spiritpedia brings spiritual teachings and practitioner services into the same place. Someone exploring a subject that matters to them can discover a practitioner whose work speaks to that interest, then find out how to get in touch or book a session.',
+      "We'd love people to discover what you offer, whether you work online or in person.",
+      `Here's the public listing we made for you: ${profileUrl}.`,
+      `You can claim it here: ${claimUrl}.`,
+      "If you'd prefer us to remove it or stop these emails, simply reply.",
+    ],
+  },
+  4: {
+    subject: 'Let people get to know your work',
+    body: ({ profileUrl, claimUrl }) => [
+      'Before someone books a session, they may want to understand your approach and get a feel for the person behind the work.',
+      'A Spiritpedia profile can bring your introduction, videos, resources and links together, giving people a place to explore before they get in touch.',
+      "The short public listing we created for you is only a starting point. We'd love you to take charge of how your work is represented.",
+      links(profileUrl, claimUrl),
+      'Our invitation to an interview is still open too. If that interests you, just reply.',
+      "If you'd prefer us to remove the listing or stop these emails, reply and we'll take care of it.",
+    ],
+  },
+  5: {
+    subject: 'Give people a reason to return to your work',
+    body: ({ profileUrl, claimUrl }) => [
+      'Not everyone is ready to book a session the first time they discover a practitioner.',
+      'They might want to watch a video, explore a resource or simply save your profile for another day. On Spiritpedia, people can keep their favourites in their own Library, making it easier to return to the work that interests them.',
+      'Your listing gives them somewhere to begin, and somewhere to come back to when they want to learn more or get in touch.',
+      links(profileUrl, claimUrl),
+      "If you'd prefer us to remove the listing or stop these emails, simply reply.",
+    ],
+  },
+  6: {
+    subject: "We'd love to hear the story behind your work",
+    body: ({ profileUrl, claimUrl }) => [
+      'What brought you to the work you do today?',
+      "That's part of what we'd love to explore in an interview: how you began, what your approach involves, and what you'd like people to understand before working with you.",
+      "It's a chance for people to hear from you directly and get to know the person behind the profile.",
+      "If you're interested, reply and we can talk about what would work for you. You don't need to claim your listing to discuss an interview, and you don't need to do an interview to claim it.",
+      links(profileUrl, claimUrl),
+      "If you'd prefer us to remove the listing or stop these emails, simply reply.",
+    ],
+  },
+  7: {
+    subject: 'Your work, in your own words',
+    body: ({ profileUrl, claimUrl }) => [
+      "The public listing we created uses information available online. It may not tell the whole story of your work, and we haven't assumed that you approve it.",
+      'Claiming the listing begins the process of putting you in charge of how your work is represented on Spiritpedia.',
+      "Perhaps there's something you'd like to clarify about your approach, the services you offer or how people should contact you. We'd love the page to reflect what you want people to know.",
+      links(profileUrl, claimUrl),
+      "You can also reply with a correction or removal request without claiming anything. If you'd like us to stop these emails, just let us know.",
+    ],
+  },
+  8: {
+    subject: 'A final invitation from Spiritpedia',
+    body: ({ profileUrl, claimUrl }) => [
+      'This is our final follow-up about your Spiritpedia listing.',
+      "We'd still love to welcome you and hear about your work. If you'd like to speak with us about an interview, simply reply. You're welcome to claim your profile whether or not you choose to be interviewed.",
+      links(profileUrl, claimUrl),
+      "If the timing isn't right, there's nothing you need to do. We won't send any more reminders in this sequence.",
+      "If you'd like the public listing removed, reply and we'll take care of it.",
+    ],
+  },
+};
+
+function links(profileUrl, claimUrl) {
+  return `View your listing: ${profileUrl}\nClaim your profile: ${claimUrl}`;
+}
+
+export const OUTREACH_EMAILS = Object.keys(OUTREACH).length;
+
+// PLAIN TEXT ONLY: { subject, text }, no html. A multipart email with markup
+// is what Gmail's tabbed inbox files under Promotions, where cold outreach
+// goes unseen; the two links are written out in full and mail clients make
+// them clickable. null for a number with no template.
+export function outreachEmail(n, { firstName, profileUrl, claimUrl }) {
+  const template = OUTREACH[n];
+  if (!template) return null;
+  const { text } = renderEmail({
+    subject: template.subject,
+    blocks: [greeting(firstName), ...template.body({ profileUrl, claimUrl })],
+  });
+  return { subject: template.subject, text };
+}

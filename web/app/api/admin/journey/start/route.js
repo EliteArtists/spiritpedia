@@ -1,7 +1,7 @@
 import { NextResponse } from 'next/server';
 import { adminClient, isAdminRequest, NOT_CONFIGURED } from '@/utils/supabaseAdmin';
-import { sendJourneyEmail } from '@/utils/email';
-import { isClaimed } from '@/utils/journey';
+import { isSuppressed, sendJourneyEmail } from '@/utils/email';
+import { doNotContactReason, isClaimed, outreachAllowedFor } from '@/utils/journey';
 
 export const dynamic = 'force-dynamic';
 
@@ -24,11 +24,18 @@ export async function POST(request) {
 
   const { data: healer } = await supabase
     .from('healers')
-    .select('name, healer_slug, contact_email')
+    .select('name, healer_slug, contact_email, entity_type')
     .eq('healer_slug', slug)
     .maybeSingle();
 
   if (!healer) return NextResponse.json({ error: 'healer_not_found' }, { status: 404 });
+
+  if (!outreachAllowedFor(healer.entity_type)) {
+    return NextResponse.json(
+      { error: 'not_an_individual', message: 'The outreach emails are written for individual practitioners.' },
+      { status: 400 }
+    );
+  }
 
   if (!healer.contact_email) {
     return NextResponse.json(
@@ -42,6 +49,25 @@ export async function POST(request) {
     return NextResponse.json(
       { error: 'already_claimed', message: 'This healer has claimed their account.' },
       { status: 409 }
+    );
+  }
+
+  // Someone who asked us to stop, or asked for removal, or whose address
+  // bounced, is never written to again.
+  const refusal = await doNotContactReason(supabase, slug);
+  if (refusal) {
+    return NextResponse.json({ error: 'do_not_contact', message: refusal }, { status: 409 });
+  }
+  const suppressed = await isSuppressed(healer.contact_email);
+  if (suppressed !== false) {
+    return NextResponse.json(
+      {
+        error: suppressed ? 'suppressed' : 'suppression_check_failed',
+        message: suppressed
+          ? 'This address has bounced or marked an email as spam, so it is not written to.'
+          : 'Could not check the address with Resend. Try again in a minute.',
+      },
+      { status: suppressed ? 409 : 503 }
     );
   }
 
@@ -73,6 +99,17 @@ export async function POST(request) {
     healerName: healer.name,
     healerSlug: healer.healer_slug,
   });
+
+  if (result.suppressed) {
+    await supabase
+      .from('healer_journeys')
+      .update({ status: 'stopped', stop_reason: 'suppressed' })
+      .eq('id', journey.id);
+    return NextResponse.json(
+      { error: 'suppressed', message: 'This address has bounced or marked an email as spam. Nothing was sent.' },
+      { status: 409 }
+    );
+  }
 
   if (!result.sent) {
     // The row stays, deliberately. It records that a journey was started and

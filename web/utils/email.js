@@ -3,8 +3,11 @@ import { claimDecisionMessage } from './claimRequests.js';
 import { submissionDecisionMessage } from './contentSubmissions.js';
 import { SITE, greeting } from './emailParts.js';
 import {
+  OUTREACH_EMAILS,
   applicationApproved,
   explorerWelcome,
+  outreachEmail,
+  practitionerFirstName,
   practitionerWelcome,
   reviewApproved,
   reviewReceived,
@@ -257,7 +260,8 @@ export async function sendReviewReported({ report, title, adminUrl }) {
 
 /* ── HEALER OUTREACH JOURNEY ───────────────────────────────────────────── */
 
-// Cold outreach to a practitioner who has a listing but has not joined.
+// Cold outreach to a practitioner who has a listing but has not joined: C1–C8
+// in the approved copy (utils/emailTemplates.js → outreachEmail).
 //
 // FROM A PERSON, NOT A SYSTEM. Every other email here comes from
 // accounts@spiritpedia.co, which is right for a receipt and wrong for a letter
@@ -265,142 +269,71 @@ export async function sendReviewReported({ report, title, adminUrl }) {
 // that replies land in, so the whole exchange happens in one thread.
 //
 // THE WORDING IS LOAD-BEARING. The recipient has not joined, has not approved
-// anything and has not agreed to be listed. Every template has to say so
-// plainly and offer removal in the same breath; anything that implies consent
-// they never gave is both untrue and the fastest way to be reported as spam.
+// anything and has not agreed to be listed. Every template says so plainly and
+// offers removal in the same breath.
 const JOURNEY_FROM = 'Spiritpedia <love@spiritpedia.co>';
 
 // Days from started_at. Index 0 is email 1, which goes immediately.
-export const JOURNEY_SCHEDULE = [0, 21, 42, 63, 84];
+export const JOURNEY_SCHEDULE = [0, 21, 42, 63, 84, 105, 126, 147];
 
-export const JOURNEY_EMAILS = 5;
+export const JOURNEY_EMAILS = OUTREACH_EMAILS;
 
-// PLAIN TEXT, NO HTML, AND THAT IS THE POINT.
-//
-// A multipart email with an HTML body and anchor tags is what Gmail's tabbed
-// inbox reads as marketing, and it sorts it into Promotions where cold outreach
-// dies unseen. These carry a text part only, no markup and no links at all —
-// every call to action is "reply to this email", which is also the honest ask:
-// the reply is the conversation we actually want.
-//
-// It has a second effect worth naming. With nothing to click, the practitioner
-// cannot be sent anywhere they did not choose to go, and the listing's address
-// is only given to somebody who asks for it.
-function journeyTemplates({ firstName }) {
-  const hi = greeting(firstName);
+// The links every outreach email carries. The claim link works signed out:
+// /auth/claim sends a visitor with no account through sign-up and back.
+export function outreachLinks(healerSlug) {
+  const slug = encodeURIComponent(healerSlug);
   return {
-    1: {
-      subject: 'We came across your work',
-      text: `${hi}
-
-We came across your work on social sites and wanted to get in contact.
-
-Spiritpedia is a place where people can discover spiritual teachers, practitioners, explore their work and pay for their services. We'd love to interview you about what you do and the people you help.
-
-Would you be open to a conversation? You can simply reply to this email.
-
-We've also made a short public listing for you from information available online. You can view on the website. Please reply to this email and we will send you the link.
-
-You haven't joined Spiritpedia or approved the listing. If you'd like to take charge of it, you can claim the account by replying to this email.
-
-If anything is inaccurate, or you'd rather we remove the listing, reply to me and I'll take care of it.
-
-The interview is entirely optional.
-
-With love,
-The Spiritpedia team`,
-    },
-
-    2: {
-      subject: 'A place for your work on Spiritpedia',
-      text: `${hi}
-
-We wanted to follow up on our invitation to Spiritpedia.
-
-Users can explore the work of Eckhart Tolle, Abraham Hicks, Ram Dass and other established teachers here, alongside practitioners they may be discovering for the first time. We'd love your work to be part of that discovery.
-
-We've created a short public listing for you, but you haven't joined or approved it. Reply to this email if you would like to claim your account.
-
-If you'd prefer us to remove it or stop these emails, simply reply and we'll take care of it.
-
-With love,
-The Spiritpedia team`,
-    },
-
-    3: {
-      subject: 'Help people find your services on Spiritpedia',
-      text: `${hi}
-
-Finding a practitioner often starts with a question: who can help me with what I'm going through?
-
-Spiritpedia brings spiritual teachings and practitioner services into the same place. Someone exploring a subject that matters to them can discover a practitioner whose work speaks to that interest, then find out how to get in touch or book a session.
-
-We'd love people to discover what you offer, whether you work online or in person.
-
-Please reply to this email if you would like to claim your account.
-
-If you'd prefer us to remove it or stop these emails, simply reply.
-
-With love,
-The Spiritpedia team`,
-    },
-
-    4: {
-      subject: 'Let people discover your work',
-      text: `${hi}
-
-Before someone books a session, they may want to understand your approach and get a feel for the person behind the work.
-
-A Spiritpedia profile can bring your introduction, videos, resources and links together, giving people a place to explore before they get in touch.
-
-The short public listing we created for you is only a starting point. We'd love you to take charge of how your work is represented.
-
-Please reply to this email if you would like to claim your account.
-
-Our invitation to an interview is still open too. If that interests you, just reply.
-
-If you'd prefer us to remove the listing or stop these emails, reply and we'll take care of it.
-
-With love,
-The Spiritpedia team`,
-    },
-
-    5: {
-      subject: 'A final invitation from Spiritpedia',
-      text: `${hi}
-
-This is our final follow up about your Spiritpedia listing.
-
-We'd still love to welcome you and hear about your work. If you'd like to speak with us about an interview, simply reply. You're welcome to claim your profile whether or not you choose to be interviewed.
-
-Please reply to this email if you would like to claim your account.
-
-If the timing isn't right, there's nothing you need to do. We won't send any more reminders in this sequence.
-
-If you'd like the public listing removed, reply and we'll take care of it.
-
-With love,
-The Spiritpedia team`,
-    },
+    profileUrl: `${SITE}/healers/${slug}`,
+    claimUrl: `${SITE}/auth/claim?slug=${slug}`,
   };
 }
 
-// healerSlug is still accepted and no longer read: the templates carry no links
-// at all now. Kept in the signature because every caller passes it, and the day
-// a template needs the listing's address again it should not take a change at
-// four call sites to get it back.
+// Has this address bounced or complained before? Resend keeps that list
+// (suppressions), and a send to an address on it is accepted and then never
+// delivered — so the journey asks first.
+//   true  — on the list: stop writing to it
+//   false — not on it
+//   null  — the lookup failed: send nothing now and try again tomorrow
+export async function isSuppressed(address) {
+  if (!process.env.RESEND_API_KEY) return null;
+  try {
+    const { data, error } = await getResend().suppressions.get(address);
+    if (data) return true;
+    if (error?.name === 'not_found' || error?.statusCode === 404) return false;
+    console.error('[email] suppression lookup failed:', error);
+    return null;
+  } catch (err) {
+    console.error('[email] suppression lookup failed:', err);
+    return null;
+  }
+}
+
+// → { sent, recipient } on success, or { sent: false, suppressed: true } when
+// the practitioner's address is on the suppression list (the caller stops the
+// journey), or { sent: false, error } for anything to retry.
 export async function sendJourneyEmail({ emailNumber, to, healerName, healerSlug }) {
   // A TEST OVERRIDE THAT CANNOT BE FORGOTTEN BY ACCIDENT. While
   // JOURNEY_TEST_EMAIL is set, every journey email goes there instead of to the
   // practitioner — so a mistake during setup reaches one inbox rather than a
   // stranger's. Unset it in production and real outreach begins.
   const recipient = process.env.JOURNEY_TEST_EMAIL || to;
-  if (!recipient) return { sent: false, error: 'no_recipient' };
+  if (!to || !recipient) return { sent: false, error: 'no_recipient' };
 
-  const template = journeyTemplates({ firstName: firstNameFrom(healerName) })[emailNumber];
-
+  const template = outreachEmail(emailNumber, {
+    firstName: practitionerFirstName(healerName),
+    ...outreachLinks(healerSlug),
+  });
   if (!template) {
-    return { sent: false, error: `journey email ${emailNumber} has no template yet` };
+    return { sent: false, error: `journey email ${emailNumber} has no template` };
+  }
+
+  // The practitioner's own address is what decides whether the journey goes
+  // on, even while the test inbox receives the emails.
+  const suppressed = await isSuppressed(to);
+  if (suppressed === true) return { sent: false, suppressed: true, recipient };
+  if (suppressed === null) return { sent: false, error: 'suppression_check_failed', recipient };
+  if (recipient !== to && (await isSuppressed(recipient)) !== false) {
+    return { sent: false, error: 'test_inbox_suppressed_or_unknown', recipient };
   }
 
   // No html key at all, not an empty one: Resend builds a text/plain message

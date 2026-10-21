@@ -6,7 +6,7 @@ import Link from 'next/link';
 import AuthShell from '@/components/AuthShell';
 import { getSession, signInWithOtp } from '@/utils/supabaseAuth';
 import { recordPendingUserType } from '@/utils/onboarding';
-import { getUserType, setUserType, USER_TYPES } from '@/utils/userType';
+import { getUserType, setPendingClaim, setUserType, USER_TYPES } from '@/utils/userType';
 
 // Sign in and sign up are the same page, because they are the same action:
 // type your address, receive a code. signInWithOtp creates the user if the
@@ -24,9 +24,13 @@ export default function SignupPage() {
   // practitioner; anything else leaves the stored answer alone.
   useEffect(() => {
     try {
-      if (new URLSearchParams(window.location.search).get('as') === USER_TYPES.practitioner) {
+      const params = new URLSearchParams(window.location.search);
+      if (params.get('as') === USER_TYPES.practitioner) {
         setUserType(USER_TYPES.practitioner);
       }
+      // A claim link opened signed out (/auth/claim): back to that listing
+      // once the code is in (utils/onboarding.js → resolveDestination).
+      if (params.get('claim')) setPendingClaim(params.get('claim'), params.get('kind'));
     } catch {
       // No URL to read: the page asks nothing more of it.
     }

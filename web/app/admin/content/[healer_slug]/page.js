@@ -662,14 +662,14 @@ function journeyDate(value) {
   });
 }
 
-// The five-email outreach sequence, started by hand and stopped by itself.
+// The eight-email outreach sequence, started by hand and stopped by itself.
 //
 // Everything here is admin-only and goes through /api/admin/journey: the
 // healer_journeys table has RLS on and no policies at all, so the browser's
 // anonymous key cannot read a word of it. That is deliberate — it is a record
 // of what was sent to somebody who has not joined.
 function OutreachTab({ healer }) {
-  const [state, setState] = useState(null); // { journey, claimed }
+  const [state, setState] = useState(null); // { journey, claimed, doNotContact }
   const [busy, setBusy] = useState(false);
   const [toast, setToast] = useState(null);
   const [confirmingStop, setConfirmingStop] = useState(false);
@@ -749,21 +749,27 @@ function OutreachTab({ healer }) {
 
   if (!state) return <Placeholder icon="◴" title="Loading…" />;
 
-  const { journey, claimed } = state;
+  const { journey, claimed, doNotContact } = state;
 
   // NOTHING RUNNING — the start button, and the reasons it might refuse.
   if (!journey) {
     const blocked = claimed
       ? 'This healer has claimed their account.'
-      : !healer.contact_email
-        ? 'No contact email — add one to the healer profile first.'
-        : null;
+      : doNotContact
+        ? `Not to be emailed again. ${doNotContact}`
+        : healer.entity_type && healer.entity_type !== 'individual'
+          ? 'The outreach emails are written for individual practitioners. Channels, apps and organisations get their own versions later.'
+          : !healer.contact_email
+            ? 'No contact email — add one to the healer profile first.'
+            : null;
 
     return (
       <>
         <p className="text-sm leading-relaxed text-slate-400">
-          Five emails over twelve weeks, inviting this practitioner to talk and to claim their
-          listing. It stops by itself the moment they claim it.
+          Eight emails over 21 weeks, inviting this practitioner to talk and to claim their
+          listing. It stops by itself the moment they claim it, or if their address bounces or
+          marks one as spam. If they reply asking to stop or to be removed, press Stop and choose
+          that reason: they are never emailed again.
         </p>
 
         {blocked && (
@@ -779,7 +785,7 @@ function OutreachTab({ healer }) {
             disabled={busy || Boolean(blocked)}
             className="rounded-full bg-[#7c3aed] px-5 py-2.5 text-sm font-bold text-white transition-colors hover:bg-[#6d28d9] disabled:cursor-not-allowed disabled:opacity-40"
           >
-            {busy ? 'Sending…' : 'Start Journey'}
+            {busy ? 'Sending…' : 'Start email journey'}
           </button>
           {!blocked && (
             <span className="text-xs text-slate-500">
@@ -867,13 +873,35 @@ function OutreachTab({ healer }) {
             <p className="text-sm font-bold text-red-300">Stop this journey?</p>
             <p className="mt-1 text-xs leading-relaxed text-red-200/70">
               No further emails are sent. The record is kept, and a new journey can be started
-              later.
+              later unless they asked to stop or to be removed.
+            </p>
+            <div className="mt-3 flex flex-wrap gap-2">
+              {[
+                ['asked_to_stop', 'Asked to stop emails'],
+                ['removal_requested', 'Asked for removal'],
+              ].map(([value, label]) => (
+                <button
+                  key={value}
+                  type="button"
+                  onClick={() => setReason(value)}
+                  className={`rounded-full border px-3 py-1 text-xs font-bold ${
+                    reason === value
+                      ? 'border-red-400 bg-red-500/20 text-red-200'
+                      : 'border-white/15 text-slate-300 hover:bg-white/5'
+                  }`}
+                >
+                  {label}
+                </button>
+              ))}
+            </div>
+            <p className="mt-2 text-[11px] text-red-200/60">
+              Either of these means this listing is never emailed again.
             </p>
             <input
               type="text"
               value={reason}
               onChange={(e) => setReason(e.target.value)}
-              placeholder="Why — asked to stop, interview arranged, …"
+              placeholder="Or another reason — interview arranged, …"
               className="mt-3 w-full rounded-lg border border-white/10 bg-[#0a0f1d] px-3 py-2 text-sm text-white placeholder:text-slate-600 focus:border-[#7c3aed] focus:outline-none"
             />
             <div className="mt-3 flex justify-end gap-2">

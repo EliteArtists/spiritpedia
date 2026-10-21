@@ -115,3 +115,51 @@ test('D12: the references, the time in UTC, and no reporter', () => {
   assert.doesNotMatch(m.text, /With love/);
   assert.equal(formatWhen('nonsense'), 'not recorded');
 });
+
+import { OUTREACH_EMAILS, outreachEmail, practitionerFirstName } from './emailTemplates.js';
+
+const LINKS = {
+  profileUrl: 'https://www.spiritpedia.co/healers/jane-doe',
+  claimUrl: 'https://www.spiritpedia.co/auth/claim?slug=jane-doe',
+};
+
+test('C1–C8: eight plain-text emails, each with both links, removal and the team sign-off', () => {
+  assert.equal(OUTREACH_EMAILS, 8);
+  const subjects = [];
+  for (let n = 1; n <= 8; n += 1) {
+    const m = outreachEmail(n, { firstName: 'Jane', ...LINKS });
+    subjects.push(m.subject);
+    assert.equal(m.html, undefined, `email ${n} must be text only`);
+    assert.match(m.text, /^Hi Jane,\n\n/);
+    assert.ok(m.text.includes(LINKS.profileUrl), `email ${n} profile link`);
+    assert.ok(m.text.includes(LINKS.claimUrl), `email ${n} claim link`);
+    assert.match(m.text, /remov/i, `email ${n} offers removal`);
+    assert.match(m.text, /With love,\nThe Spiritpedia team$/);
+    assert.doesNotMatch(m.text, /\[|\]|undefined|pay for/);
+  }
+  assert.deepEqual(subjects, [
+    'An invitation from Spiritpedia',
+    'A place for your work on Spiritpedia',
+    'Help people find the services you offer',
+    'Let people get to know your work',
+    'Give people a reason to return to your work',
+    "We'd love to hear the story behind your work",
+    'Your work, in your own words',
+    'A final invitation from Spiritpedia',
+  ]);
+  assert.equal(outreachEmail(9, { firstName: 'Jane', ...LINKS }), null);
+});
+
+test('C4–C8 put the two links on their own lines', () => {
+  const m = outreachEmail(4, { firstName: '', ...LINKS });
+  assert.match(m.text, /^Hello,/);
+  assert.ok(m.text.includes(`View your listing: ${LINKS.profileUrl}\nClaim your profile: ${LINKS.claimUrl}`));
+});
+
+test('outreach first name skips titles; nothing usable means "Hello,"', () => {
+  assert.equal(practitionerFirstName('Dr. Jane Smith'), 'Jane');
+  assert.equal(practitionerFirstName('Prof Ann Lee'), 'Ann');
+  assert.equal(practitionerFirstName('Jane'), 'Jane');
+  assert.equal(practitionerFirstName('  '), '');
+  assert.equal(practitionerFirstName(null), '');
+});

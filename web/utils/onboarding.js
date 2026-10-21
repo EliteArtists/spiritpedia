@@ -2,7 +2,7 @@
 
 import { supabaseAuth } from './supabaseAuth.js';
 import { syncFavouritesWithAccount } from './favouritesSync.js';
-import { USER_TYPES, getUserType } from './userType.js';
+import { USER_TYPES, getUserType, takePendingClaim } from './userType.js';
 import { chooseClaim, claimPath } from './listings.js';
 
 // Everything that happens in the seconds after a code is accepted: move what
@@ -240,8 +240,11 @@ export async function findClaimableListing(email) {
   return byDomain && !byDomain.ambiguous ? byDomain : null;
 }
 
-// Where a newly verified user goes next.
+// Where a newly verified user goes next. A claim link they followed comes
+// first: straight back to that listing, where the database checks the email.
 export async function resolveDestination(user, userType) {
+  const pending = takePendingClaim();
+  if (pending) return claimPath(pending);
   if (userType !== USER_TYPES.practitioner) return '/';
 
   const claim = await findClaimableListing(user?.email);

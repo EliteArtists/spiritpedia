@@ -34,3 +34,29 @@ export function getUserType() {
     return null;
   }
 }
+
+// THE LISTING A CLAIM LINK WAS FOR, carried across sign-up. An outreach email's
+// claim link reaches /auth/claim signed out; the visitor is sent through
+// sign-up and the code, and this brings them back to the same listing. The
+// code is typed in the same tab, so sessionStorage covers it. Taken once.
+const PENDING_CLAIM_KEY = 'pendingClaim';
+
+export function setPendingClaim(slug, kind) {
+  try {
+    if (slug) sessionStorage.setItem(PENDING_CLAIM_KEY, JSON.stringify({ slug, kind: kind || null }));
+  } catch {
+    // Without storage the claim is found by email instead, as before.
+  }
+}
+
+// → { slug, kind } or null, and forgets it.
+export function takePendingClaim() {
+  try {
+    const raw = sessionStorage.getItem(PENDING_CLAIM_KEY);
+    sessionStorage.removeItem(PENDING_CLAIM_KEY);
+    const value = raw ? JSON.parse(raw) : null;
+    return typeof value?.slug === 'string' && value.slug ? value : null;
+  } catch {
+    return null;
+  }
+}
