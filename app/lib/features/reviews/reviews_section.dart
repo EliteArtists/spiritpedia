@@ -484,10 +484,10 @@ class _ReviewFormState extends ConsumerState<ReviewForm> {
       }
       return;
     }
-    unawaited(service.notifyReceived(widget.target).catchError((_) {}));
-    // A new review (activity learning, migration 0021); an edit is not a
-    // second one.
+    // A new review (activity learning, migration 0021; "We've received your
+    // review"); an edit is not a second one.
     if (!_editing) {
+      unawaited(service.notifyReceived(widget.target).catchError((_) {}));
       ref
           .read(activityLogProvider)
           .content('review', widget.target.type, widget.target.slug);

@@ -178,6 +178,19 @@ void main() {
       expect(find.text('Gentle and clear.'), findsOneWidget);
       expect(find.text('3.0 · 2 reviews'), findsOneWidget);
       expect(find.text('Edit your review'), findsOneWidget);
+
+      // An edit is saved, but "We've received your review" is not sent again.
+      await tester.tap(find.text('Edit your review'));
+      await tester.pumpAndSettle();
+      await tester.tap(find.byKey(const ValueKey('rate-5')));
+      await tester.pump();
+      await tester.tap(find.byKey(const ValueKey('submit-review')));
+      await tester.pumpAndSettle();
+      expect(reviews.calls, contains('save:book:the-power-of-now:5'));
+      expect(
+        reviews.calls.where((c) => c.startsWith('notifyReceived')),
+        hasLength(1),
+      );
     },
   );
 

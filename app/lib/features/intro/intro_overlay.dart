@@ -150,7 +150,8 @@ class IntroOverlay extends ConsumerStatefulWidget {
   static const double startStarWidth = 120;
 
   static const greeting = 'I am your guiding star';
-  static const callout = 'Tap me anytime to come home';
+  static const callout =
+      'Tap me anytime to come home. Press and hold to open your Library.';
 
   @override
   ConsumerState<IntroOverlay> createState() => _IntroOverlayState();

@@ -141,15 +141,15 @@ void main() {
       expect(find.text('Explorer'), findsOneWidget);
     });
 
-    test('a new account is asked first, then gets ONE welcome; a returning '
-        'one is asked nothing and gets none', () async {
+    test('a new account gets ONE welcome at once, before it is asked; a '
+        'returning one is asked nothing and gets none', () async {
       final c = container();
       await c.read(accountProvider.notifier).verifyCode(_email, '123456');
       await settle();
       expect(service.profiles[_userId]?.userType, 'explorer');
-      // "How will you use Spiritpedia?" comes before the welcome.
+      // Sent when the account is created, not after the answer.
       expect(c.read(accountProvider).isNew, isTrue);
-      expect(service.calls, isNot(contains('sendWelcome')));
+      expect(service.calls.where((x) => x == 'sendWelcome'), hasLength(1));
       await c.read(accountProvider.notifier).chooseExploring();
       expect(c.read(accountProvider).isNew, isFalse);
       expect(service.calls.where((x) => x == 'sendWelcome'), hasLength(1));
@@ -163,7 +163,7 @@ void main() {
     });
 
     test(
-      '"I share my work": noted for the website, no explorer welcome',
+      '"I share my work": noted for the website; the welcome already went',
       () async {
         final c = container();
         await c.read(accountProvider.notifier).verifyCode(_email, '123456');
@@ -174,7 +174,7 @@ void main() {
           service.calls,
           contains('practitionerIntent:seeker@example.com'),
         );
-        expect(service.calls, isNot(contains('sendWelcome')));
+        expect(service.calls.where((x) => x == 'sendWelcome'), hasLength(1));
         // The app itself still says explorer until the website says otherwise.
         expect(service.profiles[_userId]?.userType, 'explorer');
       },

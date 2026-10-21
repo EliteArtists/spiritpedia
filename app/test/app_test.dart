@@ -1497,7 +1497,8 @@ void main() {
       // A brand-new account: "How will you use Spiritpedia?", once.
       expect(find.byKey(const ValueKey('user-type-card')), findsOneWidget);
       expect(find.text('How will you use Spiritpedia?'), findsOneWidget);
-      expect(account.calls, isNot(contains('sendWelcome')));
+      // The welcome went when the account was created, before the question.
+      expect(account.calls.where((x) => x == 'sendWelcome'), hasLength(1));
       await tester.tap(find.byKey(const ValueKey('user-type-sharing')));
       await tester.pumpAndSettle();
       expect(find.text('Continue on spiritpedia.co'), findsOneWidget);
@@ -1506,7 +1507,7 @@ void main() {
       await tester.tap(find.byKey(const ValueKey('user-type-exploring')));
       await tester.pumpAndSettle();
       expect(find.byKey(const ValueKey('user-type-card')), findsNothing);
-      expect(account.calls, contains('sendWelcome'));
+      expect(account.calls.where((x) => x == 'sendWelcome'), hasLength(1));
       expect(find.text('Worldwide'), findsOneWidget);
     });
   });

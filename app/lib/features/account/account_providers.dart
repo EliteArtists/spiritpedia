@@ -40,7 +40,7 @@ class AccountState {
 
   /// A brand-new account that has not yet said how it will use Spiritpedia
   /// ("How will you use Spiritpedia?", [AccountController.chooseExploring],
-  /// [AccountController.chooseSharing]). Its welcome waits for the answer.
+  /// [AccountController.chooseSharing]). Its welcome has already gone.
   final bool isNew;
 
   bool get signedIn => status == AccountStatus.signedIn;
@@ -111,6 +111,11 @@ class AccountController extends Notifier<AccountState> {
       // A new account is asked how it will use Spiritpedia first; the
       // welcome follows the answer.
       final created = await _service.ensureProfile(user.id);
+      // The welcome goes the moment the account exists, not after "How will
+      // you use Spiritpedia?": someone who closes the app before answering
+      // still gets it. The website checks the account is an explorer and
+      // sends it once (and starts the Day 4 clock from the account itself).
+      if (created) unawaited(_service.sendWelcome().catchError((_) {}));
       final profile = await _service.profile(user.id);
       await name.syncWithAccount(user.id, profile?.fullName);
       if (_syncedUserId == user.id) {
@@ -122,22 +127,19 @@ class AccountController extends Notifier<AccountState> {
     }
   }
 
-  /// "I'm exploring" — or the question put away: the explorer welcome,
-  /// and the app carries on as it is.
+  /// "I'm exploring" — or the question put away: the app carries on as it
+  /// is. (The welcome already went when the account was created.)
   Future<void> chooseExploring() async {
     final user = state.user;
     if (user == null || !state.isNew) return;
     state = AccountState.signedIn(user, profile: state.profile);
-    try {
-      await _service.sendWelcome();
-    } catch (_) {}
   }
 
   /// "I share my work": the account is noted as a practitioner-to-be by its
   /// email (the website's pending_user_types), so signing in on the website
   /// takes them to its application and makes them a practitioner there. The
-  /// caller opens the website. No explorer welcome: the website sends the
-  /// practitioner one.
+  /// caller opens the website, which sends the practitioner welcome on top
+  /// of the explorer one already sent.
   Future<void> chooseSharing() async {
     final user = state.user;
     if (user == null || !state.isNew) return;
