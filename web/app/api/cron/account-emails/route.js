@@ -4,6 +4,8 @@ import { firstNameFrom, sendEmail, sendPractitionerWelcome } from '@/utils/email
 import { sendOnce } from '@/utils/emailOnce';
 import { explorerDay4 } from '@/utils/emailTemplates';
 import { isExplorerForDay4, unsubscribeHeaders, unsubscribePageUrl } from '@/utils/unsubscribe';
+import { loadCatalogue } from '@/utils/discoveryData';
+import { sendEdition } from '@/utils/discoveryEditions';
 
 export const dynamic = 'force-dynamic';
 
@@ -13,6 +15,11 @@ export const dynamic = 'force-dynamic';
 //                 Never to anyone who has applied as a practitioner (declined
 //                 applicants included), manages a listing, or has
 //                 unsubscribed.
+//   Edition 1   — the first personal discovery edition (B3), ten days after
+//                 the account was made, to the same people as Day 4. If there
+//                 isn't enough for it (a featured discovery and two other
+//                 sections), it is tried again each day up to day 17, then
+//                 left for the monthly cadence (not built yet).
 //   Welcome     — the practitioner welcome that waited for a claim
 //                 (/api/email/practitioner-welcome) goes a day after sign-up
 //                 to anyone who has neither claimed nor chosen by then. Also
@@ -46,7 +53,7 @@ export async function GET(request) {
 
   const now = Date.now();
   const earliest = new Date(Math.max(now - LOOK_BACK_DAYS * DAY_MS, Date.parse(RECORDS_SINCE))).toISOString();
-  const tally = { day4_sent: 0, welcome_sent: 0, skipped: 0, errors: 0 };
+  const tally = { day4_sent: 0, edition1_sent: 0, edition1_not_enough: 0, welcome_sent: 0, skipped: 0, errors: 0 };
 
   const addressOf = async (id) => (await supabase.auth.admin.getUserById(id)).data?.user?.email || null;
   const alreadySent = async (kind, ids) => {
@@ -100,6 +107,47 @@ export async function GET(request) {
     } catch (err) {
       console.error(`[account-emails] day 4 for ${profile.id} failed:`, err);
       tally.errors += 1;
+    }
+  }
+
+  /* ── Edition 1, Day 10 to Day 17 ── */
+  const { data: readers, error: readerError } = await supabase
+    .from('user_profiles')
+    .select('id, user_type, verification_status, linked_healer_slug, linked_publisher_id, created_at')
+    .eq('user_type', 'explorer')
+    .gte('created_at', new Date(Math.max(now - 17 * DAY_MS, Date.parse(RECORDS_SINCE))).toISOString())
+    .lte('created_at', new Date(now - 10 * DAY_MS).toISOString());
+  if (readerError) return NextResponse.json({ error: readerError.message }, { status: 500 });
+
+  // OFF until DISCOVERY_EDITIONS is set to "on" in Vercel, once the test-sends
+  // have been checked in Gmail, Apple Mail and Outlook. The admin preview and
+  // test-send work either way.
+  const editionsOn = process.env.DISCOVERY_EDITIONS === 'on';
+  const editionDue = editionsOn ? (readers || []).filter(isExplorerForDay4) : [];
+  tally.editions_switched_on = editionsOn;
+  if (editionDue.length) {
+    const { data: done } = await supabase
+      .from('discovery_editions')
+      .select('user_id')
+      .eq('edition_number', 1)
+      .eq('status', 'sent')
+      .in('user_id', editionDue.map((p) => p.id));
+    const sentAlready = new Set((done || []).map((r) => r.user_id));
+    // The catalogue is the same for everyone: loaded once, only if needed.
+    let shared = null;
+    for (const profile of editionDue) {
+      if (sentAlready.has(profile.id)) continue;
+      try {
+        shared ||= await loadCatalogue(supabase);
+        const result = await sendEdition(supabase, shared, profile.id, 1);
+        if (result.status === 'sent') tally.edition1_sent += 1;
+        else if (result.status === 'skipped') tally.edition1_not_enough += 1;
+        else if (result.status === 'failed') tally.errors += 1;
+        else tally.skipped += 1;
+      } catch (err) {
+        console.error(`[account-emails] edition 1 for ${profile.id} failed:`, err);
+        tally.errors += 1;
+      }
     }
   }
 

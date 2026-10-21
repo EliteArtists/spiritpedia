@@ -5,13 +5,14 @@ import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import { supabase } from '@/utils/supabase.js';
 import ConfirmDelete from './ConfirmDelete.jsx';
+import DiscoveriesTab from './DiscoveriesTab.jsx';
 import { StatusPill } from './QueueTable.jsx';
 import { deriveStatus, hasVisibleStatus, timeAgo } from './queue.js';
 import { Placeholder } from './AdminPlaceholders.jsx';
 
 // No Activity tab, by design (migration 0021): admin sees totals in
 // Admin → Activity, never one person's browsing.
-const TABS = ['Profile', 'Content', 'Admin Notes'];
+const TABS = ['Profile', 'Content', 'Discoveries', 'Admin Notes'];
 const STATUSES = ['pending', 'approved', 'rejected'];
 
 const TIER_WORDS = {
@@ -604,7 +605,10 @@ export default function PersonRecord({ personId, onBack, backLabel, onChanged })
     }
   };
 
-  const visibleTabs = practitioner ? TABS : TABS.filter((t) => t !== 'Profile' && t !== 'Content');
+  // Discoveries are for explorers only (personal discovery editions, 0026).
+  const visibleTabs = practitioner
+    ? TABS.filter((t) => t !== 'Discoveries')
+    : TABS.filter((t) => t !== 'Profile' && t !== 'Content');
 
   return (
     <>
@@ -775,6 +779,7 @@ export default function PersonRecord({ personId, onBack, backLabel, onChanged })
         )}
 
         {tab === 'Content' && practitioner && <ContentTab healer={healer} content={data.content} />}
+        {tab === 'Discoveries' && !practitioner && <DiscoveriesTab personId={personId} />}
         {tab === 'Admin Notes' && <NotesTab personId={personId} />}
       </div>
 

@@ -37,6 +37,7 @@ export async function GET(request) {
   const claims = await purgeDecidedClaimRequests(supabase);
   const submissions = await purgeDecidedSubmissions(supabase, new Date(), HOLDING_BUCKET);
   const abandoned = await purgeAbandonedUploads(supabase);
+  const editions = await purgeOldEditions(supabase);
 
   const failed = Boolean(error || claims.error || submissions.error);
   return NextResponse.json(
@@ -46,6 +47,7 @@ export async function GET(request) {
       claim_requests_deleted: claims.error ? null : claims.deleted,
       submissions_deleted: submissions.error ? null : submissions.deleted,
       abandoned_images_deleted: abandoned,
+      discovery_editions_deleted: editions,
       ...(error ? { activity_error: error.message } : {}),
       ...(claims.error ? { claim_requests_error: claims.error } : {}),
       ...(submissions.error ? { submissions_error: submissions.error } : {}),
@@ -75,4 +77,18 @@ async function purgeAbandonedUploads(supabase) {
   } catch {
     return null;
   }
+}
+
+// Personal discovery editions (0026) are kept 12 months — long enough not to
+// repeat ourselves — then deleted. The Privacy Policy says so. → count or null.
+const EDITION_RETENTION_MONTHS = 12;
+async function purgeOldEditions(supabase, now = new Date()) {
+  const cutoff = new Date(now);
+  cutoff.setUTCMonth(cutoff.getUTCMonth() - EDITION_RETENTION_MONTHS);
+  const { data, error } = await supabase
+    .from('discovery_editions')
+    .delete()
+    .lt('created_at', cutoff.toISOString())
+    .select('id');
+  return error ? null : data?.length || 0;
 }

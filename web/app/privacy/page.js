@@ -374,6 +374,12 @@ export default function PrivacyPage() {
             account, when it is deleted straight away.
           </li>
           <li>
+            Personal discovery editions — a record of what we chose for each edition we send you is
+            kept for 12 months, so we don&apos;t repeat ourselves, then deleted. You can view an
+            edition online for 30 days after it&apos;s sent; the page doesn&apos;t show your name.
+            Whether you&apos;ve turned these emails off is kept until you delete your account.
+          </li>
+          <li>
             Anonymous totals of what is opened, saved and searched for — 25 months. Searches that
             found nothing — 90 days.
           </li>

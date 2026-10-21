@@ -9,6 +9,7 @@ import PractitionerDashboard from '@/components/PractitionerDashboard';
 import PublisherDashboard from '@/components/PublisherDashboard';
 import DeleteAccount from '@/components/DeleteAccount';
 import LearningSwitch from '@/components/LearningSwitch';
+import EmailPreferencesSwitch from '@/components/EmailPreferencesSwitch';
 
 const SUPPORT_EMAIL = 'love@spiritpedia.co';
 
@@ -252,6 +253,15 @@ export default function AccountPage() {
         {!showDashboard && (
           <div className="mt-6">
             <LearningSwitch userId={state.userId} />
+          </div>
+        )}
+
+        {/* Day 4 and the personal editions go to explorers who have never
+            applied (utils/unsubscribe.js → isExplorerForDay4), so the switch
+            is shown to them only. */}
+        {!isPractitioner && status !== 'rejected' && !healerSlug && !publisherId && (
+          <div className="mt-6">
+            <EmailPreferencesSwitch />
           </div>
         )}
 
