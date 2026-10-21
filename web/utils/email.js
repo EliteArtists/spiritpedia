@@ -1,7 +1,15 @@
 import { getResend } from './resend.js';
 import { claimDecisionMessage } from './claimRequests.js';
-import { listingLiveMessage } from './listingApproved.js';
 import { submissionDecisionMessage } from './contentSubmissions.js';
+import { SITE, greeting } from './emailParts.js';
+import {
+  applicationApproved,
+  explorerWelcome,
+  practitionerWelcome,
+  reviewApproved,
+  reviewReceived,
+  reviewReported,
+} from './emailTemplates.js';
 
 // SERVER ONLY, because utils/resend.js is. Importing this from a client
 // component would put the SDK in a public bundle and leave RESEND_API_KEY
@@ -88,31 +96,19 @@ export async function sendEmail({ to, subject, html, text, from = FROM }) {
 }
 
 // What to call someone. full_name is free text and often absent, so this takes
-// the first word and falls back twice rather than greeting anybody "Hi null".
+// the first word, or '' when there is none — and greeting() (utils/emailParts.js)
+// then says "Hello," rather than "Hi null" or "Hi there".
 export function firstNameFrom(fullName) {
   const name = (fullName || '').trim();
-  if (!name) return 'there';
+  if (!name) return '';
   return name.split(/\s+/)[0] || name;
 }
 
 /* ── 1. EXPLORER WELCOME ───────────────────────────────────────────────── */
 
-export async function sendExplorerWelcome({ email, firstName }) {
-  return sendEmail({
-    to: email,
-    subject: 'Welcome to Spiritpedia',
-    text: `Hi ${firstName},
-
-Welcome to Spiritpedia. It's a place to follow the teachers, practices and ideas that speak to you, and to discover where they lead next.
-
-Start by adding a few favourites. You can save people, platforms and resources to My Library. As your library grows, the discoveries we share with you will become more personal.
-
-Explore Spiritpedia: https://spiritpedia.co
-
-With love,
-The Spiritpedia team`,
-    html: `<p>Hi ${firstName},</p><p>Welcome to Spiritpedia. It's a place to follow the teachers, practices and ideas that speak to you, and to discover where they lead next.</p><p>Start by adding a few favourites. You can save people, platforms and resources to My Library. As your library grows, the discoveries we share with you will become more personal.</p><p><a href="https://spiritpedia.co">Explore Spiritpedia</a></p><p>With love,<br>The Spiritpedia team</p>`,
-  });
+// The app and website versions differ; platform is user_profiles.signup_platform.
+export async function sendExplorerWelcome({ email, firstName, platform }) {
+  return sendEmail({ to: email, ...explorerWelcome({ firstName, platform }) });
 }
 
 // Where a review's subject lives on the public site, keyed by content_type.
@@ -130,81 +126,35 @@ export function contentUrl(contentType, contentSlug) {
   return path ? `${SITE}${path}/${contentSlug}` : SITE;
 }
 
-const SITE = 'https://spiritpedia.co';
-
 /* ── 2. PRACTITIONER WELCOME ───────────────────────────────────────────── */
 
 export async function sendPractitionerWelcome({ email, firstName }) {
-  const link = `${SITE}/auth/practitioner-setup`;
-
-  return sendEmail({
-    to: email,
-    subject: 'Welcome to Spiritpedia',
-    text: `Hi ${firstName},
-
-Welcome to Spiritpedia. We're glad you're here both as a practitioner and as someone who can explore the work of others.
-
-Your practitioner space is where you can tell people about your work and manage the information you share on Spiritpedia. We'll guide you through the next steps from there.
-
-Continue your practitioner setup: ${link}
-
-With love,
-The Spiritpedia team`,
-    html: `<p>Hi ${firstName},</p><p>Welcome to Spiritpedia. We're glad you're here both as a practitioner and as someone who can explore the work of others.</p><p>Your practitioner space is where you can tell people about your work and manage the information you share on Spiritpedia. We'll guide you through the next steps from there.</p><p><a href="${link}">Continue your practitioner setup</a></p><p>With love,<br>The Spiritpedia team</p>`,
-  });
+  return sendEmail({ to: email, ...practitionerWelcome({ firstName }) });
 }
 
 /* ── 3. REVIEW RECEIVED ────────────────────────────────────────────────── */
 
-// `by {creator}` is dropped entirely rather than rendered empty when the
-// creator is unknown — "your review of X by " reads as a bug.
-function byLine(creatorName) {
-  return creatorName ? ` by ${creatorName}` : '';
-}
-
 export async function sendReviewReceived({ email, firstName, title, creatorName }) {
-  return sendEmail({
-    to: email,
-    subject: `We've received your review of ${title}`,
-    text: `Hi ${firstName},
-
-Thank you for reviewing ${title}${byLine(creatorName)}.
-
-Your review is now with our team for assessment. We'll email you once we've reviewed it.
-
-With love,
-The Spiritpedia team`,
-    html: `<p>Hi ${firstName},</p><p>Thank you for reviewing ${title}${byLine(creatorName)}.</p><p>Your review is now with our team for assessment. We'll email you once we've reviewed it.</p><p>With love,<br>The Spiritpedia team</p>`,
-  });
+  return sendEmail({ to: email, ...reviewReceived({ firstName, title, creatorName }) });
 }
 
 /* ── 4. REVIEW APPROVED ────────────────────────────────────────────────── */
 
 export async function sendReviewApproved({ email, firstName, title, creatorName, url }) {
-  return sendEmail({
-    to: email,
-    subject: `Your review of ${title} is now live`,
-    text: `Hi ${firstName},
-
-Your review of ${title}${byLine(creatorName)} has been accepted and is now live on Spiritpedia.
-
-Thank you for sharing your experience. Your perspective helps others decide what they'd like to explore.
-
-View your review: ${url}
-
-With love,
-The Spiritpedia team`,
-    html: `<p>Hi ${firstName},</p><p>Your review of ${title}${byLine(creatorName)} has been accepted and is now live on Spiritpedia.</p><p>Thank you for sharing your experience. Your perspective helps others decide what they'd like to explore.</p><p><a href="${url}">View your review</a></p><p>With love,<br>The Spiritpedia team</p>`,
-  });
+  return sendEmail({ to: email, ...reviewApproved({ firstName, title, creatorName, url }) });
 }
 
 /* ── 5. REVIEW REJECTED ────────────────────────────────────────────────── */
 
+// The old wording until the admin can record a reason for the member (the
+// approved copy's D11 needs one); only the greeting follows the new rule.
 export async function sendReviewRejected({ email, firstName, title, creatorName }) {
+  const hi = greeting(firstName);
+  const byLine = (name) => (name ? ` by ${name}` : '');
   return sendEmail({
     to: email,
     subject: `An update on your review of ${title}`,
-    text: `Hi ${firstName},
+    text: `${hi}
 
 Thank you for taking the time to review ${title}${byLine(creatorName)}.
 
@@ -216,7 +166,7 @@ If you think we've misunderstood your review, please do reply to this email.
 
 With love,
 The Spiritpedia team`,
-    html: `<p>Hi ${firstName},</p><p>Thank you for taking the time to review ${title}${byLine(creatorName)}.</p><p>After assessing your submission, we're unable to publish your review.</p><p>Please email <a href="mailto:${ADMIN_EMAIL}">${ADMIN_EMAIL}</a> for more information. Or reply to this email.</p><p>If you think we've misunderstood your review, please do reply to this email.</p><p>With love,<br>The Spiritpedia team</p>`,
+    html: `<p>${hi}</p><p>Thank you for taking the time to review ${title}${byLine(creatorName)}.</p><p>After assessing your submission, we're unable to publish your review.</p><p>Please email <a href="mailto:${ADMIN_EMAIL}">${ADMIN_EMAIL}</a> for more information. Or reply to this email.</p><p>If you think we've misunderstood your review, please do reply to this email.</p><p>With love,<br>The Spiritpedia team</p>`,
   });
 }
 
@@ -224,13 +174,11 @@ The Spiritpedia team`,
 
 // A "Request to claim it" was approved or rejected in the Inbox
 // (/api/admin/claim-request). The wording is in utils/claimRequests.js.
-export async function sendClaimDecision({ email, firstName, decision, listingName, listingPath }) {
+export async function sendClaimDecision({ email, firstName, decision, listingName }) {
   const message = claimDecisionMessage({
     decision,
     firstName,
     listingName,
-    listingUrl: `${SITE}${listingPath}`,
-    accountUrl: `${SITE}/account`,
     supportEmail: ADMIN_EMAIL,
   });
   return sendEmail({ to: email, ...message });
@@ -238,17 +186,13 @@ export async function sendClaimDecision({ email, firstName, decision, listingNam
 
 /* ── 5c. LISTING LIVE ──────────────────────────────────────────────────── */
 
-// The admin approved someone's listing (/api/admin/practitioner). The wording
-// is in utils/listingApproved.js.
+// The admin approved someone's listing (/api/admin/practitioner): D3 in the
+// approved copy, utils/emailTemplates.js.
 export async function sendListingLive({ email, firstName, listingName, listingPath }) {
-  const message = listingLiveMessage({
-    firstName,
-    listingName,
-    listingUrl: `${SITE}${listingPath}`,
-    accountUrl: `${SITE}/account`,
-    supportEmail: ADMIN_EMAIL,
+  return sendEmail({
+    to: email,
+    ...applicationApproved({ firstName, listingName, listingUrl: `${SITE}${listingPath}` }),
   });
-  return sendEmail({ to: email, ...message });
 }
 
 /* ── 5d. CONTENT DECIDED ───────────────────────────────────────────────── */
@@ -287,8 +231,7 @@ export async function sendSubmissionDecision({
 
 // A member reported a review from the app (review_reports, migration 0015).
 // To the admin, at once: Apple's guideline 1.2 expects reports to be acted on
-// within 24 hours, and the Terms promise it. Everything quoted here was typed
-// by members, so all of it is escaped before it goes into the HTML.
+// within 24 hours, and the Terms promise it. renderEmail escapes everything.
 const REPORT_REASONS = {
   spam: 'Spam or advertising',
   offensive: 'Offensive or hateful',
@@ -297,40 +240,18 @@ const REPORT_REASONS = {
   other: 'Something else',
 };
 
-function escapeHtml(value) {
-  return String(value ?? '')
-    .replace(/&/g, '&amp;')
-    .replace(/</g, '&lt;')
-    .replace(/>/g, '&gt;')
-    .replace(/"/g, '&quot;')
-    .replace(/'/g, '&#39;');
-}
 
-export async function sendReviewReported({ report, title, url, adminUrl }) {
-  const reason = REPORT_REASONS[report.reason] || report.reason;
-  const author = report.review_author_name || 'A Spiritpedia member';
-  const stars = report.review_rating ? `${report.review_rating}-star` : 'A';
-  const lines = [
-    `${stars} review of ${title} by ${author} was reported: ${reason}.`,
-    report.note ? `Their note: "${report.note}"` : null,
-    '',
-    'The review, as it was when reported:',
-    report.review_body || '(no text, rating only)',
-    '',
-    `Where it is: ${url}`,
-    `Decide in the dashboard: ${adminUrl}`,
-    '',
-    'Reports are promised a decision within 24 hours.',
-  ].filter((line) => line !== null);
+export async function sendReviewReported({ report, title, adminUrl }) {
   return sendEmail({
     to: ADMIN_EMAIL,
-    subject: `Review reported: ${reason} — ${title}`,
-    text: lines.join('\n'),
-    html: `<p>${escapeHtml(stars)} review of <strong>${escapeHtml(title)}</strong> by ${escapeHtml(author)} was reported: <strong>${escapeHtml(reason)}</strong>.</p>${
-      report.note ? `<p>Their note: “${escapeHtml(report.note)}”</p>` : ''
-    }<p>The review, as it was when reported:</p><blockquote style="border-left:3px solid #ccc;margin:0;padding:4px 12px;white-space:pre-line">${escapeHtml(
-      report.review_body || '(no text, rating only)'
-    )}</blockquote><p><a href="${escapeHtml(url)}">Where it is</a> · <a href="${escapeHtml(adminUrl)}">Decide in the dashboard</a></p><p>Reports are promised a decision within 24 hours.</p>`,
+    ...reviewReported({
+      title,
+      reviewId: report.review_id,
+      reportId: report.id,
+      reason: REPORT_REASONS[report.reason] || report.reason,
+      reportedAt: report.created_at,
+      adminUrl,
+    }),
   });
 }
 
@@ -366,10 +287,11 @@ export const JOURNEY_EMAILS = 5;
 // cannot be sent anywhere they did not choose to go, and the listing's address
 // is only given to somebody who asks for it.
 function journeyTemplates({ firstName }) {
+  const hi = greeting(firstName);
   return {
     1: {
       subject: 'We came across your work',
-      text: `Hi ${firstName},
+      text: `${hi}
 
 We came across your work on social sites and wanted to get in contact.
 
@@ -391,7 +313,7 @@ The Spiritpedia team`,
 
     2: {
       subject: 'A place for your work on Spiritpedia',
-      text: `Hi ${firstName},
+      text: `${hi}
 
 We wanted to follow up on our invitation to Spiritpedia.
 
@@ -407,7 +329,7 @@ The Spiritpedia team`,
 
     3: {
       subject: 'Help people find your services on Spiritpedia',
-      text: `Hi ${firstName},
+      text: `${hi}
 
 Finding a practitioner often starts with a question: who can help me with what I'm going through?
 
@@ -425,7 +347,7 @@ The Spiritpedia team`,
 
     4: {
       subject: 'Let people discover your work',
-      text: `Hi ${firstName},
+      text: `${hi}
 
 Before someone books a session, they may want to understand your approach and get a feel for the person behind the work.
 
@@ -445,7 +367,7 @@ The Spiritpedia team`,
 
     5: {
       subject: 'A final invitation from Spiritpedia',
-      text: `Hi ${firstName},
+      text: `${hi}
 
 This is our final follow up about your Spiritpedia listing.
 

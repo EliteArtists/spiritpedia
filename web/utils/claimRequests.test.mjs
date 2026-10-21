@@ -75,11 +75,10 @@ const base = {
 
 test('approved: says so, links the account page and the listing', () => {
   const m = claimDecisionMessage({ ...base, decision: 'approved' });
-  assert.equal(m.subject, 'Your claim to Hay House is approved');
+  assert.equal(m.subject, 'You can now manage Hay House on Spiritpedia');
   assert.match(m.text, /^Hi Ross,/);
-  assert.match(m.text, /has been approved/);
-  assert.match(m.text, /https:\/\/spiritpedia\.co\/account/);
-  assert.match(m.text, /https:\/\/spiritpedia\.co\/publishers\/hay-house/);
+  assert.match(m.text, /Your request to manage Hay House has been approved\./);
+  assert.match(m.text, /Manage your listing: https:\/\/www\.spiritpedia\.co\/account/);
   assert.match(m.text, /With love,\nThe Spiritpedia team$/);
 });
 
@@ -95,6 +94,6 @@ test('names are escaped in the HTML; a missing name still reads', () => {
   const m = claimDecisionMessage({ ...base, decision: 'approved', listingName: 'Tom & <Jerry>' });
   assert.match(m.html, /Tom &amp; &lt;Jerry&gt;/);
   const unnamed = claimDecisionMessage({ ...base, decision: 'rejected', listingName: null, firstName: '' });
-  assert.match(unnamed.text, /^Hi there,/);
+  assert.match(unnamed.text, /^Hello,/);
   assert.match(unnamed.subject, /the listing/);
 });

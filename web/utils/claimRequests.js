@@ -1,6 +1,9 @@
 // "Request to claim it" (claim_requests, migration 0020): what happens after
-// the admin decides. Plain functions with no imports, so they are tested
-// without Supabase or Resend (claimRequests.test.mjs).
+// the admin decides. Plain functions that import only other plain functions,
+// so they are tested without Supabase or Resend (claimRequests.test.mjs).
+
+import { escapeHtml, greeting } from './emailParts.js';
+import { claimApproved } from './emailTemplates.js';
 
 // The Privacy Policy: "Requests to claim a listing — 12 months after we decide
 // them." Change both together.
@@ -28,38 +31,16 @@ export async function purgeDecidedClaimRequests(supabase, now = new Date()) {
   return { deleted: data?.length || 0 };
 }
 
-function escapeHtml(value) {
-  return String(value ?? '')
-    .replace(/&/g, '&amp;')
-    .replace(/</g, '&lt;')
-    .replace(/>/g, '&gt;')
-    .replace(/"/g, '&quot;')
-    .replace(/'/g, '&#39;');
-}
+// The email telling a claimant the decision. Approved is the approved copy's
+// D7 (utils/emailTemplates.js); rejected keeps its wording until the admin can
+// record a reason for the claimant (D8 needs one). → { subject, text, html }.
+export function claimDecisionMessage({ decision, firstName, listingName, supportEmail }) {
+  if (decision === 'approved') return claimApproved({ firstName, listingName });
 
-// The email telling a claimant the decision, in the same plain style as the
-// review moderation emails. → { subject, text, html }.
-export function claimDecisionMessage({ decision, firstName, listingName, listingUrl, accountUrl, supportEmail }) {
   const name = listingName || 'the listing';
-  const hi = `Hi ${firstName || 'there'},`;
+  const hi = greeting(firstName);
   const signOff = 'With love,\nThe Spiritpedia team';
   const signOffHtml = '<p>With love,<br>The Spiritpedia team</p>';
-
-  if (decision === 'approved') {
-    return {
-      subject: `Your claim to ${name} is approved`,
-      text: `${hi}
-
-Your request to manage ${name} on Spiritpedia has been approved.
-
-The listing is now linked to your account. Sign in to update it from your account page: ${accountUrl}
-
-View your listing: ${listingUrl}
-
-${signOff}`,
-      html: `<p>${escapeHtml(hi)}</p><p>Your request to manage ${escapeHtml(name)} on Spiritpedia has been approved.</p><p>The listing is now linked to your account. Sign in to update it from <a href="${accountUrl}">your account page</a>.</p><p><a href="${listingUrl}">View your listing</a></p>${signOffHtml}`,
-    };
-  }
 
   return {
     subject: `An update on your claim to ${name}`,

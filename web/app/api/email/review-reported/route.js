@@ -1,7 +1,7 @@
 import { NextResponse } from 'next/server';
 import { createClient } from '@supabase/supabase-js';
 import { adminClient } from '@/utils/supabaseAdmin';
-import { contentUrl, sendReviewReported } from '@/utils/email';
+import { sendReviewReported } from '@/utils/email';
 import { getContentMeta } from '@/utils/contentMeta';
 import { SITE_URL } from '@/utils/seo';
 
@@ -40,7 +40,7 @@ export async function POST(request) {
 
   const { data: report } = await supabase
     .from('review_reports')
-    .select('id, reason, note, content_type, content_slug, review_rating, review_body, review_author_name, status')
+    .select('id, review_id, reason, content_type, content_slug, created_at')
     .eq('id', reportId)
     .eq('reporter_id', user.id)
     .maybeSingle();
@@ -50,7 +50,6 @@ export async function POST(request) {
   const result = await sendReviewReported({
     report,
     title: meta.title,
-    url: contentUrl(report.content_type, report.content_slug),
     adminUrl: `${SITE_URL}/admin/flags`,
   });
 

@@ -32,7 +32,7 @@ const TIERS = ['superhero', 'ascended_master', 'luminary', 'local_hero'];
 // Ascended Master is for people only (utils/badges.js).
 const PLATFORM_TIERS = ['superhero', 'luminary', 'local_hero'];
 
-// "Your listing is live" to the owner (utils/listingApproved.js). Never
+// "Your listing is live" to the owner (D3, utils/emailTemplates.js). Never
 // throws and never undoes the approval: the response says whether it went,
 // and the admin's message says so.
 async function tellOwner({ email, fullName, listingName, listingPath }) {

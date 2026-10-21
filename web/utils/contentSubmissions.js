@@ -377,7 +377,8 @@ export function submissionDecisionMessage({
 }) {
   const name = title || `your ${what}`;
   const quoted = title ? `“${title}”` : `your ${what}`;
-  const hi = `Hi ${firstName || 'there'},`;
+  // The greeting rule every email follows (utils/emailParts.js → greeting).
+  const hi = firstName ? `Hi ${firstName},` : 'Hello,';
   const signOff = 'With love,\nThe Spiritpedia team';
   const signOffHtml = '<p>With love,<br>The Spiritpedia team</p>';
 

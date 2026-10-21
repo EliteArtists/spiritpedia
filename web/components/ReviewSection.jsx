@@ -228,10 +228,12 @@ function ReviewForm({ contentType, contentSlug, existing, profileName, official,
     forget(contentType, contentSlug);
     onSaved?.();
 
-    // "We have your review." Fire-and-forget on purpose: the confirmation on
-    // screen is already there, and nothing about a failed email is the
-    // reviewer's problem. The route takes the recipient from this session's own
-    // token, not from anything sent here.
+    // "We have your review." Once, for a new review: an edit is not a second
+    // one, so it is not a second email. Fire-and-forget on purpose: the
+    // confirmation on screen is already there, and nothing about a failed
+    // email is the reviewer's problem. The route takes the recipient from this
+    // session's own token, not from anything sent here.
+    if (editing) return;
     const { data: sessionData } = await supabaseAuth.auth.getSession();
     const token = sessionData?.session?.access_token;
     if (token) {

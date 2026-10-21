@@ -64,6 +64,10 @@ export async function PATCH(request) {
     return NextResponse.json({ error: 'invalid_status' }, { status: 400 });
   }
 
+  // What it was before, so pressing Approve on an approved review (or Reject on
+  // a rejected one) changes nothing and emails nobody a second time.
+  const { data: before } = await supabase.from('reviews').select('status').eq('id', id).maybeSingle();
+
   const { data: updated, error } = await supabase
     .from('reviews')
     .update({ status })
@@ -90,7 +94,7 @@ export async function PATCH(request) {
   // Everything past this point is the notice, and none of it may undo the
   // decision. A moderated review stays moderated whether or not the email goes.
   let notified = false;
-  if (status === 'approved' || status === 'rejected') {
+  if ((status === 'approved' || status === 'rejected') && before?.status !== status) {
     try {
       const { data: authUser } = await supabase.auth.admin.getUserById(updated.user_id);
       const email = authUser?.user?.email;

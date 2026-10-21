@@ -40,7 +40,7 @@ export async function POST(request) {
 
   const { data: profile } = await supabase
     .from('user_profiles')
-    .select('user_type, full_name')
+    .select('user_type, full_name, signup_platform')
     .eq('id', user.id)
     .maybeSingle();
 
@@ -51,9 +51,12 @@ export async function POST(request) {
     return NextResponse.json({ ok: true, skipped: 'not_an_explorer' });
   }
 
+  // The app version for an account made in the app, the website's otherwise
+  // (including accounts from before migration 0021, which have no platform).
   const result = await sendExplorerWelcome({
     email: user.email,
     firstName: firstNameFrom(profile?.full_name),
+    platform: profile?.signup_platform,
   });
 
   // 200 either way. The caller is not waiting and has nothing to do with a
