@@ -11,7 +11,7 @@ import { useAdminData } from '@/components/admin/AdminData';
 import CardImage from '@/components/CardImage';
 import ConfirmDelete from '@/components/admin/ConfirmDelete';
 import { supabase } from '@/utils/supabase';
-import { tierGuidance, tierOptions } from '@/utils/badges';
+import { tierGuidance, tierName, tierOptions } from '@/utils/badges';
 
 // ONE HEALER RECORD — read, and edit the fields that are safe to edit here.
 //
@@ -1232,7 +1232,7 @@ export default function AdminHealerRecordPage({ params }) {
             <p className="break-all font-mono text-xs text-slate-500">{healer.healer_slug}</p>
             <div className="mt-2 flex flex-wrap items-center gap-2">
               <span className="rounded-full border border-violet-500/40 bg-violet-500/10 px-2.5 py-0.5 text-[10px] font-bold uppercase tracking-wider text-violet-300">
-                {TIERS.find((t) => t.value === healer.tier)?.label || healer.tier || 'No tier'}
+                {tierName(healer.tier, healer.entity_type) || healer.tier || 'No tier'}
               </span>
               <span className="rounded-full border border-slate-700 bg-slate-800 px-2.5 py-0.5 text-[10px] font-bold uppercase tracking-wider text-slate-400">
                 {healer.entity_type || 'individual'}
