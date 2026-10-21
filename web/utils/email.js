@@ -1,7 +1,7 @@
 import { getResend } from './resend.js';
 import { claimDecisionMessage } from './claimRequests.js';
 import { submissionDecisionMessage } from './contentSubmissions.js';
-import { SITE, greeting } from './emailParts.js';
+import { SITE } from './emailParts.js';
 import {
   OUTREACH_EMAILS,
   applicationApproved,
@@ -11,6 +11,7 @@ import {
   practitionerWelcome,
   reviewApproved,
   reviewReceived,
+  reviewRejected,
   reviewReported,
 } from './emailTemplates.js';
 
@@ -149,41 +150,17 @@ export async function sendReviewApproved({ email, firstName, title, creatorName,
 
 /* ── 5. REVIEW REJECTED ────────────────────────────────────────────────── */
 
-// The old wording until the admin can record a reason for the member (the
-// approved copy's D11 needs one); only the greeting follows the new rule.
-export async function sendReviewRejected({ email, firstName, title, creatorName }) {
-  const hi = greeting(firstName);
-  const byLine = (name) => (name ? ` by ${name}` : '');
-  return sendEmail({
-    to: email,
-    subject: `An update on your review of ${title}`,
-    text: `${hi}
-
-Thank you for taking the time to review ${title}${byLine(creatorName)}.
-
-After assessing your submission, we're unable to publish your review.
-
-Please email ${ADMIN_EMAIL} for more information. Or reply to this email.
-
-If you think we've misunderstood your review, please do reply to this email.
-
-With love,
-The Spiritpedia team`,
-    html: `<p>${hi}</p><p>Thank you for taking the time to review ${title}${byLine(creatorName)}.</p><p>After assessing your submission, we're unable to publish your review.</p><p>Please email <a href="mailto:${ADMIN_EMAIL}">${ADMIN_EMAIL}</a> for more information. Or reply to this email.</p><p>If you think we've misunderstood your review, please do reply to this email.</p><p>With love,<br>The Spiritpedia team</p>`,
-  });
+// reason is what the admin wrote for the reviewer (D11), never a private note.
+export async function sendReviewRejected({ email, firstName, title, creatorName, reason }) {
+  return sendEmail({ to: email, ...reviewRejected({ firstName, title, creatorName, reason }) });
 }
 
 /* ── 5b. CLAIM DECIDED ─────────────────────────────────────────────────── */
 
 // A "Request to claim it" was approved or rejected in the Inbox
 // (/api/admin/claim-request). The wording is in utils/claimRequests.js.
-export async function sendClaimDecision({ email, firstName, decision, listingName }) {
-  const message = claimDecisionMessage({
-    decision,
-    firstName,
-    listingName,
-    supportEmail: ADMIN_EMAIL,
-  });
+export async function sendClaimDecision({ email, firstName, decision, listingName, reason }) {
+  const message = claimDecisionMessage({ decision, firstName, listingName, reason });
   return sendEmail({ to: email, ...message });
 }
 

@@ -1,7 +1,9 @@
 import { NextResponse } from 'next/server';
 import { adminClient, isAdminRequest, NOT_CONFIGURED } from '@/utils/supabaseAdmin';
 import { ENTITY_TYPES } from '@/utils/listings';
-import { firstNameFrom, sendClaimDecision, sendListingLive } from '@/utils/email';
+import { firstNameFrom, sendClaimDecision, sendEmail, sendListingLive } from '@/utils/email';
+import { forgetSent, sendOnce } from '@/utils/emailOnce';
+import { applicationDeclined } from '@/utils/emailTemplates';
 
 export const dynamic = 'force-dynamic';
 
@@ -51,17 +53,20 @@ async function tellOwner({ email, fullName, listingName, listingPath }) {
   }
 }
 
-// A claimed listing approved: the claim approval email, never "live".
-async function tellClaimant({ email, fullName, listingName, listingPath }) {
+// A claimed listing approved: the claim approval email, never "live". Once
+// per account and listing, shared with /api/email/claim-approved, so an
+// instant claim that already had it is not told twice.
+async function tellClaimant(supabase, { userId, listingRef, email, fullName, listingName }) {
   if (!email) return false;
   try {
-    const result = await sendClaimDecision({
-      email,
-      firstName: firstNameFrom(fullName),
-      decision: 'approved',
-      listingName,
-      listingPath,
-    });
+    const result = await sendOnce(supabase, { kind: 'claim_approved', ref: `${userId}:${listingRef}` }, () =>
+      sendClaimDecision({
+        email,
+        firstName: firstNameFrom(fullName),
+        decision: 'approved',
+        listingName,
+      })
+    );
     return Boolean(result?.sent);
   } catch (err) {
     console.error('[approve] claim approved email failed:', err);
@@ -101,10 +106,24 @@ export async function POST(request) {
 
   const body = await request.json().catch(() => ({}));
   const { action, id, tier = 'local_hero', entityType = 'individual', publisherId = null } = body;
+  // For a decline: the explanation the applicant reads (D4). Not a private note.
+  const reason = typeof body.reason === 'string' ? body.reason.trim() : '';
 
   if (!id) return NextResponse.json({ error: 'missing_id' }, { status: 400 });
 
   if (action === 'reject') {
+    if (!reason) {
+      return NextResponse.json(
+        { error: 'missing_reason', message: 'Write the reason the applicant will read.' },
+        { status: 400 }
+      );
+    }
+    const { data: before } = await supabase
+      .from('user_profiles')
+      .select('full_name, verification_status')
+      .eq('id', id)
+      .maybeSingle();
+
     // Rejection hands the account back to being an ordinary explorer. They keep
     // everything an explorer has — the library, the saved items — and lose only
     // the pending practitioner listing. verification_status stays 'rejected' so
@@ -116,7 +135,36 @@ export async function POST(request) {
       .update({ verification_status: 'rejected', user_type: 'explorer' })
       .eq('id', id);
     if (error) return NextResponse.json({ error: error.message }, { status: 500 });
-    return NextResponse.json({ ok: true, verification_status: 'rejected' });
+
+    // "An update on your Spiritpedia application" (D4), with the reason. Not
+    // when Reject is pressed on something already rejected. Sending it in
+    // again is a new application, so its receipt (D2) is forgotten here.
+    let notified = null;
+    if (before?.verification_status !== 'rejected') {
+      await forgetSent(supabase, { kind: 'application_received', ref: id });
+      try {
+        const { data: authUser } = await supabase.auth.admin.getUserById(id);
+        const email = authUser?.user?.email;
+        notified = email
+          ? Boolean(
+              (
+                await sendEmail({
+                  to: email,
+                  ...applicationDeclined({
+                    firstName: firstNameFrom(before?.full_name),
+                    listingName: before?.full_name?.trim() || null,
+                    reason,
+                  }),
+                })
+              ).sent
+            )
+          : false;
+      } catch (err) {
+        console.error('[reject] application declined email failed:', err);
+        notified = false;
+      }
+    }
+    return NextResponse.json({ ok: true, verification_status: 'rejected', notified });
   }
 
   if (action !== 'approve') {
@@ -162,13 +210,12 @@ export async function POST(request) {
       const listing = profile.linked_healer_slug
         ? await supabase.from('healers').select('name').eq('healer_slug', profile.linked_healer_slug).maybeSingle()
         : await supabase.from('publishers').select('name, slug').eq('id', profile.linked_publisher_id).maybeSingle();
-      notified = await tellClaimant({
+      notified = await tellClaimant(supabase, {
+        userId: id,
+        listingRef: profile.linked_healer_slug || profile.linked_publisher_id,
         email,
         fullName: profile.full_name,
         listingName: listing.data?.name,
-        listingPath: profile.linked_healer_slug
-          ? `/healers/${profile.linked_healer_slug}`
-          : `/publishers/${listing.data?.slug || ''}`,
       });
     }
     return NextResponse.json({

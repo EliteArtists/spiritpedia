@@ -1,6 +1,6 @@
 import { NextResponse } from 'next/server';
 import { adminClient, isAdminRequest, NOT_CONFIGURED } from '@/utils/supabaseAdmin';
-import { deleteAccount } from '@/utils/deleteAccount';
+import { deleteAccountAndTell } from '@/utils/deleteAccountAndTell';
 
 export const dynamic = 'force-dynamic';
 
@@ -191,7 +191,9 @@ export async function DELETE(request) {
   // self-serve route uses, so an admin deletion also removes uploaded photos
   // the listing does not display. source 'admin' writes no Inbox record: the
   // admin is the one looking.
-  const result = await deleteAccount(supabase, id, { source: 'admin' });
+  // "Send confirmation" in the dialog, on unless the admin unticks it: D13 to
+  // the address the account had.
+  const result = await deleteAccountAndTell(supabase, id, { source: 'admin', notify: body?.notify !== false });
   if (!result.ok) {
     return NextResponse.json({ error: result.error }, { status: result.status });
   }
@@ -202,5 +204,6 @@ export async function DELETE(request) {
     // Surfaced so the admin knows a public listing is now unclaimed rather than
     // gone, without having to go and look.
     orphaned_healer_slug: result.linkedHealerSlug,
+    notified: result.notified,
   });
 }

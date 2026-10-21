@@ -99,3 +99,67 @@ export function claimPath(claim) {
   const kind = claim.kind === 'publisher' ? '&kind=publisher' : '';
   return `/auth/claim?slug=${encodeURIComponent(claim.slug)}${kind}`;
 }
+
+// Addresses that say nothing about who someone works for. A domain match on any
+// of these would hand out claims to whichever healer happened to list a Gmail
+// address — so for these, only an exact contact_email match counts.
+const FREE_MAIL_DOMAINS = new Set([
+  'gmail.com', 'googlemail.com', 'outlook.com', 'hotmail.com', 'hotmail.co.uk',
+  'live.com', 'live.co.uk', 'msn.com', 'yahoo.com', 'yahoo.co.uk', 'ymail.com',
+  'icloud.com', 'me.com', 'mac.com', 'aol.com', 'proton.me', 'protonmail.com',
+  'pm.me', 'gmx.com', 'gmx.co.uk', 'mail.com', 'yandex.com', 'zoho.com',
+  'btinternet.com', 'sky.com', 'virginmedia.com', 'talktalk.net', 'tutanota.com',
+]);
+
+// Does this email look like it belongs to a listing already on Spiritpedia —
+// any listing, a healer of any kind or a publisher (migration 0020)?
+//
+// Two tests, strongest first:
+//   1. The listing's contact_email matches exactly. Unambiguous.
+//   2. The email's domain appears in the listing's website (or, for healers,
+//      YouTube) link — but only for a domain the person could plausibly own.
+//      karina@karinagrant.co.uk matching karinagrant.co.uk is evidence;
+//      anyone@gmail.com matching a healer who listed a Gmail address is not.
+//
+// More than one match, across healers and publishers together, returns no
+// claim. Two practitioners sharing a clinic domain is ordinary, and guessing
+// between them would invite someone to claim a colleague's profile. They go
+// through the normal setup and can request a claim there.
+//
+// The database re-checks all of this when the claim is made
+// (claim_healer_profile / claim_publisher_profile); this only decides where to
+// send them, and whether the practitioner welcome waits for the claim. client
+// is any Supabase client: listings are public.
+export async function findClaimableListing(client, email) {
+  const address = (email || '').trim().toLowerCase();
+  if (!address.includes('@')) return null;
+  // ilike treats % and _ as wildcards; an address may contain an underscore.
+  const exactPattern = address.replace(/[\\%_]/g, (c) => `\\${c}`);
+
+  const [{ data: exactHealers }, { data: exactPublishers }] = await Promise.all([
+    client.from('healers').select('healer_slug').ilike('contact_email', exactPattern).limit(2),
+    client.from('publishers').select('slug').ilike('contact_email', exactPattern).limit(2),
+  ]);
+  const exact = chooseClaim(
+    (exactHealers || []).map((r) => r.healer_slug),
+    (exactPublishers || []).map((r) => r.slug)
+  );
+  if (exact) return exact.ambiguous ? null : exact;
+
+  const domain = address.split('@')[1];
+  if (!domain || FREE_MAIL_DOMAINS.has(domain)) return null;
+
+  const [{ data: domainHealers }, { data: domainPublishers }] = await Promise.all([
+    client
+      .from('healers')
+      .select('healer_slug')
+      .or(`website_url.ilike.%${domain}%,youtube_url.ilike.%${domain}%`)
+      .limit(2),
+    client.from('publishers').select('slug').ilike('website_url', `%${domain}%`).limit(2),
+  ]);
+  const byDomain = chooseClaim(
+    (domainHealers || []).map((r) => r.healer_slug),
+    (domainPublishers || []).map((r) => r.slug)
+  );
+  return byDomain && !byDomain.ambiguous ? byDomain : null;
+}

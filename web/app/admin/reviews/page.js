@@ -6,6 +6,7 @@ import SectionHeading from '@/components/admin/SectionHeading';
 import { Placeholder } from '@/components/admin/AdminPlaceholders';
 import DataProblem from '@/components/admin/DataProblem';
 import { supabase } from '@/utils/supabase';
+import ReasonBox from '@/components/admin/ReasonBox';
 
 // REVIEW MODERATION. Nothing reaches a content page until it is approved here.
 //
@@ -66,6 +67,8 @@ export default function AdminReviewsPage() {
   const [tab, setTab] = useState('pending');
   const [busyId, setBusyId] = useState(null);
   const [toast, setToast] = useState(null);
+  // The review whose Reject is asking for a reason.
+  const [rejectingId, setRejectingId] = useState(null);
 
   const load = useCallback(async () => {
     try {
@@ -90,7 +93,7 @@ export default function AdminReviewsPage() {
     };
   }, [load]);
 
-  const setStatus = async (review, status) => {
+  const setStatus = async (review, status, reason) => {
     if (busyId) return;
     setBusyId(review.id);
     setToast(null);
@@ -98,7 +101,7 @@ export default function AdminReviewsPage() {
       const res = await fetch('/api/admin/reviews', {
         method: 'PATCH',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ id: review.id, status }),
+        body: JSON.stringify({ id: review.id, status, reason }),
       });
       const json = await res.json();
       if (!res.ok || json.error) {
@@ -114,6 +117,7 @@ export default function AdminReviewsPage() {
             ? `Review ${status}. The reviewer has been emailed.`
             : `Review ${status}.`,
         });
+        setRejectingId(null);
         const { rows, error: reloadError } = await load();
         setReviews(rows);
         setError(reloadError);
@@ -273,7 +277,7 @@ export default function AdminReviewsPage() {
                         {review.status !== 'rejected' && (
                           <button
                             type="button"
-                            onClick={() => setStatus(review, 'rejected')}
+                            onClick={() => setRejectingId((v) => (v === review.id ? null : review.id))}
                             disabled={busyId === review.id}
                             className="rounded-full border border-red-500/40 px-4 py-1.5 text-xs font-bold text-red-400 transition-colors hover:bg-red-500/10 disabled:opacity-40"
                           >
@@ -282,6 +286,15 @@ export default function AdminReviewsPage() {
                         )}
                       </div>
                     </div>
+                    {rejectingId === review.id && (
+                      <ReasonBox
+                        title="Reject this review?"
+                        confirmLabel="Reject and email the reviewer"
+                        busy={busyId === review.id}
+                        onConfirm={(reason) => setStatus(review, 'rejected', reason)}
+                        onCancel={() => setRejectingId(null)}
+                      />
+                    )}
                   </li>
                 );
               })}

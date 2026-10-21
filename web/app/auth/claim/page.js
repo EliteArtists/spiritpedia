@@ -9,6 +9,26 @@ import { supabaseAuth, getUser } from '@/utils/supabaseAuth';
 
 const SETUP_PATH = '/auth/practitioner-setup';
 
+// Tell the website something happened to this account. The route identifies
+// the account from this session's own token, never from the body.
+async function notify(path, body) {
+  const { data } = await supabaseAuth.auth.getSession();
+  const token = data?.session?.access_token;
+  if (!token) return;
+  await fetch(path, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${token}` },
+    body: JSON.stringify(body || {}),
+  });
+}
+
+// The practitioner welcome waits while a matching listing is on offer
+// (/api/email/practitioner-welcome). Not claiming it — "This isn't me", or a
+// claim that fails — releases it. Sent once, however often this runs.
+function releaseWelcome() {
+  notify('/api/email/practitioner-welcome', { afterClaim: true }).catch(() => {});
+}
+
 function ClaimForm() {
   const router = useRouter();
   const params = useSearchParams();
@@ -100,12 +120,13 @@ function ClaimForm() {
     // permitted to write those two fields.
     // claim_publisher_profile() is the same check against a publisher.
     const { error: rpcError } = await supabaseAuth.rpc(
-      healer.publisher ? 'claim_publisher_profile' : 'claim_healer_profile',
+      isPublisher ? 'claim_publisher_profile' : 'claim_healer_profile',
       { p_slug: healer.healer_slug }
     );
 
     if (rpcError) {
       setMismatch(Boolean(rpcError.message?.includes('does not match')));
+      releaseWelcome();
       setError(
         rpcError.message?.includes('does not match')
           ? 'That profile does not match your email address.'
@@ -115,8 +136,10 @@ function ClaimForm() {
       return;
     }
 
+    // "You can now manage …" (D7): their welcome as well.
+    notify('/api/email/claim-approved').catch(() => {});
     router.replace('/account');
-  }, [claiming, healer, router]);
+  }, [claiming, healer, isPublisher, router]);
 
   if (loading) {
     return (
@@ -161,16 +184,19 @@ function ClaimForm() {
           disabled={claiming}
           className="w-full rounded-full bg-[#7c3aed] px-6 py-4 text-base font-semibold text-white shadow-lg transition-all duration-200 hover:bg-[#6d28d9] hover:scale-[1.02] active:scale-[0.98] disabled:cursor-not-allowed disabled:opacity-50 disabled:hover:scale-100"
         >
-          {claiming ? 'Claiming…' : healer.publisher ? 'Yes, this is us →' : 'Yes, this is me →'}
+          {claiming ? 'Claiming…' : isPublisher ? 'Yes, this is us →' : 'Yes, this is me →'}
         </button>
 
         <button
           type="button"
-          onClick={() => router.replace(SETUP_PATH)}
+          onClick={() => {
+            releaseWelcome();
+            router.replace(SETUP_PATH);
+          }}
           disabled={claiming}
           className="w-full rounded-full border border-white/20 px-6 py-4 text-base font-semibold text-white transition-all duration-200 hover:border-white/40 hover:bg-white/5 disabled:opacity-50"
         >
-          {healer.publisher ? 'This isn’t us' : 'This isn’t me'} — continue setup
+          {isPublisher ? 'This isn’t us' : 'This isn’t me'} — continue setup
         </button>
       </div>
 

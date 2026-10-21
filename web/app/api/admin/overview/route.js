@@ -145,9 +145,21 @@ export async function GET() {
     email: emails.get(profile.id) || null,
   }));
 
+  // When the ownership check (D6) went to the listing's address, if it has.
+  const checkedAt = new Map();
+  if (claimRows?.length) {
+    const { data: checks } = await supabase
+      .from('email_sends')
+      .select('ref, sent_at')
+      .eq('kind', 'ownership_check')
+      .in('ref', claimRows.map((row) => row.id));
+    for (const check of checks || []) checkedAt.set(check.ref, check.sent_at);
+  }
+
   const claimRequests = (claimRows || []).map((row) => ({
     ...row,
     requester_email: emails.get(row.user_id) || null,
+    ownership_check_sent_at: checkedAt.get(row.id) || null,
   }));
 
   counts.users = withEmail.length;

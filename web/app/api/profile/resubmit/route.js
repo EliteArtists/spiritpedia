@@ -1,6 +1,9 @@
 import { NextResponse } from 'next/server';
 import { createClient } from '@supabase/supabase-js';
 import { adminClient } from '@/utils/supabaseAdmin';
+import { firstNameFrom, sendEmail } from '@/utils/email';
+import { sendOnce } from '@/utils/emailOnce';
+import { applicationReceived } from '@/utils/emailTemplates';
 
 export const dynamic = 'force-dynamic';
 
@@ -43,5 +46,33 @@ export async function POST(request) {
     .eq('id', user.id);
 
   if (error) return NextResponse.json({ error: error.message }, { status: 500 });
-  return NextResponse.json({ ok: true, verification_status: 'pending' });
+
+  // "We've received your application" (D2), once per application: saving the
+  // form again while it waits sends nothing, and a declined application has
+  // its row forgotten (/api/admin/practitioner), so sending it in again is a
+  // new application with a new receipt. Never holds up the submission.
+  let notified = false;
+  try {
+    const { data: profile } = await supabase
+      .from('user_profiles')
+      .select('full_name')
+      .eq('id', user.id)
+      .maybeSingle();
+    if (user.email) {
+      const result = await sendOnce(supabase, { kind: 'application_received', ref: user.id }, () =>
+        sendEmail({
+          to: user.email,
+          ...applicationReceived({
+            firstName: firstNameFrom(profile?.full_name),
+            listingName: profile?.full_name?.trim() || null,
+          }),
+        })
+      );
+      notified = Boolean(result.sent);
+    }
+  } catch (err) {
+    console.error('[resubmit] application received email failed:', err);
+  }
+
+  return NextResponse.json({ ok: true, verification_status: 'pending', notified });
 }

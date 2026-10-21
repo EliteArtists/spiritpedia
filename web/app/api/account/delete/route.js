@@ -1,7 +1,7 @@
 import { NextResponse } from 'next/server';
 import { createClient } from '@supabase/supabase-js';
 import { adminClient } from '@/utils/supabaseAdmin';
-import { deleteAccount } from '@/utils/deleteAccount';
+import { deleteAccountAndTell } from '@/utils/deleteAccountAndTell';
 
 export const dynamic = 'force-dynamic';
 
@@ -47,7 +47,8 @@ export async function POST(request) {
   const supabase = adminClient();
   if (!supabase) return NextResponse.json({ error: 'service_role_missing' }, { status: 503 });
 
-  const result = await deleteAccount(supabase, user.id, { source });
+  // Then "Your Spiritpedia account has been deleted" (D13) to the address it had.
+  const result = await deleteAccountAndTell(supabase, user.id, { source });
   if (!result.ok) return NextResponse.json({ error: result.error }, { status: result.status });
 
   // Nothing about the listing or the Inbox goes back to the caller — they asked

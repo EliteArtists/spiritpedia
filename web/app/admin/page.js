@@ -110,7 +110,7 @@ export default function AdminInboxPage() {
           message: item.request
             ? (action === 'approve'
                 ? `Claim approved — ${item.person} now manages the listing.`
-                : 'Claim request rejected.') +
+                : 'Claim request declined.') +
               (json.notified ? ' They have been emailed.' : ' The email to them did not go — tell them yourself.')
             : action === 'approve'
               ? (json.publisher_slug
@@ -125,7 +125,12 @@ export default function AdminInboxPage() {
                   : json.notified === false
                     ? ' The email to them did not go — tell them yourself.'
                     : '')
-              : 'Application rejected.',
+              : 'Application declined.' +
+                (json.notified === true
+                  ? ' They have been emailed the reason.'
+                  : json.notified === false
+                    ? ' The email to them did not go — tell them yourself.'
+                    : ''),
         });
         await reload();
         setBusy(false);
@@ -163,6 +168,29 @@ export default function AdminInboxPage() {
         return null;
       }
       return json.proof_code;
+    } catch (err) {
+      setToast({ type: 'error', message: err.message });
+      return null;
+    }
+  }, []);
+
+  // The ownership check (D6) to the listing's own address. → when it went,
+  // or null. The request stays open: the admin decides once a reply is in.
+  const onOwnershipCheck = useCallback(async (item) => {
+    setToast(null);
+    try {
+      const res = await fetch('/api/admin/claim-request', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ id: item.request.id, action: 'ownership_check' }),
+      });
+      const json = await res.json();
+      if (!res.ok || json.error) {
+        setToast({ type: 'error', message: json.message || json.error || 'That did not work.' });
+        return null;
+      }
+      setToast({ type: 'success', message: `Ownership check sent to ${json.sentTo}.` });
+      return new Date().toISOString();
     } catch (err) {
       setToast({ type: 'error', message: err.message });
       return null;
@@ -257,6 +285,7 @@ export default function AdminInboxPage() {
           onSelect={(item) => setSelectedId(item.id)}
           onClose={() => setSelectedId(null)}
           onDecision={onDecision}
+          onOwnershipCheck={onOwnershipCheck}
           onApproveAndNext={onApproveAndNext}
           onClaimCode={onClaimCode}
           busy={busy}

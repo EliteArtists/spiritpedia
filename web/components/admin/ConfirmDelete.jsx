@@ -23,6 +23,8 @@ export default function ConfirmDelete({
   done = null,
   onCancel,
   onConfirm,
+  // Anything the deletion needs decided first, under the consequences.
+  children = null,
 }) {
   const cardRef = useRef(null);
   const titleId = useId();
@@ -108,6 +110,8 @@ export default function ConfirmDelete({
             ))}
           </ul>
         )}
+
+        {children}
 
         {error && (
           <p className="mt-3 rounded-xl border border-red-500/30 bg-red-500/10 p-3 text-xs text-red-300">

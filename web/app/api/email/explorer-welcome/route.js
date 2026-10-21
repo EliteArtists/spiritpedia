@@ -2,6 +2,7 @@ import { NextResponse } from 'next/server';
 import { createClient } from '@supabase/supabase-js';
 import { adminClient } from '@/utils/supabaseAdmin';
 import { firstNameFrom, sendExplorerWelcome } from '@/utils/email';
+import { sendOnce } from '@/utils/emailOnce';
 import { sendWelcomePush } from '@/utils/push';
 
 export const dynamic = 'force-dynamic';
@@ -53,11 +54,15 @@ export async function POST(request) {
 
   // The app version for an account made in the app, the website's otherwise
   // (including accounts from before migration 0021, which have no platform).
-  const result = await sendExplorerWelcome({
-    email: user.email,
-    firstName: firstNameFrom(profile?.full_name),
-    platform: profile?.signup_platform,
-  });
+  // Once per account (email_sends, migration 0025), whoever calls.
+  const result = await sendOnce(supabase, { kind: 'explorer_welcome', ref: user.id }, () =>
+    sendExplorerWelcome({
+      email: user.email,
+      firstName: firstNameFrom(profile?.full_name),
+      platform: profile?.signup_platform,
+    })
+  );
+  if (result.skipped) return NextResponse.json({ ok: true, skipped: result.skipped });
 
   // 200 either way. The caller is not waiting and has nothing to do with a
   // failure; the log is where a lost email is found.

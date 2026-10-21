@@ -82,18 +82,19 @@ test('approved: says so, links the account page and the listing', () => {
   assert.match(m.text, /With love,\nThe Spiritpedia team$/);
 });
 
-test('rejected: gently, with a way to ask again', () => {
-  const m = claimDecisionMessage({ ...base, decision: 'rejected' });
-  assert.equal(m.subject, 'An update on your claim to Hay House');
-  assert.match(m.text, /weren't able to confirm/);
-  assert.match(m.text, /love@spiritpedia\.co/);
-  assert.doesNotMatch(m.text, /approved/);
+test('rejected: the reason, no access, and a way to reply', () => {
+  const m = claimDecisionMessage({ ...base, decision: 'rejected', reason: 'We could not confirm it.' });
+  assert.equal(m.subject, 'An update on your request to manage Hay House');
+  assert.match(m.text, /unable to approve it at this time\.\n\nReason: We could not confirm it\./);
+  assert.match(m.text, /Access to the listing has not been granted/);
+  assert.match(m.text, /The Spiritpedia team$/);
+  assert.doesNotMatch(m.text, /With love/);
 });
 
 test('names are escaped in the HTML; a missing name still reads', () => {
   const m = claimDecisionMessage({ ...base, decision: 'approved', listingName: 'Tom & <Jerry>' });
   assert.match(m.html, /Tom &amp; &lt;Jerry&gt;/);
-  const unnamed = claimDecisionMessage({ ...base, decision: 'rejected', listingName: null, firstName: '' });
+  const unnamed = claimDecisionMessage({ ...base, decision: 'rejected', listingName: null, firstName: '', reason: 'x' });
   assert.match(unnamed.text, /^Hello,/);
   assert.match(unnamed.subject, /the listing/);
 });

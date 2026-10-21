@@ -498,6 +498,8 @@ export default function PersonRecord({ personId, onBack, backLabel, onChanged })
   const [deleting, setDeleting] = useState(false);
   const [deleteError, setDeleteError] = useState(null);
   const [deleted, setDeleted] = useState(null);
+  // "Send confirmation": D13 to the account's address. On unless unticked.
+  const [sendConfirmation, setSendConfirmation] = useState(true);
 
   const load = useCallback(async () => {
     const res = await fetch(`/api/admin/person?id=${encodeURIComponent(personId)}`, { cache: 'no-store' });
@@ -571,7 +573,7 @@ export default function PersonRecord({ personId, onBack, backLabel, onChanged })
       const res = await fetch('/api/admin/person', {
         method: 'DELETE',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ id: personId }),
+        body: JSON.stringify({ id: personId, notify: sendConfirmation }),
       });
       const json = await res.json();
       if (!res.ok || json.error) {
@@ -583,9 +585,14 @@ export default function PersonRecord({ personId, onBack, backLabel, onChanged })
       }
 
       setDeleted(
-        json.orphaned_healer_slug
+        (json.orphaned_healer_slug
           ? `Account deleted. The healer listing "${json.orphaned_healer_slug}" is now unclaimed.`
-          : 'Account deleted.'
+          : 'Account deleted.') +
+          (json.notified === true
+            ? ' They have been emailed a confirmation.'
+            : json.notified === false
+              ? ' The confirmation email did not go.'
+              : '')
       );
       // Refresh the dashboard payload so the list this returns to no longer
       // carries the row, then go back to it.
@@ -789,7 +796,18 @@ export default function PersonRecord({ personId, onBack, backLabel, onChanged })
         done={deleted}
         onCancel={() => setConfirmingDelete(false)}
         onConfirm={confirmDelete}
-      />
+      >
+        <label className="mt-3 flex items-center gap-2 text-xs text-slate-300">
+          <input
+            type="checkbox"
+            checked={sendConfirmation}
+            onChange={(e) => setSendConfirmation(e.target.checked)}
+            disabled={deleting}
+            className="h-4 w-4 accent-[#7c3aed]"
+          />
+          Send confirmation — email them that their account has been deleted
+        </label>
+      </ConfirmDelete>
     </>
   );
 }

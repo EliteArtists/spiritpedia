@@ -1,7 +1,10 @@
 import { randomInt } from 'node:crypto';
 import { NextResponse } from 'next/server';
 import { adminClient, isAdminRequest, NOT_CONFIGURED } from '@/utils/supabaseAdmin';
-import { firstNameFrom, sendClaimDecision } from '@/utils/email';
+import { firstNameFrom, sendClaimDecision, sendEmail } from '@/utils/email';
+import { sendOnce } from '@/utils/emailOnce';
+import { SITE } from '@/utils/emailParts';
+import { ownershipCheck } from '@/utils/emailTemplates';
 
 export const dynamic = 'force-dynamic';
 
@@ -12,7 +15,10 @@ export const dynamic = 'force-dynamic';
 //   approve — links the account to the listing, as a verified claim would
 //             (only the service role may write those fields), and stops any
 //             outreach journey to it.
-//   reject  — closes the request.
+//   reject  — closes the request, with the reason the claimant reads (D8).
+//   ownership_check — emails the listing's own published address to ask
+//             whether the claimant may manage it (D6). Once per request. A
+//             reply is for the admin to read; it never grants anything.
 //
 // Approving or rejecting emails the claimant the decision
 // (utils/email.js → sendClaimDecision). The email never undoes the decision.
@@ -26,7 +32,7 @@ const CODE_LETTERS = 'ABCDEFGHJKLMNPQRSTUVWXYZ23456789';
 
 // The claimant hears the decision. Everything here is a courtesy: a failure is
 // logged and the decision stands. → true when the email was accepted.
-async function tellClaimant(supabase, claim, decision) {
+async function tellClaimant(supabase, claim, decision, reason) {
   try {
     const [{ data: authUser }, { data: profile }] = await Promise.all([
       supabase.auth.admin.getUserById(claim.user_id),
@@ -35,18 +41,24 @@ async function tellClaimant(supabase, claim, decision) {
     const email = authUser?.user?.email;
     if (!email) return false;
     const listingName = claim.healer_slug ? claim.healers?.name : claim.publishers?.name;
-    const listingPath = claim.healer_slug
-      ? `/healers/${claim.healer_slug}`
-      : claim.publishers?.slug
-        ? `/publishers/${claim.publishers.slug}`
-        : '/';
-    const result = await sendClaimDecision({
-      email,
-      firstName: firstNameFrom(profile?.full_name),
-      decision,
-      listingName,
-      listingPath,
-    });
+    const send = () =>
+      sendClaimDecision({
+        email,
+        firstName: firstNameFrom(profile?.full_name),
+        decision,
+        listingName,
+        reason,
+      });
+    // Approval is once per account and listing, shared with the instant
+    // claim (/api/email/claim-approved) and /api/admin/practitioner.
+    const result =
+      decision === 'approved'
+        ? await sendOnce(
+            supabase,
+            { kind: 'claim_approved', ref: `${claim.user_id}:${claim.healer_slug || claim.publisher_id}` },
+            send
+          )
+        : await send();
     return Boolean(result.sent);
   } catch (err) {
     console.error('[claim-request] decision email failed:', err);
@@ -67,12 +79,13 @@ export async function POST(request) {
   const supabase = adminClient();
   if (!supabase) return NextResponse.json(NOT_CONFIGURED, { status: 503 });
 
-  const { action, id, proof } = await request.json().catch(() => ({}));
+  const { action, id, proof, reason: rawReason } = await request.json().catch(() => ({}));
+  const reason = typeof rawReason === 'string' ? rawReason.trim() : '';
   if (!id) return NextResponse.json({ error: 'missing_id' }, { status: 400 });
 
   const { data: claim } = await supabase
     .from('claim_requests')
-    .select('id, user_id, healer_slug, publisher_id, status, proof_code, healers(name), publishers(name, slug)')
+    .select('id, user_id, healer_slug, publisher_id, status, proof_code, healers(name, contact_email), publishers(name, slug, contact_email)')
     .eq('id', id)
     .maybeSingle();
   if (!claim) return NextResponse.json({ error: 'not_found' }, { status: 404 });
@@ -91,13 +104,51 @@ export async function POST(request) {
     return NextResponse.json({ ok: true, proof_code: code });
   }
 
+  if (action === 'ownership_check') {
+    const listing = claim.healer_slug ? claim.healers : claim.publishers;
+    const to = listing?.contact_email;
+    if (!to) {
+      return NextResponse.json(
+        { error: 'no_contact_email', message: 'This listing has no published email address to ask.' },
+        { status: 400 }
+      );
+    }
+    const { data: authUser } = await supabase.auth.admin.getUserById(claim.user_id);
+    const claimantEmail = authUser?.user?.email;
+    if (!claimantEmail) return NextResponse.json({ error: 'claimant_not_found' }, { status: 404 });
+    // The listing's own address, never the claimant's: that is the point.
+    if (claimantEmail.toLowerCase() === to.toLowerCase()) {
+      return NextResponse.json(
+        { error: 'same_address', message: 'The claimant is using the listing’s own address: there is nobody else to ask.' },
+        { status: 400 }
+      );
+    }
+    const listingUrl = claim.healer_slug
+      ? `${SITE}/healers/${claim.healer_slug}`
+      : `${SITE}/publishers/${claim.publishers?.slug || ''}`;
+    const result = await sendOnce(supabase, { kind: 'ownership_check', ref: claim.id }, () =>
+      sendEmail({ to, ...ownershipCheck({ claimantEmail, listingName: listing.name, listingUrl }) })
+    );
+    if (result.skipped) {
+      return NextResponse.json({ error: 'already_sent', message: 'The ownership check has already been sent.' }, { status: 409 });
+    }
+    if (!result.sent) return NextResponse.json({ error: 'send_failed', message: 'The email did not send.' }, { status: 502 });
+    return NextResponse.json({ ok: true, sentTo: to });
+  }
+
   if (action === 'reject') {
+    if (!reason) {
+      return NextResponse.json(
+        { error: 'missing_reason', message: 'Write the reason the claimant will read.' },
+        { status: 400 }
+      );
+    }
     const { error } = await supabase
       .from('claim_requests')
       .update({ status: 'rejected', decided_at: new Date().toISOString() })
       .eq('id', id);
     if (error) return NextResponse.json({ error: error.message }, { status: 500 });
-    const notified = await tellClaimant(supabase, claim, 'rejected');
+    const notified = await tellClaimant(supabase, claim, 'rejected', reason);
     return NextResponse.json({ ok: true, status: 'rejected', notified });
   }
 

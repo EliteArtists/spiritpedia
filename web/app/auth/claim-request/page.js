@@ -109,12 +109,16 @@ export default function ClaimRequestPage() {
       publisherId = data?.id || null;
     }
 
-    const { error: insertError } = await supabaseAuth.from('claim_requests').insert({
-      user_id: user.id,
-      healer_slug: chosen.healerSlug || null,
-      publisher_id: publisherId,
-      connection: text.slice(0, 1000),
-    });
+    const { data: inserted, error: insertError } = await supabaseAuth
+      .from('claim_requests')
+      .insert({
+        user_id: user.id,
+        healer_slug: chosen.healerSlug || null,
+        publisher_id: publisherId,
+        connection: text.slice(0, 1000),
+      })
+      .select('id')
+      .single();
 
     setSending(false);
     if (insertError) {
@@ -127,6 +131,19 @@ export default function ClaimRequestPage() {
       return;
     }
     setSent(true);
+
+    // "We've received your request" (D5). Fire-and-forget: the request is
+    // saved whatever happens to the email, and the route only acts on a
+    // request this session's own account made.
+    const { data: sessionData } = await supabaseAuth.auth.getSession();
+    const token = sessionData?.session?.access_token;
+    if (token && inserted?.id) {
+      fetch('/api/email/claim-request-received', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${token}` },
+        body: JSON.stringify({ id: inserted.id }),
+      }).catch(() => {});
+    }
   };
 
   if (!user) {

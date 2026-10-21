@@ -268,3 +268,120 @@ export function outreachEmail(n, { firstName, profileUrl, claimUrl }) {
   });
   return { subject: template.subject, text };
 }
+
+/* ── D2. APPLICATION RECEIVED ──────────────────────────────────────────── */
+
+export function applicationReceived({ firstName, listingName }) {
+  return renderEmail({
+    subject: listingName ? `We've received your application for ${listingName}` : "We've received your application",
+    blocks: [
+      greeting(firstName),
+      listingName
+        ? `Thank you for submitting ${listingName} to Spiritpedia.`
+        : 'Thank you for submitting your application to Spiritpedia.',
+      "Your application is now with our team for review. We'll email you when we've made a decision, or if we need anything else from you.",
+      "There's nothing more you need to do for now.",
+    ],
+  });
+}
+
+/* ── D4. APPLICATION DECLINED ──────────────────────────────────────────── */
+
+// reason is what the admin wrote for the applicant, never a private note.
+export function applicationDeclined({ firstName, listingName, reason }) {
+  return renderEmail({
+    subject: 'An update on your Spiritpedia application',
+    blocks: [
+      greeting(firstName),
+      listingName
+        ? `Thank you for your application for ${listingName}.`
+        : 'Thank you for your application.',
+      "After reviewing it, we're unable to approve the listing at this time.",
+      `Reason: ${reason}`,
+      "If you think we've misunderstood something, or you'd like to clarify the information you submitted, please reply to this email.",
+    ],
+    signOff: 'plain',
+  });
+}
+
+/* ── D5. CLAIM REQUEST RECEIVED ────────────────────────────────────────── */
+
+export function claimRequestReceived({ firstName, listingName }) {
+  const name = listingName || 'a listing';
+  return renderEmail({
+    subject: `We've received your request to manage ${name}`,
+    blocks: [
+      greeting(firstName),
+      `Thank you for asking to manage ${name} on Spiritpedia.`,
+      "We've received your request and will check that you're authorised to manage the listing before giving you access. We may contact you or the email address published on the listing to confirm ownership.",
+      "We'll email you once your request has been reviewed. You don't need to submit another request.",
+    ],
+  });
+}
+
+/* ── D6. OWNERSHIP CONFIRMATION ────────────────────────────────────────── */
+
+// To the listing's own published address, never the claimant's. A reply is
+// read by the admin; nothing in it grants access by itself.
+export function ownershipCheck({ claimantEmail, listingName, listingUrl }) {
+  return renderEmail({
+    subject: `Please confirm a request to manage ${listingName}`,
+    blocks: [
+      'Hello,',
+      `We've received a request from ${claimantEmail} to manage this Spiritpedia listing:`,
+      `${listingName}\n${listingUrl}`,
+      'Before we give anyone access, please reply to confirm whether this person is authorised to manage the listing on your behalf.',
+      "If that's you, simply tell us that you made the request.",
+      "If you don't recognise the request, let us know. No access has been granted through this request, and we won't approve it without completing our checks.",
+    ],
+    signOff: 'plain',
+  });
+}
+
+/* ── D8. CLAIM DECLINED ────────────────────────────────────────────────── */
+
+export function claimDeclined({ firstName, listingName, reason }) {
+  const name = listingName || 'the listing';
+  return renderEmail({
+    subject: `An update on your request to manage ${name}`,
+    blocks: [
+      greeting(firstName),
+      `We've reviewed your request to manage ${name} on Spiritpedia and are unable to approve it at this time.`,
+      `Reason: ${reason}`,
+      'Access to the listing has not been granted through this request.',
+      "If you can provide further information confirming that you're authorised to manage it, or you think we've misunderstood your request, please reply.",
+    ],
+    signOff: 'plain',
+  });
+}
+
+/* ── D11. REVIEW REJECTED ──────────────────────────────────────────────── */
+
+export function reviewRejected({ firstName, title, creatorName, reason }) {
+  return renderEmail({
+    subject: `An update on your review of ${title}`,
+    blocks: [
+      greeting(firstName),
+      `Thank you for taking the time to review ${title}${by(creatorName)}.`,
+      "After assessing your submission, we're unable to publish your review.",
+      `Reason: ${reason}`,
+      "If you think we've misunderstood your review, please reply to this email.",
+    ],
+    signOff: 'plain',
+  });
+}
+
+/* ── D13. ACCOUNT DELETED ──────────────────────────────────────────────── */
+
+export function accountDeleted({ firstName }) {
+  return renderEmail({
+    subject: 'Your Spiritpedia account has been deleted',
+    blocks: [
+      greeting(firstName),
+      'Your Spiritpedia account has been deleted.',
+      "You won't receive any further welcome or personalised discovery emails for this account.",
+      "If you didn't request this deletion, please contact us at love@spiritpedia.co.",
+    ],
+    signOff: 'plain',
+  });
+}

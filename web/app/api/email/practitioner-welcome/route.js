@@ -2,6 +2,8 @@ import { NextResponse } from 'next/server';
 import { createClient } from '@supabase/supabase-js';
 import { adminClient } from '@/utils/supabaseAdmin';
 import { firstNameFrom, sendPractitionerWelcome } from '@/utils/email';
+import { sendOnce } from '@/utils/emailOnce';
+import { findClaimableListing } from '@/utils/listings';
 
 export const dynamic = 'force-dynamic';
 
@@ -41,10 +43,33 @@ export async function POST(request) {
     return NextResponse.json({ ok: true, skipped: 'not_a_practitioner' });
   }
 
-  const result = await sendPractitionerWelcome({
-    email: user.email,
-    firstName: firstNameFrom(profile?.full_name),
-  });
+  // AN ACCOUNT WHOSE EMAIL MATCHES A LISTING is about to be offered that
+  // listing, and a claim made that way is approved at once. Then the claim
+  // approval (D7, /api/email/claim-approved) is their welcome, and this one
+  // waits. The claim page asks for it with { afterClaim: true } if they say
+  // the listing isn't theirs or the claim fails; a listing already linked to
+  // the account sends nothing more here.
+  const { afterClaim } = await request.json().catch(() => ({}));
+  if (!afterClaim) {
+    const claimable = await findClaimableListing(supabase, user.email).catch(() => null);
+    if (claimable) return NextResponse.json({ ok: true, skipped: 'claim_first' });
+  }
+  const { data: linked } = await supabase
+    .from('user_profiles')
+    .select('linked_healer_slug, linked_publisher_id')
+    .eq('id', user.id)
+    .maybeSingle();
+  if (linked?.linked_healer_slug || linked?.linked_publisher_id) {
+    return NextResponse.json({ ok: true, skipped: 'claimed' });
+  }
 
-  return NextResponse.json({ ok: true, sent: result.sent });
+  // Once per account (email_sends, migration 0025).
+  const result = await sendOnce(supabase, { kind: 'practitioner_welcome', ref: user.id }, () =>
+    sendPractitionerWelcome({
+      email: user.email,
+      firstName: firstNameFrom(profile?.full_name),
+    })
+  );
+
+  return NextResponse.json({ ok: true, sent: Boolean(result.sent), skipped: result.skipped });
 }

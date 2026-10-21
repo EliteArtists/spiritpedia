@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { QUEUE_TYPES, isIncomplete, timeAgo } from './queue.js';
 import { StatusPill } from './QueueTable.jsx';
+import ReasonBox from './ReasonBox.jsx';
 import { supabase } from '@/utils/supabase';
 import { LISTING_TYPES, describedAsLabel, inPersonFrom, suggestedListingType } from '@/utils/listings';
 import { isPerson, tierGuidance, tierOptions } from '@/utils/badges';
@@ -86,6 +87,7 @@ function Field({ label, value, mono }) {
 }
 
 function ApplicationDetail({ item, busy, onDecision, onApproveAndNext, hasNext }) {
+  const [rejecting, setRejecting] = useState(false);
   const p = item.profile;
   const [tier, setTier] = useState('local_hero');
   // Pre-filled from what they said of themselves; "Not sure" or nothing leaves
@@ -274,7 +276,7 @@ function ApplicationDetail({ item, busy, onDecision, onApproveAndNext, hasNext }
         <button
           type="button"
           disabled={busy}
-          onClick={() => onDecision(item, 'reject')}
+          onClick={() => setRejecting((v) => !v)}
           className="rounded-full border border-red-500/50 px-5 py-2.5 text-sm font-bold text-red-300 transition-colors hover:bg-red-500/10 disabled:opacity-40"
         >
           Reject
@@ -289,6 +291,15 @@ function ApplicationDetail({ item, busy, onDecision, onApproveAndNext, hasNext }
         </button>
         {note && <span className="self-center text-xs text-slate-500">{note}</span>}
       </div>
+      {rejecting && (
+        <ReasonBox
+          title="Decline this application?"
+          confirmLabel="Decline and email them"
+          busy={busy}
+          onConfirm={(reason) => onDecision(item, 'reject', { reason })}
+          onCancel={() => setRejecting(false)}
+        />
+      )}
     </>
   );
 }
@@ -337,24 +348,9 @@ function ClaimDetail({ item, busy, onDecision }) {
 
 /* ── CENTRE PANE — claim request (migration 0020) ──────────────────────── */
 
-// The email to the listing's own published address: the first proof. Opened in
-// the admin's mail app, to send from love@ and edit as they like.
-function confirmMailto(listing, requesterEmail) {
-  const subject = `Your listing on Spiritpedia: ${listing.name}`;
-  const body = [
-    'Hello,',
-    '',
-    `Someone has asked to manage the listing for ${listing.name} on Spiritpedia, using the address ${requesterEmail}.`,
-    '',
-    'If that is you or someone you work with, please reply to confirm and we will give them access. If not, just let us know and nothing will change.',
-    '',
-    'With love,',
-    'The Spiritpedia team',
-  ].join('\n');
-  return `mailto:${listing.contact_email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-}
-
-function ClaimRequestDetail({ item, busy, onDecision, onClaimCode }) {
+function ClaimRequestDetail({ item, busy, onDecision, onClaimCode, onOwnershipCheck }) {
+  const [rejecting, setRejecting] = useState(false);
+  const [checkSentAt, setCheckSentAt] = useState(item.request.ownership_check_sent_at || null);
   const r = item.request;
   const listing = r.healers || r.publishers || {};
   const isPublisher = Boolean(r.publisher_id);
@@ -385,13 +381,25 @@ function ClaimRequestDetail({ item, busy, onDecision, onClaimCode }) {
         >
           View listing →
         </Link>
+        {/* The ownership check (D6): to the listing's own published address,
+            from accounts@ with replies to love@. Once per request. A reply is
+            for you to read; it grants nothing by itself. */}
         {listing.contact_email ? (
-          <a
-            href={confirmMailto(listing, r.requester_email)}
-            className="rounded-full border border-white/20 px-5 py-2 text-sm font-bold text-white transition-colors hover:bg-white/5"
-          >
-            1. Email the listing to confirm
-          </a>
+          checkSentAt ? (
+            <span className="self-center text-xs text-emerald-300">
+              Ownership check sent {new Date(checkSentAt).toLocaleDateString('en-GB', { day: 'numeric', month: 'short' })}{' '}
+              to <span className="font-mono">{listing.contact_email}</span>. Replies go to love@.
+            </span>
+          ) : (
+            <button
+              type="button"
+              disabled={busy}
+              onClick={async () => setCheckSentAt((await onOwnershipCheck(item)) || null)}
+              className="rounded-full border border-white/20 px-5 py-2 text-sm font-bold text-white transition-colors hover:bg-white/5 disabled:opacity-40"
+            >
+              1. Send ownership check
+            </button>
+          )
         ) : (
           <span className="self-center text-xs text-slate-500">No published email: use a code.</span>
         )}
@@ -448,12 +456,21 @@ function ClaimRequestDetail({ item, busy, onDecision, onClaimCode }) {
         <button
           type="button"
           disabled={busy}
-          onClick={() => onDecision(item, 'reject')}
+          onClick={() => setRejecting((v) => !v)}
           className="rounded-full border border-red-500/50 px-5 py-2.5 text-sm font-bold text-red-300 transition-colors hover:bg-red-500/10 disabled:opacity-40"
         >
           Reject
         </button>
       </div>
+      {rejecting && (
+        <ReasonBox
+          title="Decline this request?"
+          confirmLabel="Decline and email them"
+          busy={busy}
+          onConfirm={(reason) => onDecision(item, 'reject', { reason })}
+          onCancel={() => setRejecting(false)}
+        />
+      )}
     </>
   );
 }
@@ -468,6 +485,7 @@ export default function QueueReviewer({
   onDecision,
   onApproveAndNext,
   onClaimCode,
+  onOwnershipCheck,
   busy,
 }) {
   const index = items.findIndex((i) => i.id === selected?.id);
@@ -535,7 +553,14 @@ export default function QueueReviewer({
               hasNext={hasNext}
             />
           ) : selected.request ? (
-            <ClaimRequestDetail key={selected.id} item={selected} busy={busy} onDecision={onDecision} onClaimCode={onClaimCode} />
+            <ClaimRequestDetail
+              key={selected.id}
+              item={selected}
+              busy={busy}
+              onDecision={onDecision}
+              onClaimCode={onClaimCode}
+              onOwnershipCheck={onOwnershipCheck}
+            />
           ) : (
             <ClaimDetail key={selected.id} item={selected} busy={busy} onDecision={onDecision} />
           )}

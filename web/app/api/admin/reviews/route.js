@@ -58,10 +58,18 @@ export async function PATCH(request) {
   const supabase = adminClient();
   if (!supabase) return NextResponse.json(NOT_CONFIGURED, { status: 503 });
 
-  const { id, status } = await request.json().catch(() => ({}));
+  const { id, status, reason: rawReason } = await request.json().catch(() => ({}));
+  // For a rejection: the reason the reviewer reads (D11). Not a private note.
+  const reason = typeof rawReason === 'string' ? rawReason.trim() : '';
   if (!id) return NextResponse.json({ error: 'missing_id' }, { status: 400 });
   if (!STATUSES.includes(status)) {
     return NextResponse.json({ error: 'invalid_status' }, { status: 400 });
+  }
+  if (status === 'rejected' && !reason) {
+    return NextResponse.json(
+      { error: 'missing_reason', message: 'Write the reason the reviewer will read.' },
+      { status: 400 }
+    );
   }
 
   // What it was before, so pressing Approve on an approved review (or Reject on
@@ -111,7 +119,7 @@ export async function PATCH(request) {
                 ...meta,
                 url: contentUrl(updated.content_type, updated.content_slug),
               })
-            : await sendReviewRejected({ email, firstName, ...meta });
+            : await sendReviewRejected({ email, firstName, ...meta, reason });
 
         notified = result.sent;
       }

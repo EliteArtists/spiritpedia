@@ -163,3 +163,63 @@ test('outreach first name skips titles; nothing usable means "Hello,"', () => {
   assert.equal(practitionerFirstName('  '), '');
   assert.equal(practitionerFirstName(null), '');
 });
+
+import {
+  accountDeleted,
+  applicationDeclined,
+  applicationReceived,
+  claimDeclined,
+  claimRequestReceived,
+  ownershipCheck,
+  reviewRejected,
+} from './emailTemplates.js';
+
+test('D2: the listing name in the subject, team sign-off', () => {
+  const m = applicationReceived({ firstName: 'Jane', listingName: 'Jane Doe Healing' });
+  assert.equal(m.subject, "We've received your application for Jane Doe Healing");
+  assert.match(m.text, /There's nothing more you need to do for now\.\n\nWith love,\nThe Spiritpedia team$/);
+  assertClean(applicationReceived({}));
+});
+
+test('D4, D8, D11: the reason after "Reason:", plain sign-off', () => {
+  for (const m of [
+    applicationDeclined({ firstName: 'Jane', listingName: 'Jane Doe Healing', reason: 'Not a fit.' }),
+    claimDeclined({ firstName: 'Jane', listingName: 'Hay House', reason: 'Not a fit.' }),
+    reviewRejected({ firstName: 'Sam', title: 'X', creatorName: 'Y', reason: 'Not a fit.' }),
+  ]) {
+    assert.match(m.text, /\n\nReason: Not a fit\.\n\n/);
+    assert.match(m.text, /\n\nThe Spiritpedia team$/);
+    assert.doesNotMatch(m.text, /With love/);
+    assertClean(m);
+  }
+  assert.equal(applicationDeclined({ reason: 'r' }).subject, 'An update on your Spiritpedia application');
+  assert.equal(reviewRejected({ title: 'X', reason: 'r' }).subject, 'An update on your review of X');
+});
+
+test('D5: received, nothing more to submit', () => {
+  const m = claimRequestReceived({ firstName: 'Jane', listingName: 'Hay House' });
+  assert.equal(m.subject, "We've received your request to manage Hay House");
+  assert.match(m.text, /You don't need to submit another request\./);
+  assertClean(m);
+});
+
+test('D6: "Hello,", the claimant, the listing and its link, and no access granted', () => {
+  const m = ownershipCheck({
+    claimantEmail: 'someone@example.com',
+    listingName: 'Hay House',
+    listingUrl: 'https://www.spiritpedia.co/publishers/hay-house',
+  });
+  assert.equal(m.subject, 'Please confirm a request to manage Hay House');
+  assert.match(m.text, /^Hello,\n\nWe've received a request from someone@example\.com/);
+  assert.match(m.text, /Hay House\nhttps:\/\/www\.spiritpedia\.co\/publishers\/hay-house/);
+  assert.match(m.text, /No access has been granted/);
+  assertClean(m);
+});
+
+test('D13: deleted, no more welcome or discovery emails', () => {
+  const m = accountDeleted({ firstName: '' });
+  assert.equal(m.subject, 'Your Spiritpedia account has been deleted');
+  assert.match(m.text, /^Hello,/);
+  assert.match(m.text, /love@spiritpedia\.co/);
+  assertClean(m);
+});
