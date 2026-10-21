@@ -452,6 +452,10 @@ class _SignedInState extends ConsumerState<_SignedIn> {
         const NameCard(),
         const SizedBox(height: 12),
         const TailorCard(),
+        if (profile?.getsDiscoveryEmails == true) ...[
+          const SizedBox(height: 12),
+          const DiscoveryEmailsCard(),
+        ],
         const SizedBox(height: 22),
         KeyedSubtree(
           key: widget.notificationsKey,
@@ -530,6 +534,104 @@ class TailorCard extends ConsumerWidget {
           Icons.chevron_right_rounded,
           color: SpColors.textMuted,
         ),
+      ),
+    );
+  }
+}
+
+/// "Discovery emails": Day 4 and the personal editions, on or off — the same
+/// switch as the website's account page and the "Change what I receive" link
+/// (email_preferences, through /api/account/email-preferences). Explorers who
+/// have never applied only, as the emails are.
+class DiscoveryEmailsCard extends ConsumerStatefulWidget {
+  const DiscoveryEmailsCard({super.key});
+
+  static const label = 'Discovery emails';
+  static const detail =
+      'An introduction a few days after you join, then personal editions of '
+      'discoveries. Emails about your account and your reviews still reach '
+      'you either way.';
+
+  @override
+  ConsumerState<DiscoveryEmailsCard> createState() =>
+      _DiscoveryEmailsCardState();
+}
+
+class _DiscoveryEmailsCardState extends ConsumerState<DiscoveryEmailsCard> {
+  bool? _on;
+  bool _saving = false;
+  String? _note;
+
+  @override
+  void initState() {
+    super.initState();
+    ref.read(accountServiceProvider).discoveryEmailsOn().then((on) {
+      if (!mounted) return;
+      setState(() {
+        _on = on;
+        if (on == null) _note = 'We couldn’t load this just now.';
+      });
+    });
+  }
+
+  Future<void> _flip(bool on) async {
+    setState(() {
+      _saving = true;
+      _note = null;
+    });
+    final ok = await ref.read(accountServiceProvider).setDiscoveryEmails(on);
+    if (!mounted) return;
+    setState(() {
+      _saving = false;
+      if (ok) _on = on;
+      _note = !ok
+          ? 'That didn’t save. Please try again.'
+          : on
+          ? 'On. Discoveries will reach you again.'
+          : 'Off. You won’t receive any more discovery emails.';
+    });
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return _Card(
+      child: Column(
+        key: const ValueKey('account-discovery-emails'),
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Row(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              const Expanded(
+                child: Text(
+                  DiscoveryEmailsCard.label,
+                  style: TextStyle(fontSize: 15, fontWeight: FontWeight.w600),
+                ),
+              ),
+              Switch(
+                key: const ValueKey('account-discovery-emails-switch'),
+                value: _on ?? false,
+                onChanged: _on == null || _saving ? null : _flip,
+              ),
+            ],
+          ),
+          const SizedBox(height: 4),
+          const Text(
+            DiscoveryEmailsCard.detail,
+            style: TextStyle(
+              fontSize: 13,
+              color: SpColors.textMuted,
+              height: 1.5,
+            ),
+          ),
+          if (_note != null) ...[
+            const SizedBox(height: 8),
+            Text(
+              _note!,
+              style: const TextStyle(fontSize: 13, color: SpColors.textMuted),
+            ),
+          ],
+        ],
       ),
     );
   }

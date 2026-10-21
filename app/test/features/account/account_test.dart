@@ -448,6 +448,65 @@ void main() {
     });
   });
 
+  group('discovery emails', () {
+    Finder card() => find.byKey(const ValueKey('account-discovery-emails'));
+    Finder toggle() =>
+        find.byKey(const ValueKey('account-discovery-emails-switch'));
+
+    testWidgets('an explorer can turn them off and back on', (tester) async {
+      service.restoreSession(_email);
+      await pumpAccount(tester);
+      await tester.scrollUntilVisible(toggle(), 200);
+      expect(tester.widget<Switch>(toggle()).value, isTrue);
+      await tester.tap(toggle());
+      await tester.pumpAndSettle();
+      expect(service.calls, contains('discoveryEmails:false'));
+      expect(tester.widget<Switch>(toggle()).value, isFalse);
+      expect(
+        find.text('Off. You won’t receive any more discovery emails.'),
+        findsOneWidget,
+      );
+      await tester.tap(toggle());
+      await tester.pumpAndSettle();
+      expect(service.calls, contains('discoveryEmails:true'));
+      expect(tester.widget<Switch>(toggle()).value, isTrue);
+    });
+
+    testWidgets('if it does not save, the switch stays where it was', (
+      tester,
+    ) async {
+      service.discoveryEmailsSaves = false;
+      service.restoreSession(_email);
+      await pumpAccount(tester);
+      await tester.scrollUntilVisible(toggle(), 200);
+      await tester.tap(toggle());
+      await tester.pumpAndSettle();
+      expect(tester.widget<Switch>(toggle()).value, isTrue);
+      expect(find.text('That didn’t save. Please try again.'), findsOneWidget);
+    });
+
+    testWidgets('not shown to a practitioner', (
+      tester,
+    ) async {
+      service.profiles[_userId] = const AccountProfile(
+        userType: 'practitioner',
+      );
+      service.restoreSession(_email);
+      await pumpAccount(tester);
+      expect(card(), findsNothing);
+    });
+
+    testWidgets('not shown to a declined applicant either', (tester) async {
+      service.profiles[_userId] = const AccountProfile(
+        userType: 'explorer',
+        verificationStatus: 'rejected',
+      );
+      service.restoreSession(_email);
+      await pumpAccount(tester);
+      expect(card(), findsNothing);
+    });
+  });
+
   group('the refreshed account', () {
     testWidgets('Delete account is a red button straight under Sign out', (
       tester,

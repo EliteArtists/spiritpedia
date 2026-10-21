@@ -19,15 +19,28 @@ class AccountProfile {
     required this.userType,
     this.linkedHealerSlug,
     this.fullName,
+    this.verificationStatus,
   });
 
   final String userType; // 'explorer' | 'practitioner'
   final String? linkedHealerSlug;
 
+  /// 'pending', 'approved' or 'rejected'. A declined applicant reads explorer
+  /// again but keeps 'rejected'.
+  final String? verificationStatus;
+
   /// The name they gave (user_profiles.full_name): greetings and emails.
   final String? fullName;
 
   bool get isPractitioner => userType == 'practitioner';
+
+  /// Who gets the discovery emails (Day 4 and the personal editions): an
+  /// explorer who has never applied and manages no listing — the website's
+  /// isExplorerForDay4.
+  bool get getsDiscoveryEmails =>
+      !isPractitioner &&
+      verificationStatus != 'rejected' &&
+      linkedHealerSlug == null;
 }
 
 /// Which kinds of notification the account wants (notification_preferences).
@@ -87,6 +100,13 @@ abstract class AccountService {
 
   /// The website's welcome email for a new explorer.
   Future<void> sendWelcome();
+
+  /// "Discovery emails" (email_preferences, migration 0025), through the
+  /// website's /api/account/email-preferences: null if it can't be read.
+  Future<bool?> discoveryEmailsOn();
+
+  /// Turn them on or off. True if it saved.
+  Future<bool> setDiscoveryEmails(bool on);
 
   /// Notes [email] as joining to share their work (the website's
   /// /api/pending-user-type, as its own sign-up does), so the website's
@@ -273,7 +293,7 @@ class SupabaseAccountService implements AccountService {
   Future<AccountProfile?> profile(String userId) async {
     final row = await _db
         .from('user_profiles')
-        .select('user_type, linked_healer_slug, full_name')
+        .select('user_type, linked_healer_slug, full_name, verification_status')
         .eq('id', userId)
         .maybeSingle();
     if (row == null) return null;
@@ -281,6 +301,7 @@ class SupabaseAccountService implements AccountService {
       userType: (row['user_type'] as String?) ?? 'explorer',
       linkedHealerSlug: row['linked_healer_slug'] as String?,
       fullName: (row['full_name'] as String?)?.trim().nullIfEmpty,
+      verificationStatus: row['verification_status'] as String?,
     );
   }
 
@@ -421,6 +442,41 @@ class SupabaseAccountService implements AccountService {
   @override
   Future<void> sendWelcomePush() async {
     await _post('/api/push/welcome');
+  }
+
+  @override
+  Future<bool?> discoveryEmailsOn() async {
+    final token = _db.auth.currentSession?.accessToken;
+    if (token == null) return null;
+    try {
+      final res = await _http.get(
+        Uri.parse('$apiBaseUrl/api/account/email-preferences'),
+        headers: {'Authorization': 'Bearer $token'},
+      );
+      if (res.statusCode != 200) return null;
+      return (jsonDecode(res.body) as Map<String, dynamic>)['on'] == true;
+    } catch (_) {
+      return null;
+    }
+  }
+
+  @override
+  Future<bool> setDiscoveryEmails(bool on) async {
+    final token = _db.auth.currentSession?.accessToken;
+    if (token == null) return false;
+    try {
+      final res = await _http.put(
+        Uri.parse('$apiBaseUrl/api/account/email-preferences'),
+        headers: {
+          'Authorization': 'Bearer $token',
+          'Content-Type': 'application/json',
+        },
+        body: jsonEncode({'on': on}),
+      );
+      return res.statusCode == 200;
+    } catch (_) {
+      return false;
+    }
   }
 
   @override

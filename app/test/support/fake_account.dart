@@ -118,6 +118,20 @@ class FakeAccountService implements AccountService {
   @override
   Future<void> sendWelcome() async => calls.add('sendWelcome');
 
+  /// "Discovery emails": null = couldn't be read.
+  bool? discoveryEmails = true;
+  bool discoveryEmailsSaves = true;
+
+  @override
+  Future<bool?> discoveryEmailsOn() async => discoveryEmails;
+
+  @override
+  Future<bool> setDiscoveryEmails(bool on) async {
+    calls.add('discoveryEmails:$on');
+    if (discoveryEmailsSaves) discoveryEmails = on;
+    return discoveryEmailsSaves;
+  }
+
   final areasByUser = <String, AreaRow>{};
 
   @override
