@@ -1,93 +1,126 @@
 # Every email Spiritpedia sends
 
-An inventory, as of build 15 (16 October 2026), before the emails are rewritten
-in the guiding star's voice. Report only: nothing here has been changed.
+An inventory as of 21 October 2026, after the rewrite to the approved copy in
+`docs/email-copy-2026-10-21.md` (the source of truth for wording: change it
+there first). Codes (B1, C1–C8, D1–D13) are the ones that document uses.
 
-There are **three senders**:
+There are **two senders**:
 
-1. **The website, through Resend** (`web/utils/email.js`). Sixteen emails:
-   ten transactional, five outreach. (The two claim-decision emails, 6a and
-   6b, were added on 17 October 2026; Listing live, 2a, on 19 October; the two
-   content-decision emails, 6c and 6d, on 20 October.) The app never sends email itself; it calls the
-   website's routes.
-2. **Supabase Auth**, through its own email settings. The sign-in codes and the
+1. **The website, through Resend** (`web/utils/email.js`). The app never sends
+   email itself; it calls the website's routes.
+2. **Supabase Auth**, through its own email settings: the sign-in codes and the
    change-email codes. Their wording lives in the Supabase dashboard, not in
-   this repo.
-3. Nothing else. Vercel crons and the admin pages send only through (1).
+   this repo (see the end of this page).
 
 ## How the website's emails are sent
 
 - **From:** `Spiritpedia <hello@accounts.spiritpedia.co>`. The outreach journey
-  is the one exception: it comes from `Spiritpedia <love@spiritpedia.co>`.
+  is the one exception: `Spiritpedia <love@spiritpedia.co>`.
 - **Reply-to:** `love@spiritpedia.co`, on every email.
-- **Blind copy:** every email is also sent to `spiritpedialove@gmail.com`, an
-  archive inbox. Nothing in the database records that an email went out.
-- **Format:** HTML and plain text, except the journey, which is plain text only,
-  with no links.
-- **Greeting:** "Hi {first name}", where the first name is the first word of
-  `user_profiles.full_name` (the name the app's star now asks for) or the
-  review's author name. With no name, it is **"Hi there"**.
-- **Sign-off:** "With love, The Spiritpedia team". The report email to the admin
-  has none.
-- **A failed email never undoes the action** that triggered it, and is not
-  retried.
+- **Blind copy:** every email also goes to `spiritpedialove@gmail.com`, the
+  archive. It is also the only record of a decline reason: reasons are typed
+  by the admin and go in the email, and are not stored.
+- **Wording:** `web/utils/emailTemplates.js`, built with `web/utils/emailParts.js`
+  (greeting, sign-offs, buttons, escaping). Tested in
+  `emailTemplates.test.mjs`.
+- **Greeting:** "Hi {first name}," when there is a first name, otherwise
+  "Hello,". Never "Hi there". The first name is the first word of
+  `user_profiles.full_name` (or of the review's author name); for outreach, the
+  first word of the listing's name after any title ("Dr Jane Smith" → Jane).
+- **Sign-offs:** the team ("With love, / The Spiritpedia team"), the Guiding
+  Star ("Your Guiding Star ✦ / and the Spiritpedia Constellation", with "See
+  you among the stars," on B1 and B2), or plain ("The Spiritpedia team") for
+  decisions and notices.
+- **Links:** always `https://www.spiritpedia.co`.
+- **Format:** HTML and plain text, buttons drawn as buttons. The outreach
+  journey is plain text only, with its two links written out.
+- **Once only:** emails that must not repeat claim a row in `email_sends`
+  (migration 0025) before sending, keyed by which email and what it is about,
+  and give it back if the send fails (`web/utils/emailOnce.js`). No addresses
+  are stored there.
+- **A failed email never undoes the action** that triggered it. Most are not
+  retried; the daily jobs retry the welcome, Day 4 and the journey.
 
-## The emails
+## Explorer emails (Guiding Star voice)
 
-| # | Email | Trigger | From | To | Subject | Current wording, in one line |
-|---|---|---|---|---|---|---|
-| 1 | **Explorer welcome** | A new account is created as an explorer: on the website at sign-up, or in the app (since build 14, after "I'm exploring" on "How will you use Spiritpedia?"). Route `/api/email/explorer-welcome`, once per account | hello@accounts | The new member | Welcome to Spiritpedia | "Welcome to Spiritpedia. It's a place to follow the teachers, practices and ideas that speak to you…"; invites them to save favourites to My Library; link: Explore Spiritpedia |
-| 2 | **Practitioner welcome** | A new account is created as a practitioner on the website; or (since 16 October) an app account is upgraded to practitioner when they sign in on the website after "I share my work". Route `/api/email/practitioner-welcome`; skipped unless the account is a practitioner | hello@accounts | The new practitioner | Welcome to Spiritpedia | "We're glad you're here both as a practitioner and as someone who can explore the work of others"; their practitioner space; link: Continue your practitioner setup |
-| 2a | **Listing live** | The admin approves a new listing in the Inbox (`/api/admin/practitioner`): a practitioner, channel, app, organisation or publisher. Not for a claimed listing (it was public already: the Claim approved email, 6a, goes instead), and not when Approve is pressed again | hello@accounts | The owner | Your listing on Spiritpedia is live | "Good news: {listing} is now live on Spiritpedia"; links: see it here, your account page; reply or write to love@ for anything they can't edit (`utils/listingApproved.js`) |
-| 3 | **Review received** | A member submits a review, on the website or in the app. Route `/api/email/review-received` | hello@accounts | The reviewer | We've received your review of {title} | "Thank you for reviewing {title} by {creator}. Your review is now with our team for assessment. We'll email you once we've reviewed it." |
-| 4 | **Review approved** | The admin approves the review (Admin → Reviews; `/api/admin/reviews`) | hello@accounts | The reviewer | Your review of {title} is now live | "Your review… has been accepted and is now live"; thanks them, says it helps others decide; link: View your review |
-| 5 | **Review rejected** | The admin rejects the review (Admin → Reviews) | hello@accounts | The reviewer | An update on your review of {title} | "After assessing your submission, we're unable to publish your review"; asks them to email love@ or reply for more information, or if we misunderstood |
-| 6 | **Review reported** (to the admin) | A member reports a review from the app's "⋯" menu. Route `/api/email/review-reported` | hello@accounts | **love@spiritpedia.co** | Review reported: {reason} — {title} | Factual: the star rating, title, author, reason, their note, the review's text as it was, links to it and to the dashboard, and "Reports are promised a decision within 24 hours." No greeting or sign-off |
-| 6a | **Claim approved** | The admin approves a "Request to claim it" in the Inbox (`/api/admin/claim-request`); also when the admin approves an email-verified claim ("Approve claim", `/api/admin/practitioner`) | hello@accounts | The claimant | Your claim to {listing} is approved | "Your request to manage {listing} on Spiritpedia has been approved. The listing is now linked to your account"; links: your account page, view your listing |
-| 6b | **Claim rejected** | The admin rejects a "Request to claim it" | hello@accounts | The claimant | An update on your claim to {listing} | "We weren't able to confirm that the listing is yours, so we can't link it to your account"; reply or write to love@ if we've got it wrong |
-| 6c | **Content approved** | The admin approves something an owner added or changed (Admin → Inbox → Content → Approve; `/api/admin/submissions`, migration 0024) | hello@accounts | The owner | New: Your {video/book/course/retreat/membership/free resource} "{title}" is now live on Spiritpedia. Edit: Your changes to "{title}" are live | "Your {what} "{title}" is now live on Spiritpedia" (or "Your changes to "{title}" are now live"); links: see it here, your account page, where they can add, change or remove anything (`utils/contentSubmissions.js`) |
-| 6d | **Content not added** | The admin rejects it, choosing a reason (not their own work, link doesn't work, not a fit, already listed, or something else with a note) | hello@accounts | The owner | New: We couldn't add "{title}". Edit: We couldn't change "{title}" | "We couldn't add "{title}" to Spiritpedia" (or "make your changes to"); the reason and the admin's note; for an edit, the live version is unchanged; edit it and send it again from the account page; reply or write to love@ |
-| 7 | **Journey 1** (practitioner outreach) | The admin starts a claim journey on an unclaimed practitioner (Admin → record → Outreach; `/api/admin/journey/start`). Sent at once | **love@spiritpedia.co** | The practitioner's `contact_email` (or `JOURNEY_TEST_EMAIL` while that is set) | We came across your work | Found their work online; Spiritpedia explained; invites an interview; says we made a short public listing they haven't approved, offers the link, claiming, corrections or removal, all by replying |
-| 8 | **Journey 2** | Day 21, by the daily cron (`/api/cron/journey-emails`), unless the profile was claimed or removed | love@ | As above | A place for your work on Spiritpedia | A follow-up: established teachers (Eckhart Tolle, Abraham Hicks, Ram Dass) sit beside newer practitioners; reply to claim, or to be removed or stop the emails |
-| 9 | **Journey 3** | Day 42, cron | love@ | As above | Help people find your services on Spiritpedia | Finding a practitioner starts with a question; Spiritpedia puts teachings and services together, online or in person; reply to claim; or to be removed |
-| 10 | **Journey 4** | Day 63, cron | love@ | As above | Let people discover your work | People want to understand your approach before booking; a profile brings intro, videos, resources and links together; the listing is a starting point; the interview offer still stands |
-| 11 | **Journey 5** | Day 84, cron | love@ | As above | A final invitation from Spiritpedia | "This is our final follow up"; still welcome to talk or claim; nothing to do if the timing isn't right; no more reminders; reply to be removed |
-| 12 | **Sign-in code**, new address ("Confirm signup" template) | Someone signs in with an email that has no account yet (website or app; the same 6-digit-code flow) | Supabase Auth's sender: check Dashboard → Authentication → Emails → SMTP Settings | The person signing in | Set in the dashboard | Set in the dashboard: it carries the 6-digit code (`{{ .Token }}`). **Not in the repo** |
-| 13 | **Sign-in code**, existing account ("Magic Link" template) | Someone signs in with an email that already has an account | As above | The person signing in | Set in the dashboard | As above: the 6-digit code. **Not in the repo** |
-| 14 | **Change email: code to the new address** ("Change Email Address" template) | Account → Change email, in the app (two codes) | As above | The new address | Set in the dashboard | Carries the code (`{{ .Token }}`), fixed and tested on live on 14 October. **Not in the repo** |
-| 15 | **Change email: code to the current address** (same template) | The same moment ("Secure email change" is on) | As above | The current address | Set in the dashboard | As above, its own code |
+| # | Email | Trigger | Rules |
+|---|---|---|---|
+| B1 | **Welcome** "Welcome to Spiritpedia ✦" | Account created: website `ensureProfile`; app, the moment the account is created (not after "How will you use Spiritpedia?"). Route `/api/email/explorer-welcome` | Explorers only; once per account. App version (tap and hold) when `signup_platform` is `app`, website version (My Library button) otherwise |
+| B2 | **Day 4** "Follow the superheroes. Discover your local heroes." | Daily job `/api/cron/account-emails`, 09:00 UTC, 4+ days after the account was created | Explorers only: never a practitioner, a declined applicant or a listing owner; not if unsubscribed. Once per account. Carries an unsubscribe line and one-click `List-Unsubscribe` headers |
+| B3 | Personal discoveries, Day 10 onwards | Not built yet | Comes with the email-preferences screen ("Change what I receive") |
 
-**Supabase templates that exist but nothing uses:** Reset Password (there are
-no passwords), Invite User, and Reauthentication. Worth rewriting only if they
-are ever switched on.
+**Unsubscribe:** `email_preferences` (migration 0025) holds `unsubscribed_at` and
+the token in the link. The link opens `/unsubscribe`, which asks before
+unsubscribing (mail scanners open links); mail clients' own button POSTs to
+`/api/email/unsubscribe`. It stops Day 4 and discovery emails only; account and
+review emails still go. There is no switch on the account page yet.
 
-**Dev differs from live:** the dev project is on the free plan and sends
-Supabase's default templates (plain "Your code is…" wording, from Supabase's own
-address). Rewrites happen on live.
+## Account and review emails
+
+| # | Email | Trigger | To | Notes |
+|---|---|---|---|---|
+| D1 | **Practitioner welcome** | Practitioner account created on the website, or an app explorer becoming a practitioner there. `/api/email/practitioner-welcome` | The new practitioner | Once per account. Held back while the account's email matches a listing (an instant claim's D7 is their welcome); released by "This isn't me" or a failed claim on the claim page, or by the daily job a day after sign-up |
+| D2 | **Application received** | The practitioner form is submitted (`/api/profile/resubmit`) | The applicant | Once per application: a decline clears it, so sending in again gets a new one |
+| D3 | **Application approved** "{listing} is now live" | Admin approves a new listing (`/api/admin/practitioner`) | The owner | Not for a listing that was claimed (D7 goes instead) |
+| D4 | **Application declined** | Admin → Inbox → Reject, with a reason | The applicant | Reason required. Not sent again if Reject is pressed again. The account becomes an explorer, keeps `verification_status` rejected, and never gets Day 4 |
+| D5 | **Claim request received** | A "Request to claim it" is saved; the page calls `/api/email/claim-request-received` | The claimant | Once per request; only for the caller's own request |
+| D6 | **Ownership confirmation** | Admin → Inbox → claim request → "Send ownership check" (`/api/admin/claim-request`, `ownership_check`) | **The listing's published address**, never the claimant's | Once per request; the Inbox shows when it went. A reply is read by the admin and grants nothing by itself |
+| D7 | **Claim approved** "You can now manage {listing}" | Admin approves a claim request or a verified claim; or an instant email-match claim on `/auth/claim` (`/api/email/claim-approved`) | The claimant | Once per account and listing, shared by all three paths |
+| D8 | **Claim declined** | Admin → Inbox → claim request → Reject, with a reason | The claimant | Reason required |
+| D9 | **Review received** | A new review is saved, website or app (`/api/email/review-received`) | The reviewer | Not for an edit |
+| D10 | **Review approved** | Admin → Reviews → Approve | The reviewer | Only when the status actually changes |
+| D11 | **Review rejected** | Admin → Reviews → Reject, or Admin → Flags → "Take review down", with a reason | The reviewer | Reason required. Nothing about a report or reporter is in it. A ban takes reviews down without emails |
+| D12 | **Review reported** | A member reports a review in the app (`/api/email/review-reported`) | **love@spiritpedia.co** | Item, review and report references, reason, time (UTC), link to Admin → Flags |
+| D13 | **Account deleted** | Deletion completes: self-service (website or app, `/api/account/delete`) or admin (Admin → person → Delete, "Send confirmation" ticked by default) | The address the account had | Only after a successful deletion; the account's `email_sends` rows are cleared first |
+
+**Owners' content** (migration 0024, not part of the approved copy): **Content
+approved** and **Content not added**, from Admin → Inbox → Content
+(`/api/admin/submissions`, wording in `web/utils/contentSubmissions.js`). They use
+the same greeting rule.
+
+## Practitioner outreach journey (C1–C8, team voice)
+
+- **Started** only by the admin's **Start email journey** button (admin listing
+  record → Outreach; `/api/admin/journey/start`). Email 1 goes at once.
+- **Then** the daily job `/api/cron/journey-emails` (08:00 UTC) sends emails 2–8
+  at days **21, 42, 63, 84, 105, 126 and 147** from the start, one per run, and
+  the lowest due first. Email 8 is the last.
+- **From** `love@spiritpedia.co`; plain text; every email carries the listing
+  link (`/healers/{slug}`) and the claim link (`/auth/claim?slug={slug}`), and
+  offers removal.
+- **The claim link works signed out:** it goes through sign-up as a
+  practitioner and back to the listing after the code. An account whose email
+  matches the listing claims it at once (D7); any other is offered "ask us to
+  check and link it to your account".
+- **Individuals only.** Channels, apps, publishers and organisations are
+  refused until they have their own wording.
+- **Stops** when the listing is claimed, removed, or loses its contact email;
+  when Resend lists the address as bounced or complained (checked before every
+  email; `suppressed`); after email 8; or when the admin presses Stop.
+- **Never again:** a journey stopped as "Asked to stop emails"
+  (`asked_to_stop`), "Asked for removal" (`removal_requested`) or `suppressed`
+  blocks any new journey to that listing.
+- **JOURNEY_TEST_EMAIL:** while set (it is set on Vercel for Production and
+  Preview), every journey email goes to that test inbox instead of the
+  practitioner. It stays set until the solicitor has checked cold email.
+
+## Supabase Auth emails (not in this repo)
+
+| Email | Trigger | Template |
+|---|---|---|
+| Sign-in code, new address | Signing in with an email that has no account (website or app) | "Confirm signup", carries `{{ .Token }}` |
+| Sign-in code, existing account | Signing in with an email that has an account | "Magic Link" |
+| Change email, to the new address | Account → Change email, in the app | "Change Email Address" |
+| Change email, to the current address | The same moment ("Secure email change" is on) | The same template |
+
+Reset Password, Invite User and Reauthentication exist but nothing uses them.
+Dev is on the free plan and sends Supabase's default templates; the wording
+that matters is on live (Dashboard → Authentication → Emails → Templates).
 
 ## Not emails, but in the same voice
 
 - **The first push notification:** "✦ Testing, testing… just checking my light
   reaches you. Nothing to do. I'll only shine when it matters." Once per
   account, when notifications are turned on (`web/utils/push.js` → `WELCOME`).
-- **The star's lines in the app:** "I am your guiding star", "Tap me anytime to
-  come home", the Tailor Spiritpedia introduction, the save prompt, "How will
-  you use Spiritpedia?", "Shall I show you practitioners near you?", "Would you
-  like to share your name?", "Welcome back, {name}".
-
-## What's needed before the rewrite
-
-1. **The Supabase template texts** (emails 12–15): Dashboard → the **live**
-   project → Authentication → Emails → Templates. Copy the subject and body of
-   Confirm signup, Magic Link and Change Email Address, or let me read them
-   from a received email.
-2. **The Supabase sender:** Dashboard → Authentication → Emails → SMTP Settings
-   → the sender name and address. If custom SMTP is on, it is probably through
-   Resend too, but the repo doesn't record it.
-3. **Decisions for the voice:**
-   - Is it always the star speaking ("I"), or the team ("we")? Today it is the
-     team everywhere ("With love, The Spiritpedia team"), while the star's own
-     lines in the app say "I".
-   - Do the outreach journey emails stay in the team's voice? They are written
-     as a person to a person, from love@, and are deliberately plain.
-   - The report email to the admin is internal and probably stays factual.
+- **The star's first callout in the app:** "Tap me anytime to come home. Press
+  and hold to open your Library." (`app/lib/features/intro/intro_overlay.dart`).
