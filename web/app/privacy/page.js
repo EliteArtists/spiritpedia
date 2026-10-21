@@ -9,8 +9,10 @@ import CookieSettingsLink from '@/components/CookieSettingsLink';
 // Its own date, separate from the Terms (LAST_UPDATED in LegalPage), because
 // the two now change independently. Updated for self-serve account deletion,
 // synced saved items, app notifications (Firebase Cloud Messaging), and the
-// subjects chosen and hidden in the app (explicit consent).
-const PRIVACY_UPDATED = '20 October 2026';
+// subjects chosen and hidden in the app (explicit consent), and the explorer
+// introduction and personal discovery emails (legitimate interest, with an
+// unsubscribe in every one).
+const PRIVACY_UPDATED = '21 October 2026';
 
 export const metadata = buildMetadata({
   title: 'Privacy Policy',
@@ -177,11 +179,32 @@ export default function PrivacyPage() {
             of what you love first. We never store the words you search for here.
           </li>
           <li>
-            It is used only to tailor what you see. It is never shown to our team, never shared
+            It is used only to tailor what you see on Spiritpedia and in the discoveries we email
+            you. It is never shown to our team, never shared
             and never used for advertising, and it never hides anything from you.
           </li>
           <li>
             You can turn it off at any time, and what we&apos;ve learned is deleted straight away.
+          </li>
+        </List>
+
+        <Sub>Introductions and personal discoveries by email</Sub>
+        <List>
+          <li>
+            If you have an explorer account, we send you a short introduction to Spiritpedia a few
+            days after you join, and from time to time a personal edition of discoveries: people,
+            videos and free resources we think you&apos;ll enjoy.
+          </li>
+          <li>
+            We choose them from the subjects you asked for more of, what you&apos;ve saved, your
+            area if you&apos;ve set one and, only if you&apos;ve let Spiritpedia learn from what you
+            explore, what you&apos;ve explored. We never include anything you&apos;ve saved already
+            or asked us never to show, and nobody pays to be included.
+          </li>
+          <li>
+            Every one of these emails has an unsubscribe link, and you can turn them off, or back
+            on, at any time from that link or your account page. Emails about your account, your
+            applications and your reviews still reach you.
           </li>
         </List>
 
@@ -244,6 +267,10 @@ export default function PrivacyPage() {
             [
               'Learn from what you explore to tailor what you see',
               'Your consent — it is off unless you turn it on, and you can turn it off at any time',
+            ],
+            [
+              'Send explorers introductions and personal discoveries by email',
+              'Our legitimate interest in telling account holders about Spiritpedia — you can unsubscribe in every email, or on your account page, at any time',
             ],
             [
               'Count, without recording who, what is opened, saved and searched for',
