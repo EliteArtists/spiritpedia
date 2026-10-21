@@ -385,3 +385,34 @@ export function accountDeleted({ firstName }) {
     signOff: 'plain',
   });
 }
+
+/* ── B2. TIERS, Day 4 ──────────────────────────────────────────────────── */
+
+// Explorers only (/api/cron/account-emails decides who). Same wording for app
+// and website. unsubscribeUrl is the account's own one-click link; the line
+// it sits on is the only thing here that is not the approved copy.
+export function explorerDay4({ firstName, unsubscribeUrl }) {
+  return renderEmail({
+    subject: 'Follow the superheroes. Discover your local heroes.',
+    blocks: [
+      greeting(firstName),
+      "Let me introduce you to some of the people you'll meet in Spiritpedia.",
+      { heading: 'Superheroes' },
+      'A worldwide reach with over a million followers across social media. You may recognise a few familiar faces here—and find more of their work to explore.',
+      { heading: 'Luminaries' },
+      'Hundreds of thousands of followers: the superstars of the future. Perhaps your next favourite teacher is waiting among them.',
+      { heading: 'Local Heroes' },
+      "Practitioners available in your area. Set your area to discover who's nearby, or explore practitioners offering online sessions.",
+      'These groups describe reach and recognition. Someone just beginning to share their work could have something meaningful to offer you.',
+      "And among our Timeless Teachers, you'll find the Ascended Masters: teachers whose legacies live on through the wisdom they left behind.",
+      "Start with someone familiar, or let curiosity introduce you to someone new. Save the people and discoveries you'd like to return to—I'll help you find your way.",
+      { button: 'Explore Spiritpedia', url: `${SITE}/` },
+    ],
+    signOff: 'starFarewell',
+    footer: {
+      text: "You're receiving this because you have a Spiritpedia account.",
+      linkText: 'Unsubscribe from these emails',
+      url: unsubscribeUrl,
+    },
+  });
+}

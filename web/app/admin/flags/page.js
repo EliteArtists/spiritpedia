@@ -5,6 +5,7 @@ import Link from 'next/link';
 import SectionHeading from '@/components/admin/SectionHeading';
 import { Placeholder } from '@/components/admin/AdminPlaceholders';
 import DataProblem from '@/components/admin/DataProblem';
+import ReasonBox from '@/components/admin/ReasonBox';
 import { useAdminData } from '@/components/admin/AdminData';
 
 // REPORTED REVIEWS (migration 0015). Members report a review from the app's
@@ -77,6 +78,8 @@ export default function AdminReportsPage() {
   const [tab, setTab] = useState('open');
   const [busy, setBusy] = useState(null);
   const [toast, setToast] = useState(null);
+  // The report whose "Take review down" is asking for a reason (D11).
+  const [takingDown, setTakingDown] = useState(null);
 
   const load = useCallback(async () => {
     try {
@@ -115,7 +118,17 @@ export default function AdminReportsPage() {
       if (!res.ok || json.error) {
         setToast({ type: 'error', message: json.message || json.error || `Failed (${res.status})` });
       } else {
-        setToast({ type: 'success', message: done });
+        setToast({
+          type: 'success',
+          message:
+            done +
+            (json.notified === true
+              ? ' The reviewer has been emailed the reason.'
+              : json.notified === false
+                ? ' The email to the reviewer did not go.'
+                : ''),
+        });
+        setTakingDown(null);
         const result = await load();
         setData(result.data);
         setError(result.error);
@@ -293,7 +306,7 @@ export default function AdminReportsPage() {
                           <button
                             type="button"
                             disabled={Boolean(busy)}
-                            onClick={() => act(key, { id: r.id, action: 'reject_review' }, 'Review taken down; report resolved.')}
+                            onClick={() => setTakingDown((v) => (v === r.id ? null : r.id))}
                             className={`${button} bg-red-600 text-white hover:bg-red-500`}
                           >
                             {busy === key ? '…' : 'Take review down'}
@@ -334,6 +347,17 @@ export default function AdminReportsPage() {
                           Mark resolved
                         </button>
                       </div>
+                    )}
+                    {r.status === 'open' && takingDown === r.id && (
+                      <ReasonBox
+                        title="Take this review down?"
+                        confirmLabel="Take down and email the reviewer"
+                        busy={Boolean(busy)}
+                        onConfirm={(reason) =>
+                          act(key, { id: r.id, action: 'reject_review', reason }, 'Review taken down; report resolved.')
+                        }
+                        onCancel={() => setTakingDown(null)}
+                      />
                     )}
                   </li>
                 );

@@ -1,5 +1,7 @@
 import { NextResponse } from 'next/server';
-import { adminClient, isAdminRequest, NOT_CONFIGURED } from '@/utils/supabaseAdmin';
+import { adminClient, isAdminRequest, NOT_CONFIGURED } from '@/utils/supabaseAdmin';import { firstNameFrom, sendReviewRejected } from '@/utils/email';
+import { getContentMeta } from '@/utils/contentMeta';
+
 
 export const dynamic = 'force-dynamic';
 
@@ -66,8 +68,10 @@ export async function GET() {
 //                  open report about them
 //   unban          lift a ban (by userId); their old reviews stay down
 //
-// Taking a review down here sends the reviewer no email: the person is the
-// subject of a report, and the rejection email invites them to argue.
+// Taking a review down asks for a reason and emails it to the reviewer: the
+// same "An update on your review" (D11) as rejecting it in Admin → Reviews.
+// Nothing about the report or the reporter is in it. A ban takes many reviews
+// down at once and sends nothing.
 const ACTIONS = ['resolve', 'dismiss', 'reject_review', 'ban', 'unban'];
 
 export async function PATCH(request) {
@@ -77,7 +81,8 @@ export async function PATCH(request) {
   const supabase = adminClient();
   if (!supabase) return NextResponse.json(NOT_CONFIGURED, { status: 503 });
 
-  const { id, action, userId } = await request.json().catch(() => ({}));
+  const { id, action, userId, reason: rawReason } = await request.json().catch(() => ({}));
+  const reason = typeof rawReason === 'string' ? rawReason.trim() : '';
   if (!ACTIONS.includes(action)) {
     return NextResponse.json({ error: 'invalid_action' }, { status: 400 });
   }
@@ -99,9 +104,42 @@ export async function PATCH(request) {
   if (readError) return NextResponse.json({ error: readError.message }, { status: 500 });
   if (!report) return NextResponse.json({ error: 'not_found' }, { status: 404 });
 
+  let notified = null;
   if (action === 'reject_review' && report.review_id) {
+    if (!reason) {
+      return NextResponse.json(
+        { error: 'missing_reason', message: 'Write the reason the reviewer will read.' },
+        { status: 400 }
+      );
+    }
+    const { data: before } = await supabase
+      .from('reviews')
+      .select('status, user_id, content_type, content_slug, author_name')
+      .eq('id', report.review_id)
+      .maybeSingle();
     const { error } = await supabase.from('reviews').update({ status: 'rejected' }).eq('id', report.review_id);
     if (error) return NextResponse.json({ error: error.message }, { status: 500 });
+    if (before && before.status !== 'rejected') {
+      try {
+        const { data: authUser } = await supabase.auth.admin.getUserById(before.user_id);
+        const email = authUser?.user?.email;
+        if (email) {
+          const meta = await getContentMeta(before.content_type, before.content_slug);
+          const result = await sendReviewRejected({
+            email,
+            firstName: firstNameFrom(before.author_name),
+            ...meta,
+            reason,
+          });
+          notified = Boolean(result.sent);
+        } else {
+          notified = false;
+        }
+      } catch (err) {
+        console.error('[review-reports] review rejected email failed:', err);
+        notified = false;
+      }
+    }
   }
 
   if (action === 'ban') {
@@ -135,5 +173,5 @@ export async function PATCH(request) {
     .eq('id', report.id);
   if (error) return NextResponse.json({ error: error.message }, { status: 500 });
 
-  return NextResponse.json({ ok: true });
+  return NextResponse.json({ ok: true, notified });
 }

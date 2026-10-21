@@ -17,6 +17,10 @@
     {
       "path": "/api/cron/pending-signups",
       "schedule": "0 6 * * *"
+    },
+    {
+      "path": "/api/cron/account-emails",
+      "schedule": "0 9 * * *"
     }
   ]
 }

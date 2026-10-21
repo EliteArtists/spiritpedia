@@ -64,7 +64,8 @@ const BCC = 'spiritpedialove@gmail.com';
 // `from` overrides the default identity for the one case that needs it: cold
 // outreach, which must come from a person's address rather than accounts@. Every
 // other sender omits it and is unaffected.
-export async function sendEmail({ to, subject, html, text, from = FROM }) {
+// `headers` carries List-Unsubscribe on the emails someone can opt out of.
+export async function sendEmail({ to, subject, html, text, from = FROM, headers }) {
   if (!process.env.RESEND_API_KEY) {
     console.error('[email] RESEND_API_KEY is not set — nothing sent');
     return { sent: false, error: 'no_api_key' };
@@ -82,6 +83,7 @@ export async function sendEmail({ to, subject, html, text, from = FROM }) {
       subject,
       html,
       text,
+      ...(headers ? { headers } : {}),
     });
 
     // The SDK resolves rather than throws for a rejected send — an unverified
