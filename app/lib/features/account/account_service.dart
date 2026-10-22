@@ -18,12 +18,21 @@ class AccountProfile {
   const AccountProfile({
     required this.userType,
     this.linkedHealerSlug,
+    this.linkedPublisherId,
+    this.listingEntityType,
     this.fullName,
     this.verificationStatus,
   });
 
   final String userType; // 'explorer' | 'practitioner'
   final String? linkedHealerSlug;
+
+  /// A publisher account manages a publisher, not a listing (migration 0020).
+  final String? linkedPublisherId;
+
+  /// The linked listing's entity_type, set at approval: 'individual' (or
+  /// null), 'channel', 'app' or 'organisation'.
+  final String? listingEntityType;
 
   /// 'pending', 'approved' or 'rejected'. A declined applicant reads explorer
   /// again but keeps 'rejected'.
@@ -33,6 +42,23 @@ class AccountProfile {
   final String? fullName;
 
   bool get isPractitioner => userType == 'practitioner';
+
+  /// "Account type": what they were approved as, not the sign-up choice — the
+  /// website's accountTypeLabel. A declined applicant is an explorer again.
+  String get typeLabel {
+    if (!isPractitioner) return 'Explorer';
+    if (verificationStatus != 'approved' ||
+        (linkedHealerSlug == null && linkedPublisherId == null)) {
+      return 'Practitioner (awaiting approval)';
+    }
+    if (linkedPublisherId != null) return 'Publisher';
+    return switch (listingEntityType) {
+      'channel' => 'Channel',
+      'app' => 'App',
+      'organisation' => 'Organisation',
+      _ => 'Practitioner',
+    };
+  }
 
   /// Who gets the discovery emails (Day 4 and the personal editions): an
   /// explorer who has never applied and manages no listing — the website's
@@ -131,8 +157,10 @@ abstract class AccountService {
   Future<void> saveNotificationPrefs(String userId, NotificationPrefs prefs);
 
   /// The welcome notification (POST /api/push/welcome) — once ever per
-  /// account; the server decides, so calling it again does nothing.
-  Future<void> sendWelcomePush();
+  /// account; the server decides, so calling it again does nothing. Returns
+  /// the server's status ('sent', 'already_sent', 'no_devices', 'opted_out',
+  /// 'not_configured', 'failed'), or null if it gave no answer.
+  Future<String?> sendWelcomePush();
 
   /// The account's tailoring (user_interests, migrations 0017 and 0018):
   /// More of and Never show. Null if it never chose, which is not the same
@@ -293,13 +321,27 @@ class SupabaseAccountService implements AccountService {
   Future<AccountProfile?> profile(String userId) async {
     final row = await _db
         .from('user_profiles')
-        .select('user_type, linked_healer_slug, full_name, verification_status')
+        .select(
+          'user_type, linked_healer_slug, linked_publisher_id, full_name, '
+          'verification_status',
+        )
         .eq('id', userId)
         .maybeSingle();
     if (row == null) return null;
+    final slug = row['linked_healer_slug'] as String?;
+    // Listings are public, so this reads with the person's own session.
+    final listing = slug == null
+        ? null
+        : await _db
+              .from('healers')
+              .select('entity_type')
+              .eq('healer_slug', slug)
+              .maybeSingle();
     return AccountProfile(
       userType: (row['user_type'] as String?) ?? 'explorer',
-      linkedHealerSlug: row['linked_healer_slug'] as String?,
+      linkedHealerSlug: slug,
+      linkedPublisherId: row['linked_publisher_id']?.toString(),
+      listingEntityType: listing?['entity_type'] as String?,
       fullName: (row['full_name'] as String?)?.trim().nullIfEmpty,
       verificationStatus: row['verification_status'] as String?,
     );
@@ -440,8 +482,11 @@ class SupabaseAccountService implements AccountService {
   }
 
   @override
-  Future<void> sendWelcomePush() async {
-    await _post('/api/push/welcome');
+  Future<String?> sendWelcomePush() async {
+    final res = await _post('/api/push/welcome');
+    if (res.statusCode != 200) return null;
+    final body = jsonDecode(res.body);
+    return body is Map ? body['status'] as String? : null;
   }
 
   @override

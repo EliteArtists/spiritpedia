@@ -49,6 +49,11 @@ abstract class PushMessaging {
   /// Tapped while the app was in the background.
   Stream<PushNote> get opened;
 
+  /// Arrived while the app was open, on Android only: Android shows nothing
+  /// for an app in front, so the app shows it itself. An iPhone shows its own
+  /// banner ([FirebasePushMessaging.showWhileOpen]), so this is empty there.
+  Stream<PushNote> get arrivedWhileOpen;
+
   /// Tapped while the app was closed: it opened the app.
   Future<PushNote?> initialNote();
 }
@@ -146,6 +151,12 @@ class FirebasePushMessaging implements PushMessaging {
       FirebaseMessaging.onMessageOpenedApp.map(_note);
 
   @override
+  Stream<PushNote> get arrivedWhileOpen =>
+      defaultTargetPlatform == TargetPlatform.android
+      ? FirebaseMessaging.onMessage.map(_note)
+      : const Stream.empty();
+
+  @override
   Future<PushNote?> initialNote() async {
     final m = await _fm.getInitialMessage();
     return m == null ? null : _note(m);
@@ -169,6 +180,8 @@ class UnavailablePushMessaging implements PushMessaging {
   Future<void> deleteToken() async {}
   @override
   Stream<PushNote> get opened => const Stream.empty();
+  @override
+  Stream<PushNote> get arrivedWhileOpen => const Stream.empty();
   @override
   Future<PushNote?> initialNote() async => null;
 }

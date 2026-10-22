@@ -485,9 +485,7 @@ void main() {
       expect(find.text('That didn’t save. Please try again.'), findsOneWidget);
     });
 
-    testWidgets('not shown to a practitioner', (
-      tester,
-    ) async {
+    testWidgets('not shown to a practitioner', (tester) async {
       service.profiles[_userId] = const AccountProfile(
         userType: 'practitioner',
       );
@@ -504,6 +502,33 @@ void main() {
       service.restoreSession(_email);
       await pumpAccount(tester);
       expect(card(), findsNothing);
+    });
+  });
+
+  group('account type', () {
+    testWidgets('reads what they were approved as, not the sign-up choice', (
+      tester,
+    ) async {
+      service.profiles[_userId] = const AccountProfile(
+        userType: 'practitioner',
+        verificationStatus: 'approved',
+        linkedHealerSlug: 'a-channel',
+        listingEntityType: 'channel',
+      );
+      service.restoreSession(_email);
+      await pumpAccount(tester);
+      expect(find.text('Channel'), findsOneWidget);
+      expect(find.textContaining('Sharing'), findsNothing);
+    });
+
+    testWidgets('says so while the application is waiting', (tester) async {
+      service.profiles[_userId] = const AccountProfile(
+        userType: 'practitioner',
+        verificationStatus: 'pending',
+      );
+      service.restoreSession(_email);
+      await pumpAccount(tester);
+      expect(find.text('Practitioner (awaiting approval)'), findsOneWidget);
     });
   });
 

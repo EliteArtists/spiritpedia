@@ -262,10 +262,15 @@ class FakeAccountService implements AccountService {
   }
 
   @override
-  Future<void> sendWelcomePush() async {
+  Future<String?> sendWelcomePush() async {
     calls.add('sendWelcomePush');
     welcomeCalls++;
+    if (welcomeAnswers.isNotEmpty) return welcomeAnswers.removeAt(0);
+    return 'sent';
   }
+
+  /// What the server answers the next welcome requests (then 'sent').
+  final welcomeAnswers = <String?>[];
 
   @override
   Future<TailoringRow?> interests(String userId) async {

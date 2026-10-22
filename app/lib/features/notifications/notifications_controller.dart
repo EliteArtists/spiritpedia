@@ -16,30 +16,69 @@ final pushMessagingProvider = Provider<PushMessaging>(
 
 /// Whether THIS phone has said yes, for the signed-in person. Cleared on
 /// sign-out, so the next person to sign in on the phone is asked themselves.
+/// It also keeps the token last registered from this phone, so turning off
+/// can remove it even when Firebase can't hand it over at that moment, and
+/// which accounts the server has confirmed the welcome for.
 abstract class PushDeviceStore {
   Future<bool> enabled();
   Future<void> setEnabled(bool value);
+  Future<String?> lastToken();
+  Future<void> setLastToken(String? token);
+  Future<bool> welcomeDone(String userId);
+  Future<void> setWelcomeDone(String userId);
 }
 
 class PreferencesPushDeviceStore implements PushDeviceStore {
   final _prefs = SharedPreferencesAsync();
   static const _key = 'push_enabled_on_device';
+  static const _tokenKey = 'push_last_token';
+  static String _welcomeKey(String userId) => 'push_welcome_done_$userId';
 
   @override
   Future<bool> enabled() async => await _prefs.getBool(_key) ?? false;
 
   @override
   Future<void> setEnabled(bool value) => _prefs.setBool(_key, value);
+
+  @override
+  Future<String?> lastToken() => _prefs.getString(_tokenKey);
+
+  @override
+  Future<void> setLastToken(String? token) => token == null
+      ? _prefs.remove(_tokenKey)
+      : _prefs.setString(_tokenKey, token);
+
+  @override
+  Future<bool> welcomeDone(String userId) async =>
+      await _prefs.getBool(_welcomeKey(userId)) ?? false;
+
+  @override
+  Future<void> setWelcomeDone(String userId) =>
+      _prefs.setBool(_welcomeKey(userId), true);
 }
 
 class MemoryPushDeviceStore implements PushDeviceStore {
   bool value = false;
+  String? token;
+  final welcomed = <String>{};
 
   @override
   Future<bool> enabled() async => value;
 
   @override
   Future<void> setEnabled(bool v) async => value = v;
+
+  @override
+  Future<String?> lastToken() async => token;
+
+  @override
+  Future<void> setLastToken(String? t) async => token = t;
+
+  @override
+  Future<bool> welcomeDone(String userId) async => welcomed.contains(userId);
+
+  @override
+  Future<void> setWelcomeDone(String userId) async => welcomed.add(userId);
 }
 
 final pushDeviceStoreProvider = Provider<PushDeviceStore>(
@@ -135,8 +174,12 @@ class NotificationsController extends Notifier<NotificationsState> {
         onThisPhone: enabled,
         prefs: prefs,
       );
-      // Keep the account's copy of this phone's token current (it rotates).
-      if (enabled) await _register();
+      // Keep the account's copy of this phone's token current (it rotates),
+      // and ask again for a welcome the server hasn't confirmed yet.
+      if (enabled) {
+        await _register();
+        unawaited(_welcome());
+      }
     } catch (_) {
       state = state.copyWith(loading: false);
     }
@@ -154,6 +197,7 @@ class NotificationsController extends Notifier<NotificationsState> {
       token,
       platform: ref.read(pushPlatformProvider),
     );
+    await _store.setLastToken(token);
   }
 
   Future<void> _onTokenRefresh(String token) async {
@@ -163,7 +207,42 @@ class NotificationsController extends Notifier<NotificationsState> {
         token,
         platform: ref.read(pushPlatformProvider),
       );
+      await _store.setLastToken(token);
     } catch (_) {}
+  }
+
+  /// Waits between welcome attempts; tests set it to zero.
+  static Duration welcomeRetryDelay = const Duration(seconds: 2);
+
+  /// The welcome notification. The server sends it once ever per account;
+  /// the app keeps asking — three tries now, then at each start — until the
+  /// server says it went (or already had). A request that never arrived
+  /// (offline, the app suspended mid-request) was lost silently before
+  /// build 24: on 22 Oct 2026 an iPad turned on and the welcome route was
+  /// never called.
+  Future<void> _welcome() async {
+    final userId = _userId;
+    if (userId == null) return;
+    try {
+      if (await _store.welcomeDone(userId)) return;
+    } catch (_) {}
+    for (var attempt = 0; attempt < 3; attempt++) {
+      if (attempt > 0) await Future<void>.delayed(welcomeRetryDelay * attempt);
+      if (_userId != userId) return;
+      String? status;
+      try {
+        status = await _account.sendWelcomePush();
+      } catch (_) {}
+      if (status == 'sent' || status == 'already_sent') {
+        try {
+          await _store.setWelcomeDone(userId);
+        } catch (_) {}
+        return;
+      }
+      // Nothing to retry now (no devices yet, General off): the next start
+      // asks again.
+      if (status != null && status != 'failed') return;
+    }
   }
 
   /// After the person said yes on the friendly screen. True if notifications
@@ -197,7 +276,7 @@ class NotificationsController extends Notifier<NotificationsState> {
         onThisPhone: true,
       );
       // Once ever per account — the server decides; never blocks turning on.
-      unawaited(_account.sendWelcomePush().catchError((_) {}));
+      unawaited(_welcome());
       return true;
     } on AccountError catch (e) {
       state = state.copyWith(busy: false, error: e.message);
@@ -224,19 +303,36 @@ class NotificationsController extends Notifier<NotificationsState> {
   /// row-level security allows it) and from Firebase. Called on turning off and
   /// on sign-out; after account deletion the server has already removed it, so
   /// [fromAccount] is false.
+  ///
+  /// The token to remove is the one this phone last registered, plus
+  /// whatever Firebase says now (waiting for Apple's token as turning on
+  /// does). Before build 24 it only asked Firebase, without waiting: on an
+  /// iPad that came back empty, the token stayed on the account and the
+  /// error was swallowed (README §16.1).
   Future<void> forgetThisPhone({bool fromAccount = true}) async {
-    try {
-      final token = await _messaging.token();
-      if (fromAccount && token != null && _userId != null) {
-        await _account.removePushToken(token);
+    if (fromAccount && _userId != null) {
+      final tokens = <String>{};
+      try {
+        final saved = await _store.lastToken();
+        if (saved != null) tokens.add(saved);
+      } catch (_) {}
+      try {
+        final now = await _messaging.token(waitForApple: true);
+        if (now != null) tokens.add(now);
+      } catch (_) {}
+      for (final token in tokens) {
+        try {
+          await _account.removePushToken(token);
+        } catch (_) {}
       }
-    } catch (_) {}
+    }
     try {
       await _messaging.deleteToken();
       await _messaging.enableAutoInit(false);
     } catch (_) {}
     try {
       await _store.setEnabled(false);
+      await _store.setLastToken(null);
     } catch (_) {}
     // Never lets signing out or deleting the account fail.
     state = state.copyWith(onThisPhone: false);

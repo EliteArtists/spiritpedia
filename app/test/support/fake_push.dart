@@ -56,6 +56,11 @@ class FakePushMessaging implements PushMessaging {
   @override
   Stream<PushNote> get opened => openedNotes.stream;
 
+  final arrivedNotes = StreamController<PushNote>.broadcast();
+
+  @override
+  Stream<PushNote> get arrivedWhileOpen => arrivedNotes.stream;
+
   @override
   Future<PushNote?> initialNote() async => launchedFrom;
 }

@@ -1710,6 +1710,24 @@ void main() {
       return push;
     }
 
+    testWidgets('one arriving while the app is open shows in the app, '
+        'with Open (Android shows nothing itself)', (tester) async {
+      final push = await launch(tester);
+      push.arrivedNotes.add(
+        const PushNote(
+          title: 'Spiritpedia test',
+          body: 'It works.',
+          route: '/library',
+        ),
+      );
+      await tester.pump();
+      await tester.pump(const Duration(milliseconds: 300));
+      expect(find.text('Spiritpedia test\nIt works.'), findsOneWidget);
+      await tester.tap(find.text('Open'));
+      await tester.pumpAndSettle();
+      expect(find.text('My Library'), findsWidgets);
+    });
+
     testWidgets('a screen this version lacks: Discover, with a quiet note', (
       tester,
     ) async {

@@ -421,9 +421,7 @@ class _SignedInState extends ConsumerState<_SignedIn> {
                 Padding(
                   padding: const EdgeInsets.only(right: 10),
                   child: Text(
-                    profile?.isPractitioner == true
-                        ? 'Practitioner'
-                        : 'Explorer',
+                    profile?.typeLabel ?? 'Explorer',
                     textAlign: TextAlign.right,
                     style: valueStyle,
                   ),

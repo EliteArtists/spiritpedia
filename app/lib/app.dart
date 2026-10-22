@@ -13,6 +13,7 @@ import 'features/notifications/notifications_controller.dart';
 import 'features/notifications/push_messaging.dart';
 import 'features/star/star_layer.dart';
 import 'router.dart';
+import 'theme/colors.dart';
 import 'theme/layout.dart';
 import 'theme/theme.dart';
 
@@ -48,6 +49,9 @@ class _SpiritpediaAppState extends ConsumerState<SpiritpediaApp> {
     // A notification arriving while the app is open shows as the iPhone's
     // own banner (FirebasePushMessaging.showWhileOpen); tapped, it opens here.
     _subs.add(messaging.opened.listen((note) => _open(note.route)));
+    // Android shows nothing for an app in front — the welcome, sent the
+    // moment notifications are turned on, went unseen — so it shows here.
+    _subs.add(messaging.arrivedWhileOpen.listen(_showArrived));
     messaging.initialNote().then((note) => _open(note?.route));
     // DEBUG BUILDS ONLY: open on a screen, over Discover —
     //   flutter run --dart-define=START_ROUTE=/account
@@ -81,6 +85,29 @@ class _SpiritpediaAppState extends ConsumerState<SpiritpediaApp> {
       return _unknown();
     }
     tabPaths.contains(uri.path) ? _router.go(route) : _router.push(route);
+  }
+
+  void _showArrived(PushNote note) {
+    final text = [
+      note.title,
+      note.body,
+    ].whereType<String>().where((t) => t.trim().isNotEmpty).join('\n');
+    if (text.isEmpty) return;
+    _messenger.currentState
+      ?..hideCurrentSnackBar()
+      ..showSnackBar(
+        SnackBar(
+          content: Text(text),
+          duration: const Duration(seconds: 6),
+          action: note.route == null
+              ? null
+              : SnackBarAction(
+                  label: 'Open',
+                  textColor: SpColors.primary,
+                  onPressed: () => _open(note.route),
+                ),
+        ),
+      );
   }
 
   void _unknown() {

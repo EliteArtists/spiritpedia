@@ -5,6 +5,10 @@
     <!-- Android 13+: notifications need the person's permission, asked only
          after the in-app "Would you like notifications?" screen. -->
     <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+    <!-- "Use my location": approximate only, asked when tapped, used once to
+         find a town (lib/features/area/location_source.dart). Without it
+         geolocator refuses on Android. Never fine or background location. -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
     <application
         android:label="Spiritpedia"
         android:name="${applicationName}"

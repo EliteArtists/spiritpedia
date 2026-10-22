@@ -41,6 +41,7 @@ void main() {
   late FakePushMessaging push;
   late MemoryPushDeviceStore device;
   setUp(() {
+    NotificationsController.welcomeRetryDelay = Duration.zero;
     account = FakeAccountService();
     push = FakePushMessaging();
     device = MemoryPushDeviceStore();
@@ -281,18 +282,72 @@ void main() {
   });
 
   test(
-    'the welcome is asked for on each turn-on; the server sends it once',
+    'the welcome is asked for until the server confirms it, then never again',
     () async {
       account.restoreSession(_email);
       final c = container();
       await settle();
       await c.read(notificationsProvider.notifier).turnOn();
+      await settle();
       await c.read(notificationsProvider.notifier).turnOff();
       await c.read(notificationsProvider.notifier).turnOn();
-      // The app may ask twice; notification_sends makes the server send once
-      // (web/utils/push.test.mjs proves that side).
-      expect(account.welcomeCalls, 2);
+      await settle();
+      // The server said 'sent' the first time; notification_sends would
+      // stop a second send anyway (web/utils/push.test.mjs).
+      expect(account.welcomeCalls, 1);
+      expect(device.welcomed, {_userId});
       expect(account.prefsByUser[_userId], isA<NotificationPrefs>());
     },
   );
+
+  test(
+    'a welcome request that never arrived is tried again (the iPad, 22 Oct)',
+    () async {
+      account.restoreSession(_email);
+      account.welcomeAnswers.addAll([null, null]);
+      final c = container();
+      await settle();
+      await c.read(notificationsProvider.notifier).turnOn();
+      await settle();
+      expect(account.welcomeCalls, 3);
+      expect(device.welcomed, {_userId});
+    },
+  );
+
+  test(
+    'still unconfirmed after three tries: asked again at the next start',
+    () async {
+      account.restoreSession(_email);
+      account.welcomeAnswers.addAll([null, null, null]);
+      final c = container();
+      await settle();
+      await c.read(notificationsProvider.notifier).turnOn();
+      await settle();
+      expect(account.welcomeCalls, 3);
+      expect(device.welcomed, isEmpty);
+
+      container(); // the app starts again; this phone said yes before
+      await settle();
+      expect(account.welcomeCalls, 4);
+      expect(device.welcomed, {_userId});
+
+      container();
+      await settle();
+      expect(account.welcomeCalls, 4);
+    },
+  );
+
+  test('turning off removes the token even when Firebase can\'t hand it over '
+      '(README §16.1)', () async {
+    account.restoreSession(_email);
+    final c = container();
+    await settle();
+    await c.read(notificationsProvider.notifier).turnOn();
+    expect(account.pushTokens, hasLength(1));
+    push.appleTokenNeverCame = true;
+    await c.read(notificationsProvider.notifier).turnOff();
+    expect(account.pushTokens, isEmpty);
+    expect(device.token, isNull);
+    expect(push.calls, contains('deleteToken'));
+  });
 }
