@@ -13,7 +13,7 @@ listing never buys a tier.
 
 **✓ Verified:** the owner has confirmed it's theirs. Automatic, no checkbox.
 
-**✦ OFFICIAL:** Spiritpedia's own account only. Automatic, no checkbox.
+**OFFICIAL:** Spiritpedia's own account only. Automatic, no checkbox.
 
 ### Tiers: same three levels and colours, two sets of names
 
@@ -43,7 +43,7 @@ star's tips):
   someone who signed up and created their own listing. It switches off by
   itself if the owner deletes their account, the listing is unlinked, or the
   account is rejected.
-- **✦ OFFICIAL** belongs to the listing owned by love@spiritpedia.co, and only
+- **OFFICIAL** belongs to the listing owned by love@spiritpedia.co, and only
   that one. It shows no tier. There is no checkbox: nobody can give it to
   another listing, admin included.
 
@@ -67,7 +67,7 @@ it:
 | Shining Star | Hundreds of thousands of followers: the superstars of the future. |
 | Rising Star | A rising voice, and worth finding early: under a hundred thousand followers, for now. |
 | ✓ Verified | This page is run by [name] themselves. They've confirmed it's theirs, so what you see here comes straight from them. |
-| ✦ OFFICIAL | This is my home: Spiritpedia's own page. Our videos, our reviews, and where you can always find us. |
+| OFFICIAL | This is my home: Spiritpedia's own page. Our videos, our reviews, and where you can always find us. |
 
 The wording lives in `web/utils/badges.js` and `app/lib/data/badges.dart`.
 Change both together.
@@ -86,6 +86,11 @@ Admin → Inbox → the application.
    they can add their own content. The
    message at the top says whether the email went; if it didn't, tell them
    yourself. Pressing Approve twice sends nothing more.
+
+Always approve or decline here in the Inbox. A person's record (People →
+View) can only send someone back to the Inbox as pending: approving there
+used to set the word "approved" without making the listing or sending the
+email.
 
 **Approving a claim** ("Approve claim", or a request in the Inbox): the
 listing was public already, so the owner gets "Your claim to … is approved",
@@ -157,13 +162,13 @@ Policy says so.
 
 - **A practitioner, channel, app or organisation:** Admin → Content → the
   listing → Profile. Tier and Entity type are there; the tier names follow the
-  type. "Badges" shows ✓ Verified or ✦ Official, set automatically.
+  type. "Badges" shows ✓ Verified or OFFICIAL, set automatically.
 - **A publisher:** Admin → Ingestion → Publisher → choose it → Tier.
 
 ## Spiritpedia's own reviews
 
 Reviews posted from the love@spiritpedia.co account show as **Spiritpedia
-✦ OFFICIAL**, linked to its profile. The database decides this, not the
+OFFICIAL**, linked to its profile. The database decides this, not the
 device, and the name can't be changed on an edit. Nobody else can review as
 "Spiritpedia" (in any capitals or spacing): the form asks them to use their
 own name, and the database would save their review without one anyway.

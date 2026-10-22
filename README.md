@@ -6,11 +6,15 @@ the teachers, videos, books and practices that meet you there.
 
 **This README is the handover.** It is written for a developer taking the
 project over tomorrow with no access to any earlier conversation. It was
-rebuilt on 17 October 2026 and checked against the code, not memory. Where it
+rebuilt on 17 October 2026 and brought up to date on 22 October 2026 (the
+email work, migrations 0024–0026, Inbox-only approval, no ✦), checked against
+the code, not memory. Where it
 and the code disagree, the code is right and this file should be fixed.
 
 The app has a second, more detailed file: **`app/README.md`**. The email
-inventory is `docs/emails.md`; the personalisation rules are
+inventory is `docs/emails.md`, and the approved wording of every email is
+`docs/email-copy-2026-10-21.md` (change wording there first); the admin's
+how-to is `docs/admin-guide.md`; the personalisation rules are
 `app/docs/personalisation.md`; website issues found while building the app are
 `app/docs/website-followups.md`.
 
@@ -40,12 +44,13 @@ inventory is `docs/emails.md`; the personalisation rules are
 
 ## 1. Where things stand
 
-| | State on 18 October 2026 |
+| | State on 22 October 2026 |
 | :--- | :--- |
 | **Website** | Live at **https://www.spiritpedia.co** (Next.js on Vercel). Every push that changes `web/` deploys to production |
-| **App** | Flutter, iPhone and iPad. **1.0.0 (21)** is built (`app/build/ios/ipa/Spiritpedia.ipa` and `app/build/ios/archive/Runner.xcarchive`) and waiting to be uploaded; build 19's are kept in `app/build/build19/` until it is uploaded or skipped. **Build 16 is the last one uploaded to TestFlight.** Not yet on the App Store |
-| **Database** | Supabase. Two projects: **live** (`uzmvcgew…`) and **dev** (`khtpbnof…`). Migrations `0000`–`0024` are on both |
+| **App** | Flutter, iPhone and iPad. **1.0.0 (21)** is built (`app/build/ios/ipa/Spiritpedia.ipa` and `app/build/ios/archive/Runner.xcarchive`) and waiting to be uploaded; build 19's are kept in `app/build/build19/` until it is uploaded or skipped. **Build 16 is the last one uploaded to TestFlight.** Changes made since build 21 ship in the next build (§10.1). Not yet on the App Store |
+| **Database** | Supabase. Two projects: **live** (`uzmvcgew…`) and **dev** (`khtpbnof…`). Migrations `0000`–`0026` are on both |
 | **Push** | Firebase Cloud Messaging only, with an APNs key. The Firebase projects must move to the love@ Google account before mid-November 2026 (§16) |
+| **Emails** | The approved copy of 21–22 Oct 2026 is live (§9.7). The outreach journey is eight emails, redirected to a test inbox by `JOURNEY_TEST_EMAIL` until the solicitor has checked cold email; no journey is running. Day 4 is live. Personal discovery editions are built but **off** until `DISCOVERY_EDITIONS=on` is set on Vercel (§9.7a) |
 | **Repository** | `https://github.com/EliteArtists/spiritpedia`, branch `main` only. No staging environment, no feature flags |
 
 **Before submitting build 21 in App Store Connect:**
@@ -88,6 +93,17 @@ These have held throughout and the project owner expects them.
 10. **Don't commit `web/AGENTS.md`** (gitignored; `next dev` rewrites it).
 11. **On this Mac:** one simulator at a time, the Xcode app kept closed, and
     never the full test suite during a simulator tour (§13).
+12. **Approve or decline applications only in Admin → Inbox.** That is the
+    one path that creates the listing and sends D3 or D4. A person's record
+    can only send someone back to the Inbox (§9.4).
+13. **No ✦ anywhere** (website, app, emails, subject lines): it reads as
+    another company's logo. Where a picture can go, use the gold star logo
+    image (`web/public/Spiritpedia_Header_Symbol.png`; in emails the small
+    copy `web/public/email/spiritpedia-star.png`, alt "Spiritpedia"); where
+    it can't, nothing. The Official badge just says OFFICIAL.
+14. **Email wording is final once approved:** change
+    `docs/email-copy-2026-10-21.md` and `web/utils/emailTemplates.js` together,
+    word for word.
 
 ---
 
@@ -100,7 +116,7 @@ These have held throughout and the project owner expects them.
 | **Hosting** | Vercel, team `eliteartists-projects`, project **`spiritpedia-e58y`** (see §4: there are two projects) |
 | **Database and auth** | Supabase (Postgres 17, PostgREST, Supabase Auth with emailed 6-digit codes). **Live** and **dev** projects |
 | **Push** | Firebase Cloud Messaging only, for both platforms. The website sends through FCM's HTTP v1 API with a service account (`web/utils/push.js`, no Admin SDK). iOS delivery uses an **APNs auth key** uploaded to each Firebase project |
-| **Email** | Resend for the website's thirteen emails (`web/utils/email.js`); Supabase Auth's own SMTP for sign-in and change-email codes |
+| **Email** | Resend for every website email (`web/utils/email.js`, wording in `emailTemplates.js`, the discovery edition in `discoveryEmail.js`; §9.7); Supabase Auth's own SMTP for sign-in and change-email codes |
 | **Analytics** | GA4 on the website, only after cookie consent. The app has no analytics SDK; Admin → Activity is first-party totals (§9.9) |
 | **Places** | GeoNames towns of 5,000+ people, imported into the `places` table |
 | **Affiliate** | Amazon Associates, five stores, tagged at render (§17.6) |
@@ -165,12 +181,25 @@ None of these are secrets.
 | :--- | :--- | :--- |
 | `web/.env.local` (points at **live**) | `NEXT_PUBLIC_SUPABASE_URL`, `NEXT_PUBLIC_SUPABASE_ANON_KEY`, `SUPABASE_SERVICE_ROLE_KEY`, `ADMIN_PASSWORD`, `ADMIN_NAME`, `RESEND_API_KEY`, `NEXT_PUBLIC_GA_MEASUREMENT_ID`, `JOURNEY_TEST_EMAIL`, `CRON_SECRET` | No (`.env*` in `web/.gitignore`) |
 | `web/.env.development.local` (points at **dev**; `next dev` loads it over `.env.local`) | `NEXT_PUBLIC_SUPABASE_URL`, `NEXT_PUBLIC_SUPABASE_ANON_KEY`, `SUPABASE_SERVICE_ROLE_KEY`, `RESEND_API_KEY`, `NEXT_PUBLIC_GA_MEASUREMENT_ID`, `FIREBASE_PROJECT_ID`, `FIREBASE_CLIENT_EMAIL`, `FIREBASE_PRIVATE_KEY` | No |
-| Vercel → `spiritpedia-e58y` → Settings → Environment Variables | Everything the live site needs: the Supabase three, `ADMIN_PASSWORD`, `ADMIN_NAME`, `RESEND_API_KEY`, `CRON_SECRET`, `NEXT_PUBLIC_GA_MEASUREMENT_ID`, `FIREBASE_PROJECT_ID` / `_CLIENT_EMAIL` / `_PRIVATE_KEY` (the **live** push service account lives only here), `AMAZON_TAG_US` / `_UK` / `_CA` / `_ES` / `_AU` | — |
+| Vercel → `spiritpedia-e58y` → Settings → Environment Variables | Everything the live site needs: the Supabase three, `ADMIN_PASSWORD`, `ADMIN_NAME`, `RESEND_API_KEY`, `CRON_SECRET`, `NEXT_PUBLIC_GA_MEASUREMENT_ID`, `FIREBASE_PROJECT_ID` / `_CLIENT_EMAIL` / `_PRIVATE_KEY` (the **live** push service account lives only here), `AMAZON_TAG_US` / `_UK` / `_CA` / `_ES` / `_AU`, `JOURNEY_TEST_EMAIL` (Production and Preview), and `DISCOVERY_EDITIONS` once switched on | — |
 | `app/config/dev.json` | `APP_ENV`, `SUPABASE_URL`, `SUPABASE_ANON_KEY`, `API_BASE_URL` (dev; copy `dev.example.json`) | No (`app/.gitignore`) |
 | `app/config/prod.json` | The same four (live) plus `AMAZON_TAG_US` / `_UK` / `_CA` / `_ES` / `_AU` | **Yes, on purpose**: only public values |
 | Firebase console | The APNs auth key (`.p8`), and the service accounts behind `FIREBASE_*` | — |
 | Supabase dashboard | Auth email templates and SMTP sender; the service-role key | — |
 
+- **Email switches (not secrets, but they decide who gets emailed):**
+  - `JOURNEY_TEST_EMAIL`: while set, every outreach journey email goes to that
+    address instead of the practitioner. Set on Vercel (Production and
+    Preview) on 21 Oct 2026; **leave it set until the solicitor has checked
+    cold email** (§16.1).
+  - `DISCOVERY_EDITIONS`: only the value `on` lets the daily job send personal
+    discovery editions (§9.7a). Not set yet. To switch on: Vercel →
+    `spiritpedia-e58y` → Settings → Environment Variables → add
+    `DISCOVERY_EDITIONS` = `on` for Production → Deployments → ⋯ on the latest
+    → Redeploy. The admin preview and test-send work without it.
+  - `ACCOUNT_EMAILS_SINCE`: **dev testing only, never on Vercel.** Moves the
+    date before which accounts get no Day 4, edition or late welcome
+    (default `2026-10-22T00:00:00Z`, when `email_sends` records began).
 - **`ADMIN_PASSWORD` is shared with live.** Never type it into a browser in a
   test; a script may read it from `web/.env.local` without printing it.
 - `SUPABASE_SERVICE_ROLE_KEY`, `RESEND_API_KEY` and the `FIREBASE_*` keys have
@@ -189,26 +218,30 @@ None of these are secrets.
 ```
 spiritpedia/
 ├── README.md               this handover
-├── docs/emails.md          every email the platform sends (before the rewrite)
+├── docs/
+│   ├── emails.md           every email the platform sends, when and to whom
+│   ├── email-copy-2026-10-21.md  the approved wording (source of truth)
+│   └── admin-guide.md      how to run the admin (badges, approving, owners' content)
 ├── app/                    the Flutter app — see app/README.md
 │   ├── lib/                main.dart, app.dart, router.dart, core/, data/, theme/, shared/, features/
-│   ├── test/               292 tests (fakes in test/support/)
+│   ├── test/               305 tests (fakes in test/support/)
 │   ├── integration_test/   search_typing_test.dart (tours go here temporarily, never committed)
 │   ├── assets/safety/      symlink → web/shared/emotion-safety.json
 │   ├── config/             dev.json (ignored), dev.example.json, prod.json
 │   ├── docs/               personalisation.md, website-followups.md
 │   ├── ios/  android/
-│   └── pubspec.yaml        version 1.0.0+19
+│   └── pubspec.yaml        version 1.0.0+21
 ├── web/                    the Next.js site — run web commands from here
 │   ├── app/                pages, /api routes, sitemap, robots
 │   ├── components/         UI; components/admin/ for the dashboard
-│   ├── utils/              Supabase clients, email, push, activity, listings… (+ *.test.mjs)
+│   ├── utils/              Supabase clients, email, push, activity, listings, discovery editions… (+ *.test.mjs)
+│   ├── public/             logos; public/email/spiritpedia-star.png is the emails' logo
 │   ├── shared/             emotion-safety.json (+ .cases.json): the crisis phrases for web AND app
 │   ├── proxy.js            the password gate on /admin
 │   ├── scripts/            vercel-ignore-build.sh; generate-emotion-safety-cases.mjs
-│   └── vercel.json         four cron schedules + the deploy-skip rule
+│   └── vercel.json         five cron schedules + the deploy-skip rule
 └── supabase/
-    ├── migrations/         0000 (schema baseline) … 0021, run by hand
+    ├── migrations/         0000 (schema baseline) … 0026, run by hand
     └── seed/               emotion_mappings.sql — the search vocabulary
 ```
 
@@ -236,7 +269,7 @@ Content (healers, books, videos, courses, free resources, publishers,
 subjects) exists only in the databases and Supabase's own backups. The repo
 holds the schema and the search vocabulary, not the content (§8.3).
 
-### 7.2 Tables (26 in `public`)
+### 7.2 Tables (37 in `public`, counted on live 22 Oct 2026)
 
 **Content** — made in the dashboard before migrations existed; in `0000`.
 Anyone can read; only the service role writes (migration `0007`).
@@ -264,12 +297,16 @@ Anyone can read; only the service role writes (migration `0007`).
 - `push_tokens`, `notification_preferences`, `user_blocks`, `review_reports`
   (the reporter reads their own), `claim_requests`.
 - `activity_events`, `subject_affinity`: opt-in learning data.
+- `content_submissions` (0024): an owner's added or changed content waiting
+  for the admin; the owner reads their own, every write is the service role.
 
 **Reference:** `places` (GeoNames towns; public read).
 
 **Service role only** (RLS on, no policies): `admin_notes`,
 `healer_journeys`, `broken_images`, `account_deletions`, `notification_sends`,
-`review_bans`, `activity_daily`, `subject_daily`, `search_misses`.
+`review_bans`, `activity_daily`, `subject_daily`, `search_misses`,
+`content_removals` (0024), `email_sends` and `email_preferences` (0025),
+`discovery_editions` (0026).
 
 **Storage:** the public `practitioner-images` bucket. Each user can write and
 delete only in their own `auth.uid()` folder.
@@ -308,7 +345,7 @@ editor **on dev first, then live**, by the project owner. Dev is checked with
 throwaway users created through the Admin API (no email) and deleted
 afterwards; live is checked read-only.
 
-### 8.1 0012–0024 (on dev and live)
+### 8.1 0012–0026 (on dev and live)
 
 **`0012_favourites_slugs`** — data only, in one transaction.
 - Rewrites legacy `user_favourites.content_slug` values (numeric ids for books,
@@ -454,6 +491,39 @@ afterwards; live is checked read-only.
   PNG or WebP. Uploads go through `/api/content/image`; an approved image is
   copied to `practitioner-images/content/` (public) and the held copy deleted.
 
+**`0025_email_journeys`** (21 Oct 2026). The approved emails (§9.7).
+- `healer_journeys.email_6_sent_at`, `email_7_sent_at`, `email_8_sent_at`: the
+  outreach journey is eight emails (days 0, 21, 42, 63, 84, 105, 126, 147).
+  New stop reasons `suppressed` (Resend lists the address as bounced or
+  complained) and `sequence_complete`; a journey that ended `asked_to_stop`,
+  `removal_requested` or `suppressed` is never started again for that listing.
+- `email_sends (kind, ref, sent_at)`, primary key `(kind, ref)`: "this email
+  has gone", once per thing it is about. The website inserts the row before
+  sending (the key is the lock against two racing requests) and deletes it if
+  the send fails (`web/utils/emailOnce.js`). No addresses. Kinds include
+  `explorer_welcome`, `practitioner_welcome`, `explorer_day4`,
+  `application_received`, `claim_request_received`, `claim_approved`,
+  `ownership_check`. Service role only.
+- `email_preferences (user_id, unsubscribed_at, unsubscribe_token, created_at)`:
+  an account's unsubscribe from Day 4 and discovery emails, and the
+  unguessable token in the link that works without signing in. Deleted with
+  the account. Service role only.
+- Decline reasons are deliberately **not** stored: the admin types them and
+  they go in the email (and its archive copy).
+
+**`0026_discovery_editions`** (21 Oct 2026). Personal discovery editions (§9.7a).
+- `discovery_editions`: one row per edition built for a person: `edition_number`
+  (1 = Day 10), `status` (`sent`, `skipped`, `failed`, `test`),
+  `status_reason`, `picks` (references to what was picked, with its section,
+  subject, source and "why" line, never the content or HTML), `dropped`
+  (sections left out and why), `sent_at`, `view_token` and `view_expires_at`
+  ("View this edition online", 30 days).
+- A unique index allows one **sent** edition n per person (the send lock); an
+  index by person and time serves the repeat rules and the future monthly
+  cadence. Picks whose source is activity learning are never shown to the
+  team. Service role only; deleted with the account; rows older than 12
+  months are deleted by the daily purge.
+
 ### 8.2 0000–0011
 
 | File | What |
@@ -501,18 +571,21 @@ then redirect. `utils/supabaseAdmin.js` is the service role, server only.
 | :--- | :--- |
 | `/` | Homepage: masthead, emotional search, sticky subject pills, then **Videos** and **Discover** tabs (§17.3). `?subject=` narrows every shelf |
 | `/subject/[slug]` | Everything tagged with a subject; one video shelf per teacher (ISR, hourly) |
-| `/healers/[slug]` | A listing: portraits, bio, socials, contact, offerings. "✦ Spiritpedia Official" when `healers.official` |
+| `/healers/[slug]` | A listing: portraits, bio, socials, contact, offerings. "OFFICIAL" when `healers.official` |
 | `/publishers/[slug]` | A publishing house: bio, authors, one book shelf per author |
 | `/books/[slug]` · `/videos/[slug]` · `/offerings/[slug]` · `/free-resources/[slug]` | Detail pages, with reviews |
 | `/library` | My Library (saves, by subject) |
 | `/privacy` · `/terms` · `/affiliate-disclosure` | Legal pages (Privacy and Terms dated 17 October 2026) |
-| `/auth/signup` | Email in, 6-digit code out. Sign-in and sign-up are one action |
+| `/auth/signup` | Email in, 6-digit code out. Sign-in and sign-up are one action. `?as=practitioner&claim=<slug>` carries an outreach claim link through sign-up |
 | `/auth/verify` | Six code boxes; also where a magic link lands |
 | `/auth/practitioner-setup` | One application form for everyone who shares their work; "What best describes you?" is an optional hint |
-| `/auth/claim` | Offered when the email matches a listing (healer or publisher) |
+| `/auth/claim` | Offered when the email matches a listing (healer or publisher). `?slug=` is the outreach claim link: signed out it goes through sign-up and comes back (the slug waits in `sessionStorage` `pendingClaim`); a matching email claims at once (D7), any other is offered "ask us to check" |
 | `/auth/claim-request` | "Request to claim it" when it doesn't match |
 | `/auth/pending` | After an application |
-| `/account` | Account centre; becomes the Practitioner or Publisher dashboard when approved; the learning switch; Delete account |
+| `/account` | Account centre; becomes the Practitioner or Publisher dashboard when approved; the learning switch; the **Discovery emails** switch (explorers who never applied); Delete account |
+| `/unsubscribe` | `?token=`: asks before unsubscribing (mail scanners open links), then stops Day 4 and discovery emails. noindex |
+| `/email-preferences` | `?token=`: "Change what I receive" from an email, discovery emails on or off, no sign-in. noindex |
+| `/editions/[token]` | "View this edition online": the edition redrawn from its picks for 30 days, with no name and no unsubscribe or preferences links; afterwards "This edition has ended". noindex (a route handler, not a page) |
 | `/admin/*` | The admin (§9.4) |
 | `sitemap.xml` · `robots.txt` | Dynamic; paged with an `id` tiebreaker |
 
@@ -525,33 +598,39 @@ Auth: **Bearer** = the user's Supabase access token, verified with Supabase;
 | Route | Auth | What |
 | :--- | :--- | :--- |
 | `POST /api/activity` | Public, Bearer optional | Activity batch `{platform, events}` (≤32 KB) → `cleanBatch()` → RPC `log_activity` (§9.9) |
-| `POST /api/account/delete` | Bearer | `{confirm:'DELETE', source}` → `utils/deleteAccount.js`: deletes the auth user (cascades), their photos, and notes a claimed listing (healer, or publisher since `0022`) in `account_deletions` |
+| `POST /api/account/delete` | Bearer | `{confirm:'DELETE', source}` → `utils/deleteAccountAndTell.js` → `utils/deleteAccount.js`: reads the address, deletes the auth user (cascades), their photos, notes a claimed listing (healer, or publisher since `0022`) in `account_deletions`, clears the account's `email_sends` rows, then sends D13 |
+| `GET`/`PUT /api/account/email-preferences` | Bearer | The Discovery emails switch on the account page (website and app): `{on}` |
 | `POST /api/pending-user-type` | Public (pre-auth) | Records explorer/practitioner against an email |
 | `GET`/`PATCH /api/practitioner/profile` | Bearer | An approved practitioner's own listing and content; allow-listed fields only (`contact_email` and `tier` excluded) |
 | `GET`/`PATCH /api/publisher/profile` | Bearer | A publisher's own row; `description` and `website_url` only |
 | `GET`/`POST /api/content` | Bearer | A verified owner's content (`?as=healer\|publisher`): live items, waiting and turned-down submissions; POST `submit` (new or edit), `resubmit`, `withdraw`, `remove` (immediate, via `remove_owned_content`), `youtube_title` (YouTube oEmbed) (0024) |
 | `POST /api/content/image` | Bearer | An image for a submission, checked by its first bytes, into the private `content-submissions` bucket under the owner's folder |
-| `POST /api/profile/resubmit` | Bearer | A rejected applicant goes back to pending |
-| `POST /api/email/explorer-welcome` | Bearer | Explorer welcome email, and the welcome push |
-| `POST /api/email/practitioner-welcome` | Bearer | Practitioner welcome (only for practitioners) |
-| `POST /api/email/review-received` | Bearer | "We've got your review" |
-| `POST /api/email/review-reported` | Bearer | Emails love@ about a report (the app calls it) |
+| `POST /api/profile/resubmit` | Bearer | The practitioner form is sent (first time, or a rejected applicant again): pending, and D2 once per application |
+| `POST /api/email/explorer-welcome` | Bearer | B1, once per account (`email_sends`), app or website version by `platform`; and the welcome push |
+| `POST /api/email/practitioner-welcome` | Bearer | D1, once per account. Held while the email matches a listing (`claim_first`); `afterClaim` releases it when the claim isn't taken |
+| `POST /api/email/claim-approved` | Bearer | D7 after an instant email-match claim on `/auth/claim` (instead of D1), once per account and listing |
+| `POST /api/email/claim-request-received` | Bearer | D5, for the caller's own claim request, once |
+| `POST /api/email/review-received` | Bearer | D9, for a new review only |
+| `POST /api/email/review-reported` | Bearer | D12 to love@ about a report (the app calls it) |
+| `POST /api/email/unsubscribe` | Public, token | `?token=`: the one-click unsubscribe (RFC 8058) that mail clients POST; a GET redirects to `/unsubscribe` |
+| `POST /api/email/preferences` | Public, token | `{token, on?}`: reads or sets discovery emails for `/email-preferences` |
 | `POST /api/push/welcome` | Bearer | The first notification, once per account |
 | `POST /api/admin/login` · `logout` | Public · Admin | The admin cookie (24 h, httpOnly) |
 | `GET /api/admin/overview` | Admin | Counts and the Inbox queue |
 | `GET /api/admin/activity` | Admin | Admin → Activity totals |
-| `POST /api/admin/practitioner` | Admin | Approve (creates a `healers` row, or creates/links a `publishers` row) or reject an application |
-| `POST /api/admin/claim-request` | Admin | Make a `SPIRITPEDIA-XXXXXX` code, approve (links the listing, stops any journey) or reject |
+| `POST /api/admin/practitioner` | Admin | **The only way to approve or decline an application.** Approve creates a `healers` row (or creates/links a `publishers` row) and sends D3; an account already linked gets D7. Reject needs a reason, sends D4 and makes the account an explorer |
+| `POST /api/admin/claim-request` | Admin | Make a `SPIRITPEDIA-XXXXXX` code; `ownership_check` (D6 to the listing's published address, once); approve (links the listing, stops any journey, D7) or reject with a reason (D8) |
 | `GET`/`POST /api/admin/submissions` | Admin | Owners' content (0024): the waiting list and removals; one with its live row, duplicate, removal and link checks; approve (inserts, or applies only the changed columns of an edit; publishes the image) or reject with a reason. Emails the owner. `?removed=&type=` for ingestion |
-| `GET`/`PATCH`/`DELETE /api/admin/person` | Admin | A person's record; delete their account |
+| `GET`/`PATCH`/`DELETE /api/admin/person` | Admin | A person's record; PATCH edits allow-listed fields and can set `verification_status` only to `pending` (back to the Inbox; approving here is refused); DELETE removes the account and sends D13 unless `notify: false` |
+| `GET`/`POST /api/admin/discoveries` | Admin | A person's next discovery edition as it would go today (learning picks masked) and their send log; POST `test` sends it to love@ only, "[Test]" in the subject |
 | `GET`/`POST /api/admin/notes` | Admin | Internal notes (`ADMIN_NAME` as author) |
-| `GET`/`PATCH /api/admin/reviews` | Admin | Moderation queue; PATCH also emails the reviewer. Re-reads the row and answers 409 if the status didn't change |
-| `GET`/`PATCH /api/admin/review-reports` | Admin | Reports: take down, ban/unban, resolve, dismiss |
+| `GET`/`PATCH /api/admin/reviews` | Admin | Moderation queue; PATCH emails the reviewer (D10, or D11 with the required reason) only when the status actually changes. Re-reads the row and answers 409 if it didn't |
+| `GET`/`PATCH /api/admin/review-reports` | Admin | Reports: take down (`reject_review`, reason required, D11), ban/unban (no emails), resolve, dismiss |
 | `PATCH /api/admin/account-deletions` | Admin | Mark a closed-account item resolved |
-| `POST /api/admin/journey/start` · `GET`/`PATCH /api/admin/journey/[healer_slug]` | Admin | Start (sends email 1), read, stop or resume an outreach journey |
+| `POST /api/admin/journey/start` · `GET`/`PATCH /api/admin/journey/[healer_slug]` | Admin | Start (individuals only; sends C1; refused after a never-again stop), read, stop (with a reason) or resume an outreach journey |
 | `POST /api/admin/write` | Admin | Generic insert/update/delete on an allow-list of content tables (the content editor and ingestion) |
 | `POST /api/admin/push-test` | Admin | Sends a test push to an account by email |
-| `GET /api/cron/*` | Cron | The four scheduled jobs (§9.10) |
+| `GET /api/cron/*` | Cron | The five scheduled jobs (§9.10) |
 
 ### 9.3 Sign-in and sessions
 
@@ -591,12 +670,12 @@ without them the data sections say why rather than showing an empty list.
 
 | Section | What |
 | :--- | :--- |
-| **Inbox** (`/admin`) | One queue: applications, claim requests, reported reviews, pending reviews, broken images, closed accounts (a healer listing opens its editor; a publisher opens Ingestion on that publisher, since `0022`). A two-pane reviewer: pick the tier and the kind of listing (pre-filled from `described_as`), approve or reject, handle claim requests |
-| **People** | Practitioners and Explorers; a record with Profile, Content and Admin Notes; edit; delete (removes the `auth.users` row; everything personal cascades) |
-| **Content** | The directory of every listing, and a record editor (`/admin/content/[healer_slug]`) for the listing and all six content types, with the Outreach (journey) controls |
+| **Inbox** (`/admin`) | One queue: applications, claim requests, reported reviews, pending reviews, broken images, closed accounts (a healer listing opens its editor; a publisher opens Ingestion on that publisher, since `0022`). A two-pane reviewer: pick the tier and the kind of listing (pre-filled from `described_as`), approve or reject (a reason box: the reason goes in the email), handle claim requests ("Send ownership check", approve, reject with a reason). **Applications are approved and declined here only** |
+| **People** | Practitioners and Explorers; a record with Profile, Content, **Discoveries** (the next edition's preview with learning picks masked, what was left out and why, "Test-send to love@", the send log) and Admin Notes; edit; **Send back to the Inbox** (the record cannot approve or decline: setting "approved" there once left an account approved with no listing and no D3, 22 Oct 2026); delete (removes the `auth.users` row; everything personal cascades; "Send confirmation" ticked by default sends D13) |
+| **Content** | The directory of every listing, and a record editor (`/admin/content/[healer_slug]`) for the listing and all six content types, with the Outreach card (start, stop with a reason, resume; which of the eight emails went when) |
 | **Claims** | The record of claimed listings |
-| **Reviews** | Pending / Approved / Rejected; approve or reject emails the reviewer |
-| **Reports** (`/admin/flags`) | Reported reviews: the snapshot beside the current text, reason, reporter, age (red after 24 h, as the Terms promise). Take down, ban the reviewer (takes all their reviews down), dismiss, resolve, lift ban |
+| **Reviews** | Pending / Approved / Rejected; approve or reject (with a reason) emails the reviewer |
+| **Reports** (`/admin/flags`) | Reported reviews: the snapshot beside the current text, reason, reporter, age (red after 24 h, as the Terms promise). Take down (with a reason; D11), ban the reviewer (takes all their reviews down, no emails), dismiss, resolve, lift ban |
 | **Activity** | Totals only, never one person (§9.9). `/admin/analytics` redirects here |
 | **Ingestion** | The content ingestion form (YouTube id and Amazon ASIN parsing, duplicate guards) |
 | Messages · Mailshots · Settings | Placeholders |
@@ -620,14 +699,17 @@ are dead code.
 - **No match → "Request to claim it"** (`claim_requests`). The admin decides in
   the Inbox: first by emailing the listing's published address, else by a
   `SPIRITPEDIA-XXXXXX` code the claimant posts on their channel or site.
-  Approving links the listing and stops any outreach journey. **The claimant
-  is emailed the decision** (approved or rejected, §9.7), and the Inbox says
-  whether that email went.
+  Approving links the listing and stops any outreach journey. The claimant
+  gets D5 when they ask, the listing's own address can be sent D6, and the
+  claimant is emailed the decision (D7, or D8 with the reason; §9.7). The
+  Inbox says whether each email went.
+- **The outreach claim link** (`/auth/claim?slug=`) survives sign-up (§9.1).
 - **Dashboards at `/account`:** `PractitionerDashboard` (profile, content,
   photo uploads to their own storage folder) and `PublisherDashboard`. Both
   manage content through `OwnContent` (§9.5a).
-- **"✦ Official"**: `healers.official`, Spiritpedia's own listing. Shown instead
-  of a tier, first among channels; set only by the admin.
+- **"OFFICIAL"**: `healers.official`, Spiritpedia's own listing. Shown instead
+  of a tier, first among channels; set automatically for the listing linked to
+  love@spiritpedia.co (0023). The badge is the word OFFICIAL, no symbol.
 - Platforms (channel, app, organisation) are kept out of Practitioners Near
   You (`isPlatform`).
 
@@ -665,50 +747,133 @@ are dead code.
   approve. A second submission upserts on (user, type, slug): an edit.
 - **Official reviews (0023):** from the love@spiritpedia.co account, the
   trigger sets `author_official` and the name "Spiritpedia"; both pages show
-  **Spiritpedia ✦ OFFICIAL**. The name is reserved for everyone else (the
+  **Spiritpedia OFFICIAL**. The name is reserved for everyone else (the
   forms say so; the database saves such a review with no name).
 - **Report and block exist in the app only** ("⋯" on each review); the website
   has no report/block button yet (§16). Every report emails love@ at once.
 
 ### 9.7 Emails
 
-Sixteen from the website, all through `utils/email.js` (Resend; templates
-inline). A failed email never fails the action that triggered it, and Resend's
-"resolved with an error" is checked, not just exceptions. Nothing records that
-an email was sent (§16).
+Every website email goes through `utils/email.js` (Resend). The full
+inventory (trigger, recipient, rules for each) is **`docs/emails.md`**; the
+approved wording is **`docs/email-copy-2026-10-21.md`** (final: change it
+there and in `utils/emailTemplates.js` together, word for word).
 
-| # | Email | Sent by |
+- **From** `Spiritpedia <hello@accounts.spiritpedia.co>` (the outreach journey:
+  `love@spiritpedia.co`), **reply-to** love@, every email **blind-copied** to
+  the `spiritpedialove@gmail.com` archive (the only record of a decline reason).
+- **Built from** `utils/emailParts.js`: "Hi {first name}," or "Hello," with no
+  name; three sign-offs (the team "With love, / The Spiritpedia team"; the
+  Guiding Star "Your Guiding Star / and the Spiritpedia Constellation"; plain);
+  buttons; escaping; links always `https://www.spiritpedia.co`; `LOGO_URL`, the
+  gold star logo for any email that shows a picture. **No ✦** in subjects,
+  text or sign-offs (§2).
+- **Once only:** `utils/emailOnce.js` (`sendOnce`, `sentAt`, `forgetSent`)
+  claims an `email_sends` row before sending and gives it back if the send
+  fails (0025).
+- **A failed email never fails the action**; Resend's "resolved with an error"
+  is checked. The daily jobs retry the welcome, Day 4 and the journey.
+- **Reasons:** declining an application (D4), a claim (D8) or a review (D11)
+  needs a reason typed in the admin (`components/admin/ReasonBox.jsx`); it
+  goes in the email and is not stored.
+
+| Code | Email | Sent by |
 | :--- | :--- | :--- |
-| 1 | Explorer welcome | `/api/email/explorer-welcome` (website: `ensureProfile` on a new explorer; app: after "I'm exploring") |
-| 2 | Practitioner welcome | `/api/email/practitioner-welcome` |
-| 2a | Listing live (to the owner of a new listing: practitioner, channel, app, organisation, publisher; wording in `utils/listingApproved.js`). A claimed listing gets 6a instead | `/api/admin/practitioner` |
-| 3 | Review received | `/api/email/review-received` |
-| 4–5 | Review approved / rejected | `/api/admin/reviews` |
-| 6 | Review reported (to love@) | `/api/email/review-reported` |
-| 6a–6b | Claim approved / rejected (to the claimant; wording in `utils/claimRequests.js`) | `/api/admin/claim-request`; 6a also from `/api/admin/practitioner` ("Approve claim") |
-| 6c–6d | Content approved / not added (to the owner; new item or edit; wording in `utils/contentSubmissions.js`) | `/api/admin/submissions` |
-| 7–11 | Healer outreach journey, emails 1–5 | `/api/admin/journey/start` (1); the `journey-emails` cron (2–5) |
+| B1 | Explorer welcome (app or website version) | Account creation: website `ensureProfile`; the app at account creation. `/api/email/explorer-welcome` |
+| B2 | Day 4 "Follow the superheroes. Discover your local heroes." (with unsubscribe) | Daily `account-emails` job |
+| B3 | Personal discovery edition 1 at Day 10 (§9.7a) | Daily `account-emails` job, only with `DISCOVERY_EDITIONS=on` |
+| C1–C8 | Outreach journey (§9.8) | `/api/admin/journey/start` (C1); the `journey-emails` job (C2–C8) |
+| D1 | Practitioner welcome | `/api/email/practitioner-welcome`; a day later from the daily job if held for a claim |
+| D2 | Application received "Thank you for sharing {listing} with Spiritpedia" | `/api/profile/resubmit` |
+| D3 | Listing live "{listing} is now live on Spiritpedia" | `/api/admin/practitioner` (Inbox → Approve only) |
+| D4 | Listing not published "About your Spiritpedia listing", with the reason | `/api/admin/practitioner` (Inbox → Reject) |
+| D5 | Claim request received | `/api/email/claim-request-received` |
+| D6 | Ownership confirmation, to the listing's published address | `/api/admin/claim-request` (`ownership_check`) |
+| D7 | Claim approved "You can now manage {listing}" | `/api/admin/claim-request`, `/api/admin/practitioner` ("Approve claim"), `/api/email/claim-approved` (instant claim) |
+| D8 | Claim not confirmed "About your request to manage {listing}", with the reason | `/api/admin/claim-request` |
+| D9 | Review received | `/api/email/review-received` |
+| D10 | Review approved | `/api/admin/reviews` |
+| D11 | Review not published, with the reason | `/api/admin/reviews`; `/api/admin/review-reports` (take down) |
+| D12 | Review reported (to love@) | `/api/email/review-reported` |
+| D13 | Account deleted | `/api/account/delete`; `/api/admin/person` DELETE ("Send confirmation") |
+| — | Content approved / not added (owners' content, 0024) | `/api/admin/submissions` (wording in `utils/contentSubmissions.js`) |
+
+The 22 Oct 2026 wording (D1–D5, D8, D9, D11) says plainly that we only check a
+listing is genuine and really theirs; we are not judging anyone.
 
 Sign-in and change-email codes are Supabase Auth's (templates in the
-dashboard; live's Change Email template includes `{{ .Token }}`). The full
-inventory, wording and the plan to rewrite them in the star's voice:
-`docs/emails.md`.
+dashboard; live's Change Email template includes `{{ .Token }}`).
 
 **Standing rule: affiliate links never go in email** (Amazon's agreement).
 
+### 9.7a Explorer emails: Day 4, discovery editions, unsubscribe and preferences
+
+- **Who:** explorers who have never applied (not a declined applicant, not a
+  listing owner) and haven't unsubscribed (`utils/unsubscribe.js`
+  `isExplorerForDay4`; `utils/discoveryEditions.js` `mayReceive`). Only
+  accounts created on or after 22 Oct 2026 (`RECORDS_SINCE`), looking back at
+  most 14 days, so older accounts are never suddenly emailed.
+- **Day 4 (B2):** once per account, with an unsubscribe line and one-click
+  `List-Unsubscribe` / `List-Unsubscribe-Post` headers.
+- **Personal discovery editions (B3):** a designed HTML email ("A little space
+  for discovery", subject line has no ✦): the logo header, a featured
+  discovery, then at least two of: videos for their interests, someone near
+  their area (or online), a timeless teacher, a free resource. Fewer than
+  that and the edition is skipped (and tried daily up to day 17).
+  - Selection (`utils/discoverySelect.js`, tested): deterministic per person
+    and edition; from More of, saves, area, activity learning (only if
+    switched on) and popularity; never a Never show subject; never a title
+    that reads as a health claim (`readsAsHealthClaim`, kept broad until the
+    solicitor); no repeat of a featured pick ever, or of other picks within
+    three editions. "Popular" wording only when 10+ people saved the item.
+  - Words in `utils/discoveryWords.js`; the email in `utils/discoveryEmail.js`
+    (tables, inline styles, 600 px, Outlook button, dark scheme, phone
+    stacking); data in `utils/discoveryData.js`; sending, preview and test in
+    `utils/discoveryEditions.js`.
+  - The lock is the `sent` row written before the email goes; a failed send
+    marks it `failed`, freeing the number for the next day.
+  - **Built but off:** only edition 1 (Day 10) is automatic, and only with
+    `DISCOVERY_EDITIONS=on` (§5). The monthly cadence for edition 2 onwards
+    is decided (monthly, skip a month when there isn't enough new) but not
+    built; the table is ready for it.
+  - Admin → People → an explorer → **Discoveries**: preview, left-out notes,
+    test-send to love@ only, the log. Learning picks are masked as "A pick
+    from personal learning — not shown".
+  - Edition rows are deleted after 12 months; the online view lasts 30 days.
+- **Unsubscribe and preferences:** every Day 4 and edition carries the
+  unsubscribe link (`/unsubscribe?token=`, confirms first) and the
+  one-click header (`/api/email/unsubscribe`); editions also carry "Change what
+  I receive" (`/email-preferences?token=`). The **Discovery emails** switch on
+  the account page (website `components/EmailPreferencesSwitch.jsx`; app
+  `DiscoveryEmailsCard`, next build) does the same through
+  `/api/account/email-preferences`. It stops Day 4 and editions only; account
+  and review emails always go.
+- **Resend suppression:** `isSuppressed()` asks Resend before each journey
+  email; bounced or complained addresses stop the journey as `suppressed`.
+- The Privacy Policy (dated 21 October 2026) covers these emails (legitimate
+  interest, unsubscribe in every one), learning's part in them, and the
+  12-month retention of edition records.
+
 ### 9.8 The healer outreach journey
 
-Five **plain-text** emails over twelve weeks (`JOURNEY_SCHEDULE = [0, 21, 42,
-63, 84]` days), from love@, inviting an unclaimed listing to claim it. Every
-call to action is "reply to this email"; no HTML, no links, on purpose. Started
-by hand from a listing's Outreach tab; the daily cron sends at most one due
-email per journey; it stops the moment the listing is claimed or loses its
-contact address. The double-send guard is the write itself: a conditional
-update claims that email's "sent" timestamp before sending, and puts it back
-if the send fails. `JOURNEY_TEST_EMAIL` redirects every journey email while
-set. **No journey has ever been started for a real listing** — starting one
-emails a real person. Since `0020` a journey can target a publisher, but the
-cron skips publisher journeys (no publisher wording yet).
+Eight **plain-text** emails (C1–C8) from love@, inviting an unclaimed listing
+to claim it, at `JOURNEY_SCHEDULE = [0, 21, 42, 63, 84, 105, 126, 147]` days
+from `started_at`. Each carries the listing link (`/healers/{slug}`) and the
+claim link (`/auth/claim?slug={slug}`, which works signed out, §9.1) and
+offers removal. Started by hand from a listing's Outreach card (C1 at once);
+the daily job sends at most one due email per journey, the lowest first.
+- **Individuals only** (`utils/journey.js` `outreachAllowedFor`); channels,
+  apps, organisations and publishers have no wording yet.
+- **Stops** when the listing is claimed, removed or loses its contact address;
+  when Resend lists the address as suppressed (checked before every email);
+  after C8 (`sequence_complete`); or by the admin, with a reason.
+- **Never again** after `asked_to_stop`, `removal_requested` or `suppressed`
+  (`DO_NOT_CONTACT`).
+- The double-send guard is the write itself: a conditional update claims that
+  email's "sent" timestamp before sending, and puts it back if the send fails.
+- **`JOURNEY_TEST_EMAIL` redirects every journey email while set**, and it is
+  set on Vercel until the solicitor has checked cold email. **No journey has
+  ever been started for a real listing.**
 
 ### 9.9 Activity (and Admin → Activity)
 
@@ -741,10 +906,11 @@ a manual run). **503 means the secret is unset; 401 means it's wrong.**
 
 | Job | UTC | Does |
 | :--- | :--- | :--- |
-| `/api/cron/activity-purge` | 05:00 | Retention: RPC `purge_activity()`; deletes every decided claim request, and every decided content submission (with any image it held), 12 months after its decision (`utils/claimRequests.js`, `utils/contentSubmissions.js`; pending ones are never touched); and images uploaded to the holding bucket but never sent, after two days |
+| `/api/cron/activity-purge` | 05:00 | Retention: RPC `purge_activity()`; deletes every decided claim request, and every decided content submission (with any image it held), 12 months after its decision (`utils/claimRequests.js`, `utils/contentSubmissions.js`; pending ones are never touched); images uploaded to the holding bucket but never sent, after two days; and `discovery_editions` rows older than 12 months |
 | `/api/cron/pending-signups` | 06:00 | Deletes `pending_user_types` older than 24 h (`?dry=1` counts only) |
 | `/api/cron/broken-images` | 07:00 | Audits a seventh of the content image URLs plus every portrait (§17.8). `?dry=1`, `?shard=N` |
-| `/api/cron/journey-emails` | 08:00 | The outreach journey |
+| `/api/cron/journey-emails` | 08:00 | The outreach journey (C2–C8) |
+| `/api/cron/account-emails` | 09:00 | Day 4; discovery edition 1 at Day 10 (only with `DISCOVERY_EDITIONS=on`); the practitioner welcome a day after sign-up for anyone who neither claimed nor chose (and any welcome whose send failed). Once each per account (`email_sends`) |
 
 `vercel.json` must stay in `web/` and Vercel's Root Directory must be `web`.
 
@@ -807,11 +973,12 @@ detail pages, email-code sign-in with Library sync and account deletion, push.
 | 14 | 16 Oct | "How will you use Spiritpedia?" |
 | 15 | 16 Oct | Your area (Practitioners Near You); the star's conductor; the area and name questions; "Welcome back" |
 | 16 | 16 Oct | The Always-location purpose string Apple's upload scan wanted (ITMS-90683). **Last build uploaded to TestFlight** |
-| 17 | 17 Oct | Account types: Organisation listings shown as channels; "✦ Official" |
+| 17 | 17 Oct | Account types: Organisation listings shown as channels; "OFFICIAL" |
 | 18 | 17 Oct | Activity learning ("Let Spiritpedia learn from what I explore") |
 | 19 | 17 Oct | **The iPad**: the same app laid out for the larger screen, both orientations, Split View |
-| 20 | 18 Oct | *Built, never uploaded (replaced by 21).* Badges (tiers by type, ✓ Verified, ✦ OFFICIAL, every badge explained by the star); Official reviews; Explore More as real shelves; the iPad two-stars fix |
+| 20 | 18 Oct | *Built, never uploaded (replaced by 21).* Badges (tiers by type, ✓ Verified, OFFICIAL, every badge explained by the star); Official reviews; Explore More as real shelves; the iPad two-stars fix |
 | 21 | 18 Oct | Build 20, plus: the tier badge top left on cards (type bottom right); the top two tiers' tips reworded |
+| next (22) | — | *In the code, not built yet* (bump to 22 first): the star's first callout adds "Press and hold to open your Library"; the explorer welcome sent when the account is created; "review received" only for a new review; the **Discovery emails** switch on My Account; OFFICIAL with no ✦ (badge, tip, search) |
 
 ### 10.2 Structure and startup
 
@@ -957,16 +1124,20 @@ rank at level 1 (§10.6).
   prompt. **Saving needs an account** on both platforms: a signed-out heart
   opens "Save it to your Library", and the save completes after sign-in. Saves
   already on a phone move into the account at sign-in.
-- **"How will you use Spiritpedia?"** once, for a new account: "I'm exploring"
-  (or putting it away) sends the explorer welcome; "I share my work" records the
+- **"How will you use Spiritpedia?"** once, for a new account. The explorer
+  welcome (B1, app version) is sent when the account is created, not by this
+  question (next build; build 21 sends it on "I'm exploring"). "I share my work" records the
   choice (`/api/pending-user-type`) and opens
   `spiritpedia.co/auth/signup?as=practitioner`, where the one application form
   lives. Listings are created and approved on the website (§9.5).
 - **My Account:** email (change email uses two codes), account type, Your name
   (`user_profiles.full_name`), Tailor Spiritpedia, Notifications, Blocked
-  reviewers, Sign out (clears the phone's saves and tailoring; the account
-  keeps them), Delete account (`/api/account/delete`).
-- The app shows "✦ Official" listings first among channels, and organisations
+  reviewers, **Discovery emails** (next build; explorers who never applied:
+  Day 4 and discovery editions on or off, through
+  `/api/account/email-preferences`), Sign out (clears the phone's saves and
+  tailoring; the account keeps them), Delete account (`/api/account/delete`,
+  which sends D13).
+- The app shows "OFFICIAL" listings first among channels, and organisations
   as channels.
 
 ### 10.10 Reviews and moderation (build 7, migration 0015)
@@ -984,7 +1155,7 @@ Reports (§9.4). This is what App Store guideline 1.2 asks for.
   in Account → Notifications: permission → token (waits for Apple's) →
   `register_push_token` → `notification_preferences` (General on; IAM
   affirmations off, reserved) → `/api/push/welcome` sends, once per account:
-  "✦ Testing, testing… just checking my light reaches you. Nothing to do. I'll
+  "Testing, testing… just checking my light reaches you. Nothing to do. I'll
   only shine when it matters."
 - While the app is open, pushes show as the iPhone's own banner. Token refresh
   re-registers. "Turn off on this phone" deletes the token row; sign-out
@@ -1237,6 +1408,15 @@ browser walk-throughs had typed made-up addresses into the sign-in form.
   inbox (e.g. `rossbaiken+test1@gmail.com`). Never a made-up or no-mailbox
   address.
 - `JOURNEY_TEST_EMAIL` redirects every outreach email while set.
+- **Local runs that touch email:** start `npm run dev` with `RESEND_API_KEY=`
+  empty (nothing can send) and a throwaway `ADMIN_PASSWORD` and `CRON_SECRET`
+  in the process environment, never the live ones.
+- The daily `account-emails` job only emails accounts created since 22 Oct
+  2026; on dev, `ACCOUNT_EMAILS_SINCE` moves that date for a test (never on
+  Vercel).
+- **Discovery edition test-sends** go to love@ only. Deleting a test account
+  from the admin sends D13 unless "Send confirmation" is unticked; on live,
+  use a plus-addressed inbox (and ask before creating any live test account).
 - Delete test users afterwards.
 
 ---
@@ -1266,6 +1446,15 @@ browser walk-throughs had typed made-up addresses into the sign-in form.
    hour; the affiliate page is static).
 10. **Riverpod 3:** a notifier must not `ref.invalidate` a provider that
     watches that same notifier — it's a circular dependency error.
+11. **Deleting an `email_sends` row lets that email go again.** It is the
+    once-only lock (0025); `forgetSent` is used on purpose (a decline lets a
+    new application get a new D2; a deleted account's rows are cleared).
+12. **A Next.js route file may only export route handlers and route
+    options.** Any other export (even a constant) breaks the build; keep
+    helpers unexported or in `utils/`.
+13. **Approve only from the Inbox.** Changing `verification_status` by any
+    other path (the SQL editor, a script) creates no listing and sends no
+    email (§9.4).
 
 ---
 
@@ -1273,8 +1462,9 @@ browser walk-throughs had typed made-up addresses into the sign-in form.
 
 ### 16.1 Before the App Store launch
 
-1. **Upload build 19** with the privacy label and iPad screenshots (§12.6), and
-   check landscape on a real iPad or in DeviceHub.
+1. **Upload build 21** (or build 22 with the changes waiting in the code,
+   §10.1) with the privacy label and iPad screenshots (§12.6), and check
+   landscape on a real iPad or in DeviceHub. Then delete `app/build/build19/`.
 2. **The Firebase move — deadline mid-November 2026.** Both Firebase projects
    (dev, and live `spiritpedia-d190c`) belong to the Elite Artists Google
    account, which will be archived. The first attempt was blocked by the Google
@@ -1311,7 +1501,13 @@ browser walk-throughs had typed made-up addresses into the sign-in form.
    1. **The legal pages:** the Terms of Use and the Privacy Policy, as a whole.
    2. **Trademark:** registering "Spiritpedia" (and the star mark).
    3. **Marketing emails as a sole trader:** what consent and opt-out rules
-      apply to outreach and future mailshots sent by a sole trader.
+      apply to outreach and future mailshots sent by a sole trader. **Cold
+      email:** whether the outreach journey may go to practitioners' published
+      addresses (`JOURNEY_TEST_EMAIL` stays set until this is answered).
+      **Soft opt-in:** whether Day 4 and discovery editions to free accounts
+      need a consent tick at sign-up before public launch.
+      **Health-claim filter:** whether the discovery editions' title filter
+      (`readsAsHealthClaim`) can be narrowed.
    4. **Spiritual interests as sensitive data:** whether Tailor Spiritpedia's
       choices and learned subjects count as special category data (religious
       or philosophical beliefs) under UK GDPR, and what that requires.
@@ -1332,17 +1528,23 @@ browser walk-throughs had typed made-up addresses into the sign-in form.
 
 ### 16.2 Emails
 
-- **Rewrite every email in the star's voice.** The inventory and what's needed
-  first (copy the live Supabase templates and SMTP sender; decide "I" the star
-  vs "we" the team; the outreach journey probably stays in the team's voice):
-  `docs/emails.md`.
-- **Publisher outreach:** no wording exists, so the journey cron skips publisher
-  journeys. Write it, then start outreach to publishers.
-- **No record that an email was sent** (no table): approving a review twice
-  emails twice, and a failed send leaves nothing to retry. Needed before
-  mailshots.
+- **Switch on discovery editions** once the test-sends look right in Gmail,
+  Apple Mail and Outlook: `DISCOVERY_EDITIONS=on` (§5). The earliest real
+  edition 1 is for accounts created on 22 Oct 2026, on 1 November.
+- **The monthly cadence** for edition 2 onwards: decided (monthly after Day
+  10; skip a month when there isn't enough new), not built.
+- **Listing photos:** most dev listing photos are hotlinked low-resolution
+  images (93 of ~125 from `encrypted-tbn0.gstatic.com`), which is why the
+  edition's featured photo is small. Copying listing photos into our own
+  storage is a separate project.
+- **Publisher, channel and organisation outreach:** no wording, so the journey
+  refuses them. Write it, then start outreach to them.
 - **No outreach journey has ever been started** for a real listing — a business
-  decision; everything is built and tested.
+  decision, after the solicitor; everything is built and tested.
+- **Most account and review emails are not retried** if Resend fails (only the
+  welcome, Day 4 and the journey are); the Inbox says when an email didn't go.
+- Account and review emails are simple HTML with no logo header; only the
+  discovery edition has one.
 - Dev Supabase is on the free plan: its sign-in emails use default templates.
 
 ### 16.3 Website follow-ups and gaps
@@ -1365,7 +1567,8 @@ browser walk-throughs had typed made-up addresses into the sign-in form.
   `components/admin/AdminLiveTabs.jsx`.
 - Smaller: a branded 404 page; reviews for healers and publishers (the table
   allows them; no UI); a `claimed_at` column (claimed status is inferred);
-  Admin Messages / Mailshots / Settings are placeholders; subject pages still
+  Admin Messages / Mailshots / Settings are placeholders (mailshots will need
+  the same unsubscribe and once-only rules as §9.7); subject pages still
   `select('*')` four collections uncapped (a TODO names the numbers).
 
 ### 16.4 What's next
@@ -1404,8 +1607,12 @@ approve).
   listing never buys a tier.
 - **✓ Verified:** the owner has confirmed it's theirs. Automatic, no checkbox
   (`verified`, migration 0023).
-- **✦ OFFICIAL:** Spiritpedia's own account only. Automatic, no checkbox
-  (`healers.official`, migration 0023). No tier badge.
+- **OFFICIAL:** Spiritpedia's own account only. Automatic, no checkbox
+  (`healers.official`, migration 0023). No tier badge. The badge is the word
+  OFFICIAL with no symbol (no ✦, §2).
+- **Website search rows** show a small tier glyph: Superhero ★, Ascended
+  Master ✹, Luminary ✶, Local Hero ◆, no tier ●; Spiritpedia's own listing
+  shows the gold star logo image.
 
 | Colour | Practitioners | Channels, apps, organisations, publishers | Stored as |
 | :--- | :--- | :--- | :--- |
@@ -1418,7 +1625,7 @@ Timeless Teachers with a lifespan (`1931 — 2015`, or `b. 1931`). Guidance,
 shown in admin and matching the star's tips: Superhero / Superstar ≈ worldwide
 reach, 1M+ followers across social media; Luminary / Shining Star ≈ hundreds of
 thousands; Local Hero ≈ a practitioner available in their area; Rising Star ≈
-growing, under 100k. On cards the tier (with ✓ Verified, or ✦ Official) sits
+growing, under 100k. On cards the tier (with ✓ Verified, or OFFICIAL) sits
 top left, the heart top right, a channel's type bottom right.
 
 Every listing except Spiritpedia shows its tier, on cards and profiles,
@@ -1521,7 +1728,10 @@ audited.
 
 ### 17.9 Deliberately unfinished (don't "fix" without knowing why)
 
-- No outreach journey started; journey emails are plain text with no links.
+- No outreach journey started; journey emails are plain text (their two links
+  written out), on purpose.
+- Discovery editions are off until `DISCOVERY_EDITIONS=on`; edition 2 onwards
+  isn't built.
 - The admin search box and bell are rendered but inert.
 - No fuzzy matching in emotion search.
 - `courses.affiliate_status` is effectively unused, with drifted values.

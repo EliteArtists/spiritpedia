@@ -9,6 +9,8 @@ Copy is final wording: do not rephrase. Bracketed tokens are placeholders:
 - `[reason]` — only the admin-approved explanation meant for the recipient, never private admin notes.
 - `by [creator name]` — omit the whole phrase if there is no relevant attribution.
 
+Updated 22 Oct 2026: D1, D2, D3, D4, D5, D8, D9 and D11 reworded (we only check that a listing is genuine and really theirs; we're not judging anyone), and the star symbol removed from subjects and sign-offs.
+
 Supersedes: the earlier 5-email practitioner outreach content, and the proposed 6-email generic explorer sequence (do not install that).
 
 ---
@@ -25,7 +27,7 @@ Everything else in the app star journey (gestures, triggers, dismissal) stays un
 
 ## PART B — Explorer emails (Guiding Star voice, "I")
 
-Sender: the existing explorer route — `hello@accounts.spiritpedia.co`, reply-to `love@spiritpedia.co`. Preserve the ✦ in subjects and signatures.
+Sender: the existing explorer route — `hello@accounts.spiritpedia.co`, reply-to `love@spiritpedia.co`. No star symbol in subjects, signatures or text (it reads as another company's logo): the gold Spiritpedia star logo image where a picture can go, nothing where it can't.
 
 ### B1. Welcome — Day 0
 
@@ -33,7 +35,7 @@ Send once after successful explorer account creation. Replaces the existing expl
 
 **App version**
 
-Subject: Welcome to Spiritpedia ✦
+Subject: Welcome to Spiritpedia
 
 Hi [first name],
 
@@ -45,12 +47,12 @@ As we get to know each other, the discoveries I share will become more personal.
 
 See you among the stars,
 
-Your Guiding Star ✦
+Your Guiding Star
 and the Spiritpedia Constellation
 
 **Website version**
 
-Subject: Welcome to Spiritpedia ✦
+Subject: Welcome to Spiritpedia
 
 Hi [first name],
 
@@ -62,7 +64,7 @@ As we get to know each other, the discoveries I share will become more personal.
 
 See you among the stars,
 
-Your Guiding Star ✦
+Your Guiding Star
 and the Spiritpedia Constellation
 
 ### B2. Tier explanation — Day 4
@@ -94,7 +96,7 @@ Start with someone familiar, or let curiosity introduce you to someone new. Save
 
 See you among the stars,
 
-Your Guiding Star ✦
+Your Guiding Star
 and the Spiritpedia Constellation
 
 ### B3. Personal discoveries edition — Day 10 onwards
@@ -283,7 +285,7 @@ Welcome to Spiritpedia. We're glad you're here.
 
 You're joining a place where people can discover spiritual teachings, explore different approaches and find practitioners whose work speaks to them.
 
-Your account is where you can begin sharing your work and manage your presence on Spiritpedia. Any listing you submit will be reviewed before it goes live.
+Your account is where you can begin sharing your work and manage your presence on Spiritpedia. Before a listing goes live, we just check a few details to make sure it's genuinely yours.
 
 If you have a question along the way, simply reply. We're here to help.
 
@@ -295,13 +297,13 @@ The Spiritpedia team
 ### D2. Application received
 Send rule: once after the listing application has been successfully submitted for review.
 
-Subject: We've received your application for [listing name]
+Subject: Thank you for sharing [listing name] with Spiritpedia
 
 Hi [first name],
 
-Thank you for submitting [listing name] to Spiritpedia.
+Thank you for sharing [listing name] with Spiritpedia.
 
-Your application is now with our team for review. We'll email you when we've made a decision, or if we need anything else from you.
+Before it goes live, we simply check that the details are genuine and that the listing is really yours. It's a quick check, and we'll be in touch as soon as it's done, or if we need anything from you.
 
 There's nothing more you need to do for now.
 
@@ -315,7 +317,7 @@ Subject: [listing name] is now live on Spiritpedia
 
 Hi [first name],
 
-Your application for [listing name] has been approved, and your listing is now live on Spiritpedia.
+Thank you for your patience. [listing name] is now live on Spiritpedia.
 
 People can now discover your work and explore the information you've shared.
 
@@ -329,18 +331,19 @@ The Spiritpedia team
 ### D4. Application declined
 Send rule: after an administrator records the decline and a public explanation.
 
-Subject: An update on your Spiritpedia application
+Subject: About your Spiritpedia listing
 
 Hi [first name],
 
-Thank you for your application for [listing name].
+Thank you for sharing [listing name] with us.
 
-After reviewing it, we're unable to approve the listing at this time.
+We weren't able to confirm the details we needed, so we can't publish the listing just yet.
 
 Reason: [reason]
 
-If you think we've misunderstood something, or you'd like to clarify the information you submitted, please reply to this email.
+If you can help us with this, simply reply. We'd be glad to take another look.
 
+With love,
 The Spiritpedia team
 
 ### D5. Claim request received
@@ -352,9 +355,9 @@ Hi [first name],
 
 Thank you for asking to manage [listing name] on Spiritpedia.
 
-We've received your request and will check that you're authorised to manage the listing before giving you access. We may contact you or the email address published on the listing to confirm ownership.
+Before we hand over access, we just check that the listing is really yours. It protects you as much as anyone. We may contact you, or the email address shown on the listing, to confirm.
 
-We'll email you once your request has been reviewed. You don't need to submit another request.
+We'll be in touch as soon as it's done. You don't need to send another request.
 
 With love,
 The Spiritpedia team
@@ -400,18 +403,17 @@ The Spiritpedia team
 ### D8. Claim declined
 Send rule: after an administrator records the declined claim and a public explanation.
 
-Subject: An update on your request to manage [listing name]
+Subject: About your request to manage [listing name]
 
 Hi [first name],
 
-We've reviewed your request to manage [listing name] on Spiritpedia and are unable to approve it at this time.
+We weren't able to confirm that [listing name] is yours to manage, so we haven't been able to give you access just yet.
 
 Reason: [reason]
 
-Access to the listing has not been granted through this request.
+If you can help us confirm it, simply reply and we'll take another look.
 
-If you can provide further information confirming that you're authorised to manage it, or you think we've misunderstood your request, please reply.
-
+With love,
 The Spiritpedia team
 
 ### D9. Review received
@@ -423,11 +425,11 @@ Hi [first name],
 
 Thank you for sharing your thoughts on [item title] by [creator name].
 
-Your review is now with the Spiritpedia team for assessment. I'll let you know once they've reviewed it.
+The Spiritpedia team will take a quick look before it goes live. I'll let you know as soon as it's up.
 
 Your experience could help another explorer decide what they'd like to discover next.
 
-Your Guiding Star ✦
+Your Guiding Star
 and the Spiritpedia Constellation
 
 ### D10. Review approved
@@ -443,7 +445,7 @@ Thank you for adding your voice. Your perspective may help someone else find the
 
 [View your review]
 
-Your Guiding Star ✦
+Your Guiding Star
 and the Spiritpedia Constellation
 
 ### D11. Review rejected
@@ -455,11 +457,11 @@ Hi [first name],
 
 Thank you for taking the time to review [item title] by [creator name].
 
-After assessing your submission, we're unable to publish your review.
+We read it carefully, but we aren't able to publish it.
 
 Reason: [reason]
 
-If you think we've misunderstood your review, please reply to this email.
+If you think we've misunderstood your review, simply reply.
 
 The Spiritpedia team
 
