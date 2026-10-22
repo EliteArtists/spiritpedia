@@ -10,6 +10,7 @@ import PublisherDashboard from '@/components/PublisherDashboard';
 import DeleteAccount from '@/components/DeleteAccount';
 import LearningSwitch from '@/components/LearningSwitch';
 import EmailPreferencesSwitch from '@/components/EmailPreferencesSwitch';
+import { accountTypeLabel } from '@/utils/accountType';
 
 const SUPPORT_EMAIL = 'love@spiritpedia.co';
 
@@ -75,8 +76,20 @@ export default function AccountPage() {
         .eq('id', user.id)
         .maybeSingle();
 
+      // The listing says what they were approved as (person, channel, app,
+      // organisation). Listings are public, so the auth client can read it.
+      let entityType = null;
+      if (profile?.linked_healer_slug) {
+        const { data: listing } = await supabaseAuth
+          .from('healers')
+          .select('entity_type')
+          .eq('healer_slug', profile.linked_healer_slug)
+          .maybeSingle();
+        entityType = listing?.entity_type ?? null;
+      }
+
       if (cancelled) return;
-      setState({ status: 'ready', email: user.email, userId: user.id, profile: profile || null });
+      setState({ status: 'ready', email: user.email, userId: user.id, profile: profile || null, entityType });
     })();
 
     return () => {
@@ -143,6 +156,7 @@ export default function AccountPage() {
   // A publisher's account (migration 0020) has its own, smaller dashboard.
   const publisherId = state.profile?.linked_publisher_id;
   const showDashboard = isPractitioner && status === 'approved' && Boolean(healerSlug || publisherId);
+  const typeLabel = accountTypeLabel({ userType, status, healerSlug, publisherId, entityType: state.entityType });
 
   return (
     <main className="min-h-screen bg-[#0a0f1d] text-white">
@@ -158,7 +172,7 @@ export default function AccountPage() {
         {showDashboard && (
           <>
             <p className="mt-1 text-sm text-gray-500">
-              Signed in as {state.email}
+              Signed in as {state.email} · {typeLabel}
               {healerSlug && (
                 <>
                   {' · '}
@@ -212,7 +226,7 @@ export default function AccountPage() {
           <div className="flex items-center justify-between gap-4 px-5 py-4">
             <dt className="text-sm text-gray-500">Account type</dt>
             <dd className="text-sm font-medium text-white">
-              {isPractitioner ? 'Sharing my work' : 'Explorer'}
+              {typeLabel}
             </dd>
           </div>
         </dl>
