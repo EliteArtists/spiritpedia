@@ -1,5 +1,6 @@
 // Firebase options for the spiritpedia project (Firebase project ID
-// spiritpedia-d190c), in the shape `flutterfire configure` generates. Built from
+// spiritpedia-ad62b, owned by love@spiritpedia.co), in the shape `flutterfire
+// configure` generates. Built from
 // `firebase apps:sdkconfig` for the registered iOS and Android apps
 // (co.spiritpedia.app). These values are public by design — they identify
 // the app to Firebase and grant nothing on their own; sending needs the
@@ -24,19 +25,19 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyC4llFrTCfIeTQs-h7oMj0-3DTHYR2qBx0',
-    appId: '1:225029060380:android:a7a56ce5a435ef0c62acd9',
-    messagingSenderId: '225029060380',
-    projectId: 'spiritpedia-d190c',
-    storageBucket: 'spiritpedia-d190c.firebasestorage.app',
+    apiKey: 'AIzaSyAKM6aCV5h4Bwhxm-knuvoT4vdU6HN3Szs',
+    appId: '1:203830486586:android:c56680173f62d577bff703',
+    messagingSenderId: '203830486586',
+    projectId: 'spiritpedia-ad62b',
+    storageBucket: 'spiritpedia-ad62b.firebasestorage.app',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyCFIalMCfhjQwsrpbQPRavxddymHumRZVY',
-    appId: '1:225029060380:ios:3c5068699b04b44662acd9',
-    messagingSenderId: '225029060380',
-    projectId: 'spiritpedia-d190c',
-    storageBucket: 'spiritpedia-d190c.firebasestorage.app',
+    apiKey: 'AIzaSyDFXemgvITUMX-ZHC6JdatsG2BAMIaGsOY',
+    appId: '1:203830486586:ios:e3b35461988cb851bff703',
+    messagingSenderId: '203830486586',
+    projectId: 'spiritpedia-ad62b',
+    storageBucket: 'spiritpedia-ad62b.firebasestorage.app',
     iosBundleId: 'co.spiritpedia.app',
   );
 }
