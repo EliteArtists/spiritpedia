@@ -95,14 +95,15 @@ export function buildMessage(token, { title, body, data = {}, channel = CHANNELS
   };
 }
 
-// A token Firebase says will never work again: the app was uninstalled, or the
-// token was rotated. Anything else (quota, a server blip) is not the token's
-// fault and leaves it in place.
+// A token Firebase says will never work again: the app was uninstalled, the
+// token was rotated, or it belongs to another Firebase project (tokens made
+// before the move to the love@ projects in October 2026). Anything else
+// (quota, a server blip) is not the token's fault and leaves it in place.
 export function isDeadToken(status, errorBody) {
   if (status === 404) return true;
   const details = errorBody?.error?.details || [];
   const fcmCode = details.find((d) => d?.errorCode)?.errorCode;
-  if (fcmCode === 'UNREGISTERED') return true;
+  if (fcmCode === 'UNREGISTERED' || fcmCode === 'SENDER_ID_MISMATCH') return true;
   return status === 400 && fcmCode === 'INVALID_ARGUMENT' && /registration token/i.test(errorBody?.error?.message || '');
 }
 

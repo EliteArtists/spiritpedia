@@ -125,6 +125,7 @@ test('a message carries the channel, brand colour and string-only data', () => {
 test('dead tokens are recognised; temporary failures are not', () => {
   assert.equal(isDeadToken(404, {}), true);
   assert.equal(isDeadToken(400, { error: { details: [{ errorCode: 'UNREGISTERED' }] } }), true);
+  assert.equal(isDeadToken(403, { error: { details: [{ errorCode: 'SENDER_ID_MISMATCH' }] } }), true);
   assert.equal(isDeadToken(400, { error: { message: 'The registration token is not a valid FCM registration token', details: [{ errorCode: 'INVALID_ARGUMENT' }] } }), true);
   assert.equal(isDeadToken(400, { error: { message: 'Invalid JSON payload', details: [{ errorCode: 'INVALID_ARGUMENT' }] } }), false);
   assert.equal(isDeadToken(503, {}), false);
