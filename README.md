@@ -7,8 +7,9 @@ the teachers, videos, books and practices that meet you there.
 **This README is the handover.** It is written for a developer taking the
 project over tomorrow with no access to any earlier conversation. It was
 rebuilt on 17 October 2026 and brought up to date on 22 October 2026 (the
-email work, migrations 0024–0026, Inbox-only approval, no ✦), checked against
-the code, not memory. Where it
+email work, migrations 0024–0026, Inbox-only approval, no ✦; then the Firebase
+move to love@spiritpedia.co, builds 23 and 24, and Android made ready for
+Google Play), checked against the code, not memory. Where it
 and the code disagree, the code is right and this file should be fixed.
 
 The app has a second, more detailed file: **`app/README.md`**. The email
@@ -16,7 +17,8 @@ inventory is `docs/emails.md`, and the approved wording of every email is
 `docs/email-copy-2026-10-21.md` (change wording there first); the admin's
 how-to is `docs/admin-guide.md`; the personalisation rules are
 `app/docs/personalisation.md`; website issues found while building the app are
-`app/docs/website-followups.md`.
+`app/docs/website-followups.md`; everything to fill in on Google Play is
+`docs/google-play.md`.
 
 ---
 
@@ -47,13 +49,14 @@ how-to is `docs/admin-guide.md`; the personalisation rules are
 | | State on 22 October 2026 |
 | :--- | :--- |
 | **Website** | Live at **https://www.spiritpedia.co** (Next.js on Vercel). Every push that changes `web/` deploys to production |
-| **App** | Flutter, iPhone and iPad. **1.0.0 (22)** is built (`app/build/ios/ipa/Spiritpedia.ipa` and `app/build/ios/archive/Runner.xcarchive`, 22 Oct 2026) and waiting to be uploaded (§12.6). Builds 17–21 were never uploaded; 22 replaces them. **Build 16 is the last one uploaded to TestFlight.** Not yet on the App Store |
+| **App (iOS)** | Flutter, iPhone and iPad. **1.0.0 (23)** is on TestFlight (the Firebase move). **1.0.0 (24)** is built (`app/build/ios/ipa/Spiritpedia.ipa` and `app/build/ios/archive/Runner.xcarchive`, 22 Oct 2026) and waiting to be uploaded (§12.6). Not yet on the App Store |
+| **App (Android)** | The same code. **1.0.0 (24)** is built as a signed bundle, `app/build/android-release/Spiritpedia-1.0.0-24.aab`, ready for Google Play's closed test as soon as the (personal) developer account is verified (§10.15, §12.8, `docs/google-play.md`). Not yet on Google Play |
 | **Database** | Supabase. Two projects: **live** (`uzmvcgew…`) and **dev** (`khtpbnof…`). Migrations `0000`–`0026` are on both |
-| **Push** | Firebase Cloud Messaging only, with an APNs key. The Firebase projects must move to the love@ Google account before mid-November 2026 (§16) |
+| **Push** | Firebase Cloud Messaging only, with an APNs key. Moved on 22 Oct 2026 to two Firebase projects owned by **love@spiritpedia.co** (live `spiritpedia-ad62b`, dev `spiritpedia-dev-5e4d5`); checked end to end on iPhone, iPad and Android |
 | **Emails** | The approved copy of 21–22 Oct 2026 is live (§9.7). The outreach journey is eight emails, redirected to a test inbox by `JOURNEY_TEST_EMAIL` until the solicitor has checked cold email; no journey is running. Day 4 is live. Personal discovery editions are built but **off** until `DISCOVERY_EDITIONS=on` is set on Vercel (§9.7a) |
 | **Repository** | `https://github.com/EliteArtists/spiritpedia`, branch `main` only. No staging environment, no feature flags |
 
-**Before submitting build 22 in App Store Connect:**
+**Before submitting build 24 in App Store Connect:**
 - Update the App Privacy label (§12.6): add **Device ID** and **Sensitive Info**,
   and **Product Personalization** as a purpose on Product Interaction and
   Search History.
@@ -111,7 +114,7 @@ These have held throughout and the project owner expects them.
 
 | Layer | Technology |
 | :--- | :--- |
-| **App** | Flutter **3.47.7** / Dart **3.13.5** (pinned in `pubspec.yaml`). Riverpod 3 (no code generation), go_router, `supabase_flutter` 2.18, `firebase_core` + `firebase_messaging`, `flutter_secure_storage` (the session), `shared_preferences`, `geolocator` (approximate location), `webview_flutter` (the YouTube player), `cached_network_image`, `share_plus`, `url_launcher`, `flutter_native_splash`. iOS 15+, iPhone and iPad. iOS plugins come through Swift Package Manager: **there is no Podfile** |
+| **App** | Flutter **3.47.7** / Dart **3.13.5** (pinned in `pubspec.yaml`). Riverpod 3 (no code generation), go_router, `supabase_flutter` 2.18, `firebase_core` + `firebase_messaging`, `flutter_secure_storage` (the session), `shared_preferences`, `geolocator` (approximate location), `webview_flutter` (the YouTube player), `cached_network_image`, `share_plus`, `url_launcher`, `flutter_native_splash`. iOS 15+, iPhone and iPad; Android 7+ (API 24, target 36), ready for Google Play (§10.15). iOS plugins come through Swift Package Manager: **there is no Podfile** |
 | **Website** | Next.js **16.4** (App Router, Turbopack, `proxy.js` instead of middleware), React 19, Tailwind 4, `@supabase/supabase-js` 2, `resend`, `@next/third-parties` (GA4). Node 24 |
 | **Hosting** | Vercel, team `eliteartists-projects`, project **`spiritpedia-e58y`** (see §4: there are two projects) |
 | **Database and auth** | Supabase (Postgres 17, PostgREST, Supabase Auth with emailed 6-digit codes). **Live** and **dev** projects |
@@ -122,7 +125,7 @@ These have held throughout and the project owner expects them.
 | **Affiliate** | Amazon Associates, five stores, tagged at render (§17.6) |
 
 ```
-            ┌──────────────── Flutter app (iPhone, iPad) ────────────────┐
+            ┌──────────── Flutter app (iPhone, iPad, Android) ───────────┐
             │  reads content with the anon key; writes the person's own  │
             │  rows with their session (RLS); everything else ↓          │
             └───────┬───────────────────────────────┬────────────────────┘
@@ -134,7 +137,7 @@ These have held throughout and the project owner expects them.
    │ Storage: practitioner-images     │   └───────────────┬──────────────────────┘
    └──────────────────────────────────┘                   │ FCM HTTP v1
                                                            ▼
-                                              Firebase Cloud Messaging → APNs → iPhone
+                              Firebase Cloud Messaging → APNs → iPhone, iPad (FCM direct → Android)
 ```
 
 - **Reads** come straight from Supabase with the anon key. RLS lets it read
@@ -161,15 +164,17 @@ None of these are secrets.
 | Vercel | Team `eliteartists-projects`. **`spiritpedia-e58y` serves the site** and holds every environment variable. A second project, `spiritpedia`, builds the same repo and serves only `spiritpedia.vercel.app`; nobody visits it, and setting a variable there changes nothing the public sees. Worth deleting once someone confirms nothing uses that URL. Root Directory must be **`web`**; Node 24 |
 | Supabase live | `uzmvcgewxgvnybdhvsyx` (`https://uzmvcgewxgvnybdhvsyx.supabase.co`) |
 | Supabase dev | `khtpbnofcavoerorajni` (free plan, so it can't use custom email templates) |
-| Firebase live | `spiritpedia-d190c`, sender ID `225029060380` (`app/lib/core/firebase/options_prod.dart`) |
-| Firebase dev | `spiritpedia-dev`, sender ID `333017406784` (`options_dev.dart`) |
-| Firebase owner | Both projects are under the **Elite Artists** Google account, archived around mid-November 2026. They must move to love@spiritpedia.co first (§16) |
+| Firebase live | `spiritpedia-ad62b` ("spiritpedia"), sender ID `203830486586` (`app/lib/core/firebase/options_prod.dart`). Apps: iOS `1:203830486586:ios:e3b35461988cb851bff703`, Android `1:203830486586:android:c56680173f62d577bff703` |
+| Firebase dev | `spiritpedia-dev-5e4d5` ("spiritpedia-dev"), sender ID `905307569923` (`options_dev.dart`). Apps: iOS `…:ios:9240e7885291f083cbf336`, Android `…:android:72566319b896f083cbf336` |
+| Firebase owner | **love@spiritpedia.co** (since 22 Oct 2026). The old projects under the Elite Artists Google account (`spiritpedia-d190c`, `spiritpedia-dev`) are no longer used by anything and can be deleted |
+| Google Play | Developer account: **personal**, love@spiritpedia.co (identity verification in progress on 22 Oct 2026). Package `co.spiritpedia.app`. Upload key certificate SHA-256 `29:35:1F:3F:FB:79:F8:35:1B:2A:DD:21:9E:DA:A3:28:3D:F7:11:F7:14:EA:31:BE:D7:31:13:EE:87:D2:27:CE` |
 | Apple | Team ID `KT2XV84345`. Bundle ID **`co.spiritpedia.app`** (tests: `co.spiritpedia.app.RunnerTests`). Android `applicationId` is also `co.spiritpedia.app` |
 | APNs | `aps-environment` is `development` in `Runner.entitlements`; App Store export signs it as **production** (check every IPA, §12.5). The APNs auth key is uploaded in each Firebase project's Cloud Messaging settings |
 | Email addresses | Transactional from `Spiritpedia <hello@accounts.spiritpedia.co>`; journey (outreach) emails from `love@spiritpedia.co`; reply-to `love@spiritpedia.co`; every send blind-copied to an archive Gmail inbox |
 | Admin | `https://www.spiritpedia.co/admin`, password login (§9.4) |
 | Amazon Associates | US `spiritpedia-20` (primary), UK `spiritpedia03-21`, CA `spiritpedia0d-20`, ES `spiritpedi093-21`, AU `spiritpedia-22` (§17.6) |
 | Simulators used for tours | iPhone 18 Pro `049C050F-9F21-44FE-B91A-B77FA3DBFB72` (iOS 27.0); iPad Pro 13-inch (M5) `57392128-5E80-4596-B073-B91810411A87` (iOS 26.5) |
+| Android emulator | `Pixel_8_API_34_-_Test_Device_Clean` (Android 14, Google Play image, arm64), in `~/.android/avd` |
 
 ---
 
@@ -180,11 +185,13 @@ None of these are secrets.
 | File / place | Holds | In git? |
 | :--- | :--- | :--- |
 | `web/.env.local` (points at **live**) | `NEXT_PUBLIC_SUPABASE_URL`, `NEXT_PUBLIC_SUPABASE_ANON_KEY`, `SUPABASE_SERVICE_ROLE_KEY`, `ADMIN_PASSWORD`, `ADMIN_NAME`, `RESEND_API_KEY`, `NEXT_PUBLIC_GA_MEASUREMENT_ID`, `JOURNEY_TEST_EMAIL`, `CRON_SECRET` | No (`.env*` in `web/.gitignore`) |
-| `web/.env.development.local` (points at **dev**; `next dev` loads it over `.env.local`) | `NEXT_PUBLIC_SUPABASE_URL`, `NEXT_PUBLIC_SUPABASE_ANON_KEY`, `SUPABASE_SERVICE_ROLE_KEY`, `RESEND_API_KEY`, `NEXT_PUBLIC_GA_MEASUREMENT_ID`, `FIREBASE_PROJECT_ID`, `FIREBASE_CLIENT_EMAIL`, `FIREBASE_PRIVATE_KEY` | No |
+| `web/.env.development.local` (points at **dev**; `next dev` loads it over `.env.local`) | `NEXT_PUBLIC_SUPABASE_URL`, `NEXT_PUBLIC_SUPABASE_ANON_KEY`, `SUPABASE_SERVICE_ROLE_KEY`, `RESEND_API_KEY`, `NEXT_PUBLIC_GA_MEASUREMENT_ID`, `FIREBASE_PROJECT_ID`, `FIREBASE_CLIENT_EMAIL`, `FIREBASE_PRIVATE_KEY` (the **dev** project `spiritpedia-dev-5e4d5`) | No |
 | Vercel → `spiritpedia-e58y` → Settings → Environment Variables | Everything the live site needs: the Supabase three, `ADMIN_PASSWORD`, `ADMIN_NAME`, `RESEND_API_KEY`, `CRON_SECRET`, `NEXT_PUBLIC_GA_MEASUREMENT_ID`, `FIREBASE_PROJECT_ID` / `_CLIENT_EMAIL` / `_PRIVATE_KEY` (the **live** push service account lives only here), `AMAZON_TAG_US` / `_UK` / `_CA` / `_ES` / `_AU`, `JOURNEY_TEST_EMAIL` (Production and Preview), and `DISCOVERY_EDITIONS` once switched on | — |
 | `app/config/dev.json` | `APP_ENV`, `SUPABASE_URL`, `SUPABASE_ANON_KEY`, `API_BASE_URL` (dev; copy `dev.example.json`) | No (`app/.gitignore`) |
 | `app/config/prod.json` | The same four (live) plus `AMAZON_TAG_US` / `_UK` / `_CA` / `_ES` / `_AU` | **Yes, on purpose**: only public values |
-| Firebase console | The APNs auth key (`.p8`), and the service accounts behind `FIREBASE_*` | — |
+| `~/.secrets/spiritpedia/firebase/` on the development Mac (folder `700`, files `600`) | The two Firebase service-account keys: `live-spiritpedia-ad62b.json` (its values are in Vercel; not in any local env file) and `dev-spiritpedia-dev-5e4d5.json` (in `web/.env.development.local`) | No — outside the repo |
+| `~/.secrets/spiritpedia/android/` on the development Mac (folder `700`, files `600`) | **The Google Play upload key**: `upload-keystore.jks` (alias `upload`, RSA 2048, valid 10,000 days) and `key.properties` (its passwords and path; `app/android/app/build.gradle.kts` reads it). **Back both up** (§12.8) | No — outside the repo |
+| Firebase console (love@spiritpedia.co) | The APNs auth key (`.p8`, Key ID `83KR7QH76Q`, uploaded to both projects, development and production slots), and the service accounts behind `FIREBASE_*` | — |
 | Supabase dashboard | Auth email templates and SMTP sender; the service-role key | — |
 
 - **Email switches (not secrets, but they decide who gets emailed):**
@@ -221,16 +228,17 @@ spiritpedia/
 ├── docs/
 │   ├── emails.md           every email the platform sends, when and to whom
 │   ├── email-copy-2026-10-21.md  the approved wording (source of truth)
-│   └── admin-guide.md      how to run the admin (badges, approving, owners' content)
+│   ├── admin-guide.md      how to run the admin (badges, approving, owners' content)
+│   └── google-play.md      every Play Console answer (data safety, rating, audience, closed test)
 ├── app/                    the Flutter app — see app/README.md
 │   ├── lib/                main.dart, app.dart, router.dart, core/, data/, theme/, shared/, features/
-│   ├── test/               307 tests (fakes in test/support/)
+│   ├── test/               316 tests (fakes in test/support/)
 │   ├── integration_test/   search_typing_test.dart (tours go here temporarily, never committed)
 │   ├── assets/safety/      symlink → web/shared/emotion-safety.json
 │   ├── config/             dev.json (ignored), dev.example.json, prod.json
 │   ├── docs/               personalisation.md, website-followups.md
 │   ├── ios/  android/
-│   └── pubspec.yaml        version 1.0.0+22
+│   └── pubspec.yaml        version 1.0.0+24
 ├── web/                    the Next.js site — run web commands from here
 │   ├── app/                pages, /api routes, sitemap, robots
 │   ├── components/         UI; components/admin/ for the dashboard
@@ -712,6 +720,16 @@ are dead code.
   love@spiritpedia.co (0023). The badge is the word OFFICIAL, no symbol.
 - Platforms (channel, app, organisation) are kept out of Practitioners Near
   You (`isPlatform`).
+- **"Account type"** (website `/account` and the app's My Account) is the
+  type set at approval, never the sign-up wording: Explorer; **Practitioner
+  (awaiting approval)** until approved (or approved with no listing linked
+  yet); then **Practitioner**, **Channel**, **App**, **Organisation** (from
+  the linked listing's `entity_type`) or **Publisher** (`linked_publisher_id`).
+  A declined applicant reads Explorer (their `user_type` reverts). One rule on
+  both platforms: `web/utils/accountType.js` and `AccountProfile.typeLabel`
+  in the app (from 22 Oct 2026; before, the website said "Sharing my work"
+  and the app "Practitioner" for every practitioner). Approved accounts see
+  the dashboard, whose header reads "Signed in as … · Channel".
 
 ### 9.5a Owners' own content (0024)
 
@@ -918,9 +936,15 @@ a manual run). **503 means the secret is unset; 401 means it's wrong.**
 
 `utils/push.js` signs a JWT with the service account (`FIREBASE_PROJECT_ID`,
 `FIREBASE_CLIENT_EMAIL`, `FIREBASE_PRIVATE_KEY`) and calls FCM HTTP v1
-directly. Dead tokens are removed. The welcome push is sent once per account
-(`notification_sends`) by `/api/push/welcome` and alongside the explorer
-welcome email. Admin → push-test sends a test.
+directly. Dead tokens are removed: `UNREGISTERED`, an invalid token, and
+`SENDER_ID_MISMATCH` (a token made by another Firebase project, i.e. by an
+app build from before the 22 Oct 2026 move). The welcome push is sent once
+per account (`notification_sends`) by `/api/push/welcome`, which answers
+with a status (`sent`, `already_sent`, `no_devices`, `opted_out`,
+`not_configured`, `failed`), and alongside the explorer welcome email. It
+goes to **every device the account has at that moment**; a device turned on
+later gets nothing. Admin → push-test sends a test to every device of one
+account — the way to test a second device.
 
 ### 9.12 Analytics, consent and legal
 
@@ -949,7 +973,7 @@ README-only pushes show as **Canceled** in Vercel — the rule working. In doubt
 `app/`. The detail (structure, every rule, migrations as the app sees them,
 admin Reports) is in **`app/README.md`**; this section is the overview.
 
-### 10.1 Builds 1–22
+### 10.1 Builds 1–24
 
 Version `1.0.0+N`. Phases 0–3a (9–10 Oct 2026, as `0.1.0+1`) came first:
 skeleton and intro, one shared crisis phrase list, Explore, emotional search,
@@ -972,13 +996,15 @@ detail pages, email-code sign-in with Library sync and account deletion, push.
 | 13 | 16 Oct | More of beats Never show; saving needs an account; the Tailor star; For You rotation; the new welcome push |
 | 14 | 16 Oct | "How will you use Spiritpedia?" |
 | 15 | 16 Oct | Your area (Practitioners Near You); the star's conductor; the area and name questions; "Welcome back" |
-| 16 | 16 Oct | The Always-location purpose string Apple's upload scan wanted (ITMS-90683). **Last build uploaded to TestFlight** |
+| 16 | 16 Oct | The Always-location purpose string Apple's upload scan wanted (ITMS-90683) |
 | 17 | 17 Oct | Account types: Organisation listings shown as channels; "OFFICIAL" |
 | 18 | 17 Oct | Activity learning ("Let Spiritpedia learn from what I explore") |
 | 19 | 17 Oct | **The iPad**: the same app laid out for the larger screen, both orientations, Split View |
 | 20 | 18 Oct | *Built, never uploaded (replaced by 21).* Badges (tiers by type, ✓ Verified, OFFICIAL, every badge explained by the star); Official reviews; Explore More as real shelves; the iPad two-stars fix |
 | 21 | 18 Oct | Build 20, plus: the tier badge top left on cards (type bottom right); the top two tiers' tips reworded |
-| **22** | 22 Oct | **Current build, waiting to be uploaded.** Everything since 21: the star's first callout "Tap me anytime to come home. Press and hold to open your Library." (checked on iPhone SE and on iPad in portrait and landscape); the explorer welcome sent from the website when the account is created (not on "I'm exploring"); "review received" only for a new review, never an edit; the **Discovery emails** switch on My Account (explorers who never applied); OFFICIAL with no ✦ (badge, tip, search line). 307 tests |
+| 22 | 22 Oct | Everything since 21: the star's first callout "Tap me anytime to come home. Press and hold to open your Library." (checked on iPhone SE and on iPad in portrait and landscape); the explorer welcome sent from the website when the account is created (not on "I'm exploring"); "review received" only for a new review, never an edit; the **Discovery emails** switch on My Account (explorers who never applied); OFFICIAL with no ✦ (badge, tip, search line). 307 tests |
+| 23 | 22 Oct | **On TestFlight.** Firebase moved to the love@spiritpedia.co projects (`spiritpedia-ad62b` / `spiritpedia-dev-5e4d5`). Push checked on iPhone and iPad |
+| **24** | 22 Oct | **Current build (iOS IPA and Android bundle), waiting to be uploaded.** The welcome notification is asked for until the server confirms it (three tries, then at each start; build 23's iPad never sent the request); "Turn off notifications on this phone" removes the token it registered (it used to fail on the iPad); Account type shows the type set at approval; **Android**: release signing with the Play upload key, approximate-location permission, a notification arriving while the app is open shows as an in-app note with **Open**. 316 tests |
 
 ### 10.2 Structure and startup
 
@@ -1130,7 +1156,8 @@ rank at level 1 (§10.6).
   choice (`/api/pending-user-type`) and opens
   `spiritpedia.co/auth/signup?as=practitioner`, where the one application form
   lives. Listings are created and approved on the website (§9.5).
-- **My Account:** email (change email uses two codes), account type, Your name
+- **My Account:** email (change email uses two codes), account type (the type
+  set at approval, §9.5), Your name
   (`user_profiles.full_name`), Tailor Spiritpedia, Notifications, Blocked
   reviewers, **Discovery emails** (from build 22; explorers who never applied:
   Day 4 and discovery editions on or off, through
@@ -1152,14 +1179,31 @@ Reports (§9.4). This is what App Store guideline 1.2 asks for.
 ### 10.11 Notifications
 
 - Firebase starts at launch, but **no token exists until the person says yes**
-  in Account → Notifications: permission → token (waits for Apple's) →
-  `register_push_token` → `notification_preferences` (General on; IAM
-  affirmations off, reserved) → `/api/push/welcome` sends, once per account:
-  "Testing, testing… just checking my light reaches you. Nothing to do. I'll
-  only shine when it matters."
-- While the app is open, pushes show as the iPhone's own banner. Token refresh
-  re-registers. "Turn off on this phone" deletes the token row; sign-out
-  forgets the phone. Known issues in §16.
+  in Account → Notifications: the friendly screen → the system prompt (iOS;
+  Android 13+) → token (waits for Apple's on iOS) → `register_push_token` →
+  `notification_preferences` (General on; IAM affirmations off, reserved) →
+  `/api/push/welcome` sends, once per account: "Testing, testing… just
+  checking my light reaches you. Nothing to do. I'll only shine when it
+  matters."
+- **The welcome is asked for until the server confirms it** (from build 24):
+  three tries a few seconds apart, then again at each start while the phone
+  has notifications on, until the server answers `sent` or `already_sent`;
+  then the phone remembers that for the account (`push_welcome_done_<user
+  id>` in shared preferences). Before build 24 it was one request with its
+  error swallowed: on 22 Oct 2026 an iPad turned on, saved its token and
+  settings, and never reached the route (Vercel showed no request).
+- **The phone remembers the token it registered** (`push_last_token`).
+  "Turn off notifications on this phone" and sign-out remove that token, and
+  whatever Firebase gives after waiting for Apple's, from the account, then
+  delete it from Firebase (from build 24; before, it asked Firebase without
+  waiting, got nothing on the iPad, and the row stayed). Account deletion
+  leaves the removal to the server.
+- At each start, a phone that said yes re-registers its current token (it
+  rotates; this is also how phones moved to the new Firebase projects).
+- **While the app is open:** on iOS the system banner shows
+  (`showWhileOpen`); Android shows nothing for an app in front, so the app
+  shows the title and text as a note with **Open** (from build 24). Tapping a
+  notification opens its in-app path (`data.route`).
 
 ### 10.12 iPad (build 19)
 
@@ -1207,6 +1251,44 @@ in-app web view. Amazon links are rebuilt as `/dp/{ASIN}` with the store's tag
 from `prod.json`. Videos play in a WebView embedding `youtube-nocookie.com`,
 inline.
 
+### 10.15 Android (build 24)
+
+The same Flutter code, built for Google Play. **Ready to upload, not yet on
+Google Play**: the developer account (personal, love@spiritpedia.co) is being
+verified, and a personal account must run a **closed test with 12+ testers for
+14 days** before production (testers from Testers Community).
+`docs/google-play.md` has every Play Console answer.
+
+- **Package** `co.spiritpedia.app`; **minimum API 24** (Android 7), **target
+  and compile API 36** (Flutter's defaults; Play requires 35+); NDK 28; Gradle
+  9.3.1, Android Gradle Plugin 9.1.0, Kotlin 2.4.0, Java 17. The version comes
+  from `pubspec.yaml` (`1.0.0+24` → version name 1.0.0, version code 24), so
+  the iOS and Android build numbers stay the same.
+- **Signing:** `app/android/app/build.gradle.kts` reads
+  `~/.secrets/spiritpedia/android/key.properties`; without it a release build
+  falls back to the debug key (fine for `flutter run --release`, refused by
+  Play). Play App Signing holds the real app-signing key (§12.8).
+- **Firebase:** `options_prod.dart` / `options_dev.dart` carry the Android apps
+  of both projects. No `google-services.json` and no Google Services Gradle
+  plugin: the Dart options are enough for Cloud Messaging.
+- **Manifest** (`android/app/src/main/AndroidManifest.xml`): `INTERNET`;
+  `POST_NOTIFICATIONS` (Android 13+, asked only after the in-app screen);
+  `ACCESS_COARSE_LOCATION` only (added for build 24 — without it
+  `geolocator` refused, so "Use my location" never worked on Android); FCM
+  auto-init off until yes; Analytics deactivated; default notification channel
+  `general`, the white star icon `ic_notification` and the brand colour;
+  `queries` for https, mailto and tel links.
+- **Icon:** the gold star (adaptive icon, `mipmap-anydpi-v26`).
+- **Checked on the Pixel 8 emulator (Android 14), 22 Oct 2026, release build
+  against live:** browse, the star's callout, the save prompt and sign-in by
+  code, saving, press-and-hold the star → My Library, Account type
+  "Channel", Notifications (the system prompt, the welcome recorded, a test
+  notification in the background and as the in-app note, tapping it opens
+  Account), turning off removes the token. **Not yet checked:** every screen
+  in turn, "Use my location" on Android, a real Android phone, tablets.
+- **The bundle is 16 KB page-size aligned** (every `.so` checked), as Play
+  requires for API 35+.
+
 ---
 
 ## 11. The crisis intercept (website and app)
@@ -1253,7 +1335,7 @@ their own with no hang.
 cd web
 npm install
 npm run dev            # http://localhost:3000, against DEV (.env.development.local)
-npm test               # node --test: 140 tests in utils/*.test.mjs
+npm test               # node --test: 143 tests in utils/*.test.mjs
 npx eslint app components utils
 npm run build          # what Vercel runs
 ```
@@ -1271,7 +1353,7 @@ flutter pub get
 flutter run --dart-define-from-file=config/dev.json    # dev database + local website (npm run dev)
 flutter run --dart-define-from-file=config/prod.json   # live data
 flutter analyze        # must say "No issues found"
-flutter test           # 307 tests, all passing at build 22 (one dev-only test skips)
+flutter test           # 316 tests, all passing at build 24 (one dev-only test skips)
 ```
 
 In this environment Flutter is run through a clean login shell:
@@ -1377,6 +1459,62 @@ project owner runs it on **dev**; check it with throwaway users (Admin API,
 email confirmed, deleted afterwards). Then **live**, checked read-only. Update
 §8 here.
 
+### 12.8 Android: build, test and Google Play
+
+```bash
+cd app
+flutter build appbundle --release --dart-define-from-file=config/prod.json
+#   → build/app/outputs/bundle/release/app-release.aab, signed with the upload key
+```
+
+Run it through the same clean login shell as the iOS build (§12.2). The first
+build downloads Gradle and its dependencies (about 3–4 GB into `~/.gradle`) and
+takes about 4 minutes. Copy the bundle out before clearing `build/app`: build
+24's is `app/build/android-release/Spiritpedia-1.0.0-24.aab`, with the 512 px
+Play icon beside it.
+
+**Check the bundle:**
+```bash
+A=app/build/android-release/Spiritpedia-1.0.0-24.aab
+keytool -printcert -jarfile $A | grep SHA256     # the upload key (§4), never the debug key
+```
+and in the merged manifest (`build/app/intermediates/merged_manifest/release/…`)
+`versionCode`, `targetSdkVersion="36"` and the permissions (§10.15). Every
+native library must be 16 KB aligned (read each `.so`'s LOAD alignment; all
+were 16384 or 65536 at build 24).
+
+**The emulator** (one at a time, never with an iOS simulator running, §13):
+```bash
+~/Library/Android/sdk/emulator/emulator -avd Pixel_8_API_34_-_Test_Device_Clean -no-snapshot -no-boot-anim &
+~/Library/Android/sdk/platform-tools/adb wait-for-device
+cd app && flutter run --release -d emulator-5554 --dart-define-from-file=config/prod.json
+~/Library/Android/sdk/platform-tools/adb emu kill      # when done
+```
+- If it exits with "A snapshot operation … is pending", delete the `*.lock`
+  files in `~/.android/avd/Pixel_8_API_34_-_Test_Device_Clean.avd/` and start
+  it with `-no-snapshot`.
+- An old copy signed with a different key won't update
+  (`INSTALL_FAILED_UPDATE_INCOMPATIBLE`; `flutter run` then quietly runs the
+  old app): `adb uninstall co.spiritpedia.app` first.
+- Screenshots: `adb exec-out screencap -p > shot.png`; taps:
+  `adb shell input tap X Y` (the Pixel 8 is 1080 × 2400).
+- Signing in sends a real code: use a real inbox (love@ was used, the owner
+  read the code), never a made-up address (§14). Turn notifications off on the
+  emulator afterwards so its token leaves the account.
+
+**The upload key — back it up.** `~/.secrets/spiritpedia/android/`
+holds `upload-keystore.jks` and `key.properties` (the password, randomly
+generated). Put **both files** in the password manager (as attachments, or
+the `.jks` as an attachment and the password as a field), and keep one
+encrypted copy off this Mac (e.g. an encrypted disk image on a USB stick). With
+Play App Signing, losing the upload key is recoverable (Play support can
+register a new one) but slow; without a backup every update waits for that.
+Never commit either file.
+
+**Google Play:** everything to fill in, in order, is `docs/google-play.md`
+(create the app, Play App Signing, app content, data safety, content rating,
+target audience, store listing, the closed test).
+
 ---
 
 ## 13. This Mac: memory and disk
@@ -1398,8 +1536,19 @@ The development Mac has run out of both.
   `com.eliteartists.mobileapp`): **other projects', not Spiritpedia's — don't
   delete.** Of Spiritpedia's (`Runner`), only build 16's is kept (the last on
   TestFlight, for its crash reports); builds 1–21's were deleted on 22 Oct
-  2026 (about 3 GB). Build 22's archive joins the Organizer when it is opened
-  to upload. Keep only the archive of the newest uploaded build.
+  2026 (about 3 GB). A build's archive joins the Organizer when it is opened
+  to upload (build 24's is `app/build/ios/archive/Runner.xcarchive`). Keep
+  only the archive of the newest uploaded build.
+- **22 October 2026, after the Android work:** about 3.5 GB free. Android
+  added `~/.gradle` (3.6 GB: caches 2.9, wrapper 0.7, recreated by the next
+  Android build) and the emulator lives in `~/.android/avd` (6.1 GB; its data
+  can be wiped from Android Studio's Device Manager or with `emulator -avd …
+  -wipe-data`). Cleared that day and safe to clear again: Xcode `DerivedData`
+  (3.9 GB), `app/build/test_cache`, `app/build/ios/iphonesimulator` and
+  `Debug-iphonesimulator`, `app/build/app` (Android intermediates, once the
+  `.aab` is copied out). Keep `app/build/ios/SourcePackages` (1.2 GB) or the
+  next iOS build downloads it again. Other big folders are not this project's
+  (`~/Library/Caches/Google` 3.3 GB, VS Code updates 1.4 GB, Homebrew).
 
 ---
 
@@ -1468,6 +1617,18 @@ browser walk-throughs had typed made-up addresses into the sign-in form.
 13. **Approve only from the Inbox.** Changing `verification_status` by any
     other path (the SQL editor, a script) creates no listing and sends no
     email (§9.4).
+14. **The Firebase app options are Dart files only** (`options_*.dart`).
+    `flutterfire configure` registered the dev apps on 22 Oct 2026 but then
+    failed (Ruby's `xcodeproj` gem is missing) after rewriting the Gradle
+    files and adding `GoogleService-Info.plist` / `google-services.json`;
+    those were reverted. To regenerate, use `firebase apps:sdkconfig` per
+    app (logged in as love@: `firebase login:use love@spiritpedia.co`) and
+    copy the values in.
+15. **A token from another Firebase project fails with `SENDER_ID_MISMATCH`**
+    and is now removed as dead. Any future project move strands every saved
+    token until each phone opens a build with the new options.
+16. **A welcome that was never requested leaves no trace** in the database:
+    check Vercel's logs for `/api/push/welcome` before blaming delivery.
 
 ---
 
@@ -1475,39 +1636,35 @@ browser walk-throughs had typed made-up addresses into the sign-in form.
 
 ### 16.1 Before the App Store launch
 
-1. **Upload build 22** with the privacy label and iPad screenshots (§12.6).
-2. **The Firebase move — deadline mid-November 2026.** Both Firebase projects
-   (dev, and live `spiritpedia-d190c`) belong to the Elite Artists Google
-   account, which will be archived. The first attempt was blocked by the Google
-   Cloud organisation policy `iam.disableServiceAccountKeyCreation` on the
-   spiritpedia.co organisation. In order:
-   1. Turn that policy off for the spiritpedia.co organisation.
-   2. Recreate both projects under love@spiritpedia.co (a half-built love@ dev
-      project exists — finish it).
-   3. Upload the APNs key to both.
-   4. Swap `FIREBASE_PROJECT_ID`, `FIREBASE_CLIENT_EMAIL`,
-      `FIREBASE_PRIVATE_KEY` (in `web/.env.development.local` and Vercel) and
-      the FlutterFire options (`app/lib/core/firebase/options_dev.dart`,
-      `options_prod.dart`).
-   5. Redeploy the website, ship a build, and check a notification arrives on
-      dev and live.
-   6. Only then delete the Elite Artists projects.
-3. **Notifications, the final pass:**
+1. **Upload build 24** (iOS) with the privacy label and iPad screenshots
+   (§12.6), and test on TestFlight: turn notifications off and on on the iPad
+   (the token row should go and come back) and check the welcome logic on a
+   new account.
+2. **Google Play** (§10.15, §12.8, `docs/google-play.md`): once the personal
+   developer account is verified, create the app, upload
+   `Spiritpedia-1.0.0-24.aab` to a **closed test** with 12+ testers (Testers
+   Community) for **14 days**, then apply for production. Still to make: the
+   1024 × 500 feature graphic and phone screenshots. Decide how a reviewer
+   signs in (codes go to an inbox they can't read).
+3. **Delete the old Firebase projects** under the Elite Artists Google
+   account, `spiritpedia-d190c` and `spiritpedia-dev` (the move was finished
+   and checked on 22 Oct 2026: §4). Only installs older than build 23 used
+   them; their notifications stopped when the website switched.
+4. **Notifications, still open:**
    - The **General** switch saves the preference but leaves the device token
-     registered (only "Turn off on this phone" removes it).
-   - "Forget this phone" (sign-out) asks for the token without waiting for
-     Apple's; if that's not ready the row stays, and the error is swallowed.
-   - **The first notification is sometimes not sent:** one test registered the
-     token and saved General on, but no welcome was recorded.
+     registered (it stops sends at the server, which is enough).
    - **The welcome tray needs a redesign:** in-app messages must never appear
      abruptly — wait for a main tab, the star flies down onto a frosted tray,
      never repeat "I am your guiding star", swipe or tap to dismiss, hide
      after a few seconds.
-4. **Email change: retest on live** (change, both codes arrive, the app and
+   - Fixed in build 24: the welcome that was never requested (it is now asked
+     for until confirmed) and "Turn off on this phone" / sign-out leaving the
+     token on the account (§10.11).
+5. **Email change: retest on live** (change, both codes arrive, the app and
    admin show the new address). An earlier test left two live accounts
    (rossbaiken@ and wiseoly@); both are kept.
-5. **The polish pass** across the app (from testing build 13 on a phone).
-6. **Questions for a solicitor** (before public promotion; the legal pages are
+6. **The polish pass** across the app (from testing build 13 on a phone).
+7. **Questions for a solicitor** (before public promotion; the legal pages are
    a careful draft, not legal advice):
    1. **The legal pages:** the Terms of Use and the Privacy Policy, as a whole.
    2. **Trademark:** registering "Spiritpedia" (and the star mark).
@@ -1534,7 +1691,7 @@ browser walk-throughs had typed made-up addresses into the sign-in form.
    9. **BCC-ing every email to a Gmail archive:** whether that's acceptable,
       and what to say about it.
    10. **The UK ICO data protection fee:** whether it applies.
-7. **App Store listing:** description, keywords, screenshots (iPhone and
+8. **App Store listing:** description, keywords, screenshots (iPhone and
    iPad), the privacy label above.
 
 ### 16.2 Emails
@@ -1584,19 +1741,15 @@ browser walk-throughs had typed made-up addresses into the sign-in form.
 
 ### 16.4 What's next
 
-- **Android.** Not started as a product. What exists: Flutter's `android/`
-  folder (`applicationId` `co.spiritpedia.app`), Android apps registered in the
-  FlutterFire options, `push_tokens.platform` accepts `android`, and the Gradle
-  setup has built before. Needed: a Play Console listing and signing key,
-  Android FCM checked end to end, the location permission strings and
-  approximate-location flow on Android, a pass over every screen (the app was
-  designed and tested on iPhone/iPad), Play's data safety form (same data as
-  §12.6), and Android back behaviour (already goes to Discover first).
-- **The content ingestion tool.** Today: Admin → Ingestion
+- **The next job: the content ingestion investigation.** Today: Admin → Ingestion
   (`components/admin/ContentIngestion.jsx`), one item at a time with YouTube-id and
   Amazon-ASIN parsing and duplicate guards. The target library is 5,000 videos
   and 5,000 books; a faster ingestion tool is the next content step. *Its design
-  isn't specified anywhere in the repo yet.*
+  isn't specified anywhere in the repo yet* — the investigation starts there.
+- **Android, after the closed test:** a pass over every screen on a real
+  Android phone (the app was designed on iPhone/iPad), "Use my location" on
+  Android, tablets, and Android's own back behaviour (it goes to Discover
+  first).
 - **IAM affirmations:** the reserved `notification_preferences.iam_affirmations`
   switch (off) is waiting for the affirmation notifications.
 - **Amazon:** each of the five Associates accounts needs three qualifying sales

@@ -1,15 +1,14 @@
 # Spiritpedia: the app
 
-The Flutter app for iPhone and iPad: **1.0.0 (19)** built 17 October 2026:
-the iPad (Phase B) — the same screens, flow, star and features, laid out for
-the larger screen, both ways round and in Split View; iPhone is unchanged.
-Build 18 added activity learning ("Let Spiritpedia learn from what I
-explore", asked by the star at visit 3, the switch in Tailor Spiritpedia;
-learned subjects rank just below More of — see `docs/personalisation.md` §6).
-Build 16 is the last uploaded to TestFlight. **Before submitting 19:** update
-the App Store privacy label (add Device ID; Sensitive Info; Product
-Personalization on Product Interaction and Search History), and add 13-inch
-iPad screenshots (2064 × 2752).
+The Flutter app for iPhone, iPad and Android. **1.0.0 (24)** was built on 22
+October 2026, as an iOS IPA and an Android bundle (the root README §10.1 has
+every build). Build 23 is on TestFlight; 24 adds the notification fixes (the
+welcome asked for until confirmed; turning off removes the token), the
+Account type set at approval, and Android made ready for Google Play (§10.15
+of the root README; every Play Console answer is in `docs/google-play.md`).
+Push uses the Firebase projects owned by love@spiritpedia.co since 22 Oct
+2026. **Before submitting 24:** the App Store privacy label and 13-inch iPad
+screenshots (root README §12.6).
 It uses the same Supabase database, the same accounts and the same content as
 the website in `../web`. This file is written so that a new session, with none
 of the earlier conversations, can pick the app up.
@@ -123,7 +122,7 @@ an interface that `test/support/fake_account.dart` fakes for the tests.
 | App config | `config/dev.json` (**not committed**; copy `config/dev.example.json`) | `config/prod.json` (committed: public values and the Amazon tags) |
 | Website env | `web/.env.development.local` | `web/.env.local` |
 | API routes | `http://localhost:3000` (`npm run dev` in `web/`) | `https://www.spiritpedia.co` |
-| Firebase | `core/firebase/options_dev.dart` | `core/firebase/options_prod.dart` |
+| Firebase | `core/firebase/options_dev.dart` (`spiritpedia-dev-5e4d5`) | `core/firebase/options_prod.dart` (`spiritpedia-ad62b`) |
 
 ```bash
 cd app
@@ -145,7 +144,7 @@ read-only checks only.
 
 ```bash
 flutter analyze        # must say "No issues found"
-flutter test           # 307 tests at build 22, all passing
+flutter test           # 316 tests at build 24, all passing (one dev-only test skips)
 ```
 
 Screenshots for review come from a temporary integration test (a "tour") that
@@ -371,9 +370,17 @@ is saved.
   checking my light reaches you. Nothing to do. I'll only shine when it
   matters." No title, nothing to open. It replaced the old welcome ("Welcome
   to Spiritpedia ✨ / I'm your guiding star…") in build 13.
-- **While the app is open**, every notification shows as the iPhone's own
-  banner (`FirebasePushMessaging.showWhileOpen`, said at every launch). The
-  grey in-app tray for pushes is gone.
+- **The welcome is asked for until the server confirms it** (build 24):
+  three tries, then at each start while notifications are on, until the
+  server answers `sent` or `already_sent` (remembered per account on the
+  phone). Build 23's iPad turned on and never sent the request.
+- **Turning off** ("Turn off notifications on this phone", and sign-out)
+  removes the token this phone last registered (kept on the phone) plus
+  whatever Firebase gives after waiting for Apple's (build 24).
+- **While the app is open**, a notification shows as the iPhone's own
+  banner (`FirebasePushMessaging.showWhileOpen`, said at every launch). On
+  Android, which shows nothing for an app in front, the app shows it as a
+  note with **Open** (build 24).
 
 **How will you use Spiritpedia?** (for build 14, `account/user_type_card.dart`)
 - Once, for a brand-new account however it signed in (Account, the save
@@ -418,7 +425,10 @@ is saved.
 
 **My Account.**
 - Email, with change email (two codes).
-- Account type.
+- Account type: what they were approved as (Practitioner, Channel, App,
+  Organisation, Publisher), "Practitioner (awaiting approval)" before that,
+  Explorer otherwise (`AccountProfile.typeLabel`, the same rule as the
+  website's `utils/accountType.js`).
 - Tailor Spiritpedia.
 - Notifications.
 - Blocked reviewers.
@@ -485,13 +495,9 @@ Earlier migrations (0000–0014) are described in the root README.
 ## Known issues and parked items
 
 - **The General switch doesn't remove the device token.** The preference
-  saves as off, but the `push_tokens` row stays ("Turn off on this phone" does
-  delete it). And "forget this phone" at sign-out asks for the token without
-  waiting for Apple's, so if it isn't ready the row stays and the error is
-  swallowed. Parked until the final notifications pass.
-- **The first notification is sometimes not sent.** One test turned
-  notifications on, registered the token and saved General as on, but no
-  welcome was recorded. Parked with the item above.
+  saves as off and the server stops sending; the `push_tokens` row stays.
+  ("Turn off on this phone" and sign-out removing the token, and the welcome
+  that was never requested, were fixed in build 24.)
 - **Email change: probably working; retest during final testing.** On 14
   October a live account was changed from rossbaiken@ to wiseoly@ and back
   again while testing, so rossbaiken@ ended unchanged, and signing in with
@@ -511,23 +517,10 @@ Earlier migrations (0000–0014) are described in the root README.
   - Never repeat "I am your guiding star".
   - Swipe or tap to dismiss; it hides by itself after a few seconds.
   - Frosted styling, to match the rest of the app.
-- **Firebase must move to love@spiritpedia.co.** Both projects (dev, and live
-  `spiritpedia-d190c`) are under the Elite Artists Google account, which will
-  be archived in about a month (mid-November 2026). The first attempt was
-  blocked by the Google Cloud organisation policy
-  `iam.disableServiceAccountKeyCreation` on the spiritpedia.co organisation.
-  In order:
-  1. Turn that policy off for the spiritpedia.co organisation.
-  2. Recreate both projects under love@. A half-built love@ dev project
-     already exists; finish it rather than starting again.
-  3. Upload the APNs key to both.
-  4. Swap the server keys (`FIREBASE_PROJECT_ID`, `FIREBASE_CLIENT_EMAIL`,
-     `FIREBASE_PRIVATE_KEY`, in the local `.env` files and in Vercel) and
-     the FlutterFire config (`lib/core/firebase/options_dev.dart` and
-     `options_prod.dart`).
-  5. Redeploy the website, then ship a new build and check a notification
-     arrives on dev and live.
-  6. Only then delete the Elite Artists projects.
+- **Android is ready, not released.** The Google Play account (personal) is
+  being verified; a closed test with 12+ testers for 14 days comes first.
+  Not yet checked on Android: every screen in turn, "Use my location", a
+  real phone, tablets.
 - **Dev can't use custom email templates.** The dev Supabase project is on
   the free plan, so its sign-in and change-email emails use Supabase's default
   templates. Live's Change Email Address template includes the code
@@ -546,8 +539,7 @@ Earlier migrations (0000–0014) are described in the root README.
    "⋯" (report and block) on the website's reviews.
 4. **The before-launch list:**
    - The notification issues above.
-   - The Firebase move (before the Elite Artists account is archived,
-     mid-November 2026).
+   - Google Play: the closed test, then production (`docs/google-play.md`).
    - The welcome tray.
    - Have the Terms and Privacy Policy reviewed (they're a careful draft, not
      legal advice).
