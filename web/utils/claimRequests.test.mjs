@@ -84,11 +84,10 @@ test('approved: says so, links the account page and the listing', () => {
 
 test('rejected: the reason, no access, and a way to reply', () => {
   const m = claimDecisionMessage({ ...base, decision: 'rejected', reason: 'We could not confirm it.' });
-  assert.equal(m.subject, 'An update on your request to manage Hay House');
-  assert.match(m.text, /unable to approve it at this time\.\n\nReason: We could not confirm it\./);
-  assert.match(m.text, /Access to the listing has not been granted/);
-  assert.match(m.text, /The Spiritpedia team$/);
-  assert.doesNotMatch(m.text, /With love/);
+  assert.equal(m.subject, 'About your request to manage Hay House');
+  assert.match(m.text, /haven't been able to give you access just yet\.\n\nReason: We could not confirm it\./);
+  assert.match(m.text, /simply reply and we'll take another look\./);
+  assert.match(m.text, /With love,\nThe Spiritpedia team$/);
 });
 
 test('names are escaped in the HTML; a missing name still reads', () => {

@@ -170,7 +170,7 @@ test('welcome: exactly once, however many times it is asked for', async () => {
   assert.equal(google.sent[0].notification.title, undefined);
   assert.equal(
     google.sent[0].notification.body,
-    '✦ Testing, testing… just checking my light reaches you. Nothing to do. I’ll only shine when it matters.'
+    'Testing, testing… just checking my light reaches you. Nothing to do. I’ll only shine when it matters.'
   );
   assert.doesNotMatch(google.sent[0].notification.body, /guiding star/);
   assert.deepEqual(google.sent[0].data, {});

@@ -36,7 +36,7 @@ export default function LibraryBar() {
       href="/library"
       className="fixed bottom-6 left-1/2 z-50 -translate-x-1/2 rounded-full border border-white/10 bg-[#7c3aed] px-6 py-2 text-sm font-semibold text-white shadow-lg transition-all duration-300 hover:scale-105 hover:bg-[#6d28d9] active:scale-95"
     >
-      ✦ My Library
+      My Library
     </Link>
   );
 }

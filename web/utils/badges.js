@@ -106,7 +106,7 @@ export function listingBadges(listing, entityType = listing?.entity_type) {
   if (!listing) return [];
   const badges = [];
   if (listing.official) {
-    badges.push({ kind: 'official', label: '✦ Official', tip: OFFICIAL_TIP });
+    badges.push({ kind: 'official', label: 'OFFICIAL', tip: OFFICIAL_TIP });
     return badges;
   }
   const name = tierName(listing.tier, entityType);

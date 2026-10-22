@@ -38,15 +38,15 @@ test('renderEmail: buttons, headings, escaping, sign-offs', () => {
   });
   assert.match(m.text, /Head\nBody <b>/);
   assert.match(m.text, /Go: https:\/\/x\.test\/\?a=1&b=2/);
-  assert.match(m.text, /See you among the stars,\n\nYour Guiding Star ✦\nand the Spiritpedia Constellation$/);
+  assert.match(m.text, /See you among the stars,\n\nYour Guiding Star\nand the Spiritpedia Constellation$/);
   assert.match(m.html, /<strong>Head<\/strong><br>Body &lt;b&gt;/);
   assert.match(m.html, /href="https:\/\/x\.test\/\?a=1&amp;b=2"/);
-  assert.match(m.html, /See you among the stars,<\/p><p>Your Guiding Star ✦<br>and the Spiritpedia Constellation<\/p>$/);
+  assert.match(m.html, /See you among the stars,<\/p><p>Your Guiding Star<br>and the Spiritpedia Constellation<\/p>$/);
 });
 
 test('B1: the app version speaks of tap and hold; the website version of the button', () => {
   const app = explorerWelcome({ firstName: 'Jane', platform: 'app' });
-  assert.equal(app.subject, 'Welcome to Spiritpedia ✦');
+  assert.equal(app.subject, 'Welcome to Spiritpedia');
   assert.match(app.text, /^Hi Jane,\n\nI am your guiding star\. We met just a second ago\./);
   assert.match(app.text, /Tap and hold/);
   const web = explorerWelcome({ firstName: '', platform: 'web' });
@@ -90,7 +90,7 @@ test('D7: manage your listing goes to the account', () => {
 test('D9 and D10: the Guiding Star, and "by" only with a creator', () => {
   const got = reviewReceived({ firstName: 'Sam', title: 'The Power of Now', creatorName: 'Eckhart Tolle' });
   assert.match(got.text, /your thoughts on The Power of Now by Eckhart Tolle\./);
-  assert.match(got.text, /Your Guiding Star ✦\nand the Spiritpedia Constellation$/);
+  assert.match(got.text, /Your Guiding Star\nand the Spiritpedia Constellation$/);
   assert.match(reviewReceived({ title: 'X' }).text, /your thoughts on X\./);
   const live = reviewApproved({ title: 'X', url: `${SITE}/books/x` });
   assert.match(live.text, /^Hello,/);
@@ -176,30 +176,35 @@ import {
 
 test('D2: the listing name in the subject, team sign-off', () => {
   const m = applicationReceived({ firstName: 'Jane', listingName: 'Jane Doe Healing' });
-  assert.equal(m.subject, "We've received your application for Jane Doe Healing");
+  assert.equal(m.subject, 'Thank you for sharing Jane Doe Healing with Spiritpedia');
+  assert.match(m.text, /^Hi Jane,\n\nThank you for sharing Jane Doe Healing with Spiritpedia\.\n\nBefore it goes live, we simply check that the details are genuine and that the listing is really yours\./);
   assert.match(m.text, /There's nothing more you need to do for now\.\n\nWith love,\nThe Spiritpedia team$/);
   assertClean(applicationReceived({}));
 });
 
-test('D4, D8, D11: the reason after "Reason:", plain sign-off', () => {
-  for (const m of [
-    applicationDeclined({ firstName: 'Jane', listingName: 'Jane Doe Healing', reason: 'Not a fit.' }),
-    claimDeclined({ firstName: 'Jane', listingName: 'Hay House', reason: 'Not a fit.' }),
-    reviewRejected({ firstName: 'Sam', title: 'X', creatorName: 'Y', reason: 'Not a fit.' }),
-  ]) {
+test('D4, D8: the reason after "Reason:", "With love"; D11 plain', () => {
+  const declined = applicationDeclined({ firstName: 'Jane', listingName: 'Jane Doe Healing', reason: 'Not a fit.' });
+  const claim = claimDeclined({ firstName: 'Jane', listingName: 'Hay House', reason: 'Not a fit.' });
+  const review = reviewRejected({ firstName: 'Sam', title: 'X', creatorName: 'Y', reason: 'Not a fit.' });
+  for (const m of [declined, claim, review]) {
     assert.match(m.text, /\n\nReason: Not a fit\.\n\n/);
-    assert.match(m.text, /\n\nThe Spiritpedia team$/);
-    assert.doesNotMatch(m.text, /With love/);
+    assert.match(m.text, /\nThe Spiritpedia team$/);
     assertClean(m);
   }
-  assert.equal(applicationDeclined({ reason: 'r' }).subject, 'An update on your Spiritpedia application');
+  assert.match(declined.text, /We'd be glad to take another look\.\n\nWith love,\nThe Spiritpedia team$/);
+  assert.match(claim.text, /^Hi Jane,\n\nWe weren't able to confirm that Hay House is yours to manage/);
+  assert.match(claim.text, /we'll take another look\.\n\nWith love,\nThe Spiritpedia team$/);
+  assert.match(review.text, /We read it carefully, but we aren't able to publish it\./);
+  assert.doesNotMatch(review.text, /With love/);
+  assert.equal(applicationDeclined({ reason: 'r' }).subject, 'About your Spiritpedia listing');
+  assert.equal(claim.subject, 'About your request to manage Hay House');
   assert.equal(reviewRejected({ title: 'X', reason: 'r' }).subject, 'An update on your review of X');
 });
 
 test('D5: received, nothing more to submit', () => {
   const m = claimRequestReceived({ firstName: 'Jane', listingName: 'Hay House' });
   assert.equal(m.subject, "We've received your request to manage Hay House");
-  assert.match(m.text, /You don't need to submit another request\./);
+  assert.match(m.text, /You don't need to send another request\./);
   assertClean(m);
 });
 

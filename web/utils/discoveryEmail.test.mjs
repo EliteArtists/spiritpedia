@@ -50,9 +50,9 @@ test('every link goes to a Spiritpedia page; images may come from elsewhere', ()
 test('the design, in order, with the approved words', () => {
   const { edition, picks } = selectEdition(input());
   const m = renderDiscoveryEdition({ edition, picks, firstName: 'Sarah', links: LINKS });
-  assert.equal(m.subject, 'A little space for discovery ✦');
+  assert.equal(m.subject, 'A little space for discovery');
   assert.match(m.preheader, /^Meet Jeffrey Chand, and a little more (Qigong|Consciousness)\.$/);
-  const order = ['Your discoveries', 'A little space for discovery.', 'Hi Sarah,', 'Meet Jeffrey Chand', 'More of what you love', 'A little closer to home', 'A voice worth discovering', 'Something freely shared', 'No need to explore everything today', 'Your Guiding Star ✦', 'Change what I receive', 'Unsubscribe'];
+  const order = ['Your discoveries', 'A little space for discovery.', 'Hi Sarah,', 'Meet Jeffrey Chand', 'More of what you love', 'A little closer to home', 'A voice worth discovering', 'Something freely shared', 'No need to explore everything today', 'Your Guiding Star', 'Change what I receive', 'Unsubscribe'];
   let at = -1;
   for (const piece of order) {
     const i = m.html.indexOf(piece, at + 1);

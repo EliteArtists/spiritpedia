@@ -266,7 +266,7 @@ function ReviewForm({ contentType, contentSlug, existing, profileName, official,
       {official ? (
         <p className="mt-5 flex items-center gap-2 text-xs text-gray-400">
           Posting as <span className="font-semibold text-white">Spiritpedia</span>
-          <span className={OFFICIAL_PILL}>✦ Official</span>
+          <span className={OFFICIAL_PILL}>OFFICIAL</span>
         </p>
       ) : (
         <label className="mt-5 block">
@@ -376,7 +376,7 @@ function ReviewCard({ review, status }) {
         ) : (
           <span className="font-semibold text-gray-400">{name}</span>
         )}
-        {review.author_official && <span className={`ml-2 ${OFFICIAL_PILL}`}>✦ Official</span>}
+        {review.author_official && <span className={`ml-2 ${OFFICIAL_PILL}`}>OFFICIAL</span>}
         {review.created_at ? ` · ${formatDate(review.created_at)}` : ''}
       </p>
     </li>
@@ -422,7 +422,7 @@ export default function ReviewSection({ contentType, contentSlug }) {
         supabaseAuth.from('user_profiles').select('full_name, linked_healer_slug').eq('id', userId).maybeSingle(),
       ]);
 
-      // Spiritpedia's own account posts as "Spiritpedia ✦ OFFICIAL": the
+      // Spiritpedia's own account posts as "Spiritpedia OFFICIAL": the
       // database decides (reviews_pin_author, migration 0023); this only
       // shapes the form to match.
       let official = false;

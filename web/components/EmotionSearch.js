@@ -252,12 +252,12 @@ function initials(name) {
 }
 
 // Tiny tier glyph shown at the right edge of a healer row. Spiritpedia's own
-// listing has no tier: it wears the Official star.
+// listing has no tier: it wears the gold star logo.
 function tierBadge(tier, official) {
-  if (official) return { symbol: '✦', className: 'text-white' };
+  if (official) return { logo: true };
   if (tier === 'superhero') return { symbol: '★', className: 'text-[#78350f]' };
-  if (tier === 'ascended_master') return { symbol: '✧', className: 'text-[#c9a84c]' };
-  if (tier === 'luminary') return { symbol: '✦', className: 'text-violet-600' };
+  if (tier === 'ascended_master') return { symbol: '✹', className: 'text-[#c9a84c]' };
+  if (tier === 'luminary') return { symbol: '✶', className: 'text-violet-600' };
   if (tier === 'local_hero') return { symbol: '◆', className: 'text-emerald-500' };
   // Unknown or NULL tier — neutral, matching the "Teacher" card badge.
   return { symbol: '●', className: 'text-gray-500' };
@@ -778,7 +778,11 @@ export default function EmotionSearch() {
                           )}
                           <span className="flex-1 text-white text-sm truncate">{h.name}</span>
                           {type && <span className="text-[10px] font-bold uppercase tracking-wider text-gray-500">{type}</span>}
-                          <span className={`text-sm ${badge.className}`}>{badge.symbol}</span>
+                          {badge.logo ? (
+                            <img src="/email/spiritpedia-star.png" alt="Official" className="h-4 w-4 object-contain" />
+                          ) : (
+                            <span className={`text-sm ${badge.className}`}>{badge.symbol}</span>
+                          )}
                         </div>
                       );
                     })}

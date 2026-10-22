@@ -11,7 +11,7 @@
 // learning is replaced by a note, because the Privacy Policy promises that
 // what is learned is never shown to the team.
 
-import { SITE, escapeHtml, greeting } from './emailParts.js';
+import { LOGO_ALT, LOGO_URL, SITE, escapeHtml, greeting } from './emailParts.js';
 import { tierName } from './badges.js';
 import { healerImage, youtubeId } from './discoverySelect.js';
 import {
@@ -202,7 +202,7 @@ export function renderDiscoveryEdition({ edition, picks = [], firstName, links, 
     }
   }
 
-  text.push(`${CLOSING}\n\nYour Guiding Star ✦\nand the Spiritpedia Constellation`);
+  text.push(`${CLOSING}\n\nYour Guiding Star\nand the Spiritpedia Constellation`);
   const footerLinks = [
     [FOOTER.library, links.library],
     links.online ? [FOOTER.online, links.online] : null,
@@ -224,7 +224,7 @@ export function renderDiscoveryEdition({ edition, picks = [], firstName, links, 
 <table role="presentation" width="100%" cellpadding="0" cellspacing="0" bgcolor="${C.page}" style="background:${C.page}"><tr><td align="center" style="padding:24px 12px">
 <table role="presentation" width="600" cellpadding="0" cellspacing="0" bgcolor="${C.card}" style="width:100%;max-width:600px;background:${C.card};border-radius:18px;border-collapse:separate">
 <tr><td class="pad" style="padding:26px 32px;border-bottom:1px solid ${C.line}">
-  <span style="font-family:${SERIF};font-size:30px;color:${C.gold};vertical-align:middle">✦</span>
+  <img src="${LOGO_URL}" width="34" height="34" alt="${LOGO_ALT}" style="display:inline-block;width:34px;height:34px;border:0;vertical-align:middle">
   <span style="font-family:${SERIF};font-size:28px;color:${C.white};vertical-align:middle">&nbsp;Spiritpedia</span>
   <div style="font-family:${FONT};font-size:11px;letter-spacing:2px;text-transform:uppercase;color:${C.gold};margin:4px 0 0 34px">${e(FOOTER.tagline)}</div>
 </td></tr>
@@ -236,7 +236,7 @@ export function renderDiscoveryEdition({ edition, picks = [], firstName, links, 
 ${rows.join('\n')}
 <tr><td class="pad" style="padding:36px 36px 30px">
   ${para(CLOSING, C.body, 17)}
-  <div style="font-family:${SERIF};font-size:20px;color:${C.gold};margin:14px 0 6px">Your Guiding Star ✦</div>
+  <div style="font-family:${SERIF};font-size:20px;color:${C.gold};margin:14px 0 6px">Your Guiding Star</div>
   ${para('and the Spiritpedia Constellation', C.body, 16)}
 </td></tr>
 <tr><td align="center" style="padding:22px 32px 28px;border-top:1px solid ${C.line}">

@@ -120,7 +120,7 @@ export default function HealerCard({ healer, portrait, heightClass = 'h-72', rot
           />
         )}
         {/* Top left (the heart owns top right): the tier with ✓ Verified, or
-            ✦ Official, each explained by the star (utils/badges.js). Ascended
+            OFFICIAL, each explained by the star (utils/badges.js). Ascended
             Masters wear their lifespan instead; no pill when no years are
             recorded. */}
         <span className="absolute top-3 left-3 right-14 z-10 flex flex-wrap items-center gap-1.5">

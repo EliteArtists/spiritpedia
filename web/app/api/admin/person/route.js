@@ -69,6 +69,10 @@ export async function GET(request) {
 // `verification_status` is the first. The field-protection trigger pins that
 // column against every ordinary caller, which is what stops practitioners
 // approving themselves; the service role is the one path that may set it.
+// Here it may only go back to 'pending' (back into the Inbox). Approving and
+// declining belong to /api/admin/practitioner, which makes the listing and
+// sends D3 or D4: setting 'approved' here once left an account approved with
+// no listing and no email (22 Oct 2026).
 //
 // `profile` is the second — the ordinary fields an admin may correct on
 // somebody's behalf. It is an ALLOWLIST, not an exclusion list, because the two
@@ -82,7 +86,7 @@ export async function GET(request) {
 //
 // Anything not named here is ignored rather than rejected, so a client sending
 // a whole row back cannot smuggle a column in.
-const STATUSES = ['pending', 'approved', 'rejected'];
+const STATUSES = ['pending'];
 const USER_TYPES = ['practitioner', 'explorer'];
 
 const PROFILE_COLUMNS = new Set([
@@ -119,7 +123,10 @@ export async function PATCH(request) {
 
   if (status !== undefined) {
     if (!STATUSES.includes(status)) {
-      return NextResponse.json({ error: 'invalid_status' }, { status: 400 });
+      return NextResponse.json(
+        { error: 'use_the_inbox', message: 'Approve or decline from the Inbox, so the listing is made and the email goes.' },
+        { status: 400 }
+      );
     }
     values.verification_status = status;
   }

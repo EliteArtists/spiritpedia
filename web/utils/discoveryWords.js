@@ -5,7 +5,7 @@
 //
 // No he/she anywhere: a name doesn't tell us someone's pronouns.
 
-export const SUBJECT_LINE = 'A little space for discovery ✦';
+export const SUBJECT_LINE = 'A little space for discovery';
 export const HEADLINE = 'A little space for discovery.';
 export const KICKER = 'Your discoveries · a personal edition';
 export const CLOSING = "No need to explore everything today. Your Library is there for the discoveries you'd like to keep.";

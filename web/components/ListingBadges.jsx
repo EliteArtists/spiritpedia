@@ -4,7 +4,7 @@ import { useEffect, useRef, useState } from 'react';
 import { listingBadges } from '../utils/badges.js';
 
 // A listing's badges (utils/badges.js): its tier, its type, ✓ Verified or
-// ✦ Official. Each with a tip from the star opens on hover, or on a tap,
+// OFFICIAL. Each with a tip from the star opens on hover, or on a tap,
 // and a tap never opens the card underneath.
 //
 // `size` 'card' for the small pills on cards, 'profile' for a listing's page.

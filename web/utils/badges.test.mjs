@@ -66,7 +66,7 @@ test('a publisher: its tier and Verified, no type (the card says what it is)', (
 
 test('Spiritpedia: Official only, no tier, whatever is stored', () => {
   const badges = listingBadges({ name: 'Spiritpedia', tier: 'local_hero', entity_type: 'channel', verified: true, official: true });
-  assert.deepEqual(badges.map((b) => b.label), ['✦ Official']);
+  assert.deepEqual(badges.map((b) => b.label), ['OFFICIAL']);
   assert.equal(badges[0].tip, OFFICIAL_TIP);
 });
 

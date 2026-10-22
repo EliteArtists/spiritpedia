@@ -27,7 +27,7 @@ export function explorerWelcome({ firstName, platform }) {
           'Your Library is where everything you save is waiting for you. You can open it using the floating My Library button on the website.',
         ];
   return renderEmail({
-    subject: 'Welcome to Spiritpedia ✦',
+    subject: 'Welcome to Spiritpedia',
     blocks: [
       greeting(firstName),
       ...body,
@@ -47,7 +47,7 @@ export function practitionerWelcome({ firstName }) {
       greeting(name),
       "Welcome to Spiritpedia. We're glad you're here.",
       "You're joining a place where people can discover spiritual teachings, explore different approaches and find practitioners whose work speaks to them.",
-      'Your account is where you can begin sharing your work and manage your presence on Spiritpedia. Any listing you submit will be reviewed before it goes live.',
+      "Your account is where you can begin sharing your work and manage your presence on Spiritpedia. Before a listing goes live, we just check a few details to make sure it's genuinely yours.",
       "If you have a question along the way, simply reply. We're here to help.",
       { button: 'Visit your account', url: `${SITE}/account` },
     ],
@@ -63,8 +63,8 @@ export function applicationApproved({ firstName, listingName, listingUrl }) {
     blocks: [
       greeting(firstName),
       listingName
-        ? `Your application for ${listingName} has been approved, and your listing is now live on Spiritpedia.`
-        : 'Your application has been approved, and your listing is now live on Spiritpedia.',
+        ? `Thank you for your patience. ${listingName} is now live on Spiritpedia.`
+        : 'Thank you for your patience. Your listing is now live on Spiritpedia.',
       'People can now discover your work and explore the information you\'ve shared.',
       { button: 'View your listing', url: listingUrl },
       "You can manage your listing through your account. We're delighted to welcome your work to Spiritpedia.",
@@ -96,7 +96,7 @@ export function reviewReceived({ firstName, title, creatorName }) {
     blocks: [
       greeting(firstName),
       `Thank you for sharing your thoughts on ${title}${by(creatorName)}.`,
-      "Your review is now with the Spiritpedia team for assessment. I'll let you know once they've reviewed it.",
+      "The Spiritpedia team will take a quick look before it goes live. I'll let you know as soon as it's up.",
       "Your experience could help another explorer decide what they'd like to discover next.",
     ],
     signOff: 'star',
@@ -272,14 +272,13 @@ export function outreachEmail(n, { firstName, profileUrl, claimUrl }) {
 /* ── D2. APPLICATION RECEIVED ──────────────────────────────────────────── */
 
 export function applicationReceived({ firstName, listingName }) {
+  const name = listingName || 'your listing';
   return renderEmail({
-    subject: listingName ? `We've received your application for ${listingName}` : "We've received your application",
+    subject: `Thank you for sharing ${name} with Spiritpedia`,
     blocks: [
       greeting(firstName),
-      listingName
-        ? `Thank you for submitting ${listingName} to Spiritpedia.`
-        : 'Thank you for submitting your application to Spiritpedia.',
-      "Your application is now with our team for review. We'll email you when we've made a decision, or if we need anything else from you.",
+      `Thank you for sharing ${name} with Spiritpedia.`,
+      "Before it goes live, we simply check that the details are genuine and that the listing is really yours. It's a quick check, and we'll be in touch as soon as it's done, or if we need anything from you.",
       "There's nothing more you need to do for now.",
     ],
   });
@@ -290,17 +289,16 @@ export function applicationReceived({ firstName, listingName }) {
 // reason is what the admin wrote for the applicant, never a private note.
 export function applicationDeclined({ firstName, listingName, reason }) {
   return renderEmail({
-    subject: 'An update on your Spiritpedia application',
+    subject: 'About your Spiritpedia listing',
     blocks: [
       greeting(firstName),
       listingName
-        ? `Thank you for your application for ${listingName}.`
-        : 'Thank you for your application.',
-      "After reviewing it, we're unable to approve the listing at this time.",
+        ? `Thank you for sharing ${listingName} with us.`
+        : 'Thank you for sharing your listing with us.',
+      "We weren't able to confirm the details we needed, so we can't publish the listing just yet.",
       `Reason: ${reason}`,
-      "If you think we've misunderstood something, or you'd like to clarify the information you submitted, please reply to this email.",
+      "If you can help us with this, simply reply. We'd be glad to take another look.",
     ],
-    signOff: 'plain',
   });
 }
 
@@ -313,8 +311,8 @@ export function claimRequestReceived({ firstName, listingName }) {
     blocks: [
       greeting(firstName),
       `Thank you for asking to manage ${name} on Spiritpedia.`,
-      "We've received your request and will check that you're authorised to manage the listing before giving you access. We may contact you or the email address published on the listing to confirm ownership.",
-      "We'll email you once your request has been reviewed. You don't need to submit another request.",
+      'Before we hand over access, we just check that the listing is really yours. It protects you as much as anyone. We may contact you, or the email address shown on the listing, to confirm.',
+      "We'll be in touch as soon as it's done. You don't need to send another request.",
     ],
   });
 }
@@ -343,15 +341,13 @@ export function ownershipCheck({ claimantEmail, listingName, listingUrl }) {
 export function claimDeclined({ firstName, listingName, reason }) {
   const name = listingName || 'the listing';
   return renderEmail({
-    subject: `An update on your request to manage ${name}`,
+    subject: `About your request to manage ${name}`,
     blocks: [
       greeting(firstName),
-      `We've reviewed your request to manage ${name} on Spiritpedia and are unable to approve it at this time.`,
+      `We weren't able to confirm that ${name} is yours to manage, so we haven't been able to give you access just yet.`,
       `Reason: ${reason}`,
-      'Access to the listing has not been granted through this request.',
-      "If you can provide further information confirming that you're authorised to manage it, or you think we've misunderstood your request, please reply.",
+      "If you can help us confirm it, simply reply and we'll take another look.",
     ],
-    signOff: 'plain',
   });
 }
 
@@ -363,9 +359,9 @@ export function reviewRejected({ firstName, title, creatorName, reason }) {
     blocks: [
       greeting(firstName),
       `Thank you for taking the time to review ${title}${by(creatorName)}.`,
-      "After assessing your submission, we're unable to publish your review.",
+      "We read it carefully, but we aren't able to publish it.",
       `Reason: ${reason}`,
-      "If you think we've misunderstood your review, please reply to this email.",
+      "If you think we've misunderstood your review, simply reply.",
     ],
     signOff: 'plain',
   });

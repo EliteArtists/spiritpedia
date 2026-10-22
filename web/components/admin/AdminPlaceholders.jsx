@@ -43,7 +43,7 @@ const disabledField =
 export function MailshotsTab() {
   return (
     <Placeholder
-      icon="✦"
+      icon="✉"
       title="Mailshot composer — coming soon"
       body="Send targeted emails to healers and practitioners. £15 per mailshot."
     >

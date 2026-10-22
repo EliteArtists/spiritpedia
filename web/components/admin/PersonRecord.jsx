@@ -13,7 +13,6 @@ import { Placeholder } from './AdminPlaceholders.jsx';
 // No Activity tab, by design (migration 0021): admin sees totals in
 // Admin → Activity, never one person's browsing.
 const TABS = ['Profile', 'Content', 'Discoveries', 'Admin Notes'];
-const STATUSES = ['pending', 'approved', 'rejected'];
 
 const TIER_WORDS = {
   superhero: 'Superhero',
@@ -491,7 +490,6 @@ export default function PersonRecord({ personId, onBack, backLabel, onChanged })
   const router = useRouter();
   const [data, setData] = useState(null);
   const [tab, setTab] = useState('Profile');
-  const [status, setStatus] = useState('');
   const [savingStatus, setSavingStatus] = useState(false);
   const [toast, setToast] = useState(null);
 
@@ -506,7 +504,6 @@ export default function PersonRecord({ personId, onBack, backLabel, onChanged })
     const res = await fetch(`/api/admin/person?id=${encodeURIComponent(personId)}`, { cache: 'no-store' });
     const json = await res.json();
     setData(json);
-    setStatus(json?.profile?.verification_status || 'pending');
   }, [personId]);
 
   useEffect(() => {
@@ -516,7 +513,6 @@ export default function PersonRecord({ personId, onBack, backLabel, onChanged })
       const json = await res.json();
       if (cancelled) return;
       setData(json);
-      setStatus(json?.profile?.verification_status || 'pending');
     })();
     return () => {
       cancelled = true;
@@ -544,19 +540,22 @@ export default function PersonRecord({ personId, onBack, backLabel, onChanged })
   const allImages = Array.isArray(p.image_urls) ? p.image_urls.filter(Boolean) : [];
   const images = practitioner ? allImages : allImages.slice(0, 1);
 
-  const saveStatus = async () => {
+  // Back to the Inbox is the only status change made here. Approving or
+  // declining happens in the Inbox, which makes the listing and sends D3 or
+  // D4; setting the word "approved" here did neither (22 Oct 2026).
+  const sendBackToQueue = async () => {
     setSavingStatus(true);
     setToast(null);
     try {
       const res = await fetch('/api/admin/person', {
         method: 'PATCH',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ id: personId, verification_status: status }),
+        body: JSON.stringify({ id: personId, verification_status: 'pending' }),
       });
       const json = await res.json();
       if (!res.ok || json.error) setToast({ type: 'error', message: json.message || json.error });
       else {
-        setToast({ type: 'success', message: `Status set to ${status}.` });
+        setToast({ type: 'success', message: 'Back in the Inbox as pending. Approve or decline it there.' });
         await load();
         onChanged?.();
       }
@@ -692,32 +691,19 @@ export default function PersonRecord({ personId, onBack, backLabel, onChanged })
               dropdown would invite setting a state that means nothing, on a row
               that may still carry a stale 'rejected' from a review cycle that
               ended when they were reverted. */}
-          {hasVisibleStatus(p) && (
-            <>
-              <label className="text-[10px] font-bold uppercase tracking-wider text-slate-500">
-                Status
-                <select
-                  value={status}
-                  onChange={(e) => setStatus(e.target.value)}
-                  className="ml-2 rounded-lg border border-slate-700 bg-[#0a0f1d] px-3 py-1.5 text-sm font-normal normal-case tracking-normal text-white"
-                >
-                  {STATUSES.map((s) => (
-                    <option key={s} value={s}>
-                      {s}
-                    </option>
-                  ))}
-                </select>
-              </label>
+          {hasVisibleStatus(p) &&
+            (p.verification_status === 'pending' ? (
+              <span className="text-xs text-slate-500">Approve or decline it in the Inbox.</span>
+            ) : (
               <button
                 type="button"
-                onClick={saveStatus}
-                disabled={savingStatus || status === p.verification_status}
+                onClick={sendBackToQueue}
+                disabled={savingStatus}
                 className="rounded-full bg-[#7c3aed] px-4 py-2 text-xs font-bold text-white transition-colors hover:bg-[#6d28d9] disabled:cursor-not-allowed disabled:opacity-40"
               >
-                {savingStatus ? 'Saving…' : 'Save status'}
+                {savingStatus ? 'Saving…' : 'Send back to the Inbox'}
               </button>
-            </>
-          )}
+            ))}
           <button
             type="button"
             title="Messaging coming soon"

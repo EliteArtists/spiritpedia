@@ -25,7 +25,7 @@ function ended() {
   return new Response(
     `<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex"><title>Spiritpedia</title></head>
 <body style="margin:0;background:#0a0e18;color:#f8fafc;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;display:flex;min-height:100vh;align-items:center;justify-content:center;text-align:center;padding:24px">
-<div><div style="font-family:Georgia,serif;font-size:28px"><span style="color:#e6b450">✦</span> Spiritpedia</div>
+<div><div style="font-family:Georgia,serif;font-size:28px"><img src="/email/spiritpedia-star.png" width="34" height="34" alt="Spiritpedia" style="vertical-align:middle;border:0"> Spiritpedia</div>
 <p style="color:#cbd5e1;font-size:16px;line-height:1.6;margin:20px 0">This edition has ended. Your Library keeps everything you saved.</p>
 <a href="${escapeHtml(`${SITE}/library`)}" style="display:inline-block;background:#7c3aed;color:#fff;text-decoration:none;padding:12px 24px;border-radius:999px">Visit your Library</a></div></body></html>`,
     { status: 404, headers: HEADERS }

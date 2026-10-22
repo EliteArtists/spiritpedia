@@ -35,7 +35,7 @@ export default function PendingPage() {
   return (
     <AuthShell>
       <h1 className="mt-8 text-2xl font-bold leading-snug">
-        Thank you for joining Spiritpedia <span aria-hidden="true">✦</span>
+        Thank you for joining Spiritpedia
       </h1>
 
       <p className="mt-4 text-sm leading-relaxed text-gray-400">

@@ -123,7 +123,7 @@ function PhoneIcon() {
 }
 
 // Badges (utils/badges.js, migration 0023): tier, type, ✓ Verified or
-// ✦ Official, each explained by the star. Ascended Masters are the exception:
+// OFFICIAL, each explained by the star. Ascended Masters are the exception:
 // their badge IS the lifespan ("1926 — 2017" / "b. 1926"), omitted entirely
 // when no years are recorded.
 function ProfileBadges({ healer }) {

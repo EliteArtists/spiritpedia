@@ -29,7 +29,7 @@ export const CHANNELS = { general: 'general' };
 // opens the app. (It replaced "Welcome to Spiritpedia ✨ / I'm your guiding
 // star…" in build 13: the intro has already said who the star is.)
 export const WELCOME = {
-  body: '✦ Testing, testing… just checking my light reaches you. Nothing to do. I’ll only shine when it matters.',
+  body: 'Testing, testing… just checking my light reaches you. Nothing to do. I’ll only shine when it matters.',
 };
 
 // The service account from env, or null if any part is missing. Vercel stores

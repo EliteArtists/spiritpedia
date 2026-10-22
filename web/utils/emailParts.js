@@ -7,6 +7,12 @@
 // (utils/seo.js); the bare domain only redirects to it.
 export const SITE = 'https://www.spiritpedia.co';
 
+// The gold star logo, wherever an email can show a picture: a small copy of
+// the site's header symbol (public/email/spiritpedia-star.png, 144 px for
+// sharp phones), served from www. Never a text star character in its place.
+export const LOGO_URL = `${SITE}/email/spiritpedia-star.png`;
+export const LOGO_ALT = 'Spiritpedia';
+
 // "Hi Jane," with a first name, "Hello," without one. Never "Hi there", never
 // an empty placeholder, and a name is never required to send.
 export function greeting(firstName) {
@@ -20,8 +26,8 @@ export function greeting(firstName) {
 //   plain — a decision or a notice, without "With love"
 export const SIGN_OFFS = {
   team: ['With love,', 'The Spiritpedia team'],
-  star: ['Your Guiding Star ✦', 'and the Spiritpedia Constellation'],
-  starFarewell: ['See you among the stars,', '', 'Your Guiding Star ✦', 'and the Spiritpedia Constellation'],
+  star: ['Your Guiding Star', 'and the Spiritpedia Constellation'],
+  starFarewell: ['See you among the stars,', '', 'Your Guiding Star', 'and the Spiritpedia Constellation'],
   plain: ['The Spiritpedia team'],
 };
 

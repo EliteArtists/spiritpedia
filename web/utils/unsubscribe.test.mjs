@@ -32,7 +32,7 @@ test('B2: the approved wording, bold headings, the button, and the unsubscribe l
   assert.match(m.text, /Superheroes\nA worldwide reach/);
   assert.match(m.text, /Local Heroes\nPractitioners available in your area\./);
   assert.match(m.text, /Explore Spiritpedia: https:\/\/www\.spiritpedia\.co\//);
-  assert.match(m.text, /See you among the stars,\n\nYour Guiding Star ✦\nand the Spiritpedia Constellation\n\n—\nYou're receiving this because you have a Spiritpedia account\. Unsubscribe from these emails: https:\/\/www\.spiritpedia\.co\/unsubscribe\?token=/);
+  assert.match(m.text, /See you among the stars,\n\nYour Guiding Star\nand the Spiritpedia Constellation\n\n—\nYou're receiving this because you have a Spiritpedia account\. Unsubscribe from these emails: https:\/\/www\.spiritpedia\.co\/unsubscribe\?token=/);
   assert.match(m.html, /<strong>Luminaries<\/strong><br>/);
   assert.match(m.html, /font-size:12px[^>]*>You're|font-size:12px[^>]*>You&#39;re/);
   assert.match(explorerDay4({ unsubscribeUrl: 'u' }).text, /^Hello,/);

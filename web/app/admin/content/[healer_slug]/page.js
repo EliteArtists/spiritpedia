@@ -1351,7 +1351,7 @@ export default function AdminHealerRecordPage({ params }) {
                 </span>
                 {healer.official && (
                   <span className="mt-1.5 block text-[11px] leading-snug text-slate-500">
-                    Spiritpedia’s own listing shows ✦ OFFICIAL and no tier.
+                    Spiritpedia’s own listing shows OFFICIAL and no tier.
                   </span>
                 )}
               </LabelledField>
@@ -1413,11 +1413,11 @@ export default function AdminHealerRecordPage({ params }) {
               </label>
 
               {/* Automatic, never ticked (migration 0023): ✓ Verified once an
-                  approved account is linked; ✦ OFFICIAL for love@spiritpedia.co's. */}
+                  approved account is linked; OFFICIAL for love@spiritpedia.co's. */}
               <p className="self-end pb-2 text-[11px] leading-snug text-slate-500">
                 <span className={labelClass}>Badges</span>
                 <br />
-                {healer.official ? '✦ Official' : healer.verified ? '✓ Verified' : 'Not claimed'}
+                {healer.official ? 'OFFICIAL' : healer.verified ? '✓ Verified' : 'Not claimed'}
                 <span className="text-slate-600"> · set automatically</span>
               </p>
 
