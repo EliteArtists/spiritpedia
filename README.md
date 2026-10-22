@@ -47,13 +47,13 @@ how-to is `docs/admin-guide.md`; the personalisation rules are
 | | State on 22 October 2026 |
 | :--- | :--- |
 | **Website** | Live at **https://www.spiritpedia.co** (Next.js on Vercel). Every push that changes `web/` deploys to production |
-| **App** | Flutter, iPhone and iPad. **1.0.0 (21)** is built (`app/build/ios/ipa/Spiritpedia.ipa` and `app/build/ios/archive/Runner.xcarchive`) and waiting to be uploaded; build 19's are kept in `app/build/build19/` until it is uploaded or skipped. **Build 16 is the last one uploaded to TestFlight.** Changes made since build 21 ship in the next build (§10.1). Not yet on the App Store |
+| **App** | Flutter, iPhone and iPad. **1.0.0 (22)** is built (`app/build/ios/ipa/Spiritpedia.ipa` and `app/build/ios/archive/Runner.xcarchive`, 22 Oct 2026) and waiting to be uploaded (§12.6). Builds 17–21 were never uploaded; 22 replaces them. **Build 16 is the last one uploaded to TestFlight.** Not yet on the App Store |
 | **Database** | Supabase. Two projects: **live** (`uzmvcgew…`) and **dev** (`khtpbnof…`). Migrations `0000`–`0026` are on both |
 | **Push** | Firebase Cloud Messaging only, with an APNs key. The Firebase projects must move to the love@ Google account before mid-November 2026 (§16) |
 | **Emails** | The approved copy of 21–22 Oct 2026 is live (§9.7). The outreach journey is eight emails, redirected to a test inbox by `JOURNEY_TEST_EMAIL` until the solicitor has checked cold email; no journey is running. Day 4 is live. Personal discovery editions are built but **off** until `DISCOVERY_EDITIONS=on` is set on Vercel (§9.7a) |
 | **Repository** | `https://github.com/EliteArtists/spiritpedia`, branch `main` only. No staging environment, no feature flags |
 
-**Before submitting build 21 in App Store Connect:**
+**Before submitting build 22 in App Store Connect:**
 - Update the App Privacy label (§12.6): add **Device ID** and **Sensitive Info**,
   and **Product Personalization** as a purpose on Product Interaction and
   Search History.
@@ -224,13 +224,13 @@ spiritpedia/
 │   └── admin-guide.md      how to run the admin (badges, approving, owners' content)
 ├── app/                    the Flutter app — see app/README.md
 │   ├── lib/                main.dart, app.dart, router.dart, core/, data/, theme/, shared/, features/
-│   ├── test/               305 tests (fakes in test/support/)
+│   ├── test/               307 tests (fakes in test/support/)
 │   ├── integration_test/   search_typing_test.dart (tours go here temporarily, never committed)
 │   ├── assets/safety/      symlink → web/shared/emotion-safety.json
 │   ├── config/             dev.json (ignored), dev.example.json, prod.json
 │   ├── docs/               personalisation.md, website-followups.md
 │   ├── ios/  android/
-│   └── pubspec.yaml        version 1.0.0+21
+│   └── pubspec.yaml        version 1.0.0+22
 ├── web/                    the Next.js site — run web commands from here
 │   ├── app/                pages, /api routes, sitemap, robots
 │   ├── components/         UI; components/admin/ for the dashboard
@@ -845,7 +845,7 @@ dashboard; live's Change Email template includes `{{ .Token }}`).
   one-click header (`/api/email/unsubscribe`); editions also carry "Change what
   I receive" (`/email-preferences?token=`). The **Discovery emails** switch on
   the account page (website `components/EmailPreferencesSwitch.jsx`; app
-  `DiscoveryEmailsCard`, next build) does the same through
+  `DiscoveryEmailsCard`, from build 22) does the same through
   `/api/account/email-preferences`. It stops Day 4 and editions only; account
   and review emails always go.
 - **Resend suppression:** `isSuppressed()` asks Resend before each journey
@@ -949,7 +949,7 @@ README-only pushes show as **Canceled** in Vercel — the rule working. In doubt
 `app/`. The detail (structure, every rule, migrations as the app sees them,
 admin Reports) is in **`app/README.md`**; this section is the overview.
 
-### 10.1 Builds 1–21
+### 10.1 Builds 1–22
 
 Version `1.0.0+N`. Phases 0–3a (9–10 Oct 2026, as `0.1.0+1`) came first:
 skeleton and intro, one shared crisis phrase list, Explore, emotional search,
@@ -978,7 +978,7 @@ detail pages, email-code sign-in with Library sync and account deletion, push.
 | 19 | 17 Oct | **The iPad**: the same app laid out for the larger screen, both orientations, Split View |
 | 20 | 18 Oct | *Built, never uploaded (replaced by 21).* Badges (tiers by type, ✓ Verified, OFFICIAL, every badge explained by the star); Official reviews; Explore More as real shelves; the iPad two-stars fix |
 | 21 | 18 Oct | Build 20, plus: the tier badge top left on cards (type bottom right); the top two tiers' tips reworded |
-| next (22) | — | *In the code, not built yet* (bump to 22 first): the star's first callout adds "Press and hold to open your Library"; the explorer welcome sent when the account is created; "review received" only for a new review; the **Discovery emails** switch on My Account; OFFICIAL with no ✦ (badge, tip, search) |
+| **22** | 22 Oct | **Current build, waiting to be uploaded.** Everything since 21: the star's first callout "Tap me anytime to come home. Press and hold to open your Library." (checked on iPhone SE and on iPad in portrait and landscape); the explorer welcome sent from the website when the account is created (not on "I'm exploring"); "review received" only for a new review, never an edit; the **Discovery emails** switch on My Account (explorers who never applied); OFFICIAL with no ✦ (badge, tip, search line). 307 tests |
 
 ### 10.2 Structure and startup
 
@@ -1126,13 +1126,13 @@ rank at level 1 (§10.6).
   already on a phone move into the account at sign-in.
 - **"How will you use Spiritpedia?"** once, for a new account. The explorer
   welcome (B1, app version) is sent when the account is created, not by this
-  question (next build; build 21 sends it on "I'm exploring"). "I share my work" records the
+  question (from build 22; earlier builds send it on "I'm exploring"). "I share my work" records the
   choice (`/api/pending-user-type`) and opens
   `spiritpedia.co/auth/signup?as=practitioner`, where the one application form
   lives. Listings are created and approved on the website (§9.5).
 - **My Account:** email (change email uses two codes), account type, Your name
   (`user_profiles.full_name`), Tailor Spiritpedia, Notifications, Blocked
-  reviewers, **Discovery emails** (next build; explorers who never applied:
+  reviewers, **Discovery emails** (from build 22; explorers who never applied:
   Day 4 and discovery editions on or off, through
   `/api/account/email-preferences`), Sign out (clears the phone's saves and
   tailoring; the account keeps them), Delete account (`/api/account/delete`,
@@ -1253,7 +1253,7 @@ their own with no hang.
 cd web
 npm install
 npm run dev            # http://localhost:3000, against DEV (.env.development.local)
-npm test               # node --test: 57 tests in utils/*.test.mjs
+npm test               # node --test: 140 tests in utils/*.test.mjs
 npx eslint app components utils
 npm run build          # what Vercel runs
 ```
@@ -1271,7 +1271,7 @@ flutter pub get
 flutter run --dart-define-from-file=config/dev.json    # dev database + local website (npm run dev)
 flutter run --dart-define-from-file=config/prod.json   # live data
 flutter analyze        # must say "No issues found"
-flutter test           # 292 tests, all passing at build 19
+flutter test           # 307 tests, all passing at build 22 (one dev-only test skips)
 ```
 
 In this environment Flutter is run through a clean login shell:
@@ -1288,7 +1288,15 @@ A temporary integration test drives the real app (dev config) and prints
   (`/Applications/Xcode.app/Contents/Applications/DeviceHub.app`).
   `simctl` can't rotate a device, and an app's own request to rotate is
   ignored on an iPad that supports Split View — so landscape needs DeviceHub
-  or a real iPad.
+  or a real iPad. With the simulator booted, open DeviceHub and rotate from a
+  script: `osascript -e 'tell application "System Events" to tell process
+  "DeviceHub" to click menu item "Rotate Left" of menu 1 of menu bar item
+  "Controls" of menu bar 1'` ("Rotate Right" to come back), then quit DeviceHub.
+- **The smallest iPhone** this Mac can run is the iPhone SE (3rd generation)
+  on iOS 26.5 (375 × 667 pt). Create it for the check
+  (`xcrun simctl create "iPhone SE (3rd generation)"
+  com.apple.CoreSimulator.SimDeviceType.iPhone-SE-3rd-generation
+  com.apple.CoreSimulator.SimRuntime.iOS-26-5`) and delete it afterwards.
 - If the intro plays, that's the star's appearance for the visit: test the
   conductor's trays with the intro off.
 
@@ -1386,7 +1394,12 @@ The development Mac has run out of both.
   `~/.gradle` (5 GB, Android only). Clearing them took it to 27 GB free.
   Check `df -h /System/Volumes/Data` before a release build (it needs a few GB).
 - `~/Library/Developer/Xcode/Archives` holds archives named "App …" from
-  February–May 2026: **another project's, not Spiritpedia's — don't delete.**
+  February–September 2026 (`com.sundaysoullounge.booking`,
+  `com.eliteartists.mobileapp`): **other projects', not Spiritpedia's — don't
+  delete.** Of Spiritpedia's (`Runner`), only build 16's is kept (the last on
+  TestFlight, for its crash reports); builds 1–21's were deleted on 22 Oct
+  2026 (about 3 GB). Build 22's archive joins the Organizer when it is opened
+  to upload. Keep only the archive of the newest uploaded build.
 
 ---
 
@@ -1462,9 +1475,7 @@ browser walk-throughs had typed made-up addresses into the sign-in form.
 
 ### 16.1 Before the App Store launch
 
-1. **Upload build 21** (or build 22 with the changes waiting in the code,
-   §10.1) with the privacy label and iPad screenshots (§12.6), and check
-   landscape on a real iPad or in DeviceHub. Then delete `app/build/build19/`.
+1. **Upload build 22** with the privacy label and iPad screenshots (§12.6).
 2. **The Firebase move — deadline mid-November 2026.** Both Firebase projects
    (dev, and live `spiritpedia-d190c`) belong to the Elite Artists Google
    account, which will be archived. The first attempt was blocked by the Google

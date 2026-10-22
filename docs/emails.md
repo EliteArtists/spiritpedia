@@ -59,7 +59,7 @@ unsubscribing (mail scanners open links); mail clients' own button POSTs to
 `/api/email/unsubscribe`. It stops Day 4 and discovery emails only; account and
 review emails still go. "Change what I receive" opens `/email-preferences`,
 and the account page has a **Discovery emails** switch for explorers who never
-applied (website now; app in the next build), both turning them on or off.
+applied (website, and the app from build 22), both turning them on or off.
 
 ## Account and review emails
 

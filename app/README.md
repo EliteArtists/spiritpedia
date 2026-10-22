@@ -145,7 +145,7 @@ read-only checks only.
 
 ```bash
 flutter analyze        # must say "No issues found"
-flutter test           # 292 tests at build 19, all passing
+flutter test           # 307 tests at build 22, all passing
 ```
 
 Screenshots for review come from a temporary integration test (a "tour") that
@@ -176,7 +176,8 @@ the root README, "Test accounts must never cause an email".
 **Build numbers so far:** 1–9 and 11–19 are real builds (what each added:
 root README §10.1). **Build 10 was an accidental duplicate of build 9**,
 uploaded from Xcode, so the numbering jumped from 9 to 11. Build 16 is the
-last uploaded to TestFlight; 19 is built. The next build is **20**.
+last uploaded to TestFlight; 17–21 were built and never uploaded; **22** is
+built and waiting to be uploaded. The next build is **23**.
 
 The Mac has run out of disk and memory during builds: one simulator at a
 time, the Xcode app closed, never the test suite during a tour, and check free
