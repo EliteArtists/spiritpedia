@@ -76,7 +76,7 @@ class CardHeart extends ConsumerWidget {
   }
 }
 
-/// Portrait card: photo; the tier (with ✓ Verified, or ✦ Official) top left,
+/// Portrait card: photo; the tier (with ✓ Verified, or Official) top left,
 /// the heart top right; the name, and a channel's type bottom right. An
 /// Ascended Master's name stands alone, as on the website's HealerCard.
 class HealerCard extends StatelessWidget {

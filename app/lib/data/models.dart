@@ -119,7 +119,7 @@ class Healer {
   final int? placeId;
 
   /// Spiritpedia's own profile (healers.official, set automatically since
-  /// migration 0023): ✦ OFFICIAL and no tier, first among the channels.
+  /// migration 0023): OFFICIAL and no tier, first among the channels.
   final bool official;
 
   /// ✓ Verified: the owner has confirmed it is theirs (healers.verified,

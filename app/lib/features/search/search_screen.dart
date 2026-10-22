@@ -988,7 +988,7 @@ class ResultTile extends ConsumerWidget {
         h.name,
         // What it is, and its tier by the right name (data/badges.dart).
         h.official
-            ? '✦ Official'
+            ? 'Official'
             : [
                 h.isPlatform ? h.platformLabel : 'Teacher',
                 ?tierName(h.tier, h.entityType),

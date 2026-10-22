@@ -263,7 +263,7 @@ class ReviewCard extends ConsumerWidget {
                       )
                     : name,
               ),
-              // Spiritpedia's own reviews wear ✦ OFFICIAL, so they are never
+              // Spiritpedia's own reviews wear OFFICIAL, so they are never
               // taken for an ordinary reader's.
               if (review.authorOfficial) ...[
                 const SizedBox(width: 8),
@@ -410,7 +410,7 @@ class ReviewForm extends ConsumerStatefulWidget {
   final String? profileName;
 
   /// Spiritpedia's own account: no name to type, it posts as Spiritpedia
-  /// ✦ OFFICIAL.
+  /// OFFICIAL.
   final bool official;
 
   @override

@@ -117,7 +117,7 @@ class TierBadge extends StatelessWidget {
 
 /// A listing's badges (data/badges.dart): its tier — named for people or for
 /// platforms — then, for a channel, app or organisation, its type; then
-/// ✓ Verified. Spiritpedia's own wears ✦ OFFICIAL alone. Each one is a
+/// ✓ Verified. Spiritpedia's own wears OFFICIAL alone. Each one is a
 /// button: the star explains it, and the card underneath does not open.
 class ListingBadgeRow extends ConsumerWidget {
   const ListingBadgeRow({
@@ -220,7 +220,7 @@ class _TappableBadge extends StatelessWidget {
     if (onTap == null) return drawn;
     return Semantics(
       button: true,
-      label: '${badge.label.replaceAll(RegExp('[✦✓] '), '')}: what this means',
+      label: '${badge.label.replaceAll(RegExp('✓ '), '')}: what this means',
       excludeSemantics: true,
       child: GestureDetector(
         behavior: HitTestBehavior.opaque,
@@ -246,7 +246,7 @@ class _Pill extends StatelessWidget {
       text = Colors.white,
       border = null;
   const _Pill.official()
-    : label = '✦ Official',
+    : label = 'Official',
       background = Colors.white,
       text = const Color(0xFF4C1D95),
       border = null;
@@ -259,7 +259,7 @@ class _Pill extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Semantics(
-      label: label.replaceAll(RegExp('[✦✓] '), ''),
+      label: label.replaceAll(RegExp('✓ '), ''),
       excludeSemantics: true,
       child: DecoratedBox(
         decoration: BoxDecoration(

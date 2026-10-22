@@ -98,7 +98,7 @@ List<ListingBadge> listingBadges({
 }) {
   if (official) {
     return const [
-      ListingBadge(BadgeKind.official, '✦ Official', tip: officialTip),
+      ListingBadge(BadgeKind.official, 'Official', tip: officialTip),
     ];
   }
   final named = tier == 'ascended_master' ? null : tierName(tier, entityType);

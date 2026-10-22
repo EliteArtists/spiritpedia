@@ -195,7 +195,7 @@ void main() {
   );
 
   testWidgets('Spiritpedia\'s own review: named Spiritpedia, wearing '
-      '✦ OFFICIAL, never mistaken for a reader\'s', (tester) async {
+      'OFFICIAL, never mistaken for a reader\'s', (tester) async {
     reviews.addApproved(
       _book,
       const Review(
@@ -214,11 +214,11 @@ void main() {
       matching: find.byType(Row),
     );
     expect(
-      find.descendant(of: row.first, matching: find.text('✦ OFFICIAL')),
+      find.descendant(of: row.first, matching: find.text('OFFICIAL')),
       findsOneWidget,
     );
     // Ordinary readers' names wear nothing.
-    expect(find.text('✦ OFFICIAL'), findsOneWidget);
+    expect(find.text('OFFICIAL'), findsOneWidget);
   });
 
   testWidgets('"Spiritpedia" is reserved: anyone else is asked to use their '
@@ -247,7 +247,7 @@ void main() {
   });
 
   testWidgets('signed in as Spiritpedia: no name to type, it posts as '
-      'Spiritpedia ✦ OFFICIAL', (tester) async {
+      'Spiritpedia OFFICIAL', (tester) async {
     reviews
       ..profileNames[_me] = 'Spiritpedia'
       ..officialUsers.add(_me);

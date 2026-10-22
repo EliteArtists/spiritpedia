@@ -6,7 +6,7 @@ import '../../theme/colors.dart';
 import 'star_layer.dart';
 
 /// The star's tips: tap any badge — a shelf's SUPERHERO, LUMINARY or LOCAL
-/// HERO, or the tier, ✓ Verified or ✦ OFFICIAL on a card, a page or a review —
+/// HERO, or the tier, ✓ Verified or OFFICIAL on a card, a page or a review —
 /// and the star explains it (data/badges.dart, the website's words), every
 /// time. The bubble hangs from wherever the star is resting: the search box,
 /// the pill row, or the foot of a page. A tap anywhere closes it, and only
@@ -27,7 +27,7 @@ class TierTip {
     _green,
   );
 
-  static const official = TierTip('✦ Official', officialTip, Colors.white);
+  static const official = TierTip('Official', officialTip, Colors.white);
 
   static TierTip verified(String name) =>
       TierTip('✓ Verified', verifiedTip(name), _blue);

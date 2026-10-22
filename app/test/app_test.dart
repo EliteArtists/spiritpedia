@@ -1339,7 +1339,7 @@ void main() {
       booking: 'https://janedoe.example',
     );
 
-    testWidgets('Spiritpedia: ✦ OFFICIAL and no tier, first in Explore These '
+    testWidgets('Spiritpedia: OFFICIAL and no tier, first in Explore These '
         'Channels', (tester) async {
       await tester.pumpWidget(
         _app(content: FakeContentRepository(extraHealers: [spiritpedia])),
@@ -1364,7 +1364,7 @@ void main() {
         matching: find.byType(HealerCard),
       );
       expect(
-        find.descendant(of: card, matching: find.text('✦ OFFICIAL')),
+        find.descendant(of: card, matching: find.text('OFFICIAL')),
         findsOneWidget,
       );
       expect(
@@ -1386,13 +1386,13 @@ void main() {
       GoRouter.of(tester.element(find.byType(PillTabBar)))
           .push('/healers/spiritpedia');
       await tester.pumpAndSettle();
-      expect(find.text('✦ OFFICIAL'), findsOneWidget);
+      expect(find.text('OFFICIAL'), findsOneWidget);
       // Verified too in the database, but Official alone on the page.
       expect(find.text('✓ VERIFIED'), findsNothing);
       expect(find.textContaining('RISING STAR'), findsNothing);
       expect(find.text('Visit Spiritpedia →'), findsOneWidget);
       expect(find.textContaining('Book with'), findsNothing);
-      await tester.tap(find.text('✦ OFFICIAL'));
+      await tester.tap(find.text('OFFICIAL'));
       await pause(tester);
       expect(tip, findsOneWidget);
       expect(

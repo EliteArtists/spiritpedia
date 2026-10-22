@@ -46,7 +46,7 @@ class Review {
   final String? authorHealerSlug;
 
   /// Posted by Spiritpedia's own account (reviews.author_official, set by the
-  /// database, migration 0023): shown as Spiritpedia ✦ OFFICIAL.
+  /// database, migration 0023): shown as Spiritpedia OFFICIAL.
   final bool authorOfficial;
   final DateTime? createdAt;
 
@@ -119,7 +119,7 @@ abstract class ReviewsService {
   Future<bool> postingBanned();
 
   /// True for Spiritpedia's own account: its reviews post as Spiritpedia
-  /// ✦ OFFICIAL (the database decides; this only shapes the form).
+  /// OFFICIAL (the database decides; this only shapes the form).
   Future<bool> postsAsOfficial(String userId);
 
   /// Write or edit the person's review. The database makes it pending.

@@ -366,7 +366,7 @@ is saved.
 - The server sends through `web/utils/push.js`, using the Firebase service
   account in Vercel.
 - **The first notification** is sent once per account by `/api/push/welcome`
-  as soon as someone turns notifications on: "✦ Testing, testing… just
+  as soon as someone turns notifications on: "Testing, testing… just
   checking my light reaches you. Nothing to do. I'll only shine when it
   matters." No title, nothing to open. It replaced the old welcome ("Welcome
   to Spiritpedia ✨ / I'm your guiding star…") in build 13.
