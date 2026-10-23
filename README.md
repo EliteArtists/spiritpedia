@@ -1009,6 +1009,18 @@ detail pages, email-code sign-in with Library sync and account deletion, push.
 | 23 | 22 Oct | **On TestFlight.** Firebase moved to the love@spiritpedia.co projects (`spiritpedia-ad62b` / `spiritpedia-dev-5e4d5`). Push checked on iPhone and iPad |
 | **24** | 22 Oct | **Current build (iOS IPA and Android bundle), waiting to be uploaded.** The welcome notification is asked for until the server confirms it (three tries, then at each start; build 23's iPad never sent the request); "Turn off notifications on this phone" removes the token it registered (it used to fail on the iPad); Account type shows the type set at approval; **Android**: release signing with the Play upload key, approximate-location permission, a notification arriving while the app is open shows as an in-app note with **Open**. 316 tests |
 
+**Waiting for the next build (25)** — in the code, committed, tested (320
+tests), not yet in any build:
+- **Publishers:** any logo on a white, rounded, padded panel
+  (`PublisherLogo` in `shared/widgets/cards.dart`), on the card and the page;
+  the card's meta line is always one line (`publisherMeta`: "18 authors ·
+  Founded 1984", or "Independent press"); the page puts the tier, founding
+  year and website on one row under the name; "Their authors are joining
+  Spiritpedia soon." when there are no books yet. Same as the website (§17.5).
+- **The medical-care note** ("Complementary to, not a replacement for, medical
+  care.") on the homeopathy subject screen and on homeopaths' profiles
+  (`core/safety/medical_note.dart`), as on the website (§18.4).
+
 ### 10.2 Structure and startup
 
 - `lib/main.dart`: keeps the native splash up; locks to portrait **only on a
@@ -1854,6 +1866,26 @@ First-class entities: a homepage shelf with live author counts
 favourites (Saved Publishers in My Library). Since `0020` a publisher can be
 claimed and has its own dashboard.
 
+**How a publisher looks (since 23 Oct 2026, website; app from build 25):**
+- **The logo panel** (`web/components/PublisherLogo.jsx`, shared by the card
+  and the page; the app's `PublisherLogo`): whatever the logo — black
+  wordmark, pale lilac one, wide banner, square icon — it sits on a white,
+  rounded, padded panel, contained and centred, never stretched or cropped.
+  White because most logos come on white; it keeps pale and dark logos
+  readable on the dark site. On the card the panel is held at 16:9 so a
+  logo's own shape never changes the card's height. No logo, or a broken
+  one: the publisher's initial on the same panel. Which logo to store is an
+  ingestion rule (§18.5: a square or high-contrast one).
+- **The card's meta line** is always exactly one line, so cards line up:
+  "18 authors · Founded 1984", "1 author", "Founded 1985", or **"Independent
+  press"** when there is neither a count nor a year.
+- **The page:** the logo panel with the name beside it (stacked and centred
+  on a phone), and under the name one row: the tier pill, "Founded YYYY" when
+  known, "Visit website →". The description runs full width below, capped
+  and scrollable. Then Our Authors, Our Channels, and Published Titles (one
+  shelf per author). With no books yet it says **"Their authors are joining
+  Spiritpedia soon."**, which goes by itself once a linked author has a book.
+
 ### 17.6 Amazon Associates
 
 - Tags are decided in one place per platform (`web/utils/affiliate.js`,
@@ -2156,6 +2188,6 @@ dev, give the pages to check, stop. Live after their OK, as for healers.
 | Napoleon Hill (existing, Ascended Master) | 23 Oct 2026: 20 videos, 21 books, 7 offerings, 20 free resources; booking link removed, YouTube added, Google-thumbnail photo dropped. The 5 Napoleon Hill Institute offerings kept out (owner's decision) | 23 Oct 2026, the same |
 | Samuel Hahnemann (new, Ascended Master) | 23 Oct 2026: 3 videos, 9 books, 19 free resources, no paid offerings (public domain: fully free). Left out: the Latin-only Fragmenta book, the weak 4th video, the third-party Organon text | 23 Oct 2026, the same |
 | Homeopaths batch 1 (all new, `homeopaths-batch-1.md`): George Vithoulkas, Dr. Rajan Sankaran, Dr. Farokh J. Master, Joette Calabrese, Dana Ullman | 23 Oct 2026, under the homeopathy rules: 79 videos, 44 books, 29 offerings, 20 free resources | 23 Oct 2026, the same (all Luminary, confirmed) |
-| Awaken Village Press (new publisher, §18.5) | 23 Oct 2026: the publisher, no authors linked (none on Spiritpedia yet; 10 listed as missing) | — |
+| Awaken Village Press (new publisher, §18.5) | 23 Oct 2026: the publisher (Rising Star, logo: their lotus icon), no authors linked (none on Spiritpedia yet; 10 listed as missing) | 23 Oct 2026, the same |
 
 Made with love in Tavira 💫
