@@ -9,6 +9,7 @@ import VideoShelves from '../../../components/VideoShelves.jsx';
 import ShareButton from '../../../components/ShareButton.jsx';
 import SiteLogo from '../../../components/SiteLogo.jsx';
 import { buildMetadata, SITE_URL } from '../../../utils/seo.js';
+import { MEDICAL_NOTE, needsMedicalNote } from '../../../utils/medicalNote.js';
 
 // Subject pages stay statically generated (they are the same for every visitor),
 // but they must not be frozen at build time. Supabase queries run through fetch,
@@ -105,6 +106,7 @@ export default async function SubjectPage({ params }) {
             <p className="mt-3 text-xl text-gray-400">
               Curated content for your journey in {title}.
             </p>
+            {needsMedicalNote([slug]) && <p className="mt-2 text-sm text-gray-500">{MEDICAL_NOTE}</p>}
           </div>
           <ShareButton
             className="shrink-0 mt-2"

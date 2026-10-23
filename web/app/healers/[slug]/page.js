@@ -13,6 +13,7 @@ import { formatLifespan, LIFESPAN_BADGE_CLASS } from '@/utils/lifespan';
 import TrackOpen from '@/components/TrackOpen';
 import ListingBadges from '@/components/ListingBadges';
 import { actionLabel, actionUrl, isPerson, withScheme } from '@/utils/badges';
+import { MEDICAL_NOTE, needsMedicalNote } from '@/utils/medicalNote';
 
 // Hourly ceiling on staleness — see the note in app/page.js. Reading
 // searchParams for the back link already makes this route per-request, so this
@@ -338,6 +339,9 @@ export default async function HealerProfile({ params, searchParams }) {
                       </p>
                     ))}
                 </div>
+              )}
+              {needsMedicalNote(healer.subject_slugs) && (
+                <p className="mt-3 text-sm text-gray-500">{MEDICAL_NOTE}</p>
               )}
 
               {/* Contact funnel — the Local Hero directory feature, shown only
