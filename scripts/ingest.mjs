@@ -83,9 +83,10 @@ async function insert(table, row) {
 }
 
 // The same slug rules as Admin → Ingestion (ContentIngestion.jsx), with
-// accents folded first ("día" → "dia", not "da").
+// accents folded first ("día" → "dia", not "da") and dashes and slashes
+// turned into hyphens ("1–6" → "1-6", not "16").
 function slugify(v) {
-  return (v || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().trim().replace(/[^a-z0-9\s-]/g, '')
+  return (v || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/[\u2010-\u2015\/]/g, '-').toLowerCase().trim().replace(/[^a-z0-9\s-]/g, '')
     .replace(/[\s_]+/g, '-').replace(/-+/g, '-').replace(/^-+|-+$/g, '');
 }
 const takenSlugs = {};
