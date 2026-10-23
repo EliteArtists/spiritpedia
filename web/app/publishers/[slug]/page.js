@@ -7,6 +7,7 @@ import { buildMetadata, notFoundMetadata, pickImage } from '@/utils/seo';
 import { backContextQuery } from '@/utils/backContext';
 import TrackOpen from '@/components/TrackOpen';
 import ListingBadges from '@/components/ListingBadges';
+import PublisherLogo from '@/components/PublisherLogo';
 import { isPlatform } from '@/utils/listings';
 
 // Hourly ceiling on staleness — see the note in app/page.js.
@@ -134,29 +135,19 @@ export default async function PublisherProfile({ params, searchParams }) {
           ← Back to Spiritpedia
         </Link>
 
-        {/* Brand header */}
-        <div className="flex flex-col md:flex-row gap-8 items-center border-b border-white/10 pb-8 mb-10">
-          {publisher.logo_url ? (
-            <div className="w-32 h-32 bg-[#111827] flex items-center justify-center p-4 border border-white/10 rounded-xl shrink-0">
-              <img
-                src={publisher.logo_url}
-                alt={publisher.name}
-                className="max-w-full max-h-full object-contain"
-              />
-            </div>
-          ) : (
-            <div className="w-32 h-32 bg-[#111827] flex items-center justify-center border border-white/10 rounded-xl shrink-0 text-5xl font-bold text-violet-400">
-              {initial(publisher.name)}
-            </div>
-          )}
-
-          <div className="text-center md:text-left">
-            <h1 className="text-3xl md:text-5xl font-bold text-white">{publisher.name}</h1>
-            {/* Its tier and ✓ Verified (utils/badges.js, migration 0023). */}
-            <ListingBadges listing={publisher} entityType="publisher" size="profile" placement="below" align="left" className="mt-3" />
-
-            {(publisher.founded_year || publisher.website_url) && (
-              <div className="mt-2">
+        {/* Brand header: the logo on its light panel (PublisherLogo, the same
+            as the card), and beside it, centred on it, the name with one row
+            under it for the tier, the founding year and the website. The
+            description runs full width below, so a long one never pushes the
+            name out of line with the logo. */}
+        <div className="border-b border-white/10 pb-8 mb-10">
+          <div className="flex flex-col items-center gap-6 md:flex-row md:items-center">
+            <PublisherLogo publisher={publisher} className="h-28 w-48 shrink-0" />
+            <div className="text-center md:text-left">
+              <h1 className="text-3xl md:text-5xl font-bold leading-tight text-white">{publisher.name}</h1>
+              <div className="mt-3 flex flex-wrap items-center justify-center gap-x-4 gap-y-2 md:justify-start">
+                {/* Its tier and ✓ Verified (utils/badges.js, migration 0023). */}
+                <ListingBadges listing={publisher} entityType="publisher" size="profile" placement="below" align="left" />
                 {publisher.founded_year && (
                   <span className="text-sm text-gray-400">Founded {publisher.founded_year}</span>
                 )}
@@ -165,39 +156,31 @@ export default async function PublisherProfile({ params, searchParams }) {
                     href={publisher.website_url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-violet-400 hover:text-violet-300 text-sm mt-2 block font-medium"
+                    className="text-sm font-medium text-violet-400 hover:text-violet-300"
                   >
-                    Visit Website →
+                    Visit website →
                   </a>
                 )}
               </div>
-            )}
-
-            {/* Capped and scrollable, like the healer profile bio: a long
-                publisher history would otherwise push the authors and titles
-                off the fold entirely.
-
-                Split on newlines so the paragraph breaks the copy was written
-                with actually survive — rendered as one string they collapsed
-                into a single 2,000-character block. Blank lines between
-                paragraphs drop out via the trim filter, so the spacing comes
-                from the margin rather than from empty <p> tags. */}
-            {publisher.description && (
-              <div className="mt-4 max-h-[300px] overflow-y-auto pr-4">
-                {publisher.description
-                  .split('\n')
-                  .filter((para) => para.trim())
-                  .map((para, i) => (
-                    <p
-                      key={i}
-                      className="text-base text-gray-400 leading-relaxed max-w-2xl mb-4 last:mb-0"
-                    >
-                      {para.trim()}
-                    </p>
-                  ))}
-              </div>
-            )}
+            </div>
           </div>
+
+          {/* Capped and scrollable, like the healer profile bio: a long
+              publisher history would otherwise push the authors and titles
+              off the fold entirely. Split on newlines so the paragraph breaks
+              survive; blank lines drop out via the trim filter. */}
+          {publisher.description && (
+            <div className="mt-8 max-h-[300px] overflow-y-auto pr-4">
+              {publisher.description
+                .split('\n')
+                .filter((para) => para.trim())
+                .map((para, i) => (
+                  <p key={i} className="text-base text-gray-400 leading-relaxed max-w-3xl mb-4 last:mb-0">
+                    {para.trim()}
+                  </p>
+                ))}
+            </div>
+          )}
         </div>
 
         {/* Linked listings: its authors, and apart from them any channels or
@@ -262,7 +245,8 @@ export default async function PublisherProfile({ params, searchParams }) {
               ))}
             </div>
           ) : (
-            <p className="text-gray-500 text-sm">No published titles linked yet.</p>
+            // Until a linked author has a book here. Goes by itself once one does.
+            <p className="text-gray-400 text-base">Their authors are joining Spiritpedia soon.</p>
           )}
         </div>
       </div>
