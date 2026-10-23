@@ -406,6 +406,67 @@ class FreeResourceCard extends StatelessWidget {
   );
 }
 
+/// A publisher's logo, the same way on the card and the page
+/// (web/components/PublisherLogo.jsx): on a white, rounded, padded panel,
+/// contained and centred, never stretched or cropped. White because most
+/// logos come on white; it keeps pale and dark logos readable alike.
+class PublisherLogo extends StatelessWidget {
+  const PublisherLogo({
+    super.key,
+    required this.publisher,
+    this.padding = const EdgeInsets.all(14),
+  });
+
+  final Publisher publisher;
+  final EdgeInsets padding;
+
+  @override
+  Widget build(BuildContext context) {
+    final name = publisher.name.trim();
+    final initial = Center(
+      child: Text(
+        name.isEmpty ? '?' : name[0].toUpperCase(),
+        style: const TextStyle(
+          fontSize: 40,
+          fontWeight: FontWeight.w700,
+          color: SpColors.link,
+        ),
+      ),
+    );
+    return DecoratedBox(
+      decoration: BoxDecoration(
+        color: Colors.white,
+        borderRadius: BorderRadius.circular(12),
+        border: Border.all(color: const Color(0x0D000000)),
+      ),
+      child: ClipRRect(
+        borderRadius: BorderRadius.circular(12),
+        child: Padding(
+          padding: padding,
+          child: publisher.logoUrl == null
+              ? initial
+              : NetImage(
+                  url: publisher.logoUrl,
+                  fit: BoxFit.contain,
+                  fallbackLabel: publisher.name,
+                ),
+        ),
+      ),
+    );
+  }
+}
+
+/// "18 authors · Founded 1984", or "Independent press" when there is neither
+/// yet: always one line, so the cards line up.
+String publisherMeta(Publisher p) {
+  final parts = [
+    if (p.authorCount > 0)
+      '${p.authorCount} ${p.authorCount == 1 ? 'author' : 'authors'}',
+    if (p.foundedYear != null) 'Founded ${p.foundedYear}',
+  ];
+  return parts.isEmpty ? 'Independent press' : parts.join(' · ');
+}
+
 class PublisherCard extends StatelessWidget {
   const PublisherCard({super.key, required this.publisher});
 
@@ -413,17 +474,13 @@ class PublisherCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final meta = [
-      if (publisher.foundedYear != null) 'Founded ${publisher.foundedYear}',
-      if (publisher.authorCount > 0) '${publisher.authorCount} authors',
-    ].join(' · ');
     return _Tappable(
       label: publisher.name,
       onTap: () => context.push('/publishers/${publisher.slug}'),
       child: Stack(
         fit: StackFit.expand,
         children: [
-          _publisherBody(meta),
+          _publisherBody(),
           // Top left, as on every card: its tier and ✓ Verified.
           Positioned(
             top: 22,
@@ -437,24 +494,19 @@ class PublisherCard extends StatelessWidget {
     );
   }
 
-  Widget _publisherBody(String meta) => Padding(
+  Widget _publisherBody() => Padding(
     padding: const EdgeInsets.all(14),
     child: Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
+        // The panel fills the space the card gives it, whatever the logo's
+        // own shape, so every card keeps the same top.
         Expanded(
-          child: ClipRRect(
-            borderRadius: BorderRadius.circular(10),
-            child: ColoredBox(
-              color: Colors.white,
-              child: Padding(
-                padding: const EdgeInsets.all(14),
-                child: NetImage(
-                  url: publisher.logoUrl,
-                  fit: BoxFit.contain,
-                  fallbackLabel: publisher.name,
-                ),
-              ),
+          child: SizedBox(
+            width: double.infinity,
+            child: PublisherLogo(
+              publisher: publisher,
+              padding: const EdgeInsets.fromLTRB(40, 34, 40, 12),
             ),
           ),
         ),
@@ -465,13 +517,13 @@ class PublisherCard extends StatelessWidget {
           overflow: TextOverflow.ellipsis,
           style: const TextStyle(fontSize: 15, fontWeight: FontWeight.w700),
         ),
-        if (meta.isNotEmpty) ...[
-          const SizedBox(height: 3),
-          Text(
-            meta,
-            style: const TextStyle(fontSize: 12, color: SpColors.textMuted),
-          ),
-        ],
+        const SizedBox(height: 3),
+        Text(
+          publisherMeta(publisher),
+          maxLines: 1,
+          overflow: TextOverflow.ellipsis,
+          style: const TextStyle(fontSize: 12, color: SpColors.textMuted),
+        ),
       ],
     ),
   );

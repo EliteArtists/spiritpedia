@@ -2127,11 +2127,17 @@ dev, give the pages to check, stop. Live after their OK, as for healers.
   and tier. Publishers have no social-link columns. **Suggest** the tier
   (shown as Superstar / Shining Star / Rising Star, §17.1) for the owner to
   confirm; small independent presses are usually Rising Star (`local_hero`).
-- **The logo:** the script takes the site's share image if there's no logo,
-  but that is often a wide photo banner. Publisher cards show the logo on
-  white (`PublisherCard.jsx`, `object-contain`), so prefer the press's actual
-  logo from its site (e.g. a Wix image asked for at a larger size) and put
-  it in `logo_url`.
+- **The logo:** prefer a **square or high-contrast logo** over a wide, pale
+  banner. The script tries the site's app icon and largest favicon first
+  (at least 150 px, roughly square; Wix images are asked for at 600 px), and
+  only then the share image; if neither is usable it says so. Failing that,
+  use the social profile picture or the press's own logo file by hand.
+  Whatever the logo, the card and the page show it the same way: on a white,
+  rounded, padded panel, contained and centred, never stretched
+  (`web/components/PublisherLogo.jsx`; the app's `PublisherLogo` in
+  `shared/widgets/cards.dart`). The card's meta line always has one line
+  ("18 authors · Founded 1984", or "Independent press"), and a publisher
+  with no books yet says "Their authors are joining Spiritpedia soon."
 - **Authors:** find the press's authors from its own site (books, projects,
   testimonials) and catalogues (Bookshop.org blocks scripts and shows a bot
   check in the browser: don't try to get past it). For each, look for an

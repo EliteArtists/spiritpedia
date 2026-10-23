@@ -136,7 +136,7 @@ function dimensions(b) {
 
 // → { ok, why }. Good = loads, is an image, and is at least MIN_IMAGE_PX on
 // its longer side (when the size can be read).
-async function probeImage(url) {
+async function probeImage(url, { minPx = MIN_IMAGE_PX } = {}) {
   if (!url) return { ok: false, why: 'none' };
   if (/encrypted-tbn\d*\.gstatic\.com/.test(url)) return { ok: false, why: 'Google thumbnail' };
   try {
@@ -146,9 +146,9 @@ async function probeImage(url) {
     const type = r.headers.get('content-type') || '';
     const d = dimensions(b);
     if (!type.startsWith('image/') && !d) return { ok: false, why: `not an image (${type.split(';')[0] || 'unknown'})` };
-    if (d && Math.max(...d) < MIN_IMAGE_PX) return { ok: false, why: `too small (${d[0]}×${d[1]})` };
-    if (!d && b.length < 5000) return { ok: false, why: `too small (${b.length} bytes)` };
-    return { ok: true };
+    if (d && Math.max(...d) < minPx) return { ok: false, why: `too small (${d[0]}×${d[1]})` };
+    if (!d && b.length < 5000 && minPx >= MIN_IMAGE_PX) return { ok: false, why: `too small (${b.length} bytes)` };
+    return { ok: true, w: d?.[0], h: d?.[1] };
   } catch (e) {
     return { ok: false, why: e.name === 'TimeoutError' ? 'timed out' : `unreachable (${e.cause?.code || e.message})` };
   }
@@ -233,6 +233,33 @@ async function amazonPageCover(asin) {
   return null;
 }
 
+// A publisher's logo (README §18.5): a square or near-square icon reads far
+// better on the card's white panel than a wide, pale share banner. So the
+// site's app icon and largest favicon (180 px is enough for an icon) come
+// first, Wix and similar image services asked for a larger copy; the share
+// image only when there is no usable icon. → url or null.
+async function publisherLogo(siteUrl) {
+  let html; let base;
+  try {
+    const r = await fetch(siteUrl, { headers: { 'User-Agent': UA, Accept: 'text/html' }, signal: timed() });
+    html = await r.text(); base = r.url;
+  } catch { return null; }
+  const abs = (u) => { try { return new URL(decode(u), base).href; } catch { return null; } };
+  const icons = [...html.matchAll(/<link[^>]+rel=["'](?:apple-touch-icon(?:-precomposed)?|icon|shortcut icon)["'][^>]*>/gi)]
+    .map((m) => ({ href: m[0].match(/href=["']([^"']+)/i)?.[1], size: Number(m[0].match(/sizes=["'](\d+)/i)?.[1] || (/apple-touch/i.test(m[0]) ? 180 : 16)) }))
+    .filter((i) => i.href && !/\.ico(\?|$)/i.test(i.href))
+    .sort((a, b) => b.size - a.size)
+    .map((i) => abs(i.href))
+    .filter(Boolean)
+    // Wix serves any size from the same URL: ask for 600 px.
+    .map((u) => u.replace(/\/fill\/w_\d+%2Ch_\d+/, '/fill/w_600%2Ch_600'));
+  for (const u of [...new Set(icons)]) {
+    const p = await probeImage(u, { minPx: 150 });
+    if (p.ok && (!p.w || !p.h || Math.max(p.w, p.h) / Math.min(p.w, p.h) <= 1.5)) return u;
+  }
+  return pageImage(siteUrl, { shareOnly: true });
+}
+
 // ── Plan ─────────────────────────────────────────────────────────────────
 const plan = JSON.parse(fs.readFileSync(planPath, 'utf8'));
 const problems = []; // the script can't decide these: stop
@@ -274,9 +301,8 @@ if (plan.publisher) {
     if (byName) problems.push(`a publisher named "${pub.name}" already exists as ${byName.slug}`);
   }
   if (!plan.images_final) {
-    if (!(pub.logo_url && (await probeImage(pub.logo_url)).ok)) {
-      const found = (pub.website_url && await pageImage(pub.website_url, { shareOnly: true }))
-        || (pub.website_url && await pageImage(pub.website_url));
+    if (!(pub.logo_url && (await probeImage(pub.logo_url, { minPx: 150 })).ok)) {
+      const found = pub.website_url && await publisherLogo(pub.website_url);
       if (found) { pub.logo_url = found; decisions.push(`publisher logo: ${found}`); }
       else unsolved.push(`publisher "${pub.name}": no logo on ${pub.website_url}`);
     }

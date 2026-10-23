@@ -46,60 +46,59 @@ class PublisherScreen extends ConsumerWidget {
               child: Readable(
                 child: Column(
                   children: [
-                    Container(
-                      width: 120,
-                      height: 120,
-                      padding: const EdgeInsets.all(14),
-                      decoration: BoxDecoration(
-                        color: SpColors.surface,
-                        borderRadius: BorderRadius.circular(14),
-                        border: Border.all(color: SpColors.border),
-                      ),
-                      child: p.logoUrl == null
-                          ? Center(
-                              child: Text(
-                                p.name.isEmpty ? '?' : p.name[0].toUpperCase(),
-                                style: const TextStyle(
-                                  fontSize: 46,
-                                  fontWeight: FontWeight.w700,
-                                  color: SpColors.link,
-                                ),
-                              ),
-                            )
-                          : NetImage(
-                              url: p.logoUrl,
-                              fit: BoxFit.contain,
-                              fallbackLabel: p.name,
-                            ),
+                    // The logo on its white panel, the same as the card;
+                    // under it the name and one row for the tier, the
+                    // founding year and the website.
+                    SizedBox(
+                      width: 192,
+                      height: 112,
+                      child: PublisherLogo(publisher: p),
                     ),
                     const SizedBox(height: 18),
                     DetailTitle(p.name, center: true),
-                    // Its tier and ✓ Verified, which the star explains.
-                    const SizedBox(height: 8),
-                    ListingBadgeRow.publisher(p),
-                    if (p.foundedYear != null) ...[
-                      const SizedBox(height: 6),
-                      Text(
-                        'Founded ${p.foundedYear}',
-                        style: const TextStyle(
-                          fontSize: 14,
-                          color: SpColors.textMuted,
-                        ),
-                      ),
-                    ],
-                    if (withScheme(p.websiteUrl) case final site?)
-                      TextButton(
-                        onPressed: () => openExternal(context, site),
-                        style: TextButton.styleFrom(
-                          foregroundColor: SpColors.link,
-                        ),
-                        child: Text(
-                          actionLabel(name: p.name, entityType: publisherType),
-                          style: const TextStyle(fontWeight: FontWeight.w600),
-                        ),
-                      ),
+                    const SizedBox(height: 10),
+                    Wrap(
+                      alignment: WrapAlignment.center,
+                      crossAxisAlignment: WrapCrossAlignment.center,
+                      spacing: 14,
+                      runSpacing: 6,
+                      children: [
+                        // Its tier and ✓ Verified, which the star explains.
+                        ListingBadgeRow.publisher(p),
+                        if (p.foundedYear != null)
+                          Text(
+                            'Founded ${p.foundedYear}',
+                            style: const TextStyle(
+                              fontSize: 14,
+                              color: SpColors.textMuted,
+                            ),
+                          ),
+                        if (withScheme(p.websiteUrl) case final site?)
+                          TextButton(
+                            onPressed: () => openExternal(context, site),
+                            style: TextButton.styleFrom(
+                              foregroundColor: SpColors.link,
+                              padding: const EdgeInsets.symmetric(
+                                horizontal: 4,
+                              ),
+                              minimumSize: const Size(0, 32),
+                              tapTargetSize: MaterialTapTargetSize.shrinkWrap,
+                            ),
+                            child: Text(
+                              actionLabel(
+                                name: p.name,
+                                entityType: publisherType,
+                              ),
+                              style: const TextStyle(
+                                fontSize: 14,
+                                fontWeight: FontWeight.w600,
+                              ),
+                            ),
+                          ),
+                      ],
+                    ),
                     if (p.description != null) ...[
-                      const SizedBox(height: 12),
+                      const SizedBox(height: 18),
                       Expandable(p.description!),
                     ],
                   ],
@@ -207,9 +206,11 @@ class PublisherScreen extends ConsumerWidget {
                   SpLayout.of(context).gutter,
                   0,
                 ),
+                // Until a linked author has a book here; goes by itself once
+                // one does.
                 child: const Text(
-                  'No published titles linked yet.',
-                  style: TextStyle(fontSize: 14, color: SpColors.textFaint),
+                  'Their authors are joining Spiritpedia soon.',
+                  style: TextStyle(fontSize: 15, color: SpColors.textMuted),
                 ),
               ),
             for (final s in c.shelves)
