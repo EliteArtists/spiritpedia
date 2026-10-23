@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
+import '../../core/safety/medical_note.dart';
 import '../../data/providers.dart';
 import '../../shared/widgets/cards.dart';
 import '../../shared/widgets/shelf.dart';
@@ -154,6 +155,7 @@ class _SubjectBody extends ConsumerWidget {
                           color: SpColors.textMuted,
                         ),
                       ),
+                      if (needsMedicalNote([slug])) const MedicalNote(),
                     ],
                   ),
                 ),

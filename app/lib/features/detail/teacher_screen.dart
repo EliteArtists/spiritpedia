@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
+import '../../core/safety/medical_note.dart';
 import '../../data/badges.dart';
 import '../../core/links/open_link.dart';
 import '../../data/models.dart';
@@ -117,6 +118,7 @@ List<Widget> _head(BuildContext context, Healer h, String name) {
       _Badge(healer: h),
       _Social(healer: h),
       if (h.bio != null) ...[const SizedBox(height: 20), Expandable(h.bio!)],
+      if (needsMedicalNote(h.subjectSlugs)) const MedicalNote(),
       _Contact(healer: h),
     ],
   );

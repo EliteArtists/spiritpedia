@@ -1,0 +1,256 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 160,
+    "healer_slug": "george-vithoulkas"
+  },
+  "rows": [
+    {
+      "table": "videos",
+      "id": 2328,
+      "slug": "what-it-means-to-be-a-healer",
+      "title": "What It Means to Be a Healer?"
+    },
+    {
+      "table": "videos",
+      "id": 2329,
+      "slug": "secrets-of-taking-a-homeopathic-case",
+      "title": "Secrets of taking a Homeopathic Case"
+    },
+    {
+      "table": "videos",
+      "id": 2330,
+      "slug": "materia-medica-pulsatilla",
+      "title": "MATERIA MEDICA: PULSATILLA"
+    },
+    {
+      "table": "videos",
+      "id": 2331,
+      "slug": "materia-medica-phosphorus",
+      "title": "MATERIA MEDICA: PHOSPHORUS"
+    },
+    {
+      "table": "videos",
+      "id": 2332,
+      "slug": "part-2-science-levels-of-health-the-continuum-of-disease",
+      "title": "Part 2 – Science, Levels of Health & the Continuum of Disease"
+    },
+    {
+      "table": "videos",
+      "id": 2333,
+      "slug": "materia-medica-stramonium",
+      "title": "MATERIA MEDICA: STRAMONIUM"
+    },
+    {
+      "table": "videos",
+      "id": 2334,
+      "slug": "materia-medica-arnica",
+      "title": "MATERIA MEDICA: ARNICA"
+    },
+    {
+      "table": "videos",
+      "id": 2335,
+      "slug": "materia-medica-hyoscyamus",
+      "title": "MATERIA MEDICA: HYOSCYAMUS"
+    },
+    {
+      "table": "videos",
+      "id": 2336,
+      "slug": "imagination",
+      "title": "IMAGINATION"
+    },
+    {
+      "table": "videos",
+      "id": 2337,
+      "slug": "e-learning-program-in-classical-homeopathy-by-prof-george-vithoulkas",
+      "title": "E-Learning Program in Classical Homeopathy by Prof. George Vithoulkas"
+    },
+    {
+      "table": "videos",
+      "id": 2338,
+      "slug": "definition-of-health-by-prof-george-vithoulkas",
+      "title": "Definition of Health by Prof. George Vithoulkas"
+    },
+    {
+      "table": "videos",
+      "id": 2339,
+      "slug": "quantum-physics-and-homeopathy",
+      "title": "QUANTUM PHYSICS AND HOMEOPATHY"
+    },
+    {
+      "table": "videos",
+      "id": 2340,
+      "slug": "levels-of-health",
+      "title": "LEVELS OF HEALTH"
+    },
+    {
+      "table": "videos",
+      "id": 2341,
+      "slug": "george-vithoulkas-interviewed-by-dr-manish-bhatia",
+      "title": "George Vithoulkas interviewed by Dr. Manish Bhatia"
+    },
+    {
+      "table": "videos",
+      "id": 2342,
+      "slug": "george-vithoulkas-insight-and-understanding-of-organon-27-29",
+      "title": "George Vithoulkas' insight and understanding of \"Organon\" § 27-29"
+    },
+    {
+      "table": "videos",
+      "id": 2343,
+      "slug": "materia-medica-digitalis",
+      "title": "MATERIA MEDICA: DIGITALIS"
+    },
+    {
+      "table": "videos",
+      "id": 2344,
+      "slug": "predisposition-for-diseases",
+      "title": "Predisposition for Diseases"
+    },
+    {
+      "table": "videos",
+      "id": 2345,
+      "slug": "homeopathy-and-human-behavior",
+      "title": "Homeopathy and human behavior"
+    },
+    {
+      "table": "books",
+      "id": 1045,
+      "slug": "the-science-of-homeopathy",
+      "title": "The Science of Homeopathy"
+    },
+    {
+      "table": "books",
+      "id": 1046,
+      "slug": "the-essence-of-materia-medica",
+      "title": "The Essence of Materia Medica"
+    },
+    {
+      "table": "books",
+      "id": 1047,
+      "slug": "a-new-model-for-health-and-disease",
+      "title": "A New Model for Health and Disease"
+    },
+    {
+      "table": "books",
+      "id": 1048,
+      "slug": "levels-of-health",
+      "title": "Levels of Health — Practical Applications and Cases (2nd Revised Edition)"
+    },
+    {
+      "table": "books",
+      "id": 1049,
+      "slug": "materia-medica-viva",
+      "title": "Materia Medica Viva (multi-volume series)"
+    },
+    {
+      "table": "books",
+      "id": 1050,
+      "slug": "homoeopathy-medicine-of-the-new-man",
+      "title": "Homoeopathy: Medicine of the New Man"
+    },
+    {
+      "table": "books",
+      "id": 1051,
+      "slug": "homeopathy-medicine-for-the-new-millennium",
+      "title": "Homeopathy, Medicine for the New Millennium (29th Edition)"
+    },
+    {
+      "table": "books",
+      "id": 1052,
+      "slug": "classical-homoeopathy-vithoulkas",
+      "title": "Classical Homoeopathy"
+    },
+    {
+      "table": "books",
+      "id": 1053,
+      "slug": "the-bern-seminar",
+      "title": "The Bern Seminar"
+    },
+    {
+      "table": "courses",
+      "id": "be65aada-99ae-497a-b293-dedb098e013c",
+      "slug": "2-year-e-learning-program-in-classical-homeopathy",
+      "title": "2-Year E-Learning Program in Classical Homeopathy"
+    },
+    {
+      "table": "courses",
+      "id": "cc1211e5-3399-4717-8ccd-70920881bddd",
+      "slug": "levels-of-health-postgraduate-course",
+      "title": "Levels of Health — Postgraduate Course"
+    },
+    {
+      "table": "courses",
+      "id": "91cec40d-2397-4dd6-938e-9b681e589cda",
+      "slug": "organon-postgraduate-course",
+      "title": "Organon — Postgraduate Course"
+    },
+    {
+      "table": "courses",
+      "id": "032f5b17-db3a-4e09-88ff-6f45056c9df0",
+      "slug": "new-horizons-in-medicine-postgraduate-course",
+      "title": "New Horizons in Medicine — Postgraduate Course"
+    },
+    {
+      "table": "courses",
+      "id": "211c94d3-87f8-4ddd-af1a-dfc8f13ba86c",
+      "slug": "strategies-in-prescribing-postgraduate-course",
+      "title": "Strategies in Prescribing — Postgraduate Course"
+    },
+    {
+      "table": "courses",
+      "id": "a8dae363-3631-418c-b649-1f4e50a5f4f2",
+      "slug": "the-question-of-miasms-webinar-by-prof-george-vithoulkas",
+      "title": "The Question of Miasms — Webinar by Prof. George Vithoulkas"
+    },
+    {
+      "table": "courses",
+      "id": "616376d2-136a-4fa4-a2ec-b0ea24a395e1",
+      "slug": "courses-in-alonissos-on-site-seminars",
+      "title": "Courses in Alonissos (on-site seminars)"
+    },
+    {
+      "table": "courses",
+      "id": "d097be5f-fb8a-4642-a5eb-07a8ae1cb9a1",
+      "slug": "3-year-practitioner-program-for-north-america",
+      "title": "3-Year Practitioner Program for North America"
+    },
+    {
+      "table": "courses",
+      "id": "8134d0ad-9722-462f-9803-a5ecf5bfad9e",
+      "slug": "vithoulkas-compass",
+      "title": "Vithoulkas Compass"
+    },
+    {
+      "table": "courses",
+      "id": "347b46ae-b16e-4d77-b9ca-ce3e363e91ed",
+      "slug": "vithoulkas-app",
+      "title": "Vithoulkas App"
+    },
+    {
+      "table": "free_resources",
+      "id": "2848a631-2f44-41d4-b6b7-0c8f45be6224",
+      "slug": "online-materia-medica",
+      "title": "Online Materia Medica"
+    },
+    {
+      "table": "free_resources",
+      "id": "63787131-a073-4358-ae77-0c2a53ae3562",
+      "slug": "organon-of-hahnemann-full-text",
+      "title": "Organon of Hahnemann (full text)"
+    },
+    {
+      "table": "free_resources",
+      "id": "9b90edd1-4ee7-45ae-931e-e2c86ef9cac9",
+      "slug": "clinical-cases-archive",
+      "title": "Clinical Cases archive"
+    },
+    {
+      "table": "free_resources",
+      "id": "b3914664-6117-4a89-aafa-828d09ea6542",
+      "slug": "scientific-papers-archive",
+      "title": "Scientific Papers archive"
+    }
+  ],
+  "at": "2026-10-23T19:43:24.842Z"
+}

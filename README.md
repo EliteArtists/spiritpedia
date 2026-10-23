@@ -235,7 +235,7 @@ spiritpedia/
 ├── scripts/ingest.mjs      ingestion: finds images, checks, inserts a healer's plan, dev or live (§18)
 ├── app/                    the Flutter app — see app/README.md
 │   ├── lib/                main.dart, app.dart, router.dart, core/, data/, theme/, shared/, features/
-│   ├── test/               316 tests (fakes in test/support/)
+│   ├── test/               318 tests (fakes in test/support/)
 │   ├── integration_test/   search_typing_test.dart (tours go here temporarily, never committed)
 │   ├── assets/safety/      symlink → web/shared/emotion-safety.json
 │   ├── config/             dev.json (ignored), dev.example.json, prod.json
@@ -1975,7 +1975,11 @@ node scripts/ingest.mjs <plan.json> --env dev --rollback    # delete exactly wha
   - **Books:** the cover built from the ASIN
     (`https://m.media-amazon.com/images/P/{ASIN}.01._SCLZZZZZZZ_.jpg`, the
     publisher's cover, 500 px tall), which also corrects covers an audit got
-    wrong; else the audit's cover if good; else the Amazon page's image.
+    wrong; else the audit's cover if good; else the product image on the
+    Amazon page (never its share image, which is an Amazon promo banner);
+    else Open Library's cover for the ISBN, then by title and author. Kindle
+    ASINs (`B0…`) and Indian-published titles often need the later steps.
+    `"cover": null` puts a book in without one.
   - **Offerings and free resources:** the page's share image (`og:image`,
     then `twitter:image`), else its first large image, else the page in the
     item's optional `page` field, else the audit's image if good. Then, as
@@ -2074,6 +2078,28 @@ Copy the audit's image links in; the script keeps or replaces them.
     genuine and well sourced.
   - **Alan Watts, Ram Dass and Thich Nhat Hanh: official channels only.**
     AI voice clones of them are everywhere on YouTube.
+- **Homeopathy content rules** (every homeopathy ingestion; list what was
+  excluded):
+  - Exclude any item whose title or description names a disease or
+    condition it claims to treat or cure (cancer, COVID, autism, asthma,
+    arthritis, allergies, skin, pain…), and anything about vaccines.
+  - Exclude courses or material that argue against conventional medicine or
+    tell people to stop medical treatment (e.g. "Antibiotic Alternatives",
+    "Drug-Free Family").
+  - Exclude sponsored or brand videos (Boiron or other remedy makers).
+  - Prefer philosophy, history, case-taking, education and practice
+    material.
+  - Where a person's own website is mainly a shop, link to their About page
+    instead (website and booking links).
+  - Bios too: no list of conditions homeopathy treated, no "PhD in cancer
+    management"-style lines.
+  - If very little of a homeopath passes, say so and hold them back.
+  - Homeopathy pages carry the note **"Complementary to, not a replacement
+    for, medical care."** In search results (since the start), and since
+    23 Oct 2026 on the homeopathy subject page and on the profile of every
+    teacher with the homeopathy subject, website and app
+    (`web/utils/medicalNote.js`, `app/lib/core/safety/medical_note.dart`; the
+    wording comes from `web/shared/emotion-safety.json`).
 - Courses: `affiliate_status` `none`; free resources: `is_featured` only when
   the plan says `featured: true`. `is_active` keeps its default (true). A
   dated offering gets `start_date`/`end_date` so it drops off when it's over.
@@ -2084,6 +2110,7 @@ Copy the audit's image links in; the script keeps or replaces them.
 | :--- | :--- | :--- |
 | Neale Donald Walsch (existing) | 23 Oct 2026: 19 videos, 20 books, 14 offerings, 2 free resources | 23 Oct 2026, the same |
 | Napoleon Hill (existing, Ascended Master) | 23 Oct 2026: 20 videos, 21 books, 7 offerings, 20 free resources; booking link removed, YouTube added, Google-thumbnail photo dropped. The 5 Napoleon Hill Institute offerings kept out (owner's decision) | 23 Oct 2026, the same |
-| Samuel Hahnemann (new, Ascended Master) | 23 Oct 2026: 3 videos, 9 books, 19 free resources, no paid offerings (public domain: fully free). Left out: the Latin-only Fragmenta book, the weak 4th video, the third-party Organon text | — |
+| Samuel Hahnemann (new, Ascended Master) | 23 Oct 2026: 3 videos, 9 books, 19 free resources, no paid offerings (public domain: fully free). Left out: the Latin-only Fragmenta book, the weak 4th video, the third-party Organon text | 23 Oct 2026, the same |
+| Homeopaths batch 1 (all new, `homeopaths-batch-1.md`): George Vithoulkas, Dr. Rajan Sankaran, Dr. Farokh J. Master, Joette Calabrese, Dana Ullman | 23 Oct 2026, under the homeopathy rules: 79 videos, 44 books, 29 offerings, 20 free resources | — |
 
 Made with love in Tavira 💫

@@ -1,0 +1,231 @@
+{
+  "healer": {
+    "healer_slug": "joette-calabrese",
+    "create": {
+      "name": "Joette Calabrese",
+      "bio": "Joette Calabrese began studying classical homeopathy in 1986 and completed a five-year course through the North American Homeopathic Master Clinician Course and the Dynamis School of Advanced Homeopathy in Toronto, studying with Louis Klein, Jeremy Sherr, Jan Scholten, André Saine and Dr. A.U. Ramakrishnan. She also spent around eighteen months as a fellow at the Prasanta Banerji Homeopathic Research Foundation in Calcutta, where the protocol-based approach that shapes her teaching comes from.\n\nShe has consulted full-time since 1997, and is the founder and director of The Academy of Practical Homeopathy® and Mastery™. Where most homeopathy teachers teach practitioners, she teaches families. She describes the relationship with her students as educator and learner rather than prescriber and patient, and her own site carries a prominent disclaimer to that effect.\n\nHer output is substantial: a podcast that has run past 178 episodes, a blog going back to 2013, her own materia medica, a study-group system, a membership community, and a year-long practitioner academy whose graduates are listed on a public directory. She works in English and Spanish and is based in Ocean Ridge, Florida.",
+      "tier": "luminary",
+      "entity_type": "individual",
+      "availability": "worldwide",
+      "subjects": [
+        "homeopathy",
+        "self-healing",
+        "life-coaching"
+      ],
+      "contact_email": "contact@practicalhomeopathy.com",
+      "booking_url": "https://joettecalabrese.com/",
+      "website_url": "https://joettecalabrese.com/",
+      "youtube_url": "https://www.youtube.com/@JoetteCalabrese",
+      "instagram_url": "https://www.instagram.com/joette_calabrese/",
+      "facebook_url": "https://www.facebook.com/joettecalabrese",
+      "twitter_url": "https://twitter.com/joettecalabrese",
+      "image_urls": [
+        "https://yt3.googleusercontent.com/ytc/AIdro_ma50dp8aCcd6dNK203B7B4M3r4u7_TUHvv79mgBSjP-Q=s900-c-k-c0x00ffffff-no-rj"
+      ]
+    }
+  },
+  "videos": [
+    {
+      "title": "How To Start Learning Homeopathy And Why | Homeopathy Works",
+      "url": "https://www.youtube.com/watch?v=IBRWPzuYRWk",
+      "subjects": [
+        "homeopathy",
+        "self-healing"
+      ],
+      "channel": "Joette Calabrese"
+    },
+    {
+      "title": "Essential Oils And Homeopathy | Podcast",
+      "url": "https://www.youtube.com/watch?v=ioVAsbEIvmE",
+      "subjects": [
+        "homeopathy",
+        "plant-medicine",
+        "energy-medicine"
+      ],
+      "channel": "Joette Calabrese"
+    },
+    {
+      "title": "What To Expect When Using Homeopathy Part 1",
+      "url": "https://www.youtube.com/watch?v=TCJBe1cBOoQ",
+      "subjects": [
+        "homeopathy",
+        "self-healing"
+      ],
+      "channel": "Joette Calabrese"
+    },
+    {
+      "title": "Are You Disillusioned With Homeopathy? | Homeopathy Works Podcast",
+      "url": "https://www.youtube.com/watch?v=RUnUPfOKy2E",
+      "subjects": [
+        "homeopathy"
+      ],
+      "channel": "Joette Calabrese"
+    }
+  ],
+  "books": [],
+  "courses": [
+    {
+      "title": "Mighty Members",
+      "url": "https://joetteslearningcenter.com/mighty-members-info/",
+      "description": "Her entry-level membership community and by far the largest on-ramp into her work — a monthly subscription giving access to her member site, the Memos to Mighty Members, and the community of other learners. Annual members also receive her Remedy Card Booklets and Remedy Reference Guide ebooks.",
+      "price": "$9/month or $90/year USD",
+      "image": "https://yt3.googleusercontent.com/ytc/AIdro_ma50dp8aCcd6dNK203B7B4M3r4u7_TUHvv79mgBSjP-Q=s900-c-k-c0x00ffffff-no-rj",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "homeopathy",
+        "self-healing"
+      ]
+    },
+    {
+      "title": "Mighty Members Plus",
+      "url": "https://joetteslearningcenter.com/mighty-members-plus-info/",
+      "description": "The upgraded tier of the membership, with additional material beyond the standard Mighty Members access.",
+      "price": null,
+      "image": "https://yt3.googleusercontent.com/ytc/AIdro_ma50dp8aCcd6dNK203B7B4M3r4u7_TUHvv79mgBSjP-Q=s900-c-k-c0x00ffffff-no-rj",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "homeopathy"
+      ]
+    },
+    {
+      "title": "Gateway to Practical Homeopathy® I",
+      "url": "https://joetteslearningcenter.com/gateway-1-info-new/",
+      "description": "A six-week guided study group designed to be run by the learners themselves, in person or over video, with a discussion guide so any participant can lead. Available in English and Spanish, and the step most of her students describe as the one that changed things. Carries a 100% money-back guarantee.",
+      "price": null,
+      "image": "https://yt3.googleusercontent.com/ytc/AIdro_ma50dp8aCcd6dNK203B7B4M3r4u7_TUHvv79mgBSjP-Q=s900-c-k-c0x00ffffff-no-rj",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "homeopathy",
+        "self-healing"
+      ]
+    },
+    {
+      "title": "Gateway to Practical Homeopathy® II",
+      "url": "https://joetteslearningcenter.com/gateway-2-info-new/",
+      "description": "The second study-group tier, building on Gateway I for learners ready to go deeper into case management.",
+      "price": null,
+      "image": "https://yt3.googleusercontent.com/ytc/AIdro_ma50dp8aCcd6dNK203B7B4M3r4u7_TUHvv79mgBSjP-Q=s900-c-k-c0x00ffffff-no-rj",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "homeopathy"
+      ]
+    },
+    {
+      "title": "The Academy of Practical Homeopathy®",
+      "url": "https://academyofpracticalhomeopathy.com/",
+      "description": "Her year-long immersive practitioner training — the step from treating one's own family to consulting professionally. Graduates are listed on her public practitioner directory at findapracticalhomeopath.com.",
+      "price": null,
+      "image": "https://yt3.googleusercontent.com/ytc/AIdro_ma50dp8aCcd6dNK203B7B4M3r4u7_TUHvv79mgBSjP-Q=s900-c-k-c0x00ffffff-no-rj",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "homeopathy",
+        "life-coaching"
+      ]
+    },
+    {
+      "title": "Ambassador Initiative",
+      "url": "https://discoverpracticalhomeopathy.com/",
+      "description": "A programme for graduates who want to actively spread her approach, with weekly meetings offered exclusively to Ambassadors and ongoing collaboration between Practical Homeopaths®.",
+      "price": null,
+      "image": "https://yt3.googleusercontent.com/ytc/AIdro_ma50dp8aCcd6dNK203B7B4M3r4u7_TUHvv79mgBSjP-Q=s900-c-k-c0x00ffffff-no-rj",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "homeopathy"
+      ]
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Quick Start Guide",
+      "url": "https://joettecalabrese.com/quickstart-guide/",
+      "description": "Her structured on-ramp for complete beginners, walking a newcomer through what homeopathy is in her framing and how to take a first step. Openly accessible with no account required, and also published in Spanish at joettecalabrese.com/quickstart-guide-spanish/.",
+      "image": "https://yt3.googleusercontent.com/ytc/AIdro_ma50dp8aCcd6dNK203B7B4M3r4u7_TUHvv79mgBSjP-Q=s900-c-k-c0x00ffffff-no-rj",
+      "featured": true,
+      "resource_type": "mini_course",
+      "subjects": [
+        "homeopathy",
+        "self-healing"
+      ]
+    },
+    {
+      "title": "Joette Calabrese Podcast (178+ episodes)",
+      "url": "https://joettecalabrese.com/podcast-directory/",
+      "description": "A long-running podcast, free and open with no signup, now past 178 episodes. Each episode takes a single topic and works through the remedies she associates with it. Also on Apple Podcasts (podcasts.apple.com/us/podcast/joette-calabrese-podcast/id1233212546) and Spotify (open.spotify.com/show/2McCSTT5pZ2uA8i4MRKWp6).",
+      "image": "https://yt3.googleusercontent.com/ytc/AIdro_ma50dp8aCcd6dNK203B7B4M3r4u7_TUHvv79mgBSjP-Q=s900-c-k-c0x00ffffff-no-rj",
+      "featured": false,
+      "resource_type": "practice",
+      "subjects": [
+        "homeopathy",
+        "self-healing"
+      ]
+    },
+    {
+      "title": "Joette's Blog",
+      "url": "https://joettecalabrese.com/joettes-blog/",
+      "description": "Her blog archive running back to 2013 — hundreds of posts, each typically built around one remedy and the reasoning behind it. This is the single largest body of her free written work, and the source material behind the paid Remedy Reference Guides.",
+      "image": "https://yt3.googleusercontent.com/ytc/AIdro_ma50dp8aCcd6dNK203B7B4M3r4u7_TUHvv79mgBSjP-Q=s900-c-k-c0x00ffffff-no-rj",
+      "featured": false,
+      "resource_type": "download",
+      "subjects": [
+        "homeopathy"
+      ]
+    },
+    {
+      "title": "Published Articles",
+      "url": "https://joettecalabrese.com/articles/",
+      "description": "Her articles published elsewhere, including work for the Weston A. Price Foundation journal, collected in one place and openly readable.",
+      "image": "https://yt3.googleusercontent.com/ytc/AIdro_ma50dp8aCcd6dNK203B7B4M3r4u7_TUHvv79mgBSjP-Q=s900-c-k-c0x00ffffff-no-rj",
+      "featured": false,
+      "resource_type": "download",
+      "subjects": [
+        "homeopathy"
+      ]
+    },
+    {
+      "title": "What Is Homeopathy?",
+      "url": "https://joettecalabrese.com/what-is-homeopathy/",
+      "description": "Her plain-language explainer of the subject for people arriving with no background. Short, free, and the natural first click for a Spiritpedia visitor new to the topic.",
+      "image": "https://yt3.googleusercontent.com/ytc/AIdro_ma50dp8aCcd6dNK203B7B4M3r4u7_TUHvv79mgBSjP-Q=s900-c-k-c0x00ffffff-no-rj",
+      "featured": false,
+      "resource_type": "mini_course",
+      "subjects": [
+        "homeopathy"
+      ]
+    },
+    {
+      "title": "Buster's Blog",
+      "url": "https://joettecalabrese.com/busters-blog/",
+      "description": "Her separate blog on homeopathy for animals, named after her dog. A distinct and genuinely charming strand of her free output, and one with very little competition online.",
+      "image": "https://yt3.googleusercontent.com/ytc/AIdro_ma50dp8aCcd6dNK203B7B4M3r4u7_TUHvv79mgBSjP-Q=s900-c-k-c0x00ffffff-no-rj",
+      "featured": false,
+      "resource_type": "download",
+      "subjects": [
+        "homeopathy"
+      ]
+    },
+    {
+      "title": "Find a Practical Homeopath® directory",
+      "url": "https://findapracticalhomeopath.com/aphg/",
+      "description": "A free public directory of practitioners who have completed her Academy, searchable by anyone looking for a consultation. Useful as a downstream link from a Spiritpedia profile.",
+      "image": "https://yt3.googleusercontent.com/ytc/AIdro_ma50dp8aCcd6dNK203B7B4M3r4u7_TUHvv79mgBSjP-Q=s900-c-k-c0x00ffffff-no-rj",
+      "featured": false,
+      "resource_type": "practice",
+      "subjects": [
+        "homeopathy"
+      ]
+    }
+  ],
+  "images_final": true
+}

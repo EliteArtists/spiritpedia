@@ -206,6 +206,28 @@ if (doRollback) {
   process.exit(0);
 }
 
+// The product image on an Amazon page (the generic share image there is an
+// Amazon promo banner, never the cover). → url or null.
+async function amazonPageCover(asin) {
+  for (const host of ['amazon.com', 'amazon.co.uk']) {
+    let html;
+    try {
+      const r = await fetch(`https://www.${host}/dp/${asin}`, { headers: { 'User-Agent': UA, Accept: 'text/html', 'Accept-Language': 'en-GB,en;q=0.9' }, signal: timed() });
+      if (!r.ok) continue;
+      html = await r.text();
+    } catch { continue; }
+    const candidates = [
+      html.match(/data-old-hires="([^"]+)"/)?.[1],
+      html.match(/"hiRes":"([^"]+)"/)?.[1],
+      html.match(/"large":"([^"]+)"/)?.[1],
+      html.match(/id="(?:landingImage|imgBlkFront|ebooksImgBlkFront)"[^>]*data-a-dynamic-image="\{&quot;([^&]+)&quot;/)?.[1],
+      html.match(/id="(?:landingImage|imgBlkFront|ebooksImgBlkFront)"[^>]*src="([^"]+)"/)?.[1],
+    ].filter((u) => u && /\/images\/I\//.test(u));
+    for (const u of candidates) if ((await probeImage(u)).ok) return u;
+  }
+  return null;
+}
+
 // ── Plan ─────────────────────────────────────────────────────────────────
 const plan = JSON.parse(fs.readFileSync(planPath, 'utf8'));
 const problems = []; // the script can't decide these: stop
@@ -338,9 +360,23 @@ for (const b of plan.books || []) {
     if (frozen || !/^[A-Z0-9]{10}$/.test(b.asin)) return; // reported below
     const built = await amazonCover(b.asin);
     if (built) { b.cover = built; return; }
-    if (b.cover && (await probeImage(b.cover)).ok) return;
-    const fromPage = await pageImage(`https://www.amazon.com/dp/${b.asin}`);
+    if (b.cover && !/\/images\/G\//.test(b.cover) && (await probeImage(b.cover)).ok) return;
+    const fromPage = await amazonPageCover(b.asin);
     if (fromPage) { b.cover = fromPage; decisions.push(`${label('book', b)}: cover from the Amazon page (none by ASIN)`); return; }
+    // An ISBN-10 ASIN: Open Library's cover for that ISBN (404 when none).
+    if (/^\d{9}[\dX]$/.test(b.asin)) {
+      const ol = `https://covers.openlibrary.org/b/isbn/${b.asin}-L.jpg?default=false`;
+      if ((await probeImage(ol)).ok) { b.cover = ol; decisions.push(`${label('book', b)}: cover from Open Library (none on Amazon)`); return; }
+    }
+    // Open Library by title and author: the same title, the author's surname.
+    try {
+      const surname = (b.author || '').split(',')[0].trim().split(' ').pop();
+      const q = `title=${encodeURIComponent(b.title.split(/[:(]/)[0].trim())}&author=${encodeURIComponent(surname)}&fields=title,cover_i&limit=5`;
+      const r = await fetch(`https://openlibrary.org/search.json?${q}`, { signal: timed() });
+      const doc = (await r.json()).docs?.find((d) => d.cover_i && shortTitle(d.title) === shortTitle(b.title));
+      const ol = doc && `https://covers.openlibrary.org/b/id/${doc.cover_i}-L.jpg`;
+      if (ol && (await probeImage(ol)).ok) { b.cover = ol; decisions.push(`${label('book', b)}: cover from Open Library by title (none on Amazon)`); return; }
+    } catch { /* not found */ }
     if (b.cover !== null) unsolved.push(`${label('book', b)}: no cover found (ASIN ${b.asin})`);
   })());
 }
