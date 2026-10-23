@@ -1,0 +1,337 @@
+{
+  "env": "dev",
+  "healer": null,
+  "rows": [
+    {
+      "table": "videos",
+      "id": 13,
+      "slug": "conversations-with-god-the-movie-official-trailer",
+      "title": "Conversations with God: The Movie - Official Trailer"
+    },
+    {
+      "table": "videos",
+      "id": 14,
+      "slug": "neale-donald-walsch-when-everything-changes-change-everything",
+      "title": "Neale Donald Walsch - When Everything Changes, Change Everything"
+    },
+    {
+      "table": "videos",
+      "id": 15,
+      "slug": "neale-donald-walsch-holiday-thoughts",
+      "title": "Neale Donald Walsch Holiday Thoughts."
+    },
+    {
+      "table": "videos",
+      "id": 16,
+      "slug": "a-window-into-neales-experience",
+      "title": "A window into Neale's experience..."
+    },
+    {
+      "table": "videos",
+      "id": 17,
+      "slug": "cwg-tv",
+      "title": "CWG TV"
+    },
+    {
+      "table": "videos",
+      "id": 2293,
+      "slug": "neale-donald-walsch-7-wk-evolving-wisdom-program",
+      "title": "Neale Donald Walsch 7-Wk Evolving Wisdom Program"
+    },
+    {
+      "table": "videos",
+      "id": 2294,
+      "slug": "neale-donald-walsch-exclusive-release-of-conversations-with-god-the-movie",
+      "title": "Neale Donald Walsch - Exclusive Release of \"Conversations with God: The Movie\""
+    },
+    {
+      "table": "videos",
+      "id": 2295,
+      "slug": "santas-god-video-preview",
+      "title": "Santa's God Video Preview"
+    },
+    {
+      "table": "videos",
+      "id": 2296,
+      "slug": "conversations-barbara-marx-hubbard-and-neale-donald-walsch",
+      "title": "Conversations Barbara Marx Hubbard and Neale Donald Walsch"
+    },
+    {
+      "table": "videos",
+      "id": 2297,
+      "slug": "the-basis-of-so-much",
+      "title": "The Basis of So Much"
+    },
+    {
+      "table": "videos",
+      "id": 2298,
+      "slug": "alanis-morissette-talks-about-cwg",
+      "title": "Alanis Morissette talks about CWG"
+    },
+    {
+      "table": "videos",
+      "id": 2299,
+      "slug": "i-am-what-you-create-me-to-be",
+      "title": "\"I am what you create me to be.\""
+    },
+    {
+      "table": "videos",
+      "id": 2300,
+      "slug": "the-basis-of-so-much-2",
+      "title": "The Basis of So Much"
+    },
+    {
+      "table": "videos",
+      "id": 2301,
+      "slug": "all-it-takes-is-one-person",
+      "title": "All it takes is one person..."
+    },
+    {
+      "table": "videos",
+      "id": 2302,
+      "slug": "its-you-who-decides",
+      "title": "It's you who decides..."
+    },
+    {
+      "table": "videos",
+      "id": 29,
+      "slug": "clips-from-conversations-with-neale-donald-walsch-series-on-amazon",
+      "title": "Clips from Conversations with Neale Donald Walsch - Series on Amazon"
+    },
+    {
+      "table": "videos",
+      "id": 2303,
+      "slug": "a-new-understanding-of-life",
+      "title": "A new understanding of life..."
+    },
+    {
+      "table": "videos",
+      "id": 2304,
+      "slug": "cwg-for-parents",
+      "title": "CWG for Parents"
+    },
+    {
+      "table": "videos",
+      "id": 2305,
+      "slug": "trailer-conversations-with-neale-donald-walsch-series-on-amazon",
+      "title": "Trailer - Conversations with Neale Donald Walsch - Series on Amazon"
+    },
+    {
+      "table": "books",
+      "id": 3,
+      "slug": "conversations-with-god-book-1",
+      "title": "Conversations with God: An Uncommon Dialogue, Book 1"
+    },
+    {
+      "table": "books",
+      "id": 4,
+      "slug": "conversations-with-god-book-2",
+      "title": "Conversations With God: An Uncommon Dialogue, Book 2"
+    },
+    {
+      "table": "books",
+      "id": 5,
+      "slug": "conversations-with-god-book-3",
+      "title": "Conversations With God: An Uncommon Dialogue, Book 3"
+    },
+    {
+      "table": "books",
+      "id": 6,
+      "slug": "the-complete-conversations-with-god",
+      "title": "The Complete Conversations with God: An Uncommon Dialogue"
+    },
+    {
+      "table": "books",
+      "id": 7,
+      "slug": "friendship-with-god",
+      "title": "Friendship with God: An Uncommon Dialogue"
+    },
+    {
+      "table": "books",
+      "id": 8,
+      "slug": "communion-with-god",
+      "title": "Communion with God"
+    },
+    {
+      "table": "books",
+      "id": 1001,
+      "slug": "conversations-with-god-book-4-awaken-the-species",
+      "title": "Conversations with God, Book 4: Awaken the Species"
+    },
+    {
+      "table": "books",
+      "id": 1002,
+      "slug": "home-with-god",
+      "title": "Home with God: In a Life That Never Ends"
+    },
+    {
+      "table": "books",
+      "id": 1003,
+      "slug": "the-little-soul-and-the-sun",
+      "title": "The Little Soul and the Sun: A Children's Parable"
+    },
+    {
+      "table": "books",
+      "id": 1004,
+      "slug": "the-new-revelations",
+      "title": "The New Revelations: A Conversation with God"
+    },
+    {
+      "table": "books",
+      "id": 1005,
+      "slug": "happier-than-god",
+      "title": "Happier Than God: Turn Ordinary Life into an Extraordinary Experience"
+    },
+    {
+      "table": "books",
+      "id": 1006,
+      "slug": "when-everything-changes-change-everything",
+      "title": "When Everything Changes, Change Everything"
+    },
+    {
+      "table": "books",
+      "id": 1007,
+      "slug": "tomorrows-god",
+      "title": "Tomorrow's God: Our Greatest Spiritual Challenge"
+    },
+    {
+      "table": "books",
+      "id": 1008,
+      "slug": "what-god-wants",
+      "title": "What God Wants: A Compelling Answer to Humanity's Biggest Question"
+    },
+    {
+      "table": "books",
+      "id": 1009,
+      "slug": "the-only-thing-that-matters",
+      "title": "The Only Thing That Matters"
+    },
+    {
+      "table": "books",
+      "id": 1010,
+      "slug": "what-god-said",
+      "title": "What God Said: The 25 Core Messages of Conversations with God"
+    },
+    {
+      "table": "books",
+      "id": 1011,
+      "slug": "conversations-with-god-for-teens",
+      "title": "Conversations with God for Teens"
+    },
+    {
+      "table": "books",
+      "id": 1012,
+      "slug": "gods-message-to-the-world",
+      "title": "God's Message to the World: You've Got Me All Wrong"
+    },
+    {
+      "table": "books",
+      "id": 1013,
+      "slug": "the-essential-path",
+      "title": "The Essential Path: Making the Daring Decision to Be Who You Truly Are"
+    },
+    {
+      "table": "books",
+      "id": 1014,
+      "slug": "the-storm-before-the-calm",
+      "title": "The Storm Before the Calm"
+    },
+    {
+      "table": "courses",
+      "id": "73fa8482-1f67-4dfd-9d68-c3764600d15f",
+      "slug": "the-spiritual-mentoring-program",
+      "title": "The Spiritual Mentoring Program"
+    },
+    {
+      "table": "courses",
+      "id": "6b553611-9888-457a-8c96-2c07364da76d",
+      "slug": "advanced-integrations",
+      "title": "Advanced Integrations"
+    },
+    {
+      "table": "courses",
+      "id": "97f679ad-c9c8-449f-983b-36f6d941971c",
+      "slug": "wisdom-that-works-the-cwg-online-school",
+      "title": "Wisdom that Works: The CWG Online School"
+    },
+    {
+      "table": "courses",
+      "id": "0e64bec7-79f7-437e-b1ff-703e0f041947",
+      "slug": "our-final-frontier-a-journey-to-mastery-in-living",
+      "title": "Our Final Frontier: A Journey to Mastery in Living"
+    },
+    {
+      "table": "courses",
+      "id": "90948b07-1d94-44e5-8a25-1f501a00a928",
+      "slug": "discover-your-souls-purpose",
+      "title": "Discover Your Soul's Purpose"
+    },
+    {
+      "table": "courses",
+      "id": "30238303-2745-498d-bb74-8380e02cca3b",
+      "slug": "the-art-science-of-living-consciously",
+      "title": "The Art & Science of Living Consciously"
+    },
+    {
+      "table": "courses",
+      "id": "cd7ffa83-1fd5-4791-8657-b08259a75b0d",
+      "slug": "awaken-the-species",
+      "title": "Awaken The Species"
+    },
+    {
+      "table": "courses",
+      "id": "7c2a125e-0894-46f5-beae-8a6abe8960ae",
+      "slug": "cwg-connect",
+      "title": "CWG Connect"
+    },
+    {
+      "table": "courses",
+      "id": "7d853498-5e26-47ab-9cb0-4956637146c0",
+      "slug": "cwg-for-parents-family-enrichment-kit",
+      "title": "CWG for Parents: Family Enrichment Kit"
+    },
+    {
+      "table": "courses",
+      "id": "0419519e-895f-4816-a9cb-5186ec8afca0",
+      "slug": "when-everything-changes-1-day-intensive-mp3",
+      "title": "When Everything Changes 1-Day Intensive (MP3)"
+    },
+    {
+      "table": "courses",
+      "id": "1443ee04-cb1a-470f-830d-d9b87de723a5",
+      "slug": "gods-message-to-the-world-audiobook-unabridged",
+      "title": "God's Message To The World Audiobook (Unabridged)"
+    },
+    {
+      "table": "courses",
+      "id": "b615b9b0-3688-4806-93ce-0590c3849ea9",
+      "slug": "changing-change-teleclass",
+      "title": "Changing Change TeleClass"
+    },
+    {
+      "table": "courses",
+      "id": "8b42f559-e467-4da9-bf5a-c4fb67d403b9",
+      "slug": "happier-than-god-teleclass",
+      "title": "Happier Than God TeleClass"
+    },
+    {
+      "table": "courses",
+      "id": "ccb6060d-d12e-4c3a-9e0b-47fdb8ffa9b4",
+      "slug": "home-with-god-teleseminar",
+      "title": "Home With God TeleSeminar"
+    },
+    {
+      "table": "free_resources",
+      "id": "98a4566f-fc5b-4bb8-8942-06f2a1f5e8a5",
+      "slug": "part-of-the-change-your-role-as-a-spiritual-helper",
+      "title": "Part of the Change: Your Role as a Spiritual Helper"
+    },
+    {
+      "table": "free_resources",
+      "id": "4812a838-3d59-4eb4-98f3-3c8ea8b7985f",
+      "slug": "the-cwg-weekly-bulletin",
+      "title": "The CWG Weekly Bulletin"
+    }
+  ],
+  "at": "2026-10-23T18:56:26.198Z"
+}

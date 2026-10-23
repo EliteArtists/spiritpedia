@@ -41,6 +41,7 @@ how-to is `docs/admin-guide.md`; the personalisation rules are
 15. [Things that will bite you](#15-things-that-will-bite-you)
 16. [Known issues, open items and what's next](#16-known-issues-open-items-and-whats-next)
 17. [Reference](#17-reference)
+18. [Content ingestion](#18-content-ingestion)
 
 ---
 
@@ -229,7 +230,9 @@ spiritpedia/
 │   ├── emails.md           every email the platform sends, when and to whom
 │   ├── email-copy-2026-10-21.md  the approved wording (source of truth)
 │   ├── admin-guide.md      how to run the admin (badges, approving, owners' content)
-│   └── google-play.md      every Play Console answer (data safety, rating, audience, closed test)
+│   ├── google-play.md      every Play Console answer (data safety, rating, audience, closed test)
+│   └── content-audits/     one healer's research audit + ingestion plan each (§18)
+├── scripts/ingest.mjs      ingestion: finds images, checks, inserts a healer's plan, dev or live (§18)
 ├── app/                    the Flutter app — see app/README.md
 │   ├── lib/                main.dart, app.dart, router.dart, core/, data/, theme/, shared/, features/
 │   ├── test/               316 tests (fakes in test/support/)
@@ -1741,11 +1744,9 @@ browser walk-throughs had typed made-up addresses into the sign-in form.
 
 ### 16.4 What's next
 
-- **The next job: the content ingestion investigation.** Today: Admin → Ingestion
-  (`components/admin/ContentIngestion.jsx`), one item at a time with YouTube-id and
-  Amazon-ASIN parsing and duplicate guards. The target library is 5,000 videos
-  and 5,000 books; a faster ingestion tool is the next content step. *Its design
-  isn't specified anywhere in the repo yet* — the investigation starts there.
+- **Content ingestion, one healer at a time** (§18), towards 5,000 videos and
+  5,000 books. Admin → Ingestion (`components/admin/ContentIngestion.jsx`)
+  still adds single items by hand.
 - **Android, after the closed test:** a pass over every screen on a real
   Android phone (the app was designed on iPhone/iPad), "Use my location" on
   Android, tablets, and Android's own back behaviour (it goes to Discover
@@ -1911,5 +1912,160 @@ audited.
   accessibility ref, type, wait ~2 s); synthetic input events don't update React.
 - The search dropdown shows two things: the emotion carousel and universal hits
   under section headers. A non-empty panel doesn't mean the emotion matched.
+
+---
+
+## 18. Content ingestion
+
+When the project owner says **"content ingestion: here's [healer]"**, this is
+the routine. One healer at a time, **fast and cheap**: the script does the
+mechanical work (images above all, which used to take ~40 minutes a healer
+by hand), and the assistant only turns the audit into a plan and handles
+what the script couldn't solve. Spend credits on features, not on checking
+items one by one.
+
+### 18.1 The assistant's part, every time
+
+1. Save the audit unchanged as `docs/content-audits/<healer-slug>.md` (ask
+   for it if it wasn't pasted).
+2. Turn it into the plan file `docs/content-audits/<healer-slug>.json` (18.3).
+   For a **new healer**, write the healer row from the profile research too:
+   bio, subjects, socials, and a **suggested** tier and type (§17.1).
+3. Run the script on dev (it changes nothing):
+   `node scripts/ingest.mjs docs/content-audits/<healer-slug>.json --env dev`
+4. Handle **only** what it lists as UNSOLVED or PROBLEMS. Don't re-check what
+   it solved.
+5. Insert on dev: the same command with `--insert`.
+6. Tell the owner exactly which pages to look at on localhost (the local site
+   stays running on dev the whole time: `cd web && npm run dev`). List the
+   defaults that were applied, briefly, and the suggested tier and type for a
+   new healer. Then **stop** until they say OK.
+7. Only after their OK: `--env live --insert` with the same plan. Don't start
+   the next healer until they say so.
+8. Commit the audit, the plan and the `.inserted.json` logs (`docs/` doesn't
+   deploy).
+
+**Speed over perfection.** Make sensible default decisions without asking:
+the first good image, the broadest subject dropped when there are more than
+3, genuinely different items with the same title both kept, prices shortened
+to the site's style (`$24.95 USD`). **Stop only** for what can't be decided:
+a subject that doesn't exist, or content that looks harmful. A full
+inventory audit against Spiritpedia's standards is a separate, later job.
+
+### 18.2 What the script does (`scripts/ingest.mjs`)
+
+```bash
+node scripts/ingest.mjs <plan.json> --env dev               # find images, check, report
+node scripts/ingest.mjs <plan.json> --env dev --insert      # the same, then insert
+node scripts/ingest.mjs <plan.json> --env dev --rollback    # delete exactly what it inserted
+# --verbose lists every item skipped as already in
+```
+
+- **Images**, all fetched in parallel, 30 seconds per item, no long-term
+  stability checks (the daily broken-images check, §17.8, catches anything
+  that breaks later). A good image loads, is an image, and is at least 300 px
+  on its longer side. Google thumbnails (`encrypted-tbn0.gstatic.com`) and
+  "image links" that are really web pages are replaced.
+  - **Books:** the cover built from the ASIN
+    (`https://m.media-amazon.com/images/P/{ASIN}.01._SCLZZZZZZZ_.jpg`, the
+    publisher's cover, 500 px tall), which also corrects covers an audit got
+    wrong; else the audit's cover if good; else the Amazon page's image.
+  - **Offerings and free resources:** the page's share image (`og:image`,
+    then `twitter:image`), else its first large image, else the page in the
+    item's optional `page` field, else the audit's image if good. Then, as
+    defaults: the cover of a book in the plan that the title names (a
+    teleclass on a book), else the healer's photo. `"image": null` means
+    deliberately none.
+  - **New healers:** their YouTube channel's picture (nearly always their
+    face), else their official site's share image.
+  - **Videos:** nothing; YouTube supplies the thumbnail.
+- **Defaults it applies, and lists:** more than 3 subjects → the broadest go
+  first (`spirituality`, `consciousness`, `spiritual-awakening`, … see
+  `BROADEST`); the image fallbacks above.
+- **Checks:** every subject exists (unknown → PROBLEM); product and resource
+  types; tier, type and the Ascended Master rules for a new healer; and
+  duplicates, which are skipped: a video by YouTube id anywhere; a book by
+  ASIN anywhere, or another edition of the same title under this healer; an
+  offering by link or the same title; a free resource by link; anything an
+  owner removed (`content_removals`, §9.5a). A same-titled book under another
+  healer is noted and added anyway.
+- **Writes back** the images it found and the subjects it trimmed into the
+  plan, so the plan records what went in. After the first insert it sets
+  `"images_final": true`, which freezes the images: live gets exactly what
+  was checked on dev.
+- **Inserts** only when nothing is unsolved. Slugs are made unique (the
+  title, or the item's own `slug`; `-2`, `-3` on a clash). Each row is logged
+  as it goes in `<plan>.<env>.inserted.json`, so a half-finished run is safe
+  to run again (what's in is skipped) and `--rollback` deletes exactly the
+  logged rows and the healer it created.
+- Reads keys from `web/.env.development.local` (dev) or `web/.env.local`
+  (live) without printing them, and refuses to run if the file points at the
+  wrong project. On dev, a bigint id that collides (dev's id sequences lag
+  behind its copied data) is retried with the next free id.
+
+### 18.3 The plan file
+
+```json
+{
+  "healer": {
+    "healer_slug": "napoleon-hill",
+    "create": {
+      "name": "", "bio": "", "tier": "superhero|luminary|local_hero|ascended_master",
+      "entity_type": "individual|channel|app|organisation", "subjects": [],
+      "birth_year": null, "death_year": null,
+      "website_url": "", "youtube_url": "", "instagram_url": "", "facebook_url": "",
+      "twitter_url": "", "tiktok_url": "", "booking_url": "", "contact_email": "",
+      "availability": "worldwide|local|local_online", "city": "", "country": "",
+      "image_urls": []
+    }
+  },
+  "videos": [{ "title": "", "url": "https://www.youtube.com/watch?v=…", "subjects": [] }],
+  "books": [{ "title": "", "slug": "", "author": "", "asin": "…", "store": "amazon.com",
+              "goodreads_url": "", "worldofbooks_url": null, "description": "", "subjects": [] }],
+  "courses": [{ "title": "", "url": "", "page": "", "description": "", "price": "", "image": "",
+                "product_type": "course|retreat|download|membership",
+                "start_date": null, "end_date": null, "subjects": [] }],
+  "free_resources": [{ "title": "", "url": "", "description": "", "image": "", "featured": false,
+                       "resource_type": "practice|download|meditation|workshop|mini_course", "subjects": [] }]
+}
+```
+
+`create` only for a new healer (leave it out when the healer exists). Any
+item may carry its own `slug` (the audit's, usually shorter than the title).
+Copy the audit's image links in; the script keeps or replaces them.
+
+### 18.4 The rules
+
+- **At most 3 subjects per item**, each an existing slug in `subjects` (42,
+  §17.3), most relevant first. Older rows have more; new rows don't.
+- **Amazon links** are stored as `https://www.amazon.com/dp/{ASIN}` (the US
+  store is primary). If an audit's ASIN is a UK-only edition, use the US
+  edition's ASIN. The tag is added at display, never stored (§17.6).
+- **Videos** are stored as `https://www.youtube.com/watch?v={id}`. Videos and
+  books link to the healer by `healer_slug`; courses and free resources by
+  `healer_id`.
+- **Ascended Masters** (`ascended_master`) are people only (`individual`), no
+  longer living, with a lifespan (`death_year`, and `birth_year` if known);
+  nobody else gets a lifespan. They show in Timeless Teachers.
+- **Archive rules** (teachers who have died; what decides how much goes in):
+  - **Professional estates** (a foundation or family that runs the work):
+    full content.
+  - **Institution legacies** (the teaching lives on through an institution):
+    link to the institution.
+  - **Public-domain teachers:** fully free (free resources, not paid
+    offerings).
+  - **No-estate figures:** maximum curation discipline; only what is clearly
+    genuine and well sourced.
+  - **Alan Watts, Ram Dass and Thich Nhat Hanh: official channels only.**
+    AI voice clones of them are everywhere on YouTube.
+- Courses: `affiliate_status` `none`; free resources: `is_featured` only when
+  the plan says `featured: true`. `is_active` keeps its default (true). A
+  dated offering gets `start_date`/`end_date` so it drops off when it's over.
+
+### 18.5 Done so far
+
+| Healer | Dev | Live |
+| :--- | :--- | :--- |
+| Neale Donald Walsch (existing) | 23 Oct 2026: 19 videos, 20 books, 14 offerings, 2 free resources | — |
 
 Made with love in Tavira 💫
