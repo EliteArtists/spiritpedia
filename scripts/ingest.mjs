@@ -198,12 +198,16 @@ if (doRollback) {
     const r = await fetch(`${BASE}/rest/v1/healers?id=eq.${log.healer_update.id}`, { method: 'PATCH', headers, body: JSON.stringify(log.healer_update.before) });
     if (!r.ok) throw new Error(`RESTORE healer: ${r.status} ${await r.text()}`);
   }
+  if (log.publisher) {
+    const r = await fetch(`${BASE}/rest/v1/publishers?id=eq.${log.publisher.id}`, { method: 'DELETE', headers });
+    if (!r.ok) throw new Error(`DELETE publisher ${log.publisher.id}: ${r.status} ${await r.text()}`);
+  }
   if (log.healer) {
     const r = await fetch(`${BASE}/rest/v1/healers?id=eq.${log.healer.id}`, { method: 'DELETE', headers });
     if (!r.ok) throw new Error(`DELETE healer ${log.healer.id}: ${r.status} ${await r.text()}`);
   }
   fs.renameSync(logPath, logPath.replace(/\.json$/, `.rolled-back-${Date.now()}.json`));
-  console.log(`Rolled back ${log.rows.length} rows${log.healer ? ' and the healer' : ''} on ${envName}.`);
+  console.log(`Rolled back ${log.rows.length} rows${log.healer ? ' and the healer' : ''}${log.publisher ? ' and the publisher' : ''} on ${envName}.`);
   process.exit(0);
 }
 
@@ -250,6 +254,72 @@ function fixSubjects(kind, item) {
     item.subjects = item.subjects.filter((s) => s !== drop);
     decisions.push(`${label(kind, item)}: dropped ${drop} (more than ${MAX_SUBJECTS} subjects)`);
   }
+}
+
+// ── A publishing house (README §18.5): its own plan, no healer ────────────
+// { "publisher": { "slug", "name", "description", "website_url", "logo_url",
+//   "founded_year", "tier", "subjects", "contact_email",
+//   "authors": [{ "name", "healer_slug" | null, "note" }] } }
+// Creates the publisher (or uses the existing one with that slug), finds its
+// logo, links every author who has a healer_slug that exists, and lists the
+// authors who aren't on Spiritpedia yet.
+if (plan.publisher) {
+  const pub = plan.publisher;
+  const [existingPub] = await get(`publishers?select=*&slug=eq.${encodeURIComponent(pub.slug)}`);
+  pub.subjects = [...new Set((pub.subjects || []).map((x) => x.trim().toLowerCase()))];
+  for (const x of pub.subjects) if (!subjects.has(x)) problems.push(`publisher subject "${x}" doesn't exist`);
+  if (!['superhero', 'luminary', 'local_hero'].includes(pub.tier)) problems.push(`publisher tier "${pub.tier}" isn't superhero, luminary or local_hero`);
+  if (!existingPub) {
+    const [byName] = await get(`publishers?select=slug&name=ilike.${encodeURIComponent(pub.name)}`);
+    if (byName) problems.push(`a publisher named "${pub.name}" already exists as ${byName.slug}`);
+  }
+  if (!plan.images_final) {
+    if (!(pub.logo_url && (await probeImage(pub.logo_url)).ok)) {
+      const found = (pub.website_url && await pageImage(pub.website_url, { shareOnly: true }))
+        || (pub.website_url && await pageImage(pub.website_url));
+      if (found) { pub.logo_url = found; decisions.push(`publisher logo: ${found}`); }
+      else unsolved.push(`publisher "${pub.name}": no logo on ${pub.website_url}`);
+    }
+  }
+  const links = [];
+  const missing = [];
+  for (const a of pub.authors || []) {
+    const [h] = a.healer_slug ? await get(`healers?select=id,healer_slug&healer_slug=eq.${encodeURIComponent(a.healer_slug)}`) : [];
+    if (h) links.push({ ...a, id: h.id });
+    else missing.push(a);
+  }
+  const already = existingPub ? new Set((await get(`publisher_healers?select=healer_id&publisher_id=eq.${existingPub.id}`)).map((r) => r.healer_id)) : new Set();
+  const toLink = links.filter((a) => !already.has(a.id));
+  fs.writeFileSync(planPath, `${JSON.stringify(plan, null, 2)}\n`);
+  say(`Publisher: ${pub.name} (${existingPub ? 'exists' : `new, suggested ${pub.tier}`})`);
+  say(`Authors on Spiritpedia to link: ${toLink.length}${links.length > toLink.length ? ` (${links.length - toLink.length} already linked)` : ''}`);
+  if (missing.length) { say(`Authors not on Spiritpedia yet (${missing.length}):`); missing.forEach((a) => say(`  - ${a.name}${a.note ? ` — ${a.note}` : ''}`)); }
+  if (decisions.length) { say('Decided by default:'); decisions.forEach((d) => say(`  - ${d}`)); }
+  if (unsolved.length) { say('UNSOLVED:'); unsolved.forEach((u) => say(`  - ${u}`)); }
+  if (problems.length) { say('PROBLEMS:'); problems.forEach((x) => say(`  - ${x}`)); }
+  if (!doInsert) process.exit(problems.length || unsolved.length ? 2 : 0);
+  if (problems.length || unsolved.length) { say('Nothing inserted.'); process.exit(2); }
+  const logPath = planPath.replace(/\.json$/, `.${envName}.inserted.json`);
+  const log = fs.existsSync(logPath) ? JSON.parse(fs.readFileSync(logPath, 'utf8')) : { env: envName, publisher: null, rows: [] };
+  let row = existingPub;
+  if (!row) {
+    row = await insert('publishers', {
+      name: pub.name, slug: pub.slug, description: pub.description || null, website_url: pub.website_url || null,
+      logo_url: pub.logo_url || null, founded_year: pub.founded_year || null, subject_slugs: pub.subjects,
+      tier: pub.tier, contact_email: pub.contact_email || null,
+    });
+    log.publisher = { id: row.id, slug: pub.slug };
+  }
+  for (const a of toLink) {
+    const r = await insert('publisher_healers', { publisher_id: row.id, healer_id: a.id });
+    log.rows.push({ table: 'publisher_healers', id: r.id, healer_slug: a.healer_slug });
+  }
+  log.at = new Date().toISOString();
+  fs.writeFileSync(logPath, `${JSON.stringify(log, null, 2)}\n`);
+  plan.images_final = true;
+  fs.writeFileSync(planPath, `${JSON.stringify(plan, null, 2)}\n`);
+  say(`${existingPub ? 'Publisher existed' : 'Publisher created'}; ${toLink.length} authors linked. Log: ${path.relative(process.cwd(), logPath)}`);
+  process.exit(0);
 }
 
 // ── The healer ───────────────────────────────────────────────────────────

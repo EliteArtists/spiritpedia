@@ -2104,13 +2104,52 @@ Copy the audit's image links in; the script keeps or replaces them.
   the plan says `featured: true`. `is_active` keeps its default (true). A
   dated offering gets `start_date`/`end_date` so it drops off when it's over.
 
-### 18.5 Done so far
+### 18.5 Publishing house ingestion
+
+When the owner sends a **publisher record** (a publishing house, not a
+healer): save it as `docs/content-audits/<publisher-slug>.md`, write the plan
+`docs/content-audits/<publisher-slug>.json`, run the same script, insert on
+dev, give the pages to check, stop. Live after their OK, as for healers.
+
+```json
+{
+  "publisher": {
+    "slug": "awaken-village-press", "name": "", "description": "",
+    "website_url": "", "logo_url": "", "founded_year": null,
+    "tier": "superhero|luminary|local_hero", "subjects": [], "contact_email": null,
+    "authors": [{ "name": "", "healer_slug": "existing-slug or null", "note": "their book(s), where found" }]
+  }
+}
+```
+
+- **The publisher row** (`publishers`): name, slug, the record's bio as the
+  description, website, logo, founding year (null when unpublished), subjects
+  and tier. Publishers have no social-link columns. **Suggest** the tier
+  (shown as Superstar / Shining Star / Rising Star, §17.1) for the owner to
+  confirm; small independent presses are usually Rising Star (`local_hero`).
+- **The logo:** the script takes the site's share image if there's no logo,
+  but that is often a wide photo banner. Publisher cards show the logo on
+  white (`PublisherCard.jsx`, `object-contain`), so prefer the press's actual
+  logo from its site (e.g. a Wix image asked for at a larger size) and put
+  it in `logo_url`.
+- **Authors:** find the press's authors from its own site (books, projects,
+  testimonials) and catalogues (Bookshop.org blocks scripts and shows a bot
+  check in the browser: don't try to get past it). For each, look for an
+  existing healer; give the ones who exist their `healer_slug`, and the script
+  links them (`publisher_healers`). Everyone else is listed as **not on
+  Spiritpedia yet**, with their book: that list goes to the owner (each is a
+  possible new healer, and the outreach starts there). A name the owner asks
+  about that can't be found anywhere is reported as such, never guessed.
+- `--rollback` deletes the links and the publisher it created.
+
+### 18.6 Done so far
 
 | Healer | Dev | Live |
 | :--- | :--- | :--- |
 | Neale Donald Walsch (existing) | 23 Oct 2026: 19 videos, 20 books, 14 offerings, 2 free resources | 23 Oct 2026, the same |
 | Napoleon Hill (existing, Ascended Master) | 23 Oct 2026: 20 videos, 21 books, 7 offerings, 20 free resources; booking link removed, YouTube added, Google-thumbnail photo dropped. The 5 Napoleon Hill Institute offerings kept out (owner's decision) | 23 Oct 2026, the same |
 | Samuel Hahnemann (new, Ascended Master) | 23 Oct 2026: 3 videos, 9 books, 19 free resources, no paid offerings (public domain: fully free). Left out: the Latin-only Fragmenta book, the weak 4th video, the third-party Organon text | 23 Oct 2026, the same |
-| Homeopaths batch 1 (all new, `homeopaths-batch-1.md`): George Vithoulkas, Dr. Rajan Sankaran, Dr. Farokh J. Master, Joette Calabrese, Dana Ullman | 23 Oct 2026, under the homeopathy rules: 79 videos, 44 books, 29 offerings, 20 free resources | — |
+| Homeopaths batch 1 (all new, `homeopaths-batch-1.md`): George Vithoulkas, Dr. Rajan Sankaran, Dr. Farokh J. Master, Joette Calabrese, Dana Ullman | 23 Oct 2026, under the homeopathy rules: 79 videos, 44 books, 29 offerings, 20 free resources | 23 Oct 2026, the same (all Luminary, confirmed) |
+| Awaken Village Press (new publisher, §18.5) | 23 Oct 2026: the publisher, no authors linked (none on Spiritpedia yet; 10 listed as missing) | — |
 
 Made with love in Tavira 💫
