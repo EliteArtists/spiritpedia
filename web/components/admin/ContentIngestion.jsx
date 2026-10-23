@@ -662,8 +662,12 @@ export default function ContentIngestion({ initialPublisherId = null } = {}) {
           return;
         }
 
+        // videos.slug is NOT NULL and unique, so a video needs one too.
+        const videoSlug = await uniqueSlug('videos', title.trim());
+
         ({ error } = await adminWrite({ table: 'videos', op: 'insert', values: {
           title: title.trim(),
+          slug: videoSlug,
           platform_url: platformUrl,
           healer_slug: linkedHealerSlug || null,
           subject_slugs: tags,
