@@ -1,0 +1,448 @@
+{
+  "healer": {
+    "healer_slug": "samuel-hahnemann",
+    "create": {
+      "name": "Samuel Hahnemann",
+      "bio": "Samuel Hahnemann (1755–1843) was the German physician who founded homeopathy. Born in Meissen, Saxony, the son of a porcelain painter, he trained in medicine at Leipzig, Vienna and Erlangen, and spent his early career as a doctor, chemist and prolific translator of medical texts. Disillusioned with the bloodletting and purging of the medicine of his day, he began testing medicinal substances on himself and on healthy volunteers, and in 1796 set out the principle of similars — that a substance which produces symptoms in a healthy person can treat the same symptoms in a sick one.\n\nHe developed the idea over half a century: the Organon of Medicine (1810, revised through six editions), the six volumes of the Materia Medica Pura recording his provings, and The Chronic Diseases, written in his seventies. After years in Leipzig, Torgau and Köthen he married Mélanie d'Hervilly and moved to Paris in 1835, where he practised until his death at eighty-eight. His case journals and some 6,000 patient letters are kept by the Institute for the History of Medicine of the Robert Bosch Foundation in Stuttgart, which publishes them as a free digital edition.",
+      "tier": "ascended_master",
+      "entity_type": "individual",
+      "birth_year": 1755,
+      "death_year": 1843,
+      "subjects": [
+        "homeopathy",
+        "energy-medicine",
+        "ancient-wisdom"
+      ],
+      "website_url": "https://www.igm-bosch.de/",
+      "image_urls": [
+        "https://upload.wikimedia.org/wikipedia/commons/6/6b/Samuel_Hahnemann_Daguerreotype_1840s.png"
+      ]
+    }
+  },
+  "videos": [
+    {
+      "title": "Hahnemann reading his own letter",
+      "url": "https://www.youtube.com/watch?v=yxzLJ3T0qsQ",
+      "subjects": [
+        "homeopathy",
+        "energy-medicine",
+        "ancient-wisdom"
+      ],
+      "channel": "Internationales Hahnemannzentrum Torgau"
+    },
+    {
+      "title": "Hahnemann Birthday Celebrations 2016 in Torgau",
+      "url": "https://www.youtube.com/watch?v=5os-d3Q1iOE",
+      "subjects": [
+        "homeopathy",
+        "ancient-wisdom",
+        "spirituality"
+      ],
+      "channel": "Internationales Hahnemannzentrum Torgau e. V."
+    },
+    {
+      "title": "Rede Monika Kölsch, DZVHÄ, 10. April 2016 in Torgau",
+      "url": "https://www.youtube.com/watch?v=2eRxkFQvLfg",
+      "subjects": [
+        "homeopathy",
+        "energy-medicine",
+        "ancient-wisdom"
+      ],
+      "channel": "Internationales Hahnemannzentrum Torgau"
+    }
+  ],
+  "books": [
+    {
+      "title": "Organon of Medicine: Sixth Edition (with Word Index)",
+      "slug": "organon-of-medicine-sixth-edition",
+      "author": "Samuel Hahnemann",
+      "asin": "8131902234",
+      "cover": "https://m.media-amazon.com/images/P/8131902234.01._SCLZZZZZZZ_.jpg",
+      "goodreads_url": "https://www.goodreads.com/book/show/230240.Organon_of_Medicine",
+      "worldofbooks_url": null,
+      "description": "Hahnemann's testament — the final, most radical revision of the book that founded homeopathy, containing the famous 291 aphorisms on similars, potentisation and the single remedy. The sixth edition is where he introduces the LM potencies and softens his earlier dosing rules, so it reads as a working physician's last word rather than a manifesto. First published 1810; this text completed 1842, first printed 1921.",
+      "subjects": [
+        "homeopathy",
+        "energy-medicine",
+        "ancient-wisdom"
+      ],
+      "store": "amazon.com"
+    },
+    {
+      "title": "The Chronic Diseases: Their Peculiar Nature and Their Homoeopathic Cure (Set of 2 Volumes)",
+      "slug": "the-chronic-diseases",
+      "author": "Samuel Hahnemann",
+      "asin": "8131902129",
+      "cover": "https://m.media-amazon.com/images/P/8131902129.01._SCLZZZZZZZ_.jpg",
+      "goodreads_url": "https://www.goodreads.com/book/show/65285276-the-chronic-diseases-their-peculiar-nature-and-their-homoeopathic-cure",
+      "worldofbooks_url": null,
+      "description": "Hahnemann's second great book, written in his seventies, arguing that stubborn long-term illness is driven by underlying \"miasms\" rather than passing complaints. The two volumes pair his theory of chronic disease with the enormous antipsoric materia medica he assembled to treat it. It remains the foundation text for how classical homeopaths think about deep-seated, relapsing conditions.",
+      "subjects": [
+        "homeopathy",
+        "energy-medicine",
+        "ancient-wisdom"
+      ],
+      "store": "amazon.com"
+    },
+    {
+      "title": "Materia Medica Pura (2 Volumes)",
+      "slug": "materia-medica-pura",
+      "author": "Samuel Hahnemann",
+      "asin": "8131902153",
+      "cover": "https://m.media-amazon.com/images/P/8131902153.01._SCLZZZZZZZ_.jpg",
+      "goodreads_url": "https://www.goodreads.com/book/show/1667952.Materia_Medica_Pura",
+      "worldofbooks_url": null,
+      "description": "The raw data of homeopathy — Hahnemann's meticulous records of what each medicinal substance produced when given to healthy volunteers, symptom by symptom, in his own voice. Sixty-odd remedies are documented with a patience that is startling to read. This is where the provings tradition begins, and every later materia medica is downstream of it.",
+      "subjects": [
+        "homeopathy",
+        "plant-medicine",
+        "ancient-wisdom"
+      ],
+      "store": "amazon.com"
+    },
+    {
+      "title": "The Lesser Writings of Samuel Hahnemann",
+      "slug": "the-lesser-writings-of-samuel-hahnemann",
+      "author": "Samuel Hahnemann",
+      "asin": "8131909379",
+      "cover": "https://m.media-amazon.com/images/P/8131909379.01._SCLZZZZZZZ_.jpg",
+      "goodreads_url": "https://www.goodreads.com/book/show/3281035-the-lesser-writings-of-samuel-hahnemann",
+      "worldofbooks_url": null,
+      "description": "The indispensable companion volume — nearly sixty years of essays, pamphlets and polemics gathered in one place, including the 1796 Essay on a New Principle where the similars idea first appears, The Medicine of Experience, and his writings on cholera. Reading it, you watch homeopathy being invented in real time, argument by argument.",
+      "subjects": [
+        "homeopathy",
+        "ancient-wisdom",
+        "energy-medicine"
+      ],
+      "store": "amazon.com"
+    },
+    {
+      "title": "Organon of the Medical Art",
+      "slug": "organon-of-the-medical-art",
+      "author": "Samuel Hahnemann",
+      "asin": "8131909220",
+      "cover": "https://m.media-amazon.com/images/P/8131909220.01._SCLZZZZZZZ_.jpg",
+      "goodreads_url": "https://www.goodreads.com/book/show/19023022",
+      "worldofbooks_url": null,
+      "description": "The modern scholarly benchmark — a fresh translation from Hahnemann's German by Steven Decker, edited by Wenda Brewster O'Reilly, restoring vocabulary earlier translators flattened and laid out with running commentary and a glossary in the margins. The edition homeopathy schools assign when they want students to grapple with what Hahnemann actually wrote.",
+      "subjects": [
+        "homeopathy",
+        "energy-medicine",
+        "ancient-wisdom"
+      ],
+      "store": "amazon.com"
+    },
+    {
+      "title": "Organon of the Art of Healing",
+      "slug": "organon-of-the-art-of-healing",
+      "author": "Samuel Hahnemann",
+      "asin": "813191819X",
+      "cover": "https://m.media-amazon.com/images/P/813191819X.01._SCLZZZZZZZ_.jpg",
+      "goodreads_url": "https://www.goodreads.com/book/show/65018502-organon-of-the-art-of-healing",
+      "worldofbooks_url": "https://www.worldofbooks.com/products/organon-of-medicine-fifth-edition-book-samuel-hahnemann-9781603861731",
+      "description": "The fifth edition is the Organon most of the nineteenth century actually read, and the version on which classical homeopathic practice was built before the sixth edition surfaced. Hahnemann is at his most combative here, setting the law of similars against the bleeding and purging of the orthodox medicine of his day.",
+      "subjects": [
+        "homeopathy",
+        "energy-medicine",
+        "ancient-wisdom"
+      ],
+      "store": "amazon.com"
+    },
+    {
+      "title": "Treatise on the Effects of Coffee",
+      "slug": "treatise-on-the-effects-of-coffee",
+      "author": "Samuel Hahnemann",
+      "asin": "1869975189",
+      "cover": "https://images-na.ssl-images-amazon.com/images/G/01/prime/piv/YourPrimePIV_fallback_CTA._V327346943_.jpg",
+      "goodreads_url": "https://www.goodreads.com/book/show/26667218-the-effects-of-coffee",
+      "worldofbooks_url": null,
+      "description": "A short, sharp and unexpectedly modern-feeling pamphlet from 1803 in which Hahnemann dissects coffee as a drug rather than a beverage, cataloguing what habitual use does to sleep, digestion and temper. Written before homeopathy had a name, it explains why coffee became the classic antidote in homeopathic practice — and it is a genuinely enjoyable entry point for anyone daunted by the Organon.",
+      "subjects": [
+        "homeopathy",
+        "plant-medicine",
+        "self-healing"
+      ],
+      "store": "amazon.com"
+    },
+    {
+      "title": "Hahnemann's Defence of the Organon of Rational Medicine",
+      "slug": "hahnemanns-defence-of-the-organon",
+      "author": "Samuel Hahnemann",
+      "asin": "1334049807",
+      "cover": "https://m.media-amazon.com/images/P/1334049807.01._SCLZZZZZZZ_.jpg",
+      "goodreads_url": "https://www.goodreads.com/book/show/20315361-hahnemann-s-defence-of-the-organon-of-rational-medicine",
+      "worldofbooks_url": null,
+      "description": "Hahnemann answering his critics with the gloves off — a point-by-point defence of the newly published Organon against Professor Hecker's hostile review. Because he is arguing rather than lecturing, he explains his system more plainly here than anywhere else. A short book with a real pulse to it.",
+      "subjects": [
+        "homeopathy",
+        "energy-medicine",
+        "ancient-wisdom"
+      ],
+      "store": "amazon.com"
+    },
+    {
+      "title": "Additions to the Materia Medica Pura",
+      "slug": "additions-to-the-materia-medica-pura",
+      "author": "Samuel Hahnemann",
+      "asin": "1293389412",
+      "cover": "https://m.media-amazon.com/images/P/1293389412.01._SCLZZZZZZZ_.jpg",
+      "goodreads_url": "https://www.goodreads.com/book/show/26573767-additions-to-the-materia-medica-pura",
+      "worldofbooks_url": null,
+      "description": "A supplementary volume of Hahnemann provings gathered after his death by his pupil Ernst Stapf, filling gaps left by the six volumes of the Materia Medica Pura. Genuinely his material, assembled by another hand.",
+      "subjects": [
+        "homeopathy",
+        "plant-medicine",
+        "energy-medicine"
+      ],
+      "store": "amazon.com"
+    }
+  ],
+  "courses": [],
+  "free_resources": [
+    {
+      "title": "Krankenjournal — Digitale kritische Edition (DF5)",
+      "url": "https://www.hahnemann-edition.de/",
+      "description": "The free online critical edition of Hahnemann's French case journal DF5 (1837–1842), covering his Paris years. Offers transcription, reading text and raw TEI-P5 XML, plus a patient-residence map and text-analysis tools. Published by the institute that physically holds his papers, under CC BY-NC-SA 4.0 with no login and no paywall.",
+      "image": "https://www.hahnemann-edition.de/templates/img/frontcover/IMG_5417_frei2.jpeg",
+      "featured": true,
+      "resource_type": "practice",
+      "subjects": [
+        "homeopathy",
+        "ancient-wisdom",
+        "conscious-science"
+      ]
+    },
+    {
+      "title": "Leseansicht — Krankenjournal DF5 reading view",
+      "url": "https://www.hahnemann-edition.de/reader.html",
+      "description": "The reading interface for DF5 itself, with switchable Transkription, Lesetext and TEI display modes. This is where you actually read Hahnemann's own consultation notes, patient by patient.",
+      "image": "https://www.hahnemann-edition.de/~assets/exist.png",
+      "featured": false,
+      "resource_type": "practice",
+      "subjects": [
+        "homeopathy",
+        "ancient-wisdom",
+        "energy-medicine"
+      ]
+    },
+    {
+      "title": "Organon der rationellen Heilkunde (1810) — first edition",
+      "url": "https://wellcomecollection.org/works/rsd4rahu",
+      "description": "The 1810 Dresden first edition — the founding text of homeopathy in its original form, 282 digitised images, viewable and downloadable with no account. Released under the Public Domain Mark, so unrestricted reuse.",
+      "image": "https://i.wellcomecollection.org/assets/icons/square_icon.png",
+      "featured": false,
+      "resource_type": "download",
+      "subjects": [
+        "homeopathy",
+        "ancient-wisdom",
+        "energy-medicine"
+      ]
+    },
+    {
+      "title": "Organon of medicine (1901, Boericke & Tafel)",
+      "url": "https://archive.org/details/organonmedicine00hahngoog",
+      "description": "A clean, complete English Organon, marked not-in-copyright and free to read or download as PDF, EPUB or plain text with no account. Probably the most frictionless free English Organon in existence.",
+      "image": "https://archive.org/services/img/organonmedicine00hahngoog/full/pct:200/0/default.jpg",
+      "featured": false,
+      "resource_type": "download",
+      "subjects": [
+        "homeopathy",
+        "energy-medicine",
+        "ancient-wisdom"
+      ]
+    },
+    {
+      "title": "The lesser writings of Samuel Hahnemann (1852)",
+      "url": "https://archive.org/details/lesserwritingss00hahngoog",
+      "description": "The collected shorter essays and polemics — the material that shows Hahnemann's thinking developing outside the Organon. Free to download in multiple formats, no account.",
+      "image": "https://archive.org/services/img/lesserwritingss00hahngoog/full/pct:200/0/default.jpg",
+      "featured": false,
+      "resource_type": "download",
+      "subjects": [
+        "homeopathy",
+        "ancient-wisdom",
+        "energy-medicine"
+      ]
+    },
+    {
+      "title": "The chronic diseases: their peculiar nature and their homœopathic cure (1904, Tafel translation)",
+      "url": "https://archive.org/details/chronicdiseasest00hahniala",
+      "description": "Tafel's translation of the theoretical part — the volume containing the miasm doctrine that underpins how classical homeopaths approach deep-seated illness. Free, no account.",
+      "image": "https://archive.org/services/img/chronicdiseasest00hahniala/full/pct:200/0/default.jpg",
+      "featured": false,
+      "resource_type": "download",
+      "subjects": [
+        "homeopathy",
+        "energy-medicine",
+        "self-healing"
+      ]
+    },
+    {
+      "title": "Materia medica pura, Volume 1 (1846, Hempel translation)",
+      "url": "https://archive.org/details/64310340RX1.nlm.nih.gov",
+      "description": "Hempel's translation in a scan contributed by the US National Library of Medicine, so bibliographically reliable. Free in PDF, EPUB and text; companion volumes sit at the sibling identifiers RX2, RX3 and RX4.",
+      "image": "https://archive.org/services/img/64310340RX1.nlm.nih.gov",
+      "featured": false,
+      "resource_type": "download",
+      "subjects": [
+        "homeopathy",
+        "plant-medicine",
+        "energy-medicine"
+      ]
+    },
+    {
+      "title": "Organon der Heilkunst. Textkritische Ausgabe — ed. Josef M. Schmidt",
+      "url": "https://archive.org/details/organon-der-heilkunst-textkritische-ausgabe",
+      "description": "The scholarly prize of this audit — Schmidt's 2022 text-critical edition of the Organon, released under CC BY-NC-ND 4.0 and free to download as PDF and EPUB with no account. A modern critical apparatus rather than a bare reprint.",
+      "image": "https://archive.org/services/img/organon-der-heilkunst-textkritische-ausgabe/full/pct:200/0/default.jpg",
+      "featured": false,
+      "resource_type": "download",
+      "subjects": [
+        "homeopathy",
+        "ancient-wisdom",
+        "conscious-science"
+      ]
+    },
+    {
+      "title": "Fragmenta de viribus medicamentorum positivis (1824)",
+      "url": "https://wellcomecollection.org/works/rhnzhsam",
+      "description": "Hahnemann's earliest systematic drug-proving compilation in the Naples 1824 printing — 272 digitised images with a full PDF download and no registration. Since no English edition exists to buy, this free scan is the only practical access.",
+      "image": "https://i.wellcomecollection.org/assets/icons/square_icon.png",
+      "featured": false,
+      "resource_type": "download",
+      "subjects": [
+        "homeopathy",
+        "plant-medicine",
+        "ancient-wisdom"
+      ]
+    },
+    {
+      "title": "Beständeübersicht — holdings overview of the Hahnemann archive",
+      "url": "https://www.igm-bosch.de/files/img/pdf-archiv/Best%C3%A4nde/Bestaende%C3%BCbersicht%202021.pdf",
+      "description": "The single most useful free document for locating Hahnemann primary sources, giving reference codes and extents — 37 volumes of German case journals 1801–1835, 18 volumes of French journals, 5,549 German patient letters, 333 French letters, and Mélanie Hahnemann's estate.",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/6/6b/Samuel_Hahnemann_Daguerreotype_1840s.png",
+      "featured": false,
+      "resource_type": "download",
+      "subjects": [
+        "homeopathy",
+        "ancient-wisdom",
+        "conscious-science"
+      ]
+    },
+    {
+      "title": "The Archive — Institut für Geschichte der Medizin",
+      "url": "https://www.igm-bosch.de/the-archive.html",
+      "description": "The landing page for the institute's three sub-archives, stating that the Homeopathy Archive holds the estates of Samuel Hahnemann, his second wife Mélanie née d'Hervilly, and significant students and successors. The authoritative statement of what survives and where.",
+      "image": "https://www.igm-bosch.de/assets/images/x/Das_Archiv1-f4sv0mzsqxtdnar.jpg",
+      "featured": false,
+      "resource_type": "practice",
+      "subjects": [
+        "homeopathy",
+        "ancient-wisdom"
+      ]
+    },
+    {
+      "title": "Krankenjournale — publications and digital access",
+      "url": "https://www.igm-bosch.de/the-institute/publications/medical-journals-of-hahnemann.html",
+      "description": "The institute's own account of the case-journal edition project — the printed critical edition is out of print, and transcribed journals are moving to free digital critical editions instead, explicitly to widen access and reduce handling of the originals.",
+      "image": "https://www.igm-bosch.de/assets/images/5/Krankenjournale_1-8txq3c3e8h94h7s.jpg",
+      "featured": false,
+      "resource_type": "practice",
+      "subjects": [
+        "homeopathy",
+        "ancient-wisdom",
+        "conscious-science"
+      ]
+    },
+    {
+      "title": "Transkriptionshinweise — transcription guidelines",
+      "url": "https://www.hahnemann-edition.de/guidelines.html",
+      "description": "The edition's editorial method — Hahnemann's original orthography retained, abbreviations resolved, marginalia marked, and apothecary symbols resolved via his own pharmacy lexicon. Essential for anyone reading the journals critically.",
+      "image": "https://www.hahnemann-edition.de/~assets/exist.png",
+      "featured": false,
+      "resource_type": "download",
+      "subjects": [
+        "homeopathy",
+        "ancient-wisdom",
+        "conscious-science"
+      ]
+    },
+    {
+      "title": "Hahnemann House Trust",
+      "url": "https://www.hahnemannhouse.org/",
+      "description": "A free illustrated catalogue of homeopathy artefacts and biographies from the UK charity founded in 1920, including objects with direct Hahnemann provenance such as his leather travelling case. English-language and the most approachable of the official bodies.",
+      "image": "https://www.hahnemannhouse.org/wp-content/uploads/2019/10/logo-negative-2-1.svg",
+      "featured": false,
+      "resource_type": "practice",
+      "subjects": [
+        "homeopathy",
+        "ancient-wisdom",
+        "spirituality"
+      ]
+    },
+    {
+      "title": "Hahnemann artefacts collection",
+      "url": "https://www.hahnemannhouse.org/hahnemann/",
+      "description": "The Hahnemann-specific subsection of the Trust's catalogue — objects associated with him personally, photographed with catalogue descriptions. Material culture rather than text, and the better for it.",
+      "image": "https://www.hahnemannhouse.org/wp-content/uploads/2019/10/logo-negative-2-1.svg",
+      "featured": false,
+      "resource_type": "practice",
+      "subjects": [
+        "homeopathy",
+        "ancient-wisdom"
+      ]
+    },
+    {
+      "title": "Biographies of homeopaths",
+      "url": "https://www.hahnemannhouse.org/biographies/",
+      "description": "Free biographical reference on figures in homeopathy's history, indexed by period, country and alphabetically. Useful context for Hahnemann's students, translators and successors.",
+      "image": "https://www.hahnemannhouse.org/wp-content/uploads/2019/10/logo-negative-2-1.svg",
+      "featured": false,
+      "resource_type": "practice",
+      "subjects": [
+        "homeopathy",
+        "ancient-wisdom",
+        "spirituality"
+      ]
+    },
+    {
+      "title": "Samuel Hahnemann — Wellcome Collection concept page",
+      "url": "https://wellcomecollection.org/concepts/udcn52g8",
+      "description": "The best single entry point into Wellcome's Hahnemann holdings — 79 works by him, 103 about him, and 11 images including engravings, lithographs and plaster busts, many with free online access.",
+      "image": "https://i.wellcomecollection.org/assets/icons/square_icon.png",
+      "featured": false,
+      "resource_type": "practice",
+      "subjects": [
+        "homeopathy",
+        "ancient-wisdom"
+      ]
+    },
+    {
+      "title": "Organon of the rational art of healing (1913, Dent/Dutton)",
+      "url": "https://archive.org/details/b24877529",
+      "description": "The Everyman's Library-era English rendering of the 1810 first edition — a useful counterpart to the far more common translations of the fifth and sixth editions. Contributed by the Wellcome Library.",
+      "image": "https://archive.org/services/img/b24877529",
+      "featured": false,
+      "resource_type": "download",
+      "subjects": [
+        "homeopathy",
+        "ancient-wisdom",
+        "energy-medicine"
+      ]
+    },
+    {
+      "title": "Mischbestand Samuel Hahnemann — Archivportal-D finding aid",
+      "url": "https://www.archivportal-d.de/item/CVZQNZYGLZUARRDLNP4NRIUVBDPTD6LV?lang=en",
+      "description": "The collection-level finding aid for 1,635 catalogued units spanning 1774–1946 — his own writings, correspondence to him, Mélanie's material, and the papers of the collector Richard Haehl. Catalogue record only, no images, but free to browse.",
+      "image": "https://iiif.deutsche-digitale-bibliothek.de/image/2/ca4d45e0-5ce5-42a2-9b1f-d563850816e1/full/max/0/default.jpg",
+      "featured": false,
+      "resource_type": "practice",
+      "subjects": [
+        "homeopathy",
+        "ancient-wisdom",
+        "conscious-science"
+      ]
+    }
+  ],
+  "images_final": true
+}

@@ -1,0 +1,196 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 159,
+    "healer_slug": "samuel-hahnemann"
+  },
+  "rows": [
+    {
+      "table": "videos",
+      "id": 2325,
+      "slug": "hahnemann-reading-his-own-letter",
+      "title": "Hahnemann reading his own letter"
+    },
+    {
+      "table": "videos",
+      "id": 2326,
+      "slug": "hahnemann-birthday-celebrations-2016-in-torgau",
+      "title": "Hahnemann Birthday Celebrations 2016 in Torgau"
+    },
+    {
+      "table": "videos",
+      "id": 2327,
+      "slug": "rede-monika-kolsch-dzvha-10-april-2016-in-torgau",
+      "title": "Rede Monika Kölsch, DZVHÄ, 10. April 2016 in Torgau"
+    },
+    {
+      "table": "books",
+      "id": 1036,
+      "slug": "organon-of-medicine-sixth-edition",
+      "title": "Organon of Medicine: Sixth Edition (with Word Index)"
+    },
+    {
+      "table": "books",
+      "id": 1037,
+      "slug": "the-chronic-diseases",
+      "title": "The Chronic Diseases: Their Peculiar Nature and Their Homoeopathic Cure (Set of 2 Volumes)"
+    },
+    {
+      "table": "books",
+      "id": 1038,
+      "slug": "materia-medica-pura",
+      "title": "Materia Medica Pura (2 Volumes)"
+    },
+    {
+      "table": "books",
+      "id": 1039,
+      "slug": "the-lesser-writings-of-samuel-hahnemann",
+      "title": "The Lesser Writings of Samuel Hahnemann"
+    },
+    {
+      "table": "books",
+      "id": 1040,
+      "slug": "organon-of-the-medical-art",
+      "title": "Organon of the Medical Art"
+    },
+    {
+      "table": "books",
+      "id": 1041,
+      "slug": "organon-of-the-art-of-healing",
+      "title": "Organon of the Art of Healing"
+    },
+    {
+      "table": "books",
+      "id": 1042,
+      "slug": "treatise-on-the-effects-of-coffee",
+      "title": "Treatise on the Effects of Coffee"
+    },
+    {
+      "table": "books",
+      "id": 1043,
+      "slug": "hahnemanns-defence-of-the-organon",
+      "title": "Hahnemann's Defence of the Organon of Rational Medicine"
+    },
+    {
+      "table": "books",
+      "id": 1044,
+      "slug": "additions-to-the-materia-medica-pura",
+      "title": "Additions to the Materia Medica Pura"
+    },
+    {
+      "table": "free_resources",
+      "id": "5e7212d1-05c8-4c26-af5c-337ada36de97",
+      "slug": "krankenjournal-digitale-kritische-edition-df5",
+      "title": "Krankenjournal — Digitale kritische Edition (DF5)"
+    },
+    {
+      "table": "free_resources",
+      "id": "360a2567-3dd3-45a3-a856-6ff450556558",
+      "slug": "leseansicht-krankenjournal-df5-reading-view",
+      "title": "Leseansicht — Krankenjournal DF5 reading view"
+    },
+    {
+      "table": "free_resources",
+      "id": "8c53970f-f3ad-4d9f-9c6c-97c6e4776ebd",
+      "slug": "organon-der-rationellen-heilkunde-1810-first-edition",
+      "title": "Organon der rationellen Heilkunde (1810) — first edition"
+    },
+    {
+      "table": "free_resources",
+      "id": "dbe78b61-860b-4ee3-9209-c4e63980ae4a",
+      "slug": "organon-of-medicine-1901-boericke-tafel",
+      "title": "Organon of medicine (1901, Boericke & Tafel)"
+    },
+    {
+      "table": "free_resources",
+      "id": "10ed99a1-2ffe-49fd-a682-8c00678056e6",
+      "slug": "the-lesser-writings-of-samuel-hahnemann-1852",
+      "title": "The lesser writings of Samuel Hahnemann (1852)"
+    },
+    {
+      "table": "free_resources",
+      "id": "8786f6c1-4a45-4915-ac3d-2cd770985c76",
+      "slug": "the-chronic-diseases-their-peculiar-nature-and-their-homopathic-cure-1904-tafel-translation",
+      "title": "The chronic diseases: their peculiar nature and their homœopathic cure (1904, Tafel translation)"
+    },
+    {
+      "table": "free_resources",
+      "id": "339831bb-a52b-4f89-bfd7-d834022d51c8",
+      "slug": "materia-medica-pura-volume-1-1846-hempel-translation",
+      "title": "Materia medica pura, Volume 1 (1846, Hempel translation)"
+    },
+    {
+      "table": "free_resources",
+      "id": "9e96287e-b4db-4210-80ba-385e756c93a8",
+      "slug": "organon-der-heilkunst-textkritische-ausgabe-ed-josef-m-schmidt",
+      "title": "Organon der Heilkunst. Textkritische Ausgabe — ed. Josef M. Schmidt"
+    },
+    {
+      "table": "free_resources",
+      "id": "58eda20e-3d98-4606-9302-9d8a36b46573",
+      "slug": "fragmenta-de-viribus-medicamentorum-positivis-1824",
+      "title": "Fragmenta de viribus medicamentorum positivis (1824)"
+    },
+    {
+      "table": "free_resources",
+      "id": "f88b5aca-3f49-4aeb-9290-a57fbdc53a3c",
+      "slug": "bestandeubersicht-holdings-overview-of-the-hahnemann-archive",
+      "title": "Beständeübersicht — holdings overview of the Hahnemann archive"
+    },
+    {
+      "table": "free_resources",
+      "id": "5de8092f-4d4b-4971-8493-aa364f2cd5f8",
+      "slug": "the-archive-institut-fur-geschichte-der-medizin",
+      "title": "The Archive — Institut für Geschichte der Medizin"
+    },
+    {
+      "table": "free_resources",
+      "id": "a3afc584-acc4-43ad-b19d-f4259ba21528",
+      "slug": "krankenjournale-publications-and-digital-access",
+      "title": "Krankenjournale — publications and digital access"
+    },
+    {
+      "table": "free_resources",
+      "id": "207a09d3-8273-4b11-8bdb-7363ff4b652c",
+      "slug": "transkriptionshinweise-transcription-guidelines",
+      "title": "Transkriptionshinweise — transcription guidelines"
+    },
+    {
+      "table": "free_resources",
+      "id": "2d0ffdb0-9b23-4fca-aa49-416f6ab0dd68",
+      "slug": "hahnemann-house-trust",
+      "title": "Hahnemann House Trust"
+    },
+    {
+      "table": "free_resources",
+      "id": "b1ebdc2f-8693-4895-8105-c77d94cbdfdd",
+      "slug": "hahnemann-artefacts-collection",
+      "title": "Hahnemann artefacts collection"
+    },
+    {
+      "table": "free_resources",
+      "id": "6f51fe2d-49fd-42f5-9dc9-cf3900061c9d",
+      "slug": "biographies-of-homeopaths",
+      "title": "Biographies of homeopaths"
+    },
+    {
+      "table": "free_resources",
+      "id": "df45f0fe-1cd7-4ea5-af71-aa824c431a49",
+      "slug": "samuel-hahnemann-wellcome-collection-concept-page",
+      "title": "Samuel Hahnemann — Wellcome Collection concept page"
+    },
+    {
+      "table": "free_resources",
+      "id": "c29873ca-182e-42ef-add8-11e7f5f2a001",
+      "slug": "organon-of-the-rational-art-of-healing-1913-dentdutton",
+      "title": "Organon of the rational art of healing (1913, Dent/Dutton)"
+    },
+    {
+      "table": "free_resources",
+      "id": "e2f3cc70-be02-4272-964e-aa7d8614529d",
+      "slug": "mischbestand-samuel-hahnemann-archivportal-d-finding-aid",
+      "title": "Mischbestand Samuel Hahnemann — Archivportal-D finding aid"
+    }
+  ],
+  "at": "2026-10-23T19:25:10.435Z"
+}

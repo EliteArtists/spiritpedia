@@ -1945,6 +1945,12 @@ items one by one.
 8. Commit the audit, the plan and the `.inserted.json` logs (`docs/` doesn't
    deploy).
 
+**Batch mode** (the usual way since 23 Oct 2026): the owner sends several
+audits at once. Ingest them one after another on dev without stopping, then
+give **one** list of pages to check for the whole batch, with the defaults
+applied and anything held back. Live only after their OK for the batch.
+Keep going without them unless something genuinely needs their decision.
+
 **Speed over perfection.** Make sensible default decisions without asking:
 the first good image, the broadest subject dropped when there are more than
 3, genuinely different items with the same title both kept, prices shortened
@@ -2077,6 +2083,7 @@ Copy the audit's image links in; the script keeps or replaces them.
 | Healer | Dev | Live |
 | :--- | :--- | :--- |
 | Neale Donald Walsch (existing) | 23 Oct 2026: 19 videos, 20 books, 14 offerings, 2 free resources | 23 Oct 2026, the same |
-| Napoleon Hill (existing, Ascended Master) | 23 Oct 2026: 20 videos, 21 books, 7 offerings, 20 free resources; booking link removed, YouTube added, Google-thumbnail photo dropped. The 5 Napoleon Hill Institute offerings held (licence not documented) | — |
+| Napoleon Hill (existing, Ascended Master) | 23 Oct 2026: 20 videos, 21 books, 7 offerings, 20 free resources; booking link removed, YouTube added, Google-thumbnail photo dropped. The 5 Napoleon Hill Institute offerings kept out (owner's decision) | 23 Oct 2026, the same |
+| Samuel Hahnemann (new, Ascended Master) | 23 Oct 2026: 3 videos, 9 books, 19 free resources, no paid offerings (public domain: fully free). Left out: the Latin-only Fragmenta book, the weak 4th video, the third-party Organon text | — |
 
 Made with love in Tavira 💫
