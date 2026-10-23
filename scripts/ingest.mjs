@@ -82,9 +82,10 @@ async function insert(table, row) {
   return (await r.json())[0];
 }
 
-// The same slug rules as Admin → Ingestion (ContentIngestion.jsx).
+// The same slug rules as Admin → Ingestion (ContentIngestion.jsx), with
+// accents folded first ("día" → "dia", not "da").
 function slugify(v) {
-  return (v || '').toLowerCase().trim().replace(/[^a-z0-9\s-]/g, '')
+  return (v || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().trim().replace(/[^a-z0-9\s-]/g, '')
     .replace(/[\s_]+/g, '-').replace(/-+/g, '-').replace(/^-+|-+$/g, '');
 }
 const takenSlugs = {};
@@ -192,6 +193,10 @@ if (doRollback) {
     const r = await fetch(`${BASE}/rest/v1/${row.table}?id=eq.${row.id}`, { method: 'DELETE', headers });
     if (!r.ok) throw new Error(`DELETE ${row.table} ${row.id}: ${r.status} ${await r.text()}`);
   }
+  if (log.healer_update) {
+    const r = await fetch(`${BASE}/rest/v1/healers?id=eq.${log.healer_update.id}`, { method: 'PATCH', headers, body: JSON.stringify(log.healer_update.before) });
+    if (!r.ok) throw new Error(`RESTORE healer: ${r.status} ${await r.text()}`);
+  }
   if (log.healer) {
     const r = await fetch(`${BASE}/rest/v1/healers?id=eq.${log.healer.id}`, { method: 'DELETE', headers });
     if (!r.ok) throw new Error(`DELETE healer ${log.healer.id}: ${r.status} ${await r.text()}`);
@@ -226,7 +231,7 @@ function fixSubjects(kind, item) {
 
 // ── The healer ───────────────────────────────────────────────────────────
 const slug = plan.healer?.healer_slug;
-let [healer] = await get(`healers?select=id,healer_slug,name,tier,image_urls&healer_slug=eq.${encodeURIComponent(slug)}`);
+let [healer] = await get(`healers?select=*&healer_slug=eq.${encodeURIComponent(slug)}`);
 const create = !healer ? plan.healer.create : null;
 if (!healer && !create) problems.push(`healer "${slug}" doesn't exist and the plan doesn't create it`);
 if (create) {
@@ -240,6 +245,9 @@ if (create) {
   const [byName] = await get(`healers?select=healer_slug&name=ilike.${encodeURIComponent(create.name)}`);
   if (byName) problems.push(`a healer named "${create.name}" already exists as ${byName.healer_slug}`);
 }
+const UPDATABLE = ['bio', 'image_urls', 'subject_slugs', 'booking_url', 'website_url', 'youtube_url', 'instagram_url',
+  'facebook_url', 'twitter_url', 'tiktok_url', 'contact_email', 'birth_year', 'death_year', 'tier', 'entity_type'];
+for (const k of Object.keys(plan.healer?.update || {})) if (!UPDATABLE.includes(k)) problems.push(`healer update: "${k}" can't be changed here`);
 say(`Healer: ${healer ? `${healer.name} (id ${healer.id}, ${healer.tier})` : `${slug}: new, ${create?.name}, suggested ${create?.tier} / ${create?.entity_type}`}`);
 
 // ── Images, all in parallel ──────────────────────────────────────────────
@@ -251,8 +259,27 @@ const frozen = plan.images_final === true;
 // face), else their site's share image.
 let healerPhoto = null;
 const healerJob = (async () => {
-  if (!create || frozen) {
-    healerPhoto = healer?.image_urls?.[0] || null;
+  if (frozen) {
+    healerPhoto = (plan.healer.update?.image_urls || create?.image_urls || healer?.image_urls || [])[0] || null;
+    return;
+  }
+  if (!create) {
+    // An existing healer: drop photos that are unusable (a Google thumbnail,
+    // a dead link, too small); find one if none is left.
+    const current = healer?.image_urls || [];
+    const good = [];
+    for (const u of current) if ((await probeImage(u)).ok) good.push(u);
+    if (good.length === 0) {
+      const found = (healer?.youtube_url && await pageImage(healer.youtube_url, { shareOnly: true }))
+        || (healer?.website_url && await pageImage(healer.website_url, { shareOnly: true }));
+      if (found) good.push(found);
+    }
+    if (good.length && good.join() !== current.join()) {
+      plan.healer.update = { ...(plan.healer.update || {}), image_urls: good };
+      decisions.push(`healer photos: removed ${current.length - good.filter((u) => current.includes(u)).length} unusable, ${good.length} kept`);
+    }
+    if (!good.length) unsolved.push(`healer "${healer?.name}": no usable profile photo`);
+    healerPhoto = good[0] || null;
     return;
   }
   const kept = [];
@@ -267,8 +294,46 @@ const healerJob = (async () => {
   if (kept.length === 0) unsolved.push(`healer "${create.name}": no profile photo on their YouTube channel or site`);
 })();
 jobs.push(healerJob);
+// Videos: still on YouTube (oEmbed), with their channel and, when the plan
+// has none, their title.
+for (const v of plan.videos || []) {
+  if (frozen) continue;
+  jobs.push((async () => {
+    const id = youtubeId(v.url);
+    if (!id) return; // reported below
+    try {
+      const r = await fetch(`https://www.youtube.com/oembed?format=json&url=https://www.youtube.com/watch?v=${id}`, { signal: timed() });
+      if (r.status === 404 || r.status === 401 || r.status === 403) { v.skip = 'unavailable on YouTube'; return; }
+      if (!r.ok) return;
+      const j = await r.json();
+      v.channel = j.author_name;
+      if (!v.title) v.title = j.title;
+    } catch { /* unknown: leave it in */ }
+  })());
+}
+
+// Is the ASIN on amazon.com? A UK-only edition 404s there; then the book
+// keeps its amazon.co.uk link (a default). Amazon's bot answers (503) count
+// as found.
+async function amazonStatus(host, asin) {
+  try {
+    const r = await fetch(`https://www.${host}/dp/${asin}`, { headers: { 'User-Agent': UA, Accept: 'text/html' }, signal: timed() });
+    return r.status;
+  } catch { return 0; }
+}
 for (const b of plan.books || []) {
   b.asin = (b.asin || asinOf(b.amazon_url) || '').toUpperCase();
+  if (!frozen && /^[A-Z0-9]{10}$/.test(b.asin) && !b.store) {
+    jobs.push((async () => {
+      if (await amazonStatus('amazon.com', b.asin) !== 404) { b.store = 'amazon.com'; return; }
+      if (await amazonStatus('amazon.co.uk', b.asin) === 200) {
+        b.store = 'amazon.co.uk';
+        decisions.push(`${label('book', b)}: not on amazon.com, kept the amazon.co.uk link`);
+        return;
+      }
+      unsolved.push(`${label('book', b)}: ASIN ${b.asin} found on neither amazon.com nor amazon.co.uk`);
+    })());
+  }
   jobs.push((async () => {
     if (frozen || !/^[A-Z0-9]{10}$/.test(b.asin)) return; // reported below
     const built = await amazonCover(b.asin);
@@ -315,6 +380,7 @@ const existing = healer ? {
 const queue = [];
 
 for (const v of plan.videos || []) {
+  if (v.skip) { decisions.push(`${label('video', v)}: left out, ${v.skip}`); continue; }
   fixSubjects('video', v);
   const id = youtubeId(v.url);
   if (!id) { problems.push(`${label('video', v)}: no YouTube id in ${v.url}`); continue; }
@@ -386,6 +452,7 @@ if (otherNotes.length) { say('Notes:'); otherNotes.forEach((n) => say(`  - ${n}`
 if (unsolved.length) { say('UNSOLVED (find these, or set the image to null for none):'); unsolved.forEach((u) => say(`  - ${u}`)); }
 if (problems.length) { say('PROBLEMS (need a decision):'); problems.forEach((p) => say(`  - ${p}`)); }
 
+if (plan.healer?.update && Object.keys(plan.healer.update).length) say(`Healer changes: ${Object.keys(plan.healer.update).join(', ')}`);
 if (!doInsert) process.exit(problems.length || unsolved.length ? 2 : 0);
 if (problems.length || unsolved.length) { say('Nothing inserted.'); process.exit(2); }
 
@@ -413,6 +480,15 @@ if (create) {
   log.healer = { id: healer.id, healer_slug: slug };
   saveLog();
   for (const q of queue) if ('healer_id' in q.row) q.row.healer_id = healer.id;
+}
+const update = { ...(plan.healer.update || {}) };
+if (!create && healer && Object.keys(update).length) {
+  const before = Object.fromEntries(Object.keys(update).map((k) => [k, healer[k] ?? null]));
+  const r = await fetch(`${BASE}/rest/v1/healers?id=eq.${healer.id}`, { method: 'PATCH', headers, body: JSON.stringify(update) });
+  if (!r.ok) throw new Error(`UPDATE healer: ${r.status} ${await r.text()}`);
+  log.healer_update = { id: healer.id, before };
+  saveLog();
+  say(`  ~ healers ${slug}: ${Object.keys(update).join(', ')}`);
 }
 for (const q of queue) {
   q.row.slug = await uniqueSlug(q.table, q.title);

@@ -1978,7 +1978,16 @@ node scripts/ingest.mjs <plan.json> --env dev --rollback    # delete exactly wha
     deliberately none.
   - **New healers:** their YouTube channel's picture (nearly always their
     face), else their official site's share image.
-  - **Videos:** nothing; YouTube supplies the thumbnail.
+  - **Videos:** no image (YouTube supplies the thumbnail); each is confirmed
+    still on YouTube (oEmbed), and one that isn't is left out.
+  - **An existing healer's photos:** unusable ones (Google thumbnails, dead
+    links, too small) are dropped; if none is left, one is found as for a
+    new healer.
+- **Amazon:** each ASIN is checked on amazon.com; a UK-only edition keeps its
+  `amazon.co.uk` link (a default, listed).
+- **An existing healer** can be changed through the plan's
+  `healer.update` (e.g. `{"booking_url": null, "youtube_url": "…"}`); the
+  old values are logged, and `--rollback` puts them back.
 - **Defaults it applies, and lists:** more than 3 subjects → the broadest go
   first (`spirituality`, `consciousness`, `spiritual-awakening`, … see
   `BROADEST`); the image fallbacks above.
@@ -2030,7 +2039,8 @@ node scripts/ingest.mjs <plan.json> --env dev --rollback    # delete exactly wha
 }
 ```
 
-`create` only for a new healer (leave it out when the healer exists). Any
+`create` only for a new healer (leave it out when the healer exists);
+`update` only for an existing one (only the fields to change). Any
 item may carry its own `slug` (the audit's, usually shorter than the title).
 Copy the audit's image links in; the script keeps or replaces them.
 
@@ -2066,6 +2076,7 @@ Copy the audit's image links in; the script keeps or replaces them.
 
 | Healer | Dev | Live |
 | :--- | :--- | :--- |
-| Neale Donald Walsch (existing) | 23 Oct 2026: 19 videos, 20 books, 14 offerings, 2 free resources | — |
+| Neale Donald Walsch (existing) | 23 Oct 2026: 19 videos, 20 books, 14 offerings, 2 free resources | 23 Oct 2026, the same |
+| Napoleon Hill (existing, Ascended Master) | 23 Oct 2026: 20 videos, 21 books, 7 offerings, 20 free resources; booking link removed, YouTube added, Google-thumbnail photo dropped. The 5 Napoleon Hill Institute offerings held (licence not documented) | — |
 
 Made with love in Tavira 💫
