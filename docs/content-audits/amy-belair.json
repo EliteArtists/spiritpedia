@@ -34,15 +34,6 @@
       "channel": "Amy Belair"
     },
     {
-      "title": "2022 Tarot & Akashic Reading",
-      "url": "https://www.youtube.com/watch?v=gyWtsCRisXE",
-      "subjects": [
-        "akashic-records",
-        "channelled-teachings"
-      ],
-      "channel": "Amy Belair"
-    },
-    {
       "title": "5D Magic & Manifestation Masterclass",
       "url": "https://www.youtube.com/watch?v=DxZp_W1xKeE",
       "subjects": [
@@ -58,24 +49,6 @@
       "subjects": [
         "spiritual-awakening",
         "akashic-records"
-      ],
-      "channel": "Amy Belair"
-    },
-    {
-      "title": "2023 Year Ahead Tarot & Akashic Reading",
-      "url": "https://www.youtube.com/watch?v=J3pdZCMMdzU",
-      "subjects": [
-        "akashic-records",
-        "channelled-teachings"
-      ],
-      "channel": "Amy Belair"
-    },
-    {
-      "title": "2024 Year Ahead Tarot & Akashic Reading",
-      "url": "https://www.youtube.com/watch?v=-KdXjOt0zH4",
-      "subjects": [
-        "akashic-records",
-        "channelled-teachings"
       ],
       "channel": "Amy Belair"
     },
@@ -99,24 +72,6 @@
       "channel": "Amy Belair"
     },
     {
-      "title": "The Devil, Contractions, Quantum Leaps & Walk-Ins: Energy Report for January 2022",
-      "url": "https://www.youtube.com/watch?v=K8gnhs01v3Q",
-      "subjects": [
-        "channelled-teachings",
-        "akashic-records"
-      ],
-      "channel": "Amy Belair"
-    },
-    {
-      "title": "Energy Report, July 7–13, 2023",
-      "url": "https://www.youtube.com/watch?v=hVxbz-WCwEA",
-      "subjects": [
-        "channelled-teachings",
-        "akashic-records"
-      ],
-      "channel": "Amy Belair"
-    },
-    {
       "title": "Galactic Gateway Masterclass",
       "url": "https://www.youtube.com/watch?v=pyF1KOVzerM",
       "subjects": [
@@ -133,24 +88,6 @@
         "akashic-records",
         "manifestation",
         "spiritual-awakening"
-      ],
-      "channel": "Amy Belair"
-    },
-    {
-      "title": "June 2022 Energy Report",
-      "url": "https://www.youtube.com/watch?v=2iXyfBewVu4",
-      "subjects": [
-        "channelled-teachings",
-        "akashic-records"
-      ],
-      "channel": "Amy Belair"
-    },
-    {
-      "title": "December 2023 Energy Report",
-      "url": "https://www.youtube.com/watch?v=4X2AlZEgCEU",
-      "subjects": [
-        "channelled-teachings",
-        "akashic-records"
       ],
       "channel": "Amy Belair"
     },
@@ -200,13 +137,6 @@
         "consciousness"
       ],
       "channel": "Amy Belair"
-    }
-  ],
-  "held_back": [
-    {
-      "title": "Manifest Your Pregnancy, Baby, Child Masterclass with Amy Belair",
-      "url": "https://www.youtube.com/watch?v=YUUKS7P-TwY",
-      "note": "fertility/health outcome framed as manifestation: held back for the owner"
     }
   ],
   "left_out": [
@@ -319,5 +249,9 @@
       ]
     }
   ],
-  "images_final": true
+  "images_final": true,
+  "dropped": [
+    "Manifest Your Pregnancy, Baby, Child Masterclass (health-claim line, owner 24 Oct 2026)",
+    "2022/2023/2024 year-ahead tarot readings and 4 monthly energy reports (evergreen-only rule, owner 24 Oct 2026)"
+  ]
 }
