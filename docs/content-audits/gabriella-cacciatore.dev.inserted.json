@@ -1,0 +1,28 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 167,
+    "healer_slug": "gabriella-cacciatore"
+  },
+  "rows": [
+    {
+      "table": "videos",
+      "id": 2440,
+      "slug": "unbroken-virtual-book-launch",
+      "title": "Unbroken Virtual Book Launch"
+    },
+    {
+      "table": "books",
+      "id": 1093,
+      "slug": "unbroken",
+      "title": "Unbroken: How I Remembered, Unraveled, and Returned Home to Myself"
+    },
+    {
+      "table": "courses",
+      "id": "fdc3d05a-0807-4b9b-a249-fe32b9d5b699",
+      "slug": "turning-wounds-into-words",
+      "title": "Turning Wounds into Words"
+    }
+  ],
+  "at": "2026-10-24T18:41:38.616Z"
+}

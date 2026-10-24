@@ -2189,5 +2189,7 @@ dev, give the pages to check, stop. Live after their OK, as for healers.
 | Samuel Hahnemann (new, Ascended Master) | 23 Oct 2026: 3 videos, 9 books, 19 free resources, no paid offerings (public domain: fully free). Left out: the Latin-only Fragmenta book, the weak 4th video, the third-party Organon text | 23 Oct 2026, the same |
 | Homeopaths batch 1 (all new, `homeopaths-batch-1.md`): George Vithoulkas, Dr. Rajan Sankaran, Dr. Farokh J. Master, Joette Calabrese, Dana Ullman | 23 Oct 2026, under the homeopathy rules: 79 videos, 44 books, 29 offerings, 20 free resources | 23 Oct 2026, the same (all Luminary, confirmed) |
 | Awaken Village Press (new publisher, §18.5) | 23 Oct 2026: the publisher (Rising Star, logo: their lotus icon), no authors linked (none on Spiritpedia yet; 10 listed as missing) | 23 Oct 2026, the same |
+| Amanda Johnson (new, Rising Star; Awaken Village Press's founder, linked to the press) | 24 Oct 2026: 12 videos, 2 books, 2 offerings. Dropped 4 publishing-industry videos; held back the "Dear Human Child" launch video for its author; "Unbroken" launch moved to Gabriella Cacciatore | 24 Oct 2026, the same |
+| Awaken Village Press authors batch 2 (new, Rising Star, linked to the press): Amron Bevels, Gabriella Cacciatore | 24 Oct 2026: Amron 17 videos, 2 books, 11 offerings (images from her store page; 3 Money Matrix sales videos and her 1:1 services held back); Gabriella 1 video (her book launch), 1 book, 1 offering (her own channel's 2 videos and her 1:1 coaching left out) | |
 
 Made with love in Tavira 💫

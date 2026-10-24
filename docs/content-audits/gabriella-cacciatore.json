@@ -1,0 +1,74 @@
+{
+  "healer": {
+    "healer_slug": "gabriella-cacciatore",
+    "create": {
+      "name": "Gabriella Cacciatore",
+      "bio": "Gabriella Cacciatore is a trauma coach, grounded spiritual mentor, and somatic healing guide whose authority comes from the hardest-won place there is: her own survival. For years she lived in survival mode — disconnected from her body, pushing through life — until, at twenty-five, after years of chronic pain and emotional overwhelm, full-body memories revealed the childhood sexual abuse she had survived. Her memoir Unbroken: How I Remembered, Unraveled, and Returned Home to Myself (2025) tells, with unflinching honesty, the story of what happened when she finally listened to what her body had been saying all along.\n\nHer teaching carries the memoir’s deepest conviction — in her own words, “healing is not from a healer; healing is from yourself.” Now based in Mexico, Gabriella supports survivors in reconnecting with their bodies through somatic practice, nervous-system regulation, and grounded spiritual mentorship, offering the thing she once needed most: someone to say you’re not crazy, you’re remembering — and you’re not broken. Her book is her love letter to survivors everywhere; her work is its living continuation.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "worldwide",
+      "subjects": [
+        "self-healing",
+        "shadow-work",
+        "spiritual-awakening"
+      ],
+      "website_url": "https://www.gabriellacacciatore.com/",
+      "booking_url": "https://www.gabriellacacciatore.com/",
+      "contact_email": null,
+      "image_urls": [
+        "https://static.wixstatic.com/media/ceb4f8_8aa0fe69c16848718c88a35537f74f2e~mv2.png/v1/fit/w_1000,h_1000/ceb4f8_8aa0fe69c16848718c88a35537f74f2e~mv2.png"
+      ]
+    }
+  },
+  "videos": [
+    {
+      "title": "Unbroken Virtual Book Launch",
+      "url": "https://www.youtube.com/watch?v=MSvHEAQodfs",
+      "subjects": [
+        "self-healing",
+        "shadow-work"
+      ],
+      "channel": "Awaken Village Press"
+    }
+  ],
+  "books": [
+    {
+      "title": "Unbroken: How I Remembered, Unraveled, and Returned Home to Myself",
+      "slug": "unbroken",
+      "author": "Gabriella Cacciatore",
+      "asin": "1957408235",
+      "store": "amazon.com",
+      "goodreads_url": "https://www.goodreads.com/book/show/240291877-unbroken",
+      "worldofbooks_url": null,
+      "description": "A raw, unflinching memoir about Gabriella’s body surfacing buried memories of childhood trauma at 25, and the long, nonlinear road that followed: misdiagnosis, spiritual awakening, plant medicine and parts work. It doesn’t offer a tidy recovery story. It’s written for anyone whose healing feels too complicated, or who has done years of therapy and still feels stuck in their body.",
+      "subjects": [
+        "self-healing",
+        "plant-medicine",
+        "shadow-work"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1957408235.01._SCLZZZZZZZ_.jpg"
+    }
+  ],
+  "courses": [
+    {
+      "title": "Turning Wounds into Words",
+      "url": "https://www.awakenvillagepress.com/wounds-into-words",
+      "description": "A writing programme run with her publisher for trauma survivors who want to write their story. It uses body-based support so the writing goes at a pace you can handle. It grew out of her experience writing Unbroken.",
+      "price": "Contact for pricing",
+      "image": "https://static.wixstatic.com/media/9acef4_3f76306d37e942f39f7dd65f52f6d3e2%7Emv2.png/v1/fit/w_2500,h_1330,al_c/9acef4_3f76306d37e942f39f7dd65f52f6d3e2%7Emv2.png",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "self-healing",
+        "shadow-work"
+      ]
+    }
+  ],
+  "free_resources": [],
+  "left_out": [
+    "#somaticexercises (Short, 78 views) and the client testimonial video: not worth listing (audit)",
+    "3-Month Container, 6-Month Container, Single Session, SOMATIC HIIT, Team Workshops & Keynotes, executive coaching, discovery call: 1:1 coaching services, left out as for Amanda and Amron"
+  ],
+  "images_final": true
+}

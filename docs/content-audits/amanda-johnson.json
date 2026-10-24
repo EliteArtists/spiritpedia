@@ -78,14 +78,6 @@
       "channel": "Awaken Village Press"
     },
     {
-      "title": "At the Table: A New Publishing Model for Creatives (Rooted in Regeneration, Not Extraction)",
-      "url": "https://www.youtube.com/watch?v=X7trBc_-MK4",
-      "subjects": [
-        "soul-purpose"
-      ],
-      "channel": "Awaken Village Press"
-    },
-    {
       "title": "The Truth About Inner Peace (Finding Sovereignty Within) with Eva Dalak",
       "url": "https://www.youtube.com/watch?v=ySALvSssX6M",
       "subjects": [
@@ -116,14 +108,6 @@
       "channel": "Awaken Village Press"
     },
     {
-      "title": "At the Table: Creative Tension between Impact and Visibility",
-      "url": "https://www.youtube.com/watch?v=w26v6ibCyq0",
-      "subjects": [
-        "soul-purpose"
-      ],
-      "channel": "Awaken Village Press"
-    },
-    {
       "title": "Turning Wounds into Words",
       "url": "https://www.youtube.com/watch?v=q9TXPEcsVtQ",
       "subjects": [
@@ -142,43 +126,11 @@
       "channel": "Awaken Village Press"
     },
     {
-      "title": "Dear Human Child Virtual Launch",
-      "url": "https://www.youtube.com/watch?v=qBznytIKAqw",
-      "subjects": [
-        "spirituality"
-      ],
-      "channel": "Awaken Village Press"
-    },
-    {
-      "title": "Author Spotlight with Zach Carlsen",
-      "url": "https://www.youtube.com/watch?v=slP3ZcjLbEI",
-      "subjects": [
-        "soul-purpose"
-      ],
-      "channel": "Awaken Village Press"
-    },
-    {
       "title": "From Silence to Stories (How Buried Truths Begin to Find a Voice) with Gina Gretta",
       "url": "https://www.youtube.com/watch?v=BkkXFPtLDL0",
       "subjects": [
         "self-healing",
         "shadow-work"
-      ],
-      "channel": "Awaken Village Press"
-    },
-    {
-      "title": "At the Table: The Power of Collective Creation",
-      "url": "https://www.youtube.com/watch?v=nWC0Vqm0Mdk",
-      "subjects": [
-        "soul-purpose"
-      ],
-      "channel": "Awaken Village Press"
-    },
-    {
-      "title": "Unbroken Virtual Book Launch",
-      "url": "https://www.youtube.com/watch?v=MSvHEAQodfs",
-      "subjects": [
-        "self-healing"
       ],
       "channel": "Awaken Village Press"
     }
@@ -248,5 +200,21 @@
     }
   ],
   "free_resources": [],
-  "images_final": true
+  "images_final": true,
+  "held_back": [
+    {
+      "title": "Dear Human Child Virtual Launch",
+      "url": "https://www.youtube.com/watch?v=qBznytIKAqw",
+      "note": "another author's book launch: add to that author's profile when they are ingested"
+    }
+  ],
+  "dropped": [
+    "At the Table: A New Publishing Model for Creatives",
+    "At the Table: Creative Tension between Impact and Visibility",
+    "At the Table: The Power of Collective Creation",
+    "Author Spotlight with Zach Carlsen"
+  ],
+  "moved": {
+    "Unbroken Virtual Book Launch (MSvHEAQodfs)": "gabriella-cacciatore"
+  }
 }
