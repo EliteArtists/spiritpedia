@@ -194,6 +194,10 @@ if (doRollback) {
     const r = await fetch(`${BASE}/rest/v1/${row.table}?id=eq.${row.id}`, { method: 'DELETE', headers });
     if (!r.ok) throw new Error(`DELETE ${row.table} ${row.id}: ${r.status} ${await r.text()}`);
   }
+  for (const c of log.co_author_updates || []) {
+    const r = await fetch(`${BASE}/rest/v1/books?id=eq.${c.id}`, { method: 'PATCH', headers, body: JSON.stringify({ co_healer_slugs: c.before }) });
+    if (!r.ok) throw new Error(`RESTORE book co-authors ${c.id}: ${r.status} ${await r.text()}`);
+  }
   if (log.healer_update) {
     const r = await fetch(`${BASE}/rest/v1/healers?id=eq.${log.healer_update.id}`, { method: 'PATCH', headers, body: JSON.stringify(log.healer_update.before) });
     if (!r.ok) throw new Error(`RESTORE healer: ${r.status} ${await r.text()}`);
@@ -536,11 +540,33 @@ for (const b of plan.books || []) {
   const stem = b.title.split(/[:(]/)[0].trim().replace(/[*,()]/g, '');
   const elsewhere = await get(`books?select=id,healer_slug&title=ilike.${encodeURIComponent(stem)}*`);
   if (elsewhere.length) notes.push(`${label('book', b)}: a book with this title is already in under ${elsewhere[0].healer_slug || 'no healer'} (id ${elsewhere[0].id}); added anyway`);
-  queue.push({ table: 'books', title: b.slug || b.title, row: {
+  const row = {
     title: b.title, amazon_url, author: b.author || null, mock_cover_url: b.cover || null,
     goodreads_url: b.goodreads_url || null, worldofbooks_url: b.worldofbooks_url || null,
     description: b.description || null, healer_slug: slug, subject_slugs: b.subjects,
-  } });
+  };
+  // Co-authors (migration 0027): other healers' slugs; each must exist.
+  const coAuthors = (b.co_authors || []).filter((x) => x !== slug);
+  for (const x of coAuthors) {
+    if (!(await get(`healers?select=id&healer_slug=eq.${encodeURIComponent(x)}`)).length) problems.push(`${label('book', b)}: co-author "${x}" isn't a healer`);
+  }
+  if (coAuthors.length) row.co_healer_slugs = [...new Set(coAuthors)];
+  queue.push({ table: 'books', title: b.slug || b.title, row });
+}
+
+// Co-authors added to books already in (migration 0027):
+// "co_authorships": [{ "book_slug": "…", "add": ["healer-slug", …] }].
+const coAuthorships = [];
+for (const c of plan.co_authorships || []) {
+  const [book] = await get(`books?select=id,slug,title,healer_slug,co_healer_slugs&slug=eq.${encodeURIComponent(c.book_slug)}`);
+  if (!book) { problems.push(`co-authorship: no book with slug "${c.book_slug}"`); continue; }
+  const before = book.co_healer_slugs || [];
+  const add = (c.add || []).filter((x) => x !== book.healer_slug && !before.includes(x));
+  for (const x of add) {
+    if (!(await get(`healers?select=id&healer_slug=eq.${encodeURIComponent(x)}`)).length) problems.push(`co-authorship "${book.title}": "${x}" isn't a healer`);
+  }
+  if (add.length) coAuthorships.push({ id: book.id, title: book.title, before, after: [...before, ...add] });
+  else notes.push(`skip co-authorship "${book.title}": already done`);
 }
 
 for (const c of plan.courses || []) {
@@ -576,6 +602,7 @@ savePlan();
 
 const count = (t) => queue.filter((q) => q.table === t).length;
 say(`To add on ${envName}: ${count('videos')} videos, ${count('books')} books, ${count('courses')} offerings, ${count('free_resources')} free resources${create ? ', and the healer' : ''}`);
+coAuthorships.forEach((c) => say(`Co-authors for "${c.title}": ${c.after.join(', ')}`));
 if (decisions.length) { say('Decided by default:'); decisions.forEach((d) => say(`  - ${d}`)); }
 const already = notes.filter((n) => n.startsWith('skip '));
 if (already.length) say(`Skipped ${already.length} already in or removed by their owner${args.includes('--verbose') ? ':' : ' (--verbose lists them)'}`);
@@ -629,6 +656,13 @@ for (const q of queue) {
   log.rows.push({ table: q.table, id: r.id, slug: r.slug, title: r.title });
   saveLog();
 }
+for (const c of coAuthorships) {
+  const r = await fetch(`${BASE}/rest/v1/books?id=eq.${c.id}`, { method: 'PATCH', headers, body: JSON.stringify({ co_healer_slugs: c.after }) });
+  if (!r.ok) throw new Error(`UPDATE book co-authors "${c.title}": ${r.status} ${await r.text()}`);
+  (log.co_author_updates ||= []).push({ id: c.id, title: c.title, before: c.before });
+  saveLog();
+  say(`  ~ books "${c.title}": co-authors ${c.after.join(', ')}`);
+}
 plan.images_final = true;
 savePlan();
-say(`Inserted ${queue.length} rows${create ? ' and the healer' : ''}. Log: ${path.relative(process.cwd(), logPath)}`);
+say(`Inserted ${queue.length} rows${create ? ' and the healer' : ''}${coAuthorships.length ? `, co-authors on ${coAuthorships.length} book(s)` : ''}. Log: ${path.relative(process.cwd(), logPath)}`);

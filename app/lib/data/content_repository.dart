@@ -2,6 +2,7 @@ import 'dart:math';
 
 import 'package:supabase_flutter/supabase_flutter.dart';
 
+import 'book_authors.dart';
 import 'models.dart';
 
 /// Everything the explore screens read. READ-ONLY: the anon key can read every
@@ -292,12 +293,14 @@ class SupabaseContentRepository implements ContentRepository {
 
   @override
   Future<List<Book>> booksByHealers(List<String> healerSlugs) async {
-    if (healerSlugs.isEmpty) return const [];
+    // As main author or co-author (migration 0027).
+    final filter = booksByAuthorsFilter(healerSlugs);
+    if (filter == null) return const [];
     final rows = await _all(
       () => _db
           .from('books')
           .select()
-          .inFilter('healer_slug', healerSlugs)
+          .or(filter)
           .order('created_at', ascending: false)
           .order('id', ascending: false),
     );

@@ -115,7 +115,7 @@ final publisherProvider = FutureProvider.family<PublisherContent?, String>((
             author: a,
             books: [
               for (final b in books)
-                if (b.healerSlug == a.slug) b,
+                if (b.authorSlugs.contains(a.slug)) b,
             ],
           ),
       ].where((s) => s.books.isNotEmpty).toList()..sort((a, b) {

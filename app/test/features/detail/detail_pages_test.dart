@@ -49,6 +49,7 @@ void main() {
     Widget screen, {
     MemorySavedStore? store,
     bool signedIn = false,
+    FakeContentRepository? repo,
   }) async {
     final saved = store ?? MemorySavedStore();
     final account = FakeAccountService();
@@ -59,7 +60,9 @@ void main() {
         overrides: [
           reviewsServiceProvider.overrideWithValue(FakeReviewsService()),
           accountServiceProvider.overrideWithValue(account),
-          contentRepositoryProvider.overrideWithValue(FakeContentRepository()),
+          contentRepositoryProvider.overrideWithValue(
+            repo ?? FakeContentRepository(),
+          ),
           savedStoreProvider.overrideWithValue(saved),
           shareLauncherProvider.overrideWithValue(
             (link, title, origin) async => shared.add(link),
@@ -220,6 +223,52 @@ void main() {
     expect(find.text('Our Authors'), findsOneWidget);
     expect(find.text('Published Titles'), findsOneWidget);
     expect(find.text('The Power of Now'), findsOneWidget);
+  });
+
+  group('co-authors (migration 0027)', () {
+    FakeContentRepository repo() =>
+        FakeContentRepository()..withCoAuthoredBook = true;
+
+    testWidgets('the book names both authors, each one tappable', (
+      tester,
+    ) async {
+      await pump(
+        tester,
+        const BookScreen(slug: 'stillness-and-breath'),
+        repo: repo(),
+      );
+      expect(find.text('By '), findsOneWidget);
+      expect(find.text('Eckhart Tolle'), findsOneWidget);
+      expect(find.text(' and '), findsOneWidget);
+      expect(find.text('Wim Hof'), findsOneWidget);
+    });
+
+    testWidgets('a one-author book keeps its single "By" link', (tester) async {
+      await pump(
+        tester,
+        const BookScreen(slug: 'the-power-of-now'),
+        repo: repo(),
+      );
+      expect(find.text('By Eckhart Tolle'), findsOneWidget);
+    });
+
+    testWidgets("the co-author's teacher page shows the book", (tester) async {
+      await pump(tester, const TeacherScreen(slug: 'wim-hof'), repo: repo());
+      expect(find.text('Books & Literature'), findsOneWidget);
+      expect(find.text('Stillness and Breath'), findsOneWidget);
+    });
+
+    testWidgets('the publisher puts it on both authors\' shelves', (
+      tester,
+    ) async {
+      await pump(
+        tester,
+        const PublisherScreen(slug: 'hay-house'),
+        repo: repo(),
+      );
+      expect(find.text('Stillness and Breath'), findsNWidgets(2));
+      expect(find.text('The Power of Now'), findsOneWidget);
+    });
   });
 
   testWidgets('an empty library explains how to fill it', (tester) async {

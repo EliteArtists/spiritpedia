@@ -115,7 +115,11 @@ class BookScreen extends ConsumerWidget {
     final words = [
       DetailTitle(book.title),
       const SizedBox(height: 8),
-      ByLine(healerSlug: book.healerSlug, fallback: book.author),
+      ByLine(
+        healerSlug: book.healerSlug,
+        coHealerSlugs: book.coHealerSlugs,
+        fallback: book.author,
+      ),
       const SizedBox(height: 10),
       ReviewSummary(bookReviews(book.slug)),
     ];

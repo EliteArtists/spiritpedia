@@ -535,6 +535,14 @@ afterwards; live is checked read-only.
   team. Service role only; deleted with the account; rows older than 12
   months are deleted by the daily purge.
 
+**`0027_book_co_authors`** (24 Oct 2026). Co-written books (§17.5).
+- `books.co_healer_slugs` (text array, default empty): the co-authors' healer
+  slugs. `healer_slug` stays the main author. A CHECK keeps the main author
+  out of the list; a GIN index serves "books where this healer is a
+  co-author".
+- No policy changes: content stays read-only for everyone but the service
+  role (`0007` covers every column).
+
 ### 8.2 0000–0011
 
 | File | What |
@@ -1009,7 +1017,7 @@ detail pages, email-code sign-in with Library sync and account deletion, push.
 | 23 | 22 Oct | **On TestFlight.** Firebase moved to the love@spiritpedia.co projects (`spiritpedia-ad62b` / `spiritpedia-dev-5e4d5`). Push checked on iPhone and iPad |
 | **24** | 22 Oct | **Current build (iOS IPA and Android bundle), waiting to be uploaded.** The welcome notification is asked for until the server confirms it (three tries, then at each start; build 23's iPad never sent the request); "Turn off notifications on this phone" removes the token it registered (it used to fail on the iPad); Account type shows the type set at approval; **Android**: release signing with the Play upload key, approximate-location permission, a notification arriving while the app is open shows as an in-app note with **Open**. 316 tests |
 
-**Waiting for the next build (25)** — in the code, committed, tested (320
+**Waiting for the next build (25)** — in the code, committed, tested (328
 tests), not yet in any build:
 - **Publishers:** any logo on a white, rounded, padded panel
   (`PublisherLogo` in `shared/widgets/cards.dart`), on the card and the page;
@@ -1020,6 +1028,10 @@ tests), not yet in any build:
 - **The medical-care note** ("Complementary to, not a replacement for, medical
   care.") on the homeopathy subject screen and on homeopaths' profiles
   (`core/safety/medical_note.dart`), as on the website (§18.4).
+- **Co-written books** (migration `0027`): a book shows on every author's
+  teacher page and publisher shelf, and the book screen names them all, each
+  tappable (`data/book_authors.dart`, `Book.coHealerSlugs`, `ByLine`), as on
+  the website (§17.5). Needs `0027` on live, which comes before this build.
 
 ### 10.2 Structure and startup
 
@@ -1886,6 +1898,18 @@ claimed and has its own dashboard.
   shelf per author). With no books yet it says **"Their authors are joining
   Spiritpedia soon."**, which goes by itself once a linked author has a book.
 
+**Co-written books (migration `0027`; website since 24 Oct 2026, app from
+build 25).** A book has one main author (`books.healer_slug`) and any number
+of co-authors (`books.co_healer_slugs`). A co-written book shows on **every**
+author's teacher page and on each author's shelf on a publisher page, and the
+book page names them all, each linked ("By Amron Bevels and Amy Belair").
+Editing (the practitioner and publisher dashboards, the admin) stays with the
+main author. The shared helpers: `web/utils/bookAuthors.js` and
+`app/lib/data/book_authors.dart` (the same filter:
+`healer_slug.in.(…),co_healer_slugs.ov.{…}`). Ingestion adds co-authors
+through the plan (§18.3). Search, Explore More and the subject pages don't
+filter by author, so they're unchanged.
+
 ### 17.6 Amazon Associates
 
 - Tags are decided in one place per platform (`web/utils/affiliate.js`,
@@ -2072,7 +2096,9 @@ node scripts/ingest.mjs <plan.json> --env dev --rollback    # delete exactly wha
   },
   "videos": [{ "title": "", "url": "https://www.youtube.com/watch?v=…", "subjects": [] }],
   "books": [{ "title": "", "slug": "", "author": "", "asin": "…", "store": "amazon.com",
-              "goodreads_url": "", "worldofbooks_url": null, "description": "", "subjects": [] }],
+              "goodreads_url": "", "worldofbooks_url": null, "description": "", "subjects": [],
+              "co_authors": [] }],
+  "co_authorships": [{ "book_slug": "the-priestess-transmissions", "add": ["amy-belair"] }],
   "courses": [{ "title": "", "url": "", "page": "", "description": "", "price": "", "image": "",
                 "product_type": "course|retreat|download|membership",
                 "start_date": null, "end_date": null, "subjects": [] }],
@@ -2085,6 +2111,12 @@ node scripts/ingest.mjs <plan.json> --env dev --rollback    # delete exactly wha
 `update` only for an existing one (only the fields to change). Any
 item may carry its own `slug` (the audit's, usually shorter than the title).
 Copy the audit's image links in; the script keeps or replaces them.
+
+**Co-written books** (§17.5): the plan's healer is the main author; list the
+other authors' healer slugs in the book's `co_authors` (each must already be
+on Spiritpedia). For a book that's **already in** under its other author
+(an ASIN can only be in once), add the co-author with `co_authorships` in
+the new author's plan instead. `--rollback` puts the old co-author list back.
 
 ### 18.4 The rules
 

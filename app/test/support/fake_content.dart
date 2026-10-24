@@ -235,8 +235,11 @@ class FakeContentRepository implements ContentRepository {
   );
 
   @override
-  Future<Book?> book(String slug) async =>
-      slug == amazonBook.slug ? amazonBook : null;
+  Future<Book?> book(String slug) async => slug == amazonBook.slug
+      ? amazonBook
+      : withCoAuthoredBook && slug == coAuthoredBook.slug
+      ? coAuthoredBook
+      : null;
 
   @override
   Future<Video?> video(String slug) async =>
@@ -278,7 +281,24 @@ class FakeContentRepository implements ContentRepository {
   @override
   Future<List<Book>> booksByHealers(List<String> healerSlugs) async => [
     if (healerSlugs.contains('eckhart-tolle')) amazonBook,
+    // As the real query: the main author or any co-author (migration 0027).
+    if (withCoAuthoredBook &&
+        coAuthoredBook.authorSlugs.any(healerSlugs.contains))
+      coAuthoredBook,
   ];
+
+  /// Opt-in: a book by Eckhart Tolle with Wim Hof as co-author, and Wim Hof
+  /// as a second Hay House author.
+  bool withCoAuthoredBook = false;
+
+  static const coAuthoredBook = Book(
+    id: 2,
+    slug: 'stillness-and-breath',
+    title: 'Stillness and Breath',
+    healerSlug: 'eckhart-tolle',
+    coHealerSlugs: ['wim-hof'],
+    subjectSlugs: ['meditation', 'breathwork'],
+  );
 
   @override
   Future<List<Video>> videosByHealer(String healerSlug) async => [
@@ -351,7 +371,10 @@ class FakeContentRepository implements ContentRepository {
       teacherContent;
 
   @override
-  Future<List<int>> publisherAuthorIds(String publisherId) async => [1];
+  Future<List<int>> publisherAuthorIds(String publisherId) async => [
+    1,
+    if (withCoAuthoredBook) 2,
+  ];
 
   @override
   Future<List<Book>> booksBySlugs(List<String> slugs) async => [

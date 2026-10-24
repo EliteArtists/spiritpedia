@@ -1,4 +1,5 @@
 import 'badges.dart';
+import 'book_authors.dart';
 
 // The content tables, as the app reads them. Field names follow the database
 // (README → "Database Structure"); only what the app displays is parsed.
@@ -206,6 +207,7 @@ class Book {
     this.goodreadsUrl,
     this.worldOfBooksUrl,
     this.healerSlug,
+    this.coHealerSlugs = const [],
     this.subjectSlugs = const [],
   });
 
@@ -220,6 +222,7 @@ class Book {
     goodreadsUrl: _text(j['goodreads_url']),
     worldOfBooksUrl: _text(j['worldofbooks_url']),
     healerSlug: _text(j['healer_slug']),
+    coHealerSlugs: _strings(j['co_healer_slugs']),
     subjectSlugs: _strings(j['subject_slugs']),
   );
 
@@ -233,7 +236,13 @@ class Book {
   final String? goodreadsUrl;
   final String? worldOfBooksUrl;
   final String? healerSlug;
+
+  /// Co-authors' slugs (migration 0027); the main author is [healerSlug].
+  final List<String> coHealerSlugs;
   final List<String> subjectSlugs;
+
+  /// Every author, main author first.
+  List<String> get authorSlugs => bookAuthorSlugs(healerSlug, coHealerSlugs);
 }
 
 class Video {

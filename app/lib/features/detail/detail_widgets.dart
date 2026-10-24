@@ -4,6 +4,8 @@ import 'package:go_router/go_router.dart';
 
 import '../../core/links/open_link.dart';
 import '../../core/links/share.dart';
+import '../../data/book_authors.dart';
+import '../../data/models.dart';
 import '../../data/providers.dart';
 import '../../theme/colors.dart';
 import '../library/save_prompt.dart';
@@ -183,17 +185,32 @@ class DetailTitle extends StatelessWidget {
 /// "By {teacher}" — a link to their page when the teacher is on Spiritpedia,
 /// plain text (the stored author) otherwise.
 class ByLine extends ConsumerWidget {
-  const ByLine({super.key, this.healerSlug, this.healerId, this.fallback});
+  const ByLine({
+    super.key,
+    this.healerSlug,
+    this.healerId,
+    this.coHealerSlugs = const [],
+    this.fallback,
+  });
 
   final String? healerSlug;
   final int? healerId;
+
+  /// A book's co-authors (migration 0027): each is named and tappable after
+  /// the main author — "By A and B".
+  final List<String> coHealerSlugs;
   final String? fallback;
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final directory = ref.watch(healerDirectoryProvider).value;
-    final healer = directory?.bySlug(healerSlug) ?? directory?.byId(healerId);
-    if (healer == null) {
+    final main = directory?.bySlug(healerSlug) ?? directory?.byId(healerId);
+    final authors = [
+      ?main,
+      for (final s in bookAuthorSlugs(null, coHealerSlugs))
+        if (s != main?.slug) ?directory?.bySlug(s),
+    ];
+    if (authors.isEmpty) {
       return fallback == null
           ? const SizedBox.shrink()
           : Text(
@@ -201,12 +218,25 @@ class ByLine extends ConsumerWidget {
               style: const TextStyle(fontSize: 14, color: SpColors.textMuted),
             );
     }
-    return GestureDetector(
+    const linkStyle = TextStyle(fontSize: 14.5, color: SpColors.link);
+    const plainStyle = TextStyle(fontSize: 14.5, color: SpColors.textMuted);
+    Widget link(Healer healer, String label) => GestureDetector(
       onTap: () => context.push('/healers/${healer.slug}'),
-      child: Text(
-        'By ${healer.name}',
-        style: const TextStyle(fontSize: 14.5, color: SpColors.link),
-      ),
+      child: Text(label, style: linkStyle),
+    );
+    if (authors.length == 1) {
+      return link(authors.single, 'By ${authors.single.name}');
+    }
+    return Wrap(
+      alignment: WrapAlignment.center,
+      children: [
+        const Text('By ', style: plainStyle),
+        for (final (i, healer) in authors.indexed) ...[
+          if (i > 0)
+            Text(i == authors.length - 1 ? ' and ' : ', ', style: plainStyle),
+          link(healer, healer.name),
+        ],
+      ],
     );
   }
 }
