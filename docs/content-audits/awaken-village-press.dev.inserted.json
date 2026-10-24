@@ -4,6 +4,12 @@
     "id": "9d61f7a5-5ff1-4b60-8009-21a44e6841fb",
     "slug": "awaken-village-press"
   },
-  "rows": [],
-  "at": "2026-10-23T20:04:45.477Z"
+  "rows": [
+    {
+      "table": "publisher_healers",
+      "id": "8d274bbc-1dce-49ba-8a0d-e26e406298d0",
+      "healer_slug": "amanda-johnson"
+    }
+  ],
+  "at": "2026-10-24T18:30:08.372Z"
 }
