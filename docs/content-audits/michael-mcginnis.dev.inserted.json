@@ -1,0 +1,28 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 173,
+    "healer_slug": "michael-mcginnis"
+  },
+  "rows": [
+    {
+      "table": "videos",
+      "id": 2509,
+      "slug": "welcome-to-my-channel-the-essential-revolution",
+      "title": "Welcome to My Channel (The Essential Revolution)"
+    },
+    {
+      "table": "books",
+      "id": 1101,
+      "slug": "the-essential-revolution",
+      "title": "The Essential Revolution: Book One"
+    },
+    {
+      "table": "books",
+      "id": 1102,
+      "slug": "the-invitation",
+      "title": "The Invitation: Book Two of The Essential Revolution"
+    }
+  ],
+  "at": "2026-10-24T19:22:38.813Z"
+}
