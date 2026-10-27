@@ -42,6 +42,7 @@ how-to is `docs/admin-guide.md`; the personalisation rules are
 16. [Known issues, open items and what's next](#16-known-issues-open-items-and-whats-next)
 17. [Reference](#17-reference)
 18. [Content ingestion](#18-content-ingestion)
+19. [Fixing the broken-image queue (the morning routine)](#19-fixing-the-broken-image-queue-the-morning-routine)
 
 ---
 
@@ -52,7 +53,7 @@ how-to is `docs/admin-guide.md`; the personalisation rules are
 | **Website** | Live at **https://www.spiritpedia.co** (Next.js on Vercel). Every push that changes `web/` deploys to production |
 | **App (iOS)** | Flutter, iPhone and iPad. **1.0.0 (23)** is on TestFlight (the Firebase move). **1.0.0 (24)** is built (`app/build/ios/ipa/Spiritpedia.ipa` and `app/build/ios/archive/Runner.xcarchive`, 22 Oct 2026) and waiting to be uploaded (§12.6). Not yet on the App Store |
 | **App (Android)** | The same code. **1.0.0 (24)** is built as a signed bundle, `app/build/android-release/Spiritpedia-1.0.0-24.aab`, ready for Google Play's closed test as soon as the (personal) developer account is verified (§10.15, §12.8, `docs/google-play.md`). Not yet on Google Play |
-| **Database** | Supabase. Two projects: **live** (`uzmvcgew…`) and **dev** (`khtpbnof…`). Migrations `0000`–`0026` are on both |
+| **Database** | Supabase. Two projects: **live** (`uzmvcgew…`) and **dev** (`khtpbnof…`). Migrations `0000`–`0028` are on both |
 | **Push** | Firebase Cloud Messaging only, with an APNs key. Moved on 22 Oct 2026 to two Firebase projects owned by **love@spiritpedia.co** (live `spiritpedia-ad62b`, dev `spiritpedia-dev-5e4d5`); checked end to end on iPhone, iPad and Android |
 | **Emails** | The approved copy of 21–22 Oct 2026 is live (§9.7). The outreach journey is eight emails, redirected to a test inbox by `JOURNEY_TEST_EMAIL` until the solicitor has checked cold email; no journey is running. Day 4 is live. Personal discovery editions are built but **off** until `DISCOVERY_EDITIONS=on` is set on Vercel (§9.7a) |
 | **Repository** | `https://github.com/EliteArtists/spiritpedia`, branch `main` only. No staging environment, no feature flags |
@@ -231,8 +232,11 @@ spiritpedia/
 │   ├── email-copy-2026-10-21.md  the approved wording (source of truth)
 │   ├── admin-guide.md      how to run the admin (badges, approving, owners' content)
 │   ├── google-play.md      every Play Console answer (data safety, rating, audience, closed test)
-│   └── content-audits/     one healer's research audit + ingestion plan each (§18)
+│   ├── content-audits/     one healer's research audit + ingestion plan each (§18)
+│   └── image-fixes/        each broken-image fixing run's plan and applied log (§19)
 ├── scripts/ingest.mjs      ingestion: finds images, checks, inserts a healer's plan, dev or live (§18)
+├── scripts/fix-images.mjs  the broken-image routine: plan, apply, roll back (§19)
+├── scripts/lib/images.mjs  finding and testing images, shared by both
 ├── app/                    the Flutter app — see app/README.md
 │   ├── lib/                main.dart, app.dart, router.dart, core/, data/, theme/, shared/, features/
 │   ├── test/               318 tests (fakes in test/support/)
@@ -252,7 +256,7 @@ spiritpedia/
 │   ├── scripts/            vercel-ignore-build.sh; generate-emotion-safety-cases.mjs
 │   └── vercel.json         five cron schedules + the deploy-skip rule
 └── supabase/
-    ├── migrations/         0000 (schema baseline) … 0026, run by hand
+    ├── migrations/         0000 (schema baseline) … 0028, run by hand
     └── seed/               emotion_mappings.sql — the search vocabulary
 ```
 
@@ -356,7 +360,7 @@ editor **on dev first, then live**, by the project owner. Dev is checked with
 throwaway users created through the Admin API (no email) and deleted
 afterwards; live is checked read-only.
 
-### 8.1 0012–0026 (on dev and live)
+### 8.1 0012–0028 (on dev and live)
 
 **`0012_favourites_slugs`** — data only, in one transaction.
 - Rewrites legacy `user_favourites.content_slug` values (numeric ids for books,
@@ -542,6 +546,17 @@ afterwards; live is checked read-only.
   co-author".
 - No policy changes: content stays read-only for everyone but the service
   role (`0007` covers every column).
+
+**`0028_broken_image_checks`** (27 Oct 2026). The broken-image check, round
+two (§17.8).
+- `broken_images` may hold `videos` rows, and gains `problem`: `broken` (the
+  default, every earlier row), `placeholder` (loads, but is a stand-in such as
+  Goodreads' `no-cover.png`; soft, so left out of the Inbox badge) or
+  `video_removed` (YouTube no longer has the video).
+- `broken_image_runs`: one row per scheduled run (when, which shard, how many
+  checked, skipped, cleared, any error) for the Inbox status line. Runs older
+  than 60 days are deleted by the check itself.
+- Both tables are service role only (RLS on, no policy). Nothing is loosened.
 
 ### 8.2 0000–0011
 
@@ -937,7 +952,7 @@ a manual run). **503 means the secret is unset; 401 means it's wrong.**
 | :--- | :--- | :--- |
 | `/api/cron/activity-purge` | 05:00 | Retention: RPC `purge_activity()`; deletes every decided claim request, and every decided content submission (with any image it held), 12 months after its decision (`utils/claimRequests.js`, `utils/contentSubmissions.js`; pending ones are never touched); images uploaded to the holding bucket but never sent, after two days; and `discovery_editions` rows older than 12 months |
 | `/api/cron/pending-signups` | 06:00 | Deletes `pending_user_types` older than 24 h (`?dry=1` counts only) |
-| `/api/cron/broken-images` | 07:00 | Audits a seventh of the content image URLs plus every portrait (§17.8). `?dry=1`, `?shard=N` |
+| `/api/cron/broken-images` | 07:00 | Checks a seventh of the book, offering and free resource images and video thumbnails, plus every portrait, and records the run (§17.8). `?dry=1`, `?shard=N` (neither is recorded) |
 | `/api/cron/journey-emails` | 08:00 | The outreach journey (C2–C8) |
 | `/api/cron/account-emails` | 09:00 | Day 4; discovery edition 1 at Day 10 (only with `DISCOVERY_EDITIONS=on`); the practitioner welcome a day after sign-up for anyone who neither claimed nor chose (and any welcome whose send failed). Once each per account (`email_sends`) |
 
@@ -1936,16 +1951,34 @@ True) · 42 subjects · 4,895 sitemap URLs. Target: 5,000 videos and 5,000 books
 
 ### 17.8 The broken-images audit
 
-A daily cron checks the catalogue's 2,890 external image URLs (a seventh of
-content images per day, every healer portrait — all three `image_urls` —
-daily) and queues failures in `broken_images`, shown in the admin Inbox.
-Rules learned from false positives: always send a User-Agent; a 404 is final,
-a 403 must fail twice; a 200 with an HTML body is a broken image; vague content
-types are judged by their magic bytes; a 202 is a bot challenge (recorded as
-undetermined); URLs are dealt round-robin by host. Saving a new URL clears the
-row. Video thumbnails (derived from YouTube) and four portraits behind bot
-challenges (wim-hof, jason-stephenson, justin-perry, mikao-usui) can't be
-audited.
+A daily cron (07:00 UTC) checks a seventh of the book covers, offering and
+free resource images and video thumbnails each day, so each one weekly, and
+every teacher's three photos daily. About 1,150 URLs a run, 15–32 s against a
+40 s cut-off (measured 27 Oct 2026). Failures go in `broken_images`, shown in
+the admin Inbox from their second failure.
+- **Rules learned from false positives:** always send a User-Agent; a 404 is
+  final, a 403 must fail twice; a 200 with an HTML body is a broken image;
+  vague content types are judged by their magic bytes; a 202 is a bot
+  challenge (counted as undetermined, not broken); URLs are dealt round-robin
+  by host.
+- **Kinds of problem (`problem`, `0028`):** `broken`; `placeholder`, a stand-in
+  picture known by its file name (`no-cover.png` and similar; the name only,
+  because imagekit URLs carry `di-placeholder…` as a setting on real photos),
+  listed but not in the badge; `video_removed`, a thumbnail at
+  `img.youtube.com` answering 404, which means the video was deleted or made
+  private. Its fix is to delete the video.
+- **Leaving the queue:** the check clears a row when the image works again or
+  the record no longer exists; saving a new image in the admin clears it at
+  once. There's no dismiss.
+- **The status line:** the Inbox shows when the check last ran, its shard, how
+  many it checked and cleared, in amber when it's over 26 hours old, was cut
+  short or failed (`broken_image_runs`).
+- **Fixed 27 Oct 2026:** a scheduled run has no `?shard=`, and
+  `Number(null)` is 0, so from 6 to 27 October every run checked shard 0 and
+  the other six never again. `pickShard` in `utils/brokenImages.js` (tested).
+- Four portraits behind bot challenges (wim-hof, jason-stephenson,
+  justin-perry, mikao-usui) can't be checked.
+- Fixing what it finds: §19.
 
 ### 17.9 Deliberately unfinished (don't "fix" without knowing why)
 
@@ -2227,5 +2260,53 @@ dev, give the pages to check, stop. Live after their OK, as for healers.
 | Awaken Village Press authors batch 4 (new, Rising Star, linked to the press): Phil Williams, Marjorie Warkentin (Abbotsford, local and online) | 24 Oct 2026: Phil 13 videos, 2 books (no offerings or free resources; the sample PDF left out as a teaser); Marjorie 8 videos, 1 book, no website yet (hers is a Coming Soon page) | 24 Oct 2026, the same; Phil linked to the press, Marjorie not yet (the owner is confirming with Amanda; unlinked on dev too) |
 | Awaken Village Press authors batch 5 (new, Rising Star, linked to the press): Jia Apple, Michael McGinnis | 24 Oct 2026: Jia 9 videos (Heal to Heal 1–8, The Every Day Oracle; her family videos left out), 3 books; Michael 1 video, 2 books (the Spanish edition left out) | 24 Oct 2026, the same (Jia's bio softened: "a life-threatening wound from a medical procedure") |
 | Awaken Village Press authors batch 6 (new, Rising Star, linked to the press): Eva Dalak, Adi Kanda (Toronto, local and online) | 24 Oct 2026: Eva 19 videos, 1 book, 4 offerings (2 dated trainings, the Greece immersion); Adi 18 videos (with the Dear Human Child launch from Amanda's channel), 2 books, 3 offerings | 24 Oct 2026, the same |
+
+---
+
+## 19. Fixing the broken-image queue (the morning routine)
+
+When the owner asks to "go through the broken-image queue", the assistant
+runs this, on **live** (the queue is live's). The owner's standing OK (27 Oct
+2026) covers swapping images on **books, offerings and free resources**
+directly, listed afterwards. **Teacher photos** are only suggested, for the
+owner to choose. **Removed videos** are listed for the owner to delete. Nothing
+else is changed.
+
+1. **Plan:** `node scripts/fix-images.mjs --env live`. It reads the queue
+   (rows shown in the Inbox, failures ≥ 2) and writes
+   `docs/image-fixes/<date>.json` and a numbered contact sheet
+   `<date>.sheet.png`. Reading only.
+   - Books: the cover by ASIN, then the Amazon page, then Open Library (as
+     ingestion, §18.2).
+   - Offerings and free resources: the image their own page shares, else its
+     first large image.
+   - Teacher photos: the share image of their website and YouTube channel.
+   - A candidate must load, be an image of at least 300 px, and not be a
+     placeholder, a logo or icon, a Google thumbnail, or the URL that failed.
+     `http://` becomes `https://` when the host serves it.
+2. **Look at the sheet.** Every swap is checked by eye: the right product, not
+   a generic banner or a picture of something else. Set a doubtful row's
+   `action` to `skip` in the plan.
+3. **Apply:** `node scripts/fix-images.mjs docs/image-fixes/<date>.json --env
+   live --apply`. Changes only rows still holding the planned old image, clears
+   each one's queue row, and writes `<date>.live.applied.json` (before and
+   after). Undo: the same with `--rollback`.
+4. **Report to the owner**, in this order:
+   - fixed: item, teacher, where the new image came from;
+   - teacher photos: the candidate links, for a yes or no (then change it in
+     Admin → the teacher → Profile → Images, or set the row to `swap` with
+     `new` and apply);
+   - videos to remove: title, teacher, link (deleted in Admin → the teacher →
+     Content, or by the assistant when the owner says so);
+   - not fixed: item and why, so the owner can find an image or remove it.
+5. **Commit** the plan, the applied log and nothing else (`docs/` doesn't
+   deploy). The sheet stays local (`docs/image-fixes/*.png` is ignored).
+
+The shared finding and testing code is `scripts/lib/images.mjs`, also used by
+`scripts/ingest.mjs`.
+
+| Date | Fixed | Teacher photos suggested | Videos to remove | Not fixed |
+| :--- | :--- | :--- | :--- | :--- |
+| 27 Oct 2026 (by hand, before the script) | Ra Uru Hu: 14 offerings and 1 free resource (Jovian Archive renamed its images; each from its own page) | — | — | — |
 
 Made with love in Tavira 💫

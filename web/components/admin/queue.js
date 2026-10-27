@@ -73,6 +73,9 @@ export const QUEUE_TYPES = {
 export const STATUS_STYLES = {
   review: 'border-slate-500/40 bg-slate-500/10 text-slate-300',
   broken: 'border-orange-500/40 bg-orange-500/10 text-orange-300',
+  // A soft problem: a stand-in picture (migration 0028).
+  placeholder: 'border-slate-500/40 bg-slate-500/10 text-slate-300',
+  removed: 'border-red-500/40 bg-red-500/10 text-red-300',
   pending: 'border-amber-500/40 bg-amber-500/10 text-amber-300',
   incomplete: 'border-slate-600 bg-slate-800 text-slate-400',
   approved: 'border-emerald-500/40 bg-emerald-500/10 text-emerald-300',
@@ -162,10 +165,16 @@ export function truncateUrl(url, max = 48) {
 // single-page-app shell and never 404s. Rendering that as "HTTP 415" would
 // describe a response nobody sent; rendering the 200 it really was would read
 // as a bug in the audit. It says what it means instead.
-export function describeFailure(status) {
+//
+// A row's `problem` (migration 0028) comes first: a stand-in picture loads
+// with a 200, and a removed video's 404 is about the video, not a picture.
+export function describeFailure(status, problem) {
+  if (problem === 'placeholder') return 'Placeholder picture';
+  if (problem === 'video_removed') return 'Video removed on YouTube';
   if (status === NOT_AN_IMAGE) return 'Not an image';
   return status ? `HTTP ${status}` : 'No response';
 }
+
 
 const SUBMISSION_WORDS = {
   video: 'video',
@@ -320,11 +329,11 @@ export function buildQueue(
       title: `${TABLE_LABELS[row.table_name] || row.table_name} · ${row.title || 'Untitled'}`,
       // The status code earns its place: a 404 is a missing file and a 403 is a
       // host that has started refusing us, and they are fixed differently.
-      detail: [describeFailure(row.status_code), truncateUrl(row.image_url)]
+      detail: [describeFailure(row.status_code, row.problem), truncateUrl(row.image_url)]
         .filter(Boolean)
         .join(' · '),
-      status: 'broken',
-      action: 'Fix →',
+      status: row.problem === 'placeholder' ? 'placeholder' : row.problem === 'video_removed' ? 'removed' : 'broken',
+      action: row.problem === 'video_removed' ? 'Remove →' : 'Fix →',
       // A row whose healer could not be resolved still has somewhere to go: the
       // directory. /admin/content/null would be a 404 and would strand it.
       //

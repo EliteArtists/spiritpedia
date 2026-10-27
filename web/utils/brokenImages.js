@@ -4,6 +4,8 @@
 // that read them, so the two can never disagree about what a content type is
 // called or where its picture lives.
 
+import { youtubeId } from './contentSubmissions.js';
+
 // WHERE A ROW'S PICTURE LIVES, which is not the same column twice, and WHICH
 // KEY POINTS AT THE HEALER, which is not the same key twice either.
 //
@@ -13,9 +15,9 @@
 // Content tab showing only half a healer's work, so the slug is resolved here
 // by joining healers rather than assumed to be on the row.
 //
-// VIDEOS ARE ABSENT ON PURPOSE. They have no image column — the thumbnail is
-// derived from the YouTube id in platform_url at render time. See the note at
-// the foot of this file for what that means and does not mean.
+// VIDEOS have no image column — the thumbnail is derived from the YouTube id in
+// platform_url at render time — so their entry derives the same URL. What a
+// failure means there is different: see videoThumbnail below.
 export const AUDIT_TABLES = [
   // HEALERS ARE FIRST AND ARE NOT SHARDED. See DAILY_TABLES below.
   //
@@ -53,7 +55,25 @@ export const AUDIT_TABLES = [
     healerKey: 'healer_id',
     label: 'Free resource',
   },
+  // Sharded like the content tables: 2,519 thumbnails is too many for one run.
+  {
+    table: 'videos',
+    columns: 'id, title, healer_slug, platform_url',
+    urls: (row) => [videoThumbnail(row.platform_url)].filter(Boolean),
+    healerKey: 'healer_slug',
+    label: 'Video',
+  },
 ];
+
+// The thumbnail the site shows for a video, which is the URL the check asks
+// for. img.youtube.com answers 404 (with a grey stand-in picture, which the
+// browser shows without complaint) once the video is deleted or made private.
+// So a 404 here is not a broken image, it is a removed video: measured on 27
+// October 2026, 6 of 2,519.
+export function videoThumbnail(platformUrl) {
+  const id = youtubeId(platformUrl);
+  return id ? `https://img.youtube.com/vi/${id}/mqdefault.jpg` : null;
+}
 
 // For the admin row's type chip. Keyed by the stored table_name, so a row read
 // back from the database names itself without the reader holding a lookup.
@@ -62,7 +82,52 @@ export const TABLE_LABELS = {
   books: 'Books',
   courses: 'Offerings',
   free_resources: 'Free Resources',
+  videos: 'Videos',
 };
+
+// What kind of problem a queue row is (broken_images.problem, migration 0028).
+//   broken         the picture does not load
+//   placeholder    it loads, but it is a stand-in such as a "no cover" image.
+//                  Soft: listed in the queue, left out of the Inbox badge.
+//   video_removed  the YouTube video is gone; the fix is to remove the row
+export const PROBLEMS = {
+  broken: 'broken',
+  placeholder: 'placeholder',
+  videoRemoved: 'video_removed',
+};
+
+// A STAND-IN PICTURE, by its file name.
+//
+// Five books point at Goodreads' https://dryofg8nmyqjw.cloudfront.net/images/
+// no-cover.png. It is a real PNG and answers 200, so to the check it is
+// healthy, while the visitor sees "no cover". Matched on the LAST PATH SEGMENT
+// only, and that matters: 19 offerings and resources on ik.imagekit.io carry
+// `di-placeholder_portrait….jpg` in their URL, which is imagekit's "use this
+// if the photo is missing" setting, and their photos are real (70KB against
+// the 4.7KB placeholder). A match anywhere in the URL would have flagged all 19.
+const PLACEHOLDER_FILES =
+  /^(?:no[-_]?cover|no[-_]?photo|no[-_]?image|placeholder|image[-_]not[-_]available|default[-_]cover)\.(?:png|jpe?g|gif|webp|svg)$/i;
+
+export function isPlaceholderImage(url) {
+  try {
+    const file = new URL(url).pathname.split('/').pop() || '';
+    return PLACEHOLDER_FILES.test(decodeURIComponent(file));
+  } catch {
+    return false;
+  }
+}
+
+// WHICH SEVENTH, from the ?shard= parameter or the day.
+//
+// The bug this replaces: `Number(params.get('shard'))` on a scheduled run,
+// which has no ?shard=, is Number(null), which is 0 — a valid shard. So every
+// run from 6 to 27 October 2026 checked shard 0 and the other six were never
+// looked at again. An absent or blank parameter now means "today's".
+export function pickShard(param, date = new Date()) {
+  if (param === null || param === undefined || String(param).trim() === '') return todayShard(date);
+  const n = Number(param);
+  return Number.isInteger(n) && n >= 0 && n < SHARDS ? n : todayShard(date);
+}
 
 // Audited in full every day rather than a seventh at a time.
 //
@@ -73,6 +138,28 @@ export const TABLE_LABELS = {
 // Weekly that is a fortnight before a dead face photo reaches the Inbox; daily
 // it is two days. The portrait is the first thing a visitor sees.
 export const DAILY_TABLES = new Set(['healers']);
+
+// The Inbox line about the last scheduled check, or null when there is none to
+// describe. `stale` when it is over 26 hours old, cut short, or failed: the
+// three ways a queue can look clean without having looked.
+export function describeImageCheck(run, now = new Date()) {
+  if (!run) return null;
+  const when = new Date(run.ran_at);
+  const hours = (now - when) / 3600000;
+  const at = when.toLocaleString('en-GB', { day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit', timeZone: 'UTC' });
+  if (run.error) return { stale: true, text: `Image check failed ${at} UTC: ${run.error}` };
+  const parts = [
+    `Image check last ran ${at} UTC`,
+    `shard ${run.shard + 1} of ${run.shards}`,
+    `${run.checked ?? 0} checked`,
+  ];
+  if (run.skipped) parts.push(`${run.skipped} skipped (out of time)`);
+  if (run.undetermined) parts.push(`${run.undetermined} behind a bot check`);
+  if (run.recovered) parts.push(`${run.recovered} cleared`);
+  const stale = hours > 26 || Boolean(run.skipped);
+  if (hours > 26) parts.push('overdue');
+  return { stale, text: parts.join(' · ') };
+}
 
 // The content types that mean "this is a document, not a picture".
 //
@@ -157,10 +244,6 @@ export const MIN_FAILURES = 2;
 export const AUDIT_USER_AGENT =
   'Mozilla/5.0 (compatible; SpiritpediaImageAudit/1.0; +https://www.spiritpedia.co)';
 
-// NOT COVERED, recorded here so a future reader does not mistake a gap for a
-// clean bill of health: video thumbnails. They come from img.youtube.com,
-// derived from the YouTube id rather than stored, so there is no column to
-// audit and no row to write. img.youtube.com returns a placeholder image with a
-// 404 for a video that has been deleted or made private, and this audit will
-// never see it. Catching those needs the YouTube Data API, which is a different
-// job from checking a URL resolves.
+// VIDEO THUMBNAILS ARE COVERED since migration 0028 (see videoThumbnail). A
+// video with no YouTube id in platform_url has no thumbnail to check and is
+// skipped, as a row with no image is.

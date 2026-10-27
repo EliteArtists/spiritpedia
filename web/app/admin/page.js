@@ -9,6 +9,7 @@ import { useAdminData } from '@/components/admin/AdminData';
 import DataProblem from '@/components/admin/DataProblem';
 import { Placeholder } from '@/components/admin/AdminPlaceholders';
 import { QUEUE_TYPES, buildQueue } from '@/components/admin/queue';
+import { describeImageCheck } from '@/utils/brokenImages';
 
 // Filters. The two with no table yet are rendered and disabled rather than
 // omitted: the shape of the finished queue is visible, and a count of 0 is not
@@ -30,6 +31,7 @@ export default function AdminInboxPage() {
     profiles,
     pendingReviews,
     brokenImages,
+    imageCheck,
     accountDeletions,
     openReports,
     claimRequests,
@@ -72,6 +74,7 @@ export default function AdminInboxPage() {
     [queue, filter]
   );
   const selected = visible.find((i) => i.id === selectedId) || null;
+  const imageCheckLine = useMemo(() => describeImageCheck(imageCheck), [imageCheck]);
 
   const counts = useMemo(() => {
     const out = { all: queue.length };
@@ -273,6 +276,15 @@ export default function AdminInboxPage() {
           );
         })}
       </div>
+
+      {/* When the broken-image check last ran (migration 0028). Amber when it
+          is overdue, was cut short or failed, so a queue that has not been
+          looking cannot pass for a clean one. */}
+      {!loading && imageCheckLine && (filter === 'all' || filter === 'broken_image') && (
+        <p className={`mb-4 text-xs ${imageCheckLine.stale ? 'text-amber-300' : 'text-slate-500'}`}>
+          {imageCheckLine.text}
+        </p>
+      )}
 
       {loading ? (
         <Placeholder icon="◴" title="Loading…" />

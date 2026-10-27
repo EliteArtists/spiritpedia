@@ -44,6 +44,7 @@ export async function GET() {
         profiles: null,
         pendingReviews: [],
         brokenImages: [],
+        imageCheck: null,
         accountDeletions: [],
         openReports: [],
         claimRequests: [],
@@ -89,9 +90,17 @@ export async function GET() {
   // opposite of how an application queue reads.
   const { data: brokenImages } = await supabase
     .from('broken_images')
-    .select('table_name, record_id, healer_slug, title, image_url, status_code, failures, first_seen_at')
+    .select('table_name, record_id, healer_slug, title, image_url, status_code, problem, failures, first_seen_at')
     .gte('failures', MIN_FAILURES)
     .order('first_seen_at', { ascending: true });
+
+  // The last scheduled broken-image check (migration 0028), for the Inbox
+  // status line. Null before 0028 runs or before the first recorded run.
+  const { data: imageCheckRows } = await supabase
+    .from('broken_image_runs')
+    .select('ran_at, shard, shards, checked, skipped, undetermined, queued, recovered, elapsed_ms, error')
+    .order('ran_at', { ascending: false })
+    .limit(1);
 
   // Accounts with a claimed listing that their owner deleted, still to be
   // reviewed (migration 0013; a publisher listing since 0022). Service role
@@ -181,6 +190,7 @@ export async function GET() {
     profiles: withEmail,
     pendingReviews: pendingReviews || [],
     brokenImages: brokenImages || [],
+    imageCheck: imageCheckRows?.[0] || null,
     accountDeletions: accountDeletions || [],
     openReports: openReports || [],
     claimRequests,

@@ -1,0 +1,155 @@
+{
+  "env": "live",
+  "fixes": [
+    {
+      "at": "2026-10-27T16:53:29.936Z",
+      "table": "courses",
+      "id": "b45c1003-9848-47be-8d65-a3d249b416b3",
+      "healer_slug": "ra-uru-hu",
+      "title": "The 2027 Mutation Lecture",
+      "column": "image_url",
+      "before": "https://jovianarchive.com/cdn/shop/files/383b92b5aac4b059362866aa96dfd537.png?v=1784107093&width=1200",
+      "after": "https://jovianarchive.com/cdn/shop/files/383b92b5aac4b059362866aa96dfd537_9cf4483f-ab94-48c1-8be3-f2846e94fe2f.png?v=1791366431&width=2048"
+    },
+    {
+      "at": "2026-10-27T16:53:30.156Z",
+      "table": "courses",
+      "id": "0a10fe5d-9efb-4ab5-8c71-14b6eb033cfb",
+      "healer_slug": "ra-uru-hu",
+      "title": "Advanced 2: The Four Transformations",
+      "column": "image_url",
+      "before": "https://jovianarchive.com/cdn/shop/files/3559cd773048f328b24861beb3f9b822.png?v=1784107549&width=1200",
+      "after": "https://jovianarchive.com/cdn/shop/files/3559cd773048f328b24861beb3f9b822_2eb592d0-d0f1-46ce-bf2b-016f4b32c25d.png?v=1791366946&width=2048"
+    },
+    {
+      "at": "2026-10-27T16:53:30.340Z",
+      "table": "courses",
+      "id": "7aeb9158-6482-42cb-9f97-10a6ba611e8d",
+      "healer_slug": "ra-uru-hu",
+      "title": "Extended Curriculum 1: History, Global Cycles, and 2027",
+      "column": "image_url",
+      "before": "https://jovianarchive.com/cdn/shop/files/7ac116917fcc2fcf8df37df01ea4193d.png?v=1784107551&width=1200",
+      "after": "https://jovianarchive.com/cdn/shop/files/7ac116917fcc2fcf8df37df01ea4193d_7a77f6db-7e9b-4b88-a40b-ac81102b62e4.png?v=1791366949&width=2048"
+    },
+    {
+      "at": "2026-10-27T16:53:30.522Z",
+      "table": "courses",
+      "id": "a0d9edbf-db58-4e67-9bca-9a98b44e983d",
+      "healer_slug": "ra-uru-hu",
+      "title": "Extended Curriculum 2: Money and Business",
+      "column": "image_url",
+      "before": "https://jovianarchive.com/cdn/shop/files/46085267267888d6d94210481e0eb50a.png?v=1784107553&width=1200",
+      "after": "https://jovianarchive.com/cdn/shop/files/46085267267888d6d94210481e0eb50a_f319973c-c027-46c5-ae4d-796de34fd09f.png?v=1791366951&width=2048"
+    },
+    {
+      "at": "2026-10-27T16:53:30.679Z",
+      "table": "courses",
+      "id": "6546d388-2043-47cc-8685-e3f7fa8b59cf",
+      "healer_slug": "ra-uru-hu",
+      "title": "Extended Curriculum 3: Dreams",
+      "column": "image_url",
+      "before": "https://jovianarchive.com/cdn/shop/files/9b065e59455333915129ab426a1c6e25.png?v=1784107555&width=1200",
+      "after": "https://jovianarchive.com/cdn/shop/files/9b065e59455333915129ab426a1c6e25_0e717b4a-9590-41a2-8a09-961966ecf39a.png?v=1791366953&width=2048"
+    },
+    {
+      "at": "2026-10-27T16:53:30.864Z",
+      "table": "courses",
+      "id": "0a97935b-ee16-4045-a203-1bcae8ec9560",
+      "healer_slug": "ra-uru-hu",
+      "title": "Quarter by Quarter: The 16 Faces of the Godhead",
+      "column": "image_url",
+      "before": "https://jovianarchive.com/cdn/shop/files/3fafa35f97c8e00f61e380e41fedd393.png?v=1784107034&width=1200",
+      "after": "https://jovianarchive.com/cdn/shop/files/3fafa35f97c8e00f61e380e41fedd393_d3d2a7c9-f1a0-410e-96d9-be8fca5134da.png?v=1791366365&width=2048"
+    },
+    {
+      "at": "2026-10-27T16:53:31.060Z",
+      "table": "courses",
+      "id": "bcaa26b3-a8f7-4ce4-9d12-a4290c84d805",
+      "healer_slug": "ra-uru-hu",
+      "title": "Design Concepts",
+      "column": "image_url",
+      "before": "https://jovianarchive.com/cdn/shop/files/e4c94f60dc1fcaa3c393b7c8adc3bd05.png?v=1784107305&width=1200",
+      "after": "https://jovianarchive.com/cdn/shop/files/e4c94f60dc1fcaa3c393b7c8adc3bd05_f6d02bfc-cce9-4f9c-80da-bfcf460376c6.png?v=1791366680&width=2048"
+    },
+    {
+      "at": "2026-10-27T16:53:31.227Z",
+      "table": "courses",
+      "id": "d2890fab-eedb-49b2-bd6a-e0693f4bccdb",
+      "healer_slug": "ra-uru-hu",
+      "title": "The Life Force: The Channels",
+      "column": "image_url",
+      "before": "https://jovianarchive.com/cdn/shop/files/1b213af0b957fef19378bd8946664513.png?v=1784107312&width=1200",
+      "after": "https://jovianarchive.com/cdn/shop/files/1b213af0b957fef19378bd8946664513_20a811f2-304a-4a69-849f-13c307f0aa8c.png?v=1791366687&width=2048"
+    },
+    {
+      "at": "2026-10-27T16:53:31.422Z",
+      "table": "courses",
+      "id": "b6ae88a5-59dd-4479-b0a2-8ab596b6ec75",
+      "healer_slug": "ra-uru-hu",
+      "title": "Incarnation Crosses by Profile",
+      "column": "image_url",
+      "before": "https://jovianarchive.com/cdn/shop/files/d4c3646c62cbb2414126d4f267a3a479.png?v=1784107560&width=1200",
+      "after": "https://jovianarchive.com/cdn/shop/files/d4c3646c62cbb2414126d4f267a3a479_d2a27c49-5314-4979-9396-40d4ce528c2b.png?v=1791366958&width=2048"
+    },
+    {
+      "at": "2026-10-27T16:53:31.707Z",
+      "table": "courses",
+      "id": "91116778-016c-4542-9450-ab64e48e6926",
+      "healer_slug": "ra-uru-hu",
+      "title": "Manifestor Manifesto",
+      "column": "image_url",
+      "before": "https://jovianarchive.com/cdn/shop/files/eb427b46132d751b4a56f8c5f9324743_41d8eccb-ef1a-46d9-90b4-813d376cacd2.png?v=1784107307&width=1200",
+      "after": "https://jovianarchive.com/cdn/shop/files/eb427b46132d751b4a56f8c5f9324743_6ff148cf-aa1b-4ae3-b9d9-1290d9987a19.png?v=1791366682&width=2048"
+    },
+    {
+      "at": "2026-10-27T16:53:31.870Z",
+      "table": "courses",
+      "id": "57b635d3-dd16-4b6a-ba73-d2267c333cc9",
+      "healer_slug": "ra-uru-hu",
+      "title": "Being Right",
+      "column": "image_url",
+      "before": "https://jovianarchive.com/cdn/shop/files/eedce36ee2ba972012ef35ba4e3c254f.png?v=1784107234&width=1200",
+      "after": "https://jovianarchive.com/cdn/shop/files/eedce36ee2ba972012ef35ba4e3c254f_908ce52f-253c-4e14-bfb5-679bf0550beb.png?v=1791366596&width=2048"
+    },
+    {
+      "at": "2026-10-27T16:53:32.046Z",
+      "table": "courses",
+      "id": "568f58bb-845f-4e0f-9098-c875f4d33c07",
+      "healer_slug": "ra-uru-hu",
+      "title": "A Life Story",
+      "column": "image_url",
+      "before": "https://jovianarchive.com/cdn/shop/files/db243d2434bd78f8368805635338bf9a_4d6d8da5-306c-4e6a-a7eb-4f82aa33fae3.png?v=1784106888&width=1200",
+      "after": "https://jovianarchive.com/cdn/shop/files/db243d2434bd78f8368805635338bf9a_d09bdfa1-cc16-4fdf-a0ad-d7e313fd8793.png?v=1791366200&width=2048"
+    },
+    {
+      "at": "2026-10-27T16:53:32.222Z",
+      "table": "courses",
+      "id": "0f46b6b6-13e2-43a0-84a6-d9a22b4ab79b",
+      "healer_slug": "ra-uru-hu",
+      "title": "19 Years until the Changing of the Keys",
+      "column": "image_url",
+      "before": "https://jovianarchive.com/cdn/shop/files/f4cf4dd009c8320b3795161e24629e88.png?v=1784106876&width=1200",
+      "after": "https://jovianarchive.com/cdn/shop/files/f4cf4dd009c8320b3795161e24629e88_d032cb64-6130-4b8c-ac35-d91e0187cc55.png?v=1791366186&width=2048"
+    },
+    {
+      "at": "2026-10-27T16:53:32.382Z",
+      "table": "courses",
+      "id": "1b4ffbd0-e7c2-445a-bcfb-7dab6fe04f3d",
+      "healer_slug": "ra-uru-hu",
+      "title": "Raising Children According to Their Design",
+      "column": "image_url",
+      "before": "https://jovianarchive.com/cdn/shop/files/fe1f677b06db3c8196f5c1cb76f39644.png?v=1784107042&width=1200",
+      "after": "https://jovianarchive.com/cdn/shop/files/fe1f677b06db3c8196f5c1cb76f39644_207256cc-663d-4bc8-afb0-365294d9a894.png?v=1791366374&width=2048"
+    },
+    {
+      "at": "2026-10-27T16:53:32.589Z",
+      "table": "free_resources",
+      "id": "7acc83bd-7a90-4298-8cee-29e00cdf8527",
+      "healer_slug": "ra-uru-hu",
+      "title": "Incarnation Crosses: The Theme of Your Life's Work and Purpose",
+      "column": "image_url",
+      "before": "https://jovianarchive.com/pages/incarnation-crosses-in-human-design",
+      "after": "https://jovianarchive.com/cdn/shop/files/Intermediate_Articles_Incarnation_Cross.webp?v=1756989209"
+    }
+  ]
+}

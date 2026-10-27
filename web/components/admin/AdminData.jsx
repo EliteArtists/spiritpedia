@@ -28,6 +28,7 @@ export function AdminDataProvider({ children }) {
     // twice for the same outage.
     pendingReviews: [],
     brokenImages: [],
+    imageCheck: null,
     accountDeletions: [],
     openReports: [],
     claimRequests: [],
@@ -59,6 +60,7 @@ export function AdminDataProvider({ children }) {
         profiles: json.profiles ?? null,
         pendingReviews: json.pendingReviews || [],
         brokenImages: json.brokenImages || [],
+        imageCheck: json.imageCheck || null,
         accountDeletions: json.accountDeletions || [],
         openReports: json.openReports || [],
         claimRequests: json.claimRequests || [],
@@ -72,6 +74,7 @@ export function AdminDataProvider({ children }) {
         profiles: null,
         pendingReviews: [],
         brokenImages: [],
+        imageCheck: null,
         accountDeletions: [],
         openReports: [],
         claimRequests: [],
@@ -118,7 +121,10 @@ export function AdminDataProvider({ children }) {
   // threshold, so this is the number worth acting on rather than the number
   // recorded — and it falls to zero on its own when the next audit finds the
   // images restored, which is what makes the badge trustworthy.
-  const brokenImageCount = state.brokenImages?.length || 0;
+  //
+  // A stand-in picture (problem 'placeholder', migration 0028) is listed but
+  // not counted: the page still shows a picture, so it is not urgent.
+  const brokenImageCount = (state.brokenImages || []).filter((r) => r.problem !== 'placeholder').length;
   // A reported review is the most urgent of all: the Terms promise a decision
   // within 24 hours.
   const openReportCount = state.openReports?.length || 0;

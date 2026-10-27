@@ -7,9 +7,11 @@ import {
   DOCUMENT_TYPES,
   MIN_FAILURES,
   NOT_AN_IMAGE,
+  PROBLEMS,
   SHARDS,
+  isPlaceholderImage,
+  pickShard,
   shardOf,
-  todayShard,
 } from '@/utils/brokenImages';
 
 export const dynamic = 'force-dynamic';
@@ -315,11 +317,14 @@ export async function GET(request) {
   // exercise this is to wait for 07:00 and then read the table to find out what
   // it decided.
   const params = new URL(request.url).searchParams;
-  const requested = Number(params.get('shard'));
-  const shard = Number.isInteger(requested) && requested >= 0 && requested < SHARDS
-    ? requested
-    : todayShard();
+  // Not Number(params.get('shard')): with no parameter that is Number(null),
+  // 0, and every scheduled run checked shard 0. See pickShard.
+  const shard = pickShard(params.get('shard'));
   const dryRun = params.get('dry') === '1';
+  // A scheduled run is recorded for the Inbox status line; a hand-run one
+  // (?shard= or ?dry=1) is not, so testing cannot make the line look healthy.
+  const scheduled = !dryRun && params.get('shard') === null;
+  const startedAt = Date.now();
 
   try {
     // Every healer, so a course's slug can be resolved from its healer_id.
@@ -343,6 +348,9 @@ export async function GET(request) {
     // runs that each finish with a partly-idle batch.
     const targets = [];
     const scanned = {};
+    // Every record that still exists, so a queue row whose record was deleted
+    // (a removed video, above all) leaves the queue instead of staying forever.
+    const exists = new Set();
 
     for (const spec of AUDIT_TABLES) {
       const columns =
@@ -354,6 +362,7 @@ export async function GET(request) {
       const daily = DAILY_TABLES.has(spec.table);
 
       for (const row of rows) {
+        exists.add(`${spec.table}:${row.id}`);
         if (!daily && shardOf(row.id) !== shard) continue;
 
         // One URL from a column, or several from an array. ONE ROW PER RECORD
@@ -390,6 +399,8 @@ export async function GET(request) {
             title: row.title || row.name || null,
             url,
             healerSlug,
+            // A stand-in picture is known from its name; nothing to fetch.
+            placeholder: spec.table !== 'videos' && isPlaceholderImage(url),
           });
         }
       }
@@ -422,7 +433,6 @@ export async function GET(request) {
     // different claims, and a queue that conflates them is quietly lying.
     const undetermined = new Set();
     const now = new Date().toISOString();
-    const startedAt = Date.now();
     let skipped = 0;
 
     for (let i = 0; i < ordered.length; i += BATCH_SIZE) {
@@ -435,7 +445,13 @@ export async function GET(request) {
       }
 
       const batch = ordered.slice(i, i + BATCH_SIZE);
-      const verdicts = await Promise.all(batch.map((t) => checkUrl(t.url)));
+      const verdicts = await Promise.all(
+        batch.map((t) =>
+          t.placeholder
+            ? { ok: false, status: 200, definitive: true, problem: PROBLEMS.placeholder }
+            : checkUrl(t.url).then((v) => (v.ok ? v : { ...v, problem: problemOf(t, v) }))
+        )
+      );
 
       batch.forEach((target, index) => {
         const verdict = verdicts[index];
@@ -451,8 +467,9 @@ export async function GET(request) {
         // two dead portraits is still one row — which is right, because it is
         // still one healer to go and fix, and the Profile tab shows all three
         // side by side when you get there.
+        // A picture that does not load outranks one that is a stand-in.
         const held = failed.get(key);
-        if (held && (held.definitive || !verdict.definitive)) return;
+        if (held && rank(held) >= rank(verdict)) return;
         failed.set(key, { ...verdict, target });
       });
     }
@@ -489,6 +506,7 @@ export async function GET(request) {
         // three portraits it was — not necessarily the first.
         image_url: target.url,
         status_code: verdict.status,
+        problem: verdict.problem,
         failures,
         // Preserved across upserts: how long a thing has been broken is the
         // most useful number on the row, and an upsert supplying NOW() would
@@ -507,9 +525,12 @@ export async function GET(request) {
     // in `failed`, and has a row on the board no longer deserves one. Records
     // the deadline cut short are not in `seen` and are left exactly as they
     // are, which is why a short run cannot silently empty the queue.
+    //
+    // A row whose record no longer exists goes too: deleting a removed video
+    // (or any item) is the fix, and its row would otherwise never be seen again.
     const recovered = [];
     for (const [key, row] of existing) {
-      if (seen.has(key) && !failed.has(key)) recovered.push(row.id);
+      if ((seen.has(key) && !failed.has(key)) || !exists.has(key)) recovered.push(row.id);
     }
 
     if (!dryRun) {
@@ -524,7 +545,7 @@ export async function GET(request) {
       }
     }
 
-    return NextResponse.json({
+    const result = {
       shard,
       shards: SHARDS,
       dryRun,
@@ -545,9 +566,53 @@ export async function GET(request) {
       // run's output can be read against the Inbox badge without a query.
       queued: broken.filter((b) => b.failures >= MIN_FAILURES).length,
       recovered: recovered.length,
-    });
+    };
+    if (scheduled) await recordRun(supabase, result);
+    return NextResponse.json(result);
   } catch (err) {
     console.error('[broken-images]', err);
+    if (scheduled) await recordRun(supabase, { shard, shards: SHARDS, elapsedMs: Date.now() - startedAt, error: err.message });
     return NextResponse.json({ error: err.message }, { status: 500 });
+  }
+}
+
+// What a failure is. A thumbnail that 404s is a video YouTube no longer has;
+// anything else that fails is a picture that does not load.
+function problemOf(target, verdict) {
+  if (target.table === 'videos' && DEFINITIVE_STATUSES.has(verdict.status)) return PROBLEMS.videoRemoved;
+  return PROBLEMS.broken;
+}
+
+// Which of two failures for one record to keep: a definitive broken one, then
+// a soft broken one, then a stand-in picture.
+function rank(verdict) {
+  if (verdict.problem === PROBLEMS.placeholder) return 0;
+  return verdict.definitive ? 2 : 1;
+}
+
+// One row per scheduled run for the Inbox status line (migration 0028), and
+// runs older than 60 days pruned. Never fails the run: the findings are
+// already written, and a missing status line is the lesser loss.
+async function recordRun(supabase, result) {
+  try {
+    await supabase.from('broken_image_runs').insert({
+      shard: result.shard,
+      shards: result.shards,
+      checked: result.checked ?? null,
+      records: result.records ?? null,
+      undetermined: result.undetermined ?? null,
+      skipped: result.skipped ?? null,
+      broken: result.broken ?? null,
+      queued: result.queued ?? null,
+      recovered: result.recovered ?? null,
+      elapsed_ms: result.elapsedMs ?? null,
+      error: result.error ?? null,
+    });
+    await supabase
+      .from('broken_image_runs')
+      .delete()
+      .lt('ran_at', new Date(Date.now() - 60 * 86400000).toISOString());
+  } catch (err) {
+    console.error('[broken-images] run record', err);
   }
 }
