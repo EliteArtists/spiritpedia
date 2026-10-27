@@ -10,6 +10,7 @@ import { buildMetadata, notFoundMetadata, pickImage, SITE_URL } from '@/utils/se
 import ReviewSection, { RatingRow } from '@/components/ReviewSection';
 import { amazonAffiliateUrl } from '@/utils/affiliate';
 import TrackOpen from '@/components/TrackOpen';
+import { bookAuthorSlugs } from '@/utils/bookAuthors';
 
 // Hourly ceiling on staleness — see the note in app/page.js.
 export const revalidate = 3600;
@@ -54,13 +55,16 @@ export default async function BookDetail({ params, searchParams }) {
     notFound();
   }
 
-  const { data: healer } = book.healer_slug
-    ? await supabase
-        .from('healers')
-        .select('name, healer_slug')
-        .eq('healer_slug', book.healer_slug)
-        .single()
-    : { data: null };
+  // Every author: the main one first, then co-authors (migration 0027). An
+  // author slug with no healer row is skipped; with none at all, the page
+  // falls back to the free-text author.
+  const authorSlugs = bookAuthorSlugs(book);
+  const { data: healerRows } = authorSlugs.length
+    ? await supabase.from('healers').select('name, healer_slug').in('healer_slug', authorSlugs)
+    : { data: [] };
+  const authors = authorSlugs
+    .map((s) => (healerRows || []).find((h) => h.healer_slug === s))
+    .filter(Boolean);
   // Cover is stored under mock_cover_url; 'NULL' is a legacy sentinel for absent.
   const hasCover = book.mock_cover_url && book.mock_cover_url !== 'NULL';
   // Canonical /dp/ link, tagged only when that marketplace's env var is set.
@@ -114,13 +118,21 @@ export default async function BookDetail({ params, searchParams }) {
             />
           </div>
 
-          {healer ? (
-            <Link
-              href={`/healers/${healer.healer_slug}${backContextQuery(`/books/${book.slug}${backContextQuery(from, fromTitle)}`, book.title)}`}
-              className="text-sm text-violet-400 hover:text-violet-300 mb-4 inline-block"
-            >
-              By {healer.name}
-            </Link>
+          {authors.length > 0 ? (
+            <p className="text-sm text-gray-400 mb-4">
+              By{' '}
+              {authors.map((healer, i) => (
+                <span key={healer.healer_slug}>
+                  {i > 0 && (i === authors.length - 1 ? ' and ' : ', ')}
+                  <Link
+                    href={`/healers/${healer.healer_slug}${backContextQuery(`/books/${book.slug}${backContextQuery(from, fromTitle)}`, book.title)}`}
+                    className="text-violet-400 hover:text-violet-300"
+                  >
+                    {healer.name}
+                  </Link>
+                </span>
+              ))}
+            </p>
           ) : (
             book.author && <p className="text-sm text-gray-400 mb-4">By {book.author}</p>
           )}

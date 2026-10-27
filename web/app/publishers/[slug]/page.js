@@ -9,6 +9,7 @@ import TrackOpen from '@/components/TrackOpen';
 import ListingBadges from '@/components/ListingBadges';
 import PublisherLogo from '@/components/PublisherLogo';
 import { isPlatform } from '@/utils/listings';
+import { bookAuthorSlugs, booksByAuthorsFilter } from '@/utils/bookAuthors';
 
 // Hourly ceiling on staleness — see the note in app/page.js.
 export const revalidate = 3600;
@@ -96,26 +97,31 @@ export default async function PublisherProfile({ params, searchParams }) {
 
   // 3. Auto-curated book list: every book authored by a linked healer. Books
   //    relate to a healer by the text healer_slug column (not healer_id), so
-  //    match on the linked healers' slugs. One query for the whole page; the
+  //    match on the linked healers' slugs, as main author or co-author
+  //    (co_healer_slugs, migration 0027). One query for the whole page; the
   //    rows are grouped per author below rather than re-queried per shelf.
   const authorSlugs = authors.map((a) => a.healer_slug).filter(Boolean);
+  const booksFilter = booksByAuthorsFilter(authorSlugs);
   let books = [];
-  if (authorSlugs.length > 0) {
+  if (booksFilter) {
     const { data: bookRows } = await supabase
       .from('books')
       .select('*')
-      .in('healer_slug', authorSlugs)
+      .or(booksFilter)
       .order('created_at', { ascending: false });
     books = bookRows || [];
   }
 
-  // One shelf per author, most prominent first. An author with nothing on the
-  // shelf gets no shelf at all — they still appear in the authors row above,
-  // which is the whole roster.
+  // One shelf per author, most prominent first. A co-written book goes on
+  // each of its authors' shelves. An author with nothing on the shelf gets no
+  // shelf at all — they still appear in the authors row above, which is the
+  // whole roster.
   const booksByAuthor = new Map();
   for (const book of books) {
-    if (!booksByAuthor.has(book.healer_slug)) booksByAuthor.set(book.healer_slug, []);
-    booksByAuthor.get(book.healer_slug).push(book);
+    for (const s of bookAuthorSlugs(book)) {
+      if (!booksByAuthor.has(s)) booksByAuthor.set(s, []);
+      booksByAuthor.get(s).push(book);
+    }
   }
 
   const authorShelves = authors

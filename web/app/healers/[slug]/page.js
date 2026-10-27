@@ -14,6 +14,7 @@ import TrackOpen from '@/components/TrackOpen';
 import ListingBadges from '@/components/ListingBadges';
 import { actionLabel, actionUrl, isPerson, withScheme } from '@/utils/badges';
 import { MEDICAL_NOTE, needsMedicalNote } from '@/utils/medicalNote';
+import { booksByAuthorsFilter } from '@/utils/bookAuthors';
 
 // Hourly ceiling on staleness — see the note in app/page.js. Reading
 // searchParams for the back link already makes this route per-request, so this
@@ -183,8 +184,12 @@ export default async function HealerProfile({ params, searchParams }) {
   }
 
   // Books and videos relate to a healer via the relational `healer_slug` column
-  // written by the admin "Link Healer / Author" system.
-  const { data: books } = await supabase.from('books').select('*').eq('healer_slug', slug);
+  // written by the admin "Link Healer / Author" system. Books also show where
+  // this healer is a co-author (co_healer_slugs, migration 0027).
+  const booksFilter = booksByAuthorsFilter([slug]);
+  const { data: books } = booksFilter
+    ? await supabase.from('books').select('*').or(booksFilter)
+    : { data: [] };
   const { data: videos } = await supabase.from('videos').select('*').eq('healer_slug', slug);
 
   // EXPIRATION WINDOW — offerings surface only while live: the row must be
