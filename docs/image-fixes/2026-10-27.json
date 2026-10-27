@@ -482,7 +482,7 @@
       "problem": "broken",
       "status": 403,
       "old": "https://scontent.flis6-1.fna.fbcdn.net/v/t39.30808-6/426391480_344500591902751_5923403474813372211_n.jpg?stp=dst-jpg_tt6&cstp=mx960x960&ctp=s960x960&_nc_cat=102&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=wVEcOKDg-w4Q7kNvwF7gBUl&_nc_oc=AdrhHl-cl2F4Yn2sAf-2z0VhWViOTW4VC-RNXFdU6nZGdzrPrbZrkpvvXksjrugIwb5lTmMlTuhDApDuy2OoN2PV&_nc_zt=23&_nc_ht=scontent.flis6-1.fna&_nc_gid=E38hDxs8pm1XKOdsugUHUA&_nc_ss=7b2a8&oh=00_Af9Mzf8azjecssFsTGa3Ksb-bjZ1lQrtPwqsUuJffRKwcA&oe=6A3A11C4",
-      "action": "suggest",
+      "action": "swap",
       "index": 0,
       "candidates": [
         {
@@ -490,7 +490,10 @@
           "source": "YouTube channel"
         }
       ],
-      "why": "teacher photo: for the owner to choose"
+      "why": "teacher photo: approved by the owner (27 Oct 2026)",
+      "new": "https://yt3.googleusercontent.com/RJV0XIaZuLzG6cH5N8dgVNLC8C8HBmv2YHMx6bSdxwFcEm-gyEC6Xi6nR9ay_te-ur5de0VknA=s900-c-k-c0x00ffffff-no-rj",
+      "source": "YouTube channel",
+      "approved": true
     },
     {
       "table": "healers",
@@ -500,7 +503,7 @@
       "problem": "broken",
       "status": null,
       "old": "https://theicewarrior.com/wp-content/uploads/2022/05/Wim-Hof-in-the-snow-breathwork.jpg",
-      "action": "suggest",
+      "action": "swap",
       "index": 1,
       "candidates": [
         {
@@ -508,7 +511,10 @@
           "source": "YouTube channel"
         }
       ],
-      "why": "teacher photo: for the owner to choose"
+      "why": "teacher photo: approved by the owner (27 Oct 2026)",
+      "new": "https://yt3.googleusercontent.com/ZX_EqwF6HxK1-kp5iPK19JF6PPhdIsIyTK9qJ_xWKuDm9uWlsZp828Pu30O0E-zxkek814B4gA=s900-c-k-c0x00ffffff-no-rj",
+      "source": "YouTube channel",
+      "approved": true
     }
   ]
 }

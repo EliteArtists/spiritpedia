@@ -2295,7 +2295,8 @@ else is changed.
    - fixed: item, teacher, where the new image came from;
    - teacher photos: the candidate links, for a yes or no (then change it in
      Admin → the teacher → Profile → Images, or set the row to `swap` with
-     `new` and apply);
+     `new` and `approved: true` and run `--apply` again; it changes only that
+     photo and skips what it already applied);
    - videos to remove: title, teacher, link (deleted in Admin → the teacher →
      Content, or by the assistant when the owner says so);
    - not fixed: item and why, so the owner can find an image or remove it.
@@ -2308,6 +2309,6 @@ The shared finding and testing code is `scripts/lib/images.mjs`, also used by
 | Date | Fixed | Teacher photos suggested | Videos to remove | Not fixed |
 | :--- | :--- | :--- | :--- | :--- |
 | 27 Oct 2026 (by hand, before the script) | Ra Uru Hu: 14 offerings and 1 free resource (Jovian Archive renamed its images; each from its own page) | — | — | — |
-| 27 Oct 2026 (first run, `2026-10-27.json`) | 17: 11 offerings, 4 free resources, 2 books (Tapping Insiders and Miracles Mastermind skipped after the sheet check) | Luchin, Wim Hof (photo 2) | — (none queued yet; the first scheduled run after 0028 queues them) | 22: mostly Karina Grant's and Marisa Cranfill's (YMAA) offerings; Barbara Brennan's *Seeds of the Spirit 2001*; Chani's Astro 101 |
+| 27 Oct 2026 (first run, `2026-10-27.json`) | 17: 11 offerings, 4 free resources, 2 books (Tapping Insiders and Miracles Mastermind skipped after the sheet check) | Luchin (photo 1), Wim Hof (photo 2): both approved and set, from their YouTube channels | — (none queued yet; the first scheduled run after 0028 queues them) | 22: mostly Karina Grant's and Marisa Cranfill's (YMAA) offerings; Barbara Brennan's *Seeds of the Spirit 2001*; Chani's Astro 101 |
 
 Made with love in Tavira 💫

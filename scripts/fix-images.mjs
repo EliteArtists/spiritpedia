@@ -9,8 +9,9 @@
 // What each queue row becomes in the plan (`action`):
 //   swap     books, offerings, free resources with a working new image. The
 //            standing OK: --apply changes these and lists them.
-//   suggest  teacher photos. Candidates only; the owner picks, and the photo
-//            is changed by hand (or the plan edited to `swap` with `new`).
+//   suggest  teacher photos. Candidates only. Once the owner approves one, set
+//            the row to `swap` with `new` and `approved: true`; --apply then
+//            changes that photo (only that entry of image_urls) like the rest.
 //   remove   a video YouTube no longer has. Listed for the owner to delete.
 //   unsolved nothing usable found.
 // Set a row's action to `skip` to leave it alone after checking the sheet.
@@ -76,12 +77,27 @@ async function swap(table, id, column, before, after) {
   return (await r.json()).length === 1;
 }
 
+// A teacher photo: entry `index` of image_urls, only if it is still `before`.
+async function swapPhoto(id, index, before, after) {
+  const [healer] = await get(`healers?id=eq.${id}&select=image_urls`);
+  const urls = healer?.image_urls || [];
+  if (urls[index] !== before) return false;
+  urls[index] = after;
+  const r = await fetch(`${BASE}/rest/v1/healers?id=eq.${id}`, {
+    method: 'PATCH', headers: { ...headers, Prefer: 'return=representation' }, body: JSON.stringify({ image_urls: urls }),
+  });
+  if (!r.ok) throw new Error(`PATCH healers ${id}: ${r.status} ${await r.text()}`);
+  return (await r.json()).length === 1;
+}
+
 // ── Rollback ─────────────────────────────────────────────────────────────
 if (doRollback) {
   const logPath = planArg.replace(/\.json$/, `.${envName}.applied.json`);
   const log = JSON.parse(fs.readFileSync(logPath, 'utf8'));
   for (const f of log.fixes) {
-    const ok = await swap(f.table, f.id, f.column, f.after, f.before);
+    const ok = f.table === 'healers'
+      ? await swapPhoto(f.id, f.index, f.after, f.before)
+      : await swap(f.table, f.id, f.column, f.after, f.before);
     console.log(`${ok ? 'restored' : 'NOT restored (changed since)'}: ${f.table} "${f.title}"`);
   }
   fs.renameSync(logPath, logPath.replace(/\.json$/, `.rolled-back-${Date.now()}.json`));
@@ -95,15 +111,21 @@ if (doApply) {
   const log = fs.existsSync(logPath) ? JSON.parse(fs.readFileSync(logPath, 'utf8')) : { env: envName, fixes: [] };
   const done = [];
   for (const row of plan.rows) {
-    if (row.action !== 'swap' || !SWAPPABLE.has(row.table) || !row.new) continue;
-    const column = TABLES[row.table].column;
-    if (!(await swap(row.table, row.record_id, column, row.old, row.new))) {
+    const photo = row.table === 'healers' && row.approved === true;
+    if (row.action !== 'swap' || !(SWAPPABLE.has(row.table) || photo) || !row.new) continue;
+    // Applied earlier from this plan (a second --apply after approving photos).
+    if (log.fixes.some((f) => f.table === row.table && String(f.id) === String(row.record_id) && f.after === row.new)) continue;
+    const column = photo ? 'image_urls' : TABLES[row.table].column;
+    const changed = photo
+      ? await swapPhoto(row.record_id, row.index, row.old, row.new)
+      : await swap(row.table, row.record_id, column, row.old, row.new);
+    if (!changed) {
       console.log(`NOT changed (the image is no longer the planned one): ${row.table} "${row.title}"`);
       continue;
     }
     // Cleared now rather than at the next check, as the admin's own save does.
     await fetch(`${BASE}/rest/v1/broken_images?table_name=eq.${row.table}&record_id=eq.${row.record_id}`, { method: 'DELETE', headers });
-    log.fixes.push({ at: new Date().toISOString(), table: row.table, id: row.record_id, healer_slug: row.healer_slug, title: row.title, column, before: row.old, after: row.new });
+    log.fixes.push({ at: new Date().toISOString(), table: row.table, id: row.record_id, healer_slug: row.healer_slug, title: row.title, column, ...(photo && { index: row.index }), before: row.old, after: row.new });
     done.push(row);
     fs.writeFileSync(logPath, JSON.stringify(log, null, 2) + '\n');
   }
