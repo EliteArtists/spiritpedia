@@ -29,6 +29,9 @@ abstract class ContentRepository {
   Future<List<Video>> mixedVideos({int poolSize = 60});
   Future<List<Video>> videosForSubject(String subject);
 
+  /// For You: every video about any of [subjects], newest first.
+  Future<List<Video>> videosForSubjects(List<String> subjects);
+
   /// Detail pages. null = no such row (the page shows "not found").
   Future<Book?> book(String slug);
   Future<Video?> video(String slug);
@@ -259,6 +262,19 @@ class SupabaseContentRepository implements ContentRepository {
           .from('videos')
           .select(_videoColumns)
           .contains('subject_slugs', [subject])
+          .order('id', ascending: false),
+    );
+    return [for (final r in rows) Video.fromJson(r)];
+  }
+
+  @override
+  Future<List<Video>> videosForSubjects(List<String> subjects) async {
+    if (subjects.isEmpty) return const [];
+    final rows = await _all(
+      () => _db
+          .from('videos')
+          .select(_videoColumns)
+          .overlaps('subject_slugs', subjects)
           .order('id', ascending: false),
     );
     return [for (final r in rows) Video.fromJson(r)];

@@ -399,18 +399,68 @@ List<T> byInterest<T>(
   return [for (final (item, _, _, _, _) in scored) item];
 }
 
-/// Discover's "For You": the first three levels of [byInterest] (More of,
-/// learned, the rest of the More of pillars), at most [size].
-List<T> forYou<T>(
+// ── For You (the pill) ──────────────────────────────────────────────────────
+// A whole page of someone's More of subjects, on Discover, Videos and Books.
+// Never thin: a shelf short of its own subjects is topped up from closely
+// related ones — what Spiritpedia has learned they explore, then the rest of
+// their pillars — and one still nearly empty is left out.
+
+/// How many a For You shelf is topped up to.
+const forYouFill = 10;
+
+/// The fewest a For You shelf shows; fewer, and it is left out.
+const forYouShelfMinimum = 3;
+
+/// The fewest subjects For You is built from (its subject shelves).
+const forYouSubjectMinimum = 3;
+
+/// The subjects For You is built from: their own [chosen], in the pill row's
+/// pillar order; if fewer than [minimum], topped up with closely related
+/// ones — [learned] first (most explored first), then the rest of their
+/// pillars. Never a [hidden] one. Nothing chosen, nothing.
+List<String> forYouSubjects(
+  Set<String> chosen, {
+  Set<String> hidden = const {},
+  Map<String, double> learned = const {},
+  int minimum = forYouSubjectMinimum,
+}) {
+  if (chosen.isEmpty) return const [];
+  final inPillars = {for (final slugs in subjectPillars.values) ...slugs};
+  final own = [
+    for (final slugs in subjectPillars.values)
+      for (final s in slugs)
+        if (chosen.contains(s) && !hidden.contains(s)) s,
+    for (final s in [...chosen]..sort())
+      if (!inPillars.contains(s) && !hidden.contains(s)) s,
+  ];
+  if (own.length >= minimum) return own;
+  final byWeight = learned.entries.toList()
+    ..sort((a, b) => b.value.compareTo(a.value));
+  final mates = pillarMates(chosen);
+  final related = <String>{
+    for (final e in byWeight) e.key,
+    for (final p in pillarsByInterest(chosen))
+      for (final s in subjectPillars[p]!)
+        if (mates.contains(s)) s,
+  }..removeWhere((s) => chosen.contains(s) || hidden.contains(s));
+  return [...own, ...related.take(minimum - own.length)];
+}
+
+/// A For You shelf: the [items] carrying one of the [chosen] subjects, those
+/// carrying more of them first ([byInterest]); short of [fill], topped up
+/// with items about a related subject (learned, then the rest of their
+/// pillars). Fewer than [minimum] in all: none — no thin shelf.
+List<T> forYouShelf<T>(
   List<T> items,
   Set<String> chosen,
   List<String> Function(T) subjects, {
-  int size = videoShelfSize,
   Map<String, double> learned = const {},
+  int fill = forYouFill,
+  int minimum = forYouShelfMinimum,
 }) {
-  if (chosen.isEmpty && learned.isEmpty) return const [];
+  if (chosen.isEmpty) return const [];
   final mates = pillarMates(chosen);
-  return byInterest(
+  final ranked = byInterest(
     [
       for (final item in items)
         if (interestLevel(subjects(item), chosen, mates, learned) < 3) item,
@@ -418,7 +468,34 @@ List<T> forYou<T>(
     chosen,
     subjects,
     learned: learned,
-  ).take(size).toList();
+  );
+  final own = ranked
+      .where((i) => interestLevel(subjects(i), chosen, mates, learned) == 0)
+      .length;
+  final shelf = ranked.take(own >= fill ? own : fill).toList();
+  return shelf.length < minimum ? const [] : shelf;
+}
+
+/// For You's Publishing Houses: those publishing in their subjects (topped
+/// up like any For You shelf, but shown however few), then new presses with
+/// no authors yet — they have no subjects to match, and still show.
+List<Publisher> forYouPublishers(
+  List<Publisher> publishers,
+  Set<String> chosen,
+  Map<String, double> learned,
+) {
+  final matched = forYouShelf(
+    publishers,
+    chosen,
+    (p) => p.subjectSlugs,
+    learned: learned,
+    minimum: 1,
+  );
+  return [
+    ...matched,
+    for (final p in publishers)
+      if (p.authorCount == 0 && !matched.contains(p)) p,
+  ];
 }
 
 /// "Never show", for an item (video, book, course, retreat, download,

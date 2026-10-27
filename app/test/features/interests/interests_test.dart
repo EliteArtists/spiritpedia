@@ -54,21 +54,21 @@ void main() {
         'energy', // the rest of Emotional Healing
         'none',
       ]);
-      expect(interestLevel(['astrology'], {'reiki'}, null, {'astrology': 4}), 1);
+      expect(
+        interestLevel(['astrology'], {'reiki'}, null, {'astrology': 4}),
+        1,
+      );
     });
 
     test('learned alone ranks for someone who chose nothing', () {
-      expect(ids(byInterest(items, const {}, _subjects, learned: {'yoga': 5})), [
-        'yoga',
-        'tarot',
-        'energy',
-        'none',
-        'reiki',
-        'astro',
-      ]);
       expect(
-        ids(forYou(items, const {}, _subjects, learned: {'yoga': 5})),
-        ['yoga', 'tarot'],
+        ids(byInterest(items, const {}, _subjects, learned: {'yoga': 5})),
+        ['yoga', 'tarot', 'energy', 'none', 'reiki', 'astro'],
+      );
+      // For You is their chosen subjects: learning alone makes none.
+      expect(
+        forYouShelf(items, const {}, _subjects, learned: {'yoga': 5}),
+        isEmpty,
       );
       expect(
         pillarsByInterest(const {}, null, const {}, {'yoga': 5}).first,
@@ -79,10 +79,19 @@ void main() {
     test('scores halve every 30 days; the top 5 above the minimum, never a '
         'More of or Never show subject', () {
       final now = DateTime.utc(2026, 10, 18);
-      AffinityRow row(String s, double score, int daysAgo) =>
-          (subject: s, score: score, updatedAt: now.subtract(Duration(days: daysAgo)));
-      expect(fadedScore(8, now.subtract(const Duration(days: 30)), now), closeTo(4, 1e-9));
-      expect(fadedScore(8, now.subtract(const Duration(days: 60)), now), closeTo(2, 1e-9));
+      AffinityRow row(String s, double score, int daysAgo) => (
+        subject: s,
+        score: score,
+        updatedAt: now.subtract(Duration(days: daysAgo)),
+      );
+      expect(
+        fadedScore(8, now.subtract(const Duration(days: 30)), now),
+        closeTo(4, 1e-9),
+      );
+      expect(
+        fadedScore(8, now.subtract(const Duration(days: 60)), now),
+        closeTo(2, 1e-9),
+      );
       final learned = learnedSubjects(
         [
           row('yoga', 10, 0),
@@ -123,7 +132,8 @@ void main() {
 
     test('no choice changes nothing', () {
       expect(byInterest(items, const {}, _subjects), same(items));
-      expect(forYou(items, const {}, _subjects), isEmpty);
+      expect(forYouShelf(items, const {}, _subjects), isEmpty);
+      expect(forYouSubjects(const {}), isEmpty);
       expect(pillarsByInterest(const {}), subjectPillars.keys.toList());
     });
 
@@ -163,13 +173,80 @@ void main() {
       ]);
     });
 
-    test('For You: levels 1 and 2 only', () {
-      expect(ids(forYou(items, {'reiki'}, _subjects)), [
+    test('For You: theirs, topped up from their pillar; never the rest', () {
+      expect(ids(forYouShelf(items, {'reiki'}, _subjects)), [
         'reiki',
         'reiki+',
         'energy',
         'quantum',
       ]);
+      // Enough of their own: no topping up.
+      expect(
+        ids(forYouShelf(items, {'reiki'}, _subjects, fill: 2, minimum: 1)),
+        ['reiki', 'reiki+'],
+      );
+    });
+
+    test('For You: a shelf still nearly empty is left out', () {
+      expect(forYouShelf(items, {'yoga'}, _subjects), isEmpty);
+      expect(ids(forYouShelf(items, {'yoga'}, _subjects, minimum: 1)), [
+        'yoga',
+      ]);
+    });
+
+    test('For You subjects: theirs in pill order; very few, topped up with '
+        'what they explore, then their pillar; never a hidden one', () {
+      expect(forYouSubjects({'reiki', 'meditation', 'yoga'}), [
+        'reiki',
+        'meditation',
+        'yoga',
+      ]);
+      expect(forYouSubjects({'reiki'}), [
+        'reiki',
+        'shadow-work',
+        'self-healing',
+      ]);
+      expect(
+        forYouSubjects(
+          {'reiki'},
+          hidden: {'shadow-work'},
+          learned: {'astrology': 4},
+        ),
+        ['reiki', 'astrology', 'self-healing'],
+      );
+      expect(
+        forYouSubjects({'reiki'}, hidden: {'reiki'}).first,
+        isNot('reiki'),
+      );
+    });
+
+    test('For You publishers: theirs, then new presses with no authors', () {
+      const theirs = Publisher(
+        id: 'a',
+        slug: 'a',
+        name: 'A',
+        authorCount: 3,
+        subjectSlugs: ['reiki'],
+      );
+      const other = Publisher(
+        id: 'b',
+        slug: 'b',
+        name: 'B',
+        authorCount: 3,
+        subjectSlugs: ['yoga'],
+      );
+      const fresh = Publisher(id: 'c', slug: 'c', name: 'C');
+      expect(
+        [
+          for (final p in forYouPublishers(
+            [other, fresh, theirs],
+            {'reiki'},
+            const {},
+          ))
+            p.name,
+        ],
+        ['A', 'C'],
+      );
     });
 
     test('pillars holding chosen subjects lead the pill row', () {

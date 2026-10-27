@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:go_router/go_router.dart';
 
 import '../../data/models.dart';
 import '../../data/providers.dart';
@@ -10,11 +11,13 @@ import '../interests/interests.dart';
 import '../shell/tab_bar_state.dart';
 import '../learning/learning.dart';
 
-/// "View All" and the five pillars, as one horizontally scrolling row — the
-/// pillars holding someone's chosen interests first, and none whose every
-/// subject they hid. Tapping a pillar opens
-/// its subjects in a sheet — the website's hover panel, as a phone would show
-/// it. The chosen subject narrows the whole screen.
+/// "For You", "View All" and the five pillars, as one horizontally scrolling
+/// row — the pillars holding someone's chosen interests first, and none whose
+/// every subject they hid. For You is a whole page of their subjects; with
+/// none yet, it opens Tailor Spiritpedia. Tapping a pillar opens its
+/// subjects in a sheet — the website's hover panel, as a phone would show it
+/// — their own marked with the small gold star. The chosen subject narrows
+/// the whole screen for a look, never saved.
 class SubjectPillRow extends ConsumerWidget {
   const SubjectPillRow({
     super.key,
@@ -31,6 +34,7 @@ class SubjectPillRow extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final current = ref.watch(filter);
+    final forYou = ref.watch(forYouActiveProvider);
     final subjects = ref.watch(subjectsProvider).value ?? const <Subject>[];
     final activePillar = pillarOf(current);
     final hidden = ref.watch(hiddenSubjectsProvider);
@@ -51,9 +55,27 @@ class SubjectPillRow extends ConsumerWidget {
         ),
         children: [
           _Pill(
+            key: const ValueKey('pill-for-you'),
+            label: 'For You',
+            active: forYou,
+            onTap: () {
+              if (ref.read(interestSubjectsProvider).isEmpty) {
+                // Nothing chosen yet: choose, then come back to it.
+                context.push('/tailor?for=you');
+                return;
+              }
+              ref.read(forYouViewProvider.notifier).show(true);
+              ref.read(filter.notifier).select(null);
+            },
+          ),
+          _Pill(
+            key: const ValueKey('pill-view-all'),
             label: 'View All',
-            active: current == null,
-            onTap: () => ref.read(filter.notifier).select(null),
+            active: current == null && !forYou,
+            onTap: () {
+              ref.read(forYouViewProvider.notifier).show(false);
+              ref.read(filter.notifier).select(null);
+            },
           ),
           for (final pillar in pillars)
             _Pill(
@@ -75,6 +97,7 @@ class SubjectPillRow extends ConsumerWidget {
   ) {
     // Never show: a hidden subject is left out of its pillar's list.
     final hidden = ref.read(hiddenSubjectsProvider);
+    final mine = ref.read(interestSubjectsProvider);
     final inPillar = [
       for (final slug in subjectPillars[pillar]!)
         if (!hidden.contains(slug))
@@ -112,6 +135,11 @@ class SubjectPillRow extends ConsumerWidget {
                   children: [
                     for (final s in inPillar)
                       ChoiceChip(
+                        key: ValueKey('pillar-subject-${s.slug}'),
+                        // Theirs: the small gold star, "in your For You".
+                        avatar: mine.contains(s.slug)
+                            ? const ForYouStar()
+                            : null,
                         label: Text(s.name),
                         selected: current == s.slug,
                         showCheckmark: false,
@@ -188,8 +216,76 @@ class SubjectFilterNote extends ConsumerWidget {
   }
 }
 
+/// The small gold star beside a subject in someone's For You — the app's
+/// own star image, never a text symbol.
+class ForYouStar extends StatelessWidget {
+  const ForYouStar({super.key, this.size = 14});
+
+  final double size;
+
+  @override
+  Widget build(BuildContext context) => Semantics(
+    label: 'in your For You',
+    child: Image.asset(
+      'assets/images/star.png',
+      width: size,
+      height: size,
+      excludeFromSemantics: true,
+    ),
+  );
+}
+
+/// At the top of For You: whose subjects these are, and Edit (Tailor
+/// Spiritpedia). Only their own subjects are named, not the related ones it
+/// tops up with.
+class ForYouNote extends ConsumerWidget {
+  const ForYouNote({super.key});
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    if (!ref.watch(forYouActiveProvider)) return const SizedBox.shrink();
+    final subjects = ref.watch(subjectsProvider).value ?? const <Subject>[];
+    final mine = [
+      for (final s in ref.watch(forYouSubjectListProvider))
+        if (ref.watch(interestSubjectsProvider).contains(s))
+          subjectName(subjects, s),
+    ];
+    final side = SpLayout.of(context).gutter;
+    return Padding(
+      key: const ValueKey('for-you-note'),
+      padding: EdgeInsets.fromLTRB(side, 4, side, 0),
+      child: Row(
+        children: [
+          Flexible(
+            child: Text(
+              'Tailored for you: ${mine.join(', ')} ·',
+              maxLines: 1,
+              overflow: TextOverflow.ellipsis,
+              style: const TextStyle(fontSize: 13.5, color: SpColors.textMuted),
+            ),
+          ),
+          TextButton(
+            key: const ValueKey('for-you-edit'),
+            onPressed: () => context.push('/tailor'),
+            style: TextButton.styleFrom(
+              foregroundColor: SpColors.link,
+              visualDensity: VisualDensity.compact,
+            ),
+            child: const Text('Edit'),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
 class _Pill extends StatelessWidget {
-  const _Pill({required this.label, required this.active, required this.onTap});
+  const _Pill({
+    super.key,
+    required this.label,
+    required this.active,
+    required this.onTap,
+  });
 
   final String label;
   final bool active;

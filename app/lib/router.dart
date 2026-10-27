@@ -82,7 +82,8 @@ GoRouter buildRouter({
     GoRoute(
       parentNavigatorKey: _rootKey,
       path: '/tailor',
-      builder: (context, state) => const TailorScreen(),
+      builder: (context, state) =>
+          TailorScreen(forYou: state.uri.queryParameters['for'] == 'you'),
     ),
     // Build 11's name for it.
     GoRoute(

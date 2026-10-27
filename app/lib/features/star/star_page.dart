@@ -189,6 +189,7 @@ class _StarPageState extends ConsumerState<StarPage> implements TabStarTarget {
                         SliverToBoxAdapter(
                           child: SubjectFilterNote(filter: widget.filter),
                         ),
+                        const SliverToBoxAdapter(child: ForYouNote()),
                         const SliverToBoxAdapter(child: SizedBox(height: 20)),
                         ...widget.slivers,
                         const SliverToBoxAdapter(

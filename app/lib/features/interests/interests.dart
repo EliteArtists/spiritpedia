@@ -162,6 +162,10 @@ class InterestsController extends Notifier<Interests> {
     return Interests.none;
   }
 
+  /// Done once the phone's saved choice has been read — so "nothing chosen"
+  /// can be told from "not read yet" (For You's landing, Tailor's ticks).
+  Future<void> get loaded => _loaded;
+
   /// "More of" — from onboarding. Keeps what is hidden.
   Future<void> choose(Iterable<String> subjectSlugs) async {
     await _loaded;

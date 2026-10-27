@@ -4,7 +4,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
-import '../../data/providers.dart';
 import '../../theme/colors.dart';
 import '../star/conductor.dart';
 import '../star/star_layer.dart';
@@ -21,12 +20,6 @@ class AppShell extends ConsumerWidget {
   static const _discover = 0;
 
   void _go(BuildContext context, WidgetRef ref, int index) {
-    // Landing on Discover's View All turns For You to its next content type.
-    if (index == _discover &&
-        navigationShell.currentIndex != _discover &&
-        ref.read(subjectFilterProvider) == null) {
-      ref.read(forYouTurnProvider.notifier).landed();
-    }
     void go() => navigationShell.goBranch(
       index,
       // Tapping the tab you are already on returns it to its first screen.

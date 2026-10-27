@@ -21,8 +21,8 @@ Community.
    - SHA-256 `29:35:1F:3F:FB:79:F8:35:1B:2A:DD:21:9E:DA:A3:28:3D:F7:11:F7:14:EA:31:BE:D7:31:13:EE:87:D2:27:CE`
    - The key itself: `~/.secrets/spiritpedia/android/` (README §12.8).
 2. **The file to upload:**
-   `app/build/android-release/Spiritpedia-1.0.0-24.aab` (60.8 MB, version
-   code 24, version name 1.0.0, target API 36, minimum API 24, 16 KB page
+   `app/build/android-release/Spiritpedia-1.0.0-25.aab` (60.9 MB, version
+   code 25, version name 1.0.0, target API 36, minimum API 24, 16 KB page
    aligned).
 3. **Create the app:** Play Console → **Create app** → App name
    `Spiritpedia` → Default language English (United Kingdom) → **App** →

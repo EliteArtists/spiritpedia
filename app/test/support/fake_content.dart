@@ -123,15 +123,19 @@ class FakeContentRepository implements ContentRepository {
     return [...allHealers, ...extraHealers];
   }
 
+  /// Overridable: publishers beyond Hay House (a new press, say).
+  List<Publisher> morePublishers = const [];
+
   @override
-  Future<List<Publisher>> publishers() async => const [
-    Publisher(
+  Future<List<Publisher>> publishers() async => [
+    const Publisher(
       id: 'p1',
       slug: 'hay-house',
       name: 'Hay House',
       authorCount: 18,
       subjectSlugs: ['meditation'],
     ),
+    ...morePublishers,
   ];
 
   @override
@@ -202,6 +206,12 @@ class FakeContentRepository implements ContentRepository {
   Future<List<Video>> videosForSubject(String subject) async => [
     for (final v in allVideos)
       if (v.subjectSlugs.contains(subject)) v,
+  ];
+
+  @override
+  Future<List<Video>> videosForSubjects(List<String> subjects) async => [
+    for (final v in allVideos)
+      if (v.subjectSlugs.any(subjects.contains)) v,
   ];
 
   static const amazonBook = Book(

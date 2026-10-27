@@ -1,5 +1,4 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:shared_preferences/shared_preferences.dart';
 
 import '../core/supabase_providers.dart';
 import '../features/interests/interests.dart';
@@ -157,76 +156,58 @@ Future<List<Object>> _exploreSection(
 
 // ── For You ──────────────────────────────────────────────────────────────────
 
-/// Which turn of the For You rotation Discover's View All is on. Moves on
-/// each time someone lands there — a launch, switching to Discover, choosing
-/// View All — and is remembered between launches, so the rotation carries on.
-class ForYouTurn extends Notifier<int> {
-  static const _key = 'for_you_turn';
-
+/// Whether the pills are on For You rather than View All — one for Discover,
+/// Videos and Books together, like the subject filter. A one-subject look
+/// ([subjectFilterProvider]) sits on top of either and leaves it as it was,
+/// so Clear goes back to it.
+///
+/// Landing: on For You for anyone with More of subjects, on View All for
+/// anyone without. Their first subjects (the welcome screen, Tailor, or an
+/// account's arriving at sign-in) switch it on; clearing the last switches
+/// it off.
+class ForYouView extends Notifier<bool> {
   @override
-  int build() {
-    _restore();
-    return 0;
+  bool build() {
+    ref.listen(
+      interestsProvider.select((i) => i.subjects.isNotEmpty),
+      (_, hasSubjects) => state = hasSubjects,
+    );
+    return ref.read(interestsProvider).subjects.isNotEmpty;
   }
 
-  Future<void> _restore() async {
-    try {
-      final saved = await SharedPreferencesAsync().getInt(_key) ?? -1;
-      if (!ref.mounted) return;
-      state = saved + 1 + state;
-      await SharedPreferencesAsync().setInt(_key, state);
-    } catch (_) {}
-  }
-
-  void landed() {
-    state++;
-    SharedPreferencesAsync().setInt(_key, state).catchError((_) {});
-  }
+  void show(bool forYou) => state = forYou;
 }
 
-final forYouTurnProvider = NotifierProvider<ForYouTurn, int>(ForYouTurn.new);
+final forYouViewProvider = NotifierProvider<ForYouView, bool>(ForYouView.new);
 
-/// The content types For You rotates through, in order.
-const forYouSections = [
-  ExploreSection.freeResources,
-  ExploreSection.courses,
-  ExploreSection.downloads,
-  ExploreSection.retreats,
-  ExploreSection.memberships,
-];
+/// Whether For You is what the tabs show now: on For You, no one-subject
+/// look on top, and subjects to show.
+final forYouActiveProvider = Provider<bool>(
+  (ref) =>
+      ref.watch(subjectFilterProvider) == null &&
+      ref.watch(forYouViewProvider) &&
+      ref.watch(interestSubjectsProvider).isNotEmpty,
+);
 
-/// Discover's For You: one content type per turn, from their More of
-/// subjects (level 1, then level 2 — docs/personalisation.md), hidden
-/// subjects respected. A type with nothing relevant is skipped; retreats are
-/// upcoming only, soonest first. Null when they chose nothing, or nothing
-/// is relevant.
-final forYouProvider =
-    FutureProvider<({ExploreSection section, List<Object> items})?>((
-      ref,
-    ) async {
-      final chosen = ref.watch(interestSubjectsProvider);
-      final learned = ref.watch(learnedProvider);
-      if (chosen.isEmpty && learned.isEmpty) return null;
-      final turn = ref.watch(forYouTurnProvider);
-      final available = <({ExploreSection section, List<Object> items})>[];
-      for (final section in forYouSections) {
-        var items = (await ref.watch(
-          exploreSectionProvider((section, null)).future,
-        )).items;
-        if (section == ExploreSection.retreats) {
-          final today = DateTime.now();
-          final day = DateTime(today.year, today.month, today.day);
-          items = [
-            for (final o in items.cast<Offering>())
-              if ((o.starts ?? o.ends) case final d? when !d.isBefore(day)) o,
-          ];
-        }
-        final picked = forYou(items, chosen, subjectsOf, learned: learned);
-        if (picked.isNotEmpty) available.add((section: section, items: picked));
-      }
-      if (available.isEmpty) return null;
-      return available[turn % available.length];
-    });
+/// The subjects For You is built from: theirs, topped up with closely
+/// related ones if they chose very few ([forYouSubjects]).
+final forYouSubjectListProvider = Provider<List<String>>(
+  (ref) => forYouSubjects(
+    ref.watch(interestSubjectsProvider),
+    hidden: ref.watch(hiddenSubjectsProvider),
+    learned: ref.watch(learnedProvider),
+  ),
+);
+
+/// For You's subjects beyond the ones it was built from — the rest of their
+/// pillars and what they explore — for "More you might like".
+Set<String> _forYouRelated(Ref ref, List<String> forYouSubjects) {
+  final chosen = ref.read(interestSubjectsProvider);
+  final hidden = ref.read(hiddenSubjectsProvider);
+  return {...ref.read(learnedProvider).keys, ...pillarMates(chosen)}
+    ..removeAll(forYouSubjects)
+    ..removeAll(hidden);
+}
 
 // ── Videos ───────────────────────────────────────────────────────────────────
 
@@ -346,6 +327,70 @@ final videoShelvesProvider = FutureProvider.family<List<VideoShelf>, String?>((
   ].where((s) => s.videos.isNotEmpty).toList();
 });
 
+/// The Videos tab on For You: what is new in their subjects, a shelf for
+/// each of them (topped up with related subjects if they chose very few),
+/// then "More you might like" from close by. No video on two shelves, two
+/// per teacher, and no thin shelf.
+final forYouVideoShelvesProvider = FutureProvider<List<VideoShelf>>((
+  ref,
+) async {
+  final repo = ref.watch(contentRepositoryProvider);
+  final subjects = ref.watch(forYouSubjectListProvider);
+  if (subjects.isEmpty) return const [];
+  final chosen = ref.watch(interestSubjectsProvider);
+  final learned = ref.watch(learnedProvider);
+  final hiding = ref.watch(hidingProvider);
+  final related = _forYouRelated(ref, subjects);
+  final results = await Future.wait([
+    repo.videosForSubjects(subjects),
+    if (related.isNotEmpty) repo.videoPool(subjects: related.toList()),
+  ]);
+  final names = await ref.watch(subjectsProvider.future);
+  List<Video> visible(List<Video> pool) =>
+      hiding.items(pool, (v) => v.subjectSlugs);
+  final mine = visible(results.first);
+  final nearby = results.length > 1 ? visible(results[1]) : const <Video>[];
+
+  final shown = <Object>{};
+  List<Video> take(List<Video> pool) {
+    final shelf = capPerTeacher([
+      for (final v in pool)
+        if (!shown.contains(v.id)) v,
+    ]);
+    if (shelf.length < forYouShelfMinimum) return const [];
+    shown.addAll(shelf.map((v) => v.id));
+    return shelf;
+  }
+
+  return [
+    // Theirs only: a topped-up subject has its own shelf, marked as such.
+    VideoShelf(
+      title: 'New in your subjects',
+      subtitle: 'Just added',
+      videos: take([
+        for (final v in mine)
+          if (v.subjectSlugs.any(chosen.contains)) v,
+      ]),
+    ),
+    for (final s in subjects)
+      VideoShelf(
+        title: subjectName(names, s),
+        subtitle: chosen.contains(s) ? 'Watch & learn' : 'Close to yours',
+        videos: take([
+          for (final v in mine)
+            if (v.subjectSlugs.contains(s)) v,
+        ]),
+      ),
+    VideoShelf(
+      title: 'More you might like',
+      subtitle: 'Close to your subjects',
+      videos: take(
+        byInterest(nearby, chosen, (v) => v.subjectSlugs, learned: learned),
+      ),
+    ),
+  ].where((s) => s.videos.isNotEmpty).toList();
+});
+
 // ── Books ────────────────────────────────────────────────────────────────────
 
 class BookShelf {
@@ -454,6 +499,70 @@ final bookShelvesProvider = FutureProvider.family<List<BookShelf>, String?>((
     ),
     if (more.isNotEmpty)
       BookShelf(title: 'More in $name', subtitle: 'Keep reading', books: more),
+  ].where((s) => s.books.isNotEmpty).toList();
+});
+
+/// The Books tab on For You, built like Videos': new in their subjects, a
+/// shelf for each, then "More you might like". (Publishing Houses leads the
+/// tab in every view: the screen adds it.)
+final forYouBookShelvesProvider = FutureProvider<List<BookShelf>>((ref) async {
+  final repo = ref.watch(contentRepositoryProvider);
+  final subjects = ref.watch(forYouSubjectListProvider);
+  if (subjects.isEmpty) return const [];
+  final chosen = ref.watch(interestSubjectsProvider);
+  final learned = ref.watch(learnedProvider);
+  final hiding = ref.watch(hidingProvider);
+  final related = _forYouRelated(ref, subjects);
+  final all = hiding.items(await repo.books(), (b) => b.subjectSlugs);
+  final names = await ref.watch(subjectsProvider.future);
+  final mine = [
+    for (final b in all)
+      if (b.subjectSlugs.any(subjects.contains)) b,
+  ];
+  final nearby = [
+    for (final b in all)
+      if (!b.subjectSlugs.any(subjects.contains) &&
+          b.subjectSlugs.any(related.contains))
+        b,
+  ];
+
+  final shown = <Object>{};
+  List<Book> take(List<Book> pool) {
+    final shelf = capPerAuthor([
+      for (final b in pool)
+        if (!shown.contains(b.id)) b,
+    ]);
+    if (shelf.length < forYouShelfMinimum) return const [];
+    shown.addAll(shelf.map((b) => b.id));
+    return shelf;
+  }
+
+  return [
+    // Theirs only, as on Videos.
+    BookShelf(
+      title: 'New in your subjects',
+      subtitle: 'Just added',
+      books: take([
+        for (final b in mine)
+          if (b.subjectSlugs.any(chosen.contains)) b,
+      ]),
+    ),
+    for (final s in subjects)
+      BookShelf(
+        title: subjectName(names, s),
+        subtitle: chosen.contains(s) ? 'Read & reflect' : 'Close to yours',
+        books: take([
+          for (final b in mine)
+            if (b.subjectSlugs.contains(s)) b,
+        ]),
+      ),
+    BookShelf(
+      title: 'More you might like',
+      subtitle: 'Close to your subjects',
+      books: take(
+        byInterest(nearby, chosen, (b) => b.subjectSlugs, learned: learned),
+      ),
+    ),
   ].where((s) => s.books.isNotEmpty).toList();
 });
 

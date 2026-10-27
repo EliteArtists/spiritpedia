@@ -16,6 +16,10 @@ const tailorStarIntro =
     'Entirely optional, and never shared. Your choices only shape what you '
     'see in Spiritpedia. Change them anytime below.';
 
+/// What the star says when the For You pill, with nothing chosen yet, opens
+/// Tailor Spiritpedia. Always said: it is why they are here.
+const forYouStarIntro = 'Pick a few subjects and For You fills with them.';
+
 /// Whether the star still introduces Tailor Spiritpedia ("Don't show me
 /// again" switches it off). Overridden in tests.
 abstract class TailorIntroPrefs {
@@ -61,10 +65,14 @@ final tailorIntroShowProvider = FutureProvider<bool>(
 /// blocked. Once it has finished it can be swiped away, or after a moment it
 /// glides down to rest at the foot of the page, as on every other page.
 class TailorStarFrame extends ConsumerStatefulWidget {
-  const TailorStarFrame({super.key, required this.builder});
+  const TailorStarFrame({super.key, required this.builder, this.intro});
 
   /// The page's scrolling content, given the room to leave at its top.
   final Widget Function(BuildContext context, double top) builder;
+
+  /// Words said instead of [tailorStarIntro], whatever "Don't show me again"
+  /// was set to, and without that button ([forYouStarIntro]).
+  final String? intro;
 
   /// How long the finished words stay before the star moves on.
   static const linger = Duration(milliseconds: 3600);
@@ -87,6 +95,11 @@ class _TailorStarFrameState extends ConsumerState<TailorStarFrame> {
   @override
   void initState() {
     super.initState();
+    if (widget.intro != null) {
+      _star = _Star.speaking;
+      WidgetsBinding.instance.addPostFrameCallback((_) => _measure());
+      return;
+    }
     // Only a settled answer: just after "Don't show me again" it is being
     // read again, and the old one is still there.
     final answer = ref.read(tailorIntroShowProvider);
@@ -188,9 +201,10 @@ class _TailorStarFrameState extends ConsumerState<TailorStarFrame> {
               onDismissed: (_) => _swiped(),
               child: _Speaking(
                 key: _bubbleKey,
+                words: widget.intro ?? tailorStarIntro,
+                onNeverAgain: widget.intro == null ? _neverAgain : null,
                 starKey: _topKey,
                 onTyped: _typed,
-                onNeverAgain: _neverAgain,
               ),
             ),
           ),
@@ -220,13 +234,17 @@ class _Speaking extends StatelessWidget {
   const _Speaking({
     super.key,
     required this.starKey,
+    required this.words,
     required this.onTyped,
     required this.onNeverAgain,
   });
 
   final GlobalKey starKey;
+  final String words;
   final VoidCallback onTyped;
-  final VoidCallback onNeverAgain;
+
+  /// Null: no "Don't show me again".
+  final VoidCallback? onNeverAgain;
 
   @override
   Widget build(BuildContext context) {
@@ -253,7 +271,7 @@ class _Speaking extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     TypedOnce(
-                      tailorStarIntro,
+                      words,
                       key: const ValueKey('tailor-star-words'),
                       style: const TextStyle(
                         fontSize: 15,
@@ -262,19 +280,22 @@ class _Speaking extends StatelessWidget {
                       ),
                       onDone: onTyped,
                     ),
-                    Align(
-                      alignment: Alignment.centerRight,
-                      child: TextButton(
-                        key: const ValueKey('tailor-star-never'),
-                        onPressed: onNeverAgain,
-                        style: TextButton.styleFrom(
-                          foregroundColor: SpColors.textMuted,
-                          textStyle: const TextStyle(fontSize: 13),
-                          visualDensity: VisualDensity.compact,
+                    if (onNeverAgain == null)
+                      const SizedBox(height: 10)
+                    else
+                      Align(
+                        alignment: Alignment.centerRight,
+                        child: TextButton(
+                          key: const ValueKey('tailor-star-never'),
+                          onPressed: onNeverAgain,
+                          style: TextButton.styleFrom(
+                            foregroundColor: SpColors.textMuted,
+                            textStyle: const TextStyle(fontSize: 13),
+                            visualDensity: VisualDensity.compact,
+                          ),
+                          child: const Text('Don’t show me again'),
                         ),
-                        child: const Text('Don’t show me again'),
                       ),
-                    ),
                   ],
                 ),
               ),

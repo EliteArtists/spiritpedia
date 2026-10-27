@@ -13,7 +13,6 @@ import '../area/area.dart';
 import '../area/area_sheet.dart';
 import '../interests/hidden_empty.dart';
 import '../interests/interests.dart';
-import '../star/star_layer.dart';
 import '../star/star_page.dart';
 import '../star/tier_tips.dart';
 import 'billboard.dart';
@@ -22,8 +21,8 @@ import '../learning/learning.dart';
 
 /// Home — mirrors the website's homepage (HomePageContent.js): the feeling
 /// question, the subject pills, the billboard, the healer and publisher
-/// shelves, and Explore More; and, for someone who chose interests, a For You
-/// shelf first — one content type per visit, in rotation. The chosen subject narrows all of it. The frame
+/// shelves, and Explore More. The chosen subject narrows all of it; For You
+/// fills every shelf with their own subjects ([forYouShelf]). The frame
 /// (top bar, star search box, sticky pills) is the shared [StarPage].
 class HomeScreen extends ConsumerWidget {
   const HomeScreen({super.key});
@@ -31,16 +30,9 @@ class HomeScreen extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final subject = ref.watch(subjectFilterProvider);
-    // Choosing View All here is landing on it too: For You moves on a turn.
-    ref.listen(subjectFilterProvider, (previous, next) {
-      if (previous != null &&
-          next == null &&
-          StarLayer.maybeOf(context)?.currentTab == '/') {
-        ref.read(forYouTurnProvider.notifier).landed();
-      }
-    });
-    // Chosen interests shape View All — a For You shelf, and each shelf
-    // leading with them — and never a chosen subject, which is narrow already.
+    final forYou = ref.watch(forYouActiveProvider);
+    // Chosen interests shape View All — each shelf leading with them — and
+    // never a chosen subject, which is narrow already.
     final chosen = subject == null
         ? ref.watch(interestSubjectsProvider)
         : const <String>{};
@@ -50,10 +42,6 @@ class HomeScreen extends ConsumerWidget {
         : const <String, double>{};
     // Never show: everywhere, a chosen subject included.
     final hiding = ref.watch(hidingProvider);
-    final forYouShelf = subject == null
-        ? ref.watch(forYouProvider).value
-        : null;
-    final directory = ref.watch(healerDirectoryProvider).value;
     final area = ref.watch(areaProvider).place;
     final places = area == null
         ? const <int, Place>{}
@@ -82,7 +70,7 @@ class HomeScreen extends ConsumerWidget {
             // A teacher or channel goes if every subject they cover is
             // hidden, or all their content is (docs/personalisation.md).
             final all = hiding.visible(everyone);
-            final shelves = HealerShelves(
+            var shelves = HealerShelves(
               byInterest(
                 bySubject(all, subject, (h) => h.subjectSlugs),
                 chosen,
@@ -90,14 +78,30 @@ class HomeScreen extends ConsumerWidget {
                 learned: learned,
               ),
             );
+            // For You: every shelf of their own subjects, topped up from
+            // related ones; a shelf still nearly empty goes.
+            List<T> mine<T>(List<T> items, List<String> Function(T) of) =>
+                forYouShelf(items, chosen, of, learned: learned);
+            if (forYou) {
+              List<Healer> fy(List<Healer> l) => mine(l, (h) => h.subjectSlugs);
+              shelves = HealerShelves([
+                ...fy(shelves.superheroes),
+                ...fy(shelves.luminaries),
+                ...fy(shelves.ascendedMasters),
+                ...fy(shelves.localHeroes),
+                ...fy(shelves.platforms),
+              ]);
+            }
             final seeAll = subject == null
                 ? null
                 : () => context.push('/subject/$subject');
-            final shownPublishers = bySubject(
-              hiding.visible(publishers),
-              subject,
-              (p) => p.subjectSlugs,
-            );
+            final shownPublishers = forYou
+                ? forYouPublishers(hiding.visible(publishers), chosen, learned)
+                : bySubject(
+                    hiding.visible(publishers),
+                    subject,
+                    (p) => p.subjectSlugs,
+                  );
             Widget healerShelf(
               String title,
               List<Healer> items, {
@@ -132,33 +136,11 @@ class HomeScreen extends ConsumerWidget {
                 shelves.platforms.isEmpty &&
                 shownPublishers.isEmpty;
             return [
-              if (forYouShelf case final f?)
-                SliverToBoxAdapter(
-                  child: Shelf(
-                    key: const ValueKey('for-you'),
-                    title: 'For You · ${f.section.label}',
-                    subtitle: 'From the subjects you chose',
-                    itemCount: f.items.length,
-                    itemWidth: 250,
-                    height: 300,
-                    itemBuilder: (context, i) => switch (f.items[i]) {
-                      final FreeResource r => FreeResourceCard(
-                        resource: r,
-                        healerName: directory?.byId(r.healerId)?.name,
-                      ),
-                      final Offering o => OfferingCard(
-                        offering: o,
-                        healerName: directory?.byId(o.healerId)?.name,
-                      ),
-                      _ => const SizedBox.shrink(),
-                    },
-                  ),
-                ),
               if (nothingLeft)
                 const SliverToBoxAdapter(child: HiddenEmptyState()),
               SliverToBoxAdapter(
                 child: Billboard(
-                  key: ValueKey(subject),
+                  key: ValueKey(forYou ? 'for-you' : subject),
                   healers: shelves.billboard,
                 ),
               ),
@@ -237,7 +219,7 @@ class HomeScreen extends ConsumerWidget {
               ),
               // A shelf for each Explore More section, each fetched only as
               // it comes within reach of the screen.
-              exploreMoreShelves(subject: subject),
+              exploreMoreShelves(subject: subject, forYou: forYou),
             ];
           },
         ),

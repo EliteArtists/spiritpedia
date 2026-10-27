@@ -48,11 +48,11 @@ how-to is `docs/admin-guide.md`; the personalisation rules are
 
 ## 1. Where things stand
 
-| | State on 22 October 2026 |
+| | State on 27 October 2026 |
 | :--- | :--- |
 | **Website** | Live at **https://www.spiritpedia.co** (Next.js on Vercel). Every push that changes `web/` deploys to production |
-| **App (iOS)** | Flutter, iPhone and iPad. **1.0.0 (23)** is on TestFlight (the Firebase move). **1.0.0 (24)** is built (`app/build/ios/ipa/Spiritpedia.ipa` and `app/build/ios/archive/Runner.xcarchive`, 22 Oct 2026) and waiting to be uploaded (§12.6). Not yet on the App Store |
-| **App (Android)** | The same code. **1.0.0 (24)** is built as a signed bundle, `app/build/android-release/Spiritpedia-1.0.0-24.aab`, ready for Google Play's closed test as soon as the (personal) developer account is verified (§10.15, §12.8, `docs/google-play.md`). Not yet on Google Play |
+| **App (iOS)** | Flutter, iPhone and iPad. **1.0.0 (23)** is on TestFlight (the Firebase move). **1.0.0 (25)** is built (`app/build/ios-release/Spiritpedia-1.0.0-25.ipa`; archive in Xcode's Archives, `2026-10-27/Spiritpedia 1.0.0 (25).xcarchive`, 27 Oct 2026) and waiting to be uploaded (§12.6); it replaces 24, which was never uploaded. Not yet on the App Store |
+| **App (Android)** | The same code. **1.0.0 (25)** is built as a signed bundle (version code 25), `app/build/android-release/Spiritpedia-1.0.0-25.aab`, ready for Google Play's closed test as soon as the (personal) developer account is verified (§10.15, §12.8, `docs/google-play.md`). Not yet on Google Play |
 | **Database** | Supabase. Two projects: **live** (`uzmvcgew…`) and **dev** (`khtpbnof…`). Migrations `0000`–`0028` are on both |
 | **Push** | Firebase Cloud Messaging only, with an APNs key. Moved on 22 Oct 2026 to two Firebase projects owned by **love@spiritpedia.co** (live `spiritpedia-ad62b`, dev `spiritpedia-dev-5e4d5`); checked end to end on iPhone, iPad and Android |
 | **Emails** | The approved copy of 21–22 Oct 2026 is live (§9.7). The outreach journey is eight emails, redirected to a test inbox by `JOURNEY_TEST_EMAIL` until the solicitor has checked cold email; no journey is running. Day 4 is live. Personal discovery editions are built but **off** until `DISCOVERY_EDITIONS=on` is set on Vercel (§9.7a) |
@@ -1030,13 +1030,10 @@ detail pages, email-code sign-in with Library sync and account deletion, push.
 | 21 | 18 Oct | Build 20, plus: the tier badge top left on cards (type bottom right); the top two tiers' tips reworded |
 | 22 | 22 Oct | Everything since 21: the star's first callout "Tap me anytime to come home. Press and hold to open your Library." (checked on iPhone SE and on iPad in portrait and landscape); the explorer welcome sent from the website when the account is created (not on "I'm exploring"); "review received" only for a new review, never an edit; the **Discovery emails** switch on My Account (explorers who never applied); OFFICIAL with no ✦ (badge, tip, search line). 307 tests |
 | 23 | 22 Oct | **On TestFlight.** Firebase moved to the love@spiritpedia.co projects (`spiritpedia-ad62b` / `spiritpedia-dev-5e4d5`). Push checked on iPhone and iPad |
-| **24** | 22 Oct | **Current build (iOS IPA and Android bundle), waiting to be uploaded.** The welcome notification is asked for until the server confirms it (three tries, then at each start; build 23's iPad never sent the request); "Turn off notifications on this phone" removes the token it registered (it used to fail on the iPad); Account type shows the type set at approval; **Android**: release signing with the Play upload key, approximate-location permission, a notification arriving while the app is open shows as an in-app note with **Open**. 316 tests |
+| 24 | 22 Oct | *Built, never uploaded (replaced by 25; its files were cleared with the build folders on 27 Oct, the iOS archive kept).* The welcome notification is asked for until the server confirms it (three tries, then at each start; build 23's iPad never sent the request); "Turn off notifications on this phone" removes the token it registered (it used to fail on the iPad); Account type shows the type set at approval; **Android**: release signing with the Play upload key, approximate-location permission, a notification arriving while the app is open shows as an in-app note with **Open**. 316 tests |
+| **25** | 27 Oct | **Current build (iOS IPA and Android bundle), waiting to be uploaded.** **For You** as a pill (For You · View All · the pillars): a whole page of their More of subjects on Discover, Videos and Books, topped up from related subjects when they chose very few, "Tailored for you: … · Edit"; anyone with subjects lands on it, anyone without on View All; with none, For You opens Tailor ("Pick a few subjects and For You fills with them."); their subjects starred (the app's gold star image) in the pillar lists; the old For You shelf and its rotation removed. **Publishing Houses** at the top of Books, new presses with no authors included. Publishers' logos on white panels and one-line meta; the medical-care note on homeopathy; **co-written books** (`0027`). 333 tests |
 
-**Waiting for the next build (25)** — in the code, committed, tested (328
-tests), not yet in any build:
-- **Publishers:** any logo on a white, rounded, padded panel
-  (`PublisherLogo` in `shared/widgets/cards.dart`), on the card and the page;
-  the card's meta line is always one line (`publisherMeta`: "18 authors ·
+ays one line (`publisherMeta`: "18 authors ·
   Founded 1984", or "Independent press"); the page puts the tier, founding
   year and website on one row under the name; "Their authors are joining
   Spiritpedia soon." when there are no books yet. Same as the website (§17.5).
@@ -1151,9 +1148,16 @@ together). Nothing is ever removed by ranking, only reordered.
   subject** (activity learning); 2 = another subject in a More of pillar; 3 =
   everything else. Ties: more chosen subjects, then learned weight, then the
   original order.
-- **For You** (Discover, View All): levels 0–2, one content type per landing in
-  rotation — Free Resources → Courses & Programmes → Downloads & Audio →
-  Retreats & Live Events (upcoming) → Memberships.
+- **For You** (the pill, build 25; `forYouViewProvider`, `forYouShelf`,
+  `forYouSubjects`): a whole page of their More of subjects on Discover,
+  Videos and Books — every Discover shelf filtered to them; Videos and Books:
+  New in your subjects (theirs only), a shelf per subject, More you might
+  like. Under 3 subjects, topped up with learned subjects, then the rest of
+  their pillars (marked "Close to yours"); a shelf short of 10 is topped up
+  from level 1–2 items, and one still under 3 is left out. Landing: For You
+  with subjects, View All without (learning alone is not enough). A subject
+  pill is a look on top, never saved; Clear goes back. Never show applies.
+  Publishing Houses on For You: theirs, then new presses with no authors.
 - **Shelves:** Worldwide (Superheroes), Rising Voices (Luminaries),
   Practitioners Near You (Local Heroes and untiered), Timeless Teachers
   (Ascended Masters), Publishing Houses, Explore These Channels (channels, apps,
@@ -1395,7 +1399,7 @@ flutter pub get
 flutter run --dart-define-from-file=config/dev.json    # dev database + local website (npm run dev)
 flutter run --dart-define-from-file=config/prod.json   # live data
 flutter analyze        # must say "No issues found"
-flutter test           # 316 tests, all passing at build 24 (one dev-only test skips)
+flutter test           # 333 tests, all passing at build 25 (one dev-only test skips)
 ```
 
 In this environment Flutter is run through a clean login shell:
@@ -1512,12 +1516,12 @@ flutter build appbundle --release --dart-define-from-file=config/prod.json
 Run it through the same clean login shell as the iOS build (§12.2). The first
 build downloads Gradle and its dependencies (about 3–4 GB into `~/.gradle`) and
 takes about 4 minutes. Copy the bundle out before clearing `build/app`: build
-24's is `app/build/android-release/Spiritpedia-1.0.0-24.aab`, with the 512 px
+25's is `app/build/android-release/Spiritpedia-1.0.0-25.aab`, with the 512 px
 Play icon beside it.
 
 **Check the bundle:**
 ```bash
-A=app/build/android-release/Spiritpedia-1.0.0-24.aab
+A=app/build/android-release/Spiritpedia-1.0.0-25.aab
 keytool -printcert -jarfile $A | grep SHA256     # the upload key (§4), never the debug key
 ```
 and in the merged manifest (`build/app/intermediates/merged_manifest/release/…`)
@@ -1684,7 +1688,7 @@ browser walk-throughs had typed made-up addresses into the sign-in form.
    new account.
 2. **Google Play** (§10.15, §12.8, `docs/google-play.md`): once the personal
    developer account is verified, create the app, upload
-   `Spiritpedia-1.0.0-24.aab` to a **closed test** with 12+ testers (Testers
+   `Spiritpedia-1.0.0-25.aab` to a **closed test** with 12+ testers (Testers
    Community) for **14 days**, then apply for production. Still to make: the
    1024 × 500 feature graphic and phone screenshots. Decide how a reviewer
    signs in (codes go to an inbox they can't read).

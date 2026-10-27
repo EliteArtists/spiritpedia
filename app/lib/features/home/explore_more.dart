@@ -5,12 +5,15 @@ import 'package:go_router/go_router.dart';
 import '../../data/content_repository.dart';
 import '../../data/models.dart';
 import '../../data/providers.dart';
+import '../../data/shelf_rules.dart';
 import '../../shared/widgets/cards.dart';
 import '../../shared/widgets/shelf.dart';
 import '../../theme/colors.dart';
 import '../../theme/layout.dart';
 import '../detail/detail_widgets.dart';
 import '../interests/hidden_empty.dart';
+import '../interests/interests.dart';
+import '../learning/learning.dart';
 import '../star/star_layer.dart';
 
 /// Explore More: a real shelf for every section (Free Resources, Courses,
@@ -22,14 +25,21 @@ import '../star/star_layer.dart';
 /// before; nobody who never scrolls this far downloads any of it. The four
 /// offering shelves share one fetch (the `courses` table), and the results
 /// are kept for the session, shared with For You.
-SliverList exploreMoreShelves({required String? subject}) => SliverList(
+SliverList exploreMoreShelves({
+  required String? subject,
+  bool forYou = false,
+}) => SliverList(
   delegate: SliverChildBuilderDelegate(
     // A sliver list always builds its first child at once, however far down
     // the page it is, to measure itself. So the first child is nothing: the
     // shelves after it are built only as they come near.
     (context, i) => i == 0
         ? const SizedBox.shrink()
-        : ExploreShelf(section: ExploreSection.values[i - 1], subject: subject),
+        : ExploreShelf(
+            section: ExploreSection.values[i - 1],
+            subject: subject,
+            forYou: forYou,
+          ),
     childCount: ExploreSection.values.length + 1,
   ),
 );
@@ -41,10 +51,19 @@ const _itemWidth = 250.0;
 const _shelfHeight = 300.0;
 
 class ExploreShelf extends ConsumerWidget {
-  const ExploreShelf({super.key, required this.section, required this.subject});
+  const ExploreShelf({
+    super.key,
+    required this.section,
+    required this.subject,
+    this.forYou = false,
+  });
 
   final ExploreSection section;
   final String? subject;
+
+  /// For You: their subjects only, topped up from related ones; nearly
+  /// empty, no shelf ([forYouShelf]).
+  final bool forYou;
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
@@ -69,7 +88,14 @@ class ExploreShelf extends ConsumerWidget {
             ref.invalidate(exploreSectionProvider((section, subject))),
       ),
       data: (rows) {
-        final items = rows.items;
+        final items = forYou
+            ? forYouShelf(
+                rows.items,
+                ref.watch(interestSubjectsProvider),
+                subjectsOf,
+                learned: ref.watch(learnedProvider),
+              )
+            : rows.items;
         if (rows.hiddenAll) {
           return Column(
             crossAxisAlignment: CrossAxisAlignment.start,

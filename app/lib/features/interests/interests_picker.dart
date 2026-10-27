@@ -557,7 +557,11 @@ const _neverNote =
 /// the same picker twice, saved together on "Save". Clearing everything and
 /// saving is a choice too.
 class TailorScreen extends ConsumerStatefulWidget {
-  const TailorScreen({super.key});
+  const TailorScreen({super.key, this.forYou = false});
+
+  /// Opened from the For You pill with nothing chosen yet: the star says
+  /// [forYouStarIntro], and saving goes back to a full For You.
+  final bool forYou;
 
   @override
   ConsumerState<TailorScreen> createState() => _TailorScreenState();
@@ -566,6 +570,22 @@ class TailorScreen extends ConsumerStatefulWidget {
 class _TailorScreenState extends ConsumerState<TailorScreen> {
   late Set<String> _more = {...ref.read(interestsProvider).subjects};
   late Set<String> _never = {...ref.read(interestsProvider).hidden};
+  bool _touched = false;
+
+  @override
+  void initState() {
+    super.initState();
+    // Opened in the first instant after launch, before the saved choice was
+    // read: tick it once it has been, unless they have started choosing.
+    ref.read(interestsProvider.notifier).loaded.then((_) {
+      if (!mounted || _touched) return;
+      final now = ref.read(interestsProvider);
+      setState(() {
+        _more = {...now.subjects};
+        _never = {...now.hidden};
+      });
+    });
+  }
 
   Future<void> _save() async {
     final messenger = ScaffoldMessenger.of(context);
@@ -573,6 +593,11 @@ class _TailorScreenState extends ConsumerState<TailorScreen> {
     await ref
         .read(interestsProvider.notifier)
         .tailor(subjects: _more, hidden: _never);
+    // From the For You pill: straight back to a full For You.
+    if (widget.forYou && _more.isNotEmpty) {
+      ref.read(forYouViewProvider.notifier).show(true);
+      ref.read(subjectFilterProvider.notifier).select(null);
+    }
     messenger
       ..hideCurrentSnackBar()
       ..showSnackBar(
@@ -603,6 +628,7 @@ class _TailorScreenState extends ConsumerState<TailorScreen> {
             TextButton(
               key: const ValueKey('tailor-clear'),
               onPressed: () => setState(() {
+                _touched = true;
                 _more = {};
                 _never = {};
               }),
@@ -618,6 +644,7 @@ class _TailorScreenState extends ConsumerState<TailorScreen> {
               // The star's space: it speaks at the top while this scrolls
               // underneath it.
               child: TailorStarFrame(
+                intro: widget.forYou ? forYouStarIntro : null,
                 builder: (context, top) => ListView(
                   padding: readingPadding(
                     context,
@@ -640,7 +667,10 @@ class _TailorScreenState extends ConsumerState<TailorScreen> {
                       key: const ValueKey('tailor-more-of'),
                       selected: _more,
                       other: _never,
-                      onChanged: (v) => setState(() => _more = v),
+                      onChanged: (v) => setState(() {
+                        _touched = true;
+                        _more = v;
+                      }),
                     ),
                     const SizedBox(height: 18),
                     const Divider(),
@@ -652,7 +682,10 @@ class _TailorScreenState extends ConsumerState<TailorScreen> {
                       mode: PickerMode.neverShow,
                       selected: _never,
                       other: _more,
-                      onChanged: (v) => setState(() => _never = v),
+                      onChanged: (v) => setState(() {
+                        _touched = true;
+                        _never = v;
+                      }),
                     ),
                     const SizedBox(height: 18),
                     const Divider(),

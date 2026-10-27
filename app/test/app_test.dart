@@ -3,7 +3,6 @@ import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:shared_preferences/shared_preferences.dart';
 import 'package:go_router/go_router.dart';
 import 'package:spiritpedia/app.dart';
 import 'package:spiritpedia/core/retry.dart';
@@ -489,90 +488,191 @@ void main() {
   });
 
   group('chosen interests shape the app, never lock it', () {
-    testWidgets('none chosen: no For You shelf, the pills in their order', (
+    testWidgets('none chosen: lands on View All; For You leads the pills', (
       tester,
     ) async {
       await start(tester);
-      expect(find.text('For You'), findsNothing);
-      expect(_pills(tester).take(2), ['View All', 'Emotional Healing']);
+      expect(_pills(tester).take(3), [
+        'For You',
+        'View All',
+        'Emotional Healing',
+      ]);
+      expect(find.byKey(const ValueKey('for-you-note')), findsNothing);
+      final container = ProviderScope.containerOf(
+        tester.element(find.byType(SpiritpediaApp)),
+      );
+      expect(container.read(forYouActiveProvider), isFalse);
     });
 
-    testWidgets('chosen: For You leads Discover with one content type per '
-        'visit, and their pillars lead the pills', (tester) async {
-      await SharedPreferencesAsync().setInt('for_you_turn', -1);
-      final content = FakeContentRepository()
-        ..featured = const [
-          FreeResource(
-            id: 'f1',
-            slug: 'free-stillness',
-            title: 'Free Stillness',
-            subjectSlugs: ['consciousness'],
-          ),
-          FreeResource(
-            id: 'f2',
-            slug: 'free-stretch',
-            title: 'Free Stretch',
-            subjectSlugs: ['yoga'],
-          ),
-        ]
-        ..moreOfferings = const [
-          Offering(
-            id: 'o3',
-            slug: 'awake-course',
-            title: 'Awake Course',
-            subjectSlugs: ['spiritual-awakening'],
-          ),
-        ];
+    testWidgets('none chosen: For You opens Tailor, the star says why; their '
+        'first subjects bring them to For You', (tester) async {
+      await start(tester);
+      await tester.tap(find.byKey(const ValueKey('pill-for-you')));
+      await tester.pump();
+      await tester.pump(const Duration(milliseconds: 600));
+      expect(find.byType(TailorScreen), findsOneWidget);
+      expect(find.byKey(const ValueKey('tailor-star-words')), findsOneWidget);
+      // Always said from here, so no "Don't show me again".
+      expect(find.byKey(const ValueKey('tailor-star-never')), findsNothing);
+      final container = ProviderScope.containerOf(
+        tester.element(find.byType(SpiritpediaApp)),
+      );
+      await container.read(interestsProvider.notifier).choose(['meditation']);
+      await tester.pump();
+      expect(container.read(forYouActiveProvider), isTrue);
+      await tester.pump(const Duration(seconds: 6));
+      await tester.pumpAndSettle();
+    });
+
+    testWidgets('chosen: lands on For You — their subjects on every shelf, a '
+        'line naming them with Edit, and their stars in the pill lists', (
+      tester,
+    ) async {
+      FreeResource free(String id, String subject) => FreeResource(
+        id: id,
+        slug: id,
+        title: 'Free $id',
+        subjectSlugs: [subject],
+      );
+      final content =
+          FakeContentRepository(
+              extraHealers: [
+                FakeContentRepository.healer(
+                  8,
+                  'third-star',
+                  'Third Star',
+                  'superhero',
+                ),
+              ],
+            )
+            ..featured = [
+              // First on View All, so on screen there; never on For You.
+              free('stretch', 'yoga'),
+              free('still', 'meditation'),
+              free('calm', 'meditation'),
+              free('breath', 'breathwork'),
+            ];
       await tester.pumpWidget(
         _app(
           content: content,
           interests: MemoryInterestsStore(
-            const Interests(subjects: ['consciousness'], chosen: true),
+            const Interests(
+              subjects: ['breathwork', 'meditation'],
+              chosen: true,
+            ),
           ),
         ),
       );
       await tester.pump();
       await tester.pump(const Duration(milliseconds: 100));
-      final forYou = find.byKey(const ValueKey('for-you'));
-      expect(find.text('For You · Free Resources'), findsOneWidget);
+      expect(_pills(tester).take(2), ['For You', 'View All']);
       expect(
-        find.descendant(of: forYou, matching: find.text('Free Stillness')),
+        find.text('Tailored for you: Breathwork, Meditation ·'),
         findsOneWidget,
       );
-      // Not one of their subjects, nor of their pillars.
-      expect(
-        find.descendant(of: forYou, matching: find.text('Free Stretch')),
-        findsNothing,
-      );
-      // No teachers: they have the shelves below.
-      expect(
-        find.descendant(of: forYou, matching: find.text('Eckhart Tolle')),
-        findsNothing,
-      );
-      // Above everything else.
-      expect(
-        tester.getTopLeft(find.text('For You · Free Resources')).dy,
-        lessThan(tester.getTopLeft(find.text('Worldwide')).dy),
-      );
-      expect(_pills(tester).take(2), ['View All', 'Consciousness']);
-      // Nothing is filtered: every shelf is still there.
+      expect(find.byKey(const ValueKey('for-you-edit')), findsOneWidget);
+      // Every shelf, theirs only: three Superheroes about their subjects…
       expect(find.text('Worldwide'), findsOneWidget);
-      expect(find.text('Wim Hof'), findsWidgets);
+      expect(find.text('Third Star'), findsWidgets);
+      // …and Free Resources without the yoga one.
+      expect(find.text('Free still'), findsWidgets);
+      expect(find.text('Free stretch'), findsNothing);
+      // No "Showing…" note: no filter inside For You.
+      expect(find.textContaining('Showing'), findsNothing);
 
-      // The next visit: the next type with something relevant (Awake
-      // Course: the same pillar). The types with nothing are skipped.
+      // View All: everything again, and no line.
+      await tester.tap(find.byKey(const ValueKey('pill-view-all')));
+      await tester.pump();
+      await tester.pump(const Duration(milliseconds: 100));
+      expect(find.byKey(const ValueKey('for-you-note')), findsNothing);
+      expect(find.text('Free stretch'), findsWidgets);
+
+      // Their subjects carry the gold star in the pillar's list.
+      await tester.drag(
+        find.descendant(
+          of: find.byType(SubjectPillRow).first,
+          matching: find.byType(ListView),
+        ),
+        const Offset(-200, 0),
+      );
+      await tester.pumpAndSettle();
+      await tester.tap(
+        find.descendant(
+          of: find.byType(SubjectPillRow).first,
+          matching: find.text('Emotional Healing'),
+        ),
+      );
+      await tester.pumpAndSettle();
+      final chip = tester.widget<ChoiceChip>(
+        find.byKey(const ValueKey('pillar-subject-breathwork')),
+      );
+      expect(chip.avatar, isA<ForYouStar>());
+      // A one-subject look: not saved, and For You is a tap away.
+      await tester.tap(find.byKey(const ValueKey('pillar-subject-breathwork')));
+      await tester.pumpAndSettle();
+      expect(find.text('Showing Breathwork'), findsOneWidget);
       final container = ProviderScope.containerOf(
         tester.element(find.byType(SpiritpediaApp)),
       );
-      container.read(forYouTurnProvider.notifier).landed();
+      // Never saved: their subjects are as they were.
+      expect(container.read(interestSubjectsProvider), {
+        'breathwork',
+        'meditation',
+      });
+      await tester.drag(
+        find.descendant(
+          of: find.byType(SubjectPillRow).first,
+          matching: find.byType(ListView),
+        ),
+        const Offset(400, 0),
+      );
+      await tester.pumpAndSettle();
+      await tester.tap(find.byKey(const ValueKey('pill-for-you')));
       await tester.pump();
       await tester.pump(const Duration(milliseconds: 100));
-      expect(find.text('For You · Courses & Programmes'), findsOneWidget);
-      expect(find.text('Awake Course'), findsWidgets);
-      container.read(forYouTurnProvider.notifier).landed();
+      expect(container.read(forYouActiveProvider), isTrue);
+      expect(find.textContaining('Showing'), findsNothing);
+    });
+
+    testWidgets('For You on Videos and Books; Publishing Houses leads Books, '
+        'a new press with no authors included', (tester) async {
+      final content = FakeContentRepository()
+        ..morePublishers = const [
+          Publisher(id: 'p2', slug: 'new-press', name: 'New Press'),
+        ];
+      await tester.pumpWidget(
+        _app(
+          content: content,
+          interests: MemoryInterestsStore(
+            const Interests(subjects: ['meditation'], chosen: true),
+          ),
+        ),
+      );
       await tester.pump();
       await tester.pump(const Duration(milliseconds: 100));
-      expect(find.text('For You · Free Resources'), findsOneWidget);
+      await tester.tap(find.text('Videos').last);
+      await tester.pumpAndSettle();
+      expect(find.text('New in your subjects'), findsOneWidget);
+      expect(find.byKey(const ValueKey('for-you-note')), findsOneWidget);
+
+      await tester.tap(find.text('Books').last);
+      await tester.pumpAndSettle();
+      final publishers = find.byKey(const ValueKey('books-publishers'));
+      expect(
+        find.descendant(of: publishers, matching: find.text('New Press')),
+        findsOneWidget,
+      );
+      expect(
+        find.descendant(of: publishers, matching: find.text('Hay House')),
+        findsOneWidget,
+      );
+      // At the top in every view: on View All, above the book shelves.
+      await tester.tap(find.byKey(const ValueKey('pill-view-all')).last);
+      await tester.pumpAndSettle();
+      expect(
+        tester.getTopLeft(publishers).dy,
+        lessThan(tester.getTopLeft(find.byType(BookCard).first).dy),
+      );
     });
 
     group('Never show', () {
@@ -1607,6 +1707,15 @@ void main() {
         .opacity;
 
     expect(barOpacity(), 1);
+    // For You and View All lead the row: the pillars are a scroll away.
+    await tester.drag(
+      find.descendant(
+        of: find.byType(SubjectPillRow).first,
+        matching: find.byType(ListView),
+      ),
+      const Offset(-200, 0),
+    );
+    await tester.pumpAndSettle();
     await tester.tap(find.text('Emotional Healing'));
     await tester.pumpAndSettle();
     expect(find.text('Breathwork'), findsWidgets); // the tray is open

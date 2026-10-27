@@ -17,7 +17,12 @@ class VideosScreen extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final subject = ref.watch(subjectFilterProvider);
-    final shelves = ref.watch(videoShelvesProvider(subject));
+    // For You: a whole page of their subjects.
+    final forYou = ref.watch(forYouActiveProvider);
+    final source = forYou
+        ? forYouVideoShelvesProvider
+        : videoShelvesProvider(subject);
+    final shelves = ref.watch(source);
     final directory = ref.watch(healerDirectoryProvider).value;
     final hiding = !ref.watch(hidingProvider).isEmpty;
 
@@ -25,8 +30,8 @@ class VideosScreen extends ConsumerWidget {
       filter: subjectFilterProvider,
       tabPath: '/videos',
       onRefresh: () async {
-        ref.invalidate(videoShelvesProvider(subject));
-        await ref.read(videoShelvesProvider(subject).future);
+        ref.invalidate(source);
+        await ref.read(source.future);
       },
       slivers: [
         ...shelves.when(
@@ -52,8 +57,7 @@ class VideosScreen extends ConsumerWidget {
                     ),
                     const SizedBox(height: 12),
                     FilledButton(
-                      onPressed: () =>
-                          ref.invalidate(videoShelvesProvider(subject)),
+                      onPressed: () => ref.invalidate(source),
                       child: const Text('Try again'),
                     ),
                   ],
