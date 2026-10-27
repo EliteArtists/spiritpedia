@@ -1,0 +1,175 @@
+{
+  "env": "live",
+  "fixes": [
+    {
+      "at": "2026-10-27T18:25:35.249Z",
+      "table": "courses",
+      "id": "9ae3a6ba-5a44-4185-8e90-7a20dd4c8130",
+      "healer_slug": "james-nestor",
+      "title": "A Breathwork Masterclass by James Nestor (TATOÏ Club, Athens)",
+      "column": "image_url",
+      "before": "https://www.more.com/getattachment/12badeb3-53b3-4d11-9158-56e7e079a7af/James-Nestor-Breathing-Workshop1a500856-5e2b-4b48-.png",
+      "after": "https://www.more.com/getattachment/9279abb1-2149-4d13-8221-97a7f7496a9f/viva-tickets.png"
+    },
+    {
+      "at": "2026-10-27T18:25:35.469Z",
+      "table": "courses",
+      "id": "eab73dd9-87b4-452e-9d62-f2ab849f1649",
+      "healer_slug": "lynne-mctaggart",
+      "title": "TCCHE London 2026",
+      "column": "image_url",
+      "before": "https://tcche-org.b-cdn.net/wp-content/uploads/GJ5A1175-1000x1000.jpeg",
+      "after": "https://tcche-org.b-cdn.net/wp-content/uploads/TCCHE-2026.png"
+    },
+    {
+      "at": "2026-10-27T18:25:35.731Z",
+      "table": "courses",
+      "id": "1e6aeb2a-b77b-4959-8a59-aabec156aa14",
+      "healer_slug": "ram-dass",
+      "title": "Ram Dass Here and Now — Patreon (ad-free tier)",
+      "column": "image_url",
+      "before": "https://c10.patreonusercontent.com/4/patreon-media/p/campaign/5656240/3e99c39cc4174161b3dada0eedec0355/eyJ3IjoxMjAwLCJ3ZSI6MX0%3D/19.png?token-hash=uNg8YEuaHK7izkixZJh6e-6hQwvBLvoTGUnViXyc4Mk%3D&token-time=1791072000",
+      "after": "https://www.patreon.com/ig/card-teaser-image/creator/5656240.png?v=jo9gi1"
+    },
+    {
+      "at": "2026-10-27T18:25:35.941Z",
+      "table": "courses",
+      "id": "8bb19c9a-4367-471c-8061-2284c88c3a4b",
+      "healer_slug": "jonathan-goldman",
+      "title": "HARMONIC JOURNEYS: The Healing Sounds Home Study Program",
+      "column": "image_url",
+      "before": "https://www.healingsounds.com/nitropack_static/uxnanFmZrGSoNjbXsOxvFncmZCctKhye/assets/images/optimized/rev-d3200d4/www.healingsounds.com/wp-content/uploads/2025/06/HJ-Header-Gold-Highlight-Cropped.jpg",
+      "after": "https://www.healingsounds.com/wp-content/uploads/2025/06/HJ-Home-Page-Graphic-Facebook-Ad.jpg"
+    },
+    {
+      "at": "2026-10-27T18:25:36.148Z",
+      "table": "free_resources",
+      "id": "45a16aa3-9f18-4aa2-b9f4-a9045234c46c",
+      "healer_slug": "rhonda-byrne",
+      "title": "The Secret Check",
+      "column": "image_url",
+      "before": "https://www.thesecret.tv/nitropack_static/HOZpVpsIFYDeBggcvngpxQBqqYktIYcH/assets/images/optimized/rev-0e0b909/www.thesecret.tv/wp-content/uploads/2015/04/the_secret_check.jpg",
+      "after": "https://www.thesecret.tv/wp-content/uploads/2015/04/the_secret_check-300x146.jpg"
+    },
+    {
+      "at": "2026-10-27T18:25:36.379Z",
+      "table": "free_resources",
+      "id": "17411dfe-5b98-4a8d-8dcc-227da32c0823",
+      "healer_slug": "rhonda-byrne",
+      "title": "Countdown to Riches Check",
+      "column": "image_url",
+      "before": "https://www.thesecret.tv/nitropack_static/HOZpVpsIFYDeBggcvngpxQBqqYktIYcH/assets/images/optimized/rev-0e0b909/www.thesecret.tv/wp-content/uploads/2025/08/blank-countdown-check.webp",
+      "after": "https://www.thesecret.tv/wp-content/uploads/2025/08/blank-countdown-check-300x144.webp"
+    },
+    {
+      "at": "2026-10-27T18:25:36.613Z",
+      "table": "courses",
+      "id": "7a20365f-e269-4f18-9008-3d657bb7a3ad",
+      "healer_slug": "healing-vibrations",
+      "title": "Healing Vibrations Patreon",
+      "column": "image_url",
+      "before": "https://c10.patreonusercontent.com/4/patreon-media/p/campaign/2590759/13b083c44db3465492a06ff98d8ef33b/eyJ3IjoxMjAwLCJ3ZSI6MX0%3D/12.jpg?token-hash=RSH44lvrDtaTMYXTHkBepfUBv1HC6QDqHjNxCjaLpxE%3D&token-time=1785801600",
+      "after": "https://www.patreon.com/ig/card-teaser-image/creator/2590759.png?v=9eybbh"
+    },
+    {
+      "at": "2026-10-27T18:25:36.810Z",
+      "table": "courses",
+      "id": "cff30004-832c-4d9c-816a-df9e124ddf79",
+      "healer_slug": "jonathan-goldman",
+      "title": "ASCENSION HARMONICS: The 11:11 Divine Name Seminar",
+      "column": "image_url",
+      "before": "https://www.healingsounds.com/nitropack_static/uxnanFmZrGSoNjbXsOxvFncmZCctKhye/assets/images/optimized/rev-d3200d4/www.healingsounds.com/wp-content/uploads/2021/10/DIVINE-NAME-1111-Course-Hea.jpg",
+      "after": "https://www.healingsounds.com/wp-content/uploads/2022/11/Ascension-Harmonics-for-Facebook-3.jpg"
+    },
+    {
+      "at": "2026-10-27T18:25:37.028Z",
+      "table": "courses",
+      "id": "9289bcd2-765d-4efe-b8b0-a8c1c35c4add",
+      "healer_slug": "karina-grant",
+      "title": "Self Healing Mastery",
+      "column": "image_url",
+      "before": "https://app.karinagrant.co.uk/images/branding/karina-grant-profile-events.jpg",
+      "after": "https://karinagrant.co.uk/images/products/self-healing-mastery.jpg"
+    },
+    {
+      "at": "2026-10-27T18:25:37.222Z",
+      "table": "books",
+      "id": "968",
+      "healer_slug": "louise-hay",
+      "title": "Empowering Women: A Guide to Loving Yourself, Breaking Rules, and Bringing Good into Your Life",
+      "column": "mock_cover_url",
+      "before": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1HnQ94EOgdFtlC_inQ29kEOZc4pBs7c4eE20ILHi5kg&s",
+      "after": "https://m.media-amazon.com/images/P/1561706094.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "at": "2026-10-27T18:25:37.411Z",
+      "table": "courses",
+      "id": "48a9618c-2e3b-4ea1-9aca-cfe11bf2b054",
+      "healer_slug": "jillian-the-lune-innate",
+      "title": "Community & Advanced Teachings (Patreon Membership)",
+      "column": "image_url",
+      "before": "https://c10.patreonusercontent.com/4/patreon-media/p/campaign/272845/8d811d8d9f604239ac33187685941c6a/eyJ3IjoxMjAwLCJ3ZSI6MX0%3D/7.jpg?token-hash=bgkwOtCHEG744Orp9YkhWqow6QYyMotw8WZ5n88DIS0%3D&token-time=1785801600",
+      "after": "https://www.patreon.com/ig/card-teaser-image/creator/272845.png?v=4t0vfo"
+    },
+    {
+      "at": "2026-10-27T18:25:37.586Z",
+      "table": "books",
+      "id": "52",
+      "healer_slug": "jake-ducey",
+      "title": "The Purpose Principles: How to Draw More Meaning into Your Life",
+      "column": "mock_cover_url",
+      "before": "https://cdn11.bigcommerce.com/s-gjd9kmzlkz/images/stencil/original/products/147195/2259839/9780399172649__39878.1779437767.jpg?c=1",
+      "after": "https://m.media-amazon.com/images/P/0399172645.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "at": "2026-10-27T18:25:37.795Z",
+      "table": "free_resources",
+      "id": "13fb0cee-90f5-4c80-ba29-fa56497ed386",
+      "healer_slug": "rhonda-byrne",
+      "title": "The Magic Check",
+      "column": "image_url",
+      "before": "https://www.thesecret.tv/nitropack_static/HOZpVpsIFYDeBggcvngpxQBqqYktIYcH/assets/images/optimized/rev-0e0b909/www.thesecret.tv/wp-content/uploads/2015/04/the-magic-check-en.jpg",
+      "after": "https://www.thesecret.tv/wp-content/uploads/2015/04/the-magic-check-en-300x146.jpg"
+    },
+    {
+      "at": "2026-10-27T18:25:37.966Z",
+      "table": "courses",
+      "id": "a7782e7e-dfdd-442f-8bf6-ce4f641d1353",
+      "healer_slug": "jonathan-goldman",
+      "title": "Tibetan Secrets of Happiness",
+      "column": "image_url",
+      "before": "https://www.healingsounds.com/nitropack_static/uxnanFmZrGSoNjbXsOxvFncmZCctKhye/assets/images/optimized/rev-d3200d4/www.healingsounds.com/wp-content/uploads/2021/12/Lama-Tashi-Course-Header-2.jpg",
+      "after": "https://www.healingsounds.com/wp-content/uploads/2022/03/TSOH-FB-Crop.jpg"
+    },
+    {
+      "at": "2026-10-27T18:25:38.160Z",
+      "table": "courses",
+      "id": "5fd6263e-e2d3-4169-b007-9c6baf83055c",
+      "healer_slug": "jake-mace",
+      "title": "Living Off Grid with Jake & Nicole",
+      "column": "image_url",
+      "before": "https://c10.patreonusercontent.com/4/patreon-media/p/campaign/498051/b509ac632a864c4a904357fcf6aad5c2/eyJ3IjoxMjAwLCJ3ZSI6MX0%3D/3.png?token-hash=vgKVI7V-XuQz1MQZeLzSdqtmzJUBi48fUnlOUe7S_Hs%3D&token-time=1785801600",
+      "after": "https://www.patreon.com/ig/card-teaser-image/creator/498051.png?v=7gvcck"
+    },
+    {
+      "at": "2026-10-27T18:25:38.377Z",
+      "table": "free_resources",
+      "id": "eccf9c91-17ae-4330-8264-3b1d7e47ea34",
+      "healer_slug": "rhonda-byrne",
+      "title": "The Science of Getting Rich E-Book",
+      "column": "image_url",
+      "before": "https://www.thesecret.tv/nitropack_static/HOZpVpsIFYDeBggcvngpxQBqqYktIYcH/assets/images/optimized/rev-0e0b909/www.thesecret.tv/wp-content/uploads/2020/04/the-secret-logo.png",
+      "after": "https://www.thesecret.tv/wp-content/uploads/2020/05/The-Official-Website-for-The-Secret-by-Rhonda-Byrne-300x157.png"
+    },
+    {
+      "at": "2026-10-27T18:25:38.617Z",
+      "table": "courses",
+      "id": "f0af6cb0-5d0b-4a66-874b-663e4abfb05d",
+      "healer_slug": "jonathan-goldman",
+      "title": "Jonathan Goldman's Complete Chakra Chanting Experience",
+      "column": "image_url",
+      "before": "https://www.healingsounds.com/nitropack_static/uxnanFmZrGSoNjbXsOxvFncmZCctKhye/assets/images/optimized/rev-d3200d4/www.healingsounds.com/wp-content/uploads/2021/06/CCE-Sales-Page-Banner.jpg",
+      "after": "https://www.healingsounds.com/wp-content/uploads/2021/06/CCE-Sales-Page-Banner.jpg"
+    }
+  ]
+}

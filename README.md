@@ -2308,5 +2308,6 @@ The shared finding and testing code is `scripts/lib/images.mjs`, also used by
 | Date | Fixed | Teacher photos suggested | Videos to remove | Not fixed |
 | :--- | :--- | :--- | :--- | :--- |
 | 27 Oct 2026 (by hand, before the script) | Ra Uru Hu: 14 offerings and 1 free resource (Jovian Archive renamed its images; each from its own page) | — | — | — |
+| 27 Oct 2026 (first run, `2026-10-27.json`) | 17: 12 offerings, 4 free resources, 2 books (Tapping Insiders and Miracles Mastermind skipped after the sheet check) | Luchin, Wim Hof (photo 2) | — (none queued yet; the first scheduled run after 0028 queues them) | 22: mostly Karina Grant's and Marisa Cranfill's (YMAA) offerings; Barbara Brennan's *Seeds of the Spirit 2001*; Chani's Astro 101 |
 
 Made with love in Tavira 💫
