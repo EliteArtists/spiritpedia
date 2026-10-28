@@ -1156,7 +1156,7 @@ together). Nothing is ever removed by ranking, only reordered.
   like. Under 3 subjects, topped up with learned subjects, then the rest of
   their pillars (marked "Close to yours"); a shelf short of 10 is topped up
   from level 1–2 items, and one still under 3 is left out. Landing: For You
-  with subjects, View All without (learning alone is not enough). With none, the pill opens Tailor Spiritpedia, the same page as Account's (build 26); clearing every subject there goes quietly back to View All. A subject
+  with subjects, View All without (learning alone is not enough). With none, the pill opens Tailor Spiritpedia, the same page as Account's (build 26); from the pill the star always says its intro, even after "Don’t show me again" in Account, and without that button (next build, after 26); clearing every subject there goes quietly back to View All. A subject
   pill is a look on top, never saved; Clear goes back. Never show applies.
   Publishing Houses on For You: theirs, then new presses with no authors.
 - **Shelves:** Worldwide (Superheroes), Rising Voices (Luminaries),

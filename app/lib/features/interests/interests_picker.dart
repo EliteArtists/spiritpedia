@@ -560,8 +560,8 @@ const _neverNote =
 class TailorScreen extends ConsumerStatefulWidget {
   const TailorScreen({super.key, this.forYou = false});
 
-  /// Opened from the For You pill with nothing chosen yet: saving goes back
-  /// to a full For You.
+  /// Opened from the For You pill with nothing chosen yet: the star always
+  /// introduces the page, and saving goes back to a full For You.
   final bool forYou;
 
   @override
@@ -641,6 +641,7 @@ class _TailorScreenState extends ConsumerState<TailorScreen> {
               // The star's space: it speaks at the top while this scrolls
               // underneath it.
               child: TailorStarFrame(
+                always: widget.forYou,
                 builder: (context, top) => ListView(
                   padding: readingPadding(
                     context,

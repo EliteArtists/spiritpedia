@@ -61,10 +61,18 @@ final tailorIntroShowProvider = FutureProvider<bool>(
 /// blocked. Once it has finished it can be swiped away, or after a moment it
 /// glides down to rest at the foot of the page, as on every other page.
 class TailorStarFrame extends ConsumerStatefulWidget {
-  const TailorStarFrame({super.key, required this.builder});
+  const TailorStarFrame({
+    super.key,
+    required this.builder,
+    this.always = false,
+  });
 
   /// The page's scrolling content, given the room to leave at its top.
   final Widget Function(BuildContext context, double top) builder;
+
+  /// Speak whatever "Don't show me again" was set to, and without that
+  /// button: opened from the For You pill, where the words say why.
+  final bool always;
 
   /// How long the finished words stay before the star moves on.
   static const linger = Duration(milliseconds: 3600);
@@ -87,6 +95,11 @@ class _TailorStarFrameState extends ConsumerState<TailorStarFrame> {
   @override
   void initState() {
     super.initState();
+    if (widget.always) {
+      _star = _Star.speaking;
+      WidgetsBinding.instance.addPostFrameCallback((_) => _measure());
+      return;
+    }
     // Only a settled answer: just after "Don't show me again" it is being
     // read again, and the old one is still there.
     final answer = ref.read(tailorIntroShowProvider);
@@ -189,7 +202,7 @@ class _TailorStarFrameState extends ConsumerState<TailorStarFrame> {
               child: _Speaking(
                 key: _bubbleKey,
                 words: tailorStarIntro,
-                onNeverAgain: _neverAgain,
+                onNeverAgain: widget.always ? null : _neverAgain,
                 starKey: _topKey,
                 onTyped: _typed,
               ),

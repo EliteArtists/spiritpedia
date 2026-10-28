@@ -506,9 +506,13 @@ void main() {
     });
 
     testWidgets('none chosen: For You opens Tailor Spiritpedia, the same '
-        'page and words as Account\'s; their first subjects bring them to '
-        'For You', (tester) async {
-      await start(tester);
+        'page and words as Account\'s, said even after "Don\'t show me '
+        'again"; their first subjects bring them to For You', (tester) async {
+      await tester.pumpWidget(
+        _app(tailorIntro: _TailorIntro()..showing = false),
+      );
+      await tester.pump();
+      await tester.pump(const Duration(milliseconds: 100));
       await tester.tap(find.byKey(const ValueKey('pill-for-you')));
       await tester.pump();
       await tester.pump(const Duration(milliseconds: 600));
@@ -520,6 +524,7 @@ void main() {
             .text,
         tailorStarIntro,
       );
+      expect(find.byKey(const ValueKey('tailor-star-never')), findsNothing);
       // More of · learning · Never show · Your Area, in that order.
       double top(Finder f) => tester.getTopLeft(f).dy;
       final more = top(find.text('More of'));
