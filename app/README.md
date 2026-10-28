@@ -1,7 +1,7 @@
 # Spiritpedia: the app
 
 The Flutter app for iPhone, iPad and Android. **1.0** is in Apple review.
-**1.0.0 (27)** is the current iOS build, for TestFlight (built 28 October
+**1.0.0 (27)** is on TestFlight (28 October
 2026); Android's closed test is live with 15 testers, with **1.0.0 (25)**
 built but not yet uploaded (production application about 9–10 November
 2026). The root README's **Open jobs** list (at its top) is where to start,
