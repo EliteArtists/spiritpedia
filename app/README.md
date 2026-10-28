@@ -1,14 +1,16 @@
 # Spiritpedia: the app
 
-The Flutter app for iPhone, iPad and Android. **1.0.0 (24)** was built on 22
-October 2026, as an iOS IPA and an Android bundle (the root README §10.1 has
-every build). Build 23 is on TestFlight; 24 adds the notification fixes (the
-welcome asked for until confirmed; turning off removes the token), the
-Account type set at approval, and Android made ready for Google Play (§10.15
-of the root README; every Play Console answer is in `docs/google-play.md`).
-Push uses the Firebase projects owned by love@spiritpedia.co since 22 Oct
-2026. **Before submitting 24:** the App Store privacy label and 13-inch iPad
-screenshots (root README §12.6).
+The Flutter app for iPhone, iPad and Android. **1.0** is in Apple review.
+**1.0.0 (27)** is the current iOS build, for TestFlight (built 28 October
+2026); Android's closed test is live with 15 testers, with **1.0.0 (25)**
+built but not yet uploaded (production application about 9–10 November
+2026). The root README's **Open jobs** list (at its top) is where to start,
+and §10.1 there has every build. Since 24: **For You** as a pill (25),
+co-written books and Publishing Houses at the top of Books (25), one Tailor
+Spiritpedia page for Account and For You with the sections More of · Let
+Spiritpedia learn from what I explore · Never show · Your Area (26), and the
+signed-out learning switch with its Sign in line (27). Push uses the Firebase
+projects owned by love@spiritpedia.co since 22 Oct 2026.
 It uses the same Supabase database, the same accounts and the same content as
 the website in `../web`. This file is written so that a new session, with none
 of the earlier conversations, can pick the app up.
@@ -144,7 +146,7 @@ read-only checks only.
 
 ```bash
 flutter analyze        # must say "No issues found"
-flutter test           # 316 tests at build 24, all passing (one dev-only test skips)
+flutter test           # 336 tests at build 27, all passing (one dev-only test skips)
 ```
 
 Screenshots for review come from a temporary integration test (a "tour") that
@@ -399,7 +401,8 @@ is saved.
   nearest first, then online practitioners from anywhere. An area is a town
   (`places`), never a position; the rules are in `docs/personalisation.md` §4.
 - **Setting it:** "Set your area" on the shelf, Tailor Spiritpedia → Your
-  area, or the star's question. "Use my location" asks iOS for approximate
+  Area ("Do you want me to show you practitioners in your area?" · **Set Your
+  Area**, build 26), or the star's question. "Use my location" asks iOS for approximate
   location only (`NSLocationDefaultAccuracyReduced`), once, through
   `geolocator`; "Type my city" searches `places`. It only ever asks for
   "When In Use": with `NSLocationWhenInUseUsageDescription` present,

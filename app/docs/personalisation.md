@@ -10,17 +10,21 @@ Spiritpedia can be tailored in three ways, all optional:
 
 People choose them once at onboarding, straight after the first-launch intro,
 and can change them any time in **Account → Tailor Spiritpedia** (also in the
-menu). Both use the same picker: the five pillars, each opening into its
+menu, and the For You pill opens the same page when nothing is chosen). Its
+sections, in order: More of · Let Spiritpedia learn from what I explore ·
+Never show · Your Area (build 26). Both use the same picker: the five pillars, each opening into its
 subjects, with "All of [pillar]" first. The pills and chips carry no icons or
 symbols, so they read exactly like the Discover pills: violet when chosen for
 More of, rose for Never show.
 
 Tailor Spiritpedia is the star's space. The star arrives with the page and
 floats at the top, typing: "Entirely optional, and never shared. Your choices
-only shape what you see in Spiritpedia. Change them anytime below." The
-choices scroll underneath it; nothing is blocked. Once it has finished it can
-be swiped away, or it glides down to rest at the foot of the page. "Don't show
-me again" stops it for good. With Reduce Motion the words appear without
+only shape what you see in Spiritpedia. Change them anytime." The choices
+start below it. Once it has finished it can be swiped away, or it glides down
+to rest at the foot of the page — at once if the page is scrolled, so nothing
+is ever under its words. "Don't show me again" stops it for good, except from
+the For You pill, where it is always said (build 27). Clearing every choice
+and saving goes quietly back to View All, with no message. With Reduce Motion the words appear without
 typing. Saving closes any open Explore More shelves.
 
 If someone chooses nothing, or skips, and learning is off, **the app behaves
@@ -67,7 +71,7 @@ Someone chose only **Reiki** (in Emotional Healing).
 
 | Place | What changes |
 |---|---|
-| **Discover: For You** | A new first shelf, one content type per visit, in rotation: Free Resources → Courses & Programmes → Downloads & Audio → Retreats & Live Events → Memberships. Labelled "For You · Free Resources" and so on. Levels 1 to 3, up to 20; level 4 is not in it. With learning on and no More of, it shows level 2. Retreats are upcoming only (starting today or later), soonest first within each level. A type with nothing in levels 1–2 is skipped. Teachers are not in it: they have the shelves below. |
+| **For You (the pill, build 25)** | The first pill: For You · View All · the pillars. A whole page of their More of subjects on Discover, Videos and Books, under "Tailored for you: … · Edit". Fewer than 3 subjects: topped up with learned subjects, then the rest of their pillars ("Close to yours"). A shelf short of 10 is topped up from levels 1–2; one still under 3 is left out. Videos and Books: New in your subjects (theirs only), a shelf per subject, More you might like. Anyone with subjects lands on it; anyone without, on View All. Their subjects carry the gold star in the pillar lists. (This replaced the old For You shelf and its rotation.) The rules are in the root README §10, For You. |
 | **Discover: every teacher shelf** (the billboard, Worldwide, Rising Voices, Practitioners Near You, Timeless Teachers, Explore These Channels) | Each is re-ordered by the four levels. The same teachers are on each shelf. |
 | **Discover: the pill row** | The pillars holding their subjects come first, most chosen first; then those holding learned subjects, most explored first. The pills themselves are unchanged. |
 | **Videos and Books: the pillar shelves** | The shelves holding their subjects (then their learned subjects) move to the top, straight after "New to Spiritpedia". Each pillar shelf, and the mixed shelf at the end, is re-ordered by the four levels. |
@@ -148,7 +152,7 @@ Someone who chose **Reiki** (More of) and hid **Shamanism** (Never show).
 
 | | Before (no choices) | After |
 |---|---|---|
-| 1 | Billboard | **For You · Free Resources** (the next visit, Courses & Programmes, and so on): Reiki first, then the rest of Emotional Healing *(new)* |
+| 1 | Billboard | *(View All, as below; on **For You** every shelf holds only Reiki and its top-ups: see §2)* |
 | 2 | Worldwide (Superhero) | Billboard: Reiki first, then Emotional Healing, then the rest |
 | 3 | Rising Voices (Luminary) | Worldwide: the same order of levels |
 | 4 | Practitioners Near You (Local Hero) | Rising Voices: likewise |
@@ -224,8 +228,10 @@ in only, while it's off: "Shall I learn from what you explore, to put more of
 what you love first?" with "Yes, learn" or "Not now" (the conductor's rules:
 one appearance a session; put away, once more at least 15 visits and 3 weeks
 later, then never). It comes before the area (5th visit) and name (7th)
-questions. The switch lives in **Tailor Spiritpedia**, under Never show, and on
-the website's account page. It saves the moment it's changed.
+questions. The switch lives in **Tailor Spiritpedia**, straight after More of,
+and on the website's account page. Signed out it is greyed, with "Sign in so I
+can learn from what you explore." and a **Sign in** link that signs in on the
+spot and stays on Tailor (build 27). It saves the moment it's changed.
 
 **What counts**, and how much, per subject the item carries:
 
@@ -273,10 +279,12 @@ read once a session.
 ---
 
 The rules in this document live in `lib/data/shelf_rules.dart`
-(`interestLevel`, `byInterest`, `forYou`, `pillarsByInterest`,
+(`interestLevel`, `byInterest`, `forYouShelf`, `forYouSubjects`,
+`forYouPublishers`, `pillarsByInterest`,
 `learnedSubjects`, `fadedScore`, `isHiddenItem`, `isHiddenTeacher`,
 `teachersWithAllContentHidden`, `Hiding`), `lib/data/providers.dart`
-(`hidingProvider`, `forYouProvider`) and `lib/features/learning/learning.dart`
+(`hidingProvider`, `forYouViewProvider`, `forYouActiveProvider`,
+`forYouVideoShelvesProvider`, `forYouBookShelvesProvider`) and `lib/features/learning/learning.dart`
 (the queue, the switch, `learnedProvider`). The website's side is
 `web/utils/activity.js`, `web/utils/activityGuard.js` and
 `web/app/api/activity/route.js`. Change them together.

@@ -9,8 +9,56 @@ project over tomorrow with no access to any earlier conversation. It was
 rebuilt on 17 October 2026 and brought up to date on 22 October 2026 (the
 email work, migrations 0024–0026, Inbox-only approval, no ✦; then the Firebase
 move to love@spiritpedia.co, builds 23 and 24, and Android made ready for
-Google Play), checked against the code, not memory. Where it
+Google Play), and again on 28 October 2026 (For You, co-authors, the
+broken-image routine, builds 25–27, the store status and the open jobs below),
+checked against the code, not memory. Where it
 and the code disagree, the code is right and this file should be fixed.
+
+## Open jobs (28 October 2026)
+
+The list to pick up from. Each points to where the detail lives.
+
+1. **Store status.**
+   - **iOS:** 1.0 is in Apple review. **Build 27** goes to TestFlight
+     (built 28 Oct, `app/build/ios-release/Spiritpedia-1.0.0-27.ipa`; the
+     owner uploads, §12.6). Builds 24–26 were never uploaded.
+   - **Android:** the closed test is live with 15 testers; the application
+     for production is due about **9–10 November 2026**. **Build 25**
+     (`app/build/android-release/Spiritpedia-1.0.0-25.aab`) is built but not
+     yet uploaded; 26 and 27 were iOS only, so the next Android build should
+     be 27 or later (the Gradle cache was cleared on 28 Oct: the first Android
+     build downloads about 3.5 GB again).
+2. **Reviewer demo account** (review@spiritpedia.co, signing in with a fixed
+   code, for Apple's and Google's reviewers). Status: **not in this
+   repository** — no code, migration or doc mentions it yet, so whether it
+   exists on live, and how its fixed code works, has to be checked with the
+   owner before anything is built. It must not weaken sign-in for anyone else
+   (codes are otherwise emailed; §14 on test accounts).
+3. **Next.js security upgrade.** `web/package.json` asks for `^16.2.11`;
+   16.4.0 is installed and 16.4.3 is the latest. Upgrade, run `npm test` and a
+   local build, then push (a `web/` push deploys).
+4. **Push notification package.** Ross is designing it. Spiritpedia's
+   notifications are **invitations only, never reminders of things undone**
+   (no "you haven't…", no streaks). The welcome tray redesign (§16.1) belongs
+   with it.
+5. **Search.** In this order: **positive suggestions first** (what helps,
+   before anything about the difficulty); **strict practice subjects** (a
+   practice only under subjects it truly belongs to); then **search by
+   meaning**. The crisis intercept stays first and unchanged, whatever
+   changes (§11).
+6. **Remaining Awaken Village Press authors** (§18, the ingestion log in
+   §17.5). **Marjorie Warkentin waits for Amanda Johnson** (the press's
+   founder).
+7. **The morning broken-image routine** (§19): run it, swap books, offerings
+   and free resources on live directly (standing OK), suggest teacher photos
+   for approval, list dead videos for removal.
+8. **Website, after launch:** port the app's features, the **For You** pill
+   (what it needs: §10, For You rules, and `app/docs/personalisation.md`), and
+   gentle **"better on the app"** prompts.
+9. **Future companion apps:** **I AM by Spiritpedia** first, then
+   **Consciousness by Spiritpedia**.
+
+---
 
 The app has a second, more detailed file: **`app/README.md`**. The email
 inventory is `docs/emails.md`, and the approved wording of every email is
@@ -48,11 +96,11 @@ how-to is `docs/admin-guide.md`; the personalisation rules are
 
 ## 1. Where things stand
 
-| | State on 27 October 2026 |
+| | State on 28 October 2026 |
 | :--- | :--- |
 | **Website** | Live at **https://www.spiritpedia.co** (Next.js on Vercel). Every push that changes `web/` deploys to production |
-| **App (iOS)** | Flutter, iPhone and iPad. **1.0.0 (23)** is on TestFlight (the Firebase move). **1.0.0 (26)** is built (`app/build/ios-release/Spiritpedia-1.0.0-26.ipa`; archive in Xcode's Archives, `2026-10-28/Spiritpedia 1.0.0 (26).xcarchive`, 28 Oct 2026) and waiting to be uploaded (§12.6); it replaces 25 (iOS), which was never uploaded. Not yet on the App Store |
-| **App (Android)** | The same code. **1.0.0 (25)** is built as a signed bundle (version code 25), `app/build/android-release/Spiritpedia-1.0.0-25.aab`, ready for Google Play's closed test as soon as the (personal) developer account is verified (§10.15, §12.8, `docs/google-play.md`). Not yet on Google Play |
+| **App (iOS)** | Flutter, iPhone and iPad. **1.0** is in Apple review. **1.0.0 (27)** goes to TestFlight (`app/build/ios-release/Spiritpedia-1.0.0-27.ipa`; archive in Xcode's Archives, `2026-10-28/Spiritpedia 1.0.0 (27).xcarchive`, 28 Oct 2026; the owner uploads, §12.6). Builds 24–26 were never uploaded |
+| **App (Android)** | The same code. The **closed test is live with 15 testers**; the production application is due about 9–10 Nov 2026 (§10.15, §12.8, `docs/google-play.md`). **1.0.0 (25)** is built (version code 25, `app/build/android-release/Spiritpedia-1.0.0-25.aab`) and **not yet uploaded**. Not yet in production |
 | **Database** | Supabase. Two projects: **live** (`uzmvcgew…`) and **dev** (`khtpbnof…`). Migrations `0000`–`0028` are on both |
 | **Push** | Firebase Cloud Messaging only, with an APNs key. Moved on 22 Oct 2026 to two Firebase projects owned by **love@spiritpedia.co** (live `spiritpedia-ad62b`, dev `spiritpedia-dev-5e4d5`); checked end to end on iPhone, iPad and Android |
 | **Emails** | The approved copy of 21–22 Oct 2026 is live (§9.7). The outreach journey is eight emails, redirected to a test inbox by `JOURNEY_TEST_EMAIL` until the solicitor has checked cold email; no journey is running. Day 4 is live. Personal discovery editions are built but **off** until `DISCOVERY_EDITIONS=on` is set on Vercel (§9.7a) |
@@ -1032,7 +1080,8 @@ detail pages, email-code sign-in with Library sync and account deletion, push.
 | 23 | 22 Oct | **On TestFlight.** Firebase moved to the love@spiritpedia.co projects (`spiritpedia-ad62b` / `spiritpedia-dev-5e4d5`). Push checked on iPhone and iPad |
 | 24 | 22 Oct | *Built, never uploaded (replaced by 25; its files were cleared with the build folders on 27 Oct, the iOS archive kept).* The welcome notification is asked for until the server confirms it (three tries, then at each start; build 23's iPad never sent the request); "Turn off notifications on this phone" removes the token it registered (it used to fail on the iPad); Account type shows the type set at approval; **Android**: release signing with the Play upload key, approximate-location permission, a notification arriving while the app is open shows as an in-app note with **Open**. 316 tests |
 | 25 | 27 Oct | *iOS: built, never uploaded (replaced by 26). Android: the current bundle, waiting for Play.* **For You** as a pill (For You · View All · the pillars): a whole page of their More of subjects on Discover, Videos and Books, topped up from related subjects when they chose very few, "Tailored for you: … · Edit"; anyone with subjects lands on it, anyone without on View All; with none, For You opens Tailor ("Pick a few subjects and For You fills with them."); their subjects starred (the app's gold star image) in the pillar lists; the old For You shelf and its rotation removed. **Publishing Houses** at the top of Books, new presses with no authors included. Publishers' logos on white panels and one-line meta; the medical-care note on homeopathy; **co-written books** (`0027`). 333 tests |
-| **26** | 28 Oct | **Current iOS build, waiting to be uploaded** (iOS only; Android stays at 25). For You with nothing chosen opens the same Tailor Spiritpedia page as Account, with the same star words ("Entirely optional, and never shared. Your choices only shape what you see in Spiritpedia. Change them anytime.") and the same "Don’t show me again"; Tailor's sections now run More of · Let Spiritpedia learn from what I explore · Never show · Your Area; Your Area unset reads "Do you want me to show you practitioners in your area?" with **Set Your Area**; clearing every choice goes quietly back to View All (no "back to how everyone sees it" message). 334 tests. Not checked in the simulator (skipped at the owner's request) |
+| 26 | 28 Oct | *iOS only; built, never uploaded (replaced by 27).* For You with nothing chosen opens the same Tailor Spiritpedia page as Account, with the same star words ("Entirely optional, and never shared. Your choices only shape what you see in Spiritpedia. Change them anytime.") and the same "Don’t show me again"; Tailor's sections now run More of · Let Spiritpedia learn from what I explore · Never show · Your Area; Your Area unset reads "Do you want me to show you practitioners in your area?" with **Set Your Area**; clearing every choice goes quietly back to View All (no "back to how everyone sees it" message). 334 tests. Not checked in the simulator (skipped at the owner's request) |
+| **27** | 28 Oct | **Current iOS build, for TestFlight** (iOS only; Android stays at 25). From For You the star always says the Tailor intro, even after "Don’t show me again" in Account. **"Let Spiritpedia learn from what I explore" signed out:** greyed, with "Sign in so I can learn from what you explore." and a **Sign in** link that signs in in a sheet and stays on Tailor (the switch looked dead on the owner's signed-out iPad and Mac; it was never an iPad layout fault). The star's words on Tailor move on as soon as the page is scrolled (whatever scrolled under them could not be tapped for a few seconds). 336 tests |
 
 ays one line (`publisherMeta`: "18 authors ·
   Founded 1984", or "Independent press"); the page puts the tier, founding
@@ -1156,7 +1205,7 @@ together). Nothing is ever removed by ranking, only reordered.
   like. Under 3 subjects, topped up with learned subjects, then the rest of
   their pillars (marked "Close to yours"); a shelf short of 10 is topped up
   from level 1–2 items, and one still under 3 is left out. Landing: For You
-  with subjects, View All without (learning alone is not enough). With none, the pill opens Tailor Spiritpedia, the same page as Account's (build 26); from the pill the star always says its intro, even after "Don’t show me again" in Account, and without that button (next build, after 26); clearing every subject there goes quietly back to View All. A subject
+  with subjects, View All without (learning alone is not enough). With none, the pill opens Tailor Spiritpedia, the same page as Account's (build 26); from the pill the star always says its intro, even after "Don’t show me again" in Account, and without that button (build 27); clearing every subject there goes quietly back to View All. A subject
   pill is a look on top, never saved; Clear goes back. Never show applies.
   Publishing Houses on For You: theirs, then new presses with no authors.
 - **Shelves:** Worldwide (Superheroes), Rising Voices (Luminaries),
@@ -1400,7 +1449,7 @@ flutter pub get
 flutter run --dart-define-from-file=config/dev.json    # dev database + local website (npm run dev)
 flutter run --dart-define-from-file=config/prod.json   # live data
 flutter analyze        # must say "No issues found"
-flutter test           # 334 tests, all passing at build 26 (one dev-only test skips)
+flutter test           # 336 tests, all passing at build 27 (one dev-only test skips)
 ```
 
 In this environment Flutter is run through a clean login shell:
@@ -1596,6 +1645,15 @@ The development Mac has run out of both.
   `.aab` is copied out). Keep `app/build/ios/SourcePackages` (1.2 GB) or the
   next iOS build downloads it again. Other big folders are not this project's
   (`~/Library/Caches/Google` 3.3 GB, VS Code updates 1.4 GB, Homebrew).
+- **27–28 October 2026, builds 25–27:** the simulator and release builds
+  filled the disk twice (down to 127 MB free). Cleared: Xcode `DerivedData`,
+  `app/build` except `ios-release` and `android-release` (the IPAs and the
+  bundle are moved there after each build; archives go to Xcode's Archives),
+  the CocoaPods cache, `~/.gradle/caches` (the next Android build downloads
+  about 3.5 GB again) and, with the owner's OK, the **npm cache** (`~/.npm`,
+  11 GB → under 1 GB; `npm cache clean --force`). That took it to 13 GB free.
+  A simulator build needs about 1.5 GB, an iOS release about 1.5 GB, an
+  Android release about 4 GB with Gradle.
 
 ---
 
@@ -1683,16 +1741,14 @@ browser walk-throughs had typed made-up addresses into the sign-in form.
 
 ### 16.1 Before the App Store launch
 
-1. **Upload build 24** (iOS) with the privacy label and iPad screenshots
-   (§12.6), and test on TestFlight: turn notifications off and on on the iPad
-   (the token row should go and come back) and check the welcome logic on a
-   new account.
-2. **Google Play** (§10.15, §12.8, `docs/google-play.md`): once the personal
-   developer account is verified, create the app, upload
-   `Spiritpedia-1.0.0-25.aab` to a **closed test** with 12+ testers (Testers
-   Community) for **14 days**, then apply for production. Still to make: the
-   1024 × 500 feature graphic and phone screenshots. Decide how a reviewer
-   signs in (codes go to an inbox they can't read).
+1. **iOS:** 1.0 is in Apple review; upload **build 27** to TestFlight
+   (§12.6) and test it there: turn notifications off and on on the iPad (the
+   token row should go and come back), check the welcome logic on a new
+   account, and the signed-out learning switch's Sign in.
+2. **Google Play** (§10.15, §12.8, `docs/google-play.md`): the closed test
+   is live with 15 testers; apply for production about 9–10 Nov 2026. Build
+   25 is built but not yet uploaded. The reviewer sign-in (review@spiritpedia.co,
+   a fixed code) is an open job (top of this file).
 3. **Delete the old Firebase projects** under the Elite Artists Google
    account, `spiritpedia-d190c` and `spiritpedia-dev` (the move was finished
    and checked on 22 Oct 2026: §4). Only installs older than build 23 used

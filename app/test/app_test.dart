@@ -18,6 +18,8 @@ import 'package:spiritpedia/features/star/conductor.dart';
 import 'package:spiritpedia/features/home/explore_more.dart';
 import 'package:spiritpedia/features/home/subject_pills.dart';
 import 'package:spiritpedia/features/interests/interests.dart';
+import 'package:spiritpedia/features/account/account_screen.dart'
+    show SignInForm;
 import 'package:spiritpedia/features/interests/interests_picker.dart';
 import 'package:spiritpedia/features/interests/tailor_star.dart';
 import 'package:spiritpedia/features/learning/learning_switch.dart';
@@ -1209,6 +1211,58 @@ void main() {
       expect(conductor.visitCount, 0);
       expect(conductor.records, isEmpty);
       expect(area.value.place, isNull);
+    });
+
+    testWidgets('Tailor Spiritpedia signed out: learning greyed, a line and '
+        'Sign in; signing in there stays on Tailor and the switch works', (
+      tester,
+    ) async {
+      final account = FakeAccountService();
+      await tester.pumpWidget(_app(account: account));
+      await tester.pump();
+      GoRouter.of(tester.element(find.byType(PillTabBar))).push('/tailor');
+      await tester.pumpAndSettle();
+      final sw = find.byKey(const ValueKey('tailor-learning-switch'));
+      await tester.ensureVisible(sw);
+      await tester.pumpAndSettle();
+      expect(tester.widget<Switch>(sw).onChanged, isNull);
+      expect(find.text(LearningSwitch.signedOut), findsOneWidget);
+      await tester.tap(find.byKey(const ValueKey('tailor-learning-sign-in')));
+      await tester.pumpAndSettle();
+      expect(find.byKey(const ValueKey('sign-in-sheet')), findsOneWidget);
+      expect(find.byType(SignInForm), findsOneWidget);
+
+      account.restoreSession('seeker@example.com');
+      await tester.pumpAndSettle();
+      expect(find.byKey(const ValueKey('sign-in-sheet')), findsNothing);
+      expect(find.byType(TailorScreen), findsOneWidget);
+      expect(find.text(LearningSwitch.signedOut), findsNothing);
+      await tester.tap(sw);
+      await tester.pumpAndSettle();
+      expect(tester.widget<Switch>(sw).value, isTrue);
+      expect(account.learningByUser.values, [true]);
+      await tester.pump(TailorStarFrame.linger);
+      await tester.pumpAndSettle();
+    });
+
+    testWidgets('Tailor Spiritpedia: scrolling while the star speaks sends '
+        'it on at once, so nothing is left under its words', (tester) async {
+      // A phone's height, so the page scrolls.
+      tester.view.physicalSize = const Size(1179, 2556);
+      addTearDown(tester.view.resetPhysicalSize);
+      await tester.pumpWidget(_app());
+      await tester.pump();
+      GoRouter.of(tester.element(find.byType(PillTabBar))).push('/tailor');
+      await tester.pump();
+      await tester.pump(const Duration(milliseconds: 600));
+      expect(find.byKey(const ValueKey('tailor-star')), findsOneWidget);
+      await tester.drag(
+        find.byKey(const ValueKey('tailor-more-of')),
+        const Offset(0, -200),
+      );
+      await tester.pump();
+      await tester.pumpAndSettle();
+      expect(find.byKey(const ValueKey('tailor-star')), findsNothing);
     });
 
     testWidgets('Tailor Spiritpedia: clearing every subject goes quietly '

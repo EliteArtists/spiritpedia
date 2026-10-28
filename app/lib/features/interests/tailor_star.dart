@@ -57,9 +57,10 @@ final tailorIntroShowProvider = FutureProvider<bool>(
 
 /// Tailor Spiritpedia as the star's own space. The star arrives with the
 /// page (the shared flight every page has) and floats at the top, typing
-/// its introduction while the choices scroll underneath — nothing is ever
-/// blocked. Once it has finished it can be swiped away, or after a moment it
-/// glides down to rest at the foot of the page, as on every other page.
+/// its introduction above the choices. Once it has finished it can be swiped
+/// away, or after a moment it glides down to rest at the foot of the page, as
+/// on every other page — at once if the page is scrolled, so nothing is ever
+/// under its words (they covered the learning switch on iPad, build 26).
 class TailorStarFrame extends ConsumerStatefulWidget {
   const TailorStarFrame({
     super.key,
@@ -90,6 +91,7 @@ class _TailorStarFrameState extends ConsumerState<TailorStarFrame> {
   _Star _star = _Star.deciding;
   Timer? _linger;
   bool _gliding = false;
+  bool _moving = false;
   double _room = 0;
 
   @override
@@ -188,7 +190,23 @@ class _TailorStarFrameState extends ConsumerState<TailorStarFrame> {
           tween: Tween(end: _room),
           duration: still ? Duration.zero : const Duration(milliseconds: 420),
           curve: Curves.easeInOutCubic,
-          builder: (context, top, _) => widget.builder(context, top),
+          // Scrolling while it speaks: the star moves on at once. Its words
+          // float over the page, so whatever scrolled up under them (the
+          // learning switch, say) could not be tapped until it did.
+          builder: (context, top, _) =>
+              NotificationListener<ScrollUpdateNotification>(
+                onNotification: (n) {
+                  if (_star == _Star.speaking && n.depth == 0 && !_moving) {
+                    _moving = true;
+                    // Not mid-layout: after this frame.
+                    WidgetsBinding.instance.addPostFrameCallback((_) {
+                      if (mounted && _star == _Star.speaking) _glideDown();
+                    });
+                  }
+                  return false;
+                },
+                child: widget.builder(context, top),
+              ),
         ),
         if (_star == _Star.speaking)
           Positioned(
