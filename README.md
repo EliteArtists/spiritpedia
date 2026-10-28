@@ -51,7 +51,7 @@ how-to is `docs/admin-guide.md`; the personalisation rules are
 | | State on 27 October 2026 |
 | :--- | :--- |
 | **Website** | Live at **https://www.spiritpedia.co** (Next.js on Vercel). Every push that changes `web/` deploys to production |
-| **App (iOS)** | Flutter, iPhone and iPad. **1.0.0 (23)** is on TestFlight (the Firebase move). **1.0.0 (25)** is built (`app/build/ios-release/Spiritpedia-1.0.0-25.ipa`; archive in Xcode's Archives, `2026-10-27/Spiritpedia 1.0.0 (25).xcarchive`, 27 Oct 2026) and waiting to be uploaded (§12.6); it replaces 24, which was never uploaded. Not yet on the App Store |
+| **App (iOS)** | Flutter, iPhone and iPad. **1.0.0 (23)** is on TestFlight (the Firebase move). **1.0.0 (26)** is built (`app/build/ios-release/Spiritpedia-1.0.0-26.ipa`; archive in Xcode's Archives, `2026-10-28/Spiritpedia 1.0.0 (26).xcarchive`, 28 Oct 2026) and waiting to be uploaded (§12.6); it replaces 25 (iOS), which was never uploaded. Not yet on the App Store |
 | **App (Android)** | The same code. **1.0.0 (25)** is built as a signed bundle (version code 25), `app/build/android-release/Spiritpedia-1.0.0-25.aab`, ready for Google Play's closed test as soon as the (personal) developer account is verified (§10.15, §12.8, `docs/google-play.md`). Not yet on Google Play |
 | **Database** | Supabase. Two projects: **live** (`uzmvcgew…`) and **dev** (`khtpbnof…`). Migrations `0000`–`0028` are on both |
 | **Push** | Firebase Cloud Messaging only, with an APNs key. Moved on 22 Oct 2026 to two Firebase projects owned by **love@spiritpedia.co** (live `spiritpedia-ad62b`, dev `spiritpedia-dev-5e4d5`); checked end to end on iPhone, iPad and Android |
@@ -1031,7 +1031,8 @@ detail pages, email-code sign-in with Library sync and account deletion, push.
 | 22 | 22 Oct | Everything since 21: the star's first callout "Tap me anytime to come home. Press and hold to open your Library." (checked on iPhone SE and on iPad in portrait and landscape); the explorer welcome sent from the website when the account is created (not on "I'm exploring"); "review received" only for a new review, never an edit; the **Discovery emails** switch on My Account (explorers who never applied); OFFICIAL with no ✦ (badge, tip, search line). 307 tests |
 | 23 | 22 Oct | **On TestFlight.** Firebase moved to the love@spiritpedia.co projects (`spiritpedia-ad62b` / `spiritpedia-dev-5e4d5`). Push checked on iPhone and iPad |
 | 24 | 22 Oct | *Built, never uploaded (replaced by 25; its files were cleared with the build folders on 27 Oct, the iOS archive kept).* The welcome notification is asked for until the server confirms it (three tries, then at each start; build 23's iPad never sent the request); "Turn off notifications on this phone" removes the token it registered (it used to fail on the iPad); Account type shows the type set at approval; **Android**: release signing with the Play upload key, approximate-location permission, a notification arriving while the app is open shows as an in-app note with **Open**. 316 tests |
-| **25** | 27 Oct | **Current build (iOS IPA and Android bundle), waiting to be uploaded.** **For You** as a pill (For You · View All · the pillars): a whole page of their More of subjects on Discover, Videos and Books, topped up from related subjects when they chose very few, "Tailored for you: … · Edit"; anyone with subjects lands on it, anyone without on View All; with none, For You opens Tailor ("Pick a few subjects and For You fills with them."); their subjects starred (the app's gold star image) in the pillar lists; the old For You shelf and its rotation removed. **Publishing Houses** at the top of Books, new presses with no authors included. Publishers' logos on white panels and one-line meta; the medical-care note on homeopathy; **co-written books** (`0027`). 333 tests |
+| 25 | 27 Oct | *iOS: built, never uploaded (replaced by 26). Android: the current bundle, waiting for Play.* **For You** as a pill (For You · View All · the pillars): a whole page of their More of subjects on Discover, Videos and Books, topped up from related subjects when they chose very few, "Tailored for you: … · Edit"; anyone with subjects lands on it, anyone without on View All; with none, For You opens Tailor ("Pick a few subjects and For You fills with them."); their subjects starred (the app's gold star image) in the pillar lists; the old For You shelf and its rotation removed. **Publishing Houses** at the top of Books, new presses with no authors included. Publishers' logos on white panels and one-line meta; the medical-care note on homeopathy; **co-written books** (`0027`). 333 tests |
+| **26** | 28 Oct | **Current iOS build, waiting to be uploaded** (iOS only; Android stays at 25). For You with nothing chosen opens the same Tailor Spiritpedia page as Account, with the same star words ("Entirely optional, and never shared. Your choices only shape what you see in Spiritpedia. Change them anytime.") and the same "Don’t show me again"; Tailor's sections now run More of · Let Spiritpedia learn from what I explore · Never show · Your Area; Your Area unset reads "Do you want me to show you practitioners in your area?" with **Set Your Area**; clearing every choice goes quietly back to View All (no "back to how everyone sees it" message). 334 tests. Not checked in the simulator (skipped at the owner's request) |
 
 ays one line (`publisherMeta`: "18 authors ·
   Founded 1984", or "Independent press"); the page puts the tier, founding
@@ -1155,7 +1156,7 @@ together). Nothing is ever removed by ranking, only reordered.
   like. Under 3 subjects, topped up with learned subjects, then the rest of
   their pillars (marked "Close to yours"); a shelf short of 10 is topped up
   from level 1–2 items, and one still under 3 is left out. Landing: For You
-  with subjects, View All without (learning alone is not enough). A subject
+  with subjects, View All without (learning alone is not enough). With none, the pill opens Tailor Spiritpedia, the same page as Account's (build 26); clearing every subject there goes quietly back to View All. A subject
   pill is a look on top, never saved; Clear goes back. Never show applies.
   Publishing Houses on For You: theirs, then new presses with no authors.
 - **Shelves:** Worldwide (Superheroes), Rising Voices (Luminaries),
@@ -1399,7 +1400,7 @@ flutter pub get
 flutter run --dart-define-from-file=config/dev.json    # dev database + local website (npm run dev)
 flutter run --dart-define-from-file=config/prod.json   # live data
 flutter analyze        # must say "No issues found"
-flutter test           # 333 tests, all passing at build 25 (one dev-only test skips)
+flutter test           # 334 tests, all passing at build 26 (one dev-only test skips)
 ```
 
 In this environment Flutter is run through a clean login shell:

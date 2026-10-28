@@ -20,6 +20,7 @@ import 'package:spiritpedia/features/home/subject_pills.dart';
 import 'package:spiritpedia/features/interests/interests.dart';
 import 'package:spiritpedia/features/interests/interests_picker.dart';
 import 'package:spiritpedia/features/interests/tailor_star.dart';
+import 'package:spiritpedia/features/learning/learning_switch.dart';
 import 'package:spiritpedia/features/menu/app_menu.dart';
 import 'package:spiritpedia/features/library/saved_items.dart';
 import 'package:spiritpedia/features/notifications/notifications_controller.dart';
@@ -504,16 +505,28 @@ void main() {
       expect(container.read(forYouActiveProvider), isFalse);
     });
 
-    testWidgets('none chosen: For You opens Tailor, the star says why; their '
-        'first subjects bring them to For You', (tester) async {
+    testWidgets('none chosen: For You opens Tailor Spiritpedia, the same '
+        'page and words as Account\'s; their first subjects bring them to '
+        'For You', (tester) async {
       await start(tester);
       await tester.tap(find.byKey(const ValueKey('pill-for-you')));
       await tester.pump();
       await tester.pump(const Duration(milliseconds: 600));
       expect(find.byType(TailorScreen), findsOneWidget);
       expect(find.byKey(const ValueKey('tailor-star-words')), findsOneWidget);
-      // Always said from here, so no "Don't show me again".
-      expect(find.byKey(const ValueKey('tailor-star-never')), findsNothing);
+      expect(
+        tester
+            .widget<TypedOnce>(find.byKey(const ValueKey('tailor-star-words')))
+            .text,
+        tailorStarIntro,
+      );
+      // More of · learning · Never show · Your Area, in that order.
+      double top(Finder f) => tester.getTopLeft(f).dy;
+      final more = top(find.text('More of'));
+      final learn = top(find.text(LearningSwitch.label));
+      final never = top(find.text('Never show'));
+      final area = top(find.byKey(const ValueKey('tailor-your-area')));
+      expect(more < learn && learn < never && never < area, isTrue);
       final container = ProviderScope.containerOf(
         tester.element(find.byType(SpiritpediaApp)),
       );
@@ -1193,7 +1206,33 @@ void main() {
       expect(area.value.place, isNull);
     });
 
-    testWidgets('Tailor Spiritpedia: "Your area" at the top', (tester) async {
+    testWidgets('Tailor Spiritpedia: clearing every subject goes quietly '
+        'back to View All', (tester) async {
+      await tester.pumpWidget(
+        _app(
+          interests: MemoryInterestsStore(
+            const Interests(subjects: ['meditation'], chosen: true),
+          ),
+        ),
+      );
+      await tester.pump();
+      final container = ProviderScope.containerOf(
+        tester.element(find.byType(SpiritpediaApp)),
+      );
+      expect(container.read(forYouActiveProvider), isTrue);
+      GoRouter.of(tester.element(find.byType(PillTabBar))).push('/tailor');
+      await tester.pumpAndSettle();
+      await tester.tap(find.byKey(const ValueKey('tailor-clear')));
+      await tester.pump();
+      await tester.tap(find.byKey(const ValueKey('tailor-save')));
+      await tester.pumpAndSettle();
+      expect(find.byType(SnackBar), findsNothing);
+      expect(container.read(forYouActiveProvider), isFalse);
+      await tester.pump(TailorStarFrame.linger);
+      await tester.pumpAndSettle();
+    });
+
+    testWidgets('Tailor Spiritpedia: "Your Area" at the foot', (tester) async {
       await tester.pumpWidget(
         _app(
           area: MemoryAreaStore(
@@ -1206,9 +1245,18 @@ void main() {
       await tester.pumpAndSettle();
       expect(find.byKey(const ValueKey('tailor-your-area')), findsOneWidget);
       expect(find.text('London, England, United Kingdom'), findsOneWidget);
+      await tester.ensureVisible(
+        find.byKey(const ValueKey('tailor-area-clear')),
+      );
+      await tester.pumpAndSettle();
       await tester.tap(find.byKey(const ValueKey('tailor-area-clear')));
       await tester.pumpAndSettle();
-      expect(find.textContaining('Not set.'), findsOneWidget);
+      expect(find.text('Your Area'), findsOneWidget);
+      expect(
+        find.text('Do you want me to show you practitioners in your area?'),
+        findsOneWidget,
+      );
+      expect(find.text('Set Your Area'), findsOneWidget);
       await tester.pump(TailorStarFrame.linger);
       await tester.pumpAndSettle();
     });

@@ -553,14 +553,15 @@ const _neverNote =
     'Optional. Anything with these subjects stays out of Discover, Videos '
     'and Books. You can still find it by searching for it.';
 
-/// Account → Tailor Spiritpedia (and the menu's): More of and Never show,
-/// the same picker twice, saved together on "Save". Clearing everything and
-/// saving is a choice too.
+/// Account → Tailor Spiritpedia (and the menu's, and the For You pill's
+/// before anything is chosen — the same page): More of, learning, Never show
+/// and Your Area. More of and Never show are the same picker twice, saved
+/// together on "Save". Clearing everything and saving is a choice too.
 class TailorScreen extends ConsumerStatefulWidget {
   const TailorScreen({super.key, this.forYou = false});
 
-  /// Opened from the For You pill with nothing chosen yet: the star says
-  /// [forYouStarIntro], and saving goes back to a full For You.
+  /// Opened from the For You pill with nothing chosen yet: saving goes back
+  /// to a full For You.
   final bool forYou;
 
   @override
@@ -598,17 +599,13 @@ class _TailorScreenState extends ConsumerState<TailorScreen> {
       ref.read(forYouViewProvider.notifier).show(true);
       ref.read(subjectFilterProvider.notifier).select(null);
     }
-    messenger
-      ..hideCurrentSnackBar()
-      ..showSnackBar(
-        SnackBar(
-          content: Text(
-            _more.isEmpty && _never.isEmpty
-                ? 'Spiritpedia is back to how everyone sees it'
-                : 'Saved: Spiritpedia is tailored to you',
-          ),
-        ),
+    // Everything cleared: quietly back to View All, no message.
+    messenger.hideCurrentSnackBar();
+    if (_more.isNotEmpty || _never.isNotEmpty) {
+      messenger.showSnackBar(
+        const SnackBar(content: Text('Saved: Spiritpedia is tailored to you')),
       );
+    }
     if (navigator.canPop()) navigator.pop();
   }
 
@@ -644,17 +641,12 @@ class _TailorScreenState extends ConsumerState<TailorScreen> {
               // The star's space: it speaks at the top while this scrolls
               // underneath it.
               child: TailorStarFrame(
-                intro: widget.forYou ? forYouStarIntro : null,
                 builder: (context, top) => ListView(
                   padding: readingPadding(
                     context,
                     EdgeInsets.fromLTRB(20, 8 + top, 20, 24),
                   ),
                   children: [
-                    const YourArea(),
-                    const SizedBox(height: 18),
-                    const Divider(),
-                    const SizedBox(height: 18),
                     const Text('More of', style: heading),
                     const SizedBox(height: 4),
                     const Text(
@@ -675,6 +667,10 @@ class _TailorScreenState extends ConsumerState<TailorScreen> {
                     const SizedBox(height: 18),
                     const Divider(),
                     const SizedBox(height: 18),
+                    const LearningSwitch(),
+                    const SizedBox(height: 18),
+                    const Divider(),
+                    const SizedBox(height: 18),
                     const Text('Never show', style: heading),
                     const SizedBox(height: 16),
                     InterestsPicker(
@@ -690,7 +686,7 @@ class _TailorScreenState extends ConsumerState<TailorScreen> {
                     const SizedBox(height: 18),
                     const Divider(),
                     const SizedBox(height: 18),
-                    const LearningSwitch(),
+                    const YourArea(),
                     // Clear of the star once it rests at the foot.
                     const SizedBox(height: FloatingHomeStar.clearance - 24),
                   ],
@@ -727,7 +723,7 @@ class _TailorScreenState extends ConsumerState<TailorScreen> {
   }
 }
 
-/// Tailor Spiritpedia's "Your area": the town Practitioners Near You uses.
+/// Tailor Spiritpedia's "Your Area": the town Practitioners Near You uses.
 /// Saved as soon as it is chosen, apart from the Save button below.
 class YourArea extends ConsumerWidget {
   const YourArea({super.key});
@@ -740,13 +736,13 @@ class YourArea extends ConsumerWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         const Text(
-          'Your area',
+          'Your Area',
           style: TextStyle(fontSize: 21, fontWeight: FontWeight.w700),
         ),
         const SizedBox(height: 4),
         Text(
           place == null
-              ? 'Not set. Practitioners Near You shows everyone until it is.'
+              ? 'Do you want me to show you practitioners in your area?'
               : place.fullLabel,
           style: TextStyle(
             fontSize: place == null ? 13 : 16,
@@ -763,7 +759,7 @@ class YourArea extends ConsumerWidget {
                 foregroundColor: SpColors.link,
                 padding: EdgeInsets.zero,
               ),
-              child: Text(place == null ? 'Set your area' : 'Change'),
+              child: Text(place == null ? 'Set Your Area' : 'Change'),
             ),
             if (place != null) ...[
               const SizedBox(width: 16),
