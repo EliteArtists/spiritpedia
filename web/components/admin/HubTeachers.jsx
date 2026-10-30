@@ -4,9 +4,9 @@ import { useCallback, useEffect, useState } from 'react';
 import Link from 'next/link';
 import { supabase } from '@/utils/supabase';
 
-// A school's teachers (migration 0029), on the school's Profile tab: who
-// teaches there, as Founder or Instructor, with add and remove. Reads use the
-// public client (school_teachers is public data); writes go through
+// A hub's teachers (migrations 0029, 0030), on a School's or Organisation's
+// Profile tab: who teaches there, as Founder or Instructor, with add and
+// remove. Reads use the public client (hub_teachers is public data); writes go through
 // /api/admin/write like every other content write, since only the service role
 // may write the table.
 
@@ -30,7 +30,7 @@ async function adminWrite(body) {
   return json;
 }
 
-export default function SchoolTeachers({ school }) {
+export default function HubTeachers({ hub }) {
   const [links, setLinks] = useState(null);
   const [error, setError] = useState(null);
   const [slug, setSlug] = useState('');
@@ -39,12 +39,12 @@ export default function SchoolTeachers({ school }) {
 
   const load = useCallback(async () => {
     const { data, error: err } = await supabase
-      .from('school_teachers')
-      .select('id, role, teacher:healers!school_teachers_teacher_id_fkey(id, name, healer_slug)')
-      .eq('school_id', school.id);
+      .from('hub_teachers')
+      .select('id, role, teacher:healers!hub_teachers_teacher_id_fkey(id, name, healer_slug)')
+      .eq('hub_id', hub.id);
     if (err) setError(err.message);
     setLinks((data || []).filter((l) => l.teacher).sort((a, b) => a.teacher.name.localeCompare(b.teacher.name)));
-  }, [school.id]);
+  }, [hub.id]);
 
   useEffect(() => {
     load();
@@ -63,9 +63,9 @@ export default function SchoolTeachers({ school }) {
         .eq('healer_slug', wanted)
         .maybeSingle();
       if (!teacher) throw new Error(`No listing with the slug "${wanted}".`);
-      if (teacher.id === school.id) throw new Error('A school cannot teach at itself.');
+      if (teacher.id === hub.id) throw new Error('A listing cannot teach at itself.');
       if (links?.some((l) => l.teacher.id === teacher.id)) throw new Error(`${teacher.name} is already linked.`);
-      await adminWrite({ table: 'school_teachers', op: 'insert', values: { school_id: school.id, teacher_id: teacher.id, role } });
+      await adminWrite({ table: 'hub_teachers', op: 'insert', values: { hub_id: hub.id, teacher_id: teacher.id, role } });
       setSlug('');
       setRole('instructor');
       await load();
@@ -80,7 +80,7 @@ export default function SchoolTeachers({ school }) {
     setBusy(true);
     setError(null);
     try {
-      await adminWrite({ table: 'school_teachers', op: 'delete', match: { id: link.id } });
+      await adminWrite({ table: 'hub_teachers', op: 'delete', match: { id: link.id } });
       setLinks((prev) => prev.filter((l) => l.id !== link.id));
     } catch (err) {
       setError(err.message);
@@ -90,7 +90,7 @@ export default function SchoolTeachers({ school }) {
 
   return (
     <section className="mt-10 rounded-2xl border border-white/10 bg-[#111827] p-5">
-      <p className={labelClass}>Teachers at this school</p>
+      <p className={labelClass}>Teachers</p>
       {links === null ? (
         <p className="mt-3 text-sm text-slate-500">Loading…</p>
       ) : links.length === 0 ? (

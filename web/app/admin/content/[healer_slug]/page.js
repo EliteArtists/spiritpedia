@@ -10,7 +10,7 @@ import DataProblem from '@/components/admin/DataProblem';
 import { useAdminData } from '@/components/admin/AdminData';
 import CardImage from '@/components/CardImage';
 import ConfirmDelete from '@/components/admin/ConfirmDelete';
-import SchoolTeachers from '@/components/admin/SchoolTeachers';
+import HubTeachers from '@/components/admin/HubTeachers';
 import { supabase } from '@/utils/supabase';
 import { tierGuidance, tierName, tierOptions } from '@/utils/badges';
 
@@ -1553,7 +1553,7 @@ export default function AdminHealerRecordPage({ params }) {
 
             {/* A school's teachers (0029). Saved type only: a listing being
                 turned into a school is saved first, then shows this. */}
-            {healer.entity_type === 'school' && <SchoolTeachers school={healer} />}
+            {(healer.entity_type === 'school' || healer.entity_type === 'organisation') && <HubTeachers hub={healer} />}
           </>
         )}
 

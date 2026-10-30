@@ -66,10 +66,25 @@ export function isSchool(healer) {
   return healer?.entity_type === 'school';
 }
 
-// "8 teachers", counted from school_teachers rows ({ school_id }) for one
-// school.
-export function teacherCount(school, links) {
-  return (Array.isArray(links) ? links : []).filter((l) => l?.school_id === school?.id).length;
+// A hub (0030): a school or an organisation, with teachers linked to it in
+// hub_teachers. "Our Teachers" on its page; "Teaches at…" or "Teaches on…" on
+// each teacher's.
+export function isHub(healer) {
+  const t = healer?.entity_type;
+  return t === 'school' || t === 'organisation';
+}
+
+// The words before a hub's name on a teacher's page: "Founder of White Tiger
+// Qigong", "Teaches at White Tiger Qigong" (a school), "Teaches on The Shift
+// Network" (an organisation).
+export function hubLinkPrefix(role, hub) {
+  if (role === 'founder') return 'Founder of';
+  return hub?.entity_type === 'organisation' ? 'Teaches on' : 'Teaches at';
+}
+
+// "8 teachers", counted from hub_teachers rows ({ hub_id }) for one hub.
+export function teacherCount(hub, links) {
+  return (Array.isArray(links) ? links : []).filter((l) => l?.hub_id === hub?.id).length;
 }
 
 // A publisher's "N authors": the people among its linked listings, never its

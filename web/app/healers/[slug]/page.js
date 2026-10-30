@@ -17,9 +17,9 @@ import PublisherLogo from '@/components/PublisherLogo';
 import { actionLabel, actionUrl, isPerson, withScheme } from '@/utils/badges';
 import { MEDICAL_NOTE, needsMedicalNote } from '@/utils/medicalNote';
 import { booksByAuthorsFilter } from '@/utils/bookAuthors';
-import { isSchool } from '@/utils/listings';
+import { hubLinkPrefix, isHub, isSchool } from '@/utils/listings';
 
-// Our Teachers on a school's page: the founder first, then by tier, then by
+// Our Teachers on a hub's page: the founder first, then by tier, then by
 // name.
 const TIER_ORDER = ['superhero', 'ascended_master', 'luminary', 'local_hero'];
 const tierRank = (tier) => (TIER_ORDER.includes(tier) ? TIER_ORDER.indexOf(tier) : TIER_ORDER.length);
@@ -200,20 +200,21 @@ export default async function HealerProfile({ params, searchParams }) {
     : { data: [] };
   const { data: videos } = await supabase.from('videos').select('*').eq('healer_slug', slug);
 
-  // Schools (migration 0029). A school lists its teachers; a teacher shows
-  // the schools they teach at. school_teachers has two keys to healers, so
-  // each embed names the one it follows.
+  // Hubs (migrations 0029, 0030): a school or an organisation lists its
+  // teachers; a teacher shows the hubs they teach at or on. hub_teachers has
+  // two keys to healers, so each embed names the one it follows.
   const school = isSchool(healer);
-  const { data: schoolLinks } = await supabase
-    .from('school_teachers')
+  const hub = isHub(healer);
+  const { data: hubLinks } = await supabase
+    .from('hub_teachers')
     .select(
-      school
-        ? 'role, teacher:healers!school_teachers_teacher_id_fkey(*)'
-        : 'role, school:healers!school_teachers_school_id_fkey(name, healer_slug)'
+      hub
+        ? 'role, teacher:healers!hub_teachers_teacher_id_fkey(*)'
+        : 'role, hub:healers!hub_teachers_hub_id_fkey(name, healer_slug, entity_type)'
     )
-    .eq(school ? 'school_id' : 'teacher_id', healer.id);
-  const links = Array.isArray(schoolLinks) ? schoolLinks : [];
-  const teachers = school
+    .eq(hub ? 'hub_id' : 'teacher_id', healer.id);
+  const links = Array.isArray(hubLinks) ? hubLinks : [];
+  const teachers = hub
     ? links
         .filter((l) => l.teacher)
         .sort(
@@ -224,10 +225,12 @@ export default async function HealerProfile({ params, searchParams }) {
         )
         .map((l) => l.teacher)
     : [];
-  // "Founder of White Tiger Qigong", "Teaches at Skies and Flora", founders first.
-  const teachesAt = school
+  // "Founder of White Tiger Qigong", "Teaches at Skies and Flora", "Teaches on
+  // The Shift Network": founders first, then schools, then organisations.
+  const linkRank = (l) => (l.role === 'founder' ? 0 : l.hub.entity_type === 'organisation' ? 2 : 1);
+  const teachesAt = hub
     ? []
-    : links.filter((l) => l.school).sort((a, b) => (a.role === 'founder' ? 0 : 1) - (b.role === 'founder' ? 0 : 1));
+    : links.filter((l) => l.hub).sort((a, b) => linkRank(a) - linkRank(b));
 
   // EXPIRATION WINDOW — offerings surface only while live: the row must be
   // is_active, and either evergreen (end_date IS NULL) or not yet past its end
@@ -370,27 +373,27 @@ export default async function HealerProfile({ params, searchParams }) {
                 </p>
               )}
 
-              {/* A teacher: the schools they teach at, each linked. */}
+              {/* A teacher: the hubs they teach at or on, each linked. The
+                  words show again only when they change: "Founder of A,
+                  teaches at B and C, teaches on D". */}
               {teachesAt.length > 0 && (
                 <p className="mt-3 text-sm text-gray-400">
-                  {teachesAt.map((l, i) => (
-                    <span key={l.school.healer_slug}>
-                      {i > 0 && (i === teachesAt.length - 1 ? ' and ' : ', ')}
-                      {i === 0 || l.role !== teachesAt[i - 1].role
-                        ? l.role === 'founder'
-                          ? 'Founder of '
-                          : i === 0
-                            ? 'Teaches at '
-                            : 'teaches at '
-                        : ''}
-                      <a
-                        href={`/healers/${l.school.healer_slug}?from=${encodeURIComponent(fromHealer)}&fromTitle=${encodeURIComponent(healer.name)}`}
-                        className="font-semibold text-[#a78bfa] hover:text-white"
-                      >
-                        {l.school.name}
-                      </a>
-                    </span>
-                  ))}
+                  {teachesAt.map((l, i) => {
+                    const prefix = hubLinkPrefix(l.role, l.hub);
+                    const shown = i === 0 || prefix !== hubLinkPrefix(teachesAt[i - 1].role, teachesAt[i - 1].hub);
+                    return (
+                      <span key={l.hub.healer_slug}>
+                        {i > 0 && (i === teachesAt.length - 1 ? ' and ' : ', ')}
+                        {shown ? `${i === 0 ? prefix : prefix.toLowerCase()} ` : ''}
+                        <a
+                          href={`/healers/${l.hub.healer_slug}?from=${encodeURIComponent(fromHealer)}&fromTitle=${encodeURIComponent(healer.name)}`}
+                          className="font-semibold text-[#a78bfa] hover:text-white"
+                        >
+                          {l.hub.name}
+                        </a>
+                      </span>
+                    );
+                  })}
                 </p>
               )}
 
@@ -511,7 +514,7 @@ export default async function HealerProfile({ params, searchParams }) {
           width and stop the tracks from scrolling. Each ContentShelf hides itself
           when empty, so zero-content categories leave no orphaned headers. */}
       <div className="mx-auto max-w-7xl px-6 pb-20 grid grid-cols-1 gap-14">
-        {/* 4 · A school's teachers (0029), first. Hidden when it has none. */}
+        {/* 4 · A hub's teachers (0029, 0030), first. Hidden when it has none. */}
         <ContentShelf
           title="Our Teachers"
           subtitle="Teach With Us"

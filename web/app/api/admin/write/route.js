@@ -26,7 +26,7 @@ const TABLES = new Set([
   'publishers',
   'publisher_healers',
   // Teachers at a school (0029): the school's Profile tab adds and removes them.
-  'school_teachers',
+  'hub_teachers',
   // Moderation. The service role is the only thing that may set reviews.status
   // — the table's trigger pins it against the author on both insert and
   // update, so approving one cannot be done from the browser session.

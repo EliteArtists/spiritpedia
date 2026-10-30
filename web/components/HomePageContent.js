@@ -54,9 +54,9 @@ export default async function HomePage({ initialSubjectSlug, initialSearch = '' 
       .from('publishers')
       .select('*, publisher_healers(healers(entity_type))')
       .order('name', { ascending: true }),
-    // Which school each teacher link belongs to, so a school's card can say
-    // "8 teachers" (migration 0029). One small row per link.
-    supabase.from('school_teachers').select('school_id'),
+    // Which hub each teacher link belongs to, so a school's card can say
+    // "8 teachers" (migrations 0029, 0030). One small row per link.
+    supabase.from('hub_teachers').select('hub_id'),
   ]);
 
   const subjects = subjectsRes.data || [];

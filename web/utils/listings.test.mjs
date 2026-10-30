@@ -9,6 +9,8 @@ import {
   isSchool,
   officialFirst,
   teacherCount,
+  isHub,
+  hubLinkPrefix,
   suggestedListingType,
 } from './listings.js';
 
@@ -30,10 +32,25 @@ test('a school is not a person, and is a school (0029)', () => {
 });
 
 test("a school's teacher count counts only its own links", () => {
-  const links = [{ school_id: 1 }, { school_id: 1 }, { school_id: 2 }];
+  const links = [{ hub_id: 1 }, { hub_id: 1 }, { hub_id: 2 }];
   assert.equal(teacherCount({ id: 1 }, links), 2);
   assert.equal(teacherCount({ id: 3 }, links), 0);
   assert.equal(teacherCount({ id: 1 }, null), 0);
+});
+
+test('schools and organisations are hubs; channels and people are not', () => {
+  assert.equal(isHub({ entity_type: 'school' }), true);
+  assert.equal(isHub({ entity_type: 'organisation' }), true);
+  assert.equal(isHub({ entity_type: 'channel' }), false);
+  assert.equal(isHub({ entity_type: 'individual' }), false);
+  assert.equal(isHub(null), false);
+});
+
+test('a teacher teaches at a school, on an organisation; a founder founds either', () => {
+  assert.equal(hubLinkPrefix('instructor', { entity_type: 'school' }), 'Teaches at');
+  assert.equal(hubLinkPrefix('instructor', { entity_type: 'organisation' }), 'Teaches on');
+  assert.equal(hubLinkPrefix('founder', { entity_type: 'organisation' }), 'Founder of');
+  assert.equal(hubLinkPrefix('founder', { entity_type: 'school' }), 'Founder of');
 });
 
 test('Spiritpedia Official comes first, the rest keep their order', () => {

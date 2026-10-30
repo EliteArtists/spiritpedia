@@ -28,7 +28,8 @@ const PRODUCT_TYPES = ['course', 'retreat', 'download', 'membership'];
 const RESOURCE_TYPES = ['practice', 'download', 'meditation', 'workshop', 'mini_course'];
 const TIERS = ['superhero', 'luminary', 'local_hero', 'ascended_master'];
 const ENTITY_TYPES = ['individual', 'channel', 'app', 'organisation', 'school'];
-const SCHOOL_ROLES = ['founder', 'instructor'];
+const HUB_ROLES = ['founder', 'instructor'];
+const HUB_TYPES = ['school', 'organisation'];
 const AVAILABILITY = {
   worldwide: 'Worldwide (Famous Names)',
   local: 'Local Only (In-Person)',
@@ -112,8 +113,10 @@ if (doRollback) {
   const logPath = planPath.replace(/\.json$/, `.${envName}.inserted.json`);
   const log = JSON.parse(fs.readFileSync(logPath, 'utf8'));
   for (const row of log.rows) {
-    const r = await fetch(`${BASE}/rest/v1/${row.table}?id=eq.${row.id}`, { method: 'DELETE', headers });
-    if (!r.ok) throw new Error(`DELETE ${row.table} ${row.id}: ${r.status} ${await r.text()}`);
+    // Logs written before 0030 name the table by its old name.
+    const table = row.table === 'school_teachers' ? 'hub_teachers' : row.table;
+    const r = await fetch(`${BASE}/rest/v1/${table}?id=eq.${row.id}`, { method: 'DELETE', headers });
+    if (!r.ok) throw new Error(`DELETE ${table} ${row.id}: ${r.status} ${await r.text()}`);
   }
   for (const c of log.co_author_updates || []) {
     const r = await fetch(`${BASE}/rest/v1/books?id=eq.${c.id}`, { method: 'PATCH', headers, body: JSON.stringify({ co_healer_slugs: c.before }) });
@@ -441,20 +444,22 @@ for (const c of plan.co_authorships || []) {
   else notes.push(`skip co-authorship "${book.title}": already done`);
 }
 
-// Schools this teacher teaches at (migration 0029):
-// "teaches_at": [{ "school": "white-tiger-qigong", "role": "founder" | "instructor" }].
-const schoolLinks = [];
+// Hubs this teacher teaches at or on, a school or an organisation (0029, 0030):
+// "teaches_at": [{ "hub": "white-tiger-qigong", "role": "founder" | "instructor" }].
+// The older key "school" still works.
+const hubLinks = [];
 for (const s of plan.teaches_at || []) {
+  const want = s.hub || s.school;
   const role = s.role || 'instructor';
-  if (!SCHOOL_ROLES.includes(role)) problems.push(`teaches at "${s.school}": role "${role}" isn't one of ${SCHOOL_ROLES.join(', ')}`);
-  const [school] = await get(`healers?select=id,name,entity_type&healer_slug=eq.${encodeURIComponent(s.school)}`);
-  if (!school) { problems.push(`teaches at: no listing "${s.school}"`); continue; }
-  if (school.entity_type !== 'school') { problems.push(`teaches at: "${school.name}" isn't a school (it's ${school.entity_type || 'individual'})`); continue; }
-  if (healer && (await get(`school_teachers?select=id&school_id=eq.${school.id}&teacher_id=eq.${healer.id}`)).length) {
-    notes.push(`skip teaches at "${school.name}": already linked`);
+  if (!HUB_ROLES.includes(role)) problems.push(`teaches at "${want}": role "${role}" isn't one of ${HUB_ROLES.join(', ')}`);
+  const [hub] = await get(`healers?select=id,name,entity_type&healer_slug=eq.${encodeURIComponent(want)}`);
+  if (!hub) { problems.push(`teaches at: no listing "${want}"`); continue; }
+  if (!HUB_TYPES.includes(hub.entity_type)) { problems.push(`teaches at: "${hub.name}" isn't a school or organisation (it's ${hub.entity_type || 'individual'})`); continue; }
+  if (healer && (await get(`hub_teachers?select=id&hub_id=eq.${hub.id}&teacher_id=eq.${healer.id}`)).length) {
+    notes.push(`skip teaches at "${hub.name}": already linked`);
     continue;
   }
-  schoolLinks.push({ school_id: school.id, name: school.name, role });
+  hubLinks.push({ hub_id: hub.id, name: hub.name, role });
 }
 
 for (const c of plan.courses || []) {
@@ -491,7 +496,7 @@ savePlan();
 const count = (t) => queue.filter((q) => q.table === t).length;
 say(`To add on ${envName}: ${count('videos')} videos, ${count('books')} books, ${count('courses')} offerings, ${count('free_resources')} free resources${create ? ', and the healer' : ''}`);
 coAuthorships.forEach((c) => say(`Co-authors for "${c.title}": ${c.after.join(', ')}`));
-schoolLinks.forEach((s) => say(`Teaches at ${s.name} (${s.role})`));
+hubLinks.forEach((s) => say(`Teaches at ${s.name} (${s.role})`));
 if (decisions.length) { say('Decided by default:'); decisions.forEach((d) => say(`  - ${d}`)); }
 const already = notes.filter((n) => n.startsWith('skip '));
 if (already.length) say(`Skipped ${already.length} already in or removed by their owner${args.includes('--verbose') ? ':' : ' (--verbose lists them)'}`);
@@ -553,12 +558,12 @@ for (const c of coAuthorships) {
   saveLog();
   say(`  ~ books "${c.title}": co-authors ${c.after.join(', ')}`);
 }
-for (const s of schoolLinks) {
-  const r = await insert('school_teachers', { school_id: s.school_id, teacher_id: healer.id, role: s.role });
-  log.rows.push({ table: 'school_teachers', id: r.id, title: `${slug} teaches at ${s.name}` });
+for (const s of hubLinks) {
+  const r = await insert('hub_teachers', { hub_id: s.hub_id, teacher_id: healer.id, role: s.role });
+  log.rows.push({ table: 'hub_teachers', id: r.id, title: `${slug} teaches at ${s.name}` });
   saveLog();
   say(`  + teaches at ${s.name} (${s.role})`);
 }
 plan.images_final = true;
 savePlan();
-say(`Inserted ${queue.length + schoolLinks.length} rows${create ? ' and the healer' : ''}${coAuthorships.length ? `, co-authors on ${coAuthorships.length} book(s)` : ''}. Log: ${path.relative(process.cwd(), logPath)}`);
+say(`Inserted ${queue.length + hubLinks.length} rows${create ? ' and the healer' : ''}${coAuthorships.length ? `, co-authors on ${coAuthorships.length} book(s)` : ''}. Log: ${path.relative(process.cwd(), logPath)}`);
