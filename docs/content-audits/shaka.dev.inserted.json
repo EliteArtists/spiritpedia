@@ -1,0 +1,28 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 176,
+    "healer_slug": "shaka"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "92f5f110-d293-4bbb-89cb-f8fe6fb6aa55",
+      "slug": "foundations-in-psychic-development",
+      "title": "Foundations in Psychic Development"
+    },
+    {
+      "table": "courses",
+      "id": "58c2c87f-134e-4885-be1b-f07cd9c20d93",
+      "slug": "empaths-and-highly-sensitive-people",
+      "title": "Empaths and Highly Sensitive People"
+    },
+    {
+      "table": "courses",
+      "id": "08c3e850-a9db-45e0-8fcf-84816db7aa79",
+      "slug": "pre-recorded-20-minute-mp3-psychic-reading",
+      "title": "Pre-recorded 20-Minute MP3 Psychic Reading"
+    }
+  ],
+  "at": "2026-10-30T17:04:30.138Z"
+}

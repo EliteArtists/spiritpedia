@@ -60,6 +60,14 @@ The list to pick up from. Each points to where the detail lives.
    gentle **"better on the app"** prompts.
 9. **Future companion apps:** **I AM by Spiritpedia** first, then
    **Consciousness by Spiritpedia**.
+10. **A "School" type** (plan first; not built). Like publishing houses
+    (§17.5): a school page, teachers linked to it ("Teaches at…" on their
+    page), and a **Schools & Academies** shelf on Discover. First schools:
+    **Skies and Flora** (on Spiritpedia as a Channel until then) and **White
+    Tiger Qigong**.
+11. **Sign-in history in the admin** (plan first; not built): per person,
+    when they signed in, from Supabase's auth logs, so activity can be seen
+    without copying codes.
 
 ---
 
@@ -2323,6 +2331,7 @@ dev, give the pages to check, stop. Live after their OK, as for healers.
 | Awaken Village Press authors batch 4 (new, Rising Star, linked to the press): Phil Williams, Marjorie Warkentin (Abbotsford, local and online) | 24 Oct 2026: Phil 13 videos, 2 books (no offerings or free resources; the sample PDF left out as a teaser); Marjorie 8 videos, 1 book, no website yet (hers is a Coming Soon page) | 24 Oct 2026, the same; Phil linked to the press, Marjorie not yet (the owner is confirming with Amanda; unlinked on dev too) |
 | Awaken Village Press authors batch 5 (new, Rising Star, linked to the press): Jia Apple, Michael McGinnis | 24 Oct 2026: Jia 9 videos (Heal to Heal 1–8, The Every Day Oracle; her family videos left out), 3 books; Michael 1 video, 2 books (the Spanish edition left out) | 24 Oct 2026, the same (Jia's bio softened: "a life-threatening wound from a medical procedure") |
 | Awaken Village Press authors batch 6 (new, Rising Star, linked to the press): Eva Dalak, Adi Kanda (Toronto, local and online) | 24 Oct 2026: Eva 19 videos, 1 book, 4 offerings (2 dated trainings, the Greece immersion); Adi 18 videos (with the Dear Human Child launch from Amanda's channel), 2 books, 3 offerings | 24 Oct 2026, the same |
+| Shaka (new, Rising Star; Puerto Viejo, Costa Rica, local and online; shown without a surname) and Skies and Flora (new, Rising Star, a Channel until there's a School type: her yoga school) | 30 Oct 2026: Shaka 3 offerings (Foundations in Psychic Development and Empaths and HSP through the School of Intuition and Healing, the MP3 reading); Skies and Flora 10 videos from @skiesandflora (13 music videos and 5 dated readings left out), the 200hr Yoga Teacher Training (the BookRetreats price, from $5,350 with accommodation and meals). The forthcoming book left out. Skies and Flora's photo is from its own site, not the YouTube channel picture | 30 Oct 2026, the same |
 
 ---
 

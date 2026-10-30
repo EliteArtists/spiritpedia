@@ -1,0 +1,75 @@
+{
+  "healer": {
+    "healer_slug": "shaka",
+    "create": {
+      "name": "Shaka",
+      "bio": "Shaka is a psychic, Reiki Master, and E-RYT 500 yoga teacher from London, now rooted on the Caribbean coast of Costa Rica — a practitioner whose seventeen years as student, teacher, and healer have woven three traditions into one unhurried, deeply attentive way of working. People come to her for wisdom, guidance and oracle on the matters of their lives; for energetic and spiritual attunement and healing; or simply for relaxation, meditation and yoga — and she meets each of them compassionately, holding space to explore and ask questions rather than performing answers at them.\n\nHer philosophy carries the quiet confidence of someone long past spiritual theatre: all holistic practices, she teaches, exist to support fuller, healthier, more meaningful lives — “not because we are becoming, but because we are releasing the barriers that prevent us from seeing that we already are.” From her base in Puerto Viejo she offers one-to-one sessions, courses and classes both in person and online — including psychic development training, a course for empaths, and a full 200-hour yoga teacher training — closing, as she opens, with a single word of blessing: Asé.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local_online",
+      "city": "Puerto Viejo",
+      "country": "Costa Rica",
+      "subjects": [
+        "reiki",
+        "mediumship-spirits",
+        "yoga"
+      ],
+      "website_url": null,
+      "booking_url": "https://www.skiesandflora.com/book-your-session",
+      "contact_email": "info@skiesandflora.com",
+      "image_urls": [
+        "https://static.wixstatic.com/media/039de7_b53b6531a450414daf810e389efb5f8b~mv2.jpg"
+      ]
+    }
+  },
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Foundations in Psychic Development",
+      "url": "https://schoolofintuitionandhealing.com/accredited-courses/psychic-development/foundations-in-psychic-development/",
+      "description": "An eight-week live course on Zoom with Shaka, through the School of Intuition and Healing, that teaches you to find inner stillness and open your intuitive and psychic senses. You practise aura and chakra readings, psychometry, card work and automatic writing in a supportive group, with mentoring over WhatsApp between sessions. It is IPHM-accredited, entry is by interview, and it leads on to the Intermediate level.",
+      "price": "£145 GBP (or 3 × £54)",
+      "image": "https://static.wixstatic.com/media/039de7_b53b6531a450414daf810e389efb5f8b~mv2.jpg",
+      "product_type": "course",
+      "start_date": "2027-02-11",
+      "end_date": "2027-04-01",
+      "subjects": [
+        "mediumship-spirits",
+        "chakra-healing",
+        "energy-medicine"
+      ]
+    },
+    {
+      "title": "Empaths and Highly Sensitive People",
+      "url": "https://schoolofintuitionandhealing.com/product-category/course-for-empaths-and-hsp/",
+      "description": "An eight-week live online course with Shaka for empaths and highly sensitive people who want to turn their sensitivity into a strength. It covers the science of empathy, energetic boundaries, archetypes, the Hero's Journey and the empath–narcissist dynamic. Sessions are recorded, optional homework is set, and entry is by interview.",
+      "price": "£145 GBP (or 3 × £54)",
+      "image": "https://static.wixstatic.com/media/039de7_b53b6531a450414daf810e389efb5f8b~mv2.jpg",
+      "product_type": "course",
+      "start_date": "2027-03-30",
+      "end_date": "2027-05-18",
+      "subjects": [
+        "energy-medicine",
+        "shadow-work",
+        "conscious-relationships"
+      ]
+    },
+    {
+      "title": "Pre-recorded 20-Minute MP3 Psychic Reading",
+      "url": "https://www.skiesandflora.com/services-and-prices",
+      "description": "A personal 20-minute psychic reading that Shaka records and sends to you as an MP3 within 72 hours. It's a gentle, unhurried way to get her guidance on your own schedule, wherever you are in the world.",
+      "price": "Contact for pricing",
+      "image": "https://static.wixstatic.com/media/039de7_b53b6531a450414daf810e389efb5f8b~mv2.jpg",
+      "product_type": "download",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "mediumship-spirits",
+        "channelled-teachings"
+      ]
+    }
+  ],
+  "free_resources": [],
+  "images_final": true
+}
