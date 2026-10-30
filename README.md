@@ -11,10 +11,11 @@ email work, migrations 0024–0026, Inbox-only approval, no ✦; then the Fireba
 move to love@spiritpedia.co, builds 23 and 24, and Android made ready for
 Google Play), and again on 28 October 2026 (For You, co-authors, the
 broken-image routine, builds 25–27, the store status and the open jobs below),
-checked against the code, not memory. Where it
+and on 30 October 2026 (the release plan, stale lines tidied), checked against
+the code, not memory. Where it
 and the code disagree, the code is right and this file should be fixed.
 
-## Open jobs (28 October 2026)
+## Open jobs (30 October 2026)
 
 The list to pick up from. Each points to where the detail lives.
 
@@ -29,12 +30,13 @@ The list to pick up from. Each points to where the detail lives.
      yet uploaded; 26 and 27 were iOS only, so the next Android build should
      be 27 or later (the Gradle cache was cleared on 28 Oct: the first Android
      build downloads about 3.5 GB again).
-2. **Reviewer demo account** (review@spiritpedia.co, signing in with a fixed
-   code, for Apple's and Google's reviewers). Status: **not in this
-   repository** — no code, migration or doc mentions it yet, so whether it
-   exists on live, and how its fixed code works, has to be checked with the
-   owner before anything is built. It must not weaken sign-in for anyone else
-   (codes are otherwise emailed; §14 on test accounts).
+   - **The plan:** **31 Oct 2026** (Day 5 of the closed test): upload
+     Android build 25 to the closed test as its first update. **About 4 Nov
+     2026:** the push notification build, **1.0.1**, for both stores. Then the
+     first content batch: **12 Reiki practitioners** (§18, batch mode).
+2. **Reviewer demo account: only if Apple asks.** It doesn't exist and isn't
+   needed unless a reviewer asks for one. If it is ever built, it must not
+   weaken sign-in for anyone else (codes are otherwise emailed; §14).
 3. **Next.js security upgrade.** `web/package.json` asks for `^16.2.11`;
    16.4.0 is installed and 16.4.3 is the latest. Upgrade, run `npm test` and a
    local build, then push (a `web/` push deploys).
@@ -107,14 +109,8 @@ how-to is `docs/admin-guide.md`; the personalisation rules are
 | **Emails** | The approved copy of 21–22 Oct 2026 is live (§9.7). The outreach journey is eight emails, redirected to a test inbox by `JOURNEY_TEST_EMAIL` until the solicitor has checked cold email; no journey is running. Day 4 is live. Personal discovery editions are built but **off** until `DISCOVERY_EDITIONS=on` is set on Vercel (§9.7a) |
 | **Repository** | `https://github.com/EliteArtists/spiritpedia`, branch `main` only. No staging environment, no feature flags |
 
-**Before submitting build 24 in App Store Connect:**
-- Update the App Privacy label (§12.6): add **Device ID** and **Sensitive Info**,
-  and **Product Personalization** as a purpose on Product Interaction and
-  Search History.
-- Add **13-inch iPad screenshots** (2064 × 2752). Twenty portrait screenshots
-  from the iPad simulator are on the Desktop of the development Mac, in
-  "Spiritpedia iPad screenshots".
-- Check the App Store description doesn't say "iPhone only".
+Build 24 has been submitted for review. Before 1.0.1, check the App Privacy
+label (§12.6) still matches what the app collects.
 
 ---
 
@@ -294,7 +290,7 @@ spiritpedia/
 │   ├── config/             dev.json (ignored), dev.example.json, prod.json
 │   ├── docs/               personalisation.md, website-followups.md
 │   ├── ios/  android/
-│   └── pubspec.yaml        version 1.0.0+24
+│   └── pubspec.yaml        version 1.0.0+27
 ├── web/                    the Next.js site — run web commands from here
 │   ├── app/                pages, /api routes, sitemap, robots
 │   ├── components/         UI; components/admin/ for the dashboard
@@ -1350,10 +1346,11 @@ inline.
 
 ### 10.15 Android (build 24)
 
-The same Flutter code, built for Google Play. **Ready to upload, not yet on
-Google Play**: the developer account (personal, love@spiritpedia.co) is being
-verified, and a personal account must run a **closed test with 12+ testers for
-14 days** before production (testers from Testers Community).
+The same Flutter code, built for Google Play. The developer account
+(personal, love@spiritpedia.co) is verified, and **build 24 is in the closed
+test with 15 testers** (a personal account needs 12+ testers for 14 days
+before production; testers from Testers Community). Build 25 goes to the
+closed test on 31 Oct 2026; production is applied for about 9–10 Nov 2026.
 `docs/google-play.md` has every Play Console answer.
 
 - **Package** `co.spiritpedia.app`; **minimum API 24** (Android 7), **target
@@ -1658,6 +1655,7 @@ The development Mac has run out of both.
   26 IPAs and archives, the build leftovers, `web/.next` and `DerivedData`
   deleted, and both simulators erased (the iPhone 18 Pro and the iPad Pro 13;
   they rebuild their iOS data, about 4 GB each, on first boot): 18 GB free.
+- **30 October 2026:** about **36 GB free**.
 
 ---
 
@@ -1750,9 +1748,9 @@ browser walk-throughs had typed made-up addresses into the sign-in form.
    token row should go and come back), check the welcome logic on a new
    account, and the signed-out learning switch's Sign in.
 2. **Google Play** (§10.15, §12.8, `docs/google-play.md`): the closed test
-   is live with 15 testers; apply for production about 9–10 Nov 2026. Build
-   25 is built but not yet uploaded. The reviewer sign-in (review@spiritpedia.co,
-   a fixed code) is an open job (top of this file).
+   is live with 15 testers on build 24; build 25 goes to it on 31 Oct 2026;
+   apply for production about 9–10 Nov 2026. A reviewer demo account only if
+   Apple asks (top of this file).
 3. **Delete the old Firebase projects** under the Elite Artists Google
    account, `spiritpedia-d190c` and `spiritpedia-dev` (the move was finished
    and checked on 22 Oct 2026: §4). Only installs older than build 23 used

@@ -174,11 +174,13 @@ the root README, "Test accounts must never cause an email".
    App Store Connect API key on this Mac. Then the App Privacy label and
    screenshots: root README §12.6.
 
-**Build numbers so far:** 1–9 and 11–19 are real builds (what each added:
-root README §10.1). **Build 10 was an accidental duplicate of build 9**,
-uploaded from Xcode, so the numbering jumped from 9 to 11. Build 16 is the
-last uploaded to TestFlight; 17–21 were built and never uploaded; **22** is
-built and waiting to be uploaded. The next build is **23**.
+**Build numbers so far:** what each added is in root README §10.1. **Build
+10 was an accidental duplicate of build 9**, uploaded from Xcode, so the
+numbering jumped from 9 to 11. **24** is 1.0 in Apple review and in Google's
+closed test; **25** is built for Android and goes to the closed test on 31 Oct
+2026 (25 and 26 were never uploaded for iOS); **27** is on TestFlight. The
+next is **1.0.1**, the push notification build, for both stores about 4 Nov
+2026.
 
 The Mac has run out of disk and memory during builds: one simulator at a
 time, the Xcode app closed, never the test suite during a tour, and check free
@@ -520,9 +522,9 @@ Earlier migrations (0000–0014) are described in the root README.
   - Never repeat "I am your guiding star".
   - Swipe or tap to dismiss; it hides by itself after a few seconds.
   - Frosted styling, to match the rest of the app.
-- **Android is ready, not released.** The Google Play account (personal) is
-  being verified; a closed test with 12+ testers for 14 days comes first.
-  Not yet checked on Android: every screen in turn, "Use my location", a
+- **Android is in the closed test, not released.** Build 24 is in the
+  closed test with 15 testers; build 25 follows on 31 Oct 2026; production
+  is applied for about 9–10 Nov 2026. Not yet checked on Android: every screen in turn, "Use my location", a
   real phone, tablets.
 - **Dev can't use custom email templates.** The dev Supabase project is on
   the free plan, so its sign-in and change-email emails use Supabase's default
@@ -542,7 +544,7 @@ Earlier migrations (0000–0014) are described in the root README.
    "⋯" (report and block) on the website's reviews.
 4. **The before-launch list:**
    - The notification issues above.
-   - Google Play: the closed test, then production (`docs/google-play.md`).
+   - Google Play: production after the closed test (`docs/google-play.md`).
    - The welcome tray.
    - Have the Terms and Privacy Policy reviewed (they're a careful draft, not
      legal advice).
