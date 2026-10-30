@@ -1,0 +1,12 @@
+{
+  "healer": {
+    "healer_slug": "the-shift-network",
+    "update": {
+      "entity_type": "organisation"
+    }
+  },
+  "notes": [
+    "Channel to Organisation (hub_teachers, migration 0030), owner approved 30 Oct 2026. Its teachers are linked separately (the-shift-network-teachers.json); the full ranked faculty list is the-shift-network-faculty.json."
+  ],
+  "images_final": true
+}

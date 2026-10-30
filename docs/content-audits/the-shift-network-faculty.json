@@ -1,0 +1,4625 @@
+{
+  "hub": "the-shift-network",
+  "source": "https://theshiftnetwork.com/faculty (490 profiles, each /shift_teacher/{id} read for current and upcoming programmes)",
+  "built": "2026-10-30",
+  "how_ranked": "current (a live course open or running, or one announced for Nov 2026 to 2027) first, then recent (a course made or summit hosted in 2025 or 2026), then older; within each, live courses first, then by number of recent and upcoming programmes.",
+  "use": "The pipeline for hub sprints (README §18.7): work down not_on_spiritpedia, adding each teacher with full content and linking them to the hub. Check health claims on course titles with \"Medical\" in them.",
+  "on_spiritpedia": [
+    {
+      "name": "Stanislav Grof, MD, PhD",
+      "slug": "stanislav-grof",
+      "courses": [
+        "The Ultimate Journey (live, starts Nov 3, 2026)",
+        "Frontiers of The Cosmic Game",
+        "The Psyche & Cosmos Advanced Program",
+        "The Way of the Psychonaut",
+        "Psychology of the Future"
+      ],
+      "activity": "current",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/413"
+    },
+    {
+      "name": "Karina Grant",
+      "slug": "karina-grant",
+      "courses": [
+        "The Spinal Pearls™ Energy Healing Method (live, starts Nov 10, 2026)"
+      ],
+      "activity": "current",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/72435"
+    },
+    {
+      "name": "Dawson Church, PhD",
+      "slug": "dawson-church",
+      "courses": [
+        "The Science of Inner Radiance (Professional Training, Course begins December 2026)",
+        "Transform Your Health & Shape Your Reality With Mind-to-Matter Science",
+        "Mind to Matter Laboratory"
+      ],
+      "activity": "current",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/3622"
+    },
+    {
+      "name": "Lee Holden",
+      "slug": "lee-holden",
+      "courses": [
+        "New live course (begins December 2026)",
+        "Qigong for Supercharging Your Immune System",
+        "Activate Your ‘Superhuman’ Potential"
+      ],
+      "activity": "current",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/9028"
+    },
+    {
+      "name": "Sandra Ingerman, MA",
+      "slug": "sandra-ingerman",
+      "courses": [
+        "Cultivate Spiritual Immunity With Shamanic Medicine of the Earth",
+        "The Dark Night of the Soul as a Portal to the Shaman’s Light",
+        "Shamanic Journeys Into Nature",
+        "A Shaman’s Approach to Death as a Rite of Passage",
+        "Shamanic Journeying for Healing",
+        "The Ancient Practice of Shamanic Journeying"
+      ],
+      "activity": "recent",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/4062"
+    },
+    {
+      "name": "Debra Silverman",
+      "slug": "debra-silverman",
+      "courses": [
+        "Astrology Meets Tarot",
+        "The Psychology of Astrology"
+      ],
+      "activity": "recent",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/46204"
+    },
+    {
+      "name": "Anita Moorjani",
+      "slug": "anita-moorjani",
+      "courses": [
+        "Reimagine Healing",
+        "Transforming Your Life Through Near-Death Experiences"
+      ],
+      "activity": "older",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/11515"
+    },
+    {
+      "name": "Eben Alexander, MD",
+      "slug": "dr-eben-alexander",
+      "courses": [
+        "Explore the Near-Death Experience Through Science, Spirituality & Sound"
+      ],
+      "activity": "older",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/5138"
+    },
+    {
+      "name": "Marisa Cranfill",
+      "slug": "marisa-cranfill",
+      "courses": [
+        "The Heart of Qigong"
+      ],
+      "activity": "older",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/52910"
+    },
+    {
+      "name": "James Van Praagh",
+      "slug": "james-van-praagh",
+      "courses": [
+        "Cultivate Your Mediumship Skills"
+      ],
+      "activity": "older",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/53537"
+    },
+    {
+      "name": "Marianne Williamson",
+      "slug": "marianne-williamson",
+      "courses": [
+        "Miraculous Life of Love"
+      ],
+      "activity": "older",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/91"
+    },
+    {
+      "name": "Lynne McTaggart",
+      "slug": "lynne-mctaggart",
+      "courses": [
+        "Energy Medicine Summit 2023 (featured speaker)"
+      ],
+      "activity": "older",
+      "source_url": "https://theshiftnetwork.com/summit/EnergyMedicine"
+    },
+    {
+      "name": "Donna Eden",
+      "slug": "donna-eden",
+      "courses": [
+        "Energy Medicine Summit 2023 and Medical Intuition Summit 2023 (featured speaker)"
+      ],
+      "activity": "older",
+      "source_url": "https://theshiftnetwork.com/summit/EnergyMedicine"
+    },
+    {
+      "name": "Anodea Judith, PhD",
+      "slug": "anodea-judith",
+      "courses": [
+        "Reboot Your Chakras to Ground, Invigorate & Expand Your Life",
+        "Clearing the Seven Windows to the Soul",
+        "Mastering Your Charge",
+        "Supercharge Your Chakras",
+        "The Charge Activation Training",
+        "The Character Type Training"
+      ],
+      "activity": "older",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/244"
+    },
+    {
+      "name": "Jonathan Goldman",
+      "slug": "jonathan-goldman",
+      "courses": [
+        "Sacred Vibrational Frequencies"
+      ],
+      "activity": "older",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/3630"
+    },
+    {
+      "name": "Ram Dass",
+      "slug": "ram-dass",
+      "courses": [
+        "Aging into Awakening",
+        "Awakening Through Your Difficult Emotions"
+      ],
+      "activity": "older",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/542"
+    },
+    {
+      "name": "Dr. Alberto Villoldo",
+      "slug": "alberto-villoldo",
+      "courses": [],
+      "activity": "older",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/8611"
+    },
+    {
+      "name": "Pamela Miles",
+      "slug": "pamela-miles",
+      "courses": [
+        "Deepening Your Reiki Practice"
+      ],
+      "activity": "older",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/8967"
+    },
+    {
+      "name": "Gregg Braden",
+      "slug": "gregg-braden",
+      "courses": [
+        "Human by Design (self-paced, legacy)"
+      ],
+      "activity": "older",
+      "source_url": "https://theshiftnetwork.com/ondemands"
+    }
+  ],
+  "not_on_spiritpedia": [
+    {
+      "name": "Suzanne Giesemann",
+      "courses": [
+        "The Evidential Mediumship Academy - Essentials Training (live, starts Jan 5, 2027)",
+        "New live course (begins March 2027)",
+        "New live course (begins December 2026)",
+        "Mastering the Mediumship Mindset",
+        "The Foundations of Evidential Mediumship",
+        "Manifest Mediumship Excellence"
+      ],
+      "activity": "current",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/17324"
+    },
+    {
+      "name": "Robert Moss",
+      "courses": [
+        "Psychopomp Training (live, starts Oct 22, 2026)",
+        "Psychopomp Training (live, starts Oct 22, 2026)",
+        "Dreaming Your Mythic Life",
+        "Shamanic Lucid Dreaming",
+        "The Power of Active Dreaming",
+        "The School of Imaginal Healing & Dream Growing"
+      ],
+      "activity": "current",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/6079"
+    },
+    {
+      "name": "Marie Manuchehri, RN",
+      "courses": [
+        "Energy Reading & Medical Intuition Training (live, starts Sep 14, 2026)",
+        "Energy Reading & Medical Intuition Training (live, starts Sep 14, 2026)",
+        "Expand Your Frequency & Amplify Your Multisensory Powers",
+        "How to Recognize & Translate Medical Intuitive Knowledge",
+        "Upgrade Your Multisensory Intuition",
+        "Multisensory Mediumship"
+      ],
+      "activity": "current",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/15799"
+    },
+    {
+      "name": "Master Helen Liang",
+      "courses": [
+        "Living the Effortless Strength of Tai Chi (live, starts Nov 17, 2026)",
+        "New professional training (begins April 2027)",
+        "The Internal Martial Art of Liu He Ba Fa",
+        "Tai Chi’s 8-Posture Form to Cultivate Balance, Harmony & Vitality",
+        "13-Posture Tai Chi for Harmony, Strength & Balance"
+      ],
+      "activity": "current",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/42773"
+    },
+    {
+      "name": "Cyndi Dale",
+      "courses": [
+        "Advanced Interdimensional Psychic Energy Healing (live, starts Aug 6, 2026)",
+        "Advanced Interdimensional Psychic Energy Healing (live, starts Aug 6, 2026)",
+        "Quantum Energy Healing",
+        "Activate Your Clairvoyant Powers",
+        "Radical Energy Healing",
+        "Advanced Radical Energy Medicine"
+      ],
+      "activity": "current",
+      "role": "course teacher + summit host",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/36273"
+    },
+    {
+      "name": "Elayne Kalila Doughty",
+      "courses": [
+        "The Magdalene Frequency (live, starts Aug 18, 2026)",
+        "The Magdalene Frequency (live, starts Aug 18, 2026)",
+        "Embark on a Sacred Pilgrimage to Experience the Healing Energies of Mary Magdalene",
+        "The Magdalene Journey of Feminine Embodiment",
+        "The Magdalene Initiation",
+        "Magdalene Summit 2023 (host)"
+      ],
+      "activity": "current",
+      "role": "course teacher + summit host",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/4083"
+    },
+    {
+      "name": "Philip Carr-Gomm",
+      "courses": [
+        "The Psychology of Spiritual Awakening (live, starts Nov 12, 2026)",
+        "The Psychology of Spiritual Awakening (live, starts Nov 12, 2026)",
+        "Free event 2026-10-31",
+        "Journey to Merlin’s Isle to Receive the Seven Gifts of the Druids",
+        "Druid Wisdom for Psycho-Spiritual Healing",
+        "The Way of the Druid"
+      ],
+      "activity": "current",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/54232"
+    },
+    {
+      "name": "Penelope Smith",
+      "courses": [
+        "Develop Telepathic Communication With Animals (live, starts Aug 19, 2026)",
+        "New live course (begins April 2027)",
+        "Become an Animal Whisperer"
+      ],
+      "activity": "current",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/60597"
+    },
+    {
+      "name": "Wendy De Rosa",
+      "courses": [
+        "The Empath’s Energy Body (live, starts Oct 7, 2026)",
+        "Expand Your Powers of Intuition as a Sensitive or Empath",
+        "Empowered Intuitive Living for Empaths",
+        "Thrive as an Empath in Evolutionary Times",
+        "The Empath's Journey",
+        "Expanding Powers of Intuition for Sensitives & Empaths"
+      ],
+      "activity": "current",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/11168"
+    },
+    {
+      "name": "Dr. Roger Jahnke, OMD",
+      "courses": [
+        "Medical Qigong Training for Healers & Leaders (live, starts Oct 6, 2026)",
+        "Medical Qigong Training for Healers & Leaders (live, starts Oct 6, 2026)",
+        "The Powerful Healing Medicine of Bu Zheng Qigong for Radiant Health & Vitality",
+        "Activate Your Inner Healing Elixirs With the 10 Phases of Qi Cultivation",
+        "Qi Medicine for the “Heart-Mind”",
+        "Qigong as a Natural Elixir to Activate Your Body's Capacity for Self-Healing"
+      ],
+      "activity": "current",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/15016"
+    },
+    {
+      "name": "Chloë Goodchild",
+      "courses": [
+        "Medicine Songs for Your Soul’s Expression (live, starts Oct 21, 2026)",
+        "Empower Your Inner Voice of Silence",
+        "The Art of Loving Your Voice",
+        "The Vocal Impulse Advanced Practicum",
+        "Your Vocal Impulse",
+        "The Sounds of Your Soul"
+      ],
+      "activity": "current",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/3466"
+    },
+    {
+      "name": "Dr. Jeffrey Thompson",
+      "courses": [
+        "Quantum Acoustics and the Architecture of Reality (live, starts Sep 14, 2026)",
+        "Quantum Acoustics and the Architecture of Reality (live, starts Sep 14, 2026)",
+        "Next-Level Behavioral Psychoacoustics"
+      ],
+      "activity": "current",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/43990"
+    },
+    {
+      "name": "Martha Collard",
+      "courses": [
+        "Gong Medicine (live, starts Oct 7, 2026)",
+        "Gong Playing Practicum",
+        "The Art & Science of Gong Playing"
+      ],
+      "activity": "current",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/68858"
+    },
+    {
+      "name": "Tammy Billups",
+      "courses": [
+        "The Animal-Human Tandem Healing™ Method (live, starts Aug 5, 2026)",
+        "The Animal-Human Tandem Healing™ Method (live, starts Aug 5, 2026)",
+        "Honoring Your Soul Contracts With Animal Companions",
+        "The Emotional Wound Soul Contract Between Animals & Their People"
+      ],
+      "activity": "current",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/66120"
+    },
+    {
+      "name": "Dr. Marie Mbouni",
+      "courses": [
+        "Becoming a Ceremony Keeper (live, starts Oct 8, 2026)",
+        "Becoming a Ceremony Keeper (live, starts Oct 8, 2026)",
+        "The Medicine Woman Within",
+        "Spiritual Healing Lessons From Iboga",
+        "Shamanic Wisdom Summit 2023 (co-host)"
+      ],
+      "activity": "current",
+      "role": "course teacher + summit host",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/35767"
+    },
+    {
+      "name": "Kumu Ramsay Taum",
+      "courses": [
+        "New live course (begins December 2026)",
+        "Free event 2026-11-14",
+        "The Sacred Path of Aloha"
+      ],
+      "activity": "current",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/50075"
+    },
+    {
+      "name": "Jean Else, MA",
+      "courses": [
+        "The Evidential Mediumship Academy - Essentials Training (live, starts Jan 5, 2027)",
+        "The Evidential Mediumship Academy — Skill Building (Certification, Course begins January 2027)"
+      ],
+      "activity": "current",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/56592"
+    },
+    {
+      "name": "David Crow, LAc",
+      "courses": [
+        "The Herbalists Community Clinic (live, starts Jul 7, 2026)",
+        "Illuminated Flower Medicine",
+        "Mastering Ayurvedic, Chinese & Western Herbal Formulas to Detox, Rejuvenate & Heal",
+        "An Herbalist’s Journey Through the Body’s 9 Power Centers",
+        "Tree Medicine",
+        "Botanical Antivirals"
+      ],
+      "activity": "current",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/4450"
+    },
+    {
+      "name": "Puma Fredy Quispe Singona",
+      "courses": [
+        "Sacred Journey to Peru December 2026 (live, starts Dec 1, 2026)",
+        "Daily Incan Shamanic Manifestation Practices",
+        "Deepen Your Healing Capacity With the Chakana & Your Personal Mesa",
+        "Animal Spirit Medicine From the Andes",
+        "Shamanic Rituals to Embody the Healing Power of Spirit Animals",
+        "Working With the Plant Spirits of Ayahuasca and Huachuma"
+      ],
+      "activity": "current",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/9637"
+    },
+    {
+      "name": "Richard Gordon",
+      "courses": [
+        "Energy Healing With Quantum-Touch (live, starts Oct 15, 2026)",
+        "Reversing Aging With Quantum-Touch®",
+        "Super-Consciousness With Quantum-Touch®",
+        "Energy Healing With Quantum-Touch®",
+        "Advanced Energy Healing With Quantum-Touch"
+      ],
+      "activity": "current",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/2120"
+    },
+    {
+      "name": "Banafsheh Sayyad",
+      "courses": [
+        "Dance the 13 Rays of Embodiment (live, starts Oct 15, 2026)",
+        "Dance the 13 Rays of Embodiment (live, starts Oct 15, 2026)",
+        "Sacred Dance for Activating the 7 Elemental Forces",
+        "Activating Your Light Body Through Sacred Dance",
+        "Liberate Your Body With Sufi & Expressive Dance",
+        "Sacred Dance for Freedom"
+      ],
+      "activity": "current",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/6028"
+    },
+    {
+      "name": "Skylar Acamesis",
+      "courses": [
+        "Decoding Energetic Signatures of Disease (live, starts Nov 10, 2026)",
+        "The Art of Disease Whispering for Precise Healing (live, starts Feb 23, 2027)",
+        "Healing the Root Cause of Illness With Medical Intuition"
+      ],
+      "activity": "current",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/69449"
+    },
+    {
+      "name": "Dr. Natasha Fallahi",
+      "courses": [
+        "Finding Strength in Your Sensitivity (Live Course, Course begins December 2026)",
+        "Free event 2026-11-10"
+      ],
+      "activity": "current",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/42201"
+    },
+    {
+      "name": "Sifu Scott Jensen",
+      "courses": [
+        "The Six Stages of Qi Mastery (live, starts Aug 12, 2026)",
+        "The Six Stages of Qi Mastery (live, starts Aug 12, 2026)",
+        "Supercharge Your Blood With the Power of Qi"
+      ],
+      "activity": "current",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/60640"
+    },
+    {
+      "name": "Jai Uttal",
+      "courses": [
+        "Sing Your Heart Into Surrender With Kirtan (Live Course, Course begins November 2026)",
+        "Free event 2026-11-07"
+      ],
+      "activity": "current",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/4945"
+    },
+    {
+      "name": "Diana Beaulieu",
+      "courses": [
+        "The Energetic Imprints of Sexual Trauma (live, starts Sep 24, 2026)",
+        "The Energetic Imprints of Sexual Trauma (live, starts Sep 24, 2026)",
+        "Reclaiming Your Womb Power"
+      ],
+      "activity": "current",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/70918"
+    },
+    {
+      "name": "Eluña Noelle",
+      "courses": [
+        "New live course (begins December 2026)",
+        "Free event 2026-11-15"
+      ],
+      "activity": "current",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/73272"
+    },
+    {
+      "name": "Miranda Macpherson",
+      "courses": [
+        "Living From God Consciousness (live, starts Oct 13, 2026)",
+        "The Way of Grace",
+        "Life of Grace",
+        "Finding True Fulfillment",
+        "The Restorative Grace of Ego Relaxation",
+        "Living in Boundless Love"
+      ],
+      "activity": "current",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/827"
+    },
+    {
+      "name": "Mary Sise, LCSW",
+      "courses": [
+        "Aligning With Your Soul’s Guidance (live, starts Oct 22, 2026)",
+        "Deep-Clearing EFT (Tapping)",
+        "Unveil the Power of Your Presence With Deep-Clearing EFT",
+        "Manifest What Your Soul Desires by Combining the Power of Energy Medicine & Spiritual Psychology",
+        "Magdalene Summit 2023 (host)"
+      ],
+      "activity": "current",
+      "role": "course teacher + summit host",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/44905"
+    },
+    {
+      "name": "Stephen Dinan",
+      "courses": [
+        "The Sacred Business Academy (live, starts Jun 23, 2026)",
+        "Aspiring Faculty Mentorship Program"
+      ],
+      "activity": "current",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/110"
+    },
+    {
+      "name": "Davina MacKail, RGN",
+      "courses": [
+        "Shamanic Feng Shui (live, starts Oct 27, 2026)"
+      ],
+      "activity": "current",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/45973"
+    },
+    {
+      "name": "Jorina Elbers, MD",
+      "courses": [
+        "The Healing Power of the Heart (live, starts Sep 23, 2026)"
+      ],
+      "activity": "current",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/73763"
+    },
+    {
+      "name": "Laura Koniver, MD",
+      "courses": [
+        "Bioelectric Healing (live, starts Sep 16, 2026)",
+        "Bioelectric Healing (live, starts Sep 16, 2026)"
+      ],
+      "activity": "current",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/68371"
+    },
+    {
+      "name": "Rev. Sue Frederick",
+      "courses": [
+        "The Sacred Numerology of Your Soul (live, starts Oct 29, 2026)"
+      ],
+      "activity": "current",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/75036"
+    },
+    {
+      "name": "Shiloh Sophia McCloud",
+      "courses": [
+        "Neo-Shamanic Painting (live, starts Oct 13, 2026)"
+      ],
+      "activity": "current",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/15974"
+    },
+    {
+      "name": "Maureen Hancock",
+      "courses": [
+        "Investigative Mediumship (live, starts Nov 4, 2026)",
+        "Mediumship Summit 2026 (host)"
+      ],
+      "activity": "current",
+      "role": "course teacher + summit host",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/73961"
+    },
+    {
+      "name": "Kaedrich Olsen",
+      "courses": [
+        "Norse Shadow Magic (live, starts Nov 11, 2026)"
+      ],
+      "activity": "current",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/69679"
+    },
+    {
+      "name": "Rebecca Dawson",
+      "courses": [
+        "Shift the “Gears” of Your Perception (live, starts Oct 8, 2026)"
+      ],
+      "activity": "current",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/71774"
+    },
+    {
+      "name": "Donna Lozito, CCH",
+      "courses": [
+        "Homeopathy for Animals (live, starts Sep 24, 2026)"
+      ],
+      "activity": "current",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/69454"
+    },
+    {
+      "name": "Dr. R. Ibrahim Jaffe, MD",
+      "courses": [
+        "Radical Healing Through Divine Truth (live, starts Nov 3, 2026)"
+      ],
+      "activity": "current",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/5953"
+    },
+    {
+      "name": "Dr. Lisa Thompson",
+      "courses": [
+        "Healing Frequencies of the Galactic Families (live, starts Nov 12, 2026)"
+      ],
+      "activity": "current",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/75855"
+    },
+    {
+      "name": "Olivia Bareham",
+      "courses": [
+        "Reclaiming the Sacred Art of Death (live, starts Oct 7, 2026)"
+      ],
+      "activity": "current",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/72860"
+    },
+    {
+      "name": "Lynn McKenzie",
+      "courses": [
+        "Akashic Records & Animal Communication (live, starts Nov 2, 2026)",
+        "Animal Communication Summit 2026 (host)"
+      ],
+      "activity": "current",
+      "role": "course teacher + summit host",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/69455"
+    },
+    {
+      "name": "Simon Sanud",
+      "courses": [
+        "The Energetic Imprints of Sexual Trauma (live, starts Sep 24, 2026)",
+        "The Energetic Imprints of Sexual Trauma (live, starts Sep 24, 2026)"
+      ],
+      "activity": "current",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/75469"
+    },
+    {
+      "name": "Dr. Lydia de León, PhD",
+      "courses": [
+        "Ancient Temple Codes (live, starts Nov 17, 2026)",
+        "Free event 2026-11-01"
+      ],
+      "activity": "current",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/74068"
+    },
+    {
+      "name": "Brian Siddhartha Ingle, ND, DO",
+      "courses": [
+        "New professional training (begins May 2027)",
+        "New live course (begins February 2027)",
+        "Align With Nature's Laws for Deep Healing & Radical Wellbeing",
+        "The Embodied Osteopathic Way of Self-Healing",
+        "Boost Your Health & Wellbeing With Gentle Somatic Practices & the Powers of Your 7 Energy Centers to Unleash Your Greatest Potential",
+        "Somatic & Osteopathic Movement for Embodied Health"
+      ],
+      "activity": "current",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/4897"
+    },
+    {
+      "name": "Martha Peterson, CCSE",
+      "courses": [
+        "New live course (begins June 2027)",
+        "The Freedom to Move Training (Professional Training, Course begins January 2027)",
+        "Advanced Integration of Somatic Movement & Pandiculation",
+        "Somatic Movement & Pandiculation to Release Trapped Trauma",
+        "Somatic Freedom With the Pandiculation Technique",
+        "Gentle, Effective Somatic Practices to Move From Pain to a Life Full of New Possibilities"
+      ],
+      "activity": "current",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/45524"
+    },
+    {
+      "name": "Neil Douglas-Klotz, PhD",
+      "courses": [
+        "New live course (begins January 2027)",
+        "The Final Heart Transmissions of the Aramaic Jesus",
+        "The Aramaic Jesus Within You",
+        "Advancing Along the Way of Aramaic Jesus",
+        "The Way of Aramaic Jesus"
+      ],
+      "activity": "current",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/55066"
+    },
+    {
+      "name": "Alexandra Wenman",
+      "courses": [
+        "New live course (begins February 2027)",
+        "The Diamond Earth Lightkeeper",
+        "Light Language of the Angelic Realms",
+        "Archangel Healing Activations"
+      ],
+      "activity": "current",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/67230"
+    },
+    {
+      "name": "Dr. John Douillard, DC, CAP",
+      "courses": [
+        "New live course (begins January 2027)",
+        "The Medicine of Vedic Breath",
+        "The Gut Health Masterclass",
+        "Advanced Ayurvedic Practices for a Long, Healthy & Happy Life",
+        "Ayurvedic Secrets for Longevity",
+        "Empowered Aging Using Ayurvedic Wisdom & Modern Science"
+      ],
+      "activity": "current",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/8731"
+    },
+    {
+      "name": "Perdita Finn",
+      "courses": [
+        "New professional training (begins March 2027)",
+        "The Magic of Your Ancestral Mothers",
+        "Collaborate With Your Ancestral Spirits to Manifest the Miraculous"
+      ],
+      "activity": "current",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/54608"
+    },
+    {
+      "name": "Christine Stevens",
+      "courses": [
+        "New live course (begins January 2027)",
+        "Sacred Language of the Drum",
+        "Improvisational Flute for a Higher Purpose",
+        "Deepen Your Flute Journey",
+        "The Healing Flute",
+        "7 Scales for the Native American Flute  to Create Joy, Musical Magic & Spiritual Growth"
+      ],
+      "activity": "current",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/16260"
+    },
+    {
+      "name": "Rajada (Raja Choudhury)",
+      "courses": [
+        "New live course (begins January 2027)",
+        "Awaken Your Inner Freedom",
+        "Advanced Kundalini Awakening",
+        "Advanced Kundalini Shakti Initiation",
+        "The Inner Goddess Activation",
+        "Ancient Secrets for Clearing Karma"
+      ],
+      "activity": "current",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/4924"
+    },
+    {
+      "name": "Tina Zion",
+      "courses": [
+        "New live course (begins January 2027)",
+        "Hone Your Medical Intuitive Skills for Self-Healing",
+        "Advancing as a Medical Intuitive & Healer for Others",
+        "Foundations of Medical Intuition"
+      ],
+      "activity": "current",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/42139"
+    },
+    {
+      "name": "Dr. William Bloom",
+      "courses": [
+        "New live course (begins February 2027)",
+        "The Art of Working With Subtle Energy",
+        "The Advanced Art of Psychic Protection",
+        "Psychic Protection, Cleansing & Blessings for Compassionate People",
+        "The Magic of Metaphysics",
+        "The Sacred Journey of Dying"
+      ],
+      "activity": "current",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/35213"
+    },
+    {
+      "name": "Rob Schwartz",
+      "courses": [
+        "New live course (begins June 2027)",
+        "Attune Your Intuition",
+        "The Spiritual Ascension Program",
+        "Awakening to the Spiritual Purpose of the Life You Planned Before Birth"
+      ],
+      "activity": "current",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/40220"
+    },
+    {
+      "name": "Liesel Fricke",
+      "courses": [
+        "New live course (begins June 2027)",
+        "Attune Your Intuition",
+        "The Spiritual Ascension Program",
+        "Awakening to the Spiritual Purpose of the Life You Planned Before Birth"
+      ],
+      "activity": "current",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/52303"
+    },
+    {
+      "name": "Richard Tarnas",
+      "courses": [
+        "New live course (begins September 2027)",
+        "The Psyche & Cosmos Advanced Program"
+      ],
+      "activity": "current",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/9987"
+    },
+    {
+      "name": "David Gandelman",
+      "courses": [
+        "New professional training (begins January 2027)",
+        "Third Eye Training",
+        "Empaths, Sensitives & Intuitives Summit 2023 (guest host)"
+      ],
+      "activity": "current",
+      "role": "course teacher + summit host",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/45044"
+    },
+    {
+      "name": "Debora Wayne",
+      "courses": [
+        "New live course (begins May 2027)",
+        "HighSpeed Healing™ Unlock the Secrets of Energy Healing for Chronic Health Issues",
+        "Energy Medicine Summit 2023 (co-host)"
+      ],
+      "activity": "current",
+      "role": "course teacher + summit host",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/6110"
+    },
+    {
+      "name": "Annie B. Bond",
+      "courses": [
+        "New live course (begins January 2027)",
+        "Trinity Energy Healing"
+      ],
+      "activity": "current",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/64285"
+    },
+    {
+      "name": "Yuval Ron",
+      "courses": [
+        "New professional training (begins January 2027)",
+        "Sufi Mystical Sound Traditions"
+      ],
+      "activity": "current",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/4165"
+    },
+    {
+      "name": "David Bower",
+      "courses": [
+        "New live course (begins February 2027)",
+        "Reawaken Your 5D Lemurian Self"
+      ],
+      "activity": "current",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/69109"
+    },
+    {
+      "name": "Whitney Freya",
+      "courses": [
+        "New live course (begins August 2027)",
+        "Heal Through Sacred Painting"
+      ],
+      "activity": "current",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/71129"
+    },
+    {
+      "name": "Dr. Shamini Jain",
+      "courses": [
+        "New professional training (begins January 2027)",
+        "Voicing the Goddess",
+        "The Healing Keys of Your Biofield"
+      ],
+      "activity": "current",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/17173"
+    },
+    {
+      "name": "Manuela Mischke-Reeds, MFT",
+      "courses": [
+        "New professional training (begins January 2027)",
+        "Somatic Trauma Therapy Training for Professionals",
+        "The Hakomi Method Essentials Program"
+      ],
+      "activity": "current",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/4785"
+    },
+    {
+      "name": "Joan Ranquet",
+      "courses": [
+        "New professional training (begins January 2027)",
+        "Advanced Animal Communication & Energetic Healing",
+        "Telepathic Communication & Energy Healing With Your Animals"
+      ],
+      "activity": "current",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/54855"
+    },
+    {
+      "name": "Marion Gilbert, RPT",
+      "courses": [
+        "New professional training (begins February 2027)"
+      ],
+      "activity": "current",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/4034"
+    },
+    {
+      "name": "Silvia Nakkach M.A., MMT (Saraswati Devi)",
+      "courses": [
+        "New live course (begins April 2027)"
+      ],
+      "activity": "current",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/62734"
+    },
+    {
+      "name": "Marguerite Mary Rigoglioso, PhD",
+      "courses": [
+        "New live course (begins June 2027)"
+      ],
+      "activity": "current",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/58619"
+    },
+    {
+      "name": "Viviane Chauvet",
+      "courses": [
+        "New live course (begins April 2027)"
+      ],
+      "activity": "current",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/70114"
+    },
+    {
+      "name": "Elizabeth B Jenkins",
+      "courses": [
+        "New live course (begins January 2027)",
+        "Inka Nature Wisdom of the Q’ero"
+      ],
+      "activity": "current",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/62963"
+    },
+    {
+      "name": "Gemma Petherbridge",
+      "courses": [
+        "New professional training (begins February 2027)"
+      ],
+      "activity": "current",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/72122"
+    },
+    {
+      "name": "Lisa Rafel",
+      "courses": [
+        "New live course (begins January 2027)"
+      ],
+      "activity": "current",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/49160"
+    },
+    {
+      "name": "Anamika Neitlich",
+      "courses": [
+        "New live course (begins November 2027)"
+      ],
+      "activity": "current",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/73348"
+    },
+    {
+      "name": "Richard Moss MD",
+      "courses": [
+        "New live course (begins February 2027)"
+      ],
+      "activity": "current",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/74491"
+    },
+    {
+      "name": "Cassandra Vieten, PhD",
+      "courses": [
+        "New live course (begins January 2027)"
+      ],
+      "activity": "current",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/1445"
+    },
+    {
+      "name": "Dr. Jacqueline Susanna Chan",
+      "courses": [
+        "New live course (begins January 2027)"
+      ],
+      "activity": "current",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/35326"
+    },
+    {
+      "name": "Linda Star Wolf, Ph.D.",
+      "courses": [
+        "New live course (begins January 2027)"
+      ],
+      "activity": "current",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/73494"
+    },
+    {
+      "name": "George Thompson",
+      "courses": [
+        "New live course (begins January 2027)"
+      ],
+      "activity": "current",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/75569"
+    },
+    {
+      "name": "Master Alex Dong",
+      "courses": [
+        "New live course (begins February 2027)"
+      ],
+      "activity": "current",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/75859"
+    },
+    {
+      "name": "Drew Cali",
+      "courses": [
+        "New live course (begins February 2027)"
+      ],
+      "activity": "current",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/75857"
+    },
+    {
+      "name": "Christabel Zamor, MA",
+      "courses": [
+        "New live course (begins February 2027)"
+      ],
+      "activity": "current",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/18282"
+    },
+    {
+      "name": "Rabbi Simcha Raphael, Ph.D.",
+      "courses": [
+        "New live course (begins February 2027)"
+      ],
+      "activity": "current",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/75636"
+    },
+    {
+      "name": "Lauren Rainbow",
+      "courses": [
+        "New live course (begins March 2027)"
+      ],
+      "activity": "current",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/73805"
+    },
+    {
+      "name": "Maria Furlano, DMQ (China), MTOM, LAc",
+      "courses": [
+        "New live course (begins March 2027)"
+      ],
+      "activity": "current",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/53127"
+    },
+    {
+      "name": "Judy Ramsey",
+      "courses": [
+        "New live course (begins March 2027)"
+      ],
+      "activity": "current",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/70433"
+    },
+    {
+      "name": "Cynthia Abulafia",
+      "courses": [
+        "New live course (begins March 2027)"
+      ],
+      "activity": "current",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/75199"
+    },
+    {
+      "name": "Alexis Cohen",
+      "courses": [
+        "New live course (begins March 2027)"
+      ],
+      "activity": "current",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/75873"
+    },
+    {
+      "name": "Danielle Rubio",
+      "courses": [
+        "New live course (begins April 2027)"
+      ],
+      "activity": "current",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/68448"
+    },
+    {
+      "name": "Lisa Wilcoxson",
+      "courses": [
+        "New live course (begins April 2027)"
+      ],
+      "activity": "current",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/74813"
+    },
+    {
+      "name": "Tim Walter",
+      "courses": [
+        "New live course (begins April 2027)"
+      ],
+      "activity": "current",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/75201"
+    },
+    {
+      "name": "Kate Belew",
+      "courses": [
+        "New live course (begins May 2027)"
+      ],
+      "activity": "current",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/75830"
+    },
+    {
+      "name": "Helen Hamilton",
+      "courses": [
+        "New live course (begins June 2027)"
+      ],
+      "activity": "current",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/75051"
+    },
+    {
+      "name": "Becca Tarnas, PhD",
+      "courses": [
+        "New live course (begins September 2027)"
+      ],
+      "activity": "current",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/41178"
+    },
+    {
+      "name": "Matthew Fox",
+      "courses": [
+        "New live course (begins December 2026)",
+        "The 4 Paths of Creation Spirituality",
+        "7 Mystics on Recovering the Sacred & Forging a New Story for Humanity",
+        "Science, Spirituality & the Noosphere: Hope for Humanity’s Future",
+        "Answer the Call for an Uncommon Life Through the Mystical Teachings of St. Hildegard",
+        "Julian of Norwich"
+      ],
+      "activity": "current",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/396"
+    },
+    {
+      "name": "Debrah Goetz",
+      "courses": [
+        "New live course (begins December 2026)"
+      ],
+      "activity": "current",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/75568"
+    },
+    {
+      "name": "Trisha McCagh",
+      "courses": [
+        "New live course (begins December 2026)"
+      ],
+      "activity": "current",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/75635"
+    },
+    {
+      "name": "Megan SolarGlow",
+      "courses": [
+        "New live course (begins December 2026)"
+      ],
+      "activity": "current",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/75412"
+    },
+    {
+      "name": "Dr. Jennifer Lisa Vest",
+      "courses": [
+        "Advanced Ancestral Medicine & Medical Intuition",
+        "An Indigenous Approach to Intergenerational Healing",
+        "Deepen & Refine Your Indigenous Medical Intuition Gifts",
+        "Medical Intuition Mastery"
+      ],
+      "activity": "recent",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/49321"
+    },
+    {
+      "name": "The Brothers Koren",
+      "courses": [
+        "Your Mystic Voice",
+        "Your Harmonious Voice",
+        "Awaken Your Creative Life Force Through Song",
+        "Awaken Inner Healing With the Power of Your Voice",
+        "Awaken & Celebrate Your Sacred Voice to Come Home to Your Authentic Self",
+        "Fall in Love With Your Soul’s Voice Through Song"
+      ],
+      "activity": "recent",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/17184"
+    },
+    {
+      "name": "Daisy Lee",
+      "courses": [
+        "Wuji Hundun Qigong",
+        "The Art & Practice of Wuji Hundun Qigong",
+        "The Art of Wuji Hundun Qigong",
+        "5-Animal Qigong",
+        "Advanced Qigong to Release Stress for a Balanced, Joyful Life",
+        "Movement as Medicine With Radiant Lotus Qigong for Women"
+      ],
+      "activity": "recent",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/12571"
+    },
+    {
+      "name": "Grandmother Flordemayo",
+      "courses": [
+        "Curanderismo & Mayan Elemental Healing",
+        "Grandmother's Healing Circle",
+        "Mayan & Curanderismo Rituals to Heal, Awaken & Uplift Yourself & the Heart of the World",
+        "Connect to Your Ancestors Through Mayan Cosmology",
+        "Power of Prayer",
+        "Grandmother's Wisdom Circle"
+      ],
+      "activity": "recent",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/4997"
+    },
+    {
+      "name": "Lauren Walker",
+      "courses": [
+        "Energy Medicine Yoga to Embody Joy",
+        "Find Lasting Freedom From Suffering With the “5 Element Star” Energy Process",
+        "Access the Quantum Field With Energy Medicine Yoga & Tuning Forks",
+        "Energy Medicine Yoga for Healing"
+      ],
+      "activity": "recent",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/8970"
+    },
+    {
+      "name": "John Lockley",
+      "courses": [
+        "Ancestral Dream Healing",
+        "South African Shamanic Wisdom",
+        "African Shamanic Dreamwork"
+      ],
+      "activity": "recent",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/10043"
+    },
+    {
+      "name": "Master Faye Li Yip",
+      "courses": [
+        "Yi Jin Jing Qigong",
+        "Advanced Ba Duan Jin Qigong Training",
+        "Healing With Ba Duan Jin Qigong",
+        "Revitalize & Restore Healthy Energy With Qigong’s 6 Healing Sounds"
+      ],
+      "activity": "recent",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/36624"
+    },
+    {
+      "name": "Gary Kraftsow",
+      "courses": [
+        "Antya Krama — Yogic Practices to Prepare for Sacred Transition",
+        "Sacred Breath",
+        "Multidimensional Yoga",
+        "Dissolve the Knot of the Heart & Connect to the Divine With Tantric Laya Yoga"
+      ],
+      "activity": "recent",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/47493"
+    },
+    {
+      "name": "Shifu Lindsey Wei",
+      "courses": [
+        "The Daoist Meditation Path for Spiritual Alignment",
+        "The Daoist Art of Longevity With Wudang Qigong"
+      ],
+      "activity": "recent",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/36026"
+    },
+    {
+      "name": "Barry Goldstein",
+      "courses": [
+        "Sonic Medicine for Your Energy Centers",
+        "Musical Medicine to Activate Mind-Body-Spirit Wellbeing"
+      ],
+      "activity": "recent",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/17201"
+    },
+    {
+      "name": "Heidi Hadley",
+      "courses": [
+        "Fascia Healing",
+        "Mindful Somatics & Neuroplasticity"
+      ],
+      "activity": "recent",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/67258"
+    },
+    {
+      "name": "Dr. Karen Frances McCarthy",
+      "courses": [
+        "Journey With the Tuatha Dé Danann Through Mystical Ireland",
+        "Discover the Path of the Mystical Medium"
+      ],
+      "activity": "recent",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/58313"
+    },
+    {
+      "name": "Skai",
+      "courses": [
+        "Living From ZeroPoint",
+        "Harness ZeroPoint"
+      ],
+      "activity": "recent",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/71260"
+    },
+    {
+      "name": "Renee Baribeau",
+      "courses": [
+        "WindWork",
+        "Become a Wind Alchemist"
+      ],
+      "activity": "recent",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/15077"
+    },
+    {
+      "name": "Melissa Kim Corter",
+      "courses": [
+        "The Journey of the Dark Goddess",
+        "Jungian Shadow Work & the Alchemy of Fairy Tales"
+      ],
+      "activity": "recent",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/67229"
+    },
+    {
+      "name": "Rev. Dr. Devaa Haley Mitchell",
+      "courses": [
+        "Reclaim the ‘WildWise’ Woman Within",
+        "The Divine Feminine Activation",
+        "Feminine Soul Initiation",
+        "The Feminine Fire Empowerment"
+      ],
+      "activity": "recent",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/799"
+    },
+    {
+      "name": "John Stuart Reid",
+      "courses": [
+        "Advanced Frequency Medicine",
+        "Secrets of Cymatics & Sonic Science",
+        "Explore the Secrets of Sonic Science & Cymatics"
+      ],
+      "activity": "recent",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/17215"
+    },
+    {
+      "name": "Judith Orloff, MD",
+      "courses": [
+        "The Empathic Healer",
+        "Deepen Your Intuitive Healing Powers",
+        "Empathy as a Catalyst for Healing & Compassion",
+        "Ignite the Intuitive Power of Your Emotions to Heal & Transform Fear"
+      ],
+      "activity": "recent",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/9026"
+    },
+    {
+      "name": "Ken Cohen",
+      "courses": [
+        "Yi Quan Qigong — The Next Level",
+        "Cultivate a Tai Chi Mind & Life"
+      ],
+      "activity": "recent",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/36049"
+    },
+    {
+      "name": "Sarah McCrum",
+      "courses": [
+        "Building a Spiritually Aligned Business, Mission, or Project",
+        "Create a Relationship With the Loving Energy of Money",
+        "The Generous, Loving Energy of Money"
+      ],
+      "activity": "recent",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/17057"
+    },
+    {
+      "name": "Tyler Odysseus",
+      "courses": [
+        "The Ultimate Energy Bliss Shift",
+        "The Power of Energy Perception",
+        "Super-Consciousness With Quantum-Touch®",
+        "Advanced Energy Healing With Quantum-Touch"
+      ],
+      "activity": "recent",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/58087"
+    },
+    {
+      "name": "Felicity Warner",
+      "courses": [
+        "Sacred Anointing for the Dying",
+        "Gentle Dying"
+      ],
+      "activity": "recent",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/53735"
+    },
+    {
+      "name": "Sarah Thomas, LAc",
+      "courses": [
+        "Taoist Doorways Into Deeper Stone & Crystal Medicine",
+        "Taoist Doorways Into the Wu"
+      ],
+      "activity": "recent",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/64445"
+    },
+    {
+      "name": "Paul Levy",
+      "courses": [
+        "Dreaming Yourself Awake",
+        "Deepen Your Journey to Transmute Wetiko’s Impact on Your Life & Our World",
+        "Breaking Free From the Spell of Wetiko to Heal the Mind Blindness That Plagues Our World"
+      ],
+      "activity": "recent",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/17515"
+    },
+    {
+      "name": "Deborah Davis, LAc",
+      "courses": [
+        "Women’s Qigong for Bones & Joints",
+        "Timeless Body Qigong"
+      ],
+      "activity": "recent",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/36083"
+    },
+    {
+      "name": "Nina Rao",
+      "courses": [
+        "Traditional Vedic Chanting & Devotional Kirtan as Sound Medicine",
+        "Sacred Traditional Mantra & Chant Practices to Find Your Way Home to Your Heart"
+      ],
+      "activity": "recent",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/41271"
+    },
+    {
+      "name": "Dave Markowitz",
+      "courses": [
+        "The Healed Empath",
+        "The Skilled Empath",
+        "Healing the 4 Original Wounds"
+      ],
+      "activity": "recent",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/16265"
+    },
+    {
+      "name": "Charleene Closshey",
+      "courses": [
+        "Become a Sonic Alchemist With H.A.R.M.O.N.Y.",
+        "Celestial Sound Healing"
+      ],
+      "activity": "recent",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/54606"
+    },
+    {
+      "name": "Brandy Tuttle",
+      "courses": [
+        "Native Medicine & Healing Rituals",
+        "Spiritual Alchemy With Native American Medicine",
+        "Shamanic Wisdom Summit 2023 (co-host)"
+      ],
+      "activity": "recent",
+      "role": "course teacher + summit host",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/59588"
+    },
+    {
+      "name": "Collette Corcoran",
+      "courses": [
+        "The Druidess Grail Quest",
+        "The Path of the Wise Druid Priestess"
+      ],
+      "activity": "recent",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/58326"
+    },
+    {
+      "name": "Eileen McKusick",
+      "courses": [
+        "Deeper Tuning for Your Electric Body",
+        "Heal Your Ancestral Lineages With Biofield Tunings",
+        "Sound Healing Alchemy to Transmute Difficult Emotions",
+        "Cultivate a Healthy Relationship With Yourself & Your Body Through Biofield Tuning"
+      ],
+      "activity": "recent",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/11854"
+    },
+    {
+      "name": "Michael Mayo",
+      "courses": [
+        "Evidence-Based Mediumship to Confidently Connect With Loved Ones & the Spirit World"
+      ],
+      "activity": "recent",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/36367"
+    },
+    {
+      "name": "Isis Indriya",
+      "courses": [
+        "Ancient Egyptian Cosmology & Ritual Arts",
+        "A Doorway Into Oracle Arts"
+      ],
+      "activity": "recent",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/41152"
+    },
+    {
+      "name": "Danielle MacKinnon",
+      "courses": [
+        "Pet Mediumship",
+        "Animal Communication Summit 2026 (host)"
+      ],
+      "activity": "recent",
+      "role": "course teacher + summit host",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/54063"
+    },
+    {
+      "name": "Pea Horsley",
+      "courses": [
+        "Sacred Kinship With the Animal Kingdom"
+      ],
+      "activity": "recent",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/69283"
+    },
+    {
+      "name": "Jocelyn Star Feather",
+      "courses": [
+        "Create Your Own Mythology Using Ancient Egyptian Secrets of the Cosmos"
+      ],
+      "activity": "recent",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/53939"
+    },
+    {
+      "name": "Brandy Gillmore",
+      "courses": [
+        "Reprogram Your Brain for Healing",
+        "Unlock the Self-Healing Capacity of Your Mind to Dramatically Transform Your Health & Your Life"
+      ],
+      "activity": "recent",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/43884"
+    },
+    {
+      "name": "Rachel Lang",
+      "courses": [
+        "Elevate Your Psychic Abilities With Astrology"
+      ],
+      "activity": "recent",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/65378"
+    },
+    {
+      "name": "Dr. Meg Haworth",
+      "courses": [
+        "Heal From Toxic & Narcissistic Family Dynamics"
+      ],
+      "activity": "recent",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/45018"
+    },
+    {
+      "name": "Rev. Lisa Barnett",
+      "courses": [
+        "Your Akashic Records"
+      ],
+      "activity": "recent",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/11933"
+    },
+    {
+      "name": "Monique Brignoni",
+      "courses": [
+        "A Pet Death Doula’s Guide to Sacred Transitions"
+      ],
+      "activity": "recent",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/68967"
+    },
+    {
+      "name": "John Holland",
+      "courses": [
+        "Learn After-Death Communication"
+      ],
+      "activity": "recent",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/72432"
+    },
+    {
+      "name": "Suzanne B. O’Brien, RN",
+      "courses": [
+        "The Good Death"
+      ],
+      "activity": "recent",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/12765"
+    },
+    {
+      "name": "Grace Alvarez Sesma",
+      "courses": [
+        "Turn Your Grief Into an Affirmation of Life"
+      ],
+      "activity": "recent",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/47690"
+    },
+    {
+      "name": "Dr. Divi Chandna",
+      "courses": [
+        "Calibrate Your Intuitive Channels"
+      ],
+      "activity": "recent",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/18530"
+    },
+    {
+      "name": "Adam Apollo",
+      "courses": [
+        "Past Lives, Time Travel & Galactic Awakening"
+      ],
+      "activity": "recent",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/17404"
+    },
+    {
+      "name": "Anders Holte",
+      "courses": [
+        "Music as a Gateway Into Unity Consciousness"
+      ],
+      "activity": "recent",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/48393"
+    },
+    {
+      "name": "Cacina Meádu",
+      "courses": [
+        "Music as a Gateway Into Unity Consciousness"
+      ],
+      "activity": "recent",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/48473"
+    },
+    {
+      "name": "Dr. Katharina Johnson, MD",
+      "courses": [
+        "Heart-Based Medical Intuition"
+      ],
+      "activity": "recent",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/72276"
+    },
+    {
+      "name": "Sunny Dawn Johnston",
+      "courses": [
+        "Angels & the Afterlife"
+      ],
+      "activity": "recent",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/54753"
+    },
+    {
+      "name": "Dr. Martha Jo Atkins, PhD",
+      "courses": [
+        "Explore The Map of Dying™"
+      ],
+      "activity": "recent",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/51040"
+    },
+    {
+      "name": "Sadhvi Bhagawati Saraswati",
+      "courses": [
+        "Divine Flow"
+      ],
+      "activity": "recent",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/4595"
+    },
+    {
+      "name": "Betsy M. Pool",
+      "courses": [
+        "AI & the Emergence of a Resonant Field of Universal Intelligence"
+      ],
+      "activity": "recent",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/71170"
+    },
+    {
+      "name": "Rev. Dr. LaVeena B. Archers",
+      "courses": [
+        "Your Bioenergetic Map for Vitality"
+      ],
+      "activity": "recent",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/70025"
+    },
+    {
+      "name": "Maureen J. St. Germain",
+      "courses": [
+        "The 5D Shift"
+      ],
+      "activity": "recent",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/72771"
+    },
+    {
+      "name": "Chitra Sukhu",
+      "courses": [
+        "Ascend the 7 Layers of Consciousness"
+      ],
+      "activity": "recent",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/73152"
+    },
+    {
+      "name": "Helena Mazzariello",
+      "courses": [
+        "Boost Your Spiritual Immune System"
+      ],
+      "activity": "recent",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/72087"
+    },
+    {
+      "name": "Vincent Genna, MSW",
+      "courses": [
+        "Beyond Survival Mode"
+      ],
+      "activity": "recent",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/44519"
+    },
+    {
+      "name": "Mary-Anne Kennedy",
+      "courses": [
+        "Become a Clear Channel for Spirit"
+      ],
+      "activity": "recent",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/72772"
+    },
+    {
+      "name": "Steve Taylor, PhD",
+      "courses": [
+        "The Poetry of Awakening"
+      ],
+      "activity": "recent",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/44399"
+    },
+    {
+      "name": "Heidi Dellaire",
+      "courses": [
+        "The Alchemy of Grief for Empaths"
+      ],
+      "activity": "recent",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/70694"
+    },
+    {
+      "name": "Lavinia Plonka",
+      "courses": [
+        "The Feldenkrais Method® for Embodying Prayer",
+        "Graceful Aging Using the Feldenkrais® & Kinesa® Methods",
+        "Unlock Your Archetypal Strengths With the Feldenkrais Method",
+        "Put Your Inner Archetypes Into Action With the Feldenkrais Method",
+        "Movement Alchemy With the Feldenkrais Method®",
+        "The Kinēsa® Process"
+      ],
+      "activity": "recent",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/18311"
+    },
+    {
+      "name": "Dr. Melanie Smith",
+      "courses": [
+        "Energy Medicine for Heart Health",
+        "Clearing & Manifesting Energies Retreat",
+        "Energy Medicine for the Aging Brain",
+        "Activate Your Vagus Nerve’s Power to Heal",
+        "Tap Into Your Vagus Nerve’s Healing Power to Rewire Your Nervous System for Optimal Health",
+        "Energetic Resiliency in the Electromagnetic Era of 5G"
+      ],
+      "activity": "recent",
+      "role": "course teacher + summit host",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/15692"
+    },
+    {
+      "name": "Deborah King",
+      "courses": [
+        "Embrace the Gifts of Your Starseed Lineage",
+        "Spirit Guidance & Sacred Sutras",
+        "Sacred Tools for Modern Masters",
+        "Vibrational Medicine to Access Higher Consciousness & Your Body’s Healing Power",
+        "Journey the Ancient Path of Vedic Wisdom for Healing and Transformation"
+      ],
+      "activity": "recent",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/3639"
+    },
+    {
+      "name": "Dr. John Beaulieu, ND, PhD",
+      "courses": [
+        "Biosonic Tuning Fork Frequencies",
+        "Tuned to Perfection"
+      ],
+      "activity": "recent",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/17217"
+    },
+    {
+      "name": "Jeralyn Glass",
+      "courses": [
+        "Release & Ground With the Healing Sounds of Crystal Singing Bowls",
+        "A Sound Healing Journey With the Crystalline Vibrations of the Earth",
+        "Bridging Heaven & Earth With the Healing Sounds of Crystal Bowls"
+      ],
+      "activity": "recent",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/17326"
+    },
+    {
+      "name": "Master Chunyi Lin",
+      "courses": [
+        "Heal Yourself & Others With the Power of Qigong"
+      ],
+      "activity": "recent",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/341"
+    },
+    {
+      "name": "Deborah Gair",
+      "courses": [
+        "Reversing Aging With Quantum-Touch®",
+        "Super-Consciousness With Quantum-Touch®"
+      ],
+      "activity": "recent",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/64996"
+    },
+    {
+      "name": "Sharla Jacobs",
+      "courses": [
+        "The New Client Attraction Code",
+        "Heartselling to Attract Your Ideal Clients",
+        "The Client Attraction Code for Success"
+      ],
+      "activity": "recent",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/3599"
+    },
+    {
+      "name": "Scott M. Taylor, EdD",
+      "courses": [
+        "Journey to Other Dimensions With Bi-Location",
+        "The Bi-Location Phenomenon",
+        "Journey to Multidimensional Realms Through Bi-Location",
+        "Beyond the Veil Summit 2023 (guest host)"
+      ],
+      "activity": "recent",
+      "role": "course teacher + summit host",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/50633"
+    },
+    {
+      "name": "Ellen Meredith",
+      "courses": [
+        "Activate Your Body’s Miraculous Ability to Heal & Thrive Using the Language of Subtle Energy",
+        "Activate Your Body's Miraculous Ability to Heal"
+      ],
+      "activity": "recent",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/40363"
+    },
+    {
+      "name": "Bill Bauman, PhD",
+      "courses": [
+        "Becoming Quantum"
+      ],
+      "activity": "recent",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/524"
+    },
+    {
+      "name": "Cheryl A. Page",
+      "courses": [
+        "The QuantuMystic™ Path"
+      ],
+      "activity": "recent",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/70175"
+    },
+    {
+      "name": "Prune Harris",
+      "courses": [
+        "Your Energy Anatomy"
+      ],
+      "activity": "recent",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/11875"
+    },
+    {
+      "name": "Jamye Price",
+      "courses": [
+        "Learn to Channel Light Language"
+      ],
+      "activity": "recent",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/67653"
+    },
+    {
+      "name": "Emma Fitchett, MSc",
+      "courses": [
+        "Shamanic Plant Spirit Initiations",
+        "Heal Yourself With the Secret Language of Plant Spirits"
+      ],
+      "activity": "recent",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/48642"
+    },
+    {
+      "name": "Charleene Nicely, PhD",
+      "courses": [
+        "Journey to Other Dimensions With Bi-Location",
+        "Journey to Multidimensional Realms Through Bi-Location"
+      ],
+      "activity": "recent",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/63756"
+    },
+    {
+      "name": "Joshua Leeds",
+      "courses": [
+        "Soundwork & Breath for Nervous System Regulation"
+      ],
+      "activity": "recent",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/17233"
+    },
+    {
+      "name": "Laura Inserra",
+      "courses": [
+        "Shamanic Music Medicine"
+      ],
+      "activity": "recent",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/48308"
+    },
+    {
+      "name": "Dr. Lotte Valentin, NMD",
+      "courses": [
+        "Quantum Entanglement & Your Mother Wound"
+      ],
+      "activity": "recent",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/45647"
+    },
+    {
+      "name": "Dr. Catherine Clinton, ND",
+      "courses": [
+        "Quantum Biology"
+      ],
+      "activity": "recent",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/60678"
+    },
+    {
+      "name": "Dr. Jacob Israel Liberman",
+      "courses": [
+        "The Light That Sees You"
+      ],
+      "activity": "recent",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/68522"
+    },
+    {
+      "name": "Grandmother Taiha-Moetu",
+      "courses": [
+        "Māori Shamanic Wisdom"
+      ],
+      "activity": "recent",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/12691"
+    },
+    {
+      "name": "Dr. Debi Silber",
+      "courses": [
+        "Beyond Betrayal"
+      ],
+      "activity": "recent",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/45185"
+    },
+    {
+      "name": "William Peters, MA",
+      "courses": [
+        "The Shared-Death Experience"
+      ],
+      "activity": "recent",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/36402"
+    },
+    {
+      "name": "Tarron Estes",
+      "courses": [
+        "The Art of Conscious Dying"
+      ],
+      "activity": "recent",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/36557"
+    },
+    {
+      "name": "Rose Cole",
+      "courses": [
+        "Activate Your 9 Shamanic Gifts"
+      ],
+      "activity": "recent",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/4079"
+    },
+    {
+      "name": "Linda Rauch",
+      "courses": [
+        "The Witch’s Cauldron"
+      ],
+      "activity": "recent",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/68698"
+    },
+    {
+      "name": "Jamie Butler",
+      "courses": [
+        "The Art of Reading Light Energy"
+      ],
+      "activity": "recent",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/66357"
+    },
+    {
+      "name": "Jeffery C. Olsen",
+      "courses": [
+        "Living After Loss"
+      ],
+      "activity": "recent",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/51044"
+    },
+    {
+      "name": "Anandra George",
+      "courses": [
+        "Sanskrit Tuning for Mantra Lovers"
+      ],
+      "activity": "recent",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/5355"
+    },
+    {
+      "name": "Becca Williams",
+      "courses": [
+        "The Power of Cannabis for Emotional Freedom"
+      ],
+      "activity": "recent",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/68020"
+    },
+    {
+      "name": "Miriam Peretz",
+      "courses": [
+        "Turning Toward the Heart"
+      ],
+      "activity": "recent",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/67588"
+    },
+    {
+      "name": "Larry Burk, MD, CEHP",
+      "courses": [
+        "The Chakra Self-Healing Protocol"
+      ],
+      "activity": "recent",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/69677"
+    },
+    {
+      "name": "Stephen Gray",
+      "courses": [
+        "The Sacred Way of Cannabis"
+      ],
+      "activity": "recent",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/68983"
+    },
+    {
+      "name": "Lindsay Fauntleroy, LAc",
+      "courses": [
+        "Flower Essences for Ancestral Healing"
+      ],
+      "activity": "recent",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/53034"
+    },
+    {
+      "name": "Lisa Bonnice",
+      "courses": [
+        "Mediumship Summit 2026 (host); Beyond the Veil Summit 2023 (host)"
+      ],
+      "activity": "recent",
+      "role": "summit host",
+      "source_url": "https://theshiftnetwork.com/summit/mediumship"
+    },
+    {
+      "name": "Shakti Durga",
+      "courses": [
+        "Opening to Guidance From Gods, Goddesses & Archangels (self-paced, 2025)"
+      ],
+      "activity": "recent",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/ondemands"
+    },
+    {
+      "name": "Andrew Harvey",
+      "courses": [
+        "The Ultimate Rebellion Against Darkness & Despair",
+        "Rediscover the Christ Path",
+        "Embrace the Dark Night to Become the Phoenix Rising",
+        "The Engoldenment Course",
+        "Rebirthing Yourself Through the Dark Night of the Soul",
+        "Living in Joy"
+      ],
+      "activity": "older",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/188"
+    },
+    {
+      "name": "Dr. Sue Morter",
+      "courses": [
+        "Quantum Healing With The Energy Codes®",
+        "Energy Codes Advanced Training",
+        "Energy Codes for Rebirth",
+        "Your Energy Codes"
+      ],
+      "activity": "older",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/1017"
+    },
+    {
+      "name": "Mirabai Starr",
+      "courses": [
+        "The Spiritual Meltdown Course",
+        "The Divine Meltdown Course",
+        "Live the Sacred Blessings of the Women Mystics & Goddesses",
+        "Julian of Norwich",
+        "Calling in the Goddesses",
+        "Wild Goddesses & Mystics of Mercy Soul Sanctuary"
+      ],
+      "activity": "older",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/4096"
+    },
+    {
+      "name": "Jessica Dibb",
+      "courses": [
+        "12 Pillars of Breathwork",
+        "The Enneagram of Embodied Authenticity",
+        "Unlock the Power of the Enneagram for Radical Self-Acceptance & Spiritual Evolution",
+        "Mastering the Foundations of the Enneagram",
+        "Living as Love With the Guidance of the Enneagram",
+        "The Holographic Enneagram"
+      ],
+      "activity": "older",
+      "role": "course teacher + summit host",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/2159"
+    },
+    {
+      "name": "Master Mingtong Gu",
+      "courses": [
+        "Awakening Pure Consciousness Through Wisdom Healing Qigong",
+        "Wisdom Healing Qigong for Life Mastery",
+        "Immunity-Building Qigong for Self-Healing",
+        "Qigong for a Happy Heart",
+        "Qigong for Rejuvenating Your Immune System"
+      ],
+      "activity": "older",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/2066"
+    },
+    {
+      "name": "Rabbi Dr. Tirzah Firestone",
+      "courses": [
+        "The Tree of Life & the Tarot",
+        "Wounds Into Wisdom",
+        "Wellsprings of Wisdom",
+        "Ancestral Wisdom for Walking the Path of the Holy Being",
+        "Ancient Mystic Wisdom to Repair Personal & Ancestral Wounds",
+        "Find Healing & Resilience in Ancestral Wisdom"
+      ],
+      "activity": "older",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/18133"
+    },
+    {
+      "name": "Dr. Arielle Schwartz",
+      "courses": [
+        "Advanced Vagal Toning",
+        "Beyond Trauma to Healing & Happiness"
+      ],
+      "activity": "older",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/49306"
+    },
+    {
+      "name": "David Gibson",
+      "courses": [
+        "Immerse Yourself in Sound-Healing Vibrations",
+        "Sound Healing Immersion"
+      ],
+      "activity": "older",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/17237"
+    },
+    {
+      "name": "Mark Matousek",
+      "courses": [
+        "The Sanctuary of Truth",
+        "Writing to Awaken"
+      ],
+      "activity": "older",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/6077"
+    },
+    {
+      "name": "Jean Haner",
+      "courses": [
+        "Perform Energy Clearings on Yourself & Other People",
+        "The Art of Face Reading",
+        "Your Energetic Archetype & Life Plan"
+      ],
+      "activity": "older",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/8965"
+    },
+    {
+      "name": "Suzanne Scurlock",
+      "courses": [
+        "Advanced Core Embodiment Process™ & Practices",
+        "Rejuvenate Your Soul With the Wisdom of Your Body",
+        "Reclaiming Your 6 Body Wisdom Areas",
+        "The Core Embodiment Process"
+      ],
+      "activity": "older",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/10405"
+    },
+    {
+      "name": "Grandmaster Mantak Chia",
+      "courses": [
+        "Healing Love Qigong",
+        "Alchemize Your Sexual & Spiritual Energy for Luminous Health & Living",
+        "Alchemize Your Emotional Energy for Self-Healing & Longevity"
+      ],
+      "activity": "older",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/2841"
+    },
+    {
+      "name": "Beatrice Chestnut, PhD",
+      "courses": [
+        "The Enneagram of Spiritual Awakening",
+        "Own the Shadow of Your Enneagram Personality Type"
+      ],
+      "activity": "older",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/4038"
+    },
+    {
+      "name": "Karen Newell",
+      "courses": [
+        "Explore the Near-Death Experience Through Science, Spirituality & Sound"
+      ],
+      "activity": "older",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/36243"
+    },
+    {
+      "name": "Rev. Tiffany Jean Barsotti, PhD",
+      "courses": [
+        "Open to Divine Consciousness Through Your Alta Major Chakra"
+      ],
+      "activity": "older",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/17409"
+    },
+    {
+      "name": "Christopher Hobbs, PhD, LAc",
+      "courses": [
+        "The Magic Mushrooms Course",
+        "Transform Your Health & Raise Your Consciousness With the Healing Power of Mushrooms"
+      ],
+      "activity": "older",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/5192"
+    },
+    {
+      "name": "Brian Thomas Swimme",
+      "courses": [
+        "The 4 Paths of Creation Spirituality",
+        "Science, Spirituality & the Noosphere: Hope for Humanity’s Future"
+      ],
+      "activity": "older",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/5986"
+    },
+    {
+      "name": "Stewart Pearce",
+      "courses": [
+        "Angelic Sound Medicine",
+        "Your Sacred Magnetic Voice"
+      ],
+      "activity": "older",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/54468"
+    },
+    {
+      "name": "Helané Wahbeh, ND",
+      "courses": [
+        "Best Channeling Practices",
+        "The Art & Science of Channeling Deep Inner Wisdom"
+      ],
+      "activity": "older",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/17084"
+    },
+    {
+      "name": "Anthony Abbagnano",
+      "courses": [
+        "Conscious Breathwork to Renew Your Wellbeing"
+      ],
+      "activity": "older",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/18564"
+    },
+    {
+      "name": "Robin Rose Bennett",
+      "courses": [
+        "The Green Witch Path to Self-Discovery",
+        "The Green Witch Way of Radical Revitalization"
+      ],
+      "activity": "older",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/49117"
+    },
+    {
+      "name": "Roel Crabbé",
+      "courses": [
+        "Shamanic Journeying to Connect With Ancestral Wisdom Keepers of Past & Future"
+      ],
+      "activity": "older",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/49343"
+    },
+    {
+      "name": "Lisa Campion",
+      "courses": [
+        "Psychic Training for Empaths"
+      ],
+      "activity": "older",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/50834"
+    },
+    {
+      "name": "Chanchal Cabrera",
+      "courses": [
+        "The Mystical Healing Power of Trees",
+        "Unlock the Potential of Herbal Medicine for Cancer Prevention, Empowered Recovery & Symptom Relief",
+        "Growing Your Own Herbal Medicine"
+      ],
+      "activity": "older",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/9049"
+    },
+    {
+      "name": "Sheila Vijeyarasa",
+      "courses": [
+        "Connect & Channel Wisdom Through Your Spirit Guides"
+      ],
+      "activity": "older",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/50261"
+    },
+    {
+      "name": "Fred Johnson",
+      "courses": [
+        "Afri-Sufic Sound Healing"
+      ],
+      "activity": "older",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/1477"
+    },
+    {
+      "name": "Dr. Martha Eddy, RSMT",
+      "courses": [
+        "Reset Your Nervous System & Regulate Your Own Wellbeing With Dynamic Embodiment℠ Movement",
+        "Dynamic Embodiment® Movement"
+      ],
+      "activity": "older",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/5170"
+    },
+    {
+      "name": "Maya Gayatri Andersson, MSME, MSMT",
+      "courses": [
+        "Boost Your Health & Wellbeing With Gentle Somatic Practices & the Powers of Your 7 Energy Centers to Unleash Your Greatest Potential"
+      ],
+      "activity": "older",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/18637"
+    },
+    {
+      "name": "Matthew Cohen",
+      "courses": [
+        "3 Archetypal Pillars of Qigong",
+        "Sacred Energy Arts Qigong: Befriending the Dragon"
+      ],
+      "activity": "older",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/47016"
+    },
+    {
+      "name": "Phyllis Curott",
+      "courses": [
+        "Witchcraft as a Spiritual Path"
+      ],
+      "activity": "older",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/49548"
+    },
+    {
+      "name": "Niraj Naik",
+      "courses": [
+        "Renew Your Body & Reprogram Your Reality With SOMA Breathwork"
+      ],
+      "activity": "older",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/17160"
+    },
+    {
+      "name": "Karen Curry Parker",
+      "courses": [
+        "Discover Quantum Human Design™"
+      ],
+      "activity": "older",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/17341"
+    },
+    {
+      "name": "Nina Fry-Kizler, MA",
+      "courses": [
+        "The Science-Based Process of Manifesting Your Dreams"
+      ],
+      "activity": "older",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/60625"
+    },
+    {
+      "name": "Kerstin Sjoquist, MA",
+      "courses": [
+        "The Science-Based Process of Manifesting Your Dreams"
+      ],
+      "activity": "older",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/60624"
+    },
+    {
+      "name": "Bodhi Starwater",
+      "courses": [
+        "The Art of Creating Sound Healing Journeys"
+      ],
+      "activity": "older",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/44068"
+    },
+    {
+      "name": "Natalie Southgate",
+      "courses": [
+        "Chakradance™"
+      ],
+      "activity": "older",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/60408"
+    },
+    {
+      "name": "Anja Steensig",
+      "courses": [
+        "The Path of the Nordic Mystic"
+      ],
+      "activity": "older",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/54231"
+    },
+    {
+      "name": "Laura Plumb",
+      "courses": [
+        "Vedic Wisdom to Ignite Your Inner Light"
+      ],
+      "activity": "older",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/4916"
+    },
+    {
+      "name": "Jennifer Hadley",
+      "courses": [
+        "Forgive & Be Free"
+      ],
+      "activity": "older",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/4156"
+    },
+    {
+      "name": "Brigitte Mars",
+      "courses": [
+        "Flora Pharmacy Healing"
+      ],
+      "activity": "older",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/64402"
+    },
+    {
+      "name": "Adriana Ayales",
+      "courses": [
+        "Cosmic Herbalism",
+        "Indigenous Plant Medicine & Rituals From the Rainforest"
+      ],
+      "activity": "older",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/36310"
+    },
+    {
+      "name": "Russ Hudson",
+      "courses": [
+        "The Enneagram of Embodied Authenticity",
+        "The Enneagram of the Virtues",
+        "Unlock the Power of the Enneagram for Radical Self-Acceptance & Spiritual Evolution",
+        "Mastering the Foundations of the Enneagram",
+        "Living as Love With the Guidance of the Enneagram",
+        "Enneagram of the Higher Mind"
+      ],
+      "activity": "older",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/5411"
+    },
+    {
+      "name": "Jane Burns",
+      "courses": [
+        "Celtic Shamanism",
+        "The Powerful Transformations Hidden in the Betwixt & Between",
+        "Celtic Virtues to Cultivate Lasting Peace Within"
+      ],
+      "activity": "older",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/16146"
+    },
+    {
+      "name": "Rollin McCraty, PhD",
+      "courses": [
+        "Experience the Power of Your Heart Intelligence",
+        "The Science & Practice of Heart Coherence"
+      ],
+      "activity": "older",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/2182"
+    },
+    {
+      "name": "Jean Shinoda Bolen, MD",
+      "courses": [
+        "Activate & Embody Powerful Goddess Archetypes to Become Bolder, Wiser & More Authentically You",
+        "Liberating the Goddesses in You",
+        "Empowering the Goddesses Within You (After 50)",
+        "Liberating the Gods Within You"
+      ],
+      "activity": "older",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/1012"
+    },
+    {
+      "name": "Giten Tonkov",
+      "courses": [
+        "BioDynamic Breathwork",
+        "Release Trauma From the Body With BioDynamic Breathwork",
+        "BioDynamic Breathwork for Inner Safety, an Open Heart & Deeper Presence"
+      ],
+      "activity": "older",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/18292"
+    },
+    {
+      "name": "Steve Haines",
+      "courses": [
+        "Shake Free of Trauma With TRE®",
+        "Awaken Powerful Primitive Somatic Reflexes With TRE® to Shake Free of Trauma & Find Safety, Freedom & Joy"
+      ],
+      "activity": "older",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/19769"
+    },
+    {
+      "name": "Alane Freund, LMFT",
+      "courses": [
+        "The Highly Sensitive Person’s Life Redesign"
+      ],
+      "activity": "older",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/45062"
+    },
+    {
+      "name": "Alana Fairchild",
+      "courses": [
+        "The Shamanic Creatrix"
+      ],
+      "activity": "older",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/51665"
+    },
+    {
+      "name": "Dr. Keesha Ewers, PhD",
+      "courses": [
+        "The Trauma Karma Connection",
+        "The Trauma-Autoimmune Connection",
+        "Medical Intuition Summit 2023 (host)"
+      ],
+      "activity": "older",
+      "role": "course teacher + summit host",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/8672"
+    },
+    {
+      "name": "Marie Diamond",
+      "courses": [
+        "Design Your Enlightened & Abundant Home With Feng Shui"
+      ],
+      "activity": "older",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/9037"
+    },
+    {
+      "name": "Dr. Shawn Marie Higgins",
+      "courses": [
+        "Sound Therapy With Interval Entrainment Healing™"
+      ],
+      "activity": "older",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/54607"
+    },
+    {
+      "name": "Tanya Taylor Rubinstein",
+      "courses": [
+        "Somatic Writing to Connect With Your Body, Ancestors & Land"
+      ],
+      "activity": "older",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/52010"
+    },
+    {
+      "name": "Xochitl Kusikuy Ashe",
+      "courses": [
+        "The Sacred Mushroom Pathway"
+      ],
+      "activity": "older",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/44417"
+    },
+    {
+      "name": "Lael Katharine Keen",
+      "courses": [
+        "Ida Rolf’s Wisdom & Techniques for Moving Effortlessly With Gravity"
+      ],
+      "activity": "older",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/49246"
+    },
+    {
+      "name": "Mark Bentley",
+      "courses": [
+        "Understand Your Gene Keys"
+      ],
+      "activity": "older",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/54856"
+    },
+    {
+      "name": "Robin Flynn",
+      "courses": [
+        "Entheogenesis"
+      ],
+      "activity": "older",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/50070"
+    },
+    {
+      "name": "Simon Borg-Olivier",
+      "courses": [
+        "Move Free & Easy With 5-D Flow"
+      ],
+      "activity": "older",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/12024"
+    },
+    {
+      "name": "Marcela Lobos",
+      "courses": [
+        "Shamanic Wisdom Summit 2023 (guest host)"
+      ],
+      "activity": "older",
+      "role": "summit host",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/9035"
+    },
+    {
+      "name": "Bill McKenna",
+      "courses": [
+        "Cognomovement®  An Energy Healing System"
+      ],
+      "activity": "older",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/49586"
+    },
+    {
+      "name": "Liz Larson",
+      "courses": [
+        "Cognomovement®  An Energy Healing System"
+      ],
+      "activity": "older",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/53565"
+    },
+    {
+      "name": "Dr. Deb Sandella",
+      "courses": [
+        "Regenerating Images in Memory (RIM®)"
+      ],
+      "activity": "older",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/49122"
+    },
+    {
+      "name": "Steph Magenta",
+      "courses": [
+        "Conscious Connected Breathwork to Release Trauma"
+      ],
+      "activity": "older",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/45910"
+    },
+    {
+      "name": "Michael Brian Baker",
+      "courses": [
+        "Experience Breathwork Fundamentals for Opening to Higher Consciousness"
+      ],
+      "activity": "older",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/53940"
+    },
+    {
+      "name": "Christena Cleveland, PhD",
+      "courses": [
+        "Embody Your Sacred Wholeness Through the Black Madonna"
+      ],
+      "activity": "older",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/51927"
+    },
+    {
+      "name": "Ginger Lapid-Bogda, PhD",
+      "courses": [
+        "Empower Your Deeper Purpose With the Enneagram"
+      ],
+      "activity": "older",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/3991"
+    },
+    {
+      "name": "Mas Vidal",
+      "courses": [
+        "Vedic Astrology & Ayurveda for Integrative Healing"
+      ],
+      "activity": "older",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/53536"
+    },
+    {
+      "name": "Chen Lizra",
+      "courses": [
+        "Heal Yourself From Trauma With Somatic Intelligence"
+      ],
+      "activity": "older",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/53482"
+    },
+    {
+      "name": "Brandon Bays",
+      "courses": [
+        "Free Your Divine Essence"
+      ],
+      "activity": "older",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/2110"
+    },
+    {
+      "name": "Kenlyn Kolleen",
+      "courses": [
+        "The Portal to Your Field of Super-Abundance"
+      ],
+      "activity": "older",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/35112"
+    },
+    {
+      "name": "Melissa Schwartz",
+      "courses": [
+        "Empaths, Sensitives & Intuitives Summit 2023 (host)"
+      ],
+      "activity": "older",
+      "role": "summit host",
+      "source_url": "https://theshiftnetwork.com/summit/EvolutionaryEmpath"
+    },
+    {
+      "name": "Yasmeen Turayhi",
+      "courses": [
+        "Medical Intuition Summit 2023 (host)"
+      ],
+      "activity": "older",
+      "role": "summit host",
+      "source_url": "https://theshiftnetwork.com/summit/intuition"
+    },
+    {
+      "name": "don Oscar Miro-Quesada",
+      "courses": [
+        "Ancestral Shamanic Star Wisdom & Interdimensional Journeying to Heal Your Soul & Our Planet",
+        "Shamanic Travels Beyond the Veil for Remote Healing & Self-Evolution",
+        "Receive the Ancestral Medicine of Pachamama",
+        "Reverence, Ritual & Renewal",
+        "The Path of the Universal Shaman",
+        "Becoming a Shining One"
+      ],
+      "activity": "older",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/5433"
+    },
+    {
+      "name": "Krishna Das",
+      "courses": [
+        "Hanuman, Maharaj-ji & You",
+        "Journey on the Path of Love",
+        "Enter Into Your Heart Space Through Devotional Chanting",
+        "Deepen the Loving Presence Within & Develop Inner Strength Through Devotional Chanting"
+      ],
+      "activity": "older",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/4951"
+    },
+    {
+      "name": "Robert Peng",
+      "courses": [
+        "Live Long Qigong",
+        "Awaken Your Inner Power Through Qigong & Xi Breathing"
+      ],
+      "activity": "older",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/11917"
+    },
+    {
+      "name": "Dr. Bradley Nelson",
+      "courses": [
+        "Activate Health, Abundance & Love With the Emotion Code"
+      ],
+      "activity": "older",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/36690"
+    },
+    {
+      "name": "K.P. Khalsa",
+      "courses": [
+        "The Path of Ayurvedic Herbalism",
+        "Powerful Plants for Anti-Aging",
+        "End Your Sleep Struggles With Plant Medicine & More",
+        "Ayurvedic Herbalism for Women"
+      ],
+      "activity": "older",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/4474"
+    },
+    {
+      "name": "Alexander John Shaia",
+      "courses": [
+        "Sanctify Your Holiday Season",
+        "Walk the Mystical 4-Path Journey of Transformation"
+      ],
+      "activity": "older",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/41314"
+    },
+    {
+      "name": "Christina Lee Pratt",
+      "courses": [
+        "Heal Your Life & Legacy",
+        "Healing With Your Well & Unwell Ancestors"
+      ],
+      "activity": "older",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/4974"
+    },
+    {
+      "name": "Sergio Magaña",
+      "courses": [
+        "The Toltec Secrets of Dreaming"
+      ],
+      "activity": "older",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/10139"
+    },
+    {
+      "name": "Deng Ming-Dao",
+      "courses": [
+        "Taoist Energy Practices of Huashan Qigong for Radiant Living"
+      ],
+      "activity": "older",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/36333"
+    },
+    {
+      "name": "Dr. Kenneth R. Pelletier",
+      "courses": [
+        "Epigenetics for Optimal Health & Vibrant Longevity",
+        "Unlock Your Epigenetics"
+      ],
+      "activity": "older",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/17112"
+    },
+    {
+      "name": "Shelley Kaehr, PhD",
+      "courses": [
+        "Past-Life & Genealogical Regression to Heal Your Ancestors & Yourself"
+      ],
+      "activity": "older",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/45294"
+    },
+    {
+      "name": "Doña Eugenia Pineda Casimiro",
+      "courses": [
+        "The Healing Potential of Sacred Mushrooms"
+      ],
+      "activity": "older",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/47929"
+    },
+    {
+      "name": "Jim Morningstar, PhD",
+      "courses": [
+        "Therapeutic Breathwork and Applied Bioenergetics"
+      ],
+      "activity": "older",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/2147"
+    },
+    {
+      "name": "Shiva Rea",
+      "courses": [
+        "The Vinyasa Fire Keeper Journey"
+      ],
+      "activity": "older",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/160"
+    },
+    {
+      "name": "Dr. Judith Kravitz",
+      "courses": [
+        "Breathe Into Abundance"
+      ],
+      "activity": "older",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/18192"
+    },
+    {
+      "name": "Cissi Williams",
+      "courses": [
+        "Energy Healing With the Divine Mothers of Darkness & Light"
+      ],
+      "activity": "older",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/49364"
+    },
+    {
+      "name": "Karen Wang Diggs",
+      "courses": [
+        "The Sacred Kitchen"
+      ],
+      "activity": "older",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/35969"
+    },
+    {
+      "name": "Dr. Mario Martinez",
+      "courses": [
+        "4 Longevity Factors of People Who Live Happily & Healthily to 100+"
+      ],
+      "activity": "older",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/4562"
+    },
+    {
+      "name": "Dr. Clare Johnson",
+      "courses": [
+        "Lucid Dreamplay to Transform Your Shadow & Consciously Create Your Reality"
+      ],
+      "activity": "older",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/17539"
+    },
+    {
+      "name": "Hilary Crowley",
+      "courses": [
+        "Befriend Your Intuition"
+      ],
+      "activity": "older",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/46796"
+    },
+    {
+      "name": "Dee Wallace",
+      "courses": [
+        "The Conscious Creation Process"
+      ],
+      "activity": "older",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/17709"
+    },
+    {
+      "name": "Natalia O'Sullivan, BSc (Hons)",
+      "courses": [
+        "Mending Your Family’s Tapestry"
+      ],
+      "activity": "older",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/15781"
+    },
+    {
+      "name": "Judy Wilkins-Smith",
+      "courses": [
+        "Claim Your True Family Lineage"
+      ],
+      "activity": "older",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/45288"
+    },
+    {
+      "name": "Dr. Christine Page",
+      "courses": [
+        "Your Body, Yourself & Your Feminine Intuition"
+      ],
+      "activity": "older",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/870"
+    },
+    {
+      "name": "Theresa Cheung",
+      "courses": [
+        "Precognitive Dreamwork"
+      ],
+      "activity": "older",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/46245"
+    },
+    {
+      "name": "Jeff Brown",
+      "courses": [
+        "The Enrealment Method"
+      ],
+      "activity": "older",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/4957"
+    },
+    {
+      "name": "Philip Shepherd",
+      "courses": [
+        "Reclaim the Lost Art of Wholeness for a Fully Embodied Life"
+      ],
+      "activity": "older",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/5154"
+    },
+    {
+      "name": "Kelly Sullivan Walden",
+      "courses": [
+        "The Way of the Awakened Dreamer"
+      ],
+      "activity": "older",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/45156"
+    },
+    {
+      "name": "Terry Morgan",
+      "courses": [
+        "Shamanic Astrology"
+      ],
+      "activity": "older",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/35507"
+    },
+    {
+      "name": "Melanie Roche",
+      "courses": [
+        "The Radiant Human Template"
+      ],
+      "activity": "older",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/36580"
+    },
+    {
+      "name": "Langston Kahn",
+      "courses": [
+        "Reconnect to a Sensuous Life"
+      ],
+      "activity": "older",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/15793"
+    },
+    {
+      "name": "Vanessa Gonzalez Codorniu",
+      "courses": [
+        "Ancestral Hypnosis Healing"
+      ],
+      "activity": "older",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/40282"
+    },
+    {
+      "name": "Anne Pryor, MA",
+      "courses": [
+        "Unblock Your Creative Gifts for Healing & Transformation With Guidance From the Beyond"
+      ],
+      "activity": "older",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/44721"
+    },
+    {
+      "name": "Risë Severson Kasmirski",
+      "courses": [
+        "Unblock Your Creative Gifts for Healing & Transformation With Guidance From the Beyond"
+      ],
+      "activity": "older",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/44828"
+    },
+    {
+      "name": "Lamara Heartwell",
+      "courses": [
+        "Come Home to Yourself Through Regenerative Movement"
+      ],
+      "activity": "older",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/3927"
+    },
+    {
+      "name": "Anoop Kumar, MD",
+      "courses": [
+        "Explore the Boundlessness of Being Using the 3 Minds Approach to Greater Consciousness, Ease & Wellbeing"
+      ],
+      "activity": "older",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/46214"
+    },
+    {
+      "name": "Murray Hidary",
+      "courses": [
+        "The Freedom Frequencies"
+      ],
+      "activity": "older",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/46914"
+    },
+    {
+      "name": "Michael B. Beckwith",
+      "courses": [
+        "Tap Into Infinite Abundance by Activating Enlightened Prosperity Consciousness",
+        "Life Visioning in Your 40's, 50's & Beyond"
+      ],
+      "activity": "older",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/1586"
+    },
+    {
+      "name": "Mona Delfino",
+      "courses": [
+        "Create the Life Your Soul Intended by Attuning to Your Intuitive Guidance",
+        "Energetic Practices to Bring Heaven to Earth",
+        "Deepen Your Healing Power as Your Own Medical Intuitive",
+        "Become Your Own Medical Intuitive",
+        "Sound As Medicine"
+      ],
+      "activity": "older",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/12060"
+    },
+    {
+      "name": "Ariel Spilsbury",
+      "courses": [
+        "The Care & Feeding of Your Muse",
+        "Awaken & Rebalance Yourself & Our World Through Feminine Alchemy"
+      ],
+      "activity": "older",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/352"
+    },
+    {
+      "name": "Bernadette Pleasant",
+      "courses": [
+        "Somatic Dance for Emotional Alchemy"
+      ],
+      "activity": "older",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/19804"
+    },
+    {
+      "name": "Rev. Dereca Blackmon",
+      "courses": [
+        "Develop Your Personal Action Plan for Achieving Racial Justice Through Allyship & Solidarity",
+        "Spiritual Allyship"
+      ],
+      "activity": "older",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/12774"
+    },
+    {
+      "name": "Chris Bache, PhD",
+      "courses": [
+        "Exploring the Cosmic Mind Through Psychedelics"
+      ],
+      "activity": "older",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/4667"
+    },
+    {
+      "name": "Masami Covey, MS, FNTP",
+      "courses": [
+        "The Anatomy of Your Cosmic Flow"
+      ],
+      "activity": "older",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/36597"
+    },
+    {
+      "name": "China Galland",
+      "courses": [
+        "A Virtual Pilgrimage to the Black Madonna"
+      ],
+      "activity": "older",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/1061"
+    },
+    {
+      "name": "Nubia Teixeira",
+      "courses": [
+        "The Art of Breathing Into Balance With Pranayama, Mudras & Mantras"
+      ],
+      "activity": "older",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/16664"
+    },
+    {
+      "name": "Katie Silcox",
+      "courses": [
+        "Enhance Your Immunity, Resiliency & Inner Radiance With Ayurvedic Medicine & Tantric Philosophy"
+      ],
+      "activity": "older",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/44124"
+    },
+    {
+      "name": "Suzanne Sterling",
+      "courses": [
+        "Create Healing Rituals to Release Trauma & Invoke Joy, Empowerment & the Sacred"
+      ],
+      "activity": "older",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/713"
+    },
+    {
+      "name": "Kathleen Booker",
+      "courses": [
+        "Breath as a Pathway to Self-Love, Personal Empowerment & Divine Connection"
+      ],
+      "activity": "older",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/18596"
+    },
+    {
+      "name": "Lindsey Wise",
+      "courses": [
+        "Honoring the Woman Within the Mother"
+      ],
+      "activity": "older",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/42384"
+    },
+    {
+      "name": "Evelyn C. Rysdyk",
+      "courses": [
+        "Norse Shamanic Practices to Restore Emotional and Physical Wellbeing",
+        "The Mythic Powers of Norse Goddesses, Ancestresses & Giants",
+        "Cultivating Shamanic Perception"
+      ],
+      "activity": "older",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/5423"
+    },
+    {
+      "name": "Titanya Monique Dahlin",
+      "courses": [
+        "Awaken the Five Elements Through Belly Dance & Ceremony"
+      ],
+      "activity": "older",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/8974"
+    },
+    {
+      "name": "Dondi Dahlin",
+      "courses": [
+        "Awaken the Five Elements Through Belly Dance & Ceremony"
+      ],
+      "activity": "older",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/8956"
+    },
+    {
+      "name": "Dr. Marc Halpern",
+      "courses": [
+        "Ayurveda for Strengthening Your Immune System"
+      ],
+      "activity": "older",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/15859"
+    },
+    {
+      "name": "H.H. Chamgon Kenting Tai Situpa",
+      "courses": [
+        "Walk the Path of Inner Harmony & Joy"
+      ],
+      "activity": "older",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/36809"
+    },
+    {
+      "name": "Kahontakwas Diane Longboat",
+      "courses": [
+        "Cultivating a Sacred Life Rooted in Haudenosaunee Teachings"
+      ],
+      "activity": "older",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/3331"
+    },
+    {
+      "name": "Judith Aston",
+      "courses": [
+        "Facilitating Your Body’s Magic With Aston® Kinetics"
+      ],
+      "activity": "older",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/19887"
+    },
+    {
+      "name": "HeatherAsh Amara",
+      "courses": [
+        "The Warrior Heart Practice"
+      ],
+      "activity": "older",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/5429"
+    },
+    {
+      "name": "Pir Shabda Kahn",
+      "courses": [
+        "The Mystical Power of Sufi Breathwork, Mantras & Sacred Sounds"
+      ],
+      "activity": "older",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/17482"
+    },
+    {
+      "name": "Darren Weissman",
+      "courses": [
+        "Mind Medicine to Ignite Your Highest Potential"
+      ],
+      "activity": "older",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/35534"
+    },
+    {
+      "name": "James Twyman",
+      "courses": [
+        "Radical Wisdom for Radical Times"
+      ],
+      "activity": "older",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/2898"
+    },
+    {
+      "name": "Robert Holden",
+      "courses": [
+        "Living as Love With the Guidance of the Enneagram"
+      ],
+      "activity": "older",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/4865"
+    },
+    {
+      "name": "Bevin Niemann-Cortez",
+      "courses": [
+        "Mastering Your Energetic Field as an Empath or Highly Sensitive Person"
+      ],
+      "activity": "older",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/16223"
+    },
+    {
+      "name": "Uma Girish",
+      "courses": [
+        "Transform Grief & Pain Into Purpose & Joy"
+      ],
+      "activity": "older",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/12720"
+    },
+    {
+      "name": "Dr. Trupti Gokani",
+      "courses": [
+        "The Gut-Health Reboot Course"
+      ],
+      "activity": "older",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/11368"
+    },
+    {
+      "name": "Teresa Boardwine",
+      "courses": [
+        "Restore Your Wellbeing Using Adaptogenic Herbs & Mushrooms"
+      ],
+      "activity": "older",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/15908"
+    },
+    {
+      "name": "Sean Esbjörn-Hargens, Ph.D.",
+      "courses": [
+        "Integrating Your Head, Heart & Hara"
+      ],
+      "activity": "older",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/18485"
+    },
+    {
+      "name": "Thomas Hübl",
+      "courses": [
+        "Leading Edge of Meditation"
+      ],
+      "activity": "older",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/2647"
+    },
+    {
+      "name": "Julie Bjelland, LMFT",
+      "courses": [
+        "7 Steps to Embody the Gifts of Your Sensitivity"
+      ],
+      "activity": "older",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/16261"
+    },
+    {
+      "name": "Jennifer McLean",
+      "courses": [
+        "Spontaneous Transformation"
+      ],
+      "activity": "older",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/9120"
+    },
+    {
+      "name": "Dr. Steven Farmer",
+      "courses": [
+        "The 5 Ancestral Realms"
+      ],
+      "activity": "older",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/15855"
+    },
+    {
+      "name": "Hal Greenham, BSc (Psych), BA",
+      "courses": [
+        "Freedom from Chronic Pain"
+      ],
+      "activity": "older",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/17886"
+    },
+    {
+      "name": "Howard Schubiner, MD",
+      "courses": [
+        "Freedom from Chronic Pain"
+      ],
+      "activity": "older",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/17875"
+    },
+    {
+      "name": "Loch Kelly",
+      "courses": [
+        "Effortless Mindfulness"
+      ],
+      "activity": "older",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/16609"
+    },
+    {
+      "name": "Sonia Choquette",
+      "courses": [
+        "Your Six Sensory Life"
+      ],
+      "activity": "older",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/763"
+    },
+    {
+      "name": "Rav Doniel Katz",
+      "courses": [
+        "The Divine Map of Human Consciousness"
+      ],
+      "activity": "older",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/17369"
+    },
+    {
+      "name": "Ken Honda",
+      "courses": [
+        "The Japanese Art of Happy Money"
+      ],
+      "activity": "older",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/16660"
+    },
+    {
+      "name": "Rodger Kamenetz",
+      "courses": [
+        "Natural Dreamwork & the Sacred Encounter"
+      ],
+      "activity": "older",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/15231"
+    },
+    {
+      "name": "Gemma Benton",
+      "courses": [
+        "Reweaving Your Ancestral Story"
+      ],
+      "activity": "older",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/16038"
+    },
+    {
+      "name": "Tree Franklyn",
+      "courses": [
+        "Emotional Awakening for Sensitive Souls"
+      ],
+      "activity": "older",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/16273"
+    },
+    {
+      "name": "Magick Altman",
+      "courses": [
+        "Journey Through the Sacred Tarot"
+      ],
+      "activity": "older",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/17644"
+    },
+    {
+      "name": "Tim Freke",
+      "courses": [
+        "The Evolutionary Wake Up Program"
+      ],
+      "activity": "older",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/17128"
+    },
+    {
+      "name": "Mayor Heidi Harmon",
+      "courses": [
+        "The Heart of Activism"
+      ],
+      "activity": "older",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/16330"
+    },
+    {
+      "name": "Philip Hellmich",
+      "courses": [
+        "The Peace Ambassador Training 2.0"
+      ],
+      "activity": "older",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/1740"
+    },
+    {
+      "name": "Caroline W. Casey",
+      "courses": [
+        "Liberating the Zodiac Within & Without",
+        "Liberating the Citizen Trickster in You"
+      ],
+      "activity": "older",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/1385"
+    },
+    {
+      "name": "Tim Kelley",
+      "courses": [
+        "Evolving Beyond Your Wounds",
+        "Bestowing Your Blessing on Yourself",
+        "The Inner Harmony Process",
+        "Voice Dialogue Training",
+        "The Shadow Quest"
+      ],
+      "activity": "older",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/1309"
+    },
+    {
+      "name": "Krista Holland",
+      "courses": [],
+      "activity": "older",
+      "role": "speaker",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/43429"
+    },
+    {
+      "name": "Aletheia Sophia",
+      "courses": [],
+      "activity": "older",
+      "role": "speaker",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/68225"
+    },
+    {
+      "name": "Nicki Scully",
+      "courses": [
+        "Egyptian Shamanic Alchemy"
+      ],
+      "activity": "older",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/5419"
+    },
+    {
+      "name": "Michael Sandler",
+      "courses": [],
+      "activity": "older",
+      "role": "speaker",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/50245"
+    },
+    {
+      "name": "Ken Page",
+      "courses": [
+        "The Wisdom Path to Finding Lifelong Love",
+        "The Heart & Soul of True Intimacy"
+      ],
+      "activity": "older",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/6081"
+    },
+    {
+      "name": "Dr. John Ryan, MD",
+      "courses": [],
+      "activity": "older",
+      "role": "speaker",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/68275"
+    },
+    {
+      "name": "Grand Master Nan Lu",
+      "courses": [],
+      "activity": "older",
+      "role": "speaker",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/42792"
+    },
+    {
+      "name": "Nancy Rebecca, RN",
+      "courses": [],
+      "activity": "older",
+      "role": "speaker",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/70113"
+    },
+    {
+      "name": "Dr. Katie Hendricks",
+      "courses": [
+        "Body Intelligence in Action"
+      ],
+      "activity": "older",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/3920"
+    },
+    {
+      "name": "Dr. Dan Siegel",
+      "courses": [],
+      "activity": "older",
+      "role": "speaker",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/2141"
+    },
+    {
+      "name": "Michelle Masters",
+      "courses": [],
+      "activity": "older",
+      "role": "speaker",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/52582"
+    },
+    {
+      "name": "Maryn Azoff",
+      "courses": [],
+      "activity": "older",
+      "role": "speaker",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/71883"
+    },
+    {
+      "name": "Alan Steinfeld",
+      "courses": [],
+      "activity": "older",
+      "role": "speaker",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/68309"
+    },
+    {
+      "name": "Tom Condon",
+      "courses": [
+        "The Enneagram of Freedom"
+      ],
+      "activity": "older",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/4007"
+    },
+    {
+      "name": "Gloria Latham",
+      "courses": [],
+      "activity": "older",
+      "role": "speaker",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/9771"
+    },
+    {
+      "name": "Flora Bowley",
+      "courses": [],
+      "activity": "older",
+      "role": "speaker",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/8667"
+    },
+    {
+      "name": "Wendy Black Stern, C-IAYT",
+      "courses": [],
+      "activity": "older",
+      "role": "speaker",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/36275"
+    },
+    {
+      "name": "Kim Chestney",
+      "courses": [],
+      "activity": "older",
+      "role": "speaker",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/44903"
+    },
+    {
+      "name": "JJ Brighton",
+      "courses": [],
+      "activity": "older",
+      "role": "speaker",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/73102"
+    },
+    {
+      "name": "Katherine Chernick Fauvre",
+      "courses": [],
+      "activity": "older",
+      "role": "speaker",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/4042"
+    },
+    {
+      "name": "Sita PK",
+      "courses": [],
+      "activity": "older",
+      "role": "speaker",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/18025"
+    },
+    {
+      "name": "Dr. Christine Schaffner",
+      "courses": [],
+      "activity": "older",
+      "role": "speaker",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/44842"
+    },
+    {
+      "name": "Reya Manna",
+      "courses": [],
+      "activity": "older",
+      "role": "speaker",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/69854"
+    },
+    {
+      "name": "Marla Leigh",
+      "courses": [],
+      "activity": "older",
+      "role": "speaker",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/70479"
+    },
+    {
+      "name": "Suzi Tucker",
+      "courses": [],
+      "activity": "older",
+      "role": "speaker",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/41540"
+    },
+    {
+      "name": "Jeilene Tracey",
+      "courses": [],
+      "activity": "older",
+      "role": "speaker",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/74105"
+    },
+    {
+      "name": "Gayle Scott",
+      "courses": [],
+      "activity": "older",
+      "role": "speaker",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/4048"
+    },
+    {
+      "name": "Lisa Williams",
+      "courses": [],
+      "activity": "older",
+      "role": "speaker",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/66209"
+    },
+    {
+      "name": "Dr. Deborah Ooten",
+      "courses": [],
+      "activity": "older",
+      "role": "speaker",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/4054"
+    },
+    {
+      "name": "Matt and Joy Kahn",
+      "courses": [],
+      "activity": "older",
+      "role": "speaker",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/45119"
+    },
+    {
+      "name": "Dr. Janine Kreft",
+      "courses": [],
+      "activity": "older",
+      "role": "speaker",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/67779"
+    },
+    {
+      "name": "Jade Shaw",
+      "courses": [],
+      "activity": "older",
+      "role": "speaker",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/71621"
+    },
+    {
+      "name": "Lisa Wimberger",
+      "courses": [],
+      "activity": "older",
+      "role": "speaker",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/35195"
+    },
+    {
+      "name": "Amelia Vogler",
+      "courses": [],
+      "activity": "older",
+      "role": "speaker",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/42350"
+    },
+    {
+      "name": "Dana Dharma Devi",
+      "courses": [],
+      "activity": "older",
+      "role": "speaker",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/18414"
+    },
+    {
+      "name": "Ashanna Solaris",
+      "courses": [],
+      "activity": "older",
+      "role": "speaker",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/18380"
+    },
+    {
+      "name": "Larisa Gosla",
+      "courses": [],
+      "activity": "older",
+      "role": "speaker",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/69108"
+    },
+    {
+      "name": "Amy B. Scher",
+      "courses": [],
+      "activity": "older",
+      "role": "speaker",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/11742"
+    },
+    {
+      "name": "Charlie Morley",
+      "courses": [],
+      "activity": "older",
+      "role": "speaker",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/15399"
+    },
+    {
+      "name": "Lottie Moore",
+      "courses": [],
+      "activity": "older",
+      "role": "speaker",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/70831"
+    },
+    {
+      "name": "Dr. Andrea Deerheart, PhD",
+      "courses": [],
+      "activity": "older",
+      "role": "speaker",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/65379"
+    },
+    {
+      "name": "C.J. Llewelyn, M.Ed., LPC",
+      "courses": [],
+      "activity": "older",
+      "role": "speaker",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/56868"
+    },
+    {
+      "name": "Henri Rand Furgiuele",
+      "courses": [],
+      "activity": "older",
+      "role": "speaker",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/71555"
+    },
+    {
+      "name": "Joseph Selbie",
+      "courses": [],
+      "activity": "older",
+      "role": "speaker",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/68742"
+    },
+    {
+      "name": "Darren Austin Hall",
+      "courses": [],
+      "activity": "older",
+      "role": "speaker",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/70739"
+    },
+    {
+      "name": "Kay Reynolds",
+      "courses": [],
+      "activity": "older",
+      "role": "speaker",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/72275"
+    },
+    {
+      "name": "Sharon Smith",
+      "courses": [],
+      "activity": "older",
+      "role": "speaker",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/36062"
+    },
+    {
+      "name": "Amit Goswami, PhD",
+      "courses": [],
+      "activity": "older",
+      "role": "speaker",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/58799"
+    },
+    {
+      "name": "Desiree Hurtak, PhD",
+      "courses": [],
+      "activity": "older",
+      "role": "speaker",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/69676"
+    },
+    {
+      "name": "J.J. Hurtak, PhD",
+      "courses": [],
+      "activity": "older",
+      "role": "speaker",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/69675"
+    },
+    {
+      "name": "Michelle Clare",
+      "courses": [],
+      "activity": "older",
+      "role": "speaker",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/50515"
+    },
+    {
+      "name": "Mellissa Seaman, JD",
+      "courses": [],
+      "activity": "older",
+      "role": "speaker",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/15955"
+    },
+    {
+      "name": "Anneloes Smitsman, PhD(c), LLM",
+      "courses": [
+        "Wise Woman Quest"
+      ],
+      "activity": "older",
+      "role": "course teacher",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/16062"
+    },
+    {
+      "name": "RamDev Dale Borglum",
+      "courses": [],
+      "activity": "older",
+      "role": "speaker",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/56628"
+    },
+    {
+      "name": "Julie Reisler",
+      "courses": [],
+      "activity": "older",
+      "role": "speaker",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/70695"
+    },
+    {
+      "name": "Dr. Velma Love",
+      "courses": [],
+      "activity": "older",
+      "role": "speaker",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/45592"
+    },
+    {
+      "name": "Donnalea Van Vleet Goelz, PhD",
+      "courses": [],
+      "activity": "older",
+      "role": "speaker",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/42746"
+    },
+    {
+      "name": "Arthur Samuel Joseph",
+      "courses": [],
+      "activity": "older",
+      "role": "speaker",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/35764"
+    },
+    {
+      "name": "Corin Grillo, MA",
+      "courses": [],
+      "activity": "older",
+      "role": "speaker",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/69951"
+    },
+    {
+      "name": "Susan Grau",
+      "courses": [],
+      "activity": "older",
+      "role": "speaker",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/73806"
+    },
+    {
+      "name": "Dr. Amber Mele’ha Wolf",
+      "courses": [],
+      "activity": "older",
+      "role": "speaker",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/73245"
+    },
+    {
+      "name": "Rubin Naiman, PhD, FAASM",
+      "courses": [],
+      "activity": "older",
+      "role": "speaker",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/69548"
+    },
+    {
+      "name": "Les Lancaster, PhD",
+      "courses": [],
+      "activity": "older",
+      "role": "speaker",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/68969"
+    },
+    {
+      "name": "Sean Palmer",
+      "courses": [],
+      "activity": "older",
+      "role": "speaker",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/45507"
+    },
+    {
+      "name": "Suzanne Dion",
+      "courses": [],
+      "activity": "older",
+      "role": "speaker",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/12228"
+    },
+    {
+      "name": "Seraphina Capranos",
+      "courses": [],
+      "activity": "older",
+      "role": "speaker",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/65234"
+    },
+    {
+      "name": "Rev. Dr. Hillary Raining",
+      "courses": [],
+      "activity": "older",
+      "role": "speaker",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/49524"
+    },
+    {
+      "name": "Dr. Akil Palanisamy, MD",
+      "courses": [],
+      "activity": "older",
+      "role": "speaker",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/70993"
+    },
+    {
+      "name": "In’Easa mabu Ishtar",
+      "courses": [],
+      "activity": "older",
+      "role": "speaker",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/69353"
+    },
+    {
+      "name": "Bridget Boren",
+      "courses": [],
+      "activity": "older",
+      "role": "speaker",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/73153"
+    },
+    {
+      "name": "Dr. Evette Rose",
+      "courses": [],
+      "activity": "older",
+      "role": "speaker",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/72512"
+    },
+    {
+      "name": "Jackie Winters",
+      "courses": [],
+      "activity": "older",
+      "role": "speaker",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/72525"
+    },
+    {
+      "name": "Catherine Andrews",
+      "courses": [],
+      "activity": "older",
+      "role": "speaker",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/69680"
+    },
+    {
+      "name": "Heather Munro Pierce",
+      "courses": [],
+      "activity": "older",
+      "role": "speaker",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/62308"
+    },
+    {
+      "name": "Natasja Pelgrom",
+      "courses": [],
+      "activity": "older",
+      "role": "speaker",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/70977"
+    },
+    {
+      "name": "Marya Stark",
+      "courses": [],
+      "activity": "older",
+      "role": "speaker",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/42593"
+    },
+    {
+      "name": "Sarah Janes",
+      "courses": [],
+      "activity": "older",
+      "role": "speaker",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/66059"
+    },
+    {
+      "name": "Bruce Cryer",
+      "courses": [],
+      "activity": "older",
+      "role": "speaker",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/15649"
+    },
+    {
+      "name": "Fay Johnstone",
+      "courses": [],
+      "activity": "older",
+      "role": "speaker",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/70310"
+    },
+    {
+      "name": "Janice Miner Holden, EdD",
+      "courses": [],
+      "activity": "older",
+      "role": "speaker",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/50761"
+    },
+    {
+      "name": "Sister Dr. Jenna",
+      "courses": [],
+      "activity": "older",
+      "role": "speaker",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/1727"
+    },
+    {
+      "name": "Shelly Reef",
+      "courses": [],
+      "activity": "older",
+      "role": "speaker",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/74106"
+    },
+    {
+      "name": "Grandmother Devi Tide",
+      "courses": [],
+      "activity": "older",
+      "role": "speaker",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/60173"
+    },
+    {
+      "name": "Florencia Fridman",
+      "courses": [],
+      "activity": "older",
+      "role": "speaker",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/40973"
+    },
+    {
+      "name": "Sue Brayne, D.F.Astrol.S.",
+      "courses": [],
+      "activity": "older",
+      "role": "speaker",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/51221"
+    },
+    {
+      "name": "Carmen Acevedo Butcher, PhD",
+      "courses": [],
+      "activity": "older",
+      "role": "speaker",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/45549"
+    },
+    {
+      "name": "Dr. Rachel Carlton Abrams",
+      "courses": [],
+      "activity": "older",
+      "role": "speaker",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/15916"
+    },
+    {
+      "name": "Imam Jamal Rahman",
+      "courses": [],
+      "activity": "older",
+      "role": "speaker",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/41350"
+    },
+    {
+      "name": "Carola Eastwood",
+      "courses": [],
+      "activity": "older",
+      "role": "speaker",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/68700"
+    },
+    {
+      "name": "Chetan Parkyn",
+      "courses": [],
+      "activity": "older",
+      "role": "speaker",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/68699"
+    },
+    {
+      "name": "Russill Paul",
+      "courses": [],
+      "activity": "older",
+      "role": "speaker",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/9301"
+    },
+    {
+      "name": "Roshi Fleet Maull, PhD",
+      "courses": [],
+      "activity": "older",
+      "role": "speaker",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/72523"
+    },
+    {
+      "name": "Jonathan Hammond",
+      "courses": [],
+      "activity": "older",
+      "role": "speaker",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/64021"
+    },
+    {
+      "name": "Hope Fitzgerald",
+      "courses": [],
+      "activity": "older",
+      "role": "speaker",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/69678"
+    },
+    {
+      "name": "Jane Hawley Stevens",
+      "courses": [],
+      "activity": "older",
+      "role": "speaker",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/64462"
+    },
+    {
+      "name": "Laura Hollick",
+      "courses": [],
+      "activity": "older",
+      "role": "speaker",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/73435"
+    },
+    {
+      "name": "Tanya Carroll Richardson",
+      "courses": [],
+      "activity": "older",
+      "role": "speaker",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/50221"
+    },
+    {
+      "name": "Chris Niebauer, PhD",
+      "courses": [],
+      "activity": "older",
+      "role": "speaker",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/71478"
+    },
+    {
+      "name": "Dr. Jennifer Freed",
+      "courses": [],
+      "activity": "older",
+      "role": "speaker",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/53227"
+    },
+    {
+      "name": "Rendy Freedman, LMFT",
+      "courses": [],
+      "activity": "older",
+      "role": "speaker",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/57107"
+    },
+    {
+      "name": "Dr. Ameet Aggarwal, ND",
+      "courses": [],
+      "activity": "older",
+      "role": "speaker",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/64022"
+    },
+    {
+      "name": "Mana Mei",
+      "courses": [],
+      "activity": "older",
+      "role": "speaker",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/70744"
+    },
+    {
+      "name": "Jeddah Mali",
+      "courses": [],
+      "activity": "older",
+      "role": "speaker",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/499"
+    },
+    {
+      "name": "Dr. Erin Fall Haskell",
+      "courses": [],
+      "activity": "older",
+      "role": "speaker",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/68968"
+    },
+    {
+      "name": "David Ellzey",
+      "courses": [],
+      "activity": "older",
+      "role": "speaker",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/69952"
+    },
+    {
+      "name": "Amanda Huggins",
+      "courses": [],
+      "activity": "older",
+      "role": "speaker",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/48897"
+    },
+    {
+      "name": "Grandmother (Whaea) Eila Paul",
+      "courses": [],
+      "activity": "older",
+      "role": "speaker",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/15493"
+    },
+    {
+      "name": "Rachel Fleischman, LCSW",
+      "courses": [],
+      "activity": "older",
+      "role": "speaker",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/68019"
+    },
+    {
+      "name": "Cynthia James",
+      "courses": [],
+      "activity": "older",
+      "role": "speaker",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/5073"
+    },
+    {
+      "name": "Deb Sheppard",
+      "courses": [],
+      "activity": "older",
+      "role": "speaker",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/71155"
+    },
+    {
+      "name": "Dr. Pepper Hernandez, ND",
+      "courses": [],
+      "activity": "older",
+      "role": "speaker",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/68859"
+    },
+    {
+      "name": "Rev. Dr. Stephanie Red Feather",
+      "courses": [],
+      "activity": "older",
+      "role": "speaker",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/73521"
+    },
+    {
+      "name": "Karina Schelde",
+      "courses": [],
+      "activity": "older",
+      "role": "speaker",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/70026"
+    },
+    {
+      "name": "Dr. Elena Villanueva",
+      "courses": [],
+      "activity": "older",
+      "role": "speaker",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/51019"
+    },
+    {
+      "name": "Stephen Dinan & Devaa Haley Mitchell",
+      "courses": [],
+      "activity": "older",
+      "role": "speaker",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/410"
+    },
+    {
+      "name": "Dr. Lise Janelle",
+      "courses": [],
+      "activity": "older",
+      "role": "speaker",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/17846"
+    },
+    {
+      "name": "Giovanni Bartolomeo",
+      "courses": [],
+      "activity": "older",
+      "role": "speaker",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/68984"
+    },
+    {
+      "name": "Greg Wieting",
+      "courses": [],
+      "activity": "older",
+      "role": "speaker",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/50765"
+    },
+    {
+      "name": "Dr. Michael Ryoshin Sapiro",
+      "courses": [],
+      "activity": "older",
+      "role": "speaker",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/41827"
+    },
+    {
+      "name": "Glen Wheatley",
+      "courses": [],
+      "activity": "older",
+      "role": "speaker",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/44218"
+    },
+    {
+      "name": "Alison Armstrong",
+      "courses": [],
+      "activity": "older",
+      "role": "speaker",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/1288"
+    },
+    {
+      "name": "Dream Mullick",
+      "courses": [],
+      "activity": "older",
+      "role": "speaker",
+      "source_url": "https://theshiftnetwork.com/shift_teacher/47121"
+    }
+  ]
+}

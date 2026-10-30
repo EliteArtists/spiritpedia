@@ -60,21 +60,22 @@ The list to pick up from. Each points to where the detail lives.
    gentle **"better on the app"** prompts.
 9. **Future companion apps:** **I AM by Spiritpedia** first, then
    **Consciousness by Spiritpedia**.
-10. **Schools: the app side** (the website is done, §17.11). The build after
-    1.0.1: a school page, "Teaches at…" and the Schools & Academies shelf in
-    the app. Then: **Isaac Osborne and Natalie Ramon** for White Tiger once a
-    photo is confirmed, and Channels that may be schools (The Shift Network,
-    Boho Beautiful, Breathe and Flow) for the owner to decide.
+10. **Hubs: the app side** (the website is done, §17.11). The build after
+    1.0.1: a school's page, Our Teachers on schools and organisations,
+    "Teaches at…" / "Teaches on…" and the Schools & Academies shelf in the
+    app. Also **Isaac Osborne and Natalie Ramon** for White Tiger once a photo
+    is confirmed.
 11. **Sign-in history in the admin** (plan first; not built): per person,
     when they signed in, from Supabase's auth logs, so activity can be seen
     without copying codes.
 12. **Near You is never empty** (plan first; not built). If nobody is in the
     user's area, show the closest practitioners with their distance under a
     **"Closest to you"** heading. App 1.0.1 and website.
-13. **Frans Stiene's items** (§18.6). His profile is live, with his five
-    books moved from Mikao Usui; his videos, offerings and free resources
-    wait for the full audit. Then Bronwen Logan's other co-written books
-    with him (Your Reiki Treatment, the A–Z Pocketbook, the Card Deck).
+13. **Hub sprints** (§18.7). Next: The Shift Network's missing teachers, in
+    the order of `the-shift-network-faculty.json` (Suzanne Giesemann, Robert
+    Moss, Marie Manuchehri, Master Helen Liang, Cyndi Dale…), each with full
+    content and linked to the hub. Course titles with "Medical" in them need
+    the health-claim check.
 
 ---
 
@@ -119,7 +120,7 @@ how-to is `docs/admin-guide.md`; the personalisation rules are
 | **Website** | Live at **https://www.spiritpedia.co** (Next.js on Vercel). Every push that changes `web/` deploys to production |
 | **App (iOS)** | Flutter, iPhone and iPad. **1.0** is in Apple review. **1.0.0 (27)** is on TestFlight (`app/build/ios-release/Spiritpedia-1.0.0-27.ipa`; archive in Xcode's Archives, `2026-10-28/Spiritpedia 1.0.0 (27).xcarchive`, 28 Oct 2026). Build 24's archive (`2026-10-22/Runner 3.xcarchive`) is kept while 1.0 is in review; 25 and 26 were never uploaded and their files were deleted on 28 Oct |
 | **App (Android)** | The same code. The **closed test is live with 15 testers**; the production application is due about 9–10 Nov 2026 (§10.15, §12.8, `docs/google-play.md`). **1.0.0 (25)** is built (version code 25, `app/build/android-release/Spiritpedia-1.0.0-25.aab`) and **not yet uploaded**. Not yet in production |
-| **Database** | Supabase. Two projects: **live** (`uzmvcgew…`) and **dev** (`khtpbnof…`). Migrations `0000`–`0029` are on both |
+| **Database** | Supabase. Two projects: **live** (`uzmvcgew…`) and **dev** (`khtpbnof…`). Migrations `0000`–`0030` are on both |
 | **Push** | Firebase Cloud Messaging only, with an APNs key. Moved on 22 Oct 2026 to two Firebase projects owned by **love@spiritpedia.co** (live `spiritpedia-ad62b`, dev `spiritpedia-dev-5e4d5`); checked end to end on iPhone, iPad and Android |
 | **Emails** | The approved copy of 21–22 Oct 2026 is live (§9.7). The outreach journey is eight emails, redirected to a test inbox by `JOURNEY_TEST_EMAIL` until the solicitor has checked cold email; no journey is running. Day 4 is live. Personal discovery editions are built but **off** until `DISCOVERY_EDITIONS=on` is set on Vercel (§9.7a) |
 | **Repository** | `https://github.com/EliteArtists/spiritpedia`, branch `main` only. No staging environment, no feature flags |
@@ -316,7 +317,7 @@ spiritpedia/
 │   ├── scripts/            vercel-ignore-build.sh; generate-emotion-safety-cases.mjs
 │   └── vercel.json         five cron schedules + the deploy-skip rule
 └── supabase/
-    ├── migrations/         0000 (schema baseline) … 0029, run by hand
+    ├── migrations/         0000 (schema baseline) … 0030, run by hand
     └── seed/               emotion_mappings.sql — the search vocabulary
 ```
 
@@ -420,7 +421,7 @@ editor **on dev first, then live**, by the project owner. Dev is checked with
 throwaway users created through the Admin API (no email) and deleted
 afterwards; live is checked read-only.
 
-### 8.1 0012–0029 (on dev and live)
+### 8.1 0012–0030 (on dev and live)
 
 **`0012_favourites_slugs`** — data only, in one transaction.
 - Rewrites legacy `user_favourites.content_slug` values (numeric ids for books,
@@ -625,6 +626,14 @@ two (§17.8).
   or instructor, unique pair, never itself): which teachers teach where. A
   teacher may belong to several schools. Public read, service role writes
   (like every content table since `0007`). Nothing is loosened.
+
+**`0030_hub_teachers`** (30 Oct 2026). Teacher links for Organisations too
+(§17.11), so `school_teachers` is renamed for what it is: `hub_teachers`,
+with `school_id` → `hub_id`, and its keys, index and policy renamed to match
+(`hub_teachers_hub_id_fkey`, `hub_teachers_teacher_id_fkey`, which the
+website embeds through). Rows, grants and the public-read policy unchanged.
+Safe to run again. On live, push the website straight after running it: until
+then the old code asks for `school_teachers` and teacher lines are missing.
 
 ### 8.2 0000–0011
 
@@ -1939,7 +1948,9 @@ Practitioners Near You for **Explore These Channels**, Spiritpedia's own first.
 On subject pages, in search and in My Library they are listed apart from the
 teachers, on both platforms. **Schools** (`school`, since `0029`; §17.11) are
 listed apart from the teachers in the same way, but have their own shelf,
-**Schools & Academies**, instead of Explore These Channels. **Publishers** are
+**Schools & Academies**, instead of Explore These Channels. Schools and
+organisations are **hubs**: teachers can be linked to them (`hub_teachers`,
+since `0030`; §17.11). **Publishers** are
 their own table, with a tier since `0023`.
 
 ### 17.3 Subjects and the homepage
@@ -2096,25 +2107,35 @@ the admin Inbox from their second failure.
 - The search dropdown shows two things: the emotion carousel and universal hits
   under section headers. A non-empty panel doesn't mean the emotion matched.
 
-### 17.11 Schools
+### 17.11 Schools and hubs
 
-Organisations that train and certify teachers (migration `0029`; website
+A **hub** is a School or an Organisation with teachers linked to it
+(`hub_teachers`, `0030`; `isHub` in `web/utils/listings.js`). A school trains
+and certifies teachers (White Tiger Qigong); an organisation is a network or
+platform hosting independent teachers (The Shift Network). Channels are not
+hubs: a channel is its creators' own brand. Hubs are what content sprints are
+built around (§18.7).
+
+Schools: organisations that train and certify teachers (migration `0029`; website
 since 30 Oct 2026, app in the build after 1.0.1). A school is a **listing**
 (`healers.entity_type = 'school'`), not its own table like publishers,
 because it owns content: its story, offerings, videos, reviews and saves all
 work as for any listing, and converting a Channel is one change of type.
 From publishers it borrows the link table, the logo panel and the shelf card.
 
-- **Teachers:** `school_teachers` links a school to its teachers, as
-  **Founder** or **Instructor**; a teacher can belong to several schools.
-  Linked through ingestion (`teaches_at`, §18.3) or the admin (a school's
-  Profile tab → Teachers at this school, by slug).
+- **Teachers:** `hub_teachers` links a school or organisation to its
+  teachers, as **Founder** or **Instructor**; a teacher can belong to several
+  hubs. Linked through ingestion (`teaches_at`, §18.3), `scripts/link-hub.mjs`
+  for teachers already listed (§18.7), or the admin (a School's or
+  Organisation's Profile tab → Teachers, by slug).
 - **The school's page** (`/healers/{slug}`, the same address it always had):
   its picture on the white logo panel (`PublisherLogo`), the School pill,
   "Founded YYYY · Visit website →", then **Our Teachers** (founder first,
   then by tier and name) above its own shelves.
-- **A teacher's page:** "Founder of …" / "Teaches at …" under the name, each
-  school linked.
+- **A teacher's page:** under the name, each hub linked: "Founder of …",
+  "Teaches at …" (a school), "Teaches on …" (an organisation), in that order
+  (`hubLinkPrefix`). An organisation's page lists **Our Teachers** like a
+  school's, but keeps its own picture rather than the logo panel.
 - **Discover:** **Schools & Academies** after Publishing Houses
   (`SchoolCard`: logo panel, "5 teachers · Founded 2008"). Schools leave
   Explore These Channels; in search, subject pages and My Library they are
@@ -2124,8 +2145,11 @@ From publishers it borrows the link table, the logo panel and the shelf card.
 - **Outreach:** unchanged. Journeys go to individuals only
   (`outreachAllowedFor`), so a school is left out like a channel; its
   teachers keep their own.
-- **First schools:** White Tiger Qigong (Tevia Feng, founder, and instructors)
-  and Skies and Flora (Shaka, founder; a Channel until 30 Oct 2026).
+- **First schools:** White Tiger Qigong (Tevia Feng, founder, and instructors),
+  Skies and Flora (Shaka, founder). The first organisation with teachers: The
+  Shift Network (16 linked; the rest are the sprint pipeline, §18.7). Boho
+  Beautiful and Breathe and Flow stay Channels (owner, 30 Oct 2026; couples
+  stay as the hub, no separate founder profiles).
 
 ---
 
@@ -2258,7 +2282,7 @@ node scripts/ingest.mjs <plan.json> --env dev --rollback    # delete exactly wha
               "goodreads_url": "", "worldofbooks_url": null, "description": "", "subjects": [],
               "co_authors": [] }],
   "co_authorships": [{ "book_slug": "the-priestess-transmissions", "add": ["amy-belair"] }],
-  "teaches_at": [{ "school": "white-tiger-qigong", "role": "founder|instructor" }],
+  "teaches_at": [{ "hub": "white-tiger-qigong", "role": "founder|instructor" }],
   "courses": [{ "title": "", "url": "", "page": "", "description": "", "price": "", "image": "",
                 "product_type": "course|retreat|download|membership",
                 "start_date": null, "end_date": null, "subjects": [] }],
@@ -2280,7 +2304,8 @@ the new author's plan instead. `--rollback` puts the old co-author list back.
 
 **Schools** (§17.11): a school is a healer with `"entity_type": "school"` and,
 when known, `founded_year`. A teacher's plan links them with `teaches_at`
-(the school must already be in, as a school); `--rollback` removes the link.
+(the hub must already be in, as a school or organisation; the older key
+`school` still works); `--rollback` removes the link.
 Turning a Channel into a School is a plan with `"update": { "entity_type":
 "school" }` (example: `skies-and-flora-school.json`).
 
@@ -2397,6 +2422,34 @@ dev, give the pages to check, stop. Live after their OK, as for healers.
 | Reiki batch 1 (new, Luminary): Lisa Powers, Pamela Miles (New York City, local and online), Kathleen Prasad | 30 Oct 2026: Lisa 11 videos (7 more have embedding switched off, so they can't play here), 6 books, 6 offerings (the 4 Udemy courses use their Teachable thumbnails), 2 free resources; Pamela 14 videos (the 5 foreign-language versions and the 30-day challenge promo left out), 1 book, 6 offerings, the Reiki Timer app; Kathleen 20 videos, 13 books (Animal Reiki Tails Volume 1 left out: no listing), 6 offerings | 30 Oct 2026, the same |
 | Reiki batch 2: Nathalie Jaspar (Local Hero, New York City), Torsten Lange (Local Hero, London), Melissa Crowhurst (Luminary), Bronwen Logan (Local Hero, Mount Tomah, Australia), Frans Stiene (Luminary, profile only); top-ups for Andrea Kennedy and Jillian (The Lune INNATE) | 30 Oct 2026: Nathalie 19 videos, 3 books, 3 offerings (her certification left out until her schedule is confirmed); Torsten 20 videos, 3 books, 12 offerings (past-dated workshops, the Mediumship workshop and the January Challenge left out); Melissa 17 videos (2 music videos left out, 1 can't be embedded), 17 books, 26 offerings; Bronwen 19 videos (the music video left out), 3 solo books, 21 offerings, the free Waka Wisdom Day 1; Andrea 1 video; Jillian 2 offerings. Removed under the health-claim rule: Jillian's "Reiki for Clearing Depression…" and "REIKI FOR WEIGHT LOSS" videos; "psychic surgery" taken out of her Reiki Level III description; "PLEASE READ BIO" taken off one title; Andrea's closed course Channel Your Divine Self removed (logs: `reiki-batch-2-fixes.<env>.json`). Frans's books 870, 871, 878, 879, 880 moved from Mikao Usui to him; Bronwen co-author on the Sourcebook and The Japanese Art of Reiki | 30 Oct 2026, the same |
 | White Tiger Qigong (new School, Luminary, founded 2008) with Tevia Feng (founder, Luminary), Sarah Divine, Ariel Tang, Joanne Faulkner and Vince Sauter (instructors, Local Hero); Skies and Flora changed from Channel to School, Shaka linked as its founder (`white-tiger-qigong.md`, `*-content.json`) | 30 Oct 2026: White Tiger 20 videos, 11 offerings (membership, 6 certification tracks, 4 Vietnam retreats), 2 free resources; Tevia 2 books, the Prescription System (his teaching videos are on the school; no YMAA book on Amazon, only a DVD; 8 Trigram only as a Japanese Kindle edition, left out); Sarah 14 videos, 4 offerings; Ariel 13 videos, 4 offerings, 2 free resources (Egypt pilgrimage past); Joanne 20 videos, 2 books, 2 offerings, 2 free resources, YouTube corrected to @ChiFlowWithJo; Vince 14 videos, 2 offerings, 2 free resources, YouTube corrected to @vincesauter5290 ("Everyday All Day" not on Amazon). Left out under the health-claim rule: 13 videos, Joanne's Wise Women retreat, Parkinson's material and four courses. Isaac Osborne and Natalie Ramon on hold (no confirmed photo); Wendy Jones left out (location unverified) | 30 Oct 2026, the same |
+| Hubs: The Shift Network changed from Channel to Organisation, its 16 teachers already on Spiritpedia linked (`the-shift-network-teachers.json`; Gregg Braden, Lynne McTaggart and Donna Eden left out, no faculty profile); its full faculty saved as the sprint pipeline (`the-shift-network-faculty.json`, 477 not yet on Spiritpedia). Frans Stiene's items (fresh research, `frans-stiene-content.json`) | 30 Oct 2026: Frans 19 videos, 4 books (Discovering Reiki; Your Reiki Treatment, the A–Z Reiki Pocketbook and the Reiki Techniques Card Deck with Bronwen Logan as co-author), 22 offerings (membership, 7 recorded courses, 2 online events, 13 dated in-person courses and retreats), 2 free resources (the Grounding Room left out: its page mentions recovery from illness). 9 of his videos moved from Mikao Usui to him; 3 under 2 minutes removed (log: `frans-stiene-videos.<env>.json`). Boho Beautiful and Breathe and Flow stay Channels | 30 Oct 2026, the same |
+
+### 18.7 Hub-by-hub sprints (the standard method)
+
+Content sprints go **hub by hub** (owner, 30 Oct 2026). Pick a hub (a
+school, an organisation or a channel), then:
+
+1. **Type.** Decide what it is (School, Organisation or Channel, §17.11) and
+   change it if needed: a plan with `"update": { "entity_type": … }`.
+2. **Who teaches there.** Research its founders and teachers from its own
+   pages (faculty, instructors, teacher trainings, current courses), ranked
+   newest and most active first. Save the full list in
+   `docs/content-audits/<hub>-faculty.json`: it's the pipeline for later
+   sprints (example: `the-shift-network-faculty.json`, 477 not yet on
+   Spiritpedia).
+3. **Link those already listed** (schools and organisations only): a links
+   file `docs/content-audits/<hub>-teachers.json` and
+   `node scripts/link-hub.mjs <file> --env dev|live [--insert|--rollback]`.
+   Weak links (no profile, a one-off talk years ago) are left out.
+4. **Add the missing ones with full content, never empty profiles**: each a
+   normal ingestion (§18.1–18.4) with `teaches_at` in their plan, so they
+   arrive linked and with their videos, books, offerings and free resources.
+   Work down the pipeline in order; a teacher with no confirmed photo waits.
+5. **The hub's own content** (its videos, offerings, free resources), under
+   the same rules. A teacher's teaching that's published on the hub's channel
+   goes on the hub, not on both.
+
+As always: dev first, the owner checks on localhost, then live after an OK.
 
 ---
 
