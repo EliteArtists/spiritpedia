@@ -1744,6 +1744,12 @@ browser walk-throughs had typed made-up addresses into the sign-in form.
     token until each phone opens a build with the new options.
 16. **A welcome that was never requested leaves no trace** in the database:
     check Vercel's logs for `/api/push/welcome` before blaming delivery.
+17. **Some YouTube channel pictures (`yt3.googleusercontent.com`) don't load
+    on localhost.** Google refuses them when the page is
+    `http://localhost:3000`. The same URLs load on www.spiritpedia.co and
+    with no referrer (checked 30 Oct 2026 on Pamela Miles's and Skies and
+    Flora's). A teacher photo that's broken only locally is this, not a dead
+    link.
 
 ---
 
@@ -2332,6 +2338,7 @@ dev, give the pages to check, stop. Live after their OK, as for healers.
 | Awaken Village Press authors batch 5 (new, Rising Star, linked to the press): Jia Apple, Michael McGinnis | 24 Oct 2026: Jia 9 videos (Heal to Heal 1–8, The Every Day Oracle; her family videos left out), 3 books; Michael 1 video, 2 books (the Spanish edition left out) | 24 Oct 2026, the same (Jia's bio softened: "a life-threatening wound from a medical procedure") |
 | Awaken Village Press authors batch 6 (new, Rising Star, linked to the press): Eva Dalak, Adi Kanda (Toronto, local and online) | 24 Oct 2026: Eva 19 videos, 1 book, 4 offerings (2 dated trainings, the Greece immersion); Adi 18 videos (with the Dear Human Child launch from Amanda's channel), 2 books, 3 offerings | 24 Oct 2026, the same |
 | Shaka (new, Rising Star; Puerto Viejo, Costa Rica, local and online; shown without a surname) and Skies and Flora (new, Rising Star, a Channel until there's a School type: her yoga school) | 30 Oct 2026: Shaka 3 offerings (Foundations in Psychic Development and Empaths and HSP through the School of Intuition and Healing, the MP3 reading); Skies and Flora 10 videos from @skiesandflora (13 music videos and 5 dated readings left out), the 200hr Yoga Teacher Training (the BookRetreats price, from $5,350 with accommodation and meals). The forthcoming book left out. Skies and Flora's photo is from its own site, not the YouTube channel picture | 30 Oct 2026, the same |
+| Reiki batch 1 (new, Luminary): Lisa Powers, Pamela Miles (New York City, local and online), Kathleen Prasad | 30 Oct 2026: Lisa 11 videos (7 more have embedding switched off, so they can't play here), 6 books, 6 offerings (the 4 Udemy courses use their Teachable thumbnails), 2 free resources; Pamela 14 videos (the 5 foreign-language versions and the 30-day challenge promo left out), 1 book, 6 offerings, the Reiki Timer app; Kathleen 20 videos, 13 books (Animal Reiki Tails Volume 1 left out: no listing), 6 offerings | 30 Oct 2026, the same |
 
 ---
 
