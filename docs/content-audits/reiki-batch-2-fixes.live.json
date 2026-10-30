@@ -1,0 +1,80 @@
+[
+  {
+    "remove": "video",
+    "id": 793,
+    "why": "Owner: health-claim rule",
+    "status": 200,
+    "body": "eecbe98a-c5e8-43ba-8623-21a44dac0840"
+  },
+  {
+    "remove": "video",
+    "id": 799,
+    "why": "Owner: health-claim rule",
+    "status": 200,
+    "body": "5716ad4d-c51a-42ac-97ae-cff7e270e910"
+  },
+  {
+    "remove": "course",
+    "id": "1367a13f-c4cd-4839-a55f-2043a19afc07",
+    "why": "Owner: closed course, evergreen only",
+    "status": 200,
+    "body": "127ecf7b-3c34-4b7e-a82c-e99ef3e9ba95"
+  },
+  {
+    "edit": "video 801 title",
+    "before": "EXTREMELY RELAXING ASMR: NEGATIVITY REMOVAL & REIKI SESSION, PLEASE READ BIO",
+    "status": 200,
+    "body": [
+      {
+        "id": 801,
+        "created_at": "2026-07-12T14:44:17.834486+00:00",
+        "title": "EXTREMELY RELAXING ASMR: NEGATIVITY REMOVAL & REIKI SESSION",
+        "platform_url": "https://www.youtube.com/watch?v=UOx-VRC5fFA",
+        "subject_slugs": [
+          "energy-medicine",
+          "reiki",
+          "shadow-work"
+        ],
+        "healer_slug": "jillian-the-lune-innate",
+        "slug": "extremely-relaxing-asmr-negativity-removal-reiki-session-please-read-bio"
+      }
+    ]
+  },
+  {
+    "edit": "Reiki Level III description",
+    "before": "An advanced course in personal alchemy, including the Master Symbol, cord cutting, psychic surgery, astral healing, and the Master attunement, aimed at deep transformation and mastery-level practice.",
+    "status": 200,
+    "body": [
+      {
+        "id": "ca52d8da-9b31-46b3-9955-33e076e7fb8d",
+        "healer_id": 45,
+        "title": "Reiki Level III",
+        "description": "An advanced course in personal alchemy, including the Master Symbol, cord cutting, astral healing, and the Master attunement, aimed at deep transformation and mastery-level practice.",
+        "course_url": "https://luneinnate.teachable.com/p/reiki-level-iii",
+        "price": "$395 (payment plan: 3 payments of $135/month)",
+        "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0MQSTfeZYPmt4OBFFVlawdaWPp69p36xkndA8MQxsjQ&s",
+        "subject_slugs": [
+          "chakra-healing",
+          "consciousness",
+          "energy-medicine",
+          "hermeticism",
+          "meditation",
+          "mindfulness",
+          "quantum-healing",
+          "reiki",
+          "self-healing",
+          "sound-healing",
+          "spiritual-awakening",
+          "spirituality"
+        ],
+        "created_at": "2026-07-12T14:43:05.543289+00:00",
+        "product_type": "course",
+        "affiliate_status": "none",
+        "start_date": null,
+        "end_date": null,
+        "is_active": true,
+        "slug": "reiki-level-iii"
+      }
+    ]
+  }
+]

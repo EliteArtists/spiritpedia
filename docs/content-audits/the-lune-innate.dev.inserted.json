@@ -1,0 +1,29 @@
+{
+  "env": "dev",
+  "healer": null,
+  "rows": [
+    {
+      "table": "courses",
+      "id": "611e110c-6631-4495-991c-b5dd0c13bf4f",
+      "slug": "guided-meditation-reiki-session",
+      "title": "Guided Meditation: Reiki Session"
+    },
+    {
+      "table": "courses",
+      "id": "a52cd5ab-534b-4642-97c3-aa0c18827ee9",
+      "slug": "one-hour-chakra-balancing-guided-affirmations",
+      "title": "One-Hour Chakra Balancing Guided Affirmations"
+    }
+  ],
+  "at": "2026-10-30T18:07:10.839Z",
+  "healer_update": {
+    "id": 45,
+    "before": {
+      "image_urls": [
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzsXq1Nlgfmc1Kz--b1ZX-1MecnStijr1Fe-8Pf_EsoA&s=10",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhTZc1yDDhyEvZkmgLfqxEN9l5IGqTsnDOgaTiKLwZyg&s=10",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6cKOnQrxkXv_bga5uoyRK3FZzL48AlS5uKMMIs3RRpQ&s=10"
+      ]
+    }
+  }
+}

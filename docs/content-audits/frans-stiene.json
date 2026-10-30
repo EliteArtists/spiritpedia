@@ -1,0 +1,48 @@
+{
+  "healer": {
+    "healer_slug": "frans-stiene",
+    "create": {
+      "name": "Frans Stiene",
+      "bio": "Frans Stiene is the teacher the world’s reiki teachers go to. Co-founder of the International House of Reiki, he has spent decades doing something unusual in a field dominated by Western adaptations: travelling back to the Japanese roots of the system of Reiki, into the meditations, precepts, and spiritual teachings of its founder, Mikao Usui — and bringing what he found there to students across the globe. His research with co-author Bronwen Logan produced The Reiki Sourcebook, the field’s standard reference work, and The Japanese Art of Reiki, while his own trilogy — The Inner Heart of Reiki, Reiki Insights, and The Way of Reiki: The Inner Teachings of Mikao Usui — has reframed the practice for a generation: not merely a hands-on healing technique, but a complete spiritual path toward remembering our own true nature.\n\nThat depth is matched by unusual accessibility. Frans teaches on four continents and online — courses and retreats across the UK, Europe, North America, and Australia-Asia — offering everything from full practitioner training to one-to-one reiki treatments, private meditation classes, and distance healing for those who need support now; he has studied with Japanese priests and Taoist masters for over twenty-five years. Students describe a teacher of disarming warmth and humour who makes thousand-year-old Japanese concepts feel immediate and liveable — spaciousness, the inner meaning of the Reiki kanji, the great bright light of one’s own being. For seekers who sense there is more to reiki than hand positions — that beneath the healing art lies a path of awakening — Frans Stiene is its most generous living guide.",
+      "tier": "luminary",
+      "entity_type": "individual",
+      "availability": "worldwide",
+      "subjects": [
+        "reiki",
+        "meditation",
+        "ancient-wisdom"
+      ],
+      "website_url": "https://ihreiki.com/",
+      "booking_url": "https://ihreiki.com/",
+      "youtube_url": "https://www.youtube.com/@InternationalHouseofReiki",
+      "facebook_url": "https://www.facebook.com/IHReiki",
+      "twitter_url": "https://twitter.com/IHReiki",
+      "image_urls": [
+        "https://yt3.googleusercontent.com/ytc/AIdro_lfArP5OlDZBDTvwU5mvpJDJd8d-GFKZwcaCrNNtJmFSog=s900-c-k-c0x00ffffff-no-rj"
+      ]
+    }
+  },
+  "videos": [],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "co_authorships": [
+    {
+      "book_slug": "the-reiki-sourcebook-revised-and-expanded",
+      "add": [
+        "bronwen-logan"
+      ]
+    },
+    {
+      "book_slug": "the-japanese-art-of-reiki",
+      "add": [
+        "bronwen-logan"
+      ]
+    }
+  ],
+  "notes": [
+    "Profile only for now: his videos, books and offerings wait for the full audit (the item lists were not pasted).",
+    "Books 870, 871, 878, 879 and 880 moved from mikao-usui to frans-stiene after the insert (owner approved, 30 Oct 2026); log in frans-stiene.book-move.<env>.json."
+  ],
+  "images_final": true
+}

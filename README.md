@@ -68,6 +68,13 @@ The list to pick up from. Each points to where the detail lives.
 11. **Sign-in history in the admin** (plan first; not built): per person,
     when they signed in, from Supabase's auth logs, so activity can be seen
     without copying codes.
+12. **Near You is never empty** (plan first; not built). If nobody is in the
+    user's area, show the closest practitioners with their distance under a
+    **"Closest to you"** heading. App 1.0.1 and website.
+13. **Frans Stiene's items** (§18.6). His profile is live, with his five
+    books moved from Mikao Usui; his videos, offerings and free resources
+    wait for the full audit. Then Bronwen Logan's other co-written books
+    with him (Your Reiki Treatment, the A–Z Pocketbook, the Card Deck).
 
 ---
 
@@ -2339,6 +2346,7 @@ dev, give the pages to check, stop. Live after their OK, as for healers.
 | Awaken Village Press authors batch 6 (new, Rising Star, linked to the press): Eva Dalak, Adi Kanda (Toronto, local and online) | 24 Oct 2026: Eva 19 videos, 1 book, 4 offerings (2 dated trainings, the Greece immersion); Adi 18 videos (with the Dear Human Child launch from Amanda's channel), 2 books, 3 offerings | 24 Oct 2026, the same |
 | Shaka (new, Rising Star; Puerto Viejo, Costa Rica, local and online; shown without a surname) and Skies and Flora (new, Rising Star, a Channel until there's a School type: her yoga school) | 30 Oct 2026: Shaka 3 offerings (Foundations in Psychic Development and Empaths and HSP through the School of Intuition and Healing, the MP3 reading); Skies and Flora 10 videos from @skiesandflora (13 music videos and 5 dated readings left out), the 200hr Yoga Teacher Training (the BookRetreats price, from $5,350 with accommodation and meals). The forthcoming book left out. Skies and Flora's photo is from its own site, not the YouTube channel picture | 30 Oct 2026, the same |
 | Reiki batch 1 (new, Luminary): Lisa Powers, Pamela Miles (New York City, local and online), Kathleen Prasad | 30 Oct 2026: Lisa 11 videos (7 more have embedding switched off, so they can't play here), 6 books, 6 offerings (the 4 Udemy courses use their Teachable thumbnails), 2 free resources; Pamela 14 videos (the 5 foreign-language versions and the 30-day challenge promo left out), 1 book, 6 offerings, the Reiki Timer app; Kathleen 20 videos, 13 books (Animal Reiki Tails Volume 1 left out: no listing), 6 offerings | 30 Oct 2026, the same |
+| Reiki batch 2: Nathalie Jaspar (Local Hero, New York City), Torsten Lange (Local Hero, London), Melissa Crowhurst (Luminary), Bronwen Logan (Local Hero, Mount Tomah, Australia), Frans Stiene (Luminary, profile only); top-ups for Andrea Kennedy and Jillian (The Lune INNATE) | 30 Oct 2026: Nathalie 19 videos, 3 books, 3 offerings (her certification left out until her schedule is confirmed); Torsten 20 videos, 3 books, 12 offerings (past-dated workshops, the Mediumship workshop and the January Challenge left out); Melissa 17 videos (2 music videos left out, 1 can't be embedded), 17 books, 26 offerings; Bronwen 19 videos (the music video left out), 3 solo books, 21 offerings, the free Waka Wisdom Day 1; Andrea 1 video; Jillian 2 offerings. Removed under the health-claim rule: Jillian's "Reiki for Clearing Depression…" and "REIKI FOR WEIGHT LOSS" videos; "psychic surgery" taken out of her Reiki Level III description; "PLEASE READ BIO" taken off one title; Andrea's closed course Channel Your Divine Self removed (logs: `reiki-batch-2-fixes.<env>.json`). Frans's books 870, 871, 878, 879, 880 moved from Mikao Usui to him; Bronwen co-author on the Sourcebook and The Japanese Art of Reiki | 30 Oct 2026, the same |
 
 ---
 

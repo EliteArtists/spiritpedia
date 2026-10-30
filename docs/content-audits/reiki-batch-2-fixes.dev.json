@@ -1,0 +1,107 @@
+[
+  {
+    "remove": "video",
+    "id": 793,
+    "why": "Owner: health-claim rule",
+    "status": 200,
+    "body": "572f090e-6fa7-42d6-910f-7a94a5bdbb4a"
+  },
+  {
+    "remove": "video",
+    "id": 799,
+    "why": "Owner: health-claim rule",
+    "status": 200,
+    "body": "f8cb1f03-a496-4c6c-a242-28a031d80510"
+  },
+  {
+    "remove": "course",
+    "id": "1367a13f-c4cd-4839-a55f-2043a19afc07",
+    "why": "Owner: closed course, evergreen only",
+    "status": 200,
+    "body": "049acd73-4728-4328-a41f-ba137190bc73"
+  },
+  {
+    "edit": "video 801 title",
+    "before": "EXTREMELY RELAXING ASMR: NEGATIVITY REMOVAL & REIKI SESSION, PLEASE READ BIO",
+    "status": 200,
+    "body": [
+      {
+        "id": 801,
+        "created_at": "2026-07-12T14:44:17.834486+00:00",
+        "title": "EXTREMELY RELAXING ASMR: NEGATIVITY REMOVAL & REIKI SESSION",
+        "platform_url": "https://www.youtube.com/watch?v=UOx-VRC5fFA",
+        "subject_slugs": [
+          "energy-medicine",
+          "reiki",
+          "shadow-work"
+        ],
+        "healer_slug": "jillian-the-lune-innate",
+        "slug": "extremely-relaxing-asmr-negativity-removal-reiki-session-please-read-bio"
+      }
+    ]
+  },
+  {
+    "edit": "Reiki Level III description",
+    "before": "An advanced course in personal alchemy, including the Master Symbol, cord cutting, psychic surgery, astral healing, and the Master attunement, aimed at deep transformation and mastery-level practice.",
+    "status": 200,
+    "body": [
+      {
+        "id": "ca52d8da-9b31-46b3-9955-33e076e7fb8d",
+        "healer_id": 45,
+        "title": "Reiki Level III",
+        "description": "An advanced course in personal alchemy, including the Master Symbol, cord cutting, astral healing, and the Master attunement, aimed at deep transformation and mastery-level practice.",
+        "course_url": "https://luneinnate.teachable.com/p/reiki-level-iii",
+        "price": "$395 (payment plan: 3 payments of $135/month)",
+        "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0MQSTfeZYPmt4OBFFVlawdaWPp69p36xkndA8MQxsjQ&s",
+        "subject_slugs": [
+          "chakra-healing",
+          "consciousness",
+          "energy-medicine",
+          "hermeticism",
+          "meditation",
+          "mindfulness",
+          "quantum-healing",
+          "reiki",
+          "self-healing",
+          "sound-healing",
+          "spiritual-awakening",
+          "spirituality"
+        ],
+        "created_at": "2026-07-12T14:43:05.543289+00:00",
+        "product_type": "course",
+        "affiliate_status": "none",
+        "start_date": null,
+        "end_date": null,
+        "is_active": true,
+        "slug": "reiki-level-iii"
+      }
+    ]
+  },
+  {
+    "delete": "Nathalie certification (dev only)",
+    "status": 200,
+    "body": [
+      {
+        "id": "48e6ddb7-c2fc-4f5d-aec4-a7f0ebf9b98a",
+        "healer_id": 181,
+        "title": "Reiki Certification: Shoden, Okuden and Shinpiden",
+        "description": "Traditional Japanese-style Reiki in three levels, taught in small groups. Reiki 1 (Shoden) covers four attunements, the precepts, self-healing and hands-on practice; Reiki 2 (Okuden) adds the three symbols and mantras and remote sessions; Reiki 3 (Shinpiden) is a six-week master training for up to four students. Each level comes with mentorship after the class.",
+        "course_url": "https://diveintoreiki.com/certification-programs",
+        "price": "Contact for pricing",
+        "image_url": "https://yt3.googleusercontent.com/ytc/AIdro_meLo9BE0499BUkmpTVLeRBdm6dffFkCOhoPG0ViaB4qw=s900-c-k-c0x00ffffff-no-rj",
+        "subject_slugs": [
+          "reiki",
+          "energy-medicine",
+          "meditation"
+        ],
+        "created_at": "2026-10-30T18:06:51.809936+00:00",
+        "product_type": "course",
+        "affiliate_status": "none",
+        "start_date": null,
+        "end_date": null,
+        "is_active": true,
+        "slug": "reiki-certification-shoden-okuden-and-shinpiden"
+      }
+    ]
+  }
+]
