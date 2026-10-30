@@ -1,6 +1,7 @@
 import HealerCard from './HealerCard.js';
 import HeroBillboard from './HeroBillboard.js';
 import ContentShelf from './ContentShelf.js';
+import SchoolCard from './SchoolCard.jsx';
 import PublisherCard from './PublisherCard.jsx';
 import { Tipped } from './ListingBadges.jsx';
 import { TIER_TIPS } from '../utils/badges.js';
@@ -19,7 +20,7 @@ import { SITE_URL, DEFAULT_TITLE } from '../utils/seo.js';
 // every visitor. utils/supabase.js exists precisely to be stateless, and this
 // was the one place that bypassed it.
 import { supabase } from '../utils/supabase.js';
-import { authorCount, isPlatform, officialFirst } from '../utils/listings.js';
+import { authorCount, isPlatform, isSchool, officialFirst, teacherCount } from '../utils/listings.js';
 
 const DEFAULT_AVATAR = 'https://placehold.co/400x400?text=Spiritpedia';
 
@@ -43,7 +44,7 @@ export default async function HomePage({ initialSubjectSlug, initialSearch = '' 
   // no longer pulled here at all — ExploreMore fetches each one from the client
   // when a visitor actually asks for it. That removed the bulk of an 8MB
   // document and the great majority of its images.
-  const [subjectsRes, healersRes, publishersRes] = await Promise.all([
+  const [subjectsRes, healersRes, publishersRes, schoolTeachersRes] = await Promise.all([
     supabase.from('subjects').select('*').order('name', { ascending: true }),
     supabase.from('healers').select('*'),
     // The embed brings each publisher's linked listings' types in the same
@@ -53,11 +54,15 @@ export default async function HomePage({ initialSubjectSlug, initialSearch = '' 
       .from('publishers')
       .select('*, publisher_healers(healers(entity_type))')
       .order('name', { ascending: true }),
+    // Which school each teacher link belongs to, so a school's card can say
+    // "8 teachers" (migration 0029). One small row per link.
+    supabase.from('school_teachers').select('school_id'),
   ]);
 
   const subjects = subjectsRes.data || [];
   const allHealers = healersRes.data || [];
   const allPublishers = publishersRes.data || [];
+  const schoolTeachers = schoolTeachersRes.data || [];
 
   // Offerings and free resources carry a bigint healer_id, so their cards need
   // display names. Sent to ExploreMore as id/name pairs built from the full
@@ -102,7 +107,10 @@ export default async function HomePage({ initialSubjectSlug, initialSearch = '' 
   // NULL is treated as individual so rows predating the column keep rendering
   // in the tier shelves exactly as before.
   const individuals = healers.filter((h) => !isPlatform(h));
-  const platforms = officialFirst(healers.filter(isPlatform));
+  // Schools (0029) have their own shelf, Schools & Academies, so they leave
+  // Explore These Channels.
+  const platforms = officialFirst(healers.filter((h) => isPlatform(h) && !isSchool(h)));
+  const schools = healers.filter(isSchool);
 
   const superheroes = individuals.filter((h) => h.tier === 'superhero');
   const ascendedMasters = individuals.filter((h) => h.tier === 'ascended_master');
@@ -283,6 +291,18 @@ export default async function HomePage({ initialSubjectSlug, initialSearch = '' 
                 publisher={publisher}
                 authorCount={authorCount(publisher)}
               />
+            )}
+            itemWidthClass="w-[260px]"
+          />
+
+          {/* Schools and academies (0029): listings that train and certify
+              teachers. Hidden outright when there are none. */}
+          <ContentShelf
+            title="Schools & Academies"
+            subtitle="Train With a School"
+            items={schools}
+            renderItem={(school) => (
+              <SchoolCard school={school} teacherCount={teacherCount(school, schoolTeachers)} />
             )}
             itemWidthClass="w-[260px]"
           />

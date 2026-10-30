@@ -27,6 +27,14 @@ export async function GET() {
     const { count } = await publicClient.from(table).select('*', { count: 'exact', head: true });
     counts[table] = count ?? 0;
   }
+  // Schools are listings (healers.entity_type 'school', migration 0029).
+  {
+    const { count } = await publicClient
+      .from('healers')
+      .select('*', { count: 'exact', head: true })
+      .eq('entity_type', 'school');
+    counts.schools = count ?? 0;
+  }
 
   for (const table of ['healers', 'books']) {
     const { count } = await publicClient

@@ -10,6 +10,7 @@ import DataProblem from '@/components/admin/DataProblem';
 import { useAdminData } from '@/components/admin/AdminData';
 import CardImage from '@/components/CardImage';
 import ConfirmDelete from '@/components/admin/ConfirmDelete';
+import SchoolTeachers from '@/components/admin/SchoolTeachers';
 import { supabase } from '@/utils/supabase';
 import { tierGuidance, tierName, tierOptions } from '@/utils/badges';
 
@@ -28,6 +29,7 @@ const ENTITY_TYPES = [
   { value: 'channel', label: 'Channel' },
   { value: 'app', label: 'App' },
   { value: 'organisation', label: 'Organisation' },
+  { value: 'school', label: 'School' },
 ];
 
 // The three labels the ingestion form writes. The column is free text and six
@@ -63,6 +65,7 @@ const NUMBER_FIELDS = [
   ['birth_year', 'Born'],
   ['death_year', 'Died'],
   ['ad_rank_score', 'Ad rank score'],
+  ['founded_year', 'Founded (schools)'],
 ];
 
 const EDITABLE = [
@@ -1547,6 +1550,10 @@ export default function AdminHealerRecordPage({ params }) {
                 </span>
               )}
             </div>
+
+            {/* A school's teachers (0029). Saved type only: a listing being
+                turned into a school is saved first, then shows this. */}
+            {healer.entity_type === 'school' && <SchoolTeachers school={healer} />}
           </>
         )}
 

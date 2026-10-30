@@ -1,0 +1,40 @@
+{
+  "healer": {
+    "healer_slug": "joanne-faulkner",
+    "create": {
+      "name": "Joanne Faulkner",
+      "bio": "Joanne Faulkner is a Dublin Shiatsu practitioner who specialises in a lesser-known side of Traditional Chinese Medicine: the energy of food. She has written two cookbooks that combine recipes with acupressure points, meditations and traditional Chinese medicine: \"Shiatsu & the Art of Conscious Cooking\" and \"Good Food, Better Sex.\" Her message is simple: food, touch and movement are everyday ways to look after yourself. She has chaired the Shiatsu Society of Ireland and represented Ireland at the European Shiatsu Federation.\n\nQigong is now central to her work. As a certified White Tiger instructor in Eight Trigram Qigong, she runs \"Chi Flow with Jo,\" a series of live online qigong classes held every weekday, with a free class each month. She also offers Shiatsu treatments in Dublin, one-to-one sessions, residential and day retreats, talks and corporate wellness programmes. She hosts a podcast with \"Ask Me Anything\" and \"Energy Update\" episodes.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local_online",
+      "subjects": [
+        "qi-gong",
+        "energy-medicine",
+        "self-healing"
+      ],
+      "city": "Dublin",
+      "country": "Ireland",
+      "website_url": "https://joannefaulkner.ie/",
+      "booking_url": "https://joannefaulkner.ie/chi-flow-with-jo/",
+      "youtube_url": "https://www.youtube.com/@ShiatsuConsciousCooking",
+      "instagram_url": "https://www.instagram.com/joannefaulknerShiatsu/",
+      "facebook_url": "https://www.facebook.com/joanne.faulkner.9081",
+      "twitter_url": "https://twitter.com/JoanneShiatsu",
+      "tiktok_url": "https://www.tiktok.com/@joannefaulknershiatsu",
+      "image_urls": [
+        "https://joannefaulkner.ie/wp-content/uploads/2022/12/Joanne-Faulkner-round-bio-pic-150x150-1.png"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "school": "white-tiger-qigong",
+      "role": "instructor"
+    }
+  ],
+  "videos": [],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "images_final": true
+}

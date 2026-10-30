@@ -60,11 +60,11 @@ The list to pick up from. Each points to where the detail lives.
    gentle **"better on the app"** prompts.
 9. **Future companion apps:** **I AM by Spiritpedia** first, then
    **Consciousness by Spiritpedia**.
-10. **A "School" type** (plan first; not built). Like publishing houses
-    (§17.5): a school page, teachers linked to it ("Teaches at…" on their
-    page), and a **Schools & Academies** shelf on Discover. First schools:
-    **Skies and Flora** (on Spiritpedia as a Channel until then) and **White
-    Tiger Qigong**.
+10. **Schools: the app side** (the website is done, §17.11). The build after
+    1.0.1: a school page, "Teaches at…" and the Schools & Academies shelf in
+    the app. Then: **Isaac Osborne and Natalie Ramon** for White Tiger once a
+    photo is confirmed, and Channels that may be schools (The Shift Network,
+    Boho Beautiful, Breathe and Flow) for the owner to decide.
 11. **Sign-in history in the admin** (plan first; not built): per person,
     when they signed in, from Supabase's auth logs, so activity can be seen
     without copying codes.
@@ -119,7 +119,7 @@ how-to is `docs/admin-guide.md`; the personalisation rules are
 | **Website** | Live at **https://www.spiritpedia.co** (Next.js on Vercel). Every push that changes `web/` deploys to production |
 | **App (iOS)** | Flutter, iPhone and iPad. **1.0** is in Apple review. **1.0.0 (27)** is on TestFlight (`app/build/ios-release/Spiritpedia-1.0.0-27.ipa`; archive in Xcode's Archives, `2026-10-28/Spiritpedia 1.0.0 (27).xcarchive`, 28 Oct 2026). Build 24's archive (`2026-10-22/Runner 3.xcarchive`) is kept while 1.0 is in review; 25 and 26 were never uploaded and their files were deleted on 28 Oct |
 | **App (Android)** | The same code. The **closed test is live with 15 testers**; the production application is due about 9–10 Nov 2026 (§10.15, §12.8, `docs/google-play.md`). **1.0.0 (25)** is built (version code 25, `app/build/android-release/Spiritpedia-1.0.0-25.aab`) and **not yet uploaded**. Not yet in production |
-| **Database** | Supabase. Two projects: **live** (`uzmvcgew…`) and **dev** (`khtpbnof…`). Migrations `0000`–`0028` are on both |
+| **Database** | Supabase. Two projects: **live** (`uzmvcgew…`) and **dev** (`khtpbnof…`). Migrations `0000`–`0029` are on both |
 | **Push** | Firebase Cloud Messaging only, with an APNs key. Moved on 22 Oct 2026 to two Firebase projects owned by **love@spiritpedia.co** (live `spiritpedia-ad62b`, dev `spiritpedia-dev-5e4d5`); checked end to end on iPhone, iPad and Android |
 | **Emails** | The approved copy of 21–22 Oct 2026 is live (§9.7). The outreach journey is eight emails, redirected to a test inbox by `JOURNEY_TEST_EMAIL` until the solicitor has checked cold email; no journey is running. Day 4 is live. Personal discovery editions are built but **off** until `DISCOVERY_EDITIONS=on` is set on Vercel (§9.7a) |
 | **Repository** | `https://github.com/EliteArtists/spiritpedia`, branch `main` only. No staging environment, no feature flags |
@@ -316,7 +316,7 @@ spiritpedia/
 │   ├── scripts/            vercel-ignore-build.sh; generate-emotion-safety-cases.mjs
 │   └── vercel.json         five cron schedules + the deploy-skip rule
 └── supabase/
-    ├── migrations/         0000 (schema baseline) … 0028, run by hand
+    ├── migrations/         0000 (schema baseline) … 0029, run by hand
     └── seed/               emotion_mappings.sql — the search vocabulary
 ```
 
@@ -420,7 +420,7 @@ editor **on dev first, then live**, by the project owner. Dev is checked with
 throwaway users created through the Admin API (no email) and deleted
 afterwards; live is checked read-only.
 
-### 8.1 0012–0028 (on dev and live)
+### 8.1 0012–0029 (on dev and live)
 
 **`0012_favourites_slugs`** — data only, in one transaction.
 - Rewrites legacy `user_favourites.content_slug` values (numeric ids for books,
@@ -617,6 +617,14 @@ two (§17.8).
   checked, skipped, cleared, any error) for the Inbox status line. Runs older
   than 60 days are deleted by the check itself.
 - Both tables are service role only (RLS on, no policy). Nothing is loosened.
+
+**`0029_schools`** (30 Oct 2026). Schools as a kind of listing (§17.11).
+- `healers.entity_type` may be `school`; `healers.founded_year` (integer,
+  NULL for people) gives "Founded 2008".
+- `school_teachers` (`school_id`, `teacher_id`, both healers, `role` founder
+  or instructor, unique pair, never itself): which teachers teach where. A
+  teacher may belong to several schools. Public read, service role writes
+  (like every content table since `0007`). Nothing is loosened.
 
 ### 8.2 0000–0011
 
@@ -1929,8 +1937,10 @@ the tier. The button says **Book with [first name] →** for practitioners and
 Shining Star, Rising Star) but leave the tier shelves, the billboard and
 Practitioners Near You for **Explore These Channels**, Spiritpedia's own first.
 On subject pages, in search and in My Library they are listed apart from the
-teachers, on both platforms. **Publishers** are their own table, with a tier
-since `0023`.
+teachers, on both platforms. **Schools** (`school`, since `0029`; §17.11) are
+listed apart from the teachers in the same way, but have their own shelf,
+**Schools & Academies**, instead of Explore These Channels. **Publishers** are
+their own table, with a tier since `0023`.
 
 ### 17.3 Subjects and the homepage
 
@@ -2086,6 +2096,37 @@ the admin Inbox from their second failure.
 - The search dropdown shows two things: the emotion carousel and universal hits
   under section headers. A non-empty panel doesn't mean the emotion matched.
 
+### 17.11 Schools
+
+Organisations that train and certify teachers (migration `0029`; website
+since 30 Oct 2026, app in the build after 1.0.1). A school is a **listing**
+(`healers.entity_type = 'school'`), not its own table like publishers,
+because it owns content: its story, offerings, videos, reviews and saves all
+work as for any listing, and converting a Channel is one change of type.
+From publishers it borrows the link table, the logo panel and the shelf card.
+
+- **Teachers:** `school_teachers` links a school to its teachers, as
+  **Founder** or **Instructor**; a teacher can belong to several schools.
+  Linked through ingestion (`teaches_at`, §18.3) or the admin (a school's
+  Profile tab → Teachers at this school, by slug).
+- **The school's page** (`/healers/{slug}`, the same address it always had):
+  its picture on the white logo panel (`PublisherLogo`), the School pill,
+  "Founded YYYY · Visit website →", then **Our Teachers** (founder first,
+  then by tier and name) above its own shelves.
+- **A teacher's page:** "Founder of …" / "Teaches at …" under the name, each
+  school linked.
+- **Discover:** **Schools & Academies** after Publishing Houses
+  (`SchoolCard`: logo panel, "5 teachers · Founded 2008"). Schools leave
+  Explore These Channels; in search, subject pages and My Library they are
+  with the channels (`isPlatform`), labelled School.
+- **Admin:** School in both type dropdowns, a Founded field, the Teachers
+  list, and a Schools count on the overview.
+- **Outreach:** unchanged. Journeys go to individuals only
+  (`outreachAllowedFor`), so a school is left out like a channel; its
+  teachers keep their own.
+- **First schools:** White Tiger Qigong (Tevia Feng, founder, and instructors)
+  and Skies and Flora (Shaka, founder; a Channel until 30 Oct 2026).
+
 ---
 
 ## 18. Content ingestion
@@ -2203,7 +2244,8 @@ node scripts/ingest.mjs <plan.json> --env dev --rollback    # delete exactly wha
     "healer_slug": "napoleon-hill",
     "create": {
       "name": "", "bio": "", "tier": "superhero|luminary|local_hero|ascended_master",
-      "entity_type": "individual|channel|app|organisation", "subjects": [],
+      "entity_type": "individual|channel|app|organisation|school", "subjects": [],
+      "founded_year": null,
       "birth_year": null, "death_year": null,
       "website_url": "", "youtube_url": "", "instagram_url": "", "facebook_url": "",
       "twitter_url": "", "tiktok_url": "", "booking_url": "", "contact_email": "",
@@ -2216,6 +2258,7 @@ node scripts/ingest.mjs <plan.json> --env dev --rollback    # delete exactly wha
               "goodreads_url": "", "worldofbooks_url": null, "description": "", "subjects": [],
               "co_authors": [] }],
   "co_authorships": [{ "book_slug": "the-priestess-transmissions", "add": ["amy-belair"] }],
+  "teaches_at": [{ "school": "white-tiger-qigong", "role": "founder|instructor" }],
   "courses": [{ "title": "", "url": "", "page": "", "description": "", "price": "", "image": "",
                 "product_type": "course|retreat|download|membership",
                 "start_date": null, "end_date": null, "subjects": [] }],
@@ -2234,6 +2277,12 @@ other authors' healer slugs in the book's `co_authors` (each must already be
 on Spiritpedia). For a book that's **already in** under its other author
 (an ASIN can only be in once), add the co-author with `co_authorships` in
 the new author's plan instead. `--rollback` puts the old co-author list back.
+
+**Schools** (§17.11): a school is a healer with `"entity_type": "school"` and,
+when known, `founded_year`. A teacher's plan links them with `teaches_at`
+(the school must already be in, as a school); `--rollback` removes the link.
+Turning a Channel into a School is a plan with `"update": { "entity_type":
+"school" }` (example: `skies-and-flora-school.json`).
 
 ### 18.4 The rules
 
@@ -2347,6 +2396,7 @@ dev, give the pages to check, stop. Live after their OK, as for healers.
 | Shaka (new, Rising Star; Puerto Viejo, Costa Rica, local and online; shown without a surname) and Skies and Flora (new, Rising Star, a Channel until there's a School type: her yoga school) | 30 Oct 2026: Shaka 3 offerings (Foundations in Psychic Development and Empaths and HSP through the School of Intuition and Healing, the MP3 reading); Skies and Flora 10 videos from @skiesandflora (13 music videos and 5 dated readings left out), the 200hr Yoga Teacher Training (the BookRetreats price, from $5,350 with accommodation and meals). The forthcoming book left out. Skies and Flora's photo is from its own site, not the YouTube channel picture | 30 Oct 2026, the same |
 | Reiki batch 1 (new, Luminary): Lisa Powers, Pamela Miles (New York City, local and online), Kathleen Prasad | 30 Oct 2026: Lisa 11 videos (7 more have embedding switched off, so they can't play here), 6 books, 6 offerings (the 4 Udemy courses use their Teachable thumbnails), 2 free resources; Pamela 14 videos (the 5 foreign-language versions and the 30-day challenge promo left out), 1 book, 6 offerings, the Reiki Timer app; Kathleen 20 videos, 13 books (Animal Reiki Tails Volume 1 left out: no listing), 6 offerings | 30 Oct 2026, the same |
 | Reiki batch 2: Nathalie Jaspar (Local Hero, New York City), Torsten Lange (Local Hero, London), Melissa Crowhurst (Luminary), Bronwen Logan (Local Hero, Mount Tomah, Australia), Frans Stiene (Luminary, profile only); top-ups for Andrea Kennedy and Jillian (The Lune INNATE) | 30 Oct 2026: Nathalie 19 videos, 3 books, 3 offerings (her certification left out until her schedule is confirmed); Torsten 20 videos, 3 books, 12 offerings (past-dated workshops, the Mediumship workshop and the January Challenge left out); Melissa 17 videos (2 music videos left out, 1 can't be embedded), 17 books, 26 offerings; Bronwen 19 videos (the music video left out), 3 solo books, 21 offerings, the free Waka Wisdom Day 1; Andrea 1 video; Jillian 2 offerings. Removed under the health-claim rule: Jillian's "Reiki for Clearing Depression…" and "REIKI FOR WEIGHT LOSS" videos; "psychic surgery" taken out of her Reiki Level III description; "PLEASE READ BIO" taken off one title; Andrea's closed course Channel Your Divine Self removed (logs: `reiki-batch-2-fixes.<env>.json`). Frans's books 870, 871, 878, 879, 880 moved from Mikao Usui to him; Bronwen co-author on the Sourcebook and The Japanese Art of Reiki | 30 Oct 2026, the same |
+| White Tiger Qigong (new School, Luminary, founded 2008) with Tevia Feng (founder, Luminary), Sarah Divine, Ariel Tang, Joanne Faulkner and Vince Sauter (instructors, Local Hero); Skies and Flora changed from Channel to School, Shaka linked as its founder (`white-tiger-qigong.md`, `*-content.json`) | 30 Oct 2026: White Tiger 20 videos, 11 offerings (membership, 6 certification tracks, 4 Vietnam retreats), 2 free resources; Tevia 2 books, the Prescription System (his teaching videos are on the school; no YMAA book on Amazon, only a DVD; 8 Trigram only as a Japanese Kindle edition, left out); Sarah 14 videos, 4 offerings; Ariel 13 videos, 4 offerings, 2 free resources (Egypt pilgrimage past); Joanne 20 videos, 2 books, 2 offerings, 2 free resources, YouTube corrected to @ChiFlowWithJo; Vince 14 videos, 2 offerings, 2 free resources, YouTube corrected to @vincesauter5290 ("Everyday All Day" not on Amazon). Left out under the health-claim rule: 13 videos, Joanne's Wise Women retreat, Parkinson's material and four courses. Isaac Osborne and Natalie Ramon on hold (no confirmed photo); Wendy Jones left out (location unverified) | 30 Oct 2026, the same |
 
 ---
 

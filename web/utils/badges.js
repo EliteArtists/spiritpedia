@@ -1,6 +1,7 @@
 // Badges on every listing (migration 0023). README → "Badges explained".
 //
-//   Type      what it is: Practitioner, Channel, App, Organisation, Publisher.
+//   Type      what it is: Practitioner, Channel, App, Organisation, School,
+//             Publisher.
 //             Set by the admin at approval.
 //   Tier      how big it is. Set by the admin; never for sale. The same three
 //             stored values for everyone, named for people or for platforms:
@@ -34,6 +35,7 @@ const TYPES = {
   channel: 'Channel',
   app: 'App',
   organisation: 'Organisation',
+  school: 'School',
 };
 
 // A person: entity_type 'individual', or NULL as it always was. A publisher is

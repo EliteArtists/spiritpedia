@@ -1,0 +1,38 @@
+{
+  "healer": {
+    "healer_slug": "sarah-divine",
+    "create": {
+      "name": "Sarah Divine",
+      "bio": "Sarah Divine has taught qigong since 2015 and is one of White Tiger Qigong's most senior teachers. She is a Level 6 Senior Instructor certified in every one of the school's systems, and she serves as its Assistant Academic Director, helping shape the global curriculum and train new instructors. She holds a Master's degree in Sport and Exercise Science. Her teaching combines Daoist medical qigong and Chinese medicine principles with fascia research, biomechanics, breathwork and nervous-system regulation.\n\nIn Adelaide, she is known for taking her practice outdoors. She runs weekly groups in the city's Park Lands, at Veale Gardens and Hurtle Square/Tangkaira, where passers-by often stop to join in. She also teaches live classes on Zoom, runs workshops and multi-week courses, offers private one-to-one training, and leads seasonal retreats. Her teaching is careful and compassionate, and focuses on helping students move more freely, settle stress and practise safely.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local_online",
+      "subjects": [
+        "qi-gong",
+        "breathwork",
+        "self-healing"
+      ],
+      "city": "Adelaide",
+      "country": "Australia",
+      "contact_email": "sarahdivine@whitetigerqigong.com",
+      "website_url": "https://www.sarahdivineqigong.com/",
+      "booking_url": "https://www.sarahdivineqigong.com/",
+      "instagram_url": "https://www.instagram.com/sarah_divine_qigong/",
+      "facebook_url": "https://www.facebook.com/SarahDivineQigong/",
+      "image_urls": [
+        "https://static.wixstatic.com/media/65cff2_e04b2aec926141c1887712580887be73~mv2.jpg"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "school": "white-tiger-qigong",
+      "role": "instructor"
+    }
+  ],
+  "videos": [],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "images_final": true
+}

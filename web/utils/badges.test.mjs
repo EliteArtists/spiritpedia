@@ -56,6 +56,7 @@ test('a channel: its tier alongside its type, never instead of it', () => {
   const badges = listingBadges({ name: 'Meditative Mind', tier: 'superhero', entity_type: 'channel' });
   assert.deepEqual(badges.map((b) => b.label), ['Superstar', 'Channel']);
   assert.equal(typeLabel('app'), 'App');
+  assert.equal(typeLabel('school'), 'School');
   assert.equal(typeLabel('individual'), null);
 });
 

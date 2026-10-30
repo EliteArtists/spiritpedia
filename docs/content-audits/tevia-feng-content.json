@@ -1,0 +1,66 @@
+{
+  "healer": {
+    "healer_slug": "tevia-feng"
+  },
+  "books": [
+    {
+      "title": "Five Animal Qigong: Fascia and Chinese Medicine's Unique Role In An Ancient Qigong Form",
+      "slug": "five-animal-qigong-fascia-and-chinese-medicine",
+      "author": "Tevia Feng",
+      "asin": "1521295891",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "A self-published illustrated guide to Hua Tuo's Five Animal Qigong, with instructions for more than 20 animal forms. It links each form to fascia, anatomy and Chinese medicine theory.",
+      "subjects": [
+        "qi-gong",
+        "ancient-wisdom"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1521295891.01._SCLZZZZZZZ_.jpg",
+      "store": "amazon.com"
+    },
+    {
+      "title": "5 Element Qigong: 5 Powerful Ancient Animal Qigong Forms, Fascia, Anatomy and the Chinese Medicine Connections",
+      "slug": "5-element-qigong",
+      "author": "Tevia Feng",
+      "asin": "1940085098",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "A self-published guide to the five animal-element forms taught at White Tiger Qigong. It sets out each form step by step and explains its connections to fascia, anatomy and the Five Elements.",
+      "subjects": [
+        "qi-gong",
+        "ancient-wisdom"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1940085098.01._SCLZZZZZZZ_.jpg",
+      "store": "amazon.com"
+    }
+  ],
+  "courses": [
+    {
+      "title": "The White Tiger Prescription System with Tevia Feng",
+      "url": "https://www.whitetigerqigong.com/products/white-tiger-prescription-system",
+      "description": "Private sessions with Tevia Feng that begin with a discovery session. He combines a BaZi chart reading, Chinese face reading and a Five Element assessment, then writes a personal qigong practice with a daily schedule and movement recordings. Packages run from a single session to ten sessions, plus a three-session option for couples.",
+      "price": "From $500 USD",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "qi-gong",
+        "ancient-wisdom",
+        "astrology"
+      ],
+      "image": "http://www.whitetigerqigong.com/cdn/shop/files/Tevia_Feng.png?v=1745317487"
+    }
+  ],
+  "notes": [
+    "Content for an existing listing (White Tiger Qigong batch, 30 Oct 2026); researched under the usual ingestion rules.",
+    "Left out at review: 8 Trigram Organ Qigong, whose only Amazon listing is the Japanese Kindle edition (B093ZK2Y37).",
+    "No YMAA book found: his YMAA title is the Five Elements Qigong DVD, which has no Amazon listing.",
+    "YMAA: the only YMAA title by Tevia Feng I could find is the Five Elements Qigong DVD (ymaa.com/publishing/dvd/five-elements-qigong-dvd), not a book. I found no YMAA print book and no Amazon listing for the DVD, so nothing from YMAA is included. ymaa.com returned 403 to fetches, so the DVD was confirmed via search results and a reseller (budovideos.com) only.",
+    "Books: Five Animal Qigong (1521295891) and 5 Element Qigong (1940085098) confirmed by opening their amazon.com /dp/ pages. Goodreads/World of Books URLs null for these (not opened).",
+    "8 Trigram Organ Qigong: the English edition (Kindle, Oct 2017; Google Books lists print ISBN 9781940085081) did not resolve on amazon.com. The only Amazon listing found is the Japanese Kindle edition, B093ZK2Y37 (found via search on amazon.com and amazon.co.uk; Amazon blocked a direct open). Included with '(Japanese Edition)' in the title; drop it if you want English listings only. Goodreads URL is the English Kindle edition, which I opened.",
+    "Not included: 'Five Animal Qigong: Awaken Your Body Mind and Spirit' (Kindle B071491MLG), which looks like an ebook edition of the Five Animal book; 'Qigong for Combat Sports' (Kindle, 2021, co-written with Dua'a Husain), which is not one of the three qigong books; and 'THE DRAGON LINE' (digital book sold only on whitetigerqigong.com, published 26 Oct 2026, $39, no Amazon listing).",
+    "Prescription System: four packages published: Discovery Diagnostic 1 session $500, Prescription Arc 5 sessions $2,500, Complete Transformation 10 sessions $4,500, Partner Arc 3 sessions for couples $1,499 (USD). Entered as product_type 'course' as instructed. The page's claims (Bhutan monastery authorisation, diagnosis-style language) are kept out of the description.",
+    "No videos on Tevia: they go on White Tiger Qigong."
+  ],
+  "images_final": true
+}

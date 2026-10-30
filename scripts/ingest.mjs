@@ -27,7 +27,8 @@ const BROADEST = ['spirituality', 'consciousness', 'spiritual-awakening', 'mindf
 const PRODUCT_TYPES = ['course', 'retreat', 'download', 'membership'];
 const RESOURCE_TYPES = ['practice', 'download', 'meditation', 'workshop', 'mini_course'];
 const TIERS = ['superhero', 'luminary', 'local_hero', 'ascended_master'];
-const ENTITY_TYPES = ['individual', 'channel', 'app', 'organisation'];
+const ENTITY_TYPES = ['individual', 'channel', 'app', 'organisation', 'school'];
+const SCHOOL_ROLES = ['founder', 'instructor'];
 const AVAILABILITY = {
   worldwide: 'Worldwide (Famous Names)',
   local: 'Local Only (In-Person)',
@@ -240,7 +241,7 @@ if (create) {
   if (byName) problems.push(`a healer named "${create.name}" already exists as ${byName.healer_slug}`);
 }
 const UPDATABLE = ['bio', 'image_urls', 'subject_slugs', 'booking_url', 'website_url', 'youtube_url', 'instagram_url',
-  'facebook_url', 'twitter_url', 'tiktok_url', 'contact_email', 'birth_year', 'death_year', 'tier', 'entity_type'];
+  'facebook_url', 'twitter_url', 'tiktok_url', 'contact_email', 'birth_year', 'death_year', 'tier', 'entity_type', 'founded_year'];
 for (const k of Object.keys(plan.healer?.update || {})) if (!UPDATABLE.includes(k)) problems.push(`healer update: "${k}" can't be changed here`);
 say(`Healer: ${healer ? `${healer.name} (id ${healer.id}, ${healer.tier})` : `${slug}: new, ${create?.name}, suggested ${create?.tier} / ${create?.entity_type}`}`);
 
@@ -440,6 +441,22 @@ for (const c of plan.co_authorships || []) {
   else notes.push(`skip co-authorship "${book.title}": already done`);
 }
 
+// Schools this teacher teaches at (migration 0029):
+// "teaches_at": [{ "school": "white-tiger-qigong", "role": "founder" | "instructor" }].
+const schoolLinks = [];
+for (const s of plan.teaches_at || []) {
+  const role = s.role || 'instructor';
+  if (!SCHOOL_ROLES.includes(role)) problems.push(`teaches at "${s.school}": role "${role}" isn't one of ${SCHOOL_ROLES.join(', ')}`);
+  const [school] = await get(`healers?select=id,name,entity_type&healer_slug=eq.${encodeURIComponent(s.school)}`);
+  if (!school) { problems.push(`teaches at: no listing "${s.school}"`); continue; }
+  if (school.entity_type !== 'school') { problems.push(`teaches at: "${school.name}" isn't a school (it's ${school.entity_type || 'individual'})`); continue; }
+  if (healer && (await get(`school_teachers?select=id&school_id=eq.${school.id}&teacher_id=eq.${healer.id}`)).length) {
+    notes.push(`skip teaches at "${school.name}": already linked`);
+    continue;
+  }
+  schoolLinks.push({ school_id: school.id, name: school.name, role });
+}
+
 for (const c of plan.courses || []) {
   fixSubjects('offering', c);
   if (!PRODUCT_TYPES.includes(c.product_type)) problems.push(`${label('offering', c)}: product_type "${c.product_type}" isn't one of ${PRODUCT_TYPES.join(', ')}`);
@@ -474,6 +491,7 @@ savePlan();
 const count = (t) => queue.filter((q) => q.table === t).length;
 say(`To add on ${envName}: ${count('videos')} videos, ${count('books')} books, ${count('courses')} offerings, ${count('free_resources')} free resources${create ? ', and the healer' : ''}`);
 coAuthorships.forEach((c) => say(`Co-authors for "${c.title}": ${c.after.join(', ')}`));
+schoolLinks.forEach((s) => say(`Teaches at ${s.name} (${s.role})`));
 if (decisions.length) { say('Decided by default:'); decisions.forEach((d) => say(`  - ${d}`)); }
 const already = notes.filter((n) => n.startsWith('skip '));
 if (already.length) say(`Skipped ${already.length} already in or removed by their owner${args.includes('--verbose') ? ':' : ' (--verbose lists them)'}`);
@@ -507,6 +525,7 @@ if (create) {
     website_url: create.website_url || null, youtube_url: create.youtube_url || null,
     instagram_url: create.instagram_url || null, facebook_url: create.facebook_url || null,
     twitter_url: create.twitter_url || null, tiktok_url: create.tiktok_url || null,
+    founded_year: create.founded_year || null,
   });
   log.healer = { id: healer.id, healer_slug: slug };
   saveLog();
@@ -534,6 +553,12 @@ for (const c of coAuthorships) {
   saveLog();
   say(`  ~ books "${c.title}": co-authors ${c.after.join(', ')}`);
 }
+for (const s of schoolLinks) {
+  const r = await insert('school_teachers', { school_id: s.school_id, teacher_id: healer.id, role: s.role });
+  log.rows.push({ table: 'school_teachers', id: r.id, title: `${slug} teaches at ${s.name}` });
+  saveLog();
+  say(`  + teaches at ${s.name} (${s.role})`);
+}
 plan.images_final = true;
 savePlan();
-say(`Inserted ${queue.length} rows${create ? ' and the healer' : ''}${coAuthorships.length ? `, co-authors on ${coAuthorships.length} book(s)` : ''}. Log: ${path.relative(process.cwd(), logPath)}`);
+say(`Inserted ${queue.length + schoolLinks.length} rows${create ? ' and the healer' : ''}${coAuthorships.length ? `, co-authors on ${coAuthorships.length} book(s)` : ''}. Log: ${path.relative(process.cwd(), logPath)}`);

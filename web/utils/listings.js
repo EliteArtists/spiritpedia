@@ -1,5 +1,5 @@
-// Listings of every kind: practitioners, channels, podcasts, apps, publishers
-// and organisations (migration 0020).
+// Listings of every kind: practitioners, channels, podcasts, apps, publishers,
+// organisations (migration 0020) and schools (0029).
 //
 // Everyone who shares their work signs up the same way, as user_type
 // 'practitioner'. The KIND of listing lives on the listing — healers.entity_type,
@@ -31,10 +31,11 @@ export const LISTING_TYPES = [
   { value: 'channel', label: 'Channel or podcast' },
   { value: 'app', label: 'App' },
   { value: 'organisation', label: 'Organisation' },
+  { value: 'school', label: 'School' },
   { value: 'publisher', label: 'Publisher' },
 ];
 
-export const ENTITY_TYPES = ['individual', 'channel', 'app', 'organisation'];
+export const ENTITY_TYPES = ['individual', 'channel', 'app', 'organisation', 'school'];
 
 // The admin's dropdown, pre-filled from the applicant's own answer. "Not sure"
 // and no answer leave it for the admin to choose ('').
@@ -51,11 +52,24 @@ export function suggestedListingType(describedAs) {
   return SUGGESTED[describedAs] || '';
 }
 
-// Channels, apps and organisations share Explore These Channels; everything
-// else is a person. NULL is a person, as it always was.
+// Channels, apps, organisations and schools are not people: they are listed
+// apart from the teachers (search, subject pages, My Library, a publisher's
+// channels). Everything else is a person. NULL is a person, as it always was.
 export function isPlatform(healer) {
   const t = healer?.entity_type;
-  return t === 'channel' || t === 'app' || t === 'organisation';
+  return t === 'channel' || t === 'app' || t === 'organisation' || t === 'school';
+}
+
+// A school (0029): its own Schools & Academies shelf on Discover, rather than
+// Explore These Channels, and "Our Teachers" on its page.
+export function isSchool(healer) {
+  return healer?.entity_type === 'school';
+}
+
+// "8 teachers", counted from school_teachers rows ({ school_id }) for one
+// school.
+export function teacherCount(school, links) {
+  return (Array.isArray(links) ? links : []).filter((l) => l?.school_id === school?.id).length;
 }
 
 // A publisher's "N authors": the people among its linked listings, never its

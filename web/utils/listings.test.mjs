@@ -6,7 +6,9 @@ import {
   claimPath,
   inPersonFrom,
   isPlatform,
+  isSchool,
   officialFirst,
+  teacherCount,
   suggestedListingType,
 } from './listings.js';
 
@@ -17,6 +19,21 @@ test('channels, apps and organisations are platforms; people and NULL are not', 
   assert.equal(isPlatform({ entity_type: 'individual' }), false);
   assert.equal(isPlatform({ entity_type: null }), false);
   assert.equal(isPlatform(null), false);
+});
+
+test('a school is not a person, and is a school (0029)', () => {
+  assert.equal(isPlatform({ entity_type: 'school' }), true);
+  assert.equal(isSchool({ entity_type: 'school' }), true);
+  assert.equal(isSchool({ entity_type: 'channel' }), false);
+  assert.equal(isSchool({ entity_type: null }), false);
+  assert.equal(isSchool(null), false);
+});
+
+test("a school's teacher count counts only its own links", () => {
+  const links = [{ school_id: 1 }, { school_id: 1 }, { school_id: 2 }];
+  assert.equal(teacherCount({ id: 1 }, links), 2);
+  assert.equal(teacherCount({ id: 3 }, links), 0);
+  assert.equal(teacherCount({ id: 1 }, null), 0);
 });
 
 test('Spiritpedia Official comes first, the rest keep their order', () => {

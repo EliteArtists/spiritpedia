@@ -4,6 +4,7 @@ import BookCard from '@/components/BookCard';
 import BackButton from '@/components/BackButton';
 import ContentShelf from '@/components/ContentShelf';
 import FreeResourceCard from '@/components/FreeResourceCard';
+import HealerCard from '@/components/HealerCard';
 import HeroImageRotator from '@/components/HeroImageRotator';
 import OfferingCard from '@/components/OfferingCard';
 import VideoPlayer from '@/components/VideoPlayer';
@@ -12,9 +13,16 @@ import { buildMetadata, notFoundMetadata, pickImage, SITE_URL } from '@/utils/se
 import { formatLifespan, LIFESPAN_BADGE_CLASS } from '@/utils/lifespan';
 import TrackOpen from '@/components/TrackOpen';
 import ListingBadges from '@/components/ListingBadges';
+import PublisherLogo from '@/components/PublisherLogo';
 import { actionLabel, actionUrl, isPerson, withScheme } from '@/utils/badges';
 import { MEDICAL_NOTE, needsMedicalNote } from '@/utils/medicalNote';
 import { booksByAuthorsFilter } from '@/utils/bookAuthors';
+import { isSchool } from '@/utils/listings';
+
+// Our Teachers on a school's page: the founder first, then by tier, then by
+// name.
+const TIER_ORDER = ['superhero', 'ascended_master', 'luminary', 'local_hero'];
+const tierRank = (tier) => (TIER_ORDER.includes(tier) ? TIER_ORDER.indexOf(tier) : TIER_ORDER.length);
 
 // Hourly ceiling on staleness — see the note in app/page.js. Reading
 // searchParams for the back link already makes this route per-request, so this
@@ -192,6 +200,35 @@ export default async function HealerProfile({ params, searchParams }) {
     : { data: [] };
   const { data: videos } = await supabase.from('videos').select('*').eq('healer_slug', slug);
 
+  // Schools (migration 0029). A school lists its teachers; a teacher shows
+  // the schools they teach at. school_teachers has two keys to healers, so
+  // each embed names the one it follows.
+  const school = isSchool(healer);
+  const { data: schoolLinks } = await supabase
+    .from('school_teachers')
+    .select(
+      school
+        ? 'role, teacher:healers!school_teachers_teacher_id_fkey(*)'
+        : 'role, school:healers!school_teachers_school_id_fkey(name, healer_slug)'
+    )
+    .eq(school ? 'school_id' : 'teacher_id', healer.id);
+  const links = Array.isArray(schoolLinks) ? schoolLinks : [];
+  const teachers = school
+    ? links
+        .filter((l) => l.teacher)
+        .sort(
+          (a, b) =>
+            (a.role === 'founder' ? 0 : 1) - (b.role === 'founder' ? 0 : 1) ||
+            tierRank(a.teacher.tier) - tierRank(b.teacher.tier) ||
+            a.teacher.name.localeCompare(b.teacher.name)
+        )
+        .map((l) => l.teacher)
+    : [];
+  // "Founder of White Tiger Qigong", "Teaches at Skies and Flora", founders first.
+  const teachesAt = school
+    ? []
+    : links.filter((l) => l.school).sort((a, b) => (a.role === 'founder' ? 0 : 1) - (b.role === 'founder' ? 0 : 1));
+
   // EXPIRATION WINDOW — offerings surface only while live: the row must be
   // is_active, and either evergreen (end_date IS NULL) or not yet past its end
   // date. today is a YYYY-MM-DD string to match the DATE column format.
@@ -291,8 +328,20 @@ export default async function HealerProfile({ params, searchParams }) {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-[2fr_3fr] gap-10">
-            {/* 1a · LEFT — contained rotating portrait + indicator dots. */}
-            <HeroImageRotator images={portraits} alt={healer.name} />
+            {/* 1a · LEFT — contained rotating portrait + indicator dots. A
+                school's picture is usually its logo, so it sits on the
+                publisher's white logo panel instead (PublisherLogo). */}
+            {school ? (
+              <div className="relative aspect-square w-full min-w-0">
+                <PublisherLogo
+                  publisher={{ name: healer.name, logo_url: portraits[0] || null }}
+                  className="absolute inset-0"
+                  padding="p-10"
+                />
+              </div>
+            ) : (
+              <HeroImageRotator images={portraits} alt={healer.name} />
+            )}
 
             {/* 1b · RIGHT — name, tier, social, bio, contact. */}
             <div className="min-w-0">
@@ -301,6 +350,49 @@ export default async function HealerProfile({ params, searchParams }) {
               <div className="mt-3">
                 <ProfileBadges healer={healer} />
               </div>
+
+              {/* A school: "Founded 2008 · Visit website →", as on a publisher's
+                  page. */}
+              {school && (healer.founded_year || healer.website_url) && (
+                <p className="mt-3 flex flex-wrap items-center gap-x-3 gap-y-1 text-sm text-gray-400">
+                  {healer.founded_year && <span>Founded {healer.founded_year}</span>}
+                  {healer.founded_year && healer.website_url && <span aria-hidden="true">·</span>}
+                  {healer.website_url && (
+                    <a
+                      href={withScheme(healer.website_url)}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="font-semibold text-[#a78bfa] hover:text-white"
+                    >
+                      Visit website &rarr;
+                    </a>
+                  )}
+                </p>
+              )}
+
+              {/* A teacher: the schools they teach at, each linked. */}
+              {teachesAt.length > 0 && (
+                <p className="mt-3 text-sm text-gray-400">
+                  {teachesAt.map((l, i) => (
+                    <span key={l.school.healer_slug}>
+                      {i > 0 && (i === teachesAt.length - 1 ? ' and ' : ', ')}
+                      {i === 0 || l.role !== teachesAt[i - 1].role
+                        ? l.role === 'founder'
+                          ? 'Founder of '
+                          : i === 0
+                            ? 'Teaches at '
+                            : 'teaches at '
+                        : ''}
+                      <a
+                        href={`/healers/${l.school.healer_slug}?from=${encodeURIComponent(fromHealer)}&fromTitle=${encodeURIComponent(healer.name)}`}
+                        className="font-semibold text-[#a78bfa] hover:text-white"
+                      >
+                        {l.school.name}
+                      </a>
+                    </span>
+                  ))}
+                </p>
+              )}
 
               {/* Social row — the same frosted-glass icon buttons as before,
                   moved off the image and onto the dark column. Hidden entirely
@@ -419,6 +511,15 @@ export default async function HealerProfile({ params, searchParams }) {
           width and stop the tracks from scrolling. Each ContentShelf hides itself
           when empty, so zero-content categories leave no orphaned headers. */}
       <div className="mx-auto max-w-7xl px-6 pb-20 grid grid-cols-1 gap-14">
+        {/* 4 · A school's teachers (0029), first. Hidden when it has none. */}
+        <ContentShelf
+          title="Our Teachers"
+          subtitle="Teach With Us"
+          items={teachers}
+          renderItem={(teacher) => <HealerCard healer={teacher} />}
+          itemWidthClass="w-[260px]"
+        />
+
         {/* 4a · Videos */}
         <ContentShelf
           title="Videos"

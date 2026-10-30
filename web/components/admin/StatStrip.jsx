@@ -14,6 +14,7 @@ const CELLS = [
   { key: 'courses', label: 'Courses' },
   { key: 'free_resources', label: 'Resources' },
   { key: 'publishers', label: 'Publishers' },
+  { key: 'schools', label: 'Schools' },
   { key: 'users', label: 'Users', needsAccounts: true },
 ];
 
@@ -21,7 +22,7 @@ export default function StatStrip() {
   const { counts, loading, accountsAvailable, error } = useAdminData();
 
   return (
-    <div className="mb-6 grid grid-cols-2 gap-2 sm:grid-cols-4 lg:grid-cols-7">
+    <div className="mb-6 grid grid-cols-2 gap-2 sm:grid-cols-4 lg:grid-cols-8">
       {CELLS.map((cell) => {
         // `?? 0` would have been a lie, not a gap: with the database
         // unreachable, counts is empty and every cell read "0 Healers" when
