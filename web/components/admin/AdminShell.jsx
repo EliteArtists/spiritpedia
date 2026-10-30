@@ -69,6 +69,7 @@ function Sidebar({ pathname }) {
     <aside className="fixed inset-y-0 left-0 z-40 flex w-16 flex-col border-r border-white/10 bg-[#111827] md:w-60">
       <div className="flex items-center gap-3 px-3 py-5 md:px-4">
         <img
+          referrerPolicy="no-referrer"
           src="/Spiritpedia_Header_Symbol.png"
           alt=""
           aria-hidden="true"

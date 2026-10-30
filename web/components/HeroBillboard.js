@@ -74,6 +74,7 @@ export default function HeroBillboard({ healers = [], startIndex = 0 }) {
       <div className="absolute inset-y-0 right-0 w-3/5">
         {portrait ? (
           <img
+            referrerPolicy="no-referrer"
             key={portrait}
             src={portrait}
             alt={healer.name}

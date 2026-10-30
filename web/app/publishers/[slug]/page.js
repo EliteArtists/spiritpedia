@@ -210,6 +210,7 @@ export default async function PublisherProfile({ params, searchParams }) {
                   >
                     {portrait ? (
                       <img
+                        referrerPolicy="no-referrer"
                         loading="lazy"
                         decoding="async"
                         src={portrait}

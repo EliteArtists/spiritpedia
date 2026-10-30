@@ -175,6 +175,7 @@ function ApplicationDetail({ item, busy, onDecision, onApproveAndNext, hasNext }
         <div className="mt-5 flex flex-wrap gap-2">
           {p.image_urls.map((url) => (
             <img
+              referrerPolicy="no-referrer"
               key={url}
               src={url}
               alt=""

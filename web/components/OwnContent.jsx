@@ -223,7 +223,7 @@ function Editor({ as, mode, subjects, authors, onDone, onCancel }) {
           >
             <div className="flex items-center gap-4">
               {(image?.preview || currentImage) && (
-                <img src={image?.preview || currentImage} alt="" className="h-20 w-20 rounded-xl border border-white/10 object-cover" />
+                <img referrerPolicy="no-referrer" src={image?.preview || currentImage} alt="" className="h-20 w-20 rounded-xl border border-white/10 object-cover" />
               )}
               <button
                 type="button"
@@ -287,7 +287,7 @@ function Row({ thumb, title, sub, children }) {
   return (
     <li className="flex flex-wrap items-center gap-3 px-4 py-3">
       {thumb ? (
-        <img src={thumb} alt="" loading="lazy" className="h-12 w-12 shrink-0 rounded object-cover" />
+        <img referrerPolicy="no-referrer" src={thumb} alt="" loading="lazy" className="h-12 w-12 shrink-0 rounded object-cover" />
       ) : (
         <span className="h-12 w-12 shrink-0 rounded bg-white/5" aria-hidden="true" />
       )}

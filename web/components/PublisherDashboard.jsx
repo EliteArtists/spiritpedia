@@ -67,7 +67,7 @@ export default function PublisherDashboard() {
     <div className="text-left">
       <div className="flex items-center gap-4 rounded-2xl border border-white/10 bg-[#111827] p-5">
         {publisher.logo_url && (
-          <img src={publisher.logo_url} alt="" className="h-14 w-14 rounded-xl border border-white/10 object-cover" />
+          <img referrerPolicy="no-referrer" src={publisher.logo_url} alt="" className="h-14 w-14 rounded-xl border border-white/10 object-cover" />
         )}
         <div>
           <p className="text-lg font-bold text-white">{publisher.name}</p>

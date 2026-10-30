@@ -122,6 +122,7 @@ export default async function OfferingDetail({ params, searchParams }) {
         <div>
           {offering.image_url ? (
             <img
+              referrerPolicy="no-referrer"
               src={offering.image_url}
               alt={offering.title}
               className="w-full rounded-2xl object-cover max-h-[400px]"

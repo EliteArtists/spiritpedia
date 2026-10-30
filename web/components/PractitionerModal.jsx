@@ -141,6 +141,7 @@ export default function PractitionerModal({ open, onClose }) {
             mark stays one asset. Decorative: the heading below says what this
             is, and announcing the logo would add nothing. */}
         <img
+          referrerPolicy="no-referrer"
           src="/Spiritpedia_Header_Symbol.png"
           alt=""
           aria-hidden="true"

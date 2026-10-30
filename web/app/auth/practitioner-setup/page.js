@@ -370,6 +370,7 @@ export default function PractitionerSetupPage() {
             {images.map((url) => (
               <div key={url} className="relative">
                 <img
+                  referrerPolicy="no-referrer"
                   src={url}
                   alt=""
                   className="h-20 w-20 rounded-xl border border-white/10 object-cover"

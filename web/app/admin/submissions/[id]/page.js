@@ -34,7 +34,7 @@ function VideoPreview({ values }) {
   return (
     <div className="overflow-hidden rounded-2xl border border-white/10 bg-[#111827]">
       {id ? (
-        <img src={`https://i.ytimg.com/vi/${id}/hqdefault.jpg`} alt="" className="aspect-video w-full object-cover" />
+        <img referrerPolicy="no-referrer" src={`https://i.ytimg.com/vi/${id}/hqdefault.jpg`} alt="" className="aspect-video w-full object-cover" />
       ) : (
         <div className="flex aspect-video items-center justify-center text-slate-500">No video</div>
       )}
@@ -340,7 +340,7 @@ export default function SubmissionReviewPage({ params }) {
           {imagePreview && live && imageColumn && live[imageColumn] && (
             <div>
               <p className="text-xs text-amber-300/80">New image above. Was:</p>
-              <img src={live[imageColumn]} alt="" className="mt-2 h-24 w-24 rounded-xl object-cover" />
+              <img referrerPolicy="no-referrer" src={live[imageColumn]} alt="" className="mt-2 h-24 w-24 rounded-xl object-cover" />
             </div>
           )}
         </aside>

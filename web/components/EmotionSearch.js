@@ -765,6 +765,7 @@ export default function EmotionSearch() {
                         >
                           {img ? (
                             <img
+                              referrerPolicy="no-referrer"
                               src={img}
                               alt={h.name}
                               loading="lazy"
@@ -779,7 +780,7 @@ export default function EmotionSearch() {
                           <span className="flex-1 text-white text-sm truncate">{h.name}</span>
                           {type && <span className="text-[10px] font-bold uppercase tracking-wider text-gray-500">{type}</span>}
                           {badge.logo ? (
-                            <img src="/email/spiritpedia-star.png" alt="Official" className="h-4 w-4 object-contain" />
+                            <img referrerPolicy="no-referrer" src="/email/spiritpedia-star.png" alt="Official" className="h-4 w-4 object-contain" />
                           ) : (
                             <span className={`text-sm ${badge.className}`}>{badge.symbol}</span>
                           )}
@@ -805,6 +806,7 @@ export default function EmotionSearch() {
                         >
                           {cover ? (
                             <img
+                              referrerPolicy="no-referrer"
                               src={cover}
                               alt={b.title}
                               loading="lazy"
@@ -841,6 +843,7 @@ export default function EmotionSearch() {
                         >
                           {thumb ? (
                             <img
+                              referrerPolicy="no-referrer"
                               src={thumb}
                               alt={v.title}
                               loading="lazy"

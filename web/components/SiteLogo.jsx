@@ -13,6 +13,7 @@ export default function SiteLogo() {
   return (
     <Link href="/" className="flex items-center gap-2">
       <img
+        referrerPolicy="no-referrer"
         src="/Spiritpedia_Header_Symbol.png"
         alt=""
         aria-hidden="true"

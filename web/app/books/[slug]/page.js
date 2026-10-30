@@ -87,6 +87,7 @@ export default async function BookDetail({ params, searchParams }) {
         <div>
           {hasCover ? (
             <img
+              referrerPolicy="no-referrer"
               src={book.mock_cover_url}
               alt={book.title}
               className="w-full rounded-xl object-cover shadow-2xl"

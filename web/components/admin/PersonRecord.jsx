@@ -652,6 +652,7 @@ export default function PersonRecord({ personId, onBack, backLabel, onChanged })
                 {images.map((url) => (
                   <a key={url} href={url} target="_blank" rel="noopener noreferrer">
                     <img
+                      referrerPolicy="no-referrer"
                       src={url}
                       alt=""
                       loading="lazy"

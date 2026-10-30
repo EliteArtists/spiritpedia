@@ -152,7 +152,7 @@ export default function AreaModal({ open, onClose }) {
           </svg>
         </button>
 
-        <img src="/Spiritpedia_Header_Symbol.png" alt="" aria-hidden="true" className="mx-auto block h-9 w-9 object-contain" />
+        <img referrerPolicy="no-referrer" src="/Spiritpedia_Header_Symbol.png" alt="" aria-hidden="true" className="mx-auto block h-9 w-9 object-contain" />
         <h2 id={titleId} className="mt-3 text-2xl font-bold text-white">
           Your area
         </h2>

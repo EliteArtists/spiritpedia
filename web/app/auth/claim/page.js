@@ -161,6 +161,7 @@ function ClaimForm() {
 
       <div className="mt-8 rounded-3xl border border-white/10 bg-[#111827] p-8">
         <img
+          referrerPolicy="no-referrer"
           src={portrait}
           alt={healer.name}
           className="mx-auto h-28 w-28 rounded-full border border-white/10 object-cover"

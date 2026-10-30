@@ -14,6 +14,7 @@ export function LegalPage({ title, updated, intro, children }) {
         <div className="text-center">
           <Link href="/" aria-label="Spiritpedia home" className="inline-block">
             <img
+              referrerPolicy="no-referrer"
               src="/Spiritpedia_Header_Symbol.png"
               alt=""
               aria-hidden="true"

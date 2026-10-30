@@ -120,6 +120,7 @@ function PractitionerCard({ profile, onDecision, busy }) {
         <div className="mt-4 flex flex-wrap gap-2">
           {profile.image_urls.map((url) => (
             <img
+              referrerPolicy="no-referrer"
               key={url}
               src={url}
               alt=""

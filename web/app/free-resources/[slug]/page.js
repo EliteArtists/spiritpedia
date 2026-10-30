@@ -105,6 +105,7 @@ export default async function FreeResourceDetail({ params, searchParams }) {
         <div>
           {resource.image_url ? (
             <img
+              referrerPolicy="no-referrer"
               src={resource.image_url}
               alt={resource.title}
               className="w-full rounded-2xl object-cover max-h-[400px]"

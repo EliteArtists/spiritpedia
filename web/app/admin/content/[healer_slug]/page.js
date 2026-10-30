@@ -1245,6 +1245,7 @@ export default function AdminHealerRecordPage({ params }) {
         <div className="flex flex-wrap items-start gap-4">
           {images[0] ? (
             <img
+              referrerPolicy="no-referrer"
               src={images[0]}
               alt=""
               className="h-14 w-14 shrink-0 rounded-full border border-white/10 object-cover"

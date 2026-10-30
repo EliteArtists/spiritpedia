@@ -45,6 +45,7 @@ export default function HeroImageRotator({ images = [], alt = '' }) {
         {frames.length > 0 ? (
           frames.map((src, i) => (
             <img
+              referrerPolicy="no-referrer"
               key={i}
               src={src}
               alt={alt}

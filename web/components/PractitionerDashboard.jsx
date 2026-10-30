@@ -219,6 +219,7 @@ function ProfileTab({ healer, onSaved }) {
               {url ? (
                 <>
                   <img
+                    referrerPolicy="no-referrer"
                     src={url}
                     alt=""
                     className="aspect-square w-full rounded-xl border border-white/10 object-cover"

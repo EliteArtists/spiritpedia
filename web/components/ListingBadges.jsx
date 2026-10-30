@@ -86,7 +86,7 @@ export function Tipped({ tip, label, placement = 'above', align = 'right', child
           open ? 'visible opacity-100' : 'invisible opacity-0 group-hover/badge:visible group-hover/badge:opacity-100'
         }`}
       >
-        <img src="/Transparent_Symbol.png" alt="" className="mt-0.5 h-5 w-5 shrink-0 scale-150 object-contain" />
+        <img referrerPolicy="no-referrer" src="/Transparent_Symbol.png" alt="" className="mt-0.5 h-5 w-5 shrink-0 scale-150 object-contain" />
         <span>{tip}</span>
       </span>
     </span>

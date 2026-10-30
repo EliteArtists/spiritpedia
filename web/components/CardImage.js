@@ -56,6 +56,7 @@ export default function CardImage({
 
   return (
     <img
+      referrerPolicy="no-referrer"
       ref={captureBrokenImage}
       src={shownSrc}
       alt={alt}

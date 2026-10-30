@@ -61,6 +61,7 @@ export default function VideoPlayer({ video, variant, from, fromTitle, healerNam
             >
               {videoId ? (
                 <img
+                  referrerPolicy="no-referrer"
                   src={`https://img.youtube.com/vi/${videoId}/mqdefault.jpg`}
                   alt={video.title}
                   loading="lazy"

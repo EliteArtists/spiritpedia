@@ -18,6 +18,7 @@ export default function AuthShell({ children, maxWidthClass = 'max-w-sm' }) {
       <div className={`my-auto w-full ${maxWidthClass} text-center`}>
         <Link href="/" aria-label="Spiritpedia home" className="inline-block">
           <img
+            referrerPolicy="no-referrer"
             src="/Spiritpedia_Header_Symbol.png"
             alt=""
             aria-hidden="true"

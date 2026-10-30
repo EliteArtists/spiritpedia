@@ -156,6 +156,7 @@ export default function SavePrompt() {
         </button>
 
         <img
+          referrerPolicy="no-referrer"
           src="/Spiritpedia_Header_Symbol.png"
           alt=""
           aria-hidden="true"
