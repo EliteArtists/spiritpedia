@@ -1,0 +1,142 @@
+{
+ "healer": {
+  "healer_slug": "commune",
+  "create": {
+   "name": "Commune",
+   "bio": "Commune is an online school for inner and outer wellbeing, run from Topanga in the hills above Los Angeles. Its co-founder and chief executive, Jeff Krasno, earlier helped start the Wanderlust yoga festivals, and Commune grew out of the same idea: bring well-known teachers to people who could never get to them, this time through filmed courses rather than live gatherings.\n\nThe catalogue runs to well over a hundred video courses, each made with one teacher or a small group, and is sorted into four strands: Practice (yoga, meditation, breathwork and tapping), Growth (spiritual and personal development), Impact (mindful leadership, regeneration and civic life) and a Health strand. Teachers have included Marianne Williamson, Sadhguru, Byron Katie, Sharon Salzberg, Jack Kornfield and Adriene Mishler. A course can be bought outright, or the whole library opened through a yearly membership that adds daily practices, live member gatherings and a phone app. For deeper study, Communiversity runs five-week trainings in subjects such as qigong, yoga teaching and dharma talks on presence. Krasno also hosts the weekly Commune Podcast, a long-running series of conversations with teachers, thinkers and scientists.",
+   "tier": "luminary",
+   "entity_type": "organisation",
+   "availability": "online",
+   "city": "Topanga",
+   "country": "United States",
+   "founded_year": null,
+   "subjects": [
+    "meditation",
+    "yoga",
+    "spirituality"
+   ],
+   "website_url": "https://www.onecommune.com/",
+   "booking_url": "https://www.onecommune.com/courses",
+   "youtube_url": "https://www.youtube.com/@onecommune",
+   "instagram_url": "https://www.instagram.com/onecommune/",
+   "facebook_url": "https://www.facebook.com/wecommune/",
+   "twitter_url": "https://x.com/onecommune",
+   "tiktok_url": null,
+   "contact_email": "privacy@onecommune.com",
+   "image_urls": [
+    "https://yt3.googleusercontent.com/Dt6lq0tn-e4hOxUJBOnd-N7hvjpBJ5x1Y1h-Ei1Ct5QMO8jLnJlg3XQPxxeJhn0rVX6vvWHng1g=s900-c-k-c0x00ffffff-no-rj",
+    "https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/themes/2149497725/settings_images/hvYgijbSRGXYfeLVViD6_communiversity3.jpg"
+   ]
+  }
+ },
+ "videos": [],
+ "books": [],
+ "courses": [
+  {
+   "title": "Commune Courses",
+   "url": "https://www.onecommune.com/courses",
+   "description": "Commune's library of filmed courses, each built with one teacher: week-long meditation series, multi-part workshops on spiritual basics and relationships, yoga programmes and more. Each course can be bought once and kept, and many come with transcripts and a companion app.",
+   "price": "From $99 USD",
+   "product_type": "course",
+   "start_date": null,
+   "end_date": null,
+   "subjects": [
+    "meditation",
+    "yoga",
+    "spirituality"
+   ],
+   "image": "https://yt3.googleusercontent.com/Dt6lq0tn-e4hOxUJBOnd-N7hvjpBJ5x1Y1h-Ei1Ct5QMO8jLnJlg3XQPxxeJhn0rVX6vvWHng1g=s900-c-k-c0x00ffffff-no-rj"
+  },
+  {
+   "title": "Commune Membership",
+   "url": "https://www.onecommune.com/compassionate-resilience-with-sharon-salzberg",
+   "description": "One yearly plan that opens the whole course library, over a thousand short daily practices, live gatherings for members, a private community and the Commune app. A 14-day free trial comes first.",
+   "price": "$12 USD a month (1-year plan)",
+   "product_type": "membership",
+   "start_date": null,
+   "end_date": null,
+   "subjects": [
+    "meditation",
+    "yoga"
+   ],
+   "image": "https://yt3.googleusercontent.com/Dt6lq0tn-e4hOxUJBOnd-N7hvjpBJ5x1Y1h-Ei1Ct5QMO8jLnJlg3XQPxxeJhn0rVX6vvWHng1g=s900-c-k-c0x00ffffff-no-rj"
+  },
+  {
+   "title": "Communiversity",
+   "url": "https://www.onecommune.com/communiversity",
+   "description": "Commune's online academy of five-week trainings for going deeper into one subject, with recorded lessons and, on some courses, live calls. Current trainings include qigong and the Five Phases with Mimi Kuo-Deemer, yoga teaching with Schuyler Grant and dharma talks with Scott Schwenk.",
+   "price": null,
+   "product_type": "course",
+   "start_date": null,
+   "end_date": null,
+   "subjects": [
+    "tai-chi",
+    "yoga",
+    "meditation"
+   ],
+   "image": "https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/themes/2149497725/settings_images/hvYgijbSRGXYfeLVViD6_communiversity3.jpg"
+  }
+ ],
+ "free_resources": [
+  {
+   "title": "Commune Podcast",
+   "url": "https://www.onecommune.com/blog?tag=podcast",
+   "description": "A free weekly conversation hosted by Jeff Krasno with teachers, spiritual leaders, scientists and storytellers, now several hundred episodes deep. It is also on Apple Podcasts and Spotify.",
+   "featured": true,
+   "resource_type": "practice",
+   "subjects": [
+    "spirituality",
+    "meditation"
+   ],
+   "image": "https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/file-uploads/themes/3014222/settings_images/226abcc-e134-d008-303b-670eb734f55_Podcast_Commune_1x1_C4-100.jpg"
+  },
+  {
+   "title": "Commune on YouTube",
+   "url": "https://www.youtube.com/@onecommune",
+   "description": "Free clips, talks and full practices from Commune teachers, including yoga flows and guided meditations.",
+   "featured": false,
+   "resource_type": "practice",
+   "subjects": [
+    "yoga",
+    "meditation"
+   ],
+   "image": "https://yt3.googleusercontent.com/Dt6lq0tn-e4hOxUJBOnd-N7hvjpBJ5x1Y1h-Ei1Ct5QMO8jLnJlg3XQPxxeJhn0rVX6vvWHng1g=s900-c-k-c0x00ffffff-no-rj"
+  }
+ ],
+ "sprint": {
+  "tier_evidence": "Instagram 516K (profile page, @onecommune, 31 Oct 2026); Facebook 224,722 (description meta, facebook.com/wecommune, 31 Oct 2026); YouTube 184K (channel header next to @OneCommune, 31 Oct 2026) → ~925k total → luminary (Shining Star). BORDERLINE (0.8–1.5M band). X not counted (login needed).",
+  "email": "yes",
+  "email_source": "https://www.onecommune.com/terms §17 Contact information (privacy@onecommune.com, the only address the site publishes)",
+  "contact_form_url": "https://www.onecommune.com/contact",
+  "flags": [
+   "Email is the privacy address from the terms page, the only one published; the contact page has a form only. Owner may prefer the form.",
+   "Tier borderline: ~925k summed, 75k short of superhero. Editorial stature (100+ courses with many household-name teachers) could justify superhero; owner decides. No override set.",
+   "Founded year left blank: no first-party date found; Krasno's Commune Media role is dated August 2018 on a third-party profile.",
+   "Membership: /membership says 'coming soon' while course pages sell it at $12 a month (1-year) or 'as low as $150 a year'. Linked to a course page that shows the offer.",
+   "Courses price 'From $99': sample of 3 courses ($99 Salzberg, $199 Williamson, $399 LaPorte).",
+   "Communiversity price not published; left blank.",
+   "Health strand (40 courses) described in the bio only by name; no health course is listed as an item.",
+   "Organisation, not School."
+  ],
+  "left_out": [
+   "Individual courses (the teachers' own listings carry them).",
+   "Health-category courses and Luminescence (health brand).",
+   "Commune Summits and Luminescence LA events (no current dates confirmed).",
+   "Apparel and Market."
+  ],
+  "sources": [
+   "https://www.onecommune.com/",
+   "https://www.onecommune.com/terms",
+   "https://www.onecommune.com/contact",
+   "https://www.onecommune.com/communiversity",
+   "https://www.onecommune.com/blog?tag=podcast",
+   "https://www.onecommune.com/courses"
+  ],
+  "bio_check": "OK: no 8-word runs against 3 source(s)"
+ },
+ "notes": [
+  "Hub (README §18.7): Organisation, computed tier luminary (~925k, borderline).",
+  "Teacher pipeline: commune-faculty.json / commune-teachers.json, linked 'Teaches on Commune'."
+ ],
+ "images_final": true
+}

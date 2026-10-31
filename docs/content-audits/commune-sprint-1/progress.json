@@ -1,0 +1,623 @@
+{
+ "job": "Commune hub sprint 1: about 20 teachers with a current Commune course, to bring the Omega + Commune sprint to ~60 (README §18.7; owner, 31 Oct 2026)",
+ "started": "2026-10-31",
+ "rules": "docs/content-audits/commune-sprint-1/BRIEF.md",
+ "target": 20,
+ "queue": [
+  {
+   "rank": 1,
+   "name": "Schuyler Grant",
+   "commune_courses": [
+    {
+     "title": "Breath Medicine",
+     "url": "https://www.onecommune.com/breath-medicine-with-schuyler-grant"
+    },
+    {
+     "title": "21-Day Yoga Challenge",
+     "url": "https://www.onecommune.com/the-21-day-yoga-challenge-with-schuyler-grant"
+    },
+    {
+     "title": "Grounding Into Grace",
+     "url": "https://www.onecommune.com/grounding-into-grace-with-schuyler-grant"
+    },
+    {
+     "title": "Breath, Body, Beats",
+     "url": "https://www.onecommune.com/breath-body-beats-a-21-day-yoga-challenge-with-schuyler-grant"
+    },
+    {
+     "title": "Flow FIXXation",
+     "url": "https://www.onecommune.com/flow-fixxation-with-schuyler-grant"
+    },
+    {
+     "title": "The Fixx",
+     "url": "https://www.onecommune.com/try-commune-membership"
+    },
+    {
+     "title": "Resonance Flow",
+     "url": "https://www.onecommune.com/resonance-flow-with-schuyler-grant"
+    },
+    {
+     "title": "The Chill Pill",
+     "url": "https://www.onecommune.com/the-chill-pill-with-schuyler-grant"
+    },
+    {
+     "title": "Vinyasa for Life",
+     "url": "https://www.onecommune.com/vinyasa-for-life-with-schuyler-grant"
+    },
+    {
+     "title": "Superhero Training",
+     "url": "https://www.onecommune.com/try-commune-membership"
+    },
+    {
+     "title": "Foreplay for Arm Balances",
+     "url": "https://www.onecommune.com/try-commune-membership"
+    },
+    {
+     "title": "Back to the Core",
+     "url": "https://www.onecommune.com/back-to-the-core-with-schuyler-grant"
+    },
+    {
+     "title": "Kula Flow",
+     "url": "https://www.onecommune.com/try-commune-membership"
+    }
+   ],
+   "big_name": false,
+   "note": null,
+   "status": "todo",
+   "plan": null,
+   "skip_reason": null
+  },
+  {
+   "rank": 2,
+   "name": "Nikki Vilella",
+   "commune_courses": [
+    {
+     "title": "Kula Flow Schuyler Grant and",
+     "url": "https://www.onecommune.com/try-commune-membership"
+    },
+    {
+     "title": "From the Ground Up",
+     "url": "https://www.onecommune.com/try-commune-membership"
+    },
+    {
+     "title": "Backbends for Back Care",
+     "url": "https://www.onecommune.com/try-commune-membership"
+    }
+   ],
+   "big_name": false,
+   "note": null,
+   "status": "todo",
+   "plan": null,
+   "skip_reason": null
+  },
+  {
+   "rank": 3,
+   "name": "Michael B. Beckwith",
+   "commune_courses": [
+    {
+     "title": "Meditations for Life’s Challenges",
+     "url": "https://www.onecommune.com/meditations-for-lifes-challenges-with-michael-b-beckwith"
+    },
+    {
+     "title": "Practical Mysticism",
+     "url": "https://www.onecommune.com/practical-mysticism-with-michael-b-beckwith"
+    }
+   ],
+   "big_name": true,
+   "note": "Agape International Spiritual Center founder.",
+   "status": "todo",
+   "plan": null,
+   "skip_reason": null
+  },
+  {
+   "rank": 4,
+   "name": "Matt Phippen",
+   "commune_courses": [
+    {
+     "title": "A Strong & Stable Spine",
+     "url": "https://www.onecommune.com/try-commune-membership"
+    },
+    {
+     "title": "All at the Wall",
+     "url": "https://www.onecommune.com/try-commune-membership-free-14-day-trial-all-wall"
+    },
+    {
+     "title": "Neutral is Powerful",
+     "url": "https://www.onecommune.com/try-commune-membership"
+    }
+   ],
+   "big_name": false,
+   "note": null,
+   "status": "todo",
+   "plan": null,
+   "skip_reason": null
+  },
+  {
+   "rank": 5,
+   "name": "Mary Beth LaRue",
+   "commune_courses": [
+    {
+     "title": "The Release",
+     "url": "https://www.onecommune.com/try-commune-membership"
+    },
+    {
+     "title": "The Wellest Challenge Jacy Cunningham and",
+     "url": "https://www.onecommune.com/the-wellest-challenge"
+    }
+   ],
+   "big_name": false,
+   "note": null,
+   "status": "todo",
+   "plan": null,
+   "skip_reason": null
+  },
+  {
+   "rank": 6,
+   "name": "Caley Alyssa",
+   "commune_courses": [
+    {
+     "title": "Meet Me on the Mountain",
+     "url": "https://www.onecommune.com/try-commune-membership"
+    }
+   ],
+   "big_name": false,
+   "note": null,
+   "status": "todo",
+   "plan": null,
+   "skip_reason": null
+  },
+  {
+   "rank": 7,
+   "name": "Danielle LaPorte",
+   "commune_courses": [
+    {
+     "title": "The Desire Map Course",
+     "url": "https://www.onecommune.com/the-desire-map-course-with-danielle-laporte"
+    },
+    {
+     "title": "Free and Clear",
+     "url": "https://www.onecommune.com/free-and-clear-danielle-laporte"
+    },
+    {
+     "title": "Spoken Soul",
+     "url": "https://www.onecommune.com/try-commune-membership-spokensoul"
+    }
+   ],
+   "big_name": true,
+   "note": null,
+   "status": "todo",
+   "plan": null,
+   "skip_reason": null
+  },
+  {
+   "rank": 8,
+   "name": "Jennifer Elliott",
+   "commune_courses": [
+    {
+     "title": "License to Chill",
+     "url": "https://www.onecommune.com/try-commune-membership"
+    }
+   ],
+   "big_name": false,
+   "note": null,
+   "status": "todo",
+   "plan": null,
+   "skip_reason": null
+  },
+  {
+   "rank": 9,
+   "name": "Clio Manuelian",
+   "commune_courses": [
+    {
+     "title": "Feel Good to Be You",
+     "url": "https://www.onecommune.com/feel-good-to-be-you-with-clio-manuelian-trial"
+    }
+   ],
+   "big_name": false,
+   "note": null,
+   "status": "todo",
+   "plan": null,
+   "skip_reason": null
+  },
+  {
+   "rank": 10,
+   "name": "Chelsey Korus",
+   "commune_courses": [
+    {
+     "title": "Your Strongest Arm Balance Ever",
+     "url": "https://www.onecommune.com/try-commune-membership"
+    },
+    {
+     "title": "The Journey",
+     "url": "https://www.onecommune.com/try-commune-membership"
+    },
+    {
+     "title": "Flow with Intention",
+     "url": "https://www.onecommune.com/flow-with-intention-with-chelsey-korus"
+    }
+   ],
+   "big_name": false,
+   "note": null,
+   "status": "todo",
+   "plan": null,
+   "skip_reason": null
+  },
+  {
+   "rank": 11,
+   "name": "Light Watkins",
+   "commune_courses": [
+    {
+     "title": "21-Day Meditation Challenge",
+     "url": "https://www.onecommune.com/21-day-meditation-challenge-with-light-watkins"
+    }
+   ],
+   "big_name": true,
+   "note": null,
+   "status": "todo",
+   "plan": null,
+   "skip_reason": null
+  },
+  {
+   "rank": 12,
+   "name": "Eoin Finn",
+   "commune_courses": [
+    {
+     "title": "Introduction to Blissology",
+     "url": "https://www.onecommune.com/try-commune-membership"
+    }
+   ],
+   "big_name": false,
+   "note": null,
+   "status": "todo",
+   "plan": null,
+   "skip_reason": null
+  },
+  {
+   "rank": 13,
+   "name": "Stephen Muzzonigro",
+   "commune_courses": [
+    {
+     "title": "High Vibe Kundalini",
+     "url": "https://www.onecommune.com/try-commune-membership"
+    }
+   ],
+   "big_name": false,
+   "note": null,
+   "status": "todo",
+   "plan": null,
+   "skip_reason": null
+  },
+  {
+   "rank": 14,
+   "name": "Rosie Acosta",
+   "commune_courses": [
+    {
+     "title": "Awaken and Move Inward",
+     "url": "https://www.onecommune.com/try-commune-membership"
+    }
+   ],
+   "big_name": false,
+   "note": null,
+   "status": "todo",
+   "plan": null,
+   "skip_reason": null
+  },
+  {
+   "rank": 15,
+   "name": "Preethaji",
+   "commune_courses": [
+    {
+     "title": "Live in a Beautiful State",
+     "url": "https://www.onecommune.com/live-in-a-beautiful-state-with-preethaji"
+    }
+   ],
+   "big_name": true,
+   "note": "Co-founder of O&O Academy with Krishnaji; one listing for her.",
+   "status": "todo",
+   "plan": null,
+   "skip_reason": null
+  },
+  {
+   "rank": 16,
+   "name": "Scott Schwenk",
+   "commune_courses": [
+    {
+     "title": "Abundant Joy",
+     "url": "https://www.onecommune.com/abundant-joy-with-scott-schwenk"
+    },
+    {
+     "title": "Ecstatic Breathwork",
+     "url": "https://www.onecommune.com/ecstatic-breathwork-with-scott-schwenk"
+    },
+    {
+     "title": "Living from the Heart",
+     "url": "https://www.onecommune.com/living-from-the-heart-with-scott-schwenk"
+    }
+   ],
+   "big_name": false,
+   "note": null,
+   "status": "todo",
+   "plan": null,
+   "skip_reason": null
+  },
+  {
+   "rank": 17,
+   "name": "Biet Simkin",
+   "commune_courses": [
+    {
+     "title": "Guided by Biet",
+     "url": "https://www.onecommune.com/guided-by-biet"
+    }
+   ],
+   "big_name": false,
+   "note": null,
+   "status": "todo",
+   "plan": null,
+   "skip_reason": null
+  },
+  {
+   "rank": 18,
+   "name": "Maude Hirst",
+   "commune_courses": [
+    {
+     "title": "A Path to Self-Love",
+     "url": "https://www.onecommune.com/try-commune-membership"
+    }
+   ],
+   "big_name": false,
+   "note": null,
+   "status": "todo",
+   "plan": null,
+   "skip_reason": null
+  },
+  {
+   "rank": 19,
+   "name": "Rodney Yee",
+   "commune_courses": [
+    {
+     "title": "Simple Self-Care",
+     "url": "https://www.onecommune.com/simple-self-care-with-rodney-yee-colleen-saidman-yee"
+    }
+   ],
+   "big_name": true,
+   "note": "Teaches with his wife Colleen Saidman-Yee: one listing for the couple.",
+   "status": "todo",
+   "plan": null,
+   "skip_reason": null
+  },
+  {
+   "rank": 20,
+   "name": "Janet Stone",
+   "commune_courses": [
+    {
+     "title": "Coming Home: Journey Into Deep Rest",
+     "url": "https://www.onecommune.com/coming-home-journey-into-deep-rest-with-janet-stone-dj-drez"
+    }
+   ],
+   "big_name": false,
+   "note": "Teaches with DJ Drez (her partner): one listing, Janet Stone.",
+   "status": "todo",
+   "plan": null,
+   "skip_reason": null
+  },
+  {
+   "rank": 21,
+   "name": "Tracee Stanley",
+   "commune_courses": [
+    {
+     "title": "Deep Relaxation",
+     "url": "https://www.onecommune.com/deep-relaxation-with-tracee-stanley"
+    }
+   ],
+   "big_name": false,
+   "note": null,
+   "status": "todo",
+   "plan": null,
+   "skip_reason": null
+  },
+  {
+   "rank": 22,
+   "name": "Chelsea Jackson Roberts",
+   "commune_courses": [
+    {
+     "title": "Ignite Your Yoga Practice Dr.",
+     "url": "https://www.onecommune.com/ignite-your-yoga-practice-with-dr-chelsea-jackson-roberts"
+    }
+   ],
+   "big_name": false,
+   "note": null,
+   "status": "todo",
+   "plan": null,
+   "skip_reason": null
+  },
+  {
+   "rank": 23,
+   "name": "Lynne Twist",
+   "commune_courses": [
+    {
+     "title": "The Soul of Money",
+     "url": "https://www.onecommune.com/the-soul-of-money-with-lynne-twist"
+    }
+   ],
+   "big_name": true,
+   "note": null,
+   "status": "todo",
+   "plan": null,
+   "skip_reason": null
+  },
+  {
+   "rank": 24,
+   "name": "Shelly Tygielski",
+   "commune_courses": [
+    {
+     "title": "The Power of Showing Up",
+     "url": "https://www.onecommune.com/the-power-of-showing-up-with-shelly-tygielski"
+    }
+   ],
+   "big_name": false,
+   "note": null,
+   "status": "todo",
+   "plan": null,
+   "skip_reason": null
+  },
+  {
+   "rank": 25,
+   "name": "Hala Khouri",
+   "commune_courses": [
+    {
+     "title": "Redefining Leadership Off the Mat, Into the World",
+     "url": "https://www.onecommune.com/redefining-leadership-off-the-mat-into-the-world"
+    }
+   ],
+   "big_name": false,
+   "note": "Off the Mat, Into the World co-founder; also a somatic therapist: check fit.",
+   "status": "todo",
+   "plan": null,
+   "skip_reason": null
+  },
+  {
+   "rank": 26,
+   "name": "Suzanne Sterling",
+   "commune_courses": [
+    {
+     "title": "Redefining Leadership Off the Mat, Into the World",
+     "url": "https://www.onecommune.com/redefining-leadership-off-the-mat-into-the-world"
+    }
+   ],
+   "big_name": false,
+   "note": "Off the Mat, Into the World co-founder with Seane Corn and Hala Khouri.",
+   "status": "todo",
+   "plan": null,
+   "skip_reason": null
+  },
+  {
+   "rank": 27,
+   "name": "Murray Hidary",
+   "commune_courses": [
+    {
+     "title": "The Path to Presence",
+     "url": "https://www.onecommune.com/the-path-to-presence-with-murray-hidary"
+    }
+   ],
+   "big_name": true,
+   "note": "MindTravel: music plus walking meditation; check fit.",
+   "status": "todo",
+   "plan": null,
+   "skip_reason": null
+  },
+  {
+   "rank": 28,
+   "name": "Jennifer Partridge",
+   "commune_courses": [
+    {
+     "title": "Tap into Healing",
+     "url": "https://www.onecommune.com/tap-into-healing-with-jennifer-partridge"
+    }
+   ],
+   "big_name": false,
+   "note": null,
+   "status": "todo",
+   "plan": null,
+   "skip_reason": null
+  },
+  {
+   "rank": 29,
+   "name": "Paul Denniston",
+   "commune_courses": [
+    {
+     "title": "Yoga for Healing & Hope",
+     "url": "https://www.onecommune.com/try-commune-membership"
+    }
+   ],
+   "big_name": false,
+   "note": "Grief Yoga: grief is not a medical condition, but check framing.",
+   "status": "todo",
+   "plan": null,
+   "skip_reason": null
+  },
+  {
+   "rank": 30,
+   "name": "Noah Mazé",
+   "commune_courses": [
+    {
+     "title": "Yoga Strong",
+     "url": "https://www.onecommune.com/try-commune-membership"
+    },
+    {
+     "title": "Yogamazé",
+     "url": "https://www.onecommune.com/try-commune-membership"
+    }
+   ],
+   "big_name": false,
+   "note": null,
+   "status": "todo",
+   "plan": null,
+   "skip_reason": null
+  },
+  {
+   "rank": 31,
+   "name": "Briohny Smyth",
+   "commune_courses": [
+    {
+     "title": "Create Your Own Adventure",
+     "url": "https://www.onecommune.com/try-commune-membership"
+    }
+   ],
+   "big_name": true,
+   "note": null,
+   "status": "todo",
+   "plan": null,
+   "skip_reason": null
+  },
+  {
+   "rank": 32,
+   "name": "Jeff Krasno",
+   "commune_courses": [
+    {
+     "title": "Stoic Meditations",
+     "url": "https://www.onecommune.com/stoic-meditations-with-jeff-krasno"
+    },
+    {
+     "title": "Cultivating Inner Peace",
+     "url": "https://www.onecommune.com/try-commune-membership"
+    }
+   ],
+   "big_name": false,
+   "note": "Commune's founder and CEO: link with role founder; mainly a host and podcaster, so flag fit.",
+   "status": "todo",
+   "plan": null,
+   "skip_reason": null
+  },
+  {
+   "rank": 33,
+   "name": "Pedram Shojai",
+   "commune_courses": [
+    {
+     "title": "The Art of Stopping Time",
+     "url": "https://www.onecommune.com/the-art-of-stopping-time-with-dr-pedram-shojai"
+    }
+   ],
+   "big_name": true,
+   "note": "Urban Monk, Taoist qigong; much of his work is health-framed: check fit.",
+   "status": "todo",
+   "plan": null,
+   "skip_reason": null
+  },
+  {
+   "rank": 34,
+   "name": "David Kessler",
+   "commune_courses": [
+    {
+     "title": "Help for the Hurting Heart",
+     "url": "https://www.onecommune.com/help-for-the-hurting-heart-with-david-kessler"
+    }
+   ],
+   "big_name": true,
+   "note": "Grief author; check whether it is spiritual teaching or therapy.",
+   "status": "todo",
+   "plan": null,
+   "skip_reason": null
+  }
+ ],
+ "updated": "2026-10-31T21:29:56.128Z"
+}
