@@ -1,0 +1,134 @@
+{
+  "healer": {
+    "healer_slug": "clio-manuelian",
+    "create": {
+      "name": "Clio Manuelian",
+      "bio": "Clio Manuelian is a yoga and meditation teacher in Los Angeles who grew up in New York. She spent the first part of her working life in fashion public relations, leading press for Elle magazine and later for Salvatore Ferragamo, before a growing yoga practice drew her away from that world and into teaching. Among the teachers she names as mentors are Elena Brower, Annie Carpenter, Tias Little, Joan Hyman, Marla Apt and Lisa Walford.\n\nShe teaches yoga and mindfulness at the University of Southern California, trains new teachers on Yoga Alliance programmes and leads meditation with InsightLA. Her classes are alignment-minded but playful, mixing steady standing work, inversions and yin with breath practice and a light, encouraging tone, and she has taught at Wanderlust festivals and written practice sequences for Yoga Journal. Alongside studio and corporate classes in Los Angeles she keeps a small donation-based library of recorded classes on her site and leads yoga holidays abroad, with a week on the Greek island of Amorgos planned for summer 2027. On Commune her series Feel Good to Be You is part of the membership.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local_online",
+      "city": "Los Angeles",
+      "country": "United States",
+      "subjects": [
+        "yoga",
+        "meditation",
+        "mindfulness"
+      ],
+      "website_url": "https://clioyoga.com/",
+      "booking_url": "https://clioyoga.com/online/",
+      "youtube_url": null,
+      "instagram_url": "https://www.instagram.com/clioyoga/",
+      "facebook_url": null,
+      "twitter_url": "https://x.com/clioyoga",
+      "tiktok_url": null,
+      "contact_email": "clio@clioyoga.com",
+      "image_urls": [
+        "https://clioyoga.com/wp-content/uploads/2026/07/clio-headshot-e1785459339444.jpg",
+        "https://clioyoga.com/wp-content/uploads/2019/01/slider-about-02.jpg"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "commune",
+      "role": "instructor"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Mudras 101 with Clio Manuelian",
+      "url": "https://www.youtube.com/watch?v=CPuT-WxKfBk",
+      "subjects": [
+        "yoga",
+        "meditation"
+      ],
+      "channel": "Wanderlust"
+    },
+    {
+      "title": "Yoga with Clio 4/1/21",
+      "url": "https://www.youtube.com/watch?v=e5r_a1W86yE",
+      "subjects": [
+        "yoga"
+      ],
+      "channel": "USC Hillel"
+    },
+    {
+      "title": "Yoga with Clio 3/25/21",
+      "url": "https://www.youtube.com/watch?v=7e75bryHA6U",
+      "subjects": [
+        "yoga"
+      ],
+      "channel": "USC Hillel"
+    },
+    {
+      "title": "Meta-Moment: breathing practice with USC yoga and mindfulness professor",
+      "url": "https://www.youtube.com/watch?v=kHrVIhZiSkY",
+      "subjects": [
+        "breathwork",
+        "mindfulness"
+      ],
+      "channel": "Annenberg Media"
+    }
+  ],
+  "books": [],
+  "courses": [
+    {
+      "title": "Summer Delights Greece Retreat",
+      "url": "https://clioyoga.com/greece-retreat/",
+      "description": "A week on the island of Amorgos with yoga twice a day, meditation and breathing practice, sea swimming, boat trips and plenty of free time. The group stays at a hotel and spa above the Aegean.",
+      "price": "€2,525 EUR per person (shared triple), €2,710 EUR (shared double), €3,415 EUR (single); €750 EUR deposit",
+      "product_type": "retreat",
+      "start_date": "2027-07-10",
+      "end_date": "2027-07-17",
+      "subjects": [
+        "yoga",
+        "meditation",
+        "breathwork"
+      ],
+      "image": "https://clioyoga.com/wp-content/uploads/2026/07/Screenshot-2026-08-17-at-2.30.43-PM-1024x622.png"
+    },
+    {
+      "title": "On Demand Classes",
+      "url": "https://clioyoga.com/on-demand-login/",
+      "description": "A small library of recorded classes of 20 to 90 minutes, from short core and standing sessions to longer yin practices. Access is unlocked with a donation of any size.",
+      "price": "By donation",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://clioyoga.com/wp-content/uploads/2018/11/rainbow-edge_02.png"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "hub": "commune",
+    "rank": 9,
+    "commune_urls": [
+      "https://www.onecommune.com/feel-good-to-be-you-with-clio-manuelian-trial"
+    ],
+    "tier_evidence": "Instagram @clioyoga 2,660 (og:description, 31 Oct 2026); X @clioyoga count not shown without login; no YouTube channel of her own found; Facebook is a personal profile (not counted, not readable) → ~2.7k total → local_hero",
+    "email": "yes",
+    "email_source": "https://clioyoga.com/greece-retreat/",
+    "contact_form_url": "https://clioyoga.com/connect/",
+    "bio_check": "OK: no 8-word runs against 7 source(s)",
+    "flags": [
+      "Thin page: no YouTube channel of her own; the four videos are on other channels (Wanderlust, USC Hillel, Annenberg Media) where she is the teacher, and two have dated titles (2021 live classes).",
+      "'Meta-Moment' breathing video is 2:01, right on the ~2-minute line, and its description mentions reducing stress (no condition); kept.",
+      "Feel Good to Be You is in the Commune membership only (the Commune URL is a free-trial page with no price for owning it), so there's no Commune offering. Its Commune blurb mentions classes for areas such as the low back, which is another reason to leave it out.",
+      "Email clio@clioyoga.com appears in the retreat page's payment notes rather than on a contact page; there's also a contact form at /connect/.",
+      "Availability local_online, Los Angeles: her Live Classes page lists Equinox Westwood and Center for Yoga in LA, plus USC teaching; some listings on that page are old (a Jan 9 Zoom session, June 2025).",
+      "Her site spells a mentor 'Ruth Lauer-Maneti'; the bio leaves that name out."
+    ],
+    "left_out": [
+      "YouTube: Wanderlust TV previews and postcards (under 1 minute); 'Individuation and Awakening through Yoga' and 'The Key to Happiness' are another person's channel only quoting her; 'Yoga from Good Vibes Clio' is a studio in Clio, Michigan (not her); a podcast guest spot (interview, 26 views).",
+      "On-demand library titles that name the back or spine ('Good for Your Back', 'Yin for Spine Support') aren't listed; the library is described generally.",
+      "Live classes at Equinox, Center for Yoga and Kula Yoga Project: third-party studio schedules, no unique page of hers.",
+      "Southern Italy retreat mentioned on Instagram: no page on her site.",
+      "Yoga Anytime and Wanderlust TV classes: third-party subscription platforms.",
+      "No books found; no free resources (on-demand classes are by donation)."
+    ]
+  },
+  "images_final": true
+}

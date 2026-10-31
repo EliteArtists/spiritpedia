@@ -1,0 +1,177 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 450,
+    "healer_slug": "danielle-laporte"
+  },
+  "rows": [
+    {
+      "table": "videos",
+      "id": 5070,
+      "slug": "were-all-being-initiated-all-of-the-time",
+      "title": "We’re All Being Initiated, All of the Time"
+    },
+    {
+      "table": "videos",
+      "id": 5071,
+      "slug": "how-to-hold-space-in-groups",
+      "title": "How To Hold Space in Groups"
+    },
+    {
+      "table": "videos",
+      "id": 5072,
+      "slug": "physics-has-a-crush-on-spirituality",
+      "title": "Physics has a crush on spirituality"
+    },
+    {
+      "table": "videos",
+      "id": 5073,
+      "slug": "why-cutting-cords-doesnt-work",
+      "title": "Why cutting cords doesn't work"
+    },
+    {
+      "table": "videos",
+      "id": 5074,
+      "slug": "the-most-toxic-question-you-could-ever-ask",
+      "title": "The most toxic question you could ever ask"
+    },
+    {
+      "table": "videos",
+      "id": 5075,
+      "slug": "what-happens-when-you-become-a-super-blesser",
+      "title": "What happens when you become a Super Blesser"
+    },
+    {
+      "table": "videos",
+      "id": 5076,
+      "slug": "where-does-your-anger-come-from",
+      "title": "Where does your anger come from?"
+    },
+    {
+      "table": "videos",
+      "id": 5077,
+      "slug": "how-to-have-a-healthy-relationship-with-your-fear",
+      "title": "How to have a healthy relationship with your fear."
+    },
+    {
+      "table": "videos",
+      "id": 5078,
+      "slug": "you-are-not-the-wound-youre-the-healer",
+      "title": "You are not the wound, you're the healer."
+    },
+    {
+      "table": "videos",
+      "id": 5079,
+      "slug": "best-of-with-love-danielle-those-are-not-your-people",
+      "title": "Best of With Love, Danielle: Those Are Not Your People"
+    },
+    {
+      "table": "videos",
+      "id": 5080,
+      "slug": "best-of-with-love-danielle-how-to-turn-rejection-into-a-power-move",
+      "title": "Best of With Love, Danielle: How to Turn Rejection into a Power Move"
+    },
+    {
+      "table": "videos",
+      "id": 5081,
+      "slug": "the-metta-bhavana-prayer",
+      "title": "The Metta Bhavana Prayer"
+    },
+    {
+      "table": "books",
+      "id": 1591,
+      "slug": "the-desire-map",
+      "title": "The Desire Map: A Guide to Creating Goals with Soul"
+    },
+    {
+      "table": "books",
+      "id": 1592,
+      "slug": "white-hot-truth",
+      "title": "White Hot Truth: Clarity for Keeping It Real on Your Spiritual Path - from One Seeker to Another"
+    },
+    {
+      "table": "books",
+      "id": 1593,
+      "slug": "how-to-be-loving",
+      "title": "How to Be Loving: As Your Heart Is Breaking Open and Our World Is Waking Up"
+    },
+    {
+      "table": "books",
+      "id": 1594,
+      "slug": "the-fire-starter-sessions",
+      "title": "The Fire Starter Sessions: A Soulful + Practical Guide to Creating Success on Your Own Terms"
+    },
+    {
+      "table": "books",
+      "id": 1595,
+      "slug": "how-to-be-loving-the-deck",
+      "title": "How to Be Loving: The Deck: For Resilience, Kindness, and All Kinds of Idealism"
+    },
+    {
+      "table": "books",
+      "id": 1596,
+      "slug": "style-statement",
+      "title": "Style Statement: Live by Your Own Design"
+    },
+    {
+      "table": "courses",
+      "id": "97461b71-262c-4cad-9c7b-9ca788c2dbcb",
+      "slug": "the-desire-map-course",
+      "title": "The Desire Map Course"
+    },
+    {
+      "table": "courses",
+      "id": "ec558e82-15a5-4c7c-a48f-7456dc66f856",
+      "slug": "free-clear",
+      "title": "Free + Clear"
+    },
+    {
+      "table": "courses",
+      "id": "a9a8c2c0-2de8-4418-8fba-4c4767ca2cd9",
+      "slug": "the-super-blesser-experience",
+      "title": "The Super Blesser Experience"
+    },
+    {
+      "table": "courses",
+      "id": "7a7bc3e4-c841-4fbf-abb2-c1f0f7627ab5",
+      "slug": "daily-energetics-course",
+      "title": "Daily Energetics Course"
+    },
+    {
+      "table": "courses",
+      "id": "e3b36446-9c63-4cd8-a086-d67278c2b90c",
+      "slug": "regulate-to-relate-a-masterclass-with-danielle-laporte",
+      "title": "Regulate to Relate: A Masterclass with Danielle LaPorte"
+    },
+    {
+      "table": "courses",
+      "id": "32a17ddc-f49d-4d39-b36f-b0d1ce3782f8",
+      "slug": "much-deeper-intimacy-workshop",
+      "title": "Much Deeper Intimacy Workshop"
+    },
+    {
+      "table": "courses",
+      "id": "28c2cb1e-df93-4db7-8b1c-63214caa8301",
+      "slug": "the-savasana-redwood-visualization-deck-guided-audio",
+      "title": "The Savasana + Redwood Visualization (Deck + Guided Audio)"
+    },
+    {
+      "table": "courses",
+      "id": "feec84c3-59d8-4877-8314-61119f7f5e22",
+      "slug": "infusion-sessions",
+      "title": "Infusion Sessions"
+    },
+    {
+      "table": "free_resources",
+      "id": "1a14c536-593f-4176-9afd-b597e4477d9e",
+      "slug": "inner-sun-equinox-meditation",
+      "title": "INNER SUN Equinox Meditation"
+    },
+    {
+      "table": "hub_teachers",
+      "id": "848eac98-0af2-4458-9df8-12a5a52a122a",
+      "title": "danielle-laporte teaches at Commune"
+    }
+  ],
+  "at": "2026-10-31T21:54:11.356Z"
+}

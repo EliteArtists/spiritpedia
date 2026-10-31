@@ -1,0 +1,144 @@
+{
+  "healer": {
+    "healer_slug": "caley-alyssa",
+    "create": {
+      "name": "Caley Alyssa",
+      "bio": "Caley Alyssa is a yoga teacher in Los Angeles who came to the mat while worn out and stayed with it as a lifelong practice. She trained at Yoga Tree in San Francisco, completed a 500-hour programme with Dharma Mittra in New York, studied chakra-based vinyasa with Shiva Rea and later trained again with YogaWorks. She is also certified to teach yoga to children.\n\nHer classes range from strong, athletic vinyasa and functional movement to slow yin sessions and long yoga nidra, the guided rest practice she has made a speciality, including a series of nidras themed around the zodiac seasons. Over the years her teaching has moved away from exact alignment towards how a pose feels, with an interest in how movement and rest change a person's state. She teaches in person in Venice, California, and online through her own subscription app, her YouTube channel and platforms such as Commune, where her series Meet Me on the Mountain sits in the membership library. She also hosts a podcast and mentors women building their own businesses.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local_online",
+      "city": "Los Angeles",
+      "country": "United States",
+      "subjects": [
+        "yoga",
+        "meditation",
+        "astrology"
+      ],
+      "website_url": null,
+      "booking_url": "https://primalmoves.com/locations/venice/",
+      "youtube_url": "https://www.youtube.com/@CaleyAlyssa",
+      "instagram_url": "https://www.instagram.com/caleyalyssa/",
+      "facebook_url": "https://www.facebook.com/CaleyAlyssaYoga",
+      "twitter_url": "https://x.com/CaleyAlyssa",
+      "tiktok_url": null,
+      "contact_email": "Caley@CaleyAlyssa.com",
+      "image_urls": [
+        "https://yt3.googleusercontent.com/eGfVlBo7PR4M35BQT4KEM4gNnge9waaiGl4SPMbCDk5TJL3LLN2mE7BYYlD9NJXHGRmIyAciQA=s900-c-k-c0x00ffffff-no-rj",
+        "https://udaya.com/wp-content/uploads/2018/01/Caley-1.jpg",
+        "https://www.manduka.com/cdn/shop/articles/CALEY-HERO-V2_e8fae1c1-1d79-4e6a-ab8c-fdde86ca34c4.jpg?v=1774899223"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "commune",
+      "role": "instructor"
+    }
+  ],
+  "videos": [
+    {
+      "title": "60 Minute Flex + Flow - Vinyasa Yoga for Back and Hip Flexibility",
+      "url": "https://www.youtube.com/watch?v=Eg8-jhnnBhY",
+      "subjects": [
+        "yoga"
+      ],
+      "channel": "Caley Alyssa"
+    },
+    {
+      "title": "20 Minute Rise and Shine! Gentle Morning Yoga Practice",
+      "url": "https://www.youtube.com/watch?v=iPkpw7r9l-U",
+      "subjects": [
+        "yoga"
+      ],
+      "channel": "Caley Alyssa"
+    },
+    {
+      "title": "Evening Unwind - 40 Minute Nighttime Yoga",
+      "url": "https://www.youtube.com/watch?v=zCrOFFHeSVg",
+      "subjects": [
+        "yoga"
+      ],
+      "channel": "Caley Alyssa"
+    },
+    {
+      "title": "30 Minute Yin Yoga - Retreat Inward, 432 HZ",
+      "url": "https://www.youtube.com/watch?v=T8dV2Dh74xo",
+      "subjects": [
+        "yoga",
+        "meditation"
+      ],
+      "channel": "Caley Alyssa"
+    },
+    {
+      "title": "Twisted Half Moon Tutorial - Parivrtta Ardha Chandrasana",
+      "url": "https://www.youtube.com/watch?v=TTrWr_MwRC0",
+      "subjects": [
+        "yoga"
+      ],
+      "channel": "Caley Alyssa"
+    }
+  ],
+  "books": [],
+  "courses": [
+    {
+      "title": "Caley Alyssa App",
+      "url": "https://apps.apple.com/us/app/caley-alyssa/id1556551385",
+      "description": "Her own subscription app with a growing library of yoga, fitness and meditation classes, including a prenatal series and yoga nidra sessions themed on the zodiac seasons. It also carries her podcast and a forum for talking with her and other members.",
+      "price": "$19.99 USD a month or $154.99 USD a year (7-day free trial)",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga",
+        "meditation",
+        "astrology"
+      ],
+      "image": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/0e/5c/8d/0e5c8da1-5a96-a221-2959-832f0c196782/AppIcon-1x_U007emarketing-0-7-0-85-220.png/1200x630wa.jpg"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "40 Minute - YOGA NIDRA for accessing new possibilities",
+      "url": "https://www.youtube.com/watch?v=ZRNlf9P3D1Y",
+      "description": "A free guided yoga nidra of about 40 minutes on her YouTube channel. You lie down and are led through body awareness and imagery towards a deeply rested state, with an intention set at the start.",
+      "featured": true,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation",
+        "yoga"
+      ],
+      "image": "https://i.ytimg.com/vi/ZRNlf9P3D1Y/maxresdefault.jpg"
+    }
+  ],
+  "sprint": {
+    "hub": "commune",
+    "rank": 6,
+    "commune_urls": [
+      "https://www.onecommune.com/try-commune-membership"
+    ],
+    "tier_evidence": "Instagram @caleyalyssa 88K (og:description, 31 Oct 2026); YouTube @CaleyAlyssa 10.6K (channel header row, 31 Oct 2026); Facebook /CaleyAlyssaYoga not readable without login; X @CaleyAlyssa shows no count → ~98.6k readable total → local_hero",
+    "email": "yes",
+    "email_source": "https://linktr.ee/CaleyAlyssa",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 6 source(s)",
+    "flags": [
+      "Tier borderline: readable total ~98.6k (Instagram 88K + YouTube 10.6K), just under the 100k line; her Facebook page count couldn't be read, so any Facebook following would likely put her at luminary.",
+      "Her website caleyalyssa.com has lapsed (Squarespace 'Website Expired' page), so website_url is null. The domain itself is still registered to July 2027 with Google mail records, so the email address should still work.",
+      "Email Caley@CaleyAlyssa.com appears as the email icon on her Linktree (and in an older Voyage LA interview); on Linktree it sits in the social-icons row, not as text, so check it counts as published.",
+      "booking_url is the Primal Moves Venice studio page (Manduka's 2026 spotlight says she teaches there); she has no class page of her own. City set to Los Angeles from the same profile.",
+      "Meet Me on the Mountain is only in the Commune membership (no course page of its own), so there's no Commune offering; teaches_at makes the link.",
+      "Much of her online catalogue elsewhere is framed around conditions (ALO 'Yoga for Low Back Pain', 'Yoga Nidra for Healing'; YouTube astroflows 'for Lymphatic Drainage & Immunity'). Her core work is general yoga and yoga nidra, so she was kept with only neutral items: check this suits the page.",
+      "'60 Minute Flex + Flow - Vinyasa Yoga for Back and Hip Flexibility' names body areas, not a condition, so it was kept.",
+      "The app store listing says the app includes the '8th House' podcast on 'sex, money & magnetism': not mentioned in the item text."
+    ],
+    "left_out": [
+      "YouTube: 'Yoga Nidra for Healing | A Path to Mental, Emotional & Physical Recovery', 'Yoga for Menstrual Cramp Relief & PMS', astroflows for lymphatic drainage, immunity or the circulatory system, and an alumni video about losing weight (health claims).",
+      "YouTube: many uploads are 13–25 second trailers (Earth Activation, Air Activation, Sat Kriya, Yin Total Body and others) and alumni testimonial videos, so they were left out.",
+      "Sankalpa e-book: linked to caleyalyssa.com/productsbycaleyalyssa, which no longer loads (expired site).",
+      "Aura mist bundle (a Kalik's Collective product) and the Linktree's affiliate links: not her teaching.",
+      "ALO Moves / ALO Wellness Club, YogaWorks and Udaya series: third-party platforms, many with condition titles; not added.",
+      "TikTok: a follower figure appears only in hidden page data, so it wasn't counted; no TikTok link set."
+    ]
+  },
+  "images_final": true
+}

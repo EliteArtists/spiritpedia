@@ -162,7 +162,7 @@
    ],
    "big_name": false,
    "note": null,
-   "status": "planned",
+   "status": "dev",
    "plan": "docs/content-audits/caley-alyssa.json",
    "skip_reason": null
   },
@@ -185,7 +185,7 @@
    ],
    "big_name": true,
    "note": null,
-   "status": "planned",
+   "status": "dev",
    "plan": "docs/content-audits/danielle-laporte.json",
    "skip_reason": null
   },
@@ -200,7 +200,7 @@
    ],
    "big_name": false,
    "note": null,
-   "status": "planned",
+   "status": "dev",
    "plan": "docs/content-audits/jennifer-elliott.json",
    "skip_reason": null
   },
@@ -215,7 +215,7 @@
    ],
    "big_name": false,
    "note": null,
-   "status": "planned",
+   "status": "dev",
    "plan": "docs/content-audits/clio-manuelian.json",
    "skip_reason": null
   },
@@ -238,8 +238,8 @@
    ],
    "big_name": false,
    "note": null,
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/chelsey-korus.json",
    "skip_reason": null
   },
   {
@@ -619,5 +619,5 @@
    "skip_reason": null
   }
  ],
- "updated": "2026-10-31T21:53:14.390Z"
+ "updated": "2026-10-31T21:54:43.388Z"
 }
