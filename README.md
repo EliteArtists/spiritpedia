@@ -99,6 +99,12 @@ The list to pick up from. Each points to where the detail lives.
     - **Organisations stay in Explore These Channels** until there are 5 or
       more; then they get their own shelf (never a one-card shelf).
     - **Megan SolarGlow stays out** (conspiracy content).
+    - **Future hubs** (owner, 31 Oct 2026): DailyOM, Omega Institute,
+      Commune, Kripalu / Esalen / 1440 Multiversity, Spirit Rock and Insight
+      Meditation Society, Mindvalley, Evolving Wisdom and Humanity's Team,
+      Findhorn Foundation and Hollyhock, then Gaia (stricter curation). The
+      order, the rotation rule and the retreats rule are in §18.7; The Shift
+      Network and Insight Timer sprints continue in between.
 14. **Image audit.** Individual listings with fewer than 3 photos, newest
     first: find up to 2 more photos that are clearly that person. Teacher
     photos need the owner's OK. Includes **Isaac Osborne and Natalie Ramon**
@@ -171,6 +177,47 @@ The list to pick up from. Each points to where the detail lives.
     the 100 Shift Network teachers. Output: name, platform, count, profile
     URL, proposed tier. Claude Code applies the changes after the owner's OK.
     Feeds the tier audit (#17).
+23. **Tier review request** (website and app; plan first; not built).
+    Practitioners can apply to move up a tier.
+    - A **"Request a tier review"** button in the practitioner account centre,
+      next to Account type (website `/account`, the app's My Account; §9.5,
+      §10.9).
+    - **The modal:** a short reason, plus checkboxes for Instagram, YouTube,
+      Facebook, TikTok, X, Insight Timer and Other (students, mailing list),
+      each with a link field and a follower-count field. The tier thresholds
+      are shown clearly, taken from the tier rule (§17.1: followers added
+      together; 1M+ Superhero, 100k–999,999 Luminary, under 100k Local Hero;
+      students as a recorded reason to go higher).
+    - **Admin:** each request lands in the admin **Inbox** with the links
+      ready to check, and is approved or declined with a reason box, like the
+      other reviews there. An approval changes the tier and records the
+      evidence and reason, as in a plan's `tier_evidence` and
+      `tier_override`.
+    - **Replies:** an approval sends a positive email (and a push once push is
+      built, #4); a decline sends an email only, in a kind tone. Copy for the
+      owner's OK first; no ✦.
+    - **Limits:** one open request at a time per listing, and a gap after a
+      decline (e.g. 30 days) before the next.
+    - Overlaps with the tier audit (#17) and the socials pass (#22): the same
+      rule and evidence format, so one listing's history reads the same
+      whichever way its tier changed.
+24. **Upcoming Retreats** (website and app; plan first). Make upcoming
+    retreats a feature.
+    - **Today:** retreats are a shelf inside Explore More (§17.3), fetched only
+      when chosen, and dated offerings already disappear once past their
+      `end_date`. There's no separate events shelf yet.
+    - **The new shelf:** a strong **Upcoming Retreats** shelf on the Discover
+      tab (website and app), soonest first, showing dates and place, fed by
+      dated offerings with `product_type: retreat`. Retreat-centre hubs
+      (§18.7 future hubs: Omega, Kripalu, Esalen, 1440, Spirit Rock, IMS,
+      Findhorn, Hollyhock) bring their dated retreats in as offerings with
+      `start_date` and `end_date`.
+    - **Free for now;** later a paid promotion avenue (never sold as a tier,
+      §17.1).
+    - **A monthly expired-offerings check** (new routine; not yet set up):
+      list offerings past their `end_date` or already started (the sprints'
+      3-day rule) and remove or redate them after the owner's OK, so past
+      retreats drop off cleanly and the shelf never shows old dates.
 
 ---
 
@@ -2595,6 +2642,27 @@ school, an organisation or a channel), then:
    goes on the hub, not on both.
 
 As always: dev first, the owner checks on localhost, then live after an OK.
+
+**The hub queue: future hubs** (owner, 31 Oct 2026). **Rotate** between hubs
+rather than taking too many teachers from one source too soon. The Shift
+Network and Insight Timer sprints carry on in between these. In order:
+
+1. **DailyOM:** mostly Local Heroes.
+2. **Omega Institute:** faculty and retreats.
+3. **Commune** (onecommune.com).
+4. **Kripalu, Esalen, 1440 Multiversity.**
+5. **Spirit Rock and Insight Meditation Society.**
+6. **Mindvalley:** mostly big names.
+7. **Evolving Wisdom, Humanity's Team.**
+8. **Findhorn Foundation** (Scotland), **Hollyhock** (Canada).
+9. **Gaia:** with stricter curation; conspiracy and alien content stays
+   out (as with Megan SolarGlow). Merged with the Channels sprint, which
+   isn't written up in this README yet; record its scope here when it
+   starts.
+
+**Retreats from retreat-centre hubs:** their dated retreats come in as
+offerings (`product_type: retreat`, with `start_date` and `end_date`), so
+they feed the Upcoming Retreats shelf (open job #24) and drop off when over.
 
 ---
 
