@@ -1,0 +1,283 @@
+{
+  "healer": {
+    "healer_slug": "marybeth-hyland",
+    "create": {
+      "name": "MaryBeth Hyland",
+      "bio": "MaryBeth Hyland is a mindfulness teacher, coach and speaker who lives with her husband, James, and a small herd of rescued horses in a tiny home in the mountains near Salmon, Idaho. She spent years in the fast-moving working world of Baltimore before stepping away from it, and she now teaches people who have built busy, successful lives how to slow down, name what they value and set kinder limits on their time and energy. Her book Permission to Be Human, written for leaders, applies the same values work to company culture.\n\nHer teaching mixes short guided meditations, reflection on personal values, nature ritual and time with horses. Locally she leads a twice-monthly women's circle on a ranch in Carmen, where all the work is done on the ground and no riding experience is needed. Online she and James run DailySpark, a subscription of two-minute daily practices with a live monthly meditation, alongside a paid members' community, and she offers one-to-one alignment coaching. She records moon meditations, breathing practices and short courses for Insight Timer and for the couple's YouTube channel, often outdoors beside the horses.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local_online",
+      "city": "Salmon",
+      "country": "United States",
+      "subjects": [
+        "mindfulness",
+        "meditation",
+        "life-coaching"
+      ],
+      "website_url": "https://sparkvisionnow.com/",
+      "booking_url": "https://sparkvisionnow.com/alignment-coaching/",
+      "youtube_url": "https://www.youtube.com/@marybethandjames",
+      "instagram_url": "https://www.instagram.com/marybethandjames/",
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "james@sparkvisionnow.com",
+      "image_urls": [
+        "https://sparkvisionnow.com/wp-content/uploads/2026/01/MBJCB-275-1-980x978.jpg",
+        "https://users.insighttimer.com/A3H5k0B3R4n0b4v9E1x4E0R5P0G0E1v4a0q6Z5g3d7V2j1A5t5z3w4T8b3X6Y6g9R3n8x7c1y0F1M7t7u4W2c5p2d8y7R6V7J3d1/pictures/square_large.jpeg"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "insight-timer",
+      "role": "instructor"
+    }
+  ],
+  "videos": [
+    {
+      "title": "What the Horses Can Teach You About Shaking Off What Isn’t Yours",
+      "url": "https://www.youtube.com/watch?v=YmwZBvOpX_U",
+      "subjects": [
+        "mindfulness"
+      ],
+      "channel": "MaryBeth and James | Healing With Horses"
+    },
+    {
+      "title": "What These Horses Can Teach You About Healthy Boundaries",
+      "url": "https://www.youtube.com/watch?v=witS5swtpkw",
+      "subjects": [
+        "mindfulness",
+        "life-coaching"
+      ],
+      "channel": "MaryBeth and James | Healing With Horses"
+    },
+    {
+      "title": "Strawberry Moon Meditation",
+      "url": "https://www.youtube.com/watch?v=In0zqIM9GEQ",
+      "subjects": [
+        "meditation"
+      ],
+      "channel": "MaryBeth and James | Healing With Horses"
+    },
+    {
+      "title": "Lion's Gate Portal Meditation",
+      "url": "https://www.youtube.com/watch?v=gNYnKWaiMO8",
+      "subjects": [
+        "meditation",
+        "manifestation"
+      ],
+      "channel": "MaryBeth and James | Healing With Horses"
+    },
+    {
+      "title": "What the Horses Can Help You Release Through One Breath",
+      "url": "https://www.youtube.com/watch?v=VQU0S3bO5rw",
+      "subjects": [
+        "breathwork",
+        "mindfulness"
+      ],
+      "channel": "MaryBeth and James | Healing With Horses"
+    },
+    {
+      "title": "Guided Meditation with Horses to Release Stress and Choose Abundance",
+      "url": "https://www.youtube.com/watch?v=0d0IXXam_DI",
+      "subjects": [
+        "meditation",
+        "manifestation"
+      ],
+      "channel": "MaryBeth and James | Healing With Horses"
+    },
+    {
+      "title": "10-Minute Fall Meditation with Horses | Let Go & Feel Grounded",
+      "url": "https://www.youtube.com/watch?v=xCjZBJuk1jk",
+      "subjects": [
+        "meditation"
+      ],
+      "channel": "MaryBeth and James | Healing With Horses"
+    },
+    {
+      "title": "Summer Solstice Guided Meditation: Honor Your Light & Full Bloom",
+      "url": "https://www.youtube.com/watch?v=VJvgVNEWZU0",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "channel": "MaryBeth and James | Healing With Horses"
+    },
+    {
+      "title": "Surrender Meditation with Horses for Faith, Peace, and Divine Timing",
+      "url": "https://www.youtube.com/watch?v=O7RMRua_6E4",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "channel": "MaryBeth and James | Healing With Horses"
+    },
+    {
+      "title": "5 Minute Body Scan with Horses for Presence, Release, and Grounding",
+      "url": "https://www.youtube.com/watch?v=1HBZVufKkPg",
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "channel": "MaryBeth and James | Healing With Horses"
+    }
+  ],
+  "books": [
+    {
+      "title": "Permission to Be Human: The Conscious Leader’s Guide to Creating a Values-Driven Culture",
+      "slug": "permission-to-be-human",
+      "author": "MaryBeth Hyland",
+      "asin": "1737288818",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "A guide for managers and founders on naming a company's core values and building them into daily working life, drawn from her consulting work, stories and survey research.",
+      "subjects": [
+        "life-coaching",
+        "mindfulness"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1737288818.01._SCLZZZZZZZ_.jpg"
+    }
+  ],
+  "courses": [
+    {
+      "title": "Healing With Horses Women’s Circle",
+      "url": "https://sparkvisionnow.com/women-healing-with-horses/",
+      "description": "An in-person circle for local women on the first and third Tuesday evening of each month at a ranch in Carmen, Idaho. The group meets in circle and does guided exercises alongside the horses, all from the ground, with no riding and no horse experience needed.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "mindfulness",
+        "spirituality"
+      ],
+      "image": "https://sparkvisionnow.com/wp-content/uploads/2026/07/828d6cf4-0a71-4da5-8814-80320ab3e17a-1.png"
+    },
+    {
+      "title": "DailySpark",
+      "url": "https://sparkvisionnow.com/dailyspark-meditations/",
+      "description": "A subscription that sends a short affirmation, a reflection prompt and a two- to three-minute guided meditation each weekday, with longer practices at weekends. Members also join a live monthly meditation and question session with MaryBeth and James. $100 USD a year is also offered.",
+      "price": "$10 USD a month",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://sparkvisionnow.com/wp-content/uploads/2026/06/MB-and-James-scaled.png"
+    },
+    {
+      "title": "Rewilded Alignment Community",
+      "url": "https://www.skool.com/community-of-alignment-2583/about",
+      "description": "Her private online group combining brief daily practices, a monthly intention-setting call, values workshops, group coaching and seasonal nature ceremonies such as full moon gatherings.",
+      "price": "$167 USD a month",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "mindfulness",
+        "life-coaching",
+        "manifestation"
+      ],
+      "image": "https://assets.skool.com/f/6e67a51c56bd4e658594b5b042af598d/82172b317fef461e9959a243e78ad2cbd2666d2776fe490da680962d16afe0ed.png"
+    },
+    {
+      "title": "Alignment Coaching",
+      "url": "https://sparkvisionnow.com/alignment-coaching/",
+      "description": "One-to-one coaching for women with demanding careers who want their days to reflect what they care about. A single focused session is priced on the page; ongoing monthly coaching includes messaging support and community membership.",
+      "price": "$350 USD",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "life-coaching",
+        "mindfulness"
+      ],
+      "image": "https://sparkvisionnow.com/wp-content/uploads/2025/08/5-1.jpg"
+    },
+    {
+      "title": "Knowing & Living Your Values",
+      "url": "https://insighttimer.com/meditation-courses/course_knowing-and-living-your-values",
+      "description": "A ten-day Insight Timer audio course for working out which values matter most to you, where you already live them and what small changes would bring the rest into your days.",
+      "price": "Included in Member Plus ($59.99 USD a year)",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "life-coaching",
+        "mindfulness"
+      ],
+      "image": "https://sparkvisionnow.com/wp-content/uploads/2026/01/MBJCB-275-1-980x978.jpg"
+    },
+    {
+      "title": "Becoming An Island Of Peace In A Sea Of Chaos",
+      "url": "https://insighttimer.com/meditation-courses/becoming-an-island-of-peace-in-a-sea-of-chaos",
+      "description": "A four-day Insight Timer course on staying steady in hectic times, with lessons on reframing the stories we tell ourselves, a daily grounding visualisation and a short practice for returning to breath and body.",
+      "price": "Included in Member Plus ($59.99 USD a year)",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "image": "https://sparkvisionnow.com/wp-content/uploads/2026/01/MBJCB-275-1-980x978.jpg"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "MaryBeth Hyland on Insight Timer",
+      "url": "https://insighttimer.com/marybeth_hyland",
+      "description": "Her guided meditations, body scans, breathing practices and full moon sessions, free to play in the app or on the web, plus regular live sessions with horses.",
+      "featured": true,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://sparkvisionnow.com/wp-content/uploads/2026/01/MBJCB-275-1-980x978.jpg"
+    },
+    {
+      "title": "Core Values Quiz",
+      "url": "https://corevaluesquiz.com/",
+      "description": "A free ten-minute self-assessment she created for identifying your personal values, with a summary sent by email afterwards.",
+      "featured": false,
+      "resource_type": "practice",
+      "subjects": [
+        "life-coaching"
+      ],
+      "image": "https://images.groovetech.io/4KQkAVofmCfbsBBhkWD-mjjMa6k6XNyTKaXMmJvQRtQ/rs:fit:0:0:0/g:no:0:0/c:0:0/aHR0cHM6Ly9hc3NldHMuZ3Jvb3ZlYXBwcy5jb20vaW1hZ2VzLzk2ZWZiOTI2LWQ4MmUtNGQxMS1iOTU2LWFjYzQyZWRlZTk5MS8xNzA2MDMwMzI1X01vbmljYUpvaG5zb25WYWx1ZVByb2ZpbGUucG5n.webp"
+    }
+  ],
+  "sprint": {
+    "hub": "insight-timer",
+    "rank": 93,
+    "insight_timer_url": "https://insighttimer.com/marybeth_hyland",
+    "tier_evidence": "Insight Timer 5.1k (profile, 31 Oct 2026); YouTube @marybethandjames 512 subscribers (channel page, shared with husband); Instagram @marybethandjames 1,462 (og:description, shared account) → ~7.1k total → local_hero",
+    "email": "yes",
+    "email_source": "https://sparkvisionnow.com/press/",
+    "contact_form_url": "https://sparkvisionnow.com/contact/",
+    "bio_check": "OK: no 8-word runs against 9 source(s)",
+    "flags": [
+      "Mainly a values-based life/leadership coach and keynote speaker (burnout, boundaries, company culture); spiritual content is mindfulness meditation, moon rituals and equine-facilitated work. A human should decide whether she fits.",
+      "Works as a couple with husband James Hyland (also an Insight Timer teacher, not in this sprint's queue); SparkVision, YouTube and Instagram are shared. Listed under MaryBeth as the better-known partner; his Energy Healing sessions left out.",
+      "Email is james@sparkvisionnow.com, published on the press page for media inquiries (husband's address); the contact page is a questionnaire form.",
+      "Her own coaching sales page lists panic attacks, gut issues and sleeplessness; none of that wording is used. The 'Healing With Horses' circle is kept because it names no condition and promises no treatment (the page speaks of less stress); a human may still prefer to drop it.",
+      "Book Permission to Be Human is a business-leadership book, not a spiritual one.",
+      "Women's circle price not shown; DailySpark and the Skool community are run jointly with James.",
+      "Insight Timer bio could only be partly quoted by WebFetch; the bio check relied mainly on her own site pages."
+    ],
+    "left_out": [
+      "YouTube videos titled for anxiety relief, calming the nervous system, family energy healing and bodily recovery: health-claim rule.",
+      "Horse ASMR clip (nature sounds only), short moon poems and prayers under ~2.5 minutes, and Tai Chi with Horses videos (likely led by James).",
+      "Insight Timer course Holiday Boundaries Boot Camp: seasonal; two-course limit.",
+      "Insight Timer live events (dated September–October 2026): past.",
+      "Energy Healing sessions: James Hyland's offering, not hers.",
+      "Keynote speaking: corporate speaking, not a teaching offering."
+    ]
+  },
+  "images_final": true
+}

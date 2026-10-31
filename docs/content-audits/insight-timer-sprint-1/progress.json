@@ -1539,8 +1539,8 @@
    "base": "Kollam, Kerala, India",
    "website": "highermind.com",
    "note": null,
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/giovanni-dienstmann.json",
    "skip_reason": null
   },
   {
@@ -1558,8 +1558,8 @@
    "base": "Los Angeles, CA, USA",
    "website": "https://www.vibratehigherdaily.com/",
    "note": "Also Community@vibratehigherdaily.com and a HarperCollins publicist on contact page.",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/lalah-delia.json",
    "skip_reason": null
   },
   {
@@ -1577,8 +1577,8 @@
    "base": "Neutral Bay, Sydney, Australia",
    "website": "www.nicolebayliss.com.au",
    "note": null,
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/nicole-bayliss.json",
    "skip_reason": null
   },
   {
@@ -1596,8 +1596,8 @@
    "base": "Savannah, GA, USA",
    "website": "www.audiosoulhealing.com",
    "note": "Site has anti-crawler protection on subpages.",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/matthew-duplessie.json",
    "skip_reason": null
   },
   {
@@ -1615,8 +1615,8 @@
    "base": "Ontario, Canada",
    "website": "lisawhatley.ca",
    "note": null,
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/lisa-whatley.json",
    "skip_reason": null
   },
   {
@@ -1634,8 +1634,8 @@
    "base": "Delray Beach, FL, USA",
    "website": "www.yogaressa.com",
    "note": null,
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/julie-murphy.json",
    "skip_reason": null
   },
   {
@@ -1653,8 +1653,8 @@
    "base": "Cleburne, TX, USA",
    "website": "https://asoulcalledjoel.com",
    "note": null,
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/joel-cross.json",
    "skip_reason": null
   },
   {
@@ -1672,8 +1672,8 @@
    "base": "Seattle, WA, USA",
    "website": "linktr.ee/suraflow",
    "note": "Linktree; own site suraflow.org.",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/sura-kim.json",
    "skip_reason": null
   },
   {
@@ -1691,9 +1691,9 @@
    "base": "Malibu, CA, USA",
    "website": "https://www.brianhymanyoga.com",
    "note": "Wix site; contact form on the home page.",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Work is built around addiction recovery: he teaches full-time at a Malibu rehab centre, his book (Recovery with Yoga: Supportive Practices for Transcending Addiction) and his classes are sold on recovery, and most of his Insight Timer courses are recovery or sobriety titled, so almost nothing passes the health-claim rule; he has no paid offering with its own page on his one-page Wix site, no YouTube channel, and only a contact form. What would pass is a couple of general Insight Timer courses (e.g. Mindful Breathwork, The Art of Being) and a free Udemy course."
   },
   {
    "rank": 90,
@@ -1710,9 +1710,9 @@
    "base": "Truro, MA, USA",
    "website": "tesscallahan.com",
    "note": "Novelist; in-person work is book events, not classes.",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Mainly a novelist (April & Oliver, Dawnland) and literary podcaster; her meditation work is limited to free recordings (Insight Timer and the Heart Haven Meditations podcast) and one Insight Timer course, with no classes, retreats or paid spiritual offering of her own, so too little spiritual teaching to make a real page (her in-person work is book events)."
   },
   {
    "rank": 91,
@@ -1729,8 +1729,8 @@
    "base": "Eugene, OR, USA",
    "website": "https://www.abodetao.com/",
    "note": "abodetao.com blocks curl (406); read with WebFetch.",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/solala-towler.json",
    "skip_reason": null
   },
   {
@@ -1748,8 +1748,8 @@
    "base": "Santa Cruz, CA, USA",
    "website": "beingmoved.org",
    "note": "Contact form is on the home page (Tess Howell).",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/tess-howell.json",
    "skip_reason": null
   },
   {
@@ -1767,8 +1767,8 @@
    "base": "Salmon, ID, USA",
    "website": "https://linktr.ee/marybeth_james",
    "note": "Linktree points to SparkVision (sparkvisionnow.com), shared with husband James Hyland; contact page is a questionnaire form.",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/marybeth-hyland.json",
    "skip_reason": null
   },
   {
@@ -1786,8 +1786,8 @@
    "base": "Albuquerque, NM, USA",
    "website": "https://lotussoundbath.com/",
    "note": "Site behind Cloudflare challenge; an email is published but obfuscated and could not be read; phone (505) 393-9746, studio 7400 Montgomery Blvd NE.",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/douglas-cardwell.json",
    "skip_reason": null
   },
   {
@@ -1805,8 +1805,8 @@
    "base": "Sutherland Shire (Caringbah), Sydney, Australia",
    "website": "https://www.theyinside.com.au",
    "note": null,
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/michelle-robertson.json",
    "skip_reason": null
   },
   {
@@ -1824,8 +1824,8 @@
    "base": "Cape Town, South Africa",
    "website": "https://www.clairecreighton.com",
    "note": null,
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/claire-creighton.json",
    "skip_reason": null
   },
   {
@@ -1843,9 +1843,9 @@
    "base": "Seal Beach, CA, USA",
    "website": "www.lesleyalmer.com",
    "note": "Universal Touch; contact form only.",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Too thin for a full page: her Seal Beach practice (Universal Touch) is mainly massage and esthetics, with only two bookable energy and sound-bath service pages, no courses, videos or Amazon book found, her only workshop listing is a past date, and her sound-healing page is built on condition claims."
   },
   {
    "rank": 98,
@@ -1862,8 +1862,8 @@
    "base": "Sunshine Coast, QLD, Australia",
    "website": "tomekwyczesany.com",
    "note": "Contact page shows \"contact form not found\"; home page has the consultation form.",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/tomek-wyczesany.json",
    "skip_reason": null
   },
   {
@@ -1881,8 +1881,8 @@
    "base": "Toronto, ON, Canada",
    "website": "https://www.artistmorning.com/",
    "note": null,
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/darius-bashar.json",
    "skip_reason": null
   },
   {
@@ -1900,8 +1900,8 @@
    "base": "London, UK",
    "website": "www.nickysutton.com",
    "note": null,
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/nicky-sutton.json",
    "skip_reason": null
   },
   {
@@ -1957,9 +1957,9 @@
    "base": "Pleasant Grove, UT, USA",
    "website": "https://www.icantsleeppodcast.com",
    "note": "Podcast host (I Can't Sleep), not a teacher offering sessions.",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Not a spiritual teacher: he hosts the I Can't Sleep podcast, slow readings of Wikipedia-style articles on history, science and nature to fall asleep to, with no meditation teaching, sessions, classes or courses; the site offers only episode sponsorship and has a contact form, no published email."
   },
   {
    "rank": 104,
@@ -1995,9 +1995,9 @@
    "base": "Ontario, Canada",
    "website": "www.driftoffpodcast.com",
    "note": "Podcast (Drift Off), not a teaching practice.",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "A sleep-story podcast brand (Drift Off) rather than a teacher: she narrates public-domain bedtime stories for adults with a short relaxation intro, sold as premium episodes, audiobooks and a colouring book, with no meditation or spiritual teaching, sessions or classes; contact is a form only."
   },
   {
    "rank": 106,
@@ -2014,8 +2014,8 @@
    "base": "Toronto, ON, Canada",
    "website": "https://www.katrinabos.ca/linktree-insight-timer",
    "note": null,
-   "status": "todo",
-   "plan": null,
+   "status": "planned",
+   "plan": "docs/content-audits/katrina-bos.json",
    "skip_reason": null
   },
   {
@@ -2052,9 +2052,9 @@
    "base": "Rotonda West, FL, USA",
    "website": "https://matthewbarlow.bandcamp.com/?utm_source=insighttimer.com&utm_medium=profile",
    "note": "Website is a Bandcamp music page; musician, not a teaching practice.",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "An ambient music producer rather than a teacher: his only website is a Bandcamp page selling singing-bowl and ocean-drum albums, contact is Bandcamp's artist message form, and there are no offerings, books or teaching content to make a page from."
   },
   {
    "rank": 109,
@@ -3045,5 +3045,5 @@
    "skip_reason": null
   }
  ],
- "updated": "2026-10-31T17:39:53.169Z"
+ "updated": "2026-10-31T18:01:54.430Z"
 }

@@ -1,0 +1,231 @@
+{
+  "healer": {
+    "healer_slug": "nicole-bayliss",
+    "create": {
+      "name": "Nicole Bayliss",
+      "bio": "Nicole Bayliss is an energy healer, soul coach and author who has run a private practice in Neutral Bay on Sydney's Lower North Shore for more than fifteen years. She trained at Nature Care College in Sydney through the late 2000s, gaining certificates in meditation, holistic life care and tarot and a diploma in holistic counselling, then went on to Reiki Master level, NLP teacher certification, the Forensic Healing system and past-life regression training with Brian Weiss.\n\nIn sessions, which she offers face to face in Sydney and online, she blends soul-level coaching with energy work, drawing on tarot and Akashic Records readings, chakra clearing, Reiki and work with ancestral and past-life patterns to help clients understand their life path and let go of limiting beliefs. Much of her teaching centres on universal laws, forgiveness and the spiritual side of money, love and work, themes that run through her seven self-published books, among them Soul Magic and The Money Matrix. On Insight Timer she shares guided meditations, affirmations and talks, holds monthly live sessions and offers courses on prosperity and on releasing fear and lack. She also sends a weekly email of guidance and keeps a library of free e-books on her site.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local_online",
+      "city": "Sydney",
+      "country": "Australia",
+      "subjects": [
+        "soul-purpose",
+        "energy-medicine",
+        "manifestation"
+      ],
+      "website_url": "https://nicolebayliss.com.au/",
+      "booking_url": "https://nicolebayliss.com.au/personal-healing-sessions-with-nicole-bayliss/",
+      "youtube_url": "https://www.youtube.com/channel/UCUpRyK3HUwy_mngNZBciotQ",
+      "instagram_url": "https://www.instagram.com/nicolebaylisshealing/",
+      "facebook_url": "https://www.facebook.com/nicolebaylisshealing/",
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": null,
+      "image_urls": [
+        "https://nicolebayliss.com.au/wp-content/uploads/Nicole-header.jpg",
+        "https://users.insighttimer.com/L8K9T6r0d0F0Z9G1N8V4s5S8X0J0Y1g5y1f2M9L7j9V4K4j8L8D7N8N8s2E7Z1Z8s7b6q1G9N2w3J2g0B9w7g6D6M9H8t7K5A9j4/pictures/square_large.jpeg"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "insight-timer",
+      "role": "instructor"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Embracing Flow by Nicole Bayliss",
+      "url": "https://www.youtube.com/watch?v=hJzYGzqBiiQ",
+      "subjects": [
+        "spirituality",
+        "soul-purpose"
+      ],
+      "channel": "Nicole Bayliss"
+    },
+    {
+      "title": "Guided Meditation - Who You Really Are",
+      "url": "https://www.youtube.com/watch?v=h2uNR2T1Hks",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "channel": "Nicole Bayliss"
+    },
+    {
+      "title": "Guided Mindfulness Meditation",
+      "url": "https://www.youtube.com/watch?v=t0RPDxs-FfQ",
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "channel": "Nicole Bayliss"
+    }
+  ],
+  "books": [
+    {
+      "title": "The Money Matrix",
+      "slug": "the-money-matrix",
+      "author": "Nicole Bayliss",
+      "asin": "0645293628",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "A short guide in twelve steps to the beliefs and habits that shape how money moves through a life. It pairs spiritual principles with practical reflection to shift from a scarcity mindset towards abundance.",
+      "subjects": [
+        "manifestation",
+        "law-of-attraction"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/0645293628.01._SCLZZZZZZZ_.jpg"
+    }
+  ],
+  "courses": [
+    {
+      "title": "Personal Healing Sessions",
+      "url": "https://nicolebayliss.com.au/personal-healing-sessions-with-nicole-bayliss/",
+      "description": "Sessions of 60 to 90 minutes in Neutral Bay or online, combining soul coaching with energy work such as Reiki, chakra clearing, tarot or Akashic Records guidance. Discounted packages of four or six sessions are available.",
+      "price": "$250 AUD",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "energy-medicine",
+        "reiki",
+        "akashic-records"
+      ],
+      "image": "https://nicolebayliss.com.au/wp-content/uploads/cropped-Butterfly-01.png"
+    },
+    {
+      "title": "Perfect Prosperity",
+      "url": "https://insighttimer.com/meditation-courses/perfect-prosperity",
+      "description": "Her Insight Timer course on abundance as a spiritual practice, with talks and meditations on opening to flow in money and life.",
+      "price": "Included in Member Plus ($59.99 USD a year)",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "manifestation",
+        "law-of-attraction"
+      ],
+      "image": "https://nicolebayliss.com.au/wp-content/uploads/Nicole-header.jpg"
+    },
+    {
+      "title": "Releasing Beliefs Of Fear And Lack",
+      "url": "https://insighttimer.com/meditation-courses/course_releasing-beliefs-of-fear-and-lack",
+      "description": "A guided Insight Timer course for noticing and letting go of inherited beliefs about scarcity and not being enough.",
+      "price": "Included in Member Plus ($59.99 USD a year)",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "manifestation",
+        "shadow-work"
+      ],
+      "image": "https://nicolebayliss.com.au/wp-content/uploads/Nicole-header.jpg"
+    },
+    {
+      "title": "Soul Magic",
+      "url": "https://nicolebayliss.com.au/product/soul-magic/",
+      "description": "The e-book edition of her book of short spiritual teachings, designed to be read straight through or opened at random as a daily oracle.",
+      "price": "$9.99 AUD",
+      "product_type": "download",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "spirituality",
+        "spiritual-awakening"
+      ],
+      "image": "https://nicolebayliss.com.au/wp-content/uploads/Final-Cover-300dpi-01.jpg"
+    },
+    {
+      "title": "25 Universal Laws That Create Love, Peace, Joy and Abundance",
+      "url": "https://nicolebayliss.com.au/product/25-universal-laws-that-create-love-peace-joy-and-abundance/",
+      "description": "A compact e-book on the spiritual principles she sees behind a peaceful, abundant life, each explained with ways to apply it.",
+      "price": "$9.99 AUD",
+      "product_type": "download",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "law-of-attraction",
+        "ancient-wisdom"
+      ],
+      "image": "https://nicolebayliss.com.au/wp-content/uploads/25-Universal-Laws-Cover-Web.jpg"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Nicole Bayliss on Insight Timer",
+      "url": "https://insighttimer.com/nicolebayliss",
+      "description": "Guided meditations, affirmations and talks on love, flow and soul connection, free to hear, plus her monthly live sessions in the app.",
+      "featured": true,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "image": "https://nicolebayliss.com.au/wp-content/uploads/Nicole-header.jpg"
+    },
+    {
+      "title": "Who You Really Are Meditation",
+      "url": "https://nicolebayliss.com.au/who-you-really-are-meditation/",
+      "description": "A free guided inner journey you can play on her website, exploring the self beneath roles and stories.",
+      "featured": false,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation",
+        "spiritual-awakening"
+      ],
+      "image": "https://nicolebayliss.com.au/wp-content/uploads/AdobeStock_409023585.jpeg"
+    },
+    {
+      "title": "7 Key Universal Laws That Can Change Your Life",
+      "url": "https://nicolebayliss.com.au/7-key-universal-laws-that-can-change-your-life/",
+      "description": "A free e-book sent on sign-up, introducing seven of the spiritual laws she teaches with simple ways to live by them.",
+      "featured": false,
+      "resource_type": "download",
+      "subjects": [
+        "law-of-attraction",
+        "spirituality"
+      ],
+      "image": "https://nicolebayliss.com.au/wp-content/uploads/dfseg.jpg"
+    },
+    {
+      "title": "Pathway to Soul Connection",
+      "url": "https://nicolebayliss.com.au/pathway-to-soul-connection/",
+      "description": "A free guide on understanding the soul and deepening your connection with it, which she sees as the missing piece in manifesting.",
+      "featured": false,
+      "resource_type": "download",
+      "subjects": [
+        "soul-purpose",
+        "manifestation"
+      ],
+      "image": "https://nicolebayliss.com.au/wp-content/uploads/Soul-Connection-Ipad.jpg"
+    }
+  ],
+  "sprint": {
+    "hub": "insight-timer",
+    "rank": 83,
+    "insight_timer_url": "https://insighttimer.com/nicolebayliss",
+    "tier_evidence": "Insight Timer 29.6k (profile via WebFetch, 31 Oct 2026); Instagram @nicolebaylisshealing 2,501 (og:description, 31 Oct 2026); Facebook 1,309 followers (og:description, 31 Oct 2026); YouTube 467 (channel page, 31 Oct 2026) → ~34k total → local_hero",
+    "email": "contact form",
+    "email_source": null,
+    "contact_form_url": "https://nicolebayliss.com.au/contact-nicole-bayliss-sydney/",
+    "bio_check": "OK: no 8-word runs against 20 source(s)",
+    "flags": [
+      "Her site says she helps with 'healing from physical illness', addictions and anxiety; none of that is in the bio or item descriptions, and the session item is described as soul coaching and energy work only. A reviewer may want to check the sessions page is acceptable to link.",
+      "nicole@nicolebayliss.com.au appears only in the site's hidden structured data (JSON-LD), not as visible text, so contact form used instead.",
+      "The site's structured data lists instagram.com/shifttobliss and facebook.com/shifttobliss, but the Instagram account belongs to someone else (Femke van Dam); used the nicolebaylisshealing accounts linked in the page instead.",
+      "Header photo from her site and Insight Timer photo appear to be the same woman a few years apart.",
+      "Only one of her seven books (The Money Matrix) was confirmed on amazon.com; others returned 500."
+    ],
+    "left_out": [
+      "Insight Timer courses 'Heal And Manifest Through The Universal Laws' (parts 1–3) and 'Heal From Your Divorce And Transform Your Life' left out as borderline healing titles; Perfect Health Meditation (track) is health-titled and not listed anyway.",
+      "Emergency Distant Healing ($100 AUD) left out (healing-for-others claim, same page as sessions).",
+      "Soul Potential meditation pack not added (includes 'perfect health' healing meditations).",
+      "Books Soul Magic (ISBN 0987513842) and A Shift to Bliss (0987513826): amazon.com /dp/ returned 500 by curl and WebFetch, so left out as books; Soul Magic kept only as her own e-book offering. Forgiveness is the Key, 5 Steps to Finding Love, 25 Universal Laws and Soulful & Successful Business not checked on Amazon (no ISBN found quickly).",
+      "Business-focused e-books and free Spiritual Business Plan left out as off-subject; Portuguese versions left out."
+    ]
+  },
+  "images_final": true
+}

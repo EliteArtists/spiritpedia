@@ -1,0 +1,51 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 376,
+    "healer_slug": "michelle-robertson"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "93eed050-e37a-44c2-8127-1976170b81ca",
+      "slug": "womens-yin-mindfulness-the-yinside",
+      "title": "Women's Yin & Mindfulness @ The YinSide"
+    },
+    {
+      "table": "courses",
+      "id": "e71e4a0d-3e36-4874-8bd4-673e75657522",
+      "slug": "womens-flow-yoga-the-yinside-home",
+      "title": "Women's Flow Yoga @ The YinSide Home"
+    },
+    {
+      "table": "courses",
+      "id": "9d60b412-aa8e-4601-a9c4-7d3c47a15a38",
+      "slug": "the-yinside-class-packs",
+      "title": "The YinSide Class Packs"
+    },
+    {
+      "table": "courses",
+      "id": "6090dfdf-5015-43dd-9748-34e11884755d",
+      "slug": "yin-mindfulness-in-balance",
+      "title": "Yin & Mindfulness @ In Balance"
+    },
+    {
+      "table": "courses",
+      "id": "ac768be7-03d7-46bf-9ab2-00be0cf0c6e7",
+      "slug": "private-classes-and-group-sessions",
+      "title": "Private Classes and Group Sessions"
+    },
+    {
+      "table": "free_resources",
+      "id": "c81f02fc-046f-476d-8a61-72ead6db41c5",
+      "slug": "michelle-robertson-on-insight-timer",
+      "title": "Michelle Robertson on Insight Timer"
+    },
+    {
+      "table": "hub_teachers",
+      "id": "8f8cb430-e998-4456-b6d3-79235329eeaa",
+      "title": "michelle-robertson teaches at Insight Timer"
+    }
+  ],
+  "at": "2026-10-31T18:01:05.128Z"
+}
