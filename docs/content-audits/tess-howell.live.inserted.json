@@ -1,0 +1,45 @@
+{
+  "env": "live",
+  "healer": {
+    "id": 355,
+    "healer_slug": "tess-howell"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "14cbb8ba-6292-4d51-a339-886f72aa51a7",
+      "slug": "mentoring-for-times-of-change",
+      "title": "Mentoring for Times of Change"
+    },
+    {
+      "table": "courses",
+      "id": "c5b11b6c-0132-4688-afa5-73ca20813ff8",
+      "slug": "living-life-sacred",
+      "title": "Living Life Sacred"
+    },
+    {
+      "table": "courses",
+      "id": "3ef61fcd-b5be-4283-8b19-02ff720bb4bc",
+      "slug": "making-miracles",
+      "title": "Making Miracles"
+    },
+    {
+      "table": "free_resources",
+      "id": "11de737f-40d3-4eaf-a94b-d5c239a2e0a4",
+      "slug": "tess-howell-on-insight-timer",
+      "title": "Tess Howell on Insight Timer"
+    },
+    {
+      "table": "free_resources",
+      "id": "80da0bd5-b8f9-4754-8188-546e5cb3c3ef",
+      "slug": "being-moved-conscious-dance-community",
+      "title": "Being Moved Conscious Dance community"
+    },
+    {
+      "table": "hub_teachers",
+      "id": "233d6227-dd81-4f07-9c7a-e0f21ddeae38",
+      "title": "tess-howell teaches at Insight Timer"
+    }
+  ],
+  "at": "2026-10-31T18:46:06.483Z"
+}

@@ -1,0 +1,23 @@
+{
+  "env": "live",
+  "healer": null,
+  "rows": [
+    {
+      "table": "free_resources",
+      "id": "a91d1184-5333-43ed-91ee-f543c3828855",
+      "slug": "seane-corn-on-insight-timer",
+      "title": "Seane Corn on Insight Timer"
+    }
+  ],
+  "at": "2026-10-31T18:41:20.826Z",
+  "healer_update": {
+    "id": 78,
+    "before": {
+      "image_urls": [
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-slzeEFmouh9OUAOnfpO3hslqBVlofVrDzL6LloeBww&s=10",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNey3fl4nE-RWPF6v2kGlW5CCquPNpJXeHyh0pdOM9hQ&s=10",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBtXtM7IVvE6VEynA6fGpTtgmrx6JJqDKcPkBK-BhzRg&s=10"
+      ]
+    }
+  }
+}

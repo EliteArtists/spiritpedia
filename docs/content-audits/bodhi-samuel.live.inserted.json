@@ -1,0 +1,39 @@
+{
+  "env": "live",
+  "healer": {
+    "id": 294,
+    "healer_slug": "bodhi-samuel"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "4553e7e0-1dcd-4e93-8903-c3575f1b8c04",
+      "slug": "astrology-chart-reading-with-bodhi",
+      "title": "Astrology Chart Reading with Bodhi"
+    },
+    {
+      "table": "courses",
+      "id": "27136ee2-ca48-4b59-8571-6ce65016b14e",
+      "slug": "a-short-orientation-to-humanhood-on-planet-earth",
+      "title": "A Short Orientation To Humanhood On Planet Earth"
+    },
+    {
+      "table": "free_resources",
+      "id": "73744588-84d6-4ded-9b2f-98053c697e88",
+      "slug": "bodhi-samuel-on-insight-timer",
+      "title": "Bodhi Samuel on Insight Timer"
+    },
+    {
+      "table": "free_resources",
+      "id": "75e0e913-2b3d-47a7-b315-afda518736bd",
+      "slug": "under-the-bodhi-tree-podcast",
+      "title": "Under the Bodhi Tree podcast"
+    },
+    {
+      "table": "hub_teachers",
+      "id": "56a798b9-8c87-459b-98af-de762de9eaa2",
+      "title": "bodhi-samuel teaches at Insight Timer"
+    }
+  ],
+  "at": "2026-10-31T18:41:04.531Z"
+}

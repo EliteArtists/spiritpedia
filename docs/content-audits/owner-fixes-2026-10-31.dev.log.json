@@ -1,0 +1,50 @@
+{
+  "env": "dev",
+  "at": "2026-10-31T18:33:53.421Z",
+  "tier_before": "luminary",
+  "resources": [
+    {
+      "id": "3e608695-ef74-4bcd-8b5c-86e5f1a6dcdd",
+      "healer_id": 100,
+      "title": "Working Through Anxiety",
+      "description": "A 14-minute guided meditation and visualization set to original music, designed to help listeners move through anxiety and fear by connecting with a sense of divine support. It's well suited for coaches, teachers, or anyone seeking a calming tool they can also share with clients or students. It streams free on Insight Timer with no subscription required.",
+      "resource_url": "https://insighttimer.com/iyanla/guided-meditations/working-through-anxiety",
+      "resource_type": "meditation",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDUnSh9o_OK1L6jicfVWb3-hq6foSIcWD1uXUIHJ4KIQ&s=10",
+      "subject_slugs": [
+        "meditation",
+        "mindfulness",
+        "self-healing"
+      ],
+      "is_featured": false,
+      "created_at": "2026-07-26T12:49:15.614083+00:00",
+      "start_date": null,
+      "end_date": null,
+      "is_active": true,
+      "slug": "working-through-anxiety"
+    },
+    {
+      "id": "fdebbef6-fb8d-4162-bd0b-717822d4fbd5",
+      "healer_id": 47,
+      "title": "Guided Bedtime Body Scan Meditation For Sleep And Anxiety",
+      "description": "A gentle, voice-guided body scan practice designed to ease the body into deep relaxation before sleep, using crystal singing bowls alongside spoken guidance to calm anxiety.",
+      "resource_url": "https://insighttimer.com/healingvibrationsmedia/guided-meditations/guided-bedtime-body-scan-meditation-for-sleep-and-anxiety",
+      "resource_type": "meditation",
+      "image_url": "https://libraryitems.insighttimer.com/c6j5n0h1h1z4x3y1j3r0a1g6j7t0m8u6a7d3w0e1/pictures/tiny_square_medium.jpeg",
+      "subject_slugs": [
+        "meditation",
+        "mindfulness",
+        "self-healing",
+        "sound-healing",
+        "spiritual-awakening",
+        "spirituality"
+      ],
+      "is_featured": true,
+      "created_at": "2026-07-12T15:08:33.748045+00:00",
+      "start_date": null,
+      "end_date": null,
+      "is_active": true,
+      "slug": "guided-bedtime-body-scan-meditation-for-sleep-and-anxiety"
+    }
+  ]
+}

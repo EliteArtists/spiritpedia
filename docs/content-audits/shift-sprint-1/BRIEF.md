@@ -95,16 +95,24 @@ Item shapes (exactly these keys):
 
 ## Tier (never defaulted; evidence required)
 
-Count followers across their own accounts (YouTube subscribers from the channel
-page; Instagram / Facebook / X / TikTok counts where a page or its og:description
-shows them; a podcast's own published audience figures are not followers).
-- **superhero**: 1M+ in total
-- **luminary**: 100k+ in total
-- **local_hero**: under 100k
-Write the numbers and where you read them in `tier_evidence`. If a count can't be
-read, say so. Flag it when the total is 80k–150k or 0.8M–1.5M, when counts
-couldn't be read for a main account, or when their reputation (e.g. bestselling
-books) clearly doesn't match the follower count.
+The tier rule is README §17.1 (owner, 31 Oct 2026): **followers added
+together** across all their own accounts that can be read without logging in.
+Older wording that judged one platform on its own is out of date.
+- Count: YouTube subscribers (from the channel's own header row, next to its
+  own @handle, never `subscriberCountText`), Instagram / Facebook / X / TikTok
+  where a page or its og:description shows them, and hub followers where a hub shows them.
+- Don't count company or shared accounts unless the listing *is* that brand,
+  or a podcast's audience figures.
+- **superhero**: 1,000,000 or more in total
+- **luminary**: 100,000 to 999,999 in total
+- **local_hero**: under 100,000 in total
+Write each count, where you read it and the date, and the total, in
+`tier_evidence`. If a count can't be read, say so. Flag it when the total is
+80k–150k or 0.8M–1.5M, or when counts couldn't be read for a main account, or when their reputation (e.g. bestselling books) clearly doesn't match the total.
+A tier above the total only for **editorial stature** (a major author in their
+field, the founder of a hub; the owner decides) or **published student counts**
+(e.g. course enrolments, a school's stated alumni). Put the reason in
+`sprint.tier_override`; never raise a tier without one.
 
 ## Email (important: without one we can't start their journey)
 

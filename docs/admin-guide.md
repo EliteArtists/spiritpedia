@@ -32,6 +32,11 @@ star's tips):
 - **Local Hero:** a practitioner available in their area
 - **Rising Star:** growing, under 100k
 
+How the numbers are counted: followers on all their own accounts are added
+together (1M+ Superhero / Superstar, 100k–999,999 Luminary / Shining Star,
+under 100k Local Hero / Rising Star), with editorial stature or published
+student counts the only reasons to go higher. The full rule is README §17.1.
+
 ### Where each badge shows
 
 - Every listing except Spiritpedia shows its tier, on cards and profiles, on

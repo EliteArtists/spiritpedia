@@ -1,0 +1,23 @@
+{
+  "env": "live",
+  "healer": null,
+  "rows": [
+    {
+      "table": "free_resources",
+      "id": "529fa04b-ab20-4be7-b169-7bd7a9293d61",
+      "slug": "tara-brach-on-insight-timer",
+      "title": "Tara Brach on Insight Timer"
+    }
+  ],
+  "at": "2026-10-31T18:41:24.404Z",
+  "healer_update": {
+    "id": 70,
+    "before": {
+      "image_urls": [
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNo9Tyo_nJZ3qGHCDv9Qm1GPqvYC7bJkNkcYdLFJefpQ&s=10",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4jV3AVOfmiLNLzkXWSYOy2j6q5QOgblfIFjHx1-3J9w&s=10",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNnAwNVVM2kwBUYOwqCUA9kCEXJ5y73QfEqGe2wGJEnA&s=10"
+      ]
+    }
+  }
+}

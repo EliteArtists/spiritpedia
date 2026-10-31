@@ -1,0 +1,23 @@
+{
+  "env": "live",
+  "healer": null,
+  "rows": [
+    {
+      "table": "free_resources",
+      "id": "c65daa7a-9357-41a8-bc11-ef9334b94ff8",
+      "slug": "davidji-on-insight-timer",
+      "title": "davidji on Insight Timer"
+    }
+  ],
+  "at": "2026-10-31T18:40:57.538Z",
+  "healer_update": {
+    "id": 102,
+    "before": {
+      "image_urls": [
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKdG4piHXwoDE-nXb5ftesH9um3JoVbElqXLcP466d2g&s=10",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTM1syKq9FHJ7uM1O7YFYkSRaKlTF0iCBN4wRT8K8EMMg&s=10",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTE9Uw0kJxn8jeJRHMHPyi--yjQzt7jLq7uvf_bJagAlg&s=10"
+      ]
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "env": "live",
+  "healer": null,
+  "rows": [
+    {
+      "table": "free_resources",
+      "id": "96f8c384-ba0d-41db-abb4-f3f4f6277efb",
+      "slug": "yuval-ron-on-insight-timer",
+      "title": "Yuval Ron on Insight Timer"
+    }
+  ],
+  "at": "2026-10-31T18:41:29.827Z",
+  "healer_update": {
+    "id": 229,
+    "before": {
+      "image_urls": [
+        "https://theshiftnetwork.com/sites/files/faculty/YuvalRon.jpg",
+        "https://yuvalronmusic.com/wp-content/uploads/2015/12/Yuval-Ron-with-Oud.jpg",
+        "https://yuvalronmusic.com/wp-content/uploads/2015/12/Yuval_red-scraf_Oud_-serious.jpg"
+      ]
+    }
+  }
+}

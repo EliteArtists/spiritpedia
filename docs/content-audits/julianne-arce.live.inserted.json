@@ -1,0 +1,51 @@
+{
+  "env": "live",
+  "healer": {
+    "id": 303,
+    "healer_slug": "julianne-arce"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "8f4b664d-1c5b-414f-9303-7cf13e0b8982",
+      "slug": "weekly-yoga-classes-in-hemet-and-san-jacinto",
+      "title": "Weekly Yoga Classes in Hemet and San Jacinto"
+    },
+    {
+      "table": "courses",
+      "id": "33921d52-1a70-429b-8726-15e292b49d3d",
+      "slug": "private-sessions-2",
+      "title": "Private Sessions"
+    },
+    {
+      "table": "courses",
+      "id": "54527ebb-c380-4d22-9231-dc3abb59b704",
+      "slug": "guest-workshops-and-teacher-training-modules",
+      "title": "Guest Workshops and Teacher Training Modules"
+    },
+    {
+      "table": "free_resources",
+      "id": "6c4b6eaa-2379-4d3d-98d2-7bfc80e3e5e5",
+      "slug": "julianne-arce-on-insight-timer",
+      "title": "Julianne Arce on Insight Timer"
+    },
+    {
+      "table": "free_resources",
+      "id": "fd141573-1876-47e7-8e7f-f16d41d70afc",
+      "slug": "design-your-sadhana",
+      "title": "Design Your Sadhana"
+    },
+    {
+      "table": "free_resources",
+      "id": "5a4b6ffc-c427-4586-aa6e-b462c7b75bca",
+      "slug": "the-daily-exhale-podcast",
+      "title": "The Daily Exhale podcast"
+    },
+    {
+      "table": "hub_teachers",
+      "id": "e8e083ce-c9d1-4d2e-810e-3ca3878b84a3",
+      "title": "julianne-arce teaches at Insight Timer"
+    }
+  ],
+  "at": "2026-10-31T18:41:47.549Z"
+}

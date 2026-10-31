@@ -1,0 +1,45 @@
+{
+  "env": "live",
+  "healer": {
+    "id": 340,
+    "healer_slug": "sarina-stone"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "8e4bbc04-7e57-43ae-9b77-b7277c1e9361",
+      "slug": "private-consultation",
+      "title": "Private Consultation"
+    },
+    {
+      "table": "courses",
+      "id": "7a3c0246-72bf-4a40-ada0-00e287f0dd77",
+      "slug": "inner-smile-qigong-meditation-instruction-video-download",
+      "title": "Inner Smile Qigong Meditation Instruction Video Download"
+    },
+    {
+      "table": "courses",
+      "id": "bf5516ac-b98e-4e3c-8b2a-5153119e94d0",
+      "slug": "microcosmic-orbit-qigong-meditation-instruction-video-download",
+      "title": "MicroCosmic Orbit QiGong Meditation Instruction Video Download"
+    },
+    {
+      "table": "courses",
+      "id": "d1eb1c60-2165-4dd4-9b3b-79011c018cfc",
+      "slug": "tao-of-manifestation-co-creation-made-easy-guided-meditation-mp3",
+      "title": "Tao of Manifestation CO-CREATION MADE EASY Guided Meditation MP3"
+    },
+    {
+      "table": "free_resources",
+      "id": "888200e9-ce32-4970-91bc-814be7815919",
+      "slug": "sarina-stone-on-insight-timer",
+      "title": "Sarina Stone on Insight Timer"
+    },
+    {
+      "table": "hub_teachers",
+      "id": "8f72aa30-c055-4355-ae70-5769eed425ef",
+      "title": "sarina-stone teaches at Insight Timer"
+    }
+  ],
+  "at": "2026-10-31T18:44:53.827Z"
+}

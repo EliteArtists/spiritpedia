@@ -80,8 +80,16 @@ The list to pick up from. Each points to where the detail lives.
       review, from rank 117 (Judith Orloff, Ken Cohen, Sarah McCrum, Tyler
       Odysseus…), with the same brief and tools (`BRIEF.md`, `sprint.mjs`,
       `review.py`). Titles with "Medical" need the health-claim check.
-    - **Insight Timer** next. Link to their Insight Timer pages; never copy
-      tracks.
+    - **Insight Timer:** the hub, the 38 linked teachers and sprint 1 (97
+      new teachers, ranks 1–116) are live
+      (`docs/content-audits/insight-timer-sprint-1/`, report in
+      `docs/reports/2026-10-31-insight-timer-sprint-1.md`). Sprint 2 from
+      rank 117 of `insight-timer-faculty.json`; Catherine Wilde, Joshua
+      Canter, Michael and Jahna, Marisa La Fata, Sara Clark and Keith Parker
+      are already researched (plans ready, not inserted). Same brief and
+      tools. Link to their Insight Timer pages; never copy tracks. Rupert
+      Spira, Wim Hof and Elizabeth Gilbert wait for confirmation; Rod
+      Stryker and Jason McGrice are parked.
     - **White Tiger Qigong's other 157 instructors** only if the school
       engages.
     - **Breathe and Flow:** revisit as a School if its 2027 online training
@@ -2020,11 +2028,42 @@ Timeless Teachers with a lifespan (`1931 — 2015`, or `b. 1931`). Guidance,
 shown in admin and matching the star's tips: Superhero / Superstar ≈ worldwide
 reach, 1M+ followers across social media; Luminary / Shining Star ≈ hundreds of
 thousands; Local Hero ≈ a practitioner available in their area; Rising Star ≈
-growing, under 100k. **Editorial-stature rule** (owner, 31 Oct 2026): follower
-counts that can be read without logging in decide the tier, with the evidence
-recorded; the owner may raise a teacher whose standing clearly exceeds them
-(a major author in their field, the founder of a hub), and the reason is
-recorded in the plan (`sprint.tier_override`). On cards the tier (with ✓ Verified, or OFFICIAL) sits
+growing, under 100k.
+
+**The tier rule: followers added together** (owner, 31 Oct 2026). This is the
+one rule for every brief, template, sprint and ingestion; older wording that
+judged a single platform on its own (e.g. "50K+ on one platform") is out of
+date.
+
+1. Add up the followers on **all** the listing's own accounts that can be read
+   without logging in: YouTube subscribers (from the channel's own header row,
+   next to its own @handle), Instagram, Facebook, X, TikTok, and hub
+   followers such as Insight Timer.
+2. Don't count company or shared accounts unless the listing *is* that brand
+   (e.g. a couple's joint channel listed as the couple). Don't count a
+   podcast's audience figures as followers.
+3. Compare the total:
+
+   | Total followers | Practitioners | Channels, apps, organisations, publishers |
+   | :--- | :--- | :--- |
+   | 1,000,000 or more | Superhero | Superstar |
+   | 100,000 to 999,999 | Luminary | Shining Star |
+   | under 100,000 | Local Hero | Rising Star |
+
+4. Record each count, where it was read and the date, and the total, in the
+   plan (`sprint.tier_evidence`, e.g. `Insight Timer 97.5k (profile, 31 Oct
+   2026); Instagram 40k (og:description, 31 Oct 2026); YouTube 12k (channel
+   page) → ~150k total → luminary`). If a count can't be read, say so.
+   Flag totals of 80k–150k and 0.8M–1.5M as borderline.
+5. **Raising a tier above the total** is allowed for two reasons only, and
+   the reason is always recorded in the plan (`sprint.tier_override`):
+   **editorial stature** (a major author in their field, the founder of a
+   hub; the owner decides) and **student counts** (published numbers of
+   students taught, e.g. course enrolments on a hub or a school's stated
+   alumni, read the same way as followers).
+
+Ascended Master is separate: anyone who has died, whatever their total
+(§18.4). On cards the tier (with ✓ Verified, or OFFICIAL) sits
 top left, the heart top right, a channel's type bottom right.
 
 Every listing except Spiritpedia shows its tier, on cards and profiles,
@@ -2528,6 +2567,7 @@ dev, give the pages to check, stop. Live after their OK, as for healers.
 | White Tiger Qigong (new School, Luminary, founded 2008) with Tevia Feng (founder, Luminary), Sarah Divine, Ariel Tang, Joanne Faulkner and Vince Sauter (instructors, Local Hero); Skies and Flora changed from Channel to School, Shaka linked as its founder (`white-tiger-qigong.md`, `*-content.json`) | 30 Oct 2026: White Tiger 20 videos, 11 offerings (membership, 6 certification tracks, 4 Vietnam retreats), 2 free resources; Tevia 2 books, the Prescription System (his teaching videos are on the school; no YMAA book on Amazon, only a DVD; 8 Trigram only as a Japanese Kindle edition, left out); Sarah 14 videos, 4 offerings; Ariel 13 videos, 4 offerings, 2 free resources (Egypt pilgrimage past); Joanne 20 videos, 2 books, 2 offerings, 2 free resources, YouTube corrected to @ChiFlowWithJo; Vince 14 videos, 2 offerings, 2 free resources, YouTube corrected to @vincesauter5290 ("Everyday All Day" not on Amazon). Left out under the health-claim rule: 13 videos, Joanne's Wise Women retreat, Parkinson's material and four courses. Isaac Osborne and Natalie Ramon on hold (no confirmed photo); Wendy Jones left out (location unverified) | 30 Oct 2026, the same |
 | Hubs: The Shift Network changed from Channel to Organisation, its 16 teachers already on Spiritpedia linked (`the-shift-network-teachers.json`; Gregg Braden, Lynne McTaggart and Donna Eden left out, no faculty profile); its full faculty saved as the sprint pipeline (`the-shift-network-faculty.json`, 477 not yet on Spiritpedia). Frans Stiene's items (fresh research, `frans-stiene-content.json`) | 30 Oct 2026: Frans 19 videos, 4 books (Discovering Reiki; Your Reiki Treatment, the A–Z Reiki Pocketbook and the Reiki Techniques Card Deck with Bronwen Logan as co-author), 22 offerings (membership, 7 recorded courses, 2 online events, 13 dated in-person courses and retreats), 2 free resources (the Grounding Room left out: its page mentions recovery from illness). 9 of his videos moved from Mikao Usui to him; 3 under 2 minutes removed (log: `frans-stiene-videos.<env>.json`). Boho Beautiful and Breathe and Flow stay Channels | 30 Oct 2026, the same |
 | Hubs: The Shift Network sprint 1, 100 new teachers from its faculty list (ranks 1–116), each linked "Teaches on The Shift Network" (Stephen Dinan and Devaa Haley Mitchell as founders); plans, logs, brief, progress and report in `docs/content-audits/shift-sprint-1/` (`REPORT.md`: tier evidence, email sources, every flag) | 31 Oct 2026: 1,072 videos, 209 books, 515 offerings, 98 free resources. Tiers from readable follower counts (mostly YouTube; Instagram/Facebook need a login): 15 Luminary, 85 Local Hero, of which 6 raised by the owner under the new editorial-stature rule (Matthew Fox, Richard Tarnas, Cyndi Dale, Philip Carr-Gomm, Robert Moss, Stephen Dinan). Email: 83 published, 14 contact form only, 3 none. 16 skipped: 11 mainly medical or condition-based, Diana Beaulieu and Martha Peterson (whole brand fails the health-claim rule), Liesel Fricke (shares everything with Rob Schwartz), Simon Sanud (nothing public), Megan SolarGlow (left out by the owner: conspiracy-theory content). Medical intuition, Medical Qigong, condition-named courses and already-started dated courses left out throughout; The Physics of Angels linked to Rupert Sheldrake as co-author | 31 Oct 2026, the same |
+| Hubs: Insight Timer (new Organisation, Superhero by editorial stature, founded 2009; 2 offerings, 4 free resources), its 38 teachers already on Spiritpedia linked "Teaches on Insight Timer" with a "<Name> on Insight Timer" profile link each (plus legacy links for Thich Nhat Hanh and Ram Dass; Frans Stiene's already existed), and sprint 1: 97 new teachers from the claim-likelihood pipeline (ranks 1–116, `insight-timer-faculty.json`), each linked "Teaches on Insight Timer"; plans, logs, brief and progress in `docs/content-audits/insight-timer-sprint-1/`, report in `docs/reports/2026-10-31-insight-timer-sprint-1.md` | 31 Oct 2026: 757 videos, 84 books, 432 offerings, 195 free resources. Tiers by followers added together (§17.1, Insight Timer followers counted): 1 Superhero (Alex Elle), 20 Luminary, 76 Local Hero. Email: 75 published, 22 contact form. 22 not listed: 19 skipped (sleep-story or music brands, coaches with almost no spiritual teaching, too thin, or pages making medical claims: Carmen Ng, Mellisa Dormoy) and 3 dropped by the owner after review (Lisa Whatley, KC Gonzalez, Barbara Deyo; plans in `dropped/`). Insight Timer tracks never copied; courses listed as offerings at "Included in Member Plus". Owner fixes the same day (`owner-fixes-2026-10-31.mjs`, logged for rollback): Katherine Woodward Thomas (died 2026) moved to Ascended Master; Iyanla Vanzant's "Working Through Anxiety" and Healing Vibrations' "…For Sleep And Anxiety" removed. 67 Shift sprint-1 bios rewritten for original wording (§18.4) on both | 31 Oct 2026, the same |
 
 ### 18.7 Hub-by-hub sprints (the standard method)
 

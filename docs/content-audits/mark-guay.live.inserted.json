@@ -1,0 +1,51 @@
+{
+  "env": "live",
+  "healer": {
+    "id": 325,
+    "healer_slug": "mark-guay"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "86a03818-a7f7-49ce-b15d-214b8d597bbf",
+      "slug": "climbing-your-second-mountain-design-your-vision-and-awaken-your-soul-purpose",
+      "title": "Climbing Your Second Mountain: Design Your Vision And Awaken Your Soul Purpose"
+    },
+    {
+      "table": "courses",
+      "id": "78b82868-7fa1-4636-951c-6c7f463ba191",
+      "slug": "manifest-your-unlimited-potential",
+      "title": "Manifest Your Unlimited Potential"
+    },
+    {
+      "table": "courses",
+      "id": "337d6f1d-c7ce-4a38-a85c-21ca37c7f6b3",
+      "slug": "awaken-the-father-king",
+      "title": "Awaken The Father King"
+    },
+    {
+      "table": "courses",
+      "id": "6c7d5dde-e309-44e1-a5e2-51ecd5dc8667",
+      "slug": "second-mountain-coaching",
+      "title": "Second Mountain Coaching"
+    },
+    {
+      "table": "free_resources",
+      "id": "316ef5a1-4f30-4f3e-8424-f54e53de0930",
+      "slug": "mark-guay-on-insight-timer",
+      "title": "Mark Guay on Insight Timer"
+    },
+    {
+      "table": "free_resources",
+      "id": "2dc238c8-02fe-423b-8f00-e02112bcfcae",
+      "slug": "seven-dimensional-breathing",
+      "title": "Seven Dimensional Breathing"
+    },
+    {
+      "table": "hub_teachers",
+      "id": "3dfd85ee-929a-4216-84ae-17896fb16a35",
+      "title": "mark-guay teaches at Insight Timer"
+    }
+  ],
+  "at": "2026-10-31T18:43:32.286Z"
+}

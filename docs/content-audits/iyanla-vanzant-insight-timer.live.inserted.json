@@ -1,0 +1,23 @@
+{
+  "env": "live",
+  "healer": null,
+  "rows": [
+    {
+      "table": "free_resources",
+      "id": "482c5cf5-eb87-48d4-b99a-a8f488f079d2",
+      "slug": "iyanla-vanzant-on-insight-timer",
+      "title": "Iyanla Vanzant on Insight Timer"
+    }
+  ],
+  "at": "2026-10-31T18:41:04.273Z",
+  "healer_update": {
+    "id": 100,
+    "before": {
+      "image_urls": [
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyLGWba16vaqJds7ApSH-_qWlgwcYAB3g4tBBRZdCl_Q&s=10",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBIzGTwSfiVsGoVB6WgzLG5mvbprlyX0EzFllmlwzGZA&s=10",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCqRy6dhl6ntqXX79tAFAl0ZZguldHyPxlV95enmmsgQ&s=10"
+      ]
+    }
+  }
+}

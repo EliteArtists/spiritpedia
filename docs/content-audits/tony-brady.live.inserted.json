@@ -1,0 +1,75 @@
+{
+  "env": "live",
+  "healer": {
+    "id": 316,
+    "healer_slug": "tony-brady"
+  },
+  "rows": [
+    {
+      "table": "books",
+      "id": 1412,
+      "slug": "just-for-today-a-guide-to-mindful-living-day-by-day",
+      "title": "Just for Today: A Guide to Mindful Living Day by Day"
+    },
+    {
+      "table": "books",
+      "id": 1413,
+      "slug": "the-gratitude-response",
+      "title": "The Gratitude Response"
+    },
+    {
+      "table": "books",
+      "id": 1414,
+      "slug": "wave-of-blessing-and-other-meditations",
+      "title": "Wave of Blessing and Other Meditations"
+    },
+    {
+      "table": "books",
+      "id": 1415,
+      "slug": "simply-calling-god",
+      "title": "Simply Calling God: Reflections and Prayers for Life's Situations"
+    },
+    {
+      "table": "books",
+      "id": 1416,
+      "slug": "100-words-on",
+      "title": "100 Words On..."
+    },
+    {
+      "table": "books",
+      "id": 1417,
+      "slug": "the-time-of-your-life",
+      "title": "The Time of Your Life"
+    },
+    {
+      "table": "courses",
+      "id": "c6d03790-fa6a-4b0c-8446-712656f248fe",
+      "slug": "awakening-to-a-life-of-gratitude",
+      "title": "Awakening To A Life Of Gratitude"
+    },
+    {
+      "table": "courses",
+      "id": "134bfdb1-6098-4f00-9d49-eb9f65e21427",
+      "slug": "live-a-life-of-loving-kindness",
+      "title": "Live A Life Of Loving Kindness"
+    },
+    {
+      "table": "free_resources",
+      "id": "512cb996-f583-403e-9530-ced13d05833a",
+      "slug": "tony-brady-on-insight-timer",
+      "title": "Tony Brady on Insight Timer"
+    },
+    {
+      "table": "free_resources",
+      "id": "dae1fdaa-3263-44a8-bb3e-bf11705f2be0",
+      "slug": "this-week-thought-reflection-and-meditation",
+      "title": "This Week: Thought, Reflection and Meditation"
+    },
+    {
+      "table": "hub_teachers",
+      "id": "c7b74bf0-7a0d-49b0-9e4a-7a1800618ad9",
+      "title": "tony-brady teaches at Insight Timer"
+    }
+  ],
+  "at": "2026-10-31T18:42:48.665Z"
+}
