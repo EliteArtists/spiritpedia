@@ -11,7 +11,7 @@
   - **Items:** 768 videos, 85 books, 443 offerings, 200 free resources.
   - **Email:** 77 have a published email; 23 have a contact form; none have neither.
 - **Shift bios (rule A):** 67 of the 100 Shift sprint-1 bios shared runs of 8+ words with the teacher's Shift page or own site. All 67 were rewritten on dev and live; all 100 now check clean on both. Old bios are logged for rollback (`docs/content-audits/shift-sprint-1/bios-rewritten.<env>.log.json`). Names are listed at the end.
-- **Waiting, not inserted:** Catherine Wilde (#117) and Joshua Canter (#120) are researched and ready for sprint 2. Ranks 121–125 are still with a researcher.
+- **Waiting, not inserted (ready for sprint 2):** Catherine Wilde (#117, mainly a mothers' self-care coach), Joshua Canter (#120), Michael and Jahna (#121, mainly a musician duo), Marisa La Fata (#122, recovery and codependency framing), Sara Clark (#124, thin: no offerings) and Keith Parker (#125, co-runs Field Dynamics with Christabel Armsden). Meredith Rom (#123) skipped: German New Medicine on her own YouTube channel and birth-outcome claims on her Womb Healing page.
 
 ## Five random dev links
 

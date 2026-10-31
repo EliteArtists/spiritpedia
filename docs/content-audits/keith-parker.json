@@ -1,0 +1,189 @@
+{
+  "healer": {
+    "healer_slug": "keith-parker",
+    "create": {
+      "name": "Keith Parker",
+      "bio": "Keith Parker is an energy healing teacher and author who set up Field Dynamics with Christabel Armsden in 2018. He came to this work through meditation, which he first used to explore subtle states of mind, and then spent roughly ten years studying movement, breathwork, bodywork and energy work. Along the way he trained in hands-on somatic methods such as craniosacral biodynamics and Zero Balancing. He says that experiences during those years left him able to see the human aura clearly, and that way of perceiving sits at the heart of what he teaches.\n\nIn his book Radical Reality he asks what the energy field can show us about consciousness and the link between mind and body. With Christabel he leads EHT-100 and EHT-200, live online trainings in energy healing that run for several months and mix teaching on subtle anatomy with group sessions and practice swaps between students. They also offer short online workshops and a free library of guided practices, and co-host The Future of Wellness podcast. On Insight Timer he shares guided meditations and short talks on grounding, energetic awareness, past lives and psychic perception.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "worldwide",
+      "city": null,
+      "country": null,
+      "subjects": [
+        "energy-medicine",
+        "consciousness",
+        "chakra-healing"
+      ],
+      "website_url": "https://energyfielddynamics.com",
+      "booking_url": "https://energyfielddynamics.com/training/",
+      "youtube_url": "https://www.youtube.com/@fielddynamicsenergy",
+      "instagram_url": "https://www.instagram.com/fielddynamics",
+      "facebook_url": "https://www.facebook.com/fielddynamicshealing/",
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "info@fielddynamicshealing.com",
+      "image_urls": [
+        "https://energyfielddynamics.com/wp-content/uploads/2024/06/Keith-Parker-Field-Dynamics_profile-scaled.jpg",
+        "https://energyfielddynamics.com/wp-content/uploads/2024/07/Keith-Parker-energy-healing-practitioner-scaled-e1720274836274.jpg",
+        "https://energyfielddynamics.com/wp-content/uploads/2024/06/Keith-Parker-inner-vision.jpg"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "insight-timer",
+      "role": "instructor"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Radical Reality: Seeing the Aura & the Truth of Who We Are | Keith Parker",
+      "url": "https://www.youtube.com/watch?v=8CbPIfUUXJI",
+      "subjects": [
+        "energy-medicine",
+        "consciousness"
+      ]
+    },
+    {
+      "title": "The 7 Principles of Ancestral Healing: How Healing the Past Frees the Future",
+      "url": "https://www.youtube.com/watch?v=149C_TDKIEE",
+      "subjects": [
+        "energy-medicine",
+        "self-healing"
+      ]
+    },
+    {
+      "title": "Beyond Energy Healing: The Subtle Art of Layered Transformation",
+      "url": "https://www.youtube.com/watch?v=nIkuakvW5jM",
+      "subjects": [
+        "energy-medicine"
+      ]
+    },
+    {
+      "title": "Are You Really Absorbing Other People’s Energy? | The Myth Every Empath Needs to Know",
+      "url": "https://www.youtube.com/watch?v=YRr34YStha8",
+      "subjects": [
+        "energy-medicine",
+        "spirituality"
+      ]
+    },
+    {
+      "title": "Why Healing Works Better in Groups (The Science & Energy Behind It)",
+      "url": "https://www.youtube.com/watch?v=Koqp6CDSPJ0",
+      "subjects": [
+        "energy-medicine",
+        "consciousness"
+      ]
+    },
+    {
+      "title": "Does Sensitivity Mean You’re Evolved? | Psychic Abilities & Maturity",
+      "url": "https://www.youtube.com/watch?v=n25sYvmwlu0",
+      "subjects": [
+        "spiritual-awakening",
+        "energy-medicine"
+      ]
+    },
+    {
+      "title": "Why Real Healing Is a Process (Not a Breakthrough)",
+      "url": "https://www.youtube.com/watch?v=nAj3JM8cCng",
+      "subjects": [
+        "self-healing",
+        "energy-medicine"
+      ]
+    }
+  ],
+  "books": [
+    {
+      "title": "Radical Reality: How Seeing the Aura Reveals Who & What We Are",
+      "slug": "radical-reality-how-seeing-the-aura-reveals-who-what-we-are",
+      "author": "Keith Parker",
+      "asin": "B0DWH9XVYL",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "Keith's account of how he came to see the aura and what that perception suggests about consciousness, the mind-body link and the nature of reality. It mixes personal story with ideas from science and contemplative traditions, and closes with thoughts on where energy work may be heading.",
+      "subjects": [
+        "energy-medicine",
+        "consciousness"
+      ],
+      "cover": "https://m.media-amazon.com/images/I/51VBy3ODlKL._SL1499_.jpg"
+    }
+  ],
+  "courses": [
+    {
+      "title": "EHT-100: Energy Healing Training, Level 1",
+      "url": "https://energyfielddynamics.com/training/eht-100/",
+      "description": "A four-month live online training with Keith and Christabel covering subtle anatomy, energetic perception and hands-on technique, with group healing sessions, guided exchanges between students and a private session with a facilitator. The next cohort listed runs from February to June 2027.",
+      "price": "$1,895 USD",
+      "product_type": "course",
+      "start_date": "2027-02-20",
+      "end_date": "2027-06-06",
+      "subjects": [
+        "energy-medicine",
+        "chakra-healing"
+      ]
+    },
+    {
+      "title": "EHT-200: Energy Healing Training, Level 2",
+      "url": "https://energyfielddynamics.com/training/eht-200/",
+      "description": "An eight-module advanced training for EHT-100 graduates that refines technique and practitioner skills through deeper exchanges and supervised practice, with optional Field Dynamics certification. It runs once a year.",
+      "price": "$2,295 USD",
+      "product_type": "course",
+      "start_date": "2027-02-06",
+      "end_date": "2027-06-27",
+      "subjects": [
+        "energy-medicine"
+      ]
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Keith Parker on Insight Timer",
+      "url": "https://insighttimer.com/keithparker",
+      "description": "Free guided meditations and short talks from Keith on grounding, sensing your own energy, chakras, past lives and psychic perception. Listen in the app or on the web.",
+      "featured": true,
+      "resource_type": "meditation",
+      "subjects": [
+        "energy-medicine",
+        "meditation"
+      ]
+    },
+    {
+      "title": "Field Dynamics Guided Practice Library",
+      "url": "https://energyfielddynamics.com/guided-practice-library/",
+      "description": "A free collection of audio practices from Field Dynamics, including chakra sensing, vital energy and pranic breathing, body scans, and Samatha and Vipassana meditations.",
+      "featured": false,
+      "resource_type": "meditation",
+      "subjects": [
+        "energy-medicine",
+        "meditation",
+        "breathwork"
+      ]
+    }
+  ],
+  "sprint": {
+    "hub": "insight-timer",
+    "rank": 125,
+    "insight_timer_url": "https://insighttimer.com/keithparker",
+    "tier_evidence": "Insight Timer 5k (profile, 31 Oct 2026); YouTube 1.21k (@fielddynamicsenergy channel header, shared Field Dynamics channel, 31 Oct 2026); Facebook 598 (Field Dynamics page og:description, 31 Oct 2026); Instagram 138 (Field Dynamics og:description, 31 Oct 2026) → ~7k total → local_hero",
+    "email": "yes",
+    "email_source": "https://energyfielddynamics.com/contact/",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 9 source(s)",
+    "flags": [
+      "Email info@fielddynamicshealing.com is the Field Dynamics brand inbox (shared with co-founder Christabel Armsden).",
+      "Field Dynamics is run with Christabel Armsden; YouTube, Instagram and Facebook are the shared brand accounts, and trainings are co-taught. Possible duplicate if she is listed separately.",
+      "Private sessions left out: the sessions page lists anxiety and 'support for physical healing, alongside medical care' among areas it helps with.",
+      "Location: Insight Timer says Miami, FL, but the site names no base for in-person sessions, so availability is worldwide with no city.",
+      "Amazon: curl returned the /dp/B0DWH9XVYL page (title confirms Keith Parker, ISBN-13 9798309099580); WebFetch on the same page agreed.",
+      "Insight Timer bio: WebFetch quoted only the first sentence; the bio check relies on his own site pages."
+    ],
+    "left_out": [
+      "Private energy healing sessions: health claims on the page (anxiety, physical healing).",
+      "Workshops 'Healing the Mother Wound', 'Manifestation & the Chakras' and 'Inner Cosmos': all listed dates have passed (Aug 2025/Jan 2026/June solstice).",
+      "Retreat 2027: no destination, dates or price published yet.",
+      "Earlier EHT-100 cohorts starting 26 Sept and 3 Oct 2026: already started; only the February 2027 cohort is dated in.",
+      "YouTube episodes led by guests or on health topics (mental health, fermentation and gut health, red light therapy, sleep science, distance healing)."
+    ]
+  }
+}

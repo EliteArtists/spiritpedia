@@ -1,0 +1,131 @@
+{
+  "healer": {
+    "healer_slug": "marisa-la-fata",
+    "create": {
+      "name": "Marisa La Fata",
+      "bio": "Marisa La Fata is a spiritual coach and meditation guide in Portland, Oregon, who works under the name Soul Alchemy Healing. Her path draws on Toltec teachings she studied with Don Miguel Ruiz Jr., Don Jose Ruiz and HeatherAsh Amara, and on Shamanic Breathwork, which she practises as a master apprentice of its founder, Linda Star Wolf. She is open about her own long recovery and about the years she spent working with people in hospitals and treatment settings, and that history gives her teaching a frank, grounded tone.\n\nHer central method is what she calls psychospiritual meditation: unscripted, intuitively led visualisations that bring together imagery, body awareness and a sense of spiritual connection. She offers 90-minute one-to-one sessions and a twelve-week private journey over Zoom, and leads women's breathwork ceremonies and day retreats in Oregon. She hosts the Healing Our Relationships podcast, with conversations with spiritual teachers, and has written a companion workbook. On Insight Timer she shares channelled shamanic journeys, morning prayers and an eight-day course on inner visioning.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local_online",
+      "city": "Portland",
+      "country": "United States",
+      "subjects": [
+        "shamanism",
+        "breathwork",
+        "meditation"
+      ],
+      "website_url": "https://www.healwithalchemy.com",
+      "booking_url": "https://www.healwithalchemy.com/offerings",
+      "youtube_url": null,
+      "instagram_url": "https://www.instagram.com/soulalchemyhealing",
+      "facebook_url": "https://www.facebook.com/soulalchemyhealingwithmarisa/",
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "Marisa@healwithalchemy.com",
+      "image_urls": [
+        "https://users.insighttimer.com/iFUAqd0Tn6TiUxYZcdCQpYi6bIE2/pictures/square_large.jpeg",
+        "https://images.squarespace-cdn.com/content/v1/65d90d86f4425d5f021d9a12/f3eebf80-0cae-41d4-91e2-59ca944a7946/IMG_3139.jpeg"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "insight-timer",
+      "role": "instructor"
+    }
+  ],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Awakening the Heart Center: A Course In Inner Visioning",
+      "url": "https://insighttimer.com/meditation-courses/connecting-to-your-great-within",
+      "description": "An eight-day Insight Timer course in which Marisa guides unscripted visualisation journeys toward the heart, to build trust in your own inner sight and guidance.",
+      "price": "Included in Member Plus ($59.99 USD a year)",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ]
+    },
+    {
+      "title": "Intuitive Healing Session",
+      "url": "https://cal.com/soulalchemyhealingcalendar/90-minute-ritual-healing-session",
+      "description": "A 90-minute one-to-one session on Zoom that mixes conversation with a channelled, guided journey, so you can look at your situation from a wider view and connect with your own intuition and guides.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ]
+    },
+    {
+      "title": "12 Week Soul Return",
+      "url": "https://www.healwithalchemy.com/coaching",
+      "description": "A private twelve-week programme of weekly 90-minute Zoom sessions with messaging support in between. Sessions draw on guided meditation, archetypes, tarot, breath, art and ritual, shaped around what comes up each week.",
+      "price": "$6,500 USD",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "shadow-work",
+        "spirituality"
+      ]
+    },
+    {
+      "title": "Rise of the Sacred Feminine: Women's Shamanic Breathwork Day Retreat",
+      "url": "https://www.healwithalchemy.com/shamanic-breathwork-retreat",
+      "description": "A one-day women's retreat in a yurt near Sisters, Oregon, built around a Shamanic Breathwork ceremony with chakra-attuned music, art and sharing circle. Places are limited to twelve, with sliding-scale fees.",
+      "price": "Free (scholarship) to $500 USD",
+      "product_type": "retreat",
+      "start_date": "2026-11-21",
+      "end_date": "2026-11-21",
+      "subjects": [
+        "breathwork",
+        "shamanism"
+      ]
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Marisa La Fata on Insight Timer",
+      "url": "https://insighttimer.com/soulalchemyhealing",
+      "description": "Free channelled shamanic journeys, prayers and guided meditations from Marisa, recorded without scripts. Listen in the app or on the web.",
+      "featured": true,
+      "resource_type": "meditation",
+      "subjects": [
+        "shamanism",
+        "meditation"
+      ]
+    }
+  ],
+  "sprint": {
+    "hub": "insight-timer",
+    "rank": 122,
+    "insight_timer_url": "https://insighttimer.com/soulalchemyhealing",
+    "tier_evidence": "Insight Timer 8.4k (profile, 31 Oct 2026); Facebook 6,012 (og:description, 31 Oct 2026); Instagram unreadable without login → ~14k total → local_hero",
+    "email": "yes",
+    "email_source": "https://www.healwithalchemy.com/contact",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 10 source(s)",
+    "flags": [
+      "Much of her framing is recovery and codependency (podcast and workbook titled 'From Codependency to Authenticity', 'woman in recovery since 2008', past work in rehabs); listing kept on her Toltec, shamanic breathwork and meditation work, but a human may want to judge the fit.",
+      "Her Shamanic Breathwork info page says addictions are sometimes transformed in the process; that page is not linked (the retreat page linked instead does not say this).",
+      "Instagram count could not be read without logging in.",
+      "Session price is not published on her site or the Cal.com page; set to Contact for pricing.",
+      "The about page's mailto link uses marisa@healwithalchemy.co (missing the m); the contact page shows Marisa@healwithalchemy.com, which is used."
+    ],
+    "left_out": [
+      "Workbook 'Healing Our Relationships: From Codependency to Authenticity' ($34.99 USD from her site, US shipping only): codependency-named title, and no Amazon listing was checked or found.",
+      "Healing Our Relationships podcast: codependency-named title.",
+      "Awakening Woman Apprenticeship: current cohort began January 2026 (monthly dates already under way); 2027 dates not published.",
+      "Past events on her calendar (book launch, Sedona retreat, monthly Insight Timer lives, tarot series, Gathering of the Shamans).",
+      "Shamanic Breathwork info page (claim about addictions); no YouTube channel found."
+    ]
+  }
+}
