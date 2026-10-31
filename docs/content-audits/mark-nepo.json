@@ -1,0 +1,365 @@
+{
+  "healer": {
+    "healer_slug": "mark-nepo",
+    "create": {
+      "name": "Mark Nepo",
+      "bio": "Mark Nepo is an American poet and spiritual writer who has spent more than half a century teaching poetry, creative expression and the inner life. He is best known for The Book of Awakening, a year of short daily reflections that became a New York Times bestseller and has sold over a million copies. Since then he has published more than two dozen books of prose and verse, from Seven Thousand Ways to Listen to The Fifth Season and The Language of the Soul, alongside many audio recordings. Oprah Winfrey has featured him on Super Soul Sunday and took him on her 2014 Life You Want tour.\n\nHis teaching blends poems, stories and insights from many faith traditions into quiet questions about how to live wholeheartedly, listen closely and stay near what is sacred in ordinary days. He guides small yearlong journeys, short online webinar series, and weekend or weeklong retreats at places such as Omega Institute in Rhinebeck, New York, the Modern Elder Academy in Baja and the Sophia Institute in Charleston. A favourite method is to trace familiar words back to their roots and let their older meanings open up conversation.",
+      "tier": "luminary",
+      "entity_type": "individual",
+      "availability": "worldwide",
+      "city": null,
+      "country": null,
+      "subjects": [
+        "spirituality",
+        "spiritual-awakening",
+        "mindfulness"
+      ],
+      "website_url": "https://marknepo.com",
+      "booking_url": "https://marknepo.com/teaching/schedule/",
+      "youtube_url": "https://www.youtube.com/channel/UCY9xcVVdSVqFpQGHCAasY0A",
+      "instagram_url": "https://www.instagram.com/mark_nepo/",
+      "facebook_url": "https://www.facebook.com/MarkNepo",
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "brooke@threeintentions.com",
+      "image_urls": [
+        "https://www.eomega.org/sites/default/files/media/Mark-Nepo-bio_600x600.jpg",
+        "https://live.marknepo.com/wp-content/uploads/2022/08/Mark-2022-photo.png"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "omega-institute",
+      "role": "instructor"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Mark Nepo's Seven Thousand Ways to Listen",
+      "url": "https://www.youtube.com/watch?v=mK_gGEJIgrw",
+      "subjects": [
+        "spirituality",
+        "mindfulness"
+      ],
+      "channel": "Simon & Schuster Books"
+    },
+    {
+      "title": "Mark Nepo: \"Stopping the Noise\"",
+      "url": "https://www.youtube.com/watch?v=lEabO53wzws",
+      "subjects": [
+        "mindfulness",
+        "spirituality"
+      ],
+      "channel": "Mark Nepo"
+    },
+    {
+      "title": "The Fifth Season: Creativity in the Second Half of Life",
+      "url": "https://www.youtube.com/watch?v=5yvYrzvFZ98",
+      "subjects": [
+        "spirituality"
+      ],
+      "channel": "Mark Nepo"
+    },
+    {
+      "title": "The Language of the Soul - Mark Nepo on his newest book",
+      "url": "https://www.youtube.com/watch?v=gg8QhY5kfTw",
+      "subjects": [
+        "spirituality",
+        "spiritual-awakening"
+      ],
+      "channel": "Mark Nepo"
+    },
+    {
+      "title": "Mark Nepo - St James Church Piccadilly",
+      "url": "https://www.youtube.com/watch?v=Z1C_yaygz6U",
+      "subjects": [
+        "spirituality",
+        "spiritual-awakening"
+      ],
+      "channel": "Alternatives St. James's Church"
+    },
+    {
+      "title": "Saying Yes to Life: A Poetry Reading with Mark Nepo at The Sophia Institute in Charleston, SC",
+      "url": "https://www.youtube.com/watch?v=xrncOnyYCUc",
+      "subjects": [
+        "spirituality"
+      ],
+      "channel": "Mark Nepo"
+    },
+    {
+      "title": "In the Trusted Company of Others | New Dimensions Radio featuring Mark Nepo",
+      "url": "https://www.youtube.com/watch?v=C1gc2NTpOMk",
+      "subjects": [
+        "conscious-relationships",
+        "spirituality"
+      ],
+      "channel": "Mark Nepo"
+    },
+    {
+      "title": "Friendship: An Island of Safety | New Dimensions Radio Cafe featuring Mark Nepo",
+      "url": "https://www.youtube.com/watch?v=KQmq3Q8PB2c",
+      "subjects": [
+        "conscious-relationships"
+      ],
+      "channel": "Mark Nepo"
+    },
+    {
+      "title": "Mark reads 4 poems from his new book, Half-Life of Angels",
+      "url": "https://www.youtube.com/watch?v=AdQdgK3CgQA",
+      "subjects": [
+        "spirituality"
+      ],
+      "channel": "Mark Nepo"
+    }
+  ],
+  "books": [
+    {
+      "title": "The Book of Awakening: Having the Life You Want by Being Present to the Life You Have (20th Anniversary Edition)",
+      "slug": "the-book-of-awakening",
+      "author": "Mark Nepo",
+      "asin": "1590035003",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "A reflection for every day of the year, each pairing a short personal story or insight with a suggestion for meditation or journalling. Readers often use it as a morning companion; this edition marks two decades in print.",
+      "subjects": [
+        "spiritual-awakening",
+        "mindfulness"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1590035003.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "Seven Thousand Ways to Listen: Staying Close to What Is Sacred",
+      "slug": "seven-thousand-ways-to-listen",
+      "author": "Mark Nepo",
+      "asin": "1451674686",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "Essays on listening as a spiritual discipline: to other people, to the world and to the quiet inside. Each chapter closes with questions to reflect on alone or with others.",
+      "subjects": [
+        "spirituality",
+        "mindfulness"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1451674686.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "The Book of Soul: 52 Paths to Living What Matters",
+      "slug": "the-book-of-soul",
+      "author": "Mark Nepo",
+      "asin": "1250262968",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "Fifty-two short chapters, one for each week, that move through themes such as purpose, kindness and staying open. Every chapter ends with a practice or journal prompt.",
+      "subjects": [
+        "spirituality",
+        "soul-purpose"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1250262968.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "The One Life We're Given: Finding the Wisdom That Waits in Your Heart",
+      "slug": "the-one-life-were-given",
+      "author": "Mark Nepo",
+      "asin": "1501116320",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "A collection of meditative essays about meeting life as it actually is and finding meaning in the experience we already have. Stories from friends, history and myth sit alongside reflection questions.",
+      "subjects": [
+        "spirituality",
+        "spiritual-awakening"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1501116320.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "More Together Than Alone: Discovering the Power and Spirit of Community in Our Lives and in the World",
+      "slug": "more-together-than-alone",
+      "author": "Mark Nepo",
+      "asin": "1501167847",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "Gathers stories of communities across cultures and centuries to show how people hold each other up. He asks what real belonging looks like and offers prompts for reflection and conversation.",
+      "subjects": [
+        "conscious-relationships",
+        "spirituality"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1501167847.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "Drinking from the River of Light: The Life of Expression",
+      "slug": "drinking-from-the-river-of-light",
+      "author": "Mark Nepo",
+      "asin": "1683642309",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "A book about creativity as a way of being alive rather than a talent for the few. It moves between his own path as a poet, the lives of artists and exercises for anyone wanting to express what they feel.",
+      "subjects": [
+        "spirituality"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1683642309.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "Falling Down and Getting Up: Discovering Your Inner Resilience and Strength",
+      "slug": "falling-down-and-getting-up",
+      "author": "Mark Nepo",
+      "asin": "1250909945",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "Short meditations on stumbling and rising again, drawing on stories from many traditions as well as his own life. It treats setbacks as part of the path rather than a detour from it.",
+      "subjects": [
+        "spirituality",
+        "self-healing"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1250909945.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "You Don't Have to Do It Alone: The Power of Friendship",
+      "slug": "you-dont-have-to-do-it-alone",
+      "author": "Mark Nepo",
+      "asin": "1250342376",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "A warm book on friendship as a spiritual practice, looking at how friends shape us and how we can show up for each other. Reflection questions follow each section.",
+      "subjects": [
+        "conscious-relationships"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1250342376.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "The Fifth Season",
+      "slug": "the-fifth-season",
+      "author": "Mark Nepo",
+      "asin": "1250342422",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "Written for people in the second half of life, this book explores creativity as something that can deepen with age. It mixes personal stories, examples from artists and simple practices for beginning again.",
+      "subjects": [
+        "spirituality"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1250342422.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "The Language of the Soul: How the Words You Choose Shape the Life You Live",
+      "slug": "the-language-of-the-soul",
+      "author": "Mark Nepo",
+      "asin": "1250404231",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "Traces the roots of more than two hundred words from many languages and traditions to recover their older, fuller meanings. Each short entry suggests how a word might be lived more fully.",
+      "subjects": [
+        "spirituality",
+        "ancient-wisdom"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1250404231.01._SCLZZZZZZZ_.jpg"
+    }
+  ],
+  "courses": [
+    {
+      "title": "The Life of Expression: Your Life as a Work of Art",
+      "url": "https://satimudita.com/event/the-life-of-expression-your-life-as-a-work-of-art-with-mark-nepo/",
+      "description": "Three evening seminars on Zoom hosted by the Milan Center for Mindfulness (Sati Mudita), with Italian translation. The sessions look at feeling, dialogue and writing as ways to give form to inner life.",
+      "price": "75 EUR (85 USD) plus dana, and a 25 EUR (30 USD) annual membership card",
+      "product_type": "course",
+      "start_date": "2026-11-10",
+      "end_date": "2027-01-26",
+      "subjects": [
+        "spirituality"
+      ],
+      "image": "https://satimudita.com/wp-content/uploads/2026/06/Screenshot-2026-06-10-at-07.38.08-1024x621.png"
+    },
+    {
+      "title": "The Language of the Soul: The Power to Awaken, Connect, and Heal",
+      "url": "https://live.marknepo.com/",
+      "description": "A three-session online webinar on Sunday afternoons (US Eastern time), built around his book on the roots of words. Participants explore how older meanings of familiar words can bring fresh attention to daily life.",
+      "price": "$60 USD",
+      "product_type": "course",
+      "start_date": "2027-01-10",
+      "end_date": "2027-01-24",
+      "subjects": [
+        "spirituality",
+        "spiritual-awakening"
+      ],
+      "image": "https://live.marknepo.com/wp-content/uploads/2022/08/Mark-2022-photo.png"
+    },
+    {
+      "title": "Creativity in the Second Half of Life (MEA 5-Day Immersion)",
+      "url": "https://www.meawisdom.com/workshop/creativity-in-the-second-half-of-life-with-mark-nepo/",
+      "description": "A five-day residential programme at the Modern Elder Academy's oceanfront campus in Baja, Mexico. Drawing on The Fifth Season, it explores creativity and renewal for those past midlife; currently on a waitlist.",
+      "price": "From $5,000 USD per person",
+      "product_type": "retreat",
+      "start_date": "2027-02-08",
+      "end_date": "2027-02-13",
+      "subjects": [
+        "spirituality"
+      ],
+      "image": "https://www.meawisdom.com/wp-content/uploads/2025/12/mark-nepo-09.webp"
+    },
+    {
+      "title": "The Fifth Season: A Castle Retreat with Mark Nepo",
+      "url": "https://peakevents.info/mark-pavone-overview/",
+      "description": "A week at Castello di Pavone in Piedmont, Italy, combining poetry sessions with excursions in the region. The theme is creativity and meaning in later life.",
+      "price": "$4,895 USD per person sharing, $6,595 USD single",
+      "product_type": "retreat",
+      "start_date": "2027-04-18",
+      "end_date": "2027-04-25",
+      "subjects": [
+        "spirituality"
+      ],
+      "image": "https://peakevents.info/wp-content/uploads/sites/68/2026/10/Peak-Homepage-Castle-Exterior.jpg"
+    },
+    {
+      "title": "The Language of the Soul",
+      "url": "https://www.eomega.org/workshops/language-of-soul-mark-nepo",
+      "description": "A weekend workshop on Omega's Rhinebeck campus exploring the original meanings of words and how they can help us feel more awake and connected. Includes time for writing, conversation and an evening reading.",
+      "price": "Member $400 USD, standard $445 USD",
+      "product_type": "retreat",
+      "start_date": "2027-06-25",
+      "end_date": "2027-06-27",
+      "subjects": [
+        "spirituality",
+        "spiritual-awakening"
+      ],
+      "image": "https://www.eomega.org/sites/default/files/styles/scale_width_1440/public/media/fifth-season_hero.jpg?itok=7CcaZotQ"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "hub": "omega-institute",
+    "rank": 23,
+    "omega_url": "https://www.eomega.org/workshops/teachers/mark-nepo",
+    "tier_evidence": "Instagram 47K (og:description, 31 Oct 2026); YouTube 2.04k (channel header next to @marknepo84, 31 Oct 2026); Facebook not readable without login; Substack 'over 6,000 subscribers' (newsletter, not counted) → ~49k readable total → local_hero by counts, raised to luminary by editorial stature (see tier_override)",
+    "tier_override": "Editorial stature: The Book of Awakening is a New York Times bestseller with over a million copies sold (his own bio and Omega page), 28 books in 20+ languages, chosen for OWN's SuperSoul 100 and toured with Oprah in 2014. Owner to confirm luminary (or decide on superhero).",
+    "email": "yes",
+    "email_source": "https://marknepo.com/teaching/booking/",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 20 source(s)",
+    "flags": [
+      "Tier raised from local_hero (≈49k readable) to luminary on editorial stature; Facebook (facebook.com/MarkNepo) count could not be read and may be large. Owner decides.",
+      "Email is Brooke Warner's address (brooke@threeintentions.com), published on his booking page for retreats and workshops; Mark says he cannot answer mail personally. Speaking enquiries go to the Harry Walker Agency.",
+      "His site title and some partner pages describe him as a cancer survivor; his teaching is poetry and spirituality, so kept, but the bio and items avoid health framing. His poetry book Acre of Light: Living With Cancer is left out.",
+      "No free resources found that fit (no free meditations or downloads); his Substack newsletter is free but is not a practice.",
+      "Mainly a poet and spiritual writer: teaching is real (yearlong journeys, retreats, webinars) but much of his output is literary.",
+      "The Fifth Season (Amazon title shown as just 'The Fifth Season'; subtitle on other retailers is 'Creativity in the Second Half of Life')."
+    ],
+    "left_out": [
+      "Yearlong journeys 2026–27 (full and in progress) and 2028–29 (waitlist only, details from June 2027)",
+      "Shallowford Center (Atlanta, 26–27 Feb 2027): link and price not yet published",
+      "Sophia Institute (21–23 May 2027), Mercy by the Sea (27–29 Aug 2027), Siena Retreat Center (10–12 Sep 2027): no event pages linked yet",
+      "2026 events: passed",
+      "Acre of Light: Living With Cancer and Surviving Storms (condition/hardship framing); other books beyond 10",
+      "Flames That Light the Heart (Sounds True/Udemy video course): third-party listing, not checked for price",
+      "Videos under 2 minutes (OWN SuperSoul clips, publisher trailers) and event announcement promos",
+      "'Mark Nepo Talks about The Book of Awakening' (fan re-upload, not his channel)"
+    ]
+  },
+  "images_final": true
+}

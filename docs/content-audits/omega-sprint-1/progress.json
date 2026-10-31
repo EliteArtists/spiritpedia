@@ -472,7 +472,7 @@
    ],
    "contact_form_seen": true,
    "big_name": false,
-   "status": "planned",
+   "status": "dev",
    "plan": "docs/content-audits/tony-stockwell.json",
    "skip_reason": null
   },
@@ -514,7 +514,7 @@
    ],
    "contact_form_seen": false,
    "big_name": true,
-   "status": "planned",
+   "status": "dev",
    "plan": "docs/content-audits/mark-nepo.json",
    "skip_reason": null
   },
@@ -536,7 +536,7 @@
    ],
    "contact_form_seen": false,
    "big_name": false,
-   "status": "planned",
+   "status": "dev",
    "plan": "docs/content-audits/jillian-pransky.json",
    "skip_reason": null
   },
@@ -1080,9 +1080,9 @@
    "emails_seen": [],
    "contact_form_seen": null,
    "big_name": false,
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "No shared teaching name of their own: the three are separately trained healers and faculty of the University of Spiritual Healing and Sufism (Dr. Ibrahim Jaffe's school), which is an institution rather than their listing; none has a website, photo source or published contact beyond Omega, and their only Omega workshop (Becoming Divine Light, from 16 Oct 2026) had already started by the sprint date. Libman's Omega bio also describes mainly psychotherapy work framed around anxiety and depression. The University of Sufism could be considered later as an organisation listing."
   },
   {
    "rank": 51,
@@ -1099,9 +1099,9 @@
    "emails_seen": [],
    "contact_form_seen": null,
    "big_name": false,
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Mainly a hypnotherapy and life coach rather than a spiritual teacher, and his work is sold on conditions: his site (jimcurtiscoaching.com) frames his Hypno-Coaching, courses and membership around anxiety, trauma, chronic illness and physical pain, heartbreak and divorce, so almost nothing would pass the health-claim rule."
   },
   {
    "rank": 52,
@@ -1123,5 +1123,5 @@
    "skip_reason": null
   }
  ],
- "updated": "2026-10-31T21:31:54.523Z"
+ "updated": "2026-10-31T21:33:27.764Z"
 }
