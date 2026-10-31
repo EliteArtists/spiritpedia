@@ -1,0 +1,169 @@
+{
+  "healer": {
+    "healer_slug": "omega-institute",
+    "create": {
+      "name": "Omega Institute",
+      "bio": "Omega Institute for Holistic Studies, a non-profit retreat and learning centre, sits in the Hudson Valley of New York State. It was started in 1977 by the writer and educator Elizabeth Lesser and the physician Stephan Rechtschaffen, with the Sufi teacher Pir Vilayat Inayat Khan, whom Omega also counts as a founder, as its guiding light. The name comes from Teilhard de Chardin's idea of an Omega Point towards which all life is drawn. After a few years in borrowed and rented venues it settled in the early 1980s on a former Yiddish summer camp near Rhinebeck, now a wooded campus of around 250 acres with a lake, a hilltop meditation sanctuary, the Ram Dass Library and a dining hall serving mostly plant-based food.\n\nFrom late spring to autumn the campus hosts weekend and week-long workshops and retreats on six themes: mind and spirit, body and health, creativity, family and relationships, work and leadership, and sustainable living. Guests can book an unstructured Rest & Rejuvenation stay. Omega Online offers live-streamed and on-demand classes, and a free Resource Library holds articles, videos and talks. Two centres run their own programmes: the Women's Leadership Center and the Center for Sustainable Living, whose building cleans the campus's wastewater through its Eco Machine. Membership, from US$120 a year, brings discounts and helps fund scholarships.",
+      "tier": "luminary",
+      "entity_type": "organisation",
+      "availability": "local_online",
+      "city": "Rhinebeck",
+      "country": "United States",
+      "founded_year": 1977,
+      "subjects": [
+        "spirituality",
+        "meditation",
+        "yoga"
+      ],
+      "website_url": "https://www.eomega.org/",
+      "booking_url": "https://www.eomega.org/workshops/workshops-topic/workshops-retreats",
+      "youtube_url": "https://www.youtube.com/@omegainstitute",
+      "instagram_url": "https://www.instagram.com/omegainstitute/",
+      "facebook_url": "https://www.facebook.com/eOmega.org",
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "membership@eomega.org",
+      "image_urls": [
+        "https://yt3.googleusercontent.com/Uy5V2OWP780WBSuB-Q0AHDBUBDnxQ2k8J6kD_ZNCsrFHAgJb8mWaPvvotaUy2L914jt82g2h=s800-c-k-c0x00ffffff-no-rj",
+        "https://www.eomega.org/sites/default/files/styles/scale_width_1440/public/media/sh_homepage_v2.jpg?itok=wTpEfIQg"
+      ]
+    }
+  },
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Omega Workshops & Retreats",
+      "url": "https://www.eomega.org/workshops/workshops-topic/workshops-retreats",
+      "description": "Omega's main programme: weekend and five-day workshops on the Rhinebeck campus from late spring to autumn, along with conferences and professional trainings, browsable by month or by its six subject areas. Tuition is paid separately from lodging and meals, and members pay a reduced rate.",
+      "price": "From $355 USD",
+      "product_type": "retreat",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "spirituality",
+        "meditation",
+        "yoga"
+      ],
+      "image": "https://www.eomega.org/sites/default/files/styles/scale_width_1440/public/media/sh_homepage_v2.jpg?itok=wTpEfIQg"
+    },
+    {
+      "title": "Rest & Rejuvenation Retreats",
+      "url": "https://www.eomega.org/omega-rest-rejuvenation-retreats",
+      "description": "A self-guided stay on the campus with no set timetable, offered from May to October with a two-night minimum. Meals and the daily open classes in yoga, meditation and tai chi are included; the cost depends on the lodging chosen, from campsites and shared longhouses to lodge rooms.",
+      "price": "From $290 USD (2 nights)",
+      "product_type": "retreat",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "yoga",
+        "tai-chi"
+      ],
+      "image": "https://www.eomega.org/sites/default/files/styles/scale_width_1440/public/media/R%26R2026_hero1.jpg?itok=-Dt2IW7R"
+    },
+    {
+      "title": "Omega Online",
+      "url": "https://www.eomega.org/omega-online",
+      "description": "Omega's online learning: campus workshops streamed live, the Teachers Studio series of shorter live classes with recordings to revisit afterwards, and self-paced courses that can be started at any time. Online classes are priced on a three-step sliding scale.",
+      "price": "From $15 USD",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "spirituality",
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://yt3.googleusercontent.com/Uy5V2OWP780WBSuB-Q0AHDBUBDnxQ2k8J6kD_ZNCsrFHAgJb8mWaPvvotaUy2L914jt82g2h=s800-c-k-c0x00ffffff-no-rj"
+    },
+    {
+      "title": "Omega Membership",
+      "url": "https://www.eomega.org/support-omega/omega-membership",
+      "description": "A yearly or monthly gift to the non-profit that brings lower prices on most workshops and online courses, early word of programmes that fill quickly, one free online course a year and full access to the archive of articles, videos and talks.",
+      "price": "$120 USD a year",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "spirituality",
+        "meditation"
+      ],
+      "image": "https://yt3.googleusercontent.com/Uy5V2OWP780WBSuB-Q0AHDBUBDnxQ2k8J6kD_ZNCsrFHAgJb8mWaPvvotaUy2L914jt82g2h=s800-c-k-c0x00ffffff-no-rj"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Omega Resource Library",
+      "url": "https://www.eomega.org/resource-library-1",
+      "description": "Omega's free online library of articles, short videos and talks by its teachers, sorted into the same six subject areas as its workshops. Most pieces are open to everyone; a few are marked for members.",
+      "featured": true,
+      "resource_type": "practice",
+      "subjects": [
+        "spirituality",
+        "meditation",
+        "yoga"
+      ],
+      "image": "https://yt3.googleusercontent.com/Uy5V2OWP780WBSuB-Q0AHDBUBDnxQ2k8J6kD_ZNCsrFHAgJb8mWaPvvotaUy2L914jt82g2h=s800-c-k-c0x00ffffff-no-rj"
+    },
+    {
+      "title": "Mind & Spirit Resource Library",
+      "url": "https://www.eomega.org/library/mind-spirit-resource-library",
+      "description": "The inner-life section of Omega's library, with free pieces grouped under mindfulness, meditation, intuition, spirituality, personal growth and psychology, including guided practices and teaching clips.",
+      "featured": false,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation",
+        "spirituality",
+        "mindfulness"
+      ],
+      "image": "https://yt3.googleusercontent.com/Uy5V2OWP780WBSuB-Q0AHDBUBDnxQ2k8J6kD_ZNCsrFHAgJb8mWaPvvotaUy2L914jt82g2h=s800-c-k-c0x00ffffff-no-rj"
+    },
+    {
+      "title": "Mindfulness at Omega",
+      "url": "https://www.eomega.org/resource-library/mindfulness-omega",
+      "description": "A free collection on mindfulness as Omega teaches it, drawing on contemplative traditions and current research, with articles, videos and words from teachers who have long taught there, among them Jon Kabat-Zinn, Sharon Salzberg and Jack Kornfield.",
+      "featured": false,
+      "resource_type": "practice",
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "image": "https://www.eomega.org/sites/default/files/styles/scale_width_1440/public/media/sh_homepage_v2.jpg?itok=wTpEfIQg"
+    }
+  ],
+  "sprint": {
+    "tier_evidence": "Facebook 168,777 (og:description, facebook.com/eOmega.org, 31 Oct 2026); Instagram 102K (og:description, @omegainstitute, 31 Oct 2026); YouTube 67.3K (channel header next to @omegainstitute, 893 videos, 31 Oct 2026) → ~338k total → luminary (Shining Star). No X or TikTok linked in the site footer; LinkedIn not counted.",
+    "tier_override": "superhero by editorial stature (owner decides): founded 1977, one of the oldest and largest US holistic learning centres; Omega's history page says up to 23,000 campus visitors a year and more than one million since 1977 (about page), and an online community of 21,000+ learners (Nov 2025 press release). Suggestion only; tier left at the computed luminary.",
+    "email": "yes",
+    "email_source": "https://www.eomega.org/support-omega/omega-membership (membership@eomega.org, published twice on the page as the address for membership questions)",
+    "contact_form_url": "https://www.eomega.org/contact",
+    "bio_check": "OK: no 8-word runs against 47 source(s)",
+    "flags": [
+      "Email is the membership department's address (the only general-purpose address published; the contact page itself has only phone numbers and a form). The Women's Leadership Center also publishes owlccommunity@eomega.org. Owner may prefer contact_form_url instead.",
+      "Workshops price 'From $355 USD' is the lowest standard tuition in a sample of 12 campus workshops for 2027 (range $355 to $550, members $320 to $495); Omega publishes no overall range. Lodging and meals are extra.",
+      "Omega Online 'From $15 USD' is the lowest sliding-scale tier seen (on-demand course $15/$20/$25; live Teachers Studio classes $33/$44/$55).",
+      "Founding: Omega's history page names Pir Vilayat Inayat Khan as a co-founder; Wikipedia calls him the inspiration. Bio says Omega counts him as a founder. Wikipedia gives both 1980 and 1982 for the move to Rhinebeck, so the bio says 'early 1980s'.",
+      "Image: the logo is the YouTube channel avatar at 800px (a white OMEGA wordmark on teal); the site's own logo is inline SVG. Second image is the homepage campus photo (og:image).",
+      "Organisation, not School: Omega hosts independent teachers rather than certifying them."
+    ],
+    "left_out": [
+      "Individual dated workshops and online classes (dated; the listings carry them).",
+      "Navigating Anxiety in Children and 7 Steps to Healing Your Heart (condition-framed online courses).",
+      "Dropping In podcast: no current landing page found on eomega.org, latest press release is from 2021.",
+      "Omega Wellness Center bodywork (clinical massage, acupuncture; health services, not teaching)."
+    ],
+    "sources": [
+      "https://www.eomega.org/about/overview/history",
+      "https://www.eomega.org/about-omega/overview/about",
+      "https://en.wikipedia.org/wiki/Omega_Institute_for_Holistic_Studies",
+      "https://www.eomega.org/contact"
+    ]
+  },
+  "notes": [
+    "Hub (README §18.7): Organisation, computed tier luminary from ~338k readable followers; editorial-stature override to superhero proposed, owner decides.",
+    "Email membership@eomega.org from the membership page; contact form https://www.eomega.org/contact. Logo is the YouTube avatar.",
+    "Teacher pipeline: omega-institute-faculty.json / omega-institute-teachers.json (link-hub.mjs), linked 'Teaches on Omega Institute'."
+  ],
+  "images_final": true
+}
