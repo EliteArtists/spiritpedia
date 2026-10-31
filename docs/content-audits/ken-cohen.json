@@ -9,7 +9,11 @@
       "availability": "local_online",
       "city": "Nederland",
       "country": "United States",
-      "subjects": ["qi-gong", "tai-chi", "ancient-wisdom"],
+      "subjects": [
+        "qi-gong",
+        "tai-chi",
+        "ancient-wisdom"
+      ],
       "website_url": "https://www.qigonghealing.com",
       "booking_url": "https://www.qigonghealing.com/book-online",
       "youtube_url": null,
@@ -25,16 +29,68 @@
     }
   },
   "teaches_at": [
-    { "hub": "omega-institute", "role": "instructor" },
-    { "hub": "the-shift-network", "role": "instructor" }
+    {
+      "hub": "omega-institute",
+      "role": "instructor"
+    },
+    {
+      "hub": "the-shift-network",
+      "role": "instructor"
+    }
   ],
   "videos": [
-    { "title": "Incredible Benefits of Qi Gong Revealed: An Interview with Ken Cohen", "url": "https://www.youtube.com/watch?v=jZvLK_cqws8", "subjects": ["qi-gong"] },
-    { "title": "5 Animals Qigong Demo", "url": "https://www.youtube.com/watch?v=nFxGS5h4cBo", "subjects": ["qi-gong"] },
-    { "title": "Taoist and Qigong Master - Ken Cohen", "url": "https://www.youtube.com/watch?v=b_0lo-6fBRI", "subjects": ["qi-gong", "ancient-wisdom"] },
-    { "title": "DAOI Talks (69): Daoism, Martial Arts & Qigong w/ Ken Cohen", "url": "https://www.youtube.com/watch?v=epDGLNSH6pM", "subjects": ["qi-gong", "tai-chi", "ancient-wisdom"] },
-    { "title": "The Way of Qigong - By Ken Cohen", "url": "https://www.youtube.com/watch?v=qAHyqbdiwa4", "subjects": ["qi-gong"] },
-    { "title": "\"Nourishing Life 養生術: China's Traditional Model of Whole-Person Health\" - Kenneth Cohen", "url": "https://www.youtube.com/watch?v=rUb7czqLHfA", "subjects": ["qi-gong", "ancient-wisdom"] }
+    {
+      "title": "Incredible Benefits of Qi Gong Revealed: An Interview with Ken Cohen",
+      "url": "https://www.youtube.com/watch?v=jZvLK_cqws8",
+      "subjects": [
+        "qi-gong"
+      ],
+      "channel": "George Thompson"
+    },
+    {
+      "title": "5 Animals Qigong Demo",
+      "url": "https://www.youtube.com/watch?v=nFxGS5h4cBo",
+      "subjects": [
+        "qi-gong"
+      ],
+      "channel": "Omega Institute for Holistic Studies"
+    },
+    {
+      "title": "Taoist and Qigong Master - Ken Cohen",
+      "url": "https://www.youtube.com/watch?v=b_0lo-6fBRI",
+      "subjects": [
+        "qi-gong",
+        "ancient-wisdom"
+      ],
+      "channel": "Alan Levin"
+    },
+    {
+      "title": "DAOI Talks (69): Daoism, Martial Arts & Qigong w/ Ken Cohen",
+      "url": "https://www.youtube.com/watch?v=epDGLNSH6pM",
+      "subjects": [
+        "qi-gong",
+        "tai-chi",
+        "ancient-wisdom"
+      ],
+      "channel": "Daoist Arts Organization International"
+    },
+    {
+      "title": "The Way of Qigong - By Ken Cohen",
+      "url": "https://www.youtube.com/watch?v=qAHyqbdiwa4",
+      "subjects": [
+        "qi-gong"
+      ],
+      "channel": "Colorado Chinese Medicine University"
+    },
+    {
+      "title": "\"Nourishing Life 養生術: China's Traditional Model of Whole-Person Health\" - Kenneth Cohen",
+      "url": "https://www.youtube.com/watch?v=rUb7czqLHfA",
+      "subjects": [
+        "qi-gong",
+        "ancient-wisdom"
+      ],
+      "channel": "Colorado Chinese Medicine University"
+    }
   ],
   "books": [
     {
@@ -46,8 +102,11 @@
       "goodreads_url": null,
       "worldofbooks_url": null,
       "description": "A broad guide to qigong that covers its history in China, the Taoist ideas behind it, the main families of exercise and meditation, and what modern research has looked at. Much of the book is practical, with step-by-step instructions for standing, moving and breathing practices.",
-      "subjects": ["qi-gong", "ancient-wisdom"],
-      "cover": "https://m.media-amazon.com/images/I/71YGRH0mL9L._SL1500_.jpg"
+      "subjects": [
+        "qi-gong",
+        "ancient-wisdom"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/0345421094.01._SCLZZZZZZZ_.jpg"
     }
   ],
   "courses": [
@@ -59,7 +118,11 @@
       "product_type": "retreat",
       "start_date": "2027-06-11",
       "end_date": "2027-06-13",
-      "subjects": ["qi-gong", "tai-chi"]
+      "subjects": [
+        "qi-gong",
+        "tai-chi"
+      ],
+      "image": "https://www.eomega.org/sites/default/files/styles/scale_width_1440/public/media/gelb_super-qi_hero.jpg?itok=tczaKGvd"
     },
     {
       "title": "Dynamic Buddhist Qigong: Crane & Deer",
@@ -69,7 +132,11 @@
       "product_type": "course",
       "start_date": "2026-12-06",
       "end_date": "2026-12-13",
-      "subjects": ["qi-gong", "meditation"]
+      "subjects": [
+        "qi-gong",
+        "meditation"
+      ],
+      "image": "https://www.eomega.org/sites/default/files/media/Ken%20Cohen%20bio-NEW_600x600.jpg"
     },
     {
       "title": "Individual Training by Zoom",
@@ -79,7 +146,12 @@
       "product_type": "course",
       "start_date": null,
       "end_date": null,
-      "subjects": ["qi-gong", "tai-chi", "meditation"]
+      "subjects": [
+        "qi-gong",
+        "tai-chi",
+        "meditation"
+      ],
+      "image": "https://www.eomega.org/sites/default/files/media/Ken%20Cohen%20bio-NEW_600x600.jpg"
     }
   ],
   "free_resources": [],
@@ -110,5 +182,6 @@
       "Sounds True audio/DVD courses: not books.",
       "Omega '5 Animals Qigong Practice' video page duplicates the YouTube video already listed."
     ]
-  }
+  },
+  "images_final": true
 }

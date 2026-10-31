@@ -472,8 +472,8 @@
    ],
    "contact_form_seen": true,
    "big_name": false,
-   "status": "todo",
-   "plan": null,
+   "status": "planned",
+   "plan": "docs/content-audits/tony-stockwell.json",
    "skip_reason": null
   },
   {
@@ -514,8 +514,8 @@
    ],
    "contact_form_seen": false,
    "big_name": true,
-   "status": "todo",
-   "plan": null,
+   "status": "planned",
+   "plan": "docs/content-audits/mark-nepo.json",
    "skip_reason": null
   },
   {
@@ -536,8 +536,8 @@
    ],
    "contact_form_seen": false,
    "big_name": false,
-   "status": "todo",
-   "plan": null,
+   "status": "planned",
+   "plan": "docs/content-audits/jillian-pransky.json",
    "skip_reason": null
   },
   {
@@ -578,7 +578,7 @@
    ],
    "contact_form_seen": true,
    "big_name": false,
-   "status": "planned",
+   "status": "dev",
    "plan": "docs/content-audits/ken-cohen.json",
    "skip_reason": null
   },
@@ -599,8 +599,8 @@
    ],
    "contact_form_seen": true,
    "big_name": true,
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/william-lee-rand.json",
    "skip_reason": null
   },
   {
@@ -618,8 +618,8 @@
    "emails_seen": [],
    "contact_form_seen": true,
    "big_name": false,
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/lynne-goldberg.json",
    "skip_reason": null
   },
   {
@@ -637,9 +637,9 @@
    "emails_seen": [],
    "contact_form_seen": true,
    "big_name": false,
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "No published email and no contact form anywhere we could find: his site sundaysangha.net has only a mailing-list sign-up, donation links and a WordPress subscribe box (the 'Contact Form' text the quick scan saw is a script string, not a form), and his Spirit Rock, Omega and Esalen profiles give no way to reach him; otherwise a strong Insight Meditation teacher (Spirit Rock teachers council, YouTube channel, Omega retreat 18–23 Jul 2027), so worth revisiting if a contact route appears."
   },
   {
    "rank": 30,
@@ -660,8 +660,8 @@
    "emails_seen": [],
    "contact_form_seen": true,
    "big_name": false,
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/donnabelle-casis.json",
    "skip_reason": null
   },
   {
@@ -687,9 +687,9 @@
    "emails_seen": [],
    "contact_form_seen": false,
    "big_name": true,
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "No published email and no contact form anywhere on sebeneselassie.com (no contact page, speaking page 404, Substack and course site show none), so she cannot be listed under README §18.4; she co-leads Omega's Meditation Party with Dan Harris and Jeff Warren."
   },
   {
    "rank": 32,
@@ -725,8 +725,8 @@
    "emails_seen": [],
    "contact_form_seen": true,
    "big_name": false,
-   "status": "todo",
-   "plan": null,
+   "status": "planned",
+   "plan": "docs/content-audits/brenda-rose.json",
    "skip_reason": null
   },
   {
@@ -744,8 +744,8 @@
    "emails_seen": [],
    "contact_form_seen": true,
    "big_name": false,
-   "status": "todo",
-   "plan": null,
+   "status": "planned",
+   "plan": "docs/content-audits/asha-nayaswami.json",
    "skip_reason": null
   },
   {
@@ -775,8 +775,8 @@
    "emails_seen": [],
    "contact_form_seen": false,
    "big_name": true,
-   "status": "todo",
-   "plan": null,
+   "status": "planned",
+   "plan": "docs/content-audits/jeff-warren.json",
    "skip_reason": null
   },
   {
@@ -836,8 +836,8 @@
    "emails_seen": [],
    "contact_form_seen": true,
    "big_name": false,
-   "status": "todo",
-   "plan": null,
+   "status": "planned",
+   "plan": "docs/content-audits/cirak.json",
    "skip_reason": null
   },
   {
@@ -855,8 +855,8 @@
    "emails_seen": [],
    "contact_form_seen": false,
    "big_name": true,
-   "status": "todo",
-   "plan": null,
+   "status": "planned",
+   "plan": "docs/content-audits/meggan-watterson.json",
    "skip_reason": null
   },
   {
@@ -874,8 +874,8 @@
    "emails_seen": [],
    "contact_form_seen": true,
    "big_name": false,
-   "status": "todo",
-   "plan": null,
+   "status": "planned",
+   "plan": "docs/content-audits/david-elliott.json",
    "skip_reason": null
   },
   {
@@ -1012,8 +1012,8 @@
    "emails_seen": [],
    "contact_form_seen": false,
    "big_name": true,
-   "status": "todo",
-   "plan": null,
+   "status": "planned",
+   "plan": "docs/content-audits/lindsay-mack.json",
    "skip_reason": null
   },
   {
@@ -1039,8 +1039,8 @@
    "emails_seen": [],
    "contact_form_seen": false,
    "big_name": true,
-   "status": "todo",
-   "plan": null,
+   "status": "planned",
+   "plan": "docs/content-audits/brett-bevell.json",
    "skip_reason": null
   },
   {
@@ -1058,9 +1058,9 @@
    "emails_seen": [],
    "contact_form_seen": false,
    "big_name": false,
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "No working public presence: the website on his Omega page (cristobowers.services) does not resolve, a web search found no other site, so there is no published email or contact form; his only current Omega workshop (Learn to Read the Human Energy Field, 22–25 Oct 2026) had already started by the sprint date."
   },
   {
    "rank": 50,
@@ -1123,5 +1123,5 @@
    "skip_reason": null
   }
  ],
- "updated": "2026-10-31T21:19:59.348Z"
+ "updated": "2026-10-31T21:31:54.523Z"
 }
