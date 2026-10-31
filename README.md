@@ -64,25 +64,105 @@ The list to pick up from. Each points to where the detail lives.
     1.0.1: a school's page, Our Teachers on schools and organisations,
     "Teaches at…" / "Teaches on…" and the Schools & Academies shelf in the
     app. Also **Isaac Osborne and Natalie Ramon** for White Tiger once a photo
-    is confirmed.
+    is confirmed. **App check first:** the current app doesn't know the
+    School and Organisation types; check how White Tiger Qigong, Skies and
+    Flora and The Shift Network show in the app today, and handle them
+    properly in this build.
 11. **Sign-in history in the admin** (plan first; not built): per person,
     when they signed in, from Supabase's auth logs, so activity can be seen
     without copying codes.
 12. **Near You is never empty** (plan first; not built). If nobody is in the
     user's area, show the closest practitioners with their distance under a
     **"Closest to you"** heading. App 1.0.1 and website.
-13. **Hub sprints** (§18.7). The Shift Network sprint 1 is done (100
-    teachers, ranks 1–116; `docs/content-audits/shift-sprint-1/`). Next:
-    sprint 2 from rank 117 (Judith Orloff, Ken Cohen, Sarah McCrum, Tyler
-    Odysseus…) with the same brief and tools (`BRIEF.md`, `sprint.mjs`,
-    `review.py`). Course titles with "Medical" in them need the health-claim
-    check.
-14. **Image audit: single-photo teachers** (owner, 31 Oct 2026). From Shift
-    sprint 1, only one confirmed photo: Jean Else, Richard Gordon, Neil
-    Douglas-Klotz, Rob Schwartz, Master Alex Dong, Linda Star Wolf, Master
-    Faye Li Yip, Gary Kraftsow, Trisha McCagh, John Stuart Reid, Dr. Karen
-    Frances McCarthy, Lynn McKenzie. Find up to two more photos that are
-    clearly them.
+13. **Hub queue** (§18.7), in order:
+    - **The Shift Network:** the first 100 are done (sprint 1, ranks 1–116;
+      `docs/content-audits/shift-sprint-1/`). The rest of the 477 after
+      review, from rank 117 (Judith Orloff, Ken Cohen, Sarah McCrum, Tyler
+      Odysseus…), with the same brief and tools (`BRIEF.md`, `sprint.mjs`,
+      `review.py`). Titles with "Medical" need the health-claim check.
+    - **Insight Timer** next. Link to their Insight Timer pages; never copy
+      tracks.
+    - **White Tiger Qigong's other 157 instructors** only if the school
+      engages.
+    - **Breathe and Flow:** revisit as a School if its 2027 online training
+      opens.
+    - **No founder profiles for couples** (Boho Beautiful, Breathe and Flow)
+      for now: the couple stays the hub.
+    - **Organisations stay in Explore These Channels** until there are 5 or
+      more; then they get their own shelf (never a one-card shelf).
+    - **Megan SolarGlow stays out** (conspiracy content).
+14. **Image audit.** Individual listings with fewer than 3 photos, newest
+    first: find up to 2 more photos that are clearly that person. Teacher
+    photos need the owner's OK. Includes **Isaac Osborne and Natalie Ramon**
+    (White Tiger, on hold) and the 12 single-photo Shift Network teachers:
+    Jean Else, Richard Gordon, Neil Douglas-Klotz, Rob Schwartz, Master Alex
+    Dong, Linda Star Wolf, Master Faye Li Yip, Gary Kraftsow, Trisha McCagh,
+    John Stuart Reid, Dr. Karen Frances McCarthy, Lynn McKenzie.
+15. **Published author badge.** Any teacher linked to a publishing house
+    (`publisher_healers`) gets a badge beside the tier badge, e.g.
+    "Published by Awaken Village Press", linked to the publisher. All
+    published authors. Same style family as "Teaches at …". Website first;
+    the app with the hubs app build (#10).
+16. **Email pass and rule.** Back-fill `contact_email` for every living
+    listing from Awaken Village Press onwards: published emails only, with
+    the source URL; management or agent emails count; never guess or
+    construct one; the contact-form URL as the fallback; skip Ascended
+    Masters and estates. The rule itself is in §18.4 (owner, 31 Oct 2026).
+    Also an admin **"No email"** filter.
+17. **Tier audit.** Check every listing's tier against follower evidence
+    (Rod Stryker already fixed by the owner in admin), with the
+    editorial-stature rule (§17.1) for raises. **What ingestion does today:**
+    `scripts/ingest.mjs` neither checks follower numbers nor defaults a tier;
+    it takes the tier written in the plan and refuses a missing or unknown one
+    (a PROBLEM). The number check happens in the research that writes the
+    plan (since Shift sprint 1 each plan records `sprint.tier_evidence`). It
+    must always be checked, never defaulted.
+18. **Feng shui subject.** A new subject `feng-shui`: pills, colour and
+    emotion mappings for the owner's OK; add it to the canonical subject
+    list (§17.3, `SUBJECT_TAXONOMY`, the app's mirror); tag existing items
+    that fit (e.g. Davina MacKail from the Shift Network batch). The energy
+    and intention side only, not interior design or wealth charms.
+19. **Push ideas** (for the push notification build, #4):
+    - **"How are you feeling today, {name}?"** Only for users who gave their
+      name. Tap opens the search bar. Can be the first return invitation (10
+      days away). The admin push composer gets a `{name}` placeholder with a
+      no-name version.
+    - **Once only: "It was lovely getting to know you, {name}. I'm here
+      whenever you need me."** Sent the next day at 7pm local time after a
+      first real visit (about 3 minutes, or a save, or a feeling search).
+      Mention the subject they explored only if "Let Spiritpedia learn" is
+      on. Counts towards the limits.
+20. **Partnerships** (Ross, not code):
+    - Sign up for The Shift Network Referral Partner programme, then use
+      tracked links on Shift course offerings.
+    - A personal email from Ross to Insight Timer about a partnership or
+      affiliate deal, once a good number of their teachers are listed.
+    - At launch, one email to White Tiger Qigong saying their teachers are
+      listed.
+    - Affiliate links never go in emails; featured content is never chosen
+      by commission.
+21. **Hero banner redesign** (website and app; plan first). **Today** (§10.6,
+    §17.3): the billboard runs three Superheroes, then one Ascended Master,
+    rotating every 8 s (`HomePageContent.js` on the website; the app
+    mirrors it). The new design:
+    - Superheroes already lead the first shelf, so the banner doesn't need
+      to start with them. It opens with an **Ascended Master**.
+    - The rotation then features **Local Heroes**, so every user sees them.
+      Claimed and actively managed listings (Local Heroes and Luminaries) get
+      extra airtime.
+    - **"See yourself":** when a claimed practitioner signs in and lands on
+      the home page, their banner shows an Ascended Master first, then
+      **them**, every time they log in, with a different Ascended Master
+      each time. Only if their listing is live and has a photo. This shows
+      them the value of being on Spiritpedia, ahead of the £1/month
+      listings. Other users never see the personal version; for them it's
+      the normal rotation.
+22. **Socials pass for tiers** (the Chrome sidebar with the owner's signed-in
+    Chrome, not Claude Code). Read Instagram, Facebook, X and TikTok follower
+    counts for every listing whose tier rests on YouTube only, starting with
+    the 100 Shift Network teachers. Output: name, platform, count, profile
+    URL, proposed tier. Claude Code applies the changes after the owner's OK.
+    Feeds the tier audit (#17).
 
 ---
 
@@ -2366,6 +2446,11 @@ Turning a Channel into a School is a plan with `"update": { "entity_type":
     teacher with the homeopathy subject, website and app
     (`web/utils/medicalNote.js`, `app/lib/core/safety/medical_note.dart`; the
     wording comes from `web/shared/emotion-safety.json`).
+- **Email is required at ingestion** (owner, 31 Oct 2026): a published
+  `contact_email` with its source URL, or failing that the contact-form URL
+  (recorded in the plan). Management or agent addresses count; never guess
+  or construct one. No email and no contact form: skip the person. Ascended
+  Masters and estates are exempt.
 - Courses: `affiliate_status` `none`; free resources: `is_featured` only when
   the plan says `featured: true`. `is_active` keeps its default (true). A
   dated offering gets `start_date`/`end_date` so it drops off when it's over.
