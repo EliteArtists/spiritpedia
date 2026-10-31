@@ -9,7 +9,11 @@
       "availability": "local_online",
       "city": "Bellingham",
       "country": "United States",
-      "subjects": ["shamanism", "ancient-wisdom", "soul-purpose"],
+      "subjects": [
+        "shamanism",
+        "ancient-wisdom",
+        "soul-purpose"
+      ],
       "website_url": "https://www.helenasoholm.com",
       "booking_url": "https://www.helenasoholm.com/shamanism",
       "youtube_url": "https://www.youtube.com/channel/UCzSoYOpB3bYnjRTGEzqm4gw",
@@ -25,10 +29,31 @@
       ]
     }
   },
-  "teaches_at": [{ "hub": "omega-institute", "role": "instructor" }],
+  "teaches_at": [
+    {
+      "hub": "omega-institute",
+      "role": "instructor"
+    }
+  ],
   "videos": [
-    { "title": "Lecture and Korean Shamanic Ritual (Gut)", "url": "https://www.youtube.com/watch?v=h67E18lTf-Y", "subjects": ["shamanism", "ancient-wisdom"] },
-    { "title": "Transpersonal Psychology and Shamanism", "url": "https://www.youtube.com/watch?v=cMPJsyc2ixs", "subjects": ["shamanism", "consciousness"] }
+    {
+      "title": "Lecture and Korean Shamanic Ritual (Gut)",
+      "url": "https://www.youtube.com/watch?v=h67E18lTf-Y",
+      "subjects": [
+        "shamanism",
+        "ancient-wisdom"
+      ],
+      "channel": "Helena Soholm, PhD "
+    },
+    {
+      "title": "Transpersonal Psychology and Shamanism",
+      "url": "https://www.youtube.com/watch?v=cMPJsyc2ixs",
+      "subjects": [
+        "shamanism",
+        "consciousness"
+      ],
+      "channel": "Helena Soholm, PhD "
+    }
   ],
   "books": [],
   "courses": [
@@ -40,7 +65,12 @@
       "product_type": "retreat",
       "start_date": "2027-05-31",
       "end_date": "2027-06-04",
-      "subjects": ["shamanism", "soul-purpose", "ancient-wisdom"]
+      "subjects": [
+        "shamanism",
+        "soul-purpose",
+        "ancient-wisdom"
+      ],
+      "image": "https://www.eomega.org/sites/default/files/styles/scale_width_1440/public/media/awakening-ancestral-divine-energy_hero.jpg?itok=5AO1a-Vj"
     },
     {
       "title": "Korean Shamanism & Ancestral Ritual (London, UK)",
@@ -50,7 +80,11 @@
       "product_type": "course",
       "start_date": "2026-12-12",
       "end_date": "2026-12-12",
-      "subjects": ["shamanism", "ancient-wisdom"]
+      "subjects": [
+        "shamanism",
+        "ancient-wisdom"
+      ],
+      "image": "http://static1.squarespace.com/static/63194af27cebf70a5e5c6c5c/63195437f1f924518a57a945/6a06983f9a432c116300177c/1786720789632/The+College+of+Psychic+Studies2.jpg?format=1500w"
     },
     {
       "title": "Illuminate Retreat 2027 (South Korea)",
@@ -60,7 +94,11 @@
       "product_type": "retreat",
       "start_date": "2027-10-14",
       "end_date": "2027-10-18",
-      "subjects": ["shamanism", "ancient-wisdom"]
+      "subjects": [
+        "shamanism",
+        "ancient-wisdom"
+      ],
+      "image": "http://static1.squarespace.com/static/63194af27cebf70a5e5c6c5c/63195437f1f924518a57a945/6a891397b8b0920b79167a11/1791465788426/Illuminate3.png?format=1500w"
     },
     {
       "title": "Ancestral Healing and Connection",
@@ -70,7 +108,11 @@
       "product_type": "course",
       "start_date": null,
       "end_date": null,
-      "subjects": ["shamanism", "ancient-wisdom"]
+      "subjects": [
+        "shamanism",
+        "ancient-wisdom"
+      ],
+      "image": "http://static1.squarespace.com/static/63194af27cebf70a5e5c6c5c/t/633f82efc8fd4075ee85ca86/1665106671485/helena-soholm-psychologist-shaman-bellingham-washington.jpg?format=1500w"
     }
   ],
   "free_resources": [],
@@ -82,7 +124,7 @@
     "email": "yes",
     "email_source": "https://www.helenasoholm.com/experiences",
     "contact_form_url": "https://www.helenasoholm.com/contact-shaman",
-    "bio_check": "",
+    "bio_check": "OK: no 8-word runs against 14 source(s)",
     "flags": [
       "About half her practice is licensed psychotherapy (Washington and California, insurance accepted); the listing is built only on her Korean shamanic work, with therapy mentioned in one line. A human may want to confirm she fits as a spiritual teacher rather than mainly a therapist.",
       "Email shamanhelena@gmail.com appears in visible text on her Experiences page, inside an older (2024) pilgrimage announcement; her site also has a shamanism contact form.",
@@ -100,5 +142,6 @@
       "Essays on her Writing page: not one of the free-resource types.",
       "No books found."
     ]
-  }
+  },
+  "images_final": true
 }

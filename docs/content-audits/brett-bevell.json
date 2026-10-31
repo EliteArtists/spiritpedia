@@ -1,0 +1,295 @@
+{
+  "healer": {
+    "healer_slug": "brett-bevell",
+    "create": {
+      "name": "Brett Bevell",
+      "bio": "Brett Bevell is a Reiki master and energy-healing teacher in New York's Hudson Valley. He was initiated as a master in 1995 and has spent the decades since adapting Usui Reiki into forms that lean on the practitioner's higher self, including Psychic Reiki, which works without symbols or hand positions. He also developed Magical Awakening, a playful system drawn from Celtic shamanism's three cauldrons and Arthurian imagery, in which the practitioner is cast as a wizard healer. His books include Psychic Reiki, The Reiki Magic Guide to Self-Attunement, The Wizard's Guide to Energy Healing, Healing Racism Within and Reiki for Spiritual Healing, and he created the Reiki Divine Healing Card Deck for US Games.\n\nBrett teaches first- and second-degree Reiki weekends and master trainings at Omega Institute in Rhinebeck, where he also works on the programme staff, and runs occasional residential weekends nearby on psychic awareness. Online, his Academy of Love and Light hosts self-paced trainings in Psychic Reiki and Magical Awakening, and he offers distant sessions and tarot readings. Outside energy work he is a performance poet whose pieces have been broadcast on NPR.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local_online",
+      "city": "Rhinebeck",
+      "country": "United States",
+      "subjects": [
+        "reiki",
+        "energy-medicine",
+        "shamanism"
+      ],
+      "website_url": "https://brettbevell.com",
+      "booking_url": "https://www.academyofloveandlight.us/collections",
+      "youtube_url": "https://www.youtube.com/@magicalawakening",
+      "instagram_url": null,
+      "facebook_url": "https://www.facebook.com/BrettBevell/",
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "brett.bevell@gmail.com",
+      "image_urls": [
+        "https://www.eomega.org/sites/default/files/media/Bevell_Brett_bio1_crop.jpg",
+        "https://i0.wp.com/brettbevell.com/wp-content/uploads/2021/10/Brett-Bevell-scaled.jpg?w=1000",
+        "https://s3.amazonaws.com/thinkific/file_uploads/196559/images/7d2/480/1f4/Brett.jpg"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "omega-institute",
+      "role": "instructor"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Energy healing for everyone - Brett Bevell",
+      "url": "https://www.youtube.com/watch?v=iEUq_3JXyXM",
+      "subjects": [
+        "energy-medicine",
+        "reiki"
+      ],
+      "channel": "Lilou Mace"
+    },
+    {
+      "title": "MAGICAL AWAKENING Spiritual Energy Healing",
+      "url": "https://www.youtube.com/watch?v=gFpLJQdxABA",
+      "subjects": [
+        "energy-medicine",
+        "shamanism"
+      ],
+      "channel": "magicalawakening"
+    }
+  ],
+  "books": [
+    {
+      "title": "Psychic Reiki: Divine Life-Force Energy Healing",
+      "slug": "psychic-reiki",
+      "author": "Brett Bevell",
+      "asin": "1939681847",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "Brings together techniques from Brett's earlier Reiki books with new material into a single system. Instead of symbols and hand placements, the practitioner learns to direct Reiki by communicating with it intuitively.",
+      "subjects": [
+        "reiki",
+        "energy-medicine"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1939681847.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "Reiki for Spiritual Healing",
+      "slug": "reiki-for-spiritual-healing",
+      "author": "Brett Bevell",
+      "asin": "1580911943",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "Turns Reiki towards the spirit, teaching readers to partner with their higher self and send treatments across past and future lifetimes. It introduces additional symbols and techniques for clearing karmic blocks.",
+      "subjects": [
+        "reiki",
+        "spiritual-awakening"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1580911943.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "The Reiki Magic Guide to Self-attunement",
+      "slug": "the-reiki-magic-guide-to-self-attunement",
+      "author": "Brett Bevell",
+      "asin": "1580911846",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "A home-practice guide that offers a way to attune yourself to Reiki without first visiting a master. It suggests applying Reiki to daily life, from food and water to past and future events.",
+      "subjects": [
+        "reiki",
+        "self-healing"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1580911846.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "The Wizard's Guide to Energy Healing: Introducing the Divine Healing Secrets of Merlin",
+      "slug": "the-wizards-guide-to-energy-healing",
+      "author": "Brett Bevell",
+      "asin": "1939681499",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "Introduces Magical Awakening, Brett's energy system built on the three cauldrons of Celtic shamanism and Arthurian imagery. The tone is light-hearted, with exercises for working with each energy centre.",
+      "subjects": [
+        "energy-medicine",
+        "shamanism"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1939681499.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "Energy Healing for Everyone: A Path to Wholeness and Awakening",
+      "slug": "energy-healing-for-everyone",
+      "author": "Brett Bevell",
+      "asin": "1939681197",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "Describes a simple technique, drawn from Brett's own mystical experiences, for connecting with a divine source of light. Written to be easy for beginners to pick up and practise.",
+      "subjects": [
+        "energy-medicine",
+        "spiritual-awakening"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1939681197.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "New Reiki Software for Divine Living: An Energetic Embodiment of Divine Grace",
+      "slug": "new-reiki-software-for-divine-living",
+      "author": "Brett Bevell",
+      "asin": "1782790047",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "Treats Reiki as a kind of spiritual technology that can be upgraded and applied to every part of life. Brett presents Reiki as an expression of divine grace as much as a healing practice.",
+      "subjects": [
+        "reiki",
+        "spirituality"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1782790047.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "Healing Racism Within: A Lightworker's Guide",
+      "slug": "healing-racism-within",
+      "author": "Brett Bevell",
+      "asin": "1948626713",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "Offers psychological and spiritual exercises for white readers to look at and change internalised racism in themselves. Brett draws on his own experience and on energy practices.",
+      "subjects": [
+        "shadow-work",
+        "spirituality"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1948626713.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "Reiki Divine Healing Card Deck",
+      "slug": "reiki-divine-healing-card-deck",
+      "author": "Brett Bevell, Ben Schikowitz",
+      "asin": "164671198X",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "A 44-card deck from US Games, each card tied to a particular Reiki quality and image. It is meant for drawing on Reiki energy in daily practice and personal reflection.",
+      "subjects": [
+        "reiki",
+        "energy-medicine"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/164671198X.01._SCLZZZZZZZ_.jpg"
+    }
+  ],
+  "courses": [
+    {
+      "title": "First & Second Degree Reiki Training",
+      "url": "https://www.eomega.org/workshops/first-second-degree-reiki-training",
+      "description": "A weekend at Omega's Rhinebeck campus in which participants are attuned to first- and second-degree Reiki. It covers self-treatment, sessions for others, the Reiki symbols and sending treatments at a distance; open to everyone.",
+      "price": "Member $315 USD, standard $350 USD",
+      "product_type": "retreat",
+      "start_date": "2027-06-18",
+      "end_date": "2027-06-20",
+      "subjects": [
+        "reiki"
+      ],
+      "image": "https://www.eomega.org/sites/default/files/styles/scale_width_1440/public/media/bevell_first-second-degree-reiki_hero.jpg?itok=DozPhEir"
+    },
+    {
+      "title": "Full Moon Akashic Records Healing",
+      "url": "https://www.eomega.org/workshops/full-moon-akashic-records-healing",
+      "description": "A two-hour live online session through Omega at the full moon, combining guided meditation with Psychic Reiki and Magical Awakening to explore the Akashic Records. No previous experience is needed.",
+      "price": "Member $35 USD, standard $44 USD (sliding scale $33 to $55 USD)",
+      "product_type": "course",
+      "start_date": "2027-05-19",
+      "end_date": "2027-05-19",
+      "subjects": [
+        "akashic-records",
+        "reiki",
+        "energy-medicine"
+      ],
+      "image": "https://www.eomega.org/sites/default/files/styles/scale_width_1440/public/media/Bevell-eOmega.jpg?itok=RQt2hRI6"
+    },
+    {
+      "title": "Psychic Awareness & Energy Healing with Brett Bevell",
+      "url": "https://www.huttonbrickyards.com/wellbeing-programs/psychic-awareness-energy-healing",
+      "description": "A residential weekend at Hutton Brickyards in Kingston, New York, introducing the basics of psychic development as Brett teaches them: grounding, running energy, boundaries and the chakras, practised through guided meditation. Beginners are welcome.",
+      "price": "From $1359 USD per person plus tax (overnight), $800 USD per person plus tax (commuter)",
+      "product_type": "retreat",
+      "start_date": "2027-04-09",
+      "end_date": "2027-04-11",
+      "subjects": [
+        "energy-medicine",
+        "chakra-healing"
+      ],
+      "image": "http://static1.squarespace.com/static/5fa2e9f4749a8a00a3de22f9/t/6ab425b4ae14e00b87acbee1/1790191028911/Brett+Bevell+%281%29.jpg?format=1500w"
+    },
+    {
+      "title": "Psychic Reiki & Ultra Psychic Reiki",
+      "url": "https://www.academyofloveandlight.us/bundles/psychic-reiki-ultra-psychic-reiki",
+      "description": "A bundle of two self-paced online trainings in Brett's Psychic Reiki methods, including certification for the first level. Aimed mainly at existing Reiki masters, though anyone may join.",
+      "price": "$333 USD",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "reiki",
+        "energy-medicine"
+      ],
+      "image": "https://files.cdn.thinkific.com/bundles/bundle_card_image_000/282/121/1750815387.original.png"
+    },
+    {
+      "title": "Magical Awakening Level 1 Home Study Course",
+      "url": "https://www.academyofloveandlight.us/courses/magical-awakening-level-1-home-study-course",
+      "description": "A 28-day pre-recorded course of short daily lessons in the first level of Magical Awakening. It covers self-treatment, sending the energy to others and group sessions.",
+      "price": "$200 USD",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "energy-medicine",
+        "shamanism",
+        "self-healing"
+      ],
+      "image": "https://import.cdn.thinkific.com/196559/7rVugv0CT1abguwqWVXz_facebook_photo.jpg"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Sample Magical Awakening session",
+      "url": "https://brettbevell.com/healing/",
+      "description": "Brett's site offers a short demonstration video and a spoken phrase for receiving a longer sample Magical Awakening session while lying down quietly for about forty-five minutes.",
+      "featured": true,
+      "resource_type": "practice",
+      "subjects": [
+        "energy-medicine"
+      ],
+      "image": "https://i0.wp.com/brettbevell.com/wp-content/uploads/2015/11/introduction-295x300.png?resize=295%2C300&#038;ssl=1"
+    }
+  ],
+  "sprint": {
+    "hub": "omega-institute",
+    "rank": 48,
+    "omega_url": "https://www.eomega.org/workshops/teachers/brett-bevell",
+    "tier_evidence": "Facebook BrettBevell 2,118 followers (og:description, 31 Oct 2026); YouTube @magicalawakening 40 subscribers (channel header, 31 Oct 2026); X @reikiboy linked from his site returns 'profile not found'; no Instagram found → ~2.2k total → local_hero",
+    "email": "yes",
+    "email_source": "https://www.academyofloveandlight.us/ (visible 'Contact' link in the site header; Cloudflare-protected mailto, decoded)",
+    "contact_form_url": "https://brettbevell.com/about/",
+    "bio_check": "OK: no 8-word runs against 33 source(s)",
+    "flags": [
+      "Brett Bevell is Omega staff as well as a teacher: Omega's staff directory (https://www.eomega.org/about-omega/people/staff-directory, 31 Oct 2026) lists him as Rhinebeck Programs Assistant Director. Owner may want to consider this before listing.",
+      "Possible editorial-stature override for the owner (author of seven books and a US Games deck); followers alone give local_hero (~2.2k).",
+      "City set to Rhinebeck because he teaches and works at Omega there; his home town isn't published.",
+      "YouTube @magicalawakening (40 subscribers, 1 video) is embedded on his site and named after his system; taken to be his.",
+      "Healing Racism Within: the Amazon blurb mentions trauma in a cultural sense, not a treatment claim; kept.",
+      "Co-teaches Omega's Wisdom of Reiki Conference with William Lee Rand (who has his own plan file in docs/content-audits).",
+      "His site carries political poems ('America Needs a Buddhist/Woman/Shaman President'); not used."
+    ],
+    "left_out": [
+      "Healing From Beyond The Veil ($88 course): includes 'physical healing' days, health claim.",
+      "Free Clairvoyant Chakra Healing mini-course: expires 8 April 2027.",
+      "The Wisdom of Reiki Conference (Omega, 23–25 Jul 2027): Omega workshops capped at two; multi-teacher conference.",
+      "Reiki Master Training & Certification (Omega, 22–24 Oct 2027): 'save the date, not yet up for sale'.",
+      "Distant sessions and tarot readings: mentioned on his About page with no page or price of their own.",
+      "Soulvana app (Mindvalley): third-party app, not his own page.",
+      "Free energy-healing audios: only via a mailing-list sign-up."
+    ]
+  },
+  "images_final": true
+}

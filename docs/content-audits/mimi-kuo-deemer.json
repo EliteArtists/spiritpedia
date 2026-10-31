@@ -33,6 +33,10 @@
     {
       "hub": "omega-institute",
       "role": "instructor"
+    },
+    {
+      "hub": "commune",
+      "role": "instructor"
     }
   ],
   "videos": [
@@ -41,7 +45,8 @@
       "url": "https://www.youtube.com/watch?v=3K-0JpiJu-o",
       "subjects": [
         "qi-gong"
-      ]
+      ],
+      "channel": "Mimi Kuo-Deemer"
     },
     {
       "title": "5 Element Qigong Practice - full version",
@@ -49,77 +54,88 @@
       "subjects": [
         "qi-gong",
         "ancient-wisdom"
-      ]
+      ],
+      "channel": "Mimi Kuo-Deemer"
     },
     {
       "title": "Qigong for the Water Element: Nourishing Practices for Body, Mind and Spirit",
       "url": "https://www.youtube.com/watch?v=FpxvNKewxHU",
       "subjects": [
         "qi-gong"
-      ]
+      ],
+      "channel": "Mimi Kuo-Deemer"
     },
     {
       "title": "Qigong for the Wood Element: Nourishing Practices for Body, Mind and Spirit",
       "url": "https://www.youtube.com/watch?v=TdSTlr1k4Aw",
       "subjects": [
         "qi-gong"
-      ]
+      ],
+      "channel": "Mimi Kuo-Deemer"
     },
     {
       "title": "Qigong for the Fire Element: Nourishing Practices for Body, Mind and Spirit",
       "url": "https://www.youtube.com/watch?v=RdUmD1Kp798",
       "subjects": [
         "qi-gong"
-      ]
+      ],
+      "channel": "Mimi Kuo-Deemer"
     },
     {
       "title": "Earth Element Qigong: Nourishing Practices for Body, Mind and Spirit",
       "url": "https://www.youtube.com/watch?v=5qMEjVsVx8M",
       "subjects": [
         "qi-gong"
-      ]
+      ],
+      "channel": "Mimi Kuo-Deemer"
     },
     {
       "title": "Live-stream Qigong Class with Mimi Kuo-Deemer",
       "url": "https://www.youtube.com/watch?v=sBKHCBpguPg",
       "subjects": [
         "qi-gong"
-      ]
+      ],
+      "channel": "Mimi Kuo-Deemer"
     },
     {
       "title": "Winter Qigong Practice for the Water Element",
       "url": "https://www.youtube.com/watch?v=hjST0nDQteU",
       "subjects": [
         "qi-gong"
-      ]
+      ],
+      "channel": "Mimi Kuo-Deemer"
     },
     {
       "title": "Qigong for the Metal Element: Nourishing Practices for Body, Mind and Spirit",
       "url": "https://www.youtube.com/watch?v=3tGMS6_AySs",
       "subjects": [
         "qi-gong"
-      ]
+      ],
+      "channel": "Mimi Kuo-Deemer"
     },
     {
       "title": "Livestream Qigong Class with Mimi Kuo-Deemer (May 30, 2020) – 18 forms, etheric cleansing & more",
       "url": "https://www.youtube.com/watch?v=MHokrkWr8_M",
       "subjects": [
         "qi-gong"
-      ]
+      ],
+      "channel": "Mimi Kuo-Deemer"
     },
     {
       "title": "Live-stream qigong class (recorded) with Mimi Kuo-Deemer from April 25, 2020",
       "url": "https://www.youtube.com/watch?v=CCCCa-WV9IU",
       "subjects": [
         "qi-gong"
-      ]
+      ],
+      "channel": "Mimi Kuo-Deemer"
     },
     {
       "title": "Qigong: The Eight Brocades",
       "url": "https://www.youtube.com/watch?v=huxPPaeJMD4",
       "subjects": [
         "qi-gong"
-      ]
+      ],
+      "channel": "Mimi Kuo-Deemer"
     }
   ],
   "books": [
@@ -136,7 +152,7 @@
         "qi-gong",
         "ancient-wisdom"
       ],
-      "cover": "https://m.media-amazon.com/images/I/71SXK48wbzL._SL1500_.jpg"
+      "cover": "https://m.media-amazon.com/images/P/1409183955.01._SCLZZZZZZZ_.jpg"
     },
     {
       "title": "Xiu Yang",
@@ -152,7 +168,7 @@
         "qi-gong",
         "mindfulness"
       ],
-      "cover": "https://m.media-amazon.com/images/I/81r2xo8m-VL._SL1500_.jpg"
+      "cover": "https://m.media-amazon.com/images/P/1409183971.01._SCLZZZZZZZ_.jpg"
     }
   ],
   "courses": [
@@ -168,7 +184,8 @@
         "qi-gong",
         "meditation",
         "mindfulness"
-      ]
+      ],
+      "image": "https://www.eomega.org/sites/default/files/styles/scale_width_1440/public/media/mindful-dragon-qigong_hero-27.jpg?itok=SBG1y8Dm"
     },
     {
       "title": "Qigong and the Five Phases (Wuxing)",
@@ -181,7 +198,8 @@
       "subjects": [
         "qi-gong",
         "ancient-wisdom"
-      ]
+      ],
+      "image": "https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/file-uploads/sites/36672/images/da8621-a4f8-83c7-fcd-7cfb66c7e67_02b003c2-3923-4539-ab38-8c6b773d1c74.jpg"
     },
     {
       "title": "Internal Martial Arts Retreat in the Cotswolds",
@@ -194,7 +212,8 @@
       "subjects": [
         "qi-gong",
         "tai-chi"
-      ]
+      ],
+      "image": "https://www.mkdeemer.com/uploads/2/9/1/4/29148947/mg-1511.jpeg"
     },
     {
       "title": "Earth Below, Sky Above, Heart at Centre",
@@ -208,7 +227,8 @@
         "meditation",
         "qi-gong",
         "mindfulness"
-      ]
+      ],
+      "image": "https://www.mkdeemer.com/uploads/2/9/1/4/29148947/published/20210823-082427-2.jpg?1684856167"
     },
     {
       "title": "An Introduction to Qigong: Practice and Principles - A 6 Week Course",
@@ -220,7 +240,8 @@
       "end_date": null,
       "subjects": [
         "qi-gong"
-      ]
+      ],
+      "image": "https://yt3.googleusercontent.com/aJho1pPGN8M5LShahskrZC7aTWQyijn79-3N8cEd2fMxVW0OryH9iu4q2iV7RdQwddhepXeIpA=s900"
     },
     {
       "title": "The 8 Silk Brocades - A 6 Week Course",
@@ -232,7 +253,8 @@
       "end_date": null,
       "subjects": [
         "qi-gong"
-      ]
+      ],
+      "image": "https://yt3.googleusercontent.com/aJho1pPGN8M5LShahskrZC7aTWQyijn79-3N8cEd2fMxVW0OryH9iu4q2iV7RdQwddhepXeIpA=s900"
     },
     {
       "title": "Qigong Breathing, Visualisations & Meditation",
@@ -246,7 +268,8 @@
         "qi-gong",
         "breathwork",
         "meditation"
-      ]
+      ],
+      "image": "https://yt3.googleusercontent.com/aJho1pPGN8M5LShahskrZC7aTWQyijn79-3N8cEd2fMxVW0OryH9iu4q2iV7RdQwddhepXeIpA=s900"
     },
     {
       "title": "The Art of Residing in Radiance - A Series of 5 Classes",
@@ -258,7 +281,8 @@
       "end_date": null,
       "subjects": [
         "qi-gong"
-      ]
+      ],
+      "image": "https://yt3.googleusercontent.com/aJho1pPGN8M5LShahskrZC7aTWQyijn79-3N8cEd2fMxVW0OryH9iu4q2iV7RdQwddhepXeIpA=s900"
     }
   ],
   "free_resources": [
@@ -271,7 +295,8 @@
       "subjects": [
         "qi-gong",
         "mindfulness"
-      ]
+      ],
+      "image": "https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/file-uploads/sites/36672/images/3be748-76a-6f5b-2522-aa50746333d_a9ea2002-ee55-4dca-939d-3f66305da623.jpg"
     },
     {
       "title": "Qigong: The Five Sacred Guardians with Mimi Kuo-Deemer (Free Pass)",
@@ -282,7 +307,8 @@
       "subjects": [
         "qi-gong",
         "ancient-wisdom"
-      ]
+      ],
+      "image": "https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/file-uploads/sites/36672/images/70bd0-b112-7fb8-e7ef-c68e13f5704_38d49b90-670d-432f-9ea7-5f7c63d17a0d.jpg"
     },
     {
       "title": "Qigong: The 18 Forms with Mimi Kuo-Deemer (Free Pass)",
@@ -292,7 +318,8 @@
       "resource_type": "mini_course",
       "subjects": [
         "qi-gong"
-      ]
+      ],
+      "image": "https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/file-uploads/sites/36672/images/ed1758a-ff01-3eee-07d5-4b555232d_e26546d6-1e13-468b-ad28-22382417f122.jpg"
     },
     {
       "title": "Qigong: The Eight Brocades with Mimi Kuo-Deemer (Free Pass)",
@@ -302,7 +329,8 @@
       "resource_type": "mini_course",
       "subjects": [
         "qi-gong"
-      ]
+      ],
+      "image": "https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/file-uploads/sites/36672/images/3165027-cd42-3353-be21-48ec1e7567_129b9744-84fd-4a27-b7f4-6be179cbb6e0.jpg"
     },
     {
       "title": "Open Qigong Class: Fire & The Summer Practice",
@@ -312,7 +340,8 @@
       "resource_type": "practice",
       "subjects": [
         "qi-gong"
-      ]
+      ],
+      "image": "https://i.ytimg.com/vi/v0TtynUmaEY/hqdefault.jpg?sqp=-oaymwEmCOADEOgC8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGGUgRig_MA8=&rs=AOn4CLDsfrS1_hYR0DPfMBawkNv1tn78dg"
     }
   ],
   "sprint": {
@@ -330,7 +359,8 @@
       "City set to Stonesfield, Oxfordshire: her teacher-training modules meet at Stonesfield Village Hall and her published mailing address is there; she describes home as the Oxfordshire countryside.",
       "Commune course price is not shown as a figure; the page says it is included in Commune membership with a 14-day free trial.",
       "The Cotswolds internal martial arts retreat is only open to students who have finished Seasons One and Two of her online course; twin and camping places are fully booked.",
-      "The Commune free passes need an email sign-up on Commune to start."
+      "The Commune free passes need an email sign-up on Commune to start.",
+      "Also teaches on Commune (Communiversity and four Commune courses): commune added to teaches_at on 31 Oct 2026 after the Commune hub went on dev."
     ],
     "left_out": [
       "Omega workshop 'Listening to Our Ancestors' (11–16 Oct 2026): already started/past and sold out.",
@@ -342,5 +372,6 @@
       "Short clips and trailers under about 2 minutes (e.g. Differences between taichi and qigong!, product trailers) left out; 5 Element organ clips (named after organs, not conditions) passed over for the full-length element practices.",
       "Several 'Qigong for the Seasons' DVDs on Amazon: videos, not books."
     ]
-  }
+  },
+  "images_final": true
 }

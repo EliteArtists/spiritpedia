@@ -1,0 +1,303 @@
+{
+  "healer": {
+    "healer_slug": "cirak",
+    "create": {
+      "name": "Cirak",
+      "bio": "Cirak is a teacher of presence and awareness who came to spiritual work after more than twenty years as an information architect, planning how people find their way through complex systems for large technology and consumer brands and teaching design thinking at UCLA. In 2015 a stay in the California desert that was meant to last two weeks stretched to six months and began a long period of inner change. He then trained twice through Eckhart Tolle's School of Awakening, later taught on that programme and volunteered alongside Tolle for six years.\n\nHis teaching looks at the hidden structure of everyday experience: how an event turns into perception, interpretation, sensation and finally reaction, and how beliefs and identity quietly steer each step. He works through meditation, inquiry, attention to the body and live dialogue rather than theory, returning often to overthinking and emotional reactivity. He leads in-person retreats, including at Kripalu, hosts free live sessions most weeks, sells recorded programmes and virtual retreats filmed in Bali and Greece, and has written several books, among them Be You and The Five Levels of Awareness, with End of Illusion on the way.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "worldwide",
+      "city": null,
+      "country": null,
+      "subjects": [
+        "spiritual-awakening",
+        "mindfulness",
+        "consciousness"
+      ],
+      "website_url": "https://cirak.com/",
+      "booking_url": "https://cirak.com/events/",
+      "youtube_url": "https://www.youtube.com/@cirakteachings",
+      "instagram_url": "https://www.instagram.com/cirakteachings",
+      "facebook_url": "https://www.facebook.com/cirakteachings/",
+      "twitter_url": "https://x.com/CirakTeachings",
+      "tiktok_url": null,
+      "contact_email": null,
+      "image_urls": [
+        "https://www.eomega.org/sites/default/files/media/Cirak_bio2.jpg",
+        "https://cirak.com/wp-content/uploads/2026/03/kripalu-meet-600x500-1.jpg"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "omega-institute",
+      "role": "instructor"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Overcoming Overthinking",
+      "url": "https://www.youtube.com/watch?v=Z3krljaaA54",
+      "subjects": [
+        "mindfulness",
+        "consciousness"
+      ],
+      "channel": "Cirak"
+    },
+    {
+      "title": "Amplify Your Intuition",
+      "url": "https://www.youtube.com/watch?v=Pehz3ptg9Vo",
+      "subjects": [
+        "consciousness",
+        "spirituality"
+      ],
+      "channel": "Cirak"
+    },
+    {
+      "title": "Cirak Live - Are you Feeling...Or Just Reacting?",
+      "url": "https://www.youtube.com/watch?v=mIZiAjoAM-I",
+      "subjects": [
+        "mindfulness"
+      ],
+      "channel": "Cirak"
+    },
+    {
+      "title": "Vipassana",
+      "url": "https://www.youtube.com/watch?v=U5DnTjj1oVA",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "channel": "Cirak"
+    },
+    {
+      "title": "Beyond The Book - A live integration session with Cirak",
+      "url": "https://www.youtube.com/watch?v=TX6Ah4DxQ2Q",
+      "subjects": [
+        "spiritual-awakening"
+      ],
+      "channel": "Cirak"
+    },
+    {
+      "title": "End of Illusion | Beliefs Are The First Illusion",
+      "url": "https://www.youtube.com/watch?v=2wffqRm2Tps",
+      "subjects": [
+        "consciousness",
+        "spiritual-awakening"
+      ],
+      "channel": "Cirak"
+    },
+    {
+      "title": "Mindful Minute: Accepting How You Feel",
+      "url": "https://www.youtube.com/watch?v=U-RlIwUayjc",
+      "subjects": [
+        "mindfulness"
+      ],
+      "channel": "Cirak"
+    },
+    {
+      "title": "Life Changes When You Notice What’s Already Here",
+      "url": "https://www.youtube.com/watch?v=0u1riRKk8hs",
+      "subjects": [
+        "mindfulness",
+        "spiritual-awakening"
+      ],
+      "channel": "Cirak"
+    },
+    {
+      "title": "How Do You Know What You Know Is True? | The Illusion of Knowledge",
+      "url": "https://www.youtube.com/watch?v=RRoxcKsPapw",
+      "subjects": [
+        "consciousness"
+      ],
+      "channel": "Cirak"
+    }
+  ],
+  "books": [
+    {
+      "title": "Be You: The Journey of Self-Realization",
+      "slug": "be-you-the-journey-of-self-realization",
+      "author": "Cirak",
+      "asin": "1735014052",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "His first and most accessible book, written in short chapters for readers new to inner work. It sets out a step-by-step way of noticing reactions, letting them pass and living with more ease.",
+      "subjects": [
+        "spiritual-awakening",
+        "mindfulness"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1735014052.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "The Five Levels of Awareness: A Manual for Inner Peace and Outer Purpose",
+      "slug": "the-five-levels-of-awareness",
+      "author": "Cirak",
+      "asin": "1735014044",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "A map of five stages that consciousness passes through in ordinary life, with the attitudes and lessons typical of each. Rather than prescribing rules, it helps readers recognise where they are and what the next step might be.",
+      "subjects": [
+        "consciousness",
+        "spiritual-awakening"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1735014044.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "Old Soul Young Soul: The Path from Seeking to Stillness",
+      "slug": "old-soul-young-soul",
+      "author": "Cirak",
+      "asin": "1735014079",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "A guide to the idea of soul age and how it colours relationships, purpose and identity. It walks through a hundred common life challenges and how each can be met with more awareness.",
+      "subjects": [
+        "soul-purpose",
+        "spiritual-awakening"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1735014079.01._SCLZZZZZZZ_.jpg"
+    }
+  ],
+  "courses": [
+    {
+      "title": "Direct Experience: A Path to Clarity",
+      "url": "https://cirak.com/event/kripalu-direct-experience-2026/",
+      "description": "A five-night residential retreat at Kripalu in Stockbridge, Massachusetts. Days combine meditation, inquiry, body awareness and quiet reflection, with the aim of living from presence rather than constant mental management.",
+      "price": "Starting at $460 USD (plus accommodations)",
+      "product_type": "retreat",
+      "start_date": "2026-12-06",
+      "end_date": "2026-12-11",
+      "subjects": [
+        "meditation",
+        "mindfulness",
+        "spiritual-awakening"
+      ],
+      "image": "https://cirak.com/wp-content/uploads/2026/03/kripalu-main-hall-1200x800-1.jpg"
+    },
+    {
+      "title": "7-Day Virtual Retreat",
+      "url": "https://cirak.com/programs/7-day-virtual-retreat/",
+      "description": "A complete recorded retreat filmed in Bali, meant to be followed over a clear week at home. Each day holds several sessions of teaching, meditation, movement and sound.",
+      "price": "$197 USD",
+      "product_type": "download",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "spiritual-awakening"
+      ],
+      "image": "https://cirak.com/wp-content/uploads/2026/03/veronica-meditation-400x538-1.jpg"
+    },
+    {
+      "title": "Conscious Doing Series",
+      "url": "https://cirak.com/programs/conscious-doing-series/",
+      "description": "An eight-part recorded training in acting from awareness rather than habit. Talks, guided meditations, exercises and journaling prompts look at one area of life per session.",
+      "price": "$97 USD",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "image": "https://cirak.com/wp-content/uploads/2023/11/VND00985-1.jpg"
+    },
+    {
+      "title": "InnerPower™ Program",
+      "url": "https://cirak.com/programs/innerpower-program/",
+      "description": "A five-week self-guided programme built on five themes: a clearer mind, fuller feeling, higher energy, creative expression and living with intent. Short daily practices help carry each theme into ordinary life.",
+      "price": "$97 USD",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "mindfulness",
+        "spiritual-awakening"
+      ],
+      "image": "https://cirak.com/wp-content/uploads/2026/03/innerclarity-cover-500x281-1.jpg"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "5-Day Awareness Reset",
+      "url": "https://cirak.com/programs/5-day-awareness-reset/",
+      "description": "Five days of recorded morning and evening audio practices made on the coast of Crete, each with a short reflection. Offered free on his site.",
+      "featured": true,
+      "resource_type": "mini_course",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://cirak.com/wp-content/uploads/2026/03/greece-reset.jpg"
+    },
+    {
+      "title": "Cirak - Thought Awareness Meditation 12 mins",
+      "url": "https://www.youtube.com/watch?v=nFhdcN8EbZo",
+      "description": "A short guided meditation in watching thoughts come and go without following them.",
+      "featured": false,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://i.ytimg.com/vi/nFhdcN8EbZo/maxresdefault.jpg?sqp=-oaymwEmCIAKENAF8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGGEgZShVMA8=&rs=AOn4CLC-IH8Zzx_m2INCybtU6T2W3ArV4Q"
+    },
+    {
+      "title": "Cirak - Body Awareness Meditation 51 min",
+      "url": "https://www.youtube.com/watch?v=bgio9nrEKeA",
+      "description": "A long guided practice that moves attention slowly through the body and rests in physical sensation.",
+      "featured": false,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://i.ytimg.com/vi/bgio9nrEKeA/maxresdefault.jpg?sqp=-oaymwEmCIAKENAF8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGHIgTigwMA8=&rs=AOn4CLAliqDarLHWefKtHMFJO2Vvcqkl2A"
+    },
+    {
+      "title": "Energy Clearing",
+      "url": "https://cirak.com/wp-content/uploads/2024/09/cirak-energy-clearing.mp3",
+      "description": "An hour-long guided audio from his resources page, based on his Conscious Release Method of staying present with sensations until they settle.",
+      "featured": false,
+      "resource_type": "download",
+      "subjects": [
+        "energy-medicine",
+        "meditation"
+      ],
+      "image": "https://www.eomega.org/sites/default/files/media/Cirak_bio2.jpg"
+    }
+  ],
+  "sprint": {
+    "hub": "omega-institute",
+    "rank": 38,
+    "omega_url": "https://www.eomega.org/people/cirak",
+    "tier_evidence": "Instagram 72K (og:description, 31 Oct 2026); Facebook 1,071 (og:description, 31 Oct 2026); YouTube 506 (channel header row next to @CirakTeachings, 31 Oct 2026); X count not readable without login → ~73.6k total → local_hero",
+    "email": "contact form",
+    "email_source": null,
+    "contact_form_url": "https://cirak.com/contact/",
+    "bio_check": "OK: no 8-word runs against 15 source(s)",
+    "flags": [
+      "No published email: his contact page has a form and a WhatsApp link only.",
+      "His only Omega workshop, 'Overcoming Overthinking' (from 11 Oct 2026), has already happened, so there is no Omega offering in this plan. Its framing is overthinking as a mental pattern, not anxiety; the YouTube talk of the same name is kept.",
+      "His December 2026 retreat is at Kripalu (Stockbridge, MA), which is on the future hubs list but not yet a hub; no teaches_at link added.",
+      "X (@CirakTeachings) follower count could not be read without logging in.",
+      "YouTube views are low (most videos under 600 views); the video list leans on his longer recorded talks.",
+      "Several titles and descriptions mention overthinking, burnout and reactivity; none name a medical condition, but a human may want a look. A clip titled 'The Difference Between an Enlightened Person and a Conspiracy Theorist' was checked: it warns against conspiracy thinking and was not used.",
+      "Amazon lists him as 'Chris Cirak'; he publishes and teaches as Cirak.",
+      "Retreat runs 6–11 Dec 2026, so it will expire soon after insert."
+    ],
+    "left_out": [
+      "Omega workshop 'Overcoming Overthinking' (11 Oct 2026): already past.",
+      "Heat Check (live debate events): not spiritual teaching.",
+      "Cirak Live weekly sessions: announced via WhatsApp/Instagram only, no booking page or fixed schedule.",
+      "Be You Workbook (ASIN B0DRYGRHRQ) and a further title (ASIN B0G5DSM3Z2) linked from his books page: amazon.com /dp/ returned 500 to curl and WebFetch, so not confirmed.",
+      "End of Illusion: forthcoming, no Amazon listing yet.",
+      "Video 'Energy Healing with Cirak' and 'Trigger Release Audio': healing/trigger framing, left out to be safe.",
+      "Video 'Cirak Live - Sacred Leadership': political leadership framing, passed over.",
+      "Mindful Minute clips and shorts under about 2 minutes, trailers and retreat testimonials."
+    ]
+  },
+  "images_final": true
+}
