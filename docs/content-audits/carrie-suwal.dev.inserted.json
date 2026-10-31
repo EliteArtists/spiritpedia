@@ -1,0 +1,81 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 301,
+    "healer_slug": "carrie-suwal"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "49f09a76-1026-4f0e-a8c9-bf7edb0c4b44",
+      "slug": "channeling-energy-healing-session",
+      "title": "Channeling/Energy Healing Session"
+    },
+    {
+      "table": "courses",
+      "id": "b188da9f-9b78-4242-ac86-66ecbf789700",
+      "slug": "mentoring-awakened-lightworker-support",
+      "title": "Mentoring | Awakened Lightworker Support"
+    },
+    {
+      "table": "courses",
+      "id": "ed6a05cf-2ffe-4ede-9bde-f1cbf7665805",
+      "slug": "personalized-meditation-creation",
+      "title": "Personalized Meditation Creation"
+    },
+    {
+      "table": "courses",
+      "id": "1745610c-b7bc-44e8-9b25-0876659f1ed5",
+      "slug": "beginner-become-an-energy-healer-level-1",
+      "title": "Beginner Become An Energy Healer Level 1"
+    },
+    {
+      "table": "courses",
+      "id": "6cbf0eda-d687-43fa-9cec-105e011d5d05",
+      "slug": "intermediate-become-an-energy-healer-level-2",
+      "title": "Intermediate Become An Energy Healer Level 2"
+    },
+    {
+      "table": "courses",
+      "id": "c9758092-5152-43c6-8fed-e495e37b1ebd",
+      "slug": "advanced-become-an-energy-healer-level-3",
+      "title": "Advanced Become An Energy Healer Level 3"
+    },
+    {
+      "table": "courses",
+      "id": "543ccfa6-514c-4061-8543-b9f20448a071",
+      "slug": "channeling-101-audio-course",
+      "title": "Channeling 101 audio course"
+    },
+    {
+      "table": "courses",
+      "id": "a8d84163-c21a-4e52-a0be-11e9d1d08dc1",
+      "slug": "become-your-own-master-creator",
+      "title": "Become Your Own Master Creator"
+    },
+    {
+      "table": "courses",
+      "id": "73b1511e-277c-4440-b942-99d3026a6350",
+      "slug": "magical-money-manifestation",
+      "title": "Magical Money Manifestation"
+    },
+    {
+      "table": "courses",
+      "id": "5f29cb28-cc9c-4ebd-8a24-fecc0a0a7b31",
+      "slug": "the-intuitive-advantage-make-impactful-rewarding-business-decisions",
+      "title": "The Intuitive Advantage: Make Impactful & Rewarding Business Decisions"
+    },
+    {
+      "table": "free_resources",
+      "id": "1e4af94c-5950-43e6-9e96-209330681b2a",
+      "slug": "carrie-suwal-on-insight-timer",
+      "title": "Carrie Suwal on Insight Timer"
+    },
+    {
+      "table": "hub_teachers",
+      "id": "a3ab1b2e-1f15-4bcd-aa9b-d779fbe5c572",
+      "title": "carrie-suwal teaches at Insight Timer"
+    }
+  ],
+  "at": "2026-10-31T16:41:25.953Z"
+}

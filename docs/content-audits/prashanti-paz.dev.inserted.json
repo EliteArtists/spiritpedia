@@ -1,0 +1,51 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 299,
+    "healer_slug": "prashanti-paz"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "2889b5dd-264a-40ed-9a55-989916a80a1f",
+      "slug": "astrology-session",
+      "title": "Astrology Session"
+    },
+    {
+      "table": "courses",
+      "id": "69945f17-5073-4cdc-b2e0-4a7d89ed5926",
+      "slug": "mentoring-session",
+      "title": "Mentoring Session"
+    },
+    {
+      "table": "courses",
+      "id": "1eeb3d4e-39d3-414d-8204-ab2753713026",
+      "slug": "concerts-workshops-and-retreats",
+      "title": "Concerts, workshops and retreats"
+    },
+    {
+      "table": "courses",
+      "id": "949e2eeb-aa53-4634-b3b8-c00afb6337ed",
+      "slug": "clearing-your-path-to-success",
+      "title": "Clearing Your Path To Success"
+    },
+    {
+      "table": "courses",
+      "id": "d674ba94-a67e-428d-96b2-3da3f8691770",
+      "slug": "21-day-mantra-journey-to-happiness",
+      "title": "21-Day Mantra: Journey To Happiness"
+    },
+    {
+      "table": "free_resources",
+      "id": "eed4d479-5489-44b8-b246-2c85893cd383",
+      "slug": "prashanti-paz-on-insight-timer",
+      "title": "Prashanti Paz on Insight Timer"
+    },
+    {
+      "table": "hub_teachers",
+      "id": "cf22d11f-71c8-4c39-9593-1506adb37ec0",
+      "title": "prashanti-paz teaches at Insight Timer"
+    }
+  ],
+  "at": "2026-10-31T16:41:14.659Z"
+}

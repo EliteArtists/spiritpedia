@@ -1,0 +1,69 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 302,
+    "healer_slug": "zoe-kanat"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "89fb28ca-a58f-40ec-8980-43537a93ee37",
+      "slug": "restoring-inner-balance-in-a-fast-paced-world-digital-course",
+      "title": "Restoring Inner Balance In A Fast-Paced World (Digital Course)"
+    },
+    {
+      "table": "courses",
+      "id": "78cc87f0-82a1-472a-ba99-7748f3b48f36",
+      "slug": "bone-deep-relaxation-yoga-nidra",
+      "title": "Bone Deep Relaxation ~ Yoga Nidra"
+    },
+    {
+      "table": "courses",
+      "id": "ac666ed5-5d27-4886-9e1a-1431bdbac7ce",
+      "slug": "yoga-nidra-for-caregivers",
+      "title": "Yoga Nidra for Caregivers"
+    },
+    {
+      "table": "courses",
+      "id": "126f54f7-5d3c-4b3e-9ec4-1f69a4ef5e7b",
+      "slug": "tending-to-the-heart",
+      "title": "Tending To The Heart"
+    },
+    {
+      "table": "courses",
+      "id": "f4330473-6a2e-42ab-a5c5-05e0d22b4ee3",
+      "slug": "gentle-mornings",
+      "title": "Gentle Mornings"
+    },
+    {
+      "table": "courses",
+      "id": "645bc6d9-a496-4b2f-be86-cafecaef4bc1",
+      "slug": "sacred-living-from-mundane-to-magic",
+      "title": "Sacred Living - From Mundane To Magic"
+    },
+    {
+      "table": "courses",
+      "id": "13e2ce7c-9419-4eac-b05a-6893622616e9",
+      "slug": "returning-to-the-heart-of-meditation",
+      "title": "Returning To The Heart Of Meditation"
+    },
+    {
+      "table": "free_resources",
+      "id": "7d2ddded-be7e-4790-af20-23fff17a7667",
+      "slug": "zoe-kanat-on-insight-timer",
+      "title": "Zoe Kanat on Insight Timer"
+    },
+    {
+      "table": "free_resources",
+      "id": "e40307dc-ede1-418e-aeef-4c0148618028",
+      "slug": "free-monthly-short-rest-gathering",
+      "title": "Free Monthly Short Rest Gathering"
+    },
+    {
+      "table": "hub_teachers",
+      "id": "617d24c8-7259-422d-9146-6d6f6f51cc85",
+      "title": "zoe-kanat teaches at Insight Timer"
+    }
+  ],
+  "at": "2026-10-31T16:41:31.923Z"
+}

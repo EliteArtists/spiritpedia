@@ -1,0 +1,271 @@
+{
+  "healer": {
+    "healer_slug": "alex-elle",
+    "create": {
+      "name": "Alex Elle",
+      "bio": "Alex Elle, who publishes as Alexandra Elle, is a writer and teacher of what she calls restorative writing: journaling and reflective writing used as a steady practice for knowing yourself better. It started as her own private habit, and over more than ten years it has become the heart of her work. She is also a certified breathwork coach, and she often pairs short breathing practices and guided meditations with writing prompts, so that people slow down before they put pen to paper.\n\nShe is the author of several books, including the New York Times bestseller How We Heal, After the Rain, the poetry collection Neon Soul and, in 2026, The Company We Keep, which looks at friendship and growing alongside other people. Alongside these sit guided journals and affirmation cards. She teaches through workshops, online courses and retreats, speaks at universities and companies, and writes a free newsletter, Here for Now, with essays and journal prompts. Her short meditations on Insight Timer and her YouTube channel focus on gratitude, rest and self-kindness. She lives in Washington, D.C.",
+      "tier": "superhero",
+      "entity_type": "individual",
+      "availability": "worldwide",
+      "city": null,
+      "country": null,
+      "subjects": [
+        "mindfulness",
+        "breathwork",
+        "meditation"
+      ],
+      "website_url": "https://www.alexelle.com/",
+      "booking_url": "https://www.alexelle.com/connect",
+      "youtube_url": "https://www.youtube.com/@easewithalex",
+      "instagram_url": "https://www.instagram.com/alex_elle/",
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "josefina@alexelle.com",
+      "image_urls": [
+        "https://images.squarespace-cdn.com/content/v1/578546cee58c62418fa2ba07/b91657be-5a92-467d-8f37-5bb1c8945860/DSCF9265.JPEG?format=1500w",
+        "https://yt3.googleusercontent.com/2z2rmLA690kWvaPa2py_8QGi3ynVV5UQ9zVyeZhP_lbmziF5cwyF8gQPVOyLj-jzNcEF4t_kHQ=s900"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "insight-timer",
+      "role": "instructor"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Joy Journaling for Beginners: How to Start & Stick With It!",
+      "url": "https://www.youtube.com/watch?v=IME8SV4rLyE",
+      "subjects": [
+        "mindfulness"
+      ],
+      "channel": "Ease with Alex Elle "
+    },
+    {
+      "title": "Dear Self Meditation: Gratitude and Self-Love",
+      "url": "https://www.youtube.com/watch?v=FEaveAHCmZ8",
+      "subjects": [
+        "meditation",
+        "self-healing"
+      ],
+      "channel": "Ease with Alex Elle "
+    },
+    {
+      "title": "Leaning Into Divine Alignment | Trusting the Timing and Path of YOUR Life",
+      "url": "https://www.youtube.com/watch?v=ddTzAq1O8KQ",
+      "subjects": [
+        "soul-purpose",
+        "spirituality"
+      ],
+      "channel": "Ease with Alex Elle "
+    },
+    {
+      "title": "Joy Journal Check-In: A Simple Practice to Cultivate Daily Gratitude & Happiness",
+      "url": "https://www.youtube.com/watch?v=sJjel8ucuLM",
+      "subjects": [
+        "mindfulness"
+      ],
+      "channel": "Ease with Alex Elle "
+    },
+    {
+      "title": "Guided Breathwork Meditation - Self-Nourishment",
+      "url": "https://www.youtube.com/watch?v=JpZQm5JFS-A",
+      "subjects": [
+        "breathwork",
+        "meditation"
+      ],
+      "channel": "Ease with Alex Elle "
+    },
+    {
+      "title": "Guided Breathwork Meditation - Emotional Rest & Self-Forgiveness",
+      "url": "https://www.youtube.com/watch?v=7QxuqUIplkU",
+      "subjects": [
+        "breathwork",
+        "meditation"
+      ],
+      "channel": "Ease with Alex Elle "
+    },
+    {
+      "title": "Guided Breathwork Meditation - Being in Progress",
+      "url": "https://www.youtube.com/watch?v=drNa4RdHJHM",
+      "subjects": [
+        "breathwork",
+        "meditation"
+      ],
+      "channel": "Ease with Alex Elle "
+    },
+    {
+      "title": "Alex Elle reminds us to focus on ourselves first l GMA",
+      "url": "https://www.youtube.com/watch?v=zlJusl8t7vs",
+      "subjects": [
+        "mindfulness"
+      ],
+      "channel": "Good Morning America"
+    },
+    {
+      "title": "An Evening with Alex Elle",
+      "url": "https://www.youtube.com/watch?v=BAa_LHz4JZM",
+      "subjects": [
+        "mindfulness",
+        "spirituality"
+      ],
+      "channel": "UCSD University Centers"
+    }
+  ],
+  "books": [
+    {
+      "title": "How We Heal: Uncover Your Power and Set Yourself Free",
+      "slug": "how-we-heal",
+      "author": "Alexandra Elle",
+      "asin": "1797216260",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "A guide to self-reflection through writing, mixing her own story with conversations with other women and prompts readers can work through. It treats journaling as a way to notice old patterns and choose new ones.",
+      "subjects": [
+        "self-healing",
+        "mindfulness"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1797216260.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "The Company We Keep: Friendship, Connection, and Redefining What It Means to Grow Together",
+      "slug": "the-company-we-keep",
+      "author": "Alexandra Elle",
+      "asin": "0593855434",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "Her 2026 book on friendship as adults: how bonds change, how to tend them and when to let them go. Reflections and journal prompts sit alongside her own experiences.",
+      "subjects": [
+        "conscious-relationships"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/0593855434.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "After the Rain: Gentle Reminders for Healing, Courage, and Self-Love",
+      "slug": "after-the-rain",
+      "author": "Alexandra Elle",
+      "asin": "1797200100",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "Short personal essays drawn from her own life, each followed by affirmations and a writing exercise. The book is built for slow reading and returning to over time.",
+      "subjects": [
+        "self-healing",
+        "mindfulness"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1797200100.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "Neon Soul: A Collection of Poetry and Prose",
+      "slug": "neon-soul",
+      "author": "Alexandra Elle",
+      "asin": "1449484832",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "An early collection of poems and short prose on self-worth, love and growing up. It shows the personal, plain-spoken voice that runs through her later books.",
+      "subjects": [
+        "spirituality"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1449484832.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "In Courage Journal: A Daily Practice for Self-Discovery",
+      "slug": "in-courage-journal",
+      "author": "Alexandra Elle",
+      "asin": "1797200119",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "A guided journal that accompanies After the Rain, with daily prompts and space to write. It is meant to help readers build a regular reflective writing habit.",
+      "subjects": [
+        "mindfulness"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1797200119.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "Today I Affirm: A Journal that Nurtures Self-Care",
+      "slug": "today-i-affirm",
+      "author": "Alexandra Elle",
+      "asin": "1449495214",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "A prompt journal pairing affirmations with short writing exercises for everyday self-care. It suits readers who want a gentle, structured way into journaling.",
+      "subjects": [
+        "mindfulness"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1449495214.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "Affirmation Cards: How We Heal through Self-Love, Joy, and Manifestation",
+      "slug": "how-we-heal-affirmation-cards",
+      "author": "Alexandra Elle",
+      "asin": "1797216279",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "A boxed deck of affirmation cards that complements How We Heal. Each card offers a short phrase to reflect on or write about.",
+      "subjects": [
+        "manifestation",
+        "self-healing"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1797216279.01._SCLZZZZZZZ_.jpg"
+    }
+  ],
+  "courses": [],
+  "free_resources": [
+    {
+      "title": "Alex Elle on Insight Timer",
+      "url": "https://insighttimer.com/alex_elle",
+      "description": "Short guided meditations and spoken affirmations on gratitude, clarity, feeling seen and coming back to yourself. All of them can be played free in the app or on the web.",
+      "featured": true,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/578546cee58c62418fa2ba07/b91657be-5a92-467d-8f37-5bb1c8945860/DSCF9265.JPEG?format=1500w"
+    },
+    {
+      "title": "Here for Now (newsletter)",
+      "url": "https://alexelle.substack.com/",
+      "description": "Her free newsletter on Substack, formerly called Gratitude Journal. Posts mix personal essays with journal prompts and notes on writing and everyday life.",
+      "featured": false,
+      "resource_type": "practice",
+      "subjects": [
+        "mindfulness"
+      ],
+      "image": "https://substackcdn.com/image/fetch/$s_!v8sv!,w_400,h_400,c_fill,f_auto,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F3fc0718c-902b-40a7-bf77-6fd3721d5231_1319x1319.jpeg"
+    }
+  ],
+  "sprint": {
+    "hub": "insight-timer",
+    "rank": 2,
+    "insight_timer_url": "https://insighttimer.com/alex_elle",
+    "tier_evidence": "Insight Timer 84.6k (profile, 31 Oct 2026); Instagram @alex_elle 2M (og:description, 31 Oct 2026); YouTube @easewithalex 14.5k (channel page, 31 Oct 2026) → ~2.1M total → superhero",
+    "email": "yes",
+    "email_source": "https://www.alexelle.com/connect",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 4 source(s)",
+    "flags": [
+      "Email is her assistant Josefina's general-inquiries address; speaking and literary bookings go to CAA agents.",
+      "No current paid offerings could be found: her site lists no courses or retreats, and her latest retreat (The Weight of Joy, 22–25 Oct 2026, New York) has passed. Worth re-checking for new workshops.",
+      "Availability set to worldwide: she lives in Washington, D.C. but no regular local classes were found.",
+      "Insight Timer profile links to instagram.com/alex, which is not her account; her Instagram is @alex_elle (linked from her own site).",
+      "Book subjects use self-healing for How We Heal and After the Rain (emotional self-reflection, no condition named); a human may prefer mindfulness only."
+    ],
+    "left_out": [
+      "Retreat 'The Weight of Joy' (22–25 Oct 2026, already passed).",
+      "YouTube 'How My Daily Matcha Ritual Helps Me Slow Down | ADHD…' (condition named) and short vlog clips (Visual Journal, Scenes from Sabbatical).",
+      "Podcast interviews on other channels (host-led conversations; several titled 'how to heal').",
+      "X account @alex__elle no longer exists; TikTok and Facebook not found as clearly hers.",
+      "Penguin Random House author photo (only 256 px wide)."
+    ]
+  },
+  "images_final": true
+}

@@ -1,0 +1,57 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 304,
+    "healer_slug": "amanda-penalver"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "9c8c24a2-fe71-4e61-905b-1dc054329baf",
+      "slug": "true-rest-meditation-classes",
+      "title": "True Rest Meditation classes"
+    },
+    {
+      "table": "courses",
+      "id": "29135e17-23c6-4324-b2fb-1aff53c6fd11",
+      "slug": "private-sessions",
+      "title": "Private sessions"
+    },
+    {
+      "table": "courses",
+      "id": "77222ecc-732b-4eea-823e-8935301fc8ca",
+      "slug": "new-year-rest-renew-reconnect-day-retreat",
+      "title": "New Year Rest. Renew. Reconnect. Day Retreat"
+    },
+    {
+      "table": "courses",
+      "id": "188a1fb9-89c6-4a75-93e0-2b49579c6146",
+      "slug": "rest-renew-reconnect-a-retreat-for-women-spain",
+      "title": "Rest. Renew. Reconnect. A Retreat for Women (Spain)"
+    },
+    {
+      "table": "courses",
+      "id": "698a35cf-d3d0-4603-96b0-6b9b4f63aac9",
+      "slug": "the-incredible-power-of-taking-a-nap",
+      "title": "The Incredible Power of Taking a Nap"
+    },
+    {
+      "table": "free_resources",
+      "id": "825c5669-628d-4738-a7aa-9ad224887a4e",
+      "slug": "amanda-penalver-on-insight-timer",
+      "title": "Amanda Penalver on Insight Timer"
+    },
+    {
+      "table": "free_resources",
+      "id": "68d19075-cfef-473d-ae32-a5ce720d5864",
+      "slug": "free-meditation-guide",
+      "title": "Free Meditation Guide"
+    },
+    {
+      "table": "hub_teachers",
+      "id": "a59641a2-c51d-4fa0-a427-d1151c46b302",
+      "title": "amanda-penalver teaches at Insight Timer"
+    }
+  ],
+  "at": "2026-10-31T16:41:44.901Z"
+}

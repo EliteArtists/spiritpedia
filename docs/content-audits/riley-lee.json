@@ -1,0 +1,210 @@
+{
+  "healer": {
+    "healer_slug": "riley-lee",
+    "create": {
+      "name": "Riley Lee",
+      "bio": "Riley Lee is a shakuhachi player and teacher who has lived in Australia since 1986 and is based near Manly, New South Wales. Born in Texas and raised partly in Hawaii, he went to Japan in the early 1970s, began studying the bamboo flute with Chikuho Sakai, and in 1980 was made a dai shihan, or grand master, later studying with Katsuya Yokoyama. He toured for several years with the drum group Ondekoza, then taught at the University of Hawaii before earning a doctorate in ethnomusicology at the University of Sydney, writing on how the Zen repertoire of the instrument, the honkyoku, is handed down.\n\nFor him the shakuhachi is first a meditative practice built on the breath, and he has recorded a large catalogue of contemplative music. He gives online lessons by appointment to players of every level, from complete beginners to professionals, and keeps a password-protected archive of scores and recordings from his Chikuho lineage for students. Drawing on decades of breathing workshops, he has also made a self-paced course of simple conscious breathing exercises, with versions on Insight Timer, and writes short articles on playing, the instrument and its history.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "worldwide",
+      "city": null,
+      "country": null,
+      "subjects": [
+        "breathwork",
+        "meditation",
+        "sound-healing"
+      ],
+      "website_url": "https://rileylee.com/",
+      "booking_url": "https://rileylee.com/shakuhachi-lessons/",
+      "youtube_url": "https://www.youtube.com/@RileyLeeMusic",
+      "instagram_url": "https://www.instagram.com/rileyleeshakuhachimusic/",
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "riley@rileylee.com",
+      "image_urls": [
+        "https://rileylee.com/wp-content/uploads/2026/10/8N8A1359-scaled-hq.webp",
+        "https://yt3.googleusercontent.com/KQYmRlGDYVNnFaxlEBAMt8N4FDA9QurRxc6ps3Ivms1xBwF_BmG6EQg8fb-DIWqdhZWwwkf0=s900",
+        "https://rileylee.com/wp-content/uploads/2026/10/Riley_1-1843088-e1786764738551-hq.webp"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "insight-timer",
+      "role": "instructor"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Riley Lee interview: about how I began in 1970, my instrument, tradition and my music. Shakuhachi 尺八",
+      "url": "https://www.youtube.com/watch?v=cOgVdcglzwk",
+      "subjects": [
+        "meditation",
+        "ancient-wisdom"
+      ],
+      "channel": "Riley Lee Music"
+    },
+    {
+      "title": "Riley Lee — How to take apart a shakuhachi",
+      "url": "https://www.youtube.com/watch?v=FLNeIonPbLA",
+      "subjects": [
+        "sound-healing"
+      ],
+      "channel": "Riley Lee Music"
+    },
+    {
+      "title": "Riley Lee, shakuhachi 尺八 Grand Master, shows how to fix a loose joint on a bamboo shakuhachi",
+      "url": "https://www.youtube.com/watch?v=iHG34OJUt9s",
+      "subjects": [
+        "sound-healing"
+      ],
+      "channel": "Riley Lee Music"
+    },
+    {
+      "title": "Riley Lee Music 尺八 How to hold shakuhachi including the really long chōkan 長管 used with honkyoku 本曲",
+      "url": "https://www.youtube.com/watch?v=qiBgAjMIpmY",
+      "subjects": [
+        "meditation",
+        "sound-healing"
+      ],
+      "channel": "Riley Lee Music"
+    },
+    {
+      "title": "Riley Lee 尺八 Sample exercise from The Art of Breathing. The Gentle Breath",
+      "url": "https://www.youtube.com/watch?v=caeY7wmjt6o",
+      "subjects": [
+        "breathwork"
+      ],
+      "channel": "Riley Lee Music"
+    },
+    {
+      "title": "Riley Lee plays Shin'ya 心夜. VIDEO 1 of 4 videos for learning this shakuhachi duet.",
+      "url": "https://www.youtube.com/watch?v=d--FL7YYtEg",
+      "subjects": [
+        "meditation",
+        "sound-healing"
+      ],
+      "channel": "Riley Lee Music"
+    }
+  ],
+  "books": [],
+  "courses": [
+    {
+      "title": "Shakuhachi lessons with Riley Lee",
+      "url": "https://rileylee.com/shakuhachi-lessons/",
+      "description": "Online one-to-one shakuhachi lessons of about an hour, booked by appointment, for beginners through to professional players. Riley can also help students find an instrument before their first lesson.",
+      "price": "from $100 AUD",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "breathwork"
+      ],
+      "image": "https://rileylee.com/wp-content/uploads/2026/10/8N8A1333-scaled-sm.webp"
+    },
+    {
+      "title": "Breathe! The Art of Breathing with Riley Lee",
+      "url": "https://riley-lee-music.kit.com/products/breathe",
+      "description": "A self-paced course of about two hours of simple conscious breathing exercises and teaching, drawn from his years of workshops. It comes with a fourteen-page PDF of the exercises in English or German.",
+      "price": "$108.00 AUD",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "breathwork"
+      ],
+      "image": "https://embed.filekitcdn.com/e/dqMoyEZRDGE7f5WAue5eoZ/et2zwWjFkpZuQWsojJAsYf"
+    },
+    {
+      "title": "Membership Area for Shakuhachi Players",
+      "url": "https://riley-lee-music.kit.com/products/membership-area-for-shakuhachi-players",
+      "description": "A one-off fee opens a password-protected archive for students of the instrument. It holds more than fifty recordings and eighty scores of Chikuho lineage honkyoku passed to him by Sakai Chikuho II, with fingering charts and beginners' exercises.",
+      "price": "$40 AUD",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "ancient-wisdom"
+      ],
+      "image": "https://embed.filekitcdn.com/e/dqMoyEZRDGE7f5WAue5eoZ/e9EJcyJ85K93T2hv4q9oJW"
+    },
+    {
+      "title": "Breathe - The Simple Art Of Breathing",
+      "url": "https://insighttimer.com/meditation-courses/breathe-the-simple-art-of-breathing",
+      "description": "An Insight Timer course of short daily sessions in which Riley guides simple exercises for becoming more aware of the breath. It is based on the breathing workshops he has led for decades.",
+      "price": "Included in Member Plus ($59.99 USD a year)",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "breathwork"
+      ],
+      "image": "https://rileylee.com/wp-content/uploads/2026/10/8N8A1359-scaled-hq.webp"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Riley Lee on Insight Timer",
+      "url": "https://insighttimer.com/rileylee",
+      "description": "A large free collection of his meditative shakuhachi music, with some guided breathing practices. Free to listen to.",
+      "featured": true,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation",
+        "breathwork"
+      ],
+      "image": "https://rileylee.com/wp-content/uploads/2026/10/8N8A1359-scaled-hq.webp"
+    },
+    {
+      "title": "Invocation Breath (free exercise)",
+      "url": "https://rileylee.com/breathe-course/",
+      "description": "One of the exercises from his breathing course, offered free to try on the course page. A short guided practice in breathing with attention.",
+      "featured": false,
+      "resource_type": "practice",
+      "subjects": [
+        "breathwork"
+      ],
+      "image": "https://rileylee.com/wp-content/uploads/2026/10/Riley_1-1843088-e1786593800482-sm.webp"
+    },
+    {
+      "title": "Ongoing Study articles",
+      "url": "https://rileylee.com/learn/",
+      "description": "A set of free short articles for shakuhachi players and listeners, on topics such as producing the upper octave, choosing an instrument and the meditative honkyoku pieces.",
+      "featured": false,
+      "resource_type": "practice",
+      "subjects": [
+        "meditation",
+        "ancient-wisdom"
+      ],
+      "image": "https://i0.wp.com/rileylee.com/wp-content/uploads/2026/04/WELCOME.png?fit=1280%2C720&ssl=1"
+    }
+  ],
+  "sprint": {
+    "hub": "insight-timer",
+    "rank": 15,
+    "insight_timer_url": "https://insighttimer.com/rileylee",
+    "tier_evidence": "Insight Timer 21.2k (profile, 31 Oct 2026); YouTube 15.1K (channel page); Instagram 1,258 (og:description, 31 Oct 2026) → ~38k total → local_hero",
+    "email": "yes",
+    "email_source": "https://rileylee.com/contact-us/",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 12 source(s)",
+    "flags": [
+      "Mainly a musician: most of his YouTube and Insight Timer output is music, which is excluded; he is listed as a teacher for his shakuhachi lessons (a Zen breath practice) and breathing course. A human may want to confirm he fits.",
+      "He has a PhD and Insight Timer calls him 'Dr. Riley Lee'; listed as 'Riley Lee', the name his own site uses.",
+      "Availability set to worldwide: lessons are online only and no in-person classes or workshops in Manly are published (contact address is a Manly PO box).",
+      "Shakuhachi music has no exact subject; used breathwork, meditation and sound-healing.",
+      "Photos are .webp files from his site plus his YouTube avatar.",
+      "WebFetch would only quote the opening clause of his Insight Timer bio; the bio check ran against that plus his own pages."
+    ],
+    "left_out": [
+      "Music-only videos (performances, albums, honkyoku recordings) and short promo clips under two minutes.",
+      "Insight Timer course 'Is Your Breathing Not Quite Right?' (problem-framed title; borderline).",
+      "Albums, including sleep-themed releases, and the free album download.",
+      "No books (PhD thesis only)."
+    ]
+  },
+  "images_final": true
+}

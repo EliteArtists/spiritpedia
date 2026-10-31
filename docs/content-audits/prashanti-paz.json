@@ -1,0 +1,150 @@
+{
+  "healer": {
+    "healer_slug": "prashanti-paz",
+    "create": {
+      "name": "Prashanti Paz",
+      "bio": "Prashanti Paz is a mantra singer, meditation teacher and astrologer who lives in The Hague. Born in Argentinian Patagonia and raised partly in São Paulo, she trained in film and worked as a screenwriter before her path turned inward. A job on the set of Seven Years in Tibet in 1997 brought her into contact with Tibetan monks and lamas, and from 1999 she studied Buddhist texts, sadhana and mantra with teachers including Kyabje Kalu Rinpoche and Gyetrul Jigme Rinpoche. Since 2016 she has also followed the non-dual teacher Mooji.\n\nThat same year she left screenwriting to give her time to sacred chant. Her albums Inner Light and Into the Heart gather mantras from Hindu, Buddhist and Sikh sources, and she has released many singles and contributed music to a documentary featuring Matthieu Ricard. On Insight Timer, where she has taught since 2017, she leads mantra courses built around a daily chanting habit. She studied humanistic astrology in Argentina and with a Tibetan astrologer in San Diego, and now gives online birth-chart readings that lean towards self-understanding rather than prediction, alongside mentoring sessions that draw on meditation and mantra. She also gives concerts, workshops and chanting circles on request.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local_online",
+      "city": "The Hague",
+      "country": "Netherlands",
+      "subjects": [
+        "sound-healing",
+        "astrology",
+        "meditation"
+      ],
+      "website_url": "https://prashantipaz.com",
+      "booking_url": "https://prashantipaz.com/work-with-me/",
+      "youtube_url": "https://www.youtube.com/@prashantipaz",
+      "instagram_url": "https://www.instagram.com/prashantipaz/",
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "prashanti@prashantipaz.com",
+      "image_urls": [
+        "https://prashantipaz.com/wp-content/uploads/2023/03/mailer-photo-PP_lq.jpg",
+        "https://yt3.googleusercontent.com/1a87XCmTRZYAwTkfvBlYnbl-zq3Z33clsgN_JeBu7NEDW5oLOhtgGhkn47UPQtEiVBo_tO4f=s900-c-k-c0x00ffffff-no-rj",
+        "https://prashantipaz.com/wp-content/uploads/2025/11/Prashanti-Paz_private-astrology-session.jpg"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "insight-timer",
+      "role": "instructor"
+    }
+  ],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Astrology Session",
+      "url": "https://calendly.com/prashantipaz/astrologyreading",
+      "description": "A one-hour online reading of your birth chart, used as a map of strengths, habits and life cycles. Her approach favours self-knowledge and choice over forecasting.",
+      "price": "€180 EUR",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "astrology",
+        "soul-purpose"
+      ],
+      "image": "https://prashantipaz.com/wp-content/uploads/2023/03/mailer-photo-PP_lq.jpg"
+    },
+    {
+      "title": "Mentoring Session",
+      "url": "https://prashantipaz.com/work-with-me/",
+      "description": "A one-hour online session of guided inner work. It can include meditation, mantra, creative expression and quiet reflection, shaped around what you bring.",
+      "price": "€145 EUR",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "image": "https://prashantipaz.com/wp-content/uploads/2023/02/Headerhome.jpg"
+    },
+    {
+      "title": "Concerts, workshops and retreats",
+      "url": "https://prashantipaz.com/bookings/",
+      "description": "Prashanti can be booked for mantra concerts, chanting circles, workshops and retreats, online or in person. Programmes are put together for each host, from small gatherings to company events.",
+      "price": "Contact for pricing",
+      "product_type": "retreat",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "sound-healing",
+        "meditation"
+      ],
+      "image": "https://prashantipaz.com/wp-content/uploads/2023/02/Headerhome.jpg"
+    },
+    {
+      "title": "Clearing Your Path To Success",
+      "url": "https://insighttimer.com/meditation-courses/clearing-your-path-to-success",
+      "description": "An eight-day Insight Timer course built on a short daily chant of a Ganesha mantra. Each day adds a theme, such as setting an intention or working with inner obstacles.",
+      "price": "Included in Member Plus ($59.99 USD a year)",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "sound-healing",
+        "manifestation",
+        "meditation"
+      ],
+      "image": "https://prashantipaz.com/wp-content/uploads/2023/03/mailer-photo-PP_lq.jpg"
+    },
+    {
+      "title": "21-Day Mantra: Journey To Happiness",
+      "url": "https://insighttimer.com/meditation-courses/course_21-day-mantra-journey-to-happiness",
+      "description": "A three-week Insight Timer course centred on Lokah Samastah, a chant wishing peace to all beings. Daily lessons cover its meaning, posture, breath and intention, building a steady chanting habit.",
+      "price": "Included in Member Plus ($59.99 USD a year)",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "sound-healing",
+        "meditation"
+      ],
+      "image": "https://prashantipaz.com/wp-content/uploads/2023/03/mailer-photo-PP_lq.jpg"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Prashanti Paz on Insight Timer",
+      "url": "https://insighttimer.com/prashantipaz",
+      "description": "Mantra chants, sound meditations and guided practices drawn from Buddhist and Hindu traditions, alongside her longer courses. The single tracks are free to hear.",
+      "featured": true,
+      "resource_type": "meditation",
+      "subjects": [
+        "sound-healing",
+        "meditation"
+      ],
+      "image": "https://prashantipaz.com/wp-content/uploads/2023/03/mailer-photo-PP_lq.jpg"
+    }
+  ],
+  "sprint": {
+    "hub": "insight-timer",
+    "rank": 7,
+    "insight_timer_url": "https://insighttimer.com/prashantipaz",
+    "tier_evidence": "Insight Timer 46.4k (profile, 31 Oct 2026); YouTube @prashantipaz 11.1K (channel page); Instagram 11K (og:description, 31 Oct 2026) → ~69k total → local_hero",
+    "email": "yes",
+    "email_source": "https://prashantipaz.com/lets-connect/",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 8 source(s)",
+    "flags": [
+      "Availability set to local_online: her private sessions are online only, but she offers in-person concerts and workshops by booking and has held events in The Hague and Amsterdam (latest listed June 2024); no current in-person dates.",
+      "She is a recording artist as well as a teacher; the listing treats her as a teacher (astrology, mentoring, mantra courses), not as a music project.",
+      "All of her YouTube videos are mantra music or concert performances, so none were added under the no-music-only rule; a human may judge chanting videos differently.",
+      "The Hindu/Buddhist teacher names on her site are her own account of her studies and were not checked further."
+    ],
+    "left_out": [
+      "YouTube videos: all music (chants, live concerts, lyric videos) or under 2 minutes.",
+      "Insight Timer course Seven Keys To Unblock Your Chakras: lessons link chakra blocks to addiction and other conditions (health-claim rule); 30-Day Mantra Journey For Inner Healing: healing-framed title, left out as borderline.",
+      "Events page: all events are past (latest 16 June 2024).",
+      "No books found on Amazon; albums on Spotify and Apple Music are music, not listed."
+    ]
+  },
+  "images_final": true
+}

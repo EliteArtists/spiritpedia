@@ -1,0 +1,161 @@
+{
+  "healer": {
+    "healer_slug": "amanda-penalver",
+    "create": {
+      "name": "Amanda Penalver",
+      "bio": "Amanda Penalver, known to many students as Mandy, is a meditation, yoga and conscious dance teacher based in Surrey, England, with more than twenty-five years of teaching behind her. She founded True Rest, her own approach to guided deep relaxation, which grew out of the tantric practice of yoga nidra and uses breath, mindfulness and body sensing to help people stop striving and simply rest in being. Her teaching puts weight on self-compassion, embodiment and a felt connection with the sacred.\n\nAmanda teaches True Rest classes online each week and in person at workshops, and offers private sessions over Zoom or face to face near her home. She runs day retreats in the Surrey countryside and residential retreats for women in Spain that combine gentle yoga, qi gong, dance, breathwork and sound. She also records guided meditations for Insight Timer and other apps, creates custom recordings for individuals and businesses, and leads wellbeing workshops for companies. On Insight Timer she teaches a ten-day course on the value of a regular daytime nap.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local_online",
+      "city": "Cobham",
+      "country": "United Kingdom",
+      "subjects": [
+        "meditation",
+        "yoga",
+        "mindfulness"
+      ],
+      "website_url": "https://www.mandypenalver.com/",
+      "booking_url": "https://www.mandypenalver.com/true-rest-meditation",
+      "youtube_url": null,
+      "instagram_url": "https://www.instagram.com/mandypenalver/",
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "connect@mandypenalver.com",
+      "image_urls": [
+        "https://coaches.cdn.aurahealth.io/1752178929984mandy001-copy.jpg"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "insight-timer",
+      "role": "instructor"
+    }
+  ],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "True Rest Meditation classes",
+      "url": "https://www.mandypenalver.com/true-rest-meditation",
+      "description": "Live guided relaxation classes in Amanda's own yoga nidra based method, held online and at workshops. Students build a comfortable nest of cushions and blankets and are led through breath and body awareness into stillness. A first class is offered free, then single classes are £10 GBP or five for £40 GBP.",
+      "price": "£10 GBP",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "yoga"
+      ],
+      "image": "https://le-cdn.website-editor.net/md/dmtmpl/dms3rep/multi/opt/transparent_background-1920w.png"
+    },
+    {
+      "title": "Private sessions",
+      "url": "https://www.mandypenalver.com/our-services",
+      "description": "One-to-one sessions of an hour, either on Zoom or in person within a few miles of her Surrey base. Sessions are shaped around the person and draw on her meditation and somatic training.",
+      "price": "£90 GBP (Zoom), £120 GBP (in person)",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://coaches.cdn.aurahealth.io/1752178929984mandy001-copy.jpg"
+    },
+    {
+      "title": "New Year Rest. Renew. Reconnect. Day Retreat",
+      "url": "https://www.mandypenalver.com/one-day-new-year-retreat",
+      "description": "A one-day retreat in a barn at Churt, near Farnham, to begin the year slowly. The day mixes True Rest meditation, gentle yoga, qi gong and conscious dance with a live cello sound bath from a guest musician.",
+      "price": "£95 GBP",
+      "product_type": "retreat",
+      "start_date": "2027-01-03",
+      "end_date": "2027-01-03",
+      "subjects": [
+        "meditation",
+        "yoga",
+        "sound-healing"
+      ],
+      "image": "https://coaches.cdn.aurahealth.io/1752178929984mandy001-copy.jpg"
+    },
+    {
+      "title": "Rest. Renew. Reconnect. A Retreat for Women (Spain)",
+      "url": "https://www.mandypenalver.com/spain-2027",
+      "description": "Five days and four nights at a retreat centre among orange groves near Oliva in Valencia. Days include twice-daily movement, True Rest meditation, breathwork and a sound bath, with plant-based meals and free time by the pool or beach. Prices are per person and depend on the room.",
+      "price": "from £1090 GBP",
+      "product_type": "retreat",
+      "start_date": "2027-06-20",
+      "end_date": "2027-06-24",
+      "subjects": [
+        "meditation",
+        "yoga",
+        "breathwork"
+      ],
+      "image": "https://coaches.cdn.aurahealth.io/1752178929984mandy001-copy.jpg"
+    },
+    {
+      "title": "The Incredible Power of Taking a Nap",
+      "url": "https://insighttimer.com/meditation-courses/course_the-incredible-power-of-taking-a-nap",
+      "description": "A ten-day Insight Timer course that makes the case for napping as a regular practice. Each day pairs a short talk on why and how to nap with a guided rest of its own.",
+      "price": "Included in Member Plus ($59.99 USD a year)",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://coaches.cdn.aurahealth.io/1752178929984mandy001-copy.jpg"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Amanda Penalver on Insight Timer",
+      "url": "https://insighttimer.com/amandapenalver",
+      "description": "Her free collection of guided True Rest and yoga nidra style meditations and recorded live sessions. Free to listen to.",
+      "featured": true,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation",
+        "yoga"
+      ],
+      "image": "https://coaches.cdn.aurahealth.io/1752178929984mandy001-copy.jpg"
+    },
+    {
+      "title": "Free Meditation Guide",
+      "url": "https://www.mandypenalver.com/free-meditation-guide",
+      "description": "A short downloadable guide from her website answering the questions beginners most often ask about starting to meditate.",
+      "featured": false,
+      "resource_type": "download",
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://coaches.cdn.aurahealth.io/1752178929984mandy001-copy.jpg"
+    }
+  ],
+  "sprint": {
+    "hub": "insight-timer",
+    "rank": 12,
+    "insight_timer_url": "https://insighttimer.com/amandapenalver",
+    "tier_evidence": "Insight Timer 33.8k (profile, 31 Oct 2026); Instagram 5,786 (og:description, 31 Oct 2026); no YouTube channel found; Facebook profile count not readable → ~40k total → local_hero",
+    "email": "yes",
+    "email_source": "https://www.mandypenalver.com/",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 13 source(s)",
+    "flags": [
+      "Photo is from her Aura app coach page (same person as the headshot on her own site); her site's images are on expiring signed URLs, so they could not be used.",
+      "Base: site title says Cobham, Surrey; pricing page prices in-person sessions from Ripley, Surrey; Insight Timer says London. Used Cobham.",
+      "Insight Timer bio calls her a trauma-aware somatic therapist; her site markets True Rest as easing stress and aiding sleep. Item descriptions avoid that framing; a human may want to check.",
+      "Her retreat page header shows June 20-24 2027 while the body of /retreat says September 20-24 2027; the dedicated /spain-2027 page and Insight Timer both say June 20-24, so June is used.",
+      "WebFetch would only quote the first sentence of her Insight Timer bio; the bio check ran against that plus her own pages.",
+      "Review: removed \"she describes her approach as trauma-informed\" from the bio (strict health-claim rule)."
+    ],
+    "left_out": [
+      "Corporate True Rest workshops (sold on reducing stress and improving mental wellbeing).",
+      "Bespoke meditation recordings for apps and businesses (contact for rates; a production service rather than teaching).",
+      "Shop audio practices (no individual product pages could be read).",
+      "Twitter and Facebook links not opened, so left null; no books found."
+    ]
+  },
+  "images_final": true
+}

@@ -1,0 +1,118 @@
+{
+  "healer": {
+    "healer_slug": "bodhi-samuel",
+    "create": {
+      "name": "Bodhi Samuel",
+      "bio": "Bodhi Samuel is a bodywork teacher, astrologer and meditation guide who runs a small teaching project called Under The Bodhi Tree. Community has been the thread through his life since summer camps in childhood, and he first met yoga through his father, who taught classes. A yoga teacher training in 2014 led him to his first ten-day silent Vipassana retreat, and from there he moved into Thai massage, Zenthai Shiatsu and other somatic work, then into relational and intimacy practices and astrology.\n\nHe now trains bodyworkers, teaches people to read their own birth charts, and leads residencies where students live, practise and learn together. He uses astrology as a map for looking at personality and life direction rather than as fortune-telling, and offers one-to-one chart readings online. His teaching style is playful and personal, with music, movement and sharing woven into lessons. On his podcast he talks with guests about meditation, yoga and other spiritual practices, and on Insight Timer he offers short meditations and a ten-day introductory course on being human. His Insight Timer profile lists his base as Molkom in Sweden.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "worldwide",
+      "city": null,
+      "country": null,
+      "subjects": [
+        "astrology",
+        "meditation",
+        "conscious-relationships"
+      ],
+      "website_url": "https://underthebodhitree.8b.io/",
+      "booking_url": "https://calendly.com/bodhitree90/1hr",
+      "youtube_url": null,
+      "instagram_url": "https://www.instagram.com/em.bodhiment/",
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "bodhitree90@gmail.com",
+      "image_urls": [
+        "https://r.8b.io/537573/images/mbr-h_l8nfymvd-1076x1614.jpg",
+        "https://users.insighttimer.com/W6q6F5c3g4W9S6k7w2u0g0P3P0e2B5N0n2K5E2U2Q6F4U2N0c9F9K4v6F0s8N6p1m2A9Y0g5t0q2W5P4u4f4X5p4W6F2S0U4w6M0/pictures/square_medium.jpeg"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "insight-timer",
+      "role": "instructor"
+    }
+  ],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Astrology Chart Reading with Bodhi",
+      "url": "https://calendly.com/bodhitree90/1hr",
+      "description": "A one-to-one session of about an hour and a half in which Bodhi goes through your birth chart with you. He uses the chart as a way to look at temperament, relationships and life direction.",
+      "price": "$75 USD",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "astrology"
+      ],
+      "image": "https://r.8b.io/537573/images/mbr-h_l8nfymvd-1076x1614.jpg"
+    },
+    {
+      "title": "A Short Orientation To Humanhood On Planet Earth",
+      "url": "https://insighttimer.com/meditation-courses/a-short-orientation-to-humanhood-on-planet-earth",
+      "description": "A ten-part audio course of short daily sessions on breath, beliefs, emotions, boundaries and meeting your shadow. It closes with a simple framework for a daily meditation practice.",
+      "price": "Included in Member Plus ($59.99 USD a year)",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "shadow-work",
+        "mindfulness"
+      ],
+      "image": "https://r.8b.io/537573/images/mbr-h_l8nfymvd-1076x1614.jpg"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Bodhi Samuel on Insight Timer",
+      "url": "https://insighttimer.com/samkahn",
+      "description": "Short guided meditations and reflections from Bodhi Samuel on presence, the body and relating to others. They are free to hear in the app or on the web.",
+      "featured": false,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://r.8b.io/537573/images/mbr-h_l8nfymvd-1076x1614.jpg"
+    },
+    {
+      "title": "Under the Bodhi Tree podcast",
+      "url": "https://open.spotify.com/show/0cN6pDKNFc36yvg1c0V7AT",
+      "description": "Bodhi's podcast of conversations about meditation, yoga and different spiritual paths, and the inner exploration behind them. Free to stream on Spotify.",
+      "featured": true,
+      "resource_type": "workshop",
+      "subjects": [
+        "spirituality",
+        "meditation"
+      ],
+      "image": "https://r.8b.io/537573/images/mbr-h_l8nfymvd-1076x1614.jpg"
+    }
+  ],
+  "sprint": {
+    "hub": "insight-timer",
+    "rank": 17,
+    "insight_timer_url": "https://insighttimer.com/samkahn",
+    "tier_evidence": "Insight Timer 15.5k (profile, 31 Oct 2026); Instagram 1,070 (og:description, 31 Oct 2026); no YouTube channel found; Facebook is a personal profile, count not read → ~17k total → local_hero",
+    "email": "yes",
+    "email_source": "https://underthebodhitree.8b.io/",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 4 source(s)",
+    "flags": [
+      "Thin listing: only two current offerings and one free resource (plus the Insight Timer link); the astrology online course and the Zenthai and Mars residency dates on his site are all past or unpublished.",
+      "Insight Timer gives his base as Molkom, Sweden, but no page shows where he sees people in person, so availability is set to worldwide.",
+      "His Insight Timer bio calls him a psychonaut and his podcast blurb mentions psychedelics; the podcast description here leaves that out. A human may want to check episodes fit Spiritpedia.",
+      "He also goes by Sam Kahn (Insight Timer handle samkahn, Facebook sam.kahn); Facebook left out as it is a personal profile.",
+      "Two photos: his website portrait and his Insight Timer avatar look like the same man, but the avatar is 480 px and taken at a festival (goggles, shirtless)."
+    ],
+    "left_out": [
+      "Astrology Foundations online course: Teachable link redirects to the school's homepage and the TrainerCentral page says 'not yet published'.",
+      "Exploring the World of Self Pleasure (free course): page says 'not yet published', and the subject is outside Spiritpedia's scope.",
+      "Mars Bodywork Residency (14 Jan to 4 Apr 2025) and Zenthai Shiatsu Level 1 trainings (July and August 2024): dated and past.",
+      "Bodywork sessions: offered only by message, no page or price of their own."
+    ]
+  },
+  "images_final": true
+}

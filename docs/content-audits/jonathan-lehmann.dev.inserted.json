@@ -1,0 +1,129 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 311,
+    "healer_slug": "jonathan-lehmann"
+  },
+  "rows": [
+    {
+      "table": "videos",
+      "id": 4000,
+      "slug": "les-antiseches-du-bonheur-jonathan-lehmann-tedxvalenciennes",
+      "title": "Les antisèches du bonheur | Jonathan Lehmann | TEDxValenciennes"
+    },
+    {
+      "table": "videos",
+      "id": 4001,
+      "slug": "la-meditation-magique-du-bonheur",
+      "title": "La méditation magique du bonheur"
+    },
+    {
+      "table": "videos",
+      "id": 4002,
+      "slug": "la-super-meditation-du-bonheur",
+      "title": "La super méditation du bonheur"
+    },
+    {
+      "table": "videos",
+      "id": 4003,
+      "slug": "meditation-sur-lamour",
+      "title": "Méditation sur l'amour"
+    },
+    {
+      "table": "videos",
+      "id": 4004,
+      "slug": "meditation-sur-la-vie",
+      "title": "Méditation sur la vie"
+    },
+    {
+      "table": "videos",
+      "id": 4005,
+      "slug": "meditation-pour-le-corps",
+      "title": "Méditation pour le corps"
+    },
+    {
+      "table": "videos",
+      "id": 4006,
+      "slug": "respiration-magique-meditation-guidee",
+      "title": "Respiration magique (méditation guidée)"
+    },
+    {
+      "table": "videos",
+      "id": 4007,
+      "slug": "transformer-la-negativite",
+      "title": "Transformer la Négativité"
+    },
+    {
+      "table": "videos",
+      "id": 4008,
+      "slug": "remember-traverser-la-tempete",
+      "title": "REMEMBER - Traverser la tempete"
+    },
+    {
+      "table": "videos",
+      "id": 4009,
+      "slug": "la-meditation-a-lecole-loiseau-le-lion-et-lelephant",
+      "title": "La Méditation à l'École - L'Oiseau, le Lion et l'Éléphant"
+    },
+    {
+      "table": "books",
+      "id": 1389,
+      "slug": "les-antiseches-du-bonheur",
+      "title": "Les antisèches du bonheur: La méthode simple et follement efficace pour vivre plus heureux"
+    },
+    {
+      "table": "books",
+      "id": 1390,
+      "slug": "journal-intime-dun-touriste-du-bonheur",
+      "title": "Journal intime d'un touriste du bonheur"
+    },
+    {
+      "table": "books",
+      "id": 1391,
+      "slug": "journal-intime-dun-voyageur-chamanique",
+      "title": "Journal intime d'un voyageur chamanique"
+    },
+    {
+      "table": "courses",
+      "id": "3ddeb275-1f37-456b-9550-6974728d73b5",
+      "slug": "radical-self-love",
+      "title": "Radical Self Love"
+    },
+    {
+      "table": "courses",
+      "id": "c5ad01f4-df92-4097-abd8-d1ddf38b6e0f",
+      "slug": "the-magic-of-life",
+      "title": "The Magic Of Life"
+    },
+    {
+      "table": "courses",
+      "id": "a68f8e17-7e26-426d-9cb4-17db067aea6e",
+      "slug": "masterclass-jonathan-lehmann-les-antiseches-du-bonheur",
+      "title": "Masterclass Jonathan Lehmann : les antisèches du bonheur"
+    },
+    {
+      "table": "free_resources",
+      "id": "012628db-f8fc-45b1-9ba3-893702376531",
+      "slug": "jonathan-lehmann-on-insight-timer",
+      "title": "Jonathan Lehmann on Insight Timer"
+    },
+    {
+      "table": "free_resources",
+      "id": "ffe54edf-a065-42f4-b31d-c566d8698a13",
+      "slug": "pop-culture-meditations-free-bundle",
+      "title": "Pop Culture Meditations (free bundle)"
+    },
+    {
+      "table": "free_resources",
+      "id": "0ab1b875-cbb0-4943-94c4-f57c45ca1b07",
+      "slug": "happiness-book-club",
+      "title": "Happiness Book Club"
+    },
+    {
+      "table": "hub_teachers",
+      "id": "bb2a2b51-c405-42c3-b233-c5e53657b653",
+      "title": "jonathan-lehmann teaches at Insight Timer"
+    }
+  ],
+  "at": "2026-10-31T16:43:02.288Z"
+}

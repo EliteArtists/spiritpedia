@@ -1,0 +1,63 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 303,
+    "healer_slug": "jennifer-piercy"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "81056d02-684a-471b-9650-67ddd9ec33dc",
+      "slug": "your-guide-to-deeper-sleep",
+      "title": "Your Guide to Deeper Sleep"
+    },
+    {
+      "table": "courses",
+      "id": "79e8a1ab-2212-4231-bd50-13f266cfb944",
+      "slug": "one-on-one-sessions-with-jennifer",
+      "title": "One-on-one sessions with Jennifer"
+    },
+    {
+      "table": "courses",
+      "id": "1891bb1f-332e-43d8-94ca-38be94831fd7",
+      "slug": "liminal-dreaming",
+      "title": "Liminal Dreaming"
+    },
+    {
+      "table": "courses",
+      "id": "f23ce5ae-fa3c-43a9-b45f-b367dcb816f6",
+      "slug": "restful-intuition",
+      "title": "Restful Intuition"
+    },
+    {
+      "table": "courses",
+      "id": "674c740d-3b9f-4b48-b0f2-f4dc705b1792",
+      "slug": "shapeshifting-sleep",
+      "title": "Shapeshifting Sleep"
+    },
+    {
+      "table": "courses",
+      "id": "3a1afe27-5209-4b6c-a447-d89c7dce5746",
+      "slug": "the-heart-of-sleep",
+      "title": "The Heart of Sleep"
+    },
+    {
+      "table": "free_resources",
+      "id": "40f5430b-1b28-470b-9ff2-8a0c011217a6",
+      "slug": "jennifer-piercy-on-insight-timer",
+      "title": "Jennifer Piercy on Insight Timer"
+    },
+    {
+      "table": "free_resources",
+      "id": "9c5ee719-2117-4a79-bcf7-99e74dfcba10",
+      "slug": "sacred-sleep-meditation-recording",
+      "title": "Sacred Sleep Meditation Recording"
+    },
+    {
+      "table": "hub_teachers",
+      "id": "6fabc9a9-e79a-4bb4-a973-d97c765bf59a",
+      "title": "jennifer-piercy teaches at Insight Timer"
+    }
+  ],
+  "at": "2026-10-31T16:41:41.020Z"
+}
