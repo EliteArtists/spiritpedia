@@ -1,0 +1,114 @@
+{
+  "healer": {
+    "healer_slug": "ken-cohen",
+    "create": {
+      "name": "Ken Cohen",
+      "bio": "Ken Cohen, also known by his Chinese name Gao Han, has studied and taught qigong and tai chi since the early 1970s. He trained in New York under William C.C. Chen, later learned Chen-style tai chi and Hunyuan qigong from Madame Gao Fu, and was the sole apprentice of the Taoist abbot Huang Gengshi. He reads Chinese, studied classical Chinese thought with university scholars, and was ordained as an interfaith minister. His book The Way of Qigong, first published in 1997, is still one of the standard English introductions to the subject.\n\nFrom a mountain studio near Nederland, Colorado, he runs the Qigong Research and Practice Center, which he set up in 1981. There he gives private lessons in qigong, Yang and Chen tai chi, the other internal martial arts, meditation and Chinese tea culture, in person or over Zoom, and awards certificates in individual styles. He also travels to teach week-long programmes at retreat centres such as Esalen and Omega, where he shares a qigong weekend with Robert Peng and Michael Gelb. His classes pair slow, precise movement with breath, imagery and a good deal of Taoist philosophy and cultural history.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local_online",
+      "city": "Nederland",
+      "country": "United States",
+      "subjects": ["qi-gong", "tai-chi", "ancient-wisdom"],
+      "website_url": "https://www.qigonghealing.com",
+      "booking_url": "https://www.qigonghealing.com/book-online",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": "https://www.facebook.com/pages/category/Alternative---Holistic-Health-Service/Qigong-Research-Practice-Center-The-Teachings-of-Kenneth-Cohen-%E9%AB%98%E6%BC%A2%E6%B0%A3%E5%8A%9F%E5%AD%B8%E9%99%A2-199087770119351/",
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "info@qigonghealing.com",
+      "image_urls": [
+        "https://www.eomega.org/sites/default/files/media/Ken%20Cohen%20bio-NEW_600x600.jpg",
+        "https://static.wixstatic.com/media/ffd6f4_0290632ba0324c35881641620c1a96ae~mv2_d_1386_1386_s_2.jpg"
+      ]
+    }
+  },
+  "teaches_at": [
+    { "hub": "omega-institute", "role": "instructor" },
+    { "hub": "the-shift-network", "role": "instructor" }
+  ],
+  "videos": [
+    { "title": "Incredible Benefits of Qi Gong Revealed: An Interview with Ken Cohen", "url": "https://www.youtube.com/watch?v=jZvLK_cqws8", "subjects": ["qi-gong"] },
+    { "title": "5 Animals Qigong Demo", "url": "https://www.youtube.com/watch?v=nFxGS5h4cBo", "subjects": ["qi-gong"] },
+    { "title": "Taoist and Qigong Master - Ken Cohen", "url": "https://www.youtube.com/watch?v=b_0lo-6fBRI", "subjects": ["qi-gong", "ancient-wisdom"] },
+    { "title": "DAOI Talks (69): Daoism, Martial Arts & Qigong w/ Ken Cohen", "url": "https://www.youtube.com/watch?v=epDGLNSH6pM", "subjects": ["qi-gong", "tai-chi", "ancient-wisdom"] },
+    { "title": "The Way of Qigong - By Ken Cohen", "url": "https://www.youtube.com/watch?v=qAHyqbdiwa4", "subjects": ["qi-gong"] },
+    { "title": "\"Nourishing Life 養生術: China's Traditional Model of Whole-Person Health\" - Kenneth Cohen", "url": "https://www.youtube.com/watch?v=rUb7czqLHfA", "subjects": ["qi-gong", "ancient-wisdom"] }
+  ],
+  "books": [
+    {
+      "title": "The Way of Qigong: The Art and Science of Chinese Energy Healing",
+      "slug": "the-way-of-qigong",
+      "author": "Kenneth S. Cohen",
+      "asin": "0345421094",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "A broad guide to qigong that covers its history in China, the Taoist ideas behind it, the main families of exercise and meditation, and what modern research has looked at. Much of the book is practical, with step-by-step instructions for standing, moving and breathing practices.",
+      "subjects": ["qi-gong", "ancient-wisdom"],
+      "cover": "https://m.media-amazon.com/images/I/71YGRH0mL9L._SL1500_.jpg"
+    }
+  ],
+  "courses": [
+    {
+      "title": "Super Qi Weekend",
+      "url": "https://www.eomega.org/workshops/super-qi-weekend",
+      "description": "A weekend at Omega's Rhinebeck campus taught jointly with qigong teacher Robert Peng and author Michael Gelb. The three move between simple qigong and tai chi movements, guided imagery, breathing practice and open conversation, and no previous experience is needed.",
+      "price": "Member $380 USD, standard $425 USD",
+      "product_type": "retreat",
+      "start_date": "2027-06-11",
+      "end_date": "2027-06-13",
+      "subjects": ["qi-gong", "tai-chi"]
+    },
+    {
+      "title": "Dynamic Buddhist Qigong: Crane & Deer",
+      "url": "https://www.qigonghealing.com/service-page/dynamic-buddhist-qigong-crane-deer",
+      "description": "Two live two-hour Zoom classes teaching the Crane and Deer sets from a Tibetan martial tradition, which can be done slowly or with speed. They are joined by Buddhist qigong meditations and stories of how Ken learned the system; recordings are included, and the class is hosted with Alternatives in London.",
+      "price": "£75 GBP (approx $85 USD)",
+      "product_type": "course",
+      "start_date": "2026-12-06",
+      "end_date": "2026-12-13",
+      "subjects": ["qi-gong", "meditation"]
+    },
+    {
+      "title": "Individual Training by Zoom",
+      "url": "https://www.qigonghealing.com/service-page/individual-training-by-zoom",
+      "description": "One-to-one lessons online, or in person at his Colorado studio, in qigong, Yang or Chen tai chi, Bagua, Xingyi, meditation or the Chinese art of tea. Two people may share a lesson, and private classes are also how students work towards his style certificates.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": ["qi-gong", "tai-chi", "meditation"]
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "hub": "omega-institute",
+    "rank": 26,
+    "omega_url": "https://www.eomega.org/workshops/teachers/ken-cohen",
+    "tier_evidence": "Facebook (Qigong Research & Practice Center: The Teachings of Kenneth Cohen) 7,867 followers (og:description, 31 Oct 2026); no YouTube, Instagram, X or TikTok account of his own found → ~7.9k total → local_hero",
+    "email": "yes",
+    "email_source": "https://www.qigonghealing.com/contact",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 8 source(s)",
+    "flags": [
+      "Also on The Shift Network faculty (https://theshiftnetwork.com/shift_teacher/36049, profile opened 31 Oct 2026), so the-shift-network is added to teaches_at; all three Shift courses were left out for health claims (see left_out).",
+      "Tier is local_hero on numbers (~7.9k), but he is the author of a standard qigong text (The Way of Qigong, Ballantine) with 50+ years of teaching: the owner may want luminary by editorial stature. No tier_override set.",
+      "Facebook page is his centre's page, named for his teachings; counted as his own account.",
+      "Videos are all on other channels (he has no channel of his own); several pirated uploads of his Sounds True videos were skipped.",
+      "His site describes External Qi Healing and 'Therapeutic (Medical) Qigong' consultations; these were not listed as offerings.",
+      "Second photo (sword pose, from his About page) is an older picture; same person as the Omega headshot."
+    ],
+    "left_out": [
+      "Shift Network courses Yi Quan Qigong, Yi Quan Qigong: The Next Level and Cultivate a Tai Chi Mind & Life: sales pages name conditions (dementia, Parkinson's, MS, cancer, depression, immunity).",
+      "Primordial Qigong at Esalen (9–13 Nov 2026): full, waitlist only; its page also leans on 'medical qigong'.",
+      "The Roots of Tai Chi (Nevada City, 29 Oct–1 Nov 2026): already started.",
+      "Healing and qigong consultations / External Qi Healing sessions: treatment-framed (medical).",
+      "Honoring the Medicine: The Essential Guide to Native American Healing (book): 'medicine/healing' title, borderline, left out.",
+      "Ken Cohen's Guide to Healthy Breathing and Taoist Wisdom: not confirmed on an amazon.com /dp/ page.",
+      "Sounds True audio/DVD courses: not books.",
+      "Omega '5 Animals Qigong Practice' video page duplicates the YouTube video already listed."
+    ]
+  }
+}

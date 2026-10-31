@@ -1,0 +1,237 @@
+{
+  "healer": {
+    "healer_slug": "diane-barnett",
+    "create": {
+      "name": "Diane Barnett",
+      "bio": "Diane Barnett is a meditation teacher and sound bath practitioner in New Canaan, Connecticut, and the founder of Grounded Meditation. For more than twenty years she worked as a real estate lawyer in New York City, and it was the strain of that career that first led her to sit, breathe and practise yoga. A Cornell graduate who studied law at CUNY, she began teaching yoga and meditation in studios in 2009 and set up Grounded Meditation in 2019, with the aim of making meditation feel simple and welcoming to people who assume it is not for them. She has trained in yoga nidra, sound work, Reiki, EFT tapping, Dancing Mindfulness and forest bathing.\n\nHer classes introduce several approaches side by side, including breath-focused mindfulness, mantra, visualisation and loving-kindness practice, so that newcomers can find the style that suits them, and many sessions end in yoga nidra or a sound bath with crystal and Tibetan bowls, gongs and chimes. She teaches with her colleague Catherine Barrett at venues across Fairfield and Westchester counties, in homes and workplaces, and on Zoom. More recently she has paired mindfulness with mahjong in group retreats, including one at Omega.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local_online",
+      "city": "New Canaan",
+      "country": "United States",
+      "subjects": [
+        "meditation",
+        "mindfulness",
+        "sound-healing"
+      ],
+      "website_url": "https://www.groundedmeditationstudio.com/",
+      "booking_url": "https://www.groundedmeditationstudio.com/book-a-session",
+      "youtube_url": "https://www.youtube.com/channel/UC_LsSM4Fn9rszlAZWVHys1w",
+      "instagram_url": "https://www.instagram.com/grounded_meditation/",
+      "facebook_url": "https://www.facebook.com/groundedmeditationstudio/",
+      "twitter_url": "https://twitter.com/GroundedMedita1",
+      "tiktok_url": null,
+      "contact_email": "groundedmeditationstudio@gmail.com",
+      "image_urls": [
+        "https://www.eomega.org/sites/default/files/media/Diane-Barnett-Bio_600x600.jpg",
+        "https://static.wixstatic.com/media/291742_ed603c390a9e4ac8a3fb7c830eae3054~mv2.jpg"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "omega-institute",
+      "role": "instructor"
+    }
+  ],
+  "videos": [
+    {
+      "title": "A Short but Effective Mindfulness Meditation Practice from Grounded Meditation",
+      "url": "https://www.youtube.com/watch?v=Ntte1FS8pus",
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "channel": "Grounded Meditation"
+    },
+    {
+      "title": "Visualization Meditation Session",
+      "url": "https://www.youtube.com/watch?v=_IkXJIi_YFo",
+      "subjects": [
+        "meditation"
+      ],
+      "channel": "Grounded Meditation"
+    },
+    {
+      "title": "Loving Kindness Meditation With Grounded Meditation",
+      "url": "https://www.youtube.com/watch?v=QIMeejjv-nA",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "channel": "Grounded Meditation"
+    },
+    {
+      "title": "30 minute Meditation and Sound Session",
+      "url": "https://www.youtube.com/watch?v=wWRFEiWr7RI",
+      "subjects": [
+        "meditation",
+        "sound-healing"
+      ],
+      "channel": "Grounded Meditation"
+    },
+    {
+      "title": "Body Scan Video",
+      "url": "https://www.youtube.com/watch?v=9IXifULkkVI",
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "channel": "Grounded Meditation"
+    },
+    {
+      "title": "60 Minute Sound Bath",
+      "url": "https://www.youtube.com/watch?v=3LWXOVuk_Hw",
+      "subjects": [
+        "sound-healing",
+        "meditation"
+      ],
+      "channel": "Grounded Meditation"
+    }
+  ],
+  "books": [],
+  "courses": [
+    {
+      "title": "A Mindful Mahjong Retreat",
+      "url": "https://www.eomega.org/workshops/a-mindful-mahjong-retreat",
+      "description": "A five-night retreat at Omega in Rhinebeck, New York, where mahjong teachers Elva Grosman and Jami Josephson-Chace lead the game and Diane and Catherine Barrett lead the mindfulness side. Alongside beginner and advanced tracks at the table, guests learn short practices for staying present and steady during play.",
+      "price": "Member $520 USD, standard $580 USD",
+      "product_type": "retreat",
+      "start_date": "2027-08-01",
+      "end_date": "2027-08-06",
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "image": "https://www.eomega.org/sites/default/files/styles/scale_width_1440/public/media/mindful-mahjong-retreat_hero.jpg?itok=9NwJgZ3a"
+    },
+    {
+      "title": "Mahjong & Mindfulness Retreat, Costa Rica",
+      "url": "https://www.groundedmeditationstudio.com/mahjong-and-mindfulness-retreat",
+      "description": "An all-inclusive women's retreat at Verdesana in Costa Rica's cloud forest that pairs mahjong instruction and friendly tournaments with meditation, riverside yoga and time in nature. Lodging is in cabins, priced per person by room type.",
+      "price": "From $4,500 USD per person (shared cabin) to $5,300 USD (private VIP cabin)",
+      "product_type": "retreat",
+      "start_date": "2027-03-18",
+      "end_date": "2027-03-23",
+      "subjects": [
+        "mindfulness",
+        "meditation",
+        "yoga"
+      ],
+      "image": "https://static.wixstatic.com/media/291742_ae2fcb580dd64e53be0518c50936a2bd~mv2.jpg/v1/fill/w_505,h_554,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/Verdesana%20Buddah%20pic_JPG.jpg"
+    },
+    {
+      "title": "Private In-Person Meditation Sampler",
+      "url": "https://www.groundedmeditationstudio.com/service-page/private-in-person-meditation-sampler",
+      "description": "A ninety-minute group session at your home or venue that tries out four styles in turn: breath-based mindfulness, mantra, loving-kindness and, to finish, yoga nidra accompanied by singing bowls. A good starting point for anyone unsure which style suits them.",
+      "price": "Starting at $350 USD (1–10 people), $450 USD (11–20 people)",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://static.wixstatic.com/media/291742_2719f1db7fc84739aab7182fe7ebc230~mv2.png/v1/fit/w_1000,h_668,al_c/291742_2719f1db7fc84739aab7182fe7ebc230~mv2.png"
+    },
+    {
+      "title": "Private Zoom Meditation Session: 60 Mins",
+      "url": "https://www.groundedmeditationstudio.com/service-page/private-zoom-meditation-session-60-mins",
+      "description": "An hour of guided meditation online for one person or a small group, shaped around the participants' experience and interests. Multi-session packages are discounted.",
+      "price": "From $250 USD",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://static.wixstatic.com/media/291742_266966036fa247b9b0ec5709988ab9c5~mv2.jpeg/v1/fit/w_1024,h_716,al_c,q_85/291742_266966036fa247b9b0ec5709988ab9c5~mv2.jpeg"
+    },
+    {
+      "title": "Private Backyard (or Indoor) Soundbath",
+      "url": "https://www.groundedmeditationstudio.com/service-page/private-backyard-or-indoor-soundbath",
+      "description": "A private sound bath for a group of friends, family or colleagues, held outdoors, indoors or over Zoom. Participants lie back and listen to crystal and Himalayan bowls, gongs, chimes and drums.",
+      "price": "From $500 USD (1–10 people), $650 USD (11–20 people)",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "sound-healing",
+        "meditation"
+      ],
+      "image": "https://static.wixstatic.com/media/291742_b51e9154214b4a40a8ecb2865e76a4a7~mv2.jpg/v1/fit/w_320,h_240,al_c,q_80/291742_b51e9154214b4a40a8ecb2865e76a4a7~mv2.jpg"
+    },
+    {
+      "title": "Private Zoom Yoga Nidra",
+      "url": "https://www.groundedmeditationstudio.com/service-page/private-zoom-yoga-nidra",
+      "description": "A private online yoga nidra session, a long guided relaxation lying down, accompanied by a sound bath.",
+      "price": "$250 USD",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga",
+        "meditation",
+        "sound-healing"
+      ],
+      "image": "https://static.wixstatic.com/media/75ed1499d5e447e292042ba802c8f2c0.png/v1/fit/w_3248,h_3247,al_c/75ed1499d5e447e292042ba802c8f2c0.png"
+    },
+    {
+      "title": "In-person Reiki Session",
+      "url": "https://www.groundedmeditationstudio.com/service-page/in-person-reiki-session",
+      "description": "A 55-minute Reiki session using light touch, which can also be combined with a sound bath.",
+      "price": "$250 USD",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "reiki",
+        "energy-medicine"
+      ],
+      "image": "https://static.wixstatic.com/media/11062b_157009a2bf07431fa0203bc701dcd19f~mv2.jpeg/v1/fit/w_6720,h_4480,al_c,q_90/11062b_157009a2bf07431fa0203bc701dcd19f~mv2.jpeg"
+    },
+    {
+      "title": "Private In-Person Dancing Mindfulness",
+      "url": "https://www.groundedmeditationstudio.com/service-page/private-in-person-dancing-mindfulness",
+      "description": "A playful session that moves between quiet meditation, stretching and free dance to music, for small groups or families.",
+      "price": "Starting at $200 USD (1–3 people), $20 USD per additional person",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "mindfulness"
+      ],
+      "image": "https://static.wixstatic.com/media/2ed4d317d18946dc8ac54fceffd3b7d1.jpg/v1/fit/w_3000,h_2000,al_c,q_90/2ed4d317d18946dc8ac54fceffd3b7d1.jpg"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "hub": "omega-institute",
+    "rank": 20,
+    "omega_url": "https://www.eomega.org/people/diane-barnett",
+    "tier_evidence": "Studio accounts (the listing is effectively Diane's studio): Instagram @grounded_meditation 2,066 (og:description, 31 Oct 2026); YouTube @groundedmeditation9958 104 subscribers (channel header row next to its own @handle, 31 Oct 2026); Facebook groundedmeditationstudio not readable (no og:description returned); X not readable → ~2,170 total → local_hero",
+    "email": "yes",
+    "email_source": "https://www.groundedmeditationstudio.com/contact-us",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 17 source(s)",
+    "flags": [
+      "Listing choice: the queue paired Diane Barnett and Catherine Barrett, but the studio's About page names Diane as founder and owner and lists Catherine under 'Team', so they do not run it as equals. Researched Diane only (she founded the studio and leads its meditation teaching); Catherine is mentioned in the bio and the Omega retreat. Catherine has her own Omega page https://www.eomega.org/people/catherine-barrett.",
+      "Email is the studio's shared gmail inbox (published on the contact page and footer).",
+      "The studio site leans heavily on health benefits (anxiety, sleep, heart health, blood pressure, pain); all condition-framed services (Curb Your Anxiety, Private Sound Healing Session, EFT tapping) are left out and descriptions avoid claims. A human may still judge the studio more wellness than spiritual teaching.",
+      "Both retreats are mahjong-centred with mindfulness alongside (the Omega one led mainly by two mahjong teachers); kept as Diane's current group offerings, but borderline as spiritual teaching.",
+      "Videos on the studio channel do not name which teacher leads them (Diane or Catherine).",
+      "Kept '60 Minute Sound Bath' (sound meditation, mostly instruments, not music); a human may prefer to drop it under the no-music-only rule.",
+      "Second photo is a posed studio shot of Diane (same woman as the Omega headshot, short brown hair); a similar studio photo of a blonde woman (likely Catherine) was not used."
+    ],
+    "left_out": [
+      "Private In-Person / Zoom Curb Your Anxiety: condition-named.",
+      "Private Sound Healing Session and couples sound healing: the sound-healing page promises help with anxiety, depression, pain and blood pressure.",
+      "EFT Tapping sessions: described as relief for anxiety.",
+      "Distance Reiki Healing and Smudging: kept the in-person Reiki session only to avoid near-duplicates; smudging is a house-clearing service.",
+      "Relaxing Mini Sound Bath, Sound Meditation Video and What's a Grounded Meditation Sound Bath?: short promos or sound-only clips; bowl-clearing and Smudging clips under 2 minutes.",
+      "Corporate meditation and events: workplace services.",
+      "No books, and no free downloads on the site."
+    ]
+  },
+  "images_final": true
+}

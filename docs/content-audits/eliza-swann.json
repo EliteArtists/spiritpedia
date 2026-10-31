@@ -1,0 +1,127 @@
+{
+  "healer": {
+    "healer_slug": "eliza-swann",
+    "create": {
+      "name": "Eliza Swann",
+      "bio": "Eliza Swann, who also goes by Emerald, is an artist, writer and teacher whose subject is alchemy and the Western esoteric traditions. They studied painting at the San Francisco Art Institute and took a master's at Central Saint Martins in London, and their visual work has been shown in galleries and universities. Swann teaches alchemy at Pratt Institute in New York, gave a 2023 residency of talks on alchemy at the Philosophical Research Society in Los Angeles, and has been artist in residence at gardens, convents and studios in the US and Peru.\n\nIn 2014 they set up Golden Dome, a nonprofit school where art and mystical practice meet, and since 2024 have taught through its Emerald School of Alchemical Arts. Their approach treats alchemy less as a historical curiosity and more as a working method for creative and inner change, mixing close reading of old texts and images with herbalism, divination, meditation, writing and art-making, from a queer, ecological and feminist angle. Their longest course is a year of monthly online sessions working through George Ripley's twelve stages of the Philosopher's Stone. Their books include Auras: The Anatomy of the Aura and The Alchemical Imagination, and they are now building a planetary herb garden at the Philosophical Research Society.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "worldwide",
+      "city": null,
+      "country": null,
+      "subjects": [
+        "hermeticism",
+        "mysticism",
+        "ancient-wisdom"
+      ],
+      "website_url": "https://www.elizaswann.com/",
+      "booking_url": "https://www.golden-dome.org/emerald-school-of-alchemical-arts",
+      "youtube_url": null,
+      "instagram_url": "https://www.instagram.com/thecircularserpent/",
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "elizaswann@gmail.com",
+      "image_urls": [
+        "https://www.eomega.org/sites/default/files/media/Eliza-Swann-bio_600x600.jpg",
+        "https://images.squarespace-cdn.com/content/v1/6543cdc6db21b54221b3f141/b2af9bc7-3a2a-4ab9-bff5-952818e82692/Eliza_Swann_02_0354.jpg"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "omega-institute",
+      "role": "instructor"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Eliza Swann: The Artist as Alchemist | Alchemy, Matter & Consciousness",
+      "url": "https://www.youtube.com/watch?v=IylrffwlpB8",
+      "subjects": [
+        "hermeticism",
+        "mysticism"
+      ],
+      "channel": "ROZE UMBRA : Blue Hour Podcast"
+    },
+    {
+      "title": "The Alchemical Imagination: Creativity as a Catalyst",
+      "url": "https://www.youtube.com/watch?v=8W1jVrwZij4",
+      "subjects": [
+        "hermeticism",
+        "ancient-wisdom"
+      ],
+      "channel": "Aeon Byte Gnostic Radio"
+    },
+    {
+      "title": "Episode 354:  Eliza Swann:  \"The Alchemical Imagination\"",
+      "url": "https://www.youtube.com/watch?v=BcwiUIiC61c",
+      "subjects": [
+        "hermeticism",
+        "mysticism"
+      ],
+      "channel": "End of the Road Podcast"
+    }
+  ],
+  "books": [
+    {
+      "title": "The Alchemical Imagination: Creativity as Catalyst for Radical Transformation",
+      "slug": "the-alchemical-imagination",
+      "author": "Eliza Swann",
+      "asin": "1578639018",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "A 2026 book that treats alchemy as a living creative practice rather than a dead science. It mixes the histories of artists and alchemists, including women and queer figures often left out, with exercises in meditation, visualisation, writing and poetry.",
+      "subjects": [
+        "hermeticism",
+        "ancient-wisdom"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1578639018.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "Auras: The Anatomy of the Aura",
+      "slug": "auras-the-anatomy-of-the-aura",
+      "author": "Eliza Swann",
+      "asin": "1250257735",
+      "store": "amazon.com",
+      "goodreads_url": "https://www.goodreads.com/book/show/45046679-auras",
+      "worldofbooks_url": null,
+      "description": "An illustrated beginner's guide to aura reading, part of the Start Here series. It covers the history of the idea, the layers of the aura and simple techniques for learning to see it.",
+      "subjects": [
+        "energy-medicine",
+        "mysticism"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1250257735.01._SCLZZZZZZZ_.jpg"
+    }
+  ],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "hub": "omega-institute",
+    "rank": 5,
+    "omega_url": "https://www.eomega.org/people/eliza-swann",
+    "tier_evidence": "Instagram @thecircularserpent 4,113 (og:description, 31 Oct 2026); no own YouTube, Facebook, X or TikTok found; @goldendomeschool is the school's account, not counted → ~4k total → local_hero",
+    "email": "yes",
+    "email_source": "https://www.elizaswann.com/contact",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 9 source(s)",
+    "flags": [
+      "Thin listing: 5 items (2 books, 3 podcast videos), no current offering. Her only Omega workshop ('Alchemy & the Power of Plants', 18–22 Oct 2026) has already happened and her year-long online course started in spring 2026, so both are left out.",
+      "Mainly an artist and writer who teaches alchemy and esotericism (university and her own nonprofit school); spiritual teaching is genuine but framed as art practice: a human may want to confirm she fits.",
+      "Uses they/them pronouns; the bio follows that.",
+      "Email elizaswann@gmail.com appears as the mailto email icon on every page of her site (contact page says it is for art, curatorial and writing enquiries); class queries may go to info@golden-dome.org instead.",
+      "No stated home base (Pratt in New York, Philosophical Research Society in Los Angeles), so availability is worldwide.",
+      "The second photo URL is served as WebP by Squarespace despite the .jpg name."
+    ],
+    "left_out": [
+      "Omega workshop 'Alchemy & the Power of Plants' (18–22 Oct 2026): already started by the sprint date.",
+      "'The Alchemical Imagination' year-long online course (April 2026 – May 2027): already started.",
+      "Book tour talks and one-off Golden Dome events: dated and past.",
+      "Green Mary (Cosmic Dog House Press, 2024): Amazon listing could not be confirmed (search page returned 503); sold on golden-dome.org.",
+      "Philosophical Research Society videos where she only hosts (e.g. Mandy Aftel book talk).",
+      "Omega article 'Alchemy: Matter, Mystery & Creativity' by her: an article, not a free practice or download."
+    ]
+  },
+  "images_final": true
+}

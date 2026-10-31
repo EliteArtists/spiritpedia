@@ -1,0 +1,104 @@
+{
+  "healer": {
+    "healer_slug": "helena-soholm",
+    "create": {
+      "name": "Dr. Helena Soholm",
+      "bio": "Helena Soholm is a Korean shaman, or mudang, and a transpersonal psychologist based in Bellingham, Washington. Born in South Korea, she moved to the United States as a child and spent her twenties and thirties studying religion and psychology: a first degree at Smith College, theology at Harvard Divinity School, where she first met shamanism as a subject of study, existential-phenomenological psychology at Seattle University and a doctorate at Saybrook University under Stanley Krippner. In 2018 she finished that doctorate and, in the same year, was initiated into Muism, the indigenous spiritual tradition of Korea.\n\nHer shamanic work centres on the ancestors. She leads ceremonies and rituals in the Korean tradition, often with drumming, music and dance, and offers long one-to-one sessions in person or by Zoom on ancestral connection, past lives and relationships. She teaches workshops on soul and ancestral initiation at Omega and in London, has taken groups to Korea and Denmark for her Illuminate retreats, and writes about decolonising spiritual practice so that people of every heritage can recover the ways of their forebears. Alongside this she keeps a psychotherapy practice for people on a spiritual path.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local_online",
+      "city": "Bellingham",
+      "country": "United States",
+      "subjects": ["shamanism", "ancient-wisdom", "soul-purpose"],
+      "website_url": "https://www.helenasoholm.com",
+      "booking_url": "https://www.helenasoholm.com/shamanism",
+      "youtube_url": "https://www.youtube.com/channel/UCzSoYOpB3bYnjRTGEzqm4gw",
+      "instagram_url": "https://www.instagram.com/helenasoholm",
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "shamanhelena@gmail.com",
+      "image_urls": [
+        "https://www.eomega.org/sites/default/files/media/Helena-Soholm-bio_600x600.jpg",
+        "https://yt3.googleusercontent.com/E9RKFmREvNhn5Rc4mQgobTr0ykMC-W3jurTJRuTiATKPzFtQSoKkbVDJjhX8OKdd7VJvoYh-CPw=s900",
+        "https://static1.squarespace.com/static/63194af27cebf70a5e5c6c5c/t/633f82efc8fd4075ee85ca86/1665106671485/helena-soholm-psychologist-shaman-bellingham-washington.jpg?format=1500w"
+      ]
+    }
+  },
+  "teaches_at": [{ "hub": "omega-institute", "role": "instructor" }],
+  "videos": [
+    { "title": "Lecture and Korean Shamanic Ritual (Gut)", "url": "https://www.youtube.com/watch?v=h67E18lTf-Y", "subjects": ["shamanism", "ancient-wisdom"] },
+    { "title": "Transpersonal Psychology and Shamanism", "url": "https://www.youtube.com/watch?v=cMPJsyc2ixs", "subjects": ["shamanism", "consciousness"] }
+  ],
+  "books": [],
+  "courses": [
+    {
+      "title": "Soul Initiation",
+      "url": "https://www.eomega.org/workshops/soul-initiation",
+      "description": "A residential workshop at Omega's Rhinebeck campus built around a full Korean shamanic ceremony for the ancestors, with drumming and dance. Participants also go on a guided shamanic journey to explore their soul's story and take home simple rituals for honouring their lineage.",
+      "price": "Member $425 USD, standard $470 USD",
+      "product_type": "retreat",
+      "start_date": "2027-05-31",
+      "end_date": "2027-06-04",
+      "subjects": ["shamanism", "soul-purpose", "ancient-wisdom"]
+    },
+    {
+      "title": "Korean Shamanism & Ancestral Ritual (London, UK)",
+      "url": "https://www.helenasoholm.com/experiences/korean-shamanism-workshop-2026-december",
+      "description": "A one-day in-person workshop at the College of Psychic Studies in South Kensington introducing Muism, the shamanic religion of Korea. The day is shaped around an ancestral ceremony; bring a small family keepsake, a journal and a drum or rattle if you have one.",
+      "price": "£130 GBP",
+      "product_type": "course",
+      "start_date": "2026-12-12",
+      "end_date": "2026-12-12",
+      "subjects": ["shamanism", "ancient-wisdom"]
+    },
+    {
+      "title": "Illuminate Retreat 2027 (South Korea)",
+      "url": "https://www.helenasoholm.com/experiences/illuminate-retreat-2027-korea",
+      "description": "A five-day retreat in a traditional hanok village in North Jeolla Province, centred on an all-night shamanic ceremony under the full moon with two masters of Korean traditional music. Regional food and outings into the countryside are part of the stay; registration opens in early 2027.",
+      "price": "Contact for pricing",
+      "product_type": "retreat",
+      "start_date": "2027-10-14",
+      "end_date": "2027-10-18",
+      "subjects": ["shamanism", "ancient-wisdom"]
+    },
+    {
+      "title": "Ancestral Healing and Connection",
+      "url": "https://www.helenasoholm.com/shamanism",
+      "description": "A three-hour one-to-one shamanic session, in person in Bellingham or by Zoom, focused on your family line and the gifts carried through it. It includes mentoring in recovering ancestral practices for people of any heritage; a short Zoom call comes first.",
+      "price": "$600 USD",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": ["shamanism", "ancient-wisdom"]
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "hub": "omega-institute",
+    "rank": 37,
+    "omega_url": "https://www.eomega.org/people/helena-soholm",
+    "tier_evidence": "Instagram 2,524 (og:description, 31 Oct 2026); YouTube 117 (channel header row next to @helenasoholm, 31 Oct 2026); no Facebook/X/TikTok linked from her site → ~2.6k total → local_hero",
+    "email": "yes",
+    "email_source": "https://www.helenasoholm.com/experiences",
+    "contact_form_url": "https://www.helenasoholm.com/contact-shaman",
+    "bio_check": "",
+    "flags": [
+      "About half her practice is licensed psychotherapy (Washington and California, insurance accepted); the listing is built only on her Korean shamanic work, with therapy mentioned in one line. A human may want to confirm she fits as a spiritual teacher rather than mainly a therapist.",
+      "Email shamanhelena@gmail.com appears in visible text on her Experiences page, inside an older (2024) pilgrimage announcement; her site also has a shamanism contact form.",
+      "The 'Ancestral Healing and Connection' session is kept: its own description names no condition, though her home page frames shamanic work as clearing 'ancestral, cultural, and past life trauma'. Borderline; a human may prefer to drop it.",
+      "Name given as 'Dr. Helena Soholm' (PhD, she is introduced as Dr. on Omega's page); drop the honorific if Spiritpedia prefers.",
+      "London workshop is on 12 Dec 2026, so it will expire soon after insert."
+    ],
+    "left_out": [
+      "Past Life Healing and Integration session: description promises healing of trauma and wounds.",
+      "Sacred Relationship Healing session and Weekend Intensive: left out to keep one session item; the intensive centres on ancestral or past-life healing.",
+      "Psychotherapy and therapy intensive: clinical therapy, not spiritual teaching (lists depression, anxiety, trauma).",
+      "Ancestral and womb healing workshops (2024, 2025): past, and 'womb healing' is borderline.",
+      "Video 'Decolonization Chat with an Inuit Shaman \"Angakoq\"': a conversation where the guest is the main speaker.",
+      "Video 'Illuminate Retreat Denmark 2025': promo for a past retreat.",
+      "Essays on her Writing page: not one of the free-resource types.",
+      "No books found."
+    ]
+  }
+}

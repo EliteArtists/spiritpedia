@@ -1,0 +1,210 @@
+{
+  "healer": {
+    "healer_slug": "farima-berenji",
+    "create": {
+      "name": "Dr. Farima Berenji",
+      "bio": "Dr. Farima Berenji is a dancer, scholar and Sufi teacher who has spent her working life studying and passing on the sacred movement traditions of Iran and the wider Silk Road. She trained in anthropology, archaeology and Iranian dance ethnology in California before completing doctoral work on Iranian mysticism and ritual, and she is an initiated master within the Yarsan, an Iranian mystical order. She founded and directs the Simorgh Dance Collective and also performs widely, including for heads of state and international bodies.\n\nIn her teaching, dance is a form of prayer. Her classes and retreats move between breathing practice, Sufi philosophy and poetry, zikr chanting, sama and whirling, drawing on Yarsani, Khorasani, Mevlevi and Central Asian lineages as well as older Zoroastrian and Mithraic sources. Courses such as her series on Attar's Seven Valleys, or her beginners' and advanced whirling classes, run mostly on Zoom with in-person places by arrangement, and recordings and extra material are shared with members on Patreon. She also leads residential retreats in the United States and abroad, gives private sessions, and lectures on Persian sacred arts. Her book Companions of the Sun, from Hohm Press, traces the history and meaning of Iranian sacred dance, music and ritual.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "worldwide",
+      "city": null,
+      "country": null,
+      "subjects": [
+        "mysticism",
+        "ancient-wisdom",
+        "spirituality"
+      ],
+      "website_url": "https://farimadance.com/",
+      "booking_url": "https://farimadance.com/category/classes/",
+      "youtube_url": "https://www.youtube.com/@FarimaDance",
+      "instagram_url": "https://www.instagram.com/dr.farimaberenji/",
+      "facebook_url": "https://www.facebook.com/FarimaDance",
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "info@farimadance.com",
+      "image_urls": [
+        "https://www.eomega.org/sites/default/files/media/Farima%20Berenji-bio_600x600..jpg",
+        "https://farimadance.com/wp-content/uploads/2014/06/8-1.jpg"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "omega-institute",
+      "role": "instructor"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Connecting to Traditional Sacred Dance",
+      "url": "https://www.youtube.com/watch?v=vKZjsVdsfyI",
+      "subjects": [
+        "mysticism",
+        "ancient-wisdom"
+      ],
+      "channel": "TEDx Talks"
+    },
+    {
+      "title": "\"Dance Through Time: Persian Dance Through the Ages\" with Farima Berenji",
+      "url": "https://www.youtube.com/watch?v=KOuhTw0H4Qk",
+      "subjects": [
+        "ancient-wisdom"
+      ],
+      "channel": "KU Persian Culture Festival"
+    },
+    {
+      "title": "Ancient Persian Sacred Rituals with Farima Berenji",
+      "url": "https://www.youtube.com/watch?v=TbSBDL9AwRU",
+      "subjects": [
+        "ancient-wisdom",
+        "mysticism",
+        "meditation"
+      ],
+      "channel": "Center for Creative Living"
+    },
+    {
+      "title": "Ancient Wisdoms with Farima Berenji",
+      "url": "https://www.youtube.com/watch?v=jGKDqag6kn4",
+      "subjects": [
+        "ancient-wisdom",
+        "mysticism"
+      ],
+      "channel": "UCM Sacred Stage"
+    },
+    {
+      "title": "Farima Berenji in conversation with Nimra Amjad",
+      "url": "https://www.youtube.com/watch?v=hxWnhKChsIU",
+      "subjects": [
+        "mysticism",
+        "spirituality"
+      ],
+      "channel": "Dervish TV"
+    },
+    {
+      "title": "Farima Berenji | Episode 6 | The World Tour of Meditation | Sufi Meditation",
+      "url": "https://www.youtube.com/watch?v=AZWeldjRqzQ",
+      "subjects": [
+        "meditation",
+        "mysticism"
+      ],
+      "channel": "The Mindful Meal with Daksha"
+    }
+  ],
+  "books": [
+    {
+      "title": "Companions of the Sun: History and Mystery of Iranian Dance, Music & Ritual",
+      "slug": "companions-of-the-sun",
+      "author": "Farima Berenji",
+      "asin": "1963433084",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "A long study of Iran's sacred dance, music and ritual from ancient times to Sufi practice. It sets out the history behind these traditions and presents whirling and devotional movement as forms of meditation.",
+      "subjects": [
+        "mysticism",
+        "ancient-wisdom"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1963433084.01._SCLZZZZZZZ_.jpg"
+    }
+  ],
+  "courses": [
+    {
+      "title": "Dance of the Soul: A Journey Through Iranian Sufism, Whirling & Sacred Music",
+      "url": "https://www.eomega.org/workshops/dance-soul-iranian-sufism",
+      "description": "A five-day residential immersion at Omega's Rhinebeck campus in Persian Sufi practice. Days include whirling, breathwork, zikr chanting, poetry and talks on sacred music, closing each evening with a sama circle. No dance experience is needed.",
+      "price": "Member $470 USD, standard $525 USD (tuition; accommodation extra)",
+      "product_type": "retreat",
+      "start_date": "2027-08-22",
+      "end_date": "2027-08-27",
+      "subjects": [
+        "mysticism",
+        "spirituality"
+      ],
+      "image": "https://www.eomega.org/sites/default/files/styles/scale_width_1440/public/media/dance-soul_hero.jpg?itok=H8uJTaH1"
+    },
+    {
+      "title": "Dance of the Soul: Introduction to Sufi Whirling",
+      "url": "https://farimadance.com/dance-of-the-soul/",
+      "description": "A recurring four-week beginners' series in Sufi whirling, held on Zoom with in-person places on request. Each class covers breath, posture, balance and steady turning, drawing on Iranian, Mevlevi and Central Asian traditions.",
+      "price": "$80 USD for four classes in advance, or $25 USD drop-in",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "mysticism",
+        "meditation"
+      ],
+      "image": "https://farimadance.com/wp-content/uploads/2026/04/Whirling1-09-26.jpg"
+    },
+    {
+      "title": "Sacred Circle and Sufi Lecture",
+      "url": "https://farimadance.com/sacred-circle/",
+      "description": "A weekly online circle combining breathing, meditation, Sufi philosophy and discussion with sama and whirling. Recent series have followed the Seven Valleys of the Persian poet Attar, one valley per week.",
+      "price": "$18 USD per session",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "mysticism",
+        "meditation"
+      ],
+      "image": "https://farimadance.com/wp-content/uploads/2026/06/SacredCircleValleys-3.jpg"
+    },
+    {
+      "title": "Simorgh Dance Collective on Patreon",
+      "url": "https://www.patreon.com/Simorgh",
+      "description": "Her membership on Patreon, where she shares recordings of weekly classes and past gatherings, music and short tutorials. Tiers range from a free level upwards.",
+      "price": "From $10 USD a month (higher tiers to $80 USD a month)",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "mysticism",
+        "spirituality"
+      ],
+      "image": "https://www.patreon.com/ig/card-teaser-image/creator/5380095.png?v=8n5t3c"
+    },
+    {
+      "title": "Private sessions with Dr. Farima Berenji",
+      "url": "https://farimadance.com/category/classes/",
+      "description": "One-to-one sessions shaped around your intention, covering sacred dance, Sufi practice, ritual guidance or personal choreography. Booked by payment and then an email describing your goals.",
+      "price": "$100 USD for 1 hour, $125 USD for 1 hour 15 minutes",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "mysticism",
+        "spirituality"
+      ],
+      "image": "https://farimadance.com/wp-content/uploads/2026/08/mehmoonifinal2-570x350.jpg"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "hub": "omega-institute",
+    "rank": 4,
+    "omega_url": "https://www.eomega.org/people/farima-berenji",
+    "tier_evidence": "YouTube @FarimaDance 1.84K (channel header row, 31 Oct 2026); Facebook /FarimaDance 3,634 (og:description, 31 Oct 2026); Instagram @dr.farimaberenji unreadable (no og:description served without login); Patreon 67 members (page data, not counted) → ~5.5k readable total → local_hero",
+    "email": "yes",
+    "email_source": "https://farimadance.com/contact/",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 11 source(s)",
+    "flags": [
+      "She is as much a dance performer and dance scholar as a spiritual teacher; most of her own YouTube channel is short performance clips, so the videos chosen are talks and lectures on other channels. Spiritual content (Sufi whirling, zikr, Attar's Seven Valleys) is real, but a human may want to confirm she fits.",
+      "Instagram follower count could not be read (main account); readable total ~5.5k, far below the threshold.",
+      "Some of her pages mention 'healing' (Indo-Iranian shamanic healing, dance and music therapy, 'personalized healing' in private sessions; Omega page mentions 'ancient Iranian healing traditions and medicine dances'). No condition is named; descriptions here avoid the healing framing.",
+      "The two Zoom series (whirling, Sacred Circle) are recurring; their latest runs ended in Aug–Oct 2026 and the pages still show those dates, so they go in undated: check they will run again.",
+      "Probably based in the San Francisco Bay Area (events in Menlo Park, San Jose, Santa Cruz, Davis), but no base is stated, so availability is worldwide.",
+      "Name kept as 'Dr. Farima Berenji', as she presents herself (PhD); the second photo is a styled dance photo from her biography page, face clear but small."
+    ],
+    "left_out": [
+      "Performance-only clips on her channel (dance and music, mostly under two minutes).",
+      "TEDx 'Fusion Musical Performance featuring Whirling Dance' and 'Global SEMA For World Peace': music/dance performances.",
+      "Essentials of Persian Dance and Lunch Hour Social Dance: dance technique and social dance classes, not spiritual teaching (social dance page also says 'for health').",
+      "Wheel of Mitra advanced workshop: dated run ended 10 Oct 2026.",
+      "Dated events (Companions of the Sun talks, Yalda celebrations): one-off dated events.",
+      "No free resources found apart from the free Patreon tier."
+    ]
+  },
+  "images_final": true
+}

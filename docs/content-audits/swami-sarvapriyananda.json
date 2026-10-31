@@ -1,0 +1,290 @@
+{
+  "healer": {
+    "healer_slug": "swami-sarvapriyananda",
+    "create": {
+      "name": "Swami Sarvapriyananda",
+      "bio": "Swami Sarvapriyananda is a monk of the Ramakrishna Order and, since 2017, the minister and spiritual head at the Vedanta Society of New York, a centre Swami Vivekananda started in 1894. He joined the order in India in 1994 and took full monastic vows in 2004. Before moving to New York he trained young monks at Belur Math, the order's headquarters near Kolkata, worked in its educational institutions, and served as assistant minister at the Vedanta Society of Southern California. In 2019–20 he held a fellowship at Harvard Divinity School.\n\nHe teaches Advaita Vedanta, the non-dual school of Indian philosophy, by working closely through classic texts such as the Upanishads, the Mandukya Karika, the Bhagavad Gita and the Drg Drsya Viveka, joined with guided meditation and patient answers to questions. His recorded talks, many filmed at the society's house on the Upper West Side, reach a very large audience online. He often speaks with scientists and philosophers about consciousness, has taken part in interfaith events, including at the United Nations, and teaches retreats at Omega and centres around the world. His books include Mahavakya, Fullness and Emptiness, and Moments of Awakening.",
+      "tier": "luminary",
+      "entity_type": "individual",
+      "availability": "local_online",
+      "city": "New York",
+      "country": "United States",
+      "subjects": [
+        "non-duality",
+        "ancient-wisdom",
+        "meditation"
+      ],
+      "website_url": "https://www.vedantany.org/",
+      "booking_url": "https://www.vedantany.org/events",
+      "youtube_url": "https://www.youtube.com/@VedantaNY",
+      "instagram_url": null,
+      "facebook_url": "https://www.facebook.com/VedantaNY/",
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "mail@vedantany.org",
+      "image_urls": [
+        "https://images.squarespace-cdn.com/content/v1/6302837d1ce871273c7849b4/df89bce2-318a-41b2-9d27-4a9d6569f362/sarvapriyananda-minister.jpg",
+        "https://www.eomega.org/sites/default/files/styles/scale_and_crop_425x425/public/media/Swami_bio1_crop.jpg?itok=YHzLtmd4"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "omega-institute",
+      "role": "instructor"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Swami Sarvapriyananda at IITK - \"Who Am I?\" according to Mandukya Upanishad-Part 1",
+      "url": "https://www.youtube.com/watch?v=eGKFTUuJppU",
+      "subjects": [
+        "non-duality",
+        "consciousness"
+      ],
+      "channel": "Vivekananda Samiti, IIT Kanpur"
+    },
+    {
+      "title": "Swami Sarvapriyananda at IITK - \"Who Am I?\" according to Mandukya Upanishad-Part 2",
+      "url": "https://www.youtube.com/watch?v=F0dugc4TrlE",
+      "subjects": [
+        "non-duality",
+        "consciousness"
+      ],
+      "channel": "Vivekananda Samiti, IIT Kanpur"
+    },
+    {
+      "title": "Meditate Better | Swami Sarvapriyananda",
+      "url": "https://www.youtube.com/watch?v=GGYGxdcdE40",
+      "subjects": [
+        "meditation",
+        "non-duality"
+      ],
+      "channel": "Vedanta Society of New York"
+    },
+    {
+      "title": "01 Guided Meditation Swami Sarvapriyananda Manisha Panchakam Saturday",
+      "url": "https://www.youtube.com/watch?v=689DrBNumkE",
+      "subjects": [
+        "meditation",
+        "non-duality"
+      ],
+      "channel": "Vedanta Center of Phoenix"
+    },
+    {
+      "title": "The Essence of All Vedanta by Swami Sarvapriyananda",
+      "url": "https://www.youtube.com/watch?v=ykcdg0Vd3I4",
+      "subjects": [
+        "non-duality",
+        "ancient-wisdom"
+      ],
+      "channel": "Vedanta Society of New York"
+    },
+    {
+      "title": "Do we have Free Will? by Swami Sarvapriyananda",
+      "url": "https://www.youtube.com/watch?v=VzbyeU3dK4g",
+      "subjects": [
+        "non-duality",
+        "consciousness"
+      ],
+      "channel": "Vedanta Society of New York"
+    },
+    {
+      "title": "Vedantic Meditation with Swami Sarvapriyananda",
+      "url": "https://www.youtube.com/watch?v=wm9gomNUi48",
+      "subjects": [
+        "meditation",
+        "non-duality"
+      ],
+      "channel": "Vedanta Society of New York"
+    },
+    {
+      "title": "The Real and the Apparent | Swami Sarvapriyananda",
+      "url": "https://www.youtube.com/watch?v=Femq2264px4",
+      "subjects": [
+        "non-duality",
+        "ancient-wisdom"
+      ],
+      "channel": "Vedanta Society of New York"
+    },
+    {
+      "title": "Is Consciousness More Fundamental Than God? | Swami Sarvapriyananda",
+      "url": "https://www.youtube.com/watch?v=A1wOs0gBOKA",
+      "subjects": [
+        "consciousness",
+        "non-duality"
+      ],
+      "channel": "Closer To Truth"
+    },
+    {
+      "title": "How can I transition from meditation as a chore to one of pure joy?",
+      "url": "https://www.youtube.com/watch?v=7WJJ-lMCBtc",
+      "subjects": [
+        "meditation"
+      ],
+      "channel": "Vedanta Society of New York"
+    },
+    {
+      "title": "The Equation of Consciousness & The True Self | Swami Sarvapriyananda @ South Park Commons",
+      "url": "https://www.youtube.com/watch?v=BFdcxZ_T5mk",
+      "subjects": [
+        "consciousness",
+        "non-duality"
+      ],
+      "channel": "Vedanta Society of New York"
+    },
+    {
+      "title": "The Mirror of Consciousness · Swami Sarvapriyananda",
+      "url": "https://www.youtube.com/watch?v=hNQTj64PPvI",
+      "subjects": [
+        "consciousness",
+        "non-duality"
+      ],
+      "channel": "Vedanta Society of Southern California"
+    }
+  ],
+  "books": [
+    {
+      "title": "Mahavakya: The Essence of Vedanta",
+      "slug": "mahavakya-the-essence-of-vedanta",
+      "author": "Swami Sarvapriyananda",
+      "asin": "B0F3YQZZ7F",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "Edited from his lectures, this book works through the four 'great sayings' of the Upanishads, such as 'Thou art That'. It shows how each points to the identity of the individual self with Brahman and what that means for practice.",
+      "subjects": [
+        "non-duality",
+        "ancient-wisdom"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/B0F3YQZZ7F.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "Fullness & Emptiness: Vedanta and Buddhism",
+      "slug": "fullness-emptiness-vedanta-and-buddhism",
+      "author": "Swami Sarvapriyananda",
+      "asin": "B0F3YRLPJ6",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "A comparison of how Vedanta speaks of ultimate reality as fullness while Buddhism speaks of it as emptiness. He traces where the two traditions meet and where they genuinely differ.",
+      "subjects": [
+        "non-duality",
+        "ancient-wisdom",
+        "consciousness"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/B0F3YRLPJ6.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "Vedanta in Practice: Conversations",
+      "slug": "vedanta-in-practice-conversations",
+      "author": "Swami Sarvapriyananda",
+      "asin": "B0FBWYRHNH",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "Questions put to him by students over the years, with his replies, grouped by theme. The exchanges deal with how to live Vedanta day to day: work, relationships, doubt, meditation and spiritual discipline.",
+      "subjects": [
+        "non-duality",
+        "meditation"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/B0FBWYRHNH.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "Moments of Awakening: Vedantic Stories That Stir the Soul",
+      "slug": "moments-of-awakening-vedantic-stories-that-stir-the-soul",
+      "author": "Swami Sarvapriyananda",
+      "asin": "B0H56CBQYF",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "A collection of the teaching stories he uses in his talks, many passed down among monks of his order. Each short tale opens onto a point of Vedantic teaching, often with gentle humour.",
+      "subjects": [
+        "non-duality",
+        "ancient-wisdom"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/B0H56CBQYF.01._SCLZZZZZZZ_.jpg"
+    }
+  ],
+  "courses": [
+    {
+      "title": "Inquiry Into the Seer & the Seen: Explore the Drg Drsya Viveka Text",
+      "url": "https://www.eomega.org/workshops/inquiry-into-seer-and-seen",
+      "description": "A three-night residential study retreat at Omega's Rhinebeck campus on the Drg Drsya Viveka, a short Advaita text on telling the witness apart from what it observes. Sessions combine close reading of the verses with silence and reflection; Vedanta Society of New York members get a discount code.",
+      "price": "Member $320 USD, standard $355 USD (tiered $255–$405 USD)",
+      "product_type": "retreat",
+      "start_date": "2027-05-28",
+      "end_date": "2027-05-31",
+      "subjects": [
+        "non-duality",
+        "ancient-wisdom"
+      ],
+      "image": "https://www.eomega.org/sites/default/files/styles/scale_width_1440/public/media/nonduality-realization-manifestatio_hero.jpg?itok=JtNlOyjL"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Sunday Service at the Vedanta Society of New York",
+      "url": "https://www.vedantany.org/events",
+      "description": "A one-hour talk each Sunday at 11 am, usually given by Swami Sarvapriyananda, at the society's house on West 71st Street and livestreamed on YouTube. Topics range across Vedanta, the harmony of religions and spiritual life; registration details are on the page.",
+      "featured": true,
+      "resource_type": "workshop",
+      "subjects": [
+        "non-duality",
+        "spirituality"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/6302837d1ce871273c7849b4/df39f1a2-d65a-4c1f-ad09-576a34e1a0c6/brighter_and_bolder_phase2.png?format=1500w"
+    },
+    {
+      "title": "Ask Swami Q&A",
+      "url": "https://www.vedantany.org/ask-swami-qa",
+      "description": "A sorted library of his Sunday question-and-answer sessions, each question linked to its video answer. Also available as a podcast, with new questions accepted by email.",
+      "featured": false,
+      "resource_type": "workshop",
+      "subjects": [
+        "non-duality",
+        "meditation"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/6302837d1ce871273c7849b4/df39f1a2-d65a-4c1f-ad09-576a34e1a0c6/brighter_and_bolder_phase2.png?format=1500w"
+    },
+    {
+      "title": "Lectures by Scripture",
+      "url": "https://www.vedantany.org/by-scriptures",
+      "description": "The society's free archive of his lecture series arranged by text, such as the Upanishads, the Bhagavad Gita and Shankara's works. Each series is offered as a video playlist and podcast with subtitles.",
+      "featured": false,
+      "resource_type": "mini_course",
+      "subjects": [
+        "non-duality",
+        "ancient-wisdom"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/6302837d1ce871273c7849b4/df39f1a2-d65a-4c1f-ad09-576a34e1a0c6/brighter_and_bolder_phase2.png?format=1500w"
+    }
+  ],
+  "sprint": {
+    "hub": "omega-institute",
+    "rank": 15,
+    "omega_url": "https://www.eomega.org/people/swami-sarvapriyananda",
+    "tier_evidence": "No personal social accounts found. Society accounts where he is the main speaker: YouTube @VedantaNY 402K (channel header, 31 Oct 2026); Facebook /VedantaNY 6,344 (og:description, 31 Oct 2026); Instagram @vedantany count not readable → personal total 0, society total ~408K → luminary (override)",
+    "tier_override": "Editorial stature: minister of the Vedanta Society of New York and one of the most widely followed teachers of Advaita Vedanta, whose talks on the society's channel (402K) and others run to millions of views (IIT Kanpur 'Who Am I?' 6.2M). The channel belongs to the society, so the owner should confirm.",
+    "email": "yes",
+    "email_source": "https://www.vedantany.org/",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 17 source(s)",
+    "flags": [
+      "Email mail@vedantany.org is the Vedanta Society of New York's general inbox (brand inbox), published in the site footer; askswami@vedantany.org is for questions only.",
+      "Tier is luminary by editorial-stature override; his own follower total is 0 because all accounts belong to the society (owner to confirm).",
+      "Links (YouTube, Facebook, website) are the society's, not personal; he is the resident minister and main speaker.",
+      "Name keeps the honorific 'Swami', as he is only known that way; slug swami-sarvapriyananda.",
+      "Amazon titles the Vedanta in Practice paperback 'Vedanta in Practice: Conversations on' (cut off); I used the society's title 'Vedanta in Practice: Conversations'.",
+      "Several top videos are on other channels (IIT Kanpur, Vedanta Center of Phoenix, Vedanta Society of Southern California, Closer To Truth); he is the sole teacher in each."
+    ],
+    "left_out": [
+      "Omega livestream 'Nonduality Realization & Manifestation' (May 22–25, 2026): already past, registration closed.",
+      "Books Drg Drsya Viveka (B0HKW9XMTF), Mind & Consciousness (B0GY23Q3X1) and Dakshinamurti Stotram (B0FXN4T2PL): amazon.com /dp/ returned 500 by curl and WebFetch, not confirmed.",
+      "Book From Illusion to Infinity: sold only through Vedanta Press, not Amazon.",
+      "Weekday classes (Gospel of Sri Ramakrishna etc.): free society classes, not added separately.",
+      "His India tour talks (Nov 2026): dated external events."
+    ]
+  },
+  "images_final": true
+}
