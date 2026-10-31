@@ -1,0 +1,192 @@
+{
+  "healer": {
+    "healer_slug": "ashley-nguyen",
+    "create": {
+      "name": "Ashley Nguyen",
+      "bio": "Ashley Nguyen is a yoga and meditation teacher, astrologer and Human Design guide based in Honolulu, Hawaii, who works under the name Awake In Wellness. Before turning to this work she spent more than ten years as a software engineer, latterly at Disney and LinkedIn, and she often speaks about leaving that career and what helped her make the change. She holds a 200-hour yoga teacher certification and also plays crystal singing bowls for sound baths.\n\nHer approach pairs chart work with practices done in the body. In readings and coaching she uses a person's birth chart and Human Design as a shared language for their temperament and choices, while stressing that the chart is a lens rather than a verdict and that clients remain their own authority. Sessions open and close with a short meditation, and her longer coaching programme, aimed mainly at professionals weighing a career change, adds yoga, breath and somatic practice. In Honolulu she leads yin yoga and sound bath classes, yoga nidra evenings and community events, and she teaches online through one-to-one sessions, guided meditations for each moon sign and Human Design type, a podcast and her Insight Timer library.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local_online",
+      "city": "Honolulu",
+      "country": "United States",
+      "subjects": [
+        "astrology",
+        "human-design",
+        "yoga"
+      ],
+      "website_url": "https://www.awake-in-wellness.com/",
+      "booking_url": "https://www.awake-in-wellness.com/coaching",
+      "youtube_url": "https://www.youtube.com/@awake.in.wellness",
+      "instagram_url": "https://www.instagram.com/awake.in.wellness/",
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "hello@awake-in-wellness.com",
+      "image_urls": [
+        "https://images.squarespace-cdn.com/content/v1/658b58a13ccf3f4e59e7d483/cd6aefe6-995d-4146-afa7-415c9fd8f2c7/Meet+Your+Guide.jpg?format=1000w",
+        "https://yt3.googleusercontent.com/3TK0_2vsmAfJADZtrSoE8D-iKZMW8VtC5VIq_-Bst7Pj5-GTeX3W2OVuojj04Wf0UeONqCcfaHA=s900-c-k-c0x00ffffff-no-rj"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "insight-timer",
+      "role": "instructor"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Gentle Yoga for when you've been sitting too much | Slow Flow Seated and Grounded",
+      "url": "https://www.youtube.com/watch?v=eMe6GFclLDE",
+      "subjects": [
+        "yoga"
+      ],
+      "channel": "Awake In Wellness"
+    }
+  ],
+  "books": [],
+  "courses": [
+    {
+      "title": "Body Mind Freedom coaching",
+      "url": "https://www.awake-in-wellness.com/coaching",
+      "description": "A five-month one-to-one programme of twelve hour-long Zoom sessions for professionals rethinking their path, mixing coaching with astrology and Human Design readings, yoga, meditation and somatic practice. Email and messaging support and personalised guided meditations are included.",
+      "price": "$3,500 USD founding rate ($5,000 USD standard)",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "life-coaching",
+        "astrology",
+        "human-design"
+      ],
+      "image": "http://static1.squarespace.com/static/658b58a13ccf3f4e59e7d483/t/6a6bc59684aaf41e14c1eb6c/1772502559534/mentorship-session.jpg?format=1500w"
+    },
+    {
+      "title": "The Lunar Sprint",
+      "url": "https://www.awake-in-wellness.com/lunar-sprint",
+      "description": "A two-week one-to-one container that runs from a new moon to the following full moon, with four 75-minute sessions that go deep into the client's natal chart, transits and Human Design. Recordings, chart reports and meditations are kept in a shared folder.",
+      "price": "$1,095 USD",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "astrology",
+        "human-design",
+        "life-coaching"
+      ],
+      "image": "http://static1.squarespace.com/static/658b58a13ccf3f4e59e7d483/t/69a63e1f90256d12e7b50433/1767727522576/mentorship-session.jpg?format=1500w"
+    },
+    {
+      "title": "Awaken Clarity Session",
+      "url": "https://www.awake-in-wellness.com/readings",
+      "description": "A single 75-minute session that combines intuitive coaching with an introductory look at the client's birth chart and Human Design, framed by an opening and closing meditation. The session is recorded for the client to keep.",
+      "price": "$275 USD",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "astrology",
+        "human-design"
+      ],
+      "image": "http://static1.squarespace.com/static/658b58a13ccf3f4e59e7d483/t/686b1f2503589e0bf573f3f0/1751850789964/Awake+In+Wellness+Logo.png?format=1500w"
+    },
+    {
+      "title": "Wellness Guide for your Moon Sign",
+      "url": "https://www.awake-in-wellness.com/store/wellness-guide-moon-sign",
+      "description": "A downloadable guide for each of the twelve moon signs, with a guided meditation of about seventeen minutes and a PDF of daily rituals, short somatic exercises, yoga poses and journal prompts suited to that sign.",
+      "price": "$30 USD",
+      "product_type": "download",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "astrology",
+        "meditation",
+        "yoga"
+      ],
+      "image": "http://static1.squarespace.com/static/658b58a13ccf3f4e59e7d483/t/690e679203d8727c4c7d6332/1762551698970/SEO+Banner.png?format=1500w"
+    },
+    {
+      "title": "Human Design Guided Meditations",
+      "url": "https://www.awake-in-wellness.com/human-design-guided-meditations",
+      "description": "A recorded meditation of around half an hour for each of the five Human Design energy types, meant as a felt, bodily introduction to the qualities of that type.",
+      "price": "$15 USD each",
+      "product_type": "download",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "human-design",
+        "meditation"
+      ],
+      "image": "http://static1.squarespace.com/static/658b58a13ccf3f4e59e7d483/t/68b350d4249f594a002b8430/1756582100652/hd-med.jpg?format=1500w"
+    },
+    {
+      "title": "Embodied Wellness For Your Human Design",
+      "url": "https://insighttimer.com/meditation-courses/embodied-wellness-for-your-human-design",
+      "description": "A five-day Insight Timer course with a short daily lesson for each Human Design type, covering how that type tends to use and restore energy and a simple breath or wind-down practice to try.",
+      "price": "Included in Member Plus ($59.99 USD a year)",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "human-design",
+        "breathwork"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/658b58a13ccf3f4e59e7d483/cd6aefe6-995d-4146-afa7-415c9fd8f2c7/Meet+Your+Guide.jpg?format=1000w"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Ashley Nguyen on Insight Timer",
+      "url": "https://insighttimer.com/awakeinwellness",
+      "description": "Guided meditations, yoga nidra and short talks on astrology and Human Design, some in Vietnamese as well as English. Free to listen to.",
+      "featured": true,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation",
+        "astrology",
+        "human-design"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/658b58a13ccf3f4e59e7d483/cd6aefe6-995d-4146-afa7-415c9fd8f2c7/Meet+Your+Guide.jpg?format=1000w"
+    },
+    {
+      "title": "Awake In Wellness podcast",
+      "url": "https://open.spotify.com/show/0YNAEkXRoOa4KIE5TZpG1b",
+      "description": "Her podcast, with guided meditations and yoga nidra alongside conversations about astrology, Human Design and self-awareness. Also on Apple Podcasts.",
+      "featured": false,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation",
+        "astrology",
+        "human-design"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/658b58a13ccf3f4e59e7d483/cd6aefe6-995d-4146-afa7-415c9fd8f2c7/Meet+Your+Guide.jpg?format=1000w"
+    }
+  ],
+  "sprint": {
+    "hub": "insight-timer",
+    "rank": 33,
+    "insight_timer_url": "https://insighttimer.com/awakeinwellness",
+    "tier_evidence": "Insight Timer 1.3k (profile, 31 Oct 2026); Instagram 2,114 (og:description, 31 Oct 2026); YouTube 12 (channel page) → ~3.4k total → local_hero",
+    "email": "yes",
+    "email_source": "https://www.awake-in-wellness.com/",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 23 source(s)",
+    "flags": [
+      "Full name: Insight Timer shows only 'Ashley | Awake In Wellness'; 'Ashley Nguyen' is confirmed on her own coaching page ('I'm Ashley Nguyen'), her events page and the copyright notes in her shop.",
+      "Email is the Awake In Wellness brand inbox (hello@), published in her site footer and shop pages; it appears to be her own business address.",
+      "Availability local_online: her events page shows regular in-person classes and events in Honolulu (yin yoga and sound bath at Kahala, yoga nidra, wellness days) through 2026; no dated Honolulu class after 31 Oct is listed except a sound bath concert on 11 Nov 2026 with no venue or price shown, so it was left out.",
+      "Only one usable YouTube video (channel has 12 subscribers).",
+      "Some of her copy uses words such as 'heal self-judgment' and 'healing frequencies' for sound bowls; none of that wording was used, and her Insight Timer 'Yoga Nidra For Healing' track is not listed (profile link only).",
+      "Separate readings booking pages linked from /readings (self-discovery, deep-dive astro, deep-dive Human Design) return 404; only the Awaken Clarity Session on /readings and /coaching was listed.",
+      "WebFetch would only quote the first sentence of her Insight Timer bio; the bio check ran against that plus her own pages."
+    ],
+    "left_out": [
+      "Past events (Honolulu classes, festivals and online workshops up to October 2026) and the 11 Nov 2026 sound bath concert (no venue or price published).",
+      "Moon-sign meditations ($15 USD each) left out as near-duplicate of the moon-sign wellness guide, which includes the same meditation.",
+      "14 Day Meditation Journal ($10 USD PDF): minor product.",
+      "'Debug Your Nervous System' tech-week workshop (past, and framed around burnout).",
+      "No books."
+    ]
+  },
+  "images_final": true
+}

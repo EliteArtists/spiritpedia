@@ -1,0 +1,192 @@
+{
+  "healer": {
+    "healer_slug": "taylor-somerville",
+    "create": {
+      "name": "Taylor Somerville",
+      "bio": "Taylor Somerville is a breathwork coach in Memphis, Tennessee, and the founder of Symmetry, which he set up in 2018. Before that he spent about fifteen years in finance, a pace that left him worn out and looking for a steadier way to live, and the search led him to breath training. He is a master coach in the XPT method, the breath, movement and recovery approach developed by Laird Hamilton and Gabby Reece, and holds a Breath Science Practitioner certificate.\n\nHis teaching is practical and body-based. He starts with how a person actually breathes, then layers in slow nasal breathing, breath-holds, energising rounds and guided rest, with gentle stretching and visualisation at times. Most of his clients are busy professionals, athletes and teams who want calmer, clearer responses in daily life. In Memphis he leads small-group heat and ice classes that pair sauna, cold plunges and breathwork, and he coaches people one to one and in groups, both locally and online. Companies book him for workplace wellbeing sessions. He also runs an on-demand library of recorded breath classes and shares short guided practices on Insight Timer, where his sessions focus on energy, morning routines and deep relaxation.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local_online",
+      "city": "Memphis",
+      "country": "United States",
+      "subjects": [
+        "breathwork",
+        "mindfulness"
+      ],
+      "website_url": "https://www.symmetry.live/",
+      "booking_url": "https://www.symmetry.live/services/coaching",
+      "youtube_url": "https://www.youtube.com/@SymmetryBreath",
+      "instagram_url": "https://www.instagram.com/symmetry.live/",
+      "facebook_url": "https://www.facebook.com/symmetry901",
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "taylor@symmetry.live",
+      "image_urls": [
+        "https://cdn.prod.website-files.com/67ab0aa76165b741b60a50c4/67b2d310a8a2bc789c5d7326_Taylor.avif",
+        "https://users.insighttimer.com/R7D7g1H7J9N9w2S3r3j0M1J8q8Z5p8u1R0u3C2L7b7M8W0N3g1B7h0w5D4w0N5S1c2m6k1B6n2z5x3F1z8K2x4y5N4b8t4N1F3w8/pictures/square_large.jpeg"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "insight-timer",
+      "role": "instructor"
+    }
+  ],
+  "videos": [
+    {
+      "title": "The Breathing Exercise That Will Make You Feel Your Mother's Love | The Mother's Breath",
+      "url": "https://www.youtube.com/watch?v=6J8t-Yi_C-A",
+      "subjects": [
+        "breathwork",
+        "meditation"
+      ],
+      "channel": "Symmetry"
+    },
+    {
+      "title": "Energizing Breath Session",
+      "url": "https://www.youtube.com/watch?v=V4BhOlixVCk",
+      "subjects": [
+        "breathwork"
+      ],
+      "channel": "Symmetry"
+    },
+    {
+      "title": "Virtual Breath Session For The Health and Human Performance Foundation",
+      "url": "https://www.youtube.com/watch?v=LyGJMZ9l3Sk",
+      "subjects": [
+        "breathwork"
+      ],
+      "channel": "Symmetry"
+    },
+    {
+      "title": "NSDR Protocol",
+      "url": "https://www.youtube.com/watch?v=Q2EwUktGuyQ",
+      "subjects": [
+        "breathwork",
+        "meditation"
+      ],
+      "channel": "Symmetry"
+    }
+  ],
+  "books": [],
+  "courses": [
+    {
+      "title": "Individual breathwork coaching",
+      "url": "https://www.symmetry.live/services/coaching",
+      "description": "One-to-one coaching built around your own breathing patterns, combining breath training with movement, recovery habits and mindfulness. It begins with a free 15-minute call to see whether it suits you.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "breathwork",
+        "life-coaching"
+      ],
+      "image": "https://cdn.prod.website-files.com/67ab0aa76165b741b60a50c4/6a0c71dac506fade4a977d8c__DSC7000.avif"
+    },
+    {
+      "title": "Group coaching",
+      "url": "https://www.symmetry.live/services/group-coaching",
+      "description": "A small-group programme in which members learn breath and mindset tools together and keep each other accountable as they build simple daily habits.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "breathwork",
+        "life-coaching"
+      ],
+      "image": "https://cdn.prod.website-files.com/67ab0aa76165b741b60a50c4/67ee7e7e48b162fe0fea400f_Group%20Coaching%20Hero.avif"
+    },
+    {
+      "title": "Heat and Ice class",
+      "url": "https://app.acuityscheduling.com/schedule/c865fbfe/?categories[]=In%20Person%20Classes",
+      "description": "An in-person group class in Memphis that alternates sauna heat and cold plunges, guided by breathwork throughout. Places are booked online.",
+      "price": "$45 USD",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "breathwork"
+      ],
+      "image": "https://cdn-s.acuityscheduling.com/logo21255898.jpg?1646241554&whiteBg=1&rectangular=1"
+    },
+    {
+      "title": "Symmetry Breathing On Demand",
+      "url": "https://wwwsymmetrylive.vhx.tv/",
+      "description": "A streaming library of recorded breath classes, from quick how-to clips under ten minutes to longer guided journeys that move between activating and settling techniques. It starts with a three-day free trial.",
+      "price": "$29.99 USD a month",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "breathwork"
+      ],
+      "image": "https://vhx.imgix.net/wwwsymmetrylive/assets/91484510-e82e-4f6d-aa0c-df4be3ae25db.jpg?auto=format%2Ccompress&fit=crop&h=720&w=1280"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Taylor Somerville on Insight Timer",
+      "url": "https://insighttimer.com/taylorsomerville",
+      "description": "Short guided breath sessions from Taylor, including morning and energising practices, free to play in the app or on the web.",
+      "featured": true,
+      "resource_type": "meditation",
+      "subjects": [
+        "breathwork"
+      ],
+      "image": "https://cdn.prod.website-files.com/67ab0aa76165b741b60a50c4/67b2d310a8a2bc789c5d7326_Taylor.avif"
+    },
+    {
+      "title": "The Five Pillars of Breath",
+      "url": "https://mailchi.mp/71372e53db7c/five-pillars-of-breath",
+      "description": "A free e-book setting out the foundations of good breathing that Symmetry builds on, sent by email after sign-up.",
+      "featured": false,
+      "resource_type": "download",
+      "subjects": [
+        "breathwork"
+      ],
+      "image": "https://mcusercontent.com/690f2251eddd74803deb56751/images/be6c951d-c837-4dcd-9bc4-bac26842b96d.jpg"
+    },
+    {
+      "title": "Free Breath Awareness Session",
+      "url": "https://mailchi.mp/f1e7b1cb826a/breathawareness",
+      "description": "A short recorded practice for noticing how you breathe, available to download once you leave your email address.",
+      "featured": false,
+      "resource_type": "download",
+      "subjects": [
+        "breathwork",
+        "mindfulness"
+      ],
+      "image": "https://mcusercontent.com/690f2251eddd74803deb56751/images/be6c951d-c837-4dcd-9bc4-bac26842b96d.jpg"
+    }
+  ],
+  "sprint": {
+    "hub": "insight-timer",
+    "rank": 22,
+    "insight_timer_url": "https://insighttimer.com/taylorsomerville",
+    "tier_evidence": "Insight Timer 8.2k (profile, 31 Oct 2026); no personal social accounts found. Company accounts not counted: Symmetry YouTube 562 (channel page, 31 Oct 2026), Symmetry Instagram 2,555 (og:description, 31 Oct 2026), Facebook not readable → ~8k total → local_hero",
+    "email": "yes",
+    "email_source": "https://www.symmetry.live/contact",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 11 source(s)",
+    "flags": [
+      "His socials (YouTube @SymmetryBreath, Instagram symmetry.live, Facebook symmetry901) are his company's accounts, shared with at least one other coach (Lauren); linked as his business channels but not counted for the tier.",
+      "Symmetry's whole offer is framed around stress and overwhelm (not clinical). Stress-titled items left out; descriptions written without health claims. A human may want to judge whether the listing as a whole fits.",
+      "The YouTube channel also carries sessions led by a female coach; I kept only videos shown or described as Taylor's or from before she joined. Energizing Breath Session and NSDR Protocol have logo thumbnails, so the speaker is not visually confirmed.",
+      "First photo is an .avif file (Webflow serves only that format); the second is the 640px Insight Timer profile photo. Same person in both.",
+      "Insight Timer bio: WebFetch quoted only the first sentence; the bio check uses the Symmetry home, about, coaching and other pages. The XPT detail (Laird Hamilton and Gabby Reece) is general knowledge about XPT, not from his pages.",
+      "The XPT certification wording appears on his site as 'XPT master coach'; not checked against XPT's own directory."
+    ],
+    "left_out": [
+      "Stress Regulation course and 'Breathing through Stress' class (stress-titled).",
+      "YouTube: stress-, burnout- and anxiety-titled videos; 'Letting Go with the Breath' (its description promises release from pain); testimonials; Shorts and clips under 2 minutes; sessions led by another coach.",
+      "Symmetry's Tools For Improved Sleep and 3 Stress Busting Tips webinar (condition- and stress-titled).",
+      "Corporate wellness programmes (sold to companies, framed on stress reduction).",
+      "Symmetry Syndicate community (Mighty Networks page needs JavaScript; content and price not readable).",
+      "Stress assessment quiz (scoreapp)."
+    ]
+  },
+  "images_final": true
+}

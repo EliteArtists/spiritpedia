@@ -1,0 +1,57 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 321,
+    "healer_slug": "zac-carpenter"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "2a366cf0-3a72-4d6d-8364-cf0dbba3cbd2",
+      "slug": "live-energy-reading",
+      "title": "Live Energy Reading"
+    },
+    {
+      "table": "courses",
+      "id": "fb7194a3-fb05-4f2f-b9a6-3c4b01498a1c",
+      "slug": "recorded-energy-reading",
+      "title": "Recorded Energy Reading"
+    },
+    {
+      "table": "courses",
+      "id": "c29b2b82-4ecd-4b1f-969d-347213ba57e5",
+      "slug": "energy-mapping-membership",
+      "title": "Energy Mapping Membership"
+    },
+    {
+      "table": "courses",
+      "id": "300cffed-4859-496c-a50d-7accc9336262",
+      "slug": "readings-for-talent-and-creative-people",
+      "title": "Readings for Talent and Creative People"
+    },
+    {
+      "table": "courses",
+      "id": "c0073b10-5585-4ab9-baf8-ef1f4f0a411f",
+      "slug": "become-an-akashic-records-reader",
+      "title": "Become An Akashic Records Reader"
+    },
+    {
+      "table": "free_resources",
+      "id": "93a6694f-8a00-411f-945c-519094346fb7",
+      "slug": "zac-carpenter-on-insight-timer",
+      "title": "Zac Carpenter on Insight Timer"
+    },
+    {
+      "table": "free_resources",
+      "id": "e72e0343-70cd-4c5b-8a10-5207132a8e60",
+      "slug": "free-energy-map",
+      "title": "Free Energy Map"
+    },
+    {
+      "table": "hub_teachers",
+      "id": "98aba776-7d31-4236-ac39-425497537bb7",
+      "title": "zac-carpenter teaches at Insight Timer"
+    }
+  ],
+  "at": "2026-10-31T17:00:32.549Z"
+}

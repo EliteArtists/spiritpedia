@@ -399,7 +399,7 @@
    "base": "Rayong, Thailand",
    "website": "https://watmarpjan.org/en/",
    "note": "Abbot of Wat Marp Jan; email is the monastery's visiting address (also marpjan@gmail.com).",
-   "status": "planned",
+   "status": "dev",
    "plan": "docs/content-audits/ajahn-anan.json",
    "skip_reason": null
   },
@@ -418,8 +418,8 @@
    "base": "Memphis, TN, USA",
    "website": "www.symmetry.live",
    "note": "Symmetry breathwork; sold on stress and overwhelm (not clinical).",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/taylor-somerville.json",
    "skip_reason": null
   },
   {
@@ -437,8 +437,8 @@
    "base": "Seattle, WA, USA",
    "website": "https://www.aaronmichaelpyne.com/amp/",
    "note": null,
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/aaron-michael-pyne.json",
    "skip_reason": null
   },
   {
@@ -456,8 +456,8 @@
    "base": "Doylestown, PA, USA",
    "website": "https://one.dayana.io/freedom-2",
    "note": "Dayana Pereira.",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/dayana-pereira.json",
    "skip_reason": null
   },
   {
@@ -475,8 +475,8 @@
    "base": "Maryland, USA",
    "website": "awasepublishing.com",
    "note": "Site is his publishing company Awase Publishing; email is the company's published address.",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/steve-wolf.json",
    "skip_reason": null
   },
   {
@@ -494,7 +494,7 @@
    "base": "Byron Bay NSW, Australia",
    "website": "https://kevinjamesmusic.com",
    "note": "Devotional musician; current events mostly in Spain (Valencia, Madrid).",
-   "status": "planned",
+   "status": "dev",
    "plan": "docs/content-audits/kevin-james-carroll.json",
    "skip_reason": null
   },
@@ -513,8 +513,8 @@
    "base": "Hemet / San Jacinto, CA, USA",
    "website": "www.11exhale.com",
    "note": "11exhale.com now redirects to juliannearce.com; teaches weekly classes in Hemet and San Jacinto.",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/julianne-arce.json",
    "skip_reason": null
   },
   {
@@ -532,8 +532,8 @@
    "base": "Brecht, Belgium",
    "website": "https://www.kristoflambregts.com/links/",
    "note": null,
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/kristof-lambregts.json",
    "skip_reason": null
   },
   {
@@ -551,8 +551,8 @@
    "base": "San Diego, CA, USA",
    "website": "https://www.kristikuttner.com/",
    "note": null,
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/kristi-kuttner.json",
    "skip_reason": null
   },
   {
@@ -570,8 +570,8 @@
    "base": "Royal Tunbridge Wells, UK",
    "website": "www.zaccarpenter.com",
    "note": null,
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/zac-carpenter.json",
    "skip_reason": null
   },
   {
@@ -589,9 +589,9 @@
    "base": "Oxford, UK",
    "website": "https://www.harrietemily.com",
    "note": "Sound artist doing events and residencies.",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "A sound artist and musician rather than a teacher: her site sells hotel residencies, brand content, music licensing and private sound-bath bookings through one enquiry form (no offerings with their own pages), her YouTube channel is sound-bath and nature-soundscape music with no teaching, and there are no books or free resources besides Insight Timer, so too little passes the content rules for a page."
   },
   {
    "rank": 32,
@@ -608,7 +608,7 @@
    "base": "Byron Bay, NSW, Australia",
    "website": "www.crystalslide.com",
    "note": "Also lists crystalslideshivam@gmail.com.",
-   "status": "planned",
+   "status": "dev",
    "plan": "docs/content-audits/shivam-rath.json",
    "skip_reason": null
   },
@@ -627,8 +627,8 @@
    "base": "Honolulu, HI, USA",
    "website": "https://www.awake-in-wellness.com",
    "note": null,
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/ashley-nguyen.json",
    "skip_reason": null
   },
   {
@@ -646,9 +646,9 @@
    "base": "USA",
    "website": "http://www.meditationoasis.com/",
    "note": null,
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "No sign she still teaches: the Meditation Oasis podcast stopped in May 2020, the blog in 2020, the apps were last updated in 2021, her last Insight Timer upload was about three years ago, and her site still carries pandemic-era notices with no classes, courses or new work; much of the catalogue is also framed around anxiety, sleep problems and illness. Worth a human look as a possible luminary-tier legacy listing (174.7k Insight Timer followers; email meditate@meditationoasis.com published on meditationoasis.com/contact) if inactive teachers are ever accepted."
   },
   {
    "rank": 35,
@@ -665,8 +665,8 @@
    "base": "Karlsruhe, Germany",
    "website": "https://www.mentalstaerkung.de",
    "note": "German-language mental-strength seminars (Konzept Null).",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/michael-pyrtsch.json",
    "skip_reason": null
   },
   {
@@ -684,7 +684,7 @@
    "base": "Dartford, Kent, UK",
    "website": "radiantangelenergy.co.uk",
    "note": "Also radiantangelenergy@gmail.com.",
-   "status": "planned",
+   "status": "dev",
    "plan": "docs/content-audits/rae-calnan.json",
    "skip_reason": null
   },
@@ -703,8 +703,8 @@
    "base": "Seseña, Toledo, Spain",
    "website": "https://bodhipatha.net",
    "note": null,
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/kando-bion-boncutiu.json",
    "skip_reason": null
   },
   {
@@ -722,8 +722,8 @@
    "base": "Bali, Indonesia",
    "website": null,
    "note": "No site in profile; found byconsciousness.com; Romi lives in Bali (profile says Melbourne).",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/romi-ochwani.json",
    "skip_reason": null
   },
   {
@@ -741,8 +741,8 @@
    "base": "Vancouver, BC, Canada",
    "website": "https://bio.site/saqibrizvi",
    "note": "Bio.site link page; own site saqibrizvi.com.",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/saqib-rizvi.json",
    "skip_reason": null
   },
   {
@@ -760,8 +760,8 @@
    "base": "Noosa, QLD, Australia",
    "website": "www.melissaambrosini.com",
    "note": "Also pr@ address.",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/melissa-ambrosini.json",
    "skip_reason": null
   },
   {
@@ -798,8 +798,8 @@
    "base": "Atlanta, GA, USA",
    "website": "sonicyogi.com",
    "note": "Sound therapy content mentions insomnia/anxiety but sold as general sound meditation.",
-   "status": "todo",
-   "plan": null,
+   "status": "planned",
+   "plan": "docs/content-audits/sonic-yogi.json",
    "skip_reason": null
   },
   {
@@ -950,8 +950,8 @@
    "base": "Newbury, UK",
    "website": "www.andyhobsonmeditation.com",
    "note": null,
-   "status": "todo",
-   "plan": null,
+   "status": "planned",
+   "plan": "docs/content-audits/andy-hobson.json",
    "skip_reason": null
   },
   {
@@ -969,8 +969,8 @@
    "base": "Los Angeles, CA, USA",
    "website": "https://www.julieskon.com",
    "note": "Coach and author; trauma-informed framing but sold as life coaching.",
-   "status": "todo",
-   "plan": null,
+   "status": "planned",
+   "plan": "docs/content-audits/julie-skon.json",
    "skip_reason": null
   },
   {
@@ -988,8 +988,8 @@
    "base": "Des Moines, IA, USA",
    "website": "soundsciencesoul.com",
    "note": null,
-   "status": "todo",
-   "plan": null,
+   "status": "planned",
+   "plan": "docs/content-audits/sommer-leigh.json",
    "skip_reason": null
   },
   {
@@ -1064,8 +1064,8 @@
    "base": "Bend, OR, USA",
    "website": "sadiejobarr.com",
    "note": "Relationship/self-trust coaching.",
-   "status": "todo",
-   "plan": null,
+   "status": "planned",
+   "plan": "docs/content-audits/sadie-barr.json",
    "skip_reason": null
   },
   {
@@ -1083,8 +1083,8 @@
    "base": "Shoreline (Seattle), WA, USA",
    "website": "www.catherineliggett.com/onelink",
    "note": "Brands herself as 'Holistic Mental Health'.",
-   "status": "todo",
-   "plan": null,
+   "status": "planned",
+   "plan": "docs/content-audits/catherine-liggett.json",
    "skip_reason": null
   },
   {
@@ -3045,5 +3045,5 @@
    "skip_reason": null
   }
  ],
- "updated": "2026-10-31T16:43:10.004Z"
+ "updated": "2026-10-31T17:01:49.320Z"
 }

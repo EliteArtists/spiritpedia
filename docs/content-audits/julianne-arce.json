@@ -1,0 +1,148 @@
+{
+  "healer": {
+    "healer_slug": "julianne-arce",
+    "create": {
+      "name": "Julianne Arce",
+      "bio": "Julianne Arce is a yoga and meditation teacher based in Hemet, California, registered with Yoga Alliance at E-RYT 500 level. She has practised for close to twenty years and taught for thirteen, for part of that time running her own studios under the name 11Exhale along with a teacher academy, and for seven years leading 200-hour teacher trainings in Carlsbad and in La Paz, Mexico. She is now doing graduate study in consciousness and psychology, with a particular interest in sleep and dreams, and is writing a book about how practice carries into ordinary life.\n\nHer weekly classes of slow vinyasa, power flow and restorative yoga take place at two studios, House of Mystics in Hemet and the Aura Yoga & Holistic Center in San Jacinto, each closing with a short quiet sit. She also offers private meditation and yoga in person or by video, plus longer one-to-one sessions that draw on yoga nidra, sound, dreamwork and reflective inquiry, and she visits studios and trainings as a guest teacher. Her style favours clear cues, an unhurried pace and openness to more than one tradition. On Insight Timer she has published more than two hundred free practices, from guided meditation and yoga nidra to yoga classes and singing bowls, and she hosts a podcast, The Daily Exhale.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local_online",
+      "city": "Hemet",
+      "country": "United States",
+      "subjects": [
+        "yoga",
+        "meditation",
+        "dreamwork"
+      ],
+      "website_url": "https://www.juliannearce.com",
+      "booking_url": "https://www.juliannearce.com/sessions",
+      "youtube_url": null,
+      "instagram_url": "https://www.instagram.com/juliannearce/",
+      "facebook_url": "https://www.facebook.com/juliannearce",
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "hello@juliannearce.com",
+      "image_urls": [
+        "https://onecdn.io/media/42b59a2b-a147-4705-b15f-229c2089b152/lg",
+        "https://users.insighttimer.com/Q8c2F3w1y0U0b0f2E7p1r5Q0G1v4j5C1S7D1V9b8C5B8q2A8Y4Q7h8q3d0Y0L6Z4J5g9U9D0x2f4X2T8y1w2f2C7A3w2F8M0e8R3/pictures/square_medium.jpeg",
+        "https://onecdn.io/media/b4108d86-8d1c-4dad-90ad-4c6128107982/lg"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "insight-timer",
+      "role": "instructor"
+    }
+  ],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Weekly Yoga Classes in Hemet and San Jacinto",
+      "url": "https://www.juliannearce.com/classes",
+      "description": "Hour-long group classes on Sunday, Tuesday and Thursday evenings: slow vinyasa and power flow for all levels, and a restorative class with long supported holds. They run at two local studios, House of Mystics in Hemet and the Aura centre in San Jacinto.",
+      "price": "Drop in $22 USD",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga",
+        "meditation"
+      ],
+      "image": "https://onecdn.io/media/42b59a2b-a147-4705-b15f-229c2089b152/lg"
+    },
+    {
+      "title": "Private Sessions",
+      "url": "https://www.juliannearce.com/sessions",
+      "description": "One-to-one meditation or yoga in person or online, with a longer option that uses yoga nidra, sound, dreamwork and inquiry. Each rate has community, standard and supporter levels, and a free 20-minute call comes first.",
+      "price": "$65 to $165 USD per session (sliding scale); weekly practice $240 to $475 USD a month",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "yoga",
+        "dreamwork"
+      ],
+      "image": "https://onecdn.io/media/42b59a2b-a147-4705-b15f-229c2089b152/lg"
+    },
+    {
+      "title": "Guest Workshops and Teacher Training Modules",
+      "url": "https://www.juliannearce.com/workshops",
+      "description": "Special classes, workshops, half or full-day intensives, talks and training modules for studios, retreats and organisations. Themes include deep rest, yoga philosophy and integrating insight into daily life.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga",
+        "consciousness"
+      ],
+      "image": "https://onecdn.io/media/42b59a2b-a147-4705-b15f-229c2089b152/lg"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Julianne Arce on Insight Timer",
+      "url": "https://insighttimer.com/11exhale",
+      "description": "Over two hundred practices: guided meditations, yoga nidra, filmed yoga flows, crystal bowl sound baths and soundscapes. The single tracks are free to hear.",
+      "featured": true,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation",
+        "yoga"
+      ],
+      "image": "https://onecdn.io/media/42b59a2b-a147-4705-b15f-229c2089b152/lg"
+    },
+    {
+      "title": "Design Your Sadhana",
+      "url": "https://www.juliannearce.com/design-your-sadhana",
+      "description": "A free workbook that walks you through building a daily personal practice in six steps, sized for good days and busy ones. It comes with a practice menu and a forty-day tracker.",
+      "featured": false,
+      "resource_type": "download",
+      "subjects": [
+        "meditation",
+        "yoga"
+      ],
+      "image": "https://onecdn.io/media/42b59a2b-a147-4705-b15f-229c2089b152/lg"
+    },
+    {
+      "title": "The Daily Exhale podcast",
+      "url": "https://thedailyexhale.buzzsprout.com/2351312/episodes",
+      "description": "Julianne's podcast, with around a hundred episodes of guided meditations, bedtime practices, dream incubation and recorded studio yoga classes. Most episodes are free to stream.",
+      "featured": false,
+      "resource_type": "practice",
+      "subjects": [
+        "meditation",
+        "yoga",
+        "dreamwork"
+      ],
+      "image": "https://thedailyexhale.buzzsprout.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MTIyODQyNjA0LCJwdXIiOiJibG9iX2lkIn19--76c96c9776b4a9fbe90cef080886742e7602bad4/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJqcGciLCJyZXNpemVfdG9fZmlsbCI6WzE0MDAsMTQwMCx7ImNyb3AiOiJjZW50cmUifV0sImRlZmF1bHRfdXJsIjoiaHR0cHM6Ly93d3cuYnV6enNwcm91dC5jb20vaW1hZ2VzL2FydHdvcmtzX2xhcmdlLmpwZyIsInNhdmVyIjp7InF1YWxpdHkiOjYwfSwiY29sb3Vyc3BhY2UiOiJzcmdiIn0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--2454c883dcd12a10059f243d8ea753f8b5c1613e/Black%20&%20Yellow%20New%20Dark%20Modern%20Trendy%20Music%20Album%20Cover.png"
+    }
+  ],
+  "sprint": {
+    "hub": "insight-timer",
+    "rank": 27,
+    "insight_timer_url": "https://insighttimer.com/11exhale",
+    "tier_evidence": "Insight Timer 5.5k (profile, 31 Oct 2026); Facebook Julianne Arce 14,310 followers (og:description, 31 Oct 2026); Instagram @juliannearce 4,297 (og:description, 31 Oct 2026); YouTube @11Exhale 94 subscribers (channel page) → ~24k total → local_hero",
+    "email": "yes",
+    "email_source": "https://www.juliannearce.com/",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 16 source(s)",
+    "flags": [
+      "Insight Timer lists her base as Laguna Beach, CA, but her own site says she teaches weekly in Hemet and San Jacinto; city set to Hemet.",
+      "Some images on her site look AI-generated or heavily retouched; I used only the two that look like real photos (consistent shoulder tattoo) plus her Insight Timer photo.",
+      "Insight Timer bio could only be partly quoted by WebFetch (first sentence); bio check relied mainly on her own site pages.",
+      "Sunday restorative class ends 25 Oct and Aura classes start 3 Nov; the schedule is in flux, so the classes item is left undated.",
+      "The Daily Exhale podcast includes some sleep and overwhelm episodes and some subscriber-only classes; listed as a whole, described without condition framing."
+    ],
+    "left_out": [
+      "YouTube @11Exhale: only short music tracks and albums, no teaching videos; no other channel found.",
+      "The Daily Exhale app and its course Living the Realization: waitlist only, not yet available.",
+      "Book in progress: not published.",
+      "No Insight Timer courses on her profile; Insight Timer tracks for anxiety, overwhelm and sleep problems not listed individually."
+    ]
+  },
+  "images_final": true
+}
