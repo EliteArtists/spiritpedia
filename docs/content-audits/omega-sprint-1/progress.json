@@ -893,8 +893,8 @@
    "emails_seen": [],
    "contact_form_seen": true,
    "big_name": false,
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/llyn-roberts.json",
    "skip_reason": null
   },
   {
@@ -912,8 +912,8 @@
    "emails_seen": [],
    "contact_form_seen": true,
    "big_name": false,
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/nicholas-pearson.json",
    "skip_reason": null
   },
   {
@@ -934,8 +934,8 @@
    ],
    "contact_form_seen": true,
    "big_name": true,
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/padraig-o-tuama.json",
    "skip_reason": null
   },
   {
@@ -953,8 +953,8 @@
    "emails_seen": [],
    "contact_form_seen": true,
    "big_name": false,
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/danielle-dulsky.json",
    "skip_reason": null
   },
   {
@@ -972,9 +972,9 @@
    "emails_seen": [],
    "contact_form_seen": true,
    "big_name": false,
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Mainly corporate creativity and leadership training; the spiritual side (qigong classes with no current schedule or price, ageing-framed videos, a free PDF) is too slight for a proper page under the strict rules. Plan kept in the scratchpad (om-work-41/dropped/)."
   },
   {
    "rank": 46,
@@ -993,8 +993,8 @@
    ],
    "contact_form_seen": false,
    "big_name": true,
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/damien-echols.json",
    "skip_reason": null
   },
   {
@@ -1123,5 +1123,5 @@
    "skip_reason": "No public presence beyond Omega: no website on his Omega page, the Pandora Healing Center of New Jersey he founded has no site that resolves or turns up in a search, so there is no published email, contact form or photo source; his only Omega appearance is a supporting slot on the multi-teacher Wisdom of Reiki Conference, and his Omega bio describes a mainly therapeutic (counselling-based) practice."
   }
  ],
- "updated": "2026-10-31T21:36:10.579Z"
+ "updated": "2026-10-31T21:48:49.222Z"
 }

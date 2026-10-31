@@ -63,8 +63,8 @@
    ],
    "big_name": false,
    "note": null,
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/schuyler-grant.json",
    "skip_reason": null
   },
   {
@@ -86,9 +86,9 @@
    ],
    "big_name": false,
    "note": null,
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Too thin to build a proper page: she has no website or YouTube channel of her own, her Commune classes are membership-only with no course page, and her Kula Yoga Project trainings and retreats sit on a Cloudflare-protected booking site that could not be checked, leaving only two podcast interviews. A published address (nikki@kulayoga.com, kulayoga.com/faqs) does exist; she co-directs Kula with Schuyler Grant (rank 1), so a later Kula Yoga Project listing could cover her."
   },
   {
    "rank": 3,
@@ -105,8 +105,8 @@
    ],
    "big_name": true,
    "note": "Agape International Spiritual Center founder.",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/michael-b-beckwith.json",
    "skip_reason": null
   },
   {
@@ -128,9 +128,9 @@
    ],
    "big_name": false,
    "note": null,
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Too thin and no contact route: no website, YouTube channel or social account of his own was found, his Commune classes are membership-only, and the only other trace is a short teacher profile at Supta Yoga Nantucket (union.fit, behind a Cloudflare challenge); no published email or contact form, and no usable photo confirmed."
   },
   {
    "rank": 5,
@@ -147,8 +147,8 @@
    ],
    "big_name": false,
    "note": null,
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/mary-beth-larue.json",
    "skip_reason": null
   },
   {
@@ -162,8 +162,8 @@
    ],
    "big_name": false,
    "note": null,
-   "status": "todo",
-   "plan": null,
+   "status": "planned",
+   "plan": "docs/content-audits/caley-alyssa.json",
    "skip_reason": null
   },
   {
@@ -185,8 +185,8 @@
    ],
    "big_name": true,
    "note": null,
-   "status": "todo",
-   "plan": null,
+   "status": "planned",
+   "plan": "docs/content-audits/danielle-laporte.json",
    "skip_reason": null
   },
   {
@@ -200,8 +200,8 @@
    ],
    "big_name": false,
    "note": null,
-   "status": "todo",
-   "plan": null,
+   "status": "planned",
+   "plan": "docs/content-audits/jennifer-elliott.json",
    "skip_reason": null
   },
   {
@@ -253,8 +253,8 @@
    ],
    "big_name": true,
    "note": null,
-   "status": "todo",
-   "plan": null,
+   "status": "planned",
+   "plan": "docs/content-audits/light-watkins.json",
    "skip_reason": null
   },
   {
@@ -268,8 +268,8 @@
    ],
    "big_name": false,
    "note": null,
-   "status": "todo",
-   "plan": null,
+   "status": "planned",
+   "plan": "docs/content-audits/eoin-finn.json",
    "skip_reason": null
   },
   {
@@ -283,9 +283,9 @@
    ],
    "big_name": false,
    "note": null,
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Too thin and no way to contact him: no website of his own, no published email or contact form, no YouTube channel or books, only membership classes on Commune and Wanderlust TV, and a personal Instagram (@fuzzymuzzy33, 2,868 followers). A 2020 Wanderlust profile is the only biography found; a YouTube upload titled '333 Stephen's Memorial Video' (Naomi Moore) turned up in a search for his name, so a human may want to check whether he is still teaching."
   },
   {
    "rank": 14,
@@ -298,9 +298,9 @@
    ],
    "big_name": false,
    "note": null,
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Health-framed: her site (radicallyloved.com) now presents her as a 'mindfulness and mental health coach', and her paid coaching and topic pages are sold on anxiety, burnout recovery, insomnia, men's mental health and perimenopause/menopause symptoms, while her YouTube channel (64.2K) is mostly menopause, hormone and medical interviews. Once the health rule is applied, little remains beyond her book You Are Radically Loved, her Headspace classes and a membership-only Commune class. She has a published (agency) email, teamrosie@buchwald.com, if the owner wants to reconsider."
   },
   {
    "rank": 15,
@@ -411,8 +411,8 @@
    ],
    "big_name": false,
    "note": null,
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/tracee-stanley.json",
    "skip_reason": null
   },
   {
@@ -426,8 +426,8 @@
    ],
    "big_name": false,
    "note": null,
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/chelsea-jackson-roberts.json",
    "skip_reason": null
   },
   {
@@ -441,8 +441,8 @@
    ],
    "big_name": true,
    "note": null,
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/lynne-twist.json",
    "skip_reason": null
   },
   {
@@ -456,8 +456,8 @@
    ],
    "big_name": false,
    "note": null,
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/shelly-tygielski.json",
    "skip_reason": null
   },
   {
@@ -471,9 +471,9 @@
    ],
    "big_name": false,
    "note": "Off the Mat, Into the World co-founder; also a somatic therapist: check fit.",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Her work is mainly somatic psychology and trauma-focused training: after 15 years as a clinician (Somatic Experiencing, MA counselling psychology), she now trains organisations in trauma-informed care, sells a 'Yoga for Trauma' manual and 'Mindful Minutes' practices to 'reduce anxiety', and her only solo book is Peace from Anxiety. Under the health and therapy rules almost nothing passes, and her Commune course is a shared Off the Mat, Into the World course led mainly by Seane Corn (already listed)."
   },
   {
    "rank": 26,
@@ -619,5 +619,5 @@
    "skip_reason": null
   }
  ],
- "updated": "2026-10-31T21:29:56.128Z"
+ "updated": "2026-10-31T21:49:38.360Z"
 }
