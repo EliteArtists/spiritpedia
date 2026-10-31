@@ -71,11 +71,18 @@ The list to pick up from. Each points to where the detail lives.
 12. **Near You is never empty** (plan first; not built). If nobody is in the
     user's area, show the closest practitioners with their distance under a
     **"Closest to you"** heading. App 1.0.1 and website.
-13. **Hub sprints** (§18.7). Next: The Shift Network's missing teachers, in
-    the order of `the-shift-network-faculty.json` (Suzanne Giesemann, Robert
-    Moss, Marie Manuchehri, Master Helen Liang, Cyndi Dale…), each with full
-    content and linked to the hub. Course titles with "Medical" in them need
-    the health-claim check.
+13. **Hub sprints** (§18.7). The Shift Network sprint 1 is done (100
+    teachers, ranks 1–116; `docs/content-audits/shift-sprint-1/`). Next:
+    sprint 2 from rank 117 (Judith Orloff, Ken Cohen, Sarah McCrum, Tyler
+    Odysseus…) with the same brief and tools (`BRIEF.md`, `sprint.mjs`,
+    `review.py`). Course titles with "Medical" in them need the health-claim
+    check.
+14. **Image audit: single-photo teachers** (owner, 31 Oct 2026). From Shift
+    sprint 1, only one confirmed photo: Jean Else, Richard Gordon, Neil
+    Douglas-Klotz, Rob Schwartz, Master Alex Dong, Linda Star Wolf, Master
+    Faye Li Yip, Gary Kraftsow, Trisha McCagh, John Stuart Reid, Dr. Karen
+    Frances McCarthy, Lynn McKenzie. Find up to two more photos that are
+    clearly them.
 
 ---
 
@@ -1930,7 +1937,11 @@ Timeless Teachers with a lifespan (`1931 — 2015`, or `b. 1931`). Guidance,
 shown in admin and matching the star's tips: Superhero / Superstar ≈ worldwide
 reach, 1M+ followers across social media; Luminary / Shining Star ≈ hundreds of
 thousands; Local Hero ≈ a practitioner available in their area; Rising Star ≈
-growing, under 100k. On cards the tier (with ✓ Verified, or OFFICIAL) sits
+growing, under 100k. **Editorial-stature rule** (owner, 31 Oct 2026): follower
+counts that can be read without logging in decide the tier, with the evidence
+recorded; the owner may raise a teacher whose standing clearly exceeds them
+(a major author in their field, the founder of a hub), and the reason is
+recorded in the plan (`sprint.tier_override`). On cards the tier (with ✓ Verified, or OFFICIAL) sits
 top left, the heart top right, a channel's type bottom right.
 
 Every listing except Spiritpedia shows its tier, on cards and profiles,
@@ -2423,6 +2434,7 @@ dev, give the pages to check, stop. Live after their OK, as for healers.
 | Reiki batch 2: Nathalie Jaspar (Local Hero, New York City), Torsten Lange (Local Hero, London), Melissa Crowhurst (Luminary), Bronwen Logan (Local Hero, Mount Tomah, Australia), Frans Stiene (Luminary, profile only); top-ups for Andrea Kennedy and Jillian (The Lune INNATE) | 30 Oct 2026: Nathalie 19 videos, 3 books, 3 offerings (her certification left out until her schedule is confirmed); Torsten 20 videos, 3 books, 12 offerings (past-dated workshops, the Mediumship workshop and the January Challenge left out); Melissa 17 videos (2 music videos left out, 1 can't be embedded), 17 books, 26 offerings; Bronwen 19 videos (the music video left out), 3 solo books, 21 offerings, the free Waka Wisdom Day 1; Andrea 1 video; Jillian 2 offerings. Removed under the health-claim rule: Jillian's "Reiki for Clearing Depression…" and "REIKI FOR WEIGHT LOSS" videos; "psychic surgery" taken out of her Reiki Level III description; "PLEASE READ BIO" taken off one title; Andrea's closed course Channel Your Divine Self removed (logs: `reiki-batch-2-fixes.<env>.json`). Frans's books 870, 871, 878, 879, 880 moved from Mikao Usui to him; Bronwen co-author on the Sourcebook and The Japanese Art of Reiki | 30 Oct 2026, the same |
 | White Tiger Qigong (new School, Luminary, founded 2008) with Tevia Feng (founder, Luminary), Sarah Divine, Ariel Tang, Joanne Faulkner and Vince Sauter (instructors, Local Hero); Skies and Flora changed from Channel to School, Shaka linked as its founder (`white-tiger-qigong.md`, `*-content.json`) | 30 Oct 2026: White Tiger 20 videos, 11 offerings (membership, 6 certification tracks, 4 Vietnam retreats), 2 free resources; Tevia 2 books, the Prescription System (his teaching videos are on the school; no YMAA book on Amazon, only a DVD; 8 Trigram only as a Japanese Kindle edition, left out); Sarah 14 videos, 4 offerings; Ariel 13 videos, 4 offerings, 2 free resources (Egypt pilgrimage past); Joanne 20 videos, 2 books, 2 offerings, 2 free resources, YouTube corrected to @ChiFlowWithJo; Vince 14 videos, 2 offerings, 2 free resources, YouTube corrected to @vincesauter5290 ("Everyday All Day" not on Amazon). Left out under the health-claim rule: 13 videos, Joanne's Wise Women retreat, Parkinson's material and four courses. Isaac Osborne and Natalie Ramon on hold (no confirmed photo); Wendy Jones left out (location unverified) | 30 Oct 2026, the same |
 | Hubs: The Shift Network changed from Channel to Organisation, its 16 teachers already on Spiritpedia linked (`the-shift-network-teachers.json`; Gregg Braden, Lynne McTaggart and Donna Eden left out, no faculty profile); its full faculty saved as the sprint pipeline (`the-shift-network-faculty.json`, 477 not yet on Spiritpedia). Frans Stiene's items (fresh research, `frans-stiene-content.json`) | 30 Oct 2026: Frans 19 videos, 4 books (Discovering Reiki; Your Reiki Treatment, the A–Z Reiki Pocketbook and the Reiki Techniques Card Deck with Bronwen Logan as co-author), 22 offerings (membership, 7 recorded courses, 2 online events, 13 dated in-person courses and retreats), 2 free resources (the Grounding Room left out: its page mentions recovery from illness). 9 of his videos moved from Mikao Usui to him; 3 under 2 minutes removed (log: `frans-stiene-videos.<env>.json`). Boho Beautiful and Breathe and Flow stay Channels | 30 Oct 2026, the same |
+| Hubs: The Shift Network sprint 1, 100 new teachers from its faculty list (ranks 1–116), each linked "Teaches on The Shift Network" (Stephen Dinan and Devaa Haley Mitchell as founders); plans, logs, brief, progress and report in `docs/content-audits/shift-sprint-1/` (`REPORT.md`: tier evidence, email sources, every flag) | 31 Oct 2026: 1,072 videos, 209 books, 515 offerings, 98 free resources. Tiers from readable follower counts (mostly YouTube; Instagram/Facebook need a login): 15 Luminary, 85 Local Hero, of which 6 raised by the owner under the new editorial-stature rule (Matthew Fox, Richard Tarnas, Cyndi Dale, Philip Carr-Gomm, Robert Moss, Stephen Dinan). Email: 83 published, 14 contact form only, 3 none. 16 skipped: 11 mainly medical or condition-based, Diana Beaulieu and Martha Peterson (whole brand fails the health-claim rule), Liesel Fricke (shares everything with Rob Schwartz), Simon Sanud (nothing public), Megan SolarGlow (left out by the owner: conspiracy-theory content). Medical intuition, Medical Qigong, condition-named courses and already-started dated courses left out throughout; The Physics of Angels linked to Rupert Sheldrake as co-author | 31 Oct 2026, the same |
 
 ### 18.7 Hub-by-hub sprints (the standard method)
 

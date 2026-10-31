@@ -1,0 +1,232 @@
+{
+  "healer": {
+    "healer_slug": "john-stuart-reid",
+    "create": {
+      "name": "John Stuart Reid",
+      "bio": "John Stuart Reid is an acoustics researcher whose career in sound spans around five decades. He is best known as the inventor of the CymaScope, an instrument that uses the surface of pure water to make the patterns of sound visible, and he founded Sonic Age Ltd in the UK, with a later American division, to develop and research it. His studies have ranged from the geometry of musical notes and the human voice to dolphin sounds and acoustic experiments in the King's Chamber of the Great Pyramid, which he wrote up as Egyptian Sonics.\n\nHe teaches cymatics, the study of visible sound, through lectures, conference talks and interviews in Europe and America, explaining the physics of sound and the history of the field in plain terms. He writes short studies on subjects such as the pioneer Margaret Watts-Hughes, concert pitch, and the link between sound and light, which are sold as downloads through the CymaScope shop, and he directs research with collaborators across several sciences. He also teaches online courses on sonic science and cymatics through The Shift Network.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "worldwide",
+      "city": null,
+      "country": null,
+      "subjects": [
+        "conscious-science",
+        "sound-healing",
+        "sacred-geometry"
+      ],
+      "website_url": "https://cymascope.com/",
+      "booking_url": "https://soundmadevisible.com/",
+      "youtube_url": "https://www.youtube.com/@cymascope4986",
+      "instagram_url": null,
+      "facebook_url": "https://www.facebook.com/The-Cymascope-302440473133126/",
+      "twitter_url": "https://twitter.com/CymaCymascope",
+      "tiktok_url": null,
+      "contact_email": null,
+      "image_urls": [
+        "https://cymascope.com/wp-content/uploads/2021/03/JSR-headshot_blur.png"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "the-shift-network",
+      "role": "instructor"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Secrets of Cymatics II, a lecture by John Stuart Reid",
+      "url": "https://www.youtube.com/watch?v=K8w_frOvfGo",
+      "subjects": [
+        "conscious-science",
+        "sound-healing"
+      ],
+      "channel": "CymaScope"
+    },
+    {
+      "title": "The Shape of Sound featuring John Stuart Reid",
+      "url": "https://www.youtube.com/watch?v=GlkIxpuF43o",
+      "subjects": [
+        "conscious-science",
+        "sacred-geometry"
+      ],
+      "channel": "soundhealingresource"
+    },
+    {
+      "title": "Secrets of Cymatics",
+      "url": "https://www.youtube.com/watch?v=uMK3OVBjx2Q",
+      "subjects": [
+        "conscious-science",
+        "sound-healing"
+      ],
+      "channel": "CymaScope"
+    },
+    {
+      "title": "Secrets of Cymatics III: Four postulated laws of cymatics",
+      "url": "https://www.youtube.com/watch?v=5FaGUIY9_dM",
+      "subjects": [
+        "conscious-science",
+        "sacred-geometry"
+      ],
+      "channel": "CymaScope"
+    },
+    {
+      "title": "Sound is an aspect of life, but is life an aspect of sound?",
+      "url": "https://www.youtube.com/watch?v=VqMl-W8H7T0",
+      "subjects": [
+        "conscious-science"
+      ],
+      "channel": "CymaScope"
+    },
+    {
+      "title": "Interview with John Stuart Reid about cymatics, sound healing and the Cymascope",
+      "url": "https://www.youtube.com/watch?v=cniCw7UzmDo",
+      "subjects": [
+        "sound-healing",
+        "conscious-science"
+      ],
+      "channel": "Heather Ensworth"
+    },
+    {
+      "title": "CymaGlyph Demos with John Stuart Reid",
+      "url": "https://www.youtube.com/watch?v=EfCJTU8uL7A",
+      "subjects": [
+        "sacred-geometry",
+        "conscious-science"
+      ],
+      "channel": "soundhealingresource"
+    },
+    {
+      "title": "Acoustic CymaScope tutorial",
+      "url": "https://www.youtube.com/watch?v=NaDn7VGBBZY",
+      "subjects": [
+        "conscious-science"
+      ],
+      "channel": "CymaScope"
+    },
+    {
+      "title": "John Stuart Reid's Water Conference 2018 presentation excerpt",
+      "url": "https://www.youtube.com/watch?v=8_K44SXa0zU",
+      "subjects": [
+        "conscious-science"
+      ],
+      "channel": "CymaScope"
+    },
+    {
+      "title": "The Science of Visible Sound with John Stuart Reid",
+      "url": "https://www.youtube.com/watch?v=fijpdR_AJ1k",
+      "subjects": [
+        "conscious-science",
+        "sound-healing"
+      ],
+      "channel": "Dr. Karen Parker"
+    },
+    {
+      "title": "The Art & Science of Cymatics   John Stuart Reid",
+      "url": "https://www.youtube.com/watch?v=dzyzcyrs6Aw",
+      "subjects": [
+        "conscious-science",
+        "sacred-geometry"
+      ],
+      "channel": "Song of the Sang Real"
+    }
+  ],
+  "books": [],
+  "courses": [
+    {
+      "title": "Egyptian Sonics – PDF Download",
+      "url": "https://soundmadevisible.com/product/egyptian-sonics/",
+      "description": "Reid's account of acoustic experiments he carried out in the King's Chamber of the Great Pyramid, ending in a cymatics study of the granite sarcophagus. He asks whether the ancient Egyptians had a working knowledge of sound and used it in ritual.",
+      "price": "$10.00 USD",
+      "product_type": "download",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "ancient-wisdom",
+        "conscious-science"
+      ],
+      "image": "https://soundmadevisible.com/wp-content/uploads/2018/10/Egyptian-Sonics.jpg"
+    },
+    {
+      "title": "Egyptian Rebirth Sonic Rituals – PDF",
+      "url": "https://soundmadevisible.com/product/egyptian-rebirth-sonic-rituals/",
+      "description": "An article that walks through the Great Pyramid chamber by chamber, looking at its features through the lens of acoustics. It considers features such as the Grand Gallery, the shafts and the Giant Step.",
+      "price": "$4.99 USD",
+      "product_type": "download",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "ancient-wisdom",
+        "conscious-science"
+      ],
+      "image": "https://soundmadevisible.com/wp-content/uploads/2026/02/Egyptian-Sonic-rebirth-book.png"
+    },
+    {
+      "title": "Sound Gives Birth to Light – PDF Download",
+      "url": "https://soundmadevisible.com/product/sound-gives-birth-to-light/",
+      "description": "A short study of the relationship between sound and light, including how sound can be converted into light. Written for general readers curious about the physics of sound.",
+      "price": "$4.99 USD",
+      "product_type": "download",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "conscious-science"
+      ],
+      "image": "https://soundmadevisible.com/wp-content/uploads/2018/08/Sound-Gives-Birth.jpg"
+    },
+    {
+      "title": "Conversations with Dolphins – PDF Download",
+      "url": "https://soundmadevisible.com/product/conversations-with-dolphins/",
+      "description": "An account of research using the CymaScope to turn dolphin sounds into images, and of experiments suggesting dolphins may use sound pictures to communicate.",
+      "price": "$4.99 USD",
+      "product_type": "download",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "conscious-science"
+      ],
+      "image": "https://soundmadevisible.com/wp-content/uploads/2018/10/Conv-dolphins.jpg"
+    },
+    {
+      "title": "The Curious Concert Pitch Conflict – PDF Download",
+      "url": "https://soundmadevisible.com/product/the-curious-concert-pitch-conflict-available-in-english-spanish-french-german-pdf-download/",
+      "description": "A history of musical pitch from ancient times through Pythagoras and the Renaissance to the modern debate over A = 432 Hz and A = 440 Hz. Available in English, Spanish, French and German.",
+      "price": "$4.99 USD",
+      "product_type": "download",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "sound-healing",
+        "conscious-science"
+      ],
+      "image": "https://soundmadevisible.com/wp-content/uploads/2019/02/Concert-Pitch.jpg"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "rank": 116,
+    "shift_profile": "https://theshiftnetwork.com/shift_teacher/17215",
+    "tier_evidence": "YouTube 20.3K subscribers (CymaScope channel @cymascope4986, his company's channel, 31 Oct 2026); Facebook 'The Cymascope' 10,184 followers (og:description); X @CymaCymascope 438; Instagram @cymascope 107 → ~31k total → local_hero",
+    "email": "contact form",
+    "email_source": null,
+    "contact_form_url": "https://cymascope.com/contact/",
+    "flags": [
+      "Strict health-claim rule applied: all three of his Shift Network courses (Advanced Frequency Medicine; Secrets of Cymatics & Sonic Science; Explore the Secrets of Sonic Science & Cymatics) name pain, cancer, inflammation, immunity and similar, so none is listed; his Shift bio itself mentions cancer-cell research, which the bio here leaves out.",
+      "His social accounts are the CymaScope brand accounts rather than personal ones; the YouTube channel and Facebook page are the company's (he founded it).",
+      "Only one photo found (same headshot on cymascope.com and his Shift page); the 341 px cymascope.com version is used.",
+      "Interview videos on other channels (soundhealingresource, Heather Ensworth, Dr. Karen Parker, Song of the Sang Real) are kept as he is the main speaker; a reviewer may want to check they don't drift into health claims.",
+      "The download studies are short PDFs sold in the CymaScope shop; they are listed as offerings because none is on Amazon."
+    ],
+    "left_out": [
+      "Shift Network courses Advanced Frequency Medicine, Secrets of Cymatics & Sonic Science, and Explore the Secrets of Sonic Science & Cymatics: health claims (pain, cancer, inflammation, immunity) and 'medicine' in the title.",
+      "Sound Therapy 101, Sound Therapy 201 and The Therapeutic Power of Vocal Sound (PDFs): therapy and health subject matter, left out under the strict rule.",
+      "The Eidophone Voice Figures (PDF): Margaret Watts-Hughes' own booklet, not authored by him.",
+      "The Curious Concert Pitch Conflict Part 2: kept to one item for the series.",
+      "Videos: 'Sound Therapy & Music Medicine Presentation for the Globe Institute', 'How sound repairs red blood cells', cancer-cell signature clip, and the Shift Network livestream (hub channel); music-only clips, demos under 2 minutes and the course invitation.",
+      "CymaScope devices, the CymaScope app, DNA Voice Signature and Sound Made Visible prints: products, not teaching.",
+      "Paid consultancy answers via the contact form ($25 to $50): not a teaching offering.",
+      "No books by him found on Amazon (he provided cymatic photography for Frank Perry's Himalayan Sound Revelations, but is not the author)."
+    ]
+  },
+  "images_final": true
+}

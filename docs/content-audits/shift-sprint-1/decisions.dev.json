@@ -1,0 +1,62 @@
+{
+  "env": "dev",
+  "at": "2026-10-31T01:19:39.964Z",
+  "changes": [
+    {
+      "table": "healers",
+      "id": 284,
+      "slug": "matthew-fox",
+      "field": "tier",
+      "from": "local_hero",
+      "to": "luminary"
+    },
+    {
+      "table": "healers",
+      "id": 241,
+      "slug": "richard-tarnas",
+      "field": "tier",
+      "from": "local_hero",
+      "to": "luminary"
+    },
+    {
+      "table": "healers",
+      "id": 196,
+      "slug": "cyndi-dale",
+      "field": "tier",
+      "from": "local_hero",
+      "to": "luminary"
+    },
+    {
+      "table": "healers",
+      "id": 198,
+      "slug": "philip-carr-gomm",
+      "field": "tier",
+      "from": "local_hero",
+      "to": "luminary"
+    },
+    {
+      "table": "healers",
+      "id": 193,
+      "slug": "robert-moss",
+      "field": "tier",
+      "from": "local_hero",
+      "to": "luminary"
+    },
+    {
+      "table": "healers",
+      "id": 218,
+      "slug": "stephen-dinan",
+      "field": "tier",
+      "from": "local_hero",
+      "to": "luminary"
+    },
+    {
+      "table": "hub_teachers",
+      "id": "89a99c39-e996-4c0e-aa58-3f5ffb63bf24",
+      "slug": "devaa-haley-mitchell",
+      "field": "role",
+      "from": "instructor",
+      "to": "founder"
+    }
+  ]
+}

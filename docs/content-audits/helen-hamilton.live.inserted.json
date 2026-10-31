@@ -1,0 +1,183 @@
+{
+  "env": "live",
+  "healer": {
+    "id": 258,
+    "healer_slug": "helen-hamilton"
+  },
+  "rows": [
+    {
+      "table": "videos",
+      "id": 3652,
+      "slug": "core-teaching-part-1-meditation",
+      "title": "Core Teaching Part 1 - Meditation"
+    },
+    {
+      "table": "videos",
+      "id": 3653,
+      "slug": "rest-here-with-me-guided-meditation",
+      "title": "Rest Here With Me - Guided Meditation"
+    },
+    {
+      "table": "videos",
+      "id": 3654,
+      "slug": "guided-meditation-loving-acceptance-of-this-moment",
+      "title": "Guided Meditation - Loving Acceptance Of This Moment"
+    },
+    {
+      "table": "videos",
+      "id": 3655,
+      "slug": "core-teachings-part-2-contemplation",
+      "title": "Core Teachings Part 2 - Contemplation"
+    },
+    {
+      "table": "videos",
+      "id": 3656,
+      "slug": "the-only-4-facts-to-examine-for-a-full-awakening",
+      "title": "The only 4 facts to examine for a full awakening"
+    },
+    {
+      "table": "videos",
+      "id": 3657,
+      "slug": "how-to-permanently-stop-the-mind-without-force-or-effort",
+      "title": "How to Permanently Stop the Mind — Without Force or Effort"
+    },
+    {
+      "table": "videos",
+      "id": 3658,
+      "slug": "core-teaching-part-3-self-inquiry",
+      "title": "Core Teaching Part 3 - Self Inquiry"
+    },
+    {
+      "table": "videos",
+      "id": 3659,
+      "slug": "contemplation-the-antidote-to-believing-thoughts",
+      "title": "Contemplation - The Antidote to Believing Thoughts"
+    },
+    {
+      "table": "videos",
+      "id": 3660,
+      "slug": "living-without-our-stories-guided-meditation",
+      "title": "Living Without Our Stories - Guided Meditation"
+    },
+    {
+      "table": "videos",
+      "id": 3661,
+      "slug": "the-attentionless-state",
+      "title": "The Attentionless State"
+    },
+    {
+      "table": "videos",
+      "id": 3662,
+      "slug": "theres-no-thinker-just-thoughts",
+      "title": "There's no thinker -just thoughts!"
+    },
+    {
+      "table": "videos",
+      "id": 3663,
+      "slug": "where-am-i-really-guided-self-inquiry",
+      "title": "Where am I really? -  Guided Self Inquiry"
+    },
+    {
+      "table": "books",
+      "id": 1349,
+      "slug": "dissolving-the-ego",
+      "title": "Dissolving The Ego"
+    },
+    {
+      "table": "books",
+      "id": 1350,
+      "slug": "transcending-the-mind",
+      "title": "Transcending The Mind: Some Disassembly Required!: How to take apart your noisy mind"
+    },
+    {
+      "table": "books",
+      "id": 1351,
+      "slug": "reality-check-a-simple-guide-to-final-enlightenment",
+      "title": "Reality Check: A Simple Guide to Final Enlightenment"
+    },
+    {
+      "table": "books",
+      "id": 1352,
+      "slug": "how-to-fall-in-love-with-yourself",
+      "title": "How to Fall in Love with Yourself"
+    },
+    {
+      "table": "books",
+      "id": 1353,
+      "slug": "hamilton-gita-musings-from-the-one",
+      "title": "Hamilton Gita: Musings from the One"
+    },
+    {
+      "table": "books",
+      "id": 1354,
+      "slug": "empowerment-course-handbook",
+      "title": "Empowerment Course Handbook"
+    },
+    {
+      "table": "courses",
+      "id": "9798a921-37c9-44eb-ac4a-53f460f71019",
+      "slug": "helen-hamilton-sangha",
+      "title": "Helen Hamilton Sangha"
+    },
+    {
+      "table": "courses",
+      "id": "443a572a-8b2f-4a0b-91f7-1da7d6f7023d",
+      "slug": "being-the-loving-awareness-weekend-intensive-in-beavercreek-ohio",
+      "title": "Being the Loving Awareness: Weekend Intensive in Beavercreek, Ohio"
+    },
+    {
+      "table": "courses",
+      "id": "3de88c7d-ccd2-46ea-8a81-561002a92ab1",
+      "slug": "embodying-silence-and-wisdom-weekend-intensive-in-leeds",
+      "title": "Embodying Silence and Wisdom: Weekend Intensive in Leeds"
+    },
+    {
+      "table": "courses",
+      "id": "17b25804-92bb-485f-b7a5-37e4dde2117c",
+      "slug": "awakening-to-truth-weekend-intensive-in-madrid",
+      "title": "Awakening To Truth: Weekend Intensive in Madrid"
+    },
+    {
+      "table": "courses",
+      "id": "992b34d4-6e99-425a-a706-c5dec98fc5c1",
+      "slug": "living-as-the-loving-presence-retreat-recordings",
+      "title": "Living As The Loving Presence Retreat (recordings)"
+    },
+    {
+      "table": "courses",
+      "id": "46d2f075-6cd9-4cdb-aea3-bdeccfd1610e",
+      "slug": "beyond-seeking-into-freedom-retreat-recordings",
+      "title": "Beyond Seeking, Into Freedom Retreat (recordings)"
+    },
+    {
+      "table": "courses",
+      "id": "825438e2-7cc9-4aa6-9145-3ab97d86e1e5",
+      "slug": "living-from-the-heart-embodying-wisdom-intensive-recordings",
+      "title": "Living From The Heart - Embodying Wisdom Intensive (recordings)"
+    },
+    {
+      "table": "free_resources",
+      "id": "ccfe5598-a45d-4799-b861-203780ca64be",
+      "slug": "free-ebooks-by-helen-hamilton",
+      "title": "Free Ebooks by Helen Hamilton"
+    },
+    {
+      "table": "free_resources",
+      "id": "bf8fedf7-bd49-44bc-b559-db93ec16715d",
+      "slug": "free-satsangs-with-helen-hamilton",
+      "title": "Free Satsangs with Helen Hamilton"
+    },
+    {
+      "table": "free_resources",
+      "id": "c14cbe1d-e116-489f-a955-4790b72d56df",
+      "slug": "free-downloads-guided-meditations-and-readings",
+      "title": "Free Downloads: Guided Meditations and Readings"
+    },
+    {
+      "table": "hub_teachers",
+      "id": "640c9bde-65b0-49ac-a621-0c5c5cbb3bce",
+      "title": "helen-hamilton teaches at The Shift Network"
+    }
+  ],
+  "at": "2026-10-31T01:35:18.164Z"
+}

@@ -1,0 +1,51 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 208,
+    "healer_slug": "jean-else"
+  },
+  "rows": [
+    {
+      "table": "videos",
+      "id": 2986,
+      "slug": "the-life-work-legacy-of-mavis-pittilla-with-jean-else",
+      "title": "The Life, Work & Legacy of Mavis Pittilla with Jean Else"
+    },
+    {
+      "table": "videos",
+      "id": 2987,
+      "slug": "mavis-pittilla-behind-the-medium-willa-white-and-jean-else",
+      "title": "Mavis Pittilla: Behind the Medium - Willa White and Jean Else"
+    },
+    {
+      "table": "courses",
+      "id": "26ff11be-0061-4946-ba73-9737d2009aa4",
+      "slug": "the-evidential-mediumship-academy-essentials-training",
+      "title": "The Evidential Mediumship Academy - Essentials Training"
+    },
+    {
+      "table": "courses",
+      "id": "f9427fed-7b10-4c79-bc97-8a17dc781822",
+      "slug": "the-evidential-mediumship-academy-skill-building",
+      "title": "The Evidential Mediumship Academy — Skill Building"
+    },
+    {
+      "table": "courses",
+      "id": "6a0b1eb8-f82f-4b98-b944-82b892b3beb5",
+      "slug": "mavis-pittillas-legacy-program-6-week-introduction",
+      "title": "Mavis Pittilla's Legacy Program – 6 Week Introduction"
+    },
+    {
+      "table": "free_resources",
+      "id": "2d33a055-70cb-41cf-b9d4-43d9d4f29f9b",
+      "slug": "mavis-pittillas-pearls-free-video-tutorials",
+      "title": "Mavis Pittilla's Pearls: free video tutorials"
+    },
+    {
+      "table": "hub_teachers",
+      "id": "7109f0b7-ea41-4dc0-bc1d-be0581c0f8ba",
+      "title": "jean-else teaches at The Shift Network"
+    }
+  ],
+  "at": "2026-10-30T23:34:06.771Z"
+}

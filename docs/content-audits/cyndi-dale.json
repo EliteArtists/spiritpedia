@@ -1,0 +1,474 @@
+{
+  "healer": {
+    "healer_slug": "cyndi-dale",
+    "create": {
+      "name": "Cyndi Dale",
+      "bio": "Cyndi Dale is an American intuitive energy healer, author and teacher based in Minnesota. She studied English and philosophy, worked towards a master's degree in divinity at Bethel University, and trained in shamanism, Therapeutic Touch, intuitive healing and the Lakota Way. Over several decades she has given private intuitive sessions to tens of thousands of clients and led workshops across the Americas, Europe, Africa and China.\n\nHer teaching centres on the subtle body: an expanded twelve-chakra system, the auric fields, kundalini and the energetic boundaries between people. She has written more than 40 books, published in some 20 languages, including The Subtle Body: An Encyclopedia of Your Energetic Anatomy, Llewellyn's Complete Book of Chakras and Energetic Boundaries. Cyndi teaches through self-paced video courses on The Shift Network, her own online classes and audio programmes, and small in-person retreats, mixing clear explanation with guided meditations and practical exercises for developing intuition and working with energy.",
+      "tier": "luminary",
+      "entity_type": "individual",
+      "availability": "worldwide",
+      "city": null,
+      "country": null,
+      "subjects": [
+        "energy-medicine",
+        "chakra-healing",
+        "spirituality"
+      ],
+      "website_url": "https://www.cyndidale.com",
+      "booking_url": "https://www.cyndidale.com/learn",
+      "youtube_url": "https://www.youtube.com/@CyndiDale-Energy",
+      "instagram_url": "https://www.instagram.com/cyndidaleenergy",
+      "facebook_url": "https://www.facebook.com/EssentialEnergyWithCyndiDale",
+      "twitter_url": "https://x.com/CyndiDale",
+      "tiktok_url": null,
+      "contact_email": "support@cyndi-dale.com",
+      "image_urls": [
+        "https://theshiftnetwork.com/sites/files/faculty/CyndiDale.jpg",
+        "https://yt3.googleusercontent.com/Rg4aSmhrqkVuOEvS-rYy5AIHPw1MGGKjOr4OzG_wF9XCyRX_sCyQ5af382Ts0x7OkfV7Y4kijmM=s900",
+        "https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/file-uploads/themes/2163070451/settings_images/3bfd77-8abf-3a-324f-57c83d12bec0_79f45651-90e1-405b-988e-0acfcc978cc9.jpeg"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "the-shift-network",
+      "role": "instructor"
+    }
+  ],
+  "videos": [
+    {
+      "title": "After 40 Years of Teaching, Here's How I know Energy Healing Is Real",
+      "url": "https://www.youtube.com/watch?v=7daITeBpKFc",
+      "subjects": [
+        "energy-medicine"
+      ],
+      "channel": "Cyndi Dale"
+    },
+    {
+      "title": "Energy Healing Must Be Done In This Order (Or It Fails)",
+      "url": "https://www.youtube.com/watch?v=4c3WPrSTDJA",
+      "subjects": [
+        "energy-medicine",
+        "chakra-healing"
+      ],
+      "channel": "Cyndi Dale"
+    },
+    {
+      "title": "The First Real System For Energy Healing",
+      "url": "https://www.youtube.com/watch?v=gwl8fEA5Aes",
+      "subjects": [
+        "energy-medicine",
+        "chakra-healing"
+      ],
+      "channel": "Cyndi Dale"
+    },
+    {
+      "title": "The Energetic Reason You've Lost Self-Trust",
+      "url": "https://www.youtube.com/watch?v=UPNUhqUx428",
+      "subjects": [
+        "energy-medicine",
+        "chakra-healing"
+      ],
+      "channel": "Cyndi Dale"
+    },
+    {
+      "title": "You’re Not Crazy — You Have Energetic Gifts (3 Types Explained)",
+      "url": "https://www.youtube.com/watch?v=sEroxh-VnVQ",
+      "subjects": [
+        "energy-medicine",
+        "spirituality"
+      ],
+      "channel": "Cyndi Dale"
+    },
+    {
+      "title": "If You Overgive, This Is Why (And How to Stop)",
+      "url": "https://www.youtube.com/watch?v=YiiueZM_VD4",
+      "subjects": [
+        "energy-medicine",
+        "conscious-relationships"
+      ],
+      "channel": "Cyndi Dale"
+    },
+    {
+      "title": "7 Signs You Have a Energy Leech (and What To Do)",
+      "url": "https://www.youtube.com/watch?v=CBLrONOZ_jo",
+      "subjects": [
+        "energy-medicine"
+      ],
+      "channel": "Cyndi Dale"
+    },
+    {
+      "title": "This 3-Minute Sun Meditation Will Reset Your Energy Field",
+      "url": "https://www.youtube.com/watch?v=eWNIaLU-Oio",
+      "subjects": [
+        "meditation",
+        "energy-medicine"
+      ],
+      "channel": "Cyndi Dale"
+    },
+    {
+      "title": "Why This Morning Routine Works (Quick 3-Minute Guide)",
+      "url": "https://www.youtube.com/watch?v=Ia5vfc4llzI",
+      "subjects": [
+        "energy-medicine",
+        "self-healing"
+      ],
+      "channel": "Cyndi Dale"
+    },
+    {
+      "title": "My Son Doesn’t Believe Shame Is an Energy",
+      "url": "https://www.youtube.com/watch?v=AzIMcSRyYxE",
+      "subjects": [
+        "energy-medicine",
+        "shadow-work"
+      ],
+      "channel": "Cyndi Dale"
+    },
+    {
+      "title": "This Is How Energy Work Helps Heal Emotions",
+      "url": "https://www.youtube.com/watch?v=o4fJRN_7u-Y",
+      "subjects": [
+        "energy-medicine",
+        "self-healing"
+      ],
+      "channel": "Cyndi Dale"
+    },
+    {
+      "title": "11th dimension!",
+      "url": "https://www.youtube.com/watch?v=1DfygGk1_1g",
+      "subjects": [
+        "chakra-healing",
+        "spirituality"
+      ],
+      "channel": "Cyndi Dale"
+    }
+  ],
+  "books": [
+    {
+      "title": "The Subtle Body: An Encyclopedia of Your Energetic Anatomy",
+      "slug": "the-subtle-body-an-encyclopedia-of-your-energetic-anatomy",
+      "author": "Cyndi Dale",
+      "asin": "1591796717",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "An illustrated reference to the human energy system, drawing together chakras, meridians, auras and other subtle-energy models from traditions around the world. It is widely used by energy workers as a desk reference.",
+      "subjects": [
+        "energy-medicine",
+        "chakra-healing",
+        "ancient-wisdom"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1591796717.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "Llewellyn's Complete Book of Chakras",
+      "slug": "llewellyns-complete-book-of-chakras",
+      "author": "Cyndi Dale",
+      "asin": "0738739626",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "A large guide to the chakras and related energy systems, covering their history across cultures, how each centre is described, and practical exercises for working with them.",
+      "subjects": [
+        "chakra-healing",
+        "energy-medicine"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/0738739626.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "The Complete Book of Chakra Healing: Activate the Transformative Power of Your Energy Centers",
+      "slug": "the-complete-book-of-chakra-healing",
+      "author": "Cyndi Dale",
+      "asin": "0738715026",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "An expanded edition of her earlier New Chakra Healing, setting out her twelve-chakra system with its energy bodies and spiritual points, and techniques for working with each centre.",
+      "subjects": [
+        "chakra-healing",
+        "energy-medicine"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/0738715026.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "Energetic Boundaries: How to Stay Protected and Connected in Work, Love, and Life",
+      "slug": "energetic-boundaries",
+      "author": "Cyndi Dale",
+      "asin": "1604075619",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "Explains the idea of energetic boundaries around body, mind and spirit, and offers practical exercises for keeping them clear while staying open in relationships and at work.",
+      "subjects": [
+        "energy-medicine",
+        "conscious-relationships"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1604075619.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "Kundalini: Divine Energy, Divine Life",
+      "slug": "kundalini-divine-energy-divine-life",
+      "author": "Cyndi Dale",
+      "asin": "0738725889",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "An overview of kundalini energy as described in several spiritual traditions, with guidance on understanding a kundalini awakening and working with it safely.",
+      "subjects": [
+        "spiritual-awakening",
+        "chakra-healing",
+        "energy-medicine"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/0738725889.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "The Intuition Guidebook: How to Safely and Wisely Use Your Sixth Sense",
+      "slug": "the-intuition-guidebook",
+      "author": "Cyndi Dale",
+      "asin": "0982668791",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "A practical guide to developing intuition, describing different kinds of intuitive ability and giving steps for using each with care and discernment.",
+      "subjects": [
+        "spirituality",
+        "energy-medicine"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/0982668791.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "Awaken Clairvoyant Energy",
+      "slug": "awaken-clairvoyant-energy",
+      "author": "Cyndi Dale",
+      "asin": "0738751626",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "A short book from her Essential Energy Library on clairvoyance: how visual intuition works, and exercises for developing it in everyday life.",
+      "subjects": [
+        "spirituality",
+        "chakra-healing"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/0738751626.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "The Subtle Body Practice Manual: A Comprehensive Guide to Energy Healing",
+      "slug": "the-subtle-body-practice-manual",
+      "author": "Cyndi Dale",
+      "asin": "1604078790",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "A hands-on companion to The Subtle Body, turning the reference material into step-by-step techniques for practitioners working with the energy system.",
+      "subjects": [
+        "energy-medicine",
+        "chakra-healing"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1604078790.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "Illuminating the Afterlife: Your Soul's Journey Through the Worlds Beyond",
+      "slug": "illuminating-the-afterlife",
+      "author": "Cyndi Dale",
+      "asin": "1591799449",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "Describes her picture of the soul's journey after death through twelve spiritual planes, and what this can mean for how we live now.",
+      "subjects": [
+        "death-the-afterlife",
+        "spirituality"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1591799449.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "Beyond Soul Mates: Open Yourself to Higher Love Through the Energy of Attraction",
+      "slug": "beyond-soul-mates",
+      "author": "Cyndi Dale",
+      "asin": "0738734977",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "Looks at love and attraction through the lens of energy and karma, with practices for opening to healthier, more conscious partnerships.",
+      "subjects": [
+        "conscious-relationships",
+        "energy-medicine"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/0738734977.01._SCLZZZZZZZ_.jpg"
+    }
+  ],
+  "courses": [
+    {
+      "title": "Activate Your Clairvoyant Powers",
+      "url": "https://theshiftnetwork.com/course/03CDale06_26",
+      "description": "A seven-module self-paced video course on clairvoyance. Cyndi explains the different kinds of 'clear seeing' and how each relates to a chakra in her twelve-chakra model, with meditations and practices.",
+      "price": "$297 USD",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "chakra-healing",
+        "energy-medicine"
+      ],
+      "image": "https://tsnshift.s3.amazonaws.com/pns_images/03CDale06_26/sales_header.jpg"
+    },
+    {
+      "title": "Quantum Energy Healing",
+      "url": "https://theshiftnetwork.com/course/03CDale07_26",
+      "description": "A twelve-module self-paced video course that builds on her clairvoyance training with a set of quantum and chakra-based energy tools, guided meditations and demonstrations. It includes the seven-module introductory programme.",
+      "price": "$946 USD",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "energy-medicine",
+        "chakra-healing"
+      ],
+      "image": "https://tsnshift.s3.amazonaws.com/pns_images/03CDale07_26/sales_header.jpg"
+    },
+    {
+      "title": "Radical Energy Healing",
+      "url": "https://theshiftnetwork.com/course/03CDale08_25",
+      "description": "A seven-module self-paced video course on what Cyndi calls the Divine Pathway, with energy practices for calling in guidance, clearing blocks and initiating change.",
+      "price": "$297 USD",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "energy-medicine",
+        "spirituality"
+      ],
+      "image": "https://tsnshift.s3.amazonaws.com/pns_images/03CDale08_25/sales_header.jpg"
+    },
+    {
+      "title": "Advanced Radical Energy Medicine",
+      "url": "https://theshiftnetwork.com/course/03SubtleEnergyAdv01_23",
+      "description": "A twelve-module self-paced video course in which students build a personal energy medicine toolkit using the extrasensory gifts of the chakras. It includes the seven-module introductory programme.",
+      "price": "$794 USD",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "energy-medicine",
+        "chakra-healing"
+      ],
+      "image": "https://tsnshift.s3.amazonaws.com/pns_images/03SubtleEnergyAdv01_23/sales_header.jpg"
+    },
+    {
+      "title": "Dreaming Through the Dark: A Retreat with Cyndi Dale",
+      "url": "https://www.cyndidale.com/dreaming-through-the-dark-retreat",
+      "description": "A two-day in-person retreat for up to 30 people in Hillsborough, North Carolina, presenting her newest teaching on the quantum field and the ninth to twelfth chakras. Sessions mix teaching, meditation and group practice, with meals and audio recordings included.",
+      "price": "$1,850 USD",
+      "product_type": "retreat",
+      "start_date": "2026-11-20",
+      "end_date": "2026-11-21",
+      "subjects": [
+        "energy-medicine",
+        "chakra-healing"
+      ],
+      "image": "https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/file-uploads/sites/2148740657/images/fa8a62e-df52-6c75-243e-38abf5cd25ca_526aba-7c65-af4-378-dd0fbbfc181_9ad7e7a1-3c0e-4ab3-bec7-021bb5f351a4.jpg"
+    },
+    {
+      "title": "Shamanic Empowerment Through the Chakras",
+      "url": "https://www.cyndidale.com/offers/GyfzDUEt",
+      "description": "A recorded online class that journeys through the chakras into the lower, middle and upper worlds of shamanic tradition, with a focus on the eighth chakra and soul gifts.",
+      "price": "$119 USD",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "shamanism",
+        "chakra-healing"
+      ],
+      "image": "https://theshiftnetwork.com/sites/files/faculty/CyndiDale.jpg"
+    },
+    {
+      "title": "New and Unusual Chakras",
+      "url": "https://cyndi-dale.mykajabi.com/resource_redirect/offers/aqxqVhdg",
+      "description": "A three-part recorded series on lesser-known energy centres and practical ways to work with them alongside the classic chakras.",
+      "price": "$119 USD",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "chakra-healing",
+        "energy-medicine"
+      ],
+      "image": "https://theshiftnetwork.com/sites/files/faculty/CyndiDale.jpg"
+    },
+    {
+      "title": "Three Types of Kundalini",
+      "url": "https://www.cyndidale.com/offers/6LACv57W/checkout",
+      "description": "A video teaching on three distinct forms of kundalini energy, with three guided meditations for experiencing each one gently.",
+      "price": "$47 USD",
+      "product_type": "download",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "spiritual-awakening",
+        "meditation",
+        "chakra-healing"
+      ],
+      "image": "https://m.media-amazon.com/images/P/0738725889.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "12 Chakra Audio Guided Meditation Series",
+      "url": "https://cyndi-dale.mykajabi.com/resource_redirect/offers/GgQcrgQf",
+      "description": "An audio series that moves through all twelve chakras in her system, describing each centre and guiding a meditation to connect with its gifts.",
+      "price": "$67 USD",
+      "product_type": "download",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "chakra-healing",
+        "meditation"
+      ],
+      "image": "https://theshiftnetwork.com/sites/files/faculty/CyndiDale.jpg"
+    },
+    {
+      "title": "Meet \"The Clairs\" — Three Sisters of Intuition",
+      "url": "https://cyndi-dale.mykajabi.com/resource_redirect/offers/Grq8d6uh",
+      "description": "Three pre-recorded classes of about two and a half hours each on clairvoyance, clairaudience and clairsentience, forming a foundation course in intuitive development.",
+      "price": "$99 USD",
+      "product_type": "download",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "spirituality",
+        "energy-medicine"
+      ],
+      "image": "https://theshiftnetwork.com/sites/files/faculty/CyndiDale.jpg"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "rank": 5,
+    "shift_profile": "https://theshiftnetwork.com/shift_teacher/36273",
+    "tier_evidence": "YouTube @CyndiDale-Energy 5.75K subscribers (channel page, 30 Oct 2026); Instagram @cyndidaleenergy, Facebook EssentialEnergyWithCyndiDale and X @CyndiDale counts could not be read (pages served no counts to curl/WebFetch) → readable total ~6k → local_hero",
+    "email": "yes",
+    "email_source": "https://www.cyndidale.com/two-hour-sessions",
+    "contact_form_url": "https://www.cyndidale.com/contact",
+    "flags": [
+      "Tier counts could not be read for Instagram, Facebook or X; readable total is only ~6k, but she has 40+ books (The Subtle Body is a bestseller), so the reputation clearly does not match local_hero — a human should check the follower counts.",
+      "Email support@cyndi-dale.com is the team's support address (Cloudflare-encoded on the Two-Hour Sessions and Subtle Body Immersion pages); appointments@cyndidale.com also appears on the One-on-One page.",
+      "Her Shift course sales pages (Quantum Energy Healing, Advanced Radical Energy Medicine) make heavy health claims (pain, migraines, anxiety, depression); the titles are clean so they are kept with neutral descriptions of our own — check you are happy with that.",
+      "Shift prices for Activate Your Clairvoyant Powers and Radical Energy Healing are a sale price ($297, regular $347).",
+      "Three of her own offerings (Three Types of Kundalini, 12 Chakra series, The Clairs, New and Unusual Chakras) only have checkout/offer URLs from her Learn page; those links return a Cloudflare check to curl, so they could not be opened, though they were mapped to titles from the page HTML.",
+      "Her own YouTube channel has low views (all under 1,000); several of her most-viewed videos were left out for trauma/anxiety titles."
+    ],
+    "left_out": [
+      "Shift: Amplify Essential Energy to Heal Dis-Ease & Restore Balance (title promises healing 'dis-ease'; borderline, left out).",
+      "Shift: Access Your Power Pathway & Energy Medicine Tools for Exponential Healing (page shows registration ended/closed).",
+      "Shift: Advanced Interdimensional Psychic Energy Healing (live course that started 6 Aug 2026, runs to 17 Dec; late registration only, start date passed).",
+      "Own site: Learning to Trust Yourself Again (live, July 20 – Aug 3, past) and Bohemian Marketing (business practicum, started Aug, not spiritual teaching).",
+      "Own site: Freeing Yourself from Energetic Depression & Anxiety (condition-named); Energetic Healing for Covid-19 free audio (condition-named).",
+      "Own site: Quantum Freedom, Energetic Business Masterclasses, Essential Energy Healing Techniques, Destiny Architects, Breaking the Spell, Spiritual Renewal Collection, Clairvoyant Training Intensive, Treasures of the Soul, Tree of Life, Activations, Protecting Your Energetic Boundaries Bundle — left out only for the 10-offering cap.",
+      "One-to-one sessions (Intuitive Analysis, Energy Performance, Subtle Body Immersion, Phoenix Rising) — not the main listing focus.",
+      "Videos left out for health/condition titles: trauma series (Trauma Destroys Your Chakras parts 1–2, You're Wrong About Trauma, What Trauma Really Does to You, The Most Common Trauma Questions, How Trauma Changes Your Body), Feeling Anxious?, Big Pharma is Scared of Energy Healing, What Western Doctors Don't Tell You About Healing, Cancer, Narcissists, Chakras; My Son Took Mushrooms (drug topic); short/promo clips (Celestial Wishing Tree, Better Conflict, Power Pathway Class); author-advice videos; a sports-talk TV clip; academy promo.",
+      "Books left out: Advanced Chakra Healing: Cancer and Heart Disease editions, Energy Healing for Trauma, Stress & Chronic Illness, Attracting Your Perfect Body Through the Chakras, Energy Wellness for Your Pet (health claims); Transforming the Legacy, Chakras/Food and others for the 10-book cap.",
+      "Free resources: none found that pass the rules (the only free download is the Covid-19 audio)."
+    ],
+    "tier_override": "Raised from local_hero to luminary by the owner (31 Oct 2026) under the editorial-stature rule: a major author in her field (40+ books on energy anatomy and the subtle body). Readable follower counts alone would give local_hero."
+  },
+  "images_final": true
+}

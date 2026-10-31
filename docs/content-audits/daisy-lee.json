@@ -1,0 +1,188 @@
+{
+  "healer": {
+    "healer_slug": "daisy-lee",
+    "create": {
+      "name": "Daisy Lee",
+      "bio": "Daisy Lee is a qigong teacher and the founder of Radiant Lotus Qigong. A former independent filmmaker, she came to qigong in the 1990s and has studied and taught it for nearly thirty years, learning traditions held by teachers in China, Tibet and the West. She studied Wuji Hundun Qigong in person in Beijing with Master Duan Zhi Liang and is a lineage holder of Five Animal Qigong. She was named Qigong Master of the Year by the World Qigong Congress in 2020.\n\nHer signature practice is Radiant Lotus Women's Qigong, which combines flowing movement, self-massage and Tibetan sound practice as daily self-care for women. She also teaches and certifies instructors in Zang Fu Gong, Wuji Hundun, Bagua Xun Dao Gong and the Five Animal Frolics. She has led workshops at Kripalu and Omega and at National Qigong Association conferences, offers self-paced courses on The Shift Network, and has published instructional videos with YMAA. She lives in Puerto Rico with her partner, Mark Roule.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "worldwide",
+      "city": null,
+      "country": null,
+      "subjects": [
+        "qi-gong",
+        "energy-medicine",
+        "meditation"
+      ],
+      "website_url": "https://www.radiantlotusqigong.com/",
+      "booking_url": "https://www.radiantlotusqigong.com/",
+      "youtube_url": "https://www.youtube.com/@DaisyLeeQigong",
+      "instagram_url": "https://www.instagram.com/radiantlotusqigong/",
+      "facebook_url": "https://www.facebook.com/daisy.lee.37266",
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": null,
+      "image_urls": [
+        "https://images.squarespace-cdn.com/content/v1/63ebd68da2c0a86d268763ff/27eff2fd-850b-4d26-964a-79e6a8c757dc/Daisy+Lee+vertical+headshot.jpg?format=1000w",
+        "https://theshiftnetwork.com/sites/files/faculty/DaisyLee.jpg",
+        "https://images.squarespace-cdn.com/content/v1/63ebd68da2c0a86d268763ff/60820fca-f008-42d5-b467-dbf3ec12a6f9/4W3A0407.jpg?format=1000w"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "the-shift-network",
+      "role": "instructor"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Daisy Lee on Somatic Movement Summit 2022: Wuji Hundun Qigong: Learning To Be At Ease With Chaos",
+      "url": "https://www.youtube.com/watch?v=mk0Mji1Qie8",
+      "subjects": [
+        "qi-gong"
+      ],
+      "channel": "Daisy Lee"
+    },
+    {
+      "title": "Balancing Life's Chaos with Qigong (aired 6/14/22)",
+      "url": "https://www.youtube.com/watch?v=EkfJ1qYOblQ",
+      "subjects": [
+        "qi-gong"
+      ],
+      "channel": "Daisy Lee"
+    },
+    {
+      "title": "Interview on Global Qigong Summit 2022: Wuji Hundun Qigong - Transforming Chaos",
+      "url": "https://www.youtube.com/watch?v=_RYRs74e9_4",
+      "subjects": [
+        "qi-gong"
+      ],
+      "channel": "Daisy Lee"
+    },
+    {
+      "title": "Interview on Radiant Lotus Women's Qigong with Daisy Lee",
+      "url": "https://www.youtube.com/watch?v=K2xmFoI9fGs",
+      "subjects": [
+        "qi-gong"
+      ],
+      "channel": "Daisy Lee"
+    },
+    {
+      "title": "Inspiring Women Summit 2019: Interview with Daisy Lee, hosted by Devaa Haley Mitchell",
+      "url": "https://www.youtube.com/watch?v=BzZdUVZcQIk",
+      "subjects": [
+        "qi-gong"
+      ],
+      "channel": "Daisy Lee"
+    },
+    {
+      "title": "Vertical Alignment & Showering Qi with Daisy Lee",
+      "url": "https://www.youtube.com/watch?v=s9e4ybu3WSM",
+      "subjects": [
+        "qi-gong"
+      ],
+      "channel": "Daisy Lee"
+    }
+  ],
+  "books": [],
+  "courses": [
+    {
+      "title": "The Art & Practice of Wuji Hundun Qigong",
+      "url": "https://theshiftnetwork.com/course/30DLee13_26",
+      "description": "A self-paced seven-module course teaching the 18 movements of Wuji Hundun Qigong, a practice handed down from Master Duan Zhi Liang. It covers the philosophy behind the form, its movements, breathwork and relaxation.",
+      "price": "$349 USD",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "qi-gong"
+      ],
+      "image": "https://tsnshift.s3.amazonaws.com/pns_images/30DLee13_26/sales_header.jpg"
+    },
+    {
+      "title": "The Art of Wuji Hundun Qigong",
+      "url": "https://theshiftnetwork.com/course/03DLee08_26",
+      "description": "A self-paced seven-module introduction to the 18-movement Wuji Hundun Qigong form, aimed at relaxing and focusing body, mind and spirit. Bonus sessions include a forgiveness meditation.",
+      "price": "$247 USD",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "qi-gong",
+        "meditation"
+      ],
+      "image": "https://tsnshift.s3.amazonaws.com/pns_images/03DLee08_26/sales_header.jpg"
+    },
+    {
+      "title": "5-Animal Qigong",
+      "url": "https://theshiftnetwork.com/course/30DLee11_24",
+      "description": "A self-paced seven-module course teaching the full Five Animal form, with movements inspired by the tiger, deer, bear, monkey and crane. Each module also covers hand forms, stances and the element and season linked to each animal.",
+      "price": "$349 USD",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "qi-gong",
+        "ancient-wisdom"
+      ],
+      "image": "https://tsnshift.s3.amazonaws.com/pns_images/30DLee11_24/sales_header.jpg"
+    },
+    {
+      "title": "Next Level Radiant Lotus Qigong for Women",
+      "url": "https://theshiftnetwork.com/course/03DLee07_24",
+      "description": "A self-paced nine-module course that builds up to the full Radiant Lotus Long Form, a flowing qigong sequence for women focused on grounding and inner calm. It includes her seven-module introductory women's course and bonus teachings.",
+      "price": "$694 USD",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "qi-gong"
+      ],
+      "image": "https://tsnshift.s3.amazonaws.com/pns_images/03DLee07_24/sales_header.jpg"
+    },
+    {
+      "title": "Deepening into the Radiant Lotus Qigong Path for Women",
+      "url": "https://theshiftnetwork.com/course/QigongWomenAdv01",
+      "description": "A nine-module on-demand course in Radiant Lotus Qigong for women, combining movement, self-massage and Tibetan sound practice. It is designed as a daily self-care practice for relaxation and reconnecting with inner wisdom.",
+      "price": "$794 USD",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "qi-gong",
+        "sound-healing"
+      ],
+      "image": "https://theshiftnetwork.com/sites/files/sys_images/QigongWomenAdv01/sales_header.jpg"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "rank": 102,
+    "shift_profile": "https://theshiftnetwork.com/shift_teacher/12571",
+    "tier_evidence": "YouTube @DaisyLeeQigong 4.07K subscribers (channel page, 31 Oct 2026); Instagram @radiantlotusqigong 3,472 (og:description); Facebook is a personal profile, count not readable → ~7.5k total → local_hero",
+    "email": "none",
+    "email_source": null,
+    "contact_form_url": null,
+    "flags": [
+      "Health-claim rule applied strictly: every Shift course page (even those kept) carries testimonials and copy naming conditions (pain, anxiety, scoliosis, fertility, immunity, Paxil); items were kept only where the title and subtitle are clean and our own descriptions make no claims. A human may prefer to drop more.",
+      "Her own website's home page makes strong health claims (heal illness, prevent disease, treats hypertension); the bio and items here avoid them.",
+      "'Next Level Radiant Lotus Qigong for Women' bundles the 'Movement as Medicine' course (left out for its title); kept as borderline.",
+      "No email and no contact form on her site (only a newsletter sign-up); the National Qigong Association teacher listing could not be opened (403).",
+      "No free resources found."
+    ],
+    "left_out": [
+      "Shift 'Wuji Hundun Qigong' (30DLee14_26, $197 USD): subtitle and main copy speak of chronic pain and health; borderline, and it overlaps the two Wuji Hundun courses kept.",
+      "Shift 'Advanced Qigong to Release Stress for a Balanced, Joyful Life' ($794 USD): sales copy names depression, phobias, immunity and illness; includes 'Whole-Body Health' course.",
+      "Shift 'Qigong to Renew & Rejuvenate Whole-Body Health': health in the title (borderline).",
+      "Shift 'Movement as Medicine With Radiant Lotus Qigong for Women': 'medicine' in the title.",
+      "Shift 'Radiant Lotus Qigong for Women' ($247 USD): subtitle names immunity and 'dis-ease'.",
+      "Wuji Hundun Qigong Certification Training (Shift, live online): began 3 Sep 2026.",
+      "Kripalu programmes (22-25 May and 25-29 May 2026): already held.",
+      "YMAA DVDs (Beginner Qigong for Women: Radiant Lotus Medical Qigong Forms, Qigong for Women: Lotus Rises Through the Water Medical Qigong Form, etc.): 'medical' in titles and DVDs are not books.",
+      "Videos: Somatic Movement Panel 2022 (panel, she is not the main speaker), short clips under 2 minutes, 'Buddha Qigong - Hong Kong', 'Daily Qigong Practice on Kaua'i' and three 'Dragon & Lotus' clips (likely form demonstrations to music, not verified as teaching), and all Shift Network channel videos.",
+      "No books found on Amazon."
+    ]
+  },
+  "images_final": true
+}

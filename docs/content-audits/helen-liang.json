@@ -1,0 +1,229 @@
+{
+  "healer": {
+    "healer_slug": "helen-liang",
+    "create": {
+      "name": "Master Helen Liang",
+      "bio": "Master Helen Liang is a teacher of Tai Chi, Qigong and Chinese internal martial arts with more than thirty years of teaching experience. She began training in China in 1976 and is a direct inheritor of the Emei lineage of Wushu from her father, Grandmaster Shou-Yu Liang. She is vice president of the SYL Wushu Taiji Qigong Institute, the family school in Richmond, near Vancouver, Canada, and holds 8th-degree rankings from two international Wushu organisations.\n\nShe teaches Tai Chi forms including the 24, 13-posture and 8-posture forms, the flowing internal art of Liu He Ba Fa (Water Style), Qigong and martial-arts philosophy rooted in Yin and Yang and the Yi Jing. With her father she wrote and hosted a 130-episode instructional Tai Chi television series for Canadian television, and she has made many instructional videos for YMAA. Her teaching is patient and detailed, breaking forms into clear steps with attention to alignment, breath and calm focus. She teaches classes at the institute and online, and has recorded several self-paced Tai Chi and Liu He Ba Fa courses with The Shift Network.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local_online",
+      "city": "Richmond",
+      "country": "Canada",
+      "subjects": [
+        "tai-chi",
+        "qi-gong",
+        "ancient-wisdom"
+      ],
+      "website_url": "https://www.sylwushu.com/",
+      "booking_url": "https://www.sylwushu.com/register/",
+      "youtube_url": "https://www.youtube.com/@MasterHelenLiang",
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "info@sylwushu.com",
+      "image_urls": [
+        "https://theshiftnetwork.com/sites/files/faculty/HelenLiang.jpg",
+        "https://yt3.googleusercontent.com/MLN4pS-C-3sSJ49Wby39Yryo6YgGQV_jYxGMLxYPPewJIXSrGyXCRpfYWOAEJMwo5Wa90sFT=s900"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "the-shift-network",
+      "role": "instructor"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Tai Chi with Helen Liang",
+      "url": "https://www.youtube.com/watch?v=apIffYvzuS0",
+      "subjects": [
+        "tai-chi"
+      ],
+      "channel": "TELUS STORYHIVE"
+    },
+    {
+      "title": "Master Helen Liang: Tai Chi at Banyen Books & Sound",
+      "url": "https://www.youtube.com/watch?v=CrLGGESuU4c",
+      "subjects": [
+        "tai-chi"
+      ],
+      "channel": "Banyen Books & Sound"
+    },
+    {
+      "title": "Simple Qigong Exercise at Home by Master Helen Liang",
+      "url": "https://www.youtube.com/watch?v=7nzW-0kuVOw",
+      "subjects": [
+        "qi-gong"
+      ],
+      "channel": "SYL Wushu"
+    },
+    {
+      "title": "Master Helen Liang discusses various Tai Chi forms, Last Airbender, and Philosophy with Gene Ching",
+      "url": "https://www.youtube.com/watch?v=huEuPSHdTpU",
+      "subjects": [
+        "tai-chi",
+        "ancient-wisdom"
+      ],
+      "channel": "YMAA Publication Center"
+    },
+    {
+      "title": "Lecture by Master Helen Liang Part 1 of 5:  Wushu, Dao and the Yi Jing (I Ching)",
+      "url": "https://www.youtube.com/watch?v=ZK6TCZgmiwc",
+      "subjects": [
+        "ancient-wisdom",
+        "tai-chi"
+      ],
+      "channel": "SYL Wushu"
+    },
+    {
+      "title": "Lecture by Master Helen Liang Part 2 of 5: Yin and Yang Forces",
+      "url": "https://www.youtube.com/watch?v=zqMt3qk3yb4",
+      "subjects": [
+        "ancient-wisdom",
+        "tai-chi"
+      ],
+      "channel": "SYL Wushu"
+    },
+    {
+      "title": "Lecture by Master Helen Liang Part 3 of 5: Taiji, Bagua",
+      "url": "https://www.youtube.com/watch?v=XM5Gw8fNwug",
+      "subjects": [
+        "tai-chi",
+        "ancient-wisdom"
+      ],
+      "channel": "SYL Wushu"
+    },
+    {
+      "title": "Lecture by Master Helen Liang Part 4 of 5: Qigong and Her Wushu Background",
+      "url": "https://www.youtube.com/watch?v=EsHqImdHdus",
+      "subjects": [
+        "qi-gong"
+      ],
+      "channel": "SYL Wushu"
+    },
+    {
+      "title": "Preview different Tai Chi and Martial Art Forms w Master Helen Liang (YMAA, SYLwushu, seen on Shift)",
+      "url": "https://www.youtube.com/watch?v=O1RyL6DxIL4",
+      "subjects": [
+        "tai-chi"
+      ],
+      "channel": "YMAA Publication Center"
+    },
+    {
+      "title": "Tai Chi for Women by Helen Liang (YMAA Tai Chi DVD preview)",
+      "url": "https://www.youtube.com/watch?v=lwXNpqXhE2U",
+      "subjects": [
+        "tai-chi"
+      ],
+      "channel": "YMAA Publication Center"
+    },
+    {
+      "title": "Simplified Tai Chi 24 for Beginners (YMAA Taijiquan) Helen Liang",
+      "url": "https://www.youtube.com/watch?v=2jw1_xjNKsI",
+      "subjects": [
+        "tai-chi"
+      ],
+      "channel": "YMAA Publication Center"
+    },
+    {
+      "title": "Wuji Quan by Master Helen Liang",
+      "url": "https://www.youtube.com/watch?v=FvkEY_80l7c",
+      "subjects": [
+        "tai-chi",
+        "qi-gong"
+      ],
+      "channel": "SYL Wushu"
+    }
+  ],
+  "books": [],
+  "courses": [
+    {
+      "title": "Living the Effortless Strength of Tai Chi",
+      "url": "https://new.theshiftnetwork.com/programs/01HLiang05_26",
+      "description": "A seven-module live online Tai Chi course with Master Helen Liang on The Shift Network, focused on the relaxed, effortless strength at the heart of the practice.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": "2026-11-17",
+      "end_date": null,
+      "subjects": [
+        "tai-chi",
+        "qi-gong"
+      ],
+      "image": "https://theshiftnetwork.com/sites/files/faculty/HelenLiang.jpg"
+    },
+    {
+      "title": "Tai Chi’s 8-Posture Form to Cultivate Balance, Harmony & Vitality",
+      "url": "https://theshiftnetwork.com/course/03HLiang01_24",
+      "description": "A seven-module self-paced course teaching the 8-Posture Tai Chi form step by step, with the Yin-Yang principles and the Eight Gates and Five Steps behind it.",
+      "price": "$247 USD",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "tai-chi",
+        "qi-gong"
+      ],
+      "image": "https://tsnshift.s3.amazonaws.com/pns_images/03HLiang01_24/sales_header.jpg"
+    },
+    {
+      "title": "13-Posture Tai Chi for Harmony, Strength & Balance",
+      "url": "https://theshiftnetwork.com/course/30HLiang02_23",
+      "description": "A seven-module self-paced course in the 13 core postures of Tai Chi and a short form that takes five to ten minutes to practise, building strength, flexibility and a calm mind.",
+      "price": "$297 USD",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "tai-chi",
+        "qi-gong"
+      ],
+      "image": "https://tsnshift.s3.amazonaws.com/pns_images/30HLiang02_23/sales_header.jpg"
+    },
+    {
+      "title": "The Internal Martial Art of Liu He Ba Fa",
+      "url": "https://theshiftnetwork.com/course/30HLiang03_25",
+      "description": "A seven-module self-paced introduction to Liu He Ba Fa, the flowing 'Water Style' internal martial art, covering its six unities, fundamental stances and a free-flowing movement sequence.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "tai-chi",
+        "qi-gong",
+        "breathwork"
+      ],
+      "image": "https://tsnshift.s3.amazonaws.com/pns_images/30HLiang03_25/sales_header.jpg"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "rank": 4,
+    "shift_profile": "https://theshiftnetwork.com/shift_teacher/42773",
+    "tier_evidence": "Own YouTube channel @MasterHelenLiang 36 subscribers (channel page, 30 Oct 2026); no personal Instagram/Facebook found; the institute's channel @SYLWushu has 2.88K subscribers (institute account, not counted) → under 100k → local_hero",
+    "email": "yes",
+    "email_source": "https://www.sylwushu.com/register/",
+    "contact_form_url": null,
+    "flags": [
+      "Follower count doesn't match her reputation: a 130-episode TV series, YMAA instructional videos (one with 1.16M views) and Kung Fu Tai Chi magazine covers, but her own channel has 36 subscribers.",
+      "Contact email info@sylwushu.com is the SYL Wushu Taiji Qigong Institute's office address (she is vice president), not a personal one.",
+      "The three self-paced Shift Tai Chi courses have clean titles, but their long sales pages mention health conditions in passing (8-Posture: arthritis, heart health, bone density; 13-Posture: a knee-pain testimonial and her own cancer history; Liu He Ba Fa: 'stress and anxiety', 'dispel sickness'). Kept with neutral descriptions as non-medical Tai Chi; drop them if you read the rule as covering sales copy.",
+      "Living the Effortless Strength of Tai Chi: start date 17 Nov 2026 is from The Shift Network's programmes listing; the course page loads by script, so price and end date couldn't be read.",
+      "Liu He Ba Fa price is blank on the Shift page ('$ USD'), so it is set to Contact for pricing.",
+      "Her own YouTube channel avatar matches her Shift photo closely, but the channel is small and new; photo 2 is from that channel.",
+      "All videos are from other channels (YMAA, SYL Wushu, TELUS STORYHIVE, Banyen Books); several YMAA ones are DVD previews and Wuji Quan is a form demonstration, so check that each counts as teaching.",
+      "Her father, Grandmaster Shou-Yu Liang, teaches at the same institute; possible future separate listing."
+    ],
+    "left_out": [
+      "Medical/health qigong: Online Health Maintenance Qigong (SYL, CAD $405; described as Yiliao Qigong, which is medical qigong, and already started 3 Oct 2026), and her DVD Qigong for Cancer (condition-named).",
+      "All five videos on her own channel: titles promise to clear toxins, boost immunity or support weight loss.",
+      "YMAA video 'Beginner Tai Chi for Health…' (health in title, under 2 minutes), the 24-form 'members only' demonstration (form only, may be music-only), Liu He Ba Fa demonstration clips (form only), lecture part 5 (under 2 minutes), and Shift Network channel videos (belong on the hub).",
+      "Books: no books she authored found; her instructional work is on DVD (YMAA), which isn't a book listing.",
+      "SYL institute classes taught by other instructors or by Grandmaster Shou-Yu Liang, and children's courses.",
+      "'New professional training (begins April 2027)' on Shift: no page or details yet.",
+      "Free resources: none found."
+    ]
+  },
+  "images_final": true
+}

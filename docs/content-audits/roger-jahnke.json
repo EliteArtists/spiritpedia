@@ -1,0 +1,261 @@
+{
+  "healer": {
+    "healer_slug": "roger-jahnke",
+    "create": {
+      "name": "Dr. Roger Jahnke",
+      "bio": "Dr. Roger Jahnke is a teacher of qigong and tai chi and a doctor of Chinese medicine, with more than three decades of clinical practice in acupuncture and traditional Chinese medicine and ten research and cultural trips to China. He founded the Institute of Integral Qigong and Tai Chi (IIQTC) in Santa Barbara, California, in 2000 and is its director and lead trainer. The institute and its faculty have trained thousands of qigong and tai chi teachers and practice leaders, now largely through online modular certification.\n\nHis approach, which he calls Integral Qigong, brings together gentle movement, breath practice, self-applied massage and meditation, and he developed Tai Chi Easy, a simplified practice designed for beginners and community classes. He is the author of The Healer Within and The Healing Promise of Qi, which draws on more than twenty traditional and modern forms of qigong and tai chi. He teaches self-paced and live programmes on The Shift Network and has taught at centres including Esalen and Omega.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "worldwide",
+      "city": null,
+      "country": null,
+      "subjects": [
+        "qi-gong",
+        "tai-chi",
+        "breathwork"
+      ],
+      "website_url": "https://instituteofintegralqigongandtaichi.org/",
+      "booking_url": "https://instituteofintegralqigongandtaichi.org/calendar/",
+      "youtube_url": "https://www.youtube.com/channel/UCgGMko9GI5rASU9qKZGMOIA",
+      "instagram_url": "https://www.instagram.com/taichiqigong/",
+      "facebook_url": "https://www.facebook.com/IIQTC",
+      "twitter_url": "https://x.com/rogerjahnke",
+      "tiktok_url": null,
+      "contact_email": "info@instituteofintegralqigongandtaichi.org",
+      "image_urls": [
+        "https://theshiftnetwork.com/sites/files/faculty/RogerJahnke.jpg",
+        "http://instituteofintegralqigongandtaichi.org/images/DrJahnkeontheBeach.jpg"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "the-shift-network",
+      "role": "instructor"
+    }
+  ],
+  "videos": [
+    {
+      "title": "The Physiology of Tai Chi and QiGong",
+      "url": "https://www.youtube.com/watch?v=ZJRtZAwVwgo",
+      "subjects": [
+        "tai-chi",
+        "qi-gong"
+      ],
+      "channel": "The Tai Chi And Qigong Way"
+    },
+    {
+      "title": "Secret Elixir of Longevity and Immortality- Dr. Roger Jahnke",
+      "url": "https://www.youtube.com/watch?v=B-FJ2v2T0MQ",
+      "subjects": [
+        "qi-gong",
+        "ancient-wisdom"
+      ],
+      "channel": "The Tai Chi And Qigong Way"
+    },
+    {
+      "title": "Daily Qigong Practice With Dr. Jahnke – for Health Resiliency and Healing",
+      "url": "https://www.youtube.com/watch?v=UDHoXXRMINI",
+      "subjects": [
+        "qi-gong"
+      ],
+      "channel": "The Tai Chi And Qigong Way"
+    },
+    {
+      "title": "Dr. Roger Jahnke on the XiXi Hu Practice",
+      "url": "https://www.youtube.com/watch?v=RlE54ux29yg",
+      "subjects": [
+        "qi-gong",
+        "breathwork"
+      ],
+      "channel": "The Tai Chi And Qigong Way"
+    },
+    {
+      "title": "Meet Dr Roger Jahnke OMD",
+      "url": "https://www.youtube.com/watch?v=LF7FRYQT688",
+      "subjects": [
+        "qi-gong",
+        "tai-chi"
+      ],
+      "channel": "The Tai Chi And Qigong Way"
+    },
+    {
+      "title": "The Origins of Tai Chi - Taiji",
+      "url": "https://www.youtube.com/watch?v=sYu-PgG5aJQ",
+      "subjects": [
+        "tai-chi",
+        "ancient-wisdom"
+      ],
+      "channel": "The Tai Chi And Qigong Way"
+    },
+    {
+      "title": "Qigong and Tai Chi - Dr. Jahnke, OMD",
+      "url": "https://www.youtube.com/watch?v=Mn1MuntZ5xY",
+      "subjects": [
+        "qi-gong",
+        "tai-chi"
+      ],
+      "channel": "The Tai Chi And Qigong Way"
+    },
+    {
+      "title": "Dr Roger Jahnke explains what is Primordial QiGong...",
+      "url": "https://www.youtube.com/watch?v=xeZkklcKx3w",
+      "subjects": [
+        "qi-gong"
+      ],
+      "channel": "The Tai Chi And Qigong Way"
+    },
+    {
+      "title": "Tai Chi Easy™ at Esalen Institute with Dr.Roger Jahnke",
+      "url": "https://www.youtube.com/watch?v=wLeU8EuH7v0",
+      "subjects": [
+        "tai-chi"
+      ],
+      "channel": "The Tai Chi And Qigong Way"
+    },
+    {
+      "title": "Brief Video of Seated Mind Body Practice with Dr. Roger Jahnke, OMD",
+      "url": "https://www.youtube.com/watch?v=KT0pFr1QM6g",
+      "subjects": [
+        "qi-gong",
+        "breathwork",
+        "meditation"
+      ],
+      "channel": "The Tai Chi And Qigong Way"
+    },
+    {
+      "title": "Do Qigong NOW! Dr. Roger Jahnke, OMD",
+      "url": "https://www.youtube.com/watch?v=ynbCIxTjtds",
+      "subjects": [
+        "qi-gong"
+      ],
+      "channel": "The Tai Chi And Qigong Way"
+    },
+    {
+      "title": "Dr. Jahnke, Be Well with Qigong",
+      "url": "https://www.youtube.com/watch?v=6soUzrY-7Rc",
+      "subjects": [
+        "qi-gong"
+      ],
+      "channel": "The Tai Chi And Qigong Way"
+    }
+  ],
+  "books": [
+    {
+      "title": "The Healing Promise of Qi: Creating Extraordinary Wellness Through Qigong and Tai Chi",
+      "slug": "the-healing-promise-of-qi",
+      "author": "Roger Jahnke",
+      "asin": "0809295288",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "A guide to building a personal qigong and tai chi practice, drawing on more than twenty traditional and modern forms. It explains the ideas behind qi cultivation and shows how to shape a daily routine around movement, breath and meditation.",
+      "subjects": [
+        "qi-gong",
+        "tai-chi"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/0809295288.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "The Healer Within: Using Traditional Chinese Techniques To Release Your Body's Own Medicine, Movement, Massage, Meditation, Breathing",
+      "slug": "the-healer-within",
+      "author": "Roger Jahnke",
+      "asin": "0062514776",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "Roger Jahnke's first book, presenting four simple self-care practices from the Chinese tradition: gentle movement, self-applied massage, breathing and meditation. The practices are short and adaptable to any daily routine.",
+      "subjects": [
+        "qi-gong",
+        "self-healing",
+        "breathwork"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/0062514776.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "Tai Chi Easy Practice Leader Training Guide",
+      "slug": "tai-chi-easy-practice-leader-training-guide",
+      "author": "Roger Jahnke",
+      "asin": "B07CL1J3G3",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "The training manual for Tai Chi Easy, the simplified practice Roger Jahnke developed for beginners. It is written for people preparing to lead community practice groups.",
+      "subjects": [
+        "tai-chi",
+        "qi-gong"
+      ],
+      "cover": null
+    }
+  ],
+  "courses": [
+    {
+      "title": "IIQTC Online Level 1 Integral Qigong Teacher Training",
+      "url": "https://instituteofintegralqigongandtaichi.org/qigong_taichi_training/27-001PTO_OL1_teacher.html",
+      "description": "The institute's Level 1 qigong teacher training, delivered online in three modules through video lessons, Zoom gatherings, practice teaching and small mastermind groups. It aims to prepare students to lead qigong classes by the end of the course.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": "2027-01-28",
+      "end_date": "2027-03-11",
+      "subjects": [
+        "qi-gong"
+      ],
+      "image": "https://instituteofintegralqigongandtaichi.org/images/qigongforeveryone.png"
+    },
+    {
+      "title": "Activate Your Inner Healing Elixirs With the 10 Phases of Qi Cultivation",
+      "url": "https://theshiftnetwork.com/course/03RJahnke06_26",
+      "description": "A seven-module self-paced course on The Shift Network exploring the 10 Phases of Qi Cultivation. It works with the three dantians through qigong movement, breath and meditation to harmonise body, mind and spirit.",
+      "price": "$247 USD",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "qi-gong",
+        "meditation"
+      ],
+      "image": "https://tsnshift.s3.amazonaws.com/pns_images/03RJahnke06_26/sales_header.jpg"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "The Tai Chi & Qigong Way Free Library",
+      "url": "https://healthaction.infusionsoft.app/app/page/the-tai-chi-and-qigong-way",
+      "description": "A free membership library from Roger Jahnke and the IIQTC with instructional videos, including Tai Chi Easy, guided audio practices for breathing and meditation, talks and articles. Sign-up with an email address is required.",
+      "featured": true,
+      "resource_type": "practice",
+      "subjects": [
+        "qi-gong",
+        "tai-chi"
+      ],
+      "image": "https://healthaction.files.keap.app/healthaction/26a3ad9e-f485-4051-9517-141c4aaa9ece"
+    }
+  ],
+  "sprint": {
+    "rank": 10,
+    "shift_profile": "https://theshiftnetwork.com/shift_teacher/15016",
+    "tier_evidence": "YouTube 48.7K ('The Tai Chi And Qigong Way', the IIQTC channel, channel page 30 Oct 2026); Instagram @taichiqigong, Facebook IIQTC and X @RogerJahnke counts could not be read → ~49K readable → local_hero",
+    "email": "yes",
+    "email_source": "https://instituteofintegralqigongandtaichi.org/",
+    "contact_form_url": null,
+    "flags": [
+      "YouTube, Instagram and Facebook accounts are the institute's (IIQTC), not personal ones; they are linked from his institute site, which he directs. X @RogerJahnke is personal.",
+      "Follower counts for Instagram, Facebook and X could not be read; tier rests on YouTube alone (48.7K), so a human may want to check the others.",
+      "Email is the institute's office address (info@instituteofintegralqigongandtaichi.org), published on the IIQTC home page and calendar page.",
+      "Kept, borderline: video 'Daily Qigong Practice ... for Health Resiliency and Healing' and book 'The Healer Within ... Your Body's Own Medicine' (no condition named, but health-flavoured titles).",
+      "Second photo (on the beach) is 400x313 px, served over plain http.",
+      "His personal site feeltheqi.com no longer responds; website points to the IIQTC site, which looks dated in places.",
+      "Only 2 offerings survive the health-claim rule (most of his Shift catalogue is Medical Qigong or Qi Medicine)."
+    ],
+    "left_out": [
+      "Shift: Medical Qigong Training for Healers & Leaders, 4 Dimensions of Medical Qigong, Medical Qigong (anything medical).",
+      "Shift: The Powerful Healing Medicine of Bu Zheng Qigong (sales page is Medical Qigong for recovery from illnesses).",
+      "Shift: Qi Medicine, Qi Medicine Advanced Training and Qi Medicine for the 'Heart-Mind' (medical-qigong style programmes; borderline, left out).",
+      "Shift: Qigong as a Natural Elixir to Activate Your Body's Capacity for Self-Healing (description names pain, insomnia, anxiety, illness).",
+      "Videos on immune enhancement, viral defence, and Tai Chi at the Mayo Clinic Integrative Cancer Center (condition-named); Healer Within Medical Qigong Video Library (medical); 'History Of Tai Chi - Taiji' (speaker not confirmed); promotional videos (membership invitation, teacher-certification webinars); Breath Medicine intros (product named 'Medicine').",
+      "Free 'Tai Chi Easy for Aging Mastery' YouTube playlist (description makes fall-risk health claims).",
+      "Books: Most Profound Medicine (medical framing); Chinese Medical Qigong (medical; his role not verified)."
+    ]
+  },
+  "images_final": true
+}

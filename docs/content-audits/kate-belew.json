@@ -1,0 +1,174 @@
+{
+  "healer": {
+    "healer_slug": "kate-belew",
+    "create": {
+      "name": "Kate Belew",
+      "bio": "Kate Belew is a poet, author and teacher whose work joins creative writing with witchcraft and folk magic. She grew up in Michigan, studied English at Kalamazoo College and holds an MFA in poetry from Sarah Lawrence College. She trained in green witchcraft through a three-year apprenticeship with Robin Rose Bennett, studied herbalism with the Chestnut School of Herbs and astrology with Rebecca Gordon, and is an initiated Green Witch. She lives in Brooklyn.\n\nShe has led writing circles and workshops since 2017, in person and online. Her five-week programme The Bardo brings writers together for sessions on ritual, storytelling and channelled and automatic writing, and her Word Witch newsletter on Substack offers weekly essays and seven-line writing prompts, with live writing circles for paying members. Her book Word Witch (2025) is a guide to building a writing practice through simple rituals, and she co-wrote Wild Medicine, an illustrated guide to the folklore and magic of more than sixty herbs, with Shelby Bundy of Tamed Wild, where she co-hosted the Magick & Alchemy podcast. Her poems and essays have appeared in a range of journals and magazines.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "worldwide",
+      "city": null,
+      "country": null,
+      "subjects": [
+        "spirituality",
+        "ancient-wisdom",
+        "channelled-teachings"
+      ],
+      "website_url": "https://katebelew.com/",
+      "booking_url": "https://katebelew.com/thebardo",
+      "youtube_url": null,
+      "instagram_url": "https://www.instagram.com/k8belew/",
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "Kate@katebelew.com",
+      "image_urls": [
+        "https://theshiftnetwork.com/sites/files/faculty/KateBelew.jpg",
+        "https://images.squarespace-cdn.com/content/v1/563901b3e4b04fa75bba3680/48e4d1c1-01d5-4c74-83b6-785333696089/Headshot2.jpg"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "the-shift-network",
+      "role": "instructor"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Writing, Witchcraft, and Poetic Spells with Kate Belew",
+      "url": "https://www.youtube.com/watch?v=iuzrE0hmpO8",
+      "subjects": [
+        "spirituality",
+        "ancient-wisdom"
+      ],
+      "channel": "Pam Grossman"
+    },
+    {
+      "title": "#155 - Kate Belew, Author of \"Word Witch\"",
+      "url": "https://www.youtube.com/watch?v=v5rQ2S5k9SM",
+      "subjects": [
+        "spirituality",
+        "ancient-wisdom"
+      ],
+      "channel": "Pam Grossman"
+    },
+    {
+      "title": "Unlock Creative Magic: Rituals with Word Witch Kate Belew",
+      "url": "https://www.youtube.com/watch?v=aMpJ0QpwzR8",
+      "subjects": [
+        "spirituality"
+      ],
+      "channel": "Confessions of a Spiritual Entrepreneur"
+    },
+    {
+      "title": "Kate Belew: Word Witch",
+      "url": "https://www.youtube.com/watch?v=91mmikIe05A",
+      "subjects": [
+        "spirituality"
+      ],
+      "channel": "IMPACT WITCH"
+    }
+  ],
+  "books": [
+    {
+      "title": "Word Witch: How to Call Upon and Cultivate the Creative Magic Within You",
+      "slug": "word-witch",
+      "author": "Kate Belew",
+      "asin": "0306836823",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "A guide to building a creative writing practice rooted in ritual and magic. It offers simple writing rituals and spells, ways to work with creative cycles and the seasons, and ideas for finding a supportive writing community.",
+      "subjects": [
+        "spirituality",
+        "ancient-wisdom"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/0306836823.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "Wild Medicine: An Illustrated Guide to the Magick of Herbs",
+      "slug": "wild-medicine-an-illustrated-guide-to-the-magick-of-herbs",
+      "author": "Shelby Bundy, Kate Belew",
+      "asin": "1632174979",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "An illustrated guide to more than sixty herbs, written with Shelby Bundy of Tamed Wild. Each entry gives a botanical description, historical and folk lore, and rituals and recipes for working with the plant.",
+      "subjects": [
+        "ancient-wisdom",
+        "spirituality"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1632174979.01._SCLZZZZZZZ_.jpg"
+    }
+  ],
+  "courses": [
+    {
+      "title": "The Bardo",
+      "url": "https://katebelew.com/thebardo",
+      "description": "A five-week, ten-session online writing programme for writers and 'Word Witches', run each winter with Kate and guest teachers. Sessions cover writing rituals, storytelling, creative ecology and channelled and automatic writing, with time to write and share work.",
+      "price": "$444 USD",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "spirituality",
+        "channelled-teachings"
+      ],
+      "image": "http://static1.squarespace.com/static/563901b3e4b04fa75bba3680/t/60ae62d0450f8b6bba7ba151/1622041316250/TheBardo_WebBanner_PORTAL_2500x1200.png?format=1500w"
+    },
+    {
+      "title": "Word Witch Paid Subscription",
+      "url": "https://wordwitchcreativemagic.substack.com/subscribe",
+      "description": "A paid tier of her Substack newsletter with the full archive, monthly live writing circles, seasonal writing prompts guided by astrology and a subscriber chat.",
+      "price": "$7 USD a month or $77 USD a year",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "spirituality",
+        "astrology"
+      ],
+      "image": "https://m.media-amazon.com/images/P/0306836823.01._SCLZZZZZZZ_.jpg"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Word Witch Newsletter",
+      "url": "https://wordwitchcreativemagic.substack.com/about",
+      "description": "Her free weekly Substack newsletter, running since 2020, with essays on creativity and magic, interviews and a seven-line writing prompt each week.",
+      "featured": true,
+      "resource_type": "practice",
+      "subjects": [
+        "spirituality"
+      ],
+      "image": "https://substackcdn.com/image/fetch/$s_!Dnj1!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F0fc22f9e-aa7a-48f3-b2fe-8d7d8df02ec2_636x940.png"
+    }
+  ],
+  "sprint": {
+    "rank": 93,
+    "shift_profile": "https://theshiftnetwork.com/shift_teacher/75830",
+    "tier_evidence": "Instagram @k8belew 26K followers (og:description, 31 Oct 2026); no YouTube channel of her own in use; her Substack shows 6,000+ subscribers (newsletter, not counted) → ~26k → local_hero",
+    "email": "yes",
+    "email_source": "https://katebelew.com/work-with-me",
+    "contact_form_url": null,
+    "flags": [
+      "Her work is mainly creative writing and witchcraft; Spiritpedia has no witchcraft subject, so subjects are approximations (spirituality, ancient-wisdom, channelled-teachings for her channelled/automatic writing teaching).",
+      "The Bardo page still shows its January–February 2026 dates; it has run each year since about 2021, so it is listed undated as a repeating programme. Check it will run again.",
+      "Wild Medicine is herb lore and ritual, not medical advice, but the title uses 'Medicine'; kept, flag for a human check.",
+      "Amazon also lists Robin Rose Bennett on Word Witch (probably a foreword); she is not added as an author.",
+      "Her Instagram shows the name 'Kate Belew Melton'.",
+      "Tamed Wild's Instagram (330K) is a brand she has written for, not her own account, so it is not counted.",
+      "Shift photo is a 10 MB, 3095 x 4643 px file (same picture as on her site)."
+    ],
+    "left_out": [
+      "Occult Poetics: The Supernatural Speaks and The Crossroads: The Shadow Months: dated October series that have already started or passed.",
+      "1:1 Consultations: one-to-one business and creative consulting, not her main work.",
+      "Tamed Wild booklets and The Small Spells Deck: Tamed Wild products, no Amazon ASIN found.",
+      "Crossroads Are Portals Into Witchcraft (PjybjOAaDdY): shared with Kristin Lisenby; Mabon 2025 panel (ZbbT9zC6HIQ): panel of three; short personal clips on her old channel (under 4 minutes, not teaching).",
+      "Magick & Alchemy podcast: no YouTube version found.",
+      "Shift Network: new live course beginning May 2027 has no page or URL yet."
+    ]
+  },
+  "images_final": true
+}

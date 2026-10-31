@@ -1,0 +1,57 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 204,
+    "healer_slug": "martha-collard"
+  },
+  "rows": [
+    {
+      "table": "videos",
+      "id": 2947,
+      "slug": "new-moon-livestream-17-04-2026",
+      "title": "New Moon Livestream 17/04/2026"
+    },
+    {
+      "table": "videos",
+      "id": 2948,
+      "slug": "new-moon-livestream-may-2026",
+      "title": "New Moon Livestream May 2026"
+    },
+    {
+      "table": "videos",
+      "id": 2949,
+      "slug": "new-moon-livestream-11th-september-2026",
+      "title": "New Moon Livestream 11th September 2026"
+    },
+    {
+      "table": "videos",
+      "id": 2950,
+      "slug": "a-sound-bath-in-hong-kong",
+      "title": "A Sound Bath in Hong Kong"
+    },
+    {
+      "table": "courses",
+      "id": "2662b197-84b8-45ea-b7cd-9790c4d1a7e7",
+      "slug": "the-art-science-of-gong-playing",
+      "title": "The Art & Science of Gong Playing"
+    },
+    {
+      "table": "courses",
+      "id": "44fdb13f-28f3-40bb-af13-e54d230d892c",
+      "slug": "gong-playing-practicum",
+      "title": "Gong Playing Practicum"
+    },
+    {
+      "table": "courses",
+      "id": "f930ce23-3aee-4db9-9a4d-895e59122ec1",
+      "slug": "in-person-gong-training-levels-1-to-3",
+      "title": "In-Person Gong Training (Levels 1 to 3)"
+    },
+    {
+      "table": "hub_teachers",
+      "id": "63d667a7-c472-4cc0-a26f-785c2059d854",
+      "title": "martha-collard teaches at The Shift Network"
+    }
+  ],
+  "at": "2026-10-30T23:33:30.063Z"
+}

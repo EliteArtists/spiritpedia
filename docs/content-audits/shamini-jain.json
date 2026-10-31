@@ -1,0 +1,219 @@
+{
+  "healer": {
+    "healer_slug": "shamini-jain",
+    "create": {
+      "name": "Dr. Shamini Jain",
+      "bio": "Dr. Shamini Jain is an American clinical psychologist, researcher and teacher whose work brings together scientific research and spiritual practice. She studied neuroscience at Columbia University, earned her doctorate in clinical psychology through the joint programme of the University of California, San Diego and San Diego State University, and completed postdoctoral training at UCLA. She is an adjunct professor in family medicine at UC San Diego and founded the Consciousness and Healing Initiative, a non-profit that brings scientists, practitioners, educators and artists together to study the biofield and the practice of healing.\n\nAlongside her research she trained in energy work with Rev. Rosalyn Bruyere and draws on the Jain, Vedic and Tantric traditions. Her teaching combines short summaries of the research with guided meditation, mantra, chanting and voice work, and she often uses sound and song, having released an album, Kaliyuga Blues. Her book Healing Ourselves: Biofield Science and the Future of Health was published by Sounds True. She has taught at Esalen, the Omega Institute and the Sivananda Ashram in the Bahamas, and teaches self-paced courses online through The Shift Network.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "worldwide",
+      "city": null,
+      "country": null,
+      "subjects": [
+        "energy-medicine",
+        "conscious-science",
+        "sound-healing"
+      ],
+      "website_url": "https://www.shaminijain.com/",
+      "booking_url": "https://www.shaminijain.com/events",
+      "youtube_url": "https://www.youtube.com/@ShaminiJain",
+      "instagram_url": "https://www.instagram.com/drshaminijain/",
+      "facebook_url": "https://www.facebook.com/drshaminijain",
+      "twitter_url": "https://x.com/drshaminijain",
+      "tiktok_url": null,
+      "contact_email": null,
+      "image_urls": [
+        "https://cdn.prod.website-files.com/618da6746586ad7f364f993b/618da6746586ad32144f9a29_sjain02headshot-p-1080.jpeg",
+        "https://yt3.googleusercontent.com/t4tDcBnMntGEdUfwAabgDbZxF1Z-hPR5JYZOSZhfbhrRso_F7Ih_dvJNrqSpj2ZFadUBoYce=s900",
+        "https://theshiftnetwork.com/sites/files/faculty/crop/ShaminiJain.jpg"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "the-shift-network",
+      "role": "instructor"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Health and interconnection | Shamini Jain | TEDxBerkeley",
+      "url": "https://www.youtube.com/watch?v=UHKI2KvWAO8",
+      "subjects": [
+        "conscious-science",
+        "energy-medicine"
+      ],
+      "channel": "TEDx Talks"
+    },
+    {
+      "title": "From Overwhelm to Coherence with Bruce Lipton & Shamini Jain 1 Hour Masterclass",
+      "url": "https://www.youtube.com/watch?v=ab5AU59YwrU",
+      "subjects": [
+        "conscious-science",
+        "meditation"
+      ],
+      "channel": "Shamini Jain"
+    },
+    {
+      "title": "What Is Biofield Science & Energy Healing?",
+      "url": "https://www.youtube.com/watch?v=0D3wjr7-pKs",
+      "subjects": [
+        "energy-medicine",
+        "conscious-science"
+      ],
+      "channel": "Blue Soul Earth"
+    },
+    {
+      "title": "Grounding Meditation to Connect, Release, and Renew with the Earth",
+      "url": "https://www.youtube.com/watch?v=yILB27pJHUo",
+      "subjects": [
+        "meditation"
+      ],
+      "channel": "Shamini Jain"
+    },
+    {
+      "title": "Tune Your Biofield From the Inside Out With the Om Mantra",
+      "url": "https://www.youtube.com/watch?v=twfrl-YaIFA",
+      "subjects": [
+        "sound-healing",
+        "energy-medicine"
+      ],
+      "channel": "Shamini Jain"
+    },
+    {
+      "title": "Connecting With the Earth Mother (Durga Ma) and Releasing Negativity (Chamunda Mantra)",
+      "url": "https://www.youtube.com/watch?v=B6Fe__NBGYM",
+      "subjects": [
+        "sound-healing",
+        "ancient-wisdom"
+      ],
+      "channel": "Shamini Jain"
+    },
+    {
+      "title": "Reunite With Your Spirit Through the Power of Your Voice",
+      "url": "https://www.youtube.com/watch?v=GpHHaT40TXs",
+      "subjects": [
+        "sound-healing",
+        "spirituality"
+      ],
+      "channel": "Shamini Jain"
+    },
+    {
+      "title": "The Heart's Guidance Meditation with Dr. Shamini Jain",
+      "url": "https://www.youtube.com/watch?v=p3Uf53aW_p0",
+      "subjects": [
+        "meditation"
+      ],
+      "channel": "Shamini Jain"
+    },
+    {
+      "title": "CHI Healing Circle",
+      "url": "https://www.youtube.com/watch?v=kjJC3UANP_k",
+      "subjects": [
+        "energy-medicine",
+        "meditation"
+      ],
+      "channel": "Shamini Jain"
+    },
+    {
+      "title": "Fostering Your Success: Science-Based Tips",
+      "url": "https://www.youtube.com/watch?v=VN3QrzX_SuE",
+      "subjects": [
+        "conscious-science"
+      ],
+      "channel": "Shamini Jain"
+    },
+    {
+      "title": "Good Day LA - Embrace Your Creativity",
+      "url": "https://www.youtube.com/watch?v=fsFk1HwdzCs",
+      "subjects": [
+        "conscious-science"
+      ],
+      "channel": "Shamini Jain"
+    },
+    {
+      "title": "Dr Shamini Jain Never Alone Summit 2020",
+      "url": "https://www.youtube.com/watch?v=BqzoDYthVWc",
+      "subjects": [
+        "conscious-science",
+        "spirituality"
+      ],
+      "channel": "Shamini Jain"
+    }
+  ],
+  "books": [
+    {
+      "title": "Healing Ourselves: Biofield Science and the Future of Health",
+      "slug": "healing-ourselves-biofield-science-and-the-future-of-health",
+      "author": "Shamini Jain",
+      "asin": "1683644336",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "An introduction to biofield science, the study of the subtle energy fields around and within living things, written by a clinical psychologist and researcher. It looks at what research on mind-body practices, placebo and energy work suggests, and sets this beside traditional spiritual teachings. Each chapter includes simple practices for readers to try.",
+      "subjects": [
+        "energy-medicine",
+        "conscious-science"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1683644336.01._SCLZZZZZZZ_.jpg"
+    }
+  ],
+  "courses": [
+    {
+      "title": "Sacred Sound and Energy Healing Retreat",
+      "url": "https://sivanandabahamas.org/course/sacred-sound-and-energy-retreat-november-2026/",
+      "description": "A weekend retreat at the Sivananda Ashram on Paradise Island in the Bahamas. It combines an overview of research on the biofield and mind-body practice with mantra and voice work, chakra meditations, creative expression and ritual. Accommodation is booked separately from tuition.",
+      "price": "$395 USD",
+      "product_type": "retreat",
+      "start_date": "2026-11-14",
+      "end_date": "2026-11-17",
+      "subjects": [
+        "sound-healing",
+        "energy-medicine",
+        "chakra-healing"
+      ],
+      "image": "https://sivanandabahamas.org/wp-content/uploads/Shamini-Jain-PhD.jpg"
+    },
+    {
+      "title": "The Graces of Power",
+      "url": "https://sivanandabahamas.org/course/the-graces-of-power-november-2026/",
+      "description": "A yoga vacation programme at the Sivananda Ashram in the Bahamas, exploring power as life force and the divine feminine in the Vedic and Tantric traditions. It is taught through four satsangs and three workshops using energy, movement and sound practices, and is open to everyone.",
+      "price": "Contact for pricing",
+      "product_type": "retreat",
+      "start_date": "2026-11-10",
+      "end_date": "2026-11-13",
+      "subjects": [
+        "ancient-wisdom",
+        "sound-healing",
+        "energy-medicine"
+      ],
+      "image": "https://sivanandabahamas.org/wp-content/uploads/Shamini-Jain_The-Graces-of-Power.jpg"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "rank": 65,
+    "shift_profile": "https://theshiftnetwork.com/shift_teacher/17173",
+    "tier_evidence": "YouTube @ShaminiJain 8.72K subscribers (channel page, 31 Oct 2026); Instagram @drshaminijain 20K followers (og:description, 31 Oct 2026); Facebook and X counts not readable → ~29K readable → local_hero",
+    "email": "contact form",
+    "email_source": null,
+    "contact_form_url": "https://www.shaminijain.com/connect#contact-form",
+    "flags": [
+      "Facebook and X follower counts could not be read; her book is a two-time award winner from Sounds True, so reputation may be higher than the ~29K readable followers suggest.",
+      "Both of her current Shift Network courses were left out under the strict health-claim rule (see left_out); a human may want to list them with neutral descriptions, since their titles are clean.",
+      "The Science of Healing Course (CHI, $497 USD) was left out as borderline: it is a clinically framed continuing-education course for mental health and nursing providers, and the live sessions on its page are dated 2024.",
+      "Her YouTube channel mixes teaching with music videos (Rock Goddess Collective, cover songs); only teaching videos were chosen, and the masterclass is co-led with Bruce Lipton.",
+      "The Graces of Power price depends on Sivananda room rates, so it is given as 'Contact for pricing'."
+    ],
+    "left_out": [
+      "Shift: Voicing the Goddess (self-paced, $297 USD; two course pages, 03SJain05_24 and 01GoddessSounds01_20): sales page says mantras help 'release anxiety', 'slow cell aging', 'harmonize your immune and nervous systems' and clear 'dis-ease patterns'.",
+      "Shift: The Healing Keys of Your Biofield (self-paced, $297 USD): sales page says connecting with the Earth 'reduces pain and anxiety' and refers to her clinical work with PTSD, depression and chronic pain.",
+      "Shift: New Program With Shamini Jain (professional training, January 2027): no course page or details yet.",
+      "The Science of Healing Course (scienceofhealingcourse.chi.is, $497 USD): borderline clinical CE course, see flags.",
+      "1:1 consultation: not her main way of working.",
+      "Free 'Grounding with Sound' meditation: only offered via newsletter sign-up on her home page, no own URL. CHI webinar replays need a paid contributor membership.",
+      "YouTube: music videos, short clips under 2 minutes (Amplify your Healing Wisdom, What is a Mantra?, MAYA), interview clips where the guest is the main speaker (Bruce Lipton, Gregg Braden, Cyndi Dale, Dawson Church, Eileen McKusick, Maya Shetreat), and 'Good Day LA - Breathing Impact on Mental Health' (mental-health framing, borderline)."
+    ]
+  },
+  "images_final": true
+}

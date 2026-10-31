@@ -1,0 +1,202 @@
+{
+  "healer": {
+    "healer_slug": "john-douillard",
+    "create": {
+      "name": "Dr. John Douillard",
+      "bio": "Dr. John Douillard is a chiropractor and Ayurvedic practitioner who has taught Ayurveda for around forty years. A former professional athlete, he was director of player development for the New Jersey Nets basketball team, and his first book, Body, Mind, and Sport, set out an approach to exercise built on nasal breathing, ease and body type. He founded LifeSpa in Boulder, Colorado, which runs an Ayurvedic clinic and publishes his weekly articles and videos.\n\nHis teaching brings classical Ayurvedic ideas together with modern research: the doshas and emotional body types, daily and seasonal routines, pranayama and nasal breathing, Ayurvedic self-massage (abhyanga), yoga and meditation. He shares much of this freely on his YouTube channel and his podcast, Ayurveda Meets Modern Science, and has written seven books, including The Encyclopedia of Ayurvedic Massage. He also teaches self-paced Ayurveda courses on The Shift Network.",
+      "tier": "luminary",
+      "entity_type": "individual",
+      "availability": "local_online",
+      "city": "Boulder",
+      "country": "United States",
+      "subjects": [
+        "ayurveda",
+        "breathwork",
+        "yoga"
+      ],
+      "website_url": "https://lifespa.com/",
+      "booking_url": "https://lifespa.com/",
+      "youtube_url": "https://www.youtube.com/@JohnDouillardsLifeSpa",
+      "instagram_url": "https://www.instagram.com/lifespa/",
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": null,
+      "image_urls": [
+        "https://theshiftnetwork.com/sites/files/faculty/JohnDouillard.jpg",
+        "https://yt3.googleusercontent.com/kL-Grg1IhFzJWL6e8-kloDZuauqL54_D2ImdD2k2yx8xWctFUf43fCMSW3DUt_2smzN9cOO-=s900"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "the-shift-network",
+      "role": "instructor"
+    }
+  ],
+  "videos": [
+    {
+      "title": "The Little-Known Benefits of the Sun Salutation",
+      "url": "https://www.youtube.com/watch?v=ylreqe7r3q0",
+      "subjects": [
+        "yoga",
+        "ayurveda"
+      ],
+      "channel": "John Douillard"
+    },
+    {
+      "title": "Enjoy 15x More Nitric Oxide Benefits with Humming (Brahmari Pranayama)",
+      "url": "https://www.youtube.com/watch?v=LpK_sbxEcKU",
+      "subjects": [
+        "breathwork",
+        "ayurveda"
+      ],
+      "channel": "John Douillard"
+    },
+    {
+      "title": "Abhyanga - Ayurvedic Self-Massage",
+      "url": "https://www.youtube.com/watch?v=t4J4uKf52ZQ",
+      "subjects": [
+        "ayurveda",
+        "self-healing"
+      ],
+      "channel": "John Douillard"
+    },
+    {
+      "title": "Finally, The Research for Nose Breathing",
+      "url": "https://www.youtube.com/watch?v=RkdkAg4Gdq4",
+      "subjects": [
+        "breathwork"
+      ],
+      "channel": "John Douillard"
+    },
+    {
+      "title": "Enjoy Exercise!  Breathe Deep for an Effortless Workout",
+      "url": "https://www.youtube.com/watch?v=SYZq52A5-Qk",
+      "subjects": [
+        "breathwork",
+        "ayurveda"
+      ],
+      "channel": "John Douillard"
+    },
+    {
+      "title": "Free Meditation Training Part I",
+      "url": "https://www.youtube.com/watch?v=1mIl-KnUhl8",
+      "subjects": [
+        "meditation"
+      ],
+      "channel": "John Douillard"
+    },
+    {
+      "title": "Free Meditation Training Part II",
+      "url": "https://www.youtube.com/watch?v=aGSwx8o-6Pk",
+      "subjects": [
+        "meditation"
+      ],
+      "channel": "John Douillard"
+    },
+    {
+      "title": "The Science and Yoga of Alternate Nostril Breathing",
+      "url": "https://www.youtube.com/watch?v=yG4vU6ZWThk",
+      "subjects": [
+        "breathwork",
+        "yoga"
+      ],
+      "channel": "John Douillard"
+    },
+    {
+      "title": "What Is Ayurveda?",
+      "url": "https://www.youtube.com/watch?v=mJHl0X7IPKQ",
+      "subjects": [
+        "ayurveda",
+        "ancient-wisdom"
+      ],
+      "channel": "John Douillard"
+    },
+    {
+      "title": "The Magic of Yoga, Breathing and Meditation",
+      "url": "https://www.youtube.com/watch?v=YQ5a5uBEaQk",
+      "subjects": [
+        "yoga",
+        "breathwork",
+        "meditation"
+      ],
+      "channel": "John Douillard"
+    },
+    {
+      "title": "Why Slow Yoga",
+      "url": "https://www.youtube.com/watch?v=wUOUv_2xrrk",
+      "subjects": [
+        "yoga"
+      ],
+      "channel": "John Douillard"
+    },
+    {
+      "title": "Ayurvedic Emotional Body Type",
+      "url": "https://www.youtube.com/watch?v=EcA0SIrRwPk",
+      "subjects": [
+        "ayurveda"
+      ],
+      "channel": "John Douillard"
+    }
+  ],
+  "books": [
+    {
+      "title": "Body, Mind, and Sport: The Mind-Body Guide to Lifelong Health, Fitness, and Your Personal Best",
+      "slug": "body-mind-and-sport",
+      "author": "John Douillard",
+      "asin": "0609807897",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "John Douillard's guide to exercise based on Ayurvedic body types, nasal breathing and training with ease rather than strain. It offers a programme for everyday fitness and a second level for athletes.",
+      "subjects": [
+        "ayurveda",
+        "breathwork",
+        "yoga"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/0609807897.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "The Encyclopedia of Ayurvedic Massage",
+      "slug": "the-encyclopedia-of-ayurvedic-massage",
+      "author": "John Douillard",
+      "asin": "1556434936",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "A practitioner's guide to Ayurvedic bodywork, describing ten traditional Panchakarma treatments and an Ayurvedic facial step by step. It is illustrated with photographs of each technique.",
+      "subjects": [
+        "ayurveda",
+        "energy-medicine"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1556434936.01._SCLZZZZZZZ_.jpg"
+    }
+  ],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "rank": 50,
+    "shift_profile": "https://theshiftnetwork.com/shift_teacher/8731",
+    "tier_evidence": "YouTube 104K subscribers (channel page @JohnDouillardsLifeSpa, 30 Oct 2026); Instagram @lifespa 95K followers (og:description, 30 Oct 2026); Facebook count not readable → ~199k total → luminary",
+    "email": "none",
+    "email_source": null,
+    "contact_form_url": null,
+    "flags": [
+      "Email info@lifespa.com (LifeSpa office) was seen only in search-engine results for store.lifespa.com/customer-service and lifespa.com; every lifespa.com page returned 403 to curl and WebFetch, so a human should confirm it on the site.",
+      "Work is mainly health-focused (clinic, gut health, detox, longevity): none of his five Shift courses passes the health-claim rule, so the page has no offerings. Consider whether he should be listed at all.",
+      "Kept the humming (Bhramari pranayama) video whose title mentions nitric oxide benefits; borderline physiological claim, no condition named.",
+      "Instagram @lifespa is LifeSpa's account (bio names John Douillard); counted as his.",
+      "His own LifeSpa courses, Ayurveda challenges and clinic pages couldn't be read (403), so none were assessed.",
+      "Email left empty: info@lifespa.com was seen only in search results, not on a page we could open (lifespa.com refused every request); confirm on lifespa.com/contact."
+    ],
+    "left_out": [
+      "All Shift courses: The Medicine of Vedic Breath (claims on anxiety, depression, pain, heartburn, immunity), The Gut Health Masterclass (condition-named), Advanced Ayurvedic Practices for a Long, Healthy & Happy Life (immunity, insomnia, disease claims), Ayurvedic Secrets for Longevity (depression, trauma, autoimmunity claims), Empowered Aging (diabetes, Alzheimer's, cancer claims).",
+      "Books Eat Wheat, The 3-Season Diet, The Colorado Cleanse, Perfect Health for Kids and similar: titles or subtitles are diet, detox or health claims.",
+      "Most popular YouTube videos (left-side sleeping, oil pulling, lymph detox, brain detox, digestive enzymes, gallbladder, menopause, tinnitus etc.): health or condition topics.",
+      "Interview videos (David Frawley, John McDougall, Rod Stryker): guest is the main speaker.",
+      "LifeSpa offerings and free downloads: site blocked automated reading (403)."
+    ]
+  },
+  "images_final": true
+}

@@ -1,0 +1,200 @@
+{
+  "healer": {
+    "healer_slug": "lydia-de-leon",
+    "create": {
+      "name": "Dr. Lydia de León",
+      "bio": "Dr. Lydia de León is a Greek architect and researcher who studies how places and buildings affect the people in them. She trained in architecture at the National Technical University of Athens, took an MSc in Sustainable Environmental Design at the Architectural Association in London, and completed a PhD in geobiology at the University of Ioannina on the effects of geophysical anomalies on living systems. For around fifteen years she has researched why ancient temples were built where they were, measuring earth fields, geometry, materials and celestial alignments at sacred sites.\n\nWith her partner, the architect Arturo Ponce de León, she co-founded Geophilia, a design studio and school with bases in Greece, Mexico and Spain that brings sacred geometry and building biology into architecture. She created the Healing Architecture approach and wrote The Power of Sacred Location, based on her doctoral research. She teaches online courses on the sacred science of ancient temples, runs the Return to the Temple membership and temple retreats with Arturo, is on the faculty of Resonance Academy, and teaches a live course, Ancient Temple Codes, on The Shift Network.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "worldwide",
+      "city": null,
+      "country": null,
+      "subjects": [
+        "sacred-geometry",
+        "ancient-wisdom",
+        "conscious-science"
+      ],
+      "website_url": "https://www.geophilia.org/",
+      "booking_url": "https://www.geophilia.org/education.html",
+      "youtube_url": "https://www.youtube.com/@geophilia",
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "contact@geophilia.org",
+      "image_urls": [
+        "https://theshiftnetwork.com/sites/files/faculty/LydiadeLeon.png",
+        "https://www.geophilia.org/assets/images/sacred-geometry-architecture-geophilia-about1-1152x1136.jpg"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "the-shift-network",
+      "role": "instructor"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Architecture of Ancient Civilizations | Atlantis - Matt LaCroix, Lydia de Leon, Arturo Ponce de Leon",
+      "url": "https://www.youtube.com/watch?v=d3tZBXhEM3c",
+      "subjects": [
+        "ancient-wisdom",
+        "sacred-geometry"
+      ],
+      "channel": "Matthew LaCroix"
+    },
+    {
+      "title": "The Ancient Secret Hidden Inside Your Home | Geophilia | The Conscious Man 7 Podcast Ep. 132",
+      "url": "https://www.youtube.com/watch?v=8tLCUTVokXM",
+      "subjects": [
+        "sacred-geometry",
+        "conscious-science"
+      ],
+      "channel": "The Conscious Man 7 Podcast"
+    },
+    {
+      "title": "Bioarchitects Arturo and Lydia de Leon - Earthen Hand Video Podcast #7",
+      "url": "https://www.youtube.com/watch?v=JNz7WqbqDa4",
+      "subjects": [
+        "sacred-geometry",
+        "conscious-science"
+      ],
+      "channel": "Earthen Hand"
+    },
+    {
+      "title": "SACRED CONVOS with Dr. Lydia de León from Geophilia Insititue",
+      "url": "https://www.youtube.com/watch?v=G90LXY1mbRY",
+      "subjects": [
+        "sacred-geometry",
+        "ancient-wisdom"
+      ],
+      "channel": "Alexandra Lia"
+    },
+    {
+      "title": "Sacred Convos with Alexandra Lia & Dr. Lydia de León",
+      "url": "https://www.youtube.com/watch?v=zsqWmljhE40",
+      "subjects": [
+        "sacred-geometry",
+        "ancient-wisdom"
+      ],
+      "channel": "Alexandra Lia"
+    },
+    {
+      "title": "Sacred Convos Episode 1: The Secret of A Most Blissful Life",
+      "url": "https://www.youtube.com/watch?v=w1d7aqz2cHk",
+      "subjects": [
+        "spirituality",
+        "sacred-geometry"
+      ],
+      "channel": "Geophilia Lydia & Arturo"
+    }
+  ],
+  "books": [
+    {
+      "title": "The Power of Sacred Location",
+      "slug": "the-power-of-sacred-location",
+      "author": "Dr. Lydia Gian de León, Arturo Ponce de León",
+      "asin": "1703969375",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "Based on Lydia de León's doctoral research, this book looks at why ancient temples were placed where they were, and at the links between earth's magnetic and geophysical fields, sacred sites and the people who visit them. It carries forewords by Nassim Haramein and Dan Winter.",
+      "subjects": [
+        "ancient-wisdom",
+        "sacred-geometry",
+        "conscious-science"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1703969375.01._SCLZZZZZZZ_.jpg"
+    }
+  ],
+  "courses": [
+    {
+      "title": "Ancient Temple Codes",
+      "url": "https://theshiftnetwork.com/course/01LdeLeon01_26",
+      "description": "A seven-week live course on The Shift Network that treats ancient temples as integrated designs linking earth energies, sacred geometry, materials and celestial alignment. Sessions combine teaching with guided meditations and temple journeys, and recordings are provided.",
+      "price": "$349 USD",
+      "product_type": "course",
+      "start_date": "2026-11-17",
+      "end_date": "2027-01-12",
+      "subjects": [
+        "ancient-wisdom",
+        "sacred-geometry",
+        "meditation"
+      ],
+      "image": "https://theshiftnetwork.com/sites/files/sys_images/01LdeLeon01_26/01LdeLeon01_26-sales-facebook.jpg?v=1793405140"
+    },
+    {
+      "title": "The Sacred Science of Ancient Temples",
+      "url": "https://www.geophilia.org/the-sacred-science-of-ancient-temples.html",
+      "description": "A self-paced online course on earth's fields, sacred geometry, archaeoastronomy and the design of sacred space, drawn from Lydia's research at temple sites. Lifetime access.",
+      "price": "$198 USD",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "ancient-wisdom",
+        "sacred-geometry",
+        "conscious-science"
+      ],
+      "image": "https://www.geophilia.org/assets/images/the-sacred-science-of-ancient-temples-meta.jpeg"
+    },
+    {
+      "title": "Return to the Temple Membership",
+      "url": "https://www.geophilia.org/return-to-the-temple-membership.html",
+      "description": "A monthly online membership led by Lydia and Arturo de León that brings sacred geometry, ancient wisdom and modern science into daily spiritual practice. It includes live calls, teachings and a community of members.",
+      "price": "$99 USD / month",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "sacred-geometry",
+        "ancient-wisdom",
+        "spirituality"
+      ],
+      "image": "https://www.geophilia.org/assets/images/membership-geophilia-return-to-the-temple-arturo-lydia-1-600x855.jpg"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "7 Secrets To Create A Sleep Sanctuary",
+      "url": "https://eolxok.subscribepage.io/",
+      "description": "A free PDF guide from Lydia and Arturo on arranging a bedroom for restful sleep, covering layout, materials and the wider building environment. It is sent after signing up to the Geophilia newsletter.",
+      "featured": true,
+      "resource_type": "download",
+      "subjects": [
+        "sacred-geometry",
+        "conscious-science"
+      ],
+      "image": "https://storage.mlcdn.com/account_image/451343/aKOKXhPbUvGZ170mQQNnDaR105LVp6OpDeEIKxcF.jpg"
+    }
+  ],
+  "sprint": {
+    "rank": 45,
+    "shift_profile": "https://theshiftnetwork.com/shift_teacher/74068",
+    "tier_evidence": "YouTube @geophilia (shared channel 'Geophilia Lydia & Arturo') 216 subscribers (channel page, 30 Oct 2026); personal channel @lydiadeleon shows no count and no videos; no Instagram/Facebook/X accounts linked from geophilia.org or found by search → ~200 → local_hero",
+    "email": "yes",
+    "email_source": "https://www.geophilia.org/contact.html",
+    "contact_form_url": null,
+    "flags": [
+      "Possible duplicate / linked listing: her partner and co-founder Arturo Ponce de León co-authored The Power of Sacred Location, co-leads the membership and shares the Geophilia YouTube channel and email; he may deserve his own listing.",
+      "The email contact@geophilia.org is the shared Geophilia studio address, not a personal one.",
+      "The book's full Amazon subtitle ends 'and how to boost your health'; no condition is named so it was kept, under the short title The Power of Sacred Location.",
+      "Most videos are podcast interviews on other channels where she is a main guest (some shared with Arturo); her own channel has only two videos.",
+      "The free Sleep Sanctuary PDF is promoted as turning sleep 'into a healing experience'; kept as a sleep-environment guide with a neutral description; drop it if that reads as a claim.",
+      "Her name appears as 'Lydia Gian de León' on the Amazon book and Geophilia site."
+    ],
+    "left_out": [
+      "Biohack Your Space in 5 Levels ($222 USD): its sales page leans on health claims (illness, remission, headaches, healing), so it was left out.",
+      "Cosmic Design course: taught by Arturo, not Lydia.",
+      "Damanhur Living Temples Equinox retreat (27 Sep – 3 Oct 2026): already past.",
+      "Geophilia Masters one-to-one training and architecture consultations: one-to-one services, not her main teaching.",
+      "Video 'Sacred Convos Episode 2: Is Your Home Making You Sick?': names illness in the title.",
+      "Video 'Architecture as Environmental Medicine': medical framing.",
+      "Portuguese/Spanish/French-language interviews and a Resonance Science French course presentation: not English teaching videos.",
+      "ARQKA and Psicogeometría books: by Arturo Ponce de León and others, not Lydia.",
+      "Geophilia summit recordings: hosted multi-speaker events, prices not checked."
+    ]
+  },
+  "images_final": true
+}

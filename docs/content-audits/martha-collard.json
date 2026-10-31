@@ -1,0 +1,145 @@
+{
+  "healer": {
+    "healer_slug": "martha-collard",
+    "create": {
+      "name": "Martha Collard",
+      "bio": "Martha Collard is a gong master and the founder of Red Doors Studio in Wong Chuk Hang, Hong Kong, a studio given over to meditation gongs, labyrinth walking and Kundalini yoga. She came to this work after three decades in management consulting, having been the youngest partner worldwide at TASA, a Swiss executive search firm, before setting up her own consultancy in 1992. She was the founding chairman of the Yoga Society of Hong Kong.\n\nShe trained with Gong Master Don Conreaux, and has also studied singing bowls, overtoning with Mark van Tongeren, voice with Chanara Richmond and integral sound with the Svaram Sound Institute, as well as flumie (friction mallet) playing with Bear Love. At Red Doors she runs small, hands-on gong trainings in three levels, from playing for yourself to leading sessions for others and playing alongside other musicians, and she teaches across Asia and in New York. Online she teaches gong meditation and gong playing through The Shift Network and leads free New Moon gong livestreams. She has spoken at TEDx Hong Kong and the Global Wellness Summit.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local_online",
+      "city": "Hong Kong",
+      "country": "Hong Kong",
+      "subjects": [
+        "sound-healing",
+        "meditation",
+        "yoga"
+      ],
+      "website_url": "https://www.red-doors.com",
+      "booking_url": "https://www.red-doors.com/in-person",
+      "youtube_url": "https://www.youtube.com/@reddoorsstudio",
+      "instagram_url": "https://www.instagram.com/reddoorsstudio/",
+      "facebook_url": "https://www.facebook.com/reddoorsstudiohk/",
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "martha@red-doors.com",
+      "image_urls": [
+        "https://theshiftnetwork.com/sites/files/faculty/MarthaCollard.png",
+        "https://images.squarespace-cdn.com/content/v1/6401347df170db7136a173c0/022944ad-c93d-41ed-a422-9d8d50a35068/IMG_2849.jpeg?format=1000w",
+        "https://images.squarespace-cdn.com/content/v1/6401347df170db7136a173c0/591cf3c3-e188-401a-9959-4ecd79549978/HIBW6322.jpeg?format=1000w"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "the-shift-network",
+      "role": "instructor"
+    }
+  ],
+  "videos": [
+    {
+      "title": "New Moon Livestream 17/04/2026",
+      "url": "https://www.youtube.com/watch?v=yXkstlHC3sI",
+      "subjects": [
+        "sound-healing",
+        "meditation"
+      ],
+      "channel": "Red Doors Studio"
+    },
+    {
+      "title": "New Moon Livestream May 2026",
+      "url": "https://www.youtube.com/watch?v=E1qSx4wg_Ws",
+      "subjects": [
+        "sound-healing",
+        "meditation"
+      ],
+      "channel": "Red Doors Studio"
+    },
+    {
+      "title": "New Moon Livestream 11th September 2026",
+      "url": "https://www.youtube.com/watch?v=Sg-kwWsVprc",
+      "subjects": [
+        "sound-healing",
+        "meditation"
+      ],
+      "channel": "Red Doors Studio"
+    },
+    {
+      "title": "A Sound Bath in Hong Kong",
+      "url": "https://www.youtube.com/watch?v=W72lRR_zUSI",
+      "subjects": [
+        "sound-healing"
+      ],
+      "channel": "WRLDCTY"
+    }
+  ],
+  "books": [],
+  "courses": [
+    {
+      "title": "The Art & Science of Gong Playing",
+      "url": "https://theshiftnetwork.com/course/03MCollard01_26",
+      "description": "A seven-module self-paced video course on the origins, lore, acoustics and energetics of the gong. Martha introduces her approach to the gong as a tool for meditation, presence and inner stillness, with guided gong experiences along the way.",
+      "price": "$297 USD",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "sound-healing",
+        "meditation"
+      ],
+      "image": "https://tsnshift.s3.amazonaws.com/pns_images/03MCollard01_26/sales_header.jpg"
+    },
+    {
+      "title": "Gong Playing Practicum",
+      "url": "https://theshiftnetwork.com/course/03MCollard02_26",
+      "description": "A twelve-module self-paced training in actually playing the gong: mallets, strokes, session structure, sound mapping and the ethics of playing for others. The introductory course, The Art & Science of Gong Playing, is included.",
+      "price": "$946 USD",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "sound-healing"
+      ],
+      "image": "https://tsnshift.s3.amazonaws.com/pns_images/03MCollard02_26/sales_header.jpg"
+    },
+    {
+      "title": "In-Person Gong Training (Levels 1 to 3)",
+      "url": "https://www.red-doors.com/in-person",
+      "description": "Small, hands-on gong trainings at Red Doors Studio in Hong Kong, each level three full days with up to twelve students. Level 1 teaches you to play for yourself, Level 2 to lead gong relaxations for others, and Level 3 to play in concert with other musicians and instruments; dates are on the studio calendar.",
+      "price": "HK$7,400 HKD per level",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "sound-healing"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/6401347df170db7136a173c0/8ccf6dbe-6a71-42dc-8ca1-b80b71003ca1/RedDoors-19.jpg?format=1000w"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "rank": 13,
+    "shift_profile": "https://theshiftnetwork.com/shift_teacher/68858",
+    "tier_evidence": "YouTube 96 subscribers (Red Doors Studio channel page, 30 Oct 2026); Instagram @reddoorsstudio and Facebook /reddoorsstudiohk counts could not be read (pages show no count without login) → well under 100k → local_hero",
+    "email": "yes",
+    "email_source": "https://www.red-doors.com/in-person",
+    "contact_form_url": "https://www.red-doors.com/contact",
+    "flags": [
+      "Instagram and Facebook follower counts could not be read; the social accounts and YouTube channel belong to her studio (Red Doors Studio), not to her personally.",
+      "The Art & Science of Gong Playing sales page says the gong helps dissolve 'stress, illness, chronic ailments, and pain'; kept because the title and our description are about gong technique and meditation, but a human should confirm.",
+      "Videos are mostly her studio's New Moon gong livestream recordings (low view counts, titles carry the stream date); they are guided gong meditations rather than talks.",
+      "The in-person trainings (three levels plus a Flumie Masterclass) share one page and one booking calendar, so they are listed as a single offering; the price is per level and the Flumie Masterclass (HK$5,600) is left within that page.",
+      "Country entered as 'Hong Kong'; change to the form the database expects if different.",
+      "info@red-doors.com is the studio's general address (on https://www.red-doors.com/contact); martha@red-doors.com is used as it is published as hers."
+    ],
+    "left_out": [
+      "Gong Medicine (Shift Network live course, 7 Oct to 18 Nov 2026): already under way, so dated, and the word 'Medicine' in the title is borderline.",
+      "SCMP interview 'The Ancient Practice of Gong Therapy' and other short studio clips: under 2 minutes.",
+      "Gong-playing performance clips on other channels (Corinne Vigniel, Jens Zygar): music only.",
+      "GONGTALK with Don Conreaux & Bob Horwell: she is a guest, not the main speaker.",
+      "Don Conreaux 'The Healing Power of Gongs' at Red Doors: Don Conreaux is the speaker.",
+      "Books: none found on Amazon.",
+      "Free resources: the studio's Meditations page says 'Coming Soon'; none verified."
+    ]
+  },
+  "images_final": true
+}

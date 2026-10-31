@@ -1,0 +1,402 @@
+{
+  "healer": {
+    "healer_slug": "helen-hamilton",
+    "create": {
+      "name": "Helen Hamilton",
+      "bio": "Helen Hamilton is an English spiritual teacher in the non-dual tradition of Self-realisation. Her teaching grew out of her own awakening, which she found a long and difficult process, and her aim is to make that path simpler and open to anyone; her summary of it is that the truth of our being is very simple and realisation of the Self is possible for everyone. She was long based in West Yorkshire and is a mother of four.\n\nShe teaches through satsang: a talk followed by open questions, held free on Zoom twice a month, alongside weekend intensives and residential retreats in Britain, Spain and the United States, many of them recorded. Her method rests on five practices: meditation, contemplation, self-inquiry, conscious imagining and what she calls the Statement Process. Students who want to go further join the Helen Hamilton Sangha, a monthly membership with live classes, a growing archive and support from acharya teachers she has trained. She has written a series of books published by Balboa Press, beginning with Dissolving the Ego and Transcending the Mind, and offers several short ebooks free on her website.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "worldwide",
+      "city": null,
+      "country": null,
+      "subjects": [
+        "non-duality",
+        "spiritual-awakening",
+        "meditation"
+      ],
+      "website_url": "https://www.helenhamilton.org/",
+      "booking_url": "https://www.helenhamilton.org/helen-hamilton-sangha.html",
+      "youtube_url": "https://www.youtube.com/@SatsangwithHelenHamilton",
+      "instagram_url": "https://www.instagram.com/satsangwithhelenhamilton/",
+      "facebook_url": "https://www.facebook.com/SatsangwithHelenHamiltonOfficial",
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "info@helenhamilton.com",
+      "image_urls": [
+        "https://yt3.googleusercontent.com/7qPoVfMImRgxyHlVyJ11sMjYjLncJRzVPMq3EQEH-wIVulIRKkPbb5cXl_5o9-_F_OERU_I95Q=s900-c-k-c0x00ffffff-no-rj",
+        "https://theshiftnetwork.com/sites/files/faculty/HelenHamilton.png",
+        "https://www.helenhamilton.org/uploads/4/0/0/9/4009977/editor/6q3a2889.jpg"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "the-shift-network",
+      "role": "instructor"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Core Teaching Part 1 - Meditation",
+      "url": "https://www.youtube.com/watch?v=DyzwcIiEQqw",
+      "subjects": [
+        "meditation",
+        "non-duality"
+      ],
+      "channel": "Satsang with Helen Hamilton"
+    },
+    {
+      "title": "Rest Here With Me - Guided Meditation",
+      "url": "https://www.youtube.com/watch?v=YW-ZTg9jevA",
+      "subjects": [
+        "meditation",
+        "non-duality"
+      ],
+      "channel": "Satsang with Helen Hamilton"
+    },
+    {
+      "title": "Guided Meditation - Loving Acceptance Of This Moment",
+      "url": "https://www.youtube.com/watch?v=LoW4U1C_cmk",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "channel": "Satsang with Helen Hamilton"
+    },
+    {
+      "title": "Core Teachings Part 2 - Contemplation",
+      "url": "https://www.youtube.com/watch?v=SXzQ0JiGnkc",
+      "subjects": [
+        "non-duality",
+        "spiritual-awakening"
+      ],
+      "channel": "Satsang with Helen Hamilton"
+    },
+    {
+      "title": "The only 4 facts to examine for a full awakening",
+      "url": "https://www.youtube.com/watch?v=7m6OkR7afAc",
+      "subjects": [
+        "spiritual-awakening",
+        "non-duality"
+      ],
+      "channel": "Satsang with Helen Hamilton"
+    },
+    {
+      "title": "How to Permanently Stop the Mind — Without Force or Effort",
+      "url": "https://www.youtube.com/watch?v=SJ_TutRU_l0",
+      "subjects": [
+        "non-duality",
+        "meditation"
+      ],
+      "channel": "Satsang with Helen Hamilton"
+    },
+    {
+      "title": "Core Teaching Part 3 - Self Inquiry",
+      "url": "https://www.youtube.com/watch?v=mTpq1hqnIYw",
+      "subjects": [
+        "non-duality",
+        "spiritual-awakening"
+      ],
+      "channel": "Satsang with Helen Hamilton"
+    },
+    {
+      "title": "Contemplation - The Antidote to Believing Thoughts",
+      "url": "https://www.youtube.com/watch?v=5e4dGVsqLV8",
+      "subjects": [
+        "non-duality",
+        "mindfulness"
+      ],
+      "channel": "Satsang with Helen Hamilton"
+    },
+    {
+      "title": "Living Without Our Stories - Guided Meditation",
+      "url": "https://www.youtube.com/watch?v=QWi0OHpqmQA",
+      "subjects": [
+        "meditation",
+        "non-duality"
+      ],
+      "channel": "Satsang with Helen Hamilton"
+    },
+    {
+      "title": "The Attentionless State",
+      "url": "https://www.youtube.com/watch?v=3Wk12yzTegw",
+      "subjects": [
+        "non-duality",
+        "consciousness"
+      ],
+      "channel": "Satsang with Helen Hamilton"
+    },
+    {
+      "title": "There's no thinker -just thoughts!",
+      "url": "https://www.youtube.com/watch?v=ad3Oy0ZZYKs",
+      "subjects": [
+        "non-duality",
+        "spiritual-awakening"
+      ],
+      "channel": "Satsang with Helen Hamilton"
+    },
+    {
+      "title": "Where am I really? -  Guided Self Inquiry",
+      "url": "https://www.youtube.com/watch?v=t21W1u4_NT4",
+      "subjects": [
+        "non-duality",
+        "spiritual-awakening"
+      ],
+      "channel": "Satsang with Helen Hamilton"
+    }
+  ],
+  "books": [
+    {
+      "title": "Dissolving The Ego",
+      "slug": "dissolving-the-ego",
+      "author": "Helen Hamilton",
+      "asin": "1982282746",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "An introduction to her teaching, which she suggests reading first. It sets out fourteen pathways for recognising the true Self beyond the mind and senses.",
+      "subjects": [
+        "non-duality",
+        "spiritual-awakening"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1982282746.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "Transcending The Mind: Some Disassembly Required!: How to take apart your noisy mind",
+      "slug": "transcending-the-mind",
+      "author": "Helen Hamilton",
+      "asin": "198228336X",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "A companion to Dissolving the Ego that lays out the stages of karmic patterns of thought and feeling, and a step-by-step way of contemplating and undoing them.",
+      "subjects": [
+        "non-duality",
+        "spiritual-awakening"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/198228336X.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "Reality Check: A Simple Guide to Final Enlightenment",
+      "slug": "reality-check-a-simple-guide-to-final-enlightenment",
+      "author": "Helen Hamilton",
+      "asin": "1982283173",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "Written for readers who have glimpsed their real nature and want to move past the last dualities of real and unreal, Self and ego.",
+      "subjects": [
+        "non-duality",
+        "spiritual-awakening"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1982283173.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "How to Fall in Love with Yourself",
+      "slug": "how-to-fall-in-love-with-yourself",
+      "author": "Helen Hamilton",
+      "asin": "1982283580",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "An exploration of conditional and unconditional love, and of moving from judging ourselves and others towards acceptance of whatever is.",
+      "subjects": [
+        "spiritual-awakening",
+        "non-duality"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1982283580.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "Hamilton Gita: Musings from the One",
+      "slug": "hamilton-gita-musings-from-the-one",
+      "author": "Helen Hamilton",
+      "asin": "1982283475",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "A collection of short contemplative writings from the perspective of oneness, meant to be read at any stage of the path.",
+      "subjects": [
+        "non-duality",
+        "mysticism"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1982283475.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "Empowerment Course Handbook",
+      "slug": "empowerment-course-handbook",
+      "author": "Helen Hamilton",
+      "asin": "1982283637",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "Brings together three of her courses: on forgiveness; on desire, manifestation and abundance; and on transcending the vasanas, or habitual patterns, that arise as awakening unfolds.",
+      "subjects": [
+        "spiritual-awakening",
+        "non-duality"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1982283637.01._SCLZZZZZZZ_.jpg"
+    }
+  ],
+  "courses": [
+    {
+      "title": "Helen Hamilton Sangha",
+      "url": "https://www.helenhamilton.org/helen-hamilton-sangha.html",
+      "description": "A monthly online membership with three live classes a month with Helen (a core teaching, self-inquiry and a question-and-answer session), an archive of recorded classes, members' events and a WhatsApp community. Members can also have one-to-one support from her trained acharya teachers; join or cancel at any time.",
+      "price": "£20 to £100 GBP a month (sliding scale)",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "non-duality",
+        "spiritual-awakening",
+        "meditation"
+      ],
+      "image": "https://www.helenhamilton.org/uploads/4/0/0/9/4009977/published/hhs_1.jpg"
+    },
+    {
+      "title": "Being the Loving Awareness: Weekend Intensive in Beavercreek, Ohio",
+      "url": "https://www.helenhamilton.org/being-the-loving-awareness.html",
+      "description": "A weekend in Beavercreek, Ohio, opening with a free Friday satsang, followed by two days of talks, guided meditation, contemplation, self-inquiry and satsang. Booking closes 14 November 2026.",
+      "price": "£120 GBP (two days); £70 GBP (one day)",
+      "product_type": "retreat",
+      "start_date": "2026-11-20",
+      "end_date": "2026-11-22",
+      "subjects": [
+        "non-duality",
+        "spiritual-awakening"
+      ],
+      "image": "https://www.helenhamilton.org/uploads/4/0/0/9/4009977/6q3a1835_orig.jpg"
+    },
+    {
+      "title": "Embodying Silence and Wisdom: Weekend Intensive in Leeds",
+      "url": "https://www.helenhamilton.org/embodying-silence-and-wisdom.html",
+      "description": "A weekend intensive in Leeds, West Yorkshire, with talks, guided meditation, contemplation, self-inquiry and satsang across two days, plus a Friday satsang for Sangha members.",
+      "price": "£140 GBP (two days); £80 GBP (one day)",
+      "product_type": "retreat",
+      "start_date": "2027-01-15",
+      "end_date": "2027-01-17",
+      "subjects": [
+        "non-duality",
+        "spiritual-awakening"
+      ],
+      "image": "https://yt3.googleusercontent.com/7qPoVfMImRgxyHlVyJ11sMjYjLncJRzVPMq3EQEH-wIVulIRKkPbb5cXl_5o9-_F_OERU_I95Q=s900-c-k-c0x00ffffff-no-rj"
+    },
+    {
+      "title": "Awakening To Truth: Weekend Intensive in Madrid",
+      "url": "https://www.helenhamilton.org/awakening-to-truth.html",
+      "description": "A weekend intensive in central Madrid with live Spanish translation, following her usual pattern of talk, guided meditation, contemplation, self-inquiry and satsang.",
+      "price": "£120 GBP (two days); £70 GBP (one day)",
+      "product_type": "retreat",
+      "start_date": "2027-01-22",
+      "end_date": "2027-01-24",
+      "subjects": [
+        "non-duality",
+        "spiritual-awakening"
+      ],
+      "image": "https://yt3.googleusercontent.com/7qPoVfMImRgxyHlVyJ11sMjYjLncJRzVPMq3EQEH-wIVulIRKkPbb5cXl_5o9-_F_OERU_I95Q=s900-c-k-c0x00ffffff-no-rj"
+    },
+    {
+      "title": "Living As The Loving Presence Retreat (recordings)",
+      "url": "https://www.helenhamilton.org/store/p157/Living_As_The_Loving_Presence_Retreat.html",
+      "description": "Video recordings of a five-day online retreat held in April 2026, with a talk, guided meditation, satsang and guided contemplation or self-inquiry for each day.",
+      "price": "£60 GBP",
+      "product_type": "download",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "non-duality",
+        "meditation"
+      ],
+      "image": "http://www.helenhamilton.org/uploads/4/0/0/9/4009977/s832091216609171746_p157_i1_w5464.jpeg?width=640"
+    },
+    {
+      "title": "Beyond Seeking, Into Freedom Retreat (recordings)",
+      "url": "https://www.helenhamilton.org/store/p156/Beyond_Seeking%2C_Into_Freedom_Retreat.html",
+      "description": "Video recordings of an online retreat from November 2025: talks, guided meditations, satsangs and guided self-inquiries on freedom, acceptance and fear.",
+      "price": "£60 GBP",
+      "product_type": "download",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "non-duality",
+        "spiritual-awakening"
+      ],
+      "image": "http://www.helenhamilton.org/uploads/4/0/0/9/4009977/s832091216609171746_p156_i1_w8192.jpeg?width=640"
+    },
+    {
+      "title": "Living From The Heart - Embodying Wisdom Intensive (recordings)",
+      "url": "https://www.helenhamilton.org/store/p158/Living_From_The_Heart_-_Embodying_Wisdom_Intensive.html",
+      "description": "Video recordings of a two-day online intensive from September 2026, including guided meditation, contemplation, self-inquiry, conscious imagining and the Statement Process.",
+      "price": "£35 GBP",
+      "product_type": "download",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "non-duality",
+        "meditation"
+      ],
+      "image": "http://www.helenhamilton.org/uploads/4/0/0/9/4009977/s832091216609171746_p158_i1_w8192.jpeg?width=640"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Free Ebooks by Helen Hamilton",
+      "url": "https://www.helenhamilton.org/books.html",
+      "description": "Five short ebooks free to download as PDFs, including Seeing with the Sages' Eyes, The Progression of Awakening and How to Always Hear the Silence.",
+      "featured": true,
+      "resource_type": "download",
+      "subjects": [
+        "non-duality",
+        "spiritual-awakening"
+      ],
+      "image": "https://www.helenhamilton.org/uploads/4/0/0/9/4009977/published/books.jpg?1763772908"
+    },
+    {
+      "title": "Free Satsangs with Helen Hamilton",
+      "url": "https://www.helenhamilton.org/free-satsangs.html",
+      "description": "Live satsangs on Zoom twice a month, open to everyone: a talk of about thirty minutes followed by open questions. Selected questions are answered in a monthly recorded satsang on YouTube.",
+      "featured": false,
+      "resource_type": "workshop",
+      "subjects": [
+        "non-duality",
+        "spiritual-awakening"
+      ],
+      "image": "https://www.helenhamilton.org/uploads/4/0/0/9/4009977/published/6q3a3425.jpg?1792077818"
+    },
+    {
+      "title": "Free Downloads: Guided Meditations and Readings",
+      "url": "https://www.helenhamilton.org/free-downloads.html",
+      "description": "Free audio of guided meditations and satsangs from her Madrid gatherings, and her readings from The Hamilton Gita.",
+      "featured": false,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation",
+        "non-duality"
+      ],
+      "image": "https://www.helenhamilton.org/uploads/4/0/0/9/4009977/6q3a2887_orig.jpg"
+    }
+  ],
+  "sprint": {
+    "rank": 94,
+    "shift_profile": "https://theshiftnetwork.com/shift_teacher/75051",
+    "tier_evidence": "YouTube @SatsangwithHelenHamilton 6.89K subscribers and Spanish channel @SatsangconHelenHamilton 3.67K (channel pages, 31 Oct 2026); Instagram @satsangwithhelenhamilton 799 (og:description); Facebook count not readable → ~11k → local_hero",
+    "email": "yes",
+    "email_source": "https://www.helenhamilton.org/helen-hamilton-sangha.html",
+    "contact_form_url": "https://www.helenhamilton.org/contact-us.html",
+    "flags": [
+      "The email info@helenhamilton.com was decoded from a Cloudflare-protected link on her Sangha and event pages (note the .com domain, while the site is helenhamilton.org); the site says Helen cannot reply personally to emails.",
+      "Her location may have changed: older bios say West Yorkshire, but from December 2026 she holds monthly in-person satsangs in Asheville, North Carolina; the bio avoids stating where she now lives.",
+      "Four further Balboa Press books (Now That You Are Formless, The Story of I, Top Ten Myths about Enlightenment, Into the Heart of Being, plus ISBNs 198228319X, 1982283734, 1982283750, 1982289880) could not be checked: amazon.com /dp/ pages returned errors.",
+      "The Ohio weekend is priced in pounds on her site (£120 GBP), as published.",
+      "Her Statement Process is described on her site as 'using the physical body as a diagnostic tool'; that wording is kept out of the listing."
+    ],
+    "left_out": [
+      "Older retreat and satsang intensive recordings (2019–2025) on her shop: older and many; the three most recent are included.",
+      "Residing As Presence (Watsonville, March 2027) and I Am Presence (Boone, October 2027): announced, but no pages or prices yet.",
+      "Abiding Liberation online retreat recordings: payment link only, no page of its own.",
+      "Books not verified on amazon.com (see flags).",
+      "Shift Network: new live course beginning June 2027 has no page or URL yet."
+    ]
+  },
+  "images_final": true
+}

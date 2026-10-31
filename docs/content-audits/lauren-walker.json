@@ -1,0 +1,276 @@
+{
+  "healer": {
+    "healer_slug": "lauren-walker",
+    "create": {
+      "name": "Lauren Walker",
+      "bio": "Lauren Walker is the creator of Energy Medicine Yoga (EMYoga), a practice that weaves techniques from Donna Eden's Energy Medicine, such as meridian tracing, tapping and holding acupressure points, into familiar yoga postures, breath and meditation. She trained at the Jivamukti studio in New York and has taught yoga and meditation since 1997, first in New York and later in Montana, where she opened the first yoga studio in the north-west of the state. EMYoga took shape while she was teaching students at Norwich University, a military college in Vermont.\n\nShe is the author of Energy Medicine Yoga (Sounds True, 2014), The Energy Medicine Yoga Prescription (2017) and The Energy to Heal (Llewellyn, 2022), each of which received a Nautilus Silver Award. She teaches across the United States and internationally, trains and certifies EMYoga teachers, co-hosts the Energy Works podcast, and offers online classes and courses through EMYoga and The Shift Network. Her teaching centres on the body's energy systems, the Five Elements, the chakras and building a short daily practice.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "worldwide",
+      "city": null,
+      "country": null,
+      "subjects": [
+        "yoga",
+        "energy-medicine",
+        "chakra-healing"
+      ],
+      "website_url": "https://www.energymedicineyoga.net/",
+      "booking_url": "https://emyoga.thinkific.com/collections",
+      "youtube_url": "https://www.youtube.com/channel/UCBBIER1d09xB5rvWQTCftlQ",
+      "instagram_url": "https://www.instagram.com/energymedicineyoga/",
+      "facebook_url": "https://www.facebook.com/EnergyMedicineYoga/",
+      "twitter_url": "https://twitter.com/EnergyMedYoga",
+      "tiktok_url": null,
+      "contact_email": "support@emyoga.net",
+      "image_urls": [
+        "https://static.wixstatic.com/media/65fed6_c822d945d09c4a28ad28071875064261~mv2.jpg",
+        "https://static.wixstatic.com/media/65fed6_e818acb296f5470182d06b48833212e3~mv2_d_3840_4725_s_4_2.jpg/v1/fill/w_900,h_1107,al_c,q_85/a.jpg"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "the-shift-network",
+      "role": "instructor"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Day 1 of the Energy Medicine Yoga Challenge with Lauren Walker!",
+      "url": "https://www.youtube.com/watch?v=CfOa8kjRok8",
+      "subjects": [
+        "yoga",
+        "energy-medicine"
+      ],
+      "channel": "Donna Eden Energy Medicine"
+    },
+    {
+      "title": "Benefits of Energy Medicine Yoga with  Lauren Walker",
+      "url": "https://www.youtube.com/watch?v=DppumCIOYUE",
+      "subjects": [
+        "yoga",
+        "energy-medicine"
+      ],
+      "channel": "Healing Life"
+    },
+    {
+      "title": "What is Energy Medicine Yoga?",
+      "url": "https://www.youtube.com/watch?v=MMfW4alPFgQ",
+      "subjects": [
+        "yoga",
+        "energy-medicine"
+      ],
+      "channel": "Energy Medicine Yoga"
+    },
+    {
+      "title": "When Emotions Get Stuck",
+      "url": "https://www.youtube.com/watch?v=GeLur7zm9vc",
+      "subjects": [
+        "energy-medicine"
+      ],
+      "channel": "Energy Medicine Yoga"
+    },
+    {
+      "title": "The Physical Side of Your Emotions",
+      "url": "https://www.youtube.com/watch?v=blzBiRWGYw8",
+      "subjects": [
+        "energy-medicine"
+      ],
+      "channel": "Energy Medicine Yoga"
+    },
+    {
+      "title": "What It Costs to Be Seen",
+      "url": "https://www.youtube.com/watch?v=GPq222rmMNk",
+      "subjects": [
+        "energy-medicine",
+        "spirituality"
+      ],
+      "channel": "Energy Medicine Yoga"
+    },
+    {
+      "title": "Sacred Sites, Haunted Spaces & the Energy They Carry",
+      "url": "https://www.youtube.com/watch?v=QGfKl7TvBzg",
+      "subjects": [
+        "energy-medicine",
+        "akashic-records"
+      ],
+      "channel": "Energy Medicine Yoga"
+    }
+  ],
+  "books": [
+    {
+      "title": "Energy Medicine Yoga: Amplify the Healing Power of Your Yoga Practice",
+      "slug": "energy-medicine-yoga",
+      "author": "Lauren Walker",
+      "asin": "1622032462",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "Lauren Walker's first book, with a foreword by Donna Eden, introduces Energy Medicine Yoga for practitioners of any level. It explains the body's subtle energy systems, sets out an eight-week learning plan working with meridians, chakras and the wider energy field, and ends with a 20-minute daily template.",
+      "subjects": [
+        "yoga",
+        "energy-medicine",
+        "chakra-healing"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1622032462.01._SCLZZZZZZZ_.jpg"
+    }
+  ],
+  "courses": [
+    {
+      "title": "Access the Quantum Field With Energy Medicine Yoga & Tuning Forks",
+      "url": "https://theshiftnetwork.com/course/03LWalker03_26",
+      "description": "A self-paced seven-module course combining Energy Medicine Yoga with tuning forks to balance the body's energy systems. Modules cover meridian tracing, the aura, the chakras and working with sound.",
+      "price": "$247 USD",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "energy-medicine",
+        "sound-healing",
+        "yoga"
+      ],
+      "image": "https://tsnshift.s3.amazonaws.com/pns_images/03LWalker03_26/sales_header.jpg"
+    },
+    {
+      "title": "Intro to Energy Medicine Yoga",
+      "url": "https://emyoga.thinkific.com/courses/intro-to-emyoga",
+      "description": "A short five-module online introduction to the ideas behind EMYoga. Each module adds a simple daily practice for working with the body's energies.",
+      "price": "$31.57 USD",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga",
+        "energy-medicine"
+      ],
+      "image": "https://import.cdn.thinkific.com/497334/courses/1576678/xH1trmqRPGAL2f7aK1IA_Untitled%20design.png"
+    },
+    {
+      "title": "The Ultimate Manifestation Course",
+      "url": "https://emyoga.thinkific.com/courses/the-ultimate-manifestation-course",
+      "description": "A seven-week online course on manifestation using EMYoga tools and practices. It explores working with your own energy to co-create with the universe.",
+      "price": "$347 USD",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "manifestation",
+        "energy-medicine",
+        "yoga"
+      ],
+      "image": "https://import.cdn.thinkific.com/497334/courses/1622786/B3Ws4lGeS3e1CQafFwMX_New%20UMC%20Photo%20760x420.png"
+    },
+    {
+      "title": "Harnessing the Power of the Chakras",
+      "url": "https://emyoga.thinkific.com/courses/public-chakras",
+      "description": "An eight-module online course on understanding and working with the chakras through Energy Medicine Yoga practices.",
+      "price": "$347 USD",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "chakra-healing",
+        "yoga",
+        "energy-medicine"
+      ],
+      "image": "https://import.cdn.thinkific.com/497334/courses/2177446/EksocLtWSkagdLD0nFWD_Thinktific%20Course%20Thumbnails%20PC%20Chakra.png"
+    },
+    {
+      "title": "The Essential EMYoga Practice",
+      "url": "https://emyoga.thinkific.com/courses/the-essential-emyoga-practice",
+      "description": "A 60-minute guided video of the full Essential EMYoga sequence, covering techniques for each of the body's energy systems. A practice to return to regularly for balance and energy.",
+      "price": "$23.37 USD",
+      "product_type": "download",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga",
+        "energy-medicine"
+      ],
+      "image": "https://import.cdn.thinkific.com/497334/courses/2072548/M8PrqxLNQH2Q0KfrFoEW_gECixfy9qGjqJyGCr9qSajqD.jpg"
+    },
+    {
+      "title": "EMYoga Wake Up Bundle",
+      "url": "https://emyoga.thinkific.com/courses/emyoga-wake-up-bundle",
+      "description": "The short daily routine that opens every EMYoga class, with a video and practice guide. It covers five key steps to get the body's energies moving at the start of the day.",
+      "price": "$11.67 USD",
+      "product_type": "download",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga",
+        "energy-medicine"
+      ],
+      "image": "https://import.cdn.thinkific.com/497334/courses/1686229/CtrCdtHiRtWvggo5Ams4_Untitled%20%28760%20x%20420%20px%29.png"
+    },
+    {
+      "title": "Five Element Flow Video & Guide",
+      "url": "https://emyoga.thinkific.com/courses/five-element-flow-video-guide",
+      "description": "A short video and PDF guide to one of EMYoga's core practices for emotional balance, working with the Five Elements and the emotions linked to each.",
+      "price": "$6.97 USD",
+      "product_type": "download",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "energy-medicine",
+        "yoga"
+      ],
+      "image": "https://import.cdn.thinkific.com/497334/courses/2073160/Sx3K7F7SeON9CNJHRRlA_NA4QLd6gwqyJwC8hjHkN5ScE.jpg"
+    },
+    {
+      "title": "EMYoga Certified Teacher Training (Learn Energy Medicine Yoga + Foundations)",
+      "url": "https://www.energymedicineyoga.net/foundations-online",
+      "description": "A two-part self-paced training for yoga teachers: Learn Energy Medicine Yoga (over 13 hours of content and a manual), then the Foundations certification course with live Zoom calls, an exam and a one-to-one review. Foundations requires a prior 200-hour yoga teacher training.",
+      "price": "$297 USD (part one); $597 USD (Foundations)",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga",
+        "energy-medicine"
+      ],
+      "image": "https://static.wixstatic.com/media/68630f_cffa10de39ed4ea0bb48a5895dfba262~mv2_d_5100_5100_s_4_2.png/v1/fill/w_2500,h_2500,al_c/68630f_cffa10de39ed4ea0bb48a5895dfba262~mv2_d_5100_5100_s_4_2.png"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Five Elements Quiz",
+      "url": "https://emyoga.thinkific.com/courses/five-elements-quiz",
+      "description": "A free quiz based on Five Element theory to help you reflect on your personality and patterns and find which elements are most present for you.",
+      "featured": true,
+      "resource_type": "download",
+      "subjects": [
+        "energy-medicine"
+      ],
+      "image": "https://import.cdn.thinkific.com/497334/courses/2074343/tPDvc5N9TQKMlVKhjU4D_c6pJ8ituAy4MvsFkDzj84kh6.png"
+    }
+  ],
+  "sprint": {
+    "rank": 104,
+    "shift_profile": "https://theshiftnetwork.com/shift_teacher/8970",
+    "tier_evidence": "Facebook @EnergyMedicineYoga 7,635 (page og:description, 31 Oct 2026); Instagram @energymedicineyoga 5,982 (og:description); YouTube Lauren Walker channel 1.08K and @EnergyMedicineYoga 1.13K (channel pages); X not readable → ~16k total → local_hero",
+    "email": "yes",
+    "email_source": "https://www.energymedicineyoga.net/contact",
+    "contact_form_url": null,
+    "flags": [
+      "The email is the EMYoga company address (support@emyoga.net); EMYoga now has co-owners (Blaine, who runs the 200-hour training and newsletter), so it may not reach Lauren directly. emyogaschool@gmail.com is also published for teacher-training questions.",
+      "The four podcast videos (Energy Works) are co-hosted by Lauren and Blaine; Lauren is a main speaker but not the only one.",
+      "The Shift Network profile photo is only 230 px, so it was not used; both photos come from her About page on energymedicineyoga.net (one shows her holding a dog, the other is a full-length meditation shot).",
+      "Health-claim rule removed two of her three books and most of her Shift courses (see left_out); her reputation (three Nautilus Silver Awards, The New York Times, a 'Top 100 influential yoga teachers' listing) is larger than her ~16k follower count.",
+      "'Harnessing the Power of the Chakras' blurb speaks of the chakras' 'healing potential' (no condition named); kept."
+    ],
+    "left_out": [
+      "Book: The Energy to Heal: Find Lasting Freedom From Stress and Trauma Through Energy Medicine Yoga (ASIN 0738769495): trauma in the title.",
+      "Book: The Energy Medicine Yoga Prescription (ASIN 1622036611): blurb matches 'hundreds of health complaints' to practices and teaches you to 'diagnose' (health claim).",
+      "Shift 'Energy Medicine Yoga for Healing: Overcome Trauma, Anxiety & Stress' (title names conditions).",
+      "Shift 'Find Lasting Freedom From Suffering With the \"5 Element Star\" Energy Process' ($247 USD): main description centres on trauma, anxiety, panic and pain.",
+      "Shift 'Energy Medicine Yoga to Embody Joy' ($794 USD): title clean, but the main description names trauma and anxiety (borderline, left out).",
+      "EMYoga 'The Energy to Heal' course ($347 USD) and the five element practices from that book ($25 each): tied to the stress-and-trauma book.",
+      "Advanced Teacher Program ($179/month): features list 'trauma release' and vagus nerve work; enrolment is by email only.",
+      "EMYoga Cancer Support free PDF (condition-named); prenatal and 'Ageless/longevity' bundles; Yoga Nidra 'Meditation for Healing'; webinar series 2020 and 2022 (dated).",
+      "200-hour yoga teacher training (led by co-owner Blaine, not Lauren).",
+      "Videos: her own channel's daily clips (titled only 'May 1' to 'May 30' and 'Day 6', mostly 2-5 minutes, no descriptive titles), Healing Life 'Difference Between Yoga and Energy Medicine Yoga' (description mentions cancer and chronic disease), Sounds True book trailer and short clips (promotional or under 2 minutes, one headache-relief clip), podcast guest episodes led by others, Blaine's solo episodes, and Shift Network channel videos."
+    ]
+  },
+  "images_final": true
+}

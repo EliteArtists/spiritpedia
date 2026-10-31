@@ -1,0 +1,73 @@
+{
+  "healer": {
+    "healer_slug": "megan-solarglow",
+    "create": {
+      "name": "Megan SolarGlow",
+      "bio": "Megan SolarGlow is a dowsing practitioner, Reiki giver and meditation creator from the Pacific Northwest of the United States, who works under the name Solar Glow Meditations. She came to dowsing by accident and became widely known through short videos on TikTok, Instagram and YouTube in which she uses dowsing rods to put yes-or-no questions to spirit guides, archangels, deities and people who have died. She has a bachelor's degree from Washington State University and a master's degree from Harvard, and describes herself as a lifelong meditator.\n\nHer longer YouTube sessions take one theme at a time, such as death and reincarnation, the Akashic records, dreams, manifestation or energy, and work through viewers' questions with the rods. She also records distance Reiki meditations, including chakra-balancing sessions, and has written a beginner's guide to using dowsing rods. She offers private dowsing, Reiki and tarot sessions, runs a subscribers' Q&A Library on her website, and appears at events such as the Conscious Life Expo.",
+      "tier": "superhero",
+      "entity_type": "individual",
+      "availability": "worldwide",
+      "city": null,
+      "country": null,
+      "subjects": ["mediumship-spirits", "channelled-teachings", "reiki"],
+      "website_url": "https://solarglowmeditations.com/",
+      "booking_url": "https://solarglowmeditations.com/book-a-reading/",
+      "youtube_url": "https://www.youtube.com/@SolarGlowMeditations",
+      "instagram_url": "https://www.instagram.com/solarglowmeditations/",
+      "facebook_url": "https://www.facebook.com/profile.php?id=61575839412713",
+      "twitter_url": null,
+      "tiktok_url": "https://www.tiktok.com/@solarglowmeditations",
+      "contact_email": "megan@solarglowmeditations.com",
+      "image_urls": [
+        "https://theshiftnetwork.com/sites/files/faculty/MeganSolarglow.png"
+      ]
+    }
+  },
+  "teaches_at": [{ "hub": "the-shift-network", "role": "instructor" }],
+  "videos": [
+    { "title": "How to use Dowsing/Divining Rods for Spirituality -  Talk to Your Spirit Guides/Higher Self/Gods", "url": "https://www.youtube.com/watch?v=xdfvbnW21N8", "subjects": ["mediumship-spirits", "spirituality"] },
+    { "title": "Dowsing Rod Q&A | Talking with Spirit | How the Universe Works", "url": "https://www.youtube.com/watch?v=el9T_x1GSYo", "subjects": ["channelled-teachings", "mediumship-spirits"] },
+    { "title": "Dowsing Rod Q&A with Archangel Gabriel", "url": "https://www.youtube.com/watch?v=5TgtxsATVX4", "subjects": ["channelled-teachings", "mediumship-spirits"] },
+    { "title": "How to Use Dowsing Rods to Talk to Spirit and Passed Loved Ones", "url": "https://www.youtube.com/watch?v=XRi138plYD8", "subjects": ["mediumship-spirits", "death-the-afterlife"] },
+    { "title": "Dowsing Rod Q&A | Talking with Spirit Guides | How the Universe Works", "url": "https://www.youtube.com/watch?v=jCv7OqDLDO8", "subjects": ["channelled-teachings", "mediumship-spirits"] },
+    { "title": "Dowsing Rod Q&A | Death, Dying, and Reincarnation with Archangel Azrael", "url": "https://www.youtube.com/watch?v=9n7x8ScOKdI", "subjects": ["death-the-afterlife", "channelled-teachings"] },
+    { "title": "Dowsing Rod Q&A with Archangel Jophiel | Manifesting and Manifestation", "url": "https://www.youtube.com/watch?v=gMSQU96s5OI", "subjects": ["manifestation", "channelled-teachings"] },
+    { "title": "Dowsing Rod Q&A | Akashic Records", "url": "https://www.youtube.com/watch?v=xYYLRd6bbGI", "subjects": ["akashic-records", "channelled-teachings"] },
+    { "title": "Dowsing Rod Q&A with Athena | Divine Feminine, Women, and Females", "url": "https://www.youtube.com/watch?v=ILTrG6SNmdk", "subjects": ["channelled-teachings", "spirituality"] },
+    { "title": "Dowsing Rod Q&A | Energy", "url": "https://www.youtube.com/watch?v=0BmD9RtH1G0", "subjects": ["energy-medicine", "channelled-teachings"] },
+    { "title": "Dowsing Rod Q&A | Dreams", "url": "https://www.youtube.com/watch?v=burziGcPyKY", "subjects": ["dreamwork", "channelled-teachings"] },
+    { "title": "20 Minute Distance Reiki Healing Meditation | Chakra Balancing", "url": "https://www.youtube.com/watch?v=djp6y3-HXXQ", "subjects": ["reiki", "chakra-healing", "meditation"] }
+  ],
+  "books": [],
+  "courses": [
+    { "title": "Private Sessions: Dowsing, Reiki and Tarot", "url": "https://solarglowmeditations.com/book-a-reading/", "description": "One-to-one sessions with Megan: a dowsing rod session answering up to 40 yes-or-no questions sent in advance, distance Reiki, a tarot or oracle card reading, or an open help session on psychic development and using dowsing rods.", "price": "Contact for pricing", "product_type": "course", "start_date": null, "end_date": null, "subjects": ["mediumship-spirits", "reiki"] },
+    { "title": "Q&A Library", "url": "https://solarglowmeditations.com/qa-library/", "description": "A members' area on her website with written dowsing rod question-and-answer sessions beyond what she posts publicly. It is a monthly subscription that can be cancelled at any time.", "price": "$7.77 USD per month", "product_type": "membership", "start_date": null, "end_date": null, "subjects": ["channelled-teachings", "mediumship-spirits"] }
+  ],
+  "free_resources": [
+    { "title": "How to Use Divining Rods (aka Dowsing Rods) to Talk to Spirit", "url": "https://solarglowmeditations.com/2024/02/10/how-to-use-divining-rods-aka-dowsing-rods-to-talk-to-spirit/", "description": "Her written beginner's guide to dowsing rods, covering traditional uses and asking questions of spirit guides and loved ones who have died. It goes with her most-watched YouTube video on the same subject.", "featured": true, "resource_type": "practice", "subjects": ["mediumship-spirits", "spirituality"] }
+  ],
+  "sprint": {
+    "rank": 99,
+    "shift_profile": "https://theshiftnetwork.com/shift_teacher/75412",
+    "tier_evidence": "YouTube @SolarGlowMeditations 79.5K subscribers (channel page, 31 Oct 2026); Instagram @solarglowmeditations 612K followers (og:description); TikTok @solarglowmeditations 417,400 followers (followerCount in page data); Facebook and Bluesky counts not read → ~1.11M total → superhero",
+    "email": "yes",
+    "email_source": "https://solarglowmeditations.com/",
+    "contact_form_url": null,
+    "flags": [
+      "Tier is borderline (about 1.11M across YouTube, Instagram and TikTok, inside the 0.8M-1.5M band); Instagram makes up most of it.",
+      "\"SolarGlow\" appears to be her brand rather than a published surname; The Shift Network lists her as Megan SolarGlow (and Megan Solarglow) and her own site gives only \"Megan\".",
+      "Only one photo confirmed (Shift Network headshot, 1080 px). Her YouTube avatar is a logo, and the About-page photos are a flower and a selfie in sunglasses.",
+      "Much of her recent YouTube output is a recurring \"Current Events, Politics, and Conspiracy Theories\" dowsing series, plus sessions with Lucifer, on aliens and on the Holocaust and Hitler; none were kept, but a human should decide whether the listing fits Spiritpedia.",
+      "The Harvard master's and Washington State bachelor's degrees come only from her Shift Network bio; her own site does not mention them."
+    ],
+    "left_out": [
+      "Shift 'New live course (begins December 2026)': no title or page URL published yet.",
+      "Videos naming conditions: 'Autism, ADD, ADHD, & Neurodivergence', 'Narcissism', 'Distance Reiki for Recovering from Illness/Sickness', Reiki meditations for anxiety, burnout, grief and spinal realignment.",
+      "Political and conspiracy dowsing videos (Current Events series, Holocaust and Hitler, Climate Change, Aliens and Disclosure, AI and data centres) and 'Dowsing Rod Q&A with Lucifer'.",
+      "'Dowsing Rods Q&A with Archangel Michael and Princess Diana': claims to speak with a real public figure who died; left out as sensitive.",
+      "Private session prices are not shown on the readings page.",
+      "Conscious Life Expo, Los Angeles, 19-22 February 2027: an event she appears at, not her own offering.",
+      "Shop items are merchandise only (hats, stickers); no books found."
+    ]
+  }
+}
