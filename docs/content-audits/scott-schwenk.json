@@ -1,0 +1,238 @@
+{
+  "healer": {
+    "healer_slug": "scott-schwenk",
+    "create": {
+      "name": "Scott Schwenk",
+      "bio": "Scott Schwenk is an American meditation teacher and coach whose practice grew out of several years spent in a Hindu monastery in his twenties, where he first met the tantric traditions that still shape his work. He later trained through apprenticeships in Vedic ritual, meditation and philosophy, and leadership development, and he holds lineage permission to pass on practices from the Sri Vidya tantric path. He has been teaching for well over two decades.\n\nHis classes combine dharma talks, mantra, guided meditation and an energetic, music-supported style of breathwork, and he brings humour and warmth to even the deepest material. He describes inner work as four linked tasks (waking up, cleaning up old wounds, growing up and showing up in the world), joining awakening practice with everyday relationships, work and leadership. He teaches mostly online through recorded courses, a monthly live meditation membership, small-group coaching and one-to-one mentoring, and he leads residential retreats at the Sivananda ashram in the Bahamas. He has taught at Omega and Wanderlust, created several courses for Commune and hosts The Choice to Grow podcast.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "worldwide",
+      "city": null,
+      "country": null,
+      "subjects": [
+        "meditation",
+        "breathwork",
+        "spiritual-awakening"
+      ],
+      "website_url": "https://www.scottschwenk.com/",
+      "booking_url": "https://www.scottschwenk.com/private-sessions",
+      "youtube_url": "https://www.youtube.com/@ScottSchwenk",
+      "instagram_url": "https://www.instagram.com/thescottschwenk/",
+      "facebook_url": "https://www.facebook.com/ScottPSchwenk",
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "info@scottschwenk.com",
+      "image_urls": [
+        "https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/file-uploads/themes/2866464/settings_images/6cab2-07d4-e108-a330-05cf31037ec_13b24abe-a105-4a7a-b220-6a7ec85ff9ce.jpg",
+        "https://yt3.googleusercontent.com/ytc/AIdro_lWWXRqE7vh_aOWuLBBsQAEjHbcD7iF7-TQL1U_ByOF5jU=s900",
+        "https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/themes/3211685/settings_images/xjcUZtiKQaaQA1atE9Fg_IMG_2521.jpg"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "commune",
+      "role": "instructor"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Knowing You're Worthy - The Power of Validation",
+      "url": "https://www.youtube.com/watch?v=ER28Io9EA6k",
+      "subjects": [
+        "spirituality",
+        "meditation"
+      ],
+      "channel": "Scott Schwenk"
+    },
+    {
+      "title": "The Joy + Power of Sacred Sound Masterclass",
+      "url": "https://www.youtube.com/watch?v=KqRt5F27FQ8",
+      "subjects": [
+        "sound-healing",
+        "meditation"
+      ],
+      "channel": "Scott Schwenk"
+    },
+    {
+      "title": "Moving from Rupture to Repair with Ease & Grace",
+      "url": "https://www.youtube.com/watch?v=GAUfm9_P7Yw",
+      "subjects": [
+        "conscious-relationships"
+      ],
+      "channel": "Scott Schwenk"
+    },
+    {
+      "title": "The Power of Trust: Clarity, Confidence and Ease",
+      "url": "https://www.youtube.com/watch?v=cbamDdjslu8",
+      "subjects": [
+        "spirituality",
+        "meditation"
+      ],
+      "channel": "Scott Schwenk"
+    },
+    {
+      "title": "Awakening the Power of Meditation",
+      "url": "https://www.youtube.com/watch?v=GGDuQ3PQxDE",
+      "subjects": [
+        "meditation",
+        "spiritual-awakening"
+      ],
+      "channel": "Scott Schwenk"
+    },
+    {
+      "title": "Solstice 2025 Practice:  Life Begins in Stillness",
+      "url": "https://www.youtube.com/watch?v=f4NPnFINupw",
+      "subjects": [
+        "meditation",
+        "breathwork"
+      ],
+      "channel": "Scott Schwenk"
+    },
+    {
+      "title": "When Clarity Becomes A Compass",
+      "url": "https://www.youtube.com/watch?v=UUFbMAbvC1o",
+      "subjects": [
+        "spirituality"
+      ],
+      "channel": "Scott Schwenk"
+    }
+  ],
+  "books": [],
+  "courses": [
+    {
+      "title": "Awake: The Power of a Living Meditation Practice",
+      "url": "https://www.scottschwenk.com/awake-the-power-of-a-living-meditation-practice",
+      "description": "A monthly online meditation membership with two live guided sessions each month, recordings of recent sessions and a members' message board. It draws on tantric lineage practices taught in a modern way.",
+      "price": "$99 USD per month or $990 USD per year",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "spiritual-awakening"
+      ],
+      "image": "https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/file-uploads/sites/143397/images/7d822-a82-a04-2d77-28838e36e607_0b8c4bb-2755-a26c-533c-1365abf6a5bf_AWAKE_Landscaoe.PNG"
+    },
+    {
+      "title": "Awakened Clarity, Embodied Power: the MahaGanapati Retreat",
+      "url": "https://www.scottschwenk.com/Awakened-Clarity-Embodied-Power-retreat-with-scott-schwenk-1",
+      "description": "A five-day residential retreat at the Sivananda Yoga Ashram on Paradise Island in the Bahamas, working with the tantric figure of MahaGanapati. Scott leads three hours of practice each day, and guests join the ashram's yoga, meditation and satsang timetable.",
+      "price": "$595 USD tuition (accommodation booked separately with the ashram)",
+      "product_type": "retreat",
+      "start_date": "2027-05-11",
+      "end_date": "2027-05-15",
+      "subjects": [
+        "meditation",
+        "spiritual-awakening",
+        "yoga"
+      ],
+      "image": "https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/file-uploads/sites/143397/images/4a7e4b6-d728-2eb1-5d06-e60b53bb1c14_9a73949c2954b2f85999381bfa32c4f1.jpg"
+    },
+    {
+      "title": "Prospering: A 90-Day Abundance Plan",
+      "url": "https://www.scottschwenk.com/prospering-a-90-day-abundance-plan",
+      "description": "A self-paced, ninety-day training on prosperity in a wide sense: money, wisdom, love and wellbeing. New teachings, guided meditations and contemplations unlock each week.",
+      "price": "$349 USD",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "manifestation",
+        "meditation"
+      ],
+      "image": "https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/file-uploads/themes/2161171833/settings_images/2fcf68-d420-0caf-37f4-4efca736302_10b4a115-9a40-4243-942d-f36070511d27.png"
+    },
+    {
+      "title": "The Power of Presence",
+      "url": "https://www.scottschwenk.com/the-power-of-presence",
+      "description": "A recorded training of about twenty-five hours for teachers, facilitators and leaders. Talks, breathwork and meditation are arranged around five pillars: practice, integrity, preparation, inner state and empathy.",
+      "price": "$399 USD",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "breathwork"
+      ],
+      "image": "https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/themes/2147604307/settings_images/eP7UdFERFWmxuaHq31Lg_file.jpg"
+    },
+    {
+      "title": "Effortless Meditation",
+      "url": "https://www.scottschwenk.com/effortless-meditation",
+      "description": "A downloadable bundle of nine guided meditations, about three hours in all, including loving-kindness and body-awareness practices. A larger package adds breathwork sessions and dharma talks.",
+      "price": "$75 USD",
+      "product_type": "download",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/sites/143397/images/NHg0capTamebmfLt7xEi_meditation_bundle.jpg"
+    },
+    {
+      "title": "One-on-One Mentorship",
+      "url": "https://www.scottschwenk.com/private-sessions",
+      "description": "Hour-long private online sessions that follow two tracks: deepening a meditation and awakening practice, and growing as a leader in work and life. Sessions draw on breath, body awareness and inquiry.",
+      "price": "$300 USD per session",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "spiritual-awakening",
+        "meditation",
+        "life-coaching"
+      ],
+      "image": "https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/sites/143397/images/cCYpfNfDQb6rDVC46ihz__MG_0949.jpg"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Free Satsang Workshops",
+      "url": "https://www.scottschwenk.com/free-satsangs",
+      "description": "Occasional free online gatherings over Zoom that open with a grounding meditation, move into a dharma talk and a guided practice, and end with questions. After free registration, recordings are kept in a library on his site.",
+      "featured": true,
+      "resource_type": "workshop",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "image": "https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/sites/143397/images/DxqMwmQXQPKtZP0M9c49_file.jpg"
+    }
+  ],
+  "sprint": {
+    "hub": "commune",
+    "rank": 16,
+    "commune_urls": [
+      "https://www.onecommune.com/abundant-joy-with-scott-schwenk",
+      "https://www.onecommune.com/living-from-the-heart-with-scott-schwenk",
+      "https://www.onecommune.com/ecstatic-breathwork-with-scott-schwenk"
+    ],
+    "tier_evidence": "Instagram @thescottschwenk 20K (og:description, 31 Oct 2026); YouTube @ScottSchwenk 6.62K (channel header row, 31 Oct 2026); Facebook /ScottPSchwenk 2,319 (og:description, 31 Oct 2026) → ~29k total → local_hero",
+    "email": "yes",
+    "email_source": "https://www.scottschwenk.com/contact-scott",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 23 source(s)",
+    "flags": [
+      "Commune 'Ecstatic Breathwork' left out: its sales page says the breathwork reduces anxiety, depression and inflammation and boosts immunity. The two Commune courses kept (Abundant Joy, Living from the Heart) also have condition words on their sales pages (a 'Grounding Anti-Anxiety' breath practice in one lesson; a benefits list naming anxiety, sleep and pain), though neither is sold mainly on conditions; my descriptions name none. A human may prefer to drop them.",
+      "Email published in words on the contact page as 'info (at) scottschwenk.com', written out here as info@scottschwenk.com; that's a general info inbox.",
+      "He has taught a retreat at Omega Institute (recordings are sold on his site) but isn't in omega-institute-faculty.json, so Omega is not in teaches_at.",
+      "No fixed base: in-person events are retreats (Bahamas) plus occasional workshops in California, New York and Europe, so availability is worldwide.",
+      "YouTube views counted only from the 30 most recent uploads (no internal API for older ones); most of the channel is his podcast, where he interviews guests, so those episodes were left out. Own teaching videos have low view counts (100s to 1K).",
+      "His sites mention 'clairaudience' and coaching that includes attachment healing and parts/shadow work. That isn't the main work and no therapy is claimed, but worth knowing."
+    ],
+    "left_out": [
+      "Commune 'Ecstatic Breathwork' ($99 USD): sales copy makes health claims (anxiety, depression, inflammation, immunity).",
+      "Waking Up in Love: Dissolving the Veils of Suffering: framed around dissolving traumas; borderline, left out.",
+      "Somatic Healing workshops (Freedom from Broken Trust, From Restriction to Radiance), Healing Your Lineage (male/female), Summer Soma Sessions - Healing Relationships, Resetting the Nervous System: healing-framed or dated past workshops.",
+      "Flourish! Small Group Coaching (October 2026 cohort): already started by 31 Oct 2026.",
+      "Sacred Sound (May 2026), Magnetic Joy New Year series, Winter Solstice 2023 free workshop: dated and past.",
+      "Sunday Satsang series: prices on the page unclear ($19 / $59 / $799), left out.",
+      "YouTube: podcast interviews where he is host, not main speaker; 'The Grace to Heal and Grow in Challenging Times' (healing framing, borderline); interviews with health titles (gut, ageing in reverse, addiction).",
+      "No books found on Amazon.",
+      "No X or TikTok found.",
+      "Commune courses ['Abundant Joy', 'Living from the Heart']: removed in review (strict health rule: their sales pages list anxiety, sleep and pain among the benefits). teaches_at still links Commune."
+    ]
+  },
+  "images_final": true
+}

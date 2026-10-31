@@ -1,0 +1,329 @@
+{
+  "healer": {
+    "healer_slug": "janet-stone",
+    "create": {
+      "name": "Janet Stone",
+      "bio": "Janet Stone is a San Francisco yoga teacher whose path began with meditation. She grew up on rural land in Northern California, danced through her teens and met her meditation teacher, Prem Rawat, at seventeen. After years working in film and television production in Los Angeles, she travelled to India in 1996, her grandfather's birthplace, and committed herself to yoga. She has now been teaching for more than two decades.\n\nHer classes join a creative, flowing vinyasa with the eight limbs of yoga, pranayama, meditation and bhakti, the devotional yoga of chanting and mantra, and she often teaches alongside live music from her partner, the producer DJ Drez, and she has released three albums of devotional mantra. Through Stone Yoga School she runs 200-hour, 300-hour and longer teacher trainings in hybrid and online formats, and she offers PRACTICE*365, an online membership with live and recorded classes. She teaches regular public classes in San Francisco and leads retreats and immersions at Esalen, in Mexico, in the Columbia River Gorge and in India, as well as a six-month mentoring programme. Her book Stories of Our Lives retells sacred Indian myths as maps for everyday life, and she has recorded a ten-day course on deep rest for Commune.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local_online",
+      "city": "San Francisco",
+      "country": "United States",
+      "subjects": [
+        "yoga",
+        "meditation",
+        "spirituality"
+      ],
+      "website_url": "https://www.janetstoneyoga.com/",
+      "booking_url": "https://www.janetstoneyoga.com/practice",
+      "youtube_url": "https://www.youtube.com/@janetstoneyoga",
+      "instagram_url": "https://www.instagram.com/janetstoneyoga/",
+      "facebook_url": "https://www.facebook.com/stoneyogaschool",
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "school@janetstoneyoga.com",
+      "image_urls": [
+        "https://yt3.googleusercontent.com/Jg-DJX72W9ZHqZAZNbSVHPuV1khxNvbFe8E8xmMFWbzHgm9hSJoL2oTP87lmBKRX9YVwtPbv=s900",
+        "https://cdn.prod.website-files.com/6649952fb952fa9eaf3a1e40/6649952fb952fa9eaf3a1ffc_jsy_story-feature.webp",
+        "https://cdn.prod.website-files.com/6649952fb952fa9eaf3a1e40/6649952fb952fa9eaf3a1ff2_jsy_story-hero.webp"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "commune",
+      "role": "instructor"
+    }
+  ],
+  "videos": [
+    {
+      "title": "February: Feeling Practice",
+      "url": "https://www.youtube.com/watch?v=0PWmXExMuIM",
+      "subjects": [
+        "yoga",
+        "meditation"
+      ],
+      "channel": "Janet Stone Yoga"
+    },
+    {
+      "title": "Chanting Sneak Peek  // Gayatri Mantra",
+      "url": "https://www.youtube.com/watch?v=0-aOFxozTtU",
+      "subjects": [
+        "sound-healing",
+        "spirituality"
+      ],
+      "channel": "Janet Stone Yoga"
+    },
+    {
+      "title": "Awaken - A daily warm up",
+      "url": "https://www.youtube.com/watch?v=upY122aLrRg",
+      "subjects": [
+        "yoga"
+      ],
+      "channel": "Janet Stone Yoga"
+    },
+    {
+      "title": "9 Sun Salutations | daily practice",
+      "url": "https://www.youtube.com/watch?v=YDaSya8BWYY",
+      "subjects": [
+        "yoga"
+      ],
+      "channel": "Janet Stone Yoga"
+    },
+    {
+      "title": "Cooling the Fire",
+      "url": "https://www.youtube.com/watch?v=7X8V_3lBMDE",
+      "subjects": [
+        "yoga"
+      ],
+      "channel": "Janet Stone Yoga"
+    },
+    {
+      "title": "Awaken - A daily practice",
+      "url": "https://www.youtube.com/watch?v=ZNNh20fCmAQ",
+      "subjects": [
+        "yoga"
+      ],
+      "channel": "Janet Stone Yoga"
+    },
+    {
+      "title": "Fire | Asana Practice an excerpt from the Anatomy of Emotion virtual course",
+      "url": "https://www.youtube.com/watch?v=wOpQLQd6s5o",
+      "subjects": [
+        "yoga"
+      ],
+      "channel": "Janet Stone Yoga"
+    },
+    {
+      "title": "Forgiveness practice",
+      "url": "https://www.youtube.com/watch?v=lKdZ1O7xl-A",
+      "subjects": [
+        "yoga",
+        "meditation"
+      ],
+      "channel": "Janet Stone Yoga"
+    },
+    {
+      "title": "Awaken- A Daily Flow",
+      "url": "https://www.youtube.com/watch?v=nfU3HODMbsE",
+      "subjects": [
+        "yoga"
+      ],
+      "channel": "Janet Stone Yoga"
+    },
+    {
+      "title": "Aligning from the inside out: An excerpt from Janet Stone's Energetic Alignment virtual course",
+      "url": "https://www.youtube.com/watch?v=pYJjQEvQWzw",
+      "subjects": [
+        "yoga"
+      ],
+      "channel": "Janet Stone Yoga"
+    },
+    {
+      "title": "Set Intention // Clearing Out",
+      "url": "https://www.youtube.com/watch?v=8repjUMHfNk",
+      "subjects": [
+        "yoga",
+        "meditation"
+      ],
+      "channel": "Janet Stone Yoga"
+    }
+  ],
+  "books": [
+    {
+      "title": "Stories of Our Lives: Awakened Living Through Sacred Mythology",
+      "slug": "stories-of-our-lives-janet-stone",
+      "author": "Janet Stone",
+      "asin": "B0FCD9DYRT",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "cover": "https://m.media-amazon.com/images/P/B0FCD9DYRT.01._SCLZZZZZZZ_.jpg",
+      "description": "Janet retells classic stories from the Indian tradition, such as those of Hanuman, Durga and Lakshmi, alongside personal reflection and the hero's-journey pattern described by Joseph Campbell. Each story comes with practices, mantras and questions for seeing these myths at work in ordinary life.",
+      "subjects": [
+        "ancient-wisdom",
+        "yoga",
+        "spirituality"
+      ]
+    }
+  ],
+  "courses": [
+    {
+      "title": "Coming Home: Journey Into Deep Rest",
+      "url": "https://www.onecommune.com/coming-home-journey-into-deep-rest-with-janet-stone-dj-drez",
+      "description": "A ten-day Commune course with Janet and DJ Drez of short evening practices: yoga nidra, guided meditation, gentle breathing, a restorative pose and visualisation, each set to an original soundtrack.",
+      "price": "$49 USD",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "breathwork",
+        "yoga"
+      ],
+      "image": "https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/file-uploads/sites/36672/images/2a7d583-a3f4-a5c4-6dae-3d1ddaf7e3b2_e8f2d60c-844e-4354-ab0e-5bd20954ca9f.jpg"
+    },
+    {
+      "title": "PRACTICE*365",
+      "url": "https://www.janetstoneyoga.com/membership",
+      "description": "Janet's online membership, with several live classes a month, an archive of nearly 500 recorded practices and community meet-ups. Practices combine postures, mantra, breathing and stillness.",
+      "price": "$208 USD per year",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga",
+        "meditation"
+      ],
+      "image": "https://cdn.prod.website-files.com/6649952fb952fa9eaf3a1e40/6649952fb952fa9eaf3a1eac_jsy.wide_sangha.beach.webp"
+    },
+    {
+      "title": "Gratitude Retreat",
+      "url": "https://www.janetstoneyoga.com/offerings/gratitude-retreat",
+      "description": "A weekend at Esalen in Big Sur of yoga, meditation and reflection on gratitude, with guest teachers and musicians and time for the cliffside baths.",
+      "price": "Contact for pricing (booked through Esalen; cost depends on room)",
+      "product_type": "retreat",
+      "start_date": "2026-11-20",
+      "end_date": "2026-11-22",
+      "subjects": [
+        "yoga",
+        "meditation"
+      ],
+      "image": "https://cdn.prod.website-files.com/6649952fb952fa9eaf3a1e64/6a179c36052ab9a1042df7fc_Gratitude.png"
+    },
+    {
+      "title": "Giving Thanks • A Yoga Retreat",
+      "url": "https://www.janetstoneyoga.com/offerings/thanks-giving-a-yoga-retreat",
+      "description": "A five-day Thanksgiving-week retreat at Esalen built around the idea of 'enoughness', with daily yoga, meditation and time on the land.",
+      "price": "Contact for pricing (booked through Esalen; cost depends on room)",
+      "product_type": "retreat",
+      "start_date": "2026-11-23",
+      "end_date": "2026-11-27",
+      "subjects": [
+        "yoga",
+        "meditation"
+      ],
+      "image": "https://cdn.prod.website-files.com/6649952fb952fa9eaf3a1e64/6a179c8f9db42917f98af837_Giving%20Thanks.jpg"
+    },
+    {
+      "title": "Begin Again: New Years at Haramara",
+      "url": "https://www.janetstoneyoga.com/offerings/begin-again-new-years",
+      "description": "A week off-grid at Haramara Retreat near Sayulita, Mexico, to see in the new year. Days hold postures, meditation, breathing and chanting, with plenty of time for the beach and rest.",
+      "price": "$2,888–$4,388 USD per person by room ($1,208 USD deposit)",
+      "product_type": "retreat",
+      "start_date": "2026-12-26",
+      "end_date": "2027-01-02",
+      "subjects": [
+        "yoga",
+        "meditation"
+      ],
+      "image": "https://cdn.prod.website-files.com/6649952fb952fa9eaf3a1e64/6649952fb952fa9eaf3a2427_IMG_0747.jpg"
+    },
+    {
+      "title": "Begin Again • A Yoga Journey",
+      "url": "https://www.janetstoneyoga.com/offerings/begin-again-a-yoga-journey",
+      "description": "A week of early-morning practice at the Castro Room in San Francisco or online: meditation, breathing, postures, mantra and daily dharma talks to set an intention for the year.",
+      "price": "$208 USD in person, $168 USD online",
+      "product_type": "course",
+      "start_date": "2027-01-23",
+      "end_date": "2027-01-29",
+      "subjects": [
+        "yoga",
+        "meditation"
+      ],
+      "image": "https://cdn.prod.website-files.com/6649952fb952fa9eaf3a1e64/6942f277c59ecbc33587ff0f_janet-stone-yoga-begin-again-new-year-practice-virtual-online.png"
+    },
+    {
+      "title": "Mentorship Program",
+      "url": "https://www.janetstoneyoga.com/offerings/mentorship-program",
+      "description": "A six-month programme for up to eighteen teachers, leaders and creatives, with monthly online group meetings, one-to-one sessions with Janet, business guidance and a long weekend together in the Columbia River Gorge.",
+      "price": "$3,488 USD ($408 USD deposit)",
+      "product_type": "course",
+      "start_date": "2027-01-01",
+      "end_date": "2027-06-15",
+      "subjects": [
+        "yoga",
+        "life-coaching"
+      ],
+      "image": "https://cdn.prod.website-files.com/6649952fb952fa9eaf3a1e64/679779491b57b97e235d01ba_janet-stone-yoga-school-mentorship-program.jpg"
+    },
+    {
+      "title": "Living Bhakti | Intention · Devotion · Alignment",
+      "url": "https://www.janetstoneyoga.com/offerings/living-bhakti",
+      "description": "A four-day immersion at Columbia Gorge Yoga in White Salmon, Washington, on bhakti as a way of living. It weaves movement, breath, mantra, chanting, myth and intuitive sequencing.",
+      "price": "$608 USD early rate (or 4 × $152 USD)",
+      "product_type": "retreat",
+      "start_date": "2027-04-01",
+      "end_date": "2027-04-04",
+      "subjects": [
+        "yoga",
+        "spirituality"
+      ],
+      "image": "https://cdn.prod.website-files.com/6649952fb952fa9eaf3a1e64/670ef302f89e84e835d2955c_2024-POD-Columbia-Gorge_830.jpg"
+    },
+    {
+      "title": "300 hour Residential Training Immersion",
+      "url": "https://www.janetstoneyoga.com/offerings/300-hour-residential-training-immersion",
+      "description": "A three-week residential advanced teacher training in Rishikesh, India, organised around purpose, practice and devotion, for teachers and committed practitioners.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": "2027-09-26",
+      "end_date": "2027-10-17",
+      "subjects": [
+        "yoga",
+        "spirituality"
+      ],
+      "image": "https://cdn.prod.website-files.com/6649952fb952fa9eaf3a1e64/6a3048cdbc8c31a13895e819_2023-India-Janet-Sara_2436.JPG"
+    },
+    {
+      "title": "Chanting: Yoga of the Heart",
+      "url": "https://www.janetstoneyoga.com/offerings/chanting-yoga-of-the-heart",
+      "description": "An online course on bhakti through chanting, teaching traditional mantras along with the myths and deities behind them. It can be taken at your own pace or with the next community group.",
+      "price": "Contact for pricing (pay in full, instalments or sliding scale)",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "spirituality",
+        "sound-healing"
+      ],
+      "image": "https://cdn.prod.website-files.com/6649952fb952fa9eaf3a1e64/6921c8dae23e9e88e6f43010_chanting.png"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "hub": "commune",
+    "rank": 20,
+    "commune_urls": [
+      "https://www.onecommune.com/coming-home-journey-into-deep-rest-with-janet-stone-dj-drez"
+    ],
+    "tier_evidence": "Instagram @janetstoneyoga 78K (og:description, 31 Oct 2026); YouTube @janetstoneyoga 6K (channel header row, 31 Oct 2026); Facebook /stoneyogaschool count not readable (no og:description served, 31 Oct 2026) → ~84k total → local_hero",
+    "email": "yes",
+    "email_source": "https://www.janetstoneyoga.com/",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 19 source(s)",
+    "flags": [
+      "One listing for Janet Stone as briefed; the Commune course is co-taught with her partner DJ Drez (musician), who is mentioned in the bio but not counted for tier.",
+      "Tier borderline: ~84k (80k–150k band) and the Facebook count couldn't be read; with Facebook it could pass 100k and move to luminary.",
+      "Email school@janetstoneyoga.com is the Stone Yoga School inbox (mailto link on her home page).",
+      "Commune course 'Coming Home' mentions deep sleep and rest; kept because rest and sleep as practice are allowed and no condition is named.",
+      "Several YouTube videos are excerpts or trailers for her paid courses; view counts are low (200–1.6K). Only the 30 most recent uploads were checked.",
+      "Book ASIN is an Amazon B0 code (979-prefix ISBN, no ISBN-10), taken from the Amazon link on her own book page.",
+      "Her meditation teacher is Prem Rawat ('Maharaji'), a figure some regard as controversial; mentioned by name in the bio as on her site.",
+      "Facebook link goes to the Stone Yoga School page, which is her own school's page."
+    ],
+    "left_out": [
+      "Nourish • Restorative Weekend (Esalen, March 2027): sold on the nervous system, adrenals, immunity and releasing toxins.",
+      "Rhythm & Restore (Esalen, March 2027): framed around nervous-system regulation, hypervigilance and healing; borderline, left out.",
+      "Embodying Transition: Perimenopause and Beyond; Hormonal Balance through Ayurvedic Wisdom: condition-named.",
+      "Eudémonia Summit (5–8 Nov 2026): a festival appearance, not her own offering.",
+      "The Listening Body (12 Nov 2026, Souk Studio NYC) and SOLAR | LUNAR (Koh Samui, May 2027): not opened, so not verified; could be added.",
+      "40 Days of Practice: enrolment closed for the current round.",
+      "Stone Yoga School 200/300/1008-hour programmes: pricing on the school platform not checked; the 300-hour Rishikesh immersion stands in for them.",
+      "Weekly public vinyasa classes (Haum Studios, booked per date on SweatPals): no stable unique URL.",
+      "Free 3-day immersion: needs email sign-up and has no page of its own; free mini chanting course clips are Shorts.",
+      "YouTube Shorts and clips under 2 minutes."
+    ]
+  },
+  "images_final": true
+}
