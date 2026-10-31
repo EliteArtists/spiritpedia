@@ -1,0 +1,318 @@
+{
+  "healer": {
+    "healer_slug": "andy-hobson",
+    "create": {
+      "name": "Andy Hobson",
+      "bio": "Andy Hobson is a meditation teacher and composer based in Newbury, West Berkshire. In his twenties he drummed in a band that signed to a major label in 2003 and toured widely, and when that ended a few years later he turned to Buddhist teachings, books and daily sitting practice. He began leading small meditation groups in London in 2010, writing his own music to sit beneath the recordings he made for students. His training includes the first level of mindfulness teacher training at Bangor University, counselling skills, arts-based work with children, the Mindfulness in Schools primary programme and a sound practitioner course with Tibetan and crystal bowls. For several years he ran a children's support service at a London primary school.\n\nHis teaching is warm, informal and often funny, and does not follow one tradition. He blends guided practice with storytelling and original soundtracks, and his audio courses include a ten-day seasonal journey set in an imagined land, a thirty-day beginners' course and meditations for children. His book Doorways To Being mixes stories, practices and reflections. Around Newbury he leads sound baths with bowls, chimes, flute and guitar, and works with local schools, while one-to-one mentoring runs over Zoom. He also teaches on The Mindfulness App and releases music as Coraland.",
+      "tier": "luminary",
+      "entity_type": "individual",
+      "availability": "local_online",
+      "city": "Newbury",
+      "country": "United Kingdom",
+      "subjects": [
+        "meditation",
+        "mindfulness",
+        "sound-healing"
+      ],
+      "website_url": "https://andyhobsonmeditation.com",
+      "booking_url": "https://andyhobsonmeditation.com/one-to-one/",
+      "youtube_url": "https://www.youtube.com/@AndyHobson1",
+      "instagram_url": "https://www.instagram.com/andyhobson_/",
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "andy@andyhobsonmeditation.com",
+      "image_urls": [
+        "https://users.insighttimer.com/t5r9c5c2T8y7b2s4w6j7U0B5e3G1x8r5u9A1x9f3y7f4Z3R5G2u9V1N9z5m8Y0W2x5f3z3Q2H6e5n1K6d5t3q2F2B9G5V1C4g8z7/pictures/square_large.jpeg",
+        "https://andyhobsonmeditation.com/wp-content/uploads/2021/04/Andy-Hobson_low-res-7_BW.jpg"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "insight-timer",
+      "role": "instructor"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Journey Through The Seasons | Live Soundbath March 2026",
+      "url": "https://www.youtube.com/watch?v=-JldxDlQloE",
+      "subjects": [
+        "sound-healing",
+        "meditation"
+      ],
+      "channel": "Andy Hobson"
+    },
+    {
+      "title": "Insight Timer Live Session | 17th Oct 2025 | Fear, Presence and My Lovely New Audio Course!",
+      "url": "https://www.youtube.com/watch?v=bikaRsCDAu8",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "channel": "Andy Hobson"
+    },
+    {
+      "title": "Insight Timer Live Session | 26th Sept 2024 | Presence",
+      "url": "https://www.youtube.com/watch?v=qdwJft4hY-g",
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "channel": "Andy Hobson"
+    },
+    {
+      "title": "27th Feb 2025 | Sound Bath | For Relaxation",
+      "url": "https://www.youtube.com/watch?v=WCK_xJLZPuk",
+      "subjects": [
+        "sound-healing"
+      ],
+      "channel": "Andy Hobson"
+    },
+    {
+      "title": "6th Feb 2025 | Sound Bath | For Challenging Times",
+      "url": "https://www.youtube.com/watch?v=KXLvMS2C3cQ",
+      "subjects": [
+        "sound-healing"
+      ],
+      "channel": "Andy Hobson"
+    },
+    {
+      "title": "6th December 2024 | Sound Bath | Mountains",
+      "url": "https://www.youtube.com/watch?v=HtSotwR_7-8",
+      "subjects": [
+        "sound-healing"
+      ],
+      "channel": "Andy Hobson"
+    },
+    {
+      "title": "14th November 2024 | Sound Bath | Nature Sounds",
+      "url": "https://www.youtube.com/watch?v=34w5nBh_row",
+      "subjects": [
+        "sound-healing"
+      ],
+      "channel": "Andy Hobson"
+    },
+    {
+      "title": "18th December 2024 | Sound Bath | Christmas Magic",
+      "url": "https://www.youtube.com/watch?v=oBTfXjGj8Jk",
+      "subjects": [
+        "sound-healing"
+      ],
+      "channel": "Andy Hobson"
+    },
+    {
+      "title": "Insight Timer Live Session | 24th Oct 2024 | Sound Bath",
+      "url": "https://www.youtube.com/watch?v=Tie9nQRpCKE",
+      "subjects": [
+        "sound-healing",
+        "meditation"
+      ],
+      "channel": "Andy Hobson"
+    },
+    {
+      "title": "Insight Timer Live Session | 16th December 2025 | Songs From The Forest",
+      "url": "https://www.youtube.com/watch?v=SyXvAO9V790",
+      "subjects": [
+        "meditation",
+        "sound-healing"
+      ],
+      "channel": "Andy Hobson"
+    },
+    {
+      "title": "Cheeky Monkey Meditation For Kids | 3D Audio",
+      "url": "https://www.youtube.com/watch?v=0obcQLf_X-U",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "channel": "Andy Hobson"
+    },
+    {
+      "title": "Day 1 | A Warm Welcome (Children's Meditation Course)",
+      "url": "https://www.youtube.com/watch?v=qun97ifKpPA",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "channel": "Andy Hobson"
+    }
+  ],
+  "books": [
+    {
+      "title": "Doorways To Being: A transformative journey of self-discovery, healing and new beginnings",
+      "slug": "doorways-to-being",
+      "author": "Andy Hobson",
+      "asin": "1036904180",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "A collection of short stories, guided practices and prompts for reflection, written in Andy's light and personal voice. It invites readers to accept themselves as they are and to find more meaning and ease in ordinary life.",
+      "subjects": [
+        "meditation",
+        "mindfulness",
+        "spirituality"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1036904180.01._SCLZZZZZZZ_.jpg"
+    }
+  ],
+  "courses": [
+    {
+      "title": "One-to-One Mentoring",
+      "url": "https://andyhobsonmeditation.com/one-to-one/",
+      "description": "Hour-long mentoring sessions over Zoom for people who feel stuck or sense that a change is coming. Andy keeps a small client list and starts with a free 15-minute call to see whether the fit is right.",
+      "price": "£65 GBP per hour",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "mindfulness",
+        "meditation",
+        "life-coaching"
+      ],
+      "image": "https://andyhobsonmeditation.com/wp-content/uploads/2020/10/andy-hobson.png"
+    },
+    {
+      "title": "Immersive Sound Baths",
+      "url": "https://andyhobsonmeditation.com/sound-baths/",
+      "description": "A 75-minute session that opens with a guided relaxation, then moves into crystal and Tibetan bowls, chimes, Native American flute, acoustic guitar and ambient electronic sound. There is time to talk at the end; bring a mat, blanket and pillow.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "sound-healing",
+        "meditation"
+      ],
+      "image": "https://andyhobsonmeditation.com/wp-content/uploads/2020/10/andy-hobson.png"
+    },
+    {
+      "title": "Whispers Beneath An Ancient Sun: An Enchanted Journey Through The Seasons Within",
+      "url": "https://insighttimer.com/meditation-courses/whispers-beneath-an-ancient-sun-an-enchanted-guide-to-the-seasons-of-our-lives",
+      "description": "A ten-day Insight Timer course that sets each practice inside a story, moving through winter, spring, summer and autumn with a cast of wizards and a griffin. Themes include meeting fear, presence, joy and letting go.",
+      "price": "Included in Member Plus ($59.99 USD a year)",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://users.insighttimer.com/t5r9c5c2T8y7b2s4w6j7U0B5e3G1x8r5u9A1x9f3y7f4Z3R5G2u9V1N9z5m8Y0W2x5f3z3Q2H6e5n1K6d5t3q2F2B9G5V1C4g8z7/pictures/square_large.jpeg"
+    },
+    {
+      "title": "Doorways To Being: Healing Practices For Everyday Life",
+      "url": "https://insighttimer.com/meditation-courses/course_doorways-to-peace-healing-practices-for-everyday-life",
+      "description": "A thirty-day Insight Timer course of talks and meditations on self-acceptance and fresh starts, set to Andy's own music. It is the audio companion to his book of the same name.",
+      "price": "Included in Member Plus ($59.99 USD a year)",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "mindfulness",
+        "spirituality"
+      ],
+      "image": "https://m.media-amazon.com/images/P/1036904180.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "Beginner's Guide To A Mindful Life",
+      "url": "https://andyhobsonmeditation.com/product/learn-mindfulness-course/",
+      "description": "A thirty-day audio course for newcomers, with more than six hours of lessons and practices that build a daily meditation habit step by step. The music is composed and played by Andy.",
+      "price": "£24.99 GBP",
+      "product_type": "download",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "image": "https://andyhobsonmeditation.com/wp-content/uploads/2020/10/andy-hobson.png"
+    },
+    {
+      "title": "Everyday Meditations",
+      "url": "https://andyhobsonmeditation.com/product/everyday-meditations-andy-hobson/",
+      "description": "An album of guided meditations shaped around a working day, from a morning practice and a walking meditation to one for the commute and one for arriving home. Over two hours of audio with Andy's own background music.",
+      "price": "£14.99 GBP",
+      "product_type": "download",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://andyhobsonmeditation.com/wp-content/uploads/2020/10/andy-hobson.png"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Andy Hobson on Insight Timer",
+      "url": "https://insighttimer.com/andyhobson",
+      "description": "Hundreds of guided meditations, sound journeys and story-led practices set to Andy's own music, plus recordings of his live sessions. The single tracks are free to hear.",
+      "featured": true,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation",
+        "mindfulness",
+        "sound-healing"
+      ],
+      "image": "https://users.insighttimer.com/t5r9c5c2T8y7b2s4w6j7U0B5e3G1x8r5u9A1x9f3y7f4Z3R5G2u9V1N9z5m8Y0W2x5f3z3Q2H6e5n1K6d5t3q2F2B9G5V1C4g8z7/pictures/square_large.jpeg"
+    },
+    {
+      "title": "Doorways To Being Handbook",
+      "url": "https://andyhobsonmeditation.com/wp-content/uploads/2020/10/Doorways-To-Peace-Handbook.pdf",
+      "description": "The illustrated PDF workbook that accompanies his thirty-day course, with reflections and practices for each day. It is a free download from his site.",
+      "featured": false,
+      "resource_type": "download",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://m.media-amazon.com/images/P/1036904180.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "Peace on Earth (Free Meditation)",
+      "url": "https://andyhobsonmeditation.com/product/peace-on-earth/",
+      "description": "A free guided meditation that imagines the first flowers appearing on Earth and invites you to chant OM and AH. Andy asks those who download it to consider giving to one of the charities he names.",
+      "featured": false,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "image": "https://andyhobsonmeditation.com/wp-content/uploads/2020/10/andy-hobson.png"
+    }
+  ],
+  "sprint": {
+    "hub": "insight-timer",
+    "rank": 50,
+    "insight_timer_url": "https://insighttimer.com/andyhobson",
+    "tier_evidence": "Insight Timer 147k (profile, 31 Oct 2026); YouTube @AndyHobson1 956 subscribers (channel page, 31 Oct 2026); Instagram @andyhobson_ count not readable without login → ~148k total → luminary",
+    "email": "yes",
+    "email_source": "https://andyhobsonmeditation.com/",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 19 source(s)",
+    "flags": [
+      "Tier total (~148k) is in the 80k–150k band and rests almost entirely on Insight Timer; Instagram count could not be read.",
+      "Email is Cloudflare-obfuscated in the site footer and was decoded (andy@andyhobsonmeditation.com).",
+      "Sound bath venue, dates and price are not shown (the dates block on the page is a broken shortcode); local base taken from Insight Timer (Newbury) and his West Berkshire schools page, so availability local_online.",
+      "His About page and IT courses mention his own past depression and anxiety, and the schools page is framed around children's mental health; none of that is in the plan.",
+      "Several YouTube titles carry recording dates (sound baths, live sessions); they are recordings, not events, so kept as they are.",
+      "Insight Timer bio could only be partly quoted by WebFetch; bio check relied mainly on his own site pages.",
+      "The @andyhobson YouTube handle (3 subscribers) is someone else; his channel is @AndyHobson1."
+    ],
+    "left_out": [
+      "Insight Timer course Managing Depression With Mindfulness: condition in title.",
+      "My Peaceful Place (children's audio course): product page lists anxiety and sleep among what it supports; left out as borderline.",
+      "Sleep-titled downloads (Sleep, An Unexpected Sleep Adventure, Fall Asleep By The Campfire, Kids Sleep): sleep framing, left out to be safe.",
+      "Medicine Buddha download: left out as borderline (medicine in title).",
+      "Schools wellbeing programme (West Berkshire): sold on children's mental-health statistics; left out.",
+      "Music-only downloads and albums, and Coraland music: not teaching.",
+      "Insight Timer course Kids: Find Your Peaceful Place and Kids: Learn To Meditate: only 2 IT courses allowed.",
+      "YouTube music videos (Flower) and the 49-second book trailer: music or under 2 minutes.",
+      "Insight Timer tracks not listed individually."
+    ]
+  },
+  "images_final": true
+}

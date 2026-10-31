@@ -1,0 +1,191 @@
+{
+  "healer": {
+    "healer_slug": "julie-skon",
+    "create": {
+      "name": "Julie Skon",
+      "bio": "Julie Skon is a meditation teacher, coach and writer, and the founder of Heal Wildly, a small studio for guided practice and workplace mindfulness. She came to this work through two decades of her own recovery after a violent loss in her youth, and she trained along the way as a Reiki master and somatic practitioner as well as a coach. That background gives her meditations a gentle, body-aware quality, often pairing breath and simple movement with ritual and reflection.\n\nMost of her teaching reaches people online. On Insight Timer she offers short daily practices, moon rituals and multi-day courses on intention, grief and the chakras, and on YouTube she has published a 30-day series of one-minute meditations for building a habit. She hosts the Meditation Drip podcast, writes on Substack, and runs mindfulness sessions for companies. Her pocket book RISE gathers fifty brief morning practices, and her poetry collection Unbroken tells the story of the loss that set her on this path. Alongside the meditation work she also offers one-to-one coaching for people facing life changes.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "worldwide",
+      "city": null,
+      "country": null,
+      "subjects": [
+        "meditation",
+        "mindfulness",
+        "chakra-healing"
+      ],
+      "website_url": "https://www.julieskon.com",
+      "booking_url": "https://www.julieskon.com/coaching",
+      "youtube_url": "https://www.youtube.com/@healwildly",
+      "instagram_url": "https://www.instagram.com/julieskon/",
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "julieskon@gmail.com",
+      "image_urls": [
+        "https://images.squarespace-cdn.com/content/v1/6ae241deff57ad514cabf8da/e794f58c-253c-4137-8050-aae551276e14/Julie+Skon+small.jpeg",
+        "https://images.squarespace-cdn.com/content/v1/6ae241deff57ad514cabf8da/417b5944-0248-4e56-a3f9-386f60bf7e52/julie%2Bskon%2Bmeditation.jpeg"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "insight-timer",
+      "role": "instructor"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Guided Meditation to Quiet the Noise | 10 Min Mindfulness for Stillness & Peace",
+      "url": "https://www.youtube.com/watch?v=rvYEow_kpa4",
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "channel": "Heal Wildly Meditations with Julie Skon"
+    },
+    {
+      "title": "10-Minute Morning Meditation Ritual to Awaken Your Mind, Body & Heart",
+      "url": "https://www.youtube.com/watch?v=PtqCagmqir4",
+      "subjects": [
+        "meditation"
+      ],
+      "channel": "Heal Wildly Meditations with Julie Skon"
+    },
+    {
+      "title": "Deep Self Love Meditation | Redamancy",
+      "url": "https://www.youtube.com/watch?v=Bz8quwdIiso",
+      "subjects": [
+        "meditation",
+        "self-healing"
+      ],
+      "channel": "Heal Wildly Meditations with Julie Skon"
+    },
+    {
+      "title": "A Meditation for Transformation | Becoming Novaturient",
+      "url": "https://www.youtube.com/watch?v=Kk_Lp9Lq7s0",
+      "subjects": [
+        "meditation",
+        "spiritual-awakening"
+      ],
+      "channel": "Heal Wildly Meditations with Julie Skon"
+    },
+    {
+      "title": "90 Second Emotional Release Practice | To Build Resiliency and Feel Relief",
+      "url": "https://www.youtube.com/watch?v=pEVno9aLe2w",
+      "subjects": [
+        "mindfulness",
+        "self-healing"
+      ],
+      "channel": "Heal Wildly Meditations with Julie Skon"
+    },
+    {
+      "title": "10 Minute Guided Morning Meditation {New Video}",
+      "url": "https://www.youtube.com/watch?v=r2eizesfdZc",
+      "subjects": [
+        "meditation"
+      ],
+      "channel": "Heal Wildly Meditations with Julie Skon"
+    }
+  ],
+  "books": [
+    {
+      "title": "RISE: mini mindful morning meditations",
+      "slug": "rise-mini-mindful-morning-meditations",
+      "author": "Julie Skon",
+      "asin": "B0B5KV7C9Z",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "A pocket-sized book of fifty short morning practices, each paired with a quotation. The exercises range from breath awareness and reflection to letting go and gratitude, and take only a few minutes each.",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/B0B5KV7C9Z.01._SCLZZZZZZZ_.jpg"
+    }
+  ],
+  "courses": [
+    {
+      "title": "Ignite Your Wild Through Chakra Balancing and Alignment",
+      "url": "https://insighttimer.com/meditation-courses/course_julie-skon-ignite-your-wild",
+      "description": "A seven-day Insight Timer course that spends a day with each of the seven chakras. Each session combines a short teaching with a guided practice for that energy centre.",
+      "price": "Included in Member Plus ($59.99 USD a year)",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "chakra-healing",
+        "meditation"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/6ae241deff57ad514cabf8da/e794f58c-253c-4137-8050-aae551276e14/Julie+Skon+small.jpeg"
+    },
+    {
+      "title": "10 Daily Rituals For Living With Intention",
+      "url": "https://insighttimer.com/meditation-courses/course_julie-skons-course",
+      "description": "A ten-day Insight Timer course introducing one simple daily ritual per session, from morning practice to evening reflection. The aim is a steadier, more purposeful rhythm to ordinary days.",
+      "price": "Included in Member Plus ($59.99 USD a year)",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/6ae241deff57ad514cabf8da/e794f58c-253c-4137-8050-aae551276e14/Julie+Skon+small.jpeg"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Julie Skon on Insight Timer",
+      "url": "https://insighttimer.com/julieskon",
+      "description": "Guided meditations, moon rituals, Reiki-inspired and chakra practices, and short somatic exercises. The single tracks are free to hear.",
+      "featured": true,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation",
+        "chakra-healing"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/6ae241deff57ad514cabf8da/e794f58c-253c-4137-8050-aae551276e14/Julie+Skon+small.jpeg"
+    },
+    {
+      "title": "30-Day 1-Minute Meditation Challenge",
+      "url": "https://www.youtube.com/playlist?list=PLR6JV0uGOfalf6OOLV-A9gb-ScfKxiLod",
+      "description": "A free YouTube series with one very short guided practice a day for a month, including walking meditation, the five Reiki principles and a Dadirri stillness practice. It is meant to help a daily habit take root.",
+      "featured": false,
+      "resource_type": "mini_course",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://i.ytimg.com/pl_c/PLR6JV0uGOfalf6OOLV-A9gb-ScfKxiLod/studio_square_thumbnail.jpg?sqp=CIaamNcG-oaymwEICKoDEPABSFqi85f_AwYIuMLcxQY=&rs=AOn4CLB5GniREWri3-7YGTnTE95_6czl4Q&days_since_epoch=20757"
+    }
+  ],
+  "sprint": {
+    "hub": "insight-timer",
+    "rank": 51,
+    "insight_timer_url": "https://insighttimer.com/julieskon",
+    "tier_evidence": "Insight Timer 18.7k (profile, 31 Oct 2026); Instagram @julieskon 4,338 (og:description, 31 Oct 2026); Instagram @healwildly 239 (og:description); YouTube @healwildly 322 subscribers (channel page) → ~23.6k total → local_hero",
+    "email": "yes",
+    "email_source": "https://www.julieskon.com/",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 6 source(s)",
+    "flags": [
+      "She presents herself mainly as a trauma-informed life and healing coach; the meditation, Reiki and chakra teaching is real but secondary, so a human may want to check the fit.",
+      "Her 1:1 coaching packages ($2,100-$7,800 USD) are sold partly as trauma healing, so they were left out as borderline; booking_url still points to the coaching page as her main 'work with me' page.",
+      "Insight Timer bio could only be partly quoted by WebFetch; bio check relied mainly on her own site pages.",
+      "Her site says she is the author of three books; only RISE has a confirmed amazon.com ASIN. Unbroken (ISBN 9798985279405) was found at other retailers and on Audible, but no amazon.com page was confirmed; the third book was not found.",
+      "Email is a personal gmail address published on her site.",
+      "Photos are both from her own site; her YouTube avatar is the Heal Wildly logo, not used."
+    ],
+    "left_out": [
+      "1:1 coaching packages: sold partly as trauma healing (borderline).",
+      "Mindfully Navigate Loss Through G.R.I.E.F. and Full Moon Ritual Insight Timer courses: kept to the two strongest under the two-course limit.",
+      "Insight Timer live moon rituals on 9 and 24 Nov 2026 ($9.99): live events on Insight Timer, no page of her own.",
+      "YouTube: 8 Min Somatic Stress Release, sleep and healing titles (stress/sleep framing), and the 30-day challenge clips under ~2 minutes or covered by the playlist.",
+      "Unbroken poetry book: no amazon.com listing confirmed.",
+      "Workshops for organisations: inquiry only, no page of their own."
+    ]
+  },
+  "images_final": true
+}

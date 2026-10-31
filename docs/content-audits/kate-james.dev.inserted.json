@@ -1,0 +1,93 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 344,
+    "healer_slug": "kate-james"
+  },
+  "rows": [
+    {
+      "table": "books",
+      "id": 1411,
+      "slug": "quietly-confident",
+      "title": "Quietly Confident: An Introvert's Guide to Knowing and Expressing Your Worth"
+    },
+    {
+      "table": "books",
+      "id": 1412,
+      "slug": "change-your-thinking-to-change-your-life",
+      "title": "Change Your Thinking to Change Your Life"
+    },
+    {
+      "table": "books",
+      "id": 1413,
+      "slug": "believe-in-yourself-and-do-what-you-love",
+      "title": "Believe in Yourself and Do What You Love"
+    },
+    {
+      "table": "books",
+      "id": 1414,
+      "slug": "be-mindful-and-simplify-your-life",
+      "title": "Be Mindful and Simplify Your Life"
+    },
+    {
+      "table": "books",
+      "id": 1415,
+      "slug": "create-calm",
+      "title": "Create Calm"
+    },
+    {
+      "table": "courses",
+      "id": "0636212e-9bb2-443c-8d3b-267ae631145c",
+      "slug": "one-to-one-life-and-career-coaching",
+      "title": "One-to-One Life and Career Coaching"
+    },
+    {
+      "table": "courses",
+      "id": "5487ade7-ac2c-4195-8ab3-5acd174270d0",
+      "slug": "half-day-coaching-intensive",
+      "title": "Half-Day Coaching Intensive"
+    },
+    {
+      "table": "courses",
+      "id": "20703379-d65b-4e42-aeb7-64b2490c640a",
+      "slug": "the-confidence-course",
+      "title": "The Confidence Course"
+    },
+    {
+      "table": "courses",
+      "id": "9e56f606-e8bb-4c86-9ce1-4637655ac115",
+      "slug": "byron-bay-mindfulness-and-yoga-retreat-for-women",
+      "title": "Byron Bay Mindfulness and Yoga Retreat for Women"
+    },
+    {
+      "table": "courses",
+      "id": "101d6d8e-e56e-4cab-bd3a-d78d1ffe71d4",
+      "slug": "build-self-belief-through-mindful-action",
+      "title": "Build Self-Belief Through Mindful Action"
+    },
+    {
+      "table": "free_resources",
+      "id": "6bdf3b2d-9f8d-49a1-b4b9-b6369b3bb815",
+      "slug": "kate-james-on-insight-timer",
+      "title": "Kate James on Insight Timer"
+    },
+    {
+      "table": "free_resources",
+      "id": "e18499fc-88c2-472e-a72d-e7a72ecc5f3d",
+      "slug": "learn-to-meditate",
+      "title": "Learn to Meditate"
+    },
+    {
+      "table": "free_resources",
+      "id": "5f063dfa-807c-4c63-af52-af8c6d1d2cb5",
+      "slug": "build-self-belief-and-find-your-direction",
+      "title": "Build Self-Belief and Find Your Direction"
+    },
+    {
+      "table": "hub_teachers",
+      "id": "b6467280-0e79-42ed-b86c-8e9eff8d2b2d",
+      "title": "kate-james teaches at Insight Timer"
+    }
+  ],
+  "at": "2026-10-31T17:19:42.794Z"
+}

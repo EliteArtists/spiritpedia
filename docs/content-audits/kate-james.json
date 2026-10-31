@@ -1,0 +1,255 @@
+{
+  "healer": {
+    "healer_slug": "kate-james",
+    "create": {
+      "name": "Kate James",
+      "bio": "Kate James is an Australian mindfulness teacher, coach and author who has worked with clients since 2002, mostly women who describe themselves as quiet, sensitive or introverted and who are facing a change in work or life. She trained as a coach with the International Coach Academy and was one of the early Australian coaches to hold PCC status with the International Coach Federation. She was also among the first teachers to bring everyday meditation to Melbourne audiences, and her approach draws on Mindful Self-Compassion, Internal Family Systems, Acceptance and Commitment Therapy and the research of positive psychology. She is a trained facilitator of the Birren method of guided autobiography.\n\nShe coaches clients online and face to face on Victoria's Mornington Peninsula, offers half-day one-to-one intensives, runs a six-week small-group confidence course, and leads a yearly five-night mindfulness and yoga retreat for women at Sangsurya near Byron Bay. Of her six books, the best known are Quietly Confident, written for introverts, Create Calm, Be Mindful and Simplify Your Life, and a guide to purpose titled Change Your Thinking to Change Your Life. On Insight Timer she shares guided meditations, body scans and yoga nidra, and each Monday morning, Melbourne time, she hosts a free live talk and meditation on finding inner peace.",
+      "tier": "luminary",
+      "entity_type": "individual",
+      "availability": "local_online",
+      "city": "Melbourne",
+      "country": "Australia",
+      "subjects": [
+        "mindfulness",
+        "meditation",
+        "life-coaching"
+      ],
+      "website_url": "https://katejames.com.au",
+      "booking_url": "https://katejames.com.au/life-coaching/",
+      "youtube_url": null,
+      "instagram_url": "https://www.instagram.com/kate.james.au/",
+      "facebook_url": "https://www.facebook.com/katejamesaustralia/",
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "hello@katejames.com.au",
+      "image_urls": [
+        "https://katejames.com.au/wp-content/uploads/2026/02/KateJames2026-sq-1.jpg",
+        "https://katejames.com.au/wp-content/uploads/2024/06/kate-james-author.jpg",
+        "https://katejames.com.au/wp-content/uploads/2026/03/KateJames-square.jpg"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "insight-timer",
+      "role": "instructor"
+    }
+  ],
+  "videos": [],
+  "books": [
+    {
+      "title": "Quietly Confident: An Introvert's Guide to Knowing and Expressing Your Worth",
+      "slug": "quietly-confident",
+      "author": "Kate James",
+      "asin": "1761263285",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "A book for introverts who feel overlooked in loud workplaces and social settings. It offers a wider idea of confidence, rooted in knowing your strengths and values rather than in being the most visible person in the room.",
+      "subjects": [
+        "life-coaching",
+        "mindfulness"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1761263285.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "Change Your Thinking to Change Your Life",
+      "slug": "change-your-thinking-to-change-your-life",
+      "author": "Kate James",
+      "asin": "1760787736",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "A practical guide to working out what matters to you and where you want to go. It brings together exercises from mindfulness, positive psychology and her coaching practice to help readers set direction and take small steps.",
+      "subjects": [
+        "life-coaching",
+        "mindfulness",
+        "soul-purpose"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1760787736.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "Believe in Yourself and Do What You Love",
+      "slug": "believe-in-yourself-and-do-what-you-love",
+      "author": "Kate James",
+      "asin": "152485090X",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "A small gift-style book of fifty short tips for building self-belief. Each page offers a simple idea or exercise for living closer to what you enjoy and value.",
+      "subjects": [
+        "life-coaching"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/152485090X.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "Be Mindful and Simplify Your Life",
+      "slug": "be-mindful-and-simplify-your-life",
+      "author": "Kate James",
+      "asin": "1524862207",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "A companion volume of fifty brief tips on bringing mindfulness into ordinary days. The suggestions are short and easy to try, from slowing down to clearing space at home and in the diary.",
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1524862207.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "Create Calm",
+      "slug": "create-calm",
+      "author": "Kate James",
+      "asin": "B07R81FRW7",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "Subtitled Make Friends With Your Mind, this short book gathers everyday ways to feel more settled when life is busy. It touches on mindfulness, movement, rest, creativity and talking things through.",
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "cover": "https://m.media-amazon.com/images/I/71S3xvq4W+L._SL1500_.jpg"
+    }
+  ],
+  "courses": [
+    {
+      "title": "One-to-One Life and Career Coaching",
+      "url": "https://katejames.com.au/life-coaching/",
+      "description": "Sixty-minute coaching sessions, online or face to face on the Mornington Peninsula, booked singly or as a three- or five-session programme. The work centres on clarity, self-trust and a calmer way of living and working, and begins with a free introductory call.",
+      "price": "$275 AUD (single session); $795 AUD (3 sessions); $1,250 AUD (5 sessions)",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "life-coaching",
+        "mindfulness"
+      ],
+      "image": "https://katejames.com.au/wp-content/uploads/2026/02/KateJames2026-sq-1.jpg"
+    },
+    {
+      "title": "Half-Day Coaching Intensive",
+      "url": "https://katejames.com.au/coaching/",
+      "description": "A single long session with Kate that mixes conversation, reflection and meditation to look at your story, strengths and values. You leave with a written plan of small next steps.",
+      "price": "$750 AUD",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "life-coaching",
+        "mindfulness"
+      ],
+      "image": "https://katejames.com.au/wp-content/uploads/2026/03/KateJames2026.jpg"
+    },
+    {
+      "title": "The Confidence Course",
+      "url": "https://katejames.com.au/confidence-course-women/",
+      "description": "A six-week small-group programme for women with weekly live Zoom calls, worksheets, guided meditations and expert interviews. It moves from defining real confidence to values, purpose and strengths, and the material stays available afterwards. The next round begins in March 2027.",
+      "price": "$825 AUD (or 3 monthly payments of $275 AUD)",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "life-coaching",
+        "meditation"
+      ],
+      "image": "https://katejames.com.au/wp-content/uploads/2024/05/is-this-who-you-want-to-be.jpg"
+    },
+    {
+      "title": "Byron Bay Mindfulness and Yoga Retreat for Women",
+      "url": "https://katejames.com.au/byron-bay-yoga-meditation-retreat/",
+      "description": "A yearly five-night residential retreat at Sangsurya, a bush property near Tallow Beach, with early meditation, morning yoga or walks, quiet afternoons and vegetarian meals. All group sessions are optional, and the pace suits people who like plenty of space and silence.",
+      "price": "$2,995 to $3,295 AUD (all inclusive, by room)",
+      "product_type": "retreat",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "mindfulness",
+        "yoga",
+        "meditation"
+      ],
+      "image": "https://katejames.com.au/wp-content/uploads/2024/11/New-Project-11.png"
+    },
+    {
+      "title": "Build Self-Belief Through Mindful Action",
+      "url": "https://insighttimer.com/meditation-courses/course_build-self-belief-through-mindful-action",
+      "description": "A ten-day audio course on Insight Timer that pairs short teachings with practices for acting on what matters even when self-doubt is present.",
+      "price": "Included in Member Plus ($59.99 USD a year)",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "image": "https://katejames.com.au/wp-content/uploads/2026/02/KateJames2026-sq-1.jpg"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Kate James on Insight Timer",
+      "url": "https://insighttimer.com/katejames",
+      "description": "A large library of guided meditations, body scans, yoga nidra and self-compassion practices, plus a free live talk and meditation every Monday morning. The single tracks are free to hear.",
+      "featured": true,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://katejames.com.au/wp-content/uploads/2026/02/KateJames2026-sq-1.jpg"
+    },
+    {
+      "title": "Learn to Meditate",
+      "url": "https://katejames.com.au/learn-to-meditate-ebook/",
+      "description": "A free beginner's guide to everyday meditation, sent by email when you sign up for her newsletter.",
+      "featured": false,
+      "resource_type": "download",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://katejames.com.au/wp-content/uploads/2026/02/LearnToMeditateCover-755x1024.jpg"
+    },
+    {
+      "title": "Build Self-Belief and Find Your Direction",
+      "url": "https://katejames.com.au/self-belief-ebook/",
+      "description": "A free workbook with exercises for naming your values and strengths and choosing goals that suit you. It comes with a short life-satisfaction quiz and a guided visualisation.",
+      "featured": false,
+      "resource_type": "download",
+      "subjects": [
+        "life-coaching",
+        "meditation"
+      ],
+      "image": "https://katejames.com.au/wp-content/uploads/2026/02/self-belief-ebook-mockup.jpg"
+    }
+  ],
+  "sprint": {
+    "hub": "insight-timer",
+    "rank": 58,
+    "insight_timer_url": "https://insighttimer.com/katejames",
+    "tier_evidence": "Insight Timer 143k (profile, 31 Oct 2026); Instagram @kate.james.au 9,537 (og:description, 31 Oct 2026); Facebook katejamesaustralia count not readable; no YouTube channel found → ~152.5k total → luminary",
+    "email": "yes",
+    "email_source": "https://katejames.com.au/coaching/",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 16 source(s)",
+    "flags": [
+      "Mainly a life, career and confidence coach for women; the spiritual side is mindfulness, meditation and a yearly yoga retreat.",
+      "Tier total (~152k) sits just above the 80k-150k borderline band and is almost all Insight Timer; Facebook count could not be read.",
+      "The leads had a contact form only, but hello@katejames.com.au is printed on her coaching and life-coaching pages (and as 'hello [at] katejames.com.au' on her contact page).",
+      "City set to Melbourne (her Insight Timer location); in-person sessions are on the Mornington Peninsula south of Melbourne.",
+      "The 2026 Byron Bay retreat (6-11 Nov) is fully booked with a waitlist for 2027, so the retreat is listed undated as a yearly event.",
+      "amazon.com /dp/ pages for Believe in Yourself (152485090X) and Create Calm (B07R81FRW7, Kindle) returned 500; both ASINs were confirmed in amazon.com search results under Kate James. Quietly Confident and Change Your Thinking are Australian Pan Macmillan editions with amazon.com listings.",
+      "A library catalogue record seen in search gives the author's dates as 1972-2024; she is clearly active in 2026 (new photos, live sessions), so it is presumably an error or a different person.",
+      "Insight Timer bio could only be partly quoted by WebFetch; bio check relied mainly on her own site pages."
+    ],
+    "left_out": [
+      "No YouTube channel found, so no videos.",
+      "Creative Confidence workshops and Write Your Life Stories classes: all listed dates have passed and no new dates are posted.",
+      "Be Mindful with Kate James: The Essential Collection (audio only) and Change How You Think & Be Happier Now (older title, no amazon.com listing confirmed).",
+      "Insight Timer tracks titled for sleep problems or nervous-system recovery are covered only by the profile link.",
+      "Speaking and leadership/business coaching pages: not spiritual teaching."
+    ]
+  },
+  "images_final": true
+}

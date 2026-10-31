@@ -779,9 +779,9 @@
    "base": "Klaipėda, Lithuania",
    "website": null,
    "note": "No website on IT; found patricklynen.com (German); email is a help/support address.",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Not a spiritual teacher: a German-language success and mindset coach and hypnotist ('Meister der Veränderung') whose site sells coaching packages, a luxury mentoring stay in Mallorca and hypnosis audios including a weight-loss programme, while his most popular Insight Timer tracks are white noise, 'sleep induction' and weight-loss hypnosis; only a lucid-dreaming course and a couple of motivational courses would pass the rules, his site appears little updated since 2020–2023, and the only published email is a help inbox (hilfe@patricklynen.com)."
   },
   {
    "rank": 42,
@@ -798,7 +798,7 @@
    "base": "Atlanta, GA, USA",
    "website": "sonicyogi.com",
    "note": "Sound therapy content mentions insomnia/anxiety but sold as general sound meditation.",
-   "status": "planned",
+   "status": "dev",
    "plan": "docs/content-audits/sonic-yogi.json",
    "skip_reason": null
   },
@@ -817,8 +817,8 @@
    "base": "Dublin, Ireland",
    "website": "www.lifeofmindfulness.com",
    "note": null,
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/tony-brady.json",
    "skip_reason": null
   },
   {
@@ -836,8 +836,8 @@
    "base": "Eugene, OR, USA",
    "website": "https://louredmond.com",
    "note": null,
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/lou-redmond.json",
    "skip_reason": null
   },
   {
@@ -855,9 +855,9 @@
    "base": "New York, NY, USA",
    "website": "www.michellessanctuary.com",
    "note": "Content creator, no sessions.",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "A sleep-story brand rather than a teacher: Michelle Hotaling (the voice behind it, named on her Venmo and Aura pages) writes and narrates bedtime stories and sleep meditations offered 'for relaxation and entertainment purposes only', with no classes, courses, sessions or books of her own; her site is framed around her own insomnia and quotes listeners saying she cured their insomnia and pain, and her popular Insight Timer tracks are titled for insomnia, migraine and pain relief, so almost nothing would pass the health-claim rule. Email michellessanctuary@gmail.com is published on michellessanctuary.com if she is ever reconsidered."
   },
   {
    "rank": 46,
@@ -874,8 +874,8 @@
    "base": "Salt Lake City, UT, USA",
    "website": null,
    "note": "No website on IT; found coachedbynikkidyer.com.",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/nikki-dyer.json",
    "skip_reason": null
   },
   {
@@ -893,8 +893,8 @@
    "base": "Salem, OR, USA",
    "website": "https://linktr.ee/_jessica.amos_",
    "note": "Linktree leads to staywithyourself.com.",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/jessica-amos.json",
    "skip_reason": null
   },
   {
@@ -912,8 +912,8 @@
    "base": "Brisbane, QLD, Australia",
    "website": "www.mamagoddess.com.au/soul-expansion-training",
    "note": null,
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/kim-newing.json",
    "skip_reason": null
   },
   {
@@ -931,8 +931,8 @@
    "base": "Ontario, Canada",
    "website": "stanwith.me/growwithguri",
    "note": "Stan store only.",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/guri-sohal.json",
    "skip_reason": null
   },
   {
@@ -950,7 +950,7 @@
    "base": "Newbury, UK",
    "website": "www.andyhobsonmeditation.com",
    "note": null,
-   "status": "planned",
+   "status": "dev",
    "plan": "docs/content-audits/andy-hobson.json",
    "skip_reason": null
   },
@@ -969,7 +969,7 @@
    "base": "Los Angeles, CA, USA",
    "website": "https://www.julieskon.com",
    "note": "Coach and author; trauma-informed framing but sold as life coaching.",
-   "status": "planned",
+   "status": "dev",
    "plan": "docs/content-audits/julie-skon.json",
    "skip_reason": null
   },
@@ -988,7 +988,7 @@
    "base": "Des Moines, IA, USA",
    "website": "soundsciencesoul.com",
    "note": null,
-   "status": "planned",
+   "status": "dev",
    "plan": "docs/content-audits/sommer-leigh.json",
    "skip_reason": null
   },
@@ -1007,8 +1007,8 @@
    "base": "San Diego, CA, USA",
    "website": "markwguay.me/7d-breathing/insighttimer",
    "note": null,
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/mark-guay.json",
    "skip_reason": null
   },
   {
@@ -1026,9 +1026,9 @@
    "base": "Edinburgh, UK",
    "website": "www.niamhoshea.com",
    "note": "Email is the 'Contact' mailto link for her Hælu project.",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "No usable photo: the only image she publishes (on her site, both Substacks and Spotify) is a deliberately motion-blurred shot where her face cannot be made out, her YouTube channel is empty, and the Instagram accounts under her name are not linked from her pages. She is also mainly a writer and musician (Substack letters, music, a few somatic Insight Timer courses) with no sessions or stated training, so a page would be thin. Email hello@haelu.org is published on niamhoshea.com if a human wants to ask for a photo."
   },
   {
    "rank": 55,
@@ -1045,8 +1045,8 @@
    "base": "Ljubljana, Slovenia",
    "website": "www.tonysamara.com",
    "note": null,
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/tony-samara.json",
    "skip_reason": null
   },
   {
@@ -1064,7 +1064,7 @@
    "base": "Bend, OR, USA",
    "website": "sadiejobarr.com",
    "note": "Relationship/self-trust coaching.",
-   "status": "planned",
+   "status": "dev",
    "plan": "docs/content-audits/sadie-barr.json",
    "skip_reason": null
   },
@@ -1083,7 +1083,7 @@
    "base": "Shoreline (Seattle), WA, USA",
    "website": "www.catherineliggett.com/onelink",
    "note": "Brands herself as 'Holistic Mental Health'.",
-   "status": "planned",
+   "status": "dev",
    "plan": "docs/content-audits/catherine-liggett.json",
    "skip_reason": null
   },
@@ -1102,8 +1102,8 @@
    "base": "Melbourne, Australia",
    "website": "katejames.com.au",
    "note": "Mainly a life/career coach for women.",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/kate-james.json",
    "skip_reason": null
   },
   {
@@ -1121,8 +1121,8 @@
    "base": "Devon, UK",
    "website": "linktr.ee/saskialightstar",
    "note": "Linktree; own site saskialightstar.com.",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/saskia-lightstar.json",
    "skip_reason": null
   },
   {
@@ -1140,8 +1140,8 @@
    "base": "Calgary, AB, Canada",
    "website": null,
    "note": "No website on profile; found debraford.ca (email Cloudflare-obfuscated, decoded); co-founder of SolePath Institute.",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/debra-ford.json",
    "skip_reason": null
   },
   {
@@ -1178,8 +1178,8 @@
    "base": "Grand Manan, NB, Canada",
    "website": "metimemeditations.com",
    "note": null,
-   "status": "todo",
-   "plan": null,
+   "status": "planned",
+   "plan": "docs/content-audits/mary-rose-freeth.json",
    "skip_reason": null
   },
   {
@@ -1254,8 +1254,8 @@
    "base": "Queens, NY, USA",
    "website": "www.lizacolpa.com",
    "note": null,
-   "status": "todo",
-   "plan": null,
+   "status": "planned",
+   "plan": "docs/content-audits/liza-colpa.json",
    "skip_reason": null
   },
   {
@@ -3045,5 +3045,5 @@
    "skip_reason": null
   }
  ],
- "updated": "2026-10-31T17:01:49.320Z"
+ "updated": "2026-10-31T17:20:18.182Z"
 }

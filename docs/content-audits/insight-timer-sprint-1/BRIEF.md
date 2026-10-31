@@ -229,6 +229,11 @@ Instagram / Facebook / X counts usually can't be read without logging in. Don't
 try to get round that (no fake user agents, no proxies, no internal APIs); use
 what's public and flag the rest.
 
+**No fake user agents anywhere**: not for Amazon, not for any site. Use curl's
+default user agent or WebFetch. If amazon.com /dp/ pages fail (they often
+return 500), try WebFetch on the /dp/ page, or leave the book out and say so in
+`left_out`; never spoof a browser to get through.
+
 ## Done
 
 When finished, reply with one line per teacher:

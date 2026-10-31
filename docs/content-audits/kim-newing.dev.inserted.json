@@ -1,0 +1,51 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 335,
+    "healer_slug": "kim-newing"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "dbbe7949-ec56-4756-b4ef-aa2d96515291",
+      "slug": "soul-expansion-training",
+      "title": "Soul Expansion Training"
+    },
+    {
+      "table": "courses",
+      "id": "a325006e-ae95-40bc-b558-2bba359b7070",
+      "slug": "the-intuition-kickstarter-course",
+      "title": "The Intuition Kickstarter Course"
+    },
+    {
+      "table": "courses",
+      "id": "3d4102ce-3aad-4cc9-8dc5-c6915b3af9b2",
+      "slug": "knowing-your-souls-true-purpose",
+      "title": "Knowing Your Soul's True Purpose"
+    },
+    {
+      "table": "courses",
+      "id": "64c3d57d-6f6c-448d-b760-27551bd3ed0a",
+      "slug": "11-embodiment-and-deep-dive-soul-sessions",
+      "title": "1:1 Embodiment and Deep Dive Soul Sessions"
+    },
+    {
+      "table": "courses",
+      "id": "aa4ed302-5f5b-446a-b308-bc9465ff9ea4",
+      "slug": "embodying-your-wildly-intuitive-self",
+      "title": "Embodying Your Wildly Intuitive Self"
+    },
+    {
+      "table": "free_resources",
+      "id": "466b16ce-b72c-4df0-aaff-a784289303a5",
+      "slug": "kim-newing-on-insight-timer",
+      "title": "Kim Newing on Insight Timer"
+    },
+    {
+      "table": "hub_teachers",
+      "id": "ff8f7bec-2d4c-4015-a602-2a62e0397d80",
+      "title": "kim-newing teaches at Insight Timer"
+    }
+  ],
+  "at": "2026-10-31T17:18:17.336Z"
+}

@@ -1,0 +1,370 @@
+{
+  "healer": {
+    "healer_slug": "debra-ford",
+    "create": {
+      "name": "Dr. Debra Ford",
+      "bio": "Debra Ford is a Calgary-based teacher of metaphysical philosophy and the Tao, best known as the originator of SolePath, a framework for recognising the patterns in how a person notices, responds and grows. In SolePath each person carries a braid of three strands: a Joyful LightPath where energy flows easily, a Progression LightPath where they grow, and a DarkPath that shows how they contract under strain. She holds a doctorate in metaphysical science, is an ordained minister, belongs to the American Metaphysical Doctors Association and serves as a governing official of the Canadian International Metaphysical Ministry in Alberta. She has taught on Insight Timer since 2016.\n\nThrough the Academy of Inner Wisdom, the teaching arm of the SolePath Institute, she offers self-paced online training as a celebrant and spiritual practitioner for weddings, funerals and community support, alongside courses in Zone Feng Shui and space clearing. Her many books range from SolePath reference texts and a guide to SoleNumbers, a reading of purpose from the birth date, to morning and evening rituals built on the rhythm of the Tao and a book on parenting through the same lens. She also writes picture books, including the Curious Cousins adventures set in southern Africa and the Unique Child series, that introduce children to connection, balance and flow.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "worldwide",
+      "city": null,
+      "country": null,
+      "subjects": [
+        "ancient-wisdom",
+        "soul-purpose",
+        "spirituality"
+      ],
+      "website_url": "https://debraford.ca",
+      "booking_url": "https://debraford.ca/teacher/",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "me@debraford.ca",
+      "image_urls": [
+        "https://www.innerwisdomhub.org/wp-content/uploads/2024/05/Debra-Ford.png",
+        "https://solepathinstitute.org/wp-content/uploads/2026/09/Debra-white-background.png"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "insight-timer",
+      "role": "instructor"
+    }
+  ],
+  "videos": [
+    {
+      "title": "What is SolePath?",
+      "url": "https://www.youtube.com/watch?v=GjCQ5OUtA9w",
+      "subjects": [
+        "soul-purpose",
+        "ancient-wisdom"
+      ],
+      "channel": "SolePathCommunity"
+    },
+    {
+      "title": "What is a LightPath?",
+      "url": "https://www.youtube.com/watch?v=w8xQaufexk4",
+      "subjects": [
+        "soul-purpose"
+      ],
+      "channel": "SolePathCommunity"
+    },
+    {
+      "title": "What is a DarkPath",
+      "url": "https://www.youtube.com/watch?v=IhjyHivbFbs",
+      "subjects": [
+        "soul-purpose",
+        "shadow-work"
+      ],
+      "channel": "SolePathCommunity"
+    },
+    {
+      "title": "Writing Intentions with the Tao",
+      "url": "https://www.youtube.com/watch?v=a_ZtMzkZ9fY",
+      "subjects": [
+        "ancient-wisdom",
+        "manifestation"
+      ],
+      "channel": "SolePathCommunity"
+    },
+    {
+      "title": "Measuring v:s SolePath Discovery",
+      "url": "https://www.youtube.com/watch?v=vfFgT5bfTvk",
+      "subjects": [
+        "soul-purpose"
+      ],
+      "channel": "SolePathCommunity"
+    },
+    {
+      "title": "SoleIntending Interview with Dr. Debra Ford",
+      "url": "https://www.youtube.com/watch?v=S5ZdwFQ3AP8",
+      "subjects": [
+        "manifestation",
+        "soul-purpose"
+      ],
+      "channel": "TSR NEWS GROUP"
+    }
+  ],
+  "books": [
+    {
+      "title": "The SolePath Book of Knowledge",
+      "slug": "the-solepath-book-of-knowledge",
+      "author": "Debra Ford",
+      "asin": "B0C5144NG3",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "The main reference text for the SolePath system, setting out its categories and paths in full. It is written for students and mentors who want the whole framework in one place.",
+      "subjects": [
+        "soul-purpose",
+        "ancient-wisdom"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/B0C5144NG3.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "The Tao and SolePath: The Foundation for your Life",
+      "slug": "the-tao-and-solepath",
+      "author": "Debra Ford",
+      "asin": "B0CG7285VG",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "A companion to the SolePath training that links the framework to Taoist ideas of balance and flow. It explains the metaphysical thinking that sits underneath the profiles.",
+      "subjects": [
+        "ancient-wisdom",
+        "soul-purpose"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/B0CG7285VG.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "SolePath Foundations: A Practical Guide to Awareness, Energy and Alignment",
+      "slug": "solepath-foundations",
+      "author": "Debra Ford",
+      "asin": "1987975731",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "A nine-part workbook that walks through the SolePath categories, the LightPaths and DarkPaths, SoleNumbers and intention setting. It treats personality as moving energy to be noticed rather than a fixed type.",
+      "subjects": [
+        "soul-purpose",
+        "ancient-wisdom"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1987975731.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "Understanding Behaviour: How What you Notice and How you Respond Shape your Life",
+      "slug": "understanding-behaviour",
+      "author": "Debra Ford",
+      "asin": "B0GR4QS38K",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "A newer SolePath guide that looks at behaviour through patterns of attention and reaction. Case studies show how people can work with their natural tendencies instead of fighting them.",
+      "subjects": [
+        "soul-purpose",
+        "consciousness"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/B0GR4QS38K.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "The SolePath Field Guide: Interpreting Energetic Personality in SolePath Discovery",
+      "slug": "the-solepath-field-guide",
+      "author": "Debra Ford",
+      "asin": "1987975723",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "A handbook for mentors and practitioners that presents all twenty-two SolePaths side by side. It helps readers interpret a person's braid in reflection or mentoring conversations.",
+      "subjects": [
+        "soul-purpose"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1987975723.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "SolePath Personal Study: 9-Step Program",
+      "slug": "solepath-personal-study",
+      "author": "Debra Ford",
+      "asin": "1987975618",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "A self-study course in book form that moves through nine focus steps for exploring your own SolePath. It is designed to be worked through slowly with reflection at each stage.",
+      "subjects": [
+        "soul-purpose"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1987975618.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "SoleNumbers Book of Wisdom: Energetic Guide to Purpose",
+      "slug": "solenumbers-book-of-wisdom",
+      "author": "Debra Ford",
+      "asin": "B0CLQ1D6HW",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "A guide to her number system, which reads themes of purpose and growth from your date of birth. Each number is described with its energy and practical meaning.",
+      "subjects": [
+        "soul-purpose",
+        "ancient-wisdom"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/B0CLQ1D6HW.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "Living the Tao: The Daily Pulse",
+      "slug": "living-the-tao-the-daily-pulse",
+      "author": "Debra Ford",
+      "asin": "198797574X",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "A book of short morning and evening rituals for living in step with the rhythm of the Tao. It grew out of her popular Daily Pulse practice on Insight Timer.",
+      "subjects": [
+        "ancient-wisdom",
+        "meditation"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/198797574X.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "The Tao of Parenting: Understanding Your Child and Supporting Their Journey",
+      "slug": "the-tao-of-parenting",
+      "author": "Debra Ford",
+      "asin": "B0GY682D76",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "A gentle guide for parents that reads children's behaviour as natural patterns rather than problems to fix. It shows how to keep a steady home and respond calmly when a child is overwhelmed.",
+      "subjects": [
+        "ancient-wisdom",
+        "conscious-relationships"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/B0GY682D76.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "SolePath: the path to purpose and a beautiful life",
+      "slug": "solepath-the-path-to-purpose",
+      "author": "Debra Ford",
+      "asin": "0978427173",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "Her earlier introduction to SolePath for general readers, explaining how knowing your path can point to your gifts and purpose.",
+      "subjects": [
+        "soul-purpose",
+        "spirituality"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/0978427173.01._SCLZZZZZZZ_.jpg"
+    }
+  ],
+  "courses": [
+    {
+      "title": "Celebrant and Spiritual Practitioner Training",
+      "url": "https://www.innerwisdomhub.org/celebrant-and-spiritual-practitioner/",
+      "description": "A self-paced online qualification from the Academy of Inner Wisdom for leading weddings, funerals and other ceremonies and for offering spiritual support in your community. It combines SolePath and Taoist teaching with practical ceremony skills and is endorsed by the Canadian International Metaphysical Ministry.",
+      "price": "$990 CAD + GST/HST",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "spirituality",
+        "ancient-wisdom"
+      ],
+      "image": "https://www.innerwisdomhub.org/wp-content/uploads/2023/06/CCSP.png"
+    },
+    {
+      "title": "Basic Zone Feng Shui",
+      "url": "https://www.innerwisdomhub.org/basic-zone-feng-shui/",
+      "description": "A self-paced video course on shifting the energy of your home or workspace, from clearing clutter to placing remedies such as bagua mirrors. Completing it also prepares you to offer consultations to others.",
+      "price": "$499 CAD + GST",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "ancient-wisdom",
+        "energy-medicine"
+      ],
+      "image": "https://www.innerwisdomhub.org/wp-content/uploads/2022/11/feng-shui-book.jpg"
+    },
+    {
+      "title": "Space Clearing Course",
+      "url": "https://www.innerwisdomhub.org/space-clearing-course/",
+      "description": "A self-paced video course in clearing stale energy from a space, covering preparation, intention and several clearing methods. It draws on routines she and Rev. Deneen have used for many years.",
+      "price": "$299 CAD + GST",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "energy-medicine",
+        "ancient-wisdom"
+      ],
+      "image": "https://www.innerwisdomhub.org/wp-content/uploads/2023/08/AIW-logo.png"
+    },
+    {
+      "title": "SolePath Discovery",
+      "url": "https://solepathinstitute.org/know-your-solepath/",
+      "description": "An online, self-guided set of questionnaires and reflections that ends with your three-strand SolePath character braid. It includes a year of access to the SolePath Companion tool.",
+      "price": "$147 CAD + tax",
+      "product_type": "download",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "soul-purpose"
+      ],
+      "image": "https://solepathinstitute.org/wp-content/uploads/2026/09/SolePath_Braid_isolated_image.png"
+    },
+    {
+      "title": "Living The Tao: Connection, Balance, And Flow",
+      "url": "https://insighttimer.com/meditation-courses/living-the-tao-connection-balance-and-flow",
+      "description": "A five-day Insight Timer course on bringing the three Taoist themes of connection, balance and flow into daily life.",
+      "price": "Included in Member Plus ($59.99 USD a year)",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "ancient-wisdom",
+        "meditation"
+      ],
+      "image": "https://m.media-amazon.com/images/P/198797574X.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "The Tao And The Art Of Living Well",
+      "url": "https://insighttimer.com/meditation-courses/the-tao-and-the-art-of-living-well_1",
+      "description": "A three-day Insight Timer course drawing on the Tao for a simpler, more balanced way of living.",
+      "price": "Included in Member Plus ($59.99 USD a year)",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "ancient-wisdom",
+        "meditation"
+      ],
+      "image": "https://www.innerwisdomhub.org/wp-content/uploads/2024/05/Debra-Ford.png"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Dr. Debra Ford on Insight Timer",
+      "url": "https://insighttimer.com/debraford",
+      "description": "Guided meditations, morning affirmations and short talks on the Tao and SolePath, including her Daily Pulse morning ritual. The single tracks are free to hear.",
+      "featured": true,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation",
+        "ancient-wisdom"
+      ],
+      "image": "https://www.innerwisdomhub.org/wp-content/uploads/2024/05/Debra-Ford.png"
+    }
+  ],
+  "sprint": {
+    "hub": "insight-timer",
+    "rank": 60,
+    "insight_timer_url": "https://insighttimer.com/debraford",
+    "tier_evidence": "Insight Timer 10.3k (profile, 31 Oct 2026); YouTube @Debra_Ford 6 subscribers (channel page, no videos); no Instagram, Facebook, X or TikTok linked from her site; the SolePathCommunity channel (110 subscribers) belongs to the institute and is not counted → ~10.3k total → local_hero",
+    "email": "yes",
+    "email_source": "https://debraford.ca/",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 16 source(s)",
+    "flags": [
+      "Name kept as 'Dr. Debra Ford', as she presents herself everywhere; the doctorate is in metaphysical science (MSc.D) from a non-medical, ministry-type body, so a human may prefer plain 'Debra Ford'.",
+      "Email me@debraford.ca is Cloudflare-obfuscated on her home page and was decoded (XOR) as the brief allows.",
+      "The videos come from the SolePathCommunity channel (the institute's), not a personal channel; descriptions are in the first person and match her teaching, but she was not seen on screen.",
+      "The second photo is a sepia, sketch-style treatment of a headshot from the SolePath Institute site; the first is a plain faculty headshot. Same person.",
+      "Amazon: ASINs taken from amazon.com search results under her name, because amazon.com /dp/ pages returned 500 to WebFetch; several are Kindle ASINs (B0...). She has 30+ titles on Amazon; 10 chosen.",
+      "Possible related listings: John Ford and Rev. Deneen Kendall are on the Academy of Inner Wisdom faculty, and Deneen runs Butterfly Affect (energy clearing).",
+      "The SolePath Foundations Program page on the Academy site returns 'not found', so it is not listed as an offering (the book is).",
+      "Insight Timer bio could only be partly quoted by WebFetch; bio check relied mainly on her own site pages."
+    ],
+    "left_out": [
+      "In the Feng Shui Zone - Good Health, Great Relationships, Abundant Prosperity (health in the subtitle).",
+      "The Tao and SoleHealing and SoleHealing Kids Tapping (healing framing).",
+      "Insight Timer track Relaxation And Healing (described as removing dis-ease and detoxing) and similar; tracks are covered only by the profile link.",
+      "Children's books (Curious Cousins, Unique Child series) and other SolePath titles: kept the list at 10; mentioned in the bio.",
+      "YouTube: course trailers under 2 minutes, testimonial videos by students, The Butterfly Cafe Ep. 1 (shared conversation on Deneen's channel).",
+      "Butterfly Affect space-clearing services: run by Deneen, not Debra.",
+      "SolePath Measuring ($147 CAD, an energetic reading from a headshot): left out as a borderline claim; Discovery listed instead."
+    ]
+  },
+  "images_final": true
+}
