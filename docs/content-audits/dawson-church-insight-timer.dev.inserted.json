@@ -1,0 +1,23 @@
+{
+  "env": "dev",
+  "healer": null,
+  "rows": [
+    {
+      "table": "free_resources",
+      "id": "5c2cfe7a-ce01-47c5-92cb-b1eb0e235bd3",
+      "slug": "dawson-church-on-insight-timer",
+      "title": "Dawson Church on Insight Timer"
+    }
+  ],
+  "at": "2026-10-31T16:08:19.211Z",
+  "healer_update": {
+    "id": 65,
+    "before": {
+      "image_urls": [
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqOp1TGoNmH68SxCjq8_5_yh5gOaUrsrzrhyKEEh3yeA&s=10",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeypeSVS2xtuYQgjlDMuOCk6axkmUZwgjU3ePQW5cO-w&s=10",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSA_v6DZpdjluRII2zL0T-6znjDQQvqjtW1IwaTzVSKiA&s=10"
+      ]
+    }
+  }
+}

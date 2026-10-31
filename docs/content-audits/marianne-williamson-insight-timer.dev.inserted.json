@@ -1,0 +1,23 @@
+{
+  "env": "dev",
+  "healer": null,
+  "rows": [
+    {
+      "table": "free_resources",
+      "id": "4eaed738-a39f-4226-96d4-f36018a48cb9",
+      "slug": "marianne-williamson-on-insight-timer",
+      "title": "Marianne Williamson on Insight Timer"
+    }
+  ],
+  "at": "2026-10-31T16:08:44.521Z",
+  "healer_update": {
+    "id": 99,
+    "before": {
+      "image_urls": [
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqHoRje_ddVIAGPJZSdvm8chBpmcnMVdQlDW_T-OsGfw&s=10",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTywx-jSFSod1DgnJaOHV_XPXY4kICCpmvxkPMeJDWFvQ&s=10",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiJkvFo5-Qz2G-VqAgycWZWKAbSRVG6KufMnVgUNtyiw&s=10"
+      ]
+    }
+  }
+}

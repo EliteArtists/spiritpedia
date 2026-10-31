@@ -1,0 +1,23 @@
+{
+  "env": "dev",
+  "healer": null,
+  "rows": [
+    {
+      "table": "free_resources",
+      "id": "e5ca7621-c084-44ff-adcf-acadaebc48f8",
+      "slug": "jack-kornfield-on-insight-timer",
+      "title": "Jack Kornfield on Insight Timer"
+    }
+  ],
+  "at": "2026-10-31T16:08:32.510Z",
+  "healer_update": {
+    "id": 71,
+    "before": {
+      "image_urls": [
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7nbHpR7TawzgbJzgNwzpKQNbqmAFTU59UMYpIp7h0Bg&s=10",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4oCUFBK0oMETQg0G-o5ElQMfo5_HZK8Fy2iIGxSTq_g&s=10",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1uKhpFDS3_-nXCbId8SDh4maAet9UbgQnNx3-4E-MNA&s=10"
+      ]
+    }
+  }
+}

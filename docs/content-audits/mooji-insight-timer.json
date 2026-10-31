@@ -1,0 +1,27 @@
+{
+  "healer": {
+    "healer_slug": "mooji"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [],
+  "free_resources": [
+    {
+      "title": "Mooji on Insight Timer",
+      "url": "https://insighttimer.com/mooji",
+      "description": "Mooji's free Insight Timer profile, where their guided meditations and talks can be heard at no cost in the app or a web browser, and where listeners can follow new recordings.",
+      "featured": false,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation",
+        "non-duality",
+        "consciousness"
+      ],
+      "image": "https://cdn.mooji.org/wp-content/uploads/2024/08/2e51a827afb306859c184ddb40a8d3b3.jpg"
+    }
+  ],
+  "notes": [
+    "Insight Timer hub (README §18.7), owner approved 31 Oct 2026: profile link only, no tracks copied. 85.5k Followers (read 31 Oct 2026)."
+  ],
+  "images_final": true
+}

@@ -1,0 +1,33 @@
+{
+  "healer": {
+    "healer_slug": "thich-nhat-hanh",
+    "update": {
+      "image_urls": [
+        "https://images.squarespace-cdn.com/content/v1/563ce107e4b088e6d742e65d/1611702788565-3712Y95HIXERN76QYE5F/RO4_1263.jpg",
+        "https://www.parallax.org/wp-content/uploads/2021/06/MB87-01-Thich-Nhat-Hanh-Calligraphy-Exhibit-by-Ashley-Kolodner.jpg"
+      ]
+    }
+  },
+  "videos": [],
+  "books": [],
+  "courses": [],
+  "free_resources": [
+    {
+      "title": "Thich Nhat Hanh on Insight Timer",
+      "url": "https://insighttimer.com/thichnhathanh",
+      "description": "The official Insight Timer account for Thich Nhat Hanh, sharing recorded talks and guided practices from his mindfulness teaching. Everything there can be heard free in the app or a web browser.",
+      "featured": false,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation",
+        "mindfulness",
+        "spirituality"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/563ce107e4b088e6d742e65d/1611702788565-3712Y95HIXERN76QYE5F/RO4_1263.jpg"
+    }
+  ],
+  "notes": [
+    "Insight Timer hub (README §18.7), owner approved 31 Oct 2026: profile link only, no tracks copied. 131.7k Followers (read 31 Oct 2026). Legacy account: free-resource link only, no \"Teaches on\"."
+  ],
+  "images_final": true
+}

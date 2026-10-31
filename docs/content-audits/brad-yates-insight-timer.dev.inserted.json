@@ -1,0 +1,23 @@
+{
+  "env": "dev",
+  "healer": null,
+  "rows": [
+    {
+      "table": "free_resources",
+      "id": "30c08516-4258-43dd-aec3-3fcc7c4cfdd5",
+      "slug": "brad-yates-on-insight-timer",
+      "title": "Brad Yates on Insight Timer"
+    }
+  ],
+  "at": "2026-10-31T16:08:07.616Z",
+  "healer_update": {
+    "id": 36,
+    "before": {
+      "image_urls": [
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbIAyPap6udLNm6ASK3oE9LEeJNd5iAsfBszCoRi-iLw&s=10",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTz_DmRo5NeoinJwfkNmAfvJ2ci7mfLJLIs8To4zwPNkw&s=10",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtsa1Aw03w6yeFaGBV9o5n8l4KiGi1MISzlU--In1yUg&s=10"
+      ]
+    }
+  }
+}

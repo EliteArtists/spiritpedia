@@ -1,0 +1,23 @@
+{
+  "env": "dev",
+  "healer": null,
+  "rows": [
+    {
+      "table": "free_resources",
+      "id": "4721f0b1-3214-41cf-a55a-473714e19d6c",
+      "slug": "sharon-salzberg-on-insight-timer",
+      "title": "Sharon Salzberg on Insight Timer"
+    }
+  ],
+  "at": "2026-10-31T16:09:13.236Z",
+  "healer_update": {
+    "id": 72,
+    "before": {
+      "image_urls": [
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtTVyrDMn41E-xF98G6lBKbgP7Zwlly8DUERP3E3flxQ&s=10",
+        "https://images.squarespace-cdn.com/content/v1/64b70893578d516c89b7acb3/69aaeac4-c259-4cf6-9699-12997871c1ae/Sharon4.jpg",
+        "https://images.squarespace-cdn.com/content/v1/64b70893578d516c89b7acb3/5fe100d7-16e6-4912-b50f-bf83761c559c/Sharon8.jpg"
+      ]
+    }
+  }
+}

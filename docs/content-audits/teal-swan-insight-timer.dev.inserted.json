@@ -1,0 +1,23 @@
+{
+  "env": "dev",
+  "healer": null,
+  "rows": [
+    {
+      "table": "free_resources",
+      "id": "f70c162a-40a5-4346-92e2-2e899726d640",
+      "slug": "teal-swan-on-insight-timer",
+      "title": "Teal Swan on Insight Timer"
+    }
+  ],
+  "at": "2026-10-31T16:09:20.549Z",
+  "healer_update": {
+    "id": 34,
+    "before": {
+      "image_urls": [
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLMJplU1hjz2y1SX6mkpsZH8ZuL0bfPMJu_zBgG5y6VQ&s=10",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSf71zP9EP33Bo3lGJjAEGhIon_fsOX9IErm2AtuUOV5Q&s=10",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVTNbyOLnbom4viFYd38K4kZ9e4fY_2BFKjXB4Dw4beA&s=10"
+      ]
+    }
+  }
+}

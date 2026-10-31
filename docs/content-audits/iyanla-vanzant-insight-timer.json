@@ -1,0 +1,32 @@
+{
+  "healer": {
+    "healer_slug": "iyanla-vanzant",
+    "update": {
+      "image_urls": [
+        "https://iyanla.com/wp-content/uploads/2026/01/order-your-copy-today.jpg"
+      ]
+    }
+  },
+  "videos": [],
+  "books": [],
+  "courses": [],
+  "free_resources": [
+    {
+      "title": "Iyanla Vanzant on Insight Timer",
+      "url": "https://insighttimer.com/iyanla",
+      "description": "Iyanla Vanzant's free Insight Timer profile, where their guided meditations and talks can be heard at no cost in the app or a web browser, and where listeners can follow new recordings.",
+      "featured": false,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation",
+        "self-healing",
+        "spirituality"
+      ],
+      "image": "https://iyanla.com/wp-content/uploads/2026/01/order-your-copy-today.jpg"
+    }
+  ],
+  "notes": [
+    "Insight Timer hub (README §18.7), owner approved 31 Oct 2026: profile link only, no tracks copied. 387 Followers (read 31 Oct 2026)."
+  ],
+  "images_final": true
+}

@@ -1,0 +1,23 @@
+{
+  "env": "dev",
+  "healer": null,
+  "rows": [
+    {
+      "table": "free_resources",
+      "id": "0e8d275a-909d-4439-8f27-33601a64f260",
+      "slug": "byron-katie-on-insight-timer",
+      "title": "Byron Katie on Insight Timer"
+    }
+  ],
+  "at": "2026-10-31T16:08:12.148Z",
+  "healer_update": {
+    "id": 58,
+    "before": {
+      "image_urls": [
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ05hPIF0BB8YQEmBpmXeg-DOhPlZ8rAE2JtB8CKvAuIw&s=10",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnhx5-RGa8crtOMNVG7RSmVH7qm8VOx5nfmy7kIneNcg&s=10",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtdCNVM_rO2j6Uo_Fa8G65LXQbVYgGkK_9of_oZt4JBw&s=10"
+      ]
+    }
+  }
+}

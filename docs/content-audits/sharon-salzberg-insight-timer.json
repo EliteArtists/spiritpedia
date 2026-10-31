@@ -1,0 +1,33 @@
+{
+  "healer": {
+    "healer_slug": "sharon-salzberg",
+    "update": {
+      "image_urls": [
+        "https://images.squarespace-cdn.com/content/v1/64b70893578d516c89b7acb3/69aaeac4-c259-4cf6-9699-12997871c1ae/Sharon4.jpg",
+        "https://images.squarespace-cdn.com/content/v1/64b70893578d516c89b7acb3/5fe100d7-16e6-4912-b50f-bf83761c559c/Sharon8.jpg"
+      ]
+    }
+  },
+  "videos": [],
+  "books": [],
+  "courses": [],
+  "free_resources": [
+    {
+      "title": "Sharon Salzberg on Insight Timer",
+      "url": "https://insighttimer.com/sharonsalzberg",
+      "description": "Sharon Salzberg's free Insight Timer profile, where their guided meditations and talks can be heard at no cost in the app or a web browser, and where listeners can follow new recordings.",
+      "featured": false,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation",
+        "mindfulness",
+        "self-healing"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/64b70893578d516c89b7acb3/69aaeac4-c259-4cf6-9699-12997871c1ae/Sharon4.jpg"
+    }
+  ],
+  "notes": [
+    "Insight Timer hub (README §18.7), owner approved 31 Oct 2026: profile link only, no tracks copied. 97.4k Followers (read 31 Oct 2026)."
+  ],
+  "images_final": true
+}

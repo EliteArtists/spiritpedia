@@ -1,0 +1,23 @@
+{
+  "env": "dev",
+  "healer": null,
+  "rows": [
+    {
+      "table": "free_resources",
+      "id": "6107afcb-276a-4310-adb2-0cebec77814a",
+      "slug": "gangaji-on-insight-timer",
+      "title": "Gangaji on Insight Timer"
+    }
+  ],
+  "at": "2026-10-31T16:08:25.303Z",
+  "healer_update": {
+    "id": 59,
+    "before": {
+      "image_urls": [
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfp8jJ9asW9Sk8VPaWxgIYgT48ig8VRtS04P7ogpjsMA&s=10",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfa7sfgmz2Tf9BBU9DCZA9NWAlEifofyUpJIio601QYQ&s=10",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPKr_9j1iPTofO1ocYMXRJcU5NcPzo_InZ4xjOWVLUag&s=10"
+      ]
+    }
+  }
+}

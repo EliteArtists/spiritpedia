@@ -257,6 +257,9 @@ These have held throughout and the project owner expects them.
 14. **Email wording is final once approved:** change
     `docs/email-copy-2026-10-21.md` and `web/utils/emailTemplates.js` together,
     word for word.
+15. **Reports as files** (owner, 31 Oct 2026): every report given to the
+    owner is also saved as `docs/reports/YYYY-MM-DD-<job>.md`, and
+    `docs/reports/latest.md` is a copy of the newest one.
 
 ---
 
@@ -2451,6 +2454,11 @@ Turning a Channel into a School is a plan with `"update": { "entity_type":
   (recorded in the plan). Management or agent addresses count; never guess
   or construct one. No email and no contact form: skip the person. Ascended
   Masters and estates are exempt.
+- **Bios must be original** (owner, 31 Oct 2026): written in our own words
+  from research, never copied from a hub (Insight Timer, The Shift Network),
+  a teacher's own site or anywhere else. Check: no run of 8 or more words
+  matching the teacher's hub profile or own site. The same goes for item
+  descriptions.
 - Courses: `affiliate_status` `none`; free resources: `is_featured` only when
   the plan says `featured: true`. `is_active` keeps its default (true). A
   dated offering gets `start_date`/`end_date` so it drops off when it's over.

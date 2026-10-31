@@ -1,0 +1,46 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 292,
+    "healer_slug": "insight-timer"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "31560af6-0b25-4391-aa87-54a7d3f63710",
+      "slug": "member-plus",
+      "title": "Member Plus"
+    },
+    {
+      "table": "courses",
+      "id": "f60551a6-34f5-426c-a974-af060dfb1557",
+      "slug": "insight-timer-retreats",
+      "title": "Insight Timer Retreats"
+    },
+    {
+      "table": "free_resources",
+      "id": "ea9db2d0-84b5-4866-87a6-3b244a2c7055",
+      "slug": "free-guided-meditation-library",
+      "title": "Free Guided Meditation Library"
+    },
+    {
+      "table": "free_resources",
+      "id": "68e49ff3-a3c3-433e-8d8c-d51c6376828f",
+      "slug": "meditation-timer",
+      "title": "Meditation Timer"
+    },
+    {
+      "table": "free_resources",
+      "id": "d9b50035-289d-4393-bb45-64e8c536c774",
+      "slug": "free-live-sessions",
+      "title": "Free Live Sessions"
+    },
+    {
+      "table": "free_resources",
+      "id": "af0a81ca-0e27-4345-a3e6-eb5b416661e9",
+      "slug": "meditation-techniques-directory",
+      "title": "Meditation Techniques Directory"
+    }
+  ],
+  "at": "2026-10-31T16:06:28.844Z"
+}

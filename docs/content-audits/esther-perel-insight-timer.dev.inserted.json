@@ -1,0 +1,23 @@
+{
+  "env": "dev",
+  "healer": null,
+  "rows": [
+    {
+      "table": "free_resources",
+      "id": "f2bd505a-f371-4405-9fe3-499d146e85f0",
+      "slug": "esther-perel-on-insight-timer",
+      "title": "Esther Perel on Insight Timer"
+    }
+  ],
+  "at": "2026-10-31T16:08:21.313Z",
+  "healer_update": {
+    "id": 108,
+    "before": {
+      "image_urls": [
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRl4SQyKHNREn5AAI-2r-4ZYBDya1o5npis27hu-zZJkw&s=10",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTc7Fsw3oZlcMVfVnqc2Mi51xO66Blwywt1ttratSxwjQ&s=10",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyXIL9_BLXp9xbvOK0MOwxyngs4kbAVFqgSU5EBAzE_Q&s=10"
+      ]
+    }
+  }
+}

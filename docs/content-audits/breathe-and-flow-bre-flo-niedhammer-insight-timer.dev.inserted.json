@@ -1,0 +1,23 @@
+{
+  "env": "dev",
+  "healer": null,
+  "rows": [
+    {
+      "table": "free_resources",
+      "id": "7f7b911e-d5c4-4bed-b156-662977f84672",
+      "slug": "breathe-and-flow-on-insight-timer",
+      "title": "Breathe and Flow on Insight Timer"
+    }
+  ],
+  "at": "2026-10-31T16:08:09.985Z",
+  "healer_update": {
+    "id": 31,
+    "before": {
+      "image_urls": [
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4_LrhdQ63S0tZpaeEkROMf1D4PW-ibYlEvMybyjY75A&s=10",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7eGtj0ik6RLmLtvhHx7I9qoEAM_zuuvnLRwwZoZ_a6Q&s=10",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRApj26-9QXwgnzO9SxHlsNMRC-5z4M7UCCLUeaTCxQdQ&s=10"
+      ]
+    }
+  }
+}

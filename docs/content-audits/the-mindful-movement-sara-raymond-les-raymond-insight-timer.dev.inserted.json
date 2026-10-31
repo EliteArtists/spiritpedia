@@ -1,0 +1,23 @@
+{
+  "env": "dev",
+  "healer": null,
+  "rows": [
+    {
+      "table": "free_resources",
+      "id": "1d57e469-c64b-4299-a645-acd81e3a8a8a",
+      "slug": "the-mindful-movement-on-insight-timer",
+      "title": "The Mindful Movement on Insight Timer"
+    }
+  ],
+  "at": "2026-10-31T16:09:22.756Z",
+  "healer_update": {
+    "id": 32,
+    "before": {
+      "image_urls": [
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdZ15CyE_fGHwDbrPOgAnR4q0Pl3j_yqMv0hRxswu-QA&s=10",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQHFkdySjdoA9cDDLXvB1ELNC8b-FEOzCVPoqOpCJu7A&s=10",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHKFuPk24bhZ75-9dqlNFiEZUPE5PBQhn6_D_8EZAY4g&s=10"
+      ]
+    }
+  }
+}

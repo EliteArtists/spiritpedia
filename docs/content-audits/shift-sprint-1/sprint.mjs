@@ -24,7 +24,7 @@ for (const f of fs.readdirSync(AUDITS)) {
   if (!f.endsWith('.json') || f.includes('.inserted') || f.includes('rolled-back')) continue;
   try {
     const p = JSON.parse(fs.readFileSync(`${AUDITS}/${f}`, 'utf8'));
-    if (p.sprint?.rank) plans[p.sprint.rank] = { file: `${AUDITS}/${f}`, plan: p };
+    if (p.sprint?.rank && (p.sprint.hub || 'the-shift-network') === 'the-shift-network') plans[p.sprint.rank] = { file: `${AUDITS}/${f}`, plan: p };
   } catch { /* not a plan */ }
 }
 const skipped = {};

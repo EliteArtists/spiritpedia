@@ -12,7 +12,7 @@ for f in sorted(glob.glob('docs/content-audits/*.json')):
     try: d = json.load(open(f))
     except Exception: continue
     s = d.get('sprint') if isinstance(d, dict) else None
-    if not s or not (lo <= s.get('rank', 0) <= hi): continue
+    if not s or s.get('hub', 'the-shift-network') != 'the-shift-network' or not (lo <= s.get('rank', 0) <= hi): continue
     before = len(d['courses'])
     d['courses'] = [c for c in d['courses'] if not (c.get('start_date') and c['start_date'] < TODAY)]
     dropped = before - len(d['courses'])

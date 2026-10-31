@@ -1,0 +1,23 @@
+{
+  "env": "dev",
+  "healer": null,
+  "rows": [
+    {
+      "table": "free_resources",
+      "id": "ac5af2ee-b68c-457d-af46-9f4bab7e48f5",
+      "slug": "sadhguru-on-insight-timer",
+      "title": "Sadhguru on Insight Timer"
+    }
+  ],
+  "at": "2026-10-31T16:09:03.742Z",
+  "healer_update": {
+    "id": 55,
+    "before": {
+      "image_urls": [
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRi3_MuFpNJiDjeeUeQq5Wlo4sRJ_rwwimKOV-OXn6P3Q&s=10",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVKITGa-dIoRonp5H-4q95XtNu8qIdYgxi2fcTrAa0GQ&s",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXKJz-v-ihV880rbTsoxjFyPImJHYsJF4gVQiFhvIbUQ&s=10"
+      ]
+    }
+  }
+}

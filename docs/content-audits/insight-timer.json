@@ -1,0 +1,117 @@
+{
+  "healer": {
+    "healer_slug": "insight-timer",
+    "create": {
+      "name": "Insight Timer",
+      "bio": "Insight Timer is a free meditation app and audio library used by around 30 million people. It began as a simple meditation timer released on Apple's App Store in 2009, and was later taken over by the Australian brothers Christopher and Nicholas Plowman, who built it into a platform run by Insight Network Inc., with Christopher as chief executive.\n\nIts library holds more than 300,000 free guided meditations, talks and music tracks from around 20,000 teachers working in over 50 languages, from mindfulness, yoga nidra and breathwork to Buddhist and non-dual teaching, chanting and sound. Alongside the free library there are daily live sessions, multi-day courses and in-person retreats. Member Plus, at US$59.99 a year, adds the courses, offline listening and higher-quality audio and helps keep the library free, and listeners can also donate to teachers directly. Each teacher has a profile page on the app and website, where their recordings can be heard for free.",
+      "tier": "superhero",
+      "entity_type": "organisation",
+      "availability": "worldwide",
+      "founded_year": 2009,
+      "subjects": [
+        "meditation",
+        "mindfulness",
+        "spirituality"
+      ],
+      "website_url": "https://insighttimer.com/",
+      "booking_url": "https://insighttimer.com/meditation-teachers",
+      "youtube_url": "https://www.youtube.com/@InsightTimerApp",
+      "instagram_url": "https://www.instagram.com/insighttimer/",
+      "facebook_url": "https://www.facebook.com/insighttimer",
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": null,
+      "image_urls": [
+        "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/41/26/da/4126da17-58a4-4f0f-ab56-2fd40fe950d8/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.png"
+      ]
+    }
+  },
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Member Plus",
+      "url": "https://insighttimer.com/member-plus",
+      "description": "Insight Timer's paid membership. It opens the full library of multi-day courses from the app's teachers and adds offline listening and higher-quality audio. A seven-day free trial comes first, and the fee helps keep the main library free.",
+      "price": "$59.99 USD a year",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/41/26/da/4126da17-58a4-4f0f-ab56-2fd40fe950d8/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.png"
+    },
+    {
+      "title": "Insight Timer Retreats",
+      "url": "https://insighttimer.com/retreats",
+      "description": "In-person retreats led by Insight Timer teachers, listed on the app's retreats pages by theme and country. Each retreat is run by its teacher, with its own dates, venue and price.",
+      "price": "From $247 USD",
+      "product_type": "retreat",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "yoga",
+        "spirituality"
+      ],
+      "image": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/41/26/da/4126da17-58a4-4f0f-ab56-2fd40fe950d8/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.png"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Free Guided Meditation Library",
+      "url": "https://insighttimer.com/guided-meditations",
+      "description": "The heart of Insight Timer: hundreds of thousands of free guided meditations, talks and music tracks, searchable by teacher, length and practice. No subscription is needed to listen.",
+      "featured": true,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/41/26/da/4126da17-58a4-4f0f-ab56-2fd40fe950d8/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.png"
+    },
+    {
+      "title": "Meditation Timer",
+      "url": "https://insighttimer.com/meditation-timer",
+      "description": "The free timer the app is named after, for silent sitting. Choose a length, a starting and ending bell and optional interval bells, and sit with or without background sound.",
+      "featured": false,
+      "resource_type": "practice",
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/41/26/da/4126da17-58a4-4f0f-ab56-2fd40fe950d8/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.png"
+    },
+    {
+      "title": "Free Live Sessions",
+      "url": "https://insighttimer.com/live",
+      "description": "Live group sessions streamed through the day by Insight Timer teachers, from meditation and yoga to talks and question-and-answer sessions. Most are free to join.",
+      "featured": false,
+      "resource_type": "workshop",
+      "subjects": [
+        "meditation",
+        "yoga"
+      ],
+      "image": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/41/26/da/4126da17-58a4-4f0f-ab56-2fd40fe950d8/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.png"
+    },
+    {
+      "title": "Meditation Techniques Directory",
+      "url": "https://insighttimer.com/techniques",
+      "description": "A guide to dozens of practices, from breathwork and chanting to walking meditation and self-inquiry, each with how-to steps and links to guided recordings by the app's teachers.",
+      "featured": false,
+      "resource_type": "practice",
+      "subjects": [
+        "meditation",
+        "breathwork"
+      ],
+      "image": "https://insighttimer.com/image/insight-timer-logo-meta.png"
+    }
+  ],
+  "notes": [
+    "Hub (README §18.7), owner approved 31 Oct 2026: Organisation, Superhero under editorial stature (readable followers ~0.96M: Instagram 412K, Facebook 485,745, own Insight Timer profile 63.5k; 30M members, 449K App Store ratings at 4.9).",
+    "No email published; contact form https://insighttimer.com/media-enquiries. Logo is the App Store icon.",
+    "The pipeline is insight-timer-faculty.json; existing teachers are linked by insight-timer-teachers.json (link-hub.mjs) with a '<Name> on Insight Timer' free resource each."
+  ],
+  "images_final": true
+}

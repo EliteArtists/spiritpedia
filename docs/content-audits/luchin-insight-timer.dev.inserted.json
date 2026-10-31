@@ -1,0 +1,23 @@
+{
+  "env": "dev",
+  "healer": null,
+  "rows": [
+    {
+      "table": "free_resources",
+      "id": "4539040b-4000-4108-8568-a9e58f224583",
+      "slug": "luchin-on-insight-timer",
+      "title": "LuChin on Insight Timer"
+    }
+  ],
+  "at": "2026-10-31T16:08:42.929Z",
+  "healer_update": {
+    "id": 10,
+    "before": {
+      "image_urls": [
+        "https://scontent.flis6-1.fna.fbcdn.net/v/t39.30808-6/426391480_344500591902751_5923403474813372211_n.jpg?stp=dst-jpg_tt6&cstp=mx960x960&ctp=s960x960&_nc_cat=102&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=wVEcOKDg-w4Q7kNvwF7gBUl&_nc_oc=AdrhHl-cl2F4Yn2sAf-2z0VhWViOTW4VC-RNXFdU6nZGdzrPrbZrkpvvXksjrugIwb5lTmMlTuhDApDuy2OoN2PV&_nc_zt=23&_nc_ht=scontent.flis6-1.fna&_nc_gid=E38hDxs8pm1XKOdsugUHUA&_nc_ss=7b2a8&oh=00_Af9Mzf8azjecssFsTGa3Ksb-bjZ1lQrtPwqsUuJffRKwcA&oe=6A3A11C4",
+        "https://i.imgur.com/XYCRHGs.png",
+        "https://users.insighttimer.com/s1u8H3T2b8M3H6U3p5d9u9U3D9s5V2w4S8n0k4V6N0K1J3F3T0a9p3r6q4e0g4C9t0D4U8H8H6Q4u2M9E0x3A9Z3h4Z5U2Y3r2y2/pictures/square_medium.jpeg"
+      ]
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "env": "dev",
+  "healer": null,
+  "rows": [
+    {
+      "table": "free_resources",
+      "id": "4705333a-482f-4898-8eef-0caa21b26dea",
+      "slug": "thich-nhat-hanh-on-insight-timer",
+      "title": "Thich Nhat Hanh on Insight Timer"
+    }
+  ],
+  "at": "2026-10-31T16:09:25.075Z",
+  "healer_update": {
+    "id": 130,
+    "before": {
+      "image_urls": [
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRp6dyX1DK3g5xt_9mAd5VyGjwqd_b_y9CWCChunxIuNXt2d7rNeaYKPTOR&s=10",
+        "https://images.squarespace-cdn.com/content/v1/563ce107e4b088e6d742e65d/1611702788565-3712Y95HIXERN76QYE5F/RO4_1263.jpg",
+        "https://www.parallax.org/wp-content/uploads/2021/06/MB87-01-Thich-Nhat-Hanh-Calligraphy-Exhibit-by-Ashley-Kolodner.jpg"
+      ]
+    }
+  }
+}

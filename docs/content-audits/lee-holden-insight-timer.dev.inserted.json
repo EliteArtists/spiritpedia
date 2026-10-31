@@ -1,0 +1,23 @@
+{
+  "env": "dev",
+  "healer": null,
+  "rows": [
+    {
+      "table": "free_resources",
+      "id": "7a150078-b2ab-41d7-83be-c8f71b20355f",
+      "slug": "lee-holden-on-insight-timer",
+      "title": "Lee Holden on Insight Timer"
+    }
+  ],
+  "at": "2026-10-31T16:08:41.468Z",
+  "healer_update": {
+    "id": 39,
+    "before": {
+      "image_urls": [
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIuiHEaiA2rY-y9L1LjEhqFT9iW-A_LhOW7Yc_l4sRww&s=10",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyG5h3vDzI_3U9emELtfm15HPwhN7_jpy11Wv48u6LQw&s=10",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9H-rLFHnQWyPBxjLaVaUmhf-081ySGlhe7pRx-3VqdQ&s=10"
+      ]
+    }
+  }
+}
