@@ -1,0 +1,52 @@
+{
+  "env": "live",
+  "healer": {
+    "id": 375,
+    "healer_slug": "omega-institute"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "03a02112-c120-4d4d-b977-ff8fc5e8d72b",
+      "slug": "omega-workshops-retreats",
+      "title": "Omega Workshops & Retreats"
+    },
+    {
+      "table": "courses",
+      "id": "1f2da1cf-fb54-4842-885f-bdc46dc47588",
+      "slug": "rest-rejuvenation-retreats",
+      "title": "Rest & Rejuvenation Retreats"
+    },
+    {
+      "table": "courses",
+      "id": "4efeeae1-c4e8-4c54-a237-4f09a02015cc",
+      "slug": "omega-online",
+      "title": "Omega Online"
+    },
+    {
+      "table": "courses",
+      "id": "f328e539-015e-400b-b5a2-ec66e44c2d31",
+      "slug": "omega-membership",
+      "title": "Omega Membership"
+    },
+    {
+      "table": "free_resources",
+      "id": "c6ed0540-cdeb-462b-92a8-3934e3d04214",
+      "slug": "omega-resource-library",
+      "title": "Omega Resource Library"
+    },
+    {
+      "table": "free_resources",
+      "id": "ec335fe9-143b-48af-b196-9575855118be",
+      "slug": "mind-spirit-resource-library",
+      "title": "Mind & Spirit Resource Library"
+    },
+    {
+      "table": "free_resources",
+      "id": "743bd0a4-e609-47a0-93ee-1eb735143155",
+      "slug": "mindfulness-at-omega",
+      "title": "Mindfulness at Omega"
+    }
+  ],
+  "at": "2026-10-31T22:12:27.805Z"
+}

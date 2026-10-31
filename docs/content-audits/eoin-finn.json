@@ -4,7 +4,7 @@
     "create": {
       "name": "Eoin Finn",
       "bio": "Eoin Finn is a Canadian yoga teacher, surfer and ocean campaigner who began practising in 1989 and founded Blissology, his own school and style of yoga, in 1999. He read philosophy at Dalhousie University and later studied exercise physiology and anatomy, and his early grounding in Ashtanga Vinyasa still shows in the flowing sequences he teaches. A knee injury from a forceful adjustment in 2000 set him questioning how alignment was usually taught, work that eventually became his crowdfunded book Blissology: Yoga Optimized and its accompanying online course.\n\nHis classes join strong, fluid movement with meditation, yoga philosophy and a recurring theme of quiet time in nature, and lately he has added calisthenics-style strength work and an ocean-inspired movement method he calls Superflow. From his base in Victoria, British Columbia, he runs 200-hour teacher trainings there, in Bali and online, a modular 500-hour track, and yoga and fitness retreats in Bali and Quebec, and he tours studios and festivals across North America. He also hosts an on-demand video library and a podcast. In 2014 he started the EcoKarma project, linking yoga communities with coral reef protection.",
-      "tier": "local_hero",
+      "tier": "luminary",
       "entity_type": "individual",
       "availability": "local_online",
       "city": "Victoria",
@@ -262,7 +262,8 @@
       "Newer book 'Yogic by Nature' is mentioned on event pages but no Amazon listing was found.",
       "Free 'Yoga Honey' sequence download sits behind a form on the teacher-training page with no URL of its own.",
       "TikTok @blissology (61 followers) not clearly his; not linked or counted."
-    ]
+    ],
+    "tier_override": "luminary by published student count (owner, 31 Oct 2026): his site says he has taught more than 300,000 students. Summed followers ~55k would give local_hero."
   },
   "images_final": true
 }

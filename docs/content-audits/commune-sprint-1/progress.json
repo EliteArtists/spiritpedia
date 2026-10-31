@@ -63,7 +63,7 @@
    ],
    "big_name": false,
    "note": null,
-   "status": "dev",
+   "status": "live",
    "plan": "docs/content-audits/schuyler-grant.json",
    "skip_reason": null
   },
@@ -105,7 +105,7 @@
    ],
    "big_name": true,
    "note": "Agape International Spiritual Center founder.",
-   "status": "dev",
+   "status": "live",
    "plan": "docs/content-audits/michael-b-beckwith.json",
    "skip_reason": null
   },
@@ -147,7 +147,7 @@
    ],
    "big_name": false,
    "note": null,
-   "status": "dev",
+   "status": "live",
    "plan": "docs/content-audits/mary-beth-larue.json",
    "skip_reason": null
   },
@@ -162,7 +162,7 @@
    ],
    "big_name": false,
    "note": null,
-   "status": "dev",
+   "status": "live",
    "plan": "docs/content-audits/caley-alyssa.json",
    "skip_reason": null
   },
@@ -185,7 +185,7 @@
    ],
    "big_name": true,
    "note": null,
-   "status": "dev",
+   "status": "live",
    "plan": "docs/content-audits/danielle-laporte.json",
    "skip_reason": null
   },
@@ -200,7 +200,7 @@
    ],
    "big_name": false,
    "note": null,
-   "status": "dev",
+   "status": "live",
    "plan": "docs/content-audits/jennifer-elliott.json",
    "skip_reason": null
   },
@@ -215,7 +215,7 @@
    ],
    "big_name": false,
    "note": null,
-   "status": "dev",
+   "status": "live",
    "plan": "docs/content-audits/clio-manuelian.json",
    "skip_reason": null
   },
@@ -238,7 +238,7 @@
    ],
    "big_name": false,
    "note": null,
-   "status": "dev",
+   "status": "live",
    "plan": "docs/content-audits/chelsey-korus.json",
    "skip_reason": null
   },
@@ -253,7 +253,7 @@
    ],
    "big_name": true,
    "note": null,
-   "status": "dev",
+   "status": "live",
    "plan": "docs/content-audits/light-watkins.json",
    "skip_reason": null
   },
@@ -268,7 +268,7 @@
    ],
    "big_name": false,
    "note": null,
-   "status": "dev",
+   "status": "live",
    "plan": "docs/content-audits/eoin-finn.json",
    "skip_reason": null
   },
@@ -313,9 +313,9 @@
    ],
    "big_name": true,
    "note": "Co-founder of O&O Academy with Krishnaji; one listing for her.",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Left out by the owner after review (31 Oct 2026): her work is almost all joint with Krishnaji and tied to the Oneness Movement; contact only through an organisation form. Plan kept in commune-sprint-1/dropped/."
   },
   {
    "rank": 16,
@@ -336,7 +336,7 @@
    ],
    "big_name": false,
    "note": null,
-   "status": "dev",
+   "status": "live",
    "plan": "docs/content-audits/scott-schwenk.json",
    "skip_reason": null
   },
@@ -351,7 +351,7 @@
    ],
    "big_name": false,
    "note": null,
-   "status": "dev",
+   "status": "live",
    "plan": "docs/content-audits/biet-simkin.json",
    "skip_reason": null
   },
@@ -366,7 +366,7 @@
    ],
    "big_name": false,
    "note": null,
-   "status": "dev",
+   "status": "live",
    "plan": "docs/content-audits/maude-hirst.json",
    "skip_reason": null
   },
@@ -381,7 +381,7 @@
    ],
    "big_name": true,
    "note": "Teaches with his wife Colleen Saidman-Yee: one listing for the couple.",
-   "status": "dev",
+   "status": "live",
    "plan": "docs/content-audits/rodney-yee-colleen-saidman-yee.json",
    "skip_reason": null
   },
@@ -396,7 +396,7 @@
    ],
    "big_name": false,
    "note": "Teaches with DJ Drez (her partner): one listing, Janet Stone.",
-   "status": "dev",
+   "status": "live",
    "plan": "docs/content-audits/janet-stone.json",
    "skip_reason": null
   },
@@ -411,7 +411,7 @@
    ],
    "big_name": false,
    "note": null,
-   "status": "dev",
+   "status": "live",
    "plan": "docs/content-audits/tracee-stanley.json",
    "skip_reason": null
   },
@@ -426,7 +426,7 @@
    ],
    "big_name": false,
    "note": null,
-   "status": "dev",
+   "status": "live",
    "plan": "docs/content-audits/chelsea-jackson-roberts.json",
    "skip_reason": null
   },
@@ -441,7 +441,7 @@
    ],
    "big_name": true,
    "note": null,
-   "status": "dev",
+   "status": "live",
    "plan": "docs/content-audits/lynne-twist.json",
    "skip_reason": null
   },
@@ -456,7 +456,7 @@
    ],
    "big_name": false,
    "note": null,
-   "status": "dev",
+   "status": "live",
    "plan": "docs/content-audits/shelly-tygielski.json",
    "skip_reason": null
   },
@@ -619,5 +619,5 @@
    "skip_reason": null
   }
  ],
- "updated": "2026-10-31T21:54:43.388Z"
+ "updated": "2026-10-31T22:19:59.409Z"
 }

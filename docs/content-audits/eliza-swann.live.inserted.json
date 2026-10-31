@@ -1,0 +1,45 @@
+{
+  "env": "live",
+  "healer": {
+    "id": 380,
+    "healer_slug": "eliza-swann"
+  },
+  "rows": [
+    {
+      "table": "videos",
+      "id": 4630,
+      "slug": "eliza-swann-the-artist-as-alchemist-alchemy-matter-consciousness",
+      "title": "Eliza Swann: The Artist as Alchemist | Alchemy, Matter & Consciousness"
+    },
+    {
+      "table": "videos",
+      "id": 4631,
+      "slug": "the-alchemical-imagination-creativity-as-a-catalyst",
+      "title": "The Alchemical Imagination: Creativity as a Catalyst"
+    },
+    {
+      "table": "videos",
+      "id": 4632,
+      "slug": "episode-354-eliza-swann-the-alchemical-imagination",
+      "title": "Episode 354:  Eliza Swann:  \"The Alchemical Imagination\""
+    },
+    {
+      "table": "books",
+      "id": 1470,
+      "slug": "the-alchemical-imagination",
+      "title": "The Alchemical Imagination: Creativity as Catalyst for Radical Transformation"
+    },
+    {
+      "table": "books",
+      "id": 1471,
+      "slug": "auras-the-anatomy-of-the-aura",
+      "title": "Auras: The Anatomy of the Aura"
+    },
+    {
+      "table": "hub_teachers",
+      "id": "f173c46c-1b99-4bc6-80e3-8f4a182d2935",
+      "title": "eliza-swann teaches at Omega Institute"
+    }
+  ],
+  "at": "2026-10-31T22:14:28.020Z"
+}

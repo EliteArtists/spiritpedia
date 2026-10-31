@@ -1,0 +1,40 @@
+{
+  "env": "live",
+  "healer": {
+    "id": 376,
+    "healer_slug": "commune"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "a5ebf9be-5f46-4444-9528-4c69e7e98672",
+      "slug": "commune-courses",
+      "title": "Commune Courses"
+    },
+    {
+      "table": "courses",
+      "id": "9cd50fea-a9cd-48cc-a1a4-fe9adb8d111e",
+      "slug": "commune-membership",
+      "title": "Commune Membership"
+    },
+    {
+      "table": "courses",
+      "id": "86f0680b-e050-461c-abe3-024cca62df63",
+      "slug": "communiversity",
+      "title": "Communiversity"
+    },
+    {
+      "table": "free_resources",
+      "id": "7bc2ff95-af80-4f9e-b8a8-9118b34a9eb2",
+      "slug": "commune-podcast",
+      "title": "Commune Podcast"
+    },
+    {
+      "table": "free_resources",
+      "id": "8c3f2db5-ca73-4821-8c71-b97ba3284308",
+      "slug": "commune-on-youtube",
+      "title": "Commune on YouTube"
+    }
+  ],
+  "at": "2026-10-31T22:12:30.481Z"
+}

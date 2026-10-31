@@ -1,0 +1,45 @@
+{
+  "env": "live",
+  "healer": {
+    "id": 423,
+    "healer_slug": "chelsey-korus"
+  },
+  "rows": [
+    {
+      "table": "videos",
+      "id": 5000,
+      "slug": "how-to-create-your-own-strength-based-at-home-yoga-practice",
+      "title": "How to Create Your Own Strength-Based, At-Home Yoga Practice"
+    },
+    {
+      "table": "videos",
+      "id": 5001,
+      "slug": "20-minute-practice-explore-the-core-with-chelsey-korus",
+      "title": "20-Minute Practice: Explore the Core with Chelsey Korus"
+    },
+    {
+      "table": "videos",
+      "id": 5002,
+      "slug": "stretchy-yoga-flow-to-build-strength",
+      "title": "Stretchy Yoga Flow to Build Strength"
+    },
+    {
+      "table": "courses",
+      "id": "0d30c575-016c-4eb6-a71f-11d43fdbf9ce",
+      "slug": "flow-with-intention",
+      "title": "Flow with Intention"
+    },
+    {
+      "table": "courses",
+      "id": "c7684f9e-677f-48c7-ac64-b33e119d2915",
+      "slug": "instinctual-movement-for-a-powerful-core",
+      "title": "Instinctual Movement for a Powerful Core"
+    },
+    {
+      "table": "hub_teachers",
+      "id": "22c1493c-598b-477b-b909-3cfdcdc6fee9",
+      "title": "chelsey-korus teaches at Commune"
+    }
+  ],
+  "at": "2026-10-31T22:19:03.827Z"
+}

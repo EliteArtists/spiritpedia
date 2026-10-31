@@ -4,7 +4,7 @@
     "create": {
       "name": "Omega Institute",
       "bio": "Omega Institute for Holistic Studies, a non-profit retreat and learning centre, sits in the Hudson Valley of New York State. It was started in 1977 by the writer and educator Elizabeth Lesser and the physician Stephan Rechtschaffen, with the Sufi teacher Pir Vilayat Inayat Khan, whom Omega also counts as a founder, as its guiding light. The name comes from Teilhard de Chardin's idea of an Omega Point towards which all life is drawn. After a few years in borrowed and rented venues it settled in the early 1980s on a former Yiddish summer camp near Rhinebeck, now a wooded campus of around 250 acres with a lake, a hilltop meditation sanctuary, the Ram Dass Library and a dining hall serving mostly plant-based food.\n\nFrom late spring to autumn the campus hosts weekend and week-long workshops and retreats on six themes: mind and spirit, body and health, creativity, family and relationships, work and leadership, and sustainable living. Guests can book an unstructured Rest & Rejuvenation stay. Omega Online offers live-streamed and on-demand classes, and a free Resource Library holds articles, videos and talks. Two centres run their own programmes: the Women's Leadership Center and the Center for Sustainable Living, whose building cleans the campus's wastewater through its Eco Machine. Membership, from US$120 a year, brings discounts and helps fund scholarships.",
-      "tier": "luminary",
+      "tier": "superhero",
       "entity_type": "organisation",
       "availability": "local_online",
       "city": "Rhinebeck",
@@ -134,7 +134,7 @@
   ],
   "sprint": {
     "tier_evidence": "Facebook 168,777 (og:description, facebook.com/eOmega.org, 31 Oct 2026); Instagram 102K (og:description, @omegainstitute, 31 Oct 2026); YouTube 67.3K (channel header next to @omegainstitute, 893 videos, 31 Oct 2026) → ~338k total → luminary (Shining Star). No X or TikTok linked in the site footer; LinkedIn not counted.",
-    "tier_override": "superhero by editorial stature (owner decides): founded 1977, one of the oldest and largest US holistic learning centres; Omega's history page says up to 23,000 campus visitors a year and more than one million since 1977 (about page), and an online community of 21,000+ learners (Nov 2025 press release). Suggestion only; tier left at the computed luminary.",
+    "tier_override": "superhero by editorial stature (owner confirmed, 31 Oct 2026): founded 1977, one of the oldest and largest US holistic learning centres; Omega's history page says up to 23,000 campus visitors a year and more than one million since 1977, and an online community of 21,000+ learners (Nov 2025 press release). Computed tier from ~338k summed followers was luminary.",
     "email": "yes",
     "email_source": "https://www.eomega.org/support-omega/omega-membership (membership@eomega.org, published twice on the page as the address for membership questions)",
     "contact_form_url": "https://www.eomega.org/contact",
@@ -161,7 +161,7 @@
     ]
   },
   "notes": [
-    "Hub (README §18.7): Organisation, computed tier luminary from ~338k readable followers; editorial-stature override to superhero proposed, owner decides.",
+    "Hub (README §18.7): Organisation, superhero by editorial stature (owner, 31 Oct 2026); computed tier luminary from ~338k readable followers.",
     "Email membership@eomega.org from the membership page; contact form https://www.eomega.org/contact. Logo is the YouTube avatar.",
     "Teacher pipeline: omega-institute-faculty.json / omega-institute-teachers.json (link-hub.mjs), linked 'Teaches on Omega Institute'."
   ],

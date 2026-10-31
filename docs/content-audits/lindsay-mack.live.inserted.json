@@ -1,0 +1,69 @@
+{
+  "env": "live",
+  "healer": {
+    "id": 414,
+    "healer_slug": "lindsay-mack"
+  },
+  "rows": [
+    {
+      "table": "books",
+      "id": 1572,
+      "slug": "tarot-for-the-wild-soul",
+      "title": "Tarot for the Wild Soul"
+    },
+    {
+      "table": "books",
+      "id": 1573,
+      "slug": "soul-tarot-deck",
+      "title": "Soul Tarot: A Deck and Guidebook for Healing and Self-Discovery"
+    },
+    {
+      "table": "courses",
+      "id": "7d9cbfac-4a09-4cec-bafc-66841c381fed",
+      "slug": "the-soul-tarot-membership",
+      "title": "The Soul Tarot Membership"
+    },
+    {
+      "table": "courses",
+      "id": "81c3a1a0-1c57-4f1a-9b1f-70b77215ff25",
+      "slug": "soul-tarot-foundations",
+      "title": "Soul Tarot Foundations"
+    },
+    {
+      "table": "courses",
+      "id": "eb9522da-3fa6-4b50-a05e-c6171bff6cce",
+      "slug": "the-soul-tarot-practitioner-training",
+      "title": "The Soul Tarot Practitioner Training"
+    },
+    {
+      "table": "courses",
+      "id": "d4d4a547-96ee-4a90-8ceb-016e87590ecf",
+      "slug": "soul-tarot-readings-sessions-with-lindsay",
+      "title": "Soul Tarot Readings & Sessions with Lindsay"
+    },
+    {
+      "table": "free_resources",
+      "id": "d54d9c5a-390f-4c68-a69e-7770106efe2f",
+      "slug": "tarot-tending",
+      "title": "Tarot Tending"
+    },
+    {
+      "table": "free_resources",
+      "id": "f4fb1113-f568-449a-afad-fb018bb0faaa",
+      "slug": "the-ultimate-soul-tarot-card-guide",
+      "title": "The Ultimate Soul Tarot Card Guide"
+    },
+    {
+      "table": "free_resources",
+      "id": "c9aa00d5-824d-4bab-989b-6d17bdbcbd30",
+      "slug": "tarot-for-the-wild-soul-podcast",
+      "title": "Tarot for the Wild Soul podcast"
+    },
+    {
+      "table": "hub_teachers",
+      "id": "8263a45a-1905-4976-9849-4a513d046285",
+      "title": "lindsay-mack teaches at Omega Institute"
+    }
+  ],
+  "at": "2026-10-31T22:17:33.329Z"
+}
