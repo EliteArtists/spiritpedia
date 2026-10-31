@@ -99,7 +99,8 @@ The list to pick up from. Each points to where the detail lives.
     - **Organisations stay in Explore These Channels** until there are 5 or
       more; then they get their own shelf (never a one-card shelf).
     - **Megan SolarGlow stays out** (conspiracy content).
-    - **Future hubs** (owner, 31 Oct 2026): DailyOM, Omega Institute,
+    - **Future hubs** (owner, 31 Oct 2026): DailyOM (on hold until Ziff
+      Davis gives written permission), Omega Institute (in progress),
       Commune, Kripalu / Esalen / 1440 Multiversity, Spirit Rock and Insight
       Meditation Society, Mindvalley, Evolving Wisdom and Humanity's Team,
       Findhorn Foundation and Hollyhock, then Gaia (stricter curation). The
@@ -2647,7 +2648,11 @@ As always: dev first, the owner checks on localhost, then live after an OK.
 rather than taking too many teachers from one source too soon. The Shift
 Network and Insight Timer sprints carry on in between these. In order:
 
-1. **DailyOM:** mostly Local Heroes.
+1. **DailyOM:** mostly Local Heroes. **On hold: needs written permission**
+   (owner, 31 Oct 2026). DailyOM is owned by Ziff Davis, whose robots.txt
+   forbids automated scraping, data sets and commercial use without written
+   permission (licensing@ziffdavis.com). Nothing was taken from it. Check
+   every hub's robots.txt and terms before starting.
 2. **Omega Institute:** faculty and retreats.
 3. **Commune** (onecommune.com).
 4. **Kripalu, Esalen, 1440 Multiversity.**
