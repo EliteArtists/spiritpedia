@@ -1,0 +1,212 @@
+{
+  "healer": {
+    "healer_slug": "rachel-boucher",
+    "create": {
+      "name": "Rachel Boucher",
+      "bio": "Rachel Boucher is an intuitive guide, Reiki Master and meditation teacher based in New Haven, Connecticut, who calls herself a life coach for the soul. She holds a psychology degree from Boston University and a master's in education, and over the years has practised yoga, tai chi and Zen meditation. A long period of exhaustion taught her to trust her own body and intuition again, and that lesson now shapes her teaching for sensitive, deeply feeling people.\n\nHer main tools are Yoga Nidra, affirmations, journaling and gentle energy work, often rooted in nature and the turning of the seasons. She records guided practices for Insight Timer, hosts the podcast Held by the Earth alongside a companion series of nature soundscapes, and sells short self-paced Yoga Nidra and journaling courses online. She also offers remote energy clearings, for individuals and for the chakras, and a course on clearing the energy of a home. Rachel writes books of affirmations and reflective poetry and takes many of the nature photographs on her own site. Free introductory classes on intuition and manifesting give newcomers an easy way in.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "worldwide",
+      "city": null,
+      "country": null,
+      "subjects": [
+        "yoga",
+        "reiki",
+        "meditation"
+      ],
+      "website_url": "https://www.rachelroseboucher.com/",
+      "booking_url": "https://www.rachelroseboucher.com/work/",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": "https://www.facebook.com/rachelroseboucher",
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "info@rachelroseboucher.com",
+      "image_urls": [
+        "https://users.insighttimer.com/44twaMDdhQWyyunQwiLSjmicScW2/pictures/square_large.jpeg",
+        "https://www.rachelroseboucher.com/wp-content/uploads/Door-Shot-RB-crop-sm.jpg"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "insight-timer",
+      "role": "instructor"
+    }
+  ],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Guided Reset: Yoga Nidra + Journal Practice",
+      "url": "https://rachel-boucher.thinkific.com/courses/guided-reset",
+      "description": "A short online course of seventeen lessons combining several Yoga Nidra practices, rest-based affirmations and reflective journaling, with a printable companion. It is meant as a pause you can come back to whenever life feels full.",
+      "price": "$33 USD",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga",
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://import.cdn.thinkific.com/2442/Q7Vx9ZRNQyWj1FhuBzCc_Cover%20Guided%20Reset%20-%20Think%202.png"
+    },
+    {
+      "title": "Seasonal Soul Reset: Summer Edition",
+      "url": "https://rachel-boucher.thinkific.com/courses/summer-soul-reset",
+      "description": "A seasonal course of Yoga Nidra, affirmations and journal prompts themed on summer, with a printable workbook. It invites play, pleasure and reconnection with your own rhythms.",
+      "price": "$33 USD",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga",
+        "meditation"
+      ],
+      "image": "https://import.cdn.thinkific.com/2442/jDVKhMjzQUScUFtXzmZC_COVER%20Summer%20-%20Thinkific.png"
+    },
+    {
+      "title": "Nature Yoga Nidra",
+      "url": "https://rachel-boucher.thinkific.com/courses/yoga-nidra-nature",
+      "description": "Four downloadable Yoga Nidra recordings, about eighty minutes in all, using the sounds and imagery of earth, water and wild places to guide you into deep rest.",
+      "price": "$19 USD",
+      "product_type": "download",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga",
+        "meditation"
+      ],
+      "image": "https://import.cdn.thinkific.com/2442/courses/1715546/NYg5y2CTI2M05SkllTAs_Nature%20YN.png"
+    },
+    {
+      "title": "Heal Your House",
+      "url": "https://rachel-boucher.thinkific.com/courses/house-healing",
+      "description": "A short course in energetically clearing a home using visualisation, with two videos, worksheets and three guided recordings that walk you through the steps. A bonus video covers smudging.",
+      "price": "$44 USD",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "energy-medicine"
+      ],
+      "image": "https://files.cdn.thinkific.com/courses/course_card_image_000/003/9981438820741.original.png"
+    },
+    {
+      "title": "Personal Energy Clearing",
+      "url": "https://www.rachelroseboucher.com/individual-energy/",
+      "description": "Thirty minutes of remote energy work focused on what you ask for, with no call needed. Afterwards she emails you a write-up of what she noticed during the session.",
+      "price": "$60 USD",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "energy-medicine",
+        "reiki"
+      ],
+      "image": "http://www.rachelroseboucher.com/wp-content/uploads/Reiki-head-sm.jpg"
+    },
+    {
+      "title": "Individualized Mini Chakra Clearing",
+      "url": "https://www.rachelroseboucher.com/chakras/",
+      "description": "A shorter remote session focused on the chakras, aimed at releasing what feels stuck and bringing a greater sense of balance.",
+      "price": "$35 USD",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "chakra-healing",
+        "energy-medicine"
+      ],
+      "image": "http://www.rachelroseboucher.com/wp-content/uploads/Clear-Your-Chakras.png"
+    },
+    {
+      "title": "Envisioning Tomorrow: A Guided Journaling Series For Collective Change",
+      "url": "https://insighttimer.com/meditation-courses/envisioning-tomorrow-a-guided-journaling-series-for-collective-change",
+      "description": "A seven-day Insight Timer course of short audio sessions with journaling prompts, inviting you to imagine a kinder future for yourself and your community, listen to the earth and connect with your future self.",
+      "price": "Included in Member Plus ($59.99 USD a year)",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "mindfulness",
+        "soul-purpose"
+      ],
+      "image": "https://users.insighttimer.com/44twaMDdhQWyyunQwiLSjmicScW2/pictures/square_large.jpeg"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Rachel Boucher on Insight Timer",
+      "url": "https://insighttimer.com/rachelboucher",
+      "description": "Her Insight Timer page has free affirmation meditations, some with Reiki energy, plus Yoga Nidra and intuition practices. All of the single tracks are free to hear.",
+      "featured": false,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation",
+        "yoga"
+      ],
+      "image": "https://users.insighttimer.com/44twaMDdhQWyyunQwiLSjmicScW2/pictures/square_large.jpeg"
+    },
+    {
+      "title": "Access Your Intuition – free class",
+      "url": "https://www.rachelroseboucher.com/intuition/",
+      "description": "A free seven-day email class with a simple tip or practice each day to help you notice and trust your inner guidance.",
+      "featured": true,
+      "resource_type": "mini_course",
+      "subjects": [
+        "spirituality"
+      ],
+      "image": "https://www.rachelroseboucher.com/wp-content/uploads/Access-Intuition-7-days.png"
+    },
+    {
+      "title": "8 Essential Manifesting Tips – free mini-course",
+      "url": "https://www.rachelroseboucher.com/manifest/",
+      "description": "Eight days of short emails with affirmations, journal prompts and light practices for clarifying what you want and working with the law of attraction.",
+      "featured": false,
+      "resource_type": "mini_course",
+      "subjects": [
+        "manifestation",
+        "law-of-attraction"
+      ],
+      "image": "https://www.rachelroseboucher.com/wp-content/uploads/Manifest-banner-RB.png"
+    },
+    {
+      "title": "Held by the Earth (podcast)",
+      "url": "https://podcasts.apple.com/us/podcast/held-by-the-earth/id1865725374",
+      "description": "Her free podcast of gentle guided audio for sensitive souls, centred on rest and feeling supported by the natural world. A sister show offers real nature soundscapes.",
+      "featured": false,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://is1-ssl.mzstatic.com/image/thumb/Podcasts211/v4/ee/00/01/ee000118-3cf8-7d5f-8066-b68662da4472/mza_16971444973847624397.jpg/1200x1200bf-60.jpg"
+    }
+  ],
+  "sprint": {
+    "hub": "insight-timer",
+    "rank": 115,
+    "insight_timer_url": "https://insighttimer.com/rachelboucher",
+    "tier_evidence": "Insight Timer 2k (profile, 31 Oct 2026); Facebook count not readable (no og:description); no YouTube, Instagram or TikTok found -> ~2k total -> local_hero",
+    "email": "yes",
+    "email_source": "https://www.rachelroseboucher.com/about/",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 19 source(s)",
+    "flags": [
+      "Email is published in spaced-out form ('info @ rachelroseboucher.com, take the spaces out') on her About and Work With Me pages; written here as info@rachelroseboucher.com.",
+      "No videos: no YouTube channel found.",
+      "Lives in New Haven, CT, but all sessions are remote, so availability is worldwide.",
+      "Insight Timer bio could only be partly quoted by WebFetch; bio check relied mainly on her own site pages.",
+      "Thin-ish on social reach (Insight Timer 2k is the only readable count)."
+    ],
+    "left_out": [
+      "Books (Miracle Affirmations, Stillness and Song, I Kept Waiting for Something to Happen): amazon.com /dp/ pages returned 500 via curl and WebFetch, so unconfirmed.",
+      "'Yoga Nidra With Sufi Poets' and 'Seasonal Yoga Nidra' audio sets: their pages sell them for stress relief and better sleep.",
+      "Group Energy Clearing session: page shows a past date (13 July).",
+      "Insight Timer tracks titled 'Health Affirmations' and 'Healing Affirmations' (borderline)."
+    ]
+  },
+  "images_final": true
+}

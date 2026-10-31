@@ -1,0 +1,148 @@
+{
+  "healer": {
+    "healer_slug": "joshua-canter",
+    "create": {
+      "name": "Joshua Canter",
+      "bio": "Joshua Canter is a mindfulness meditation teacher based in Asheville, North Carolina, who has been leading meditation since around 2000. He studied Contemplative Psychology to MA level, specialising in mindfulness, and names Thich Nhat Hanh, Jack Kornfield, Tara Brach, Roshi Joan Halifax, Ram Dass and Amma among the teachers who have shaped his practice. Alongside his teaching he co-founded True Nature Travels, an Asheville company that has organised group retreats around the world for more than twenty years.\n\nHis teaching keeps mindfulness simple and practical: present-moment awareness, breath, loving-kindness and walking practice, drawn from several contemplative traditions. In Asheville he leads a weekly drop-in class and quiet early-morning sessions of seated and walking meditation in the galleries of the Asheville Art Museum, and he has taught in schools, hospitals, hospice settings and workplaces, as well as offering private sessions. His recorded collection Mindfulness Now gathers guided practices including metta, a body scan and the Tibetan phowa set to an ambient soundscape, and his meditations and a six-day course are free to explore on Insight Timer.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local_online",
+      "city": "Asheville",
+      "country": "United States",
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "website_url": "https://www.mindfulasheville.com",
+      "booking_url": "https://www.mindfulasheville.com/offerings",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": "https://www.facebook.com/mindfulnessnowwithjoshuacanter/",
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "Joshua@TrueNatureEducation.com",
+      "image_urls": [
+        "https://users.insighttimer.com/R9C2D3U8p7R2b4t2u9L4t1x6K8A8c5D8Q3D5w6a9w3Z5Q8e6S4X4m7M1S6u0F9A9p1S6P4C8H8a3F2c9N7g1G4t5p7d9g4N7L1U5/pictures/square_large.jpeg"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "insight-timer",
+      "role": "instructor"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Mindfulness Now",
+      "url": "https://www.youtube.com/watch?v=xMZXN_glFII",
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ]
+    },
+    {
+      "title": "Metta",
+      "url": "https://www.youtube.com/watch?v=YHG4A9Exosg",
+      "subjects": [
+        "meditation"
+      ]
+    },
+    {
+      "title": "Phowa",
+      "url": "https://www.youtube.com/watch?v=NnRvVSha0zo",
+      "subjects": [
+        "meditation",
+        "death-the-afterlife"
+      ]
+    },
+    {
+      "title": "Body Scan",
+      "url": "https://www.youtube.com/watch?v=UuYNDQkkuWk",
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ]
+    }
+  ],
+  "books": [],
+  "courses": [
+    {
+      "title": "The Mindfulness Now L.I.F.E. Course",
+      "url": "https://insighttimer.com/meditation-courses/the-mindfulness-now-l-i-f-e-course",
+      "description": "A six-day audio course on Insight Timer introducing Joshua's approach to everyday mindfulness. Each session combines a short teaching with a guided practice.",
+      "price": "Included in Member Plus ($59.99 USD a year)",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ]
+    },
+    {
+      "title": "The Art of Presence: Meditation and Reflection in the Museum",
+      "url": "https://shop.ashevilleart.org/products/the-art-of-presence-meditation-and-reflection-in-the-museum",
+      "description": "Early-morning sessions at the Asheville Art Museum before it opens, beginning with seated meditation and moving into a mostly silent walking practice through the galleries. Prompts invite you to notice your own response to the art; no experience needed.",
+      "price": "$15.00 USD per session (free for museum members)",
+      "product_type": "course",
+      "start_date": "2026-11-07",
+      "end_date": "2026-12-05",
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ]
+    },
+    {
+      "title": "Private mindfulness sessions, classes and workshops",
+      "url": "https://www.mindfulasheville.com/offerings",
+      "description": "One-to-one mindfulness sessions shaped around the individual, plus class series and workshops that Joshua runs for schools, businesses and other groups on request. Get in touch through his site to arrange.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ]
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Joshua Canter on Insight Timer",
+      "url": "https://insighttimer.com/joshuacanter",
+      "description": "Free guided meditations from Joshua, including loving-kindness, breath awareness, a body scan and mantra practice, with instrumental versions too.",
+      "featured": true,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ]
+    }
+  ],
+  "sprint": {
+    "hub": "insight-timer",
+    "rank": 120,
+    "insight_timer_url": "https://insighttimer.com/joshuacanter",
+    "tier_evidence": "Insight Timer 16.1k (profile via WebFetch, 31 Oct 2026); Facebook Mindfulness Now with Joshua Canter 79 followers (og:description, 31 Oct 2026); Instagram and X linked from his site belong to his company True Nature Travels, not counted; no own YouTube channel (only an auto-generated 'Topic' channel) → ~16.2k total → local_hero",
+    "email": "yes",
+    "email_source": "https://www.mindfulasheville.com/contact",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 8 source(s)",
+    "flags": [
+      "Email is on his company domain (TrueNatureEducation.com) but is his named address, published on his own contact page.",
+      "Videos come from the auto-generated 'Joshua Canter - Topic' YouTube channel (distributor uploads of his Mindfulness Now album); there is no channel he runs himself.",
+      "Only one usable photo (Insight Timer profile); the photos on his about page are of his teachers.",
+      "The Art of Presence is a dated series (remaining sessions 7 Nov and 5 Dec 2026); recheck after December.",
+      "Insight Timer bio could only be partly quoted via WebFetch; bio check relied mainly on his own site pages and the museum page.",
+      "Also appears as 'Joshua Cantor' on the Sivananda Bahamas ashram site."
+    ],
+    "left_out": [
+      "Mindful Bhakti Embodied retreat with Luna Ray at Sivananda Ashram, Bahamas (14–19 Oct 2027 on his schedule): no page of its own found for the 2027 dates.",
+      "Retreat Leadership Training at Three Queens Yoga (October dates): already started or passed.",
+      "Weekly Friday class at Asheville Community Yoga: no page of its own; mentioned in the bio only.",
+      "Mindfulness Now CD: an audio album, not a book; no Amazon book listing.",
+      "Om Mani Padme Hum (musical mantra track) and instrumental versions left out as mainly music; True Nature Travels promo video left out."
+    ]
+  }
+}

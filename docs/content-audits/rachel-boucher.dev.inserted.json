@@ -1,0 +1,81 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 391,
+    "healer_slug": "rachel-boucher"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "e3bdcf1e-3860-4636-ad14-94d224ed2748",
+      "slug": "guided-reset-yoga-nidra-journal-practice",
+      "title": "Guided Reset: Yoga Nidra + Journal Practice"
+    },
+    {
+      "table": "courses",
+      "id": "d3f06975-08ee-46cd-8cee-0a97b51446df",
+      "slug": "seasonal-soul-reset-summer-edition",
+      "title": "Seasonal Soul Reset: Summer Edition"
+    },
+    {
+      "table": "courses",
+      "id": "37e15562-d04b-485a-8ac2-086276cb540b",
+      "slug": "nature-yoga-nidra",
+      "title": "Nature Yoga Nidra"
+    },
+    {
+      "table": "courses",
+      "id": "8c5bdd21-fdec-4dfb-a271-e5326764b768",
+      "slug": "heal-your-house",
+      "title": "Heal Your House"
+    },
+    {
+      "table": "courses",
+      "id": "0d0ae168-14e7-44c3-b54c-a25864240885",
+      "slug": "personal-energy-clearing",
+      "title": "Personal Energy Clearing"
+    },
+    {
+      "table": "courses",
+      "id": "5e5aaa39-b39f-4fc5-bcf4-25d47be03695",
+      "slug": "individualized-mini-chakra-clearing",
+      "title": "Individualized Mini Chakra Clearing"
+    },
+    {
+      "table": "courses",
+      "id": "d57858a6-7a35-4740-9832-a08c4bb67f4e",
+      "slug": "envisioning-tomorrow-a-guided-journaling-series-for-collective-change",
+      "title": "Envisioning Tomorrow: A Guided Journaling Series For Collective Change"
+    },
+    {
+      "table": "free_resources",
+      "id": "2dbde1ab-8b7e-49df-9ba8-a7aaf0baaf92",
+      "slug": "rachel-boucher-on-insight-timer",
+      "title": "Rachel Boucher on Insight Timer"
+    },
+    {
+      "table": "free_resources",
+      "id": "cde8482b-449c-4fe1-9895-2f1c694163f1",
+      "slug": "access-your-intuition-free-class",
+      "title": "Access Your Intuition – free class"
+    },
+    {
+      "table": "free_resources",
+      "id": "7c235461-488e-4717-bf84-c79082f1599b",
+      "slug": "8-essential-manifesting-tips-free-mini-course",
+      "title": "8 Essential Manifesting Tips – free mini-course"
+    },
+    {
+      "table": "free_resources",
+      "id": "90fc94d0-fea4-4508-9965-cf43bde64d38",
+      "slug": "held-by-the-earth-podcast",
+      "title": "Held by the Earth (podcast)"
+    },
+    {
+      "table": "hub_teachers",
+      "id": "d098d16f-a4d0-4798-a82b-09032d8d1ca0",
+      "title": "rachel-boucher teaches at Insight Timer"
+    }
+  ],
+  "at": "2026-10-31T18:19:20.063Z"
+}

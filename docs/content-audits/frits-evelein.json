@@ -1,0 +1,209 @@
+{
+  "healer": {
+    "healer_slug": "frits-evelein",
+    "create": {
+      "name": "Frits Evelein",
+      "bio": "Frits Evelein is a Dutch composer, teacher and meditation guide who now lives in western France, south of Poitiers. He trained in music teaching at the Utrecht Conservatory, read musicology and arts management at Utrecht University and later earned a doctorate in psychology. He taught music education at the Rotterdam Conservatory and worked in teacher education in Utrecht, and with Fred Korthagen he co-wrote a book on core reflection for teachers. Alongside that career he spent twenty years as librarian of a large esoteric library in Amsterdam and twenty years as a priest of the Liberal Catholic Church in The Hague.\n\nSince 2008 he has collaborated with Caroline Cory of OMnium Universe, and since 2010 he has composed what he calls Music from Source, sound intended to carry the energy of universal consciousness to the listener. That music runs through everything he offers, from albums and Insight Timer tracks to online courses that pair short spoken introductions with long guided journeys. His courses explore cosmology and the soul: the origin of creation, the Light Body, the Melchizedek teachers and energetic cleansing. Many are available in English as well as Dutch and German.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "worldwide",
+      "city": null,
+      "country": null,
+      "subjects": [
+        "sound-healing",
+        "consciousness",
+        "meditation"
+      ],
+      "website_url": "https://fritsevelein.com/",
+      "booking_url": "https://fritsevelein.com/courses-2/",
+      "youtube_url": "https://www.youtube.com/@MusicFromSource",
+      "instagram_url": null,
+      "facebook_url": "https://www.facebook.com/frits.evelein/",
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": null,
+      "image_urls": [
+        "https://users.insighttimer.com/nZwUctxOjTRTmkPxVyULfii4xOu2/pictures/square_large.jpeg",
+        "https://fritsevelein.com/wp-content/uploads/2021/07/Frits-in-actie-in-Heerlen.jpg"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "insight-timer",
+      "role": "instructor"
+    }
+  ],
+  "videos": [
+    {
+      "title": "The Divine Plan, the First Temple, the Divine DNA and the new earth - an Introduction",
+      "url": "https://www.youtube.com/watch?v=EZBnnOLihys",
+      "subjects": [
+        "consciousness",
+        "ancient-wisdom"
+      ],
+      "channel": "MusicFromSource"
+    },
+    {
+      "title": "Activate your Cosmic DNA - introduction to a Cosmic Journey",
+      "url": "https://www.youtube.com/watch?v=lJcmgO9VOQA",
+      "subjects": [
+        "consciousness",
+        "meditation"
+      ],
+      "channel": "MusicFromSource"
+    },
+    {
+      "title": "A Universal Broadcast to remind us of our Divine guidance and protection.",
+      "url": "https://www.youtube.com/watch?v=TPAiauv1GGY",
+      "subjects": [
+        "channelled-teachings",
+        "sound-healing"
+      ],
+      "channel": "MusicFromSource"
+    }
+  ],
+  "books": [],
+  "courses": [
+    {
+      "title": "The Origin of Creation – Complete Series",
+      "url": "https://fritsevelein.com/courses/origincom/",
+      "description": "His longest English course, in two parts: the first looks at Creator Source, the multiverse and our own universe, and the second at the three creative energies of mind, spirit and the physical. Teaching talks alternate with guided journeys set to his music.",
+      "price": "€333 EUR",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "consciousness",
+        "ancient-wisdom",
+        "meditation"
+      ],
+      "image": "https://fritsevelein.com/wp-content/uploads/2021/07/Dia2-.jpg"
+    },
+    {
+      "title": "Cosmic Journey – Cosmic Activations and Meditations",
+      "url": "https://fritsevelein.com/courses/cosmic-journey/",
+      "description": "Seven meditative journeys outward from the new earth through the sun, the solar system and the galaxy to Source and the multiverse. Each part has a spoken introduction, a guided meditation with music and a music-only version for your own practice.",
+      "price": "€77 EUR",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "consciousness",
+        "sound-healing"
+      ],
+      "image": "https://fritsevelein.com/wp-content/uploads/2021/07/Dia2-.jpg"
+    },
+    {
+      "title": "Your Inner Melchizedek Master Teacher",
+      "url": "https://fritsevelein.com/courses/your-inner-melchizedek-master-teacher/",
+      "description": "A ten-part series of guided meditations with Music from Source in which you are invited to meet the Melchizedeks, described as master teachers of the universe, as companions on the spiritual path.",
+      "price": "€55 EUR",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "channelled-teachings",
+        "meditation",
+        "spiritual-awakening"
+      ],
+      "image": "https://fritsevelein.com/wp-content/uploads/2021/07/Dia2-.jpg"
+    },
+    {
+      "title": "Energetic Cleaning (part 1)",
+      "url": "https://fritsevelein.com/courses/ehe/",
+      "description": "A practical course in seven episodes on keeping your own energy and surroundings clear, from a daily 'light shower' visualisation to cleansing a personal sacred space and quietening the mind.",
+      "price": "€111 EUR",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "energy-medicine",
+        "meditation"
+      ],
+      "image": "https://fritsevelein.com/wp-content/uploads/2021/07/Dia2-.jpg"
+    },
+    {
+      "title": "Your Light Body: Experiencing, Activating And Embodying",
+      "url": "https://insighttimer.com/meditation-courses/your-light-body-experiencing-activating-and-embodying",
+      "description": "A twelve-day Insight Timer course of short talks and guided meditations with music on the Light Body as a spiritual blueprint, how it differs from the aura, and practices for daily life and bedtime.",
+      "price": "Included in Member Plus ($59.99 USD a year)",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "consciousness",
+        "meditation",
+        "sound-healing"
+      ],
+      "image": "https://users.insighttimer.com/nZwUctxOjTRTmkPxVyULfii4xOu2/pictures/square_large.jpeg"
+    },
+    {
+      "title": "Activating And Experiencing Your Full Universal Brain",
+      "url": "https://insighttimer.com/meditation-courses/activating-and-experiencing-your-full-universal-brain",
+      "description": "An English Insight Timer course of guided journeys with Music from Source on opening the mind to universal and divine consciousness. He also offers it in Dutch and German.",
+      "price": "Included in Member Plus ($59.99 USD a year)",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "consciousness",
+        "meditation"
+      ],
+      "image": "https://users.insighttimer.com/nZwUctxOjTRTmkPxVyULfii4xOu2/pictures/square_large.jpeg"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Frits Evelein on Insight Timer",
+      "url": "https://insighttimer.com/fritsevelein",
+      "description": "His Insight Timer page has free guided meditations and long pieces of Music from Source in English and Dutch, many on connecting with Source and universal energy. Everything there can be heard free.",
+      "featured": true,
+      "resource_type": "meditation",
+      "subjects": [
+        "sound-healing",
+        "meditation"
+      ],
+      "image": "https://users.insighttimer.com/nZwUctxOjTRTmkPxVyULfii4xOu2/pictures/square_large.jpeg"
+    },
+    {
+      "title": "Expanding Your Consciousness – free course",
+      "url": "https://fritsevelein.com/courses/ic-introduction/",
+      "description": "A free introductory course of seven short parts, each a brief video talk followed by a guided visualisation with music, covering Source, the higher self, your energy field and releasing blocks.",
+      "featured": false,
+      "resource_type": "mini_course",
+      "subjects": [
+        "consciousness",
+        "meditation"
+      ],
+      "image": "https://fritsevelein.com/wp-content/uploads/2021/07/Dia2-.jpg"
+    }
+  ],
+  "sprint": {
+    "hub": "insight-timer",
+    "rank": 113,
+    "insight_timer_url": "https://insighttimer.com/fritsevelein",
+    "tier_evidence": "Insight Timer 5.2k (profile, 31 Oct 2026); YouTube 5.1K subscribers (channel header next to @MusicFromSource); Facebook count not readable -> ~10k total -> local_hero",
+    "email": "contact form",
+    "email_source": null,
+    "contact_form_url": "https://fritsevelein.com/contact/",
+    "bio_check": "OK: no 8-word runs against 19 source(s)",
+    "flags": [
+      "Works largely in Dutch (his About page, many courses, events and YouTube videos are Dutch or German), though he has a solid English course list and English Insight Timer content.",
+      "Composer of meditation music ('Music from Source'); much of his Insight Timer and YouTube output is music. Courses and guided journeys make up the teaching side.",
+      "Second photo is a stage shot from his site titled 'Frits in actie in Heerlen'; it appears to be the same man as the Insight Timer photo, taken some years earlier, but a human may want to confirm.",
+      "Insight Timer bio could only be partly quoted by WebFetch; bio check relied mainly on his own site pages.",
+      "Co-teaches some Dutch events with Hyacintha Kraidy, a healer (her site hyacintha.nl)."
+    ],
+    "left_out": [
+      "'Energizing Your Self-Sustaining & Self-Healing Abilities' and the Dutch 'Je zelfgenezend vermogen versterken' (self-healing claims), and Insight Timer tracks titled for anxiety or self-healing.",
+      "'Your Divine Essence – 1' (marked closed) and other parts of multi-part series to stay within a sensible number.",
+      "Cosmic Spa, 15 November 2026 in Delft: future-dated but Dutch-language, co-led, booked through another person's site.",
+      "Dutch and German courses (English versions listed instead).",
+      "Book: Practicing Core Reflection (with Fred Korthagen, Routledge) is teacher-education, not spiritual teaching; no Amazon check made. Dutch/German esoteric books not found on amazon.com.",
+      "YouTube: Dutch-language videos, one-minute trailers and music-only uploads; 'Expand into Your Universal Source Consciousness' failed oEmbed (401)."
+    ]
+  },
+  "images_final": true
+}

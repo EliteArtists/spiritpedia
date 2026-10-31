@@ -1,0 +1,39 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 392,
+    "healer_slug": "kerrie-womersley"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "e1184e09-fd8b-4bd8-ab1d-722af9a610a3",
+      "slug": "the-qigong-sanctuary",
+      "title": "The Qigong Sanctuary"
+    },
+    {
+      "table": "courses",
+      "id": "01a3a31d-4ad6-4ccd-b192-84bf296bf167",
+      "slug": "soul-realignment-akashic-readings-and-soul-sight-immersions",
+      "title": "Soul Realignment Akashic Readings and Soul-Sight Immersions"
+    },
+    {
+      "table": "courses",
+      "id": "e97594e8-9331-44ac-82a6-7e724aacdec0",
+      "slug": "the-sacred-reclaim-pathway",
+      "title": "The Sacred Reclaim Pathway"
+    },
+    {
+      "table": "free_resources",
+      "id": "cf77d356-909d-4f1a-91e1-5f083f6ca510",
+      "slug": "kerrie-womersley-on-insight-timer",
+      "title": "Kerrie Womersley on Insight Timer"
+    },
+    {
+      "table": "hub_teachers",
+      "id": "550965b9-161b-4c69-8d13-3a90840c13b8",
+      "title": "kerrie-womersley teaches at Insight Timer"
+    }
+  ],
+  "at": "2026-10-31T18:19:24.260Z"
+}

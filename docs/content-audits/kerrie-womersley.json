@@ -1,0 +1,119 @@
+{
+  "healer": {
+    "healer_slug": "kerrie-womersley",
+    "create": {
+      "name": "Kerrie Womersley",
+      "bio": "Kerrie Womersley teaches Qigong and reads the Akashic Records from her home in tropical North Queensland, near Cairns. She set out on a deliberate spiritual path in her late twenties, studying energy work and several traditions before training as a Soul Realignment practitioner and qualifying as an Advanced Holden Qigong teacher in the style of Lee Holden. She is also trained in EFT tapping, which she weaves into her one-to-one work.\n\nHer approach pairs two strands: Akashic readings that look at the soul-level patterns running through a person's life, and gentle daily Qigong that helps that understanding settle into the body and into ordinary routines. She runs an online Qigong membership built around a year-long cycle of monthly themes, offers private readings and longer immersions by video call, and mentors a small number of clients over three months. Locally she holds occasional afternoon Qigong workshops in Cairns. Her book Karma Is the Path sets out her four-stage framework, The Sacred Reclaim, and she shares guided Qigong and meditation recordings on Insight Timer.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local_online",
+      "city": "Cairns",
+      "country": "Australia",
+      "subjects": [
+        "qi-gong",
+        "akashic-records",
+        "spiritual-awakening"
+      ],
+      "website_url": "https://www.findyourselfnow.com",
+      "booking_url": "https://www.findyourselfnow.com/soul-realignment",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": "https://www.facebook.com/FindYourselfQigong/",
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "kerrie@findyourselfnow.com",
+      "image_urls": [
+        "https://images.squarespace-cdn.com/content/v1/5abd3289aa49a181cc72f710/4f2b178c-d7e5-4730-bfa0-0616b0f9e8e9/Untitled+design+%2847%29.png?format=1000w",
+        "https://users.insighttimer.com/O8ceUWGnuVaYzcMqtSUkKHEngkh1/pictures/square_large.jpeg"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "insight-timer",
+      "role": "instructor"
+    }
+  ],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "The Qigong Sanctuary",
+      "url": "https://www.findyourselfnow.com/the-qigong-sanctuary",
+      "description": "An online Qigong membership that follows a twelve-month cycle of monthly themes, with most guided sessions around twenty minutes. Members also get short routines for daily use and quarterly group gatherings for shared practice. Cancel at any time.",
+      "price": "$39 AUD a month",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "qi-gong",
+        "spiritual-awakening"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/5abd3289aa49a181cc72f710/3e993404-98cb-417d-87e4-eafecca7cf11/Untitled+design+%2822%29.png"
+    },
+    {
+      "title": "Soul Realignment Akashic Readings and Soul-Sight Immersions",
+      "url": "https://www.findyourselfnow.com/soul-realignment",
+      "description": "Private Akashic Records sessions held over video call. The one-hour reading and clearing looks at soul-level gifts and recurring life patterns; the longer immersion adds preparation time, a guided visit to your own Records and a follow-up call three weeks later.",
+      "price": "$300 AUD (reading); $550 AUD (Soul-Sight Immersion)",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "akashic-records",
+        "soul-purpose"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/5abd3289aa49a181cc72f710/9a17cc6d-9745-49d6-92ca-a12bd2fcbac4/luigi-manga-kbYD_aSAeg8-unsplash.jpg"
+    },
+    {
+      "title": "The Sacred Reclaim Pathway",
+      "url": "https://www.findyourselfnow.com/sacred-reclaim-pathway",
+      "description": "A three-month private mentorship with fortnightly sessions for people who want to act on what their spiritual practice has shown them. Between meetings Kerrie suggests journaling, tailored Qigong and EFT tapping to help changes take hold.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "spiritual-awakening",
+        "qi-gong",
+        "eft-tapping"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/5abd3289aa49a181cc72f710/2e14d176-c546-4a44-841f-a461ebd5196c/Untitled+design+%2830%29.png"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Kerrie Womersley on Insight Timer",
+      "url": "https://insighttimer.com/kerriewomersley",
+      "description": "Free guided meditations, Qigong healing-sound practices and short Qigong video classes from Kerrie. A gentle way to try her style before joining her membership.",
+      "featured": true,
+      "resource_type": "meditation",
+      "subjects": [
+        "qi-gong",
+        "meditation"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/5abd3289aa49a181cc72f710/4f2b178c-d7e5-4730-bfa0-0616b0f9e8e9/Untitled+design+%2847%29.png?format=1000w"
+    }
+  ],
+  "sprint": {
+    "hub": "insight-timer",
+    "rank": 116,
+    "insight_timer_url": "https://insighttimer.com/kerriewomersley",
+    "tier_evidence": "Insight Timer 1.9k (profile via WebFetch, 31 Oct 2026); Facebook FindYourselfQigong 4,885 followers (og:description, 31 Oct 2026); no YouTube or Instagram linked from her site → ~6.8k total → local_hero",
+    "email": "yes",
+    "email_source": "https://www.findyourselfnow.com/events",
+    "contact_form_url": "https://www.findyourselfnow.com/contact",
+    "bio_check": "OK: no 8-word runs against 7 source(s)",
+    "flags": [
+      "Email is published on her events page (workshop enquiries), not on the contact page, which only has a form.",
+      "Insight Timer bio could only be partly quoted via WebFetch; bio check relied mainly on her own site pages.",
+      "Some of her own pages and Insight Timer tracks mention anxiety (her personal story and track titles); none of that is used in the listing."
+    ],
+    "left_out": [
+      "Book Karma Is the Path: her site links an amazon.com.au Kindle listing (B0HFC4MPGY); the amazon.com /dp/ page returned 500 via curl and WebFetch, so it could not be confirmed on amazon.com.",
+      "Cairns Qigong workshops: all listed dates (latest 1 Aug 2026) have passed.",
+      "No YouTube channel found linked from her site, so no videos."
+    ]
+  },
+  "images_final": true
+}

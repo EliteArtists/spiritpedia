@@ -1,0 +1,125 @@
+{
+  "healer": {
+    "healer_slug": "catherine-wilde",
+    "create": {
+      "name": "Catherine Wilde",
+      "bio": "Catherine Wilde is a Texas-based yoga and meditation teacher and intuitive life coach who works mainly with mothers, under the name Soul Care Mom. A homeschooling parent of three, she began building small daily rituals of rest, breath and reflection after the early years of motherhood left her depleted, and she now shares that approach with other parents online.\n\nHer teaching centres on short, realistic practices that fit around family life: brief guided meditations, gentle yoga flows, journaling prompts and ways of listening to inner guidance before reacting. She runs Vibrant Mom Life, a monthly membership with a library of meditations and yoga classes, group coaching and a private community, and offers more personal support as an add-on. She also hosts the Soul Care Mom Podcast and a YouTube channel, wrote Reclaiming Your Inner Sparkle, and has an eight-day course on Insight Timer about meeting mom guilt with compassion.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "worldwide",
+      "city": null,
+      "country": null,
+      "subjects": [
+        "mindfulness",
+        "meditation",
+        "yoga"
+      ],
+      "website_url": "https://www.soulcaremom.com",
+      "booking_url": "https://www.soulcaremom.com/membership/",
+      "youtube_url": "https://www.youtube.com/@SoulCareMom",
+      "instagram_url": "https://www.instagram.com/soulcaremom",
+      "facebook_url": "https://www.facebook.com/soulcaremom",
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": null,
+      "image_urls": [
+        "https://users.insighttimer.com/Z1W2b7B5s0N1F6C7v3Q4q8L6u0J6P3u0P7T4M2b5m3Y6Y4P8Z8v5n0N2U4R6Y3R7K1b7h4x9R1Z8b4M1T0k6B7C1s9p9v1y9Y2Z5/pictures/square_large.jpeg"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "insight-timer",
+      "role": "instructor"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Confident Mom - Guided Meditation for Moms",
+      "url": "https://www.youtube.com/watch?v=0TRsK3zlJAM",
+      "subjects": [
+        "meditation"
+      ]
+    },
+    {
+      "title": "Fully Present Yoga Flow",
+      "url": "https://www.youtube.com/watch?v=VdOhQTvknzM",
+      "subjects": [
+        "yoga",
+        "mindfulness"
+      ]
+    },
+    {
+      "title": "Body Scan Guided Meditation",
+      "url": "https://www.youtube.com/watch?v=7nBAEvHFD-c",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ]
+    }
+  ],
+  "books": [],
+  "courses": [
+    {
+      "title": "Vibrant Mom Life",
+      "url": "https://www.soulcaremom.com/membership/",
+      "description": "A monthly membership for mothers with a library of guided meditations, gentle yoga and short affirmation pauses, plus group coaching and a private community. A higher tier adds one-to-one support from Catherine.",
+      "price": "$97 USD a month ($147 USD a month with personalised support)",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "mindfulness",
+        "meditation",
+        "yoga"
+      ]
+    },
+    {
+      "title": "Compassionate Motherhood: The Journey Of Navigating And Releasing Mom Guilt",
+      "url": "https://insighttimer.com/meditation-courses/compassionate-motherhood-the-journey-of-navigating-and-releasing-mom-guilt",
+      "description": "An eight-day audio course on Insight Timer. Each day pairs a short reflection with a practice for treating yourself more kindly as a parent.",
+      "price": "Included in Member Plus ($59.99 USD a year)",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ]
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Catherine Wilde on Insight Timer",
+      "url": "https://insighttimer.com/soulcaremom",
+      "description": "Free guided meditations from Catherine, including body scans, breath practices and short reflections written with busy parents in mind.",
+      "featured": true,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ]
+    }
+  ],
+  "sprint": {
+    "hub": "insight-timer",
+    "rank": 117,
+    "insight_timer_url": "https://insighttimer.com/soulcaremom",
+    "tier_evidence": "Insight Timer 832 (profile via WebFetch, 31 Oct 2026); Instagram 9,113 (og:description, 31 Oct 2026); Facebook 876 (og:description, 31 Oct 2026); YouTube 489 (channel header next to @SoulCareMom, 31 Oct 2026) → ~11.3k total → local_hero",
+    "email": "contact form",
+    "email_source": null,
+    "contact_form_url": "https://www.soulcaremom.com/contact/",
+    "bio_check": "OK: no 8-word runs against 5 source(s)",
+    "flags": [
+      "Mainly a self-care and parenting life coach for mothers; spiritual teaching is light (meditation and gentle yoga within mom self-care). A human should decide whether she fits Spiritpedia.",
+      "Her site and YouTube lean heavily on 'anxious mom to calm mom' framing; listing text avoids that wording.",
+      "Only one usable photo (Insight Timer profile); the site's about photo shows her with a baby, so it was not used.",
+      "Insight Timer bio could only be partly quoted via WebFetch; bio check relied mainly on her own site pages."
+    ],
+    "left_out": [
+      "Book Reclaiming Your Inner Sparkle (her site links amazon.com/dp/B09GN1MR3R): amazon.com returned 500 via curl and WebFetch, so not confirmed.",
+      "Thriving Mom mentorship: business and homeschool coaching, not spiritual teaching, and application-only with no price.",
+      "Most YouTube videos are parenting advice or podcast episodes; Breath Awareness Meditation to Reduce Stress for Moms and sleep tips left out under the health-claim rule; Shorts skipped."
+    ]
+  }
+}
