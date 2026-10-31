@@ -1,0 +1,51 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 353,
+    "healer_slug": "barbara-deyo"
+  },
+  "rows": [
+    {
+      "table": "books",
+      "id": 1426,
+      "slug": "the-accidental-architect-the-recalibrated-soul-guidebook",
+      "title": "The Accidental Architect: The Recalibrated Soul Guidebook"
+    },
+    {
+      "table": "courses",
+      "id": "5fc3c544-a620-467a-af90-512f5495485b",
+      "slug": "the-art-of-frequency-shifting",
+      "title": "The Art of Frequency Shifting"
+    },
+    {
+      "table": "courses",
+      "id": "393ca9e3-950c-4518-ac43-b4089382c499",
+      "slug": "energy-healing-sessions-at-deyo-studio",
+      "title": "Energy Healing Sessions at Deyo Studio"
+    },
+    {
+      "table": "courses",
+      "id": "8c985879-69a8-41fe-8594-ee7e254dfb50",
+      "slug": "understanding-archangels",
+      "title": "Understanding Archangels"
+    },
+    {
+      "table": "courses",
+      "id": "1eec7820-d963-416a-9eed-a04c64b720a9",
+      "slug": "mastering-your-energy-a-practical-guide-to-shifting-your-frequency",
+      "title": "Mastering Your Energy: A Practical Guide To Shifting Your Frequency"
+    },
+    {
+      "table": "free_resources",
+      "id": "f87c77de-e0ba-4ddf-991b-066f8c74b555",
+      "slug": "barbara-deyo-on-insight-timer",
+      "title": "Barbara Deyo on Insight Timer"
+    },
+    {
+      "table": "hub_teachers",
+      "id": "3db5b34a-aceb-4da8-9ace-a65735481457",
+      "title": "barbara-deyo teaches at Insight Timer"
+    }
+  ],
+  "at": "2026-10-31T17:38:16.854Z"
+}

@@ -1,0 +1,239 @@
+{
+  "healer": {
+    "healer_slug": "lisa-marie-haley",
+    "create": {
+      "name": "Lisa Marie Haley",
+      "bio": "Lisa Marie Haley is an astrologer, herbalist and energy worker who teaches under the name Everything Is Energy from a small farm in Somerset, in the Sierra foothills of California. Over more than fifteen years she has taught yoga, meditation, energy work and mediumship, and has given readings and sessions at festivals such as gatherings in Joshua Tree. Her practice, Everything Is Energy Apothecary, joins the language of the planets with plant lore and subtle energy, and many of the herbs she works with are grown on the farm.\n\nShe teaches through self-paced online courses on lucid and conscious dreaming, alchemy and the Egyptian mysteries, the heart, goddess traditions and the roots of energy work across cultures from China and India to Japan's Reiki. Private sessions are held online: natal chart, relationship and astrocartography readings, and intuitive energy sessions that may draw on tarot or oracle cards and a chosen plant ally. Each new and full moon she records an astrology talk and meditation for her blog, YouTube channel and Insight Timer, and she runs a lunar membership on moon cycles and herbal craft. She has also written several books, including Energy Healing 101, The Answer Is You and The Apothecary Year, which she sells directly.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "worldwide",
+      "city": null,
+      "country": null,
+      "subjects": [
+        "astrology",
+        "energy-medicine",
+        "ancient-wisdom"
+      ],
+      "website_url": "https://www.everythingisenergyapothecary.com",
+      "booking_url": "https://www.everythingisenergyapothecary.com/services",
+      "youtube_url": "https://www.youtube.com/@everythingisenergy",
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "lisamarie@everythingisenergyapothecary.com",
+      "image_urls": [
+        "https://users.insighttimer.com/P2v2j7e1x4L7m0m6L6t1A4f4k0n8T3U3n0y8M8a2C7K0d5s9g1s3K9Y1Z6t7S8d3H5Y4W1M7Z8M6L7R9W5f2a9h7C6f8Y5E7H9B1/pictures/square_large.jpeg",
+        "https://images.squarespace-cdn.com/content/v1/67b5070489d243622d5553f7/0a3a957b-97e3-4f6f-810c-d66abe038931/lisa-energy-alchemy-la.jpg"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "insight-timer",
+      "role": "instructor"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Astrocartography: What Your Birth Chart Reveals About Place",
+      "url": "https://www.youtube.com/watch?v=PHWInR_N5Zo",
+      "subjects": [
+        "astrology"
+      ],
+      "channel": "Everything Is Energy"
+    },
+    {
+      "title": "The Lion’s Gate: Sirius, Sacred Renewal, and the 8|8 Portal",
+      "url": "https://www.youtube.com/watch?v=YTJeXphIiZE",
+      "subjects": [
+        "astrology",
+        "ancient-wisdom"
+      ],
+      "channel": "Everything Is Energy"
+    },
+    {
+      "title": "You are More Powerful than You've Imagined",
+      "url": "https://www.youtube.com/watch?v=RhhmQiCHxuc",
+      "subjects": [
+        "energy-medicine",
+        "spirituality"
+      ],
+      "channel": "Everything Is Energy"
+    }
+  ],
+  "books": [],
+  "courses": [
+    {
+      "title": "Astrology Natal Chart Reading",
+      "url": "https://www.everythingisenergyapothecary.com/astrology-natal-chart-reading",
+      "description": "A live online reading of your birth chart, an hour of interpretation followed by half an hour for questions, looking at temperament, relationships, work, purpose and the cycles you are in. You receive the recording and a copy of your chart.",
+      "price": "$136 USD (90 minutes)",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "astrology"
+      ],
+      "image": "http://static1.squarespace.com/static/67b5070489d243622d5553f7/t/67edfd28acb4bf75c1c1dbb5/1743650088786/Astrology+Natal+Chart+Reading.jpg?format=1500w"
+    },
+    {
+      "title": "Astrocartography Chart Reading",
+      "url": "https://www.everythingisenergyapothecary.com/astrocartography-chart-reading",
+      "description": "A reading that lays the planets of your birth chart across a world map, to look at how different places may bring out different sides of your life. Useful when weighing a move or a journey.",
+      "price": "$180 USD",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "astrology"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/67b5070489d243622d5553f7/1789704666579-HSXZQ0WQK9KD280IQ0R3/astrocartography-chart-reading-lisa-marie.jpg"
+    },
+    {
+      "title": "Love & Relationship Astrology Reading",
+      "url": "https://www.everythingisenergyapothecary.com/love-relationship-astrology-reading",
+      "description": "An astrology session focused on how you love and relate, looking at the parts of a relationship that matter most to you through your chart.",
+      "price": "$136 USD (90 minutes)",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "astrology",
+        "conscious-relationships"
+      ],
+      "image": "http://static1.squarespace.com/static/67b5070489d243622d5553f7/t/67edff2ac2c3e8556bd554c0/1743650602859/Astrology+-+Relationship+Readings%2C+Event+Readings+and+AstroCartography.jpg?format=1500w"
+    },
+    {
+      "title": "Intuitive Energy Healing & Herbal Support",
+      "url": "https://www.everythingisenergyapothecary.com/intuitive-energy-healing-herbal-support",
+      "description": "A private hour online that follows what comes up in conversation, with intuitive reading, energy clearing and grounding, guided meditation and, when useful, tarot or oracle cards. You leave with a plant ally or simple herbal practice and short written notes.",
+      "price": "$120 USD (60 minutes)",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "energy-medicine",
+        "meditation"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/67b5070489d243622d5553f7/1789780149682-6BRP6LKCJIDP7T7JDLZU/intuitive-energy-healing-herbal-support.jpg"
+    },
+    {
+      "title": "Awakened Dreamer",
+      "url": "https://www.everythingisenergyapothecary.com/awakened-dreamer",
+      "description": "A self-paced course on dreaming, from how older cultures understood dreams to recording and decoding your own, then into lucid dreaming, hypnagogia and yoga nidra. Each section closes with practices and a recorded question-and-answer session.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "dreamwork",
+        "consciousness"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/67b5070489d243622d5553f7/ca048e0f-1070-400a-8a45-42dca8fdd02d/Awakened+Dreamer.jpg"
+    },
+    {
+      "title": "Alchemy & Egyptian Magic",
+      "url": "https://www.everythingisenergyapothecary.com/egyptian-alchemy",
+      "description": "A self-paced course on the history and principles of alchemy, the Emerald Tablet and the seven stages of the Great Work, with rituals, talks on Egypt, Atlantis and Sirius, and recorded group questions.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "hermeticism",
+        "ancient-wisdom",
+        "mysticism"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/67b5070489d243622d5553f7/516a517b-5d0f-4b37-ba72-29bf7dd92884/Alchemy+%26+Egyptian+Magic+Remember+Who+You+Are+%28900+x+300+px%29.jpg"
+    },
+    {
+      "title": "Energy Healing 101",
+      "url": "https://www.everythingisenergyapothecary.com/energy-healing-101",
+      "description": "An introductory course on what energy work is and how it has been understood in Chinese, Hindu, Egyptian, Native American, Incan, Tibetan and Japanese traditions, including how modern Reiki fits in, with attunements and simple practices.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "energy-medicine",
+        "reiki",
+        "ancient-wisdom"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/67b5070489d243622d5553f7/1751489354944-I740F4K5IAQF5KXLIDFS/unsplash-image-nl-1AVWC1RE.jpg"
+    },
+    {
+      "title": "Heart Alchemy",
+      "url": "https://www.everythingisenergyapothecary.com/heart-alchemy",
+      "description": "A three-week course that uses the old idea of turning lead into gold as a way into the heart, reconnecting it with mind and body through talks and practices.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "spiritual-awakening",
+        "energy-medicine"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/67b5070489d243622d5553f7/9b6f141b-0401-4305-9b1b-009f89c80793/heart+light+alchemy.jpg"
+    },
+    {
+      "title": "Lunar Herbal Alchemy Membership",
+      "url": "https://www.everythingisenergyapothecary.com/lunar-herbal-alchemy-intro",
+      "description": "An ongoing membership that follows the moon: a new moon teaching on the month's astrology, a featured herb from the farm, a hands-on preparation lesson and a lunar ritual, with a herb library and member forum.",
+      "price": "Contact for pricing",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "astrology",
+        "ancient-wisdom"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/67b5070489d243622d5553f7/6d7d1cc3-841e-4923-b181-42a86ebd5b14/LunaR+Herbal+Astrology+Circle+Large.jpg"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Lisa Marie Haley on Insight Timer",
+      "url": "https://insighttimer.com/everythingisenergy",
+      "description": "Meditations tied to the new and full moons, eclipses and planetary shifts, plus energy clearing practices and goddess journeys. The single tracks are free to hear.",
+      "featured": true,
+      "resource_type": "meditation",
+      "subjects": [
+        "astrology",
+        "meditation"
+      ],
+      "image": "https://users.insighttimer.com/P2v2j7e1x4L7m0m6L6t1A4f4k0n8T3U3n0y8M8a2C7K0d5s9g1s3K9Y1Z6t7S8d3H5Y4W1M7Z8M6L7R9W5f2a9h7C6f8Y5E7H9B1/pictures/square_large.jpeg"
+    }
+  ],
+  "sprint": {
+    "hub": "insight-timer",
+    "rank": 70,
+    "insight_timer_url": "https://insighttimer.com/everythingisenergy",
+    "tier_evidence": "Insight Timer 3.1k (profile, 31 Oct 2026); YouTube 543 (channel page, 31 Oct 2026); no Instagram, Facebook or TikTok linked from her site → ~3.6k total → local_hero",
+    "email": "yes",
+    "email_source": "https://www.everythingisenergyapothecary.com/contact",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 21 source(s)",
+    "flags": [
+      "Listed under her own name, Lisa Marie Haley; Insight Timer and YouTube use the brand name Everything Is Energy, and her site is an apothecary shop (teas, loose herbs, energy sprays) as well as a teaching practice.",
+      "Insight Timer profile photo is listed first; its URL comes from a server-rendered track page. The second photo (a woman at a festival healing booth, from her own site, file named 'lisa-energy-alchemy') looks like the same person but is less certain.",
+      "Prices for her online courses and the Lunar Herbal Alchemy membership are not shown on the public pages; set to 'Contact for pricing'.",
+      "Her books (The Apothecary Year, Energy Healing 101, The Answer Is You, Lunar Herbal Alchemy Calendar & Journal 2027) are sold only on her site; she says Amazon links are coming. Re-check Amazon later.",
+      "Herbalism runs through her work (herb profiles with 'folk + clinical uses', herbal wellness consultations); kept out of the plan where it touches on the body. The Astrology & Herbal Wellness Consultation was left out as borderline.",
+      "Her meditation library and some Insight Timer tracks use nervous-system and sleep framing; not used.",
+      "YouTube is almost all dated weekly and monthly forecasts; only three evergreen videos were found among the latest uploads (view counts not readable).",
+      "Insight Timer bio could only be partly quoted by WebFetch; bio check relied mainly on her own site pages."
+    ],
+    "left_out": [
+      "Astrology & Herbal Wellness Consultation ($180 USD): framed around constitution, the body and plant medicine; borderline health.",
+      "Books: not on Amazon yet (sold directly on her site).",
+      "Shop items (herbal teas, loose herbs, Seraphae energy sprays): products, not teaching.",
+      "Meditation Library on her site: access terms unclear and framed around nervous-system regulation.",
+      "Courses listed on /courses without their own page found (Karma Clearing Project, Crystal Dragon Alchemy, Botanical Mediumship, Astrology 101, Activate Your Jedi Mind, Remember Yourself as a Goddess, Quantum Co-Creation, Ancestor Wisdom Circle): no unique URL confirmed.",
+      "YouTube: dated weekly/monthly forecasts and moon or eclipse talks for specific 2026 dates.",
+      "Insight Timer: no courses found on her profile; tracks not listed individually; 'Anxiety Downshift Sleep Journey' noted as a condition-named track.",
+      "Herbal Almanac podcast: no fitting resource type."
+    ]
+  },
+  "images_final": true
+}

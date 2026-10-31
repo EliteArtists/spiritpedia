@@ -1,0 +1,164 @@
+{
+  "healer": {
+    "healer_slug": "kc-gonzalez",
+    "create": {
+      "name": "KC Gonzalez",
+      "bio": "KC Gonzalez is a yoga teacher and Reiki practitioner in Las Vegas, Nevada, who grew up in Los Angeles. Her own practice began in 2007 with gentle Kundalini classes at a YMCA in Glendale, where the philosophy behind the poses drew her in as much as the movement, and she had already been reading Eastern thought for some time. She completed a 200-hour teacher training with YogaWorks in 2016 and, the following year, gave up her job teaching special education in a primary school so that yoga could become her full-time work. Further study brought in Yin yoga, Reiki, EFT tapping, breathwork and meditation.\n\nIn 2022 she set up her small practice, Nouveau Hippie Holistics, where yoga, meditation and Reiki sit alongside her work as a holistic wellness coach. Her style is patient and unhurried and suits beginners. She teaches private and small-group yoga in clients' homes or an agreed space around Las Vegas, including Vinyasa, Yin and restorative classes for friends' weekends away, and offers Reiki and one-to-one meditation guidance either in person or on Zoom. Twice a week she leads long, slow Yin yoga classes live on Insight Timer, and many of these are later posted on her YouTube channel.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local_online",
+      "city": "Las Vegas",
+      "country": "United States",
+      "subjects": [
+        "yoga",
+        "reiki",
+        "meditation"
+      ],
+      "website_url": "https://www.nouveauhippieholistics.com/",
+      "booking_url": "https://www.nouveauhippieholistics.com/book-online",
+      "youtube_url": "https://www.youtube.com/channel/UCjHgSFFiR-3bZhjWjW8Qing",
+      "instagram_url": "https://www.instagram.com/kc.fitz_nouveauhippieholistics/",
+      "facebook_url": "https://www.facebook.com/nouveauhippieholistics",
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "nouveauhippieholistics@hotmail.com",
+      "image_urls": [
+        "https://users.insighttimer.com/L8f1M7f2C9E9e6v5v5A9V5h2V7g0Q1x8p9s8G1G3r2J2Y3T9T7e3a1N6z8u8t2D5J9M0T0h4A1B0E7a0v7H5p3g1z1U3T7u6A0F2/pictures/square_large.jpeg",
+        "https://static.wixstatic.com/media/c0069b_03c52abd762141e5ac4a110a0ec70f55~mv2.jpeg"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "insight-timer",
+      "role": "instructor"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Tune in Tuesday Yin Yoga 6.2.26",
+      "url": "https://www.youtube.com/watch?v=OMh5SlgN1tE",
+      "subjects": [
+        "yoga"
+      ],
+      "channel": "Yoga with KC"
+    },
+    {
+      "title": "Tune in Tuesday Yin Yoga 10.7.25",
+      "url": "https://www.youtube.com/watch?v=4BleNV4AXA8",
+      "subjects": [
+        "yoga"
+      ],
+      "channel": "Yoga with KC"
+    },
+    {
+      "title": "Feel Good Friday Yin Yoga 9.26.25",
+      "url": "https://www.youtube.com/watch?v=vGcwsl0xXYY",
+      "subjects": [
+        "yoga"
+      ],
+      "channel": "Yoga with KC"
+    },
+    {
+      "title": "Feel Good Friday Yin Yoga 11.14.25",
+      "url": "https://www.youtube.com/watch?v=dGd4bVg-Gjs",
+      "subjects": [
+        "yoga"
+      ],
+      "channel": "Yoga with KC"
+    },
+    {
+      "title": "Summer Solstice Chakra Balancing Yin Yoga 6.19.26",
+      "url": "https://www.youtube.com/watch?v=4RK2gUGwcqk",
+      "subjects": [
+        "yoga",
+        "chakra-healing"
+      ],
+      "channel": "Yoga with KC"
+    }
+  ],
+  "books": [],
+  "courses": [
+    {
+      "title": "Private Yoga Practice",
+      "url": "https://www.nouveauhippieholistics.com/service-page/private-yoga-practice",
+      "description": "An hour of yoga shaped around you, one to one or for a small group, held at your home or another agreed place in the Las Vegas area. Styles include Vinyasa flow, Yin and restorative, and it works well for newcomers or for a group of friends on a weekend away.",
+      "price": "$100 USD",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://static.wixstatic.com/media/5e819585f44c44948699c4121b32a492.jpg/v1/fit/w_5472,h_3648,al_c,q_90/5e819585f44c44948699c4121b32a492.jpg"
+    },
+    {
+      "title": "Reiki",
+      "url": "https://www.nouveauhippieholistics.com/service-page/reiki",
+      "description": "A 45-minute Reiki session, given seated or lying down, with her hands resting on or just above the body. Available in person in Las Vegas or at a distance over Zoom, and aimed at deep relaxation.",
+      "price": "$75 USD",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "reiki"
+      ],
+      "image": "https://static.wixstatic.com/media/2f6e9b5249a4471a97f4d563af066a68.jpg/v1/fit/w_5760,h_3840,al_c,q_90/2f6e9b5249a4471a97f4d563af066a68.jpg"
+    },
+    {
+      "title": "Private Meditation",
+      "url": "https://www.nouveauhippieholistics.com/service-page/private-meditation",
+      "description": "A 45-minute one-to-one meditation session, in person or on Zoom, to help you settle into a practice that fits your life and find more balance.",
+      "price": "$75 USD",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://static.wixstatic.com/media/11062b_f33ecec296c14c2aa937e3af256c3191~mv2.jpg/v1/fit/w_5301,h_3704,al_c,q_90/11062b_f33ecec296c14c2aa937e3af256c3191~mv2.jpg"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "KC Gonzalez on Insight Timer",
+      "url": "https://insighttimer.com/kcgonz",
+      "description": "Recorded meditations and yoga practices, plus her twice-weekly live Yin yoga classes. The single tracks are free to hear.",
+      "featured": true,
+      "resource_type": "meditation",
+      "subjects": [
+        "yoga",
+        "meditation"
+      ],
+      "image": "https://users.insighttimer.com/L8f1M7f2C9E9e6v5v5A9V5h2V7g0Q1x8p9s8G1G3r2J2Y3T9T7e3a1N6z8u8t2D5J9M0T0h4A1B0E7a0v7H5p3g1z1U3T7u6A0F2/pictures/square_large.jpeg"
+    }
+  ],
+  "sprint": {
+    "hub": "insight-timer",
+    "rank": 64,
+    "insight_timer_url": "https://insighttimer.com/kcgonz",
+    "tier_evidence": "Insight Timer 4.6k (profile, 31 Oct 2026); Instagram 398 (og:description, 31 Oct 2026); YouTube 120 subscribers (channel page); Facebook count not readable → ~5k total → local_hero",
+    "email": "yes",
+    "email_source": "https://www.nouveauhippieholistics.com/contact",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 13 source(s)",
+    "flags": [
+      "Health-claim rule applied strictly: her main business is holistic nutrition counselling, and her About page frames her mission around women recovering from abuse, trauma and addiction, with her own diagnoses described. None of that is in the bio or items; a human may still judge the listing too close to the line.",
+      "She also appears as KC Fitzgerald (Instagram kc.fitz, Venmo KC-Fitzgerald); Insight Timer and her Linktree use KC Gonzalez, which is used here.",
+      "Email is her business inbox (Nouveau Hippie Holistics), published on her site; it is a brand inbox but clearly hers.",
+      "YouTube videos are recordings of her live Yin classes; the titles carry the class date but the content is evergreen. All are around 50-60 minutes.",
+      "The site's Reiki and EFT service text includes claims (relieves pain, improved physical health); the Reiki item description here is rewritten without them.",
+      "Service page URLs (/service-page/...) were found by probing the Wix booking pattern and confirmed to load with the right service, price and location.",
+      "Insight Timer bio could only be partly quoted by WebFetch; bio check relied mainly on her own site pages.",
+      "Her Linktree is mostly affiliate links (supplements, PEMF mats, doTERRA); none used."
+    ],
+    "left_out": [
+      "Nutrition Counseling (initial visit and 4-session package): health and nutrition coaching, not spiritual teaching.",
+      "Personalized EFT Tapping Session: sold on improved mental and physical health (health claim).",
+      "Trauma Sensitive Yoga: condition-framed; mentioned only inside her own private yoga page, not listed.",
+      "FREE Discovery Call: a sales call, not a resource.",
+      "No books; no Insight Timer courses on her profile."
+    ]
+  },
+  "images_final": true
+}

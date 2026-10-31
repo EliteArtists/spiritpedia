@@ -1,0 +1,159 @@
+{
+  "healer": {
+    "healer_slug": "barbara-deyo",
+    "create": {
+      "name": "Barbara Deyo",
+      "bio": "Barbara Deyo is a Reiki master, meditation teacher and spiritual life coach based in the Detroit suburbs of Michigan. She spent close to four decades in the beauty and wellness trade as a make-up artist and esthetician, and still runs Deyo Studio in Birmingham, where energy work now sits alongside the salon. Her own turning point came through personal experiences that led her into Reiki, chakra work, meditation and yoga, and later into oracle cards and readings by the moon. She describes her role as a channel that helps people become their own healers.\n\nIn one-to-one sessions, held at the studio or over Zoom, she begins with a conversation and then blends Reiki, crystals, sound, guided meditation and chakra balancing, drawing on angels and guides as she works. Her wider project, The Recalibrated Soul, is a digital sanctuary and weekly podcast about the heart, the soul and changing old inner patterns. She has set out her nine-step method in a guidebook, The Accidental Architect, and in an online course on what she calls frequency shifting. On Insight Timer she offers guided meditations and courses on the archangels, the lunar cycle and working with your own energy.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local_online",
+      "city": "Birmingham, Michigan",
+      "country": "United States",
+      "subjects": [
+        "reiki",
+        "energy-medicine",
+        "meditation"
+      ],
+      "website_url": "https://www.recalibratedsoul.com",
+      "booking_url": "https://deyostudio.com/deyoasis-energy-infused-services/",
+      "youtube_url": null,
+      "instagram_url": "https://www.instagram.com/recalibratedsoul/",
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "barbara@deyostudio.com",
+      "image_urls": [
+        "https://users.insighttimer.com/XpP46ELRpgW4cj3gIvAeiJqlvzR2/pictures/square_large.jpeg",
+        "https://www.recalibratedsoul.com/content-assets/public/eyJhbGciOiJIUzI1NiJ9.eyJvYmplY3Rfa2V5IjoiNm9tOWFwcjVwZTFsdDRqZDk2bWF3MTB2N3U3OSIsImRvbWFpbiI6Ind3dy5yZWNhbGlicmF0ZWRzb3VsLmNvbSJ9.4Xz2bhgDHtq_R-cRxn3EhF38zhUQK73WPx-dZY7yYt4",
+        "https://www.recalibratedsoul.com/content-assets/public/eyJhbGciOiJIUzI1NiJ9.eyJvYmplY3Rfa2V5IjoidXRtdTBnaGNjcmdtd3A5bHJtMmpjeGdkanVkdSIsImRvbWFpbiI6Ind3dy5yZWNhbGlicmF0ZWRzb3VsLmNvbSJ9.HtazHVtQihqE_AWUddQCl4gOb30ln5YVs9YuoqIXLnE"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "insight-timer",
+      "role": "instructor"
+    }
+  ],
+  "videos": [],
+  "books": [
+    {
+      "title": "The Accidental Architect: The Recalibrated Soul Guidebook",
+      "slug": "the-accidental-architect-the-recalibrated-soul-guidebook",
+      "author": "Barbara Deyo",
+      "asin": "B0HHYFT9V4",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "Her guidebook to The Recalibrated Soul, setting out the nine-step process she teaches for noticing a reactive state, looking at what lies beneath it and choosing a different response. It is available in paperback, hardback and Kindle.",
+      "subjects": [
+        "spiritual-awakening",
+        "self-healing"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/B0HHYFT9V4.01._SCLZZZZZZZ_.jpg"
+    }
+  ],
+  "courses": [
+    {
+      "title": "The Art of Frequency Shifting",
+      "url": "https://www.recalibratedsoul.com/the-art-of-frequency-shifting",
+      "description": "A self-paced online course in three phases that teaches her nine-step method for taking apart fear, drawing out the lesson in a hard moment and choosing a calmer way of being. It ends with a practical audit for everyday situations and a library of worked examples.",
+      "price": "$97 USD",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "spiritual-awakening",
+        "energy-medicine"
+      ],
+      "image": "https://www.recalibratedsoul.com/content-assets/public/eyJhbGciOiJIUzI1NiJ9.eyJvYmplY3Rfa2V5IjoibzZkeHk4dGI1YnY1ZnJodjUzdjdnbGRuejk0eSIsImRvbWFpbiI6Ind3dy5yZWNhbGlicmF0ZWRzb3VsLmNvbSJ9.XSJYmrzbUJ_0byMo50lkci7KEe30ERENHM5l7fE2Krk"
+    },
+    {
+      "title": "Energy Healing Sessions at Deyo Studio",
+      "url": "https://deyostudio.com/deyoasis-energy-infused-services/",
+      "description": "One-to-one sessions at her studio in Birmingham, Michigan, or by Zoom, starting with a thirty-minute intake conversation. Each session is shaped to the person and may combine Reiki, chakra balancing, sound, crystals and guided meditation; small private group events can also be arranged.",
+      "price": "$150 USD (1 hour); $225 USD (90 minutes); $300 USD (2 hours); intake $75 USD",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "reiki",
+        "chakra-healing",
+        "sound-healing"
+      ],
+      "image": "https://deyostudio.com/wp-content/uploads/2024/06/energy-infused-300x300.png"
+    },
+    {
+      "title": "Understanding Archangels",
+      "url": "https://insighttimer.com/meditation-courses/understanding-archangels",
+      "description": "An Insight Timer course that introduces the archangels one by one, with a guided meditation for meeting each of them.",
+      "price": "Included in Member Plus ($59.99 USD a year)",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "spirituality",
+        "meditation"
+      ],
+      "image": "https://users.insighttimer.com/XpP46ELRpgW4cj3gIvAeiJqlvzR2/pictures/square_large.jpeg"
+    },
+    {
+      "title": "Mastering Your Energy: A Practical Guide To Shifting Your Frequency",
+      "url": "https://insighttimer.com/meditation-courses/the-foundations-of-frequency-and-vibration",
+      "description": "An Insight Timer course on the basics of energy and vibration, with simple daily practices for noticing your own state and moving it somewhere lighter.",
+      "price": "Included in Member Plus ($59.99 USD a year)",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "energy-medicine",
+        "meditation"
+      ],
+      "image": "https://users.insighttimer.com/XpP46ELRpgW4cj3gIvAeiJqlvzR2/pictures/square_large.jpeg"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Barbara Deyo on Insight Timer",
+      "url": "https://insighttimer.com/barbaradeyo",
+      "description": "Guided meditations on the archangels, the moon's phases and energy, together with several short courses. The single tracks are free to hear.",
+      "featured": true,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation",
+        "energy-medicine"
+      ],
+      "image": "https://users.insighttimer.com/XpP46ELRpgW4cj3gIvAeiJqlvzR2/pictures/square_large.jpeg"
+    }
+  ],
+  "sprint": {
+    "hub": "insight-timer",
+    "rank": 68,
+    "insight_timer_url": "https://insighttimer.com/barbaradeyo",
+    "tier_evidence": "Insight Timer 3.9k (profile, 31 Oct 2026); Instagram @recalibratedsoul 92 (og:description, 31 Oct 2026); Facebook count not readable without login; no working YouTube channel (@recalibratedsoulpodcast returns 404) → ~4k total → local_hero",
+    "email": "yes",
+    "email_source": "https://www.recalibratedsoul.com/",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 11 source(s)",
+    "flags": [
+      "Email barbara@deyostudio.com is her salon's address, published as a mailto link in the About section of recalibratedsoul.com.",
+      "Deyo Studio is mainly a beauty salon (make-up, micro-pigmentation, skin care); the energy healing page names 'Barbara' without a surname but the studio is hers and her Insight Timer bio confirms she owns it.",
+      "City set to Birmingham, Michigan (where her studio is); the Insight Timer profile says Troy, MI. The intake can be in person or Zoom; the page doesn't say outright that full sessions are in person.",
+      "Her site's language leans on nervous-system regulation and 'stored trauma', and the studio page mentions finding the root cause of ailments; none of that framing is in the plan.",
+      "Book description written from her own site's account of the nine-step method; the Amazon page's blurb could not be read. A second ASIN (B0HHYJZ3Q4) is another edition of the same book; no cover URL recorded.",
+      "Two photos are Podia content-asset links from recalibratedsoul.com (load without cookies today); check they stay stable.",
+      "Her Linktree is largely affiliate links (meal kits, apps, skincare); only Instagram was taken from it.",
+      "Insight Timer bio could only be partly quoted by WebFetch; bio check relied mainly on her own site pages."
+    ],
+    "left_out": [
+      "Emergency Emotional Reset (free audio): sold for panic, crisis and overwhelm; left out as a health framing.",
+      "Paid meditations in her Podia shop ($5–$111): titles and URLs could not be read from the page.",
+      "The Recalibrated Soul podcast (rss.com, Apple, Spotify): no fitting resource type and rss.com blocked the fetch; not listed.",
+      "Insight Timer courses Preventative Meditation, Simple Ways To Feel Better, Lunar Transformation Series and Understanding Archangels Vol. 2: not chosen (max 2); 'Preventative Meditation' and 'Simple Ways To Feel Better' also lean on wellbeing framing.",
+      "Amazon ASIN B0HHTH7NPM returned 500; not confirmed.",
+      "No YouTube channel found that loads; no videos.",
+      "Insight Timer tracks not listed individually."
+    ]
+  },
+  "images_final": true
+}

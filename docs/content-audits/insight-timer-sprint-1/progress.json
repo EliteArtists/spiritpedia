@@ -1159,9 +1159,9 @@
    "base": "Sedona, AZ, USA",
    "website": "http://musicforhealthyliving.com/",
    "note": "Mainly a music store; old-style site.",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Mainly a new-age musician and music store (recordings, fragrances, art prints) rather than a teacher: no classes, courses or sessions are offered, his last listed events were in 2021, his YouTube is music videos often titled with healing claims (DNA repair, cellular regeneration), and his two non-fiction books are sold on healing and DNA-reactivation claims, so almost nothing passes the content rules."
   },
   {
    "rank": 62,
@@ -1178,7 +1178,7 @@
    "base": "Grand Manan, NB, Canada",
    "website": "metimemeditations.com",
    "note": null,
-   "status": "planned",
+   "status": "dev",
    "plan": "docs/content-audits/mary-rose-freeth.json",
    "skip_reason": null
   },
@@ -1197,8 +1197,8 @@
    "base": "Christchurch, New Zealand",
    "website": "https://www.susannahkenton.com",
    "note": null,
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/susannah-kenton.json",
    "skip_reason": null
   },
   {
@@ -1216,8 +1216,8 @@
    "base": "Las Vegas, NV, USA",
    "website": "https://www.nouveauhippieholistics.com/",
    "note": "Main business is holistic nutrition (Nouveau Hippie Holistics) - borderline health.",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/kc-gonzalez.json",
    "skip_reason": null
   },
   {
@@ -1235,8 +1235,8 @@
    "base": "Florida, USA",
    "website": "linkpod.sabinepriestley.com/freedom",
    "note": "Also publishes info@sabinepriestley.com; linked from LinkPod page.",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/sabine-priestley.json",
    "skip_reason": null
   },
   {
@@ -1254,7 +1254,7 @@
    "base": "Queens, NY, USA",
    "website": "www.lizacolpa.com",
    "note": null,
-   "status": "planned",
+   "status": "dev",
    "plan": "docs/content-audits/liza-colpa.json",
    "skip_reason": null
   },
@@ -1273,8 +1273,8 @@
    "base": "Galicia (Lugo), Spain",
    "website": "https://meditatewithfernando.com/",
    "note": null,
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/fernando-albert.json",
    "skip_reason": null
   },
   {
@@ -1292,8 +1292,8 @@
    "base": "Troy, MI, USA",
    "website": "https://www.recalibratedsoul.com",
    "note": null,
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/barbara-deyo.json",
    "skip_reason": null
   },
   {
@@ -1311,8 +1311,8 @@
    "base": "Calgary, AB, Canada",
    "website": "sagittariusway.com/linktree",
    "note": "Animal communicator; linktree page is on her own site.",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/renee-vos-de-wael.json",
    "skip_reason": null
   },
   {
@@ -1330,8 +1330,8 @@
    "base": "Somerset, CA, USA",
    "website": "www.everythingisenergyapothecary.com",
    "note": "Teacher is Lisa Marie Haley (apothecary brand).",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/lisa-marie-haley.json",
    "skip_reason": null
   },
   {
@@ -1349,9 +1349,9 @@
    "base": "Massachusetts, USA",
    "website": "https://linktr.ee/melissamanifests",
    "note": "Linktree only.",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Too thin: no surname found anywhere, no website (a Linktree that is mostly affiliate links), no paid offering with a page of its own, about 3.1k followers in total, and YouTube videos under 80 views each. The page would pass the three-item minimum on those videos alone. Plan kept in the scratchpad in case she claims."
   },
   {
    "rank": 72,
@@ -1368,8 +1368,8 @@
    "base": "Bali, Indonesia",
    "website": "susiehemsted.com",
    "note": null,
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/susie-hemsted.json",
    "skip_reason": null
   },
   {
@@ -1387,8 +1387,8 @@
    "base": "Minneapolis, MN, USA",
    "website": "www.SarinaStone.com",
    "note": "Some offers framed as medical qigong and pain relief.",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/sarina-stone.json",
    "skip_reason": null
   },
   {
@@ -1406,8 +1406,8 @@
    "base": "Los Angeles, CA, USA",
    "website": "www.manojdias.com.au",
    "note": "Site is mostly press/brand-advisor; contact form only.",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/manoj-dias.json",
    "skip_reason": null
   },
   {
@@ -1425,8 +1425,8 @@
    "base": "Canada",
    "website": "https://bio.site/wildbecoming",
    "note": "Bio.site link page only; describes herself as epidemiologist and consciousness teacher.",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/amanda-machado.json",
    "skip_reason": null
   },
   {
@@ -1444,8 +1444,8 @@
    "base": "Hebden Bridge, UK",
    "website": "www.authenticliving.life",
    "note": null,
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/john-siddique.json",
    "skip_reason": null
   },
   {
@@ -1463,8 +1463,8 @@
    "base": "Florida, USA",
    "website": "linktr.ee/selenalael",
    "note": "Linktree leads to selenalael.com.",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/selena-lael.json",
    "skip_reason": null
   },
   {
@@ -1482,9 +1482,9 @@
    "base": "Melbourne, Australia",
    "website": "www.elliotttreves.com",
    "note": null,
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Too thin: his site says nothing to book right now and no events, he has no YouTube channel or books we could find, and apart from the Insight Timer link only one Insight Timer course (Take Control Of Your Karma; the other is titled for anxiety) and an undated, unpriced sound-session page would qualify."
   },
   {
    "rank": 79,
@@ -1501,8 +1501,8 @@
    "base": "British Columbia, Canada",
    "website": "https://linktr.ee/jana_roemer",
    "note": "Says former in-person offerings moved online; retreats still listed.",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/jana-roemer.json",
    "skip_reason": null
   },
   {
@@ -1520,8 +1520,8 @@
    "base": "Durham, ME, USA",
    "website": "dakotaearthcloud.com/insight",
    "note": null,
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/dakota-earth-cloud-walker.json",
    "skip_reason": null
   },
   {
@@ -3045,5 +3045,5 @@
    "skip_reason": null
   }
  ],
- "updated": "2026-10-31T17:20:18.182Z"
+ "updated": "2026-10-31T17:39:53.169Z"
 }

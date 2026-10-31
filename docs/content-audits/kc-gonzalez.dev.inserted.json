@@ -1,0 +1,69 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 349,
+    "healer_slug": "kc-gonzalez"
+  },
+  "rows": [
+    {
+      "table": "videos",
+      "id": 4306,
+      "slug": "tune-in-tuesday-yin-yoga-6226",
+      "title": "Tune in Tuesday Yin Yoga 6.2.26"
+    },
+    {
+      "table": "videos",
+      "id": 4307,
+      "slug": "tune-in-tuesday-yin-yoga-10725",
+      "title": "Tune in Tuesday Yin Yoga 10.7.25"
+    },
+    {
+      "table": "videos",
+      "id": 4308,
+      "slug": "feel-good-friday-yin-yoga-92625",
+      "title": "Feel Good Friday Yin Yoga 9.26.25"
+    },
+    {
+      "table": "videos",
+      "id": 4309,
+      "slug": "feel-good-friday-yin-yoga-111425",
+      "title": "Feel Good Friday Yin Yoga 11.14.25"
+    },
+    {
+      "table": "videos",
+      "id": 4310,
+      "slug": "summer-solstice-chakra-balancing-yin-yoga-61926",
+      "title": "Summer Solstice Chakra Balancing Yin Yoga 6.19.26"
+    },
+    {
+      "table": "courses",
+      "id": "1adbfde4-fdef-4b6e-be49-88b5e3d94dad",
+      "slug": "private-yoga-practice",
+      "title": "Private Yoga Practice"
+    },
+    {
+      "table": "courses",
+      "id": "baa8b392-2434-4ff3-9204-46ef74a51c33",
+      "slug": "reiki",
+      "title": "Reiki"
+    },
+    {
+      "table": "courses",
+      "id": "f244a159-4303-4486-9b35-745b4165c246",
+      "slug": "private-meditation",
+      "title": "Private Meditation"
+    },
+    {
+      "table": "free_resources",
+      "id": "82dd10fa-9768-4309-a698-43526a759a5f",
+      "slug": "kc-gonzalez-on-insight-timer",
+      "title": "KC Gonzalez on Insight Timer"
+    },
+    {
+      "table": "hub_teachers",
+      "id": "04cc0c59-23d3-40e8-b5f4-ceb1310058aa",
+      "title": "kc-gonzalez teaches at Insight Timer"
+    }
+  ],
+  "at": "2026-10-31T17:37:36.698Z"
+}

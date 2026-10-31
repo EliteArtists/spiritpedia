@@ -1,0 +1,127 @@
+{
+  "healer": {
+    "healer_slug": "amanda-machado",
+    "create": {
+      "name": "Amanda Machado",
+      "bio": "Amanda Machado is a Canada-based epidemiologist who teaches conscious living under the name Wild Becoming. Her background in public health research shapes the way she teaches: she sets scientific findings beside contemplative and traditional wisdom, and keeps her focus on what people can actually practise day to day. Her main themes are life purpose, self-knowledge, the emotional body, habits and daily rhythm, and the link between personal and collective wellbeing.\n\nMost of her teaching is shared through The Wild Becoming Podcast, a fortnightly show of conversations, short talks and guided meditations, with recent series on self-mastery (discipline, non-attachment, presence) and a reflective garden series. On Insight Timer she publishes guided meditations and talks on purpose, integrating spiritual practice into ordinary life, the Ayurvedic daily clock, intention and seasonal meditations for the winter solstice. She also posts short daily reflections on conscious living on Instagram, has a small YouTube channel of longer guided meditations, and has hosted live events for her community.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "worldwide",
+      "city": null,
+      "country": null,
+      "subjects": [
+        "soul-purpose",
+        "meditation",
+        "mindfulness"
+      ],
+      "website_url": "https://bio.site/wildbecoming",
+      "booking_url": "https://bio.site/wildbecoming",
+      "youtube_url": "https://www.youtube.com/@wildbecoming",
+      "instagram_url": "https://www.instagram.com/wildbecoming/",
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "Wildbecoming@gmail.com",
+      "image_urls": [
+        "https://media.bio.site/sites/7B69BDAB-1FAF-481D-8436-7F502AA92E78/SS9cP695cxT2rdUu94RdQ8.png"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "insight-timer",
+      "role": "instructor"
+    }
+  ],
+  "videos": [
+    {
+      "title": "The Core Connection Meditation",
+      "url": "https://www.youtube.com/watch?v=d7u-xlYw5sA",
+      "subjects": [
+        "meditation"
+      ],
+      "channel": "Wildbecoming"
+    },
+    {
+      "title": "The Bridge Meditation",
+      "url": "https://www.youtube.com/watch?v=BZ653xJ39SM",
+      "subjects": [
+        "meditation"
+      ],
+      "channel": "Wildbecoming"
+    },
+    {
+      "title": "Meditation: The Great Mother",
+      "url": "https://www.youtube.com/watch?v=fcBSie8GqZU",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "channel": "Wildbecoming"
+    },
+    {
+      "title": "How to Make A Vision Board in 2023 (Backed by Science)",
+      "url": "https://www.youtube.com/watch?v=rSr7R2dFJCo",
+      "subjects": [
+        "manifestation",
+        "soul-purpose"
+      ],
+      "channel": "Wildbecoming"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [
+    {
+      "title": "Amanda Machado on Insight Timer",
+      "url": "https://insighttimer.com/wildbecoming",
+      "description": "Her guided meditations and short talks on purpose, self-discovery, habits and seasonal practice, free to listen to.",
+      "featured": false,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation",
+        "soul-purpose"
+      ],
+      "image": "https://media.bio.site/sites/7B69BDAB-1FAF-481D-8436-7F502AA92E78/SS9cP695cxT2rdUu94RdQ8.png"
+    },
+    {
+      "title": "The Wild Becoming Podcast",
+      "url": "https://podcasts.apple.com/ca/podcast/the-wild-becoming-podcast-conscious-living/id1702592553",
+      "description": "Her free fortnightly podcast of talks, conversations and guided meditations on conscious living, purpose and self-mastery, with more than fifty episodes so far.",
+      "featured": true,
+      "resource_type": "practice",
+      "subjects": [
+        "mindfulness",
+        "soul-purpose",
+        "meditation"
+      ],
+      "image": "https://is1-ssl.mzstatic.com/image/thumb/Podcasts126/v4/a3/08/1f/a3081f56-1ae7-5531-3984-744428c53657/mza_4358345251440427579.jpg/1200x1200bf-60.jpg"
+    }
+  ],
+  "sprint": {
+    "hub": "insight-timer",
+    "rank": 75,
+    "insight_timer_url": "https://insighttimer.com/wildbecoming",
+    "tier_evidence": "Insight Timer 227 (profile, 31 Oct 2026); Instagram @wildbecoming 4,576 (og:description, 31 Oct 2026); YouTube @wildbecoming 8 subscribers (channel page); @wildbecomingpurpose Instagram did not load → ~4.8k total → local_hero",
+    "email": "yes",
+    "email_source": "https://bio.site/wildbecoming",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 4 source(s)",
+    "flags": [
+      "Thin listing: no website (a bio.site link page only), no paid offerings with their own page, and a four-video YouTube channel with under 110 views per video; it passes the three-item minimum only on videos.",
+      "Brand inbox (Wildbecoming@gmail.com) used as the email.",
+      "No details found on her training as a meditation teacher; the bio sticks to what her own pages say (epidemiologist, teacher of conscious living).",
+      "Only one usable photo (the same headshot appears on Insight Timer and her link page).",
+      "Not to be confused with the US journalist and author Amanda Machado, a different person.",
+      "Insight Timer bio could only be partly quoted by WebFetch; the bio check relied on her link page, podcast page and YouTube description.",
+      "Canada from Insight Timer; no city or in-person work found, so availability is worldwide."
+    ],
+    "left_out": [
+      "'Cultivate Your Purpose' (marked NEW on her link page): the button points to an Instagram account (@wildbecomingpurpose) that did not load, with no course page or price, so not listed.",
+      "Live events mentioned in podcast reviews: no dates or pages found.",
+      "Spotify link to the same podcast: duplicate.",
+      "Insight Timer tracks not listed individually; no Insight Timer courses; no books found."
+    ]
+  },
+  "images_final": true
+}

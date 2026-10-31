@@ -1,0 +1,145 @@
+{
+  "healer": {
+    "healer_slug": "sarina-stone",
+    "create": {
+      "name": "Sarina Stone",
+      "bio": "Sarina Stone is a qigong and meditation teacher based in Minneapolis who works in the Taoist tradition of Master Mantak Chia. She studied with him for about ten years and taught at Tao Garden, his retreat centre in northern Thailand, before building her own teaching practice in the United States. Alongside qigong she teaches Chi Nei Tsang, the Taoist abdominal massage, and has given intuitive readings and private guidance to long-term clients for many years.\n\nHer teaching centres on the classic Taoist inner alchemy practices, such as the Inner Smile and the Microcosmic Orbit, which she presents as ways of noticing emotions, moving energy through the body and settling the mind. She ties these to a playful interest in thought, intention and manifestation, and runs online lessons, downloadable guided practices, certification courses and consultations, with some material in French and a set of songs and practices for children. She is also the author of the Tequila series, light-hearted books that bring Taoist ideas to dating, partnership and intimacy, and she has a few recordings on Insight Timer.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "worldwide",
+      "city": null,
+      "country": null,
+      "subjects": [
+        "qi-gong",
+        "meditation",
+        "manifestation"
+      ],
+      "website_url": "https://www.sarinastone.com",
+      "booking_url": "https://www.sarinastone.com/shop/p/private-consultation",
+      "youtube_url": "https://www.youtube.com/@TaoLady",
+      "instagram_url": "https://www.instagram.com/the_taolady/",
+      "facebook_url": "https://www.facebook.com/TaoLady",
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "admin@sarinastone.com",
+      "image_urls": [
+        "https://images.squarespace-cdn.com/content/v1/665a7a286142956851dd3e71/e865b69d-0d3b-4157-acd7-93f85b5b8fd1/Sarina+headshot.png"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "insight-timer",
+      "role": "instructor"
+    }
+  ],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Private Consultation",
+      "url": "https://www.sarinastone.com/shop/p/private-consultation",
+      "description": "A 30- or 60-minute one-to-one session to ask about your qigong or Chi Nei Tsang practice, or about direction in life more generally. She may suggest a practice or guide you through one during the session.",
+      "price": "from $97 USD (30 minutes); $150 USD (1 hour)",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "qi-gong",
+        "meditation"
+      ],
+      "image": "http://static1.squarespace.com/static/665a7a286142956851dd3e71/665b4f1c22e4684b25241b56/674e137a4d8960562850d1e9/1787933648743/New+image.png?format=1500w"
+    },
+    {
+      "title": "Inner Smile Qigong Meditation Instruction Video Download",
+      "url": "https://www.sarinastone.com/shop/p/inner-smile-qigong-meditation-instruction-video-download",
+      "description": "A video lesson in the Inner Smile, the Taoist practice of directing a warm, smiling attention inward to the organs and the emotions linked with them. It is the first of three classic practices she teaches as a set.",
+      "price": "$14.95 USD",
+      "product_type": "download",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "qi-gong",
+        "meditation"
+      ],
+      "image": "http://static1.squarespace.com/static/665a7a286142956851dd3e71/665b4f1c22e4684b25241b56/67197d5b339bc009b0591179/1787923268220/inner+smile+video+.png?format=1500w"
+    },
+    {
+      "title": "MicroCosmic Orbit QiGong Meditation Instruction Video Download",
+      "url": "https://www.sarinastone.com/shop/p/microcosmic-orbit-qigong-meditation-instruction-video-download",
+      "description": "A video lesson that maps the points of the Microcosmic Orbit and shows how to circulate and store energy along it, the foundation practice of Taoist inner alchemy.",
+      "price": "$9.95 USD",
+      "product_type": "download",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "qi-gong",
+        "meditation"
+      ],
+      "image": "http://static1.squarespace.com/static/665a7a286142956851dd3e71/665b4f1c22e4684b25241b56/67197ec5bd32d801cc48d903/1787923269368/microcosmic+video+.png?format=1500w"
+    },
+    {
+      "title": "Tao of Manifestation CO-CREATION MADE EASY Guided Meditation MP3",
+      "url": "https://www.sarinastone.com/shop/p/tao-of-manifestation-co-creation-made-easy-guided-meditation-mp3",
+      "description": "A guided audio meditation for daily use that works with intention and visualisation, inviting you to picture what you want to create in work, relationships and everyday life.",
+      "price": "$9.95 USD",
+      "product_type": "download",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "manifestation",
+        "meditation"
+      ],
+      "image": "http://static1.squarespace.com/static/665a7a286142956851dd3e71/665b4f1c22e4684b25241b56/673f7cea41bc3e68afd1b3f7/1787930746291/tao-of-manifestation-audio.png?format=1500w"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Sarina Stone on Insight Timer",
+      "url": "https://insighttimer.com/sarinastone",
+      "description": "A small set of her Taoist qigong recordings, including a guided meditation and a short video practice, free to play.",
+      "featured": true,
+      "resource_type": "meditation",
+      "subjects": [
+        "qi-gong",
+        "meditation"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/665a7a286142956851dd3e71/e865b69d-0d3b-4157-acd7-93f85b5b8fd1/Sarina+headshot.png"
+    }
+  ],
+  "sprint": {
+    "hub": "insight-timer",
+    "rank": 73,
+    "insight_timer_url": "https://insighttimer.com/sarinastone",
+    "tier_evidence": "Insight Timer 740 (profile, 31 Oct 2026); Instagram @the_taolady 4,311 (og:description, 31 Oct 2026; linked from her site); YouTube @TaoLady 1.04k (channel page); Facebook TaoLady not readable without login → ~6.1k total → local_hero",
+    "email": "yes",
+    "email_source": "https://www.sarinastone.com/contact",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 25 source(s)",
+    "flags": [
+      "Her whole brand is framed as Medical QiGong and natural health (her Insight Timer bio calls her a medical Chi Kung instructor, the menu has a Pain Relief page); all medical, detox and condition-led items are out and the bio avoids that wording. Only four paid items survive, so a human may judge the listing too thin or too medical overall.",
+      "No usable videos: every non-medical video on her YouTube channel is under two minutes (mostly promos), and the longer ones are medical-framed.",
+      "Her Tequila series books exist (Open Library ISBN-10 0982638426 and 0982638450) but amazon.com /dp/ pages returned 500 to curl and WebFetch, so no books listed.",
+      "A second Instagram, @sarinastone (464 followers), was not counted because her site links @the_taolady.",
+      "Insight Timer bio could only be partly quoted by WebFetch; the bio check relied mainly on her own site pages.",
+      "Minneapolis base from Insight Timer; no in-person class schedule or address found, so availability is worldwide.",
+      "Insight Timer profile photo (side view with a watermark) not used; site headshot and YouTube avatar look like the same woman."
+    ],
+    "left_out": [
+      "Basic Medical QiGong Online Certification Course ($450): medical.",
+      "Chi Nei Tsang Abdominal Massage Online Certification Course ($455), Chi Nei Tsang lessons and bundle: sold on pain, detox and a 'Constipation Cure' video.",
+      "5 Element Organs Elixir QiGong video courses (heart, lung, liver, kidney, spleen, brain 'health'): organ-health and medical framing.",
+      "Six Healing Sounds video and MP3, and the combined Inner Smile & Six Healing Sounds MP3: 'healing' in the title; borderline, left out.",
+      "Tao of Cleansing and Tao of Beauty MP3s: detoxification framing.",
+      "Wisdom Chi Kung meditation: claims to repair brain function and increase memory.",
+      "World Link LEARN REMOTE HEALING MP3: remote healing; borderline, left out.",
+      "Heart Connection Meditation MP3: guided by another instructor (R. Mordant Mahon).",
+      "Sexual energy packages and 'Women's Tao Sexual Health' practices: sexual-health framing.",
+      "Taoist Healing Massage and Pain Relief pages: health claims.",
+      "Podcast 'Tequila Drinker's Guide to Health and Wellness': health framing.",
+      "MP3 versions duplicating the listed video lessons, French-language versions, children's songs and mandala downloads: not chosen.",
+      "Tequila series books: not confirmed on amazon.com."
+    ]
+  },
+  "images_final": true
+}
