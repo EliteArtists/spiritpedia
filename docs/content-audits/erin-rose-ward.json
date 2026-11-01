@@ -1,0 +1,153 @@
+{
+  "healer": {
+    "healer_slug": "erin-rose-ward",
+    "create": {
+      "name": "Erin Rose Ward",
+      "bio": "Erin Rose Ward teaches yoga, meditation, breathwork and free-form dance from her home in Ojai, California. Her yoga path began with a teacher training at Kripalu in 2012, and she went on to teach for more than a decade in New York and Los Angeles, including for the online movement platform The Class. Her studies have taken in Tantra yoga, Tibetan Buddhism and mystic Christianity, and she names Kevin Courtney of INSIGHT, 360 Emergence co-founder Kate Shela and Lena George among her mentors. She has spoken openly about how finding yoga in her twenties helped her through a hard period, and that experience shapes her steady, warm style of teaching.\n\nHer classes centre on the body as a place of refuge and on the heart's capacity to hold whatever life brings. Each week she leads yoga in Ojai and The 360 Emergence, a guided, music-led dance practice, in Topanga, with monthly sessions in West Los Angeles. Online she runs The Refuge, an eight-week circle for women built around embodiment, wisdom teaching and council, and with her husband Andrew Griffes she hosts evenings for couples. She also mentors students one to one and leads weekend retreats at Kripalu.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local_online",
+      "city": "Ojai",
+      "country": "United States",
+      "subjects": [
+        "yoga",
+        "breathwork",
+        "meditation"
+      ],
+      "website_url": "https://www.erinroseward.com/",
+      "booking_url": "https://www.erinroseward.com/events",
+      "youtube_url": null,
+      "instagram_url": "https://www.instagram.com/erin_rose_ward/",
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "erinrward@gmail.com",
+      "image_urls": [
+        "https://images.squarespace-cdn.com/content/v1/651b9c6e8d7ef93792f61f21/5bdacb87-952d-4f27-84a8-d3dcd3dd4297/LaurenPurves-37.jpg?format=1000w",
+        "https://kripalu.org/sites/default/files/2025-04/Erin%2520Rose%2520Ward.png"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "kripalu",
+      "role": "instructor"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Community Conversation with Erin - \"Yoga Nidra\"",
+      "url": "https://www.youtube.com/watch?v=pgFQHJeT5ZU",
+      "subjects": [
+        "yoga",
+        "meditation"
+      ],
+      "channel": "Inner Dimension"
+    },
+    {
+      "title": "\"Yoga Nidra\" Series with Erin - Community Conversation",
+      "url": "https://www.youtube.com/watch?v=xvsmlMxIPGs",
+      "subjects": [
+        "yoga",
+        "meditation"
+      ],
+      "channel": "Inner Dimension"
+    },
+    {
+      "title": "S1 E4 The Great Mother, Archetypes & Alchemy with Erin Rose Ward",
+      "url": "https://www.youtube.com/watch?v=opJTDQsUxBk",
+      "subjects": [
+        "spirituality",
+        "mysticism"
+      ],
+      "channel": "Maxine Divon"
+    }
+  ],
+  "books": [],
+  "courses": [
+    {
+      "title": "Cultivate Your Energy: Embodied Practices to Become a Lighthouse",
+      "url": "https://kripalu.org/experiences/cultivate-your-energy-embodied-practices-become-lighthouse",
+      "description": "A long weekend at Kripalu in the Berkshires built around four practices: The 360 Emergence free-form dance, Tantric-style meditation that moves prana through the body, expressive breathwork and yoga nidra, with some yoga asana. It is meant for anyone who wants time in community to steady themselves and feel freer in their body.",
+      "price": "$399 USD plus lodging",
+      "product_type": "retreat",
+      "start_date": "2026-11-12",
+      "end_date": "2026-11-15",
+      "subjects": [
+        "breathwork",
+        "yoga",
+        "meditation"
+      ],
+      "image": "https://kripalu.org/sites/default/files/styles/og_image/public/2025-08/LightHandsHeroGettyImages-583735462.jpg?itok=w2EcovD0"
+    },
+    {
+      "title": "The Refuge",
+      "url": "https://www.erinroseward.com/the-refuge-1",
+      "description": "A seasonal eight-week online circle for women, meeting live on Zoom for ninety minutes each week. Each week takes one theme, from breath and voice to play and purpose, with somatic practices between sessions, a private community space and lasting access to the recordings.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "spirituality",
+        "meditation"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/651b9c6e8d7ef93792f61f21/cb0140ab-afe0-4302-abd0-18d32572d747/ERINROSE_ahrlingphotography-25.jpg"
+    },
+    {
+      "title": "Weekly Classes in Ojai, Topanga and Los Angeles",
+      "url": "https://www.erinroseward.com/events",
+      "description": "Her regular in-person classes: yoga on Tuesday mornings in Ojai, The 360 Emergence dance on Wednesday evenings in Topanga, and monthly dance sessions in Ojai and West Los Angeles. Booking is through the events page.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga",
+        "spirituality"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/651b9c6e8d7ef93792f61f21/0de996f7-bd02-419b-8233-6aef9a4acc1d/Erin_Rose_Ward_Events_Banner_Web.jpg"
+    },
+    {
+      "title": "DATE NIGHT: An Evening for Couples",
+      "url": "https://www.erinroseward.com/events/date-night-an-evening-for-couples-kggyr-c94h7-x6fd4-2ekme",
+      "description": "A two-hour evening for couples in Ojai, hosted with her husband Andrew Griffes. Guided movement and connection exercises invite partners to turn towards each other and meet other couples on a similar path.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": "2026-12-10",
+      "end_date": "2026-12-10",
+      "subjects": [
+        "conscious-relationships"
+      ],
+      "image": "http://static1.squarespace.com/static/651b9c6e8d7ef93792f61f21/651b9d3781e89d5009906432/6a8df5e943c775573c39b639/1787688574647/DSC05335-2.jpg?format=1500w"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "hub": "kripalu",
+    "rank": 104,
+    "hub_url": "https://kripalu.org/people/erin-rose-ward",
+    "tier_evidence": "Instagram @erin_rose_ward 19K (og:description, 1 Nov 2026); no YouTube channel of her own found; Substack (@erinroseward) count not shown → ~19k total → local_hero",
+    "email": "yes",
+    "email_source": "https://www.erinroseward.com/contact",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 11 source(s)",
+    "flags": [
+      "The queue said no site was found; her site is erinroseward.com (linked to her Kripalu programme and Instagram), so identity is clear.",
+      "Her mentorship page also shows erinroseward@gmail.com; the contact page address (erinrward@gmail.com) is used.",
+      "A podcast describes her as a psychedelic support guide at Nectara; that work is not on her own site and nothing of it was listed.",
+      "1:1 Mentorship ($300 single session, packages to $6,000) lists somatic therapy and depth psychology and speaks of healing what pains you; left out as borderline therapy.",
+      "The Refuge is listed undated as a seasonal programme; the page says the Fall 2026 cohort is enrolling but gives no start date or price, and her digital-offerings page calls it a 'nervous-system healing course' (that wording is not used here).",
+      "Contact page gives Topanga, CA; her home page says she lives and teaches in Ojai, which is used as the city.",
+      "Both photos are clearly the same woman (site headshot by Lauren Purves; Kripalu portrait)."
+    ],
+    "left_out": [
+      "1:1 Mentorship (erinroseward.com/mentorship): borderline therapy wording; see flags.",
+      "Free meditation and movement series on her Circle community (erinroseward.circle.so): needs an account and the page could not be opened.",
+      "Virtual Date Night ($45 per couple, 10 Sept 2026) and earlier Date Night and 360 Emergence dates: already past.",
+      "YouTube: 'Guided Breathwork Experience for Psychedelic Integration' and the Nectara podcast episode (psychedelic framing); 'What does healing mean to me?', 'Grief is Grace' and 'The Power Of Dance: A Conversation on Movement, Healing and Self-Trust' (borderline healing or grief wording); 'Introduction to \"Yoga Nidra\" with Erin' and 'ABOUT Erin' (under two minutes).",
+      "Unity of the Oaks and Jim Cutsinger videos: she is a co-guest, not the main speaker."
+    ]
+  },
+  "images_final": true
+}

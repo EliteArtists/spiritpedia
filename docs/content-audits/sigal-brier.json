@@ -1,0 +1,126 @@
+{
+  "healer": {
+    "healer_slug": "sigal-brier",
+    "create": {
+      "name": "Sigal Brier",
+      "bio": "Sigal Brier, known to many of her students as Rabbi Sigal, is an ordained rabbi and meditation teacher who draws together Jewish mysticism, contemplative practice and psychology. She studied at the Reconstructionist Rabbinical College, where she took a master's degree in Jewish studies, and she also holds a master's in organisational psychology from West Chester University. She has meditated for more than thirty years, has trained in yoga and in several body-based and psycho-spiritual approaches, and spent over a decade serving a congregation.\n\nHer own approach, which she calls the Mendful Path, begins from the view that people are already whole and grow through kindness, self-compassion and honest conversation rather than through striving or repair. On retreat she weaves together guided meditation, yoga nidra, teachings from Kabbalah, gentle movement and group dialogue, and she leads weekend programmes at Kripalu and has taught at the Open Center in New York. She also mentors individuals, couples and working teams, officiates Jewish and interfaith ceremonies, works in clay and has recorded albums of Hebrew and English chant. Her TEDx talk in Cape May looked at what it takes to live as yourself.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "worldwide",
+      "city": null,
+      "country": null,
+      "subjects": [
+        "mysticism",
+        "meditation",
+        "spirituality"
+      ],
+      "website_url": "https://rabbisigal.org/",
+      "booking_url": "https://rabbisigal.org/mentoring/",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": "https://www.facebook.com/mendfullife/",
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "shmayoga@gmail.com",
+      "image_urls": [
+        "https://rabbisigal.org/wp-content/uploads/2025/07/PISLE2738-1014x1024.jpg"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "kripalu",
+      "role": "instructor"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Be Yourself, No Matter What They Say: Sigal Brier at TEDxCapeMay 2013",
+      "url": "https://www.youtube.com/watch?v=S1yt6FFndM0",
+      "subjects": [
+        "soul-purpose",
+        "spirituality"
+      ],
+      "channel": "TEDx Talks"
+    },
+    {
+      "title": "Mendful Path Of Kabbalah with Rabbi Sigal",
+      "url": "https://www.youtube.com/watch?v=HXmTsR6CrKw",
+      "subjects": [
+        "mysticism",
+        "spirituality"
+      ],
+      "channel": "Hormone Prosperity Coach Dr. Kyrin "
+    }
+  ],
+  "books": [],
+  "courses": [
+    {
+      "title": "Mystical Secrets and Self-Compassion to Empower Your Life",
+      "url": "https://kripalu.org/experiences/mystical-secrets-and-self-compassion-empower-your-life",
+      "description": "A year's-end weekend at Kripalu in Stockbridge, Massachusetts, for taking stock of the past twelve months and stepping into the new one more at ease with yourself. Sigal combines guided meditation, yoga nidra, insights from the mystical tradition and open group conversation.",
+      "price": "$360 USD tuition plus lodging",
+      "product_type": "retreat",
+      "start_date": "2026-12-27",
+      "end_date": "2026-12-29",
+      "subjects": [
+        "mysticism",
+        "meditation"
+      ],
+      "image": "https://kripalu.org/sites/default/files/styles/og_image/public/2019-05/_DSC0560_meditationhands_hero.jpg?itok=U30fnqn0"
+    },
+    {
+      "title": "Mendful Life Mentoring",
+      "url": "https://rabbisigal.org/mentoring/",
+      "description": "One-to-one and couples mentoring with Sigal, plus facilitation for groups and working teams, built around finding and following your deeper purpose. She draws on meditation, breath, movement and contemplative conversation, and a short first consultation is offered free.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "soul-purpose",
+        "meditation"
+      ],
+      "image": "https://rabbisigal.org/wp-content/uploads/2025/07/PISLE2738-1014x1024.jpg"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Giving Thanks: A Daily Practice Through Challenging Times",
+      "url": "https://rabbisigal.org/2024/11/24/giving-thanks-a-daily-practice-through-challenging-times/",
+      "description": "A short article on gratitude as an everyday spiritual discipline, starting from the Jewish morning blessing Modeh Ani. It closes with a simple three-step writing exercise and ideas for bringing blessings to a shared meal.",
+      "featured": true,
+      "resource_type": "practice",
+      "subjects": [
+        "spirituality"
+      ],
+      "image": "http://rabbisigal.org/wp-content/uploads/2024/07/cropped-IMG_2280-scaled-1.jpeg"
+    }
+  ],
+  "sprint": {
+    "hub": "kripalu",
+    "rank": 108,
+    "hub_url": "https://kripalu.org/people/sigal-brier",
+    "tier_evidence": "Facebook 'Mendful' (her own Mendful Path page, linked from her site) 278 followers (og:description, 1 Nov 2026); no YouTube channel, Instagram or X account of her own found → ~280 total → local_hero",
+    "email": "yes",
+    "email_source": "https://rabbisigal.org/weddings/",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 10 source(s)",
+    "flags": [
+      "The email is published on her own site in spelled-out form ('shmayoga at gmail(dot)com' on the Wedding Officiant page, 'shmayoga at gmail' on the Mentoring page); I wrote it as a normal address.",
+      "Only one photo used: the Kripalu headshot is a crop of the same picture as the one on her site.",
+      "Availability set to worldwide: she officiates in person on Florida's west coast and her phone has a Philadelphia area code, but no city where she teaches or mentors is stated.",
+      "Both videos are on other channels: the TEDx talk on TEDx Talks, and a podcast interview on the channel of a hormone/health coach (Dr. Kyrin Dunston); the interview title is clean but the host's channel is health-led. I dropped the '#026:' episode prefix from its title.",
+      "Her Kripalu programmes and mentoring list Internal Family Systems and polyvagal ideas among the methods; her work is spiritual mentoring and Jewish mysticism rather than therapy, so I kept her.",
+      "Her blog post 'Giving Thanks' mentions research on gratitude and mental health in passing; my description leaves that out."
+    ],
+    "left_out": [
+      "Empower Yourself to Live on Purpose with Self Compassion (Kripalu, 8-11 Aug 2027): announced on her site but no Kripalu programme page yet, so no URL to link.",
+      "Wedding and life-cycle ceremony officiating (rabbisigal.org/weddings/): a ceremony service rather than teaching.",
+      "MENDitations guided meditations on SoundCloud: the set linked from her Mendful page returns 404 on SoundCloud oEmbed and the profile's tracks could not be read.",
+      "Books and Hebrew-English chant CDs: no Amazon listing found.",
+      "Speaking invitations (rabbi in residence, workshops, conferences) on her Mentoring page: no separate page or price."
+    ]
+  },
+  "images_final": true
+}

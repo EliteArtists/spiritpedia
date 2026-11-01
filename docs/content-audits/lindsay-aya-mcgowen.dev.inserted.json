@@ -1,0 +1,39 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 533,
+    "healer_slug": "lindsay-aya-mcgowen"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "4f000598-e791-4d6a-9c9f-c7f781887b06",
+      "slug": "the-ascension-conversation",
+      "title": "The Ascension Conversation"
+    },
+    {
+      "table": "courses",
+      "id": "1f0b968b-7f3a-44ae-9ef3-e76426f62fb9",
+      "slug": "individual-channeled-readings",
+      "title": "Individual Channeled Readings"
+    },
+    {
+      "table": "courses",
+      "id": "08e52dcd-7270-4755-a08d-3b5873b8b665",
+      "slug": "telepathic-trainings",
+      "title": "Telepathic Trainings"
+    },
+    {
+      "table": "courses",
+      "id": "a7639a71-ef24-4365-baa0-14918ed574e0",
+      "slug": "custom-group-workshops",
+      "title": "Custom Group Workshops"
+    },
+    {
+      "table": "hub_teachers",
+      "id": "33f1eecd-ae9c-45d9-88a1-35cc78d59ff9",
+      "title": "lindsay-aya-mcgowen teaches at Kripalu Center for Yoga & Health"
+    }
+  ],
+  "at": "2026-11-01T15:00:56.409Z"
+}
