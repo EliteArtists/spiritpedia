@@ -3762,7 +3762,7 @@
    "base": "Washington, DC, USA",
    "website": "https://purposeblue.com/?utm_source=insighttimer.com&utm_medium=profile",
    "note": "PurposeBlue site looks dated (last retreat listed 2021).",
-   "status": "planned",
+   "status": "dev",
    "plan": "docs/content-audits/laurie-cameron.json",
    "skip_reason": null
   },
@@ -3781,7 +3781,7 @@
    "base": "Nevada, USA",
    "website": "linktr.ee/livemindfullee",
    "note": "Linktree; own site leepapa.com.",
-   "status": "planned",
+   "status": "dev",
    "plan": "docs/content-audits/lee-papa.json",
    "skip_reason": null
   },
@@ -3800,7 +3800,7 @@
    "base": "Honolulu, HI, USA",
    "website": "linktr.ee/melinda",
    "note": "Melinda Quesenberry; Linktree points to melindaquesenberry.com.",
-   "status": "planned",
+   "status": "dev",
    "plan": "docs/content-audits/melinda-quesenberry.json",
    "skip_reason": null
   },
@@ -3914,8 +3914,8 @@
    "base": "Los Angeles, CA, USA",
    "website": "www.amybosthenegar.com",
    "note": "Site now at amyelizabethbost.com.",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/amy-elizabeth-bost.json",
    "skip_reason": null
   },
   {
@@ -3933,9 +3933,9 @@
    "base": "Oslo, Norway",
    "website": "https://soulsoundmeditation.com",
    "note": "Small GoDaddy site, copyright 2022; email is a mailto button on the home page.",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Too thin: her Soul Sound Meditation site is a single 2022 page with no offerings, prices or free resources of its own, no YouTube or books were found, so the Insight Timer link would be the only item."
   },
   {
    "rank": 208,
@@ -3952,9 +3952,9 @@
    "base": "Tauranga, New Zealand",
    "website": "https://www.kathrynoverall.com/",
    "note": "Christian contemplative spiritual director; works globally via Zoom.",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "No longer teaching for now: her spiritual direction page says she is on sabbatical from her practice, her Insight Timer uploads are songs, and her current paid work is website design for spiritual directors, so there is no live offering to list."
   },
   {
    "rank": 209,
@@ -3971,9 +3971,9 @@
    "base": "Independence, KY, USA",
    "website": "https://thegratitudecoach.com/?utm_source=insighttimer.com&utm_medium=profile",
    "note": "Given URL redirects to scienceofthemindset.com.",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Health rule and not mainly a teacher: her Insight Timer tracks include breast cancer and healing affirmations, her one book is a mindfulness programme for PTSD, and her site mainly sells writing services and marketing and finance bundles, leaving only a basic coaching package and a podcast."
   },
   {
    "rank": 210,
@@ -3990,9 +3990,9 @@
    "base": "Byron Bay, NSW, Australia",
    "website": "https://edoandjo.com/",
    "note": "Homepage is a splash for their Mantrafy app.",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "A mantra music duo rather than a teacher: Jo Mall Kahn died in 2015, the site sells their final albums, and the homepage now promotes Edo's Mantrafy app; nothing teaching-led remains to list."
   },
   {
    "rank": 211,
@@ -4066,8 +4066,8 @@
    "base": "Northfield, MN, USA",
    "website": "charlesfreligh.com",
    "note": null,
-   "status": "todo",
-   "plan": null,
+   "status": "planned",
+   "plan": "docs/content-audits/charles-freligh.json",
    "skip_reason": null
   },
   {
@@ -4199,9 +4199,9 @@
    "base": "Nairobi, Kenya",
    "website": "linktr.ee/zawadinyongo",
    "note": "Linktree only; links a Google Form and a Calendly booking; fundraising for her sound healing training.",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Strict health rule: her own site, zawadinyongo.com, sells her SoulCare sessions through a list headed by 'Yoga for Depression & Anxiety' alongside somatic healing, play, art and music therapy, so a listing would send people to condition-sold pages; beyond that she has no offering pages of her own (a Linktree, a Calendly call and Insight Timer tracks), and the Google Form in the queue is a reviews form, not a contact form (her site does publish an email)."
   },
   {
    "rank": 222,
@@ -4218,9 +4218,9 @@
    "base": "St. Louis, MO, USA",
    "website": "thomasjbushlack.com",
    "note": "Site footer carries spam/gambling links, so it may be compromised; contact is a form on the home page.",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "No working contact route of his own: thomasjbushlack.com is now a static copy of his old site with a footer of gambling and 'aged domain' spam links (it looks taken over), its old pages return 404, its only form is a dead newsletter box (action '#'), and no email is published there or on Insight Timer; he has also moved to a senior role at the Catholic Health Association, and nothing else of his (courses, books, own videos) could be confirmed."
   },
   {
    "rank": 223,
@@ -4256,9 +4256,9 @@
    "base": "Oosterbeek, Netherlands",
    "website": "https://www.devavasuda.nl",
    "note": "Dutch art site; contact form on the home page (only a template placeholder email).",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Too thin and not teaching now: devavasuda.nl is a Dutch painter's site (paintings, exhibitions, poetry, songs) with no classes, sessions, courses or retreats, her YouTube channel holds songs only (music-only is excluded), there are no books, and her Insight Timer tracks were last added about six years ago, so nothing beyond the Insight Timer link would pass the rules."
   },
   {
    "rank": 225,
@@ -4275,9 +4275,9 @@
    "base": "Sarlat-la-Canéda, France",
    "website": "https://stilljustjames.com/about-the-author/",
    "note": "Given about page is 404; site is a Ghost newsletter/book site with subscribe only, no offers.",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "No published email and no contact form: stilljustjames.com is a Ghost newsletter site for his book Tranquillity's Secret with only subscribe and sign-in (the one address in its code is the theme placeholder jamie@example.com), the about-the-author page in the queue is a 404, and no other contact route of his own could be found; the site also offers nothing to list beyond paywalled articles, and its about page frames the meditation as protecting you from 'traumatic harm'."
   },
   {
    "rank": 226,
@@ -4294,8 +4294,8 @@
    "base": "Oregon, USA",
    "website": "www.moonwandering.com",
    "note": null,
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/whitney-durrant.json",
    "skip_reason": null
   },
   {
@@ -4313,9 +4313,9 @@
    "base": "Folkestone, UK",
    "website": "https://endaquealy.com",
    "note": "Site has only 'Talk to Enda' booking links, no email; positions as performance work, 'not coaching, not therapy'.",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "His site (endaquealy.com) now sells one-to-one high-performance work for founders, billed as 'not coaching, not therapy', rather than spiritual teaching, and it publishes no email and no contact form, only a bookme.name booking link, a Telegram group and LinkedIn; his Insight Timer uploads date from about six years ago."
   },
   {
    "rank": 228,
@@ -4332,9 +4332,9 @@
    "base": "Santa Fe, NM, USA",
    "website": "https://www.bethbudesheim.com/",
    "note": "Contact form only.",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Strict health rule: her own site sells energy-healing sessions on conditions (the home page says sessions support physical healing including illness, IBS, fertility, Lyme's and long covid, and that clients report physical symptoms gone; the Sanctuary programme page targets anxiety, depression, digestion issues, fatigue and chronic health issues), so a listing would send people to those pages. She also publishes no email, only a contact page."
   },
   {
    "rank": 229,
@@ -4351,10 +4351,10 @@
    "base": "Dublin, Ireland",
    "website": "www.spontaneous-evolution.com/homecoming-8-week-shadow-integration-course",
    "note": "Contact form only.",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "No working contact route: no email is published and his contact page (spontaneous-evolution.com/contact/) returns a WordPress critical error (HTTP 500) on 1 Nov 2026, as does the Homecoming course page; booking is only via TidyCal. His offerings page also markets sessions to people with alcohol, weed or drug issues, which falls under the strict health rule."
   }
  ],
- "updated": "2026-11-01T19:21:06.660Z"
+ "updated": "2026-11-01T19:25:05.661Z"
 }
