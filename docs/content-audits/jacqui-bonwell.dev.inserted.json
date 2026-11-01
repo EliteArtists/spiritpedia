@@ -1,0 +1,33 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 535,
+    "healer_slug": "jacqui-bonwell"
+  },
+  "rows": [
+    {
+      "table": "videos",
+      "id": 5569,
+      "slug": "loving-kindness-meditation-6-mins-w-jacqui",
+      "title": "LOVING KINDNESS MEDITATION (6 mins) w/ Jacqui"
+    },
+    {
+      "table": "books",
+      "id": 1687,
+      "slug": "holy-shift-one-sutra-at-a-time-jacqui-bonwell",
+      "title": "Holy Shift: One Sutra at a Time"
+    },
+    {
+      "table": "books",
+      "id": 1688,
+      "slug": "migrations-an-almanac-for-the-soul-jacqui-bonwell",
+      "title": "Migrations: An Almanac for the Soul"
+    },
+    {
+      "table": "hub_teachers",
+      "id": "b8ce7835-77e5-47cd-bf0a-7dd369dc4e50",
+      "title": "jacqui-bonwell teaches at Kripalu Center for Yoga & Health"
+    }
+  ],
+  "at": "2026-11-01T15:05:53.349Z"
+}

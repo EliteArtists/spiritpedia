@@ -1,0 +1,107 @@
+{
+  "healer": {
+    "healer_slug": "jacqui-bonwell",
+    "create": {
+      "name": "Jacqui Bonwell",
+      "bio": "Jacqui Bonwell is a Massachusetts yoga and meditation teacher who came to the mat after years in social work, probation and child protection. She was in the first 200-hour training class run by Open Doors Yoga in Weymouth in 2005, later completed her 500-hour certification with Rolf Gates, and has since studied the energy teachings of Caroline Myss and Anodea Judith. She is also a Reiki Master in the Usui lineage and holds yin and prenatal yoga certifications.\n\nSince 2010 she has run the Sacred Seeds Yoga School, training several hundred new teachers at the 200- and 300-hour levels, and she created CLIR, a restorative chair yoga certification for prisons, care homes and other places where floor props are not available. Her classes lean on chakra themes, breath, journaling and long, quiet restorative holds. She teaches weekly in the Boston area, guests at studios across Massachusetts and Maine, has presented at Kripalu since 2012, and leads yoga fundraisers for children's and veterans' charities. She co-wrote the contemplative almanac Migrations with Andy Cahill and in 2026 published Holy Shift, a book on the Yoga Sutras.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local",
+      "city": "Westwood",
+      "country": "United States",
+      "subjects": [
+        "yoga",
+        "meditation",
+        "chakra-healing"
+      ],
+      "website_url": "https://www.jacquibonwellyoga.com/",
+      "booking_url": "https://www.jacquibonwellyoga.com/teaching-schedule",
+      "youtube_url": "https://www.youtube.com/channel/UCvY3FH5aUsXf8nEI5Q1uTGg",
+      "instagram_url": "https://www.instagram.com/jacquibonwell/",
+      "facebook_url": "https://www.facebook.com/jacqui.bonwell",
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "jacquibonwell@gmail.com",
+      "image_urls": [
+        "https://kripalu.org/sites/default/files/2015-10/Jacqui-Bonwell_2022.jpg"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "kripalu",
+      "role": "instructor"
+    }
+  ],
+  "videos": [
+    {
+      "title": "LOVING KINDNESS MEDITATION (6 mins) w/ Jacqui",
+      "url": "https://www.youtube.com/watch?v=2SOXSXVXMeM",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "channel": "Jacqui Bonwell"
+    }
+  ],
+  "books": [
+    {
+      "title": "Holy Shift: One Sutra at a Time",
+      "slug": "holy-shift-one-sutra-at-a-time-jacqui-bonwell",
+      "author": "Jacqui Bonwell",
+      "asin": "B0HFLKV82Y",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "A paperback released in September 2026 that takes the Yoga Sutras of Patanjali a line at a time. Each sutra is paired with a plain reflection on how its teaching might change one small habit of thought in ordinary life.",
+      "subjects": [
+        "yoga",
+        "ancient-wisdom",
+        "spirituality"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/B0HFLKV82Y.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "Migrations: An Almanac for the Soul",
+      "slug": "migrations-an-almanac-for-the-soul-jacqui-bonwell",
+      "author": "Jacqui Bonwell, Andy Cahill",
+      "asin": "1095711326",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "A contemplative book co-written with Andy Cahill and published in 2019. Set out as an almanac, it is meant to be dipped into over time as a companion to quiet reflection and meditation.",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1095711326.01._SCLZZZZZZZ_.jpg"
+    }
+  ],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "hub": "kripalu",
+    "rank": 116,
+    "hub_url": "https://kripalu.org/people/jacqui-bonwell",
+    "tier_evidence": "Instagram @jacquibonwell 2,374 (og:description, 1 Nov 2026); Facebook jacqui.bonwell 3,775 (og:description, 1 Nov 2026); YouTube @jacquibonwell4828 95 (channel header, 1 Nov 2026) → ~6,244 total → local_hero",
+    "email": "yes",
+    "email_source": "https://www.jacquibonwellyoga.com/300hr-ya-adv-yoga-training-certific",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 9 source(s)",
+    "flags": [
+      "Her Kripalu programme The Art of Hibernation Retreat (5-7 Feb 2027, tuition $360 plus lodging) was left out because its hub description promises to 'balance your adrenal fatigue'; it is otherwise a rest and restorative weekend, so a human may want to add it back with a clean description.",
+      "With the Kripalu programme left out she has only three items (two books and one six-minute YouTube meditation), which is at the thin end of the bar.",
+      "The website listed on Kripalu, jacquibonwell.com, redirects to jacquibonwellyoga.com; the email is a personal Gmail shown in the site's 'Get In Touch' button and in plain text on her teacher-apprenticeship page.",
+      "Availability set to local with Westwood, MA: her schedule lists weekly classes at Life Time Westwood plus guest classes at studios around Massachusetts; her site also mentions owning the Canton Yoga Shala, which may or may not still be current.",
+      "Only one photo (the Kripalu headshot) could be confirmed; her website images are drawings, book covers and a stadium screen."
+    ],
+    "left_out": [
+      "The Art of Hibernation Retreat at Kripalu (5-7 Feb 2027): hub description names adrenal fatigue (health rule, borderline).",
+      "Sacred Seeds 200-hour teacher training (Spring 2026, Scarborough, ME), 300-hour apprenticeship (Oct 2024), CLIR chair yoga certification (2021) and Twenty is Plenty (September mornings): dated and already past.",
+      "Weekly classes at Life Time Westwood and guest studio classes: no page of their own with a unique URL.",
+      "Other YouTube uploads (a thank-you card from students and a blooper clip): not teaching.",
+      "Book descriptions on Amazon could not be read in full; descriptions are drawn from her site and the Holy Shift cover."
+    ]
+  },
+  "images_final": true
+}

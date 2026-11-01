@@ -1,0 +1,188 @@
+{
+  "healer": {
+    "healer_slug": "hannah-muse",
+    "create": {
+      "name": "Hannah Muse",
+      "bio": "Hannah Muse teaches yoga, meditation and the mythology of the yoga tradition from Santa Cruz, California. Her root teacher was Baba Hari Dass, and her meditation practice draws on Theravada Buddhism, with Jack Kornfield, Tara Brach and Tuere Sala among the teachers she names as formative. She came to teaching from work in social and environmental campaigning, and that thread of service still runs through what she does: she leads the Yoga for All Movement, which brings yoga and mindfulness to people in prison and to communities the wellness world tends to overlook.\n\nShe directs the Awake Heart 200- and 300-hour yoga and mindfulness teacher trainings, held partly at Mount Madonna Center, and has trained several hundred teachers. Online she guides Shelter in the Heart, a meditation group that meets twice a week with a dharma talk and time for journaling and sharing, and The Ritual, a long class that mixes breath, movement, music and storytelling. She also teaches in person at Pleasure Point Yoga in Santa Cruz. For over a decade she has led pilgrimages to temples in southern India, alongside service trips to Guatemala and retreats at Esalen, where she uses myths and archetypes as a way into practice. She has appeared at Wanderlust, Bhakti Fest and Electric Forest.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local_online",
+      "city": "Santa Cruz",
+      "country": "United States",
+      "subjects": [
+        "yoga",
+        "meditation",
+        "mindfulness"
+      ],
+      "website_url": "https://hannahmuse.com/",
+      "booking_url": "https://hannahmuse.com/private-sessions",
+      "youtube_url": "https://www.youtube.com/channel/UCpLPKEtlJD5eid2N164L5Cg",
+      "instagram_url": "https://www.instagram.com/hannah.j.muse/",
+      "facebook_url": "https://www.facebook.com/hannahmuseyoga/",
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "care@hannahmuse.com",
+      "image_urls": [
+        "https://cdn.prod.website-files.com/602d8561ae2fe6ec8347c903/6168a6afcbacd337317e211c_Hannah-Muse-RG.jpg",
+        "https://images.squarespace-cdn.com/content/v1/5bcbfc0db10f25252d34f919/1590279144578-8EE297PRLTY85VIY5PT2/wy4_6642.JPG?format=750w"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "esalen",
+      "role": "instructor"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Yoga for Happiness with Hannah Muse",
+      "url": "https://www.youtube.com/watch?v=g1dq77QVIDw",
+      "subjects": [
+        "yoga"
+      ],
+      "channel": "Wave Street Studios"
+    },
+    {
+      "title": "Fresh Takes From The Forest - Hannah Muse Yoga",
+      "url": "https://www.youtube.com/watch?v=jlPZ_sH1jKA",
+      "subjects": [
+        "yoga"
+      ],
+      "channel": "Electric Forest"
+    },
+    {
+      "title": "Fresh Takes From The Forest - Hannah Muse: 15 min Breathing Break",
+      "url": "https://www.youtube.com/watch?v=6guXnzAcL9I",
+      "subjects": [
+        "breathwork",
+        "meditation"
+      ],
+      "channel": "Electric Forest"
+    },
+    {
+      "title": "Intro to Meditation with Hannah Muse",
+      "url": "https://www.youtube.com/watch?v=zstUM65yZzo",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "channel": "Hannah Muse"
+    }
+  ],
+  "books": [],
+  "courses": [
+    {
+      "title": "Mythology, Yoga, and Falling in Love with Existence at the Edge of the World",
+      "url": "https://www.esalen.org/workshops/mythology-yoga-and-falling-in-love-with-existence-at-the-edge-of-the-world-020127",
+      "description": "A five-day Esalen retreat that uses a myth each day as the starting point for practice. Sessions mix yoga for all levels, breathwork, meditation, dance, writing and outdoor ceremony, with plenty of time for meals and the baths.",
+      "price": "From $940 USD (all-inclusive)",
+      "product_type": "retreat",
+      "start_date": "2027-02-01",
+      "end_date": "2027-02-05",
+      "subjects": [
+        "yoga",
+        "ancient-wisdom",
+        "meditation"
+      ],
+      "image": "https://cdn.prod.website-files.com/602d8561ae2fe6ec8347c903/69fc13b2d09979aedffb3f72_69fad25897ac2a2bd1e408a3_2024-Esalen_Meditation_Wari-Om-Yoga-Photography_9974-1500x775.jpeg"
+    },
+    {
+      "title": "Shelter in the Heart Meditation Group",
+      "url": "https://hannahmuse.com/offerings/sih",
+      "description": "An online sangha that meets on Zoom twice a week for a dharma talk and a 45-minute guided sitting, followed by optional journaling and sharing. It runs as a monthly closed group open to beginners and longtime meditators, with sliding-scale rates.",
+      "price": "From $49 USD per month",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "http://static1.squarespace.com/static/5bcbfc0db10f25252d34f919/5ec7041a2e4a0f27d284ca21/5fbdeffba97599144ebc8d3c/1787762214498/19.png?format=1500w"
+    },
+    {
+      "title": "Shelter in the Heart + Movement Membership",
+      "url": "https://hannahmuse.com/offerings/sih-mm",
+      "description": "The online meditation group plus four live yoga classes a month, covering flow, restorative practice and breathwork, with replays to practise again later. Priced on a sliding scale.",
+      "price": "From $93 USD per month",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga",
+        "meditation",
+        "breathwork"
+      ],
+      "image": "http://static1.squarespace.com/static/5bcbfc0db10f25252d34f919/5ec7041a2e4a0f27d284ca21/5ec704e98ee7c217b3c522a0/1787690293203/in+person+%283%29.png?format=1500w"
+    },
+    {
+      "title": "Private Sessions",
+      "url": "https://hannahmuse.com/private-sessions",
+      "description": "One-hour individual sessions in yoga and meditation, shaped around what the student brings. Paid on a sliding scale in the spirit of dana.",
+      "price": "$150–$225 USD per hour (sliding scale)",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga",
+        "meditation"
+      ],
+      "image": "http://static1.squarespace.com/static/5bcbfc0db10f25252d34f919/t/5fb35f4e8ae3d9089a1e7c03/1605586930335/JP1_0459.jpg?format=1500w"
+    },
+    {
+      "title": "Sacred India: Devotional Pilgrimage to the Heartland of Yoga",
+      "url": "https://hannahmuse.com/india-retreat",
+      "description": "A 13-night guided journey from Chennai through Tamil Nadu and into Karnataka, visiting ancient temples and other sites of the yoga tradition. At each stop she tells the stories of the deities worshipped there, alongside daily practice.",
+      "price": "$4,550 USD (double room)",
+      "product_type": "retreat",
+      "start_date": "2026-12-28",
+      "end_date": "2027-01-10",
+      "subjects": [
+        "yoga",
+        "ancient-wisdom",
+        "spirituality"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/5bcbfc0db10f25252d34f919/1710557987062-1NSIJ8YYHUX3W9I7C9FE/image-asset.jpeg"
+    },
+    {
+      "title": "Sacred Service, Sacred Lake: Yoga, Service & Joy in Guatemala",
+      "url": "https://hannahmuse.com/guatemala-retreat",
+      "description": "A Thanksgiving-week trip with Hug It Forward that pairs daily yoga and mindfulness with helping a rural community build a bottle-brick school. The later days are spent at Lake Atitlán as a practice of karma yoga and seva.",
+      "price": "From $3,250 USD",
+      "product_type": "retreat",
+      "start_date": "2026-11-21",
+      "end_date": "2026-11-29",
+      "subjects": [
+        "yoga",
+        "mindfulness"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/5bcbfc0db10f25252d34f919/1558897070580-UOBLJRE43W6NSDSYXI5V/Proof-7044.jpg"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "hub": "esalen",
+    "rank": 208,
+    "hub_url": "https://www.esalen.org/faculty/hannah-muse",
+    "tier_evidence": "Instagram @hannah.j.muse 9,265 (og:description, 1 Nov 2026); Facebook /hannahmuseyoga 1,112 (og:description, 1 Nov 2026); YouTube @hannahmuse4982 93 (channel header row, 1 Nov 2026) → ~10.5k total → local_hero",
+    "email": "yes",
+    "email_source": "https://hannahmuse.com/private-sessions",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 25 source(s)",
+    "flags": [
+      "Email care@hannahmuse.com is a general studio inbox (also on the India pilgrimage page); her site's footer icon also links to hannahmuseyoga@gmail.com, the queue's lead.",
+      "Guatemala retreat page says one cabin left and offers a waitlist; kept with its dates (starts 21 Nov 2026).",
+      "Her small own channel includes a 2020 video titled The election and why YOUR practice is absolutely crucial this month; not used, and the channel (three videos) is not mainly political.",
+      "Three of the four videos are on other channels (Wave Street Studios, Electric Forest) where she is the sole teacher."
+    ],
+    "left_out": [
+      "Awake Heart Advanced 300-Hour Training: cohort started March 2026; 200-hour training: waitlist only, no dates.",
+      "The Ritual (formerly Yoga Church) online classes, Sunday Sleep Spell and Awake Heart Yoga Somatics at Pleasure Point: single dated class pages only; Sunday Sleep Spell also framed as sleep-inducing and nervous-system reset (borderline).",
+      "Mindfulness coaching for organisations: page lists blood pressure and sleep benefits (health claims) and no price.",
+      "Love is a Verb couples retreat and Greece and Tuolumne retreats: sold out or past.",
+      "Mayan Muse and Friday Morning Yoga videos: short promotional clips; Give a Damn and The election video: not teaching."
+    ]
+  },
+  "images_final": true
+}

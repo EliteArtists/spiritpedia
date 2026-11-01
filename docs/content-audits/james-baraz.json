@@ -1,0 +1,263 @@
+{
+  "healer": {
+    "healer_slug": "james-baraz",
+    "create": {
+      "name": "James Baraz",
+      "bio": "James Baraz has taught insight meditation since 1978 and helped found Spirit Rock, the Marin County meditation centre, as one of its first teachers. Before meditation became his work he spent twelve years as a primary school teacher, and that ease with explaining things plainly shows in how he teaches. He is the guiding teacher of the Insight Meditation Community of Berkeley, which meets every Thursday evening at the Berkeley Buddhist Monastery and on Zoom, and he advises One Earth Sangha, an online community exploring Buddhist responses to the climate crisis.\n\nHe is best known for Awakening Joy, an online course he has run each year since 2003 that takes the Buddhist teachings on wholesome states and turns them into ten monthly themes, from gratitude and integrity to letting go and compassion. More than twenty thousand people in some thirty countries have taken it, and a teacher training lets graduates lead it themselves. With Shoshana Alexander he wrote a book of the same name, and with the teacher Michele Lilyanna a companion guide for parents and educators. He leads silent retreats at Spirit Rock and the Insight Meditation Society, and weekend workshops at Esalen, recently with his son Adam. He lives in Berkeley with his wife, Jane.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local_online",
+      "city": "Berkeley",
+      "country": "United States",
+      "subjects": [
+        "meditation",
+        "mindfulness",
+        "ancient-wisdom"
+      ],
+      "website_url": "https://www.awakeningjoy.info/",
+      "booking_url": "https://www.awakeningjoy.info/teacherSchedule.php",
+      "youtube_url": "https://www.youtube.com/channel/UCtcjQ-YTKDv18nT6t3Abq1g",
+      "instagram_url": "https://www.instagram.com/awakening_joy/",
+      "facebook_url": "https://www.facebook.com/pages/Awakening-Joy/170791563058",
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "admin@awakeningjoy.info",
+      "image_urls": [
+        "https://www.awakeningjoy.info/imagesHomePage/04James.jpg",
+        "https://cdn.prod.website-files.com/602d8561ae2fe6ec8347c903/67983ad85c09d88101257041_James-Baraz-2025-Portrait.png"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "esalen",
+      "role": "instructor"
+    }
+  ],
+  "videos": [
+    {
+      "title": "A Path with Joy — A conversation between Tara Brach and James Baraz",
+      "url": "https://www.youtube.com/watch?v=ZGLSUT060Xc",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "channel": "Tara Brach"
+    },
+    {
+      "title": "Finding Joy in Difficult Times | Being Well Podcast, James Baraz",
+      "url": "https://www.youtube.com/watch?v=ZaFkpAPtmds",
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "channel": "Forrest Hanson"
+    },
+    {
+      "title": "10,000 Joys & 10,000 Sorrows: DEAD Serious Practice to Abundant Enoughness | James Baraz Q&A",
+      "url": "https://www.youtube.com/watch?v=OjWmJqaaGnk",
+      "subjects": [
+        "meditation",
+        "ancient-wisdom"
+      ],
+      "channel": "Clear Mountain Monastery"
+    },
+    {
+      "title": "James Baraz -Awakening Joy in Challenging Times",
+      "url": "https://www.youtube.com/watch?v=HTd9JmAtShU",
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "channel": "San Francisco Regional Mensa"
+    },
+    {
+      "title": "James Baraz - Meeting Each Moment - Awakening Joy",
+      "url": "https://www.youtube.com/watch?v=F6q2RCDLhQ8",
+      "subjects": [
+        "mindfulness"
+      ],
+      "channel": "Awakening Joy"
+    },
+    {
+      "title": "The Teachings of Mogok Sayadaw I James Baraz I Buddhist Masters",
+      "url": "https://www.youtube.com/watch?v=Ofiwh9CXx6Q",
+      "subjects": [
+        "ancient-wisdom",
+        "meditation"
+      ],
+      "channel": "Buddhist Teachings"
+    },
+    {
+      "title": "James Baraz – Awakening and the importance of action",
+      "url": "https://www.youtube.com/watch?v=47eGpIyMrfA",
+      "subjects": [
+        "spiritual-awakening",
+        "mindfulness"
+      ],
+      "channel": "London Insight Meditation"
+    },
+    {
+      "title": "Equanimity: Finding Balance in Uncertain Times - Sunday Sangha w/ James Baraz",
+      "url": "https://www.youtube.com/watch?v=Y_RZGwDTVs4",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "channel": "Sangha Live • Meditation"
+    }
+  ],
+  "books": [
+    {
+      "title": "Awakening Joy: 10 Steps to True Happiness",
+      "slug": "awakening-joy-10-steps-to-true-happiness",
+      "author": "James Baraz, Shoshana Alexander",
+      "asin": "1937006220",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "The book version of his long-running course, written with Shoshana Alexander, with a foreword by Jack Kornfield and a preface by Ram Dass. Ten chapters each take one theme, such as gratitude or letting go, and pair stories with practices to try. This is the Parallax Press edition; it first came out from Bantam in 2010.",
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1937006220.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "Awakening Joy for Kids: A Hands-On Guide for Grown-Ups to Nourish Themselves and Raise Mindful, Happy Children",
+      "slug": "awakening-joy-for-kids",
+      "author": "James Baraz, Michele Lilyanna",
+      "asin": "1941529283",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "Written with the primary school teacher Michele Lilyanna for parents and teachers. It adapts the ten Awakening Joy themes into activities and conversations for children, while asking adults to do the practices themselves first.",
+      "subjects": [
+        "mindfulness"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1941529283.01._SCLZZZZZZZ_.jpg"
+    }
+  ],
+  "courses": [
+    {
+      "title": "Embodying Joy: Relaxing the Body Into Being",
+      "url": "https://www.esalen.org/workshops/embodying-joy-relaxing-the-body-into-being-011527",
+      "description": "A weekend at Esalen led with his son Adam Baraz, moving through five phases named after the elements, from water to space. Guided meditation, gentle movement, partner exercises and reflection draw on Buddhist practice and Adam's body-based approach.",
+      "price": "From $940 USD (all-inclusive)",
+      "product_type": "retreat",
+      "start_date": "2027-01-15",
+      "end_date": "2027-01-17",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://cdn.prod.website-files.com/602d8561ae2fe6ec8347c903/696815a8c28f404355f6e61f_6966c131134550705ce3ce0e_2025-Esalen_lavender-purple-plant_Natalie-Grasso-1500x775.jpeg"
+    },
+    {
+      "title": "2027 Awakening Joy Course",
+      "url": "https://awakeningjoy.thinkific.com/courses/2027-awakening-joy-course",
+      "description": "A five-month online course of ten live Zoom sessions held every other Tuesday, each built around one theme with a guided meditation and a practice letter. Recordings stay available until the end of 2027, and students can join after it starts.",
+      "price": "$449 USD (early-bird $399 USD until 31 Dec 2026)",
+      "product_type": "course",
+      "start_date": "2027-01-26",
+      "end_date": "2027-06-01",
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "image": "https://import.cdn.thinkific.com/676070/courses/2027797/m5CH8wY5TlOM6tt2IJ7t_headerGreenLeavesCropped.jpg"
+    },
+    {
+      "title": "Awakening Joy Teacher Training",
+      "url": "https://awakeningjoy.thinkific.com/courses/2027-awakening-joy-teacher-training-information-application",
+      "description": "A training that runs alongside the annual course for people who want to lead Awakening Joy groups themselves. Details and the application sit in a free module on the course site.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "image": "https://m.media-amazon.com/images/P/1937006220.01._SCLZZZZZZZ_.jpg"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "James Baraz's Dharma talks on Dharma Seed",
+      "url": "https://dharmaseed.org/teacher/86/",
+      "description": "A large free archive of his recorded talks and guided meditations from Spirit Rock and other retreat centres. A good way to hear how he teaches insight and lovingkindness practice.",
+      "featured": true,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation",
+        "mindfulness",
+        "ancient-wisdom"
+      ],
+      "image": "https://www.awakeningjoy.info/imagesHomePage/04James.jpg"
+    },
+    {
+      "title": "18-Minute Guided Mindfulness Meditation",
+      "url": "https://www.awakeningjoy.info/freeResourcesMeditation.php",
+      "description": "A short guided sitting he recorded, free to stream or download as an MP3. The same page links his printed meditation instructions and an exploration of the RAIN practice.",
+      "featured": false,
+      "resource_type": "meditation",
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "image": "https://www.awakeningjoy.info/images/insideHeaders/headerBeach.jpg"
+    },
+    {
+      "title": "Conversations with the Wise",
+      "url": "https://www.awakeningjoy.info/conversationsAlpha.php",
+      "description": "Free recorded conversations in which he talks with teachers and writers such as Tara Brach, Jack Kornfield and Rick Hanson about practising through hard times.",
+      "featured": false,
+      "resource_type": "workshop",
+      "subjects": [
+        "mindfulness",
+        "spirituality"
+      ],
+      "image": "https://www.awakeningjoy.info/images/insideHeaders/headerAutumnLeaves.jpg"
+    },
+    {
+      "title": "Insight Meditation Community of Berkeley weekly sitting",
+      "url": "https://www.insightberkeley.org/",
+      "description": "His Thursday evening meditation group with a dharma talk and discussion, held at the Berkeley Buddhist Monastery and on Zoom. Open to all and supported by donation.",
+      "featured": false,
+      "resource_type": "practice",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/610b8eba84260c0ef1dc03c2/f79f3de3-ff9e-4d44-93f5-dc5c6bb4bddf/Quan+Yin+for+BV.jpg"
+    }
+  ],
+  "sprint": {
+    "hub": "esalen",
+    "rank": 209,
+    "hub_url": "https://www.esalen.org/faculty/james-baraz",
+    "tier_evidence": "Awakening Joy (his course's accounts; no personal ones found): Facebook 7,856 (og:description, 1 Nov 2026); Instagram @awakening_joy 3,564 (og:description, 1 Nov 2026); YouTube @awakeningjoy7668 1.36K (channel header row, 1 Nov 2026) → ~12.8k total → local_hero",
+    "email": "yes",
+    "email_source": "https://www.awakeningjoy.info/contactus.php",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 22 source(s)",
+    "flags": [
+      "Email admin@awakeningjoy.info belongs to his assistant Gretchen (the contact page lists it for the course and for James); the queue's insightberkeley1@gmail.com is the Berkeley sangha's address.",
+      "Social counts are for the Awakening Joy course accounts, which he runs and which carry his teaching; no personal YouTube, Instagram or Facebook found. Counted because the course is his own work.",
+      "Tier local_hero by follower count (~12.8k), though he co-founded Spirit Rock and states 24,000+ Awakening Joy students; owner may consider an editorial override (not applied).",
+      "Esalen weekend is co-led with his son Adam Baraz (SomaWaken); its page mentions releasing chronic tension and nervous-system softening, left out of the description. Programme shows 1 spot left.",
+      "Website is the Awakening Joy course site (insightberkeley.org in the queue is his sangha's site); no personal domain found.",
+      "Book author photo on his site is too small (223 px); site headshot (351 px) and Esalen 2025 portrait (cap and sunglasses) used."
+    ],
+    "left_out": [
+      "Strength with Heart nine-month men's programme (Spirit Rock): started 3 Oct 2026.",
+      "Daylong at Berkeley Buddhist Monastery (15 Nov 2026), Spirit Rock daylong with Tara Brach (13 Dec 2026) and New Year's Eve at Spirit Rock: no programme pages yet.",
+      "Labor Day retreat (Spirit Rock) and IMS silent retreats (Sept–Oct 2026): past.",
+      "Awakening Joy: 10 Steps to Happiness, Bantam hardcover (055380703X): amazon.com /dp/ returned 500; the in-print Parallax edition is listed instead.",
+      "How My Son Ruined My Life (with his mother Selma, 52k views): comedy, not teaching; course promo videos and Conversations with the Wise excerpts (guests speak): left out.",
+      "Earth Day 2026 talk with Santacitta Bhikkhuni: shared talk on climate action; left out in favour of solo teaching."
+    ]
+  },
+  "images_final": true
+}
