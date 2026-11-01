@@ -1,0 +1,113 @@
+{
+  "healer": {
+    "healer_slug": "paul-heussenstamm",
+    "create": {
+      "name": "Paul Heussenstamm",
+      "bio": "Paul Heussenstamm is a painter of mandalas and sacred images who teaches painting as a form of meditation. He grew up in a family of artists, the son of two painters who met while studying art, and came to painting full time only in his late thirties, when the mandala became the centre of his work. Since then he has made more than two thousand paintings drawing on Buddhist, Hindu and Christian imagery, from Sri Yantras and chakra designs to trees of life, and his pictures hang in the homes of a number of well-known spiritual authors. He works from a studio in Laguna Beach, California, where the paintings are signed only on the back, in the spirit of art as something that passes through the artist.\n\nHis workshops, which he calls Art as a Spiritual Path, are small groups of six to twelve people, and no painting experience is needed. Participants usually begin with coloured pencils to loosen up, then move to acrylics to make a personal mandala or yantra over several days, treating the process as a way of listening inwardly. He teaches at his own studio and home, at Esalen, on regular painting retreats on Maui, and on trips to Asia and Europe.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local",
+      "city": "Laguna Beach",
+      "country": "United States",
+      "subjects": [
+        "sacred-geometry",
+        "meditation",
+        "spirituality"
+      ],
+      "website_url": "https://mandalas.com/",
+      "booking_url": "https://mandalas.com/workshops/",
+      "youtube_url": null,
+      "instagram_url": "https://www.instagram.com/mandalas_com/",
+      "facebook_url": "https://www.facebook.com/PaulHeussenstamm",
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "heartcenter@mandalas.com",
+      "image_urls": [
+        "https://cdn.prod.website-files.com/602d8561ae2fe6ec8347c903/62158b49f42922de8604f0e2_Paul-Heussenstamm-0222-RG.jpg"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "esalen",
+      "role": "instructor"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Your Spirit Through Mandalas with Paul Heussenstamm",
+      "url": "https://www.youtube.com/watch?v=1B0uEFU0xhk",
+      "subjects": [
+        "sacred-geometry",
+        "meditation"
+      ],
+      "channel": "Esalen"
+    },
+    {
+      "title": "Paul Heussenstamm Demo",
+      "url": "https://www.youtube.com/watch?v=hqbf_RLdxUI",
+      "subjects": [
+        "sacred-geometry"
+      ],
+      "channel": "Ann Paquin"
+    }
+  ],
+  "books": [],
+  "courses": [
+    {
+      "title": "Entering Your Creative Universe",
+      "url": "https://www.esalen.org/workshops/entering-your-creative-universe-011827",
+      "description": "A five-day painting workshop at Esalen in Big Sur, open to beginners and practised artists alike. It starts with coloured pencils and moves on to acrylics, with each person completing their own mandala, Sri Yantra or design of their choosing as a meditative practice.",
+      "price": "From $940 USD (all-inclusive)",
+      "product_type": "retreat",
+      "start_date": "2027-01-18",
+      "end_date": "2027-01-22",
+      "subjects": [
+        "sacred-geometry",
+        "meditation"
+      ],
+      "image": "https://cdn.prod.website-files.com/602d8561ae2fe6ec8347c903/6967bb0295d22a070c58b30e_6966c2d4f07856a4fdad5a76_2024-Esalen_art-barn_Stephanie-Lewis-1500x775.jpeg"
+    },
+    {
+      "title": "February 2027 Maui Retreat",
+      "url": "https://mandalas.com/events/february-2027-maui-retreat/",
+      "description": "Three back-to-back week-long mandala painting retreats on Maui, which can be booked singly or together. Lodging and the workshop are included in the room price, shared food is extra, and the workshop can also be taken alone for those staying nearby.",
+      "price": "$1050 USD shared room or $1795 USD private room per week (workshop only $495 USD)",
+      "product_type": "retreat",
+      "start_date": "2027-01-31",
+      "end_date": "2027-02-20",
+      "subjects": [
+        "sacred-geometry",
+        "meditation",
+        "spirituality"
+      ],
+      "image": "https://cdn.prod.website-files.com/602d8561ae2fe6ec8347c903/62158b49f42922de8604f0e2_Paul-Heussenstamm-0222-RG.jpg"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "hub": "esalen",
+    "rank": 215,
+    "hub_url": "https://www.esalen.org/faculty/paul-heussenstamm",
+    "tier_evidence": "Instagram @mandalas_com (his own, name Paul Heussenstamm) 3,712 followers (og:description, 1 Nov 2026); Facebook PaulHeussenstamm 1,943 followers (og:description, 1 Nov 2026); X @mandalamagic count unreadable without login; no YouTube channel of his own → ~5.7k total → local_hero",
+    "email": "yes",
+    "email_source": "https://mandalas.com/contact/",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 7 source(s)",
+    "flags": [
+      "Email heartcenter@mandalas.com is his studio inbox (Heart Center Mandalas), published on every page of mandalas.com.",
+      "Only one usable photo: the Esalen headshot. The photo on his About page is 238 px wide (too small).",
+      "Availability set to local (Laguna Beach studio and in-person retreats); he has taught a few online sessions in the past (a 2020 Zoom series, a 2023 Hong Kong Zoom) but lists no current online classes.",
+      "No books could be confirmed: amazon.com /dp/ pages for every candidate returned HTTP 500 to both curl and WebFetch (see left_out); a later pass may be able to add them.",
+      "The second video is a 30-minute painting demonstration filmed by a student (Ann Paquin's channel) on one of his Maui retreats; he is the one teaching."
+    ],
+    "left_out": [
+      "Books not verified on Amazon (dp pages returned 500): The Art of Mandala Meditation (with Michal Beaucaire, Adams Media 2012, ISBN 1440543887), Mandalas (Schiffer 2016, 0764974831), Sri Yantra Mandalas (Schiffer 2016, 0764975587), Mandala Masterworks (1599290650), Colour Yourself Calm (1849497567, text by Tiddy Rowan).",
+      "Maui Retreat November 2026 (1-14 Nov 2026): already started.",
+      "Mindfulness & Mandala Art Workshop weeks 1-6 (Apart But Not Alone channel, 2020): described as healing for people dealing with the pandemic and overcoming panic (health framing).",
+      "Hong Kong exhibition and Zoom recordings (lightworkershk): exhibition footage and an untitled Zoom session, not clear teaching.",
+      "Paintings, giclee prints, commissions and jigsaw puzzles in his store: art products, not teaching."
+    ]
+  },
+  "images_final": true
+}

@@ -1,0 +1,166 @@
+{
+  "healer": {
+    "healer_slug": "marysia-miernowska",
+    "create": {
+      "name": "Marysia Miernowska",
+      "bio": "Marysia Miernowska is a folk herbalist and earth-based spiritual teacher who calls herself a green witch. Born in Poland, she first learned about plants from her great-grandmother, and later trained in the Wise Woman tradition through an apprenticeship with Sage Maurer at the Gaia School of Healing in California. She now runs her own online school, the School of the Sacred Wild, which has trained hundreds of students in herbal lore, plant spirit communication, ritual and regenerative gardening, and she lives in Topanga, California, where she grows herbs and gathers students in person.\n\nHer teaching treats plants as living teachers and allies. Students learn to make teas, infusions and flower essences from what grows around them, to sit with a plant in quiet meditation, and to mark the turning of the seasons with simple ceremony and journalling. Gardening and care for the land run through everything she offers, alongside a strong interest in permaculture and earth activism. Her book The Witch's Herbal Apothecary is a seasonal guide of rituals and recipes, and she leads weekend workshops at Esalen in Big Sur and residential retreats abroad.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local_online",
+      "city": "Topanga",
+      "country": "United States",
+      "subjects": [
+        "plant-medicine",
+        "shamanism",
+        "spirituality"
+      ],
+      "website_url": "https://www.schoolofthesacredwild.com/",
+      "booking_url": "https://www.schoolofthesacredwild.com/retreats",
+      "youtube_url": null,
+      "instagram_url": "https://www.instagram.com/marysia_miernowska/",
+      "facebook_url": "https://www.facebook.com/schoolofthesacredwild",
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "schoolofthesacredwild@gmail.com",
+      "image_urls": [
+        "https://cdn.prod.website-files.com/602d8561ae2fe6ec8347c903/602d8561ae2fe6173b47d5d4_Marysia-Miernowska-RG.jpeg",
+        "https://images.squarespace-cdn.com/content/v1/6744be7dc5d4044f13a196e6/93f5d279-73f0-4aad-9d2a-0202b5af3b72/dawn_journal_marysia_0061.JPG?format=1000w"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "esalen",
+      "role": "instructor"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Sacred Medicine Making, Witches And Herbalism With Marysia Miernowska",
+      "url": "https://www.youtube.com/watch?v=sIQH3j_7d9Q",
+      "subjects": [
+        "plant-medicine",
+        "spirituality"
+      ],
+      "channel": "The Mother Daze"
+    },
+    {
+      "title": "21 - Tending to the Earth: Sacred Herbalism with Marysia Miernowska",
+      "url": "https://www.youtube.com/watch?v=eHijmTHfF-U",
+      "subjects": [
+        "plant-medicine",
+        "spirituality"
+      ],
+      "channel": "Four Visions"
+    },
+    {
+      "title": "Herbalism is Homecoming & Our Senses Are Portals of Connection - Marysia Miernowska",
+      "url": "https://www.youtube.com/watch?v=S1ZVERCKyaE",
+      "subjects": [
+        "plant-medicine",
+        "ancient-wisdom"
+      ],
+      "channel": "Amber Magnolia Hill"
+    },
+    {
+      "title": "Marysia Miernowska: How Ancient Plant Wisdom Guides Us Through Modern Transformation (ep. 28)",
+      "url": "https://www.youtube.com/watch?v=ywr32kUXIq0",
+      "subjects": [
+        "plant-medicine",
+        "ancient-wisdom",
+        "shamanism"
+      ],
+      "channel": "Xóchitl Ashé | Afro-Quechua-Aymara Medicine Woman"
+    }
+  ],
+  "books": [
+    {
+      "title": "The Witch's Herbal Apothecary: Rituals & Recipes for a Year of Earth Magick and Sacred Medicine Making",
+      "slug": "the-witchs-herbal-apothecary",
+      "author": "Marysia Miernowska",
+      "asin": "1592339093",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "Published by Fair Winds Press in 2020 and arranged around the wheel of the year. Each season brings plant profiles, rituals and recipes for growing, gathering and preparing herbs in step with nature's cycles.",
+      "subjects": [
+        "plant-medicine",
+        "spirituality"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1592339093.01._SCLZZZZZZZ_.jpg"
+    }
+  ],
+  "courses": [
+    {
+      "title": "Awakening Spring Within: Somatic Herbalism, Plant Spirit Meditation, and Nature Connection",
+      "url": "https://www.esalen.org/workshops/awakening-spring-within-somatic-herbalism-plant-spirit-meditation-and-nature-connection-031927",
+      "description": "A spring weekend at Esalen in Big Sur spent close to the land and the gardens. The group shares tea meditations, learns to recognise common wild plants, makes flower essences and simple preparations to take home, and closes with earth-based ritual and journalling. A $40 materials fee is added.",
+      "price": "From $940 USD (all-inclusive)",
+      "product_type": "retreat",
+      "start_date": "2027-03-19",
+      "end_date": "2027-03-21",
+      "subjects": [
+        "plant-medicine",
+        "meditation"
+      ],
+      "image": "https://cdn.prod.website-files.com/602d8561ae2fe6ec8347c903/6970772f75ece61c30ef9448_6966c74cf8328cbdc0c83b70_2024-Esalen_Pride-of-Madeira_purple-flowers_Ali-Kaukas-1500x775.jpeg"
+    },
+    {
+      "title": "Earth, Herbalism & the Sacred Wild Solstice Retreat",
+      "url": "https://www.zenrocksmani.com/retreats/earth-herbalism-the-sacred-wild-retreat",
+      "description": "A week at Zen Rocks Mani in southern Greece around the summer solstice. Marysia leads daily earth-based practice, time with the local plants, ritual and conversation about living in step with nature, with meals and lodging included.",
+      "price": "From €1290 EUR",
+      "product_type": "retreat",
+      "start_date": "2027-06-20",
+      "end_date": "2027-06-26",
+      "subjects": [
+        "plant-medicine",
+        "spirituality"
+      ],
+      "image": "https://cdn.prod.website-files.com/63a37c1acbe18f924fcdb87b/692c1a49e12a038374a498c2_Marysia.jpeg"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "The Pagan Roots of Easter",
+      "url": "https://www.schoolofthesacredwild.com/blog/the-pagan-roots-of-easter",
+      "description": "A blog essay on the older, earth-honouring customs behind the spring festival, from the hare and the egg to the Polish and Ukrainian art of pysanky. It ends with ideas for marking the equinox at home.",
+      "featured": true,
+      "resource_type": "practice",
+      "subjects": [
+        "ancient-wisdom",
+        "spirituality"
+      ],
+      "image": "http://static1.squarespace.com/static/6744be7dc5d4044f13a196e6/674e08d238827e3cf94bf354/675caeafd5b93e3de1295f32/1782576521675/Screenshot+2024-12-13+at+2.06.41%E2%80%AFPM.png?format=1500w"
+    }
+  ],
+  "sprint": {
+    "hub": "esalen",
+    "rank": 212,
+    "hub_url": "https://www.esalen.org/faculty/marysia-miernowska",
+    "tier_evidence": "Instagram @marysia_miernowska 86K followers (og:description, 1 Nov 2026); Facebook School of the Sacred Wild 7,264 followers (og:description, 1 Nov 2026; her school's page, counted as it is her own one-teacher brand); YouTube @schoolofthesacredwild 571 subscribers and @marysiamiernowska1876 89 subscribers (channel headers, 1 Nov 2026) → ~94k total → local_hero",
+    "email": "yes",
+    "email_source": "https://www.schoolofthesacredwild.com/contact",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 10 source(s)",
+    "flags": [
+      "Tier borderline: ~94k total (Instagram 86K is most of it); counting the School of the Sacred Wild Facebook page tips it from ~87k to ~94k, still under 100k.",
+      "Herbalism is health-adjacent: she teaches folk herbal medicine with a strongly spiritual framing (plant spirit communication, earth ritual, witchcraft). I kept her under the precedent of other herbalists (David Crow) but left out her health-framed offerings; owner may want to review.",
+      "Her Esalen programme page speaks of physical and spiritual healing from herbal infusions and of calming the nervous system; the title names no condition, and my description leaves that framing out.",
+      "The book blurb on her site says Mother Earth's medicine heals us physically and spiritually (no condition named); kept.",
+      "Email is the School of the Sacred Wild's Gmail inbox (published on her Contact and About pages), not a personal address.",
+      "All four videos are podcast interviews on other channels where she is the guest and main speaker; her own YouTube channels hold only a 2022 promo and a conversation where she interviews someone else.",
+      "Only two photos: the Esalen headshot and a garden photo from her site (filename names her); she looks the same in both."
+    ],
+    "left_out": [
+      "Apprenticeship to the Sacred Wild (10-month online course, $3500 USD; 2026-27 term began 12 Sep 2026, registration closed): borderline health framing (curriculum bullet on building immunity, remedies for when a child is sick); left out.",
+      "The Honey Path (one-month herbal journey, May 2026): dated and passed; also sold as a 'health & nervous system reset'.",
+      "Advanced Herbalism, Botanical Food Medicine & Community Building and the Certification + Mentorship year (certification in 'Holistic Healing'): health-framed training.",
+      "School of the Sacred Wild Annual Retreat & Graduation 2027: members only.",
+      "Esalen workshop 20-22 Mar 2026: passed.",
+      "Foria Wellness interview (aphrodisiac oil product), The Best Medicine is Growing in Your Backyard (medicine framing) and skincare podcast episodes: product or health-led.",
+      "Mary Reynolds conversation on her own channel: she is the interviewer, not the main speaker.",
+      "Regenerative Land Plan garden design and Sacred Rituel Beauty skincare: design and product businesses, not teaching."
+    ]
+  }
+}
