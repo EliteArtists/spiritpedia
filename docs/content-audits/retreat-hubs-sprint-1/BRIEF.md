@@ -214,6 +214,11 @@ it's them, flag it. No usable photo → skip the teacher.
   "energy", "balance", "emotional wellbeing" are fine. When borderline, leave
   it out and flag it.
 - **No condition-named items** at all, even educational ones.
+- **Look over the titles on their YouTube channel** (and blog) as a whole: if it is
+  mainly condition-led (medical intuition, chronic pain, PTSD, "staying healthy
+  during COVID"…) or carries conspiracy or partisan political commentary, skip
+  the teacher under the health or conspiracy rule, even if the items you'd pick
+  are clean.
 - **Max 3 subjects per item.**
 - **Videos**: YouTube only, from the teacher's own channel first; talks or
   interviews on other channels only when the teacher is the main speaker and

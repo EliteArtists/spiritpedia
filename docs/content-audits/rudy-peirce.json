@@ -1,0 +1,151 @@
+{
+  "healer": {
+    "healer_slug": "rudy-peirce",
+    "create": {
+      "name": "Rudy Peirce",
+      "bio": "Rudy Peirce is a gentle yoga teacher and teacher trainer from the Berkshires of Massachusetts who has been part of the Kripalu tradition for more than four decades. He arrived at Kripalu as a resident staff member in 1982, qualified as a Kripalu Yoga teacher the following year and was soon training other teachers himself, going on to lead dozens of trainings; Kripalu now counts him among its Legacy Faculty. He holds a master's degree and Kripalu's 1,000-hour certification, and has also trained as an Ayurvedic yoga teacher.\n\nOver the years he has shaped his own approach, Dynamic Gentle Yoga, which keeps the movements simple and slow and offers choices at every stage, so that people who doubt they can do yoga at all can take part and still arrive at real stillness and meditation. For many years he and his wife, Joyce, travelled to studios along the East Coast; in 2020 they moved their teaching online and founded Gentle Yogis, a small online studio with a daily breath and gentle movement class followed by community reading and conversation. He also mentors gentle and chair yoga teachers, records guided practice audio and leads retreats at Kripalu and abroad.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "worldwide",
+      "city": null,
+      "country": null,
+      "subjects": [
+        "yoga",
+        "breathwork",
+        "meditation"
+      ],
+      "website_url": "https://www.gentle-yogis.com",
+      "booking_url": "https://www.gentle-yogis.com/live-classes/",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": null,
+      "image_urls": [
+        "https://kripalu.org/sites/default/files/2026-08/Untitled%20design%20-%202026-08-13T145920.479.png",
+        "https://www.gentle-yogis.com/wp-content/uploads/2020/12/RudySideBendCastellinaTuscOct07210-copy-1024x768.jpg"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "kripalu",
+      "role": "instructor"
+    }
+  ],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Gentle Yoga Retreat: Cultivate Presence, Resilience, and Renewal",
+      "url": "https://kripalu.org/experiences/gentle-yoga-retreat-cultivate-presence-resilience-and-renewal",
+      "description": "A weekend at Kripalu in Stockbridge, Massachusetts, where Rudy leads Kripalu Gentle Yoga as a form of moving meditation. Sessions combine slow postures, breathing and rest with attention to inner experience, and are open to every level of strength and flexibility.",
+      "price": "$325 USD tuition plus lodging",
+      "product_type": "retreat",
+      "start_date": "2027-04-30",
+      "end_date": "2027-05-02",
+      "subjects": [
+        "yoga",
+        "meditation"
+      ],
+      "image": "https://kripalu.org/sites/default/files/styles/og_image/public/2026-09/Webupdates%20%281000x500px%29_1.png?itok=6SsltBc9"
+    },
+    {
+      "title": "Kripalu Gentle Yoga Teacher Training",
+      "url": "https://kripalu.org/experiences/gentle-yoga-teacher-training",
+      "description": "A five-day residential training at Kripalu, led by Rudy, for teachers who already hold a 200-hour certificate. It refines the skills needed to guide gentle classes well, from pacing and options to clear cueing, and ends with a plan for reaching new students.",
+      "price": "$625 USD tuition plus lodging",
+      "product_type": "retreat",
+      "start_date": "2027-06-27",
+      "end_date": "2027-07-02",
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://kripalu.org/sites/default/files/styles/og_image/public/2025-08/gentle-yoga_hero.jpg?itok=pzKRGS6P"
+    },
+    {
+      "title": "Breath & Gentle Movement",
+      "url": "https://www.gentle-yogis.com/live-classes/breath-practice-chair-yoga/",
+      "description": "The studio's signature live class on Zoom, held every morning at 8am Eastern: about forty minutes of gentle spinal movement and four breathing techniques, done seated. An optional community hour follows, with a shared reading and conversation.",
+      "price": "$15 USD per class (or by pass or membership)",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "breathwork",
+        "yoga"
+      ],
+      "image": "https://www.gentle-yogis.com/wp-content/uploads/2023/12/AMY_1296-Edit-scaled.jpg"
+    },
+    {
+      "title": "Gentle Yoga Teachers Circles",
+      "url": "https://www.gentle-yogis.com/teachers-circles/",
+      "description": "Two-hour online gatherings on selected Sundays where Rudy mentors gentle and chair yoga teachers. A graduate of his training leads a practice, then the group reflects on methods such as option-based guiding and meditative pacing; a replay is included.",
+      "price": "Sliding scale $10-30 USD",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://www.gentle-yogis.com/wp-content/uploads/2026/05/Circle-logo-on-light-background.jpg"
+    },
+    {
+      "title": "All Access Yoga Membership",
+      "url": "https://www.gentle-yogis.com/memberships-passes/",
+      "description": "A monthly household membership to Gentle Yogis covering every live online class, the Saturday immersion workshops and the full video library of recordings. Smaller memberships and a ten-class pass are also offered, and new students can try a free month.",
+      "price": "$200 USD per month per household",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga",
+        "breathwork"
+      ],
+      "image": "https://www.gentle-yogis.com/wp-content/uploads/2026/05/Weekly-Calendar.png"
+    },
+    {
+      "title": "The Gentle Series",
+      "url": "https://www.gentle-yogis.com/product/the-gentle-series/",
+      "description": "Four guided audio practices by Rudy that can be used in any order. Each one moves through easy stretching and strengthening, simple breathing, relaxation and a short meditation; the set is delivered digitally.",
+      "price": "$29.99 USD",
+      "product_type": "download",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga",
+        "meditation"
+      ],
+      "image": "https://www.gentle-yogis.com/wp-content/uploads/2020/12/GentleSeries-TranspBackground-1024x1024.png"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "hub": "kripalu",
+    "rank": 76,
+    "hub_url": "https://kripalu.org/people/rudy-peirce",
+    "tier_evidence": "No personal accounts with readable counts: YouTube @rudypeirce exists but shows no videos and no subscriber count (channel page, 1 Nov 2026); Instagram @gentleyogis and Facebook gentleyogis are the studio's shared accounts with Joyce, not counted → 0 readable → local_hero",
+    "email": "contact form",
+    "email_source": null,
+    "contact_form_url": "https://www.gentle-yogis.com/contact/",
+    "bio_check": "OK: no 8-word runs against 19 source(s)",
+    "flags": [
+      "Readable follower total is 0: his only social accounts are the Gentle Yogis studio's shared Instagram and Facebook (run with his wife Joyce), which I did not count or link.",
+      "Gentle Yogis is run jointly with his wife, Joyce Schroeder Peirce; she is mentioned in the bio only, not given a listing.",
+      "The Kripalu Gentle Yoga Teacher Training is a Kripalu Schools programme, kept because Rudy is its sole presenter.",
+      "Availability set to worldwide: all his regular classes are online; the PO box in Housatonic, MA is a postal address, not a studio. He also teaches in person at Kripalu nearby, so local_online would be arguable.",
+      "Second photo is an older full-length shot from his own about page (Tuscany); same person as the Kripalu headshot as far as I can tell."
+    ],
+    "left_out": [
+      "Gentle Yoga on the Coast of Spain retreat (30 May-4 Jun 2027): no page of its own on his site (only a section of /retreats/).",
+      "Gentle Strength: Bones, Muscles and Balance class and Reset & Restore with MELT class: framed around bones and pain relief (health rule).",
+      "Gentle Yoga mat class: taught by studio staff, not Rudy; Yoga Nidra library: guided by another teacher.",
+      "Saturday immersion workshops: led by guest teachers, and the current one is framed around brain health.",
+      "Kripalu Oct 9-12, 2026 retreat listed on his site has passed.",
+      "Kripalu articles by Rudy (The Inward Journey of Dynamic Gentle Yoga, The Benefits of Gentle Yoga): articles rather than practices, and the first is framed around recovery from illness.",
+      "No books on Amazon and no YouTube videos found."
+    ]
+  },
+  "images_final": true
+}

@@ -1,0 +1,188 @@
+{
+  "healer": {
+    "healer_slug": "coby-kozlowski",
+    "create": {
+      "name": "Coby Kozlowski",
+      "bio": "Coby Kozlowski is a yoga and meditation teacher, life coach trainer and writer whose work draws on yoga philosophy, storytelling and the expressive arts. She studied business and environmental studies at the University of Massachusetts Amherst, then took a master's in transformative leadership at Lesley University with a certificate in expressive arts therapy, and later studied coaching, positive psychology and Ayurveda. She has taught for many years on the faculty of the Kripalu School of Yoga, where she developed the Kripalu Vinyasa approach, and she trains teachers of Instinctive Meditation as one of the leaders of the Radiance Sutras School.\n\nHer classes and retreats mix flowing practice, meditation, journaling, conversation and plenty of humour, and often turn on questions of purpose at different stages of life, from her Quarter-Life Calling programme for people in their twenties to a midlife immersion she calls the Holy Wake-Up Call. St. Martin's Press published her first book, One Degree Revolution, about using yoga's teachings to make small, steady changes, and Broadleaf Books brought out The Ache in Your Heart Is Holy in 2026. She gave a TEDx talk in the Berkshires, appears at yoga festivals, and offers private life and spiritual coaching by phone or video.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "worldwide",
+      "city": null,
+      "country": null,
+      "subjects": [
+        "yoga",
+        "meditation",
+        "soul-purpose"
+      ],
+      "website_url": "https://www.cobyk.com/",
+      "booking_url": "https://www.cobyk.com/life-coaching/private-coaching/",
+      "youtube_url": null,
+      "instagram_url": "https://www.instagram.com/cobykozlowski/",
+      "facebook_url": "https://www.facebook.com/people/Coby-Kozlowski/100063676391449/",
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": null,
+      "image_urls": [
+        "https://kripalu.org/sites/default/files/2015-10/KozlowskiC.jpg",
+        "https://www.cobyk.com/wp-content/uploads/0463.jpg"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "kripalu",
+      "role": "instructor"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Moderate Kripalu Yoga Vinyasa Flow Class with Coby Kozlowski",
+      "url": "https://www.youtube.com/watch?v=4GHLyH_lpBE",
+      "subjects": [
+        "yoga"
+      ],
+      "channel": "Kripalu"
+    },
+    {
+      "title": "One Degree Revolution, Small Shifts, Big Changes | Coby Kozlowski | TEDxBerkshires",
+      "url": "https://www.youtube.com/watch?v=Gln3afVU4cg",
+      "subjects": [
+        "yoga",
+        "soul-purpose"
+      ],
+      "channel": "TEDx Talks"
+    },
+    {
+      "title": "How Tiny Changes Create Remarkable Results - Explained!!! Coby Kozlowski",
+      "url": "https://www.youtube.com/watch?v=FBFv0t3oPWg",
+      "subjects": [
+        "yoga",
+        "spirituality"
+      ],
+      "channel": "Michael Sandler's Inspire Nation"
+    },
+    {
+      "title": "Small Shifts, Big Change with Coby Kozlowski",
+      "url": "https://www.youtube.com/watch?v=eKjER_cWCtg",
+      "subjects": [
+        "yoga",
+        "soul-purpose"
+      ],
+      "channel": "The Radiant Warrior"
+    },
+    {
+      "title": "Coby Kozlowski - One Degree Revolution",
+      "url": "https://www.youtube.com/watch?v=Jcb-4M7aaZE",
+      "subjects": [
+        "yoga",
+        "ancient-wisdom"
+      ],
+      "channel": "OMTimes Media"
+    },
+    {
+      "title": "Coby Kozlowski - \"Kripalu Vinyasa and One Degree Revolution\"",
+      "url": "https://www.youtube.com/watch?v=CNR2ZLBXZx8",
+      "subjects": [
+        "yoga"
+      ],
+      "channel": "J. Brown Yoga"
+    },
+    {
+      "title": "Dose of Togetherness with Coby Kozlowski",
+      "url": "https://www.youtube.com/watch?v=hsDZz4qbruM",
+      "subjects": [
+        "yoga",
+        "meditation"
+      ],
+      "channel": "Reimagine"
+    }
+  ],
+  "books": [
+    {
+      "title": "One Degree Revolution: How the Wisdom of Yoga Inspires Small Shifts That Lead to Big Changes",
+      "slug": "one-degree-revolution",
+      "author": "Coby Kozlowski",
+      "asin": "1250309255",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "Coby's first book takes ideas from classical yoga philosophy and turns them into practical steps for everyday life. Rather than asking for dramatic reinvention, it argues that a slight change of direction, held over time, can alter where a life ends up.",
+      "subjects": [
+        "yoga",
+        "ancient-wisdom",
+        "soul-purpose"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1250309255.01._SCLZZZZZZZ_.jpg"
+    }
+  ],
+  "courses": [
+    {
+      "title": "The Holy Wake-Up Call: A Midlife Awakening",
+      "url": "https://kripalu.org/experiences/holy-wake-call-midlife-awakening",
+      "description": "A weekend at Kripalu in Stockbridge, Massachusetts, that treats midlife as a doorway rather than a crisis, drawing on the yogic idea of four stages of life. Instinctive Meditation, yoga philosophy, journaling, movement and group conversation help participants ask what they want the next part of life to hold.",
+      "price": "$350 USD tuition plus lodging",
+      "product_type": "retreat",
+      "start_date": "2027-02-19",
+      "end_date": "2027-02-21",
+      "subjects": [
+        "meditation",
+        "yoga",
+        "soul-purpose"
+      ],
+      "image": "https://kripalu.org/sites/default/files/styles/og_image/public/2025-08/_MG_2342_forrest_yoga_wide_hero.jpg?itok=VzCbXqnW"
+    },
+    {
+      "title": "Meditation in Motion: The Kripalu Approach to Vinyasa",
+      "url": "https://kripalu.org/experiences/meditation-in-motion-kripalu-approach-to-vinyasa",
+      "description": "A nine-day residential training at Kripalu, co-led by Coby and Ilana Beigel, for yoga teachers who want to lead Kripalu Vinyasa. It covers sequencing across three levels, energetic alignment, the koshas, pranayama and how to weave a philosophical theme through a class, and counts towards Kripalu's 300-hour training.",
+      "price": "$1,170 USD tuition plus lodging",
+      "product_type": "retreat",
+      "start_date": "2027-03-12",
+      "end_date": "2027-03-21",
+      "subjects": [
+        "yoga",
+        "meditation"
+      ],
+      "image": "https://kripalu.org/sites/default/files/styles/og_image/public/2025-08/tantaflowyoga_hero.jpg?itok=TUPYHKr6"
+    },
+    {
+      "title": "Private Life and Spiritual Coaching",
+      "url": "https://www.cobyk.com/life-coaching/private-coaching/",
+      "description": "Monthly coaching packages with Coby, with two or three short sessions a month, assignments written for each person and email support in between. The work blends life coaching with spiritual inquiry into purpose, relationships and work.",
+      "price": "$200 USD per month (Standard) or $300 USD per month (Premium)",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "life-coaching",
+        "soul-purpose"
+      ],
+      "image": "https://kripalu.org/sites/default/files/2015-10/KozlowskiC.jpg"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "hub": "kripalu",
+    "rank": 73,
+    "hub_url": "https://kripalu.org/people/coby-kozlowski",
+    "tier_evidence": "Instagram @cobykozlowski 6,506 followers (og:description, 1 Nov 2026); YouTube @cobykozlowski7388 126 subscribers (channel header, 1 Nov 2026; no public videos); Facebook page not readable without login; no X or TikTok found → ~6,600 readable → local_hero",
+    "email": "contact form",
+    "email_source": null,
+    "contact_form_url": "https://www.cobyk.com/connect/",
+    "bio_check": "OK: no 8-word runs against 8 source(s)",
+    "flags": [
+      "Her site and hub bio call her Esalen and Omega faculty too, but neither shows a current programme (Esalen has no teacher page for her; her Omega page lists no upcoming workshop, 1 Nov 2026), so only Kripalu is in teaches_at.",
+      "Meditation in Motion is a Kripalu Schools training; it is included because Coby co-leads it (with Ilana Beigel) and created the Kripalu Vinyasa approach.",
+      "Her address coby@cobyk.com appears only in a hidden PayPal form field on the coaching page, so it is not treated as published; the contact form is used instead.",
+      "Facebook follower count could not be read; the main counted account (Instagram) gives a clear local_hero total.",
+      "All videos are on other channels (Kripalu, TEDx, podcasts) as her own YouTube channel has no public videos."
+    ],
+    "left_out": [
+      "The Ache in Your Heart Is Holy (Broadleaf Books, May 2026, ISBN 9798889831730): no amazon.com /dp/ page could be confirmed (Amazon search returned errors), so the book is mentioned in the bio only.",
+      "Online Holy Wake-Up Call and Story Alchemy courses: listed on her site with dates 'TBA', so left out.",
+      "Her 2026 calendar items (Kripalu, festivals, At Play with the Radiance Sutras, August 2026) have all passed.",
+      "Kripalu class re-upload on a third-party channel (XvLFloIdjDA) and audiobook-sample videos left out."
+    ]
+  },
+  "images_final": true
+}

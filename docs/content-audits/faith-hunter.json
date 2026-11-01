@@ -1,0 +1,282 @@
+{
+  "healer": {
+    "healer_slug": "faith-hunter",
+    "create": {
+      "name": "Faith Hunter",
+      "bio": "Faith Hunter is a yoga and meditation teacher and writer who first turned to yoga in the early 1990s while grieving the death of her older brother. She went on to study several styles of yoga, ran two studios in Washington, DC, for close to two decades, and has since trained many teachers in yoga, breathwork and meditation. Her approach, which she calls Spiritually Fly, brings together movement, breath, chanting, music and journaling, and more recently she has added a gentle, body-centred method she names The Soft Rewire.\n\nHer book Spiritually Fly: Wisdom, Meditations, and Yoga to Elevate Your Soul, published by Sounds True, sets out seven guiding principles with practices for each, and she has also written a 52-week journal, The Return to You. Much of her teaching now reaches people through her Spiritually Fly app and membership, recorded certification courses, livestreamed solstice gatherings and her YouTube channel, where she posts yoga classes and guided meditations for each new and full moon. She also leads small destination retreats for women and returns to Kripalu for weekend immersions.",
+      "tier": "luminary",
+      "entity_type": "individual",
+      "availability": "worldwide",
+      "city": null,
+      "country": null,
+      "subjects": [
+        "yoga",
+        "meditation",
+        "breathwork"
+      ],
+      "website_url": "https://www.faithhunter.com",
+      "booking_url": "https://www.faithhunter.com/retreat-events",
+      "youtube_url": "https://www.youtube.com/user/OfficialFaithHunter",
+      "instagram_url": "https://www.instagram.com/spirituallyfly",
+      "facebook_url": "https://www.facebook.com/SpirituallyFly/",
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "wellness@faithhunter.com",
+      "image_urls": [
+        "https://kripalu.org/sites/default/files/2015-10/FaithHunter_2022.jpg",
+        "https://yt3.googleusercontent.com/hIzQwuEfgm9enRI5nPvpyflx-r7Sg1hYiMmPmmqPRpdHQ3d-U51R3lNfQsflXR-nOdTYwUIFbzc=s900",
+        "https://images.squarespace-cdn.com/content/v1/629766895bd2320a2145aaf1/b0089c42-0113-49ac-91ec-c6d68ec9bd36/Facetune_01-06-2021-19-04-10-1536x1152.jpeg"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "kripalu",
+      "role": "instructor"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Somatic Yoga | Gentle and Mindful Morning Somatic Exercises | 20 minutes",
+      "url": "https://www.youtube.com/watch?v=leGo4wrlPP0",
+      "subjects": [
+        "yoga"
+      ],
+      "channel": "Faith Hunter"
+    },
+    {
+      "title": "Let Go | Release Emotional Attachment: Cutting the Cords Meditation",
+      "url": "https://www.youtube.com/watch?v=gV5nKI9RJG4",
+      "subjects": [
+        "meditation",
+        "self-healing"
+      ],
+      "channel": "Faith Hunter"
+    },
+    {
+      "title": "Bedtime Yoga for Deep Relaxation | Somatic Movement | Mind & Body for a Peaceful Night’s Sleep",
+      "url": "https://www.youtube.com/watch?v=PQKyN1OnUEk",
+      "subjects": [
+        "yoga",
+        "mindfulness"
+      ],
+      "channel": "Faith Hunter"
+    },
+    {
+      "title": "Wake Up and Stretch With Faith Hunter | 30-min Yoga practice",
+      "url": "https://www.youtube.com/watch?v=56od0z-dPxI",
+      "subjects": [
+        "yoga"
+      ],
+      "channel": "Faith Hunter"
+    },
+    {
+      "title": "Morning Yoga Flow | 10-minute Practice",
+      "url": "https://www.youtube.com/watch?v=-yZR0fdUqHM",
+      "subjects": [
+        "yoga"
+      ],
+      "channel": "Faith Hunter"
+    },
+    {
+      "title": "UnWind Yoga Flow and Meditation",
+      "url": "https://www.youtube.com/watch?v=e73mrxJVnco",
+      "subjects": [
+        "yoga",
+        "meditation"
+      ],
+      "channel": "Faith Hunter"
+    },
+    {
+      "title": "Spiritually Fly Yoga Sequence (root chakra #1)",
+      "url": "https://www.youtube.com/watch?v=cjv20ppjc4o",
+      "subjects": [
+        "yoga",
+        "chakra-healing"
+      ],
+      "channel": "Faith Hunter"
+    },
+    {
+      "title": "Wake Up to a Better Morning with 10-Minute Yoga & Meditation in Bed with Faith Hunter",
+      "url": "https://www.youtube.com/watch?v=bvUsxKSc7e8",
+      "subjects": [
+        "yoga",
+        "meditation"
+      ],
+      "channel": "Faith Hunter"
+    },
+    {
+      "title": "Cleanse Negative Energy | Remove Negative Energy Guided Meditation",
+      "url": "https://www.youtube.com/watch?v=79JB_4onkrA",
+      "subjects": [
+        "meditation",
+        "energy-medicine"
+      ],
+      "channel": "Faith Hunter"
+    },
+    {
+      "title": "Gratitude Yoga Flow & Meditation I Yoga with Faith Hunter",
+      "url": "https://www.youtube.com/watch?v=7CkxWH3Yi_U",
+      "subjects": [
+        "yoga",
+        "meditation"
+      ],
+      "channel": "Faith Hunter"
+    },
+    {
+      "title": "Increasing Self-Worth | Guided  Meditation | Live Reading from Spiritually Fly",
+      "url": "https://www.youtube.com/watch?v=lAa5g-dsrOI",
+      "subjects": [
+        "meditation",
+        "self-healing"
+      ],
+      "channel": "Faith Hunter"
+    },
+    {
+      "title": "How I Build Self-Trust And Listen To My Inner Voice | Guided Reading & Meditation",
+      "url": "https://www.youtube.com/watch?v=r57fLn4RrrU",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "channel": "Faith Hunter"
+    }
+  ],
+  "books": [
+    {
+      "title": "Spiritually Fly: Wisdom, Meditations, and Yoga to Elevate Your Soul",
+      "slug": "spiritually-fly",
+      "author": "Faith Hunter",
+      "asin": "1683643755",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "Faith's first book, built around seven principles she calls the Spiritually Fly Sutras. Each chapter pairs a piece of her own story with yoga sequences, breath practices, chants and journaling prompts.",
+      "subjects": [
+        "yoga",
+        "meditation",
+        "spirituality"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1683643755.01._SCLZZZZZZZ_.jpg"
+    }
+  ],
+  "courses": [
+    {
+      "title": "Body as Home: A Feminine Nervous System Immersion",
+      "url": "https://kripalu.org/experiences/body-home-feminine-nervous-system-immersion",
+      "description": "A weekend at Kripalu in Stockbridge, Massachusetts, centred on rest and returning to the body. Faith leads restorative yoga, somatic movement, breathwork, meditation, journaling, ritual and sound in a supportive group setting.",
+      "price": "$365 USD tuition plus accommodation",
+      "product_type": "retreat",
+      "start_date": "2026-11-27",
+      "end_date": "2026-11-29",
+      "subjects": [
+        "yoga",
+        "breathwork",
+        "meditation"
+      ],
+      "image": "https://kripalu.org/sites/default/files/styles/og_image/public/2025-08/GettyImages-945464840_heartpose_hero_0.jpg?itok=LZME-Iqw"
+    },
+    {
+      "title": "Spiritually Fly™ Membership",
+      "url": "https://www.faithhunter.com/membership",
+      "description": "Faith's app and online membership, with guided meditations, breath and somatic practices, workshops and weekly resets. New members begin with a five-day challenge and a seven-day free trial.",
+      "price": "$29.99 USD per month or $288 USD per year",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "breathwork",
+        "manifestation"
+      ],
+      "image": "http://static1.squarespace.com/static/629766895bd2320a2145aaf1/t/66e21011f38a8715eb2fee0e/1726098324862/Copy%2Bof%2BResource%2BMockup-2.jpg?format=1500w"
+    },
+    {
+      "title": "Meditation and Mindfulness Certification",
+      "url": "https://fly.faithhunter.com/meditation-course-faith-hunter",
+      "description": "A self-paced certification for people who want to guide meditation. It includes five recorded training sessions of about ten hours plus extra meditations, covering the history of meditation, breath awareness, the chakras and ways of leading a group.",
+      "price": "$375 USD",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/file-uploads/sites/2147549701/images/b622c51-2056-dedf-0081-435c4e76d771_a0969c03-e422-4a70-a869-6aa265af9b86.JPG"
+    },
+    {
+      "title": "Intuitive Breathwork Course",
+      "url": "https://fly.faithhunter.com/Breathwork",
+      "description": "A recorded course in Faith's own style of breathwork, made up of five sessions, instructional videos, a manual and a playlist. It teaches a range of breathing techniques and how to hold space when guiding others.",
+      "price": "$325 USD",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "breathwork",
+        "meditation"
+      ],
+      "image": "https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/file-uploads/sites/2147549701/images/70bca71-44d8-e42e-42d-5ffb2baddde6_FaithHunter_Medi1.png"
+    },
+    {
+      "title": "The Chakra Alchemy Practitioner Course",
+      "url": "https://fly.faithhunter.com/Chakra_Healing",
+      "description": "A self-paced course on working with the chakras through breath, mudras, meditation and yoga postures. It is aimed at yoga and meditation teachers and anyone wanting to bring chakra work into their own practice.",
+      "price": "$44 USD (regular price $325 USD)",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "chakra-healing",
+        "yoga",
+        "breathwork"
+      ],
+      "image": "https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/file-uploads/sites/2147549701/images/addde4f-0360-7cd-5fae-fad6113d8255_8715a03b-c59e-4c6f-97eb-07a5aeeb41aa.png"
+    },
+    {
+      "title": "Return to You: A 6-Day Guided Journey Back to Yourself",
+      "url": "https://fly.faithhunter.com/return-to-you-bundle",
+      "description": "A short guided programme inspired by Faith's journal of the same name. Over six days it combines meditation, breathwork, journaling and reflection, taken at your own pace.",
+      "price": "$25 USD",
+      "product_type": "download",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "breathwork"
+      ],
+      "image": "https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/file-uploads/sites/2147549701/images/db6bfc-f1a-c20b-eddd-218eaafaef_The_Return_to_You_A_6-Day_Meditative_Healing_Journey.png"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "hub": "kripalu",
+    "rank": 63,
+    "hub_url": "https://kripalu.org/people/faith-hunter",
+    "tier_evidence": "YouTube @OfficialFaithHunter 62.8K subscribers (channel header, 1 Nov 2026); Instagram @spirituallyfly 88K followers (og:description, 1 Nov 2026); Facebook SpirituallyFly not readable without login → ~150.8k total → luminary",
+    "email": "yes",
+    "email_source": "https://www.faithhunter.com/contact",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 19 source(s)",
+    "flags": [
+      "Tier borderline: readable total ~150.8k, just above the 80k-150k band; Facebook could not be read.",
+      "Kripalu programme title uses 'nervous system' and the page mentions patterns of stress; kept as it names no condition and the description avoids claims.",
+      "Email wellness@faithhunter.com is her general enquiries inbox (hello@ goes to her representation team).",
+      "Third photo is a candid shot from her site (2021), clearly the same person as the headshots.",
+      "Not the fantasy novelist Faith Hunter (Jane Yellowrock series); only her own book is listed."
+    ],
+    "left_out": [
+      "BREATHE Somatic Healing Program: sold on trauma resolution.",
+      "Videos titled for anxiety, stress and anxiety at bedtime, 'emotional and physical healing', detox, hip and back tension, anger release and grief: condition-led or borderline.",
+      "Dated moon-phase videos (2026 new and full moons): dated.",
+      "Zanzibar retreat (1-8 Nov 2026): starts before 3 Nov.",
+      "IN FLOW Portugal retreat (5-11 Jun 2027): the only link goes to a TourHero page that would not render without scripts, so dates and price could not be confirmed there.",
+      "Winter Solstice livestream (21 Dec 2026): no page of its own (links to a checkout).",
+      "Cosmically Entangled ebook ($22 USD): only a checkout URL.",
+      "The Return to You journal: ISBN 9798989955107 has no ISBN-10 and I found no amazon.com /dp/ page; Shades of the Soul: not found on Amazon.",
+      "Spiritually Fly Podcast and Substack: not checked in depth; not item types used here."
+    ]
+  },
+  "images_final": true
+}

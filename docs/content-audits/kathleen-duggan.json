@@ -1,0 +1,164 @@
+{
+  "healer": {
+    "healer_slug": "kathleen-duggan",
+    "create": {
+      "name": "Kathleen Duggan",
+      "bio": "Kathleen Duggan is a shamanic practitioner and teacher who works in the core shamanism tradition alongside Usui Reiki. Her teachers over roughly a decade have included Sandra Ingerman, Jane Burns and Dory Cote, and her training includes an apprenticeship, a soul retrieval intensive, two years of advanced study and initiation known as Becoming the Hollow Bone, followed by two years of teacher preparation under Cote. She received her first Reiki attunement in 2014 from Marsha Stultz and now holds Master of Masters standing in the Usui Shiki Ryoho system, as well as practitioner certification in Stultz's Heart Lotus Evolution method.\n\nWith Nancy MacPhee she runs Shamanic Healing and Teaching, a practice under the Live the Way of the Heart name with bases in Western New York and Maine. Together they lead introductory workshops on the shamanic journey, including a recurring six-day programme at Kripalu. On her own, Kathleen holds a small online apprenticeship circle each year, teaches Reiki I and II over Zoom, and offers private sessions, mentoring for people developing a spiritual or energy practice, and clearings for homes and land. Her approach rests on a close working relationship with helping spirits, and she offers most of her teaching both in person and at a distance.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local_online",
+      "city": "Rochester",
+      "country": "United States",
+      "subjects": [
+        "shamanism",
+        "reiki",
+        "energy-medicine"
+      ],
+      "website_url": "https://www.shamanichealingandteaching.com",
+      "booking_url": "https://www.shamanichealingandteaching.com/book-kathleen",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "joy@shamanichealingandteaching.com",
+      "image_urls": [
+        "https://kripalu.org/sites/default/files/2026-05/portraitkripalu.JPG"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "kripalu",
+      "role": "instructor"
+    }
+  ],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "An Introduction to Shamanism: Learn to Journey (November 2026)",
+      "url": "https://kripalu.org/experiences/introduction-shamanism-learn-journey?sku=18447568",
+      "description": "A six-day residential programme at Kripalu in Stockbridge, Massachusetts, co-led with Nancy MacPhee. Participants learn the ethics and basic tools of core shamanism, practise the shamanic journey to meet a helping spirit, and take part in ceremony and time on the land. Beginners and those wanting to build confidence in journeying are both welcome.",
+      "price": "$525 USD tuition plus lodging",
+      "product_type": "retreat",
+      "start_date": "2026-11-08",
+      "end_date": "2026-11-13",
+      "subjects": [
+        "shamanism"
+      ],
+      "image": "https://kripalu.org/sites/default/files/styles/og_image/public/2026-01/Introduction%20to%20Shamanism%20Hero%20Landscape.jpg?itok=DI00o2oM"
+    },
+    {
+      "title": "An Introduction to Shamanism: Learn to Journey (April 2027)",
+      "url": "https://kripalu.org/experiences/introduction-shamanism-learn-journey?sku=18453431",
+      "description": "The spring run of the six-day Kripalu programme that Kathleen co-leads with Nancy MacPhee. The week covers the principles of core shamanism, how to journey to the upper, lower and middle worlds, creating sacred space and group ceremony, with open evenings for Kripalu's yoga classes.",
+      "price": "$525 USD tuition plus lodging",
+      "product_type": "retreat",
+      "start_date": "2027-04-18",
+      "end_date": "2027-04-23",
+      "subjects": [
+        "shamanism"
+      ],
+      "image": "https://kripalu.org/sites/default/files/styles/og_image/public/2026-01/Introduction%20to%20Shamanism%20Hero%20Landscape.jpg?itok=DI00o2oM"
+    },
+    {
+      "title": "Shamanic Apprenticeship 2027",
+      "url": "https://www.shamanichealingandteaching.com/service-page/shamanic-apprenticeship-2027-2",
+      "description": "A nine-month online circle of no more than four students, held over Zoom and led by Kathleen. Topics include ethics, sacred space, psychopomp work, ancestral practice, soul essence retrieval and clearing homes and land. Applicants need an established journeying practice and an interview before joining.",
+      "price": "From $200 USD per month (sliding scale $200 to $250 USD)",
+      "product_type": "course",
+      "start_date": "2027-01-04",
+      "end_date": "2027-10-01",
+      "subjects": [
+        "shamanism",
+        "shadow-work",
+        "death-the-afterlife"
+      ],
+      "image": "https://static.wixstatic.com/media/bca133_1d43badeeac74126b8d37acfd4a1ba95~mv2.jpg/v1/fit/w_1510,h_1510,al_c,q_90/bca133_1d43badeeac74126b8d37acfd4a1ba95~mv2.jpg"
+    },
+    {
+      "title": "Reiki I Class & Certification",
+      "url": "https://www.shamanichealingandteaching.com/service-page/reiki-i-class-certification-1",
+      "description": "A live first-degree Usui Reiki class taught over Zoom, including the attunement, the history of the Usui system and hand positions for self-practice and for others. Kathleen teaches individuals, friends and family groups, and groups of bodywork and yoga professionals.",
+      "price": "$150 USD",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "reiki"
+      ],
+      "image": "https://static.wixstatic.com/media/bca133_263db294c464412e8d87a03a177723b3~mv2.jpg/v1/fit/w_1689,h_2608,al_c,q_90/bca133_263db294c464412e8d87a03a177723b3~mv2.jpg"
+    },
+    {
+      "title": "Reiki II Class & Certification",
+      "url": "https://www.shamanichealingandteaching.com/service-page/reiki-ii-class-certification",
+      "description": "A five-hour second-degree Usui Reiki class over Zoom that introduces the sacred symbols and chants and distance practice. It follows Reiki I and is the level usually needed to offer Reiki to others.",
+      "price": "$300 USD (sliding scale $250 to $300 USD)",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "reiki"
+      ],
+      "image": "https://static.wixstatic.com/media/d8bccc_5310d6daaf864d9a880e48bcc7bcfaf1~mv2.jpg/v1/fit/w_2252,h_4000,al_c,q_90/d8bccc_5310d6daaf864d9a880e48bcc7bcfaf1~mv2.jpg"
+    },
+    {
+      "title": "Energy Reset",
+      "url": "https://www.shamanichealingandteaching.com/service-page/energy-reset",
+      "description": "A private class of around two and a half hours, online or for a small group, on looking after your own energy. Kathleen teaches simple practices for cleansing, clearing and aligning the energy body that can be used day to day.",
+      "price": "$100 USD",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "energy-medicine",
+        "self-healing"
+      ],
+      "image": "https://static.wixstatic.com/media/bca133_5733dad58ea9404da5bb1042f171db1e~mv2.jpg/v1/fit/w_600,h_757,al_c,q_85/bca133_5733dad58ea9404da5bb1042f171db1e~mv2.jpg"
+    },
+    {
+      "title": "Spirituality and Energy Medicine Mentor",
+      "url": "https://www.shamanichealingandteaching.com/service-page/spirituality-and-energy-medicine-mentor",
+      "description": "One-to-one online mentoring sessions of 90 minutes, shaped around what each person wants to explore on their spiritual path. Kathleen draws on shamanic practice, energy work and Reiki, working with her own and the client's helping spirits.",
+      "price": "$165 USD per session",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "shamanism",
+        "energy-medicine",
+        "spirituality"
+      ],
+      "image": "https://static.wixstatic.com/media/bca133_f3fcc1b3a6b24fab842648e4453868d0~mv2.jpg/v1/fit/w_2544,h_3392,al_c,q_90/bca133_f3fcc1b3a6b24fab842648e4453868d0~mv2.jpg"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "hub": "kripalu",
+    "rank": 66,
+    "hub_url": "https://kripalu.org/people/kathleen-duggan",
+    "tier_evidence": "No YouTube, Instagram, Facebook, X or TikTok account linked from her site or her Kripalu page (1 Nov 2026) → 0 readable followers → local_hero",
+    "email": "yes",
+    "email_source": "https://www.shamanichealingandteaching.com/contact",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 14 source(s)",
+    "flags": [
+      "Teaching pair: Kathleen Duggan and Nancy MacPhee co-lead the Kripalu programme and share one website; listed as Kathleen Duggan (the queue entry), with Nancy named in the bio.",
+      "Email used is the shared practice inbox (joy@ on the contact page); her personal address kmkduggan@gmail.com also appears on her own service pages.",
+      "City set to Rochester, New York from her About page; Kripalu's bio says she lives in Maine and the site says the practice is based in Maine and Western New York.",
+      "Only one photo confirmed (Kripalu headshot; the same portrait is on her About page); other site images are landscapes.",
+      "Apprenticeship end date taken from the booking page (1 Oct 2027); the page text says the circle runs January to September and that 4 January is a placeholder.",
+      "Reiki I booking page itself mentions stress, anxiety and pain; the item is kept because its title and our description name no condition. Borderline, a human may prefer to drop it.",
+      "Thin on media: no videos, books or free resources; listing rests on offerings."
+    ],
+    "left_out": [
+      "Private Shamanic Healing Session and Shamanic Healing Session for Children: the pages list anxiety, depression, chronic pain, trauma and sleep problems as reasons to book (health-claim rule).",
+      "Learn to Journey & Intro to Shamanism online course: ended, waitlist only.",
+      "Intro to Shamanism/Learn to Journey in-person workshop (October 2026, dates TBD): passed or undated.",
+      "Home/Land/Business Clearing Consultation and phone consultation: consultations, not distinct offerings with prices.",
+      "kathleenduggan.com (linked from Kripalu) does not resolve; livethewayoftheheart.com not used."
+    ]
+  },
+  "images_final": true
+}

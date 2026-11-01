@@ -1,0 +1,51 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 518,
+    "healer_slug": "rudy-peirce"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "e0f62e9d-29fc-49eb-be99-673392fefbff",
+      "slug": "gentle-yoga-retreat-cultivate-presence-resilience-and-renewal",
+      "title": "Gentle Yoga Retreat: Cultivate Presence, Resilience, and Renewal"
+    },
+    {
+      "table": "courses",
+      "id": "a88a17fb-8734-4f70-8189-775a4c6622f9",
+      "slug": "kripalu-gentle-yoga-teacher-training",
+      "title": "Kripalu Gentle Yoga Teacher Training"
+    },
+    {
+      "table": "courses",
+      "id": "f842470f-2dfd-4eef-a7ac-3361411ee830",
+      "slug": "breath-gentle-movement",
+      "title": "Breath & Gentle Movement"
+    },
+    {
+      "table": "courses",
+      "id": "d7c0639e-08ff-4f08-8a1a-410d53867c79",
+      "slug": "gentle-yoga-teachers-circles",
+      "title": "Gentle Yoga Teachers Circles"
+    },
+    {
+      "table": "courses",
+      "id": "8065c1b1-ed50-45c7-8fd1-2f1874198310",
+      "slug": "all-access-yoga-membership",
+      "title": "All Access Yoga Membership"
+    },
+    {
+      "table": "courses",
+      "id": "93914db5-6cf5-4de1-9f3d-dc24c8bc6478",
+      "slug": "the-gentle-series",
+      "title": "The Gentle Series"
+    },
+    {
+      "table": "hub_teachers",
+      "id": "5d6b763c-779c-4306-9fe7-41ab985dbf78",
+      "title": "rudy-peirce teaches at Kripalu Center for Yoga & Health"
+    }
+  ],
+  "at": "2026-11-01T14:45:53.098Z"
+}
