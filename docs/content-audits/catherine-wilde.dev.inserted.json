@@ -1,0 +1,51 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 559,
+    "healer_slug": "catherine-wilde"
+  },
+  "rows": [
+    {
+      "table": "videos",
+      "id": 5746,
+      "slug": "confident-mom-guided-meditation-for-moms",
+      "title": "Confident Mom - Guided Meditation for Moms"
+    },
+    {
+      "table": "videos",
+      "id": 5747,
+      "slug": "fully-present-yoga-flow",
+      "title": "Fully Present Yoga Flow"
+    },
+    {
+      "table": "videos",
+      "id": 5748,
+      "slug": "body-scan-guided-meditation",
+      "title": "Body Scan Guided Meditation"
+    },
+    {
+      "table": "courses",
+      "id": "7dffb3c5-67eb-4ee3-b2cd-49a82dcf73c7",
+      "slug": "vibrant-mom-life",
+      "title": "Vibrant Mom Life"
+    },
+    {
+      "table": "courses",
+      "id": "38d0ce23-dbcc-4f4a-a682-e6b7213477ce",
+      "slug": "compassionate-motherhood-the-journey-of-navigating-and-releasing-mom-guilt",
+      "title": "Compassionate Motherhood: The Journey Of Navigating And Releasing Mom Guilt"
+    },
+    {
+      "table": "free_resources",
+      "id": "2adc12cc-34a4-4eaa-a645-7d1dbab31abb",
+      "slug": "catherine-wilde-on-insight-timer",
+      "title": "Catherine Wilde on Insight Timer"
+    },
+    {
+      "table": "hub_teachers",
+      "id": "4fb66bcc-0405-4275-9ee7-87e602a97739",
+      "title": "catherine-wilde teaches at Insight Timer"
+    }
+  ],
+  "at": "2026-11-01T18:34:52.869Z"
+}

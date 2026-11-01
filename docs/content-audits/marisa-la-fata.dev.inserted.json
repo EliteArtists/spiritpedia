@@ -1,0 +1,45 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 562,
+    "healer_slug": "marisa-la-fata"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "2fa277a3-8699-4c90-81f5-c5b6e1a90d88",
+      "slug": "awakening-the-heart-center-a-course-in-inner-visioning",
+      "title": "Awakening the Heart Center: A Course In Inner Visioning"
+    },
+    {
+      "table": "courses",
+      "id": "8a9cc35b-8203-4094-b3da-245b7aae1dcd",
+      "slug": "intuitive-healing-session",
+      "title": "Intuitive Healing Session"
+    },
+    {
+      "table": "courses",
+      "id": "7a76708c-aff0-4511-ab65-6a0ba0d23d53",
+      "slug": "12-week-soul-return",
+      "title": "12 Week Soul Return"
+    },
+    {
+      "table": "courses",
+      "id": "0ba20b8f-6370-42c6-b0bd-28e74b096791",
+      "slug": "rise-of-the-sacred-feminine-womens-shamanic-breathwork-day-retreat",
+      "title": "Rise of the Sacred Feminine: Women's Shamanic Breathwork Day Retreat"
+    },
+    {
+      "table": "free_resources",
+      "id": "3c695ee3-a7a2-421d-837f-656884b02b88",
+      "slug": "marisa-la-fata-on-insight-timer",
+      "title": "Marisa La Fata on Insight Timer"
+    },
+    {
+      "table": "hub_teachers",
+      "id": "11042a5d-5d9a-4f94-8b8b-c0edd0d95d69",
+      "title": "marisa-la-fata teaches at Insight Timer"
+    }
+  ],
+  "at": "2026-11-01T18:35:12.124Z"
+}
