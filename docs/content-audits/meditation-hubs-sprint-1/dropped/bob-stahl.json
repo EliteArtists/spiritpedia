@@ -1,0 +1,278 @@
+{
+  "healer": {
+    "healer_slug": "bob-stahl",
+    "create": {
+      "name": "Bob Stahl",
+      "bio": "Bob Stahl is a mindfulness and insight meditation teacher whose path began with more than eight years as a resident of a Burmese Buddhist monastery in the forest lineage of the Venerable Taungpulu Sayadaw. After leaving monastic life he became one of the early teachers of mindfulness-based stress reduction, setting up in 1991 what is described as the first MBSR programme in California and running it at hospitals around the San Francisco Bay Area for some thirty years. He has taught as a senior teacher for the Center for Mindfulness at UMass Medical School, and holds a professor-of-the-practice post at Brown University's School of Public Health, and teaches at the university's mindfulness centre as one of its senior staff.\n\nToday, with his wife Jan Landry, he concentrates on retreats, classes and online mentoring. He leads residential and online mindfulness retreats in many countries, is co-guiding teacher of Insight Santa Cruz, and has taught at IMS and the Barre Center for Buddhist Studies. His teaching keeps the Buddhist roots of mindfulness close, with attention to the body, lovingkindness and reflection on impermanence, alongside gentle mindful yoga and qigong. He has co-written several books, including MBSR Every Day with Elisha Goldstein and Living with Your Heart Wide Open with Steve Flowers.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local_online",
+      "city": "Santa Cruz",
+      "country": "United States",
+      "subjects": [
+        "mindfulness",
+        "meditation",
+        "spirituality"
+      ],
+      "website_url": "https://www.mindfulnessprograms.com/",
+      "booking_url": "https://www.mindfulnessprograms.com/mindfulness-retreats",
+      "youtube_url": "https://www.youtube.com/@bobstahl7653",
+      "instagram_url": "https://www.instagram.com/mindfulnessprograms/",
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": null,
+      "image_urls": [
+        "https://www.dharma.org/wp-content/uploads/Bob-Stahl-New-Profile-1.webp",
+        "https://yt3.googleusercontent.com/ytc/AIdro_lhLWg8trLf_OAIC5Vs3nBgGn28UDELIkp2dDHBwvBNXYY=s900-c-k-c0x00ffffff-no-rj"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "insight-meditation-society",
+      "role": "instructor"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Body Scan Meditation",
+      "url": "https://www.youtube.com/watch?v=-LMEEq8aFgE",
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "channel": "Bob Stahl - Topic"
+    },
+    {
+      "title": "Guided Mindfulness Meditation",
+      "url": "https://www.youtube.com/watch?v=F234xGkLtBM",
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "channel": "Bob Stahl - Topic"
+    },
+    {
+      "title": "Mindful@Home with Bob Stahl - Living with Wisdom in Times of Uncertainty",
+      "url": "https://www.youtube.com/watch?v=lOQ76JZTU5k",
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "channel": "Mindful"
+    },
+    {
+      "title": "An Introduction to MBSR Meditation",
+      "url": "https://www.youtube.com/watch?v=lEBH8YVEjmo",
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "channel": "Bob Stahl"
+    },
+    {
+      "title": "3 Things You Need To Make Peace With Yourself | Meditation Teacher Bob Stahl, PhD",
+      "url": "https://www.youtube.com/watch?v=9hvQxTmYz88",
+      "subjects": [
+        "mindfulness",
+        "spirituality"
+      ],
+      "channel": "Brahm Centre"
+    },
+    {
+      "title": "Sitting Meditation",
+      "url": "https://www.youtube.com/watch?v=DC6YMu1vuRE",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "channel": "Bob Stahl - Topic"
+    },
+    {
+      "title": "Eight Years In A Monastery - Conversation With Bob Stahl About Busyness, Happiness, and Mindfulness",
+      "url": "https://www.youtube.com/watch?v=zu1G55Zwi4Q",
+      "subjects": [
+        "mindfulness",
+        "spirituality"
+      ],
+      "channel": "Bob Stahl"
+    },
+    {
+      "title": "The 32 Parts of The Body Meditation - Bob Stahl 2022-04-10",
+      "url": "https://www.youtube.com/watch?v=7ayTrjn0tjU",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "channel": "The Gay Buddhist Fellowship"
+    },
+    {
+      "title": "An Introduction to Mindfulness Based Stress Reduction (MBSR) Online Classes",
+      "url": "https://www.youtube.com/watch?v=Sk065GbR6sw",
+      "subjects": [
+        "mindfulness"
+      ],
+      "channel": "Bob Stahl"
+    },
+    {
+      "title": "Mindful Yoga - Meditation in Motion Online Class Introduction",
+      "url": "https://www.youtube.com/watch?v=mcVx4QyMcJA",
+      "subjects": [
+        "yoga",
+        "mindfulness"
+      ],
+      "channel": "Bob Stahl"
+    },
+    {
+      "title": "Mindful Reconciliation Retreat - part 1",
+      "url": "https://www.youtube.com/watch?v=Cg_uEkhUxAk",
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "channel": "Bob Stahl"
+    },
+    {
+      "title": "Mindful Reconciliation Retreat - part 2",
+      "url": "https://www.youtube.com/watch?v=UO1anb8fJJo",
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "channel": "Bob Stahl"
+    }
+  ],
+  "books": [
+    {
+      "title": "MBSR Every Day: Daily Practices from the Heart of Mindfulness-Based Stress Reduction",
+      "slug": "mbsr-every-day",
+      "author": "Elisha Goldstein, Bob Stahl",
+      "asin": "1626251738",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "A follow-on to the authors' MBSR workbook, made up of short daily practices and reflections for bringing mindful attention into ordinary routines. It is designed to be dipped into rather than read straight through.",
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1626251738.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "Living with Your Heart Wide Open: How Mindfulness and Compassion Can Free You from Unworthiness, Inadequacy, and Shame",
+      "slug": "living-with-your-heart-wide-open",
+      "author": "Steve Flowers, Bob Stahl",
+      "asin": "1572249366",
+      "store": "amazon.com",
+      "cover": null,
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "A guide to meeting harsh self-judgement with mindfulness and self-compassion, drawing on Buddhist teaching and Western psychology. It includes guided lovingkindness and compassion practices for opening the heart towards oneself and others.",
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ]
+    }
+  ],
+  "courses": [
+    {
+      "title": "Mindfulness as the Gateway to Many Beautiful Qualities",
+      "url": "https://ims.dharma.org/courses/mindfulness-as-the-gateway-to-many-beautiful-qualities",
+      "description": "An IMS Online retreat over five days, taught with Éowyn Ahlstrom, with silent sitting and walking, guided movement and dharma talks. It explores how sustained mindfulness gives rise to kindness, compassion, joy and equanimity, and it counts as a retreat prerequisite for some MBSR and MBCT teacher trainings.",
+      "price": "$175–$450 USD (sliding scale)",
+      "product_type": "course",
+      "start_date": "2026-12-04",
+      "end_date": "2026-12-09",
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "image": "https://import.cdn.thinkific.com/478758/6e8TyKHqQjOc0dAmP6qR_Course%20Tile%20760x420.jpg"
+    },
+    {
+      "title": "Online Mindful Mentoring",
+      "url": "https://www.mindfulnessprograms.com/programs/new-online-mindful-mentoring",
+      "description": "Online sessions with Bob Stahl or Jan Landry, for individuals or groups, offering personal guidance in starting, deepening or applying a mindfulness practice in work and daily life.",
+      "price": "Sliding scale (contact for pricing)",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "mindfulness",
+        "life-coaching"
+      ],
+      "image": "https://www.mindfulnessprograms.com/images/faculty/Bob-stahl-2023.jpg"
+    },
+    {
+      "title": "Qigong and Lovingkindness Meditation Video",
+      "url": "https://www.mindfulnessprograms.com/mindfulness-audio-video-books/mindfulness-videos",
+      "description": "A downloadable video of a thirty-minute guided mindful qigong session followed by a thirty-minute lovingkindness meditation.",
+      "price": "$9.99 USD",
+      "product_type": "download",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "qi-gong",
+        "meditation"
+      ],
+      "image": "https://www.dharma.org/wp-content/uploads/Bob-Stahl-New-Profile-1.webp"
+    },
+    {
+      "title": "MBSR Audio Downloads",
+      "url": "https://www.mindfulnessprograms.com/mindfulness-audio-video-books/mbsr-audio-downloads",
+      "description": "Guided MP3 practices from the MBSR curriculum, including a body scan with sitting meditation and gentle lying and standing mindful yoga.",
+      "price": "$9.99 USD each",
+      "product_type": "download",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "mindfulness",
+        "meditation",
+        "yoga"
+      ],
+      "image": "https://www.dharma.org/wp-content/uploads/Bob-Stahl-New-Profile-1.webp"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Dharma Talks on Dharma Seed",
+      "url": "https://dharmaseed.org/teacher/268/",
+      "description": "Bob's archive of retreat talks and guided meditations, free to stream or download.",
+      "featured": true,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://www.dharma.org/wp-content/uploads/Bob-Stahl-New-Profile-1.webp"
+    }
+  ],
+  "sprint": {
+    "hub": "insight-meditation-society",
+    "rank": 9,
+    "hub_url": "https://www.dharma.org/teacher/bob-stahl/",
+    "tier_evidence": "YouTube @bobstahl7653 175 subscribers (channel page header, 1 Nov 2026); Instagram @mindfulnessprograms (profile name Bob Stahl) 1,204 followers (og:description, 1 Nov 2026); Facebook AwarenessAndRelaxationTraining is his company page, not counted → ~1,379 total → local_hero",
+    "email": "contact form",
+    "email_source": null,
+    "contact_form_url": "https://www.mindfulnessprograms.com/contact",
+    "bio_check": "OK: no 8-word runs against 18 source(s)",
+    "flags": [
+      "Health rule (as instructed, skip only if most of his work is condition-led): much of his catalogue is condition-framed (MBSR Workbook for Anxiety, Calming the Rush of Panic, the Mindful Healing audio series on back pain, insomnia, heart disease and blood pressure; the auto-generated 'Bob Stahl - Topic' YouTube channel has pain and anxiety titles), but his current main work, retreats, mentoring, dharma talks and his own YouTube channel, is not, so he was kept with those items left out. A human should confirm.",
+      "Online Mindful Mentoring kept with a neutral description, but its page lists anxiety, insomnia, grief and chronic pain among focus areas (borderline).",
+      "Tier could be argued higher on editorial stature (co-author of the widely used Mindfulness-Based Stress Reduction Workbook); left at local_hero on counts, owner to decide.",
+      "Two videos (Body Scan Meditation, Guided Mindfulness Meditation) and Sitting Meditation come from the auto-generated 'Bob Stahl - Topic' channel (his album tracks); his own channel has only seven videos.",
+      "Email on his contact page is hidden behind a click-to-reveal anti-spam script, so the contact form was used instead.",
+      "Availability local_online with Santa Cruz as base, from his role as co-guiding teacher of Insight Santa Cruz; his home city is not stated on his own site.",
+      "Co-teaches the IMS online retreat with Éowyn Ahlstrom (rank 6), whose plan has the same programme URL; the dry run shows that URL is already in the database.",
+      "No cover found for Living with Your Heart Wide Open (ISBN-10 1572249366); cover set to null.",
+      "Instagram handle @mindfulnessprograms is named after his website but the profile name is Bob Stahl; counted as his own."
+    ],
+    "left_out": [
+      "Books: A Mindfulness-Based Stress Reduction Workbook (blurb names anxiety, depression, chronic pain), A Mindfulness-Based Stress Reduction Workbook for Anxiety and Calming the Rush of Panic (condition-named).",
+      "Mindful Healing audio downloads (Working with Back Pain, Neck and Shoulder Pain, Chronic Pain, Insomnia, Heart Disease, High Blood Pressure, Anxiety, Asthma/COPD): condition-named.",
+      "Videos: Meditation for Anxiety, Fear & Panic; Guided Meditation for Neck & Shoulder Pain / Back Pain; A Meditation on Anxious Emotions (condition-named); re-uploads on other people's channels; German-channel retreat talks (language not checked).",
+      "2026 retreat schedule items (all dated 2026 and either passed or at Spirit Rock, which was not opened); high school classes (run by Bodhi Landry-Stahl)."
+    ]
+  }
+}

@@ -1,0 +1,166 @@
+{
+  "healer": {
+    "healer_slug": "rachel-lewis",
+    "create": {
+      "name": "Rachel Lewis",
+      "bio": "Rachel Lewis is an insight meditation teacher based in Vancouver and one of the guiding teachers of the British Columbia Insight Meditation Society. She took up the practice in 2003 while finishing a doctorate in nuclear astrophysics at Yale, and has since spent more than five hundred nights in silent retreat, including two three-month retreats. She went through Spirit Rock's Dedicated Practitioners and Community Dharma Leaders programmes before joining the four-year IMS and Insight Retreat Center teacher training, which she completed in 2021.\n\nShe has taught classes and workshops around Vancouver since 2011 and residential retreats since 2015, and has taught online programmes for IMS, the Barre Center for Buddhist Studies and the Sati Center. Music, humour and creativity run through her teaching, and she has compiled a free Buddhist songbook of chants and songs. She also co-hosts a short daily online morning sit. Making the dharma accessible matters to her: she has led meditation groups in a women's correctional centre and in community settings, organised anti-racism study for white meditators and fundraising for her sangha's diversity fund, and serves on the boards of BCIMS and Insight World Aid. Many of her talks are free on Dharma Seed.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local_online",
+      "city": "Vancouver",
+      "country": "Canada",
+      "subjects": [
+        "meditation",
+        "mindfulness",
+        "spirituality"
+      ],
+      "website_url": "http://rachelmeditates.ca/",
+      "booking_url": "http://rachelmeditates.ca/contact.html",
+      "youtube_url": null,
+      "instagram_url": "https://www.instagram.com/rachel_meditates/",
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "rachel.lewis@gmail.com",
+      "image_urls": [
+        "https://www.dharma.org/wp-content/uploads/Rachel-Lewis-headshot-1.webp",
+        "http://rachelmeditates.ca/images/Rachel1.jpg"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "insight-meditation-society",
+      "role": "instructor"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Mindfulness at Home: Spring Cleaning for the Heart with Rachel Lewis",
+      "url": "https://www.youtube.com/watch?v=yF3Lw2O_RW8",
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "channel": "The Sati Center"
+    },
+    {
+      "title": "Infinite Space, Infinite Mind: The Gradual Descent Into Emptiness | Francisco Gable & Rachel Lewis",
+      "url": "https://www.youtube.com/watch?v=dTZ4VIw7TPg",
+      "subjects": [
+        "meditation",
+        "consciousness"
+      ],
+      "channel": "Clear Mountain Monastery"
+    },
+    {
+      "title": "IMS Daily Dharma with  Rachel Lewis (3/23/2021)",
+      "url": "https://www.youtube.com/watch?v=J07C8hWcN5s",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "channel": "Insight Meditation Society"
+    },
+    {
+      "title": "IMS Daily Dharma Guest Teacher Rachel Lewis on Wise Speech (2/23/21)",
+      "url": "https://www.youtube.com/watch?v=nR1kVcXK8kE",
+      "subjects": [
+        "mindfulness",
+        "spirituality"
+      ],
+      "channel": "Insight Meditation Society"
+    },
+    {
+      "title": "Daily Dharma with Rachel Lewis (3-30-2021) Dana as Practice",
+      "url": "https://www.youtube.com/watch?v=0GUdAg-20Gk",
+      "subjects": [
+        "spirituality",
+        "meditation"
+      ],
+      "channel": "Insight Meditation Society"
+    }
+  ],
+  "books": [],
+  "courses": [
+    {
+      "title": "Experience of Insight: A 30-Day Practice of Buddhist Wisdom Teachings 2027",
+      "url": "https://ims.dharma.org/courses/experience-of-insight-a-30-day-practice-of-buddhist-wisdom-teachings-2027",
+      "description": "A month of daily online guided meditations from IMS, following one topic a day from Joseph Goldstein's book The Experience of Insight. Joseph gives an opening talk, then Rachel Lewis, Tuere Sala and Yong Oh take turns leading the midday sessions with instruction and a short reflection.",
+      "price": "$300, $665 or $1,050 USD (choose your rate)",
+      "product_type": "course",
+      "start_date": "2026-12-30",
+      "end_date": "2027-01-31",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://import.cdn.thinkific.com/478758/BMimQlF0REuLSjGPTstk_Course%20Tile.jpg"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Daily Online Morning Sit",
+      "url": "http://rachelmeditates.ca/morning-sit.html",
+      "description": "A half-hour sit on Zoom every morning at 7 am Pacific time, shared between Rachel and three other teachers, with chanting on some days and a dharma discussion after the Saturday sit. Free to join, with donations welcome.",
+      "featured": true,
+      "resource_type": "practice",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://rachelmeditates.ca/images/ryan-stone-effect.jpg"
+    },
+    {
+      "title": "Rachel Lewis's Dharma Talks on Dharma Seed",
+      "url": "https://dharmaseed.org/teacher/1013/",
+      "description": "Her recorded talks and guided meditations from retreats at IMS, Spirit Rock and elsewhere, free to stream or download.",
+      "featured": false,
+      "resource_type": "download",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "image": "https://www.dharma.org/wp-content/uploads/Rachel-Lewis-headshot-1.webp"
+    },
+    {
+      "title": "Buddhist Songbook",
+      "url": "https://app.box.com/s/unrq34rfiwigrduslemvlht86f160o71/",
+      "description": "A collection of Buddhist chants and songs she gathered as sheet music, with sample recordings, shared free under a Creative Commons licence for sanghas to sing together.",
+      "featured": false,
+      "resource_type": "download",
+      "subjects": [
+        "spirituality",
+        "meditation"
+      ],
+      "image": "https://www.dharma.org/wp-content/uploads/Rachel-Lewis-headshot-1.webp"
+    }
+  ],
+  "sprint": {
+    "hub": "insight-meditation-society",
+    "rank": 5,
+    "hub_url": "https://www.dharma.org/teacher/rachel-lewis/",
+    "tier_evidence": "Instagram @rachel_meditates 659 followers (og:description, 1 Nov 2026); no YouTube channel in use (@rachellewis8222 holds one community video, subscriber count not shown); Facebook link on her site is the BCIMS page (organisation, not counted) → ~0.7k total → local_hero",
+    "email": "yes",
+    "email_source": "http://rachelmeditates.ca/contact.html",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 11 source(s)",
+    "flags": [
+      "Her website looks little updated (footer 2021-22; 'upcoming' events are from 2021, the Vancouver Queer Sangha listing ended in March 2024). The daily morning sit page may be out of date; kept as a free resource but worth checking.",
+      "Availability local_online with Vancouver as base: she is a guiding teacher of BC Insight Meditation Society, but no current in-person class of her own was found.",
+      "Only one upcoming programme found (the IMS Online 30-day course), and the dev dry-run skips it because that course URL is already on dev under another listing; so her page would show no offerings, only videos and free resources.",
+      "Her about page mentions a certificate in Indigenous Focusing-Oriented Therapy (a trauma therapy); her work is dharma teaching, so this is not in the bio.",
+      "'Infinite Space, Infinite Mind' is a shared talk with Francisco Gable (Clear Mountain Monastery); Rachel is co-speaker.",
+      "The Buddhist Songbook link is a Box shared folder, not a page on her site."
+    ],
+    "left_out": [
+      "'Showing Up for Life As It Is' (Buddhist Recovery Network, 2021): recovery-academy talk, health rule.",
+      "IMS promo clips (The Joy of Presence, Joy in the Darkness): under 4 minutes and dated.",
+      "BCIMS community video 2021 and the Quan Yin chant videos: community promo and music-only.",
+      "Vancouver Queer Sangha (Eventbrite): ended March 2024.",
+      "Online retreat with Vance Pryor (July 2021) and Infinite Space talk on the Vancouver Dharma and Gnosis channel (duplicate upload): passed or duplicate.",
+      "Still, In the City (anthology linked from her about page): contributor, not author.",
+      "TEDx 'Living a Vibrant Life' (Rachael Lewis) and a vinyasa class: different people."
+    ]
+  }
+}

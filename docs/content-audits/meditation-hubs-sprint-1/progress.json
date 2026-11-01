@@ -37,8 +37,8 @@
    "contact_form_seen": true,
    "in_person_words": true,
    "hub_bio_extract": "Devin Berry Devin Berry is an IMS Core Guiding Teacher. A meditator since 1999, his practice is primarily informed by the metta and vipassana teachings of the Insight Meditation tradition. He has undertaken many periods of silent long-term retreat practice. Devin is committed to the personal and collective liberation of marginalized communities knowing that through the integration of reflection an",
-   "status": "todo",
-   "plan": null,
+   "status": "planned",
+   "plan": "docs/content-audits/devin-berry.json",
    "skip_reason": null
   },
   {
@@ -68,8 +68,8 @@
    "contact_form_seen": true,
    "in_person_words": true,
    "hub_bio_extract": "Walt Opie Walt Opie was first introduced to insight meditation in 1993 and began sitting retreats in 2005. Currently, his most influential teachers include Bhikkhu Analayo, Joseph Goldstein, Sayadaw U Tejaniya, and Gil Fronsdal. Walt is a graduate of the 2017-2021 IMS Teacher Training Program, as well as Spirit Rock’s Community Dharma Leaders program. He has led sitting groups for people in recove",
-   "status": "todo",
-   "plan": null,
+   "status": "planned",
+   "plan": "docs/content-audits/walt-opie.json",
    "skip_reason": null
   },
   {
@@ -93,8 +93,8 @@
    "contact_form_seen": true,
    "in_person_words": true,
    "hub_bio_extract": "Rebecca Bradshaw Rebecca Bradshaw , an IMS Emeritus Guiding Teacher, has been practicing Vipassana meditation since 1983 in the United States and Myanmar (Burma) and teaching since 1993. She completed her dharma teacher training at Insight Meditation Society, where she is part of the three-month retreat teacher team, leads retreats for young adults, and serves as a member of the diversity committe",
-   "status": "todo",
-   "plan": null,
+   "status": "planned",
+   "plan": "docs/content-audits/rebecca-bradshaw.json",
    "skip_reason": null
   },
   {
@@ -124,8 +124,8 @@
    "contact_form_seen": true,
    "in_person_words": false,
    "hub_bio_extract": "Devon Hase Devon Hase has practiced intensively in the insight and vajrayana traditions since discovering meditation in 2000. After a decade of bringing mindfulness to high school and college classrooms, she entered several years of silent, solitary retreat in the mountains of Oregon. She now teaches at the Insight Meditation Society, Spirit Rock Meditation Center, and the Forest Refuge, and serve",
-   "status": "todo",
-   "plan": null,
+   "status": "planned",
+   "plan": "docs/content-audits/devon-hase.json",
    "skip_reason": null
   },
   {
@@ -149,8 +149,8 @@
    "contact_form_seen": false,
    "in_person_words": false,
    "hub_bio_extract": "Rachel Lewis Rachel Lewis began practicing insight meditation in 2003, while completing her physics PhD at Yale. Since 2011, she has taught dharma and meditation classes and retreats in British Columbia and beyond. She completed the IMS/IRC 4-year teacher training in 2021, and is a guiding teacher of the British Columbia Insight Meditation Society. Her dharma teaching interests include the power o",
-   "status": "todo",
-   "plan": null,
+   "status": "planned",
+   "plan": "docs/content-audits/rachel-lewis.json",
    "skip_reason": null
   },
   {
@@ -174,8 +174,8 @@
    "contact_form_seen": true,
    "in_person_words": false,
    "hub_bio_extract": "Éowyn Ahlstrom grew up a stone’s throw away from the then emerging Insight Meditation Society. She left the area to go to college, and looked around the world for about a decade, searching for a way to live. In her journeys, Éowyn first discovered meditation through the yoga tradition. But, to her happy surprise, that way to live she was searching for turned out to be very close to home – at IMS, ",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/eowyn-ahlstrom.json",
    "skip_reason": null
   },
   {
@@ -203,8 +203,8 @@
    "contact_form_seen": true,
    "in_person_words": true,
    "hub_bio_extract": "Tara Mulay Tara Mulay has been practicing Insight Meditation since 2003. She was trained and authorized to teach by the Insight Meditation Society in Barre, Massachusetts, and serves on the Board of Spirit Rock Meditation Center in Woodacre, California. Of South Asian heritage, Tara was initially drawn to the dharma by the Buddha’s teachings rejecting caste as a measure of worth and capacity for a",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/tara-mulay.json",
    "skip_reason": null
   },
   {
@@ -226,8 +226,8 @@
    "contact_form_seen": true,
    "in_person_words": true,
    "hub_bio_extract": "Jill Shepherd Jill Shepherd began practicing insight meditation in Thailand in 1999, and since that time has lived and worked at several meditation centers and monasteries in the US, Australia, England, and Thailand. She recently spent seven years on staff at the Insight Meditation Society (IMS) in Barre, Massachusetts, where she participated in several long retreats and Buddhist study programs, a",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/jill-shepherd.json",
    "skip_reason": null
   },
   {
@@ -249,9 +249,9 @@
    "contact_form_seen": true,
    "in_person_words": false,
    "hub_bio_extract": "Bob Stahl Bob Stahl , Ph.D., a long-time insight meditator, lived in a Burmese Buddhist monastery in the Forest tradition of Ven. Taungpulu Sayadaw for over eight years. He founded and directs mindfulness-based stress reduction (MBSR) programs in three medical centers in the San Francisco Bay Area. Bob is a professor of the practice in the Department of Behavioral and Social Sciences in the School",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Strict health rule: his own site's menu sells books and audio on conditions (MBSR Workbook for Anxiety, Calming the Rush of Panic, Mindful Healing downloads for back pain, insomnia, heart disease and blood pressure) and his mentoring page lists anxiety, insomnia and chronic pain, so a listing would send people to condition-sold work even with those items left out (as with John Bruna). His retreats and Dharma Seed teaching are clean; owner may overrule. Researcher's plan kept in dropped/."
   },
   {
    "rank": 10,
@@ -272,8 +272,8 @@
    "contact_form_seen": true,
    "in_person_words": false,
    "hub_bio_extract": "Cara Lai Cara Lai has spent most of her life in pursuit of meaning and happiness, which landed her on a cushion for much of her adult life. Throughout many mind-body adventures including many long-term retreats, she has explored the concentrated mind, chronic illness, the value of pleasure, the power of maternal energy, and connection to the earth. In the past, Cara has worked as an artist, wilder",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/cara-lai.json",
    "skip_reason": null
   },
   {
@@ -295,8 +295,8 @@
    "contact_form_seen": true,
    "in_person_words": false,
    "hub_bio_extract": "Roxanne Dault Roxanne Dault teaches meditation in Canada, USA and in France. She has been dedicated to this path for almost two decades, sitting on long retreats both in Asia and in the West. A Guiding Teacher at True North Insight , Roxanne teaches in different settings where she lives in Tiohti:áke (Montréal). She was mentored and invited by Joseph Goldstein and Pascal Auclair to join the IMS Te",
-   "status": "todo",
-   "plan": null,
+   "status": "planned",
+   "plan": "docs/content-audits/roxanne-dault.json",
    "skip_reason": null
   },
   {
@@ -318,8 +318,8 @@
    "contact_form_seen": true,
    "in_person_words": false,
    "hub_bio_extract": "Venerable Canda encountered the Dhamma in1996 and dedicated the next ten years to sitting and serving numerous vipassana retreats in India and Nepal. She ordained in Myanmar in 2006 with Sayadaw U Pannyajota and practiced with his guidance for the next five years. In 2014 she received full (bhikkhuni) ordination in Australia with Ajahn Brahm, who requested she begin teaching. In 2016 Ven Canda ret",
-   "status": "todo",
-   "plan": null,
+   "status": "planned",
+   "plan": "docs/content-audits/ajahn-canda.json",
    "skip_reason": null
   },
   {
@@ -359,8 +359,8 @@
    "contact_form_seen": false,
    "in_person_words": false,
    "hub_bio_extract": "Tuere Sala Tuere Sala is a Guiding Teacher at Seattle Insight Meditation Society and the founding teacher of the Capitol Hill Meditation Group. She is a retired prosecuting attorney who has practiced Vipassana meditation for over 30 years. Tuere believes that urban meditation is the foundation for today’s practitioner’s path to liberation. She is inspired by bringing the Dharma to nontraditional p",
-   "status": "todo",
-   "plan": null,
+   "status": "planned",
+   "plan": "docs/content-audits/tuere-sala.json",
    "skip_reason": null
   },
   {
@@ -382,8 +382,8 @@
    "contact_form_seen": false,
    "in_person_words": false,
    "hub_bio_extract": "Kristina Baré Kristina Baré is an insight meditation teacher. Her teaching is shaped by integration of vipassanā (insight) and the brahmavihāras—loving-kindness, compassion, sympathetic joy, and equanimity. She draws from the Burmese lineages of Ven. Mahasi Sayadaw (insight) and Ven. Pa Auk Sayadaw (samādhi). She guides insight meditation retreats across North America, including annual metta-vipas",
-   "status": "todo",
-   "plan": null,
+   "status": "planned",
+   "plan": "docs/content-audits/kristina-bare.json",
    "skip_reason": null
   },
   {
@@ -405,8 +405,8 @@
    "contact_form_seen": false,
    "in_person_words": false,
    "hub_bio_extract": "Yong Oh Yong Oh is a Dharma Council teacher at the Durango Dharma Center and a core teacher for Sacred Mountain Sangha , and is also a visiting teacher for other community centers across North America. He teaches retreats at the Insight Meditation Society, Spirit Rock Meditation Center, Big Bear Retreat Center, and Vallecitos Mountain Retreat Center. He is a graduate of the 4-year Insight Meditati",
-   "status": "todo",
-   "plan": null,
+   "status": "planned",
+   "plan": "docs/content-audits/yong-oh.json",
    "skip_reason": null
   },
   {
@@ -434,9 +434,9 @@
    "contact_form_seen": false,
    "in_person_words": false,
    "hub_bio_extract": "Chas DiCapua Chas DiCapua has been practicing Buddhist meditation for more than 35 years. He has trained with Burmese meditation masters, western monastics of the Thai Forest tradition and senior western vipassana teachers. He has spent over two years in silent, intensive retreat. Chas has served as IMS’s Resident Teacher at IMS since 2003. Chas is a graduate of the four year joint Insight Meditat",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "No contact route: no website, YouTube channel, published email or contact form of his own could be found after a web search on 1 Nov 2026 (he appears only on IMS, Common Ground, NYIMC, Cambridge Insight and Dharma Seed pages, whose only addresses are those organisations' general inboxes, including the IMS front office)."
   },
   {
    "rank": 17,
@@ -463,9 +463,9 @@
    "contact_form_seen": false,
    "in_person_words": false,
    "hub_bio_extract": "Greg Scharf Greg Scharf began meditating in 1992 at retreats taught by senior teachers from the Insight Meditation Society and Spirit Rock Meditation Center. Drawn to practice and travel in Asia, he developed a long-term relationship with practice and service in Burma (Myanmar), and discovered a deep heart connection with Indian devotional traditions, both of which continue to this day. In the Fal",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "No contact route: no website, YouTube channel, published email or contact form of his own could be found after a web search on 1 Nov 2026 (gregscharf.com belongs to an unrelated web developer; he appears only on IMS, Dharma Seed, Bethlehem Centre and Spirit Rock listings, with no teacher-specific contact)."
   },
   {
    "rank": 18,
@@ -492,9 +492,9 @@
    "contact_form_seen": false,
    "in_person_words": false,
    "hub_bio_extract": "Matthew Hepburn Matthew Hepburn is a meditation and dharma teacher with more than a decade of teaching experience and a passion for getting real about what it means to live well. He shares early buddhist wisdom and emphasizes humor, technique, and authentic kindness as a means to free the mind from unnecessary struggle and leave a healthier impact on the world. Today Matthew teaches at the Cambrid",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "No contact route: no website, YouTube channel, published email or contact form of his own could be found after a web search on 1 Nov 2026 (matthewhepburn.com belongs to an unrelated digital marketer; he appears on IMS, Ten Percent Happier, Lion's Roar, Tricycle and Cambridge Insight pages, and Cambridge Insight's site returns 403 to agents, so only its general office inbox, seen in search results, is known)."
   },
   {
    "rank": 19,
@@ -521,9 +521,9 @@
    "contact_form_seen": false,
    "in_person_words": false,
    "hub_bio_extract": "Narayan Helen Liebenson Narayan Helen Liebenson finds it a joy and a privilege to share the Buddha’s teachings with all who are interested. She is an IMS Emeritus Guiding Teacher, and has been a guiding teacher of the Cambridge Insight Meditation Center since its inception in 1985. Her training over the past forty years includes study in the United States and in Asia with meditation masters in the",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "No contact route: no website, YouTube channel, published email or contact form of her own could be found after a web search on 1 Nov 2026 (she appears on IMS, Cambridge Insight, NYIMC, Seattle Insight and Wisdom Publications pages; Cambridge Insight, where she is a guiding teacher, returns 403 to agents and has only a general office inbox)."
   },
   {
    "rank": 20,
@@ -550,9 +550,9 @@
    "contact_form_seen": false,
    "in_person_words": false,
    "hub_bio_extract": "Shelly Graf Shelly Graf has been practicing in the Insight Meditation tradition and has called Common Ground their spiritual home since 2003. They are a graduate of Insight Meditation Society’s four-year teacher training program and lead residential retreats at IMS and other retreat centers nationally. Shelly currently serves alongside Mark Nunberg as one of Common Ground’s Guiding Teachers. Shell",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "No contact route: no website, YouTube channel, published email or contact form of their own could be found after a web search on 1 Nov 2026 (they appear on IMS, Common Ground, Bethlehem Centre and Dharma Seed pages; the only published address is Common Ground Meditation Center's general inbox, info@commongroundmeditation.org, where they are a co-guiding teacher)."
   },
   {
    "rank": 21,
@@ -579,9 +579,9 @@
    "contact_form_seen": false,
    "in_person_words": false,
    "hub_bio_extract": "Winnie Nazarko An IMS Core Guiding Teacher, Winnie attended her first meditation retreat in 1981, after a co-worker convinced her that it would be interesting. And it was interesting, just not in the way she expected. After that long weekend with Stephen and Andrea Levine, she knew she had touched something deeply truthful, although she couldn’t quite describe it. It did, however, seem to do with ",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "No contact route: no personal website, published email or contact form found after web searches (only IMS, Spirit Rock and Dharma Seed profiles), 1 Nov 2026."
   },
   {
    "rank": 22,
@@ -602,9 +602,9 @@
    "contact_form_seen": false,
    "in_person_words": false,
    "hub_bio_extract": "Andrea Fella Andrea Fella has practiced insight meditation since 1996, studying with both Western and Asian teachers. Her teaching emphasizes clarity and practicality. She is co-guiding teacher at the Insight Meditation Center in Redwood City, CA, a member of the Spirit Rock Governing Teacher’s Council, and teaches retreats nationally. For more information about Andrea and her teaching schedule, v",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "No contact route: her site andreafella.org refuses connections on 1 Nov 2026 and even its last archived copy (Aug 2025) showed only a mailing-list signup, no email or contact form; web searches found none elsewhere."
   },
   {
    "rank": 23,
@@ -625,9 +625,9 @@
    "contact_form_seen": false,
    "in_person_words": false,
    "hub_bio_extract": "Annie Nugent Annie Nugent has practiced since 1979 and was an IMS Resident Teacher from 1999 to 2003. She has been part of the teaching team for the annual Three-Month Retreat for a number of years and has taught at the Forest Refuge since 2004. Her teaching style aims to reveal how all aspects of our lives can help us come to a clear and direct understanding of the Truth. bio events Outside Event",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "No contact route: no personal website, published email or contact form found after web searches; her IMS page lists only old outside-retreat organisers' contacts."
   },
   {
    "rank": 24,
@@ -648,8 +648,8 @@
    "contact_form_seen": false,
    "in_person_words": false,
    "hub_bio_extract": "Bart van Melik Bart van Melik has been teaching meditation since 2009, with a special focus on diverse communities. He brings the practice to juvenile detention centers, homeless shelters and NYC public schools, and is passionate about supporting people finding new ways to relate to life’s stresses. Bart is Guiding Teacher at Community Meditation Center in New York. Featured Talk: Joy, Wonder and ",
-   "status": "todo",
-   "plan": null,
+   "status": "planned",
+   "plan": "docs/content-audits/bart-van-melik.json",
    "skip_reason": null
   },
   {
@@ -671,8 +671,8 @@
    "contact_form_seen": false,
    "in_person_words": false,
    "hub_bio_extract": "Bhante Buddharakkhita Bhante Buddharakkita was born in Uganda, Africa. He first encountered Buddhism in 1990 while studying in India. He was ordained as a Theravada Buddhist monk by the late Sayadaw U Silananda in 2002 at the Tathagata Meditation Center in San Jose, California. He then spent eight years under the guidance of Bhante Henepola Gunaratana at the Bhavana Society, West Virginia. Founder",
-   "status": "todo",
-   "plan": null,
+   "status": "planned",
+   "plan": "docs/content-audits/bhante-buddharakkhita.json",
    "skip_reason": null
   },
   {
@@ -694,8 +694,8 @@
    "contact_form_seen": false,
    "in_person_words": false,
    "hub_bio_extract": "Bonnie Duran Bonnie Duran , DrPH, an Opelousas/Coushatta descendant, began Buddhist meditation practice over 35 years ago. She enjoys teaching Spirit Rock’s Dedicated Practitioners Program , short and long retreats, and holds a People of Color and Allies Sangha in Seattle, WA. She also directs the University of Washington’s Center for Indigenous Health Research , is a member of Spirit Rock Teacher",
-   "status": "todo",
-   "plan": null,
+   "status": "planned",
+   "plan": "docs/content-audits/bonnie-duran.json",
    "skip_reason": null
   },
   {
@@ -717,9 +717,9 @@
    "contact_form_seen": false,
    "in_person_words": false,
    "hub_bio_extract": "bruni dávila bruni dávila has practiced Vipassana and Zen since 1995. A student of Andrea Fella and Gil Fronsdal, she practices and teaches at the Insight Meditation Center in Redwood City, CA, and also teaches Dharma in Spanish in the wider Bay Area. She is currently a participant in the 2017-2021 IMS Teacher Training Program. bruni dávila , originaria de Puerto Rico, emigró a los Estados Unidos ",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "No contact route: no personal website, published email or contact form found after web searches (only IMC, AudioDharma, Spirit Rock, BCBS and NYIMC profiles)."
   },
   {
    "rank": 28,
@@ -740,9 +740,9 @@
    "contact_form_seen": false,
    "in_person_words": false,
    "hub_bio_extract": "Carol Wilson Carol Wilson first began practicing Vipassana or Insight meditation in 1971, with S.N. Goenka, in Bodh Gaya, India. Since then she has studied and practiced with a number of Theravada teachers, both Asian and Western. She has been particularly influenced by the teachings and practice styles of Sayadaw U Pandita, and in the past ten years, of Ashin U Tejaniya. In the 1980s she spent a ",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "No contact route: no personal website, published email or contact form found after web searches (only IMS, Spirit Rock, Seattle Insight and Dharma Seed profiles)."
   },
   {
    "rank": 29,
@@ -763,9 +763,9 @@
    "contact_form_seen": false,
    "in_person_words": false,
    "hub_bio_extract": "Caroline Jones Caroline Jones , a member of the Gaia House Teacher Council, has been practicing meditation for 30 years and teaching since 2009. In teaching, she encourages students to discover and deepen ways of engaging with the Dharma to bring healing and liberation.",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "No contact route: no personal website, published email or contact form found after web searches (only IMS, Gaia House and Dharma Seed profiles)."
   },
   {
    "rank": 30,
@@ -786,8 +786,8 @@
    "contact_form_seen": false,
    "in_person_words": false,
    "hub_bio_extract": "Cuong Lu is a Zen teacher ordained by Thich Nhat Hanh at Plum Village. A former Buddhist monk and prison chaplain, he now teaches internationally and is the author of several books, including The Buddha in Jail and Wait. He is also a teacher at the Barre Center for Buddhist Studies.",
-   "status": "todo",
-   "plan": null,
+   "status": "planned",
+   "plan": "docs/content-audits/cuong-lu.json",
    "skip_reason": null
   },
   {
@@ -809,9 +809,9 @@
    "contact_form_seen": false,
    "in_person_words": false,
    "hub_bio_extract": "DaRa Williams DaRa Williams is a trainer, meditation teacher and psychotherapist. DaRa has been a meditator for the past 25 years and is a practitioner of both Vipassana and Ascension meditation. She is a graduate of the Spirit Rock/Insight Meditation Society Teacher Training Program and is an IMS Emeritus Guiding Teacher. She is the program manager and a core teacher in the current IMS Teacher Tr",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "No contact route: no personal website, published email or contact form found after a web search (only IMS, New York Insight, Spirit Rock and Dharma Seed profiles); her other work is mainly psychotherapy."
   },
   {
    "rank": 32,
@@ -832,9 +832,9 @@
    "contact_form_seen": false,
    "in_person_words": false,
    "hub_bio_extract": "Deborah Helzer Deborah Helzer first took up Buddhist meditation 30 years ago to reduce stress while working on her engineering degree. She has been teaching at IMS since 2004, as well as with the Insight Meditation Community of Washington, DC where she lives. She has studied and practiced with both western and asian teachers, including a year as a nun with the late Sayadaw U Pandita. Her teaching ",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "No contact route: no personal website, published email or contact form found after a web search (only IMS, Common Ground, IMCW and Dharma Seed profiles)."
   },
   {
    "rank": 33,
@@ -855,9 +855,9 @@
    "contact_form_seen": false,
    "in_person_words": false,
    "hub_bio_extract": "Guy Armstrong Guy Armstrong has practiced insight meditation for over 40 years, including training as a Buddhist monk in Thailand with Ajahn Buddhadasa. He began teaching in 1984 and has led retreats worldwide. He is an IMS Core Guiding Teacher and author of Emptiness: A Practical Guide for Meditators . Featured Talk: Joy and Happiness Your browser doesn’t support HTML5 audio. Here is a link to th",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "No contact route: no personal website, published email or contact form found after a web search; podcast pages point to his Spirit Rock profile as 'his website', and the only other address is Wisdom Publications' course support inbox."
   },
   {
    "rank": 34,
@@ -878,8 +878,8 @@
    "contact_form_seen": false,
    "in_person_words": false,
    "hub_bio_extract": "Joseph Goldstein Joseph Goldstein has been leading insight and lovingkindness meditation retreats worldwide since 1974. He is a co-founder of the Insight Meditation Society in Barre, Massachusetts, where he is on the guiding teachers’ Founders Council. In 1989, together with several other teachers and students of insight meditation, he helped establish the Barre Center for Buddhist Studies. Joseph",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/joseph-goldstein.json",
    "skip_reason": null
   },
   {
@@ -901,8 +901,8 @@
    "contact_form_seen": false,
    "in_person_words": false,
    "hub_bio_extract": "Mark Nunberg Mark Nunberg began his practice in 1982 and has been teaching meditation since 1990. He co-founded Common Ground Meditation Center in Minneapolis in 1993 with Wynn Fricke and continues to serve as Co-Guiding Teacher along with Shelly Graf. Mark has studied with both Asian and Western teachers and finds deep inspiration in the teachings of the Buddha. Mark practiced as a monk for five ",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/mark-nunberg.json",
    "skip_reason": null
   },
   {
@@ -924,8 +924,8 @@
    "contact_form_seen": false,
    "in_person_words": false,
    "hub_bio_extract": "Matthew Brensilver Matthew Brensilver, MSW, PhD teaches retreats at the Insight Retreat Center, Spirit Rock and other Buddhist centers. He was previously program director for Mindful Schools and for more than a decade, was a core teacher at Against the Stream Buddhist Meditation Society. Matthew worked as a clinical social worker, serving severely and persistently mentally ill adults and adolescen",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/matthew-brensilver.json",
    "skip_reason": null
   },
   {
@@ -947,9 +947,9 @@
    "contact_form_seen": false,
    "in_person_words": false,
    "hub_bio_extract": "Nakawe Cuebas Berrios Nakawe Cuebas Berrios feels blessed to be able to study and journey through different healing and spiritual traditions in her life. The common thread between the many traditions that have touched her path has been the belief that health and wellness depend on a balance between the mind, body, and heart. The healing systems that she has studied are: Midwifery, Chinese acupunct",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "No contact route: no personal website, published email or contact form found after a web search (only IMS, New York Insight, AudioDharma and Dharma Seed profiles)."
   },
   {
    "rank": 38,
@@ -970,9 +970,9 @@
    "contact_form_seen": false,
    "in_person_words": false,
    "hub_bio_extract": "Nolitha Tsengiwe Nolitha Tsengiwe is a Dharma teacher and board member at Dharmagiri Sacred Mountain Retreat Center, in SA that was founded by Kittisaro and Thanisara Weinberg. She has practiced since 1997 under Kittisaro and Thanissara, who are of Ajahn Chah ‘s lineage. In her first retreat with these beloved teachers she discovered silence as a refuge and has never looked back. Nolitha completed",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "No contact route: her company site couragetolead.co.za returns a server error (500) and no published email or contact form was found elsewhere; her paid work is also mainly psychology and executive coaching."
   },
   {
    "rank": 39,
@@ -993,9 +993,9 @@
    "contact_form_seen": false,
    "in_person_words": false,
    "hub_bio_extract": "Sally Armstrong Sally Armstrong began practicing vipassana meditation in India in 1981 and started teaching in 1996. She is a member of Spirit Rock Teacher’s Council. and has served as a co-guiding teacher at Spirit Rock. She developed and led Spirit Rock’s Dedicated Practitioners Program for many years, and also created the Advanced Practitioner Program. She has a keen interest in supporting stud",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "No contact route: no personal website, published email or contact form found after a web search (only IMS, Spirit Rock, InsightLA and Dharma Seed profiles)."
   },
   {
    "rank": 40,
@@ -1016,10 +1016,10 @@
    "contact_form_seen": false,
    "in_person_words": false,
    "hub_bio_extract": "Sayadaw U Jagara Canadian-born Sayadaw U Jagara embarked on his spiritual path in the mid-1970s under Robert Hover, a teacher in the lineage of Sayagyi U Ba Khin. His dhamma commitment deepened in 1979 when he was ordained by the Venerable Mahasi Sayadaw in Burma. For the next fifteen years, Sri Lanka became his home for intensive meditation and textual study. Alongside his monastic path, U Jagara",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "No contact route: no personal website, published email or contact form found after a web search (only IMS, Dharma Seed and Buddhist Inquiry profiles; he teaches independently through host centres)."
   }
  ],
- "updated": "2026-11-01T18:51:55.576Z"
+ "updated": "2026-11-01T19:11:21.529Z"
 }

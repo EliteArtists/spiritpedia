@@ -1,0 +1,160 @@
+{
+  "healer": {
+    "healer_slug": "bart-van-melik",
+    "create": {
+      "name": "Bart van Melik",
+      "bio": "Bart van Melik is a Dutch-born insight meditation teacher based in New York, where he is guiding teacher of the Community Meditation Center. He first sat in Thailand in 2002 and went on to train chiefly with Joseph Goldstein and Carol Wilson, whose stress on a relaxed, kindly quality of attention runs through much of what he teaches. With Gregory Kramer he also trained in Insight Dialogue, a spoken, relational form of meditation, and he is an authorised teacher of it. He graduated from the joint Spirit Rock and IMS teacher training and holds a master's degree in the psychology of culture and religion from Nijmegen.\n\nTeaching since 2009, he has made a point of bringing practice to people who rarely meet it: young people in detention, residents of shelters, pupils in city schools and staff in workplaces. Each Sunday he leads an online dharma session for his New York community, offered by donation, and he teaches residential retreats in the United States and Europe, including at the Insight Meditation Society in Barre, Massachusetts. His talks are warm and down to earth, moving between silent sitting, clear instruction and reflection on the Buddha's account of suffering and freedom. He also contributed a chapter to the anthology Still, in the City.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local_online",
+      "city": "New York",
+      "country": "United States",
+      "subjects": [
+        "meditation",
+        "mindfulness",
+        "spirituality"
+      ],
+      "website_url": "https://www.bartvanmelik.com/",
+      "booking_url": "https://www.bartvanmelik.com/events-1",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "vanmelik@hotmail.com",
+      "image_urls": [
+        "https://www.dharma.org/wp-content/uploads/Bart-van-Melik-Edited-Square-2024-1-1024x1024.webp",
+        "https://images.squarespace-cdn.com/content/v1/5cfe876cb8378000016ac7be/1560191953114-K1JBXMNNIHBIAKS7C7OO/IMG_2604+2.JPG"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "insight-meditation-society",
+      "role": "instructor"
+    }
+  ],
+  "videos": [
+    {
+      "title": "The 4-Word Buddhist Teaching That Makes Change Less Terrifying",
+      "url": "https://www.youtube.com/watch?v=_IDAwzMf8gA",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "channel": "10% Happier"
+    },
+    {
+      "title": "Buddhist Strategies for Protecting Yourself from Everyday Chaos",
+      "url": "https://www.youtube.com/watch?v=PmKyeSedNm8",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "channel": "10% Happier"
+    },
+    {
+      "title": "Trusting Impermanence - Sunday Sangha w/ Bart van Melik",
+      "url": "https://www.youtube.com/watch?v=3cpYdPEA3mA",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "channel": "Sangha Live • Meditation"
+    },
+    {
+      "title": "Non-Entanglement | Ten Topics Fit for Conversation (Session 4 of 10) | September 27, 2026",
+      "url": "https://www.youtube.com/watch?v=rD7JnkT29cw",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "channel": "Community Meditation Center (CMC)"
+    },
+    {
+      "title": "A Sense of Enough | Ten Topics Fit for Conversation (Session 1 of 10) - September 6, 2026",
+      "url": "https://www.youtube.com/watch?v=2IJEjTBIA3A",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "channel": "Community Meditation Center (CMC)"
+    },
+    {
+      "title": "Suffering (Dukkha) | The Three Characteristics (Session 2 of 3) - July 26, 2026",
+      "url": "https://www.youtube.com/watch?v=41HUM2V7qBU",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "channel": "Community Meditation Center (CMC)"
+    },
+    {
+      "title": "Patterns of Experience - Dhammas | Four Foundations of Mindfulness (Session 4 of 4) - July 12, 2026",
+      "url": "https://www.youtube.com/watch?v=AxjMq4dc5lI",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "channel": "Community Meditation Center (CMC)"
+    }
+  ],
+  "books": [],
+  "courses": [
+    {
+      "title": "Coming Home to Kind Awareness Livestream Retreat 2027",
+      "url": "https://ims.dharma.org/courses/Coming-Home-to-Kind-Awareness-Livestream-Retreat-2027",
+      "description": "A week-long home retreat streamed live from the IMS meditation hall in Barre, which Bart co-teaches with DaRa Williams and Nolitha Tsengiwe. Days alternate sitting and walking periods with dharma talks on suffering, its causes and the ways out of it, practised through a relaxed and kindly awareness.",
+      "price": "From $200 USD (sliding scale)",
+      "product_type": "course",
+      "start_date": "2027-02-08",
+      "end_date": "2027-02-15",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://import.cdn.thinkific.com/478758/4XTVB2GjTgmg7PvgdjQ6_Course%20Tile%20760x420.jpg"
+    },
+    {
+      "title": "Sunday Online Dharma at Community Meditation Center",
+      "url": "https://www.cmc-ny.org/",
+      "description": "A weekly Zoom gathering of the New York community Bart guides, with meditation, a dharma talk and time for questions. It runs most Sundays from 10:30am Eastern and is open to everyone, offered on a donation basis.",
+      "price": "By donation",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "http://static1.squarespace.com/static/66c8bfc971db8236339edd0e/t/66df57f1c57e6b7e5c3fc192/1725913073429/CMC+Logo-+Black.png?format=1500w"
+    },
+    {
+      "title": "Mindfulness and Insight Dialogue Trainings for Organisations",
+      "url": "https://www.bartvanmelik.com/events-1",
+      "description": "Bart designs trainings in mindfulness and Insight Dialogue for organisations, groups and individuals, with particular experience supporting educators who work with teenagers. Sessions are shaped to the group and kept practical and accessible.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/5cfe876cb8378000016ac7be/1560787583006-OLU4MEA5YSOGUVNX397P/tim-swaan-45717-unsplash.jpg"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "hub": "insight-meditation-society",
+    "rank": 24,
+    "hub_url": "https://www.dharma.org/teacher/bart-van-melik/",
+    "tier_evidence": "No personal Instagram, Facebook, X, TikTok or YouTube accounts found (none linked from bartvanmelik.com, none in searches, 1 Nov 2026); YouTube videos are on 10% Happier, Sangha Live and Community Meditation Center channels, which are not his own → total 0 readable → local_hero",
+    "email": "yes",
+    "email_source": "https://www.bartvanmelik.com/contact",
+    "contact_form_url": null,
+    "bio_check": "",
+    "flags": [],
+    "left_out": []
+  }
+}

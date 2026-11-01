@@ -1,0 +1,212 @@
+{
+  "healer": {
+    "healer_slug": "rebecca-bradshaw",
+    "create": {
+      "name": "Rebecca Bradshaw",
+      "bio": "Rebecca Bradshaw has practised vipassana since 1983, in the United States and in Myanmar, and began teaching in 1993 after training at the Insight Meditation Society. Her root lineage is the Mahasi method from Burma; her first teachers were Sayadaw U Pandita, Joseph Goldstein and Sharon Salzberg, and above all from Michele McDonald. Later she studied the Thai Forest tradition and the Kwan Yin practices of the Chan lineage with Kittisaro and Thanissara. She is now Guiding Teacher Emeritus of IMS and of Pioneer Valley's Insight Meditation Center in Easthampton, Massachusetts, and holds a master's degree in counselling psychology.\n\nHer teaching is earthy and body-based, coloured by years of qi gong and by plenty of lovingkindness, and she often brings the woods, water and animals into her talks. For many years she has been part of the IMS three-month retreat team, has taught retreats for young adults, and has led retreats in Spanish. Her book Down to Earth Dharma (Shambhala, 2024) looks at the Buddha's teaching through what she calls a receptive or feminine paradigm, balancing an inherited emphasis on effort and striving. She teaches residential retreats at IMS and the Forest Refuge and at centres in Minnesota, Ohio and New York, gives online talks, and has around 250 recorded talks on Dharma Seed.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local_online",
+      "city": "Easthampton",
+      "country": "United States",
+      "subjects": [
+        "meditation",
+        "mindfulness",
+        "spirituality"
+      ],
+      "website_url": "https://www.rebeccabradshaw.org/",
+      "booking_url": "https://www.rebeccabradshaw.org/teaching-schedule",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "rebeccabradshawinsight@gmail.com",
+      "image_urls": [
+        "https://images.squarespace-cdn.com/content/v1/5f1dc93335f14560116ab258/2e45c2d3-48e6-42e1-b193-475baaf6b99b/rebecca+brich+tree+3.jpg"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "insight-meditation-society",
+      "role": "instructor"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Receptive Mindfulness | Rebecca Bradshaw at Insight SD",
+      "url": "https://www.youtube.com/watch?v=AgcGzjis9z8",
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "channel": "Insight San Diego"
+    },
+    {
+      "title": "Rebecca Bradshaw: \"Freeing the Heart\" - 2/2/2022",
+      "url": "https://www.youtube.com/watch?v=f0dgOCM6e0M",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "channel": "Common Ground Meditation Center"
+    },
+    {
+      "title": "Rebecca Bradshaw - Down to Earth Dharma: Reading and Book Signing, Feb 13, 2025",
+      "url": "https://www.youtube.com/watch?v=33kjrchfXBY",
+      "subjects": [
+        "spirituality",
+        "meditation"
+      ],
+      "channel": "Common Ground Meditation Center"
+    },
+    {
+      "title": "Yellow Springs Dharma Center: Dharma Talk with Rebecca Bradshaw",
+      "url": "https://www.youtube.com/watch?v=Am0oo12yqNU",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "channel": "pk234234"
+    },
+    {
+      "title": "Down to Earth Dharma with Rebecca Bradshaw & Raghu Markus – Mindrolling Podcast Ep. 585",
+      "url": "https://www.youtube.com/watch?v=OPEQCcoq1wA",
+      "subjects": [
+        "spirituality",
+        "meditation"
+      ],
+      "channel": "Be Here Now Podcast Network 2"
+    }
+  ],
+  "books": [
+    {
+      "title": "Down to Earth Dharma: Insight Meditation to Awaken the Heart",
+      "slug": "down-to-earth-dharma",
+      "author": "Rebecca Bradshaw",
+      "asin": "164547321X",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "Her first book, published by Shambhala in 2024 and arranged in four parts: mindfulness, the heart, wisdom and engagement. Drawing on Theravada teaching, nature and personal stories, it invites readers to balance active striving with receptivity, feeling and a sense of belonging to the earth.",
+      "subjects": [
+        "meditation",
+        "mindfulness",
+        "spirituality"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/164547321X.01._SCLZZZZZZZ_.jpg"
+    }
+  ],
+  "courses": [
+    {
+      "title": "March at the Forest Refuge (2027)",
+      "url": "https://www.rebeccabradshaw.org/teaching-schedule/march-at-the-forest-refuge",
+      "description": "A month of silent practice at the Forest Refuge, the IMS centre for longer retreats in Barre, co-taught with Devin Berry. Retreatants can come for the whole month or stay at least a week, working with insight or lovingkindness practice.",
+      "price": "From $115 USD per night (IMS 2027 sliding scale, minimum 7 nights)",
+      "product_type": "retreat",
+      "start_date": "2027-03-01",
+      "end_date": "2027-03-31",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "http://static1.squarespace.com/static/5f1dc93335f14560116ab258/5f418c4809e9764cd3d0f506/6a46d124f42d45486542f0b9/1784554922875/unsplash-image-vNVwg35VZrg.jpg?format=1500w"
+    },
+    {
+      "title": "Vipassana and Loving Kindness Retreat at the Insight Meditation Society (April 2027)",
+      "url": "https://www.rebeccabradshaw.org/teaching-schedule/hcrytvnj6kar50oj5nhri1z87zvaeq",
+      "description": "A week-long silent residential retreat at the IMS Retreat Center in Barre with Roxanne Dault and Greg Scharf, combining insight meditation with lovingkindness. Booking is through IMS.",
+      "price": "Contact for pricing",
+      "product_type": "retreat",
+      "start_date": "2027-04-15",
+      "end_date": "2027-04-22",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "http://static1.squarespace.com/static/5f1dc93335f14560116ab258/5f418c4809e9764cd3d0f506/6a46d1b9d6a61829dce6c55c/1784555030797/unsplash-image-LH9MLCVHV08.jpg?format=1500w"
+    },
+    {
+      "title": "Disentangling the Tangle: Half-Day Retreat at New York Insight",
+      "url": "https://www.rebeccabradshaw.org/teaching-schedule/how-to-belong-on-planet-earth-half-day-retreat-at-new-york-insight",
+      "description": "A three-hour workshop with New York Insight on using mindfulness and compassion to loosen old, habitual stories about ourselves, such as never being good enough. She works through five stages of relating to these patterns.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": "2026-12-13",
+      "end_date": "2026-12-13",
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "image": "http://static1.squarespace.com/static/5f1dc93335f14560116ab258/5f418c4809e9764cd3d0f506/6a46cd27e4a93f482a449fea/1784554337658/unsplash-image-GC6CUNdDL9Y.jpg?format=1500w"
+    },
+    {
+      "title": "Twin Cities Vipassana Collective Annual Winter Retreat",
+      "url": "https://www.rebeccabradshaw.org/teaching-schedule/twin-cities-vipassana-collective-annual-winter-retreat-1",
+      "description": "A week-long winter retreat in Minnesota for the Twin Cities Vipassana Collective, co-taught with Chas DiCapua.",
+      "price": "Contact for pricing",
+      "product_type": "retreat",
+      "start_date": "2027-02-14",
+      "end_date": "2027-02-21",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "http://static1.squarespace.com/static/5f1dc93335f14560116ab258/5f418c4809e9764cd3d0f506/6a46d09b17f78d6f3eff2933/1784554842858/unsplash-image-8Jbo0T-DxUI.jpg?format=1500w"
+    },
+    {
+      "title": "Vipassana and Loving Kindness Retreats in Ohio",
+      "url": "https://www.rebeccabradshaw.org/teaching-schedule/vipassana-and-loving-kindness-retreat-with-yellow-springs-oh",
+      "description": "Residential retreats in Milford, Ohio, hosted by the Yellow Springs Dharma Center and co-taught with Candace Cassin and Robert Pryor. Participants can choose a weekend, a week or the full nine days.",
+      "price": "Contact for pricing",
+      "product_type": "retreat",
+      "start_date": "2027-05-14",
+      "end_date": "2027-05-23",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/5f1dc93335f14560116ab258/2e45c2d3-48e6-42e1-b193-475baaf6b99b/rebecca+brich+tree+3.jpg"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Rebecca Bradshaw's Dharma Talks on Dharma Seed",
+      "url": "https://dharmaseed.org/teacher/143/",
+      "description": "Around 250 recorded talks and guided meditations from her retreats, free to stream or download.",
+      "featured": true,
+      "resource_type": "download",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/5f1dc93335f14560116ab258/2e45c2d3-48e6-42e1-b193-475baaf6b99b/rebecca+brich+tree+3.jpg"
+    }
+  ],
+  "sprint": {
+    "hub": "insight-meditation-society",
+    "rank": 3,
+    "hub_url": "https://www.dharma.org/teacher/rebecca-bradshaw/",
+    "tier_evidence": "No social accounts linked from her site or IMS page; no YouTube channel of her own (the 'Rebecca Bradshaw' channel @rebeccabradshaw5818 is an unrelated audit-training channel); no Instagram, Facebook or X found → 0 readable → local_hero",
+    "email": "yes",
+    "email_source": "https://www.rebeccabradshaw.org/contact-3",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 20 source(s)",
+    "flags": [
+      "Follower total is 0: she has no public social accounts that could be found, so the tier rests on that.",
+      "Only one photo: her own site's portrait (640 px). The IMS headshot is the same sitting but only 291 px wide, so it was not used.",
+      "Hub programmes are linked through the event pages on her own site, not dharma.org: the Forest Refuge 2027 schedule page is already the IMS hub listing's offering URL (ingest would skip it) and has no page per month, and the April 2027 Retreat Center retreat is only on events.dharma.org, which may not be fetched.",
+      "Prices for the April IMS retreat and her non-IMS retreats are not on the pages read, so they say 'Contact for pricing'.",
+      "Co-teaches March 2027 at the Forest Refuge with Devin Berry (rank 1); same month appears on both plans with different URLs.",
+      "Holds a counselling psychology master's and the IMS page says she is a Licensed Mental Health Counselor; her teaching is dharma, not therapy, so this was left out of the bio."
+    ],
+    "left_out": [
+      "IMS promo trailers ('Down to Earth Dharma — October 2-7', 'Not-Self from a Feminine Paradigm — March 7-12', young adults retreat 2020): dated promos for past retreats.",
+      "'Down to Earth Dharma ... Audiobook' on a 'Free Audiobook' channel: not hers, likely unlicensed.",
+      "Weekend Retreat at IMS (23–25 April 2027): left out to keep hub programmes to two.",
+      "Balancing Active and Receptive Mindfulness (Sati Center, 24 Oct 2026) and all 2025 and earlier 2026 events: passed.",
+      "Reflections essays on her site: not added as free resources (short articles)."
+    ]
+  }
+}

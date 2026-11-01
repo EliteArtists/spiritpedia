@@ -1,0 +1,158 @@
+{
+  "healer": {
+    "healer_slug": "gaia-hope-good",
+    "create": {
+      "name": "Gaia Hope Good",
+      "bio": "Gaia Hope Good is an evolutionary astrologer who founded the Evolutionary Astrology Academy, an online school for people who want to read birth charts in depth. Raised in London, she left England in her early twenties and spent about ten years travelling through India, Latin America and Bali, studying with teachers along the way. A reading in Bali drew her to astrology, and she later trained with Steven Forrest, one of the main figures of evolutionary astrology, and studied the shamanic astrology of Daniel Giamario. She also holds a psychology degree from the University of Leeds, spent years leading yoga teacher trainings and is a Reiki Master.\n\nHer approach treats the natal chart as a picture of the soul's direction rather than a forecast of events, with close attention to the lunar nodes, karmic patterns and planetary transits. At the academy she teaches small live cohorts online, from a foundation course for beginners through to a mentorship for working astrologers, alongside self-paced courses on aspects and past-life themes. She also gives private chart readings over video. On Insight Timer she shares shamanic journeys, yoga nidra and mantra practice. She lives in the mountains of Peru's Sacred Valley.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "worldwide",
+      "city": "Cusco",
+      "country": "Peru",
+      "subjects": [
+        "astrology",
+        "soul-purpose",
+        "shamanism"
+      ],
+      "website_url": "https://www.evolutionaryastrologyacademy.com",
+      "booking_url": "https://www.evolutionaryastrologyacademy.com/astrology-courses",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": null,
+      "image_urls": [
+        "https://images.squarespace-cdn.com/content/v1/691c5aac47b9c81d836bc6eb/3d31155c-32b0-4efc-ad2a-f46e67268601/gaia-evolutionary-astrologer-about-page-sacred-valley.jpg?format=1000w",
+        "https://images.squarespace-cdn.com/content/v1/691c5aac47b9c81d836bc6eb/e0c07aa1-b7b8-46cd-a7c4-f81d4f0c3097/schedule+an+astrological+reading+with+gaia.jpg?format=1500w",
+        "https://users.insighttimer.com/yFEruxJIRedCzXUC8t8q1bERt9N2/pictures/square_medium.jpeg"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "insight-timer",
+      "role": "instructor"
+    }
+  ],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Professional Astrologer Mentorship",
+      "url": "https://www.evolutionaryastrologyacademy.com/professional-astrologer-mentorship",
+      "description": "A thirteen-week live online mentorship for astrologers who already read charts and want to work with clients. It covers chart synthesis, how to run a session and the ethics and practicalities of a professional practice, with recordings included.",
+      "price": "$1050 USD (early bird $850 USD until 1 April 2027)",
+      "product_type": "course",
+      "start_date": "2027-05-03",
+      "end_date": null,
+      "subjects": [
+        "astrology"
+      ],
+      "image": "http://static1.squarespace.com/static/691c5aac47b9c81d836bc6eb/t/69a1bb8acf9f9e7ac577a354/1772206986509/professional-astrology-practice-chart-study.jpg?format=1500w"
+    },
+    {
+      "title": "Relationships: Synastry & the Composite Chart",
+      "url": "https://www.evolutionaryastrologyacademy.com/relationships-synastry-composite-chart",
+      "description": "An advanced live course of twenty classes on reading two charts together, through synastry and the composite chart. It is taught to a small online group with recordings, and is currently open as a waitlist for the next intake.",
+      "price": "$1,450 USD (early bird $1,250 USD)",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "astrology",
+        "conscious-relationships"
+      ],
+      "image": "http://static1.squarespace.com/static/691c5aac47b9c81d836bc6eb/t/69a1bacfdb7fc05e5f332d2b/1772206799820/relationships-synastry-composite-chart-evolutionary-astrology.jpg?format=1500w"
+    },
+    {
+      "title": "Past Lives in Evolutionary Astrology",
+      "url": "https://www.evolutionaryastrologyacademy.com/past-lives-in-evolutionary-astrology",
+      "description": "A self-paced recorded course on reading karmic themes in the birth chart, built around the South Node, its ruling planet, the Moon and the North Node. It suits students who can already read a natal chart, and access does not expire.",
+      "price": "$697 USD",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "astrology",
+        "soul-purpose"
+      ],
+      "image": "http://static1.squarespace.com/static/691c5aac47b9c81d836bc6eb/t/69a1bc9edb7fc05e5f332f98/1772207262321/past-lives-evolutionary-astrology-layered-mountain-landscape.jpg?format=1500w"
+    },
+    {
+      "title": "Astrological Aspects",
+      "url": "https://www.evolutionaryastrologyacademy.com/astrological-aspects",
+      "description": "About ten hours of recorded lessons on weighing and combining the aspects in a natal chart, from the basic angles to larger patterns. It is studied at your own pace and is aimed at students past the beginner stage.",
+      "price": "$347 USD",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "astrology"
+      ],
+      "image": "http://static1.squarespace.com/static/691c5aac47b9c81d836bc6eb/t/69a1bc449df9c33ba1e9caf3/1772207172628/astrological-aspects-course-learn-astrology-aspects-training.jpg?format=1500w"
+    },
+    {
+      "title": "Natal Chart Reading",
+      "url": "https://www.evolutionaryastrologyacademy.com/natal-chart-reading",
+      "description": "A private ninety-minute reading over video that looks at the main life themes and growth edges shown in your birth chart. You send your birth date, time and place beforehand, and a recording can be requested.",
+      "price": "$240 USD",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "astrology",
+        "soul-purpose"
+      ],
+      "image": "http://static1.squarespace.com/static/691c5aac47b9c81d836bc6eb/t/6978d128c1911c686813a896/1769525544975/evolutionary-astrology-readings-misty-landscape.jpg?format=1500w"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Gaia Hope Good on Insight Timer",
+      "url": "https://insighttimer.com/gaiahopegood",
+      "description": "Free shamanic journeys, yoga nidra and a Tara mantra practice, several of them centred on intuition and life purpose. Anyone can listen in the app or a web browser.",
+      "featured": false,
+      "resource_type": "meditation",
+      "subjects": [
+        "shamanism",
+        "meditation"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/691c5aac47b9c81d836bc6eb/3d31155c-32b0-4efc-ad2a-f46e67268601/gaia-evolutionary-astrologer-about-page-sacred-valley.jpg?format=1000w"
+    },
+    {
+      "title": "Discover Your North Node",
+      "url": "https://www.evolutionaryastrologyacademy.com/discover-your-north-node",
+      "description": "A free PDF guide to finding the North Node in your own chart and reading it by sign and house. It is sent by email once you sign up.",
+      "featured": true,
+      "resource_type": "download",
+      "subjects": [
+        "astrology",
+        "soul-purpose"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/691c5aac47b9c81d836bc6eb/bf5510d8-166f-4340-bf6e-8c427b9fc03b/Evolutionary+Astrology+Academy.png?format=1500w"
+    }
+  ],
+  "sprint": {
+    "hub": "insight-timer",
+    "rank": 146,
+    "insight_timer_url": "https://insighttimer.com/gaiahopegood",
+    "tier_evidence": "Insight Timer 2.6k (profile, 1 Nov 2026); no YouTube, Instagram, Facebook or other accounts linked from her site or found by search → ~2.6k total → local_hero",
+    "email": "contact form",
+    "email_source": null,
+    "contact_form_url": "https://www.evolutionaryastrologyacademy.com/contact",
+    "bio_check": "OK: no 8-word runs against 16 source(s)",
+    "flags": [
+      "Availability set to worldwide: all readings and courses are online; her contact page mentions co-facilitated retreats in the Sacred Valley but the site has no retreats page, so no in-person offer could be confirmed. City set to Cusco from her Insight Timer profile (her own site says the Sacred Valley).",
+      "Her About page says she trained in Amazonian plant medicine traditions and studied medical astrology and herbalism; none of this is sold as an offering and the bio leaves it out, but a human may want to check against the plant-medicine policy.",
+      "No social accounts found, so the tier rests on Insight Timer alone."
+    ],
+    "left_out": [
+      "Awaken Astrology Course: current cohort starts 1 Nov 2026 (before 4 Nov), dated and left out.",
+      "Intuitive & Energetic Awareness Course (started 22 Sep 2026) and Transits: Astrological Initiations (started 5 Oct 2026): already running.",
+      "Other readings (transits, relationship, astrocartography, past life): one reading kept as representative to avoid near-duplicates.",
+      "Insight Timer: no courses listed on her profile; tracks covered by the profile link.",
+      "No videos or books found."
+    ]
+  }
+}

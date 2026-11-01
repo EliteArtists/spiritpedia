@@ -1,0 +1,95 @@
+{
+  "healer": {
+    "healer_slug": "bonnie-duran",
+    "create": {
+      "name": "Bonnie Duran",
+      "bio": "Bonnie Duran is a Seattle-based insight meditation teacher of Opelousas and Coushatta descent who has practised Buddhist meditation for more than thirty-five years. She leads short and long residential retreats, has served as a core teacher in the Insight Meditation Society's four-year teacher training, and sits on the Spirit Rock teachers council, where she has also taught the Dedicated Practitioners Program. For many years she has hosted a weekly Seattle sitting group for people of colour and their allies, a peer-led circle for meditation and dharma conversation, after helping to found a similar group in Albuquerque.\n\nAlongside her dharma work she has had a long academic career at the University of Washington, centred on research in partnership with Indigenous communities. Her teaching brings the classic insight maps, right view, the three characteristics and the noble eightfold path, into conversation with culture, belonging and the way conditioning shapes how we see one another. Her talks are steady and practical: an invitation to look closely at experience, to notice the stories laid over it, and to meet what is found with kindness. In December 2027 she co-teaches a month of personal retreat at the Forest Refuge in Barre, Massachusetts.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local_online",
+      "city": "Seattle",
+      "country": "United States",
+      "subjects": [
+        "meditation",
+        "mindfulness",
+        "spirituality"
+      ],
+      "website_url": null,
+      "booking_url": "https://www.dharma.org/teacher/bonnie-duran/",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "bonduran@mac.com",
+      "image_urls": [
+        "https://www.dharma.org/wp-content/uploads/Bonnie-Duran_2018website.webp"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "insight-meditation-society",
+      "role": "instructor"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Right View and the Three Characteristics of Existence in Buddhism",
+      "url": "https://www.youtube.com/watch?v=PaSj_-Z8D5E",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "channel": "Tricycle"
+    },
+    {
+      "title": "Imperfect, Impermanent, and Impersonal – with Bonnie Duran and Sean Fargo",
+      "url": "https://www.youtube.com/watch?v=qIrmq-dUjOU",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "channel": "Mindfulness Exercises"
+    },
+    {
+      "title": "Three Dimensions of Cultural Humility – with Bonnie Duran",
+      "url": "https://www.youtube.com/watch?v=WZUcT6QUW8Q",
+      "subjects": [
+        "mindfulness",
+        "spirituality"
+      ],
+      "channel": "Mindfulness Exercises"
+    }
+  ],
+  "books": [],
+  "courses": [
+    {
+      "title": "Forest Refuge: December 2027 with Chas DiCapua and Bonnie Duran",
+      "url": "https://www.dharma.org/retreats/schedules/forest-refuge-schedule-2027/",
+      "description": "A month of personal, self-paced silent retreat at the IMS Forest Refuge in Barre, Massachusetts, guided by Chas DiCapua and Bonnie Duran. Experienced meditators may apply for stays of seven nights or longer, with teacher meetings to support their practice.",
+      "price": "From $115 USD per night (sliding scale)",
+      "product_type": "retreat",
+      "start_date": "2027-12-01",
+      "end_date": "2027-12-31",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://www.dharma.org/wp-content/uploads/john-video.webp"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "hub": "insight-meditation-society",
+    "rank": 26,
+    "hub_url": "https://www.dharma.org/teacher/bonnie-duran/",
+    "tier_evidence": "No personal YouTube, Instagram, Facebook, X or TikTok accounts found in searches (1 Nov 2026); her videos sit on Tricycle and Mindfulness Exercises channels, not her own → total 0 readable → local_hero",
+    "email": "yes",
+    "email_source": "https://northwestdharma.org/group_member/people-of-color-and-allies-sangha/",
+    "contact_form_url": null,
+    "bio_check": "",
+    "flags": [],
+    "left_out": []
+  }
+}

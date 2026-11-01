@@ -1,0 +1,327 @@
+{
+  "healer": {
+    "healer_slug": "tom-evans",
+    "create": {
+      "name": "Tom Evans",
+      "bio": "Tom Evans is a British author and meditation guide based near Salisbury. He trained as an electronic engineer and worked in television broadcasting for around twenty years, including at the BBC, before a further decade in internet technology. He came to meditation in his forties and began applying an engineer's curiosity to it, looking for simple, practical ways to settle the mind, change how we experience time and make room for intuition and new ideas. He has published books since 2006, from short guides on practical mindfulness and managing time to studies of creativity, philosophy and the Tarot, as well as visionary fiction.\n\nHe started recording for Insight Timer in 2016, and his relaxed, gently humorous British voice built a large following there; he has since stopped adding new tracks, but the back catalogue remains. His recent work explores how contemplative habits might shape the way people use artificial intelligence, an inquiry that produced The Hidden Tarot in AI. He also composes ambient music and in 2026 co-founded an interactive audio publishing platform for meditations, audiobooks and courses, where he shares much of his newer material.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "worldwide",
+      "city": "Salisbury",
+      "country": "United Kingdom",
+      "subjects": [
+        "mindfulness",
+        "meditation",
+        "consciousness"
+      ],
+      "website_url": "https://www.tomevans.co",
+      "booking_url": "https://www.tomevans.co/books/",
+      "youtube_url": "https://www.youtube.com/@TomEvans",
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": null,
+      "image_urls": [
+        "https://www.tomevans.co/wp-content/uploads/2019/02/oi008086-01-815x1024.jpeg",
+        "https://yt3.googleusercontent.com/ytc/AIdro_lTinLXHnkYmSVsWKFKesGLb5OkYPVeRaolnQ0VN559VsE=s900-c-k-c0x00ffffff-no-rj"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "insight-timer",
+      "role": "instructor"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Be Calm in 9 Minutes",
+      "url": "https://www.youtube.com/watch?v=r57HECyQNec",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "channel": "Tom Evans"
+    },
+    {
+      "title": "Just for Today",
+      "url": "https://www.youtube.com/watch?v=jUiy5z_VnjY",
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "channel": "Tom Evans"
+    },
+    {
+      "title": "How to Master Time - Tom Evans & Smita Joshi",
+      "url": "https://www.youtube.com/watch?v=y0QvrAdQQjg",
+      "subjects": [
+        "mindfulness",
+        "consciousness"
+      ],
+      "channel": "The Self Discovery Channel - Smita Joshi"
+    },
+    {
+      "title": "Meditation : Let the Path Find You",
+      "url": "https://www.youtube.com/watch?v=X0vfQ6LgmXY",
+      "subjects": [
+        "meditation",
+        "soul-purpose"
+      ],
+      "channel": "Tom Evans"
+    },
+    {
+      "title": "Meditation : Engaging Neutral",
+      "url": "https://www.youtube.com/watch?v=x0R0AggAdNk",
+      "subjects": [
+        "meditation"
+      ],
+      "channel": "Tom Evans"
+    },
+    {
+      "title": "Meditation : A No Plan Plan",
+      "url": "https://www.youtube.com/watch?v=-ZiY7llEatQ",
+      "subjects": [
+        "meditation"
+      ],
+      "channel": "Tom Evans"
+    },
+    {
+      "title": "It's About Time",
+      "url": "https://www.youtube.com/watch?v=-8vGhaSNUTQ",
+      "subjects": [
+        "mindfulness",
+        "consciousness"
+      ],
+      "channel": "Tom Evans"
+    },
+    {
+      "title": "Attention Management Workshop : Insight Timer",
+      "url": "https://www.youtube.com/watch?v=amGh4Bn6Zrg",
+      "subjects": [
+        "mindfulness"
+      ],
+      "channel": "Tom Evans"
+    }
+  ],
+  "books": [
+    {
+      "title": "Mindful Timeful Kindful",
+      "slug": "mindful-timeful-kindful",
+      "author": "Tom Evans",
+      "asin": "1849148473",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "A short, friendly introduction to mindfulness built around taking ten minutes a day for yourself. It shows how a brief daily practice can free up time and attention for what matters.",
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1849148473.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "Managing Time Mindfully",
+      "slug": "managing-time-mindfully",
+      "author": "Tom Evans",
+      "asin": "1849148600",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "A guide to time management that starts from the mind rather than the diary. Evans uses meditation techniques to slow and steady the flow of thoughts, so that work gets done with less rush.",
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1849148600.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "The Art and Science of Light Bulb Moments",
+      "slug": "the-art-and-science-of-light-bulb-moments",
+      "author": "Tom Evans",
+      "asin": "B0056A1JCW",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "An interactive guide to where good ideas come from and how to invite them on purpose. It looks at breathing, states of mind and wider awareness, then at turning ideas into action.",
+      "subjects": [
+        "consciousness",
+        "mindfulness"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/B0056A1JCW.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "The Zone",
+      "slug": "the-zone-tom-evans",
+      "author": "Tom Evans",
+      "asin": "B00CS624GM",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "A map of the states people call being in the zone, covering times of focused flow, the places we slip into when things go wrong, and quieter states of simply being. It offers ways to find these states and return to them.",
+      "subjects": [
+        "consciousness",
+        "mindfulness"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/B00CS624GM.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "New Magic for a New Era",
+      "slug": "new-magic-for-a-new-era",
+      "author": "Tom Evans",
+      "asin": "B00TFXKUNA",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "Evans argues that a sense of magic and synchronicity can be part of ordinary life, and that awakening need not come only through hardship. A blend of philosophy and personal development.",
+      "subjects": [
+        "spiritual-awakening",
+        "manifestation"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/B00TFXKUNA.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "Flavours of Thought",
+      "slug": "flavours-of-thought",
+      "author": "Tom Evans",
+      "asin": "B003ZUY7Y2",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "A playful, cookbook-styled exploration of where our thoughts come from, using the Major Arcana of the Tarot as a key. The first of his metaphysical explorations.",
+      "subjects": [
+        "consciousness",
+        "hermeticism"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/B003ZUY7Y2.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "Planes of Being",
+      "slug": "planes-of-being",
+      "author": "Tom Evans",
+      "asin": "1849143137",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "A sequel to Flavours of Thought that turns to the Minor Arcana, reading the structure and numbers of the deck as a picture of a many-layered reality. It also speculates on where human consciousness may be heading.",
+      "subjects": [
+        "consciousness",
+        "hermeticism"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1849143137.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "This We Know",
+      "slug": "this-we-know",
+      "author": "Tom Evans",
+      "asin": "B009EVSSFK",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "A short philosophical book on how the imagination of past generations shaped today's world. It invites readers to consider what kind of future we might now imagine for those who come after us.",
+      "subjects": [
+        "consciousness"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/B009EVSSFK.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "This We Are",
+      "slug": "this-we-are",
+      "author": "Tom Evans",
+      "asin": "B00EV5AJR4",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "A companion to This We Know that looks at human nature and our ability to shape our own development through thought and imagination.",
+      "subjects": [
+        "consciousness"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/B00EV5AJR4.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "The Hidden Tarot in AI",
+      "slug": "the-hidden-tarot-in-ai",
+      "author": "Tom Evans",
+      "asin": "B0H2ZVRGH2",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "Written in dialogue with AI models trained on his own archive, this book presents a new set of Tarot keys that emerged from that collaboration. It is the first of a planned trilogy.",
+      "subjects": [
+        "hermeticism",
+        "consciousness"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/B0H2ZVRGH2.01._SCLZZZZZZZ_.jpg"
+    }
+  ],
+  "courses": [
+    {
+      "title": "The Unified Chakra",
+      "url": "https://insighttimer.com/meditation-courses/the-unified-chakra",
+      "description": "A ten-day Insight Timer course of short daily sessions that works through the seven chakras in turn and then links them to two points beyond the body. Each lesson takes about eight minutes.",
+      "price": "Included in Member Plus ($59.99 USD a year)",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "chakra-healing",
+        "meditation"
+      ],
+      "image": "https://www.tomevans.co/wp-content/uploads/2019/02/oi008086-01-815x1024.jpeg"
+    },
+    {
+      "title": "Recipes For Fresh Thinking: Generating Abundance",
+      "url": "https://insighttimer.com/meditation-courses/recipes-for-fresh-thinking-generating-abundance",
+      "description": "A three-day Insight Timer course framed as a meal, with a starter, main and dessert, each a short session on noticing and keeping hold of abundance in its broadest sense.",
+      "price": "Included in Member Plus ($59.99 USD a year)",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "manifestation",
+        "meditation"
+      ],
+      "image": "https://www.tomevans.co/wp-content/uploads/2019/02/oi008086-01-815x1024.jpeg"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Tom Evans on Insight Timer",
+      "url": "https://insighttimer.com/tomevans",
+      "description": "A large back catalogue of free guided meditations and short mindfulness practices, many with ambient music he composed himself. Free to listen to in the app or a browser.",
+      "featured": false,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://www.tomevans.co/wp-content/uploads/2019/02/oi008086-01-815x1024.jpeg"
+    }
+  ],
+  "sprint": {
+    "hub": "insight-timer",
+    "rank": 147,
+    "insight_timer_url": "https://insighttimer.com/tomevans",
+    "tier_evidence": "Insight Timer 84.2k (profile, 1 Nov 2026); YouTube 626 (channel header next to @TomEvans, 1 Nov 2026); Facebook is a group, not counted; no Instagram, X or TikTok linked from his site → ~84.8k total → local_hero",
+    "email": "contact form",
+    "email_source": null,
+    "contact_form_url": "https://www.tomevans.co/contact-me/",
+    "bio_check": "OK: no 8-word runs against 21 source(s)",
+    "flags": [
+      "Tier borderline: ~84.8k total, inside the 80k–150k band; only Insight Timer and YouTube could be counted (no other accounts linked).",
+      "His Insight Timer bio says he has paused new uploads indefinitely; he is still active on YouTube and his own audio platform, so kept as teaching.",
+      "Book ASINs taken from the amazon.com links on his own book pages; amazon.com /dp/ pages returned 500 or redirects to curl, but cover images load for each ASIN.",
+      "Common name: check there is no other Tom Evans already on Spiritpedia.",
+      "His own site names his new platform both NRJ and Tmesis; the bio avoids naming it.",
+      "Several popular Insight Timer tracks are sleep-titled and one course is 'Dealing With Anger'; the brand itself is not sold on conditions, but a human may want to confirm."
+    ],
+    "left_out": [
+      "Recipes For Fresh Thinking: Dealing With Anger (Insight Timer course): emotional-condition framing.",
+      "Sleep-titled Insight Timer tracks (The Perfect Way to Get to Sleep, A Snoozitation): covered by the profile link only.",
+      "Fiction (Soulwaves, The Germinatrix, Time Restored, 100 Years of Ermintrude) and The Authority Guide to Practical Mindfulness / Just for Today (no amazon.com ASIN confirmed): left out of books; 10-book cap reached.",
+      "Creator briefings and his audio publishing platform: business services for creators, not teaching offerings.",
+      "YouTube: platform how-to videos (NRJ USPs, audio editing) and clips under 2 minutes left out; 'Meditation : Be Calm' left out as a near-duplicate of 'Be Calm in 9 Minutes'."
+    ]
+  }
+}

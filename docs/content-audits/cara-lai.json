@@ -1,0 +1,205 @@
+{
+  "healer": {
+    "healer_slug": "cara-lai",
+    "create": {
+      "name": "Cara Lai",
+      "bio": "Cara Lai is a meditation teacher, artist and writer living in Hinesburg, Vermont, with her husband and their two small children. Before turning fully to the dharma she worked as a wilderness guide, a social worker and a psychotherapist, and she has spent a large share of her adult life on retreat, including a full year alone in a cabin in Colorado that began in 2020. She is authorised to teach in the Theravada insight lineage through the IMS and Spirit Rock teacher training.\n\nHer teaching is frank, warm and often funny, aimed at making practice feel workable for people with busy, messy lives, especially parents. She leads retreats at IMS and other centres, has taught teen retreats for Inward Bound Mindfulness Education, and records guided meditations for the Ten Percent Happier and Hatch apps. Online she runs small dana-based classes: Meditate Your Face Off, on the basics of Buddhist practice in real life; a short class on generosity; and Parenting as the Path, co-led with Ofosu Jones-Quartey. She shares free meditations, talks and essays through her Substack, and designs the illustrated shirts and mugs in her shop, with all the money raised passed on to Buddhist Global Relief and to Inward Bound Mindfulness.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "worldwide",
+      "city": null,
+      "country": null,
+      "subjects": [
+        "meditation",
+        "mindfulness",
+        "spirituality"
+      ],
+      "website_url": "https://www.caralai.org/",
+      "booking_url": "https://www.caralai.org/online-classes.html",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "fitzcara@gmail.com",
+      "image_urls": [
+        "https://www.dharma.org/wp-content/uploads/Cara-Headshot-1.25-1.webp",
+        "https://www.caralai.org/uploads/1/3/1/7/131718460/water-headshot_orig.jpg"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "insight-meditation-society",
+      "role": "instructor"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Embracing Boredom — Cara Lai",
+      "url": "https://www.youtube.com/watch?v=FXpfb3gJr3M",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "channel": "10% Happier"
+    },
+    {
+      "title": "How to Trust Yourself, One Moment at a Time — Cara Lai",
+      "url": "https://www.youtube.com/watch?v=7Y6HdZ695Pk",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "channel": "10% Happier"
+    },
+    {
+      "title": "What It’s Like To Do A Year-Long Silent Meditation Retreat — By Yourself | Cara Lai",
+      "url": "https://www.youtube.com/watch?v=maKwAGybM1c",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "channel": "10% Happier"
+    },
+    {
+      "title": "Out of Your Head, Into Your Body | Meditation for Sleep ft. Cara Lai | Hatch+",
+      "url": "https://www.youtube.com/watch?v=qYrJUIySaBM",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "channel": "Hatch for Sleep"
+    },
+    {
+      "title": "Mindful Eating Instructions (Wanting) with iBme's Cara Lai",
+      "url": "https://www.youtube.com/watch?v=XJ-DIcyXWYs",
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "channel": "Inward Bound Mindfulness"
+    },
+    {
+      "title": "Desire & Dharma: Cara Lai: Passion Without Fear",
+      "url": "https://www.youtube.com/watch?v=rkk9-L_h7uQ",
+      "subjects": [
+        "spirituality",
+        "meditation"
+      ],
+      "channel": "Yael Shy"
+    }
+  ],
+  "books": [],
+  "courses": [
+    {
+      "title": "This Living Body Livestream Retreat 2027",
+      "url": "https://ims.dharma.org/courses/This-Living-Body-livestream-retreat-2027",
+      "description": "A week-long silent retreat streamed live from the IMS meditation hall, taught with Devon Hase, on mindfulness of the four great elements (earth, water, fire and wind) as felt in the body. It includes guided meditations, sitting and walking periods and dharma talks; online participants follow along without direct interaction with the teachers.",
+      "price": "$200–$450 USD (sliding scale)",
+      "product_type": "course",
+      "start_date": "2027-04-27",
+      "end_date": "2027-05-04",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://import.cdn.thinkific.com/478758/XdbUgBpvTSOEaLeEIDtJ_Course%20Tile%20760x420.jpg"
+    },
+    {
+      "title": "Meditate Your Face Off",
+      "url": "https://www.caralai.org/meditate-your-face-off.html",
+      "description": "A 55-minute online class on living the basics of Buddhist practice, with a short talk, a guided sit of twenty to thirty minutes and open discussion. Themes change each week; open to all levels.",
+      "price": "Dana (donation)",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "image": "https://www.dharma.org/wp-content/uploads/Cara-Headshot-1.25-1.webp"
+    },
+    {
+      "title": "Generosity Class",
+      "url": "https://www.caralai.org/generosity-class.html",
+      "description": "A light, half-hour online class on dana, the practice of giving that the Buddha often taught before meditation itself.",
+      "price": "Dana (donation)",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "spirituality",
+        "meditation"
+      ],
+      "image": "https://www.dharma.org/wp-content/uploads/Cara-Headshot-1.25-1.webp"
+    },
+    {
+      "title": "Parenting as the Path",
+      "url": "https://www.caralai.org/parenting-as-the-path.html",
+      "description": "A 90-minute online class with Ofosu Jones-Quartey on folding the everyday realities of raising children into a deepening meditation practice. Sessions are recorded for those who cannot attend live.",
+      "price": "Dana (donation)",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "image": "https://www.dharma.org/wp-content/uploads/Cara-Headshot-1.25-1.webp"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Talks and Meditations",
+      "url": "https://www.caralai.org/teachings.html",
+      "description": "A page of Cara's recorded talks and guided meditations on themes such as desire, doubt, generosity and practising when life feels out of control, plus a short parenting series.",
+      "featured": true,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "image": "https://www.caralai.org/uploads/1/3/1/7/131718460/equanimity-talk.png"
+    },
+    {
+      "title": "Cara Lai on Substack",
+      "url": "https://caralai.substack.com/",
+      "description": "Free guided meditations, talks and essays sent by email, with optional paid support.",
+      "featured": false,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://substackcdn.com/image/fetch/$s_!ebnA!,w_400,h_400,c_fill,f_auto,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fa16ba504-b1d3-4481-93a4-3b44f7c2839c_1280x1280.png"
+    }
+  ],
+  "sprint": {
+    "hub": "insight-meditation-society",
+    "rank": 10,
+    "hub_url": "https://www.dharma.org/teacher/cara-lai/",
+    "tier_evidence": "No social accounts linked from caralai.org and no YouTube channel of her own (YouTube search, 1 Nov 2026); Substack subscriber count not shown → 0 readable followers → local_hero",
+    "email": "yes",
+    "email_source": "https://www.caralai.org/shop.html",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 12 source(s)",
+    "flags": [
+      "Email fitzcara@gmail.com is Cloudflare-obfuscated on her shop page (decoded as the brief allows) and sits in the returns note; her Connect page also has a contact form (https://www.caralai.org/connect.html).",
+      "No follower counts readable; she reaches large audiences through the Ten Percent Happier and Hatch apps, which are not her own accounts. Tier local_hero on a 0 total.",
+      "Second photo shows her in a cold river (bare shoulders); it is clearly her, but a human may prefer to use only the IMS headshot.",
+      "Her hub bio and podcast page mention chronic illness (Lyme disease); left out of the bio and items.",
+      "Co-teaches the IMS livestream with Devon Hase (rank 4 in this sprint, separate plan).",
+      "Hatch video 'Meditation for Sleep' kept (sleep as a practice); her other Hatch series is titled 'Meditations for a Racing Mind' and was left out as borderline.",
+      "Videos are on other channels (Ten Percent Happier, Hatch, iBme, Yael Shy) where she is the main speaker."
+    ],
+    "left_out": [
+      "Hatch 'Meditations for a Racing Mind' series and 10% Happier 'Accepting Difficult Emotions' (borderline anxiety framing / shared billing).",
+      "Podcast episodes centred on illness or fitness (Lyme disease, 'Can You Get Fit Without Hating Yourself?').",
+      "iBme teen and adult retreats listed on her IMS page (June and August dates have passed).",
+      "Shop merchandise (not teaching).",
+      "1-1 sessions: her site says she is not currently offering them."
+    ]
+  },
+  "images_final": true
+}

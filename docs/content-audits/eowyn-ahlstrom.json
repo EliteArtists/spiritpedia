@@ -1,0 +1,179 @@
+{
+  "healer": {
+    "healer_slug": "eowyn-ahlstrom",
+    "create": {
+      "name": "Éowyn Ahlstrom",
+      "bio": "Éowyn Ahlstrom is an insight meditation teacher who lives and works in Barre, Massachusetts, the small town that is home to the Insight Meditation Society. She came to meditation through yoga during a decade of travel after university, then found her way back to the vipassana and metta practice being taught on her doorstep. Over some twenty years she sat many retreats at IMS and the Forest Refuge, worked there as staff and volunteer, and was later authorised to teach by the IMS guiding teachers following a period of mentoring with Greg Scharf, Kamala Masters and Bhikkhu Analayo.\n\nAlongside the dharma she has a long background in mindfulness-based programmes, having trained MBSR teachers at Brown University and taught for the mindfulness centres at UMass Medical School and Cambridge Health Alliance. Her own practice, Middle Path Healing Arts, brings together sitting meditation, mindful movement drawn from yoga and qigong, and down-to-earth reflection on early Buddhist teachings. She leads a weekly insight group on Zoom and in Barre, a monthly online membership of recorded practices, individual guidance and silent retreats. She is also a poet, and her collection Mindscapes: Practice Poems gathers pieces written on and around retreat.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local_online",
+      "city": "Barre",
+      "country": "United States",
+      "subjects": [
+        "meditation",
+        "mindfulness",
+        "yoga"
+      ],
+      "website_url": "https://www.middlepath-healingarts.com/",
+      "booking_url": "https://www.middlepath-healingarts.com/programs/",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "eowyn@middlepath-healingarts.com",
+      "image_urls": [
+        "https://www.dharma.org/wp-content/uploads/Eowyn-Ahlstrom-headshot-2026.webp",
+        "https://www.middlepath-healingarts.com/wp-content/uploads/2023/08/Eowyn-headshot-5.jpg",
+        "https://www.middlepath-healingarts.com/wp-content/uploads/2022/10/hp-eowyn-image.jpg"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "insight-meditation-society",
+      "role": "instructor"
+    }
+  ],
+  "videos": [
+    {
+      "title": "26: Éowyn Ahlstrom, Mindfulness & MBSR Practitioner & Teacher",
+      "url": "https://www.youtube.com/watch?v=ITA5y08KPm0",
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "channel": "Technology For Mindfulness Podcast"
+    },
+    {
+      "title": "Episode 9 - What is mindfulness? A conversation with Eowyn Ahlstrom",
+      "url": "https://www.youtube.com/watch?v=gZnswCVaBfA",
+      "subjects": [
+        "mindfulness"
+      ],
+      "channel": "Joshua Malina"
+    },
+    {
+      "title": "Episode 276 :: Eowyn Ahlstrom :: Embodiment",
+      "url": "https://www.youtube.com/watch?v=lWznvIXyUJQ",
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "channel": "The Secular Buddhist"
+    }
+  ],
+  "books": [
+    {
+      "title": "Mindscapes: Practice Poems",
+      "slug": "mindscapes-practice-poems",
+      "author": "Éowyn Ahlstrom",
+      "asin": "B08YWLDZZ2",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "A short collection of poems by a long-time meditation and yoga practitioner, many of them written during or just after silent retreats. The pieces dwell on small moments of noticing in nature and everyday life, and can be read slowly as a support for practice.",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/B08YWLDZZ2.01._SCLZZZZZZZ_.jpg"
+    }
+  ],
+  "courses": [
+    {
+      "title": "Mindfulness as the Gateway to Many Beautiful Qualities",
+      "url": "https://ims.dharma.org/courses/mindfulness-as-the-gateway-to-many-beautiful-qualities",
+      "description": "A five-day IMS Online retreat co-taught with Bob Stahl, built around silent sitting and walking, guided movement and talks. It looks at how steady attention opens into kindness, compassion, joy and equanimity, and suits newcomers as well as people involved in mindfulness-based programmes.",
+      "price": "$175–$450 USD (sliding scale)",
+      "product_type": "course",
+      "start_date": "2026-12-04",
+      "end_date": "2026-12-09",
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "image": "https://import.cdn.thinkific.com/478758/6e8TyKHqQjOc0dAmP6qR_Course%20Tile%20760x420.jpg"
+    },
+    {
+      "title": "Online Practice Membership",
+      "url": "https://www.middlepath-healingarts.com/memberships/",
+      "description": "A monthly online membership with recorded guided meditations, reflections, gentle yoga sessions, talks and worksheets, added to each month. A higher tier adds a live monthly practice group with Éowyn on Zoom.",
+      "price": "$14 USD a month (Do It Yourself) or $39 USD a month (Practice Together)",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "mindfulness",
+        "yoga"
+      ],
+      "image": "https://www.middlepath-healingarts.com/wp-content/uploads/2022/11/YOAST-Facebook-WebshareImage-1.jpg"
+    },
+    {
+      "title": "Individual Sessions",
+      "url": "https://www.middlepath-healingarts.com/services-consultations/",
+      "description": "One-to-one guidance in meditation and mindful yoga, booked singly or in packs of three, six or twelve. Sessions are shaped around the student's own practice and questions.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "yoga"
+      ],
+      "image": "https://www.middlepath-healingarts.com/wp-content/uploads/2022/11/YOAST-Facebook-WebshareImage-1.jpg"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Insight Meditation Weekly",
+      "url": "https://www.middlepath-healingarts.com/insight-meditation-weekly/",
+      "description": "A weekly sitting group on Tuesday evenings with a guided meditation followed by a talk and discussion on early Buddhist themes such as generosity, ethics and lovingkindness. It meets on Zoom and in Barre and runs on voluntary contributions.",
+      "featured": true,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://www.middlepath-healingarts.com/wp-content/uploads/2022/11/YOAST-Facebook-WebshareImage-1.jpg"
+    },
+    {
+      "title": "Mindful Movement Weekly",
+      "url": "https://www.middlepath-healingarts.com/mindful-movement-weekly/",
+      "description": "A Saturday morning online class of gentle movement drawn from hatha yoga, viniyoga and qigong, with attention on breath and sensation. It is offered freely, with donations welcome.",
+      "featured": false,
+      "resource_type": "practice",
+      "subjects": [
+        "yoga",
+        "mindfulness",
+        "qi-gong"
+      ],
+      "image": "https://www.middlepath-healingarts.com/wp-content/uploads/2022/11/YOAST-Facebook-WebshareImage-1.jpg"
+    }
+  ],
+  "sprint": {
+    "hub": "insight-meditation-society",
+    "rank": 6,
+    "hub_url": "https://www.dharma.org/teacher/eowyn-ahlstrom/",
+    "tier_evidence": "No social accounts linked from middlepath-healingarts.com and no YouTube channel of her own found (YouTube search, 1 Nov 2026); no follower counts readable → 0 total → local_hero",
+    "email": "yes",
+    "email_source": "https://www.middlepath-healingarts.com/contact-us/",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 14 source(s)",
+    "flags": [
+      "Her home page leans on condition language (anxiety, chronic pain, immune system, 'Starting Place for Healing' quiz) and she is also a licensed massage therapist; her teaching itself (IMS-authorised dharma teacher, weekly insight group, membership, retreats, poetry book) is clean, so she was kept, but a human may want to check the framing.",
+      "No follower counts at all (no linked social accounts or own YouTube channel): tier local_hero on a 0 total.",
+      "Co-teaches the IMS online retreat with Bob Stahl (rank 9), who has his own plan with the same programme URL.",
+      "Videos are podcast interviews on other channels where she is the main guest; she has no channel of her own.",
+      "Book ASIN B08YWLDZZ2 (Kindle) taken from the amazon.com /dp/ link on her own book page; amazon.com returned 500 to curl and WebFetch, so the listing could not be opened directly."
+    ],
+    "left_out": [
+      "Mindfulness and Stress Reduction for Burned Out Professionals (MBSR course, Sept–Oct dates have passed; also condition-framed around burnout).",
+      "Free consult / 'Starting Place for Healing' offer (condition-framed: pain, anxiety).",
+      "Massage therapy sessions (bodywork, not spiritual teaching).",
+      "IMS promo clips under 2 minutes and the 'Éowyn - Topic' music channel (a different artist)."
+    ]
+  },
+  "images_final": true
+}
