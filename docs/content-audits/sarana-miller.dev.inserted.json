@@ -1,0 +1,45 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 544,
+    "healer_slug": "sarana-miller"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "cf5360f8-ca16-42f3-9d0d-a10c236a9e13",
+      "slug": "aligning-with-nature-a-winter-solstice-yoga-retreat",
+      "title": "Aligning with Nature: A Winter Solstice Yoga Retreat"
+    },
+    {
+      "table": "courses",
+      "id": "20407c86-fde5-4a53-9418-ec9e6113fabd",
+      "slug": "spring-equinox-yoga-retreat",
+      "title": "Spring Equinox Yoga Retreat"
+    },
+    {
+      "table": "courses",
+      "id": "f75687de-82dc-4fdc-82db-dc70761bcd4d",
+      "slug": "saranayoga-weekends-at-wilbur-hot-springs",
+      "title": "SaranaYoga Weekends at Wilbur Hot Springs"
+    },
+    {
+      "table": "courses",
+      "id": "c0983cca-a709-4d73-abfc-005c71b50a39",
+      "slug": "summer-yoga-retreats-in-haines-alaska",
+      "title": "Summer Yoga Retreats in Haines, Alaska"
+    },
+    {
+      "table": "courses",
+      "id": "cf6f07df-08be-47fd-9155-01b2db07d9df",
+      "slug": "livestream-yoga-classes",
+      "title": "Livestream Yoga Classes"
+    },
+    {
+      "table": "hub_teachers",
+      "id": "dc39deeb-f7a7-4735-a09e-fbb74bf417cc",
+      "title": "sarana-miller teaches at Esalen Institute"
+    }
+  ],
+  "at": "2026-11-01T15:08:06.282Z"
+}

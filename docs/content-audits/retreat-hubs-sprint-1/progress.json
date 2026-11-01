@@ -3744,7 +3744,7 @@
    "contact_form_seen": true,
    "in_person_words": true,
    "hub_bio_extract": "Sianna Sherman SiannaSherman.com Sianna Sherman (she/her) is an international yoga and meditation teacher, storyteller, and shadow work guide committed to being Love-In-Action. For three decades, she has been training tens of thousands of students and yoga teachers from around the globe. As the visionary of the Rasa Yoga Collective, Mythic Yoga Flow®, and RITUAL, Sianna shares her voice in the way",
-   "status": "planned",
+   "status": "dev",
    "plan": "docs/content-audits/sianna-sherman.json",
    "skip_reason": null
   },
@@ -3826,9 +3826,9 @@
    "contact_form_seen": true,
    "in_person_words": true,
    "hub_bio_extract": "Shannon Algeo www.shannonalgeo.com Shannon Algeo is an American and Irish psychotherapist, researcher, poet, Yoga Nidra teacher, and co-founder of We Human and the We Human Podcast . Shannon is the author of the books The Power in Your Hands: Liberate Yourself From Attachment to Technology and Trust Your Truth . He is on faculty at Esalen Institute and the Kripalu Center, and leads digital liberat",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "His work is now mainly psychotherapy (his website is a therapy practice for California clients, with a therapy request form and rates) and attachment-based work on smartphone use framed as phone addiction and digital detox; his Esalen programme (14 to 18 Dec 2026) is built on attachment styles, re-parenting and poetry therapy, and his recent videos are almost all addiction-framed interviews. Skipped under the therapy and health rules; his earlier Yoga Nidra and chakra book (Trust Your Truth) is the only clearly spiritual strand."
   },
   {
    "rank": 214,
@@ -3864,9 +3864,9 @@
    "contact_form_seen": true,
    "in_person_words": false,
    "hub_bio_extract": "Dorothy Charles www.dorothycharles.com Dorothy Charles has been a student and teacher at Esalen since 1982. A student of Esalen co-founder Richard Price, she combines Esalen body-centered Gestalt with relational Gestalt theory, and leads workshops in Asia, Europe, and the U.S. Featured Content Relational Gestalt Practice: A Deeper Look with Dorothy Charles Relational Gestalt Practice: A Deeper Loo",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Her work is Relational Gestalt Practice, a group form of Gestalt therapy in the Richard Price lineage built on open-seat sessions with her (her site calls it education, but its stated focus is emotional patterns from trauma, loss and early relationships, and it is aimed partly at the helping professions), so it falls under the therapy rule; it is also thin, with no books, no free resources and no channel of her own (only short Esalen clips and a history talk), and her one non-Esalen programme for 2027 has no dates or venue yet. Her Esalen programmes (27 Nov to 4 Dec 2026, 22 to 26 Feb 2027, 10 to 14 May 2027) are current."
   },
   {
    "rank": 215,
@@ -3983,7 +3983,7 @@
    "contact_form_seen": true,
    "in_person_words": false,
    "hub_bio_extract": "Sarana Miller www.saranayoga.com Sarana Miller has been a faculty instructor at Yoga Journal and leads annual retreats at Esalen, Wilbur Hot Springs, Mexico, and Alaska. Trained in the Iyengar and Forrest Yoga traditions, she has built her life around sharing the benefits of the practice of yoga. Featured Content No items found. Upcoming Workshops Upcoming Workshops Count: On-Campus Workshop Decem",
-   "status": "planned",
+   "status": "dev",
    "plan": "docs/content-audits/sarana-miller.json",
    "skip_reason": null
   },
@@ -4009,7 +4009,7 @@
    "contact_form_seen": true,
    "in_person_words": false,
    "hub_bio_extract": "Aja Daashuur thespiritguidecoach.com AJA Daashuur is a revered trance medium and wellness leader, certified life coach, past life regression integrator, and the visionary founder of Spirit House Collective, a healing space in Los Angeles dedicated to offering healing and spiritual modalities. From a young age, AJA was attuned to the whispers of the beyond, which led her to live in devotion to her ",
-   "status": "planned",
+   "status": "dev",
    "plan": "docs/content-audits/aja-daashuur.json",
    "skip_reason": null
   },
@@ -4034,7 +4034,7 @@
    "contact_form_seen": true,
    "in_person_words": false,
    "hub_bio_extract": "Simon Cox okanaganvalleywudang.com Simon Cox is a martial artist, scholar, and teacher who spent six years training at Wudang Mountain, the spiritual home of Daoist culture and internal arts. Under Master Yuan Xiugang 袁修刚, he immersed himself in the Sanfeng lineage, studying tai chi, qigong, and Daoist meditation. His intensive training combined rigorous daily practice with rich cultural experienc",
-   "status": "planned",
+   "status": "dev",
    "plan": "docs/content-audits/simon-cox.json",
    "skip_reason": null
   },
@@ -4134,8 +4134,8 @@
    "contact_form_seen": true,
    "in_person_words": false,
    "hub_bio_extract": "Leah Diamond www.LeahDiamond.com Leah Diamond is a heart-centered mentor, trauma-informed facilitator, coach, and Dharma practitioner. A certified mindfulness meditation teacher on InsightTimer, Leah guides individuals to cultivate self-awareness and communicate mindfully, confidently, and with integrity — while inspiring meaningful change in their lives, communities, and the world. An intuitive H",
-   "status": "todo",
-   "plan": null,
+   "status": "planned",
+   "plan": "docs/content-audits/leah-diamond.json",
    "skip_reason": null
   },
   {
@@ -4857,5 +4857,5 @@
    "skip_reason": null
   }
  ],
- "updated": "2026-11-01T15:07:11.992Z"
+ "updated": "2026-11-01T15:08:21.068Z"
 }

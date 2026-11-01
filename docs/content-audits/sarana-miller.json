@@ -1,0 +1,136 @@
+{
+  "healer": {
+    "healer_slug": "sarana-miller",
+    "create": {
+      "name": "Sarana Miller",
+      "bio": "Sarana Miller has taught yoga for more than twenty years. Her approach rests mainly on the Iyengar tradition, with its care for precise alignment and moving with the breath, and she has also studied with Rodney Yee, Ana Forrest, Sarah Powers and Thomas Fortel, as well as with the kirtan singer Jai Uttal, whose influence shows in the chanting that opens many of her sessions. She has presented at Yoga Journal Live events, and her livestream classes were written up in The New York Times in 2020.\n\nShe divides her year between Berkeley, California, and Haines, Alaska, where she lives with her husband, the performer and filmmaker Aaron Davidman. Her weekly classes run online with sliding-scale passes, and her retreats follow the seasons: solstice and equinox weekends at Esalen in Big Sur, regular weekends at Wilbur Hot Springs in northern California, summer retreats in a yurt beside the Chilkat Inlet in Haines, and day-long gatherings at Green Gulch Farm. A typical day moves from chanting, breathing practice and meditation into an active asana session, with restorative poses later on. She welcomes all levels and regularly gives classes to raise money for community causes.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local_online",
+      "city": "Berkeley",
+      "country": "United States",
+      "subjects": [
+        "yoga",
+        "meditation",
+        "mindfulness"
+      ],
+      "website_url": "https://www.saranayoga.com/",
+      "booking_url": "https://www.saranayoga.com/on-retreat.html",
+      "youtube_url": "https://www.youtube.com/@SaranaYoga",
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "retreat@saranayoga.com",
+      "image_urls": [
+        "https://www.saranayoga.com/uploads/2/6/6/7/26676654/lk1-6138_orig.jpg"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "esalen",
+      "role": "instructor"
+    }
+  ],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Aligning with Nature: A Winter Solstice Yoga Retreat",
+      "url": "https://www.esalen.org/workshops/aligning-with-nature-a-winter-solstice-yoga-retreat-121126",
+      "description": "A weekend at Esalen in Big Sur marking the winter solstice with yoga, meditation and chanting. The emphasis is on slowing down, turning inward and practising together before the new year. All levels are welcome.",
+      "price": "From $940 USD (all-inclusive)",
+      "product_type": "retreat",
+      "start_date": "2026-12-11",
+      "end_date": "2026-12-13",
+      "subjects": [
+        "yoga",
+        "meditation"
+      ],
+      "image": "https://cdn.prod.website-files.com/602d8561ae2fe6ec8347c903/6967c09c1b619269a31847a3_69670ce3ef4a313a29a44036_2024-Esalen_Yoga-Mindfulness-Movement-Surrender_Wari-Om-Yoga-Photography_7603-1500x775.jpeg"
+    },
+    {
+      "title": "Spring Equinox Yoga Retreat",
+      "url": "https://www.esalen.org/workshops/spring-equinox-yoga-retreat-032627",
+      "description": "A weekend at Esalen around the March equinox, with balance as its theme on and off the mat. Sessions combine asana, meditation and bhakti chanting in Big Sur's coastal setting.",
+      "price": "From $940 USD (all-inclusive)",
+      "product_type": "retreat",
+      "start_date": "2027-03-26",
+      "end_date": "2027-03-28",
+      "subjects": [
+        "yoga",
+        "meditation"
+      ],
+      "image": "https://cdn.prod.website-files.com/602d8561ae2fe6ec8347c903/69fc13b2d09979aedffb3f72_69fad25897ac2a2bd1e408a3_2024-Esalen_Meditation_Wari-Om-Yoga-Photography_9974-1500x775.jpeg"
+    },
+    {
+      "title": "SaranaYoga Weekends at Wilbur Hot Springs",
+      "url": "https://www.saranayoga.com/wilbur.html",
+      "description": "Weekend retreats held several times a year at Wilbur Hot Springs in northern California. Four yoga sessions run from Friday evening to Sunday brunch, mixing chanting, pranayama, active practice and restorative poses, with free time for the mineral baths and trails; meals and two nights' lodging are included.",
+      "price": "$705–$1,175 USD per person, by room (2026 pricing)",
+      "product_type": "retreat",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga",
+        "meditation"
+      ],
+      "image": "https://www.saranayoga.com/uploads/1/3/8/0/138095001/wilbur-june-16_orig.jpg"
+    },
+    {
+      "title": "Summer Yoga Retreats in Haines, Alaska",
+      "url": "https://www.saranayoga.com/haines-alaska.html",
+      "description": "Extended summer weekends of yoga in a yurt on the Chilkat Inlet near Haines, with morning practice, afternoon restorative sessions, lunches and dinners. Guests arrange their own lodging, with yurts available at the retreat property.",
+      "price": "$825 USD",
+      "product_type": "retreat",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga",
+        "mindfulness"
+      ],
+      "image": "https://www.saranayoga.com/uploads/1/3/8/0/138095001/screen-shot-2022-02-08-at-4-45-06-pm_orig.jpg"
+    },
+    {
+      "title": "Livestream Yoga Classes",
+      "url": "https://www.saranayoga.com/calendar.html",
+      "description": "Weekly online classes, including a Wednesday morning yoga series and Sunday sessions, booked through monthly passes or drop-ins. Recordings stay available for a month, and prices are on a sliding scale.",
+      "price": "$10–$25 USD per class (sliding scale)",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://www.saranayoga.com/uploads/2/6/6/7/26676654/editor/lk1-6299.jpg?1594166775"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "hub": "esalen",
+    "rank": 218,
+    "hub_url": "https://www.esalen.org/faculty/sarana-miller",
+    "tier_evidence": "YouTube @SaranaYoga 24 (channel header, 1 Nov 2026); no Instagram, Facebook or X linked from her site → ~24 total → local_hero",
+    "email": "yes",
+    "email_source": "https://www.saranayoga.com/contact.html",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 10 source(s)",
+    "flags": [
+      "Email is Cloudflare-obfuscated on her site and was decoded (retreat@saranayoga.com); it matches the address shown in plain text on the On Retreat page.",
+      "Only one usable photo (same headshot as the Esalen page, larger copy from her site).",
+      "The 11-13 Dec 2026 Esalen retreat shows as full (waitlist open); kept as it starts after 3 Nov 2026.",
+      "Haines page shows older June/August dates and $825; the On Retreat page lists 2027 dates (18-21 Jun, 13-16 Aug), so the Haines retreats go in undated as a repeating offering.",
+      "Wilbur page lists 2027 dates but '2026 pricing'; price written as published.",
+      "Esalen programme pages call yoga, meditation and chanting 'healing practices'; descriptions avoid that wording.",
+      "Her four YouTube videos are short promos for retreats, not teaching, so no videos are listed."
+    ],
+    "left_out": [
+      "Green Gulch day-long retreat: date to be announced and registration not open.",
+      "Foam roller / Roll & Release classes: body-care rather than yoga teaching (kept the main livestream classes only).",
+      "YouTube promo videos (SaranaYoga at Wilbur Hot Springs, Haines promos, 2020 livestream retreat trailer).",
+      "No books found."
+    ]
+  },
+  "images_final": true
+}
