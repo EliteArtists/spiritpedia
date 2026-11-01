@@ -1,0 +1,148 @@
+{
+  "healer": {
+    "healer_slug": "caroline-stewart",
+    "create": {
+      "name": "Caroline Stewart",
+      "bio": "Caroline Stewart is a meditation and breathwork teacher and business coach based in Edmonton, Alberta. She trained first as a nurse and later qualified as a yoga teacher and meditation teacher, and over some twenty years she has set up several businesses in wellness and personal growth. Through her school, Soul-Aligned Wellness, she runs two online teacher trainings: a 200-hour course for people who want to teach meditation and a 300-hour course for breathwork facilitators.\n\nBoth trainings are self-paced, with video, audio, manuals and a practicum, and they borrow from several traditions rather than teaching one fixed style, leaving room for each student to find their own way of guiding. Alongside them she coaches spiritually minded founders on vision, offers and the practical side of running a business, and hosts the podcast All The Way Alive. On Insight Timer she shares guided meditations, breathwork and yoga nidra, along with short courses on writing your own meditations, visioning and the basics of breathwork. She also makes resin and wood art by hand.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "worldwide",
+      "city": null,
+      "country": null,
+      "subjects": [
+        "meditation",
+        "breathwork",
+        "life-coaching"
+      ],
+      "website_url": "https://www.carolinestewart.ca",
+      "booking_url": "https://www.carolinestewart.ca/meditation-training",
+      "youtube_url": null,
+      "instagram_url": "https://www.instagram.com/soulalignedcaroline",
+      "facebook_url": "https://www.facebook.com/soulalignedwellness",
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "hello@carolinestewart.ca",
+      "image_urls": [
+        "https://images.squarespace-cdn.com/content/v1/56ce67dd27d4bd5555b472c4/1f180bf8-2845-4667-88ae-812d1958b8f0/Profile+Photo+-+Caroline+Stewart.png",
+        "https://images.squarespace-cdn.com/content/v1/56ce67dd27d4bd5555b472c4/1613769562237-K8GFOG4KC3LDILRLUGWG/EMI_0245-HD.jpg",
+        "https://static1.squarespace.com/static/56ce67dd27d4bd5555b472c4/t/654a5cd1750c4c7e52a86b7d/1699372241254/EMI_0119-HD.jpg?format=1500w"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "insight-timer",
+      "role": "instructor"
+    }
+  ],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "200hr Meditation Teacher Training",
+      "url": "https://www.carolinestewart.ca/meditation-training",
+      "description": "An online, self-paced certification in teaching meditation, grounded in mindfulness and drawing on several traditions. Students have two years to finish the modules, quizzes and practicum, and most take three to four months.",
+      "price": "$1,729 CAD ($1,330 USD)",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "http://static1.squarespace.com/static/56ce67dd27d4bd5555b472c4/t/633c4f1fb3c35e39f8bf2219/1648828343796/Meditation+Training+Image.png?format=1500w"
+    },
+    {
+      "title": "300hr Breathwork Facilitator Training",
+      "url": "https://www.carolinestewart.ca/breathwork-training",
+      "description": "A self-paced online certification covering breath theory, a wide range of techniques and how to design your own guided breathwork journeys. The practicum includes a thirty-day breath log and two recorded journeys, with two years of access.",
+      "price": "$2,940 CAD ($2,260 USD)",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "breathwork"
+      ],
+      "image": "http://static1.squarespace.com/static/56ce67dd27d4bd5555b472c4/t/637d874cec635f1278066a25/1609886656040/?format=1500w"
+    },
+    {
+      "title": "Soul-Aligned Business Coaching",
+      "url": "https://www.carolinestewart.ca/strategy-support",
+      "description": "One-to-one strategy work for coaches, practitioners and other heart-led business owners, covering vision, offers, courses, funnels and websites. It starts with an application for a strategy session.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "life-coaching",
+        "soul-purpose"
+      ],
+      "image": "http://static1.squarespace.com/static/56ce67dd27d4bd5555b472c4/t/65d76adaa827fe5d456a6d9d/1699458193842/EMI_9852-HD.jpg?format=1500w"
+    },
+    {
+      "title": "Create + Guide Authentic Meditations",
+      "url": "https://insighttimer.com/meditation-courses/create-guide-authentic-meditations",
+      "description": "A ten-day Insight Timer course from Caroline on creating meditations and guiding them in your own voice, drawn from her teacher-training work.",
+      "price": "Included in Member Plus ($59.99 USD a year)",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/56ce67dd27d4bd5555b472c4/1f180bf8-2845-4667-88ae-812d1958b8f0/Profile+Photo+-+Caroline+Stewart.png"
+    },
+    {
+      "title": "Breathwork Foundations",
+      "url": "https://insighttimer.com/meditation-courses/course_breathwork-foundations",
+      "description": "A ten-day Insight Timer course from Caroline that introduces the groundwork of conscious breathing practice.",
+      "price": "Included in Member Plus ($59.99 USD a year)",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "breathwork"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/56ce67dd27d4bd5555b472c4/1f180bf8-2845-4667-88ae-812d1958b8f0/Profile+Photo+-+Caroline+Stewart.png"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Caroline Stewart on Insight Timer",
+      "url": "https://insighttimer.com/carolinestewart",
+      "description": "Guided meditations, breathwork sessions and yoga nidra from Caroline, in audio and video. Free to listen in the app or on the web.",
+      "featured": true,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation",
+        "breathwork"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/56ce67dd27d4bd5555b472c4/1f180bf8-2845-4667-88ae-812d1958b8f0/Profile+Photo+-+Caroline+Stewart.png"
+    }
+  ],
+  "sprint": {
+    "hub": "insight-timer",
+    "rank": 134,
+    "insight_timer_url": "https://insighttimer.com/carolinestewart",
+    "tier_evidence": "Insight Timer 5k (profile, 1 Nov 2026); Instagram @soulalignedcaroline and Facebook soulalignedwellness could not be read without login; no YouTube channel found → ~5k readable total → local_hero",
+    "email": "yes",
+    "email_source": "https://www.carolinestewart.ca/meditation-training",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 12 source(s)",
+    "flags": [
+      "Her podcast All The Way Alive has recent episodes promoting German New Medicine (GNM) and her heart symptoms; the podcast is not listed and the bio names it only by title. A human may want to drop that mention or reconsider.",
+      "An older blog post on her site (Ancestral Nutrition) makes diet and health claims; not linked.",
+      "Her book All The Way Alive could not be found on Amazon (a.co short link blocked); left out. The 2025 Soul-Aligned Weekly Planner (amazon.ca B0DL34NKB3) is a planner, not a teaching book; left out.",
+      "Much of her site is business coaching for entrepreneurs; the listing leans on the two teacher trainings and her Insight Timer work.",
+      "Instagram and Facebook counts unreadable without login.",
+      "Email hello@carolinestewart.ca appears as a mailto link on the training pages and in the site's structured data."
+    ],
+    "left_out": [
+      "Free workshop 'Stop C*ck Blocking Your Vision' (12 Aug): date passed.",
+      "Insight Timer course Vision Your Life: kept to two Insight Timer courses.",
+      "Orgonite resin art shop: products, not teaching.",
+      "Visionary DIY business templates (Abundance Action Plan $147 USD etc.): business tools rather than spiritual teaching.",
+      "Book All The Way Alive: no verified Amazon listing."
+    ]
+  }
+}

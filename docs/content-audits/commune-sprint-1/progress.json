@@ -486,8 +486,8 @@
    ],
    "big_name": false,
    "note": "Off the Mat, Into the World co-founder with Seane Corn and Hala Khouri.",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/suzanne-sterling.json",
    "skip_reason": null
   },
   {
@@ -501,8 +501,8 @@
    ],
    "big_name": true,
    "note": "MindTravel: music plus walking meditation; check fit.",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/murray-hidary.json",
    "skip_reason": null
   },
   {
@@ -516,9 +516,9 @@
    ],
    "big_name": false,
    "note": null,
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Strict health rule: her own site sells EFT with claims that it treats anxiety and depression and clears trauma, alongside her recovery story (PTSD, addiction, autoimmune illness), and her Commune course is trauma-framed; a listing would send people to those pages even with those items left out (as with Mira Kelley). Researcher's plan kept in dropped/ for the owner."
   },
   {
    "rank": 29,
@@ -531,9 +531,9 @@
    ],
    "big_name": false,
    "note": "Grief Yoga: grief is not a medical condition, but check framing.",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Grief-led throughout: his work is Grief Yoga, and every paid course (Moving into Empowerment, Elevate chair course, Transform for breakup, divorce and betrayal), the Spark membership, the Grief Movement Training for therapists and his book Healing Through Yoga are sold on releasing the pain of grief, loss and trauma, with groups for cancer, suicide loss, Alzheimer's and addiction; his free classes and YouTube appearances are framed the same way (\"How Grief Yoga Can Heal: And Where Trauma Lives in the Body\"). Under the strict health rule (grief therapy counts as condition framing) only the six-week Wonderland series (11 Nov to 16 Dec 2026) stands on its own, which is too little for a page. His Commune classes are membership-only. Also queued as rank 129 in Insight Timer sprint 2 (he is in insight-timer-faculty.json, 335 followers); the same reason applies there. A published email exists (paul@griefyoga.com, griefyoga.com/contact) if the owner wants to reconsider."
   },
   {
    "rank": 30,
@@ -550,8 +550,8 @@
    ],
    "big_name": false,
    "note": null,
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/noah-maze.json",
    "skip_reason": null
   },
   {
@@ -565,9 +565,9 @@
    ],
    "big_name": true,
    "note": null,
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "No published email or contact form: her own site briohny.com is password-protected (401), her old domain briohnysmyth.com has lapsed to an unrelated adult-deals site, no YouTube channel or link page was found, and her Commune class (Create Your Own Adventure) is inside the membership only; her public work is now almost all on the Alo Moves fitness platform."
   },
   {
    "rank": 32,
@@ -584,9 +584,9 @@
    ],
    "big_name": false,
    "note": "Commune's founder and CEO: link with role founder; mainly a host and podcaster, so flag fit.",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Commune's co-founder and podcast host rather than a teacher, and his own writing carries partisan political commentary (Substack 'Middle Way' essays such as 'What Made America Great', Sept 2026, critical of the Trump administration and MAGA, and 'The Political Fault Line' on politics and COVID); much of the rest is health-framed (Good Stress book and summit sold on reversing his diabetes and weight loss, The Comfort Trap, GLP-1 and gut episodes). He is not anti-vaccine: his recent episodes debunk the 82% miscarriage claim and the MMR-autism link. Only Stoic Meditations and a couple of older books would stand."
   },
   {
    "rank": 33,
@@ -599,9 +599,9 @@
    ],
    "big_name": true,
    "note": "Urban Monk, Taoist qigong; much of his work is health-framed: check fit.",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Most of his work fails the health rule: his own YouTube channel is almost wholly condition-led (leaky gut, bloating, constipation, food triggers, toxic mould, EMF, inflammation and mood, blood tests), his films and Well.org summits are health documentaries (Gut Check and similar), and his newest course is sold on burning fat. The Taoist and qigong books (The Urban Monk, The Art of Stopping Time) are a small part of what he now puts out."
   },
   {
    "rank": 34,
@@ -614,10 +614,10 @@
    ],
    "big_name": true,
    "note": "Grief author; check whether it is spiritual teaching or therapy.",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "His work is almost entirely grief support, which the brief treats as condition framing: grief.com is a help-for-grief site with grief groups, professional grief training and a counsellor directory, his YouTube is grief-led interviews ('grief expert ... on loss of a parent, death of a child, infertility, addiction'), and his Commune course is framed around trauma and grief. Only two books stand clearly outside that framing (Visions, Trips, and Crowded Rooms; Life Lessons with Elisabeth Kubler-Ross), which is too thin."
   }
  ],
- "updated": "2026-10-31T22:19:59.409Z"
+ "updated": "2026-11-01T18:51:16.091Z"
 }

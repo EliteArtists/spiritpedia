@@ -1,0 +1,167 @@
+{
+  "healer": {
+    "healer_slug": "ulrika-engman",
+    "create": {
+      "name": "Ulrika Engman",
+      "bio": "Ulrika Engman grew up in Sweden around horses, boats and ski slopes, and moved to Los Angeles in 1991 to study dance and psychology. That first year in California she took her first yoga class, at Yoga Works, and the practice stayed with her. She trained with Anna Halprin at the Tamalpa Institute, graduating in 1995 in somatic movement and expressive arts, and later certified in Anusara yoga; she now teaches at the E-RYT 500 level.\n\nIn 1999 she founded Yoga Journeys, and she still leads six to eight trips a year to places such as Japan, Peru, Egypt, Croatia and the Maldives, planning the routes and teaching every yoga session herself. Her classes are flowing and creative, linking breath and music with imagery from nature and ideas from yoga philosophy, and they draw on her dance background as much as on the mat. Based in the Napa Valley, she teaches at Solage in Calistoga, holds spa yoga days in Northern California, runs a Sunday morning flow class on Zoom and returns to Esalen each spring for a renewal workshop that uses the hot springs as part of the practice.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local_online",
+      "city": "Calistoga",
+      "country": "United States",
+      "subjects": [
+        "yoga",
+        "breathwork"
+      ],
+      "website_url": "https://yoga-journeys.com/",
+      "booking_url": "https://yoga-journeys.com/journeys/",
+      "youtube_url": null,
+      "instagram_url": "https://www.instagram.com/yogajourneys/",
+      "facebook_url": "https://www.facebook.com/YogaJourneysWithUlrika",
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "Ulrika@Yoga-Journeys.com",
+      "image_urls": [
+        "https://cdn.prod.website-files.com/602d8561ae2fe6ec8347c903/60c3d642dad333366beb4264_Ulrika-Engman-RG.jpg"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "esalen",
+      "role": "instructor"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Yoga for the Here and Now with Ulrika Engman",
+      "url": "https://www.youtube.com/watch?v=POIAO6uTt0s",
+      "subjects": [
+        "yoga"
+      ],
+      "channel": "Esalen"
+    }
+  ],
+  "books": [],
+  "courses": [
+    {
+      "title": "Luminous Yoga Spring Renewal",
+      "url": "https://www.esalen.org/workshops/luminous-yoga-spring-renewal-041927",
+      "description": "A five-day residential yoga workshop at Esalen in Big Sur built around the five elements. Days mix flowing sequences, core work, meridian-based movement and long holds with skin-brushing and bathing rituals in the Esalen hot springs. At least three months of yoga practice is suggested.",
+      "price": "From $940 USD (all-inclusive)",
+      "product_type": "retreat",
+      "start_date": "2027-04-19",
+      "end_date": "2027-04-23",
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://cdn.prod.website-files.com/602d8561ae2fe6ec8347c903/6967c09c1b619269a31847a3_69670ce3ef4a313a29a44036_2024-Esalen_Yoga-Mindfulness-Movement-Surrender_Wari-Om-Yoga-Photography_7603-1500x775.jpeg"
+    },
+    {
+      "title": "Sacred Sunday Mornings Yoga Flow Online",
+      "url": "https://yoga-journeys.com/online-practice/",
+      "description": "A weekly all-levels flow class she teaches live on Zoom on Sunday mornings, Pacific time. Places are booked week by week and the joining link arrives by email.",
+      "price": "$15 USD per class",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://yoga-journeys.com/wp-content/uploads/2020/07/unnamed-1024x1024.jpg"
+    },
+    {
+      "title": "JAPAN! Sacred Pilgrimage from Kyoto to Tokyo",
+      "url": "https://yoga-journeys.com/japan-sacred-pilgrimage-from-kyoto-to-tokyo-november-6th-15th-2027/",
+      "description": "A pilgrimage-style trip she co-leads with Andy, beginning with yoga and zazen at a Zen temple in Kyoto and moving between traditional inns along the Kumano Kodo and Nakasendo trails before finishing in Tokyo. There is yoga or meditation every day and a guide throughout.",
+      "price": "$7,450 USD per person, double occupancy",
+      "product_type": "retreat",
+      "start_date": "2027-11-06",
+      "end_date": "2027-11-15",
+      "subjects": [
+        "yoga",
+        "meditation"
+      ],
+      "image": "https://yoga-journeys.com/wp-content/uploads/2025/11/japan-Kyoto-to-Tokyo-1.jpg"
+    },
+    {
+      "title": "Peru – Machu Picchu, Sacred Valley and Cusco",
+      "url": "https://yoga-journeys.com/peru-machu-picchu-sacred-valley-and-cusco-october-16th-25th-2027/",
+      "description": "Her sixth group trip to Peru: two days in Cusco, a base in the Sacred Valley with morning yoga, hikes and ceremonies led by Andean elders, then two days at Machu Picchu. A native guide, a driver and most meals are included.",
+      "price": "$5,250 USD per person, double occupancy",
+      "product_type": "retreat",
+      "start_date": "2027-10-16",
+      "end_date": "2027-10-25",
+      "subjects": [
+        "yoga",
+        "ancient-wisdom"
+      ],
+      "image": "https://yoga-journeys.com/wp-content/uploads/2024/03/peru1-scaled.jpg"
+    },
+    {
+      "title": "Croatia Private Yacht Journey",
+      "url": "https://yoga-journeys.com/private-yacht-journey-in-croatia-august-28th-sept-4th-2027/",
+      "description": "Seven nights on a private yacht sailing from Dubrovnik to Split, with morning yoga on the sundeck, swimming stops in quiet bays and evenings ashore in island villages. Cabins, breakfast and lunch, port fees and crew are included.",
+      "price": "$4,950 USD per person, double occupancy",
+      "product_type": "retreat",
+      "start_date": "2027-08-28",
+      "end_date": "2027-09-04",
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://yoga-journeys.com/wp-content/uploads/2025/03/Croatia.jpg"
+    },
+    {
+      "title": "Island Hop in the Maldives",
+      "url": "https://yoga-journeys.com/island-hop-in-the-maldives-february-7th-14th-2028/",
+      "description": "A week aboard a small expedition yacht in the Maldives for up to ten travellers, with sunrise yoga on sandbanks and on deck, snorkelling, paddle boarding and visits to local islands. Cabins, meals and crew are included; flights are extra.",
+      "price": "$5,450 USD per person, double occupancy",
+      "product_type": "retreat",
+      "start_date": "2028-02-07",
+      "end_date": "2028-02-14",
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://yoga-journeys.com/wp-content/uploads/2026/06/unnamed-5.jpg"
+    },
+    {
+      "title": "Cambodia & Vietnam",
+      "url": "https://yoga-journeys.com/cambodia-vietnam-february-20th-28th-2028/",
+      "description": "Eight nights of yoga and cultural travel, first among the temples around Angkor Wat in Cambodia, then in the countryside near Hoi An in Vietnam, with lantern ceremonies, bike rides and spa time. Hotels, breakfasts, guides and several group dinners are arranged.",
+      "price": "$5,950 USD per person, double occupancy",
+      "product_type": "retreat",
+      "start_date": "2028-02-20",
+      "end_date": "2028-02-28",
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://yoga-journeys.com/wp-content/uploads/2026/05/cambodia.jpg"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "hub": "esalen",
+    "rank": 238,
+    "hub_url": "https://www.esalen.org/faculty/ulrika-engman",
+    "tier_evidence": "Instagram @yogajourneys (profile name Ulrika Engman) 1,377 followers (og:description, 1 Nov 2026); Facebook YogaJourneysWithUlrika 552 followers (og:description, 1 Nov 2026); no YouTube channel of her own → ~1,929 total → local_hero",
+    "email": "yes",
+    "email_source": "https://yoga-journeys.com/peru-machu-picchu-sacred-valley-and-cusco-october-16th-25th-2027/",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 10 source(s)",
+    "flags": [
+      "Instagram and Facebook are under her Yoga Journeys brand, but both name her (Instagram profile 'Ulrika Engman', Facebook 'Yoga Journeys with Ulrika'), so they were counted as hers.",
+      "Her work is largely yoga travel through her company Yoga Journeys; she leads all the yoga on each trip, but a human may want to confirm the fit.",
+      "Only one photo could be confirmed (the Esalen portrait; the wide Esalen image is a crop of the same shot and her site has no headshot).",
+      "City set to Calistoga, where she teaches weekly at Solage; her bio says only that she lives in the Napa Valley.",
+      "The Esalen programme blurb mentions tapping and 'movement medicine'; no condition is named, so it was kept."
+    ],
+    "left_out": [
+      "Sold-out journeys (Japan Nov 2026, Costa Rica Jan 2027, Egypt Mar 2027 x2, Botswana May and June 2027): waitlist only.",
+      "Sardinia, Stockholm and other 2026 journeys that have already run.",
+      "Moorea, Tahiti (Nov 2027): only seen as a post title, not opened, so left out to stay within ten verified offerings.",
+      "Spa Yoga Days at Solage and Redwoods Yoga Days: dates on hold or to be announced.",
+      "Wednesday classes at Solage: open to resort members and guests only."
+    ]
+  },
+  "images_final": true
+}
