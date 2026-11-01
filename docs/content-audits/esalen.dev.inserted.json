@@ -1,0 +1,76 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 455,
+    "healer_slug": "esalen"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "d4a6d7ea-8247-4c98-87bf-fdc63135d11d",
+      "slug": "esalen-workshops",
+      "title": "Esalen Workshops"
+    },
+    {
+      "table": "courses",
+      "id": "51cb1b00-2115-4357-9384-ae90d3c00d9b",
+      "slug": "self-guided-explorations",
+      "title": "Self-Guided Explorations"
+    },
+    {
+      "table": "courses",
+      "id": "4388cd29-bcba-487a-8f60-853341259a3f",
+      "slug": "esalen-massage-school",
+      "title": "Esalen Massage School"
+    },
+    {
+      "table": "courses",
+      "id": "6d85c185-4dc6-4e8f-bf5f-35f0d2094075",
+      "slug": "work-scholar-program",
+      "title": "Work Scholar Program"
+    },
+    {
+      "table": "courses",
+      "id": "3c8eb0c7-f696-4c31-ad69-bcaba51da468",
+      "slug": "self-guided-explorations-week-of-november-9-13-2026",
+      "title": "Self-Guided Explorations: Week of November 9–13, 2026"
+    },
+    {
+      "table": "courses",
+      "id": "d0e2baee-c541-4482-a403-15232af54abe",
+      "slug": "self-guided-explorations-week-of-november-23-27-2026",
+      "title": "Self-Guided Explorations: Week of November 23–27, 2026"
+    },
+    {
+      "table": "courses",
+      "id": "1ce96fd8-ffc5-4683-bf9b-5b42e8297075",
+      "slug": "self-guided-explorations-week-of-december-14-18-2026",
+      "title": "Self-Guided Explorations: Week of December 14–18, 2026"
+    },
+    {
+      "table": "courses",
+      "id": "8d265fe9-8af8-428b-b984-019aa4c03bb4",
+      "slug": "self-guided-explorations-week-of-january-4-8-2027",
+      "title": "Self-Guided Explorations: Week of January 4–8, 2027"
+    },
+    {
+      "table": "free_resources",
+      "id": "79ffdc73-f87b-4fe1-a284-9b97f48dd87c",
+      "slug": "voices-of-esalen",
+      "title": "Voices of Esalen"
+    },
+    {
+      "table": "free_resources",
+      "id": "3cc05f79-ad50-40dc-87d6-6ec374526642",
+      "slug": "esalen-on-youtube",
+      "title": "Esalen on YouTube"
+    },
+    {
+      "table": "free_resources",
+      "id": "08e46f8a-b1a2-4a35-a5da-589b02fa008b",
+      "slug": "ctr-journal",
+      "title": "CTR Journal"
+    }
+  ],
+  "at": "2026-11-01T13:51:00.920Z"
+}

@@ -1,0 +1,1375 @@
+{
+ "hub": "esalen",
+ "source": "esalen.org sitemap (203 current workshop pages under /workshops/, 159 faculty pages), read 1 Nov 2026",
+ "how_ranked": "Current faculty = a programme starting after 3 Nov 2026. Ranked by claim likelihood: published email (then contact form, then website only), in-person words on their site, then number of upcoming programmes at the hub (lead scan of their own site, 1 Nov 2026). Followers are read during research.",
+ "on_spiritpedia_current": [
+  "brenda-rose",
+  "cassandra-vieten",
+  "janet-stone",
+  "justin-michael-williams",
+  "ken-cohen",
+  "rod-stryker",
+  "shamini-jain",
+  "the-brothers-koren"
+ ],
+ "past_faculty_on_spiritpedia_not_linked": [
+  "rupert-spira",
+  "jeff-foster",
+  "lee-holden",
+  "paul-stamets",
+  "jonathan-goldman",
+  "stanislav-grof",
+  "roger-jahnke",
+  "miranda-macpherson",
+  "yuval-ron",
+  "manoj-dias",
+  "robert-moss",
+  "julie-murphy",
+  "silvia-nakkach",
+  "richard-tarnas",
+  "katherine-woodward-thomas",
+  "robert-peng",
+  "jillian-pransky",
+  "schuyler-grant",
+  "llyn-roberts",
+  "tracee-stanley",
+  "shelly-tygielski",
+  "caley-alyssa"
+ ],
+ "excluded": {
+  "aimee-breslow": "outside the directory's scope or too little public spiritual teaching to list",
+  "andrea-juhan": "mainly psychotherapy or clinical training (not spiritual teaching)",
+  "ann-randolph": "writing, arts, music or crafts rather than spiritual teaching",
+  "anne-van-de-water": "leadership, business or academic speaker",
+  "anthony-veneziale": "leadership, business or academic speaker",
+  "ariel-johnson": "condition-led (health rule)",
+  "ayana-young": "condition-led (health rule)",
+  "barbara-holifield": "mainly psychotherapy or clinical training (not spiritual teaching)",
+  "barry-and-joyce-vissell": "mainly psychotherapy or clinical training (not spiritual teaching)",
+  "benoit-denizet-lewis": "condition-led (health rule)",
+  "betty-martin": "mainly psychotherapy or clinical training (not spiritual teaching)",
+  "brandt-miller": "writing, arts, music or crafts rather than spiritual teaching",
+  "bristol-baughan": "leadership, business or academic speaker",
+  "bronte-velez": "condition-led (health rule)",
+  "char-pias": "bodywork or massage training",
+  "christian-dimarco": "writing, arts, music or crafts rather than spiritual teaching",
+  "dacher-keltner": "hub staff or yoga-therapy training faculty without public teaching of their own",
+  "dana-albany": "writing, arts, music or crafts rather than spiritual teaching",
+  "daniela-urbassek": "bodywork or massage training",
+  "danielle-rubio": "outdoor skills or nature education",
+  "daria-halprin": "writing, arts, music or crafts rather than spiritual teaching",
+  "deborah-anne-medow": "bodywork or massage training",
+  "diane-hennacy": "condition-led (health rule)",
+  "didier-sylvain": "writing, arts, music or crafts rather than spiritual teaching",
+  "dr-deborah-egerton": "mainly psychotherapy or clinical training (not spiritual teaching)",
+  "dwight-pargee": "condition-led (health rule)",
+  "eileen-mckusick": "leadership, business or academic speaker",
+  "elissa-epel": "condition-led (health rule)",
+  "erin-gafill": "writing, arts, music or crafts rather than spiritual teaching",
+  "eve-ekman": "writing, arts, music or crafts rather than spiritual teaching",
+  "finn-deerhart": "outside the directory's scope or too little public spiritual teaching to list",
+  "fletcher-tucker": "writing, arts, music or crafts rather than spiritual teaching",
+  "guillermo-martinez": "writing, arts, music or crafts rather than spiritual teaching",
+  "hazel-grace-yates": "leadership, business or academic speaker",
+  "janis-newman": "writing, arts, music or crafts rather than spiritual teaching",
+  "janne-larsen": "writing, arts, music or crafts rather than spiritual teaching",
+  "jeanine-m-canty": "leadership, business or academic speaker",
+  "jenny-pareno": "mainly psychotherapy or clinical training (not spiritual teaching)",
+  "jessica-fagan": "bodywork or massage training",
+  "jet-eveleth": "writing, arts, music or crafts rather than spiritual teaching",
+  "johanna-holloman": "mainly psychotherapy or clinical training (not spiritual teaching)",
+  "john-w-price": "mainly psychotherapy or clinical training (not spiritual teaching)",
+  "judy-greenman": "bodywork or massage training",
+  "jun-wang": "hub staff or yoga-therapy training faculty without public teaching of their own",
+  "kate-flore": "bodywork or massage training",
+  "kayenta-kelly-magleby": "writing, arts, music or crafts rather than spiritual teaching",
+  "kim-blue-falvey": "condition-led (health rule)",
+  "kimberly-lee": "writing, arts, music or crafts rather than spiritual teaching",
+  "kristin-arzt": "writing, arts, music or crafts rather than spiritual teaching",
+  "laverne-mcleod": "mainly psychotherapy or clinical training (not spiritual teaching)",
+  "lindsay-branham": "mainly psychotherapy or clinical training (not spiritual teaching)",
+  "lori-schwanbeck": "mainly psychotherapy or clinical training (not spiritual teaching)",
+  "mac-murphy": "bodywork or massage training",
+  "marcia-baczynski": "mainly psychotherapy or clinical training (not spiritual teaching)",
+  "mark-miller": "leadership, business or academic speaker",
+  "mark-nicolson": "leadership, business or academic speaker",
+  "melanie-demore": "writing, arts, music or crafts rather than spiritual teaching",
+  "melissa-krikorian": "condition-led (health rule)",
+  "melissa-petro": "writing, arts, music or crafts rather than spiritual teaching",
+  "michael-flash-hopkins": "writing, arts, music or crafts rather than spiritual teaching",
+  "miyu-tamamura": "mainly psychotherapy or clinical training (not spiritual teaching)",
+  "monica-lesslie": "condition-led (health rule)",
+  "nancy-lunney-wheeler": "mainly psychotherapy or clinical training (not spiritual teaching)",
+  "nick-ayers": "bodywork or massage training",
+  "noel-vietor": "outdoor skills or nature education",
+  "pam-kramer": "leadership, business or academic speaker",
+  "pamela-hayes-malkoff": "condition-led (health rule)",
+  "perry-holloman": "condition-led (health rule)",
+  "ramzi-fawaz": "writing, arts, music or crafts rather than spiritual teaching",
+  "rob-wilks": "bodywork or massage training",
+  "robert-lustig": "condition-led (health rule)",
+  "robert-walter": "writing, arts, music or crafts rather than spiritual teaching",
+  "robin-carhart-harris-ph-d": "leadership, business or academic speaker",
+  "sadia-bruce": "hub staff or yoga-therapy training faculty without public teaching of their own",
+  "sanga-of-the-valley": "writing, arts, music or crafts rather than spiritual teaching",
+  "sarah-federman": "leadership, business or academic speaker",
+  "seema-christie": "bodywork or massage training",
+  "shauna-shapiro": "mainly psychotherapy or clinical training (not spiritual teaching)",
+  "shiloh-burton": "writing, arts, music or crafts rather than spiritual teaching",
+  "siegmar-gerken": "outside the directory's scope or too little public spiritual teaching to list",
+  "stacie-blanke": "leadership, business or academic speaker",
+  "steven-harper": "outdoor skills or nature education",
+  "tanya-luhrmann": "leadership, business or academic speaker",
+  "teachers-in-residence": "outside the directory's scope or too little public spiritual teaching to list",
+  "tenzin-seldon": "outside the directory's scope or too little public spiritual teaching to list",
+  "thomas-prietto": "bodywork or massage training",
+  "tom-birmingham": "writing, arts, music or crafts rather than spiritual teaching",
+  "tony-holmes": "outside the directory's scope or too little public spiritual teaching to list",
+  "tracy-lease": "mainly psychotherapy or clinical training (not spiritual teaching)",
+  "vicki-topp": "mainly psychotherapy or clinical training (not spiritual teaching)",
+  "victor-warring": "leadership, business or academic speaker",
+  "warren-farrell": "mainly psychotherapy or clinical training (not spiritual teaching)",
+  "yemi-akinyemi-dele": "leadership, business or academic speaker"
+ },
+ "ranked": [
+  {
+   "rank": 201,
+   "name": "Douglas Drummond",
+   "hub": "esalen",
+   "hub_url": "https://www.esalen.org/faculty/douglas-drummond",
+   "also": [],
+   "website": "https://www.weavingwaters.com/",
+   "hub_programmes": [
+    [
+     "Moving Men: An Embodied Inquiry",
+     "2026-11-09",
+     "2026-11-13",
+     "https://www.esalen.org/workshops/moving-men-an-embodied-inquiry-110926"
+    ],
+    [
+     "Gateways: A 5Rhythms® Movement & Mindfulness Retreat",
+     null,
+     null,
+     "https://www.esalen.org/workshops/gateways-a-5rhythms-r-movement-mindfulness-retreat-122826"
+    ],
+    [
+     "Healing Waters: The Enneagram, 5Rhythms® & the Art of Human Diplomacy",
+     "2027-03-22",
+     "2027-03-26",
+     "https://www.esalen.org/workshops/healing-waters-the-enneagram-5rhythms-r-amp-the-art-of-human-diplomacy-032227"
+    ]
+   ],
+   "emails_seen": [
+    "info@weavingwaters.com"
+   ],
+   "contact_form_seen": true,
+   "in_person_words": true,
+   "hub_bio_extract": "Douglas Drummond www.weavingwaters.com Douglas Drummond is a facilitator, mediator, 5Rhythms® teacher, and embodiment practitioner whose work explores how people can create more restorative, resilient, and relational ways of working together. Certified to teach 5Rhythms® by Gabrielle Roth, he has spent more than 15 years facilitating embodied learning experiences that integrate somatic practice, s"
+  },
+  {
+   "rank": 202,
+   "name": "Chandra Easton",
+   "hub": "esalen",
+   "hub_url": "https://www.esalen.org/faculty/chandra-easton",
+   "also": [],
+   "website": "http://www.chandraeaston.com",
+   "hub_programmes": [
+    [
+     "Wintering Within: Meditation, Music, and Gentle Yoga for the New Year",
+     null,
+     null,
+     "https://www.esalen.org/workshops/wintering-within-meditation-music-and-gentle-yoga-for-the-new-year-122826"
+    ],
+    [
+     "Rewilding Consciousness: Embodied Wisdom and the Ecology of Awakening",
+     "2027-04-12",
+     "2027-04-16",
+     "https://www.esalen.org/workshops/rewilding-consciousness-embodied-wisdom-and-the-ecology-of-awakening-041227"
+    ]
+   ],
+   "emails_seen": [
+    "chandra.easton@protonmail.com"
+   ],
+   "contact_form_seen": true,
+   "in_person_words": true,
+   "hub_bio_extract": "Chandra Easton chandraeaston.com Chandra Easton is a Buddhist teacher, devotional music artist, author, and translator of Tibetan Buddhist texts who has taught Buddhism and Hatha Yoga since 2001. She is the author of Embodying Tara: Twenty-One Manifestations to Awaken Your Innate Wisdom (Shambhala, 2023), which bridges scholarship, devotion, and the living wisdom of the sacred feminine, and co-tra"
+  },
+  {
+   "rank": 203,
+   "name": "Chungliang Al Huang",
+   "hub": "esalen",
+   "hub_url": "https://www.esalen.org/faculty/chungliang-al-huang",
+   "also": [],
+   "website": "https://livingtao.org/",
+   "hub_programmes": [
+    [
+     "Creative Tai Ji Experience: Change, Transformation, Metamorphosis",
+     "2026-11-30",
+     "2026-12-04",
+     "https://www.esalen.org/workshops/creative-tai-ji-experience-change-transformation-metamorphosis-113026"
+    ],
+    [
+     "The Essential Qigong of China: The Energy, the Movement, and the Stories",
+     "2026-11-27",
+     "2026-11-29",
+     "https://www.esalen.org/workshops/the-essential-qigong-of-china-the-energy-the-movement-and-the-stories-112726"
+    ]
+   ],
+   "emails_seen": [
+    "info@livingtao.org"
+   ],
+   "contact_form_seen": false,
+   "in_person_words": true,
+   "hub_bio_extract": "Chungliang Al Huang livingtao.org Chungliang \"Al\" Huang teaches Tai Ji philosophy, East/West synthesis, and the art of movement meditation. He is the founder and president of the Living Tao Foundation and director of Lan Ting Institute in the Sacred Mountains of China. His best-selling books include Embrace Tiger , Return to Mountain , and Tao: The Watercourse Way , co-authored with Alan Watts. Fe"
+  },
+  {
+   "rank": 204,
+   "name": "Heidi Rose Robbins",
+   "hub": "esalen",
+   "hub_url": "https://www.esalen.org/faculty/heidi-rose-robbins",
+   "also": [],
+   "website": "https://www.heidirose.com/",
+   "hub_programmes": [
+    [
+     "Poetry and the Page: Writing as a Healing Path",
+     "2027-05-17",
+     "2027-05-21",
+     "https://www.esalen.org/workshops/poetry-and-the-page-writing-as-a-healing-path-051727"
+    ],
+    [
+     "Planets and Poetry: Embodying Astrology through the Expressive Arts",
+     "2027-02-08",
+     "2027-02-12",
+     "https://www.esalen.org/workshops/planets-and-poetry-embodying-astrology-through-the-expressive-arts-020827"
+    ]
+   ],
+   "emails_seen": [
+    "assistant@heidirose.com",
+    "heidi@heidirose.com"
+   ],
+   "contact_form_seen": true,
+   "in_person_words": true,
+   "hub_bio_extract": "Heidi Rose Robbins heidirose.com Heidi Rose Robbins has been a professional astrologer for 25 years, helping thousands of clients all over the globe live with more authenticity and clarity. She hosts two podcasts, The Radiance Project , featuring poetry, astrology, and good company, and Chart Your Career with co-host Ellen Fondiler. Twice a year, she leads Radiant Life Retreats for people wishing "
+  },
+  {
+   "rank": 205,
+   "name": "East Forest",
+   "hub": "esalen",
+   "hub_url": "https://www.esalen.org/faculty/east-forest",
+   "also": [],
+   "website": "https://www.eastforest.org",
+   "hub_programmes": [
+    [
+     "How Psychedelics Work: A Journey Into Mind, Meaning, and Healing",
+     "2027-04-09",
+     "2027-04-12",
+     "https://www.esalen.org/workshops/how-psychedelics-work-a-journey-into-mind-meaning-and-healing-040927"
+    ],
+    [
+     "Journey Space: Music, Movement and Ceremony",
+     "2026-12-18",
+     "2026-12-21",
+     "https://www.esalen.org/workshops/journey-space-music-movement-and-ceremony-121826"
+    ]
+   ],
+   "emails_seen": [
+    "josh@regaliasdigitales.com",
+    "kai.lehmann@cabinartists.com",
+    "susie@groundcontroltouring.com",
+    "team@eastforest.org",
+    "team@musicformushrooms.com"
+   ],
+   "contact_form_seen": true,
+   "in_person_words": true,
+   "hub_bio_extract": "East Forest eastforest.org East Forest is a multidisciplinary artist, producer, and ceremony guide. His work explores living authentically within a modern context by weaving together elements of electro-acoustic live music, nature, technology, brain science, and guided meditation. His \"ceremony-concerts\" utilize a skilled mostly instrumental repertoire to create space for an emotive inner journey;"
+  },
+  {
+   "rank": 206,
+   "name": "Cristi Christensen",
+   "hub": "esalen",
+   "hub_url": "https://www.esalen.org/faculty/cristi-christensen",
+   "also": [],
+   "website": "https://www.cristichristensen.com/",
+   "hub_programmes": [
+    [
+     "The Seven Flames: Winter Solstice Ritual Retreat",
+     "2026-12-14",
+     "2026-12-18",
+     "https://www.esalen.org/workshops/the-seven-flames-winter-solstice-ritual-retreat-121426"
+    ]
+   ],
+   "emails_seen": [
+    "ashley@shpny.com"
+   ],
+   "contact_form_seen": true,
+   "in_person_words": true,
+   "hub_bio_extract": "Cristi Christensen www.cristichristensen.com Cristi Christensen is an author, global embodiment, and transformational leader, on a mission to shake up the planet. A former elite-level gymnast and platform diver, Cristi trained with the US Olympic Diving team as a young adult. After a devastating injury ended her Olympic pursuit, she faced another formidable challenge: a battle with advanced-stage "
+  },
+  {
+   "rank": 207,
+   "name": "Deva Munay",
+   "hub": "esalen",
+   "hub_url": "https://www.esalen.org/faculty/deva-munay",
+   "also": [],
+   "website": "https://sacredsound.love/",
+   "hub_programmes": [
+    [
+     "The Resonant Heart: Sound Journeys for Love and Renewal",
+     "2027-02-01",
+     "2027-02-05",
+     "https://www.esalen.org/workshops/the-resonant-heart-sound-journeys-for-love-and-renewal-020127"
+    ]
+   ],
+   "emails_seen": [
+    "deva@sacredsound.love",
+    "devamunay@me.com",
+    "support@sacredsound.love"
+   ],
+   "contact_form_seen": true,
+   "in_person_words": true,
+   "hub_bio_extract": "Deva Munay SacredSound.Love Deva Munay, founder of Sacred Sound & Wonder , brings three decades of spiritual practice, study, and healing work to her transformative sound experiences. Her journey began in 1996 with a pilgrimage through Thailand, India, and Nepal, where she immersed herself in meditation and the Dalai Lama’s teachings, and received her first sound healing instruments. This awakened"
+  },
+  {
+   "rank": 208,
+   "name": "Hannah Muse",
+   "hub": "esalen",
+   "hub_url": "https://www.esalen.org/faculty/hannah-muse",
+   "also": [],
+   "website": "https://hannahmuse.com/",
+   "hub_programmes": [
+    [
+     "Mythology, Yoga, and Falling in Love with Existence at the Edge of the World",
+     "2027-02-01",
+     "2027-02-05",
+     "https://www.esalen.org/workshops/mythology-yoga-and-falling-in-love-with-existence-at-the-edge-of-the-world-020127"
+    ]
+   ],
+   "emails_seen": [
+    "hannahmuseyoga@gmail.com"
+   ],
+   "contact_form_seen": true,
+   "in_person_words": true,
+   "hub_bio_extract": "Hannah Muse hannahmuse.com Deemed the “midwife of possibility,” Hannah is an internationally-celebrated teacher of mindfulness, mysticism, and yoga. A mother and devoted student of Buddhism, neuropsychology, and mythology, Hannah is known for weaving complex teachings into accessible, heart-opening, life-changing experiences. Over the past ten years, Hannah has trained hundreds of yoga and mindful"
+  },
+  {
+   "rank": 209,
+   "name": "James Baraz",
+   "hub": "esalen",
+   "hub_url": "https://www.esalen.org/faculty/james-baraz",
+   "also": [],
+   "website": "http://www.insightberkeley.org/",
+   "hub_programmes": [
+    [
+     "Embodying Joy: Relaxing the Body Into Being",
+     "2027-01-15",
+     "2027-01-17",
+     "https://www.esalen.org/workshops/embodying-joy-relaxing-the-body-into-being-011527"
+    ]
+   ],
+   "emails_seen": [
+    "insightberkeley1@gmail.com"
+   ],
+   "contact_form_seen": true,
+   "in_person_words": true,
+   "hub_bio_extract": "James Baraz James Baraz has been teaching mindfulness meditation classes and retreats in the US and internationally since 1978. He is a founding teacher of Spirit Rock Meditation Center in Woodacre, California. James has been teaching his popular “Awakening Joy” online course since 2003. James is a guiding teacher of Insight Meditation Community of Berkeley (IMCB) where he leads a weekly sitting g"
+  },
+  {
+   "rank": 210,
+   "name": "Sianna Sherman",
+   "hub": "esalen",
+   "hub_url": "https://www.esalen.org/faculty/sianna-sherman",
+   "also": [],
+   "website": "https://www.siannasherman.com/",
+   "hub_programmes": [
+    [
+     "Mythic Yoga Flow®: A Full Moon Retreat with the Stories and Practices of Yoga",
+     "2027-05-17",
+     "2027-05-21",
+     "https://www.esalen.org/workshops/mythic-yoga-flow-r-a-full-moon-retreat-with-the-stories-and-practices-of-yoga-051727"
+    ]
+   ],
+   "emails_seen": [
+    "admin@siannasherman.com"
+   ],
+   "contact_form_seen": true,
+   "in_person_words": true,
+   "hub_bio_extract": "Sianna Sherman SiannaSherman.com Sianna Sherman (she/her) is an international yoga and meditation teacher, storyteller, and shadow work guide committed to being Love-In-Action. For three decades, she has been training tens of thousands of students and yoga teachers from around the globe. As the visionary of the Rasa Yoga Collective, Mythic Yoga Flow®, and RITUAL, Sianna shares her voice in the way"
+  },
+  {
+   "rank": 211,
+   "name": "Tenzin Wangyal Rinpoche",
+   "hub": "esalen",
+   "hub_url": "https://www.esalen.org/faculty/tenzin-wangyal-rinpoche",
+   "also": [],
+   "website": "https://www.ligmincha.org/",
+   "hub_programmes": [
+    [
+     "Tibetan Dream Yoga",
+     "2027-03-29",
+     "2027-04-02",
+     "https://www.esalen.org/workshops/tibetan-dream-yoga-032927"
+    ]
+   ],
+   "emails_seen": [
+    "conduct@ligmincha.org",
+    "frankjeri@hotmail.com",
+    "info@ligmincha.org",
+    "miragorrich@gmail.com",
+    "r.patzig@ligmincha.org?subject=Question%20About%20Annual%20Reports",
+    "suedavisdill@ligmincha.org"
+   ],
+   "contact_form_seen": true,
+   "in_person_words": true,
+   "hub_bio_extract": "Tenzin Wangyal Rinpoche Tenzin Wangyal Rinpoche is one of very few masters of the Tibetan Bön Dzogchen tradition living in the West. He founded Ligmincha International, and is known for his ability to make Tibetan practices easily accessible to all students. Rinpoche is the author of nine books, including Wonders of the Natural Mind and the Tibetan Yogas of Dream and Sleep . Featured Content No it"
+  },
+  {
+   "rank": 212,
+   "name": "Marysia Miernowska",
+   "hub": "esalen",
+   "hub_url": "https://www.esalen.org/faculty/marysia-miernowska",
+   "also": [],
+   "website": "http://www.schoolofthesacredwild.com",
+   "hub_programmes": [
+    [
+     "Awakening Spring Within: Somatic Herbalism, Plant Spirit Meditation, and Nature Connection",
+     "2027-03-19",
+     "2027-03-21",
+     "https://www.esalen.org/workshops/awakening-spring-within-somatic-herbalism-plant-spirit-meditation-and-nature-connection-031927"
+    ]
+   ],
+   "emails_seen": [
+    "hello@oracleofdesign.com",
+    "info@schoolofthesacredwild.com",
+    "schoolofthesacredwild@gmail.com"
+   ],
+   "contact_form_seen": true,
+   "in_person_words": true,
+   "hub_bio_extract": "Marysia Miernowska www.schoolofthesacredwild.com Marysia Miernowska is an herbalist, teacher, author, earth activist, gardener, and green witch rooted in the Wise Woman tradition of healing. Her work and devotional practices are centered around the mission of supporting a deepening of the love and regenerative relationship between the Earth and people for the mutual healing of both human and plant"
+  },
+  {
+   "rank": 213,
+   "name": "Shannon Algeo",
+   "hub": "esalen",
+   "hub_url": "https://www.esalen.org/faculty/shannon-algeo",
+   "also": [],
+   "website": "https://www.shannonalgeo.com/",
+   "hub_programmes": [
+    [
+     "The Power in Your Hands: Turning from Screens to Souls",
+     "2026-12-14",
+     "2026-12-18",
+     "https://www.esalen.org/workshops/the-power-in-your-hands-turning-from-screens-to-souls-121426"
+    ]
+   ],
+   "emails_seen": [
+    "booksales@augsburgfortress.org"
+   ],
+   "contact_form_seen": true,
+   "in_person_words": true,
+   "hub_bio_extract": "Shannon Algeo www.shannonalgeo.com Shannon Algeo is an American and Irish psychotherapist, researcher, poet, Yoga Nidra teacher, and co-founder of We Human and the We Human Podcast . Shannon is the author of the books The Power in Your Hands: Liberate Yourself From Attachment to Technology and Trust Your Truth . He is on faculty at Esalen Institute and the Kripalu Center, and leads digital liberat"
+  },
+  {
+   "rank": 214,
+   "name": "Dorothy Charles",
+   "hub": "esalen",
+   "hub_url": "https://www.esalen.org/faculty/dorothy-charles",
+   "also": [],
+   "website": "https://www.dorothycharles.com",
+   "hub_programmes": [
+    [
+     "Relational Gestalt Practice: Presence, Contact and Communication",
+     "2027-05-10",
+     "2027-05-14",
+     "https://www.esalen.org/workshops/relational-gestalt-practice-presence-contact-and-communication-051027"
+    ],
+    [
+     "Relational Gestalt Practice: The Transformative Power of Emotion",
+     "2027-02-22",
+     "2027-02-26",
+     "https://www.esalen.org/workshops/relational-gestalt-practice-the-transformative-power-of-emotion-022227"
+    ],
+    [
+     "Relational Gestalt Practice: Open Seat Intensive",
+     "2026-11-27",
+     "2026-12-04",
+     "https://www.esalen.org/workshops/relational-gestalt-practice-open-seat-intensive-112726"
+    ]
+   ],
+   "emails_seen": [
+    "dorothy@dorothycharles.com",
+    "registration@dorothycharles.com"
+   ],
+   "contact_form_seen": true,
+   "in_person_words": false,
+   "hub_bio_extract": "Dorothy Charles www.dorothycharles.com Dorothy Charles has been a student and teacher at Esalen since 1982. A student of Esalen co-founder Richard Price, she combines Esalen body-centered Gestalt with relational Gestalt theory, and leads workshops in Asia, Europe, and the U.S. Featured Content Relational Gestalt Practice: A Deeper Look with Dorothy Charles Relational Gestalt Practice: A Deeper Loo"
+  },
+  {
+   "rank": 215,
+   "name": "Paul Heussenstamm",
+   "hub": "esalen",
+   "hub_url": "https://www.esalen.org/faculty/paul-heussenstamm",
+   "also": [],
+   "website": "https://mandalas.com/",
+   "hub_programmes": [
+    [
+     "Entering Your Creative Universe",
+     "2027-01-18",
+     "2027-01-22",
+     "https://www.esalen.org/workshops/entering-your-creative-universe-011827"
+    ]
+   ],
+   "emails_seen": [
+    "heartcenter@mandalas.com",
+    "heartcentermandalas@gmail.com"
+   ],
+   "contact_form_seen": true,
+   "in_person_words": true,
+   "hub_bio_extract": "Paul Heussenstamm mandalas.com Paul Heussenstamm is a painter and teacher residing in Laguna Beach, California. He began painting full-time at the age of 36 as he discovered his love for mandalas. He has since traveled worldwide conducting \"Art as a Spiritual Path\" workshops. The mandala has become his signature motif reflecting mystical symbolism, wholeness, and unified energy. His vibrant sacred"
+  },
+  {
+   "rank": 216,
+   "name": "Stacia Butterfield",
+   "hub": "esalen",
+   "hub_url": "https://www.esalen.org/faculty/stacia-butterfield",
+   "also": [],
+   "website": "https://staciabutterfield.com/",
+   "hub_programmes": [
+    [
+     "Holotropic Breathwork®: Expanded States of Consciousness",
+     "2026-11-16",
+     "2026-11-20",
+     "https://www.esalen.org/workshops/holotropic-breathwork-r-expanded-states-of-consciousness-111626"
+    ],
+    [
+     "Holotropic Breathwork®: Expanded States of Consciousness",
+     "2027-02-22",
+     "2027-02-26",
+     "https://www.esalen.org/workshops/holotropic-breathwork-r-expanded-states-of-consciousness-022227"
+    ]
+   ],
+   "emails_seen": [
+    "connect@staciabutterfield.com"
+   ],
+   "contact_form_seen": true,
+   "in_person_words": false,
+   "hub_bio_extract": "Stacia Butterfield staciabutterfield.com Stacia Butterfield is a certified Holotropic Breathwork® practitioner with 15 years of dedicated service and close work with Stanislav Grof, the originator of Holotropic Breathwork and a pioneering psychedelic researcher. She has also been a senior staff member coordinating, facilitating, and teaching residential Holotropic Breathwork® training retreats acr"
+  },
+  {
+   "rank": 217,
+   "name": "Masood Ali Khan",
+   "hub": "esalen",
+   "hub_url": "https://www.esalen.org/faculty/masood-ali-khan",
+   "also": [],
+   "website": "https://www.masoodalikhan.com/",
+   "hub_programmes": [
+    [
+     "Mythic Yoga Flow®: A Full Moon Retreat with the Stories and Practices of Yoga",
+     "2027-05-17",
+     "2027-05-21",
+     "https://www.esalen.org/workshops/mythic-yoga-flow-r-a-full-moon-retreat-with-the-stories-and-practices-of-yoga-051727"
+    ],
+    [
+     "Rasa Heart Warrior: Embodiment and Reset for Men",
+     "2027-04-23",
+     "2027-04-25",
+     "https://www.esalen.org/workshops/rasa-heart-warrior-embodiment-and-reset-for-men-042327"
+    ]
+   ],
+   "emails_seen": [
+    "therasaheartwarrior@gmail.com"
+   ],
+   "contact_form_seen": true,
+   "in_person_words": false,
+   "hub_bio_extract": "Masood Ali Khan masoodalikhan.com Masood Ali Khan is the founder of the Rasa Heart Warrior Men's Group and has over 30 years of experience in teaching meditation and universal energy wellness techniques. He previously served as the head of the faculty for M.E.L at the Open International University for Complementary Medicine in Sri Lanka while studying Traditional Chinese Medicine. As an eclectic m"
+  },
+  {
+   "rank": 218,
+   "name": "Sarana Miller",
+   "hub": "esalen",
+   "hub_url": "https://www.esalen.org/faculty/sarana-miller",
+   "also": [],
+   "website": "https://www.saranayoga.com/",
+   "hub_programmes": [
+    [
+     "Spring Equinox Yoga Retreat",
+     "2027-03-26",
+     "2027-03-28",
+     "https://www.esalen.org/workshops/spring-equinox-yoga-retreat-032627"
+    ],
+    [
+     "Aligning with Nature: A Winter Solstice Yoga Retreat",
+     "2026-12-11",
+     "2026-12-13",
+     "https://www.esalen.org/workshops/aligning-with-nature-a-winter-solstice-yoga-retreat-121126"
+    ]
+   ],
+   "emails_seen": [
+    "retreat@saranayoga.com"
+   ],
+   "contact_form_seen": true,
+   "in_person_words": false,
+   "hub_bio_extract": "Sarana Miller www.saranayoga.com Sarana Miller has been a faculty instructor at Yoga Journal and leads annual retreats at Esalen, Wilbur Hot Springs, Mexico, and Alaska. Trained in the Iyengar and Forrest Yoga traditions, she has built her life around sharing the benefits of the practice of yoga. Featured Content No items found. Upcoming Workshops Upcoming Workshops Count: On-Campus Workshop Decem"
+  },
+  {
+   "rank": 219,
+   "name": "Aja Daashuur",
+   "hub": "esalen",
+   "hub_url": "https://www.esalen.org/faculty/aja-daashuur",
+   "also": [],
+   "website": "https://www.thespiritguidecoach.com/",
+   "hub_programmes": [
+    [
+     "The Spirit Bridge: A Portal Between Realms",
+     "2027-05-24",
+     "2027-05-28",
+     "https://www.esalen.org/workshops/the-spirit-bridge-a-portal-between-realms-052427"
+    ]
+   ],
+   "emails_seen": [
+    "info@thespiritguidecoach.com",
+    "information@thespiritguidecoach.com"
+   ],
+   "contact_form_seen": true,
+   "in_person_words": false,
+   "hub_bio_extract": "Aja Daashuur thespiritguidecoach.com AJA Daashuur is a revered trance medium and wellness leader, certified life coach, past life regression integrator, and the visionary founder of Spirit House Collective, a healing space in Los Angeles dedicated to offering healing and spiritual modalities. From a young age, AJA was attuned to the whispers of the beyond, which led her to live in devotion to her "
+  },
+  {
+   "rank": 220,
+   "name": "Simon Cox",
+   "hub": "esalen",
+   "hub_url": "https://www.esalen.org/faculty/simon-cox",
+   "also": [],
+   "website": "https://okanaganvalleywudang.com",
+   "hub_programmes": [
+    [
+     "Sleep Alchemy: Secrets of Daoist Sleep Practices for Inner Peace and Renewal",
+     "2027-04-26",
+     "2027-04-30",
+     "https://www.esalen.org/workshops/sleep-alchemy-secrets-of-daoist-sleep-practices-for-inner-peace-and-renewal-042627"
+    ]
+   ],
+   "emails_seen": [
+    "okanaganvalleywudang@gmail.com"
+   ],
+   "contact_form_seen": true,
+   "in_person_words": false,
+   "hub_bio_extract": "Simon Cox okanaganvalleywudang.com Simon Cox is a martial artist, scholar, and teacher who spent six years training at Wudang Mountain, the spiritual home of Daoist culture and internal arts. Under Master Yuan Xiugang 袁修刚, he immersed himself in the Sanfeng lineage, studying tai chi, qigong, and Daoist meditation. His intensive training combined rigorous daily practice with rich cultural experienc"
+  },
+  {
+   "rank": 221,
+   "name": "Lucia Horan",
+   "hub": "esalen",
+   "hub_url": "https://www.esalen.org/faculty/lucia-horan",
+   "also": [],
+   "website": "https://www.luciahoran.com/",
+   "hub_programmes": [
+    [
+     "Gateways: A 5Rhythms® Movement & Mindfulness Retreat",
+     null,
+     null,
+     "https://www.esalen.org/workshops/gateways-a-5rhythms-r-movement-mindfulness-retreat-122826"
+    ]
+   ],
+   "emails_seen": [
+    "admin@luciahoran.me"
+   ],
+   "contact_form_seen": true,
+   "in_person_words": false,
+   "hub_bio_extract": "Lucia Horan www.luciahoran.com Lucia Horan was born in 1976 on the sacred land of Esalen in Big Sur. She was raised in the Esalen community and taught the practices that were developed by those who came before her. She was certified as an Esalen® Massage practitioner in 1994. She became a Hatha & Ashtanga yoga teacher in 1997. Lucia received lifelong direct training with Gabrielle Roth in the 5Rhy"
+  },
+  {
+   "rank": 222,
+   "name": "Odeya Nini",
+   "hub": "esalen",
+   "hub_url": "https://www.esalen.org/faculty/odeya-nini",
+   "also": [],
+   "website": "http://odeyanini.com",
+   "hub_programmes": [
+    [
+     "Free the Resonant Voice: A Vocal Embodiment Journey to Remember the Soul of Your Sound",
+     "2027-03-29",
+     "2027-04-02",
+     "https://www.esalen.org/workshops/free-the-resonant-voice-a-vocal-embodiment-journey-to-remember-the-soul-of-your-sound-032927"
+    ]
+   ],
+   "emails_seen": [
+    "odeyanini@gmail.com"
+   ],
+   "contact_form_seen": true,
+   "in_person_words": false,
+   "hub_bio_extract": "Odeya Nini OdeyaNini.com Odeya Nini is an interdisciplinary vocalist, composer, sound healing practitioner, and transformative facilitator whose work bridges the worlds of somatic practice, experimental sound, and vocal liberation. With a background in jazz vocals, classical composition, yoga training and a deep commitment to embodied inquiry, she guides participants into an intimate relationship "
+  },
+  {
+   "rank": 223,
+   "name": "Daphne Tse",
+   "hub": "esalen",
+   "hub_url": "https://www.esalen.org/faculty/daphne-tse",
+   "also": [],
+   "website": "https://daphnetse.com/about",
+   "hub_programmes": [
+    [
+     "The Seven Flames: Winter Solstice Ritual Retreat",
+     "2026-12-14",
+     "2026-12-18",
+     "https://www.esalen.org/workshops/the-seven-flames-winter-solstice-ritual-retreat-121426"
+    ]
+   ],
+   "emails_seen": [
+    "daphnesoulsongs@gmail.com"
+   ],
+   "contact_form_seen": true,
+   "in_person_words": false,
+   "hub_bio_extract": "Daphne Tse daphnetse.com Daphne is a spirited, soulful artist and teacher originally from Texas. Her passion for music started from a young age and took her west to Los Angeles after university. Since her initial yoga class 25 years ago, she has explored merging her spiritual practice with her contemporary folk singer songwriter style. She studied music at The University of Texas at Austin, The Ol"
+  },
+  {
+   "rank": 224,
+   "name": "Leah Diamond",
+   "hub": "esalen",
+   "hub_url": "https://www.esalen.org/faculty/leah-diamond",
+   "also": [],
+   "website": "http://www.LeahDiamond.com",
+   "hub_programmes": [
+    [
+     "Pleasure Alchemy: Deepening Emotional Intelligence Through  Rituals and Sensual Somatics",
+     "2026-12-21",
+     "2026-12-25",
+     "https://www.esalen.org/workshops/pleasure-alchemy-deepening-emotional-intelligence-through-rituals-and-sensual-somatics-122126"
+    ]
+   ],
+   "emails_seen": [
+    "leahediamond@gmail.com"
+   ],
+   "contact_form_seen": true,
+   "in_person_words": false,
+   "hub_bio_extract": "Leah Diamond www.LeahDiamond.com Leah Diamond is a heart-centered mentor, trauma-informed facilitator, coach, and Dharma practitioner. A certified mindfulness meditation teacher on InsightTimer, Leah guides individuals to cultivate self-awareness and communicate mindfully, confidently, and with integrity — while inspiring meaningful change in their lives, communities, and the world. An intuitive H"
+  },
+  {
+   "rank": 225,
+   "name": "Lihi Benisty",
+   "hub": "esalen",
+   "hub_url": "https://www.esalen.org/faculty/lihi-benisty",
+   "also": [],
+   "website": "http://lihibe.com",
+   "hub_programmes": [
+    [
+     "The Inner Atlas: Mapping the Self through Somatic Self-Inquiry",
+     "2027-04-12",
+     "2027-04-16",
+     "https://www.esalen.org/workshops/the-inner-atlas-mapping-the-self-through-somatic-self-inquiry-041227"
+    ]
+   ],
+   "emails_seen": [
+    "lihibenisty@gmail.com"
+   ],
+   "contact_form_seen": true,
+   "in_person_words": false,
+   "hub_bio_extract": "Lihi Benisty www.lihibe.com Lihi Benisty guides immersive somatic experiences rooted in breath, movement, and self-inquiry. Her poetic approach to self-inquiry fosters emotional resilience, inner confidence, and embodied presence —- inviting students to honor their full humanity and live from a place of depth. Lihi leads a dynamic blend of somatic practices to navigate emotional landscapes. She is"
+  },
+  {
+   "rank": 226,
+   "name": "Michael Ventura",
+   "hub": "esalen",
+   "hub_url": "https://www.esalen.org/faculty/michael-ventura",
+   "also": [],
+   "website": "https://www.michaelventura.co/",
+   "hub_programmes": [
+    [
+     "Natural Healing: A Spiritual Journey of Return",
+     "2027-01-29",
+     "2027-01-31",
+     "https://www.esalen.org/workshops/natural-healing-a-spiritual-journey-of-return-012927"
+    ]
+   ],
+   "emails_seen": [
+    "hello@michaelventura.co"
+   ],
+   "contact_form_seen": false,
+   "in_person_words": false,
+   "hub_bio_extract": "Michael Ventura michaelventura.co For more than two decades, Michael Ventura has worked as a leader, practitioner, and educator centered in the practice of empathy. Through his private practice, he supports people seeking acceptance and transformation through the Indigenous healing tradition of the Nahua peoples, alongside somatic and contemplative work in self-knowledge, nervous system regulation"
+  },
+  {
+   "rank": 227,
+   "name": "Scott Engler",
+   "hub": "esalen",
+   "hub_url": "https://www.esalen.org/faculty/scott-engler",
+   "also": [],
+   "website": "https://www.heartofstillness.com",
+   "hub_programmes": [
+    [
+     "Soul Motion®: Tenderness at the Heart of the Dance",
+     "2026-12-21",
+     "2026-12-27",
+     "https://www.esalen.org/workshops/soul-motion-r-tenderness-at-the-heart-of-the-dance-122126"
+    ],
+    [
+     "Body Process: Soul Motion® and Embodied Gestalt",
+     "2027-05-24",
+     "2027-05-28",
+     "https://www.esalen.org/workshops/body-process-soul-motion-r-and-embodied-gestalt-052427"
+    ]
+   ],
+   "emails_seen": [],
+   "contact_form_seen": true,
+   "in_person_words": true,
+   "hub_bio_extract": "Scott Engler www.heartofstillness.com Scott Engler, a longtime student of presence and healing, supports adults, children and infants through Biodynamic Craniosacral Therapy and workshops in trauma resolution for the family. He holds a third-degree black belt in aikido. Featured Content No items found. Upcoming Workshops Upcoming Workshops Count: On-Campus Workshop December 21–27, 2026 Soul Motion"
+  },
+  {
+   "rank": 228,
+   "name": "Marisa Radha Weppner",
+   "hub": "esalen",
+   "hub_url": "https://www.esalen.org/faculty/marisa-radha-weppner",
+   "also": [],
+   "website": "https://udaya.com/teachers/marisa-weppner/",
+   "hub_programmes": [
+    [
+     "How Psychedelics Work: A Journey Into Mind, Meaning, and Healing",
+     "2027-04-09",
+     "2027-04-12",
+     "https://www.esalen.org/workshops/how-psychedelics-work-a-journey-into-mind-meaning-and-healing-040927"
+    ],
+    [
+     "Journey Space: Music, Movement and Ceremony",
+     "2026-12-18",
+     "2026-12-21",
+     "https://www.esalen.org/workshops/journey-space-music-movement-and-ceremony-121826"
+    ]
+   ],
+   "emails_seen": [],
+   "contact_form_seen": true,
+   "in_person_words": true,
+   "hub_bio_extract": "Marisa Radha Weppner marisaradhaweppner.com Marisa Radha Weppner is a mom, author, DJ, teacher, minister, psychedelic therapist, community organizer, life coach, podcaster, and entrepreneur. She has taught yoga since 2002. Known for her authentic self-expression, humorous yet grounded, she empowers others to embody their soul’s wisdom, bringing a real-world mix of eastern spirituality and western "
+  },
+  {
+   "rank": 229,
+   "name": "Alejandro Chaoul",
+   "hub": "esalen",
+   "hub_url": "https://www.esalen.org/faculty/alejandro-chaoul",
+   "also": [],
+   "website": "http://www.alechaoul.com",
+   "hub_programmes": [
+    [
+     "Rekindling the Heart: Ancient Breath Practices, Tibetan Yoga & the Science of Emotion",
+     "2027-02-19",
+     "2027-02-21",
+     "https://www.esalen.org/workshops/rekindling-the-heart-ancient-breath-practices-tibetan-yoga-amp-the-science-of-emotion-021927"
+    ]
+   ],
+   "emails_seen": [],
+   "contact_form_seen": true,
+   "in_person_words": true,
+   "hub_bio_extract": "Alejandro Chaoul alechaoul.com Alejandro Chaoul-Reich, PhD, has studied in the Tibetan traditions since 1989, and for over 30 years in the Bön Tradition with Yongdzin Tenzin Namdak Rinpoche, His Holiness Lungtok Tenpai Nyima Rinpoche, and Tenzin Wangyal Rinpoche. He holds a PhD in Tibetan religions from Rice University and is the scholar and founding director of the Mind Body Spirit Institute at t"
+  },
+  {
+   "rank": 230,
+   "name": "John Vosler",
+   "hub": "esalen",
+   "hub_url": "https://www.esalen.org/faculty/john-vosler",
+   "also": [],
+   "website": "https://www.johnvosler.com/",
+   "hub_programmes": [
+    [
+     "Yoga Nidra Retreat: Rest, Restore, and Remember Who You Are",
+     "2027-03-15",
+     "2027-03-19",
+     "https://www.esalen.org/workshops/yoga-nidra-retreat-rest-restore-and-remember-who-you-are-031527"
+    ]
+   ],
+   "emails_seen": [],
+   "contact_form_seen": true,
+   "in_person_words": true,
+   "hub_bio_extract": "John Vosler www.johnvosler.com John Vosler is devoted to guiding others back to the truth of who they are — the unchanging, unshakable presence beneath all thoughts, emotions, and experiences. For over 25 years, John has supported thousands of students and clients through his work as an energetic bodyworker, meditation teacher, and facilitator of Yoga Nidra. Blending ancient wisdom with modern sci"
+  },
+  {
+   "rank": 231,
+   "name": "Mirabai Starr",
+   "hub": "esalen",
+   "hub_url": "https://www.esalen.org/faculty/mirabai-starr",
+   "also": [],
+   "website": "http://www.mirabaistarr.com/",
+   "hub_programmes": [
+    [
+     "The Mystic's Way: Your Life as Sacred Ground",
+     "2027-05-21",
+     "2027-05-23",
+     "https://www.esalen.org/workshops/the-mystic-s-way-your-life-as-sacred-ground-052127"
+    ]
+   ],
+   "emails_seen": [],
+   "contact_form_seen": true,
+   "in_person_words": true,
+   "hub_bio_extract": "Mirabai Starr www.mirabaistarr.com Mirabai Starr is an award-winning author, internationally acclaimed speaker, and interspiritual teacher. In 2020, she was honored on Watkins’ list of the 100 Most Spiritually Influential Living People. Drawing from 20 years of teaching pPhilosophy and wWorld rReligions and a lifetime of practice, Mirabai shares her wisdom worldwide on contemplative living, writin"
+  },
+  {
+   "rank": 232,
+   "name": "Nikki Mirghafori",
+   "hub": "esalen",
+   "hub_url": "https://www.esalen.org/faculty/nikki-mirghafori",
+   "also": [],
+   "website": "https://www.nikkimirghafori.com",
+   "hub_programmes": [
+    [
+     "Mindful Improv: Presence, Play and the Joy of Being Here",
+     "2027-02-12",
+     "2027-02-14",
+     "https://www.esalen.org/workshops/mindful-improv-presence-play-and-the-joy-of-being-here-021227"
+    ]
+   ],
+   "emails_seen": [],
+   "contact_form_seen": true,
+   "in_person_words": true,
+   "hub_bio_extract": "Nikki Mirghafori nikkimirghafori.com Dr. Nikki Mirghafori is an Artificial Intelligence scientist and an internationally recognized Buddhist teacher. She serves as a stewarding teacher at Spirit Rock Meditation Center, where she is also on the board of directors, and a Dharma teacher at the Insight Meditation Center in Redwood City, CA. She teaches with clarity, warmth, and humor on topics ranging"
+  },
+  {
+   "rank": 233,
+   "name": "Raj Balkaran",
+   "hub": "esalen",
+   "hub_url": "https://www.esalen.org/faculty/raj-balkaran",
+   "also": [],
+   "website": "https://rajbalkaran.com/",
+   "hub_programmes": [
+    [
+     "The Stories Behind the Poses: Mythology in Motion",
+     "2026-11-27",
+     "2026-11-29",
+     "https://www.esalen.org/workshops/the-stories-behind-the-poses-mythology-in-motion-112726"
+    ]
+   ],
+   "emails_seen": [],
+   "contact_form_seen": true,
+   "in_person_words": true,
+   "hub_bio_extract": "Raj Balkaran rajbalkaran.com Raj Balkaran, PhD., is a Sanskrit scholar and lineal wisdom teacher whose work sits at the intersection of rigorous philology, living tradition, and transformative storytelling. He is the founder of the online Indian Wisdom School, a Continuing Studies Tutor at the Oxford Centre for Hindu Studies, and the host of over 400 episodes of the New Books in Indian Religions p"
+  },
+  {
+   "rank": 234,
+   "name": "Russ Hudson",
+   "hub": "esalen",
+   "hub_url": "https://www.esalen.org/faculty/russ-hudson",
+   "also": [],
+   "website": "https://russhudson.com/",
+   "hub_programmes": [
+    [
+     "The Transformational Enneagram: Mindfulness, Insight and Experience",
+     "2027-05-02",
+     "2027-05-07",
+     "https://www.esalen.org/workshops/the-transformational-enneagram-mindfulness-insight-and-experience-050227"
+    ]
+   ],
+   "emails_seen": [],
+   "contact_form_seen": true,
+   "in_person_words": true,
+   "hub_bio_extract": "Russ Hudson RussHudson.com Russ Hudson is one of the top scholars and teachers of the Enneagram self-development system today. Since 1991, he has written and taught full-time and has co-authored five best-selling books, including The Wisdom of the Enneagram , with Don Riso. Together, they co-developed a scientifically validated test instrument, the Riso-Hudson Enneagram Type Indicator (RHETI), use"
+  },
+  {
+   "rank": 235,
+   "name": "Margaret Harrsen",
+   "hub": "esalen",
+   "hub_url": "https://www.esalen.org/faculty/margaret-harrsen",
+   "also": [],
+   "website": "https://marharrsen.com",
+   "hub_programmes": [
+    [
+     "Natural Healing: A Spiritual Journey of Return",
+     "2027-01-29",
+     "2027-01-31",
+     "https://www.esalen.org/workshops/natural-healing-a-spiritual-journey-of-return-012927"
+    ]
+   ],
+   "emails_seen": [],
+   "contact_form_seen": true,
+   "in_person_words": true,
+   "hub_bio_extract": "Margaret Harrsen marharrsen.com Margaret Harrsen is a spiritual teacher and practitioner. Her work integrates the disciplines of Traditional Faith Healing and Craniosacral Therapy, with a focus on pediatric and perinatal care. Mar’s practice is distinctly rooted in prayer and meditation. She was brought onto her path as a practitioner after healing herself of chronic illness, under the wings of va"
+  },
+  {
+   "rank": 236,
+   "name": "William Donius",
+   "hub": "esalen",
+   "hub_url": "https://www.esalen.org/faculty/william-donius",
+   "also": [],
+   "website": "https://williamdonius.com/",
+   "hub_programmes": [
+    [
+     "Unlock Your Intuitive Mind: Tap Into Your Higher Consciousness",
+     "2027-04-16",
+     "2027-04-18",
+     "https://www.esalen.org/workshops/unlock-your-intuitive-mind-tap-into-your-higher-consciousness-041627"
+    ]
+   ],
+   "emails_seen": [],
+   "contact_form_seen": true,
+   "in_person_words": false,
+   "hub_bio_extract": "William Donius williamdonius.com William Donius was a left brainer for most of his life. Twenty-five years ago, however, he discovered how to tap into his right brain, and it revolutionized his life. Bill is a New York Times best-selling author and ideation facilitator. William Donius was a left brainer for most of his life. Twenty-five years ago, however, he discovered how to tap into his right b"
+  },
+  {
+   "rank": 237,
+   "name": "Max Gaenslen",
+   "hub": "esalen",
+   "hub_url": "https://www.esalen.org/faculty/max-gaenslen",
+   "also": [],
+   "website": "http://www.itp-international.org",
+   "hub_programmes": [
+    [
+     "Awaken Your Extraordinary Potential with Integral Transformative Practice® (ITP)",
+     "2026-12-04",
+     "2026-12-06",
+     "https://www.esalen.org/workshops/awaken-your-extraordinary-potential-with-integral-transformative-practice-r-itp-120426"
+    ]
+   ],
+   "emails_seen": [],
+   "contact_form_seen": true,
+   "in_person_words": false,
+   "hub_bio_extract": "Max Gaenslen itp-international.org Max Gaenslen is a practitioner and trainer of Integral Transformative Practice (ITP), created by Esalen visionaries George Leonard and Michael Murphy. After joining the ITP International management team in 2006, Max co-designed and led the 10-year ITP Mastery program. Max has presented ITP and Leonard Energy Training (LET) at Esalen Institute, national conference"
+  },
+  {
+   "rank": 238,
+   "name": "Ulrika Engman",
+   "hub": "esalen",
+   "hub_url": "https://www.esalen.org/faculty/ulrika-engman",
+   "also": [],
+   "website": "https://www.yoga-journeys.com",
+   "hub_programmes": [
+    [
+     "Luminous Yoga Spring Renewal",
+     "2027-04-19",
+     "2027-04-23",
+     "https://www.esalen.org/workshops/luminous-yoga-spring-renewal-041927"
+    ]
+   ],
+   "emails_seen": [],
+   "contact_form_seen": true,
+   "in_person_words": false,
+   "hub_bio_extract": "Ulrika Engman www.yoga-journeys.com Ulrika Engman, founder of Yoga Journeys and Yoga Yachting, two life transformative travel companies specializing in curating memorable Yoga and Movement adventures worldwide. Born and raised with nature, Ulrika grew up riding horses, sailing, and skiing in Sweden. Her love of adventure and travel ignited her desire to study in California. Yoga discovered her in "
+  },
+  {
+   "rank": 239,
+   "name": "Zuza Engler",
+   "hub": "esalen",
+   "hub_url": "https://www.esalen.org/faculty/zuza-engler",
+   "also": [],
+   "website": "https://www.zuzaengler.com/",
+   "hub_programmes": [
+    [
+     "Soul Motion®: Tenderness at the Heart of the Dance",
+     "2026-12-21",
+     "2026-12-27",
+     "https://www.esalen.org/workshops/soul-motion-r-tenderness-at-the-heart-of-the-dance-122126"
+    ],
+    [
+     "Body Process: Soul Motion® and Embodied Gestalt",
+     "2027-05-24",
+     "2027-05-28",
+     "https://www.esalen.org/workshops/body-process-soul-motion-r-and-embodied-gestalt-052427"
+    ]
+   ],
+   "emails_seen": [],
+   "contact_form_seen": false,
+   "in_person_words": true,
+   "hub_bio_extract": "Zuza Engler zuzaengler.com Zuza Engler has been on the spiral path of kinesthetic investigation into consciousness for close to three decades, through motion, stillness, and process inquiry. She is a teacher of Soul Motion® and Open Floor Movement, creatrix of Embodied Inquiry, and a long-term Buddhism and Gestalt practitioner. Featured Content No items found. Upcoming Workshops Upcoming Workshops"
+  },
+  {
+   "rank": 240,
+   "name": "Alex Halenda",
+   "hub": "esalen",
+   "hub_url": "https://www.esalen.org/faculty/alex-halenda",
+   "also": [],
+   "website": "https://www.alexhalenda.com",
+   "hub_programmes": [
+    [
+     "Finding Lila Through Yoga and Divine Play",
+     "2027-04-05",
+     "2027-04-09",
+     "https://www.esalen.org/workshops/finding-lila-through-yoga-and-divine-play-040527"
+    ]
+   ],
+   "emails_seen": [],
+   "contact_form_seen": false,
+   "in_person_words": true,
+   "hub_bio_extract": "Alex Halenda AlexHalenda.com Alex Halenda is known for her holistic approach to yoga practice, weaving movement, self-study, compassion, and humor through her all-levels classes. Her clear speaking voice, direct cueing, and comforting approach to the practice help students feel capable and at ease. Through practice with Alex, you can expect to increase strength, openness, and confidence, learn too"
+  },
+  {
+   "rank": 241,
+   "name": "Andrew Holecek",
+   "hub": "esalen",
+   "hub_url": "https://www.esalen.org/faculty/andrew-holecek",
+   "also": [],
+   "website": "http://andrewholecek.com",
+   "hub_programmes": [
+    [
+     "The Science and Psychology of Dark Retreat: Bringing Ancient Wisdom Into the Modern World",
+     "2027-04-30",
+     "2027-05-02",
+     "https://www.esalen.org/workshops/the-science-and-psychology-of-dark-retreat-bringing-ancient-wisdom-into-the-modern-world-043027"
+    ]
+   ],
+   "emails_seen": [],
+   "contact_form_seen": false,
+   "in_person_words": false,
+   "hub_bio_extract": "Andrew Holecek andrewholecek.com Dr. Andrew Holecek has completed the traditional three-year Buddhist meditation retreat and offers seminars internationally on meditation, dream yoga, and the art of dying. He is the author of many books, including Preparing to Die: Practical Advice and Spiritual Wisdom from the Tibetan Buddhist Tradition; The Power and the Pain: Transforming Spiritual Hardship int"
+  },
+  {
+   "rank": 242,
+   "name": "Day Schildkret",
+   "hub": "esalen",
+   "hub_url": "https://www.esalen.org/faculty/day-schildkret",
+   "also": [],
+   "website": "https://www.dayschildkret.com/",
+   "hub_programmes": [
+    [
+     "Thresholds and Altars: Nature-Based Rituals for Life’s Transitions",
+     "2027-03-05",
+     "2027-03-07",
+     "https://www.esalen.org/workshops/thresholds-and-altars-nature-based-rituals-for-life-s-transitions-030527"
+    ]
+   ],
+   "emails_seen": [],
+   "contact_form_seen": false,
+   "in_person_words": false,
+   "hub_bio_extract": "Day Schildkret dayschildkret.com Day Schildkret is an award-winning queer author, artist, ritualist, teacher and is internationally known for Morning Altars , which BuzzFeed calls, “a celebration of nature and life.” With nearly 100k followers on social media, Day has worked for close to two decades with thousands of individuals, communities, and organizations to help heal the culture through a me"
+  },
+  {
+   "rank": 243,
+   "name": "Dustin DiPerna",
+   "hub": "esalen",
+   "hub_url": "https://www.esalen.org/faculty/dustin-diperna",
+   "also": [],
+   "website": "https://www.dustindiperna.org/",
+   "hub_programmes": [
+    [
+     "Stages of Tranquility and Insight",
+     "2027-01-22",
+     "2027-01-24",
+     "https://www.esalen.org/workshops/stages-of-tranquility-and-insight-012227"
+    ]
+   ],
+   "emails_seen": [],
+   "contact_form_seen": false,
+   "in_person_words": false,
+   "hub_bio_extract": "Dustin DiPerna dustindiperna.org Dustin DiPerna is a Harvard-trained scholar of world religions. He currently serves as adjunct professor at Stanford University where he teaches classes on meditation, human flourishing, and purpose finding. Dustin spent 20 years studying with Ken Wilber and is considered an expert in Integral Theory. He is a senior teacher of Tibetan meditation practices and studi"
+  },
+  {
+   "rank": 244,
+   "name": "Kerri Kelly",
+   "hub": "esalen",
+   "hub_url": "https://www.esalen.org/faculty/kerri-kelly",
+   "also": [],
+   "website": "https://www.kerrikelly.co/",
+   "hub_programmes": [
+    [
+     "The Mythical Body",
+     "2027-05-07",
+     "2027-05-09",
+     "https://www.esalen.org/workshops/the-mythical-body-050727"
+    ]
+   ],
+   "emails_seen": [],
+   "contact_form_seen": false,
+   "in_person_words": false,
+   "hub_bio_extract": "Kerri Kelly kerrikelly.co Kerri Kelly is a movement educator, impact coach, and embodied activist who bridges personal transformation with collective change. For 25 years, she has helped visionary leaders, teams, and organizations build the capacity to lead under pressure and deliver change that lasts. Author of the critically acclaimed book, American Detox: The Myth of Wellness and How We Can Tru"
+  },
+  {
+   "rank": 245,
+   "name": "Micha Merrick",
+   "hub": "esalen",
+   "hub_url": "https://www.esalen.org/faculty/micha-merrick",
+   "also": [],
+   "website": null,
+   "hub_programmes": [
+    [
+     "Rights of Spring: Refresh Your Spirit Through Cleansing Herbal Bodywork",
+     "2027-05-03",
+     "2027-05-07",
+     "https://www.esalen.org/workshops/rights-of-spring-refresh-your-spirit-through-cleansing-herbal-bodywork-050327"
+    ],
+    [
+     "Solstice Hearthfire: Celebrate the Rebirth of Your Inner Light",
+     "2026-12-18",
+     "2026-12-20",
+     "https://www.esalen.org/workshops/solstice-hearthfire-celebrate-the-rebirth-of-your-inner-light-121826"
+    ]
+   ],
+   "emails_seen": [],
+   "contact_form_seen": false,
+   "in_person_words": false,
+   "hub_bio_extract": "Micha Merrick Micha grew up in a family of healers and earth-based celebration. She knew the medicinal wild plants of her forest and meadow from an early age. learning to meditate in wild spaces and revere the larger circles and cycles to which we belong. For the past seven years she's lived off-grid in Big Sur, in a magical mountainside yurt-cabin, living with the land, tending her hillside herb "
+  },
+  {
+   "rank": 246,
+   "name": "Adam Baraz",
+   "hub": "esalen",
+   "hub_url": "https://www.esalen.org/faculty/adam-baraz",
+   "also": [],
+   "website": null,
+   "hub_programmes": [
+    [
+     "Embodying Joy: Relaxing the Body Into Being",
+     "2027-01-15",
+     "2027-01-17",
+     "https://www.esalen.org/workshops/embodying-joy-relaxing-the-body-into-being-011527"
+    ]
+   ],
+   "emails_seen": [],
+   "contact_form_seen": false,
+   "in_person_words": false,
+   "hub_bio_extract": "Adam Baraz Adam Baraz is a somatic meditation teacher and founder of SomaWaken, an embodied approach integrating somatic psychology with Buddhist meditation. Before founding SomaWaken, he spent more than a decade as a somatic practitioner through his practice, Samadhi Bodywork. His teaching is informed by two decades of Buddhist practice in the Insight and Tibetan traditions, including more than 1"
+  },
+  {
+   "rank": 247,
+   "name": "Jeffrey S. Reid",
+   "hub": "esalen",
+   "hub_url": "https://www.esalen.org/faculty/jeffrey-s-reid-guest-faculty",
+   "also": [],
+   "website": null,
+   "hub_programmes": [
+    [
+     "Sleep Alchemy: Secrets of Daoist Sleep Practices for Inner Peace and Renewal",
+     "2027-04-26",
+     "2027-04-30",
+     "https://www.esalen.org/workshops/sleep-alchemy-secrets-of-daoist-sleep-practices-for-inner-peace-and-renewal-042627"
+    ]
+   ],
+   "emails_seen": [],
+   "contact_form_seen": false,
+   "in_person_words": false,
+   "hub_bio_extract": "Jeffrey S. Reid Jeffrey S. Reid is a martial artist, author, and teacher dedicated to preserving and transmitting the Wudang Daoist tradition. He has trained extensively in martial arts, Daoist alchemy, and contemplative practices. Jeffery runs a Kung Fu school in Santa Cruz, California, where he helps students integrate these rich practices into the erratic rhythms of modern life. Jeffrey S. Reid"
+  },
+  {
+   "rank": 248,
+   "name": "Lori Sheridan",
+   "hub": "esalen",
+   "hub_url": "https://www.esalen.org/faculty/lori-sheridan-guest-faculty",
+   "also": [],
+   "website": null,
+   "hub_programmes": [
+    [
+     "Unlock Your Intuitive Mind: Tap Into Your Higher Consciousness",
+     "2027-04-16",
+     "2027-04-18",
+     "https://www.esalen.org/workshops/unlock-your-intuitive-mind-tap-into-your-higher-consciousness-041627"
+    ]
+   ],
+   "emails_seen": [],
+   "contact_form_seen": false,
+   "in_person_words": false,
+   "hub_bio_extract": "Lori Sheridan | Guest Faculty williamdonius.com Lori Sheridan is a professional psychic medium, spiritual teacher, and author of Soul Compass: Trusting Your Intuition and the Wisdom Within . A certified medium with the Forever Family Foundation, she is also the creator of the Soul Compass Wisdom Oracle Deck and is passionate about helping others trust their own intuition. Featured Content No items"
+  },
+  {
+   "rank": 249,
+   "name": "Marianne Murray",
+   "hub": "esalen",
+   "hub_url": "https://www.esalen.org/faculty/marianne-murray",
+   "also": [],
+   "website": null,
+   "hub_programmes": [
+    [
+     "Grof® Breathwork: Homecoming",
+     "2026-12-04",
+     "2026-12-06",
+     "https://www.esalen.org/workshops/grof-r-breathwork-homecoming-120426"
+    ]
+   ],
+   "emails_seen": [],
+   "contact_form_seen": false,
+   "in_person_words": false,
+   "hub_bio_extract": "Marianne Murray Marianne trained with Stanislav Grof during the 1990s, is a certified Grof® Breathwork facilitator, and, over the past 25 years, has facilitated workshops in the US, UK, Europe, and Kenya, as well as a facilitator training in India. Marianne holds master’s degrees in transpersonal psychology and contemplative psychotherapy, as well as a PhD in transformative learning and change in "
+  },
+  {
+   "rank": 250,
+   "name": "Robert MacPhee",
+   "hub": "esalen",
+   "hub_url": "https://www.esalen.org/faculty/robert-macphee",
+   "also": [],
+   "website": null,
+   "hub_programmes": [
+    [
+     "The Values Based Path to a Life of Purpose and Meaning",
+     "2027-01-08",
+     "2027-01-10",
+     "https://www.esalen.org/workshops/the-values-based-path-to-a-life-of-purpose-and-meaning-010827"
+    ]
+   ],
+   "emails_seen": [],
+   "contact_form_seen": false,
+   "in_person_words": false,
+   "hub_bio_extract": "Robert MacPhee Robert MacPhee is the founder and president of Heart Set, Inc. in Sonoma, California. He is the author of the books Manifesting for Non-Gurus and Living a Values Based Life and the former director of training for Jack Canfield (the co-creator of the Chicken Soup for the Soul Book series and the author of The Success Principles ). He is a founding member and former executive director"
+  },
+  {
+   "rank": 251,
+   "name": "Adam Clark",
+   "hub": "esalen",
+   "hub_url": "https://www.esalen.org/faculty/adam-clark",
+   "also": [],
+   "website": null,
+   "hub_programmes": [
+    [
+     "Sacred Groove: An Ecstatic Dance Ceremony",
+     "2027-03-26",
+     "2027-03-28",
+     "https://www.esalen.org/workshops/sacred-groove-an-ecstatic-dance-ceremony-032627"
+    ]
+   ],
+   "emails_seen": [],
+   "contact_form_seen": false,
+   "in_person_words": false,
+   "hub_bio_extract": "Adam Clark @mradamclark Adam Clark is the host of Ecstatic Dance SLO in San Luis Obispo and a creator of somatic workshops that explore prayer, contact improvisation, and emotional intelligence. With certification in Dance Movement Psychotherapy, Adam weaves together his passions for dance, inner child healing, and spirituality to advance justice and liberation locally and abroad. Committed to cre"
+  },
+  {
+   "rank": 252,
+   "name": "Glauber Loures de Assis",
+   "hub": "esalen",
+   "hub_url": "https://www.esalen.org/faculty/glauber-loures-de-assis",
+   "also": [],
+   "website": null,
+   "hub_programmes": [
+    [
+     "Sacred Tobacco: Hapé and the Art of Presence",
+     "2027-05-21",
+     "2027-05-23",
+     "https://www.esalen.org/workshops/sacred-tobacco-hape-and-the-art-of-presence-052127"
+    ]
+   ],
+   "emails_seen": [],
+   "contact_form_seen": false,
+   "in_person_words": false,
+   "hub_bio_extract": "Glauber Loures de Assis Dr. Glauber Loures de Assis is a Brazilian sociologist, educator, and intercultural bridge builder working at the intersection of sacred plant traditions, Indigenous rights, psychedelic science, and peacebuilding. He holds a PhD in Sociology from the Federal University of Minas Gerais (UFMG) and is the founder and Executive Director of Kura Alliance, a Colorado-based 501(c)"
+  },
+  {
+   "rank": 253,
+   "name": "Toni Cupal",
+   "hub": "esalen",
+   "hub_url": "https://www.esalen.org/faculty/toni-cupal",
+   "also": [],
+   "website": null,
+   "hub_programmes": [
+    [
+     "Winter Renewal: Transitioning into the New Year with Ritual, Yoga and Time in Nature",
+     "2027-02-05",
+     "2027-02-08",
+     "https://www.esalen.org/workshops/winter-renewal-transitioning-into-the-new-year-with-ritual-yoga-and-time-in-nature-020527"
+    ]
+   ],
+   "emails_seen": [],
+   "contact_form_seen": false,
+   "in_person_words": false,
+   "hub_bio_extract": "Toni Cupal In 2011, Toni Cupal first experienced the depth of Mukund Subramanian’s work and realized the importance of helping him pass on the tradition of Ninniku Okyū. Toni began studying Ninniku Okyū in the traditional apprenticeship system with Mukund in the fall of 2012. In 2016, he gave her the blessing to begin practicing the work with clients. That same year, they co-founded the nonprofit "
+  },
+  {
+   "rank": 254,
+   "name": "Caitlin Wild",
+   "hub": "esalen",
+   "hub_url": "https://www.esalen.org/faculty/caitlin-wild",
+   "also": [],
+   "website": null,
+   "hub_programmes": [
+    [
+     "Designing The Life We Want: Self Renewal in the Winter",
+     "2027-01-18",
+     "2027-01-22",
+     "https://www.esalen.org/workshops/designing-the-life-we-want-self-renewal-in-the-winter-011827"
+    ]
+   ],
+   "emails_seen": [],
+   "contact_form_seen": false,
+   "in_person_words": false,
+   "hub_bio_extract": "Caitlin Wild | Guest Faculty Caitlin Wild is a wilderness guide, musician and facilitator of Wild Soul awakenings. A student of wild lands, her soul-calling is to be a bridge between humans and Nature. She has led both traditional and experimental wilderness workshops internationally and has devoted her life to re-membering us humans back to our wild soul. Using the modalities of Hakomi, EcoTherap"
+  }
+ ]
+}

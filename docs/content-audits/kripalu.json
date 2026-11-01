@@ -1,0 +1,249 @@
+{
+  "healer": {
+    "healer_slug": "kripalu",
+    "create": {
+      "name": "Kripalu Center for Yoga & Health",
+      "bio": "Kripalu Center for Yoga & Health is a non-profit centre for yoga education in the Berkshire hills of western Massachusetts, on a campus of more than 100 acres above Stockbridge, close to Lake Mahkeenac. It is named after Swami Kripalu, an Indian yoga master whose name means compassion and whose core teaching, to watch oneself without judging, still shapes the way yoga is taught there. The community began in Pennsylvania in the early 1970s as a residential yoga fellowship, moved in 1983 into a former Jesuit seminary at Stockbridge, and later re-formed as a secular educational charity. It now calls itself the largest retreat centre in North America.\n\nMost guests come for a residential programme lasting from a weekend to a week. Many are led by visiting presenters; others are house retreats taught by Kripalu's own faculty, such as silent weekends, seasonal Ayurveda stays and outdoor programmes built around hiking, archery and walks in the woods. A self-guided Retreat & Renewal stay, overnight or as a day pass, comes with meals and a daily timetable of yoga, meditation and short workshops. Four schools offer professional training: yoga teaching, Ayurveda, yoga therapy and leading mindful time outdoors. At home, people can join the Kripalu Online Studio, which streams more than twenty live classes a week and keeps a large library of recordings, or watch some campus programmes live.",
+      "tier": "superhero",
+      "entity_type": "organisation",
+      "availability": "local_online",
+      "city": "Stockbridge",
+      "country": "United States",
+      "founded_year": null,
+      "subjects": [
+        "yoga",
+        "ayurveda",
+        "meditation"
+      ],
+      "website_url": "https://kripalu.org/",
+      "booking_url": "https://kripalu.org/experiences",
+      "youtube_url": "https://www.youtube.com/@KripaluCenter",
+      "instagram_url": "https://www.instagram.com/kripalucenter/",
+      "facebook_url": "https://www.facebook.com/kripalucenter/",
+      "twitter_url": null,
+      "tiktok_url": "https://www.tiktok.com/@kripalucenter",
+      "contact_email": "registration@kripalu.org",
+      "image_urls": [
+        "https://yt3.googleusercontent.com/VFil-MWZZhTPpdbqsxsE1fshpbWqisfua9M0cFW3bgc4WBRRh0PNhdM0G6G7KblqhOdTCGHv7GE=s900-c-k-c0x00ffffff-no-rj",
+        "https://kripalu.org/sites/default/files/styles/og_image/public/2025-09/7P8A8092%2Bsky.jpg?itok=BRRK4QB-"
+      ]
+    }
+  },
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Kripalu Programs & Retreats",
+      "url": "https://kripalu.org/experiences",
+      "description": "The full calendar of residential and online programmes at Kripalu, searchable by date, theme and teacher. It mixes workshops by visiting authors and teachers with the centre's own Kripalu Experience Programs. Tuition is listed separately from lodging and meals, which start at $109 a night midweek.",
+      "price": "From $249 USD",
+      "product_type": "retreat",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga",
+        "meditation",
+        "spirituality"
+      ],
+      "image": "https://kripalu.org/sites/default/files/styles/og_image/public/2025-09/7P8A8092%2Bsky.jpg?itok=BRRK4QB-"
+    },
+    {
+      "title": "Retreat & Renewal (R&R)",
+      "url": "https://kripalu.org/experiences/retreat-renewal",
+      "description": "An unstructured stay on the Stockbridge campus with no fixed programme. Meals, drop-in yoga and meditation classes, guided outdoor walks and short daily workshops are all included and all optional; bodywork is extra. Day passes are also sold, and there are scholarships for both.",
+      "price": "From $99 USD a night (plus lodging)",
+      "product_type": "retreat",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga",
+        "meditation"
+      ],
+      "image": "https://yt3.googleusercontent.com/VFil-MWZZhTPpdbqsxsE1fshpbWqisfua9M0cFW3bgc4WBRRh0PNhdM0G6G7KblqhOdTCGHv7GE=s900-c-k-c0x00ffffff-no-rj"
+    },
+    {
+      "title": "Kripalu Schools",
+      "url": "https://kripalu.org/schools",
+      "description": "Kripalu's four professional schools: the School of Yoga (200-hour and advanced teacher trainings, on campus and online), the School of Ayurveda, the School of Integrative Yoga Therapy and the School of Mindful Outdoor Leadership. Trainings run as residential modules or online cohorts across the year.",
+      "price": "From $2,808 USD",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga",
+        "ayurveda"
+      ],
+      "image": "https://kripalu.org/sites/default/files/styles/og_image/public/2025-09/Hazlegrove-1163-min.jpg?itok=qgYQdwJd"
+    },
+    {
+      "title": "Kripalu Online Studio",
+      "url": "https://kripalu.org/experiences/kripalu-online-studio",
+      "description": "A subscription to Kripalu's online classes: over twenty live sessions each week in several yoga styles, meditation and pranayama, plus a library of more than 2,500 recordings that also covers Ayurveda and nature connection. A free trial is offered, and full scholarships are available.",
+      "price": "$39 USD a month or $365 a year",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga",
+        "meditation",
+        "breathwork"
+      ],
+      "image": "https://kripalu.org/sites/default/files/styles/og_image/public/2025-08/Hazlegrove-7658-min.jpg?itok=OwNSWSP0"
+    },
+    {
+      "title": "The Kripalu Yoga Retreat",
+      "url": "https://kripalu.org/experiences/the-kripalu-yoga-retreat?sku=18446682",
+      "description": "A five-day house retreat taught by Kripalu teachers for people at any level, from first-timers to long-time practitioners. Days alternate led group classes in the Kripalu style with free time for personal practice and reflection, in a setting meant to take the pressure off performing.",
+      "price": "From $419 USD (plus lodging)",
+      "product_type": "retreat",
+      "start_date": "2026-11-09",
+      "end_date": "2026-11-13",
+      "subjects": [
+        "yoga",
+        "meditation"
+      ],
+      "image": "https://yt3.googleusercontent.com/VFil-MWZZhTPpdbqsxsE1fshpbWqisfua9M0cFW3bgc4WBRRh0PNhdM0G6G7KblqhOdTCGHv7GE=s900-c-k-c0x00ffffff-no-rj"
+    },
+    {
+      "title": "Essential Practices for Everyday Life",
+      "url": "https://kripalu.org/experiences/welcome-kripalu-path-essential-practices-everyday-life?sku=18446733",
+      "description": "Kripalu's signature introductory weekend, run by its own faculty: Kripalu Yoga both as posture practice and as a way of living, meditation, mindfulness and simple daily self-care habits drawn from the teachings of Swami Kripalu, adjusted to the season.",
+      "price": "From $249 USD (plus lodging)",
+      "product_type": "retreat",
+      "start_date": "2026-11-13",
+      "end_date": "2026-11-15",
+      "subjects": [
+        "yoga",
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://yt3.googleusercontent.com/VFil-MWZZhTPpdbqsxsE1fshpbWqisfua9M0cFW3bgc4WBRRh0PNhdM0G6G7KblqhOdTCGHv7GE=s900-c-k-c0x00ffffff-no-rj"
+    },
+    {
+      "title": "Ayurveda Self-Care Retreat",
+      "url": "https://kripalu.org/experiences/ayurveda-self-care-retreat?sku=18446784",
+      "description": "A three-night house programme with Kripalu faculty on Ayurveda as daily ritual: learning one's constitution through the doshas, building seasonal routines, food rituals, oil self-massage and time outdoors with the elements. Open to newcomers and experienced students alike.",
+      "price": "From $375 USD (plus lodging)",
+      "product_type": "retreat",
+      "start_date": "2026-11-17",
+      "end_date": "2026-11-20",
+      "subjects": [
+        "ayurveda",
+        "yoga"
+      ],
+      "image": "https://yt3.googleusercontent.com/VFil-MWZZhTPpdbqsxsE1fshpbWqisfua9M0cFW3bgc4WBRRh0PNhdM0G6G7KblqhOdTCGHv7GE=s900-c-k-c0x00ffffff-no-rj"
+    },
+    {
+      "title": "The Kripalu Silent Retreat",
+      "url": "https://kripalu.org/experiences/kripalu-silent-retreat",
+      "description": "Kripalu's most popular house retreat: a weekend held in silence, meals included, apart from brief talks and question times. Kripalu faculty guide embodied meditation, mindful movement, journaling and practice outside on the grounds. The rest of the campus is not silent.",
+      "price": "From $325 USD (plus lodging)",
+      "product_type": "retreat",
+      "start_date": "2026-11-20",
+      "end_date": "2026-11-22",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://kripalu.org/sites/default/files/styles/og_image/public/2026-05/Untitled%20design%20%2843%29.png?itok=NxEj0rS0"
+    },
+    {
+      "title": "Winter Solstice Retreat: Nature, Peace, and Connection",
+      "url": "https://kripalu.org/experiences/winter-solstice-retreat-nature-peace-and-connection",
+      "description": "A solstice weekend led by Micah Mortali, who founded Kripalu's School of Mindful Outdoor Leadership. It pairs guided time outdoors and fire meditations with the Nordic idea of hygge, the seasonal festivals of the Celtic calendar and what Ayurveda says about winter.",
+      "price": "From $325 USD (plus lodging)",
+      "product_type": "retreat",
+      "start_date": "2026-12-18",
+      "end_date": "2026-12-20",
+      "subjects": [
+        "meditation",
+        "mindfulness",
+        "ayurveda"
+      ],
+      "image": "https://kripalu.org/sites/default/files/styles/og_image/public/2025-08/micahsnow_hero.png?itok=xqSHU4Vv"
+    },
+    {
+      "title": "Winter Ayurveda Retreat: Harmony, Rejuvenation, and Rest",
+      "url": "https://kripalu.org/experiences/winter-ayurveda-retreat-harmony-rejuvenation-and-rest-0",
+      "description": "A midweek house retreat with Kripalu faculty on Ayurvedic self-care for the cold months: eating with the season, warming meals cooked together, balancing yoga, meditation and abhyanga, the Ayurvedic practice of oil self-massage.",
+      "price": "From $419 USD (plus lodging)",
+      "product_type": "retreat",
+      "start_date": "2027-02-15",
+      "end_date": "2027-02-19",
+      "subjects": [
+        "ayurveda",
+        "yoga",
+        "meditation"
+      ],
+      "image": "https://kripalu.org/sites/default/files/styles/og_image/public/2017-12/_P8A0252_mediation_garden_snow_forweb_1.jpg?itok=YLj2X1fG"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Living Kripalu",
+      "url": "https://kripalu.org/living-kripalu",
+      "description": "Kripalu's free online magazine of articles, practices, teacher interviews and recipes, sorted by themes such as yoga and ancient wisdom, movement, creativity, nature and relationships.",
+      "featured": true,
+      "resource_type": "practice",
+      "subjects": [
+        "yoga",
+        "meditation",
+        "ayurveda"
+      ],
+      "image": "https://kripalu.org/sites/default/files/styles/og_image/public/2025-09/7P8A8092%2Bsky.jpg?itok=BRRK4QB-"
+    },
+    {
+      "title": "Kripalu on YouTube",
+      "url": "https://www.youtube.com/@KripaluCenter",
+      "description": "Free videos from Kripalu teachers and visiting presenters, including short yoga and meditation practices, talks and glimpses of life on the campus.",
+      "featured": false,
+      "resource_type": "practice",
+      "subjects": [
+        "yoga",
+        "meditation"
+      ],
+      "image": "https://yt3.googleusercontent.com/VFil-MWZZhTPpdbqsxsE1fshpbWqisfua9M0cFW3bgc4WBRRh0PNhdM0G6G7KblqhOdTCGHv7GE=s900-c-k-c0x00ffffff-no-rj"
+    }
+  ],
+  "sprint": {
+    "tier_evidence": "Facebook 189,510 (og:description, facebook.com/kripalucenter, 1 Nov 2026); Instagram 126K (og:description, @kripalucenter, 1 Nov 2026); YouTube 15.2K (channel header next to @KripaluCenter, 1 Nov 2026); TikTok 840 (public profile page, @kripalucenter, 1 Nov 2026) -> ~331.5k total -> luminary. No X account linked in the site footer.",
+    "tier_override": "superhero by editorial stature (default, as Omega; owner to confirm): Kripalu calls itself the largest retreat centre in North America, has taught yoga for some 50 years and runs four professional schools. Computed tier from ~331.5k summed followers was luminary.",
+    "email": "yes",
+    "email_source": "https://kripalu.org/contact (registration@kripalu.org, published as a mailto link in the site footer on every page, including the contact page and homepage)",
+    "contact_form_url": "https://kripalu.org/contact",
+    "flags": [
+      "Tier override applied by default (superhero by editorial stature, as Omega); owner to confirm.",
+      "Founded year left blank: Kripalu's own pages say only 'five decades' / 'more than 50 years'; Wikipedia gives 1972 (Pennsylvania) and 1983 (Stockbridge).",
+      "Bio history (Pennsylvania early 1970s, Jesuit seminary 1983, secular charity later) is from Wikipedia, not from Kripalu's own pages; the founder's 1994 resignation is left out on purpose.",
+      "Email is the registration address from the footer; there is also onlinesupport@kripalu.org for online classes and a contact form.",
+      "Programmes price 'From $249 USD' is the lowest house-programme tuition seen (Essential Practices); visiting-presenter workshops run higher and lodging is extra.",
+      "Schools price 'From $2,808 USD' is the 200-hour in-person teacher training tuition (two 12-day sessions); online 200-hour is $3,008.",
+      "TikTok 840 read from the profile page data (no og:description count); tiny either way.",
+      "Silent Retreat image is the programme's og:image (a meditator in a studio); other dated retreats without a checked photo use the YouTube avatar.",
+      "The Kripalu Yoga Retreat, Essential Practices and Ayurveda Self-Care have several dates; the first date after 3 Nov is listed, with the date's own ?sku= URL.",
+      "Organisation, not School: Kripalu hosts many visiting presenters as well as running its own schools."
+    ],
+    "left_out": [
+      "Visiting-presenter workshops (the teachers' own listings carry them).",
+      "The Kripalu Ayurveda Spring Cleanse (cleansing framed around digestion), Unearthing the Wisdom of Menopause, Women's Health strand, Grief Affinity Circle and the Ayurveda Summit 'Path of Longevity' (health rule).",
+      "Kripalu School of Integrative Yoga Therapy modules such as Clinical Immersion and Yoga Therapy Applied in Medical Settings (clinical).",
+      "Healing Arts treatments and online psychic readings / consultations (services, not teaching).",
+      "Kripalu Friends and Neighbors memberships (discount schemes), gift cards and shop."
+    ],
+    "sources": [
+      "https://kripalu.org/about-kripalu",
+      "https://kripalu.org/schools",
+      "https://kripalu.org/online",
+      "https://kripalu.org/experiences/retreat-renewal",
+      "https://kripalu.org/kripalu-experience-programs",
+      "https://kripalu.org/contact",
+      "https://en.wikipedia.org/wiki/Kripalu_Center"
+    ],
+    "bio_check": "OK: no 8-word runs against 26 source(s)"
+  },
+  "notes": [
+    "Hub (README §18.7): Organisation, superhero by editorial stature (default, owner to confirm); computed tier luminary from ~331.5k readable followers.",
+    "Teacher pipeline: kripalu-faculty.json / kripalu-teachers.json, linked 'Teaches at Kripalu Center for Yoga & Health'."
+  ],
+  "images_final": true
+}

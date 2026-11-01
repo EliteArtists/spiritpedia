@@ -1,0 +1,171 @@
+{
+  "healer": {
+    "healer_slug": "1440-multiversity",
+    "create": {
+      "name": "1440 Multiversity",
+      "bio": "1440 Multiversity is a non-profit learning campus in the Santa Cruz Mountains of California, just outside Scotts Valley, laid out among tall redwoods on 75 acres that were once the grounds of Bethany University. Joanie and Scott Kriens, whose family foundation carries the same name, created it after several years of grant-making, and it opened in May 2017. The name is the number of minutes in a day: the idea came to Joanie Kriens during a quiet moment in her vegetable garden, and it stands for meeting each day with more attention and gratitude.\n\nMuch of the campus's work is hosting groups and organisations for their own gatherings, but 1440 also runs open programmes arranged around five themes it calls Live, Lead, Love, Work and Wonder Well. These include all-inclusive weekends such as its Designing Your Life retreat, a leadership course drawn from Bill George's True North work, evening classes paired with a shared dinner, and cooking classes in its Teaching Kitchen. Every stay comes with short daily classes in yoga, meditation, tai chi, qigong and art, and a free online library holds recorded classes, talks and webinars. Income from bookings helps pay for scholarships and for grants to other non-profits.",
+      "tier": "luminary",
+      "entity_type": "organisation",
+      "availability": "local_online",
+      "city": "Scotts Valley",
+      "country": "United States",
+      "founded_year": 2017,
+      "subjects": [
+        "mindfulness",
+        "meditation",
+        "yoga"
+      ],
+      "website_url": "https://www.1440.org/",
+      "booking_url": "https://www.1440.org/events",
+      "youtube_url": "https://www.youtube.com/@1440Multiversity",
+      "instagram_url": "https://www.instagram.com/1440multiversity/",
+      "facebook_url": "https://www.facebook.com/1440multiversity",
+      "twitter_url": "https://x.com/1440mv",
+      "tiktok_url": null,
+      "contact_email": "info@1440.org",
+      "image_urls": [
+        "https://assets.milestoneinternet.com/cdn-cgi/image/f=auto/1440-multiversity/site-images/about-us/our-beginning-hero.jpg?width=1440&height=400",
+        "https://assets.milestoneinternet.com/cdn-cgi/image/f=auto/1440-multiversity/site-images/home/video-thumb-n.jpg?width=1200&height=630"
+      ]
+    }
+  },
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "1440 Community Education Calendar",
+      "url": "https://www.1440.org/events",
+      "description": "The calendar of programmes open to the public at 1440: all-inclusive learning weekends and retreats, evening Discovery Dinners that pair a class with a shared meal, Teaching Kitchen sessions and seasonal events on the redwood campus.",
+      "price": "From $75 USD",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "mindfulness",
+        "meditation",
+        "yoga"
+      ],
+      "image": "https://assets.milestoneinternet.com/cdn-cgi/image/f=auto/1440-multiversity/site-images/about-us/our-beginning-hero.jpg?width=1440&height=400"
+    },
+    {
+      "title": "Designing Your Life at 1440",
+      "url": "https://www.1440.org/dyl",
+      "description": "As a certified Designing Your Life provider, 1440 teaches the design-thinking approach to life and career planning from the Stanford Life Design Lab, through open weekends, group programmes and coaching led by its certified facilitator Katie Denbo.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "soul-purpose",
+        "life-coaching"
+      ],
+      "image": "https://assets.milestoneinternet.com/cdn-cgi/image/f=auto/1440-multiversity/dyl-december-program-header.jpg?cropX=826&cropW=6348&cropH=3333&width=600&height=315"
+    },
+    {
+      "title": "True North Leadership",
+      "url": "https://www.1440.org/true-north-leadership",
+      "description": "A six-day residential leadership course drawn from Bill George's authentic leadership teaching, for senior and emerging leaders from business, non-profits and public service, combining self-reflection, small-group work and mindful practice in the redwoods.",
+      "price": "From $5,475 USD (non-profit rate, with lodging)",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "mindfulness",
+        "soul-purpose"
+      ],
+      "image": "https://assets.milestoneinternet.com/cdn-cgi/image/f=auto/1440-multiversity/site-images/about-us/our-beginning-hero.jpg?width=1440&height=400"
+    },
+    {
+      "title": "Designing Your Life: An Immersive Weekend of Purpose & Possibility",
+      "url": "https://www.1440.org/dyl-retreat-121126",
+      "description": "An all-inclusive weekend on campus led by 1440 faculty member Katie Denbo, working through the life design method step by step, with a coaching call beforehand, meals, daily yoga and meditation classes and time on the trails. A commuter option is available.",
+      "price": "From $2,120 USD (all-inclusive, plus tax)",
+      "product_type": "retreat",
+      "start_date": "2026-12-11",
+      "end_date": "2026-12-13",
+      "subjects": [
+        "soul-purpose",
+        "life-coaching",
+        "mindfulness"
+      ],
+      "image": "https://assets.milestoneinternet.com/cdn-cgi/image/f=auto/1440-multiversity/dyl-december-program-header.jpg?cropX=826&cropW=6348&cropH=3333&width=600&height=315"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "1440 Living Well online classes",
+      "url": "https://www.1440.org/signature-classes",
+      "description": "A free online series based on 1440's on-campus signature classes: short recorded sessions of tai chi, qigong, yoga, meditation and creative practice, filterable by length from a few minutes to half an hour or more.",
+      "featured": true,
+      "resource_type": "practice",
+      "subjects": [
+        "meditation",
+        "qi-gong",
+        "yoga"
+      ],
+      "image": "https://assets.milestoneinternet.com/cdn-cgi/image/f=auto/1440-multiversity/site-images/common/signature-classes.jpg?width=1440&height=400"
+    },
+    {
+      "title": "1440 Resource Library",
+      "url": "https://www.1440.org/resource-library",
+      "description": "1440's free collection of recorded webinars, talks, guided meditations and short guides from its faculty and partners, on themes from mindfulness to leadership and community.",
+      "featured": false,
+      "resource_type": "practice",
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "image": "https://assets.milestoneinternet.com/cdn-cgi/image/f=auto/1440-multiversity/site-images/about-us/our-beginning-hero.jpg?width=1440&height=400"
+    },
+    {
+      "title": "1440 Multiversity on YouTube",
+      "url": "https://www.youtube.com/@1440Multiversity",
+      "description": "Free videos from 1440, including campus films, faculty conversations and short practices.",
+      "featured": false,
+      "resource_type": "practice",
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "image": "https://assets.milestoneinternet.com/cdn-cgi/image/f=auto/1440-multiversity/site-images/home/video-thumb-n.jpg?width=1200&height=630"
+    }
+  ],
+  "sprint": {
+    "tier_evidence": "Facebook 91,926 (og:description, facebook.com/1440multiversity, 1 Nov 2026); Instagram 27K (og:description, @1440multiversity, 1 Nov 2026); YouTube 3.63K (channel header next to @1440Multiversity, 55 videos, 1 Nov 2026) -> ~122.6k total -> luminary. BORDERLINE (80k–150k band). X (@1440mv) not counted: count needs login. No TikTok linked.",
+    "email": "yes",
+    "email_source": "https://www.1440.org/about/our-beginning (info@1440.org, shown as a plain visible link in the page's contact callout)",
+    "contact_form_url": null,
+    "flags": [
+      "Tier borderline: ~122.6k summed followers, in the 80k–150k band; no override (as instructed).",
+      "No usable YouTube avatar: the channel shows the default blank profile image, so image_urls uses two campus photos from 1440.org (main lodge and the carved 1440 sign) and items use site images.",
+      "Contact page and FAQ hide their addresses behind Cloudflare email protection; info@1440.org is only visible as plain text on the Our Beginning page. The DYL page also links inquiries@1440.org and programming@1440.org.",
+      "No contact form: the contact page has phone numbers and a newsletter sign-up only.",
+      "Only one dated house programme after 3 Nov 2026 (Designing Your Life weekend, 11–13 Dec); other calendar items are one-evening Discovery Dinners, a health conference or guest-led retreats.",
+      "Community calendar price 'From $75 USD' is the Discovery Dinner class-and-dinner rate.",
+      "True North Leadership price is the published non-profit rate ($3,475 accommodations + $2,000 tuition, plus tax); the corporate rate is $3,975 + $4,000. The last published date (11–16 Oct 2026) has passed; no new date yet.",
+      "Most of 1440's business is private group bookings; open public programming is thin.",
+      "Organisation, not School."
+    ],
+    "left_out": [
+      "Food as Medicine Health Conference and Teaching Kitchen 'food as medicine' weekends (health rule).",
+      "Love Mama Grief Retreat, Theradelic Retreats and other guest-led retreats (guest teachers / health framing).",
+      "Philanthropic 'Healing Our...' programmes for veterans, first responders and healthcare workers (closed groups, health framing).",
+      "Curated external podcasts page (not 1440's own content), group venue hire and the 1440 Foundation."
+    ],
+    "sources": [
+      "https://www.1440.org/about",
+      "https://www.1440.org/about/our-beginning",
+      "https://www.1440.org/dyl",
+      "https://www.1440.org/dyl-retreat-121126",
+      "https://www.1440.org/signature-classes",
+      "https://www.1440.org/faqs",
+      "https://www.1440.org/events"
+    ],
+    "bio_check": "OK: no 8-word runs against 26 source(s)"
+  },
+  "notes": [
+    "Hub (README §18.7): Organisation, computed tier luminary (~122.6k, borderline).",
+    "Teacher pipeline: 1440-multiversity-faculty.json / 1440-multiversity-teachers.json, linked 'Teaches at 1440 Multiversity'."
+  ],
+  "images_final": true
+}

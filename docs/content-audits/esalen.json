@@ -1,0 +1,230 @@
+{
+  "healer": {
+    "healer_slug": "esalen",
+    "create": {
+      "name": "Esalen Institute",
+      "bio": "Esalen Institute is a non-profit retreat and learning centre on the Big Sur coast of California, on a grassy headland above the Pacific where natural hot springs feed open-air baths. Two Stanford graduates, Michael Murphy and Richard Price, started it in 1962, taking their cue from the thinking of Aldous Huxley and Abraham Maslow on unused human capacities. Through the 1960s and 1970s it became the chief gathering place of the human potential movement, and people such as Fritz Perls, Alan Watts, Gregory Bateson and Stanislav Grof taught there. The land was home to the Esselen people for thousands of years, and Esalen now looks after it together with the Esselen Tribe of Monterey County.\n\nMost visitors book a residential workshop of a weekend or five days, on anything from meditation, yoga and movement to writing, relationships and psychology, with lodging, meals and the baths included in one price. Self-Guided Explorations offers an open stay with drop-in classes led by resident teachers instead of a set course. The institute also runs its own massage school, teaching the Esalen Massage style that grew up there in the 1960s, a three-month Work Scholar residency, and a think tank, the Center for Theory & Research. Its free Voices of Esalen podcast mixes new interviews with recordings from the archive.",
+      "tier": "superhero",
+      "entity_type": "organisation",
+      "availability": "local",
+      "city": "Big Sur",
+      "country": "United States",
+      "founded_year": 1962,
+      "subjects": [
+        "spirituality",
+        "consciousness",
+        "meditation"
+      ],
+      "website_url": "https://www.esalen.org/",
+      "booking_url": "https://www.esalen.org/learn/workshops",
+      "youtube_url": "https://www.youtube.com/@esaleninstitute",
+      "instagram_url": "https://www.instagram.com/esalen/",
+      "facebook_url": "https://www.facebook.com/EsalenInstitute",
+      "twitter_url": "https://x.com/esalen",
+      "tiktok_url": null,
+      "contact_email": "info@esalen.org",
+      "image_urls": [
+        "https://yt3.googleusercontent.com/ofzOVdo4iWH2NyteWBTTYw3nt8hsLIKEkd9DAz6zd187ce-qX8dZIY8uZGNtx6OQH1F2UurA=s900-c-k-c0x00ffffff-no-rj",
+        "https://cdn.prod.website-files.com/602d8561ae2fe611c947c905/641b40900d1b16cab81dfb37_About-intro-QSternPhotography_Esalen-2022-6-wide.jpg"
+      ]
+    }
+  },
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Esalen Workshops",
+      "url": "https://www.esalen.org/learn/workshops",
+      "description": "Esalen's year-round calendar of residential workshops in Big Sur, mostly weekends or five-day weeks, led by visiting and resident faculty across meditation, movement, the arts, relationships, psychology and more. Prices are all-inclusive and depend on the room chosen, from a sleeping-bag space to a private room.",
+      "price": "From $560 USD (weekend, all-inclusive)",
+      "product_type": "retreat",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "spirituality",
+        "meditation",
+        "consciousness"
+      ],
+      "image": "https://cdn.prod.website-files.com/602d8561ae2fe611c947c905/641b40900d1b16cab81dfb37_About-intro-QSternPhotography_Esalen-2022-6-wide.jpg"
+    },
+    {
+      "title": "Self-Guided Explorations",
+      "url": "https://www.esalen.org/learn/self-guided-explorations",
+      "description": "A personal retreat at Esalen without a set workshop. Guests join opening and closing circles with their group and choose freely from open classes in yoga, breathwork, meditation, dance and the arts, or simply rest and use the baths. Massage and other sessions cost extra.",
+      "price": "From $940 USD (5 days, all-inclusive)",
+      "product_type": "retreat",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "yoga",
+        "breathwork"
+      ],
+      "image": "https://cdn.prod.website-files.com/602d8561ae2fe611c947c905/641b40900d1b16cab81dfb37_About-intro-QSternPhotography_Esalen-2022-6-wide.jpg"
+    },
+    {
+      "title": "Esalen Massage School",
+      "url": "https://www.esalen.org/learn/esalen-massage-school",
+      "description": "Training in the Esalen Massage method, which pairs touch with mindful attention, from introductory weekends to practitioner courses at three levels of 175, 250 and 500 hours. Certified teachers also run approved courses away from Big Sur.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "mindfulness"
+      ],
+      "image": "https://yt3.googleusercontent.com/ofzOVdo4iWH2NyteWBTTYw3nt8hsLIKEkd9DAz6zd187ce-qX8dZIY8uZGNtx6OQH1F2UurA=s900-c-k-c0x00ffffff-no-rj"
+    },
+    {
+      "title": "Work Scholar Program",
+      "url": "https://www.esalen.org/learn/work-scholar-program",
+      "description": "A three-month live-in service residency. Work scholars spend most of the week in the kitchen or housekeeping teams, with time on the farm and garden, alongside a curriculum on presence, meditation and embodied inquiry led by Esalen faculty.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://yt3.googleusercontent.com/ofzOVdo4iWH2NyteWBTTYw3nt8hsLIKEkd9DAz6zd187ce-qX8dZIY8uZGNtx6OQH1F2UurA=s900-c-k-c0x00ffffff-no-rj"
+    },
+    {
+      "title": "Self-Guided Explorations: Week of November 9–13, 2026",
+      "url": "https://www.esalen.org/workshops/self-guided-explorations-week-of-november-9-13-2026",
+      "description": "A five-day open stay run by Esalen's resident teachers: welcome and closing circles, then drop-in classes in yoga, meditation, movement and creative practice, with the baths and grounds to enjoy at one's own pace.",
+      "price": "From $940 USD (all-inclusive)",
+      "product_type": "retreat",
+      "start_date": "2026-11-09",
+      "end_date": "2026-11-13",
+      "subjects": [
+        "meditation",
+        "yoga",
+        "mindfulness"
+      ],
+      "image": "https://cdn.prod.website-files.com/602d8561ae2fe611c947c905/641b40900d1b16cab81dfb37_About-intro-QSternPhotography_Esalen-2022-6-wide.jpg"
+    },
+    {
+      "title": "Self-Guided Explorations: Week of November 23–27, 2026",
+      "url": "https://www.esalen.org/workshops/self-guided-explorations-week-of-november-23-27-2026",
+      "description": "Thanksgiving week at Esalen as a self-paced retreat: a cohort that opens and closes together, open classes led by resident faculty, and plenty of unscheduled time on the coast.",
+      "price": "From $940 USD (all-inclusive)",
+      "product_type": "retreat",
+      "start_date": "2026-11-23",
+      "end_date": "2026-11-27",
+      "subjects": [
+        "meditation",
+        "yoga",
+        "mindfulness"
+      ],
+      "image": "https://cdn.prod.website-files.com/602d8561ae2fe611c947c905/641b40900d1b16cab81dfb37_About-intro-QSternPhotography_Esalen-2022-6-wide.jpg"
+    },
+    {
+      "title": "Self-Guided Explorations: Week of December 14–18, 2026",
+      "url": "https://www.esalen.org/workshops/self-guided-explorations-week-of-december-14-18-2026",
+      "description": "A December week of unstructured retreat in Big Sur, with optional daily classes from the resident teaching team in movement, meditation, writing and the arts, framed by group circles.",
+      "price": "From $940 USD (all-inclusive)",
+      "product_type": "retreat",
+      "start_date": "2026-12-14",
+      "end_date": "2026-12-18",
+      "subjects": [
+        "meditation",
+        "yoga",
+        "mindfulness"
+      ],
+      "image": "https://cdn.prod.website-files.com/602d8561ae2fe611c947c905/641b40900d1b16cab81dfb37_About-intro-QSternPhotography_Esalen-2022-6-wide.jpg"
+    },
+    {
+      "title": "Self-Guided Explorations: Week of January 4–8, 2027",
+      "url": "https://www.esalen.org/workshops/self-guided-explorations-week-of-january-4-8-2027",
+      "description": "A new-year week of self-directed retreat at Esalen. Guests set their own rhythm, drawing on open classes led by resident faculty, the hot springs baths and the cliff-top grounds.",
+      "price": "From $940 USD (all-inclusive)",
+      "product_type": "retreat",
+      "start_date": "2027-01-04",
+      "end_date": "2027-01-08",
+      "subjects": [
+        "meditation",
+        "yoga",
+        "mindfulness"
+      ],
+      "image": "https://cdn.prod.website-files.com/602d8561ae2fe611c947c905/641b40900d1b16cab81dfb37_About-intro-QSternPhotography_Esalen-2022-6-wide.jpg"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Voices of Esalen",
+      "url": "https://www.esalen.org/story",
+      "description": "Esalen's free podcast, hosted by Sam Stern: interviews with authors, scientists and teachers on the human potential movement, alongside restored archive talks recorded at Esalen since the 1960s.",
+      "featured": true,
+      "resource_type": "practice",
+      "subjects": [
+        "consciousness",
+        "spirituality"
+      ],
+      "image": "https://yt3.googleusercontent.com/ofzOVdo4iWH2NyteWBTTYw3nt8hsLIKEkd9DAz6zd187ce-qX8dZIY8uZGNtx6OQH1F2UurA=s900-c-k-c0x00ffffff-no-rj"
+    },
+    {
+      "title": "Esalen on YouTube",
+      "url": "https://www.youtube.com/@esaleninstitute",
+      "description": "Several hundred free videos from Esalen: talks by faculty, archive footage, short films about the campus and recordings of public events.",
+      "featured": false,
+      "resource_type": "practice",
+      "subjects": [
+        "spirituality",
+        "consciousness"
+      ],
+      "image": "https://yt3.googleusercontent.com/ofzOVdo4iWH2NyteWBTTYw3nt8hsLIKEkd9DAz6zd187ce-qX8dZIY8uZGNtx6OQH1F2UurA=s900-c-k-c0x00ffffff-no-rj"
+    },
+    {
+      "title": "CTR Journal",
+      "url": "https://www.esalen.org/ctr/ctr-journal",
+      "description": "Free online journal of Esalen's Center for Theory & Research, with themed volumes on subjects such as somatics, political polarisation and conscious business.",
+      "featured": false,
+      "resource_type": "download",
+      "subjects": [
+        "consciousness",
+        "conscious-science"
+      ],
+      "image": "https://yt3.googleusercontent.com/ofzOVdo4iWH2NyteWBTTYw3nt8hsLIKEkd9DAz6zd187ce-qX8dZIY8uZGNtx6OQH1F2UurA=s900-c-k-c0x00ffffff-no-rj"
+    }
+  ],
+  "sprint": {
+    "tier_evidence": "Instagram 99K (og:description, @esalen, 1 Nov 2026); Facebook 87,042 (og:description, facebook.com/EsalenInstitute, 1 Nov 2026); YouTube 8.75K (channel header next to @esaleninstitute, 448 videos, 1 Nov 2026) -> ~194.8k total -> luminary. X (@esalen) not counted: count needs login. No TikTok linked.",
+    "tier_override": "superhero by editorial stature (default, as Omega; owner to confirm): founded 1962 and widely seen as the birthplace of the human potential movement; Esalen's own pages describe 17,000 participants in nearly 600 seminars a year. Computed tier from ~194.8k summed followers was luminary.",
+    "email": "yes",
+    "email_source": "https://www.esalen.org/contact (info@esalen.org, 'Call 831-667-3000 or email us at info@esalen.org'; also in the footer of every page)",
+    "contact_form_url": null,
+    "flags": [
+      "Tier override applied by default (superhero by editorial stature, as Omega); owner to confirm.",
+      "Availability set to 'local': Esalen runs no regular online programme; it has run occasional online history classes through Eventbrite.",
+      "Highway 1 travel advisory on every page: visitors reach Big Sur by twice-daily Caltrans convoys; one banner still says 'closed through April 11'. Worth a check before launch.",
+      "The dated retreats are Self-Guided Explorations weeks (resident faculty, Esalen's own programme); Esalen has no other house-led dated programmes on the calendar. Weekend dates exist too but their pages show the same $940 five-day rate, so only weeks are listed.",
+      "Workshops price 'From $560 USD' is the all-inclusive weekend rate for a sleeping-bag space on the accommodations page; workshop-specific fees can be extra.",
+      "No contact form: the contact page lists phone and department email addresses only.",
+      "Voices of Esalen has no landing page of its own (esalen.org/podcasts is a 404); linked to the Story page where episodes are listed.",
+      "Massage School subjects: no massage subject in the list; tagged mindfulness only.",
+      "Organisation, not School."
+    ],
+    "left_out": [
+      "Guest-led workshops (the teachers' own listings carry them).",
+      "Workshops framed around conditions (e.g. ADHD, injury re-education, trauma) under the health rule.",
+      "Healing Arts massage and holistic sessions bookable on campus (services).",
+      "Off-campus history events (one-off, hosted by other venues), shop and memberships."
+    ],
+    "sources": [
+      "https://www.esalen.org/about",
+      "https://www.esalen.org/contact",
+      "https://www.esalen.org/learn/self-guided-explorations",
+      "https://www.esalen.org/learn/esalen-massage-school",
+      "https://www.esalen.org/learn/work-scholar-program",
+      "https://www.esalen.org/visit/accommodations-and-tuition",
+      "https://en.wikipedia.org/wiki/Esalen_Institute"
+    ],
+    "bio_check": "OK: no 8-word runs against 23 source(s)"
+  },
+  "notes": [
+    "Hub (README §18.7): Organisation, superhero by editorial stature (default, owner to confirm); computed tier luminary from ~194.8k readable followers.",
+    "Teacher pipeline: esalen-faculty.json / esalen-teachers.json, linked 'Teaches at Esalen Institute'."
+  ],
+  "images_final": true
+}
