@@ -3890,8 +3890,8 @@
    "contact_form_seen": true,
    "in_person_words": true,
    "hub_bio_extract": "Paul Heussenstamm mandalas.com Paul Heussenstamm is a painter and teacher residing in Laguna Beach, California. He began painting full-time at the age of 36 as he discovered his love for mandalas. He has since traveled worldwide conducting \"Art as a Spiritual Path\" workshops. The mandala has become his signature motif reflecting mystical symbolism, wholeness, and unified energy. His vibrant sacred",
-   "status": "todo",
-   "plan": null,
+   "status": "planned",
+   "plan": "docs/content-audits/paul-heussenstamm.json",
    "skip_reason": null
   },
   {
@@ -4059,7 +4059,7 @@
    "contact_form_seen": true,
    "in_person_words": false,
    "hub_bio_extract": "Lucia Horan www.luciahoran.com Lucia Horan was born in 1976 on the sacred land of Esalen in Big Sur. She was raised in the Esalen community and taught the practices that were developed by those who came before her. She was certified as an Esalen® Massage practitioner in 1994. She became a Hatha & Ashtanga yoga teacher in 1997. Lucia received lifelong direct training with Gabrielle Roth in the 5Rhy",
-   "status": "planned",
+   "status": "dev",
    "plan": "docs/content-audits/lucia-horan.json",
    "skip_reason": null
   },
@@ -4084,7 +4084,7 @@
    "contact_form_seen": true,
    "in_person_words": false,
    "hub_bio_extract": "Odeya Nini OdeyaNini.com Odeya Nini is an interdisciplinary vocalist, composer, sound healing practitioner, and transformative facilitator whose work bridges the worlds of somatic practice, experimental sound, and vocal liberation. With a background in jazz vocals, classical composition, yoga training and a deep commitment to embodied inquiry, she guides participants into an intimate relationship ",
-   "status": "planned",
+   "status": "dev",
    "plan": "docs/content-audits/odeya-nini.json",
    "skip_reason": null
   },
@@ -4159,8 +4159,8 @@
    "contact_form_seen": true,
    "in_person_words": false,
    "hub_bio_extract": "Lihi Benisty www.lihibe.com Lihi Benisty guides immersive somatic experiences rooted in breath, movement, and self-inquiry. Her poetic approach to self-inquiry fosters emotional resilience, inner confidence, and embodied presence —- inviting students to honor their full humanity and live from a place of depth. Lihi leads a dynamic blend of somatic practices to navigate emotional landscapes. She is",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/lihi-benisty.json",
    "skip_reason": null
   },
   {
@@ -4857,5 +4857,5 @@
    "skip_reason": null
   }
  ],
- "updated": "2026-11-01T15:10:34.820Z"
+ "updated": "2026-11-01T15:12:06.454Z"
 }

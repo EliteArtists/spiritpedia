@@ -1,0 +1,172 @@
+{
+  "healer": {
+    "healer_slug": "leah-diamond",
+    "create": {
+      "name": "Leah Diamond",
+      "bio": "Leah Diamond is a mindfulness meditation teacher and communication mentor whose background spans more than four decades of acting and performing, a degree in psychology, and years running human resources and corporate communications for large technology firms. She began meditating formally in 1997, sat her first ten-day Vipassana retreat in 2009 and later took up Vajrayana practice, and she completed the two-year Mindfulness Meditation Teacher Certification Program led by Jack Kornfield and Tara Brach. She is also a Reiki Master practitioner and a certified counsellor and coach, and presents workshops with the Human Awareness Institute.\n\nHer one-to-one mentoring helps professionals and leaders speak with steadier presence, drawing on mindfulness, body awareness and the listening skills she once taught actors through the Meisner technique. She also brings mindfulness sessions into workplaces and records short guided practices for the Insight Timer app. At Esalen she co-leads Pleasure Alchemy with Tony Holmes and shiloh burton, a week of touch, movement, sound and ritual that approaches sensual awareness and emotional intelligence as a spiritual practice.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "worldwide",
+      "city": null,
+      "country": null,
+      "subjects": [
+        "mindfulness",
+        "life-coaching",
+        "meditation"
+      ],
+      "website_url": "https://www.leahdiamond.com/",
+      "booking_url": "https://www.leahdiamond.com/mentoring",
+      "youtube_url": null,
+      "instagram_url": "https://www.instagram.com/leahelisediamond/",
+      "facebook_url": "https://www.facebook.com/leah.diamond",
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "leahediamond@gmail.com",
+      "image_urls": [
+        "https://images.squarespace-cdn.com/content/v1/5c3834dab10598e5f9b4fb75/1553559287419-26NB7679RAAYMDLYVJJ7/Leah_Diamond-2196.jpg?format=1000w",
+        "https://images.squarespace-cdn.com/content/v1/5c3834dab10598e5f9b4fb75/1548032032637-K9OQNCWJAHJTL81Z06FM/Leah3_DW_2-2.jpg?format=1000w",
+        "https://images.squarespace-cdn.com/content/v1/5c3834dab10598e5f9b4fb75/1548037124587-93ZKQ5VEU4M7B9RTN7H0/Leah1_DW_2-2.jpg?format=1000w"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "esalen",
+      "role": "instructor"
+    }
+  ],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Pleasure Alchemy: Deepening Emotional Intelligence Through Rituals and Sensual Somatics",
+      "url": "https://www.esalen.org/workshops/pleasure-alchemy-deepening-emotional-intelligence-through-rituals-and-sensual-somatics-122126",
+      "description": "A five-day Christmas week at Esalen in Big Sur, co-led with Tony Holmes and shiloh burton. Participants work with breath, movement, consensual touch, mirror work, sound and journaling to explore pleasure and self-acceptance in community; sensuality is invited but nothing overtly sexual takes place.",
+      "price": "From $940 USD (all-inclusive)",
+      "product_type": "retreat",
+      "start_date": "2026-12-21",
+      "end_date": "2026-12-25",
+      "subjects": [
+        "conscious-relationships",
+        "breathwork",
+        "mindfulness"
+      ],
+      "image": "https://cdn.prod.website-files.com/602d8561ae2fe6ec8347c903/696827893dc8e18aa9fc9b78_6966b813632c65208dbb349b_2025-Esalen_plants-succulents-1500x775.jpeg"
+    },
+    {
+      "title": "Mentoring & Empowered Presence",
+      "url": "https://www.leahdiamond.com/mentoring",
+      "description": "Individual mentoring for people who want to speak and lead with more ease, whether for a talk, a video or everyday conversations. Sessions combine mindfulness, embodiment and voice work, and start with a booked introductory call.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "life-coaching",
+        "mindfulness"
+      ],
+      "image": "http://static1.squarespace.com/static/5c3834dab10598e5f9b4fb75/t/6285c09641abae303d959366/1652932758689/Screen+Shot+2022-05-18+at+8.59.00+PM.png?format=1500w"
+    },
+    {
+      "title": "Mindfulness at Work",
+      "url": "https://www.leahdiamond.com/corporate",
+      "description": "Custom mindfulness sessions for companies and teams, focused on deep listening, connection and mindful leadership. Programmes are designed around each organisation.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "image": "http://static1.squarespace.com/static/5c3834dab10598e5f9b4fb75/t/6285c09641abae303d959366/1652932758689/Screen+Shot+2022-05-18+at+8.59.00+PM.png?format=1500w"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "You Are An Exquisite Being",
+      "url": "https://insighttimer.com/leahdiamond/guided-meditations/you-are-an-exquisite-being",
+      "description": "A seven-minute guided meditation on Insight Timer inviting kindness and appreciation towards oneself.",
+      "featured": true,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://libraryitems.insighttimer.com/Pw4hrTicDDDmeFsBdlti/pictures/tiny_square_medium.jpeg"
+    },
+    {
+      "title": "Forest Body Attunement",
+      "url": "https://insighttimer.com/leahdiamond/video-guided-meditations/forest-body-attunement",
+      "description": "A six-minute video practice on Insight Timer that tunes attention to the body and the natural world around it.",
+      "featured": false,
+      "resource_type": "meditation",
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "image": "https://libraryitems.insighttimer.com/6vYsZRhDXete5Mlo72SB/pictures/tiny_square_medium.jpeg"
+    },
+    {
+      "title": "Ground Breathe And Intention",
+      "url": "https://insighttimer.com/leahdiamond/video-guided-meditations/ground-breathe-intention",
+      "description": "A six-minute video practice on Insight Timer that moves from grounding through the breath to setting an intention.",
+      "featured": false,
+      "resource_type": "meditation",
+      "subjects": [
+        "mindfulness",
+        "breathwork"
+      ],
+      "image": "https://libraryitems.insighttimer.com/bSAIWeOLTYFEzT2mgXMj/pictures/tiny_square_medium.jpeg"
+    },
+    {
+      "title": "Mindful Reset Noticing",
+      "url": "https://insighttimer.com/leahdiamond/video-guided-meditations/mindful-reset-noticing",
+      "description": "A four-minute video pause on Insight Timer for noticing what is present before returning to the day.",
+      "featured": false,
+      "resource_type": "meditation",
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "image": "https://libraryitems.insighttimer.com/6vz1tDqs36oqy2A8dviT/pictures/tiny_square_medium.jpeg"
+    },
+    {
+      "title": "Grounding Reset",
+      "url": "https://insighttimer.com/leahdiamond/guided-meditations/grounding-reset",
+      "description": "A three-minute audio grounding practice on Insight Timer for a quick moment of steadiness.",
+      "featured": false,
+      "resource_type": "meditation",
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "image": "https://libraryitems.insighttimer.com/kmr0s9rkX4GKngOT2zXC/pictures/tiny_square_medium.jpeg"
+    }
+  ],
+  "sprint": {
+    "hub": "esalen",
+    "rank": 224,
+    "hub_url": "https://www.esalen.org/faculty/leah-diamond",
+    "tier_evidence": "Instagram 570 (og:description of instagram.com/leahelisediamond, 1 Nov 2026); Facebook (facebook.com/leah.diamond) count not readable without logging in; Insight Timer follower count not shown on her public profile; no YouTube channel found → ~0.6k readable total → local_hero",
+    "email": "yes",
+    "email_source": "https://www.leahdiamond.com/connect",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 9 source(s)",
+    "flags": [
+      "Her site is now framed mostly as executive and communication coaching ('transform anxiety into grounded confidence', 'burnout solutions' on the Integration Edge page); the spiritual side is her mindfulness teaching, Insight Timer practices and the Esalen workshop. A reviewer may want to confirm she fits the directory.",
+      "The Esalen Pleasure Alchemy workshop deals with sensuality, erotic shame and consensual touch, and its page calls pleasure 'medicine' and 'healing'; no condition is named, so it was kept, with neutral wording.",
+      "She has an Insight Timer teacher profile (insighttimer.com/leahdiamond) but is not in insight-timer-faculty.json or linked to it on Spiritpedia, so insight-timer was not added to teaches_at (following earlier plans); the owner may want it.",
+      "No city or physical base is published (her bio mentions the Bay Area and Los Angeles as past acting bases), so availability is worldwide.",
+      "Facebook count could not be read (main account); tier rests on Instagram only.",
+      "Co-leaders Tony Holmes and shiloh burton are not in the sprint queue."
+    ],
+    "left_out": [
+      "The Integration Edge private mentorship (leahdiamond.com/eqsuccess): its topic list includes burnout and 'beyond therapy' framing (health rule, borderline).",
+      "Mindfulness for Relationships in the Time of Corona (events page): passed, and its copy cites anxiety and insomnia.",
+      "SoulPlay festival (June 2027): a third-party festival where she presents; dates and price not on its own page here.",
+      "Insight Timer videos 'Joygasm' and 'Self-Regulation Reset': left out as the five-item limit was reached (the second is also nervous-system framed).",
+      "bNirvana app series and a past documentary project: not verifiable as current."
+    ]
+  }
+}

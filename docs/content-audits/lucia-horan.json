@@ -1,0 +1,236 @@
+{
+  "healer": {
+    "healer_slug": "lucia-horan",
+    "create": {
+      "name": "Lucia Horan",
+      "bio": "Lucia Horan was born at Esalen in Big Sur in 1976 and grew up inside its community, qualifying in Esalen massage as a teenager and later as a teacher of Hatha and Ashtanga yoga. Her main work comes from many years of study with Gabrielle Roth, who created the 5Rhythms dance practice, and she has led 5Rhythms classes since 1998. Since 2005 she has also followed the Theravada insight meditation path, learning chiefly from Robert Hall, and she has completed a Buddhist teacher training in the Western lineage associated with Noah Levine and Jack Kornfield. Her essay on movement and insight appears in the anthology Dancing with Dharma, edited by Harrison Blum.\n\nIn her classes the five rhythms of Flowing, Staccato, Chaos, Lyrical and Stillness are paired with periods of seated meditation, and she often frames the dance around the Buddhist heart qualities of kindness, compassion, joy and equanimity. She describes herself as a fellow practitioner rather than a master. Now based in Wellington, New Zealand, with her husband and fellow 5Rhythms teacher Douglas Drummond, she runs local class series there and travels to lead weekend workshops and week-long retreats in the United States, Europe and at Esalen. Filmed sessions of her Heartbeat series are sold online, and she mentors dancers and newer 5Rhythms teachers.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local_online",
+      "city": "Wellington",
+      "country": "New Zealand",
+      "subjects": [
+        "meditation",
+        "mindfulness",
+        "spirituality"
+      ],
+      "website_url": "https://www.luciahoran.com/",
+      "booking_url": "https://www.luciahoran.com/schedule",
+      "youtube_url": "https://www.youtube.com/@luciahoran8539",
+      "instagram_url": "https://www.instagram.com/luciahoran5/",
+      "facebook_url": "https://www.facebook.com/lucia.r.horan",
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "admin@luciahoran.me",
+      "image_urls": [
+        "https://images.squarespace-cdn.com/content/v1/58112b5e2e69cfc85dffa403/1499443615444-8YO3JZ4YXL2HM6LG4TQA/Lucia_NEW_headshot.jpg?format=1000w",
+        "https://images.squarespace-cdn.com/content/v1/58112b5e2e69cfc85dffa403/fece39c3-b2c5-4d0b-9909-c32a14e0c4fb/Lucia_872.JPG?format=1000w"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "esalen",
+      "role": "instructor"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Lucia Horan – 5Rhythms Teaching (Douglas Drummond)",
+      "url": "https://www.youtube.com/watch?v=ediIPmM_yiM",
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "channel": "Lucia Horan"
+    },
+    {
+      "title": "Lucia Horan -5Rhythms (Human Dolphin Connection)",
+      "url": "https://www.youtube.com/watch?v=6VlCBah1pi4",
+      "subjects": [
+        "mindfulness",
+        "spirituality"
+      ],
+      "channel": "Lucia Horan"
+    },
+    {
+      "title": "Lucia Horan – 5Rhythms Teaching",
+      "url": "https://www.youtube.com/watch?v=VsFyMOsya6Y",
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "channel": "Lucia Horan"
+    },
+    {
+      "title": "Lucia Horan – 5Rhythms Teaching (A Teaching from Gabrielle)",
+      "url": "https://www.youtube.com/watch?v=Iawe_n-46jo",
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "channel": "Lucia Horan"
+    },
+    {
+      "title": "Lucia Horan – 5Rhythms Teaching",
+      "url": "https://www.youtube.com/watch?v=TVvulPLsAyg",
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "channel": "Lucia Horan"
+    },
+    {
+      "title": "Lucia Horan - 5Rhythms Compassion & Connection (Interview with Layah Jane)",
+      "url": "https://www.youtube.com/watch?v=cvxv_u0uBT0",
+      "subjects": [
+        "meditation",
+        "mindfulness",
+        "spirituality"
+      ],
+      "channel": "Lucia Horan"
+    },
+    {
+      "title": "\"BRIDGING HEAVEN AND EARTH\" INTERVIEW WITH Lucia Horan",
+      "url": "https://www.youtube.com/watch?v=dRGPYx3SZcc",
+      "subjects": [
+        "spirituality",
+        "meditation"
+      ],
+      "channel": "International Healing Arts"
+    }
+  ],
+  "books": [
+    {
+      "title": "Dancing with Dharma: Essays on Movement and Dance in Western Buddhism",
+      "slug": "dancing-with-dharma",
+      "author": "Harrison Blum (editor), with Lucia Horan and others",
+      "asin": "0786498099",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "An anthology from McFarland in which Buddhist practitioners and dance teachers write about how moving the body fits with meditation practice in the West. Lucia Horan contributes a chapter drawing on her years of joining 5Rhythms dance with insight meditation.",
+      "subjects": [
+        "meditation",
+        "mindfulness",
+        "ancient-wisdom"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/0786498099.01._SCLZZZZZZZ_.jpg"
+    }
+  ],
+  "courses": [
+    {
+      "title": "Gateways: A 5Rhythms® Movement & Mindfulness Retreat",
+      "url": "https://www.esalen.org/workshops/gateways-a-5rhythms-r-movement-mindfulness-retreat-122826",
+      "description": "A seven-day New Year retreat at Esalen in Big Sur, co-led with Douglas Drummond and accompanied by live drummers and musicians. Long sessions of 5Rhythms dance alternate with sitting practice, marking the turn of the year. Beginners are welcome.",
+      "price": "From $940 USD (all-inclusive), plus $120 USD faculty tuition",
+      "product_type": "retreat",
+      "start_date": "2026-12-28",
+      "end_date": "2027-01-03",
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "image": "https://cdn.prod.website-files.com/602d8561ae2fe6ec8347c903/6966e2ae6faf5c11edd43e38_6966c359cdd60ad349f2dbe0_2025-Esalen_baths-roof-architecture-view_Angie-Smith-1500x775.jpeg"
+    },
+    {
+      "title": "Trance & Transformation: A 5Rhythms® & Mindfulness Immersion",
+      "url": "https://thehorseshoefarm.secure.retreat.guru/program/trance-transformation-a-5rhythms-mindfulness-immersion/",
+      "description": "A three-day residential weekend at The Horse Shoe Farm near Hendersonville, North Carolina, with singer Leah Song of Rising Appalachia as guest. The days weave dance, mindfulness, song and stillness.",
+      "price": "From $1,305.50 USD (shared room)",
+      "product_type": "retreat",
+      "start_date": "2027-01-08",
+      "end_date": "2027-01-10",
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "image": "https://thehorseshoefarm.secure.retreat.guru/wp-content/uploads/sites/8331/2026/08/Trance-Transformation-A-5Rhythms%C2%AE-Mindfulness-Immersion-1.png"
+    },
+    {
+      "title": "Maps to Ecstasy: A 5Rhythms Weekend with Lucia Horan and Leah Song",
+      "url": "https://www.viewcy.com/event/maps_to_ecstasy_a_5r",
+      "description": "A non-residential weekend workshop at the Moving in the Spirit studio in Atlanta, shared with Leah Song. It brings together 5Rhythms dance, meditation and group singing.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": "2027-01-15",
+      "end_date": "2027-01-17",
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "image": "https://www.viewcy.com/api/og/event/maps_to_ecstasy_a_5r?v=1bu4euz"
+    },
+    {
+      "title": "5Rhythms® Heartbeat All 5 Sessions",
+      "url": "https://www.luciahoran.com/store/p/5rhythms-heartbeat-all-5-sessions",
+      "description": "Five filmed classes of roughly two and a half hours each, recorded live, that move through the emotional map Gabrielle Roth called Heartbeat. Buyers receive a private link to stream the recordings; single sessions can also be bought separately.",
+      "price": "$475 USD",
+      "product_type": "download",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "image": "http://static1.squarespace.com/static/58112b5e2e69cfc85dffa403/68a5e068647b3769335d6653/68aa285678e7345c36e2c8ef/1788070362043/Lucia_872.JPG?format=1500w"
+    },
+    {
+      "title": "5Rhythms Mentoring",
+      "url": "https://www.luciahoran.com/mentoring-5rhythms",
+      "description": "One-to-one guidance for dancers who want to understand their own practice of the 5Rhythms more fully. Sessions offer themes and exercises to take into class and a closer look at the philosophy behind Roth's maps.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "mindfulness",
+        "spirituality"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/58112b5e2e69cfc85dffa403/32142211-7339-4ff3-9403-03534643b039/Contact.jpg"
+    },
+    {
+      "title": "5Rhythms Teacher Mentoring",
+      "url": "https://www.luciahoran.com/teachermentor",
+      "description": "Mentoring for certified or trainee 5Rhythms teachers. It covers holding workshops and retreats, music and sound, explaining the practice clearly, and keeping a group safe.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "mindfulness"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/58112b5e2e69cfc85dffa403/32142211-7339-4ff3-9403-03534643b039/Contact.jpg"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "hub": "esalen",
+    "rank": 221,
+    "hub_url": "https://www.esalen.org/faculty/lucia-horan",
+    "tier_evidence": "Facebook 6,876 (og:description of facebook.com/lucia.r.horan, 1 Nov 2026); Instagram 2,616 (og:description of instagram.com/luciahoran5, 1 Nov 2026); YouTube 752 (channel header, @luciahoran8539, 1 Nov 2026) → ~10.2k total → local_hero",
+    "email": "yes",
+    "email_source": "https://www.luciahoran.com/",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 19 source(s)",
+    "flags": [
+      "Her husband Douglas Drummond (queue rank 201, still todo) co-leads the Esalen Gateways retreat and appears in one video title; the queue does not mark them as a pair, so this is a separate listing. Check against his plan for a possible combined listing.",
+      "Dancing with Dharma is an anthology edited by Harrison Blum; she contributed a chapter rather than authoring the book, so the author field names the editor first.",
+      "Her home page carries a list headed 'The 10 Health Benefits of Dance' (heart disease, cholesterol, weight and so on); none of it was used, but a reviewer may want to weigh it.",
+      "City Wellington is from her hub bio and site ('Soul to Sole' class series in New Zealand); no studio address is published.",
+      "Two of her channel videos share the title 'Lucia Horan – 5Rhythms Teaching'; both kept as different clips. YouTube showed her channel titles translated into Portuguese; titles were taken from oEmbed (originals).",
+      "The Esalen page shows the standard 5-day rate list (from $940) on this 7-day retreat plus $120 faculty tuition; price written as shown.",
+      "Videos ediIPmM_yiM (2:10) and Iawe_n-46jo (3:07) are short clips just over the two-minute floor."
+    ],
+    "left_out": [
+      "Buddhist Coaching (luciahoran.com/buddhistcoaching): lists addiction, trauma and recovery issues among its themes (health rule).",
+      "Individual Heartbeat and Waves sessions ($100 USD each): covered by the bundle item; single Waves session store URLs not found.",
+      "Gateways 5Rhythms workshop, Oct–Nov 2026 (Humanitix): already started.",
+      "Later 2027 dates (Santa Fe, Brooklyn, Esalen July and October, Brugge, Los Angeles): registration not yet open; Esalen October 2027 workshop titles also name trauma and 'wounded healer'.",
+      "Short clips under two minutes (Dawna Markova, Tony Robbins, 5Rhythms Flowing, one Teaching clip) and dance-only films on other channels (Content Engine, Truth W. Hawk, Ashley Bruni).",
+      "Gabrielle Roth videos on her media page: not her teaching.",
+      "No free meditations or downloads found on her site."
+    ]
+  },
+  "images_final": true
+}
