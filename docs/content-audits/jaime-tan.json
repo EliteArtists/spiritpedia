@@ -1,0 +1,218 @@
+{
+  "healer": {
+    "healer_slug": "jaime-tan",
+    "create": {
+      "name": "Jaime Tan",
+      "bio": "Jaime Tan teaches meditation and Yoga Nidra from her home in Zürich, and also leads production teams for a large international organisation. Born and raised in Singapore, she has lived in Boston, Cape Town, Sydney and Amsterdam, and has spent more than twenty years studying and teaching meditation and yoga. Her training sits in the Insight Meditation tradition, with long-term study of Insight Yoga, mindfulness and iRest Yoga Nidra with senior teachers such as Jack Kornfield, Tara Brach, Sarah Powers and Richard Miller, and she studied nutrition and wellness before her focus moved to contemplative practice.\n\nHer teaching is aimed at people carrying heavy workloads who want a steadier relationship with effort and rest. On YouTube and Insight Timer she shares short guided meditations, Yoga Nidra and non-sleep deep rest sessions, gentle after-work yoga and reflections on going on silent retreat, and her Insight Timer course builds a week of brief breathing, visualisation and journalling pauses into the working day. She has taught classes in studios and workplaces for many years, now gives talks and workshops on mindful leadership, attention and rest for companies, in person or online, and writes a monthly email of reflections and simple practices.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local_online",
+      "city": "Zürich",
+      "country": "Switzerland",
+      "subjects": [
+        "meditation",
+        "mindfulness",
+        "yoga"
+      ],
+      "website_url": "https://enlightenedspoon.com/",
+      "booking_url": "https://enlightenedspoon.com/speaking",
+      "youtube_url": "https://www.youtube.com/@jaimetan",
+      "instagram_url": "https://www.instagram.com/enlightenedspoon",
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": null,
+      "image_urls": [
+        "https://yt3.googleusercontent.com/ytc/AIdro_njn5n1MZaa_HCtby5OpEokaYmG1S8MO5YSPQ3jFxSSlPA=s900",
+        "https://images.squarespace-cdn.com/content/v1/550575efe4b01d7294f5f466/1588760673838-YIKC68TGV7HIO7PKUQAG/Jaime+Tan+Profile?format=1000w"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "insight-timer",
+      "role": "instructor"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Yoga After Work: HIP STRETCH",
+      "url": "https://www.youtube.com/watch?v=P1uzQCBxROU",
+      "subjects": [
+        "yoga"
+      ],
+      "channel": "Jaime Tan - Enlightened Spoon"
+    },
+    {
+      "title": "Afternoon Meditation for POSITIVITY",
+      "url": "https://www.youtube.com/watch?v=Hwps7eVtvM8",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "channel": "Jaime Tan - Enlightened Spoon"
+    },
+    {
+      "title": "Yoga Nidra NSDR Nervous System | Midday Break",
+      "url": "https://www.youtube.com/watch?v=jVKvFQd7J5o",
+      "subjects": [
+        "yoga",
+        "meditation"
+      ],
+      "channel": "Jaime Tan - Enlightened Spoon"
+    },
+    {
+      "title": "You’re Meditating WRONG - 7 Mistakes",
+      "url": "https://www.youtube.com/watch?v=20ReDOxIoEs",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "channel": "Jaime Tan - Enlightened Spoon"
+    },
+    {
+      "title": "Why I keep returning to SILENT RETREATS regularly",
+      "url": "https://www.youtube.com/watch?v=WJGmBwGqMQ8",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "channel": "Jaime Tan - Enlightened Spoon"
+    },
+    {
+      "title": "Morning Meditation: Intention Setting, Sitting In Presence",
+      "url": "https://www.youtube.com/watch?v=DkxxlvlfhP4",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "channel": "Jaime Tan - Enlightened Spoon"
+    },
+    {
+      "title": "Morning Meditation for POSITIVITY & PRODUCTIVITY",
+      "url": "https://www.youtube.com/watch?v=rb1hyJjzVxY",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "channel": "Jaime Tan - Enlightened Spoon"
+    },
+    {
+      "title": "Yoga Nidra: Develop Your INNER RESOURCE (your happy place within) | iRest® Yoga Nidra",
+      "url": "https://www.youtube.com/watch?v=wg1XzyOi2e0",
+      "subjects": [
+        "yoga",
+        "meditation"
+      ],
+      "channel": "Jaime Tan - Enlightened Spoon"
+    },
+    {
+      "title": "Savasana After Yoga | Yoga Nidra Body Scan",
+      "url": "https://www.youtube.com/watch?v=Pp37c9V1wEY",
+      "subjects": [
+        "yoga",
+        "meditation"
+      ],
+      "channel": "Jaime Tan - Enlightened Spoon"
+    },
+    {
+      "title": "Why Yin Yoga Feels So Hard (and Why That’s the Point)",
+      "url": "https://www.youtube.com/watch?v=oMYOEtKqVeY",
+      "subjects": [
+        "yoga",
+        "mindfulness"
+      ],
+      "channel": "Jaime Tan - Enlightened Spoon"
+    },
+    {
+      "title": "Why Rest Feels So Hard (and Why We Need It)",
+      "url": "https://www.youtube.com/watch?v=AZt6o-MA1JU",
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "channel": "Jaime Tan - Enlightened Spoon"
+    }
+  ],
+  "books": [],
+  "courses": [
+    {
+      "title": "Pause & Thrive: Create Mini Moments Of Resilience",
+      "url": "https://insighttimer.com/meditation-courses/pause-thrive-create-mini-moments-of-resilience",
+      "description": "A seven-day Insight Timer course for busy workdays. Short breathing exercises for checking in, settling and focusing lead to a guided visualisation and a closing Yoga Nidra, with journalling prompts and ideas for fitting brief pauses into the day.",
+      "price": "Included in Member Plus ($59.99 USD a year)",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "mindfulness",
+        "breathwork",
+        "meditation"
+      ],
+      "image": "https://yt3.googleusercontent.com/ytc/AIdro_njn5n1MZaa_HCtby5OpEokaYmG1S8MO5YSPQ3jFxSSlPA=s900"
+    },
+    {
+      "title": "Talks & Workshops: Practical Mindfulness for Sustainable Performance",
+      "url": "https://enlightenedspoon.com/speaking",
+      "description": "Talks and workshops of thirty to ninety minutes for teams and leaders, in person or online, on attention, rest as a skill, steady leadership and small daily practices drawn from mindfulness and Yoga Nidra.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "image": "http://static1.squarespace.com/static/550575efe4b01d7294f5f466/t/695fa5bf8643ea7bec489dfa/1767876031649/IMG_6855.png?format=1500w"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Jaime Tan on Insight Timer",
+      "url": "https://insighttimer.com/enlightenedspoon",
+      "description": "Jaime's guided meditations and Yoga Nidra practices for pausing and resting during a full working life, free to hear in the app or on the web.",
+      "featured": true,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation",
+        "yoga"
+      ],
+      "image": "https://yt3.googleusercontent.com/ytc/AIdro_njn5n1MZaa_HCtby5OpEokaYmG1S8MO5YSPQ3jFxSSlPA=s900"
+    },
+    {
+      "title": "Yoga Nidra for Deep Rest and Relaxation",
+      "url": "https://www.subscribepage.com/enlightenedspoon-yoga-nidra",
+      "description": "A free Yoga Nidra recording from Jaime, sent by email when you sign up, for lying down and letting the body and mind rest deeply.",
+      "featured": false,
+      "resource_type": "download",
+      "subjects": [
+        "yoga",
+        "meditation"
+      ],
+      "image": "https://bucket.mlcdn.com/a/716/716551/images/9d1f520c7845b6c1b36389e038ff6a5bcecb6c2e.jpeg/80950f4f2a4f5c28bd95f41a238aebb4e7ef1967.jpeg"
+    }
+  ],
+  "sprint": {
+    "hub": "insight-timer",
+    "rank": 259,
+    "insight_timer_url": "https://insighttimer.com/enlightenedspoon",
+    "tier_evidence": "Insight Timer 9.1k (profile via WebFetch, 1 Nov 2026); YouTube 6.65K (@jaimetan header row, 1 Nov 2026); Instagram 1,831 (og:description, @enlightenedspoon, 1 Nov 2026); Facebook not read → ~17.6k total → local_hero",
+    "email": "contact form",
+    "email_source": null,
+    "contact_form_url": "https://enlightenedspoon.com/contact",
+    "bio_check": "OK: no 8-word runs against 9 source(s)",
+    "flags": [
+      "Contact form: the /contact page has a Squarespace form (Name, Email, Subject, Message) that loads with JavaScript; WebFetch and the queue note saw no fields, but the form definition is in the page source. No email is published.",
+      "Her contact page header still offers a free 'Breakthrough Session' on nutrition and fitness from an older version of the site; her current work is meditation, Yoga Nidra and workplace talks.",
+      "Availability set to local_online with Zürich as base: she lives there and gives talks and workshops in person or online, but has no public class schedule. Could be worldwide instead.",
+      "She trained with Sarah Powers, as did Kali Basman (rank 256, skipped)."
+    ],
+    "left_out": [
+      "Videos and free download titled for anxiety or sleep problems ('3 Breath Techniques to REDUCE STRESS + ANXIETY', 'A Moment Of Ease For Your Anxiety', 'Not sleeping so well?' sleep meditation sign-up) and 'Yoga Nidra for Inner Peace and Healing' (borderline).",
+      "Short videos (under two minutes or Shorts) such as the one-minute 'You're Meditating WRONG!'.",
+      "A Monthly Pause email: a newsletter rather than a resource.",
+      "Free meditation sign-up page (subscribepage enlightenedspoon-meditation): leads with not sleeping well."
+    ]
+  },
+  "images_final": true
+}

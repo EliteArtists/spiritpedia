@@ -4712,7 +4712,7 @@
    "base": "Ashland, Massachusetts, USA",
    "website": "https://markzelinsky.com",
    "note": "Contact form only, no email; base from IT profile.",
-   "status": "planned",
+   "status": "dev",
    "plan": "docs/content-audits/mark-zelinsky.json",
    "skip_reason": null
   },
@@ -4731,9 +4731,9 @@
    "base": "Minneapolis, Minnesota, USA",
    "website": "https://www.yogaforyouonline.com",
    "note": "Founder of Yoga For You online school; no email published, contact form on /contact; retreats in Bayfield WI and Banff AB.",
-   "status": "planned",
-   "plan": "docs/content-audits/kelly-smith.json",
-   "skip_reason": null
+   "status": "skipped",
+   "plan": null,
+   "skip_reason": "Strict health rule: both her books are condition-led (You Are Not Your Thoughts is an anxiety-healing programme; Meditation for the Modern Family lists anxiety, hyperactivity and insomnia), her free bundle targets sleepless nights and her teacher-training page opens on anxiety, so the brand reads as sold on conditions (as with Fleur Chambers). Researcher's plan kept in dropped/."
   },
   {
    "rank": 250,
@@ -4769,9 +4769,9 @@
    "base": "Denver, Colorado, USA",
    "website": "https://devonkkerns.com",
    "note": "Leadership/life coach; contact is a free clarity-call booking link only; in-person only in the top tier where he travels to clients.",
-   "status": "planned",
-   "plan": "docs/content-audits/devon-kerns.json",
-   "skip_reason": null
+   "status": "skipped",
+   "plan": null,
+   "skip_reason": "Fit: mainly a life and leadership coach, and his only contact route is a free clarity-call booking panel (same reasoning as Ipek Williamson). Researcher's plan kept in dropped/."
   },
   {
    "rank": 252,
@@ -4788,8 +4788,8 @@
    "base": "Brighton, Victoria, Australia",
    "website": "https://www.freyabennettoverstall.com/",
    "note": "Lowercase profile URL 404'd once, /Freya worked; teaches regular classes at Maitri Studio Brighton (per search); message form on About page, no email shown.",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/freya-bennett-overstall.json",
    "skip_reason": null
   },
   {
@@ -4807,8 +4807,8 @@
    "base": "Beverly Hills, California, USA",
    "website": "https://linktr.ee/Ashke72",
    "note": "Senior teacher at The Kabbalah Centre (22 years) and musician (Ashke); offers are booked through kabbalah.com, Linktree has an email icon but no visible address; sacredsounds.space is his sound brand.",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/yehuda-ashkenazi.json",
    "skip_reason": null
   },
   {
@@ -4826,7 +4826,7 @@
    "base": "Koh Phangan, Surat Thani, Thailand",
    "website": "https://www.bloomingspiritjourneys.com/",
    "note": "Contact is via WhatsApp DM/contact page; cacao ceremonies only (no ayahuasca/psilocybin mentioned).",
-   "status": "planned",
+   "status": "dev",
    "plan": "docs/content-audits/nola-bloom.json",
    "skip_reason": null
   },
@@ -4845,7 +4845,7 @@
    "base": "Tucson, Arizona, USA",
    "website": "https://www.torahofawakening.com",
    "note": "Contact form only (email hidden behind an obfuscated button); events in Tucson and the Bay Area.",
-   "status": "planned",
+   "status": "dev",
    "plan": "docs/content-audits/brian-yosef-schachter-brooks.json",
    "skip_reason": null
   },
@@ -4883,9 +4883,9 @@
    "base": "Toronto, Ontario, Canada",
    "website": "https://ipekwilliamsoncoaching.com/",
    "note": "Mainly a leadership coach who also teaches meditation; Linktree has an email button but the address isn't visible; site uses a Book a Call page.",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Fit: her main offer is leadership and executive coaching (the pipeline parks business and executive coaches); her spiritual teaching sits mostly on Insight Timer. Researcher's plan kept in dropped/."
   },
   {
    "rank": 258,
@@ -4902,8 +4902,8 @@
    "base": "Bastrop, TX, USA",
    "website": "https://www.ryantschmidt.com/",
    "note": "Interfaith hospice chaplain and ordained minister (Christian contemplative); grief support is non-clinical; contact via Contact & Booking page.",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/ryan-t-schmidt.json",
    "skip_reason": null
   },
   {
@@ -4921,8 +4921,8 @@
    "base": "Zürich, Switzerland",
    "website": "https://enlightenedspoon.com",
    "note": "Nutritionist and meditation teacher; no email published; contact page offers a free breakthrough session but no visible form fields.",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/jaime-tan.json",
    "skip_reason": null
   },
   {
@@ -4959,7 +4959,7 @@
    "base": "Hildesheim, Lower Saxony, Germany",
    "website": "https://marysol.vision",
    "note": "Singer and light-language sound healer; contact page has a form only; sessions described as online worldwide.",
-   "status": "planned",
+   "status": "dev",
    "plan": "docs/content-audits/marysol-ximenez-carrillo.json",
    "skip_reason": null
   },
@@ -4978,7 +4978,7 @@
    "base": "Sussex County, Delaware, USA",
    "website": "https://www.brad4d-wellness.com/",
    "note": "Contact form on home page (email/subject/message); site gives no specific classes or location.",
-   "status": "planned",
+   "status": "dev",
    "plan": "docs/content-audits/beth-bradford.json",
    "skip_reason": null
   },
@@ -5933,5 +5933,5 @@
    "skip_reason": null
   }
  ],
- "updated": "2026-11-01T19:54:38.846Z"
+ "updated": "2026-11-01T20:00:13.284Z"
 }
