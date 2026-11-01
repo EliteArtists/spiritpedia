@@ -4370,8 +4370,8 @@
    "base": "Oxfordshire, England, United Kingdom",
    "website": "https://www.sanctuarygrace.com",
    "note": "Yoga and meditation teacher; email in site footer; many recent uploads are children's meditations; no Native American content seen on profile.",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/julie-ela-grace.json",
    "skip_reason": null
   },
   {
@@ -4389,9 +4389,9 @@
    "base": "Northern Michigan, USA",
    "website": "https://www.eileenrose.me",
    "note": "Email published on home and about pages; business is Breathe Here Now, LLC; store includes an anxiety-relief course but main offer is teacher training and retreats.",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Strict health rule: her own home page (eileenrose.me, 1 Nov 2026) features and sells 'Chaos to Calm: Anxiety Relief Course' in its meditation store, and corporate sessions are sold on improving mental health, so a listing would send people to condition-sold items even though her main offer is meditation teacher training and retreats."
   },
   {
    "rank": 232,
@@ -4408,8 +4408,8 @@
    "base": "Sorn-Thawee Meditation Centre, Bang Khla, Chachoengsao, Thailand (also Ravensburg, Germany)",
    "website": "https://www.meditationthailand.org",
    "note": "Thai-ordained mae chee teaching Vipassana since 1991; site pages carry unrelated gambling ad spam (possible compromise).",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/mc-brigitte-schrottenbacher.json",
    "skip_reason": null
   },
   {
@@ -4427,8 +4427,8 @@
    "base": "Viveka Hermitage near Mt Gulaga (Tilba area), NSW, Australia",
    "website": "https://vivekahermitage.com/",
    "note": "Theravada forest-tradition nun; email published obfuscated with [at]/[dot] (contact form removed); retreats 12-15 Nov 2026 at Kamalashila, Tilba NSW.",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/samaneri-jayasara.json",
    "skip_reason": null
   },
   {
@@ -4446,9 +4446,9 @@
    "base": "New York, New York, USA",
    "website": "http://www.happinessangha.com/",
    "note": "IT profile links happinesssangha.com, which redirects to happinessangha.com; Buddhism plus neuroscience approach.",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Strict health rule: her main paid programme, Journey to Happiness (happinessangha.com/individualized-journey, 1 Nov 2026), is sold on helping people stop panic attacks and get off antidepressants and lists less anxiety, less depression and a stronger immune system as results; her corporate page also sells on reducing anxiety."
   },
   {
    "rank": 235,
@@ -4465,9 +4465,9 @@
    "base": "Cellio, Piedmont, Italy",
    "website": "https://linktr.ee/priestessofsource",
    "note": "Linktree titled 'Donna Medicina' (Alice Berno); email on Linktree.",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Not listed: several doubts at once. Her surname appears only in a PayPal link (not a name she publishes), she has no website of her own, one photo and a thin page, and her Insight Timer bio and courses frame her work as healing (voice healing, nervous system as the foundation of healing, autism specialism). Researcher's plan kept in dropped/."
   },
   {
    "rank": 236,
@@ -4484,8 +4484,8 @@
    "base": "Tallahassee, Florida, USA",
    "website": "https://williamecooper.wordpress.com",
    "note": "LPC in private practice but site says the meetings are awakening dialogues and not psychotherapy; contact page also lists a phone number. Owner check (health rule): Licensed Professional Counselor; his meetings are stated as not psychotherapy.",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/william-cooper.json",
    "skip_reason": null
   },
   {
@@ -4503,8 +4503,8 @@
    "base": "St. George, Utah, USA",
    "website": "https://ektabathija.com/",
    "note": "Email is the general contact for her Gnyana Sangha; sessions free of charge; base taken from IT profile.",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/ekta-bathija.json",
    "skip_reason": null
   },
   {
@@ -4522,9 +4522,9 @@
    "base": "Austin, Texas, USA",
    "website": "https://heavenlysound.org",
    "note": "Flutist who also teaches and leads sound baths; IT bio frames music for anxiety/sleep but site is sessions and teaching; light language not mentioned on site.",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Mainly a flutist and musician rather than a teacher: her YouTube is almost all flute music (often titled for stress, grief or sleep) and her most-viewed video is her own 'New Age to Jesus' testimony renouncing her former psychic and manifestation work, so a Spiritpedia listing would misrepresent her; what remains is one beginner flute course, one sound bath and a private-events enquiry form."
   },
   {
    "rank": 239,
@@ -4541,9 +4541,9 @@
    "base": "Long Beach, California, USA",
    "website": "https://www.heceliza.com",
    "note": "Reiki Master Teacher; email linked in site header; co-builds the SURA retreat space in Playa Negra, Costa Rica.",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Strict health rule: her own site sells Reiki and breathwork on conditions (the Reiki page says it can ease pain, anxiety and fatigue and help after medical treatment, private sessions promise to release trauma stored in the body, and the home page leads with a client testimonial about healing trauma)."
   },
   {
    "rank": 240,
@@ -4560,9 +4560,9 @@
    "base": "Forest Row, East Sussex, UK",
    "website": "https://www.lydiasacredsong.com",
    "note": "Gmail address and UK phone on home page; singer-songwriter who also teaches Kundalini Yoga and Shakti Dance.",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Mainly a singer-songwriter: her one-page site is about her albums and crowdfunding, her Kundalini Yoga, Shakti Dance and kirtan offerings have no pages or prices of their own, and her YouTube is music videos and short clips, so fewer than three items pass the rules (her Insight Timer bio also frames her work as tools for healing from trauma)."
   },
   {
    "rank": 241,
@@ -4579,8 +4579,8 @@
    "base": "Gentofte, Copenhagen, Denmark",
    "website": "https://www.pavlinawellbeing.com",
    "note": "Email on home page; focus on women in matrescence and transition; small IT following.",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/pavlina-nehrebecki.json",
    "skip_reason": null
   },
   {
@@ -4598,8 +4598,8 @@
    "base": "West of Ireland (Galway), Ireland",
    "website": "https://patdivilly.ie/",
    "note": "patdivilly.com redirects to patdivilly.ie; support email in footer; IT bio says he is now based in Bali.",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/pat-divilly.json",
    "skip_reason": null
   },
   {
@@ -4617,9 +4617,9 @@
    "base": "Melbourne, Victoria, Australia",
    "website": "https://www.catherineingram.com",
    "note": "Contact page publishes an AOL email; schedule page currently says only 'watch this space for zoom sessions'; base taken from IT profile.",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Held for the owner (conspiracy/political check): her 'Facing Extinction' page says she was 'propagandized into climate hysteria' and calls AI and transhumanism the real threat. Otherwise strong (says she co-founded IMS; possible editorial stature). Researcher's plan kept in dropped/; insert if the owner agrees."
   },
   {
    "rank": 244,
@@ -4636,9 +4636,9 @@
    "base": "Hawaii County, Hawaii, USA",
    "website": "https://amitaschmidt.com",
    "note": "Ex-IMS resident teacher and licensed psychotherapist; site has a 'Depression, Anxiety, and Trauma' talks section but main offer is dharma teaching and mentoring.",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Health rule: her own site (amitaschmidt.com) has a main-menu section called 'Depression, Anxiety, and Trauma' with healing-depression workshops and talks, her About page says she leads healing depression workshops nationally, and the home page offers psychotherapy-style sessions ('helping people heal', telemedicine), so a listing would send people to condition-led pages; she is otherwise a strong dharma teacher (former IMS resident teacher, Dipa Ma books), so the owner may wish to review."
   },
   {
    "rank": 245,
@@ -4655,9 +4655,9 @@
    "base": "Minneapolis, Minnesota, USA",
    "website": "https://www.lisavenable.com",
    "note": "ACIM teacher and author with a counselling master's; site invites email for spiritual support; no in-person offers listed.",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Too thin and near the health rule: her one-page site lists the course, programmes and healing sessions with no page or price of their own, there is no YouTube channel, her books (God for President, Messages from Love) could not be confirmed on amazon.com, and the home page testimonials include one about no longer reaching for anxiety medication."
   },
   {
    "rank": 246,
@@ -4674,8 +4674,8 @@
    "base": "Santa Monica, California, USA",
    "website": "https://nandhiji.com/",
    "note": "Also founder/CEO of CNESS app company; address listed is 825 Wilshire Blvd, Santa Monica.",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/nandhiji.json",
    "skip_reason": null
   },
   {
@@ -4693,9 +4693,9 @@
    "base": "Los Angeles, California, USA",
    "website": "https://craftingthespirit.com/",
    "note": "Instinctive Meditation teacher and senior teacher at The Radiance Sutras School of Meditation; free 30-min consult via cal.com.",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Too thin: apart from Insight Timer she offers only one-to-one meditation sessions ($100 USD an hour) on a single services page, with no current classes or events, no YouTube channel, no books, and only a music album and blog besides; her link page is mostly affiliate shopping links."
   },
   {
    "rank": 248,
@@ -4712,8 +4712,8 @@
    "base": "Ashland, Massachusetts, USA",
    "website": "https://markzelinsky.com",
    "note": "Contact form only, no email; base from IT profile.",
-   "status": "todo",
-   "plan": null,
+   "status": "planned",
+   "plan": "docs/content-audits/mark-zelinsky.json",
    "skip_reason": null
   },
   {
@@ -4731,8 +4731,8 @@
    "base": "Minneapolis, Minnesota, USA",
    "website": "https://www.yogaforyouonline.com",
    "note": "Founder of Yoga For You online school; no email published, contact form on /contact; retreats in Bayfield WI and Banff AB.",
-   "status": "todo",
-   "plan": null,
+   "status": "planned",
+   "plan": "docs/content-audits/kelly-smith.json",
    "skip_reason": null
   },
   {
@@ -4750,9 +4750,9 @@
    "base": "Miami, Florida, USA",
    "website": "https://michellealva.com",
    "note": "Creator of the ALVA Method (tantra, hypnosis/NLP, yoga therapy); no email published, contact is a call-booking page; site makes trauma-release claims but is sold on intimacy.",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Strict health rule: her home page sells the ALVA Method as releasing trauma and producing 'deep and profound healing' under the banner 'Love Is Medicine', her Work With Me page pitches pain release and optimal health, her Linktree sells sessions on processing chronic stress plus a pregnancy series, and her Insight Timer tracks include weight-loss, anxiety and chronic-pain titles, so a listing would send people to condition-led pages (her tantra and intimacy workshops might pass on their own); she also has no published personal email, only a call-booking page with a support address."
   },
   {
    "rank": 251,
@@ -4769,8 +4769,8 @@
    "base": "Denver, Colorado, USA",
    "website": "https://devonkkerns.com",
    "note": "Leadership/life coach; contact is a free clarity-call booking link only; in-person only in the top tier where he travels to clients.",
-   "status": "todo",
-   "plan": null,
+   "status": "planned",
+   "plan": "docs/content-audits/devon-kerns.json",
    "skip_reason": null
   },
   {
@@ -4826,8 +4826,8 @@
    "base": "Koh Phangan, Surat Thani, Thailand",
    "website": "https://www.bloomingspiritjourneys.com/",
    "note": "Contact is via WhatsApp DM/contact page; cacao ceremonies only (no ayahuasca/psilocybin mentioned).",
-   "status": "todo",
-   "plan": null,
+   "status": "planned",
+   "plan": "docs/content-audits/nola-bloom.json",
    "skip_reason": null
   },
   {
@@ -4845,8 +4845,8 @@
    "base": "Tucson, Arizona, USA",
    "website": "https://www.torahofawakening.com",
    "note": "Contact form only (email hidden behind an obfuscated button); events in Tucson and the Bay Area.",
-   "status": "todo",
-   "plan": null,
+   "status": "planned",
+   "plan": "docs/content-audits/brian-yosef-schachter-brooks.json",
    "skip_reason": null
   },
   {
@@ -4864,9 +4864,9 @@
    "base": "Boulder, Colorado, USA",
    "website": "https://www.kalibasman.com/",
    "note": "kalidurgayoga.com redirects to kalibasman.com; also offers 1:1 IFS therapy as a side offer; in-person status inferred from public class schedule.",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Strict health rule: her own site sells 1:1 IFS therapy and a three-month IFS Circle on conditions (resolving past traumas, breaking free from anxiety and compulsive behaviours, a chronic-pain testimonial) and runs an Anatomy of Trauma workshop, so a listing would send people to those pages; her Peru retreat also includes an optional San Pedro (Wachuma) plant-medicine ceremony."
   },
   {
    "rank": 257,
@@ -4940,9 +4940,9 @@
    "base": "Dorset, England, UK",
    "website": "https://emmamumford.co.uk",
    "note": "Law of Attraction/manifestation author and coach rather than a satsang teacher; no email on home page, contact page linked.",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Strict health rule: her own site sells her programmes with condition and healing testimonials (a 'Cancer Free!!!' testimonial on her signature Attract, Alignment, Abundance course page, 'great health and miracle recoveries' and overcoming anxiety on the Manifestation Membership page, trauma testimonials on the coaching and course pages), her book Hurt, Healing, Healed is sold on healing emotional pain and trauma, and her own YouTube channel's top videos include 'How I Cured My Anxiety & Depression', so a listing would send people to those pages even with those items left out. Otherwise she would have qualified (info@emmamumford.co.uk on the contact page; ~176k followers, luminary)."
   },
   {
    "rank": 261,
@@ -4959,8 +4959,8 @@
    "base": "Hildesheim, Lower Saxony, Germany",
    "website": "https://marysol.vision",
    "note": "Singer and light-language sound healer; contact page has a form only; sessions described as online worldwide.",
-   "status": "todo",
-   "plan": null,
+   "status": "planned",
+   "plan": "docs/content-audits/marysol-ximenez-carrillo.json",
    "skip_reason": null
   },
   {
@@ -4978,8 +4978,8 @@
    "base": "Sussex County, Delaware, USA",
    "website": "https://www.brad4d-wellness.com/",
    "note": "Contact form on home page (email/subject/message); site gives no specific classes or location.",
-   "status": "todo",
-   "plan": null,
+   "status": "planned",
+   "plan": "docs/content-audits/beth-bradford.json",
    "skip_reason": null
   },
   {
@@ -4997,9 +4997,9 @@
    "base": "Massachusetts, USA",
    "website": "https://hereandawake.com/",
    "note": "Licensed psychotherapist (MSW) per IT bio, but site sells spiritual/intuitive work and Akashic readings, not therapy; contact form only.",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Strict health rule: her site (hereandawake.com) sells an 'Anxiety Clearing Hypnosis' download and a $444 'Nervous System Rewired' course, lists 'Health challenges' as a topic for her paid spiritual readings and carries trauma-healing testimonials, and her Insight Timer tracks include 'Chronic Pain & Illness' and 'SOS Anxiety' meditations; she is also a licensed psychotherapist, so the work leans clinical. Contact is a form only."
   },
   {
    "rank": 264,
@@ -5016,9 +5016,9 @@
    "base": "United States",
    "website": "https://www.sarahdubow.com",
    "note": "Meditation teacher and Reiki master; get-in-touch page shows no working form or email; possibly New York based (unconfirmed).",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Strict health rule and too thin: her main paid offer is wellbeing (health) coaching sold on finding answers to complex health challenges and on her having cured her own 'untreatable' conditions; beyond that there is only her Insight Timer profile (278 followers) and a small podcast/YouTube, and her Get in Touch page has no working contact form (the only address found is a personal Gmail in the privacy policy)."
   },
   {
    "rank": 265,
@@ -5035,8 +5035,8 @@
    "base": "Jacksonville, Florida, USA",
    "website": "https://yogawithdennisandkathy.com",
    "note": "Couple profile (Dennis and Kathy Lang); shared Gmail; 2027 retreats in Thailand, Mexico, Morocco and Greece.",
-   "status": "todo",
-   "plan": null,
+   "status": "planned",
+   "plan": "docs/content-audits/dennis-and-kathy-lang.json",
    "skip_reason": null
   },
   {
@@ -5933,5 +5933,5 @@
    "skip_reason": null
   }
  ],
- "updated": "2026-11-01T19:36:00.637Z"
+ "updated": "2026-11-01T19:54:38.846Z"
 }

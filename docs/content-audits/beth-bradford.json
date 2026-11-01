@@ -1,0 +1,194 @@
+{
+  "healer": {
+    "healer_slug": "beth-bradford",
+    "create": {
+      "name": "Beth Bradford",
+      "bio": "Beth Bradford teaches yoga and meditation from Sussex County, Delaware, and writes about contemplative spirituality. She started out as a television news photojournalist in the Mid-Atlantic region, went on to earn a doctorate in mass communication at the University of Alabama, and spent around twenty years teaching media research, video production and journalism to university students. She is a registered yoga teacher with Yoga Alliance, a certified personal trainer and a long-time endurance athlete, and she shapes her work for people in midlife who want body, mind and spirit cared for together.\n\nHer spiritual reading centres on the Christian contemplatives, from the Desert Fathers to Thomas Merton and the medieval mystics, which she sets beside yoga philosophy, Buddhist mindfulness, Sufi poetry and Stoic thought. On Insight Timer she shares guided meditations, short breathwork talks and prayer-based practices, along with a seven-day course on solitude drawn from her book Embracing Alone. Her YouTube channel mixes gentle and flowing yoga classes, pranayama and brief reflections on the inner life, and she writes the Substack newsletters The Contemplative Path and Steel & Sage. Near home she teaches private group yoga classes in people's houses or outdoors.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local_online",
+      "city": "Sussex County",
+      "country": "United States",
+      "subjects": [
+        "yoga",
+        "meditation",
+        "mysticism"
+      ],
+      "website_url": "https://www.brad4d-wellness.com/",
+      "booking_url": "https://www.brad4d-wellness.com/book-online",
+      "youtube_url": "https://www.youtube.com/@mbbtrigirl",
+      "instagram_url": "https://www.instagram.com/brad4d_wellness/",
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": null,
+      "image_urls": [
+        "https://static.wixstatic.com/media/1c4f40_5b08689182fe436ea3c60aaf74ee9c83~mv2.jpg"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "insight-timer",
+      "role": "instructor"
+    }
+  ],
+  "videos": [
+    {
+      "title": "1-Hour Vinyasa Yoga Flow: Core Strength, Balance & Hip Mobility",
+      "url": "https://www.youtube.com/watch?v=YNKvB3jGY04",
+      "subjects": [
+        "yoga"
+      ],
+      "channel": "Beth Bradford"
+    },
+    {
+      "title": "Kapalabhati Pranayama (Breath of Fire): Energize & Calm Your Nervous System",
+      "url": "https://www.youtube.com/watch?v=9UkmMN81EPY",
+      "subjects": [
+        "breathwork",
+        "yoga"
+      ],
+      "channel": "Beth Bradford"
+    },
+    {
+      "title": "Left-Nostril Pranayama for Morning Clarity",
+      "url": "https://www.youtube.com/watch?v=vOB2HAreFU4",
+      "subjects": [
+        "breathwork",
+        "yoga"
+      ],
+      "channel": "Beth Bradford"
+    },
+    {
+      "title": "20-Minute Joint-Friendly Yoga | Gentle Seated Practice for Stiff Mornings",
+      "url": "https://www.youtube.com/watch?v=ofS78-MJkcs",
+      "subjects": [
+        "yoga"
+      ],
+      "channel": "Beth Bradford"
+    },
+    {
+      "title": "12-Minute Gentle Morning Yoga to Wake Up the Body | Move Before You Meditate",
+      "url": "https://www.youtube.com/watch?v=kp0DqTxxwFs",
+      "subjects": [
+        "yoga",
+        "meditation"
+      ],
+      "channel": "Beth Bradford"
+    },
+    {
+      "title": "Stop Waiting for \"Someday\" | A Beginner Yoga Practice for Mind, Body & Spirit",
+      "url": "https://www.youtube.com/watch?v=_oYeIkJvgSU",
+      "subjects": [
+        "yoga"
+      ],
+      "channel": "Beth Bradford"
+    },
+    {
+      "title": "The Misfit Mystic: On Not Fitting Into Neat Religious Boxes",
+      "url": "https://www.youtube.com/watch?v=1wKQfLng7dQ",
+      "subjects": [
+        "mysticism",
+        "spirituality"
+      ],
+      "channel": "Beth Bradford"
+    },
+    {
+      "title": "Creative Block Blessing: Step Into Your Artist Self",
+      "url": "https://www.youtube.com/watch?v=6cWIVRhZKlk",
+      "subjects": [
+        "spirituality"
+      ],
+      "channel": "Beth Bradford"
+    },
+    {
+      "title": "A Walk in the Woods to Nurture Your Creative Self",
+      "url": "https://www.youtube.com/watch?v=0YPvkX9aY7Y",
+      "subjects": [
+        "mindfulness",
+        "spirituality"
+      ],
+      "channel": "Beth Bradford"
+    }
+  ],
+  "books": [],
+  "courses": [
+    {
+      "title": "Embracing Solitude",
+      "url": "https://insighttimer.com/meditation-courses/course_embracing-solitude",
+      "description": "A seven-day Insight Timer course on making friends with time alone: why it matters, how roles and distractions crowd out a truer sense of self, and how writing, movement and meditation can build a steady habit of solitude.",
+      "price": "Included in Member Plus ($59.99 USD a year)",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "mysticism"
+      ],
+      "image": "https://static.wixstatic.com/media/1c4f40_5b08689182fe436ea3c60aaf74ee9c83~mv2.jpg"
+    },
+    {
+      "title": "Group Yoga Class",
+      "url": "https://www.brad4d-wellness.com/booking-calendar/group-yoga-class",
+      "description": "A private one-hour yoga class for a group of friends or family, shaped around what the group needs and booked online for a time that suits. Beth comes to you, at home or outdoors, in the Sussex County area.",
+      "price": "$30 USD",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://static.wixstatic.com/media/1c4f40_0dc506a90c144488a505f35d57c3992b%7Emv2.jpg/v1/fit/w_2500,h_1330,al_c/1c4f40_0dc506a90c144488a505f35d57c3992b%7Emv2.jpg"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Beth Bradford on Insight Timer",
+      "url": "https://insighttimer.com/brad4d_wellness",
+      "description": "Guided meditations, short breathwork talks and video yoga practices, many of them rooted in Christian prayer and scripture, free to hear in the app or on the web.",
+      "featured": true,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation",
+        "mysticism"
+      ],
+      "image": "https://static.wixstatic.com/media/1c4f40_5b08689182fe436ea3c60aaf74ee9c83~mv2.jpg"
+    },
+    {
+      "title": "The Contemplative Path",
+      "url": "https://contemplativepath.substack.com/",
+      "description": "Beth's newsletter on contemplative spirituality, which reads the Desert Fathers, Merton and the Christian mystics alongside other traditions and asks what they mean for ordinary life today.",
+      "featured": false,
+      "resource_type": "practice",
+      "subjects": [
+        "mysticism",
+        "spirituality"
+      ],
+      "image": "https://substackcdn.com/image/fetch/$s_!rVHc!,w_400,h_400,c_fill,f_auto,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fb16ef150-25d9-45e6-a8d7-eace1b5447cd_1080x1080.png"
+    }
+  ],
+  "sprint": {
+    "hub": "insight-timer",
+    "rank": 262,
+    "insight_timer_url": "https://insighttimer.com/brad4d_wellness",
+    "tier_evidence": "Insight Timer 2.5k (profile via WebFetch, 1 Nov 2026); YouTube 175 (@mbbtrigirl header row, 1 Nov 2026); Instagram 600 (og:description, 1 Nov 2026) → ~3.3k total → local_hero",
+    "email": "contact form",
+    "email_source": null,
+    "contact_form_url": "https://www.brad4d-wellness.com/",
+    "bio_check": "OK: no 8-word runs against 9 source(s)",
+    "flags": [
+      "Contact is the Wix form at the foot of her home page (Email, Subject, Message); no address is published.",
+      "Availability set to local_online with city 'Sussex County' (her Insight Timer location is Sussex County, DE; no town is given anywhere): her booked classes and training are at the client's home or outdoors, and she teaches online through Insight Timer and YouTube. A human may prefer worldwide, or a town if one can be found.",
+      "Only one photo used (the headshot in her site's About section); her YouTube avatar (paddleboard, sunglasses and visor) is probably her but too unclear to confirm.",
+      "Much of her Insight Timer and Substack content is Christian contemplative (prayer, scripture, lectio divina); subjects set to yoga, meditation and mysticism."
+    ],
+    "left_out": [
+      "Book Embracing Alone: her site links amazon.com/dp/B0B7ZB6DL3, but the page returned 500 to both curl and WebFetch, so the listing could not be checked.",
+      "Therapeutic Yoga ($75 per person): 'therapeutic' framing is borderline under the health rule.",
+      "Personal Training ($100) and Group Personal Training ($30): fitness services, not spiritual teaching; the Steel & Sage (fitness) newsletter likewise.",
+      "Strength and fitness videos (kettlebell, squats, deadlifts, core, runner workouts) and two 31-second clips.",
+      "YouTube 'A Meditation for When Hope Feels Depleted' and 'Beyond Positive Vibes Only: How to Accept Pain...': left out as borderline emotional-difficulty framing."
+    ]
+  }
+}

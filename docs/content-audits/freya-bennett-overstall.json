@@ -1,0 +1,178 @@
+{
+  "healer": {
+    "healer_slug": "freya-bennett-overstall",
+    "create": {
+      "name": "Freya Bennett-Overstall",
+      "bio": "Freya Bennett-Overstall teaches qigong, yin yoga and meditation from Maitri Studio Brighton, a small studio of her own in the bayside suburbs of Melbourne. Movement and stillness have been part of her life since childhood, when she did yoga, dance and tai chi, and during more than fifteen years as a chiropractor she began sharing simple breath awareness with the people she saw. After leaving clinical work in 2013 she deepened her own sitting practice and went on to train widely: yin yoga with Bernie Clark and Jo Phee, Insight Yoga with Sarah Powers, Mindful Self-Compassion, and the YOQI method of yoga and qigong with Marisa Cranfill, for which she is now a certified instructor and ambassador.\n\nHer classes are gentle and seasonal, often opening with a poem and a cup of cacao husk tea before moving into qigong, long-held yin postures and guided meditation; many are streamed live on Insight Timer so people can join from anywhere. She also runs longer qigong workshops on sensing and directing energy. Her award-winning book Wonder Full Women: Attune & Bloom draws on Chinese medicine, the seasons of the Kulin Nation and women's stories to offer ways of eating, moving and meditating through the year.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local_online",
+      "city": "Melbourne",
+      "country": "Australia",
+      "subjects": [
+        "qi-gong",
+        "yoga",
+        "meditation"
+      ],
+      "website_url": "https://www.freyabennettoverstall.com/",
+      "booking_url": "https://www.freyabennettoverstall.com/practice",
+      "youtube_url": "https://www.youtube.com/@freyabennett-overstall",
+      "instagram_url": "https://www.instagram.com/freyabennettoverstall/",
+      "facebook_url": "https://www.facebook.com/freyabennettoverstall-108125797228569",
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "freyanow2@gmail.com",
+      "image_urls": [
+        "https://yt3.googleusercontent.com/lmvYlliSmQPhX51AhVzPOrPitzK1OK21QzLjFKk-D-Dy1HwX4uwJObIkHkqRCRuh2zc88J0t=s900-c-k-c0x00ffffff-no-rj",
+        "https://static.wixstatic.com/media/222a20_34786fcdc3074b2f9df110e59f3aba1e~mv2.jpg"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "insight-timer",
+      "role": "instructor"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Qigong to Reconnect & Renew",
+      "url": "https://www.youtube.com/watch?v=hd5gvBJowBQ",
+      "subjects": [
+        "qi-gong"
+      ],
+      "channel": "Freya Bennett-Overstall"
+    },
+    {
+      "title": "Qigong to Nourish the Spine",
+      "url": "https://www.youtube.com/watch?v=RRok56M0jIc",
+      "subjects": [
+        "qi-gong"
+      ],
+      "channel": "Freya Bennett-Overstall"
+    },
+    {
+      "title": "Qigong to Release the Past & Accept the Present",
+      "url": "https://www.youtube.com/watch?v=tWV7Z4J3R0I",
+      "subjects": [
+        "qi-gong",
+        "meditation"
+      ],
+      "channel": "Freya Bennett-Overstall"
+    }
+  ],
+  "books": [
+    {
+      "title": "Wonder Full Women. Attune & Bloom. Eat, Move & Meditate with the Seasons",
+      "slug": "wonder-full-women",
+      "author": "Freya Bennett-Overstall",
+      "asin": "B0B3LS2215",
+      "store": "amazon.com",
+      "goodreads_url": "https://www.goodreads.com/book/show/61754308-wonder-full-women",
+      "worldofbooks_url": null,
+      "cover": "https://m.media-amazon.com/images/P/B0B3LS2215.01._SCLZZZZZZZ_.jpg",
+      "description": "Freya's illustrated guide to living in step with the seasons, published by Balboa Press. It blends Chinese medicine, the seasonal calendar of the Kulin Nation, poetry and women's own stories with practical ideas for food, movement and meditation through the year.",
+      "subjects": [
+        "meditation",
+        "qi-gong",
+        "yoga"
+      ]
+    }
+  ],
+  "courses": [
+    {
+      "title": "Qigong, Yin Yoga & Meditation at Maitri Studio Brighton",
+      "url": "https://www.freyabennettoverstall.com/service-page/qigong-yin-yoga-meditation-in-studio",
+      "description": "A one-hour fortnightly class in Freya's Brighton studio during school terms, combining a reading, gentle qigong, yin yoga, herbal tea and guided meditation. Beginners are welcome, and the class is also streamed live on Insight Timer.",
+      "price": "$32 AUD",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "qi-gong",
+        "yoga",
+        "meditation"
+      ],
+      "image": "https://static.wixstatic.com/media/e3ef65710ba74e2e9d808d09a163fe30.jpg/v1/fit/w_1000,h_667,al_c,q_85/e3ef65710ba74e2e9d808d09a163fe30.jpg"
+    },
+    {
+      "title": "YOQI Qigong class",
+      "url": "https://www.freyabennettoverstall.com/service-page/yoqi-qigong",
+      "description": "A fortnightly one-hour qigong class in the YOQI style at Maitri Studio Brighton, held in the garden when the weather allows. Wear soft clothes and come on an empty stomach.",
+      "price": "$32 AUD",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "qi-gong"
+      ],
+      "image": "https://static.wixstatic.com/media/222a20_dc1f765171bf48d28b1cc6eb9a894608~mv2.jpg/v1/fit/w_1170,h_1827,al_c,q_90/222a20_dc1f765171bf48d28b1cc6eb9a894608~mv2.jpg"
+    },
+    {
+      "title": "YOQI Qigong Workshop: Connecting with Your Life Force",
+      "url": "https://www.freyabennettoverstall.com/service-page/yoqi-qigong-workshop-connecting-with-your-life-force-1",
+      "description": "A three-and-a-half-hour studio workshop on learning to feel qi and move it on purpose, working through eight energetic directions such as rising, sinking, gathering and dispersing. It lays groundwork for a deeper qigong practice.",
+      "price": "$149 AUD",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "qi-gong",
+        "energy-medicine"
+      ],
+      "image": "https://static.wixstatic.com/media/222a20_d05ca45fb7ad453cb3bdef9a7a1e6527~mv2.jpg/v1/fit/w_1122,h_1402,al_c,q_85/222a20_d05ca45fb7ad453cb3bdef9a7a1e6527~mv2.jpg"
+    },
+    {
+      "title": "How To Breathe During A Qigong Practice - Module 1",
+      "url": "https://insighttimer.com/meditation-courses/how-to-breathe-during-a-qigong-practice-module-1",
+      "description": "A three-day Insight Timer course of about ten minutes a day on breath in qigong, moving from belly breathing to fuller breath awareness and finishing with a cleansing breath.",
+      "price": "Included in Member Plus ($59.99 USD a year)",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "qi-gong",
+        "breathwork"
+      ],
+      "image": "https://yt3.googleusercontent.com/lmvYlliSmQPhX51AhVzPOrPitzK1OK21QzLjFKk-D-Dy1HwX4uwJObIkHkqRCRuh2zc88J0t=s900-c-k-c0x00ffffff-no-rj"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Freya Bennett-Overstall on Insight Timer",
+      "url": "https://insighttimer.com/freya",
+      "description": "Freya's guided meditations and recorded classes, plus her fortnightly live qigong, yin yoga and meditation sessions streamed from her studio. Free to join in the app or on the web, with a donation option.",
+      "featured": true,
+      "resource_type": "meditation",
+      "subjects": [
+        "qi-gong",
+        "yoga",
+        "meditation"
+      ],
+      "image": "https://yt3.googleusercontent.com/lmvYlliSmQPhX51AhVzPOrPitzK1OK21QzLjFKk-D-Dy1HwX4uwJObIkHkqRCRuh2zc88J0t=s900-c-k-c0x00ffffff-no-rj"
+    }
+  ],
+  "sprint": {
+    "hub": "insight-timer",
+    "rank": 252,
+    "insight_timer_url": "https://insighttimer.com/freya",
+    "tier_evidence": "Insight Timer 4k (profile, 1 Nov 2026); Instagram @freyabennettoverstall 1,021 (og:description, 1 Nov 2026); Facebook page 182 (og:description, 1 Nov 2026); YouTube @freyabennett-overstall 43 (channel header, 1 Nov 2026) → ~5.2k total → local_hero",
+    "email": "yes",
+    "email_source": "https://www.freyabennettoverstall.com/service-page/yoqi-qigong",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 9 source(s)",
+    "flags": [
+      "City set to Melbourne (her studio is in Brighton, a bayside suburb of Melbourne, at 421 New St, Brighton VIC 3186); 'Brighton' alone could be read as the English town.",
+      "Amazon.com returned HTTP 500 for every /dp/ page on 1 Nov 2026 (curl and WebFetch); the book uses the Kindle ASIN B0B3LS2215 from the amazon.com /dp/ link on her own book page, and the cover from Amazon's image server (checked visually). Paperback ISBN 9781982293826 exists (Walmart, Balboa).",
+      "She is a registered chiropractor (no longer practising); the bio mentions this only as background and nothing clinical is listed.",
+      "Her shop sells herbal tinctures and mushroom tonics; not listed."
+    ],
+    "left_out": [
+      "Advanced FeetUP Fun class left out: its page lists health benefits of inversions (blood flow, detoxification, fluid build-up).",
+      "Online class video library (rentals) left out: descriptions name conditions and recovery from illness or surgery.",
+      "YOQI Instructor Training Immersion, Chiang Mai, 8–17 Feb 2027 left out as an offering: it is run by YOQI and Marisa Cranfill, and Freya is not named on its page.",
+      "YouTube 'Stress Relieving Study Break' left out (stress-titled).",
+      "Blog, interviews and donation (dana) pages not listed."
+    ]
+  }
+}

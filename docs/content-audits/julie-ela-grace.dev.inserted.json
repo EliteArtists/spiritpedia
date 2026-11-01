@@ -1,0 +1,57 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 646,
+    "healer_slug": "julie-ela-grace"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "a807ec15-2489-4330-b6ea-5d58ff7604b3",
+      "slug": "kripalu-yoga-on-mondays-in-hinksey",
+      "title": "Kripalu Yoga on Mondays in Hinksey"
+    },
+    {
+      "table": "courses",
+      "id": "e71ad0c7-7cb5-41f5-9cad-c946e48e69e7",
+      "slug": "restorative-yoga-at-home",
+      "title": "Restorative Yoga at Home"
+    },
+    {
+      "table": "courses",
+      "id": "e1ee02e6-27e9-40ef-92a1-75c3fcec43bd",
+      "slug": "one-to-one-yoga",
+      "title": "One-to-One Yoga"
+    },
+    {
+      "table": "courses",
+      "id": "5e34bae1-877d-4cfa-a4af-b3f1d85cc127",
+      "slug": "online-one-to-one-yoga",
+      "title": "ONLINE: One-to-One Yoga"
+    },
+    {
+      "table": "courses",
+      "id": "a88af7d5-43f1-4aa3-bca4-a736ecaad89b",
+      "slug": "guidance-on-the-path",
+      "title": "Guidance on the Path"
+    },
+    {
+      "table": "courses",
+      "id": "26b501fb-793a-4972-b75b-2ea0417896b8",
+      "slug": "applying-the-yamas-niyamas-to-everyday-life",
+      "title": "Applying The Yamas & Niyamas To Everyday Life"
+    },
+    {
+      "table": "free_resources",
+      "id": "cc456ff2-57fe-4674-be61-fe0c70d9306f",
+      "slug": "julie-ela-grace-on-insight-timer",
+      "title": "Julie Ela Grace on Insight Timer"
+    },
+    {
+      "table": "hub_teachers",
+      "id": "0701b925-c58e-4e7a-831a-3c84d9250ce8",
+      "title": "julie-ela-grace teaches at Insight Timer"
+    }
+  ],
+  "at": "2026-11-01T19:54:20.897Z"
+}

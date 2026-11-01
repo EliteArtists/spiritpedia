@@ -1,0 +1,45 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 641,
+    "healer_slug": "william-cooper"
+  },
+  "rows": [
+    {
+      "table": "free_resources",
+      "id": "6d6c1906-171f-42c7-a6d8-9572f86bc35e",
+      "slug": "william-cooper-on-insight-timer",
+      "title": "William Cooper on Insight Timer"
+    },
+    {
+      "table": "free_resources",
+      "id": "caaf75ca-3059-4827-9c55-484b85aa2a65",
+      "slug": "awakening-together-relaxing-into-happiness-podcast",
+      "title": "Awakening Together, Relaxing into Happiness (podcast)"
+    },
+    {
+      "table": "free_resources",
+      "id": "de952153-8d2a-4a62-a58e-a2f9e7b73b01",
+      "slug": "awakening-meditation",
+      "title": "Awakening Meditation"
+    },
+    {
+      "table": "free_resources",
+      "id": "5f9a7cc5-ea6a-4aed-8402-a9b2b01459eb",
+      "slug": "contemplations",
+      "title": "Contemplations"
+    },
+    {
+      "table": "free_resources",
+      "id": "3ac847db-5cf6-456d-914b-75fd321f7717",
+      "slug": "writings",
+      "title": "Writings"
+    },
+    {
+      "table": "hub_teachers",
+      "id": "00cd1990-ac95-44a0-a88f-25dab7d2ded9",
+      "title": "william-cooper teaches at Insight Timer"
+    }
+  ],
+  "at": "2026-11-01T19:52:15.751Z"
+}
