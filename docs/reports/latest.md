@@ -1,62 +1,32 @@
-# Organisations shelf: plan (1 Nov 2026)
+# Retreat Centres & Platforms shelf: live (1 Nov 2026)
 
-**Plan only. Nothing is built yet.** The rule (README job #13) is that organisations stay in Explore These Channels until there are 5 or more, and then get their own shelf, never a one-card shelf. Live now has **7 organisation hubs**:
-- The Shift Network
-- Insight Timer
-- Omega Institute
-- Commune
-- Kripalu
-- Esalen
-- 1440 Multiversity
+The owner approved the shelf (plan: `2026-11-01-organisations-shelf-plan.md`). The web side is pushed and deploys live with this commit. The app side goes in with the hubs app build.
 
-So the rule is met.
+## What changed
 
-## Today
+- **New shelf on Discover:** "Retreat Centres & Platforms", with the subtitle "Discover Where They Teach".
+  - It sits between Schools & Academies and Explore These Channels.
+  - There is no "See all" link.
+- **The rule** (`web/utils/listings.js`):
+  - `ORGANISATION_SHELF_MIN = 5`.
+  - `splitOrganisations()` moves the organisations out of Explore These Channels only when there are 5 or more. Below that they stay put, so there is never a one-card shelf.
+  - Order: Spiritpedia Official first, then tier, then most teachers.
+- **The card** is the Schools card, with a `kind` prop. It reads "View Organisation" and shows "N teachers", counted from the `hub_teachers` rows the page already loads.
+- **Label fix:** on logo cards, the type label was white text on the white logo panel, so it showed as a blank tag. "School" on the Schools shelf was already affected on live.
+  - `ListingBadges` has a new `onLight` option that makes that label dark.
+  - The Schools card uses it, so both shelves now show "SCHOOL" or "ORGANISATION".
+- No migration, no new query, no RLS change.
 
-- **Website** (`web/components/HomePageContent.js`):
-  - Explore These Channels holds every platform that isn't a school (`isPlatform && !isSchool`): channels, apps and organisations, with Spiritpedia Official first.
-  - Schools already have their own shelf, Schools & Academies ("Train With a School"). It uses `SchoolCard` with an "N teachers" line, worked out from `hub_teachers`. The home page already fetches `hub_teachers` for that line.
-- **App:**
-  - `app/lib/data/shelf_rules.dart` puts every platform in `HealerShelves.platforms`, shown as Explore These Channels in `home_screen.dart`.
-  - The app has its own copy of the platform rule (`models.dart` → `isPlatform`).
-  - There is no school or hub shelf in the app yet.
+## Shown now (7)
 
-## Website (now)
+The order is: Insight Timer (136 teachers), The Shift Network (120), Kripalu (90), Omega (47), Esalen (33), Commune (32), and 1440 Multiversity (founded 2017, no teachers). Explore These Channels keeps the channels and apps.
 
-1. **One rule in one place.**
-   - Add `ORGANISATION_SHELF_MIN = 5` and a small `splitOrganisations(healers)` to `web/utils/listings.js`.
-   - With 5 or more organisations, they get their own list and leave the platforms list. Below 5, they stay in Explore These Channels.
-   - This keeps the one-card rule automatic if a hub is ever removed.
-   - Tests go in `listings.test.mjs` (4 organisations means no shelf; 5 means a shelf; channels and apps are never moved).
-2. **The shelf** goes in `HomePageContent.js`, between Schools & Academies and Explore These Channels.
-   - Order: Spiritpedia Official first, then tier (Superhero, then Luminary, then the rest), then number of teachers.
-   - This puts Omega, Kripalu, The Shift Network, Insight Timer and Esalen ahead of Commune and 1440.
-3. **The card.** Reuse the Schools card (its "N teachers" line) so Kripalu reads "90 teachers".
-   - The counts come from the `hub_teachers` rows the page already loads.
-   - No new query, no migration, no RLS change.
-   - If the card's wording says "school", give it a neutral prop rather than copying it.
-4. **Check on localhost against dev.**
-   - Dev also has 7 organisations, so the shelf shows there.
-   - Run the web tests (including the crisis-intercept tests).
-   - Then show the diff and wait for an OK. A push that changes `web/` deploys.
+## Checks
 
-## App (with the hubs app build)
+- 163 web tests pass, including two new ones: the minimum of 5 and the order.
+- Lint shows nothing new. The two existing errors in `HomePageContent.js` and one existing warning in `ListingBadges.jsx` were there before.
+- Checked by eye on localhost against dev (which also has 7 organisations).
 
-- **When:** the app has no school or hub support yet, so the shelf ships with that build rather than as a separate change.
-- **Rules and code:**
-  - `shelf_rules.dart` gets an `organisations` list with the same minimum and order. `platforms` drops organisations when the shelf is shown.
-  - `home_screen.dart` gets the shelf in the same place and with the same title as the website.
-  - Its personalisation list (`fy(...)`) and empty-state check take the new list into account.
-- **Teacher counts:** come from `hub_teachers` (public read, as on the website).
-- **Tests:** `app_test.dart` and the shelf-rule tests are updated, keeping the two copies of the platform rule in step.
-- **Build:** one simulator at a time; build number bumped before TestFlight.
+## Still open
 
-## Decisions for the owner
-
-1. **Title and subtitle.** Schools use "Schools & Academies / Train With a School". Suggested: **"Retreat Centres & Organisations" / "Learn With an Organisation"**.
-2. **"See all" link.** The other shelves show one only on a subject page. Suggested: the same here (none on the main Discover page) until there's an organisations listing page.
-
-## Not affected
-
-- Search keeps organisations in its CHANNELS group.
-- Subject pages, My Library, the hub pages and tiers are unchanged.
+- **App:** the same shelf, rule and order, with the hubs app build. The app's platform rule (`models.dart`) changes too.

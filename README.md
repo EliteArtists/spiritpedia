@@ -99,9 +99,11 @@ The list to pick up from. Each points to where the detail lives.
     - **Organisations stay in Explore These Channels** until there are 5 or
       more; then they get their own shelf (never a one-card shelf). Met on
       live on 1 Nov 2026 (7: The Shift Network, Insight Timer, Omega,
-      Commune, Kripalu, Esalen, 1440); the shelf is planned, not built
-      (web first, the app with the hubs app build; plan in
-      `docs/reports/2026-11-01-organisations-shelf-plan.md`).
+      Commune, Kripalu, Esalen, 1440). The website's **Retreat Centres &
+      Platforms** shelf ("Discover Where They Teach") is live (1 Nov 2026,
+      `web/utils/listings.js` → `splitOrganisations`, minimum 5); the app's
+      goes in with the hubs app build
+      (`docs/reports/2026-11-01-organisations-shelf-live.md`).
     - **Megan SolarGlow stays out** (conspiracy content).
     - **Omega Institute and Commune:** both hubs, 20 linked teachers and
       sprint 1 (58 new teachers: 39 Omega, 19 Commune) are live

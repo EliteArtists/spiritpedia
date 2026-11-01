@@ -10,6 +10,8 @@ import { listingBadges } from '../utils/badges.js';
 // `size` 'card' for the small pills on cards, 'profile' for a listing's page.
 // `placement` 'above' or 'below': a card is overflow-hidden, so a badge at the
 // card's foot opens its tip upward.
+// `onLight` for badges on a white panel (school and organisation logo cards),
+// where the see-through type pill would be white on white.
 
 const TIER_CLASS = {
   card: {
@@ -30,13 +32,17 @@ const KIND_CLASS = {
   official: 'bg-white text-[#4c1d95]',
 };
 
+const TYPE_ON_LIGHT = 'bg-[#111827] text-white border border-[#111827]';
+
 const SIZE_CLASS = {
   card: 'rounded-md px-2 py-0.5 text-[10px]',
   profile: 'rounded-full px-3 py-1 text-[11px]',
 };
 
-function badgeClass(badge, size) {
-  const colour = badge.kind === 'tier' ? TIER_CLASS[size][badge.tier] : KIND_CLASS[badge.kind];
+function badgeClass(badge, size, onLight) {
+  const colour = badge.kind === 'tier'
+    ? TIER_CLASS[size][badge.tier]
+    : (onLight && badge.kind === 'type' ? TYPE_ON_LIGHT : KIND_CLASS[badge.kind]);
   return `block shrink-0 font-bold uppercase tracking-wider shadow-sm ${SIZE_CLASS[size]} ${colour || 'bg-gray-500 text-white'}`;
 }
 
@@ -93,10 +99,10 @@ export function Tipped({ tip, label, placement = 'above', align = 'right', child
   );
 }
 
-function Badge({ badge, size, placement, align }) {
+function Badge({ badge, size, placement, align, onLight }) {
   return (
     <Tipped tip={badge.tip} label={badge.label} placement={placement} align={align}>
-      <span className={badgeClass(badge, size)}>{badge.label}</span>
+      <span className={badgeClass(badge, size, onLight)}>{badge.label}</span>
     </Tipped>
   );
 }
@@ -109,6 +115,7 @@ export default function ListingBadges({
   align = 'right',
   className = '',
   kinds = null,
+  onLight = false,
 }) {
   // `kinds`: only these (a card puts its tier top left, its type bottom right).
   const badges = listingBadges(listing, entityType ?? listing?.entity_type).filter(
@@ -118,7 +125,7 @@ export default function ListingBadges({
   return (
     <span className={`flex flex-wrap items-center gap-1.5 ${className}`}>
       {badges.map((badge) => (
-        <Badge key={badge.kind} badge={badge} size={size} placement={placement} align={align} />
+        <Badge key={badge.kind} badge={badge} size={size} placement={placement} align={align} onLight={onLight} />
       ))}
     </span>
   );

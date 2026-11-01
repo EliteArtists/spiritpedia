@@ -87,6 +87,32 @@ export function teacherCount(hub, links) {
   return (Array.isArray(links) ? links : []).filter((l) => l?.hub_id === hub?.id).length;
 }
 
+// Organisations get their own shelf on Discover, Retreat Centres & Platforms,
+// once there are this many; below it they stay in Explore These Channels, so
+// the shelf is never a one-card row (README job #13).
+export const ORGANISATION_SHELF_MIN = 5;
+
+const TIER_RANK = { superhero: 0, ascended_master: 1, luminary: 2 };
+
+// Takes Explore These Channels' list (channels, apps, organisations) and moves
+// the organisations onto their own shelf when there are enough of them:
+// Spiritpedia Official first, then by tier, then most teachers (hub_teachers
+// rows, { hub_id }). Below the minimum nothing moves.
+export function splitOrganisations(platforms, links) {
+  const list = Array.isArray(platforms) ? platforms : [];
+  const orgs = list.filter((h) => h?.entity_type === 'organisation');
+  if (orgs.length < ORGANISATION_SHELF_MIN) return { organisations: [], platforms: list };
+  const rank = (h) => TIER_RANK[h.tier] ?? 3;
+  const organisations = orgs
+    .map((h, i) => ({ h, i, n: teacherCount(h, links) }))
+    .sort((a, b) => (b.h.official ? 1 : 0) - (a.h.official ? 1 : 0)
+      || rank(a.h) - rank(b.h)
+      || b.n - a.n
+      || a.i - b.i)
+    .map(({ h }) => h);
+  return { organisations, platforms: list.filter((h) => h?.entity_type !== 'organisation') };
+}
+
 // A publisher's "N authors": the people among its linked listings, never its
 // channels or apps. Reads the embed publisher_healers(healers(entity_type)).
 export function authorCount(publisher) {

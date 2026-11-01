@@ -20,7 +20,7 @@ import { SITE_URL, DEFAULT_TITLE } from '../utils/seo.js';
 // every visitor. utils/supabase.js exists precisely to be stateless, and this
 // was the one place that bypassed it.
 import { supabase } from '../utils/supabase.js';
-import { authorCount, isPlatform, isSchool, officialFirst, teacherCount } from '../utils/listings.js';
+import { authorCount, isPlatform, isSchool, officialFirst, splitOrganisations, teacherCount } from '../utils/listings.js';
 
 const DEFAULT_AVATAR = 'https://placehold.co/400x400?text=Spiritpedia';
 
@@ -109,8 +109,11 @@ export default async function HomePage({ initialSubjectSlug, initialSearch = '' 
   const individuals = healers.filter((h) => !isPlatform(h));
   // Schools (0029) have their own shelf, Schools & Academies, so they leave
   // Explore These Channels.
-  const platforms = officialFirst(healers.filter((h) => isPlatform(h) && !isSchool(h)));
+  const channelsAndOrgs = officialFirst(healers.filter((h) => isPlatform(h) && !isSchool(h)));
   const schools = healers.filter(isSchool);
+  // Organisations (retreat centres, Insight Timer, The Shift Network) leave it
+  // too, for Retreat Centres & Platforms, once there are 5 or more.
+  const { organisations, platforms } = splitOrganisations(channelsAndOrgs, schoolTeachers);
 
   const superheroes = individuals.filter((h) => h.tier === 'superhero');
   const ascendedMasters = individuals.filter((h) => h.tier === 'ascended_master');
@@ -303,6 +306,19 @@ export default async function HomePage({ initialSubjectSlug, initialSearch = '' 
             items={schools}
             renderItem={(school) => (
               <SchoolCard school={school} teacherCount={teacherCount(school, schoolTeachers)} />
+            )}
+            itemWidthClass="w-[260px]"
+          />
+
+          {/* Organisations, once there are 5 or more (utils/listings.js →
+              splitOrganisations); empty, and so hidden, below that. No "See
+              all" for now. */}
+          <ContentShelf
+            title="Retreat Centres & Platforms"
+            subtitle="Discover Where They Teach"
+            items={organisations}
+            renderItem={(org) => (
+              <SchoolCard school={org} teacherCount={teacherCount(org, schoolTeachers)} kind="Organisation" />
             )}
             itemWidthClass="w-[260px]"
           />

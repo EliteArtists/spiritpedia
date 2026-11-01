@@ -9,6 +9,8 @@ import {
   isSchool,
   officialFirst,
   teacherCount,
+  splitOrganisations,
+  ORGANISATION_SHELF_MIN,
   isHub,
   hubLinkPrefix,
   suggestedListingType,
@@ -36,6 +38,33 @@ test("a school's teacher count counts only its own links", () => {
   assert.equal(teacherCount({ id: 1 }, links), 2);
   assert.equal(teacherCount({ id: 3 }, links), 0);
   assert.equal(teacherCount({ id: 1 }, null), 0);
+});
+
+test('organisations get their own shelf only at the minimum (never a one-card row)', () => {
+  const org = (id, extra = {}) => ({ id, entity_type: 'organisation', tier: 'luminary', ...extra });
+  const channel = { id: 99, entity_type: 'channel' };
+  const four = [org(1), org(2), org(3), org(4), channel];
+  assert.equal(ORGANISATION_SHELF_MIN, 5);
+  assert.deepEqual(splitOrganisations(four, []), { organisations: [], platforms: four });
+
+  const five = [...four.slice(0, 4), org(5), channel];
+  const { organisations, platforms } = splitOrganisations(five, []);
+  assert.equal(organisations.length, 5);
+  assert.deepEqual(platforms, [channel]);
+  assert.deepEqual(splitOrganisations(null, null), { organisations: [], platforms: [] });
+});
+
+test('the organisations shelf: Official first, then tier, then most teachers', () => {
+  const links = [{ hub_id: 3 }, { hub_id: 3 }, { hub_id: 4 }];
+  const list = [
+    { id: 1, entity_type: 'organisation', tier: 'luminary' },
+    { id: 2, entity_type: 'organisation', tier: 'luminary', official: true },
+    { id: 3, entity_type: 'organisation', tier: 'superhero' },
+    { id: 4, entity_type: 'organisation', tier: 'superhero' },
+    { id: 5, entity_type: 'organisation', tier: null },
+    { id: 6, entity_type: 'app' },
+  ];
+  assert.deepEqual(splitOrganisations(list, links).organisations.map((h) => h.id), [2, 3, 4, 1, 5]);
 });
 
 test('schools and organisations are hubs; channels and people are not', () => {

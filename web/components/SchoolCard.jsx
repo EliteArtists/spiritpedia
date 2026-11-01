@@ -4,14 +4,15 @@ import ListingBadges from './ListingBadges.jsx';
 // School card for the Schools & Academies shelf (migration 0029). A school is a
 // listing (healers.entity_type 'school'), but its picture is usually a logo, so
 // it borrows the publisher card's look: the logo on its white panel, held at
-// 16:9 so every card is the same height, and one meta line.
-export default function SchoolCard({ school, teacherCount = 0 }) {
+// 16:9 so every card is the same height, and one meta line. The Retreat
+// Centres & Platforms shelf uses it for organisations too (kind="Organisation").
+export default function SchoolCard({ school, teacherCount = 0, kind = 'School' }) {
   const meta = [
     teacherCount > 0 ? `${teacherCount} ${teacherCount === 1 ? 'teacher' : 'teachers'}` : null,
     school.founded_year ? `Founded ${school.founded_year}` : null,
   ]
     .filter(Boolean)
-    .join(' · ') || 'School'; // always one line, so cards line up
+    .join(' · ') || kind; // always one line, so cards line up
 
   return (
     <div className="group relative h-full">
@@ -25,6 +26,7 @@ export default function SchoolCard({ school, teacherCount = 0 }) {
             listing={school}
             placement="below"
             align="left"
+            onLight
             className="absolute top-5 left-5 z-10"
           />
           <PublisherLogo
@@ -38,7 +40,7 @@ export default function SchoolCard({ school, teacherCount = 0 }) {
           <h3 className="text-sm font-semibold leading-snug text-white">{school.name}</h3>
           <p className="mt-1 text-xs text-gray-400">{meta}</p>
           <span className="mt-4 inline-flex items-center gap-1.5 text-sm font-bold uppercase tracking-wider text-[#7c3aed] transition-colors group-hover:text-[#a78bfa]">
-            View School &rarr;
+            View {kind} &rarr;
           </span>
         </div>
       </a>
