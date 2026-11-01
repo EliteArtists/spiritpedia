@@ -1,0 +1,197 @@
+{
+  "healer": {
+    "healer_slug": "kerri-kelly",
+    "create": {
+      "name": "Kerri Kelly",
+      "bio": "Kerri Kelly has taught yoga for more than two decades and now works as a movement teacher, coach and writer whose central question is what it means to be well when the culture around us is not. She grew up in a family of firefighters and first responders, and that sense of service runs through her teaching. Her book American Detox (2022) questions the self-improvement side of the wellness world and argues for a practice of care that includes other people as well as oneself.\n\nHer main practice is Movement for the Movement (MVMT), a form of free, improvised movement, ritual and reflection in which participants notice the habits of urgency, control and holding back that live in the body and try out other ways of moving and relating. Gatherings are held twice a month around the new and full moon, alongside one-to-one coaching on presence, boundaries and leadership, and retreats such as The Mythical Body at Esalen. She founded CTZNWELL, a community organisation working on wellbeing and justice, and has spoken at Wisdom 2.0 and two TEDx events.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "worldwide",
+      "city": null,
+      "country": null,
+      "subjects": [
+        "shadow-work",
+        "yoga",
+        "spirituality"
+      ],
+      "website_url": "https://www.kerrikelly.co/",
+      "booking_url": "https://www.kerrikelly.co/coaching",
+      "youtube_url": null,
+      "instagram_url": "https://www.instagram.com/kkellymoves/",
+      "facebook_url": "https://www.facebook.com/kerrikellyyoga/",
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": null,
+      "image_urls": [
+        "https://cdn.prod.website-files.com/602d8561ae2fe6ec8347c903/68250f686baed7e5a4aac439_Kerry-Kelly-2025-Portrait.png"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "esalen",
+      "role": "instructor"
+    }
+  ],
+  "videos": [
+    {
+      "title": "The Privilege of Well-Being | Kerri Kelly | TEDxBend",
+      "url": "https://www.youtube.com/watch?v=CZowld1g7Qo",
+      "subjects": [
+        "spirituality",
+        "yoga"
+      ],
+      "channel": "TEDx Talks"
+    },
+    {
+      "title": "The Myth of Wellness and How We Can Truly Heal with Kerri Kelly - Terri Cole",
+      "url": "https://www.youtube.com/watch?v=IOD2r5nN0QQ",
+      "subjects": [
+        "spirituality",
+        "shadow-work"
+      ],
+      "channel": "Terri Cole"
+    },
+    {
+      "title": "American Detox: The Myth of Wellness with  Kerri Kelly & Ethan Nichtern - The Road Home Ep. 76",
+      "url": "https://www.youtube.com/watch?v=C681F7yoo-A",
+      "subjects": [
+        "spirituality",
+        "mindfulness"
+      ],
+      "channel": "Be Here Now Network"
+    },
+    {
+      "title": "Detoxing Wellness With Kerri Kelly",
+      "url": "https://www.youtube.com/watch?v=i_jdFiXPzWM",
+      "subjects": [
+        "spirituality",
+        "shadow-work"
+      ],
+      "channel": "Center for Action and Contemplation"
+    },
+    {
+      "title": "Practice You Podcast #77: Kerri Kelly",
+      "url": "https://www.youtube.com/watch?v=V--RH9BwI98",
+      "subjects": [
+        "yoga",
+        "spirituality"
+      ],
+      "channel": "Elena Brower"
+    },
+    {
+      "title": "Transforming Wellness with Kerri Kelly",
+      "url": "https://www.youtube.com/watch?v=2jCkMGYPH9I",
+      "subjects": [
+        "spirituality",
+        "shadow-work"
+      ],
+      "channel": "Chad Woodford"
+    }
+  ],
+  "books": [
+    {
+      "title": "American Detox: The Myth of Wellness and How We Can Truly Heal",
+      "slug": "american-detox",
+      "author": "Kerri Kelly",
+      "asin": "1623177243",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "A critique of the self-improvement wellness industry, mixing memoir with practical exercises. Kelly argues that personal wellbeing depends on looking after one another and the wider culture, and offers practices for shifting habits of isolation and competition.",
+      "subjects": [
+        "spirituality",
+        "shadow-work"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1623177243.01._SCLZZZZZZZ_.jpg"
+    }
+  ],
+  "courses": [
+    {
+      "title": "The Mythical Body",
+      "url": "https://www.esalen.org/workshops/the-mythical-body-050727",
+      "description": "A weekend residential workshop at Esalen using her MVMT approach of dance, improvised movement, ritual, play and reflection. The weekend is shaped around five elements, from earth to ether, as a way of noticing old stories carried in the body and letting new ones take form.",
+      "price": "From $940 USD (all-inclusive)",
+      "product_type": "retreat",
+      "start_date": "2027-05-07",
+      "end_date": "2027-05-09",
+      "subjects": [
+        "shadow-work",
+        "spirituality"
+      ],
+      "image": "https://cdn.prod.website-files.com/602d8561ae2fe6ec8347c903/696815a8c28f404355f6e61f_6966c131134550705ce3ce0e_2025-Esalen_lavender-purple-plant_Natalie-Grasso-1500x775.jpeg"
+    },
+    {
+      "title": "Movement for the Movement (MVMT) practice",
+      "url": "https://www.kerrikelly.co/mvmt",
+      "description": "Twice-monthly group movement sessions timed with the new and full moon. Guided and improvised movement is used to notice patterns of urgency and control in the body and to practise freer ways of moving and relating. Single sessions on a sliding scale, or a yearly subscription.",
+      "price": "$13 to $35 USD per session (sliding scale)",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "shadow-work",
+        "spirituality"
+      ],
+      "image": "https://cdn.prod.website-files.com/602d8561ae2fe6ec8347c903/68250f686baed7e5a4aac439_Kerry-Kelly-2025-Portrait.png"
+    },
+    {
+      "title": "One-to-one coaching with Kerri Kelly",
+      "url": "https://www.kerrikelly.co/coaching",
+      "description": "Ongoing individual or small-group coaching focused on staying present under pressure, setting boundaries and leading with integrity, using embodied and relational practice. A free 30-minute discovery call is offered first.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "life-coaching",
+        "shadow-work"
+      ],
+      "image": "https://cdn.prod.website-files.com/602d8561ae2fe6ec8347c903/68250f686baed7e5a4aac439_Kerry-Kelly-2025-Portrait.png"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "American Detox Book Club",
+      "url": "https://www.kerrikelly.co/american-detox-book-club",
+      "description": "A free, self-paced book club for readers of American Detox, with material for working through the book alone or with a group. Sign-up is free.",
+      "featured": true,
+      "resource_type": "mini_course",
+      "subjects": [
+        "spirituality",
+        "shadow-work"
+      ],
+      "image": "https://www.kerrikelly.co/content-assets/public/eyJhbGciOiJIUzI1NiJ9.eyJvYmplY3Rfa2V5IjoibHI1NXFzNmVjeW10NW56bGplMG1uYW15MnJpYSIsImRvbWFpbiI6Ind3dy5rZXJyaWtlbGx5LmNvIn0.p-RLuukcJdM2-3KipXZL8Ldmj4g7UFJaW1lW729kRv0"
+    }
+  ],
+  "sprint": {
+    "hub": "esalen",
+    "rank": 244,
+    "hub_url": "https://www.esalen.org/faculty/kerri-kelly",
+    "tier_evidence": "Instagram @kkellymoves 71K (og:description, 1 Nov 2026); Facebook /kerrikellyyoga 4,253 (og:description, 1 Nov 2026); Instagram @kkellyyoga (also linked in her site footer) count not readable; no own YouTube channel → ~75.3k total → local_hero",
+    "email": "contact form",
+    "email_source": null,
+    "contact_form_url": "https://www.kerrikelly.co/speaking-form",
+    "bio_check": "OK: no 8-word runs against 12 source(s)",
+    "flags": [
+      "Political check (judgement call for the owner): I did not skip her. Her YouTube appearances (all on other channels) are about wellness, privilege, race and belonging, with no party or candidate commentary. But activism is a large part of her work: her speaking page says she straddles 'the wellness and political worlds', MVMT is described on her about page as 'an embodied political practice', and CTZNWELL, which she founded, is a 501(c)(4) whose VOTEWELL campaign mobilises voters for 'a progressive agenda' (it says it does not back candidates). I counted this as social-justice framing rather than partisan commentary, kept the listing to her movement, coaching and book work, and left out the openly political items. A human may prefer to skip.",
+      "Spiritual-teaching fit is borderline: her current work is mainly movement practice, leadership/accountability coaching and activism; yoga teaching is her background.",
+      "No email published: contact is the speaking-enquiry form (an embedded Google Form) at /speaking-form; a Calendly discovery-call link is also on /coaching.",
+      "Two Instagram handles are linked from her site (@kkellymoves in the header, @kkellyyoga in the footer); only @kkellymoves could be read.",
+      "Availability set to worldwide: no base city is published; MVMT and coaching appear to be online.",
+      "Only one photo used (Esalen headshot); the site's hero photo has 'WELCOME' lettering over it.",
+      "Hub page file name spells her 'Kerry'; her own site and the hub text use Kerri."
+    ],
+    "left_out": [
+      "The Mythical Body Retreat, 12–16 Oct 2026 (on her site): already past.",
+      "GROW mentorship cohort (Sept–Nov 2026): already started; also a race-affinity coaching programme for white participants.",
+      "MVMT School 2026: no longer open for sign-up.",
+      "Desert Detox retreat (Joshua Tree) and SOL incubator: no dates ('stay tuned').",
+      "Videos 'The Politics of Well-Being' (Wanderlust) and 'Reimagining Citizenship' (TEDxWashingtonSquare): openly political or civic framing, left out under the political rule as a precaution.",
+      "Videos on race ('Confronting the Myths of Whiteness and Wellness', 'Race and Resilience', 'Decolonizing the Wellness Myth'): social-justice topics rather than spiritual teaching; left out to keep the page on her practice.",
+      "'Beyond Trauma Podcast | The Wellness Gap': condition-named channel title.",
+      "Wisdom 2.0 panel with Sharon Salzberg and the Melody Moore conversation: shared stage, not mainly her teaching; Wanderlust 0:56 clip: too short.",
+      "Speaking topics and The Detox Workshop for organisations: speaking/consulting, not an offering with its own page and price."
+    ]
+  }
+}

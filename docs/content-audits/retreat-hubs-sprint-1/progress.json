@@ -4547,9 +4547,9 @@
    "contact_form_seen": false,
    "in_person_words": false,
    "hub_bio_extract": "Andrew Holecek andrewholecek.com Dr. Andrew Holecek has completed the traditional three-year Buddhist meditation retreat and offers seminars internationally on meditation, dream yoga, and the art of dying. He is the author of many books, including Preparing to Die: Practical Advice and Spiritual Wisdom from the Tibetan Buddhist Tradition; The Power and the Pain: Transforming Spiritual Hardship int",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "No email or contact form could be confirmed: his website andrewholecek.com (including /contact and /about) returns 403 Forbidden to both curl and WebFetch behind a bot check, which we may not get round, and his Teachable academy has no products or contact details. Search results suggest his own programme pages publish info@andrewholecek.com, but that could not be opened to verify (checked 1 Nov 2026). Otherwise a strong candidate: current Esalen programme 30 Apr–2 May 2027 (dark retreat), several books, and a YouTube channel (@andrewholecek, 6.73K subscribers) that is dharma teaching, not condition-led. A human with a browser could confirm the address and revisit."
   },
   {
    "rank": 242,
@@ -4570,7 +4570,7 @@
    "contact_form_seen": false,
    "in_person_words": false,
    "hub_bio_extract": "Day Schildkret dayschildkret.com Day Schildkret is an award-winning queer author, artist, ritualist, teacher and is internationally known for Morning Altars , which BuzzFeed calls, “a celebration of nature and life.” With nearly 100k followers on social media, Day has worked for close to two decades with thousands of individuals, communities, and organizations to help heal the culture through a me",
-   "status": "planned",
+   "status": "dev",
    "plan": "docs/content-audits/day-schildkret.json",
    "skip_reason": null
   },
@@ -4593,7 +4593,7 @@
    "contact_form_seen": false,
    "in_person_words": false,
    "hub_bio_extract": "Dustin DiPerna dustindiperna.org Dustin DiPerna is a Harvard-trained scholar of world religions. He currently serves as adjunct professor at Stanford University where he teaches classes on meditation, human flourishing, and purpose finding. Dustin spent 20 years studying with Ken Wilber and is considered an expert in Integral Theory. He is a senior teacher of Tibetan meditation practices and studi",
-   "status": "planned",
+   "status": "dev",
    "plan": "docs/content-audits/dustin-diperna.json",
    "skip_reason": null
   },
@@ -4616,9 +4616,9 @@
    "contact_form_seen": false,
    "in_person_words": false,
    "hub_bio_extract": "Kerri Kelly kerrikelly.co Kerri Kelly is a movement educator, impact coach, and embodied activist who bridges personal transformation with collective change. For 25 years, she has helped visionary leaders, teams, and organizations build the capacity to lead under pressure and deliver change that lasts. Author of the critically acclaimed book, American Detox: The Myth of Wellness and How We Can Tru",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Held for the owner (political check and fit): her about page calls her work 'an embodied political practice', and CTZNWELL, which she founded, runs VOTEWELL to turn out voters for 'a progressive agenda' (it backs no candidates). Her current work is mostly movement practice, leadership coaching and activism. Researcher's plan (contact form, movement practice, coaching and book only) kept in dropped/."
   },
   {
    "rank": 245,
@@ -4645,8 +4645,8 @@
    "contact_form_seen": false,
    "in_person_words": false,
    "hub_bio_extract": "Micha Merrick Micha grew up in a family of healers and earth-based celebration. She knew the medicinal wild plants of her forest and meadow from an early age. learning to meditate in wild spaces and revere the larger circles and cycles to which we belong. For the past seven years she's lived off-grid in Big Sur, in a magical mountainside yurt-cabin, living with the land, tending her hillside herb ",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/micha-merrick.json",
    "skip_reason": null
   },
   {
@@ -4857,5 +4857,5 @@
    "skip_reason": "No website, published email, contact form or social accounts could be found for her, she is guest faculty on Mark Nicolson's Esalen workshop rather than its lead, and her hub bio frames her work partly around plant medicines and IFS therapy; too thin for a proper page."
   }
  ],
- "updated": "2026-11-01T18:46:48.482Z"
+ "updated": "2026-11-01T18:52:37.019Z"
 }

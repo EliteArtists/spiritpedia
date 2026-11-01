@@ -1,0 +1,126 @@
+{
+  "healer": {
+    "healer_slug": "micha-merrick",
+    "create": {
+      "name": "Micha Merrick",
+      "bio": "Micha Merrick is a ritualist, herbalist and sound practitioner who lives off-grid in Big Sur and works at Esalen, where she is on the experiential faculty. She grew up on a back-to-the-land farm where gardening, meditation and marking the seasons were part of family life, and after a first career in the performing arts she qualified in 2009 to teach yoga and give Esalen massage. A job teaching yoga at an herbal clinic in Chiang Mai led to years of study with Thai women healers, with a Lahu medicine woman and midwife in northern Thailand, with midwives in Bali and with folk herbalists in New England.\n\nHer work weaves plants, touch, sound and ceremony. At Esalen she gives the Herbal Clearing Ritual, a private session of steamed herbal bundles, sweeping with fresh herbs and sound, and leads weekly flower baths, candlelit sound baths in the hot springs and forest sound journeys. She plays drone flute, frame drum, harp, dulcimer, bowls and gong. Her weekend and week-long retreats follow the solstices and seasonal festivals, drawing on Celtic and Nordic folk custom alongside garden harvests and herbcraft, and she trains practitioners in herbal bodywork in person. She also offers Jungian-style tarot readings and works as a birth doula.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local",
+      "city": "Big Sur",
+      "country": "United States",
+      "subjects": [
+        "sound-healing",
+        "shamanism",
+        "spirituality"
+      ],
+      "website_url": "https://www.michamerrick.com/",
+      "booking_url": "https://www.michamerrick.com/esalen-1",
+      "youtube_url": null,
+      "instagram_url": "https://www.instagram.com/micha_merrick/",
+      "facebook_url": "https://www.facebook.com/micha.merrick",
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "rituals@michamerrick.com",
+      "image_urls": [
+        "https://cdn.prod.website-files.com/602d8561ae2fe6ec8347c903/680c052be6c9331c013b7f88_micha-merrick-2025-Portrait.png"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "esalen",
+      "role": "instructor"
+    }
+  ],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Solstice Hearthfire: Celebrate the Rebirth of Your Inner Light",
+      "url": "https://www.esalen.org/workshops/solstice-hearthfire-celebrate-the-rebirth-of-your-inner-light-121826",
+      "description": "A winter solstice weekend at Esalen built around fire circles, storytelling, sunset and sunrise ceremonies, garden herbcraft, a communal feast and a candlelit herbal sound bath in the hot springs. It draws on Celtic, Nordic and other European solstice customs. A $25 materials fee is added.",
+      "price": "From $940 USD (all-inclusive)",
+      "product_type": "retreat",
+      "start_date": "2026-12-18",
+      "end_date": "2026-12-20",
+      "subjects": [
+        "shamanism",
+        "sound-healing",
+        "spirituality"
+      ],
+      "image": "https://cdn.prod.website-files.com/602d8561ae2fe6ec8347c903/6963e004d206563f6cc510d8_695df87181d0a00f1f8b138a_2025-Esalen_night-sky-stars_Ali-Kaukas-5297-1500x775.jpeg"
+    },
+    {
+      "title": "Rights of Spring: Refresh Your Spirit Through Cleansing Herbal Bodywork",
+      "url": "https://www.esalen.org/workshops/rights-of-spring-refresh-your-spirit-through-cleansing-herbal-bodywork-050327",
+      "description": "A five-day spring retreat at Esalen on herbal clearing rituals: herbal poultice bodywork, sweeping with fresh herbs, water blessing and flower bathing, with sound in the springs and a walk up Esalen's canyon. Participants learn simple practices to share with family and friends; no bodywork experience is needed. A $25 materials fee is added.",
+      "price": "From $940 USD (all-inclusive)",
+      "product_type": "retreat",
+      "start_date": "2027-05-03",
+      "end_date": "2027-05-07",
+      "subjects": [
+        "shamanism",
+        "sound-healing",
+        "energy-medicine"
+      ],
+      "image": "https://cdn.prod.website-files.com/602d8561ae2fe6ec8347c903/6a4c3f96d1aeaf00214310ef_696802c6ac5cbb48e3d168af_6966b2fb9b8d2ffb73a60be9_2026-Esalen_bath-flowers_Amiee-Sioux-IMG_7220-1500x775.jpeg"
+    },
+    {
+      "title": "Herbal Clearing Ritual",
+      "url": "https://www.esalen.org/healing-arts-alternative-services/herbal-clearing-ritual",
+      "description": "A 90-minute private session at Esalen for one or two people. You help prepare an herbal poultice with flowers from the Esalen garden, then receive bodywork with steamed herb bundles and sweeping of fresh herbs while she plays sound instruments.",
+      "price": "$303 USD (one person) / $412 USD (two) for workshop guests; $430 / $665 USD for day-pass visitors",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "energy-medicine",
+        "sound-healing"
+      ],
+      "image": "https://cdn.prod.website-files.com/602d8561ae2fe611c947c905/632b95a43d77dd1bee38e079_esalen-gold-transparent.png"
+    },
+    {
+      "title": "Herbal bodywork practitioner training and mentorship",
+      "url": "https://www.michamerrick.com/study",
+      "description": "A path for people who want to practise herbal bodywork and seasonal ritual themselves, starting with in-person initiation retreats and continuing through a mentorship circle, advanced mentorship and teacher training. Held in different countries; ask her for dates.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "energy-medicine",
+        "shamanism"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/61526b2d7118357220f42a05/00e0f572-39a0-41e9-98e8-a25a77e7d211/DSC_7720.jpg"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "hub": "esalen",
+    "rank": 245,
+    "hub_url": "https://www.esalen.org/faculty/micha-merrick",
+    "tier_evidence": "Instagram @micha_merrick 6,409 (og:description, 1 Nov 2026); Facebook /micha.merrick is a personal profile with no count shown; no YouTube teaching channel → ~6.4k total → local_hero",
+    "email": "yes",
+    "email_source": "https://www.michamerrick.com/",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 12 source(s)",
+    "flags": [
+      "Thin listing: no videos, books or free resources; items are her two Esalen programmes (counted once for thinness), the Herbal Clearing Ritual session and her practitioner training, so she only just reaches ~3.",
+      "Health-claim borderline: four of the six session types on her own Healing page are reproductive-health oriented (Herbal Fertility Session, Womb Ritual, Prenatal, Postnatal Healing), and her Spirit Weavers profile mentions fertility and menopause work. I left all of those out; her Esalen programmes, classes and the Herbal Clearing Ritual are ritual and seasonal rather than condition-led, so I judged her work not mainly condition-based. A human may disagree.",
+      "Only one usable photo (Esalen headshot); the photos on her own site show her hands or body without her face.",
+      "Queue entry had no website; her site michamerrick.com was found via her Spirit Weavers Gathering profile.",
+      "Rights of Spring is a five-day programme, but the Esalen page's static rate table shows the same $940 'from' figure as weekend programmes (live prices load from the booking system), so the price may be understated."
+    ],
+    "left_out": [
+      "Herbal Fertility Session, Womb Ritual Session, Prenatal Session and Postnatal Healing Session: condition or medical-adjacent (fertility, pregnancy and postnatal care).",
+      "Birth doula services: medical-adjacent.",
+      "Intuitive Tarot readings: booked through Esalen Healing Arts with no page of their own.",
+      "Elemental Thai session: listed on her site with no separate page or details.",
+      "Past Esalen programmes (A Midsummer's Dream, 26–28 Jun 2026; While The Veil is Thin, 26–30 Oct 2026): already ended.",
+      "YouTube 'Lyra' (her channel): music rehearsal footage, not teaching.",
+      "Weekly Esalen classes (flower bath, sound bath, forest sound journey): part of Esalen's open class schedule with no page of their own."
+    ]
+  },
+  "images_final": true
+}

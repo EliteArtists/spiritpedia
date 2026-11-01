@@ -1,0 +1,82 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 575,
+    "healer_slug": "insight-meditation-society"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "53c5d882-ee5a-4e89-ad8e-dec7da890b4c",
+      "slug": "retreat-center-retreats",
+      "title": "Retreat Center Retreats"
+    },
+    {
+      "table": "courses",
+      "id": "bd0eac32-ca73-45cb-b68a-fcac529cc3ed",
+      "slug": "forest-refuge-personal-retreats",
+      "title": "Forest Refuge Personal Retreats"
+    },
+    {
+      "table": "courses",
+      "id": "894bf9dc-a048-4a5f-81a5-bd1cc394c3b5",
+      "slug": "ims-online",
+      "title": "IMS Online"
+    },
+    {
+      "table": "courses",
+      "id": "a9a28c49-2915-479a-bcb8-6c5a3cec9924",
+      "slug": "thanksgiving-insight-retreat-hybrid",
+      "title": "Thanksgiving Insight Retreat (Hybrid)"
+    },
+    {
+      "table": "courses",
+      "id": "e5746a61-89dc-4e77-8a0c-9b7030934713",
+      "slug": "mindfulness-as-the-gateway-to-many-beautiful-qualities",
+      "title": "Mindfulness as the Gateway to Many Beautiful Qualities"
+    },
+    {
+      "table": "courses",
+      "id": "05044e26-57f7-45ce-a53c-976b82f468e1",
+      "slug": "metta-weekend-retreat-a-deep-exploration-of-loving-kindness-2027",
+      "title": "Metta Weekend Retreat: A Deep Exploration of Loving-Kindness 2027"
+    },
+    {
+      "table": "courses",
+      "id": "9be816aa-015d-48b2-8614-4d4238797c4f",
+      "slug": "coming-home-to-kind-awareness-livestream-retreat-2027",
+      "title": "Coming Home to Kind Awareness Livestream Retreat 2027"
+    },
+    {
+      "table": "courses",
+      "id": "8b394b51-7947-4506-8ed9-0ba4b5e4d33b",
+      "slug": "forest-refuge-the-brahma-viharas-april-2027",
+      "title": "Forest Refuge: The Brahma Viharas (April 2027)"
+    },
+    {
+      "table": "courses",
+      "id": "0fd777c6-7a10-4e6e-afa1-841e2bf3323b",
+      "slug": "this-living-body-livestream-retreat-2027",
+      "title": "This Living Body Livestream Retreat 2027"
+    },
+    {
+      "table": "free_resources",
+      "id": "d6d73998-5c14-4d4b-ae0e-f35ca0f1507e",
+      "slug": "ims-teacher-talks-and-meditations",
+      "title": "IMS Teacher Talks and Meditations"
+    },
+    {
+      "table": "free_resources",
+      "id": "dd1e214b-a304-45a5-aee2-b4f204a6fcfc",
+      "slug": "insight-meditation-society-on-youtube",
+      "title": "Insight Meditation Society on YouTube"
+    },
+    {
+      "table": "free_resources",
+      "id": "9bd93bb6-17e3-43b1-be3e-cb3b4e566ee3",
+      "slug": "inside-insight-the-founding-story",
+      "title": "Inside Insight: The Founding Story"
+    }
+  ],
+  "at": "2026-11-01T18:51:38.962Z"
+}

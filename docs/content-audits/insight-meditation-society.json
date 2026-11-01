@@ -1,0 +1,242 @@
+{
+  "healer": {
+    "healer_slug": "insight-meditation-society",
+    "create": {
+      "name": "Insight Meditation Society",
+      "bio": "Insight Meditation Society, usually called IMS, is a non-profit Buddhist retreat organisation in the small town of Barre in central Massachusetts. Three young teachers who had trained in Asia, Joseph Goldstein, Sharon Salzberg and Jack Kornfield, set it up in 1975 and bought a former Catholic novitiate, which opened its doors to meditators on Valentine's Day 1976. It grew into one of the best-known homes of vipassana in the West, and over the decades it has welcomed visiting masters from Burma, Thailand, Tibet and Korea alongside its own resident teachers. Its roots are in the Theravada tradition, but the practices are taught in a way that people of any faith or none can take up.\n\nThe land holds two separate retreat houses set in roughly 400 acres of woodland. The Retreat Center runs a yearly calendar of silent, teacher-led courses in insight and lovingkindness meditation, from a weekend up to three months, and most of them suit beginners as well as seasoned meditators. The Forest Refuge, opened in 2003, is for experienced practitioners who want a quieter, more self-directed personal retreat of a week to a year or longer, guided by a pair of visiting teachers each month. IMS Online adds livestreamed retreats, short courses, a book club and weekly sitting groups. Fees run on a sliding scale, and the teachers are supported by the traditional practice of dana, gifts offered at the end of a retreat.",
+      "tier": "luminary",
+      "entity_type": "organisation",
+      "availability": "local_online",
+      "city": "Barre",
+      "country": "United States",
+      "founded_year": 1975,
+      "subjects": [
+        "meditation",
+        "mindfulness",
+        "spirituality"
+      ],
+      "website_url": "https://www.dharma.org/",
+      "booking_url": "https://www.dharma.org/retreats/schedules/",
+      "youtube_url": "https://www.youtube.com/@InsightMeditationSociety",
+      "instagram_url": "https://www.instagram.com/insightmeditationsociety/",
+      "facebook_url": "https://www.facebook.com/InsightMeditationSociety",
+      "twitter_url": "https://twitter.com/insmedsoc",
+      "tiktok_url": null,
+      "contact_email": "rc@dharma.org",
+      "image_urls": [
+        "https://yt3.googleusercontent.com/ytc/AIdro_lR2E0dV5Bp6Zjjl0CHfBI9btZKraL7PGdJVB4gWjXfXw=s900-c-k-c0x00ffffff-no-rj",
+        "https://www.dharma.org/wp-content/uploads/Insight-Meditation-Society-1-scaled.webp"
+      ]
+    }
+  },
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Retreat Center Retreats",
+      "url": "https://www.dharma.org/retreats/retreat-center/",
+      "description": "Silent residential courses at IMS's original house in Barre, lasting anything from a weekend to three months. Each day alternates sitting and walking meditation with talks, teacher interviews and an hour of work practice, with simple single rooms and vegetarian meals. Most courses are open to newcomers as well as experienced meditators.",
+      "price": "Sliding scale (Supported, Sustaining, Benefactor or Scholarship rate); teachers are offered dana at the end",
+      "product_type": "retreat",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://www.dharma.org/wp-content/uploads/2018/08/Insight-Meditation-5.23.18-17-copy.jpg"
+    },
+    {
+      "title": "Forest Refuge Personal Retreats",
+      "url": "https://www.dharma.org/retreats/forest-refuge/",
+      "description": "Longer, self-directed silent retreats for practitioners with substantial prior retreat experience, in a separate centre with room for about thirty people. Stays run from seven nights to a year or more, and two visiting teachers guide each month through talks and individual meetings. Applicants are asked to have completed at least a six-week teacher-led retreat or several week-long ones.",
+      "price": "$215 USD per night at the 2027 Sustaining rate (sliding scale $115–$355 per night; seven-night minimum)",
+      "product_type": "retreat",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://www.dharma.org/wp-content/uploads/20190819_132658_00032-1.jpg"
+    },
+    {
+      "title": "IMS Online",
+      "url": "https://www.dharma.org/ims-online/",
+      "description": "IMS's virtual meditation hall: livestreams of residential retreats, day-long and weekend courses, an online book club with Buddhist authors, recorded on-demand programmes and regular sitting groups, all priced on a sliding scale with a low-cost scholarship option.",
+      "price": "Varies by programme (sliding scale, e.g. $100–$665 USD; some programmes free)",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://yt3.googleusercontent.com/ytc/AIdro_lR2E0dV5Bp6Zjjl0CHfBI9btZKraL7PGdJVB4gWjXfXw=s900-c-k-c0x00ffffff-no-rj"
+    },
+    {
+      "title": "Thanksgiving Insight Retreat (Hybrid)",
+      "url": "https://ims.dharma.org/courses/Thanksgiving-Insight-Hybrid-Retreat",
+      "description": "The Thanksgiving retreat at the Retreat Center, joined from home: instructions and evening talks are broadcast live from the IMS meditation hall, with a home timetable of sitting and walking practice. Led by Tuere Sala, Bhante Buddharakkhita and Shelly Graf; open to new and returning meditators.",
+      "price": "$250 USD Sustainer rate (sliding scale $150–$350; online place)",
+      "product_type": "retreat",
+      "start_date": "2026-11-25",
+      "end_date": "2026-11-29",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://import.cdn.thinkific.com/478758/HncLbScXQ3S9rSnqxOuH_Course%20Tile%20760x420.jpg"
+    },
+    {
+      "title": "Mindfulness as the Gateway to Many Beautiful Qualities",
+      "url": "https://ims.dharma.org/courses/mindfulness-as-the-gateway-to-many-beautiful-qualities",
+      "description": "A five-day online retreat with Éowyn Ahlstrom and Bob Stahl on steady, sustained attention as the doorway to kindness, compassion, joy and equanimity, built on the basic forms of sitting and walking practice. It also counts as a retreat prerequisite for some mindfulness-programme teacher trainings.",
+      "price": "$325 USD Sustainer rate (sliding scale $175–$450)",
+      "product_type": "retreat",
+      "start_date": "2026-12-04",
+      "end_date": "2026-12-09",
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "image": "https://import.cdn.thinkific.com/478758/6e8TyKHqQjOc0dAmP6qR_Course%20Tile%20760x420.jpg"
+    },
+    {
+      "title": "Metta Weekend Retreat: A Deep Exploration of Loving-Kindness 2027",
+      "url": "https://ims.dharma.org/courses/metta-weekend-retreat-a-deep-exploration-of-loving-kindness-2027",
+      "description": "An online weekend of metta (lovingkindness) practice with IMS co-founder Sharon Salzberg and Devon Hase, for all levels: guided and silent sitting, walking meditation, dharma talks and time for questions, ideally kept as a quiet retreat at home.",
+      "price": "$300 USD Sustainer rate (sliding scale $150–$400)",
+      "product_type": "retreat",
+      "start_date": "2027-01-29",
+      "end_date": "2027-01-31",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "image": "https://import.cdn.thinkific.com/478758/lvXFbC1hTWa2zXNBOevy_Course%20Tile%20760x420.jpg"
+    },
+    {
+      "title": "Coming Home to Kind Awareness Livestream Retreat 2027",
+      "url": "https://ims.dharma.org/courses/Coming-Home-to-Kind-Awareness-Livestream-Retreat-2027",
+      "description": "A week-long Retreat Center course streamed to home practitioners, taught by DaRa Williams, Bart van Melik and Nolitha Tsengiwe, on suffering, its causes and the way to freedom through relaxed, natural awareness. Talks and instructions come live from the meditation hall; there is no direct contact with the teachers online.",
+      "price": "$300 USD Sustainer rate (sliding scale $200–$450; online place)",
+      "product_type": "retreat",
+      "start_date": "2027-02-08",
+      "end_date": "2027-02-15",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://import.cdn.thinkific.com/478758/4XTVB2GjTgmg7PvgdjQ6_Course%20Tile%20760x420.jpg"
+    },
+    {
+      "title": "Forest Refuge: The Brahma Viharas (April 2027)",
+      "url": "https://www.dharma.org/retreats/schedules/forest-refuge-schedule-2027/",
+      "description": "A full month at the Forest Refuge with Narayan Helen Liebenson and Matthew Hepburn, giving one week each to lovingkindness, compassion, sympathetic joy and equanimity, with regular instruction, talks and one-to-one meetings. The whole month must be booked.",
+      "price": "$215 USD per night at the 2027 Sustaining rate (sliding scale $95–$355 per night)",
+      "product_type": "retreat",
+      "start_date": "2027-04-01",
+      "end_date": "2027-04-30",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "image": "https://www.dharma.org/wp-content/uploads/20190819_132658_00032-1.jpg"
+    },
+    {
+      "title": "This Living Body Livestream Retreat 2027",
+      "url": "https://ims.dharma.org/courses/This-Living-Body-livestream-retreat-2027",
+      "description": "A silent week with Devon Hase and Cara Lai on the early Buddhist practice of sensing the body through the four elements of earth, water, fire and wind, drawn from the Satipatthana Sutta. Guided meditations, sitting and walking periods and talks are streamed from the Retreat Center's meditation hall.",
+      "price": "$300 USD Sustainer rate (sliding scale $200–$450; online place)",
+      "product_type": "retreat",
+      "start_date": "2027-04-27",
+      "end_date": "2027-05-04",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://import.cdn.thinkific.com/478758/XdbUgBpvTSOEaLeEIDtJ_Course%20Tile%20760x420.jpg"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "IMS Teacher Talks and Meditations",
+      "url": "https://www.dharma.org/resources/audio/",
+      "description": "A free library of recorded dharma talks and guided meditations recorded during retreats at both Barre centres, from co-founders and visiting teachers alike, to stream or download.",
+      "featured": true,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://yt3.googleusercontent.com/ytc/AIdro_lR2E0dV5Bp6Zjjl0CHfBI9btZKraL7PGdJVB4gWjXfXw=s900-c-k-c0x00ffffff-no-rj"
+    },
+    {
+      "title": "Insight Meditation Society on YouTube",
+      "url": "https://www.youtube.com/@InsightMeditationSociety",
+      "description": "About 300 free videos from IMS: short teachings and guided practices from its teachers, plus films about the two retreat centres and their history.",
+      "featured": false,
+      "resource_type": "practice",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "image": "https://yt3.googleusercontent.com/ytc/AIdro_lR2E0dV5Bp6Zjjl0CHfBI9btZKraL7PGdJVB4gWjXfXw=s900-c-k-c0x00ffffff-no-rj"
+    },
+    {
+      "title": "Inside Insight: The Founding Story",
+      "url": "https://ims.dharma.org/courses/inside-insight-founding-story",
+      "description": "A free documentary on the early years of IMS: how its founders found the Barre property and turned it into a retreat centre. Free registration on IMS Online.",
+      "featured": false,
+      "resource_type": "practice",
+      "subjects": [
+        "spirituality",
+        "meditation"
+      ],
+      "image": "https://import.cdn.thinkific.com/478758/courses/2204135/CD0gjEcdT7ujQ0lYntMC_Course%20Tile.jpg"
+    }
+  ],
+  "sprint": {
+    "tier_evidence": "YouTube 7.5K (channel header next to @InsightMeditationSociety, 309 videos, 1 Nov 2026) -> ~7.5k readable total -> local_hero (Rising Star). Instagram (@insightmeditationsociety) and Facebook (InsightMeditationSociety) counts could not be read without logging in (no count in the public page, 1 Nov 2026); X (@insmedsoc) not counted (needs login). No TikTok.",
+    "tier_override": "luminary by editorial stature (owner to confirm; superhero is the alternative, as Kripalu and Esalen): founded in 1975 by Joseph Goldstein, Sharon Salzberg and Jack Kornfield and opened in 1976, one of the oldest and best-known Western vipassana centres. Readable followers (YouTube 7.5K; Instagram, Facebook and X need a login) alone give local_hero, so superhero would be a two-step raise.",
+    "email": "yes",
+    "email_source": "https://www.dharma.org/contact-us/ (Retreat Center front office: 'Email: rc(at)dharma.org'; also fr(at)dharma.org for the Forest Refuge and IMSOnline(at)Dharma.org for IMS Online)",
+    "contact_form_url": null,
+    "flags": [
+      "Founded year: IMS's history page says the founders decided to start the centre in 1975 and it opened on 14 February 1976; Wikipedia gives 1975, and the IMS Online FAQ says 'Founded in 1976'. Set to 1975 (owner can change to 1976).",
+      "Retreat Center residential schedule not read: myims.dharma.org embeds it from events.dharma.org, whose robots.txt disallows all agents except search engines. One check request to that API and one headless render of the myims page (which loaded the embed) were made before robots.txt was read; nothing from it was used. So the dated retreats here are IMS Online livestream and hybrid versions of Retreat Center courses (prices are the online rates) and a Forest Refuge month.",
+      "IMS Online (ims.dharma.org) runs on Thinkific and has its own Terms of Use (about course materials: no reproducing or distributing them). Only titles, dates, prices and short descriptions in our own words were taken. Its robots.txt allows everything except /enroll/, /order and /certificates/, none of which were opened.",
+      "Availability 'local_online': residential in Barre plus a regular online programme.",
+      "Dated offerings: only programmes starting after 4 Nov 2026. 'Beyond Letting Go: The Four Right Efforts in Recovery' (12 Dec 2026) and the Insight Recovery Sangha left out under the health rule (recovery-framed).",
+      "Forest Refuge prices are per night; the month-long April 2027 retreat requires the full month.",
+      "Subjects: no Buddhism subject exists; tagged meditation, mindfulness, spirituality.",
+      "Organisation, not School (the related Barre Center for Buddhist Studies is a separate organisation)."
+    ],
+    "left_out": [
+      "Guest-led and teacher-specific programmes beyond the six dated retreats (the teachers' own listings will carry them).",
+      "Sanghas (paid monthly sliding scale, started before November 2026), on-demand courses and bundles.",
+      "Service retreats (work-exchange), teen and young-adult retreats, CE credits, donations, shop, recipes, ride share."
+    ],
+    "sources": [
+      "https://www.dharma.org/about-us/",
+      "https://www.dharma.org/about-us/ims-history/",
+      "https://www.dharma.org/contact-us/",
+      "https://www.dharma.org/retreats/retreat-center/",
+      "https://www.dharma.org/retreats/retreat-center/fees/",
+      "https://www.dharma.org/retreats/forest-refuge/",
+      "https://www.dharma.org/retreats/forest-refuge/fees/",
+      "https://www.dharma.org/retreats/schedules/forest-refuge-schedule-2026/",
+      "https://www.dharma.org/retreats/schedules/forest-refuge-schedule-2027/",
+      "https://www.dharma.org/ims-online/",
+      "https://ims.dharma.org/collections",
+      "https://en.wikipedia.org/wiki/Insight_Meditation_Society"
+    ],
+    "bio_check": "OK: no 8-word runs against 69 source(s)"
+  },
+  "notes": [
+    "Hub (README §18.7): Organisation, superhero by editorial stature (owner to confirm); computed tier local_hero from ~7.5k readable followers.",
+    "Teacher pipeline: insight-meditation-society-faculty.json / insight-meditation-society-teachers.json, linked 'Teaches at Insight Meditation Society'."
+  ],
+  "images_final": true
+}
