@@ -6,6 +6,14 @@ full page. **Research only**: read public pages with curl or WebFetch. Never
 sign up, log in, submit a form, or buy anything. Write nothing except the
 output files named below. Never print or read any `.env` file.
 
+**Blocked means skip, every time (owner's standing rule, 1 Nov 2026).** Before
+fetching from any site, read its robots.txt; if it blocks you, don't fetch it.
+If a page or site refuses you (403, 401, a bot check, a Cloudflare challenge,
+a rate limit, a robots.txt block), never retry it under a different browser
+identity, user agent, header set, proxy or tool. Not once, not "just to check".
+Skip that page, use only other public sources, and add a flag saying what was
+blocked.
+
 Your starting point is the teacher's entry in
 `docs/content-audits/insight-timer-sprint-1/progress.json` (Insight Timer URL,
 followers, last upload, email or contact form found, offers, base, website).
@@ -250,10 +258,10 @@ Instagram / Facebook / X counts usually can't be read without logging in. Don't
 try to get round that (no fake user agents, no proxies, no internal APIs); use
 what's public and flag the rest.
 
-**No fake user agents anywhere**: not for Amazon, not for any site. Use curl's
-default user agent or WebFetch. If amazon.com /dp/ pages fail (they often
-return 500), try WebFetch on the /dp/ page, or leave the book out and say so in
-`left_out`; never spoof a browser to get through.
+**No fake user agents anywhere**: not for Amazon, not for any site. Use one honest
+fetch (curl's default user agent, or WebFetch). If an amazon.com /dp/ page
+fails or refuses you (it often returns 500), treat it as blocked: don't retry
+it with another tool or identity; leave the book out and say so in `left_out`.
 
 ## Done
 

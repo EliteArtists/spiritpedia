@@ -6,6 +6,14 @@ page. **Research only**: read public pages with curl or WebFetch. Never sign up,
 log in, submit a form, or buy anything. Write nothing except the output files
 named below. Never print or read any `.env` file.
 
+**Blocked means skip, every time (owner's standing rule, 1 Nov 2026).** Before
+fetching from any site, read its robots.txt; if it blocks you, don't fetch it.
+If a page or site refuses you (403, 401, a bot check, a Cloudflare challenge,
+a rate limit, a robots.txt block), never retry it under a different browser
+identity, user agent, header set, proxy or tool. Not once, not "just to check".
+Skip that page, use only other public sources, and add a flag saying what was
+blocked.
+
 For each teacher you're given, write **one plan file**:
 `docs/content-audits/<slug>.json` (slug = their public name in kebab-case, no
 titles or credentials: "Dr. Roger Jahnke, OMD" → `roger-jahnke`).

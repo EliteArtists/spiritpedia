@@ -465,8 +465,10 @@ for (const s of plan.teaches_at || []) {
 for (const c of plan.courses || []) {
   fixSubjects('offering', c);
   if (!PRODUCT_TYPES.includes(c.product_type)) problems.push(`${label('offering', c)}: product_type "${c.product_type}" isn't one of ${PRODUCT_TYPES.join(', ')}`);
-  const dupes = await get(`courses?select=id&course_url=eq.${encodeURIComponent(c.url)}`);
-  if (dupes.length) { notes.push(`skip ${label('offering', c)}: its link is already in`); continue; }
+  // A shared programme (one hub page for a retreat several teachers lead) may
+  // belong to more than one teacher; skip it only if this teacher has it already.
+  const dupes = healer ? await get(`courses?select=id&course_url=eq.${encodeURIComponent(c.url)}&healer_id=eq.${healer.id}`) : [];
+  if (dupes.length || queue.some((q) => q.table === 'courses' && q.row.course_url === c.url)) { notes.push(`skip ${label('offering', c)}: its link is already in`); continue; }
   if (existing.courses.find((x) => normTitle(x.title) === normTitle(c.title))) { notes.push(`skip ${label('offering', c)}: same title already in`); continue; }
   if (removed.has(c.url)) { notes.push(`skip ${label('offering', c)}: the owner removed it`); continue; }
   queue.push({ table: 'courses', title: c.slug || c.title, row: {
@@ -545,9 +547,18 @@ if (!create && healer && Object.keys(update).length) {
   saveLog();
   say(`  ~ healers ${slug}: ${Object.keys(update).join(', ')}`);
 }
+let skippedShared = 0;
 for (const q of queue) {
   q.row.slug = await uniqueSlug(q.table, q.title);
-  const r = await insert(q.table, q.row);
+  let r;
+  try {
+    r = await insert(q.table, q.row);
+  } catch (e) {
+    // Before 0031 an offering link can belong to one listing only. Leave the
+    // shared one out; running the plan again after 0031 adds it.
+    if (q.table === 'courses' && /courses_url_unique/.test(e.message)) { say(`  skip offering "${q.row.title}": shared link, needs 0031`); skippedShared += 1; continue; }
+    throw e;
+  }
   log.rows.push({ table: q.table, id: r.id, slug: r.slug, title: r.title });
   saveLog();
 }
@@ -566,4 +577,4 @@ for (const s of hubLinks) {
 }
 plan.images_final = true;
 savePlan();
-say(`Inserted ${queue.length + hubLinks.length} rows${create ? ' and the healer' : ''}${coAuthorships.length ? `, co-authors on ${coAuthorships.length} book(s)` : ''}. Log: ${path.relative(process.cwd(), logPath)}`);
+say(`Inserted ${queue.length - skippedShared + hubLinks.length} rows${create ? ' and the healer' : ''}${coAuthorships.length ? `, co-authors on ${coAuthorships.length} book(s)` : ''}. Log: ${path.relative(process.cwd(), logPath)}`);
