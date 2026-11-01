@@ -1,0 +1,173 @@
+{
+  "healer": {
+    "healer_slug": "kofi-busia",
+    "create": {
+      "name": "Kofi Busia",
+      "bio": "Kofi Busia is an Iyengar Yoga teacher who took up yoga while at university in Oxford and has made his living teaching it for more than forty years. From the 1970s into the mid-1980s he travelled often to Pune, India, to study directly with B. K. S. Iyengar at the institute named after his teacher's wife, and he holds a senior certificate in the method. He spent most of his adult life in Oxford, running classes there for many years, before moving to Santa Cruz in California.\n\nAlongside asana he has a long scholarly interest in Sanskrit and Indian philosophy, and his classes often draw on passages from the Yoga Sutras and the Hatha Yoga Pradipika to frame the physical practice. He is working on his own translation of Patañjali's sutras with a commentary, and his website already offers his rendering of the four chapters, recordings of the invocations he chants, and a short life of Patañjali. He also edited Iyengar: The Yoga Master, a collection of essays by students of his teacher. Today he teaches weekly classes at Yoga Center Santa Cruz, several of them also streamed on Zoom, and leads a week-long intensive at Kripalu for students who already have some Iyengar experience.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local_online",
+      "city": "Santa Cruz",
+      "country": "United States",
+      "subjects": [
+        "yoga",
+        "ancient-wisdom"
+      ],
+      "website_url": "https://kofibusia.com",
+      "booking_url": "https://kofibusia.com/classes.php",
+      "youtube_url": "https://www.youtube.com/@busiakofi",
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "maya@yogacentersantacruz.com",
+      "image_urls": [
+        "https://kripalu.org/sites/default/files/styles/og_image/public/2015-10/BusiaK_0.jpg?itok=cUeiMcaN",
+        "https://www.yogacentersantacruz.com/wp-content/plugins/widgetkit/cache/kofi-f072550ccf15d095d99b6b8ded0dcfa6.jpg"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "kripalu",
+      "role": "instructor"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Senior Teacher Kofi Busia Teaches Students How To Find Balance in Virabhadrasana III - Warrior III",
+      "url": "https://www.youtube.com/watch?v=VgCMB9pIHFY",
+      "subjects": [
+        "yoga"
+      ],
+      "channel": "iHanuman Yoga Media"
+    },
+    {
+      "title": "Senior Teacher Kofi Busia Shows Students How to Work in Ustrasana - Camel Pose",
+      "url": "https://www.youtube.com/watch?v=5c-ZDwKmsho",
+      "subjects": [
+        "yoga"
+      ],
+      "channel": "iHanuman Yoga Media"
+    },
+    {
+      "title": "Senior Teacher Kofi Busia Teaches How To Work with Limitations in Trikonasana - Triangle Pose",
+      "url": "https://www.youtube.com/watch?v=B1yVk0_DEhM",
+      "subjects": [
+        "yoga"
+      ],
+      "channel": "iHanuman Yoga Media"
+    },
+    {
+      "title": "questionsonyoga",
+      "url": "https://www.youtube.com/watch?v=qML7agmsZ6c",
+      "subjects": [
+        "yoga"
+      ],
+      "channel": "busiakofi"
+    },
+    {
+      "title": "bookreview",
+      "url": "https://www.youtube.com/watch?v=-DqfHW-2Yvo",
+      "subjects": [
+        "yoga",
+        "ancient-wisdom"
+      ],
+      "channel": "busiakofi"
+    }
+  ],
+  "books": [],
+  "courses": [
+    {
+      "title": "The Silence of Asana: An Iyengar Yoga Intensive",
+      "url": "https://kripalu.org/experiences/silence-asana-iyengar-yoga-intensive",
+      "description": "A residential week at Kripalu in Stockbridge, Massachusetts, combining Iyengar posture work, breathing practice and discussion. Kofi uses the practice to explore patience and stillness and how they carry over into daily life. Students need at least six months of Iyengar Yoga experience.",
+      "price": "$435 USD tuition plus lodging",
+      "product_type": "retreat",
+      "start_date": "2027-02-28",
+      "end_date": "2027-03-05",
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://kripalu.org/sites/default/files/styles/og_image/public/2025-08/kabalahyoga_hero.jpg?itok=rHVycEhz"
+    },
+    {
+      "title": "Weekly Iyengar Yoga Classes (Santa Cruz and Zoom)",
+      "url": "https://kofibusia.com/classes.php",
+      "description": "Regular classes from beginner to advanced levels at Yoga Center Santa Cruz and Yoga Within in Aptos, several of them run in person and on Zoom at the same time, and some online only. Students can drop in or buy blocks of hours.",
+      "price": "$20 USD per 1-hour drop-in; $125 USD for 10 hours",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://kripalu.org/sites/default/files/styles/og_image/public/2015-10/BusiaK_0.jpg?itok=cUeiMcaN"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "The Yoga Sutras of Patañjali (translation)",
+      "url": "https://kofibusia.com/yogasutras/",
+      "description": "Kofi's own English rendering of all four chapters of the Yoga Sutras, set beside the Sanskrit, with a downloadable PDF. It is part of a longer translation and commentary he is preparing.",
+      "featured": true,
+      "resource_type": "download",
+      "subjects": [
+        "yoga",
+        "ancient-wisdom"
+      ],
+      "image": "https://kripalu.org/sites/default/files/styles/og_image/public/2015-10/BusiaK_0.jpg?itok=cUeiMcaN"
+    },
+    {
+      "title": "Mantras and Invocations",
+      "url": "https://kofibusia.com/mantras/",
+      "description": "A set of traditional Sanskrit invocations used in Iyengar classes, among them the Guru Gayatri and two invocations to Patañjali, chanted by Kofi. Each page gives the text alongside his recording.",
+      "featured": false,
+      "resource_type": "practice",
+      "subjects": [
+        "yoga",
+        "ancient-wisdom"
+      ],
+      "image": "https://kripalu.org/sites/default/files/styles/og_image/public/2015-10/BusiaK_0.jpg?itok=cUeiMcaN"
+    },
+    {
+      "title": "A Biography of Sage Patañjali",
+      "url": "https://kofibusia.com/patanjali/",
+      "description": "A short essay in six parts on the traditional accounts of Patañjali: his birth, his life, how he is pictured and what he contributed to yoga. It is free to read online or as a PDF.",
+      "featured": false,
+      "resource_type": "download",
+      "subjects": [
+        "ancient-wisdom",
+        "yoga"
+      ],
+      "image": "https://kripalu.org/sites/default/files/styles/og_image/public/2015-10/BusiaK_0.jpg?itok=cUeiMcaN"
+    }
+  ],
+  "sprint": {
+    "hub": "kripalu",
+    "rank": 88,
+    "hub_url": "https://kripalu.org/people/kofi-busia",
+    "tier_evidence": "YouTube @busiakofi 18 subscribers (channel header, 1 Nov 2026); no Instagram, Facebook, X or TikTok accounts found on his site or elsewhere → ~18 total → local_hero",
+    "email": "yes",
+    "email_source": "https://www.yogacentersantacruz.com/contact/",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 9 source(s)",
+    "flags": [
+      "Email is the published address of Yoga Center Santa Cruz (studio inbox, owner Maya Lev), not his own: his site has no email or contact form, and his biography page tells readers to contact Yoga Center Santa Cruz for information.",
+      "His own site looks little updated (workshops page still mentions COVID-19 stay-at-home orders; a registration page refers to a 2020-era workshop and his health at the time), but the classes page lists a current weekly schedule and the studio still lists him; the Kripalu intensive in Feb-Mar 2027 confirms he is teaching.",
+      "Three of the five videos are on the iHanuman Yoga Media channel (he is the teacher in each); his own channel has only two old videos with one-word titles ('bookreview', 'questionsonyoga').",
+      "Mantra pages: I checked that the Guru Gayatri page has his audio recording; the other seven were not each opened.",
+      "Shares a name with Kofi Abrefa Busia, the former Prime Minister of Ghana; YouTube search results for the name are mostly about him or a drummer of the same name, none used."
+    ],
+    "left_out": [
+      "Iyengar: The Yoga Master (Shambhala, 2007): he is editor, not author, and the amazon.com /dp/ page (ISBN-10 1590305248, derived from ISBN-13 9781590305249) returned 500 by curl and WebFetch, so no Amazon listing could be confirmed.",
+      "His forthcoming Yoga Sutras translation and commentary: not yet published.",
+      "Out-of-town workshops: none listed (page still shows a pandemic notice).",
+      "'patanjali yoga sutra chant by kofi busia' (sum9MiHtCp8): a third-party upload, not his channel.",
+      "'Lessons from Kofi Busia' (inaGbafZvVg): on another person's channel and not clearly him teaching.",
+      "iHanuman short clips under 2 minutes (Intermediate Class, Adjustments for Teachers Part 3).",
+      "Hatha Yoga Pradipika and Yoga Sutras Zoom workshops on his registration page: past dated events."
+    ]
+  },
+  "images_final": true
+}

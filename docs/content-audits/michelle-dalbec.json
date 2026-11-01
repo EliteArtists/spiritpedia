@@ -1,0 +1,169 @@
+{
+  "healer": {
+    "healer_slug": "michelle-dalbec",
+    "create": {
+      "name": "Michelle Dalbec",
+      "bio": "Michelle Dalbec has practised yoga for over thirty years and taught it for more than twenty-five, almost all of that time within the Kripalu tradition. She trained at Kripalu in stages, completing 200 hours in 2003, 500 in 2010 and the full 1,000-hour certification in 2015, and she now leads teacher trainings and mentors new teachers for the Kripalu School of Yoga in Stockbridge, Massachusetts. Her grounding in anatomy comes from Yoga Tune Up, the Roll Model Method, positional therapy and Thai massage, while her philosophical study takes in Sankhya, Patanjali and the Bhagavad Gita.\n\nShe treats yoga as a relationship with body, breath, mind and heart, and asks students to stay curious about what they actually feel rather than aim for a particular pose. At Kripalu she co-leads a weekend on compassionate dialogue and runs Knit Pray Love, a retreat where knitting and other fibre crafts become a shared meditation. From her own website she offers a library of recorded classes and workshops to rent or stream by subscription, and her YouTube channel holds short movement and breathing practices.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local_online",
+      "city": "Stockbridge",
+      "country": "United States",
+      "subjects": [
+        "yoga",
+        "meditation",
+        "mindfulness"
+      ],
+      "website_url": "https://www.myoga.com/",
+      "booking_url": "https://www.myoga.com/event-list",
+      "youtube_url": "https://www.youtube.com/@MYogaMichelle",
+      "instagram_url": "https://www.instagram.com/myogamichelle/",
+      "facebook_url": "https://www.facebook.com/myogamichelle",
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "michelle@myoga.com",
+      "image_urls": [
+        "https://kripalu.org/sites/default/files/2015-10/DalbecMichelle.jpg",
+        "https://yt3.googleusercontent.com/ytc/AIdro_ktkzODOtDPH6sZbtQF6dkiByujrNHLhgJRwMAWdnagCwU=s900-c-k-c0x00ffffff-no-rj"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "kripalu",
+      "role": "instructor"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Floor Angels",
+      "url": "https://www.youtube.com/watch?v=Sdl1Xb1wXck",
+      "subjects": [
+        "yoga"
+      ],
+      "channel": "Michelle Dalbec"
+    },
+    {
+      "title": "UnTech Your Neck | Release Tension and Feel Better",
+      "url": "https://www.youtube.com/watch?v=JYknnhex5lw",
+      "subjects": [
+        "yoga"
+      ],
+      "channel": "Michelle Dalbec"
+    },
+    {
+      "title": "Treat Your Feet!",
+      "url": "https://www.youtube.com/watch?v=9kI1LjHnZhk",
+      "subjects": [
+        "yoga"
+      ],
+      "channel": "Michelle Dalbec"
+    },
+    {
+      "title": "Shoulder Flossing",
+      "url": "https://www.youtube.com/watch?v=Nv2oagmaCZk",
+      "subjects": [
+        "yoga"
+      ],
+      "channel": "Michelle Dalbec"
+    },
+    {
+      "title": "Dynamic Balancing Table",
+      "url": "https://www.youtube.com/watch?v=gdoUbGHTMxs",
+      "subjects": [
+        "yoga"
+      ],
+      "channel": "Michelle Dalbec"
+    },
+    {
+      "title": "Who's Back There? Thoracic Rotation",
+      "url": "https://www.youtube.com/watch?v=d3BuuOKPTBw",
+      "subjects": [
+        "yoga"
+      ],
+      "channel": "Michelle Dalbec"
+    },
+    {
+      "title": "Shoulder Work",
+      "url": "https://www.youtube.com/watch?v=UlcRrSmppPU",
+      "subjects": [
+        "yoga"
+      ],
+      "channel": "Michelle Dalbec"
+    }
+  ],
+  "books": [],
+  "courses": [
+    {
+      "title": "Compassionate Dialogue: A Practical Framework for Better Relationships",
+      "url": "https://kripalu.org/experiences/compassionate-dialogue-practical-framework-better-relationships",
+      "description": "A residential weekend at Kripalu, co-led with Kacey Wilson, on talking and listening with more care in partnerships, families and workplaces. Participants bring real conversations from their own lives and work through them in pairs, in writing and in facilitated group discussion.",
+      "price": "$325 USD plus lodging",
+      "product_type": "retreat",
+      "start_date": "2026-11-06",
+      "end_date": "2026-11-08",
+      "subjects": [
+        "conscious-relationships",
+        "mindfulness"
+      ],
+      "image": "https://kripalu.org/sites/default/files/styles/og_image/public/2026-05/compassionate%20dialogue.jpg?itok=QfNqk6Vc"
+    },
+    {
+      "title": "Knit, Pray, Love",
+      "url": "https://kripalu.org/experiences/knit-pray-love",
+      "description": "A weekend retreat at Kripalu for knitters, crocheters and other fibre crafters, whatever their experience. Michelle frames making as a contemplative practice, mixing guided meditation, easy movement and self-massage with conversation circles and an informal Saturday evening knitting session.",
+      "price": "$350 USD plus lodging",
+      "product_type": "retreat",
+      "start_date": "2026-11-27",
+      "end_date": "2026-11-29",
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "image": "https://kripalu.org/sites/default/files/styles/og_image/public/2026-04/knit%202024.jpg?itok=0my0uydY"
+    },
+    {
+      "title": "MYoga Practice Library",
+      "url": "https://www.myoga.com/practice-library",
+      "description": "Michelle's own on-demand collection of recorded yoga classes and longer workshops in the Kripalu style. Single classes can be rented for 72 hours, workshops bought for a week, or the whole library opened with a weekly pass or a monthly plan.",
+      "price": "$15 USD per month",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga",
+        "meditation"
+      ],
+      "image": "https://static.wixstatic.com/media/b3828a_dfd836f4bb184c9e9be47cbab0a893f6%7Emv2.png/v1/fit/w_2500,h_1330,al_c/b3828a_dfd836f4bb184c9e9be47cbab0a893f6%7Emv2.png"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "hub": "kripalu",
+    "rank": 97,
+    "hub_url": "https://kripalu.org/people/michelle-dalbec",
+    "tier_evidence": "Instagram 1,833 (og:description, 1 Nov 2026); Facebook 811 (og:description of facebook.com/myogamichelle, 1 Nov 2026); YouTube 104 (channel header, @MYogaMichelle, 1 Nov 2026) → ~2.7k total → local_hero",
+    "email": "yes",
+    "email_source": "https://www.myoga.com/contact",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 7 source(s)",
+    "flags": [
+      "City is Stockbridge because her in-person teaching is at Kripalu; her own site names no separate studio or home base.",
+      "Her YouTube channel is small and old (12 uploads, about 5 to 6 years ago, most under 250 views); the second photo (YouTube avatar) is an older yoga shot of her, matched to the Kripalu headshot by eye.",
+      "Both Kripalu offerings are hers: Compassionate Dialogue is co-led with Kacey Wilson (Kripalu staff) and has a second date (2 to 5 Mar 2027, $325/$375 tuition differs by date); Knit, Pray, Love repeats 12 to 14 Mar 2027.",
+      "The Kripalu Yoga Retreat (9 to 13 Nov 2026 and later dates) is shared with Christine Bissonnette (rank 100) and Christopher Holmes (rank 96), both skipped in this batch.",
+      "Her Linktree carries many affiliate links (Headspace, Talkspace, food brands); not used."
+    ],
+    "left_out": [
+      "Fight Stress with this Simple Breath (video): borderline health framing (stress), left out.",
+      "Hand & Finger Stretches and Upper Back Soother (videos): oEmbed returned 401.",
+      "Sights and Sounds of Summer (video): under 2 minutes and not teaching; A Walk in the Woods (video): not clearly a teaching video.",
+      "The Kripalu Yoga Retreat: a Kripalu Experience programme with rotating faculty; two hub programmes already listed.",
+      "Teaching Pranayama (Dec 2026, May 2027), Teaching Adaptive Yoga (Oct 2027) and the 200-hour trainings: Kripalu School of Yoga teacher trainings and modules, the hub's own.",
+      "Shop items (knitting shawl patterns): not spiritual teaching.",
+      "MYoga Resources and Yoga Teacher Community groups: private groups, the latter not open until Aug 2027.",
+      "No books found."
+    ]
+  },
+  "images_final": true
+}

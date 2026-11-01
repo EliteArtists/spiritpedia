@@ -1,0 +1,115 @@
+{
+  "healer": {
+    "healer_slug": "yura-sapi",
+    "create": {
+      "name": "Yura Sapi",
+      "bio": "Yura Sapi (they/them) is an artist, facilitator and Reiki practitioner of Kichwa descent, born in New York with an Ecuadorian mother and Colombian father. The name they carry was given by an elder during a ritual and means tree roots in Kichwa, a fitting sign for the land-based life they took up after settling in Nuquí, on Colombia's Pacific coast, in 2021. They trained in theatre at Boston University and LAMDA, studied arts management at Brooklyn College and later took executive courses at Harvard Business School. They founded LiberArte, a nonprofit that funds and supports artists working for social change, and host a podcast about organisations led by people of colour.\n\nTheir spiritual work runs alongside the arts and community organising rather than apart from it. Yura gives one-to-one Reiki and energy sessions and coaching by video, holds ritual and community workshops such as a series built around the new moon, and is one of the presenters on the Kripalu Online Studio. They treat healing, creativity and justice as a single thread, drawing on ancestral, earth-honouring practice and on their coach training through the Dharma Coaching Institute, accredited by the International Coaching Federation.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "worldwide",
+      "city": null,
+      "country": null,
+      "subjects": [
+        "reiki",
+        "meditation",
+        "spirituality"
+      ],
+      "website_url": "https://yurasapi.com",
+      "booking_url": "https://yurasapi.com/book",
+      "youtube_url": "https://www.youtube.com/@YuraSapi",
+      "instagram_url": "https://www.instagram.com/yurasapi",
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": null,
+      "image_urls": [
+        "https://kripalu.org/sites/default/files/2023-10/Yura-Sapi_2023.jpg"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "kripalu",
+      "role": "instructor"
+    }
+  ],
+  "videos": [
+    {
+      "title": "The Power of Perspective",
+      "url": "https://www.youtube.com/watch?v=QFPb_jRp62w",
+      "subjects": [
+        "spirituality"
+      ],
+      "channel": "Yura Sapi"
+    },
+    {
+      "title": "A Conversation with Yura Sapi",
+      "url": "https://www.youtube.com/watch?v=ITKpO7FZCaw",
+      "subjects": [
+        "spirituality",
+        "self-healing"
+      ],
+      "channel": "Asian American Arts Alliance"
+    }
+  ],
+  "books": [],
+  "courses": [
+    {
+      "title": "Kripalu Online Studio",
+      "url": "https://kripalu.org/experiences/kripalu-online-studio",
+      "description": "Kripalu's online subscription, where Yura is one of the featured presenters. Members join live classes each week and can use a large library of recorded yoga, meditation and other sessions.",
+      "price": "$365 USD per year",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga",
+        "meditation"
+      ],
+      "image": "https://kripalu.org/sites/default/files/styles/og_image/public/2025-08/Hazlegrove-7658-min.jpg?itok=OwNSWSP0"
+    },
+    {
+      "title": "Reiki, Coaching and Healing Sessions",
+      "url": "https://yurasapi.com/book",
+      "description": "One-to-one sessions held over video and booked straight from Yura's calendar. Choices include an hour of Reiki and energy work, leadership coaching, a short first call and a single focused session on a decision or next step.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "reiki",
+        "energy-medicine",
+        "life-coaching"
+      ],
+      "image": "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/lovp_5k4bcrt0d1996a5jm1546xsytr/d09d4402ca1286697d094e2cc559da09_1792035750937.png"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "hub": "kripalu",
+    "rank": 81,
+    "hub_url": "https://kripalu.org/people/yura-sapi",
+    "tier_evidence": "Instagram 5,012 (og:description, 1 Nov 2026); YouTube 281 (channel header next to @YuraSapi, 1 Nov 2026); LinkedIn not counted → ~5.3k total → local_hero",
+    "email": "contact form",
+    "email_source": null,
+    "contact_form_url": "https://yurasapi.com/contact",
+    "bio_check": "OK: no 8-word runs against 6 source(s)",
+    "flags": [
+      "Current faculty only through the Kripalu Online Studio: Yura is listed among the studio's teachers, but their hub page shows no dated upcoming programme (the queue's 4 Dec 2026 date is not on the page).",
+      "The dry run skips the Kripalu Online Studio offering because its link is already on dev under another teacher, so Yura's page would show three items (two videos and the sessions offering).",
+      "Thin listing: four items in all; most of Yura's site is arts, leadership coaching, grant writing and nonprofit consulting (booked through LiberArte), which were left out as not spiritual teaching.",
+      "The Power of Perspective (4:37, own channel) has no description, so its content could not be confirmed as teaching; a human may want to watch it.",
+      "Only one photo used (Kripalu headshot); no second headshot could be confirmed on their own site, whose images are loaded by script.",
+      "Yura uses they/them pronouns; the bio follows that."
+    ],
+    "left_out": [
+      "Leadership Development Program, Grant Writing Package, Strategic Planning and Custom Consulting: organisational services booked through LiberArte, not spiritual teaching, and no separate pages.",
+      "Workshop facilitation (including the new moon self-care series), keynotes and performance work: no unique page or price.",
+      "Using Your Influence on Others for A Positive Impact (own channel): a recap of a Harvard Business School course, not teaching in this field.",
+      "Shorts on their channel (event ads, retreat promotions, grant-rejection clips): Shorts and promotions excluded.",
+      "Poetry books (2018, 2019) and Building Our Own Tables: no Amazon listing found.",
+      "Building Our Own Tables podcast: about BIPOC-led organisations, not spiritual teaching."
+    ]
+  },
+  "images_final": true
+}

@@ -1,0 +1,213 @@
+{
+  "healer": {
+    "healer_slug": "hawah-kasat",
+    "create": {
+      "name": "Hawah Kasat",
+      "bio": "Hawah Kasat (he/him) is a yoga and meditation teacher, author and community organiser with family roots in India, who grew up between New Jersey, Washington, D.C. and long summers in Mumbai. He trained in Sivananda Yoga at Yoga Vidya Gurukul in India and later earned a 300-hour Jivamukti certification; he keeps up a Vipassana practice and also trains in the internal martial arts of Baguazhang and tai chi. For about twenty years he co-led One Common Unity, a Washington nonprofit that brought peace education, mindfulness and the arts into schools, after studying peace and educational philosophy at American University.\n\nHis teaching spans pranayama, silent retreats, yoga teacher training and talks on peace and community. At Esalen he leads weekends on the breath and longer retreats built around silence, movement and meditation; at Kripalu, where he is one of the Kripalu Visionaries, he co-leads a 200-hour teacher training for BIPOC practitioners. He also teaches at the Sivananda Ashram in the Bahamas and is a managing partner of Roots to Sky Sanctuary, a 125-acre farm and gathering place near the source of the Potomac. He edited The Poetry of Yoga anthology and hosts the podcast Everlutionary.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "worldwide",
+      "city": null,
+      "country": null,
+      "subjects": [
+        "yoga",
+        "breathwork",
+        "meditation"
+      ],
+      "website_url": "https://hawahkasat.com/",
+      "booking_url": "https://hawahkasat.com/appearances/",
+      "youtube_url": "https://www.youtube.com/channel/UC9ZTViXtkIs1fv1dq7M8VaA",
+      "instagram_url": "https://www.instagram.com/hawahkasat/",
+      "facebook_url": "https://www.facebook.com/Hawah.Kasat/",
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": null,
+      "image_urls": [
+        "https://kripalu.org/sites/default/files/2026-10/Webupdates%20%28800x1000px%29.png",
+        "https://yt3.googleusercontent.com/1ZNysWb42xFoyYnnA4UM9D-J0lJCRSOEleYJ_rmf-4yJtHxxhAqVDcp4UYmXEniYRZP4dd7ZPr8=s900-c-k-c0x00ffffff-no-rj"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "kripalu",
+      "role": "instructor"
+    },
+    {
+      "hub": "esalen",
+      "role": "instructor"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Pranayama (Deep Breathing) with HawaH",
+      "url": "https://www.youtube.com/watch?v=s3OfWcpHrBA",
+      "subjects": [
+        "breathwork",
+        "yoga"
+      ],
+      "channel": "HawaH"
+    },
+    {
+      "title": "Simple Deep Breathing and Meditation Practice to Build Resiliency",
+      "url": "https://www.youtube.com/watch?v=vPMrRG3uQIQ",
+      "subjects": [
+        "breathwork",
+        "meditation"
+      ],
+      "channel": "HawaH"
+    },
+    {
+      "title": "Twists with HawaH",
+      "url": "https://www.youtube.com/watch?v=VFI7mB3ffYc",
+      "subjects": [
+        "yoga"
+      ],
+      "channel": "HawaH"
+    },
+    {
+      "title": "Shoulders with HawaH",
+      "url": "https://www.youtube.com/watch?v=Uj1q6blW7qk",
+      "subjects": [
+        "yoga"
+      ],
+      "channel": "HawaH"
+    },
+    {
+      "title": "What does Yoga and Meditation provide you?",
+      "url": "https://www.youtube.com/watch?v=kTWpCUsQjAA",
+      "subjects": [
+        "yoga",
+        "meditation"
+      ],
+      "channel": "HawaH"
+    }
+  ],
+  "books": [
+    {
+      "title": "The Poetry of Yoga: Light Pouring from Pens",
+      "slug": "the-poetry-of-yoga-light-pouring-from-pens",
+      "author": "Hawah Kasat",
+      "asin": "1940468256",
+      "store": "amazon.com",
+      "goodreads_url": "https://www.goodreads.com/en/book/show/26827751-the-poetry-of-yoga",
+      "worldofbooks_url": null,
+      "description": "An anthology of poems by yoga teachers, practitioners and musicians, which Hawah created and edited, with a foreword by Shiva Rea. Published by White Cloud Press, it gathers writing about practice, devotion and daily life on and off the mat.",
+      "subjects": [
+        "yoga",
+        "spirituality"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1940468256.01._SCLZZZZZZZ_.jpg"
+    }
+  ],
+  "courses": [
+    {
+      "title": "Breath: The Master Key",
+      "url": "https://www.esalen.org/workshops/breath-the-master-key-110626",
+      "description": "A weekend at Esalen on pranayama as taught in the Sivananda, Iyengar and Ashtanga lineages. Participants learn why yogis see the breath as a bridge between body and mind and practise classical techniques as preparation for meditation.",
+      "price": "From $940 USD (all-inclusive)",
+      "product_type": "retreat",
+      "start_date": "2026-11-06",
+      "end_date": "2026-11-08",
+      "subjects": [
+        "breathwork",
+        "yoga",
+        "meditation"
+      ],
+      "image": "https://cdn.prod.website-files.com/602d8561ae2fe6ec8347c903/69712e39e2a07ad974822ad6_69261dd6f8df02d0d3f84a65_2024-Esalen_Workshop-Lead-Image_General-Ocean-Nature_Angie-Smith_D0A2219-1500x775.jpeg"
+    },
+    {
+      "title": "Inward Bound: Exploring Silence, Movement, and Meditation",
+      "url": "https://www.esalen.org/workshops/inward-bound-exploring-silence-movement-and-meditation-040527",
+      "description": "A five-day retreat at Esalen that introduces periods of noble silence in small doses. Days combine silent sitting, pranayama, asana and dharma talks, and compare yogic and Buddhist approaches to meditation, including Vipassana; it suits newcomers to silence as well as seasoned retreatants.",
+      "price": "From $940 USD (all-inclusive)",
+      "product_type": "retreat",
+      "start_date": "2027-04-05",
+      "end_date": "2027-04-09",
+      "subjects": [
+        "meditation",
+        "breathwork",
+        "yoga"
+      ],
+      "image": "https://cdn.prod.website-files.com/602d8561ae2fe6ec8347c903/69682861e717dc68a22a42c0_6966c700fecbbfa69132b2aa_2024-Esalen_meditation-hut_Tim-Farrell-1500x775.jpeg"
+    },
+    {
+      "title": "Global Majority 200-Hour Kripalu Yoga Teacher Training",
+      "url": "https://kripalu.org/experiences/global-majority-200-hour-kripalu-yoga-teacher-training-bipoc-practitioners",
+      "description": "A hybrid, Yoga Alliance approved certification for BIPOC practitioners, taught by BIPOC Kripalu faculty with Hawah as a lead presenter. Trainees learn to guide Kripalu Yoga classes, study philosophy and the place of yoga within communities of colour, and train within a community of peers.",
+      "price": "From $2,990 USD plus lodging",
+      "product_type": "course",
+      "start_date": "2027-02-26",
+      "end_date": "2027-06-11",
+      "subjects": [
+        "yoga",
+        "meditation"
+      ],
+      "image": "https://kripalu.org/sites/default/files/styles/og_image/public/2025-08/200HourYTT_BIPOC_hero.jpg?itok=sFdbBRE9"
+    },
+    {
+      "title": "Spring Renewal: Nourishing the Seeds of Transformation",
+      "url": "https://sivanandabahamas.org/course/spring-renewal-nourishing-the-seeds-of-transformation-april-2027/",
+      "description": "A five-day course at the Sivananda Ashram in the Bahamas, themed on the yogic idea of beginning again. Asana, pranayama, meditation, chanting, sound and quiet reflection are used to clear away old habits and start fresh.",
+      "price": "$595 USD tuition plus accommodation",
+      "product_type": "retreat",
+      "start_date": "2027-04-17",
+      "end_date": "2027-04-21",
+      "subjects": [
+        "yoga",
+        "meditation",
+        "breathwork"
+      ],
+      "image": "https://sivanandabahamas.org/wp-content/uploads/hawah.jpg"
+    },
+    {
+      "title": "CLARITY: A Gathering to Celebrate Juneteenth and Solstice",
+      "url": "https://www.mahavirarva.com/clarity-gathering",
+      "description": "A four-day gathering at Roots to Sky Sanctuary, hosted by Maha Vira Yoga with Hawah among the featured presenters. Daily movement and subtle-body practice, shared plant-based meals and evening embodiment sessions mark Juneteenth and the summer solstice in an alcohol-free, family-friendly setting.",
+      "price": "From $349 USD (camping pass)",
+      "product_type": "retreat",
+      "start_date": "2027-06-17",
+      "end_date": "2027-06-20",
+      "subjects": [
+        "yoga",
+        "spirituality"
+      ],
+      "image": "http://static1.squarespace.com/static/5797a215b3db2b4ccf4d95a3/t/69ee25c53af7d1473e783ac8/1777214917150/IMG_3520.JPG?format=1500w"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "hub": "kripalu",
+    "rank": 84,
+    "hub_url": "https://kripalu.org/people/hawah-kasat",
+    "tier_evidence": "Instagram 10K (@hawahkasat og:description, 1 Nov 2026); YouTube 187 (channel header next to @hawah, 1 Nov 2026); Facebook unreadable without login → ~10.2k total → local_hero",
+    "email": "contact form",
+    "email_source": null,
+    "contact_form_url": "https://hawahkasat.com/contact-hawah/",
+    "bio_check": "OK: no 8-word runs against 9 source(s)",
+    "flags": [
+      "Also in the queue for Esalen (two upcoming Esalen workshops), so esalen is added to teaches_at.",
+      "His site (hawah.us redirects to hawahkasat.com) blocks curl with a Cloudflare check; it was read with WebFetch, and the bio-check sources are Wayback Machine copies of the home page (June 2026) and the full bio page (July 2025).",
+      "Contact is a speaking-enquiry form on his contact page (WebFetch saw its fields; it needs JavaScript); no email is published.",
+      "Breath: The Master Key (6-8 Nov 2026) showed 0 spots left on 1 Nov 2026 but is still upcoming.",
+      "Esalen's static page shows the same all-inclusive rates (from $940) for both the weekend and the five-day Inward Bound; the five-day rate may be higher once the page loads, so a human may want to check that price.",
+      "The Global Majority teacher training is a Kripalu Schools training, but Hawah is its first-listed lead presenter (with Nikki Myers, Pilin Anice and Rolf Gates), so it is kept.",
+      "CLARITY is hosted by Maha Vira Yoga at Roots to Sky Sanctuary (Oakland, MD), where Hawah is a managing partner; he is a featured presenter rather than the organiser.",
+      "The Poetry of Yoga is an anthology he created and edited (listed under HawaH, foreword by Shiva Rea) rather than a book he wrote alone.",
+      "Two 2020 videos on his channel ('THE VIRUS IS NOT THE CRISIS', 'Soul of a Crisis') were checked: they are social reflections on lockdown, not conspiracy content, and were not included.",
+      "Kripalu calls him a Kripalu Visionary (an ambassador role), not regular faculty."
+    ],
+    "left_out": [
+      "Conversations That Matter (Kripalu, 5 Nov 2026, free online): Maria Sirois's interview series in which Hawah is a guest, not his own programme.",
+      "Kripalu Visionary Program (queue date 15 Dec 2026): not on his hub page or listed as his programme.",
+      "Depolarization (Mind & Life Institute, Garrison Institute, 7-12 Jun 2026): dated and passed.",
+      "Yoga & Culture Retreat: Cambodia: menu link only, no dates, price or details.",
+      "Peace-education talk series, commencement speech, interviews and music videos on his channel: not yoga or meditation teaching, or under two minutes.",
+      "Hawah Kasat: Author, Educator, Community Leader, Yogi, and Poet (3:43): a promotional reel.",
+      "The Poetry of Yoga Vol. 1 and Vol. 2 (2012) and ZerONEss (2008): older editions not confirmed on an amazon.com /dp/ page.",
+      "Everlutionary podcast: no fitting free-resource type (it is a podcast, not a practice or download).",
+      "Insight Timer profile seen in search: not a hub trigger under the brief and not opened, so not added."
+    ]
+  },
+  "images_final": true
+}

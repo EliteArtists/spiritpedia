@@ -2372,7 +2372,7 @@
    "in_person_words": false,
    "hub_bio_extract": " Yura Sapi (they/them) is a healing artist, meditation teacher, Reiki practitioner, and leadership coach. Yura is cofounder and CEO of LiberArte Inc., which builds racial, social, and climate justice worldwide by empowering artists and creative activists. Yura is also the host of the Building Our Own Tables podcast, which spotlights BIPOC founders who create autonomous programs in service of our c",
    "instagram": "https://www.instagram.com/yurasapi",
-   "status": "planned",
+   "status": "dev",
    "plan": "docs/content-audits/yura-sapi.json",
    "skip_reason": null
   },
@@ -2395,7 +2395,7 @@
    "contact_form_seen": true,
    "in_person_words": false,
    "hub_bio_extract": " Dr. Amanda Hanson, known as the Midlife Muse, is a best-selling author, psychologist with nearly three decades of experience, and internationally recognized speaker who works with a global clientele of women. Her work integrates clinical psychology, embodiment, and feminine leadership to support women in healing generational patterns, reclaiming self-worth, and leading with power. She is widely k",
-   "status": "planned",
+   "status": "dev",
    "plan": "docs/content-audits/amanda-hanson.json",
    "skip_reason": null
   },
@@ -2418,9 +2418,9 @@
    "contact_form_seen": true,
    "in_person_words": false,
    "hub_bio_extract": " Dr. Roxanne Partridge is a depth psychologist, arts-based ritualist, and creator of embodyperiod., where she mentors women through transformational soulwork rooted in archetypal, alchemical, and embodied traditions. For over 15 years, she has guided clients through life transitions, sexual healing, and creative emergence, weaving together trauma-informed practice with mythic imagination and somat",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "No published email and no contact form (her contact page has only paid and free booking links through Acuity), and her one-to-one work is depth psychology sold partly on PMS/PMDD and trauma. Researcher plan kept in dropped/."
   },
   {
    "rank": 84,
@@ -2468,8 +2468,8 @@
    "in_person_words": false,
    "hub_bio_extract": " Hawah Kasat (he/him) is an internationally celebrated author, educator, non-profit leader, podcast host, TEDx speaker, and yogi. He has been studying movement, meditation, and philosophy since childhood. With a lineage tracing back to India, his life has been split between schooling in New Jersey and Washington, D.C., while spending long summers in Mumbai. From birth, he has been immersed in the ",
    "instagram": "https://www.instagram.com/hawahkasat/",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/hawah-kasat.json",
    "skip_reason": null
   },
   {
@@ -2580,7 +2580,7 @@
    "contact_form_seen": false,
    "in_person_words": false,
    "hub_bio_extract": " Kofi Busia has more than 40 years’ experience teaching Iyengar Yoga. He has studied Sanskrit and Indian philosophy at Oxford University and taught yoga in Oxford for more than 20 years. Kofi weaves inspiring texts from ancient yogic scriptures into his hatha yoga instruction. He blends deeper, more esoteric teachings with a powerful posture practice. Kofi is currently finishing an original transl",
-   "status": "planned",
+   "status": "dev",
    "plan": "docs/content-audits/kofi-busia.json",
    "skip_reason": null
   },
@@ -2603,8 +2603,8 @@
    "contact_form_seen": false,
    "in_person_words": false,
    "hub_bio_extract": " Loch Kelly MDiv, LCSW, is the creator of Mindful Glimpses , YouTube's Best Meditation App of 2026. He is an award-winning author of two books, psychotherapist, and nondual meditation teacher. Loch is the founder of the nonprofit Effortless Mindfulness Institute, teaching an ancient form of nondual meditation informed by Buddhist Mahamudra and Dzogchen traditions. Loch has cotaught with IFS creato",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/loch-kelly.json",
    "skip_reason": null
   },
   {
@@ -2626,9 +2626,9 @@
    "contact_form_seen": false,
    "in_person_words": false,
    "hub_bio_extract": " Melanie Mattison is an educator and metaphysical practitioner who has a foundational belief in self-care and living from one's authentic strengths, talents, and abilities. She has a background in teaching and intuitively guiding clients to their potential. Melanie is a certified personal and space energy-clearing practitioner dedicated to helping her clients connect more deeply with their authent",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Too thin: beyond her Kripalu retreat (Personal Energy Clearing, 4-7 Feb 2027), her site (Five Elements Flowing, LLC) offers only in-person personal and space clearings booked by email with no price or page of their own, and a private MeWe community group; her events page says 'check back soon', the shop has no products, the blog has two posts (2021 and a 2023 link to an interview), and there are no books, no free resources and no teaching videos (her only YouTube upload is a personal 2017 clip). The Shift Network and Omega logos on her homepage are 'as seen in' badges with no current programme; checked 1 Nov 2026."
   },
   {
    "rank": 91,
@@ -2650,9 +2650,9 @@
    "in_person_words": false,
    "hub_bio_extract": " Thomas John is a global psychic sensation who has wowed audiences with his impressively accurate messages from the other side. He has garnered international attention for making accurate predictions in the media about celebrities, medical breakthroughs, political events, and natural disasters, and his gifts are in high demand with influencers, A-list celebrities, and those at a crossroads in thei",
    "site_note": "Listed on Wikipedia; the site sits behind a Cloudflare check, so the content was not read",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "No published email or contact form could be confirmed: his own site mediumthomas.com returns 403 (Cloudflare check) to curl and WebFetch, and his Linktree, Instagram, Wikipedia and web searches show no address or form. For the owner: Wikipedia also records a 2009 guilty plea for theft and computer fraud and a 2017 sting that documented hot reading, and his Kripalu bio claims accurate predictions about medical breakthroughs. His Kripalu programme (Stepping into the Spirit World, 2–4 Apr 2027, $350 tuition) is current, and Instagram shows 147K followers."
   },
   {
    "rank": 92,
@@ -2673,8 +2673,8 @@
    "contact_form_seen": false,
    "in_person_words": false,
    "hub_bio_extract": " Ruthie Lindsey is the author of the memoir There I Am: The Journey from Hopelessness to Healing, a Nashville-based speaker, coach, and midwife of souls. She helps people become endeared to their own life, soul, and body. Ruthie shares a remarkable story of surviving an accident as a teenager where she had a five percent chance to live and a one percent chance to walk, and the surgery that simulta",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/ruthie-lindsey.json",
    "skip_reason": null
   },
   {
@@ -2697,9 +2697,9 @@
    "in_person_words": false,
    "hub_bio_extract": " Erica Feldmann holds a master's degree in gender and cultural studies, with a research concentration in witches and witchcraft. Her innate interest in the connection between home spaces and wellness led to the creation of HausWitch in 2012. What started as a “micro budget + magic = makeover” interiors blog would eventually become a thriving brick and mortar shop and online community based in down",
    "site_note": "HausWitch, her shop and brand in Salem",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Her only website is her HausWitch shop (hauswitchstore.com), and its blog and shop carry partisan political content (a 'Witches Against Fascism' collection with 'Hex all Fascists', 'Banish Billionaires' and 'Free Palestine' items, 'Witch the Vote' posts, and 'How Witches Can Help the Revolution' posts). That falls under the brief's political-commentary rule. The listing would also be built around a shop brand and its brand inbox (hello@hauswitch.com), with only about three items (the Kripalu weekend of 8–10 Jan 2027, and the books Intention Obsession and HausMagick). Her personal Instagram @hauswitchathome has 6,627 followers; the brand account @hauswitch has 110K. Owner to decide if the political rule should apply to a shop."
   },
   {
    "rank": 94,
@@ -2721,8 +2721,8 @@
    "in_person_words": false,
    "hub_bio_extract": " Laura’s professional life is anchored by her international reputation as a pioneer and more than 30 years of experience in the personal coaching field. Laura is also a best-selling author, sought-after speaker, TV personality, corporate spokesperson, interfaith minister, and performer. She has appeared on Oprah, The CBS Early Show, and Good Morning America and her TedX talk currently boasts over ",
    "site_note": "Cited by several sources; the server refused a plain fetch (406), so the content was not read",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/laura-berman-fortgang.json",
    "skip_reason": null
   },
   {
@@ -2762,8 +2762,8 @@
    "contact_form_seen": false,
    "in_person_words": false,
    "hub_bio_extract": " Shawn Stevens (Red Eagle), an enrolled member of the Stockbridge Munsee Band of Mohicans, is a spiritualist, musician, artist, historian, and storyteller dedicated to sharing his culture and knowledge. Shawn has spent decades connecting with his people's ancestral homelands and sharing their cultural history across the eastern and midwestern regions of North America. With a deep commitment to cul",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/shawn-stevens.json",
    "skip_reason": null
   },
   {
@@ -2815,9 +2815,9 @@
    "contact_form_seen": false,
    "in_person_words": false,
    "hub_bio_extract": " Christopher Holmes is a Kripalu Yoga teacher, a Kundalini Yoga teacher, and a massage therapist licensed in the state of Massachusetts. He has developed expertise in the areas of anatomy and physiology for yoga and bodywork, movement and postural analysis, and the healing of chronic pain patterns. Christopher's Upcoming Programs On Campus Kripalu Experience Program Dec 4, 2026 - Dec 6, 2026 Kripa",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "No contact route of his own and too thin: Kripalu lists no website or social links for him, and no personal site, published email or contact form could be found (only Kripalu's class listings on union.fit); beyond his Kripalu programmes (The Kripalu Yoga Retreat, Kripalu Outdoors, the Retreat for Men in Feb 2027 and teacher-training modules, which count once) he has no books, teaching videos or offerings of his own, and his hub bio frames his expertise around chronic pain. Checked 1 Nov 2026."
   },
   {
    "rank": 97,
@@ -2881,8 +2881,8 @@
    "in_person_words": false,
    "hub_bio_extract": " Michelle Dalbec is an E-RYT® 500, YACEP®, and 1,000-hour Kripalu certified yoga teacher, teacher trainer, and mentor with more than 25 years of teaching experience. She has been a member of Kripalu’s faculty for more than 15 years and currently serves as a Lead Faculty member and a lead teacher trainer for the Kripalu School of Yoga. She also teaches R&R yoga classes and workshops, leads Kripalu ",
    "site_note": "A Linktree (myogamichelle) links to a site whose address was not found; co-founded The Thread Yoga Collective",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/michelle-dalbec.json",
    "skip_reason": null
   },
   {
@@ -2934,9 +2934,9 @@
    "contact_form_seen": false,
    "in_person_words": false,
    "hub_bio_extract": " Tracy Foster, MA, is a Core Faculty member at the Kripalu Center for Yoga and Health, and a 1,000-hour certified Kripalu Yoga educator and Mindful Outdoor Guide. Tracy’s intention is to lead yoga and meditation experiences—both on and off the mat—that nurture a profound connection to presence, well-being, gratitude and joy. Whether through movement workshops, yoga classes, forest bathing, or mult",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "No contact route of her own and too thin: Kripalu lists no website or social links for her, and no personal site, published email or contact form could be found (only Kripalu's own pages and its union.fit class recordings); her current work is all Kripalu programmes (Online Studio, Retreat & Renewal, Kripalu Outdoors hiking, snowshoeing and winter forest bathing weekends), which count once, with no books, teaching videos or offerings of her own. Checked 1 Nov 2026."
   },
   {
    "rank": 99,
@@ -2981,9 +2981,9 @@
    "contact_form_seen": false,
    "in_person_words": false,
    "hub_bio_extract": " Cristie Newhart is the former Dean of the Kripalu School of Yoga, overseeing the 200-, 300-, and 1,000-hour yoga teacher training programs. A teacher’s teacher, Cristie is comfortable and confident leading a wide array of students, from beginners exploring the basics of asana practice to aspiring teachers investigating the subtleties of the Yoga Sutras. Cristie has been a faculty mentor at Kripal",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "No contact route of her own and too thin: the only site Kripalu links for her is a teacher page on The Thread Yoga Collective that is still an unfilled template (placeholder text and testimonials, no email), and no personal site, published email or contact form could be found; apart from her Kripalu programmes (Essential Practices for Everyday Life, the Silent Retreat, Old Is Gold in Dec 2026 and a teacher-training module, which count once) she has no books, teaching videos or offerings of her own. Checked 1 Nov 2026."
   },
   {
    "rank": 100,
@@ -3012,9 +3012,9 @@
    "hub_bio_extract": " Christine Bissonnette, E-RYT 500, YACEP, NCTMB CE Provider, is Core Faculty at Kripalu, a mentor for the Kripalu School of Yoga, an R&R workshop presenter, and a teacher in the Kripalu Online Studio. She is also an Integrated Positional Therapist, Reiki Master, and bodyworker with over 25 years of experience in holistic healing and movement. Passionate about service and transformation, Christine ",
    "site_note": "Kripalu links oh-tm.com but that is Optimum Health Therapeutic Massage (Westfield MA), not centred on her; Linktree https://linktr.ee/christinebissonnetteyoga",
    "instagram": "https://www.instagram.com/christinebissonnetteyoga",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Strict health rule and too thin: her own business (Optimum Health Therapeutic Massage in Westfield, MA, which she owns) is therapeutic massage sold largely on pain (custom sessions for injury and surgery, TMJ and jaw pain, lymphatic drainage), her signature offer is the on-demand 'Yoga for Pain Relief' workshop and 'live pain-free' speaking, and her past workshops are all Yoga for Pain Relief; what remains is the Kripalu Online Studio and The Kripalu Yoga Retreat (9 to 13 Nov 2026, co-led with Michelle Dalbec), which count once, and one video on Kripalu's channel. Her Linktree does show an email (Christineflowyoga@gmail.com), so contact was not the issue. Checked 1 Nov 2026."
   },
   {
    "rank": 101,
@@ -3071,9 +3071,9 @@
    "contact_form_seen": false,
    "in_person_words": false,
    "hub_bio_extract": " Lesli Lang, BA, is committed to supporting people in their quest for authenticity, creative freedom, and full self-expression. She is a truth seeker who brings to her work a lifelong exploration of deep wisdom, meditation, yoga, and the expressive and healing arts. Drawing on her experience as a creative producer in New York City and in business theater and multimedia communications, Lesli is abl",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Too thin for a listing of her own: she has no website or social accounts of her own and teaches as part of Ken Nelson's team (Life-Changing Workshops and kennelsonphd.com), co-leading both of his Kripalu programmes (Slow Yoga and Qigong, 1-4 Jan 2027; Designing and Leading Transformational Workshops, 25-30 Apr 2027) and co-authoring the team's one book; her only items would duplicate Ken Nelson's plan (rank 101), where she is named in the bio; checked 1 Nov 2026."
   },
   {
    "rank": 103,
@@ -3167,9 +3167,9 @@
    "in_person_words": false,
    "hub_bio_extract": " Rebecca Hines encountered mindfulness through her first yoga teacher in 1993, who helped her discover the power of awareness available in the body, in every moment. A practitioner of vipassana meditation since 2000, Rebecca began teaching Mindfulness-Based Stress Reduction in 2007. She now teaches with the Insight Meditation Community of Washington and is on the faculty of the Mindfulness Meditat",
    "site_note": "Only teacher profiles found (IMCW, Sounds True, Kripalu)",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Too thin and no contact route: no website of her own (mindfulnesstraining.org is a parked 'coming soon' page), no YouTube, books or paid offerings beyond the Kripalu weekend (26-28 Feb 2027), only one Dharma Seed talk, and no published email or contact form of her own (only IMCW, Dharma Seed and Sounds True organisational inboxes)."
   },
   {
    "rank": 107,
@@ -3191,9 +3191,9 @@
    "in_person_words": false,
    "hub_bio_extract": " Rebecca Kronlage, ERYT-500, Yoga Alliance Certified Professional Level Certified Kripalu teacher is a mindfulness teacher, retreat leader, and yoga instructor who integrates Insight meditation, loving-kindness practices, gentle yoga, and mindful movement to support greater balance, awareness, and well-being. A former Kripalu resident and program director, Rebecca is a Legacy Faculty and brings a ",
    "site_note": "Co-founded Treehouse Yoga, Bay St. Louis MS, with five other teachers; it has only a Punchpass booking site, and it does not centre on her",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Too thin: no website, YouTube channel, books or courses of her own; beyond the Kripalu retreat (21-24 Jan 2027) there is only a studio instructor profile at Treehouse Yoga BSL (shared studio inbox, does not centre on her) and one 42-minute guest interview with 31 views."
   },
   {
    "rank": 108,
@@ -3214,8 +3214,8 @@
    "contact_form_seen": false,
    "in_person_words": false,
    "hub_bio_extract": " Sigal Brier MA, MAHL, is a transformational mentor, scholar, mystic, rabbi, inspirational teacher, and artist with training in psychology, yoga, meditation, breathwork, somatic movement, and neuroscience. For more than 30 years, she has shared methods that inspire people to live on purpose authentically and joyfully. Using a multidisciplinary mind-body approach, she facilitates transformative exp",
-   "status": "todo",
-   "plan": null,
+   "status": "planned",
+   "plan": "docs/content-audits/sigal-brier.json",
    "skip_reason": null
   },
   {
@@ -3238,9 +3238,9 @@
    "in_person_words": false,
    "hub_bio_extract": " Tsering Ngodup Yodsampa is the founder and spiritual director of the Bodhi Tree Institute and a staff chaplain at Beth Israel Deaconess Medical Center. He also teaches meditation and leads workshops at various spiritual centers. As a young child, he was a refugee in Nepal and India after escaping from the Chinese occupation of Tibet. From 1983 to 1990, he was the official translator and interpret",
    "site_note": "No site found for the Bodhi Tree Institute",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "No published email or contact form (no site found for the Bodhi Tree Institute; only Kripalu, Omega, Sivananda and Patch listings), and his one Kripalu programme (Buddhist Healing for Modern Life, 9-14 May 2027) is framed around bringing healing to illness and grief, so it fails the health-claim rule; too thin once that is left out."
   },
   {
    "rank": 110,
@@ -3263,9 +3263,9 @@
    "hub_bio_extract": " Yuval Samburski, E-RYT 500, YACEP, is an Israeli-born, NYC-based yoga instructor, teacher trainer, mentor, sound healer, and Reiki practitioner. He has a background in the performing arts, photography, and dance; has appeared in films and on stage in New York and Washington DC; and holds a degree in music technology from New York University. Yuval is best known for his deep, soulful chanting and ",
    "site_note": "YouTube handle seen in a search summary only, not checked",
    "youtube": "https://www.youtube.com/@UVYoga",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Too thin: no website (uvyoga.com is a parked domain); his YouTube channel (382 subscribers) holds two music videos and two practice videos with embedding disabled (oEmbed 401), no books, and his only current listing is the Kripalu programme (4-6 Dec 2026 and 26-28 Mar 2027); his past Guatemala retreats on WeTravel have all ended (last Feb 2026)."
   },
   {
    "rank": 111,
@@ -3519,8 +3519,8 @@
    "contact_form_seen": true,
    "in_person_words": true,
    "hub_bio_extract": "Chandra Easton chandraeaston.com Chandra Easton is a Buddhist teacher, devotional music artist, author, and translator of Tibetan Buddhist texts who has taught Buddhism and Hatha Yoga since 2001. She is the author of Embodying Tara: Twenty-One Manifestations to Awaken Your Innate Wisdom (Shambhala, 2023), which bridges scholarship, devotion, and the living wisdom of the sacred feminine, and co-tra",
-   "status": "todo",
-   "plan": null,
+   "status": "planned",
+   "plan": "docs/content-audits/chandra-easton.json",
    "skip_reason": null
   },
   {
@@ -3642,8 +3642,8 @@
    "contact_form_seen": true,
    "in_person_words": true,
    "hub_bio_extract": "Cristi Christensen www.cristichristensen.com Cristi Christensen is an author, global embodiment, and transformational leader, on a mission to shake up the planet. A former elite-level gymnast and platform diver, Cristi trained with the US Olympic Diving team as a young adult. After a devastating injury ended her Olympic pursuit, she faced another formidable challenge: a battle with advanced-stage ",
-   "status": "todo",
-   "plan": null,
+   "status": "planned",
+   "plan": "docs/content-audits/cristi-christensen.json",
    "skip_reason": null
   },
   {
@@ -3669,8 +3669,8 @@
    "contact_form_seen": true,
    "in_person_words": true,
    "hub_bio_extract": "Deva Munay SacredSound.Love Deva Munay, founder of Sacred Sound & Wonder , brings three decades of spiritual practice, study, and healing work to her transformative sound experiences. Her journey began in 1996 with a pilgrimage through Thailand, India, and Nepal, where she immersed herself in meditation and the Dalai Lama’s teachings, and received her first sound healing instruments. This awakened",
-   "status": "todo",
-   "plan": null,
+   "status": "planned",
+   "plan": "docs/content-audits/deva-munay.json",
    "skip_reason": null
   },
   {
@@ -4857,5 +4857,5 @@
    "skip_reason": null
   }
  ],
- "updated": "2026-11-01T14:46:07.382Z"
+ "updated": "2026-11-01T14:55:41.802Z"
 }

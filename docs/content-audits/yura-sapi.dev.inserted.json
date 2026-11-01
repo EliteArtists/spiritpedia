@@ -1,0 +1,33 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 521,
+    "healer_slug": "yura-sapi"
+  },
+  "rows": [
+    {
+      "table": "videos",
+      "id": 5504,
+      "slug": "the-power-of-perspective",
+      "title": "The Power of Perspective"
+    },
+    {
+      "table": "videos",
+      "id": 5505,
+      "slug": "a-conversation-with-yura-sapi",
+      "title": "A Conversation with Yura Sapi"
+    },
+    {
+      "table": "courses",
+      "id": "2a919b53-f1c3-4969-8bac-be817579c789",
+      "slug": "reiki-coaching-and-healing-sessions",
+      "title": "Reiki, Coaching and Healing Sessions"
+    },
+    {
+      "table": "hub_teachers",
+      "id": "439e0d03-803a-4b44-a1af-8583bf3fc2c5",
+      "title": "yura-sapi teaches at Kripalu Center for Yoga & Health"
+    }
+  ],
+  "at": "2026-11-01T14:54:46.049Z"
+}

@@ -1,0 +1,197 @@
+{
+  "healer": {
+    "healer_slug": "amanda-hanson",
+    "create": {
+      "name": "Dr. Amanda Hanson",
+      "bio": "Dr. Amanda Hanson is a clinical psychologist who has worked with women for close to thirty years and now teaches under the name Midlife Muse. Married with four children, she began by inviting women into her home for evening circles and later took the same conversations online, where she now has a large following. Her starting point is that many women are trained from childhood to put themselves last in order to fit the roles expected of them, and that midlife can be the moment to stop.\n\nShe calls her framework the Inner Authority Method. It works with eight feminine archetypes, among them the Sovereign Queen, the Wise Sage, the Erotic Oracle and the Midwife, as an inner council a woman can learn to consult in place of her inner critic, and it blends psychology with ritual and embodiment. She teaches through her 2025 book Muse, her podcast, Things Your Mother Never Told You, an online membership with monthly live calls, a six-month mastermind, live weekend events and a South Florida retreat for mothers and daughters that she leads with her daughter Ava. At Kripalu she leads a weekend on the archetypal stages of a woman's life.",
+      "tier": "superhero",
+      "entity_type": "individual",
+      "availability": "worldwide",
+      "city": null,
+      "country": null,
+      "subjects": [
+        "spirituality",
+        "conscious-relationships",
+        "self-healing"
+      ],
+      "website_url": "https://www.amandahanson.com",
+      "booking_url": "https://www.amandahanson.com/all-programs",
+      "youtube_url": "https://www.youtube.com/@midlifemuse",
+      "instagram_url": "https://www.instagram.com/midlife.muse/",
+      "facebook_url": "https://www.facebook.com/midlife.muse",
+      "twitter_url": null,
+      "tiktok_url": "https://www.tiktok.com/@midlifemuse",
+      "contact_email": "support@amandahanson.com",
+      "image_urls": [
+        "https://yt3.googleusercontent.com/pHpF076AbfOnD-6VDV0mfbyf93fJkCrW3hZCAk42L0-jWec4dVDXJYQcBeWWeU1f5t47Q-QOgw=s900-c-k-c0x00ffffff-no-rj",
+        "https://kripalu.org/sites/default/files/2026-09/amanda%20hanson%20headshot.jpg"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "kripalu",
+      "role": "instructor"
+    }
+  ],
+  "videos": [
+    {
+      "title": "The Method Behind The Movement",
+      "url": "https://www.youtube.com/watch?v=8EbRDWso7vk",
+      "subjects": [
+        "spirituality",
+        "shadow-work"
+      ],
+      "channel": "Midlife Muse"
+    },
+    {
+      "title": "The Truth About Aging Naturally",
+      "url": "https://www.youtube.com/watch?v=WSZbAgppqUU",
+      "subjects": [
+        "spirituality",
+        "self-healing"
+      ],
+      "channel": "Midlife Muse"
+    },
+    {
+      "title": "Beauty Absurd",
+      "url": "https://www.youtube.com/watch?v=-EW1OrLtiR4",
+      "subjects": [
+        "spirituality"
+      ],
+      "channel": "Midlife Muse"
+    },
+    {
+      "title": "Dr. Amanda Hanson: Unplanned Interview",
+      "url": "https://www.youtube.com/watch?v=SRDNIUqvEUM",
+      "subjects": [
+        "spirituality",
+        "conscious-relationships"
+      ],
+      "channel": "Midlife Muse"
+    },
+    {
+      "title": "Why Are Women Hurting So Much? | Unfiltered Interview",
+      "url": "https://www.youtube.com/watch?v=ozA6BVHq4BM",
+      "subjects": [
+        "shadow-work",
+        "conscious-relationships"
+      ],
+      "channel": "Midlife Muse"
+    }
+  ],
+  "books": [
+    {
+      "title": "Muse: The Magnetism of Women Who Stop Abandoning Themselves",
+      "slug": "muse-amanda-hanson",
+      "author": "Dr. Amanda Hanson",
+      "asin": "B0DHHLLLW6",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "Her 2025 book, published by Greenleaf, argues that women are not broken but have been taught to leave themselves behind. It gives names to the patterns behind that habit and sets out the first steps of her archetype-based approach to self-trust.",
+      "subjects": [
+        "spirituality",
+        "self-healing"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/B0DHHLLLW6.01._SCLZZZZZZZ_.jpg"
+    }
+  ],
+  "courses": [
+    {
+      "title": "The Archetypal Journey of Womanhood",
+      "url": "https://kripalu.org/experiences/archetypal-journey-womanhood",
+      "description": "A residential weekend at Kripalu that follows the archetypes shaping a woman's life from birth to old age. Teaching, sharing in the group and somatic practice help each participant see where she stands and take simple daily rituals home. Open to those who identify as female.",
+      "price": "From $410 USD plus lodging",
+      "product_type": "retreat",
+      "start_date": "2027-04-23",
+      "end_date": "2027-04-25",
+      "subjects": [
+        "spirituality",
+        "shadow-work"
+      ],
+      "image": "https://kripalu.org/sites/default/files/styles/og_image/public/2026-10/Webupdates%20%281000x500px%29.jpg?itok=9nINSx8l"
+    },
+    {
+      "title": "The Muses Community",
+      "url": "https://www.amandahanson.com/community",
+      "description": "Her online membership, running since 2022, with a monthly live call, a private app-based community and a theme each month such as money, relationships or ageing. Members also get workbooks, guided morning and evening meditations and a growing library of recordings.",
+      "price": "From $27 USD per month or $297 USD per year",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "spirituality",
+        "conscious-relationships",
+        "meditation"
+      ],
+      "image": "https://cdn.prod.website-files.com/6a5124f33f8fb1c62b18fa27/6a8c791a6d4f308a2e1dd247_Hero.avif"
+    },
+    {
+      "title": "Mother-Daughter Retreat",
+      "url": "https://www.amandahanson.com/mother-daughter",
+      "description": "A two-day small-group retreat in South Florida for mothers and daughters, led by Amanda with her daughter Ava. Paired rituals and guided exercises, each followed by time to talk it through, help the two learn to speak openly with each other. Meals are included.",
+      "price": "From $7,777 USD",
+      "product_type": "retreat",
+      "start_date": "2027-05-01",
+      "end_date": "2027-05-02",
+      "subjects": [
+        "conscious-relationships",
+        "spirituality"
+      ],
+      "image": "https://cdn.prod.website-files.com/6a5124f33f8fb1c62b18fa27/6aaae2f62a9fde113bfe38d3_mother%20daughter.avif"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "5 Questions Every Woman Eventually Has to Ask Herself",
+      "url": "https://www.amandahanson.com/5-questions-every-woman-eventually-has-to-ask-herself",
+      "description": "A free guide built around the five questions she opens her work with. It is meant to help a reader quiet outside opinions and listen for her own sense of direction.",
+      "featured": true,
+      "resource_type": "download",
+      "subjects": [
+        "spirituality",
+        "self-healing"
+      ],
+      "image": "https://cdn.prod.website-files.com/6a5124f33f8fb1c62b18fa27/6a9af4de6b09a2b54642c2c4_Bg.avif"
+    },
+    {
+      "title": "The Queen's Communication Guide",
+      "url": "https://www.amandahanson.com/the-queens-communication-guide",
+      "description": "A free short training on handling hard conversations without shrinking back or attacking. It lays out a five-step way of speaking from steady authority in any close relationship.",
+      "featured": false,
+      "resource_type": "download",
+      "subjects": [
+        "conscious-relationships"
+      ],
+      "image": "https://cdn.prod.website-files.com/6a5124f33f8fb1c62b18fa27/6a7eb5ae5a1b485d34a2908a_free-resource-hero-floral.webp"
+    }
+  ],
+  "sprint": {
+    "hub": "kripalu",
+    "rank": 82,
+    "hub_url": "https://kripalu.org/people/amanda-hanson",
+    "tier_evidence": "Instagram 987K (@midlife.muse og:description, 1 Nov 2026); TikTok 666,000 (@midlifemuse page followerCount, nickname Dr. Amanda Hanson, 1 Nov 2026); YouTube 10.6K (channel header next to @midlifemuse, 1 Nov 2026); Facebook unreadable → ~1.66M total → superhero (site itself claims 1 million+ followers)",
+    "email": "yes",
+    "email_source": "https://www.amandahanson.com/magnetic",
+    "contact_form_url": "https://www.amandahanson.com/contact",
+    "bio_check": "OK: no 8-word runs against 10 source(s)",
+    "flags": [
+      "Email is a support inbox (support@amandahanson.com), published in the FAQ on the Magnetic event page; the contact page also has a general form and a team phone number.",
+      "She is a clinical psychologist and her site blends clinical psychology with feminine archetypes; her current offerings are memberships, masterminds, events and retreats rather than therapy, but a human may want to confirm she fits the 'not mainly therapy' rule.",
+      "Her podcast/YouTube channel hosts guest interviews including Kelly Brogan ('The Women Who Fear The Truth'), a psychiatrist known for vaccine-sceptical views; no anti-vaccine content was seen on Amanda's own pages, but worth a look.",
+      "Tier total sits above 1.5M, so not borderline; superhero rests on Instagram and TikTok counts read on 1 Nov 2026.",
+      "The Mother-Daughter Retreat is led with her daughter Ava Hanson; Ava is mentioned in the bio, not listed separately."
+    ],
+    "left_out": [
+      "Self-Love programme ($222): its page lists lessons on healing generational trauma and 'curing shame'; left out as a borderline health claim.",
+      "Crowned six-month mastermind (from $8,888): dated Nov 2026 to May 2027 with no start day given, so it may have started by 3 Nov 2026.",
+      "Magnetic live event: 2027, venue and dates not yet announced, early-access list only.",
+      "Inner Circle: invitation-only for mastermind graduates.",
+      "The Spirituality of Menopause (video and podcast episode): names a medical condition.",
+      "Guest-led podcast episodes on her channel (Marie Forleo, Gary Vee and others): she is the host, not the main speaker.",
+      "Things Your Mother Never Told You podcast page: no fitting free-resource type; her solo episodes are listed as videos instead."
+    ]
+  },
+  "images_final": true
+}
