@@ -100,7 +100,8 @@ The list to pick up from. Each points to where the detail lives.
       more; then they get their own shelf (never a one-card shelf). Met on
       live on 1 Nov 2026 (7: The Shift Network, Insight Timer, Omega,
       Commune, Kripalu, Esalen, 1440); the shelf is planned, not built
-      (web first, the app with the hubs app build).
+      (web first, the app with the hubs app build; plan in
+      `docs/reports/2026-11-01-organisations-shelf-plan.md`).
     - **Megan SolarGlow stays out** (conspiracy content).
     - **Omega Institute and Commune:** both hubs, 20 linked teachers and
       sprint 1 (58 new teachers: 39 Omega, 19 Commune) are live
@@ -240,6 +241,16 @@ The list to pick up from. Each points to where the detail lives.
       list offerings past their `end_date` or already started (the sprints'
       3-day rule) and remove or redate them after the owner's OK, so past
       retreats drop off cleanly and the shelf never shows old dates.
+25. **Admin platform totals** (Admin → Activity, `GET /api/admin/activity`,
+    §9.9; plan first; not built). Add catalogue totals beside the activity
+    totals:
+    - **Listings by type:** individuals, Schools, Organisations, Channels,
+      Apps.
+    - **Listings by tier:** Superhero, Luminary, Local Hero, Ascended Master.
+    - **Claimed listings:** count and %.
+    - **Contact coverage:** published email / contact form only / none.
+    - **Hub links:** total teacher–hub links.
+    These feed decisions such as the hero banner rotation (job #21).
 
 ---
 

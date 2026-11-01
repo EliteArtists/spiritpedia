@@ -1,70 +1,62 @@
-# Kripalu, Esalen and 1440 Multiversity: live (1 Nov 2026)
+# Organisations shelf: plan (1 Nov 2026)
 
-I've carried out the owner's decisions on the sprint report (`2026-11-01-retreat-hubs-sprint.md`), and everything is now live.
+**Plan only. Nothing is built yet.** The rule (README job #13) is that organisations stay in Explore These Channels until there are 5 or more, and then get their own shelf, never a one-card shelf. Live now has **7 organisation hubs**:
+- The Shift Network
+- Insight Timer
+- Omega Institute
+- Commune
+- Kripalu
+- Esalen
+- 1440 Multiversity
 
-## Owner decisions, done
+So the rule is met.
 
-- **Hub tiers:**
-  - Kripalu and Esalen are Superhero by editorial stature. The reasons are in each hub plan's `sprint.tier_override`, now marked "Owner confirmed".
-  - 1440 Multiversity is Luminary.
-- **Overrides confirmed:** Chungliang Al Huang, Tenzin Wangyal Rinpoche and Mirabai Starr are Luminary by editorial stature.
-- **James Baraz → Luminary by student count.** He states that more than 24,000 people have taken Awakening Joy. No other raises.
-- **Left out by the owner:** Masood Ali Khan, Marysia Miernowska, Leah Diamond and Stacia Butterfield.
-  - Their plans are in `retreat-hubs-sprint-1/dropped/`, each with a skip record.
-  - None was ever on dev or live; their live pages return 404.
-- **Kept for the next sprint:** Russ Hudson and Dr. Raj Balkaran (plans ready, not inserted).
-- **All other flagged teachers kept.** The health items removed in review stay out.
-- **Decoded emails count as published.**
-- **"The Subtle Body: A Genealogy": nothing to move.**
-  - Book 1180 on dev is Cyndi Dale's own *The Subtle Body: An Encyclopedia of Your Energetic Anatomy*.
-  - The import's same-title note compares only the words before the colon, so it matched it to Simon Cox's book. This is the same false match as in the Omega report.
-  - Simon Cox's *Genealogy* is a separate book under him (dev id 1692, and on live). Nothing was changed on Cyndi Dale.
-- **Tao: The Watercourse Way:** Chungliang Al Huang is now a co-author, alongside Alan Watts as the main author, on dev and live.
-- **Esalen's Highway 1 notice: nothing to remove.**
-  - The notice appears only on esalen.org. Our bio, offerings and free resources never carried it; I checked the dev page.
-  - The research flag in the hub plan now says so.
-- **Lorelei Chang's photo.** A face can't tell identical twins apart, so I dropped her YouTube avatar. Only her Kripalu presenter headshot is used, which Kripalu names as her.
-- **Dated items.** I checked all 100 teachers' plans and the three hub plans on 1 Nov with a 3-day margin. None has passed, so nothing was dropped.
-  - Soonest to expire: The Rewilding Summit (5 Nov; Mark Coleman, Shawn Stevens, Zelda Hotaling) and three Kripalu programmes on 6 Nov.
-  - The monthly expired-offerings check (job #24) will catch them.
-- **Script:** `owner-fixes-retreat-hubs-2026-11-01.mjs` applied the James Baraz tier, the Lorelei Chang photo and the co-author on dev, logged for rollback.
-  - Live got the tier and photo straight from the updated plans.
-  - The co-author was added on live by the same script once Huang was in. A dry run can't check a co-author whose listing doesn't exist yet.
+## Today
 
-## Live now
+- **Website** (`web/components/HomePageContent.js`):
+  - Explore These Channels holds every platform that isn't a school (`isPlatform && !isSchool`): channels, apps and organisations, with Spiritpedia Official first.
+  - Schools already have their own shelf, Schools & Academies ("Train With a School"). It uses `SchoolCard` with an "N teachers" line, worked out from `hub_teachers`. The home page already fetches `hub_teachers` for that line.
+- **App:**
+  - `app/lib/data/shelf_rules.dart` puts every platform in `HealerShelves.platforms`, shown as Explore These Channels in `home_screen.dart`.
+  - The app has its own copy of the platform rule (`models.dart` → `isPlatform`).
+  - There is no school or hub shelf in the app yet.
 
-- **Kripalu Center for Yoga & Health** (Superhero): https://www.spiritpedia.co/healers/kripalu
-  - 10 offerings, 2 free resources.
-  - **90 teachers linked:** 79 new, 11 existing.
-- **Esalen Institute** (Superhero): https://www.spiritpedia.co/healers/esalen
-  - 8 offerings, 3 free resources.
-  - **33 teachers linked:** 21 new, 8 existing, and 4 from Kripalu (Erika Gagnon, Mark Coleman, Jovinna Chan, Hawah Kasat).
-- **1440 Multiversity** (Luminary): https://www.spiritpedia.co/healers/1440-multiversity
-  - 4 offerings, 3 free resources.
-  - No teachers: its faculty is staff only.
-- **100 new teachers:**
-  - Tiers: 1 Superhero (Dr. Amanda Hanson), 12 Luminary, 87 Local Hero.
-  - Items: 622 videos, 130 books, 423 offerings, 79 free resources. Six offerings in the plans were shared hub programmes already listed under another teacher, so they were skipped, the same way on dev and live.
-  - Email: 85 published, 15 contact form.
-- **Live matches dev row for row** (the `.live.inserted.json` and `.dev.inserted.json` logs).
-- **Spot checks:** these live pages load:
-  - the three hubs
-  - James Baraz (Luminary)
-  - Chungliang Al Huang (Luminary)
-  - Lorelei Chang (one photo)
-  - Mirabai Starr
-  - the five random teachers from the sprint report: Lihi Benisty, Girish, Kamini Desai, Faith Hunter, Kim Chandler
+## Website (now)
 
-  Masood Ali Khan and Leah Diamond return 404, as they should.
+1. **One rule in one place.**
+   - Add `ORGANISATION_SHELF_MIN = 5` and a small `splitOrganisations(healers)` to `web/utils/listings.js`.
+   - With 5 or more organisations, they get their own list and leave the platforms list. Below 5, they stay in Explore These Channels.
+   - This keeps the one-card rule automatic if a hub is ever removed.
+   - Tests go in `listings.test.mjs` (4 organisations means no shelf; 5 means a shelf; channels and apps are never moved).
+2. **The shelf** goes in `HomePageContent.js`, between Schools & Academies and Explore These Channels.
+   - Order: Spiritpedia Official first, then tier (Superhero, then Luminary, then the rest), then number of teachers.
+   - This puts Omega, Kripalu, The Shift Network, Insight Timer and Esalen ahead of Commune and 1440.
+3. **The card.** Reuse the Schools card (its "N teachers" line) so Kripalu reads "90 teachers".
+   - The counts come from the `hub_teachers` rows the page already loads.
+   - No new query, no migration, no RLS change.
+   - If the card's wording says "school", give it a neutral prop rather than copying it.
+4. **Check on localhost against dev.**
+   - Dev also has 7 organisations, so the shelf shows there.
+   - Run the web tests (including the crisis-intercept tests).
+   - Then show the diff and wait for an OK. A push that changes `web/` deploys.
 
-## Not listed (51)
+## App (with the hubs app build)
 
-- 47 skipped by research or review. The reasons are in the sprint report and in `retreat-hubs-sprint-1/skipped/`.
-- 4 left out by the owner (above).
+- **When:** the app has no school or hub support yet, so the shelf ships with that build rather than as a separate change.
+- **Rules and code:**
+  - `shelf_rules.dart` gets an `organisations` list with the same minimum and order. `platforms` drops organisations when the shelf is shown.
+  - `home_screen.dart` gets the shelf in the same place and with the same title as the website.
+  - Its personalisation list (`fy(...)`) and empty-state check take the new list into account.
+- **Teacher counts:** come from `hub_teachers` (public read, as on the website).
+- **Tests:** `app_test.dart` and the shelf-rule tests are updated, keeping the two copies of the platform rule in step.
+- **Build:** one simulator at a time; build number bumped before TestFlight.
 
-## Still open
+## Decisions for the owner
 
-- **Organisations shelf:** live now has 7 organisation hubs (The Shift Network, Insight Timer, Omega, Commune, Kripalu, Esalen, 1440), so the 5-or-more rule is met. The plan is with the owner; nothing is built yet.
-- **Next sprint:** Esalen ranks 236–254 of `esalen-faculty.json`, starting with Russ Hudson and Dr. Raj Balkaran (already researched). Kripalu's ranked queue is done. Then the §18.7 queue goes on to Spirit Rock and Insight Meditation Society, rotated with The Shift Network sprint 2, Insight Timer sprint 2 and Commune ranks 26–34.
-- **Past faculty** stay unlinked: Kripalu 27, Esalen 22, 1440 17.
-- **README:** the §18.6 log row, job #13 (with the Organisations note) and §18.7 item 4 are updated.
+1. **Title and subtitle.** Schools use "Schools & Academies / Train With a School". Suggested: **"Retreat Centres & Organisations" / "Learn With an Organisation"**.
+2. **"See all" link.** The other shelves show one only on a subject page. Suggested: the same here (none on the main Discover page) until there's an organisations listing page.
+
+## Not affected
+
+- Search keeps organisations in its CHANNELS group.
+- Subject pages, My Library, the hub pages and tiers are unchanged.
