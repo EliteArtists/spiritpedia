@@ -4,7 +4,7 @@
     "create": {
       "name": "James Baraz",
       "bio": "James Baraz has taught insight meditation since 1978 and helped found Spirit Rock, the Marin County meditation centre, as one of its first teachers. Before meditation became his work he spent twelve years as a primary school teacher, and that ease with explaining things plainly shows in how he teaches. He is the guiding teacher of the Insight Meditation Community of Berkeley, which meets every Thursday evening at the Berkeley Buddhist Monastery and on Zoom, and he advises One Earth Sangha, an online community exploring Buddhist responses to the climate crisis.\n\nHe is best known for Awakening Joy, an online course he has run each year since 2003 that takes the Buddhist teachings on wholesome states and turns them into ten monthly themes, from gratitude and integrity to letting go and compassion. More than twenty thousand people in some thirty countries have taken it, and a teacher training lets graduates lead it themselves. With Shoshana Alexander he wrote a book of the same name, and with the teacher Michele Lilyanna a companion guide for parents and educators. He leads silent retreats at Spirit Rock and the Insight Meditation Society, and weekend workshops at Esalen, recently with his son Adam. He lives in Berkeley with his wife, Jane.",
-      "tier": "local_hero",
+      "tier": "luminary",
       "entity_type": "individual",
       "availability": "local_online",
       "city": "Berkeley",
@@ -245,7 +245,6 @@
     "flags": [
       "Email admin@awakeningjoy.info belongs to his assistant Gretchen (the contact page lists it for the course and for James); the queue's insightberkeley1@gmail.com is the Berkeley sangha's address.",
       "Social counts are for the Awakening Joy course accounts, which he runs and which carry his teaching; no personal YouTube, Instagram or Facebook found. Counted because the course is his own work.",
-      "Tier local_hero by follower count (~12.8k), though he co-founded Spirit Rock and states 24,000+ Awakening Joy students; owner may consider an editorial override (not applied).",
       "Esalen weekend is co-led with his son Adam Baraz (SomaWaken); its page mentions releasing chronic tension and nervous-system softening, left out of the description. Programme shows 1 spot left.",
       "Website is the Awakening Joy course site (insightberkeley.org in the queue is his sangha's site); no personal domain found.",
       "Book author photo on his site is too small (223 px); site headshot (351 px) and Esalen 2025 portrait (cap and sunglasses) used."
@@ -257,7 +256,8 @@
       "Awakening Joy: 10 Steps to Happiness, Bantam hardcover (055380703X): amazon.com /dp/ returned 500; the in-print Parallax edition is listed instead.",
       "How My Son Ruined My Life (with his mother Selma, 52k views): comedy, not teaching; course promo videos and Conversations with the Wise excerpts (guests speak): left out.",
       "Earth Day 2026 talk with Santacitta Bhikkhuni: shared talk on climate action; left out in favour of solo teaching."
-    ]
+    ],
+    "tier_override": "Owner decision (1 Nov 2026): luminary by student count. He states that more than 24,000 people have taken his Awakening Joy course; he also co-founded Spirit Rock. Followers alone (~12.8k) give local_hero."
   },
   "images_final": true
 }

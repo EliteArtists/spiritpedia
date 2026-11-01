@@ -1,0 +1,52 @@
+{
+  "env": "live",
+  "healer": {
+    "id": 437,
+    "healer_slug": "1440-multiversity"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "9956b4cd-12c6-441a-a46c-ca18448672fe",
+      "slug": "1440-community-education-calendar",
+      "title": "1440 Community Education Calendar"
+    },
+    {
+      "table": "courses",
+      "id": "950f4de5-cf1b-49b3-a959-6c957b8fff70",
+      "slug": "designing-your-life-at-1440",
+      "title": "Designing Your Life at 1440"
+    },
+    {
+      "table": "courses",
+      "id": "f5eee790-0ed8-4019-9536-9ed686dfb795",
+      "slug": "true-north-leadership",
+      "title": "True North Leadership"
+    },
+    {
+      "table": "courses",
+      "id": "c362daec-3a0d-417e-9e7b-32a753360a9f",
+      "slug": "designing-your-life-an-immersive-weekend-of-purpose-possibility",
+      "title": "Designing Your Life: An Immersive Weekend of Purpose & Possibility"
+    },
+    {
+      "table": "free_resources",
+      "id": "998c905b-6d49-4159-a213-0c9802f0913d",
+      "slug": "1440-living-well-online-classes",
+      "title": "1440 Living Well online classes"
+    },
+    {
+      "table": "free_resources",
+      "id": "10f168bc-325b-41ae-b900-6e2c73dad36f",
+      "slug": "1440-resource-library",
+      "title": "1440 Resource Library"
+    },
+    {
+      "table": "free_resources",
+      "id": "980538cb-053c-41f7-ac04-ead0e5ee277a",
+      "slug": "1440-multiversity-on-youtube",
+      "title": "1440 Multiversity on YouTube"
+    }
+  ],
+  "at": "2026-11-01T15:38:00.635Z"
+}

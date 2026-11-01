@@ -1,0 +1,82 @@
+{
+  "env": "live",
+  "healer": {
+    "id": 435,
+    "healer_slug": "kripalu"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "7cbb3646-c357-4512-82a9-e1edf09c57ca",
+      "slug": "kripalu-programs-retreats",
+      "title": "Kripalu Programs & Retreats"
+    },
+    {
+      "table": "courses",
+      "id": "2c4945ad-8228-4786-a35a-f2dd85a0113d",
+      "slug": "retreat-renewal-rr",
+      "title": "Retreat & Renewal (R&R)"
+    },
+    {
+      "table": "courses",
+      "id": "be84b5ef-eeba-485a-8f46-f5e50455e92b",
+      "slug": "kripalu-schools",
+      "title": "Kripalu Schools"
+    },
+    {
+      "table": "courses",
+      "id": "010ba6f2-1e60-4d6c-92c6-70732fc073e2",
+      "slug": "kripalu-online-studio",
+      "title": "Kripalu Online Studio"
+    },
+    {
+      "table": "courses",
+      "id": "5dc150c1-0371-43a5-8d6a-a8e6544ced8c",
+      "slug": "the-kripalu-yoga-retreat",
+      "title": "The Kripalu Yoga Retreat"
+    },
+    {
+      "table": "courses",
+      "id": "38a04acd-3c70-4655-a415-e3d8ed66b1e1",
+      "slug": "essential-practices-for-everyday-life",
+      "title": "Essential Practices for Everyday Life"
+    },
+    {
+      "table": "courses",
+      "id": "2805ab3c-4caa-4fd5-a477-220fabaaab2c",
+      "slug": "ayurveda-self-care-retreat",
+      "title": "Ayurveda Self-Care Retreat"
+    },
+    {
+      "table": "courses",
+      "id": "bd6606ac-366d-4351-8dd8-010301533cba",
+      "slug": "the-kripalu-silent-retreat",
+      "title": "The Kripalu Silent Retreat"
+    },
+    {
+      "table": "courses",
+      "id": "a220f25e-96f2-4144-ab08-867319c5332d",
+      "slug": "winter-solstice-retreat-nature-peace-and-connection",
+      "title": "Winter Solstice Retreat: Nature, Peace, and Connection"
+    },
+    {
+      "table": "courses",
+      "id": "4206f566-af0e-4c2c-a886-64f4d8ffebc6",
+      "slug": "winter-ayurveda-retreat-harmony-rejuvenation-and-rest",
+      "title": "Winter Ayurveda Retreat: Harmony, Rejuvenation, and Rest"
+    },
+    {
+      "table": "free_resources",
+      "id": "76fe96ce-fb47-45b8-829f-9b56f7102d54",
+      "slug": "living-kripalu",
+      "title": "Living Kripalu"
+    },
+    {
+      "table": "free_resources",
+      "id": "13c299f8-ec10-441b-bfe3-9dad5357cf23",
+      "slug": "kripalu-on-youtube",
+      "title": "Kripalu on YouTube"
+    }
+  ],
+  "at": "2026-11-01T15:37:53.051Z"
+}

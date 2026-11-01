@@ -1,0 +1,44 @@
+{
+  "env": "live",
+  "healer": {
+    "id": 475,
+    "healer_slug": "carrie-grossman"
+  },
+  "rows": [
+    {
+      "table": "videos",
+      "id": 5340,
+      "slug": "the-life-of-buddha-narrated-by-carrie-grossman",
+      "title": "The Life of Buddha - Narrated by Carrie Grossman"
+    },
+    {
+      "table": "courses",
+      "id": "a207f2b5-5320-461e-ae22-822df22e56ba",
+      "slug": "mysteries-of-the-heart-a-journey-into-love-devotion-and-the-deeper-self",
+      "title": "Mysteries of the Heart: A Journey into Love, Devotion, and the Deeper Self"
+    },
+    {
+      "table": "courses",
+      "id": "6ec36603-54d1-4408-bd0d-aa76d93be11c",
+      "slug": "awaken-the-heart-through-chanting-mantras",
+      "title": "Awaken The Heart Through Chanting & Mantras"
+    },
+    {
+      "table": "free_resources",
+      "id": "b57534a5-0d67-4d3c-ba84-d62c7e2ca316",
+      "slug": "carrie-grossman-on-insight-timer",
+      "title": "Carrie Grossman on Insight Timer"
+    },
+    {
+      "table": "hub_teachers",
+      "id": "dd1f2ef9-6371-42ae-962d-138342deac49",
+      "title": "carrie-grossman teaches at Kripalu Center for Yoga & Health"
+    },
+    {
+      "table": "hub_teachers",
+      "id": "a4d6de1a-fe9f-4342-ac0e-d08cfe3b8ff6",
+      "title": "carrie-grossman teaches at Insight Timer"
+    }
+  ],
+  "at": "2026-11-01T15:44:39.433Z"
+}

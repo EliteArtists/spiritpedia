@@ -1,0 +1,19 @@
+{
+  "env": "dev",
+  "old": {
+    "james-baraz": {
+      "tier": "local_hero"
+    },
+    "lorelei-chang": {
+      "image_urls": [
+        "https://kripalu.org/sites/default/files/2026-04/Lorelei%20Chang.jpg",
+        "https://yt3.googleusercontent.com/ytc/AIdro_l8Z_otSlVV9Zqjki9ZLzou0hZTV6fMN8JxlhZdJvPkbQ=s900"
+      ]
+    }
+  },
+  "books": {
+    "tao-the-watercourse-way": {
+      "co_healer_slugs": []
+    }
+  }
+}

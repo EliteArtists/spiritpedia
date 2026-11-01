@@ -190,20 +190,19 @@
   ],
   "sprint": {
     "tier_evidence": "Instagram 99K (og:description, @esalen, 1 Nov 2026); Facebook 87,042 (og:description, facebook.com/EsalenInstitute, 1 Nov 2026); YouTube 8.75K (channel header next to @esaleninstitute, 448 videos, 1 Nov 2026) -> ~194.8k total -> luminary. X (@esalen) not counted: count needs login. No TikTok linked.",
-    "tier_override": "superhero by editorial stature (default, as Omega; owner to confirm): founded 1962 and widely seen as the birthplace of the human potential movement; Esalen's own pages describe 17,000 participants in nearly 600 seminars a year. Computed tier from ~194.8k summed followers was luminary.",
+    "tier_override": "Owner confirmed (1 Nov 2026). superhero by editorial stature: founded 1962 and widely seen as the birthplace of the human potential movement; Esalen's own pages describe 17,000 participants in nearly 600 seminars a year. Computed tier from ~194.8k summed followers was luminary.",
     "email": "yes",
     "email_source": "https://www.esalen.org/contact (info@esalen.org, 'Call 831-667-3000 or email us at info@esalen.org'; also in the footer of every page)",
     "contact_form_url": null,
     "flags": [
-      "Tier override applied by default (superhero by editorial stature, as Omega); owner to confirm.",
       "Availability set to 'local': Esalen runs no regular online programme; it has run occasional online history classes through Eventbrite.",
-      "Highway 1 travel advisory on every page: visitors reach Big Sur by twice-daily Caltrans convoys; one banner still says 'closed through April 11'. Worth a check before launch.",
       "The dated retreats are Self-Guided Explorations weeks (resident faculty, Esalen's own programme); Esalen has no other house-led dated programmes on the calendar. Weekend dates exist too but their pages show the same $940 five-day rate, so only weeks are listed.",
       "Workshops price 'From $560 USD' is the all-inclusive weekend rate for a sleeping-bag space on the accommodations page; workshop-specific fees can be extra.",
       "No contact form: the contact page lists phone and department email addresses only.",
       "Voices of Esalen has no landing page of its own (esalen.org/podcasts is a 404); linked to the Story page where episodes are listed.",
       "Massage School subjects: no massage subject in the list; tagged mindfulness only.",
-      "Organisation, not School."
+      "Organisation, not School.",
+      "Highway 1 travel notice (owner: remove it from the hub page): it appears only on esalen.org, never in our bio, offerings or free resources; checked on dev 1 Nov 2026, nothing to remove."
     ],
     "left_out": [
       "Guest-led workshops (the teachers' own listings carry them).",

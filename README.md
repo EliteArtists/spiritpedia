@@ -97,7 +97,10 @@ The list to pick up from. Each points to where the detail lives.
     - **No founder profiles for couples** (Boho Beautiful, Breathe and Flow)
       for now: the couple stays the hub.
     - **Organisations stay in Explore These Channels** until there are 5 or
-      more; then they get their own shelf (never a one-card shelf).
+      more; then they get their own shelf (never a one-card shelf). Met on
+      live on 1 Nov 2026 (7: The Shift Network, Insight Timer, Omega,
+      Commune, Kripalu, Esalen, 1440); the shelf is planned, not built
+      (web first, the app with the hubs app build).
     - **Megan SolarGlow stays out** (conspiracy content).
     - **Omega Institute and Commune:** both hubs, 20 linked teachers and
       sprint 1 (58 new teachers: 39 Omega, 19 Commune) are live
@@ -107,9 +110,19 @@ The list to pick up from. Each points to where the detail lives.
       ranks 26–34 of `commune-faculty.json` are next (Noah Mazé, Jeff
       Krasno, Pedram Shojai, David Kessler…). Preethaji left out by the
       owner. Same brief and tools.
+    - **Kripalu, Esalen and 1440 Multiversity:** the three hubs, 19 linked
+      teachers and the retreat-centre hubs sprint (100 new teachers: 79
+      Kripalu, 21 Esalen; 1440 has staff-only faculty, so none) are live
+      (`docs/content-audits/retreat-hubs-sprint-1/`, report in
+      `docs/reports/2026-11-01-retreat-hubs-live.md`). Next: Kripalu ranks
+      are done; Esalen ranks 236–254 of `esalen-faculty.json`, with Russ
+      Hudson and Dr. Raj Balkaran already researched (plans ready, not
+      inserted). Past faculty (Kripalu 27, Esalen 22, 1440 17) stay
+      unlinked. Masood Ali Khan, Marysia Miernowska, Leah Diamond and Stacia
+      Butterfield left out by the owner. Same brief and tools.
     - **Future hubs** (owner, 31 Oct 2026): DailyOM (on hold until Ziff
       Davis gives written permission), Omega Institute and Commune (sprint 1
-      live), Kripalu / Esalen / 1440 Multiversity, Spirit Rock and Insight
+      live), Kripalu / Esalen / 1440 Multiversity (live), Spirit Rock and Insight
       Meditation Society, Mindvalley, Evolving Wisdom and Humanity's Team,
       Findhorn Foundation and Hollyhock, then Gaia (stricter curation). The
       order, the rotation rule and the retreats rule are in §18.7; The Shift
@@ -2625,6 +2638,7 @@ dev, give the pages to check, stop. Live after their OK, as for healers.
 | Hubs: The Shift Network sprint 1, 100 new teachers from its faculty list (ranks 1–116), each linked "Teaches on The Shift Network" (Stephen Dinan and Devaa Haley Mitchell as founders); plans, logs, brief, progress and report in `docs/content-audits/shift-sprint-1/` (`REPORT.md`: tier evidence, email sources, every flag) | 31 Oct 2026: 1,072 videos, 209 books, 515 offerings, 98 free resources. Tiers from readable follower counts (mostly YouTube; Instagram/Facebook need a login): 15 Luminary, 85 Local Hero, of which 6 raised by the owner under the new editorial-stature rule (Matthew Fox, Richard Tarnas, Cyndi Dale, Philip Carr-Gomm, Robert Moss, Stephen Dinan). Email: 83 published, 14 contact form only, 3 none. 16 skipped: 11 mainly medical or condition-based, Diana Beaulieu and Martha Peterson (whole brand fails the health-claim rule), Liesel Fricke (shares everything with Rob Schwartz), Simon Sanud (nothing public), Megan SolarGlow (left out by the owner: conspiracy-theory content). Medical intuition, Medical Qigong, condition-named courses and already-started dated courses left out throughout; The Physics of Angels linked to Rupert Sheldrake as co-author | 31 Oct 2026, the same |
 | Hubs: Insight Timer (new Organisation, Superhero by editorial stature, founded 2009; 2 offerings, 4 free resources), its 38 teachers already on Spiritpedia linked "Teaches on Insight Timer" with a "<Name> on Insight Timer" profile link each (plus legacy links for Thich Nhat Hanh and Ram Dass; Frans Stiene's already existed), and sprint 1: 97 new teachers from the claim-likelihood pipeline (ranks 1–116, `insight-timer-faculty.json`), each linked "Teaches on Insight Timer"; plans, logs, brief and progress in `docs/content-audits/insight-timer-sprint-1/`, report in `docs/reports/2026-10-31-insight-timer-sprint-1.md` | 31 Oct 2026: 757 videos, 84 books, 432 offerings, 195 free resources. Tiers by followers added together (§17.1, Insight Timer followers counted): 1 Superhero (Alex Elle), 20 Luminary, 76 Local Hero. Email: 75 published, 22 contact form. 22 not listed: 19 skipped (sleep-story or music brands, coaches with almost no spiritual teaching, too thin, or pages making medical claims: Carmen Ng, Mellisa Dormoy) and 3 dropped by the owner after review (Lisa Whatley, KC Gonzalez, Barbara Deyo; plans in `dropped/`). Insight Timer tracks never copied; courses listed as offerings at "Included in Member Plus". Owner fixes the same day (`owner-fixes-2026-10-31.mjs`, logged for rollback): Katherine Woodward Thomas (died 2026) moved to Ascended Master; Iyanla Vanzant's "Working Through Anxiety" and Healing Vibrations' "…For Sleep And Anxiety" removed. 67 Shift sprint-1 bios rewritten for original wording (§18.4) on both | 31 Oct 2026, the same |
 | Hubs: Omega Institute (new Organisation, Superhero by editorial stature, founded 1977; 4 offerings, 3 free resources) and Commune (new Organisation, Luminary, ~925k followers; 3 offerings, 2 free resources); 20 teachers already on Spiritpedia linked (8 "Teaches at Omega", 12 "Teaches on Commune"); sprint 1: 58 new teachers (39 from Omega's current faculty, ranks 1–52 of `omega-institute-faculty.json`; 19 from Commune, ranks 1–25 of `commune-faculty.json`), each linked to its hub (Mimi Kuo-Deemer to both; Robert Peng, Ken Cohen and Michael B. Beckwith also to The Shift Network); plans, logs, briefs and progress in `docs/content-audits/omega-sprint-1/` and `commune-sprint-1/`, reports `docs/reports/2026-10-31-omega-commune-sprint.md` and `…-live.md` | 31 Oct 2026: 503 videos, 152 books, 243 offerings, 67 free resources. Tiers by followers added together (§17.1): 2 Superhero (Asha Nayaswami, Michael B. Beckwith), 16 Luminary (overrides: Mark Nepo, Swami Sarvapriyananda, Richard Rudd by editorial stature; Eoin Finn by student count), 40 Local Hero. Email: 48 published, 10 contact form. 19 not listed: 18 skipped (health claims, mainly therapy or coaching, too thin, or no contact route; Sebene Selassie and Will Kabat-Zinn publish no contact) and Preethaji left out by the owner. Omega's 67 past-faculty matches listed, not linked. DailyOM not started (Ziff Davis permission). Owner fixes (`owner-fixes-omega-commune-2026-10-31.mjs`, dev; live from the updated plans): Omega to Superhero, Eoin Finn to Luminary, Prem Rawat's name out of Janet Stone's bio. Strict health rule: condition-framed items left out throughout | 31 Oct 2026, the same |
+| Hubs: Kripalu Center for Yoga & Health (new Organisation, Superhero by editorial stature; 10 offerings incl. 6 house retreats, 2 free resources), Esalen Institute (new Organisation, Superhero by editorial stature, founded 1962; 8 offerings, 3 free resources) and 1440 Multiversity (new Organisation, Luminary, founded 2017; 4 offerings, 3 free resources); 19 teachers already on Spiritpedia linked as current faculty (11 Kripalu, 8 Esalen); the retreat-centre hubs sprint: 100 new teachers (79 from Kripalu's current faculty, ranks 1–118 of `kripalu-faculty.json`; 21 from Esalen, ranks 201–235 of `esalen-faculty.json`; none from 1440, whose faculty is staff only), each linked to its hub (Erika Gagnon, Mark Coleman, Jovinna Chan, Hawah Kasat to both); plans, logs, brief and progress in `docs/content-audits/retreat-hubs-sprint-1/`, reports `docs/reports/2026-11-01-retreat-hubs-sprint.md` and `…-live.md` | 1 Nov 2026: 622 videos, 130 books, 423 offerings, 79 free resources. Tiers by followers added together (§17.1): 1 Superhero (Dr. Amanda Hanson), 12 Luminary (overrides: Chungliang Al Huang, Tenzin Wangyal Rinpoche, Mirabai Starr by editorial stature; James Baraz by student count), 87 Local Hero. Email: 85 published (decoded Cloudflare/JS addresses count, owner), 15 contact form. 51 not listed: 47 skipped (too thin, strict health rule, mainly therapy or clinical, no contact route, 8 not current faculty) and 4 left out by the owner (Masood Ali Khan, Marysia Miernowska, Leah Diamond, Stacia Butterfield; plans in `dropped/`). Past faculty listed, not linked (Kripalu 27, Esalen 22, 1440 17). Owner fixes (`owner-fixes-retreat-hubs-2026-11-01.mjs`, logged): James Baraz to Luminary, Lorelei Chang's YouTube avatar dropped (twin sister), Chungliang Al Huang co-author on Tao: The Watercourse Way. The Subtle Body: nothing to move (book 1180 is Cyndi Dale's own Encyclopedia; Simon Cox's Genealogy is a separate book). No dated item had passed | 1 Nov 2026, the same |
 
 ### 18.7 Hub-by-hub sprints (the standard method)
 
@@ -2667,7 +2681,11 @@ Network and Insight Timer sprints carry on in between these. In order:
    faculty listed in `omega-institute-faculty.json`, not linked.
 3. **Commune** (onecommune.com). Sprint 1 live (31 Oct 2026); ranks 26–34
    next. Health-category courses never listed.
-4. **Kripalu, Esalen, 1440 Multiversity.**
+4. **Kripalu, Esalen, 1440 Multiversity.** Live (1 Nov 2026): Kripalu and
+   Esalen Superhero by editorial stature, 1440 Luminary; current faculty
+   only, past faculty listed in each `<hub>-faculty.json`, not linked. 1440
+   no longer runs programmes led by outside teachers, so it gave none.
+   Esalen ranks 236–254 next.
 5. **Spirit Rock and Insight Meditation Society.**
 6. **Mindvalley:** mostly big names.
 7. **Evolving Wisdom, Humanity's Team.**

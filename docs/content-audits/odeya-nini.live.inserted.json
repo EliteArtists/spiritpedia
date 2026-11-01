@@ -1,0 +1,63 @@
+{
+  "env": "live",
+  "healer": {
+    "id": 531,
+    "healer_slug": "odeya-nini"
+  },
+  "rows": [
+    {
+      "table": "videos",
+      "id": 5678,
+      "slug": "voice-bath-film",
+      "title": "VOICE BATH FILM"
+    },
+    {
+      "table": "videos",
+      "id": 5679,
+      "slug": "free-the-voice",
+      "title": "FREE THE VOICE"
+    },
+    {
+      "table": "courses",
+      "id": "f6fb8559-65b6-4697-8b20-19664f4762ce",
+      "slug": "free-the-resonant-voice-a-vocal-embodiment-journey-to-remember-the-soul-of-your-sound",
+      "title": "Free the Resonant Voice: A Vocal Embodiment Journey to Remember the Soul of Your Sound"
+    },
+    {
+      "table": "courses",
+      "id": "30ffc750-9d8a-4f9d-81d5-ed7b79b724ad",
+      "slug": "free-the-voice-journey-to-remember-your-sound",
+      "title": "Free the Voice: Journey to Remember Your Sound"
+    },
+    {
+      "table": "courses",
+      "id": "992fd69e-4582-4795-b9a9-8474ba5e696a",
+      "slug": "workshop-free-the-voice-nyc-11-16",
+      "title": "Workshop - FREE THE VOICE :: NYC 11/16"
+    },
+    {
+      "table": "courses",
+      "id": "4a582a6c-3491-4ea4-b716-826946b6e8f9",
+      "slug": "embodied-voice-private-lessons",
+      "title": "Embodied Voice Private Lessons"
+    },
+    {
+      "table": "courses",
+      "id": "4047ee8c-c828-43a3-ac5f-1e34b5136e22",
+      "slug": "voice-bath",
+      "title": "Voice Bath"
+    },
+    {
+      "table": "free_resources",
+      "id": "130f4ac1-de42-4545-9abd-a7929c671103",
+      "slug": "free-the-voice-free-lesson",
+      "title": "Free the Voice Free Lesson"
+    },
+    {
+      "table": "hub_teachers",
+      "id": "74c4316a-9b9f-4548-a5a1-1c3b2d170590",
+      "title": "odeya-nini teaches at Esalen Institute"
+    }
+  ],
+  "at": "2026-11-01T15:48:28.427Z"
+}

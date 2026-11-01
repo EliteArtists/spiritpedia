@@ -1,0 +1,51 @@
+{
+  "env": "live",
+  "healer": {
+    "id": 445,
+    "healer_slug": "kim-chandler"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "5bbfa85a-ed19-47c9-91f7-4e46c2288984",
+      "slug": "awaken-inner-clarity-a-guide-to-proprioceptive-writing-and-yoga",
+      "title": "Awaken Inner Clarity: A Guide to Proprioceptive Writing and Yoga"
+    },
+    {
+      "table": "courses",
+      "id": "adb68766-2e68-4b32-b1a3-5d526bf9d859",
+      "slug": "how-to-hear-your-inner-self-a-proprioceptive-writing-immersion",
+      "title": "How to Hear Your Inner Self: A Proprioceptive Writing Immersion"
+    },
+    {
+      "table": "courses",
+      "id": "83c2f3cb-c424-4f6a-b14e-d4cc4a778366",
+      "slug": "200-hour-yoga-immersion-teacher-course-2027",
+      "title": "200 Hour Yoga Immersion & Teacher Course 2027"
+    },
+    {
+      "table": "courses",
+      "id": "d56080de-44ee-486c-bc15-b44248f2684e",
+      "slug": "loving-kindness-meditation-gentle-yoga-with-guided-relaxation",
+      "title": "Loving Kindness Meditation & Gentle Yoga with Guided Relaxation"
+    },
+    {
+      "table": "courses",
+      "id": "1b778182-81ff-41e7-b1a5-94c538381148",
+      "slug": "innerlight-studio-and-zoom-classes",
+      "title": "Innerlight Studio and Zoom Classes"
+    },
+    {
+      "table": "courses",
+      "id": "da1af8cf-6a65-40b0-80e9-183c4019f8aa",
+      "slug": "private-yoga-proprioceptive-writing-lessons",
+      "title": "Private Yoga & Proprioceptive Writing Lessons"
+    },
+    {
+      "table": "hub_teachers",
+      "id": "0e382be3-472a-4f19-890d-b965725c0949",
+      "title": "kim-chandler teaches at Kripalu Center for Yoga & Health"
+    }
+  ],
+  "at": "2026-11-01T15:42:38.308Z"
+}

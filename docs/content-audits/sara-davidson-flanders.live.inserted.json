@@ -1,0 +1,33 @@
+{
+  "env": "live",
+  "healer": {
+    "id": 462,
+    "healer_slug": "sara-davidson-flanders"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "729cbb42-e0e6-481d-9834-0f9d17e25f7e",
+      "slug": "learning-neelakantha-meditation-2",
+      "title": "Learning Neelakantha Meditation"
+    },
+    {
+      "table": "courses",
+      "id": "e63a1df0-c814-40dd-a0cf-11c1160ddf13",
+      "slug": "heart-centered-yoga-classes",
+      "title": "Heart Centered Yoga classes"
+    },
+    {
+      "table": "courses",
+      "id": "d100119f-29ec-4ee1-ad8f-c07c8cc3bfd5",
+      "slug": "new-years-eve-playshop",
+      "title": "New Year's Eve Playshop"
+    },
+    {
+      "table": "hub_teachers",
+      "id": "70216131-825f-439f-b6ca-616916df317b",
+      "title": "sara-davidson-flanders teaches at Kripalu Center for Yoga & Health"
+    }
+  ],
+  "at": "2026-11-01T15:43:48.012Z"
+}
