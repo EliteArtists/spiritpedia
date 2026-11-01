@@ -1,0 +1,183 @@
+{
+  "healer": {
+    "healer_slug": "ani-anderson",
+    "create": {
+      "name": "Ani Anderson",
+      "bio": "Ani Anderson began her working life as an occupational therapist and moved steadily into holistic practice, qualifying along the way in massage, energy medicine, craniosacral work, qigong and tai chi, and leading a meditation sangha in the tradition of Thich Nhat Hanh. With her partner Brian Trzaskos she built two wellness centres and a training institute for rehabilitation therapists, and the two now run the Somatic Coaching Academy, where she is chief executive and heads the coaching and business programmes. She is a certified professional coach and also reads Human Design charts.\n\nHer own method, set out in her book Find Your Soul's Agenda, asks people to trace the emotional patterns that keep recurring in their lives and distil their purpose into a single word, which then serves as a guide for choices and relationships. With Brian she wrote Manifestation For Dummies, which approaches manifestation through what they call the natural laws and through close attention to sensation in the body, and together they created Sensation-Based Motivation Coaching. She works mostly online with business owners and leaders, in one-day private deep dives and a year-long group mastermind, and occasionally in person at Kripalu. She lives in a log cabin near Lake Champlain in upstate New York.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "worldwide",
+      "city": null,
+      "country": null,
+      "subjects": [
+        "soul-purpose",
+        "manifestation",
+        "life-coaching"
+      ],
+      "website_url": "https://anianderson.com/",
+      "booking_url": "https://somaticcoachingacademy.com/get-coached/",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "info@anianderson.com",
+      "image_urls": [
+        "https://kripalu.org/sites/default/files/2023-12/Ani-Anderson_2023.jpg",
+        "https://anianderson.com/wp-content/uploads/2024/05/Ani-Headshot-2-scaled.jpg",
+        "https://somaticcoachingacademy.com/wp-content/uploads/2022/10/Ani-Headshot-scaled.jpg"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "kripalu",
+      "role": "instructor"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Your Manifestation Road Map",
+      "url": "https://www.youtube.com/watch?v=Ttu6kQgjvt8",
+      "subjects": [
+        "manifestation",
+        "law-of-attraction"
+      ],
+      "channel": "Somatic Coaching Academy"
+    },
+    {
+      "title": "Are Synchronicities speeding up?",
+      "url": "https://www.youtube.com/watch?v=OkHyAwQxmq8",
+      "subjects": [
+        "manifestation",
+        "spirituality"
+      ],
+      "channel": "Somatic Coaching Academy"
+    },
+    {
+      "title": "Ani Anderson What Is Your Soul's Agenda?",
+      "url": "https://www.youtube.com/watch?v=n-IoPnFAuqo",
+      "subjects": [
+        "soul-purpose"
+      ],
+      "channel": "Catherine Carrigan"
+    },
+    {
+      "title": "Find Your Soul's Agenda - The One Word that will Make Your Whole Life a Success With Ani Anderson",
+      "url": "https://www.youtube.com/watch?v=8g_j5tjWaq4",
+      "subjects": [
+        "soul-purpose",
+        "life-coaching"
+      ],
+      "channel": "Burn It Up Coaching"
+    }
+  ],
+  "books": [
+    {
+      "title": "Manifestation For Dummies",
+      "slug": "manifestation-for-dummies",
+      "author": "Ani Anderson, Brian Trzaskos",
+      "asin": "1394395264",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "A plain-language guide, written with Brian Trzaskos, that sets out a step-by-step route to manifesting. It explains the natural laws the authors see at work in creation and pairs them with body-based practices for setting intentions and noticing old patterns.",
+      "subjects": [
+        "manifestation",
+        "law-of-attraction"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1394395264.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "Find Your Soul's Agenda: The One Word That Will Make Your Whole Life a Success",
+      "slug": "find-your-souls-agenda",
+      "author": "Ani Anderson",
+      "asin": "B07H5RBGVR",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "Her guide to discovering life purpose. Readers work through their recurring emotional highs and lows to find the one word that names their soul's agenda, and learn to spot the habits of resistance that pull them off course.",
+      "subjects": [
+        "soul-purpose",
+        "spirituality"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/B07H5RBGVR.01._SCLZZZZZZZ_.jpg"
+    }
+  ],
+  "courses": [
+    {
+      "title": "Embodied Manifestation: The Roadmap to Creating the Life You Desire",
+      "url": "https://kripalu.org/experiences/embodied-manifestation-roadmap-creating-life-you-desire",
+      "description": "A residential Kripalu programme, co-led with Brian Trzaskos, drawn from their book Manifestation For Dummies. Participants map their own manifestation route, look at the unconscious patterns behind recurring problems, set intentions and practise somatic exercises for working with life-force energy.",
+      "price": "$399 USD tuition plus lodging",
+      "product_type": "retreat",
+      "start_date": "2026-11-15",
+      "end_date": "2026-11-18",
+      "subjects": [
+        "manifestation",
+        "law-of-attraction"
+      ],
+      "image": "https://kripalu.org/sites/default/files/styles/og_image/public/2025-08/GettyImages-637493454_joy_hero.jpg?itok=5V0gDjAI"
+    },
+    {
+      "title": "Living the Laws Mastermind",
+      "url": "https://pages.somaticcoachingacademy.com/living-the-laws",
+      "description": "A twelve-month small-group programme for founders and leaders, run with Brian Trzaskos. Each month takes one natural law through the book's roadmap, with two hours of group learning, an integration call and a practical monthly challenge.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": "2027-01-01",
+      "end_date": "2027-12-31",
+      "subjects": [
+        "manifestation",
+        "law-of-attraction",
+        "life-coaching"
+      ],
+      "image": "https://i.ontraport.com/81564.d63a44a751c865b4156edbdf3aa6c652.PNG"
+    },
+    {
+      "title": "Find Your Purpose Deep Dive and Private Coaching",
+      "url": "https://somaticcoachingacademy.com/get-coached/",
+      "description": "A one-day private session built on her Find Your Soul's Agenda process, which can lead into three-, six- or nine-month coaching programmes. Clients start with an interest form and a call to be matched with a coach.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "soul-purpose",
+        "life-coaching"
+      ],
+      "image": "https://somaticcoachingacademy.com/wp-content/uploads/2026/05/Dark-Blue-and-Yellow-Bold-Modern-Professional-Attractive-YouTube-Thumbnail-1.png"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "hub": "kripalu",
+    "rank": 44,
+    "hub_url": "https://kripalu.org/people/ani-anderson",
+    "tier_evidence": "No personal social accounts linked from anianderson.com or her Kripalu page (1 Nov 2026); Somatic Coaching Academy accounts are the company's (YouTube @SomaticCoachingAcademy 850, channel header, 1 Nov 2026) and not counted → 0 personal total → local_hero",
+    "email": "yes",
+    "email_source": "https://anianderson.com/",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 14 source(s)",
+    "flags": [
+      "Follower total is 0: no personal accounts found; the shared Somatic Coaching Academy accounts belong to her and Brian Trzaskos's company.",
+      "Brian Trzaskos (co-founder, co-author and co-leader of the Kripalu programme) is not in the queue; named in the bio and items, not listed. The SCA YouTube channel is shared by the two of them; the two SCA videos are their joint podcast.",
+      "Somatic Coaching Academy's own programmes are framed around trauma and chronic pain (e.g. Cross Mapping Method); none are included. Her own offerings here are purpose and manifestation coaching. A human may want to check fit, as much of her work is business coaching.",
+      "Find Your Soul's Agenda: only the Kindle ASIN B07H5RBGVR was found (linked from SCA's books page via amazon.in); no paperback ISBN confirmed. Manifestation For Dummies ISBN-10 1394395264 from bookseller listings (Wiley, 2026); amazon.com pages not opened.",
+      "Living the Laws Mastermind runs January to December 2027 with no exact days; start and end set to 1 Jan and 31 Dec 2027. Price not shown.",
+      "Availability worldwide: her base is Willsboro, NY (PO box on her site) but she works mainly online; no in-person practice found apart from events.",
+      "The private coaching page is the academy's (coaches matched by the team), not hers alone."
+    ],
+    "left_out": [
+      "Core Centering classes and Core Centering Practitioner certification (starts 29 Oct 2026): SCA staff-led, trauma-informed and stress framing; certification already started.",
+      "Cross Mapping Method and Sensation-Based Motivation Coaching certifications: framed around chronic pain and trauma.",
+      "The Success Blind Spot free training (29 Oct 2026): passed.",
+      "Manifestation for Dummies local book talk (24 Nov 2026): no venue page or price; minor.",
+      "$100K Business Strategy and other deep dives: business coaching, and they share one page with the purpose deep dive.",
+      "SCA videos on healing the body, longevity, triggers, polyvagal theory and The Body Keeps the Score: health or therapy framing.",
+      "Podcast interview on 'Autoimmune Hour' linked from her site: condition named.",
+      "Meditation: Simple Guide to Beginning Practice: by Brian Trzaskos alone."
+    ]
+  },
+  "images_final": true
+}

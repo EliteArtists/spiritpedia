@@ -1,0 +1,136 @@
+{
+  "healer": {
+    "healer_slug": "aruni-nan-futuronsky",
+    "create": {
+      "name": "Aruni Nan Futuronsky",
+      "bio": "Aruni Nan Futuronsky began teaching in 1970 and joined the senior faculty of Kripalu Center for Yoga & Health in western Massachusetts in 1990, where she is now one of its legacy faculty. Her field is what Kripalu calls Living Yoga, or yoga off the mat: taking the practice of watching oneself without judgement into everyday choices, relationships and setbacks. From 1995 to 2015 she directed the Inner Quest Intensive, the centre's long-running self-discovery programme drawn from the teaching of Swami Kripalu, and she still leads it today. A long personal commitment to a twelve-step programme sits beside her yoga practice, and she sees the two paths as closely parallel.\n\nShe also works as a mindfulness coach. In phone sessions clients name the areas where they want to grow, look honestly at what gets in the way and leave with a practical plan, and she offers one-to-one spiritual mentoring and mentoring for people who lead groups. Her teaching leans on humour, gratitude and compassion, with plenty of guided meditation. She has written three books, the spiritual memoir Recovering My Voice, then Not Over Yet and Already Home: Stories of a Seeker, recorded a CD of guided meditations called Life~Works, and sends out a weekly blog and newsletter.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local_online",
+      "city": "Stockbridge",
+      "country": "United States",
+      "subjects": [
+        "mindfulness",
+        "yoga",
+        "meditation"
+      ],
+      "website_url": "https://coacharuni.com/",
+      "booking_url": "https://coacharuni.com/services-offered/",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "thecoacharuni@gmail.com",
+      "image_urls": [
+        "https://kripalu.org/sites/default/files/2015-10/Aruni%2520Nan%2520Futuronsky%25202025.jpg",
+        "https://coacharuni.com/wp-content/uploads/2025/03/IMG_5015_jpg-scaled.jpg",
+        "https://coacharuni.com/wp-content/uploads/2025/03/Aruni-profile-pic-2.png"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "kripalu",
+      "role": "instructor"
+    }
+  ],
+  "videos": [
+    {
+      "title": "The Power and Practice of Presence",
+      "url": "https://www.youtube.com/watch?v=_TQiVsgOuQI",
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "channel": "Concordia University"
+    },
+    {
+      "title": "Meditation for Relaxing Into the Unknown with Aruni Nan Futuronksy",
+      "url": "https://www.youtube.com/watch?v=Vb6vLc3QHjo",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "channel": "Kripalu"
+    }
+  ],
+  "books": [
+    {
+      "title": "Recovering My Voice: A Memoir of Chaos, Spirituality, and Hope",
+      "slug": "recovering-my-voice-a-memoir-of-chaos-spirituality-and-hope",
+      "author": "Aruni Nan Futuronsky",
+      "asin": "1440109885",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "Her first book, a spiritual memoir published in 2008 around her sixtieth birthday. It follows her path from years of silence and isolation towards community, faith and finding her voice as a writer and teacher.",
+      "subjects": [
+        "spirituality",
+        "spiritual-awakening"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1440109885.01._SCLZZZZZZZ_.jpg"
+    }
+  ],
+  "courses": [
+    {
+      "title": "Inner Quest Intensive",
+      "url": "https://kripalu.org/experiences/inner-quest-intensive",
+      "description": "Kripalu's original self-discovery programme, which she directed for twenty years. Short teachings from Swami Kripalu's lineage alternate with experiential work for body, mind and heart, so participants can notice their habitual reactions and practise meeting them with compassion, and they leave with a simple plan for home practice.",
+      "price": "$420 USD tuition plus lodging",
+      "product_type": "retreat",
+      "start_date": "2027-01-15",
+      "end_date": "2027-01-18",
+      "subjects": [
+        "yoga",
+        "mindfulness",
+        "spirituality"
+      ],
+      "image": "https://kripalu.org/sites/default/files/styles/og_image/public/2025-10/0182_Kripalu_0321_Tricia_McCormack_Photography-min.jpg?itok=9DEkwKU7"
+    },
+    {
+      "title": "Life~Works Mindfulness Coaching and Mentoring",
+      "url": "https://coacharuni.com/services-offered/",
+      "description": "Forty-five-minute phone sessions, weekly, fortnightly or monthly, with email support in between, built around goals the client chooses. The same page offers packages of spiritual mentoring and of mentoring in group facilitation for teachers and practitioners.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "mindfulness",
+        "life-coaching",
+        "spirituality"
+      ],
+      "image": "https://kripalu.org/sites/default/files/2015-10/Aruni%2520Nan%2520Futuronsky%25202025.jpg"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "hub": "kripalu",
+    "rank": 42,
+    "hub_url": "https://kripalu.org/people/aruni-nan-futuronsky",
+    "tier_evidence": "No social accounts linked from her site or Kripalu page and no YouTube channel of her own found (1 Nov 2026); counts unreadable / none → 0 total → local_hero",
+    "email": "yes",
+    "email_source": "https://coacharuni.com/",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 9 source(s)",
+    "flags": [
+      "No social accounts found, so the follower total is 0; local_hero on that basis.",
+      "Recovering My Voice: ISBN-10 1440109885 from Open Library; the amazon.com /dp/ page returned 500 to curl and WebFetch, so the listing was not opened. Her shop marks all her books 'temporarily unavailable'. The memoir's own blurb describes a path from addiction to sobriety; the plan's description does not name it.",
+      "City set to Stockbridge (where she teaches at Kripalu); her site says only that she lives in western Massachusetts. Coaching is by phone.",
+      "Email is a Gmail address published as 'Email Coach Aruni' in her site header; there is also a contact page.",
+      "Video title keeps Kripalu's misspelling 'Futuronksy' as published.",
+      "Both videos are on other channels (Concordia University, Kripalu) where she is the sole teacher."
+    ],
+    "left_out": [
+      "Grief, Loss, and Renewal (Kripalu, 5 to 7 Mar 2027): framed as healing from grief, left out under the health-claim rule.",
+      "Already Home: Stories of a Seeker and Not Over Yet: no ISBN or Amazon listing could be verified.",
+      "Life~Works: Meditations for Mindful Living CD: sold from her own shop, not on Amazon; one track is titled 'Healing'.",
+      "Her site's video resources (Mindful Change, Creating Intentions and others): hosted on Vimeo, not YouTube; 'Outliving Cravings' is addiction-framed.",
+      "Kripalu clips 'How to Manage Food Cravings' and 'Aruni's Stress Relief Practices': condition framing and under two minutes.",
+      "Podcast episodes on Donna Y. Ferris's channel: tagged #addictionrecovery and she is the guest of a short series; left out.",
+      "Kripalu 'Love Story' clips with Rasmani Orth: personal, not teaching."
+    ]
+  },
+  "images_final": true
+}

@@ -1,0 +1,197 @@
+{
+  "healer": {
+    "healer_slug": "shauna-cummins",
+    "create": {
+      "name": "Shauna Cummins",
+      "bio": "Shauna Cummins is a hypnotist, artist and teacher based in New York who treats hypnosis as a practice of the imagination with roots in ritual as well as in modern brain science. Certified by the National Guild of Hypnotists since 2012, she has built a private practice, a training school for new hypnotists and a body of sound and performance work shown in galleries and festivals in Europe and the United States. Her own method, WishCraft, pairs self-hypnosis with the old human habit of making wishes: students learn to quiet the mind, form clear intentions and wish well for others as readily as for themselves, so that manifestation becomes a shared and generous act rather than a solitary push.\n\nHer 2021 book, WishCraft, sets the method out in full, and she teaches it through a short self-paced course, longer one-to-one mentorships, group ceremonies on Zoom and recorded trance journeys. She founded the Divine Feminine School of Hypnosis, which trains practitioners online, and makes hypnotic soundscapes with the trio GIVNG. She lives in upstate New York and works with people in New York City, the Hudson Valley and online, and leads winter retreats at Kripalu built around a communal wishing well.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local_online",
+      "city": "New York",
+      "country": "United States",
+      "subjects": [
+        "manifestation",
+        "meditation",
+        "law-of-attraction"
+      ],
+      "website_url": "https://www.shaunacummins.com/",
+      "booking_url": "https://www.shaunacummins.com/prices-faq",
+      "youtube_url": null,
+      "instagram_url": "https://www.instagram.com/thewishcraft/",
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "info@shaunacummins.com",
+      "image_urls": [
+        "https://kripalu.org/sites/default/files/styles/og_image/public/2025-05/shauna-cummins_2025v2.jpg?itok=UH_pRcwM",
+        "https://images.squarespace-cdn.com/content/v1/57463b2c5559862c844ab169/1608022110517-ZLCUN590UWVVFU22AAFB/SC-portrait-standard_copy-2_-_shauna_cummins_large.jpg"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "kripalu",
+      "role": "instructor"
+    }
+  ],
+  "videos": [
+    {
+      "title": "#238 - Manifesting Creativity with Shauna Cummins",
+      "url": "https://www.youtube.com/watch?v=5ZxjgyWJu0o",
+      "subjects": [
+        "manifestation"
+      ],
+      "channel": "Kobo Writing Life"
+    },
+    {
+      "title": "THE MIDDLE: Episode 26 Shauna Cummins ‘Wish Craft’",
+      "url": "https://www.youtube.com/watch?v=rI9URgKPiYg",
+      "subjects": [
+        "manifestation",
+        "meditation"
+      ],
+      "channel": "Ashley Bellman"
+    },
+    {
+      "title": "50 Shauna Cummins - Wishcraft & mind massaging",
+      "url": "https://www.youtube.com/watch?v=m08rCl90OVQ",
+      "subjects": [
+        "manifestation",
+        "meditation"
+      ],
+      "channel": "Rachael Welford"
+    }
+  ],
+  "books": [
+    {
+      "title": "WishCraft: A Guide to Manifesting a Positive Future",
+      "slug": "wishcraft-a-guide-to-manifesting-a-positive-future",
+      "author": "Shauna Cummins",
+      "asin": "1784883492",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "Shauna Cummins's guide to her WishCraft method, which uses simple self-hypnosis to give wishes more focus and staying power. It covers calming the mind, shaping different kinds of wishes and extending good wishes to other people and the wider world.",
+      "subjects": [
+        "manifestation",
+        "law-of-attraction",
+        "meditation"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1784883492.01._SCLZZZZZZZ_.jpg"
+    }
+  ],
+  "courses": [
+    {
+      "title": "The Wishing Well: A WishCraft and Manifestation Retreat",
+      "url": "https://kripalu.org/experiences/wishing-well-wishcraft-and-manifestation-retreat",
+      "description": "A winter weekend at Kripalu in Stockbridge, Massachusetts, built around Shauna's WishCraft method. Guests practise self-hypnosis, guided imagery, journaling and shared wishing rituals, with a Saturday evening sound journey by her trio GIVNG.",
+      "price": "$370 USD tuition plus lodging",
+      "product_type": "retreat",
+      "start_date": "2026-12-04",
+      "end_date": "2026-12-06",
+      "subjects": [
+        "manifestation",
+        "meditation"
+      ],
+      "image": "https://kripalu.org/sites/default/files/styles/og_image/public/2026-07/Untitled%20design%20-%202026-07-09T110701.992.png?itok=ecDKzGnH"
+    },
+    {
+      "title": "Wishcraft 101: Crafting your Wishes into Action",
+      "url": "https://www.shaunacummins.com/wishcraft101",
+      "description": "A self-paced introduction to WishCraft: a two-hour recorded workshop, a seven-day email course and a workbook. It also includes a recorded binaural trance for daily practice.",
+      "price": "$55 USD",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "manifestation",
+        "meditation"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/57463b2c5559862c844ab169/1606156443613-XLLRSVSPYQXOR03G4TMV/shaunacummings-visual-exploration-34.png?format=1500w"
+    },
+    {
+      "title": "WishCraft Mentorship Program",
+      "url": "https://www.shaunacummins.com/wishcraft-mentorship-program",
+      "description": "A year of one-to-one mentoring on Zoom, with two sessions a month, for people who want to build a steady self-hypnosis and manifestation practice. Guest events are included, and applications are taken on a rolling basis.",
+      "price": "$5,000 USD",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "manifestation",
+        "life-coaching"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/57463b2c5559862c844ab169/1606156443613-XLLRSVSPYQXOR03G4TMV/shaunacummings-visual-exploration-34.png?format=1500w"
+    },
+    {
+      "title": "WishCraft Ceremony and Personal Program",
+      "url": "https://www.shaunacummins.com/prices-faq",
+      "description": "Private WishCraft work with Shauna online or in person. The single ceremony is a ninety-minute guided session with a recording; the one-month Personal Program adds two longer sessions, a follow-up call and access to her monthly group ceremony.",
+      "price": "$375 USD (90-minute ceremony)",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "manifestation",
+        "meditation"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/57463b2c5559862c844ab169/1606156443613-XLLRSVSPYQXOR03G4TMV/shaunacummings-visual-exploration-34.png?format=1500w"
+    },
+    {
+      "title": "Better Every Day (recorded hypnosis meditation)",
+      "url": "https://shaunacumminshypnosis.bandcamp.com/track/better-every-day",
+      "description": "A recorded guided trance by Shauna with a binaural soundtrack, meant to be played as a daily practice. It is sold as a pay-what-you-like digital download.",
+      "price": "$1 USD or more",
+      "product_type": "download",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "manifestation"
+      ],
+      "image": "https://kripalu.org/sites/default/files/styles/og_image/public/2025-05/shauna-cummins_2025v2.jpg?itok=UH_pRcwM"
+    },
+    {
+      "title": "Wishcraft Invocation (recorded hypnosis journey)",
+      "url": "https://shaunacumminshypnosis.bandcamp.com/track/wishcraft-invocation",
+      "description": "A short recorded WishCraft journey that guides the listener into a relaxed state to set and send out a wish. Sold as a pay-what-you-like digital track.",
+      "price": "$1 USD or more",
+      "product_type": "download",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "manifestation",
+        "meditation"
+      ],
+      "image": "https://m.media-amazon.com/images/P/1784883492.01._SCLZZZZZZZ_.jpg"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "hub": "kripalu",
+    "rank": 53,
+    "hub_url": "https://kripalu.org/people/shauna-cummins",
+    "tier_evidence": "Instagram @thewishcraft 6,177 (og:description, 1 Nov 2026); no YouTube channel, Facebook, X or TikTok linked from her site → ~6.2k total → local_hero",
+    "email": "yes",
+    "email_source": "https://www.shaunacummins.com/",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 15 source(s)",
+    "flags": [
+      "Owner to judge: she describes herself as a clinical hypnosis practitioner and her standard hypnosis sessions are sold on conditions (pain, smoking, weight, sleep, anxiety, depression). Those sessions and her hypnotherapy certification school are left out; the listing rests on WishCraft, her manifestation method, which is how Kripalu presents her.",
+      "Book ASIN 1784883492 is the amazon.com link on her own book page; amazon.com /dp/ returned 500 to curl and WebFetch, so the listing was not opened.",
+      "Videos are low-view podcast interviews on other channels where she is the guest and explains WishCraft; she has no YouTube channel of her own.",
+      "Availability local_online with New York as city: she lives in upstate New York and sees people in New York City and the Hudson Valley as well as on Zoom.",
+      "Kripalu retreat starts 4 Dec 2026, after the 3 Nov cut-off, so it is kept."
+    ],
+    "left_out": [
+      "Hypnosis sessions and packages ($200 to $5,500): sold on pain, smoking, weight loss, sleep, anxiety and depression.",
+      "Divine Feminine School of Hypnosis certification (online cohort January 2027) and its intro bundle and portal membership: a hypnotherapy certification with therapeutic framing.",
+      "Future of Hypnosis Conference replay: includes trauma, hypnobirthing and therapy sessions.",
+      "Group hypnosis sessions and wedding officiant services: not teaching.",
+      "Wishcraft Ritual Incantation (Bandcamp): a third short track, left out to avoid near-duplicate items.",
+      "Upcoming events page: only 2022 and 2023 events, all passed.",
+      "Wishcraft Journal pre-order: not yet published, no Amazon listing."
+    ]
+  },
+  "images_final": true
+}

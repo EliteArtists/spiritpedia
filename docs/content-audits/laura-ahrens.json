@@ -1,0 +1,164 @@
+{
+  "healer": {
+    "healer_slug": "laura-ahrens",
+    "create": {
+      "name": "Laura Ahrens",
+      "bio": "Laura Ahrens is a yoga teacher and scholar of Indian religion whose classes put philosophy at the centre of practice. She came to yoga after training in theatre, then studied Sanskrit and Indian thought for a master's degree at Rutgers, and she is now a doctoral candidate in religion at the University of Florida, where her research centres on yoga and Hindu traditions. Alongside that academic work she holds certification as a yoga therapist through the International Association of Yoga Therapists and has taught continuously for around fifteen years. For some years she ran The New School of Yogic Arts, a teacher training that leaned heavily on the classical texts.\n\nHer teaching treats the mat as a mirror: posture, breath and meditation are used to see habits of mind clearly, and the texts are read slowly and in context rather than as slogans. She runs an online membership with monthly live classes and a large archive of recordings, and a yearlong immersion that works through the Yoga Sutras, the Bhagavad Gita and the Hatha Yoga Pradipika with practical application. She values community as a support for steady practice, and she leads weekend programmes at Kripalu and occasional in-person workshops and retreats in New England.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "worldwide",
+      "city": null,
+      "country": null,
+      "subjects": [
+        "yoga",
+        "ancient-wisdom",
+        "meditation"
+      ],
+      "website_url": "https://www.ahrens.yoga",
+      "booking_url": "https://www.ahrens.yoga/join",
+      "youtube_url": "https://www.youtube.com/@ahrensyoga",
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "laura@ahrens.yoga",
+      "image_urls": [
+        "https://kripalu.org/sites/default/files/2023-01/AhrensLaura.png"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "kripalu",
+      "role": "instructor"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Free Flow (Releasing Grasping, 45 Min)",
+      "url": "https://www.youtube.com/watch?v=xzJ5cmVIpfY",
+      "subjects": [
+        "yoga"
+      ],
+      "channel": "Laura Ahrens Yoga"
+    },
+    {
+      "title": "Training Tapas (Yogic Discipline, 20 Mins)",
+      "url": "https://www.youtube.com/watch?v=f8brzaJzVKQ",
+      "subjects": [
+        "yoga",
+        "ancient-wisdom"
+      ],
+      "channel": "Laura Ahrens Yoga"
+    },
+    {
+      "title": "Grace in Transition",
+      "url": "https://www.youtube.com/watch?v=IDHbkhm0C3g",
+      "subjects": [
+        "yoga"
+      ],
+      "channel": "Laura Ahrens Yoga"
+    },
+    {
+      "title": "Practicing Peace",
+      "url": "https://www.youtube.com/watch?v=Yb-4hVsJ4ak",
+      "subjects": [
+        "yoga",
+        "meditation"
+      ],
+      "channel": "Laura Ahrens Yoga"
+    },
+    {
+      "title": "Express Energy (20 Min)",
+      "url": "https://www.youtube.com/watch?v=PBaOwFLuvBk",
+      "subjects": [
+        "yoga"
+      ],
+      "channel": "Laura Ahrens Yoga"
+    },
+    {
+      "title": "More Hips, Core, and Pelvic Floor (~30 Min)",
+      "url": "https://www.youtube.com/watch?v=kx6In5tvWJ4",
+      "subjects": [
+        "yoga"
+      ],
+      "channel": "Laura Ahrens Yoga"
+    },
+    {
+      "title": "Teeny Tiny Practice (20 Min)",
+      "url": "https://www.youtube.com/watch?v=SbFFjeNAfjo",
+      "subjects": [
+        "yoga"
+      ],
+      "channel": "Laura Ahrens Yoga"
+    }
+  ],
+  "books": [],
+  "courses": [
+    {
+      "title": "Yoga for Vitality: A Weekend of Movement, Breath, and Meditation for Deep Renewal",
+      "url": "https://kripalu.org/experiences/yoga-vitality-weekend-movement-breath-and-meditation-deep-renewal",
+      "description": "A weekend at Kripalu in Stockbridge, Massachusetts, built on four strands: postural practice, pranayama, meditation and yogic philosophy. Each session is meant to leave participants with simple practices they can keep using at home; an online option is also offered.",
+      "price": "$350 USD plus accommodation",
+      "product_type": "retreat",
+      "start_date": "2026-11-06",
+      "end_date": "2026-11-08",
+      "subjects": [
+        "yoga",
+        "meditation",
+        "breathwork"
+      ],
+      "image": "https://kripalu.org/sites/default/files/styles/og_image/public/2025-08/GettyImages-869774804_fallyoga_hero.jpg?itok=c75D7FGh"
+    },
+    {
+      "title": "Steadfast Sādhanā Yearlong Immersion",
+      "url": "https://www.ahrens.yoga/yearlong",
+      "description": "A year of mostly weekly online sessions through 2027 that read the Yoga Sutras, the Bhagavad Gita and the Hatha Yoga Pradipika closely, with Laura's notes on the Sanskrit. Study is paired with guidance on building a daily practice, and every session is recorded for the members' portal.",
+      "price": "$600 USD (or 3 payments of $200 USD)",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "ancient-wisdom",
+        "yoga"
+      ],
+      "image": "http://static1.squarespace.com/static/5ca67477f8135a53230abfce/t/5d1e6c8c3216d20001b409e7/1562274957680/Favicon.png?format=1500w"
+    },
+    {
+      "title": "Laura Ahrens Yoga Membership",
+      "url": "https://www.ahrens.yoga/join",
+      "description": "An online membership with live virtual classes each month and an archive of several hundred recorded classes. Financial help is available on request.",
+      "price": "$30 USD per month or $120 USD per six months",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga",
+        "meditation"
+      ],
+      "image": "http://static1.squarespace.com/static/5ca67477f8135a53230abfce/t/5d1e6c8c3216d20001b409e7/1562274957680/Favicon.png?format=1500w"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "hub": "kripalu",
+    "rank": 56,
+    "hub_url": "https://kripalu.org/people/laura-ahrens",
+    "tier_evidence": "YouTube @ahrensyoga 79 subscribers (channel header, 1 Nov 2026); no Instagram, Facebook, X or TikTok account linked from her site or found by search → ~79 total → local_hero",
+    "email": "yes",
+    "email_source": "https://www.ahrens.yoga",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 6 source(s)",
+    "flags": [
+      "Only one photo confirmed (Kripalu headshot); site images are a conference flyer and faceless action shots.",
+      "Availability set to worldwide: she teaches mainly online and holds occasional in-person workshops in Massachusetts and Vermont, but no fixed studio base is published.",
+      "Thin listing: one hub programme, two online offerings and seven short YouTube classes."
+    ],
+    "left_out": [
+      "Kripalu Mother-Daughter Yoga Weekend (May 2027) on her calendar: not yet listed on Kripalu's site, and her hub programmes count once.",
+      "Deeper Yoga Philosophy free lecture (28 Jul 2026), Metta Earth retreat (Jul 2026), Ride The Wave workshop (Jul 2026), IAYT Symposium talk (Jun 2026): dated and passed.",
+      "Kripalu articles by her: hub content, not her own resources."
+    ]
+  },
+  "images_final": true
+}

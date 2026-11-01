@@ -1,0 +1,140 @@
+{
+  "healer": {
+    "healer_slug": "james-bae",
+    "create": {
+      "name": "Dr. James Bae",
+      "bio": "Dr. James Bae is a Brooklyn-based teacher of Tibetan Buddhist yoga, with a particular focus on the inner yogas of tsalung trulkhor, the movement and breath practices that work with the subtle channels and winds, and tummo, the practice of inner heat. Over some twenty-five years he has received these completion-stage teachings in several Nyingma and Kagyu lineages and is authorised to pass them on, chiefly the Dakini Heart Essence (Khandro Thukthik) cycle of the Dudjom tradition under Dungse Namgay Dawa Rinpoche. He also studied traditional Indian yoga as a young researcher with the scholar Georg Feuerstein, and trained in Chinese, Japanese, Ayurvedic and Tibetan medicine, which he practises separately as a licensed doctor of Chinese medicine.\n\nHis teaching ranges from gentle, adapted forms of Tibetan yoga for newcomers to traditional retreat instruction for experienced Vajrayana students, and he leads intensives and retreats in New York, at Buddhist centres and abroad, including pilgrimages to sacred sites in Nepal. On his Buddhist Yoga channel he records conversations with scholars and lamas on dream yoga, tantra and Buddhist healing traditions. He has written or edited a number of books, among them illustrated studies of Hindu sacred art, and is working on a study of contemplative healing.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local",
+      "city": "New York",
+      "country": "United States",
+      "subjects": [
+        "yoga",
+        "meditation",
+        "ancient-wisdom"
+      ],
+      "website_url": "https://drjamesbae.com/",
+      "booking_url": "https://drjamesbae.com/yoga",
+      "youtube_url": "https://www.youtube.com/channel/UCXIiQOvVRrPuylf_UYxH8XA",
+      "instagram_url": "https://www.instagram.com/buddhist_yoga/",
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "drjamesbae@gmail.com",
+      "image_urls": [
+        "https://img1.wsimg.com/isteam/ip/b2781cd1-3612-48d3-b23a-2383dc87efa4/Bae-2020-046.jpeg",
+        "https://yt3.googleusercontent.com/KapgY_KHfioc9O84wBddfyPVS98T9iFkwONx9pYY7ODkfOMWRj6vIe7CgOQbckY1D75aK4PLShA=s900-c-k-c0x00ffffff-no-rj"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "kripalu",
+      "role": "instructor"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Tummo, Tibetan Yoga and Meditation",
+      "url": "https://www.youtube.com/watch?v=SZ00-qSY5Vk",
+      "subjects": [
+        "yoga",
+        "meditation",
+        "breathwork"
+      ],
+      "channel": "Buddhist Yoga"
+    },
+    {
+      "title": "Overview of Research on Tantric Meditation",
+      "url": "https://www.youtube.com/watch?v=7c3PHDZr_lw",
+      "subjects": [
+        "meditation",
+        "conscious-science"
+      ],
+      "channel": "Buddhist Yoga"
+    },
+    {
+      "title": "Four Noble Truths and Eightfold Path",
+      "url": "https://www.youtube.com/watch?v=5YWZyZVX7To",
+      "subjects": [
+        "ancient-wisdom",
+        "meditation"
+      ],
+      "channel": "Buddhist Yoga"
+    },
+    {
+      "title": "Ninefold Breathing",
+      "url": "https://www.youtube.com/watch?v=GY3RoP9OIYQ",
+      "subjects": [
+        "breathwork",
+        "yoga"
+      ],
+      "channel": "Buddhist Yoga"
+    }
+  ],
+  "books": [
+    {
+      "title": "In a World of Gods and Goddesses: The Mystic Art of Indra Sharma",
+      "slug": "in-a-world-of-gods-and-goddesses",
+      "author": "James H. Bae",
+      "asin": "1608875431",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "An illustrated book pairing the devotional paintings of the Indian artist Indra Sharma with James Bae's commentary. It introduces the deities of the Hindu tradition and the stories and symbolism behind each image.",
+      "subjects": [
+        "ancient-wisdom",
+        "spirituality"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1608875431.01._SCLZZZZZZZ_.jpg"
+    }
+  ],
+  "courses": [],
+  "free_resources": [
+    {
+      "title": "Tibetan Yoga Practice Videos",
+      "url": "https://drjamesbae.com/yoga",
+      "description": "A free page of short demonstration videos on James's site covering gentle Tibetan yoga movements, self-massage from the Yuthok tradition and a traditional purification breath. They work as an introduction to the outer yoga that prepares for tsalung practice.",
+      "featured": true,
+      "resource_type": "practice",
+      "subjects": [
+        "yoga",
+        "breathwork"
+      ],
+      "image": "https://img1.wsimg.com/isteam/ip/b2781cd1-3612-48d3-b23a-2383dc87efa4/IMG_1158taller%20escrituraIKAL-2.jpeg"
+    }
+  ],
+  "sprint": {
+    "hub": "kripalu",
+    "rank": 55,
+    "hub_url": "https://kripalu.org/people/james-bae",
+    "tier_evidence": "Instagram @buddhist_yoga 3,480 (og:description, 1 Nov 2026); YouTube @buddhistyoga 674 (channel header, 1 Nov 2026); no other accounts linked → ~4.2k total → local_hero",
+    "email": "yes",
+    "email_source": "https://drjamesbae.com/",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 8 source(s)",
+    "flags": [
+      "Owner to judge whether he fits: his main profession is a licensed acupuncture and Chinese medicine practice (separate clinic site baeacupncture.com, left out), but drjamesbae.com is devoted to his Tibetan yoga teaching, for which he holds lineage authorisation.",
+      "His only Kripalu programme, Doorways of the Heart (1 to 4 Jan 2027, $405 USD tuition plus lodging), is framed around transforming grief and healing (URL slug 'tibetan-yoga-grief-resilience-and-empowerment'); borderline under the grief rule, so it is left out, but it keeps him on current Kripalu faculty.",
+      "No current paid offerings of his own: every 2026 date on his site has passed, the Nepal pilgrimage was December 2025, and his new site TRIVAJRA.com is 'coming soon'. The page rests on videos, one book and a free practice page.",
+      "He teaches at Esalen too (May 2026, passed), not added to teaches_at as there is no current programme there.",
+      "Name kept as 'Dr. James Bae': he presents himself as Dr. James Bae (site domain and Kripalu programme page).",
+      "Four Noble Truths and Eightfold Path video: on his own channel, but the speaker was not confirmed (watch pages rate-limited); most other channel videos are interviews where guests do the talking and were left out.",
+      "He says he has published over ten books; only one could be opened on amazon.com (others returned 500), so only that one is listed.",
+      "Availability set to local: he has a Brooklyn base (Contemplative Healing - Indo-Tibetan Yoga Studies, 102 S. 6th Street) and teaches in person; no ongoing online class found.",
+      "Kripalu headshot crops out his face, so it was not used."
+    ],
+    "left_out": [
+      "Doorways of the Heart at Kripalu (1 to 4 Jan 2027): framed on grief and healing.",
+      "Acupuncture and Chinese medicine clinic services: medical.",
+      "Dharma of Grieving page and caregiver burnout meditations: framed on grief and compassion fatigue.",
+      "TraumaBuddhistYogaTherapy video and his trauma-informed yoga therapy trainings: trauma treatment framing.",
+      "2026 retreats (Boulder, Esalen, Mexico, NYC, Menla, Thekchen Choling) and the Nepal pilgrimage (Dec 2025): dates have passed.",
+      "Interviews he hosts on his channel (Michael Sheehy, Lama Glenn Mullin, Jason Birch and others): the guest is the main speaker.",
+      "Shiva, Krishna, Ganesh and Devi (Mandala minibooks) and Medicine Tree: amazon.com /dp/ pages returned 500, not verified.",
+      "Vimeo practice videos: not YouTube (linked instead through the free practice page)."
+    ]
+  },
+  "images_final": true
+}

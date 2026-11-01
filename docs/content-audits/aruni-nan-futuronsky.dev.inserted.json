@@ -1,0 +1,45 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 490,
+    "healer_slug": "aruni-nan-futuronsky"
+  },
+  "rows": [
+    {
+      "table": "videos",
+      "id": 5311,
+      "slug": "the-power-and-practice-of-presence",
+      "title": "The Power and Practice of Presence"
+    },
+    {
+      "table": "videos",
+      "id": 5312,
+      "slug": "meditation-for-relaxing-into-the-unknown-with-aruni-nan-futuronksy",
+      "title": "Meditation for Relaxing Into the Unknown with Aruni Nan Futuronksy"
+    },
+    {
+      "table": "books",
+      "id": 1639,
+      "slug": "recovering-my-voice-a-memoir-of-chaos-spirituality-and-hope",
+      "title": "Recovering My Voice: A Memoir of Chaos, Spirituality, and Hope"
+    },
+    {
+      "table": "courses",
+      "id": "115f2042-54b8-4950-95ee-2384f025b038",
+      "slug": "inner-quest-intensive",
+      "title": "Inner Quest Intensive"
+    },
+    {
+      "table": "courses",
+      "id": "084a13ca-fdad-4e45-bf61-b4464338f62b",
+      "slug": "lifeworks-mindfulness-coaching-and-mentoring",
+      "title": "Life~Works Mindfulness Coaching and Mentoring"
+    },
+    {
+      "table": "hub_teachers",
+      "id": "aed5e334-448d-479b-a3e5-cf3519eb9a0b",
+      "title": "aruni-nan-futuronsky teaches at Kripalu Center for Yoga & Health"
+    }
+  ],
+  "at": "2026-11-01T14:29:24.000Z"
+}

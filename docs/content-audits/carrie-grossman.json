@@ -1,0 +1,128 @@
+{
+  "healer": {
+    "healer_slug": "carrie-grossman",
+    "create": {
+      "name": "Carrie Grossman",
+      "bio": "Carrie Grossman, who also uses the spiritual name Dayashila, is a singer and composer of devotional music based in Great Barrington, in the Berkshires of Massachusetts. She came to kirtan, the call-and-response chanting of the Indian bhakti tradition, on a first journey to India in her early twenties, after studying at Brown University, and has spent more than two decades since then learning and sharing sacred sound. Her recordings of Sanskrit mantras and hymns include the albums Pranam, Homeward, The Ram Sessions and Soma-Bandhu: Friend of the Moon.\n\nHer teaching mixes chant with meditation and reflective talks on the inner life. On Insight Timer, where she has shared her work since 2016, she gives talks on bhakti as the yoga of love, on spiritual bypassing and on honouring the sacred feminine, alongside a ten-day course on opening the heart through mantra, and she has recorded a spoken telling of the life of the Buddha. She leads kirtan evenings in the Berkshires and at Kripalu guides retreats that combine heart-centred meditation, music and chanting with time for rest and inquiry.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local_online",
+      "city": "Great Barrington",
+      "country": "United States",
+      "subjects": [
+        "sound-healing",
+        "meditation",
+        "spirituality"
+      ],
+      "website_url": "https://www.carriegmusic.com/",
+      "booking_url": "https://www.carriegmusic.com/",
+      "youtube_url": "https://www.youtube.com/@carriegmusic",
+      "instagram_url": "https://www.instagram.com/carriegmusic/",
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "info@carriegmusic.com",
+      "image_urls": [
+        "https://kripalu.org/sites/default/files/2019-06/GrossmanC_1.jpg",
+        "https://yt3.googleusercontent.com/vFMg_aFdkvTS8RmNBQOrxG4HakWMJh2LaDzTsUDm27sqWdGw0z7_WiEN0-5PrbnGx_qCbniI=s900-c-k-c0x00ffffff-no-rj"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "kripalu",
+      "role": "instructor"
+    },
+    {
+      "hub": "insight-timer",
+      "role": "instructor"
+    }
+  ],
+  "videos": [
+    {
+      "title": "The Life of Buddha - Narrated by Carrie Grossman",
+      "url": "https://www.youtube.com/watch?v=T7erX---jKs",
+      "subjects": [
+        "spirituality",
+        "ancient-wisdom",
+        "meditation"
+      ],
+      "channel": "Carrie Grossman "
+    }
+  ],
+  "books": [],
+  "courses": [
+    {
+      "title": "Mysteries of the Heart: A Journey into Love, Devotion, and the Deeper Self",
+      "url": "https://kripalu.org/experiences/mysteries-heart-journey-love-devotion-and-deeper-self",
+      "description": "A long weekend at Kripalu that looks at the heart from relational, energetic and spiritual angles. Sessions combine teaching, meditation, chanting and music, and include a sound journey for deep rest.",
+      "price": "$399 USD tuition plus lodging",
+      "product_type": "retreat",
+      "start_date": "2027-03-18",
+      "end_date": "2027-03-21",
+      "subjects": [
+        "sound-healing",
+        "meditation",
+        "spirituality"
+      ],
+      "image": "https://kripalu.org/sites/default/files/styles/og_image/public/2025-08/Connect%2520to%2520Your%2520Hearts%2520Longing%2520Hero.png?itok=1USIEb2a"
+    },
+    {
+      "title": "Awaken The Heart Through Chanting & Mantras",
+      "url": "https://insighttimer.com/meditation-courses/course_awaken-the-heart-through-chanting-and-mantras",
+      "description": "A ten-day Insight Timer course on bhakti, the devotional path. Daily sessions of about seventeen minutes move through chanting, japa, remembrance of the divine, self-compassion and selfless service, each with a short practice.",
+      "price": "Included in Member Plus",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "sound-healing",
+        "spirituality"
+      ],
+      "image": "https://kripalu.org/sites/default/files/2019-06/GrossmanC_1.jpg"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Carrie Grossman on Insight Timer",
+      "url": "https://insighttimer.com/carrieg108",
+      "description": "Her Insight Timer profile, with recorded talks on bhakti, devotion and the inner life, guided practices and many of her chants. Most tracks can be played free in the app or browser.",
+      "featured": true,
+      "resource_type": "meditation",
+      "subjects": [
+        "sound-healing",
+        "meditation",
+        "spirituality"
+      ],
+      "image": "https://kripalu.org/sites/default/files/2019-06/GrossmanC_1.jpg"
+    }
+  ],
+  "sprint": {
+    "hub": "kripalu",
+    "rank": 46,
+    "hub_url": "https://kripalu.org/people/carrie-grossman-dayashila",
+    "tier_evidence": "Insight Timer 57.3k followers (profile page, 1 Nov 2026); YouTube @carriegmusic 2.91k subscribers (channel header, 1 Nov 2026); Instagram @carriegmusic 2,010 (og:description, 1 Nov 2026); no Facebook page found → ~62.2k total → local_hero",
+    "email": "yes",
+    "email_source": "https://www.carriegmusic.com/",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 4 source(s)",
+    "flags": [
+      "Listed as Carrie Grossman (slug carrie-grossman); Kripalu shows her as Carrie Grossman (Dayashila), and Dayashila is mentioned in the bio.",
+      "Added insight-timer to teaches_at: she has an active Insight Timer profile (57.3k followers) and course; in insight-timer-faculty.json she was parked in Oct 2026 as 'not currently teaching / site not a practice', which her Kripalu retreat now contradicts.",
+      "Her website is a 'new website coming soon' holding page; it shows only the contact address and a link to the Kripalu retreat.",
+      "Mainly a devotional musician; included because she teaches bhakti through talks, a course and retreats, but a human may want to confirm she is a teacher rather than a music act.",
+      "Only one teaching video: the rest of her YouTube channel is chant recordings (music only).",
+      "City from her Insight Timer profile (Great Barrington, MA).",
+      "Insight Timer course price written as 'Included in Member Plus' following the Insight Timer sprint convention; the public page shows no price."
+    ],
+    "left_out": [
+      "Chant and kirtan recordings on YouTube (Guru Stotram, Ra Ma Da Sa, Lokah, Thy Will Be Done and others): music only.",
+      "Insight Timer talk 'Healing: A Return To Wholeness': healing framing, borderline; not listed separately (individual tracks are covered by the profile link).",
+      "Albums (Pranam, Homeward, The Ram Sessions, Soma-Bandhu) on Bandcamp and streaming: music, not books.",
+      "Kirtan evenings in the Berkshires: no current dated listing found.",
+      "Old bio site (celery-oleander-ap3h.squarespace.com) has expired."
+    ]
+  },
+  "images_final": true
+}

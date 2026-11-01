@@ -1,0 +1,51 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 500,
+    "healer_slug": "james-bae"
+  },
+  "rows": [
+    {
+      "table": "videos",
+      "id": 5352,
+      "slug": "tummo-tibetan-yoga-and-meditation",
+      "title": "Tummo, Tibetan Yoga and Meditation"
+    },
+    {
+      "table": "videos",
+      "id": 5353,
+      "slug": "overview-of-research-on-tantric-meditation",
+      "title": "Overview of Research on Tantric Meditation"
+    },
+    {
+      "table": "videos",
+      "id": 5354,
+      "slug": "four-noble-truths-and-eightfold-path",
+      "title": "Four Noble Truths and Eightfold Path"
+    },
+    {
+      "table": "videos",
+      "id": 5355,
+      "slug": "ninefold-breathing",
+      "title": "Ninefold Breathing"
+    },
+    {
+      "table": "books",
+      "id": 1647,
+      "slug": "in-a-world-of-gods-and-goddesses",
+      "title": "In a World of Gods and Goddesses: The Mystic Art of Indra Sharma"
+    },
+    {
+      "table": "free_resources",
+      "id": "42a4e255-587e-4c66-91fe-335a0286e194",
+      "slug": "tibetan-yoga-practice-videos",
+      "title": "Tibetan Yoga Practice Videos"
+    },
+    {
+      "table": "hub_teachers",
+      "id": "a4ae5162-9686-4162-8526-2bf2c6c717a9",
+      "title": "james-bae teaches at Kripalu Center for Yoga & Health"
+    }
+  ],
+  "at": "2026-11-01T14:30:25.676Z"
+}

@@ -1,0 +1,170 @@
+{
+  "healer": {
+    "healer_slug": "brant-secunda",
+    "create": {
+      "name": "Brant Secunda",
+      "bio": "Brant Secunda is a ceremonial leader in the Huichol (Wixárika) tradition of the Sierra Madre in western Mexico. As a young man he spent twelve years apprenticed to the Huichol elder Don José Matsuwa, completing long vision quests and fasts and joining him each year on the pilgrimage to Wirikuta, the high desert the Huichol regard as holy. In 1978 Don José named him a lineage holder and asked him to carry the tradition out into the wider world, and after the elder died in 1990, well past the age of a hundred, his widow gave Brant his medicine bundle.\n\nIn 1979 he started the Dance of the Deer Foundation, based in Santa Cruz, California, which organises his retreats, pilgrimages and vision quests and supports Huichol villages with supplies, money for ceremonies and an outlet for their art; he later founded the Huichol Foundation as well. His teaching centres on ceremony, prayer, the deer dance and a daily, practical relationship with the powers of nature, and he also offers recorded online workshops on the Huichol spiritual path. He has spoken at conferences around the world, helped found the Peace University in Berlin, and wrote Fit Soul, Fit Body with the triathlete Mark Allen.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local_online",
+      "city": "Santa Cruz",
+      "country": "United States",
+      "subjects": [
+        "shamanism",
+        "ancient-wisdom",
+        "spirituality"
+      ],
+      "website_url": "https://brantsecunda.com/",
+      "booking_url": "https://www.shamanism.com/programs",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": "https://www.facebook.com/brantsecunda/",
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "info@shamanism.com",
+      "image_urls": [
+        "https://brantsecunda.com/wp-content/uploads/2017/05/brant-secunda-huichol-shaman-portrait.jpg",
+        "https://kripalu.org/sites/default/files/2015-10/BrantSecunda_0.jpg",
+        "https://brantsecunda.com/wp-content/uploads/2017/05/brant-secunda-huichol-shaman-portrait-green.jpg"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "kripalu",
+      "role": "instructor"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Brant Secunda: The Healing Journey Of Huichol Shamanism",
+      "url": "https://www.youtube.com/watch?v=azR-GyoY3o4",
+      "subjects": [
+        "shamanism",
+        "ancient-wisdom"
+      ],
+      "channel": "Feathered Pipe Ranch"
+    },
+    {
+      "title": "Life Changing Encounters | Brant Secunda (Shaman)",
+      "url": "https://www.youtube.com/watch?v=dbHoMLBiq7s",
+      "subjects": [
+        "shamanism",
+        "spirituality"
+      ],
+      "channel": "Iris Hod"
+    },
+    {
+      "title": "2 Days with a Shaman",
+      "url": "https://www.youtube.com/watch?v=B9YHbNf0-rA",
+      "subjects": [
+        "shamanism"
+      ],
+      "channel": "OMTimes Media"
+    },
+    {
+      "title": "Why Everyone Isn't a Shaman",
+      "url": "https://www.youtube.com/watch?v=hZnUQmrWcyo",
+      "subjects": [
+        "shamanism"
+      ],
+      "channel": "Dance of the Deer Foundation"
+    },
+    {
+      "title": "Bridging ancient traditions of the Wixárika with the modern world",
+      "url": "https://www.youtube.com/watch?v=80uBqvJ8XSI",
+      "subjects": [
+        "shamanism",
+        "ancient-wisdom"
+      ],
+      "channel": "Dance of the Deer Foundation"
+    },
+    {
+      "title": "What is a Shaman",
+      "url": "https://www.youtube.com/watch?v=_Gwxlp9tiEE",
+      "subjects": [
+        "shamanism"
+      ],
+      "channel": "Dance of the Deer Foundation"
+    },
+    {
+      "title": "What is Shamanism",
+      "url": "https://www.youtube.com/watch?v=x3jUcZmawvQ",
+      "subjects": [
+        "shamanism",
+        "ancient-wisdom"
+      ],
+      "channel": "Dance of the Deer Foundation"
+    },
+    {
+      "title": "Find Beauty in Yourself With This Water Meditation",
+      "url": "https://www.youtube.com/watch?v=hthSuxbzaOA",
+      "subjects": [
+        "meditation",
+        "shamanism"
+      ],
+      "channel": "Omega Institute for Holistic Studies"
+    }
+  ],
+  "books": [],
+  "courses": [
+    {
+      "title": "Awaken Your True Nature: Explore the Ancient Tradition of Huichol Shamanism",
+      "url": "https://kripalu.org/experiences/awaken-your-true-nature-explore-ancient-tradition-huichol-shamanism",
+      "description": "A weekend retreat at Kripalu marking the turn from winter to spring. Through ceremony, story and simple daily practices from the Huichol tradition, participants work on their connection with the natural world and with one another.",
+      "price": "$369 USD tuition plus lodging",
+      "product_type": "retreat",
+      "start_date": "2027-04-02",
+      "end_date": "2027-04-04",
+      "subjects": [
+        "shamanism",
+        "ancient-wisdom"
+      ],
+      "image": "https://kripalu.org/sites/default/files/styles/og_image/public/2025-08/Spring%2520Trees%2520hero.jpg?itok=kKcKfzBh"
+    },
+    {
+      "title": "The Spiritual Path of Huichol Shamanism",
+      "url": "https://www.shamanism.com/programs/spiritual-path",
+      "description": "A three-level online workshop series, available as recordings, introducing who the Huichol are, the core ideas of their shamanism and practices for living a spiritual life day to day. Level 1 needs no experience; levels 2 and 3 build on it, with a discount for booking all three.",
+      "price": "$40 USD (Level 1), $60 USD (Level 2), $99 USD (Level 3)",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "shamanism",
+        "ancient-wisdom",
+        "spirituality"
+      ],
+      "image": "https://www.shamanism.com/wp-content/uploads/2018/10/italy-shamanic-retreat-brant-secunda-1200px-495x400.jpg"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "hub": "kripalu",
+    "rank": 45,
+    "hub_url": "https://kripalu.org/people/brant-secunda",
+    "tier_evidence": "Facebook brantsecunda 504 (og:description, 1 Nov 2026); an Instagram @brantsecunda shows 162 (og:description, 1 Nov 2026) but is not linked from his sites; Dance of the Deer Foundation accounts (Instagram 21K, YouTube @DanceoftheDeer 163) are the foundation's and not counted → ~0.7k total → local_hero",
+    "email": "yes",
+    "email_source": "https://brantsecunda.com/",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 15 source(s)",
+    "flags": [
+      "Email info@shamanism.com is the Dance of the Deer Foundation's office inbox, published on brantsecunda.com as his contact.",
+      "Tier is local_hero by count, but he is a long-established figure (lineage holder since 1978, foundation since 1979, widely published interviews); the owner may want to consider an editorial-stature override. None applied.",
+      "Four videos are on the Dance of the Deer Foundation channel (his own foundation, 163 subscribers); the others are interviews and talks on other channels (Feathered Pipe Ranch, Iris Hod, OMTimes, Omega Institute) where he is the main speaker. Durations from YouTube search results, 4 to 57 minutes.",
+      "The Omega Institute water meditation video suggests he has taught at Omega; he is not in omega-institute-faculty.json and no current Omega programme was found, so Omega is not added.",
+      "Shamanic healing sessions are offered through the foundation; left out because the foundation's page says Huichol shamans cure physical sickness.",
+      "Availability local_online with Santa Cruz, CA (foundation office where sessions and gatherings are based) plus recorded online workshops."
+    ],
+    "left_out": [
+      "Fit Soul, Fit Body: 9 Keys to a Healthier, Happier You (with Mark Allen): title is health-framed ('Healthier'), borderline; left out, so no books.",
+      "Shamanic healing sessions (Santa Cruz office or long distance): page says Huichol healing cures physical illness (health claim).",
+      "Mt. Shasta, Alaska and Italy retreats: no current dates on the upcoming programmes page.",
+      "Dance of the Deer clips 'Brant Secunda's Connection with the Huichol' (1:06) and 'Mt. Shasta Annual Shamanic Retreat' (1:21): under two minutes; 'Benefits of Shamanism': benefits framing, short.",
+      "Fit Body, Fit Soul talk series with Mark Allen (mrlohas): fitness and health framing.",
+      "Interview about Shaman chocolates: product promotion.",
+      "Huichol Documentary (Adr Jensen): not him as main speaker."
+    ]
+  },
+  "images_final": true
+}

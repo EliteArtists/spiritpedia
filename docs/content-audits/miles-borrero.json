@@ -1,0 +1,214 @@
+{
+  "healer": {
+    "healer_slug": "miles-borrero",
+    "create": {
+      "name": "Miles Borrero",
+      "bio": "Miles Borrero is a New York yoga teacher, kirtan musician and writer who grew up in Colombia and found yoga while training as an actor in the United States. Over roughly twenty-five years he has studied across many yoga lineages as well as Buddhism and tantra, and he looks for the threads that connect them rather than holding to a single method. His classes pair strong, carefully built vinyasa with breathwork, mantra, restorative practice and meditation, and he is known among other teachers for his work on sequencing and on the ethics of touch and hands-on assists. He is queer and trans, and his memoir Beautiful Monster: A Becoming (2023) tells the story of his transition at forty and how yoga carried him through it.\n\nHe teaches public classes at St. Marks Yoga in Manhattan, sees private students at his home studio in East Harlem and on Zoom, and leads community kirtan in New York and New England. He is part of the R&R teaching team at Kripalu, where he also offers his own weekend programmes, and he runs continuing-education trainings for yoga teachers. With his partner Sarah Jill he hosts small, queer- and trans-led group retreats, including a week in northern Morocco.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local_online",
+      "city": "New York",
+      "country": "United States",
+      "subjects": [
+        "yoga",
+        "meditation",
+        "breathwork"
+      ],
+      "website_url": "https://www.milesyoga.com/",
+      "booking_url": "https://www.milesyoga.com/privates",
+      "youtube_url": "https://www.youtube.com/channel/UCQPJw6Ff1IVVdwRiDySasWA",
+      "instagram_url": "https://www.instagram.com/monkimiles",
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "miles@milesyoga.com",
+      "image_urls": [
+        "https://kripalu.org/sites/default/files/styles/og_image/public/2026-08/IMG_3859_Miles%20Borerro.jpg?itok=8isyTJ79",
+        "https://images.squarespace-cdn.com/content/v1/6213c3a7b02b72620a0d57ac/3679bed7-b8de-4019-aa93-394097a57e85/IMG_0594.JPG",
+        "https://images.squarespace-cdn.com/content/v1/6213c3a7b02b72620a0d57ac/3107469f-24c3-4db8-a847-4e9ee87ea06d/IMG_3890.jpg"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "kripalu",
+      "role": "instructor"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Pride Meditation and Chant with Miles Borrero",
+      "url": "https://www.youtube.com/watch?v=pBU6ZsUWTuo",
+      "subjects": [
+        "meditation",
+        "yoga"
+      ],
+      "channel": "Yoga Anytime"
+    },
+    {
+      "title": "Convo with Miles Borrero at the Alabama Center For The Arts",
+      "url": "https://www.youtube.com/watch?v=GLinJucpxNY",
+      "subjects": [
+        "yoga",
+        "spirituality"
+      ],
+      "channel": "Miles Borrero"
+    },
+    {
+      "title": "\"Beautiful Monster ~ A Becoming,\" with Miles Borrero",
+      "url": "https://www.youtube.com/watch?v=lSw3c0nNsGk",
+      "subjects": [
+        "yoga",
+        "spirituality"
+      ],
+      "channel": "Rachel Scott"
+    }
+  ],
+  "books": [
+    {
+      "title": "Beautiful Monster: A Becoming",
+      "slug": "beautiful-monster-a-becoming",
+      "author": "Miles Borrero",
+      "asin": "B0C2N2LQFF",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "Miles Borrero's memoir of growing up in Colombia in the 1980s and 1990s, moving to the United States to act, and finding a home in New York's yoga world. It follows his decision to transition at forty as his father was dying, told with humour and touches of magical realism.",
+      "subjects": [
+        "yoga",
+        "spirituality"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/B0C2N2LQFF.01._SCLZZZZZZZ_.jpg"
+    }
+  ],
+  "courses": [
+    {
+      "title": "Crafting the Year Ahead: Music, Magic, and Vinyasa",
+      "url": "https://kripalu.org/experiences/crafting-year-ahead-music-magic-and-vinyasa",
+      "description": "A New Year weekend at Kripalu in Stockbridge, Massachusetts, mixing vinyasa, live chanting, partner bodywork, restorative yoga and journaling. Miles also brings the Colombian Año Viejo tradition as a playful way to let go of the old year and set hopes for the next.",
+      "price": "$350 USD tuition plus lodging",
+      "product_type": "retreat",
+      "start_date": "2027-01-22",
+      "end_date": "2027-01-24",
+      "subjects": [
+        "yoga",
+        "meditation"
+      ],
+      "image": "https://kripalu.org/sites/default/files/styles/og_image/public/2025-09/winter%25202025%2520friendship%2520hero.jpg?itok=goed9XFG"
+    },
+    {
+      "title": "Moroccan Magic Yoga Retreat",
+      "url": "https://milesyoga.com/morocco",
+      "description": "An eight-day group retreat for up to twelve people at a family-run guesthouse on the coast near Tangier, led by Miles and Sarah Jill. Days combine morning yoga and further sessions with excursions planned with local hosts.",
+      "price": "$3,800 USD (shared room; flights not included)",
+      "product_type": "retreat",
+      "start_date": "2027-04-24",
+      "end_date": "2027-05-01",
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/6213c3a7b02b72620a0d57ac/4b61caf4-1672-4812-b4d3-0b23e281f592/IMG_1429.jpg?format=1500w"
+    },
+    {
+      "title": "Beyond Sequencing: Uplevel Your Yoga Teaching",
+      "url": "https://www.milesyoga.com/beyond-sequencing",
+      "description": "A residential weekend training for yoga teachers at Groundworks in the Catskills, worth 20 Yoga Alliance continuing-education hours. Miles teaches how to build classes from first principles instead of templates, so teachers develop their own voice.",
+      "price": "From $550 USD (commuter) to $975 USD (shared room)",
+      "product_type": "course",
+      "start_date": "2027-03-12",
+      "end_date": "2027-03-14",
+      "subjects": [
+        "yoga"
+      ],
+      "image": "http://static1.squarespace.com/static/6213c3a7b02b72620a0d57ac/t/6ac2db70214adb58f76db24b/1791155056944/IMG_4623.JPG?format=1500w"
+    },
+    {
+      "title": "Private Yoga Sessions",
+      "url": "https://www.milesyoga.com/privates",
+      "description": "One-to-one sessions, mostly over Zoom, shaped around each student's goals, from first steps in yoga and its philosophy to breathwork, mantra, yoga nidra or advanced postures. In-person sessions can be arranged for a travel fee.",
+      "price": "$225 USD per hour",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga",
+        "breathwork",
+        "meditation"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/6213c3a7b02b72620a0d57ac/4b61caf4-1672-4812-b4d3-0b23e281f592/IMG_1429.jpg?format=1500w"
+    },
+    {
+      "title": "Tantra Unveiled",
+      "url": "https://www.milesyoga.com/courses/tantra-unveiled",
+      "description": "A recorded 20-hour continuing-education module that works through Pandit Rajmani Tigunait's book of the same name. Ten sessions mix practice with discussion of the philosophy behind tantric yoga.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga",
+        "ancient-wisdom"
+      ],
+      "image": "http://static1.squarespace.com/static/6213c3a7b02b72620a0d57ac/621d2c7b6b68bc1d87a6d65e/621f89021fc12d4ed3e5c81e/1648309589381/IMG_6400.JPG?format=1500w"
+    },
+    {
+      "title": "The Lost Teachings Of Yoga",
+      "url": "https://www.milesyoga.com/courses/the-lost-teachings-of-yoga",
+      "description": "A recorded 20-hour course built around Georg Feuerstein's audio teaching of the same name. Sessions combine physical practice with the less familiar esoteric side of the yoga tradition.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga",
+        "ancient-wisdom"
+      ],
+      "image": "http://static1.squarespace.com/static/6213c3a7b02b72620a0d57ac/621d2c7b6b68bc1d87a6d65e/621d3981414e4e3d7765a0a1/1768788725613/IMG_4537.JPG?format=1500w"
+    },
+    {
+      "title": "Myth, Mantra & The Authentic Self",
+      "url": "https://www.milesyoga.com/courses/myth-mantra-amp-your-authentic-self",
+      "description": "A recorded two-and-a-half-hour workshop on the myths and mantras behind familiar yoga postures. It uses these stories as a way to explore and express a more authentic voice.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga",
+        "ancient-wisdom"
+      ],
+      "image": "http://static1.squarespace.com/static/6213c3a7b02b72620a0d57ac/t/623f336739ca71708c7b1860/1648309098182/unnamed.png?format=1500w"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "hub": "kripalu",
+    "rank": 52,
+    "hub_url": "https://kripalu.org/people/miles-borrero",
+    "tier_evidence": "Instagram @monkimiles 3,762 (og:description, 1 Nov 2026); YouTube @themonkimiles 163 (channel header, 1 Nov 2026); no Facebook, X or TikTok linked from his site → ~3.9k total → local_hero",
+    "email": "yes",
+    "email_source": "https://www.milesyoga.com/privates",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 14 source(s)",
+    "flags": [
+      "His YouTube channel avatar is an old photo from before his transition; it was not used. Photos are the Kripalu headshot and two from his About page.",
+      "He uses he/they pronouns (Kripalu); the bio uses he, as his own site does.",
+      "His partner Sarah Jill co-leads the retreats and handles bookings (sarah@milesyoga.com also published); she is mentioned in the bio, not listed.",
+      "He also offers craniosacral therapy and bodywork sold on pain, injury and anxiety; left out, but the bulk of his work is yoga and kirtan teaching.",
+      "Morocco retreat price shown as $3,800 USD after 1 Nov 2026 (early bird $3,500 USD before); 2 places were left.",
+      "On-demand course prices sit behind a Momence player that needs JavaScript, so set to Contact for pricing.",
+      "Only three teaching videos found; most of his own channel is live kirtan (music) or clips under two minutes."
+    ],
+    "left_out": [
+      "Craniosacral therapy, Thai massage and Fusion bodywork sessions: sold on pain, injury, headaches and anxiety.",
+      "Kirtan videos on his channel: devotional music.",
+      "Short book-promo clips on his channel (under two minutes).",
+      "R&R at Kripalu (12 to 15 Nov 2026): Kripalu's own R&R programme, not his.",
+      "Thai Me Up, Thai Me Down (21 Nov 2026) and Satsang & Sadhana in Princeton (22 Nov 2026): one-off local workshops at other studios, and Thai massage is framed on tension and mobility.",
+      "Harmonium lessons: music tuition.",
+      "Other YouTube channel 'Miles Borrero' (Yogumentary films about other teachers): not teaching.",
+      "Beautiful Monster hardcover ASIN on his site (1637588895) leads to a different author's book; the Kindle ASIN B0C2N2LQFF is used."
+    ]
+  },
+  "images_final": true
+}
