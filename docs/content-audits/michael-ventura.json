@@ -1,0 +1,200 @@
+{
+  "healer": {
+    "healer_slug": "michael-ventura",
+    "create": {
+      "name": "Michael Ventura",
+      "bio": "Michael Ventura is an author and teacher whose work centres on empathy and purpose, and on the older healing ways that sit underneath them. For close to twenty years he ran Sub Rosa, a strategy and design studio in New York, where he developed methods for putting empathy to practical use with organisations such as the ACLU, Google and the United Nations. That work became his 2018 book Applied Empathy, and his second book, Constellation Thinking, due in January 2027, treats purpose as a set of related pursuits rather than one fixed goal. He has taught as visiting faculty at Princeton, West Point and Michigan's Ross School of Business.\n\nAlongside this he has kept a private practice for more than a decade under the name Corvus Medicine. He trained in qigong with Master Yuwen Ru and in the curanderismo of the Nahua peoples of Mexico with the curandera Doña Leova, and his sessions pair qigong with the limpia, a ritual cleansing, sometimes adding plants, sound and crystals. As an ordained minister he also holds ceremonies for births, marriages, homes and the dying. At Esalen in Big Sur he leads weekend workshops on these folk traditions with Margaret Harrsen. He is board president of the Tribal Link Foundation, which supports Indigenous leaders, and writes a Substack on empathy and meaning.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "worldwide",
+      "city": null,
+      "country": null,
+      "subjects": [
+        "shamanism",
+        "qi-gong",
+        "soul-purpose"
+      ],
+      "website_url": "https://www.michaelventura.co/",
+      "booking_url": "https://www.corvusmedicine.com/appointments",
+      "youtube_url": null,
+      "instagram_url": "https://www.instagram.com/michaelventura/",
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "hello@michaelventura.co",
+      "image_urls": [
+        "https://cdn.prod.website-files.com/602d8561ae2fe6ec8347c903/65cd32bed3c55ed60fd0a6fe_Michael-Ventura-Portrait.jpg",
+        "https://images.squarespace-cdn.com/content/v1/611de8826483b12bbf655fd3/25910eec-2613-4647-bf8c-5cd2504bf126/practitioner-feature-wide.png"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "esalen",
+      "role": "instructor"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Michael Ventura: Empathy Is Your Best Creative Tool",
+      "url": "https://www.youtube.com/watch?v=guNQo1mOKAA",
+      "subjects": [
+        "conscious-relationships",
+        "life-coaching"
+      ],
+      "channel": "99U"
+    },
+    {
+      "title": "Michael Ventura: Applying Empathy",
+      "url": "https://www.youtube.com/watch?v=y2PWmeSJHgE",
+      "subjects": [
+        "conscious-relationships",
+        "life-coaching"
+      ],
+      "channel": "99U"
+    },
+    {
+      "title": "Applied Empathy with Michael Ventura, Founder & CEO of Sub Rosa",
+      "url": "https://www.youtube.com/watch?v=_dNH41pPm3Y",
+      "subjects": [
+        "conscious-relationships",
+        "life-coaching"
+      ],
+      "channel": "Conscious.Enterprises"
+    },
+    {
+      "title": "Michael Ventura on Purpose Without a North Star",
+      "url": "https://www.youtube.com/watch?v=XNOcQaB4XEA",
+      "subjects": [
+        "soul-purpose",
+        "life-coaching"
+      ],
+      "channel": "Preview Media"
+    },
+    {
+      "title": "18 | Michael Ventura: Empathy, Energy, and Healing",
+      "url": "https://www.youtube.com/watch?v=PsUZa3cMXj0",
+      "subjects": [
+        "shamanism",
+        "energy-medicine",
+        "spirituality"
+      ],
+      "channel": "Life as Ceremony"
+    },
+    {
+      "title": "The Dark Side of Empathy: On “Soul Gaps” and how to develop humane AI tech with Michael Ventura",
+      "url": "https://www.youtube.com/watch?v=C2aF6oj31C0",
+      "subjects": [
+        "conscious-relationships",
+        "consciousness"
+      ],
+      "channel": "Poets & Thinkers with Ben Lehnert"
+    }
+  ],
+  "books": [
+    {
+      "title": "Applied Empathy: The New Language of Leadership",
+      "slug": "applied-empathy",
+      "author": "Michael Ventura",
+      "asin": "1501182854",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "His first book, published by Touchstone in 2018, which argues that empathy is a skill people can learn and use at work rather than a fixed trait. It sets out the approach he built with clients and students over his years running a design studio.",
+      "subjects": [
+        "conscious-relationships",
+        "life-coaching"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1501182854.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "Constellation Thinking: Create a Life of Purpose Without a North Star",
+      "slug": "constellation-thinking",
+      "author": "Michael Ventura",
+      "asin": "B0FCDDNN7G",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "A book due from Authors Equity in January 2027 that questions the idea of a single life purpose. Readers map several pursuits that matter to them and look at how they relate, drawing on systems thinking and contemplative practice.",
+      "subjects": [
+        "soul-purpose",
+        "life-coaching"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/B0FCDDNN7G.01._SCLZZZZZZZ_.jpg"
+    }
+  ],
+  "courses": [
+    {
+      "title": "Natural Healing: A Spiritual Journey of Return",
+      "url": "https://www.esalen.org/workshops/natural-healing-a-spiritual-journey-of-return-012927",
+      "description": "A weekend at Esalen in Big Sur, co-led with Margaret Harrsen, introducing curanderismo, the folk tradition of Mexico. The days mix morning movement and meditation with egg and herb cleansings, abdominal work, evening flower baths and exercises in listening to one another.",
+      "price": "From $940 USD (all-inclusive)",
+      "product_type": "retreat",
+      "start_date": "2027-01-29",
+      "end_date": "2027-01-31",
+      "subjects": [
+        "shamanism",
+        "spirituality",
+        "meditation"
+      ],
+      "image": "https://cdn.prod.website-files.com/602d8561ae2fe6ec8347c903/6967311f917800139e770826_6966ba272006abb23c758965_2024-Esalen_Healing_Water_Kodiak-Greenwood_MG_2641-1500x775.jpeg"
+    },
+    {
+      "title": "Corvus Medicine Sessions",
+      "url": "https://www.corvusmedicine.com/treatments-1",
+      "description": "One-to-one sessions that combine qigong with a limpia, the cleansing ritual of the Nahua tradition, to work on body, mind and spirit together. Appointments are arranged through his Corvus Medicine website.",
+      "price": "$300 USD per session",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "shamanism",
+        "qi-gong",
+        "energy-medicine"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/55d644e4e4b02a14e796e30b/1479318931058-702H6SJ87SMXWD97BSPH/Corvus-TransTxt.png?format=1500w"
+    },
+    {
+      "title": "Corvus Medicine Ceremonies",
+      "url": "https://www.corvusmedicine.com/ceremonies",
+      "description": "Ceremonies drawn from ancestral practice for life passages: welcoming a newborn, marriage (he is an ordained minister), clearing a home, and accompanying people at the end of life and their families.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "shamanism",
+        "death-the-afterlife",
+        "spirituality"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/55d644e4e4b02a14e796e30b/1479318931058-702H6SJ87SMXWD97BSPH/Corvus-TransTxt.png?format=1500w"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "hub": "esalen",
+    "rank": 226,
+    "hub_url": "https://www.esalen.org/faculty/michael-ventura",
+    "tier_evidence": "Instagram 6,837 (og:description of instagram.com/michaelventura, 1 Nov 2026); no own YouTube channel; Facebook and X not linked from his site → ~6.8k total → local_hero",
+    "email": "yes",
+    "email_source": "https://www.michaelventura.co/",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 14 source(s)",
+    "flags": [
+      "Much of his public profile is business leadership (empathy keynotes, executive advising through Equalls); the spiritual side is his Corvus Medicine practice (qigong and Nahua curanderismo) and his Esalen workshops. A human may want to confirm he fits the directory.",
+      "Esalen programme title includes 'Natural Healing'; it names no condition and is framed as a spiritual folk tradition, so it was kept.",
+      "Co-leader Margaret Harrsen has her own queue entry (rank 235); possible overlap.",
+      "Availability set to worldwide: no base is published; his site's land acknowledgement (Manhanset territory) suggests eastern Long Island, NY, but where Corvus Medicine sessions take place is not stated.",
+      "Videos are all on other channels (talks and interviews where he is the main speaker); most are about empathy in leadership.",
+      "A second published address, mv@corvusmedicine.com (corvusmedicine.com/contact), is for his healing practice; hello@michaelventura.co was used.",
+      "Corvus Medicine footer still shows template placeholders (Street Address, Phone Number); ignored."
+    ],
+    "left_out": [
+      "Prioritizing Purpose cohort programme (October to December 2026): already started.",
+      "Speaking and executive advisory services: business work, not spiritual teaching.",
+      "Substack Understanding Understanding: a newsletter, not a resource; not added.",
+      "Short clips under ~2 minutes (CultureC) and the GaryVee episode (re-upload with Portuguese title): left out."
+    ]
+  },
+  "images_final": true
+}

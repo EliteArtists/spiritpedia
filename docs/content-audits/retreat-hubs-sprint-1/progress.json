@@ -4184,7 +4184,7 @@
    "contact_form_seen": false,
    "in_person_words": false,
    "hub_bio_extract": "Michael Ventura michaelventura.co For more than two decades, Michael Ventura has worked as a leader, practitioner, and educator centered in the practice of empathy. Through his private practice, he supports people seeking acceptance and transformation through the Indigenous healing tradition of the Nahua peoples, alongside somatic and contemplative work in self-knowledge, nervous system regulation",
-   "status": "planned",
+   "status": "dev",
    "plan": "docs/content-audits/michael-ventura.json",
    "skip_reason": null
   },
@@ -4242,9 +4242,9 @@
    "contact_form_seen": true,
    "in_person_words": true,
    "hub_bio_extract": "Marisa Radha Weppner marisaradhaweppner.com Marisa Radha Weppner is a mom, author, DJ, teacher, minister, psychedelic therapist, community organizer, life coach, podcaster, and entrepreneur. She has taught yoga since 2002. Known for her authentic self-expression, humorous yet grounded, she empowers others to embody their soul’s wisdom, bringing a real-world mix of eastern spirituality and western ",
-   "status": "planned",
-   "plan": "docs/content-audits/marisa-radha-weppner.json",
-   "skip_reason": null
+   "status": "skipped",
+   "plan": null,
+   "skip_reason": "Strict health rule: much of her own site is ketamine-assisted therapy and trauma coaching, her Esalen psychedelics workshop is framed around treating mental illness, and both Esalen programmes are co-led with East Forest (skipped, psychedelic framing). Researcher's plan (yoga and meditation only, contact form) kept in dropped/ for the owner."
   },
   {
    "rank": 229,
@@ -4265,7 +4265,7 @@
    "contact_form_seen": true,
    "in_person_words": true,
    "hub_bio_extract": "Alejandro Chaoul alechaoul.com Alejandro Chaoul-Reich, PhD, has studied in the Tibetan traditions since 1989, and for over 30 years in the Bön Tradition with Yongdzin Tenzin Namdak Rinpoche, His Holiness Lungtok Tenpai Nyima Rinpoche, and Tenzin Wangyal Rinpoche. He holds a PhD in Tibetan religions from Rice University and is the scholar and founding director of the Mind Body Spirit Institute at t",
-   "status": "planned",
+   "status": "dev",
    "plan": "docs/content-audits/alejandro-chaoul.json",
    "skip_reason": null
   },
@@ -4288,8 +4288,8 @@
    "contact_form_seen": true,
    "in_person_words": true,
    "hub_bio_extract": "John Vosler www.johnvosler.com John Vosler is devoted to guiding others back to the truth of who they are — the unchanging, unshakable presence beneath all thoughts, emotions, and experiences. For over 25 years, John has supported thousands of students and clients through his work as an energetic bodyworker, meditation teacher, and facilitator of Yoga Nidra. Blending ancient wisdom with modern sci",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/john-vosler.json",
    "skip_reason": null
   },
   {
@@ -4857,5 +4857,5 @@
    "skip_reason": null
   }
  ],
- "updated": "2026-11-01T15:08:21.068Z"
+ "updated": "2026-11-01T15:10:34.820Z"
 }
