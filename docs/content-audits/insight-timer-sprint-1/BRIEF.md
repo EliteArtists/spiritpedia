@@ -24,6 +24,14 @@ For each teacher you're given, write **one plan file**:
 titles or credentials: "Dr. Janette Freeman" → `janette-freeman`). If that file
 already exists (someone else of the same name), stop and flag it.
 
+**Strict health rule, owner's precedent (1 Nov 2026):** if the teacher's own
+site sells their sessions, programmes or brand on conditions (depression,
+anxiety, PTSD/CPTSD, addiction, cancer, illness, "healings" testimonials),
+skip them even if those items could be left out, because a listing would send
+people to those pages (Mira Kelley, Sandra Rea, Johanna Burkhardt, Camilla
+Sacre-Dallerup). Stress, sleep and wellbeing language alone is fine. If you are
+unsure, write the plan and flag it.
+
 ## Skip if too thin
 
 If the teacher can't have a proper page (no usable photo of them, and/or fewer

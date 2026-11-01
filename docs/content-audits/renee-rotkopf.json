@@ -1,0 +1,182 @@
+{
+  "healer": {
+    "healer_slug": "renee-rotkopf",
+    "create": {
+      "name": "Renée Rotkopf",
+      "bio": "Renée Rotkopf is an astrologer, coach and meditation guide based in Woodstock, New York. She spent more than twenty years as a creative director at New York advertising agencies, and from 2000 to 2005 she led The Wedding Party, which campaigned across the US for same-sex marriage. In 2018 she left corporate life and spent the following years training in astrology, mindfulness, spiritual psychology, hypnosis, NLP, Internal Family Systems and breathwork.\n\nHer approach treats the birth chart as a map of inner parts and life chapters, and pairs it with attention to what is felt in the body. She offers one-to-one astrology readings and a three-session coaching journey for people in transition, and still helps creative founders shape brands that reflect who they are. Born to Shine is her four-month online course for learning astrology through your own chart, with live coaching and a community space. She also built Stellarmuse, an AI astrology companion trained on her approach, and teaches online, in person and on Insight Timer, where she shares guided meditations, moon talks and yearly forecasts.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local_online",
+      "city": "Woodstock",
+      "country": "United States",
+      "subjects": [
+        "astrology",
+        "life-coaching",
+        "meditation"
+      ],
+      "website_url": "https://thestellarmuse.com",
+      "booking_url": "https://thestellarmuse.com/coaching",
+      "youtube_url": "https://www.youtube.com/@thestellarmuse",
+      "instagram_url": "https://www.instagram.com/renee.stellarmuse",
+      "facebook_url": "https://www.facebook.com/renee.rotkopf/",
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "renee@thestellarmuse.com",
+      "image_urls": [
+        "https://yt3.googleusercontent.com/ytc/AIdro_m2WjT0px0yS_RAZj-JIwt1el3BxJBA5FcAFifgyaoJwV0=s900-c-k-c0x00ffffff-no-rj",
+        "https://images.squarespace-cdn.com/content/v1/60ef9dd9f683d17e1e864ffe/e98e9442-4b9c-4b7e-8769-284bc2fa0bef/*Rene%CC%81e_Rotkopf_Stars.jpg",
+        "https://images.squarespace-cdn.com/content/v1/60ef9dd9f683d17e1e864ffe/7531a828-97a5-454c-8e86-c3f5e522863d/Constellations+Portraits+%281%29.png"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "insight-timer",
+      "role": "instructor"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Full Moon Magic: An Astrological Journey and Guided Meditation",
+      "url": "https://www.youtube.com/watch?v=kvTx_n99etU",
+      "subjects": [
+        "astrology",
+        "meditation"
+      ],
+      "channel": "Renee Rotkopf"
+    },
+    {
+      "title": "Uranus is on the Move & The Script is Flipping",
+      "url": "https://www.youtube.com/watch?v=6ErorjJe2z4",
+      "subjects": [
+        "astrology"
+      ],
+      "channel": "Renee Rotkopf"
+    },
+    {
+      "title": "Solarize Your Brand Masterclass",
+      "url": "https://www.youtube.com/watch?v=nJIeYVW-7zo",
+      "subjects": [
+        "astrology",
+        "life-coaching"
+      ],
+      "channel": "Renee Rotkopf"
+    },
+    {
+      "title": "Self Healing Meditation",
+      "url": "https://www.youtube.com/watch?v=YcHCflV8fTw",
+      "subjects": [
+        "self-healing",
+        "meditation"
+      ],
+      "channel": "Renee Rotkopf"
+    }
+  ],
+  "books": [],
+  "courses": [
+    {
+      "title": "Astrology Readings and The Big Shift Coaching",
+      "url": "https://thestellarmuse.com/coaching",
+      "description": "One-to-one sessions with Renée over video: a 60-minute reading of your chart and current transits ($195 USD), a 90-minute deep-dive reading with a written summary ($325 USD), or The Big Shift, three sessions for people in a period of change. A free 20-minute discovery call is offered first.",
+      "price": "From $195 USD",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "astrology",
+        "life-coaching"
+      ],
+      "image": "http://static1.squarespace.com/static/60ef9dd9f683d17e1e864ffe/t/641dec64eef81a4ce3700b93/1679682660071/Screen+Shot+2023-03-24+at+2.28.45+PM.jpg?format=1500w"
+    },
+    {
+      "title": "Born to Shine: Founding Cohort",
+      "url": "https://thestellarmuse.com/shine",
+      "description": "A four-month online course for learning astrology through your own chart, module by module from the elements and signs to the houses, aspects and transits. It includes weekly video lessons, live coaching twice a month, a Circle community and access to Stellarmuse; the founding round is capped at 25 places.",
+      "price": "$499 USD (founding price; regular $699 USD)",
+      "product_type": "course",
+      "start_date": "2026-11-14",
+      "end_date": null,
+      "subjects": [
+        "astrology"
+      ],
+      "image": "http://static1.squarespace.com/static/60ef9dd9f683d17e1e864ffe/t/6ad0d3ffbdcf6160773e22e3/1792070655494/Screenshot+2026-10-15+at+9.23.31%E2%80%AFAM.png?format=1500w"
+    },
+    {
+      "title": "Stellarmuse AI Astrology Guide",
+      "url": "https://stellarmuse.ai/",
+      "description": "A subscription AI companion created by Renée that reads your birth chart and current transits and answers questions about relationships, work and creative direction, with daily prompts and affirmations. It comes with a free trial of up to seven days.",
+      "price": "From $18 USD a month",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "astrology"
+      ],
+      "image": "https://stellarmuse.ai/assets/the-stellarmuse-CGzx-_k4.webp"
+    },
+    {
+      "title": "Creating A Soulful Brand",
+      "url": "https://insighttimer.com/meditation-courses/creating-a-soulful-brand",
+      "description": "A four-day Insight Timer course of short sessions on setting an intention for your brand, telling branding apart from marketing, and using astrology to give a brand its personality.",
+      "price": "Included in Member Plus ($59.99 USD a year)",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "astrology",
+        "life-coaching"
+      ],
+      "image": "https://yt3.googleusercontent.com/ytc/AIdro_m2WjT0px0yS_RAZj-JIwt1el3BxJBA5FcAFifgyaoJwV0=s900-c-k-c0x00ffffff-no-rj"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Renée Rotkopf on Insight Timer",
+      "url": "https://insighttimer.com/reneerotkopf",
+      "description": "Free guided meditations from Renée, from chakra clearing and intention setting to relaxation, plus new-moon astrology talks and a yearly forecast for each sign. Listen free in the app or on the web.",
+      "featured": true,
+      "resource_type": "meditation",
+      "subjects": [
+        "astrology",
+        "meditation"
+      ],
+      "image": "https://yt3.googleusercontent.com/ytc/AIdro_m2WjT0px0yS_RAZj-JIwt1el3BxJBA5FcAFifgyaoJwV0=s900-c-k-c0x00ffffff-no-rj"
+    },
+    {
+      "title": "The Light Within: Meeting Your Inner Sky",
+      "url": "https://www.youtube.com/watch?v=7Bi7kqmxx_k",
+      "description": "Renée's free hour-long introductory astrology class on YouTube, covering what a birth chart is and how its parts relate to your inner life. It is the first module of Born to Shine.",
+      "featured": false,
+      "resource_type": "workshop",
+      "subjects": [
+        "astrology"
+      ],
+      "image": "https://i.ytimg.com/vi/7Bi7kqmxx_k/maxresdefault.jpg"
+    }
+  ],
+  "sprint": {
+    "hub": "insight-timer",
+    "rank": 145,
+    "insight_timer_url": "https://insighttimer.com/reneerotkopf",
+    "tier_evidence": "Insight Timer 27.3k (profile, 1 Nov 2026); YouTube 75 (@thestellarmuse channel header, 1 Nov 2026); Instagram @renee.stellarmuse unreadable (no og:description returned, two tries); Facebook unreadable → ~27k total → local_hero",
+    "email": "yes",
+    "email_source": "https://thestellarmuse.com/store",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 7 source(s)",
+    "flags": [
+      "Instagram count could not be read (main social account); tier rests on Insight Timer.",
+      "Email renee@thestellarmuse.com appears on the store page as the questions address for purchases (no contact page; /contact is 404).",
+      "Stellarmuse is an AI chatbot subscription she created; included as an offering because her site leads with it. Owner may prefer to leave AI products out.",
+      "Location: Woodstock, NY from Insight Timer; her about page says she teaches online and in person but gives no venue. Set local_online.",
+      "Name written Renée (as on her site and Insight Timer); slug renee-rotkopf.",
+      "Photos: the two site images are stylised with star backgrounds but clearly the same person as the YouTube avatar.",
+      "Insight Timer bio: WebFetch quoted only the first sentence; the bio check relies mainly on her own site pages."
+    ],
+    "left_out": [
+      "Videos 'Amazing Deep Sleep Guided Meditation' (sleep-titled), 'New Moon Aquarius 2024' (dated) and 'The Wedding Party Gay Pride NYC' (campaign, not teaching).",
+      "Free book download The Light that Keeps Burning (her great-great-aunt's Auschwitz story): not spiritual teaching.",
+      "Store merchandise (hoodies).",
+      "Insight Timer tracks titled for deep sleep or healing (covered by the profile link)."
+    ]
+  }
+}

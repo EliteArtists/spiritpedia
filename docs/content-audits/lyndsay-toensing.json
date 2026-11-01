@@ -1,0 +1,122 @@
+{
+  "healer": {
+    "healer_slug": "lyndsay-toensing",
+    "create": {
+      "name": "Lyndsay Toensing",
+      "bio": "Lyndsay Toensing is a writer, meditation maker and ritualist living in the Tacoma area of Washington State. She spent about fifteen years leading and mentoring teams in companies large and small, and drew on that time for her first book, The Art of Connected Leadership, published by Morgan James in 2020. Alongside that career she trained as a leadership coach and studied energy work and mediumship, and a period of collapse and grief in midlife turned her attention fully to the inner life.\n\nThat turn became The Unfinished Human, the name under which she now writes and teaches. Its starting point is that nobody needs fixing or finishing, and that the times when an old identity falls away deserve to be met with honesty and ritual rather than hurried past. She makes ritual journeys that combine oracle cards, writing, music, altar work and grounding through the body, including a free three-part starter set and a longer journey on finding your voice again. On Insight Timer she records spirit guide journeys, shamanic drumming, energy clearing and bedtime gratitude practices, and she also writes essays and poetry and hosts a podcast with her brother.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "worldwide",
+      "city": "Tacoma",
+      "country": "United States",
+      "subjects": [
+        "shadow-work",
+        "meditation",
+        "shamanism"
+      ],
+      "website_url": "https://theunfinishedhuman.com",
+      "booking_url": "https://theunfinishedhuman.com/ritual-library/",
+      "youtube_url": null,
+      "instagram_url": "https://www.instagram.com/theunfinishedhuman",
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "hello@theunfinishedhuman.com",
+      "image_urls": [
+        "https://users.insighttimer.com/C7k9rRUzHSdQqPKwwBvkQchgfOM2/pictures/square_large.jpeg",
+        "https://theunfinishedhuman.com/wp-content/themes/gracefulTUH-pro/images/about-lyndsay.jpg"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "insight-timer",
+      "role": "instructor"
+    }
+  ],
+  "videos": [],
+  "books": [
+    {
+      "title": "The Art of Connected Leadership: The Manager's Guide for Keeping Rock Stars and Building Powerhouse Teams",
+      "slug": "the-art-of-connected-leadership",
+      "author": "Lyndsay K. R. Toensing",
+      "asin": "1642798371",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "A short practical guide for managers on why able people lose heart and leave, and what a leader can do about it. It draws on her years running and mentoring teams, with a focus on growth, trust and workplace culture.",
+      "subjects": [
+        "life-coaching",
+        "conscious-relationships"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1642798371.01._SCLZZZZZZZ_.jpg"
+    }
+  ],
+  "courses": [
+    {
+      "title": "Voice Reclamation Ritual Journey",
+      "url": "https://theunfinishedhuman.gumroad.com/l/VoiceReclamation",
+      "description": "A downloadable 34-page ritual guide with five themed journeys on finding and using your own voice. Each theme pairs shadow work prompts with a daily practice so the work carries on after the reading is done.",
+      "price": "$55 USD",
+      "product_type": "download",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "shadow-work",
+        "spirituality"
+      ],
+      "image": "https://public-files.gumroad.com/6iipfyl746svpy009pin7318060k"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Lyndsay Toensing on Insight Timer",
+      "url": "https://insighttimer.com/lyndsaytoensing",
+      "description": "Free guided spirit guide journeys, a shamanic drum journey, energy clearing and grounding practices and a gratitude body scan for bedtime. Listen at no cost in the app or a browser.",
+      "featured": false,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation",
+        "shamanism"
+      ],
+      "image": "https://users.insighttimer.com/C7k9rRUzHSdQqPKwwBvkQchgfOM2/pictures/square_large.jpeg"
+    },
+    {
+      "title": "The Descent Begins Here",
+      "url": "https://theunfinishedhuman.com/the-descent/",
+      "description": "A free starter bundle of three rituals, meant to be worked over three days, with beginner oracle card spreads, playlists and simple grounding practices. It is sent after you give your name and email.",
+      "featured": true,
+      "resource_type": "download",
+      "subjects": [
+        "shadow-work",
+        "spirituality"
+      ],
+      "image": "https://users.insighttimer.com/C7k9rRUzHSdQqPKwwBvkQchgfOM2/pictures/square_large.jpeg"
+    }
+  ],
+  "sprint": {
+    "hub": "insight-timer",
+    "rank": 139,
+    "insight_timer_url": "https://insighttimer.com/lyndsaytoensing",
+    "tier_evidence": "Insight Timer 1.3k (profile, 1 Nov 2026); YouTube 19 (channel header next to @theunfinishedhuman, 1 Nov 2026); Instagram 83 (og:description of @theunfinishedhuman, 1 Nov 2026); no Facebook, X or TikTok linked from her link page → ~1.4k total → local_hero",
+    "email": "yes",
+    "email_source": "https://campsite.bio/theunfinishedhuman",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 4 source(s)",
+    "flags": [
+      "Thin page: three items beyond the Insight Timer link (one paid download, one free download, one business book); her spiritual book The Beautiful Un-Becoming could not be confirmed on Amazon.",
+      "Her only book with an Amazon listing is a management book, not spiritual; kept as an authored book but a human may prefer to drop it.",
+      "Photo identity: the Insight Timer headshot (darker hair) and the about-page photo from her site (lighter, greyer hair, crouched on a beach) look like the same woman years apart; her site's headshot (lyndsay.png) matches the beach photo but is only 250 px.",
+      "theunfinishedhuman.com returns a Cloudflare challenge (403) to curl, so its about and library pages were read through WebFetch and checked against saved excerpts only.",
+      "Her about page discusses her own diagnoses (AuDHD, chronic pain); the bio leaves these out.",
+      "The queue name includes 'The Unfinished Human™' (her brand); listed under her own name."
+    ],
+    "left_out": [
+      "All YouTube videos: the channel (19 subscribers) is her podcast; most uploads have embedding disabled (oEmbed 401), and the embeddable ones are personality-type chats with her brother or dated astrology episodes.",
+      "The Beautiful Un-Becoming: sold via Barnes & Noble and Payhip (ISBN 9781088059579); no amazon.com listing found.",
+      "Worthy of Rest ritual journey: listed as coming soon, no price.",
+      "The Unfinished Human podcast and Substack: no fitting free-resource type.",
+      "Insight Timer track Breathe The Stress Away: covered by the profile link only."
+    ]
+  }
+}
