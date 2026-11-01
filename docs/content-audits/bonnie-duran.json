@@ -88,8 +88,20 @@
     "email": "yes",
     "email_source": "https://northwestdharma.org/group_member/people-of-color-and-allies-sangha/",
     "contact_form_url": null,
-    "bio_check": "",
-    "flags": [],
-    "left_out": []
+    "bio_check": "OK: no 8-word runs against 4 source(s)",
+    "flags": [
+      "Email bonduran@mac.com comes from the Northwest Dharma directory listing for the Seattle People of Color and Allies Sangha she holds; it is not on a page of her own and the listing may be old. Her UW profile publishes bonduran@uw.edu (work address), which supports that the handle is hers.",
+      "Only one usable photo (IMS headshot, 292x391, just under 300 px wide); UW photo is 215 px. Please check it is acceptable.",
+      "Thin listing: 3 videos (all on other channels) plus the Forest Refuge December 2027 month; the Forest Refuge offering is skipped on dry run because the shared 2027 schedule URL is already on dev, so only the 3 videos would be added.",
+      "Availability local_online in Seattle is based on her weekly Seattle sangha (listing) and online teaching; confirm it is current.",
+      "Her day job is public health research at the University of Washington (Indigenous health); her listing is for dharma teaching only and the bio does not mention clinical topics.",
+      "Tier: no personal social accounts found, total 0."
+    ],
+    "left_out": [
+      "Video 'Indigenous Presence: Decolonizing, Creating Causes for Happiness and Addressing Addiction': names addiction, health rule.",
+      "Academic lectures (Resistance Through Resilience, He Waka Eke Noa, Minifie Lecture): research talks, not dharma teaching.",
+      "Tricycle 'Mistaking a Stick for a Snake' clips: under a minute each; the course page itself not verified.",
+      "Heart Wisdom Ep. 205 and Arinna Weisman / SIMC uploads: she is not the main speaker or barely viewed shared talks."
+    ]
   }
 }

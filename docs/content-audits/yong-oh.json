@@ -1,122 +1,123 @@
 {
- "healer": {
-  "healer_slug": "yong-oh",
-  "create": {
-   "name": "Yong Oh",
-   "bio": "Yong Oh is an insight meditation teacher based in Durango, Colorado, where he serves on the Dharma Council of the Durango Dharma Center. He is also a core teacher with Sacred Mountain Sangha, the community founded by his main teachers Kittisaro and Thanissara, and he completed their two-year Dharmapala training as well as the four-year IMS retreat teacher training and Spirit Rock's Community Dharma Leaders programme.\n\nBefore teaching full time he worked as an acupuncturist, and he has since retired from that work. His teaching brings together the natural world, devotion and close attention: he teaches in the online Nature Sangha and BIPOC Sangha at IMS, leads land-based and residential retreats at IMS, Big Bear, Vallecitos and other centres, and has a particular commitment to communities of colour and to people who care for others. In early 2027 he guides daily online practice in IMS's thirty-day Experience of Insight programme, and he offers practice interviews by donation.",
-   "tier": "local_hero",
-   "entity_type": "individual",
-   "availability": "local_online",
-   "city": "Durango",
-   "country": "United States",
-   "subjects": [
-    "meditation",
-    "mindfulness",
-    "spirituality"
-   ],
-   "website_url": "https://yongoh.com/",
-   "booking_url": "https://yongoh.com/",
-   "youtube_url": null,
-   "instagram_url": null,
-   "facebook_url": null,
-   "twitter_url": null,
-   "tiktok_url": null,
-   "contact_email": "yongoh.practice@gmail.com",
-   "image_urls": [
-    "https://www.dharma.org/wp-content/uploads/Yong_Oh_SMS_TeacherPic-1-scaled.webp"
-   ]
-  }
- },
- "teaches_at": [
-  {
-   "hub": "insight-meditation-society",
-   "role": "instructor"
-  }
- ],
- "videos": [
-  {
-   "title": "Tricycle's Meditation Group – Yong Oh",
-   "url": "https://www.youtube.com/watch?v=stcqED8JpTI",
-   "subjects": [
-    "meditation",
-    "mindfulness"
-   ],
-   "channel": "Tricycle"
-  }
- ],
- "books": [],
- "courses": [
-  {
-   "title": "Experience of Insight: A 30-Day Practice of Buddhist Wisdom Teachings 2027",
-   "url": "https://ims.dharma.org/courses/experience-of-insight-a-30-day-practice-of-buddhist-wisdom-teachings-2027",
-   "description": "A month of daily online practice built around one topic a day from Joseph Goldstein's book The Experience of Insight. After Joseph's opening talk, Yong Oh, Rachel Lewis and Tuere Sala lead the midday guided sessions, each starting with instruction and a short reflection.",
-   "price": "From $300 USD (sliding scale)",
-   "product_type": "course",
-   "start_date": "2026-12-30",
-   "end_date": "2027-01-31",
-   "subjects": [
-    "meditation",
-    "mindfulness"
-   ],
-   "image": "https://import.cdn.thinkific.com/478758/BMimQlF0REuLSjGPTstk_Course%20Tile.jpg"
+  "healer": {
+    "healer_slug": "yong-oh",
+    "create": {
+      "name": "Yong Oh",
+      "bio": "Yong Oh is an insight meditation teacher based in Durango, Colorado, where he serves on the Dharma Council of the Durango Dharma Center. He is also a core teacher with Sacred Mountain Sangha, the community founded by his main teachers Kittisaro and Thanissara, and he completed their two-year Dharmapala training as well as the four-year IMS retreat teacher training and Spirit Rock's Community Dharma Leaders programme.\n\nBefore teaching full time he worked as an acupuncturist, and he has since retired from that work. His teaching brings together the natural world, devotion and close attention: he teaches in the online Nature Sangha and BIPOC Sangha at IMS, leads land-based and residential retreats at IMS, Big Bear, Vallecitos and other centres, and has a particular commitment to communities of colour and to people who care for others. In early 2027 he guides daily online practice in IMS's thirty-day Experience of Insight programme, and he offers practice interviews by donation.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local_online",
+      "city": "Durango",
+      "country": "United States",
+      "subjects": [
+        "meditation",
+        "mindfulness",
+        "spirituality"
+      ],
+      "website_url": "https://yongoh.com/",
+      "booking_url": "https://yongoh.com/",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "yongoh.practice@gmail.com",
+      "image_urls": [
+        "https://www.dharma.org/wp-content/uploads/Yong_Oh_SMS_TeacherPic-1-scaled.webp"
+      ]
+    }
   },
-  {
-   "title": "Nature Sangha (IMS Online)",
-   "url": "https://ims.dharma.org/courses/nature-sangha-2026",
-   "description": "A free monthly online gathering on the first Tuesday for people drawn to practise with the natural world, with guided meditation, reflection and discussion. Teachers rotate; Yong Oh leads the 1 December 2026 session.",
-   "price": "Free, or $5 to $10 USD per month (optional subscription)",
-   "product_type": "course",
-   "start_date": null,
-   "end_date": null,
-   "subjects": [
-    "meditation",
-    "mindfulness"
-   ],
-   "image": "https://import.cdn.thinkific.com/478758/KughDJYQRcCocH8d8dcl_Course%20Tile%20760x420.jpg"
-  },
-  {
-   "title": "Being Dharma: A Month-long Residential Retreat",
-   "url": "https://sacredmountainsangha.org/monthlong/",
-   "description": "A month of silent, monastic-style practice for experienced meditators at Big Bear Retreat Center in California, run by Sacred Mountain Sangha with Kittisaro, Thanissara, Yong Oh and Djuna Devereaux. It combines insight practice with devotional and mantra practice, and applicants must commit to the whole month.",
-   "price": "From $1,800 USD (sliding scale)",
-   "product_type": "retreat",
-   "start_date": "2027-04-06",
-   "end_date": "2027-05-06",
-   "subjects": [
-    "meditation",
-    "spirituality"
-   ],
-   "image": "https://images.squarespace-cdn.com/content/v1/6a9fc29fb0b91e6f8b5cee25/77802eed-883b-4c5e-920b-6e8a7c5d9518/Untitled+design+%2836%29.png?format=1500w"
-  }
- ],
- "free_resources": [],
- "sprint": {
-  "hub": "insight-meditation-society",
-  "rank": 15,
-  "hub_url": "https://www.dharma.org/teacher/yong-oh/",
-  "tier_evidence": "No YouTube, Instagram, Facebook, X or TikTok account found (1 Nov 2026); yongoh.com links none → 0 counted → local_hero",
-  "email": "yes",
-  "email_source": "https://rockymountainecodharmaretreatcenter.secure.retreat.guru/teacher/young-oh/",
-  "contact_form_url": null,
-  "bio_check": "OK: no 8-word runs against 5 source(s)",
-  "flags": [
-   "Thin listing: 1 video, 2 IMS programmes (count once) and 1 outside retreat, which just reaches the 3-item bar.",
-   "Email yongoh.practice@gmail.com comes from his teacher profile on Rocky Mountain Ecodharma Retreat Center's booking site (listed under '2024 Team', page spells him 'Young Oh'), where he asks people to contact him there for practice interviews; his own site publishes no email or form. May be dated.",
-   "yongoh.com returns 406 to curl (mod_security); read via WebFetch only, so it is not among the bio-check sources.",
-   "Only one usable photo (IMS hub headshot); no own-site or YouTube photo.",
-   "Nature Sangha is a rotating IMS group; he leads only the 1 Dec 2026 session.",
-   "Being Dharma is hosted by Big Bear Retreat Center and run by Sacred Mountain Sangha; Kittisaro and Thanissara are the senior teachers.",
-   "Tier counts are 0: no personal social accounts found.",
-   "Dry run on dev skips the Experience of Insight 2027 offering because that URL is already in from another teacher's plan (shared hub page); it will not be added again for this teacher."
+  "teaches_at": [
+    {
+      "hub": "insight-meditation-society",
+      "role": "instructor"
+    }
   ],
-  "left_out": [
-   "Reclaiming Devotion (IMS Online, 28 Oct-18 Nov 2026): already started.",
-   "Heart of Mindfulness year-long course (Durango Dharma Center): began 1 Nov 2026, closed group.",
-   "His 2027 IMS Retreat Center and Spirit Rock retreats: on events.dharma.org / spiritrock.org, not fetched.",
-   "Big Bear (June 2027), Southern Dharma (July 2027) and Vallecitos (Aug-Sep 2027) retreats: 'TBD', no pages.",
-   "Lineage Stories with Kittisaro, Thanissara, and Yong Oh: a three-way conversation where his teachers lead; IMS promo clips for Touching the Earth (2022): promos, dated.",
-   "BIPOC Sangha and Metta Sangha (IMS): kept to two IMS programmes.",
-   "Books: none found."
-  ]
- }
+  "videos": [
+    {
+      "title": "Tricycle's Meditation Group – Yong Oh",
+      "url": "https://www.youtube.com/watch?v=stcqED8JpTI",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "channel": "Tricycle"
+    }
+  ],
+  "books": [],
+  "courses": [
+    {
+      "title": "Experience of Insight: A 30-Day Practice of Buddhist Wisdom Teachings 2027",
+      "url": "https://ims.dharma.org/courses/experience-of-insight-a-30-day-practice-of-buddhist-wisdom-teachings-2027",
+      "description": "A month of daily online practice built around one topic a day from Joseph Goldstein's book The Experience of Insight. After Joseph's opening talk, Yong Oh, Rachel Lewis and Tuere Sala lead the midday guided sessions, each starting with instruction and a short reflection.",
+      "price": "From $300 USD (sliding scale)",
+      "product_type": "course",
+      "start_date": "2026-12-30",
+      "end_date": "2027-01-31",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://import.cdn.thinkific.com/478758/BMimQlF0REuLSjGPTstk_Course%20Tile.jpg"
+    },
+    {
+      "title": "Nature Sangha (IMS Online)",
+      "url": "https://ims.dharma.org/courses/nature-sangha-2026",
+      "description": "A free monthly online gathering on the first Tuesday for people drawn to practise with the natural world, with guided meditation, reflection and discussion. Teachers rotate; Yong Oh leads the 1 December 2026 session.",
+      "price": "Free, or $5 to $10 USD per month (optional subscription)",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://import.cdn.thinkific.com/478758/KughDJYQRcCocH8d8dcl_Course%20Tile%20760x420.jpg"
+    },
+    {
+      "title": "Being Dharma: A Month-long Residential Retreat",
+      "url": "https://sacredmountainsangha.org/monthlong/",
+      "description": "A month of silent, monastic-style practice for experienced meditators at Big Bear Retreat Center in California, run by Sacred Mountain Sangha with Kittisaro, Thanissara, Yong Oh and Djuna Devereaux. It combines insight practice with devotional and mantra practice, and applicants must commit to the whole month.",
+      "price": "From $1,800 USD (sliding scale)",
+      "product_type": "retreat",
+      "start_date": "2027-04-06",
+      "end_date": "2027-05-06",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/6a9fc29fb0b91e6f8b5cee25/77802eed-883b-4c5e-920b-6e8a7c5d9518/Untitled+design+%2836%29.png?format=1500w"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "hub": "insight-meditation-society",
+    "rank": 15,
+    "hub_url": "https://www.dharma.org/teacher/yong-oh/",
+    "tier_evidence": "No YouTube, Instagram, Facebook, X or TikTok account found (1 Nov 2026); yongoh.com links none → 0 counted → local_hero",
+    "email": "yes",
+    "email_source": "https://rockymountainecodharmaretreatcenter.secure.retreat.guru/teacher/young-oh/",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 5 source(s)",
+    "flags": [
+      "Thin listing: 1 video, 2 IMS programmes (count once) and 1 outside retreat, which just reaches the 3-item bar.",
+      "Email yongoh.practice@gmail.com comes from his teacher profile on Rocky Mountain Ecodharma Retreat Center's booking site (listed under '2024 Team', page spells him 'Young Oh'), where he asks people to contact him there for practice interviews; his own site publishes no email or form. May be dated.",
+      "yongoh.com returns 406 to curl (mod_security); read via WebFetch only, so it is not among the bio-check sources.",
+      "Only one usable photo (IMS hub headshot); no own-site or YouTube photo.",
+      "Nature Sangha is a rotating IMS group; he leads only the 1 Dec 2026 session.",
+      "Being Dharma is hosted by Big Bear Retreat Center and run by Sacred Mountain Sangha; Kittisaro and Thanissara are the senior teachers.",
+      "Tier counts are 0: no personal social accounts found.",
+      "Dry run on dev skips the Experience of Insight 2027 offering because that URL is already in from another teacher's plan (shared hub page); it will not be added again for this teacher."
+    ],
+    "left_out": [
+      "Reclaiming Devotion (IMS Online, 28 Oct-18 Nov 2026): already started.",
+      "Heart of Mindfulness year-long course (Durango Dharma Center): began 1 Nov 2026, closed group.",
+      "His 2027 IMS Retreat Center and Spirit Rock retreats: on events.dharma.org / spiritrock.org, not fetched.",
+      "Big Bear (June 2027), Southern Dharma (July 2027) and Vallecitos (Aug-Sep 2027) retreats: 'TBD', no pages.",
+      "Lineage Stories with Kittisaro, Thanissara, and Yong Oh: a three-way conversation where his teachers lead; IMS promo clips for Touching the Earth (2022): promos, dated.",
+      "BIPOC Sangha and Metta Sangha (IMS): kept to two IMS programmes.",
+      "Books: none found."
+    ]
+  },
+  "images_final": true
 }

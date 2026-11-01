@@ -41,7 +41,8 @@
       "subjects": [
         "spirituality",
         "meditation"
-      ]
+      ],
+      "channel": "Clear Mountain Monastery"
     },
     {
       "title": "Bhante Buddharakkhita - Fears: Death, Public Speaking and Mother-In-Laws",
@@ -49,7 +50,8 @@
       "subjects": [
         "meditation",
         "spirituality"
-      ]
+      ],
+      "channel": "BSV Dhamma Talks"
     },
     {
       "title": "Bhante Buddharakkhita -  Happiness Formula",
@@ -57,7 +59,8 @@
       "subjects": [
         "meditation",
         "spirituality"
-      ]
+      ],
+      "channel": "BSV Dhamma Talks"
     },
     {
       "title": "Bhante Buddharakkhita - Freedom of the Heart and Mind",
@@ -65,7 +68,8 @@
       "subjects": [
         "meditation",
         "spirituality"
-      ]
+      ],
+      "channel": "BSV Dhamma Talks"
     },
     {
       "title": "Bhante Buddharakkhita - Misconceptions of Buddhism",
@@ -73,7 +77,8 @@
       "subjects": [
         "spirituality",
         "ancient-wisdom"
-      ]
+      ],
+      "channel": "BSV Dhamma Talks"
     },
     {
       "title": "Bhante Buddharakkhita - How to have peace in your mind - 20160520",
@@ -81,7 +86,8 @@
       "subjects": [
         "meditation",
         "mindfulness"
-      ]
+      ],
+      "channel": "Buddhist Fellowship"
     },
     {
       "title": "Bhante Buddharakkhita- The Way to Heaven: A Buddhist's Perspective",
@@ -89,7 +95,8 @@
       "subjects": [
         "spirituality",
         "death-the-afterlife"
-      ]
+      ],
+      "channel": "BSV Dhamma Talks"
     },
     {
       "title": "\"Freedom from Fear\" by Bhante Buddharakkhita - 20220731",
@@ -97,7 +104,8 @@
       "subjects": [
         "meditation",
         "spirituality"
-      ]
+      ],
+      "channel": "Buddhist Fellowship"
     },
     {
       "title": "\"Emptiness\" by Bhante Buddharakkhita - 20230604",
@@ -105,7 +113,8 @@
       "subjects": [
         "spirituality",
         "non-duality"
-      ]
+      ],
+      "channel": "Buddhist Fellowship"
     },
     {
       "title": "Breaking Through Self-Illusion by Bhante Buddharakkhita - 20230530",
@@ -113,7 +122,8 @@
       "subjects": [
         "spirituality",
         "meditation"
-      ]
+      ],
+      "channel": "Buddhist Fellowship"
     },
     {
       "title": "Bringing The Dhamma To Africa",
@@ -121,7 +131,8 @@
       "subjects": [
         "spirituality",
         "meditation"
-      ]
+      ],
+      "channel": "Be Here Now Podcast Network 2"
     }
   ],
   "books": [],
@@ -137,7 +148,8 @@
       "subjects": [
         "meditation",
         "mindfulness"
-      ]
+      ],
+      "image": "https://import.cdn.thinkific.com/478758/HncLbScXQ3S9rSnqxOuH_Course%20Tile%20760x420.jpg"
     }
   ],
   "free_resources": [
@@ -150,7 +162,8 @@
       "subjects": [
         "meditation",
         "mindfulness"
-      ]
+      ],
+      "image": "https://www.dharma.org/wp-content/uploads/Bhante-Buddharakkhita-1.webp"
     },
     {
       "title": "Planting Dhamma Seeds: The Emergence of Buddhism in Africa",
@@ -161,7 +174,8 @@
       "subjects": [
         "spirituality",
         "meditation"
-      ]
+      ],
+      "image": "https://www.dharma.org/wp-content/uploads/Bhante-Buddharakkhita-1.webp"
     },
     {
       "title": "Drop by Drop: The Buddha's Path to True Happiness",
@@ -172,7 +186,8 @@
       "subjects": [
         "spirituality",
         "mindfulness"
-      ]
+      ],
+      "image": "https://www.dharma.org/wp-content/uploads/Bhante-Buddharakkhita-1.webp"
     },
     {
       "title": "Caring for Our Planet: Buddhism and the Environment",
@@ -183,7 +198,8 @@
       "subjects": [
         "spirituality",
         "ancient-wisdom"
-      ]
+      ],
+      "image": "https://www.dharma.org/wp-content/uploads/Bhante-Buddharakkhita-1.webp"
     }
   ],
   "sprint": {
@@ -194,8 +210,20 @@
     "email": "yes",
     "email_source": "https://ugandabuddhistcenter.org/contact-directions/",
     "contact_form_url": null,
-    "bio_check": "",
-    "flags": [],
-    "left_out": []
+    "bio_check": "OK: no 8-word runs against 6 source(s)",
+    "flags": [
+      "Email ugandabuddhistcentre@gmail.com is the Uganda Buddhist Centre's general inbox (Cloudflare-obfuscated on the contact page, decoded); the centre he founded and leads as abbot. website_url points at the centre's Our Abbot page.",
+      "His books could not be verified on amazon.com (dp pages for 1723375683, 1724329626, 983251598X returned 500 on 1 Nov 2026, WebFetch also 500); all four books are instead listed as free PDF downloads from the centre.",
+      "Thanksgiving livestream offering is skipped on dry run because its URL is already on dev from a co-teacher's plan.",
+      "Availability local_online, Entebbe, Uganda (centre runs weekly in-person meditation; he also teaches online/abroad); some sources say he now lives partly at the Bhavana Society in West Virginia.",
+      "Name kept with the honorific 'Bhante' as he is known; IMS spells it both Buddharakkhita and Buddharakkita.",
+      "Tier: no personal social accounts found; the centre's YouTube channel not counted, total 0."
+    ],
+    "left_out": [
+      "Video 'Healing Difficult Emotions: Freedom From Fear' (IMS hub featured talk): 'healing' framing, left out under the health rule.",
+      "Books on Amazon: not verifiable (500s), used the free PDFs instead.",
+      "Portuguese-titled Buddhist Fellowship / BSV re-uploads shown in search: translated duplicates.",
+      "News clips (NTV Uganda, World Buddhist Summit, alms round on the centre channel): not teaching."
+    ]
   }
 }

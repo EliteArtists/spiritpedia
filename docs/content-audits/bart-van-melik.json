@@ -153,8 +153,21 @@
     "email": "yes",
     "email_source": "https://www.bartvanmelik.com/contact",
     "contact_form_url": null,
-    "bio_check": "",
-    "flags": [],
-    "left_out": []
+    "bio_check": "OK: no 8-word runs against 6 source(s)",
+    "flags": [
+      "Tier: no personal social accounts found, total 0 (counts unreadable for any main account); local_hero by default of evidence.",
+      "Email vanmelik@hotmail.com is a personal Hotmail address published as the Contact link on every page of bartvanmelik.com.",
+      "IMS livestream offering is skipped on dry run because its URL is already on dev (another co-teacher's plan); he gets no hub offering row of his own unless the shared-programme link is handled.",
+      "Second photo (his site, IMG_2604) looks like a younger Bart; same person as the IMS headshot as far as I can tell.",
+      "Still, in the City is an anthology edited by Angela Dews (Amazon credits Dews only); his site calls him co-author, so left out of books and mentioned in the bio as a contributor.",
+      "Community Meditation Center Sunday sessions use cmc-ny.org (the centre's site), which he leads as guiding teacher."
+    ],
+    "left_out": [
+      "Video 'How to Handle Exhaustion, Disconnection, and Physical Pain' (10% Happier): names physical pain, health rule.",
+      "Videos 'How to Handle 4 AM Worry Spirals' and 'A Master Teacher Answers Your Questions on Worry, Boredom, and Forgiveness' (10% Happier): borderline worry/panic framing, left out.",
+      "Still, in the City (Angela Dews, ed.): anthology, not authored by him.",
+      "Finding Freedom on the Path (BCBS, Feb 2025 to Apr 2026): started, and led by Nic Redfern.",
+      "Portuguese-titled Sangha Live / CMC uploads: translated duplicates of English talks."
+    ]
   }
 }

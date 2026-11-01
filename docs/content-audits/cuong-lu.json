@@ -40,7 +40,8 @@
       "subjects": [
         "meditation",
         "spirituality"
-      ]
+      ],
+      "channel": "Mind Only"
     },
     {
       "title": "Cuong Lu over: Hoe kan ik overal rust ervaren",
@@ -48,7 +49,8 @@
       "subjects": [
         "meditation",
         "mindfulness"
-      ]
+      ],
+      "channel": "Mind Only"
     },
     {
       "title": "Cuong Lu Guided Meditation",
@@ -56,7 +58,8 @@
       "subjects": [
         "meditation",
         "mindfulness"
-      ]
+      ],
+      "channel": "Tricycle"
     },
     {
       "title": "This Very Moment Episode 11: Finding Your Way Home with Cuong Lu",
@@ -64,7 +67,8 @@
       "subjects": [
         "meditation",
         "spirituality"
-      ]
+      ],
+      "channel": "Shambhala Publications"
     },
     {
       "title": "Cuong Lu’s Dharma Talk, \"Happiness is Overrated,” May 28, 2023",
@@ -72,7 +76,8 @@
       "subjects": [
         "meditation",
         "spirituality"
-      ]
+      ],
+      "channel": "Village Zendo"
     },
     {
       "title": "The Buddha in Jail: Cuong Lu on Interbeing",
@@ -80,7 +85,8 @@
       "subjects": [
         "spirituality",
         "consciousness"
-      ]
+      ],
+      "channel": "Lisa Dale Miller LMFT SEP"
     },
     {
       "title": "The Buddha in Jail - Cuong Lu 7/28/19",
@@ -88,7 +94,8 @@
       "subjects": [
         "meditation",
         "spirituality"
-      ]
+      ],
+      "channel": "Zen Life & Meditation Center, Chicago"
     },
     {
       "title": "Cuong Lu - Mind Only Conferentie 2024",
@@ -96,7 +103,8 @@
       "subjects": [
         "consciousness",
         "non-duality"
-      ]
+      ],
+      "channel": "Mind Only"
     },
     {
       "title": "You are empty - Cuong Lu",
@@ -104,14 +112,16 @@
       "subjects": [
         "non-duality",
         "meditation"
-      ]
+      ],
+      "channel": "No Word Zen"
     },
     {
       "title": "What is meditation? - Cuong Lu",
       "url": "https://www.youtube.com/watch?v=3XFxyxRMvyk",
       "subjects": [
         "meditation"
-      ]
+      ],
+      "channel": "No Word Zen"
     },
     {
       "title": "I found my true self - Cuong Lu",
@@ -119,7 +129,8 @@
       "subjects": [
         "spiritual-awakening",
         "meditation"
-      ]
+      ],
+      "channel": "No Word Zen"
     }
   ],
   "books": [
@@ -135,7 +146,8 @@
       "subjects": [
         "spirituality",
         "meditation"
-      ]
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1645474968.01._SCLZZZZZZZ_.jpg"
     },
     {
       "title": "Happiness Is Overrated: Simple Lessons on Finding Meaning in Each Moment",
@@ -149,7 +161,8 @@
       "subjects": [
         "spirituality",
         "mindfulness"
-      ]
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1645471675.01._SCLZZZZZZZ_.jpg"
     },
     {
       "title": "The Buddha in Jail: Restoring Lives, Finding Hope and Freedom",
@@ -163,7 +176,8 @@
       "subjects": [
         "spirituality",
         "mindfulness"
-      ]
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1949017133.01._SCLZZZZZZZ_.jpg"
     }
   ],
   "courses": [
@@ -178,7 +192,8 @@
       "subjects": [
         "spirituality",
         "meditation"
-      ]
+      ],
+      "image": "https://import.cdn.thinkific.com/478758/Kbnoh63UT2GsU2sSQErS_Course%20Tile%20760x420.jpg"
     },
     {
       "title": "De Diamant Soetra: Ontdek Je Ware Zelf",
@@ -191,7 +206,8 @@
       "subjects": [
         "non-duality",
         "spirituality"
-      ]
+      ],
+      "image": "https://import.cdn.thinkific.com/478758/T7K17anTrG4DefDg9bYn_Cuong_Lu_2023_square.jpg"
     },
     {
       "title": "Masterclass 2027: Van oorsprong, niet één ding",
@@ -204,7 +220,8 @@
       "subjects": [
         "spiritual-awakening",
         "non-duality"
-      ]
+      ],
+      "image": "https://import.cdn.thinkific.com/478758/T7K17anTrG4DefDg9bYn_Cuong_Lu_2023_square.jpg"
     }
   ],
   "free_resources": [],
@@ -216,8 +233,23 @@
     "email": "yes",
     "email_source": "https://cuonglu.org/contact",
     "contact_form_url": null,
-    "bio_check": "",
-    "flags": [],
-    "left_out": []
+    "bio_check": "OK: no 8-word runs against 14 source(s)",
+    "flags": [
+      "His personal site cuonglu.org currently leads with an open letter to Vietnam's party leader To Lam about repression of Buddhist communities and a suspected poisoning under police investigation; this is religious-freedom advocacy rather than partisan commentary and his YouTube titles are all teaching, but a human should decide whether it trips the political rule.",
+      "Email info@mindonly.org is the Mind Only school's general inbox, published on cuonglu.org/contact and mindonly.nl/contact.",
+      "Availability local_online with the base set to the No Word Zen practice centre in Magnac-Laval, France, where his residential retreats are held; he is otherwise based in the Netherlands (no public Dutch address found).",
+      "Wait: A Love Letter to Those in Despair (Shambhala, 2021) left out as borderline (despair framing); restore if the owner judges it fine.",
+      "Hub URL is the IMS book-club course page (no IMS teacher page found); he also teaches at the Barre Center for Buddhist Studies (not a sprint hub).",
+      "IMS book-club price not shown on the page, so 'Contact for pricing'.",
+      "Tier: no personal accounts; brand channels No Word Zen (24) and Mind Only (249) not counted."
+    ],
+    "left_out": [
+      "Mind Only Basisjaar (three-year Buddhist psychology): learning goals name trauma, depression and burn-out.",
+      "CLTeachings.nl membership: pitched on transforming stress and anxiety.",
+      "Dieet: Leegte in Verzadigheid: diet framing, borderline weight claim.",
+      "Van Hart tot Hart (Apr 2027): closed training for Mind Only teachers only.",
+      "Video 'Cuong Lu over boosheid en pijn': 'pain' in title, left out to be safe.",
+      "Wait: A Love Letter to Those in Despair: despair framing, borderline."
+    ]
   }
 }
