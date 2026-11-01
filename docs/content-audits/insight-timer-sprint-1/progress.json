@@ -4009,8 +4009,8 @@
    "base": "Vancouver, BC, Canada",
    "website": "https://www.secretgardensociety.com",
    "note": null,
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/desiree-dunbar.json",
    "skip_reason": null
   },
   {
@@ -4028,9 +4028,9 @@
    "base": "Santiago, Chile",
    "website": "https://linktr.ee/daiunjoshin",
    "note": "Linktree only.",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Too thin: he has only a Linktree (Gmail and a contact form), no website, books or paid offerings; the YouTube playlist he links is other teachers' videos and his own channel (13 subscribers) holds two uploads of another teacher's talks, so nothing beyond the Insight Timer link and a Facebook community page could be listed."
   },
   {
    "rank": 213,
@@ -4047,9 +4047,9 @@
    "base": "Lisbon, Portugal",
    "website": "www.feelgoodastrology.com",
    "note": "Given URL redirects to louisatannermunson.com.",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Strict health rule: her own YouTube channel, which the page would link, carries guest talks presenting the Spooky2 frequency device as a healing plan, iridology, and a trauma-removal process. She is also thin and quiet (last Insight Timer upload about 7 years ago, 4 low-view videos). Researcher's plan kept in dropped/."
   },
   {
    "rank": 214,
@@ -4066,7 +4066,7 @@
    "base": "Northfield, MN, USA",
    "website": "charlesfreligh.com",
    "note": null,
-   "status": "planned",
+   "status": "dev",
    "plan": "docs/content-audits/charles-freligh.json",
    "skip_reason": null
   },
@@ -4104,8 +4104,8 @@
    "base": "London, UK",
    "website": "https://zenways.org/?utm_source=insighttimer.com&utm_medium=profile",
    "note": "Zenways (founded by Daizan Roshi); organisation contact form.",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/julian-daizan-skinner.json",
    "skip_reason": null
   },
   {
@@ -4123,8 +4123,8 @@
    "base": "New York, NY, USA",
    "website": "www.ninaraochant.com",
    "note": null,
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/nina-rao.json",
    "skip_reason": null
   },
   {
@@ -4142,9 +4142,9 @@
    "base": "Cincinnati, OH, USA",
    "website": "www.viviennegerard.com",
    "note": "Spiritual mentor for leaders; in-person and Zoom.",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Strict health rule: her own site, viviennegerard.com, sells 'Light Medicine' ($111), a set of eleven 'healing transmissions' that bring light 'into the specific symptom' with protocols such as 'Ringing of the Ears' and grief, as one of the three main offers on her home page, and bundles 'community energy healing' and 'virtual acupuncture' sessions into her mentoring and activation sessions, so a listing would send people to condition-sold pages even with those items left out."
   },
   {
    "rank": 219,
@@ -4161,9 +4161,9 @@
    "base": "Bali, Indonesia",
    "website": null,
    "note": "Website not on profile; found rachelfearnley.com (somatic practitioner, anger/grief work for women); co-founder of The Whole Health Project.",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Strict health rule: her own site, rachelfearnley.com, sells in its main menu her book 'Somatic Practices for Trauma' and courses called 'Heal Your Life', 'Re-Wire Your Nervous System' and 'Your Inner Pharmacy', and her one-to-one work is framed around perimenopause and midlife, so a listing would send people to condition-sold pages."
   },
   {
    "rank": 220,
@@ -4180,9 +4180,9 @@
    "base": "Denver, CO, USA",
    "website": "mojaday.com",
    "note": "Site Mojaday is a product shop (oils, sprays) and magazine; no teaching offer seen.",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "A product brand rather than a teacher: the only site linked, mojaday.com, is a wellness shop (oils, sprays, clothing) and magazine with no classes, sessions, courses or retreats of hers, the founder story there is not clearly in her name, and products such as a hair growth oil and a mental health giving pledge would also fall under the health rule."
   },
   {
    "rank": 221,
@@ -4237,8 +4237,8 @@
    "base": "Columbus, OH, USA",
    "website": "oneyoufeed.net",
    "note": "Podcast host (The One You Feed).",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/eric-zimmer.json",
    "skip_reason": null
   },
   {
@@ -4356,5 +4356,5 @@
    "skip_reason": "No working contact route: no email is published and his contact page (spontaneous-evolution.com/contact/) returns a WordPress critical error (HTTP 500) on 1 Nov 2026, as does the Homecoming course page; booking is only via TidyCal. His offerings page also markets sessions to people with alcohol, weed or drug issues, which falls under the strict health rule."
   }
  ],
- "updated": "2026-11-01T19:25:05.661Z"
+ "updated": "2026-11-01T19:36:00.637Z"
 }
