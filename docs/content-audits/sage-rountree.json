@@ -1,0 +1,411 @@
+{
+  "healer": {
+    "healer_slug": "sage-rountree",
+    "create": {
+      "name": "Sage Rountree",
+      "bio": "Sage Rountree is a yoga teacher and trainer of yoga teachers based in North Carolina. She holds a doctorate in English literature and came to yoga teaching through coaching endurance athletes, which led her to look at asana through exercise physiology rather than through a list of things that might go wrong. For fifteen years she ran the Carrboro Yoga Company, and she has been on the Kripalu faculty for more than fifteen years, as well as teaching at Wanderlust, Yoga Journal events and the U.S. Olympic Training Center.\n\nMost of her work now is with teachers. Her online studio, Comfort Zone Yoga, offers Yoga Alliance-registered 200-hour and 300-hour trainings, continuing-education courses on yin, restorative, yoga nidra, balance and core, a sequencing mentorship and a lesson-planning membership. She builds classes on a simple framework covering the spine's six movements, four lines of the hip and two ways of working the core, and she gives particular weight to the quieter styles: gentle, yin and restorative yoga and nidra. She hosts the Yoga Teacher Confidential podcast and has written thirteen books, among them The Art of Yoga Sequencing and two volumes of Teaching Yoga Beyond the Poses with Alexandra DeSiato.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "worldwide",
+      "city": null,
+      "country": null,
+      "subjects": [
+        "yoga",
+        "meditation"
+      ],
+      "website_url": "https://sagerountree.com",
+      "booking_url": "https://sagerountree.com/yoga-programs/",
+      "youtube_url": "https://www.youtube.com/@sagerountree",
+      "instagram_url": "https://www.instagram.com/sagerountree/",
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "info@sagerountree.com",
+      "image_urls": [
+        "https://yt3.googleusercontent.com/jqOW6ccYJNIC6omDDIcf5Y2jL-KIJ8srQ5c2N7UbPblh2KqH4ikDluRVumaT6vTRCiOvuWdxEQ=s900-c-k-c0x00ffffff-no-rj",
+        "https://kripalu.org/sites/default/files/styles/og_image/public/2026-08/Webupdates%20%28800x1000px%29_1.png?itok=E4EFsHdK"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "kripalu",
+      "role": "instructor"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Stop Overthinking Every Word: The 3 Cue Rule That Transforms Your Yoga Teaching",
+      "url": "https://www.youtube.com/watch?v=W4WZxe93Zf0",
+      "subjects": [
+        "yoga"
+      ],
+      "channel": "Sage Rountree"
+    },
+    {
+      "title": "Gentle Yoga: Full Body Flow with Sage Rountree",
+      "url": "https://www.youtube.com/watch?v=nVaPRYmjkJA",
+      "subjects": [
+        "yoga"
+      ],
+      "channel": "YogaVibes"
+    },
+    {
+      "title": "How Teaching Yin & Restorative Yoga Makes You Better at Teaching Everything",
+      "url": "https://www.youtube.com/watch?v=EpPt0iNabwk",
+      "subjects": [
+        "yoga"
+      ],
+      "channel": "Sage Rountree"
+    },
+    {
+      "title": "How to Teach Yoga Without Planning a New Class Every Week",
+      "url": "https://www.youtube.com/watch?v=_wOHN-3mAo0",
+      "subjects": [
+        "yoga"
+      ],
+      "channel": "Sage Rountree"
+    },
+    {
+      "title": "How to Teach Yoga Balance Poses for Every Body Live Workshop",
+      "url": "https://www.youtube.com/watch?v=i0ZmCWFc0cU",
+      "subjects": [
+        "yoga"
+      ],
+      "channel": "Sage Rountree"
+    },
+    {
+      "title": "How to Teach Yin Yoga: A Full Class, Built Live (Free Workshop)",
+      "url": "https://www.youtube.com/watch?v=hFSBR9TXx8U",
+      "subjects": [
+        "yoga"
+      ],
+      "channel": "Sage Rountree"
+    },
+    {
+      "title": "How to Teach Restorative Yoga That Actually Restores (Live Workshop)",
+      "url": "https://www.youtube.com/watch?v=0IDgWTO8d08",
+      "subjects": [
+        "yoga"
+      ],
+      "channel": "Sage Rountree"
+    },
+    {
+      "title": "Stop Planning a New Class Every Week: The Repeat Method",
+      "url": "https://www.youtube.com/watch?v=HTaTkP2_Bok",
+      "subjects": [
+        "yoga"
+      ],
+      "channel": "Sage Rountree"
+    },
+    {
+      "title": "When (and When NOT) to Demo Poses in Your Yoga Class",
+      "url": "https://www.youtube.com/watch?v=kBYYSGLI9C4",
+      "subjects": [
+        "yoga"
+      ],
+      "channel": "Sage Rountree"
+    },
+    {
+      "title": "Yoga Nidra Script Secrets: What to Say for 20 Minutes (Workshop + Guided Nidra)",
+      "url": "https://www.youtube.com/watch?v=L4iQ-ihB15g",
+      "subjects": [
+        "yoga",
+        "meditation"
+      ],
+      "channel": "Sage Rountree"
+    },
+    {
+      "title": "Two Arrows of Suffering: Yoga Philosophy for Yoga Teachers Who Second-Guess Everything",
+      "url": "https://www.youtube.com/watch?v=AF8nPvSWhVc",
+      "subjects": [
+        "yoga",
+        "ancient-wisdom"
+      ],
+      "channel": "Sage Rountree"
+    },
+    {
+      "title": "The 5 Kleshas in the Teacher’s Seat: Yoga Philosophy for Yoga Teachers Who Perform Calm",
+      "url": "https://www.youtube.com/watch?v=itXFm5cttac",
+      "subjects": [
+        "yoga",
+        "ancient-wisdom"
+      ],
+      "channel": "Sage Rountree"
+    }
+  ],
+  "books": [
+    {
+      "title": "The Art of Yoga Sequencing: Contemporary Approaches and Inclusive Practices for Teachers and Practitioners",
+      "slug": "the-art-of-yoga-sequencing",
+      "author": "Sage Rountree",
+      "asin": "1623179106",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "Her handbook on putting classes together in a balanced way, with templates for basic, flowing, gentle, yin and restorative formats. It sets out her framework for covering the spine, hips and core in every session.",
+      "subjects": [
+        "yoga"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1623179106.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "Teaching Yoga Beyond the Poses: A Practical Workbook for Integrating Themes, Ideas, and Inspiration into Your Class",
+      "slug": "teaching-yoga-beyond-the-poses",
+      "author": "Sage Rountree, Alexandra DeSiato",
+      "asin": "1623173221",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "Written with Alexandra DeSiato, a workbook of class themes drawn from yoga philosophy, seasons and everyday ideas. Each comes with suggested poses, cues, readings and ways to carry the idea through a class.",
+      "subjects": [
+        "yoga",
+        "ancient-wisdom"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1623173221.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "Teaching Yoga Beyond the Poses, Volume 2: 54 New Themes, Templates, and Ideas for Integrating Inspiration into Your Class",
+      "slug": "teaching-yoga-beyond-the-poses-volume-2",
+      "author": "Sage Rountree, Alexandra DeSiato",
+      "asin": "B0D7H43J79",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "A second set of fifty-four class themes with DeSiato, laid out as ready-to-adapt templates. It suits teachers who want each class to carry a single clear idea from opening to rest.",
+      "subjects": [
+        "yoga"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/B0D7H43J79.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "The Professional Yoga Teacher’s Handbook",
+      "slug": "the-professional-yoga-teachers-handbook",
+      "author": "Sage Rountree",
+      "asin": "1615196978",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "A practical guide to yoga teaching as a career, from finding a voice and setting boundaries to pricing, privates, workshops and keeping going over the long term.",
+      "subjects": [
+        "yoga"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1615196978.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "The Athlete's Guide to Yoga: An Integrated Approach to Strength, Flexibility, and Focus",
+      "slug": "the-athletes-guide-to-yoga",
+      "author": "Sage Rountree",
+      "asin": "193403004X",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "Her first book, showing how athletes can fit yoga around a training year. It pairs sequences for different phases of a season with breath and focus work.",
+      "subjects": [
+        "yoga"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/193403004X.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "The Runner's Guide to Yoga",
+      "slug": "the-runners-guide-to-yoga",
+      "author": "Sage Rountree",
+      "asin": "1890586668",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "A yoga book written for runners, now in a second edition, with short routines for before and after runs and longer sessions for rest days.",
+      "subjects": [
+        "yoga"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1890586668.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "Lifelong Yoga: Maximizing Your Balance, Flexibility, and Core Strength in Your 50s, 60s, and Beyond",
+      "slug": "lifelong-yoga",
+      "author": "Sage Rountree, Alexandra DeSiato",
+      "asin": "1623171431",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "Co-written with DeSiato for people practising in later life. It offers adaptable sequences for balance, flexibility and core work, with chairs and props where helpful.",
+      "subjects": [
+        "yoga"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1623171431.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "Everyday Yoga: At-Home Routines to Enhance Fitness, Build Strength, and Restore Your Body",
+      "slug": "everyday-yoga",
+      "author": "Sage Rountree",
+      "asin": "1937715353",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "A collection of short home practices organised by aim and time available, so readers can choose a routine that fits the day they are having.",
+      "subjects": [
+        "yoga"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1937715353.01._SCLZZZZZZZ_.jpg"
+    }
+  ],
+  "courses": [
+    {
+      "title": "Teaching Restful Yoga: Gentle, Yin, Restorative, and Nidra for Teachers",
+      "url": "https://kripalu.org/experiences/teaching-restful-yoga-gentle-yin-restorative-and-nidra-teachers",
+      "description": "Five days on the Kripalu campus for teachers hoping to lead the quieter styles with more skill. Through practice, discussion and peer teaching it covers sequencing, props, language and the use of silence, and participants leave with lesson plans and a nidra script template. It carries 23.5 Yoga Alliance hours.",
+      "price": "From $460 USD plus lodging",
+      "product_type": "retreat",
+      "start_date": "2027-03-07",
+      "end_date": "2027-03-12",
+      "subjects": [
+        "yoga",
+        "meditation"
+      ],
+      "image": "https://kripalu.org/sites/default/files/styles/og_image/public/2025-09/yoga_nidra.jpg?itok=exH5wJTH"
+    },
+    {
+      "title": "Gentle, Yin, and Restorative Yoga: Restore Comfort and Ease",
+      "url": "https://kripalu.org/experiences/gentle-yin-and-restorative-yoga-restore-comfort-and-ease",
+      "description": "A weekend at Kripalu for anyone who finds it hard to slow down. Sessions combine gentle, yin and restorative yoga with guided yoga nidra, and no previous experience is needed.",
+      "price": "From $360 USD plus lodging",
+      "product_type": "retreat",
+      "start_date": "2027-03-05",
+      "end_date": "2027-03-07",
+      "subjects": [
+        "yoga",
+        "meditation"
+      ],
+      "image": "https://kripalu.org/sites/default/files/styles/og_image/public/2025-08/The-First-International-Yoga-Nidra-Conference-1200x750.jpg?itok=5X6SwZXU"
+    },
+    {
+      "title": "200-Hour Online Yoga Teacher Training",
+      "url": "https://sagerountree.com/200-hour-online-yoga-teacher-training/",
+      "description": "Her Yoga Alliance-registered foundation training, taught online. Self-paced lessons open on enrolment, followed by live video sessions with a cohort, and it is built on her own sequencing and teaching frameworks.",
+      "price": "$3,500 USD",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://sagerountree.com/wp-content/uploads/2026/03/Sage-Rountree-yoga-mentor-author.jpg"
+    },
+    {
+      "title": "300-Hour Advanced Yoga Teacher Training",
+      "url": "https://sagerountree.com/300-hour-online-yoga-teacher-training/",
+      "description": "A modular advanced training for teachers who already hold a 200-hour certificate, leading to the 500-hour level. Students combine her mentorship with either the athletes programme or a set of her shorter courses, online or partly in person.",
+      "price": "From $4,300 USD",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://sagerountree.com/wp-content/uploads/2025/11/CYCFW2025_RadianPhotography-375.jpg"
+    },
+    {
+      "title": "Teaching Yoga to Athletes",
+      "url": "https://sagerountree.com/teaching-yoga-to-athletes-online-teacher-training/",
+      "description": "A self-paced online training on working with runners, climbers, lifters, swimmers and teams. Its central idea is that athletes need balance and rest from yoga rather than another hard workout.",
+      "price": "$2,500 USD",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://sagerountree.com/wp-content/uploads/2025/01/Sage-Rountree-Teaching-Workshop-Carrboro-Yoga.jpg"
+    },
+    {
+      "title": "Mastering the Art of Yoga Sequencing: A Mentorship Membership",
+      "url": "https://sagerountree.com/mentorship/",
+      "description": "A six-month mentorship in planning classes, with live calls, sequence libraries and feedback. Admission is rolling, and it counts towards her 300-hour training.",
+      "price": "$1,800 USD",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://sagerountree.com/wp-content/uploads/2025/01/Sage-Rountree-Teaching-Workshop-Carrboro-Yoga.jpg"
+    },
+    {
+      "title": "The Yoga Class Prep Station",
+      "url": "https://www.comfortzoneyoga.com/prep",
+      "description": "A monthly membership for teachers with more than two hundred sequences, a lesson-planning tool and a live call each month. Members also earn continuing-education hours.",
+      "price": "$39 USD a month",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://assets-v2.circle.so/nt8mng9kij0wzujevxam6b7h2m03"
+    },
+    {
+      "title": "The Workshop Workbook",
+      "url": "https://sagerountree.com/the-workshop-workbook/",
+      "description": "A self-study system for designing and running yoga workshops, with templates and exercises that take a teacher from first idea to a full room.",
+      "price": "$77 USD",
+      "product_type": "download",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://sagerountree.com/wp-content/uploads/2025/01/Sage-Rountree-Teaching-Workshop-Carrboro-Yoga.jpg"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Go-to Yoga Lesson Plan",
+      "url": "https://sagerountree.com/newsletter/",
+      "description": "The class plan she uses when her own energy is low, sent free when you join her newsletter for teachers. It comes with notes on adapting it to different formats.",
+      "featured": true,
+      "resource_type": "download",
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://sagerountree.com/wp-content/uploads/2025/01/Sage-Rountree-Teaching-Workshop-Carrboro-Yoga.jpg"
+    },
+    {
+      "title": "Free Workshop: Teaching Yoga to Athletes",
+      "url": "https://sagerountree.com/free-workshop-how-to-double-your-income-teaching-yoga-to-athletes/",
+      "description": "A forty-minute recorded session on the kind of class athletes benefit from and on finding nearby running clubs, gyms and teams that want a teacher.",
+      "featured": false,
+      "resource_type": "workshop",
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://sagerountree.com/wp-content/uploads/2025/01/Sage-Rountree-Teaching-Workshop-Carrboro-Yoga.jpg"
+    }
+  ],
+  "sprint": {
+    "hub": "kripalu",
+    "rank": 7,
+    "hub_url": "https://kripalu.org/people/sage-rountree",
+    "tier_evidence": "Instagram @sagerountree 11K (og:description, 1 Nov 2026); YouTube @sagerountree 5.04K (channel header row, 1 Nov 2026); Threads not counted (no readable count); no Facebook, X or TikTok linked from her site → ~16k total → local_hero",
+    "email": "yes",
+    "email_source": "https://sagerountree.com/",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 39 source(s)",
+    "flags": [
+      "Email info@sagerountree.com is Cloudflare-obfuscated in the footer of every page (decoded); booking@sagerountree.com is also given on the booking page.",
+      "Her work is mainly training yoga teachers through exercise physiology rather than spiritual teaching as such; subjects kept to yoga and meditation (nidra).",
+      "Availability set to worldwide: based in North Carolina but her studio (Carrboro Yoga Company) is described as former; she teaches online and travels for workshops.",
+      "Several books are co-authored with Alexandra DeSiato (possible separate listing elsewhere)."
+    ],
+    "left_out": [
+      "The Athlete's Guide to Recovery (1538181479): 'recovery' is athletic rest, not a condition, but borderline under the health-claim rule, so left out.",
+      "Yoga Off the Mat (with DeSiato, new): only an ebook ASIN found and the amazon.com page returned 500; no print ASIN verified.",
+      "Racing Wisely and The Athlete's Pocket Guide to Yoga: endurance-racing titles / amazon page returned 503.",
+      "Fundamentals of Teaching Trauma-Informed Yoga: condition-named and led by another teacher.",
+      "Fundamentals of Teaching Yin, Restorative, Yoga Nidra, Balance and Core (comfortzoneyoga.com): prices load only by script and could not be read.",
+      "Comfort Zone Yoga virtual studio membership and Minimalist Instagram for Yoga Teachers: no price read / not teaching content.",
+      "Yoga Teacher Confidential podcast: no single free resource URL that fits the item types.",
+      "Videos on balance for students over 50 and income/pricing videos: kept to teaching-craft and philosophy videos."
+    ]
+  },
+  "images_final": true
+}

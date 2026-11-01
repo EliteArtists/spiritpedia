@@ -1,0 +1,174 @@
+{
+  "healer": {
+    "healer_slug": "beth-grace",
+    "create": {
+      "name": "Beth Grace",
+      "bio": "Trained as a Kripalu Yoga teacher, Beth Grace is a consultant in Chinese metaphysics who lives in the Berkshires of western Massachusetts. Her main fields are classical feng shui, BaZi (Four Pillars) astrology, Qi Men Dun Jia, the I Ching and the choosing of favourable dates, which she studied with teachers including Joey Yap. She is accredited with the Feng Shui Society in London, has belonged to the International Feng Shui Guild and the International Feng Shui Association, and runs the American Academy of Metaphysics, through which she trains students in BaZi and feng shui.\n\nAlongside the Chinese systems she draws on Western earth-based traditions. After three years of training in Celtic shamanism she offers shamanic energy sessions, and she reads tarot, practises geomancy and works as a dowser, advising on labyrinths, earth energies and the siting of wells across New England, a skill she has taught at the American Society of Dowsers convention. Clients meet her in person or online for chart readings and home or office consultations, and she runs a monthly Zoom workshop that looks at current events through Chinese astrology. At Kripalu she leads intuition retreats with Cynthia Papa-Lentini and teaches astrology for its online studio, and she has made a limited-edition Shamanic I Ching card deck.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local_online",
+      "city": "Great Barrington",
+      "country": "United States",
+      "subjects": [
+        "astrology",
+        "ancient-wisdom",
+        "shamanism"
+      ],
+      "website_url": "https://bethgracefengshui.com/",
+      "booking_url": "https://bethgracefengshui.com/bazi-chinese-astrology/destiny-reading/",
+      "youtube_url": null,
+      "instagram_url": "https://www.instagram.com/bethgraceconsulting/",
+      "facebook_url": "https://www.facebook.com/BethGraceConsulting",
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "bethgraceconsulting@gmail.com",
+      "image_urls": [
+        "https://kripalu.org/sites/default/files/2026-08/Beth%20Grace.jpeg",
+        "https://bethgracefengshui.com/wp-content/uploads/2013/10/IMG_8636.jpg"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "kripalu",
+      "role": "instructor"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Illuminating Your Relationships with BaZi - with Beth Grace",
+      "url": "https://www.youtube.com/watch?v=2JE-H5bDLvc",
+      "subjects": [
+        "astrology",
+        "conscious-relationships"
+      ],
+      "channel": "The Feng Shui Society"
+    },
+    {
+      "title": "Chinese Astrology with Beth Grace",
+      "url": "https://www.youtube.com/watch?v=JRMoTuMwa_M",
+      "subjects": [
+        "astrology",
+        "ancient-wisdom"
+      ],
+      "channel": "Kripalu"
+    }
+  ],
+  "books": [],
+  "courses": [
+    {
+      "title": "The Magic of Spring: Growing Your Intuition",
+      "url": "https://kripalu.org/experiences/magic-spring",
+      "description": "A week-long Kripalu Experience programme, led with Cynthia Papa-Lentini, on developing intuition and sensing subtle energy. The group works with dowsing, tarot and nature-based divination alongside ceremony, guided meditation and time outdoors.",
+      "price": "$459 USD tuition plus lodging",
+      "product_type": "retreat",
+      "start_date": "2027-04-18",
+      "end_date": "2027-04-23",
+      "subjects": [
+        "spirituality",
+        "meditation",
+        "shamanism"
+      ],
+      "image": "https://kripalu.org/sites/default/files/styles/og_image/public/2025-08/magic-of-spring_hero.jpg?itok=Fhr2WJDo"
+    },
+    {
+      "title": "Sacred Springs & Stones Retreat",
+      "url": "https://bethgracefengshui.com/retreats/",
+      "description": "A week based in Bath, England, with daily yoga, the city's hot springs and day trips to sacred sites such as Avebury, Glastonbury Tor, Chalice Well and Stonehenge. Flights, transfers and spa treatments are extra.",
+      "price": "$6,400 USD",
+      "product_type": "retreat",
+      "start_date": "2027-07-10",
+      "end_date": "2027-07-17",
+      "subjects": [
+        "ancient-wisdom",
+        "yoga",
+        "spirituality"
+      ],
+      "image": "https://bethgracefengshui.com/wp-content/uploads/2023/08/b806ba98-5735-46f3-a5dc-0550233bedf0-2-1568x1176.jpg"
+    },
+    {
+      "title": "Monthly Chinese Astrology Workshop",
+      "url": "https://bethgracefengshui.com/workshops/",
+      "description": "A live monthly Zoom class open to beginners and seasoned students alike. Each session looks at the charts behind people in the news and topical events, with time for questions.",
+      "price": "$27 USD per class",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "astrology"
+      ],
+      "image": "https://bethgracefengshui.com/wp-content/uploads/2026/08/Astrology-Talk-Promo-scheduling.jpeg"
+    },
+    {
+      "title": "Feng Shui Professional Certificate Program",
+      "url": "https://bethgracefengshui.com/aaom/",
+      "description": "A self-paced training through her American Academy of Metaphysics, taught one to one with mentoring. It covers the 8 Mansions, 24 Mountains and Flying Star methods, yin and yang, the five elements and the Chinese calendar, with a home project and two case studies needed for the certificate.",
+      "price": "$4,499 USD",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "ancient-wisdom"
+      ],
+      "image": "https://bethgracefengshui.com/wp-content/uploads/2026/05/Digital-Marketing-Agency-2.jpg"
+    },
+    {
+      "title": "Astrology and Divination Sessions",
+      "url": "https://bethgracefengshui.com/bazi-chinese-astrology/destiny-reading/",
+      "description": "One-hour readings of a BaZi or Qi Men Dun Jia destiny chart, in person or online, with options for monthly guidance, relationship comparisons and business timing. Bookings are made through her online scheduler.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "astrology",
+        "soul-purpose"
+      ],
+      "image": "https://kripalu.org/sites/default/files/2026-08/Beth%20Grace.jpeg"
+    },
+    {
+      "title": "Feng Shui Consultation",
+      "url": "https://bethgracefengshui.com/feng-shui/feng-shui-consultation/",
+      "description": "A full assessment of a home or office drawing on landform reading, Flying Star, 8 Mansions, the 24 Mountains and Qi Men Dun Jia, matched to the birth charts of the people who live or work there. Packages range from a visit with spoken findings to written reports with follow-up support.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "ancient-wisdom",
+        "astrology"
+      ],
+      "image": "https://bethgracefengshui.com/wp-content/uploads/2017/03/IMG_0887-300x300.jpg"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "hub": "kripalu",
+    "rank": 12,
+    "hub_url": "https://kripalu.org/people/beth-grace",
+    "tier_evidence": "Instagram @bethgraceconsulting 888 (og:description, 1 Nov 2026); Facebook Beth Grace Consulting 952 (og:description, 1 Nov 2026); second Instagram @bethgracefengshui and Facebook BethGraceFengShui linked from her site but no count readable; no YouTube channel of her own → ~1.8k total → local_hero",
+    "email": "yes",
+    "email_source": "https://bethgracefengshui.com/contact/",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 14 source(s)",
+    "flags": [
+      "Email is a Gmail address for her business name (Beth Grace Consulting), published on her contact page.",
+      "Work is feng shui, Chinese astrology, dowsing and Celtic shamanism rather than a single spiritual path; included as astrology and earth-based teaching, a human may want to confirm fit.",
+      "The Kripalu programme is co-led with Cynthia Papa-Lentini (Kripalu faculty); named in the bio and offering, not listed.",
+      "The Bath retreat flyer also names reikiwish.com, so it may be co-led; dates 10 to 17 Jul 2027 read from the flyer image on her retreats page.",
+      "Both videos are on other channels (Feng Shui Society, Kripalu) where she is the sole teacher.",
+      "City given as Great Barrington from her Facebook page; her site says only the Berkshires of western Massachusetts."
+    ],
+    "left_out": [
+      "Shamanic Energy Therapy sessions: framed as 'therapy' and 'healing', borderline; left out.",
+      "Feng Shui Society talks 'Four pillars for health and well-being' (RjwTxxFaRLc, kMPrLZlAdHo): health framing, borderline; left out.",
+      "Seasonal online retreat series (4 Nov 2026 to 4 Aug 2027): shares the workshops page with the monthly class and its own registration links are unlabelled payment links; left out.",
+      "BaZi Foundations training (28 Sep to 1 Oct 2026): passed.",
+      "Advanced 4 Pillars BaZi course and Auspicious Date Selection: share pages with other items; left out to keep one URL per offering.",
+      "Shamanic I Ching card deck: limited edition sold through her own PayPal link, not on Amazon.",
+      "Dowsing (water and well location): practical service, not spiritual teaching.",
+      "Astrology Chart Calculator: a tool rather than a teaching resource."
+    ]
+  },
+  "images_final": true
+}

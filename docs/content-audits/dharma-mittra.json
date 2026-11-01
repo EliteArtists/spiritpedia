@@ -1,0 +1,272 @@
+{
+  "healer": {
+    "healer_slug": "dharma-mittra",
+    "create": {
+      "name": "Sri Dharma Mittra",
+      "bio": "Sri Dharma Mittra was born in 1939 in Minas Gerais, Brazil, and first came to yoga through books in his teens, after years as an air force serviceman, bodybuilder and wrestler. In 1964 he travelled to New York to study with his guru, Swami Kailashananda, also known as Yogi Gupta, and gave roughly ten years to full-time training and service, taking the vows of a renunciate along the way. In 1975 he opened his own school in Manhattan, among the first independent yoga schools in the city, which carries on today as the Dharma Yoga Center on West 24th Street. He is known for the Master Yoga Chart of 908 Postures, for which he photographed himself in every pose, and for the book Asanas: 608 Yoga Poses.\n\nHis method, Dharma Yoga, treats postures as one part of the classical eight limbs. Strong and often advanced asana sits alongside breathing practice, deep relaxation, meditation and plain talks on ethics, compassion towards all beings and the search for self-knowledge. Now in his eighties, he still teaches classes in New York, in person and over Zoom, leads the Life of a Yogi teacher trainings with his senior students, offers recorded classes online, and travels for occasional weekends, including an advanced immersion at Kripalu.",
+      "tier": "luminary",
+      "entity_type": "individual",
+      "availability": "local_online",
+      "city": "New York",
+      "country": "United States",
+      "subjects": [
+        "yoga",
+        "meditation",
+        "spiritual-awakening"
+      ],
+      "website_url": "https://www.dharmayogacenter.com/",
+      "booking_url": "https://www.dharmayogacenter.com/class-schedule",
+      "youtube_url": "https://www.youtube.com/@dharmayoganyc",
+      "instagram_url": "https://www.instagram.com/dharmayoganyc/",
+      "facebook_url": "https://www.facebook.com/bereceptive",
+      "twitter_url": "https://twitter.com/dharmayoganyc",
+      "tiktok_url": null,
+      "contact_email": "info@dharmayogacenter.com",
+      "image_urls": [
+        "https://kripalu.org/sites/default/files/styles/og_image/public/2015-10/SriDharmaMittra_2023.jpg?itok=hdJhetCg",
+        "https://static.wixstatic.com/media/32438c_d17c393c87f54968b9948a9913eab611~mv2.jpeg",
+        "https://static.wixstatic.com/media/32438c_79c694d9f7f0473fb197c7975ad4f9ad~mv2.jpg"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "kripalu",
+      "role": "instructor"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Dharma Mittra: Yama–The Foundation of Yoga",
+      "url": "https://www.youtube.com/watch?v=5B9mOeqJbHU",
+      "subjects": [
+        "yoga",
+        "spirituality"
+      ],
+      "channel": "Wanderlust"
+    },
+    {
+      "title": "SRI DHARMA MITTRA - Yoga Vinyasa Practice",
+      "url": "https://www.youtube.com/watch?v=CgwTpC-TPZ4",
+      "subjects": [
+        "yoga"
+      ],
+      "channel": "Happier TV"
+    },
+    {
+      "title": "Dharma Yoga: Surya Namaskara",
+      "url": "https://www.youtube.com/watch?v=0SnLU5psQDo",
+      "subjects": [
+        "yoga"
+      ],
+      "channel": "DharmaYogaCenter"
+    },
+    {
+      "title": "Surya Namaskar in..... New York with Sri Dharma Mittra (c)",
+      "url": "https://www.youtube.com/watch?v=GxPfTzqmp1Y",
+      "subjects": [
+        "yoga"
+      ],
+      "channel": "100% YOGA"
+    },
+    {
+      "title": "Sri Dharma Mittra Creating \"The Master Yoga Chart of 908 Postures\"",
+      "url": "https://www.youtube.com/watch?v=PtTJYAcFoWs",
+      "subjects": [
+        "yoga"
+      ],
+      "channel": "DharmaYogaCenter"
+    },
+    {
+      "title": "Sri Dharma Mittra: Kapalbhati Pranayama",
+      "url": "https://www.youtube.com/watch?v=4S2323PSorM",
+      "subjects": [
+        "breathwork",
+        "yoga"
+      ],
+      "channel": "DharmaYogaCenter"
+    },
+    {
+      "title": "Sri Dharma Mittra: Self-Realization & Essential Practices",
+      "url": "https://www.youtube.com/watch?v=VtJD2vj3GT4",
+      "subjects": [
+        "spiritual-awakening",
+        "yoga",
+        "meditation"
+      ],
+      "channel": "Love & Liberation "
+    },
+    {
+      "title": "Sri Dharma Mittra: What Comes after Self Realization?",
+      "url": "https://www.youtube.com/watch?v=Dl0Sb2uqYRs",
+      "subjects": [
+        "spiritual-awakening",
+        "non-duality"
+      ],
+      "channel": "Dharma Yoga NYC"
+    },
+    {
+      "title": "Sri Dharma Mittra: What is real?",
+      "url": "https://www.youtube.com/watch?v=bvPRj5lN-Z8",
+      "subjects": [
+        "non-duality",
+        "spirituality"
+      ],
+      "channel": "Dharma Yoga NYC"
+    },
+    {
+      "title": "''Peace starts within us.'' Sri Dharma Mittra for Peace in Ukraine",
+      "url": "https://www.youtube.com/watch?v=HsyROZaNldo",
+      "subjects": [
+        "spirituality",
+        "meditation"
+      ],
+      "channel": "Dharma Yoga NYC"
+    }
+  ],
+  "books": [
+    {
+      "title": "Asanas: 608 Yoga Poses",
+      "slug": "asanas-608-yoga-poses",
+      "author": "Dharma Mittra",
+      "asin": "1577314026",
+      "store": "amazon.com",
+      "goodreads_url": "https://www.goodreads.com/book/show/965907",
+      "worldofbooks_url": null,
+      "description": "A large photographic reference drawn from the poster on which Dharma Mittra pictured himself in 908 postures. Each of the 608 photographs is labelled with the English and Sanskrit name of the pose, with short notes and suggested combinations for different styles of practice.",
+      "subjects": [
+        "yoga"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1577314026.01._SCLZZZZZZZ_.jpg"
+    }
+  ],
+  "courses": [
+    {
+      "title": "Dharma Yoga Immersion Weekend: Yogic Wisdom for Advanced Practitioners",
+      "url": "https://kripalu.org/experiences/dharma-yoga-immersion-weekend-yogic-wisdom-advanced-practitioners",
+      "description": "A residential weekend at Kripalu in Stockbridge, Massachusetts, taught by Sri Dharma himself. Sessions combine Dharma Yoga postures, breathing practice, guided meditation and Vedantic philosophy, and are aimed at experienced students.",
+      "price": "$399 USD tuition plus lodging",
+      "product_type": "retreat",
+      "start_date": "2027-02-12",
+      "end_date": "2027-02-14",
+      "subjects": [
+        "yoga",
+        "meditation",
+        "spiritual-awakening"
+      ],
+      "image": "https://kripalu.org/sites/default/files/styles/og_image/public/2025-08/dharmamittra_hero2.jpg?itok=EpBGSIBh"
+    },
+    {
+      "title": "Classes with Sri Dharma Mittra at the Dharma Yoga Center",
+      "url": "https://www.dharmayogacenter.com/class-schedule",
+      "description": "Regular group classes at the Dharma Yoga Center in Manhattan, several of them led by Sri Dharma, which can also be joined live over Zoom. Single classes and passes are booked through the centre's schedule or app.",
+      "price": "$25 USD drop-in (classes with Sri Dharma)",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://static.wixstatic.com/media/32438c_d17c393c87f54968b9948a9913eab611%7Emv2.jpeg/v1/fit/w_2500,h_1330,al_c/32438c_d17c393c87f54968b9948a9913eab611%7Emv2.jpeg"
+    },
+    {
+      "title": "Maha Sadhana Workshop",
+      "url": "https://www.dharmayogacenter.com/events-workshops",
+      "description": "A three-hour workshop built around Sri Dharma's Maha Sadhana, a long classical sequence that takes in postures, breathwork, relaxation and a spiritual talk. It runs at the New York centre and on Zoom; new dates are announced on the events page.",
+      "price": "$39 USD in person, $30 USD on Zoom",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga",
+        "breathwork",
+        "meditation"
+      ],
+      "image": "https://static.wixstatic.com/media/32438c_d17c393c87f54968b9948a9913eab611%7Emv2.jpeg/v1/fit/w_2500,h_1330,al_c/32438c_d17c393c87f54968b9948a9913eab611%7Emv2.jpeg"
+    },
+    {
+      "title": "Dharma Yoga Online",
+      "url": "https://www.dharma.yoga/",
+      "description": "The school's on-demand library of classes and workshops with Sri Dharma, including a masterclass series and a short film about the making of his 908-posture chart. It can be streamed on a phone, computer or television.",
+      "price": "Contact for pricing",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://studiocdn.doyou.com/dharma/frontpage/hero-reaf6k-w1280.jpg"
+    },
+    {
+      "title": "Dharma Yoga Life of a Yogi 50-Hour Teacher Training (On Demand)",
+      "url": "http://dharma-yoga-center.teachable.com/p/dyloay-50-hour-on-demand",
+      "description": "A recorded version of the entry-level Life of a Yogi training, which breaks down Sri Dharma's all-levels warm-up series and includes full classes, lectures and a closing satsang. Access lasts twelve months.",
+      "price": "$895 USD",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://uploads.teachablecdn.com/attachments/29a7790ba0f34b98ab87d0f986e1ea27.jpg"
+    },
+    {
+      "title": "Dharma Yoga Life of a Yogi 200-Hour Teacher Training",
+      "url": "https://www.dharmayogacenter.com/200-hour",
+      "description": "An eleven-day foundation training in the Dharma Yoga method, taught by Sri Dharma and his senior teachers in New York and streamed live on Zoom, with recordings kept for a year. The focus is on practising and learning to teach the Sukha and Dharma Sadhana A class series.",
+      "price": "$3,995 USD tuition plus $150 USD application fee",
+      "product_type": "course",
+      "start_date": "2027-06-17",
+      "end_date": "2027-06-27",
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://static.wixstatic.com/media/32438c_d17c393c87f54968b9948a9913eab611%7Emv2.jpeg/v1/fit/w_2500,h_1330,al_c/32438c_d17c393c87f54968b9948a9913eab611%7Emv2.jpeg"
+    },
+    {
+      "title": "Dharma Yoga Life of a Yogi 500-Hour Teacher Training",
+      "url": "https://www.dharmayogacenter.com/500-hour",
+      "description": "An advanced training for certified teachers in two week-long modules, exploring the wider science of yoga through Sri Dharma's own experience with his guru. Students work on the Dharma II and III series and how to share them, in person or on Zoom.",
+      "price": "$4,995 USD tuition plus $150 USD application fee",
+      "product_type": "course",
+      "start_date": "2027-07-25",
+      "end_date": "2027-09-19",
+      "subjects": [
+        "yoga",
+        "spirituality"
+      ],
+      "image": "https://static.wixstatic.com/media/32438c_d17c393c87f54968b9948a9913eab611%7Emv2.jpeg/v1/fit/w_2500,h_1330,al_c/32438c_d17c393c87f54968b9948a9913eab611%7Emv2.jpeg"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "hub": "kripalu",
+    "rank": 32,
+    "hub_url": "https://kripalu.org/people/sri-dharma-mittra",
+    "tier_evidence": "Instagram @dharmayoganyc 93K (og:description, 1 Nov 2026); Facebook /bereceptive 71,589 ('Official Facebook page of Sri Dharma Mittra and the Dharma Yoga New York Center', og:description, 1 Nov 2026); YouTube @dharmayoganyc 294 (channel header, 1 Nov 2026); TikTok @dharmayoganyc 202 (page data, 1 Nov 2026); X @dharmayoganyc count unreadable → ~165k total → luminary",
+    "email": "yes",
+    "email_source": "https://www.dharmayogacenter.com/contact-us",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 13 source(s)",
+    "flags": [
+      "All social accounts are the Dharma Yoga Center's (his school); the Facebook page describes itself as his official page, so they are counted for him. Without them his total would be near 0.",
+      "Possible editorial-stature case for a higher tier (creator of the 908-posture chart, teaching since 1967, a founding figure of New York yoga); left at luminary by count for the owner to decide.",
+      "Email is the school's general inbox (info@dharmayogacenter.com).",
+      "Slug drops the honorific (dharma-mittra); display name keeps 'Sri', as he is known.",
+      "An Instagram account @sridharmamittra (228 followers, 1 post) exists but could not be confirmed as his; not linked.",
+      "The Kripalu page mentions breathing exercises for 'specific conditions' and 'deep healing'; my description leaves that out and the title is neutral.",
+      "Asanas: 608 Yoga Poses: ISBN-10 1577314026 is from the New World Library paperback (ISBN-13 9781577314028); amazon.com /dp/ returned 500, so the listing was not opened.",
+      "Most videos are on other channels (Wanderlust, Happier TV, 100% YOGA, Love & Liberation) where he is the main teacher; his school's channel is small.",
+      "Dharma Yoga Online (dharma.yoga) shows no price on the page; set to Contact for pricing."
+    ],
+    "left_out": [
+      "Sri Dharma speaks on depression and anxiety (YouTube): names conditions.",
+      "Short clips under ~2 minutes and promotional or kirtan videos on @dharmayoganyc.",
+      "Life of a Yogi 50-hour live dates (7-13 Dec 2026, 10-16 May 2027), 75-hour (14-21 Mar 2027), 800/1000-hour (31 Jan-7 Feb 2027) and 700/1000-hour (2028, dates TBA) trainings: kept the list to the 200- and 500-hour trainings plus the on-demand 50-hour.",
+      "Maha Sadhana DVDs and the Lord's Cricket Ground weekend recording: no direct product page found.",
+      "LOAY Teachers' Manual and Yoga Wisdom: no amazon.com listing found.",
+      "Classes on Alo Moves, Yoga Journal, Pranamaya and Ayurprana+: third-party platforms."
+    ]
+  },
+  "images_final": true
+}

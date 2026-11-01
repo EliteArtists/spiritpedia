@@ -50,9 +50,9 @@
    "in_person_words": true,
    "hub_bio_extract": " Jess Frey (she/her) is a 1,000-hour Kripalu Yoga educator, life coach, and artist who has been devoted to the Kripalu path for more than a decade. She has served in a variety of roles, including lead faculty for R&R, the Kripalu Schools, and currently facilitates yoga, meditation, breathwork, sound, and silent retreats. Jess also designs and develops curriculum for Kripalu’s experiential programs",
    "instagram": "https://www.instagram.com/_jessfrey_/",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Too thin for a full page: no YouTube videos, books or free practices of her own, and apart from her Kripalu programmes (which count once) her site offers only one-to-one mentorship by email with no page or price; her other work is art sales, written articles and podcast guest spots."
   },
   {
    "rank": 2,
@@ -107,8 +107,8 @@
    "in_person_words": true,
    "hub_bio_extract": " Larissa Hall Carlson, MA, E-RYT 500, has over 25 years of teaching experience and is known as a leading educator in the field of optimal performance. Certified by the National Ayurvedic Medical Association and Yoga Alliance, Larissa serves as a Lead Faculty member for the Kripalu Schools of Yoga and Ayurveda and guides teacher trainings across the globe. Larissa previously served as Dean of the K",
    "instagram": "https://www.instagram.com/larissahallcarlson",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/larissa-hall-carlson.json",
    "skip_reason": null
   },
   {
@@ -157,8 +157,8 @@
    "in_person_words": true,
    "hub_bio_extract": " Pilin Anice, E-RYT 500, lead Kripalu faculty, is a skilled guide who believes that the disciplines of Ayurveda, meditation, yoga, ritual, self-care, nutrition, dance, and drum allow us to reconnect to ourselves and evolve, heal, and live authentically. For more than a decade, Pilin has guided students through her offerings to find their way back to the wisdom of their own bodies, and the joy that",
    "instagram": "https://www.instagram.com/pilinanice/",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/pilin-anice.json",
    "skip_reason": null
   },
   {
@@ -194,8 +194,8 @@
    "contact_form_seen": true,
    "in_person_words": true,
    "hub_bio_extract": " Zelda Hotaling was raised under the influence of the Haudenosaunee Native American Culture. Her family resides on the Kahnawaka Mohawk reservation in Canada. She was honored to spend time with her elders, who were the first teachers guiding her in the culture and sacred ways of their people. Renowned for her diverse talents, she shines as an intuitive spirit guide, healer, author, visionary, and ",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/zelda-hotaling.json",
    "skip_reason": null
   },
   {
@@ -243,8 +243,8 @@
    "contact_form_seen": true,
    "in_person_words": true,
    "hub_bio_extract": " Ilana Beigel, MA, is a Kripalu faculty member, yoga teacher trainer, meditation teacher, Kripalu RISE™ facilitator, and wellbeing educator known for making the wisdom of yoga accessible and relevant to modern life. A 500-hour Kripalu Ayurvedic Yoga Teacher and Kripalu Vinyasa Yoga Teacher, she teaches yoga, meditation, and personal-growth programs through the Kripalu School of Yoga, R&R, retreats",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/ilana-beigel.json",
    "skip_reason": null
   },
   {
@@ -276,8 +276,8 @@
    "contact_form_seen": true,
    "in_person_words": true,
    "hub_bio_extract": " MC YOGI is an internationally known recording artist, yoga teacher, and award-winning author. With nearly 30 years of experience, MC YOGI has taught across the globe. Having studied with master teachers across India and America, he weaves ancient wisdom with modern accessibility, making each session uplifting, laid-back, and deeply nourishing. He blends his music, mysticism, and movement into a u",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/mc-yogi.json",
    "skip_reason": null
   },
   {
@@ -309,8 +309,8 @@
    "contact_form_seen": false,
    "in_person_words": true,
    "hub_bio_extract": " Sage Rountree, PhD, E-RYT 500, is the author of 13 books on yoga for athletes, recovery, and sequencing, and the host of the Yoga Teacher Confidential podcast. Her work focuses on the restful end of the practice—gentle, yin, restorative, and yoga nidra—and in the balance of effort and ease that keeps driven people practicing for a lifetime. She has long contributed essays on teaching to Yoga Jour",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/sage-rountree.json",
    "skip_reason": null
   },
   {
@@ -341,8 +341,8 @@
    "in_person_words": true,
    "hub_bio_extract": " Toni Bergins, MEd, is the founder and director of JourneyDance® and the author of Embody: Feel, Heal, and Transform Your Life Through Movement . She is an artistic alchemist and passionate catalyst for people to transform angst into art and vulnerability into strength. Over the past 20 years, she has helped thousands of people find a new sense of self-esteem, inner wisdom, emotional health, spiri",
    "site_note": "JourneyDance, which she founded",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/toni-bergins.json",
    "skip_reason": null
   },
   {
@@ -373,8 +373,8 @@
    "in_person_words": true,
    "hub_bio_extract": " Kim Chandler, E-RYT, a former Kripalu resident and associate director of the Kripalu Yoga Teachers Association, has been the owner and director of Innerlight Center for Yoga & Meditation in Newport, Rhode Island, since 1995. Her teaching career spans more than 30 years and she has trained hundreds of yoga teachers. Kim is also a facilitator trainer for Proprioceptive Writing ® (PW) and has studie",
    "site_note": "Innerlight Center for Yoga & Meditation, which she owns and directs",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/kim-chandler.json",
    "skip_reason": null
   },
   {
@@ -404,9 +404,9 @@
    "contact_form_seen": true,
    "in_person_words": true,
    "hub_bio_extract": " Sandrine Harris shares dynamic experiences of embodied presence, creativity, and connection internationally. The process she engages in is trauma-sensitive, earth-connected, and inclusive of bodily and lived experience. Her work, collectively named Emergent Nature, grows through private sessions, group experiences, and training programs. Sandrine is a Somatic Experiencing® (SEP) and Pain Reproces",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Her work (Emergent Nature) is framed mainly around trauma, chronic pain and stress treatment: private sessions in Somatic Experiencing, Pain Reprocessing Therapy and Medical Qi gong, a trauma programme, and page URLs built on 'healing chronic pain trauma', so almost nothing passes the health-claim rule."
   },
   {
    "rank": 11,
@@ -430,8 +430,8 @@
    "in_person_words": true,
    "hub_bio_extract": " Alison DeNicola is a yoga and meditation teacher, energy healer, and award-winning author. Alison began on her spiritual path almost 20 years ago with the study of yoga, meditation, and hypnotherapy. She has continued to expand and explore through inspirational writing and other mind-body healing practices which include shamanic, sound, chakra, and angelic healing work. Alison is the author of si",
    "instagram": "https://www.instagram.com/alisondenicola/",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/alison-denicola.json",
    "skip_reason": null
   },
   {
@@ -456,8 +456,8 @@
    "in_person_words": true,
    "hub_bio_extract": " Beth Grace is a Kripalu Yoga teacher and internationally recognized Metaphysics consultant and educator with deep knowledge in many modalities. She specializes in the Chinese Metaphysical system including Classical Feng Shui, BaZi/Four Pillars of Destiny Chinese Astrology, Qi Men Dun Jia, Auspicious Date Selection, and I Ching. Beth is also an intuitive who works as a Celtic Shamanic Healer, Taro",
    "instagram": "https://www.instagram.com/bethgraceconsulting/",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/beth-grace.json",
    "skip_reason": null
   },
   {
@@ -498,8 +498,8 @@
    "in_person_words": true,
    "hub_bio_extract": " Erika Gagnon is a Canadian ceremonial leader, wisdom keeper, and healer who helps others remember how to heal themselves. She honors all the ancestors of her multiracial heritage, but does not identify as First Nations. The wisdom and ceremonies she carries come from her 30-year walk on the Red Road and medicine path. Erika has dedicated over half her life to working with Indigenous elders from N",
    "site_note": "from Esalen page",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/erika-gagnon.json",
    "skip_reason": null
   },
   {
@@ -524,9 +524,9 @@
    "in_person_words": true,
    "hub_bio_extract": " Eset Rose is a teacher, facilitator, and cultural architect devoted to reconnecting people with the rhythms of nature, spirit, and creative life force. Her work weaves ancestral wisdom, earth-based ritual, embodiment, and artistic expression to support profound healing, coherence, and cultural renewal. She previously served as Chief Programming & Innovation Officer at Kripalu Center for Yoga & He",
    "instagram": "https://www.instagram.com/eset_rose",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Too thin for a full page: beyond her one Kripalu programme (Radiance, 18 to 20 Dec 2026) there is only a private nine-month creative mentorship; no books, no teaching videos of her own (YouTube has only a short panel submission and old Alicia Keys tour clips), no free resources, and retreats are waitlist-only with none listed. Her site presents the work mainly as creative mentorship, consulting and speaking rather than spiritual teaching."
   },
   {
    "rank": 15,
@@ -550,8 +550,8 @@
    "contact_form_seen": true,
    "in_person_words": true,
    "hub_bio_extract": " Girish is an internationally touring world music artist, teacher, and author. A former jazz drummer, Hindu monk, and session tabla player on more than 100 world music albums, he now writes, records, and performs his own original music and teaches Sanskrit mantras and chanting in music festivals, retreat centers, and yoga studios throughout the world. His seven albums have received critical acclai",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/girish.json",
    "skip_reason": null
   },
   {
@@ -576,8 +576,8 @@
    "in_person_words": true,
    "hub_bio_extract": " Hope Fitzgerald is a spiritual teacher, intuitive dowser, coach, channel, healer, end-of-life midwife, neurofeedback practitioner, and author of The Infinity Wave: Mastering the Art of Love, Compassion, and Flow . Hope has dedicated her life to helping others awaken to their highest potential, and her journey—sparked by a profound series of visions—has guided her from quiet devotion to a public p",
    "site_note": "Also https://www.you-awake.com/",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/hope-fitzgerald.json",
    "skip_reason": null
   },
   {
@@ -604,8 +604,8 @@
    "in_person_words": true,
    "hub_bio_extract": " Jeannie O’Neill, MSEd, E-RYT 500, is a yoga teacher, mindfulness meditation instructor, Ayurvedic health practitioner, and cofounder and director of education at Yoga Farm Ithaca. Her master’s degree in education focused on contemplative pedagogy and transformative curriculum design, informing her approach to yoga and her desire to be an alchemist for transmuting the pain of life into empowerment",
    "site_note": "Yoga Farm Ithaca, which she cofounded (shared with cofounder)",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/jeannie-oneill.json",
    "skip_reason": null
   },
   {
@@ -629,8 +629,8 @@
    "contact_form_seen": true,
    "in_person_words": true,
    "hub_bio_extract": " Kamini Desai, PhD, is an internationally recognized authority on Yoga Nidra and yogic psychology. A teacher and author with more than 30 years of experience, she is the co-founder of I AM Yoga Nidra®, founder of I AM Yoga Therapy®, and author of Yoga Nidra: The Art of Transformational Sleep. She is also the creator of the I AM Being app, bringing evidence-informed practices of deep relaxation, me",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/kamini-desai.json",
    "skip_reason": null
   },
   {
@@ -654,8 +654,8 @@
    "contact_form_seen": true,
    "in_person_words": true,
    "hub_bio_extract": " Kristi Nelson is the author of Wake Up Grateful: The Transformative Practice of Taking Nothing for Granted. From 2014–2023, she was Executive Director at A Network for Grateful Living and continues to serve as an ambassador. Kristi’s current work focuses on uplifting the beauty and power of living gratefully through teaching, speaking, interviews, and writing. Kristi’s work as a consultant in the",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/kristi-nelson.json",
    "skip_reason": null
   },
   {
@@ -679,8 +679,8 @@
    "contact_form_seen": false,
    "in_person_words": true,
    "hub_bio_extract": " Lama Migmar Tseten has served as Buddhist chaplain at Harvard University since 1997. He received both a traditional and a contemporary education in India, graduating from Tibetan Institute of Sanskrit University in Varanasi. He served as the head of Sakya Center in Rajpur, India, and the Sakya Monastery in Puruwalla. Lama Migmar has supervised the editing and publication of more than 50 rare volu",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/lama-migmar-tseten.json",
    "skip_reason": null
   },
   {
@@ -704,9 +704,9 @@
    "contact_form_seen": true,
    "in_person_words": true,
    "hub_bio_extract": " Lee Mirabai Harrington (Sangye Rinchen Lhamo) is a mantra-healer, Tibetan spiritual healer, and Buddhist ngakma in the Yuthok Nyingthik lineage—a unique spiritual tradition of Tibetan Buddhism connected with Sowa Rigpa and Medicine Buddha. Known for her warm, insightful, and compassionate teaching style, Lee has served on the faculty at Kripalu, Tibet House, Menla, Sivananda Bahamas, Omega Instit",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Her work is mainly Tibetan medical healing sold on conditions: the Kripalu Nejang programme promises help with anxiety, depression, PTSD and recovery from illness, her healing-sessions and private-session pages list conditions, and most of her YouTube uploads are mantra music or carry healing claims (heart ailments, bone fractures, viruses, 'heals all disease'); what remains is two or three short clips and a memoir about her dog, too thin for a page."
   },
   {
    "rank": 22,
@@ -729,8 +729,8 @@
    "contact_form_seen": true,
    "in_person_words": true,
    "hub_bio_extract": " Lisa Campion is the author of several best-selling books, including her newest book Awakening Your Psychic Ability: A Practical Guide to Develop Your Intuition, Demystify the Spiritual World, and Open Your Psychic. She is a psychic counselor and Reiki master teacher with over 35 years of experience. Lisa has been teaching Reiki for over 25 years, training thousands of people and conducting over 1",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/lisa-campion.json",
    "skip_reason": null
   },
   {
@@ -755,8 +755,8 @@
    "in_person_words": true,
    "hub_bio_extract": " Lorelei Chang is a pioneering modern dancer from China whose nearly five-decade artistic journey bridges continents and cultures. She is renowned for integrating Qigong, dance, Chinese calligraphy, and healing arts into a distinctive practice of embodied expression. As the founder of dancEnlight, a cross-cultural dance company devoted to artistic collaboration and spiritual enrichment, Lorelei ha",
    "site_note": "dancEnlight, which she founded (Kripalu links /home5.htm)",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/lorelei-chang.json",
    "skip_reason": null
   },
   {
@@ -781,8 +781,8 @@
    "in_person_words": true,
    "hub_bio_extract": " Luisa Muhr is a New-York-based artist and Family and Systemic Constellations practitioner. Originally from Vienna, Austria, she was first introduced to Family Constellations, guided imagery work, and astrology more than two decades ago. Muhr did her training in Europe with Dr. Peter Orban, one of Bert Hellinger's early students. Luisa works at the Ohm Center in New York City, MINKA Brooklyn/Grand",
    "site_note": "Also https://www.familyconstellationsnyc.com/",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/luisa-muhr.json",
    "skip_reason": null
   },
   {
@@ -807,9 +807,9 @@
    "in_person_words": true,
    "hub_bio_extract": " Lyla June Johnston, PhD, is an Indigenous musician, author, and community organizer of Diné (Navajo), Tsétsêhéstâhese (Cheyenne), and European lineages. Her multi-genre presentation style has engaged audiences across the globe toward personal, collective, and ecological healing. She blends her study of Human Ecology at Stanford, graduate work in Indigenous Pedagogy, and the traditional worldview ",
    "instagram": "https://www.instagram.com/lylajune/",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Not current faculty: her only Kripalu programme was the free online series 'Amplify Voices of the Global Majority' (May 2026, now recordings only), with no upcoming programme on her Kripalu page (checked 1 Nov 2026). Her plan was written before this was found and is kept in dropped/. Listed under past faculty."
   },
   {
    "rank": 26,
@@ -853,8 +853,8 @@
    "in_person_words": true,
    "hub_bio_extract": " Mark Coleman is a meditation teacher, wilderness guide, and founder of the Mindfulness Institute. He is a senior teacher at Spirit Rock Meditation Center and has spent decades guiding individuals and groups into deeper connection with nature through mindfulness practice. His work bridges Buddhist meditation, wilderness awareness, and ecological stewardship. Mark is the author of several books, in",
    "site_note": "Also awakeinthewild.com",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/mark-coleman.json",
    "skip_reason": null
   },
   {
@@ -880,8 +880,8 @@
    "hub_bio_extract": " Mícheál ‘Moley’ Ó Súilleabháin is a renowned singer, poet, and speaker from Limerick, Ireland. Mícheál is from a family steeped in Irish traditional music and academia, and gravitated to performance early. He studied music at University College Cork and later earned a master's in Ethnomusicology at Irish World Academy of Music and Dance before becoming a freelance music educator with a specializa",
    "pair": "Owen Ó Súilleabháin (brothers; they teach together and share one website)",
    "site_note": "Turas Danam, shared with brother Owen",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/micheal-o-suilleabhain.json",
    "skip_reason": null
   },
   {
@@ -906,9 +906,9 @@
    "in_person_words": true,
    "hub_bio_extract": " Nadiya Peters is a certified master qigong teacher living between Ireland and New York. She was a senior yoga teacher at New York City’s Integral Yoga Institute for 25 years where she taught and led trainings, and where she still hosts events. Her Shamanic studies began with Nan Moss and the late David Corbin as well work with teachers in Brazil and North America. She has been a qigong teacher fo",
    "instagram": "https://www.instagram.com/nadiya108/",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Too thin once the rules are applied: her only current offering, the Kripalu programme (The Celts and the Tao, Apr 2027), is framed around liver health and improving memory, so it fails the health-claim rule; her own site (nadiyapeters.com, copyright 2018) lists no current classes or courses (the 'ongoing' Zoom class page dates from 2022 and promises immune boosting, past events include bone health and womb healing), she has no authored book on Amazon (only a contributed account in an anthology), and only two or three YouTube videos exist (one on her own 33-subscriber channel, a Tibet House talk and a J. Brown podcast). Email banriongealach108@gmail.com is published on her homepage and photos exist, so she could be revisited if she publishes current offerings."
   },
   {
    "rank": 29,
@@ -931,8 +931,8 @@
    "contact_form_seen": true,
    "in_person_words": true,
    "hub_bio_extract": " Tasha Judson, M.Ed., E-RYT500, and director of Tasha Yoga, has taught yoga full-time for over 25 years and travels regularly to India. Her yoga classes combine breath-based movement, mindful alignment within poses, and intelligent sequencing to empower the optimal unfolding of each individual. A certified Anusara yoga teacher since 1997, she also practices Iyengar yoga. She has studied and practi",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/tasha-judson.json",
    "skip_reason": null
   },
   {
@@ -957,8 +957,8 @@
    "in_person_words": true,
    "hub_bio_extract": " Priti Robyn Ross, E-RYT 500 is an author, inspirational speaker, and internationally acclaimed workshop leader who has empowered thousands of students and teachers over the past 25 years. A longtime devotee of Kripalu’s teachings since 1984, she has served as a senior teacher trainer, directing 200- and 500-hour certifications in Kripalu yoga, prana yoga, pranotthan yoga, and integrative yoga the",
    "site_note": "From Kripalu profile; not separately opened",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/priti-robyn-ross.json",
    "skip_reason": null
   },
   {
@@ -983,8 +983,8 @@
    "in_person_words": true,
    "hub_bio_extract": " Sara Davidson Flanders (she, her) is a Certified Anusara Yoga Teacher, ERYT-500, YACEP. A yoga teacher since 1997, she is also the founder and owner of Full Radiance Yoga in Providence, RI. As a passionate student of yoga and meditation for over 30 years, she delights in the efficacy of yoga to not only bring more strength and flexibility to the body, but also how it brings us to a place of conne",
    "site_note": "Her studio, Full Radiance Yoga, Providence",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/sara-davidson-flanders.json",
    "skip_reason": null
   },
   {
@@ -1009,8 +1009,8 @@
    "in_person_words": true,
    "hub_bio_extract": " Sri Dharma Mittra, a legendary yoga teacher, first encountered yoga as a teenager before meeting his guru in 1964 and beginning his training in earnest. Sri Dharma founded one of the early independent schools of yoga in New York City in 1975 and has taught hundreds of thousands of people worldwide in the years since. Sri Dharma is the model and creator of The Master Yoga Chart of 908 Postures, th",
    "site_note": "Dharma Yoga Center, his NYC school",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/dharma-mittra.json",
    "skip_reason": null
   },
   {
@@ -1035,9 +1035,9 @@
    "in_person_words": true,
    "hub_bio_extract": " Stacey Gibbons is a prominent teacher of healing and shamanism. She has studied extensively with shamanic teachers of diverse backgrounds and has practiced and taught traditional reiki and shamanic reiki since the 1990s. She taught shamanic reiki online training intensives and year-long shamanic reiki master teacher apprenticeship programs for years with Llyn Roberts, the creator of shamanic reik",
    "site_note": "She co-founded Shamanic Reiki Worldwide with Llyn Roberts; it is shared, not hers alone",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Too thin and no contact route of her own: her only Kripalu programme (Jaguar Path Reiki Level One and Two, 1-4 Nov 2026 on the hub page) has started and registration is closed; her only other current items are two online Reiki classes on the Jaguar Path school site (Ray and Nina Crist's school, where she is faculty); she has no website, email or contact form of her own, and Shamanic Reiki Worldwide (Llyn Roberts's school, whose srwprograms inbox the queue saw) no longer names her."
   },
   {
    "rank": 34,
@@ -1061,8 +1061,8 @@
    "in_person_words": true,
    "hub_bio_extract": " Tara Stiles is the co-founder of Strala Yoga, best-selling author, and well-being expert. Tara revolutionized yoga for millions, transforming a practice so often seen as foreign, dogmatic, and guru-based, into an everyday movement that supports ease and well-being. Strala Yoga is practiced in more than 100 countries; thousands of Guides lead Strala classes around the globe; and Tara shares daily ",
    "site_note": "Also stralayoga.com (Strala Yoga, which she co-founded)",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/tara-stiles.json",
    "skip_reason": null
   },
   {
@@ -1087,8 +1087,8 @@
    "contact_form_seen": true,
    "in_person_words": true,
    "hub_bio_extract": " Tama Kieves, an honors graduate of Harvard Law School, left a corporate law practice to write and embolden others to live their deepest desires. She is a sought-after speaker and visionary career coach who has helped thousands to discover and launch the life, calling, and business of their dreams. She is the best-selling author of multiple books including This Time I Dance! Creating the Work You ",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/tama-kieves.json",
    "skip_reason": null
   },
   {
@@ -1113,8 +1113,8 @@
    "in_person_words": true,
    "hub_bio_extract": " Victoria Jean Randall is a highly regarded Akashic Records practitioner and energy healer with over 20 years of intuitive experience. Renowned for her grounded presence and heart-centered approach, she guides individuals in accessing soul-level wisdom to accelerate spiritual growth, healing, and alignment with their highest purpose. Based in New Hampshire, Victoria offers private sessions and gro",
    "site_note": "Victoria Jean Energy Medicine, New Hampshire",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/victoria-jean-randall.json",
    "skip_reason": null
   },
   {
@@ -1139,9 +1139,9 @@
    "in_person_words": true,
    "hub_bio_extract": " Shannon Chada (Good Singing Woman) embodies a holistic approach to life, interweaving culture, community, and nature in her path. As a spiritual mentor, holistic practitioner, and teacher, she offers compassionate guidance to individuals seeking spiritual growth and healing. Shannon's mission is to guide individuals inward, helping them to uncover their own positivity, passion, and purpose. With ",
    "site_note": "Full Circle Harmony Ministry, which she founded and directs; she is named as contact on the site",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Not current faculty: their only Kripalu programme was the free online series 'Amplify Voices of the Global Majority' (May 2026, now recordings only), with no upcoming programme on their Kripalu page (checked 1 Nov 2026). Listed under past faculty. Her plan was written before this was found and is kept in dropped/."
   },
   {
    "rank": 38,
@@ -1165,8 +1165,8 @@
    "contact_form_seen": true,
    "in_person_words": true,
    "hub_bio_extract": " The oldest of seven children, Renée was raised in a wildly creative Montessori inspired household steeped in music, science, philosophy, yoga, and spirituality. In the mid-1970s, her parents—a physician and a musician/artist—left their comfortable, conventional life in San Antonio, TX and moved Renée and her brothers to the wilderness of California’s Sierra Nevada mountains to create a new life c",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/renee-trudeau.json",
    "skip_reason": null
   },
   {
@@ -1190,8 +1190,8 @@
    "contact_form_seen": true,
    "in_person_words": true,
    "hub_bio_extract": " Becky Vollmer is a longtime yoga teacher, change catalyst, and creator of You Are Not Stuck—a movement that empowers people to pursue the lives they most deeply desire rather than the ones they feel stuck in. She is the author of You Are Not Stuck: How Soul-Guided Choices Transform Fear into Freedom . Becky brings more than 20 years of yoga study and teaching to her workshops and retreats, which ",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/becky-vollmer.json",
    "skip_reason": null
   },
   {
@@ -1241,8 +1241,8 @@
    "contact_form_seen": true,
    "in_person_words": true,
    "hub_bio_extract": " Jovinna Chan, E-RYT 500, YACEP, has been living in the world of yoga, dance, and ritual practices since her childhood in a village in Singapore. Her love for movements and her reverence for nature have led her to study embodiment practices, spirituality, and ritual makings from yoga, conscious dance, theater, martial arts, Taoism and Buddhism. Jovinna cofounded Shakti Initiation Yoga Leadership S",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/jovinna-chan.json",
    "skip_reason": null
   },
   {
@@ -1273,8 +1273,8 @@
    "in_person_words": false,
    "hub_bio_extract": " Aki Hirata Quetzalyolotzin, born and raised in Japan, immigrated to the United States at the age of 18. She is an energy healing facilitator and teacher, a student of the earth and the cosmos, an initiated medicine woman, and a moondancer. Attuned to various energetic healing frequencies—including Usui Reiki, Earth Evolution Reiki, IET, and 13th Octave LaHoChi—she is also a master teacher of Usui",
    "site_note": "From Kripalu profile; she also founded MINKA brooklyn (https://www.minkabrooklyn.com/)",
-   "status": "todo",
-   "plan": null,
+   "status": "planned",
+   "plan": "docs/content-audits/aki-hirata-quetzalyolotzin.json",
    "skip_reason": null
   },
   {
@@ -1305,8 +1305,8 @@
    "in_person_words": false,
    "hub_bio_extract": " Aruni Nan Futuronsky, a Kripalu yoga teacher and mindfulness coach, has been teaching in a variety of venues for 55 years, and has been on the Kripalu faculty for more than 30 of those years. She is author of Recovering My Voice: A Memoir of Chaos, Spirituality, and Hope ; A lready Home: Stories of a Seeker ; and Not Over Yet: Simple Strategies to Struggle Less and Savor More . Aruni developed a ",
    "site_note": "From Kripalu profile; not separately opened",
-   "status": "todo",
-   "plan": null,
+   "status": "planned",
+   "plan": "docs/content-audits/aruni-nan-futuronsky.json",
    "skip_reason": null
   },
   {
@@ -1414,8 +1414,8 @@
    "contact_form_seen": true,
    "in_person_words": false,
    "hub_bio_extract": " Carrie Grossman (Dayashila), MA, is a devotional singer, composer, writer, and lifelong student of the mystical traditions. For more than 20 years, she has studied the art of sacred sound, guiding people into the sublime realms of the heart through her concerts, workshops, and retreats. With a warm, approachable style, Carrie weaves together music and mantra with meditation, healing modalities, a",
-   "status": "todo",
-   "plan": null,
+   "status": "planned",
+   "plan": "docs/content-audits/carrie-grossman.json",
    "skip_reason": null
   },
   {
@@ -1440,9 +1440,9 @@
    "contact_form_seen": true,
    "in_person_words": false,
    "hub_bio_extract": " Cynthia Papa-Lentini, PhD, is a member of the Kripalu Faculty and a metaphysical practitioner in Kripalu Healing Arts. She is dedicated to helping people heal, grow, and awaken with mind-body practices, energy systems awareness, and the wisdom traditions. Cynthia is a seasoned facilitator who brings to her work a lifelong exploration of deep wisdom, meditation, Ayurveda, and the expressive healin",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Too thin for a full page: beyond her one Kripalu programme (The Magic of Spring, 18 to 23 Apr 2027, co-led with Beth Grace, who is already planned) there are only her tarot reading sessions; her site's workshops are past (Nov 2025, an undated Roots to Wings day) or 'notify me' pages with no dates or prices (tarot mentorship, grief and death workshops), and she has no books, no teaching videos and no free resources."
   },
   {
    "rank": 48,
@@ -1466,9 +1466,9 @@
    "in_person_words": false,
    "hub_bio_extract": " Fumiha Tanaka, EarthSkyOneHeart, is a cosmic citizen of multicultural background with Japanese ancestry who is in deep service to the Mother Earth. Her work, as a living prayer, centers on harmonizing and nurturing the intimate relationships among all kin of Earth—the co-creators of life. A devoted student of life on Earth and unseen, Fumiha is a practitioner of conscious healing, and tends space",
    "instagram": "https://www.instagram.com/fumiha_earthskyoneheart/",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Her work is mainly clinical herbalism and health-framed healing packages (diet, herb and flower-essence protocols; testimonials and her own story centred on eczema, digestion, depression and surgery), so almost nothing passes the health-claim rule; her only other dated offering, the online Venus and Inanna journey with Susan DeRyder, began on 29 Oct 2026, and she has no books, videos or free resources. Her Kripalu programme (Moving From Shadow into Light, 20 to 23 Dec 2026) is co-led with Aki Hirata Quetzalyolotzin (rank 41)."
   },
   {
    "rank": 49,
@@ -1546,8 +1546,8 @@
    "in_person_words": false,
    "hub_bio_extract": " Maryam Hasnaa is an intuitive, a channel, an energy healer, and a lover of all things that create a feeling of being connected to something bigger than ourselves. Maryam is the creator of New Earth Mystery School and Resonance Apothecary. The key elements of her work include knowledge and experience within a diverse range of esoteric spiritual traditions, cosmic cosmology, and energy work. Raised",
    "instagram": "https://www.instagram.com/maryamhasnaa/",
-   "status": "todo",
-   "plan": null,
+   "status": "planned",
+   "plan": "docs/content-audits/maryam-hasnaa.json",
    "skip_reason": null
   },
   {
@@ -1625,9 +1625,9 @@
    "in_person_words": false,
    "hub_bio_extract": " Kate Herrera Jenkins, Shu-wah-mitz, (Turquoise Woman), E-RYT 500, is a member of the Pueblo of Cochiti in New Mexico. She is the founder of Native Strength Revolution, an Indigenous wellness nonprofit dedicated to helping ALL Indigenous communities heal through movement and wellness discovery. After witnessing the lack of accessible wellness programming on her own reservation, Kate felt called to",
    "site_note": "Nonprofit she founded and leads, not a personal site",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Not current faculty: their only Kripalu programme was the free online series 'Amplify Voices of the Global Majority' (May 2026, now recordings only), with no upcoming programme on their Kripalu page (checked 1 Nov 2026). Listed under past faculty."
   },
   {
    "rank": 55,
@@ -1677,8 +1677,8 @@
    "in_person_words": false,
    "hub_bio_extract": " Laura Ahrens, BFA, MA, E-RYT 500, C-IAYT, is a yoga teacher with 15 years of teaching experience. Her first priority in life is to live the practice of yoga and to teach others who want to do the same. Laura has over 1000 hours of training and an 800-hour yoga therapy certification. She holds a BFA in theatre arts from The University of the Arts, a master's degree in religion with a concentration",
    "site_note": "Laura Ahrens Yoga; mentions her 800-hour IAYT yoga therapy training",
-   "status": "todo",
-   "plan": null,
+   "status": "planned",
+   "plan": "docs/content-audits/laura-ahrens.json",
    "skip_reason": null
   },
   {
@@ -1712,8 +1712,8 @@
    "contact_form_seen": true,
    "in_person_words": true,
    "hub_bio_extract": " Jacoby Ballard (he/they) is a social justice educator and yoga teacher who leads workshops and trainings around the country on diversity, equity, and inclusion. As a yoga teacher with 20 years of experience, he leads workshops, retreats, teacher trainings, teaches at conferences, and runs the Resonance mentorship program for certified yoga teachers to find their niche and calling. In 2008, Jacoby",
-   "status": "todo",
-   "plan": null,
+   "status": "planned",
+   "plan": "docs/content-audits/jacoby-ballard.json",
    "skip_reason": null
   },
   {
@@ -2277,9 +2277,9 @@
    "in_person_words": false,
    "hub_bio_extract": " Colin Bedell is a best-selling author, speaker, and media expert on astrology and relationships. As the cofounder of QueerCosmos —a comparative astrological resource for LGBTQIA+ folks—Colin is committed to updating ideas on identity, relationships, and spirituality that are inclusive to a wider range of racial, sexual, and gender diversity. Colin was listed as one of the most influential people ",
    "instagram": "https://www.instagram.com/queercosmos/",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Not current faculty: named on Kripalu's Sacred Artist Residency page as a past participant (a 'Sacred Artist'), not a presenter, with no upcoming programme on their Kripalu page (checked 1 Nov 2026)."
   },
   {
    "rank": 78,
@@ -2557,9 +2557,9 @@
    "in_person_words": false,
    "hub_bio_extract": " Ayesha Ophelia is a rising voice in spirituality and wellness. She serves her community as an author, speaker, transitions guide, dreamworker, and spiritual provocateur. Ayesha created The Girlfriend Manifesto, a community to address the sister wound, as well as the Society of Wild Hearts, a soul-centered business incubator for creatives who have a message they want to share in the world. Her wor",
    "instagram": "https://www.instagram.com/ayeshaophelia/",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Not current faculty: named on Kripalu's Sacred Artist Residency page as a past participant (a 'Sacred Artist'), not a presenter, with no upcoming programme on their Kripalu page (checked 1 Nov 2026)."
   },
   {
    "rank": 88,
@@ -3287,9 +3287,9 @@
    "in_person_words": false,
    "hub_bio_extract": " Michelle D. Schenandoah is an inspirational speaker, media creator, thought leader and traditional member of the Onʌyota':aka (Oneida) Nation Wolf Clan of the Haudenosaunee Confederacy. She presented as a spiritual advisor to the Pope with the First Nations Delegation at the Vatican that prompted his apology regarding residential schools. She is the founder of the non-profit Rematriation dedicate",
    "site_note": "Her nonprofit is rematriation.com; also co-founded Indigenous Concepts Consulting (indigenous-concepts.com); no personal site",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Not current faculty: their only Kripalu programme was the free online series 'Amplify Voices of the Global Majority' (May 2026, now recordings only), with no upcoming programme on their Kripalu page (checked 1 Nov 2026). Listed under past faculty."
   },
   {
    "rank": 112,
@@ -3311,9 +3311,9 @@
    "in_person_words": false,
    "hub_bio_extract": " Sharon Oxendine, Black Crow is a proud of First Nations woman and is enrolled member of the Lumbee Tribe in Southeast NC. Sharon has studied with Native and Indigenous Teachers for over thirty years. She established a created a Nonprofit Community Organization-Medicine Wheel Way in 2019. The land is eight acres located in Fairview, NC. The mission is dedicated to supporting BIPOC and Underserved ",
    "site_note": "Medicine Wheel Way has only a GoFundMe page",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Not current faculty: their only Kripalu programme was the free online series 'Amplify Voices of the Global Majority' (May 2026, now recordings only), with no upcoming programme on their Kripalu page (checked 1 Nov 2026). Listed under past faculty."
   },
   {
    "rank": 113,
@@ -3334,9 +3334,9 @@
    "contact_form_seen": false,
    "in_person_words": false,
    "hub_bio_extract": " Pershlie \"Perci\" Ami is a member of the Hopi Tribe from the Village of Walpi, Az. As a Hopi Elder, coming from a marginalized community, Perci overcame the social, educational, and economical challenges, and has used her struggles and experiences to help others overcome barriers just as she has. Perci has served as a strong advocate for suicide prevention, substance abuse, and devoting her time t",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Not current faculty: their only Kripalu programme was the free online series 'Amplify Voices of the Global Majority' (May 2026, now recordings only), with no upcoming programme on their Kripalu page (checked 1 Nov 2026). Listed under past faculty."
   },
   {
    "rank": 114,
@@ -4857,5 +4857,5 @@
    "skip_reason": null
   }
  ],
- "updated": "2026-11-01T13:50:20.455Z"
+ "updated": "2026-11-01T14:19:09.553Z"
 }

@@ -1,0 +1,263 @@
+{
+  "healer": {
+    "healer_slug": "alison-denicola",
+    "create": {
+      "name": "Alison DeNicola",
+      "bio": "Based in New Preston, Connecticut, Alison DeNicola teaches yoga and meditation, leads retreats and writes. Over some twenty years she has trained in a wide spread of practices, from yoga, guided meditation and yoga nidra to hypnotherapy, shamanic and angelic energy work, chakra study, mudras and feather work, and she folds these into gentle, reflective classes that combine breath, posture, sound and deep rest. She also offers one-to-one energy sessions and coaching for people bringing a creative project to life.\n\nMuch of her writing takes the form of illustrated card decks with guidebooks, published by U.S. Games Systems and made with artists such as Sabina Espinet and David Scheirer. Among them are the Enchanted Wheel Oracle, Divine Feather Messenger and two sets on mudras, one for the energy body and one for the five elements. Through Blue Feather Retreats she takes small groups on journeys that mix yoga and meditation with local culture and ceremony, in places such as the Sacred Valley of Peru and Puglia in southern Italy. Closer to home she teaches workshops in the north-eastern United States, including a yoga and tarot weekend at Kripalu with the tarot author Sasha Graham, and she hosts the podcast Beyond the Cards.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local",
+      "city": "New Preston",
+      "country": "United States",
+      "subjects": [
+        "yoga",
+        "meditation",
+        "energy-medicine"
+      ],
+      "website_url": "https://www.alisondenicola.com/",
+      "booking_url": "https://www.alisondenicola.com/events",
+      "youtube_url": null,
+      "instagram_url": "https://www.instagram.com/alisondenicola/",
+      "facebook_url": "https://www.facebook.com/alison.denicola",
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "alliedenicola@gmail.com",
+      "image_urls": [
+        "https://static.wixstatic.com/media/277beb_9c22bbc20ec64bbaa14d013cdb681c85~mv2_d_3115_4672_s_4_2.jpg",
+        "https://kripalu.org/sites/default/files/2018-07/AlisonDeNicola2021.jpg"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "kripalu",
+      "role": "instructor"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Align yourself with Fortune’s symbols by Alison DeNicola",
+      "url": "https://www.youtube.com/watch?v=CiMI2dDf3tQ",
+      "subjects": [
+        "spirituality",
+        "ancient-wisdom"
+      ],
+      "channel": "watkinsbooks"
+    },
+    {
+      "title": "Mudras & Meditation for Stressful Times with Alison DeNicola",
+      "url": "https://www.youtube.com/watch?v=aSDNTEG3LmM",
+      "subjects": [
+        "meditation",
+        "yoga"
+      ],
+      "channel": "COVR: Coalition of Visionary Resources"
+    },
+    {
+      "title": "Sacred Magic - Author & Inspirational Teacher Alison DeNicola",
+      "url": "https://www.youtube.com/watch?v=HFTk5HL3ucU",
+      "subjects": [
+        "spirituality"
+      ],
+      "channel": "Discover Your Spiritual Gifts"
+    }
+  ],
+  "books": [
+    {
+      "title": "Mudras for Awakening the Energy Body",
+      "slug": "mudras-for-awakening-the-energy-body",
+      "author": "Alison DeNicola",
+      "asin": "1572818026",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "A deck of cards with a guidebook that pairs hand gestures from the yoga tradition with the chakras. Each card shows a mudra, with suggestions for breath, intention and affirmation to use alongside it.",
+      "subjects": [
+        "yoga",
+        "chakra-healing",
+        "meditation"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1572818026.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "Mudras for Awakening the Five Elements",
+      "slug": "mudras-for-awakening-the-five-elements",
+      "author": "Alison DeNicola",
+      "asin": "157281876X",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "A companion deck to her first mudra set, this time arranged around earth, water, fire, air and space. Each card offers a hand gesture and a short practice for working with that element.",
+      "subjects": [
+        "yoga",
+        "meditation",
+        "energy-medicine"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/157281876X.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "Divine Feather Messenger",
+      "slug": "divine-feather-messenger",
+      "author": "Alison DeNicola",
+      "asin": "1572819626",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "An oracle deck with a guidebook built around the feathers of different birds, painted by David Scheirer. Each card carries a short message for reflection and daily inspiration.",
+      "subjects": [
+        "spirituality",
+        "shamanism"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1572819626.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "Nature & Soul Yoga Wisdom",
+      "slug": "nature-and-soul-yoga-wisdom",
+      "author": "Alison DeNicola",
+      "asin": "164671010X",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "A set of cards that links simple yoga poses with images and lessons from the natural world. Each card suggests a posture and a theme to reflect on during practice.",
+      "subjects": [
+        "yoga",
+        "spirituality"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/164671010X.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "Auspicious Symbols for Luck and Healing Oracle Deck",
+      "slug": "auspicious-symbols-for-luck-and-healing-oracle-deck",
+      "author": "Alison DeNicola",
+      "asin": "1646710959",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "An oracle deck drawing on good-luck symbols from cultures around the world, illustrated by Sabina Espinet. The guidebook gives the background of each symbol and ways to work with it.",
+      "subjects": [
+        "ancient-wisdom",
+        "spirituality"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1646710959.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "Enchanted Wheel Oracle",
+      "slug": "enchanted-wheel-oracle",
+      "author": "Alison DeNicola",
+      "asin": "1646712722",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "A deck of round cards organised around the Celtic Wheel of the Year, with its seasonal festivals and elements. The illustrated guide offers spreads and ways to use the cards for reflection.",
+      "subjects": [
+        "ancient-wisdom",
+        "spirituality"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1646712722.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "Divine Butterfly Messenger Deck & Book Set",
+      "slug": "divine-butterfly-messenger-deck-and-book-set",
+      "author": "Alison DeNicola",
+      "asin": "1646713265",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "A 36-card oracle deck with watercolour butterflies by David Scheirer and an illustrated guidebook. Each card pairs a butterfly with a short message and a quotation.",
+      "subjects": [
+        "spirituality"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1646713265.01._SCLZZZZZZZ_.jpg"
+    }
+  ],
+  "courses": [
+    {
+      "title": "Awaken Your Inner Magic: A Yoga and Tarot Weekend",
+      "url": "https://kripalu.org/experiences/awaken-your-inner-magic-yoga-and-tarot-weekend",
+      "description": "A weekend at Kripalu, led with Sasha Graham, that brings the images of the Rider Waite tarot into yoga, movement, guided visualisation and journaling. Participants explore the major archetypes and suits through the body and practise short readings for themselves and each other.",
+      "price": "$349 USD tuition plus lodging",
+      "product_type": "retreat",
+      "start_date": "2027-02-26",
+      "end_date": "2027-02-28",
+      "subjects": [
+        "yoga",
+        "meditation",
+        "spirituality"
+      ],
+      "image": "https://kripalu.org/sites/default/files/styles/og_image/public/2025-08/awakenmagic_hero2.jpg?itok=lJxzgZ_C"
+    },
+    {
+      "title": "Sacred Andes Wisdom Retreat 2027",
+      "url": "https://www.alisondenicola.com/events/sacred-andes-wisdom-retreat-2027",
+      "description": "A week-long group journey to the Sacred Valley of Peru, with a full day at Machu Picchu. The programme includes an Andean despacho offering and a fire ceremony alongside daily practice.",
+      "price": "Contact for pricing",
+      "product_type": "retreat",
+      "start_date": "2027-04-02",
+      "end_date": "2027-04-09",
+      "subjects": [
+        "ancient-wisdom",
+        "shamanism",
+        "yoga"
+      ],
+      "image": "https://static.wixstatic.com/media/277beb_b9069c294ff2442287322a8bbb7da2d0~mv2.jpg/v1/fill/w_3024,h_4032,al_c,q_90/277beb_b9069c294ff2442287322a8bbb7da2d0~mv2.jpg"
+    },
+    {
+      "title": "Open Your Heart Retreat: Puglia 2027",
+      "url": "https://www.alisondenicola.com/events/open-your-heart-retreat-puglia-2027",
+      "description": "A seven-day stay at a retreat centre near Martina Franca in southern Italy, mixing daily yoga and restorative practice with local food, art and nature. The group visits the old city of Matera, with optional trips to nearby towns.",
+      "price": "From $3150 USD per person",
+      "product_type": "retreat",
+      "start_date": "2027-10-16",
+      "end_date": "2027-10-22",
+      "subjects": [
+        "yoga",
+        "meditation"
+      ],
+      "image": "https://static.wixstatic.com/media/277beb_94530fe8d13f4e22b9973fe976db67ac~mv2.jpg/v1/fill/w_900,h_600,al_c,q_85/277beb_94530fe8d13f4e22b9973fe976db67ac~mv2.jpg"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Tune Up Your Elemental Energy",
+      "url": "https://www.alisondenicola.com/additional-offerings",
+      "description": "A free downloadable guide, given in exchange for an email address, with short practices for each of the five elements. It moves from grounding with earth through to intuition with space.",
+      "featured": true,
+      "resource_type": "download",
+      "subjects": [
+        "energy-medicine",
+        "yoga"
+      ],
+      "image": "https://static.wixstatic.com/media/277beb_2a42f91375f54a1f8b9e99e9ded73c4e%7Emv2.png/v1/fit/w_2500,h_1330,al_c/277beb_2a42f91375f54a1f8b9e99e9ded73c4e%7Emv2.png"
+    }
+  ],
+  "sprint": {
+    "hub": "kripalu",
+    "rank": 11,
+    "hub_url": "https://kripalu.org/people/alison-denicola",
+    "tier_evidence": "Instagram 1,565 (og:description, 1 Nov 2026); Facebook 1,582 (og:description, 1 Nov 2026); no YouTube channel of her own found → ~3.1k total → local_hero",
+    "email": "yes",
+    "email_source": "https://www.alisondenicola.com/about",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 10 source(s)",
+    "flags": [
+      "The email is a personal Gmail address shown in her own site's footer (home and about pages).",
+      "The Kripalu programme is co-led with the tarot author Sasha Graham; she is named in the bio and the offering, not as a listing.",
+      "Availability set to local (New Preston, CT base; in-person classes, workshops and retreats); no regular online teaching found.",
+      "Sacred Andes retreat page says dates and details are still being confirmed (waitlist); dates 2 to 9 Apr 2027 taken from the event listing.",
+      "Puglia retreat: the event listing says 16 to 22 Oct 2027, the text says 16 to 23 Oct; the listing dates are used.",
+      "All three videos are on other channels (Watkins Books, COVR, Discover Your Spiritual Gifts) where she is the main speaker; she has no channel of her own.",
+      "Book titles 'Auspicious Symbols for Luck and Healing' and the butterfly deck's Amazon subtitle ('Pure Healing Messages') use 'healing' in a general sense, no condition named; kept."
+    ],
+    "left_out": [
+      "Nature Wisdom Galapagos Retreat 2027 (sold out).",
+      "Inner Wisdom Mini Retreat (1 Nov 2026, already started).",
+      "Salt and Sound 11/11 Portal Meditation (11 Nov 2026): framed as halotherapy and stress relief, borderline therapy claim; left out.",
+      "Free Spin through the Enchanted Wheel (12 Dec 2026): a one-off free dated event, not an evergreen resource.",
+      "Infinite Wisdom of the Chakras deck: no amazon.com ASIN or ISBN could be confirmed.",
+      "Yoga, energy healing and creative coaching sessions: no page of their own (they share a page with the free guide).",
+      "Beyond the Cards podcast (Apple Podcasts): not one of the free resource types; mentioned in the bio only.",
+      "Fan deck reviews and flip-throughs on YouTube (not her teaching)."
+    ]
+  },
+  "images_final": true
+}

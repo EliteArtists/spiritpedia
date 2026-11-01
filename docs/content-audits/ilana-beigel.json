@@ -1,0 +1,170 @@
+{
+  "healer": {
+    "healer_slug": "ilana-beigel",
+    "create": {
+      "name": "Ilana Beigel",
+      "bio": "Ilana Beigel is a yoga and meditation teacher in Amherst, Massachusetts, and a long-standing member of the Kripalu teaching community. She first worked as a speech therapist, with a master's degree in that field, and had practised yoga since the late 1990s before a quieter period in her own life drew her into its philosophy. A training at Kripalu followed, and she went on to complete Kripalu's 500-hour Ayurvedic yoga and 200-hour vinyasa certifications, with further study in restorative yoga, yoga nidra, Reiki and the Bhagavad Gita. She is also a certified facilitator of RISE, Kripalu's programme on resilience.\n\nHer teaching keeps returning to dharma, the yogic idea of each person's own purpose, and to making older yogic tools workable in ordinary family and working life. At Kripalu she leads welcome weekends, vinyasa teacher training modules and online dharma workshops, and her gentle yoga classes and guided meditations can be found on Kripalu's YouTube channel. Nearer home she teaches outdoor classes in Amherst, gives private lessons, mentors other yoga teachers and has co-led international retreats, including one in the Azores. She writes about purpose and presence on her Substack, Truth, Illuminated. Her manner is light and nurturing, with plenty of room for reflection.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local_online",
+      "city": "Amherst",
+      "country": "United States",
+      "subjects": [
+        "yoga",
+        "meditation",
+        "soul-purpose"
+      ],
+      "website_url": "https://www.ilanab.com",
+      "booking_url": "https://www.ilanab.com/new-yoga",
+      "youtube_url": null,
+      "instagram_url": "https://www.instagram.com/ilanabeigel/",
+      "facebook_url": "https://www.facebook.com/ilana.beigel",
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "ilana@ilanab.com",
+      "image_urls": [
+        "https://kripalu.org/sites/default/files/2026-10/Webupdates%20%28800x1000px%29_0.png",
+        "https://images.squarespace-cdn.com/content/v1/5ca2ae4d9b7d153f6cfe3395/8b1250eb-c573-4664-b138-5b5599db1bce/Ilana+Beigel+sitting.jpg?format=1000w"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "kripalu",
+      "role": "instructor"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Gentle Yoga with Ilana Beigel",
+      "url": "https://www.youtube.com/watch?v=ICR6hVpKANw",
+      "subjects": [
+        "yoga"
+      ],
+      "channel": "Kripalu"
+    },
+    {
+      "title": "Meditation with Ilana Beigel",
+      "url": "https://www.youtube.com/watch?v=k4Gx8cjxsZ8",
+      "subjects": [
+        "meditation"
+      ],
+      "channel": "Kripalu"
+    },
+    {
+      "title": "25-Minute Guided Meditation with Ilana Beigel",
+      "url": "https://www.youtube.com/watch?v=FfEtZyzbciA",
+      "subjects": [
+        "meditation"
+      ],
+      "channel": "Kripalu"
+    },
+    {
+      "title": "How to Find your Life Purpose (Dharma) - Practical Tools for Clarity & Alignment",
+      "url": "https://www.youtube.com/watch?v=u5n7ad_SVg8",
+      "subjects": [
+        "soul-purpose",
+        "yoga"
+      ],
+      "channel": "mindfulness unscripted with Jon Orsini"
+    }
+  ],
+  "books": [],
+  "courses": [
+    {
+      "title": "The Great Work of Your Life: A New Year Dharma Reflection",
+      "url": "https://kripalu.org/experiences/great-work-your-life-new-year-dharma-reflection",
+      "description": "A ninety-minute evening workshop online through Kripalu, held as the year turns. Using meditation, reflection and journaling, you explore the yogic idea of dharma and what you want the coming year to be about.",
+      "price": "$39 USD",
+      "product_type": "course",
+      "start_date": "2026-12-15",
+      "end_date": "2026-12-15",
+      "subjects": [
+        "soul-purpose",
+        "meditation"
+      ],
+      "image": "https://kripalu.org/sites/default/files/styles/og_image/public/2017-12/Buddha_Winter16-98.jpg?itok=WBUsr8AQ"
+    },
+    {
+      "title": "Essential Practices for Everyday Life: Practical Tools from the Kripalu Path (New Year weekend)",
+      "url": "https://www.ilanab.com/calendar/rise-kripalu-atcbz-cem97-bnbgp-gab3l",
+      "description": "A New Year weekend at Kripalu in Stockbridge that introduces the centre's approach: Kripalu Yoga, meditation, simple daily self-care and time in nature. Ilana co-leads this date with Cristie Newhart.",
+      "price": "$249 USD tuition plus lodging",
+      "product_type": "retreat",
+      "start_date": "2027-01-01",
+      "end_date": "2027-01-03",
+      "subjects": [
+        "yoga",
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "http://static1.squarespace.com/static/5ca2ae4d9b7d153f6cfe3395/677b0b2fd9aa456fe70e5161/6a8b9d0d4dcaf1665bd47b40/1787534805122/Screenshot+2026-06-18+at+2.53.05%E2%80%AFPM.png?format=1500w"
+    },
+    {
+      "title": "Private Yoga Lessons and Teacher Mentoring",
+      "url": "https://www.ilanab.com/new-yoga",
+      "description": "One-to-one or small-group sessions shaped around you, mixing postures, breathing, meditation and help building a home practice. She also mentors yoga teachers on sequencing, language and weaving a theme through a class.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga",
+        "meditation"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/5ca2ae4d9b7d153f6cfe3395/f8e65599-42cc-4cf2-9b98-ff0cbee30a71/IlanaYogaMRuthPhoto-52.jpg"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Guided Meditation with Ilana Beigel",
+      "url": "https://www.youtube.com/watch?v=bdhib1CbC_Y",
+      "description": "A free guided meditation of about 24 minutes on Kripalu's YouTube channel, led by Ilana from settling the body through to quiet sitting.",
+      "featured": true,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://i.ytimg.com/vi/bdhib1CbC_Y/maxresdefault.jpg"
+    },
+    {
+      "title": "Truth, Illuminated (Substack)",
+      "url": "https://ilanabeigel.substack.com",
+      "description": "Her free newsletter of short reflections and images on purpose, presence and the yogic path, sent to subscribers by email.",
+      "featured": false,
+      "resource_type": "download",
+      "subjects": [
+        "soul-purpose",
+        "spirituality"
+      ],
+      "image": "https://substackcdn.com/image/fetch/$s_!gm3E!,w_400,h_400,c_fill,f_auto,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fe8eb1fd0-4716-4fe0-a722-1f31b78cb112_3088x2316.jpeg"
+    }
+  ],
+  "sprint": {
+    "hub": "kripalu",
+    "rank": 5,
+    "hub_url": "https://kripalu.org/people/ilana-beigel",
+    "tier_evidence": "Instagram @ilanabeigel 913 (og:description, 1 Nov 2026); Facebook /ilana.beigel is a personal profile, not readable without login; no YouTube channel of her own (her videos are on Kripalu's channel); Substack 'over 1,000 subscribers' is a newsletter list, not counted → ~0.9k readable total → local_hero",
+    "email": "yes",
+    "email_source": "https://www.ilanab.com/contact",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 12 source(s)",
+    "flags": [
+      "Kripalu lists her as 'Kripalu Staff' rather than faculty on its programme pages.",
+      "Essential Practices for Everyday Life is a rotating Kripalu programme; Pilin Anice (rank 3) leads the 13 to 15 Nov 2026 weekend and uses the Kripalu programme URL, so this plan uses Ilana's own calendar page for her 1 to 3 Jan 2027 weekend to keep the link unique.",
+      "Her videos are on Kripalu's YouTube channel, so youtube_url is null; two Portuguese-titled uploads resolve to English titles through oEmbed.",
+      "Thin-ish page: 4 videos, 3 offerings and 2 free resources; most of her teaching runs through Kripalu programmes.",
+      "Her about page mentions a diagnosis and surgeries in her own story; not used in the bio."
+    ],
+    "left_out": [
+      "Post-Treatment Life: A Retreat for Cancer Survivors and Thrivers (10 to 13 Jan 2027): names a medical condition.",
+      "RISE (Kripalu's purpose-driven programme) and Meditation in Motion: The Kripalu Approach to Vinyasa (12 to 21 Mar 2027): Kripalu's own programme and school training, not hers.",
+      "Essential Practices 5 to 7 Feb 2027: second date of the same programme (only one date kept).",
+      "Yoga Outside, Amherst: a free donation-based summer collective, not her own offering, and no events listed at present.",
+      "Second 'Gentle Yoga with Ilana Beigel' upload (Lut3wsUcsGE): same title as the one kept.",
+      "Azores and other international retreats: only past dates shown (Apr to May 2025).",
+      "Books: none found."
+    ]
+  },
+  "images_final": true
+}

@@ -1,0 +1,33 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 485,
+    "healer_slug": "victoria-jean-randall"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "80141883-0ff0-48a6-8190-756ce31d1a5e",
+      "slug": "your-wisdom-within-a-journey-of-intuition-and-self-trust",
+      "title": "Your Wisdom Within: A Journey of Intuition and Self-Trust"
+    },
+    {
+      "table": "courses",
+      "id": "dc47d7f6-eb07-4d21-9485-d41adbb6139e",
+      "slug": "akashic-records-consultation",
+      "title": "Akashic Records Consultation"
+    },
+    {
+      "table": "courses",
+      "id": "00686126-2279-43ee-9eb5-511282600ef1",
+      "slug": "holy-fire-reiki-training-levels-i-ii-iii-and-master",
+      "title": "Holy Fire Reiki Training (Levels I, II, III and Master)"
+    },
+    {
+      "table": "hub_teachers",
+      "id": "b6ccdcd0-82fd-478c-ae60-a9014b935312",
+      "title": "victoria-jean-randall teaches at Kripalu Center for Yoga & Health"
+    }
+  ],
+  "at": "2026-11-01T14:18:36.681Z"
+}

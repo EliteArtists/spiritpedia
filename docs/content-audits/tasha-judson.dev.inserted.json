@@ -1,0 +1,33 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 479,
+    "healer_slug": "tasha-judson"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "a8481c3c-fe0c-4118-ad75-94ba2bb8807c",
+      "slug": "the-body-as-gateway-exploring-the-tantra-of-anusara-yoga",
+      "title": "The Body as Gateway: Exploring the Tantra of Anusara Yoga"
+    },
+    {
+      "table": "courses",
+      "id": "538568b1-a9f7-4f5e-a0cb-f811f537c1f6",
+      "slug": "learning-neelakantha-meditation",
+      "title": "Learning Neelakantha Meditation"
+    },
+    {
+      "table": "courses",
+      "id": "497d6424-14ee-4fc8-a5bc-c42d63bb52ff",
+      "slug": "tasha-yoga-studio-and-livestream-classes",
+      "title": "Tasha Yoga studio and livestream classes"
+    },
+    {
+      "table": "hub_teachers",
+      "id": "65aed3fd-cf2c-4142-a69b-67aba3b30e30",
+      "title": "tasha-judson teaches at Kripalu Center for Yoga & Health"
+    }
+  ],
+  "at": "2026-11-01T14:17:44.891Z"
+}

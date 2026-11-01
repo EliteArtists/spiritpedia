@@ -1,0 +1,320 @@
+{
+  "healer": {
+    "healer_slug": "larissa-hall-carlson",
+    "create": {
+      "name": "Larissa Hall Carlson",
+      "bio": "Larissa Hall Carlson has taught yoga for close to thirty years, most of them in connection with Kripalu Center in Stockbridge, Massachusetts, where she was once dean of the School of Ayurveda and now directs 200-hour, 500-hour and advanced teacher trainings. She holds a master's degree in mindfulness studies and is a certified Ayurvedic practitioner, and she has also trained as an end-of-life doula and in Yee Yoga and prenatal yoga. With Dr. John Douillard she co-led the Ayurveda 101 and 201 online courses for Yoga Journal.\n\nHer teaching brings together breathwork, meditation and seasonal Ayurvedic self-care, with a particular love of pranayama and of the four heart practices of loving-kindness, compassion, joy and equanimity. For more than ten years she worked with the young musicians at Tanglewood, and she has taught at conservatories, schools and universities, helping performers find steadiness before they go on stage. She leads retreats at Kripalu, Canyon Ranch and the Sivananda Ashram in the Bahamas, gives Vedic astrology readings and Ayurveda consultations over Zoom, sells short audio courses through her own site and shares a library of free guided practices on Insight Timer. Her business, Vermont Vedic Arts, is based in southern Vermont.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local_online",
+      "city": "Manchester",
+      "country": "United States",
+      "subjects": [
+        "ayurveda",
+        "breathwork",
+        "meditation"
+      ],
+      "website_url": "https://larissacarlson.com",
+      "booking_url": "https://larissacarlson.com/events-home",
+      "youtube_url": null,
+      "instagram_url": "https://www.instagram.com/larissahallcarlson/",
+      "facebook_url": "https://www.facebook.com/Larissa-Hall-Carlson-239456892882194/",
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "larissa@larissacarlson.com",
+      "image_urls": [
+        "https://kripalu.org/sites/default/files/2015-10/LarissaHallCarlson_2023.jpg",
+        "https://images.squarespace-cdn.com/content/v1/588bbfb99f74561d0b6ac4d4/1941caf8-2bdb-4a3f-8317-9647313585b9/ayurvedic-practitioner-larissa-carlson-yoga.jpg?format=1000w"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "kripalu",
+      "role": "instructor"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Larissa Hall Carlson at Kripalu: Nadi Shodhana Pranayama",
+      "url": "https://www.youtube.com/watch?v=FBInZxBcQBo",
+      "subjects": [
+        "breathwork",
+        "yoga"
+      ],
+      "channel": "Kripalu"
+    },
+    {
+      "title": "All Levels Yoga with Larissa Hall Carlson",
+      "url": "https://www.youtube.com/watch?v=h9y6ydLw7Ew",
+      "subjects": [
+        "yoga"
+      ],
+      "channel": "Kripalu"
+    },
+    {
+      "title": "Larissa Hall Carlson - Breathing Exercise",
+      "url": "https://www.youtube.com/watch?v=SJeqFWMOipw",
+      "subjects": [
+        "breathwork"
+      ],
+      "channel": "GNAT TV"
+    },
+    {
+      "title": "Larissa Hall Carlson – Gratitude Meditation",
+      "url": "https://www.youtube.com/watch?v=zTBjYZ7AWxk",
+      "subjects": [
+        "meditation"
+      ],
+      "channel": "GNAT TV"
+    },
+    {
+      "title": "Practical Ayurveda, Simple Tools for Everyday Life: Larissa Hall Carlson",
+      "url": "https://www.youtube.com/watch?v=W6fs6xLerEI",
+      "subjects": [
+        "ayurveda",
+        "yoga"
+      ],
+      "channel": "Better Yoga | Kari Harendorf "
+    },
+    {
+      "title": "HTTCOY Episode 3: Interview with Larissa Hall Carlson",
+      "url": "https://www.youtube.com/watch?v=Vt1yDOLoMJE",
+      "subjects": [
+        "ayurveda",
+        "yoga"
+      ],
+      "channel": "Veronica Wolff-Casey"
+    },
+    {
+      "title": "Stress Relieving Pranayama w/ Larissa Carlson",
+      "url": "https://www.youtube.com/watch?v=kxoc2vSQ3HA",
+      "subjects": [
+        "breathwork"
+      ],
+      "channel": "Sol Yoga"
+    },
+    {
+      "title": "Pranayama For Seasonal Transitions:  Moving  From Spring To Summer With Larissa Carlson",
+      "url": "https://www.youtube.com/watch?v=X6attrMgKns",
+      "subjects": [
+        "breathwork",
+        "ayurveda"
+      ],
+      "channel": "Ed Harrold"
+    },
+    {
+      "title": "Larissa Hall Carlson - 5 Minute Body Scan",
+      "url": "https://www.youtube.com/watch?v=wlKLbVBNfRw",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "channel": "GNAT TV"
+    },
+    {
+      "title": "Community Mindfulness with Larissa Hall Carlson",
+      "url": "https://www.youtube.com/watch?v=74j4cWnbxNc",
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "channel": "Manchester Community Library"
+    },
+    {
+      "title": "Vata Season Survival Guide",
+      "url": "https://www.youtube.com/watch?v=FGTKDIZEUw4",
+      "subjects": [
+        "ayurveda"
+      ],
+      "channel": "Better Yoga | Kari Harendorf "
+    },
+    {
+      "title": "Pitta Balancing for Summer with Larissa Hall Carlson",
+      "url": "https://www.youtube.com/watch?v=-s54wiYhVOc",
+      "subjects": [
+        "ayurveda"
+      ],
+      "channel": "Better Yoga | Kari Harendorf "
+    }
+  ],
+  "books": [],
+  "courses": [
+    {
+      "title": "Begin Again: A New Year Mindfulness Retreat for a Fresh Start",
+      "url": "https://kripalu.org/experiences/begin-again-new-year-mindfulness-retreat-fresh-start",
+      "description": "A weekend at Kripalu in the Berkshires to open the year with meditation, gentle movement and time for reflection. Larissa guides you in setting intentions and settling into a calmer pace before the months ahead.",
+      "price": "$349 USD tuition plus lodging",
+      "product_type": "retreat",
+      "start_date": "2027-01-08",
+      "end_date": "2027-01-10",
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "image": "https://kripalu.org/sites/default/files/styles/og_image/public/2025-08/tendingthewinterfire1_hero.jpg?itok=fqEvNJGH"
+    },
+    {
+      "title": "The Boundless Heart: Cultivating Loving-Kindness, Compassion, Joy, and Equanimity",
+      "url": "https://kripalu.org/experiences/boundless-heart-cultivating-loving-kindness-compassion-joy-and-equanimity",
+      "description": "A five-night stay at Kripalu built around the brahma-viharas, the four Buddhist heart meditations. Each day mixes guided sitting practice, breathwork and restful yoga with teaching on how these qualities can steady everyday life.",
+      "price": "$425 USD tuition plus lodging",
+      "product_type": "retreat",
+      "start_date": "2027-04-04",
+      "end_date": "2027-04-09",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://kripalu.org/sites/default/files/styles/og_image/public/2025-08/meditation_hero.jpg?itok=m3H6TFda"
+    },
+    {
+      "title": "Ayurveda for Meditators: Audio Course",
+      "url": "https://larissahallcarlson.thinkific.com/courses/ayurveda-for-meditators",
+      "description": "Ten short audio lessons on how the elements, the three doshas and the seasons shape a sitting practice. Each lesson offers simple choices in food, routine and self-care to make meditation more comfortable and clear.",
+      "price": "$29 USD",
+      "product_type": "download",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "ayurveda",
+        "meditation"
+      ],
+      "image": "https://import.cdn.thinkific.com/754706/JglqfMN7TNqPEFClJcPi_ayurmeditator.jpg"
+    },
+    {
+      "title": "Pranayama for Restoring Vitality: Audio Course",
+      "url": "https://larissahallcarlson.thinkific.com/courses/pranayama",
+      "description": "A self-paced set of ten audio lessons of about fifteen minutes each, teaching classic yogic breathing step by step. It moves from simple three-part breath and ujjayi through alternate-nostril breathing to gentle breath retention.",
+      "price": "$29 USD",
+      "product_type": "download",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "breathwork",
+        "yoga"
+      ],
+      "image": "https://import.cdn.thinkific.com/754706/IGdOccTZQFSztahKkf2v_Untitled%20(760%20%C3%97%20420%20px)%20(3)%20copy.png"
+    },
+    {
+      "title": "Mindfulness for Caregivers: Audio Course",
+      "url": "https://larissahallcarlson.thinkific.com/courses/caregivers",
+      "description": "Ten brief audio sessions for anyone looking after someone else, whether family or patients. The practices are short enough to fit into a busy day and focus on rest, compassion and finding quiet inside.",
+      "price": "$29 USD",
+      "product_type": "download",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "image": "https://import.cdn.thinkific.com/754706/LwRL5ZumTo2xq83J7Jij_mindfulcare.jpg"
+    },
+    {
+      "title": "Introductory Jyotisha Reading Package",
+      "url": "https://larissacarlson.com/vedic-astrology-chart-reading",
+      "description": "Two one-hour sessions looking at your Vedic birth chart, including rising sign, moon sign, key planets and nakshatras. The reading is framed as self-understanding rather than prediction, and links the chart to your Ayurveda and yoga practice. A birth time is needed.",
+      "price": "$240 USD",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "astrology",
+        "ayurveda"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/588bbfb99f74561d0b6ac4d4/57b2e1c8-4bb4-4474-bf3b-b538584143c9/vedic-astrology-reading-larissa-carlson-smiling+%282%29.jpg"
+    },
+    {
+      "title": "Island Mindfulness Retreat: Bahamas",
+      "url": "https://larissacarlson.com/events/2027/12/5/island-mindfulness-retreat-bahamas",
+      "description": "Four days at the Sivananda Ashram on Paradise Island, with sitting and walking meditation, loving-kindness practice, journaling and shell mandalas made on the beach. Aimed at both new and experienced meditators.",
+      "price": "$395 USD tuition",
+      "product_type": "retreat",
+      "start_date": "2027-12-05",
+      "end_date": "2027-12-08",
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "image": "http://static1.squarespace.com/static/588bbfb99f74561d0b6ac4d4/5890ea4020099e5e9e86bc7a/6a66663ccd49a64fa22c4120/1785095925035/IMG_8371.jpeg?format=1500w"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Bedtime Body Scan",
+      "url": "https://insighttimer.com/larissahallcarlson/guided-meditations/bedtime-body-scan-meditation",
+      "description": "A 22-minute guided body scan for the end of the day, free on Insight Timer. You rest lying down while attention travels slowly through the body.",
+      "featured": true,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://libraryitems.insighttimer.com/y1c7m6p1g4y9c6v8v1v3y4j4f6h5f0f0p9a4a2x8/pictures/tiny_square_medium.jpeg"
+    },
+    {
+      "title": "Metta Meditation (Loving Kindness)",
+      "url": "https://insighttimer.com/larissahallcarlson/guided-meditations/metta-meditation-loving-kindness",
+      "description": "A five-minute loving-kindness practice, free on Insight Timer, offering phrases of goodwill to yourself and then outward to others.",
+      "featured": false,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://libraryitems.insighttimer.com/r5u8x5k0h1u2w4s5u1h0c2m2q2p0q8e6r6v8m7q5/pictures/tiny_square_medium.jpeg"
+    },
+    {
+      "title": "Pitta Pranayama",
+      "url": "https://insighttimer.com/larissahallcarlson/guided-meditations/pitta-pranayama",
+      "description": "A 23-minute guided breathing session on Insight Timer using cooling techniques suited to pitta dosha and hot weather.",
+      "featured": false,
+      "resource_type": "practice",
+      "subjects": [
+        "breathwork",
+        "ayurveda"
+      ],
+      "image": "https://libraryitems.insighttimer.com/d0n3v3m5p8g0s5q0s6s8p0p4g5f7e5p2a9c7w4s9/pictures/tiny_square_medium.jpeg"
+    },
+    {
+      "title": "Free audio practices and yoga classes",
+      "url": "https://larissacarlson.com/resources",
+      "description": "Her resources page gathers free recordings of meditation and pranayama, dosha-based breath practices, short yoga class videos and podcast conversations on Ayurveda.",
+      "featured": false,
+      "resource_type": "practice",
+      "subjects": [
+        "meditation",
+        "breathwork",
+        "ayurveda"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/588bbfb99f74561d0b6ac4d4/97164b54-ffdd-4834-8d70-aeba94ccd620/ayurveda-resources-larissa-doing-yoga-pose.jpg"
+    }
+  ],
+  "sprint": {
+    "hub": "kripalu",
+    "rank": 2,
+    "hub_url": "https://kripalu.org/people/larissa-hall-carlson",
+    "tier_evidence": "Instagram @larissahallcarlson 5,056 (og:description, 1 Nov 2026); Insight Timer /larissahallcarlson 24.7k followers (profile page, 1 Nov 2026); Facebook page not readable without login; no YouTube channel of her own → ~29.8k readable total → local_hero",
+    "email": "yes",
+    "email_source": "https://larissacarlson.com/contact",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 13 source(s)",
+    "flags": [
+      "City set to Manchester (Vermont, United States): her business is Vermont Vedic Arts, she gave a talk at Manchester Community Library and holds local retreats in nearby Peru, VT, but her exact home town isn't published. Her regular in-person teaching is at Kripalu in Stockbridge, MA; check the city.",
+      "She has an Insight Timer teacher profile (24.7k followers, four courses) but isn't in the Insight Timer faculty files or linked to it on Spiritpedia, so insight-timer was not added to teaches_at; the owner may want it.",
+      "Mindfulness for Caregivers mentions preventing caregiver burnout on its page; kept because the title and my description name no condition.",
+      "Vata Season Survival Guide and Pitta Balancing for Summer are Better Yoga podcast episodes on Kari Harendorf's channel where she is co-speaker; kept as teaching conversations.",
+      "Kripalu School of Ayurveda trainings she teaches in (Foundations of Ayurveda, 450-Hour Clinical Training) are the hub's school programmes, so they were left out."
+    ],
+    "left_out": [
+      "Ayurveda coaching / Diet & Lifestyle Consultations ($220, $760): the page is framed around conditions (headaches, digestion, insomnia, libido, menopause), so left out.",
+      "Sattvic Sensuality: Wholesome Libido Boosting with Ayurveda ($899): libido and menopause framing (health claim).",
+      "Women's Health & Renewal half-day retreat (7 Nov 2026): framed around hormonal health; left out.",
+      "Kripalu Ayurveda Summit: The Path of Longevity and Kripalu Online Studio (both 4 Dec 2026): hub-run events with several teachers; Foundations of Ayurveda and 450-Hour Clinical Training: Kripalu School programmes.",
+      "Better Yoga series (Subdosha Yoga Bundle, Apana Vata series, Pitta Alignment): no price readable on the platform pages.",
+      "YouTube: 'Perimenopause And Ayurveda || Mindful Healing' (health), 'A Pranayama Technique to Cut Through Mental Fog' (borderline symptom wording), Kripalu clips under 2 minutes (Kapalabhati, Sheetali), 'Maha Gunas' and 'Kripalu Yoga Time-Out: Counting Breath' (couldn't confirm she is the speaker), Ed Harrold breathwork workshop (cap of 12).",
+      "Canyon Ranch Lenox holiday programme and the Sivananda Bahamas Ayurvedic YTT and Ayurveda for Balance and Harmony: not added to keep the list focused; dates are future if wanted.",
+      "Books: none found under her name on Amazon."
+    ]
+  },
+  "images_final": true
+}

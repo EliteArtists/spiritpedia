@@ -1,0 +1,199 @@
+{
+  "healer": {
+    "healer_slug": "lorelei-chang",
+    "create": {
+      "name": "Lorelei Chang",
+      "bio": "Lorelei Chang is a Chinese-born modern dancer and qigong teacher who has spent close to fifty years bringing movement, brush calligraphy and Daoist practice together. Her mother taught her and her twin sister qigong when they were young teenagers, and her father put a calligraphy brush in her hand at four. In 2008 she and the Japanese choreographer Mai Nakanishi founded dancEnlight, a dance company rooted in the Hartford area of Connecticut that performs in the United States and Japan.\n\nAs a teacher she leads weekly qigong series on Zoom, blending forms such as Zhineng Qigong and silk reeling with yogic breath and Daoist themes, alongside online Baguazhang, in-person calligraphy lessons and private classes. She trained in Five Element Shiatsu with Nini Melvin, is certified in Daisy Lee's Radiant Lotus Women's Qigong and studies Hun Yuan taiji and Bagua with Zhang Qilong, whose family form of Turtle Qigong she now shares with his blessing. She has taught at Kripalu, Omega, the Himalayan Institute and the National Qigong Association, and her classes are gentle, unhurried and open to all levels.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local_online",
+      "city": "Hartford",
+      "country": "United States",
+      "subjects": [
+        "qi-gong",
+        "tai-chi",
+        "meditation"
+      ],
+      "website_url": "https://www.dancenlight.org/",
+      "booking_url": "https://www.dancenlight.org/qigong/",
+      "youtube_url": "https://www.youtube.com/@loreleichang5059",
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "dancenlight@gmail.com",
+      "image_urls": [
+        "https://kripalu.org/sites/default/files/2026-04/Lorelei%20Chang.jpg",
+        "https://yt3.googleusercontent.com/ytc/AIdro_l8Z_otSlVV9Zqjki9ZLzou0hZTV6fMN8JxlhZdJvPkbQ=s900"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "kripalu",
+      "role": "instructor"
+    }
+  ],
+  "videos": [
+    {
+      "title": "FREE Qigong & Taijiquan",
+      "url": "https://www.youtube.com/watch?v=dzjyg1M2624",
+      "subjects": [
+        "qi-gong",
+        "tai-chi"
+      ],
+      "channel": "Lorelei Chang"
+    },
+    {
+      "title": "((( The World Taiji & Qigong Day Qi Waves)))",
+      "url": "https://www.youtube.com/watch?v=jZN8AE1hTrs",
+      "subjects": [
+        "qi-gong",
+        "tai-chi",
+        "ancient-wisdom"
+      ],
+      "channel": "Lorelei Chang"
+    },
+    {
+      "title": "Zhan Zhuang",
+      "url": "https://www.youtube.com/watch?v=XqcgOOUXmKE",
+      "subjects": [
+        "qi-gong",
+        "meditation"
+      ],
+      "channel": "Lorelei Chang"
+    }
+  ],
+  "books": [],
+  "courses": [
+    {
+      "title": "Unlock Vitality: Turtle Qigong and Daoist Longevity Secrets",
+      "url": "https://kripalu.org/experiences/unlock-vitality-turtle-qigong-and-daoist-longevity-secrets",
+      "description": "A weekend at Kripalu centred on Turtle Qigong, a slow, spiralling Daoist form passed down in the family of Lorelei's teacher Zhang Qilong. Sessions combine gentle movement, quiet breathing and inner stillness drawn from the yang sheng tradition of nourishing life.",
+      "price": "From $349 USD plus lodging",
+      "product_type": "retreat",
+      "start_date": "2026-11-13",
+      "end_date": "2026-11-15",
+      "subjects": [
+        "qi-gong",
+        "breathwork",
+        "ancient-wisdom"
+      ],
+      "image": "https://kripalu.org/sites/default/files/styles/og_image/public/2026-05/Untitled%20design%20%2824%29.png?itok=o5HPr0Bz"
+    },
+    {
+      "title": "Breath of the Dao: A Qigong & Yoga Integration",
+      "url": "https://www.dancenlight.org/qigong/formless-qigong-the-art-of-returning-to-simplicity/",
+      "description": "A Friday-morning Zoom class that runs in ten-week series through the year, pairing standing qigong with yogic breath and posture. Each week follows a Daoist theme, a focus in the body and a short practice to carry into the day.",
+      "price": "$176 USD per 10-week series",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "qi-gong",
+        "yoga",
+        "breathwork"
+      ],
+      "image": "http://www.dancenlight.org/data/qigong/formless-qigong-the-art-of-returning-to-simplicity/P35A5381s.jpg"
+    },
+    {
+      "title": "Qigong Forms Practice",
+      "url": "https://www.dancenlight.org/qigong/qigong-forms-practice/",
+      "description": "An early Monday class on Zoom in which each ten-week series studies one traditional or modern qigong form in depth, such as Zhineng Qigong or silk reeling. The emphasis is on patient repetition, breath and settling the mind.",
+      "price": "$196 USD per 10-week series",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "qi-gong",
+        "meditation"
+      ],
+      "image": "http://www.dancenlight.org/data/qigong/qigong-forms-practice/P35A5384s.jpg"
+    },
+    {
+      "title": "Silk Reeling Qigong",
+      "url": "https://www.dancenlight.org/qigong/silk-reeling-gong-chan-si-gong/",
+      "description": "An online series on Chan Si Gong, the spiralling foundation exercise of Chen-style taiji. Students learn to move from the dantian with continuous, even circles that link the whole body and build rooting.",
+      "price": "$200 USD per series (new students)",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "qi-gong",
+        "tai-chi"
+      ],
+      "image": "http://www.dancenlight.org/data/qigong/silk-reeling-gong-chan-si-gong/silkrealing.jpg"
+    },
+    {
+      "title": "Baguazhang: A Journey into Root, Center & Change (Online)",
+      "url": "https://www.dancenlight.org/qigong/baguazhang-a-journey-into-root-center--change-onli/",
+      "description": "Two Saturday-morning online series on the internal art of Baguazhang, from stance and the eight palms to circle walking, turning and palm changes. The aim is a body that stays grounded and calm while it keeps changing direction.",
+      "price": "$1228 USD (both series, new students)",
+      "product_type": "course",
+      "start_date": "2027-01-09",
+      "end_date": "2027-10-23",
+      "subjects": [
+        "tai-chi",
+        "qi-gong"
+      ],
+      "image": "http://www.dancenlight.org/data/qigong/baguazhang-a-journey-into-root-center--change-onli/P35A5721s.jpg"
+    },
+    {
+      "title": "Introduction to Chinese Calligraphy",
+      "url": "https://www.dancenlight.org/qigong/introduction-to-chinese-calligraphy/",
+      "description": "In-person group or private lessons in brush calligraphy, starting with foundation exercises and the eight basic strokes. Lorelei teaches calligraphy as a quiet, meditative art, with supplies provided.",
+      "price": "$25 USD per 75-minute group class",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "ancient-wisdom"
+      ],
+      "image": "http://www.dancenlight.org/data/qigong/introduction-to-chinese-calligraphy/da__AcFs.jpg"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Zhan Zhuang: Tree Stance Meditation",
+      "url": "https://www.dancenlight.org/workshops/free-qigong-sharing/zhang-zhuang/",
+      "description": "A free twenty-minute video in which Lorelei guides the standing posture known as tree stance. She talks through alignment, imagery and the key points to keep in mind while holding still.",
+      "featured": true,
+      "resource_type": "practice",
+      "subjects": [
+        "qi-gong",
+        "meditation"
+      ],
+      "image": "http://www.dancenlight.org/data/workshops/free-qigong-sharing/zhang-zhuang/depositphotos_54081723-stock-photo-beautiful-nature-landscape.jpg"
+    }
+  ],
+  "sprint": {
+    "hub": "kripalu",
+    "rank": 23,
+    "hub_url": "https://kripalu.org/people/lorelei-chang",
+    "tier_evidence": "YouTube @loreleichang5059 144 (channel header row, 1 Nov 2026); no Instagram, Facebook, X or TikTok accounts of her own linked from her site or found → ~144 total → local_hero",
+    "email": "yes",
+    "email_source": "https://www.dancenlight.org/",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 31 source(s)",
+    "flags": [
+      "Email dancenlight@gmail.com is the inbox of her dance company dancEnlight (published on every page of the site and on the Shiatsu page as her contact).",
+      "City set to Hartford from the site's title ('Dance Calligraphy Hartford Connecticut'); the site gives no street address, and she also taught for years at a senior centre in South Windsor, CT.",
+      "Lorelei has a twin sister; the YouTube avatar is on her own channel and looks like a younger photo of her, but a human may want to confirm it before using it.",
+      "Kripalu programme page lists 'spinal health' among the benefits of Turtle Qigong; kept because no condition is named, but it is borderline.",
+      "Many of her recorded courses and workshops carry health framing (back pain, immune system, kidneys and bones, grief, brain healing); only the plainly non-medical classes were kept.",
+      "Zhan Zhuang video is unlisted on YouTube but linked from her site's free page; it passes oEmbed.",
+      "dancEnlight's 'Qigong zoom classes' page shows course prices with confusing labels (new-student and multi-course rates); the lower or new-student figure shown on each page was used."
+    ],
+    "left_out": [
+      "Recorded 10-week and 24-week video courses (Qigong for Wellbeing, Kidneys & Bone Vitality, Soothing the Heart, Zhineng Qigong, Meridians & Acupressure, Understanding Daoist Body): titles or pages name pain, immunity, organ health or 'reversing old age'.",
+      "Workshops page items (Qigong for Grief, White Crane for brain healing, Qigong for Eyes/Ears/Head): condition-framed.",
+      "Shiatsu treatments: hands-on bodywork based on Chinese medicine.",
+      "Chinese Calligraphy & Yang Sheng Qigong Series I–III: Series I started 4 Oct 2026; prices unclear.",
+      "Turtle Qigong Retreat at Omega (19–21 June): appears to be 2026, already passed; Omega not added to teaches_at.",
+      "The Dao and the Doshas (12–14 Feb 2027): listed on her site menu but no page with venue or booking found.",
+      "Dance company performance videos and taiji sword demonstrations: performance, not teaching."
+    ]
+  },
+  "images_final": true
+}

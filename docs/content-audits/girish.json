@@ -1,0 +1,162 @@
+{
+  "healer": {
+    "healer_slug": "girish",
+    "create": {
+      "name": "Girish",
+      "bio": "Girish is a kirtan singer, percussionist and author who teaches the chanting of Sanskrit mantras. He started out as a jazz drummer, came to Kundalini yoga and meditation at university, and then lived for five years as a monk in a Tennessee ashram of the Divine Mother tradition, where daily chanting and the study of Sanskrit shaped his practice. Finding a pair of tablas there drew him back to music: he trained in the Nada Yoga tradition, learned Indian drumming in New York and later with the tabla master Swapan Chaudhuri in California, and travelled with the musician and teacher Bob Kindler, known as Babaji.\n\nFor years he played tabla behind well-known chant artists such as Krishna Das and Snatam Kaur and on close to a hundred recordings, before releasing albums of his own, among them Diamonds in the Sun, Sky of the Heart and Daily Chants for a Radiant Spirit. His book Music and Mantras presents mindful singing as a daily practice and comes with companion audio. He now tours studios, festivals and retreat centres, leading call-and-response kirtan and workshops on voice, breath and mantra, with beginner-friendly guidance on harmonium, guitar and drums, including New Year retreats at Kripalu and programmes at the Sivananda ashram in the Bahamas.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "worldwide",
+      "city": null,
+      "country": null,
+      "subjects": [
+        "sound-healing",
+        "meditation",
+        "yoga"
+      ],
+      "website_url": "https://girishmusic.org/",
+      "booking_url": "https://girishmusic.org/tour",
+      "youtube_url": null,
+      "instagram_url": "https://www.instagram.com/girishmusic/",
+      "facebook_url": "https://www.facebook.com/GirishMusicTour",
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "girish@girishmusic.org",
+      "image_urls": [
+        "https://kripalu.org/sites/default/files/2015-10/Girish%2520-%2520Bhakti%2520Fest%25202017%2520SQUARE.jpg",
+        "https://static1.squarespace.com/static/57f16f1f9f745646c52a6592/t/6633dcef89cb094aee6d75de/1714674928201/GIRISH+-+BHAKTISTOCK+2.JPG"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "kripalu",
+      "role": "instructor"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Diving into the Heart of Mantra - Conversation with Girish [Episode 68]",
+      "url": "https://www.youtube.com/watch?v=vNQqoss7X64",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "channel": "Sivana"
+    },
+    {
+      "title": "Girish Chant Workshop Floyd Yoga Jam 2015",
+      "url": "https://www.youtube.com/watch?v=YbCmBoTjd0o",
+      "subjects": [
+        "sound-healing",
+        "meditation"
+      ],
+      "channel": "slm"
+    }
+  ],
+  "books": [
+    {
+      "title": "Music and Mantras: The Yoga of Mindful Singing for Health, Happiness, Peace & Prosperity",
+      "slug": "music-and-mantras",
+      "author": "Girish",
+      "asin": "1501112201",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "A practical guide to singing mantras as a daily practice, drawing on his years as a monk and musician. It explains simple chants from several traditions, how to use breath and voice with them, and includes over ninety minutes of companion audio.",
+      "subjects": [
+        "sound-healing",
+        "meditation",
+        "yoga"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1501112201.01._SCLZZZZZZZ_.jpg"
+    }
+  ],
+  "courses": [
+    {
+      "title": "Kirtan Evolution New Year’s Retreat",
+      "url": "https://kripalu.org/experiences/kirtan-evolution-new-years-retreat",
+      "description": "Four days at Kripalu seeing in the new year through chant, rhythm and shared voice. The retreat centres on a group 'sacred choir' of call-and-response kirtan, with simple charts and step-by-step help for anyone who wants to play harmonium, guitar, drums or keyboard.",
+      "price": "$420 USD tuition plus lodging",
+      "product_type": "retreat",
+      "start_date": "2026-12-29",
+      "end_date": "2027-01-01",
+      "subjects": [
+        "sound-healing",
+        "meditation",
+        "spirituality"
+      ],
+      "image": "https://kripalu.org/sites/default/files/styles/og_image/public/2025-08/Girish_hero.jpg?itok=wzzt-9_M"
+    },
+    {
+      "title": "Kirtan Evolution Retreat (Bahamas)",
+      "url": "https://sivanandabahamas.org/course/kirtan-evolution-retreat-december-2026/",
+      "description": "A four-day course at the Sivananda Ashram Yoga Retreat on Paradise Island. Participants warm up the voice, learn familiar devotional chants and are shown how to accompany them on an instrument of their choice in a relaxed, non-judgemental group.",
+      "price": "$395 USD tuition plus accommodation",
+      "product_type": "retreat",
+      "start_date": "2026-12-12",
+      "end_date": "2026-12-15",
+      "subjects": [
+        "sound-healing",
+        "meditation",
+        "yoga"
+      ],
+      "image": "https://sivanandabahamas.org/wp-content/uploads/Girish_Kirtan-Evolution-Retreat.jpg"
+    },
+    {
+      "title": "Voice of the Soul: Yoga Vacation Program",
+      "url": "https://sivanandabahamas.org/course/voice-of-the-soul-december-2026/",
+      "description": "A short programme at the Sivananda ashram in the Bahamas introducing kirtan through chant, mantra, breath and listening. No musical experience is needed, and it leads straight into the longer Kirtan Evolution course.",
+      "price": "Included in a Yoga Vacation stay (room rates apply)",
+      "product_type": "retreat",
+      "start_date": "2026-12-09",
+      "end_date": "2026-12-11",
+      "subjects": [
+        "sound-healing",
+        "breathwork",
+        "meditation"
+      ],
+      "image": "https://sivanandabahamas.org/wp-content/uploads/Girish_Voice-of-the-Soul.jpg"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Vocal Yoga Warm-Up",
+      "url": "https://girishmusic.org/breathwork",
+      "description": "A free audio practice he recorded for his Kirtan Evolution course, to loosen and open the voice before chanting. It can be used on its own at any time.",
+      "featured": true,
+      "resource_type": "practice",
+      "subjects": [
+        "sound-healing",
+        "breathwork"
+      ],
+      "image": "http://static1.squarespace.com/static/57f16f1f9f745646c52a6592/t/5e78367e0ff82c23206b17cf/1584936580519/mondolaya_logo_blue_cmyk.jpg?format=1500w"
+    }
+  ],
+  "sprint": {
+    "hub": "kripalu",
+    "rank": 15,
+    "hub_url": "https://kripalu.org/people/girish",
+    "tier_evidence": "Facebook GirishMusicTour 90,563 (og:description, 1 Nov 2026); Instagram @girishmusic 4,344 (og:description, 1 Nov 2026); no YouTube channel of his own confirmed (@girishmusic shows 1 subscriber and no videos; 'Girish - Topic' is auto-generated; @girishcruden7570, 890, uploads his concerts but is not linked from his site and was not counted) → ~94.9k total → local_hero",
+    "email": "yes",
+    "email_source": "https://girishmusic.org/community",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 10 source(s)",
+    "flags": [
+      "Tier borderline: about 95k followers in total, just under the 100k luminary line; adding the unconfirmed @girishcruden7570 channel (890) would not change it.",
+      "Mononymous listing: he is known publicly only as Girish; slug 'girish'.",
+      "Mainly a kirtan musician; included because he teaches mantra chanting through workshops, retreats and a book, but a human may want to confirm he is a teacher rather than a music act.",
+      "Book subtitle on Amazon includes 'for Health, Happiness, Peace & Prosperity' and the publisher blurb mentions improved health; no condition is named, kept as his main book but borderline.",
+      "Bookings use a second published address, PranaRising108@gmail.com (bookings page); girish@girishmusic.org from the community and bio pages is used.",
+      "Two offerings are at the Sivananda Ashram Yoga Retreat, Bahamas, which is not a Spiritpedia hub, so it is not in teaches_at.",
+      "Voice of the Soul has no separate tuition shown; the price is written as included in a Yoga Vacation stay."
+    ],
+    "left_out": [
+      "9 Healing Breaths instructions (breathwork page): named as 'healing' breaths from a Pranic Healing source, borderline; left out.",
+      "Music videos and album tracks on YouTube (music only, not teaching), festival clips under two minutes.",
+      "East Coast Fall Tour (15 Oct to 1 Nov 2026): already started.",
+      "Book companion audio page (for book owners) and essential oil blends in his store."
+    ]
+  },
+  "images_final": true
+}

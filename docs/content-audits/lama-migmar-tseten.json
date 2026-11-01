@@ -1,0 +1,228 @@
+{
+  "healer": {
+    "healer_slug": "lama-migmar-tseten",
+    "create": {
+      "name": "Lama Migmar Tseten",
+      "bio": "Lama Migmar Tseten, also known as Khen Rinpoche, is a teacher in the Sakya school of Tibetan Buddhism. His life took him from Tibet to India, where he combined a monastic training with modern study and graduated from the Sanskrit university at Varanasi. He went on to lead the Sakya Center in Rajpur and the Sakya monastery at Puruwalla, and his own root teacher was Chogye Trichen Rinpoche. He began teaching in 1989, a year later opened his Cambridge, Massachusetts centre, the Sakya Institute for Buddhist Studies, and has been a Buddhist chaplain at Harvard University since 1997.\n\nHis teaching runs from the Four Noble Truths and the Heart Sutra to tantric practice centred on Tara, Vajrayogini and Chakrasamvara, and to the mystical songs of the Indian master Virupa. He has overseen the editing of dozens of rare Sakya texts and has written several books, among them Awakening to the Noble Truth, The Wisdom Gone Beyond, Reality and Wisdom and The Play of Mahamudra. Through Mangalam Studio, founded in 2013, he works to preserve sacred art such as thangka paintings, and since 2017 his online course has offered structured study of the core texts, with recorded talks, reading and quizzes. He also teaches at Kripalu, at the Sivananda ashram in the Bahamas and at the Art of Living Retreat Center.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local_online",
+      "city": "Cambridge",
+      "country": "United States",
+      "subjects": [
+        "meditation",
+        "ancient-wisdom",
+        "spirituality"
+      ],
+      "website_url": "https://lamamigmar.net/",
+      "booking_url": "https://sakya.net/",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "mangalamstudio8@gmail.com",
+      "image_urls": [
+        "https://kripalu.org/sites/default/files/2015-10/TsetenLM_web.jpg"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "kripalu",
+      "role": "instructor"
+    }
+  ],
+  "videos": [
+    {
+      "title": "\"The Play of Mahamudra\" ~ Khenpo Migmar Tseten",
+      "url": "https://www.youtube.com/watch?v=HReiYvw_r80",
+      "subjects": [
+        "mysticism",
+        "ancient-wisdom",
+        "meditation"
+      ],
+      "channel": "Tsechen Namdrol Ling"
+    },
+    {
+      "title": "Mahasiddha Virupa's Doha, in forthcoming book by Khenpo Lama Migmar Tseten: The Play of Mahamudra",
+      "url": "https://www.youtube.com/watch?v=4QkTVo_8dJk",
+      "subjects": [
+        "mysticism",
+        "ancient-wisdom"
+      ],
+      "channel": "Mangalam Studio"
+    },
+    {
+      "title": "Sometimes There is Bliss",
+      "url": "https://www.youtube.com/watch?v=66egDItDfdg",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "channel": "Mangalam Studio"
+    },
+    {
+      "title": "Lama Migmar Tseten, Buddhist Chaplain at Harvard",
+      "url": "https://www.youtube.com/watch?v=da4jgfuSjxg",
+      "subjects": [
+        "spirituality",
+        "meditation"
+      ],
+      "channel": "Harvard University"
+    },
+    {
+      "title": "Pluralism and Interfaith Unity - Listening without preconception",
+      "url": "https://www.youtube.com/watch?v=aQyxpW8788c",
+      "subjects": [
+        "spirituality"
+      ],
+      "channel": "Mangalam Studio"
+    }
+  ],
+  "books": [
+    {
+      "title": "Reality and Wisdom: Exploring the Buddha's Four Noble Truths and The Heart Sutra",
+      "slug": "reality-and-wisdom",
+      "author": "Lama Migmar Tseten",
+      "asin": "1614298327",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "Published by Wisdom, this book brings together his teaching on the Buddha's first discourse and on the emptiness taught in the Heart Sutra. It is written in a conversational voice for readers new to these texts and for practitioners returning to them.",
+      "subjects": [
+        "ancient-wisdom",
+        "meditation",
+        "non-duality"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1614298327.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "Awakening To The Noble Truth",
+      "slug": "awakening-to-the-noble-truth",
+      "author": "Lama Migmar Tseten",
+      "asin": "1497426693",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "His commentary on the Four Noble Truths and their sixteen aspects, the framework he presents as underlying Buddhist ethics, philosophy and meditation. It is the main text for the first level of his online course.",
+      "subjects": [
+        "ancient-wisdom",
+        "meditation"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1497426693.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "The Wisdom Gone Beyond: Teachings on the Heart Sutra",
+      "slug": "the-wisdom-gone-beyond",
+      "author": "Lama Migmar Tseten",
+      "asin": "1497426391",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "Teachings on the Heart Sutra and the perfection of wisdom, explaining the view of emptiness and how it supports both compassion and tantric practice. It serves as the core reading for his Heart Sutra course.",
+      "subjects": [
+        "non-duality",
+        "ancient-wisdom",
+        "meditation"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1497426391.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "Awakening to the Noble Truth Curriculum",
+      "slug": "awakening-to-the-noble-truth-curriculum",
+      "author": "Lama Migmar Tseten",
+      "asin": "1532869169",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "A study companion that breaks his Four Noble Truths commentary into a sequence of classes, for use alone or alongside the online course.",
+      "subjects": [
+        "ancient-wisdom",
+        "meditation"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1532869169.01._SCLZZZZZZZ_.jpg"
+    }
+  ],
+  "courses": [
+    {
+      "title": "Four Noble Truths & Sixteen Aspects (Mangalam Online Course)",
+      "url": "https://www.mangalamonlinecourse.com/courses/four-noble-truths/",
+      "description": "A self-paced online course built on eight recorded talks and his commentary on the Four Noble Truths, divided into 21 classes. Each class ends with a quiz, and a certificate is given on completion.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "ancient-wisdom",
+        "meditation"
+      ],
+      "image": "https://kripalu.org/sites/default/files/2015-10/TsetenLM_web.jpg"
+    },
+    {
+      "title": "Heart Sutra (Mangalam Online Course)",
+      "url": "https://www.mangalamonlinecourse.com/courses/heart-sutra/",
+      "description": "The second level of his online study: a transmission of the Heart Sutra in Sanskrit and Tibetan, sixteen recorded commentaries and a 27-class curriculum with quizzes on the perfection of wisdom.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "non-duality",
+        "ancient-wisdom",
+        "meditation"
+      ],
+      "image": "https://kripalu.org/sites/default/files/2015-10/TsetenLM_web.jpg"
+    },
+    {
+      "title": "Classes at the Sakya Institute for Buddhist Studies",
+      "url": "https://sakya.net/",
+      "description": "Buddhist study, contemplation, meditation and yoga at the institute he founded in Cambridge, Massachusetts. Schedules go out by newsletter and places are booked by email.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "ancient-wisdom"
+      ],
+      "image": "https://kripalu.org/sites/default/files/2015-10/TsetenLM_web.jpg"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "hub": "kripalu",
+    "rank": 20,
+    "hub_url": "https://kripalu.org/people/lama-migmar-tseten",
+    "tier_evidence": "No personal social accounts found. Mangalam Studio accounts (his studio), not counted: Facebook /mangalamstudio8 22,599 (og:description, 1 Nov 2026); YouTube @mangalamstudio4388 120 (channel header row, 1 Nov 2026) → 0 personal (~22.7k even with the studio) → local_hero",
+    "email": "yes",
+    "email_source": "https://lamamigmar.net/",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 20 source(s)",
+    "flags": [
+      "His only current Kripalu programme, 'Dakini's Heart-Essence Chöd: A Buddhist Healing Ritual' (27-29 Nov 2026, $350 plus lodging), is left out: 'healing' in the title and the page says it alleviates physical suffering and suits people managing chronic health conditions. teaches_at kripalu kept because he is a current Kripalu presenter with that programme.",
+      "Email mangalamstudio8@gmail.com is the published contact for Mangalam Studio, his own studio (lamamigmar.net contact section); the Sakya Institute uses sakyainstitute8@gmail.com and the online course contact@mangalamonlinecourse.com.",
+      "Name: kept 'Lama Migmar Tseten' as on Kripalu and his own site; he is also styled Khenpo / Khen Rinpoche Lama Migmar Tseten.",
+      "Possible editorial-stature case for the owner: Harvard Buddhist chaplain since 1997, author with Wisdom Publications, editor of 50+ volumes of Sakya literature. Counts give local_hero; no tier_override set.",
+      "Tier: no personal social accounts; Mangalam Studio Facebook (22.6k) and YouTube (120) are studio accounts, not counted. local_hero either way.",
+      "Online course prices are not shown as text; the PayPal buttons carry $270 USD each in hidden form fields, so prices are 'Contact for pricing'.",
+      "His site says he is a visiting teacher at 1440 Multiversity, but his 1440 faculty page now returns 404 and he is not in 1440-multiversity-faculty.json, so 1440 is not added.",
+      "Availability local_online (Cambridge, United States): in-person classes at the Sakya Institute in Cambridge plus the online course.",
+      "One photo only (Kripalu headshot, 400 px, 2015; the same picture is used by the Art of Living Retreat Center).",
+      "Kripalu programme wording calls the Chöd an ancient ritual 'renowned for its power to alleviate physical, emotional, and mental suffering'; nothing from it is used."
+    ],
+    "left_out": [
+      "Dakini's Heart-Essence Chöd: A Buddhist Healing Ritual (Kripalu, 27-29 Nov 2026): health framing.",
+      "Vajrayogini Healing Chod (practice text) and Mangalam Akasha Rasayana Yoga ('for health and harmony'): health framing.",
+      "The Play of Mahamudra (Wisdom Publications, ISBN 1614297037) and Volume 3: amazon.com /dp/ returned 500 to curl and WebFetch; not verified.",
+      "The Tibetan Book of Awakening: his site's link goes to a newsletter, no Amazon listing confirmed.",
+      "The Wisdom Gone Beyond Curriculum (1518681409): Amazon returned 500; French edition skipped.",
+      "Tara, Vajrayogini and Chakrasamvara practice manuals: practice texts that require empowerment from a lineage holder; not listed.",
+      "Videos 'Harvard Medical talk about Limitless Love' and '... Mindfulness & Compassion to heal Grief & Loss': 'Medical' / grief healing in titles.",
+      "Short clips under ~2 minutes (What is Spirituality?, Compassion from the wisdom of emptiness), long-life prayer and celebration videos: too short or not teaching.",
+      "Mangalam Yantra Yoga and Svapna Yoga: only Facebook pages or no page with details/prices found.",
+      "Vimeo videos (vimeo.com/mangalamstudio8): YouTube only."
+    ]
+  },
+  "images_final": true
+}

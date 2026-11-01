@@ -1,0 +1,184 @@
+{
+  "healer": {
+    "healer_slug": "toni-bergins",
+    "create": {
+      "name": "Toni Bergins",
+      "bio": "Toni Bergins is the creator of JourneyDance, a guided free-form movement practice she has been teaching for close to thirty years. While studying for a master's in education at New York University in the early 1990s, she went on a personal retreat at Kripalu, and an unstructured dance session there changed the direction of her life. She went on to study many kinds of movement alongside psychodrama, theatre and voice work, and wove them into the practice she began sharing in classes.\n\nA JourneyDance session moves through phases, from slow grounding work on the floor to playful partner dancing, expressive passages led by music and a closing period of stillness, with no mirrors and no steps to learn. The aim is to inhabit the body with less self-judgement and to let emotion move freely. Bergins has trained well over a thousand facilitators who now lead classes in many countries. With Joy Lynn Okoye she leads The Remedy, a weekly online circle combining dance, yoga, meditation and writing, and she teaches retreats at Kripalu and abroad. She is the author of the book Embody and also writes and records her own songs.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "worldwide",
+      "city": null,
+      "country": null,
+      "subjects": [
+        "spirituality",
+        "self-healing"
+      ],
+      "website_url": "https://journeydance.com",
+      "booking_url": "https://journeydance.com/programs-events/",
+      "youtube_url": "https://www.youtube.com/user/journeydanceTM",
+      "instagram_url": "https://www.instagram.com/tonibergins/",
+      "facebook_url": "https://www.facebook.com/JourneyDance",
+      "twitter_url": "https://twitter.com/journeydancetm",
+      "tiktok_url": null,
+      "contact_email": "staff@journeydance.com",
+      "image_urls": [
+        "https://kripalu.org/sites/default/files/styles/og_image/public/2025-11/Toni%20Bergins_revised_square-min.jpg?itok=eyNNgP6f",
+        "https://journeydance.com/wp-content/uploads/2024/03/founder.png"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "kripalu",
+      "role": "instructor"
+    }
+  ],
+  "videos": [
+    {
+      "title": "What is JourneyDance with Toni Bergins",
+      "url": "https://www.youtube.com/watch?v=PyqVIXlQyDg",
+      "subjects": [
+        "spirituality"
+      ],
+      "channel": "JourneyDance"
+    },
+    {
+      "title": "Self Love",
+      "url": "https://www.youtube.com/watch?v=_29VPJjpyG8",
+      "subjects": [
+        "self-healing"
+      ],
+      "channel": "JourneyDance"
+    },
+    {
+      "title": "Get your power back!",
+      "url": "https://www.youtube.com/watch?v=lgmMavIu4hQ",
+      "subjects": [
+        "self-healing"
+      ],
+      "channel": "JourneyDance"
+    },
+    {
+      "title": "Embodiment Fully Living",
+      "url": "https://www.youtube.com/watch?v=zXgJPz_yx_I",
+      "subjects": [
+        "spirituality"
+      ],
+      "channel": "JourneyDance"
+    },
+    {
+      "title": "Open to your unique voice",
+      "url": "https://www.youtube.com/watch?v=Cjt7BB5IMUI",
+      "subjects": [
+        "self-healing"
+      ],
+      "channel": "JourneyDance"
+    },
+    {
+      "title": "Break the shame cycle",
+      "url": "https://www.youtube.com/watch?v=DAe8dtVY71E",
+      "subjects": [
+        "shadow-work"
+      ],
+      "channel": "JourneyDance"
+    },
+    {
+      "title": "JourneyDance Class w/instructor Toni Bergins- @ Boston Yoga and Chant Fest 2012",
+      "url": "https://www.youtube.com/watch?v=q6M9jXoEzc0",
+      "subjects": [
+        "spirituality"
+      ],
+      "channel": "dvinemadness"
+    }
+  ],
+  "books": [],
+  "courses": [
+    {
+      "title": "Open Your Heart Through Movement: A JourneyDance Retreat",
+      "url": "https://kripalu.org/experiences/open-your-heart-through-movement-journeydance-retreat",
+      "description": "A New Year retreat at Kripalu built around JourneyDance, with guided ritual, music and free movement. Over the days participants are invited to let the whole range of their feelings find expression in dance and to begin the year with a sense of renewal.",
+      "price": "From $399 USD plus lodging",
+      "product_type": "retreat",
+      "start_date": "2026-12-29",
+      "end_date": "2027-01-01",
+      "subjects": [
+        "spirituality",
+        "self-healing"
+      ],
+      "image": "https://kripalu.org/sites/default/files/styles/og_image/public/2018-11/YJKripalu-Sunday-HIREZ-8385_Toni_hero.jpg?itok=lLs-hlSP"
+    },
+    {
+      "title": "JourneyDance in Brazil: A Journey to Aliveness",
+      "url": "https://www.tonibergins.com/brazil",
+      "description": "A week-long dance retreat in Brazil led with JourneyDance facilitator Lena Warchol. Days combine movement sessions with time in nature, shared meals and rest, and prices depend on the room chosen.",
+      "price": "From $1,950 USD",
+      "product_type": "retreat",
+      "start_date": "2027-01-24",
+      "end_date": "2027-01-31",
+      "subjects": [
+        "spirituality",
+        "self-healing"
+      ],
+      "image": "https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/file-uploads/sites/2147658109/images/a2e571f-2be5-2dec-6136-382df426df6_Toni_and_Lena_Brazil.png"
+    },
+    {
+      "title": "The Remedy",
+      "url": "https://journeydance.com/remedy/",
+      "description": "A weekly online gathering on Friday mornings, run in seasons, which she co-leads with Joy Lynn Okoye. Each session moves from dance and yoga into writing prompts, sharing and a period of rest.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": "2026-11-06",
+      "end_date": "2026-12-18",
+      "subjects": [
+        "self-healing",
+        "meditation"
+      ],
+      "image": "https://i.ontraport.com/21163.df00f5cba42a50cb18200e8918b5c5c7.PNG"
+    },
+    {
+      "title": "JourneyDance Online Drop-in Classes",
+      "url": "https://journeydance.com/programs-events/",
+      "description": "Live online JourneyDance classes each week, taught by Toni Bergins and senior facilitators. Classes use music, guided imagery and free movement and can be joined one at a time.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "spirituality",
+        "self-healing"
+      ],
+      "image": "https://journeydance.com/wp-content/uploads/2024/04/image20-1.jpg"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "hub": "kripalu",
+    "rank": 8,
+    "hub_url": "https://kripalu.org/people/toni-bergins",
+    "tier_evidence": "Instagram @tonibergins 6,439 (og:description, 1 Nov 2026); brand accounts not counted: Instagram @journeydanceofficial 7,420, YouTube @JourneyDanceOfficial 394 (channel header row, 1 Nov 2026); Facebook /JourneyDance and X not readable without login → ~6.4k personal (~14k with brand) → local_hero",
+    "email": "yes",
+    "email_source": "https://journeydance.com/contact/",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 19 source(s)",
+    "flags": [
+      "Email staff@journeydance.com is the JourneyDance staff inbox (Cloudflare-obfuscated on the contact page, decoded); her business, not a personal address.",
+      "Her site frames JourneyDance heavily as healing and emotional health, and her about page describes her own history in clinical terms; the bio and descriptions avoid all of that. A human may want to check the overall framing passes.",
+      "YouTube, Facebook and X links are the JourneyDance brand accounts (she founded it); only her personal Instagram is counted for tier.",
+      "Embody (her book) left out because the subtitle 'Feel, Heal, and Transform Your Life Through Movement' promises healing: borderline; owner may want it back in.",
+      "The Remedy is also run at Omega (save-the-date for 8–13 Aug 2027 on her page), but Omega's site shows no current listing, so omega-institute not added to teaches_at.",
+      "Availability set to worldwide: no fixed studio found (one-off Boston events, online classes, retreats).",
+      "The queue gives the Kripalu New Year retreat as 29 Dec only; the Kripalu booking box says 29 Dec 2026 to 1 Jan 2027."
+    ],
+    "left_out": [
+      "Moving to Heal: A JourneyDance Experience (Kripalu, 21–23 May 2027): 'Heal' in the title and healing of body, mind and soul in the blurb; borderline, left out.",
+      "Embody: Feel, Heal, and Transform Your Life Through Movement (book): healing promise in the title; borderline, left out.",
+      "JourneyDance Facilitator Training 2026–2027: modules began September 2026.",
+      "The Remedy at Omega (Aug 2027): save-the-date only, no live booking page.",
+      "Stoke Your Creative Fire videos: conversations with guests where she co-hosts.",
+      "Short promo clips under ~2 minutes on the JourneyDance channel; 'Use Movement to Heal Trauma' interview (condition-named).",
+      "JourneyDance Boston (14 June): passed.",
+      "Her music albums: not teaching."
+    ]
+  },
+  "images_final": true
+}

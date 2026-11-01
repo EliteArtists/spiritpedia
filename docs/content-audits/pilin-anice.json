@@ -1,0 +1,210 @@
+{
+  "healer": {
+    "healer_slug": "pilin-anice",
+    "create": {
+      "name": "Pilin Anice",
+      "bio": "Pilin Anice (said puh-LYNN) grew up in Flint, Michigan, and first met yoga, meditation and West African dance as a theatre student at Howard University. She went on to work as a performer in New York, on stage Off-Broadway and on national tours and in a long run of television commercials, while her own practice deepened alongside. She is a 500-hour registered yoga teacher who trained at Kripalu in pranayama, Ayurveda and meditation, studied nutrition at the Institute for Integrative Nutrition, and has spent close to twenty years learning Dunham technique and the dances of West Africa, Haiti, Cuba and Brazil.\n\nNow lead faculty at Kripalu, she teaches breath-led vinyasa, restorative and gentle yoga, yoga dance and meditation, often with live drumming, and leads the centre's welcome weekends and its teacher training for practitioners of the global majority. She also teaches at the Ailey Extension in New York and holds a monthly class with live music at Grace Farms in New Canaan, Connecticut. Online, her PAL app offers a subscription library of yoga, barre, meditation and plant-based recipes, and she runs small Restore & Explore retreats abroad. Her classes are warm and community-minded, with room for everyone to move in their own way.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local_online",
+      "city": "New Canaan",
+      "country": "United States",
+      "subjects": [
+        "yoga",
+        "meditation",
+        "ayurveda"
+      ],
+      "website_url": "https://www.pilinanice.com/",
+      "booking_url": "https://www.pilinanice.com/retreats",
+      "youtube_url": "https://www.youtube.com/@PilinAnice",
+      "instagram_url": "https://www.instagram.com/pilinanice/",
+      "facebook_url": "https://facebook.com/pilinanice",
+      "twitter_url": "https://twitter.com/pilinanice",
+      "tiktok_url": null,
+      "contact_email": "hello@pilinanice.com",
+      "image_urls": [
+        "https://kripalu.org/sites/default/files/2020-06/Pilin_headshot2021.jpg",
+        "https://images.squarespace-cdn.com/content/v1/5c9fe68cfb182014576fe392/4645d1cf-6755-46a4-88e8-87107aa8ea9a/low+res+headshot.jpg?format=1000w"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "kripalu",
+      "role": "instructor"
+    }
+  ],
+  "videos": [
+    {
+      "title": "STANDING YOGA SEQUENCE FOR BEGINNERS",
+      "url": "https://www.youtube.com/watch?v=ZuM3TtHDtfc",
+      "subjects": [
+        "yoga"
+      ],
+      "channel": "Pilin Anice Lifestyle"
+    },
+    {
+      "title": "Flow Into Gratitude",
+      "url": "https://www.youtube.com/watch?v=ZIo79BHAzS8",
+      "subjects": [
+        "yoga"
+      ],
+      "channel": "Pilin Anice Lifestyle"
+    },
+    {
+      "title": "5 Min Movement Snack - Energetic Reset",
+      "url": "https://www.youtube.com/watch?v=SnmLoZcEdNA",
+      "subjects": [
+        "yoga"
+      ],
+      "channel": "Pilin Anice Lifestyle"
+    },
+    {
+      "title": "Flow into Love and Empathy",
+      "url": "https://www.youtube.com/watch?v=BY3z0BZdWf4",
+      "subjects": [
+        "yoga"
+      ],
+      "channel": "Pilin Anice Lifestyle"
+    },
+    {
+      "title": "Yoga Dance Challenge",
+      "url": "https://www.youtube.com/watch?v=c0jgE47RgZU",
+      "subjects": [
+        "yoga"
+      ],
+      "channel": "Pilin Anice Lifestyle"
+    },
+    {
+      "title": "Gentle Yoga  - 15 min",
+      "url": "https://www.youtube.com/watch?v=m28Au2hXeaQ",
+      "subjects": [
+        "yoga"
+      ],
+      "channel": "Pilin Anice Lifestyle"
+    },
+    {
+      "title": "5 Minute Somatic Release",
+      "url": "https://www.youtube.com/watch?v=WJjpk6210uA",
+      "subjects": [
+        "yoga",
+        "self-healing"
+      ],
+      "channel": "Pilin Anice Lifestyle"
+    }
+  ],
+  "books": [],
+  "courses": [
+    {
+      "title": "Essential Practices for Everyday Life: Practical Tools from the Kripalu Path",
+      "url": "https://kripalu.org/experiences/welcome-kripalu-path-essential-practices-everyday-life",
+      "description": "A weekend introduction to the Kripalu way of practising, led in turn by Kripalu faculty. You try Kripalu Yoga, meditation, simple daily self-care and time outdoors, with an emphasis on kindness towards yourself.",
+      "price": "$249 USD tuition plus lodging",
+      "product_type": "retreat",
+      "start_date": "2026-11-13",
+      "end_date": "2026-11-15",
+      "subjects": [
+        "yoga",
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://kripalu.org/sites/default/files/styles/og_image/public/2025-08/tibetanyoga_hero.jpg?itok=cLEiCtJF"
+    },
+    {
+      "title": "Breathe, Feel, Flow: A Kripalu Vinyasa Immersion",
+      "url": "https://kripalu.org/experiences/breathe-feel-flow-kripalu-vinyasa-immersion",
+      "description": "A weekend of vinyasa yoga at Kripalu taught as a moving meditation, with breath leading each sequence. Pilin balances strong flowing practice with stillness and reflection.",
+      "price": "$325 USD tuition plus lodging",
+      "product_type": "retreat",
+      "start_date": "2026-12-18",
+      "end_date": "2026-12-20",
+      "subjects": [
+        "yoga",
+        "breathwork",
+        "meditation"
+      ],
+      "image": "https://kripalu.org/sites/default/files/styles/og_image/public/2025-12/vinyasa%20hero%20program.png?itok=shQl3Egk"
+    },
+    {
+      "title": "The PAL App",
+      "url": "https://pilinanicelifestyle.gcph.tv/",
+      "description": "Her subscription app with classes in vinyasa, hatha, gentle and restorative yoga, barre, yoga dance, yoga nidra and guided meditation, plus plant-based recipes and Ayurvedic self-care. Members also get a community chat.",
+      "price": "$20 USD a month or $200 USD a year",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga",
+        "meditation",
+        "ayurveda"
+      ],
+      "image": "https://kripalu.org/sites/default/files/2020-06/Pilin_headshot2021.jpg"
+    },
+    {
+      "title": "Monthly Yoga and Movement at Grace Farms",
+      "url": "https://www.pilinanice.com/classes",
+      "description": "A monthly breath-centred yoga class in the Court at Grace Farms in New Canaan, Connecticut, played along to live acoustic music and followed by a cup of tea.",
+      "price": "$30 USD ($24 USD for Grace Farms members)",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://kripalu.org/sites/default/files/2020-06/Pilin_headshot2021.jpg"
+    },
+    {
+      "title": "Living From the Heart: A Six-Week Journey of Affirmation & Alignment",
+      "url": "https://www.pilinanice.com/mentorship",
+      "description": "A six-week mentorship using guided practice, reflection and affirmation to help you let go of old habits and live closer to what matters to you. Places are by application through a short form.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "soul-purpose",
+        "life-coaching"
+      ],
+      "image": "https://kripalu.org/sites/default/files/2020-06/Pilin_headshot2021.jpg"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "10 Min Meditation - Begin Again With Love",
+      "url": "https://www.youtube.com/watch?v=M9W6YObBj78",
+      "description": "A free ten-minute guided meditation on her YouTube channel for starting over gently, resting attention on the breath and on kindness towards yourself.",
+      "featured": true,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://i.ytimg.com/vi/M9W6YObBj78/maxresdefault.jpg?sqp=-oaymwEmCIAKENAF8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGHIgQyhDMA8=&rs=AOn4CLBWKvwci7W1OScmGXunDKxFwyVnAA"
+    }
+  ],
+  "sprint": {
+    "hub": "kripalu",
+    "rank": 3,
+    "hub_url": "https://kripalu.org/people/pilin-anice",
+    "tier_evidence": "Instagram @pilinanice 17K (og:description, 1 Nov 2026); YouTube @PilinAnice 193 subscribers (channel header row, 1 Nov 2026); Facebook /pilinanice and X @pilinanice not readable without login → ~17.2k readable total → local_hero",
+    "email": "yes",
+    "email_source": "https://www.pilinanice.com/",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 18 source(s)",
+    "flags": [
+      "City set to New Canaan, CT, where she holds a monthly class at Grace Farms; she also teaches at Kripalu (Stockbridge, MA) and the Ailey Extension (New York). Her home town isn't published.",
+      "Her retreats page lists Family Week at Omega Institute (July 2027), but she isn't in omega-institute-faculty.json, so omega-institute was not added to teaches_at; the owner may want it.",
+      "The Grace Farms class page shows the 3 Oct 2026 session as the latest listed date; the class is described as monthly, so it went in undated. Check a future date is listed before going live.",
+      "Essential Practices for Everyday Life is a rotating Kripalu programme with several faculty; the programme page names her for the 13 to 15 Nov 2026 weekend. Ilana Beigel (rank 5) leads the 1 to 3 Jan 2027 weekend.",
+      "Her site says she has worked with 1440 Multiversity and Omega in the past; no current 1440 programme was checked."
+    ],
+    "left_out": [
+      "Wellness Coaching: framed around digestion, low energy and sleep problems (health framing).",
+      "Global Majority 200-Hour Kripalu Yoga Teacher Training and Restorative Yoga Teacher Training: Kripalu School trainings; The Kripalu Silent Retreat: hub programme with rotating leaders.",
+      "Mmm...Good cookbook: described as forthcoming; no Amazon listing found.",
+      "Pourtal: Argentina Uncorked retreat and Restore & Explore retreats: no dates or prices published (inquiry only).",
+      "Corporate and group workshops (Movement + Meditation, Ground + Restore and others): bookable only by inquiry with no page per offering.",
+      "YouTube: commercial reel, a Listerine advert and a cover of Adele's Love Song (not teaching)."
+    ]
+  },
+  "images_final": true
+}

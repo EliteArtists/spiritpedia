@@ -1,0 +1,109 @@
+{
+  "healer": {
+    "healer_slug": "tasha-judson",
+    "create": {
+      "name": "Tasha Judson",
+      "bio": "Tasha Judson came to hatha yoga as a teenager in Pittsburgh and studied East Asian religion and Buddhism at university, followed by a five-month stay in a Tibetan Buddhist programme and a journey to India, where she received an initiation from the Dalai Lama. For more than ten years she sat a ten-day Buddhist retreat every year. She trained as a yoga teacher in the Iyengar and Anusara methods around the turn of the millennium, gained Anusara certification in 2006, and left a nine-year career as a school social studies teacher to teach yoga full time from 2003.\n\nHer classes join close attention to alignment with breath-led movement and careful sequencing, and she presents Anusara as a doorway into the non-dual Tantric philosophy that sits behind it. Since 2016 she has been an authorised teacher of Neelakantha Meditation in Blue Throat Yoga, the school founded by Paul Muller-Ortega, which she teaches one to one and in small groups. She runs her own studio in Williamstown, Massachusetts, with in-person and livestreamed classes, teaches a yearly Winter Study course at Williams College, has taken groups to India, and leads weekends at Kripalu.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local_online",
+      "city": "Williamstown",
+      "country": "United States",
+      "subjects": [
+        "yoga",
+        "meditation",
+        "non-duality"
+      ],
+      "website_url": "https://tashayoga.com/",
+      "booking_url": "https://tashayoga.com/classes/",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": "https://www.facebook.com/tashayogaschool",
+      "twitter_url": "https://x.com/Tashayoga",
+      "tiktok_url": null,
+      "contact_email": "natasha.judson@gmail.com",
+      "image_urls": [
+        "https://kripalu.org/sites/default/files/styles/og_image/public/2017-06/JudsonN.jpg?itok=zUkzISYm",
+        "https://tashayoga.com/wp-content/uploads/2021/05/Tasha-Vasishtasana-2020-scaled.jpg"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "kripalu",
+      "role": "instructor"
+    }
+  ],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "The Body as Gateway: Exploring the Tantra of Anusara Yoga",
+      "url": "https://kripalu.org/experiences/body-gateway-exploring-tantra-anusara-yoga",
+      "description": "A weekend at Kripalu co-led with fellow Anusara teacher Sara Davidson Flanders. Asana practice is paired with the non-dual Tantric philosophy behind Anusara, along with mantra, breathwork and contemplation, and it is open to students new to either.",
+      "price": "$350 USD tuition plus lodging",
+      "product_type": "retreat",
+      "start_date": "2026-12-27",
+      "end_date": "2026-12-29",
+      "subjects": [
+        "yoga",
+        "non-duality",
+        "meditation"
+      ],
+      "image": "https://kripalu.org/sites/default/files/styles/og_image/public/2026-06/warrior%20two.jpg?itok=KrJ_al8h"
+    },
+    {
+      "title": "Learning Neelakantha Meditation",
+      "url": "https://tashayoga.com/meditation/",
+      "description": "Personal instruction in the Neelakantha Meditation practice of Blue Throat Yoga, given over three sessions of about two hours within one week, individually or in a small group. Ongoing support follows through group sittings, conversations with her and the school's online teachings.",
+      "price": "$450 USD (students and seniors $360 USD)",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "non-duality"
+      ],
+      "image": "https://tashayoga.com/wp-content/uploads/2025/08/cropped-cropped-DSC6971.jpg"
+    },
+    {
+      "title": "Tasha Yoga studio and livestream classes",
+      "url": "https://tashayoga.com/classes/",
+      "description": "Weekly alignment-based yoga classes at her Williamstown studio, from basics and chair yoga to open-level and more advanced sessions, many of them also streamed live. Passes are bought through the studio's booking page.",
+      "price": "From $15 USD per class",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://tashayoga.com/wp-content/uploads/2025/08/cropped-cropped-DSC6971.jpg"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "hub": "kripalu",
+    "rank": 29,
+    "hub_url": "https://kripalu.org/people/natasha-tasha-judson",
+    "tier_evidence": "Facebook /tashayogaschool (studio page) count not readable without login (no og:description); X @Tashayoga (studio account) count not readable; Instagram @tashayoga shows 0 followers and appears not to be hers; no YouTube channel found (1 Nov 2026) → ~0 readable → local_hero",
+    "email": "yes",
+    "email_source": "https://tashayoga.com/private-yoga-sessions/",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 9 source(s)",
+    "flags": [
+      "Thin page: three offerings only (Kripalu weekend, Neelakantha Meditation instruction, studio/livestream classes); no videos, books or free resources found.",
+      "Follower counts unreadable for her main accounts (studio Facebook and X); tier local_hero by default of a ~0 readable total.",
+      "Email natasha.judson@gmail.com is Cloudflare-obfuscated on her site (decoded, as the brief allows); it is the address the site gives for private sessions and meditation enquiries.",
+      "Kripalu co-teacher Sara Davidson Flanders is also in this sprint's queue; the same Kripalu programme will appear on both listings.",
+      "Kripalu programme copy mentions 'the healing and empowering Universal Principles of Alignment'; generic, not a condition claim, and not used in the description.",
+      "Social links are studio accounts (Tasha Yoga), not personal ones; the listing is effectively her and her studio."
+    ],
+    "left_out": [
+      "Private yoga sessions ($120 USD/hour): the page pitches them partly for injuries and health conditions; left out under the health rule.",
+      "Entering the Heart of Shiva (online course with Barbara Fugate): already under way (session 5 of 6).",
+      "Classes by other teachers at her studio (Iyengar, MELT, etc.): not hers.",
+      "YouTube channel 'Tasha' with yoga flows: not hers (different person)."
+    ]
+  },
+  "images_final": true
+}

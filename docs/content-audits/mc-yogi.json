@@ -1,0 +1,239 @@
+{
+  "healer": {
+    "healer_slug": "mc-yogi",
+    "create": {
+      "name": "MC YOGI",
+      "bio": "MC YOGI is a yoga teacher and hip hop artist from the San Francisco Bay Area. As a teenager he was painting graffiti, being thrown out of schools and living in a group home, until his father introduced him to yoga at seventeen. He trained under his father's teacher Larry Schultz, went on to Mysore to practise Ashtanga with Sri K. Pattabhi Jois and Sharath, spent years with the Vedanta Society and later stayed at Ramana Maharshi's ashram at Arunachala. Time among Krishna devotees turned him towards chanting, and he came to regard Neem Karoli Baba as his guru. In 2008 he began recording albums that set mantra and yogic stories over hip hop beats.\n\nHis classes are slow, easy-going flows mixed with meditation, mantra, guided relaxation and stories from his own life, drawing on Hindu, Buddhist and Christian sources. He leads residential retreats, including weekends at Kripalu, Drala Mountain Center and the Sivananda ashram in the Bahamas and a week in the Azores, runs an accredited meditation teacher training, and teaches live sessions in his own app. His memoir, Spiritual Graffiti (HarperOne, 2017), tells how yoga redirected his life and won a silver Nautilus Book Award.",
+      "tier": "luminary",
+      "entity_type": "individual",
+      "availability": "worldwide",
+      "city": null,
+      "country": null,
+      "subjects": [
+        "yoga",
+        "meditation",
+        "spirituality"
+      ],
+      "website_url": "https://mcyogi.com/",
+      "booking_url": "https://mcyogi.com/events/",
+      "youtube_url": "https://www.youtube.com/@mcyogimusic",
+      "instagram_url": "https://www.instagram.com/mcyogi/",
+      "facebook_url": "https://www.facebook.com/MCYogi108",
+      "twitter_url": "https://x.com/mcyogi",
+      "tiktok_url": null,
+      "contact_email": "support@mcyogi.com",
+      "image_urls": [
+        "https://mcyogi.com/wp-content/uploads/2025/03/MC-YOGI-headshot.jpg",
+        "https://kripalu.org/sites/default/files/styles/og_image/public/2025-09/MC-YOGI-headshot_edit.jpg?itok=-gioyvW3"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "kripalu",
+      "role": "instructor"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Unwind with MC Yogi's Restorative Vinyasa Flow",
+      "url": "https://www.youtube.com/watch?v=dyQoZEw2FtI",
+      "subjects": [
+        "yoga"
+      ],
+      "channel": "ALO"
+    },
+    {
+      "title": "Energize Your Practice with MC YOGI's Quick Fix Yoga Class",
+      "url": "https://www.youtube.com/watch?v=-HhJ0qPUJ_k",
+      "subjects": [
+        "yoga"
+      ],
+      "channel": "ALO"
+    },
+    {
+      "title": "MC Yogi at TEDxMission The City2.0",
+      "url": "https://www.youtube.com/watch?v=TEyO0RjZjJo",
+      "subjects": [
+        "yoga",
+        "spirituality"
+      ],
+      "channel": "TEDx Talks"
+    },
+    {
+      "title": "Rhymes of the Heart: How Music and Yoga Changed My Life - MC Yogi",
+      "url": "https://www.youtube.com/watch?v=G845ilDU2Ek",
+      "subjects": [
+        "yoga",
+        "spirituality"
+      ],
+      "channel": "Awakened Magazine"
+    },
+    {
+      "title": "Bhakti Speaks with MC yogi",
+      "url": "https://www.youtube.com/watch?v=i6JUhEra4pc",
+      "subjects": [
+        "spirituality",
+        "yoga"
+      ],
+      "channel": "Bhakti Fest"
+    }
+  ],
+  "books": [
+    {
+      "title": "Spiritual Graffiti: Finding My True Path",
+      "slug": "spiritual-graffiti",
+      "author": "MC YOGI",
+      "asin": "0062572539",
+      "store": "amazon.com",
+      "goodreads_url": "https://www.goodreads.com/en/book/show/30653595-spiritual-graffiti",
+      "worldofbooks_url": null,
+      "description": "His memoir, published by HarperOne in 2017. It follows his path from a troubled Bay Area youth spent tagging walls to a life of yoga practice, study in India and making devotional hip hop.",
+      "subjects": [
+        "yoga",
+        "spirituality"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/0062572539.01._SCLZZZZZZZ_.jpg"
+    }
+  ],
+  "courses": [
+    {
+      "title": "The Art of Chilling Out: The Immersive Workshop",
+      "url": "https://kripalu.org/experiences/art-chilling-out-immersive-workshop",
+      "description": "A four-night stay at Kripalu built around unhurried yoga, longer meditation sittings, guided relaxation and his storytelling. The extra days leave room for journaling, walking meditation and quiet reflection, and all levels are welcome.",
+      "price": "From $520 USD plus lodging",
+      "product_type": "retreat",
+      "start_date": "2027-03-10",
+      "end_date": "2027-03-14",
+      "subjects": [
+        "yoga",
+        "meditation"
+      ],
+      "image": "https://kripalu.org/sites/default/files/styles/og_image/public/2025-09/winter%202025%20yoga.jpg?itok=Dr85XIqX"
+    },
+    {
+      "title": "The Art of Chilling Out: Weekend Edition",
+      "url": "https://kripalu.org/experiences/art-chilling-out-weekend-edition",
+      "description": "The two-night version of his Kripalu programme: gentle flowing yoga, meditation and stories from his own path, condensed into a weekend. Suited to beginners and long-time practitioners alike.",
+      "price": "From $420 USD plus lodging",
+      "product_type": "retreat",
+      "start_date": "2027-03-12",
+      "end_date": "2027-03-14",
+      "subjects": [
+        "yoga",
+        "meditation"
+      ],
+      "image": "https://kripalu.org/sites/default/files/styles/og_image/public/2025-09/winter%202025%20yoga.jpg?itok=Dr85XIqX"
+    },
+    {
+      "title": "Divine Yoga, Meditation & Chanting",
+      "url": "https://sivanandabahamas.org/course/divine-yoga-meditation-chanting-january-2027",
+      "description": "A short programme of evening satsangs and daytime workshops with him at the Sivananda ashram on Paradise Island, Nassau. Guests join the ashram's own daily classes and meals alongside his sessions of yoga, meditation and kirtan.",
+      "price": "Contact for pricing",
+      "product_type": "retreat",
+      "start_date": "2027-01-18",
+      "end_date": "2027-01-21",
+      "subjects": [
+        "yoga",
+        "meditation"
+      ],
+      "image": "https://sivanandabahamas.org/wp-content/uploads/MC-YOGI_Divine-Yoga_-Meditation-_-Chanting.jpg"
+    },
+    {
+      "title": "Spiritual Warrior Weekend with MC YOGI: Yoga, Music, & Meditation",
+      "url": "https://www.dralamountain.org/program/sw627-spiritual-warrior-weekend-with-mc-yogi-yoga-music-meditation/",
+      "description": "A weekend at Drala Mountain Center in the Colorado Rockies combining yoga, live music and meditation. Tuition is on a sliding scale and comes with two nights' lodging and meals.",
+      "price": "$250 to $400 USD with two nights' lodging",
+      "product_type": "retreat",
+      "start_date": "2027-06-25",
+      "end_date": "2027-06-27",
+      "subjects": [
+        "yoga",
+        "meditation"
+      ],
+      "image": "https://www.dralamountain.org/wp-content/uploads/2026/10/MC-Yogi-1400-x-1000.jpg"
+    },
+    {
+      "title": "Azores Islands Yoga & Meditation Retreat",
+      "url": "https://mcyogi.com/azores-portugal-yoga-meditation-retreat-mc-yogi/",
+      "description": "Six days on São Miguel in the Azores with morning and evening yoga and meditation, walks to crater lakes, hot springs and coastal paths, and shared meals. Packages are all-inclusive and priced by room type.",
+      "price": "€3,099 to €4,999 EUR all-inclusive",
+      "product_type": "retreat",
+      "start_date": "2027-10-03",
+      "end_date": "2027-10-08",
+      "subjects": [
+        "yoga",
+        "meditation"
+      ],
+      "image": "https://mcyogi.com/wp-content/uploads/2026/08/Azores-Islands-Portugal-Yoga-Retreat-MC-YOGI.jpg"
+    },
+    {
+      "title": "MC YOGI Meditation & Yoga App",
+      "url": "https://mcyogi.com/yoga-meditation-app/",
+      "description": "His subscription app, with recorded yoga classes, guided meditations, mantra practice, yoga nidra and his music. Twice a month he teaches a live chill yoga and meditation session inside the app, and there is a seven-day free trial.",
+      "price": "$14.99 USD a month or $150 USD a year",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga",
+        "meditation"
+      ],
+      "image": "https://mcyogi.com/wp-content/uploads/2025/03/App-Icon.jpg"
+    },
+    {
+      "title": "Ocean of Awareness",
+      "url": "https://mcyogi.com/product/ocean-awareness/",
+      "description": "A ten-minute guided meditation set to soft music, in which he leads the listener into stillness and a sense of spacious awareness. Sold as a download.",
+      "price": "$25 USD",
+      "product_type": "download",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://mcyogi.com/wp-content/uploads/2025/03/Ocean-Awareness-MC-YOGI.jpg"
+    },
+    {
+      "title": "Unfolding the Heart",
+      "url": "https://mcyogi.com/product/unfolding-heart/",
+      "description": "A ten-minute musical meditation focused on softening and opening the heart, so that warmth and love can come through more easily. Sold as a download.",
+      "price": "$25 USD",
+      "product_type": "download",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://mcyogi.com/wp-content/uploads/2025/03/Unfolding-Heart-MC-YOGI.jpg"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "hub": "kripalu",
+    "rank": 6,
+    "hub_url": "https://kripalu.org/people/mc-yogi",
+    "tier_evidence": "Instagram @mcyogi 126K (og:description, 1 Nov 2026); YouTube @mcyogimusic 32.7K (channel header row, 1 Nov 2026); Facebook /MCYogi108 and X @mcyogi not readable without login; no TikTok found → ~158.7k readable total → luminary",
+    "email": "yes",
+    "email_source": "https://mcyogi.com/contact/",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 29 source(s)",
+    "flags": [
+      "Email support@mcyogi.com is the general inquiries inbox of MC YOGI LLC (in the footer of every page; retreats@mcyogi.com also published).",
+      "Facebook and X counts unreadable without login; readable total (~159k) is luminary regardless.",
+      "His own YouTube channel is music only (official videos, lyric videos, streams), so all five videos are classes or talks on other channels (ALO x2, TEDx, Awakened Magazine, Bhakti Fest) where he is the sole speaker.",
+      "The queue entry has the two Kripalu programme dates swapped: the Immersive Workshop is 10–14 Mar 2027 ($520) and the Weekend Edition 12–14 Mar 2027 ($420), per the booking boxes on each page and his own events page.",
+      "Name kept in capitals (MC YOGI) as he and Kripalu present it; legal name not used.",
+      "Availability set to worldwide: no fixed studio found (classes in Petaluma, a training in Miami, festivals and retreats elsewhere) plus the app.",
+      "The app page mentions sleep and anxiety; the description avoids both."
+    ],
+    "left_out": [
+      "All videos on his own channel @mcyogimusic and the 'MC YOGI - Topic' channel: music only.",
+      "Guided Meditation Bundle ($40): the same two meditations already listed.",
+      "100-Hour Meditation Teacher Training (Integral Yoga Center, Miami): sessions started 7 Oct; Spring 2027 Meditation Training is waitlist only with no dates or price.",
+      "Flowing with Grace (The Yoga Post, Petaluma, 19 Dec 2026) and Class + Concert (Yoga Conference SF, 14 May 2027): single classes on third-party booking pages.",
+      "Spiritual Graffiti paperback (0062572822): hardcover edition used."
+    ]
+  },
+  "images_final": true
+}

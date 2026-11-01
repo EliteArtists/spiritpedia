@@ -1,0 +1,150 @@
+{
+  "healer": {
+    "healer_slug": "kim-chandler",
+    "create": {
+      "name": "Kim Chandler",
+      "bio": "Kim Chandler has run Innerlight Center for Yoga & Meditation on Aquidneck Island in Rhode Island since 1995; the studio began in Newport and now sits in Middletown. Before that she lived as a resident at Kripalu and served as associate director of its yoga teachers' association, and she has now been teaching for over thirty years. Her own practice and teaching rest on classical hatha yoga, breathwork and meditation, including loving-kindness practice, and the studio keeps a donation-based meditation class in the spirit of dana.\n\nAlongside yoga she is a long-standing teacher, and a trainer of facilitators, of Proprioceptive Writing, a contemplative method devised by Linda Trichter Metcalf, with whom she studied closely. The practice uses short timed sessions of writing to music, in which you listen to your thoughts as an inner voice and question them gently. She teaches it at Innerlight, privately by phone and at retreat centres such as Kripalu, often pairing it with gentle yoga. With Janne Roehm she co-directs Innerlight's eleven-month, 200-hour teacher course, and over the years she has trained several hundred yoga teachers.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local_online",
+      "city": "Middletown",
+      "country": "United States",
+      "subjects": [
+        "yoga",
+        "meditation"
+      ],
+      "website_url": "https://innerlightyoga.com",
+      "booking_url": "https://innerlightyoga.com/new-page",
+      "youtube_url": null,
+      "instagram_url": "https://www.instagram.com/innerlightyogaandmeditation",
+      "facebook_url": "https://www.facebook.com/Innerlight-Center-for-Yoga-and-Meditation-123670297048/",
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "kim@innerlightyoga.com",
+      "image_urls": [
+        "https://images.squarespace-cdn.com/content/v1/5748fde6746fb940f106bd42/1792367316828-6A8L3861199XXPDGJWPK/FullSizeRender.jpeg",
+        "https://kripalu.org/sites/default/files/styles/og_image/public/2015-10/ChandlerKim.jpg?itok=dCwTD8Rp"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "kripalu",
+      "role": "instructor"
+    }
+  ],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Awaken Inner Clarity: A Guide to Proprioceptive Writing and Yoga",
+      "url": "https://kripalu.org/experiences/awakening-thinking-feeling-self-proprioceptive-writing-and-yoga",
+      "description": "A midwinter stay at Kripalu combining gentle yoga with contemplative writing, using the structure of Proprioceptive Writing as a guide. It is meant to renew energy and self-trust after the holidays, and no yoga or writing experience is needed.",
+      "price": "From $399 USD plus lodging",
+      "product_type": "retreat",
+      "start_date": "2027-01-12",
+      "end_date": "2027-01-15",
+      "subjects": [
+        "yoga",
+        "meditation"
+      ],
+      "image": "https://kripalu.org/sites/default/files/styles/og_image/public/2025-08/awakeningtheheart_hero_0.jpg?itok=GD-x4f3x"
+    },
+    {
+      "title": "How to Hear Your Inner Self: A Proprioceptive Writing Immersion",
+      "url": "https://kripalu.org/experiences/how-hear-your-inner-self-proprioceptive-writing-immersion",
+      "description": "Five days at Kripalu with Kim Chandler and fellow Proprioceptive Writing teacher Ann Munroe Mullen. Participants practise the method's three rules in regular 25-minute sittings, learning to listen to their thinking as a voice and to use the writing as a form of meditation.",
+      "price": "From $460 USD plus lodging",
+      "product_type": "retreat",
+      "start_date": "2027-05-02",
+      "end_date": "2027-05-07",
+      "subjects": [
+        "meditation",
+        "consciousness"
+      ],
+      "image": "https://kripalu.org/sites/default/files/styles/og_image/public/2026-04/writing%20in%20field.jpg?itok=ID6FT5gk"
+    },
+    {
+      "title": "200 Hour Yoga Immersion & Teacher Course 2027",
+      "url": "https://innerlightyoga.com/200-hour-ytt-",
+      "description": "Innerlight's eleven-weekend teacher course, co-directed by Kim Chandler and Janne Roehm and grounded in classical hatha yoga. It covers asana and alignment, pranayama, meditation, philosophy, energetics and teaching method, with practicums and mentoring, and suits both future teachers and those who simply want to study.",
+      "price": "$3,500 USD ($3,200 USD early bird)",
+      "product_type": "course",
+      "start_date": "2027-01-30",
+      "end_date": "2027-11-07",
+      "subjects": [
+        "yoga",
+        "meditation",
+        "breathwork"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/5748fde6746fb940f106bd42/1464405679981-U51FUFES62K1PH9JXLW9/Innerlight_color-CC1.jpg?format=1500w"
+    },
+    {
+      "title": "Loving Kindness Meditation & Gentle Yoga with Guided Relaxation",
+      "url": "https://innerlightyoga.com/events/kimnovember2026",
+      "description": "A Saturday afternoon at Innerlight of mindful, gentle yoga, metta meditation and a guided relaxation. The focus is on extending warmth to yourself first and then outwards to others.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": "2026-11-14",
+      "end_date": "2026-11-14",
+      "subjects": [
+        "meditation",
+        "yoga"
+      ],
+      "image": "http://static1.squarespace.com/static/5748fde6746fb940f106bd42/574cded1555986b356d8bb35/6ad55866a42e6a69e12196ef/1792624612964/FullSizeRender.jpeg?format=1500w"
+    },
+    {
+      "title": "Innerlight Studio and Zoom Classes",
+      "url": "https://innerlightyoga.com/pricing",
+      "description": "The weekly timetable at Innerlight in Middletown, Rhode Island, with yoga and meditation classes in the studio and many also streamed live on Zoom. Classes are bought singly or in passes, and the meditation class is offered on a donation basis.",
+      "price": "$20 USD drop-in; 10 classes $150 USD",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga",
+        "meditation"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/5748fde6746fb940f106bd42/1464405679981-U51FUFES62K1PH9JXLW9/Innerlight_color-CC1.jpg?format=1500w"
+    },
+    {
+      "title": "Private Yoga & Proprioceptive Writing Lessons",
+      "url": "https://innerlightyoga.com/new-page",
+      "description": "One-to-one or small-group yoga in the studio or at home, and private foundation lessons in Proprioceptive Writing with Kim Chandler, which can also be taken by phone. The writing series focuses on building a steady practice with sound technique.",
+      "price": "$130 USD per 60-minute private yoga session; writing lessons contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga",
+        "meditation"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/5748fde6746fb940f106bd42/1464405679981-U51FUFES62K1PH9JXLW9/Innerlight_color-CC1.jpg?format=1500w"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "hub": "kripalu",
+    "rank": 9,
+    "hub_url": "https://kripalu.org/people/kim-chandler",
+    "tier_evidence": "No personal social accounts found. Studio accounts (not counted): Instagram @innerlightyogaandmeditation 1,142 (og:description, 1 Nov 2026); YouTube @innerlightcenterforyogamed6239 24 subscribers (channel header row, 1 Nov 2026); Facebook page not readable without login → ~0 personal (~1.2k studio) → local_hero",
+    "email": "yes",
+    "email_source": "https://innerlightyoga.com/",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 16 source(s)",
+    "flags": [
+      "Social links are the Innerlight studio's accounts (her own business); no personal accounts found, so the readable total is effectively 0.",
+      "Kripalu and the queue say Newport; the studio's address is now 850 Aquidneck Ave, Middletown, RI, so city is Middletown.",
+      "Studio classes and privates are taught by Innerlight's team as well as Kim; listed as her offerings because she owns and directs the studio.",
+      "First photo is from the studio's event page (her in an Innerlight T-shirt) and matches the Kripalu headshot; the Squarespace URL serves WebP.",
+      "Proprioceptive Writing is described by Kripalu as usable for therapeutic purposes; descriptions present it only as a contemplative and creative practice."
+    ],
+    "left_out": [
+      "All videos on the studio YouTube channel: short promos under two minutes.",
+      "No books by her found.",
+      "Sound baths and yin afternoons on the studio calendar: led by other teachers.",
+      "Prices for the 14 Nov afternoon and private writing lessons: not published."
+    ]
+  },
+  "images_final": true
+}

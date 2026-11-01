@@ -1,0 +1,195 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 462,
+    "healer_slug": "sage-rountree"
+  },
+  "rows": [
+    {
+      "table": "videos",
+      "id": 5139,
+      "slug": "stop-overthinking-every-word-the-3-cue-rule-that-transforms-your-yoga-teaching",
+      "title": "Stop Overthinking Every Word: The 3 Cue Rule That Transforms Your Yoga Teaching"
+    },
+    {
+      "table": "videos",
+      "id": 5140,
+      "slug": "gentle-yoga-full-body-flow-with-sage-rountree",
+      "title": "Gentle Yoga: Full Body Flow with Sage Rountree"
+    },
+    {
+      "table": "videos",
+      "id": 5141,
+      "slug": "how-teaching-yin-restorative-yoga-makes-you-better-at-teaching-everything",
+      "title": "How Teaching Yin & Restorative Yoga Makes You Better at Teaching Everything"
+    },
+    {
+      "table": "videos",
+      "id": 5142,
+      "slug": "how-to-teach-yoga-without-planning-a-new-class-every-week",
+      "title": "How to Teach Yoga Without Planning a New Class Every Week"
+    },
+    {
+      "table": "videos",
+      "id": 5143,
+      "slug": "how-to-teach-yoga-balance-poses-for-every-body-live-workshop",
+      "title": "How to Teach Yoga Balance Poses for Every Body Live Workshop"
+    },
+    {
+      "table": "videos",
+      "id": 5144,
+      "slug": "how-to-teach-yin-yoga-a-full-class-built-live-free-workshop",
+      "title": "How to Teach Yin Yoga: A Full Class, Built Live (Free Workshop)"
+    },
+    {
+      "table": "videos",
+      "id": 5145,
+      "slug": "how-to-teach-restorative-yoga-that-actually-restores-live-workshop",
+      "title": "How to Teach Restorative Yoga That Actually Restores (Live Workshop)"
+    },
+    {
+      "table": "videos",
+      "id": 5146,
+      "slug": "stop-planning-a-new-class-every-week-the-repeat-method",
+      "title": "Stop Planning a New Class Every Week: The Repeat Method"
+    },
+    {
+      "table": "videos",
+      "id": 5147,
+      "slug": "when-and-when-not-to-demo-poses-in-your-yoga-class",
+      "title": "When (and When NOT) to Demo Poses in Your Yoga Class"
+    },
+    {
+      "table": "videos",
+      "id": 5148,
+      "slug": "yoga-nidra-script-secrets-what-to-say-for-20-minutes-workshop-guided-nidra",
+      "title": "Yoga Nidra Script Secrets: What to Say for 20 Minutes (Workshop + Guided Nidra)"
+    },
+    {
+      "table": "videos",
+      "id": 5149,
+      "slug": "two-arrows-of-suffering-yoga-philosophy-for-yoga-teachers-who-second-guess-everything",
+      "title": "Two Arrows of Suffering: Yoga Philosophy for Yoga Teachers Who Second-Guess Everything"
+    },
+    {
+      "table": "videos",
+      "id": 5150,
+      "slug": "the-5-kleshas-in-the-teachers-seat-yoga-philosophy-for-yoga-teachers-who-perform-calm",
+      "title": "The 5 Kleshas in the Teacher’s Seat: Yoga Philosophy for Yoga Teachers Who Perform Calm"
+    },
+    {
+      "table": "books",
+      "id": 1598,
+      "slug": "the-art-of-yoga-sequencing",
+      "title": "The Art of Yoga Sequencing: Contemporary Approaches and Inclusive Practices for Teachers and Practitioners"
+    },
+    {
+      "table": "books",
+      "id": 1599,
+      "slug": "teaching-yoga-beyond-the-poses",
+      "title": "Teaching Yoga Beyond the Poses: A Practical Workbook for Integrating Themes, Ideas, and Inspiration into Your Class"
+    },
+    {
+      "table": "books",
+      "id": 1600,
+      "slug": "teaching-yoga-beyond-the-poses-volume-2",
+      "title": "Teaching Yoga Beyond the Poses, Volume 2: 54 New Themes, Templates, and Ideas for Integrating Inspiration into Your Class"
+    },
+    {
+      "table": "books",
+      "id": 1601,
+      "slug": "the-professional-yoga-teachers-handbook",
+      "title": "The Professional Yoga Teacher’s Handbook"
+    },
+    {
+      "table": "books",
+      "id": 1602,
+      "slug": "the-athletes-guide-to-yoga",
+      "title": "The Athlete's Guide to Yoga: An Integrated Approach to Strength, Flexibility, and Focus"
+    },
+    {
+      "table": "books",
+      "id": 1603,
+      "slug": "the-runners-guide-to-yoga",
+      "title": "The Runner's Guide to Yoga"
+    },
+    {
+      "table": "books",
+      "id": 1604,
+      "slug": "lifelong-yoga",
+      "title": "Lifelong Yoga: Maximizing Your Balance, Flexibility, and Core Strength in Your 50s, 60s, and Beyond"
+    },
+    {
+      "table": "books",
+      "id": 1605,
+      "slug": "everyday-yoga",
+      "title": "Everyday Yoga: At-Home Routines to Enhance Fitness, Build Strength, and Restore Your Body"
+    },
+    {
+      "table": "courses",
+      "id": "b6e68d3e-c7a5-4ef7-8377-68ea981f72ee",
+      "slug": "teaching-restful-yoga-gentle-yin-restorative-and-nidra-for-teachers",
+      "title": "Teaching Restful Yoga: Gentle, Yin, Restorative, and Nidra for Teachers"
+    },
+    {
+      "table": "courses",
+      "id": "f72efe86-800f-4c58-8fad-9331b01c29ee",
+      "slug": "gentle-yin-and-restorative-yoga-restore-comfort-and-ease",
+      "title": "Gentle, Yin, and Restorative Yoga: Restore Comfort and Ease"
+    },
+    {
+      "table": "courses",
+      "id": "c7cb66f9-fed4-434e-9d47-a54be6760541",
+      "slug": "200-hour-online-yoga-teacher-training",
+      "title": "200-Hour Online Yoga Teacher Training"
+    },
+    {
+      "table": "courses",
+      "id": "ea106195-314a-47d1-9f99-11320634302e",
+      "slug": "300-hour-advanced-yoga-teacher-training",
+      "title": "300-Hour Advanced Yoga Teacher Training"
+    },
+    {
+      "table": "courses",
+      "id": "b0970314-c2ac-455a-9eb5-7b84b05f92b7",
+      "slug": "teaching-yoga-to-athletes",
+      "title": "Teaching Yoga to Athletes"
+    },
+    {
+      "table": "courses",
+      "id": "31d4ef04-622c-4e48-8f51-adf8fba3663d",
+      "slug": "mastering-the-art-of-yoga-sequencing-a-mentorship-membership",
+      "title": "Mastering the Art of Yoga Sequencing: A Mentorship Membership"
+    },
+    {
+      "table": "courses",
+      "id": "55b11c7b-d82d-4e2c-88f4-2c10d5d2caf8",
+      "slug": "the-yoga-class-prep-station",
+      "title": "The Yoga Class Prep Station"
+    },
+    {
+      "table": "courses",
+      "id": "284e336b-f18b-4fd5-bb8f-dcaf4a5a25a9",
+      "slug": "the-workshop-workbook",
+      "title": "The Workshop Workbook"
+    },
+    {
+      "table": "free_resources",
+      "id": "c5af111d-06dc-41e9-aa72-849f24afa84a",
+      "slug": "go-to-yoga-lesson-plan",
+      "title": "Go-to Yoga Lesson Plan"
+    },
+    {
+      "table": "free_resources",
+      "id": "56c529d9-ec19-49d8-8c35-d80fa06f4992",
+      "slug": "free-workshop-teaching-yoga-to-athletes",
+      "title": "Free Workshop: Teaching Yoga to Athletes"
+    },
+    {
+      "table": "hub_teachers",
+      "id": "d87fd4d8-88a7-4f01-8037-5294ec5a54bb",
+      "title": "sage-rountree teaches at Kripalu Center for Yoga & Health"
+    }
+  ],
+  "at": "2026-11-01T14:15:16.184Z"
+}

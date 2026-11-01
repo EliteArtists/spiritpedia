@@ -1,0 +1,201 @@
+{
+  "healer": {
+    "healer_slug": "jovinna-chan",
+    "create": {
+      "name": "Jovinna Chan",
+      "bio": "Jovinna Chan teaches yoga, conscious dance and ritual, weaving them together with time in nature, poetry and sound. She grew up in a Singapore village surrounded by temples and forest, trained as an actor and dancer in New York, where she also earned a black belt in karate, and in 2007 moved into Kripalu as a resident. Over eight years there she studied with its senior teachers, helped run its yoga teacher trainings at both foundation and advanced levels as assistant dean, and qualified to teach the dance forms Soul Motion and Let Your Yoga Dance. Her wider study has drawn on Taoism and Buddhism as well as yoga philosophy.\n\nShe co-founded the Pranotthan School of Yoga and the Shakti Initiation Yoga Leadership School, and with her friend Jurian Hughes created the Dance into Joy programme. She describes herself as a devotee on the path of Self-realisation and is most interested in helping householders, women especially, build their own daily practice; her teaching leans on questions and gentle self-observation rather than fixed answers. Today she leads residential workshops at Kripalu and Esalen, has taught at Omega and 1440 Multiversity, and offers one-to-one mentoring for practitioners and for yoga and dance teachers shaping their own programmes.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "worldwide",
+      "city": null,
+      "country": null,
+      "subjects": [
+        "yoga",
+        "spirituality",
+        "meditation"
+      ],
+      "website_url": "https://jovinna.com",
+      "booking_url": "https://jovinna.com/offerings/",
+      "youtube_url": "https://www.youtube.com/@jovinnachan",
+      "instagram_url": "https://www.instagram.com/jovinnachan/",
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "jovinna@gmail.com",
+      "image_urls": [
+        "https://kripalu.org/sites/default/files/2015-10/Jovinna-Chan_2023.jpg"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "kripalu",
+      "role": "instructor"
+    },
+    {
+      "hub": "esalen",
+      "role": "instructor"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Yoga with Jovinna - Who Have You Become?",
+      "url": "https://www.youtube.com/watch?v=MyDKver7xbU",
+      "subjects": [
+        "yoga",
+        "spirituality"
+      ],
+      "channel": "Jovinna Chan"
+    },
+    {
+      "title": "Blessfest 2020 Gentle Restorative Yoga with Jovinna",
+      "url": "https://www.youtube.com/watch?v=j22xgUc7xsk",
+      "subjects": [
+        "yoga"
+      ],
+      "channel": "Jovinna Chan"
+    },
+    {
+      "title": "MORNING RITUAL - An homage to the Elements",
+      "url": "https://www.youtube.com/watch?v=kW7eacD3qRQ",
+      "subjects": [
+        "yoga",
+        "spirituality"
+      ],
+      "channel": "Jovinna Chan"
+    },
+    {
+      "title": "Sun Salutation ~ I love you, Sun",
+      "url": "https://www.youtube.com/watch?v=Gb4eVmo0o7U",
+      "subjects": [
+        "yoga"
+      ],
+      "channel": "Jovinna Chan"
+    }
+  ],
+  "books": [],
+  "courses": [
+    {
+      "title": "Dance Into Joy: A Spring Retreat for Body and Soul",
+      "url": "https://kripalu.org/experiences/dance-joy",
+      "description": "A weekend at Kripalu in Stockbridge, Massachusetts, co-led with Jurian Hughes, of free-form dance, stillness and reflection set to music. No dance experience is needed, only a willingness to move and let go.",
+      "price": "$370 USD plus accommodation",
+      "product_type": "retreat",
+      "start_date": "2027-04-23",
+      "end_date": "2027-04-25",
+      "subjects": [
+        "yoga",
+        "spirituality"
+      ],
+      "image": "https://kripalu.org/sites/default/files/styles/og_image/public/2025-11/Dance%20Into%20Joy%20Hero.jpg?itok=YgNij_cp"
+    },
+    {
+      "title": "The Wild Embrace: A Journey to Vitality",
+      "url": "https://www.esalen.org/workshops/the-wild-embrace-a-journey-to-vitality-111626",
+      "description": "A five-day workshop at Esalen in Big Sur, California, on reconnecting with the life force through the body and the land. The week brings together conscious dance, gentle yoga, crystal bowl sound, offerings to the land and quiet time outdoors.",
+      "price": "From $940 USD (all-inclusive)",
+      "product_type": "retreat",
+      "start_date": "2026-11-16",
+      "end_date": "2026-11-20",
+      "subjects": [
+        "yoga",
+        "sound-healing",
+        "spirituality"
+      ],
+      "image": "https://cdn.prod.website-files.com/602d8561ae2fe6ec8347c903/697bf4e80f4520c4701a8f2a_6967f93d71b9e156ed31785f_6967164e0c8b4e2885864af8_2026-Esalen_Lodge-Tree-Emily-Miller-1500x775.jpeg"
+    },
+    {
+      "title": "Into the Field of Possibility: Ritual and Dance to Set Your Year Free",
+      "url": "https://www.esalen.org/workshops/into-the-field-of-possibility-ritual-and-dance-to-set-your-year-free-010827",
+      "description": "A New Year weekend at Esalen of dance, ritual and sound for closing one year and setting intentions for the next. Participants give thanks, offer blessings and listen to the body for direction, with time in the hot springs between sessions.",
+      "price": "From $940 USD (all-inclusive)",
+      "product_type": "retreat",
+      "start_date": "2027-01-08",
+      "end_date": "2027-01-10",
+      "subjects": [
+        "spirituality",
+        "sound-healing"
+      ],
+      "image": "https://cdn.prod.website-files.com/602d8561ae2fe6ec8347c903/69682b4a4047e1cd1947c993_6966c3ffbb38f33fd9fd373b_2025-Esalen_Stock-Image-Free_Alt-for-Night-Sky-1500x775.jpeg"
+    },
+    {
+      "title": "Mentoring with Jovinna",
+      "url": "https://jovinna.com/offerings/",
+      "description": "Hour-long one-to-one sessions for people deepening a personal spiritual practice, and for yoga and conscious dance teachers designing their own workshops and finding their voice. Sessions can be booked singly or as a set of four.",
+      "price": "$175 USD per session; $595 USD for 4 sessions",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "spirituality",
+        "yoga",
+        "life-coaching"
+      ],
+      "image": "https://jovinna.com/wp-content/uploads/2026/05/image-400x277.jpeg"
+    },
+    {
+      "title": "Grounding and Expanding Yoga (Moderate Yoga Video)",
+      "url": "https://jovinna.com/resources/moderate-yoga-dvd/",
+      "description": "A home practice video of moderate-level yoga led by Jovinna, sold as a physical DVD or to buy or rent on Vimeo On Demand.",
+      "price": "Contact for pricing",
+      "product_type": "download",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://jovinna.com/wp-content/uploads/2021/06/jc-dvd-page.png"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "A Free Gentle Yoga Class with Jovinna",
+      "url": "https://www.youtube.com/watch?v=to4RpqFdP5Q",
+      "description": "A full hour of gentle yoga on YouTube, slow-paced and suitable for most levels, led by Jovinna from home.",
+      "featured": true,
+      "resource_type": "practice",
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://i.ytimg.com/vi/to4RpqFdP5Q/maxresdefault.jpg?sqp=-oaymwEmCIAKENAF8quKqQMa8AEB-AHUBoAC4AOKAgwIABABGGUgXChMMA8=&rs=AOn4CLDp725KVabhFCEF0y0MebddggvUlw"
+    },
+    {
+      "title": "Meditation on Love with Jovinna",
+      "url": "https://www.youtube.com/watch?v=Ienydd8lwnE",
+      "description": "A guided meditation of just over half an hour on opening to love, recorded by Jovinna and free to watch.",
+      "featured": false,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "image": "https://i.ytimg.com/vi/Ienydd8lwnE/maxresdefault.jpg?sqp=-oaymwEmCIAKENAF8quKqQMa8AEB-AHUBoAC4AOKAgwIABABGGUgYShKMA8=&rs=AOn4CLCu2SOBW6aygNO93-1sfxRe8V4M7w"
+    }
+  ],
+  "sprint": {
+    "hub": "kripalu",
+    "rank": 40,
+    "hub_url": "https://kripalu.org/people/jovinna-chan",
+    "tier_evidence": "Instagram @jovinnachan 2,294 (og:description, 1 Nov 2026); YouTube @jovinnachan 435 (channel header, 1 Nov 2026); no Facebook linked from her site → ~2.7k total → local_hero",
+    "email": "yes",
+    "email_source": "https://jovinna.com/connect/",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 10 source(s)",
+    "flags": [
+      "Queue entry lists Esalen as a second hub; Esalen added to teaches_at (three upcoming Esalen workshops found, two listed).",
+      "Dance Into Joy at Kripalu is co-led with Jurian Hughes, who is also in this sprint's queue; the same Kripalu programme may appear on both listings.",
+      "Esalen rate table on the workshop pages appears to be a general one (same figures on every workshop); price written as 'From $940 USD (all-inclusive)' as in earlier Esalen plans.",
+      "Only one distinct photo found (Kripalu headshot; her YouTube avatar is the same picture).",
+      "Email is a personal Gmail address published on her site."
+    ],
+    "left_out": [
+      "Shedding the Old to Enter the Magnificent Wild: A Women's Third Rite of Passage (Esalen, Mar 2027): framed around perimenopause and menopause (condition-named).",
+      "Into the Field of Possibility: Meeting Your Essence Through Dance (Esalen, May 2027): third Esalen programme; hub offerings capped at two per hub.",
+      "Weekly online yoga and Soul Movement Sanctuary classes: both marked as on pause.",
+      "Short clips and promos on YouTube (under two minutes, dance art pieces, programme trailers).",
+      "Podcast interviews: hosted on her site, not on YouTube.",
+      "Her about page says her classes weaken depression and anxiety; nothing with that framing is listed."
+    ]
+  },
+  "images_final": true
+}
