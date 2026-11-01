@@ -1,0 +1,39 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 612,
+    "healer_slug": "renee-sills"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "5ebf8174-ef3a-4609-91fb-75fc7b9f7d88",
+      "slug": "somatic-space-classes",
+      "title": "Somatic Space Classes"
+    },
+    {
+      "table": "courses",
+      "id": "99f869be-0f52-4d0a-b421-562777f72b25",
+      "slug": "embodied-astrology-membership",
+      "title": "Embodied Astrology Membership"
+    },
+    {
+      "table": "free_resources",
+      "id": "b26fa745-779a-48d5-ae1f-c04ad77fe983",
+      "slug": "renee-sills-on-insight-timer",
+      "title": "Renee Sills on Insight Timer"
+    },
+    {
+      "table": "free_resources",
+      "id": "f4733ef6-dc30-476c-b4fd-5a20981a69f9",
+      "slug": "free-seasonal-horoscopes",
+      "title": "Free Seasonal Horoscopes"
+    },
+    {
+      "table": "hub_teachers",
+      "id": "80adadb3-3edd-433c-8d81-7fd93dc5cb4c",
+      "title": "renee-sills teaches at Insight Timer"
+    }
+  ],
+  "at": "2026-11-01T19:16:30.203Z"
+}

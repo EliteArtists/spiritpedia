@@ -1,0 +1,51 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 622,
+    "healer_slug": "aluminea"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "0ee293e5-9502-4ef7-9841-d614a1141bdc",
+      "slug": "energetic-alignment-sessions",
+      "title": "Energetic Alignment Sessions"
+    },
+    {
+      "table": "courses",
+      "id": "cba3c1cf-4bee-4478-8808-028bf40a384c",
+      "slug": "usui-reiki-certifications-levels-1-to-3",
+      "title": "Usui Reiki Certifications (Levels 1 to 3)"
+    },
+    {
+      "table": "courses",
+      "id": "86a4a2de-a104-476d-8d15-c17bc928b0c8",
+      "slug": "okuden-usui-reiki-level-2-online-course",
+      "title": "Okuden: Usui Reiki Level 2 (online course)"
+    },
+    {
+      "table": "courses",
+      "id": "664f1373-e36c-4a32-9c00-7753f19b6466",
+      "slug": "custom-malas",
+      "title": "Custom Malas"
+    },
+    {
+      "table": "free_resources",
+      "id": "685fb4d4-2847-4576-aecd-d3fb21e8812f",
+      "slug": "aluminea-on-insight-timer",
+      "title": "Aluminea on Insight Timer"
+    },
+    {
+      "table": "free_resources",
+      "id": "769e8bf3-d984-4123-9e9e-1cff859d1f30",
+      "slug": "meditate-transform-guided-meditations",
+      "title": "Meditate & Transform: guided meditations"
+    },
+    {
+      "table": "hub_teachers",
+      "id": "201b6c24-71a9-4e64-a6d8-b0d6d23b5883",
+      "title": "aluminea teaches at Insight Timer"
+    }
+  ],
+  "at": "2026-11-01T19:18:09.489Z"
+}

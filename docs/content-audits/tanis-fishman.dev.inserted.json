@@ -1,0 +1,57 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 601,
+    "healer_slug": "tanis-fishman"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "f7506e75-9ea8-46a0-8c29-c5557f717f8a",
+      "slug": "awakening-from-our-sleep-yoga-nidra-training-immersion",
+      "title": "Awakening From Our Sleep: Yoga Nidra Training & Immersion"
+    },
+    {
+      "table": "courses",
+      "id": "a6cff9d2-9018-4273-9b6b-565312bb656b",
+      "slug": "the-inward-path",
+      "title": "The Inward Path"
+    },
+    {
+      "table": "courses",
+      "id": "f894fa33-979f-4411-be11-b2bf303505dc",
+      "slug": "a-path-to-sankalpa",
+      "title": "A Path to Sankalpa"
+    },
+    {
+      "table": "courses",
+      "id": "9f224ec0-669e-4572-bb29-c6a0a930bb8e",
+      "slug": "templed-retreat-somerset",
+      "title": "Templed Retreat, Somerset"
+    },
+    {
+      "table": "free_resources",
+      "id": "430e65f9-23d9-47ff-bce6-415fc38ce5fc",
+      "slug": "tanis-fishman-on-insight-timer",
+      "title": "Tanis Fishman on Insight Timer"
+    },
+    {
+      "table": "free_resources",
+      "id": "7013194f-4488-4267-be3e-021c0d0147a3",
+      "slug": "free-yoga-nidra-recordings",
+      "title": "Free Yoga Nidra Recordings"
+    },
+    {
+      "table": "free_resources",
+      "id": "1774a3c1-aca4-47da-a40c-c008b4fabb61",
+      "slug": "meditation-yoga-nidra-resources",
+      "title": "Meditation & Yoga Nidra Resources"
+    },
+    {
+      "table": "hub_teachers",
+      "id": "b9d7180c-f577-48cb-8aad-12c020c441a5",
+      "title": "tanis-fishman teaches at Insight Timer"
+    }
+  ],
+  "at": "2026-11-01T19:15:02.935Z"
+}

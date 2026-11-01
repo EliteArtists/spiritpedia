@@ -2394,8 +2394,8 @@
    "base": "Calgary, AB, Canada",
    "website": "https://www.gillian-white.com/",
    "note": null,
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/gillian-white.json",
    "skip_reason": null
   },
   {
@@ -2413,9 +2413,9 @@
    "base": "Pāhoa, HI, USA",
    "website": "www.destinymarielove.com",
    "note": "Email decoded from Cloudflare protection; contact page also has an inquiry form.",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Work is sold mainly on nervous-system healing: most of her YouTube titles promise to heal or reset the nervous system or vagus nerve or calm stress, her sessions page lists anxiety and trauma, and both books are framed on trauma or menstrual pain and hormones, so the channel as a whole is condition-led (judgement call: a few voice, mantra and purpose practices and her Udemy voice courses would pass on their own)."
   },
   {
    "rank": 128,
@@ -2432,8 +2432,8 @@
    "base": "Frisco, TX, USA",
    "website": "agapespiritualcenter.com",
    "note": "Minister at Agape Spiritual Center (in-person and online).",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/lee-wolak.json",
    "skip_reason": null
   },
   {
@@ -2451,9 +2451,9 @@
    "base": "Los Angeles, CA, USA",
    "website": "www.griefyoga.com",
    "note": "Grief-focused but not clinical.",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Researched under Commune (rank 29) and skipped there: everything he teaches is framed around grief, loss and trauma (courses, membership, book, free classes, condition-targeted groups); only one short series stands without that framing, too little for a page. See commune-sprint-1/skipped/paul-denniston.json."
   },
   {
    "rank": 130,
@@ -2470,9 +2470,9 @@
    "base": "Gloucestershire, UK",
    "website": "www.meditationvacation.co.uk",
    "note": null,
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Strict health rule: his Meditation Vacation brand is sold on conditions (his Insight Timer bio offers meditations for anxiety, depression and insomnia; his store has Pain Relief and anxiety categories), so a listing would send people to condition-led pages even with those items left out. Researcher's plan (luminary) kept in dropped/ for the owner."
   },
   {
    "rank": 131,
@@ -2489,8 +2489,8 @@
    "base": "Calgary, AB, Canada",
    "website": "www.schoolofsankalpa.com",
    "note": "Contact page still shows Squarespace template placeholder text but lists admin@schoolofsankalpa.com.",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/tanis-fishman.json",
    "skip_reason": null
   },
   {
@@ -2508,9 +2508,9 @@
    "base": "San Francisco, CA, USA",
    "website": "skivamusic.com",
    "note": "Singer/producer site (Skiva Music); not a teaching practice.",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Music project rather than a teacher: his Insight Timer bio and his site (Skiva Music) present him as a composer and producer of relaxation and world music and films, with music downloads for sale and no classes, sessions, courses or retreats."
   },
   {
    "rank": 133,
@@ -2527,8 +2527,8 @@
    "base": "Manly NSW, Australia",
    "website": "tinyurl.com/it-nidsnidra",
    "note": "Main site is awakeningspiral.com.",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/nid-ra.json",
    "skip_reason": null
   },
   {
@@ -2546,9 +2546,9 @@
    "base": "Edmonton, AB, Canada",
    "website": "https://www.carolinestewart.ca",
    "note": null,
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Health rule: recent episodes of her own podcast (All The Way Alive, named in her bio) promote German New Medicine, a discredited medical theory, as with Meredith Rom in sprint 1; a listing would send people there. Much of the rest of her site is business coaching. Researcher's plan kept in dropped/ for the owner."
   },
   {
    "rank": 135,
@@ -2565,8 +2565,8 @@
    "base": "Cleveland, OH, USA",
    "website": "https://www.navigatingearth.org/",
    "note": null,
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/joe-stuczynski.json",
    "skip_reason": null
   },
   {
@@ -2584,9 +2584,9 @@
    "base": "Dublin, Ireland",
    "website": "https://www.angelicbodies.ie",
    "note": "Site works on http only (https fails).",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Strict health rule: her own Reiki and angel-healing pages claim help with depression, PTSD and illness, so a listing would send people to those pages even with the sessions left out (as with Mira Kelley). She is also not taking new private clients. Researcher's plan kept in dropped/."
   },
   {
    "rank": 137,
@@ -2603,8 +2603,8 @@
    "base": "Austin, TX, USA",
    "website": "www.guidedlifestyle.com",
    "note": null,
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/fred-haas.json",
    "skip_reason": null
   },
   {
@@ -2622,9 +2622,9 @@
    "base": "San Diego, CA, USA",
    "website": "https://www.johannaburkhardt.com",
    "note": "Domain redirects to a Wix free site (johannaburkhardt.wixsite.com/alchemist).",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Strict health rule: her own framing is condition-led (a press kit about anxiety and depression, Insight Timer tracks titled for depression, a CPTSD video), so a listing would point to condition-sold work even with those items left out. Researcher's plan kept in dropped/."
   },
   {
    "rank": 139,
@@ -2641,8 +2641,8 @@
    "base": "Tacoma, WA, USA",
    "website": "https://campsite.bio/theunfinishedhuman?utm_source=insighttimer.com&utm_medium=profile",
    "note": "Campsite.bio link page only.",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/lyndsay-toensing.json",
    "skip_reason": null
   },
   {
@@ -2660,9 +2660,9 @@
    "base": "Ontario, Canada",
    "website": "https://www.padmarefuge.org",
    "note": "Email is for the Padma Refuge Foundation.",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Too thin for a full page: no offerings, books or own website (padmarefuge.org is a bare foundation page with corporate documents), only one YouTube video where he is clearly the main teacher, and the only email is the Padma Refuge Foundation inbox."
   },
   {
    "rank": 141,
@@ -2679,8 +2679,8 @@
    "base": "Peterborough, ON, Canada",
    "website": "allyboothroyd.com",
    "note": "Sleep-themed yoga nidra trainings, not clinical.",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/ally-boothroyd.json",
    "skip_reason": null
   },
   {
@@ -2698,8 +2698,8 @@
    "base": "London, UK",
    "website": "www.breathpod.com",
    "note": "Company site (Breathpod Ltd); app marketed on stress/sleep/anxiety stats.",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/stuart-sandeman.json",
    "skip_reason": null
   },
   {
@@ -2717,8 +2717,8 @@
    "base": "Ojai, CA, USA",
    "website": "linktr.ee/sahdsimone",
    "note": "Linktree; mentions trauma-informed healing but not clinical.",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/sah-dsimone.json",
    "skip_reason": null
   },
   {
@@ -2736,9 +2736,9 @@
    "base": "Los Angeles, CA, USA",
    "website": "www.zenme.tv",
    "note": null,
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Strict health rule: her coaching and hypnosis are sold on her own site for stress, anxiety and addiction, so a listing would send people to condition-sold treatment even with the sessions left out (as with Sandra Rea and Mira Kelley). Researcher's plan kept in dropped/."
   },
   {
    "rank": 145,
@@ -2755,8 +2755,8 @@
    "base": "Woodstock, NY, USA",
    "website": "www.thestellarmuse.com",
    "note": null,
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/renee-rotkopf.json",
    "skip_reason": null
   },
   {
@@ -2774,8 +2774,8 @@
    "base": "Sacred Valley, Peru",
    "website": "https://www.evolutionaryastrologyacademy.com",
    "note": "Site is her Evolutionary Astrology Academy.",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/gaia-hope-good.json",
    "skip_reason": null
   },
   {
@@ -2793,8 +2793,8 @@
    "base": "Salisbury, UK",
    "website": null,
    "note": "No website on IT; found tomevans.co.",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/tom-evans.json",
    "skip_reason": null
   },
   {
@@ -2812,8 +2812,8 @@
    "base": "Portland, OR, USA",
    "website": "www.embodiedastrology.com",
    "note": "Site is Embodied Astrology (hosts guest teachers too).",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/renee-sills.json",
    "skip_reason": null
   },
   {
@@ -2831,9 +2831,9 @@
    "base": "Frankston, VIC, Australia",
    "website": "https://empoweringmeditations.com/?utm_source=insighttimer.com&utm_medium=profile",
    "note": "Appointments held over Zoom.",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Health rule: his brand Empowering Meditations is sold on conditions; the home page pitches meditation for people who are stressed or anxious and to manage their mental health, the site's own summary says it helps people manage stress, anxiety and mental health, and his paid work is Meditation Therapy, hypnosis and a stress-relief programme."
   },
   {
    "rank": 150,
@@ -2850,9 +2850,9 @@
    "base": "Salida, CO, USA",
    "website": "www.shamanwings.com",
    "note": null,
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Strict health rule: her own healing-sessions page speaks of diagnosing the energy body and restoring the physical body to health, and her listening page sells two meditations as help for anxiety and depression, so a listing would send people to condition-sold work (as with Sandra Rea). Researcher's plan kept in dropped/."
   },
   {
    "rank": 151,
@@ -2869,9 +2869,9 @@
    "base": "Mumbai, India",
    "website": "www.therapywithmeshilpamukerji.com",
    "note": "Second address also listed: tarotbysm@gmail.com.",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Too thin and partly sold on conditions: her about page sells her sessions as techniques to overcome severe anxiety, her booking page says sessions are coming soon and her workshops page is empty, so beyond corporate tarot events on Airbnb there are fewer than three items that pass the health rule."
   },
   {
    "rank": 152,
@@ -2888,9 +2888,9 @@
    "base": "British Columbia, Canada",
    "website": "https://bio.site/hannahdevries",
    "note": "Bio.site link page only; main paid offer is massage.",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Too thin: no website beyond a bio.site link page, seven Insight Timer tracks and no courses, no YouTube or books found, and her one paid offer is massage at a wellness centre, so fewer than three items can be listed."
   },
   {
    "rank": 153,
@@ -2907,8 +2907,8 @@
    "base": "Ubud, Bali, Indonesia",
    "website": "www.pureflow.yoga/somatic-voice-kit",
    "note": null,
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/francie-la-flow.json",
    "skip_reason": null
   },
   {
@@ -2926,9 +2926,9 @@
    "base": "Boulder, CO, USA",
    "website": "www.primordialight.com",
    "note": "Given URL redirects to zviishshalom.com; email is for his Kedumah school.",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Strict health rule: his own site's testimonials page, linked from the home page, leads with 'Healings' accounts of tumours shrinking after stage 3 breast cancer, Covid pain vanishing and vision restored through healing energy from him and 'the Masters', and his Codes of Primordial Light book is sold as carrying 'subtle medicine' to be held like an amulet. Owner may wish to review: he is a Naropa professor with four Amazon books and two Insight Timer courses on Kabbalah."
   },
   {
    "rank": 155,
@@ -2945,9 +2945,9 @@
    "base": "Co. Clare, Ireland",
    "website": "hummingbirdmentoring.com",
    "note": "Site is now a Kajabi tech/business-mentoring service for therapists, not spiritual teaching.",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "No longer teaches as a spiritual teacher: hummingbirdmentoring.com is now a Kajabi tech and business mentoring service for therapists and coaches; only a few older items (a shamanic drumming mini-course sold 'as a healing tool', a sound mini-course) remain in her shop, and her last Insight Timer upload was two years ago."
   },
   {
    "rank": 156,
@@ -2964,9 +2964,9 @@
    "base": "New Paltz, NY, USA",
    "website": "https://mythiclife.com/",
    "note": "Run by Eric and Sarah.",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Strict health rule: his site (Mythic Life) sells his ThetaHealing sessions as medical-intuitive healing of health issues (\"Heal your body\", undiagnosed illness) with testimonials about pain, depression, anxiety, coming off antidepressants and a child's autism, so a listing would send people to condition-sold pages; the site banner also still advertises a past course start date."
   },
   {
    "rank": 157,
@@ -2983,8 +2983,8 @@
    "base": "Keszthely, Hungary",
    "website": "https://brightheartmeditation.com",
    "note": "Very minimal site.",
-   "status": "todo",
-   "plan": null,
+   "status": "planned",
+   "plan": "docs/content-audits/finnbarr-kennedy.json",
    "skip_reason": null
   },
   {
@@ -3002,9 +3002,9 @@
    "base": "Encinitas, CA, USA",
    "website": "https://www.brucecohn.com",
    "note": null,
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Too thin and medical-intuitive: his site offers only private healing sessions (sold under \"Medical Intuitive Reiki Master\" and \"vibrant health\", with testimonials about physical ailments) plus a sign-up sound-bath gift, with no courses, books, YouTube channel or social accounts, so under three items would pass the rules."
   },
   {
    "rank": 159,
@@ -3021,8 +3021,8 @@
    "base": "Byron Bay, NSW, Australia",
    "website": "https://jordannalevin.com/",
    "note": "Author/podcaster; contact page says answering emails is not her priority.",
-   "status": "todo",
-   "plan": null,
+   "status": "planned",
+   "plan": "docs/content-audits/jordanna-levin.json",
    "skip_reason": null
   },
   {
@@ -3059,9 +3059,9 @@
    "base": "Toronto, ON, Canada",
    "website": "www.peacelandhaven.com",
    "note": "Product/music store, no sessions offered.",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Strict health rule and fit: Peaceland Haven is a meditation product and music store branded on 'meditation healing', and its home page sells it on conditions (depression, anxiety, chronic pain, addiction, immunity, weight loss, 'heal yourself'), with blog meditations titled for anxiety; there are no sessions, classes or courses, and only a contact form."
   },
   {
    "rank": 162,
@@ -3078,9 +3078,9 @@
    "base": "Sydney, Australia",
    "website": "https://www.chibs.co",
    "note": "Brands as stress & burnout coach.",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Strict health rule: he brands as a stress and burnout coach, his main paid Stress & Burnout Course page sells it on burnout described as 'a serious medical condition' leading to depression and heart disease, and his site's Questionnaires page offers anxiety (GAD-7), depression (PHQ-9) and addiction self-tests that lead straight to booking coaching, so a listing would send people to condition-sold pages (judgement call: his MBSR course, Vagus Nerve meditations page and YouTube might pass on their own)."
   },
   {
    "rank": 163,
@@ -3097,9 +3097,9 @@
    "base": "Big Sur, CA, USA",
    "website": "www.breemelanson.com",
    "note": null,
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Strict health rule: her Breathwork & Healing page (and her Live Events and Speaking pages) sells her breathwork sessions on physical healing ('detoxification, regeneration', lowered blood pressure) with a testimonial that her husband's severe leg-ulcer pain is gone, and her Results page carries a shoulder-pain-gone testimonial, so a listing would send people to healing-testimonial pages even with those items left out."
   },
   {
    "rank": 164,
@@ -3116,9 +3116,9 @@
    "base": "Charlotte, NC, USA",
    "website": "www.michellechalfant.com",
    "note": "Site is theadultchair.com; psychology/inner child framing.",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Strict health rule: her own site sells her brand on conditions. The author bio on her free-guide page credits her podcast with helping listeners 'conquer anxiety, depression, and codependency' (and her own 'love addiction'), her book page markets The Adult Chair to people who have 'struggled with anxiety, codependency' (Amazon's blurb adds healing 'generational trauma'), her store sells a codependency masterclass, and her Insight Timer tracks include codependency and anxiety titles, so a listing would send people to condition-led pages, as with Christian Thomas and Camilla Sacre-Dallerup. Judgement call: she would otherwise qualify (licensed therapist and coach, YouTube 75.5K + Instagram 21K + Facebook 29.1K + Insight Timer 32k = about 158k, luminary; published email michelle@michellechalfant.com; strong inner-child and energy meditations on YouTube). Her course checkout pages are also behind a Cloudflare bot check."
   },
   {
    "rank": 165,
@@ -3135,8 +3135,8 @@
    "base": "Copenhagen, Denmark",
    "website": "http://www.stephanpende.com",
    "note": null,
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/stephan-pende-wormland.json",
    "skip_reason": null
   },
   {
@@ -3154,8 +3154,8 @@
    "base": "New York, NY, USA",
    "website": "http://www.dharmapunxnyc.com/",
    "note": "Guiding teacher of Dharma Punx NYC; email is the community's site email.",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/josh-korda.json",
    "skip_reason": null
   },
   {
@@ -3173,9 +3173,9 @@
    "base": "Massachusetts, USA",
    "website": "https://www.garthstevenson.com",
    "note": "Musician (double bass); email is for concert bookings.",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "A composer and double bassist rather than a teacher: his Insight Timer profile is almost all ambient music (one guided track out of seven) and his own site offers only albums, film scores, concerts and a shop, with no classes, courses or retreats."
   },
   {
    "rank": 168,
@@ -3192,8 +3192,8 @@
    "base": "Los Angeles, CA, USA",
    "website": "www.collegeoftao.org/intl-taoist-meditation-institute",
    "note": "Website is the College of Tao's institute page; email is the college's, not hers.",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/olivia-rosewood.json",
    "skip_reason": null
   },
   {
@@ -3211,9 +3211,9 @@
    "base": "Dublin, Ireland",
    "website": "https://www.niamhdevine.com/",
    "note": "Niamh Devine (Devine Mind Body).",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Strict health rule: her own site (niamhdevine.com) sells her work on conditions, with the home and about pages framing it as taking people from illness to health and featuring her account of healing paralysis, a Language of the Body course for symptoms and pain, chakra transmissions sold 'for Physical Health' (organs, fertility, immune system), and energy and TRE sessions offered for illness, anxiety and chronic tension."
   },
   {
    "rank": 170,
@@ -3230,9 +3230,9 @@
    "base": "Boulder, UT, USA",
    "website": "http://eastforest.org/",
    "note": "Musician; about page also lists agent/booking emails.",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "A music project (Krishna-Trevor Oswalt's artist name) rather than a teacher listing: his Insight Timer tracks are mostly music, and his own site centres on albums, concerts, a podcast and Music for Mushrooms, a psilocybin-session album, film and course, which falls under the plant-medicine skips used for Esalen."
   },
   {
    "rank": 171,
@@ -3249,9 +3249,9 @@
    "base": "Westchester County, NY, USA",
    "website": "www.sshealing.com",
    "note": "Site lists healing benefits (trauma, pain, anxiety) but main offer is sound baths.",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Strict health rule: her own site sells her sound healing on its home and 'Why Sound Healing?' pages as helping release trauma, chronic pain, depression and anxiety and supporting the immune system, so a listing would send people to condition-sold sessions even with those items left out (as with Sandra Rea and Mira Kelley). Insight Timer uploads are also about 3 years old."
   },
   {
    "rank": 172,
@@ -3268,9 +3268,9 @@
    "base": "Wonersh, Guildford, UK",
    "website": "https://www.thewillowclinic.com/",
    "note": "Runs The Willow Clinic (yoga, meditation and therapeutic treatments, Compassionate Inquiry trained).",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Strict health rule: The Willow Clinic site sells her Bowen and therapeutic sessions as a clinic for healing and treatment, the Bowen copy cites relief of anxiety and help with sleep, and her about page carries a testimonial crediting her with overcoming anxiety, depression and trauma; a listing would send people there even with the therapies left out. Her yoga and meditation classes in Wonersh and on Zoom are themselves clean, so a human may still want to look."
   },
   {
    "rank": 173,
@@ -3287,9 +3287,9 @@
    "base": "Carbondale, CO, USA",
    "website": "https://www.ameaningfullife.us/",
    "note": "Email is at his Mindfulness Institute (MIR Institute) domain.",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Strict health rule: his own site presents him as a voice in mindfulness and addiction treatment, sells Mindfulness in Recovery courses, and offers a 12 Steps course described as helping people overcome addictions and trauma, alongside a course sold to reduce stress and anxiety; his brand is built on recovery, so a listing would send people to condition-sold programmes. He is a former Buddhist monk and author who also teaches dharma via the Way of Compassion Dharma Center (wocdc.org, not researched), which a human could consider separately."
   },
   {
    "rank": 174,
@@ -3306,9 +3306,9 @@
    "base": "Milwaukee, WI, USA",
    "website": "http://www.syinthesis.com/",
    "note": "Runs Syinthesis Sound Healing Center; email is the centre manager's.",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Strict health rule: the Syinthesis Sound Healing Center site carries a chronic-pain testimonial on its home page, sells its main Lotus Heart Sound Journey with claims that the immune system is strengthened and unhealthy cells become healthy, and offers private sessions for a health issue or emotional trauma, so a listing would send people to condition-sold pages."
   },
   {
    "rank": 175,
@@ -3325,8 +3325,8 @@
    "base": "Florida, USA",
    "website": "jordynroe.com",
    "note": "Retreat details not checked in depth; in_person assumed from 'Guided Retreats'.",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/jordyn-roe.json",
    "skip_reason": null
   },
   {
@@ -3344,8 +3344,8 @@
    "base": "Tallahassee, FL, USA",
    "website": "www.guogulaoshi.com",
    "note": "Founder of Tallahassee Chan Center and Dharma Relief.",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/guo-gu.json",
    "skip_reason": null
   },
   {
@@ -3363,9 +3363,9 @@
    "base": "Seacoast New Hampshire (studio at Art Up Front Street), USA",
    "website": "nataliemarquis.com",
    "note": "Mainly a painter/artist site; meditations are a side offer.",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "No longer works mainly as a spiritual teacher: her site says she moved from her energy healing and hypnotherapy practice to full-time painting in 2020, and is now an art shop with painting workshops; her only meditation offers are four $5 downloads, two of them healing-titled, and her Insight Timer tracks were last added eight years ago, so fewer than three items pass."
   },
   {
    "rank": 178,
@@ -3382,8 +3382,8 @@
    "base": "Buena Vista, CO, USA",
    "website": "https://www.jennapfingston.com",
    "note": "Site only loads on http; brands sessions as 'Embodied Somatic Therapy' (borderline).",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/jenna-pfingston.json",
    "skip_reason": null
   },
   {
@@ -3401,9 +3401,9 @@
    "base": "Grand Junction, CO, USA",
    "website": "https://www.jerefriedman.com",
    "note": null,
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Strict health rule: his Gong2Heaven page sells his breathwork and gong journeys with promises of deep healing of wounds, grief and traumas and releasing toxins from the body's cells, the yoga nidra sessions claim better sleep (one hour said to equal four hours of deep sleep), and his Spiral Light studio page carries a testimonial about sound baths helping a child with autism; his own YouTube is mostly short gong clips and event promos. Owner may reconsider: his coaching, meditation classes and Authentic Man men's circles are free of claims."
   },
   {
    "rank": 180,
@@ -3420,9 +3420,9 @@
    "base": "Colorado, USA",
    "website": "http://bhaktiexplosion.com/",
    "note": "Site redirects to bhaktimama.com; mainly a music act (Bhakti Explosion).",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "A music act rather than a teacher: her site (bhaktimama.com) is for her mantra-folk band Katie Wise + Bhakti Explosion, with concerts, an album, voice coaching, voiceover work, cabaret and a birth hypnosis audio programme, and no meditation or spiritual teaching offered beyond her songs."
   },
   {
    "rank": 181,
@@ -3439,8 +3439,8 @@
    "base": "San Francisco Bay Area, CA, USA",
    "website": "https://www.acharyashunya.com",
    "note": "Author and Vedic teacher with an online school and in-person retreats.",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/acharya-shunya.json",
    "skip_reason": null
   },
   {
@@ -3458,8 +3458,8 @@
    "base": "San Simeon, CA, USA",
    "website": "https://blossominglotusreiki.com",
    "note": "Site moved to aluminea.com.",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/aluminea.json",
    "skip_reason": null
   },
   {
@@ -3477,8 +3477,8 @@
    "base": "Los Angeles, CA, USA",
    "website": "https://withjocelyn.com/?utm_source=insighttimer.com&utm_medium=profile",
    "note": null,
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/jocelyn-valencia.json",
    "skip_reason": null
   },
   {
@@ -3496,8 +3496,8 @@
    "base": "Totnes, UK",
    "website": "https://www.melcollins.co.uk/",
    "note": "Author, counsellor and holistic therapist; therapy is part but HSP coaching/teaching is the focus.",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/mel-collins.json",
    "skip_reason": null
   },
   {
@@ -3515,9 +3515,9 @@
    "base": "Hendersonville, NC, USA",
    "website": "hendocarefarm.com",
    "note": "Email is the farm's general address (Hendo Care Farm), not personal to Michelle.",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Her only website is Hendo Care Farm (hendocarefarm.com), a therapeutic care-farm brand she co-owns whose equine programme page sells its work on conditions (says horse work is effective for depression, anxiety, PTSD, ADHD, substance abuse and autism), so a listing would send people there (strict health rule); the published email is also the farm's general inbox, and her Insight Timer bio frames her meditations as energy healing for body and energy."
   },
   {
    "rank": 186,
@@ -3534,9 +3534,9 @@
    "base": "Mequon/Milwaukee, WI, USA",
    "website": "https://mkehealingarts.com",
    "note": "Multi-practitioner healing arts center including massage.",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Strict health rule: MKE Healing Arts is mainly a massage and Reiki practice whose home page mission promises a life free from pain and whose Massage Services page sells sessions for chronic back pain, arthritis, migraines and fibromyalgia, so a listing would send people to condition-sold treatment (as with Sandra Rea and Mira Kelley). Insight Timer uploads are also about 3 years old."
   },
   {
    "rank": 187,
@@ -3553,9 +3553,9 @@
    "base": "Dorset, UK",
    "website": "https://www.beinginbeauty.com",
    "note": "Site is for Peter (Being in Beauty).",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Strict health rule: Peter's site (Being in Beauty) says on its Shamanic Healing page that shamanic healing has been proven very effective for trauma and physical illness, sells Soulight sessions against anxieties, and carries a sound healing testimonial about a chronic condition and improved blood test results, so a listing would send people to condition-sold sessions. It is also listed under a brand name and his Insight Timer uploads are about 10 years old."
   },
   {
    "rank": 188,
@@ -3572,9 +3572,9 @@
    "base": "Edmonton, Canada",
    "website": "www.anahatarising.com",
    "note": "Plant-medicine retreats; check legal/health suitability.",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Anahata Rising runs ayahuasca (plant medicine) ceremony retreats sold on releasing stored trauma, which falls under the plant-medicine and strict health rules (as with earlier plant-medicine skips); Sheena is also not named among the retreat's listed facilitators, and her Insight Timer uploads are about 6 years old."
   },
   {
    "rank": 189,
@@ -3591,8 +3591,8 @@
    "base": "Portland, OR, USA",
    "website": "www.qiofsound.com",
    "note": "Given URL redirects to ryanpowellqigong.com.",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/ryan-powell.json",
    "skip_reason": null
   },
   {
@@ -3610,9 +3610,9 @@
    "base": "Melbourne, Australia",
    "website": "www.peruquois.com",
    "note": null,
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Strict health rule: her home page sells her courses as a way to a life free from emotional traumas and anxiety and promotes a period course framed around moving from pain, so a listing would send people to condition-sold pages. Her Insight Timer presence is 4 music tracks uploaded about 6 years ago, and she presents mainly as a world-music artist."
   },
   {
    "rank": 191,
@@ -3724,9 +3724,9 @@
    "base": "London, UK",
    "website": "https://www.patreon.com/BurgsArtOfMeditation/posts",
    "note": "Website is a Patreon page (now titled 'Burgs: Beyond the Veil'); email published on the Patreon.",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Strict health rule: his own site, theartofmeditation.org, sells 'The Anxiety Programme' (a £60 self-paced course that promises to help relieve anxiety and manage insomnia) in its main course menu, next to 'The Art of Self-Healing', 'Level 2: Healing Meditation' and a 'healing weekend' retreat, so a listing would send people to condition-sold pages even with those items left out."
   },
   {
    "rank": 197,
@@ -3743,9 +3743,9 @@
    "base": "Ramsey, NJ, USA",
    "website": "johnnyscifo.com",
    "note": "Author and musician site; no classes or sessions offered.",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Too thin: his site offers no classes, sessions, courses or retreats; his YouTube channel (@johnnyscifo) is all yoga-music mixtapes and one sound bath (music only), and the only interviews are book promotion, so the page would hold just one spiritual book (Brain Flowers) and a fiction novella (The Kettle Pours a Universe)."
   },
   {
    "rank": 198,
@@ -3857,8 +3857,8 @@
    "base": "Atlanta, GA, USA",
    "website": "https://katharinechestnut.com",
    "note": null,
-   "status": "todo",
-   "plan": null,
+   "status": "planned",
+   "plan": "docs/content-audits/katharine-chestnut.json",
    "skip_reason": null
   },
   {
@@ -3876,8 +3876,8 @@
    "base": "Toronto, ON, Canada",
    "website": "www.rachelricketts.com",
    "note": "Speaking/workshop inquiries go to her agent at Simon & Schuster; support@ is for all else.",
-   "status": "todo",
-   "plan": null,
+   "status": "planned",
+   "plan": "docs/content-audits/rachel-ricketts.json",
    "skip_reason": null
   },
   {
@@ -4356,5 +4356,5 @@
    "skip_reason": null
   }
  ],
- "updated": "2026-11-01T18:35:29.465Z"
+ "updated": "2026-11-01T19:18:24.416Z"
 }

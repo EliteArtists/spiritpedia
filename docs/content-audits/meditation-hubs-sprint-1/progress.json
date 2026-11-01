@@ -648,7 +648,7 @@
    "contact_form_seen": false,
    "in_person_words": false,
    "hub_bio_extract": "Bart van Melik Bart van Melik has been teaching meditation since 2009, with a special focus on diverse communities. He brings the practice to juvenile detention centers, homeless shelters and NYC public schools, and is passionate about supporting people finding new ways to relate to life’s stresses. Bart is Guiding Teacher at Community Meditation Center in New York. Featured Talk: Joy, Wonder and ",
-   "status": "planned",
+   "status": "dev",
    "plan": "docs/content-audits/bart-van-melik.json",
    "skip_reason": null
   },
@@ -671,7 +671,7 @@
    "contact_form_seen": false,
    "in_person_words": false,
    "hub_bio_extract": "Bhante Buddharakkhita Bhante Buddharakkita was born in Uganda, Africa. He first encountered Buddhism in 1990 while studying in India. He was ordained as a Theravada Buddhist monk by the late Sayadaw U Silananda in 2002 at the Tathagata Meditation Center in San Jose, California. He then spent eight years under the guidance of Bhante Henepola Gunaratana at the Bhavana Society, West Virginia. Founder",
-   "status": "planned",
+   "status": "dev",
    "plan": "docs/content-audits/bhante-buddharakkhita.json",
    "skip_reason": null
   },
@@ -694,9 +694,9 @@
    "contact_form_seen": false,
    "in_person_words": false,
    "hub_bio_extract": "Bonnie Duran Bonnie Duran , DrPH, an Opelousas/Coushatta descendant, began Buddhist meditation practice over 35 years ago. She enjoys teaching Spirit Rock’s Dedicated Practitioners Program , short and long retreats, and holds a People of Color and Allies Sangha in Seattle, WA. She also directs the University of Washington’s Center for Indigenous Health Research , is a member of Spirit Rock Teacher",
-   "status": "planned",
-   "plan": "docs/content-audits/bonnie-duran.json",
-   "skip_reason": null
+   "status": "skipped",
+   "plan": null,
+   "skip_reason": "Too thin: once the shared Forest Refuge link is skipped only 3 videos remain (all on other channels), and her only photo is the IMS headshot at 292 px wide, under the 300 px minimum. The email comes from an old directory entry. Researcher's plan kept in dropped/."
   },
   {
    "rank": 27,
@@ -786,7 +786,7 @@
    "contact_form_seen": false,
    "in_person_words": false,
    "hub_bio_extract": "Cuong Lu is a Zen teacher ordained by Thich Nhat Hanh at Plum Village. A former Buddhist monk and prison chaplain, he now teaches internationally and is the author of several books, including The Buddha in Jail and Wait. He is also a teacher at the Barre Center for Buddhist Studies.",
-   "status": "planned",
+   "status": "dev",
    "plan": "docs/content-audits/cuong-lu.json",
    "skip_reason": null
   },
@@ -1021,5 +1021,5 @@
    "skip_reason": "No contact route: no personal website, published email or contact form found after a web search (only IMS, Dharma Seed and Buddhist Inquiry profiles; he teaches independently through host centres)."
   }
  ],
- "updated": "2026-11-01T19:13:20.339Z"
+ "updated": "2026-11-01T19:14:05.004Z"
 }

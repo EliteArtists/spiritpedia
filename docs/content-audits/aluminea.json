@@ -1,0 +1,149 @@
+{
+  "healer": {
+    "healer_slug": "aluminea",
+    "create": {
+      "name": "Aluminea",
+      "bio": "Aluminea is a Usui and Tibetan Reiki Master Teacher on California's Central Coast. She opened her private practice, Blossoming Lotus Reiki, in 2011 and works from a studio in Templeton, travelling to Los Angeles and Orange County each month and seeing people in Hawaii as well. She is also a yoga teacher, makes custom malas through a two-week intention ceremony, and co-founded Heart Space Sanctuary, a non-denominational spiritual community where she serves as head minister.\n\nA session with her begins with a conversation about what the client wants to release and invite, moves into a guided meditation shaped around that intention and then Reiki, given with light touch or with the hands just above the body, and ends with any impressions she received and simple practices to take home. Sessions can also be held over video. She teaches all three levels of Usui Reiki in person and online, from the first attunement to the master symbol, using her own manual, The Reiki Experience, and she leads occasional yin yoga, chakra and sound bath evenings on the Central Coast. A free set of short guided meditations on her site covers grounding, higher-self connection, self-love and morning practice, and more of her recordings are on Insight Timer.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local_online",
+      "city": "Templeton",
+      "country": "United States",
+      "subjects": [
+        "reiki",
+        "meditation",
+        "chakra-healing"
+      ],
+      "website_url": "https://aluminea.com/",
+      "booking_url": "https://aluminea.com/energetic-alignment",
+      "youtube_url": null,
+      "instagram_url": "https://www.instagram.com/aluminea108/",
+      "facebook_url": "https://www.facebook.com/blossominglotusreiki/",
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "info@blossominglotusreiki.com",
+      "image_urls": [
+        "https://images.squarespace-cdn.com/content/v1/60e8a705a5750429eb7a6cb5/e0319948-b07e-40dc-a15e-af5156a7cdeb/DSC_7618.png?format=1000w",
+        "https://images.squarespace-cdn.com/content/v1/60e8a705a5750429eb7a6cb5/8bbff6da-691e-4c79-ae1a-1817ac700068/DSC_7947.JPG?format=1000w"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "insight-timer",
+      "role": "instructor"
+    }
+  ],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Energetic Alignment Sessions",
+      "url": "https://aluminea.com/energetic-alignment",
+      "description": "A 90-minute one-to-one session that starts with naming what you want to let go of and call in, followed by a tailored guided meditation, Reiki and a debrief with practices to continue at home. Offered in person in Templeton and Southern California or by video, with a week of email support afterwards.",
+      "price": "$333 USD (in person)",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "reiki",
+        "meditation"
+      ],
+      "image": "http://static1.squarespace.com/static/60e8a705a5750429eb7a6cb5/t/67a65ffde9378420ff55a865/1738956797599/BL_FB+BANNER.jpg?format=1500w"
+    },
+    {
+      "title": "Usui Reiki Certifications (Levels 1 to 3)",
+      "url": "https://aluminea.com/reikiclasses",
+      "description": "Her Reiki training path, from Shoden (first attunement and self-treatment) through Okuden (the three symbols and distance work) to Shinpiden (the master symbol and Reiki grids). Classes run in person or online, with her own manual.",
+      "price": "Level 1 from $111 USD online; in person $77 USD deposit plus sliding scale $111–$333 USD",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "reiki",
+        "energy-medicine"
+      ],
+      "image": "http://static1.squarespace.com/static/60e8a705a5750429eb7a6cb5/t/67a65ffde9378420ff55a865/1738956797599/BL_FB+BANNER.jpg?format=1500w"
+    },
+    {
+      "title": "Okuden: Usui Reiki Level 2 (online course)",
+      "url": "https://aluminea.com/okuden-reiki-level-2-course",
+      "description": "The self-paced online version of second-level Usui Reiki, covering the three Level 2 symbols, how to invoke them, the full set of hand positions and sending Reiki at a distance. Suited to those who want to start practising for others.",
+      "price": "$222 USD (or two payments of $111 USD)",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "reiki"
+      ],
+      "image": "http://static1.squarespace.com/static/60e8a705a5750429eb7a6cb5/t/67a65ffde9378420ff55a865/1738956797599/BL_FB+BANNER.jpg?format=1500w"
+    },
+    {
+      "title": "Custom Malas",
+      "url": "https://aluminea.com/custom-malas",
+      "description": "A two-week ceremony in which she designs and makes a mala around your intentions, beginning with an opening alignment session on Zoom or in Paso Robles and ending with a blessing. You receive notes on the stones and materials chosen.",
+      "price": "$444 USD (wrist mala $222 USD)",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "reiki",
+        "meditation"
+      ],
+      "image": "http://static1.squarespace.com/static/60e8a705a5750429eb7a6cb5/t/63c8d794641b4879209c9723/1674106780369/54C8F0AC-FDAB-4B4B-AF85-931AD3E018C6.jpeg?format=1500w"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Aluminea on Insight Timer",
+      "url": "https://insighttimer.com/blossominglotusreiki",
+      "description": "Short guided meditations for mornings, connecting with the higher self, welcoming love and abundance, free to hear in the app or online.",
+      "featured": false,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation",
+        "reiki"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/60e8a705a5750429eb7a6cb5/e0319948-b07e-40dc-a15e-af5156a7cdeb/DSC_7618.png?format=1000w"
+    },
+    {
+      "title": "Meditate & Transform: guided meditations",
+      "url": "https://aluminea.com/meditations",
+      "description": "A free set of twelve guided meditations on her website, each ten minutes or less, starting with a foundational breath and moving through grounding, releasing old patterns, self-love and connecting with the higher self.",
+      "featured": true,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation",
+        "chakra-healing"
+      ],
+      "image": "http://static1.squarespace.com/static/60e8a705a5750429eb7a6cb5/t/69e3b3d80d7cda50fe2ba7dd/1776530392620/hiloreiki.jpg?format=1500w"
+    }
+  ],
+  "sprint": {
+    "hub": "insight-timer",
+    "rank": 182,
+    "insight_timer_url": "https://insighttimer.com/blossominglotusreiki",
+    "tier_evidence": "Insight Timer 1.8k (profile, 1 Nov 2026); Instagram @aluminea108 2,996 (og:description, 1 Nov 2026); Facebook /blossominglotusreiki count not readable (no og:description without login); no YouTube found → ~4.8k total → local_hero",
+    "email": "yes",
+    "email_source": "https://aluminea.com/",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 11 source(s)",
+    "flags": [
+      "Single-name listing 'Aluminea' (LinkedIn shows 'Lauren Aluminea'); the business brand is Blossoming Lotus Reiki and the email is info@blossominglotusreiki.com (business inbox, her own practice).",
+      "Base: progress.json said San Simeon; her site gives Templeton, CA (624 S Main St) as home location, with satellite locations in Southern California, Hawaii and Kauai. City set to Templeton.",
+      "Health wording: some meditation and track titles use healing language ('Heal Your Physical Body', 'Peaceful and Healing Sleep', 'Healing Breath'); no condition is named. The free Meditate & Transform page includes those tracks; my description leaves them out. Her FAQ says low-frequency thoughts can 'create dis-ease within the physical body'. Borderline, kept; owner may prefer to drop the meditations page.",
+      "Level 1 and Level 3 course pages (/shoden-reiki-level-1-course, /shinpiden-part-1-reiki-level-3) return 401 (member area), so the certifications overview page is used for the full path and Level 2 has its own item.",
+      "She has a book/manual, The Reiki Experience: Your Guide to Practice Levels 1 & 2 (sold in her store, $24.99 USD), but no amazon.com listing was found, so it is not in books.",
+      "Custom Malas listed as an offering since it is a session-based ceremony; owner may see it as a product rather than teaching."
+    ],
+    "left_out": [
+      "The Reiki Experience (manual and eBook): no Amazon listing found.",
+      "Weddings & Couples (ceremony officiating): not teaching.",
+      "Anointing oils and ready-made malas in her store: products, not offerings.",
+      "Events: Sunset Yin & Sound Bath (20 Sep 2026), Chakra Yin Workshops (Oct 2025), Shinpiden training (Aug 2025): passed.",
+      "Insight Timer tracks 'Heal Your Physical Body' and 'Peaceful And Healing Sleep': not listed individually (profile link only), health rule.",
+      "Delphi.ai 'digital Aluminea' link on her home page: AI chatbot, not listed."
+    ]
+  },
+  "images_final": true
+}

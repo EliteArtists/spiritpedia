@@ -1,0 +1,57 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 610,
+    "healer_slug": "gaia-hope-good"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "76d2f529-4945-4be9-8c7c-bd2423a789d9",
+      "slug": "professional-astrologer-mentorship",
+      "title": "Professional Astrologer Mentorship"
+    },
+    {
+      "table": "courses",
+      "id": "560955c3-909f-48ab-95e1-022348332db9",
+      "slug": "relationships-synastry-the-composite-chart",
+      "title": "Relationships: Synastry & the Composite Chart"
+    },
+    {
+      "table": "courses",
+      "id": "82cabc0e-ce83-4361-b6e0-9330ff838998",
+      "slug": "past-lives-in-evolutionary-astrology",
+      "title": "Past Lives in Evolutionary Astrology"
+    },
+    {
+      "table": "courses",
+      "id": "3ab54b68-ebd0-4a17-9ba8-c7172b148adc",
+      "slug": "astrological-aspects",
+      "title": "Astrological Aspects"
+    },
+    {
+      "table": "courses",
+      "id": "43f8a812-2b9d-4bca-8e00-632e935e81ea",
+      "slug": "natal-chart-reading",
+      "title": "Natal Chart Reading"
+    },
+    {
+      "table": "free_resources",
+      "id": "f6c9b788-c3f4-4849-84a0-23a212916060",
+      "slug": "gaia-hope-good-on-insight-timer",
+      "title": "Gaia Hope Good on Insight Timer"
+    },
+    {
+      "table": "free_resources",
+      "id": "23143984-12a8-4728-b5c1-edbc98b52c2a",
+      "slug": "discover-your-north-node",
+      "title": "Discover Your North Node"
+    },
+    {
+      "table": "hub_teachers",
+      "id": "b8023326-c476-48e6-84b8-a541f43e283a",
+      "title": "gaia-hope-good teaches at Insight Timer"
+    }
+  ],
+  "at": "2026-11-01T19:16:13.905Z"
+}

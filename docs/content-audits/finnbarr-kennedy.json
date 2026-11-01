@@ -1,0 +1,220 @@
+{
+  "healer": {
+    "healer_slug": "finnbarr-kennedy",
+    "create": {
+      "name": "Finnbarr Kennedy",
+      "bio": "Finnbarr Kennedy lived for twenty-one years as a monk of the Thai Forest lineage of Theravada Buddhism, training under the meditation master Luangpu Sangwan Khemako of Wat Thung Samakkhi Tham; his monastic name was Bhikkhu Dhammasaro. After leaving monastic life he settled as a hermit among the vineyards of western Hungary, not far from Lake Balaton, where he looks after the small Brightheart Meditation Center. Retreatants lodge in guesthouses nearby, or pitch a tent on the land, and come together to sit in a yurt meditation hall, with walks through the vines and the neighbouring woods as part of the day.\n\nHis teaching rests on mindfulness and metta, the practice of loving-kindness, which he offers as a way to clear and open the heart. He leads live guided sittings on YouTube three times a day on Central European Time and shares recorded meditations and readings of his verse on Insight Timer. He is the author of The Timeless Heart, a book of forty-four illustrated contemplative poems. All of his guidance is given on a donation basis, and he lives on what students choose to offer.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local_online",
+      "city": "Zalaszentlászló",
+      "country": "Hungary",
+      "subjects": [
+        "meditation",
+        "mindfulness",
+        "spirituality"
+      ],
+      "website_url": "https://brightheartmeditation.com/",
+      "booking_url": "https://brightheartmeditation.com/Brightheart-Meditation-Center/",
+      "youtube_url": "https://www.youtube.com/@brightheartmeditationcente6058",
+      "instagram_url": "https://www.instagram.com/brightheartmeditation/",
+      "facebook_url": "https://www.facebook.com/Brightheartmeditation",
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "Brightheartmeditation@gmail.com",
+      "image_urls": [
+        "https://brightheartmeditation.com/gallery_gen/feb56774c11f570a00bc9f96d37f527c_fit.jpg",
+        "https://users.insighttimer.com/h1ThsiyemZMXhLdlTL8sMK4Vwdq2/pictures/square_large.jpeg",
+        "https://brightheartmeditation.com/gallery_gen/6d9079395bd3935b0b0084f579563182_586x782_fit.jpg"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "insight-timer",
+      "role": "instructor"
+    }
+  ],
+  "videos": [
+    {
+      "title": "10 Minute Meditation",
+      "url": "https://www.youtube.com/watch?v=e8IWtVT7E7E",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "channel": "Brightheart Meditation Center"
+    },
+    {
+      "title": "Meditation Guidance from Bhikkhu Dhammasaro          ( Finnbarr)",
+      "url": "https://www.youtube.com/watch?v=q4VX4nMwPr0",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "channel": "Brightheart Meditation Center"
+    },
+    {
+      "title": "Ten Minute Guided Meditation for inner peace and stress relief",
+      "url": "https://www.youtube.com/watch?v=VSIX9rOcvO8",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "channel": "Brightheart Meditation Center"
+    },
+    {
+      "title": "Guided Meditation for Inner Peace and Stress Relief",
+      "url": "https://www.youtube.com/watch?v=jRq1nfddqlg",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "channel": "Brightheart Meditation Center"
+    },
+    {
+      "title": "Short Guided Meditation, Stress Relief and Inner Calm",
+      "url": "https://www.youtube.com/watch?v=8JyQelt8NBo",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "channel": "Brightheart Meditation Center"
+    },
+    {
+      "title": "Guided Metta Meditation, Uplifting Consciousness, Developing Peace and Compassion. Relieving Stress",
+      "url": "https://www.youtube.com/watch?v=0-uHOPo6zTU",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "channel": "Brightheart Meditation Center"
+    },
+    {
+      "title": "Overflowing Heart Meditation. Stress Relief and Inner Peace",
+      "url": "https://www.youtube.com/watch?v=qT3Q-i3qRlA",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "channel": "Brightheart Meditation Center"
+    },
+    {
+      "title": "Four Elements, Four Divine States of Mind",
+      "url": "https://www.youtube.com/watch?v=FEVhAnM-UA4",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "channel": "Brightheart Meditation Center"
+    },
+    {
+      "title": "Inner Peace Meditation. Developing calm, reducing stress. Uplifting consciousness",
+      "url": "https://www.youtube.com/watch?v=12fTmSn4cP8",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "channel": "Brightheart Meditation Center"
+    },
+    {
+      "title": "Guided  meditation for stress relief  Cultivating  inner peace.",
+      "url": "https://www.youtube.com/watch?v=1qMrIlfAUbE",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "channel": "Brightheart Meditation Center"
+    },
+    {
+      "title": "Minding The Mind",
+      "url": "https://www.youtube.com/watch?v=VaS8H05lZTg",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "channel": "Brightheart Meditation Center"
+    }
+  ],
+  "books": [],
+  "courses": [
+    {
+      "title": "Meditation retreats at Brightheart Meditation Center",
+      "url": "https://brightheartmeditation.com/Brightheart-Meditation-Center/",
+      "description": "Stay for a personal retreat at Finnbarr's simple centre in the Hungarian vineyards, sitting with him in a yurt meditation hall. Guests book their own room in a local guesthouse or camp on the land, and the meditation guidance itself is given for a donation.",
+      "price": "By donation",
+      "product_type": "retreat",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://brightheartmeditation.com/gallery_gen/feb56774c11f570a00bc9f96d37f527c_fit.jpg"
+    },
+    {
+      "title": "Finnbarr Kennedy on Patreon",
+      "url": "https://www.patreon.com/FinnbarrKennedy",
+      "description": "A membership on Patreon through which students support Finnbarr's teaching and receive his members-only guided meditations. Tier prices are set on Patreon.",
+      "price": "Contact for pricing",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://www.patreon.com/ig/card-teaser-image/creator/15882103.png?v=qhkamf"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Finnbarr Kennedy on Insight Timer",
+      "url": "https://insighttimer.com/Finnbarrkennedy",
+      "description": "Recorded metta and heart-centred guided sittings, plus short readings from his book of contemplative verse. Free to play in the app or a web browser.",
+      "featured": false,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://brightheartmeditation.com/gallery_gen/feb56774c11f570a00bc9f96d37f527c_fit.jpg"
+    },
+    {
+      "title": "Daily online meditation with Finnbarr",
+      "url": "https://brightheartmeditation.com/Online-Meditation/",
+      "description": "Finnbarr leads three live guided sittings each day on the Brightheart Meditation Center YouTube channel, in the morning, afternoon and evening on Central European Time. Anyone can join, and donations are welcome but not required.",
+      "featured": true,
+      "resource_type": "practice",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://brightheartmeditation.com/gallery_gen/feb56774c11f570a00bc9f96d37f527c_fit.jpg"
+    }
+  ],
+  "sprint": {
+    "hub": "insight-timer",
+    "rank": 157,
+    "insight_timer_url": "https://insighttimer.com/Finnbarrkennedy",
+    "tier_evidence": "Insight Timer 1.1k (profile, 1 Nov 2026); YouTube 373 (channel header next to @brightheartmeditationcente6058, 1 Nov 2026); Instagram 73 (og:description of @brightheartmeditation, 1 Nov 2026); Facebook unreadable without login → ~1.5k total → local_hero",
+    "email": "yes",
+    "email_source": "https://brightheartmeditation.com/About/",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 7 source(s)",
+    "flags": [
+      "Photo identity: the lavender-field headshot (site home page, same image as his Insight Timer photo) shows him now; the third photo is from his about page and shows a much younger monk in robes, very likely him but years apart.",
+      "Monastic name Bhikkhu Dhammasaro is taken from one of his own YouTube video titles; a human may want to confirm before it shows in the bio.",
+      "City set to Zalaszentlászló (the centre's published address); Insight Timer gives Keszthely, about 20 km away.",
+      "His book The Timeless Heart is linked from his site to amazon.com/dp/B0H5VWHQK8, but the Amazon page returned 500 every time (curl and WebFetch), so the book is left out; a human could add it if the listing loads.",
+      "Patreon tier prices could not be read without logging in, so the membership is listed as Contact for pricing.",
+      "Insight Timer bio could only be captured as quoted excerpts (WebFetch limits long quotes); the bio check ran against those excerpts plus his site pages."
+    ],
+    "left_out": [
+      "The Timeless Heart (book): amazon.com /dp/B0H5VWHQK8 returned 500 on every try; ISBN 978-615-02-7435-5 has no loadable amazon.com page either.",
+      "Handcrafted malas (€35 / $40): merchandise, not teaching.",
+      "Zazzle merchandise, Buy Me a Coffee and bank-transfer donations: not offerings.",
+      "Dated livestream recordings on YouTube (titles carrying a date) and videos under two minutes (channel invitations, Light Of The Moon Within).",
+      "Individual Insight Timer tracks: covered by the profile link."
+    ]
+  }
+}

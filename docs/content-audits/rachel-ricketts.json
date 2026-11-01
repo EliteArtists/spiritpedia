@@ -1,0 +1,146 @@
+{
+  "healer": {
+    "healer_slug": "rachel-ricketts",
+    "create": {
+      "name": "Rachel Ricketts",
+      "bio": "Rachel Ricketts is a Canadian author, speaker and spiritual teacher based in Toronto. She practised law before turning to writing and facilitation, and since 2016 has led online and in-person spaces that bring meditation, breathwork and ancestral spiritual practice to questions of race, belonging and collective care. Raised by a Jamaican immigrant mother, she writes and teaches from her experience as a multiracial Black, queer and disabled woman, and her work centres the wellbeing of Black and Indigenous communities.\n\nHer first book, Do Better (2021), mixes memoir with practical guidance on what she calls spiritual activism: using contemplative practice and honest self-inquiry as the ground for anti-racist action. It became a Canadian bestseller. Her picture book All I Need to Be (2024), illustrated by Luana Horry, offers children a gentle mindfulness map for naming big feelings, and was nominated for an NAACP Image Award. Today she gives keynotes and workshops for organisations, writes the reflective newsletter ROOTED, keeps a small Patreon community, and has recorded free guided meditations for Insight Timer on exploring emotions, self-worth and grounding with the breath and the earth. Her tone is warm, frank and often playful.",
+      "tier": "luminary",
+      "entity_type": "individual",
+      "availability": "worldwide",
+      "city": null,
+      "country": null,
+      "subjects": [
+        "spirituality",
+        "mindfulness",
+        "meditation"
+      ],
+      "website_url": "https://www.rachelricketts.com",
+      "booking_url": "https://www.rachelricketts.com/contact",
+      "youtube_url": null,
+      "instagram_url": "https://www.instagram.com/iamrachelricketts/",
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "support@rachelricketts.com",
+      "image_urls": [
+        "https://images.squarespace-cdn.com/content/v1/65381ca4f665e9023cdc9a1a/4ff0b331-6b25-48a9-afc3-17d3efecc1a9/RR+Portrait+by+Ayat.jpg"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "insight-timer",
+      "role": "instructor"
+    }
+  ],
+  "videos": [],
+  "books": [
+    {
+      "title": "Do Better: Spiritual Activism for Fighting and Healing from White Supremacy",
+      "slug": "do-better",
+      "author": "Rachel Ricketts",
+      "asin": "1982151277",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "Part memoir and part workbook, it sets out how inner spiritual practice and self-reflection can support lasting work against racism. Each chapter pairs personal stories with prompts and practices for the reader.",
+      "subjects": [
+        "spirituality",
+        "mindfulness",
+        "shadow-work"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1982151277.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "All I Need to Be",
+      "slug": "all-i-need-to-be",
+      "author": "Rachel Ricketts",
+      "asin": "1534478329",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "A lyrical picture book, illustrated by Luana Horry, that encourages young readers to welcome all their feelings and know they are enough as they are. It closes with a simple mindfulness map that children and caregivers can use together.",
+      "subjects": [
+        "mindfulness"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1534478329.01._SCLZZZZZZZ_.jpg"
+    }
+  ],
+  "courses": [
+    {
+      "title": "Rachel Ricketts on Patreon",
+      "url": "https://www.patreon.com/iamrachelricketts",
+      "description": "A small paid community where she shares reflections, practices and behind-the-scenes updates with members. Tiers start at a low monthly amount.",
+      "price": "From $2 USD a month",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "spirituality"
+      ],
+      "image": "https://www.patreon.com/ig/card-teaser-image/creator/2211981.png?v=v5iwrk"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Rachel Ricketts on Insight Timer",
+      "url": "https://insighttimer.com/iamrachelricketts",
+      "description": "A handful of her guided meditations, including practices on meeting emotions kindly, self-worth and grounding with the breath and the earth. Free to listen to.",
+      "featured": true,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/65381ca4f665e9023cdc9a1a/4ff0b331-6b25-48a9-afc3-17d3efecc1a9/RR+Portrait+by+Ayat.jpg"
+    },
+    {
+      "title": "Rachel's Meditations",
+      "url": "https://www.rachelricketts.com/meditations",
+      "description": "A page on her site gathering the meditations and talks she has recorded for apps and partners, most of them free. Each entry links out to where the practice can be heard.",
+      "featured": false,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "image": "http://static1.squarespace.com/static/65381ca4f665e9023cdc9a1a/t/653825261d87cf741e9f5a7c/1698178342126/rachel-ricketts-social-share-final.jpg?format=1500w"
+    },
+    {
+      "title": "ROOTED by Rachel",
+      "url": "https://rootedbyrachel.substack.com/",
+      "description": "Her free newsletter of reflections and journaling prompts on reconnecting with yourself, Spirit and community. New posts arrive by email or can be read on the web.",
+      "featured": false,
+      "resource_type": "practice",
+      "subjects": [
+        "spirituality",
+        "mindfulness"
+      ],
+      "image": "https://substackcdn.com/image/fetch/$s_!8EEl!,w_400,h_400,c_fill,f_auto,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F2057a7b4-02ad-4f43-8a45-e4406432e2fa_1080x1080.png"
+    }
+  ],
+  "sprint": {
+    "hub": "insight-timer",
+    "rank": 204,
+    "insight_timer_url": "https://insighttimer.com/iamrachelricketts",
+    "tier_evidence": "Insight Timer 6.3k (profile, 1 Nov 2026); Instagram 186k (og:description, 1 Nov 2026); no YouTube channel, X, TikTok or Facebook page linked from her site; Patreon 356 patrons (not counted) → ~192k total → luminary",
+    "email": "yes",
+    "email_source": "https://www.rachelricketts.com/contact",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 7 source(s)",
+    "flags": [
+      "Political check for the owner (same as the Kerri Kelly hold): her site and offerings centre racial-justice activism, abolition and reparations, with strongly worded copy; a human should decide whether she fits Spiritpedia before insertion.",
+      "Email support@rachelricketts.com is a team/support inbox (published in the contact page's site data); speaking and workshop enquiries go to her agent at Simon & Schuster, which was not used.",
+      "Only one current paid offering (Patreon); her webinars are marked postponed or unavailable and the Spiritual Activism course is retired. The page rests mainly on two books and free resources.",
+      "Insight Timer bio could not be quoted word for word (WebFetch gave only a short excerpt); bio check used that excerpt plus her site pages.",
+      "Insight Timer uploads are from 2020 and 2023; she seems to have moved to Substack and Patreon."
+    ],
+    "left_out": [
+      "Spiritual Activism webinar (retired, pay-what-you-can; one part is framed around healing racial trauma, borderline under the health rule).",
+      "Black Resistance & Radical Hope and Radical Hope webinars (postponed / currently unavailable).",
+      "Hold Onto Joy event at Hello Reset (25 April, past).",
+      "Headspace meditations listed on her meditations page (behind a Headspace trial; covered by the meditations page link).",
+      "Videos: no YouTube channel of her own found; TV and press interviews are not on YouTube or not teaching."
+    ]
+  }
+}
