@@ -1,0 +1,166 @@
+{
+  "healer": {
+    "healer_slug": "steven-webb",
+    "create": {
+      "name": "Steven Webb",
+      "bio": "Steven Webb is a meditation teacher and podcaster from Truro in Cornwall whose work is aimed at people who are sure they cannot meditate. A diving accident in 1991, when he was eighteen, left him paralysed from the chest down, and he speaks openly about the two hard decades that followed before he found Zen in his early forties. He trained in the Mundō Zen lineage of Jun Po Dennis Kelly, and that grounding sits beneath a plain, unpretentious approach he calls Messy Mindfulness.\n\nHis practices are short, usually ten to fifteen minutes, and lean on whatever is already there, such as nearby sounds or the feel of the chair, instead of silence or elaborate visualisation. The aim is a different relationship with a busy mind rather than an empty one. He presents two long-running podcasts, the conversational Stillness in the Storms and the guided Inner Peace Meditations, writes a weekly email called Weekly Calm, and offers two audio courses, You Are Not Broken and The Stillness in the Storms Course, on a pay-what-you-can basis. His guided meditations are widely played on Insight Timer. He is also a local councillor in Truro, a former Mayor of the city and an ambassador for Cornwall Air Ambulance.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "worldwide",
+      "city": null,
+      "country": null,
+      "subjects": [
+        "meditation",
+        "mindfulness",
+        "spirituality"
+      ],
+      "website_url": "https://stevenwebb.com",
+      "booking_url": "https://courses.stevenwebb.com/courses/stillness-in-the-storms",
+      "youtube_url": "https://www.youtube.com/@stevenwebb",
+      "instagram_url": "https://www.instagram.com/_stevenwebb/",
+      "facebook_url": "https://www.facebook.com/TheInnerPeaceGuy/",
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "email@stevenwebb.com",
+      "image_urls": [
+        "https://yt3.googleusercontent.com/wxLBSj9KKByvGP21IqyYs1xoN2l7LKl4_imxtOPxXfCoWOFAEoWKuCwJvQXsSgAikFPseiVN=s900-c-k-c0x00ffffff-no-rj",
+        "https://stevenwebb.com/wp-content/uploads/2023/06/Steven-Webb-a-former-Mayor-and-podcast-host.jpg",
+        "https://stevenwebb.com/wp-content/uploads/2025/08/Steven-Webb-Perranporth-beach.jpg"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "insight-timer",
+      "role": "instructor"
+    }
+  ],
+  "videos": [
+    {
+      "title": "What Your Anger Is Really Saying",
+      "url": "https://www.youtube.com/watch?v=x94ihPg87CI",
+      "subjects": [
+        "mindfulness",
+        "shadow-work"
+      ],
+      "channel": "Steven Webb – Stillness in the Storms"
+    },
+    {
+      "title": "The Mind That Will Not Be Quiet",
+      "url": "https://www.youtube.com/watch?v=MCMYsLmyrYQ",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "channel": "Steven Webb – Stillness in the Storms"
+    },
+    {
+      "title": "EP151: Empathy vs. Compassion: What's the Real Difference?",
+      "url": "https://www.youtube.com/watch?v=0C4o4o14sF8",
+      "subjects": [
+        "mindfulness",
+        "conscious-relationships"
+      ],
+      "channel": "Steven Webb – Stillness in the Storms"
+    },
+    {
+      "title": "Finding Compassion in the Holiday Season: Stillness in the Storms podcast EP 135",
+      "url": "https://www.youtube.com/watch?v=7lKLNLomu4c",
+      "subjects": [
+        "mindfulness"
+      ],
+      "channel": "Steven Webb – Stillness in the Storms"
+    },
+    {
+      "title": "The Art of Letting Go Without Losing Grip: Mastering Life's Balancing Act",
+      "url": "https://www.youtube.com/watch?v=xuLWuVIZ5BY",
+      "subjects": [
+        "mindfulness",
+        "spirituality"
+      ],
+      "channel": "Steven Webb – Stillness in the Storms"
+    }
+  ],
+  "books": [],
+  "courses": [
+    {
+      "title": "The Stillness in the Storms Course",
+      "url": "https://courses.stevenwebb.com/courses/stillness-in-the-storms",
+      "description": "A ten-day audio course of roughly fifteen minutes a day, each day pairing a short talk with a guided meditation and one practical step. It is about finding steadiness and courage when life stays difficult. Lifetime access.",
+      "price": "Pay what you can, from free to $100 USD",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://courses.stevenwebb.com/design/assets/photos/coastal/cape-cornwall-960.jpg"
+    },
+    {
+      "title": "You Are Not Broken: Practical Peace For Real Life",
+      "url": "https://courses.stevenwebb.com/courses/you-are-not-broken-practical-peace-for-real-life",
+      "description": "A seven-day audio course with a short lesson and guided practice each day, plus one-minute resets and full transcripts. It works gently with self-blame and overthinking, with nothing to master.",
+      "price": "Pay what you can, from free to $100 USD",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://courses.stevenwebb.com/design/assets/photos/coastal/cornwall-from-above-960.jpg"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Steven Webb on Insight Timer",
+      "url": "https://insighttimer.com/stevenwebb",
+      "description": "Steven's short guided meditations and talks in a plain, Zen-informed style, free to hear in the app or on the web.",
+      "featured": true,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://yt3.googleusercontent.com/wxLBSj9KKByvGP21IqyYs1xoN2l7LKl4_imxtOPxXfCoWOFAEoWKuCwJvQXsSgAikFPseiVN=s900-c-k-c0x00ffffff-no-rj"
+    },
+    {
+      "title": "Weekly Calm and 5 Simple Practices for Inner Peace",
+      "url": "https://stevenwebb.com/newsletter/",
+      "description": "Steven's free Sunday email with a short reflection and a practice for the week. Joining sends his free short book of five simple practices.",
+      "featured": false,
+      "resource_type": "download",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://stevenwebb.com/wp-content/uploads/2026/10/weekly-calm-latte-v2.jpg"
+    }
+  ],
+  "sprint": {
+    "hub": "insight-timer",
+    "rank": 195,
+    "insight_timer_url": "https://insighttimer.com/stevenwebb",
+    "tier_evidence": "Insight Timer 36.9k (profile via WebFetch, 1 Nov 2026); YouTube 1.04k (channel header next to @StevenWebb, 1 Nov 2026); Instagram 1,377 (og:description, 1 Nov 2026); Facebook and X not readable without login; podcast downloads (10M+ claimed) not counted → ~39.3k total → local_hero",
+    "email": "yes",
+    "email_source": "https://stevenwebb.com/connect-with-steven/",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 7 source(s)",
+    "flags": [
+      "Political check, owner to decide (Kerri Kelly precedent): he is a serving Truro City and Cornwall councillor and former Mayor of Truro; mentioned once in the bio.",
+      "Health rule, borderline: his podcast sites file many episodes under 'Anxiety & Stress' and his Insight Timer bio says some meditations are 'for anxiety' and 'for sleep'. His courses and own site are sold on calm, overthinking and hard times, so I wrote the plan and left the podcast pages out; owner may judge the brand falls under the strict precedent.",
+      "His site and Insight Timer bio discuss his own disability and diagnoses as backstory; the bio mentions the accident and paralysis but no conditions treated.",
+      "Insight Timer bio says the accident was in a swimming pool; his own site says he dived into the sea. Bio says only 'a diving accident'."
+    ],
+    "left_out": [
+      "Inner Peace Meditations and Stillness in the Storms podcasts (innerpeacemeditations.com, stillnessinthestorms.com): episodes filed under 'Anxiety & Stress' and similar; left out under the health rule.",
+      "'Stressed to Calm in 5 Minutes' episode: podcast left out (as above).",
+      "The Moving Road (book): no Amazon listing found.",
+      "5 Simple Practices for Inner Peace: free newsletter ebook, not on Amazon; kept as part of the Weekly Calm free resource.",
+      "Personal coaching and speaking: no page of their own with details.",
+      "YouTube: 'Are you a positive or negative thinker?' (under 2 minutes), Cornwall 500 charity diary videos, equipment review and personal update videos: not teaching.",
+      "Insight Timer course 'Finding Stillness in Your Storms': same course as the one on his own site, listed once."
+    ]
+  }
+}

@@ -1,0 +1,170 @@
+{
+  "healer": {
+    "healer_slug": "jessica-prestia",
+    "create": {
+      "name": "Jessica Prestia",
+      "bio": "Jessica Prestia, who teaches as Jessbeinspired, is a Reiki master, intuitive reader and meditation teacher now based in Venice, Los Angeles, after several years working in South Florida. She trained as a meditation teacher with davidji and also works with crystals, sound and astrology. She founded The Academy For The Inspired, through which she has taught Reiki levels and certification classes, and she has hosted local Reiki circles, community gatherings and larger collaborative healing events.\n\nHer current work blends astrology with Reiki in what she calls Astro-Reiki. Clients book online readings of different lengths, from a short card reading to a long natal chart session, and each one combines intuitive guidance, chakra balancing and energy work, sometimes with messages from spirit guides or animal guides. Her monthly membership, The Inspired Collective, gathers members for live circles, open questions, restorative sessions with breathwork and sound, and group oracle readings, and she sends a weekly newsletter of astrology themes and reflective prompts. On Insight Timer she shares short guided practices on the Reiki principles, moon cycles, the third eye and connecting with guides. Her style is warm, colourful and personal.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local_online",
+      "city": "Los Angeles",
+      "country": "United States",
+      "subjects": [
+        "reiki",
+        "astrology",
+        "meditation"
+      ],
+      "website_url": "https://jessbeinspired.mykajabi.com",
+      "booking_url": "https://jessbeinspired.mykajabi.com/book-a-session",
+      "youtube_url": "https://www.youtube.com/@jessbeinspired",
+      "instagram_url": "https://www.instagram.com/jessbeinspired/",
+      "facebook_url": "https://www.facebook.com/jessbeinspired/",
+      "twitter_url": null,
+      "tiktok_url": "https://www.tiktok.com/@jessbeinspired",
+      "contact_email": "jessbeinspired@gmail.com",
+      "image_urls": [
+        "https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/file-uploads/sites/2148913415/images/2effc6a-0ab-0077-a32f-670664a14ecf_HeadShotsLRD-19-2.jpg",
+        "https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/file-uploads/sites/2148913415/images/25bf834-15d5-a46-3652-eb0b5cbe7815_HeadShotsLRD-40-2_1_.jpg"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "insight-timer",
+      "role": "instructor"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Sound bathe for rest and rejuvenation",
+      "url": "https://www.youtube.com/watch?v=itjx8nACvAk",
+      "subjects": [
+        "sound-healing",
+        "meditation"
+      ],
+      "channel": "jessbeinspired"
+    },
+    {
+      "title": "Pick-Up Pile | Crystal & Card Reading for Your Highest Vibes",
+      "url": "https://www.youtube.com/watch?v=Rqm8yRltf-s",
+      "subjects": [
+        "spirituality"
+      ],
+      "channel": "jessbeinspired"
+    }
+  ],
+  "books": [],
+  "courses": [
+    {
+      "title": "The Inspired Collective",
+      "url": "https://jessbeinspired.mykajabi.com/the-inspired-collective-sales-page",
+      "description": "A monthly online membership with a live session every Friday: an Astro-Reiki circle, an open Q&A, a restorative session with breathwork and sound, and a group oracle reading. Members also get a Monday email, replays and a library of practices.",
+      "price": "$33 USD a month",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "reiki",
+        "astrology",
+        "meditation"
+      ],
+      "image": "https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/file-uploads/sites/2148913415/images/1df06c3-64-b565-10ad-d3acc1e6cfe_1bd0514-4b67-4445-3d65-83dd0847cfca_Inspired_Collective_Logo_Transparent.png"
+    },
+    {
+      "title": "Signature Astro-Reiki Intuitive Energy Reading",
+      "url": "https://jessbeinspired.mykajabi.com/signature-astro-reiki-intuitive-energy-reading-sales-page",
+      "description": "A private hour online that mixes astrology-informed insight, chakra balancing, Reiki and intuitive messages. It suits people at a crossroads or wanting to feel clearer and more grounded.",
+      "price": "$333 USD",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "reiki",
+        "astrology",
+        "chakra-healing"
+      ],
+      "image": "https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/file-uploads/sites/2148913415/images/fe3f87f-0832-6cd-fc70-3401b8dd25e8_intuitive_energy_reading_v2.png"
+    },
+    {
+      "title": "Astro-Reiki Natal Chart Reading",
+      "url": "https://jessbeinspired.mykajabi.com/astro-reiki-natal-chart-reading",
+      "description": "A two-hour online session devoted to your birth chart, read through an intuitive lens and paired with Reiki. She spends a further two hours preparing the chart beforehand.",
+      "price": "$777 USD",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "astrology",
+        "reiki"
+      ],
+      "image": "https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/file-uploads/sites/2148913415/images/aa0b264-2108-ed2-8624-8d02cb064834_natal_chart_reading_product_v2.png"
+    },
+    {
+      "title": "Astro-Reiki Card Reading",
+      "url": "https://jessbeinspired.mykajabi.com/astro-reiki-card-reading",
+      "description": "A short 30-minute video reading with oracle cards, a little astrology and a brief burst of Reiki. Meant as a quick check-in when you want a fresh perspective.",
+      "price": "$166 USD",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "astrology",
+        "reiki"
+      ],
+      "image": "https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/file-uploads/sites/2148913415/images/821cdb-6-222-b6ff-d477d2f260fb_Astro_reiki_card_healing_graphic.png"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Jessica Prestia on Insight Timer",
+      "url": "https://insighttimer.com/jess",
+      "description": "Short guided meditations under her Jessbeinspired name, including practices on the five Reiki principles, new and full moons, the third eye and meeting spirit guides. Free to listen to.",
+      "featured": true,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation",
+        "reiki"
+      ],
+      "image": "https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/file-uploads/sites/2148913415/images/2effc6a-0ab-0077-a32f-670664a14ecf_HeadShotsLRD-19-2.jpg"
+    },
+    {
+      "title": "Soul Signals Newsletter",
+      "url": "https://jessbeinspired.mykajabi.com/welcome-to-soul-signals",
+      "description": "A free weekly email with oracle messages, the astrology of the week, journal prompts and simple practices. Sign up on her site.",
+      "featured": false,
+      "resource_type": "practice",
+      "subjects": [
+        "astrology",
+        "spirituality"
+      ],
+      "image": "https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/file-uploads/sites/2148913415/images/5f5d3f7-8655-fd0-f02-b3e7df6f2f_Soul_Signals_v5.png"
+    }
+  ],
+  "sprint": {
+    "hub": "insight-timer",
+    "rank": 205,
+    "insight_timer_url": "https://insighttimer.com/jess",
+    "tier_evidence": "Insight Timer 5.9k (profile, 1 Nov 2026); Instagram 6,573 (og:description, 1 Nov 2026); TikTok 1,165 (page data, 1 Nov 2026); YouTube 1K (channel header next to @jessbeinspired, 1 Nov 2026); Facebook not readable → ~14.6k total → local_hero",
+    "email": "yes",
+    "email_source": "https://linktr.ee/jessbeinspired (also https://jessbeinspired.com/contact/)",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 12 source(s)",
+    "flags": [
+      "Name: her own sites, Linktree and Insight Timer use only 'Jessbeinspired' / 'Jess'; the full name Jessica Prestia comes from a Retreat Guru teacher page ('Jessica Prestia aka jessbeinspired', same davidji training) and a site testimonial calling her Jessica. Owner may prefer to list her as Jessbeinspired.",
+      "Location conflict: Insight Timer and her Linktree (a free Venice Beach series in Oct 2026) put her in Venice, Los Angeles; her older WordPress site jessbeinspired.com still says Delray Beach, FL. Plan uses Los Angeles; in-person evidence is thin (beach series, private events), sessions are online.",
+      "Email is a Gmail address published on her Linktree and old site contact page.",
+      "Her Linktree is mostly affiliate links (meal kits, Talkspace, Headspace etc.); not linked from the plan.",
+      "Older site's services page says Reiki 'enhances your body's natural ability to heal itself'; mild, not condition-sold, so not a skip.",
+      "Only two YouTube videos qualified (most uploads are Shorts-length clips or dated moon readings).",
+      "WebFetch said the Insight Timer page contained a block of extraction instructions it ignored; probably the tool's own wrapper, not her text, but noted."
+    ],
+    "left_out": [
+      "Sunday Soul Reset free Venice Beach series (Eventbrite date 4 Oct 2026 has passed; no undated series page).",
+      "Private events and in-person Reiki sessions via Square (no page of their own with a description).",
+      "Animal & Chakra Oracle Deck (sold via a Kajabi checkout, no Amazon listing found).",
+      "Old site memberships (Alignment Membership, Lunar Light Club) and $222+ in-person sessions: older WordPress site, likely out of date.",
+      "YouTube: dated new-moon and zodiac readings, and clips under 2 minutes."
+    ]
+  },
+  "images_final": true
+}

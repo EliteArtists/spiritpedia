@@ -1,0 +1,167 @@
+{
+  "healer": {
+    "healer_slug": "lee-papa",
+    "create": {
+      "name": "Lee Papa",
+      "bio": "Lee Papa is a mindfulness teacher, coach and corporate trainer based in Las Vegas, Nevada. She came to this work after some thirty years in hospitality, real estate, sales and publishing, and she still talks about practice in the language of busy professional life. In 2015 she started the Mindfulness Lounge, a guided space for short meditations and conversation set up inside conferences and trade shows, and she has since run it at large meetings-industry events such as IMEX America.\n\nHer one-to-one coaching takes place on Zoom and grows out of her eight-week Mindful Makeovers programme, covering life transitions, relationships, purpose and steadier daily habits; she also works with companies as a part-time wellness lead and leadership trainer. She is the author of A Year of Mindfulness for Beginners, a book of daily mantras and prompts, and Temple of All Knowing, which tells of her own near-death experience and what it taught her about life and death. On Insight Timer, where she has published since 2016, her tracks include chakra meditations and guided journeys to meet a spirit guide, and she hosts the Sunday Communion podcast of conversations about spiritual life.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local_online",
+      "city": "Las Vegas",
+      "country": "United States",
+      "subjects": [
+        "mindfulness",
+        "meditation",
+        "life-coaching"
+      ],
+      "website_url": "https://leepapa.com/",
+      "booking_url": "https://leepapa.com/personal-advisory-coaching/",
+      "youtube_url": "https://www.youtube.com/@livemindfullee",
+      "instagram_url": "https://www.instagram.com/livemindfullee",
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "lee@leepapa.com",
+      "image_urls": [
+        "https://leepapa.com/wp-content/uploads/elementor/thumbs/Lee-Wht-Shirt-rpfeap1kzob7zb1t6h54ry0dmquciq0fihx8osklds.jpg",
+        "https://users.insighttimer.com/R8y9Z3Z5d7g5k9Z4t9K0h9v6d6Q1n9e6Z3C6j0F5y2e4e1s5m2Q0h0x6J7B1R0k2N7K1C8b1U0Q3M3g9f1Y5d5b6J2s2F5Y1h9W3/pictures/square_large.jpeg"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "insight-timer",
+      "role": "instructor"
+    }
+  ],
+  "videos": [],
+  "books": [
+    {
+      "title": "Temple of All Knowing: An Exploration of Life, Death, and Spiritual Wisdom Through a near Death Experience",
+      "slug": "temple-of-all-knowing",
+      "author": "Lee Papa",
+      "asin": "195947149X",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "Lee Papa's account of her own near-death experience and the spiritual questions it opened up for her about living, dying and inner knowing. Other contributors appear alongside her story.",
+      "subjects": [
+        "nde",
+        "death-the-afterlife",
+        "spiritual-awakening"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/195947149X.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "A Year of Mindfulness for Beginners: Daily Mantras, Meditations, and Prompts",
+      "slug": "a-year-of-mindfulness-for-beginners",
+      "author": "Lee Papa",
+      "asin": "1641528486",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "A day-by-day companion for newcomers, with one short mantra, meditation or reflection prompt for each day of the year. It is meant to be opened for a few minutes at a time to build a regular habit of attention.",
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1641528486.01._SCLZZZZZZZ_.jpg"
+    }
+  ],
+  "courses": [
+    {
+      "title": "Personal Advisory Coaching",
+      "url": "https://leepapa.com/personal-advisory-coaching/",
+      "description": "Private coaching on Zoom, drawing on her eight-week Mindful Makeovers programme and shaped around each client. Typical themes are life changes, relationships and family, purpose, and building steadier daily habits; it begins with a free discovery call.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "life-coaching",
+        "mindfulness"
+      ],
+      "image": "https://leepapa.com/wp-content/uploads/2026/06/Lee-Events-Group-Purple.jpeg"
+    },
+    {
+      "title": "Mindful Makeovers: The Reset Map",
+      "url": "https://leepapa.podia.com/mindful-makeovers-the-reset-map",
+      "description": "A self-study download of about forty-five minutes that helps you take stock of what is using up your energy and what helps you feel settled. It includes a ten-minute reset audio.",
+      "price": "$27 USD",
+      "product_type": "download",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "mindfulness",
+        "life-coaching"
+      ],
+      "image": "https://leepapa.podia.com/content-assets/public/eyJhbGciOiJIUzI1NiJ9.eyJvYmplY3Rfa2V5IjoiYTczcDl6eHpuOXVxMzIzbjFldzV1dXd6NXlsdSIsImRvbWFpbiI6ImxlZXBhcGEucG9kaWEuY29tIn0.gEJmb31VPToTrF2uD0GctoL4fMR0gS91ywI9PwYL4a4"
+    },
+    {
+      "title": "Corporate Wellness & Programs",
+      "url": "https://leepapa.com/corporate-wellness/",
+      "description": "Work with organisations as a part-time wellness lead and trainer, covering leadership, emotional intelligence and team culture through a mindfulness lens.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "mindfulness"
+      ],
+      "image": "https://leepapa.com/wp-content/uploads/2026/06/extended-wellness-support-Holistic-Station.webp"
+    },
+    {
+      "title": "Mindfulness Lounge for Meetings & Events",
+      "url": "https://leepapa.com/meetings-events/",
+      "description": "Her guided mindfulness space for conferences and trade shows, with short meditations, brief teaching sessions and fireside-style talks for attendees. Booked by event organisers.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "image": "https://leepapa.com/wp-content/uploads/2026/06/LuxWell2025-Reg-15-scaled-1.jpg"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Lee Papa on Insight Timer",
+      "url": "https://insighttimer.com/leepapa",
+      "description": "Her guided meditations on Insight Timer, including a series of chakra meditations, visualisation journeys and practices for self-love and manifesting. Free to listen to in the app or on the web.",
+      "featured": true,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation",
+        "chakra-healing"
+      ],
+      "image": "https://leepapa.com/wp-content/uploads/elementor/thumbs/Lee-Wht-Shirt-rpfeap1kzob7zb1t6h54ry0dmquciq0fihx8osklds.jpg"
+    }
+  ],
+  "sprint": {
+    "hub": "insight-timer",
+    "rank": 199,
+    "insight_timer_url": "https://insighttimer.com/leepapa",
+    "tier_evidence": "Insight Timer 10.9k (profile, 1 Nov 2026); YouTube @livemindfullee 528 subscribers (channel header, 1 Nov 2026); Instagram @livemindfullee not readable without login → ~11.4k total → local_hero",
+    "email": "yes",
+    "email_source": "https://leepapa.com/",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 12 source(s)",
+    "flags": [
+      "Availability set to local_online (Las Vegas): coaching is on Zoom, and her in-person work is the Mindfulness Lounge and corporate sessions at conferences and companies rather than local classes; a human may prefer worldwide.",
+      "No videos: her YouTube channel is the Sunday Communion interview podcast (she is host, guests do most of the talking, several episodes are illness-recovery stories) plus Shorts, so nothing met the teaching-video rule.",
+      "Last Insight Timer upload was about four years ago, though her site and coaching are current (2026 copyright, new pages from June 2026).",
+      "Her Linktree also links an Amazon storefront and a superfood product (LIVEDEN); not listed, but a human may want to see it.",
+      "Her Books & Media page lists a 2024 Apartment Guide article titled 'How to Treat Seasonal Affective Disorder at Home' where she is quoted; it's press, not an offering, and wasn't listed.",
+      "Temple of All Knowing lists three other names on Amazon (Alejandra Orozco PhD, Jerry Metellus, Paul Isensee); they look like contributors, but authorship wasn't checked inside the book."
+    ],
+    "left_out": [
+      "Free e-book 'The Roadmap to Living Mindfully' (its page leepapa.com/roadmap-to-living-mindfully/ returns 404).",
+      "Meditation digital tracks & CDs (leepapa.com/meditation/ returns 404).",
+      "Sunday Communion podcast episodes and YouTube Shorts (interviews and clips, not her teaching; some are illness-recovery stories).",
+      "Audiobook 'Santa Baby: A Holiday Romance' linked from her Linktree (fiction, not her teaching).",
+      "Individual Insight Timer tracks (covered by the profile link)."
+    ]
+  }
+}

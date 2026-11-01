@@ -2983,7 +2983,7 @@
    "base": "Keszthely, Hungary",
    "website": "https://brightheartmeditation.com",
    "note": "Very minimal site.",
-   "status": "planned",
+   "status": "dev",
    "plan": "docs/content-audits/finnbarr-kennedy.json",
    "skip_reason": null
   },
@@ -3021,7 +3021,7 @@
    "base": "Byron Bay, NSW, Australia",
    "website": "https://jordannalevin.com/",
    "note": "Author/podcaster; contact page says answering emails is not her priority.",
-   "status": "planned",
+   "status": "dev",
    "plan": "docs/content-audits/jordanna-levin.json",
    "skip_reason": null
   },
@@ -3040,8 +3040,8 @@
    "base": "Michigan, USA",
    "website": "www.sarahhall.com",
    "note": null,
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/sarah-hall.json",
    "skip_reason": null
   },
   {
@@ -3629,9 +3629,9 @@
    "base": "Cavan, Ireland",
    "website": "https://www.sharonmundy.com",
    "note": "Profile location says 'Ireland, WA, USA' but site is in Cavan, Ireland.",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Her site's pranayama page sells breathwork on conditions (PTSD symptoms, anxiety, high blood pressure, smoking cessation, immunity), so she falls under the strict health rule; the site also shows no current classes or events ('No Events Found'), carries unrelated spam links (casino, used cars) suggesting it is unmaintained or compromised, has no clear photo of her, and her last Insight Timer upload was 7 years ago."
   },
   {
    "rank": 192,
@@ -3648,9 +3648,9 @@
    "base": "Washington, NJ, USA",
    "website": "https://seekingdharmayoga.com",
    "note": null,
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Her site sells classes on conditions (aerial yoga promoted as a benefit for anxiety and depression, meditation for lowering blood pressure, a 'Yoga for Anxiety & Depression' credential), so she falls under the strict health rule; beyond that the page would be thin: two local weekly classes, private sessions and one usable YouTube video (the others are a Short and a sciatica video)."
   },
   {
    "rank": 193,
@@ -3667,8 +3667,8 @@
    "base": "Berlin, Germany",
    "website": "https://www.gongwithfrida.com",
    "note": null,
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/frida-mohres.json",
    "skip_reason": null
   },
   {
@@ -3686,9 +3686,9 @@
    "base": "Melbourne, Australia",
    "website": "https://www.instagram.com/thehappyhabitwithfleurchambers",
    "note": "IT link was Instagram; own site thehappyhabit.com.au.",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Strict health rule: her Insight Timer bio lists chronic pain, ADHD, autism and perimenopause as topics, her app is sold on sleep and ADHD tracks, and her book Ten Pathways is built around her chronic-pain diagnosis, so a listing would point to condition-led work (as with Johanna Burkhardt). Researcher's plan kept in dropped/."
   },
   {
    "rank": 195,
@@ -3705,9 +3705,9 @@
    "base": "Truro, Cornwall, UK",
    "website": null,
    "note": "No website on IT; found stevenwebb.uk/stevenwebb.com; also a Cornwall councillor.",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Held for the owner (political check, as with Kerri Kelly): he is a serving Truro and Cornwall councillor and former Mayor of Truro. Researcher's plan kept in dropped/; insert if the owner agrees."
   },
   {
    "rank": 196,
@@ -3762,8 +3762,8 @@
    "base": "Washington, DC, USA",
    "website": "https://purposeblue.com/?utm_source=insighttimer.com&utm_medium=profile",
    "note": "PurposeBlue site looks dated (last retreat listed 2021).",
-   "status": "todo",
-   "plan": null,
+   "status": "planned",
+   "plan": "docs/content-audits/laurie-cameron.json",
    "skip_reason": null
   },
   {
@@ -3781,8 +3781,8 @@
    "base": "Nevada, USA",
    "website": "linktr.ee/livemindfullee",
    "note": "Linktree; own site leepapa.com.",
-   "status": "todo",
-   "plan": null,
+   "status": "planned",
+   "plan": "docs/content-audits/lee-papa.json",
    "skip_reason": null
   },
   {
@@ -3800,8 +3800,8 @@
    "base": "Honolulu, HI, USA",
    "website": "linktr.ee/melinda",
    "note": "Melinda Quesenberry; Linktree points to melindaquesenberry.com.",
-   "status": "todo",
-   "plan": null,
+   "status": "planned",
+   "plan": "docs/content-audits/melinda-quesenberry.json",
    "skip_reason": null
   },
   {
@@ -3819,9 +3819,9 @@
    "base": "Denver, CO, USA",
    "website": "arielenergyhealer.com/tuneups",
    "note": null,
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Health rule: her home page (arielenergyhealer.com) features a healing testimonial crediting her distance energy work with a recovery from sepsis after hospitalisation, and her only offering is $25 text-message energy tune-ups. A listing would send people to that page. Also no paid offering beyond the tune-ups and Insight Timer uploads are about three years old."
   },
   {
    "rank": 202,
@@ -3838,9 +3838,9 @@
    "base": "Santa Clarita, CA, USA",
    "website": "www.sabrinatheoracle.com",
    "note": null,
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Health rule: her signature offering is 'psychic channeling for trauma release', promoted in the FAQ on her home page and at the top of her about page (sabrinatheoracle.com/team), which also leads with releasing trauma held in the body. Under the strict precedent that is a brand sold on a condition. She also publishes no surname anywhere on her site."
   },
   {
    "rank": 203,
@@ -3857,7 +3857,7 @@
    "base": "Atlanta, GA, USA",
    "website": "https://katharinechestnut.com",
    "note": null,
-   "status": "planned",
+   "status": "dev",
    "plan": "docs/content-audits/katharine-chestnut.json",
    "skip_reason": null
   },
@@ -3876,9 +3876,9 @@
    "base": "Toronto, ON, Canada",
    "website": "www.rachelricketts.com",
    "note": "Speaking/workshop inquiries go to her agent at Simon & Schuster; support@ is for all else.",
-   "status": "planned",
-   "plan": "docs/content-audits/rachel-ricketts.json",
-   "skip_reason": null
+   "status": "skipped",
+   "plan": null,
+   "skip_reason": "Held for the owner (political check, as with Kerri Kelly): her site and offerings centre racial-justice activism, abolition and reparations in strongly worded copy. Researcher's plan kept in dropped/; insert if the owner agrees (luminary, ~192k)."
   },
   {
    "rank": 205,
@@ -3895,8 +3895,8 @@
    "base": "Venice, Los Angeles, CA, USA",
    "website": "https://linktr.ee/jessbeinspired",
    "note": "Linktree only (lists email and a website link).",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/jessica-prestia.json",
    "skip_reason": null
   },
   {
@@ -4085,9 +4085,9 @@
    "base": "Sarasota, FL, USA",
    "website": "http://donreedsimmons.com/",
    "note": "Site also lists addiction and depression services.",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Strict health rule: his own site, donreedsimmons.com, has an 'Addiction and Depression Services' page in its main menu and presents him as a Medical Intuitive, so a listing would send people to condition-sold pages even with those items left out."
   },
   {
    "rank": 216,
@@ -4356,5 +4356,5 @@
    "skip_reason": null
   }
  ],
- "updated": "2026-11-01T19:18:24.416Z"
+ "updated": "2026-11-01T19:21:06.660Z"
 }

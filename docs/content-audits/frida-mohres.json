@@ -1,0 +1,200 @@
+{
+  "healer": {
+    "healer_slug": "frida-mohres",
+    "create": {
+      "name": "Frida Möhres",
+      "bio": "Frida Möhres is a gong player and teacher who first met the instrument during a yoga class in Buenos Aires in 2015 and has worked with it ever since. She trained with the gong master Don Conreaux, taking part in his first gong teacher training in Slovenia in 2019, and in 2023 gained accreditation to teach Flumie playing, a friction-mallet style developed by Bear of Bear Love Sacred Sound. Her path into sound was not a straight line: she studied business in Berlin and interior design in Argentina, and has since qualified as a yoga teacher, mindfulness trainer and feng shui consultant, interests that shape how she sets up a room and a session.\n\nThe heart of her work is a small-group course in Berlin, spread over two weekends, that shows beginners how to play gong baths for themselves and for others. Alongside it she runs a one-day Flumie workshop, a self-paced online introduction to Flumies, and a yoga and sound weekend in Brandenburg with a yoga teacher, Lisa of Feel Yoga. Her recorded gong meditations are free to hear on her YouTube channel and on Insight Timer. She now lives in Barcelona and teaches in German, English and Spanish, in person and online.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local_online",
+      "city": "Berlin",
+      "country": "Germany",
+      "subjects": [
+        "sound-healing",
+        "meditation"
+      ],
+      "website_url": "https://gongwithfrida.com",
+      "booking_url": "https://gongwithfrida.com/learn-gong-playing",
+      "youtube_url": "https://www.youtube.com/@gongwithfrida",
+      "instagram_url": "https://www.instagram.com/gongwithfrida/",
+      "facebook_url": "https://www.facebook.com/gongwithfrida/",
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "gongwithfrida@gmail.com",
+      "image_urls": [
+        "https://images.squarespace-cdn.com/content/v1/56dfa584044262cdb8785510/1605993054782-QLRI2JJXG06A91293U86/Frida%2BM%25C3%25B6hres?format=1000w",
+        "https://yt3.googleusercontent.com/p6mkAS530iNKYn7qzGv97h98TACWYqNNvreYm16JGwvw45pRgJtNjItq_41_37dd_QqW09R8XQ=s900-c-k-c0x00ffffff-no-rj"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "insight-timer",
+      "role": "instructor"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Gong Sound Healing Klangbad 30 min. Fokus + Konzentration Gong Meditation Healing Sound Bath",
+      "url": "https://www.youtube.com/watch?v=PkUb2FCXm1g",
+      "subjects": [
+        "sound-healing",
+        "meditation"
+      ],
+      "channel": "Frida Möhres"
+    },
+    {
+      "title": "Gong Sound Bath Meditation Healing Music with Frida Möhres",
+      "url": "https://www.youtube.com/watch?v=M0rVuDAtl0A",
+      "subjects": [
+        "sound-healing",
+        "meditation"
+      ],
+      "channel": "Frida Möhres"
+    },
+    {
+      "title": "Gong Sound Healing Klangbad 30 min. Selbstliebe Gong Meditation Healing Sound Bath",
+      "url": "https://www.youtube.com/watch?v=KzxMfWMxF0U",
+      "subjects": [
+        "sound-healing",
+        "meditation"
+      ],
+      "channel": "Frida Möhres"
+    },
+    {
+      "title": "Gong Meditation Healing Sound Bath 30 min. Focus",
+      "url": "https://www.youtube.com/watch?v=LYAy1tCUVl0",
+      "subjects": [
+        "sound-healing",
+        "meditation"
+      ],
+      "channel": "Frida Möhres"
+    },
+    {
+      "title": "Gong Meditation Healing Sound Bath 30 min. Self Love",
+      "url": "https://www.youtube.com/watch?v=AZ5YFJNrBBA",
+      "subjects": [
+        "sound-healing",
+        "meditation"
+      ],
+      "channel": "Frida Möhres"
+    },
+    {
+      "title": "How to Clean a Gong - A Guide to Gong Maintenance and Cleaning",
+      "url": "https://www.youtube.com/watch?v=0kfAe1UWtBg",
+      "subjects": [
+        "sound-healing"
+      ],
+      "channel": "Frida Möhres"
+    }
+  ],
+  "books": [],
+  "courses": [
+    {
+      "title": "Initiation into Gong Playing Training Berlin",
+      "url": "https://gongwithfrida.com/initiationgongtrainingberlin",
+      "description": "A 30-hour beginners' training over two weekends in Berlin for a small group of four to eight, teaching how to play gong baths for yourself and others. Instruments and worksheets are provided, and a hybrid option starts the first part one to one online.",
+      "price": "€1222 EUR",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "sound-healing"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/56dfa584044262cdb8785510/6de147c8-fe5f-4008-9b01-7125f96a3c1c/IMG_8679.jpg"
+    },
+    {
+      "title": "Introduction to Flumies",
+      "url": "https://gongwithfrida.com/introduction-to-flumies-online-course",
+      "description": "A self-paced online video course on playing a gong with Flumies, the friction mallets that draw long, smooth tones. It covers how to hold them, the different sizes and models, care of the mallets and a few warm-up exercises, with lifetime access.",
+      "price": "€97 EUR",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "sound-healing"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/56dfa584044262cdb8785510/a59641e0-2541-4bde-8029-2f9ff7f6fcf3/dsc06855+4.png"
+    },
+    {
+      "title": "Flumie Level 1 Training",
+      "url": "https://gongwithfrida.com/flumie-level1",
+      "description": "A one-day, hands-on workshop in Berlin on the basics of Flumie gong playing, taught to the curriculum of Bear of Bear Love Sacred Sound. It is for personal practice rather than teaching; new English dates are still to be announced.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "sound-healing"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/56dfa584044262cdb8785510/3b472fa3-fe49-472f-a3e5-3c7a46d37db0/Gong+with+Frida.JPG"
+    },
+    {
+      "title": "Klang deines Seins: Yoga & Sound Retreat",
+      "url": "https://gongwithfrida.com/klangdeinesseins",
+      "description": "A German-language weekend at a lakeside spa hotel in Brandenburg, co-led with yoga teacher Lisa of Feel Yoga. It mixes gentle hatha and yin yoga with gong and sound baths, opening and closing rituals and time in the spa.",
+      "price": "From €522 EUR per person",
+      "product_type": "retreat",
+      "start_date": "2027-10-08",
+      "end_date": "2027-10-10",
+      "subjects": [
+        "sound-healing",
+        "yoga"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/56dfa584044262cdb8785510/a0d1508d-fb07-4f04-a27b-5e7fbe478a5d/2026-10-04_11-31-43_%281%29.jpg"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Frida Möhres on Insight Timer",
+      "url": "https://insighttimer.com/gongwithfrida",
+      "description": "Recorded gong sound baths and gong meditations by Frida, free to hear in the Insight Timer app or on the web.",
+      "featured": false,
+      "resource_type": "meditation",
+      "subjects": [
+        "sound-healing",
+        "meditation"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/56dfa584044262cdb8785510/1605993054782-QLRI2JJXG06A91293U86/Frida%2BM%25C3%25B6hres?format=1000w"
+    },
+    {
+      "title": "Guided Gong Meditations",
+      "url": "https://gongwithfrida.com/guided-gong-meditations",
+      "description": "A page on Frida's site gathering her free gong meditations, in video and audio, on themes such as focus and self-love. Most run about half an hour and are best heard lying down with headphones.",
+      "featured": true,
+      "resource_type": "meditation",
+      "subjects": [
+        "sound-healing",
+        "meditation"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/56dfa584044262cdb8785510/1605993054782-QLRI2JJXG06A91293U86/Frida%2BM%25C3%25B6hres?format=1000w"
+    }
+  ],
+  "sprint": {
+    "hub": "insight-timer",
+    "rank": 193,
+    "insight_timer_url": "https://insighttimer.com/gongwithfrida",
+    "tier_evidence": "Insight Timer 203 (profile via WebFetch, 1 Nov 2026); Instagram 3,243 (og:description, 1 Nov 2026); YouTube 107 (channel header next to @gongwithfrida, 1 Nov 2026); Facebook not readable without login → ~3.6k total → local_hero",
+    "email": "yes",
+    "email_source": "https://gongwithfrida.com/",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 8 source(s)",
+    "flags": [
+      "She says she is now based in Barcelona (Impressum address is in Barcelona), but her in-person trainings are in Berlin and Insight Timer lists Berlin; city set to Berlin for Near You, owner may prefer Barcelona.",
+      "Initiation into Gong Playing is a repeating training (20th edition) kept undated, but its page still shows the autumn 2026 dates that have passed and the next edition is not yet announced.",
+      "The retreat page has a typo offering early arrival on 07.10.2026 for a retreat dated 8 to 10 October 2027; dates entered as 2027-10-08 to 2027-10-10.",
+      "Video titles contain the word 'Healing' (sound-healing usage, no condition named); kept.",
+      "Her site promotes Sound Medicine Institute trainings where she is a guest lecturer; left out under the 'medical' rule (those pages are login-only anyway)."
+    ],
+    "left_out": [
+      "New Moon • Full Moon Online Gong Meditations (€33.33 EUR): dated series that began 17 Mar 2026, so out under the started-before-sprint rule.",
+      "Free Gong Webinar (14 Jul 2026): past date.",
+      "Sound Medicine Institute, SMI Sound Medicine Coach Intensive, SMI Membership, 20 H Sound Kurs: 'medical' rule and pages are password protected.",
+      "Advanced Gong Training: mentioned on the trainings page without its own page or dates.",
+      "Gong shop and instrument sales: not teaching offerings.",
+      "YouTube live set, festival clips, Women's Day talk, Universal Greeting and 'living tones' clips: performance or under ~2 minutes; 'Journey towards Yourself' clips are course trailers under 3 minutes.",
+      "No books found."
+    ]
+  },
+  "images_final": true
+}

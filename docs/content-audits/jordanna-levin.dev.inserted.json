@@ -1,0 +1,51 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 626,
+    "healer_slug": "jordanna-levin"
+  },
+  "rows": [
+    {
+      "table": "books",
+      "id": 1765,
+      "slug": "make-it-happen-jordanna-levin",
+      "title": "Make It Happen: Manifest the Life of Your Dreams"
+    },
+    {
+      "table": "books",
+      "id": 1766,
+      "slug": "higher-love-jordanna-levin",
+      "title": "Higher Love: Everything You Need to Manifest More Love in Your Life"
+    },
+    {
+      "table": "courses",
+      "id": "d7542276-4313-4377-8899-00e69ba51679",
+      "slug": "astrology-readings-with-jordanna-levin",
+      "title": "Astrology readings with Jordanna Levin"
+    },
+    {
+      "table": "courses",
+      "id": "6f4d0a4d-532a-4f96-9b37-c0159db49dc6",
+      "slug": "celestial-storytelling-2027",
+      "title": "Celestial Storytelling 2027"
+    },
+    {
+      "table": "courses",
+      "id": "6ebf886c-6c5d-402f-bfcc-f82546bd4e97",
+      "slug": "interactive-journals-for-make-it-happen-higher-love-and-make-you-happen",
+      "title": "Interactive journals for Make It Happen, Higher Love and Make You Happen"
+    },
+    {
+      "table": "free_resources",
+      "id": "6842bfd1-45b2-4717-a011-5671207fd6de",
+      "slug": "jordanna-levin-on-insight-timer",
+      "title": "Jordanna Levin on Insight Timer"
+    },
+    {
+      "table": "hub_teachers",
+      "id": "43f6c8c6-3762-4666-b41f-365e5c488d74",
+      "title": "jordanna-levin teaches at Insight Timer"
+    }
+  ],
+  "at": "2026-11-01T19:20:12.445Z"
+}

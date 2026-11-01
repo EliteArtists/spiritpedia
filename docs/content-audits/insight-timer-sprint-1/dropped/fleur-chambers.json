@@ -1,0 +1,161 @@
+{
+  "healer": {
+    "healer_slug": "fleur-chambers",
+    "create": {
+      "name": "Fleur Chambers",
+      "bio": "Fleur Chambers is a Melbourne meditation teacher and author, and the founder of The Happy Habit, a meditation app and set of online programmes. She has a master's degree in adult education, and her teaching grew out of difficult years of her own, which left her convinced that a good life makes room for the hard parts instead of waiting for them to pass. In 2022 she made The Happy Habit a social enterprise, with half of its profits going to grassroots projects on clean water, climate and education in poorer communities.\n\nHer approach is informal and down to earth. She favours very short practices for ordinary moments, such as the drive home or a crowded inbox, walking meditations for people who struggle to sit still, and gentle work on boundaries and self-trust, all framed around caring for the nervous system. Her paid programmes include In the Moment, a set of brief practices for busy days, Walk Yourself Home and The Overgiver's Reset. She has written several books, among them Wholehearted Confidence, and gathered a collection of true stories about daily rituals in North Star Habits. Many of her guided meditations can be heard free on Insight Timer, where she has a large following.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "worldwide",
+      "city": null,
+      "country": null,
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "website_url": "https://www.thehappyhabit.com.au",
+      "booking_url": "https://www.thehappyhabit.com.au/shop",
+      "youtube_url": null,
+      "instagram_url": "https://www.instagram.com/thehappyhabitwithfleurchambers/",
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "fleur@thehappyhabit.com.au",
+      "image_urls": [
+        "https://images.squarespace-cdn.com/content/v1/632e99efa411570b0f1dd57a/083537a1-953b-413b-8cca-a19e9c14d858/Fleur+Chambers+photo.jpeg?format=1000w",
+        "https://images.squarespace-cdn.com/content/v1/632e99efa411570b0f1dd57a/feb7035e-eafb-42dc-aab0-9bb9e755c7a7/TRP_9862.jpg?format=1000w"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "insight-timer",
+      "role": "instructor"
+    }
+  ],
+  "videos": [],
+  "books": [
+    {
+      "title": "Wholehearted Confidence: A New Way to Live, Love and Contribute",
+      "slug": "wholehearted-confidence",
+      "author": "Fleur Chambers",
+      "asin": "0645867047",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "Fleur's book on confidence as a quiet form of self-trust rather than something to be earned or proved. It looks at old stories about worth and how to feel more at ease in yourself and in the way you show up for others.",
+      "subjects": [
+        "mindfulness",
+        "self-healing"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/0645867047.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "North Star Habits: Stories of Finding Your Way Home",
+      "slug": "north-star-habits",
+      "author": "Fleur Chambers",
+      "asin": "1763640604",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "A collection of seventeen true stories, gathered by Fleur, from writers of many ages and countries about a small ritual or habit that steadied them in a hard season. Proceeds went to a children's library project in Bangladesh.",
+      "subjects": [
+        "mindfulness"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1763640604.01._SCLZZZZZZZ_.jpg"
+    }
+  ],
+  "courses": [
+    {
+      "title": "In the Moment",
+      "url": "https://www.thehappyhabit.com.au/in-the-moment",
+      "description": "Twenty very short guided meditations, five to seven minutes each, made for real situations such as the car after a hard conversation or the end of a crowded day. Bought once with ongoing online access.",
+      "price": "$44 AUD",
+      "product_type": "download",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/632e99efa411570b0f1dd57a/1701409430597-C9TC9ZE1O16EWEL3081S/Fleur+Chambers+photo.jpeg"
+    },
+    {
+      "title": "Walk Yourself Home",
+      "url": "https://www.thehappyhabit.com.au/walkyourselfhome",
+      "description": "Seven guided walking meditations, each under twenty minutes, for people who find sitting still hard. Every walk carries one intention and a question to reflect on outdoors.",
+      "price": "$33 AUD",
+      "product_type": "download",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/632e99efa411570b0f1dd57a/c3baa815-cbd9-43e3-86e3-26a9875f81da/TRP_0496.jpg"
+    },
+    {
+      "title": "The Overgiver's Reset",
+      "url": "https://www.thehappyhabit.com.au/reset",
+      "description": "Five ten-minute video practices on caring for others without overextending yourself. It works with the body's habit of saying yes too quickly and with setting kinder limits.",
+      "price": "$39 AUD",
+      "product_type": "download",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "mindfulness",
+        "conscious-relationships"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/632e99efa411570b0f1dd57a/ed0b9682-6b09-468d-a3b6-c1fbb7f00f8a/In+The+Moment+image+for+header+on+sales+page.jpg"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Fleur Chambers on Insight Timer",
+      "url": "https://insighttimer.com/thehappyhabit",
+      "description": "Guided meditations and short video practices from Fleur, including morning practices and simple resets, free to hear in the app or on the web.",
+      "featured": true,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/632e99efa411570b0f1dd57a/083537a1-953b-413b-8cca-a19e9c14d858/Fleur+Chambers+photo.jpeg?format=1000w"
+    },
+    {
+      "title": "Wholehearted Confidence: free first chapter",
+      "url": "https://thehappyhabit.ck.page/0c91ee89b8",
+      "description": "A free sample chapter of Fleur's book on confidence, sent by email when you sign up on her site.",
+      "featured": false,
+      "resource_type": "download",
+      "subjects": [
+        "mindfulness"
+      ],
+      "image": "https://m.media-amazon.com/images/P/0645867047.01._SCLZZZZZZZ_.jpg"
+    }
+  ],
+  "sprint": {
+    "hub": "insight-timer",
+    "rank": 194,
+    "insight_timer_url": "https://insighttimer.com/thehappyhabit",
+    "tier_evidence": "Insight Timer 59.2k (profile via WebFetch, 1 Nov 2026); Instagram 24k (og:description, 1 Nov 2026); YouTube none found (@TheHappyHabit channel has no videos and unclear ownership, not counted); Facebook not found/readable → ~83.2k total → local_hero",
+    "email": "yes",
+    "email_source": "https://www.thehappyhabit.com.au/",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 10 source(s)",
+    "flags": [
+      "Health rule, owner to decide: her Insight Timer bio lists chronic pain, ADHD, autism and perimenopause as focus topics, her app page sells 'sleep and ADHD tracks', and her Ten Pathways book page is built around her own chronic-pain diagnosis. Her own offerings (In the Moment, Walk Yourself Home, Overgiver's Reset) are sold on stress, overwhelm and boundaries only, so I wrote the plan, but this may fall under the strict precedent.",
+      "Tier borderline: total ~83.2k (80k-150k band). Insight Timer bio also claims 120,000+ people in her online classrooms and 3 million downloads; no override applied.",
+      "Wholehearted Confidence: amazon.com /dp/0645867047 returned 500 (curl and WebFetch); ISBN-10 taken from her own amazon.co.uk/.com.au links and the B&N EAN 9780645867046, and the Amazon cover loads by that ISBN. US edition not confirmed directly.",
+      "North Star Habits is an anthology of other writers' stories that she compiled; Amazon credits her as author.",
+      "Website is an owned brand (The Happy Habit); email is her named address on the brand domain."
+    ],
+    "left_out": [
+      "Ten Pathways (B0B2W3Y43X): its book page and blurb are framed around her chronic-pain diagnosis with no medical cure; borderline, left out (also amazon.com page returned 500).",
+      "The Happy Habit app and subscription ($5 a month / $49 a year): app page names ADHD tracks.",
+      "Ten Pathways free chapter: tied to the left-out book.",
+      "No YouTube videos: no channel clearly hers with teaching videos.",
+      "No Insight Timer courses listed on her profile."
+    ]
+  }
+}
