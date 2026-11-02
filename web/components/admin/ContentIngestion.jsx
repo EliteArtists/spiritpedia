@@ -712,19 +712,25 @@ export default function ContentIngestion({ initialPublisherId = null } = {}) {
           subject_slugs: tags,
         } }));
       } else if (tab === 'course') {
-        // DUPLICATE GUARD — courses carry a UNIQUE constraint on course_url, so
-        // an exact match means this course is already in the catalog. Block the
-        // insert before it round-trips to the database constraint.
-        const { data: courseDupes, error: courseDupeErr } = await supabase
+        // Resolve the relational bigint healer_id from the linked healer slug.
+        const linkedHealer = healers.find((h) => h.slug === linkedHealerSlug);
+
+        // DUPLICATE GUARD — a shared programme link may sit on more than one
+        // listing, but only once per listing (UNIQUE (course_url, healer_id),
+        // 0031). Block the insert before it round-trips to the constraint.
+        let dupeQuery = supabase
           .from('courses')
           .select('id')
-          .eq('course_url', url.trim())
-          .limit(1);
+          .eq('course_url', url.trim());
+        dupeQuery = linkedHealer ? dupeQuery.eq('healer_id', linkedHealer.id) : dupeQuery.is('healer_id', null);
+        const { data: courseDupes, error: courseDupeErr } = await dupeQuery.limit(1);
         if (courseDupeErr) throw courseDupeErr;
         if (courseDupes && courseDupes.length > 0) {
           setToast({
             type: 'error',
-            message: 'Duplicate Error: This course is already active in our catalog.',
+            message: linkedHealer
+              ? 'Duplicate Error: This listing already has this course.'
+              : 'Duplicate Error: This course is already active in our catalog.',
           });
           return; // leave form values intact; finally{} clears the saving flag
         }
@@ -733,9 +739,6 @@ export default function ContentIngestion({ initialPublisherId = null } = {}) {
           setToast({ type: 'error', message: courseRemoved });
           return;
         }
-
-        // Resolve the relational bigint healer_id from the linked healer slug.
-        const linkedHealer = healers.find((h) => h.slug === linkedHealerSlug);
 
         // Offerings resolve by `slug` on /offerings/[slug]; generate a unique one.
         const courseSlug = await uniqueSlug('courses', title.trim());
