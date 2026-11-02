@@ -1,0 +1,39 @@
+{
+  "env": "live",
+  "healer": {
+    "id": 584,
+    "healer_slug": "fred-haas"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "ba3540f1-864a-4813-9262-760f75eb5dbf",
+      "slug": "guided-lifestyle-coaching",
+      "title": "Guided Lifestyle Coaching"
+    },
+    {
+      "table": "courses",
+      "id": "3ffb8ebf-45a7-4582-a4b7-ac2041ce2ac5",
+      "slug": "angel-readings-and-medium-sessions",
+      "title": "Angel Readings and Medium Sessions"
+    },
+    {
+      "table": "free_resources",
+      "id": "31549e1a-a007-4c82-b487-bbf322ef0b54",
+      "slug": "fred-haas-on-insight-timer",
+      "title": "Fred Haas on Insight Timer"
+    },
+    {
+      "table": "free_resources",
+      "id": "ddc73e63-4afc-4b2d-9fad-bd973d6cb967",
+      "slug": "guided-meditations-by-fred-haas",
+      "title": "Guided Meditations by Fred Haas"
+    },
+    {
+      "table": "hub_teachers",
+      "id": "b1cc205c-38d8-45c7-a0ab-a88e91e2d688",
+      "title": "fred-haas teaches at Insight Timer"
+    }
+  ],
+  "at": "2026-11-02T09:23:23.351Z"
+}

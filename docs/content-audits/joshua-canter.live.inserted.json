@@ -1,0 +1,63 @@
+{
+  "env": "live",
+  "healer": {
+    "id": 542,
+    "healer_slug": "joshua-canter"
+  },
+  "rows": [
+    {
+      "table": "videos",
+      "id": 5761,
+      "slug": "mindfulness-now",
+      "title": "Mindfulness Now"
+    },
+    {
+      "table": "videos",
+      "id": 5762,
+      "slug": "metta",
+      "title": "Metta"
+    },
+    {
+      "table": "videos",
+      "id": 5763,
+      "slug": "phowa",
+      "title": "Phowa"
+    },
+    {
+      "table": "videos",
+      "id": 5764,
+      "slug": "body-scan",
+      "title": "Body Scan"
+    },
+    {
+      "table": "courses",
+      "id": "eb137afc-2c17-40a8-b482-67392b74519b",
+      "slug": "the-mindfulness-now-life-course",
+      "title": "The Mindfulness Now L.I.F.E. Course"
+    },
+    {
+      "table": "courses",
+      "id": "c5e88dd7-f2a5-4a05-a630-013918054e3a",
+      "slug": "the-art-of-presence-meditation-and-reflection-in-the-museum",
+      "title": "The Art of Presence: Meditation and Reflection in the Museum"
+    },
+    {
+      "table": "courses",
+      "id": "991b130f-005d-4433-b5fe-87175081f506",
+      "slug": "private-mindfulness-sessions-classes-and-workshops",
+      "title": "Private mindfulness sessions, classes and workshops"
+    },
+    {
+      "table": "free_resources",
+      "id": "288e3291-d355-43d2-8196-d5e79d841215",
+      "slug": "joshua-canter-on-insight-timer",
+      "title": "Joshua Canter on Insight Timer"
+    },
+    {
+      "table": "hub_teachers",
+      "id": "9fc62998-fa5e-40b5-babf-1fd511bde486",
+      "title": "joshua-canter teaches at Insight Timer"
+    }
+  ],
+  "at": "2026-11-02T09:19:37.822Z"
+}

@@ -1,0 +1,45 @@
+{
+  "env": "live",
+  "healer": {
+    "id": 614,
+    "healer_slug": "amy-elizabeth-bost"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "747311cb-73d8-480e-96ac-f8b966d16d34",
+      "slug": "pastoral-care-and-coaching-for-calling",
+      "title": "Pastoral Care and Coaching for Calling"
+    },
+    {
+      "table": "courses",
+      "id": "fa78c155-ce0f-4e73-bc31-0b2b8ce27a53",
+      "slug": "rituals-by-amy",
+      "title": "Rituals by Amy"
+    },
+    {
+      "table": "free_resources",
+      "id": "9c628bc8-4863-48a1-b6f2-f230b5d22abb",
+      "slug": "amy-elizabeth-bost-on-insight-timer",
+      "title": "Amy Elizabeth Bost on Insight Timer"
+    },
+    {
+      "table": "free_resources",
+      "id": "ec7ace1d-5a4a-44ee-a01d-30a965456287",
+      "slug": "as-the-day-rises-to-meet-the-sun-morning-christian-prayers",
+      "title": "As the Day Rises to Meet the Sun: Morning Christian Prayers"
+    },
+    {
+      "table": "free_resources",
+      "id": "09605732-d959-4d12-b639-983fd609a297",
+      "slug": "lest-the-rocks-cry-out-pepperdine-lecture-recording",
+      "title": "Lest the Rocks Cry Out (Pepperdine lecture recording)"
+    },
+    {
+      "table": "hub_teachers",
+      "id": "868986fd-b2bf-465a-a4c0-baa4194cd338",
+      "title": "amy-elizabeth-bost teaches at Insight Timer"
+    }
+  ],
+  "at": "2026-11-02T09:26:02.158Z"
+}

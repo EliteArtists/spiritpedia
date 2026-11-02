@@ -1,0 +1,57 @@
+{
+  "env": "live",
+  "healer": {
+    "id": 612,
+    "healer_slug": "lee-papa"
+  },
+  "rows": [
+    {
+      "table": "books",
+      "id": 1798,
+      "slug": "temple-of-all-knowing",
+      "title": "Temple of All Knowing: An Exploration of Life, Death, and Spiritual Wisdom Through a near Death Experience"
+    },
+    {
+      "table": "books",
+      "id": 1799,
+      "slug": "a-year-of-mindfulness-for-beginners",
+      "title": "A Year of Mindfulness for Beginners: Daily Mantras, Meditations, and Prompts"
+    },
+    {
+      "table": "courses",
+      "id": "0f9c8a90-8992-4f45-ac2f-857182ae7930",
+      "slug": "personal-advisory-coaching",
+      "title": "Personal Advisory Coaching"
+    },
+    {
+      "table": "courses",
+      "id": "7f6ea461-8cbc-46bf-ae85-f57caec9301b",
+      "slug": "mindful-makeovers-the-reset-map",
+      "title": "Mindful Makeovers: The Reset Map"
+    },
+    {
+      "table": "courses",
+      "id": "c8a52b89-3abb-46de-bc48-3cb147d7c362",
+      "slug": "corporate-wellness-programs",
+      "title": "Corporate Wellness & Programs"
+    },
+    {
+      "table": "courses",
+      "id": "9b808e65-4707-4b26-9836-3b27c24f8ff8",
+      "slug": "mindfulness-lounge-for-meetings-events",
+      "title": "Mindfulness Lounge for Meetings & Events"
+    },
+    {
+      "table": "free_resources",
+      "id": "7246674b-e806-432b-afba-d23c43baee5c",
+      "slug": "lee-papa-on-insight-timer",
+      "title": "Lee Papa on Insight Timer"
+    },
+    {
+      "table": "hub_teachers",
+      "id": "145b0909-7103-4701-90d5-02847215012a",
+      "title": "lee-papa teaches at Insight Timer"
+    }
+  ],
+  "at": "2026-11-02T09:25:53.073Z"
+}

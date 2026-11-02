@@ -1,0 +1,39 @@
+{
+  "env": "live",
+  "healer": {
+    "id": 585,
+    "healer_slug": "lyndsay-toensing"
+  },
+  "rows": [
+    {
+      "table": "books",
+      "id": 1772,
+      "slug": "the-art-of-connected-leadership",
+      "title": "The Art of Connected Leadership: The Manager's Guide for Keeping Rock Stars and Building Powerhouse Teams"
+    },
+    {
+      "table": "courses",
+      "id": "b215a6f6-220e-4226-876d-368238d98ebe",
+      "slug": "voice-reclamation-ritual-journey",
+      "title": "Voice Reclamation Ritual Journey"
+    },
+    {
+      "table": "free_resources",
+      "id": "5b56a672-5b78-486b-ae5f-ac317b4d0e42",
+      "slug": "lyndsay-toensing-on-insight-timer",
+      "title": "Lyndsay Toensing on Insight Timer"
+    },
+    {
+      "table": "free_resources",
+      "id": "f347983e-4294-44ef-a5da-e8ce742b0b9d",
+      "slug": "the-descent-begins-here",
+      "title": "The Descent Begins Here"
+    },
+    {
+      "table": "hub_teachers",
+      "id": "baa1d134-2aec-4f47-b088-7a8dfe534de5",
+      "title": "lyndsay-toensing teaches at Insight Timer"
+    }
+  ],
+  "at": "2026-11-02T09:23:25.795Z"
+}

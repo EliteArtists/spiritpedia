@@ -2,9 +2,13 @@
 
 This follows `2026-11-01-content-run.md` and applies the owner's decisions from the same day. Dev is final at **98 new teachers**.
 
-**What's live so far:**
-- **Already live:** the Insight Meditation Society (IMS) hub and Sharon Salzberg's founder link.
-- **Not yet live:** the 98 teachers. The permission check stopped the bulk insert on live. They go live with one command (below). Every one of them dry-ran clean on live, and each is a new listing.
+**Live (2 Nov 2026):**
+- the Insight Meditation Society (IMS) hub and Sharon Salzberg's founder link;
+- all 98 teachers, inserted in run order and each logged for rollback;
+- 100 hub links (Suzanne Sterling and Murray Hidary also teach on The Shift Network);
+- Goldstein's co-author fix.
+
+The passed-dates check was re-run on 2 Nov before the insert, and nothing had passed. 18 shared offerings for 16 teachers wait for migration 0031 on live.
 
 ## Decisions applied (dev)
 
@@ -47,7 +51,7 @@ This follows `2026-11-01-content-run.md` and applies the owner's decisions from 
 - Three from other hubs: Jeffrey S. Reid, Lori Sheridan and Nina Rao.
 - After 0031, rerunning those 16 plans on dev adds them. The live script adds them on live.
 
-**The admin's manual offering form** (`ContentIngestion.jsx`) still blocks any URL that's already in. It was left as it is; say if it should match.
+**The admin's manual offering form** (`ContentIngestion.jsx`) now matches: it blocks a URL only if the chosen listing already has it (or, with no listing, if an unlinked copy exists). It's committed but **not pushed**, because a web/ push deploys. Push it after 0031 runs on live; before that, the database would still refuse a shared link.
 
 ## Standing rule, firmer
 
@@ -59,7 +63,7 @@ This follows `2026-11-01-content-run.md` and applies the owner's decisions from 
 
 ## To finish going live
 
-1. **The 98 teachers and the Goldstein co-author fix:**
+1. **Done 2 Nov 2026.** The 98 teachers and the Goldstein co-author fix:**
    `python3 docs/content-audits/content-run-2026-11-01-live.py`
    - It inserts in run order and logs each teacher for rollback.
    - Then it runs `content-run-fixes-2026-11-01.mjs --env live --apply`.

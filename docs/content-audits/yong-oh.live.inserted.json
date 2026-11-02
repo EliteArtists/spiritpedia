@@ -1,0 +1,33 @@
+{
+  "env": "live",
+  "healer": {
+    "id": 575,
+    "healer_slug": "yong-oh"
+  },
+  "rows": [
+    {
+      "table": "videos",
+      "id": 6025,
+      "slug": "tricycles-meditation-group-yong-oh",
+      "title": "Tricycle's Meditation Group – Yong Oh"
+    },
+    {
+      "table": "courses",
+      "id": "ed597579-54b0-45ba-b837-2ec432088659",
+      "slug": "nature-sangha-ims-online",
+      "title": "Nature Sangha (IMS Online)"
+    },
+    {
+      "table": "courses",
+      "id": "abdb27d9-b1c2-47dd-b9e7-14c58f7121cd",
+      "slug": "being-dharma-a-month-long-residential-retreat",
+      "title": "Being Dharma: A Month-long Residential Retreat"
+    },
+    {
+      "table": "hub_teachers",
+      "id": "d5fdd1f8-f274-400a-84a4-b56362cfe32e",
+      "title": "yong-oh teaches at Insight Meditation Society"
+    }
+  ],
+  "at": "2026-11-02T09:22:32.273Z"
+}

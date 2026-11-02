@@ -1,0 +1,39 @@
+{
+  "env": "live",
+  "healer": {
+    "id": 559,
+    "healer_slug": "micha-merrick"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "c787dca9-c8e5-4453-9adf-ad835d4a32aa",
+      "slug": "solstice-hearthfire-celebrate-the-rebirth-of-your-inner-light",
+      "title": "Solstice Hearthfire: Celebrate the Rebirth of Your Inner Light"
+    },
+    {
+      "table": "courses",
+      "id": "686f0256-d244-46bb-a572-54a17d96a32b",
+      "slug": "rights-of-spring-refresh-your-spirit-through-cleansing-herbal-bodywork",
+      "title": "Rights of Spring: Refresh Your Spirit Through Cleansing Herbal Bodywork"
+    },
+    {
+      "table": "courses",
+      "id": "6a879856-f64b-4463-ad8a-4ee420ca323e",
+      "slug": "herbal-clearing-ritual",
+      "title": "Herbal Clearing Ritual"
+    },
+    {
+      "table": "courses",
+      "id": "d70efb05-fc0e-428e-b4c5-9d93de26aac3",
+      "slug": "herbal-bodywork-practitioner-training-and-mentorship",
+      "title": "Herbal bodywork practitioner training and mentorship"
+    },
+    {
+      "table": "hub_teachers",
+      "id": "e5b5ffa4-98ca-421a-b1b6-f66ab9101965",
+      "title": "micha-merrick teaches at Esalen Institute"
+    }
+  ],
+  "at": "2026-11-02T09:21:00.780Z"
+}
