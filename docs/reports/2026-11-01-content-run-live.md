@@ -8,7 +8,13 @@ This follows `2026-11-01-content-run.md` and applies the owner's decisions from 
 - 100 hub links (Suzanne Sterling and Murray Hidary also teach on The Shift Network);
 - Goldstein's co-author fix.
 
-The passed-dates check was re-run on 2 Nov before the insert, and nothing had passed. 18 shared offerings for 16 teachers wait for migration 0031 on live.
+The passed-dates check was re-run on 2 Nov before the insert, and nothing had passed.
+
+**Shared offerings done (2 Nov 2026).** The owner ran migration 0031 on dev and live: `courses_url_unique` became `courses_url_healer_unique`. Then:
+- the 16 plans were rerun on dev;
+- `content-run-2026-11-01-live.py` was run again on live.
+
+That added the 18 shared offerings on both, each logged for rollback: Devin Berry 3, and 1 each for Jeffrey S. Reid, Lori Sheridan, Mark Nunberg, Éowyn Ahlstrom, Tara Mulay, Jill Shepherd, Cara Lai, Roxanne Dault, Ajahn Canda, Tuere Sala, Kristina Baré, Yong Oh, Bart van Melik, Bhante Buddharakkhita and Nina Rao. Those 16 teachers now have 52 offerings on dev and 52 on live.
 
 ## Decisions applied (dev)
 
@@ -51,7 +57,7 @@ The passed-dates check was re-run on 2 Nov before the insert, and nothing had pa
 - Three from other hubs: Jeffrey S. Reid, Lori Sheridan and Nina Rao.
 - After 0031, rerunning those 16 plans on dev adds them. The live script adds them on live.
 
-**The admin's manual offering form** (`ContentIngestion.jsx`) now matches: it blocks a URL only if the chosen listing already has it (or, with no listing, if an unlinked copy exists). It's committed but **not pushed**, because a web/ push deploys. Push it after 0031 runs on live; before that, the database would still refuse a shared link.
+**The admin's manual offering form** (`ContentIngestion.jsx`) now matches: it blocks a URL only if the chosen listing already has it (or, with no listing, if an unlinked copy exists). It's committed but **not pushed**, because a web/ push deploys. 0031 is now on live, so it can go out when the owner says.
 
 ## Standing rule, firmer
 
@@ -68,7 +74,7 @@ The passed-dates check was re-run on 2 Nov before the insert, and nothing had pa
    - It inserts in run order and logs each teacher for rollback.
    - Then it runs `content-run-fixes-2026-11-01.mjs --env live --apply`.
    - It's safe to run again.
-2. **Migration 0031,** dev then live. Then run the same script again: it adds the shared offerings on live. On dev, rerun the 16 plans listed above.
+2. **Done 2 Nov 2026.** Migration 0031, dev then live. Then run the same script again: it adds the shared offerings on live. On dev, rerun the 16 plans listed above.
 
 **For a short while** IMS shows on live's Retreat Centres & Platforms shelf with one linked teacher (Sharon Salzberg), until step 1 runs.
 
