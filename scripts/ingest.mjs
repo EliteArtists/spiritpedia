@@ -244,8 +244,25 @@ if (create) {
   if (byName) problems.push(`a healer named "${create.name}" already exists as ${byName.healer_slug}`);
 }
 const UPDATABLE = ['bio', 'image_urls', 'subject_slugs', 'booking_url', 'website_url', 'youtube_url', 'instagram_url',
-  'facebook_url', 'twitter_url', 'tiktok_url', 'contact_email', 'birth_year', 'death_year', 'tier', 'entity_type', 'founded_year'];
+  'facebook_url', 'twitter_url', 'tiktok_url', 'contact_email', 'birth_year', 'death_year', 'tier', 'entity_type', 'founded_year',
+  'city', 'country'];
 for (const k of Object.keys(plan.healer?.update || {})) if (!UPDATABLE.includes(k)) problems.push(`healer update: "${k}" can't be changed here`);
+
+// The base (owner, 3 Nov 2026): every living person, school and organisation
+// gets the city and country they publish as their base, whatever their
+// availability, so Near You can find them. City level only, with the page
+// that says so; or `no_public_base` saying why there's none.
+const where = create || plan.healer?.update || {};
+const needsBase = create && create.tier !== 'ascended_master' && ['individual', 'school', 'organisation'].includes(create.entity_type);
+const givesBase = 'city' in where || 'country' in where;
+if (givesBase && where.country && !plan.healer.location_source) problems.push('base location: add location_source (the page that publishes the city and country)');
+if (givesBase && /\d/.test(where.city || '')) problems.push(`base location: "${where.city}" looks like an address; city level only`);
+if (needsBase && !create.country && !plan.healer.no_public_base) problems.push('base location: no country. Record the published base (city, country, location_source) or set no_public_base with why');
+if (givesBase && where.city && where.country) {
+  const r = await fetch(`${BASE}/rest/v1/rpc/resolve_place`, { method: 'POST', headers, body: JSON.stringify({ p_city: where.city, p_country: where.country }) });
+  const placeId = r.ok ? await r.json() : null;
+  if (!placeId) notes.push(`"${where.city}, ${where.country}" isn't a town in places (under 5,000 people, or another spelling): add a place alias so Near You finds them (README §18.4)`);
+}
 say(`Healer: ${healer ? `${healer.name} (id ${healer.id}, ${healer.tier})` : `${slug}: new, ${create?.name}, suggested ${create?.tier} / ${create?.entity_type}`}`);
 
 // ── Images, all in parallel ──────────────────────────────────────────────
@@ -521,13 +538,12 @@ const saveLog = () => fs.writeFileSync(logPath, `${JSON.stringify(log, null, 2)}
 if (create) {
   const isAscended = create.tier === 'ascended_master';
   const availability = create.entity_type === 'individual' ? (create.availability || 'worldwide') : 'worldwide';
-  const isLocal = availability !== 'worldwide';
   healer = await insert('healers', {
     name: create.name, healer_slug: slug, bio: create.bio || null, tier: create.tier,
     entity_type: create.entity_type, image_urls: create.image_urls, subject_slugs: create.subjects,
     birth_year: isAscended ? create.birth_year || null : null, death_year: isAscended ? create.death_year : null,
     availability_type: AVAILABILITY[availability],
-    city: isLocal ? create.city || null : null, country: isLocal ? create.country || null : null,
+    city: isAscended ? null : create.city || null, country: isAscended ? null : create.country || null,
     contact_email: create.contact_email || null, booking_url: create.booking_url || null,
     website_url: create.website_url || null, youtube_url: create.youtube_url || null,
     instagram_url: create.instagram_url || null, facebook_url: create.facebook_url || null,

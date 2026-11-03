@@ -63,6 +63,8 @@ are left out, even if late joining is open.
 {
   "healer": {
     "healer_slug": "justin-michael-williams",
+    "location_source": "the page that publishes their base, or null",
+    "no_public_base": "only when nothing is published: why",
     "create": {
       "name": "Justin Michael Williams",
       "bio": "two paragraphs, see Bio",
@@ -148,7 +150,18 @@ Item shapes (exactly these keys):
 - **Availability** (this sprint favours teachers who feed Near You):
   `local_online` if they have a physical base where they see people or hold
   classes *and* teach online (then `city` and `country` are required); `local`
-  if in person only; `worldwide` if online only or international without a base.
+  if in person only; `worldwide` if online only or international. Availability
+  no longer decides the location: see Base location.
+- **Base location** (owner, 3 Nov 2026; every listing, whatever its
+  availability): the city and country they publish as where they live or are
+  based (a school or organisation: its headquarters or main campus), so Near
+  You can find them even if they only teach online. From their own site, hub
+  profile or official socials; put the page in `location_source`. **City
+  level only**, never a street address or postcode. A retreat venue or tour
+  stop is not a base. Add the state or province for the US, Canada and
+  Australia (`"city": "Ojai, California"`). Nothing published: leave `city`
+  and `country` null and say why in `no_public_base` (the ingest refuses a
+  new listing with neither). Don't guess.
 - **booking_url**: their own "work with me / sessions / classes / retreats" page, else their website.
 - **Links**: only accounts you opened and that are clearly theirs.
 

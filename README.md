@@ -304,7 +304,7 @@ how-to is `docs/admin-guide.md`; the personalisation rules are
 | **Website** | Live at **https://www.spiritpedia.co** (Next.js on Vercel). Every push that changes `web/` deploys to production |
 | **App (iOS)** | Flutter, iPhone and iPad. **1.0** is in Apple review. **1.0.0 (27)** is on TestFlight (`app/build/ios-release/Spiritpedia-1.0.0-27.ipa`; archive in Xcode's Archives, `2026-10-28/Spiritpedia 1.0.0 (27).xcarchive`, 28 Oct 2026). Build 24's archive (`2026-10-22/Runner 3.xcarchive`) is kept while 1.0 is in review; 25 and 26 were never uploaded and their files were deleted on 28 Oct |
 | **App (Android)** | The same code. The **closed test is live with 15 testers**; the production application is due about 9–10 Nov 2026 (§10.15, §12.8, `docs/google-play.md`). **1.0.0 (25)** (version code 25, `app/build/android-release/Spiritpedia-1.0.0-25.aab`) has been in the closed test since **31 Oct 2026**. Not yet in production |
-| **Database** | Supabase. Two projects: **live** (`uzmvcgew…`) and **dev** (`khtpbnof…`). Migrations `0000`–`0031` are on both; **`0032`** (the push package) is for the owner to run, dev first |
+| **Database** | Supabase. Two projects: **live** (`uzmvcgew…`) and **dev** (`khtpbnof…`). Migrations `0000`–`0032` are on both; **`0033`** (place aliases, the location audit) is for the owner to run, dev first |
 | **Push** | Firebase Cloud Messaging only, with an APNs key. Moved on 22 Oct 2026 to two Firebase projects owned by **love@spiritpedia.co** (live `spiritpedia-ad62b`, dev `spiritpedia-dev-5e4d5`); checked end to end on iPhone, iPad and Android |
 | **Emails** | The approved copy of 21–22 Oct 2026 is live (§9.7). The outreach journey is eight emails, redirected to a test inbox by `JOURNEY_TEST_EMAIL` until the solicitor has checked cold email; no journey is running. Day 4 is live. Personal discovery editions are built but **off** until `DISCOVERY_EDITIONS=on` is set on Vercel (§9.7a) |
 | **Repository** | `https://github.com/EliteArtists/spiritpedia`, branch `main` only. No staging environment, no feature flags |
@@ -608,7 +608,7 @@ editor **on dev first, then live**, by the project owner. Dev is checked with
 throwaway users created through the Admin API (no email) and deleted
 afterwards; live is checked read-only.
 
-### 8.1 0012–0032 (0012–0031 on dev and live; 0032 to run)
+### 8.1 0012–0033 (0012–0032 on dev and live; 0033 to run)
 
 **`0012_favourites_slugs`** — data only, in one transaction.
 - Rewrites legacy `user_favourites.content_slug` values (numeric ids for books,
@@ -668,7 +668,8 @@ afterwards; live is checked read-only.
   read. Data imported by hand from a `places.csv` that isn't in the repo.
 - `healers.place_id`, set by trigger from `city` + `country` through
   `resolve_place()` (knows aliases like UK/England → GB; picks the most
-  populous). The file ends with a backfill that must be re-run after an import.
+  populous; since `0033` also villages and other spellings through
+  `place_aliases`). The file ends with a backfill that must be re-run after an import.
 - `user_preferences` (`area_place_id`): owner-only.
 - `nearest_place(lat, lng)`: rounds to 2 decimal places, searches about 110 km,
   returns one town, stores nothing. Callable signed out.
@@ -842,6 +843,24 @@ live). The push notification package (§9.11, §10.11):
 No existing policy loosened. Safe to run again. Then, on live only,
 `supabase/scheduled/push-hourly.sql` (pg_cron + pg_net, the secret in Vault)
 calls `/api/cron/push` at five past every hour.
+
+**`0033_place_aliases`** (3 Nov 2026, the location audit; owner to run dev
+then live). A listing's published town now finds its place (Near You):
+- `place_aliases` (`name`, `country_code`, `region` or `''`, `place_id`,
+  `note`): a name stored on listings that isn't a town in `places` → the
+  place it means. A village under 5,000 people points at the nearest town of
+  5,000+ in the same country (Woodacre → Fairfax, Big Sur → Monterey); another
+  spelling at the town itself (New York → New York City, Koh Phangan → Ko Pha
+  Ngan). The listing keeps its own town; only `place_id` uses the alias.
+  Public read, read-only, like `places`. Seeded with the 45 the audit needed.
+- `resolve_place()`: "St"/"St." also tried as "Saint", dots ignored, a
+  leading "The" ignored in country names, any country name or code `places`
+  knows ("Netherlands"); then the aliases. Existing matches are unchanged.
+- Backfill of every listing's `place_id`; check row: aliases, listings with
+  a town, of those with a place.
+A new village is added as a row (SQL editor, dev then live; the nearest
+5,000+ town in the same country, within 110 km). The ingest says when one is
+needed (§18.4).
 
 ### 8.2 0000–0011
 
@@ -2596,7 +2615,9 @@ node scripts/ingest.mjs <plan.json> --env dev --rollback    # delete exactly wha
       "twitter_url": "", "tiktok_url": "", "booking_url": "", "contact_email": "",
       "availability": "worldwide|local|local_online", "city": "", "country": "",
       "image_urls": []
-    }
+    },
+    "location_source": "the page that publishes their base",
+    "no_public_base": "only when none is published: why"
   },
   "videos": [{ "title": "", "url": "https://www.youtube.com/watch?v=…", "subjects": [] }],
   "books": [{ "title": "", "slug": "", "author": "", "asin": "…", "store": "amazon.com",
@@ -2689,6 +2710,20 @@ Turning a Channel into a School is a plan with `"update": { "entity_type":
   first and skip anything it blocks. A page that refuses (403, 401, bot
   check, rate limit) is never retried under a different browser identity,
   user agent, header set, proxy or tool. Every research brief says so.
+- **Base location** (owner, 3 Nov 2026): every living person, school and
+  organisation gets the city and country they **publish** as their base
+  (where they live or are based; a school or organisation: its headquarters
+  or main campus), **whatever their availability**, so Near You can find
+  people who teach online too. From their own site, hub profile or official
+  socials, with that page in `location_source`. **City level only**, never a
+  street address. A retreat venue or tour stop isn't a base. US, Canada and
+  Australia: `"Town, State"`. Nothing published: `city`/`country` null and
+  `no_public_base` saying why; never guess. The ingest refuses a new listing
+  with neither, keeps city and country for every availability (until 3 Nov it
+  dropped them for `worldwide`, which left most listings blank), and notes a
+  town that isn't in `places` (a village: add a `place_aliases` row, §8.1
+  `0033`). An existing listing's base goes in through `healer.update`
+  (`city`, `country`) with `location_source`.
 - **Shared offering links** (owner, 1 Nov 2026; migration 0031): the same
   offering URL may sit on more than one listing (one hub page for a
   programme several teachers lead), once per listing.
