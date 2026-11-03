@@ -5,6 +5,8 @@ import { firstNameFrom, sendClaimDecision, sendEmail } from '@/utils/email';
 import { sendOnce } from '@/utils/emailOnce';
 import { SITE } from '@/utils/emailParts';
 import { ownershipCheck } from '@/utils/emailTemplates';
+import { COPY } from '@/utils/pushRules';
+import { sendAccountUpdate } from '@/utils/pushRun';
 
 export const dynamic = 'force-dynamic';
 
@@ -211,6 +213,18 @@ export async function POST(request) {
     .neq('status', 'stopped');
 
   const notified = await tellClaimant(supabase, claim, 'approved');
+  // The notification (Account updates), which opens My Account, where the
+  // listing is managed. A rejection is email only.
+  const pushed = await sendAccountUpdate(
+    supabase,
+    claim.user_id,
+    'claim_approved',
+    {
+      ...COPY.claimApproved((claim.healer_slug ? claim.healers?.name : claim.publishers?.name) || 'your listing'),
+      data: { route: '/account' },
+    },
+    [{ type: 'listing', ref: String(wanted) }]
+  );
 
   return NextResponse.json({
     ok: true,
@@ -218,5 +232,6 @@ export async function POST(request) {
     healer_slug: claim.healer_slug,
     publisher_id: claim.publisher_id,
     notified,
+    pushed,
   });
 }

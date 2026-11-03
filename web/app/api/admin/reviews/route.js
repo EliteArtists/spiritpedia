@@ -7,6 +7,8 @@ import {
   sendReviewRejected,
 } from '@/utils/email';
 import { getContentMeta } from '@/utils/contentMeta';
+import { COPY, ROUTES } from '@/utils/pushRules';
+import { sendAccountUpdate } from '@/utils/pushRun';
 
 export const dynamic = 'force-dynamic';
 
@@ -128,5 +130,20 @@ export async function PATCH(request) {
     }
   }
 
-  return NextResponse.json({ ok: true, status: updated.status, notified });
+  // And a notification for an approval (Account updates). A rejection is
+  // email only, never a push.
+  let pushed = null;
+  if (status === 'approved' && before?.status !== 'approved') {
+    const meta = await getContentMeta(updated.content_type, updated.content_slug).catch(() => null);
+    const route = ROUTES[updated.content_type]?.(updated.content_slug) || (updated.content_type === 'publisher' ? `/publishers/${updated.content_slug}` : null);
+    pushed = await sendAccountUpdate(
+      supabase,
+      updated.user_id,
+      'review_approved',
+      { ...COPY.reviewApproved(meta?.title || updated.content_slug), data: route ? { route } : {} },
+      [{ type: 'review', ref: String(updated.id) }]
+    );
+  }
+
+  return NextResponse.json({ ok: true, status: updated.status, notified, pushed });
 }

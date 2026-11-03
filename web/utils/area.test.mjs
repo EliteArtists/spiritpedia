@@ -1,6 +1,6 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { distanceKm, nearYou, readArea, writeArea, roundForPrivacy } from './area.js';
+import { closestTo, distanceKm, distanceLabel, distanceUnitFor, nearYou, readArea, writeArea, roundForPrivacy } from './area.js';
 
 const london = { id: 2643743, name: 'London', region: 'England', country: 'United Kingdom', lat: 51.5085, lng: -0.1257 };
 const croydon = { id: 2652053, name: 'Croydon', region: 'England', country: 'United Kingdom', lat: 51.3816, lng: -0.0981 };
@@ -45,4 +45,27 @@ test('kept as a town only; a position leaves rounded to about 1 km', () => {
   writeArea(null, storage);
   assert.equal(readArea(storage), null);
   assert.equal(roundForPrivacy(51.507412), 51.51);
+});
+
+const paris = { id: 2988507, name: 'Paris', region: 'Île-de-France', country: 'France', lat: 48.8534, lng: 2.3488 };
+const edinburgh = { id: 2650225, name: 'Edinburgh', region: 'Scotland', country: 'United Kingdom', lat: 55.9521, lng: -3.1965 };
+
+test('closest to you: nearest first, with distances, towns only, ten at most', () => {
+  const r = closestTo(all, edinburgh, places);
+  assert.deepEqual(r.map((c) => c.healer), [manchesterLocal, manchesterOnline, inLondon, inCroydon]);
+  assert.ok(Math.abs(r[0].km - 282) < 5);
+  assert.equal(closestTo(all, null, places).length, 0);
+  const many = Array.from({ length: 14 }, (_, i) => h(100 + i, london, 'Local Only (In-Person)'));
+  assert.equal(closestTo(many, paris, places).length, 10);
+  assert.deepEqual(closestTo([nowhere], paris, places), []);
+});
+
+test('miles in the United Kingdom and the United States, kilometres elsewhere', () => {
+  assert.equal(distanceUnitFor('United Kingdom'), 'miles');
+  assert.equal(distanceUnitFor('United States'), 'miles');
+  assert.equal(distanceUnitFor('France'), 'km');
+  assert.equal(distanceLabel(320, 'France'), '320 km away');
+  assert.equal(distanceLabel(1240.4, 'Germany'), '1,240 km away');
+  assert.equal(distanceLabel(321.9, 'United Kingdom'), '200 miles away');
+  assert.equal(distanceLabel(1, 'United States'), '1 mile away');
 });

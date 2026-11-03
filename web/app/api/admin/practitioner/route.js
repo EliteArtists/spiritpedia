@@ -4,6 +4,8 @@ import { ENTITY_TYPES } from '@/utils/listings';
 import { firstNameFrom, sendClaimDecision, sendEmail, sendListingLive } from '@/utils/email';
 import { forgetSent, sendOnce } from '@/utils/emailOnce';
 import { applicationDeclined } from '@/utils/emailTemplates';
+import { COPY } from '@/utils/pushRules';
+import { sendAccountUpdate } from '@/utils/pushRun';
 
 export const dynamic = 'force-dynamic';
 
@@ -37,7 +39,14 @@ const PLATFORM_TIERS = ['superhero', 'luminary', 'local_hero'];
 // "Your listing is live" to the owner (D3, utils/emailTemplates.js). Never
 // throws and never undoes the approval: the response says whether it went,
 // and the admin's message says so.
-async function tellOwner({ email, fullName, listingName, listingPath }) {
+//
+// The same news as a notification (Account updates; utils/pushRun.js), which
+// opens the listing. A decline is email only, never a push.
+async function tellOwner({ supabase, userId, email, fullName, listingName, listingPath }) {
+  await sendAccountUpdate(supabase, userId, 'listing_approved', {
+    ...COPY.listingApproved(listingName),
+    data: { route: listingPath },
+  }, [{ type: 'listing', ref: listingPath }]);
   if (!email) return false;
   try {
     const result = await sendListingLive({
@@ -56,7 +65,13 @@ async function tellOwner({ email, fullName, listingName, listingPath }) {
 // A claimed listing approved: the claim approval email, never "live". Once
 // per account and listing, shared with /api/email/claim-approved, so an
 // instant claim that already had it is not told twice.
+//
+// And the notification, which opens My Account, where the listing is managed.
 async function tellClaimant(supabase, { userId, listingRef, email, fullName, listingName }) {
+  await sendAccountUpdate(supabase, userId, 'claim_approved', {
+    ...COPY.claimApproved(listingName || 'your listing'),
+    data: { route: '/account' },
+  }, [{ type: 'listing', ref: String(listingRef) }]);
   if (!email) return false;
   try {
     const result = await sendOnce(supabase, { kind: 'claim_approved', ref: `${userId}:${listingRef}` }, () =>
@@ -281,6 +296,8 @@ export async function POST(request) {
   }
 
   const notified = await tellOwner({
+    supabase,
+    userId: id,
     email,
     fullName: profile.full_name,
     listingName: name,
@@ -345,6 +362,8 @@ async function approvePublisher(supabase, { id, profile, name, email, publisherI
   }
 
   const notified = await tellOwner({
+    supabase,
+    userId: id,
     email,
     fullName: profile.full_name,
     listingName,

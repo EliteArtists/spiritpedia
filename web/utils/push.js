@@ -121,11 +121,12 @@ export async function sendToToken(token, notification, { config, fetchImpl = fet
 }
 
 // Does this account want this category? No preferences row means the defaults:
-// general on, IAM affirmations off.
+// general (Account updates, from app 1.0.1) on; discoveries and IAM
+// affirmations off (migration 0032).
 export async function wantsCategory(supabase, userId, category) {
   const { data } = await supabase
     .from('notification_preferences')
-    .select('general, iam_affirmations')
+    .select('general, discoveries, iam_affirmations')
     .eq('user_id', userId)
     .maybeSingle();
   if (!data) return category === 'general';

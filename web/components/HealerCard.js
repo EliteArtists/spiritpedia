@@ -62,7 +62,9 @@ function TierTooltip({ tier, children, placement = 'above' }) {
 // image_urls — HeroImageRotator's pattern, stacked frames fading in place. With
 // one image (or none) it renders the static card exactly as before, so the prop
 // is safe to pass for a whole shelf.
-export default function HealerCard({ healer, portrait, heightClass = 'h-72', rotate = false }) {
+//
+// `distance` ("320 km away") is a line under the name, for "Closest to you".
+export default function HealerCard({ healer, portrait, heightClass = 'h-72', rotate = false, distance }) {
   // Saved by slug — the same key the app and user_favourites use.
   const [favorited, toggleSaved] = useFavorite(FAVORITE_KEYS.healers, healer.healer_slug);
   const imgSrc = portrait || (Array.isArray(healer.image_urls) && healer.image_urls[0]) || null;
@@ -145,7 +147,10 @@ export default function HealerCard({ healer, portrait, heightClass = 'h-72', rot
             isAscended ? 'justify-end text-right' : 'justify-between'
           }`}
         >
-          <h3 className="text-white font-bold text-lg drop-shadow-sm">{healer.name}</h3>
+          <div className="min-w-0">
+            <h3 className="text-white font-bold text-lg drop-shadow-sm">{healer.name}</h3>
+            {distance && <p className="text-sm text-gray-300 drop-shadow-sm">{distance}</p>}
+          </div>
           <ListingBadges listing={healer} kinds={['type']} className="justify-end shrink-0" />
         </div>
       </a>

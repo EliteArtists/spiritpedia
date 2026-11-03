@@ -11,8 +11,10 @@ import CookieSettingsLink from '@/components/CookieSettingsLink';
 // synced saved items, app notifications (Firebase Cloud Messaging), and the
 // subjects chosen and hidden in the app (explicit consent), and the explorer
 // introduction and personal discovery emails (legitimate interest, with an
-// unsubscribe in every one).
-const PRIVACY_UPDATED = '21 October 2026';
+// unsubscribe in every one), and the app 1.0.1 notification package
+// (Discoveries and Account updates, the opening time and time zone offset,
+// the first-visit note and the record of what was sent; migration 0032).
+const PRIVACY_UPDATED = '3 November 2026';
 
 export const metadata = buildMetadata({
   title: 'Privacy Policy',
@@ -103,8 +105,25 @@ export default function PrivacyPage() {
             whether it is an iPhone or Android phone, and the app version, linked to your account.
           </li>
           <li>
-            Which kinds of notification you want (for example, general updates). You can change
-            this in the app at any time.
+            Which kinds of notification you want: Discoveries (off unless you turn it on) and
+            Account updates (for example, when your review is approved). You can change these in
+            the app at any time.
+          </li>
+          <li>
+            So notifications arrive at a sensible hour where you are, the app tells us when you
+            last opened it and your phone&apos;s time zone (how many hours ahead of or behind UTC
+            it is), not your location. It also notes once when you first spend a few minutes in
+            the app, save something or search, so a single welcome can follow the next evening.
+          </li>
+          <li>
+            Discoveries are chosen from the teachers you saved, the subjects you chose in Tailor
+            Spiritpedia and, only if you turned on &ldquo;Let Spiritpedia learn from what I
+            explore&rdquo;, what you have explored. Never from the words you searched, and never
+            from anything you asked never to see.
+          </li>
+          <li>
+            We keep a record of each notification sent and what it pointed to (not its wording),
+            so you never get more than one discovery a week or the same suggestion twice.
           </li>
           <li>
             Notifications are delivered through Google Firebase Cloud Messaging, which handles the
@@ -356,7 +375,8 @@ export default function PrivacyPage() {
           <li>
             Notification tokens — until you turn notifications off, sign out of the app, delete your
             account, or the token stops working (for example, after the app is removed). Your
-            notification choices are kept with your account until you delete it.
+            notification choices, when you last opened the app, your time zone and the record of
+            notifications sent are kept with your account until you delete it.
           </li>
           <li>
             Your chosen and hidden subjects — until you change or clear them (Account → Tailor

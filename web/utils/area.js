@@ -99,3 +99,34 @@ export function nearYou(practitioners, area, places) {
     online: practitioners.filter((h) => offersOnline(h) && !shown.has(h.id)),
   };
 }
+
+// How many "Closest to you" shows when nobody is within NEAR_RADIUS_KM.
+export const CLOSEST_COUNT = 10;
+
+// Countries whose people think in miles; everyone else gets kilometres. Read
+// from the area's own country (places.country), never the browser's locale.
+const MILE_COUNTRIES = new Set(['United Kingdom', 'United States', 'Liberia', 'Myanmar']);
+export const distanceUnitFor = (country) => (MILE_COUNTRIES.has(country) ? 'miles' : 'km');
+
+// "320 km away", "1,240 km away", "200 miles away": whole numbers, for the
+// unit of the area's country.
+export function distanceLabel(km, country) {
+  const unit = distanceUnitFor(country);
+  const n = Math.max(1, Math.round(unit === 'miles' ? km / 1.609344 : km));
+  return `${n.toLocaleString('en-GB')} ${unit === 'miles' ? (n === 1 ? 'mile' : 'miles') : 'km'} away`;
+}
+
+// "Closest to you", for when nobody is within NEAR_RADIUS_KM of the area: the
+// CLOSEST_COUNT practitioners nearest it, town centre to town centre, nearest
+// first, each with its distance. Practitioners with no town can't be placed,
+// so they are left out. Empty when nobody in the list has a town.
+export function closestTo(practitioners, area, places, count = CLOSEST_COUNT) {
+  if (!area) return [];
+  return practitioners
+    .map((h, i) => ({ h, i, town: places[h.place_id] }))
+    .filter(({ town }) => town)
+    .map(({ h, i, town }) => ({ h, i, km: distanceKm(area, town) }))
+    .sort((a, b) => a.km - b.km || a.i - b.i)
+    .slice(0, count)
+    .map(({ h, km }) => ({ healer: h, km }));
+}

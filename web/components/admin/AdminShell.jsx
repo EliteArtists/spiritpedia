@@ -21,6 +21,7 @@ const NAV = [
   { href: '/admin/reviews', label: 'Reviews', icon: 'reviews' },
   { href: '/admin/flags', label: 'Reports', icon: 'flags' },
   { href: '/admin/mailshots', label: 'Mailshots', icon: 'mailshots' },
+  { href: '/admin/notifications', label: 'Notifications', icon: 'bell' },
   { href: '/admin/activity', label: 'Activity', icon: 'analytics' },
   { href: '/admin/ingestion', label: 'Ingestion', icon: 'ingestion' },
 ];
