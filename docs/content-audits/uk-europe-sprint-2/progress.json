@@ -1,0 +1,9 @@
+{
+ "job": "UK & Europe sprint 2 (Sprint A2, city first): about 30 new teachers on dev whose published base is in Birmingham, Manchester, Leeds, Liverpool, Sheffield, Nottingham, Glasgow, Edinburgh, Cork, then Berlin, Paris, Lisbon, Copenhagen (owner, 3 Nov 2026)",
+ "started": "2026-11-03",
+ "rules": "docs/content-audits/uk-europe-sprint-2/BRIEF.md",
+ "target": 30,
+ "sources": "City first: web search by city, Insight Timer profiles found by web search per city, the teachers' own sites, local centres' and studios' own teacher pages. Ranks 201-249 Birmingham, Nottingham, Sheffield; 301-349 Manchester, Leeds, Liverpool; 401-449 Glasgow, Edinburgh, Cork; 501-549 Berlin, Copenhagen; 601-649 Paris, Lisbon. BWY and UK Reiki Federation directories not used (terms forbid reuse); sites whose robots.txt blocks Claude never fetched.",
+ "queue": [],
+ "updated": "2026-11-03T17:47:09.911Z"
+}
