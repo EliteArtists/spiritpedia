@@ -64,6 +64,12 @@ abstract class ContentRepository {
   /// A publisher's linked authors (healer ids), from publisher_healers.
   Future<List<int>> publisherAuthorIds(String publisherId);
 
+  /// Every hub_teachers row (migrations 0029, 0030): which teachers teach at
+  /// which school or on which organisation. Public read, like every content
+  /// table. One small row per link, for the cards' "8 teachers", Our
+  /// Teachers and "Teaches at…".
+  Future<List<HubLink>> hubLinks();
+
   /// My Library: the saved rows, by slug.
   Future<List<Book>> booksBySlugs(List<String> slugs);
   Future<List<Video>> videosBySlugs(List<String> slugs);
@@ -464,6 +470,19 @@ class SupabaseContentRepository implements ContentRepository {
         .select('healer_id')
         .eq('publisher_id', publisherId);
     return [for (final r in rows) (r['healer_id'] as num).toInt()];
+  }
+
+  @override
+  Future<List<HubLink>> hubLinks() async {
+    // Oldest link first, as the website reads them; the id breaks ties.
+    final rows = await _all(
+      () => _db
+          .from('hub_teachers')
+          .select('hub_id, teacher_id, role')
+          .order('created_at')
+          .order('id'),
+    );
+    return [for (final r in rows) HubLink.fromJson(r)];
   }
 
   Future<List<Map<String, dynamic>>> _bySlugs(

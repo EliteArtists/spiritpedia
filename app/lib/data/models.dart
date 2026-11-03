@@ -61,6 +61,7 @@ class Healer {
     this.twitterUrl,
     this.tiktokUrl,
     this.placeId,
+    this.foundedYear,
     this.official = false,
     this.verified = false,
   });
@@ -89,6 +90,7 @@ class Healer {
     twitterUrl: _text(j['twitter_url']),
     tiktokUrl: _text(j['tiktok_url']),
     placeId: (j['place_id'] as num?)?.toInt(),
+    foundedYear: (j['founded_year'] as num?)?.toInt(),
     official: j['official'] == true,
     verified: j['verified'] == true,
   );
@@ -119,6 +121,10 @@ class Healer {
   /// Their town (public.places, migration 0019), from city and country.
   final int? placeId;
 
+  /// "Founded 2008", for a school (healers.founded_year, migration 0029).
+  /// NULL for people.
+  final int? foundedYear;
+
   /// Spiritpedia's own profile (healers.official, set automatically since
   /// migration 0023): OFFICIAL and no tier, first among the channels.
   final bool official;
@@ -127,17 +133,31 @@ class Healer {
   /// migration 0023). Automatic.
   final bool verified;
 
-  /// Channels, apps and organisations get their own shelf; NULL is an
-  /// individual. The website's rule too (web/utils/listings.js).
+  /// Channels, apps, organisations and schools are not people: they are
+  /// listed apart from the teachers. NULL is an individual. The website's
+  /// rule too (web/utils/listings.js → isPlatform).
   bool get isPlatform =>
       entityType == 'channel' ||
       entityType == 'app' ||
-      entityType == 'organisation';
+      entityType == 'organisation' ||
+      entityType == 'school';
 
-  /// What a platform is, in a word: "App", "Organisation" or "Channel".
+  /// A school (migration 0029): its own Schools & Academies shelf on
+  /// Discover, rather than Explore These Channels, and its logo on the white
+  /// panel.
+  bool get isSchool => entityType == 'school';
+
+  /// A hub (0030): a school or an organisation, with teachers linked to it
+  /// in hub_teachers. "Our Teachers" on its page; "Teaches at…" or "Teaches
+  /// on…" on each teacher's.
+  bool get isHub => entityType == 'school' || entityType == 'organisation';
+
+  /// What a platform is, in a word: "App", "Organisation", "School" or
+  /// "Channel".
   String get platformLabel => switch (entityType) {
     'app' => 'App',
     'organisation' => 'Organisation',
+    'school' => 'School',
     _ => 'Channel',
   };
 
@@ -147,6 +167,31 @@ class Healer {
   /// availability_type.includes('Online')).
   bool get offersOnline =>
       availabilityType?.toLowerCase().contains('online') ?? false;
+}
+
+/// One row of hub_teachers (migrations 0029, 0030): [teacherId] teaches at
+/// or on the school or organisation [hubId], as its founder or an
+/// instructor. Both are healers' ids.
+class HubLink {
+  const HubLink({
+    required this.hubId,
+    required this.teacherId,
+    this.role = 'instructor',
+  });
+
+  factory HubLink.fromJson(Map<String, dynamic> j) => HubLink(
+    hubId: (j['hub_id'] as num).toInt(),
+    teacherId: (j['teacher_id'] as num).toInt(),
+    role: (j['role'] as String?) ?? 'instructor',
+  );
+
+  final int hubId;
+  final int teacherId;
+
+  /// 'founder' or 'instructor'.
+  final String role;
+
+  bool get isFounder => role == 'founder';
 }
 
 /// A town (public.places, migration 0019): the only kind of location

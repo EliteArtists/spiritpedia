@@ -272,6 +272,20 @@ class FakeAccountService implements AccountService {
   /// What the server answers the next welcome requests (then 'sent').
   final welcomeAnswers = <String?>[];
 
+  /// Offsets sent with each app opening, and first real visits noted.
+  final appOpens = <int>[];
+  int firstVisits = 0;
+
+  @override
+  Future<void> noteAppOpen(int utcOffsetMinutes) async {
+    appOpens.add(utcOffsetMinutes);
+  }
+
+  @override
+  Future<void> noteFirstVisit() async {
+    firstVisits++;
+  }
+
   @override
   Future<TailoringRow?> interests(String userId) async {
     if (offline) throw const AccountError('offline');

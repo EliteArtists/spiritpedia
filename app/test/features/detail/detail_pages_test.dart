@@ -3,6 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:spiritpedia/core/links/share.dart';
 import 'package:spiritpedia/core/retry.dart';
+import 'package:spiritpedia/data/models.dart';
 import 'package:spiritpedia/data/providers.dart';
 import 'package:spiritpedia/features/detail/book_screen.dart';
 import 'package:spiritpedia/features/detail/offering_screen.dart';
@@ -13,6 +14,7 @@ import 'package:spiritpedia/features/library/library_screen.dart';
 import 'package:spiritpedia/features/library/saved_items.dart';
 import 'package:spiritpedia/features/star/star_layer.dart';
 import 'package:spiritpedia/shared/widgets/cards.dart';
+import 'package:spiritpedia/shared/widgets/shelf.dart';
 import 'package:spiritpedia/features/detail/detail_widgets.dart';
 import 'package:spiritpedia/theme/theme.dart';
 import 'package:spiritpedia/features/account/account_providers.dart';
@@ -223,6 +225,114 @@ void main() {
     expect(find.text('Our Authors'), findsOneWidget);
     expect(find.text('Published Titles'), findsOneWidget);
     expect(find.text('The Power of Now'), findsOneWidget);
+  });
+
+  group('schools and organisations (README §17.11)', () {
+    FakeContentRepository repo() =>
+        FakeContentRepository(
+            extraHealers: [
+              FakeContentRepository.healer(
+                20,
+                'white-tiger-qigong',
+                'White Tiger Qigong',
+                'luminary',
+                entity: 'school',
+                founded: 2008,
+                website: 'whitetigerqigong.com',
+              ),
+              FakeContentRepository.healer(
+                21,
+                'the-shift-network',
+                'The Shift Network',
+                'superhero',
+                entity: 'organisation',
+              ),
+              FakeContentRepository.healer(
+                22,
+                'tevia-feng',
+                'Tevia Feng',
+                null,
+              ),
+            ],
+          )
+          ..hubs = const [
+            // Wim Hof (a Superhero) teaches there; Tevia Feng founded it.
+            HubLink(hubId: 20, teacherId: 2),
+            HubLink(hubId: 20, teacherId: 22, role: 'founder'),
+            HubLink(hubId: 21, teacherId: 22),
+          ];
+
+    testWidgets("a school's page: its logo on the white panel, Founded and "
+        'its website, then Our Teachers, founder first', (tester) async {
+      await pump(
+        tester,
+        const TeacherScreen(slug: 'white-tiger-qigong'),
+        repo: repo(),
+      );
+      expect(find.byType(PublisherLogo), findsOneWidget);
+      expect(find.byType(PageView), findsNothing);
+      expect(find.text('SCHOOL'), findsOneWidget);
+      expect(find.text('Founded 2008'), findsOneWidget);
+      expect(find.text('Visit website →'), findsOneWidget);
+      expect(find.text('Our Teachers'), findsOneWidget);
+      expect(find.text('TEACH WITH US'), findsOneWidget);
+      final shelf = find.ancestor(
+        of: find.text('Our Teachers'),
+        matching: find.byType(Shelf),
+      );
+      expect(
+        tester
+            .widgetList<HealerCard>(
+              find.descendant(of: shelf, matching: find.byType(HealerCard)),
+            )
+            .map((c) => c.healer.slug),
+        ['tevia-feng', 'wim-hof'],
+      );
+      // Our Teachers comes first, straight under the school's own words.
+      expect(
+        tester.getTopLeft(find.text('Our Teachers')).dy,
+        greaterThan(tester.getTopLeft(find.text('Visit website →')).dy),
+      );
+    });
+
+    testWidgets("an organisation's page keeps its own picture, and lists Our "
+        'Teachers', (tester) async {
+      await pump(
+        tester,
+        const TeacherScreen(slug: 'the-shift-network'),
+        repo: repo(),
+      );
+      expect(find.byType(PublisherLogo), findsNothing);
+      expect(find.text('ORGANISATION'), findsOneWidget);
+      expect(find.textContaining('Founded'), findsNothing);
+      expect(find.text('Our Teachers'), findsOneWidget);
+    });
+
+    testWidgets("a teacher's page names the hubs: founder of a school, "
+        'teaches on an organisation', (tester) async {
+      await pump(tester, const TeacherScreen(slug: 'tevia-feng'), repo: repo());
+      expect(
+        find.text(
+          'Founder of White Tiger Qigong and teaches on The Shift Network',
+          findRichText: true,
+        ),
+        findsOneWidget,
+      );
+      expect(find.text('Our Teachers'), findsNothing);
+    });
+
+    testWidgets('a teacher with no hubs has no line', (tester) async {
+      await pump(
+        tester,
+        const TeacherScreen(slug: 'eckhart-tolle'),
+        repo: repo(),
+      );
+      expect(find.textContaining('Teaches', findRichText: true), findsNothing);
+      expect(
+        find.textContaining('Founder of', findRichText: true),
+        findsNothing,
+      );
+    });
   });
 
   group('co-authors (migration 0027)', () {

@@ -26,24 +26,29 @@ The list to pick up from. Each points to where the detail lives.
      never uploaded; their files were deleted on 28 Oct.
    - **Android:** the closed test is live with 15 testers; the application
      for production is due about **9–10 November 2026**. **Build 25**
-     (`app/build/android-release/Spiritpedia-1.0.0-25.aab`) is built but not
-     yet uploaded; 26 and 27 were iOS only, so the next Android build should
-     be 27 or later (the Gradle cache was cleared on 28 Oct: the first Android
+     (`app/build/android-release/Spiritpedia-1.0.0-25.aab`) was uploaded to
+     the closed test on **31 Oct 2026** as its first update. 26 and 27 were
+     iOS only (the Gradle cache was cleared on 28 Oct: the first Android
      build downloads about 3.5 GB again).
-   - **The plan:** **31 Oct 2026** (Day 5 of the closed test): upload
-     Android build 25 to the closed test as its first update. **About 4 Nov
-     2026:** the push notification build, **1.0.1**, for both stores. Then the
-     first content batch: **12 Reiki practitioners** (§18, batch mode).
+   - **The plan (owner, 3 Nov 2026):** **1.0.1 (build 28, `1.0.1+28`)** for
+     both stores = build 27 + push notifications (job #4) + Near You
+     "Closest to you" (job #12) + the hubs app side (job #10). Shown on the
+     simulator before it is built; build 28 goes to TestFlight and the Google
+     closed test after the owner's OK; 1.0.1 is submitted to Apple once 1.0 is
+     approved. Build map: `docs/reports/2026-11-03-build-map-before-1.0.1.md`.
+     Then the first content batch: **12 Reiki practitioners** (§18, batch mode).
 2. **Reviewer demo account: only if Apple asks.** It doesn't exist and isn't
    needed unless a reviewer asks for one. If it is ever built, it must not
    weaken sign-in for anyone else (codes are otherwise emailed; §14).
 3. **Next.js security upgrade.** `web/package.json` asks for `^16.2.11`;
    16.4.0 is installed and 16.4.3 is the latest. Upgrade, run `npm test` and a
    local build, then push (a `web/` push deploys).
-4. **Push notification package.** Ross is designing it. Spiritpedia's
-   notifications are **invitations only, never reminders of things undone**
-   (no "you haven't…", no streaks). The welcome tray redesign (§16.1) belongs
-   with it.
+4. **Push notification package: built for 1.0.1** (owner's spec, 3 Nov
+   2026; §9.11, §10.11). **Invitations only, never reminders of things
+   undone.** Waiting for: migration **0032** (owner, dev then live), the
+   website push (it deploys), `supabase/scheduled/push-hourly.sql` on live,
+   and build 28. Still open: the welcome tray redesign (§16.1), and course
+   and retreat reminders (later).
 5. **Search.** In this order: **positive suggestions first** (what helps,
    before anything about the difficulty); **strict practice subjects** (a
    practice only under subjects it truly belongs to); then **search by
@@ -60,8 +65,8 @@ The list to pick up from. Each points to where the detail lives.
    gentle **"better on the app"** prompts.
 9. **Future companion apps:** **I AM by Spiritpedia** first, then
    **Consciousness by Spiritpedia**.
-10. **Hubs: the app side** (the website is done, §17.11). The build after
-    1.0.1: a school's page, Our Teachers on schools and organisations,
+10. **Hubs: the app side** (the website is done, §17.11). **Built for 1.0.1**
+    (owner, 3 Nov 2026: a must for launch; build 28, §10.1): a school's page, Our Teachers on schools and organisations,
     "Teaches at…" / "Teaches on…" and the Schools & Academies shelf in the
     app. Also **Isaac Osborne and Natalie Ramon** for White Tiger once a photo
     is confirmed. **App check first:** the current app doesn't know the
@@ -71,9 +76,9 @@ The list to pick up from. Each points to where the detail lives.
 11. **Sign-in history in the admin** (plan first; not built): per person,
     when they signed in, from Supabase's auth logs, so activity can be seen
     without copying codes.
-12. **Near You is never empty** (plan first; not built). If nobody is in the
-    user's area, show the closest practitioners with their distance under a
-    **"Closest to you"** heading. App 1.0.1 and website.
+12. **Near You is never empty: built** (app 1.0.1 and the website, §10.8;
+    plan `docs/reports/2026-11-03-near-you-plan.md`). The website half goes
+    live with the next `web/` push.
 13. **Hub queue** (§18.7), in order:
     - **The Shift Network:** the first 100 are done (sprint 1, ranks 1–116;
       `docs/content-audits/shift-sprint-1/`). The rest of the 477 after
@@ -102,7 +107,7 @@ The list to pick up from. Each points to where the detail lives.
       Commune, Kripalu, Esalen, 1440). The website's **Retreat Centres &
       Platforms** shelf ("Discover Where They Teach") is live (1 Nov 2026,
       `web/utils/listings.js` → `splitOrganisations`, minimum 5); the app's
-      goes in with the hubs app build
+      goes in with the hubs app side in 1.0.1
       (`docs/reports/2026-11-01-organisations-shelf-live.md`).
     - **Megan SolarGlow stays out** (conspiracy content).
     - **Omega Institute and Commune:** both hubs, 20 linked teachers and
@@ -161,7 +166,7 @@ The list to pick up from. Each points to where the detail lives.
     list (§17.3, `SUBJECT_TAXONOMY`, the app's mirror); tag existing items
     that fit (e.g. Davina MacKail from the Shift Network batch). The energy
     and intention side only, not interior design or wealth charms.
-19. **Push ideas** (for the push notification build, #4):
+19. **Push ideas** (folded into the package, #4, on 3 Nov 2026):
     - **"How are you feeling today, {name}?"** Only for users who gave their
       name. Tap opens the search bar. Can be the first return invitation (10
       days away). The admin push composer gets a `{name}` placeholder with a
@@ -296,8 +301,8 @@ how-to is `docs/admin-guide.md`; the personalisation rules are
 | :--- | :--- |
 | **Website** | Live at **https://www.spiritpedia.co** (Next.js on Vercel). Every push that changes `web/` deploys to production |
 | **App (iOS)** | Flutter, iPhone and iPad. **1.0** is in Apple review. **1.0.0 (27)** is on TestFlight (`app/build/ios-release/Spiritpedia-1.0.0-27.ipa`; archive in Xcode's Archives, `2026-10-28/Spiritpedia 1.0.0 (27).xcarchive`, 28 Oct 2026). Build 24's archive (`2026-10-22/Runner 3.xcarchive`) is kept while 1.0 is in review; 25 and 26 were never uploaded and their files were deleted on 28 Oct |
-| **App (Android)** | The same code. The **closed test is live with 15 testers**; the production application is due about 9–10 Nov 2026 (§10.15, §12.8, `docs/google-play.md`). **1.0.0 (25)** is built (version code 25, `app/build/android-release/Spiritpedia-1.0.0-25.aab`) and **not yet uploaded**. Not yet in production |
-| **Database** | Supabase. Two projects: **live** (`uzmvcgew…`) and **dev** (`khtpbnof…`). Migrations `0000`–`0030` are on both |
+| **App (Android)** | The same code. The **closed test is live with 15 testers**; the production application is due about 9–10 Nov 2026 (§10.15, §12.8, `docs/google-play.md`). **1.0.0 (25)** (version code 25, `app/build/android-release/Spiritpedia-1.0.0-25.aab`) has been in the closed test since **31 Oct 2026**. Not yet in production |
+| **Database** | Supabase. Two projects: **live** (`uzmvcgew…`) and **dev** (`khtpbnof…`). Migrations `0000`–`0031` are on both; **`0032`** (the push package) is for the owner to run, dev first |
 | **Push** | Firebase Cloud Messaging only, with an APNs key. Moved on 22 Oct 2026 to two Firebase projects owned by **love@spiritpedia.co** (live `spiritpedia-ad62b`, dev `spiritpedia-dev-5e4d5`); checked end to end on iPhone, iPad and Android |
 | **Emails** | The approved copy of 21–22 Oct 2026 is live (§9.7). The outreach journey is eight emails, redirected to a test inbox by `JOURNEY_TEST_EMAIL` until the solicitor has checked cold email; no journey is running. Day 4 is live. Personal discovery editions are built but **off** until `DISCOVERY_EDITIONS=on` is set on Vercel (§9.7a) |
 | **Repository** | `https://github.com/EliteArtists/spiritpedia`, branch `main` only. No staging environment, no feature flags |
@@ -601,7 +606,7 @@ editor **on dev first, then live**, by the project owner. Dev is checked with
 throwaway users created through the Admin API (no email) and deleted
 afterwards; live is checked read-only.
 
-### 8.1 0012–0030 (on dev and live)
+### 8.1 0012–0032 (0012–0031 on dev and live; 0032 to run)
 
 **`0012_favourites_slugs`** — data only, in one transaction.
 - Rewrites legacy `user_favourites.content_slug` values (numeric ids for books,
@@ -814,6 +819,27 @@ with `school_id` → `hub_id`, and its keys, index and policy renamed to match
 website embeds through). Rows, grants and the public-read policy unchanged.
 Safe to run again. On live, push the website straight after running it: until
 then the old code asks for `school_teachers` and teacher lines are missing.
+
+**`0031_shared_offering_links`** (1 Nov 2026; on dev and live 2 Nov). The
+unique offering URL across the whole table (`courses_url_unique`) became one
+per listing (`courses_url_healer_unique`, `course_url, healer_id`), so the
+same offering can sit on every teacher who leads it (§18.4).
+
+**`0032_push_package`** (3 Nov 2026; for app 1.0.1, owner to run dev then
+live). The push notification package (§9.11, §10.11):
+- `notification_preferences.discoveries` (default **off**); `general` is now
+  Account updates (builds 24–27, which write `general`, keep working).
+- `push_state` (per account: `utc_offset_minutes`, `last_opened_at`,
+  `first_visit_at`), written only by `note_app_open(p_utc_offset_minutes)`
+  and `note_first_visit()` (definer, signed-in, caller's own row); the member
+  may read their own row.
+- `push_sends` (kind, category `discovery`/`account`, `refs` — references,
+  never text — status `queued`/`sent`/`failed`/`skipped`, `payload` and
+  `send_after` while queued): the weekly limit, repeat rules, once-only
+  welcome (unique partial index) and the quiet-hours queue. Service role only.
+No existing policy loosened. Safe to run again. Then, on live only,
+`supabase/scheduled/push-hourly.sql` (pg_cron + pg_net, the secret in Vault)
+calls `/api/cron/push` at five past every hour.
 
 ### 8.2 0000–0011
 
@@ -1211,6 +1237,7 @@ a manual run). **503 means the secret is unset; 401 means it's wrong.**
 | `/api/cron/pending-signups` | 06:00 | Deletes `pending_user_types` older than 24 h (`?dry=1` counts only) |
 | `/api/cron/broken-images` | 07:00 | Checks a seventh of the book, offering and free resource images and video thumbnails, plus every portrait, and records the run (§17.8). `?dry=1`, `?shard=N` (neither is recorded) |
 | `/api/cron/journey-emails` | 08:00 | The outreach journey (C2–C8) |
+| `/api/cron/push` | **hourly, :05** | **Not in `vercel.json`**: called by Supabase pg_cron on live (`supabase/scheduled/push-hourly.sql`; Hobby allows daily crons only). The push package's run (§9.11): the quiet-hours queue, then the discovery or welcome due for anyone whose local time is 10:00 or 19:00. `?dry=1` counts only. On dev, run by hand: `curl -H "x-cron-secret: …" localhost:3000/api/cron/push?dry=1` |
 | `/api/cron/account-emails` | 09:00 | Day 4; discovery edition 1 at Day 10 (only with `DISCOVERY_EDITIONS=on`); the practitioner welcome a day after sign-up for anyone who neither claimed nor chose (and any welcome whose send failed). Once each per account (`email_sends`) |
 
 `vercel.json` must stay in `web/` and Vercel's Root Directory must be `web`.
@@ -1228,6 +1255,64 @@ with a status (`sent`, `already_sent`, `no_devices`, `opted_out`,
 goes to **every device the account has at that moment**; a device turned on
 later gets nothing. Admin → push-test sends a test to every device of one
 account — the way to test a second device.
+
+**The push package (app 1.0.1, owner's spec of 3 Nov 2026; migration
+`0032`).** Invitations only, never reminders of things undone ("you
+haven't…", streaks). The rules are pure functions in `utils/pushRules.js`
+(tested in `pushRules.test.mjs`); `utils/pushRun.js` loads, sends and records.
+
+- **Two switches.** **Discoveries** (`discoveries`, off until turned on in the
+  app) and **Account updates** (`general`, on). IAM is not in 1.0.1.
+- **Discoveries**, at most **one a week** (counting the welcome and admin
+  messages), none within **48 hours of a discovery email** (an edition or
+  Day 4) and never repeating its picks, nothing recommended in the last 90
+  days, nothing saved, nothing under Never show, no title that reads as a
+  health claim. Sent at **10:00 their time**, first match wins:
+  1. **Invitations back** (only when away, and only with a strong
+     recommendation; otherwise nothing). 10 days without opening the app:
+     with a name, "How are you feeling today, {name}?" (opens the search);
+     without, "I've picked out [item] for you. A little [subject] to explore
+     at your own pace." 14 days after that, if still away, a different item:
+     "Shall we discover something new? [Item] offers another way into
+     [subject]. I thought you might enjoy exploring it." Then nothing until
+     they come back.
+  2. **New from someone they saved** (a listing's videos, books including
+     co-written ones, offerings and free resources added since the save,
+     within 14 days), grouped: "Something new on Spiritpedia from
+     [teacher]". One item opens it; several open the teacher's page.
+  3. **A free resource** for their strong subjects: "I've found a free
+     [subject] resource you may enjoy. Shall we explore?"
+  **Strong subjects** are More of, then learned ones only with "Let
+  Spiritpedia learn" on, never `death-the-afterlife`, `nde` or
+  `mediumship-spirits` from learning (`TENDER_SUBJECTS`). No search words
+  are used anywhere, so a crisis or distressing search can never be named.
+- **The welcome** (once, under Account updates, counting toward the limit):
+  "It was lovely getting to know you, {name}. I'm here whenever you need me."
+  (no name: without it), at **19:00 their time** the day after the first
+  real visit (about 3 minutes, a save or a feeling search), within 3 days. It
+  doesn't name a subject. The existing "Testing, testing…" note at turning
+  on is unchanged.
+- **Account updates** (not limited): review approved ("Your review is
+  live."; opens the item), listing approved ("Your listing is live."; opens
+  it), claim approved ("Your listing is ready to manage."; opens My Account),
+  from `/api/admin/reviews`, `/api/admin/practitioner` and
+  `/api/admin/claim-request`. **Declines are email only; nothing is pushed
+  for "received".** An instant (verified) claim gets its email only: the
+  person is there when it happens.
+- **Time.** The app sends its UTC offset at each opening (`push_state`). In
+  **quiet hours (21:00–08:00 their time)** an account update or admin message
+  is queued (`push_sends.status = 'queued'`) and goes at 08:00. Nobody with
+  an unknown offset gets a discovery or the welcome.
+- **Already looking at it:** the app shows notifications that arrive while
+  it's open itself and stays quiet when the screen it opens is on top
+  (§10.11).
+- **Admin → Notifications** (`/admin/notifications`,
+  `components/admin/PushComposer.jsx`, `POST /api/admin/push-compose`):
+  title, message with `{name}` and a required no-name version, an in-app
+  path; **Send test** (one account, at once, unrecorded), **Who would get
+  it?** (counts), **Send** (everyone with Discoveries on, skipping anyone who
+  had a discovery this week; quiet hours wait for 08:00). Below, the last 7
+  days' sends by kind (counts only). Course and retreat reminders come later.
 
 ### 9.12 Analytics, consent and legal
 
@@ -1287,10 +1372,11 @@ detail pages, email-code sign-in with Library sync and account deletion, push.
 | 21 | 18 Oct | Build 20, plus: the tier badge top left on cards (type bottom right); the top two tiers' tips reworded |
 | 22 | 22 Oct | Everything since 21: the star's first callout "Tap me anytime to come home. Press and hold to open your Library." (checked on iPhone SE and on iPad in portrait and landscape); the explorer welcome sent from the website when the account is created (not on "I'm exploring"); "review received" only for a new review, never an edit; the **Discovery emails** switch on My Account (explorers who never applied); OFFICIAL with no ✦ (badge, tip, search line). 307 tests |
 | 23 | 22 Oct | **On TestFlight.** Firebase moved to the love@spiritpedia.co projects (`spiritpedia-ad62b` / `spiritpedia-dev-5e4d5`). Push checked on iPhone and iPad |
-| 24 | 22 Oct | *Built, never uploaded (replaced by 25; its files were cleared with the build folders on 27 Oct, the iOS archive kept).* The welcome notification is asked for until the server confirms it (three tries, then at each start; build 23's iPad never sent the request); "Turn off notifications on this phone" removes the token it registered (it used to fail on the iPad); Account type shows the type set at approval; **Android**: release signing with the Play upload key, approximate-location permission, a notification arriving while the app is open shows as an in-app note with **Open**. 316 tests |
-| 25 | 27 Oct | *iOS: built, never uploaded (replaced by 26; IPA and archive deleted 28 Oct). Android: the current bundle, not yet uploaded.* **For You** as a pill (For You · View All · the pillars): a whole page of their More of subjects on Discover, Videos and Books, topped up from related subjects when they chose very few, "Tailored for you: … · Edit"; anyone with subjects lands on it, anyone without on View All; with none, For You opens Tailor ("Pick a few subjects and For You fills with them."); their subjects starred (the app's gold star image) in the pillar lists; the old For You shelf and its rotation removed. **Publishing Houses** at the top of Books, new presses with no authors included. Publishers' logos on white panels and one-line meta; the medical-care note on homeopathy; **co-written books** (`0027`). 333 tests |
+| 24 | 22 Oct | **In Apple review (1.0) and the first Google closed test build** (its files were cleared with the build folders on 27 Oct; the iOS archive `2026-10-22/Runner 3.xcarchive` is kept while 1.0 is in review). The welcome notification is asked for until the server confirms it (three tries, then at each start; build 23's iPad never sent the request); "Turn off notifications on this phone" removes the token it registered (it used to fail on the iPad); Account type shows the type set at approval; **Android**: release signing with the Play upload key, approximate-location permission, a notification arriving while the app is open shows as an in-app note with **Open**. 316 tests |
+| 25 | 27 Oct | *iOS: built, never uploaded (replaced by 26; IPA and archive deleted 28 Oct). Android: in the Google closed test since 31 Oct 2026.* **For You** as a pill (For You · View All · the pillars): a whole page of their More of subjects on Discover, Videos and Books, topped up from related subjects when they chose very few, "Tailored for you: … · Edit"; anyone with subjects lands on it, anyone without on View All; with none, For You opens Tailor ("Pick a few subjects and For You fills with them."); their subjects starred (the app's gold star image) in the pillar lists; the old For You shelf and its rotation removed. **Publishing Houses** at the top of Books, new presses with no authors included. Publishers' logos on white panels and one-line meta; the medical-care note on homeopathy; **co-written books** (`0027`). 333 tests |
 | 26 | 28 Oct | *iOS only; built, never uploaded (replaced by 27; IPA and archive deleted 28 Oct).* For You with nothing chosen opens the same Tailor Spiritpedia page as Account, with the same star words ("Entirely optional, and never shared. Your choices only shape what you see in Spiritpedia. Change them anytime.") and the same "Don’t show me again"; Tailor's sections now run More of · Let Spiritpedia learn from what I explore · Never show · Your Area; Your Area unset reads "Do you want me to show you practitioners in your area?" with **Set Your Area**; clearing every choice goes quietly back to View All (no "back to how everyone sees it" message). 334 tests. Not checked in the simulator (skipped at the owner's request) |
 | **27** | 28 Oct | **On TestFlight** (iOS only; Android stays at 25). From For You the star always says the Tailor intro, even after "Don’t show me again" in Account. **"Let Spiritpedia learn from what I explore" signed out:** greyed, with "Sign in so I can learn from what you explore." and a **Sign in** link that signs in in a sheet and stays on Tailor (the switch looked dead on the owner's signed-out iPad and Mac; it was never an iPad layout fault). The star's words on Tailor move on as soon as the page is scrolled (whatever scrolled under them could not be tapped for a few seconds). 336 tests |
+| **28 (1.0.1)** | — | *In progress (3 Nov 2026); both stores; shown on the simulator before it is built.* The **push package** (two switches, Discoveries and Account updates; openings and the first real visit; in-app notes on both platforms, quiet about the screen already open; §9.11, §10.11); **Closest to you** (§10.8); the **hubs app side** (Schools & Academies and Retreat Centres & Platforms shelves, school and organisation pages with Our Teachers, "Founder of / Teaches at / Teaches on" lines, SCHOOL and ORGANISATION labels; §17.11). Needs migration 0032 |
 
 ays one line (`publisherMeta`: "18 authors ·
   Founded 1984", or "Independent press"); the page puts the tier, founding
@@ -1446,6 +1532,14 @@ rank at level 1 (§10.6).
   "Type my city" searches `places`.
 - **Practitioners Near You:** in person within **50 km**, nearest first, then
   online practitioners from anywhere. With no area, everyone shows.
+- **Closest to you** (1.0.1 and the website, owner 3 Nov 2026; plan in
+  `docs/reports/2026-11-03-near-you-plan.md`): with an area and nobody within
+  50 km, the shelf is never empty. It becomes **Closest to you**: the 10
+  nearest practitioners with a town, each card saying how far ("320 km away";
+  miles when the area is in the UK, US, Liberia or Myanmar), with "Nobody near
+  {town} yet. These are the closest to you." Always the area they set, never
+  live GPS. `closestTo()` and `distanceLabel()` in `shelf_rules.dart` and
+  `web/utils/area.js`, tested on both sides.
 - The Always-location purpose string exists only because Apple's upload scan
   sees geolocator's unused code (ITMS-90683); the app never asks for Always.
 
@@ -1505,10 +1599,20 @@ Reports (§9.4). This is what App Store guideline 1.2 asks for.
   leaves the removal to the server.
 - At each start, a phone that said yes re-registers its current token (it
   rotates; this is also how phones moved to the new Firebase projects).
-- **While the app is open:** on iOS the system banner shows
-  (`showWhileOpen`); Android shows nothing for an app in front, so the app
-  shows the title and text as a note with **Open** (from build 24). Tapping a
-  notification opens its in-app path (`data.route`).
+- **While the app is open:** the app shows the title and text as a note with
+  **Open**, on both platforms (Android from build 24; iOS from 1.0.1, when
+  `showWhileOpen` turned the iPhone's own banner off), and **says nothing when
+  the screen it would open is already on top** (an approval seen where it
+  happened). Tapping a notification opens its in-app path (`data.route`).
+- **Two switches (1.0.1, migration 0032):** **Discoveries** (off until turned
+  on) and **Account updates** (`general`, on). The IAM row is gone (not in
+  1.0.1). What each sends: §9.11.
+- **Openings and the first real visit** (`push_presence.dart`, signed in
+  only): at start, sign-in and coming back after 30 minutes the app calls
+  `note_app_open` with the phone's UTC offset; about 3 minutes in the app
+  (paused in the background), a save or a settled feeling search calls
+  `note_first_visit` once per account from the phone. Nothing about what was
+  looked at.
 
 ### 10.12 iPad (build 19)
 
@@ -1966,7 +2070,7 @@ browser walk-throughs had typed made-up addresses into the sign-in form.
    token row should go and come back), check the welcome logic on a new
    account, and the signed-out learning switch's Sign in.
 2. **Google Play** (§10.15, §12.8, `docs/google-play.md`): the closed test
-   is live with 15 testers on build 24; build 25 goes to it on 31 Oct 2026;
+   is live with 15 testers; build 25 went to it on 31 Oct 2026;
    apply for production about 9–10 Nov 2026. A reviewer demo account only if
    Apple asks (top of this file).
 3. **Delete the old Firebase projects** under the Elite Artists Google
@@ -2332,7 +2436,7 @@ hubs: a channel is its creators' own brand. Hubs are what content sprints are
 built around (§18.7).
 
 Schools: organisations that train and certify teachers (migration `0029`; website
-since 30 Oct 2026, app in the build after 1.0.1). A school is a **listing**
+since 30 Oct 2026, app from 1.0.1). A school is a **listing**
 (`healers.entity_type = 'school'`), not its own table like publishers,
 because it owns content: its story, offerings, videos, reviews and saves all
 work as for any listing, and converting a Channel is one change of type.

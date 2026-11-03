@@ -71,11 +71,27 @@ class AccountProfile {
 
 /// Which kinds of notification the account wants (notification_preferences).
 /// No row = the defaults: general on, IAM affirmations off.
+/// The account's notification switches (notification_preferences,
+/// migrations 0014 and 0032). [general] is Account updates (approvals and the
+/// once-only welcome; on unless turned off; builds 24–27 called it General).
+/// [discoveries] is off until they turn it on.
 class NotificationPrefs {
-  const NotificationPrefs({this.general = true, this.iamAffirmations = false});
+  const NotificationPrefs({
+    this.general = true,
+    this.discoveries = false,
+    this.iamAffirmations = false,
+  });
 
   final bool general;
+  final bool discoveries;
   final bool iamAffirmations;
+
+  NotificationPrefs copyWith({bool? general, bool? discoveries}) =>
+      NotificationPrefs(
+        general: general ?? this.general,
+        discoveries: discoveries ?? this.discoveries,
+        iamAffirmations: iamAffirmations,
+      );
 }
 
 /// One saved item as user_favourites holds it.
@@ -161,6 +177,15 @@ abstract class AccountService {
   /// the server's status ('sent', 'already_sent', 'no_devices', 'opted_out',
   /// 'not_configured', 'failed'), or null if it gave no answer.
   Future<String?> sendWelcomePush();
+
+  /// The app opened (note_app_open, migration 0032): when, and the phone's
+  /// offset from UTC, so notifications keep to their hours and the
+  /// invitations back know when someone last came.
+  Future<void> noteAppOpen(int utcOffsetMinutes);
+
+  /// The first real visit (note_first_visit): about 3 minutes, a save or a
+  /// feeling search. The server keeps only the first.
+  Future<void> noteFirstVisit();
 
   /// The account's tailoring (user_interests, migrations 0017 and 0018):
   /// More of and Never show. Null if it never chose, which is not the same
@@ -458,12 +483,13 @@ class SupabaseAccountService implements AccountService {
   Future<NotificationPrefs> notificationPrefs(String userId) async {
     final row = await _db
         .from('notification_preferences')
-        .select('general, iam_affirmations')
+        .select('general, discoveries, iam_affirmations')
         .eq('user_id', userId)
         .maybeSingle();
     if (row == null) return const NotificationPrefs();
     return NotificationPrefs(
       general: row['general'] as bool? ?? true,
+      discoveries: row['discoveries'] as bool? ?? false,
       iamAffirmations: row['iam_affirmations'] as bool? ?? false,
     );
   }
@@ -476,6 +502,7 @@ class SupabaseAccountService implements AccountService {
     await _db.from('notification_preferences').upsert({
       'user_id': userId,
       'general': prefs.general,
+      'discoveries': prefs.discoveries,
       'iam_affirmations': prefs.iamAffirmations,
       'updated_at': DateTime.now().toUtc().toIso8601String(),
     });
@@ -488,6 +515,15 @@ class SupabaseAccountService implements AccountService {
     final body = jsonDecode(res.body);
     return body is Map ? body['status'] as String? : null;
   }
+
+  @override
+  Future<void> noteAppOpen(int utcOffsetMinutes) => _db.rpc(
+    'note_app_open',
+    params: {'p_utc_offset_minutes': utcOffsetMinutes},
+  );
+
+  @override
+  Future<void> noteFirstVisit() => _db.rpc('note_first_visit');
 
   @override
   Future<bool?> discoveryEmailsOn() async {

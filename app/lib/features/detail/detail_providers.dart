@@ -2,6 +2,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../data/models.dart';
 import '../../data/providers.dart';
+import '../../data/shelf_rules.dart';
 
 /// A teacher's page: the healer comes from the already-loaded directory; the
 /// rest is fetched for this page only.
@@ -12,6 +13,8 @@ class TeacherContent {
     required this.books,
     required this.offerings,
     required this.freeResources,
+    this.teachers = const [],
+    this.hubs = const [],
   });
 
   final Healer healer;
@@ -19,6 +22,13 @@ class TeacherContent {
   final List<Book> books;
   final List<Offering> offerings;
   final List<FreeResource> freeResources;
+
+  /// A school's or organisation's Our Teachers, founder first ([ourTeachers]).
+  final List<Healer> teachers;
+
+  /// A teacher's schools and organisations, for "Founder of…", "Teaches
+  /// at…" and "Teaches on…" under their name.
+  final List<({String role, Healer hub})> hubs;
 }
 
 final teacherProvider = FutureProvider.family<TeacherContent?, String>((
@@ -29,14 +39,34 @@ final teacherProvider = FutureProvider.family<TeacherContent?, String>((
   final healer = (await ref.watch(healerDirectoryProvider.future)).bySlug(slug);
   if (healer == null) return null;
   final repo = ref.watch(contentRepositoryProvider);
-  final (videos, books, offerings, freeResources) = await (
+  final directory = await ref.watch(healerDirectoryProvider.future);
+  final (videos, books, offerings, freeResources, links) = await (
     repo.videosByHealer(slug),
     repo.booksByHealers([slug]),
     repo.liveOfferingsForHealer(healer.id),
     repo.liveFreeResourcesForHealer(healer.id),
+    ref.watch(hubLinksProvider.future),
   ).wait;
+  // Hubs (migrations 0029, 0030): a school or an organisation lists its
+  // teachers; a teacher shows the hubs they teach at or on.
+  final teachers = healer.isHub
+      ? ourTeachers([
+          for (final l in links)
+            if (l.hubId == healer.id)
+              if (directory.byId(l.teacherId) case final teacher?)
+                (role: l.role, teacher: teacher),
+        ])
+      : const <Healer>[];
+  final hubs = healer.isHub
+      ? const <({String role, Healer hub})>[]
+      : [
+          for (final l in links)
+            if (l.teacherId == healer.id)
+              if (directory.byId(l.hubId) case final hub?)
+                (role: l.role, hub: hub),
+        ];
   // The teacher's page opens whatever is hidden; their items follow Never
-  // show, one by one.
+  // show, one by one, and so do a hub's teachers.
   List<T> visible<T extends Object>(List<T> items) => hiding.visible(items);
   return TeacherContent(
     healer: healer,
@@ -44,6 +74,8 @@ final teacherProvider = FutureProvider.family<TeacherContent?, String>((
     books: visible(books),
     offerings: visible(offerings),
     freeResources: visible(freeResources),
+    teachers: visible(teachers),
+    hubs: hubs,
   );
 });
 

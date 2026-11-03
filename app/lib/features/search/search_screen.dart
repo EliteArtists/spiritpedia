@@ -1,3 +1,4 @@
+import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -24,6 +25,7 @@ import 'emotion_search_controller.dart';
 import 'feeling_placeholder.dart';
 import 'search_repository.dart';
 import '../learning/learning.dart';
+import '../notifications/push_presence.dart';
 import '../../theme/layout.dart';
 
 /// The shared safety data, from the bundled web/shared/emotion-safety.json.
@@ -127,6 +129,9 @@ class _SearchState extends ConsumerState<_Search> {
     onSettled: ({subjects = const [], term}) {
       if (mounted) {
         ref.read(activityLogProvider).search(subjects: subjects, term: term);
+        // A feeling search makes a first real visit (push_presence.dart).
+        // Settled means past the crisis intercept, which never gets here.
+        unawaited(ref.read(pushPresenceProvider).realVisit());
       }
     },
   )..addListener(_changed);

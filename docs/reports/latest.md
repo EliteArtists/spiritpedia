@@ -1,53 +1,155 @@
-# Build map before 1.0.1 (3 Nov 2026)
+# 1.0.1 (build 28): built on dev, for the simulator review (3 Nov 2026)
 
-This is a report only: nothing was changed. It was checked against the app code (`app/`), the git history and the README. It waits for the owner's OK before 1.0.1 starts.
+1.0.1 (build 28, `1.0.1+28`, both stores) = build 27 + the push notification package + Near You "Closest to you" + the hubs app side.
 
-## 1. What's in each build since 24
+Everything is built and tested on dev. **Nothing is live, pushed or uploaded.** Build 28 waits for your OK after the simulator review.
 
-Every build is version `1.0.0+N`. Each build includes everything in the builds before it.
+## Before the simulator review: your step
 
-| Build | Commit, date | Where it is | What it added |
-| :--- | :--- | :--- | :--- |
-| **24** | `9aca872`, 22 Oct | **Apple review** (1.0; archive `2026-10-22/Runner 3.xcarchive` kept). **Google closed test**, 15 testers | <ul><li>The welcome notification is asked for until the server confirms it.</li><li>"Turn off notifications on this phone" removes its token.</li><li>Account type shows the type set at approval.</li><li>Android: upload-key signing, the approximate-location permission, and in-app notes for notifications that arrive while the app is open.</li></ul>316 tests. |
-| **25** | `b6ff298`, 27 Oct | **Android:** built (`app/build/android-release/Spiritpedia-1.0.0-25.aab`). It was planned for the closed test on 31 Oct, but the repo has no record that it was uploaded (see below). **iOS:** never uploaded; its files are deleted | <ul><li>**For You as a pill**: a page of the user's subjects on Discover, Videos and Books. The gold stars in the pillar lists. The old For You shelf removed.</li><li>**Publishing Houses** at the top of Books.</li><li>Publisher logos on white panels, with one meta line.</li><li>The **medical-care note** on homeopathy (committed 23 Oct, first shipped here).</li><li>**Co-written books** (migration 0027).</li></ul>333 tests. |
-| **26** | `2b1142c`, 28 Oct | **iOS only.** Never uploaded; its files are deleted | <ul><li>For You with nothing chosen opens the same Tailor page and star words as Account.</li><li>Tailor's sections run More of · learning · Never show · Your Area.</li><li>"Do you want me to show you practitioners in your area?" with **Set Your Area**.</li><li>Clearing every choice goes back to View All quietly.</li></ul>334 tests. |
-| **27** | `b8cb86d` + `3fee61e`, 28 Oct | **TestFlight** (iOS only; `app/build/ios-release/Spiritpedia-1.0.0-27.ipa`) | <ul><li>From For You, the star always says the Tailor intro.</li><li>Signed out, the learning switch is greyed, with "Sign in so I can learn from what you explore." and a **Sign in** link that keeps the user on Tailor.</li><li>The star's words on Tailor move on as soon as the page scrolls.</li></ul>336 tests. |
+**Run migration `supabase/migrations/0032_push_package.sql` on dev** (SQL editor, whole file). The check at the end should read: true, true, true, true, 1, 0, 2.
+- The app's notification switches and its record of app openings need it.
+- Hubs and Closest to you work without it.
 
-**Android has never had 26 or 27.** The next Android build carries everything from 25 to 27 at once.
+## What's in it
 
-## 2. App code committed after build 27
+### 1. Push notifications (your package of 3 Nov)
 
-**None.** Since `3fee61e`, only two commits have touched `app/` (`97c7342` and `1ba4439`), and both change `app/README.md` alone. `app/pubspec.yaml` is still `1.0.0+27`. Build 27 is the current app code exactly.
+Invitations only, never reminders. Every rule below is a pure, tested function in `web/utils/pushRules.js`.
 
-## 3. Website-only features that still need app work
+**Two switches** in the app's Account → Notifications:
+- **Discoveries** is off until the person turns it on.
+- **Account updates** is on by default. It's the old `general` column, so builds 24–27 keep working.
+- The I AM row is gone.
 
-The app today has no idea of the School type or of hub links. Its code has no `school` type, no `hub_teachers` and no "Teaches at" or "Teaches on". So a School (White Tiger Qigong, Skies and Flora) shows in the app as an ordinary individual listing, with no type label, on the practitioner shelves. The website's Organisations (The Shift Network, Insight Timer, Omega, Commune, Kripalu, Esalen, 1440, and now IMS) show as channels in Explore These Channels, without their teachers.
+**Discoveries** go out at most once every 7 days, and at 10:00 local time.
+- Admin messages and the welcome count toward the 7 days.
+- Nothing goes within 48 hours of a discovery email, and a push never repeats that email's items.
+- Nothing recommended in the last 90 days, nothing already saved, nothing under Never show, and no title that reads as a health claim.
 
-| Website feature (live since) | App work needed | Where it's listed in Open jobs |
-| :--- | :--- | :--- |
-| **Schools** as a listing type, the school page, Schools & Academies shelf (30 Oct, `2cb1b62`, migration 0029) | Know `entity_type = 'school'`; school page; shelf; type label | **#10 Hubs: the app side** (and §17.11, "app in the build after 1.0.1") |
-| **Hubs**: Our Teachers on schools and organisations, "Founder of / Teaches at" (schools) and "Teaches on" (organisations) lines on teacher pages (30 Oct, `b362123`, migration 0030) | Read `hub_teachers`; Our Teachers section; the lines on teacher pages | **#10** |
-| **Retreat Centres & Platforms shelf** ("Discover Where They Teach"; organisations get their own shelf at 5 or more) (1 Nov, `23a78b0`) | Same rule as `splitOrganisations` (minimum 5, Official first, then tier, then most teachers) | **#13**, under "Organisations stay in Explore These Channels": "the app's goes in with the hubs app build" |
-| **Type label fix**: SCHOOL and ORGANISATION shown in dark text on logo cards (1 Nov, `23a78b0`) | The app's `typeLabel` / `platformLabel` have no `school`. It needs adding, so the label shows on logo cards | **Not listed on its own.** It belongs with #10, but #10 doesn't name it |
-| **Isaac Osborne and Natalie Ramon** for White Tiger (content, waiting for a photo) | None in code; it comes with the hubs build | **#10** (and #14) |
-| **Published author badge** (not built anywhere yet) | Website first, then the app | **#15**: "the app with the hubs app build (#10)" |
+Discoveries are checked in this order:
+- **Invitations back:** after 10 days away, then 14 days after the first one, then nothing until they return. Each needs a strong recommendation; otherwise nothing is sent. The wording is exactly yours: with a name, "How are you feeling today, {name}?", which opens the search; without a name, it names the item and opens it.
+- **New from someone they saved:** several additions are grouped into one. A single item opens that item; several open the teacher's page.
+- **A free resource** for their strong subjects.
 
-Website features from the same period that the app **already has**: publishers' logo panels, the homeopathy medical-care note and co-written books (all in build 25). The Account-type wording is in build 24. The admin, broken-image, localhost image and shared-offering changes are website or admin only, so they need nothing in the app.
+**Strong subjects** are More of, plus learned subjects when "Let Spiritpedia learn" is on.
+- Search words are never used, so a crisis or distressing search can never be referred to.
+- Learned subjects never include Death & the Afterlife, NDE or Mediumship. Those count only if chosen in More of.
 
-## 4. The plan
+**The welcome**, "It was lovely getting to know you, {name}…":
+- It sits under Account updates (your choice) and counts toward the weekly limit.
+- It goes once, at 19:00 local time the day after the first real visit: about 3 minutes in the app, a save, or a feeling search.
+- If that evening is missed, it's tried on the next two evenings, then dropped.
+- It doesn't name a subject.
 
-**Confirmed as written:**
-- **1.0.1** = everything in build 27, plus **push notifications**, plus **Near You "Closest to you"**.
-- It ships to **both stores**, as **build 28** (`1.0.1+28`), the next number after 27. For Android, 28 just has to be higher than 25, so it is.
-- **Hubs on the app side** (#10, with the shelf, the label fix and #15's badge) follow in **1.0.2**.
+**Account updates** have no weekly limit:
+- **Review approved** opens the item.
+- **Listing approved** opens the listing.
+- **Claim approved** opens My Account.
+- Declines are email only, and nothing is pushed for "received" events.
+- A claim verified instantly gets its email only, since the person is on the page when it happens.
 
-**Points to settle before starting.** None of these changes the plan.
-1. **Push notifications aren't designed yet in the repo.** Job #4 says Ross is designing the push package, under the "invitations only, never reminders" rule. Job #19 holds the ideas: "How are you feeling today, {name}?" and the once-only "It was lovely getting to know you". The welcome tray redesign (§16.1) belongs with it. The push plumbing has been in the app since build 6 and was checked on 22 Oct. What 1.0.1 adds is the content and timing, plus the admin composer's `{name}` placeholder. I need the package (or the owner's choice from #19) before building.
-2. **"Closest to you" is marked "plan first; not built"** (job #12), for the app and the website. I'd write a short plan first: the distance cut-off, how many to show and the wording. Then build it in the app, and on the website in the same pass.
-3. **Android 25:** the plan was to upload it to the closed test on 31 Oct. Nothing in the repo or README confirms it happened. Was it uploaded? Either way, 28 replaces it.
-4. **Apple:** 1.0 (build 24) was in review as of the last README update. A new version can't be sent for review while 1.0 is still in review, but build 28 can go to TestFlight.
-5. **The App Privacy label** (§12.6) has to be rechecked before 1.0.1, as README §1 says. It matters more if "Closest to you" uses location in a new way.
-6. **The first Android build since 28 Oct downloads about 3.5 GB** (the Gradle cache was cleared). About 36 GB was free on 30 Oct. Use one simulator at a time.
-7. **A README error to fix when 1.0.1 starts:** the build table (§10.1) says build 24 was "built, never uploaded". In fact 24 is the build in Apple review and in the Google closed test.
+**Quiet hours** are 21:00–08:00 local time. An account update or admin message that falls in them waits until 08:00. Each phone sends its time zone every time it opens.
 
-Waiting for the owner's OK before 1.0.1 starts.
+**Already looking at it:** when the app is open, it shows notifications itself on both platforms, and stays quiet if the screen the notification opens is already showing. This replaces the iPhone's own banner while the app is open.
+
+**Admin → Notifications** (new page):
+- A title, a message with `{name}`, and a version for people who gave no name (required whenever `{name}` is used).
+- An optional in-app link.
+- Three buttons: **Send test** (one account), **Who would get it?** (counts only) and **Send**.
+- Send goes to everyone with Discoveries on. It skips anyone who had a discovery in the last week, and holds it for anyone in quiet hours until 08:00 their time.
+- Below the form, counts of what was sent in the last 7 days.
+
+**The hourly run** is `/api/cron/push`, called by Supabase pg_cron (your choice). It's for live only, set up by `supabase/scheduled/push-hourly.sql`.
+
+Course and retreat reminders come later, as you said.
+
+### 2. Near You: "Closest to you" (app and website)
+
+As in `docs/reports/2026-11-03-near-you-plan.md`:
+- When an area is set and nobody is within 50 km, the shelf becomes **Closest to you**.
+- It shows the 10 nearest practitioners. Each card says how far away they are, in miles for the UK, the US, Liberia and Myanmar, and in km elsewhere.
+- The note reads "Nobody near {town} yet. These are the closest to you."
+- It always uses the area the person set, never live GPS.
+
+### 3. Hubs, app side (job #10, now in 1.0.1)
+
+It matches the website, using the same rules as `web/utils/listings.js`.
+
+**New types.** The app knows `school` and `organisation`:
+- A school is labelled "School" and gets the platform tier names (SHINING STAR · SCHOOL).
+- Schools no longer appear on the practitioner shelves, the billboard or Near You.
+
+**Two new shelves**, after Publishing Houses:
+- **Schools & Academies** ("Train With a School").
+- **Retreat Centres & Platforms** ("Discover Where They Teach"), which appears only with 5 or more organisations. Official listings come first, then by tier, then by most teachers. There's no See all.
+- Explore These Channels now holds only channels and apps.
+
+**School and organisation pages:**
+- Our Teachers, with the founder first.
+- A school shows its logo panel with "Founded 2008 · Visit website →".
+
+**Teacher pages** show the "Founder of / Teaches at / Teaches on" line. Each hub name links to its page.
+
+**Logo cards:** the SCHOOL and ORGANISATION labels are dark, so they show on the white panel.
+
+**Small differences from the website:**
+- The school card has no "View School →" text, matching the app's publisher card.
+- Our Teachers respects the viewer's Never show subjects, as publisher authors already do.
+- Names are sorted with Dart's own comparison, so names differing only in accents or capitals could sort a little differently.
+
+**Not yet:** Isaac Osborne and Natalie Ramon, until their photos are confirmed. The published author badge (#15) also waits.
+
+## Tests
+
+- **App:** 369 pass, 1 skipped (the existing dev-only test). At build 27 it was 336.
+  - New tests cover hubs (24), Closest to you, the two switches, app openings and the first visit, and staying quiet about the screen already showing.
+  - `flutter analyze` finds no issues.
+- **Website:** 177 pass. New tests cover the push rules (12) and Closest to you.
+  - The lint is clean on every changed file, except for an `HealerCard.js` warning that was already there.
+
+## App Privacy label (App Store Connect): what to change
+
+**No new data types.**
+- The time zone offset isn't location under Apple's definitions.
+- App openings and the first-visit note are already covered by **Product Interaction**.
+- The push token is already **Device ID**.
+
+**One purpose to add, on my reading:** Apple's **"Developer's Advertising or Marketing"** purpose explicitly includes "sending marketing communications directly to your users". Admin and festival messages, and the discovery invitations, fall under that. So in App Store Connect → App Privacy, add that purpose to:
+1. **Device ID** (the push token): App Functionality + **Developer's Advertising or Marketing**.
+2. **Name** (used in `{name}`): App Functionality + **Developer's Advertising or Marketing**.
+
+**Leave everything else as it is:**
+- Product Interaction and Sensitive Info stay as they are. Choosing which discovery to send is already covered by **Product Personalization**.
+- Everything stays linked to the user and not used for tracking.
+
+If you'd rather treat discoveries purely as personalisation, the label can stay as it is. That's defensible, but adding the purpose is the safer reading.
+
+**Google Play Data safety, to match:** add **Developer communications** to *Device or other IDs*. *Name* already lists it, and *App interactions* is unchanged.
+
+**Privacy Policy:** `web/app/privacy/page.js` is updated (dated 3 Nov 2026, so it isn't legal advice). It covers:
+- the two switches;
+- the app-opening time and the time zone (not location);
+- the first-visit note;
+- what discoveries are chosen from (never search words or hidden subjects);
+- the record of notifications sent, and how long it's kept.
+
+**The wording is for your OK.** It goes live with the website push.
+
+## Going live: the order, after your OK
+
+1. **You:** migration 0032 on **live**.
+2. **Me:** push the website. It deploys the push routes, Admin → Notifications, the approval hooks, Closest to you and the Privacy Policy.
+3. **You:** on live, turn on the **pg_cron** and **pg_net** extensions. Then run `supabase/scheduled/push-hourly.sql` with the CRON_SECRET from Vercel pasted in. Don't save the query with the secret in it.
+4. **Me:** build 28 for iOS (TestFlight) and Android (the closed test).
+5. **You:** update the App Privacy label and Play's Data safety before 1.0.1 is submitted. Submit 1.0.1 once Apple approves 1.0.
+
+## Also done
+
+- **README:**
+  - Android build 25 is recorded as uploaded to the closed test on 31 Oct.
+  - The build table is fixed: 24 is the build in Apple review and the Google test.
+  - Job #10 now points to 1.0.1.
+  - Jobs #4, #12 and #19 are updated, plus §9.10, §9.11, §10.8, §10.11, §8.1 (0031 and 0032), and build row 28.
+- **app/README and `docs/personalisation.md`** are brought up to date.
+- **Disk:** only 5.3 GB was free. I cleared about 7 GB of my own working files from the finished content runs (temporary folders outside the repo), and 12 GB is now free. I didn't touch any of your caches; Google's and Codex's take about 8 GB between them.
+- **Xcode 27** has no Simulator.app. The simulator window is in **DeviceHub** (Xcode → Open Developer Tool).

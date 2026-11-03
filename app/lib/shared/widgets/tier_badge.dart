@@ -116,8 +116,8 @@ class TierBadge extends StatelessWidget {
 }
 
 /// A listing's badges (data/badges.dart): its tier — named for people or for
-/// platforms — then, for a channel, app or organisation, its type; then
-/// ✓ Verified. Spiritpedia's own wears OFFICIAL alone. Each one is a
+/// platforms — then, for a channel, app, organisation or school, its type;
+/// then ✓ Verified. Spiritpedia's own wears OFFICIAL alone. Each one is a
 /// button: the star explains it, and the card underneath does not open.
 class ListingBadgeRow extends ConsumerWidget {
   const ListingBadgeRow({
@@ -129,6 +129,7 @@ class ListingBadgeRow extends ConsumerWidget {
     this.official = false,
     this.alignment = WrapAlignment.start,
     this.kinds,
+    this.onLight = false,
   });
 
   ListingBadgeRow.healer(
@@ -136,6 +137,7 @@ class ListingBadgeRow extends ConsumerWidget {
     Key? key,
     WrapAlignment alignment = WrapAlignment.start,
     Set<BadgeKind>? kinds,
+    bool onLight = false,
   }) : this(
          key: key,
          name: h.name,
@@ -145,6 +147,7 @@ class ListingBadgeRow extends ConsumerWidget {
          official: h.official,
          alignment: alignment,
          kinds: kinds,
+         onLight: onLight,
        );
 
   /// The tier and its company, for a card's top left.
@@ -172,6 +175,10 @@ class ListingBadgeRow extends ConsumerWidget {
   /// Only these (a card puts its tier top left and its type bottom right).
   final Set<BadgeKind>? kinds;
 
+  /// On a white logo panel (school and organisation cards): the type pill is
+  /// drawn dark, as the website's ListingBadges `onLight` does.
+  final bool onLight;
+
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final badges = [
@@ -193,6 +200,7 @@ class ListingBadgeRow extends ConsumerWidget {
         for (final badge in badges)
           _TappableBadge(
             badge: badge,
+            onLight: onLight,
             onTap: switch (TierTip.forBadge(badge)) {
               final tip? => () => ref.read(tierTipProvider.notifier).show(tip),
               null => null,
@@ -204,16 +212,20 @@ class ListingBadgeRow extends ConsumerWidget {
 }
 
 class _TappableBadge extends StatelessWidget {
-  const _TappableBadge({required this.badge, this.onTap});
+  const _TappableBadge({required this.badge, this.onTap, this.onLight = false});
 
   final ListingBadge badge;
   final VoidCallback? onTap;
+  final bool onLight;
 
   @override
   Widget build(BuildContext context) {
     final drawn = switch (badge.kind) {
       BadgeKind.tier => TierBadge(tier: badge.tier, label: badge.label),
-      BadgeKind.type => _Pill.type(label: badge.label),
+      BadgeKind.type =>
+        onLight
+            ? _Pill.typeOnLight(label: badge.label)
+            : _Pill.type(label: badge.label),
       BadgeKind.verified => const _Pill.verified(),
       BadgeKind.official => const _Pill.official(),
     };
@@ -240,6 +252,11 @@ class _Pill extends StatelessWidget {
     : background = SpColors.surfaceRaised,
       text = SpColors.text,
       border = const Color(0x33FFFFFF);
+  // web/components/ListingBadges.jsx → TYPE_ON_LIGHT.
+  const _Pill.typeOnLight({this.label = ''})
+    : background = SpColors.surface,
+      text = Colors.white,
+      border = SpColors.surface;
   const _Pill.verified()
     : label = '✓ Verified',
       background = const Color(0xFF0EA5E9),

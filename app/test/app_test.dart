@@ -1640,6 +1640,163 @@ void main() {
     });
   });
 
+  group('schools and organisations on Discover (README §17.11)', () {
+    final school = FakeContentRepository.healer(
+      20,
+      'white-tiger-qigong',
+      'White Tiger Qigong',
+      'local_hero', // a school is never a practitioner near anyone
+      entity: 'school',
+      founded: 2008,
+      place: 2643743,
+      availability: 'Local & Online Sessions',
+    );
+    final founder = FakeContentRepository.healer(
+      21,
+      'tevia-feng',
+      'Tevia Feng',
+      'luminary',
+    );
+    List<Healer> orgs(int n) => [
+      for (var i = 0; i < n; i++)
+        FakeContentRepository.healer(
+          30 + i,
+          'org-$i',
+          'Org $i',
+          'luminary',
+          entity: 'organisation',
+        ),
+    ];
+    FakeContentRepository content(int organisations) =>
+        FakeContentRepository(
+            extraHealers: [school, founder, ...orgs(organisations)],
+          )
+          ..hubs = const [
+            HubLink(hubId: 20, teacherId: 21, role: 'founder'),
+            HubLink(hubId: 33, teacherId: 21),
+          ];
+
+    Future<Finder> shelf(WidgetTester tester, String title) async {
+      final found = find.ancestor(
+        of: find.text(title),
+        matching: find.byType(Shelf),
+      );
+      await tester.ensureVisible(found);
+      await tester.pumpAndSettle();
+      return found;
+    }
+
+    List<String> slugs<T extends Widget>(
+      WidgetTester tester,
+      Finder shelf,
+      String Function(T) slug,
+    ) => tester
+        .widgetList<T>(find.descendant(of: shelf, matching: find.byType(T)))
+        .map(slug)
+        .toList();
+
+    testWidgets('a school has its own shelf, after Publishing Houses, and is '
+        'on no practitioner shelf', (tester) async {
+      await tester.pumpWidget(_app(content: content(0)));
+      await tester.pump();
+      await tester.pump(const Duration(milliseconds: 100));
+      final schools = await shelf(tester, 'Schools & Academies');
+      expect(find.text('TRAIN WITH A SCHOOL'), findsOneWidget);
+      expect(slugs<SchoolCard>(tester, schools, (c) => c.school.slug), [
+        'white-tiger-qigong',
+      ]);
+      expect(
+        find.descendant(
+          of: schools,
+          matching: find.text('1 teacher · Founded 2008'),
+        ),
+        findsOneWidget,
+      );
+      expect(
+        find.descendant(of: schools, matching: find.text('SCHOOL')),
+        findsOneWidget,
+      );
+      expect(
+        tester.getTopLeft(find.text('Publishing Houses')).dy,
+        lessThan(tester.getTopLeft(find.text('Schools & Academies')).dy),
+      );
+      // Never a portrait card: not Near You, not Explore These Channels.
+      expect(
+        find.ancestor(
+          of: find.text('White Tiger Qigong'),
+          matching: find.byType(HealerCard),
+        ),
+        findsNothing,
+      );
+      // Four organisations or fewer: no shelf of their own.
+      expect(find.text('Retreat Centres & Platforms'), findsNothing);
+    });
+
+    // Cards are built lazily, so a phone-width shelf builds its first few;
+    // the full order is in test/data/hubs_test.dart.
+    int count(WidgetTester tester, Finder shelf) =>
+        tester.widget<Shelf>(shelf).itemCount;
+
+    testWidgets('five organisations get Retreat Centres & Platforms, most '
+        'teachers first among equals, after Schools & Academies', (
+      tester,
+    ) async {
+      await tester.pumpWidget(_app(content: content(5)));
+      await tester.pump();
+      await tester.pump(const Duration(milliseconds: 100));
+      final retreat = await shelf(tester, 'Retreat Centres & Platforms');
+      expect(find.text('DISCOVER WHERE THEY TEACH'), findsOneWidget);
+      expect(count(tester, retreat), 5);
+      expect(slugs<SchoolCard>(tester, retreat, (c) => c.school.slug).take(2), [
+        'org-3',
+        'org-0',
+      ]);
+      expect(
+        find.descendant(of: retreat, matching: find.text('ORGANISATION')),
+        findsWidgets,
+      );
+      expect(
+        find.descendant(of: retreat, matching: find.text('1 teacher')),
+        findsOneWidget,
+      );
+      final channels = await shelf(tester, 'Explore These Channels');
+      expect(count(tester, channels), 1);
+      expect(
+        tester.getTopLeft(find.text('Schools & Academies')).dy,
+        lessThan(
+          tester.getTopLeft(find.text('Retreat Centres & Platforms')).dy,
+        ),
+      );
+    });
+
+    testWidgets('four organisations stay in Explore These Channels', (
+      tester,
+    ) async {
+      await tester.pumpWidget(_app(content: content(4)));
+      await tester.pump();
+      await tester.pump(const Duration(milliseconds: 100));
+      final channels = await shelf(tester, 'Explore These Channels');
+      expect(find.text('Retreat Centres & Platforms'), findsNothing);
+      expect(count(tester, channels), 5);
+      expect(
+        slugs<HealerCard>(tester, channels, (c) => c.healer.slug).first,
+        'a-channel',
+      );
+    });
+
+    testWidgets("a teacher's hub line opens the hub's page", (tester) async {
+      await tester.pumpWidget(_app(content: content(0)));
+      await tester.pump();
+      GoRouter.of(tester.element(find.byType(PillTabBar)))
+          .push('/healers/tevia-feng');
+      await tester.pumpAndSettle();
+      await tester.tapOnText(find.textRange.ofSubstring('White Tiger Qigong'));
+      await tester.pumpAndSettle();
+      expect(find.text('Founded 2008'), findsOneWidget);
+      expect(find.text('Our Teachers'), findsOneWidget);
+    });
+  });
+
   testWidgets('a heart on a card saves without opening the card', (
     tester,
   ) async {
@@ -1927,7 +2084,7 @@ void main() {
     }
 
     testWidgets('one arriving while the app is open shows in the app, '
-        'with Open (Android shows nothing itself)', (tester) async {
+        'with Open (on both platforms, from 1.0.1)', (tester) async {
       final push = await launch(tester);
       push.arrivedNotes.add(
         const PushNote(
@@ -1942,6 +2099,19 @@ void main() {
       await tester.tap(find.text('Open'));
       await tester.pumpAndSettle();
       expect(find.text('My Library'), findsWidgets);
+    });
+
+    testWidgets('one about the screen already open says nothing (an '
+        'approval seen where it happened)', (tester) async {
+      final push = await launch(tester);
+      push.openedNotes.add(const PushNote(route: '/library'));
+      await tester.pumpAndSettle();
+      push.arrivedNotes.add(
+        const PushNote(title: 'Already here', body: 'Seen.', route: '/library'),
+      );
+      await tester.pump();
+      await tester.pump(const Duration(milliseconds: 300));
+      expect(find.text('Already here\nSeen.'), findsNothing);
     });
 
     testWidgets('a screen this version lacks: Discover, with a quiet note', (

@@ -185,7 +185,7 @@ and country automatically (`healers.place_id`, by trigger).
 
 | No area | Area set |
 |---|---|
-| Everyone, as before, with **"Set your area"** under the title | 1. In person **within 50 km**, nearest first. 2. Then everyone who offers sessions **online** (availability says "Online"), from anywhere. Local-only practitioners elsewhere are left out. "Near London, United Kingdom · Change"; if nobody is near: "No practitioners near London yet — these offer online sessions." |
+| Everyone, as before, with **"Set your area"** under the title | 1. In person **within 50 km**, nearest first. 2. Then everyone who offers sessions **online** (availability says "Online"), from anywhere. Local-only practitioners elsewhere are left out. "Near London, United Kingdom · Change"; if nobody is near, **Closest to you** (1.0.1 and the website): the 10 nearest practitioners with a town, nearest first, each card saying how far ("320 km away"; miles when the area is in the UK, US, Liberia or Myanmar), with "Nobody near Dundee yet. These are the closest to you." Only when nobody in view has a town: "No practitioners near London yet — these offer online sessions."; with nobody online either, the shelf is left out. |
 
 Within each group the usual order is kept (More of first), and Never show
 still applies. The same rules run on the website (`web/utils/area.js`) and in

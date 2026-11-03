@@ -1,3 +1,4 @@
+import 'dart:async';
 import 'dart:convert';
 
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -5,6 +6,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 
 import '../account/account_providers.dart';
 import '../learning/learning.dart';
+import '../notifications/push_presence.dart';
 
 /// What can be saved, the device key each list lives under, and the
 /// content_type it has in user_favourites — the same types the website uses,
@@ -169,6 +171,8 @@ class SavedItems extends Notifier<Map<SavedKind, List<String>>> {
           .content(saving ? 'save' : 'unsave', kind.contentType, slug);
     }
     await _store.write(kind, current);
+    // A save makes a first real visit (the push welcome, push_presence.dart).
+    if (saving) unawaited(ref.read(pushPresenceProvider).realVisit());
 
     // Write through to the account. A failure is not shown: the next sign-in
     // or app start pulls the account's list back down, the honest state.

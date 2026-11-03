@@ -25,6 +25,7 @@ class FakeContentRepository implements ContentRepository {
     bool verified = false,
     String? booking,
     String? website,
+    int? founded,
   }) => Healer(
     id: id,
     slug: slug,
@@ -42,6 +43,7 @@ class FakeContentRepository implements ContentRepository {
     verified: verified,
     bookingUrl: booking,
     websiteUrl: website,
+    foundedYear: founded,
   );
 
   final List<Healer> allHealers = [
@@ -379,6 +381,12 @@ class FakeContentRepository implements ContentRepository {
   @override
   Future<Map<String, List<List<String>>>> teacherContentSubjects() async =>
       teacherContent;
+
+  /// Overridable: hub_teachers rows (schools and organisations).
+  List<HubLink> hubs = const [];
+
+  @override
+  Future<List<HubLink>> hubLinks() async => hubs;
 
   @override
   Future<List<int>> publisherAuthorIds(String publisherId) async => [

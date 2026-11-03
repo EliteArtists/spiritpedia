@@ -97,10 +97,27 @@ bool _isPremium(Healer h) =>
     h.tier == 'ascended_master' ||
     h.tier == 'luminary';
 
-/// The home page's healer shelves (HomePageContent.js).
+/// The home page's healer shelves (HomePageContent.js). [links] are the
+/// hub_teachers rows, for the organisations' order.
 class HealerShelves {
-  HealerShelves(List<Healer> healers)
-    : superheroes = [
+  HealerShelves(List<Healer> healers, {List<HubLink> links = const []})
+    : this._(
+        healers,
+        // Schools have their own shelf, so they leave Explore These Channels;
+        // organisations leave it too once there are enough of them.
+        splitOrganisations(
+          officialFirst([
+            for (final h in healers)
+              if (h.isPlatform && !h.isSchool) h,
+          ]),
+          links,
+        ),
+      );
+
+  HealerShelves._(
+    List<Healer> healers,
+    ({List<Healer> organisations, List<Healer> platforms}) split,
+  ) : superheroes = [
         for (final h in healers)
           if (!h.isPlatform && h.tier == 'superhero') h,
       ],
@@ -113,18 +130,19 @@ class HealerShelves {
           if (!h.isPlatform && h.tier == 'ascended_master') h,
       ],
       // SAFE FALLBACK: anything not a premium tier — NULL included — shows here,
-      // so no practitioner silently vanishes. Channels, apps and organisations
-      // are left out: they have their own shelf (as on the website).
+      // so no practitioner silently vanishes. Channels, apps, organisations
+      // and schools are left out: they have their own shelves (as on the
+      // website).
       localHeroes = [
         for (final h in healers)
           if (!h.isPlatform && !_isPremium(h)) h,
       ],
       // Spiritpedia Official first, the rest in the order they came.
-      platforms = [
+      platforms = split.platforms,
+      organisations = split.organisations,
+      schools = [
         for (final h in healers)
-          if (h.isPlatform && h.official) h,
-        for (final h in healers)
-          if (h.isPlatform && !h.official) h,
+          if (h.isSchool) h,
       ];
 
   final List<Healer> superheroes;
@@ -132,6 +150,13 @@ class HealerShelves {
   final List<Healer> ascendedMasters;
   final List<Healer> localHeroes;
   final List<Healer> platforms;
+
+  /// Retreat Centres & Platforms: empty below [organisationShelfMinimum]
+  /// ([splitOrganisations]).
+  final List<Healer> organisations;
+
+  /// Schools & Academies (migration 0029).
+  final List<Healer> schools;
 
   /// Three Superheroes, then one Ascended Master, repeating; whichever runs
   /// out first, the rest of the other follows so nobody is dropped.
@@ -147,6 +172,129 @@ class HealerShelves {
     }
     return out;
   }
+}
+
+// ── Hubs: schools and organisations (README §17.11) ─────────────────────────
+// web/utils/listings.js and web/app/healers/[slug]/page.js.
+
+/// Spiritpedia Official first, everything else in the order it came.
+List<Healer> officialFirst(List<Healer> healers) => [
+  for (final h in healers)
+    if (h.official) h,
+  for (final h in healers)
+    if (!h.official) h,
+];
+
+/// "8 teachers", counted from the hub_teachers rows for one hub.
+int teacherCount(Healer hub, List<HubLink> links) =>
+    links.where((l) => l.hubId == hub.id).length;
+
+/// Organisations get their own shelf on Discover, Retreat Centres &
+/// Platforms, once there are this many; below it they stay in Explore These
+/// Channels, so the shelf is never a one-card row (README job #13).
+const organisationShelfMinimum = 5;
+
+const _hubTierRank = {'superhero': 0, 'ascended_master': 1, 'luminary': 2};
+
+/// Takes Explore These Channels' list (channels, apps, organisations) and
+/// moves the organisations onto their own shelf when there are enough of
+/// them: Spiritpedia Official first, then by tier, then most teachers. Below
+/// the minimum nothing moves.
+({List<Healer> organisations, List<Healer> platforms}) splitOrganisations(
+  List<Healer> platforms,
+  List<HubLink> links,
+) {
+  final orgs = [
+    for (final h in platforms)
+      if (h.entityType == 'organisation') h,
+  ];
+  if (orgs.length < organisationShelfMinimum) {
+    return (organisations: const <Healer>[], platforms: platforms);
+  }
+  int rank(Healer h) => _hubTierRank[h.tier] ?? 3;
+  final scored = [
+    for (final (i, h) in orgs.indexed) (h, i, teacherCount(h, links)),
+  ];
+  scored.sort((a, b) {
+    final official = (b.$1.official ? 1 : 0) - (a.$1.official ? 1 : 0);
+    if (official != 0) return official;
+    final tier = rank(a.$1) - rank(b.$1);
+    if (tier != 0) return tier;
+    final teachers = b.$3 - a.$3;
+    return teachers != 0 ? teachers : a.$2 - b.$2;
+  });
+  return (
+    organisations: [for (final (h, _, _) in scored) h],
+    platforms: [
+      for (final h in platforms)
+        if (h.entityType != 'organisation') h,
+    ],
+  );
+}
+
+/// The words before a hub's name on a teacher's page: "Founder of White
+/// Tiger Qigong", "Teaches at White Tiger Qigong" (a school), "Teaches on The
+/// Shift Network" (an organisation).
+String hubLinkPrefix(String role, Healer hub) {
+  if (role == 'founder') return 'Founder of';
+  return hub.entityType == 'organisation' ? 'Teaches on' : 'Teaches at';
+}
+
+const _teacherTierRank = {
+  'superhero': 0,
+  'ascended_master': 1,
+  'luminary': 2,
+  'local_hero': 3,
+};
+
+/// Our Teachers on a hub's page: the founder first, then by tier, then by
+/// name.
+List<Healer> ourTeachers(List<({String role, Healer teacher})> links) {
+  final sorted = [...links]
+    ..sort((a, b) {
+      final founder =
+          (a.role == 'founder' ? 0 : 1) - (b.role == 'founder' ? 0 : 1);
+      if (founder != 0) return founder;
+      final tier =
+          (_teacherTierRank[a.teacher.tier] ?? 4) -
+          (_teacherTierRank[b.teacher.tier] ?? 4);
+      return tier != 0 ? tier : a.teacher.name.compareTo(b.teacher.name);
+    });
+  return [for (final l in sorted) l.teacher];
+}
+
+/// A teacher's line under their name, as the pieces before each linked hub:
+/// "Founder of A, teaches at B and C, teaches on D". Founders first, then
+/// schools, then organisations, otherwise in the order they came; the words
+/// show again only when they change.
+List<({String lead, Healer hub})> hubLine(
+  List<({String role, Healer hub})> links,
+) {
+  int rank(({String role, Healer hub}) l) => l.role == 'founder'
+      ? 0
+      : l.hub.entityType == 'organisation'
+      ? 2
+      : 1;
+  final indexed = [...links.indexed]
+    ..sort((a, b) {
+      final c = rank(a.$2) - rank(b.$2);
+      return c != 0 ? c : a.$1 - b.$1;
+    });
+  final sorted = [for (final (_, l) in indexed) l];
+  return [
+    for (final (i, l) in sorted.indexed)
+      (
+        lead: [
+          if (i > 0) i == sorted.length - 1 ? ' and ' : ', ',
+          if (i == 0)
+            '${hubLinkPrefix(l.role, l.hub)} '
+          else if (hubLinkPrefix(l.role, l.hub) !=
+              hubLinkPrefix(sorted[i - 1].role, sorted[i - 1].hub))
+            '${hubLinkPrefix(l.role, l.hub).toLowerCase()} ',
+        ].join(),
+        hub: l.hub,
+      ),
+  ];
 }
 
 /// Narrow any collection to the active subject (null = View All).
@@ -684,4 +832,52 @@ double distanceKm(Place a, Place b) {
         if (h.offersOnline && !shown.contains(h.id)) h,
     ],
   );
+}
+
+/// How many "Closest to you" shows when nobody is within [nearRadiusKm].
+const closestCount = 10;
+
+// Countries whose people think in miles; everyone else gets kilometres. Read
+// from the area's own country, never the phone's locale.
+const _mileCountries = {
+  'United Kingdom',
+  'United States',
+  'Liberia',
+  'Myanmar',
+};
+
+/// "320 km away", "1,240 km away", "200 miles away": whole numbers, in the
+/// unit of the area's [country]. The website's distanceLabel (utils/area.js).
+String distanceLabel(double km, String country) {
+  final miles = _mileCountries.contains(country);
+  final n = math.max(1, (miles ? km / 1.609344 : km).round());
+  final digits = n.toString().replaceAllMapped(
+    RegExp(r'\B(?=(\d{3})+(?!\d))'),
+    (_) => ',',
+  );
+  return '$digits ${miles ? (n == 1 ? 'mile' : 'miles') : 'km'} away';
+}
+
+/// "Closest to you", for when nobody is within [nearRadiusKm] of [area]: the
+/// [count] practitioners nearest it, town centre to town centre, nearest
+/// first, each with its distance in km. Practitioners with no town can't be
+/// placed, so they are left out. Empty when nobody has a town. The website's
+/// closestTo (utils/area.js) — change both together.
+List<({Healer healer, double km})> closestTo(
+  List<Healer> practitioners,
+  Place? area,
+  Map<int, Place> places, {
+  int count = closestCount,
+}) {
+  if (area == null) return const [];
+  final found = <(Healer, double, int)>[];
+  for (final (i, h) in practitioners.indexed) {
+    final town = places[h.placeId];
+    if (town != null) found.add((h, distanceKm(area, town), i));
+  }
+  found.sort((a, b) {
+    final c = a.$2.compareTo(b.$2);
+    return c != 0 ? c : a.$3.compareTo(b.$3);
+  });
+  return [for (final (h, km, _) in found.take(count)) (healer: h, km: km)];
 }

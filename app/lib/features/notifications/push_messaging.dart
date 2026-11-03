@@ -49,9 +49,9 @@ abstract class PushMessaging {
   /// Tapped while the app was in the background.
   Stream<PushNote> get opened;
 
-  /// Arrived while the app was open, on Android only: Android shows nothing
-  /// for an app in front, so the app shows it itself. An iPhone shows its own
-  /// banner ([FirebasePushMessaging.showWhileOpen]), so this is empty there.
+  /// Arrived while the app was open. The app shows it itself, on both
+  /// platforms, so it can stay quiet about what is already on screen
+  /// ([FirebasePushMessaging.showWhileOpen] keeps the iPhone's banner off).
   Stream<PushNote> get arrivedWhileOpen;
 
   /// Tapped while the app was closed: it opened the app.
@@ -109,16 +109,18 @@ class FirebasePushMessaging implements PushMessaging {
     return _map(settings.authorizationStatus);
   }
 
-  /// While the app is open, a notification shows as the iPhone's own
-  /// banner, as when it is closed. iOS forgets this between launches, so it
-  /// is said at every start (main.dart) — it asks nothing of the person.
+  /// While the app is open, the iPhone shows no banner of its own: the app
+  /// shows the note itself ([arrivedWhileOpen]), and leaves it out when they
+  /// are already looking at what it is about (from 1.0.1; builds 24–27 showed
+  /// the banner). iOS forgets this between launches, so it is said at every
+  /// start (main.dart) — it asks nothing of the person.
   static Future<void> showWhileOpen() async {
     try {
       await FirebaseMessaging.instance
           .setForegroundNotificationPresentationOptions(
-            alert: true,
-            badge: true,
-            sound: true,
+            alert: false,
+            badge: false,
+            sound: false,
           );
     } catch (_) {}
   }
@@ -152,9 +154,7 @@ class FirebasePushMessaging implements PushMessaging {
 
   @override
   Stream<PushNote> get arrivedWhileOpen =>
-      defaultTargetPlatform == TargetPlatform.android
-      ? FirebaseMessaging.onMessage.map(_note)
-      : const Stream.empty();
+      FirebaseMessaging.onMessage.map(_note);
 
   @override
   Future<PushNote?> initialNote() async {

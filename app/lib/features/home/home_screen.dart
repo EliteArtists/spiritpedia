@@ -49,6 +49,9 @@ class HomeScreen extends ConsumerWidget {
     final healers = ref.watch(healersProvider);
     final publishers =
         ref.watch(publishersProvider).value ?? const <Publisher>[];
+    // Which teachers teach where (hub_teachers): the school and organisation
+    // cards' "8 teachers", and the organisations' order.
+    final links = ref.watch(hubLinksProvider).value ?? const <HubLink>[];
 
     return StarPage(
       filter: subjectFilterProvider,
@@ -56,6 +59,7 @@ class HomeScreen extends ConsumerWidget {
       onRefresh: () async {
         ref.invalidate(healersProvider);
         ref.invalidate(publishersProvider);
+        ref.invalidate(hubLinksProvider);
         await ref.read(healersProvider.future);
       },
       slivers: [
@@ -77,6 +81,7 @@ class HomeScreen extends ConsumerWidget {
                 (h) => h.subjectSlugs,
                 learned: learned,
               ),
+              links: links,
             );
             // For You: every shelf of their own subjects, topped up from
             // related ones; a shelf still nearly empty goes.
@@ -89,8 +94,10 @@ class HomeScreen extends ConsumerWidget {
                 ...fy(shelves.luminaries),
                 ...fy(shelves.ascendedMasters),
                 ...fy(shelves.localHeroes),
+                ...fy(shelves.schools),
+                ...fy(shelves.organisations),
                 ...fy(shelves.platforms),
-              ]);
+              ], links: links);
             }
             final seeAll = subject == null
                 ? null
@@ -110,6 +117,7 @@ class HomeScreen extends ConsumerWidget {
               bool tall = false,
               Widget? note,
               bool keepWhenEmpty = false,
+              Map<int, String> distances = const {},
             }) => Shelf(
               title: title,
               subtitle: subtitle,
@@ -120,13 +128,28 @@ class HomeScreen extends ConsumerWidget {
               itemWidth: tall ? 230 : 172,
               height: tall ? 330 : 240,
               onSeeAll: seeAll,
-              itemBuilder: (_, i) =>
-                  HealerCard(healer: items[i], subjectSlug: subject),
+              itemBuilder: (_, i) => HealerCard(
+                healer: items[i],
+                subjectSlug: subject,
+                distance: distances[items[i].id],
+              ),
             );
             // Practitioners Near You, for their area (docs/personalisation.md):
-            // in person within 50 km, nearest first; then online ones.
+            // in person within 50 km, nearest first; then online ones. Never
+            // empty with an area: nobody within 50 km makes it "Closest to
+            // you", the ten nearest with how far away each is (the website's
+            // rule too; docs/reports/2026-11-03-near-you-plan.md).
             final near = nearYou(shelves.localHeroes, area, places);
-            final nearby = [...near.near, ...near.online];
+            final closest = area != null && near.near.isEmpty
+                ? closestTo(shelves.localHeroes, area, places)
+                : const <({Healer healer, double km})>[];
+            final nearby = closest.isNotEmpty
+                ? [for (final c in closest) c.healer]
+                : [...near.near, ...near.online];
+            final distances = {
+              for (final c in closest)
+                c.healer.id: distanceLabel(c.km, area!.country),
+            };
             // Never show emptied every shelf: say so, never a blank screen.
             final nothingLeft =
                 !hiding.isEmpty &&
@@ -134,6 +157,8 @@ class HomeScreen extends ConsumerWidget {
                 shelves.localHeroes.isEmpty &&
                 shelves.luminaries.isEmpty &&
                 shelves.platforms.isEmpty &&
+                shelves.schools.isEmpty &&
+                shelves.organisations.isEmpty &&
                 shownPublishers.isEmpty;
             return [
               if (nothingLeft)
@@ -176,10 +201,16 @@ class HomeScreen extends ConsumerWidget {
               ),
               SliverToBoxAdapter(
                 child: healerShelf(
-                  'Practitioners Near You',
+                  closest.isNotEmpty
+                      ? 'Closest to you'
+                      : 'Practitioners Near You',
                   nearby,
-                  note: AreaNote(area: area, nearCount: near.near.length),
-                  keepWhenEmpty: area != null,
+                  note: AreaNote(
+                    area: area,
+                    nearCount: near.near.length,
+                    closest: closest.isNotEmpty,
+                  ),
+                  distances: distances,
                   badge: ShelfBadge(
                     label: 'LOCAL HERO',
                     onTap: () => ref
@@ -208,6 +239,37 @@ class HomeScreen extends ConsumerWidget {
                   height: 230,
                   itemBuilder: (_, i) =>
                       PublisherCard(publisher: shownPublishers[i]),
+                ),
+              ),
+              // Schools and academies (0029): listings that train and
+              // certify teachers. Hidden when there are none; no See all.
+              SliverToBoxAdapter(
+                child: Shelf(
+                  title: 'Schools & Academies',
+                  subtitle: 'Train With a School',
+                  itemCount: shelves.schools.length,
+                  itemWidth: 200,
+                  height: 230,
+                  itemBuilder: (_, i) => SchoolCard(
+                    school: shelves.schools[i],
+                    teacherCount: teacherCount(shelves.schools[i], links),
+                  ),
+                ),
+              ),
+              // Organisations, once there are 5 or more (splitOrganisations);
+              // empty, and so hidden, below that. No See all for now.
+              SliverToBoxAdapter(
+                child: Shelf(
+                  title: 'Retreat Centres & Platforms',
+                  subtitle: 'Discover Where They Teach',
+                  itemCount: shelves.organisations.length,
+                  itemWidth: 200,
+                  height: 230,
+                  itemBuilder: (_, i) => SchoolCard(
+                    school: shelves.organisations[i],
+                    teacherCount: teacherCount(shelves.organisations[i], links),
+                    kind: 'Organisation',
+                  ),
                 ),
               ),
               SliverToBoxAdapter(
@@ -291,12 +353,21 @@ class _Problem extends StatelessWidget {
 
 /// Under Practitioners Near You: "Set your area" for anyone who wants it
 /// sooner than the star asks; with an area, where it is and a way to change
-/// it — and, when nobody is near yet, that the ones shown work online.
+/// it — and, when nobody is near yet, that the ones shown are the closest
+/// (or, with nobody placed at all, that they work online).
 class AreaNote extends StatelessWidget {
-  const AreaNote({super.key, required this.area, required this.nearCount});
+  const AreaNote({
+    super.key,
+    required this.area,
+    required this.nearCount,
+    this.closest = false,
+  });
 
   final Place? area;
   final int nearCount;
+
+  /// The shelf is "Closest to you".
+  final bool closest;
 
   @override
   Widget build(BuildContext context) {
@@ -305,6 +376,8 @@ class AreaNote extends StatelessWidget {
         ? null
         : nearCount > 0
         ? 'Near ${place.label}'
+        : closest
+        ? 'Nobody near ${place.name} yet. These are the closest to you.'
         : 'No practitioners near ${place.name} yet — these offer online sessions.';
     return Padding(
       padding: const EdgeInsets.only(top: 2),

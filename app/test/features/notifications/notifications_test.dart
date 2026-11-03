@@ -124,9 +124,12 @@ void main() {
       expect(account.prefsByUser[_userId]?.general, isTrue);
       expect(account.welcomeCalls, 1);
       expect(device.value, isTrue);
-      expect(find.text('General'), findsOneWidget);
-      expect(find.text('IAM affirmations'), findsOneWidget);
-      expect(find.text('Coming later'), findsOneWidget);
+      // Two switches: Discoveries off until they turn it on, Account
+      // updates on. No IAM row (not in 1.0.1).
+      expect(find.text('Discoveries'), findsOneWidget);
+      expect(find.text('Account updates'), findsOneWidget);
+      expect(find.text('IAM affirmations'), findsNothing);
+      expect(account.prefsByUser[_userId]?.discoveries, isFalse);
     },
   );
 
@@ -150,7 +153,22 @@ void main() {
     },
   );
 
-  test('General can be switched off and on', () async {
+  test('Discoveries is off until turned on, and stays apart from Account '
+      'updates', () async {
+    account.restoreSession(_email);
+    final c = container();
+    await settle();
+    await c.read(notificationsProvider.notifier).turnOn();
+    expect(c.read(notificationsProvider).prefs.discoveries, isFalse);
+    await c.read(notificationsProvider.notifier).setDiscoveries(true);
+    expect(account.prefsByUser[_userId]?.discoveries, isTrue);
+    expect(account.prefsByUser[_userId]?.general, isTrue);
+    await c.read(notificationsProvider.notifier).setGeneral(false);
+    expect(account.prefsByUser[_userId]?.discoveries, isTrue);
+    expect(account.prefsByUser[_userId]?.general, isFalse);
+  });
+
+  test('Account updates (General) can be switched off and on', () async {
     account.restoreSession(_email);
     final c = container();
     await settle();

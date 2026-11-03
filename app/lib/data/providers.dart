@@ -28,6 +28,12 @@ final publishersProvider = FutureProvider<List<Publisher>>(
   (ref) => ref.watch(contentRepositoryProvider).publishers(),
 );
 
+/// Which teachers teach at which school or on which organisation
+/// (hub_teachers, migration 0030).
+final hubLinksProvider = FutureProvider<List<HubLink>>(
+  (ref) => ref.watch(contentRepositoryProvider).hubLinks(),
+);
+
 // ── Never show (docs/personalisation.md) ─────────────────────────────────────
 
 /// Each teacher's content subjects, by slug — fetched only once something is

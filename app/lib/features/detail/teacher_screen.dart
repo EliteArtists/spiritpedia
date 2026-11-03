@@ -1,5 +1,7 @@
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:go_router/go_router.dart';
 
 import '../../core/safety/medical_note.dart';
 import '../../data/badges.dart';
@@ -18,7 +20,9 @@ import 'detail_widgets.dart';
 import '../../theme/layout.dart';
 
 /// A teacher's page (web/app/healers/[slug]/page.js): portraits, name, tier,
-/// social links, bio, the contact card, then their shelves.
+/// social links, bio, the contact card, then their shelves. A school's or
+/// organisation's page is the same page, with Our Teachers first (README
+/// §17.11); a school's picture sits on the white logo panel.
 class TeacherScreen extends ConsumerWidget {
   const TeacherScreen({super.key, required this.slug});
 
@@ -65,8 +69,17 @@ class _Teacher extends StatelessWidget {
     return ListView(
       padding: const EdgeInsets.only(bottom: 40 + FloatingHomeStar.clearance),
       children: [
-        ..._head(context, h, name),
+        ..._head(context, h, name, content.hubs),
         const SizedBox(height: 12),
+        // A hub's teachers (0029, 0030), first. Hidden when it has none.
+        Shelf(
+          title: 'Our Teachers',
+          subtitle: 'Teach With Us',
+          itemCount: content.teachers.length,
+          itemWidth: 172,
+          height: 240,
+          itemBuilder: (_, i) => HealerCard(healer: content.teachers[i]),
+        ),
         Shelf(
           title: 'Videos',
           subtitle: 'Teachings & Talks',
@@ -107,15 +120,33 @@ class _Teacher extends StatelessWidget {
 /// Up to three portraits, swiped, with dots — HeroImageRotator's job.
 /// The portraits and the words about them. On an iPad the portraits sit
 /// beside the words, at a sensible size, instead of filling the width.
-List<Widget> _head(BuildContext context, Healer h, String name) {
+List<Widget> _head(
+  BuildContext context,
+  Healer h,
+  String name,
+  List<({String role, Healer hub})> hubs,
+) {
   final layout = SpLayout.of(context);
-  final portraits = _Portraits(urls: h.imageUrls.take(3).toList(), name: name);
+  // A school's picture is usually its logo, so it sits on the publisher's
+  // white logo panel instead.
+  final portraits = h.isSchool
+      ? AspectRatio(
+          aspectRatio: 1,
+          child: PublisherLogo.listing(
+            name: name,
+            logoUrl: h.imageUrls.firstOrNull,
+            padding: const EdgeInsets.all(40),
+          ),
+        )
+      : _Portraits(urls: h.imageUrls.take(3).toList(), name: name);
   final words = Column(
     crossAxisAlignment: CrossAxisAlignment.start,
     children: [
       DetailTitle(name),
       const SizedBox(height: 10),
       _Badge(healer: h),
+      if (h.isSchool) _Founded(school: h),
+      if (hubs.isNotEmpty) _HubLine(hubs: hubs),
       _Social(healer: h),
       if (h.bio != null) ...[const SizedBox(height: 20), Expandable(h.bio!)],
       if (needsMedicalNote(h.subjectSlugs)) const MedicalNote(),
@@ -236,6 +267,132 @@ class _Badge extends StatelessWidget {
             fontWeight: FontWeight.w700,
             color: SpTierColors.ascendedText,
           ),
+        ),
+      ),
+    );
+  }
+}
+
+/// A school: "Founded 2008 · Visit website →", as on a publisher's page.
+class _Founded extends StatelessWidget {
+  const _Founded({required this.school});
+
+  final Healer school;
+
+  @override
+  Widget build(BuildContext context) {
+    final site = withScheme(school.websiteUrl);
+    if (school.foundedYear == null && site == null) {
+      return const SizedBox.shrink();
+    }
+    const muted = TextStyle(fontSize: 14, color: SpColors.textMuted);
+    return Padding(
+      padding: const EdgeInsets.only(top: 12),
+      child: Wrap(
+        crossAxisAlignment: WrapCrossAlignment.center,
+        spacing: 12,
+        runSpacing: 4,
+        children: [
+          if (school.foundedYear != null)
+            Text('Founded ${school.foundedYear}', style: muted),
+          if (school.foundedYear != null && site != null)
+            const ExcludeSemantics(child: Text('·', style: muted)),
+          if (site != null)
+            TextButton(
+              onPressed: () => openExternal(context, site),
+              style: TextButton.styleFrom(
+                foregroundColor: SpColors.link,
+                padding: EdgeInsets.zero,
+                minimumSize: const Size(0, 32),
+                tapTargetSize: MaterialTapTargetSize.shrinkWrap,
+              ),
+              child: const Text(
+                'Visit website →',
+                style: TextStyle(fontSize: 14, fontWeight: FontWeight.w600),
+              ),
+            ),
+        ],
+      ),
+    );
+  }
+}
+
+/// A teacher: the hubs they teach at or on, each linked to its page. The
+/// words show again only when they change: "Founder of A, teaches at B and
+/// C, teaches on D" ([hubLine]).
+class _HubLine extends StatefulWidget {
+  const _HubLine({required this.hubs});
+
+  final List<({String role, Healer hub})> hubs;
+
+  @override
+  State<_HubLine> createState() => _HubLineState();
+}
+
+class _HubLineState extends State<_HubLine> {
+  late List<({String lead, Healer hub})> _pieces;
+  final _taps = <TapGestureRecognizer>[];
+
+  @override
+  void initState() {
+    super.initState();
+    _build();
+  }
+
+  @override
+  void didUpdateWidget(_HubLine old) {
+    super.didUpdateWidget(old);
+    if (old.hubs != widget.hubs) _build();
+  }
+
+  void _build() {
+    _dispose();
+    _pieces = hubLine(widget.hubs);
+    for (final p in _pieces) {
+      _taps.add(
+        TapGestureRecognizer()
+          ..onTap = () => context.push('/healers/${p.hub.slug}'),
+      );
+    }
+  }
+
+  void _dispose() {
+    for (final t in _taps) {
+      t.dispose();
+    }
+    _taps.clear();
+  }
+
+  @override
+  void dispose() {
+    _dispose();
+    super.dispose();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: const EdgeInsets.only(top: 12),
+      child: Text.rich(
+        TextSpan(
+          style: const TextStyle(
+            fontSize: 14,
+            color: SpColors.textMuted,
+            height: 1.5,
+          ),
+          children: [
+            for (final (i, p) in _pieces.indexed) ...[
+              TextSpan(text: p.lead),
+              TextSpan(
+                text: p.hub.name,
+                recognizer: _taps[i],
+                style: const TextStyle(
+                  color: SpColors.link,
+                  fontWeight: FontWeight.w600,
+                ),
+              ),
+            ],
+          ],
         ),
       ),
     );

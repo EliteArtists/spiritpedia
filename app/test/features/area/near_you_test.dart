@@ -1,4 +1,5 @@
 import 'package:flutter_test/flutter_test.dart';
+import 'package:spiritpedia/data/models.dart';
 import 'package:spiritpedia/data/shelf_rules.dart';
 import 'package:spiritpedia/features/account/display_name.dart';
 import 'package:spiritpedia/features/star/conductor.dart';
@@ -85,6 +86,56 @@ void main() {
       final r = nearYou(all, manchester, places);
       expect(r.near, [manchesterLocal, manchesterOnline]);
       expect(r.online, [inLondon, nowhere]);
+    });
+
+    // The website's own cases (web/utils/area.test.mjs).
+    const edinburgh = Place(
+      id: 2650225,
+      name: 'Edinburgh',
+      region: 'Scotland',
+      country: 'United Kingdom',
+      lat: 55.9521,
+      lng: -3.1965,
+    );
+    const paris = Place(
+      id: 2988507,
+      name: 'Paris',
+      country: 'France',
+      lat: 48.8534,
+      lng: 2.3488,
+    );
+
+    test('closest to you: nearest first, with distances, towns only, ten at '
+        'most', () {
+      final r = closestTo(all, edinburgh, places);
+      expect([for (final c in r) c.healer], [
+        manchesterLocal,
+        manchesterOnline,
+        inLondon,
+        inCroydon,
+      ]);
+      expect(r.first.km, closeTo(282, 5));
+      expect(closestTo(all, null, places), isEmpty);
+      final many = [
+        for (var i = 0; i < 14; i++)
+          FakeContentRepository.healer(
+            100 + i,
+            'l$i',
+            'L$i',
+            'local_hero',
+            place: london.id,
+          ),
+      ];
+      expect(closestTo(many, paris, places), hasLength(10));
+      expect(closestTo([nowhere], paris, places), isEmpty);
+    });
+
+    test('miles in the United Kingdom and the United States, kilometres '
+        'elsewhere', () {
+      expect(distanceLabel(320, 'France'), '320 km away');
+      expect(distanceLabel(1240.4, 'Germany'), '1,240 km away');
+      expect(distanceLabel(321.9, 'United Kingdom'), '200 miles away');
+      expect(distanceLabel(1, 'United States'), '1 mile away');
     });
   });
 

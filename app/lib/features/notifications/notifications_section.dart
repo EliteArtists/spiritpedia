@@ -56,9 +56,9 @@ class NotificationsIntroScreen extends StatelessWidget {
               ),
               const SizedBox(height: 16),
               const Text(
-                'Now and then, Spiritpedia can send you a gentle note — a welcome, and news about the '
-                'teachers and practices you care about. Never more than you would want, and you can '
-                'turn them off at any time in Account.',
+                'Spiritpedia can let you know when your review or listing is approved and, if you '
+                'like, send a gentle note now and then about the teachers and practices you love. '
+                'Never more than one a week, and you can change this at any time in Account.',
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   fontSize: 16,
@@ -127,29 +127,34 @@ class NotificationsSection extends ConsumerWidget {
     final children = <Widget>[];
     if (n.onThisPhone) {
       children.addAll([
+        // Two switches (migration 0032). Discoveries is off until turned on
+        // here; Account updates is the `general` column, on by default.
+        SwitchListTile(
+          key: const ValueKey('pref-discoveries'),
+          contentPadding: EdgeInsets.zero,
+          title: const Text('Discoveries'),
+          subtitle: const Text(
+            'Something new from teachers you’ve saved, or a free resource for what you love. At most one a week.',
+            style: TextStyle(color: SpColors.textFaint),
+          ),
+          value: n.prefs.discoveries,
+          onChanged: n.busy
+              ? null
+              : (v) =>
+                    ref.read(notificationsProvider.notifier).setDiscoveries(v),
+        ),
         SwitchListTile(
           key: const ValueKey('pref-general'),
           contentPadding: EdgeInsets.zero,
-          title: const Text('General'),
+          title: const Text('Account updates'),
           subtitle: const Text(
-            'A welcome, and news from Spiritpedia',
+            'When your review, listing or request to manage a listing is approved',
             style: TextStyle(color: SpColors.textFaint),
           ),
           value: n.prefs.general,
           onChanged: n.busy
               ? null
               : (v) => ref.read(notificationsProvider.notifier).setGeneral(v),
-        ),
-        const SwitchListTile(
-          key: ValueKey('pref-iam'),
-          contentPadding: EdgeInsets.zero,
-          title: Text('IAM affirmations'),
-          subtitle: Text(
-            'Coming later',
-            style: TextStyle(color: SpColors.textFaint),
-          ),
-          value: false,
-          onChanged: null,
         ),
         Align(
           alignment: Alignment.centerLeft,

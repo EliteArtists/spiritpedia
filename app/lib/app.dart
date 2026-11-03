@@ -11,6 +11,7 @@ import 'features/interests/tailor_star.dart';
 import 'features/intro/intro_overlay.dart';
 import 'features/notifications/notifications_controller.dart';
 import 'features/notifications/push_messaging.dart';
+import 'features/notifications/push_presence.dart';
 import 'features/star/star_layer.dart';
 import 'router.dart';
 import 'theme/colors.dart';
@@ -45,12 +46,14 @@ class _SpiritpediaAppState extends ConsumerState<SpiritpediaApp> {
     super.initState();
     // Known before Tailor Spiritpedia is first opened (its star's place).
     ref.read(tailorIntroShowProvider);
+    // Openings and the first real visit, for the push package's rules.
+    ref.read(pushPresenceProvider);
     final messaging = ref.read(pushMessagingProvider);
-    // A notification arriving while the app is open shows as the iPhone's
-    // own banner (FirebasePushMessaging.showWhileOpen); tapped, it opens here.
+    // Tapped in the background, a notification opens its screen here.
     _subs.add(messaging.opened.listen((note) => _open(note.route)));
-    // Android shows nothing for an app in front — the welcome, sent the
-    // moment notifications are turned on, went unseen — so it shows here.
+    // One arriving while the app is open shows here, as a note with Open, on
+    // both platforms (from 1.0.1; the iPhone's own banner is off while open)
+    // — unless they are already looking at what it is about.
     _subs.add(messaging.arrivedWhileOpen.listen(_showArrived));
     messaging.initialNote().then((note) => _open(note?.route));
     // DEBUG BUILDS ONLY: open on a screen, over Discover —
@@ -88,6 +91,15 @@ class _SpiritpediaAppState extends ConsumerState<SpiritpediaApp> {
   }
 
   void _showArrived(PushNote note) {
+    // "Your review is live" while on that page, "ready to manage" while in My
+    // Account: they can see it already, so say nothing.
+    final route = note.route == null ? null : Uri.tryParse(note.route!);
+    final config = _router.routerDelegate.currentConfiguration;
+    if (route != null &&
+        config.isNotEmpty &&
+        config.last.matchedLocation == route.path) {
+      return;
+    }
     final text = [
       note.title,
       note.body,

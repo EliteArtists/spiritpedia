@@ -1,7 +1,8 @@
 // Badges on every listing (migration 0023): the website's rules
 // (web/utils/badges.js), word for word. README → "Badges explained".
 //
-//   Type      what it is: Practitioner, Channel, App, Organisation, Publisher.
+//   Type      what it is: Practitioner, Channel, App, Organisation, School,
+//             Publisher.
 //   Tier      how big it is; set by the admin, never for sale. The same three
 //             stored values for everyone, named for people or for platforms:
 //               superhero  → Superhero   / Superstar      (gold)
@@ -35,12 +36,13 @@ const _platforms = {
 String? tierName(String? tier, String? entityType) =>
     (isPerson(entityType) ? _people : _platforms)[tier];
 
-/// What it is, for a channel, an app or an organisation. A publisher's card
-/// and page already say what it is, so it shows none.
+/// What it is, for a channel, an app, an organisation or a school. A
+/// publisher's card and page already say what it is, so it shows none.
 String? typeLabel(String? entityType) => switch (entityType) {
   'channel' => 'Channel',
   'app' => 'App',
   'organisation' => 'Organisation',
+  'school' => 'School',
   _ => null,
 };
 

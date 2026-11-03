@@ -338,12 +338,13 @@ class NotificationsController extends Notifier<NotificationsState> {
     state = state.copyWith(onThisPhone: false);
   }
 
-  Future<void> setGeneral(bool value) => _savePrefs(
-    NotificationPrefs(
-      general: value,
-      iamAffirmations: state.prefs.iamAffirmations,
-    ),
-  );
+  /// Account updates (the `general` column).
+  Future<void> setGeneral(bool value) =>
+      _savePrefs(state.prefs.copyWith(general: value));
+
+  /// Discoveries: off until turned on here.
+  Future<void> setDiscoveries(bool value) =>
+      _savePrefs(state.prefs.copyWith(discoveries: value));
 
   Future<void> _savePrefs(NotificationPrefs prefs) async {
     final userId = _userId;

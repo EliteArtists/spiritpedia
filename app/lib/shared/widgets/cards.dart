@@ -80,12 +80,20 @@ class CardHeart extends ConsumerWidget {
 /// the heart top right; the name, and a channel's type bottom right. An
 /// Ascended Master's name stands alone, as on the website's HealerCard.
 class HealerCard extends StatelessWidget {
-  const HealerCard({super.key, required this.healer, this.subjectSlug});
+  const HealerCard({
+    super.key,
+    required this.healer,
+    this.subjectSlug,
+    this.distance,
+  });
 
   final Healer healer;
 
   /// The active subject filter — it picks which portrait shows (pickPortrait).
   final String? subjectSlug;
+
+  /// "320 km away", under the name, for "Closest to you".
+  final String? distance;
 
   @override
   Widget build(BuildContext context) {
@@ -140,6 +148,16 @@ class HealerCard extends StatelessWidget {
                     height: 1.2,
                   ),
                 ),
+                if (distance != null) ...[
+                  const SizedBox(height: 2),
+                  Text(
+                    distance!,
+                    style: const TextStyle(
+                      fontSize: 13,
+                      color: Color(0xFFD1D5DB),
+                    ),
+                  ),
+                ],
                 if (healer.isPlatform) ...[
                   const SizedBox(height: 8),
                   Align(
@@ -409,23 +427,35 @@ class FreeResourceCard extends StatelessWidget {
 /// A publisher's logo, the same way on the card and the page
 /// (web/components/PublisherLogo.jsx): on a white, rounded, padded panel,
 /// contained and centred, never stretched or cropped. White because most
-/// logos come on white; it keeps pale and dark logos readable alike.
+/// logos come on white; it keeps pale and dark logos readable alike. A
+/// school's picture is usually its logo too, so it borrows the panel
+/// ([PublisherLogo.listing]).
 class PublisherLogo extends StatelessWidget {
-  const PublisherLogo({
+  PublisherLogo({
     super.key,
-    required this.publisher,
+    required Publisher publisher,
+    this.padding = const EdgeInsets.all(14),
+  }) : name = publisher.name,
+       logoUrl = publisher.logoUrl;
+
+  /// Any listing's picture on the panel: a school's or an organisation's.
+  const PublisherLogo.listing({
+    super.key,
+    required this.name,
+    required this.logoUrl,
     this.padding = const EdgeInsets.all(14),
   });
 
-  final Publisher publisher;
+  final String name;
+  final String? logoUrl;
   final EdgeInsets padding;
 
   @override
   Widget build(BuildContext context) {
-    final name = publisher.name.trim();
+    final trimmed = name.trim();
     final initial = Center(
       child: Text(
-        name.isEmpty ? '?' : name[0].toUpperCase(),
+        trimmed.isEmpty ? '?' : trimmed[0].toUpperCase(),
         style: const TextStyle(
           fontSize: 40,
           fontWeight: FontWeight.w700,
@@ -443,12 +473,12 @@ class PublisherLogo extends StatelessWidget {
         borderRadius: BorderRadius.circular(12),
         child: Padding(
           padding: padding,
-          child: publisher.logoUrl == null
+          child: logoUrl == null
               ? initial
               : NetImage(
-                  url: publisher.logoUrl,
+                  url: logoUrl,
                   fit: BoxFit.contain,
-                  fallbackLabel: publisher.name,
+                  fallbackLabel: name,
                 ),
         ),
       ),
@@ -527,6 +557,95 @@ class PublisherCard extends StatelessWidget {
       ],
     ),
   );
+}
+
+/// "5 teachers · Founded 2008", or what it is ("School", "Organisation")
+/// when there is neither yet: always one line, so the cards line up.
+String schoolMeta(Healer school, int teacherCount, {String kind = 'School'}) {
+  final parts = [
+    if (teacherCount > 0)
+      '$teacherCount ${teacherCount == 1 ? 'teacher' : 'teachers'}',
+    if (school.foundedYear != null) 'Founded ${school.foundedYear}',
+  ];
+  return parts.isEmpty ? kind : parts.join(' · ');
+}
+
+/// A school's card on Schools & Academies (web/components/SchoolCard.jsx). A
+/// school is a listing, but its picture is usually a logo, so it borrows the
+/// publisher card's look: the logo on its white panel and one meta line.
+/// Retreat Centres & Platforms uses it for organisations too
+/// (kind "Organisation"). Like the website's, it carries no heart: the
+/// school's own page saves it.
+class SchoolCard extends StatelessWidget {
+  const SchoolCard({
+    super.key,
+    required this.school,
+    this.teacherCount = 0,
+    this.kind = 'School',
+  });
+
+  final Healer school;
+  final int teacherCount;
+  final String kind;
+
+  @override
+  Widget build(BuildContext context) {
+    return _Tappable(
+      label: school.name,
+      onTap: () => context.push('/healers/${school.slug}'),
+      child: Stack(
+        fit: StackFit.expand,
+        children: [
+          Padding(
+            padding: const EdgeInsets.all(14),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Expanded(
+                  child: SizedBox(
+                    width: double.infinity,
+                    child: PublisherLogo.listing(
+                      name: school.name,
+                      logoUrl: school.imageUrls.firstOrNull,
+                      padding: const EdgeInsets.fromLTRB(40, 34, 40, 12),
+                    ),
+                  ),
+                ),
+                const SizedBox(height: 12),
+                Text(
+                  school.name,
+                  maxLines: 1,
+                  overflow: TextOverflow.ellipsis,
+                  style: const TextStyle(
+                    fontSize: 15,
+                    fontWeight: FontWeight.w700,
+                  ),
+                ),
+                const SizedBox(height: 3),
+                Text(
+                  schoolMeta(school, teacherCount, kind: kind),
+                  maxLines: 1,
+                  overflow: TextOverflow.ellipsis,
+                  style: const TextStyle(
+                    fontSize: 12,
+                    color: SpColors.textMuted,
+                  ),
+                ),
+              ],
+            ),
+          ),
+          // Top left, as on every card: its tier, its type and ✓ Verified.
+          // The type pill is dark here, or it would be white on white.
+          Positioned(
+            top: 22,
+            left: 22,
+            right: 22,
+            child: ListingBadgeRow.healer(school, onLight: true),
+          ),
+        ],
+      ),
+    );
+  }
 }
 
 class VideoCard extends StatelessWidget {

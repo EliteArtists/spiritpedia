@@ -146,7 +146,7 @@ read-only checks only.
 
 ```bash
 flutter analyze        # must say "No issues found"
-flutter test           # 336 tests at build 27, all passing (one dev-only test skips)
+flutter test           # 369 tests at 1.0.1 (28), all passing (one dev-only test skips)
 ```
 
 Screenshots for review come from a temporary integration test (a "tour") that
@@ -177,10 +177,10 @@ the root README, "Test accounts must never cause an email".
 **Build numbers so far:** what each added is in root README §10.1. **Build
 10 was an accidental duplicate of build 9**, uploaded from Xcode, so the
 numbering jumped from 9 to 11. **24** is 1.0 in Apple review and in Google's
-closed test; **25** is built for Android and goes to the closed test on 31 Oct
-2026 (25 and 26 were never uploaded for iOS); **27** is on TestFlight. The
-next is **1.0.1**, the push notification build, for both stores about 4 Nov
-2026.
+closed test; **25** has been in the closed test since 31 Oct 2026 (25 and 26
+were never uploaded for iOS); **27** is on TestFlight. The next is **1.0.1
+(28)** for both stores: build 27 + the push package + Closest to you + the
+hubs app side (root README §10.1), shown on the simulator before it is built.
 
 The Mac has run out of disk and memory during builds: one simulator at a
 time, the Xcode app closed, never the test suite during a tour, and check free
@@ -365,8 +365,15 @@ is saved.
   token exists until the person says yes (signed in) in Account →
   Notifications.
 - The device token is registered with `register_push_token`.
-  `notification_preferences` holds General (on) and IAM affirmations (off,
-  for later).
+  `notification_preferences` holds **Discoveries** (off until turned on) and
+  **Account updates** (the `general` column, on) from 1.0.1 (migration 0032);
+  `iam_affirmations` stays reserved and is no longer shown. What each sends,
+  and every rule: root README §9.11.
+- **Openings and the first real visit** (`notifications/push_presence.dart`,
+  signed in only): `note_app_open` with the phone's UTC offset at start,
+  sign-in and coming back after 30 minutes; `note_first_visit` once per
+  account after about 3 minutes in the app (paused in the background), a
+  save, or a settled feeling search.
 - The server sends through `web/utils/push.js`, using the Firebase service
   account in Vercel.
 - **The first notification** is sent once per account by `/api/push/welcome`
@@ -381,10 +388,10 @@ is saved.
 - **Turning off** ("Turn off notifications on this phone", and sign-out)
   removes the token this phone last registered (kept on the phone) plus
   whatever Firebase gives after waiting for Apple's (build 24).
-- **While the app is open**, a notification shows as the iPhone's own
-  banner (`FirebasePushMessaging.showWhileOpen`, said at every launch). On
-  Android, which shows nothing for an app in front, the app shows it as a
-  note with **Open** (build 24).
+- **While the app is open**, the app shows a notification itself as a note
+  with **Open**, on both platforms (Android from build 24; iOS from 1.0.1,
+  when `FirebasePushMessaging.showWhileOpen` turned the iPhone's banner off),
+  and says nothing when the screen it opens is already on top.
 
 **How will you use Spiritpedia?** (for build 14, `account/user_type_card.dart`)
 - Once, for a brand-new account however it signed in (Account, the save
@@ -400,7 +407,10 @@ is saved.
 
 **Your area, the conductor and your name** (build 15; migration 0019)
 - **Practitioners Near You** uses the person's area: in person within 50 km,
-  nearest first, then online practitioners from anywhere. An area is a town
+  nearest first, then online practitioners from anywhere. With nobody within
+  50 km it becomes **Closest to you** (1.0.1): the 10 nearest with a town,
+  each card saying how far (km, or miles for the UK, US, Liberia, Myanmar;
+  `closestTo` and `distanceLabel` in `data/shelf_rules.dart`). An area is a town
   (`places`), never a position; the rules are in `docs/personalisation.md` §4.
 - **Setting it:** "Set your area" on the shelf, Tailor Spiritpedia → Your
   Area ("Do you want me to show you practitioners in your area?" · **Set Your
