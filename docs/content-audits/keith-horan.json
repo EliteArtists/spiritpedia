@@ -1,0 +1,208 @@
+{
+  "healer": {
+    "healer_slug": "keith-horan",
+    "location_source": "https://insighttimer.com/keith",
+    "create": {
+      "name": "Keith Horan",
+      "bio": "Keith Horan is a meditation teacher in the west of Ireland who came to meditation at 22 and has practised and taught for more than two decades since. He studied with the Tibetan Buddhist teacher and psychologist Winston McCullough, trained with the Zen teacher Stephen Mugen Snyder Roshi, and was in the first group to complete a master's in mindfulness-based approaches at Bangor University in Wales. He is also an accredited coach, and he draws on both trainings to help people bring a settled, present mind into decisions and everyday life. Before this he worked as a teacher and in business, and he is the father of three teenagers.\n\nAround Galway he leads a weekly Thursday evening group in Clarinbridge that combines gentle concentration practice with the Buddhist heart practices of kindness, compassion and gratitude, as well as occasional half-day workshops nearby in Kinvara. Online he runs a short free sitting every Wednesday at dawn and re:connect, a three-month mindfulness programme. His guided meditations, including MBSR-style body scans and breathing practices, are free on his website and on Insight Timer, and his tone is warm, unhurried and down to earth.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local_online",
+      "city": "Galway",
+      "country": "Ireland",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "website_url": "https://www.keithhoran.com/",
+      "booking_url": "https://www.keithhoran.com/in-person-meditation/",
+      "youtube_url": "https://www.youtube.com/@keithhoranmeditation",
+      "instagram_url": "https://www.instagram.com/keithhoranmeditation/",
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "info@keithhoran.com",
+      "image_urls": [
+        "https://users.insighttimer.com/F4j4a9w7m8h6f7r3q8m4Y8x3Q5R6A0u0M4v2Q0D2e7W7N5n2c6H9n0m1P1V6F6p7E9v4N7w2F1f6X7q0k2E6t1x6g3Y1H7G8n5k1/pictures/square_large.jpeg",
+        "https://www.keithhoran.com/wp-content/uploads/2025/03/keith-horan-home.jpg",
+        "https://www.keithhoran.com/wp-content/uploads/2024/12/keith-horan-164_72.jpg"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "insight-timer",
+      "role": "instructor"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Meditation:  Innate Goodness",
+      "url": "https://www.youtube.com/watch?v=vXQFoehQqtA",
+      "subjects": [
+        "meditation"
+      ],
+      "channel": "Keith Horan"
+    },
+    {
+      "title": "\"The Art of Coming Back: Why Presence Matters\"",
+      "url": "https://www.youtube.com/watch?v=SpFnmJY1Nbg",
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "channel": "Keith Horan"
+    },
+    {
+      "title": "Breakthrough: The Mentor's Role in Your Meditation Journey",
+      "url": "https://www.youtube.com/watch?v=RK4LVBzwk0Y",
+      "subjects": [
+        "meditation"
+      ],
+      "channel": "Keith Horan"
+    },
+    {
+      "title": "Introduction to Self Compassion - Live Meditation 09 April",
+      "url": "https://www.youtube.com/watch?v=y8G3soosA7U",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "channel": "Keith Horan"
+    },
+    {
+      "title": "Body Practice Live Meditation 06 June",
+      "url": "https://www.youtube.com/watch?v=RICtatUc6vc",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "channel": "Keith Horan"
+    },
+    {
+      "title": "Compassion - Live Meditation 04 June",
+      "url": "https://www.youtube.com/watch?v=slLOhyg6uwY",
+      "subjects": [
+        "meditation"
+      ],
+      "channel": "Keith Horan"
+    },
+    {
+      "title": "Breath - Live Meditation 02 June",
+      "url": "https://www.youtube.com/watch?v=47m3Gm7HQCs",
+      "subjects": [
+        "meditation",
+        "breathwork"
+      ],
+      "channel": "Keith Horan"
+    }
+  ],
+  "books": [],
+  "courses": [
+    {
+      "title": "Thursday Evening Meditation",
+      "url": "https://www.keithhoran.com/in-person-meditation/",
+      "description": "A weekly hour of group meditation at Setu Studio in Clarinbridge, County Galway, for beginners and experienced meditators. Sessions combine gentle concentration training, heart practices such as kindness and gratitude, and time for questions; booking is by WhatsApp.",
+      "price": "€10 EUR per session",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://www.keithhoran.com/wp-content/uploads/2024/12/connect_Main_72.jpg"
+    },
+    {
+      "title": "re:connect",
+      "url": "https://www.keithhoran.com/reconnect-booking/",
+      "description": "A three-month programme that pairs regular meditation guidance with coaching conversations about direction and purpose. It begins with a free introductory check-in call.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "image": "https://www.keithhoran.com/wp-content/uploads/2024/12/reconnectLogo_1.png"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Guided Mindfulness (MBSR)",
+      "url": "https://insighttimer.com/keith/guided-meditations/guided-mindfulness-meditation-mbsr",
+      "description": "A 27-minute guided sitting on Insight Timer in the style of the MBSR programme, moving through breath, body, sounds and thoughts.",
+      "featured": true,
+      "resource_type": "meditation",
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "image": "https://libraryitems.insighttimer.com/j9n1y2q4e6x1p7g8m0e9y0v5n2n1x4p4g0v4r0t2/pictures/tiny_square_medium.jpeg"
+    },
+    {
+      "title": "Body Scan: Become Present With Yourself",
+      "url": "https://insighttimer.com/keith/guided-meditations/body-scan-meditation-26",
+      "description": "A slow guided body scan on Insight Timer, about half an hour long, for settling attention in physical sensation.",
+      "featured": false,
+      "resource_type": "meditation",
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "image": "https://libraryitems.insighttimer.com/a3u1k2s0w3n0d0f8p8q6w3v1r0w6x7v6g5x4t7v5/pictures/tiny_square_medium.jpeg"
+    },
+    {
+      "title": "Free Meditation Recordings",
+      "url": "https://www.keithhoran.com/free-meditation-recordings/",
+      "description": "A page of free recordings on his website, including MBSR-style body scans, mindful movement, walking practice, a three-step breathing space and meditations on equanimity and self-compassion.",
+      "featured": false,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://www.keithhoran.com/wp-content/uploads/2025/10/Equanimity-Meditation-300x214.png"
+    },
+    {
+      "title": "Wednesday Morning Meditation",
+      "url": "https://www.keithhoran.com/online-meditation/",
+      "description": "A free half-hour live sitting on Zoom early every Wednesday morning, with breath practice, a heart meditation and shared silence. Sign up by email to receive the link.",
+      "featured": false,
+      "resource_type": "workshop",
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://www.keithhoran.com/wp-content/uploads/2024/12/connect_Main_72.jpg"
+    }
+  ],
+  "sprint": {
+    "sprint": "uk-europe-1",
+    "hub": "insight-timer",
+    "rank": 131,
+    "hub_url": "https://insighttimer.com/keith",
+    "insight_timer_url": "https://insighttimer.com/keith",
+    "tier_evidence": "Insight Timer 1.3k followers (profile, 3 Nov 2026); YouTube @keithhoranmeditation 15 subscribers (channel header, 3 Nov 2026); Instagram not read (instagram.com robots.txt disallows all agents); Facebook not opened → ~1.3k readable total → local_hero",
+    "email": "yes",
+    "email_source": "https://www.keithhoran.com/contact/",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 9 source(s)",
+    "flags": [
+      "Base: Insight Timer gives Galway, Ireland, and his own site says he lives in the west of Ireland; his weekly class is in Clarinbridge, County Galway. City set to Galway.",
+      "Coach-leaning: he presents himself as both meditation teacher and transformational coach; re:connect mixes the two. Meditation is the main thread of the site, so he was kept.",
+      "His podcast ('Keith & The Mindfulness Community' / Mindful Momentum) is described around stress and anxiety, so it is not listed and not linked.",
+      "Two Instagram accounts are linked from his site (@keithhoranmeditation and @keithmindfulness); neither could be read. The first is used as instagram_url.",
+      "Facebook links on his site point to a 'Being Mindful Ireland' page and a group, so facebook_url is left null.",
+      "Two site photos are outdoor shots in a hat and scarf; they match the Insight Timer headshot (same beard and face) but a human may prefer only the headshot."
+    ],
+    "left_out": [
+      "Resting in the Heart workshop (Sunday 14 June, Kinvara, €20 EUR): the date has passed.",
+      "Podcast (Spotify/Apple): framed around stress and anxiety, health-claim rule.",
+      "Blog post 'Pain Acceptance Meditation' and Insight Timer track 'Sleep Well': condition or sleep-aid framing, left out to be safe.",
+      "YouTube 'Compassion during the time of Corona virus' and the other dated 2020 live sessions beyond the three chosen: dated framing or near-duplicates.",
+      "'Mindful Momentum - Season 2 Trailer': a podcast trailer, not teaching."
+    ]
+  },
+  "images_final": true
+}

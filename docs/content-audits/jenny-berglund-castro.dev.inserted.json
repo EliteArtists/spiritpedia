@@ -1,0 +1,51 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 669,
+    "healer_slug": "jenny-berglund-castro"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "86884644-873c-4e34-8c7e-4fa72f921a85",
+      "slug": "reiki-intuitive-and-sound-healing-sessions-with-jenny",
+      "title": "Reiki, Intuitive and Sound Healing Sessions with Jenny"
+    },
+    {
+      "table": "courses",
+      "id": "ac8ffd61-37fc-45a8-bfce-b226fef15da3",
+      "slug": "life-coaching-with-jenny",
+      "title": "Life Coaching with Jenny"
+    },
+    {
+      "table": "courses",
+      "id": "a0ac4a5e-f334-48b8-a515-ae4241701100",
+      "slug": "yin-yoga-healing",
+      "title": "Yin Yoga & Healing"
+    },
+    {
+      "table": "free_resources",
+      "id": "09aceff6-73da-46d2-86d0-69f39908d04d",
+      "slug": "5-min-work-break",
+      "title": "5 Min Work Break"
+    },
+    {
+      "table": "free_resources",
+      "id": "56997aa6-c951-41e5-b367-f2ae88aeb621",
+      "slug": "10-min-work-break-inspired-by-don-miguel-ruizs-4-agreements",
+      "title": "10-Min Work Break Inspired By Don Miguel Ruiz's 4 Agreements"
+    },
+    {
+      "table": "free_resources",
+      "id": "6be8ad4c-24b2-4dd9-819a-87eb70ef0a4d",
+      "slug": "come-home-to-yourself-5-daily-rituals-for-inner-balance",
+      "title": "Come Home to Yourself: 5 Daily Rituals for Inner Balance"
+    },
+    {
+      "table": "hub_teachers",
+      "id": "560d7f17-9f51-4ad5-8ac9-4936c343748b",
+      "title": "jenny-berglund-castro teaches at Insight Timer"
+    }
+  ],
+  "at": "2026-11-03T16:50:46.938Z"
+}

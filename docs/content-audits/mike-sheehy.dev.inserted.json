@@ -1,0 +1,51 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 672,
+    "healer_slug": "mike-sheehy"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "4757f714-8875-46c6-adb0-33f49460ec45",
+      "slug": "midweek-online-guided-meditation",
+      "title": "Midweek Online Guided Meditation"
+    },
+    {
+      "table": "courses",
+      "id": "b938da85-5801-473f-8a31-b0fc3d329bd1",
+      "slug": "the-awareness-advantage-talks-workshops",
+      "title": "The Awareness Advantage: Talks & Workshops"
+    },
+    {
+      "table": "courses",
+      "id": "76b9425b-b7b2-438f-b648-045f9b9d272b",
+      "slug": "30mins-running-walking-meditation",
+      "title": "30mins Running/Walking Meditation"
+    },
+    {
+      "table": "free_resources",
+      "id": "264df374-7518-42f2-8fd0-bd8e36fd500a",
+      "slug": "free-mindfulness-meditation-starter-kit",
+      "title": "Free Mindfulness Meditation Starter Kit"
+    },
+    {
+      "table": "free_resources",
+      "id": "c6e62118-09a0-41b4-ae57-d51fc76f48bf",
+      "slug": "6-minute-guided-mindfulness-meditation",
+      "title": "6-Minute Guided Mindfulness Meditation"
+    },
+    {
+      "table": "free_resources",
+      "id": "7ad4ad5c-118e-4316-a753-78aba0e011be",
+      "slug": "20-minute-guided-mindfulness-meditation",
+      "title": "20 Minute Guided Mindfulness Meditation"
+    },
+    {
+      "table": "hub_teachers",
+      "id": "96afe4eb-7fb5-4f39-9b49-8792fbe65122",
+      "title": "mike-sheehy teaches at Insight Timer"
+    }
+  ],
+  "at": "2026-11-03T16:51:03.297Z"
+}

@@ -1,0 +1,39 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 671,
+    "healer_slug": "anne-eberhardt"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "c06bf0ad-c118-4fc2-8e03-ffe64ef929e6",
+      "slug": "learn-to-meditate-course",
+      "title": "Learn to Meditate Course"
+    },
+    {
+      "table": "courses",
+      "id": "55b2babf-b86f-464b-823f-d57476c1b251",
+      "slug": "path-to-being-200hrs-yoga-teacher-training-2027",
+      "title": "Path to Being 200hrs Yoga Teacher Training 2027"
+    },
+    {
+      "table": "free_resources",
+      "id": "a545e971-cfdd-4ed8-951b-559bddda9c17",
+      "slug": "deep-rest-meditation",
+      "title": "Deep Rest Meditation"
+    },
+    {
+      "table": "free_resources",
+      "id": "26c56d8a-cb0c-4d13-bd58-43d20d1cd2fa",
+      "slug": "yoga-nidra-for-complete-relaxation",
+      "title": "Yoga Nidra For Complete Relaxation"
+    },
+    {
+      "table": "hub_teachers",
+      "id": "8ab8d78a-a8b6-4e19-ada7-ce9533bfe696",
+      "title": "anne-eberhardt teaches at Insight Timer"
+    }
+  ],
+  "at": "2026-11-03T16:50:59.101Z"
+}

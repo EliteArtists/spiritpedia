@@ -1,0 +1,152 @@
+{
+  "healer": {
+    "healer_slug": "jenny-berglund-castro",
+    "location_source": "https://www.homeinyoga.com/about",
+    "create": {
+      "name": "Jenny Berglund Castro",
+      "bio": "Jenny Berglund Castro is a yoga, meditation and Reiki teacher based in Stockholm, where she founded and runs HOME in Yoga, a small studio in the Vasastan district. She has practised yoga and meditation for more than thirty years and holds certificates in yoga, meditation, healing and life coaching, and teaches Reiki at Master Teacher level. Before moving back to Stockholm in 2022 she spent some fifteen years abroad, nine of them in New York and six in Los Angeles, running businesses and exploring a wide range of contemplative and energy practices. Among the teachers she names as influences are davidji, Tara Brach and Jack Kornfield.\n\nAt the studio she leads gentle classes such as Yin Yoga woven with sound, Reiki and breathing practice, and sees people one to one for Reiki, intuitive and sound healing sessions and for coaching conversations, where breath, meditation and movement often play a part. Some classes are also streamed live. She teaches in Swedish and English, and on Insight Timer she shares short guided meditations in both languages, including work-break practices for busy days and a reflection on the Four Agreements of Don Miguel Ruiz. She also leads occasional workshops and retreats with other teachers from the studio, and brings a practical, unhurried tone to all of it.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local_online",
+      "city": "Stockholm",
+      "country": "Sweden",
+      "subjects": [
+        "yoga",
+        "meditation",
+        "reiki"
+      ],
+      "website_url": "https://www.homeinyoga.com/",
+      "booking_url": "https://www.homeinyoga.com/treatments",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "info@homeinyoga.com",
+      "image_urls": [
+        "https://images.squarespace-cdn.com/content/v1/67e42df9440f952d9bf09433/5b0e627a-7d61-4548-abe1-a7859ad68dbd/Home+in+yoga+Anna+Drvnik+Jenny+Berglund+Castro+portrait.png",
+        "https://users.insighttimer.com/R9Z3L3A3z7p5Z5A9F1Z1t4V8J2q7b5e6r1F7m4r9S0h1j9E6M7m1d5k1v3e6R3W6q5q4m9Q7J9d8G7p2R7G2y9M8P4v9W4F3L4h4/pictures/square_medium.jpeg"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "insight-timer",
+      "role": "instructor"
+    }
+  ],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Reiki, Intuitive and Sound Healing Sessions with Jenny",
+      "url": "https://www.homeinyoga.com/treatments",
+      "description": "One-to-one energy sessions at her Stockholm studio, drawing on Reiki, intuitive work, sound and chakra balancing. Sessions are booked through the studio's booking system or by email.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "reiki",
+        "sound-healing",
+        "chakra-healing"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/67e42df9440f952d9bf09433/a31352dd-5b55-4775-83b7-453ebc720119/1.+Counselling.png"
+    },
+    {
+      "title": "Life Coaching with Jenny",
+      "url": "https://www.homeinyoga.com/events-workshops-retreats/life-coaching-with-jenny-exploration-calls-start-in-march",
+      "description": "A collaborative coaching process for people facing a decision or a change of direction, with breath, meditation and movement used when helpful. It begins with a free 15-minute exploration call.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "life-coaching",
+        "soul-purpose"
+      ],
+      "image": "http://static1.squarespace.com/static/67e42df9440f952d9bf09433/67e42dfb440f952d9bf0953d/69958695b787ca21189da016/1793182123873/Home+in+yoga+Anna+Drvnik+Jenny+Berglund+Castro+portrait.png?format=1500w"
+    },
+    {
+      "title": "Yin Yoga & Healing",
+      "url": "https://www.homeinyoga.com/classeshealing",
+      "description": "A slow weekly class at HOME in Yoga in which long-held floor postures are combined with singing bowls, Reiki and breathing practice. No experience is needed, and classes run in Swedish or English.",
+      "price": "280 SEK drop-in (first class 150 SEK)",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga",
+        "sound-healing",
+        "reiki"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/67e42df9440f952d9bf09433/aa6bd5ae-02ca-48ba-a86d-e47519cc4df8/260923Jenny_HOMEyoga3219_lo.jpg"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "5 Min Work Break",
+      "url": "https://insighttimer.com/jennyberglundcastro/guided-meditations/5-min-work-break",
+      "description": "A short guided pause for the middle of a working day: a few unhurried breaths and a moment of quiet, set to soft piano. Suitable for complete beginners.",
+      "featured": true,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://libraryitems.insighttimer.com/wzryWqhrzyLD8KkokZ7o/pictures/tiny_square_medium.jpeg"
+    },
+    {
+      "title": "10-Min Work Break Inspired By Don Miguel Ruiz's 4 Agreements",
+      "url": "https://insighttimer.com/jennyberglundcastro/guided-meditations/10-min-work-break-inspired-by-don-miguel-ruiz-4-agreements",
+      "description": "A ten-minute sitting with the breath and a visualisation of warm light, followed by a gentle reflection on each of the four agreements from Don Miguel Ruiz's book.",
+      "featured": false,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "image": "https://libraryitems.insighttimer.com/h9upHXvR0ns9ySl2QpEb/pictures/tiny_square_medium.jpeg"
+    },
+    {
+      "title": "Come Home to Yourself: 5 Daily Rituals for Inner Balance",
+      "url": "https://www.homeinyoga.com/5dailyrituals",
+      "description": "A free PDF guide from her studio with five simple daily practices for feeling steady and grounded. It is sent by email when you join the studio's mailing list.",
+      "featured": false,
+      "resource_type": "download",
+      "subjects": [
+        "mindfulness",
+        "self-healing"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/67e42df9440f952d9bf09433/5a45a4bf-1f33-4bc1-98a0-acbe1df1963c/Screenshot+2025-10-11+at+13.38.50.png"
+    }
+  ],
+  "sprint": {
+    "sprint": "uk-europe-1",
+    "hub": "insight-timer",
+    "rank": 115,
+    "hub_url": "https://insighttimer.com/jennyberglundcastro",
+    "insight_timer_url": "https://insighttimer.com/jennyberglundcastro",
+    "tier_evidence": "Insight Timer 442 followers (profile via WebFetch, 3 Nov 2026); Instagram @homeinyoga not read (instagram.com robots.txt disallows all agents; it is also the studio account); no YouTube channel, Facebook or X found → ~442 total → local_hero",
+    "email": "yes",
+    "email_source": "https://www.homeinyoga.com/",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 7 source(s)",
+    "flags": [
+      "Email is the studio inbox (info@homeinyoga.com), published on the HOME in Yoga home page and footer; the studio is hers (she is the founder).",
+      "Her website is the studio site homeinyoga.com (found via a ClassPass listing; Insight Timer only links her Instagram). The studio also hosts other practitioners (counselling, acupuncture, massage, mediumship); only her own offerings are included.",
+      "Instagram (@homeinyoga, the studio account) left unlinked and uncounted: instagram.com robots.txt disallows all agents, so it was not opened.",
+      "Insight Timer play counts read on track pages (5 Min Work Break 3.5k, 4 Agreements 437); the profile page shows no plays, so the two picks may not be her two most-played.",
+      "Yin Yoga & Healing class: the studio page does not name the teacher for each class; a booking-site listing says most classes are taught by her. A human may want to confirm she leads it.",
+      "Health wording: the studio home page welcomes people 'experiencing an illness' and the healing page offers sessions for 'physical, mental, emotional and spiritual needs'; her items here avoid that framing."
+    ],
+    "left_out": [
+      "Workshop 14/11 Inner Seasons (Gathering of the Sisters, with Therese Lind Bjellder): names perimenopause and menopause (health rule), and co-led.",
+      "India Yoga & Ayurveda Retreat, 6-14 Feb 2027 (with Elin Jonsson): includes consultation and treatments with an Ayurvedic doctor and the page frames Ayurveda as preventing illness (borderline medical); no price published yet.",
+      "Insight Timer tracks titled for healing or stress release ('Deep Body Scan For Healing', 'Meditation For Stress Release' series): borderline under the health rule.",
+      "Podcast 'Syns inte finns inte' (2023, Swedish): mentioned in her Insight Timer bio but no public page was found.",
+      "Corporate events and gift cards: not teaching offerings."
+    ]
+  },
+  "images_final": true
+}

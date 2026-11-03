@@ -1,0 +1,40 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 684,
+    "healer_slug": "noirin-sheahan"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "18c86f96-f434-4b64-8df7-81ea6c9cde3d",
+      "slug": "ongoing-mahasi-retreat-with-noirin-sheahan-spring",
+      "title": "Ongoing Mahasi Retreat with Noirin Sheahan (spring)"
+    },
+    {
+      "table": "courses",
+      "id": "6b7636ff-3c92-45cb-9a25-6c87c35633ad",
+      "slug": "ongoing-mahasi-retreat-with-noirin-sheahan-summer",
+      "title": "Ongoing Mahasi Retreat with Noirin Sheahan (summer)"
+    },
+    {
+      "table": "free_resources",
+      "id": "08fa4a8c-0b32-4f2e-ad12-4c577a32c7d7",
+      "slug": "vipassana-instructions",
+      "title": "Vipassana Instructions"
+    },
+    {
+      "table": "free_resources",
+      "id": "07a33050-a7e5-491a-ae2e-5292e13da8f2",
+      "slug": "sharing-the-path",
+      "title": "Sharing the Path"
+    },
+    {
+      "table": "free_resources",
+      "id": "daec991f-5a5e-40ac-940c-06448ceb3f94",
+      "slug": "introduction-to-the-mahasi-meditation-practice",
+      "title": "Introduction to the Mahasi Meditation Practice"
+    }
+  ],
+  "at": "2026-11-03T17:02:51.154Z"
+}

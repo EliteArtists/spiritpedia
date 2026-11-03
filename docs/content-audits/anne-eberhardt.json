@@ -1,0 +1,122 @@
+{
+  "healer": {
+    "healer_slug": "anne-eberhardt",
+    "location_source": "https://bubbleyoga.ch/contact/",
+    "create": {
+      "name": "Anne Eberhardt",
+      "bio": "Anne Eberhardt is a yoga and meditation teacher and the founder of Bubble Yoga, a studio in St. Gallen in eastern Switzerland that also teaches online. French by background, with long ties to Australia, she has taught since 2015 and draws on Hatha yoga and the wider Vedic tradition, with more than 1,000 hours of her own training behind her. She teaches in English, French and Spanish, and runs mindfulness programmes for companies, universities and schools alongside her studio work.\n\nHer classes range from flowing vinyasa to slow yin, restorative practice, pranayama and yoga nidra, and she brings a keen interest in anatomy to how she teaches movement. Rest, kindness and steady practice are recurring themes. Her three-morning Learn to Meditate course on Zoom introduces a simple technique she calls Being meditation, with group practice and talks on self-awareness, and she leads the studio's Path to Being 200-hour teacher training, which she frames as deepening one's own practice before teaching others. Several of her short guided meditations, including yoga nidra and practices for rest and presence, are free to hear on Insight Timer.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local_online",
+      "city": "St. Gallen",
+      "country": "Switzerland",
+      "subjects": [
+        "yoga",
+        "meditation",
+        "mindfulness"
+      ],
+      "website_url": "https://bubbleyoga.ch/",
+      "booking_url": "https://bubbleyoga.ch/academy/meditation-course/",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "hello@bubbleyoga.ch",
+      "image_urls": [
+        "https://bubbleyoga.ch/wp-content/uploads/2022/08/Anne-09-Edit-small-1024x683.jpg"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "insight-timer",
+      "role": "instructor"
+    }
+  ],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Learn to Meditate Course",
+      "url": "https://bubbleyoga.ch/academy/meditation-course/",
+      "description": "Three live morning sessions of ninety minutes on Zoom, on consecutive days, with practice set in between. Anne explains how the mind works, teaches a simple Being meditation technique and helps each person set up a daily habit. Graduates may re-join later runs at no charge.",
+      "price": "CHF 180 (firm ticket) / CHF 200 (flex ticket)",
+      "product_type": "course",
+      "start_date": "2026-11-18",
+      "end_date": "2026-11-20",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "http://bubbleyoga.ch/wp-content/themes/yoga/images/BY_facebookLogo_Final.jpg"
+    },
+    {
+      "title": "Path to Being 200hrs Yoga Teacher Training 2027",
+      "url": "https://bubbleyoga.ch/academy/pathtobeing-200h/",
+      "description": "A 200-hour yoga teacher training led by Anne, opening with an intensive week at the Sonnennest centre in Graubünden and continuing over weekends at the St. Gallen studio until June. It covers asana, anatomy, philosophy, meditation and teaching skills, and is open to those who simply want to deepen their own practice.",
+      "price": "CHF 4,500 (early bird CHF 4,300 before 30 Sept 2026; accommodation for the intensive week extra)",
+      "product_type": "course",
+      "start_date": "2027-03-06",
+      "end_date": "2027-06-20",
+      "subjects": [
+        "yoga",
+        "meditation"
+      ],
+      "image": "http://bubbleyoga.ch/wp-content/themes/yoga/images/BY_facebookLogo_Final.jpg"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Deep Rest Meditation",
+      "url": "https://insighttimer.com/bubbleyoga/guided-meditations/deep-rest-meditation-7",
+      "description": "A fifteen-minute guided practice for letting the body and attention settle into stillness. Free on Insight Timer.",
+      "featured": true,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://libraryitems.insighttimer.com/n7c3s9n0t5v5n0f5y7t6r6j7d1u8b0r7q2t3z7a8/pictures/tiny_square_medium.jpeg"
+    },
+    {
+      "title": "Yoga Nidra For Complete Relaxation",
+      "url": "https://insighttimer.com/bubbleyoga/guided-meditations/yoga-nidra-for-complete-relaxation",
+      "description": "A thirty-minute yoga nidra, lying down, guided by Anne through the body and breath. Free on Insight Timer.",
+      "featured": false,
+      "resource_type": "meditation",
+      "subjects": [
+        "yoga",
+        "meditation"
+      ],
+      "image": "https://libraryitems.insighttimer.com/b2z7r1p2n6d0p8m7k7e0w5w4r8h6m6a4j5s7w2u0/pictures/tiny_square_medium.jpeg"
+    }
+  ],
+  "sprint": {
+    "sprint": "uk-europe-1",
+    "hub": "insight-timer",
+    "rank": 119,
+    "hub_url": "https://insighttimer.com/bubbleyoga",
+    "insight_timer_url": "https://insighttimer.com/bubbleyoga",
+    "tier_evidence": "Insight Timer 313 followers (profile via WebFetch, 3 Nov 2026); no personal YouTube found; Instagram (@bubble.yoga) and Facebook (bubbleyogaspace) are studio accounts and both block agents in robots.txt, not read or counted; Vimeo and Spotify are studio accounts, not counted → ~313 total → local_hero",
+    "email": "yes",
+    "email_source": "https://bubbleyoga.ch/contact/",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 9 source(s)",
+    "flags": [
+      "Email is the studio inbox (hello@bubbleyoga.ch) of Bubble Yoga, which she founded; no personal address is published.",
+      "Base: the Bubble Yoga site (contact page) says the Zürich studio closed in May 2024 and the studio is now in St. Gallen; Insight Timer still shows 'Zürich District'. City set to St. Gallen from her own site; a home town is not published (a postcode in bank details was ignored as private).",
+      "Health rule: her team profile lists 'Therapeutic Yoga' and 'Yoga for Cancer' among what she teaches and calls her a 'Mental Health Advocate'; those are not in the bio or items. Her main work is studio yoga and meditation, so the plan was written, but the owner may want to look.",
+      "Insight Timer play counts are not shown on the web profile, so the two free tracks are the first listed rather than verified most-played.",
+      "Photos: only one clear headshot used; other site images are group or class shots.",
+      "Learn to Meditate repeats several times a year; the plan uses the next published run (18-20 Nov 2026)."
+    ],
+    "left_out": [
+      "Language of Sound teacher training 2027 (with Kim Bouttera): framed around sound therapy and therapeutic settings, and no exact 2027 dates published; left out as borderline.",
+      "Yin Yoga 50hrs training (May-June 2026) and Yoga Nidra & Sleep Magic training (April 2026): dates passed.",
+      "Myofascial Release Retreat (13-17 Sept 2026): date passed, and framed around body therapy.",
+      "Studio class timetable, memberships and private sessions: studio-wide offers taught by the whole team, not by Anne by name.",
+      "Remaining Insight Timer tracks, including 'Sleep Appreciation Meditation': kept to two."
+    ]
+  },
+  "images_final": true
+}

@@ -1,0 +1,39 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 668,
+    "healer_slug": "gunaketu"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "7cc9dd8a-6601-4238-825f-74314327a1e5",
+      "slug": "caring-for-ourselves-and-the-world-enjoying-conscious-wellbeing",
+      "title": "Caring For Ourselves And The World: Enjoying Conscious Wellbeing"
+    },
+    {
+      "table": "courses",
+      "id": "93fd8816-7a57-4699-ad8b-448039b083bb",
+      "slug": "meditation-evenings-and-courses-at-oslo-buddhist-centre",
+      "title": "Meditation evenings and courses at Oslo Buddhist Centre"
+    },
+    {
+      "table": "free_resources",
+      "id": "e74c063e-9dd6-4a98-9063-a7723daba2df",
+      "slug": "meditasjon-pa-kjrlig-vennlighet-metta-bhavana",
+      "title": "Meditasjon på kjærlig vennlighet - Metta Bhavana"
+    },
+    {
+      "table": "free_resources",
+      "id": "3f5ef8ab-d984-4eb7-a8e3-cf2c034aaa91",
+      "slug": "meditasjon-pa-pusten-i-20-minutter",
+      "title": "Meditasjon på pusten i 20 minutter"
+    },
+    {
+      "table": "hub_teachers",
+      "id": "735898eb-ab60-4890-a5c4-a8d1fcc3ec14",
+      "title": "gunaketu teaches at Insight Timer"
+    }
+  ],
+  "at": "2026-11-03T16:50:43.500Z"
+}

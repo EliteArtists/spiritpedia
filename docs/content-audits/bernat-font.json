@@ -1,0 +1,188 @@
+{
+  "healer": {
+    "healer_slug": "bernat-font",
+    "location_source": "https://dharmaseed.org/teacher/1342/",
+    "create": {
+      "name": "Bernat Font",
+      "bio": "Bernat Font is a meditation teacher and scholar of early Buddhism based in Barcelona, who teaches in English, Catalan and Spanish. He came to Buddhism as a teenager, first through Tibetan practice, and later turned towards the Pali texts and the Theravāda, with the Burmese meditation master Sayadaw U Tejaniya shaping much of how he practises. He trained as a community dharma leader at Gaia House and then as a teacher with Bodhi College, where Stephen Batchelor was his mentor, and he completed a doctorate at Bristol University in Buddhist Studies. His research on vedanā, the feeling tone of experience, became the book Early Buddhist Hedonism, which reads the early path as one that works with wholesome joy rather than against it.\n\nHe leads retreats and online courses for Bodhi College, Gaia House and other European centres, and in 2022 co-founded Espai Sati, a secular Buddhist association that runs practice groups, retreats and courses in Spanish and Catalan. His sessions mix guided practice with close reading of the suttas, delivered with humour and everyday examples, and he has a particular commitment to LGBTQIA+ practitioners, co-leading Rainbow Dharma retreats. He also translates Pali texts into Spanish and, in another life, plays and composes jazz piano.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local_online",
+      "city": "Barcelona",
+      "country": "Spain",
+      "subjects": [
+        "meditation",
+        "mindfulness",
+        "ancient-wisdom"
+      ],
+      "website_url": "https://dharma.cat/",
+      "booking_url": "https://dharma.cat/calendar/",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": null,
+      "image_urls": [
+        "https://dharma.cat/wp-content/uploads/2024/10/foto-portada-2-edited.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [
+    {
+      "title": "Early Buddhist Hedonism: The Role of Spiritual Pleasure in the Pali Discourses",
+      "slug": "early-buddhist-hedonism",
+      "author": "Bernat Font",
+      "asin": "1350586838",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "cover": "https://m.media-amazon.com/images/P/1350586838.01._SCLZZZZZZZ_.jpg",
+      "description": "An academic monograph drawn from his Bristol doctorate. It traces a shared pattern of growing pleasure and ease through the jhānas, the awakening factors and mindfulness of breathing, and argues that the early path makes use of our wish to feel good.",
+      "subjects": [
+        "ancient-wisdom",
+        "meditation"
+      ]
+    }
+  ],
+  "courses": [
+    {
+      "title": "Not Your Typical Course on Mettā",
+      "url": "https://bodhi-college.org/events/173-not-your-typical-course-on-metta/region-UK/",
+      "description": "A six-week online course on Sunday afternoons for anyone who has found loving-kindness practice hard to connect with. Each session combines teaching, contemplative exercises, group discussion and questions, rooted in what the oldest Buddhist texts say about mettā. Sessions are recorded.",
+      "price": "From £139 GBP",
+      "product_type": "course",
+      "start_date": "2026-11-08",
+      "end_date": "2026-12-13",
+      "subjects": [
+        "meditation",
+        "ancient-wisdom"
+      ],
+      "image": "https://bodhi-college.org/wp-content/uploads/bodhi-fb2.jpg"
+    },
+    {
+      "title": "Right Attitude and Open Awareness",
+      "url": "https://gaiahouse.co.uk/programme/right-attitude-open-awareness-27/",
+      "description": "A weekend online retreat with Gaia House, co-led with Laura Bridgman, on resting in relaxed, continuous awareness rather than forced concentration. The approach draws on the teaching of Sayadaw U Tejaniya, with practice, reflections and time for questions; suitable for all levels.",
+      "price": "From £47 GBP (supported rate; standard £129 GBP)",
+      "product_type": "course",
+      "start_date": "2027-02-13",
+      "end_date": "2027-02-14",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://gaiahouse.co.uk/wp-content/uploads/placeholder.gif"
+    },
+    {
+      "title": "Mettā in the Heart of Daily Life",
+      "url": "https://bodhi-college.org/events/190-metta-in-the-heart-of-daily-life/region-UK/",
+      "description": "An online 'sandwich retreat' with Bodhi College, co-led with River Wolton, that weaves kindness practice into an ordinary working week. Opening and closing sessions frame daily practice at home.",
+      "price": "From £89 GBP",
+      "product_type": "course",
+      "start_date": "2027-03-14",
+      "end_date": "2027-03-20",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://bodhi-college.org/wp-content/uploads/bodhi-fb2.jpg"
+    },
+    {
+      "title": "Samyutta: dharma online",
+      "url": "https://espaisati.org/es/samyutta-2026/",
+      "description": "Monthly Sunday sessions in Spanish run through Espai Sati, balancing study of early Buddhist texts with practice suggestions for daily life. Sessions are recorded for those enrolled in each block, and fees follow a sliding scale.",
+      "price": "From €50 EUR per block",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "ancient-wisdom",
+        "meditation"
+      ],
+      "image": "https://dharma.cat/wp-content/uploads/2024/10/foto-portada-2-edited.jpg"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "“Mind in the middle” - a guided meditation",
+      "url": "https://dharmaseed.org/talks/96048/",
+      "description": "A guided sitting recorded at a London Insight Meditation day in February 2026, free to stream on Dharma Seed.",
+      "featured": true,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://dharma.cat/wp-content/uploads/2024/10/foto-portada-2-edited.jpg"
+    },
+    {
+      "title": "Bernat Font's Dharma Talks on Dharma Seed",
+      "url": "https://dharmaseed.org/teacher/1342/",
+      "description": "His archive of more than seventy recorded talks, instructions and guided meditations in English, mostly from retreats at Gaia House and other insight centres.",
+      "featured": false,
+      "resource_type": "practice",
+      "subjects": [
+        "meditation",
+        "ancient-wisdom"
+      ],
+      "image": "https://dharma.cat/wp-content/uploads/2024/10/foto-portada-2-edited.jpg"
+    },
+    {
+      "title": "Early Buddhism: the Dharma of Pleasure",
+      "url": "https://www.audiodharma.org/talks/21067",
+      "description": "A recorded talk on AudioDharma introducing the themes of his research: how joy and ease function as part of the path in the early discourses.",
+      "featured": false,
+      "resource_type": "practice",
+      "subjects": [
+        "ancient-wisdom",
+        "meditation"
+      ],
+      "image": "https://dharma.cat/wp-content/uploads/2024/10/foto-portada-2-edited.jpg"
+    },
+    {
+      "title": "Bernat Font on AudioDharma",
+      "url": "https://www.audiodharma.org/speakers/390",
+      "description": "His speaker page on AudioDharma, with talks and series in Spanish and English, including a secular dharma series given with Martine Batchelor.",
+      "featured": false,
+      "resource_type": "practice",
+      "subjects": [
+        "meditation",
+        "ancient-wisdom"
+      ],
+      "image": "https://dharma.cat/wp-content/uploads/2024/10/foto-portada-2-edited.jpg"
+    }
+  ],
+  "sprint": {
+    "sprint": "uk-europe-1",
+    "hub": "gaia-house",
+    "rank": 4,
+    "hub_url": "https://gaiahouse.co.uk/retreats/about-the-teachers/",
+    "tier_evidence": "No YouTube channel found (web search, 3 Nov 2026); his site links no Instagram, Facebook, X or TikTok account; DharmaSeed and AudioDharma show no follower counts → 0 readable followers → local_hero",
+    "email": "contact form",
+    "email_source": null,
+    "contact_form_url": "https://dharma.cat/contact-2/",
+    "bio_check": "OK: no 8-word runs against 10 source(s)",
+    "flags": [
+      "Base: DharmaSeed's profile says he founded Espai Sati in Barcelona, and Espai Sati (he is its president) runs a Barcelona sangha; no page says in so many words that he lives in Barcelona, so please confirm.",
+      "Follower counts are 0 because no public social accounts were found; tier is local_hero on that basis.",
+      "Gaia House is not a Spiritpedia listing yet, so teaches_at is empty; his Gaia House programme is in courses. Bodhi College (where he is faculty) and Espai Sati are not listings either.",
+      "No personal email is published; his own site has a contact form. Espai Sati publishes hola@espaisati.org (organisation inbox) if an address is preferred.",
+      "Book listed by ISBN-10 computed from the publisher ISBN-13 9781350586833 (Bloomsbury, 2026); amazon.com's robots.txt disallows Claude agents so the /dp/ page was not opened, and bloomsbury.com returned a Cloudflare challenge (403), so it was skipped.",
+      "Book cover is the draft cover image from his own writings page; swap for the final cover when available.",
+      "Only one photo could be confirmed (his own site); other about-page photos are group or two-person shots.",
+      "Possible overlap with Stephen Batchelor (rank 36, same sprint): co-author of Living Life on Life's Terms and his mentor."
+    ],
+    "left_out": [
+      "Living Life on Life's Terms (with Stephen and Martine Batchelor, Tuwhiri 2026): paperback ISBN is 979-8-9909491-1-9 (from the publisher's taster PDF), which has no ISBN-10, and amazon.com cannot be opened to find its ASIN; tuwhiri.nz returned 429, so it was skipped.",
+      "Uncovering the Roots of the Teachings (Bodhi College): series began 19 Sep 2026.",
+      "Retiro de budismo secular (Espai Sati, 9-13 Oct 2026), Sharpham, Bristol Insight and The Barn retreats: past.",
+      "Gaia House Young Persons Retreat and residential Rainbow Dharma (July 2027): no programme page of their own yet (calendar links only to the general programme page).",
+      "Substack newsletter Berni's dharma: substack robots.txt disallows ClaudeBot, so not opened.",
+      "No YouTube videos: no channel of his own or teaching video found."
+    ]
+  },
+  "images_final": true
+}

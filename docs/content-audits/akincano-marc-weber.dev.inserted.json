@@ -1,0 +1,57 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 673,
+    "healer_slug": "akincano-marc-weber"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "70d8e4de-b465-4629-b84a-e0c783befb00",
+      "slug": "the-thermals-of-awakening",
+      "title": "The Thermals of Awakening"
+    },
+    {
+      "table": "courses",
+      "id": "6ca7362e-e872-4554-af6e-114061ae63c6",
+      "slug": "in-the-buddhas-presence-individuality-and-liberation",
+      "title": "In the Buddha's Presence: Individuality and Liberation"
+    },
+    {
+      "table": "courses",
+      "id": "685ff10b-aa30-4482-9e37-3207bc7bf857",
+      "slug": "making-the-most-of-suffering-stories-of-failing-forward",
+      "title": "Making the Most of Suffering: Stories of Failing Forward"
+    },
+    {
+      "table": "courses",
+      "id": "7e925656-2ddb-44f3-8a00-e10c04ffb1b1",
+      "slug": "atammaya-online-meditation-evening",
+      "title": "Atammaya Online Meditation Evening"
+    },
+    {
+      "table": "free_resources",
+      "id": "b0ed0be7-2289-4baf-999e-04c481d012c7",
+      "slug": "four-dimensions-of-contemplative-practice",
+      "title": "Four dimensions of contemplative practice"
+    },
+    {
+      "table": "free_resources",
+      "id": "370a3cb7-2938-4033-b0c7-2789bede7be5",
+      "slug": "guided-metta-meditation-no-phrases",
+      "title": "Guided Mettā Meditation (no phrases)"
+    },
+    {
+      "table": "free_resources",
+      "id": "4ff7f7d5-a0c4-435f-ac9f-1822b03be707",
+      "slug": "akincano-marc-webers-talks-on-dharma-seed",
+      "title": "Akincano Marc Weber's talks on Dharma Seed"
+    },
+    {
+      "table": "hub_teachers",
+      "id": "19aa0792-4a2f-458e-8ae9-6addb0827135",
+      "title": "akincano-marc-weber teaches at Insight Meditation Society"
+    }
+  ],
+  "at": "2026-11-03T16:51:14.734Z"
+}

@@ -1,0 +1,64 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 662,
+    "healer_slug": "bernat-font"
+  },
+  "rows": [
+    {
+      "table": "books",
+      "id": 1786,
+      "slug": "early-buddhist-hedonism",
+      "title": "Early Buddhist Hedonism: The Role of Spiritual Pleasure in the Pali Discourses"
+    },
+    {
+      "table": "courses",
+      "id": "59d1074c-b151-4302-98b1-e51529bd708e",
+      "slug": "not-your-typical-course-on-metta",
+      "title": "Not Your Typical Course on Mettā"
+    },
+    {
+      "table": "courses",
+      "id": "8e3bdb2a-4876-425b-bf65-95bfb6cd190b",
+      "slug": "right-attitude-and-open-awareness",
+      "title": "Right Attitude and Open Awareness"
+    },
+    {
+      "table": "courses",
+      "id": "49d8feae-0570-49a6-af3b-6797bc3d7550",
+      "slug": "metta-in-the-heart-of-daily-life",
+      "title": "Mettā in the Heart of Daily Life"
+    },
+    {
+      "table": "courses",
+      "id": "e741f4bd-cec7-4552-83aa-6786d50cee07",
+      "slug": "samyutta-dharma-online",
+      "title": "Samyutta: dharma online"
+    },
+    {
+      "table": "free_resources",
+      "id": "232ca1dc-402f-4d22-bf22-0e09eafc6855",
+      "slug": "mind-in-the-middle-a-guided-meditation",
+      "title": "“Mind in the middle” - a guided meditation"
+    },
+    {
+      "table": "free_resources",
+      "id": "72b93d27-f276-4bf5-989a-e3a23295ad08",
+      "slug": "bernat-fonts-dharma-talks-on-dharma-seed",
+      "title": "Bernat Font's Dharma Talks on Dharma Seed"
+    },
+    {
+      "table": "free_resources",
+      "id": "521514eb-190d-4589-87b0-7d412ba4965b",
+      "slug": "early-buddhism-the-dharma-of-pleasure",
+      "title": "Early Buddhism: the Dharma of Pleasure"
+    },
+    {
+      "table": "free_resources",
+      "id": "46a8c105-8bfb-4415-9902-da23e2d8a5ad",
+      "slug": "bernat-font-on-audiodharma",
+      "title": "Bernat Font on AudioDharma"
+    }
+  ],
+  "at": "2026-11-03T16:49:49.471Z"
+}

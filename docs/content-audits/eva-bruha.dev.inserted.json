@@ -1,0 +1,45 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 686,
+    "healer_slug": "eva-bruha"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "3528bc17-f3df-44d5-b251-99d176a90bf0",
+      "slug": "weekly-drop-in-meditation-in-nidau",
+      "title": "Weekly Drop-in Meditation in Nidau"
+    },
+    {
+      "table": "courses",
+      "id": "77588a91-cdd7-4fac-adfa-ee308fd17149",
+      "slug": "meditation-and-voice-awareness-workshops",
+      "title": "Meditation and Voice Awareness workshops"
+    },
+    {
+      "table": "courses",
+      "id": "3cf78f25-d73d-496b-a890-7b8c8bd52271",
+      "slug": "meditation-supervision-and-mentoring",
+      "title": "Meditation supervision and mentoring"
+    },
+    {
+      "table": "free_resources",
+      "id": "bafd53e6-aaef-4b0e-82e8-edaf8c56e68e",
+      "slug": "30-minute-body-scan",
+      "title": "30 Minute Body Scan"
+    },
+    {
+      "table": "free_resources",
+      "id": "aea30e66-4229-4724-8e11-0ba02ec1204d",
+      "slug": "erholsamer-bodyscan-fur-beginner-fortgeschrittene",
+      "title": "Erholsamer Bodyscan für Beginner & Fortgeschrittene"
+    },
+    {
+      "table": "hub_teachers",
+      "id": "2e02547d-2f56-492c-9ab9-7adebd6e385f",
+      "title": "eva-bruha teaches at Insight Timer"
+    }
+  ],
+  "at": "2026-11-03T17:03:05.761Z"
+}

@@ -1,0 +1,280 @@
+{
+  "healer": {
+    "healer_slug": "orlaith-osullivan",
+    "location_source": "https://insighttimer.com/orlaithsullivan",
+    "create": {
+      "name": "Orlaith O'Sullivan",
+      "bio": "Orlaith O'Sullivan is an Irish mindfulness teacher in the Plum Village tradition of Thich Nhat Hanh, whom she has followed for more than two decades. She is an ordained lay member of his Order of Interbeing and coordinates Wake Up Schools, Plum Village's international work on mindfulness in education. She was also among the first people certified by the VIA Institute on Character to teach Mindfulness-Based Strengths Practice, and she brings that strengths-based approach into much of her teaching. She holds a doctorate and has a long love of poetry, which runs through her retreats.\n\nFrom Dublin, where she started two local sanghas for adults and for families, she teaches children, teenagers, adults, schools and workplaces. Her offerings include online mornings that pair silent practice with poems, Winterlight, a seasonal on-demand journey through the dark months, day retreats in Ireland, the Calm Café course on short restorative breaks, and individual sessions. She keeps a library of free guided meditations and deep relaxations on her website and on Insight Timer, and her style is warm, practical and playful, with plenty of rest built in.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local_online",
+      "city": "Dublin",
+      "country": "Ireland",
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "website_url": "https://www.orlaithosullivan.com/",
+      "booking_url": "https://www.orlaithosullivan.com/shop",
+      "youtube_url": "https://www.youtube.com/@orlaithmindfulness",
+      "instagram_url": "https://www.instagram.com/orlaithos/",
+      "facebook_url": "https://www.facebook.com/orlaithMTC",
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "hello@orlaithosullivan.com",
+      "image_urls": [
+        "https://users.insighttimer.com/Y1Q0W4Q1Y0n1C2n5W1R1F6D7s4r8z6Y7J8N2z2b0F6f1Z3Z4y2p6a2S4p1f3L8P7L8T1Q9X5P9J9R2X1y0r4h9b9h7W8E9P5s3L0/pictures/square_large.jpeg",
+        "https://yt3.googleusercontent.com/7zbCZxv2aMOUfiZxw0EpinXjd9mauTGcbuHcJXFpDXX3GC96OuBBBvLVD8v0NG7ot66BRMXYbg=s900",
+        "https://images.squarespace-cdn.com/content/v1/568a4c3f69492ea07bd4ed04/1452371546056-QMMO9S68RBO504KATIA1/image-asset.jpeg"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "insight-timer",
+      "role": "instructor"
+    }
+  ],
+  "videos": [
+    {
+      "title": "The Five Remembrances (guided meditation)",
+      "url": "https://www.youtube.com/watch?v=HZxzldGofTM",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "channel": "Orlaith O'Sullivan: Mindfulness & Happiness"
+    },
+    {
+      "title": "We Are All Flowers - find your superwateringpower!",
+      "url": "https://www.youtube.com/watch?v=3qIGyDz1sJc",
+      "subjects": [
+        "mindfulness"
+      ],
+      "channel": "Orlaith O'Sullivan: Mindfulness & Happiness"
+    },
+    {
+      "title": "Mindfulness & Poetry - Lost by David Wagoner",
+      "url": "https://www.youtube.com/watch?v=CkUD64ZKWq0",
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "channel": "Orlaith O'Sullivan: Mindfulness & Happiness"
+    },
+    {
+      "title": "Inner Weather (practice for children)",
+      "url": "https://www.youtube.com/watch?v=IKlbX54thq8",
+      "subjects": [
+        "mindfulness"
+      ],
+      "channel": "Orlaith O'Sullivan: Mindfulness & Happiness"
+    },
+    {
+      "title": "Connecting with the best in you (guided meditation on character strengths)",
+      "url": "https://www.youtube.com/watch?v=4QmJX_K3i44",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "channel": "Orlaith O'Sullivan: Mindfulness & Happiness"
+    },
+    {
+      "title": "Creative Nature: imaginature",
+      "url": "https://www.youtube.com/watch?v=R_KSb4htbwg",
+      "subjects": [
+        "mindfulness"
+      ],
+      "channel": "Orlaith O'Sullivan: Mindfulness & Happiness"
+    },
+    {
+      "title": "Dropping into Presence (guided meditation)",
+      "url": "https://www.youtube.com/watch?v=V_5M5YdSUM8",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "channel": "Orlaith O'Sullivan: Mindfulness & Happiness"
+    },
+    {
+      "title": "Happy Minds, Loving Hearts (Week One)",
+      "url": "https://www.youtube.com/watch?v=55OvpXzokIE",
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "channel": "Orlaith O'Sullivan: Mindfulness & Happiness"
+    },
+    {
+      "title": "Space for a decision",
+      "url": "https://www.youtube.com/watch?v=z0beYgVeCvw",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "channel": "Orlaith O'Sullivan: Mindfulness & Happiness"
+    },
+    {
+      "title": "Workday breathing break",
+      "url": "https://www.youtube.com/watch?v=sG0380gkSnQ",
+      "subjects": [
+        "mindfulness",
+        "breathwork"
+      ],
+      "channel": "Orlaith O'Sullivan: Mindfulness & Happiness"
+    }
+  ],
+  "books": [],
+  "courses": [
+    {
+      "title": "Winterlight",
+      "url": "https://www.orlaithosullivan.com/winterlight",
+      "description": "An on-demand seasonal course that moves from the dark of winter towards spring in three stages, with weekly recorded talks, guided practices, poems and printable reflections. It opens each year around Halloween and can be started at any point in the winter.",
+      "price": "€80 EUR",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "image": "http://static1.squarespace.com/static/568a4c3f69492ea07bd4ed04/t/60bf7f3efeb0de4d9ef7ebff/1623162686596/Circle+logo-sea+blue.png?format=1500w"
+    },
+    {
+      "title": "Day Retreat: Fresh New Year",
+      "url": "https://www.orlaithosullivan.com/fresh-new-year-day-retreat",
+      "description": "A gentle in-person day of practice in Duleek, County Meath, to open the new year. The day mixes guided and silent practice with time to journal, reflect or rest.",
+      "price": "€80 EUR",
+      "product_type": "course",
+      "start_date": "2027-01-02",
+      "end_date": "2027-01-02",
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "image": "http://static1.squarespace.com/static/568a4c3f69492ea07bd4ed04/t/60bf7f3efeb0de4d9ef7ebff/1623162686596/Circle+logo-sea+blue.png?format=1500w"
+    },
+    {
+      "title": "The Calm Café",
+      "url": "https://www.udemy.com/course/the-calm-cafe/",
+      "description": "A self-paced course on turning short breaks in the working day into moments of real rest. Each lesson offers a brief practice for relaxing and refreshing your energy.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "image": "https://users.insighttimer.com/Y1Q0W4Q1Y0n1C2n5W1R1F6D7s4r8z6Y7J8N2z2b0F6f1Z3Z4y2p6a2S4p1f3L8P7L8T1Q9X5P9J9R2X1y0r4h9b9h7W8E9P5s3L0/pictures/square_large.jpeg"
+    },
+    {
+      "title": "1:1 Session with Orlaith",
+      "url": "https://www.orlaithosullivan.com/shop/11-session-with-orlaith",
+      "description": "Individual mindfulness sessions, in person or online, shaped around your own practice at home and at work. She asks people to get in touch by email before booking.",
+      "price": "€80 EUR",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "image": "http://static1.squarespace.com/static/568a4c3f69492ea07bd4ed04/56ea8756859fd081d7808b67/68a5f0bf38562859d9f51a8d/1762521635503/6d65726368616e745f69643d616363745f31386a3334614a3945346a343465314626636c69656e743d5041594d454e545f50414745.jpeg?format=1500w"
+    },
+    {
+      "title": "Poetry Retreat: The Tender Gravity of Kindness",
+      "url": "https://www.orlaithosullivan.com/shop/poetryretreatjune2020",
+      "description": "A recorded mindfulness and poetry morning to follow at home, with poems by MacNeice, Rilke, Naomi Shihab Nye and others used as meditations. It arrives as a downloadable PDF with links to the recordings.",
+      "price": "€8 EUR (sale price; usually €15 EUR)",
+      "product_type": "download",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "image": "http://static1.squarespace.com/static/568a4c3f69492ea07bd4ed04/56ea8756859fd081d7808b67/5ee0c5a8bd74f353adf498a0/1762521604528/product+images-poetry+retreats.jpg?format=1500w"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Guided Meditations",
+      "url": "https://www.orlaithosullivan.com/meditations",
+      "description": "A page of free downloadable meditations from her website, including a springtime practice and a longer rest in open presence. The recordings are offered on a donation basis.",
+      "featured": true,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "http://static1.squarespace.com/static/568a4c3f69492ea07bd4ed04/t/60bf7f3efeb0de4d9ef7ebff/1623162686596/Circle+logo-sea+blue.png?format=1500w"
+    },
+    {
+      "title": "Deep Relaxation",
+      "url": "https://insighttimer.com/orlaithsullivan/guided-meditations/deep-relaxation-6",
+      "description": "A long guided body scan on Insight Timer for letting the body settle completely. It can be used before sleep or simply as a time of rest.",
+      "featured": false,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://libraryitems.insighttimer.com/w5m9l2m3e6g3f0c9l7p8m7e8p0r8u0e8y2s7b2u2/pictures/tiny_square_medium.jpeg"
+    },
+    {
+      "title": "The Five Remembrances",
+      "url": "https://insighttimer.com/orlaithsullivan/guided-meditations/the-five-remembrances-2",
+      "description": "A short guided reflection on Insight Timer based on a classic Buddhist contemplation of change and impermanence, as taught in the Plum Village tradition.",
+      "featured": false,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://libraryitems.insighttimer.com/x6n0c8e8a8g0r3s2w9p8a7x6w3g3r1d6h6e4m3w8/pictures/tiny_square_medium.jpeg"
+    },
+    {
+      "title": "Relaxation",
+      "url": "https://www.orlaithosullivan.com/relaxation",
+      "description": "A free downloadable deep relaxation on her website, guiding attention slowly through the body. It comes with a short explanation of why relaxation belongs in mindfulness practice.",
+      "featured": false,
+      "resource_type": "practice",
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "image": "http://static1.squarespace.com/static/568a4c3f69492ea07bd4ed04/t/60bf7f3efeb0de4d9ef7ebff/1623162686596/Circle+logo-sea+blue.png?format=1500w"
+    }
+  ],
+  "sprint": {
+    "sprint": "uk-europe-1",
+    "hub": "insight-timer",
+    "rank": 104,
+    "hub_url": "https://insighttimer.com/orlaithsullivan",
+    "insight_timer_url": "https://insighttimer.com/orlaithsullivan",
+    "tier_evidence": "YouTube @orlaithmindfulness 228 subscribers (channel header, 3 Nov 2026); Insight Timer 1.6k followers (profile, 3 Nov 2026); Instagram and Facebook not read (instagram.com robots.txt blocks all agents; Facebook not opened); X not counted → ~1.8k readable total → local_hero",
+    "email": "yes",
+    "email_source": "https://www.orlaithosullivan.com/contact",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 11 source(s)",
+    "flags": [
+      "The queue note said her website's robots.txt blocks Claude agents; it is the standard Squarespace file (AI crawlers grouped with * and only /config, /api/ and similar paths disallowed), so the site was read.",
+      "Instagram and Facebook follower counts could not be read (Instagram robots.txt disallows all agents); tier rests on YouTube and Insight Timer only, but nothing suggests she is near 100k.",
+      "Third photo (website about page) is older than the Insight Timer and YouTube headshots; it looks like the same woman but a human should confirm, or drop it.",
+      "Insight Timer track play counts were not shown, so the two Insight Timer tracks were chosen from the top of her 'Tracks' list rather than by plays.",
+      "The Fresh New Year day retreat page says both 'Saturday' and 'Sunday' 2 January 2027; 2 January 2027 is a Saturday, and that date is used.",
+      "The Calm Café is also an Insight Timer course; only the Udemy listing (linked from her home page) is used, and Udemy did not show a price to a plain fetch."
+    ],
+    "left_out": [
+      "Holding Space for Anxiety (€40 course): condition-named, health-claim rule.",
+      "Calm: mindfulness for tweens: page frames it around anxiety.",
+      "Strengths to Thrive (began 18 Oct 2026), Poetry & Practice online retreat (25 Oct 2026) and Bridges of Peace retreat (June 2026): dated and already started or passed.",
+      "Flourish, Mindful Family, Focus and Self-care courses: listed without dates or prices, so not clearly running; left out.",
+      "Happy Teachers Change the World: authored by Thich Nhat Hanh and Katherine Weare; she promotes it through Wake Up Schools but is not credited as an author.",
+      "YouTube 'Why sleep is your friend' and the Happy Senses Festival clips: exam/sleep framing or under two minutes.",
+      "World Happiness Fest role and corporate/school programmes: not individual offerings with their own booking page."
+    ]
+  },
+  "images_final": true
+}

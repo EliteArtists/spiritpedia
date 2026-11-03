@@ -1,0 +1,137 @@
+{
+  "healer": {
+    "healer_slug": "eva-bruha",
+    "location_source": "https://evabruhameditation.ch/eva-kontakt/",
+    "create": {
+      "name": "Eva Bruha",
+      "bio": "Eva Bruha is a Swiss mindfulness and insight meditation teacher who lives in Nidau, near Biel/Bienne. Born in 1952 in the canton of St. Gallen, she worked as a social worker in and around Bern before spending several years exploring the voice as a path of self-knowledge. From 1990 she sat long retreats in Asia, Europe and America with teachers such as Christopher Titmuss, Sayadaw U Janaka, Carol Wilson, Joseph Goldstein and Tsoknyi Rinpoche, more than three years of silent practice in all, and lived for spells at the Insight Meditation Society in Massachusetts and the Beatenberg meditation centre in Switzerland.\n\nIn 2003 she moved to the Dingle peninsula in Ireland, where for fourteen years she taught meditation, founded the Kalyana Centre for Mindfulness and led many silent, walking and New Year retreats as well as eight-week MBSR courses. She qualified as an MBSR teacher through Bangor University and the Institut für Achtsamkeit, where she later trained new teachers. Back in Switzerland since 2019, she leads a weekly drop-in sitting in Nidau that mixes body scan, sitting and walking practice, gentle Kum Nye movement and metta, runs occasional courses in German and on Zoom in English, mentors meditators and MBSR teachers, and weaves her own Voice Awareness work, humming and toning vowels, into silent practice.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local_online",
+      "city": "Nidau",
+      "country": "Switzerland",
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "website_url": "https://evabruhameditation.ch/",
+      "booking_url": "https://evabruhameditation.ch/kurse/",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "evabruha@gmail.com",
+      "image_urls": [
+        "https://evabruhameditation.ch/wp-content/uploads/2020/11/Eva_Bruha_Meditation_20-1024x768.jpg"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "insight-timer",
+      "role": "instructor"
+    }
+  ],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Weekly Drop-in Meditation in Nidau",
+      "url": "https://evabruhameditation.ch/kurse/",
+      "description": "A Monday-morning sitting group at the 3-Zen studio in Nidau, open to beginners and experienced meditators alike. Each session moves through a few forms of mindfulness practice, such as body scan, sitting, walking, slow Kum Nye movement or metta. Taught in German; book by text message by 9am on the day.",
+      "price": "CHF 20 per session",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "image": "https://evabruhameditation.ch/wp-content/uploads/2020/11/Eva_Bruha_Meditation_6-scaled.jpg"
+    },
+    {
+      "title": "Meditation and Voice Awareness workshops",
+      "url": "https://evabruhameditation.ch/retreats/",
+      "description": "Day or half-day workshops, on request, in the method she developed of joining silent insight meditation with humming and toning single vowels. Periods of sound alternate with periods of stillness.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "mindfulness",
+        "sound-healing"
+      ],
+      "image": "https://evabruhameditation.ch/wp-content/uploads/2020/11/Eva_Bruha_Meditation_14-1024x768.jpg"
+    },
+    {
+      "title": "Meditation supervision and mentoring",
+      "url": "https://evabruhameditation.ch/supervision/",
+      "description": "One-to-one conversations for people preparing or teaching an MBSR course, and for anyone who feels stuck or uncertain in their own meditation practice. She draws on more than sixty eight-week courses she has led.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "image": "https://evabruhameditation.ch/wp-content/uploads/2020/11/Eva_Bruha_Meditation_6-1024x768.jpg"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "30 Minute Body Scan",
+      "url": "https://insighttimer.com/evabruha/guided-meditations/30-minute-body-scan-as-part-of-the-mbsr-course",
+      "description": "An English-language guided body scan of about half an hour, lying down and moving attention slowly through the body. Free on Insight Timer.",
+      "featured": true,
+      "resource_type": "meditation",
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "image": "https://libraryitems.insighttimer.com/u4w8y4t5g8e9p7k3e8d9y1w1e2d9x9j2q9w6m7t4/pictures/tiny_square_medium.jpeg"
+    },
+    {
+      "title": "Erholsamer Bodyscan für Beginner & Fortgeschrittene",
+      "url": "https://insighttimer.com/de/evabruha/gefuehrte-meditation/bodyscan-fur-beginner-und-fortgeschrittene",
+      "description": "Her German-language body scan for both newcomers and regular meditators, just over half an hour long. Free on Insight Timer.",
+      "featured": false,
+      "resource_type": "meditation",
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "image": "https://evabruhameditation.ch/wp-content/uploads/2020/11/Eva_Bruha_Meditation_20-1024x768.jpg"
+    }
+  ],
+  "sprint": {
+    "sprint": "uk-europe-1",
+    "hub": "insight-timer",
+    "rank": 133,
+    "hub_url": "https://insighttimer.com/evabruha",
+    "insight_timer_url": "https://insighttimer.com/evabruha",
+    "tier_evidence": "Insight Timer 563 followers (profile, via WebFetch, 3 Nov 2026); no YouTube, Instagram, Facebook, X or TikTok account linked from her site or Insight Timer profile → 563 total → local_hero",
+    "email": "yes",
+    "email_source": "https://evabruhameditation.ch/eva-kontakt/",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 9 source(s)",
+    "flags": [
+      "Her home page says the website has not been updated since spring 2026, but that she still offers courses from time to time and the weekly Monday drop-in in Nidau; someone may want to confirm the drop-in is still running.",
+      "Only one usable photo: the other images on her site are clouds and sky.",
+      "Site is mainly in German (one short English page); the drop-in and workshops are taught in German, while she offers Zoom courses in English on request.",
+      "MBSR is a large part of her work; her MBSR page sells the course on a list of conditions, so the MBSR courses are left out and the bio mentions MBSR only as training and history. She is also an authorised insight meditation teacher with a long retreat background, so she is treated as a meditation teacher, not a therapist.",
+      "Insight Timer is rendered by script; follower count, bio fragments and the track list were read with WebFetch. No play counts are shown; the two tracks chosen are the top two on the profile's Popular tab.",
+      "Two published addresses: evabruha@gmail.com (contact page) and info@evabruhameditation.ch (footer); the personal one is used."
+    ],
+    "left_out": [
+      "MBSR eight-week course and the 10-week afternoon course 'Mit Achtsamkeit Deine Probleme angehen' (Oct–Nov 2025): past dates, and both are sold on conditions (pain, anxiety, depression, illness).",
+      "Voice Awareness Friday evenings: no current dates published.",
+      "Turning The Heart To The Dharma (Insight Timer and her contact page): music.",
+      "Kum Nye page: describes it as 'Tibetan healing yoga' acting on meridians; no separate offering, mentioned in the bio only as movement practice.",
+      "No videos or books found."
+    ]
+  },
+  "images_final": true
+}

@@ -1,0 +1,166 @@
+{
+  "healer": {
+    "healer_slug": "akincano-marc-weber",
+    "location_source": "https://akincano.net/impressum/",
+    "create": {
+      "name": "Akincano Marc Weber",
+      "bio": "Akincano Marc Weber is a Swiss-born Buddhist teacher who lives in the Rhineland and teaches from Cologne. Drawn to meditation as a teenager, he sat first in Soto Zen settings before ordaining in the mid-1980s as a bhikkhu at Chithurst in England, in the Thai forest lineage of Ajahn Chah under Ajahn Sumedho. He spent some twenty years as a monk in Britain, Thailand and Switzerland, including several years studying Pali and the suttas with Bhikkhu Payutto, and returned to lay life in 2005. He later trained in Core Process Psychotherapy at the Karuna Institute and holds an MA in mindfulness-based psychotherapy practice.\n\nHis teaching stays close to the early discourses, read before they hardened into schools and commentaries, and he describes himself as belonging to no single lineage today. Typical themes are satipaṭṭhāna, breath meditation, calm and insight, the brahmavihāras and the psychology of contemplative life. He co-founded Bodhi College in 2015 and teaches its European courses, guides Atammaya, a Cologne community with a weekly online evening offered on donation, and leads retreats and study programmes in Europe and the United States, including at the Barre Center for Buddhist Studies. More than three hundred of his talks are free on Dharma Seed.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local_online",
+      "city": "Cologne",
+      "country": "Germany",
+      "subjects": [
+        "meditation",
+        "mindfulness",
+        "ancient-wisdom"
+      ],
+      "website_url": "https://akincano.net/en/",
+      "booking_url": "https://akincano.net/en/activities/",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "webmaster@akincano.net",
+      "image_urls": [
+        "https://akincano.net/wp-content/uploads/amw-portra%CC%88t-2021-768x863.jpeg",
+        "https://www.buddhistinquiry.org/wp-content/uploads/2024/07/a6900ae5-akincano-weber-2.jpg"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "insight-meditation-society",
+      "role": "instructor"
+    }
+  ],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "The Thermals of Awakening",
+      "url": "https://bodhi-college.org/events/182-the-thermals-of-awakening/region-eu/",
+      "description": "A two-week residential Bodhi College course co-led with Ajahn Sucitto at ITC Naarden in the Netherlands. It follows the Buddha's gradual path as a natural, unfolding process, with sitting practice, talks and reflection.",
+      "price": "From €1490 EUR",
+      "product_type": "retreat",
+      "start_date": "2026-11-29",
+      "end_date": "2026-12-13",
+      "subjects": [
+        "meditation",
+        "ancient-wisdom",
+        "spiritual-awakening"
+      ],
+      "image": "https://bodhi-college.org/wp-content/uploads/bodhi-fb2.jpg"
+    },
+    {
+      "title": "In the Buddha's Presence: Individuality and Liberation",
+      "url": "https://www.buddhistinquiry.org/classes/2027-in-the-buddhas-presence-individuality-and-liberation/",
+      "description": "A four-night study retreat at the Barre Center for Buddhist Studies in Massachusetts that looks at the early Buddhist texts through the lives of the Buddha's disciples and how each was taught according to temperament. Days combine study sessions, group work and silent sitting.",
+      "price": "From $380 USD",
+      "product_type": "retreat",
+      "start_date": "2027-01-09",
+      "end_date": "2027-01-13",
+      "subjects": [
+        "ancient-wisdom",
+        "meditation"
+      ],
+      "image": "https://www.buddhistinquiry.org/wp-content/uploads/2026/09/875edf90.jpg"
+    },
+    {
+      "title": "Making the Most of Suffering: Stories of Failing Forward",
+      "url": "https://www.buddhistinquiry.org/classes/2027-making-the-most-of-suffering-stories-of-failing-forward-hybrid-retreat/",
+      "description": "A hybrid study retreat with the scholar Andy Rotman, run by BCBS with Bodhi College, that reads Pali and Sanskrit stories and Buddhist art about meeting dukkha with courage and skill. It can be joined in residence or online.",
+      "price": "From $200 USD",
+      "product_type": "retreat",
+      "start_date": "2027-06-18",
+      "end_date": "2027-06-23",
+      "subjects": [
+        "ancient-wisdom",
+        "meditation"
+      ],
+      "image": "https://www.buddhistinquiry.org/wp-content/uploads/2026/09/a4cce806.png"
+    },
+    {
+      "title": "Atammaya Online Meditation Evening",
+      "url": "https://akincano.net/atammaya-online/",
+      "description": "A two-hour Wednesday evening on Zoom, taught in German, with a short instruction, silent sitting, a Dharma talk and time for questions. It runs on a donation basis and the link is sent through his newsletter.",
+      "price": "Dāna (donation)",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://akincano.net/wp-content/uploads/amw-portra%CC%88t-2021-768x863.jpeg"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Four dimensions of contemplative practice",
+      "url": "https://dharmaseed.org/talks/97237/",
+      "description": "A 2026 talk recorded at the Insight Meditation Society on four ways of understanding what we are doing when we meditate. Free to stream or download on Dharma Seed.",
+      "featured": true,
+      "resource_type": "practice",
+      "subjects": [
+        "meditation",
+        "ancient-wisdom"
+      ],
+      "image": "https://akincano.net/wp-content/uploads/amw-portra%CC%88t-2021-768x863.jpeg"
+    },
+    {
+      "title": "Guided Mettā Meditation (no phrases)",
+      "url": "https://dharmaseed.org/talks/97144/",
+      "description": "A guided loving-kindness practice that works without the usual repeated phrases, resting instead on felt warmth and intention. Free on Dharma Seed.",
+      "featured": false,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://akincano.net/wp-content/uploads/amw-portra%CC%88t-2021-768x863.jpeg"
+    },
+    {
+      "title": "Akincano Marc Weber's talks on Dharma Seed",
+      "url": "https://dharmaseed.org/teacher/360/",
+      "description": "His full archive of more than three hundred recorded talks and guided meditations from retreats in Europe and the United States, in English, German and French.",
+      "featured": false,
+      "resource_type": "practice",
+      "subjects": [
+        "meditation",
+        "mindfulness",
+        "ancient-wisdom"
+      ],
+      "image": "https://akincano.net/wp-content/uploads/amw-portra%CC%88t-2021-768x863.jpeg"
+    }
+  ],
+  "sprint": {
+    "sprint": "uk-europe-1",
+    "hub": "none",
+    "rank": 132,
+    "hub_url": null,
+    "tier_evidence": "No social accounts linked from akincano.net; no YouTube channel of his own found (YouTube search not used: its robots.txt blocks /results); Dharma Seed and BCBS show no follower counts (3 Nov 2026) → 0 readable → local_hero",
+    "email": "yes",
+    "email_source": "https://akincano.net/impressum/",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 12 source(s)",
+    "flags": [
+      "The email is written on his Impressum page as 'webmaster [-at-] akincano.net'; I rendered it as webmaster@akincano.net (a webmaster inbox, not a personal one). His contact pages show no working form in the HTML.",
+      "Tier total is 0 readable followers; he is a co-founder of Bodhi College and a long-standing IMS and BCBS teacher, so the owner may want to consider an editorial-stature override (not applied).",
+      "teaches_at Insight Meditation Society rests on his own site listing a 9-day IMS course from 29 Dec 2026 to 7 Jan 2027; the IMS programme page sits behind its myims sign-up portal and was not opened, so the course itself is not added as an offering.",
+      "Bodhi College and the Barre Center for Buddhist Studies are not Spiritpedia listings; their programmes are added as offerings only.",
+      "He also practises as a psychotherapist (Core Process Psychotherapy, Focusing); that work is left out and the page is about his Dharma teaching.",
+      "The two photos (own site 2021 portrait with beard and glasses, BCBS clean-shaven) look like the same man at different times; own-site portrait is first.",
+      "Dharma Seed's bio still says '(Switzerland)'; his Impressum (Cologne) and BCBS/Dharma Seed text ('lives with his wife in Cologne / the Rhineland') support Cologne.",
+      "'Making the Most of Suffering' uses the Buddhist sense of dukkha, not a medical condition; kept, but a human may want to check the title."
+    ],
+    "left_out": [
+      "Videos: none found on a channel of his own; his site's video and MP3 tables load through a script, not plain HTML, so they were not read.",
+      "Books: no authored book with an Amazon listing found.",
+      "Insight Meditation Society 9-day course (29 Dec 2026 to 7 Jan 2027): no public programme URL reached.",
+      "Meditationsabende Köln (open group led by various Atammaya teachers, not specifically him).",
+      "Dialogische Prozessbegleitung / psychotherapy practice (therapy, not spiritual teaching)."
+    ]
+  },
+  "images_final": true
+}
