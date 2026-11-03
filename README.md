@@ -2561,7 +2561,8 @@ node scripts/ingest.mjs <plan.json> --env dev --rollback    # delete exactly wha
     (`https://m.media-amazon.com/images/P/{ASIN}.01._SCLZZZZZZZ_.jpg`, the
     publisher's cover, 500 px tall; an image server, not an Amazon page),
     which also corrects covers an audit got wrong; else the audit's cover if
-    good; else Open Library's cover for the ISBN, then by title and author.
+    good; else Open Library's cover for the ISBN (never its search, which
+    its robots.txt disallows; changed 3 Nov 2026).
     Amazon product pages are never opened (amazon.com's robots.txt blocks
     Claude agents; changed 3 Nov 2026). Kindle
     ASINs (`B0…`) and Indian-published titles often need the later steps.

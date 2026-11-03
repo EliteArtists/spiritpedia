@@ -165,14 +165,7 @@ async function bookCover(book, old) {
       if (url) return { url, source };
     }
   }
-  try {
-    const surname = (book.author || '').split(',')[0].trim().split(' ').pop();
-    const q = `title=${encodeURIComponent(book.title.split(/[:(]/)[0].trim())}&author=${encodeURIComponent(surname)}&fields=title,cover_i&limit=5`;
-    const r = await fetch(`https://openlibrary.org/search.json?${q}`, { signal: AbortSignal.timeout(30_000) });
-    const doc = (await r.json()).docs?.find((d) => d.cover_i);
-    const url = doc && (await usable(`https://covers.openlibrary.org/b/id/${doc.cover_i}-L.jpg`, old));
-    if (url) return { url, source: 'Open Library by title' };
-  } catch { /* not found */ }
+  // No search by title: openlibrary.org/search is disallowed by its robots.txt.
   return null;
 }
 

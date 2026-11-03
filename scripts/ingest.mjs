@@ -358,15 +358,7 @@ for (const b of plan.books || []) {
       const ol = `https://covers.openlibrary.org/b/isbn/${b.asin}-L.jpg?default=false`;
       if ((await probeImage(ol)).ok) { b.cover = ol; decisions.push(`${label('book', b)}: cover from Open Library (none on Amazon)`); return; }
     }
-    // Open Library by title and author: the same title, the author's surname.
-    try {
-      const surname = (b.author || '').split(',')[0].trim().split(' ').pop();
-      const q = `title=${encodeURIComponent(b.title.split(/[:(]/)[0].trim())}&author=${encodeURIComponent(surname)}&fields=title,cover_i&limit=5`;
-      const r = await fetch(`https://openlibrary.org/search.json?${q}`, { signal: timed() });
-      const doc = (await r.json()).docs?.find((d) => d.cover_i && shortTitle(d.title) === shortTitle(b.title));
-      const ol = doc && `https://covers.openlibrary.org/b/id/${doc.cover_i}-L.jpg`;
-      if (ol && (await probeImage(ol)).ok) { b.cover = ol; decisions.push(`${label('book', b)}: cover from Open Library by title (none on Amazon)`); return; }
-    } catch { /* not found */ }
+    // No search by title: openlibrary.org/search is disallowed by its robots.txt.
     if (b.cover !== null) unsolved.push(`${label('book', b)}: no cover found (ASIN ${b.asin})`);
   })());
 }
