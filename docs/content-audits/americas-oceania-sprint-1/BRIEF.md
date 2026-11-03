@@ -319,7 +319,7 @@ what's public and flag the rest.
 
 **Insight Timer profiles that come back as an empty script page with curl
 are skipped**: don't try WebFetch, a mirror or any other route to the same
-page (owner's rule, added after Sprint B). Use what the teacher's own site
+page (sprint lead, added after Sprint B, in the spirit of the owner's blocked-means-skip rule). Use what the teacher's own site
 says instead.
 
 **No fake user agents anywhere**, for any site. Use one honest fetch (curl's
