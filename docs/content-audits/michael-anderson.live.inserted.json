@@ -1,0 +1,45 @@
+{
+  "env": "live",
+  "healer": {
+    "id": 645,
+    "healer_slug": "michael-anderson"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "6b6e4069-1b60-4885-b188-b7d486a364f0",
+      "slug": "home-retreat-an-online-mindful-art-retreat-from-the-heart-of-sicily",
+      "title": "Home Retreat: An Online Mindful Art Retreat from the Heart of Sicily"
+    },
+    {
+      "table": "courses",
+      "id": "125d90ca-5319-4736-9a67-a338ed8ccda4",
+      "slug": "book-of-hours-finding-natural-time-in-a-hurried-world",
+      "title": "Book of Hours: Finding Natural Time in a Hurried World"
+    },
+    {
+      "table": "courses",
+      "id": "ee92c1ea-086e-4fa0-816b-d80c7570e00b",
+      "slug": "11-mindfulness-meditation-introduction",
+      "title": "1:1 Mindfulness Meditation Introduction"
+    },
+    {
+      "table": "courses",
+      "id": "6dabbaac-cdbc-42ae-8e05-fd6d3ac452eb",
+      "slug": "mindful-breaks-short-practices-for-young-hearts-and-minds",
+      "title": "Mindful Breaks: Short Practices for Young Hearts and Minds"
+    },
+    {
+      "table": "courses",
+      "id": "3110a7df-fd63-4fa2-80e1-e2ca8f5a98ad",
+      "slug": "art-of-being-workshops",
+      "title": "Art of Being Workshops"
+    },
+    {
+      "table": "hub_teachers",
+      "id": "b4bc9f8f-ce18-4701-8c19-d43fde5eb3c1",
+      "title": "michael-anderson teaches at Insight Timer"
+    }
+  ],
+  "at": "2026-11-03T17:44:17.249Z"
+}

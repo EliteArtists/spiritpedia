@@ -1,0 +1,46 @@
+{
+  "env": "live",
+  "healer": {
+    "id": 638,
+    "healer_slug": "lisette-schuitemaker"
+  },
+  "rows": [
+    {
+      "table": "books",
+      "id": 1813,
+      "slug": "the-childhood-conclusions-fix",
+      "title": "The Childhood Conclusions Fix: Turning Negative Self-Talk Around"
+    },
+    {
+      "table": "books",
+      "id": 1814,
+      "slug": "the-eldest-daughter-effect",
+      "title": "The Eldest Daughter Effect"
+    },
+    {
+      "table": "books",
+      "id": 1815,
+      "slug": "childless-living",
+      "title": "Childless Living: The Joys and Challenges of Life without Children"
+    },
+    {
+      "table": "courses",
+      "id": "7f0cc90f-c489-485e-9d18-72549b819ba0",
+      "slug": "eldest-daughter-retreat-2027",
+      "title": "Eldest Daughter Retreat 2027"
+    },
+    {
+      "table": "courses",
+      "id": "83c5f0f1-c0ac-4f04-90dd-994fde37525f",
+      "slug": "e-learning-de-5-kindconclusies",
+      "title": "E-learning De 5 kindconclusies"
+    },
+    {
+      "table": "free_resources",
+      "id": "ef271fed-1551-4c86-8c8f-5ea8bd7336b7",
+      "slug": "test-your-childhood-conclusions",
+      "title": "Test your childhood conclusions"
+    }
+  ],
+  "at": "2026-11-03T17:43:41.254Z"
+}

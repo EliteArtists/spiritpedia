@@ -141,3 +141,17 @@ Both are fixed:
   - §18.6 has the sprint's row.
   - §18.7 has the regional sprints.
 - **The sprint folder,** `docs/content-audits/uk-europe-sprint-1/`, has the brief, the queue (`progress.json`), the skips and REPORT.md.
+
+
+## Update, 3 Nov 2026 (evening): live
+
+- **0034** was run by the owner on dev (53, 366, 2) and live (53, 342, 2).
+- **Owner decisions:**
+  - Newell and Stephen Batchelor stay Luminary, and **Gordon Smith is raised to Luminary** (23 books, over a million sold). That makes 3 Luminary and 22 Local Hero.
+  - Stephen Batchelor and Lisette Schuitemaker are kept.
+  - Bordeaux for the Batchelors, Gordon Smith with no town, every contact address and the small-check choices are accepted.
+- **Gordon Smith's tier:** set in his plan for live; on dev, changed by `docs/content-audits/owner-fixes-uk-europe-2026-11-03.mjs` (logged for rollback).
+- **The 25 are on live:** 138 videos, 37 books, 68 offerings, 60 free resources and 10 hub links, the same as dev. Each is logged in `<slug>.live.inserted.json`.
+  - 24 have a place for Near You; Gordon Smith has a country only.
+  - Pages answer 200 on spiritpedia.co.
+- **Next:** Sprint A2, city first: Birmingham, Manchester, Leeds, Liverpool, Sheffield, Nottingham, Glasgow, Edinburgh and Cork, then Berlin, Paris, Lisbon and Copenhagen.

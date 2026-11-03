@@ -6,7 +6,7 @@
     "create": {
       "name": "Gordon Smith",
       "bio": "Gordon Smith is a Scottish medium and teacher of mediumship whose career runs to more than forty years. He grew up in Glasgow, had experiences of spirit as a child, and in his twenties began sitting in the development circle of his teacher, Mrs Primrose, whose methods he now hands on. He became known through demonstrations of evidence from the spirit world and through television work, and over several years his accuracy was put to the test by Professor Archie Roy of Glasgow University.\n\nHis teaching treats mediumship as a discipline of sensitivity, patience and kindness rather than spectacle. Workshops cover how to build a link with spirit, sitting regularly in a circle, spiritual healing and trance, with the wider aim of greater self-awareness. He has written more than twenty books, among them the memoir Spirit Messenger, the beginners' guide Mediumship Made Easy and the course book Intuitive Studies, and they have been translated into many languages. Since the 2020 lockdowns he has taught chiefly over Zoom, often with German translation, alongside live weekend events, and on YouTube he answers short questions from the public about the afterlife in a series he calls the Soul Library.",
-      "tier": "local_hero",
+      "tier": "luminary",
       "entity_type": "individual",
       "availability": "worldwide",
       "city": null,
@@ -245,7 +245,7 @@
     "hub": "none",
     "rank": 106,
     "hub_url": null,
-    "tier_evidence": "YouTube 7.68k (channel header next to @GordonSmithMedium, 3 Nov 2026); Instagram (@gsmedium) and Facebook (gordonsmithmedium) not read: both sites' robots.txt disallow ClaudeBot and all agents → ~7.7k readable total → local_hero",
+    "tier_evidence": "YouTube 7.68k (channel header next to @GordonSmithMedium, 3 Nov 2026); Instagram (@gsmedium) and Facebook (gordonsmithmedium) not read: both sites' robots.txt disallow ClaudeBot and all agents → ~7.7k readable total → local_hero by count; raised to luminary by tier_override",
     "email": "yes",
     "email_source": "https://www.gordonsmithmedium.com/contact",
     "contact_form_url": null,
@@ -265,7 +265,8 @@
       "Kindle-only ebooks linked from his site (Stories from the Other Side, Why Do Bad Things Happen?, Best of Both Worlds, The Amazing Power of Animals, One Hundred Answers from Spirit): only amazon.co.uk ebook ASINs, no print ISBN-10 confirmed.",
       "Free 'Introduction to Mediumship' download: links to a third-party free-ebook listing, not his own page.",
       "YouTube: videos under about two minutes (most of the Soul Library answers), the 2026 promotion clip and short trailers; only the first 30 uploads could be read without the internal API."
-    ]
+    ],
+    "tier_override": "Editorial stature (owner, 3 Nov 2026): author of 23 books with over a million copies sold, by his own site."
   },
   "images_final": true
 }
