@@ -1,6 +1,6 @@
 # Location audit: why listings had no location, and the fix (3 Nov 2026)
 
-**Update, 3 Nov 2026 (evening): applied on dev and live.** Your last step: run `0033` on live (see the end of this report).
+**Done on dev and live (3 Nov 2026).** `0033` run on live by the owner (check row 45, 342, 340): 340 living listings have a place for Near You, up from 186.
 
 ## Your step
 
@@ -246,6 +246,6 @@ Pat Divilly and the 37 region-only listings are left as they are, as you said.
 **Live, done by me:** the 143 bases plus the 6 approved ones (149) and Harner, by `apply.mjs --env live --apply`. It never touches a listing that already had a location; everything is logged, and `--rollback` puts it back.
 - 91 already have a place with today's matching.
 
-**Your step: run `supabase/migrations/0033_place_aliases.sql` on live.** The check row should read **45, 342, 340**.
+**`0033` on live: done by the owner** (check row 45, 342, 340, as expected).
 - The 2 without a place are Salmon, Idaho and "Sussex County".
 - After it, live matches dev: **340** listings with a place for Near You, up from 186 this morning.
