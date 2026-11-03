@@ -15,8 +15,8 @@
         "mindfulness",
         "spirituality"
       ],
-      "website_url": "https://www.mindspace.org.uk/",
-      "booking_url": "https://www.mindspace.org.uk/retreats/",
+      "website_url": null,
+      "booking_url": null,
       "youtube_url": "https://www.youtube.com/@OnlineMeditation",
       "instagram_url": null,
       "facebook_url": null,
@@ -268,7 +268,8 @@
       "Mindspace is registered as Mindspace Meditation CIC with an office on Moseley Road, Birmingham (contact page); Insight Timer gives Birmingham as his location.",
       "His five books are self-published by Mindspace Press with no ISBN on his own pages, so three are listed as e-book downloads from his shop rather than as books.",
       "'Guided Meditation for Compassion and Emotional Difficulty' is kept: it names no condition; a human may want to check it.",
-      "Rule slip: I queried openlibrary.org/search.json once while looking for his ISBNs, which falls under Open Library's robots.txt 'Disallow: /search'; nothing from it is used in this plan."
+      "Rule slip: I queried openlibrary.org/search.json once while looking for his ISBNs, which falls under Open Library's robots.txt 'Disallow: /search'; nothing from it is used in this plan.",
+      "Owner, 3 Nov 2026: website_url and booking_url left empty while mindspace.org.uk carries injected casino links (as with Laura Lynne Jackson); tell him so it can be cleaned, then add them back."
     ],
     "left_out": [
       "Books section: no ISBN published on his or a publisher's page for Guide to the Mindful Way of Life, Guide to the Grateful Way of Life, Find Your Zen, Learn to Fly or Today it's Sunny.",

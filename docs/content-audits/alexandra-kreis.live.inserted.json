@@ -1,0 +1,45 @@
+{
+  "env": "live",
+  "healer": {
+    "id": 675,
+    "healer_slug": "alexandra-kreis"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "40dd292d-e570-45fa-a35d-39aa2ed645e2",
+      "slug": "mallorca-mantra-intensive-2027",
+      "title": "Mallorca Mantra Intensive 2027"
+    },
+    {
+      "table": "courses",
+      "id": "46c1094a-9167-4ad2-a02e-098c6d0e9eda",
+      "slug": "destiny-fulfilled-2027-group",
+      "title": "Destiny Fulfilled (2027 group)"
+    },
+    {
+      "table": "free_resources",
+      "id": "40772835-78d5-453b-babe-6b272e70185f",
+      "slug": "12-minute-meditation-for-self-trust-inner-confidence",
+      "title": "12-Minute Meditation For Self-Trust & Inner Confidence"
+    },
+    {
+      "table": "free_resources",
+      "id": "0aa3c68c-6fec-4a4d-bada-907e802e6545",
+      "slug": "full-breath-meditation-feeling-at-home-in-your-body",
+      "title": "Full Breath Meditation Feeling At Home In Your Body"
+    },
+    {
+      "table": "free_resources",
+      "id": "9b933a5e-515b-4a45-ba4e-77866adc319f",
+      "slug": "vulnerability-guided-meditation",
+      "title": "Vulnerability Guided Meditation"
+    },
+    {
+      "table": "hub_teachers",
+      "id": "80a0f90b-9e73-4d37-8826-8381491171ff",
+      "title": "alexandra-kreis teaches at Insight Timer"
+    }
+  ],
+  "at": "2026-11-03T19:14:29.685Z"
+}

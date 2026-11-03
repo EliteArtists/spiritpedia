@@ -19,7 +19,7 @@
    "email_or_form_seen": "to confirm",
    "content_signal": "Mindspace founder; Insight Timer 4.7k followers, tracks; retreats UK/Thailand/Nepal; books page",
    "note": "Mindspace home page nav carries injected casino links (site likely compromised); flag",
-   "status": "dev",
+   "status": "live",
    "plan": "docs/content-audits/adam-dacey.json",
    "skip_reason": null
   },
@@ -37,7 +37,7 @@
    "email_or_form_seen": "to confirm",
    "content_signal": "Spiritual Unfoldment YouTube ~235k subscribers, books, audiobooks, retreats",
    "note": "Bakewell is in the Peak District about 13 miles from Sheffield: borderline for 'right next to the city'; he is in his late 80s, confirm still teaching",
-   "status": "dev",
+   "status": "live",
    "plan": "docs/content-audits/john-butler.json",
    "skip_reason": null
   },
@@ -73,7 +73,7 @@
    "email_or_form_seen": "contact page to confirm",
    "content_signal": "Reiki courses, shamanic healing, meditation classes, online membership",
    "note": "healing framing to check",
-   "status": "dev",
+   "status": "live",
    "plan": "docs/content-audits/detzi-simpson.json",
    "skip_reason": null
   },
@@ -235,7 +235,7 @@
    "email_or_form_seen": "to confirm",
    "content_signal": "yoga, meditation and dance; Insight Timer tracks",
    "note": "",
-   "status": "dev",
+   "status": "live",
    "plan": "docs/content-audits/claudia-silas.json",
    "skip_reason": null
   },
@@ -253,7 +253,7 @@
    "email_or_form_seen": "contact form on home page",
    "content_signal": "gong and sound baths, sound therapy facilitator diploma, solstice event, spring equinox retreat 2027, Insight Timer tracks",
    "note": "found in a second Insight Timer pass (Nottingham-area local list)",
-   "status": "dev",
+   "status": "live",
    "plan": "docs/content-audits/sara-teal.json",
    "skip_reason": null
   },
@@ -397,7 +397,7 @@
    "email_or_form_seen": "contact page to confirm",
    "content_signal": "many books (New World Library, Eckhart Tolle Editions), YouTube talks, online course, free guided meditation",
    "note": "Author on spiritual awakening, Leeds Beckett lecturer; lives in Manchester per own about page",
-   "status": "dev",
+   "status": "live",
    "plan": "docs/content-audits/steve-taylor.json",
    "skip_reason": null
   },
@@ -415,7 +415,7 @@
    "email_or_form_seen": "stonewaterzen contact page + mailto seen",
    "content_signal": "Zen centre classes, sesshin, talks podcast, co-authored The Elements of Zen",
    "note": "Founder of StoneWater Zen, Hope Street Liverpool; check he still teaches",
-   "status": "dev",
+   "status": "live",
    "plan": "docs/content-audits/keizan-scott.json",
    "skip_reason": null
   },
@@ -451,7 +451,7 @@
    "email_or_form_seen": "hello@ookushana.com seen in a listing",
    "content_signal": "Reiki training L1 to Master, retreats, online courses",
    "note": "Womb/ancestral healing framing may hit the health rule",
-   "status": "dev",
+   "status": "live",
    "plan": "docs/content-audits/felicity-weston.json",
    "skip_reason": null
   },
@@ -577,9 +577,9 @@
    "email_or_form_seen": "wendy@amityyogawellness.co.uk",
    "content_signal": "retreat days, yoga",
    "note": "Amity Yoga Wellness; probably thin",
-   "status": "dev",
-   "plan": "docs/content-audits/wendy-moran.json",
-   "skip_reason": null
+   "status": "skipped",
+   "plan": null,
+   "skip_reason": "Dropped by the owner after review (3 Nov 2026): her work leans towards wellness rather than spiritual teaching. Plan kept at uk-europe-sprint-2/dropped/wendy-moran.json; inserted on dev and rolled back the same day."
   },
   {
    "rank": 312,
@@ -685,7 +685,7 @@
    "email_or_form_seen": "unknown",
    "content_signal": "Vedic meditation courses, studio classes, retreats, IT",
    "note": "Check condition framing (anxiety, sobriety)",
-   "status": "dev",
+   "status": "live",
    "plan": "docs/content-audits/cam-cooney.json",
    "skip_reason": null
   },
@@ -847,7 +847,7 @@
    "email_or_form_seen": "email on contact page",
    "content_signal": "YouTube channel, circles and medium training, Patreon, readings",
    "note": "Queue first had Glasgow; his base is Penicuik next to Edinburgh",
-   "status": "dev",
+   "status": "live",
    "plan": "docs/content-audits/marc-stuart.json",
    "skip_reason": null
   },
@@ -883,7 +883,7 @@
    "email_or_form_seen": "support email and form",
    "content_signal": "YouTube 320 videos, IT tracks, membership, sessions",
    "note": "Added after first queue write; angel/New Earth healer",
-   "status": "dev",
+   "status": "live",
    "plan": "docs/content-audits/joan-buckley.json",
    "skip_reason": null
   },
@@ -955,7 +955,7 @@
    "email_or_form_seen": "carlos [at] shaitubali.com on /contact/ plus contact form",
    "content_signal": "YouTube @ShaiTubali ~237k subs, 893 videos; 20+ books; IT 8 tracks; School of Consciousness, Rumi retreat",
    "note": "Own site publishes no city; IT profile does. Events onsite in Portugal.",
-   "status": "dev",
+   "status": "live",
    "plan": "docs/content-audits/shai-tubali.json",
    "skip_reason": null
   },
@@ -973,7 +973,7 @@
    "email_or_form_seen": "unknown",
    "content_signal": "IT 6.7k followers; breathwork guide",
    "note": "English only",
-   "status": "dev",
+   "status": "live",
    "plan": "docs/content-audits/kimi-recor.json",
    "skip_reason": null
   },
@@ -991,7 +991,7 @@
    "email_or_form_seen": "unknown",
    "content_signal": "IT 571 followers, 8+ tracks, devotional song and meditation",
    "note": "",
-   "status": "dev",
+   "status": "live",
    "plan": "docs/content-audits/alexandra-kreis.json",
    "skip_reason": null
   },
@@ -1009,7 +1009,7 @@
    "email_or_form_seen": "about-contact page",
    "content_signal": "teacher trainings, retreats, meditation courses, IT free meditations",
    "note": "Yoga in English Berlin; full name from her site and Insight Timer",
-   "status": "dev",
+   "status": "live",
    "plan": "docs/content-audits/anya-kinneavy.json",
    "skip_reason": null
   },
@@ -1063,7 +1063,7 @@
    "email_or_form_seen": "unknown",
    "content_signal": "IT 148 followers, 10+ tracks; yoga and meditation in English",
    "note": "",
-   "status": "dev",
+   "status": "live",
    "plan": "docs/content-audits/bella-miles.json",
    "skip_reason": null
   },
@@ -1297,7 +1297,7 @@
    "email_or_form_seen": "info@wildflowerzen.org",
    "content_signal": "YouTube talks on sangha channel, podcast, retreats in France/Portugal, weekly Zoom",
    "note": "White Plum Zen Roshi; talks in English and French",
-   "status": "dev",
+   "status": "live",
    "plan": "docs/content-audits/amy-hollowell.json",
    "skip_reason": null
   },
@@ -1315,7 +1315,7 @@
    "email_or_form_seen": "check",
    "content_signal": "Vedic meditation courses, app, retreats, blog",
    "note": "check health framing (anxiety/sleep pages)",
-   "status": "dev",
+   "status": "live",
    "plan": "docs/content-audits/sam-wysock-wright.json",
    "skip_reason": null
   },
@@ -1333,7 +1333,7 @@
    "email_or_form_seen": "info@danasangha.fr",
    "content_signal": "sesshins at Dana Sangha listed on one page; talks on Wild Flower podcast",
    "note": "may be thin (offerings share one page)",
-   "status": "dev",
+   "status": "live",
    "plan": "docs/content-audits/catherine-genno-pages.json",
    "skip_reason": null
   },
@@ -1351,7 +1351,7 @@
    "email_or_form_seen": "check",
    "content_signal": "weekly Paris/Arles/online sittings, retreats, English study group",
    "note": "site mostly French; overlaps Amy Hollowell",
-   "status": "dev",
+   "status": "live",
    "plan": "docs/content-audits/joa-scetbon.json",
    "skip_reason": null
   },
@@ -1423,7 +1423,7 @@
    "email_or_form_seen": "check",
    "content_signal": "mindfulness teacher at BudaDharma Lisbon",
    "note": "may teach only in Portuguese",
-   "status": "dev",
+   "status": "live",
    "plan": "docs/content-audits/joao-palma.json",
    "skip_reason": null
   },
@@ -1500,5 +1500,5 @@
    "skip_reason": "No published base in Lisbon: tonysamara.com renders by script and showed no base in its HTML, and the only other sources disagree (a 2017 blog says Portugal, another listing says northern Germany)."
   }
  ],
- "updated": "2026-11-03T18:28:30.635Z"
+ "updated": "2026-11-03T19:14:54.470Z"
 }

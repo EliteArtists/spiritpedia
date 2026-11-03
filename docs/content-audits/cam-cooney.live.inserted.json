@@ -1,0 +1,39 @@
+{
+  "env": "live",
+  "healer": {
+    "id": 670,
+    "healer_slug": "cam-cooney"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "258122bc-3e15-4426-9e67-84a36ed94bca",
+      "slug": "learn-to-meditate-7-day-course",
+      "title": "Learn To Meditate: 7 Day Course"
+    },
+    {
+      "table": "courses",
+      "id": "04603313-6e93-4b3c-89f9-cd00bdaa702a",
+      "slug": "meditate-with-cam-live-weekly-classes-and-app",
+      "title": "Meditate With Cam: live weekly classes and app"
+    },
+    {
+      "table": "courses",
+      "id": "2c892e07-d3d6-4db6-9bb0-4ab6a8d4da7f",
+      "slug": "learning-privately-one-to-one-vedic-meditation",
+      "title": "Learning Privately: one-to-one Vedic meditation"
+    },
+    {
+      "table": "free_resources",
+      "id": "9f765c93-b3f8-4c74-bc9f-86ed72891c80",
+      "slug": "your-first-session",
+      "title": "Your First Session"
+    },
+    {
+      "table": "hub_teachers",
+      "id": "96b1e633-c664-4d21-a829-d3583b772df2",
+      "title": "cam-cooney teaches at Insight Timer"
+    }
+  ],
+  "at": "2026-11-03T19:14:08.202Z"
+}

@@ -126,3 +126,22 @@ Not researched: Paulina Perez Gonzalez (Berlin), still in the queue.
   - §8.1 covers 0035.
   - §18.6 has the sprint's row.
 - The sprint folder `docs/content-audits/uk-europe-sprint-2/` has the brief, the runner, the queue (`progress.json`, 83 leads), the skips and REPORT.md.
+
+
+## Update, 3 Nov 2026 (night): live
+
+- **0035** was run by the owner on dev (54, 388, 2) and live (54, 366, 2).
+- **Owner decisions,** applied on dev by `docs/content-audits/owner-fixes-uk-europe-2-2026-11-03.mjs` (logged for rollback) and on live from the updated plans:
+  - **Steve Taylor is Luminary** by editorial stature: a widely translated author, with two books in Eckhart Tolle Editions.
+  - **Adam Dacey** is kept, with **website_url and booking_url empty** while mindspace.org.uk is hacked, as with Laura Lynne Jackson. Someone should tell him.
+    - His 8 offerings and 1 free resource still link to pages on that site, because that's where they're sold.
+  - **Wendy Moran is dropped.** She was rolled back on dev; her plan is in `uk-europe-sprint-2/dropped/`.
+  - Everything else is kept as it was: Sam Wysock-Wright stays Local Hero, the bases stay, all three Paris listings stay, and so do João Palma, Keizan Scott and Alexandra Kreis.
+- **The 21 are on live:** 103 videos, 14 books, 76 offerings, 38 free resources and 11 Insight Timer links. That's 3 Luminary and 18 Local Hero, and every one of them has a place for Near You.
+- **Ani Rinchen Khandro is still waiting.**
+  - The cause: edinburgh.samye.org's robots.txt allows the photos, but its firewall closes the connection whenever a request carries our ingest's honest name (`SpiritpediaIngest/1.0`). This happens over HTTP/2 and HTTP/1.1 alike, while curl's default identity is served.
+  - Getting the photos would mean sending another user agent, which the standing rule forbids, so I didn't.
+  - Options:
+    - a photo she or the centre sends, hosted by us;
+    - the centre allowing our user agent;
+    - or leaving her out.
