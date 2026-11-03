@@ -831,7 +831,11 @@
   "name": "Baron Baptiste",
   "type": "individual",
   "tier": "luminary",
-  "apply": null
+  "apply": {
+   "city": "Boston, Massachusetts",
+   "country": "United States"
+  },
+  "approved": "owner, 3 Nov 2026: doubtful, applied because it is their own practice, studio or centre where clients go"
  },
  {
   "slug": "james-nestor",
@@ -1257,7 +1261,11 @@
   "name": "Drs. John & Julie Gottman",
   "type": "individual",
   "tier": "superhero",
-  "apply": null
+  "apply": {
+   "city": "Orcas Island, Washington",
+   "country": "United States"
+  },
+  "approved": "owner, 3 Nov 2026: doubtful, applied because it is their own practice, studio or centre where clients go"
  },
  {
   "slug": "david-deida",
@@ -2196,7 +2204,11 @@
   "name": "Dr. Ibrahim Jaffe",
   "type": "individual",
   "tier": "local_hero",
-  "apply": null
+  "apply": {
+   "city": "Marathon, Florida",
+   "country": "United States"
+  },
+  "approved": "owner, 3 Nov 2026: doubtful, applied because it is their own practice, studio or centre where clients go"
  },
  {
   "slug": "lynn-mckenzie",
@@ -2292,7 +2304,11 @@
   "name": "Marion Gilbert",
   "type": "individual",
   "tier": "local_hero",
-  "apply": null
+  "apply": {
+   "city": "Grass Valley, California",
+   "country": "United States"
+  },
+  "approved": "owner, 3 Nov 2026: doubtful, applied because it is their own practice, studio or centre where clients go"
  },
  {
   "slug": "annie-b-bond",
@@ -2307,7 +2323,11 @@
   "name": "Annie B. Bond",
   "type": "individual",
   "tier": "local_hero",
-  "apply": null
+  "apply": {
+   "city": "Rhinebeck, New York",
+   "country": "United States"
+  },
+  "approved": "owner, 3 Nov 2026: doubtful, applied because it is their own practice, studio or centre where clients go"
  },
  {
   "slug": "rob-schwartz",
@@ -2784,7 +2804,11 @@
   "name": "Dr. Jennifer Lisa Vest",
   "type": "individual",
   "tier": "local_hero",
-  "apply": null
+  "apply": {
+   "city": "Berkeley, California",
+   "country": "United States"
+  },
+  "approved": "owner, 3 Nov 2026: doubtful, applied because it is their own practice, studio or centre where clients go"
  },
  {
   "slug": "daisy-lee",

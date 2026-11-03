@@ -7,7 +7,7 @@ Each is also saved on its own: `2026-11-03-location-audit.md` and `2026-11-03-re
 
 # Location audit: why listings had no location, and the fix (3 Nov 2026)
 
-**Applied on dev only. Nothing on live yet.** Your step comes first: run migration `0033` on dev.
+**Update, 3 Nov 2026 (evening): applied on dev and live.** Your last step: run `0033` on live (see the end of this report).
 
 ## Your step
 
@@ -219,6 +219,43 @@ Justin Perry; Aaron Doughty; Leeor Alexandra; Jake Ducey; Bruce H. Lipton PhD; R
 1. **You:** `0033` on live (the same file).
 2. **Me:** `node docs/content-audits/location-audit-2026-11-03/apply.mjs --env live --apply`. It writes the same 143 and never touches a listing that already has a location. `--rollback` puts them back.
 3. **Me:** whichever doubtful ones you approve, on dev and then live, the same way.
+
+## Update, 3 Nov 2026 (evening): your decisions, and live
+
+**Dev:** `0033` run by the owner (check row 45, 336, 334). Near You checked on localhost.
+
+**Michael Harner** is now an Ascended Master, 1929–2018, on dev and live. His page shows the lifespan, and he has no base (`owner-decisions.mjs`, logged, `--rollback` puts it back).
+
+**Richard Rudd: no change needed.** The Omega profile is him after all. It lists his workshop "The Gene Keys Master Numbers" (Rhinebeck, 2027), which is on his listing. Omega's own bio wrongly adds a line about the wine merchants Berry Bros. & Rudd, and that line misled the researcher.
+- His links are all Gene Keys' own: website, events, YouTube, Instagram, Facebook, X and the contact form.
+- The "Teaches at Omega" link is correct.
+- Our bio has nothing about wine.
+- I've left everything as it is. Say if you still want the Omega link off.
+
+**Doubtful bases applied (6 of 93),** only those where the person's own site or hub page names their own practice, studio or centre where clients go:
+
+| Listing | Base | What the page says |
+| :--- | :--- | :--- |
+| Baron Baptiste | Boston, Massachusetts | His flagship Baptiste Power Yoga studio is in Boston |
+| Drs. John & Julie Gottman | Orcas Island, Washington | Both keep private practices on Orcas Island |
+| Dr. Ibrahim Jaffe | Marathon, Florida | His Institute of Spiritual Healing |
+| Marion Gilbert | Grass Valley, California | Her physical therapy practice and wellness centre |
+| Annie B. Bond | Rhinebeck, New York | Her Awakening Prana Healing Center |
+| Dr. Jennifer Lisa Vest | Berkeley, California | Her practice |
+
+**Skipped under your rule:**
+- **Offices, mailing addresses, PO boxes or company addresses** where clients don't go: Gregg Braden, Rupert Spira, The Tapping Solution, Nick Ortner, Darryl Anka, Tony Robbins, Joe Vitale, Jonathan Goldman, Tina Zion, Trisha McCagh, Sianna Sherman, Robert MacPhee, Lynne Twist and The Shift Network.
+- **Past or unclear:** Faith Hunter's DC studios, Deepak Chopra's Chopra Center, Loch Kelly's clinics, Grandmother Flordemayo's seed temple and Karen Frances McCarthy.
+- **Everything from the press, publishers or employers.**
+
+Pat Divilly and the 37 region-only listings are left as they are, as you said.
+
+**Live, done by me:** the 143 bases plus the 6 approved ones (149) and Harner, by `apply.mjs --env live --apply`. It never touches a listing that already had a location; everything is logged, and `--rollback` puts it back.
+- 91 already have a place with today's matching.
+
+**Your step: run `supabase/migrations/0033_place_aliases.sql` on live.** The check row should read **45, 342, 340**.
+- The 2 without a place are Salmon, Idaho and "Sussex County".
+- After it, live matches dev: **340** listings with a place for Near You, up from 186 this morning.
 
 
 ---
