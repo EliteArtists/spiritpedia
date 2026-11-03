@@ -1,0 +1,81 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 690,
+    "healer_slug": "claudia-silas"
+  },
+  "rows": [
+    {
+      "table": "videos",
+      "id": 6656,
+      "slug": "flow-like-a-river-meditation",
+      "title": "Flow Like A River Meditation"
+    },
+    {
+      "table": "videos",
+      "id": 6657,
+      "slug": "inner-sanctuary-meditation",
+      "title": "Inner Sanctuary Meditation"
+    },
+    {
+      "table": "videos",
+      "id": 6658,
+      "slug": "mindfulness-of-sounds-meditation",
+      "title": "Mindfulness Of Sounds - Meditation"
+    },
+    {
+      "table": "videos",
+      "id": 6659,
+      "slug": "5-minutes-of-presence-meditation",
+      "title": "5 Minutes of Presence - Meditation"
+    },
+    {
+      "table": "courses",
+      "id": "f7658330-02b8-4341-8bb4-1edd0dada9b9",
+      "slug": "ecstatic-dance-nottingham",
+      "title": "Ecstatic Dance Nottingham"
+    },
+    {
+      "table": "courses",
+      "id": "ab261391-2e81-4099-986a-e9fba6911f47",
+      "slug": "yoga-unity",
+      "title": "Yoga @ Unity"
+    },
+    {
+      "table": "courses",
+      "id": "a151454d-e241-4220-b554-10900dfec023",
+      "slug": "private-yoga-nottingham",
+      "title": "Private Yoga Nottingham"
+    },
+    {
+      "table": "free_resources",
+      "id": "28c388f7-477c-4488-a037-9bb5e6ca3abc",
+      "slug": "ocean-of-sensation",
+      "title": "Ocean Of Sensation"
+    },
+    {
+      "table": "free_resources",
+      "id": "8a259064-7676-4b11-9455-200ef2a55e17",
+      "slug": "layers-of-the-body",
+      "title": "Layers Of The Body"
+    },
+    {
+      "table": "free_resources",
+      "id": "a0fd77b8-b175-404b-8413-d9338768ddfc",
+      "slug": "thought-labelling-mindful-awareness-practice",
+      "title": "Thought Labelling - Mindful Awareness Practice"
+    },
+    {
+      "table": "free_resources",
+      "id": "4e837f55-fb56-4d77-ae39-52eab1fbff65",
+      "slug": "self-love",
+      "title": "Self Love"
+    },
+    {
+      "table": "hub_teachers",
+      "id": "5dbea021-d7a8-445b-b622-35c886f1195d",
+      "title": "claudia-silas teaches at Insight Timer"
+    }
+  ],
+  "at": "2026-11-03T18:25:53.385Z"
+}

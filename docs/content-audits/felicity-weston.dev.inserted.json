@@ -1,0 +1,34 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 694,
+    "healer_slug": "felicity-weston"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "1be42c6e-b967-451f-9acb-f5fe9bb530c0",
+      "slug": "usui-reiki-training-level-1-to-master-teacher",
+      "title": "Usui Reiki Training: Level 1 to Master Teacher"
+    },
+    {
+      "table": "courses",
+      "id": "cf19c538-8060-4f81-b83e-710c51470086",
+      "slug": "medicine-woman-practitioner-training",
+      "title": "Medicine Woman Practitioner Training"
+    },
+    {
+      "table": "courses",
+      "id": "f6df89b6-1dae-4cf0-bab9-378fe3000b8d",
+      "slug": "the-fundamentals-of-holistic-ritualistic-healing",
+      "title": "The Fundamentals Of Holistic & Ritualistic Healing"
+    },
+    {
+      "table": "courses",
+      "id": "ac9ee362-e646-4bff-b612-2b41ec76483c",
+      "slug": "1-2-1-lightworker-mentorship",
+      "title": "1-2-1 Lightworker Mentorship"
+    }
+  ],
+  "at": "2026-11-03T18:26:30.889Z"
+}

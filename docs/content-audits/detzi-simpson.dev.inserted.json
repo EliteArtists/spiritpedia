@@ -1,0 +1,46 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 689,
+    "healer_slug": "detzi-simpson"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "51094d62-afe9-441f-968a-92fad489aa3d",
+      "slug": "reiki-courses-level-1-to-master-teacher",
+      "title": "Reiki Courses: Level 1 to Master Teacher"
+    },
+    {
+      "table": "courses",
+      "id": "841d0dbb-6dcd-4083-82fb-34fd2cf72049",
+      "slug": "healing-drum-inspired-guided-meditation",
+      "title": "Healing Drum & Inspired Guided Meditation"
+    },
+    {
+      "table": "courses",
+      "id": "7221378b-9ba3-4b89-9b37-96087fae168b",
+      "slug": "peaceful-me-relaxation-meditation-evenings",
+      "title": "Peaceful Me Relaxation & Meditation Evenings"
+    },
+    {
+      "table": "courses",
+      "id": "6b9bce88-0f91-41c9-aa2b-66780904edab",
+      "slug": "drum-birthing-day-workshops",
+      "title": "Drum Birthing Day Workshops"
+    },
+    {
+      "table": "courses",
+      "id": "d70da76f-02d6-4e97-8622-f5664b16c0cc",
+      "slug": "shamanic-healing-sessions",
+      "title": "Shamanic Healing Sessions"
+    },
+    {
+      "table": "courses",
+      "id": "9a68ae43-9f5c-4c96-9414-0934ce0f784b",
+      "slug": "spiritual-development-mentoring",
+      "title": "Spiritual Development Mentoring"
+    }
+  ],
+  "at": "2026-11-03T18:25:49.252Z"
+}

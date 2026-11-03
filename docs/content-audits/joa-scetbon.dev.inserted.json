@@ -1,0 +1,34 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 707,
+    "healer_slug": "joa-scetbon"
+  },
+  "rows": [
+    {
+      "table": "videos",
+      "id": 6741,
+      "slug": "a-tiny-bit-of-space-wildflower-zen",
+      "title": "A Tiny Bit of Space - Wildflower Zen"
+    },
+    {
+      "table": "courses",
+      "id": "52e1e1b9-f1cb-4a77-acfd-017de189ca87",
+      "slug": "weekly-zen-meditation-in-paris-arles-and-online",
+      "title": "Weekly Zen Meditation in Paris, Arles and Online"
+    },
+    {
+      "table": "courses",
+      "id": "76a0cb5a-4cec-4a4a-a18a-d263cb3b9eb0",
+      "slug": "zen-refuge-study-group-in-english",
+      "title": "Zen Refuge Study Group (in English)"
+    },
+    {
+      "table": "free_resources",
+      "id": "914567d6-5a14-4877-ba81-20dda1276d01",
+      "slug": "the-dharma-and-the-ecological-crisis-sensei-joa-scetbon",
+      "title": "The Dharma and the Ecological Crisis - Sensei Joa Scetbon"
+    }
+  ],
+  "at": "2026-11-03T18:28:05.937Z"
+}

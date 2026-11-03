@@ -1,0 +1,189 @@
+{
+  "healer": {
+    "healer_slug": "bella-miles",
+    "location_source": "https://www.yogabybella.com/about",
+    "create": {
+      "name": "Bella Miles",
+      "bio": "Bella Miles is an Australian yoga and meditation teacher who lives and teaches in Copenhagen, in English. She took up yoga in her late teens and went on to train with the Australian Yoga Academy, completing an advanced diploma in yoga teaching and a separate meditation teacher training, then adding trauma-sensitive yoga, the Shake the Dust movement method of Satu Tuomela and an embodied yoga therapy certificate from Embodied Philosophy.\n\nHer classes blend flowing asana with somatic exercises, pranayama, meditation and elements of Tai Chi and Qi Gong, and she frames the practice around three words: connection, compassion and contentment. She teaches regular classes at several Copenhagen studios and offers one-to-one sessions, in person or online, for people who want help shaping a personal practice. Her small day and weekend retreats in the Danish countryside pair yin yoga, meditation and journaling with shared meals and time outdoors, and she runs a four-week online meditation course, The Space In-Between, that ranges across the philosophy, science and practice of sitting. She also brings yoga to workplaces and teams, and shares free guided meditations and breath practices on Insight Timer and YouTube.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local_online",
+      "city": "Copenhagen",
+      "country": "Denmark",
+      "subjects": [
+        "yoga",
+        "meditation",
+        "breathwork"
+      ],
+      "website_url": "https://www.yogabybella.com/",
+      "booking_url": "https://www.yogabybella.com/yogic-guide",
+      "youtube_url": "https://www.youtube.com/@yogabybella",
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "info@yogabybella.com",
+      "image_urls": [
+        "https://images.squarespace-cdn.com/content/v1/5f7c2f380ee4cd0865f7e62b/38f73f2a-0bfb-4d72-a469-444f3f3c5205/_DSC4516.jpg?format=1000w",
+        "https://images.squarespace-cdn.com/content/v1/5f7c2f380ee4cd0865f7e62b/e2e86252-0c93-40b4-8e60-b9129e7c9933/_DSC5602.jpg?format=1000w"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "insight-timer",
+      "role": "instructor"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Begginer Friendly Grounding Meditation Oceanic Breath for Spaciousness and Softness",
+      "url": "https://www.youtube.com/watch?v=TIIzxwDjS7Y",
+      "subjects": [
+        "meditation",
+        "breathwork"
+      ],
+      "channel": "Bella Miles"
+    },
+    {
+      "title": "GROUNDING MEDITATION | Soft Presence and Quiet Awareness",
+      "url": "https://www.youtube.com/watch?v=0sPbTfIEmSw",
+      "subjects": [
+        "meditation"
+      ],
+      "channel": "Bella Miles"
+    },
+    {
+      "title": "Yoga Nidra Body Scan for Deep Rest and Nourishing Sleep",
+      "url": "https://www.youtube.com/watch?v=KEFdDRMQqpA",
+      "subjects": [
+        "yoga",
+        "meditation"
+      ],
+      "channel": "Bella Miles"
+    },
+    {
+      "title": "Breathing Into Sleep",
+      "url": "https://www.youtube.com/watch?v=8ipe35maEjg",
+      "subjects": [
+        "breathwork",
+        "meditation"
+      ],
+      "channel": "Bella Miles"
+    },
+    {
+      "title": "Nervous System Reset | Soothing Oceanic Breathwork Meditation",
+      "url": "https://www.youtube.com/watch?v=kBAT_zP6EdA",
+      "subjects": [
+        "breathwork"
+      ],
+      "channel": "Bella Miles"
+    },
+    {
+      "title": "Somatic Body Based Meditation | Grounding into Authenticity, Connection and Care",
+      "url": "https://www.youtube.com/watch?v=kmu-lVEGQIo",
+      "subjects": [
+        "meditation"
+      ],
+      "channel": "Bella Miles"
+    }
+  ],
+  "books": [],
+  "courses": [
+    {
+      "title": "Winter Day Retreat",
+      "url": "https://www.yogabybella.com/winter-day-retreat",
+      "description": "A one-day retreat at a cabin in the woods near Svebølle, about an hour from Copenhagen, led with Sarah, who cooks. The day brings together a long brunch, yin yoga, somatic practice, journaling and meditation, with time by the fire or in nature.",
+      "price": "800 DKK",
+      "product_type": "retreat",
+      "start_date": "2026-11-28",
+      "end_date": "2026-11-28",
+      "subjects": [
+        "yoga",
+        "meditation"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/5f7c2f380ee4cd0865f7e62b/5de3e237-d77d-438b-99d6-ce62d9ec89d7/IMG_0928.jpeg"
+    },
+    {
+      "title": "1:1 Yogic Guide",
+      "url": "https://www.yogabybella.com/yogic-guide",
+      "description": "Private sessions online or in Copenhagen, either single sessions or a programme of four, eight or twelve weeks with recordings and written material. Sessions are shaped around the person's own practice, from meditation and pranayama to movement and self-compassion.",
+      "price": "800 DKK (60 min), 1,100 DKK (90 min); 4, 8 or 12-week programmes from 3,200 DKK",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga",
+        "meditation",
+        "breathwork"
+      ],
+      "image": "http://static1.squarespace.com/static/5f7c2f380ee4cd0865f7e62b/t/67ecf4a022e8e62c87891926/1743582368382/_DSC5615.jpg?format=1500w"
+    },
+    {
+      "title": "Company and Group Yoga",
+      "url": "https://www.yogabybella.com/company-and-group",
+      "description": "Yoga, breath and meditation sessions for workplaces, sports teams and community groups, from a single workshop to a six-week series or a half-day retreat. Sessions are tailored to the group and its schedule.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga",
+        "meditation"
+      ],
+      "image": "http://static1.squarespace.com/static/5f7c2f380ee4cd0865f7e62b/t/67ecf470acb4bf75c1c0bca2/1743582320307/Copy+of+DSCF2473.JPG?format=1500w"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Soft Presence And Quiet Awareness - 15 Minute Meditation",
+      "url": "https://insighttimer.com/bellamiles/guided-meditations/soft-presence-and-quiet-awareness-15-minute-meditation",
+      "description": "A quarter-hour sitting practice that rests attention on breath and body and opens into a quieter, wider awareness. Free on Insight Timer.",
+      "featured": true,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://libraryitems.insighttimer.com/h1x5s7g6h5m0p0g5n5x6w9n6m5s0t3q7w3d9t9r9/pictures/tiny_square_medium.jpeg"
+    },
+    {
+      "title": "Yoga Nidra For Deep Rest",
+      "url": "https://insighttimer.com/bellamiles/guided-meditations/yoga-nidra-for-deep-rest-10",
+      "description": "A thirteen-minute yoga nidra, lying down, moving through the body and breath into stillness. Free on Insight Timer.",
+      "featured": false,
+      "resource_type": "meditation",
+      "subjects": [
+        "yoga",
+        "meditation"
+      ],
+      "image": "https://libraryitems.insighttimer.com/c5v9b9h9j1w9g2q4h7k1j1r9c9h1u2p8z2b5d3l2/pictures/tiny_square_medium.jpeg"
+    }
+  ],
+  "sprint": {
+    "sprint": "uk-europe-2",
+    "hub": "insight-timer",
+    "rank": 507,
+    "hub_url": "https://insighttimer.com/bellamiles",
+    "insight_timer_url": "https://insighttimer.com/bellamiles",
+    "tier_evidence": "Insight Timer 148 followers (profile via WebFetch, 3 Nov 2026); YouTube @yogabybella 22 subscribers (channel header row, 3 Nov 2026); Instagram not read (login/robots) → ~170 total → local_hero",
+    "email": "yes",
+    "email_source": "https://www.yogabybella.com/winter-day-retreat",
+    "contact_form_url": "https://www.yogabybella.com/contact",
+    "bio_check": "OK: no 8-word runs against 11 source(s)",
+    "flags": [
+      "Health rule, borderline: her home page leads with 'Trauma-Informed Yoga & Somatic Embodiment' and 'nervous system support', and her 1:1 page lists anxiety and chronic stress among common themes. Those framings are kept out of the bio and item descriptions; her teaching is mainly studio yoga and meditation, so the plan was written, but the owner may want to look.",
+      "Two YouTube videos and the yoga nidra track mention sleep ('Breathing Into Sleep', 'Deep Rest and Nourishing Sleep'); kept as sleep-as-practice, and 'Yoga Nidra For Sleepless Nights' was left out.",
+      "Email info@yogabybella.com is published as a mailto link on the Winter Day Retreat and Summer Sanctuary pages; it is her business inbox.",
+      "Insight Timer play counts are not shown on the web profile, so the two free tracks are picked by fit, not verified most-played."
+    ],
+    "left_out": [
+      "The Space In-Between online meditation course (Mondays 2-23 Nov 2026): started 2 Nov, before 6 Nov.",
+      "RESET: Yin, Sound & Acupuncture (7 Nov 2026): co-led workshop built around acupuncture and a 'nervous system reset'; left out under the health rule (borderline).",
+      "Summer Sanctuary retreat (28-30 Aug 2026): date passed.",
+      "One-Day Silent Retreat Guide: free download only by email sign-up.",
+      "Insight Timer 'Yoga Nidra For Sleepless Nights': condition-led title.",
+      "Regular studio classes at KAILO, YO Studios and Absalon: on the studios' own timetables, no page of her own."
+    ]
+  },
+  "images_final": true
+}

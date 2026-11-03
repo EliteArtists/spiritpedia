@@ -1,0 +1,194 @@
+{
+  "healer": {
+    "healer_slug": "claudia-silas",
+    "location_source": "https://insighttimer.com/claudiasilas",
+    "create": {
+      "name": "Claudia Silas",
+      "bio": "Claudia Silas is a yoga, meditation and dance teacher in Nottingham who works under the name Stillness In Motion. She came to yoga as a teenager and then trained as a dancer, at Tring Park and later London Contemporary Dance School, where she completed an MA. She qualified as a hatha yoga teacher in Rishikesh in 2015 and has added soft-tissue therapy and children's yoga to her training. Her teaching today is shaped by non-dual tantra, and she is studying further in the Kashmir Shaivism tradition.\n\nThe heart of her approach is presence in the body: meeting sensation, feeling and thought as they come, rather than chasing special states or trying to fix oneself. She runs Ecstatic Dance Nottingham, a fortnightly sober dance gathering at a church in the north-east of the city that opens with meditation and somatic practice before the music takes over, and teaches a weekly evening yoga class in Arnold as well as private sessions around the north of the city. She also works with schools and children, and records guided practices on Insight Timer and her YouTube channel, with themes such as listening to sounds, labelling thoughts and resting in the layers of the body. She welcomes beginners and people who feel out of touch with their bodies.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local",
+      "city": "Nottingham",
+      "country": "United Kingdom",
+      "subjects": [
+        "meditation",
+        "yoga",
+        "non-duality"
+      ],
+      "website_url": "https://www.stillnessinmotionyoga.co.uk/",
+      "booking_url": "https://www.stillnessinmotionyoga.co.uk/studio-yoga-classes-nottingham",
+      "youtube_url": "https://www.youtube.com/channel/UCC5zPICZRZEiS-Nl9Uwa2oA",
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "stillnessinmotionyoga@outlook.com",
+      "image_urls": [
+        "https://yt3.googleusercontent.com/ytc/AIdro_k46AeDHpifBM_WSlSVocINGcCtApItnOAuDDNpOrkRBNI=s900",
+        "https://images.squarespace-cdn.com/content/v1/64bcbbfc158df341edf2e4be/c8ad2a54-99c6-4c19-9650-6fced709a8ab/_MG_0558.jpg"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "insight-timer",
+      "role": "instructor"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Flow Like A River Meditation",
+      "url": "https://www.youtube.com/watch?v=DuRLxSjPvk4",
+      "subjects": [
+        "meditation"
+      ],
+      "channel": "Claudia Silas"
+    },
+    {
+      "title": "Inner Sanctuary Meditation",
+      "url": "https://www.youtube.com/watch?v=IQGRnDFaEgo",
+      "subjects": [
+        "meditation"
+      ],
+      "channel": "Claudia Silas"
+    },
+    {
+      "title": "Mindfulness Of Sounds - Meditation",
+      "url": "https://www.youtube.com/watch?v=3NAdn-MXKrM",
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "channel": "Claudia Silas"
+    },
+    {
+      "title": "5 Minutes of Presence - Meditation",
+      "url": "https://www.youtube.com/watch?v=hBYd0Cpse2E",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "channel": "Claudia Silas"
+    }
+  ],
+  "books": [],
+  "courses": [
+    {
+      "title": "Ecstatic Dance Nottingham",
+      "url": "https://www.stillnessinmotionyoga.co.uk/ecstatic-dance-nottingham",
+      "description": "A fortnightly sober dance evening at St Jude's Church on Woodborough Road. Each session starts with meditation and somatic practice to settle into the body, then moves into an eclectic music journey with no steps to learn, no phones and no talking on the floor.",
+      "price": "£18 GBP (first dance £10 GBP)",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/64bcbbfc158df341edf2e4be/0258acce-643d-4531-9ff9-4d63fcf96d8f/_MG_1207.jpg"
+    },
+    {
+      "title": "Yoga @ Unity",
+      "url": "https://www.stillnessinmotionyoga.co.uk/yoga-class-unity-performance-arnold",
+      "description": "Her weekly Tuesday evening class at Unity Performance in Daybrook, Arnold, open to beginners and regulars alike. It blends steady postures with breath and mindful attention, and mats can be borrowed.",
+      "price": "£10 GBP drop-in (6-class pass £55 GBP)",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga",
+        "mindfulness"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/64bcbbfc158df341edf2e4be/9ad860ef-0403-4ea7-8f58-9eb16c2df05f/_MG_0907.jpg"
+    },
+    {
+      "title": "Private Yoga Nottingham",
+      "url": "https://www.stillnessinmotionyoga.co.uk/yoga-classes-1",
+      "description": "One-to-one sessions at home within ten miles of north Nottingham, shaped around each person and combining yoga, meditation and hands-on bodywork.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga",
+        "meditation"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/64bcbbfc158df341edf2e4be/36d1bf18-67a5-4477-8040-2bb8eb7df619/_MG_1314.jpg"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Ocean Of Sensation",
+      "url": "https://static1.squarespace.com/static/64bcbbfc158df341edf2e4be/t/69fec5dbedd7b03b22be3b87/1779031595832/Ocean+depths+.mp3",
+      "description": "A free guided somatic meditation to download from her site, moving attention through the breath and the changing sensations of the body into wider awareness.",
+      "featured": true,
+      "resource_type": "download",
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://yt3.googleusercontent.com/ytc/AIdro_k46AeDHpifBM_WSlSVocINGcCtApItnOAuDDNpOrkRBNI=s900"
+    },
+    {
+      "title": "Layers Of The Body",
+      "url": "https://static1.squarespace.com/static/64bcbbfc158df341edf2e4be/t/6a09de4fb8fac85888da88f0/1780461614276/Layers+of+the+body.mp3",
+      "description": "A free downloadable practice that takes awareness step by step through skin, soft tissue, bones, lungs and heart.",
+      "featured": false,
+      "resource_type": "download",
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://yt3.googleusercontent.com/ytc/AIdro_k46AeDHpifBM_WSlSVocINGcCtApItnOAuDDNpOrkRBNI=s900"
+    },
+    {
+      "title": "Thought Labelling - Mindful Awareness Practice",
+      "url": "https://insighttimer.com/claudiasilas/guided-meditations/thought-labelling-mindful-awareness-practice",
+      "description": "A 14-minute guided practice on noticing and gently naming thoughts as they appear. Free on Insight Timer.",
+      "featured": false,
+      "resource_type": "meditation",
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "image": "https://libraryitems.insighttimer.com/k0v8u2d0s7e1n6m0k4q0y7m4p0e9b4n6r1r6t5a4/pictures/tiny_square_medium.jpeg"
+    },
+    {
+      "title": "Self Love",
+      "url": "https://insighttimer.com/claudiasilas/guided-meditations/self-love",
+      "description": "An 11-minute guided meditation on offering warmth and acceptance to oneself. Free to play on Insight Timer.",
+      "featured": false,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://libraryitems.insighttimer.com/W6jGdf46TdZEryh4C25p/pictures/tiny_square_medium.jpeg"
+    }
+  ],
+  "sprint": {
+    "sprint": "uk-europe-2",
+    "hub": "insight-timer",
+    "rank": 213,
+    "hub_url": "https://insighttimer.com/claudiasilas",
+    "insight_timer_url": "https://insighttimer.com/claudiasilas",
+    "tier_evidence": "Insight Timer 587 followers (profile, 3 Nov 2026); YouTube channel 11 subscribers (channel header, 3 Nov 2026); no other personal accounts linked from her site → ~0.6k readable → local_hero",
+    "email": "yes",
+    "email_source": "https://www.stillnessinmotionyoga.co.uk/",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 10 source(s)",
+    "flags": [
+      "Her most-played Insight Timer track is 'Panic & Anxiety Attack Relief' and she also has 'Coping With Guilt And Shame' (and the same two on YouTube); both are left out. Most of her other tracks are presence and mindfulness practices, so the catalogue is not mainly condition-led, but a human may want to check.",
+      "Her private yoga page says sessions can address 'mental health' and 'medical needs'; the offering is kept with a neutral description, but a human may want to check it.",
+      "Her site also offers massage (mobile, event and soft-tissue), corporate wellbeing and children's yoga parties and school classes; these are left out.",
+      "Photos: the first is her YouTube avatar (a clear face shot) and the second a photo from her own about page; they look like the same woman (dark hair, similar arm tattoos) but neither is captioned. The site photo is served as WebP from a .jpg URL.",
+      "Her other public classes (Deep Yoga St Annes, Hot Pod West Bridgford) are booked through those studios and not added.",
+      "Free downloads are direct MP3 links on her meditation page (https://www.stillnessinmotionyoga.co.uk/meditation)."
+    ],
+    "left_out": [
+      "Insight Timer and YouTube 'Panic & Anxiety Attack Relief' and 'Coping With Guilt And Shame' (name conditions).",
+      "YouTube 'Virgin Audition' (not teaching) and 'I AM' (under five minutes, unclear content).",
+      "Insight Timer 'Walk With The Lion - Children's Creative Visualisation' (children's piece).",
+      "Massage services, corporate wellbeing, children's classes and yoga parties.",
+      "Classes run by other studios (Deep Yoga, Hot Pod)."
+    ]
+  },
+  "images_final": true
+}

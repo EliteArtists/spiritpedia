@@ -1,0 +1,228 @@
+{
+  "healer": {
+    "healer_slug": "anya-kinneavy",
+    "location_source": "https://www.yogainenglish.berlin/about-contact",
+    "create": {
+      "name": "Anya Kinneavy",
+      "bio": "Anya Kinneavy is a yoga and meditation teacher in Berlin who has taught in English there since 2009, when she began what she describes as the city's first English-language yoga classes; the name of her school, Yoga in English, comes from that start. Her path began at twenty on a first visit to an ashram in India, where hearing yoga's philosophy answered questions about purpose and selfhood that had long occupied her. She has kept returning to India since, more than ten times, to study Vedānta and Sanskrit, and has also taught in Bali, Lombok, Thailand and the UK.\n\nHer classes are a slow, meditative flow built around breath and embodied presence, with room for quiet and a light touch on philosophy; students are encouraged to rest whenever they need. Alongside weekly classes in person and online she runs eight-week meditation courses, a six-month slow-study course in yoga philosophy, short retreats in the Brandenburg countryside and longer ones at a meditation centre in Tuscany. With Naama Ityel she leads a Yoga Alliance teacher training in Berlin, and she mentors yoga teachers one to one. A few of her guided meditations and a yoga nidra are free on Insight Timer.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local_online",
+      "city": "Berlin",
+      "country": "Germany",
+      "subjects": [
+        "yoga",
+        "meditation",
+        "spirituality"
+      ],
+      "website_url": "https://www.yogainenglish.berlin/",
+      "booking_url": "https://www.yogainenglish.berlin/workshops",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "info@yogainenglish.berlin",
+      "image_urls": [
+        "https://images.squarespace-cdn.com/content/v1/592252ef725e252d745dcea7/36e7def5-d544-4940-bd4f-c05e50bdfa05/c812006b-d7ed-4565-a0d2-2d290b65f5e7.jpg"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "insight-timer",
+      "role": "instructor"
+    }
+  ],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Weekend Renewal: Early Winter Yoga & Meditation Retreat in Brandenburg",
+      "url": "https://www.yogainenglish.berlin/workshops/earlywinterbburg",
+      "description": "Two nights at a simple, hand-built seminar house near Letschin, an hour east of Berlin by train, with daily yoga and meditation, a sauna, a fire and shared meals. Places are currently by waiting list.",
+      "price": "€330 EUR (10% discount for returning members)",
+      "product_type": "retreat",
+      "start_date": "2026-11-13",
+      "end_date": "2026-11-15",
+      "subjects": [
+        "yoga",
+        "meditation"
+      ],
+      "image": "http://static1.squarespace.com/static/592252ef725e252d745dcea7/59225788c534a58e9b28b675/6922ebf98c1eb03eee478995/1792360122850/bburg+grid.png?format=1500w"
+    },
+    {
+      "title": "Svastha: Winter Yoga for Deep Rest (online)",
+      "url": "https://www.yogainenglish.berlin/workshops/svasthaa",
+      "description": "A six-week online series on Monday evenings of slow, restful yoga for the darker months, with recordings of each class sent out weekly. It takes its name from a Sanskrit word for resting in one's own nature.",
+      "price": "€79 EUR",
+      "product_type": "course",
+      "start_date": "2026-12-07",
+      "end_date": "2027-01-18",
+      "subjects": [
+        "yoga"
+      ],
+      "image": "http://static1.squarespace.com/static/592252ef725e252d745dcea7/59225788c534a58e9b28b675/6a3007dda8eec56b873954a3/1792844006651/svastha+flyer+for+insta+no+QR+%281%29.png?format=1500w"
+    },
+    {
+      "title": "Embodied Yoga Philosophy: Slow Study Course",
+      "url": "https://www.yogainenglish.berlin/workshops/yogaphilosophy",
+      "description": "A six-month online course with a recorded talk and a themed yoga nidra each month and a live group reflection session. Themes run from the purpose and history of yoga through the mind, the question of who we are, desire and impermanence, and karma yoga.",
+      "price": "€390 EUR (20% discounts available)",
+      "product_type": "course",
+      "start_date": "2027-01-03",
+      "end_date": "2027-06-06",
+      "subjects": [
+        "yoga",
+        "spirituality"
+      ],
+      "image": "http://static1.squarespace.com/static/592252ef725e252d745dcea7/59225788c534a58e9b28b675/61829046fc50686ae679b9f3/1787928683251/1st+embodied+philos+story+series+for+2025.png?format=1500w"
+    },
+    {
+      "title": "Weekend Renewal: Winter Yoga & Meditation Retreat in Brandenburg",
+      "url": "https://www.yogainenglish.berlin/workshops/winterbburg",
+      "description": "A Friday-to-Sunday retreat at the same countryside seminar house near Letschin, with yoga, meditation, sauna, bonfire, three meals a day and shared rooms.",
+      "price": "€350 EUR (10% discount for returning members)",
+      "product_type": "retreat",
+      "start_date": "2027-02-26",
+      "end_date": "2027-02-28",
+      "subjects": [
+        "yoga",
+        "meditation"
+      ],
+      "image": "http://static1.squarespace.com/static/592252ef725e252d745dcea7/59225788c534a58e9b28b675/6ac65747e2ad7d77c8ec74a8/1793611944836/bburg+grid.png?format=1500w"
+    },
+    {
+      "title": "INTO PRESENCE: Early Summer Retreat in Tuscany",
+      "url": "https://www.yogainenglish.berlin/workshops/tuscany",
+      "description": "Five nights at Il Risveglio, a meditation centre in the hills near Grosseto, with daily yoga, meditation and periods of quiet, and free time for walks or the coast.",
+      "price": "€450 EUR course fee plus €475 EUR accommodation and full board (twin room)",
+      "product_type": "retreat",
+      "start_date": "2027-05-11",
+      "end_date": "2027-05-16",
+      "subjects": [
+        "yoga",
+        "meditation"
+      ],
+      "image": "http://static1.squarespace.com/static/592252ef725e252d745dcea7/t/6ade59b4279fea43f5b147f8/1792956852836/italy+outside+banner+2.png?format=1500w"
+    },
+    {
+      "title": "INTO STILLNESS: Meditative Yoga Retreat in Tuscany",
+      "url": "https://www.yogainenglish.berlin/workshops/stillness",
+      "description": "An autumn retreat at Il Risveglio in Tuscany with yoga, meditation, silence and time away from devices, built around the idea of stillness as the aim of yoga.",
+      "price": "€450 EUR course fee plus €475 EUR accommodation and full board (twin room)",
+      "product_type": "retreat",
+      "start_date": "2027-10-03",
+      "end_date": "2027-10-08",
+      "subjects": [
+        "yoga",
+        "meditation"
+      ],
+      "image": "http://static1.squarespace.com/static/592252ef725e252d745dcea7/t/6ade59ff93519c2112bb0cb8/1792956927055/italy+meaning+banner+.png?format=1500w"
+    },
+    {
+      "title": "Yoga Teacher Training Berlin & Online",
+      "url": "https://www.yogainenglish.berlin/teachertraining",
+      "description": "A 200-hour Yoga Alliance-certified training led with Naama Ityel over weekends in Berlin and online, covering the history, philosophy and spiritual side of yoga as well as practice and the craft of teaching. It is open to those who simply want to deepen their own practice.",
+      "price": "€3,499 EUR",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga"
+      ],
+      "image": "http://static1.squarespace.com/static/592252ef725e252d745dcea7/t/60520cf9130186393620ef13/1615990012400/logo+with+background+peach+colour+Gold+circle+3rd+eye+Logo.png?format=1500w"
+    },
+    {
+      "title": "One-on-One Mentoring for Yoga Teachers",
+      "url": "https://www.yogainenglish.berlin/workshops/mentoring",
+      "description": "Individual sessions for qualified yoga teachers who want support with their own practice, with bringing yoga's deeper teachings into classes in plain language, or with the practical side of teaching.",
+      "price": "€80 EUR (1 session), €220 EUR (3), €420 EUR (6)",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga"
+      ],
+      "image": "http://static1.squarespace.com/static/592252ef725e252d745dcea7/59225788c534a58e9b28b675/6059b28e07aaf6279dded8fa/1781531398709/Ayyavali_Sahasrara.png?format=1500w"
+    },
+    {
+      "title": "1:1 Private Sessions",
+      "url": "https://www.yogainenglish.berlin/private",
+      "description": "Private yoga or meditation sessions in person in Berlin or online, alone, with a partner or as a small group, from the basics of practice to its spiritual context.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga",
+        "meditation"
+      ],
+      "image": "http://static1.squarespace.com/static/592252ef725e252d745dcea7/t/60520cf9130186393620ef13/1615990012400/logo+with+background+peach+colour+Gold+circle+3rd+eye+Logo.png?format=1500w"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Yoga Nidrā: Inner Listening To The Heart",
+      "url": "https://insighttimer.com/anyakinneavy/guided-meditations/yoga-nidra-inner-listening-to-the-heart",
+      "description": "A half-hour yoga nidra, lying down, that settles the body and turns attention inwards to the heart. Free on Insight Timer.",
+      "featured": true,
+      "resource_type": "meditation",
+      "subjects": [
+        "yoga",
+        "meditation"
+      ],
+      "image": "https://libraryitems.insighttimer.com/n2B5jbQ3ndsfMcjCQfg0/pictures/tiny_square_medium.jpeg"
+    },
+    {
+      "title": "Meditation For Calm & Grounding",
+      "url": "https://insighttimer.com/anyakinneavy/guided-meditations/meditation-for-calm-and-grounding",
+      "description": "A sixteen-minute seated practice for steadying the breath and feeling the support of the ground. Free on Insight Timer.",
+      "featured": false,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://libraryitems.insighttimer.com/j5q8w8z6m7t4c6r7n3c2r7g5q5c9f9h5b8r2b4g2/pictures/tiny_square_medium.jpeg"
+    },
+    {
+      "title": "Meditation For Centering & Softening",
+      "url": "https://insighttimer.com/anyakinneavy/guided-meditations/centering-and-softening",
+      "description": "A longer guided sit of about twenty-five minutes for gathering attention and easing tension in body and mind. Free on Insight Timer.",
+      "featured": false,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://libraryitems.insighttimer.com/vx6bg6pmkjRnap9saHxP/pictures/tiny_square_medium.jpeg"
+    }
+  ],
+  "sprint": {
+    "sprint": "uk-europe-2",
+    "hub": "insight-timer",
+    "rank": 504,
+    "hub_url": "https://insighttimer.com/anyakinneavy",
+    "insight_timer_url": "https://insighttimer.com/anyakinneavy",
+    "tier_evidence": "Insight Timer 111 followers (profile via WebFetch, 3 Nov 2026); no YouTube channel of her own found (her video library is a paid subscription on her site); Instagram not read (login/robots) → ~111 total → local_hero",
+    "email": "yes",
+    "email_source": "https://www.yogainenglish.berlin/about-contact",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 13 source(s)",
+    "flags": [
+      "Queue entry was 'Anya (Yoga in English Berlin)'; her full name, Anya Kinneavy, is on her site and her Insight Timer profile (insighttimer.com/anyakinneavy, 'Berlin, Deutschland').",
+      "Email info@yogainenglish.berlin is her school's inbox (Yoga in English is her own one-woman school); the teacher training also uses clayyogatraining@gmail.com.",
+      "Photos: only one confirmed photo of her (About page, seated by the river in Rishikesh, small in frame). Other site portraits could be her co-trainer Naama Ityel, so they were not used.",
+      "The teacher training is co-led with Naama Ityel; no next start date is published, so it is undated.",
+      "The early-winter Brandenburg retreat (13-15 Nov 2026) is full with a waiting list; kept as it starts after 6 Nov."
+    ],
+    "left_out": [
+      "A Luminous Mind: Meditation Essentials (8 weeks from 22 Oct 2026): started before 6 Nov.",
+      "Svastha 2025-26 page (workshops/svastha): past run; the 2026-27 run is used.",
+      "Weekly drop-in Morning Flow classes at Yellow Yoga and studio classes: booked through the studio's own site.",
+      "Video library: paid subscription with no single product page and price found.",
+      "Yoga for companies: no page detail beyond an enquiry; covered by the private sessions item.",
+      "Past retreats and events (Slovenia, Croatia, summer park yoga, 2021-2026 workshops): dates passed."
+    ]
+  },
+  "images_final": true
+}

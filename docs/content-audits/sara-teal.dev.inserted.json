@@ -1,0 +1,45 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 691,
+    "healer_slug": "sara-teal"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "0cb2be6d-99d4-4c66-928c-931b4ae402dc",
+      "slug": "sound-baths-in-sheffield",
+      "title": "Sound Baths in Sheffield"
+    },
+    {
+      "table": "courses",
+      "id": "32dfcd68-854e-4ae8-b3ba-cfbdbf12a0cb",
+      "slug": "sound-therapy-facilitator-diploma",
+      "title": "Sound Therapy Facilitator Diploma"
+    },
+    {
+      "table": "courses",
+      "id": "e57575f2-00ec-4424-bfa5-e2882a8400bf",
+      "slug": "spring-equinox-womens-retreat-reconnect-release-rise",
+      "title": "Spring Equinox Women's Retreat: Reconnect, Release & Rise"
+    },
+    {
+      "table": "free_resources",
+      "id": "908c2e2f-1f0d-4464-b01c-94c00df30fa7",
+      "slug": "sound-bath-with-bowls-for-heart-and-throat-chakras",
+      "title": "Sound Bath With Bowls For Heart And Throat Chakras"
+    },
+    {
+      "table": "free_resources",
+      "id": "100a0892-8128-4ff0-937b-1eb4a5637f0f",
+      "slug": "sacred-drum-meditation-focusing-on-root-heart-chakras",
+      "title": "Sacred Drum Meditation Focusing On Root & Heart Chakras"
+    },
+    {
+      "table": "hub_teachers",
+      "id": "acb5a783-b332-4bee-968e-41c13a40f506",
+      "title": "sara-teal teaches at Insight Timer"
+    }
+  ],
+  "at": "2026-11-03T18:25:58.422Z"
+}

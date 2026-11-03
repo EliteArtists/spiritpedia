@@ -1,0 +1,34 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 695,
+    "healer_slug": "wendy-moran"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "8f2fa7bb-4da3-4031-a754-4058fd6b01b6",
+      "slug": "relax-restore-sessions",
+      "title": "Relax & Restore Sessions"
+    },
+    {
+      "table": "courses",
+      "id": "f761957c-c3ac-49a1-8086-c46aee19e5bb",
+      "slug": "amity-yoga-spa-day-retreat",
+      "title": "Amity Yoga Spa Day Retreat"
+    },
+    {
+      "table": "courses",
+      "id": "fafcf6e8-62b5-45f8-bc34-37574068de42",
+      "slug": "autumn-yoga-wellness-retreat-for-women-lake-district",
+      "title": "Autumn Yoga & Wellness Retreat for Women, Lake District"
+    },
+    {
+      "table": "courses",
+      "id": "32862989-6b7e-4633-9c92-d3cb80637317",
+      "slug": "private-yoga-bespoke-retreats",
+      "title": "Private Yoga & Bespoke Retreats"
+    }
+  ],
+  "at": "2026-11-03T18:26:35.285Z"
+}

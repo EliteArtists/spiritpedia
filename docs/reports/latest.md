@@ -1,163 +1,128 @@
 # Latest report (3 Nov 2026)
 
-Sprint A, also saved as `2026-11-03-uk-europe-sprint-1.md`. The location job's reports from earlier today are `2026-11-03-location-audit.md` and `2026-11-03-regional-coverage.md`.
+Sprint A2, also saved as `2026-11-03-uk-europe-sprint-2.md`. Earlier today: `2026-11-03-uk-europe-sprint-1.md` (Sprint A, live), `2026-11-03-location-audit.md`, `2026-11-03-regional-coverage.md`.
 
 ---
 
-# Sprint A: UK, Ireland and Western Europe (3 Nov 2026)
+# Sprint A2: city first, UK, Ireland and Western Europe (3 Nov 2026)
 
-**25 new teachers on dev**, each with a published base in the UK, Ireland or Western Europe. **Nothing is live yet.** The target was about 30; see "Why 25" below.
-
-Everything about the location job is on live (149 bases and Michael Harner, done earlier today; `0033` run by the owner).
+**22 new teachers are on dev, and every one of the 13 target cities now has someone.** Nothing is live yet. One more plan (Ani Rinchen Khandro) is waiting for a photo.
 
 ## Your steps
 
-1. **Run `supabase/migrations/0034_place_aliases_uk_europe.sql` on dev** (SQL editor, whole file).
-   - It adds 8 town aliases for this sprint's villages and spellings, and gives those 8 listings their place.
-   - The check row should read **53, 366, 2**: aliases; dev listings with a town; of those, still without a place. The two are Salmon, Idaho and "Sussex County" (as after 0033).
-2. **Look at the pages on localhost** (list below). The decisions under "For you to decide" can be answered in one message.
-3. **After your OK:** you run 0034 on **live** (check row **53, 342, 2**). Then I insert the 25 on live (`sprint.mjs insert 1 199 --env live`).
+1. **Run `supabase/migrations/0035_place_aliases_bakewell.sql` on dev** (SQL editor, whole file).
+   - It adds one alias: John Butler publishes Bakewell, a town of under 5,000 people, and it points at Matlock (12 km).
+   - The check row should read **54, 388, 2**: aliases; dev listings with a town; of those, still without a place. The two without a place are Salmon, Idaho and "Sussex County", as before.
+2. **Look at the pages on localhost** (list below) and answer the decisions in one message.
+3. **After your OK:** you run 0035 on **live** (check row **54, 342, 2**). Then I insert on live.
 
-## The 25 (dev)
+## The 22 (dev)
 
-On dev: **138 videos, 37 books, 68 offerings, 60 free resources**, and 10 hub links (Insight Meditation Society and Insight Timer, where they teach). Tiers: **2 Luminary** (both by editorial override, see below) and **23 Local Hero**. Email: **18 published, 7 contact form only**.
+**On dev:**
+- **Content:** 103 videos, 14 books, 80 offerings and 38 free resources, plus 11 hub links (Insight Timer).
+- **Tiers:** 2 Luminary and 20 Local Hero. Both Luminary are by readable count: Shai Tubali (YouTube 237k) and John Butler (YouTube 239k).
+- **Email:** 20 published, 2 contact form only (Adam Dacey, Steve Taylor).
 
-| Teacher | Base | Videos · books · offerings · free | Page |
-| :--- | :--- | :--- | :--- |
-| Bernat Font | Barcelona | 0 · 1 · 4 · 4 | http://localhost:3000/healers/bernat-font |
-| Lisette Schuitemaker | Amsterdam | 0 · 3 · 2 · 1 | http://localhost:3000/healers/lisette-schuitemaker |
-| Ngakma Nor'dzin Pamo | Cardiff | 10 · 3 · 1 · 2 | http://localhost:3000/healers/ngakma-nordzin-pamo |
-| Bridgeen Rea-Kaya | Belfast | 10 · 0 · 6 · 2 | http://localhost:3000/healers/bridgeen-rea-kaya |
-| Orlaith O'Sullivan | Dublin | 10 · 0 · 5 · 4 | http://localhost:3000/healers/orlaith-osullivan |
-| Mike Sheehy | Dublin | 0 · 0 · 3 · 3 | http://localhost:3000/healers/mike-sheehy |
-| Keith Horan | Galway | 7 · 0 · 2 · 4 | http://localhost:3000/healers/keith-horan |
-| Gordon Smith | United Kingdom (no town published) | 10 · 7 · 0 · 1 | http://localhost:3000/healers/gordon-smith |
-| John Philip Newell | Findhorn (→ Forres) | 9 · 7 · 5 · 2 | http://localhost:3000/healers/john-philip-newell |
-| Bhante Bodhidhamma | Minsterley (→ Bayston Hill) | 11 · 0 · 2 · 4 | http://localhost:3000/healers/bhante-bodhidhamma |
-| Noirin Sheahan | Minsterley (→ Bayston Hill) | 0 · 0 · 2 · 3 | http://localhost:3000/healers/noirin-sheahan |
-| Jilani Cordelia | Hebden Bridge (→ Todmorden) | 7 · 0 · 5 · 2 | http://localhost:3000/healers/jilani-cordelia |
-| Sophie Bashford | Brighton | 10 · 2 · 1 · 1 | http://localhost:3000/healers/sophie-bashford |
-| Gunaketu | Oslo | 0 · 0 · 2 · 2 | http://localhost:3000/healers/gunaketu |
-| Jenny Berglund Castro | Stockholm | 0 · 0 · 3 · 3 | http://localhost:3000/healers/jenny-berglund-castro |
-| Juha Penttilä | Helsinki | 6 · 0 · 4 · 2 | http://localhost:3000/healers/juha-penttila |
-| Michael Anderson | Vienna | 0 · 0 · 5 · 0 | http://localhost:3000/healers/michael-anderson |
-| Anne Eberhardt | St. Gallen | 0 · 0 · 2 · 2 | http://localhost:3000/healers/anne-eberhardt |
-| Eva Bruha | Nidau | 0 · 0 · 3 · 2 | http://localhost:3000/healers/eva-bruha |
-| Akincano Marc Weber | Cologne | 0 · 0 · 4 · 3 | http://localhost:3000/healers/akincano-marc-weber |
-| Martine Batchelor | Bordeaux (see below) | 11 · 5 · 1 · 3 | http://localhost:3000/healers/martine-batchelor |
-| Stephen Batchelor (Luminary) | Bordeaux (see below) | 8 · 8 · 0 · 2 | http://localhost:3000/healers/stephen-batchelor |
-| Martin Aylward | Cubjac (→ Trélissac) | 10 · 1 · 6 · 2 | http://localhost:3000/healers/martin-aylward |
-| Brother Phap Huu | Thénac (→ Bergerac) | 10 · 0 · 0 · 2 | http://localhost:3000/healers/brother-phap-huu |
-| Brother Phap Linh | Thénac (→ Bergerac) | 9 · 0 · 0 · 4 | http://localhost:3000/healers/brother-phap-linh |
+| City | Teacher | Base as published | Videos · books · offerings · free | Page |
+| :--- | :--- | :--- | :--- | :--- |
+| Birmingham | Adam Dacey (Mindspace) | Birmingham | 7 · 0 · 8 · 3 | http://localhost:3000/healers/adam-dacey |
+| Nottingham | Detzi Simpson | Nottingham | 0 · 0 · 6 · 0 | http://localhost:3000/healers/detzi-simpson |
+| Nottingham | Claudia Silas | Nottingham | 4 · 0 · 3 · 4 | http://localhost:3000/healers/claudia-silas |
+| Sheffield | Sara Teal | Sheffield | 0 · 0 · 3 · 2 | http://localhost:3000/healers/sara-teal |
+| Sheffield area | John Butler (Luminary) | Bakewell (→ Matlock, after 0035) | 10 · 2 · 1 · 2 | http://localhost:3000/healers/john-butler |
+| Manchester | Steve Taylor | Manchester | 12 · 8 · 1 · 2 | http://localhost:3000/healers/steve-taylor |
+| Leeds | Felicity Weston | Leeds | 0 · 0 · 4 · 0 | http://localhost:3000/healers/felicity-weston |
+| Liverpool | Keizan Scott Roshi | Liverpool | 10 · 3 · 3 · 1 | http://localhost:3000/healers/keizan-scott |
+| Liverpool | Wendy Moran | Liverpool | 0 · 0 · 4 · 0 | http://localhost:3000/healers/wendy-moran |
+| Glasgow | Cam Cooney | Glasgow | 0 · 0 · 3 · 1 | http://localhost:3000/healers/cam-cooney |
+| Edinburgh area | Marc Stuart | Penicuik (16 km south) | 7 · 0 · 5 · 1 | http://localhost:3000/healers/marc-stuart |
+| Cork | Joan Buckley | Cork | 2 · 0 · 5 · 3 | http://localhost:3000/healers/joan-buckley |
+| Berlin | Shai Tubali (Luminary) | Berlin | 11 · 1 · 1 · 4 | http://localhost:3000/healers/shai-tubali |
+| Berlin | Kimi Recor | Berlin | 10 · 0 · 5 · 0 | http://localhost:3000/healers/kimi-recor |
+| Berlin | Alexandra Kreis | Berlin | 0 · 0 · 2 · 3 | http://localhost:3000/healers/alexandra-kreis |
+| Berlin | Anya Kinneavy | Berlin | 0 · 0 · 9 · 3 | http://localhost:3000/healers/anya-kinneavy |
+| Copenhagen | Bella Miles | Copenhagen | 6 · 0 · 3 · 2 | http://localhost:3000/healers/bella-miles |
+| Paris | Joa Scetbon | Paris | 1 · 0 · 2 · 1 | http://localhost:3000/healers/joa-scetbon |
+| Paris area | Amy Hollowell | Montreuil | 12 · 0 · 3 · 3 | http://localhost:3000/healers/amy-hollowell |
+| Paris area | Catherine Genno Pagès | Montreuil | 0 · 0 · 2 · 1 | http://localhost:3000/healers/catherine-genno-pages |
+| Lisbon | Sam Wysock-Wright | Lisbon | 11 · 0 · 3 · 2 | http://localhost:3000/healers/sam-wysock-wright |
+| Lisbon area | João Palma | Almada | 0 · 0 · 4 · 0 | http://localhost:3000/healers/joao-palma |
 
-John Philip Newell is also Luminary, by editorial override. Each listing shows the town it publishes. "→" shows the town used for Near You distances, which comes from 0034. Until you run 0034, those 8 have no place on dev.
-
-The tier evidence, contact source and every research flag for each teacher are in `docs/content-audits/uk-europe-sprint-1/REPORT.md`.
-
-## Coverage effect
-
-Gap cities from the regional report that now have someone:
-- **UK and Ireland:** Cardiff, Belfast and Brighton. Galway and Dublin go from 1 and 2 on live to 2 and 4.
-- **Western Europe:** Barcelona, Amsterdam, Stockholm, Oslo, Helsinki and Vienna, plus Cologne, St. Gallen and the Bordeaux/Dordogne area.
-
-**Still empty from the Sprint A target list:** Birmingham, Manchester, Leeds, Liverpool, Sheffield, Nottingham, Glasgow, Edinburgh, Cork, Berlin, Paris, Lisbon and Copenhagen.
-
-## Why 25, and the big English cities still empty
-
-- **Most UK centre teachers publish no base.** Gaia House and Bodhi College teachers say where retreats are held, never where they live. River Wolton (Sheffield Insight Meditation's founder), Nathan Glyde and Mark Ovland were skipped for this reason, as were Johnny Glover and Uz Afzal.
-- **Many have no contact route.** Christina Feldman (Totnes), Ajahn Sucitto, Jake Dartington, Laura Bridgman, Gerit Stöcklmair, Riet Aarsse, Leela Sarti, Helena Petersen, Ishvari Akibaya, Julie Alexandra, Laia Bové, Sina Weber, Yuka Nakamura (her site returned 403, not retried) and Stephen Downey (a cookie loop, treated as blocked) publish no email or form.
-- **The two directories in the plan can't be used.** The British Wheel of Yoga and UK Reiki Federation terms forbid reusing their listings, so nothing was taken from either.
-- **Next time:** the big English and Scottish cities need a city-first search (Insight Timer by city, the teachers' own sites) rather than centre faculty lists. The 21 queue entries not yet researched are mostly centre teachers too (Gaia House, Samye Ling, Plum Village). I'd start Sprint A2 city-first unless you'd rather finish the queue.
-
-## Skipped (32) and dropped (1)
-
-Each has a file with the full reason in `docs/content-audits/uk-europe-sprint-1/skipped/`.
-
-- **No published base (5):** River Wolton, Nathan Glyde, Mark Ovland, Johnny Glover, Uz Afzal.
-- **No email or contact form (14):** the names under "Why 25" above, plus Jaya Rudgard (her own site's robots.txt blocks us, so it was not opened).
-- **Health rule (5):** Camilla Strandmark (Yoga for Cancer), Elspeth Lewis, Nigel Meadows, Tim van der Vliet (TT Breathing claims), Sina Weber (EFT framed on conditions; she also has no contact).
-- **Too thin, or not mainly spiritual teaching (6):** Alan Lewis, John Darwin, Valerie Fabris, Lynn Yap, Sophy Banks, plus Leela Sarti (mostly psychotherapy; she also has no contact).
-- **No usable photo:** Ingen Breen (the only headshots are 212 px and 100 px).
-- **Already on Spiritpedia:** Stephan Pende Wormland (from the 1 Nov Insight Timer run).
-- **Dropped after a plan was written:** Sarah Gregg (health rule: her clinic's pages on cancer, infertility and dementia). The plan is in `dropped/`.
-
-**Worth another look if they publish more:** Christina Feldman (a contact route), and River Wolton, Nathan Glyde and Mark Ovland (a base).
-
-**Left out because the site blocks us:** Patrick Arundell (Rochdale astrologer, about 129k YouTube subscribers). patrickarundell.com's robots.txt blocks Claude agents.
+The tier evidence, contact source and every research flag for each teacher are in `docs/content-audits/uk-europe-sprint-2/REPORT.md`.
 
 ## For you to decide
 
-1. **Tiers by editorial override:**
-   - John Philip Newell (about 538 readable followers) and Stephen Batchelor (no accounts of his own) are set to **Luminary**. Keep, or drop to Local Hero?
-   - Others the research suggested but **I didn't raise**:
-     - Gordon Smith: 23 books, over a million sold; only YouTube readable at 7.7k.
-     - Martine Batchelor.
-     - Akincano Marc Weber: co-founder of Bodhi College.
-     - Martin Aylward: founder of Moulin de Chaves and Sangha Live.
-     - Brother Phap Huu: abbot of Upper Hamlet; all his channels belong to Plum Village.
-     - Brother Phap Linh.
-2. **Stephen Batchelor retired from teaching courses at the end of 2024.** He still gives occasional talks, so he's listed with no offerings. Keep, or treat as no longer teaching?
-3. **Lisette Schuitemaker's fit.** Her site calls her an author, impact investor and board director. Her teaching now is an annual Findhorn retreat, a Dutch e-learning course and her books. Keep or drop?
-4. **The Batchelors' base.** Their site says "a small village near Bordeaux" and doesn't name it, so **Bordeaux** is used. Fine for Near You?
-5. **Gordon Smith's base.** He publishes only the UK, so he has a country and no town. Glasgow is his birthplace and an event venue, not a published base, so it wasn't used.
-6. **Contact addresses** that needed decoding or aren't personal (all published on their own pages):
-   - Akincano Marc Weber: the address on his site is written "webmaster[-at-]akincano.net". It's his only published address, so it's used.
-   - Bhante Bodhidhamma and Noirin Sheahan: Cloudflare-hidden addresses on Satipanya's pages, decoded (your rule from 1 Nov).
-   - Jenny Berglund Castro: her studio's info@ inbox.
-   - Jilani Cordelia: jilanicordelia@gmail.com, a mailto link on her retreat pages. Her contact page hides its address.
-7. **Small checks while you look:**
-   - Ngakma Nor'dzin Pamo's name: the Aro encyclopaedia now says "Ngala". Her Cardiff blog, publisher and YouTube still say Ngakma, so Ngakma is used.
-   - Orlaith O'Sullivan's third photo is older. Keep or drop?
-   - Bernat Font's base: he founded and presides over Espai Sati in Barcelona, but no page says outright that he lives there.
-   - Eva Bruha's site hasn't been updated since spring 2026. Her weekly drop-in is listed as current.
-   - Anne Eberhardt's base is **St. Gallen** (her studio), not Zürich as the queue had it.
+1. **Adam Dacey's website looks hacked.** Every page on mindspace.org.uk has injected casino links in its menu, and his listing links there. The teaching itself is fine.
+   - Keep him and tell him?
+   - Or hold him until the site is clean?
+2. **Tiers:**
+   - **John Butler** is Luminary by count (239k on YouTube). He is 89; his channel and bookshop were active in August 2026, so he's listed as still teaching.
+   - **Sam Wysock-Wright:** only YouTube was readable, at 47.7k. His site claims over 650k followers across platforms, which would make him Luminary. Raise him?
+   - **Suggested, not raised:**
+     - Steve Taylor: a widely translated author, with two books in Eckhart Tolle Editions.
+     - Catherine Genno Pagès: founded Dana Sangha, with seven dharma successors.
+3. **Bases worth a glance:**
+   - **John Butler:** Bakewell comes from his Insight Timer profile. His Trust's address is in Sheffield.
+   - **Felicity Weston:** her base is her Leeds studio, but her mentoring offers sessions in Dorset, so she may now live there.
+   - **João Palma:** his family lives near Monte da Caparica, which isn't in our places table, so Almada (the municipality) is used.
+4. **One lineage in Paris.** Amy Hollowell, her successor Joa Scetbon and his teacher Catherine Genno Pagès share sangha inboxes and channels. Three listings, or fold Genno Pagès and Scetbon into Amy's?
+   - Genno Pagès has 3 items and Scetbon 4, so both pages are thin.
+5. **Fit:**
+   - **Wendy Moran** leans towards wellness rather than spiritual teaching. Her weekly classes are left out because their page lists anxiety, sleep and hormone benefits.
+   - **João Palma** teaches mostly in Portuguese. His MBSR work is left out under the health rule.
+   - **Keizan Scott:** his email and videos are the sangha's.
+   - **Alexandra Kreis** teaches with her partner, Richard Fuhrmann. One offering is a €2,800 year-long membership.
 
-## Books and Amazon
+## Waiting: Ani Rinchen Khandro (Edinburgh)
 
-- **amazon.com's robots.txt blocks Claude agents, so no Amazon page was opened.**
-- Every book's ISBN-10 or ASIN comes from the teacher's or publisher's own page and is confirmed on Open Library. Covers come by ASIN from Amazon's image server, else from Open Library.
-- Worth a click on localhost: the Buy links for Newell, the Batchelors, Gordon Smith and Sophie Bashford. Bernat Font's book (Bloomsbury, 2026) uses the draft cover from his own site.
-- **I added Sophie Bashford's 2 books** (You Are a Goddess; Goddesses, Gods and Guardians Oracle Cards) from her own site.
-- **Left out:** Brother Phap Huu's books, as borderline under the health rule.
-- **I removed one sentence from Noirin Sheahan's bio** before the insert: her laryngectomy, her own history, not a claim.
+She's a Tibetan Buddhist nun at Samye Dzong Edinburgh. Her plan is ready: 12 videos, 3 offerings, 3 free resources.
 
-## The ingest scripts: fixed to follow your standing rule
+Her only photos are two portraits on edinburgh.samye.org. They load in a browser and with curl. The ingest script can't fetch them, though, because the site closes the connection, so the ingest refuses her for having no photo.
 
-While checking this sprint, I found two places where the scripts broke the rule "never another browser identity or user agent":
-- `scripts/lib/images.mjs` fetched pages with a **Chrome user agent**.
-- `scripts/ingest.mjs` and `scripts/fix-images.mjs` **opened Amazon product pages**, which amazon.com's robots.txt blocks.
+I didn't try any workaround. If you're happy with the photos, I'll look into why the script can't load them, or you could send a photo.
 
-Both are fixed:
-- The scripts now name themselves (`SpiritpediaIngest/1.0`, with the site's address).
-- They never open an Amazon page. A book's ASIN is checked on Open Library instead, and a Kindle `B0…` ASIN is listed for a human to confirm.
-- The cover still comes by ASIN from Amazon's image server, which isn't a product page.
-- README §18.2 and §19 are updated.
+## Skipped (59) and not researched (1)
 
-## Research slips (reported, nothing used)
+Each skip has a file with its reason in `docs/content-audits/uk-europe-sprint-2/skipped/`. The main reasons:
+- **No website of their own, or no email or contact form:** the largest group, mainly Insight Timer-only teachers.
+- **Mainly therapy, coaching or fitness.**
+- **The health rule:**
+  - Sandy C. Newbigging (Calm Cure, Mind Detox)
+  - Vidyamala Burch (Breathworks, "for pain, illness and stress")
+  - Ryan Jones, Huda Arnaout, Paula Radziszewska, Bé Barata
+- **No base in the city:**
+  - Karl Renz: Bad Pyrmont
+  - Lama Jampa Thaye: London
+  - Daniel Odier: no base
+  - Tony Samara: sources disagree
+  - Diana Kasperska: Kinnegad
+  - Louise Luiggi: Lincolnshire
+- **Sites that block us** (robots.txt), not fetched: Amy Davies, Dani (danisflowing), Trine Hedegaard, Allison Michaela. Awen Clement's site redirects to Substack.
 
-- **YouTube search:** one research helper requested a YouTube search page (`/results`, blocked by YouTube's robots.txt). It was refused and not retried.
-- **A blocked blog:** one helper fetched readingroomatingenji.wordpress.com in the same command as its robots.txt, which says `Disallow: /`. The page was deleted and nothing from it was used.
-- **A sprint file overwritten:** a helper overwrote `stephan-pende-wormland.json`. I restored it from git, and it's unchanged.
+Not researched: Paulina Perez Gonzalez (Berlin), still in the queue.
+
+## Research slips (reported; nothing from them used)
+
+**Open Library search.** Three helpers each called Open Library's `/search.json` once. Its robots.txt disallows `/search`.
+- Our own ingest and fix-images scripts did the same as a last fallback for book covers. **That fallback is now removed** (`ac49be4`), and README §18.2 is updated.
+- Books are now checked by ISBN only (`/isbn/`, which is allowed).
+
+**Requests made before reading robots.txt:**
+- One status check on anchor.fm redirected to creators.spotify.com, onto a path its robots.txt disallows.
+- A curl on awenclement.co.uk's robots.txt followed a redirect onto Substack once. She was then skipped.
+- An mp3 on we.activespirits.net was fetched before its robots.txt was read. The robots.txt allows it.
+
+**Other:**
+- One helper tried three guessed ISBNs on Open Library (all 404, none used).
+- One wrote a temporary file to /tmp and deleted it.
+- No blocked page was retried, no fake user agent was used, and nothing was fetched from Amazon, Instagram, Facebook or YouTube search.
+
+**Search limit.** The helpers' shared web-search limit (200 calls) ran out partway through. That is part of why yield is about 4–5 per city group and not 6.
 
 ## Also done
 
-- **README:**
-  - §8.1 covers 0034.
-  - §18.2 and §19 cover the honest user agent and Open Library.
+- `0035` (above).
+- README:
+  - §8.1 covers 0035.
   - §18.6 has the sprint's row.
-  - §18.7 has the regional sprints.
-- **The sprint folder,** `docs/content-audits/uk-europe-sprint-1/`, has the brief, the queue (`progress.json`), the skips and REPORT.md.
-
-
-## Update, 3 Nov 2026 (evening): live
-
-- **0034** was run by the owner on dev (53, 366, 2) and live (53, 342, 2).
-- **Owner decisions:**
-  - Newell and Stephen Batchelor stay Luminary, and **Gordon Smith is raised to Luminary** (23 books, over a million sold). That makes 3 Luminary and 22 Local Hero.
-  - Stephen Batchelor and Lisette Schuitemaker are kept.
-  - Bordeaux for the Batchelors, Gordon Smith with no town, every contact address and the small-check choices are accepted.
-- **Gordon Smith's tier:** set in his plan for live; on dev, changed by `docs/content-audits/owner-fixes-uk-europe-2026-11-03.mjs` (logged for rollback).
-- **The 25 are on live:** 138 videos, 37 books, 68 offerings, 60 free resources and 10 hub links, the same as dev. Each is logged in `<slug>.live.inserted.json`.
-  - 24 have a place for Near You; Gordon Smith has a country only.
-  - Pages answer 200 on spiritpedia.co.
-- **Next:** Sprint A2, city first: Birmingham, Manchester, Leeds, Liverpool, Sheffield, Nottingham, Glasgow, Edinburgh and Cork, then Berlin, Paris, Lisbon and Copenhagen.
+- The sprint folder `docs/content-audits/uk-europe-sprint-2/` has the brief, the runner, the queue (`progress.json`, 83 leads), the skips and REPORT.md.

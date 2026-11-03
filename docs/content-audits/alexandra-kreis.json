@@ -1,0 +1,133 @@
+{
+  "healer": {
+    "healer_slug": "alexandra-kreis",
+    "location_source": "https://www.beingalivenow.com/impressum",
+    "create": {
+      "name": "Alexandra Kreis",
+      "bio": "Alexandra Kreis is a Berlin-based teacher of Hatha yoga, meditation and devotional chanting, and she shares her work with her partner Richard Fuhrmann under the name Being Alive Now. Her own grounding is in Hatha yoga, which she has practised for many years alongside Qi Gong, Tai Chi and a study of Ayurveda, and over time kirtan, the call-and-response singing of mantras and the names of Hindu deities, became the heart of what she offers. Richard, who trained in a range of consciousness and energy-awareness methods, brings energy work and music to their shared programmes.\n\nTogether they lead small residential retreats that weave chanting, gentle movement, energy work and group reflection. Their autumn Mallorca intensive centres on singing the Hanuman Chalisa 108 times with live instruments, each round dedicated to an intention, an approach inspired by the kirtan of Krishna Das and his teacher Neem Karoli Baba. Their year-long online group, Destiny Fulfilled, meets twice a month for sharing, mantras and a guided energy meditation, framed around five areas of life. Alexandra's short guided meditations, breath practices and mantra recordings are free on Insight Timer, and the pair also release devotional music together.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "worldwide",
+      "city": "Berlin",
+      "country": "Germany",
+      "subjects": [
+        "meditation",
+        "spirituality",
+        "yoga"
+      ],
+      "website_url": "https://www.beingalivenow.com/",
+      "booking_url": "https://www.beingalivenow.com/retreat",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "justbeingalivenow@gmail.com",
+      "image_urls": [
+        "https://static.wixstatic.com/media/499c4d_8752fdbee1314f7d8f9f53dd59e4a321~mv2.jpg"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "insight-timer",
+      "role": "instructor"
+    }
+  ],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Mallorca Mantra Intensive 2027",
+      "url": "https://www.beingalivenow.com/mallorca",
+      "description": "An eight-day residential retreat in a villa on Mallorca for up to fifteen people, built around chanting the Hanuman Chalisa 108 times with live music. Each chanting session begins with a personal intention, and the days include gentle yoga, energy work and question-and-answer time.",
+      "price": "Retreat fee €1,600 EUR if paid before 31 Dec 2026 (€1,800 EUR after), plus lodging from €915 EUR per person (double room) or €1,100 EUR (single room)",
+      "product_type": "retreat",
+      "start_date": "2027-10-02",
+      "end_date": "2027-10-09",
+      "subjects": [
+        "spirituality",
+        "meditation"
+      ],
+      "image": "https://static.wixstatic.com/media/499c4d_e1b45165d663412d83e6bc2fadb82db7~mv2.jpg/v1/fit/w_373,h_280,q_90,enc_avif,quality_auto/499c4d_e1b45165d663412d83e6bc2fadb82db7~mv2.jpg"
+    },
+    {
+      "title": "Destiny Fulfilled (2027 group)",
+      "url": "https://www.beingalivenow.com/membership",
+      "description": "A year-long online group for up to twelve people, meeting on Tuesday evenings twice a month. Sessions combine open sharing, mantras and spiritual songs, and a guided energy meditation, with the aim of seeing more clearly where one feels stuck across five areas of life.",
+      "price": "€2,800 EUR for 2027",
+      "product_type": "membership",
+      "start_date": "2027-01-12",
+      "end_date": "2027-12-21",
+      "subjects": [
+        "spirituality",
+        "meditation"
+      ],
+      "image": "https://static.wixstatic.com/media/499c4d_d0c0647c2de840f7ae330f7aff62234c~mv2.jpg/v1/fill/w_635,h_358,al_c/499c4d_d0c0647c2de840f7ae330f7aff62234c~mv2.jpg"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "12-Minute Meditation For Self-Trust & Inner Confidence",
+      "url": "https://insighttimer.com/ellamaria/guided-meditations/trusting-in-yourself-and-your-mind-meditation",
+      "description": "A short guided sit for settling the mind and resting in a sense of trust in oneself. Free on Insight Timer.",
+      "featured": true,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://libraryitems.insighttimer.com/g0n5q6v0h0l4d8y0p9g7e0g9c6p0u8s3w0v6a3x5/pictures/tiny_square_medium.jpeg"
+    },
+    {
+      "title": "Full Breath Meditation Feeling At Home In Your Body",
+      "url": "https://insighttimer.com/ellamaria/guided-meditations/full-breath-meditation-feeling-at-home-in-your-body",
+      "description": "A seven-minute practice of slow, full breathing to bring attention back into the body. Free on Insight Timer.",
+      "featured": false,
+      "resource_type": "meditation",
+      "subjects": [
+        "breathwork",
+        "meditation"
+      ],
+      "image": "https://libraryitems.insighttimer.com/m8s3v0b0x9w1v6d0v7f7m9r2y7x7q1y3c3c5a0h5/pictures/tiny_square_medium.jpeg"
+    },
+    {
+      "title": "Vulnerability Guided Meditation",
+      "url": "https://insighttimer.com/ellamaria/guided-meditations/vulnerability-guided-meditation",
+      "description": "An eleven-minute reflection that invites a gentler, more open relationship with one's own tender places. Free on Insight Timer.",
+      "featured": false,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://libraryitems.insighttimer.com/v9d0y0y2g8r9u1q5r8s3p3m7z7f7b2h5r7a6r1h0/pictures/tiny_square_medium.jpeg"
+    }
+  ],
+  "sprint": {
+    "sprint": "uk-europe-2",
+    "hub": "insight-timer",
+    "rank": 503,
+    "hub_url": "https://insighttimer.com/ellamaria",
+    "insight_timer_url": "https://insighttimer.com/ellamaria",
+    "tier_evidence": "Insight Timer 571 followers (profile via WebFetch, 3 Nov 2026); their YouTube channel is a shared music channel (LuckyMantraMusic), not counted; Instagram/Facebook not read (login/robots) → ~571 total → local_hero",
+    "email": "yes",
+    "email_source": "https://www.beingalivenow.com/contact",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 8 source(s)",
+    "flags": [
+      "Couple: Being Alive Now is run by Alexandra Kreis and her partner Richard Fuhrmann, who teach together; listed under Alexandra (the Insight Timer teacher), with Richard in the bio. The owner may prefer the couple's name or 'Being Alive Now'.",
+      "Base: the site's Impressum gives Being Alive Now's business address in Berlin (street address not used) and her Insight Timer profile says Berlin, Germany. Their retreats are abroad (Croatia, Mallorca) and the group meets online, so availability is worldwide.",
+      "Email justbeingalivenow@gmail.com is the shared Being Alive Now inbox (site footer).",
+      "Content is thin-ish: two offerings and three free Insight Timer tracks. The Mallorca page quotes the claim that chanting the Hanuman Chalisa 'can change karma / destiny' and lists health among five 'pillars of life'; no health promise was carried into the item description.",
+      "Her About text mentions coaching people on detoxes; left out of the bio under the health rule.",
+      "Photo: one confirmed photo of her alone (About page, next to her section); a shared portrait of the couple was not used."
+    ],
+    "left_out": [
+      "Intuition retreat in Croatia (2-9 May 2026): date passed.",
+      "Online events (Healthy Relationships session, Wealth Weekend, chanting sessions): all dated 2025, passed; 'Healthy Relationships' also borderline under the health rule.",
+      "Insight Timer music tracks (Baba's Sita Ram, Lakshmi Ma, Hanuman story and others): music-only; their YouTube and streaming music (LuckyMantraMusic) left out as music.",
+      "Chit-Chats page and blog: no published posts or episodes found.",
+      "T-shirt shop: merchandise."
+    ]
+  },
+  "images_final": true
+}

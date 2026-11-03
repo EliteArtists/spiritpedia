@@ -1,0 +1,28 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 706,
+    "healer_slug": "catherine-genno-pages"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "26adaea1-8a54-46e7-a841-62b400aed098",
+      "slug": "sesshins-at-dana-sangha",
+      "title": "Sesshins at Dana Sangha"
+    },
+    {
+      "table": "courses",
+      "id": "4aa532d9-3d0c-4e4c-80ba-30acdf13e16c",
+      "slug": "weekly-zen-meditation-at-dana-sangha",
+      "title": "Weekly Zen Meditation at Dana Sangha"
+    },
+    {
+      "table": "free_resources",
+      "id": "d995b454-1725-4015-af78-7bda03a8fa0a",
+      "slug": "transmission-retreat-a-dharma-talk-by-catherine-genno-pages-roshi",
+      "title": "Transmission Retreat – A Dharma Talk by Catherine Genno Pagès Roshi"
+    }
+  ],
+  "at": "2026-11-03T18:28:03.163Z"
+}

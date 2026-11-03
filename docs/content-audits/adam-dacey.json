@@ -1,0 +1,284 @@
+{
+  "healer": {
+    "healer_slug": "adam-dacey",
+    "location_source": "https://insighttimer.com/mindspaceuk",
+    "create": {
+      "name": "Adam Dacey",
+      "bio": "Adam Dacey is a Birmingham meditation teacher who first met Buddhist practice in the Himalayas in the mid-1990s. He spent years in study and retreat in the Tibetan tradition that follows Je Tsongkhapa and lived for a time as a monk before returning to lay life. In 2008 he set up Mindspace, a not-for-profit social enterprise run from Birmingham, to offer meditation in plain, modern language to anyone who wants it.\n\nMost of his work happens across the West Midlands: eight-week evening courses in Harborne, Sutton Coldfield, Solihull and Tettenhall, also streamed live, and day or half-day retreats in Kings Heath, Warwick, the Malvern Hills and Cannock Chase. He also leads silent days in London, weekends in the Lake District and longer retreats in Thailand and Nepal, and has taken the practice into schools, workplaces and prisons. Sessions mix guided meditation, short talks and paired discussion, with themes such as loving-kindness, gratitude, letting go and compassion, sometimes drawing on Buddhist mantra and visualisation. He has written five short practice books, including Guide to the Mindful Way of Life and Find Your Zen, and shares talks and guided practices on his Online Meditation YouTube channel and on Insight Timer.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local_online",
+      "city": "Birmingham",
+      "country": "United Kingdom",
+      "subjects": [
+        "meditation",
+        "mindfulness",
+        "spirituality"
+      ],
+      "website_url": "https://www.mindspace.org.uk/",
+      "booking_url": "https://www.mindspace.org.uk/retreats/",
+      "youtube_url": "https://www.youtube.com/@OnlineMeditation",
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": null,
+      "image_urls": [
+        "https://www.mindspace.org.uk/wp-content/uploads/2020/04/Screenshot-2020-04-04-at-16.07.17.png",
+        "https://www.mindspace.org.uk/wp-content/uploads/2019/12/japan.jpg"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "insight-timer",
+      "role": "instructor"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Guided Meditation for Compassion and Emotional Difficulty (9 Minutes)",
+      "url": "https://www.youtube.com/watch?v=j6PKjsIu7g8",
+      "subjects": [
+        "meditation"
+      ],
+      "channel": "OnlineMeditation"
+    },
+    {
+      "title": "Kathmandu’s Sacred Landscape: Impermanence and the Legacy of Tilopa and Naropa",
+      "url": "https://www.youtube.com/watch?v=08yzxP2Bwi8",
+      "subjects": [
+        "ancient-wisdom",
+        "spirituality"
+      ],
+      "channel": "OnlineMeditation"
+    },
+    {
+      "title": "What to Do When Your Mind Won’t Stop Spinning Before Sleep?",
+      "url": "https://www.youtube.com/watch?v=AoRgm_Mg1z8",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "channel": "OnlineMeditation"
+    },
+    {
+      "title": "How to Have a Good Day",
+      "url": "https://www.youtube.com/watch?v=vrBDnwcVsrU",
+      "subjects": [
+        "mindfulness"
+      ],
+      "channel": "OnlineMeditation"
+    },
+    {
+      "title": "Respecting the Image of Buddha",
+      "url": "https://www.youtube.com/watch?v=_AcwVIasVUI",
+      "subjects": [
+        "spirituality",
+        "ancient-wisdom"
+      ],
+      "channel": "OnlineMeditation"
+    },
+    {
+      "title": "How Long to Meditate For ?",
+      "url": "https://www.youtube.com/watch?v=vWmLCHrDTWo",
+      "subjects": [
+        "meditation"
+      ],
+      "channel": "OnlineMeditation"
+    },
+    {
+      "title": "Five Minute Guided Meditation",
+      "url": "https://www.youtube.com/watch?v=eExP1fM9IC4",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "channel": "OnlineMeditation"
+    }
+  ],
+  "books": [],
+  "courses": [
+    {
+      "title": "Modern Meditation: An Eight-Week Course for Busy People",
+      "url": "https://www.mindspace.org.uk/modern/",
+      "description": "A weekly evening course that runs each term in Tettenhall, Sutton Coldfield, Harborne and Solihull, or by livestream. Each week pairs a guided meditation with a short talk and a discussion in pairs, on themes such as focus, letting go and quietening the mind for rest. Seating is on chairs and no experience is needed.",
+      "price": "£60 GBP (single sessions from £10 GBP)",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://www.mindspace.org.uk/wp-content/uploads/2020/04/Screenshot-2020-04-04-at-16.07.17.png"
+    },
+    {
+      "title": "Retreat to Nepal: Limitless Mind",
+      "url": "https://www.mindspace.org.uk/nepal/",
+      "description": "A six-day residential meditation retreat at a hill-station hotel in Nagarkot, looking out over the Himalayas. Guided sittings, teachings and discussion explore the openness and clarity of the mind, with free afternoons for walks and visits to nearby sacred sites.",
+      "price": "From £443 GBP",
+      "product_type": "retreat",
+      "start_date": "2026-11-20",
+      "end_date": "2026-11-25",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "image": "https://www.mindspace.org.uk/wp-content/uploads/2020/04/Screenshot-2020-04-04-at-16.07.17.png"
+    },
+    {
+      "title": "Retreat to Thailand: Little Acts, Great Love, Quiet Joy",
+      "url": "https://www.mindspace.org.uk/thailand-retreat/",
+      "description": "A six-day residential retreat on the island of Koh Chang, now in its fifth year. The sessions look at bringing calm attention and kindness to ordinary daily activities, with time between sittings to rest or visit the local temple and coast.",
+      "price": "From £420 GBP",
+      "product_type": "retreat",
+      "start_date": "2026-11-29",
+      "end_date": "2026-12-04",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://www.mindspace.org.uk/wp-content/uploads/2020/04/Screenshot-2020-04-04-at-16.07.17.png"
+    },
+    {
+      "title": "Buddha Smile: Cultivating Wisdom & Compassion",
+      "url": "https://www.mindspace.org.uk/smile/",
+      "description": "A run of live online sessions on Zoom each Saturday morning through the festive season, closing with a New Year's Eve retreat. It combines guided meditation, visualisation and the Buddha's mantra, and recordings and resources are sent afterwards.",
+      "price": "£48 GBP",
+      "product_type": "course",
+      "start_date": "2026-11-28",
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "image": "https://www.mindspace.org.uk/wp-content/uploads/2020/04/Screenshot-2020-04-04-at-16.07.17.png"
+    },
+    {
+      "title": "Awakening Compassion",
+      "url": "https://www.mindspace.org.uk/awakening/",
+      "description": "A six-week self-paced Mindspace+ course in video and audio on developing compassion, from first steps through mantra and visualisation of the Buddha of Compassion to carrying it into daily life. It can be started at any time.",
+      "price": "£48 GBP",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "image": "https://www.mindspace.org.uk/wp-content/uploads/2020/04/Screenshot-2020-04-04-at-16.07.17.png"
+    },
+    {
+      "title": "Guide to the Mindful Way of Life (e-book)",
+      "url": "https://www.mindspace.org.uk/product/guide-to-the-mindful-way-of-life-ebook/",
+      "description": "His first book, sold as an instant download. Eight chapters, one for each week of his introductory course, set out simple secular practices for beginners drawn from the older Buddhist meditation tradition.",
+      "price": "£10.99 GBP",
+      "product_type": "download",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "image": "https://www.mindspace.org.uk/wp-content/uploads/2020/04/Screenshot-2020-04-04-at-16.07.17.png"
+    },
+    {
+      "title": "Guide to the Grateful Way of Life (e-book)",
+      "url": "https://www.mindspace.org.uk/product/guide-to-the-grateful-way-of-life-ebook/",
+      "description": "A self-guided gratitude programme as a download, with a different short practice for each day over eight weeks. Chapters cover gratitude in breathing, eating, relationships, hard times and plans for the future.",
+      "price": "£10.99 GBP",
+      "product_type": "download",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://www.mindspace.org.uk/wp-content/uploads/2020/04/Screenshot-2020-04-04-at-16.07.17.png"
+    },
+    {
+      "title": "Find Your Zen (e-book)",
+      "url": "https://www.mindspace.org.uk/product/find-your-zen-ebook/",
+      "description": "A short e-book on building a sitting practice with an open and kind attitude, paying attention to posture and the flow of the mind, and carrying that presence into everyday activity.",
+      "price": "£9.99 GBP",
+      "product_type": "download",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://www.mindspace.org.uk/wp-content/uploads/2020/04/Screenshot-2020-04-04-at-16.07.17.png"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Meditation on Gratitude",
+      "url": "https://insighttimer.com/mindspaceuk/guided-meditations/meditation-on-gratitude",
+      "description": "An eight-minute guided practice on Insight Timer that turns attention to the people and things we can be thankful for. Free to play.",
+      "featured": true,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://libraryitems.insighttimer.com/e1y3h1p5p9k9j9c9q1w7q3v4q0t4x7v4z9b9e0p7/pictures/tiny_square_medium.jpeg"
+    },
+    {
+      "title": "Goodwill Breathing",
+      "url": "https://insighttimer.com/mindspaceuk/guided-meditations/ten-minute-goodwill-guided-breathing-meditation",
+      "description": "An eleven-minute guided breathing meditation that links each breath with wishing others well. Free on Insight Timer.",
+      "featured": false,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://libraryitems.insighttimer.com/j6s9c1r4h9m0z6e6l0m4b0t0m6y6l7a2d3d0u1f8/pictures/tiny_square_medium.jpeg"
+    },
+    {
+      "title": "Get Started with Mindful Meditation",
+      "url": "https://www.mindspace.org.uk/get-started/",
+      "description": "A free introductory set of short sessions on his site, covering mindful listening, body, breathing, movement, eating, sleep and the heart, taken from the full Mindspace course.",
+      "featured": false,
+      "resource_type": "mini_course",
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "image": "https://www.mindspace.org.uk/wp-content/uploads/2020/04/Screenshot-2020-04-04-at-16.07.17.png"
+    }
+  ],
+  "sprint": {
+    "sprint": "uk-europe-2",
+    "hub": "insight-timer",
+    "rank": 201,
+    "hub_url": "https://insighttimer.com/mindspaceuk",
+    "insight_timer_url": "https://insighttimer.com/mindspaceuk",
+    "tier_evidence": "YouTube @OnlineMeditation 19.7K subscribers (channel header, 3 Nov 2026; this is the Mindspace channel he runs and presents); Insight Timer 4.7k followers (profile, 3 Nov 2026); Instagram @createmindspace, Facebook and X linked from mindspace.org.uk but not opened (blocked or login-walled) → ~24.4k readable → local_hero",
+    "email": "contact form",
+    "email_source": null,
+    "contact_form_url": "https://www.mindspace.org.uk/contact/",
+    "bio_check": "OK: no 8-word runs against 21 source(s)",
+    "flags": [
+      "mindspace.org.uk carries injected casino links in its main menu on every page (888 Ladies Casino, Duelz, Zodiac and others), so the site looks compromised; a human may want to tell him, and to decide whether linking it is acceptable for now.",
+      "YouTube channel @OnlineMeditation is the Mindspace brand channel rather than a personal one; he founded and leads Mindspace and presents its videos, so its subscribers are counted. Its avatar is a logo and is not used as a photo.",
+      "Photos are from his own site's 'Meet your teacher' sections (a smiling headshot and a seated meditation photo); both show the same man, but neither is captioned by name.",
+      "No email address is published; his contact page has a form and a WhatsApp number.",
+      "Mindspace is registered as Mindspace Meditation CIC with an office on Moseley Road, Birmingham (contact page); Insight Timer gives Birmingham as his location.",
+      "His five books are self-published by Mindspace Press with no ISBN on his own pages, so three are listed as e-book downloads from his shop rather than as books.",
+      "'Guided Meditation for Compassion and Emotional Difficulty' is kept: it names no condition; a human may want to check it.",
+      "Rule slip: I queried openlibrary.org/search.json once while looking for his ISBNs, which falls under Open Library's robots.txt 'Disallow: /search'; nothing from it is used in this plan."
+    ],
+    "left_out": [
+      "Books section: no ISBN published on his or a publisher's page for Guide to the Mindful Way of Life, Guide to the Grateful Way of Life, Find Your Zen, Learn to Fly or Today it's Sunny.",
+      "Video 'The Power of Meditation: Reducing Stress and Headaches Naturally' (names a condition).",
+      "Video 'Meditate Instead of Vape' (addiction framing).",
+      "Short promos for classes and retreats (under ~2 minutes or adverts) and the Christmas message videos (seasonal).",
+      "Warwick day retreat on 7 Nov 2026 and London silent day on 14 Nov 2026 (single dated days; the main retreat page is the booking link).",
+      "Corporate, schools and prison programmes (not public offerings).",
+      "Video 'Interconnected Meditation' (2:39, looks like a Mindspace+ course preview)."
+    ]
+  },
+  "images_final": true
+}

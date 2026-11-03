@@ -1,0 +1,34 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 708,
+    "healer_slug": "joao-palma"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "0f344b98-5858-4d18-af76-0b3bfa746df9",
+      "slug": "mindfulness-e-os-4-incomensuraveis",
+      "title": "Mindfulness e os 4 Incomensuráveis"
+    },
+    {
+      "table": "courses",
+      "id": "b3e4d5c7-dbe0-4766-b625-64fff7894054",
+      "slug": "retiro-de-silencio-as-4-fundacoes-de-mindfulness",
+      "title": "Retiro de Silêncio – As 4 Fundações de Mindfulness"
+    },
+    {
+      "table": "courses",
+      "id": "973121fc-ec96-400a-a629-cb499b703237",
+      "slug": "sessoes-semanais-de-mindfulness",
+      "title": "Sessões semanais de Mindfulness"
+    },
+    {
+      "table": "courses",
+      "id": "c72488a5-ef45-4d9a-917f-cceba427d694",
+      "slug": "iniciacao-ao-mindfulness",
+      "title": "Iniciação ao Mindfulness"
+    }
+  ],
+  "at": "2026-11-03T18:28:10.391Z"
+}

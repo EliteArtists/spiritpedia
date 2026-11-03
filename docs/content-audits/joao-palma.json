@@ -1,0 +1,124 @@
+{
+  "healer": {
+    "healer_slug": "joao-palma",
+    "location_source": "https://www.budadharma.org/home/equipa/english/",
+    "create": {
+      "name": "João Palma",
+      "bio": "João Palma is a Portuguese meditation teacher who has practised since 2004 and began teaching in 2008, both through Budadharma, the project he started that year, and at the Portuguese Buddhist Union in Lisbon. His roots are in the insight tradition of the Buddha's early teachings, and he has led meditation retreats since 2014. He is also a certified teacher and mentor of the eight-week MBSR programme, recognised by Bangor University and the UC San Diego Center for Mindfulness, and has helped train other mindfulness teachers in Portugal.\n\nHe lives with his partner, the yoga teacher Francisca Schouten, and their daughter at Casa Dhyana, a smallholding outside Monte da Caparica on the far bank of the Tagus from Lisbon. In the city he leads a lunchtime sitting on Tuesdays, open in person or on Zoom, and an online Thursday group for people who want to go further, each mixing a short reflection, guided practice and sharing. His courses and retreats work with satipaṭṭhāna, the four foundations of mindfulness, and the brahmavihāras of kindness, compassion, appreciative joy and equanimity, often in silence and with walking practice outdoors. Most classes are in Portuguese, and some retreats and the Budadharma site are offered in English.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local_online",
+      "city": "Almada",
+      "country": "Portugal",
+      "subjects": [
+        "mindfulness",
+        "meditation",
+        "ancient-wisdom"
+      ],
+      "website_url": "https://www.budadharma.org/",
+      "booking_url": "https://www.budadharma.org/calendario/",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "geral@budadharma.org",
+      "image_urls": [
+        "https://www.budadharma.org/wp-content/uploads/2025/09/Joao-modified-2.png",
+        "https://www.budadharma.org/wp-content/uploads/2025/05/joao-peq-modified.png"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Mindfulness e os 4 Incomensuráveis",
+      "url": "https://www.budadharma.org/4-incomensuraveis/",
+      "description": "A six-evening course in central Lisbon on the four qualities of the heart known in Buddhism as the brahmavihāras: kindness, compassion, appreciative joy and equanimity. Each session joins mindfulness and insight practice with guided audio for home practice; taught in Portuguese.",
+      "price": "€180 to €260 EUR (sliding scale, plus VAT)",
+      "product_type": "course",
+      "start_date": "2026-11-16",
+      "end_date": "2026-12-21",
+      "subjects": [
+        "mindfulness",
+        "meditation",
+        "ancient-wisdom"
+      ],
+      "image": "https://www.budadharma.org/wp-content/uploads/2026/08/Untitled-design8.jpg"
+    },
+    {
+      "title": "Retiro de Silêncio – As 4 Fundações de Mindfulness",
+      "url": "https://www.budadharma.org/retiros/retiro-de-silencio/",
+      "description": "A silent residential retreat at the Seminário da Silva near Barcelos, working through the four foundations of mindfulness from the Satipaṭṭhāna Sutta with guided vipassanā and mettā, talks and walking practice in nature. Some meditation experience is recommended.",
+      "price": "€390 to €550 EUR (sliding scale, plus VAT)",
+      "product_type": "retreat",
+      "start_date": "2027-04-14",
+      "end_date": "2027-04-18",
+      "subjects": [
+        "meditation",
+        "mindfulness",
+        "ancient-wisdom"
+      ],
+      "image": "https://www.budadharma.org/wp-content/uploads/2026/08/Untitled-design8.jpg"
+    },
+    {
+      "title": "Sessões semanais de Mindfulness",
+      "url": "https://www.budadharma.org/sessoes-semanais/",
+      "description": "Two weekly groups he leads: a 50-minute lunchtime sitting on Tuesdays, in person in Lisbon or on Zoom, and an online Thursday evening session for those with some experience, combining a short reflection, guided meditation and group sharing.",
+      "price": "€25 EUR per month (trial session €8 EUR)",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "image": "https://www.budadharma.org/wp-content/uploads/2026/08/Untitled-design8.jpg"
+    },
+    {
+      "title": "Iniciação ao Mindfulness",
+      "url": "https://www.budadharma.org/iniciacao-mindfulness/",
+      "description": "A three-hour introductory workshop on how attention wanders, how to notice autopilot and how to bring mindfulness into formal sitting and daily life. Dates are announced on the page.",
+      "price": "€45 EUR",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "image": "https://www.budadharma.org/wp-content/uploads/2026/08/Untitled-design8.jpg"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "uk-europe-2",
+    "hub": "none",
+    "rank": 608,
+    "hub_url": null,
+    "tier_evidence": "No personal YouTube found; Budadharma's Instagram, Facebook and Insight Timer accounts are shared with his partner and were not read (instagram.com and facebook.com not fetched; insighttimer.com/budadharma renders by script) (3 Nov 2026) → 0 readable → local_hero",
+    "email": "yes",
+    "email_source": "https://www.budadharma.org/contactos/",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 18 source(s)",
+    "flags": [
+      "Base: the Budadharma team page says he and his family live at Casa Dhyana near Monte da Caparica (Almada, on the south bank of the Tagus opposite Lisbon); his classes are at Academia Transformar in central Lisbon. City recorded as Almada (the municipality that contains Monte da Caparica), because Monte da Caparica is not in the places table; change it if a place alias is preferred.",
+      "English is only part of his work: most courses are in Portuguese; Budadharma's site has English pages and its October 2026 autumn retreat was 'led in English'. A human may judge this too little English.",
+      "Much of his professional work is MBSR teaching and teacher mentoring (a secular programme framed around stress, pain and illness); those items were left out under the health rule, and the listing rests on his Buddhist-based courses and retreats.",
+      "The email geral@budadharma.org is the shared Budadharma inbox (he and Francisca Schouten).",
+      "Budadharma runs an Insight Timer account (insighttimer.com/budadharma) that could not be read with a plain fetch, so Insight Timer was not added to teaches_at and no tracks were picked.",
+      "Thin: four offerings, no videos, books or free resources."
+    ],
+    "left_out": [
+      "MBSR – Mindfulness Based Stress Reduction courses and the MBSR teacher training: framed around stress, pain and illness (health rule).",
+      "Breathworks – Mindfulness e Compaixão para a Saúde: health-framed.",
+      "Autumn Retreat: Coming Back to Presence (2 to 5 Oct 2026, in English): already past.",
+      "Mindfulness mentoring and Mindfulness em empresas: mentoring and corporate work, no public price.",
+      "Francisca Schouten's yoga classes and yoga therapy consultations (hers, and the latter lists chronic pain, grief and anxiety).",
+      "Course material page for Mindfulness e os 4 Incomensuráveis: password-protected, not free."
+    ]
+  },
+  "images_final": true
+}

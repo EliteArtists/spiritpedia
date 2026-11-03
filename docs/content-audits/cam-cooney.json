@@ -1,0 +1,124 @@
+{
+  "healer": {
+    "healer_slug": "cam-cooney",
+    "location_source": "https://www.camcooneymeditation.com/contact-us",
+    "create": {
+      "name": "Cam Cooney",
+      "bio": "Cam Cooney is an Australian-born teacher of Vedic meditation who has made his home in Glasgow, where he runs a small meditation studio in Kinning Park. He went to his first beginners' class in 2013, spent the following years trying many styles on courses and retreats in several countries, and qualified as a Vedic meditation teacher in 2019 after a long residential training of some three and a half months of intensive practice.\n\nHe teaches a simple mantra-based technique practised sitting comfortably in a chair, and presents it without robes, jargon or the need for any belief. Newcomers start with a free introductory session, then learn the full method over a seven-part course that moves from the practical mechanics to the wider spiritual picture of consciousness. Students can also learn one to one, keep going through live weekly group sits on his own app, and join occasional residential retreats in the west of Scotland. His larger events have included guided meditations under the dome of the Glasgow Planetarium. Outside teaching he is a Movember ambassador and has taken on a number of charity challenges, including a long meditation sit and five nights sleeping rough in Glasgow to raise money for a homelessness charity.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local_online",
+      "city": "Glasgow",
+      "country": "United Kingdom",
+      "subjects": [
+        "meditation",
+        "consciousness",
+        "spirituality"
+      ],
+      "website_url": "https://www.camcooneymeditation.com/",
+      "booking_url": "https://www.camcooneymeditation.com/get-started-meditation-courses-glasgow",
+      "youtube_url": "https://www.youtube.com/@nomadcamc",
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "cam@camcooneymeditation.com",
+      "image_urls": [
+        "https://images.squarespace-cdn.com/content/v1/5d820cd46cfef80303b9da1c/103eea7d-a7c2-47b4-a33c-b15d8b9baad5/529A0803.JPG?format=750w",
+        "https://images.squarespace-cdn.com/content/v1/5d820cd46cfef80303b9da1c/1ec470ac-8e06-47c5-a223-e5025f41a696/529A0890.JPG?format=750w"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "insight-timer",
+      "role": "instructor"
+    }
+  ],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Learn To Meditate: 7 Day Course",
+      "url": "https://www.camcooneymeditation.com/3-day-course-page",
+      "description": "His foundation course in Vedic meditation, taken in seven sessions of about an hour through his app. It moves from guided practice to sitting with a personal mantra on your own, then covers the Western science of rest and the Eastern view of consciousness.",
+      "price": "Included in app membership (from £99 GBP a year; lifetime £399 GBP)",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "consciousness"
+      ],
+      "image": "http://static1.squarespace.com/static/5d820cd46cfef80303b9da1c/t/65aa9660ad71a14dfe1f1d9e/1705678432329/Untitled+design+%287%29.png?format=1500w"
+    },
+    {
+      "title": "Meditate With Cam: live weekly classes and app",
+      "url": "https://www.camcooneymeditation.com/free-group-meditations-glasgow",
+      "description": "A membership app with a live group meditation every week, recordings of past classes, an on-demand library, short courses and immersive soundscape tracks. A free seven-day trial is offered before choosing a plan.",
+      "price": "£9 GBP a month, £99 GBP a year or £399 GBP lifetime",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation"
+      ],
+      "image": "http://static1.squarespace.com/static/5d820cd46cfef80303b9da1c/t/65aa9660ad71a14dfe1f1d9e/1705678432329/Untitled+design+%287%29.png?format=1500w"
+    },
+    {
+      "title": "Learning Privately: one-to-one Vedic meditation",
+      "url": "https://www.camcooneymeditation.com/learning-privately",
+      "description": "The technique taught one to one over three sessions, starting with a personal mantra and ending with the spiritual side of practice, followed by a catch-up within a month. It also gives access to his weekly classes and retreats.",
+      "price": "£197 GBP",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "image": "http://static1.squarespace.com/static/5d820cd46cfef80303b9da1c/t/65aa9660ad71a14dfe1f1d9e/1705678432329/Untitled+design+%287%29.png?format=1500w"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Your First Session",
+      "url": "https://www.camcooneymeditation.com/your-first-session",
+      "description": "A free introductory class in Vedic meditation, either inside his app or as a short online meeting with Cam, explaining where the technique comes from and how it is learned.",
+      "featured": true,
+      "resource_type": "mini_course",
+      "subjects": [
+        "meditation"
+      ],
+      "image": "http://static1.squarespace.com/static/5d820cd46cfef80303b9da1c/t/65aa9660ad71a14dfe1f1d9e/1705678432329/Untitled+design+%287%29.png?format=1500w"
+    }
+  ],
+  "sprint": {
+    "sprint": "uk-europe-2",
+    "hub": "insight-timer",
+    "rank": 403,
+    "hub_url": "https://insighttimer.com/camcooneymeditation",
+    "insight_timer_url": "https://insighttimer.com/camcooneymeditation",
+    "tier_evidence": "Insight Timer 576 followers (profile, 3 Nov 2026); YouTube @nomadcamc 59 subscribers (channel header, 3 Nov 2026); Instagram @nomadcam__ and Facebook not read (never fetched) → ~635 readable → local_hero",
+    "email": "yes",
+    "email_source": "https://www.camcooneymeditation.com/contact-us",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 16 source(s)",
+    "flags": [
+      "Insight Timer profile (Glasgow City) shows no tracks, so no Insight Timer free resources were added; teaches_at insight-timer rests on the profile alone.",
+      "Instagram and Facebook counts could not be read (never fetched under the standing rule); tier rests on Insight Timer and YouTube only.",
+      "His Insight Timer bio frames his teaching around anxiety, anger, sobriety and stress, and his own story mentions mental health; none of that is used in the bio or items, but a human may want to check the overall framing.",
+      "YouTube channel @nomadcamc is his own but holds documentaries and charity films, not teaching, so no videos were added; it is linked only as youtube_url.",
+      "Base is his studio address on the contact page (Kinning Park, Glasgow); recorded at city level only.",
+      "Course prices are the app plan prices shown on his site; the site also shows higher in-app store prices (£179 GBP a year, £14.99 GBP a month, £499 GBP lifetime on Apple and Android)."
+    ],
+    "left_out": [
+      "5-Day Vedic Meditation Retreat at Old Kilmun House ('October 15-19th', no year): its only dates have passed, and it includes 'healing sessions'.",
+      "INTERSTELLAR Meditation at Glasgow Planetarium: one-off ticketed event with no date published.",
+      "Corporate courses, schools programme and kids meditation course: aimed at organisations or children, not his public teaching.",
+      "Videos: his YouTube channel has no teaching videos (Sleeping Rough documentary, charity films, a 31-second promo).",
+      "Accountability programme and meditation coaching pages: not opened in detail; coaching-led."
+    ]
+  },
+  "images_final": true
+}
