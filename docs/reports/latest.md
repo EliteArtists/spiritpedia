@@ -153,3 +153,16 @@ If you'd rather treat discoveries purely as personalisation, the label can stay 
 - **app/README and `docs/personalisation.md`** are brought up to date.
 - **Disk:** only 5.3 GB was free. I cleared about 7 GB of my own working files from the finished content runs (temporary folders outside the repo), and 12 GB is now free. I didn't touch any of your caches; Google's and Codex's take about 8 GB between them.
 - **Xcode 27** has no Simulator.app. The simulator window is in **DeviceHub** (Xcode → Open Developer Tool).
+
+## Update, 3 Nov 2026 (afternoon): live website, new secret, build 28
+
+- **Simulator review:** owner's OK. Migration 0032 is on dev and live (live check row confirmed by the owner). The Privacy Policy wording is approved.
+- **Website pushed and deployed** (`0a33384`), about 2 minutes after the push:
+  - `/api/cron/push` and `/api/admin/push-compose` answer 401 without the secret.
+  - The Privacy Policy shows 3 November 2026.
+- **New CRON_SECRET.** Vercel won't reveal the old one. A new 64-character secret is in `~/Desktop/spiritpedia-CRON_SECRET.txt`, and the ready-to-run job is `~/Desktop/spiritpedia-push-hourly-LIVE.sql`, with the secret already filled in. Both files are readable by the owner only, and neither is in the repo.
+  - Claude doesn't put secrets into Vercel, so the owner pastes it in, then redeploys. After the redeploy, Vercel's own daily crons send the new secret automatically.
+- **Build 28:**
+  - **iOS:** `app/build/ios-release/Spiritpedia-1.0.1-28.ipa`, with the archive at `2026-11-03/Spiritpedia 1.0.1 (28).xcarchive`. Checked: version 1.0.1 (28); push entitlement (`aps-environment`) production; iPhone and iPad with all four iPad orientations; live database only.
+  - **Android:** `app/build/android-release/Spiritpedia-1.0.1-28.aab`. Checked: version code 28 (1.0.1); targetSdk 36; signed with the same upload key as build 25; permissions unchanged; all 12 native libraries 16 KB aligned; live database only.
+- **Disk:** 2.8 GB is free after the builds. Gradle's cache in `~/.gradle` (about 3.5 GB) is the next thing to clear if space is needed; the next Android build downloads it again.

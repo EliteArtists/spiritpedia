@@ -180,7 +180,9 @@ numbering jumped from 9 to 11. **24** is 1.0 in Apple review and in Google's
 closed test; **25** has been in the closed test since 31 Oct 2026 (25 and 26
 were never uploaded for iOS); **27** is on TestFlight. The next is **1.0.1
 (28)** for both stores: build 27 + the push package + Closest to you + the
-hubs app side (root README §10.1), shown on the simulator before it is built.
+hubs app side (root README §10.1). Built 3 Nov 2026 after the owner's
+simulator review: `build/ios-release/Spiritpedia-1.0.1-28.ipa` and
+`build/android-release/Spiritpedia-1.0.1-28.aab`.
 
 The Mac has run out of disk and memory during builds: one simulator at a
 time, the Xcode app closed, never the test suite during a tour, and check free
