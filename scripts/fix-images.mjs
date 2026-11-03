@@ -24,7 +24,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { createRequire } from 'node:module';
-import { UA, amazonCover, amazonPageCover, pageImage, probeImage } from './lib/images.mjs';
+import { UA, amazonCover, pageImage, probeImage } from './lib/images.mjs';
 import { isPlaceholderImage, MIN_FAILURES } from '../web/utils/brokenImages.js';
 
 const PROJECTS = { dev: 'khtpbnofcavoerorajni', live: 'uzmvcgewxgvnybdhvsyx' };
@@ -158,7 +158,6 @@ async function bookCover(book, old) {
   if (asin) {
     const tries = [
       ['Amazon cover by ASIN', () => amazonCover(asin)],
-      ['the Amazon page', () => amazonPageCover(asin)],
       ['Open Library by ISBN', async () => (/^\d{9}[\dX]$/.test(asin) ? `https://covers.openlibrary.org/b/isbn/${asin}-L.jpg?default=false` : null)],
     ];
     for (const [source, find] of tries) {

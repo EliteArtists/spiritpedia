@@ -16,7 +16,7 @@
 
 import fs from 'node:fs';
 import path from 'node:path';
-import { UA, timed, decode, probeImage, pageImage, amazonCover, amazonPageCover, publisherLogo } from './lib/images.mjs';
+import { UA, timed, decode, probeImage, pageImage, amazonCover, publisherLogo } from './lib/images.mjs';
 
 const PROJECTS = { dev: 'khtpbnofcavoerorajni', live: 'uzmvcgewxgvnybdhvsyx' };
 const ENV_FILES = { dev: 'web/.env.development.local', live: 'web/.env.local' };
@@ -327,12 +327,13 @@ for (const v of plan.videos || []) {
   })());
 }
 
-// Is the ASIN on amazon.com? A UK-only edition 404s there; then the book
-// keeps its amazon.co.uk link (a default). Amazon's bot answers (503) count
-// as found.
-async function amazonStatus(host, asin) {
+// Is the ASIN a real book? Amazon's pages can't be checked (their robots.txt
+// disallows Claude's agents, 3 Nov 2026), so an ISBN-10 ASIN is checked on
+// Open Library instead; a Kindle ASIN (B0…) can't be checked and is listed.
+// The store is amazon.com unless the plan says otherwise.
+async function openLibraryHas(isbn) {
   try {
-    const r = await fetch(`https://www.${host}/dp/${asin}`, { headers: { 'User-Agent': UA, Accept: 'text/html' }, signal: timed() });
+    const r = await fetch(`https://openlibrary.org/isbn/${isbn}.json`, { headers: { 'User-Agent': UA }, signal: timed() });
     return r.status;
   } catch { return 0; }
 }
@@ -340,13 +341,11 @@ for (const b of plan.books || []) {
   b.asin = (b.asin || asinOf(b.amazon_url) || '').toUpperCase();
   if (!frozen && /^[A-Z0-9]{10}$/.test(b.asin) && !b.store) {
     jobs.push((async () => {
-      if (await amazonStatus('amazon.com', b.asin) !== 404) { b.store = 'amazon.com'; return; }
-      if (await amazonStatus('amazon.co.uk', b.asin) === 200) {
-        b.store = 'amazon.co.uk';
-        decisions.push(`${label('book', b)}: not on amazon.com, kept the amazon.co.uk link`);
-        return;
-      }
-      unsolved.push(`${label('book', b)}: ASIN ${b.asin} found on neither amazon.com nor amazon.co.uk`);
+      b.store = 'amazon.com';
+      if (!/^\d{9}[\dX]$/.test(b.asin)) { decisions.push(`${label('book', b)}: Kindle ASIN ${b.asin} not checked (Amazon blocks our agents); check the link`); return; }
+      const status = await openLibraryHas(b.asin);
+      if (status === 404) unsolved.push(`${label('book', b)}: ISBN ${b.asin} isn't on Open Library; check it, or set "store" to keep it`);
+      else if (status !== 200) decisions.push(`${label('book', b)}: Open Library didn't answer for ISBN ${b.asin}; check the link`);
     })());
   }
   jobs.push((async () => {
@@ -354,8 +353,6 @@ for (const b of plan.books || []) {
     const built = await amazonCover(b.asin);
     if (built) { b.cover = built; return; }
     if (b.cover && !/\/images\/G\//.test(b.cover) && (await probeImage(b.cover)).ok) return;
-    const fromPage = await amazonPageCover(b.asin);
-    if (fromPage) { b.cover = fromPage; decisions.push(`${label('book', b)}: cover from the Amazon page (none by ASIN)`); return; }
     // An ISBN-10 ASIN: Open Library's cover for that ISBN (404 when none).
     if (/^\d{9}[\dX]$/.test(b.asin)) {
       const ol = `https://covers.openlibrary.org/b/isbn/${b.asin}-L.jpg?default=false`;

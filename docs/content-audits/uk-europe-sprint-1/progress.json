@@ -1,0 +1,2062 @@
+{
+ "job": "UK & Europe sprint 1 (Sprint A): about 30 new teachers on dev whose published base is in the UK, Ireland or Western Europe, gap cities first (regional coverage report, 3 Nov 2026; owner, 3 Nov 2026)",
+ "started": "2026-11-03",
+ "rules": "docs/content-audits/uk-europe-sprint-1/BRIEF.md",
+ "target": 30,
+ "sources": "Ranks 1-45: teacher pages of Gaia House, Samye Ling, Findhorn, Sharpham Trust, Plum Village. Ranks 102-134: Insight Timer profiles found by web search per city. BWY and UK Reiki Federation directories not used: their terms forbid reuse. Sites whose robots.txt blocks Claude (patrickarundell.com, thebuddhistcentre.com, oxfordmindfulness.org) never fetched.",
+ "queue": [
+  {
+   "rank": 1,
+   "name": "Jake Dartington",
+   "hub": "gaia-house",
+   "hub_url": "https://gaiahouse.co.uk/retreats/about-the-teachers/",
+   "hub_programmes": [
+    [
+     "Wise Effort as a Whole Life Practice (online)",
+     "2026-11-29",
+     "2026-11-29",
+     "https://gaiahouse.co.uk/programme/wise-effort-whole-life-practice/"
+    ],
+    [
+     "Spiritual Maturity (online)",
+     "2027-04-18",
+     "2027-04-18",
+     "https://gaiahouse.co.uk/programme/"
+    ]
+   ],
+   "website": "https://www.jakedartington.co.uk/",
+   "base_city": "Nottingham",
+   "base_country": "United Kingdom",
+   "base_source": "https://dharmaseed.org/teacher/382/",
+   "email_or_form_seen": "none",
+   "content_signal": "DharmaSeed ~109 talks; teaches MBSR/MBCT courses; Bodhi College and Insight LA programmes",
+   "note": "Gap city. DharmaSeed bio: teaches Insight Meditation, mindfulness courses and yoga in Nottingham; his own site names Nottingham as well. No contact page or email seen on his site. Also found via Insight Timer/city search (queue rank 101, merged).",
+   "research_order": 0,
+   "status": "skipped",
+   "plan": null,
+   "skip_reason": "No published email and no contact form: his own one-page site (jakedartington.co.uk), his DharmaSeed teacher page and his podcast pages (podfollow, podbean) show no address or form, so he fails the README §18.4 contact rule."
+  },
+  {
+   "rank": 2,
+   "name": "River Wolton",
+   "hub": "gaia-house",
+   "hub_url": "https://gaiahouse.co.uk/retreats/about-the-teachers/",
+   "hub_programmes": [
+    [
+     "New Years' Retreat 2026",
+     "2026-12-29",
+     "2027-01-03",
+     "https://gaiahouse.co.uk/programme/new-years-retreat-2026/"
+    ],
+    [
+     "Rainbow Dharma (online, LGBTQIA+)",
+     "2027-02-19",
+     "2027-02-21",
+     "https://gaiahouse.co.uk/programme/rainbow-dharma-online-27/"
+    ],
+    [
+     "Cultivating and Nourishing Community (dana retreat)",
+     "2027-04-02",
+     "2027-04-04",
+     "https://gaiahouse.co.uk/programme/"
+    ],
+    [
+     "Between the Words: Poetry and Meditation (online)",
+     "2027-04-25",
+     "2027-04-25",
+     "https://gaiahouse.co.uk/programme/"
+    ],
+    [
+     "A Path of Connection: Young Person's Retreat",
+     "2027-07-01",
+     "2027-07-04",
+     "https://gaiahouse.co.uk/programme/"
+    ],
+    [
+     "Rainbow Dharma (residential)",
+     "2027-07-08",
+     "2027-07-12",
+     "https://gaiahouse.co.uk/programme/"
+    ],
+    [
+     "Sharpham Trust: Cultivating Inner Resources (6 nights, The Barn)",
+     null,
+     null,
+     "https://www.sharphamtrust.org/mindfulness-retreats/details/cultivating-inner-resources-buddhist-retreat"
+    ]
+   ],
+   "website": "https://riverwolton.co.uk/",
+   "base_city": "Sheffield (probable; verify)",
+   "base_country": "United Kingdom",
+   "base_source": "https://dharmaseed.org/teacher/1163/",
+   "email_or_form_seen": "email",
+   "content_signal": "DharmaSeed ~87 talks; book The Subtle Art of Caring (Windhorse 2023) plus poetry books; Substack",
+   "note": "Gap city, but check the base. DharmaSeed says she helped establish Sheffield Insight Meditation, and she is a former Derbyshire Poet Laureate. No page states outright that she lives in Sheffield. Her site lists the email as info [at] riverwolton.co.uk. She also teaches at Sharpham, so she counts for two hubs.",
+   "research_order": 1,
+   "status": "skipped",
+   "plan": null,
+   "skip_reason": "No published European base: her own site, Gaia House, Bodhi College, Sharpham Trust, Dharma Seed, Windhorse and Substack all say only that she helped found Sheffield Insight Meditation and teaches across the UK and Europe, none states where she lives (Sheffield is a guess), and Instagram was not checked because its robots.txt blocks us; otherwise a strong candidate (photo, book, Gaia House and Sharpham retreats, contact form at riverwolton.co.uk/contact-us/) if the owner confirms a base."
+  },
+  {
+   "rank": 3,
+   "name": "Leela Sarti",
+   "hub": "gaia-house",
+   "hub_url": "https://gaiahouse.co.uk/retreats/about-the-teachers/",
+   "hub_programmes": [
+    [
+     "Embodying The Awakened Heart (with Yanai Postelnik)",
+     "2027-04-16",
+     "2027-04-24",
+     "https://gaiahouse.co.uk/programme/"
+    ]
+   ],
+   "website": null,
+   "base_city": "Stockholm",
+   "base_country": "Sweden",
+   "base_source": "https://dharmaseed.org/teacher/364/",
+   "email_or_form_seen": "none",
+   "content_signal": "DharmaSeed ~221 talks; no personal website found",
+   "note": "Gap city. DharmaSeed says she lives with her family in Sweden and works with students in her psychotherapy practice in Stockholm. Her main public role is teaching Insight Meditation retreats, but the psychotherapy work should be weighed against the clinical exclusion. She is also a Diamond Approach teacher.",
+   "research_order": 2,
+   "status": "skipped",
+   "plan": null,
+   "skip_reason": "No personal website, published email or contact form could be found (only Dharma Seed and Gaia House teacher listings), so there is no way to contact her; her Stockholm work is also mainly a psychotherapy practice."
+  },
+  {
+   "rank": 4,
+   "name": "Bernat Font",
+   "hub": "gaia-house",
+   "hub_url": "https://gaiahouse.co.uk/retreats/about-the-teachers/",
+   "hub_programmes": [
+    [
+     "Right Attitude and Open Awareness (online, with Laura Bridgman)",
+     "2027-02-13",
+     "2027-02-14",
+     "https://gaiahouse.co.uk/programme/right-attitude-open-awareness-27"
+    ],
+    [
+     "A Path of Connection: Young Person's Retreat",
+     "2027-07-01",
+     "2027-07-04",
+     "https://gaiahouse.co.uk/programme/"
+    ],
+    [
+     "Rainbow Dharma (residential)",
+     "2027-07-08",
+     "2027-07-12",
+     "https://gaiahouse.co.uk/programme/"
+    ]
+   ],
+   "website": "https://dharma.cat/",
+   "base_city": "Barcelona",
+   "base_country": "Spain",
+   "base_source": "https://dharmaseed.org/teacher/1342/",
+   "email_or_form_seen": "contact form",
+   "content_signal": "DharmaSeed ~76 talks; book Early Buddhist Hedonism; co-author of Living Life on Life's Terms (with Stephen and Martine Batchelor); Substack; Espai Sati newsletter",
+   "note": "Gap city. Founder of Espai Sati, Barcelona; Bodhi College faculty. Teaches in English, Catalan and Spanish.",
+   "research_order": 3,
+   "status": "dev",
+   "plan": "docs/content-audits/bernat-font.json",
+   "skip_reason": null
+  },
+  {
+   "rank": 5,
+   "name": "Yuka Nakamura",
+   "hub": "gaia-house",
+   "hub_url": "https://gaiahouse.co.uk/retreats/about-the-teachers/",
+   "hub_programmes": [
+    [
+     "Letting In (with Zohar Lavie and Nathan Glyde)",
+     "2027-07-16",
+     "2027-07-23",
+     "https://gaiahouse.co.uk/programme/"
+    ]
+   ],
+   "website": "https://www.yuka-nakamura.ch/",
+   "base_city": "near Zürich",
+   "base_country": "Switzerland",
+   "base_source": "https://gaiahouse.co.uk/retreats/about-the-teachers/",
+   "email_or_form_seen": "none",
+   "content_signal": "DharmaSeed talks (count not checked); Bodhi College faculty; MBSR teacher",
+   "note": "Gap-city area: the Gaia House bio says she lives near Zurich, possibly outside the city. Her own site returned 403 (blocked), so it was skipped and not retried; website content and contact are not checked. She is a developmental psychologist (PhD), but her public work is Dharma teaching.",
+   "research_order": 4,
+   "status": "skipped",
+   "plan": null,
+   "skip_reason": "No published email or contact form could be reached: her own site (yuka-nakamura.ch) refused us with a 403 and was not retried, Gaia House, Bodhi College and IMS give no address for her, and she is no longer on the CFM Zentrum für Achtsamkeit team page (checked 3 Nov 2026), so there is no contact route we can confirm."
+  },
+  {
+   "rank": 6,
+   "name": "Lisette Schuitemaker",
+   "hub": "findhorn",
+   "hub_url": "https://findhorn-foundation.secure.retreat.guru/partner-eldest-daughter-retreat-2027",
+   "hub_programmes": [
+    [
+     "Eldest Daughter Retreat 2027 (co-host, with Dr Gill Emslie)",
+     "2027-03-05",
+     "2027-03-08",
+     "https://findhorn-foundation.secure.retreat.guru/partner-eldest-daughter-retreat-2027"
+    ]
+   ],
+   "website": "https://lisetteschuitemaker.com/",
+   "base_city": "Amsterdam",
+   "base_country": "Netherlands",
+   "base_source": "https://lisetteschuitemaker.com/",
+   "email_or_form_seen": "none",
+   "content_signal": "5 books (4 in English, incl. The Eldest Daughter Effect, The Childhood Code); Amazon author listings",
+   "note": "Gap city. Former Findhorn Foundation chair. Personal-development author and Brennan Healing Science graduate, also an impact investor. Check she fits as a spiritual teacher, not only an author.",
+   "research_order": 5,
+   "status": "dev",
+   "plan": "docs/content-audits/lisette-schuitemaker.json",
+   "skip_reason": null
+  },
+  {
+   "rank": 102,
+   "name": "Ngakma Nor'dzin Pamo",
+   "hub": "none",
+   "hub_url": null,
+   "hub_programmes": [],
+   "website": "https://aro-ling-cardiff.blogspot.com/",
+   "base_city": "Cardiff",
+   "base_country": "United Kingdom",
+   "base_source": "https://aro-ling-cardiff.blogspot.com/",
+   "email_or_form_seen": "none",
+   "content_signal": "5 books (Relaxing into Meditation, Spacious Passion, Battlecry of Freedom, Travelling at the Speed of Mind, Illusory Advice with 'ö-Dzin), weekly Zoom Monday Meditations, gTérbum videos",
+   "note": "Lama of the Aro gTér (Nyingma, non-monastic Vajrayana) lineage; primary teacher at Aro Ling Cardiff (Whitchurch / Merthyr Road) with her husband Ngakpa 'ö-Dzin Tridral, who could be a joint page. Search snippet shows aro.ling.cardiff@gmail.com but the blog itself shows no email. Last blog post June 2025.",
+   "research_order": 6,
+   "status": "dev",
+   "plan": "docs/content-audits/ngakma-nordzin-pamo.json",
+   "skip_reason": null
+  },
+  {
+   "rank": 103,
+   "name": "Bridgeen Rea-Kaya",
+   "hub": "insight-timer",
+   "hub_url": "https://insighttimer.com/bridgeen",
+   "hub_programmes": [],
+   "website": "https://www.immeasurableminds.co.uk/",
+   "base_city": "Belfast",
+   "base_country": "United Kingdom",
+   "base_source": "https://insighttimer.com/bridgeen",
+   "email_or_form_seen": "contact form",
+   "content_signal": "Insight Timer 14-17 tracks (1.7k followers), YouTube channel linked, online classes, twice-yearly retreats",
+   "note": "Mindfulness and self-compassion in the Plum Village tradition; teaching in Northern Ireland since 2007; MSc Bangor. Website does not name the city (IT profile says Belfast). Contact page exists, form not confirmed.",
+   "research_order": 7,
+   "status": "dev",
+   "plan": "docs/content-audits/bridgeen-rea-kaya.json",
+   "skip_reason": null
+  },
+  {
+   "rank": 104,
+   "name": "Orlaith O'Sullivan",
+   "hub": "insight-timer",
+   "hub_url": "https://insighttimer.com/orlaithsullivan",
+   "hub_programmes": [],
+   "website": "https://www.orlaithosullivan.com/",
+   "base_city": "Dublin",
+   "base_country": "Ireland",
+   "base_source": "https://insighttimer.com/orlaithsullivan",
+   "email_or_form_seen": "none",
+   "content_signal": "Insight Timer 16+ tracks, 1 course (The Calm Café), 1.6k followers",
+   "note": "Plum Village tradition mindfulness for adults, teens and children. Her website's robots.txt blocks Anthropic/Claude agents, so the site was not opened; contact not checked.",
+   "research_order": 8,
+   "status": "dev",
+   "plan": "docs/content-audits/orlaith-osullivan.json",
+   "skip_reason": null
+  },
+  {
+   "rank": 105,
+   "name": "Elspeth Lewis",
+   "hub": "none",
+   "hub_url": null,
+   "hub_programmes": [],
+   "website": "https://pausetobe.co.uk/",
+   "base_city": "Edinburgh",
+   "base_country": "United Kingdom",
+   "base_source": "https://pausetobe.co.uk/",
+   "email_or_form_seen": "email",
+   "content_signal": "1 book + 2 co-authored anthologies, weekly online mindfulness sessions with recordings, sound baths, courses",
+   "note": "Pause to Be: mindfulness teacher (Mindfulness Based Living Course), sound practitioner. CAUTION: also ACT programme and coaching, homepage mentions anxiety/stress; check the page can stay on the meditation and sound work.",
+   "research_order": 9,
+   "status": "skipped",
+   "plan": null,
+   "skip_reason": "Her work is mainly mindfulness and ACT coaching sold on managing stress, anxiety and mental health, and her sound baths are marketed on health claims (immune system, blood pressure, cellular healing); once those are left out, only a weekly mindfulness block with no page of its own, a parenting guide and two community anthologies remain, which is too thin and too therapy-led for a full page."
+  },
+  {
+   "rank": 106,
+   "name": "Gordon Smith",
+   "hub": "none",
+   "hub_url": null,
+   "hub_programmes": [],
+   "website": "https://www.gordonsmithmedium.com/",
+   "base_city": "Glasgow",
+   "base_country": "United Kingdom",
+   "base_source": "https://en.wikipedia.org/wiki/Gordon_Smith_(psychic_medium) (born and worked in Glasgow; CURRENT base not confirmed)",
+   "email_or_form_seen": "none",
+   "content_signal": "~20 books (Spirit Messenger, Mediumship Made Easy, Intuitive Studies, One Hundred Answers from Spirit), Soul Library online teachings and interviews",
+   "note": "Well-known Scottish medium and teacher ('the psychic barber'). BASE NEEDS CONFIRMING: no current published statement of where he lives was found, and his site's robots.txt blocks Claude agents so it was not opened. Mediumship demos are core; no conspiracy content seen.",
+   "research_order": 10,
+   "status": "dev",
+   "plan": "docs/content-audits/gordon-smith.json",
+   "skip_reason": null
+  },
+  {
+   "rank": 107,
+   "name": "John Darwin",
+   "hub": "none",
+   "hub_url": null,
+   "hub_programmes": [],
+   "website": "https://sites.google.com/mindfulenhance.org/clme-main",
+   "base_city": "Sheffield",
+   "base_country": "United Kingdom",
+   "base_source": "https://www.shu.ac.uk/myhallam/support-at-hallam/multifaith-chaplaincy/chaplains-and-faith-advisors/john-darwin",
+   "email_or_form_seen": "none",
+   "content_signal": "Book 'Mindfulness Based Life Enhancement' (plus academic books), free MBLE courses since 2010",
+   "note": "Soto Zen practitioner and Buddhist Faith Advisor at Sheffield Hallam; co-founded the Centre for Mindful Life Enhancement (volunteer, not-for-profit). Visiting Fellow, Sheffield Business School. Little recorded content; contact only via chaplaincy address seen.",
+   "research_order": 11,
+   "status": "skipped",
+   "plan": null,
+   "skip_reason": "Too thin for a full page: his book Mindfulness Based Life Enhancement is sold only as an ebook from the publisher's own site (no Amazon listing found; amazon.com is closed to us by robots.txt), he has no YouTube channel or paid offerings of his own, the monthly Sheffield library sessions found have ended, and what remains are free meditations and courses belonging to the volunteer-run Centre for Mindful Life Enhancement, which he shares with other teachers (contact only through the centre's info@mindfulenhance.org inbox)."
+  },
+  {
+   "rank": 108,
+   "name": "Nigel Meadows",
+   "hub": "none",
+   "hub_url": null,
+   "hub_programmes": [],
+   "website": "http://www.nigelmeadows.com",
+   "base_city": "Manchester",
+   "base_country": "United Kingdom",
+   "base_source": "https://dandelion.events/o/the-alchemy-of-breath--sound-",
+   "email_or_form_seen": "none",
+   "content_signal": "Regular breathwork and sound events (Dandelion), 6-week breathwork group; no recordings seen",
+   "note": "The Alchemy of Breath & Sound: conscious connected breathwork, somatic movement, gongs and bowls. Own site robots.txt blocks Claude agents, not opened. Thin for a full page; listed because Manchester has nobody.",
+   "research_order": 12,
+   "status": "skipped",
+   "plan": null,
+   "skip_reason": "Health rule and too thin: his own site (nigelmeadows.com, Squarespace robots.txt checked and open, contrary to the queue note) sells breathwork and 'sound therapy' sessions on stress, anxiety, depression and healing past trauma, alongside myofascial bodywork, contrast-therapy sauna classes and a recipe/beauty blog; he has no videos, books or free resources, so after the health rule only his sessions and a facilitator training would remain."
+  },
+  {
+   "rank": 110,
+   "name": "Laia Bové",
+   "hub": "insight-timer",
+   "hub_url": "https://insighttimer.com/laiabove",
+   "hub_programmes": [],
+   "website": "https://laiaboveyoga.com/",
+   "base_city": "Barcelona",
+   "base_country": "Spain",
+   "base_source": "https://insighttimer.com/laiabove",
+   "email_or_form_seen": "none",
+   "content_signal": "Insight Timer 15.4k followers, 4 courses, 8+ tracks, 8 videos; Substack newsletter; 1 novel (Catalan)",
+   "note": "Afro-Catalan yoga and meditation teacher, E-RYT 500, teaches in English and Catalan. Lives with chronic illness and frames work as accessible yoga/nervous-system care for sensitive bodies (not condition treatment, but check tone). laiaboveyoga.com not opened.",
+   "research_order": 13,
+   "status": "skipped",
+   "plan": null,
+   "skip_reason": "No published email and no contact form: her website laiaboveyoga.com now returns a Wix 'connect your domain' 404, and her Substack, Insight Timer and Yoga Alliance pages publish no address or form (Medium was not opened because its robots.txt blocks ClaudeBot); her work is also framed mainly as nervous-system care for chronic illness and burnout, which would leave little after the health-claim rule."
+  },
+  {
+   "rank": 111,
+   "name": "Gerit Stöcklmair",
+   "hub": "none",
+   "hub_url": null,
+   "hub_programmes": [],
+   "website": null,
+   "base_city": "Copenhagen",
+   "base_country": "Denmark",
+   "base_source": "https://bookretreats.com/teacher/gerit-stcklmair (co-founder and teacher, Copenhagen Insight Meditation); https://imsrc.dharmaseed.org/teacher/1390 ('settling in Denmark, where she now lives')",
+   "email_or_form_seen": "none",
+   "content_signal": "Dharma Seed 17 talks (IMS), Bodhi College teacher trainee, retreats",
+   "note": "Insight (Vipassana and Metta) teacher trained at IMS and Spirit Rock; co-founder of Copenhagen Insight Meditation; originally Austrian. Also psychotherapist and body-movement therapist. No personal website found.",
+   "research_order": 14,
+   "status": "skipped",
+   "plan": null,
+   "skip_reason": "No personal or Copenhagen Insight Meditation website, published email or contact form could be found (only Dharma Seed, Bodhi College and retreat-booking listings), and almost no listable content beyond Dharma Seed talks; her other work is trauma psychotherapy."
+  },
+  {
+   "rank": 112,
+   "name": "Gunaketu (Bjørn Kjønstad)",
+   "hub": "insight-timer",
+   "hub_url": "https://insighttimer.com/Gunaketu",
+   "hub_programmes": [],
+   "website": "https://www.oslobuddhistsenter.no/",
+   "base_city": "Oslo",
+   "base_country": "Norway",
+   "base_source": "https://insighttimer.com/Gunaketu",
+   "email_or_form_seen": "none",
+   "content_signal": "Insight Timer 17 items, 1 course, 539 followers",
+   "note": "Triratna Buddhist Order; a main teacher at Oslo Buddhist Centre (Helgesens gate 10 B, Oslo). Also gestalt psychotherapist: keep the page on the Dharma teaching. Website lists him only by Dharma name; Norwegian site, English on IT.",
+   "research_order": 15,
+   "status": "dev",
+   "plan": "docs/content-audits/gunaketu.json",
+   "skip_reason": null
+  },
+  {
+   "rank": 113,
+   "name": "Tim van der Vliet",
+   "hub": "insight-timer",
+   "hub_url": "https://insighttimer.com/timvandervliet",
+   "hub_programmes": [],
+   "website": "https://www.timvandervliet.com/",
+   "base_city": "Amsterdam",
+   "base_country": "Netherlands",
+   "base_source": "https://insighttimer.com/timvandervliet",
+   "email_or_form_seen": "contact form",
+   "content_signal": "Insight Timer 15 tracks (1.2k followers), online courses (Control Your Breath, 5 Tibetan Rites), breathwork instructor training",
+   "note": "Breathwork and cold exposure (TT Breathing). CAUTION: site markets heavily on stress/anxiety with % claims; borderline for the conditions rule.",
+   "research_order": 16,
+   "status": "skipped",
+   "plan": null,
+   "skip_reason": "Health-claim rule: his own site sells TT Breathing mainly on conditions and health outcomes (percentage claims that anxiety and stress drop by 50%, use for panic attacks, 'losing weight', 'spine-correcting exercises'), framed as performance coaching for corporate clients rather than spiritual teaching, so almost nothing would pass (his about page does say he lives in Amsterdam)."
+  },
+  {
+   "rank": 114,
+   "name": "Sina Weber",
+   "hub": "insight-timer",
+   "hub_url": "https://insighttimer.com/sinaweber",
+   "hub_programmes": [],
+   "website": null,
+   "base_city": "Hamburg",
+   "base_country": "Germany",
+   "base_source": "https://insighttimer.com/sinaweber",
+   "email_or_form_seen": "none",
+   "content_signal": "Insight Timer 5 courses, ~18 tracks, 368 followers",
+   "note": "Somatic and EFT-tapping based practices for overthinking and calm; teaches in German, English, Spanish, French. No website on profile. Overthinking framing is mild; EFT is borderline energy-work.",
+   "research_order": 17,
+   "status": "skipped",
+   "plan": null,
+   "skip_reason": "No published email or contact form: she has no website, only an Insight Timer profile (which shows no contact details in search results), and searches found no other public page of hers; much of her work is also EFT tapping framed around stress, overthinking and grief, which would leave little after the health-claim rule."
+  },
+  {
+   "rank": 115,
+   "name": "Jenny Berglund Castro",
+   "hub": "insight-timer",
+   "hub_url": "https://insighttimer.com/jennyberglundcastro",
+   "hub_programmes": [],
+   "website": "https://www.instagram.com/homeinyoga",
+   "base_city": "Stockholm",
+   "base_country": "Sweden",
+   "base_source": "https://insighttimer.com/jennyberglundcastro",
+   "email_or_form_seen": "none",
+   "content_signal": "Insight Timer ~10-19 guided meditations, 442 followers, group 'Find Rhythm with Yoga, Meditation & Reiki'",
+   "note": "Meditation and mindfulness teacher, Reiki Master and intuitive healer; runs HOME in yoga studio in Stockholm. English and Swedish. Only Instagram linked - find studio site for contact.",
+   "research_order": 18,
+   "status": "dev",
+   "plan": "docs/content-audits/jenny-berglund-castro.json",
+   "skip_reason": null
+  },
+  {
+   "rank": 116,
+   "name": "Michael Anderson",
+   "hub": "insight-timer",
+   "hub_url": "https://insighttimer.com/ArtOfBeing",
+   "hub_programmes": [],
+   "website": "https://art-of-being.org/",
+   "base_city": "Vienna",
+   "base_country": "Austria",
+   "base_source": "https://art-of-being.org/",
+   "email_or_form_seen": "email",
+   "content_signal": "Insight Timer profile (track count not shown), MBSR courses, workshops, online programmes, Sicily retreat",
+   "note": "Art teacher and mindfulness instructor; 'Art of Being' contemplative art workshops, slow museum visits. Teaches in English, German, Spanish. Thin recorded content; check IT tracks.",
+   "research_order": 19,
+   "status": "dev",
+   "plan": "docs/content-audits/michael-anderson.json",
+   "skip_reason": null
+  },
+  {
+   "rank": 117,
+   "name": "Valerie Fabris",
+   "hub": "insight-timer",
+   "hub_url": "https://insighttimer.com/valeriefabris",
+   "hub_programmes": [],
+   "website": "https://emergenceseducation.be/reseau",
+   "base_city": "Brussels",
+   "base_country": "Belgium",
+   "base_source": "https://insighttimer.com/valeriefabris",
+   "email_or_form_seen": "none",
+   "content_signal": "Insight Timer 8+ tracks, 374 followers; 1 French novel",
+   "note": "Mindfulness instructor for children and adults; guides weekly practice at the European Commission. English, French, Spanish, Dutch. Website is a network listing, not her own; not opened.",
+   "research_order": 20,
+   "status": "skipped",
+   "plan": null,
+   "skip_reason": "Too thin for a full page: no website of her own (only an entry on the Emergences Education network page), no YouTube channel, no offerings with their own pages, and her French novel could not be found on Amazon, leaving only a couple of Insight Timer tracks."
+  },
+  {
+   "rank": 118,
+   "name": "Helena Petersen",
+   "hub": "insight-timer",
+   "hub_url": "https://insighttimer.com/helenapetersen",
+   "hub_programmes": [],
+   "website": null,
+   "base_city": "Munich",
+   "base_country": "Germany",
+   "base_source": "https://insighttimer.com/helenapetersen",
+   "email_or_form_seen": "none",
+   "content_signal": "Insight Timer 13 tracks, 371 followers",
+   "note": "Mindfulness meditation teacher (MBSR, somatics) and coach, also a contemporary abstract photographer; English and German. Profile mentions stress/anxiety. No website listed on profile; not searched further.",
+   "research_order": 21,
+   "status": "skipped",
+   "plan": null,
+   "skip_reason": "No published email or contact form: her Insight Timer profile lists no website or contact, and a web search found no site of her own; her profile is also framed on stress and anxiety and coaching."
+  },
+  {
+   "rank": 119,
+   "name": "Anne Eberhardt",
+   "hub": "insight-timer",
+   "hub_url": "https://insighttimer.com/bubbleyoga",
+   "hub_programmes": [],
+   "website": "https://www.bubbleyoga.ch/",
+   "base_city": "Zürich",
+   "base_country": "Switzerland",
+   "base_source": "https://insighttimer.com/bubbleyoga",
+   "email_or_form_seen": "none",
+   "content_signal": "Insight Timer 7 guided meditations, 313 followers; Bubble Yoga studios",
+   "note": "Yoga and mindfulness teacher (Vedic and Hatha traditions), founder of Bubble Yoga; English, French, Spanish. Website not opened.",
+   "research_order": 22,
+   "status": "dev",
+   "plan": "docs/content-audits/anne-eberhardt.json",
+   "skip_reason": null
+  },
+  {
+   "rank": 120,
+   "name": "Ishvari Akibaya",
+   "hub": "insight-timer",
+   "hub_url": "https://insighttimer.com/IshvariAkibaya",
+   "hub_programmes": [],
+   "website": "https://www.instagram.com/ishvari.akibaya",
+   "base_city": "Berlin",
+   "base_country": "Germany",
+   "base_source": "https://insighttimer.com/IshvariAkibaya",
+   "email_or_form_seen": "none",
+   "content_signal": "Insight Timer ~18 tracks (joined Mar 2025), 107 followers",
+   "note": "Mindful yoga and meditation teacher (intuition, Higher Self); German, English, Spanish. Instagram only, no website - weak for contact.",
+   "research_order": 23,
+   "status": "skipped",
+   "plan": null,
+   "skip_reason": "No published email or contact form: she has no website, her only link is Instagram (whose robots.txt disallows all agents, so it was not opened), and searches found only her Insight Timer and Yoga Alliance profiles with no contact details; beyond about 18 free Insight Timer tracks there is little else to list."
+  },
+  {
+   "rank": 121,
+   "name": "Julie Alexandra",
+   "hub": "insight-timer",
+   "hub_url": "https://insighttimer.com/juliealexandra",
+   "hub_programmes": [],
+   "website": null,
+   "base_city": "Milan",
+   "base_country": "Italy",
+   "base_source": "https://insighttimer.com/juliealexandra",
+   "email_or_form_seen": "none",
+   "content_signal": "Insight Timer 8+ tracks, 475 followers",
+   "note": "Yoga (500h Hatha/Vinyasa, Yin) and meditation teacher in Milan, teaches in English. No website on profile - contact route unknown.",
+   "research_order": 24,
+   "status": "skipped",
+   "plan": null,
+   "skip_reason": "No published email and no contact form: her Insight Timer profile links no website, email or socials, and web searches for her and her 'The Reset Club' found no site of her own (only unrelated studios of that name and an Airbnb listing that needs a login to contact), so she fails the README §18.4 contact rule."
+  },
+  {
+   "rank": 122,
+   "name": "Lynn Yap",
+   "hub": "none",
+   "hub_url": null,
+   "hub_programmes": [],
+   "website": "https://www.lynnyap.com/",
+   "base_city": "Paris",
+   "base_country": "France",
+   "base_source": "https://www.lynnyap.com/",
+   "email_or_form_seen": "email",
+   "content_signal": "1 book (The Core9 Playbook), sound-healing classes and retreats in Paris, workshops",
+   "note": "Singapore-born RYT, sound therapy and meditation teacher, also life/corporate coach. CAUTION: site is coaching-heavy; spiritual content thin. Paris has nobody, so listed.",
+   "research_order": 25,
+   "status": "skipped",
+   "plan": null,
+   "skip_reason": "Too thin and mainly coaching: her site is built around life coaching, 'processing' and corporate training, her yoga, sound-therapy and meditation services have no pages of their own (every Book Now goes to the contact form), the only sound-healing event listed is a past 2025 class led by a visiting teacher, and her one book is a confidence-coaching title sold through her shop and Singapore bookshops, so fewer than three spiritual items would pass."
+  },
+  {
+   "rank": 123,
+   "name": "Stephen Downey",
+   "hub": "insight-timer",
+   "hub_url": "https://insighttimer.com/stephendowney",
+   "hub_programmes": [],
+   "website": "https://linktr.ee/MindfulLivingGuide",
+   "base_city": "Dublin",
+   "base_country": "Ireland",
+   "base_source": "https://insighttimer.com/stephendowney",
+   "email_or_form_seen": "none",
+   "content_signal": "Insight Timer ~10 tracks, Mindful Living Guide podcast",
+   "note": "Mindfulness teacher and mental-health advocate; check he isn't framed as a mental-health service. Only a Linktree, no own site seen.",
+   "research_order": 26,
+   "status": "skipped",
+   "plan": null,
+   "skip_reason": "His own site (mindfulliving.guide) refused a plain fetch with a cookie-only redirect loop, so it was treated as blocked and not retried; his Linktree and Insight Timer show no published email or contact form, so README §18.4 cannot be met."
+  },
+  {
+   "rank": 124,
+   "name": "Stephan Wormland (Stephan Pende)",
+   "hub": "none",
+   "hub_url": null,
+   "hub_programmes": [],
+   "website": "https://www.meetup.com/beyondmindfulness",
+   "base_city": "Copenhagen",
+   "base_country": "Denmark",
+   "base_source": "https://taramandala.secure.retreat.guru/teacher/stephan-wormland/",
+   "email_or_form_seen": "none",
+   "content_signal": "Beyond Mindfulness courses in Copenhagen (English meetup), European retreats, Meridian Trust talks",
+   "note": "Former Tibetan Buddhist monk (11 years, 5 years in retreat), Radiant Mind student of Peter Fenner; teaches mindfulness, self-compassion and nonduality. Has an MA in clinical psychology and Gestalt training. No own website found; base from retreat bio and Meetup; confirm.",
+   "research_order": 27,
+   "status": "skipped",
+   "plan": null,
+   "skip_reason": "Already on Spiritpedia: docs/content-audits/stephan-pende-wormland.json exists from the 1 Nov Insight Timer run and was inserted on dev and live (Copenhagen, Insight Timer), so no new plan was written. A fresh check on 3 Nov found upcoming retreats on stephanpende.com (Graz 27-29 Nov 2026, Bornholm 25 Dec-2 Jan, Semriach 3-7 Mar 2027, Assisi 23-29 Mar 2027, Scheibbs 11-18 Jul 2027, Tyresoe 4-8 Aug 2027) and a new Copenhagen drop-in series from 10 Nov 2026 that could be added to the existing listing."
+  },
+  {
+   "rank": 125,
+   "name": "Riët Aarsse",
+   "hub": "none",
+   "hub_url": null,
+   "hub_programmes": [],
+   "website": "https://insightdialogue.secure.retreat.guru/teacher/riet-aarsse",
+   "base_city": "Amsterdam",
+   "base_country": "Netherlands",
+   "base_source": "https://insightdialogue.secure.retreat.guru/teacher/riet-aarsse",
+   "email_or_form_seen": "none",
+   "content_signal": "Insight Dialogue retreats (Dec 2026 with Dave Leggatt, Viveka Bhikkhu), monthly online practice; no recordings seen",
+   "note": "Founder of Amsterdam Insight Meditation; vipassana and Insight Dialogue teacher since 2012; research psychologist, Abhidhamma student of Sayadaw Dr Nandamala. Online group in Dutch, retreats international. Thin content; no own site found.",
+   "research_order": 28,
+   "status": "skipped",
+   "plan": null,
+   "skip_reason": "No published email or contact form of her own (no personal or Amsterdam Insight Meditation website found; the Insight Dialogue teacher page offers only a dana link), and the content is thin: no videos, books or recordings, only two Insight Dialogue retreats in December 2026 and a shared monthly online group, which together count as one hub item."
+  },
+  {
+   "rank": 126,
+   "name": "Camilla Strandmark",
+   "hub": "insight-timer",
+   "hub_url": "https://insighttimer.com/mindfulnesspodden",
+   "hub_programmes": [],
+   "website": "https://www.yogamindonline.se/",
+   "base_city": "Stockholm",
+   "base_country": "Sweden",
+   "base_source": "https://insighttimer.com/mindfulnesspodden",
+   "email_or_form_seen": "none",
+   "content_signal": "Insight Timer 8+ tracks, 1 course, 996 followers; Mindfulnesspodden podcast; Yogamindonline",
+   "note": "Yoga and meditation teacher; podcast and most content in Swedish - check how much is in English before writing a page. Website not opened.",
+   "research_order": 29,
+   "status": "skipped",
+   "plan": null,
+   "skip_reason": "Health rule: her own About page (yogamindonline.se/om-mig) says her work today centres on her Yoga for Cancer membership, courses and retreats for cancer rehabilitation; she presents herself as a specialist nurse and medical acupuncturist, her published email is on the yogaforcancer.se domain, and her site, courses and podcast are all in Swedish, so what would remain after the health-claim rule (a few general yoga and mindfulness web courses) would not represent her work fairly."
+  },
+  {
+   "rank": 128,
+   "name": "Mike Sheehy",
+   "hub": "insight-timer",
+   "hub_url": "https://insighttimer.com/BiMeditation",
+   "hub_programmes": [],
+   "website": "https://www.bimeditation.ie/",
+   "base_city": "Dublin",
+   "base_country": "Ireland",
+   "base_source": "https://insighttimer.com/BiMeditation",
+   "email_or_form_seen": "none",
+   "content_signal": "Insight Timer 9+ guided meditations",
+   "note": "BíMeditation: secular, practical mindfulness for everyday stress, overwhelm and focus. Website not opened. Light content; Dublin already has two ahead of him.",
+   "research_order": 30,
+   "status": "dev",
+   "plan": "docs/content-audits/mike-sheehy.json",
+   "skip_reason": null
+  },
+  {
+   "rank": 132,
+   "name": "Akincano Marc Weber",
+   "hub": "none",
+   "hub_url": null,
+   "hub_programmes": [],
+   "website": "https://akincano.net/",
+   "base_city": "Cologne",
+   "base_country": "Germany",
+   "base_source": "https://www.buddhistinquiry.org/person/akincano-weber/",
+   "email_or_form_seen": "none",
+   "content_signal": "Dharma Seed talks, MP3 talks and videos on own site, Bodhi College core faculty",
+   "note": "Former Theravada forest monk (20 years), Bodhi College co-founder, leads Atammaya Köln. Lives in Cologne per Bodhi College/BCBS bios (Dharma Seed says Switzerland - outdated). Also psychotherapist; site mostly German with English version.",
+   "research_order": 31,
+   "status": "dev",
+   "plan": "docs/content-audits/akincano-marc-weber.json",
+   "skip_reason": null
+  },
+  {
+   "rank": 8,
+   "name": "John Philip Newell",
+   "hub": "findhorn",
+   "hub_url": "https://findhorn-foundation.secure.retreat.guru/program/celtic-wisdom-online-with-john-philip-newell",
+   "hub_programmes": [
+    [
+     "Celtic Wisdom: ONLINE (nine-part series)",
+     "2026-11-03",
+     "2027-03-16",
+     "https://findhorn-foundation.secure.retreat.guru/program/celtic-wisdom-online-with-john-philip-newell"
+    ]
+   ],
+   "website": "https://www.earthandsoul.org/",
+   "base_city": "Findhorn (Park Ecovillage), Moray",
+   "base_country": "United Kingdom",
+   "base_source": "https://findhorn-foundation.secure.retreat.guru/program/celtic-wisdom-online-with-john-philip-newell",
+   "email_or_form_seen": "email",
+   "content_signal": "Many books (Celtic spirituality, e.g. The Great Search, Sacred Earth Sacred Soul); YouTube @earthandsoul; podcasts; annual retreats",
+   "note": "Strongest content in the Findhorn set. Canadian-born, also Scottish; the Findhorn page says he lives in the Park Ecovillage. Contact: info@earthandsoul.org. Earth & Soul is US-administered, but his personal base is Scotland.",
+   "research_order": 32,
+   "status": "dev",
+   "plan": "docs/content-audits/john-philip-newell.json",
+   "skip_reason": null
+  },
+  {
+   "rank": 9,
+   "name": "Christina Feldman",
+   "hub": "gaia-house",
+   "hub_url": "https://gaiahouse.co.uk/retreats/about-the-teachers/",
+   "hub_programmes": [
+    [
+     "Cool Head, Warm Heart (online)",
+     "2027-01-09",
+     "2027-01-09",
+     "https://gaiahouse.co.uk/programme/cool-head-warm-heart-27/"
+    ]
+   ],
+   "website": null,
+   "base_city": "unknown (UK, probably Devon; verify)",
+   "base_country": "United Kingdom",
+   "base_source": "https://gaiahouse.co.uk/retreats/about-the-teachers/",
+   "email_or_form_seen": "none",
+   "content_signal": "DharmaSeed ~684 talks; many books (Boundless Heart, Woman Awake, Silence, The Buddhist Path to Simplicity)",
+   "note": "Co-founder and patron of Gaia House; IMS guiding teacher. Very rich content, but no personal website was found and no page found states her base. That must be confirmed before ingest.",
+   "research_order": 33,
+   "status": "skipped",
+   "plan": null,
+   "skip_reason": "No published email or contact form: she has no website of her own, and her Gaia House, Bodhi College and IMS teacher pages and a web search show no address or form for her (only the centres' general inboxes). Her base (Totnes, Devon) appears only on a publisher author page. Rich content otherwise (Dharma Seed talks, many books, Bodhi College and Gaia House programmes), and she is an IMS guiding teacher, so the owner may want to revisit if a contact route is found."
+  },
+  {
+   "rank": 10,
+   "name": "Ajahn Sucitto",
+   "hub": "gaia-house",
+   "hub_url": "https://gaiahouse.co.uk/retreats/about-the-teachers/",
+   "hub_programmes": [],
+   "website": "https://ajahnsucitto.org/",
+   "base_city": "Cittaviveka (Chithurst), West Sussex",
+   "base_country": "United Kingdom",
+   "base_source": "https://ajahnsucitto.org/",
+   "email_or_form_seen": "none",
+   "content_signal": "DharmaSeed ~3,084 talks; many free-distribution books; videos page on his site",
+   "note": "Monastic, but he has his own website, books and videos, so he passes the monastic test. His site says he has been based in Britain since 1978, and Gaia House says he still lives at Cittaviveka. Listed as a Gaia House visiting teacher, but no 2026-27 Gaia House programme found for him.",
+   "research_order": 34,
+   "status": "skipped",
+   "plan": null,
+   "skip_reason": "No published email or contact form (README §18.4): ajahnsucitto.org has no contact page or address (only a Substack newsletter sign-up), and his home monastery Cittaviveka says it does not use email for first contact (phone, post and a guest-stay booking page only; the one email shown is the webmaster's, for site typos). Otherwise he would qualify: base Cittaviveka, Chithurst, near Petersfield, West Sussex; many books, videos and talks."
+  },
+  {
+   "rank": 21,
+   "name": "Bhante Bodhidhamma",
+   "hub": "gaia-house",
+   "hub_url": "https://gaiahouse.co.uk/retreats/about-the-teachers/",
+   "hub_programmes": [],
+   "website": "https://www.satipanya.org.uk/",
+   "base_city": "Satipanya, Welsh borders",
+   "base_country": "United Kingdom (Wales)",
+   "base_source": "https://dharmaseed.org/teacher/245/",
+   "email_or_form_seen": "contact form",
+   "content_signal": "DharmaSeed ~587 talks; Satipanya audio/video library and foundation courses",
+   "note": "Monastic founder of Satipanya (Mahasi tradition). The website is the centre's, but it carries a lot of his material. No 2026-27 Gaia House programme found for him; his students Noirin Sheahan and Carl Fooks teach Aug 2027.",
+   "research_order": 35,
+   "status": "dev",
+   "plan": "docs/content-audits/bhante-bodhidhamma.json",
+   "skip_reason": null
+  },
+  {
+   "rank": 24,
+   "name": "Uz Afzal",
+   "hub": "sharpham-trust",
+   "hub_url": "https://www.sharphamtrust.org/mindfulness-retreats/details/find-your-peace-a-3-night-silent-retreat",
+   "hub_programmes": [
+    [
+     "Sharpham: Find Your Peace 3-night silent retreat",
+     null,
+     null,
+     "https://www.sharphamtrust.org/mindfulness-retreats/details/find-your-peace-a-3-night-silent-retreat"
+    ],
+    [
+     "Sharpham: 5-night silent meditation retreat",
+     null,
+     null,
+     "https://www.sharphamtrust.org/mindfulness-retreats/details/5-night-silent-meditation-retreat"
+    ],
+    [
+     "Sharpham: Self-compassion retreat",
+     null,
+     null,
+     "https://www.sharphamtrust.org/mindfulness-retreats/details/self-compassion-retreat"
+    ],
+    [
+     "Sharpham: Mindfulness for Beginners",
+     null,
+     null,
+     "https://www.sharphamtrust.org/mindfulness-retreats/details/mindfulness-for-beginners-3-night-sharpham-house-retreat"
+    ]
+   ],
+   "website": "https://wecreatespace.co/team/uz-afzal-",
+   "base_city": "London (probable; verify)",
+   "base_country": "United Kingdom",
+   "base_source": "https://wecreatespace.co/team/uz-afzal-",
+   "email_or_form_seen": "none",
+   "content_signal": "Books: Mindfulness for Children (2019), 1-2-Breathe (2026); MBSR teacher",
+   "note": "London is already covered. The website listed is a team profile, not her own site; that page was not opened, and London rests on search snippets (V&A, Southbank). Her work is mindfulness rather than a Dharma lineage.",
+   "research_order": 36,
+   "status": "skipped",
+   "plan": null,
+   "skip_reason": "No published European base and no contact route of her own: she has no personal website; her Sharpham Trust retreat-leader bio, We Create Space team page and Octopus Books author page name no town (London rests only on mentions of London venues), and the only email is the inbox of the DEI consultancy she works with (hello@wecreatespace.co). Her BAMBA teacher listing returned a Cloudflare challenge (403) and was not retried."
+  },
+  {
+   "rank": 30,
+   "name": "Jilani Cordelia",
+   "hub": "findhorn",
+   "hub_url": "https://findhorn-foundation.secure.retreat.guru/partner-crossing-the-threshold-a-new-years-celebration-in-community",
+   "hub_programmes": [
+    [
+     "Crossing the Threshold (New Year, with Barbara Swetina)",
+     "2026-12-28",
+     "2027-01-03",
+     "https://findhorn-foundation.secure.retreat.guru/partner-crossing-the-threshold-a-new-years-celebration-in-community"
+    ]
+   ],
+   "website": "https://www.jilanicordelia.com/",
+   "base_city": "Hebden Bridge area, West Yorkshire",
+   "base_country": "United Kingdom",
+   "base_source": "https://www.dancesofuniversalpeace.org.uk/jilani/",
+   "email_or_form_seen": "email",
+   "content_signal": "Weekly Zoom Sufi classes, monthly zikr, retreats and Sufi camp; Dances of Universal Peace leader trainings",
+   "note": "Sufi guide (Ruhaniat). Base comes from DUP UK and Ruhaniat listings in search results; those pages were not opened. Her contact page shows an email address that does not match her name, so check it.",
+   "research_order": 37,
+   "status": "dev",
+   "plan": "docs/content-audits/jilani-cordelia.json",
+   "skip_reason": null
+  },
+  {
+   "rank": 35,
+   "name": "Martine Batchelor",
+   "hub": "gaia-house",
+   "hub_url": "https://gaiahouse.co.uk/retreats/about-the-teachers/",
+   "hub_programmes": [
+    [
+     "Feeling and Flourishing (online course)",
+     "2027-02-17",
+     "2027-02-24",
+     "https://gaiahouse.co.uk/programme/feeling-and-flourishing-27/"
+    ],
+    [
+     "Feeling, Flourishing and the Heart Qualities",
+     "2027-03-12",
+     "2027-03-17",
+     "https://gaiahouse.co.uk/programme/"
+    ],
+    [
+     "Calm and Clarity: A Seon Retreat",
+     "2027-06-08",
+     "2027-06-13",
+     "https://gaiahouse.co.uk/programme/"
+    ]
+   ],
+   "website": "https://martinebatchelor.org/",
+   "base_city": "village near Bordeaux",
+   "base_country": "France",
+   "base_source": "https://stephenbatchelor.org/",
+   "email_or_form_seen": "contact form",
+   "content_signal": "DharmaSeed ~329 talks; 6+ books (Let Go, Meditation for Life, The Spirit of the Buddha); videos page with YouTube",
+   "note": "Gaia House patron with strong content. Her base comes from Stephen Batchelor's site ('live in a small village near Bordeaux').",
+   "research_order": 38,
+   "status": "dev",
+   "plan": "docs/content-audits/martine-batchelor.json",
+   "skip_reason": null
+  },
+  {
+   "rank": 36,
+   "name": "Stephen Batchelor",
+   "hub": "gaia-house",
+   "hub_url": "https://gaiahouse.co.uk/retreats/about-the-teachers/",
+   "hub_programmes": [],
+   "website": "https://stephenbatchelor.org/",
+   "base_city": "village near Bordeaux",
+   "base_country": "France",
+   "base_source": "https://stephenbatchelor.org/",
+   "email_or_form_seen": "contact form",
+   "content_signal": "Many books (Buddhism without Beliefs, After Buddhism, Buddha Socrates and Us); teaching schedule page",
+   "note": "Gaia House patron; well known. No 2026-27 Gaia House programme found. His site has a contact page and teaching schedule.",
+   "research_order": 39,
+   "status": "dev",
+   "plan": "docs/content-audits/stephen-batchelor.json",
+   "skip_reason": null
+  },
+  {
+   "rank": 37,
+   "name": "Martin Aylward",
+   "hub": "gaia-house",
+   "hub_url": "https://gaiahouse.co.uk/retreats/about-the-teachers/",
+   "hub_programmes": [],
+   "website": "https://martinaylward.com/",
+   "base_city": "Moulin de Chaves (Dordogne area)",
+   "base_country": "France",
+   "base_source": "https://gaiahouse.co.uk/retreats/about-the-teachers/",
+   "email_or_form_seen": "contact form",
+   "content_signal": "DharmaSeed ~298 talks; book Awake Where You Are (2021); online courses; Sangha.live co-founder",
+   "note": "Resident teacher and co-founder of Moulin de Chaves. Listed as a Gaia House visiting teacher; no 2026-27 programme found there.",
+   "research_order": 40,
+   "status": "dev",
+   "plan": "docs/content-audits/martin-aylward.json",
+   "skip_reason": null
+  },
+  {
+   "rank": 38,
+   "name": "Juha Penttilä",
+   "hub": "gaia-house",
+   "hub_url": "https://gaiahouse.co.uk/retreats/about-the-teachers/",
+   "hub_programmes": [
+    [
+     "Your Own Refuge: November Solitary at Home (online)",
+     "2026-11-07",
+     "2026-11-15",
+     "https://gaiahouse.co.uk/programme/own_refuge/"
+    ],
+    [
+     "The Body as a Foundation for Mindfulness and Insight (online course)",
+     "2027-01-12",
+     "2027-02-09",
+     "https://gaiahouse.co.uk/programme/body-as-foundation-27/"
+    ],
+    [
+     "A Natural Deepening: Following the Beautiful Breath (online course)",
+     "2027-02-25",
+     "2027-04-22",
+     "https://gaiahouse.co.uk/programme/a-natural-deepening-27/"
+    ]
+   ],
+   "website": "https://www.juhapenttila.fi/",
+   "base_city": "Helsinki",
+   "base_country": "Finland",
+   "base_source": "https://www.juhapenttila.fi/",
+   "email_or_form_seen": "none",
+   "content_signal": "DharmaSeed ~194 talks; courses and retreats page; audio page",
+   "note": "Co-founder of Nirodha Insight Meditation (Finland). Helsinki is a Nordic capital but not on the target list.",
+   "research_order": 41,
+   "status": "dev",
+   "plan": "docs/content-audits/juha-penttila.json",
+   "skip_reason": null
+  },
+  {
+   "rank": 42,
+   "name": "Brother Phap Huu",
+   "hub": "plum-village",
+   "hub_url": "https://plumvillage.org/people/dharma-teachers/br-phap-huu",
+   "hub_programmes": [
+    [
+     "Rains Retreat 2026-27 (Upper Hamlet abbot; short-term stays)",
+     "2026-10-16",
+     "2027-01-11",
+     "https://plumvillage.org/event/retreat/2026-retreats-events-in-plum-village-france"
+    ]
+   ],
+   "website": "https://plumvillage.org/people/dharma-teachers/br-phap-huu",
+   "base_city": "Plum Village (Upper Hamlet), Thénac",
+   "base_country": "France",
+   "base_source": "https://plumvillage.org/people/dharma-teachers/br-phap-huu",
+   "email_or_form_seen": "none",
+   "content_signal": "Co-host of the podcast The Way Out Is In (100+ episodes); 2 books with Jo Confino; Dharma talks on YouTube",
+   "note": "Monastic, but he passes the content test through the podcast and books. Abbot of Upper Hamlet; Thich Nhat Hanh's attendant for 17 years.",
+   "research_order": 42,
+   "status": "dev",
+   "plan": "docs/content-audits/brother-phap-huu.json",
+   "skip_reason": null
+  },
+  {
+   "rank": 129,
+   "name": "Sophie Bashford",
+   "hub": "none",
+   "hub_url": null,
+   "hub_programmes": [],
+   "website": "https://www.sophiebashford.com/",
+   "base_city": "Brighton",
+   "base_country": "United Kingdom",
+   "base_source": "search result author bio ('lives by the sea in Brighton, Sussex'); own site names no city - confirm",
+   "email_or_form_seen": "none",
+   "content_signal": "Hay House book You Are a Goddess, 2 oracle decks, online courses (Moon Temple Journey, Hecate), retreats, podcast interviews",
+   "note": "Divine-feminine intuitive channel and teacher; Avalon priestess training. Contact link exists, no form seen on home page. Base needs confirming.",
+   "research_order": 43,
+   "status": "dev",
+   "plan": "docs/content-audits/sophie-bashford.json",
+   "skip_reason": null
+  },
+  {
+   "rank": 131,
+   "name": "Keith Horan",
+   "hub": "insight-timer",
+   "hub_url": "https://insighttimer.com/keith",
+   "hub_programmes": [],
+   "website": "https://www.keithhoran.com/",
+   "base_city": "Galway",
+   "base_country": "Ireland",
+   "base_source": "https://insighttimer.com/keith",
+   "email_or_form_seen": "none",
+   "content_signal": "Insight Timer ~10 tracks, 1.3k followers",
+   "note": "Mindfulness teacher and transformational coach. Coach-leaning; website not opened.",
+   "research_order": 44,
+   "status": "dev",
+   "plan": "docs/content-audits/keith-horan.json",
+   "skip_reason": null
+  },
+  {
+   "rank": 7,
+   "name": "Gill Emslie",
+   "hub": "findhorn",
+   "hub_url": "https://findhorn-foundation.secure.retreat.guru/partner-eldest-daughter-retreat-2027",
+   "hub_programmes": [
+    [
+     "Eldest Daughter Retreat 2027 (guiding facilitator)",
+     "2027-03-05",
+     "2027-03-08",
+     "https://findhorn-foundation.secure.retreat.guru/partner-eldest-daughter-retreat-2027"
+    ]
+   ],
+   "website": null,
+   "base_city": "Barcelona (teaches there; residence not confirmed)",
+   "base_country": "Spain",
+   "base_source": "https://findhorn-foundation.secure.retreat.guru/partner-eldest-daughter-retreat-2027",
+   "email_or_form_seen": "none",
+   "content_signal": "Thin: PhD thesis (Process Work, 'The Braided Way'); no website, videos or books found",
+   "note": "Weak candidate. The Findhorn page says she founded a school in Barcelona where she still teaches. Process-oriented psychology is close to the therapy exclusion. Likely too little content for a full page.",
+   "research_order": null,
+   "status": "todo",
+   "plan": null,
+   "skip_reason": null
+  },
+  {
+   "rank": 11,
+   "name": "Yanai Postelnik",
+   "hub": "gaia-house",
+   "hub_url": "https://gaiahouse.co.uk/retreats/about-the-teachers/",
+   "hub_programmes": [
+    [
+     "November Solitary 2026",
+     "2026-11-02",
+     "2026-11-30",
+     "https://gaiahouse.co.uk/programme/"
+    ],
+    [
+     "Returning to the Heart",
+     "2026-12-11",
+     "2026-12-14",
+     "https://gaiahouse.co.uk/programme/returning-to-the-heart-2026/"
+    ],
+    [
+     "A Path of Peace and Kindness (dana)",
+     "2027-01-29",
+     "2027-02-01",
+     "https://gaiahouse.co.uk/programme/a-path-of-peace-and-kindness-2027/"
+    ],
+    [
+     "Embodying The Awakened Heart",
+     "2027-04-16",
+     "2027-04-24",
+     "https://gaiahouse.co.uk/programme/"
+    ],
+    [
+     "The Heart of Wisdom and Compassion",
+     "2027-06-21",
+     "2027-06-26",
+     "https://gaiahouse.co.uk/programme/"
+    ]
+   ],
+   "website": null,
+   "base_city": "Devon",
+   "base_country": "United Kingdom",
+   "base_source": "https://gaiahouse.co.uk/retreats/about-the-teachers/",
+   "email_or_form_seen": "none",
+   "content_signal": "DharmaSeed talks, many (count not checked); IMS core faculty; no personal website found",
+   "note": "The most active teacher in the Gaia House programme. Gaia House says he lives in Devon with his wife Catherine McGee. Without a personal website, a page would have to rely on the hub and DharmaSeed.",
+   "research_order": null,
+   "status": "todo",
+   "plan": null,
+   "skip_reason": null
+  },
+  {
+   "rank": 12,
+   "name": "Nathan Glyde",
+   "hub": "gaia-house",
+   "hub_url": "https://gaiahouse.co.uk/retreats/about-the-teachers/",
+   "hub_programmes": [
+    [
+     "Rest and Renewal",
+     "2027-01-07",
+     "2027-01-13",
+     "https://gaiahouse.co.uk/programme/rest-and-renewal-2027/"
+    ],
+    [
+     "Living with Illness and Loss (online)",
+     "2027-01-23",
+     "2027-01-24",
+     "https://gaiahouse.co.uk/programme/"
+    ],
+    [
+     "February Solitary",
+     "2027-02-12",
+     "2027-02-26",
+     "https://gaiahouse.co.uk/programme/"
+    ],
+    [
+     "An Open View",
+     "2027-03-02",
+     "2027-03-08",
+     "https://gaiahouse.co.uk/programme/"
+    ],
+    [
+     "The Breath of Life (online course)",
+     "2027-03-31",
+     "2027-04-21",
+     "https://gaiahouse.co.uk/programme/"
+    ],
+    [
+     "Living with Illness and Loss",
+     "2027-05-07",
+     "2027-05-12",
+     "https://gaiahouse.co.uk/programme/"
+    ],
+    [
+     "Letting In",
+     "2027-07-16",
+     "2027-07-23",
+     "https://gaiahouse.co.uk/programme/"
+    ]
+   ],
+   "website": "https://www.ngly.de/",
+   "base_city": "unknown",
+   "base_country": "United Kingdom (verify)",
+   "base_source": "https://gaiahouse.co.uk/retreats/about-the-teachers/",
+   "email_or_form_seen": "none",
+   "content_signal": "DharmaSeed ~625 talks; co-founder of SanghaSeva (sanghaseva.org)",
+   "note": "Very active. No page found that states his base. Co-teaches with Zohar Lavie.",
+   "research_order": null,
+   "status": "skipped",
+   "plan": null,
+   "skip_reason": "No published European base: his own sites (ngly.de, DependentOrigination.org, SanghaSeva.org) and his Gaia House teacher bio never say where he lives or is based, only where retreats are held (mostly Devon, London, India, Israel-Palestine), so the base rule says skip. Otherwise a strong candidate: a contact form (ngly.de/contact), many Dharma Seed talks, Gaia House 2027 retreats and monthly online drop-in groups; he co-teaches with Zohar Lavie, so the owner may want to revisit if a base is published."
+  },
+  {
+   "rank": 13,
+   "name": "Kirsten Kratz",
+   "hub": "gaia-house",
+   "hub_url": "https://gaiahouse.co.uk/retreats/about-the-teachers/",
+   "hub_programmes": [
+    [
+     "November Solitary 2026",
+     "2026-11-02",
+     "2026-11-30",
+     "https://gaiahouse.co.uk/programme/"
+    ],
+    [
+     "Sweet Darkness: Winter Solstice (online)",
+     "2026-12-15",
+     "2026-12-21",
+     "https://gaiahouse.co.uk/programme/sweet_darkness/"
+    ],
+    [
+     "Meeting Life with Kindness and Compassion (dana)",
+     "2027-03-23",
+     "2027-03-29",
+     "https://gaiahouse.co.uk/programme/"
+    ]
+   ],
+   "website": null,
+   "base_city": "Gaia House, Devon (teacher in residence)",
+   "base_country": "United Kingdom",
+   "base_source": "https://gaiahouse.co.uk/retreats/about-the-teachers/",
+   "email_or_form_seen": "none",
+   "content_signal": "DharmaSeed ~215 talks; no personal website found",
+   "note": "Teacher in residence at Gaia House since 2015. German-born. Co-initiator of DANCE (Dharma Action Network for Climate Engagement).",
+   "research_order": null,
+   "status": "todo",
+   "plan": null,
+   "skip_reason": null
+  },
+  {
+   "rank": 14,
+   "name": "Laura Bridgman",
+   "hub": "gaia-house",
+   "hub_url": "https://gaiahouse.co.uk/retreats/about-the-teachers/",
+   "hub_programmes": [
+    [
+     "November Solitary 2026",
+     "2026-11-02",
+     "2026-11-30",
+     "https://gaiahouse.co.uk/programme/"
+    ],
+    [
+     "Compassion and Connection",
+     "2026-12-04",
+     "2026-12-06",
+     "https://gaiahouse.co.uk/programme/compassion-and-connection-2026/"
+    ],
+    [
+     "Illuminating the Inner Critic through Inquiry (online course)",
+     "2027-01-07",
+     "2027-02-11",
+     "https://gaiahouse.co.uk/programme/"
+    ],
+    [
+     "Loving Kindness",
+     "2027-02-05",
+     "2027-02-08",
+     "https://gaiahouse.co.uk/programme/"
+    ],
+    [
+     "The Inexhaustible Strength of Simplicity",
+     "2027-05-28",
+     "2027-06-03",
+     "https://gaiahouse.co.uk/programme/"
+    ]
+   ],
+   "website": null,
+   "base_city": "Gaia House, Devon (staff support teacher)",
+   "base_country": "United Kingdom",
+   "base_source": "https://gaiahouse.co.uk/retreats/about-the-teachers/",
+   "email_or_form_seen": "none",
+   "content_signal": "DharmaSeed ~174 talks; Tricycle online courses (with Gavin Milne / Martine Batchelor)",
+   "note": "Former Theravada nun (1995-2015). No personal website found.",
+   "research_order": null,
+   "status": "skipped",
+   "plan": null,
+   "skip_reason": "No published email or contact form: she has no website of her own, and her Gaia House teacher bio, her Dharma Seed teacher page (which links only a PayPal donation page) and a web search show no address or form for her. Her base is also unpublished beyond being Gaia House's staff support teacher. Good content otherwise (174 Dharma Seed talks, Gaia House programmes into 2027, retreats in Finland with Juha Penttilä and online with Bernat Font), so the owner may want to revisit if a contact route is found."
+  },
+  {
+   "rank": 15,
+   "name": "Gavin Milne",
+   "hub": "gaia-house",
+   "hub_url": "https://gaiahouse.co.uk/retreats/about-the-teachers/",
+   "hub_programmes": [
+    [
+     "Living and Liberating Who You Truly Are (online)",
+     "2026-11-13",
+     "2026-11-15",
+     "https://gaiahouse.co.uk/programme/"
+    ],
+    [
+     "Compassion and Connection",
+     "2026-12-04",
+     "2026-12-06",
+     "https://gaiahouse.co.uk/programme/"
+    ],
+    [
+     "Illuminating the Inner Critic (online course)",
+     "2027-01-07",
+     "2027-02-11",
+     "https://gaiahouse.co.uk/programme/"
+    ],
+    [
+     "Establishing Wise Awareness in Daily Life (online)",
+     "2027-03-12",
+     "2027-03-14",
+     "https://gaiahouse.co.uk/programme/"
+    ],
+    [
+     "Insight Meditation and Yoga",
+     "2027-04-28",
+     "2027-05-03",
+     "https://gaiahouse.co.uk/programme/"
+    ],
+    [
+     "Finding Equanimity in Turbulent Times (online)",
+     "2027-05-14",
+     "2027-05-16",
+     "https://gaiahouse.co.uk/programme/"
+    ],
+    [
+     "Opening the Doorway to Freedom: Meditation Day",
+     "2027-06-17",
+     "2027-06-17",
+     "https://gaiahouse.co.uk/programme/"
+    ]
+   ],
+   "website": null,
+   "base_city": "unknown",
+   "base_country": "United Kingdom (verify)",
+   "base_source": "https://gaiahouse.co.uk/retreats/about-the-teachers/",
+   "email_or_form_seen": "none",
+   "content_signal": "DharmaSeed ~173 talks; Tricycle author page and online courses",
+   "note": "Very active (7 programmes). No website or stated base found. Also IFS-trained, but his work is Dharma teaching, not therapy.",
+   "research_order": null,
+   "status": "todo",
+   "plan": null,
+   "skip_reason": null
+  },
+  {
+   "rank": 16,
+   "name": "Zohar Lavie",
+   "hub": "gaia-house",
+   "hub_url": "https://gaiahouse.co.uk/retreats/about-the-teachers/",
+   "hub_programmes": [
+    [
+     "A Path of Joy and Gladness (dana)",
+     "2026-12-18",
+     "2026-12-22",
+     "https://gaiahouse.co.uk/programme/a-path-of-joy-2026/"
+    ],
+    [
+     "Living with Illness and Loss (online)",
+     "2027-01-23",
+     "2027-01-24",
+     "https://gaiahouse.co.uk/programme/"
+    ],
+    [
+     "February Solitary",
+     "2027-02-12",
+     "2027-02-26",
+     "https://gaiahouse.co.uk/programme/"
+    ],
+    [
+     "An Open View",
+     "2027-03-02",
+     "2027-03-08",
+     "https://gaiahouse.co.uk/programme/"
+    ],
+    [
+     "Living with Illness and Loss",
+     "2027-05-07",
+     "2027-05-12",
+     "https://gaiahouse.co.uk/programme/"
+    ],
+    [
+     "Letting In",
+     "2027-07-16",
+     "2027-07-23",
+     "https://gaiahouse.co.uk/programme/"
+    ]
+   ],
+   "website": "https://www.sanghaseva.org/",
+   "base_city": "unknown",
+   "base_country": "United Kingdom (verify)",
+   "base_source": "https://gaiahouse.co.uk/retreats/about-the-teachers/",
+   "email_or_form_seen": "none",
+   "content_signal": "DharmaSeed talks (count not checked); SanghaSeva retreats (incl. Being Peace Israel-Palestine, Oct 2027)",
+   "note": "Co-founder of SanghaSeva. No personal site or stated base found. The website listed is the organisation's.",
+   "research_order": null,
+   "status": "todo",
+   "plan": null,
+   "skip_reason": null
+  },
+  {
+   "rank": 17,
+   "name": "Mark Ovland",
+   "hub": "gaia-house",
+   "hub_url": "https://gaiahouse.co.uk/retreats/about-the-teachers/",
+   "hub_programmes": [
+    [
+     "A Path of Joy and Gladness (dana)",
+     "2026-12-18",
+     "2026-12-22",
+     "https://gaiahouse.co.uk/programme/"
+    ],
+    [
+     "February Solitary",
+     "2027-02-12",
+     "2027-02-26",
+     "https://gaiahouse.co.uk/programme/"
+    ],
+    [
+     "An Open View",
+     "2027-03-02",
+     "2027-03-08",
+     "https://gaiahouse.co.uk/programme/"
+    ],
+    [
+     "Meeting Life with Kindness and Compassion (dana)",
+     "2027-03-23",
+     "2027-03-29",
+     "https://gaiahouse.co.uk/programme/"
+    ],
+    [
+     "Waking Up to a Sacred World",
+     "2027-07-27",
+     "2027-08-01",
+     "https://gaiahouse.co.uk/programme/"
+    ]
+   ],
+   "website": "https://markovland.uk/",
+   "base_city": "unknown",
+   "base_country": "United Kingdom (verify)",
+   "base_source": "https://markovland.uk/",
+   "email_or_form_seen": "email",
+   "content_signal": "DharmaSeed ~46 talks; co-founder Freely Given Retreats; prison mindfulness work",
+   "note": "Active, and the email mark@markovland.uk is shown on his site. Content is modest, and no base is stated.",
+   "research_order": null,
+   "status": "skipped",
+   "plan": null,
+   "skip_reason": "No published European base: his own site (markovland.uk), his Gaia House teacher bio and his Dharma Seed page say only that he teaches at Gaia House and around the UK, none names a town or region where he lives (an older Everyday Mindfulness interview says he lived in a van), so Near You has nothing to place him by. Otherwise he would qualify: published email mark@markovland.uk, a usable photo on his site, free guided-meditation recordings and Gaia House retreats on 18-22 Dec 2026 and Feb-Mar 2027."
+  },
+  {
+   "rank": 18,
+   "name": "Jaya Rudgard",
+   "hub": "gaia-house",
+   "hub_url": "https://gaiahouse.co.uk/retreats/about-the-teachers/",
+   "hub_programmes": [
+    [
+     "Your Own Refuge: November Solitary at Home (online)",
+     "2026-11-07",
+     "2026-11-15",
+     "https://gaiahouse.co.uk/programme/own_refuge/"
+    ],
+    [
+     "Apparent Here and Now: Relational Meditation",
+     "2027-01-18",
+     "2027-01-24",
+     "https://gaiahouse.co.uk/programme/"
+    ],
+    [
+     "Waking Up to a Sacred World",
+     "2027-07-27",
+     "2027-08-01",
+     "https://gaiahouse.co.uk/programme/"
+    ]
+   ],
+   "website": "https://jayarudgard.co.uk/",
+   "base_city": "unknown",
+   "base_country": "United Kingdom (verify)",
+   "base_source": "https://jayarudgard.co.uk/",
+   "email_or_form_seen": "none",
+   "content_signal": "DharmaSeed ~214 talks; online courses; qigong teaching",
+   "note": "Gaia House Teacher Council; Bodhi College and Spirit Rock profiles. No base stated on the pages checked.",
+   "research_order": null,
+   "status": "skipped",
+   "plan": null,
+   "skip_reason": "No contact route we may confirm: her own site jayarudgard.co.uk has a robots.txt that disallows ClaudeBot and anthropic-ai (Disallow: /), so it was not fetched, and her public hub profiles (Gaia House, Insight Meditation Society, Bodhi College) publish no email or contact form for her, so README §18.4 cannot be met. Otherwise a strong candidate: IMS says she lives in Oxford, England; Gaia House Teacher Council member, IMS and Spirit Rock teacher, Bodhi College faculty, about 214 Dharma Seed talks, and a Gaia House retreat 18-24 Jan 2027 (Apparent Here and Now: Relational Meditation). A human could check her site for a contact page by hand."
+  },
+  {
+   "rank": 19,
+   "name": "Julia Wallond",
+   "hub": "gaia-house",
+   "hub_url": "https://gaiahouse.co.uk/retreats/about-the-teachers/",
+   "hub_programmes": [
+    [
+     "Returning to the Heart",
+     "2026-12-11",
+     "2026-12-14",
+     "https://gaiahouse.co.uk/programme/"
+    ],
+    [
+     "A Path of Peace and Kindness (dana)",
+     "2027-01-29",
+     "2027-02-01",
+     "https://gaiahouse.co.uk/programme/"
+    ],
+    [
+     "Cultivating and Nourishing Community (dana)",
+     "2027-04-02",
+     "2027-04-04",
+     "https://gaiahouse.co.uk/programme/"
+    ],
+    [
+     "Work Retreat: Awakening through Service and Work",
+     "2027-05-21",
+     "2027-05-24",
+     "https://gaiahouse.co.uk/programme/"
+    ]
+   ],
+   "website": null,
+   "base_city": "Machynlleth",
+   "base_country": "United Kingdom (Wales)",
+   "base_source": "https://gaiahouse.co.uk/retreats/about-the-teachers/",
+   "email_or_form_seen": "none",
+   "content_signal": "Thin: no website; DharmaSeed talks not checked",
+   "note": "Active at Gaia House, but probably too little content for a full page. She also works in health care.",
+   "research_order": null,
+   "status": "todo",
+   "plan": null,
+   "skip_reason": null
+  },
+  {
+   "rank": 20,
+   "name": "Ingen Breen",
+   "hub": "gaia-house",
+   "hub_url": "https://gaiahouse.co.uk/retreats/about-the-teachers/",
+   "hub_programmes": [],
+   "website": "https://www.ingenji.info/",
+   "base_city": "Tuamgraney, Co Clare",
+   "base_country": "Ireland",
+   "base_source": "https://gaiahouse.co.uk/retreats/about-the-teachers/",
+   "email_or_form_seen": "none",
+   "content_signal": "Online Zen teaching since 2020; 'Zen in Motion' flow exercises; site is a thin Google Sites page",
+   "note": "Irish base (not a gap city). Zen priest in the Suzuki Roshi lineage. Listed as a Gaia House visiting teacher; no 2026-27 programme found.",
+   "research_order": null,
+   "status": "skipped",
+   "plan": null,
+   "skip_reason": "No usable photo: the only headshots found are 212 px (San Francisco Zen Center teacher page) and 100 px (Gaia House), both under the 300 px minimum; the images on his own Google Sites page (ingenji.info) returned 403 to a direct fetch and were not retried, and the Everyday Zen Experience YouTube avatar is a shrine photo. The page would also be thin on offerings, as his retreats (Ingen-ji, Hebden Bridge, Rohatsu) have no pages of their own. Otherwise usable if a photo appears: base Tuamgraney, Co. Clare, Ireland (his site); email everyday.zen.experience@gmail.com (his network's inbox, on his site); nine 'Ten for Zen' talks on the shared EZE channel (50 subscribers). Note: readingroomatingenji.wordpress.com was fetched once in the same command as its robots.txt, which turned out to say Disallow: /; the saved page was deleted and nothing from it was used."
+  },
+  {
+   "rank": 22,
+   "name": "Noirin Sheahan",
+   "hub": "gaia-house",
+   "hub_url": "https://gaiahouse.co.uk/retreats/about-the-teachers/",
+   "hub_programmes": [
+    [
+     "Mahasi Meditation in the Insight Tradition (with Carl Fooks)",
+     "2027-08-06",
+     "2027-08-09",
+     "https://gaiahouse.co.uk/programme/"
+    ]
+   ],
+   "website": "https://www.satipanya.org.uk/teacher/noirin-sheahan/",
+   "base_city": "Satipanya, Welsh borders (verify)",
+   "base_country": "United Kingdom",
+   "base_source": "https://gaiahouse.co.uk/retreats/about-the-teachers/",
+   "email_or_form_seen": "contact form",
+   "content_signal": "Online 'Right Lifestyle' courses; talks on Satipanya",
+   "note": "Teaches via electro-larynx after throat cancer. The website is the centre's profile page. Content is moderate.",
+   "research_order": null,
+   "status": "dev",
+   "plan": "docs/content-audits/noirin-sheahan.json",
+   "skip_reason": null
+  },
+  {
+   "rank": 23,
+   "name": "Dene Donalds",
+   "hub": "sharpham-trust",
+   "hub_url": "https://www.sharphamtrust.org/mindfulness-retreats/details/find-your-peace-a-3-night-silent-retreat",
+   "hub_programmes": [
+    [
+     "Sharpham: Find Your Peace 3-night silent retreat (Spring-Summer 2027)",
+     null,
+     null,
+     "https://www.sharphamtrust.org/mindfulness-retreats/details/find-your-peace-a-3-night-silent-retreat"
+    ],
+    [
+     "Sharpham: Find Your Peace 5-night silent retreat",
+     null,
+     null,
+     "https://www.sharphamtrust.org/mindfulness-retreats/details/find-your-peace-a-5-night-silent-retreat"
+    ],
+    [
+     "Sharpham: Mindfulness for Beginners",
+     null,
+     null,
+     "https://www.sharphamtrust.org/mindfulness-retreats/details/mindfulness-for-beginners-3-night-sharpham-house-retreat"
+    ]
+   ],
+   "website": null,
+   "base_city": "unknown (UK; prison chaplain at HMP Berwyn, Wrexham)",
+   "base_country": "United Kingdom",
+   "base_source": "https://plumvillage.uk/who-we-are/teachers/",
+   "email_or_form_seen": "none",
+   "content_signal": "YouTube talks (per Gaia House); Plum Village UK lay Dharma teacher",
+   "note": "Plum Village lay Dharma teacher (2016), also a Gaia House visiting teacher. The first Black lay Dharma teacher in the UK. No website found. Base is not stated.",
+   "research_order": null,
+   "status": "todo",
+   "plan": null,
+   "skip_reason": null
+  },
+  {
+   "rank": 25,
+   "name": "Toni Spencer",
+   "hub": "sharpham-trust",
+   "hub_url": "https://www.sharphamtrust.org/mindfulness-retreats/details/find-your-peace-a-5-night-silent-retreat",
+   "hub_programmes": [
+    [
+     "Sharpham: Find Your Peace 5-night silent retreat",
+     null,
+     null,
+     "https://www.sharphamtrust.org/mindfulness-retreats/details/find-your-peace-a-5-night-silent-retreat"
+    ],
+    [
+     "Sharpham: Burnout retreat",
+     null,
+     null,
+     "https://www.sharphamtrust.org/mindfulness-retreats/details/burnout-retreat-in-sharpham-house-sustain-yourself-through-mindfulness"
+    ]
+   ],
+   "website": "https://www.tonispencer.co.uk/",
+   "base_city": "Devon (probable)",
+   "base_country": "United Kingdom",
+   "base_source": "https://www.tonispencer.co.uk/",
+   "email_or_form_seen": "email",
+   "content_signal": "Thin: mentoring/booking pages; 'The Pause in Practice' Facebook",
+   "note": "Embodied awareness and Movement of Being. Email tonispencer88@gmail.com is shown on her contact page. Probably too little content for a full page.",
+   "research_order": null,
+   "status": "todo",
+   "plan": null,
+   "skip_reason": null
+  },
+  {
+   "rank": 26,
+   "name": "Sophy Banks",
+   "hub": "sharpham-trust",
+   "hub_url": "https://www.sharphamtrust.org/mindfulness-retreats/details/burnout-retreat-in-sharpham-house-sustain-yourself-through-mindfulness",
+   "hub_programmes": [
+    [
+     "Sharpham: Burnout retreat",
+     null,
+     null,
+     "https://www.sharphamtrust.org/mindfulness-retreats/details/burnout-retreat-in-sharpham-house-sustain-yourself-through-mindfulness"
+    ]
+   ],
+   "website": null,
+   "base_city": "Totnes, Devon",
+   "base_country": "United Kingdom",
+   "base_source": "https://www.sharphamtrust.org/mindfulness-retreats/details/burnout-retreat-in-sharpham-house-sustain-yourself-through-mindfulness",
+   "email_or_form_seen": "none",
+   "content_signal": "Talks/articles via Transition Network, Kosmos Journal, Advaya teacher page; no own website found",
+   "note": "Co-founder of Inner Transition (Transition Town Totnes). Sharpham says she moved to Devon in 2005. Borderline: activist and facilitator more than spiritual teacher.",
+   "research_order": null,
+   "status": "skipped",
+   "plan": null,
+   "skip_reason": "Not mainly a spiritual teacher: her own site (healthyhumanculture.com, a team brand) presents her as a facilitator of culture-change, systems and grief-tending work built on psychotherapy, neuroscience and trauma frameworks, and much of the material is framed around trauma, burnout and conflict, so few items would pass the health-claim rule. Her listed events (Sept–Oct 2026) have passed, there is no personal email (only a Squarespace contact page) and the Sharpham burnout retreat is condition-led. The queue already marked her as borderline activist and facilitator."
+  },
+  {
+   "rank": 27,
+   "name": "Johnny Glover",
+   "hub": "samye-ling",
+   "hub_url": "https://samyeling.org/tutor/johnny-glover/",
+   "hub_programmes": [
+    [
+     "Becoming the Seer (weekend)",
+     "2026-09-11",
+     "2026-09-13",
+     "https://samyeling.org/activity/becoming-the-seer-september-2026/"
+    ],
+    [
+     "Creating Space",
+     "2026-10-23",
+     "2026-10-25",
+     "https://samyeling.org/activity/creating-space-10-2026/"
+    ],
+    [
+     "Yoga for Meditation: Bank Holiday Weekend Retreat",
+     "2026-11-27",
+     "2026-11-30",
+     "https://samyeling.org/activity/yoga-for-meditation-bank-holiday-weekend-retreat-2/"
+    ]
+   ],
+   "website": "https://www.jgyoga.co.uk/",
+   "base_city": "unknown (Scotland, near Samye Ling? verify)",
+   "base_country": "United Kingdom",
+   "base_source": "https://www.jgyoga.co.uk/about-johnny.html",
+   "email_or_form_seen": "contact form",
+   "content_signal": "Online courses (courses.jgyoga.co.uk); regular Samye Ling courses since 2003",
+   "note": "Yoga and meditation teacher (Satyananda/Mandala Yoga; Tergar meditation teacher programme). Trained in Northern Ireland, but his base is not stated. Only one Samye Ling date (27-30 Nov 2026) is still upcoming.",
+   "research_order": null,
+   "status": "skipped",
+   "plan": null,
+   "skip_reason": "No published European base: jgyoga.co.uk (home, About, Contact, Online resources) and his Samye Ling tutor page give only a mobile number, Zoom classes and Samye Ling (a retreat venue, not his base) and name no town where he lives or teaches in person. The content is also thin once rules are applied: Zoom classes with no pages of their own, invite-only online retreats, one fully booked Samye Ling weekend (27-30 Nov 2026) and a £30 subscription of recorded practices, with no YouTube channel or books (his one album is handpan music). His email johnny@jgyoga.co.uk is published on his home page if he is revisited."
+  },
+  {
+   "rank": 28,
+   "name": "Clive Holmes",
+   "hub": "samye-ling",
+   "hub_url": "https://samyeling.org/tutor/clive-holmes/",
+   "hub_programmes": [
+    [
+     "The Value and Benefits of Taking Refuge",
+     "2026-06-12",
+     "2026-06-14",
+     "https://samyeling.org/activity/the-value-and-benefits-of-taking-refuge-in-buddhism/"
+    ],
+    [
+     "Awareness-Based Emotional Intelligence",
+     "2026-07-31",
+     "2026-08-02",
+     "https://samyeling.org/activity/awareness-based-emotional-intelligence/"
+    ],
+    [
+     "Attitude of Gratitude",
+     "2026-09-18",
+     "2026-09-20",
+     "https://samyeling.org/activity/attitude-of-gratitude-course/"
+    ],
+    [
+     "Restoring the Balance",
+     "2026-10-23",
+     "2026-10-25",
+     "https://samyeling.org/activity/restoring-the-balance/"
+    ]
+   ],
+   "website": null,
+   "base_city": "unknown (Scotland; verify)",
+   "base_country": "United Kingdom",
+   "base_source": "https://samyeling.org/tutor/clive-holmes/",
+   "email_or_form_seen": "none",
+   "content_signal": "Co-editor of Akong Rinpoche's Taming the Tiger and Restoring the Balance; podcast interviews",
+   "note": "Regular Samye Ling course leader, though all 2026 dates seen are now past. No website; he holds an honorary teaching fellowship at the University of Aberdeen.",
+   "research_order": null,
+   "status": "todo",
+   "plan": null,
+   "skip_reason": null
+  },
+  {
+   "rank": 29,
+   "name": "Choje Lama Yeshe Losal Rinpoche",
+   "hub": "samye-ling",
+   "hub_url": "https://samyeling.org/lama/lama-yeshe-losal-rinpoche/",
+   "hub_programmes": [
+    [
+     "Refuge ceremonies / 6th UK Kagyu Monlam (2026)",
+     "2026-05-20",
+     "2026-05-26",
+     "https://samyeling.org/activity/6th-uk-kagyu-monlam/"
+    ]
+   ],
+   "website": "https://samyeling.org/lama/lama-yeshe-losal-rinpoche/",
+   "base_city": "Eskdalemuir (Samye Ling), Dumfries & Galloway",
+   "base_country": "United Kingdom",
+   "base_source": "https://samyeling.org/lama/lama-yeshe-losal-rinpoche/",
+   "email_or_form_seen": "contact form",
+   "content_signal": "Book Living Dharma (verify); teaching archive on Samye Ling; Holy Isle project",
+   "note": "Monastic abbot with no personal website. Include only if the books and talks count as enough content.",
+   "research_order": null,
+   "status": "todo",
+   "plan": null,
+   "skip_reason": null
+  },
+  {
+   "rank": 31,
+   "name": "Barbara Swetina",
+   "hub": "findhorn",
+   "hub_url": "https://findhorn-foundation.secure.retreat.guru/partner-crossing-the-threshold-a-new-years-celebration-in-community",
+   "hub_programmes": [
+    [
+     "Crossing the Threshold (New Year, with Jilani Cordelia)",
+     "2026-12-28",
+     "2027-01-03",
+     "https://findhorn-foundation.secure.retreat.guru/partner-crossing-the-threshold-a-new-years-celebration-in-community"
+    ]
+   ],
+   "website": "https://www.sacredsongs.net/",
+   "base_city": "Findhorn, Moray",
+   "base_country": "United Kingdom",
+   "base_source": "https://www.sacredsongs.net/",
+   "email_or_form_seen": "none",
+   "content_signal": "Songbooks and CDs; song trainings 2026; events pages (Homecoming 2027)",
+   "note": "Devotional song (Taizé, Dances of Universal Peace) leader, long-time music director at Findhorn. Austrian-born (German pages on her site). Could fit the music/sacred-song angle.",
+   "research_order": null,
+   "status": "todo",
+   "plan": null,
+   "skip_reason": null
+  },
+  {
+   "rank": 32,
+   "name": "Jenny Wilks",
+   "hub": "gaia-house",
+   "hub_url": "https://gaiahouse.co.uk/retreats/about-the-teachers/",
+   "hub_programmes": [
+    [
+     "The Four Immeasurable Heart Qualities (online course)",
+     "2027-01-04",
+     "2027-01-25",
+     "https://gaiahouse.co.uk/programme/four-immeasurable-heart-qualities-27/"
+    ]
+   ],
+   "website": null,
+   "base_city": "unknown",
+   "base_country": "United Kingdom (verify)",
+   "base_source": "https://gaiahouse.co.uk/retreats/about-the-teachers/",
+   "email_or_form_seen": "none",
+   "content_signal": "DharmaSeed ~145 talks; no website",
+   "note": "Trained as a clinical psychologist and teaches mindfulness-based therapy groups. Check against the clinical exclusion.",
+   "research_order": null,
+   "status": "todo",
+   "plan": null,
+   "skip_reason": null
+  },
+  {
+   "rank": 33,
+   "name": "Catherine McGee",
+   "hub": "gaia-house",
+   "hub_url": "https://gaiahouse.co.uk/retreats/about-the-teachers/",
+   "hub_programmes": [],
+   "website": null,
+   "base_city": "Devon",
+   "base_country": "United Kingdom",
+   "base_source": "https://gaiahouse.co.uk/retreats/about-the-teachers/",
+   "email_or_form_seen": "none",
+   "content_signal": "DharmaSeed ~303 talks; co-taught Soulmaking Dharma with Rob Burbea",
+   "note": "Gaia House Teacher Council and wife of Yanai Postelnik, in Devon. No 2026-27 programme and no website found.",
+   "research_order": null,
+   "status": "todo",
+   "plan": null,
+   "skip_reason": null
+  },
+  {
+   "rank": 34,
+   "name": "Alan Lewis",
+   "hub": "gaia-house",
+   "hub_url": "https://gaiahouse.co.uk/retreats/about-the-teachers/",
+   "hub_programmes": [],
+   "website": "https://alanlewis.org/",
+   "base_city": "Devon",
+   "base_country": "United Kingdom",
+   "base_source": "https://alanlewis.org/",
+   "email_or_form_seen": "email",
+   "content_signal": "Talks on his site; Zen Moments; DharmaSeed talks",
+   "note": "Ex-monk, semi-retired, runs an IT business. Email info@alanlewis.org. No current programme. Low priority.",
+   "research_order": null,
+   "status": "skipped",
+   "plan": null,
+   "skip_reason": "Too thin for a full page and no town published: alanlewis.org offers only a free weekly Zoom group (Exploring What Is) and a SoundCloud playlist of talks, with no YouTube channel, books, paid courses or current Gaia House programme of his own (his resources page lists other teachers' material), and his site says only that he lives in Devon, UK (county, no town). He is semi-retired and runs an IT business; email info@alanlewis.org and a usable photo are published if he is revisited."
+  },
+  {
+   "rank": 39,
+   "name": "Sumedha",
+   "hub": "gaia-house",
+   "hub_url": "https://gaiahouse.co.uk/retreats/about-the-teachers/",
+   "hub_programmes": [
+    [
+     "New Years' Retreat 2026",
+     "2026-12-29",
+     "2027-01-03",
+     "https://gaiahouse.co.uk/programme/new-years-retreat-2026/"
+    ],
+    [
+     "Rest and Renewal",
+     "2027-01-07",
+     "2027-01-13",
+     "https://gaiahouse.co.uk/programme/rest-and-renewal-2027/"
+    ]
+   ],
+   "website": "https://ekuthuleni.wixsite.com/retreats",
+   "base_city": "unknown (resident in France)",
+   "base_country": "France",
+   "base_source": "https://dharmaseed.org/teacher/1405/",
+   "email_or_form_seen": "none",
+   "content_signal": "DharmaSeed ~36 talks; Sacred Mountain Sangha online programmes",
+   "note": "Former Forest-tradition nun (Hannah Bagshaw). The website is Ekuthuleni's, which she has left, so she has no current personal site. Content is moderate.",
+   "research_order": null,
+   "status": "todo",
+   "plan": null,
+   "skip_reason": null
+  },
+  {
+   "rank": 40,
+   "name": "Monica Antunes",
+   "hub": "gaia-house",
+   "hub_url": "https://gaiahouse.co.uk/retreats/about-the-teachers/",
+   "hub_programmes": [
+    [
+     "Your Own Refuge: November Solitary at Home (online)",
+     "2026-11-07",
+     "2026-11-15",
+     "https://gaiahouse.co.uk/programme/"
+    ],
+    [
+     "February Solitary",
+     "2027-02-12",
+     "2027-02-26",
+     "https://gaiahouse.co.uk/programme/"
+    ],
+    [
+     "Meeting Life with Kindness and Compassion (dana)",
+     "2027-03-23",
+     "2027-03-29",
+     "https://gaiahouse.co.uk/programme/"
+    ]
+   ],
+   "website": "https://www.monicaantunes.com/",
+   "base_city": "Geneva (probable; verify)",
+   "base_country": "Switzerland",
+   "base_source": "https://dharmaseed.org/teacher/1402/",
+   "email_or_form_seen": "none",
+   "content_signal": "DharmaSeed ~28 talks; IMS and Spirit Rock teacher listings",
+   "note": "Her site returned 429 (rate-limited), so it was skipped and not retried. Geneva comes from search snippets about an MBCT trainer role there. She also works in child-protection mindfulness and MBCT.",
+   "research_order": null,
+   "status": "todo",
+   "plan": null,
+   "skip_reason": null
+  },
+  {
+   "rank": 41,
+   "name": "Antonia Sumbundu",
+   "hub": "gaia-house",
+   "hub_url": "https://gaiahouse.co.uk/retreats/about-the-teachers/",
+   "hub_programmes": [
+    [
+     "Rest and Renewal",
+     "2027-01-07",
+     "2027-01-13",
+     "https://gaiahouse.co.uk/programme/"
+    ],
+    [
+     "People of Colour online retreat day",
+     "2027-03-06",
+     "2027-03-06",
+     "https://gaiahouse.co.uk/programme/"
+    ],
+    [
+     "Coming Home: A Meditation Retreat for People of Colour",
+     "2027-04-09",
+     "2027-04-12",
+     "https://gaiahouse.co.uk/programme/"
+    ]
+   ],
+   "website": null,
+   "base_city": "unknown (Copenhagen-educated; verify)",
+   "base_country": "unknown",
+   "base_source": "https://gaiahouse.co.uk/retreats/about-the-teachers/",
+   "email_or_form_seen": "none",
+   "content_signal": "Tergar instructor; Bodhi College courses (Dhammapada II with Christina Feldman); no website found",
+   "note": "Base not found, so verify before ingest. She is a clinical psychologist, but her public role is Dharma teaching.",
+   "research_order": null,
+   "status": "todo",
+   "plan": null,
+   "skip_reason": null
+  },
+  {
+   "rank": 43,
+   "name": "Brother Phap Linh",
+   "hub": "plum-village",
+   "hub_url": "https://plumvillage.org/people/dharma-teachers/brother-phap-linh",
+   "hub_programmes": [],
+   "website": "https://plumvillage.org/people/dharma-teachers/brother-phap-linh",
+   "base_city": "Plum Village (New Hamlet area), Thénac",
+   "base_country": "France",
+   "base_source": "https://plumvillage.org/people/dharma-teachers/brother-phap-linh",
+   "email_or_form_seen": "none",
+   "content_signal": "Many Dharma talks on Plum Village/YouTube; composer of community chants; Wake Up co-founder",
+   "note": "Monastic ('Brother Spirit'). Content is strong (talks, music). No personal website.",
+   "research_order": null,
+   "status": "dev",
+   "plan": "docs/content-audits/brother-phap-linh.json",
+   "skip_reason": null
+  },
+  {
+   "rank": 44,
+   "name": "Sister Chan Khong",
+   "hub": "plum-village",
+   "hub_url": "https://plumvillage.org/people/dharma-teachers/sister-chan-khong",
+   "hub_programmes": [],
+   "website": "https://plumvillage.org/people/dharma-teachers/sister-chan-khong",
+   "base_city": "Plum Village, Thénac",
+   "base_country": "France",
+   "base_source": "https://plumvillage.org/people/dharma-teachers/sister-chan-khong",
+   "email_or_form_seen": "none",
+   "content_signal": "Books (Learning True Love, Beginning Anew); talks",
+   "note": "Born 1938, and the Plum Village page describes her in the present tense. Confirm she is living and still teaching before ingest. Monastic with books.",
+   "research_order": null,
+   "status": "todo",
+   "plan": null,
+   "skip_reason": null
+  },
+  {
+   "rank": 45,
+   "name": "Rupert Marques",
+   "hub": "sharpham-trust",
+   "hub_url": "https://www.sharphamtrust.org/mindfulness-retreats/details/dharma-deep-ecology-with-rupert-marques",
+   "hub_programmes": [
+    [
+     "Sharpham: Earth in Mind (6 nights, The Barn)",
+     null,
+     null,
+     "https://www.sharphamtrust.org/mindfulness-retreats/details/dharma-deep-ecology-with-rupert-marques"
+    ],
+    [
+     "Sharpham: Burnout retreat",
+     null,
+     null,
+     "https://www.sharphamtrust.org/mindfulness-retreats/details/burnout-retreat-in-sharpham-house-sustain-yourself-through-mindfulness"
+    ]
+   ],
+   "website": "https://www.handontheearth.org/",
+   "base_city": "unknown ('here in Europe'; lived at Ecodharma, Spain)",
+   "base_country": "unknown (UK-born)",
+   "base_source": "https://www.handontheearth.org/about",
+   "email_or_form_seen": "contact form",
+   "content_signal": "One Earth Sangha articles; Tricycle summit talk; newsletter; rites-of-passage programmes",
+   "note": "Base unclear: his About page says he offers this work 'here in Europe'. Ecodharma and Insight teacher. Rank depends on the base.",
+   "research_order": null,
+   "status": "todo",
+   "plan": null,
+   "skip_reason": null
+  },
+  {
+   "rank": 109,
+   "name": "Sue Bowman",
+   "hub": "insight-timer",
+   "hub_url": "https://insighttimer.com/suebowman",
+   "hub_programmes": [],
+   "website": "https://www.mycalmplace.co.uk/",
+   "base_city": "Newcastle upon Tyne",
+   "base_country": "United Kingdom",
+   "base_source": "https://insighttimer.com/suebowman",
+   "email_or_form_seen": "none",
+   "content_signal": "Insight Timer 1 track only",
+   "note": "Slow/yin yoga with breathing and meditation in North East England. THIN: only one track; listed because Newcastle has nobody. Website not opened.",
+   "research_order": null,
+   "status": "todo",
+   "plan": null,
+   "skip_reason": null
+  },
+  {
+   "rank": 127,
+   "name": "Ines Ramos",
+   "hub": "insight-timer",
+   "hub_url": "https://insighttimer.com/TheInnerSail",
+   "hub_programmes": [],
+   "website": "https://www.theinnersail.com/",
+   "base_city": "Vienna",
+   "base_country": "Austria",
+   "base_source": "https://insighttimer.com/TheInnerSail",
+   "email_or_form_seen": "none",
+   "content_signal": "Insight Timer 3 tracks + 1 course (17 days)",
+   "note": "Yoga, meditation and breathwork teacher and leadership mentor; English and Portuguese. Thin; also leadership mentoring. Website not opened.",
+   "research_order": null,
+   "status": "todo",
+   "plan": null,
+   "skip_reason": null
+  },
+  {
+   "rank": 130,
+   "name": "Sarah Gregg",
+   "hub": "insight-timer",
+   "hub_url": "https://insighttimer.com/sarahgregg",
+   "hub_programmes": [],
+   "website": "https://www.reikidrum.co.uk/",
+   "base_city": "Sawbridgeworth",
+   "base_country": "United Kingdom",
+   "base_source": "https://insighttimer.com/sarahgregg",
+   "email_or_form_seen": "none",
+   "content_signal": "Insight Timer 2 courses (Sacred Chants of Usui Reiki, 30-day Reiki Drumming), 8+ tracks, 1k followers; Teachable course site",
+   "note": "Reiki master teacher and sound healer (drums, gongs, bowls); founded The Akasha Process. Website not opened.",
+   "research_order": null,
+   "status": "skipped",
+   "plan": null,
+   "skip_reason": "Health rule (sprint lead, 3 Nov 2026): her own site sells her clinic's work on cancer, infertility, autoimmune disease and pain, and links drumming to dementia, addiction and trauma; her listing would link there. Plan written by the researcher kept at uk-europe-sprint-1/dropped/sarah-gregg.json."
+  },
+  {
+   "rank": 133,
+   "name": "Eva Bruha",
+   "hub": "insight-timer",
+   "hub_url": "https://insighttimer.com/evabruha",
+   "hub_programmes": [],
+   "website": "https://www.evabruhameditation.ch/",
+   "base_city": "Nidau",
+   "base_country": "Switzerland",
+   "base_source": "https://insighttimer.com/evabruha",
+   "email_or_form_seen": "none",
+   "content_signal": "Insight Timer 8+ tracks, 563 followers",
+   "note": "Mindfulness meditation teacher authorised by Christopher Titmuss (2002), 30+ years practice, MBSR teacher and supervisor. English and German. Website not opened.",
+   "research_order": null,
+   "status": "dev",
+   "plan": "docs/content-audits/eva-bruha.json",
+   "skip_reason": null
+  },
+  {
+   "rank": 134,
+   "name": "Liliana Farelo",
+   "hub": "insight-timer",
+   "hub_url": "https://insighttimer.com/lilianafarelo",
+   "hub_programmes": [],
+   "website": "https://yoga.en.lilianafarelo.com/",
+   "base_city": "Almada",
+   "base_country": "Portugal",
+   "base_source": "https://insighttimer.com/lilianafarelo",
+   "email_or_form_seen": "none",
+   "content_signal": "Insight Timer 8+ tracks",
+   "note": "Yoga, meditation, breathwork and somatics; English and Portuguese. Almada is across the Tagus from Lisbon (Lisbon area - nobody in Lisbon yet). Bio mentions trauma-informed practice; check framing. Website not opened.",
+   "research_order": null,
+   "status": "todo",
+   "plan": null,
+   "skip_reason": null
+  }
+ ],
+ "updated": "2026-11-03T17:05:17.192Z"
+}

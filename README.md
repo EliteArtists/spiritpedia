@@ -304,7 +304,7 @@ how-to is `docs/admin-guide.md`; the personalisation rules are
 | **Website** | Live at **https://www.spiritpedia.co** (Next.js on Vercel). Every push that changes `web/` deploys to production |
 | **App (iOS)** | Flutter, iPhone and iPad. **1.0** is in Apple review. **1.0.0 (27)** is on TestFlight (`app/build/ios-release/Spiritpedia-1.0.0-27.ipa`; archive in Xcode's Archives, `2026-10-28/Spiritpedia 1.0.0 (27).xcarchive`, 28 Oct 2026). Build 24's archive (`2026-10-22/Runner 3.xcarchive`) is kept while 1.0 is in review; 25 and 26 were never uploaded and their files were deleted on 28 Oct |
 | **App (Android)** | The same code. The **closed test is live with 15 testers**; the production application is due about 9–10 Nov 2026 (§10.15, §12.8, `docs/google-play.md`). **1.0.0 (25)** (version code 25, `app/build/android-release/Spiritpedia-1.0.0-25.aab`) has been in the closed test since **31 Oct 2026**. Not yet in production |
-| **Database** | Supabase. Two projects: **live** (`uzmvcgew…`) and **dev** (`khtpbnof…`). Migrations `0000`–`0032` are on both; **`0033`** (place aliases, the location audit) is for the owner to run, dev first |
+| **Database** | Supabase. Two projects: **live** (`uzmvcgew…`) and **dev** (`khtpbnof…`). Migrations `0000`–`0033` are on both; **`0034`** (8 more place aliases, Sprint A) is for the owner to run, dev first |
 | **Push** | Firebase Cloud Messaging only, with an APNs key. Moved on 22 Oct 2026 to two Firebase projects owned by **love@spiritpedia.co** (live `spiritpedia-ad62b`, dev `spiritpedia-dev-5e4d5`); checked end to end on iPhone, iPad and Android |
 | **Emails** | The approved copy of 21–22 Oct 2026 is live (§9.7). The outreach journey is eight emails, redirected to a test inbox by `JOURNEY_TEST_EMAIL` until the solicitor has checked cold email; no journey is running. Day 4 is live. Personal discovery editions are built but **off** until `DISCOVERY_EDITIONS=on` is set on Vercel (§9.7a) |
 | **Repository** | `https://github.com/EliteArtists/spiritpedia`, branch `main` only. No staging environment, no feature flags |
@@ -608,7 +608,7 @@ editor **on dev first, then live**, by the project owner. Dev is checked with
 throwaway users created through the Admin API (no email) and deleted
 afterwards; live is checked read-only.
 
-### 8.1 0012–0033 (0012–0032 on dev and live; 0033 to run)
+### 8.1 0012–0034 (0012–0033 on dev and live; 0034 to run)
 
 **`0012_favourites_slugs`** — data only, in one transaction.
 - Rewrites legacy `user_favourites.content_slug` values (numeric ids for books,
@@ -844,8 +844,8 @@ No existing policy loosened. Safe to run again. Then, on live only,
 `supabase/scheduled/push-hourly.sql` (pg_cron + pg_net, the secret in Vault)
 calls `/api/cron/push` at five past every hour.
 
-**`0033_place_aliases`** (3 Nov 2026, the location audit; owner to run dev
-then live). A listing's published town now finds its place (Near You):
+**`0033_place_aliases`** (3 Nov 2026, the location audit; run by the owner
+on dev and live the same day, live check row 45, 342, 340). A listing's published town now finds its place (Near You):
 - `place_aliases` (`name`, `country_code`, `region` or `''`, `place_id`,
   `note`): a name stored on listings that isn't a town in `places` → the
   place it means. A village under 5,000 people points at the nearest town of
@@ -861,6 +861,13 @@ then live). A listing's published town now finds its place (Near You):
 A new village is added as a row (SQL editor, dev then live; the nearest
 5,000+ town in the same country, within 110 km). The ingest says when one is
 needed (§18.4).
+
+**`0034_place_aliases_uk_europe`** (3 Nov 2026, Sprint A; owner to run dev
+then live, before Sprint A goes live). 8 more aliases for the sprint's bases:
+Cologne → Köln, St. Gallen / St Gallen → Sankt Gallen, Thénac / Thenac →
+Bergerac (Plum Village), Findhorn → Forres, Cubjac → Trélissac, Minsterley →
+Bayston Hill. Then a backfill of listings with a town and no place. Check
+row: aliases (53), listings with a town, of those still without a place.
 
 ### 8.2 0000–0011
 
@@ -2552,10 +2559,11 @@ node scripts/ingest.mjs <plan.json> --env dev --rollback    # delete exactly wha
   "image links" that are really web pages are replaced.
   - **Books:** the cover built from the ASIN
     (`https://m.media-amazon.com/images/P/{ASIN}.01._SCLZZZZZZZ_.jpg`, the
-    publisher's cover, 500 px tall), which also corrects covers an audit got
-    wrong; else the audit's cover if good; else the product image on the
-    Amazon page (never its share image, which is an Amazon promo banner);
-    else Open Library's cover for the ISBN, then by title and author. Kindle
+    publisher's cover, 500 px tall; an image server, not an Amazon page),
+    which also corrects covers an audit got wrong; else the audit's cover if
+    good; else Open Library's cover for the ISBN, then by title and author.
+    Amazon product pages are never opened (amazon.com's robots.txt blocks
+    Claude agents; changed 3 Nov 2026). Kindle
     ASINs (`B0…`) and Indian-published titles often need the later steps.
     `"cover": null` puts a book in without one.
   - **Offerings and free resources:** the page's share image (`og:image`,
@@ -2571,8 +2579,15 @@ node scripts/ingest.mjs <plan.json> --env dev --rollback    # delete exactly wha
   - **An existing healer's photos:** unusable ones (Google thumbnails, dead
     links, too small) are dropped; if none is left, one is found as for a
     new healer.
-- **Amazon:** each ASIN is checked on amazon.com; a UK-only edition keeps its
+- **Amazon:** never fetched. Each ISBN-10 ASIN is checked on Open Library
+  (`openlibrary.org/isbn/<isbn>.json`): not found there is unsolved, any
+  other failure and every Kindle `B0…` ASIN is listed for a human to confirm.
+  The store link defaults to amazon.com; a UK-only edition keeps its
   `amazon.co.uk` link (a default, listed).
+- **Fetching:** every request names itself honestly
+  (`SpiritpediaIngest/1.0 (+https://www.spiritpedia.co)`, in
+  `scripts/lib/images.mjs`), never a browser's user agent (§18.4, blocked
+  means skip; until 3 Nov 2026 it sent a Chrome one).
 - **An existing healer** can be changed through the plan's
   `healer.update` (e.g. `{"booking_url": null, "youtube_url": "…"}`); the
   old values are logged, and `--rollback` puts them back.
@@ -2806,6 +2821,8 @@ dev, give the pages to check, stop. Live after their OK, as for healers.
 | Hubs: Kripalu Center for Yoga & Health (new Organisation, Superhero by editorial stature; 10 offerings incl. 6 house retreats, 2 free resources), Esalen Institute (new Organisation, Superhero by editorial stature, founded 1962; 8 offerings, 3 free resources) and 1440 Multiversity (new Organisation, Luminary, founded 2017; 4 offerings, 3 free resources); 19 teachers already on Spiritpedia linked as current faculty (11 Kripalu, 8 Esalen); the retreat-centre hubs sprint: 100 new teachers (79 from Kripalu's current faculty, ranks 1–118 of `kripalu-faculty.json`; 21 from Esalen, ranks 201–235 of `esalen-faculty.json`; none from 1440, whose faculty is staff only), each linked to its hub (Erika Gagnon, Mark Coleman, Jovinna Chan, Hawah Kasat to both); plans, logs, brief and progress in `docs/content-audits/retreat-hubs-sprint-1/`, reports `docs/reports/2026-11-01-retreat-hubs-sprint.md` and `…-live.md` | 1 Nov 2026: 622 videos, 130 books, 423 offerings, 79 free resources. Tiers by followers added together (§17.1): 1 Superhero (Dr. Amanda Hanson), 12 Luminary (overrides: Chungliang Al Huang, Tenzin Wangyal Rinpoche, Mirabai Starr by editorial stature; James Baraz by student count), 87 Local Hero. Email: 85 published (decoded Cloudflare/JS addresses count, owner), 15 contact form. 51 not listed: 47 skipped (too thin, strict health rule, mainly therapy or clinical, no contact route, 8 not current faculty) and 4 left out by the owner (Masood Ali Khan, Marysia Miernowska, Leah Diamond, Stacia Butterfield; plans in `dropped/`). Past faculty listed, not linked (Kripalu 27, Esalen 22, 1440 17). Owner fixes (`owner-fixes-retreat-hubs-2026-11-01.mjs`, logged): James Baraz to Luminary, Lorelei Chang's YouTube avatar dropped (twin sister), Chungliang Al Huang co-author on Tao: The Watercourse Way. The Subtle Body: nothing to move (book 1180 is Cyndi Dale's own Encyclopedia; Simon Cox's Genealogy is a separate book). No dated item had passed | 1 Nov 2026, the same |
 | Content run (README §18.7, 1 Nov 2026): 98 new teachers. Leftovers Russ Hudson and Raj Balkaran; Esalen ranks 236–254 (10) and Commune 26–34 (3); Spirit Rock skipped (robots.txt blocks Claude agents); Insight Meditation Society as a new Organisation hub (Luminary by editorial stature, owner confirmed; 9 offerings, 3 free resources; Sharon Salzberg linked as founder; 18 current teachers plus Joseph Goldstein as founder; 4 past faculty listed, not linked); Insight Timer sprint 2 top-up (64, ranks 117–262, pipeline extended to rank 312 in `insight-timer-faculty-extension.json`). Tracker `content-run-2026-11-01.json`; plans, briefs and progress in each sprint folder; report `docs/reports/2026-11-01-content-run.md` | 1 Nov 2026: Tiers: 1 Superhero (Sah D'Simone), 9 Luminary (Russ Hudson and Joseph Goldstein by editorial stature, owner confirmed), 88 Local Hero. Owner decisions the same day: Nandhiji, Whitney Durrant, Rachel Lewis rolled back; Kerri Kelly, Rachel Ricketts, Catherine Ingram left out (activism or climate-conspiracy); Steven Webb added; Devon & nico Hase made a couple listing; Fred Haas's recovery-coaching sentence removed; Renée Rotkopf's AI chatbot left out; Goldstein added as co-author of Seeking the Heart of Wisdom (`content-run-fixes-2026-11-01.mjs`, logged). Shared offering links allowed (ingest change; migration 0031) | IMS hub and Sharon Salzberg's founder link live 1 Nov 2026; the 98 teachers live 2 Nov 2026 (`content-run-2026-11-01-live.py`, each logged for rollback; 100 hub links), and the Goldstein co-author fix. Migration 0031 run by the owner on dev and live (2 Nov 2026); the 18 shared offerings (16 teachers) then added on both |
 
+| Regional Sprint A, UK, Ireland and Western Europe (`uk-europe-1`, after the location audit; the plan in `docs/reports/2026-11-03-regional-coverage.md`): 25 new teachers with a published base in a gap city (Barcelona, Amsterdam, Cardiff, Belfast, Dublin, Galway, Brighton, Oslo, Stockholm, Helsinki, Vienna, Cologne, St. Gallen, Nidau, Bordeaux and the Dordogne, Findhorn, Shropshire, Hebden Bridge; Gordon Smith UK only). Queue, brief, skips and per-teacher detail in `docs/content-audits/uk-europe-sprint-1/` (`REPORT.md`), report `docs/reports/2026-11-03-uk-europe-sprint-1.md` | 3 Nov 2026: 138 videos, 37 books, 68 offerings, 60 free resources, 10 hub links (IMS, Insight Timer). 2 Luminary by editorial override (John Philip Newell, Stephen Batchelor; owner to confirm), 23 Local Hero. Email: 18 published, 7 contact form. 32 skipped (mostly no published base or no contact route; health rule; too thin), Sarah Gregg dropped (health rule). Needs `0034` for 8 village bases | Waiting for the owner's OK and `0034` on live |
+
 ### 18.7 Hub-by-hub sprints (the standard method)
 
 Content sprints go **hub by hub** (owner, 30 Oct 2026). Pick a hub (a
@@ -2866,6 +2883,15 @@ Network and Insight Timer sprints carry on in between these. In order:
    isn't written up in this README yet; record its scope here when it
    starts.
 
+**Regional sprints** (owner, 3 Nov 2026): after the location audit, sprints
+also go **by region**, to fill the gap cities in
+`docs/reports/2026-11-03-regional-coverage.md` (A: UK, Ireland, Western
+Europe; B and C there). Same rules; every plan needs a published base
+(§18.4). Lesson from Sprint A: centre faculty lists (Gaia House, Bodhi
+College) rarely give a teacher's base, so search city first. The British
+Wheel of Yoga and UK Reiki Federation directories can't be used (their terms
+forbid reuse).
+
 **Retreats from retreat-centre hubs:** their dated retreats come in as
 offerings (`product_type: retreat`, with `start_date` and `end_date`), so
 they feed the Upcoming Retreats shelf (open job #24) and drop off when over.
@@ -2885,8 +2911,8 @@ else is changed.
    (rows shown in the Inbox, failures ≥ 2) and writes
    `docs/image-fixes/<date>.json` and a numbered contact sheet
    `<date>.sheet.png`. Reading only.
-   - Books: the cover by ASIN, then the Amazon page, then Open Library (as
-     ingestion, §18.2).
+   - Books: the cover by ASIN, then Open Library (as ingestion, §18.2; Amazon
+     pages are never opened).
    - Offerings and free resources: the image their own page shares, else its
      first large image.
    - Teacher photos: the share image of their website and YouTube channel.

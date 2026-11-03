@@ -1,0 +1,205 @@
+{
+  "healer": {
+    "healer_slug": "sarah-gregg",
+    "location_source": "https://www.reikidrum.co.uk/about.html",
+    "create": {
+      "name": "Sarah Gregg",
+      "bio": "Sarah Gregg is a Reiki teacher and sound practitioner based in Sawbridgeworth, on the Hertfordshire and Essex border. Her path began with years of travel in Australia and Asia, including a Buddhist meditation course in Kathmandu, before she trained in Usui Reiki in England and began teaching it in 2003. In 2007 she went to Sedona, Arizona, to learn Reiki Drumming from Michael Arthur Baird and then brought the method to Britain, where she has since trained hundreds of practitioners. She also teaches Karuna Reiki, is a long-time yoga student of Sivadyuti, and studied voice, toning and mantra with Jonathan Goldman.\n\nHer classes run from first-degree Reiki through to master level, alongside workshops on the chants of the Japanese Usui system and a gong practitioner course built around a six-day intensive. In 2022 she developed The Akasha Process, a four-day shamanic Reiki workshop centred on drumming, ceremony and finding one's next step in life. She holds regular gong baths and sacred chant evenings in Sawbridgeworth and Epping, teaches some courses live over Zoom, and shares drum journeys and Reiki chant lessons on Insight Timer. She works through two names, Reiki Drum and Sacred Sound Inspirations.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local_online",
+      "city": "Sawbridgeworth",
+      "country": "United Kingdom",
+      "subjects": [
+        "reiki",
+        "sound-healing",
+        "shamanism"
+      ],
+      "website_url": "https://www.reikidrum.co.uk/",
+      "booking_url": "https://www.sacredsoundinspirations.co.uk/events/",
+      "youtube_url": "https://www.youtube.com/@Reikidrum",
+      "instagram_url": "https://www.instagram.com/reikidrumsarahgregg/",
+      "facebook_url": "https://www.facebook.com/reikidrumandsacredsoundinspirations/",
+      "twitter_url": "https://twitter.com/ReikiDrum",
+      "tiktok_url": null,
+      "contact_email": "info@reikidrum.co.uk",
+      "image_urls": [
+        "https://www.sacredsoundinspirations.co.uk/wp-content/uploads/2018/09/14608121_10154652692508413_805248695_n.jpg",
+        "https://www.sacredsoundinspirations.co.uk/wp-content/uploads/2018/09/35226955_639120076433072_5820028879078686720_n2.jpg",
+        "https://www.sacredsoundinspirations.co.uk/wp-content/uploads/2019/08/avebury-1.jpg"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "insight-timer",
+      "role": "instructor"
+    }
+  ],
+  "videos": [
+    {
+      "title": "The Akasha Process®  - Achieving Your Sacred Mission",
+      "url": "https://www.youtube.com/watch?v=QNAwkkjdzrs",
+      "subjects": [
+        "shamanism",
+        "reiki",
+        "soul-purpose"
+      ]
+    },
+    {
+      "title": "Harmony of the Spheres Gong Master Training  - Full Length Version",
+      "url": "https://www.youtube.com/watch?v=Qx-gBX2liT0",
+      "subjects": [
+        "sound-healing"
+      ]
+    },
+    {
+      "title": "Usui Reiki Kotodama Symbol One",
+      "url": "https://www.youtube.com/watch?v=zhXzCNYgPlo",
+      "subjects": [
+        "reiki",
+        "sound-healing"
+      ]
+    }
+  ],
+  "books": [],
+  "courses": [
+    {
+      "title": "Reiki Drum Online Practitioner Training",
+      "url": "http://www.reikidrum.co.uk/blog/reiki-drum-online-practitioner-training-course",
+      "description": "A six-week practitioner course in the Reiki Drum Technique for people already trained to Usui Reiki Level II, taught in six live Zoom sessions on Wednesday evenings. Students also get recorded journeys, videos and a written manual, and receive a certificate once the course work is done.",
+      "price": "£260 GBP",
+      "product_type": "course",
+      "start_date": "2027-02-10",
+      "end_date": "2027-03-17",
+      "subjects": [
+        "reiki",
+        "shamanism",
+        "sound-healing"
+      ]
+    },
+    {
+      "title": "Reiki Drumming (The Reiki Drum Technique)",
+      "url": "https://www.sacredsoundinspirations.co.uk/reiki-drumming-the-reiki-drum-technique/",
+      "description": "The in-person, two-day version of her Reiki Drum practitioner training in Sawbridgeworth, for students with at least Usui Reiki Level II. It covers preparing sacred space, drum journeys, giving and receiving drum sessions and connecting with your own drum. The fee includes a frame drum, or is lower if you bring your own (£250 GBP).",
+      "price": "£385 GBP",
+      "product_type": "course",
+      "start_date": "2027-03-06",
+      "end_date": "2027-03-07",
+      "subjects": [
+        "reiki",
+        "sound-healing",
+        "shamanism"
+      ]
+    },
+    {
+      "title": "The Akasha Process® – Achieving Your Sacred Mission",
+      "url": "https://www.sacredsoundinspirations.co.uk/the-akasha-process/",
+      "description": "Her own four-day, non-residential workshop in Sawbridgeworth, mixing Reiki, sacred drumming, ceremony and shamanic practice, with four empowerments given over the days. It is open to beginners and aimed at people looking for clarity about their next step in life.",
+      "price": "£444 GBP (deposit £111 GBP)",
+      "product_type": "course",
+      "start_date": "2027-04-17",
+      "end_date": "2027-04-20",
+      "subjects": [
+        "shamanism",
+        "reiki",
+        "soul-purpose"
+      ]
+    },
+    {
+      "title": "Gong Master Practitioner CMA Accredited Training",
+      "url": "https://www.sacredsoundinspirations.co.uk/gong-master-practitioner-cma-accredited-training/",
+      "description": "A gong course in two parts: a six-day hands-on intensive for up to eight people on the Herts and Essex borders, then distance-learning modules over about a year. It teaches gong history, mallets and technique, one-to-one sessions and group gong baths, and closes with a gong puja.",
+      "price": "£860 GBP (deposit £260 GBP)",
+      "product_type": "course",
+      "start_date": "2027-06-06",
+      "end_date": "2027-06-11",
+      "subjects": [
+        "sound-healing",
+        "meditation"
+      ]
+    },
+    {
+      "title": "The Sacred Chants of the Usui Reiki System for Reiki Masters & Master Teachers",
+      "url": "https://reiki-drum.teachable.com/p/the-sacred-chants-of-the-usui-reiki-system-for-reiki-masters-master-teachers",
+      "description": "A self-paced online course in which she teaches the kotodama, the chanted sounds linked to the Usui Reiki symbols, and shows how to use them in personal practice and in sessions. Intended for Reiki masters and master teachers.",
+      "price": "£33 GBP",
+      "product_type": "download",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "reiki",
+        "sound-healing"
+      ]
+    },
+    {
+      "title": "Reiki First Degree - Shoden",
+      "url": "https://www.reikidrum.co.uk/courses2.html",
+      "description": "Her two-day introduction to Usui Reiki in Sawbridgeworth, with four attunements, Reiki history and precepts, chi kung movements, and practice in self-treatment and treating others. Second-degree and master-level courses follow on from it.",
+      "price": "£235 GBP (deposit £85 GBP)",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "reiki"
+      ]
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "The Four Winds - A Meditation & Reiki Drum Journey",
+      "url": "https://insighttimer.com/sarahgregg/guided-meditations/the-four-winds-a-meditation-reiki-drum-journey",
+      "description": "A guided meditation followed by a Reiki drum journey that calls on the four directions. Free to play on Insight Timer.",
+      "featured": true,
+      "resource_type": "meditation",
+      "subjects": [
+        "shamanism",
+        "reiki",
+        "meditation"
+      ]
+    },
+    {
+      "title": "Climbing The Mountain - A Meditation & Reiki Drum Journey",
+      "url": "https://insighttimer.com/sarahgregg/guided-meditations/climbing-the-mountain-a-meditation-reiki-drum-journey",
+      "description": "A visualisation of climbing a mountain, carried by Reiki drumming. Free to play on Insight Timer.",
+      "featured": false,
+      "resource_type": "meditation",
+      "subjects": [
+        "shamanism",
+        "reiki",
+        "meditation"
+      ]
+    }
+  ],
+  "sprint": {
+    "sprint": "uk-europe-1",
+    "hub": "insight-timer",
+    "rank": 130,
+    "hub_url": "https://insighttimer.com/sarahgregg",
+    "insight_timer_url": "https://insighttimer.com/sarahgregg",
+    "tier_evidence": "YouTube @Reikidrum 464 subscribers (channel header, 3 Nov 2026); Insight Timer 1k followers (profile, via WebFetch, 3 Nov 2026); Instagram @reikidrumsarahgregg and Facebook not opened (both block all agents); X @ReikiDrum not read → ~1.5k readable total → local_hero",
+    "email": "yes",
+    "email_source": "http://www.reikidrum.co.uk/blog/reiki-drum-online-practitioner-training-course",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 12 source(s)",
+    "flags": [
+      "Health-claim review needed: her Reiki Drum About page says her Sawbridgeworth clinic has 'particular experience' with cancer, infertility, autoimmune disease, allergies and pain, and describes a naturopathic and detox approach; the Reiki Drum home page links drumming to Alzheimer's, dementia, addiction recovery and trauma. Her teaching (Reiki courses, drumming, gong training) is the main offer, so a plan was written with all of that left out of the bio and items, but the owner may prefer to skip her under the 'sold on conditions' rule.",
+      "Email info@reikidrum.co.uk is published in plain text on the Reiki Drum online course page; on the Reiki Drum contact page it is built by a script, so that page is not used as the source. Sacred Sound Inspirations also publishes info@sacredsoundinspirations.co.uk (mailto on its contact page). Both are business inboxes.",
+      "Photos: the three images are from the Sacred Sound Inspirations About page and match the small headshot on reikidrum.co.uk (250 px, too small to use). The YouTube avatar is a letter placeholder. Two show her with gongs; the third (Avebury) is a full-length shot with a drum. Facebook-style file names on the first two.",
+      "Insight Timer profile is rendered by script; the bio, follower count and track list were read with WebFetch. No play counts are shown, so the two free tracks were picked by title, not by plays.",
+      "Reiki First Degree is listed undated: its last published date (5–6 Sept 2026) has passed, and the page says classes run regularly and on request.",
+      "Two business names (Reiki Drum, Sacred Sound Inspirations) both belong to her; listed as an individual."
+    ],
+    "left_out": [
+      "Gong and planet-gong soundscapes, Desert Journey and Yuletide videos: music or drumming only.",
+      "Sun Gazing video: sun-gazing practice raises a safety concern; left out.",
+      "Soul Retrieval 2020 - Reiki Drum Journey (its description frames it around people suffering after 2020) and Reprogramming the Change with the Akasha Process® ('the Change' likely refers to menopause): condition-framed or borderline.",
+      "Insight Timer track 'Understanding Your Body's Language - A Reiki Drum Healing' and Meeting King Djinn ('to combat fear'): framed as healing; left out to be safe.",
+      "Private sessions and 'gong therapy' one-to-ones: framed as treatment.",
+      "Honouring the Ancestors retreat (30 Oct – 2 Nov 2026): already started; 2027 dates not yet published.",
+      "Insight Timer paid courses (Sacred Chants of Usui Reiki, 30-day Reiki Drumming): the Teachable version of the chants course is listed instead.",
+      "Introduction to the Gong, Sacred Sound & Light Immersion, Usui Reiki Kotodama Workshop: no forthcoming dates published.",
+      "Usui Reiki Kotodama Symbol 3 video: near-duplicate of Symbol One."
+    ]
+  }
+}

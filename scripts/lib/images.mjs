@@ -1,7 +1,10 @@
 // Finding and testing images, shared by ingestion (scripts/ingest.mjs) and the
 // broken-image fixer (scripts/fix-images.mjs). README §18.2 and §19.
 
-export const UA = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0 Safari/537.36';
+// An honest name, never a browser's (owner's standing rule: no fake user
+// agents). Like the website's image audit (web/utils/brokenImages.js), some
+// hosts refuse a request with no User-Agent at all, so we send our own.
+export const UA = 'Mozilla/5.0 (compatible; SpiritpediaIngest/1.0; +https://www.spiritpedia.co)';
 export const TIMEOUT_MS = 30_000;
 export const MIN_IMAGE_PX = 300; // the longer side
 
@@ -84,27 +87,9 @@ export async function amazonCover(asin) {
   return (await probeImage(u)).ok ? u : null;
 }
 
-// The product image on an Amazon page (the generic share image there is an
-// Amazon promo banner, never the cover). → url or null.
-export async function amazonPageCover(asin) {
-  for (const host of ['amazon.com', 'amazon.co.uk']) {
-    let html;
-    try {
-      const r = await fetch(`https://www.${host}/dp/${asin}`, { headers: { 'User-Agent': UA, Accept: 'text/html', 'Accept-Language': 'en-GB,en;q=0.9' }, signal: timed() });
-      if (!r.ok) continue;
-      html = await r.text();
-    } catch { continue; }
-    const candidates = [
-      html.match(/data-old-hires="([^"]+)"/)?.[1],
-      html.match(/"hiRes":"([^"]+)"/)?.[1],
-      html.match(/"large":"([^"]+)"/)?.[1],
-      html.match(/id="(?:landingImage|imgBlkFront|ebooksImgBlkFront)"[^>]*data-a-dynamic-image="\{&quot;([^&]+)&quot;/)?.[1],
-      html.match(/id="(?:landingImage|imgBlkFront|ebooksImgBlkFront)"[^>]*src="([^"]+)"/)?.[1],
-    ].filter((u) => u && /\/images\/I\//.test(u));
-    for (const u of candidates) if ((await probeImage(u)).ok) return u;
-  }
-  return null;
-}
+// Amazon's product pages (amazon.com, amazon.co.uk) are never fetched: their
+// robots.txt disallows Claude's agents (3 Nov 2026), and blocked means skip.
+// Covers come from the image server by ASIN (amazonCover), else Open Library.
 
 // A publisher's logo (README §18.5): a square or near-square icon reads far
 // better on the card's white panel than a wide, pale share banner. So the

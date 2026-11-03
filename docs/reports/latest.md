@@ -1,425 +1,149 @@
-# Latest reports (3 Nov 2026)
+# Latest report (3 Nov 2026)
 
-Two reports from the location job, in order: the location audit, then the regional coverage.
-Each is also saved on its own: `2026-11-03-location-audit.md` and `2026-11-03-regional-coverage.md`.
-
----
-
-# Location audit: why listings had no location, and the fix (3 Nov 2026)
-
-**Done on dev and live (3 Nov 2026).** `0033` run on live by the owner (check row 45, 342, 340): 340 living listings have a place for Near You, up from 186.
-
-## Your step
-
-**Run `supabase/migrations/0033_place_aliases.sql` on dev** (SQL editor, whole file).
-- The check row should read **45, 336, 334**: aliases; dev listings with a town; of those, with a place. The two without a place are Salmon, Idaho and "Sussex County" (see 2).
-
-Then look at dev on localhost: **Near You** with your area set to San Francisco, Austin, Calgary or Byron Bay should now find many more people. Then, after your OK, live (order at the end).
-
-## 1. Why locations were missed
-
-There are 594 living people, schools and organisations on live. Before the audit:
-- **186** had a place Near You can use;
-- **44** had a town that didn't match;
-- **364** had no town or country at all.
-
-Channels, apps and Ascended Masters aren't counted.
-
-**Cause 1: the "worldwide" rule (all 364 blanks).**
-- The research briefs said `city` and `country` were only for `local` or `local_online` teachers. For `worldwide` they said "online only or international without a base", so researchers never looked for a base.
-- On top of that, `scripts/ingest.mjs` threw city and country away whenever availability was `worldwide`. That's the default, and it was forced for every school and organisation. So even the 9 plans that did have a base lost it: Fred Haas, Tom Evans, Renee Sills, Zoe Kanat, Gaia Hope Good and others.
-- The older listings from before the sprints were all "Worldwide (Famous Names)" with no location.
-
-**Cause 2: the town wasn't matched (44 listings).** Near You doesn't read the city text. It reads `place_id`, which is set by matching the city against `places` (GeoNames towns of **5,000+ people**).
-- **Villages never matched.** Shaka's Puerto Viejo (Costa Rica), Woodacre (Jack Kornfield), Big Sur, Barre in Massachusetts (Sharon Salzberg), Chinchero, Rhinebeck.
-- **Other spellings didn't match.** "New York" (places: "New York City"; 15 listings), "St. George" (Saint George), "Tunbridge Wells" (Royal Tunbridge Wells), "Koh Phangan" (Ko Pha Ngan), and "Netherlands" (places: "The Netherlands").
-
-**Your two examples:**
-- **Shaka** had Puerto Viejo, Costa Rica, but the village isn't in `places` (cause 2). **Skies and Flora** had no location at all (cause 1). Both now resolve (Puerto Viejo → Limón, 48 km).
-- **Eva Dalak** was cause 1. Her own About page says she was born in Israel and is **now based in Costa Rica** (I checked it myself), not Brazil. No town is named, so she has the country only. If you know of a Brazil page, send it and I'll change it.
-
-## 2. The audit (364 listings with no location)
-
-Six research agents checked each listing's own site, hub profile (Insight Timer, Omega, Shift, 1440 and others) and official socials. They worked **city level only** and recorded the page each base came from.
-- All followed the site rules: robots.txt first; a refused, rate-limited or bot-checked page was skipped and never retried another way; no logins.
-- YouTube About pages sit behind a consent page, so they were treated as unavailable.
-- Every finding, with its source and a short note, is in `docs/content-audits/location-audit-2026-11-03/audit.json`.
-
-| Result | Listings | What happened on dev |
-| :--- | ---: | :--- |
-| Found, own site / hub / official social, clear | **143** | **Applied** |
-| … with a town | 106 | city + country; all 106 get a place after 0033 |
-| … region or country only | 37 | country only (no town, so not in Near You yet) |
-| Found but **doubtful** | **93** | **Not applied**; listed below for your decision |
-| Nothing published | **119** | Left blank |
-| Site blocked or unreachable | **9** | Left blank, not retried |
-
-By tier: **Superhero** 17 clear, 22 doubtful, 16 none, 3 blocked. **Luminary** 36 / 26 / 36 / 5. **Local Hero** 90 / 45 / 67 / 1.
-- The famous names mostly don't publish where they live. Their bases come from publishers and the press, which is why most of their findings are "doubtful".
-
-**Where the clear ones come from:** many of the Insight Timer teachers' bases come from the location shown under their name on their Insight Timer profile. It's the teacher's own setting on a hub profile, so I counted it as published.
-
-**The 44 that didn't match** are fixed by `0033` (no research needed):
-- 42 get a place.
-- Two are left without one:
-  - **Marybeth Hyland** (Salmon, Idaho): the nearest town of 5,000+ is 129 km away, over the 110 km limit.
-  - **Beth Bradford** ("Sussex County"): no state is given, and there's one in New Jersey and one in Delaware.
-
-**After 0033, on dev:** **334** of 594 have a place for Near You (was 186). 39 more have a country only, and 221 stay blank.
-
-| Tier | With a place | Country only | Blank |
-| :--- | ---: | ---: | ---: |
-| Superhero | 18 | 3 | 41 |
-| Luminary | 54 | 12 | 67 |
-| Local Hero | 262 | 24 | 113 |
-
-## 3. Flagged for you
-
-**Needs a decision (not location):**
-- **Michael Harner died in 2018** but is listed as a living teacher. Under §18.4 he should move to Ascended Master. Say yes and I'll do it on dev, then live.
-- **Richard Rudd:** the Omega profile in his plan seems to be a different Richard Rudd (a wine merchant). His listing's links are worth a look.
-- **Pat Divilly:** his Insight Timer location says Galway, but his bio on the same page says he's based in Bali. Held as doubtful.
-
-**Doubtful findings (93), not applied.** Most rest on a publisher page, the press or a company address rather than the person's own words, or the page is old. Say "apply all doubtful", "apply these", or "none". You might want the well-known ones (Eckhart Tolle in Vancouver, Rupert Spira near Oxford) even on that evidence.
-
-| Listing | Probable base | Why it's doubtful |
-| :--- | :--- | :--- |
-| Eckhart Tolle | Vancouver, British Columbia, Canada | Official About page gives no location; Vancouver comes from an older undated page on his own domain. Wikipedia also says Vancouver since 1995. |
-| Abraham Hicks | San Antonio, Texas, United States | Own site pages would not load in full; San Antonio comes from publisher bios on retailer sites (third-party). Esther Hicks travels widely for workshop |
-| Michael Sealey | London, United Kingdom | Third-party directory (appears to quote his YouTube description); YouTube About itself is behind a consent wall. |
-| Jason Stephenson | South Australia, Australia | Region only. Other bios say he splits time between a seaside town in coastal NSW and a country home in South Australia. |
-| Wim Hof | Netherlands | Own site only calls him a Dutch athlete; footer names a Portuguese LDA and a Dutch BV. Stroe is from third-party press, not recorded as city. |
-| Dr Joe Dispenza | Washington, United States | Own site About page 404; state from publisher/author bio pages (third-party). Company address in Rainier, near Olympia. |
-| Mike Maher | United Kingdom | No city published; country inferred from podcast bios and domain. |
-| Gregg Braden | North Palm Beach, Florida, United States | Office location only; page does not say where he lives (long associated with northern New Mexico). |
-| Rupert Spira | Oxford, Oxfordshire, United Kingdom | Inferred from company registered office (Horspath, near Oxford); page does not say he lives there. |
-| Sandra Ingerman | Santa Fe, New Mexico, United States | Own site does not state location; from publisher author page (third-party, reputable). Also licensed therapist in New Mexico. |
-| David Palmer | Irvine, California, United States | Third-party profile only; highvibetv.com did not load. |
-| The Shift Network | Petaluma, California, United States | Own site gives no address (About only says founder lives in Northern California). Petaluma from press releases/business directories. |
-| The Tapping Solution | Brookfield, Connecticut, United States | PO Box mailing address only; Nick Ortner's own home not stated. |
-| Deepak Chopra | New York City, New York, United States | Older article; two bases (New York City and Carlsbad/La Jolla, California). deepakchopra.com About redirect loop. |
-| Darryl Anka (Bashar) | Los Angeles, California, United States | Company mailing address (box number) in Woodland Hills, Los Angeles; not stated as his home. |
-| Tony Robbins | San Diego, California, United States | Company address only. Press widely reports his home in Palm Beach County, Florida (third-party, not recorded). |
-| Joe Vitale | Wimberley, Texas, United States | Another own-site page is signed Austin, TX; sources disagree. Business address Wimberley. |
-| Lynne McTaggart | London, United Kingdom | Own About page only mentions moving to London earlier in career; residence from third-party bios. |
-| Rupert Sheldrake | London, United Kingdom | Own site About gives no location; from third-party bios (Edge, Psi Encyclopedia). |
-| Dean Radin | California, United States | Inferred from employer (IONS, Petaluma/Novato area; CIIS, San Francisco); no city or home stated. |
-| Jon Kabat-Zinn | Massachusetts, United States | State only, from publisher page; own site gives no location. |
-| Dawson Church | Petaluma, California, United States | Third-party publisher bio, may be old; a podcast says he lives across Nevada, Hawaii and California. |
-| Pema Chödrön | Nova Scotia, Canada | Home monastery, not stated as current residence; she has also spent long retreats in Colorado. |
-| Baron Baptiste | Boston, Massachusetts, United States | Studio location only; page does not say where he lives now. |
-| James Nestor | San Francisco, California, United States | Own site only says he travels the world; from publisher page. |
-| Seane Corn | Topanga, California, United States | From her retreat booking page on WeTravel, not her own site (About gives no location). |
-| Graham Hancock | Bath, Somerset, United Kingdom | Info dates from around 2003 onward; a 2019 bookshop event also called him a Bath resident. |
-| Paul Stamets | Washington, United States | Third-party/older bio; Fungi Perfecti is near Olympia, WA. fungi.com returned 429 (not retried). |
-| Caroline Myss | Oak Park, Illinois, United States | Own site gives no location; publisher page (Penguin says Chicago). |
-| Anita Moorjani | California, United States | Only a publisher author page (Penguin Australia) states it, region only; own site and Omega profile say nothing. |
-| Dr Eben Alexander | Charlottesville, Virginia, United States | CV may be old; some third-party sources say Lynchburg, Virginia. |
-| Michael Harner | Pacifica, California, United States | Michael Harner died in 2018; this is his Foundation's office. A 2022 FSS document on the same site gives a Mill Valley, California mailing address ins |
-| Dr. Raymond Moody | Birmingham, Alabama, United States | Only his publisher (Monkfish) states it; lifeafterlife.com names no location. Other sources say rural Alabama. |
-| James Van Praagh | Los Angeles, California, United States | Own site About names no location; only publisher author page (Hachette NZ) states it. |
-| Drs. John & Julie Gottman | Washington, United States | Orcas Island (San Juan County, WA) is where their practices are, per bio; the Gottman Institute itself is in Seattle per third-party directories. Poss |
-| Jonathan Goldman | Boulder, Colorado, United States | Only the business mailing address is given; does not say where he lives. |
-| Esther Perel | New York City, New York, United States | Inferred from her About text; not an explicit 'based in' line. |
-| Nick Ortner | Brookfield, Connecticut, United States | Company mailing address; does not say where he lives. |
-| Neale Donald Walsch | Ashland, Oregon, United States | Only a publisher page states it; own About page says nothing. |
-| Phil Williams | Puerto Viejo, Costa Rica | Text says Costa Rica only; town from image captions. |
-| Ariel Tang | Bali, Indonesia | Info dates from ~2020 and she calls herself globe-trotting; may have moved. |
-| Mary Sise | New York, United States | Inferred from her NY State licence; no city or explicit base given. |
-| Jai Uttal | San Anselmo, California, United States | Only statement is from 2009; current home not stated elsewhere on his site. |
-| Banafsheh Sayyad | Topanga, California, United States | Third-party interview (her own words); her own site and Shift bio give no location. |
-| Dr. Ibrahim Jaffe | Marathon, Florida, United States | Business address only; residence not stated. |
-| Tina Zion | Leo, Indiana, United States | Mailing address only; residence not stated. |
-| Marion Gilbert | Grass Valley, California, United States | Practice location; where she lives is not stated. |
-| Annie B. Bond | Rhinebeck, New York, United States | Same page also says she lives on a lake in Amesbury, Massachusetts; unclear which is current. |
-| Grandmother Flordemayo | Estancia, New Mexico, United States | Project location, not stated as her home; born in Nicaragua. |
-| Christabel Zamor | Bali, Indonesia | Inferred from a sign-off only; About page gives no location. |
-| Trisha McCagh | Perth, Western Australia, Australia | Quinns Rocks is a Perth suburb; P.O. Box, residence not stated directly. |
-| John Stuart Reid | United Kingdom | Company country only; his own residence and lab town not stated. |
-| Dr. Jennifer Lisa Vest | Berkeley, California, United States | Practice location in footer; residence not stated. |
-| Daisy Lee | Puerto Rico, United States | From a photo caption; no town named. Puerto Rico is a US territory - display as 'Puerto Rico' if preferred. |
-| Renee Baribeau | California, United States | Two bases: California desert and Whidbey Island, Washington; no towns named. |
-| John Lockley | South Africa | No single base; South African origin, splits time across three regions. |
-| Dr. Karen Frances McCarthy | New York, New York, United States | Two bases: New York and Dublin, Ireland; residence not stated. |
-| Cassandra Vieten | San Diego, California, United States | Inferred from employer only. Also says she spends much time in Northern New Mexico. |
-| Dr. Lydia de León | Greece | Inferred; no city, and the venture spans Greece, Mexico and Spain. |
-| Helen Hamilton | West Yorkshire, United Kingdom | Only on third-party conference/podcast speaker pages; own site and Shift bio silent. |
-| Giovanni Dienstmann | Kollam, Kerala, India | Own site highermind.com refused access (403), so could not confirm; Kollam may be an ashram stay rather than home. |
-| Jim Rajan | Madrid, Spain | Location label only, not stated as home. |
-| Frits Evelein | Sommières-du-Clain, France | Own site is Dutch and lists events in Delft/Heerlen with no home stated; may have moved to France or work between both. |
-| Laura Lynne Jackson | New York, United States | Bio says only "New York" - unclear whether city or state; city left blank. |
-| Charlotte Rotterdam & Pieter Oosthuizen | Colorado, United States | Region inferred from bio history; no current city stated (Naropa suggests Boulder area). |
-| Lynne Twist | San Francisco, California, United States | This is her institute's base, not a stated home. |
-| Danielle Dulsky | Pennsylvania, United States | Two homes: an unnamed Pennsylvania steel town and rural upstate New York. |
-| Lindsay Mack | Portland, Oregon, United States | Unclear if "we" means Lindsay herself or the business team. |
-| Schuyler Grant | Los Angeles, California, United States | Inferred from 2015 move; no current home stated. Previously built studio work in New York City. |
-| Becky Vollmer | St. Louis, Missouri, United States | Inferred from "STL" abbreviation and blog mention; not a direct statement. |
-| Shivananda Thomas Amelio | New York City, New York, United States | Inferred from career history; no current home stated. |
-| Faith Hunter | Washington, District of Columbia, United States | Own site About says she ran two DC studios for 17+ years (past tense); current status of studio unclear. |
-| Rudy Peirce | Massachusetts, United States | Region only (the Berkshires); a directory lists Great Barrington. Own site and Kripalu silent; Gentle Yogis is online, Eastern Time. |
-| Rolf Gates | Santa Cruz, California, United States | Third-party (publisher) source only; own site and Kripalu silent; bio may be old. |
-| Kaitlin Curtice | Philadelphia, Pennsylvania, United States | Third-party (publisher) source; older tribal profile said Atlanta. Own site silent. |
-| Sarah Powers | California, United States | Bay Area / Marin County, third-party only; own site lists events worldwide but no home base. |
-| Sasha Graham | New York City, New York, United States | Third-party sources only; own site and Kripalu silent. |
-| Yura Sapi | New York City, New York, United States | Birthplace, not clearly current residence; Kichwa with Ecuadorian and Colombian citizenship. Own site silent. |
-| Sherianna Boyle | Yarmouth, Massachusetts, United States | Third-party sources only; own site silent (sessions in ET). |
-| Loch Kelly | New York, United States | Own site lochkelly.org returned 403 (skipped). Sources disagree: New York City vs upstate New York. |
-| Laura Berman Fortgang | Montclair, New Jersey, United States | Third-party sources only; own site home page silent. |
-| Sianna Sherman | Los Angeles, California, United States | Business footer address, not an explicit residence statement. |
-| Michael Ventura | Shelter Island, New York, United States | Inferred: Manhanset territory corresponds to Shelter Island, Long Island; no town named on site. |
-| Mirabai Starr | Taos, New Mexico, United States | Third-party (publisher); recent bios say mountains of northern New Mexico. Own site home page silent. |
-| Dr. Raj Balkaran | Hamilton, Ontario, Canada | Inferred from employer (McMaster, Hamilton); residence not stated. |
-| William Donius | St. Louis, Missouri, United States | Third-party; inferred from career base, residence not explicitly stated. Own site silent. |
-| Robert MacPhee | Sonoma, California, United States | Company location, not stated residence. Own site returned 429 (skipped). |
-| Dustin DiPerna | California, United States | Own site failed (certificate error) and Esalen page errored; state only; third-party source. |
-| Murray Hidary | Marina del Rey, California, United States | Third-party and from 2021; MindTravel runs many events in New York. Own site silent. |
-| Noah Mazé | Los Angeles, California, United States | Not confirmed on own site; directory profile. |
-| Day Schildkret | Richmond, California, United States | Third-party and possibly old; own site press links hint at Minnesota (Lakewood Cemetery project). Esalen page errored. |
-| Devon & nico Hase | Ashland, Oregon, United States | Own site silent; may be outdated; Madison, Wisconsin ties (Nico's PhD, 2026 workshop). |
-| Pat Divilly | Galway, Ireland | Conflict: Galway (location field) vs 'based in Bali' (bio). May have moved to Bali. |
-
-**Region or country only (37, country applied, no town).** Near You needs a town. Name one per person if you know it, or leave them:
-Mooji (Alentejo, Portugal); Teal Swan (Utah, United States); Julie Schiffman (United States); Adyashanti (California, United States); John Edward (Long Island, New York, United States); Jia Apple (Colorado, United States); Eva Dalak (Costa Rica); Kathleen Prasad (California, United States); Saskia Lightstar (Devon, United Kingdom); Selena Lael (Florida, United States); Robert Aceves (California, United States); David Bower (Hawaii, United States); Silvia Nakkach (California, United States); Elizabeth B. Jenkins (Hawaii, United States); Richard Moss (North Carolina, United States); Philip Carr-Gomm (Sussex, United Kingdom); Becca Tarnas (California, United States); Neil Douglas-Klotz (Fife, United Kingdom); Anamika Neitlich (California, United States); Joan Ranquet (California, United States); Sarah Blondin (British Columbia, Canada); Brad Yates (California, United States); Steve Wolf (Maryland, United States); Guri Sohal (Ontario, Canada); Amanda Machado (Canada); Sabine Priestley (Florida, United States); Susie Hemsted (Bali, Indonesia); Tomek Wyczesany (Queensland, Australia); Martha Beck (Pennsylvania, United States); Mary Beth LaRue (Colorado, United States); Tara Stiles (Illinois, United States); Aki Hirata Quetzalyolotzin (Japan); Tenzin Wangyal Rinpoche (United States); Catherine Wilde (Texas, United States); Tara Mulay (Massachusetts, United States); Jordyn Roe (Florida, United States); Sarah Hall (Michigan, United States).
-
-**Nothing published (119), left blank.** Where the agents saw a third-party lead, it's in the note in `audit.json`. Examples: Donna Eden (Ashland), Brian Weiss (Miami), Anodea Judith (Sebastopol), Elizabeth Gilbert (Frenchtown, New Jersey), Tammy Billups (Atlanta). The full list:
-Justin Perry; Aaron Doughty; Leeor Alexandra; Jake Ducey; Bruce H. Lipton PhD; Rhonda Byrne; Heidi Priebe; Jeff Foster; Leia Cohen; Jake Mace; Andrea Kennedy; Jillian (The Lune INNATE); Jenna Zoe; Sam Harris; Dan Brulé; don Miguel Ruiz; Alberto Villoldo; Donna Eden; Dr Brian Weiss; Anodea Judith; Tyler Henry; Susan Miller; Iyanla Vanzant; Marianne Williamson; Chani Nicholas; The AstroTwins; Debra Silverman; Dr. Gary Chapman; Amanda Johnson; Amron Bevels; Amy Belair; Michael McGinnis; Lisa Powers; Melissa Crowhurst; Tevia Feng; Cyndi Dale; Elayne Kalila Doughty; Dr. Ken Nelson; Penelope Smith; Tammy Billups; Dr. Marie Mbouni; Jean Else; David Crow; Richard Gordon; Eluña Noelle; Davina MacKail; Kaedrich Olsen; Erika Gagnon; Lynn McKenzie; Alexandra Wenman; Rob Schwartz; Richard Tarnas; David Gandelman; Marguerite Mary Rigoglioso; Viviane Chauvet; Dr. Shamini Jain; Devaa Haley Mitchell; Melissa Kim Corter; George Thompson; Gemma Petherbridge; Barry Goldstein; The Brothers Koren; Alexis Cohen; Maria Furlano; Shifu Lindsey Wei; Lauren Walker; Suzanne Giesemann; Wendy De Rosa; Maryam Hasnaa; Dr. Laura Koniver; Rev. Sue Frederick; Donna Lozito; Dr. William Bloom; Rebecca Dawson; davidji; Dr. Farima Berenji; Richard Rudd; Pádraig Ó Tuama; Eliza Swann; Dan Harris; Norma and Nisha Burton; Robert Peng; Mark Nepo; Jillian Pransky; Meggan Watterson; Maude Hirst; Lynne Goldberg; Jeff Warren; Cirak; Light Watkins; Llyn Roberts; Damien Echols; Dr. Chelsea Jackson Roberts; Chelsey Korus; Scott Schwenk; Laura Ahrens; Biet Simkin; Tracee Stanley; Shelly Tygielski; MC YOGI; Sage Rountree; Toni Bergins; Girish; Hope Fitzgerald; Kamini Desai; Kristi Nelson; Mícheál Ó Súilleabháin; Tama Kieves; Jovinna Chan; Leslie McGuirk; Jess Magic; Lisa Marchiano; Hawah Kasat; Coby Kozlowski; Dr. Amanda Hanson; Sigal Brier; Lihi Benisty; Russ Hudson; Matthew Brensilver.
-
-**Blocked or unreachable (9), skipped and not retried:**
-- Gabby Bernstein: Not retried per rules.
-- Nassim Haramein: Born in Geneva. Some say he lives on Kauai; LinkedIn lists Martigny. Not recorded.
-- Theresa Caputo: Known as the Long Island Medium (born Hicksville, NY); no current base found on an allowed source.
-- Elizabeth Gilbert: Search results suggest her site says Frenchtown, New Jersey; could not verify because the site did not load.
-- David Deida: 
-- Joette Calabrese: 
-- White Tiger Qigong: Founder Tevia Feng is said by his publisher to live in Asia.
-- Robert Moss: 
-- Yuval Ron: Skipped per site rules.
-
-## 4. The rule, fixed for every future listing
-
-- **`scripts/ingest.mjs`:**
-  - City and country are kept whatever the availability, for schools and organisations too.
-  - A new living person, school or organisation needs either its published base plus `location_source` (the page), or `no_public_base` with why. Otherwise it's a PROBLEM and nothing goes in.
-  - A city with digits is refused as a possible address.
-  - A town that doesn't resolve is noted: "add a place alias".
-  - `city` and `country` can now be set on an existing listing through `healer.update`.
-  - Tested on two test plans (dry run, nothing inserted).
-- **Research briefs:** all six (`docs/content-audits/*-sprint-1/BRIEF.md`) have a new **Base location** rule: city level only, the source page, not a retreat venue, "Town, State" for the US, Canada and Australia, and never a guess. The plan schema now has `location_source` and `no_public_base`. Availability no longer decides the location.
-- **Migration `0033_place_aliases.sql`:**
-  - `place_aliases` points a village at the nearest town of 5,000+ **in the same country** (45 rows); the listing still shows its own village name.
-  - `resolve_place()` now also handles "St." = Saint, dots, "The" in country names, and any country name or code.
-  - A backfill of every listing.
-  - Tested in a local Postgres against all 69,816 places: 148 of 150 towns resolve, and **no existing match changes**.
-- **README:** §18.3 (the plan file), §18.4 (**Base location** rule), §8.1 (`0033`), §17 places note, and the database line.
-
-**Villages mapped further than 50 km** (they'll show under "Closest to you" rather than Near You): Alonissos → Kými (61 km), Joseph, Oregon → La Grande (67 km), Tilba → Batemans Bay (69 km).
-
-## 5. Going live, after your OK
-
-1. **You:** `0033` on live (the same file).
-2. **Me:** `node docs/content-audits/location-audit-2026-11-03/apply.mjs --env live --apply`. It writes the same 143 and never touches a listing that already has a location. `--rollback` puts them back.
-3. **Me:** whichever doubtful ones you approve, on dev and then live, the same way.
-
-## Update, 3 Nov 2026 (evening): your decisions, and live
-
-**Dev:** `0033` run by the owner (check row 45, 336, 334). Near You checked on localhost.
-
-**Michael Harner** is now an Ascended Master, 1929–2018, on dev and live. His page shows the lifespan, and he has no base (`owner-decisions.mjs`, logged, `--rollback` puts it back).
-
-**Richard Rudd: no change needed.** The Omega profile is him after all. It lists his workshop "The Gene Keys Master Numbers" (Rhinebeck, 2027), which is on his listing. Omega's own bio wrongly adds a line about the wine merchants Berry Bros. & Rudd, and that line misled the researcher.
-- His links are all Gene Keys' own: website, events, YouTube, Instagram, Facebook, X and the contact form.
-- The "Teaches at Omega" link is correct.
-- Our bio has nothing about wine.
-- I've left everything as it is. Say if you still want the Omega link off.
-
-**Doubtful bases applied (6 of 93),** only those where the person's own site or hub page names their own practice, studio or centre where clients go:
-
-| Listing | Base | What the page says |
-| :--- | :--- | :--- |
-| Baron Baptiste | Boston, Massachusetts | His flagship Baptiste Power Yoga studio is in Boston |
-| Drs. John & Julie Gottman | Orcas Island, Washington | Both keep private practices on Orcas Island |
-| Dr. Ibrahim Jaffe | Marathon, Florida | His Institute of Spiritual Healing |
-| Marion Gilbert | Grass Valley, California | Her physical therapy practice and wellness centre |
-| Annie B. Bond | Rhinebeck, New York | Her Awakening Prana Healing Center |
-| Dr. Jennifer Lisa Vest | Berkeley, California | Her practice |
-
-**Skipped under your rule:**
-- **Offices, mailing addresses, PO boxes or company addresses** where clients don't go: Gregg Braden, Rupert Spira, The Tapping Solution, Nick Ortner, Darryl Anka, Tony Robbins, Joe Vitale, Jonathan Goldman, Tina Zion, Trisha McCagh, Sianna Sherman, Robert MacPhee, Lynne Twist and The Shift Network.
-- **Past or unclear:** Faith Hunter's DC studios, Deepak Chopra's Chopra Center, Loch Kelly's clinics, Grandmother Flordemayo's seed temple and Karen Frances McCarthy.
-- **Everything from the press, publishers or employers.**
-
-Pat Divilly and the 37 region-only listings are left as they are, as you said.
-
-**Live, done by me:** the 143 bases plus the 6 approved ones (149) and Harner, by `apply.mjs --env live --apply`. It never touches a listing that already had a location; everything is logged, and `--rollback` puts it back.
-- 91 already have a place with today's matching.
-
-**`0033` on live: done by the owner** (check row 45, 342, 340, as expected).
-- The 2 without a place are Salmon, Idaho and "Sussex County".
-- After it, live matches dev: **340** listings with a place for Near You, up from 186 this morning.
-
+Sprint A, also saved as `2026-11-03-uk-europe-sprint-1.md`. The location job's reports from earlier today are `2026-11-03-location-audit.md` and `2026-11-03-regional-coverage.md`.
 
 ---
 
-# Regional coverage: where our living teachers are, and where nobody is (3 Nov 2026)
+# Sprint A: UK, Ireland and Western Europe (3 Nov 2026)
 
-These are dev's figures as they'll stand once migration `0033` has run there. I worked them out with the same matching function and all 69,816 towns. Live will match once the location fix goes live.
+**25 new teachers on dev**, each with a published base in the UK, Ireland or Western Europe. **Nothing is live yet.** The target was about 30; see "Why 25" below.
 
-**Counted:** 594 living people, schools and organisations. Channels, apps and Ascended Masters aren't counted.
+Everything about the location job is on live (149 bases and Michael Harner, done earlier today; `0033` run by the owner).
 
-**Places are towns of 5,000+.** A village counts under the town it was mapped to, for example Woodacre under Fairfax and Big Sur under Monterey.
+## Your steps
 
-## The headline
+1. **Run `supabase/migrations/0034_place_aliases_uk_europe.sql` on dev** (SQL editor, whole file).
+   - It adds 8 town aliases for this sprint's villages and spellings, and gives those 8 listings their place.
+   - The check row should read **53, 366, 2**: aliases; dev listings with a town; of those, still without a place. The two are Salmon, Idaho and "Sussex County" (as after 0033).
+2. **Look at the pages on localhost** (list below). The decisions under "For you to decide" can be answered in one message.
+3. **After your OK:** you run 0034 on **live** (check row **53, 342, 2**). Then I insert the 25 on live (`sprint.mjs insert 1 199 --env live`).
 
-| | Listings | Share |
-| :--- | ---: | ---: |
-| With a place (Near You can find them) | **334** | 56% |
-| Country only, no town | 39 | 7% |
-| No location published | 221 | 37% |
+## The 25 (dev)
 
-**By tier:**
+On dev: **138 videos, 37 books, 68 offerings, 60 free resources**, and 10 hub links (Insight Meditation Society and Insight Timer, where they teach). Tiers: **2 Luminary** (both by editorial override, see below) and **23 Local Hero**. Email: **18 published, 7 contact form only**.
 
-| Tier | With a place | Country only | Blank |
-| :--- | ---: | ---: | ---: |
-| Superhero | 18 | 3 | 41 |
-| Luminary | 54 | 12 | 67 |
-| Local Hero | 262 | 24 | 113 |
+| Teacher | Base | Videos · books · offerings · free | Page |
+| :--- | :--- | :--- | :--- |
+| Bernat Font | Barcelona | 0 · 1 · 4 · 4 | http://localhost:3000/healers/bernat-font |
+| Lisette Schuitemaker | Amsterdam | 0 · 3 · 2 · 1 | http://localhost:3000/healers/lisette-schuitemaker |
+| Ngakma Nor'dzin Pamo | Cardiff | 10 · 3 · 1 · 2 | http://localhost:3000/healers/ngakma-nordzin-pamo |
+| Bridgeen Rea-Kaya | Belfast | 10 · 0 · 6 · 2 | http://localhost:3000/healers/bridgeen-rea-kaya |
+| Orlaith O'Sullivan | Dublin | 10 · 0 · 5 · 4 | http://localhost:3000/healers/orlaith-osullivan |
+| Mike Sheehy | Dublin | 0 · 0 · 3 · 3 | http://localhost:3000/healers/mike-sheehy |
+| Keith Horan | Galway | 7 · 0 · 2 · 4 | http://localhost:3000/healers/keith-horan |
+| Gordon Smith | United Kingdom (no town published) | 10 · 7 · 0 · 1 | http://localhost:3000/healers/gordon-smith |
+| John Philip Newell | Findhorn (→ Forres) | 9 · 7 · 5 · 2 | http://localhost:3000/healers/john-philip-newell |
+| Bhante Bodhidhamma | Minsterley (→ Bayston Hill) | 11 · 0 · 2 · 4 | http://localhost:3000/healers/bhante-bodhidhamma |
+| Noirin Sheahan | Minsterley (→ Bayston Hill) | 0 · 0 · 2 · 3 | http://localhost:3000/healers/noirin-sheahan |
+| Jilani Cordelia | Hebden Bridge (→ Todmorden) | 7 · 0 · 5 · 2 | http://localhost:3000/healers/jilani-cordelia |
+| Sophie Bashford | Brighton | 10 · 2 · 1 · 1 | http://localhost:3000/healers/sophie-bashford |
+| Gunaketu | Oslo | 0 · 0 · 2 · 2 | http://localhost:3000/healers/gunaketu |
+| Jenny Berglund Castro | Stockholm | 0 · 0 · 3 · 3 | http://localhost:3000/healers/jenny-berglund-castro |
+| Juha Penttilä | Helsinki | 6 · 0 · 4 · 2 | http://localhost:3000/healers/juha-penttila |
+| Michael Anderson | Vienna | 0 · 0 · 5 · 0 | http://localhost:3000/healers/michael-anderson |
+| Anne Eberhardt | St. Gallen | 0 · 0 · 2 · 2 | http://localhost:3000/healers/anne-eberhardt |
+| Eva Bruha | Nidau | 0 · 0 · 3 · 2 | http://localhost:3000/healers/eva-bruha |
+| Akincano Marc Weber | Cologne | 0 · 0 · 4 · 3 | http://localhost:3000/healers/akincano-marc-weber |
+| Martine Batchelor | Bordeaux (see below) | 11 · 5 · 1 · 3 | http://localhost:3000/healers/martine-batchelor |
+| Stephen Batchelor (Luminary) | Bordeaux (see below) | 8 · 8 · 0 · 2 | http://localhost:3000/healers/stephen-batchelor |
+| Martin Aylward | Cubjac (→ Trélissac) | 10 · 1 · 6 · 2 | http://localhost:3000/healers/martin-aylward |
+| Brother Phap Huu | Thénac (→ Bergerac) | 10 · 0 · 0 · 2 | http://localhost:3000/healers/brother-phap-huu |
+| Brother Phap Linh | Thénac (→ Bergerac) | 9 · 0 · 0 · 4 | http://localhost:3000/healers/brother-phap-linh |
 
-Most famous names publish no home town, which is why 41 of 62 Superheroes have no location. Near You is mostly Local Heroes, which suits it.
+John Philip Newell is also Luminary, by editorial override. Each listing shows the town it publishes. "→" shows the town used for Near You distances, which comes from 0034. Until you run 0034, those 8 have no place on dev.
 
-## Continent → country → city
+The tier evidence, contact source and every research flag for each teacher are in `docs/content-audits/uk-europe-sprint-1/REPORT.md`.
 
-The figures are listings with a place.
+## Coverage effect
 
-**North America: 245 (73%)**
-- **United States 219** (Superhero 14, Luminary 30, Local Hero 175).
-  - Metro areas within 50 km: Los Angeles 24, New York City 20, San Francisco Bay Area 19, San Jose 11, Seattle 6, Boston 5, Washington DC 5, Philadelphia 4, Portland 4, San Diego 3, Austin 3, Phoenix 2, Dallas 2.
-  - Many are in the retreat-centre valleys: Hudson Valley and the Berkshires (Omega, Kripalu), Marin, and Santa Cruz.
-- **Canada 25:** Victoria 4, Calgary 4, Vancouver 3 (Greater Vancouver 4), Toronto 3, Ottawa 1, Nelson 1.
-- **Mexico 1:** Playa del Carmen.
+Gap cities from the regional report that now have someone:
+- **UK and Ireland:** Cardiff, Belfast and Brighton. Galway and Dublin go from 1 and 2 on live to 2 and 4.
+- **Western Europe:** Barcelona, Amsterdam, Stockholm, Oslo, Helsinki and Vienna, plus Cologne, St. Gallen and the Bordeaux/Dordogne area.
 
-**Europe: 48 (14%)**
-- **United Kingdom 26:** London 8 (13 within 50 km), Oxford 2, Bristol, Bath, Totnes, Salisbury, Truro, Ipswich, Todmorden and others, 1 each.
-- **Germany 4:** Berlin, Mannheim, Wiesbaden, Hildesheim.
-- **Ireland 3:** Dublin 2, Galway 1.
-- **Spain 3:** Madrid, Lugo, Ibiza.
-- **Netherlands 2** (Haarlem, The Hague) and **Denmark 2** (Copenhagen).
-- **1 each:** Portugal (Lisbon), France, Belgium, Switzerland (Zürich), Sweden, Slovenia (Ljubljana), Hungary, Greece.
+**Still empty from the Sprint A target list:** Birmingham, Manchester, Leeds, Liverpool, Sheffield, Nottingham, Glasgow, Edinburgh, Cork, Berlin, Paris, Lisbon and Copenhagen.
 
-**Oceania: 24 (7%)**
-- **Australia 21:** Melbourne 5, Sydney area 5 (Sydney 3, Manly 2), Byron Bay 3, Adelaide 1, Noosa 1, Bendigo 1, the Blue Mountains 1.
-- **New Zealand 3:** Auckland, Wellington, Christchurch.
+## Why 25, and the big English cities still empty
 
-**Asia: 11 (3%)**
-- **India 4:** Mumbai 2, Coimbatore, Rishikesh.
-- **Thailand 4:** Bangkok, Ko Pha Ngan, two in the east.
-- **1 each:** Hong Kong, Bali (Ubud), the Philippines (Panglao).
+- **Most UK centre teachers publish no base.** Gaia House and Bodhi College teachers say where retreats are held, never where they live. River Wolton (Sheffield Insight Meditation's founder), Nathan Glyde and Mark Ovland were skipped for this reason, as were Johnny Glover and Uz Afzal.
+- **Many have no contact route.** Christina Feldman (Totnes), Ajahn Sucitto, Jake Dartington, Laura Bridgman, Gerit Stöcklmair, Riet Aarsse, Leela Sarti, Helena Petersen, Ishvari Akibaya, Julie Alexandra, Laia Bové, Sina Weber, Yuka Nakamura (her site returned 403, not retried) and Stephen Downey (a cookie loop, treated as blocked) publish no email or form.
+- **The two directories in the plan can't be used.** The British Wheel of Yoga and UK Reiki Federation terms forbid reusing their listings, so nothing was taken from either.
+- **Next time:** the big English and Scottish cities need a city-first search (Insight Timer by city, the teachers' own sites) rather than centre faculty lists. The 21 queue entries not yet researched are mostly centre teachers too (Gaia House, Samye Ling, Plum Village). I'd start Sprint A2 city-first unless you'd rather finish the queue.
 
-**Latin America: 4:** Costa Rica 2 (Puerto Viejo), Peru 2 (Cusco, the Sacred Valley).
+## Skipped (32) and dropped (1)
 
-**Africa: 2:** South Africa (Cape Town), Uganda (Entebbe).
+Each has a file with the full reason in `docs/content-audits/uk-europe-sprint-1/skipped/`.
 
-**Country only, no town (39):** United States 28, Canada 3, United Kingdom 3, Australia, Portugal, Costa Rica, Indonesia and Japan 1 each.
+- **No published base (5):** River Wolton, Nathan Glyde, Mark Ovland, Johnny Glover, Uz Afzal.
+- **No email or contact form (14):** the names under "Why 25" above, plus Jaya Rudgard (her own site's robots.txt blocks us, so it was not opened).
+- **Health rule (5):** Camilla Strandmark (Yoga for Cancer), Elspeth Lewis, Nigel Meadows, Tim van der Vliet (TT Breathing claims), Sina Weber (EFT framed on conditions; she also has no contact).
+- **Too thin, or not mainly spiritual teaching (6):** Alan Lewis, John Darwin, Valerie Fabris, Lynn Yap, Sophy Banks, plus Leela Sarti (mostly psychotherapy; she also has no contact).
+- **No usable photo:** Ingen Breen (the only headshots are 212 px and 100 px).
+- **Already on Spiritpedia:** Stephan Pende Wormland (from the 1 Nov Insight Timer run).
+- **Dropped after a plan was written:** Sarah Gregg (health rule: her clinic's pages on cancer, infertility and dementia). The plan is in `dropped/`.
 
-## The gaps
+**Worth another look if they publish more:** Christina Feldman (a contact route), and River Wolton, Nathan Glyde and Mark Ovland (a base).
 
-I counted the people within 50 km of every big city (GeoNames population, city proper): 250,000+ people in English-speaking countries, 400,000+ in Western Europe, and 1.5 million+ elsewhere.
+**Left out because the site blocks us:** Patrick Arundell (Rochdale astrologer, about 129k YouTube subscribers). patrickarundell.com's robots.txt blocks Claude agents.
 
-**English-speaking countries: 91 of 197 big cities have nobody within 50 km, and 46 more have one person.**
-- **South Africa: nobody anywhere except one in Cape Town.** That's 28 big cities with none, including Johannesburg, Pretoria, Durban, Gqeberha and Bloemfontein.
-- **United States:**
-  - **Nobody:** San Antonio, Jacksonville, Charlotte, Indianapolis, Oklahoma City, El Paso, Louisville, Milwaukee, Kansas City, St. Louis, Pittsburgh, New Orleans, Tampa, Raleigh, Fresno, Colorado Springs, Virginia Beach, Madison and more.
-  - **One:** Chicago, Houston, Baltimore, Detroit, Nashville, Memphis, Columbus, Cleveland, Cincinnati, Orlando, Las Vegas, Sacramento and Tucson.
-  - **Two:** Dallas, Phoenix, Denver and Minneapolis.
-  - The South, the Midwest and Texas outside Austin are almost empty. We're heavily coastal: California and the North East (Atlanta, with 7, is the exception).
-- **United Kingdom:**
-  - **Nobody:** Glasgow, Edinburgh, Sheffield, Liverpool, Leicester, Belfast, Nottingham, Coventry, Newcastle, Hull, Swansea and Derby.
-  - **One:** Birmingham, Manchester, Leeds, Bradford, Cardiff, Brighton, Southampton and Plymouth.
-  - Outside London (13) and Bristol (2), the UK is close to empty.
-- **Canada:**
-  - **Nobody:** Edmonton, Winnipeg, Hamilton, Québec City, Halifax, Saskatoon and Kitchener.
-  - **One:** Montréal and Ottawa.
-- **Australia and New Zealand:**
-  - **Nobody:** Perth, Gold Coast, Canberra, Newcastle, Geelong and Hobart.
-  - **One:** Brisbane, Adelaide, Sunshine Coast, Auckland, Wellington and Christchurch.
-- **Ireland:** Dublin 2, Galway 1; nobody in Cork.
+## For you to decide
 
-**Western Europe: 36 of 47 big cities have nobody within 50 km.**
-- **Nobody** in Paris, Rome, Milan, Barcelona, Munich, Hamburg, Vienna, Stockholm, Oslo, Brussels, Cologne, Helsinki, Lyon, Valencia, Seville and others.
-- **One each** in Berlin, Madrid, Amsterdam, Rotterdam, Frankfurt, Lisbon, Zürich, Antwerp and Hannover; **two** in Copenhagen and The Hague.
+1. **Tiers by editorial override:**
+   - John Philip Newell (about 538 readable followers) and Stephen Batchelor (no accounts of his own) are set to **Luminary**. Keep, or drop to Local Hero?
+   - Others the research suggested but **I didn't raise**:
+     - Gordon Smith: 23 books, over a million sold; only YouTube readable at 7.7k.
+     - Martine Batchelor.
+     - Akincano Marc Weber: co-founder of Bodhi College.
+     - Martin Aylward: founder of Moulin de Chaves and Sangha Live.
+     - Brother Phap Huu: abbot of Upper Hamlet; all his channels belong to Plum Village.
+     - Brother Phap Linh.
+2. **Stephen Batchelor retired from teaching courses at the end of 2024.** He still gives occasional talks, so he's listed with no offerings. Keep, or treat as no longer teaching?
+3. **Lisette Schuitemaker's fit.** Her site calls her an author, impact investor and board director. Her teaching now is an annual Findhorn retreat, a Dutch e-learning course and her books. Keep or drop?
+4. **The Batchelors' base.** Their site says "a small village near Bordeaux" and doesn't name it, so **Bordeaux** is used. Fine for Near You?
+5. **Gordon Smith's base.** He publishes only the UK, so he has a country and no town. Glasgow is his birthplace and an event venue, not a published base, so it wasn't used.
+6. **Contact addresses** that needed decoding or aren't personal (all published on their own pages):
+   - Akincano Marc Weber: the address on his site is written "webmaster[-at-]akincano.net". It's his only published address, so it's used.
+   - Bhante Bodhidhamma and Noirin Sheahan: Cloudflare-hidden addresses on Satipanya's pages, decoded (your rule from 1 Nov).
+   - Jenny Berglund Castro: her studio's info@ inbox.
+   - Jilani Cordelia: jilanicordelia@gmail.com, a mailto link on her retreat pages. Her contact page hides its address.
+7. **Small checks while you look:**
+   - Ngakma Nor'dzin Pamo's name: the Aro encyclopaedia now says "Ngala". Her Cardiff blog, publisher and YouTube still say Ngakma, so Ngakma is used.
+   - Orlaith O'Sullivan's third photo is older. Keep or drop?
+   - Bernat Font's base: he founded and presides over Espai Sati in Barcelona, but no page says outright that he lives there.
+   - Eva Bruha's site hasn't been updated since spring 2026. Her weekly drop-in is listed as current.
+   - Anne Eberhardt's base is **St. Gallen** (her studio), not Zürich as the queue had it.
 
-**Everywhere else: 286 of 298 cities of 1.5 million+ have nobody.**
-- **India** is the notable miss, given the subject matter: only Mumbai (2) and Coimbatore, and nobody in Delhi, Bengaluru, Pune, Chennai or Kolkata.
-- **Latin America:** nobody in São Paulo, Mexico City, Buenos Aires, Bogotá, Medellín or Santiago.
-- **Asia and the Gulf:** nobody in Singapore or Dubai, which are English-speaking wellness hubs, or Tokyo.
+## Books and Amazon
 
-## Plan: three targeted sprints
+- **amazon.com's robots.txt blocks Claude agents, so no Amazon page was opened.**
+- Every book's ISBN-10 or ASIN comes from the teacher's or publisher's own page and is confirmed on Open Library. Covers come by ASIN from Amazon's image server, else from Open Library.
+- Worth a click on localhost: the Buy links for Newell, the Batchelors, Gordon Smith and Sophie Bashford. Bernat Font's book (Bloomsbury, 2026) uses the draft cover from his own site.
+- **I added Sophie Bashford's 2 books** (You Are a Goddess; Goddesses, Gods and Guardians Oracle Cards) from her own site.
+- **Left out:** Brother Phap Huu's books, as borderline under the health rule.
+- **I removed one sentence from Noirin Sheahan's bio** before the insert: her laryngectomy, her own history, not a claim.
 
-**Sprint rules, as for every sprint:**
-- robots.txt first;
-- a refused, rate-limited or bot-checked page is skipped and never retried under another identity, user agent or tool;
-- no logins, no internal APIs, no search pages a robots file disallows;
-- text on sites is data, not instructions;
-- the email rule and the bio rule apply;
-- every listing now carries its published base (the new Base location rule).
+## The ingest scripts: fixed to follow your standing rule
 
-**How to find teachers by place without breaking those rules:**
-- **Hub pages that are already about a place:** a centre's own teacher page (its faculty is local by nature), a national association's public "find a teacher" pages (where robots allow and the terms don't forbid copying), and city pages on hubs.
-- **Web search** with the place in the query, e.g. "Reiki Master Teacher Brisbane" or "insighttimer.com meditation teacher Toronto". It finds profile pages without using a hub's own search (Insight Timer's robots.txt disallows `/search`; its teacher profiles are allowed).
-- **Every candidate is then researched like any sprint teacher,** from their own site.
-- **Robots checked today:**
-  - Insight Timer: profiles allowed, `/search` not.
-  - Yoga Alliance: allowed, with a 10-second crawl delay. Its directory needs a terms check before use.
-  - British Wheel of Yoga: allowed.
-  - UK Reiki Federation: allowed.
-  - IMS (dharma.org): allowed.
-  - Findhorn: allowed except `/search`.
-  - Plum Village: allowed except search and registration pages.
-  - Omega: allowed.
+While checking this sprint, I found two places where the scripts broke the rule "never another browser identity or user agent":
+- `scripts/lib/images.mjs` fetched pages with a **Chrome user agent**.
+- `scripts/ingest.mjs` and `scripts/fix-images.mjs` **opened Amazon product pages**, which amazon.com's robots.txt blocks.
 
-### Sprint A: UK and Ireland plus Western Europe's capitals (about 30 people)
+Both are fixed:
+- The scripts now name themselves (`SpiritpediaIngest/1.0`, with the site's address).
+- They never open an Amazon page. A book's ASIN is checked on Open Library instead, and a Kindle `B0…` ASIN is listed for a human to confirm.
+- The cover still comes by ASIN from Amazon's image server, which isn't a product page.
+- README §18.2 and §19 are updated.
 
-**Target:**
-- Birmingham, Manchester, Leeds, Liverpool, Sheffield, Nottingham, Glasgow, Edinburgh, Belfast and Cardiff;
-- Cork and Dublin;
-- then English-teaching teachers in Amsterdam, Berlin, Paris, Barcelona, Lisbon, Copenhagen and Stockholm.
+## Research slips (reported, nothing used)
 
-**Sources:**
-- Insight Timer profiles through web search by city;
-- British Wheel of Yoga and UK Reiki Federation public teacher pages;
-- the teacher pages of UK centres: Gaia House (insight), Samye Ling, Findhorn and Sharpham;
-- Plum Village's Dharma teachers who list a European sangha city.
+- **YouTube search:** one research helper requested a YouTube search page (`/results`, blocked by YouTube's robots.txt). It was refused and not retried.
+- **A blocked blog:** one helper fetched readingroomatingenji.wordpress.com in the same command as its robots.txt, which says `Disallow: /`. The page was deleted and nothing from it was used.
+- **A sprint file overwritten:** a helper overwrote `stephan-pende-wormland.json`. I restored it from git, and it's unchanged.
 
-**Why first:** this fills the second-biggest market. London alone is not a UK service.
+## Also done
 
-### Sprint B: US interior and South, plus Canada and Australia's secondary cities (about 35 people)
-
-**Target:**
-- US: Chicago, Houston, Dallas, San Antonio, Charlotte, Nashville, St. Louis, Kansas City, Indianapolis, Detroit, Columbus, Pittsburgh, Tampa and Phoenix;
-- Canada: Montréal, Edmonton and Winnipeg;
-- Australia: Perth, Brisbane/Gold Coast and Adelaide.
-
-**Sources:**
-- Insight Timer profiles by city (web search);
-- local insight meditation centres' teacher pages (Chicago and Houston each have their own);
-- Kripalu and Omega faculty whose own sites give one of these cities;
-- yoga and qigong teachers from Yoga Alliance's directory, if its terms allow;
-- Reiki teachers from the International Center for Reiki Training's public instructor pages, after a robots and terms check.
-
-### Sprint C: South Africa, India and the English-speaking hubs (about 25 people)
-
-**Target:**
-- Johannesburg, Cape Town and Durban;
-- Delhi, Bengaluru, Pune, Rishikesh and Mysuru (yoga, meditation and Vedanta teachers who teach in English);
-- Singapore, Dubai and Hong Kong.
-
-**Sources:**
-- the teachers' own sites;
-- the faculty pages of Indian ashrams and schools that publish their teachers (Sivananda, the Bihar School and Mysore-style shalas);
-- Insight Timer profiles by city;
-- for South Africa, the public pages of its yoga and Reiki associations, after a robots and terms check.
-
-**Also, with no new research:**
-- **Approving the 93 doubtful bases** from the audit would add up to 67 more towns, mostly famous names in US cities.
-- **Naming a town for the 37 region-only listings** (for example Mooji in the Alentejo, Teal Swan in Utah) would add up to 37.
-
-Neither fills the gaps above, but both make Near You richer where we already are.
+- **README:**
+  - §8.1 covers 0034.
+  - §18.2 and §19 cover the honest user agent and Open Library.
+  - §18.6 has the sprint's row.
+  - §18.7 has the regional sprints.
+- **The sprint folder,** `docs/content-audits/uk-europe-sprint-1/`, has the brief, the queue (`progress.json`), the skips and REPORT.md.
