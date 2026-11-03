@@ -317,6 +317,11 @@ Instagram / Facebook / X counts usually can't be read without logging in. Don't
 try to get round that (no fake user agents, no proxies, no internal APIs); use
 what's public and flag the rest.
 
+**Insight Timer profiles that come back as an empty script page with curl
+are skipped**: don't try WebFetch, a mirror or any other route to the same
+page (owner's rule, added after Sprint B). Use what the teacher's own site
+says instead.
+
 **No fake user agents anywhere**, for any site. Use one honest fetch (curl's
 default user agent, or WebFetch). Never search YouTube (`/results` is
 blocked by its robots.txt); open a channel or video page you found elsewhere.

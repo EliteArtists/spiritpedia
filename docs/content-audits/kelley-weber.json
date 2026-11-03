@@ -1,0 +1,161 @@
+{
+  "healer": {
+    "healer_slug": "kelley-weber",
+    "location_source": "https://www.aspiral.space/",
+    "create": {
+      "name": "Kelley Weber",
+      "bio": "Kelley Weber is a spiritual director and contemplative teacher in St. Louis, Missouri, who works under the name A Spiral Space. She trained as an actor and director, holds an MFA, and was among the founders of Mustard Seed Theatre in the city, a company devoted to plays about faith and ethics; she has also taught for more than twenty-five years, including mindfulness in schools through Mindful Schools. She is certified in spiritual direction by the Aquinas Institute of Theology, completed the Living School at the Center for Action and Contemplation, where her teachers included Richard Rohr, James Finley and Cynthia Bourgeault, and is training in the Somatic Enneagram with Marion Gilbert.\n\nHer own faith is grounded in the teachings of Jesus, but she writes mainly for people who feel at home in no church and still want a living inner life, and she does not try to steer anyone towards a belief. She meets directees monthly for unhurried listening and silence, offers Enneagram coaching that treats the types as a doorway to awareness in the body, and leads small contemplative day retreats near St. Louis. A free six-part course on her site, Where Has God Been All My Life?, invites readers to write a spiritual autobiography, and her short prayers and talks are on Insight Timer.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local",
+      "city": "St. Louis, Missouri",
+      "country": "United States",
+      "subjects": [
+        "spirituality",
+        "mysticism",
+        "mindfulness"
+      ],
+      "website_url": "https://www.aspiral.space/",
+      "booking_url": "https://www.aspiral.space/spiritual-direction.html",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "aspiralspace@gmail.com",
+      "image_urls": [
+        "https://www.aspiral.space/uploads/2/6/5/4/26540246/kelley-final-9-of-11-1_orig.jpg",
+        "https://www.aspiral.space/uploads/2/6/5/4/26540246/published/kelley-final-5-of-11.jpg"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "insight-timer",
+      "role": "instructor"
+    }
+  ],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Spiritual Direction",
+      "url": "https://www.aspiral.space/spiritual-direction.html",
+      "description": "Monthly one-hour meetings in which she listens closely, leaves room for silence and asks open questions, so that each person can find their own path whatever their tradition, or none. Conversations are confidential and she does not try to persuade anyone of anything.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "spirituality",
+        "mysticism"
+      ],
+      "image": "https://www.aspiral.space/uploads/2/6/5/4/26540246/kelley-final-8-of-11_orig.jpg"
+    },
+    {
+      "title": "Enneagram Coaching",
+      "url": "https://www.aspiral.space/enneagram-coaching.html",
+      "description": "One-to-one coaching that uses the nine Enneagram types to notice habitual patterns of avoidance and reaction, with an emphasis on awareness in the body. It is meant to sit alongside a contemplative practice, religious or secular; a free first consultation is offered.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "spirituality",
+        "shadow-work"
+      ],
+      "image": "https://www.aspiral.space/uploads/2/6/5/4/26540246/editor/alabama-chanin-enneagram-based-self-care-1.jpg?1615056494"
+    },
+    {
+      "title": "The Somatic Enneagram (Day Retreat)",
+      "url": "https://brilliant-elf-a73f22.netlify.app/",
+      "description": "A Saturday day retreat, co-led with Lynda Rands at her lakeside home in Glen Carbon, Illinois, about half an hour from St. Louis. The day places Enneagram work inside mindfulness practice, learning to sense one's type's patterns in the body and steady oneself from within. Runs 10am to 3pm.",
+      "price": "$50 USD",
+      "product_type": "retreat",
+      "start_date": "2026-11-14",
+      "end_date": "2026-11-14",
+      "subjects": [
+        "mindfulness",
+        "spirituality"
+      ],
+      "image": "https://www.aspiral.space/uploads/2/6/5/4/26540246/kelley-final-9-of-11-1_orig.jpg"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Where Has God Been All My Life? A Spiritual Autobiography Course",
+      "url": "https://www.aspiral.space/wherehasgodbeenallmylife.html",
+      "description": "Six free lessons on her site, each with a short reflection and writing prompts, moving from presence and early images of God to the beliefs that limit us and a sense of calling. It is designed to help readers trace where the sacred has already appeared in their lives.",
+      "featured": true,
+      "resource_type": "mini_course",
+      "subjects": [
+        "spirituality",
+        "mysticism"
+      ],
+      "image": "https://www.aspiral.space/uploads/2/6/5/4/26540246/kelley-final-9-of-11-1_orig.jpg"
+    },
+    {
+      "title": "Introduction to Mindfulness: Attention, Awareness and the Paradigm of the Seeds",
+      "url": "https://www.aspiral.space/mindfulness.html",
+      "description": "A plain-spoken written introduction to mindfulness that starts from everyday experiences of a wandering, looping mind and explains attention and awareness through the image of seeds we choose to water.",
+      "featured": false,
+      "resource_type": "practice",
+      "subjects": [
+        "mindfulness"
+      ],
+      "image": "https://www.aspiral.space/uploads/2/6/5/4/26540246/published/prayerspace.jpg?1607455003"
+    },
+    {
+      "title": "A Practice In Contentment: Enneagram",
+      "url": "https://insighttimer.com/kelleyweber_spiralspace/guided-meditations/a-practice-in-contentment-enneagram",
+      "description": "An eleven-minute guided practice on contentment framed through the Enneagram. Free on Insight Timer.",
+      "featured": false,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "image": "https://libraryitems.insighttimer.com/h8z8n1g9s0j7g5x9w6n3j5w0b3m9u4s3p8g8k1s9/pictures/tiny_square_medium.jpeg"
+    },
+    {
+      "title": "The Generosity Of Silence & Listening",
+      "url": "https://insighttimer.com/kelleyweber_spiralspace/guided-meditations/the-generosity-of-silence-and-listening",
+      "description": "A short guided reflection on silence and on listening as a gift to others. Free on Insight Timer.",
+      "featured": false,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation",
+        "mysticism"
+      ],
+      "image": "https://libraryitems.insighttimer.com/c8d1g8s8h0q4e8p4g4s4l1u1r8d6d4e9g9z0v1g8/pictures/tiny_square_medium.jpeg"
+    }
+  ],
+  "sprint": {
+    "sprint": "regional-b-1",
+    "hub": "insight-timer",
+    "rank": 207,
+    "hub_url": "https://insighttimer.com/kelleyweber_spiralspace",
+    "insight_timer_url": "https://insighttimer.com/kelleyweber_spiralspace",
+    "tier_evidence": "Insight Timer 590 followers (profile via WebFetch, 3 Nov 2026); Instagram @a_spiral_space not read (login/robots); Substack not opened (never fetched); no YouTube channel found → ~590 total → local_hero",
+    "email": "yes",
+    "email_source": "https://www.aspiral.space/",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 9 source(s)",
+    "flags": [
+      "Email aspiralspace@gmail.com is Cloudflare-obfuscated on her site's mail link (decoded) and also appears as a plain mailto on her two retreat pages (brilliant-elf-a73f22.netlify.app and storied-buttercream-8a401d.netlify.app); it is her business Gmail for A Spiral Space.",
+      "Her website aspiralspace.com (from Insight Timer) redirects to www.aspiral.space; the retreat pages are on netlify.app subdomains linked from her own site menu.",
+      "Base: site title 'Kelley Weber, St. Louis spiritual direction and contemplative education' and Insight Timer 'St. Louis, MO'. Availability set to local: her site doesn't say sessions are offered online.",
+      "Day retreat is co-led with Lynda Rands at Lynda's home in Glen Carbon, Illinois; the page gives month and day but no year (read as 2026: the series runs 'this fall', Sept-Nov, and 14 Nov 2026 is a Saturday).",
+      "Photos: two portraits from the same photo shoot (file names kelley-final-…) on her home/about pages; identity taken from her own site, no second source.",
+      "Christian contemplative (Living School / Richard Rohr lineage) rather than a New Age or Buddhist teacher; subjects chosen as spirituality, mysticism, mindfulness."
+    ],
+    "left_out": [
+      "Kindred Forest at the Threshold: Somatic Enneagram retreat, 30 Oct-1 Nov 2026 (started before 6 Nov).",
+      "Day retreats on 19 Sept and 17 Oct 2026: dates passed.",
+      "Insight Timer track 'Anxiety: A Lesson In Lectio Divina': condition-named title.",
+      "Substack newsletter (aspiralspace.substack.com): substack.com is never fetched.",
+      "Spiritual direction and coaching fees: not published (Contact for pricing)."
+    ]
+  },
+  "images_final": true
+}

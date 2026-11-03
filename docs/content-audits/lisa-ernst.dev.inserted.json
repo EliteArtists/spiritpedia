@@ -1,0 +1,52 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 721,
+    "healer_slug": "lisa-ernst"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "9db099b0-6a84-4cda-841a-9dc3b2feab67",
+      "slug": "the-seven-factors-of-awakening-with-lisa-ernst-and-trudy-goodman",
+      "title": "The Seven Factors of Awakening with Lisa Ernst and Trudy Goodman"
+    },
+    {
+      "table": "courses",
+      "id": "489214e5-c205-4f6f-aab1-0d97bfbfba42",
+      "slug": "intimate-with-life-bethany-hills-december-retreat",
+      "title": "Intimate with Life: Bethany Hills December Retreat"
+    },
+    {
+      "table": "courses",
+      "id": "1c344098-e5fc-4dd7-8288-218e56ccee6b",
+      "slug": "monday-night-meditation-at-one-dharma-nashville",
+      "title": "Monday Night Meditation at One Dharma Nashville"
+    },
+    {
+      "table": "courses",
+      "id": "ecda34ce-2bb8-432c-b0d2-2b111d313664",
+      "slug": "one-to-one-meditation-guidance-and-mentoring",
+      "title": "One-to-One Meditation Guidance and Mentoring"
+    },
+    {
+      "table": "free_resources",
+      "id": "515bb201-b84d-4552-a488-4f4e8b976c21",
+      "slug": "how-to-love-yourself",
+      "title": "How to Love Yourself"
+    },
+    {
+      "table": "free_resources",
+      "id": "ad58b015-98f5-40c6-8af4-441b460a94e8",
+      "slug": "your-deepest-questions",
+      "title": "Your Deepest Questions"
+    },
+    {
+      "table": "free_resources",
+      "id": "295f96f2-1be1-4e57-ab60-38e73692fb61",
+      "slug": "a-selection-of-dharma-talks-and-guided-meditations",
+      "title": "A Selection of Dharma Talks and Guided Meditations"
+    }
+  ],
+  "at": "2026-11-03T19:51:16.865Z"
+}

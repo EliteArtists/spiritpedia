@@ -1,0 +1,155 @@
+{
+  "healer": {
+    "healer_slug": "dawn-mauricio",
+    "location_source": "https://dawnmauricio.com/about",
+    "create": {
+      "name": "Dawn Mauricio",
+      "bio": "Dawn Mauricio is an insight meditation teacher in Montréal who draws on the Theravada Buddhist tradition, with a strong thread of body-based practice running through her work. A second-generation Filipina-Canadian, she began teaching yoga and mindfulness in 2005 and spent over a decade doing so full time before turning mainly to Dhamma teaching. Her training came through True North Insight's first teacher development group and several programmes at Spirit Rock in California, including its four-year retreat teacher training, which she completed in 2021. She has since added training as a Somatic Experiencing practitioner.\n\nMuch of her teaching now happens on silent residential retreats in California, alongside online series and occasional in-person classes in Montréal. Since 2020 she has run the Everyday Dhamma Community, an online membership with daily guided sittings, weekly talks, monthly gatherings and a mentoring tier for people who teach. Her style is warm and lightly humorous, mixing traditional teachings with stories from her own life and a clear interest in belonging and collective freedom. She wrote Mindfulness Meditation for Beginners (2020), a book of fifty short practices, and her guided meditations can be found on Insight Timer and in the Happier app. She teaches in English.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local_online",
+      "city": "Montréal, Quebec",
+      "country": "Canada",
+      "subjects": [
+        "meditation",
+        "mindfulness",
+        "ancient-wisdom"
+      ],
+      "website_url": "https://dawnmauricio.com/",
+      "booking_url": "https://dawnmauricio.com/events",
+      "youtube_url": null,
+      "instagram_url": "https://www.instagram.com/dawnmauricio/",
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": null,
+      "image_urls": [
+        "https://images.squarespace-cdn.com/content/v1/5e3dd2e2d738f201297b48fb/ddb9e4c3-dc8e-439d-8906-08a5ed22d75f/20231020+dawn+mauricio+fuji+257+2.jpg?format=1000w",
+        "https://images.squarespace-cdn.com/content/v1/5e3dd2e2d738f201297b48fb/d32926bc-e397-49b9-b8dd-004905e676b0/Dawn+Mauricio+Meditation+photo+by+Daniel+Garcia.jpg?format=1000w"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "insight-timer",
+      "role": "instructor"
+    }
+  ],
+  "videos": [],
+  "books": [
+    {
+      "title": "Mindfulness Meditation for Beginners: 50 Meditations to Practice Awareness, Acceptance, and Peace",
+      "slug": "mindfulness-meditation-for-beginners-dawn-mauricio",
+      "author": "Dawn Mauricio",
+      "asin": "1646116674",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "Her introductory book, published in 2020, explains what mindfulness is and then offers fifty brief practices of five to fifteen minutes each. It is written for people starting out who want to build a steady daily habit.",
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1646116674.01._SCLZZZZZZZ_.jpg"
+    }
+  ],
+  "courses": [
+    {
+      "title": "Everyday Dhamma Community",
+      "url": "https://dawnmauricio.com/membership",
+      "description": "An online membership she has led since 2020, with daily guided sittings and weekly Dhamma talks, a monthly meetup and personal check-ins. Higher tiers add monthly workshops and one-to-one mentoring for those who teach meditation.",
+      "price": "From $20 CAD/month or $216 CAD/year",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "mindfulness",
+        "ancient-wisdom"
+      ],
+      "image": "http://static1.squarespace.com/static/5e3dd2e2d738f201297b48fb/t/6184516dd5ec7b05fefcc3d8/1637961574052/podcast+cover.png?format=1500w"
+    },
+    {
+      "title": "Retreats, Classes and Online Series with Dawn Mauricio",
+      "url": "https://dawnmauricio.com/events",
+      "description": "Her calendar of teaching: week-long silent insight retreats in California with other senior teachers, multi-week online courses, and introductory classes in Montréal. Prices vary by event and host.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "http://static1.squarespace.com/static/5e3dd2e2d738f201297b48fb/t/6184529c4799d71bb3ff3cd6/1672878538338/podcast+cover.png?format=1500w"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Mindfulness Of Breath",
+      "url": "https://insighttimer.com/dawnmauricio/guided-meditations/mindfulness-of-breath-11",
+      "description": "Her most popular guided track on Insight Timer: a simple sitting that rests attention on the breath. Free to play in the app or online.",
+      "featured": true,
+      "resource_type": "meditation",
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "image": "https://libraryitems.insighttimer.com/s5w7v2z6z5b1h1z4k2y0z7p0v9f4q5r3v9z3e1q4/pictures/tiny_square_medium.jpeg"
+    },
+    {
+      "title": "Setting An Intention",
+      "url": "https://insighttimer.com/dawnmauricio/guided-meditations/setting-an-intention",
+      "description": "A short guided practice for choosing what you want to bring into the day or a sitting. Free on Insight Timer.",
+      "featured": false,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://libraryitems.insighttimer.com/t5u8m2t5p7y9a0x8z4k0c7z2j7b3l5m4n5l5k7x6/pictures/tiny_square_medium.jpeg"
+    },
+    {
+      "title": "Dawn Mauricio's Dharma Talks on Dharma Seed",
+      "url": "https://dharmaseed.org/teacher/1018/",
+      "description": "An archive of more than fifty of her recorded talks and practice instructions from retreats and daylongs, on themes such as kindness, compassion, energy and the Four Noble Truths. Free to stream.",
+      "featured": false,
+      "resource_type": "practice",
+      "subjects": [
+        "meditation",
+        "ancient-wisdom"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/5e3dd2e2d738f201297b48fb/ddb9e4c3-dc8e-439d-8906-08a5ed22d75f/20231020+dawn+mauricio+fuji+257+2.jpg?format=1000w"
+    }
+  ],
+  "sprint": {
+    "sprint": "regional-b-1",
+    "hub": "insight-timer",
+    "rank": 601,
+    "hub_url": "https://insighttimer.com/dawnmauricio",
+    "insight_timer_url": "https://insighttimer.com/dawnmauricio",
+    "tier_evidence": "Insight Timer 4.7k followers (profile, 3 Nov 2026); Instagram @dawnmauricio not read (instagram.com not fetched); no YouTube channel of her own found; Substack not fetched (blocked domain) → ~4.7k readable → local_hero",
+    "email": "contact form",
+    "email_source": null,
+    "contact_form_url": "https://dawnmauricio.com/contact",
+    "bio_check": "OK: no 8-word runs against 11 source(s)",
+    "flags": [
+      "Instagram count could not be read (instagram.com is never fetched); her site footer mentions about 6,000 newsletter readers, so the total is very unlikely to reach 100k.",
+      "An address d@dawnmauricio.com appears only in the site's hidden schema.org data, not on the page, so it is not used; the contact form is given instead.",
+      "Most of her residential retreats are at Spirit Rock (spiritrock.org not fetched); those programmes are not listed as separate offerings, only via her own events page.",
+      "She is also a Somatic Experiencing practitioner offering one-to-one sessions; that therapy work is left out, as the listing is for her meditation teaching.",
+      "A Kripalu presenter page for her exists in search results but returns 404 (3 Nov 2026), so Kripalu is not added to teaches_at.",
+      "Book ISBN 1646116674 is from the ISBN-13 9781646116676 linked on her own book page; confirmed on Open Library: https://openlibrary.org/books/OL29831722M (title and author Dawn Mauricio match).",
+      "Base published as Tiohtià:ke / Montréal on her about page and Insight Timer profile (Montreal, QC)."
+    ],
+    "left_out": [
+      "Somatic Experiencing one-to-one sessions: therapy framed around healing specific issues.",
+      "Rituals for Renewal (27 Dec 2026 to 2 Jan 2027): its sign-up page shows no description or price, so not verifiable.",
+      "Introduction to Meditation at Liv Yoga (from 22 Oct 2026) and Meeting the Moment (8 Oct 2026): already started or past.",
+      "Spirit Rock retreats in 2027: spiritrock.org is never fetched.",
+      "Free downloads (10 Days of Mindfulness, Heart Practices bundle) need an email sign-up; 'Sink Into Sleep' is framed around insomnia.",
+      "Videos: no YouTube channel of hers found and YouTube search not used."
+    ]
+  },
+  "images_final": true
+}

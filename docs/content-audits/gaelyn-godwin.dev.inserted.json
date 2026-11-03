@@ -1,0 +1,52 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 719,
+    "healer_slug": "gaelyn-godwin"
+  },
+  "rows": [
+    {
+      "table": "videos",
+      "id": 6783,
+      "slug": "great-practice",
+      "title": "Great Practice"
+    },
+    {
+      "table": "videos",
+      "id": 6784,
+      "slug": "the-eye",
+      "title": "The Eye"
+    },
+    {
+      "table": "videos",
+      "id": 6785,
+      "slug": "empty-space",
+      "title": "Empty Space"
+    },
+    {
+      "table": "videos",
+      "id": 6786,
+      "slug": "washing-and-purifying",
+      "title": "Washing and Purifying"
+    },
+    {
+      "table": "videos",
+      "id": 6787,
+      "slug": "washing-the-face",
+      "title": "Washing the Face"
+    },
+    {
+      "table": "courses",
+      "id": "a49d1935-9cbe-40ef-adae-d48cc06014b6",
+      "slug": "rohatsu-sesshin-2026",
+      "title": "Rohatsu Sesshin 2026"
+    },
+    {
+      "table": "free_resources",
+      "id": "eebd5a85-d4aa-4e91-bf57-bc4a77dbe35e",
+      "slug": "karma-of-the-three-times-recorded-dharma-talk",
+      "title": "Karma of the Three Times (recorded dharma talk)"
+    }
+  ],
+  "at": "2026-11-03T19:51:05.236Z"
+}

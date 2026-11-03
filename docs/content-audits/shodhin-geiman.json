@@ -1,0 +1,122 @@
+{
+  "healer": {
+    "healer_slug": "shodhin-geiman",
+    "location_source": "https://www.chicagozen.org/shodhin-geiman-sensei-abbot",
+    "create": {
+      "name": "Shodhin Geiman",
+      "bio": "Shodhin Geiman is a Zen priest and the abbot of the Chicago Zen Center in Evanston, on Chicago's northern edge, a community founded in 1974 in the line of Philip Kapleau, author of The Three Pillars of Zen, and the Harada-Yasutani school that draws on both Soto and Rinzai practice. He began sitting at the centre in 1996 while living in Valparaiso, Indiana, gradually moved nearer, and after his ordination as a priest in 2010 took up residence there with his partner, Michael. Yusan Graham, the previous abbot, authorised him to teach in 2021, and he succeeded him as abbot in 2023.\n\nHis teaching follows the centre's demanding rhythm: early-morning and evening rounds of zazen through the week, a Sunday morning sitting with chanting and a formal talk (teisho), private interviews (dokusan), also over Zoom for people who live farther away, and five residential sesshin a year of four to six days. He writes, too, on where Buddhist practice meets the Christian contemplative tradition. His books are Alone in a World of Wounds (2022), a Buddhist reading of the suffering of living beings, and Obstacles to Stillness (2023), which sets the desert monk Evagrius beside the Buddha on the thoughts and hindrances that unsettle meditation; a third, on the teacher's part in awakening, is under way.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local_online",
+      "city": "Evanston, Illinois",
+      "country": "United States",
+      "subjects": [
+        "meditation",
+        "spiritual-awakening",
+        "mysticism"
+      ],
+      "website_url": "https://www.chicagozen.org/",
+      "booking_url": "https://www.chicagozen.org/sesshin",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "contact@chicagozen.org",
+      "image_urls": [
+        "https://static.wixstatic.com/media/aada67_7ca3009cf51a4756a7bb4b6d1033accb~mv2.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [
+    {
+      "title": "Alone in a World of Wounds: A Dharmic Response to the Ills of Sentient Beings",
+      "slug": "alone-in-a-world-of-wounds",
+      "author": "Shodhin K. Geiman",
+      "asin": "1666714968",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "cover": "https://m.media-amazon.com/images/P/1666714968.01._SCLZZZZZZZ_.jpg",
+      "description": "His first book, published by Wipf and Stock in 2022, looks at the suffering that runs through the lives of all beings and asks how a Zen practitioner can meet it with clear seeing and compassion rather than despair.",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ]
+    },
+    {
+      "title": "Obstacles to Stillness: Thoughts, Hindrances, and Self-Surrender in Evagrius and the Buddha",
+      "slug": "obstacles-to-stillness",
+      "author": "Shodhin K. Geiman",
+      "asin": "1506481264",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "cover": "https://m.media-amazon.com/images/P/1506481264.01._SCLZZZZZZZ_.jpg",
+      "description": "A comparative study, published by Fortress Press in 2023, that reads the early Christian desert monk Evagrius of Pontus alongside the Buddha's teaching on the hindrances, looking at how each tradition understands the thoughts that pull a meditator away from stillness.",
+      "subjects": [
+        "meditation",
+        "mysticism"
+      ]
+    }
+  ],
+  "courses": [
+    {
+      "title": "Rohatsu Sesshin",
+      "url": "https://www.chicagozen.org/sesshin",
+      "description": "A four-day residential Zen retreat at the Evanston centre marking the Buddha's awakening, with around ten hours a day of zazen, daily teisho, dokusan three times a day, shared cooking and cleaning, and no online option. Part-time or short-time places are possible; applications close on 25 November. The centre holds four more sesshin in 2027.",
+      "price": "Contact for pricing",
+      "product_type": "retreat",
+      "start_date": "2026-12-09",
+      "end_date": "2026-12-13",
+      "subjects": [
+        "meditation",
+        "spiritual-awakening"
+      ],
+      "image": "https://static.wixstatic.com/media/aada67_7ca3009cf51a4756a7bb4b6d1033accb~mv2.jpg"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "A Typical Week at the Chicago Zen Center",
+      "url": "https://www.chicagozen.org/a-typical-week",
+      "description": "The centre's regular sittings, open to anyone once they have come to an introductory evening or arrived early for orientation: early-morning and evening rounds of zazen with dokusan, a Sunday morning sitting with chanting and teisho, and Zoom dokusan on Wednesday evenings for students who live out of town.",
+      "featured": true,
+      "resource_type": "practice",
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://static.wixstatic.com/media/aada67_f280f4170912478683f22b1c0922d8da~mv2.jpeg/v1/crop/x_0,y_624,w_4284,h_4463/fill/w_358,h_373,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/MppBH.jpeg"
+    }
+  ],
+  "sprint": {
+    "sprint": "regional-b-1",
+    "hub": "none",
+    "rank": 106,
+    "hub_url": "https://www.chicagozen.org/shodhin-geiman-sensei-abbot",
+    "tier_evidence": "No YouTube, Instagram, X or TikTok of his own found; chicagozen.org links no social accounts (3 Nov 2026) → 0 readable → local_hero",
+    "email": "yes",
+    "email_source": "https://www.chicagozen.org/",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 6 source(s)",
+    "flags": [
+      "Queue entry 106 was found as Sevan Ross (the centre's first resident teacher); the centre's own pages show Ross stepped down long ago and Shodhin Geiman is the current abbot, so the listing is for Geiman.",
+      "Book ISBN-10s are taken from the links on his abbot page and confirmed on Open Library: https://openlibrary.org/books/OL39194474M (Alone in a World of Wounds, Wipf & Stock, 2022) and https://openlibrary.org/books/OL46697642M (Obstacles to Stillness, 1517 Media / Fortress, 2023). Open Library has no cover for either, so cover is null.",
+      "Open Library gives the second book's subtitle as 'Thoughts, Hindrances, and Contemplations in Evagrius and the Buddha'; his own page says 'Self-Surrender'. I used his page's wording.",
+      "The email contact@chicagozen.org is the centre's shared inbox.",
+      "The sesshin fee is not published; the page asks applicants to apply and contact the head of zendo.",
+      "The weekly sittings are listed as a free resource because no fee is stated and anyone may attend after a first visit; a human may want to confirm there is no charge.",
+      "Subject 'mysticism' reflects his writing on Christian contemplative tradition (Evagrius); a human may prefer 'ancient-wisdom'."
+    ],
+    "left_out": [
+      "Intro to Practice nights (first Tuesday of the month): led by one of the centre's ordained members, not necessarily him.",
+      "Temple Night / Jukai (20 Nov) and Ceremony of Gratitude (22 Nov): community ceremonies.",
+      "Sesshin in Feb, May, July and Oct 2027: they share the same page as the Rohatsu sesshin, so they are mentioned in its description rather than listed separately.",
+      "Videos: none of his found (YouTube search not used).",
+      "Midwifing the Deathless: not yet published."
+    ]
+  },
+  "images_final": true
+}

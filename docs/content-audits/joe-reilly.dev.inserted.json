@@ -1,0 +1,39 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 711,
+    "healer_slug": "joe-reilly"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "9983f51d-b9ae-494c-865f-f52afad07987",
+      "slug": "dharma-teaching-and-mentoring",
+      "title": "Dharma Teaching and Mentoring"
+    },
+    {
+      "table": "free_resources",
+      "id": "78a74e27-c729-4d2e-90f7-c18bf052cd14",
+      "slug": "mother-earth-guided-relaxation",
+      "title": "Mother Earth Guided Relaxation"
+    },
+    {
+      "table": "free_resources",
+      "id": "8139e753-0fb4-4547-b95b-846fcea04a01",
+      "slug": "building-beloved-community-sangha",
+      "title": "Building Beloved Community Sangha"
+    },
+    {
+      "table": "free_resources",
+      "id": "252bf265-d29e-4710-a8e1-85dafad62f60",
+      "slug": "dharma-songs-for-connection-with-joe-reilly",
+      "title": "Dharma Songs for Connection with Joe Reilly"
+    },
+    {
+      "table": "hub_teachers",
+      "id": "9474b2de-d376-4f26-997b-2821a29f0bd5",
+      "title": "joe-reilly teaches at Insight Timer"
+    }
+  ],
+  "at": "2026-11-03T19:50:18.936Z"
+}

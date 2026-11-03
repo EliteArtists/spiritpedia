@@ -1,0 +1,34 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 728,
+    "healer_slug": "cindy-novelo"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "aae7bea8-99e4-4445-8591-973985f1d550",
+      "slug": "weekly-yoga-classes",
+      "title": "Weekly Yoga Classes"
+    },
+    {
+      "table": "courses",
+      "id": "f1340567-0f0b-48cf-9f22-bb0e2aaf4748",
+      "slug": "private-sessions-5",
+      "title": "Private Sessions"
+    },
+    {
+      "table": "courses",
+      "id": "b829e83d-4ecd-4164-b124-b81c05d90e44",
+      "slug": "reset-restore-yoga",
+      "title": "Reset & Restore Yoga"
+    },
+    {
+      "table": "free_resources",
+      "id": "0313bd17-6e4b-4e62-aacf-4d033b802e92",
+      "slug": "womens-mindfulness-meditation-circle-sangha",
+      "title": "Women's Mindfulness Meditation Circle (sangha)"
+    }
+  ],
+  "at": "2026-11-03T19:52:11.869Z"
+}

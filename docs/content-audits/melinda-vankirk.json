@@ -1,0 +1,204 @@
+{
+  "healer": {
+    "healer_slug": "melinda-vankirk",
+    "location_source": "https://litlotus.me/about",
+    "create": {
+      "name": "Melinda VanKirk",
+      "bio": "Melinda VanKirk is a yoga teacher, Reiki master-teacher and Human Design guide in Hilliard, Ohio, on the north-western edge of Columbus, where she runs LIT Lotus Wellbeing from a small studio space. She grew up in Worthington and spent years in a corporate career; she has written that exhaustion led her to yoga, and that after qualifying as a teacher in 2018 she found the physical practice alone was not enough. Ayurveda, Reiki in the Usui Shiki Ryoho tradition and daily meditation followed, then Human Design, and these together now shape how she lives and teaches.\n\nHer one-to-one mentoring weaves yoga, meditation, Ayurvedic routines, energy work, channelling and a client's Human Design chart into steady daily habits, with the aim of a more balanced, unhurried life. She also gives Human Design readings, Reiki in person or at a distance, and Access Bars sessions. She teaches a weekly slow-flow class at a Hilliard studio and an occasional cat yoga class in Clintonville, and her hour-long Move to Meditate hatha classes, first streamed live on Insight Timer, are free on her YouTube channel, alongside a podcast on spirit, manifesting and self-care.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local_online",
+      "city": "Hilliard, Ohio",
+      "country": "United States",
+      "subjects": [
+        "yoga",
+        "human-design",
+        "reiki"
+      ],
+      "website_url": "https://litlotus.me/",
+      "booking_url": "https://litlotus.me/sessions",
+      "youtube_url": "https://www.youtube.com/@litlotuswellbeing",
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "melinda@litlotus.me",
+      "image_urls": [
+        "https://yt3.googleusercontent.com/npb6uxGsQaWW-xGyMv8Gjmg_v-jCtcuEoCMOIXkDFT4rpXmCXz-75v80l9HEJMGkJTmXNT_YsTk=s900",
+        "https://images.squarespace-cdn.com/content/v1/63decc955f1fa420c64906e0/07857aef-07a7-486f-a985-8473bee14614/DSC04809-2.jpeg",
+        "https://images.squarespace-cdn.com/content/v1/63decc955f1fa420c64906e0/717ec911-b6ce-422c-b922-247b69e3bbee/DSC04801-2.jpeg"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "insight-timer",
+      "role": "instructor"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Move to Meditate Yoga - Welcome the Ides of March!",
+      "url": "https://www.youtube.com/watch?v=1b9vLtmtNio",
+      "subjects": [
+        "yoga",
+        "meditation"
+      ],
+      "channel": "LIT Lotus Wellbeing"
+    },
+    {
+      "title": "Move to Meditate Yoga - March Gratitude, Raise Your Vibration - Live IT Class 3-1-24",
+      "url": "https://www.youtube.com/watch?v=7KoEGJgmQc4",
+      "subjects": [
+        "yoga"
+      ],
+      "channel": "LIT Lotus Wellbeing"
+    },
+    {
+      "title": "Move to Meditate Yoga - Seasonal Self-Care",
+      "url": "https://www.youtube.com/watch?v=8aYzL9nycZ0",
+      "subjects": [
+        "yoga",
+        "ayurveda"
+      ],
+      "channel": "LIT Lotus Wellbeing"
+    },
+    {
+      "title": "Move to Meditate Yoga - Boost Your Spirits - 1-19-24",
+      "url": "https://www.youtube.com/watch?v=OwRjzdnrLdg",
+      "subjects": [
+        "yoga"
+      ],
+      "channel": "LIT Lotus Wellbeing"
+    },
+    {
+      "title": "Move to Meditate Yoga | Intl. Yoga Day and Summer Solstice Hatha",
+      "url": "https://www.youtube.com/watch?v=XiHatwhA7ZM",
+      "subjects": [
+        "yoga"
+      ],
+      "channel": "LIT Lotus Wellbeing"
+    },
+    {
+      "title": "Move to Meditate Yoga - Hatha for Late Spring",
+      "url": "https://www.youtube.com/watch?v=LNoi93SMeeU",
+      "subjects": [
+        "yoga",
+        "ayurveda"
+      ],
+      "channel": "LIT Lotus Wellbeing"
+    },
+    {
+      "title": "Move to Meditate Yoga | New Year Reset Hatha",
+      "url": "https://www.youtube.com/watch?v=NANOOmV5kuA",
+      "subjects": [
+        "yoga"
+      ],
+      "channel": "LIT Lotus Wellbeing"
+    },
+    {
+      "title": "Move to Meditate Yoga - Balancing Vata Dosha",
+      "url": "https://www.youtube.com/watch?v=acRmoTWHoZA",
+      "subjects": [
+        "yoga",
+        "ayurveda"
+      ],
+      "channel": "LIT Lotus Wellbeing"
+    },
+    {
+      "title": "Move to Meditate Yoga - New Moon Intention Setting",
+      "url": "https://www.youtube.com/watch?v=cGqLBxQKJms",
+      "subjects": [
+        "yoga",
+        "manifestation"
+      ],
+      "channel": "LIT Lotus Wellbeing"
+    },
+    {
+      "title": "Move to Meditate Yoga - New Moon Surrender",
+      "url": "https://www.youtube.com/watch?v=FQHMZpLKdQQ",
+      "subjects": [
+        "yoga",
+        "meditation"
+      ],
+      "channel": "LIT Lotus Wellbeing"
+    },
+    {
+      "title": "5 Minute Morning Yoga - Sun Salutations",
+      "url": "https://www.youtube.com/watch?v=07yFPy8OFEI",
+      "subjects": [
+        "yoga"
+      ],
+      "channel": "LIT Lotus Wellbeing"
+    },
+    {
+      "title": "Episode 16 - Explore the Magic - Become the Creator of Your Reality",
+      "url": "https://www.youtube.com/watch?v=ooQXa_YXGkY",
+      "subjects": [
+        "manifestation",
+        "spirituality"
+      ],
+      "channel": "LIT Lotus Wellbeing"
+    }
+  ],
+  "books": [],
+  "courses": [
+    {
+      "title": "1:1 Mentorship Sessions",
+      "url": "https://litlotus.me/sessions",
+      "description": "Individual mentoring that combines yoga, meditation, Ayurveda, energy work, channelling and Human Design into a personal plan for steadier energy and daily rhythm. Offered as a four-session introduction or an eight-session, three-month package, after a free consultation.",
+      "price": "$498 USD (4 sessions); $960 USD (8 sessions)",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga",
+        "human-design",
+        "ayurveda"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/63decc955f1fa420c64906e0/d09d96cc-fc2e-4831-86e2-bd63dc538fc0/rui-xu-XabW1JtTJ3M-unsplash.jpg"
+    },
+    {
+      "title": "Human Design Sessions",
+      "url": "https://litlotus.me/",
+      "description": "A ninety-minute introductory reading of the client's Human Design chart, the system that draws on astrology, the I Ching, Kabbalah and the chakras, with practical ways to apply it. Further sessions can be bought as packages.",
+      "price": "$150 USD (90-minute intro session)",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "human-design"
+      ],
+      "image": "http://static1.squarespace.com/static/63decc955f1fa420c64906e0/t/64948527ed6946569e4c619c/1687455015419/LL+Horizontal+Logo+1.jpg?format=1500w"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "regional-b-1",
+    "hub": "insight-timer",
+    "rank": 214,
+    "hub_url": "https://insighttimer.com/mel.vankirk",
+    "insight_timer_url": "https://insighttimer.com/mel.vankirk",
+    "tier_evidence": "Insight Timer 1k followers (profile via WebFetch, 3 Nov 2026); YouTube 134 subscribers (channel header next to @litlotuswellbeing, /videos page, 3 Nov 2026); Instagram @lit_lotus_wellbeing not read (login/robots) → ~1.1k total → local_hero",
+    "email": "yes",
+    "email_source": "https://litlotus.me/",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 5 source(s)",
+    "flags": [
+      "Base: her About page says she lives in Hilliard, Ohio (a suburb on the north-west side of Columbus) and her home page mentions a studio space in Hilliard; Insight Timer says 'Hilliard, OH'.",
+      "Leans towards wellness coaching (burnout, energy, habits; some client testimonials mention diet); kept because her teaching is yoga, Ayurveda, Reiki, channelling and Human Design, but a human may judge it borderline.",
+      "Her Reiki session text says Reiki can 'relieve pain', so the Reiki/Access Bars session item was left out; the bio mentions that she offers Reiki without any claim.",
+      "Human Design sessions are described on her home page (no page of their own), so the offering uses the home page URL.",
+      "Linktree (linktr.ee/litlotus) read with WebFetch only: its robots.txt allows Claude-User but disallows other agents (User-agent: * Disallow: /), so it was not fetched with curl.",
+      "Insight Timer tracks would not load when read (profile showed 'Loading…'), so no Insight Timer free resources were added.",
+      "Photos: YouTube avatar and two portraits from her own site (same person)."
+    ],
+    "left_out": [
+      "Reiki / Access Bars sessions ($90 USD per hour): page says Reiki can relieve pain (health claim).",
+      "The LIT Lotus Path, 4-month group programme ($998 USD): began September 2026.",
+      "Weekly in-person classes at Mat Happy Yoga and cat yoga at Kitty Bubble Cafe: booked through those venues.",
+      "YouTube videos with condition framing: 'Soothe the Nervous System', 'Hatha for Mental Fatigue', 'Overcome the Winter Blues', 'Manifest Better Health', 'Law of Attraction & Manifesting Mindset for Better Health', 'Burnout, Inner Child Work, and Finding Spirit', 'Soothing the Nervous System'."
+    ]
+  },
+  "images_final": true
+}
