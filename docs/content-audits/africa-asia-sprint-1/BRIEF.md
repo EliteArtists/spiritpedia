@@ -96,7 +96,9 @@ already exists (someone else of the same name), stop and flag it.
 
 If the teacher can't have a proper page (no usable photo of them, and/or fewer
 than ~3 items in total across videos, books, offerings and free resources once
-the rules below are applied; their hub programmes count at most once),
+the rules below are applied; their hub programmes count at most once, except
+at a centre where they are the resident teacher, or founded or co-lead it:
+there each of their own current programmes counts (owner, 4 Nov 2026)),
 don't write a plan. Write
 `docs/content-audits/africa-asia-sprint-1/skipped/<slug>.json`:
 `{ "name": "...", "rank": N, "reason": "plain sentence" }`.

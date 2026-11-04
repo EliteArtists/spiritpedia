@@ -2760,6 +2760,12 @@ Turning a Channel into a School is a plan with `"update": { "entity_type":
   town that isn't in `places` (a village: add a `place_aliases` row, §8.1
   `0033`). An existing listing's base goes in through `healer.update`
   (`city`, `country`) with `location_source`.
+- **A resident teacher's own centre programmes count for them** (owner,
+  4 Nov 2026). In the "too thin" test (about 3 items, a photo), a hub's or
+  centre's programmes count at most once, **except** at a centre where the
+  person is the resident teacher (or founded or co-leads it): there, each of
+  their own current programmes counts as an item. Example: Gen Kelsang Wangpo
+  at KMC Texas, Dallas. Every brief says so.
 - **Shared offering links** (owner, 1 Nov 2026; migration 0031): the same
   offering URL may sit on more than one listing (one hub page for a
   programme several teachers lead), once per listing.

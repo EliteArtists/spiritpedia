@@ -5,7 +5,7 @@
     "create": {
       "name": "Swami Sukhabodhananda",
       "bio": "Swami Sukhabodhananda is a Vedanta teacher based in Bengaluru, the city where he was born in 1955. As a young man he went to Sandeepany Sadhanalaya in Mumbai to study under Swami Chinmayananda, who sent him out to teach the Upanishads and the Bhagavad Gita. He went on to found Prasanna Trust in Bengaluru, which runs his teaching alongside schools support and food programmes, and he has written well over a hundred short books in English and several Indian languages, from commentaries on the Gita and Bhaja Govindam to his popular 'Relax Please' series.\n\nHis style is practical rather than devotional: he asks students to test the teachings against their own experience instead of taking them on faith, and he often draws on business and sporting examples, having coached company leaders and an IPL cricket side. He gives free public Gita talks in Indian cities, leads retreats near Bengaluru, and teaches online through live morning sessions and a fortnightly study circle. Online festival programmes for Navaratri, Shivaratri and Guru Purnima bring meditation and scripture study together.",
-      "tier": "local_hero",
+      "tier": "luminary",
       "entity_type": "individual",
       "availability": "local_online",
       "city": "Bengaluru, Karnataka",
@@ -162,7 +162,8 @@
       "From Burnout to Brilliance workshop, Bay Area (8 Nov 2026): US tour stop, and 'burnout' in the title.",
       "Vadodara Gita talk (6 Dec 2026): left out to keep one dated public talk; Online Utsavs with 'dates coming soon' left out.",
       "Videos with hurt, pain, suffering or diet in the title, and clips under about 2 minutes, left out."
-    ]
+    ],
+    "tier_override": "Editorial stature (owner, 4 Nov 2026): a widely published teacher on Vedanta and the Bhagavad Gita (he says he has written 119 books), with a Wikipedia article and a trust channel of 64.7k on YouTube."
   },
   "images_final": true
 }

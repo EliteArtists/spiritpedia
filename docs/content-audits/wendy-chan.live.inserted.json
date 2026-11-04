@@ -1,0 +1,34 @@
+{
+  "env": "live",
+  "healer": {
+    "id": 716,
+    "healer_slug": "wendy-chan"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "3d389321-6a27-470d-a16b-584d9c249d26",
+      "slug": "the-heart-of-yoga-an-introduction-to-yoga-philosophy",
+      "title": "The Heart of Yoga - An Introduction to Yoga Philosophy"
+    },
+    {
+      "table": "courses",
+      "id": "15417a13-6d00-4671-a27a-90a4c5af077e",
+      "slug": "200hr-yoga-teacher-training-mar-2027-intake",
+      "title": "200hr Yoga Teacher Training, Mar 2027 Intake"
+    },
+    {
+      "table": "courses",
+      "id": "00e1ccaf-b0e6-4121-9fe1-09e41969d9a5",
+      "slug": "200hr-yoga-teacher-training-july-2027-intake",
+      "title": "200hr Yoga Teacher Training, July 2027 Intake"
+    },
+    {
+      "table": "free_resources",
+      "id": "98df1368-d412-4a09-b8d3-db84afa2ae93",
+      "slug": "yoga-tea-a-200hr-300hr-ytt-discovery-session-with-wendy-chan",
+      "title": "Yoga & Tea: A 200hr & 300hr YTT Discovery Session with Wendy Chan"
+    }
+  ],
+  "at": "2026-11-04T13:43:59.343Z"
+}
