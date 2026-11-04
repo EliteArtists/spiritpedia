@@ -120,7 +120,23 @@
       "channel": "RobertHoldenTV"
     }
   ],
-  "books": [],
+  "books": [
+    {
+      "title": "Happiness NOW!",
+      "slug": "happiness-now",
+      "author": "Robert Holden",
+      "asin": "140192039X",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "His first big book, written in 1998, arguing that happiness is a natural state to be uncovered now rather than a goal to be reached later, with practical exercises throughout.",
+      "subjects": [
+        "spirituality",
+        "spiritual-awakening"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/140192039X.01._SCLZZZZZZZ_.jpg"
+    }
+  ],
   "courses": [
     {
       "title": "Shift Happens: 3-Day Soul Retreat (Los Angeles)",
@@ -218,7 +234,7 @@
     "email": "yes",
     "email_source": "https://www.robertholden.com/event/https-www-tickettailor-com-events-successintelligence-2324496/",
     "contact_form_url": "https://www.robertholden.com/about-robert/book-a-coaching-session/",
-    "bio_check": "OK: no 8-word runs against 12 source(s)",
+    "bio_check": "OK: no 8-word runs against 13 source(s)",
     "flags": [
       "No Shift mention on own site: listed without the link (pages checked: home, about, press, events, event pages, shop).",
       "Email is a team inbox (retreats@robertholden.com) published on the Mystic, Prophet, Activist retreat page; a contact form (run by Hay House) is also on the Book Robert page.",
@@ -227,10 +243,11 @@
       "Tier raised from local_hero (counts) to luminary for editorial stature; owner decides (Instagram/Facebook counts unreadable).",
       "He is a Findhorn Fellow and has taught Enneagram retreats at Findhorn, but no current Findhorn Foundation programme is shown on his site, so no findhorn-foundation hub link was added.",
       "Videos: his channel's recent uploads are short clips (most 2-3 minutes, small view counts); older long talks were not in the first page of /videos. oEmbed was left to the ingest dry run (I did not call it myself on this run).",
+      "Book: Happiness NOW! ASIN 140192039X from the link on his own About page (robertholden.com/about-robert/); not confirmed on Open Library (blocked for us, 4 Nov 2026). No cover found: cover null. Description written from his About page and general knowledge; publisher blurb not read.",
       "Photo 1 is his YouTube avatar (900 px), photo 2 the About page portrait (2919 px); same man."
     ],
     "left_out": [
-      "Books: none listed. hayhouse.com and hayhouse.co.uk returned 503 for robots.txt (not retried), and openlibrary.org refused the connection (not retried), so no ISBN could be confirmed. Known titles: Happiness NOW!, Shift Happens!, Loveability, Authentic Success, Be Happy, Holy Shift!, Life Loves You (with Louise Hay), Higher Purpose, Finding Love Everywhere.",
+      "Other books: no ISBN/ASIN on his own pages (shop links go to hayhouse.com, which returned 503 for robots.txt, not retried, or to hyperurl.co shortlinks, not opened). Titles: Happiness NOW!, Shift Happens!, Loveability, Authentic Success, Be Happy, Holy Shift!, Life Loves You (with Louise Hay), Higher Purpose, Finding Love Everywhere.",
       "Faith is a Doorway (online series with Caroline Myss): started 4 Nov 2026.",
       "The Inner Mother Journey: led by Hollie Holden and Lizzie Winn, not Robert.",
       "My Enneagram Test (paid Hay House test) and Your Hero Journey: no separate details/price seen; Purpose Club and SI Mastermind pages not opened.",
@@ -238,5 +255,6 @@
       "Coaching via the Book Robert form: no price or programme page.",
       "Conversation with Heathere Evans (24 min): interview, main speaker unclear."
     ]
-  }
+  },
+  "images_final": true
 }

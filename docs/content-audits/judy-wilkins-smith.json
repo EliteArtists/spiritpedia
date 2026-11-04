@@ -82,7 +82,23 @@
       "channel": "Judy Wilkins-Smith"
     }
   ],
-  "books": [],
+  "books": [
+    {
+      "title": "Decoding Your Emotional Blueprint: A Powerful Guide to Transformation Through Disentangling Multigenerational Patterns",
+      "slug": "decoding-your-emotional-blueprint",
+      "author": "Judy Wilkins-Smith",
+      "asin": "1683648889",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "Her guide to recognising the habits and beliefs passed down through a family and a culture, with exercises from constellation work for setting them down. Published by Sounds True in 2022.",
+      "subjects": [
+        "shadow-work",
+        "conscious-relationships"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1683648889.01._SCLZZZZZZZ_.jpg"
+    }
+  ],
   "courses": [
     {
       "title": "An Introduction to Emotional DNA",
@@ -145,15 +161,17 @@
       "Email: connectjws@gmail.com appears only in the contact page's hidden page data (meta description), not on the page itself, so the contact form is used.",
       "Second photo has a digitally added Epcot background; it is clearly her (same woman as the YouTube avatar).",
       "Videos are short (2–4 minutes) weekly clips; none under 2 minutes used.",
-      "oEmbed not called by hand (the run's instructions forbid API endpoints); the ingest dry run checks each video with oEmbed."
+      "oEmbed not called by hand (the run's instructions forbid API endpoints); the ingest dry run checks each video with oEmbed.",
+      "Book: ASIN from the Amazon link on her own Products page (judywilkins-smith.com/products/); not confirmed on Open Library (blocked for us, 4 Nov 2026). Amazon not opened. Cover is a square crop from her site (300 px)."
     ],
     "left_out": [
-      "Books (Decoding Your Emotional Blueprint, The Hidden Power in Your DNA): Open Library refused our connection on 4 Nov 2026, so no ISBN could be confirmed; not retried by any other route. The Hidden Power in Your DNA is also described with conditions (chronic anxiety, over-eating).",
+      "The Hidden Power in Your DNA: no ISBN or ASIN on her pages read, and its blurb names conditions (chronic anxiety, over-eating).",
       "Private coaching sessions: the page lists addictions and trauma among what it addresses (health rule).",
       "Systemic Work & Constellations facilitator certification: the page frames it around addictions and abuse (health rule); no price published.",
       "Meditations Duo: described as 'multigenerational trauma meditations' (health rule); the two single meditations are kept with their own wording checked.",
       "Specialty events: 2027 dates to be announced.",
       "Spanish meditations and Tu ADN Emocional: duplicates in Spanish."
     ]
-  }
+  },
+  "images_final": true
 }

@@ -1,0 +1,139 @@
+{
+  "healer": {
+    "healer_slug": "theresa-cheung",
+    "location_source": null,
+    "no_public_base": "Her site (theresacheung.com: home, About, Contact, Podcast & Radio and Books pages) publishes no town or country; it describes her UK media work but not where she lives.",
+    "create": {
+      "name": "Theresa Cheung",
+      "bio": "Theresa Cheung is an English writer on dreams, intuition and the unexplained, who studied theology and English at King's College, Cambridge, and has spent several decades writing popular books on spiritual and psychic themes. Her Dream Dictionary from A to Z is a standard reference for many dreamers, and her many other titles include How to Catch a Dream, a three-week programme for lucid dreaming, and Dreaming of Your Future, on dreams that seem to anticipate events. She works closely with researchers studying consciousness, writes for the Institute of Noetic Sciences, and is a regular dream interpreter on British daytime television.\n\nHer teaching comes mostly through books, broadcasting and talks. For several years she hosted the White Shores podcast, long conversations with scientists, authors and spiritual teachers about dreams, intuition and the afterlife, and she now co-hosts a weekly live radio show on dreams with Kelly Sullivan Walden. She programmes talks for the Mind Body Spirit festivals in London and gives dream-decoding workshops and webinars at festivals and for companies. Her approach is practical and curious: she encourages readers to keep a dream journal, notice symbols and coincidences, and treat intuition as a skill that grows with attention. She also co-hosted a dreamwork summit for The Shift Network.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "worldwide",
+      "city": null,
+      "country": null,
+      "subjects": [
+        "dreamwork",
+        "spirituality",
+        "death-the-afterlife"
+      ],
+      "website_url": "https://www.theresacheung.com/",
+      "booking_url": "https://www.theresacheung.com/contact/",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "angeltalk710@aol.com",
+      "image_urls": []
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "the-shift-network",
+      "role": "instructor"
+    }
+  ],
+  "videos": [],
+  "books": [
+    {
+      "title": "The Dream Dictionary from A to Z",
+      "slug": "the-dream-dictionary-from-a-to-z",
+      "author": "Theresa Cheung",
+      "asin": "1667200755",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "Her best-known reference book: an alphabetical guide to dream symbols and what they may suggest, with cross-references between related images. This is the Thunder Bay edition.",
+      "subjects": [
+        "dreamwork"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1667200755.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "How to Catch a Dream",
+      "slug": "how-to-catch-a-dream",
+      "author": "Theresa Cheung",
+      "asin": "000850198X",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "A three-week programme of 21 short practices for remembering dreams and learning to dream lucidly, and for carrying that awareness into daily life.",
+      "subjects": [
+        "dreamwork"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/000850198X.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "Dreaming of Your Future: Unlock the Precognitive Secrets of Your Mind",
+      "slug": "dreaming-of-your-future",
+      "author": "Theresa Cheung",
+      "asin": "0738779385",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "Exercises for noticing dreams that seem to point ahead, with a directory of dream symbols grouped by theme. Published by Llewellyn in 2025.",
+      "subjects": [
+        "dreamwork",
+        "consciousness"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/0738779385.01._SCLZZZZZZZ_.jpg"
+    }
+  ],
+  "courses": [],
+  "free_resources": [
+    {
+      "title": "White Shores Podcast",
+      "url": "https://www.buzzsprout.com/361061",
+      "description": "Her podcast archive of more than 300 conversations, from 2019 to 2026, with scientists, authors and spiritual teachers on dreams, intuition, consciousness and the afterlife.",
+      "featured": true,
+      "resource_type": "workshop",
+      "subjects": [
+        "dreamwork",
+        "consciousness",
+        "death-the-afterlife"
+      ],
+      "image": "https://www.buzzsprout.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6NDU2NDU5MDgsInB1ciI6ImJsb2JfaWQifX0=--9f1b823b4ad1d312df921d3337bb043a5b0423bd/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJqcGciLCJyZXNpemVfdG9fZmlsbCI6WzE0MDAsMTQwMCx7ImNyb3AiOiJjZW50cmUifV0sImRlZmF1bHRfdXJsIjoiaHR0cHM6Ly93d3cuYnV6enNwcm91dC5jb20vaW1hZ2VzL2FydHdvcmtzX2xhcmdlLmpwZyIsInNhdmVyIjp7InF1YWxpdHkiOjYwfSwiY29sb3Vyc3BhY2UiOiJzcmdiIn0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--2454c883dcd12a10059f243d8ea753f8b5c1613e/White%20Shores%20Image%20Draft%202.jpg"
+    },
+    {
+      "title": "The Healing Power of Your Dreams (weekly radio show)",
+      "url": "https://ukhealthradio.com/program/the-healing-power-of-your-dreams/",
+      "description": "A live weekly radio hour on dreams, co-hosted with Kelly Sullivan Walden, with guests from dream research, psychology and spirituality. Free to listen live or on catch-up.",
+      "featured": false,
+      "resource_type": "workshop",
+      "subjects": [
+        "dreamwork"
+      ],
+      "image": "https://ukhealthradio.com/wp-content/uploads/2026/03/WhatsApp-Image-2026-08-02-at-15.06.29-340x721.jpeg"
+    }
+  ],
+  "sprint": {
+    "sprint": "pipelines-1",
+    "hub": "the-shift-network",
+    "rank": 393,
+    "hub_url": null,
+    "tier_evidence": "No YouTube channel linked from her site; Instagram @thetheresacheung, Facebook TheresaCheungAuthor, X not read (off limits / login) → 0 readable → local_hero",
+    "email": "yes",
+    "email_source": "https://www.theresacheung.com/contact/",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 9 source(s)",
+    "flags": [
+      "Shift named on: https://www.theresacheung.com/about-theresa/ ('co-hosted the 2022 dream work summit for The Shift Network').",
+      "Email: angeltalk710@aol.com is the address behind the 'Get in touch' and 'Media & booking enquiries' buttons on her Contact page (mailto link); the address itself is not printed as text.",
+      "Tier: no counts readable (0). She is a long-standing bestselling author with regular UK TV work; her social followings may be large. Editorial stature could justify luminary; owner to decide.",
+      "Possible pairing: she co-hosts the weekly radio show with Kelly Sullivan Walden (rank 396, plan written in this batch).",
+      "The radio show is titled 'The Healing Power of Your Dreams' and airs on UK Health Radio; no condition is named, kept but borderline.",
+      "theresacheung.com robots.txt sets Crawl-delay: 30; every request was spaced at least 31 seconds apart.",
+      "Only one photo (her site's portrait, credit Nina Duncan).",
+      "Books: ASINs from the Amazon links on her own book pages (theresacheung.com/book/how-to-catch-a-dream-…/ links amazon.co.uk 000850198X, a UK edition; /book/dreaming-of-your-future-…/ links amazon.com 0738779385); not confirmed on Open Library (blocked for us, 4 Nov 2026). /book/the-dream-dictionary-from-a-to-z-thunder-bay-edition/ links amazon.com 1667200755. Amazon not opened.",
+      "Book covers set to null on purpose so the dry run sends only one request (the photo) to theresacheung.com under its 30-second crawl delay; covers exist on her book pages: How to Catch a Dream: https://www.theresacheung.com/wp-content/uploads/2021/08/How-to-Catch-A-Dream-Theresa-Cheung-copy.jpg; Dreaming of Your Future: Unlock the Precognitive Secrets of Your Mind: https://www.theresacheung.com/wp-content/uploads/2024/11/71V1QVA92L._SL1000_.jpg; The Dream Dictionary: https://www.theresacheung.com/wp-content/uploads/2023/10/6b93cdbb421b6fe47a1710b160d5a304_grande.webp"
+    ],
+    "left_out": [
+      "Extreme Dreaming: blurb is about nightmares and sleep paralysis (health rule, borderline).",
+      "Invisible Strings: coming soon; only an e-book link on her page.",
+      "The Dream Cure: title and subtitle are a health claim.",
+      "Other books (about 20 more): book pages not read, to keep within her 30-second crawl delay.",
+      "No paid courses or sessions are offered on her site."
+    ],
+    "held": "Photo did not load in the ingest dry run (4 Nov 2026), though it downloaded for us earlier (1365x2048, clearly her). Not investigated further, and no other photo fetched, because her site sets a 30-second crawl delay; the dry run also made a second, quick request to her site when looking for a fallback image. A human should pick a photo (e.g. a smaller size of the same portrait, or her About page portrait) before ingest."
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 861,
+    "healer_slug": "katie-silcox"
+  },
+  "rows": [
+    {
+      "table": "books",
+      "id": 1926,
+      "slug": "glow-worthy",
+      "title": "Glow-Worthy: Practices for Awakening Your Inner Light and Loving Yourself As You Are: Broken, Beautiful, and Sacred"
+    },
+    {
+      "table": "courses",
+      "id": "51e1c106-27d3-4695-8efd-b72951d18d0e",
+      "slug": "shakti-ayurveda-school-level-1-ayurvedic-wellness-coach",
+      "title": "Shakti Ayurveda School Level 1: Ayurvedic Wellness Coach"
+    },
+    {
+      "table": "courses",
+      "id": "65a6238a-cc64-400c-be9d-a991dcd590ac",
+      "slug": "spirit-sessions-membership",
+      "title": "Spirit Sessions Membership"
+    },
+    {
+      "table": "courses",
+      "id": "2e409502-fa1c-442d-b020-435c4c8c7818",
+      "slug": "the-shakti-schools-tantra-retreat-and-grand-gathering-may-2027",
+      "title": "The Shakti School's Tantra Retreat and Grand Gathering May 2027"
+    },
+    {
+      "table": "free_resources",
+      "id": "17220e42-1e65-4239-a4bf-87f9f1c44c69",
+      "slug": "womens-wisdom-ayurveda-mini-course",
+      "title": "Women's Wisdom Ayurveda Mini-Course"
+    }
+  ],
+  "at": "2026-11-04T17:59:05.963Z"
+}

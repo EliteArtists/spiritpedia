@@ -1,0 +1,161 @@
+{
+  "healer": {
+    "healer_slug": "rodger-kamenetz",
+    "location_source": "https://kamenetz.com/about/",
+    "create": {
+      "name": "Rodger Kamenetz",
+      "bio": "Rodger Kamenetz is an American poet, author and teacher whose work brings together poetry, dreams and Jewish spiritual life. Born in Baltimore and educated at Yale, Johns Hopkins and Stanford, he spent many years at Louisiana State University, holding posts in both English and Religious Studies, and retired as a distinguished professor. His most widely read book is The Jew in the Lotus, an account of a group of rabbis who travelled to Dharamsala to talk with the Dalai Lama, which was later made into a PBS documentary. Its sequel, Stalking Elijah, about his meetings with Jewish mystical teachers across America, won a National Jewish Book Award, and his other books include Burnt Books, The History of Last Night's Dream and Seeing into the Life of Things.\n\nWith colleagues he developed Natural Dreamwork, an approach that sets interpretation aside and asks the dreamer to slow down and feel the images of a dream as living encounters. From his home in New Orleans he now gives much of his time to one-to-one dream sessions for people who want spiritual direction through their dreams. He also teaches through lectures, synagogue weekends, contemplative retreats and online classes, including a past Natural Dreamwork course with The Shift Network, often weaving blessing practices and close attention to the natural world into the work.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "worldwide",
+      "city": "New Orleans, Louisiana",
+      "country": "United States",
+      "subjects": [
+        "dreamwork",
+        "mysticism",
+        "spirituality"
+      ],
+      "website_url": "https://kamenetz.com/",
+      "booking_url": "https://www.thenaturaldream.com/what-to-expect",
+      "youtube_url": "https://www.youtube.com/@RodgerKamenetz",
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "azaleapinkwater@gmail.com",
+      "image_urls": [
+        "https://kamenetz.com/wp-content/uploads/2020/11/RK.jpg",
+        "https://yt3.googleusercontent.com/ytc/AIdro_m-q6lNZu_dWUtcAZFnj4pbSa--GrtnegVSC-Tck4BVBdtE=s900",
+        "https://kamenetz.com/wp-content/uploads/2020/11/RodgerKamenetzSmD1.jpg"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "the-shift-network",
+      "role": "instructor"
+    }
+  ],
+  "videos": [
+    {
+      "title": "The History of Last Night's Dream: Cambridge Forum",
+      "url": "https://www.youtube.com/watch?v=Daqk8cHUNII",
+      "subjects": [
+        "dreamwork",
+        "spirituality"
+      ],
+      "channel": "Rodger Kamenetz"
+    },
+    {
+      "title": "IMSB 12 15 20 Dreams and Afflictive Emotions",
+      "url": "https://www.youtube.com/watch?v=42-U3Uo5210",
+      "subjects": [
+        "dreamwork",
+        "mysticism"
+      ],
+      "channel": "Rodger Kamenetz"
+    },
+    {
+      "title": "Seeing into the Life of Things: Imagination and the Sacred Encounter with Rodger Kamenetz.",
+      "url": "https://www.youtube.com/watch?v=ihAd1zHcRa8",
+      "subjects": [
+        "mysticism",
+        "dreamwork"
+      ],
+      "channel": "CSP - Community Scholar Program"
+    },
+    {
+      "title": "IJS Book Talk 12 3 25",
+      "url": "https://www.youtube.com/watch?v=l21uWjxwn6Y",
+      "subjects": [
+        "mysticism",
+        "spirituality"
+      ],
+      "channel": "Rodger Kamenetz"
+    },
+    {
+      "title": "SHIUR INTERNATIONAL: TURKEY TALK FOR REB NACHMAN",
+      "url": "https://www.youtube.com/watch?v=zR1hclUey8g",
+      "subjects": [
+        "mysticism",
+        "spirituality"
+      ],
+      "channel": "Rodger Kamenetz"
+    }
+  ],
+  "books": [
+    {
+      "title": "The History of Last Night's Dream",
+      "slug": "the-history-of-last-nights-dream",
+      "author": "Rodger Kamenetz",
+      "asin": "0061237949",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "Part memoir and part argument, this book follows his turn towards dreams as a path to the soul and questions the habit of explaining dreams away. Published by HarperOne.",
+      "subjects": [
+        "dreamwork",
+        "spirituality"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/0061237949.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "Stalking Elijah",
+      "slug": "stalking-elijah",
+      "author": "Rodger Kamenetz",
+      "asin": "0060642327",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "The sequel to The Jew in the Lotus, in which he travels across America to meet contemporary Jewish mystical teachers while looking for his own way of practice. It won a National Jewish Book Award.",
+      "subjects": [
+        "mysticism",
+        "spirituality"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/0060642327.01._SCLZZZZZZZ_.jpg"
+    }
+  ],
+  "courses": [
+    {
+      "title": "One-to-One Natural Dreamwork Sessions",
+      "url": "https://www.thenaturaldream.com/what-to-expect",
+      "description": "Private sessions in the dreamwork approach he founded: you send recent dreams beforehand and then revisit their images slowly together, staying with what is felt rather than interpreting. Sessions with him are arranged by writing to his dreamwork address.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "dreamwork"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/6616c10e8c6f331c9451c648/f4153815-44e7-44b7-9c07-fb75a0b2897f/kerenhealingmandala-1080x675.jpeg"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "pipelines-1",
+    "hub": "the-shift-network",
+    "rank": 442,
+    "hub_url": null,
+    "tier_evidence": "YouTube @RodgerKamenetz 34 subscribers (channel page header, 4 Nov 2026); Instagram @rodgerkam and Twitter @Jewinthelotus listed on his site but not opened (off limits / login) → ~34 readable → local_hero",
+    "email": "yes",
+    "email_source": "https://kamenetz.com/about/",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 14 source(s)",
+    "flags": [
+      "Shift named on: https://kamenetz.com/workshops/ ('Natural Dreamwork and the Sacred Encounter' online workshop on Shift Network, Dec 2019 to Feb 2020, in his list of past appearances).",
+      "Email is his assistant's published address (azaleapinkwater@gmail.com, for speaking and contact); his one-to-one dreamwork address thenaturaldream@gmail.com is on the same page.",
+      "Tier: Instagram and Twitter counts not read; YouTube tiny. He is a well-known author (The Jew in the Lotus, international bestseller; National Jewish Book Award), so the owner may wish to consider an editorial-stature override; none applied.",
+      "Books: ASINs taken from the Amazon links on his own book pages (kamenetz.com/the-history-of-last-nights-dream/ and /stalking-elijah/); Amazon not opened. ISBN not confirmed on Open Library (blocked for us, 4 Nov 2026). The Stalking Elijah link's URL carries no title, so its ASIN should be checked. Cover null for both.",
+      "Third photo is a painterly filtered portrait from his own site (clearly him, same man as the other two).",
+      "Natural Dreamwork (thenaturaldream.com) is a practitioners' collective he founded; the session page is shared by its practitioners.",
+      "Regional: New Orleans has few Spiritpedia teachers."
+    ],
+    "left_out": [
+      "The Jew in the Lotus: the Amazon link on its own page points to a different book (Die Next You), so no reliable ISBN from his pages.",
+      "Seeing into the Life of Things, Burnt Books, Terra Infirma: links on his pages are bit.ly shorteners or point to the wrong book; no ISBN read from his or the publisher's own page.",
+      "Upcoming talks (OLLI Asheville 12 Nov, JTS 19 Nov 2026): one-off events reached only through bit.ly or third-party registration links.",
+      "Videos: 'Healing Images in Dreams' and 'The Spirit of Poetry in a Time of Trauma' (healing/trauma framing, borderline under the health rule); poetry readings and clips under ~2 minutes."
+    ]
+  },
+  "images_final": true
+}

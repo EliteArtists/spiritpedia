@@ -96,7 +96,52 @@
       "channel": "Deep Lucid Dreaming Dr Clare Johnson"
     }
   ],
-  "books": [],
+  "books": [
+    {
+      "title": "Llewellyn's Complete Book of Lucid Dreaming",
+      "slug": "llewellyns-complete-book-of-lucid-dreaming",
+      "author": "Clare R. Johnson",
+      "asin": "0738751448",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "Her large reference work on lucid dreaming, gathering techniques for becoming and staying lucid with her own theories of dream figures, the dream body and the lucid void. Published by Llewellyn.",
+      "subjects": [
+        "dreamwork",
+        "consciousness"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/0738751448.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "The Art of Lucid Dreaming",
+      "slug": "the-art-of-lucid-dreaming-clare-johnson",
+      "author": "Clare R. Johnson",
+      "asin": "0738762652",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "A practical handbook with a quiz to find your sleeper type and step-by-step programmes for having lucid dreams. Published by Llewellyn.",
+      "subjects": [
+        "dreamwork"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/0738762652.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "Elixir of Sleep",
+      "slug": "elixir-of-sleep",
+      "author": "Clare R. Johnson",
+      "asin": "0738776130",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "A guide to the states of consciousness we pass through each night, with dozens of practices for restful sleep and rich dreaming. Published by Llewellyn.",
+      "subjects": [
+        "dreamwork",
+        "meditation"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/0738776130.01._SCLZZZZZZZ_.jpg"
+    }
+  ],
   "courses": [
     {
       "title": "Lucid Dreaming Ocean Retreat, Portugal 2027",
@@ -232,21 +277,23 @@
     "email": "contact form",
     "email_source": null,
     "contact_form_url": "https://deepluciddreaming.com/contact/",
-    "bio_check": "OK: no 8-word runs against 11 source(s)",
+    "bio_check": "OK: no 8-word runs against 14 source(s)",
     "flags": [
       "No Shift mention on own site: listed without the link.",
       "No base published on her own site (says only that she is English); no_public_base set.",
       "YouTube shows titles machine-translated into Portuguese for our location; titles were taken from each video's own page (meta title), which gives the original English.",
       "oEmbed not called by hand (the run's instructions forbid API endpoints); the ingest dry run checks each video with oEmbed.",
-      "Instagram count not read; total could be higher, but YouTube alone is under 3k."
+      "Instagram count not read; total could be higher, but YouTube alone is under 3k.",
+      "Books: ASINs from the Amazon links on her own book pages (deepluciddreaming.com/llewellyns-complete-book-of-lucid-dreaming/, /the-art-of-lucid-dreaming/, /elixir-of-sleep/); not confirmed on Open Library (blocked for us, 4 Nov 2026). Amazon itself not opened. Llewellyn's Complete Book subtitle (mentions sleep disturbances and health) and Elixir of Sleep subtitle dropped."
     ],
     "left_out": [
-      "All books (Llewellyn's Complete Book of Lucid Dreaming, The Art of Lucid Dreaming, Elixir of Sleep, Mindful Dreaming, Sleep Monsters & Superheroes): Open Library refused our connection on 4 Nov 2026 (connection refused), so no ISBN could be confirmed; not retried by any other route.",
+      "Mindful Dreaming / Dream Therapy and Sleep Monsters & Superheroes: no ASIN or ISBN found on her pages read; The Art of Transforming Nightmares: see below.",
       "The Art of Transforming Nightmares and Dream Therapy (book): nightmares and therapy framing, borderline under the health rule.",
       "Teachable classes 'Heal Your Body', 'Yoga Nidra for Lucid Dreaming, Healing & Blissful Sleep' and the grief meditation: health or grief framing.",
       "Hawaii 2026 retreat and Portugal 2026 retreat: passed; Advanced Lucid Transcendence Retreat (May 2027): for past retreat participants only, no own page found.",
       "One-to-one mentoring: arranged through the contact form, no page or price of its own.",
       "YouTube videos on dementia, DMT, dream sex and stock-market tips; Shorts and clips under ~2 minutes."
     ]
-  }
+  },
+  "images_final": true
 }

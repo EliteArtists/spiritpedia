@@ -1,0 +1,52 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 868,
+    "healer_slug": "gemma-benton"
+  },
+  "rows": [
+    {
+      "table": "videos",
+      "id": 7566,
+      "slug": "reclaiming-sacred-introductions",
+      "title": "Reclaiming Sacred Introductions"
+    },
+    {
+      "table": "videos",
+      "id": 7567,
+      "slug": "what-does-remembered-actually-mean-to-you-i",
+      "title": "What does \"Remembered\" Actually Mean To You & I"
+    },
+    {
+      "table": "videos",
+      "id": 7568,
+      "slug": "do-not-let-them-tell-you-you-are-broken",
+      "title": "Do Not Let Them Tell You You Are Broken"
+    },
+    {
+      "table": "videos",
+      "id": 7569,
+      "slug": "remembering-is-the-way",
+      "title": "Remembering is the way"
+    },
+    {
+      "table": "courses",
+      "id": "7bcd4dc4-a178-42b7-8764-e1cc2712b855",
+      "slug": "ancestral-healing-sessions-and-intuitive-readings",
+      "title": "Ancestral Healing Sessions and Intuitive Readings"
+    },
+    {
+      "table": "courses",
+      "id": "14235cd3-8cc8-4e02-a90e-c494c116a824",
+      "slug": "journeycircles",
+      "title": "JourneyCircles"
+    },
+    {
+      "table": "courses",
+      "id": "27837f74-6f84-4df5-b717-63b1a59b4832",
+      "slug": "healing-her-story-oracle-deck",
+      "title": "Healing Her Story Oracle Deck"
+    }
+  ],
+  "at": "2026-11-04T18:07:52.642Z"
+}

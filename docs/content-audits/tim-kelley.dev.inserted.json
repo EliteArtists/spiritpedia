@@ -1,0 +1,40 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 870,
+    "healer_slug": "tim-kelley"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "8f78d7a6-fed8-41a3-ad5f-339a1480d359",
+      "slug": "true-purpose-organizational-consultant-training-and-certification",
+      "title": "True Purpose Organizational Consultant Training and Certification"
+    },
+    {
+      "table": "courses",
+      "id": "2593f576-510e-4d9d-83e2-61ffeb369957",
+      "slug": "true-purpose-coach-training",
+      "title": "True Purpose Coach Training"
+    },
+    {
+      "table": "courses",
+      "id": "4c17f539-488d-4bd2-952c-0dbd5f976803",
+      "slug": "true-purpose-guided-meditations",
+      "title": "True Purpose Guided Meditations"
+    },
+    {
+      "table": "free_resources",
+      "id": "fbe7b074-9870-449a-bd51-4a8d9a946f02",
+      "slug": "introduction-to-higher-purpose-coaching-ecourse",
+      "title": "Introduction to Higher Purpose Coaching eCourse"
+    },
+    {
+      "table": "free_resources",
+      "id": "5ee2173f-0f7e-4238-91bf-1d03cc43047d",
+      "slug": "the-gathering-for-change-agents",
+      "title": "The Gathering for Change Agents"
+    }
+  ],
+  "at": "2026-11-04T18:08:11.680Z"
+}
