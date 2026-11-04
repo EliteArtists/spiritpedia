@@ -778,9 +778,9 @@
    "email_or_form_seen": "info@MeditationInTexas.org (centre)",
    "content_signal": "Several dated KMC Texas programmes he leads (14 Nov, 21 Nov, 5-6 Dec, 19-20 Dec, free 24 Dec); no own videos or books",
    "note": "Resident Teacher, Kadampa Meditation Center Texas (Dallas).",
-   "status": "skipped",
-   "plan": null,
-   "skip_reason": "Too thin: Resident Teacher of KMC Texas in Dallas, but every item is a programme of that one centre (which counts once), with no videos of his own, no books, no own website and no free resources beyond centre events."
+   "status": "live",
+   "plan": "docs/content-audits/gen-kelsang-wangpo.json",
+   "skip_reason": null
   },
   {
    "rank": 354,
@@ -1941,6 +1941,6 @@
    "skip_reason": "Adelaide Zen Group teacher (Diamond Sangha) with three teisho recordings on the group's site, but the only photo of him is a two-person shot with Steve Wigg and he has no own site, so there is no usable single-person photo."
   }
  ],
- "updated": "2026-11-04T13:44:13.518Z",
+ "updated": "2026-11-04T13:46:11.340Z",
  "topup": "Top-up, 4 Nov 2026 (owner: with Sprint C): ranks 351-399 Dallas and San Antonio; 451-499 Tampa; 651-699 Edmonton; 751-799 Brisbane/Gold Coast and Adelaide. New leads in leads/<first rank>.json."
 }

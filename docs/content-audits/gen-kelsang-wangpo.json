@@ -1,0 +1,153 @@
+{
+  "healer": {
+    "healer_slug": "gen-kelsang-wangpo",
+    "location_source": "https://www.meditationintexas.org/our-teachers",
+    "create": {
+      "name": "Gen Kelsang Wangpo",
+      "bio": "Gen Kelsang Wangpo is an American Buddhist monk in the New Kadampa Tradition and the resident teacher of Kadampa Meditation Center Texas, whose main temple is in central Dallas and whose branch classes reach towns from Fort Worth and Plano to Austin, Houston and Lubbock. He has followed the teachings of Geshe Kelsang Gyatso, the tradition's founder, for over two decades, and has been giving Dharma classes himself since 2004.\n\nHis aim is to make Kadam Buddhism usable in a busy city life rather than something set apart from it. In Dallas he leads Saturday morning workshops for newcomers that alternate short talks with guided meditation, weekend courses on harder subjects such as emptiness, the way things actually exist, and introductory afternoons on the Vajrasattva purification practice. He also grants empowerments, teaches a closed series on the Eleven Yogas for Highest Yoga Tantra practitioners, and takes the teachings out of the temple: in November 2026 he gives a talk and guided meditation on contemplating death at the Nasher Sculpture Center, tied to an exhibition there. Seasonal gatherings, such as a Friendsgiving teaching on gratitude and a free Christmas Eve evening of meditation and prayers for world peace, round out the year. He has no books or recordings of his own; his classes draw on Geshe Kelsang's books.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local_online",
+      "city": "Dallas, Texas",
+      "country": "United States",
+      "subjects": [
+        "meditation",
+        "ancient-wisdom",
+        "spirituality"
+      ],
+      "website_url": "https://www.meditationintexas.org/",
+      "booking_url": "https://www.meditationintexas.org/retreats-events",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "info@MeditationInTexas.org",
+      "image_urls": [
+        "https://images.squarespace-cdn.com/content/v1/692ce3efa3fb2e7e55b3e547/1789074965289-4CZKBLWKLRFQFDDF5WBZ/Wangpo+%282%29.png?format=1000w"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Rest & Renewal: Learn to Meditate",
+      "url": "https://www.meditationintexas.org/courses-events/2026/renewal",
+      "description": "A three-hour Saturday morning workshop at the Dallas temple for people new to meditation, in two teaching and meditation sessions with a break between. Open to all; members can join by livestream.",
+      "price": "$25 USD ($20 USD concessions)",
+      "product_type": "course",
+      "start_date": "2026-11-14",
+      "end_date": "2026-11-14",
+      "subjects": [
+        "meditation"
+      ],
+      "image": "http://static1.squarespace.com/static/692ce3efa3fb2e7e55b3e547/692ce3f5a3fb2e7e55b3e68d/6aada25228c99b1569f38952/1793328746302/KMC-2026-rest-renewal.jpg?format=1500w"
+    },
+    {
+      "title": "Memento Mori: Extracting Profound Meaning from Art",
+      "url": "https://www.meditationintexas.org/courses-events/2026/nasher",
+      "description": "A public talk with guided meditation at the Nasher Sculpture Center in Dallas, using Bruce Nauman's exhibition there as a starting point for the Buddhist practice of reflecting on our own death. A tour of the exhibition follows, and entry to it is included.",
+      "price": "$25 USD",
+      "product_type": "course",
+      "start_date": "2026-11-21",
+      "end_date": "2026-11-21",
+      "subjects": [
+        "meditation",
+        "death-the-afterlife",
+        "ancient-wisdom"
+      ],
+      "image": "http://static1.squarespace.com/static/692ce3efa3fb2e7e55b3e547/692ce3f5a3fb2e7e55b3e68d/6ab57fa12b14e41d27073574/1790692115111/KMC-2026-nasher.jpg?format=1500w"
+    },
+    {
+      "title": "Sunday Friendsgiving - Gratitude and Harmony",
+      "url": "https://www.meditationintexas.org/courses-events/2026/friendsgiving",
+      "description": "A Sunday teaching around Thanksgiving on how kindness and gratitude support good relationships and communities, followed by a shared potluck lunch. No registration needed.",
+      "price": "Free",
+      "product_type": "course",
+      "start_date": "2026-11-29",
+      "end_date": "2026-11-29",
+      "subjects": [
+        "spirituality",
+        "conscious-relationships"
+      ],
+      "image": "http://static1.squarespace.com/static/692ce3efa3fb2e7e55b3e547/692ce3f5a3fb2e7e55b3e68d/6ac6b7085e94a864bf8c7722/1791411195484/AdobeStock_1644481864+%281%29.jpeg?format=1500w"
+    },
+    {
+      "title": "An Afternoon of Purification - Introduction to Vajrasattva Practice",
+      "url": "https://www.meditationintexas.org/courses-events/2026/purification",
+      "description": "Four guided sessions over an afternoon and evening introducing the Buddhist purification practice of Vajrasattva: regret, reliance, mantra recitation and a promise to change. It opens the centre's yearly self-guided Vajrasattva retreat.",
+      "price": "$25 USD ($20 USD concessions)",
+      "product_type": "course",
+      "start_date": "2026-12-06",
+      "end_date": "2026-12-06",
+      "subjects": [
+        "meditation",
+        "ancient-wisdom"
+      ],
+      "image": "http://static1.squarespace.com/static/692ce3efa3fb2e7e55b3e547/692ce3f5a3fb2e7e55b3e68d/6ae4066a0f683b0c4d58981b/1793329277135/KMC-vajrasattva2-2026.jpg?format=1500w"
+    },
+    {
+      "title": "Targeting the Illusion: Emptiness Course and Retreat",
+      "url": "https://www.meditationintexas.org/courses-events/2026/illusion",
+      "description": "A two-day weekend course at the Dallas temple on emptiness in Buddhist philosophy, focusing on how to identify the false way things seem to exist so that meditation can see past it. Six sessions, with a vegetarian lunch on the Saturday; Saturday-only places are available.",
+      "price": "$30 USD ($25 USD concessions; Saturday only $20 USD)",
+      "product_type": "course",
+      "start_date": "2026-12-19",
+      "end_date": "2026-12-20",
+      "subjects": [
+        "meditation",
+        "non-duality",
+        "ancient-wisdom"
+      ],
+      "image": "http://static1.squarespace.com/static/692ce3efa3fb2e7e55b3e547/692ce3f5a3fb2e7e55b3e68d/6ae9510ecae2920660a86cc3/1793677058594/AdobeStock_445770977.jpeg?format=1500w"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Prayers for World Peace: Inner Calm, Radiant Joy",
+      "url": "https://www.meditationintexas.org/courses-events/2026/world-peace",
+      "description": "A free Christmas Eve evening (24 December 2026, 5 to 6:30 pm) at the Dallas temple, with a guided meditation, a short talk on inner peace and how to extend it to others, and prayers for world peace. Free, with registration requested.",
+      "featured": true,
+      "resource_type": "workshop",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "image": "http://static1.squarespace.com/static/692ce3efa3fb2e7e55b3e547/692ce3f5a3fb2e7e55b3e68d/6ae9f499b5235433ee6ab5a9/1793718093545/AdobeStock_862978743+%281%29.jpeg?format=1500w"
+    }
+  ],
+  "sprint": {
+    "sprint": "regional-b-1",
+    "hub": "none",
+    "rank": 353,
+    "hub_url": "https://www.meditationintexas.org/teachers-blog/gen-wangpo",
+    "tier_evidence": "No personal accounts found (no YouTube channel, Instagram, Facebook, X or TikTok of his own; none linked from his teacher page or the centre site) → 0 readable → local_hero",
+    "email": "yes",
+    "email_source": "https://www.meditationintexas.org/contact",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 12 source(s)",
+    "flags": [
+      "Listed under the owner's 4 Nov 2026 ruling that a resident teacher's own centre programmes each count; earlier skipped as too thin (skip file removed).",
+      "Thin listing: five offerings and one free event, all on the Kadampa Meditation Center Texas site; no videos, books or website of his own.",
+      "The email info@MeditationInTexas.org is the centre's shared inbox, accepted because he is its resident teacher.",
+      "Availability set to local_online: he teaches in person in Dallas, and the event pages state a livestream for KMC Texas monthly members (online is members only).",
+      "KMC Texas is not a Spiritpedia listing, so teaches_at is empty; the centre's teacher page is in hub_url.",
+      "The Christmas Eve free evening is dated (24 Dec 2026), so the free resource expires after that date.",
+      "The Nasher Sculpture Center talk is at a museum venue in Dallas, not his base.",
+      "New Kadampa Tradition resident teachers are moved between centres from time to time, so the Dallas base may change.",
+      "Similar listing in the sprint: Gen Kelsang Chokyi (Indianapolis), the same tradition; not the same person."
+    ],
+    "left_out": [
+      "Buddha Manjushri Empowerment (7 Nov 2026) and its Spanish page: starts by 7 Nov 2026.",
+      "Peaceful Through Meditation - A Mini Retreat (5 Dec 2026): subtitled as de-stressing for the holidays, left out under the stress-relief rule.",
+      "The Eleven Yogas (part 3 on 21 Nov 2026): a three-part series that began on 12 Sep 2026, and limited to Highest Yoga Tantra practitioners.",
+      "Vajrasattva Purification Retreat (7 to 10 Dec 2026): self-guided, not led by him.",
+      "The Healing Power of Meditation (18 Sep 2027): given by Gen-la Kelsang Dekyong, not him, and the title is health-framed.",
+      "Weekly meditation classes across the Dallas area and branches: no teacher named, so not credited to him.",
+      "Books by Geshe Kelsang Gyatso on the centre's resources page: not his."
+    ]
+  },
+  "images_final": true
+}

@@ -1,0 +1,46 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 747,
+    "healer_slug": "gen-kelsang-wangpo"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "5c5553e5-7ab6-45ed-a1ff-a5bbf9454a01",
+      "slug": "rest-renewal-learn-to-meditate",
+      "title": "Rest & Renewal: Learn to Meditate"
+    },
+    {
+      "table": "courses",
+      "id": "92d1d367-5695-4de0-9328-c0d21baf52e8",
+      "slug": "memento-mori-extracting-profound-meaning-from-art",
+      "title": "Memento Mori: Extracting Profound Meaning from Art"
+    },
+    {
+      "table": "courses",
+      "id": "c1ec3f5a-70ad-4e0f-8aa0-c4700df3e432",
+      "slug": "sunday-friendsgiving-gratitude-and-harmony",
+      "title": "Sunday Friendsgiving - Gratitude and Harmony"
+    },
+    {
+      "table": "courses",
+      "id": "429b695c-2bed-4d9c-8062-abd283f24064",
+      "slug": "an-afternoon-of-purification-introduction-to-vajrasattva-practice",
+      "title": "An Afternoon of Purification - Introduction to Vajrasattva Practice"
+    },
+    {
+      "table": "courses",
+      "id": "f03e186b-b248-4db1-971b-fdd5529448b1",
+      "slug": "targeting-the-illusion-emptiness-course-and-retreat",
+      "title": "Targeting the Illusion: Emptiness Course and Retreat"
+    },
+    {
+      "table": "free_resources",
+      "id": "30b63ba9-fbc5-431b-958b-cb7c1e22eef4",
+      "slug": "prayers-for-world-peace-inner-calm-radiant-joy",
+      "title": "Prayers for World Peace: Inner Calm, Radiant Joy"
+    }
+  ],
+  "at": "2026-11-04T13:46:07.012Z"
+}
