@@ -132,3 +132,19 @@ My suggestion is 1 and 2 together: a run aiming for about 50 more.
   - §18.6 has this sprint's row;
   - §18.7 has the hub queue changes (Mindvalley and Humanity's Team on hold; Evolving Wisdom used with nothing copied).
 - **Sprint folder** `docs/content-audits/hubs-sprint-2/`: brief, runner, queue (90 leads), 75 skips and REPORT.md.
+
+## Update, 4 Nov 2026 (night): live
+
+- **0037** was run by the owner on dev (58, 438, 2) and live (58, 425, 2).
+  - Live read 425 rather than the 424 I predicted. My mistake: I read the count from a range header ("0-424/425") and took 424, when the total was 425.
+  - After the insert, live reads 58, **439**, 2: the 2 hubs plus the 12 new teachers that publish a town.
+- **Owner decisions:**
+  - Hollyhock and Findhorn are Luminary by editorial stature (confirmed).
+  - **Craig Hamilton** is added without the Evolving Wisdom link, on dev and live. Evolving Wisdom is left out.
+  - The left-out items stay out, and Jeralyn Glass, Jamie Butler, Martha Jo Atkins, Laura Inserra and all thin pages are kept.
+  - **Jean Houston** is to be added as an Ascended Master (research under way).
+  - Danielle Van de Velde and Ani Rinchen Khandro are left out for now.
+- **On live:**
+  - both hubs, with their 4 existing teachers linked;
+  - the 15 new teachers: 93 videos, 6 books, 55 offerings and 17 free resources.
+- **Next:** pipelines sprint 1, under the owner's rule change for The Shift Network and Insight Timer lists (README §18.7).
