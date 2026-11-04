@@ -2905,9 +2905,20 @@ Network and Insight Timer sprints carry on in between these. In order:
    `meditation-hubs-sprint-1/progress.json`); Shelly Graf, Narayan Helen
    Liebenson and Matthew Hepburn may now qualify under the centre-inbox rule
    (§18.4).
-6. **Mindvalley:** mostly big names.
-7. **Evolving Wisdom, Humanity's Team.**
-8. **Findhorn Foundation** (Scotland), **Hollyhock** (Canada).
+6. **Mindvalley: on hold, needs written permission** (terms checked 4 Nov
+   2026): use of the site is for personal, non-commercial purposes only;
+   links are welcome only to its main landing pages; anything beyond basic
+   linking, and use of its name, needs prior written authorisation. Nothing
+   taken from it.
+7. **Humanity's Team: on hold, needs written permission** (terms checked
+   4 Nov 2026, the Terms of Use PDF linked from humanitysteam.org): its
+   websites may not be used for any commercial purpose without written
+   approval, and unauthorised linking is prohibited. Nothing taken from it.
+   **Evolving Wisdom:** its terms forbid copying its content only (as with
+   Commune), so it's used, with nothing copied. Hubs sprint 2 (4 Nov 2026).
+8. **Findhorn Foundation** (Scotland), **Hollyhock** (Canada): no restrictive
+   terms; hubs sprint 2 (4 Nov 2026), filled to about 100 from The Shift
+   Network's pipeline (`docs/content-audits/hubs-sprint-2/`).
 9. **Gaia:** with stricter curation; conspiracy and alien content stays
    out (as with Megan SolarGlow). Merged with the Channels sprint, which
    isn't written up in this README yet; record its scope here when it
