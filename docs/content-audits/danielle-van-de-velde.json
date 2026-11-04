@@ -1,0 +1,201 @@
+{
+  "healer": {
+    "healer_slug": "danielle-van-de-velde",
+    "location_source": "https://daniellevandevelde.com/about-dani/",
+    "create": {
+      "name": "Danielle Van de Velde",
+      "bio": "Danielle Van de Velde, who goes by Dani, is a meditation teacher, Reiki master and medium living in Singapore with her family. Before teaching full time she worked for some twenty years in financial services and property, in roles spanning communications, capital raising and HR, across Australia, Europe and the United States, while quietly pursuing meditation and esoteric study on the side. She qualified as a meditation teacher with Louise Gilmore at the Awareness Institute in Sydney, has practised Satyananda and hatha yoga for over two decades, trained in the Usui Reiki lineage, and has since studied mediumship at Arthur Findlay College in England and Jungian thought at the Centre for Applied Jungian Studies.\n\nHer teaching borrows from several traditions, yoga, shamanic journeying and Buddhist heart practices among them, and is aimed at helping people understand their own energy and shift from reacting to life towards meeting it creatively. In Singapore she leads Friday sunrise meditations in parks and on the beach, with the takings given to a monthly charity, as well as Reiki attunement weekends and seasonal ritual workshops; her online courses, circles and masterclasses sit inside her Spirited Living membership. She is the author of Spirited (Balboa Press, 2022), hosts The Modern Crone podcast and records guided meditations for Insight Timer.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local_online",
+      "city": "Singapore",
+      "country": "Singapore",
+      "subjects": [
+        "meditation",
+        "reiki",
+        "mediumship-spirits"
+      ],
+      "website_url": "https://daniellevandevelde.com/",
+      "booking_url": "https://daniellevandevelde.com/offerings/",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "info@daniellevandevelde.com",
+      "image_urls": [
+        "https://daniellevandevelde.com/wp-content/uploads/2023/02/meditation-teacher-speaker-danielle-van-de-velde-5-scaled.jpg",
+        "https://daniellevandevelde.com/wp-content/uploads/2023/02/danielle-van-de-velde-book-spirited.jpg"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "insight-timer",
+      "role": "instructor"
+    }
+  ],
+  "videos": [],
+  "books": [
+    {
+      "title": "Spirited: A Guide to Your Innate Spiritual Design to Transform Your Life",
+      "slug": "spirited-danielle-van-de-velde",
+      "author": "Danielle Van de Velde",
+      "asin": "1982294590",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "Her 2022 book sets out how she understands the spiritual self, the energy body and the way life unfolds, and offers meditation and energy practices to go with each part. It treats meditation as a deliberate habit for moving from reactive patterns into a more open and creative way of living.",
+      "subjects": [
+        "meditation",
+        "spirituality",
+        "energy-medicine"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1982294590.01._SCLZZZZZZZ_.jpg"
+    }
+  ],
+  "courses": [
+    {
+      "title": "The Spirited Living Membership",
+      "url": "https://www.spiritedlivingwithdani.com/",
+      "description": "Her online membership, which holds her self-paced meditation courses such as Discovery and Heart Light, her psychic development circles, live masterclasses and group coaching. Members join a community of fellow practitioners and can take part at their own pace.",
+      "price": "S$88 SGD per month",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "spirituality",
+        "mediumship-spirits"
+      ],
+      "image": "https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/file-uploads/sites/2147681577/images/c1d4dac-63d-ce78-d72f-444626fab51_Danielle_Van_de_Velde.png"
+    },
+    {
+      "title": "Dawn Dreaming Outdoor Charity Meditations",
+      "url": "https://daniellevandevelde.com/dawn-dreaming/",
+      "description": "An hour of sunrise practice on Friday mornings at outdoor spots around Singapore such as Fort Canning, East Coast Beach and the Botanic Gardens, with sharing, breathwork and simple energy exercises. Beginners are welcome, and the fees go to a monthly charity.",
+      "price": "S$40 SGD per session",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "breathwork"
+      ]
+    },
+    {
+      "title": "Traditional Usui Reiki Level 2 Attunements",
+      "url": "https://daniellevandevelde.com/product/traditional-usui-reiki-level-2-attunements-november-27-28/",
+      "description": "A small-group, two-day workshop in Singapore covering the second-degree Usui Reiki symbols, practices and three attunements. After it, and a period of self-practice, students can offer Reiki to others as certified practitioners.",
+      "price": "S$440 SGD",
+      "product_type": "course",
+      "start_date": "2026-11-27",
+      "end_date": "2026-11-28",
+      "subjects": [
+        "reiki",
+        "energy-medicine"
+      ]
+    },
+    {
+      "title": "Sun Magic Workshop: The Sun Wheel of Becoming",
+      "url": "https://daniellevandevelde.com/product/sun-magic-workshop-december-6/",
+      "description": "A two-hour gathering in Singapore themed on Helios, using story, ritual and intuitive exercises, in which each person makes their own Sun Wheel to reflect on what is growing in their life. Net proceeds after venue costs go to charity.",
+      "price": "S$70 SGD",
+      "product_type": "course",
+      "start_date": "2026-12-06",
+      "end_date": "2026-12-06",
+      "subjects": [
+        "spirituality",
+        "ancient-wisdom"
+      ]
+    },
+    {
+      "title": "The Language of the Sleeping Soul",
+      "url": "https://daniellevandevelde.com/product/the-language-of-the-sleeping-soul-12-december/",
+      "description": "A three-hour online workshop on dreams as a place where guides and loved ones in spirit may make contact, and on reading the symbols and impressions they leave. Held live on Zoom.",
+      "price": "S$96 SGD",
+      "product_type": "course",
+      "start_date": "2026-12-12",
+      "end_date": "2026-12-12",
+      "subjects": [
+        "dreamwork",
+        "mediumship-spirits"
+      ]
+    },
+    {
+      "title": "Spirited Masterclass Series: The Year of the Fire Horse in Review with Dani",
+      "url": "https://daniellevandevelde.com/product/spirited-masterclass-series-year-of-the-fire-horse-in-review-with-dani-15-december/",
+      "description": "An evening masterclass on Zoom in which she looks back over the energies and themes of the Year of the Fire Horse. Included free for Spirited Living members.",
+      "price": "S$80 SGD",
+      "product_type": "course",
+      "start_date": "2026-12-15",
+      "end_date": "2026-12-15",
+      "subjects": [
+        "spirituality",
+        "astrology"
+      ],
+      "image": "https://m.media-amazon.com/images/P/1982294590.01._SCLZZZZZZZ_.jpg"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Spirit Guide Journey",
+      "url": "https://insighttimer.com/daniellevandevelde/guided-meditations/spirit-guide-journey-2",
+      "description": "A guided journey to the Upper World in the shamanic manner, meant to help you meet the spirit guide most present in your life now. It can be repeated to deepen that contact.",
+      "featured": true,
+      "resource_type": "meditation",
+      "subjects": [
+        "shamanism",
+        "mediumship-spirits",
+        "meditation"
+      ],
+      "image": "https://libraryitems.insighttimer.com/n8v8s9d5s9z3m1p7u0e0y3t0w4w9n8q0b8f3g5m3/pictures/tiny_square_medium.jpeg"
+    },
+    {
+      "title": "Ho'oponopono",
+      "url": "https://insighttimer.com/daniellevandevelde/guided-meditations/hooponopono-29",
+      "description": "A guided practice built on the Hawaiian prayer of forgiveness, taking responsibility for past words or actions and asking for forgiveness with an open heart.",
+      "featured": false,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation",
+        "self-healing"
+      ],
+      "image": "https://libraryitems.insighttimer.com/s5u1h3v7q4g5p5t2f8d8s5r5n5j7q0t5z4b5x1t9/pictures/tiny_square_medium.jpeg"
+    }
+  ],
+  "sprint": {
+    "sprint": "regional-c-1",
+    "hub": "insight-timer",
+    "rank": 601,
+    "hub_url": "https://insighttimer.com/daniellevandevelde",
+    "insight_timer_url": "https://insighttimer.com/daniellevandevelde",
+    "tier_evidence": "No YouTube channel found. Instagram (@spiritedbydani / @spiritedlivingbydani) and Facebook (danivandeveldethemeditationteacher) linked from her site but not opened (blocked hosts). Insight Timer profile is an empty script page with curl, so followers unreadable; track pages show plays (Spirit Guide Journey 8,120; Ho'oponopono 2,214; 4 Nov 2026), which are not followers. \u2192 0 readable followers \u2192 local_hero",
+    "email": "yes",
+    "email_source": "https://daniellevandevelde.com/retreats/",
+    "contact_form_url": "https://daniellevandevelde.com/contact-us/",
+    "bio_check": "OK: no 8-word runs against 26 source(s)",
+    "flags": [
+      "Tier: no follower counts could be read for any main account (Instagram/Facebook not opened, Insight Timer profile empty with curl); local_hero by default of zero readable followers.",
+      "Insight Timer profile https://insighttimer.com/daniellevandevelde came back as an empty script page and was not retried; her IT presence is confirmed from track pages linked on her own soundtracks page, and the two tracks were chosen by their play counts among the five she links (not necessarily her most-played overall).",
+      "Prices on her site are shown as '$'; SGD is confirmed on her workshops page (SGD70, SGD96) and membership page (SGD88 monthly) and by her Singapore GST number, so all prices are written as S$ SGD.",
+      "Her one-to-one healing sessions page frames illness as a message that clears once inner change happens; that item was left out under the health-claim rule. The rest of her work is meditation, Reiki, mediumship and ritual workshops.",
+      "Email info@daniellevandevelde.com is published as a mailto link on her retreats and energy-healer-certification pages; the contact page itself shows only a form and a support@ address for technical help.",
+      "Book: ISBN-10 1982294590 from her own Amazon link (not opened) and ISBN-13 9781982294595 on her Barnes & Noble link; confirmed on Open Library https://openlibrary.org/books/OL38956322M (title Spirited, publisher Author Solutions LLC, Balboa Press imprint, 2022).",
+      "Photos: both from her own site; same woman in both, the second shows her with copies of her book.",
+      "Base: about page says she is based in Singapore; Dawn Dreaming and Reiki weekends are held in Singapore (Cluny Court venue)."
+    ],
+    "left_out": [
+      "1:1 Healing Private Sessions (/one-to-one-sessions/): page frames healing of physical illness (health-claim rule).",
+      "Return to Heart Retreat, Yogyakarta, 7 to 12 May 2026: past.",
+      "Enter the Mandala flower ceremony (7 Nov 2026): starts by the 7 Nov cut-off, and led by guest teachers.",
+      "Dawn Dreaming dated product pages (13 Nov to 11 Dec): kept once as the undated Dawn Dreaming series page.",
+      "Masterclasses led by guest teachers (Laurent Fontaine 19 Nov, Ainslie Young 28 Jan 'Working with Your Nervous System'); Marie Nadal Sharma trauma masterclass (past, and condition-led).",
+      "Intuitive Healing Level 2 (27 to 28 Nov): overlaps the Reiki Level 2 weekend; left out to avoid a near-duplicate and the borderline 'healing' framing.",
+      "Reiki Level 1 and Intuitive Healing Level 1: 2027 dates not yet published.",
+      "The Modern Crone podcast: no fitting free resource type and not opened on Apple Podcasts.",
+      "Other Insight Timer tracks (Cosmic Orbit Meditation 429 plays, Immersion in Magic 236, Worlds Within the Breath 232 - the last says each breath heals the body)."
+    ],
+    "held": "Held (4 Nov 2026): daniellevandevelde.com serves her photos to curl's default identity but closes the connection for the ingest's honest user agent (SpiritpediaIngest/1.0), as with Ani Rinchen Khandro. No workaround under the standing rule. Options: a photo she sends, hosted by us; her site allowing our user agent; or leaving her out."
+  }
+}

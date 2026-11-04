@@ -1,0 +1,241 @@
+{
+  "healer": {
+    "healer_slug": "julie-peters",
+    "location_source": "https://www.juliepeters.ca/about",
+    "create": {
+      "name": "Julie Peters",
+      "bio": "Julie Peters is a writer, Tarot reader and yoga and meditation teacher who lives in Edmonton, Alberta. She practised yoga and meditation for two decades and for eleven years ran Ocean and Crow, a yoga studio in Vancouver, before moving to Alberta, where she also trained and registered as a counselling therapist. She writes regularly for Spirituality & Health magazine and has a large library of guided meditations on Insight Timer.\n\nHer teaching draws on mythology, folklore and the turning of the seasons. Her books with David & Charles retell goddess stories and mythic figures from many cultures as mirrors for ordinary life, and The Full Moon Yearbook follows the names and rituals that different traditions have given each full moon. She offers process-focused Tarot readings, online or in person in Edmonton, treating the cards as a way into reflection rather than fortune-telling, and runs small online courses on the history and symbolism of the deck. Her free recorded yoga classes, many tied to the lunar phases, are on YouTube, and her short guided meditations range from dream recall to seasonal festivals such as Samhain and Imbolc.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local_online",
+      "city": "Edmonton, Alberta",
+      "country": "Canada",
+      "subjects": [
+        "spirituality",
+        "ancient-wisdom",
+        "yoga"
+      ],
+      "website_url": "https://www.juliepeters.ca/",
+      "booking_url": "https://www.juliepeters.ca/tarot",
+      "youtube_url": "https://www.youtube.com/@JuliePeters",
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "julie@juliepeters.ca",
+      "image_urls": [
+        "https://images.squarespace-cdn.com/content/v1/60ef40f5b68c2913bece6beb/36edc7b2-44d2-438c-a037-3e94c92ee22c/Y+Hanson+Photography+JP+12.jpg?format=1000w",
+        "https://images.squarespace-cdn.com/content/v1/60ef40f5b68c2913bece6beb/55e42a19-a3bd-4312-a00e-defe9f874b43/julieheadshotsmaller1.jpg?format=1000w"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "insight-timer",
+      "role": "instructor"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Ten of Wands: Moon Ritual, Restorative Yin Yoga, and Tarot with Julie Peters: New Moon Eclipse",
+      "url": "https://www.youtube.com/watch?v=FyVU2JEdAco",
+      "subjects": [
+        "yoga",
+        "spirituality"
+      ],
+      "channel": "Julie Peters Wellness"
+    },
+    {
+      "title": "The Six of Wands: Moon Ritual, Yoga Flow, and Tarot with Julie Peters: Waning Full Moon",
+      "url": "https://www.youtube.com/watch?v=P_IRKCEemgw",
+      "subjects": [
+        "yoga",
+        "spirituality"
+      ],
+      "channel": "Julie Peters Wellness"
+    },
+    {
+      "title": "The Queen of Swords: Moon Ritual, Restorative Yoga, and Tarot with Julie Peters: New Moon",
+      "url": "https://www.youtube.com/watch?v=Q9KnZhIMY0w",
+      "subjects": [
+        "yoga",
+        "spirituality"
+      ],
+      "channel": "Julie Peters Wellness"
+    },
+    {
+      "title": "Energy Flow Vinyasa Yoga with Julie Peters: Movement Meditation",
+      "url": "https://www.youtube.com/watch?v=flsH-Z2mhlI",
+      "subjects": [
+        "yoga",
+        "meditation"
+      ],
+      "channel": "Julie Peters Wellness"
+    },
+    {
+      "title": "Lunar Phase Vinyasa Flow with Julie Peters: Waning August Full Moon and Non-Attachment",
+      "url": "https://www.youtube.com/watch?v=ituc5JfUaXY",
+      "subjects": [
+        "yoga"
+      ],
+      "channel": "Julie Peters Wellness"
+    },
+    {
+      "title": "Cooling Restorative Yin Yoga with Julie Peters",
+      "url": "https://www.youtube.com/watch?v=8BhFwYsq3O8",
+      "subjects": [
+        "yoga"
+      ],
+      "channel": "Julie Peters Wellness"
+    }
+  ],
+  "books": [
+    {
+      "title": "Maiden, Warrior, Mother, Crone: Divine Feminine Archetypes for Modern Life",
+      "slug": "maiden-warrior-mother-crone",
+      "author": "Julie Peters",
+      "asin": "1446314596",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "cover": "https://m.media-amazon.com/images/P/1446314596.01._SCLZZZZZZZ_.jpg",
+      "description": "Fresh retellings of goddess myths and legendary women from around the world, each read as a guide to a stage or mood of a woman's life. The stories are paired with reflections on what these figures can teach about strength, loss and change.",
+      "subjects": [
+        "ancient-wisdom",
+        "spirituality"
+      ]
+    },
+    {
+      "title": "Witch, Healer, Priestess, Outcast: Divine Feminine Archetypes for Modern Life",
+      "slug": "witch-healer-priestess-outcast",
+      "author": "Julie Peters",
+      "asin": "1446316564",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "cover": "https://m.media-amazon.com/images/P/1446316564.01._SCLZZZZZZZ_.jpg",
+      "description": "The second book in her archetypes series, gathering lesser-known mythic women whose tales have faded from view. It draws on oral storytelling to look at the shadow and the light in these figures and what they offer readers now.",
+      "subjects": [
+        "ancient-wisdom",
+        "shadow-work"
+      ]
+    },
+    {
+      "title": "The Full Moon Yearbook",
+      "slug": "the-full-moon-yearbook",
+      "author": "Julie Peters",
+      "asin": "1446310639",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "cover": "https://m.media-amazon.com/images/P/1446310639.01._SCLZZZZZZZ_.jpg",
+      "description": "A month-by-month companion to the thirteen full moons of the year, tracing the names that various cultures have given them. Each chapter pairs the folklore behind a moon with simple rituals and reflections for that time of year.",
+      "subjects": [
+        "spirituality",
+        "ancient-wisdom"
+      ]
+    }
+  ],
+  "courses": [
+    {
+      "title": "Divine Feminine in the Tarot",
+      "url": "https://www.juliepeters.ca/divinefemininetarot",
+      "description": "A four-week online course on the goddess myths hidden in the Major Arcana, from Asherah and Isis to Maat and Morgan le Fay. Classes are live with time for discussion and are recorded for those who cannot attend. Beginners and experienced readers are both welcome.",
+      "price": "$200 CAD + tax before 7 January, $250 CAD + tax after",
+      "product_type": "course",
+      "start_date": "2027-01-14",
+      "end_date": "2027-02-04",
+      "subjects": [
+        "ancient-wisdom",
+        "spirituality"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/60ef40f5b68c2913bece6beb/926c6e56-18c4-40ee-9f6a-2f1325c493d2/IMG_7873-1.jpg"
+    },
+    {
+      "title": "Process-Focused Tarot Readings",
+      "url": "https://www.juliepeters.ca/tarot",
+      "description": "One-to-one Tarot sessions on Zoom or in person in Edmonton, in which the cards are drawn and talked through together as a prompt for reflection. Recorded readings that you watch later are also offered at lower prices.",
+      "price": "$140 CAD + tax (live session)",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "spirituality"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/60ef40f5b68c2913bece6beb/03dd42ee-3e10-4de4-82c2-4de32eb5d7f1/IMG_7723.jpg"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "A Guided Meditation for Dream Recall",
+      "url": "https://www.juliepeters.ca/meditations/a-guided-meditation-for-dream-recall",
+      "description": "A slow morning practice for remembering last night's dreams, with a simple way to reflect on them and set an intention for the day.",
+      "featured": true,
+      "resource_type": "meditation",
+      "subjects": [
+        "dreamwork",
+        "meditation"
+      ],
+      "image": "http://static1.squarespace.com/static/60ef40f5b68c2913bece6beb/61ba14e36d779c321947b865/672a41aa8ef2be392ebedff4/1730822852738/unsplash-image-FiFiVf1xHtk.jpg?format=1500w"
+    },
+    {
+      "title": "Guided Meditation: Inviting Intuition at Samhain",
+      "url": "https://www.juliepeters.ca/meditations/guided-meditation-inviting-intuition-at-samhain",
+      "description": "A short seasonal sitting for the Celtic festival that opens the dark half of the year, focusing on the third eye and inner knowing.",
+      "featured": false,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "image": "http://static1.squarespace.com/static/60ef40f5b68c2913bece6beb/61ba14e36d779c321947b865/652c58a534feb52d79b6ebe2/1697405335873/?format=1500w"
+    },
+    {
+      "title": "Guided Meditation: The Calming Power of Water",
+      "url": "https://www.juliepeters.ca/meditations/guided-meditation-the-calming-power-of-water",
+      "description": "An element meditation that uses the image of flowing water to settle irritation and let feelings move.",
+      "featured": false,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation"
+      ],
+      "image": "http://static1.squarespace.com/static/60ef40f5b68c2913bece6beb/61ba14e36d779c321947b865/66267eff2d34534ffc47032a/1713799093793/?format=1500w"
+    }
+  ],
+  "sprint": {
+    "sprint": "regional-b-1",
+    "hub": "insight-timer",
+    "rank": 651,
+    "hub_url": "https://insighttimer.com/juliepeterswellness",
+    "insight_timer_url": "https://insighttimer.com/juliepeterswellness",
+    "tier_evidence": "YouTube @JuliePeters 4.03K (channel header, 4 Nov 2026); Instagram, Facebook and TikTok @juliepeterswellness not opened (blocked sites / login); Insight Timer profile came back as an empty script page → ~4k readable total → local_hero",
+    "email": "yes",
+    "email_source": "https://www.juliepeters.ca/about",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 20 source(s)",
+    "flags": [
+      "She is also a registered counselling therapist and her counselling page lists conditions (anxiety, depression, trauma, chronic pain); I left that strand out entirely and listed her for Tarot, mythology books, yoga and meditation, but a human should confirm her work is not mainly therapy.",
+      "Insight Timer profile (insighttimer.com/juliepeterswellness) returned an empty script page with curl, so it was not read (per brief); her Insight Timer presence is confirmed only by links on her own site, and free resources are her own site's meditation pages rather than Insight Timer track pages.",
+      "Main social counts unreadable: Instagram, Facebook and TikTok were not opened (rule), so the tier rests on YouTube 4.03K alone.",
+      "Open Library: https://openlibrary.org/isbn/9781446314593 , https://openlibrary.org/isbn/9781446310632 , https://openlibrary.org/isbn/9781446316566 (author OL3151455A Julie Peters); ISBNs from David & Charles pages linked on her books page; these are UK-publisher editions, no US edition checked.",
+      "The Full Moon Yearbook's subtitle on the publisher page mentions 'healing' (no condition named); I kept the book under its short title, borderline.",
+      "Book covers not taken: cover set to null.",
+      "Photos are from her own site; the second (headshot at a cafe) looks like an older picture of the same woman, fairly confident but worth a glance.",
+      "Turner Publishing's robots.txt (checked for her SkyLight Paths book) contains text addressed to AI agents about shopping tools; ignored. Its product page then returned 429, so that site was skipped.",
+      "Search results mention a Vancouver yoga teacher and studio owner 'Julie C. Peters'; her own about page says she ran Ocean and Crow studio in Vancouver, so this is very likely the same person, not a duplicate. No Julie Peters in existing-healers.tsv.",
+      "Leads found by web search; the search results surfaced insight-timer-public.firebaseapp.com links, which were not opened."
+    ],
+    "left_out": [
+      "WANT: 8 Steps to Recovering Desire, Passion, and Pleasure After Sexual Assault (recovery after assault: health/trauma rule).",
+      "Secrets of the Eternal Moon Phase Goddesses (SkyLight Paths 2016): ISBN not confirmed; publisher page rate-limited (429) and not retried.",
+      "Secret Tales of the Tarot (David & Charles, ISBN 9781446317464): not found on Open Library (404 for ISBN-13 and ISBN-10).",
+      "Intuitive Somatic Counselling sessions: therapy, and the page lists conditions.",
+      "Secrets of Reading Tarot 8-week course: runs 22 Oct to 10 Dec, already started.",
+      "Coven online gathering: on a break, no current date.",
+      "Guided Meditation for Womb Healing and other condition-adjacent tracks.",
+      "Popcorn Therapy podcast and film-discussion videos on her channel: pop-culture commentary, not teaching.",
+      "Dated yoga class recordings titled with a date (e.g. Sept 16th, Sept 23rd)."
+    ]
+  },
+  "images_final": true
+}

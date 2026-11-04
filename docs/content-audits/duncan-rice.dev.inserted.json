@@ -1,0 +1,28 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 736,
+    "healer_slug": "duncan-rice"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "50adc7ac-b2ab-4d30-95d3-1f59c2caa31f",
+      "slug": "traditional-hatha-yoga-hatha-and-raja-yoga-weekend-retreat",
+      "title": "Traditional Hatha Yoga: Hatha and Raja Yoga Weekend Retreat"
+    },
+    {
+      "table": "courses",
+      "id": "b1f9b1d3-2c15-4fc4-9726-cae2c6823766",
+      "slug": "one-year-traditional-hatha-yoga-teacher-training",
+      "title": "One-Year Traditional Hatha Yoga Teacher Training"
+    },
+    {
+      "table": "courses",
+      "id": "954bd4b7-1739-4f82-aa85-9c8d5ae05341",
+      "slug": "weekly-hatha-yoga-classes-by-donation",
+      "title": "Weekly Hatha Yoga Classes by Donation"
+    }
+  ],
+  "at": "2026-11-04T12:38:04.275Z"
+}

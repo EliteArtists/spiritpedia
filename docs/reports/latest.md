@@ -1,149 +1,105 @@
-# Latest report (3 Nov 2026)
+# Latest report (4 Nov 2026)
 
-Sprint B, also saved as `2026-11-03-sprint-b.md`. Earlier today: `2026-11-03-uk-europe-sprint-2.md` (Sprint A2, live), `2026-11-03-uk-europe-sprint-1.md` (Sprint A, live), `2026-11-03-location-audit.md`, `2026-11-03-regional-coverage.md`.
+Sprint C and the Sprint B top-up, also saved as `2026-11-04-sprint-c.md`. Earlier: `2026-11-03-sprint-b.md` (Sprint B, live 4 Nov), `2026-11-03-uk-europe-sprint-2.md` (Sprint A2, live), `2026-11-03-uk-europe-sprint-1.md` (Sprint A, live), `2026-11-03-regional-coverage.md`.
 
 ---
 
-# Sprint B: US interior and South, Canada, Australia (3 Nov 2026)
+# Sprint C (South Africa, India, Singapore, Dubai) and the Sprint B top-up (4 Nov 2026)
 
-**26 new teachers are on dev**, out of a target of about 35. Nothing is live yet.
-
-**Cities with someone now (14 of 20):**
-- **US:** Chicago, Indianapolis, Detroit, Columbus, Pittsburgh, St. Louis, Houston, Nashville, Charlotte, Kansas City and Phoenix.
-- **Canada:** Montréal and Winnipeg.
-- **Australia:** Perth.
-
-**Still nobody (6):** Dallas, San Antonio, Tampa, Edmonton, Brisbane and the Gold Coast, and Adelaide. See "Why 26".
+**12 new teachers are on dev: 11 for Sprint C and 1 for the top-up (Edmonton).** That's about half of Sprint C's target of 25. Nothing is live yet. One more Sprint C plan (Danielle Van de Velde, Singapore) is held because her site refuses our ingest's photos. **No migration is needed**: every new base matches a town in our places table.
 
 ## Your steps
 
-1. **Run `supabase/migrations/0036_place_aliases_serpentine.sql` on dev** (SQL editor, whole file).
-   - It adds one alias. Ajahn Brahm and Ajahn Brahmali live at Bodhinyana Monastery in Serpentine, Western Australia, a village of under 5,000 people. The alias points it at Baldivis, 15 km away.
-   - The check row should read **55, 413, 2**: aliases; dev listings with a town; of those, still without a place. The two without a place are Salmon, Idaho and "Sussex County", as before.
-2. **Look at the pages on localhost** (list below) and answer the decisions in one message.
-3. **After your OK:** you run 0036 on **live** (check row **55, 387, 2**). Then I insert on live.
+1. **Look at the pages on localhost** (list below) and answer the decisions in one message.
+2. **After your OK** I insert the 12 on live. There's no SQL to run. The live check row (aliases, listings with a town, of those without a place) should then read **55, 399, 2**.
+   - Dev's check row now reads 55, 424, 2.
 
-## The 26 (dev)
+## The 12 (dev)
 
 **On dev:**
-- **Content:** 126 videos, 9 books, 73 offerings and 37 free resources, plus 6 hub links (Insight Timer).
-- **Tiers:** 1 Luminary (Ajahn Brahm, by editorial override) and 25 Local Hero.
-- **Email:** 20 published (several are a centre's or monastery's inbox) and 6 contact form only.
+- **Content:** 74 videos, 6 books, 41 offerings and 7 free resources, plus 1 Insight Timer link (Julie Peters).
+- **Tiers:** all 12 are Local Hero, by readable count. The suggested raises are under the decisions.
+- **Email:** 11 published (7 are a centre's, studio's or school's inbox; each is flagged), 1 contact form only (Duncan Rice, his charity's form).
 
 | City | Teacher | Base as published | Videos · books · offerings · free | Page |
 | :--- | :--- | :--- | :--- | :--- |
-| Chicago | Robert Joshin Althouse (with June Ryushin Tanoue) | Oak Park, Illinois | 5 · 0 · 2 · 1 | http://localhost:3000/healers/robert-joshin-althouse |
-| Chicago | Shodhin Geiman | Evanston, Illinois | 0 · 2 · 1 · 1 | http://localhost:3000/healers/shodhin-geiman |
-| Detroit | Demo Rinpoche | Ann Arbor, Michigan | 9 · 0 · 4 · 2 | http://localhost:3000/healers/demo-rinpoche |
-| Detroit | Joe Reilly | Detroit, Michigan | 0 · 0 · 1 · 3 | http://localhost:3000/healers/joe-reilly |
-| Indianapolis | Gen Kelsang Chokyi | Indianapolis, Indiana | 0 · 0 · 3 · 0 | http://localhost:3000/healers/gen-kelsang-chokyi |
-| Pittsburgh | Andrea Belzer | Pittsburgh, Pennsylvania | 11 · 0 · 5 · 0 | http://localhost:3000/healers/andrea-belzer |
-| St. Louis | Kelley Weber | St. Louis, Missouri | 0 · 0 · 3 · 4 | http://localhost:3000/healers/kelley-weber |
-| Columbus | Gina Kitzmiller | Columbus, Ohio | 4 · 0 · 5 · 3 | http://localhost:3000/healers/gina-kitzmiller |
-| Columbus | Melinda VanKirk | Hilliard, Ohio | 12 · 0 · 2 · 0 | http://localhost:3000/healers/melinda-vankirk |
-| Houston | Anne Carolyn Klein | Houston, Texas | 0 · 5 · 2 · 0 | http://localhost:3000/healers/anne-carolyn-klein |
-| Houston | Gaelyn Godwin | Houston, Texas | 5 · 0 · 1 · 1 | http://localhost:3000/healers/gaelyn-godwin |
-| Houston | Gena Davis | Houston, Texas | 3 · 0 · 4 · 2 | http://localhost:3000/healers/gena-davis |
-| Nashville | Lisa Ernst | Nashville, Tennessee | 0 · 0 · 4 · 3 | http://localhost:3000/healers/lisa-ernst |
-| Nashville | Mikey Noechel | Nashville, Tennessee | 7 · 0 · 3 · 1 | http://localhost:3000/healers/mikey-noechel |
-| Nashville | Andrew Chapman | Nashville, Tennessee | 6 · 0 · 2 · 0 | http://localhost:3000/healers/andrew-chapman |
-| Charlotte | Ayya Sudhamma | Charlotte, North Carolina | 12 · 0 · 1 · 3 | http://localhost:3000/healers/ayya-sudhamma |
-| Kansas City | Ronn Pawo McLane | Overland Park, Kansas | 8 · 0 · 5 · 0 | http://localhost:3000/healers/ronn-pawo-mclane |
-| Kansas City | Debra Busemeyer Baker | Kansas City, Missouri | 10 · 1 · 4 · 0 | http://localhost:3000/healers/debra-busemeyer-baker |
-| Kansas City area | Cindy Novelo | Lawrence, Kansas | 0 · 0 · 3 · 1 | http://localhost:3000/healers/cindy-novelo |
-| Phoenix | Genevieve Tregor | Scottsdale, Arizona | 0 · 0 · 3 · 1 | http://localhost:3000/healers/genevieve-tregor |
-| Montréal | Pascal Auclair | Montréal, Quebec | 10 · 0 · 2 · 1 | http://localhost:3000/healers/pascal-auclair |
-| Montréal | Daryl Lynn Ross | Montréal, Quebec | 8 · 0 · 3 · 1 | http://localhost:3000/healers/daryl-lynn-ross |
-| Montréal | Dawn Mauricio | Montréal, Quebec | 0 · 1 · 2 · 3 | http://localhost:3000/healers/dawn-mauricio |
-| Winnipeg | Kristel Kernaghan | Winnipeg, Manitoba | 3 · 0 · 5 · 0 | http://localhost:3000/healers/kristel-kernaghan |
-| Perth | Ajahn Brahm (Luminary) | Serpentine, WA (→ Baldivis, after 0036) | 6 · 0 · 1 · 3 | http://localhost:3000/healers/ajahn-brahm |
-| Perth | Ajahn Brahmali | Serpentine, WA (→ Baldivis, after 0036) | 7 · 0 · 2 · 3 | http://localhost:3000/healers/ajahn-brahmali |
+| Cape Town | Jim Harrington (yoga, meditation) | Cape Town | 7 · 1 · 3 · 0 | http://localhost:3000/healers/jim-harrington |
+| Durban | Duncan Rice (Yogam Yoga, by donation) | Durban | 0 · 0 · 3 · 0 | http://localhost:3000/healers/duncan-rice |
+| Rishikesh | Swami Atmananda Udasin (Advaita, satsang) | Rishikesh (ashram in Tapovan) | 12 · 0 · 3 · 0 | http://localhost:3000/healers/swami-atmananda-udasin |
+| Rishikesh | Anand Mehrotra (Sattva Yoga Academy) | Rishikesh | 10 · 1 · 5 · 0 | http://localhost:3000/healers/anand-mehrotra |
+| Rishikesh | Swamini Svatmavidyananda (Vedanta) | Rishikesh | 7 · 1 · 2 · 1 | http://localhost:3000/healers/swamini-svatmavidyananda |
+| Delhi | Geshe Dorji Damdul (Tibet House) | New Delhi | 12 · 0 · 1 · 0 | http://localhost:3000/healers/geshe-dorji-damdul |
+| Mumbai | Ira Trivedi (Yog Love) | Mumbai | 3 · 0 · 4 · 0 | http://localhost:3000/healers/ira-trivedi |
+| Bengaluru | Swami Sukhabodhananda | Bengaluru | 5 · 0 · 4 · 0 | http://localhost:3000/healers/swami-sukhabodhananda |
+| Singapore | Wendy Chan (Yoga Seeds) | Singapore | 0 · 0 · 3 · 1 | http://localhost:3000/healers/wendy-chan |
+| Dubai | Diana Azavedo (Radiance of Yoga) | Dubai | 5 · 0 · 5 · 0 | http://localhost:3000/healers/diana-azavedo |
+| Dubai | Dina Ghandour (Jivamukti yoga) | Dubai | 7 · 0 · 6 · 2 | http://localhost:3000/healers/dina-ghandour |
+| Edmonton (top-up) | Julie Peters (Tarot, yoga, writing) | Edmonton | 6 · 3 · 2 · 3 | http://localhost:3000/healers/julie-peters |
 
-Per-teacher tier evidence, contact sources and every research flag are in `docs/content-audits/americas-oceania-sprint-1/REPORT.md`.
+Per-teacher tier evidence, contact sources and every research flag are in `docs/content-audits/africa-asia-sprint-1/REPORT.md` and in each plan.
+
+**Still nobody:**
+- **Sprint C:** Johannesburg, Pretoria, Mysuru and Pune.
+- **Top-up:** Dallas, San Antonio, Tampa, Brisbane/Gold Coast and Adelaide.
 
 ## For you to decide
 
-1. **Tiers.** Ajahn Brahm is set to **Luminary by editorial stature.** All his channels belong to the Buddhist Society of Western Australia (222k YouTube subscribers, not counted). Keep Luminary, or Superhero?
-   - Others the research suggested raising, not applied:
-     - Demo Rinpoche: a recognised reincarnate lama who leads Jewel Heart.
-     - Pascal Auclair: teaches at IMS and Spirit Rock.
-     - Anne Carolyn Klein: Rice professor and author.
-     - Gaelyn Godwin: national Soto Zen roles.
-2. **Fit:**
-   - **Andrea Belzer** offers curse removal and "compassionate depossession". The service itself is left out (its page claims physical healing), but her bio and other work are energy healing and mediumship. Keep?
-   - **Melinda VanKirk** leans towards wellness coaching (burnout, energy). She's kept for her yoga, Ayurveda, Reiki and Human Design work.
-   - **Mikey Noechel**'s outside work is largely addiction recovery, and his podcast is billed as mental health. His items here are clean.
-   - **Joe Reilly** is a Plum Village dharma teacher whose output is mostly music: 4 items, no videos.
-   - **Gena Davis**'s home page mentions "quantum Terahertz healing" and "vibrational medicine". Her items here are contemplative practice, yoga nidra and sound.
-   - **Kristel Kernaghan:** her readings are described as "healing". Her Reiki workshops and an anxiety workshop are left out.
-3. **Thin pages (about 4 items each):**
-   - Gen Kelsang Chokyi: 3 offerings from the Kadampa centre. Resident teachers move between centres.
-   - Genevieve Tregor
-   - Cindy Novelo
-   - Shodhin Geiman
-   - Joe Reilly
-4. **Shared centres:**
-   - Mikey Noechel and Andrew Chapman teach at Wild Heart, Nashville.
-   - Pascal Auclair and Daryl Lynn Ross co-founded True North Insight, Montréal, with Roxanne Dault, who is already listed.
-   - Ajahn Brahm and Ajahn Brahmali share Bodhinyana and the society's inbox.
-5. **Ajahn Brahm's bio** says neutrally that the 2009 bhikkhuni ordination led the Ajahn Chah network to cut ties with him. It also mentions his 2019 Order of Australia medal. Keep or drop the first part?
-6. **Books:**
-   - **Unverified Kindle ASINs:** four of Anne Carolyn Klein's five books are Kindle ASINs linked from her centre's page, which Open Library can't confirm. Strand of Jewels is her translation.
-   - **No books for the two monks:** their publishers' sites block us. Ajahn Brahm's books could be added by hand.
-   - **Left out:** Ronn Pawo McLane's Kindle-only book, and Gina Kitzmiller's memoir (no ISBN published).
-7. **Bases:**
-   - Debra Busemeyer Baker publishes only "the Kansas City area", so I recorded Kansas City, Missouri.
-   - Gena Davis lives in "greater Houston", with sessions in Fulshear.
-   - Andrew Chapman's base is where he teaches (Nashville). His home isn't published.
-8. **Dated items:** Gen Kelsang Chokyi's workshop on 7 Nov 2026 will have passed if live goes in after that date. I'll drop it at the live insert if so.
+1. **Danielle Van de Velde (Singapore) is held.** Her plan is ready: 1 book, 6 offerings and 2 free resources.
+   - Her site has the same problem as Ani Rinchen Khandro's: her photos load for curl's default identity, but the connection closes when the ingest's honest user agent asks for them.
+   - Options:
+     - a photo she sends, hosted by us;
+     - her site allowing our user agent;
+     - or leaving her out.
+2. **Tiers (none raised):**
+   - **Swami Sukhabodhananda:** he has a Wikipedia article and says he has written 119 books. His trust's YouTube channel has 64.7k subscribers, not counted because it's an organisation's.
+   - **Ira Trivedi:** author of eight books, BBC 100 Women 2017. None of her personal counts could be read.
+   - **Anand Mehrotra:** about 21k across his own channel and his academy's.
+3. **Thin pages:**
+   - **Duncan Rice:** 3 offerings only, one photo, his charity's contact form.
+   - **Wendy Chan:** 3 offerings and 1 free resource, one photo, the studio's inbox. Two of her offerings are 2027 intakes of the same teacher training. List her, or the studio (Yoga Seeds) instead?
+4. **Worth a look:**
+   - **Julie Peters** is also a registered counselling therapist. That work is left out, and her listing is about Tarot, yoga and her books. Is the fit OK?
+   - **Swamini Svatmavidyananda:** the Rishikesh ashram names her as its resident teacher, but her organisation is US-based (Georgia and Oregon). Is Rishikesh right as her base?
+   - **Geshe Dorji Damdul** has no site or accounts of his own. His page is built from Tibet House's pages, with its office inbox and its YouTube videos (each video names him as the teacher).
+   - **Dina Ghandour's YouTube channel** includes Gaza vigil videos and talks titled "Decolonising Yoga". None were picked; is the channel link OK under the political-content rule?
+   - **Diana Azavedo's** channel and email are her school's, and some of its videos may be led by her mother.
+   - **Ira Trivedi's** only photo is a 2012 Wikimedia Commons image. Her own sites' images are on a host that refused us.
+5. **Skips you may want to overrule:**
+   - **Acharya Prashant** (Greater Noida): 6.86M on YouTube, with a published base and email. Skipped because his channel mixes Vedanta with commentary on democracy, climate politics and a Ramayan controversy.
+   - **Nancy Zabaneh** (Dubai): a strong page (about 10 clean meditation videos), but her work is presented as Compassionate Inquiry psychotherapy and addiction work.
+   - **Gen Kelsang Wangpo** (Dallas): resident teacher at KMC Texas, with about five dated programmes after 7 Nov. Skipped because one centre's programmes count only once. Should a resident teacher's own centre programmes count separately?
+   - **John de Ruiter** (Edmonton): skipped without research, because of widely reported sexual-assault charges (reported stayed in April 2026) and long-running cult allegations. I think that's right; please confirm.
 
-## Why 26, and six cities empty
+## Why the yield is low
 
-- **The helpers' web-search limit is shared across this session**, so splitting the cities over more helpers didn't help. Several helpers had only 10–20 searches left before it ran out. After that they could only work from leads already found.
-- **Many leads failed the rules:**
-  - therapy or coaching-led practices, and "healing" brands sold on conditions;
-  - teachers with no website of their own (Insight Timer only, Eventbrite only);
-  - teachers who have retired or moved: Ruben Habito to Santa Fe, Eric Harrison retired.
-- **Sites that block us:** Sunny Dawn Johnston, Barbara Brodsky (deepspring.org), Johnathan Woodside and Alexandria LaFaye, plus a news source.
-- **A photo host that refuses the ingest:** bswa.org closes the connection on our ingest, as edinburgh.samye.org did. So Ajahn Vayama and Ajahn Hasapanna had no usable photo and were skipped. The two monks we kept use photos from other hosts.
-- **Next leads for a short top-up** when searches are available again:
-  - **Dallas:** Helen Cortes (Maria Kannon Zen Center).
-  - **Dallas / Fort Worth:** Kadampa Meditation Center Texas; Radiant Heart in Fort Worth.
-  - **Unresearched leads:** Rebekah Marcano, Jenniffer Weigel and Donna Lakes (Chicago); Rachael Tanner-Smith (Nashville); Paulina Perez Gonzalez (Berlin, from A2).
-  - Tampa, Edmonton, Brisbane and Adelaide need fresh searching.
+Web searches worked again, capped at 25 per helper. Most of what they returned for these cities were directories and listings sites (BookRetreats, IKYTA, Justdial and similar), which the rules don't allow.
 
-## Skipped (53)
-
-Each has a file with the reason in `docs/content-audits/americas-oceania-sprint-1/skipped/`. The groups:
-- **No own site, email or contact form** (the largest group).
-- **Mainly therapy, coaching or fitness.**
-- **The health rule:** John Yong So, Ranjit Deora (Charlotte Meditation), Kristy Arbon, Cecilia Shanahan, Jennifer Davoust, Megan Adair, Kara Sherman and others.
-- **No base in the city:** Maurice Harvey-Hall, Peter Radcliffe and Stacy Di Gregorio (now in DC).
-- **Retired, moved, or status unknown:** Ruben Habito, Eric Harrison and Lama Dudjom Dorjee.
-- **Blocked or no usable photo** (above).
-- **Hacked sites:** Thomas J Bushlack's site looks hacked (gambling spam), as with Adam Dacey. He was skipped for other reasons too.
-- **Allison DuBois (Scottsdale medium):** skipped. Her site sells only paid readings, her YouTube is mostly commentary on real criminal cases, and her publisher's site blocked us. List her anyway?
-
-## Changes I made
-
-- **Ronn Pawo McLane:** his site portrait looks AI-generated or heavily edited, so I dropped it. Only his YouTube headshot is used.
+- Every Insight Timer profile tried came back as an empty script page; those were skipped as the brief says.
+- Many named teachers had no site of their own, or a site that blocks us:
+  - robots.txt blocks: akhandayoga.com, nithyashanti, gcmeditation.com.au, Sharmila Mahesh's shala, theredcouchmedium.wordpress.com;
+  - firewall refusals: floridamindfulness.org, kadampa.org, a ClickFunnels page, dharmafarer.org.
+- Skips: 53 for Sprint C and 23 for the top-up, each with its reason in the sprint's `skipped/` folder.
 
 ## Research slips (reported; nothing from them used)
 
-- **Insight Timer, tried another way:**
-  - Two helpers tried WebFetch on an Insight Timer profile after curl returned only the page's script shell. One helper also tried a public mirror of Insight Timer on another host.
-  - The permission check denied all of these, and nothing was fetched.
-  - It wasn't a block, but trying another route breaks the spirit of the standing rule. The brief will say plainly that Insight Timer profiles that won't load with curl are skipped.
-- **Robots.txt read late:** several helpers followed a bare-domain → www redirect, or downloaded photos from image CDNs, without reading that host's robots.txt first. All were checked afterwards and allow it.
-- **Guessed domains:** one helper tried likely domains for a teacher, fetching only their robots.txt. Another fetched a site over plain http after an https certificate error, with the same honest curl.
-- **Crawl delay:** one helper re-fetched a bswa.org page that came back empty, without waiting out its crawl delay the first time.
-- **Instruction-like text:** earthworkmusic.com's robots.txt contains text addressed to AI agents. It was ignored, and nothing else was fetched from that site.
-- **Rules kept:** no fake user agents, no Amazon, no Open Library search and no YouTube search.
+- **Redirects followed before reading the new host's robots.txt:**
+  - melmarieyoga.com → www;
+  - innatebeing.com.au → alisonpotts.com;
+  - sattvayogaacademy.com → anandmehrotra.in;
+  - cbmeditates.com;
+  - vikasmalkani.com → ClickFunnels (refused);
+  - dharmafarer.org → themindingcentre.org (refused).
+
+  The hosts that answered allow access, as checked straight afterwards. The refused ones weren't retried.
+- **An image CDN fetched before its robots.txt was read:** a YouTube avatar (a placeholder, not used).
+- **One robots.txt asked for over plain http** after the https request timed out. It said `Disallow: /`, so that site was skipped.
+- **Open Library's 10-second crawl delay** was missed for one batch of four ISBN lookups.
+- **Guessed domains:** several helpers tried likely domains, reading only robots.txt (or a DNS lookup) first.
+- **Text addressed to AI agents:** Turner Publishing's robots.txt carries shopping and install prompts aimed at AI agents. It was ignored.
+- **Rules kept:** no fake user agents, mirrors, logins, Amazon, Instagram, Facebook or YouTube search; nothing blocked was retried.
 
 ## Also done
 
-- `0036` (above).
-- **README:**
-  - §8.1 covers 0036.
-  - §18.6 has the sprint's row.
-- **The sprint folder,** `docs/content-audits/americas-oceania-sprint-1/`, has the brief, runner, queue (85 leads), skips and REPORT.md.
+- **Sprint B is live** (25 teachers; see `2026-11-03-sprint-b.md`). Andrea Belzer was dropped. README job #26 (affiliate expansion) was added.
+- **New sprint folder** `docs/content-audits/africa-asia-sprint-1/`: brief, runner, queue (helpers' `leads/`), skips and REPORT.md.
+- **Top-up leads** are in `docs/content-audits/americas-oceania-sprint-1/leads/`.

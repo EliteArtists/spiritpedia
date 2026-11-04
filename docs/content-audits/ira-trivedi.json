@@ -1,0 +1,152 @@
+{
+  "healer": {
+    "healer_slug": "ira-trivedi",
+    "location_source": "https://www.iratrivedi.in/bio",
+    "create": {
+      "name": "Ira Trivedi",
+      "bio": "Ira Trivedi is a yoga acharya and writer who lives in Mumbai, where she teaches classical hatha yoga, pranayama and yin yoga from the Yog Love studio on the Versova seafront. Before turning to yoga full time she studied economics at Wellesley College and took an MBA at Columbia, and she has since written eight books, from novels and a study of changing attitudes to marriage in India to children's yoga titles featuring Om the Yoga Dog. She presented yoga programmes on Doordarshan and India Today, and was among the organisers of the first International Day of Yoga gathering in New Delhi in 2015.\n\nHer teaching keeps to the traditional pairing of posture, breath and meditation, with the Bhagavad Gita and Patanjali's Yoga Sutras as the philosophical ground. Students can join her in person in Mumbai, follow live and recorded classes online, or train with her on Yog Love's teacher-training and pranayama courses. She also leads residential retreats around India, and through the Namami Yoga Foundation, the charity she set up, she brings yoga and life-skills classes to children from poorer families.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local_online",
+      "city": "Mumbai, Maharashtra",
+      "country": "India",
+      "subjects": [
+        "yoga",
+        "breathwork",
+        "meditation"
+      ],
+      "website_url": "https://www.iratrivedi.in",
+      "booking_url": "https://www.yoglove.in/studio",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "admin@yoglove.in",
+      "image_urls": [
+        "https://upload.wikimedia.org/wikipedia/commons/e/e2/Ira_Trivedi%2C_May_2012-2.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [
+    {
+      "title": "Yin Yoga Class By Ira Trivedi",
+      "url": "https://www.youtube.com/watch?v=2L_rhRud85o",
+      "subjects": [
+        "yoga"
+      ],
+      "channel": "YOG LOVE"
+    },
+    {
+      "title": "Yoga Nidra with Ira Trivedi",
+      "url": "https://www.youtube.com/watch?v=xCCKmH-K72Q",
+      "subjects": [
+        "yoga",
+        "meditation"
+      ],
+      "channel": "YOG LOVE"
+    },
+    {
+      "title": "Full Moon Yin Yoga & Sound Healing with Ira Trivedi",
+      "url": "https://www.youtube.com/watch?v=LTGhseTR0K4",
+      "subjects": [
+        "yoga",
+        "sound-healing"
+      ],
+      "channel": "YOG LOVE"
+    }
+  ],
+  "books": [],
+  "courses": [
+    {
+      "title": "200 hour Yoga Teacher Training Course with Ira Trivedi",
+      "url": "https://www.yoglove.in/200hrttc",
+      "description": "An online teacher training run over weekends, with live sessions on Zoom and recorded lessons for daily practice in between. It covers asana, pranayama, meditation and an introduction to the Yoga Sutras and the Bhagavad Gita, and leads to a Yoga Alliance RYT 200 certificate.",
+      "price": "INR 49,999 (USD 600 for international students)",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga",
+        "meditation"
+      ],
+      "image": "https://static.wixstatic.com/media/dcf708_c369023de78f42b1bb2a55a856e876e8%7Emv2.jpg/v1/fit/w_2500,h_1330,al_c/dcf708_c369023de78f42b1bb2a55a856e876e8%7Emv2.jpg"
+    },
+    {
+      "title": "Pranayama Coach with Ira Trivedi",
+      "url": "https://www.yoglove.in/pranayama-coach-course",
+      "description": "A self-paced online course in yogic breathing, with recorded video and audio lessons, study notes and a final exam. It works through the main pranayama techniques, kriyas and bandhas and how to teach them to others, ending in a Yoga Alliance-recognised certificate.",
+      "price": "INR 14,999 (one month's access)",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "breathwork",
+        "yoga"
+      ],
+      "image": "https://static.wixstatic.com/media/dcf708_c369023de78f42b1bb2a55a856e876e8%7Emv2.jpg/v1/fit/w_2500,h_1330,al_c/dcf708_c369023de78f42b1bb2a55a856e876e8%7Emv2.jpg"
+    },
+    {
+      "title": "At Home with Ira",
+      "url": "https://www.yoglove.in/at-home-with-ira",
+      "description": "A monthly library of recordings of Ira's live Zoom classes, from hatha and yin sessions to pranayama and meditation. It also includes her 21-day pranayama and meditation programmes and suits beginners and intermediate students practising at home.",
+      "price": "₹999 INR per month",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga",
+        "breathwork",
+        "meditation"
+      ],
+      "image": "https://static.wixstatic.com/media/dcf708_c369023de78f42b1bb2a55a856e876e8%7Emv2.jpg/v1/fit/w_2500,h_1330,al_c/dcf708_c369023de78f42b1bb2a55a856e876e8%7Emv2.jpg"
+    },
+    {
+      "title": "Kerala Yoga Retreat",
+      "url": "https://www.yoglove.in/event-details/kerala-yoga-retreat-3",
+      "description": "A New Year residential retreat with Ira on the Kerala coast near Paravoor. Days combine yoga, pranayama and meditation with an introduction to Kerala's Ayurvedic traditions; meals and lodging are included.",
+      "price": "From INR 45,000 (incl. 18% GST)",
+      "product_type": "retreat",
+      "start_date": "2026-12-30",
+      "end_date": "2027-01-03",
+      "subjects": [
+        "yoga",
+        "meditation"
+      ],
+      "image": "https://static.wixstatic.com/media/11062b_fd12119b8e7c40cb81e3fd6fca7c1c8d~mv2.jpg/v1/fill/w_5205,h_3457,al_c,q_90/11062b_fd12119b8e7c40cb81e3fd6fca7c1c8d~mv2.jpg"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "regional-c-1",
+    "hub": "none",
+    "rank": 504,
+    "hub_url": null,
+    "tier_evidence": "Instagram, Facebook and X: not read (login walls; Instagram and Facebook never opened). YouTube: no personal channel found; the Yog Love studio channel (@yoglove, which she founded) shows 3.73K subscribers (channel header, 4 Nov 2026) but is a studio account, so not counted → total readable 0 → local_hero",
+    "email": "yes",
+    "email_source": "https://www.yoglove.in/contact-us",
+    "contact_form_url": "https://www.iratrivedi.in/",
+    "bio_check": "OK: no 8-word runs against 10 source(s)",
+    "flags": [
+      "Tier counts unreadable for her main accounts (Instagram, Facebook, X need a login), so local_hero rests on nothing readable; she may have a large Instagram following.",
+      "Possible editorial-stature case for the owner: author of eight books with major publishers (Penguin, HarperCollins, Aleph), a Wikipedia article, and named in the BBC 100 Women list in 2017; no tier_override set.",
+      "Email admin@yoglove.in is the Yog Love studio's inbox (shown as 'admin @yoglove.in' on the contact page), not a personal address; her own site has only a contact form.",
+      "Only one photo: the Wikipedia infobox image (Wikimedia Commons, May 2012 talk still), so it is about 14 years old; her own sites' images are on static.wixstatic.com, whose robots.txt returned 403, so they were not fetched and the photo could not be cross-checked against them.",
+      "The three videos are on the Yog Love studio channel, not a personal one; she is the teacher in each.",
+      "The 200-hour TTC page still shows a past batch (June to August 2025); it is listed undated as a repeating course, so check a current batch exists.",
+      "The Pranayama Coach course page lists health benefits (lung function, anxiety, sleep); the item's title and my description make no claims, but it is borderline.",
+      "Kerala retreat page mentions an Ayurveda immersion; kept as it is framed as culture and practice, not treatment.",
+      "Base found city first via web search for Mumbai yoga teachers (no hub); her studio is in Versova, Mumbai, and the Yin TTC also runs in Bandra.",
+      "Overlap: the Delhi group skipped her as rank 402 (skipped/ira-trivedi.json, 'no published base in Delhi', pointing to Mumbai); this plan is the Mumbai group's rank 504, so the two files share a slug and a human should drop or keep that skip file."
+    ],
+    "left_out": [
+      "Books: none could be confirmed on Open Library (Om the Yoga Dog / My Book of Yoga, ISBNs 9780143448297 and 9789353058357 from Penguin India, both 404); India in Love and her novels not checked further; The 10 Minute Yoga Solution left out anyway because its blurb names back pain.",
+      "Yin Yoga Teacher Training (15–16 Aug 2026): dated and already past.",
+      "Govardhan Eco Village retreat (20–22 Nov 2026): tickets shown as not on sale.",
+      "Videos 'SUNDAY PAIN BUT NO SUFFERING', 'Weight Loss Challenge' and the Face Yoga workshop: condition or appearance claims in titles; promo and how-to-book videos not teaching.",
+      "Shakti Breathwork (29 Nov) at the studio: no event page URL captured."
+    ]
+  },
+  "images_final": true
+}

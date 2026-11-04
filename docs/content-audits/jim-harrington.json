@@ -1,0 +1,182 @@
+{
+  "healer": {
+    "healer_slug": "jim-harrington",
+    "location_source": "https://new.jimharringtonyoga.com/",
+    "create": {
+      "name": "Jim Harrington",
+      "bio": "Jim Harrington is a yoga and meditation teacher who has made Cape Town his home for around two decades. His own practice began in India in 1987, and he later trained through a two-year apprenticeship in Sydney in the late 1990s, before formal teaching certificates were common. Over the years he has drawn on Himalayan hatha and pranayama, Ashtanga Vinyasa, Taoist Chi Gung and newer hybrid styles, and he also brings a background in bodywork to how he guides students in posture.\n\nToday he runs teacher trainings, workshop series and retreats from the Valley Shala in Hout Bay, alongside live and recorded online training. His Yoga Helix sequence, a flowing practice built step by step, sits at the centre of much of his teaching and is shared on his ReUnion YouTube channel. He leads trips abroad too, including a yoga and trekking journey to a Himalayan valley where Hindu and Buddhist cultures meet, and as a keen surfer he has run yoga and surf retreats for many years. He is the author of Yoga for Sports Performance, a manual for teachers and coaches who work with athletes.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local_online",
+      "city": "Cape Town, Western Cape",
+      "country": "South Africa",
+      "subjects": [
+        "yoga",
+        "meditation",
+        "breathwork"
+      ],
+      "website_url": "https://new.jimharringtonyoga.com/",
+      "booking_url": "https://new.jimharringtonyoga.com/events/",
+      "youtube_url": "https://www.youtube.com/@reunionyogaandmeditation427",
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "jim@jimharringtonyoga.com",
+      "image_urls": [
+        "https://www.yogaforsports.co.za/wp-content/uploads/2021/06/Jim_4368_2912gray-768x771-1.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [
+    {
+      "title": "Latest Yoga Helix Form -Sections 1, 2, 3  and 4(a)",
+      "url": "https://www.youtube.com/watch?v=WZga78R4oWo",
+      "subjects": [
+        "yoga"
+      ],
+      "channel": "ReUnion Yoga and meditation"
+    },
+    {
+      "title": "Section 1 - Beginning the binary program . flexion and extension",
+      "url": "https://www.youtube.com/watch?v=GmHOUVcYlak",
+      "subjects": [
+        "yoga"
+      ],
+      "channel": "ReUnion Yoga and meditation"
+    },
+    {
+      "title": "Section 4 (a) Rolling to rotation and and (b) Balance to Meru Dandhasana",
+      "url": "https://www.youtube.com/watch?v=Nzk88O7A07U",
+      "subjects": [
+        "yoga"
+      ],
+      "channel": "ReUnion Yoga and meditation"
+    },
+    {
+      "title": "Helix - Section 2 - Archer to Side angles",
+      "url": "https://www.youtube.com/watch?v=LDL8sLynp9E",
+      "subjects": [
+        "yoga"
+      ],
+      "channel": "ReUnion Yoga and meditation"
+    },
+    {
+      "title": "Section 7 (a) Scorpion Bows",
+      "url": "https://www.youtube.com/watch?v=w7WHgfM4Irw",
+      "subjects": [
+        "yoga"
+      ],
+      "channel": "ReUnion Yoga and meditation"
+    },
+    {
+      "title": "Basic TTC practice",
+      "url": "https://www.youtube.com/watch?v=WktesIFzjq0",
+      "subjects": [
+        "yoga"
+      ],
+      "channel": "ReUnion Yoga and meditation"
+    },
+    {
+      "title": "Section 7 (b ) Pigeon Raja Kappotasana",
+      "url": "https://www.youtube.com/watch?v=p-9h7SAAx3Y",
+      "subjects": [
+        "yoga"
+      ],
+      "channel": "ReUnion Yoga and meditation"
+    }
+  ],
+  "books": [
+    {
+      "title": "Yoga for Sports Performance",
+      "slug": "yoga-for-sports-performance",
+      "author": "Jim Harrington",
+      "asin": "1848194064",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "A practical manual for yoga teachers, coaches and bodyworkers on adapting yoga for people who play sport, with chapters for runners, cyclists, swimmers, tennis players and others. It joins classical hatha practice with what sports science says about movement and breath, and adds guidance on steadying the mind.",
+      "subjects": [
+        "yoga",
+        "breathwork"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1848194064.01._SCLZZZZZZZ_.jpg"
+    }
+  ],
+  "courses": [
+    {
+      "title": "200HR Yoga Teacher Training (Full-Time Intensive)",
+      "url": "https://new.jimharringtonyoga.com/events/200hr-yoga-teacher-training/",
+      "description": "A three-week, full-time Yoga Alliance 200-hour training held in person at the Valley Shala in Hout Bay, with around 30 hours of online coursework before or after. The emphasis is on building a steady personal practice of postures, breathing and meditation first, and learning to teach from there.",
+      "price": "ZAR 26,800 (early-bird rates published)",
+      "product_type": "course",
+      "start_date": "2027-03-01",
+      "end_date": "2027-03-21",
+      "subjects": [
+        "yoga",
+        "meditation",
+        "breathwork"
+      ],
+      "image": "https://new.jimharringtonyoga.com/wp-content/uploads/2025/07/cropped-JimHarringtonYoga_WebHeader-1.jpg"
+    },
+    {
+      "title": "India Retreat: Roots and Traditions of Yoga",
+      "url": "https://new.jimharringtonyoga.com/events/india-retreat/",
+      "description": "A ten-day journey from Manali into the Gandhari Valley in the Pangi region of the Indian Himalaya, mixing daily yoga with village stays, temple visits and a short tented trek. It looks at the Vedic and Tibetan Buddhist cultures behind yoga, and can be taken on its own or as part of his advanced training.",
+      "price": "ZAR 19,660 (early-bird rates published)",
+      "product_type": "retreat",
+      "start_date": "2027-06-15",
+      "end_date": "2027-06-25",
+      "subjects": [
+        "yoga",
+        "meditation",
+        "ancient-wisdom"
+      ],
+      "image": "https://new.jimharringtonyoga.com/wp-content/uploads/2025/07/cropped-JimHarringtonYoga_WebHeader-1.jpg"
+    },
+    {
+      "title": "Yoga Labs – Workshop series Capetown",
+      "url": "https://new.jimharringtonyoga.com/events/yoga-labs-workshop-series/",
+      "description": "Saturday afternoon workshops in Hout Bay that take one family of postures at a time and study it in depth, from the mechanics of the joints to the energetic locks and the stories behind the pose names. Each lab runs for three hours.",
+      "price": "ZAR 400",
+      "product_type": "course",
+      "start_date": "2026-11-28",
+      "end_date": "2026-11-28",
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://new.jimharringtonyoga.com/wp-content/uploads/2025/07/cropped-JimHarringtonYoga_WebHeader-1.jpg"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "regional-c-1",
+    "hub": "none",
+    "rank": 205,
+    "hub_url": null,
+    "tier_evidence": "YouTube @reunionyogaandmeditation427 98 subscribers (channel header, 4 Nov 2026); no Instagram/Facebook/X links found on his site and those platforms were not opened → ~98 total → local_hero",
+    "email": "yes",
+    "email_source": "https://new.jimharringtonyoga.com/",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 8 source(s)",
+    "flags": [
+      "The /about, /contact and /services pages on new.jimharringtonyoga.com are unedited theme placeholders (a fictional nutrition coach 'Lumora', a sample US address and support@exampledomain.com); none of that was used. His real bio, base and email are on the home and event pages.",
+      "Base is published as 'settled in Cape Town 20 years ago'; classes are at the Valley Shala in Hout Bay (a Cape Town suburb), so city recorded as Cape Town, Western Cape.",
+      "Only one usable photo: a black-and-white headshot on his Yoga for Sports site (yogaforsports.co.za, linked from his own site and naming him); the other site images are group class shots and the YouTube avatar is a letter placeholder.",
+      "The YouTube channel is branded 'ReUnion Yoga and meditation' (his studio name, linked from his own event pages; one title is 'Jim - Padmasana'); counted as his own account.",
+      "His sister site Yoga for Sports includes a 'Working with Injuries' page and he describes himself as a remedial therapist as well as a yoga teacher; his main site is yoga teaching and training, so I judged the work not mainly therapy. Nothing condition-led was picked.",
+      "Book ISBN-10 1848194064 converted from the ISBN-13 9781848194069 his book page links (Woodslane); confirmed on Open Library https://openlibrary.org/isbn/1848194064.json (Yoga for Sports Performance, Jim Harrington, 2020, cover id 12411923). Subtitle 'A Guide for Yoga Therapists and Bodyworkers' names an audience, not a condition. His site links an Amazon ebook ASIN B08R5DTKL6 (not opened).",
+      "200HR training page header still says 'March 7th 2026' while the body and home page say 1 to 21 March 2027; I used the 2027 dates. The India retreat is given as 15 to 24 June in the header and 15 to 25 June 2027 in the text; I used 25 June.",
+      "Yoga Labs gives 'November 28' with no year; taken as 28 Nov 2026 (next date of a series that ran July to September 2026)."
+    ],
+    "left_out": [
+      "Part-time Yoga Teacher Training (events/1685, June to 22 Nov weekends): already under way.",
+      "Next Helix Workshop Series (November Wednesdays in Hout Bay): has started or starts before 7 Nov 2026, no exact start date.",
+      "Hands on Adjustments (Feb 2026) and Yoga and Surf Retreat in Rote Island (Oct 2026): passed.",
+      "Shorter YouTube clips (under about 2 minutes, 'Movement snack' GIFs) and date-titled recordings with no clear teaching title.",
+      "No free meditations or downloads found on his sites; online training mentioned on the home page has no own page or price."
+    ]
+  },
+  "images_final": true
+}

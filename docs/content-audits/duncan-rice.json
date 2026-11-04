@@ -1,0 +1,105 @@
+{
+  "healer": {
+    "healer_slug": "duncan-rice",
+    "location_source": "https://yogamyoga.com/",
+    "create": {
+      "name": "Duncan Rice",
+      "bio": "Duncan Rice is a hatha yoga teacher in Durban and the principal teacher of Yogam Yoga, a registered charity that runs donation-based classes across the city and up the coast to Umhlanga and Ballito. Yoga came to him first through his father, who taught it in Kolkata, and he later spent years in India himself, training at Kaivalyadhama in Lonavala, at Parmarth Niketan in Rishikesh, where he learned the Kriya Yoga meditation methods of Paramahansa Yogananda, and with Bharath Shetty in Mysuru. He traces his lineage to Swami Sivananda of Rishikesh.\n\nHis classes keep a traditional shape: postures, breath work, mudras and bandhas leading into meditation, framed by Patanjali's eight limbs. He is especially fond of pranayama and sitting practice, and the timetable grades classes from gentle to strong so that newcomers and older students can take part. Seva, or selfless service, sits at the centre of the school: classes run on donations, members help with food parcels and after-school tuition in poorer communities, and the year-long teacher training charges only for its materials. He also leads weekend retreats at the Buddhist Retreat Centre in Ixopo, and some of his Musgrave classes are streamed live.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local_online",
+      "city": "Durban, KwaZulu-Natal",
+      "country": "South Africa",
+      "subjects": [
+        "yoga",
+        "meditation",
+        "breathwork"
+      ],
+      "website_url": "https://yogamyoga.com/",
+      "booking_url": "https://yogamyoga.com/timetable/",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": "https://www.facebook.com/tradyoga",
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": null,
+      "image_urls": [
+        "https://yogamyoga.com/wp-content/uploads/2025/02/duncanyoga.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Traditional Hatha Yoga: Hatha and Raja Yoga Weekend Retreat",
+      "url": "https://www.brcixopo.co.za/eventdetail/1334/traditional-hatha-and-raja-yoga.html",
+      "description": "A residential weekend at the Buddhist Retreat Centre near Ixopo, open to beginners as well as regular practitioners. Days move through cleansing practices, postures, breath control, mudras and bandhas, then into guided sitting meditation in the hall and walking in the labyrinth.",
+      "price": "2 days accommodation + R350 ZAR surcharge",
+      "product_type": "retreat",
+      "start_date": "2027-02-12",
+      "end_date": "2027-02-14",
+      "subjects": [
+        "yoga",
+        "meditation"
+      ],
+      "image": "https://www.brcixopo.co.za/images/header/header25.jpg"
+    },
+    {
+      "title": "One-Year Traditional Hatha Yoga Teacher Training",
+      "url": "https://yogamyoga.com/training/",
+      "description": "A teacher training spread over a full year of Saturday mornings in Durban, covering yoga philosophy and lifestyle, the main schools of yoga, postures, pranayama, mudras, bandhas, cleansing techniques and anatomy. Tuition is given free and the fee covers the course material; trainees are asked to attend regular classes and to give time back to the school as service.",
+      "price": "R1,300 ZAR",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://yogamyoga.com/wp-content/uploads/2026/06/Teacher-Training.jpg"
+    },
+    {
+      "title": "Weekly Hatha Yoga Classes by Donation",
+      "url": "https://yogamyoga.com/timetable/",
+      "description": "Group hatha classes held through the week at venues in Musgrave, Glenwood, Durban North, Umhlanga, Ballito, Chatsworth, Queensburgh and Mount Edgecombe. Each class is marked mild, medium or strong so students can choose their level, and the Musgrave sessions are also streamed live.",
+      "price": "By donation",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga",
+        "meditation"
+      ],
+      "image": "https://yogamyoga.com/wp-content/uploads/2025/02/home-page-header-1.jpg"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "regional-c-1",
+    "hub": "none",
+    "rank": 301,
+    "hub_url": "https://www.brcixopo.co.za/eventdetail/1334/traditional-hatha-and-raja-yoga.html",
+    "tier_evidence": "No YouTube channel, Instagram, X or TikTok of his own found; Facebook page facebook.com/tradyoga not opened (Facebook blocked to agents) so its count can't be read → 0 readable followers → local_hero",
+    "email": "contact form",
+    "email_source": null,
+    "contact_form_url": "https://yogamyoga.com/contact/",
+    "bio_check": "OK: no 8-word runs against 8 source(s)",
+    "flags": [
+      "Found through the KwazuluSpirit Festival 2026 programme (kwazuluspirit.com/programme/) and the Buddhist Retreat Centre, Ixopo's own event pages; the BRC is not a Spiritpedia listing, so teaches_at is empty.",
+      "Yogam Yoga is a charity (NPC) with several teachers; listed as Duncan, its principal teacher, and the contact form is the school's rather than his personal one.",
+      "Base: the school's home page says it is based in Durban; his own classes run at venues across greater Durban, so recorded as Durban, KwaZulu-Natal.",
+      "local_online because the Musgrave classes are broadcast on Facebook Live as well as taught in person; the Facebook page itself was not opened.",
+      "The teacher training page still describes the Feb-Dec 2026 run (already started), while its image names a 2027 course; listed undated as a course that repeats each year. Check before ingest.",
+      "Only one photo used: the yogamyoga.com seated headshot. Another site photo shows him with a student (two people) and the BRC thumbnail is under 300 px.",
+      "Thin listing: three offerings and no videos, books or free resources; the YouTube video embedded on his home page (1fTyCSGCB2w, 'Sadhana S10 EP01 Segment 2', African Lotus Productions) is on another channel and it isn't clear he is its main speaker, so left out."
+    ],
+    "left_out": [
+      "YouTube video 1fTyCSGCB2w (SABC 'Sadhana' segment on the African Lotus Productions channel): not his channel and his role in it unconfirmed.",
+      "Yoga Journal blog posts on yogamyoga.com: articles, not practices.",
+      "Yoga Alliance profile: directory, not used as a source.",
+      "BRC retreat blurb wording about calming anxieties: not repeated in the description (health-claim rule)."
+    ]
+  },
+  "images_final": true
+}

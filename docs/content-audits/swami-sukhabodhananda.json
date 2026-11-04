@@ -1,0 +1,168 @@
+{
+  "healer": {
+    "healer_slug": "swami-sukhabodhananda",
+    "location_source": "https://www.swamisukhabodhananda.com/contact",
+    "create": {
+      "name": "Swami Sukhabodhananda",
+      "bio": "Swami Sukhabodhananda is a Vedanta teacher based in Bengaluru, the city where he was born in 1955. As a young man he went to Sandeepany Sadhanalaya in Mumbai to study under Swami Chinmayananda, who sent him out to teach the Upanishads and the Bhagavad Gita. He went on to found Prasanna Trust in Bengaluru, which runs his teaching alongside schools support and food programmes, and he has written well over a hundred short books in English and several Indian languages, from commentaries on the Gita and Bhaja Govindam to his popular 'Relax Please' series.\n\nHis style is practical rather than devotional: he asks students to test the teachings against their own experience instead of taking them on faith, and he often draws on business and sporting examples, having coached company leaders and an IPL cricket side. He gives free public Gita talks in Indian cities, leads retreats near Bengaluru, and teaches online through live morning sessions and a fortnightly study circle. Online festival programmes for Navaratri, Shivaratri and Guru Purnima bring meditation and scripture study together.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local_online",
+      "city": "Bengaluru, Karnataka",
+      "country": "India",
+      "subjects": [
+        "ancient-wisdom",
+        "spirituality",
+        "meditation"
+      ],
+      "website_url": "https://www.swamisukhabodhananda.com",
+      "booking_url": "https://www.swamisukhabodhananda.com/courses",
+      "youtube_url": "https://www.youtube.com/@PrasannaTrust",
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "contact@swamiji.org",
+      "image_urls": [
+        "https://www.swamisukhabodhananda.com/swamiji_main.jpeg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [
+    {
+      "title": "GITA 4.34 EXPLAINED LIKE NEVER BEFORE | Pranipatena, Pariprashnena, Sevaya",
+      "url": "https://www.youtube.com/watch?v=tWjVQOJXeuE",
+      "subjects": [
+        "ancient-wisdom",
+        "spirituality"
+      ],
+      "channel": "Prasanna trust"
+    },
+    {
+      "title": "Why Your Mind Keeps You Stuck | Krishna’s Secret to Breakthrough Thinking",
+      "url": "https://www.youtube.com/watch?v=qneUa67JP-I",
+      "subjects": [
+        "ancient-wisdom",
+        "spirituality"
+      ],
+      "channel": "Prasanna trust"
+    },
+    {
+      "title": "How Many of You Are Really Seeing This Flower? | Krishna’s Teaching to Arjuna",
+      "url": "https://www.youtube.com/watch?v=J2NpnHN-VzY",
+      "subjects": [
+        "ancient-wisdom",
+        "mindfulness"
+      ],
+      "channel": "Prasanna trust"
+    },
+    {
+      "title": "NAVARATRI EXPLAINED LIKE NEVER BEFORE | BIGGEST LESSON : Why Pleasure Is Not Joy",
+      "url": "https://www.youtube.com/watch?v=WkWoVGHVpZ4",
+      "subjects": [
+        "spirituality",
+        "ancient-wisdom"
+      ],
+      "channel": "Prasanna trust"
+    },
+    {
+      "title": "DROP THE SALT! | Stop Living in the Past. Start Living in the Present.",
+      "url": "https://www.youtube.com/watch?v=uhpWL6Pgpl8",
+      "subjects": [
+        "mindfulness",
+        "spirituality"
+      ],
+      "channel": "Prasanna trust"
+    }
+  ],
+  "books": [],
+  "courses": [
+    {
+      "title": "Prasanna Esoteric Club (PEC)",
+      "url": "https://www.swamisukhabodhananda.com/courses/prasanna-esoteric-club-pec",
+      "description": "A live online study circle with Swamiji, meeting for ninety minutes on alternate Tuesdays. Sessions look at how thought, emotion and habit work and how plain observation changes them, without asking for belief or set rituals; fees also support Prasanna Trust's food programme.",
+      "price": "From ₹3,699 INR",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "spirituality",
+        "consciousness"
+      ],
+      "image": "https://www.swamisukhabodhananda.com/swaminame.png"
+    },
+    {
+      "title": "Spiritual Morning Retreat – Awaken Clarity & Inner Strength",
+      "url": "https://www.swamisukhabodhananda.com/courses/spiritual-morning-retreat-awaken-clarity-inner-strength",
+      "description": "An online morning programme mixing recorded sessions with live classes led by Swamiji. Each session includes guided meditation and practical teaching on relationships, money and inner life, aimed at starting the day with a settled mind.",
+      "price": "From ₹199 INR",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "image": "https://www.swamisukhabodhananda.com/swaminame.png"
+    },
+    {
+      "title": "CXO 1-on-1 with Swami Sukhabodhananda",
+      "url": "https://www.swamisukhabodhananda.com/courses/cxo-1-on-1-with-swami-sukhabodhananda",
+      "description": "Weekly early-morning Friday sessions for company leaders, applying Vedantic ideas to decision-making and steadiness at work. Recordings stay available to members.",
+      "price": "From ₹10,000 INR",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "spirituality",
+        "life-coaching"
+      ],
+      "image": "https://www.swamisukhabodhananda.com/swaminame.png"
+    },
+    {
+      "title": "Effective Living Through Bhagavad Gita with Swami Sukhabodhananda Ji",
+      "url": "https://www.swamisukhabodhananda.com/events/effective-living-through-bhagavad-gita-with-swami-sukhabodhananda-ji",
+      "description": "A free evening discourse in Navi Mumbai on putting the Gita's teaching into daily practice, part of a public Gita lecture series. All are welcome; registration is through the event page.",
+      "price": "Free",
+      "product_type": "course",
+      "start_date": "2027-01-16",
+      "end_date": "2027-01-16",
+      "subjects": [
+        "ancient-wisdom",
+        "spirituality"
+      ],
+      "image": "https://lfnqcrfkjfgwuiuyatsk.supabase.co/storage/v1/object/public/media/events/1784873131380-qfx9n2gaf.jpeg"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "regional-c-1",
+    "hub": "none",
+    "rank": 508,
+    "hub_url": null,
+    "tier_evidence": "YouTube @PrasannaTrust (his trust's channel, linked from his site's home page) 64.7K subscribers (channel header, 4 Nov 2026), not counted as it is an organisation account; Instagram, Facebook, X: not read (login walls; Instagram and Facebook never opened) → readable personal total 0 (64.7K if the trust channel were counted) → local_hero either way",
+    "email": "yes",
+    "email_source": "https://www.swamisukhabodhananda.com/contact",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 11 source(s)",
+    "flags": [
+      "Possible editorial-stature case for the owner: Wikipedia article, says he has written 119 books, spoke at Davos 2005, and his trust's channel has 64.7K subscribers; no tier_override set.",
+      "YouTube channel is Prasanna Trust's (his own charitable trust); every video is him teaching, so it is used as youtube_url and for videos, but its subscribers are not counted toward tier.",
+      "Email contact@swamiji.org is an office address on a different domain from his website; the trust's own site also publishes support@prasannatrust.com.",
+      "Base: he was born in Bengaluru and his contact page gives Prasanna Trust, Bangalore; Nirguna Mandir in Koramangala is the trust's venue there.",
+      "One photo only (site's main portrait, 7360 px, large file); the about-page images are collages and group shots, not used.",
+      "The Spiritual Morning Retreat page lists 'vibrant health… beyond disease' among its benefits; my description makes no health claim, but the page itself is borderline.",
+      "Videos are short teaching clips (2.5 to 10 minutes) from the latest uploads; a most-viewed sort wasn't available from the page, so better-known longer talks may exist.",
+      "Found city first via web search (no hub); his site was confirmed as official through the 'Official website' link on his Wikipedia article."
+    ],
+    "left_out": [
+      "Books: his site sells many English titles (Meditation, Karma Yoga, Bhaja Govindam, Wordless Wisdom…) but its pages publish no ISBNs; Wikipedia lists ISBNs for Bhaja Govindam (Jaico) and Looking at Life Differently, but those aren't from his or the publisher's page, so none were confirmed; 'Stress Management' would be left out anyway as a condition-led title.",
+      "E-Lab Bengaluru 2026 retreat (17–19 Sept 2026): past.",
+      "From Burnout to Brilliance workshop, Bay Area (8 Nov 2026): US tour stop, and 'burnout' in the title.",
+      "Vadodara Gita talk (6 Dec 2026): left out to keep one dated public talk; Online Utsavs with 'dates coming soon' left out.",
+      "Videos with hurt, pain, suffering or diet in the title, and clips under about 2 minutes, left out."
+    ]
+  },
+  "images_final": true
+}
