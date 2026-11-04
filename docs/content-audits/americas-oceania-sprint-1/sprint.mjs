@@ -20,6 +20,13 @@ const [cmd, from, to] = process.argv.slice(2);
 const envName = process.argv[process.argv.indexOf('--env') + 1];
 
 const progress = JSON.parse(fs.readFileSync(`${DIR}/progress.json`, 'utf8'));
+// Helpers add their leads in leads/<first rank>.json (a list of queue entries); fold in any new ranks.
+for (const f of fs.existsSync(`${DIR}/leads`) ? fs.readdirSync(`${DIR}/leads`).filter((n) => n.endsWith('.json')) : []) {
+  for (const q of JSON.parse(fs.readFileSync(`${DIR}/leads/${f}`, 'utf8'))) {
+    if (!progress.queue.some((e) => e.rank === q.rank)) progress.queue.push(q);
+  }
+}
+progress.queue.sort((a, b) => a.rank - b.rank);
 const plans = {};
 for (const f of fs.readdirSync(AUDITS)) {
   if (!f.endsWith('.json') || f.includes('.inserted') || f.includes('rolled-back')) continue;

@@ -333,3 +333,29 @@ step, never in the same command.
 When finished, reply with one line per teacher:
 `<rank> <name> → <slug>.json | tier | V/B/O/F counts | email yes/contact form | bio check OK | flags: n`
 or `<rank> <name> → SKIPPED: reason`.
+
+## Top-up (4 Nov 2026): the six empty cities
+
+Owner, 4 Nov 2026: top up Dallas, San Antonio, Tampa, Edmonton, Brisbane/Gold
+Coast and Adelaide alongside Sprint C. Everything above applies, with these
+changes:
+
+- **You find your own leads.** Use at most **25 web searches** in total, with
+  the city in the query (`insighttimer.com meditation teacher Tampa`, `Reiki
+  master teacher Edmonton`, `meditation centre Adelaide teachers`). Never
+  use a site's own search page, and never open
+  `insight-timer-public.firebaseapp.com` or any other mirror.
+- **Check they aren't listed already:**
+  `/private/tmp/claude-501/-Users-SundaySouLounge-Sites-spiritpedia/1c8d8473-2fb4-4889-ac09-5e475bd51fa9/scratchpad/existing-healers.tsv`.
+- **Write your leads** to `docs/content-audits/americas-oceania-sprint-1/leads/<your first rank>.json`
+  (a JSON list of queue entries numbered from your first rank, the same keys
+  as `progress.json`'s entries, without status, plan or skip_reason), one per
+  person you research, including skips. Rank ranges: 351–399 Dallas and San
+  Antonio; 451–499 Tampa; 651–699 Edmonton; 751–799 Brisbane/Gold Coast and
+  Adelaide.
+- **Aim for about 2 listings per city**; stop after about 10 leads.
+- **Dated offerings** that start by 7 Nov 2026 are left out.
+- **Bases:** `"Dallas, Texas"`, `"San Antonio, Texas"`, `"Tampa, Florida"`,
+  `"Edmonton, Alberta"`, `"Brisbane, Queensland"`, `"Gold Coast, Queensland"`,
+  `"Adelaide, South Australia"` (or the neighbouring town they publish).
+- Working files in `rb-work-<your first rank>/`, as above.
