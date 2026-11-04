@@ -1,0 +1,45 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 761,
+    "healer_slug": "jay-vidyarthi"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "ef69bacc-e4dd-43d1-a55d-c7df59fa2adb",
+      "slug": "reclaim-your-mind-finding-rest-and-play-in-a-wired-world-2",
+      "title": "Reclaim Your Mind: Finding Rest and Play in a Wired World"
+    },
+    {
+      "table": "free_resources",
+      "id": "2d88f005-68d7-46c4-be73-e633895a7268",
+      "slug": "doing-nothing-at-all",
+      "title": "Doing Nothing At All"
+    },
+    {
+      "table": "free_resources",
+      "id": "a0cb839d-9734-4966-bc10-7187c93d47d7",
+      "slug": "screen-inquiry-mindful-of-technology",
+      "title": "Screen Inquiry - Mindful Of Technology"
+    },
+    {
+      "table": "free_resources",
+      "id": "5d262bb9-7108-4ee9-b672-2d4135a61844",
+      "slug": "calm-without-control",
+      "title": "Calm Without Control"
+    },
+    {
+      "table": "free_resources",
+      "id": "ba284eaf-fb48-4228-8bf7-1a7b73a10ffb",
+      "slug": "stop-trying",
+      "title": "Stop Trying"
+    },
+    {
+      "table": "hub_teachers",
+      "id": "02224a27-89a5-4bae-8e0b-42233262cfaf",
+      "title": "jay-vidyarthi teaches at Hollyhock"
+    }
+  ],
+  "at": "2026-11-04T14:34:12.073Z"
+}

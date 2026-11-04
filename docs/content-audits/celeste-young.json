@@ -10,7 +10,11 @@
       "availability": "local_online",
       "city": "Los Angeles, California",
       "country": "United States",
-      "subjects": ["mindfulness", "meditation", "spiritual-awakening"],
+      "subjects": [
+        "mindfulness",
+        "meditation",
+        "spiritual-awakening"
+      ],
       "website_url": "https://www.celesteyoung.com/",
       "booking_url": "https://www.celesteyoung.com/events",
       "youtube_url": null,
@@ -26,7 +30,10 @@
     }
   },
   "teaches_at": [
-    { "hub": "hollyhock", "role": "instructor" }
+    {
+      "hub": "hollyhock",
+      "role": "instructor"
+    }
   ],
   "videos": [],
   "books": [],
@@ -39,7 +46,11 @@
       "product_type": "retreat",
       "start_date": "2027-05-21",
       "end_date": "2027-05-26",
-      "subjects": ["meditation", "mindfulness"]
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://b2797010.assetcdn.net/2.0/2797010/wp-content/uploads/2026/09/Celeste-Young-bio-photo-web-300x300.jpg?lossy=1&strip=1&webp=1"
     },
     {
       "title": "Opening to Inner & Outer Change: A Life Balance Retreat at Hollyhock",
@@ -49,7 +60,11 @@
       "product_type": "retreat",
       "start_date": "2027-05-27",
       "end_date": "2027-05-30",
-      "subjects": ["mindfulness", "life-coaching"]
+      "subjects": [
+        "mindfulness",
+        "life-coaching"
+      ],
+      "image": "http://static1.squarespace.com/static/5894cdea46c3c49482372e4b/5894ce1617bffc8959c4315f/6a8e0842c8ddd01bab19c790/1789470062837/CORTES+ISLAND+IMAGE+2024.png?format=1500w"
     },
     {
       "title": "Wise Intention in the New Year Weekend Retreat",
@@ -59,7 +74,11 @@
       "product_type": "retreat",
       "start_date": "2027-01-16",
       "end_date": "2027-01-17",
-      "subjects": ["meditation", "mindfulness"]
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "http://static1.squarespace.com/static/5894cdea46c3c49482372e4b/5894ce1617bffc8959c4315f/698009578816d6398450fe6b/1790296794081/benedict+canyon.jpg?format=1500w"
     },
     {
       "title": "Weekend Retreat with Celeste & Phillip Moffitt",
@@ -69,7 +88,11 @@
       "product_type": "retreat",
       "start_date": "2027-04-10",
       "end_date": "2027-04-11",
-      "subjects": ["meditation", "mindfulness"]
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "http://static1.squarespace.com/static/5894cdea46c3c49482372e4b/5894ce1617bffc8959c4315f/6aa097bc9895114bc4d8b0e3/1789466010682/benedict+canyon.jpg?format=1500w"
     },
     {
       "title": "Love & Awareness: The Heart That Knows",
@@ -79,7 +102,11 @@
       "product_type": "retreat",
       "start_date": "2027-07-15",
       "end_date": "2027-07-21",
-      "subjects": ["meditation", "mindfulness"]
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "http://static1.squarespace.com/static/5894cdea46c3c49482372e4b/5894ce1617bffc8959c4315f/6a8e0ba453fca5215851e340/1792959741652/IMG_1103.jpg?format=1500w"
     },
     {
       "title": "Resting in Equanimity: Silent Insight Meditation & Yoga Retreat in France",
@@ -89,7 +116,12 @@
       "product_type": "retreat",
       "start_date": "2027-09-27",
       "end_date": "2027-10-04",
-      "subjects": ["meditation", "mindfulness", "yoga"]
+      "subjects": [
+        "meditation",
+        "mindfulness",
+        "yoga"
+      ],
+      "image": "http://static1.squarespace.com/static/5894cdea46c3c49482372e4b/5894ce1617bffc8959c4315f/6a107e693edf2a150070b7c5/1788212595827/Screenshot+2026-05-22+at+9.10.25%E2%80%AFAM.png?format=1500w"
     },
     {
       "title": "Online: 6th Annual International Insight Retreat",
@@ -99,7 +131,11 @@
       "product_type": "course",
       "start_date": "2027-10-22",
       "end_date": "2027-10-26",
-      "subjects": ["meditation", "mindfulness"]
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "http://static1.squarespace.com/static/5894cdea46c3c49482372e4b/5894ce1617bffc8959c4315f/6ac7edae51e07018b2a28ada/1792250912911/International+Spring+Insight+Zoom+foto+%3A%29+.png?format=1500w"
     },
     {
       "title": "New Years Retreat: The Four Protective Meditations",
@@ -109,7 +145,11 @@
       "product_type": "retreat",
       "start_date": "2027-12-28",
       "end_date": "2028-01-02",
-      "subjects": ["meditation", "spirituality"]
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "image": "http://static1.squarespace.com/static/5894cdea46c3c49482372e4b/5894ce1617bffc8959c4315f/679c64312f95671364b458ee/1790371593980/IMG_3800.jpeg?format=1500w"
     },
     {
       "title": "Drop in Meditation & Dharma",
@@ -119,7 +159,11 @@
       "product_type": "course",
       "start_date": null,
       "end_date": null,
-      "subjects": ["meditation", "mindfulness"]
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/5894cdea46c3c49482372e4b/1487298752480-605ISERKZ8KQMNIQ9209/IMG_7433.jpg"
     },
     {
       "title": "Life Balance Sessions",
@@ -129,7 +173,11 @@
       "product_type": "course",
       "start_date": null,
       "end_date": null,
-      "subjects": ["life-coaching", "mindfulness"]
+      "subjects": [
+        "life-coaching",
+        "mindfulness"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/5894cdea46c3c49482372e4b/1637980692670-0VFCP2K6MF7CCQEBPV1I/maxresdefault.jpg"
     }
   ],
   "free_resources": [
@@ -139,7 +187,11 @@
       "description": "Three short guided meditations from Celeste, on the breath, the body and loving-kindness, each between twelve and fifteen minutes. They play on her website, with more of her recordings on InsightLA's audio pages.",
       "featured": true,
       "resource_type": "meditation",
-      "subjects": ["meditation", "mindfulness"]
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/5894cdea46c3c49482372e4b/1604167791593-MJVAWA7Z80QWUJQI0DCB/IMG_3603.jpg"
     }
   ],
   "sprint": {
@@ -168,5 +220,6 @@
       "Private Dharma mentoring and Workspace (corporate) sessions: mentoring is listed as fully booked and corporate work is not public teaching.",
       "No YouTube videos found (no channel on her site; one web search found only Dharma Seed and InsightLA audio pages); no books."
     ]
-  }
+  },
+  "images_final": true
 }

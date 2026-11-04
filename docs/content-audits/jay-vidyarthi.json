@@ -1,0 +1,130 @@
+{
+  "healer": {
+    "healer_slug": "jay-vidyarthi",
+    "location_source": "https://insighttimer.com/jayvidyarthi/guided-meditations/doing-nothing-at-all",
+    "create": {
+      "name": "Jay Vidyarthi",
+      "bio": "Jay Vidyarthi is a Canadian meditation teacher and designer whose work sits where contemplative practice meets everyday technology. He has meditated since 2008 and has trained with teachers from Unified Mindfulness, in which he is certified to teach, and has also studied with monastics and teachers linked to the Monastic Academy, the Mind & Life Institute and Vipassana International. His teaching is secular and practical, built around open presence, clear seeing of emotions and an easy, unforced kind of awareness. Alongside it he runs Still Ape, a small studio that has helped design meditation apps, retreat-booking tools and other wellbeing products.\n\nHis book Reclaim Your Mind sets out seven ways to keep the good parts of phones, games and social media while drawing kinder boundaries around the rest, without shame about screen time. He calls himself an attention activist and teaches through guided practices on Insight Timer, talks, workshops and residential retreats, including a five-day programme at Hollyhock on Cortes Island that mixes guided sitting, nature walks, play, journaling and discussion away from devices. His recorded meditations tend to be gentle and experimental, inviting listeners to stop striving, rest in not knowing, or look honestly at how their screens shape their days.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "worldwide",
+      "city": "Kingston, Ontario",
+      "country": "Canada",
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "website_url": "https://www.jayvidyarthi.com/",
+      "booking_url": "https://www.jayvidyarthi.com/",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": null,
+      "image_urls": [
+        "https://hollyhock.ca/wp-content/uploads/2026/09/Jay-Vidyarthi.png"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "hollyhock",
+      "role": "instructor"
+    }
+  ],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Reclaim Your Mind: Finding Rest and Play in a Wired World",
+      "url": "https://hollyhock.ca/programs/8808/freedom-of-attention-27/",
+      "description": "A five-day residential retreat at Hollyhock on Cortes Island about meeting technology with more choice and less guilt. Guided meditations, mindful walks, partner exercises, journaling and playful group work are all done without devices in the room.",
+      "price": "All-inclusive package (tuition, lodging and meals); price depends on accommodation and is shown at registration",
+      "product_type": "retreat",
+      "start_date": "2027-09-19",
+      "end_date": "2027-09-24",
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "image": "https://b2797010.assetcdn.net/2.0/2797010/wp-content/uploads/2026/09/Jay-Vidyarthi-300x300.png?lossy=1&strip=1&webp=1"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Doing Nothing At All",
+      "url": "https://insighttimer.com/jayvidyarthi/guided-meditations/doing-nothing-at-all",
+      "description": "A free guided practice of about twenty minutes on Insight Timer that invites you to put down the effort of self-improvement and simply be. It suits anyone whose meditation has started to feel like another task on the list.",
+      "featured": true,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://libraryitems.insighttimer.com/x8r3u2a0n0s9r1x2k6w7e7h1p0f8z0w0k1s5u6v1/pictures/tiny_square_medium.jpeg"
+    },
+    {
+      "title": "Screen Inquiry - Mindful Of Technology",
+      "url": "https://insighttimer.com/jayvidyarthi/guided-meditations/screen-inquiry-mindful-of-technology",
+      "description": "A longer guided reflection on your relationship with your devices. It looks at the physical and online spaces you spend time in and what they reveal about your habits and values.",
+      "featured": false,
+      "resource_type": "meditation",
+      "subjects": [
+        "mindfulness"
+      ],
+      "image": "https://libraryitems.insighttimer.com/k0g3k3j8n2m0w4l0q8z9d6d9t7d1a4n4s2g3t8r6/pictures/tiny_square_medium.jpeg"
+    },
+    {
+      "title": "Calm Without Control",
+      "url": "https://insighttimer.com/jayvidyarthi/guided-meditations/calm-without-control",
+      "description": "A guided session working with sensations in the body to grow more at ease with uncertainty and discomfort. It is aimed at staying steady when circumstances are out of your hands.",
+      "featured": false,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://libraryitems.insighttimer.com/jmVQq2wdV9NufbhrdqNK/pictures/tiny_square_medium.jpeg"
+    },
+    {
+      "title": "Stop Trying",
+      "url": "https://insighttimer.com/jayvidyarthi/guided-meditations/stop-trying",
+      "description": "A short experiment in dropping the effort to meditate at all and letting whatever arises be as it is. Jay contrasts this with trying to do nothing, which still involves effort.",
+      "featured": false,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://libraryitems.insighttimer.com/xU09Ot2WCEiavI0wE6ua/pictures/tiny_square_medium.jpeg"
+    }
+  ],
+  "sprint": {
+    "sprint": "hubs-2",
+    "hub": "hollyhock",
+    "rank": 3,
+    "hub_url": "https://hollyhock.ca/presenter/jay-vidyarthi/",
+    "tier_evidence": "Insight Timer profile (insighttimer.com/jayvidyarthi) came back as an empty script page (not read, per brief); Instagram @jay.vidyarthi linked from his site but not opened (blocked host); no YouTube channel found on his site (4 Nov 2026) → 0 readable followers → local_hero",
+    "email": "contact form",
+    "email_source": null,
+    "contact_form_url": "https://www.jayvidyarthi.com/#contact",
+    "bio_check": "OK: no 8-word runs against 9 source(s)",
+    "flags": [
+      "Regional: Kingston, Ontario (published as his location on his Insight Timer teacher card, 'Kingston, ON, Canada').",
+      "Borderline fit: much of his site is product-design and consulting work (Still Ape); his teaching is secular mindfulness (certified Unified Mindfulness teacher, Insight Timer teacher, Hollyhock retreat). His design portfolio includes a legal psilocybin-therapy client (Odyssey) and FDA-cleared therapeutics, which are client projects, not his teaching; left out of the listing.",
+      "Thin-ish listing: one hub retreat and four free Insight Timer meditations; his book could not be included (see left_out).",
+      "Only one photo: the Hollyhock presenter photo shows him holding a banana in front of his mouth like a smile; it is clearly him but playful. His own site's images are on framerusercontent.com, whose robots.txt returned 403, so they were not fetched.",
+      "Follower counts unreadable for all main accounts (Instagram blocked, Insight Timer empty page).",
+      "Contact is a form in the Contact section of his single-page site (no published email)."
+    ],
+    "left_out": [
+      "Reclaim Your Mind: Seven Strategies to Enjoy Tech Mindfully (ISBN-10 1069099503 from the ISBN-13 9781069099501 on his retailer links): 404 on Open Library, so not added.",
+      "I Don't Know (Insight Timer): its description is framed around anxiety.",
+      "Sonic Cradle breath-controlled soundscapes on Insight Timer: art-installation recordings rather than teaching.",
+      "Speaking and corporate training: no public offering page or price.",
+      "Substack essays (attentionactivist.substack.com): substack.com is a blocked host, not opened.",
+      "Images on framerusercontent.com: robots.txt refused (403), not fetched."
+    ]
+  },
+  "images_final": true
+}

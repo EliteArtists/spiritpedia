@@ -10,7 +10,11 @@
       "availability": "local_online",
       "city": "Findhorn",
       "country": "United Kingdom",
-      "subjects": ["spirituality", "sound-healing", "mysticism"],
+      "subjects": [
+        "spirituality",
+        "sound-healing",
+        "mysticism"
+      ],
       "website_url": "https://sacredsongs.net/",
       "booking_url": "https://sacredsongs.net/events/index.html",
       "youtube_url": "https://www.youtube.com/@BarbaraSwetina",
@@ -25,13 +29,20 @@
     }
   },
   "teaches_at": [
-    { "hub": "findhorn-foundation", "role": "instructor" }
+    {
+      "hub": "findhorn-foundation",
+      "role": "instructor"
+    }
   ],
   "videos": [
     {
       "title": "Crossing the Threshold 2025 In Conversation with Barbara Swetina & Jilani Cordelia - Song & Dance",
       "url": "https://www.youtube.com/watch?v=cNe_809OQ7o",
-      "subjects": ["spirituality", "mysticism"]
+      "subjects": [
+        "spirituality",
+        "mysticism"
+      ],
+      "channel": "The Centrepiece Sessions"
     }
   ],
   "books": [],
@@ -44,7 +55,11 @@
       "product_type": "retreat",
       "start_date": "2026-12-28",
       "end_date": "2027-01-03",
-      "subjects": ["spirituality", "mysticism"]
+      "subjects": [
+        "spirituality",
+        "mysticism"
+      ],
+      "image": "https://findhorn-foundation.secure.retreat.guru/wp-content/uploads/sites/3129/2026/09/unnamed.jpg"
     },
     {
       "title": "Homecoming in Song & Stillness",
@@ -54,7 +69,12 @@
       "product_type": "retreat",
       "start_date": "2027-07-12",
       "end_date": "2027-07-18",
-      "subjects": ["sound-healing", "spirituality", "meditation"]
+      "subjects": [
+        "sound-healing",
+        "spirituality",
+        "meditation"
+      ],
+      "image": "https://sacredsongs.net/events/homecoming27/header.png"
     }
   ],
   "free_resources": [
@@ -64,7 +84,11 @@
       "description": "An online singing circle that began during the pandemic and carries on Findhorn's devotional singing for people anywhere. Sessions open with an attunement and move through songs, prayers and the odd poem, using Barbara's community songbooks. Joining is by email and gifts are welcome but not required.",
       "featured": true,
       "resource_type": "practice",
-      "subjects": ["spirituality", "sound-healing"]
+      "subjects": [
+        "spirituality",
+        "sound-healing"
+      ],
+      "image": "https://sacredsongs.net/events/singing_sessions/singing_headersh.png"
     }
   ],
   "sprint": {
@@ -99,5 +123,6 @@
       "MusicTrain videos on @swetinamusic3380: music-notation teaching, not spiritual.",
       "Video 'Glimpses of The Universal Hall, Findhorn' (linked from her site): another channel's film about the hall, she is not the main speaker."
     ]
-  }
+  },
+  "images_final": true
 }

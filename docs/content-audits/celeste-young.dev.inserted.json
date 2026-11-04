@@ -1,0 +1,81 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 759,
+    "healer_slug": "celeste-young"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "4a502926-bd5d-49c9-b459-601f032b1e8e",
+      "slug": "awake-in-our-lives-a-silent-meditation-retreat-2",
+      "title": "Awake in Our Lives: A Silent Meditation Retreat"
+    },
+    {
+      "table": "courses",
+      "id": "e8c627f7-6759-42e0-83ee-570ebe4da03b",
+      "slug": "opening-to-inner-outer-change-a-life-balance-retreat-at-hollyhock",
+      "title": "Opening to Inner & Outer Change: A Life Balance Retreat at Hollyhock"
+    },
+    {
+      "table": "courses",
+      "id": "32990ec3-2719-4637-953b-662411d054be",
+      "slug": "wise-intention-in-the-new-year-weekend-retreat",
+      "title": "Wise Intention in the New Year Weekend Retreat"
+    },
+    {
+      "table": "courses",
+      "id": "75faefa9-9b94-4cc9-a92b-85d1c65d30a9",
+      "slug": "weekend-retreat-with-celeste-phillip-moffitt",
+      "title": "Weekend Retreat with Celeste & Phillip Moffitt"
+    },
+    {
+      "table": "courses",
+      "id": "c21bf989-09a2-4787-aebf-e9ffd15cc2b0",
+      "slug": "love-awareness-the-heart-that-knows",
+      "title": "Love & Awareness: The Heart That Knows"
+    },
+    {
+      "table": "courses",
+      "id": "ccb393c5-e014-4d51-969f-f3a138e57378",
+      "slug": "resting-in-equanimity-silent-insight-meditation-yoga-retreat-in-france",
+      "title": "Resting in Equanimity: Silent Insight Meditation & Yoga Retreat in France"
+    },
+    {
+      "table": "courses",
+      "id": "d9be3f70-60e9-4923-8826-16ebd9e1a4a8",
+      "slug": "online-6th-annual-international-insight-retreat",
+      "title": "Online: 6th Annual International Insight Retreat"
+    },
+    {
+      "table": "courses",
+      "id": "2432b5f4-d986-48fe-a8e3-ed0be09b58e5",
+      "slug": "new-years-retreat-the-four-protective-meditations",
+      "title": "New Years Retreat: The Four Protective Meditations"
+    },
+    {
+      "table": "courses",
+      "id": "da910d8d-9617-42c0-997e-551609ca2dcd",
+      "slug": "drop-in-meditation-dharma",
+      "title": "Drop in Meditation & Dharma"
+    },
+    {
+      "table": "courses",
+      "id": "5c983c0d-6386-424c-b741-f60e38866b00",
+      "slug": "life-balance-sessions",
+      "title": "Life Balance Sessions"
+    },
+    {
+      "table": "free_resources",
+      "id": "19d350ff-9995-4e06-811a-46feca424755",
+      "slug": "guided-audio",
+      "title": "Guided Audio"
+    },
+    {
+      "table": "hub_teachers",
+      "id": "4414ccef-c33a-4abb-9830-08df2ace7402",
+      "title": "celeste-young teaches at Hollyhock"
+    }
+  ],
+  "at": "2026-11-04T14:33:55.838Z"
+}
