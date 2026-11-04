@@ -1,0 +1,121 @@
+{
+  "healer": {
+    "healer_slug": "peter-bolland",
+    "location_source": "https://peterbolland.com/my-story",
+    "create": {
+      "name": "Peter Bolland",
+      "bio": "Peter Bolland is a San Diego philosophy professor, writer and singer-songwriter who teaches world religions, Asian philosophy and mythology. The son of Dutch immigrants, he grew up in Ventura, California, studied religious studies at UC Santa Barbara and took a master's in philosophy at San Diego State. He began teaching at Southwestern College in 1991 and has been a full-time professor there since 2001, offering courses in world religions, Asian thought, mythology and ethics.\n\nOutside the college he gives talks and short courses around San Diego, at lifelong-learning programmes such as UC San Diego's Osher Institute and Oasis, at the city's Vedanta monastery and at progressive churches and spiritual centres, where he is often a Sunday speaker. His subjects range from the great philosophers to sacred archetypes in myth. He describes his own path as free-range, drawing on many traditions, and he leads beginner-friendly guided meditations that are free on Insight Timer. His book The Seven Stone Path, fourteen years in the writing, explores what wisdom is and why it matters, and he offers a free workbook for readers and study groups. He has also written columns on philosophy and world spirituality and records Americana music.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local_online",
+      "city": "San Diego, California",
+      "country": "United States",
+      "subjects": [
+        "ancient-wisdom",
+        "spirituality",
+        "meditation"
+      ],
+      "website_url": "https://peterbolland.com/",
+      "booking_url": "https://peterbolland.com/classes-talks-meditation-and-musical-performance",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "peterbolland@cox.net",
+      "image_urls": [
+        "https://images.zoogletools.com/u/396491/b5409a984a10a274e4416f3364939478eef859be/original/bolland9-15-17.jpg",
+        "https://images.zoogletools.com/s:bzglfiles/u/396491/39853d86a90a30c046a2d4b80421921d7de59dee/original/img-1591.jpg/!!/b%3AW1sicmVzaXplIiwxODAwXSxbIm1heCJdLFsid2UiXV0%3D/meta%3AeyJzcmNCdWNrZXQiOiJiemdsZmlsZXMifQ%3D%3D.jpg"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "insight-timer",
+      "role": "instructor"
+    }
+  ],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "The Great Philosophers: Jean-Paul Sartre",
+      "url": "https://peterbolland.com/event/6714931/777882600/the-great-philosophers-jean-paul-sartre",
+      "description": "A two-hour talk on Sartre's existentialism for UC San Diego's Osher Lifelong Learning Institute in La Jolla, part of his series on major thinkers.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": "2026-11-09",
+      "end_date": "2026-11-09",
+      "subjects": [
+        "spirituality",
+        "consciousness"
+      ],
+      "image": "https://images.zoogletools.com/s:bzglfiles/u/396491/4c41176e834af7a5bd9b115832650178089dad07/original/img-1591copysquare.jpg/!!/meta%3AeyJzcmNCdWNrZXQiOiJiemdsZmlsZXMifQ%3D%3D.jpg"
+    },
+    {
+      "title": "The Great Philosophers: Albert Camus",
+      "url": "https://peterbolland.com/event/6714932/777882602/the-great-philosophers-albert-camus",
+      "description": "A two-hour session at UC San Diego's Osher Lifelong Learning Institute on Camus and his response to the absurd, continuing the same series.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": "2026-11-23",
+      "end_date": "2026-11-23",
+      "subjects": [
+        "spirituality",
+        "consciousness"
+      ],
+      "image": "https://images.zoogletools.com/s:bzglfiles/u/396491/4c41176e834af7a5bd9b115832650178089dad07/original/img-1591copysquare.jpg/!!/meta%3AeyJzcmNCdWNrZXQiOiJiemdsZmlsZXMifQ%3D%3D.jpg"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Peter Bolland on Insight Timer",
+      "url": "https://insighttimer.com/peterbolland",
+      "description": "His free guided meditations on the Insight Timer app, in thirty- and fifteen-minute lengths aimed at beginners.",
+      "featured": false,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://images.zoogletools.com/u/396491/b5409a984a10a274e4416f3364939478eef859be/original/bolland9-15-17.jpg"
+    },
+    {
+      "title": "The Seven Stone Path Workbook",
+      "url": "https://peterbolland.com/seven-stone-path-workbook",
+      "description": "A free PDF companion to his book on wisdom, for personal study or for running a book club or discussion group.",
+      "featured": true,
+      "resource_type": "download",
+      "subjects": [
+        "ancient-wisdom",
+        "spirituality"
+      ],
+      "image": "https://images.zoogletools.com/s:bzglfiles/u/396491/4c41176e834af7a5bd9b115832650178089dad07/original/img-1591copysquare.jpg/!!/meta%3AeyJzcmNCdWNrZXQiOiJiemdsZmlsZXMifQ%3D%3D.jpg"
+    }
+  ],
+  "sprint": {
+    "sprint": "pipelines-1",
+    "hub": "insight-timer",
+    "rank": 166,
+    "hub_url": "https://insighttimer.com/peterbolland",
+    "tier_evidence": "Insight Timer 1.3k followers (queue entry, read 1 Nov 2026); no YouTube channel linked; no other social counts readable → ~1.3k readable total → local_hero",
+    "email": "yes",
+    "email_source": "https://peterbolland.com/contact",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 6 source(s)",
+    "flags": [
+      "Base: his My Story page says the family moved to San Diego in 1987 and he teaches at Southwestern College and venues around San Diego.",
+      "He is a philosophy and religion professor as much as a spiritual teacher; the two current offerings are philosophy talks (Sartre, Camus) at UCSD's Osher Institute, where registration links were 'coming soon'. A human may want to judge fit.",
+      "Thin listing: 2 dated talks, a free workbook and Insight Timer.",
+      "Email peterbolland@cox.net is shown on the contact page as 'Contact Form For: peterbolland@cox.net' (a personal address).",
+      "peterbolland.com robots.txt asks for a 10-second crawl delay; pages were fetched at least 11 seconds apart.",
+      "Photos: two portraits from his own site (same man)."
+    ],
+    "left_out": [
+      "Book The Seven Stone Path: An Everyday Journey to Wisdom (Author Solutions, 2023): only 979 ISBN-13s on Open Library (9798765240113 etc.), so no ISBN-10, and no ASIN linked from his site.",
+      "The Dying God, the Trickster, and Sacrifice (San Diego Oasis, 4 Nov 2026): started before 7 Nov.",
+      "Semester courses at Southwestern College: college-credit courses, not open offerings of his own.",
+      "Music, lyrics, Bandcamp and Substack (substack.com not opened)."
+    ]
+  },
+  "images_final": true
+}

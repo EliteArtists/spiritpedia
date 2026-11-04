@@ -1,0 +1,220 @@
+{
+  "healer": {
+    "healer_slug": "chamgon-kenting-tai-situpa",
+    "location_source": "https://www.palpung.org/english/monastery/default.asp",
+    "create": {
+      "name": "Chamgon Kenting Tai Situpa",
+      "bio": "Chamgon Kenting Tai Situpa, often called Tai Situ Rinpoche, is the twelfth holder of the Tai Situpa line and one of the senior lineage masters in the Karma Kagyu tradition of Tibet. Born in 1954 in the Derge region of eastern Tibet, he was recognised as a small child by the 16th Karmapa and enthroned at Palpung Monastery, then left Tibet at the age of six and grew up in Sikkim, where he received the lineage's teachings from the Karmapa. In 1975 he began building Palpung Sherabling in the Kangra valley of Himachal Pradesh, now his monastic seat, and in 1992 he took a central part in recognising the 17th Karmapa.\n\nSince his first European tour in 1980 he has taught Buddhist philosophy and meditation across Europe, North America and Asia. He is especially associated with Mahamudra, the Kagyu teachings on the nature of mind, which he gives in multi-year transmission cycles, and with Discovering the Buddha Within, a graded meditation curriculum open to newcomers and long-term practitioners alike. He started the Maitreya Institute for dialogue between faiths and the Pilgrimage for Active Peace, and his talks have been gathered in books such as Awakening the Sleeping Buddha and Relative World, Ultimate Mind. He is also a painter, calligrapher and poet.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "worldwide",
+      "city": "Upper Bhattu, Himachal Pradesh",
+      "country": "India",
+      "subjects": [
+        "meditation",
+        "spiritual-awakening",
+        "ancient-wisdom"
+      ],
+      "website_url": "https://www.palpung.org/",
+      "booking_url": "https://www.palpung.org/registration/eng/default.asp",
+      "youtube_url": "https://www.youtube.com/@Palpung",
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "palpungsherablingoffice@gmail.com",
+      "image_urls": [
+        "https://www.palpung.org/chineset/taisitupa/taisitupa_default_main.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [
+    {
+      "title": "Public Audience and Teaching || Guru Vajradhara His Holiness the 12th Chamgon Kenting Tai Situpa",
+      "url": "https://www.youtube.com/watch?v=mwS8qaYbOdg",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "channel": "Palpung"
+    },
+    {
+      "title": "Four Noble Truths and Eightfold Noble Path | Guru Vajradhara His Holiness Chamgon Kenting Tai Situpa",
+      "url": "https://www.youtube.com/watch?v=F7num9a8zvs",
+      "subjects": [
+        "ancient-wisdom",
+        "spirituality"
+      ],
+      "channel": "Palpung"
+    },
+    {
+      "title": "A Teaching on the Seven Branch Prayer from His Holiness the 12th Chamgon Kenting Tai Situpa",
+      "url": "https://www.youtube.com/watch?v=FHPUXuHosrY",
+      "subjects": [
+        "spirituality",
+        "meditation"
+      ],
+      "channel": "Palpung"
+    },
+    {
+      "title": "The Empowerment of the Five-Deity Mandala of Tara || His Holiness Chamgon Kenting Tai Situpa",
+      "url": "https://www.youtube.com/watch?v=0fwiYaN2Uqc",
+      "subjects": [
+        "spirituality",
+        "mysticism"
+      ],
+      "channel": "Palpung"
+    }
+  ],
+  "books": [
+    {
+      "title": "Awakening the Sleeping Buddha",
+      "slug": "awakening-the-sleeping-buddha",
+      "author": "Tai Situpa",
+      "asin": "1570621853",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "A book of his Buddhist teachings published by Shambhala in 1996. Its theme, as the title says, is the buddha nature already present in everyone and how practice brings it to light.",
+      "subjects": [
+        "spiritual-awakening",
+        "meditation"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1570621853.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "Relative World, Ultimate Mind",
+      "slug": "relative-world-ultimate-mind",
+      "author": "Tai Situpa",
+      "asin": "0877736294",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "Published by Shambhala in 1992 and by Penguin India in 1997. He discusses how ordinary relative experience relates to the ultimate nature of mind.",
+      "subjects": [
+        "consciousness",
+        "meditation",
+        "non-duality"
+      ]
+    },
+    {
+      "title": "Tilopa: Some Glimpses of His Life",
+      "slug": "tilopa-some-glimpses-of-his-life",
+      "author": "Tai Situpa",
+      "asin": "0906181100",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "His commentary on episodes from the life of Tilopa, the Indian master at the source of the Kagyu lineage. First published by Kagyu Samye Ling in 1988 and reissued by Palpung Sherabling.",
+      "subjects": [
+        "ancient-wisdom",
+        "mysticism"
+      ]
+    },
+    {
+      "title": "Way to Go",
+      "slug": "way-to-go-tai-situpa",
+      "author": "Tai Situpa",
+      "asin": "0906181046",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "Teachings he gave in Dublin and Brussels on his first European tour in 1981, introducing the Buddhist view of cyclic existence and the path out of it. Later reissued as Path to Travel.",
+      "subjects": [
+        "spirituality",
+        "meditation"
+      ]
+    },
+    {
+      "title": "Ground, Path & Fruition",
+      "slug": "ground-path-and-fruition",
+      "author": "Tai Situpa",
+      "asin": "1877294357",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "A collection of his teachings published in 2005 by Palpung Zhyisil Chokyi Ghatsal in New Zealand, framed by the classic Buddhist sequence of ground, path and fruition.",
+      "subjects": [
+        "meditation",
+        "spiritual-awakening"
+      ]
+    },
+    {
+      "title": "Mahamudra Teachings",
+      "slug": "mahamudra-teachings-tai-situpa",
+      "author": "Tai Situpa",
+      "asin": "1877294055",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "Teachings on Mahamudra, the Kagyu instructions on recognising the nature of mind. Published in 2001 by Palpung Zhyisil Chokyi Ghatsal.",
+      "subjects": [
+        "meditation",
+        "non-duality"
+      ]
+    }
+  ],
+  "courses": [
+    {
+      "title": "Mahamudra Pointing Out Transmission from The Mahamudra Ocean of Definitive Meaning - Year 2/3",
+      "url": "https://www.palpung.org/registration/eng/default.asp",
+      "description": "The second year of a three-year English-language cycle in which he completes his transmission of this classic Mahamudra text, including the pointing-out instructions on the nature of mind. Held in Delhi; open to those who attended the earlier years.",
+      "price": "Contact for pricing",
+      "product_type": "retreat",
+      "start_date": "2027-04-01",
+      "end_date": "2027-04-08",
+      "subjects": [
+        "meditation",
+        "non-duality"
+      ],
+      "image": "https://www.palpung.org/chineset/taisitupa/taisitupa_default_main.jpg"
+    },
+    {
+      "title": "Discovering the Buddha Within Year 2: Awakened Heart",
+      "url": "https://www.palpung.org/english/pspc/default.asp",
+      "description": "The second level of the Palpung study and practice curriculum, taught by him in Delhi, centred on compassion and the awakened heart. Participants need to have completed Year 1 or an equivalent programme; registration is on the Palpung site.",
+      "price": "Contact for pricing",
+      "product_type": "retreat",
+      "start_date": "2027-04-11",
+      "end_date": "2027-04-17",
+      "subjects": [
+        "meditation",
+        "spiritual-awakening"
+      ],
+      "image": "https://www.palpung.org/chineset/pspc/my.jpg"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "pipelines-1",
+    "hub": "the-shift-network",
+    "rank": 420,
+    "hub_url": null,
+    "tier_evidence": "YouTube @Palpung 15.8k subscribers (channel header, 4 Nov 2026; the Palpung organisation's channel, not counted as his own); Facebook /Palpung and X @Palpung not read (organisation accounts, sites off limits) → 0 personal accounts readable → local_hero",
+    "email": "yes",
+    "email_source": "https://www.palpung.org/english/taisitupa/teaching.asp",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 10 source(s)",
+    "flags": [
+      "No Shift mention on own site: listed without the link.",
+      "Name: listed as 'Chamgon Kenting Tai Situpa' (the form his own Palpung site uses, without 'His Holiness' and 'Guru Vajradhara'); he is also widely known as Tai Situ Rinpoche. The owner may prefer that form.",
+      "Tier: no personal accounts; the only readable count is the Palpung organisation channel (15.8k). As one of the principal lineage holders of the Karma Kagyu school, he may merit a higher tier for editorial stature; left at local_hero for the owner to decide.",
+      "Base: the monastic seat's published postal address is 'P.O. Upper Bhattu via Baijnath, District Kangra, Himachal Pradesh'; Upper Bhattu is a village near Bir and Baijnath, recorded as published for mapping.",
+      "Regional: Kangra district, Himachal Pradesh, India.",
+      "Email is the Palpung Sherabling office address, published on the Published Teachings page as the publisher contact; an organisation inbox.",
+      "Website is the Palpung Web Center, which presents itself as the site for his activities; the YouTube channel is Palpung's, which mainly carries his teachings plus monastery news.",
+      "ISBN-10s from https://www.palpung.org/english/taisitupa/teaching.asp (his own site's Published Teachings page); not confirmed on Open Library (blocked for us, 4 Nov 2026).",
+      "Both April 2027 Delhi transmissions are registered on one page; the Discovering the Buddha Within item uses the curriculum page so each offering has its own URL. No fees are published.",
+      "Only one photo: the site's other images are the monastery, logos or group shots; the YouTube avatar is the Palpung calligraphy logo."
+    ],
+    "left_out": [
+      "8 Nyungne Retreat 2027: led by a senior lama, not by him.",
+      "Online audio teachings: behind a login.",
+      "Video 'The White Tara Longevity Empowerment': longevity framing; other channel videos are monastery news, greetings, debates and grammar contests.",
+      "Video 'Ganges Mahamudra: An Online Course' trailer (Portuguese title on the channel): the course page wasn't found on his own site.",
+      "Books The Third Karmapa's Mahamudra Prayer (no ISBN on his page), Nectar of Dharma volumes (transcripts of transmissions to his monastic students) and Aspiration Prayer of Mahamudra (a prayer commentary also covered by the Mahamudra book).",
+      "Path to Travel (2014 reissue of Way to Go, same ISBN): one entry kept."
+    ]
+  }
+}

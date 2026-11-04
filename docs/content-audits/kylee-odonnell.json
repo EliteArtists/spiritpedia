@@ -1,0 +1,120 @@
+{
+  "healer": {
+    "healer_slug": "kylee-odonnell",
+    "location_source": "https://heavenlysound.org/",
+    "create": {
+      "name": "Kylee O'Donnell",
+      "bio": "Kylee O'Donnell is a flautist and sound practitioner in Austin, Texas, who for several years worked under the name Liria. She trained as a classical flautist and has more than two decades of playing and teaching behind her, including session work on albums and video-game soundtracks. A turn towards meditation in her own life, and a moving experience in meditation after her father's death in 2021, led her to explore Native-style, bansuri, copper and drone flutes and to bring them into sound baths.\n\nSince then she has led around a thousand sound baths in and around Austin, mixing live flute, voice, bowls and drum, and she plays for retreats, corporate groups, weddings, churches and care homes. Her outdoor Sunset to Stars sessions take place east of the city with views of the Austin skyline. She also teaches beginners to play the Native-style flute as a calming, intuitive practice, both one to one and through a short self-paced online course that needs no ability to read music, and she runs her own certification for sound practitioners. Her recorded flute music is on Spotify, YouTube and Insight Timer.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local_online",
+      "city": "Austin, Texas",
+      "country": "United States",
+      "subjects": [
+        "sound-healing",
+        "meditation"
+      ],
+      "website_url": "https://heavenlysound.org",
+      "booking_url": "https://heavenlysound.org/soundhealingaustin",
+      "youtube_url": "https://www.youtube.com/@kyleeelizabethodonnell",
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "kyleeodonnellflutist@gmail.com",
+      "image_urls": [
+        "https://images.squarespace-cdn.com/content/v1/61b77aad4528e86a810d601f/1382d299-e5e8-4a55-92d0-b10453b51979/FullSizeRender.jpeg?format=750w",
+        "https://images.squarespace-cdn.com/content/v1/61b77aad4528e86a810d601f/93d09a45-6396-4c04-b4f1-cc7367547916/_A1_4679.jpg?format=750w"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "insight-timer",
+      "role": "instructor"
+    }
+  ],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Flute Your Way to Inner Peace: Beginner Native American Flute Course",
+      "url": "https://heavenlysound.org/native-style-flute-course",
+      "description": "A self-paced online course for complete beginners on the Native-style flute, with lifetime access and an 18-page practice guide. It covers breathing, the scale and simple techniques, then moves into improvising and using the flute as a daily calming ritual.",
+      "price": "$37 USD",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "sound-healing",
+        "meditation"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/61b77aad4528e86a810d601f/b3bc5152-27d4-4a3d-9cf5-39824047a51c/headshot+for+flute+page.jpg"
+    },
+    {
+      "title": "Sound Baths and Live Flute for Events and Retreats",
+      "url": "https://heavenlysound.org/soundhealingaustin",
+      "description": "Kylee brings live flutes, bowls and voice to private and corporate sound baths, retreats and special events around Austin. Quotes are given on enquiry.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "sound-healing"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/61b77aad4528e86a810d601f/5ec3cc36-0420-4eca-ac9d-f3b1e53cd0be/IMG_8087.png"
+    },
+    {
+      "title": "Sunset to Stars: Nature Sound Bath overlooking Austin",
+      "url": "https://heavenlysound.org/get-started/p/sunset-to-stars-nature-sound-bath-overlooking-austin",
+      "description": "An outdoor evening sound bath in Del Valle, east of Austin, as the sun sets over the skyline. Mats, blankets and light snacks are provided.",
+      "price": "$40 USD",
+      "product_type": "course",
+      "start_date": "2026-11-15",
+      "end_date": "2026-11-15",
+      "subjects": [
+        "sound-healing",
+        "meditation"
+      ],
+      "image": "http://static1.squarespace.com/static/61b77aad4528e86a810d601f/61b80ac4760f7145e1d575ce/6ae25780c3687c4b5194ef8e/1793225269388/BAE71354-46A2-4194-87E0-5DBE92761242.PNG?format=1500w"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Kylee O'Donnell on Insight Timer",
+      "url": "https://insighttimer.com/kyleeodonnell",
+      "description": "Her Insight Timer profile, with flute and sound recordings for meditation and rest. The tracks are free to play.",
+      "featured": true,
+      "resource_type": "meditation",
+      "subjects": [
+        "sound-healing",
+        "meditation"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/61b77aad4528e86a810d601f/1382d299-e5e8-4a55-92d0-b10453b51979/FullSizeRender.jpeg?format=750w"
+    }
+  ],
+  "sprint": {
+    "sprint": "pipelines-1",
+    "hub": "insight-timer",
+    "rank": 106,
+    "hub_url": "https://insighttimer.com/kyleeodonnell",
+    "tier_evidence": "Insight Timer 1.4k followers (queue entry, read 1 Nov 2026); YouTube @kyleeelizabethodonnell 1.86K subscribers (channel header, 4 Nov 2026); Instagram @kyleeelizabethodonnell not read (instagram.com off limits) → ~3.3k readable → local_hero",
+    "email": "yes",
+    "email_source": "https://heavenlysound.org/",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 4 source(s)",
+    "flags": [
+      "Borderline listing, owner to decide: her work is mostly music (sound baths, flute performance, flute lessons). Her most-watched YouTube video (8.7K) is 'NEW AGE TO JESUS | Former psychic + manifestation coach Testimony', and a recent one is a flute meditation with Bible verses, so she may now distance herself from New Age spirituality; her site still presents her as a sound healer.",
+      "No videos listed: her YouTube channel is almost entirely flute and sound music (music-only under the video rule).",
+      "Her site story mentions ADHD, medication and her father's cancer; none of that is in the bio.",
+      "Her Sound Healing Certification Program is mentioned on her site but has no page of its own, so it is not listed as an offering.",
+      "Thin: 3 offerings plus the Insight Timer resource (4 items); one is the dated 15 Nov 2026 sound bath, which will expire."
+    ],
+    "left_out": [
+      "All YouTube videos: music-only (flute, bowls, vocals); some titles also name stress relief, sleep or grief.",
+      "Sound Healing Certification Program: no page or price found on her site.",
+      "Native Style Flute Course members area (/flutecourse): login page."
+    ]
+  },
+  "images_final": true
+}

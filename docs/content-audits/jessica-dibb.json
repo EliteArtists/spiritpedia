@@ -1,0 +1,119 @@
+{
+  "healer": {
+    "healer_slug": "jessica-dibb",
+    "location_source": "https://inspirationcommunity.org/",
+    "create": {
+      "name": "Jessica Dibb",
+      "bio": "Jessica Dibb is a breathwork and consciousness teacher who founded the Inspiration Consciousness School and Community, which has its campus and sanctuary in Owings Mills, Maryland, and also holds classes in New York City. She is its spiritual director and main teacher, and she has built its workshops, ongoing trainings and flagship Awakening course around a blend of Integrative Breathwork, the Enneagram, psychodynamic insight and contemplative teachings from several traditions.\n\nBefore teaching she trained in classical ballet and danced professionally, took up yoga and meditation at fourteen and spent four years living in an ashram. She now co-directs the Global Professional Breathwork Alliance and chairs its ethics committee, working towards shared training and ethical standards for breath practitioners, and she founded and hosts a yearly online Enneagram Global Summit. She is the author of Breathwork and Psychotherapy, published by Norton. Her groups range from evening breathing journeys and women's circles to online breathwork sessions and eight-week courses with a weekend retreat, and she also helps to organise the Silent Peace Walks.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local_online",
+      "city": "Owings Mills, Maryland",
+      "country": "United States",
+      "subjects": [
+        "breathwork",
+        "consciousness",
+        "spiritual-awakening"
+      ],
+      "website_url": "https://inspirationcommunity.org/",
+      "booking_url": "https://inspirationcommunity.org/",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "essence@inspirationcommunity.org",
+      "image_urls": [
+        "https://www.eomega.org/sites/default/files/styles/scale_and_crop_425x425/public/person/dibb_jessica_17_newweb_2.jpg?itok=l9uuYGop"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "8-Week Awakening (Maryland)",
+      "url": "https://airtable.com/appAEVqRfoIqCaGrd/shrkYSjKZ5wRBVVUh",
+      "description": "The school's core class, held one evening a week for eight weeks at its Owings Mills campus, with a weekend retreat in the middle. It uses breath and inquiry to open into fuller presence, and is open to beginners and experienced practitioners alike.",
+      "price": "$655 USD",
+      "product_type": "course",
+      "start_date": "2027-04-20",
+      "end_date": "2027-06-08",
+      "subjects": [
+        "breathwork",
+        "spiritual-awakening"
+      ],
+      "image": "https://static.airtable.com/images/oembed/airtable_brand.png"
+    },
+    {
+      "title": "Virtual Breathwork Sessions",
+      "url": "https://airtable.com/appX58xzaBFYxys8t/shrCq0C85okIcGEN3",
+      "description": "Online group breathwork sessions of about two and a half hours, guided by Jessica and breathworkers trained at her school. Sessions are held on weekend afternoons several times a season.",
+      "price": "$45-$60 USD (sliding scale)",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "breathwork"
+      ],
+      "image": "https://static.airtable.com/images/oembed/airtable_brand.png"
+    },
+    {
+      "title": "Integrative Breathing Journey in NYC",
+      "url": "https://airtable.com/appX58xzaBFYxys8t/shrhQObvIF4trjZOU",
+      "description": "An in-person afternoon of Integrative Breathwork in Manhattan, facilitated by Jessica with breathworkers from her school.",
+      "price": "$65 USD",
+      "product_type": "course",
+      "start_date": "2026-11-22",
+      "end_date": "2026-11-22",
+      "subjects": [
+        "breathwork"
+      ],
+      "image": "https://static.airtable.com/images/oembed/airtable_brand.png"
+    },
+    {
+      "title": "Women's Breathing Journey",
+      "url": "https://airtable.com/appX58xzaBFYxys8t/shrnatCoE9Oli0Czw",
+      "description": "An evening breathwork circle for women at the school's campus in Owings Mills, guided by Jessica and her breathworkers.",
+      "price": "$40-$65 USD (sliding scale)",
+      "product_type": "course",
+      "start_date": "2026-11-11",
+      "end_date": "2026-11-11",
+      "subjects": [
+        "breathwork"
+      ],
+      "image": "https://static.airtable.com/images/oembed/airtable_brand.png"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "pipelines-1",
+    "hub": "the-shift-network",
+    "rank": 303,
+    "hub_url": null,
+    "tier_evidence": "No personal social accounts found on her school's site (its Instagram and Facebook are the school's, not counted); no YouTube channel linked → 0 readable → local_hero",
+    "email": "yes",
+    "email_source": "https://inspirationcommunity.org/",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 3 source(s)",
+    "flags": [
+      "No Shift mention on own site: listed without the link. (Omega's teacher page says she hosts the Enneagram Global Summit produced by the Shift Network; her own school's site doesn't say so.)",
+      "Own site: inspirationcommunity.org (her school; she is founder and principal teacher). jessicadibb.com is a parked domain. The school's site says it is moving to a new website soon, so offering links may change.",
+      "Offering URLs are the school's Airtable registration forms (the only unique link for each programme); pages not opened.",
+      "Email essence@inspirationcommunity.org is the school's office inbox.",
+      "Only one photo: her headshot on Omega's teacher page (https://www.eomega.org/workshops/teachers/jessica-dibb), 425 px; no photo of her on her own site.",
+      "Base: the school's campus in Owings Mills, Maryland (a Baltimore County community, CDP not a town; please map). Regional: Baltimore area, Maryland.",
+      "Tier: no readable counts (0); no personal accounts found.",
+      "Bio uses Omega's teacher page for background facts (ballet, ashram, GPBA); written in my own words, checked against it."
+    ],
+    "left_out": [
+      "Book Breathwork and Psychotherapy: Clinical Applications for Healing and Transformation (Norton, 0393712001): clinical/healing framing in the subtitle, and Open Library refused connections during this run.",
+      "NYC 8-Week Awakening (Oct-Dec 2027): registration and tuition not yet published.",
+      "Connect with a Breathworker (private sessions): no page or price of its own.",
+      "Virtual session on 31 Oct 2026: past.",
+      "No YouTube channel or free resources on her own site."
+    ]
+  },
+  "images_final": true
+}

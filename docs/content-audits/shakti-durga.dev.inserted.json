@@ -1,0 +1,34 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 782,
+    "healer_slug": "shakti-durga"
+  },
+  "rows": [
+    {
+      "table": "books",
+      "id": 1872,
+      "slug": "spiritual-mastery-shakti-durga",
+      "title": "Spiritual Mastery: Twelve Hallmarks of Spiritual Mastery"
+    },
+    {
+      "table": "books",
+      "id": 1873,
+      "slug": "ignite-your-spirit",
+      "title": "Ignite Your Spirit: Energy Healing - Realise Your Highest Potential"
+    },
+    {
+      "table": "courses",
+      "id": "50f6f905-1cd2-466c-8483-1fc80d8943d4",
+      "slug": "the-solar-gateway-spiritual-intensive-with-shakti-durga",
+      "title": "The Solar Gateway Spiritual Intensive with Shakti Durga"
+    },
+    {
+      "table": "courses",
+      "id": "7b49e851-1235-4cc7-8c64-afe77892b40f",
+      "slug": "satsang-at-shanti-mission",
+      "title": "Satsang at Shanti Mission"
+    }
+  ],
+  "at": "2026-11-04T17:26:55.943Z"
+}

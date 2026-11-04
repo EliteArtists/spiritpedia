@@ -1,0 +1,39 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 785,
+    "healer_slug": "kylee-odonnell"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "d6bcab98-d40e-4764-a894-3db1bc5d6965",
+      "slug": "flute-your-way-to-inner-peace-beginner-native-american-flute-course",
+      "title": "Flute Your Way to Inner Peace: Beginner Native American Flute Course"
+    },
+    {
+      "table": "courses",
+      "id": "c6716c41-8efb-413e-be6a-6d6e864a75ac",
+      "slug": "sound-baths-and-live-flute-for-events-and-retreats",
+      "title": "Sound Baths and Live Flute for Events and Retreats"
+    },
+    {
+      "table": "courses",
+      "id": "9bc990e3-3de9-4447-90fc-e5890a6cc0da",
+      "slug": "sunset-to-stars-nature-sound-bath-overlooking-austin",
+      "title": "Sunset to Stars: Nature Sound Bath overlooking Austin"
+    },
+    {
+      "table": "free_resources",
+      "id": "5ea06dd9-79bd-4c85-a225-713cf74ac9e2",
+      "slug": "kylee-odonnell-on-insight-timer",
+      "title": "Kylee O'Donnell on Insight Timer"
+    },
+    {
+      "table": "hub_teachers",
+      "id": "842cf90b-b322-4d40-bd2e-80b64e92d8f3",
+      "title": "kylee-odonnell teaches at Insight Timer"
+    }
+  ],
+  "at": "2026-11-04T17:27:18.054Z"
+}

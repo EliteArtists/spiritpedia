@@ -1,0 +1,122 @@
+{
+  "healer": {
+    "healer_slug": "tanya-murphy",
+    "location_source": null,
+    "no_public_base": "Her own site (restinhispresence.com: home, about, contact, The Well, The Sanctuary) publishes no town or country; all her teaching is online. The queue entry's 'Arlington, VA' came from elsewhere and could not be confirmed on her own site.",
+    "create": {
+      "name": "Tanya Murphy",
+      "bio": "Tanya Murphy is an American Christian meditation teacher who leads Rest in His Presence, an online ministry for women of faith who feel worn out by trying to earn their peace. A hard period in her own life, she explains, led her to a church that practised Christian meditation, where she first met Lectio Divina and Centering Prayer. Learning simply to be with God, rather than to perform for Him, became the ground of her teaching. She later qualified as a Mindfulness-Based Stress Reduction practitioner and as a Christian meditation facilitator, and serves as a minister in her local church.\n\nHer approach draws on the Hebraic roots of prayer and on the old contemplative habits of slow scripture reading and silent prayer. Women can join a free half-hour Zoom gathering twice a month, which opens with prayer and a short teaching on a seasonal theme. Those who want more can join The Sanctuary, a small membership with weekly scripture reflections, one or two live sessions of guided meditation and prayer each month, and longer recorded meditations. She also offers short audio courses, speaks at church retreats and conferences, and has a library of guided Christian meditations on Insight Timer.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "worldwide",
+      "city": null,
+      "country": null,
+      "subjects": [
+        "meditation",
+        "spirituality",
+        "mysticism"
+      ],
+      "website_url": "https://www.restinhispresence.com/",
+      "booking_url": "https://www.restinhispresence.com/sanctuary",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": null,
+      "image_urls": [
+        "https://static.wixstatic.com/media/3a2c9f_f925d1893dde484f85dee5617d0c2f3e~mv2.jpeg",
+        "https://static.wixstatic.com/media/3a2c9f_15dd58af8d964b34ab6ae47b8f4b25e9~mv2.jpeg"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "insight-timer",
+      "role": "instructor"
+    }
+  ],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "The Sanctuary",
+      "url": "https://www.restinhispresence.com/sanctuary",
+      "description": "A membership for Christian women who want an unhurried, ongoing contemplative practice. Each season follows a biblical theme, with a weekly teaching, one or two live gatherings a month for guided meditation and prayer, Lectio Divina, longer recorded meditations and a members' community.",
+      "price": "$17 USD a month (founding member rate)",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "image": "https://static.wixstatic.com/media/3a2c9f_f925d1893dde484f85dee5617d0c2f3e%7Emv2.jpeg/v1/fit/w_2500,h_1330,al_c/3a2c9f_f925d1893dde484f85dee5617d0c2f3e%7Emv2.jpeg"
+    },
+    {
+      "title": "Five Days of Soul Care For Women",
+      "url": "https://www.restinhispresence.com/challenge-page/658a91d6-8f68-4e32-b3b3-ed54c832bc7b",
+      "description": "A short self-paced audio course over five days on the biblical idea of the soul as mind, heart, will and imagination. Each day pairs teaching with a simple practice for tending the inner life in God's presence.",
+      "price": "$15 USD",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "spirituality",
+        "meditation"
+      ],
+      "image": "https://static.wixstatic.com/media/3a2c9f_25d885152e284dc7bed8ae3401723dbe~mv2.jpg/v1/fill/w_800,h_600,al_c,q_85/3a2c9f_25d885152e284dc7bed8ae3401723dbe~mv2.jpg"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Tanya Murphy on Insight Timer",
+      "url": "https://insighttimer.com/tanyamurphy",
+      "description": "Tanya's free Insight Timer page, where her guided Christian meditations and scripture-based reflections can be played in the app or a web browser at no cost.",
+      "featured": true,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "image": "https://static.wixstatic.com/media/3a2c9f_f925d1893dde484f85dee5617d0c2f3e~mv2.jpeg"
+    },
+    {
+      "title": "Tuesday Afternoon Rest",
+      "url": "https://www.restinhispresence.com/the-well",
+      "description": "A free thirty-minute Zoom gathering held twice a month at lunchtime, US Eastern time. It begins with prayer and a brief teaching on the current theme, then leaves space for stillness; registration sends the link.",
+      "featured": false,
+      "resource_type": "workshop",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "image": "https://static.wixstatic.com/media/3a2c9f_f925d1893dde484f85dee5617d0c2f3e%7Emv2.jpeg/v1/fit/w_2500,h_1330,al_c/3a2c9f_f925d1893dde484f85dee5617d0c2f3e%7Emv2.jpeg"
+    }
+  ],
+  "sprint": {
+    "sprint": "pipelines-1",
+    "hub": "insight-timer",
+    "rank": 131,
+    "hub_url": "https://insighttimer.com/tanyamurphy",
+    "tier_evidence": "Insight Timer 6.4k followers (queue entry, read 1 Nov 2026); Instagram @tanyamurphyonline linked from her site but not opened (off limits); no YouTube channel found → ~6.4k total → local_hero",
+    "email": "contact form",
+    "email_source": null,
+    "contact_form_url": "https://www.restinhispresence.com/contact",
+    "bio_check": "OK: no 8-word runs against 10 source(s)",
+    "flags": [
+      "Health rule, borderline: her About page tells her own story of anxiety and an ADHD diagnosis, and her Programs page filters include ADHD, anxiety, menopause, sleep and 'newly diagnosed'. The site's main offer is Christian contemplative rest, so she is listed; ADHD-framed items left out and the bio does not name any condition. A human may want to check.",
+      "Contact form is described as for speaking and event enquiries; it is the only form on the site.",
+      "Photos: two headshots from her site show the same woman (city street background, short dark hair, hoop earrings); both have a polished, possibly AI-retouched look. Not named in alt text, but they are the only portraits on the About/home pages.",
+      "No public base on her own site; queue entry said Arlington, VA (not confirmed), so city and country left null.",
+      "Her credentials include MBSR practitioner; MBSR is a secular programme, mentioned only as training."
+    ],
+    "left_out": [
+      "The 10 Types of Rest Every Woman With ADHD Needs ($19.99): names a condition (health rule).",
+      "Coaching/mentoring listings under ADHD, anxiety, menopause, sleep and related filters (health rule).",
+      "Library videos (Meditations With Tanya): hosted on her Wix site, not YouTube.",
+      "Dated Tuesday at the Well calls: covered by the single free resource; past 2024 events ignored."
+    ]
+  },
+  "images_final": true
+}

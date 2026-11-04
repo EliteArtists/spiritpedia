@@ -1,0 +1,138 @@
+{
+  "healer": {
+    "healer_slug": "katie-silcox",
+    "location_source": null,
+    "no_public_base": "Her own site says only that she lives in the wine country of Virginia; no town is published. The Charlottesville court named in the site's terms is a legal venue, not a stated base, so city and country are left empty.",
+    "create": {
+      "name": "Katie Silcox",
+      "bio": "Katie Silcox is an American teacher of Ayurveda and Tantra whose work centres on women's spiritual lives and the rhythms of the body. She trained to master's level in Ayurveda, has practised yoga and studied Tantra for more than twenty years and is now exploring Jungian depth psychology. Before teaching full time she worked in artificial intelligence research, among other unexpected chapters. She wrote the bestselling Healthy, Happy, Sexy, an approachable guide to Ayurvedic daily life for modern women, and later Glow-Worthy, a mix of memoir and practice about self-worth grounded in spiritual identity.\n\nShe founded The Shakti School, an online school that teaches what she calls feminine-form Ayurveda alongside Tantric meditation and movement. Its year-long Level 1 programme trains students as Ayurvedic wellness coaches through weekly live lectures, while a monthly membership offers a live workshop with Katie and a library of meditations, movement classes and talks. She hosts the Spirit Sessions podcast, where she discusses Ayurveda, embodiment and spiritual practice with guests, and in 2027 she leads a Tantra retreat and gathering for the school's community at the Sivananda Ashram in the Bahamas. She lives in rural Virginia.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "worldwide",
+      "city": null,
+      "country": null,
+      "subjects": [
+        "ayurveda",
+        "yoga",
+        "meditation"
+      ],
+      "website_url": "https://theshaktischool.com/",
+      "booking_url": "https://theshaktischool.com/ayurveda-school/",
+      "youtube_url": "https://www.youtube.com/channel/UC1FLOC07GDa15VhsYWWKJLw",
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "info@theshaktischool.com",
+      "image_urls": [
+        "https://theshaktischool.com/wp-content/uploads/2018/08/KS_About_Photo-e1540430338342.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [
+    {
+      "title": "Glow-Worthy: Practices for Awakening Your Inner Light and Loving Yourself As You Are: Broken, Beautiful, and Sacred",
+      "slug": "glow-worthy",
+      "author": "Katie Silcox",
+      "asin": "1637743726",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "Katie's second book blends her own story with Tantric and yogic practices for building self-worth on a spiritual footing. It is written for women of any faith or none.",
+      "subjects": [
+        "spirituality",
+        "yoga"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1637743726.01._SCLZZZZZZZ_.jpg"
+    }
+  ],
+  "courses": [
+    {
+      "title": "Shakti Ayurveda School Level 1: Ayurvedic Wellness Coach",
+      "url": "https://theshaktischool.com/ayurveda-school/",
+      "description": "A 300-hour online training over a year in Katie's woman-centred approach to Ayurveda and Tantra, taught mostly through weekly live-streamed lectures with recordings. Graduates are certified as Ayurvedic wellness coaches; payment plans are offered.",
+      "price": "$3,398 USD",
+      "product_type": "course",
+      "start_date": "2027-01-20",
+      "end_date": null,
+      "subjects": [
+        "ayurveda",
+        "spirituality"
+      ],
+      "image": "https://theshaktischool.com/wp-content/uploads/2024/09/ayurveda-school.jpg"
+    },
+    {
+      "title": "Spirit Sessions Membership",
+      "url": "https://theshaktischool.com/subscribe/",
+      "description": "A monthly online membership with a live workshop led by Katie or a guest teacher each month. Members also get an archive of more than a hundred meditations, movement classes and lectures.",
+      "price": "$28 USD per month",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "spirituality",
+        "meditation",
+        "ayurveda"
+      ],
+      "image": "https://theshaktischool.com/wp-content/uploads/2024/06/AWC-Course-banner.png"
+    },
+    {
+      "title": "The Shakti School's Tantra Retreat and Grand Gathering May 2027",
+      "url": "https://sivanandabahamas.org/course/the-shakti-schools-tantra-retreat-and-grand-gathering-may-2027/",
+      "description": "A four-day residential gathering for the school's community at a Bahamas ashram, where Katie leads an embodied Tantra immersion that works through the chakras. It is open to everyone, including partners and friends of students.",
+      "price": "$995 USD (tuition)",
+      "product_type": "retreat",
+      "start_date": "2027-05-27",
+      "end_date": "2027-05-30",
+      "subjects": [
+        "yoga",
+        "chakra-healing",
+        "spirituality"
+      ],
+      "image": "https://theshaktischool.com/wp-content/uploads/2018/08/KS_About_Photo-e1540430338342.jpg"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Women's Wisdom Ayurveda Mini-Course",
+      "url": "https://theshaktischool.com/womens-wisdom-ayurveda-mini-course/",
+      "description": "A free introductory course of about four hours on Ayurveda and women's wisdom, sent by email when you join the school's mailing list. It is offered as a starting point before the longer training.",
+      "featured": true,
+      "resource_type": "mini_course",
+      "subjects": [
+        "ayurveda"
+      ],
+      "image": "https://lh3.googleusercontent.com/cJ8njjLBOZ3J_xSUfXvBtZkTKCRKqCIr3eMCKLJerV6T1Oso4zDmGtt1pdCNC3SX8xeZDzpjqAS1iJTDzs7Wv5ApaQBFuKr1vtY"
+    }
+  ],
+  "sprint": {
+    "sprint": "pipelines-1",
+    "hub": "the-shift-network",
+    "rank": 413,
+    "hub_url": null,
+    "tier_evidence": "YouTube @TheShaktiSchool 1.45k subscribers (channel header, 4 Nov 2026; her school's channel, which is her own brand); Instagram @katiesilcox_shaktischool and @theshaktischool and Facebook not read (instagram.com and facebook.com off limits) → ~1.5k readable → local_hero",
+    "email": "yes",
+    "email_source": "https://theshaktischool.com/contact-and-support/",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 13 source(s)",
+    "flags": [
+      "No Shift mention on own site: listed without the link.",
+      "Tier: her Instagram and Facebook counts couldn't be read (sites off limits); she is a New York Times bestselling author (per her site), which the owner may weigh as editorial stature.",
+      "Email is the school's general inbox (info@theshaktischool.com), published Cloudflare-protected on the contact page and decoded.",
+      "Health rule borderline: the Level 1 Ayurveda training is a wellness-coach certification and kept; some blog posts and testimonials mention symptoms, but no kept item names a condition.",
+      "Only one photo: the YouTube avatar is the school's logo and the other site images are staff or graphics.",
+      "Retreat page is on sivanandabahamas.org (robots.txt allows all), linked from her calendar page; the $995 is tuition, accommodation is extra at the ashram.",
+      "ISBN from https://theshaktischool.com/glow-worthy-book/ (ISBN-13 9781637743720 on her Bookshop link, ISBN-10 1637743726 in her Amazon link, copied, not opened); not confirmed on Open Library (blocked for us, 4 Nov 2026)."
+    ],
+    "left_out": [
+      "Four recent Spirit Sessions podcast videos from her school's channel (te-dQXDDtaM, nn04G7tL77o, 9TFwTv-13bo, oMVTI94_gn8): the ingest dry run reports them unavailable for embedding (oEmbed 401); the channel page showed only its five newest uploads.",
+      "Shakti Ayurveda School Level 2 (Ayurvedic Health Counselor): its syllabus is on pathology, disease and diagnostic tools (medical).",
+      "Video 'Social Connection: Your Best Girlfriend May Be Saving Your Life': health framing.",
+      "Spirit Sessions podcast as a free resource: a podcast feed rather than a practice.",
+      "Coaching team calls: given by other coaches, not Katie.",
+      "Book Healthy, Happy, Sexy: her own books page gives no ISBN, and Open Library is blocked for us, so it could not be identified."
+    ]
+  }
+}

@@ -1,0 +1,190 @@
+{
+  "healer": {
+    "healer_slug": "oscar-miro-quesada",
+    "location_source": null,
+    "no_public_base": "Neither his school's site nor his own course pages state where he lives; they give his Peruvian origins and list events in various places, but no home town.",
+    "create": {
+      "name": "don Oscar Miro-Quesada",
+      "bio": "Oscar Miro-Quesada Solevo is a Peruvian curandero and the originator of the Pachakuti Mesa Tradition, a cross-cultural form of shamanism built around the mesa, a ceremonial altar laid out as a map of the cosmos. Between 1969 and 1986 he served a long apprenticeship on Peru's northern coast with the healer don Celso Rojas Palomino, becoming his second in ceremony, and then studied for four years in the Andean paqo tradition with don Benito Corihuamán Vargas near Cusco, who gave him the altomisayoq initiation in 1985. He also trained in psychology at Duke and the State University of West Georgia and held a fellowship in ethnopsychology at Emory, work that fed into efforts to bring Peruvian folk healers into public mental health care.\n\nHis school, The Heart of the Healer (THOTH), trains students through in-person apprenticeships led by teachers he has sanctioned and through recorded courses he teaches himself. These cover building and working with a personal mesa, seasonal ceremony and offerings to Pachamama, journeying between the Upper and Lower Worlds, and the cosmology of the ancient temple at Chavín de Huántar. He has led pilgrimages to sacred sites in Peru and Bolivia since 1986, joins a weekly online gathering with his wife Cindy, and co-wrote Lessons in Courage with the anthropologist Bonnie Glass-Coffin.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "worldwide",
+      "city": null,
+      "country": null,
+      "subjects": [
+        "shamanism",
+        "ancient-wisdom",
+        "mysticism"
+      ],
+      "website_url": "https://heartofthehealer.org",
+      "booking_url": "https://heartofthehealer.org/self-paced-courses/",
+      "youtube_url": "https://www.youtube.com/@oscarmiro-quesada7865",
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "support@heartofthehealer.org",
+      "image_urls": [
+        "https://yt3.googleusercontent.com/ytc/AIdro_lIfez1K39zsznRB403IeH-opK97RG-w2RxR-YKsPAOqA=s900"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "the-shift-network",
+      "role": "instructor"
+    }
+  ],
+  "videos": [
+    {
+      "title": "2025Nov Shamans Directory Cosmic Fire Summit",
+      "url": "https://www.youtube.com/watch?v=GnNX6UWaLBs",
+      "subjects": [
+        "shamanism"
+      ],
+      "channel": "Oscar Miro-Quesada"
+    },
+    {
+      "title": "shamanism summit omq 2020",
+      "url": "https://www.youtube.com/watch?v=Mkxqg8dMicY",
+      "subjects": [
+        "shamanism",
+        "ancient-wisdom"
+      ],
+      "channel": "Oscar Miro-Quesada"
+    }
+  ],
+  "books": [
+    {
+      "title": "Lessons in Courage: Peruvian Shamanic Wisdom for Everyday Life",
+      "slug": "lessons-in-courage",
+      "author": "Bonnie Glass-Coffin and Oscar Miro-Quesada",
+      "asin": "B00GDQQZFY",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "Written with the anthropologist Bonnie Glass-Coffin, this book tells his own story of apprenticeship and awakening in Peru and draws everyday lessons from it for readers on a spiritual path.",
+      "subjects": [
+        "shamanism",
+        "ancient-wisdom"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/B00GDQQZFY.01._SCLZZZZZZZ_.jpg"
+    }
+  ],
+  "courses": [
+    {
+      "title": "Pachakuti Mesa Tradition Starter Bundle",
+      "url": "https://initiations.heartofthehealer.org/starter-bundle",
+      "description": "An entry-level set of recorded teachings for building and working with a Pachakuti Mesa, for newcomers or for practitioners restarting their practice.",
+      "price": "$67 USD",
+      "product_type": "download",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "shamanism"
+      ],
+      "image": "https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/file-uploads/sites/158525/images/a868504-7f7-6d35-ef-8b64d43da18_472ce955-3226-4b0d-8516-b8300d5b5486.jpg"
+    },
+    {
+      "title": "Awakening Your Universal Shamanic Self",
+      "url": "https://initiations.heartofthehealer.org/awakening-your-universal-shamanic-self",
+      "description": "A seven-session recorded foundation course in which students build their own mesa and learn the principles shared across shamanic traditions. It is the suggested starting point for his other courses.",
+      "price": "$247 USD",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "shamanism",
+        "ancient-wisdom"
+      ],
+      "image": "https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/file-uploads/sites/158525/images/27b5e8d-46d1-330-e3d7-0a0c68adf7_858cd8d5-aeac-4c73-9be7-4b3b245b9e77.jpg"
+    },
+    {
+      "title": "Walker Between Worlds",
+      "url": "https://initiations.heartofthehealer.org/walker-between-worlds",
+      "description": "Three recorded sessions on serving as a bridge between the spiritual and material worlds, drawing on Hermetic teachings attributed to Thoth alongside Andean practice.",
+      "price": "$97 USD",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "shamanism",
+        "hermeticism"
+      ],
+      "image": "https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/file-uploads/sites/158525/images/8c215-2ebd-b8a2-5aee-828e57b17ec8_3ccbc8a6-7a5a-4882-87d4-1d22b1c42f00.jpg"
+    },
+    {
+      "title": "Reverence, Ritual & Renewal",
+      "url": "https://initiations.heartofthehealer.org/reverence-ritual-renewal",
+      "description": "A thirteen-session recorded initiation into Andean seasonal ceremony, including building apachetas and making offerings to Pachamama. A foundation course is recommended first.",
+      "price": "$597 USD",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "shamanism",
+        "ancient-wisdom"
+      ],
+      "image": "https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/file-uploads/sites/158525/images/0c81b1-8db0-61b-31fd-b05ec2acfe5_5dc0f530-ba96-4091-b52e-9f573fd28052.jpg"
+    },
+    {
+      "title": "Fearless Freedom: Living the Perfection of Who You Are",
+      "url": "https://initiations.heartofthehealer.org/path-of-fearless-freedom",
+      "description": "A recorded one-day virtual intensive of mystery-school teachings and practices exploring the upper, lower and inner dimensions of being. No prior shamanic experience is needed.",
+      "price": "$147 USD",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "shamanism",
+        "mysticism"
+      ],
+      "image": "https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/file-uploads/sites/158525/images/6451fcd-61cf-631-554f-e5235f66e72_bfbb215a-5731-4627-adc4-4f24c234fc88.jpg"
+    },
+    {
+      "title": "Kimsa Intiman Tukuspa: Becoming the Three Suns",
+      "url": "https://initiations.heartofthehealer.org/becoming-the-three-suns",
+      "description": "A recorded one-day intensive on the cosmology and imagery of Chavín de Huántar, the ancient Peruvian temple he regards as the source of the country's healing traditions. Open to all.",
+      "price": "$127 USD",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "shamanism",
+        "ancient-wisdom"
+      ],
+      "image": "https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/file-uploads/sites/158525/images/abdf213-be73-44ea-454-7e32c28e53ad_11ae74e9-f822-48bd-8107-2aa8657dd10f.jpg"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "pipelines-1",
+    "hub": "the-shift-network",
+    "rank": 370,
+    "hub_url": null,
+    "tier_evidence": "YouTube @oscarmiro-quesada7865 3.04k subscribers (channel header, served in Portuguese as '3,04 mil subscritores', 4 Nov 2026); Instagram and Facebook off limits, LinkedIn not read → ~3k total → local_hero",
+    "email": "yes",
+    "email_source": "https://heartofthehealer.org/contact-us/",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 14 source(s)",
+    "flags": [
+      "Shift named on: https://heartofthehealer.org/about-don-oscar-miro-quesada/ (online apprenticeship programmes sponsored by The Shift Network) and https://heartofthehealer.org/self-paced-courses/ (links to Shift courses).",
+      "Email support@heartofthehealer.org is his school's support inbox ('Email Us' in the site footer); cindy@mesaworks.com is published on his About page for interview requests.",
+      "Name kept as 'don Oscar Miro-Quesada', the honorific he is known by; slug without it.",
+      "Only one photo: his YouTube avatar. It matches the man in an event flyer on his site; the site has no clean single headshot.",
+      "Plant medicine: his early lineage is the north-coast huachuma (San Pedro) tradition and his About page lists an interview on Amazonian plant medicine, but his teaching as offered is mesa work, ceremony and journeying; plant-medicine rule not applied. Owner may want to look.",
+      "Videos are summit talks on his own channel; most other uploads are recordings of the school's weekly Wednesday Night Link-Ups led by various teachers.",
+      "His About page also mentions teaching at Omega and Esalen in the past; no current programme there is shown, so no hub link added.",
+      "Books: Lessons in Courage, ASIN B00GDQQZFY (Kindle edition) from https://heartofthehealer.org/about-don-oscar-miro-quesada/ (store link not opened); not confirmed on Open Library (blocked for us, 4 Nov 2026). Co-written with Bonnie Glass-Coffin. The Spanish edition (ISBN 8416233993) and an audiobook are also linked there, not added."
+    ],
+    "left_out": [
+      "Shift course 'Receive the Ancestral Medicine of Pachamama' (affiliate link on his self-paced page) and another theshiftnetwork.com course link: not opened; the course title and description use healing framing, so left out to be safe.",
+      "The Power of Ritual: sold on hemi-sync.com, a third-party site.",
+      "Courses at initiations.heartofthehealer.org not checked individually (Becoming a Shining One, Ancestral Shamanic Star Wisdom, Ritual Arts Bundle): not opened, could be added.",
+      "Past events (Shamans Directory 10 Oct 2026, Menla retreat Sept 2026, 2025 online immersion).",
+      "YouTube: '2025Oct Bob Vetter Healing Summit Interview' (healing framing); short clips under 3 minutes; weekly Link-Up recordings led by other teachers.",
+      "In-person apprenticeships: led by sanctioned teachers, not by him."
+    ]
+  },
+  "images_final": true
+}

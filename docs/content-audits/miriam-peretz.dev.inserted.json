@@ -1,0 +1,28 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 780,
+    "healer_slug": "miriam-peretz"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "993f7169-bbc7-4358-9292-bbea87b79014",
+      "slug": "nava-dance-live-live-zoom-fridays",
+      "title": "Nava Dance - Live & Live Zoom (Fridays)"
+    },
+    {
+      "table": "courses",
+      "id": "87e05c80-2f8a-4de1-9b34-99560a6eb201",
+      "slug": "nava-dance-technique-level-1",
+      "title": "Nava Dance - Technique Level 1"
+    },
+    {
+      "table": "courses",
+      "id": "796e3037-df35-4ba2-aab6-c10375a4ce40",
+      "slug": "private-session-with-miriam-live-or-via-zoom",
+      "title": "Private Session with Miriam (Live or via Zoom)"
+    }
+  ],
+  "at": "2026-11-04T17:26:46.663Z"
+}

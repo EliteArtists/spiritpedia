@@ -1,0 +1,110 @@
+{
+  "healer": {
+    "healer_slug": "shiva-rea",
+    "location_source": null,
+    "no_public_base": "Her site (About, Contact, FAQ, events pages read 4 Nov 2026) does not say where she lives or where the Samudra school is based; her local events are in Malibu, Venice and Los Angeles, California, but no base is stated, so none is guessed.",
+    "create": {
+      "name": "Shiva Rea",
+      "bio": "Shiva Rea is a yoga teacher who founded Prana Vinyasa, also called Prana Flow, and leads an online school, Samudra Global School for Living Yoga. Her approach weaves vinyasa together with tantra and Ayurveda, and draws on study in the Krishnamacharya lineage, on Kalaripayattu, the martial art of Kerala, which she learned at CVN Kalari, and on world dance and somatic movement. She treats flowing sequences as moving meditation, timed to the rhythms of the sun, moon and seasons, and she has long brought ecstatic and trance dance into yoga settings.\n\nThrough the Samudra school she runs an online programme, live and on replay, of weekly salutation practices, new- and full-moon rituals, Shakti-centred flows and a teaching lab, along with a self-paced 300- and 500-hour teacher training in Evolutionary Vinyasa that students can combine with modules on Ayurveda, tantra, bhakti and dance. For around fifteen years she has led retreats at an Ayurvedic centre on the Malabar coast of Kerala, often timed to festivals such as Navratri and Maha Shivaratri, and she also teaches workshops and dance gatherings in southern California and abroad.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "worldwide",
+      "city": null,
+      "country": null,
+      "subjects": [
+        "yoga",
+        "ayurveda",
+        "meditation"
+      ],
+      "website_url": "https://shivarea.com/",
+      "booking_url": "https://shivarea.com/yogadventures-event-list",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": null,
+      "image_urls": [
+        "https://images.squarespace-cdn.com/content/v1/61a7c5bd91b79270a9591743/1d51acbf-8577-4fbf-9276-8a82a448cfb5/8CB2E7E9-F5D7-4A60-A66D-C2BDB4A223B7unnamed-1.jpg",
+        "https://images.squarespace-cdn.com/content/v1/61a7c5bd91b79270a9591743/1732131557505-0APRBL5OZ8MGK6D9BXA0/image-asset.jpeg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Living Yoga: Evolutionary Vinyasa Teacher Training (300 and 500 hour)",
+      "url": "https://shivarea.com/ytt300-2026-1",
+      "description": "A self-paced teacher training in Prana Vinyasa that begins with core modules on embodying flow and the mandala of salutations, then lets students add electives in tantra, Ayurveda, bhakti or trance dance. Live and recorded sessions run through her online school, with optional modules on retreat.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga",
+        "ayurveda"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/61a7c5bd91b79270a9591743/68faf31e-4001-4363-920d-b85edc83c95c/tempImagemktyMr.jpg"
+    },
+    {
+      "title": "Shakti Tandava: Soma Rasa Vinyasa and Kalarippayatu + Maha Shivaratri (Kerala)",
+      "url": "https://shivarea.com/yogadventures-event-list/sacred-family-celebration-retreat",
+      "description": "A one- or two-week winter retreat on the Malabar coast of Kerala that combines prana vinyasa, meditation, Kalarippayatu, kirtan and sacred text study with visits to nearby temples around Maha Shivaratri. Ayurvedic meals and treatments are part of the stay.",
+      "price": "Contact for pricing",
+      "product_type": "retreat",
+      "start_date": "2027-02-21",
+      "end_date": "2027-03-07",
+      "subjects": [
+        "yoga",
+        "meditation",
+        "ayurveda"
+      ],
+      "image": "http://static1.squarespace.com/static/61a7c5bd91b79270a9591743/61a7ef05e35434408ee5d99e/69d41c5bc55eeb5c9cddd988/1792778175041/WhatsApp+Image+2025-10-16+at+1.23.05+PM.jpeg?format=1500w"
+    },
+    {
+      "title": "Navratri Sacred Embodiment: Fall Shakti Sadhana (Kerala)",
+      "url": "https://shivarea.com/yogadventures-event-list/navratri-goddess-retreat",
+      "description": "A women's retreat in Kerala during the Navratri festival, with Shakti-focused prana vinyasa, tantric philosophy, dance, drumming, Sanskrit chanting and meditation near Shiva-Shakti temples.",
+      "price": "Contact for pricing",
+      "product_type": "retreat",
+      "start_date": "2027-10-13",
+      "end_date": "2027-10-23",
+      "subjects": [
+        "yoga",
+        "meditation"
+      ],
+      "image": "http://static1.squarespace.com/static/61a7c5bd91b79270a9591743/61a7ef05e35434408ee5d99e/69d41dc2bc2470098dbb9072/1793130092991/Screenshot+2024-03-19+at+3.23.32%E2%80%AFpm.png?format=1500w"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "pipelines-1",
+    "hub": "the-shift-network",
+    "rank": 382,
+    "hub_url": null,
+    "tier_evidence": "Instagram @shivarea108 and Facebook shivarea108 (linked from her site) not opened, off limits; no YouTube channel linked from her site → 0 readable → local_hero",
+    "email": "contact form",
+    "email_source": null,
+    "contact_form_url": "https://shivarea.com/contact-us",
+    "bio_check": "OK: no 8-word runs against 11 source(s)",
+    "flags": [
+      "No Shift mention on own site: listed without the link.",
+      "Tier: no counts could be read for her main accounts (Instagram, Facebook). She founded Prana Vinyasa and has taught internationally for decades, so the owner may want an editorial-stature override; none applied.",
+      "No public base: local events are in Malibu, Venice and Los Angeles, which suggests southern California, but her site never states a base.",
+      "Contact is a form on her school's site (Samudra Global School for Living Yoga); the page also points to a WhatsApp support group.",
+      "Photos: a close headshot and a dancing shot from her own site; the headshot matches her public image, the second is a full-length photo at night (same blonde woman, face small). Photo identity reasonably but not fully certain for the second.",
+      "Retreat pages show no prices (registration goes through union.fit, not opened).",
+      "Thin listing: three offerings only; no videos are linked from her site and no book ISBN is published there."
+    ],
+    "left_out": [
+      "Books (e.g. Tending the Heart Fire, Sounds True): no ISBN published on her own site, and Open Library is blocked for us (4 Nov 2026).",
+      "Kerala to the Kumbha Mela (24 to 30 Oct 2027): its event URL is malformed on her site (a doubled path), so no reliable unique URL.",
+      "Solstice Women in Rhythm, Ephesus (June 2028): the listing and the page give different dates (19 to 24 vs 21 to 28 June), left out.",
+      "Shakti Temple of Rasa Navratri (17 to 26 Oct 2026), Embodying Shakti fall retreat (10 to 17 Oct 2026) and all other 2026 events: started before 7 Nov 2026.",
+      "Online class passes (union.fit) and the Living Vinyasa app (livinginrhythm.passion.io, a script-only page): content and prices could not be read.",
+      "Special private Kalavahana ritual sessions (May 2026): past."
+    ]
+  }
+}

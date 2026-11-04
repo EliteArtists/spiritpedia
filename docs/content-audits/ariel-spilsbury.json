@@ -1,0 +1,143 @@
+{
+  "healer": {
+    "healer_slug": "ariel-spilsbury",
+    "location_source": null,
+    "no_public_base": "Her school's site says only that the Sanctuary is being rooted in the San Francisco Bay Area (a region, not a city); its published postal address is a Covina, California mailbox and no town is given for her or the school, so city and country are left empty rather than guessed.",
+    "create": {
+      "name": "Ariel Spilsbury",
+      "bio": "Ariel Spilsbury teaches the sacred feminine and founded the 13 Moon Mystery School, a programme of initiation into the feminine mysteries built around thirteen archetypal faces of the goddess. Her teaching blends myth, ceremony, chant, sound, sacred geometry and movement, and treats each student as a priestess or priest in the making rather than a follower. She created the 13 Moon Oracle, a deck of 39 archetypal cards, and she personally trained the school's focalizers, who are ordained by her to carry the work on.\n\nThe school now sits within a non-profit sanctuary she set up, with the aim of building a physical temple to the divine feminine in the San Francisco Bay Area. Through it she offers four recorded online courses: an audio series on feminine alchemy, and video courses on inter-dimensional sound, sacred geometry and the oracle archetypes. Members and visitors can also join regular free online circles held by the Sanctuary's community, draw a card from an online version of the oracle, and receive her short guidebook for those starting out on the priestess path.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "worldwide",
+      "city": null,
+      "country": null,
+      "subjects": [
+        "mysticism",
+        "sacred-geometry",
+        "sound-healing"
+      ],
+      "website_url": "https://sanctuaryofthe13moonmysteryschool.com",
+      "booking_url": "https://sanctuaryofthe13moonmysteryschool.com/courses/",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "info@sanctuaryoftheopenheart.com",
+      "image_urls": [
+        "https://sanctuaryofthe13moonmysteryschool.com/wp-content/uploads/2023/04/ariel-popping-out-of-circle-v5-w720px.png"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Feminine Alchemy",
+      "url": "https://sanctuaryofthe13moonmysteryschool.com/course/feminine-alchemy/",
+      "description": "A seven-part recorded audio series in which Ariel works with silence, synchronicity, the moon as a guide and the heroine's journey, with exercises and supporting notes. The Sanctuary describes it as her own favourite of her courses.",
+      "price": "$199 USD",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "mysticism",
+        "shadow-work"
+      ],
+      "image": "https://sanctuaryofthe13moonmysteryschool.com/wp-content/uploads/2023/01/Feminine-Alchemy-Course-Cover-Square.jpg"
+    },
+    {
+      "title": "Inter-Dimensional Sound",
+      "url": "https://sanctuaryofthe13moonmysteryschool.com/course/interdimensional-sound/",
+      "description": "A recorded video course on sound as a tool for inner change, drawing on Ariel's long practice as a sound priestess. The Sanctuary notes that audio quality varies in some of the videos.",
+      "price": "$199 USD",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "sound-healing"
+      ],
+      "image": "https://sanctuaryofthe13moonmysteryschool.com/wp-content/uploads/2023/01/Interdimensional-Sound-Course-Cover-Square.jpg"
+    },
+    {
+      "title": "Sacred Geometry",
+      "url": "https://sanctuaryofthe13moonmysteryschool.com/course/sacred-geometry/",
+      "description": "Recorded workshop sessions exploring the geometric symbols behind the 13 Moon Oracle and how to use them in practice, combining mantra, mudra and colour.",
+      "price": "$199 USD",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "sacred-geometry"
+      ],
+      "image": "https://sanctuaryofthe13moonmysteryschool.com/wp-content/uploads/2023/01/Sacred-Geometry-Course-Cover-Square.jpg"
+    },
+    {
+      "title": "13 Moon Oracle Course",
+      "url": "https://sanctuaryofthe13moonmysteryschool.com/course/oracle-course/",
+      "description": "A video series in which Ariel, who designed the deck, talks through each of its 39 archetypal cards in turn. It is meant for people who already own or use the 13 Moon Oracle.",
+      "price": "$199 USD",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "mysticism"
+      ],
+      "image": "https://sanctuaryofthe13moonmysteryschool.com/wp-content/uploads/2023/01/13-Moon-Oracle-Course-Cover-Square.jpg"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "13 Moon Oracle Online Deck",
+      "url": "https://sanctuaryofthe13moonmysteryschool.com/oracle",
+      "description": "A free interactive version of her oracle deck on the Sanctuary's site, where visitors draw a single card and read about its archetype.",
+      "featured": true,
+      "resource_type": "practice",
+      "subjects": [
+        "mysticism"
+      ],
+      "image": "https://sanctuaryoftheopenheart.com/static/oracle/card-back.jpg"
+    },
+    {
+      "title": "Guidebook for a Modern Priestess",
+      "url": "https://sanctuaryofthe13moonmysteryschool.com/newsletter",
+      "description": "A short digital guide by Ariel for people beginning on the priestess path, sent free to those who join the Sanctuary's newsletter.",
+      "featured": false,
+      "resource_type": "download",
+      "subjects": [
+        "spirituality"
+      ],
+      "image": "https://sanctuaryofthe13moonmysteryschool.com/wp-content/uploads/2023/07/flourish-o_0005_gold.png"
+    }
+  ],
+  "sprint": {
+    "sprint": "pipelines-1",
+    "hub": "the-shift-network",
+    "rank": 406,
+    "hub_url": null,
+    "tier_evidence": "No counts readable (4 Nov 2026): the Sanctuary's site links no social accounts of hers; no YouTube channel found → total 0 readable → local_hero",
+    "email": "yes",
+    "email_source": "https://sanctuaryofthe13moonmysteryschool.com/contact/",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 9 source(s)",
+    "flags": [
+      "No Shift mention on own site: listed without the link (Sanctuary home, about, school, courses and contact pages checked 4 Nov 2026).",
+      "Her own site is the non-profit she founded (sanctuaryofthe13moonmysteryschool.com; the podcast link sanctuaryoftheopenheart.com points to the same organisation); its four online courses count under the founder rule.",
+      "Email is the organisation's general inbox (info@sanctuaryoftheopenheart.com), published Cloudflare-encoded on the contact page and decoded.",
+      "No base published (see no_public_base): the about page says the Sanctuary is being grounded in the San Francisco Bay Area; please map if a city is wanted.",
+      "Please check she still teaches: the about page speaks of her in the present tense, but her full-bio page (/user/immayan) returned 404, the books page returned 504, and I found no current live class led by her; the free online circles are run by the community.",
+      "Only one photo confirmed: the circular headshot on the Sanctuary's about page.",
+      "Crawl-delay 10 on the Sanctuary site was respected (11 s between requests).",
+      "Books (The Alchemy of Ecstasy; The 13 Moon Oracle kit) not added: her site's books page returned 504 and no publisher page with an ISBN was opened; Open Library is blocked for us (4 Nov 2026).",
+      "holographicgoddess.com appeared as a link on her podcast page but nothing showed it is hers; not used."
+    ],
+    "left_out": [
+      "Meditation library: members only.",
+      "Books: no ISBN from her own or a publisher's page (books page 504).",
+      "Shift courses 'The Care & Feeding of Your Muse' and 'Awaken & Rebalance Yourself & Our World Through Feminine Alchemy': not linked from her own site.",
+      "Free online community circles (Soul Salon, Dream Weaver's Circle and others): dated sessions led by other community members, not by her."
+    ]
+  },
+  "images_final": true
+}

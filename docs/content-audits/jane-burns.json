@@ -1,0 +1,140 @@
+{
+  "healer": {
+    "healer_slug": "jane-burns",
+    "location_source": "https://journeystothesoul.com/contact-jane-burns/",
+    "create": {
+      "name": "Jane Burns",
+      "bio": "Jane Burns is a shamanic practitioner, teacher and writer in Southbury, Connecticut, whose work draws on the old spiritual ways of Ireland, Scotland and Wales. A serious illness in 1996 set her on the shamanic path. She went on to study core shamanism, soul retrieval and teacher training with Sandra Ingerman, and Celtic shamanism and the Irish tradition of faery doctoring with Tom Cowan. She has practised with clients since 2005 and taught shamanic journeying since 2007, is a Celtic Reiki master, and has led workshops for the Society for Shamanic Practice, whose journal she helps edit.\n\nHer practice, Journeys to the Soul, offers long one-to-one sessions in which the journey itself shapes the work, which may include soul retrieval, power animal retrieval, reading a client's soul archetype and ancestral work, in person at her barn for most of the year or over Zoom. She also runs a year-long mentorship for people finding their way on the shamanic path or building a practice, and a monthly practitioner training in the Celtic tradition. Since 2019 she has taught online courses with The Shift Network on Celtic wisdom, virtues and times of transition. She is the author of the novel and journeying handbook Up a Tree, a second novel, The Hungry Sea, and a Celtic tree oracle deck.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local_online",
+      "city": "Southbury, Connecticut",
+      "country": "United States",
+      "subjects": [
+        "shamanism",
+        "ancient-wisdom",
+        "spirituality"
+      ],
+      "website_url": "https://journeystothesoul.com/",
+      "booking_url": "https://journeystothesoul.com/shamanic-healing-services/",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": null,
+      "image_urls": [
+        "https://journeystothesoul.com/wp-content/uploads/2014/10/Jane.jpg"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "the-shift-network",
+      "role": "instructor"
+    }
+  ],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Shamanic healing session",
+      "url": "https://journeystothesoul.com/shamanic-healing-services/",
+      "description": "A two-hour one-to-one session whose shape is set by the shamanic journey, which may bring together soul retrieval, ancestral work, a reading of your soul archetype and the return of a power animal. Held at her barn in Southbury from March to November, or on Zoom all year.",
+      "price": "$225 USD (2-hour session)",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "shamanism"
+      ],
+      "image": "https://journeystothesoul.com/wp-content/uploads/2014/10/IMG_0179.jpg"
+    },
+    {
+      "title": "Mentorship Program",
+      "url": "https://journeystothesoul.com/mentorship-program/",
+      "description": "Six two-hour one-to-one sessions spread over most of a year, shaped to the person: deeper healing work, learning to live on the shamanic path, or turning existing training into a client practice.",
+      "price": "$1,500 USD (6 sessions)",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "shamanism",
+        "soul-purpose"
+      ],
+      "image": "https://journeystothesoul.com/wp-content/uploads/2024/01/image_for_mentorship_page-scaled.jpg"
+    },
+    {
+      "title": "The Powerful Transformations Hidden in the Betwixt and Between",
+      "url": "https://theshiftnetwork.com/course/30JBurns03_21",
+      "description": "A seven-week self-paced course with The Shift Network on the in-between times of life, when the old falls away before the new arrives. It works through Celtic tales, guided shamanic journeys and practices.",
+      "price": "See course page",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "shamanism",
+        "ancient-wisdom"
+      ],
+      "image": null
+    },
+    {
+      "title": "Celtic Shamanism: Rituals, Myths and Journeys for Reclaiming Your Sovereignty",
+      "url": "https://shiftnetwork.isrefer.com/go/odcsJB/a19409/",
+      "description": "A seven-module self-paced course with The Shift Network built around the Celtic wisdom wheel, with rituals of gratitude, courage and wonder for reconnecting with the land and the sacred.",
+      "price": "See course page",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "shamanism",
+        "ancient-wisdom"
+      ],
+      "image": null
+    },
+    {
+      "title": "Celtic Virtues to Cultivate Lasting Peace",
+      "url": "https://shiftnetwork.isrefer.com/go/cvlpJB/a19409/",
+      "description": "A ten-module self-paced course with The Shift Network on ten virtues prized by the ancient Celts, from courage and presence to surrender and peace, taught through stories, sacred trees and practices.",
+      "price": "See course page",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "shamanism",
+        "ancient-wisdom"
+      ],
+      "image": null
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "pipelines-1",
+    "hub": "the-shift-network",
+    "rank": 340,
+    "hub_url": null,
+    "tier_evidence": "No YouTube channel or social accounts linked from her site; none counted → 0 readable → local_hero.",
+    "email": "contact form",
+    "email_source": null,
+    "contact_form_url": "https://journeystothesoul.com/contact-jane-burns/",
+    "bio_check": "OK: no 8-word runs against 10 source(s)",
+    "flags": [
+      "Shift named on: https://journeystothesoul.com/about-jane-burns/ ('I became a member of the Shift Network Faculty in 2019') and https://journeystothesoul.com/shamanic-healing-workshops/ (three Shift courses linked).",
+      "Shift course page not opened: theshiftnetwork.com returns 403 to us (4 Nov 2026). The Betwixt and Between URL was copied from her site with tracking parameters removed; the other two are Shift affiliate links (shiftnetwork.isrefer.com) copied as given and not opened. Her site says she 'previously taught' them and invites readers to take them at their own pace.",
+      "Regional: base Southbury, Connecticut (contact page: 'Located in Southbury, CT').",
+      "Tier counts: none readable (no YouTube or social links on her site); total 0.",
+      "Her About page mentions a cancer diagnosis in 1996 and 'medical intuition'; the bio says only 'a serious illness' and leaves medical intuition out.",
+      "Mentorship page still says the programme was full for 2024; the contact page lists it at $1,500 for six sessions, so it was kept as current. A human may want to check.",
+      "Services page notes she is limiting new clients.",
+      "Only one usable photo (Jane.jpg on her site); other images are landscapes or book covers.",
+      "Her shamanic services include 'curse and spell removal' and 'extraction healing'; not used as items.",
+      "The ingest dry run (scripts/ingest.mjs, offering image lookup) fetched the Shift course URL(s) on 4 Nov 2026 before I noticed it does so; the image it took from Shift was removed and the item set to image null so later runs do not fetch theshiftnetwork.com again."
+    ],
+    "left_out": [
+      "Books 'Up a Tree: A Novel and Shamanic Handbook' (ISBN 9780991417902 seen in search results), 'The Hungry Sea' and the oracle deck 'Portal to the Sacred Trees': Open Library refused connections from us on 4 Nov 2026 and her site links only Amazon, so no ISBN could be confirmed.",
+      "Thirteen Moons Celtic Core Shamanic Practitioner Training (starts November 2026, registration closed).",
+      "Distance healing services and blog posts (latest 2022)."
+    ]
+  },
+  "images_final": true
+}

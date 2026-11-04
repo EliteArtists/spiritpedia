@@ -1,0 +1,125 @@
+{
+  "healer": {
+    "healer_slug": "nubia-teixeira",
+    "location_source": null,
+    "no_public_base": "Her site says only that she moved from Brazil to California in 2001; no town is published for where she lives or teaches (the Spirit Rock and Omega events are venues, not a base).",
+    "create": {
+      "name": "Nubia Teixeira",
+      "bio": "Nubia Teixeira is a Brazilian-born yoga teacher, Odissi dancer and author who started practising and teaching yoga in Brazil in her teens and has taught for more than thirty-five years. She came to California in 2001, where she continued her training in Odissi, the devotional classical dance of eastern India, with Sri Vishnu Tattva Das, having first studied it in São Paulo and in India. Her approach places the goddess at the centre of yoga practice, drawing on Shakta philosophy, bhakti devotion, Hatha Yoga and the expressive hand gestures of Indian dance.\n\nShe calls this work Mother Goddess Yoga: postures held long enough to build strength, combined with breath, mantra, prayer, poetry, story, mudra and imagery from nature, open to all bodies and genders. Her book Yoga and the Art of Mudras pairs yoga poses with symbolic gestures from the dance tradition, and she is writing a second book on Mother Goddess Yoga. Students can practise with her online through a Patreon community with circles, weekly classes, immersions and mentoring, or in person at retreats such as her annual immersion at the Omega Institute. She also trains yoga teachers, recorded a pranayama course with Sounds True, and often teaches alongside her husband, the kirtan musician Jai Uttal.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "worldwide",
+      "city": null,
+      "country": null,
+      "subjects": [
+        "yoga",
+        "spirituality",
+        "breathwork"
+      ],
+      "website_url": "https://www.nubiateixeira.com",
+      "booking_url": "https://www.nubiateixeira.com/events",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "nubiayoga@gmail.com",
+      "image_urls": [
+        "https://images.squarespace-cdn.com/content/v1/62f1599301689218368c66d1/50bcb063-318b-4166-8ed3-94c0610fe608/Nubia+Teixeira+4.jpg",
+        "https://images.squarespace-cdn.com/content/v1/62f1599301689218368c66d1/1d455db4-4af2-4cdb-aa7c-433f929e7efa/Nubia+Teixeira+1.jpg"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "omega-institute",
+      "role": "instructor"
+    }
+  ],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Mother Goddess Yoga Online (Patreon)",
+      "url": "https://www.patreon.com/MotherGoddessYoga",
+      "description": "Nubia's online membership, with tiers ranging from a monthly circle to weekly practice, a twice-weekly immersion and personal mentoring. Classes blend postures, breath, mantra, mudra and goddess imagery.",
+      "price": "See membership page",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga",
+        "spirituality"
+      ],
+      "image": "https://www.patreon.com/ig/card-teaser-image/creator/4340914.png?v=tt7meu"
+    },
+    {
+      "title": "Mother Goddess Yoga Immersion at Omega Institute",
+      "url": "https://www.nubiateixeira.com/events",
+      "description": "A five-day residential workshop at Omega in Rhinebeck, New York, teaching a goddess-centred yoga practice through postures, pranayama, mantra, mudra and visualisation. It is open to all ages and body types, with no prior yoga experience needed.",
+      "price": "See Omega Institute for pricing",
+      "product_type": "retreat",
+      "start_date": "2027-09-06",
+      "end_date": "2027-09-10",
+      "subjects": [
+        "yoga",
+        "spirituality",
+        "breathwork"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/62f1599301689218368c66d1/792aa532-7dd3-4682-b48e-90257beee15a/Nubia+Teixeira+2.jpg"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Mudras in Yoga",
+      "url": "https://www.nubiateixeira.com/the-blog/mudras-in-yoga",
+      "description": "An extract from her book, published free on her blog, explaining what mudras are and how they are thought to direct subtle energy in practice.",
+      "featured": true,
+      "resource_type": "practice",
+      "subjects": [
+        "yoga"
+      ],
+      "image": "http://static1.squarespace.com/static/62f1599301689218368c66d1/6397a6f660ece001c86127e4/639a42b56447de7a6c248512/1671054657920/12.png?format=1500w"
+    },
+    {
+      "title": "What is Bhakti Yoga?",
+      "url": "https://www.nubiateixeira.com/the-blog/bhakti-yoga",
+      "description": "A free blog extract from her book introducing bhakti, the yoga of devotion, and how it shapes everyday life and service.",
+      "featured": false,
+      "resource_type": "practice",
+      "subjects": [
+        "yoga",
+        "spirituality"
+      ],
+      "image": "http://static1.squarespace.com/static/62f1599301689218368c66d1/6397a6f660ece001c86127e4/639a45845b6ac61e9f9a7892/1671065095043/6.png?format=1500w"
+    }
+  ],
+  "sprint": {
+    "sprint": "pipelines-1",
+    "hub": "the-shift-network",
+    "rank": 412,
+    "hub_url": null,
+    "tier_evidence": "No counts read (4 Nov 2026): her site links Instagram, Facebook (MotherGoddessYoga) and YouTube (@NubiaEmbodiedSacredPractices); Instagram and Facebook need a login, and the YouTube channel was not opened (YouTube checks were refused by our own session's permission system that day) → total 0 readable → local_hero",
+    "email": "yes",
+    "email_source": "https://www.nubiateixeira.com/contact",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 12 source(s)",
+    "flags": [
+      "No Shift mention on own site: listed without the link (home, about, yoga, events, contact, book and dance pages checked 4 Nov 2026).",
+      "Omega Institute: her events page lists a Mother Goddess Yoga Immersion at Omega, 6 to 10 September 2027, so teaches_at omega-institute was added; the course URL is her own events page, as no Omega programme link is given.",
+      "Possible duplicate/couple: she is the wife of Jai Uttal, who is already on Spiritpedia (jai-uttal); she teaches her own yoga and dance work under her own name, so she is listed separately. Please confirm.",
+      "Email is a Gmail address published on her contact page (and about page for press); her management contact is Jana Fisher at UFO Music.",
+      "Photos: two outdoor portraits from her home page; one person in each, matching her other site photos.",
+      "Book Yoga and the Art of Mudras (Mandala Publishing / Insight Editions, 2019) not added: the publisher's product page answered 429 (rate limited), so I stopped fetching that site, and no ISBN appears on her own book page.",
+      "Her events page also lists a Spirit Rock chanting evening on 19 December with Jai Uttal and others; spiritrock.org was not opened and the event was not added (year not stated on her page)."
+    ],
+    "left_out": [
+      "Book Yoga and the Art of Mudras: no ISBN from her own or the publisher's page (publisher rate-limited us).",
+      "Pranayama: May Our Breath Be Our Prayer (Sounds True, 2005): only on Spotify per her Omega bio; not a current offering page of hers.",
+      "Spirit Rock Winter Solstice evening: spiritrock.org not opened, year not stated.",
+      "Yoga teacher training: mentioned on her contact page with no page or dates of its own.",
+      "Shift course 'The Art of Breathing Into Balance With Pranayama, Mudras & Mantras': not linked from her own site."
+    ]
+  },
+  "images_final": true
+}

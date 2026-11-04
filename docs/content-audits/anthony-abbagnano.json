@@ -1,0 +1,166 @@
+{
+  "healer": {
+    "healer_slug": "anthony-abbagnano",
+    "location_source": "https://alchemyofbreath.com/live-residential-breathwork-facilitator-training/",
+    "create": {
+      "name": "Anthony Abbagnano",
+      "bio": "Anthony Abbagnano is a breathwork teacher and the founder of Alchemy of Breath, a school that trains facilitators in conscious connected breathing online and in Italy. He came to breathing practices before he was twenty, but describes years of outward success and inner emptiness, until a serious illness in his fifties pushed him to rebuild his life around the work. With his partner Amy Rachelle, who co-founded the school with him, he later set up ASHA, a residential centre for breathwork and community living in the hills of southern Tuscany.\n\nHis approach treats the breath as a doorway to emotional honesty and spiritual self-knowledge rather than a single technique. He leads free online breathing sessions every Sunday under the name Breathe the World, which he says were among the first breathwork classes offered online, and he serves as a board member of the Global Professional Breathwork Alliance. Students can follow an eight-month online facilitator certification or a shorter residential version at ASHA, a seven-chapter inner journey based on the hero's journey called The Alchemist, or a ten-day felt-sense meditation course. His book Outer Chaos, Inner Calm sets out his story and core practices for staying centred in a turbulent world.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local_online",
+      "city": "Castell'Azzara",
+      "country": "Italy",
+      "subjects": [
+        "breathwork",
+        "spiritual-awakening",
+        "meditation"
+      ],
+      "website_url": "https://alchemyofbreath.com/",
+      "booking_url": "https://alchemyofbreath.com/breathwork-training/",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": null,
+      "image_urls": [
+        "https://alchemyofbreath.com/wp-content/uploads/anthony-abbagnano-2-1.jpg",
+        "https://alchemyofbreath.com/wp-content/uploads/Anthony-7-1.jpg"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "the-shift-network",
+      "role": "instructor"
+    }
+  ],
+  "videos": [],
+  "books": [
+    {
+      "title": "Outer Chaos, Inner Calm",
+      "slug": "outer-chaos-inner-calm",
+      "author": "Anthony Abbagnano",
+      "asin": "1068228601",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "Abbagnano tells how breathwork carried him from a restless, outwardly successful life to a steadier one, and passes on the practices he teaches. Chapters combine breathing exercises with reflections on awareness, purpose and resilience.",
+      "subjects": [
+        "breathwork",
+        "spiritual-awakening"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1068228601.01._SCLZZZZZZZ_.jpg"
+    }
+  ],
+  "courses": [
+    {
+      "title": "Online Breathwork Facilitator Training",
+      "url": "https://alchemyofbreath.com/breathwork-training/",
+      "description": "An eight-month, 400-hour certification in guiding conscious connected breathwork, taught online with weekly live calls by Abbagnano, Amy Rachelle and their trainers. The next cohort begins on 19 November 2026.",
+      "price": "$7,200 USD",
+      "product_type": "course",
+      "start_date": "2026-11-19",
+      "end_date": null,
+      "subjects": [
+        "breathwork"
+      ],
+      "image": "https://alchemyofbreath.com/wp-content/uploads/mockup-facilitator-training-1015x600.png"
+    },
+    {
+      "title": "Live Residential Breathwork Facilitator Training at ASHA, Tuscany",
+      "url": "https://alchemyofbreath.com/live-residential-breathwork-facilitator-training/",
+      "description": "A four-month accelerated route to the same certification, opening with twenty-one days living and practising together at ASHA in Tuscany and continuing online with mentoring. New dates are to be announced.",
+      "price": "$7,200 USD",
+      "product_type": "retreat",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "breathwork"
+      ],
+      "image": "https://alchemyofbreath.com/wp-content/uploads/breath-outside.png"
+    },
+    {
+      "title": "The Alchemist: An Inner Journey to Yourself",
+      "url": "https://alchemyofbreath.com/the-alchemist/",
+      "description": "Fifteen weeks of live online classes following seven chapters modelled on the hero's journey, from the call and the inner child to the shadow and the return. It opens the core of the facilitator training to anyone.",
+      "price": "See course page",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "shadow-work",
+        "breathwork",
+        "spiritual-awakening"
+      ],
+      "image": "https://alchemyofbreath.com/wp-content/uploads/glow-head-578x600.jpg"
+    },
+    {
+      "title": "Alchemy Meditation",
+      "url": "https://alchemyofbreath.com/alchemy-meditation-course/",
+      "description": "A ten-day online course in sensing and naming emotions through the body's felt sense. Short daily lessons build a meditation habit grounded in bodily awareness.",
+      "price": "$179 USD",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://alchemyofbreath.com/wp-content/uploads/AoB-emblem-web-white-small.png"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Breathe the World: Free Sunday Breathwork",
+      "url": "https://alchemyofbreath.com/free-breathwork-sessions/",
+      "description": "A free live online breathwork session held every Sunday and open to beginners. Abbagnano and his facilitators guide the group through a full breathing journey.",
+      "featured": true,
+      "resource_type": "practice",
+      "subjects": [
+        "breathwork"
+      ],
+      "image": "https://alchemyofbreath.com/wp-content/uploads/resized-1.jpg"
+    },
+    {
+      "title": "Breathwork Fundamentals Course",
+      "url": "https://alchemyofbreath.com/breathwork-fundamentals/",
+      "description": "A free four-lesson video introduction to breathwork led by Abbagnano, ending with a guided session. Sign-up with an email address is required.",
+      "featured": false,
+      "resource_type": "mini_course",
+      "subjects": [
+        "breathwork"
+      ],
+      "image": "https://alchemyofbreath.com/wp-content/uploads/IMG_9432-1.jpg"
+    }
+  ],
+  "sprint": {
+    "sprint": "pipelines-1",
+    "hub": "the-shift-network",
+    "rank": 319,
+    "hub_url": null,
+    "tier_evidence": "No personal accounts readable: his site links only the school's Instagram @alchemyofbreath and Facebook AOB.Breathwork (company accounts, and blocked sites, not opened); no YouTube channel linked → 0 readable → local_hero",
+    "email": "contact form",
+    "email_source": null,
+    "contact_form_url": "https://alchemyofbreath.com/contact/",
+    "bio_check": "OK: no 8-word runs against 10 source(s)",
+    "flags": [
+      "Shift named on: https://alchemyofbreath.com/outer-chaos-inner-calm/ and https://alchemyofbreath.com/free-breathwork-sessions/ (he 'holds a faculty position on the Shift Network').",
+      "Base: Castell'Azzara is the village (about 1,400 people, province of Grosseto) beside ASHA, the Tuscan centre he founded, named in the residential training FAQ; the site says ASHA is in 'central Tuscany' but never states where he personally lives. Village below 5,000: please map it.",
+      "Regional: southern Tuscany, Italy, where Spiritpedia likely has few or no teachers.",
+      "Health rule, borderline: the school sells an anxiety course, a free 'reduce anxiety' masterclass and the Alchemy Regulation Method, and the training pages mention trauma-informed practice and healing; all condition-named items were left out and descriptions avoid those claims, but please check the site's overall framing is acceptable.",
+      "Tier: the site claims a community of 170,000 and 2,000+ certified facilitators (published student counts); a luminary override might be argued but was not applied.",
+      "Listing is for Anthony, the founder; Alchemy of Breath and ASHA are co-founded with Amy Rachelle, ND, who is named in the bio.",
+      "Facilitator training price: the page shows $7,200 with a last-minute $6,800 that ends 5 November 2026; $7,200 used. The Alchemist shows several early-bird rates ($2,297 to $3,097), so 'See course page'.",
+      "Book ASIN 1068228601 is linked from his own book page; not opened on Amazon and NOT confirmed on Open Library (openlibrary.org served a human-verification page on 4 Nov 2026, so I stopped using it).",
+      "alchemyofbreath.com sets Crawl-delay: 10; I waited 11 s between requests."
+    ],
+    "left_out": [
+      "3 Ways to Reduce Anxiety masterclass, Transforming Anxiety course, Alchemy Regulation Method: condition-named (health rule).",
+      "The Bridge workshop: its bonus is a 'trauma' workshop and its live follow-up (22 May) has passed.",
+      "BreathCamps 2027 and Alchemy Residential Club: no dates or prices yet; the club is co-living, not teaching.",
+      "21-Day Facilitator Training at ASHA: not opened; may overlap with the residential training."
+    ]
+  },
+  "images_final": true
+}

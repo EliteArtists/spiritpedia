@@ -1,0 +1,155 @@
+{
+  "healer": {
+    "healer_slug": "bernadette-pleasant",
+    "location_source": null,
+    "no_public_base": "Neither her site (about, contact, media kit, Kauai retreat pages) nor her downloadable biography names a town or country where she lives or works; the Kauai retreat is a travel destination, not a base.",
+    "create": {
+      "name": "Bernadette Pleasant",
+      "bio": "Bernadette Pleasant is a somatic movement teacher and the founder of The Emotional Institute, a school built around expressing emotion through the body. Her signature class, once called Femme! and now The Emotional Tour, mixes primal and free-form dance, breath, voice, visualisation and meditation, set to live drumming and drawing on African and tribal dance. Participants move through a sequence of feelings, from joy and sorrow to anger and ecstasy, and no dance experience is needed. She holds certifications in emotions-centred coaching, somatic healing and Integrated Energy Therapy, and says she comes from a family line of healers who worked through touch and movement.\n\nAlongside the movement classes she leads grief rituals, both live online and as a printable guide for people to adapt at home, and she trains and certifies teachers to run The Emotional Tour themselves, online or in person. She also offers private three-day retreats on Kauai with coaching, walks and time on the land, and created 400 Years, a body-based programme on unlearning racism. She has taught for The Shift Network, which hosted her online course on somatic dance and several of its summits, and she contributed to the anthology Sacred Body Wisdom.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "worldwide",
+      "city": null,
+      "country": null,
+      "subjects": [
+        "self-healing",
+        "spirituality",
+        "death-the-afterlife"
+      ],
+      "website_url": "https://www.theemotionalinstitute.com",
+      "booking_url": "https://www.theemotionalinstitute.com/events-courses",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "info@theemotionalinstitute.com",
+      "image_urls": [
+        "https://static1.squarespace.com/static/5fce5b4ae68b41342bada842/t/612406b40ff77d7980ee1c35/1629750987646/B_Pleasant_Headshot_Square.jpg",
+        "https://static1.squarespace.com/static/5fce5b4ae68b41342bada842/t/6124065c7fccd41abffb6765/1629750896846/Bernadette+Pleasant_Head_Shot.jpg",
+        "https://static1.squarespace.com/static/5fce5b4ae68b41342bada842/t/612406fde6801f25549590ad/1629751053967/B_Pleasant_Alternate.jpg"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "the-shift-network",
+      "role": "instructor"
+    }
+  ],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "The Emotional Tour",
+      "url": "https://www.theemotionalinstitute.com/the-emotional-tour",
+      "description": "Her signature movement class, formerly called Femme!, held online and in person. Live drums guide a sequence of free movement, breath and voice through a range of emotions, and no dance training is needed.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "self-healing",
+        "spirituality"
+      ],
+      "image": "http://static1.squarespace.com/static/5fce5b4ae68b41342bada842/t/63e3e0d854ce645bdc125487/1675878621145/TheEmotionalTour.png?format=1500w"
+    },
+    {
+      "title": "Sacred Grief Rituals (Online)",
+      "url": "https://www.theemotionalinstitute.com/sacred-grief-rituals",
+      "description": "Live online rituals that give people a held space to express grief for any kind of loss, from bereavement to life changes, using movement, sound and ceremony.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "death-the-afterlife",
+        "spirituality"
+      ],
+      "image": "http://static1.squarespace.com/static/5fce5b4ae68b41342bada842/t/60275aafcbde8d7a7c6b0a5c/1613191860469/Emotion+in+Motion+Mar+2019+-51.jpg?format=1500w"
+    },
+    {
+      "title": "Sacred Grief Ritual Guidebook (PDF)",
+      "url": "https://www.theemotionalinstitute.com/shop/p/sacred-grief-ritual-guidebook",
+      "description": "A downloadable step-by-step guide for creating a personal grief ritual at home, written to be adapted to each reader's own loss.",
+      "price": "$47.00 USD",
+      "product_type": "download",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "death-the-afterlife"
+      ],
+      "image": "http://static1.squarespace.com/static/5fce5b4ae68b41342bada842/5fd247ca329e0a201fd9953e/5fd7d3b23c2f085969e064e7/1787764962216/sacred-grief-ritual-guidebook-cover.jpg?format=1500w"
+    },
+    {
+      "title": "TEI Teacher Training and Certification",
+      "url": "https://www.theemotionalinstitute.com/tei-teacher-training",
+      "description": "A programme that certifies new teachers to run her movement class, whether on Zoom or face to face. It focuses on holding a safe space for expression rather than on dance steps; entry is currently by waitlist.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "self-healing"
+      ],
+      "image": "http://static1.squarespace.com/static/5fce5b4ae68b41342bada842/t/60275a199cc29445ce3888bf/1613191712068/Emotion+in+Motion+Mar+2019+-51.jpg?format=1500w"
+    },
+    {
+      "title": "Kauai Private Retreat",
+      "url": "https://www.theemotionalinstitute.com/kauai",
+      "description": "A three-day one-to-one retreat with Bernadette on the island of Kauai, combining private coaching with hikes and visits, with lodging, meals and local transport included. Bookings start with a call.",
+      "price": "Contact for pricing",
+      "product_type": "retreat",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "spirituality",
+        "self-healing"
+      ],
+      "image": "http://static1.squarespace.com/static/5fce5b4ae68b41342bada842/t/5fd8234f998a6a2ed5428ccd/1608000342891/About+The+Emotional+Insitute.png?format=1500w"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "The HEART of Storytelling",
+      "url": "https://www.theemotionalinstitute.com/shop/p/the-heart-of-storytelling",
+      "description": "A free downloadable guide that uses the letters of HEART as a structure for telling personal stories of loss in a way that builds empathy and ends on hope.",
+      "featured": true,
+      "resource_type": "download",
+      "subjects": [
+        "death-the-afterlife"
+      ],
+      "image": "http://static1.squarespace.com/static/5fce5b4ae68b41342bada842/5fd247ca329e0a201fd9953e/670726a747391143415877b7/1787920002170/When+telling+compelling+stories+about+loss+and+heartbreak%2C+the+aim+is+to+connect+deeply+with+your+audience+by+sharing+your+experience+in+a+way+that+resonates+emotionally.+Here+are+the+basic+elemen+%281%29.png?format=1500w"
+    }
+  ],
+  "sprint": {
+    "sprint": "pipelines-1",
+    "hub": "the-shift-network",
+    "rank": 407,
+    "hub_url": null,
+    "tier_evidence": "No counts readable (4 Nov 2026): her site shows an Instagram feed but Instagram can't be read without logging in and was not opened; no YouTube channel linked → total 0 readable → local_hero",
+    "email": "yes",
+    "email_source": "https://www.theemotionalinstitute.com/contact",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 22 source(s)",
+    "flags": [
+      "Shift named on: https://www.theemotionalinstitute.com/shift (she calls herself a Shift Network faculty member and lists her Shift courses and summits).",
+      "Email is The Emotional Institute's general inbox (info@), her own school.",
+      "No base published (see no_public_base).",
+      "Grief items kept (Sacred Grief Rituals online and the guidebook): grief is treated as ritual, not therapy; the online ritual page lists illness, injury and old traumas among causes of grief, so please check against the health rule.",
+      "Femme!/Emotional Tour pages say the class can calm the nervous system and suit people dealing with anxiety; the item is kept with a neutral description (borderline).",
+      "Photos: two headshots and one dance photo from her media kit (theemotionalinstitute.com/media-kit).",
+      "Her site's event calendar loads by script and showed no dates, so no dated events were added."
+    ],
+    "left_out": [
+      "Somatic Dance for Emotional Alchemy (Shift course): her course page links an isrefer referral link and a free Shift video event, not a theshiftnetwork.com course page; not opened, left out.",
+      "Rest as Ritual ($49) and Return to Rest ($61): dated sessions (9 and 10 March; Monday 13 July) now past, marked out of stock.",
+      "Sacred Silence Retreat: page sells it partly on reducing anxiety and stress (health rule).",
+      "400 Years: anti-racism programme, not spiritual teaching.",
+      "Free 10-minute Self-Acceptance Ritual video: the sign-up form on her opt-in page is broken ('needs a storage option').",
+      "Book Sacred Body Wisdom (anthology, Flower of Life Press; she is one of several contributors): her shop page gives no ISBN, and Open Library is blocked for us (4 Nov 2026).",
+      "Blog post on somatic movement: promotes a past Shift workshop (May)."
+    ]
+  },
+  "images_final": true
+}

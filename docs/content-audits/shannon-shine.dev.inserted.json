@@ -1,0 +1,45 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 794,
+    "healer_slug": "shannon-shine"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "b03bc971-85fb-489f-892f-a168e71ef724",
+      "slug": "3-soul-session-package",
+      "title": "3 Soul Session Package"
+    },
+    {
+      "table": "courses",
+      "id": "f98b4a18-43e8-4a1f-bc08-74eb046f9bef",
+      "slug": "monthly-magic-membership",
+      "title": "Monthly Magic Membership"
+    },
+    {
+      "table": "courses",
+      "id": "cdc3c1fc-d7b8-456b-a303-8a623b0b738f",
+      "slug": "divine-journey-mentorship",
+      "title": "Divine Journey Mentorship"
+    },
+    {
+      "table": "courses",
+      "id": "43d22185-8e1a-454b-9012-119bdcd3c26a",
+      "slug": "release-rise",
+      "title": "Release & Rise"
+    },
+    {
+      "table": "free_resources",
+      "id": "c9a47e43-eb1a-4270-a315-2b07f60c07c3",
+      "slug": "shannon-shine-on-insight-timer",
+      "title": "Shannon Shine on Insight Timer"
+    },
+    {
+      "table": "hub_teachers",
+      "id": "7226dd84-242f-4f03-ab6a-a42b6a22d926",
+      "title": "shannon-shine teaches at Insight Timer"
+    }
+  ],
+  "at": "2026-11-04T17:28:19.739Z"
+}

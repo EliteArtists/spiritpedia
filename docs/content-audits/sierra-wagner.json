@@ -1,0 +1,149 @@
+{
+  "healer": {
+    "healer_slug": "sierra-wagner",
+    "location_source": "https://www.sierralaurelyoga.com/contact",
+    "create": {
+      "name": "Sierra Wagner",
+      "bio": "Sierra Wagner is a yoga and meditation teacher in west Sonoma County, California, who works under the name Sierra Laurel Yoga. She has practised yoga for around thirty years and taught for more than twenty, and has completed some two thousand hours of training, grounded in the Iyengar tradition and in restorative yoga, alongside meditation, Thai massage and self-massage with balls and rollers. A long recovery from a serious injury earlier in life, she says, is what showed her how breath, slow movement and quiet attention can steady both body and mind.\n\nHer classes are small and adaptable, using props and slower variations so that people of different ages and shapes can find their own version of each pose, and they usually close with guided relaxation. She leads a weekly mixed-level hatha class in Sebastopol, a self-paced 21-day online immersion for building a home practice, and outdoor retreats that combine hiking, camping and yoga, including a backpacking trip in the Sierra Nevada. Her recorded meditations draw on Rumi, mudras, candle gazing and sense withdrawal, and are free on her website and on Insight Timer. She also offers private sessions in clients' homes around Sonoma and Alameda counties.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local_online",
+      "city": "Forestville, California",
+      "country": "United States",
+      "subjects": [
+        "yoga",
+        "meditation",
+        "mindfulness"
+      ],
+      "website_url": "https://www.sierralaurelyoga.com",
+      "booking_url": "https://www.sierralaurelyoga.com/public-offerings",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "sierralaurel@gmail.com",
+      "image_urls": [
+        "https://images.squarespace-cdn.com/content/v1/5acd082f506fbe2739042dc7/d10bbc6e-79f0-4b2e-b7cc-3f8bddf06f3a/Sierra+Wagner+Headshot.jpg"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "insight-timer",
+      "role": "instructor"
+    }
+  ],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Hatha Yoga: Mixed Level",
+      "url": "https://www.sierralaurelyoga.com/public-offerings-blog/yoga-in-sebastopol",
+      "description": "A weekly small-group class on Thursday mornings at a community hall in Sebastopol. Depending on who comes, the pace can be gentle or more flowing, with breathing practice and relaxation built in.",
+      "price": "$22–33 USD sliding scale per class",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga",
+        "breathwork"
+      ],
+      "image": "http://static1.squarespace.com/static/5acd082f506fbe2739042dc7/5aec0738352f53290dc31716/61f84ceb198ac7323eaa8728/1793225478328/IMG_9792.jpg?format=1500w"
+    },
+    {
+      "title": "21-Day Online Immersion",
+      "url": "https://www.sierralaurelyoga.com/online-immersion-invitation",
+      "description": "A self-paced online programme for setting up a regular home practice, with a library of a dozen 30–40 minute yoga and meditation classes, reflective worksheets and coaching from Sierra along the way.",
+      "price": "$99 USD",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga",
+        "meditation"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/5acd082f506fbe2739042dc7/1597945353884-HEHS0PC7PM74ZRTOJUEQ/Succulents+3.jpg"
+    },
+    {
+      "title": "Wild Within: A Backpacking Journey Back to Self Under the Sierra Stars",
+      "url": "https://www.sierralaurelyoga.com/public-offerings-blog/wild-within-retreat",
+      "description": "A three-day backpacking retreat in the Sierra Nevada that combines hiking and camping with yoga, quiet reflection and time away from screens. It is planned for August 2027, with the exact dates still to be set.",
+      "price": "$499 USD (meals and gear extra)",
+      "product_type": "retreat",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga",
+        "mindfulness"
+      ],
+      "image": "http://static1.squarespace.com/static/5acd082f506fbe2739042dc7/5aec0738352f53290dc31716/65a1af33c6c6e843b0dd339f/1788390303401/EXFME1350.JPG?format=1500w"
+    },
+    {
+      "title": "Individual and Private Group Retreats",
+      "url": "https://www.sierralaurelyoga.com/public-offerings-blog/private-retreat",
+      "description": "Retreats arranged for one person or a private group, in the United States or abroad, built around rest, yoga, meditation and time in nature.",
+      "price": "Contact for pricing",
+      "product_type": "retreat",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga",
+        "meditation"
+      ],
+      "image": "http://static1.squarespace.com/static/5acd082f506fbe2739042dc7/5aec0738352f53290dc31716/6744ce2d88ad3579e37112ad/1732563670217/Nature+Prayer.jpg?format=1500w"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Sierra Laurel on Insight Timer",
+      "url": "https://insighttimer.com/sierralaurel",
+      "description": "Sierra's free Insight Timer page, where her guided meditations can be played in the app or a web browser at no cost.",
+      "featured": false,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/5acd082f506fbe2739042dc7/d10bbc6e-79f0-4b2e-b7cc-3f8bddf06f3a/Sierra+Wagner+Headshot.jpg"
+    },
+    {
+      "title": "Audio Meditations by Sierra Wagner",
+      "url": "https://www.sierralaurelyoga.com/audio-meditations",
+      "description": "Six recorded meditations of ten to twenty minutes, free to play on her website, including sense withdrawal (pratyahara), letting go, a Rumi reflection, mudras and candle gazing.",
+      "featured": true,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/5acd082f506fbe2739042dc7/1532369009653-83N7MVF79YLINN7L06CC/Buddha+1.jpg"
+    }
+  ],
+  "sprint": {
+    "sprint": "pipelines-1",
+    "hub": "insight-timer",
+    "rank": 137,
+    "hub_url": "https://insighttimer.com/sierralaurel",
+    "tier_evidence": "Insight Timer 203 followers (queue entry, read 1 Nov 2026); Instagram @sierralaurelyoga linked but not opened; no YouTube channel found → ~200 total → local_hero",
+    "email": "yes",
+    "email_source": "https://www.sierralaurelyoga.com/contact",
+    "contact_form_url": "https://www.sierralaurelyoga.com/contact",
+    "bio_check": "OK: no 8-word runs against 14 source(s)",
+    "flags": [
+      "Name: her site presents her as Sierra Wagner (headshot file 'Sierra Wagner Headshot', recordings credited to Sierra Wagner) trading as Sierra Laurel Yoga; on Insight Timer she is Sierra Laurel. Listed as Sierra Wagner; the Insight Timer resource keeps the Insight Timer name.",
+      "Regional: Forestville, California (west Sonoma County, under 5,000 people); her business address is in Forestville. Needs a place alias.",
+      "Health rule, borderline: she styles herself a teacher of 'integrative lifestyle medicine' and offers yoga therapy; testimonials mention polio and chronic pain; the 21-day immersion's sales page refers to COVID pressures and managing physical and mental health. Therapy and condition-framed items are left out and my descriptions avoid health claims. A human may want to check whether her work is mainly therapeutic.",
+      "Only one usable photo (named headshot); the other portrait on her site is the same picture at a smaller size.",
+      "Wild Within retreat: August 2027, exact dates not set, so left undated."
+    ],
+    "left_out": [
+      "Private Yoga Therapy, Thai Massage and self-massage sessions: therapy or bodywork framing.",
+      "Yoga for Aging Gracefully (weekly Zoom series and 6-week online programme, $199–$899): pages name pain, stiff joints, memory and healing (health rule).",
+      "Evening Slow Flow Yoga and Bliss Bathhouse: promises immune and respiratory health and 'detox' (health rule).",
+      "Metabolizing Grief workshop (February 2026) and Island in the Sky hike (2 November 2026): already past.",
+      "Solstice Sensory Immersion on the Lost Coast: 'Summer Solstice 2027, dates to be determined', waitlist only; framed as ecotherapy.",
+      "What Is Your Body Asking For PDF: only in exchange for a newsletter sign-up."
+    ]
+  },
+  "images_final": true
+}

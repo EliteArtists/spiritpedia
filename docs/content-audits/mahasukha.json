@@ -1,0 +1,153 @@
+{
+  "healer": {
+    "healer_slug": "mahasukha",
+    "location_source": "https://www.mahasukha.co.uk/soulful-singing.html",
+    "create": {
+      "name": "Mahasukha",
+      "bio": "Mahasukha is a Buddhist singing and mantra teacher, musician and voice coach based in Brighton. He started on drums at eleven, played in bands for years, took an advanced diploma in music and has now been a working musician for close to fifty years. His Buddhist name means great bliss, and the idea of making a sacred, spacious setting runs through all his work. For over twenty years he has led group singing and mantra events with thousands of people, and he has recorded several albums of chants and songs.\n\nSoulful Singing is his regular Saturday workshop in Brighton, also taken to Bristol and elsewhere in the UK: simple songs, chants and mantras from many cultures, learned by ear and sung in harmony, with no experience needed. Beauty of Mantra is more ceremonial, with Buddhist mantras sung in parts to his drumming in front of a shrine, with candle offerings, as a way of calling on the qualities of particular Buddhas and bodhisattvas. He also leads retreats, and offers one-to-one mantra lessons, guided meditation sessions focused on breath, body and kind awareness, and Embodied Voice sessions that use breath, movement and singing to build vocal confidence, in Brighton or on Zoom.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local_online",
+      "city": "Brighton",
+      "country": "United Kingdom",
+      "subjects": [
+        "sound-healing",
+        "meditation",
+        "ancient-wisdom"
+      ],
+      "website_url": "https://www.mahasukha.co.uk/",
+      "booking_url": "https://www.mahasukha.co.uk/11-mantra.html",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "hello@mahasukha.co.uk",
+      "image_urls": [
+        "https://www.mahasukha.co.uk/uploads/3/2/3/4/32341431/best_4.jpg",
+        "https://www.mahasukha.co.uk/uploads/3/2/3/4/32341431/editor/stnic-sconcert.jpg"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "insight-timer",
+      "role": "instructor"
+    }
+  ],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Soulful Singing workshops",
+      "url": "https://www.mahasukha.co.uk/soulful-singing.html",
+      "description": "Saturday morning group singing in Brighton, and workshops in Bristol and around the UK: easy chants, mantras and songs gathered from many cultures, taught by ear and sung in part harmony. Venues and dates vary.",
+      "price": "£15 GBP (£13 concession), pay on the door",
+      "product_type": "course",
+      "subjects": [
+        "sound-healing",
+        "spirituality"
+      ],
+      "start_date": null,
+      "end_date": null,
+      "image": "https://www.mahasukha.co.uk/uploads/3/2/3/4/32341431/best_4.jpg"
+    },
+    {
+      "title": "Beauty of Mantra",
+      "url": "https://www.mahasukha.co.uk/beauty-of-mantra.html",
+      "description": "Evening and workshop rituals of Buddhist mantra sung in harmony to hand drumming before a shrine, with candle offerings, each mantra invoking a different Buddha or bodhisattva. Held in Brighton, Bristol and elsewhere in the UK.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "subjects": [
+        "meditation",
+        "ancient-wisdom",
+        "sound-healing"
+      ],
+      "start_date": null,
+      "end_date": null,
+      "image": "https://www.mahasukha.co.uk/uploads/3/2/3/4/32341431/jackieemail_19.jpg"
+    },
+    {
+      "title": "1:1 Mantra sessions",
+      "url": "https://www.mahasukha.co.uk/11-mantra.html",
+      "description": "Private lessons for learning Buddhist mantras and growing confidence in chanting them, drawn from his large repertoire, in Brighton or on Zoom.",
+      "price": "£65 GBP per hour",
+      "product_type": "course",
+      "subjects": [
+        "meditation",
+        "sound-healing"
+      ],
+      "start_date": null,
+      "end_date": null,
+      "image": "https://www.mahasukha.co.uk/uploads/3/2/3/4/32341431/fringe17_21.jpg"
+    },
+    {
+      "title": "Guided meditation sessions",
+      "url": "https://www.mahasukha.co.uk/meditation.html",
+      "description": "Individual guided sits that bring attention to the body and breath and to whatever arises, met with curiosity and kindness. Available on Zoom and in Brighton.",
+      "price": "£50 GBP (50 min); £42 GBP (40 min)",
+      "product_type": "course",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "start_date": null,
+      "end_date": null,
+      "image": "https://www.mahasukha.co.uk/uploads/3/2/3/4/32341431/fringe17_37.jpg"
+    },
+    {
+      "title": "The Embodied Voice",
+      "url": "https://www.mahasukha.co.uk/11-embodied-voice.html",
+      "description": "One-to-one voice sessions using breathing, movement and singing exercises to free the voice and build confidence, sometimes with a song or mantra to learn. In Brighton (plus studio hire) or on Zoom.",
+      "price": "£65 GBP per hour",
+      "product_type": "course",
+      "subjects": [
+        "sound-healing",
+        "self-healing"
+      ],
+      "start_date": null,
+      "end_date": null,
+      "image": "https://www.mahasukha.co.uk/uploads/3/2/3/4/32341431/editor/jackie.jpg?1755361880"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Mahasukha on Insight Timer",
+      "url": "https://insighttimer.com/mahasukha",
+      "description": "Mantras and guided practices from Mahasukha, free to listen to in the app or online.",
+      "featured": true,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation",
+        "sound-healing"
+      ],
+      "image": "https://www.mahasukha.co.uk/uploads/3/2/3/4/32341431/best_4.jpg"
+    }
+  ],
+  "sprint": {
+    "sprint": "pipelines-1",
+    "hub": "insight-timer",
+    "rank": 154,
+    "hub_url": "https://insighttimer.com/mahasukha",
+    "tier_evidence": "Insight Timer 846 followers (queue entry, read 1 Nov 2026); no YouTube, Facebook or X account of his linked from his site (the two Instagram links are other people's) → ~0.8k total → local_hero.",
+    "email": "yes",
+    "email_source": "https://www.mahasukha.co.uk/11-embodied-voice.html",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 8 source(s)",
+    "flags": [
+      "Single-name listing: he teaches only as Mahasukha (a Buddhist name); no surname is published.",
+      "Photos are uncaptioned: a man drumming (Soulful Singing page) and a man drumming at a concert (About page). They appear to be the same man and fit the site's 'he accompanies with drumming', but identity is not confirmed by a caption; a human may want to check.",
+      "His site also lists hello@soulfulsinging.co.uk in every footer; the listing uses hello@mahasukha.co.uk from the Embodied Voice page.",
+      "Base Brighton from the Soulful Singing page (Saturday workshops in Brighton) and 1:1 pages ('held in Brighton and on Zoom'); no home town stated in so many words.",
+      "Embodied Voice page speaks of a nervous system 'reset' and of healing emerging; kept as a voice session with a plain description. Borderline.",
+      "His Buddhist sangha or order is not named on his site (he quotes Sangharakshita); not stated in the bio."
+    ],
+    "left_out": [
+      "Embodied Coaching (sold to people feeling stressed, depressed or anxious).",
+      "Albums on Bandcamp (music releases, not teaching items).",
+      "Retreats (no current retreat page or dates; last named retreat Alfoxton, May 2024).",
+      "Videos and books: none found."
+    ]
+  },
+  "images_final": true
+}

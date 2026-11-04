@@ -1,0 +1,39 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 797,
+    "healer_slug": "swami-chidananda"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "4340506b-d07c-41a9-bdc5-30862f6123f8",
+      "slug": "spiritual-journey-shared-together-swami-chidanandas-patreon-community",
+      "title": "Spiritual Journey, Shared Together: Swami Chidananda's Patreon Community"
+    },
+    {
+      "table": "courses",
+      "id": "259b7dcd-7cf7-4ed7-a745-9c70a68679a5",
+      "slug": "10-day-journey-to-indias-high-north",
+      "title": "10-Day Journey to India's High North"
+    },
+    {
+      "table": "free_resources",
+      "id": "eb146df1-7f91-4da7-b358-eeff19be4f7a",
+      "slug": "swami-chidananda-on-insight-timer",
+      "title": "Swami Chidananda on Insight Timer"
+    },
+    {
+      "table": "free_resources",
+      "id": "743c12ac-60c2-4a61-b359-3e0729a70c67",
+      "slug": "path-of-a-swami-podcast",
+      "title": "Path of a Swami Podcast"
+    },
+    {
+      "table": "hub_teachers",
+      "id": "1f38034c-1da6-4098-85e5-3b0ff72c7898",
+      "title": "swami-chidananda teaches at Insight Timer"
+    }
+  ],
+  "at": "2026-11-04T17:28:33.319Z"
+}

@@ -1,0 +1,46 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 834,
+    "healer_slug": "christena-cleveland"
+  },
+  "rows": [
+    {
+      "table": "books",
+      "id": 1902,
+      "slug": "god-is-a-black-woman",
+      "title": "God Is a Black Woman"
+    },
+    {
+      "table": "courses",
+      "id": "eb0802c0-3ab6-4a9e-8c7e-2d04f1339446",
+      "slug": "black-madonna-freedom-school-2027-cohort",
+      "title": "Black Madonna Freedom School (2027 Cohort)"
+    },
+    {
+      "table": "courses",
+      "id": "ca1acc8d-5cc8-4201-9e8b-2655a2758869",
+      "slug": "she-who-cannot-be-shamed-tamed-or-contained",
+      "title": "She Who Cannot Be Shamed, Tamed or Contained"
+    },
+    {
+      "table": "courses",
+      "id": "e06fe7ff-9e98-47c7-a364-99d0731178ec",
+      "slug": "christ-our-black-mother-speaks",
+      "title": "Christ our Black Mother Speaks"
+    },
+    {
+      "table": "courses",
+      "id": "649a76cd-ebba-465c-984f-91a10a3516d9",
+      "slug": "not-today-colonizer",
+      "title": "Not Today Colonizer"
+    },
+    {
+      "table": "courses",
+      "id": "2c281ec3-e165-4113-be7a-8f02d954eedb",
+      "slug": "official-reflection-e-workbook-for-the-black-madonna",
+      "title": "Official Reflection E-Workbook for The Black Madonna"
+    }
+  ],
+  "at": "2026-11-04T17:43:13.737Z"
+}

@@ -1,0 +1,51 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 796,
+    "healer_slug": "sierra-wagner"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "a2d61fc0-9681-4f52-9b14-315c5a40bfba",
+      "slug": "hatha-yoga-mixed-level",
+      "title": "Hatha Yoga: Mixed Level"
+    },
+    {
+      "table": "courses",
+      "id": "a99d37e8-ed72-425c-8810-983d8b4180bb",
+      "slug": "21-day-online-immersion",
+      "title": "21-Day Online Immersion"
+    },
+    {
+      "table": "courses",
+      "id": "2753d3c4-3ef7-40c4-b3cd-e32814b58579",
+      "slug": "wild-within-a-backpacking-journey-back-to-self-under-the-sierra-stars",
+      "title": "Wild Within: A Backpacking Journey Back to Self Under the Sierra Stars"
+    },
+    {
+      "table": "courses",
+      "id": "981d06c0-a9f8-4307-af0c-819befea7ca0",
+      "slug": "individual-and-private-group-retreats",
+      "title": "Individual and Private Group Retreats"
+    },
+    {
+      "table": "free_resources",
+      "id": "cc603bae-95bb-4c6e-ab1b-bfe6d011c5be",
+      "slug": "sierra-laurel-on-insight-timer",
+      "title": "Sierra Laurel on Insight Timer"
+    },
+    {
+      "table": "free_resources",
+      "id": "378c34c5-4172-4473-ad74-8a18698ff2c9",
+      "slug": "audio-meditations-by-sierra-wagner",
+      "title": "Audio Meditations by Sierra Wagner"
+    },
+    {
+      "table": "hub_teachers",
+      "id": "03a0a6ad-eb2a-4886-8eb7-24c8f18ef87c",
+      "title": "sierra-wagner teaches at Insight Timer"
+    }
+  ],
+  "at": "2026-11-04T17:28:29.295Z"
+}

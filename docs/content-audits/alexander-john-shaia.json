@@ -1,0 +1,227 @@
+{
+  "healer": {
+    "healer_slug": "alexander-john-shaia",
+    "location_source": "https://www.quadratos.org/who-we-are/alexander-john/",
+    "create": {
+      "name": "Alexander John Shaia",
+      "bio": "Alexander John Shaia is a writer and teacher of Christian contemplative practice who developed Quadratos, a way of reading the four gospels as four stages of one journey of change. He grew up in Birmingham, Alabama, in a family of Lebanese descent rooted in Maronite Catholicism. After studying cultural anthropology at Notre Dame he trained in counselling, religious education and clinical psychology, earning a doctorate, and went to Switzerland to learn sandplay with Dora Kalff; he remains a teaching member of the international sandplay society. Years of retreat leadership, parish ministry and teaching followed.\n\nQuadratos pairs each gospel with a question that every life meets: Matthew with facing change, Mark with moving through suffering, John with receiving joy and Luke with maturing in service. He sets out the approach in his book Heart and Mind, now in its third edition, and his shorter book Returning From Camino helps pilgrims settle back into ordinary life. With a small team he runs online learning cohorts, a weekly gospel reflection built on his own translation, a membership community and two-year Heart and Mind Circles, and he has given several online courses with The Shift Network. He divides his time between northern New Mexico and the Atlantic coast of north-west Spain.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "worldwide",
+      "city": "Santa Fe, New Mexico",
+      "country": "United States",
+      "subjects": [
+        "mysticism",
+        "ancient-wisdom",
+        "spirituality"
+      ],
+      "website_url": "https://www.quadratos.org/",
+      "booking_url": "https://www.quadratos.org/join-a-group/join-the-program/",
+      "youtube_url": "https://www.youtube.com/@Quadratos1",
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "Hello@Quadratos.org",
+      "image_urls": [
+        "https://www.quadratos.org/wp-content/uploads/2020/10/alexanderwithbooks.jpg",
+        "https://www.quadratos.org/wp-content/uploads/2020/09/alexander.jpg"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "the-shift-network",
+      "role": "instructor"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Episode 1: Discovering a Hidden Key to the Cosmos",
+      "url": "https://www.youtube.com/watch?v=y5wWp9WXqlU",
+      "subjects": [
+        "mysticism",
+        "spirituality"
+      ],
+      "channel": "Quadratos"
+    },
+    {
+      "title": "Episode 16: What Season Are You In?",
+      "url": "https://www.youtube.com/watch?v=Qsv8_kv8Oyw",
+      "subjects": [
+        "mysticism",
+        "spirituality"
+      ],
+      "channel": "Quadratos"
+    },
+    {
+      "title": "Episode 18: Darkness Is the Beginning - Always",
+      "url": "https://www.youtube.com/watch?v=GC48GwYKClk",
+      "subjects": [
+        "mysticism",
+        "spiritual-awakening"
+      ],
+      "channel": "Quadratos"
+    },
+    {
+      "title": "Episode 10: This Might Change How You See Everything",
+      "url": "https://www.youtube.com/watch?v=kzvc5RUjBPU",
+      "subjects": [
+        "mysticism",
+        "spirituality"
+      ],
+      "channel": "Quadratos"
+    },
+    {
+      "title": "Bondi: Breaking open to greater wisdom",
+      "url": "https://www.youtube.com/watch?v=Kj_nv8Y5hkc",
+      "subjects": [
+        "spirituality",
+        "mysticism"
+      ],
+      "channel": "Quadratos"
+    }
+  ],
+  "books": [
+    {
+      "title": "Heart and Mind: The Four-Gospel Journey for Radical Transformation",
+      "slug": "heart-and-mind-the-four-gospel-journey-for-radical-transformation",
+      "author": "Alexander John Shaia",
+      "asin": "1734823453",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "cover": "https://m.media-amazon.com/images/P/1734823453.01._SCLZZZZZZZ_.jpg",
+      "description": "His main book, setting out Quadratos: the four gospels read as four paths that answer life's core questions about change, suffering, joy and service. This third edition carries the same text as the 20th-anniversary hardback, Radical Transformation.",
+      "subjects": [
+        "mysticism",
+        "spirituality"
+      ]
+    },
+    {
+      "title": "Returning From Camino",
+      "slug": "returning-from-camino",
+      "author": "Alexander John Shaia",
+      "asin": "1732291802",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "cover": "https://m.media-amazon.com/images/P/1732291802.01._SCLZZZZZZZ_.jpg",
+      "description": "A short guide for pilgrims coming home from the Camino de Santiago, or from any long journey or major change, on settling back into ordinary life and carrying the experience forward.",
+      "subjects": [
+        "spirituality",
+        "soul-purpose"
+      ]
+    }
+  ],
+  "courses": [
+    {
+      "title": "The Four-Gospel Journey: Foundational Program",
+      "url": "https://www.quadratos.org/join-a-group/join-the-program/",
+      "description": "An eleven-session online cohort that walks the four gospel paths through his film series, set readings from Heart and Mind, reflection and sharing in a small group. Cohorts start in September, January and May, either as a recorded study or a smaller unrecorded contemplative circle.",
+      "price": "$55 USD",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "mysticism",
+        "spirituality"
+      ],
+      "image": "https://www.quadratos.org/wp-content/uploads/2020/10/Community-Quadrants-1.png"
+    },
+    {
+      "title": "Quadratos Membership",
+      "url": "https://www.quadratos.org/join-a-group/membership/",
+      "description": "A tiered membership that brings the weekly gospel passage in his translation, the live or recorded reflection hour and community gatherings, with discounts and the film series at higher levels. The first level has a 28-day free trial.",
+      "price": "From $25 USD",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "mysticism",
+        "spirituality"
+      ],
+      "image": "https://www.quadratos.org/wp-content/uploads/2020/10/Community-Quadrants-1.png"
+    },
+    {
+      "title": "A Heart and Mind Circle",
+      "url": "https://www.quadratos.org/join-a-group/a-heart-and-mind-circle/",
+      "description": "A small group of five to eight people with a convener who move through the Four-Gospel Journey together over about two years as a process of spiritual formation. Circles are formed as people register interest.",
+      "price": "$39 USD per month",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "mysticism",
+        "spirituality"
+      ],
+      "image": "https://www.quadratos.org/wp-content/uploads/2020/10/Hard-Cover.png"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "The Quadratos Map",
+      "url": "https://www.quadratos.org/wp-content/uploads/2025/02/Quadratos-MAP.pdf",
+      "description": "A one-page PDF diagram of the four paths and the questions tied to each gospel, useful alongside the book or a study group.",
+      "featured": true,
+      "resource_type": "download",
+      "subjects": [
+        "mysticism",
+        "ancient-wisdom"
+      ],
+      "image": "https://www.quadratos.org/wp-content/uploads/2020/10/alexanderwithbooks.jpg"
+    },
+    {
+      "title": "Explore the Four Paths",
+      "url": "https://www.quadratos.org/learn-about-quadratos/the-four-paths/",
+      "description": "A free online introduction to each of the four paths, linking the season, the gospel and the life question that belongs to it.",
+      "featured": false,
+      "resource_type": "practice",
+      "subjects": [
+        "mysticism",
+        "spirituality"
+      ],
+      "image": "https://www.quadratos.org/wp-content/uploads/2020/10/alexanderwithbooks.jpg"
+    },
+    {
+      "title": "Episode 7: A Quadratos Meditation - Absorb the Deeper Rhythms",
+      "url": "https://www.youtube.com/watch?v=mCkySwCKMVo",
+      "description": "A guided meditation of about seventeen minutes from the Quadratos channel, inviting listeners to rest in the rhythm of the four paths.",
+      "featured": false,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation",
+        "mysticism"
+      ],
+      "image": "https://i.ytimg.com/vi/mCkySwCKMVo/maxresdefault.jpg"
+    }
+  ],
+  "sprint": {
+    "sprint": "pipelines-1",
+    "hub": "the-shift-network",
+    "rank": 374,
+    "hub_url": null,
+    "tier_evidence": "YouTube @Quadratos1 170 subscribers (channel header, served in Portuguese as '170 subscritores', 4 Nov 2026; the Quadratos channel is his work's channel); Instagram @quadratos and Facebook AlexanderJohnShaia not opened (Meta sites off limits) → ~170 readable total → local_hero",
+    "email": "yes",
+    "email_source": "https://www.quadratos.org/who-we-are/alexander-john/",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 21 source(s)",
+    "flags": [
+      "Shift named on: https://www.quadratos.org/join-a-group/shift-courses/ (a 'Past Courses with SHIFT' page listing three courses aired 2022 to 2025); the courses are presented as past, so none was added as an offering.",
+      "Base: the site footer publishes a Santa Fe, New Mexico postal address (a suite number, so likely a mailbox), and his About page says he lives in the mountains of northern New Mexico and on the coast of north-west Spain; Santa Fe used at city level.",
+      "Regional: Santa Fe, New Mexico.",
+      "Email Hello@Quadratos.org is the Quadratos organisation inbox (footer of every page), not a personal address.",
+      "Videos come from the Quadratos channel (his organisation's), which runs a podcast series; he is assumed to be the main voice but the episodes were not watched, and view counts are low (under 250 each). The ingest dry run checks oEmbed.",
+      "Photos: two portraits from his own About and home pages (same man); the YouTube avatar is the Quadratos logo and was not used.",
+      "ISBN from https://www.quadratos.org/shop/radical-transformation/ (Amazon US paperback link dp/1734823453); not confirmed on Open Library (blocked for us, 4 Nov 2026). Cover left null.",
+      "ISBN from https://www.quadratos.org/shop/returning-from-camino/ (Amazon US English paperback link dp/1732291802); not confirmed on Open Library (blocked for us, 4 Nov 2026). Cover left null."
+    ],
+    "left_out": [
+      "The 13 Days of Christmas (book, release 'TBA 2026'): not yet published.",
+      "Shift courses (Walk the Mystical Four-Path Journey, Sanctify Your Holiday Season, Walk the Mystical Christos Path): listed on his site as past courses; theshiftnetwork.com not opened.",
+      "Weekly Gospel Passage and Reflection: part of the membership (free only as a 28-day trial), so not listed separately.",
+      "Vimeo film series rentals (The Four-Gospel Journey, The Easter Retreat, The Great 100 Days): vimeo.com pages not opened, prices unknown.",
+      "Invite Alexander John (speaking bookings): not a public offering."
+    ]
+  }
+}

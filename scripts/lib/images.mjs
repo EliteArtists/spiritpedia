@@ -9,6 +9,12 @@ export const TIMEOUT_MS = 30_000;
 export const MIN_IMAGE_PX = 300; // the longer side
 
 export const timed = () => AbortSignal.timeout(TIMEOUT_MS);
+
+// Hosts we never fetch (owner's blocked-means-skip rule and README §18.7):
+// they refuse us, their robots.txt blocks us, or their terms forbid reuse.
+// isrefer.com carries The Shift Network's affiliate links, which redirect there.
+const OFF_LIMITS = /(^|\.)(theshiftnetwork\.com|isrefer\.com|mindvalley\.com|humanitysteam\.org|evolvingwisdom\.com|spiritrock\.org|openlibrary\.org|linktr\.ee|instagram\.com|facebook\.com|substack\.com|amazon\.com|amzn\.to)$/i;
+export const offLimits = (url) => { try { return OFF_LIMITS.test(new URL(url).hostname); } catch { return true; } };
 export const decode = (s) => s.replace(/&amp;/g, '&').replace(/&#0?39;/g, "'").replace(/&quot;/g, '"');
 
 // Width and height from the first bytes of a JPEG, PNG, GIF or WebP.
@@ -40,6 +46,7 @@ export function dimensions(b) {
 export async function probeImage(url, { minPx = MIN_IMAGE_PX } = {}) {
   if (!url) return { ok: false, why: 'none' };
   if (/encrypted-tbn\d*\.gstatic\.com/.test(url)) return { ok: false, why: 'Google thumbnail' };
+  if (offLimits(url)) return { ok: false, why: 'off-limits host, not fetched' };
   try {
     const r = await fetch(url, { headers: { 'User-Agent': UA, Accept: 'image/*,*/*' }, signal: timed() });
     if (!r.ok) return { ok: false, why: `HTTP ${r.status}` };
@@ -57,15 +64,23 @@ export async function probeImage(url, { minPx = MIN_IMAGE_PX } = {}) {
 
 // A page's share image, else its first large image. → url or null.
 export async function pageImage(pageUrl, { shareOnly = false } = {}) {
+  if (offLimits(pageUrl)) return null;
   let r;
   try {
-    r = await fetch(pageUrl, { headers: { 'User-Agent': UA, Accept: 'text/html' }, signal: timed() });
+    r = await fetch(pageUrl, { headers: { 'User-Agent': UA, Accept: 'text/html' }, redirect: 'manual', signal: timed() });
+    // Follow redirects ourselves, so an off-limits host is never requested.
+    for (let hops = 0; r.status >= 300 && r.status < 400 && r.headers.get('location') && hops < 5; hops += 1) {
+      const next = new URL(r.headers.get('location'), pageUrl).href;
+      if (offLimits(next)) return null;
+      pageUrl = next;
+      r = await fetch(next, { headers: { 'User-Agent': UA, Accept: 'text/html' }, redirect: 'manual', signal: timed() });
+    }
   } catch { return null; }
   if (!r.ok || !(r.headers.get('content-type') || '').includes('html')) return null;
   const html = await r.text();
   const meta = (prop) => html.match(new RegExp(`<meta[^>]+(?:property|name)=["']${prop}["'][^>]*content=["']([^"']+)`, 'i'))?.[1]
     || html.match(new RegExp(`<meta[^>]+content=["']([^"']+)["'][^>]*(?:property|name)=["']${prop}["']`, 'i'))?.[1];
-  const abs = (u) => { try { return new URL(decode(u), r.url).href; } catch { return null; } };
+  const abs = (u) => { try { return new URL(decode(u), pageUrl).href; } catch { return null; } };
   for (const prop of ['og:image', 'og:image:url', 'og:image:secure_url', 'twitter:image']) {
     const u = meta(prop) && abs(meta(prop));
     if (u && (await probeImage(u)).ok) return u;
@@ -97,6 +112,7 @@ export async function amazonCover(asin) {
 // first, Wix and similar image services asked for a larger copy; the share
 // image only when there is no usable icon. → url or null.
 export async function publisherLogo(siteUrl) {
+  if (offLimits(siteUrl)) return null;
   let html; let base;
   try {
     const r = await fetch(siteUrl, { headers: { 'User-Agent': UA, Accept: 'text/html' }, signal: timed() });

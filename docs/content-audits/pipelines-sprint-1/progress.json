@@ -23,9 +23,9 @@
    "previous_rank": 303,
    "previous_skip": "Shift course not confirmed current; theshiftnetwork.com refuses our fetches. Her own site drjudithorloff.com also refused us (406 Not Acceptable on robots.txt, 4 Nov 2026), so it was not fetched further and there was no allowed source to confirm a current Shift course.",
    "source": "shift",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Her own site drjudithorloff.com refused us (406 Not Acceptable on robots.txt, 4 Nov 2026); under the blocked-means-skip rule it was not retried, so there is no allowed own-site source for her email, base, photo or offerings."
   },
   {
    "rank": 2,
@@ -44,8 +44,8 @@
    "previous_rank": 304,
    "previous_skip": "Shift course not confirmed current; theshiftnetwork.com refuses our fetches. Her own site sarahmccrum.com (home, courses, about, media, partners pages and sitemaps) names no Shift Network course.",
    "source": "shift",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/sarah-mccrum.json",
    "skip_reason": null
   },
   {
@@ -66,9 +66,9 @@
    "previous_rank": 305,
    "previous_skip": "Shift course not confirmed current; theshiftnetwork.com refuses our fetches. His own site tylerodysseus.com is only a webinar opt-in and log-in page with no Shift course, about page or contact details.",
    "source": "shift",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "His own site tylerodysseus.com is still only a Kajabi webinar opt-in and log-in page (re-checked 4 Nov 2026): no about page, base, published email or contact form, so the no-email rule (README 18.4) still holds."
   },
   {
    "rank": 4,
@@ -86,9 +86,9 @@
    "previous_rank": 306,
    "previous_skip": "Shift course not confirmed current; theshiftnetwork.com refuses our fetches. Her own site soulmidwives.co.uk (home, about, contact and course pages) names no Shift Network course.",
    "source": "shift",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Not researchable today: every page of her own site soulmidwives.co.uk (about, contact, courses, resources) shows only a \"new website coming soon, launching Thursday 5 November 2026\" holding page, and felicitywarner.com is under construction (503), so there is no about text, email, contact form or photo to use (4 Nov 2026). Worth re-running after the relaunch: the site map lists many dated Soul Midwifery courses through 2027."
   },
   {
    "rank": 5,
@@ -106,9 +106,9 @@
    "previous_rank": 307,
    "previous_skip": "Shift course not confirmed current; theshiftnetwork.com refuses our fetches. Her site upperclarity.com has only a Shift thank-you page offering free guides, no current Shift course; her work is also framed as stone medicine alongside an acupuncture clinic (borderline health rule).",
    "source": "shift",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Health rule still holds: her school upperclarity.com is built around \"stone medicine\" as a clinical practice (professional certifications teaching a materia medica, therapeutic treatments and elixirs as vibrational medicine, students called clinicians) and its lead free guide promises to heal the nervous system with stones (re-checked home, about and courses pages, 4 Nov 2026); almost nothing would pass the health-claim rule."
   },
   {
    "rank": 6,
@@ -127,8 +127,8 @@
    "previous_rank": 308,
    "previous_skip": "Shift course not confirmed current; theshiftnetwork.com refuses our fetches. His own site awakeninthedream.com (home, about, work-with-Paul and contact pages) names no Shift Network course.",
    "source": "shift",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/paul-levy.json",
    "skip_reason": null
   },
   {
@@ -147,9 +147,9 @@
    "previous_rank": 309,
    "previous_skip": "Health rule and Shift course not confirmed current: her domain timelessbodyqigong.com is only a redirect to a 2023 Shift course page (not followed, theshiftnetwork.com refuses our fetches), and her programmes are framed around menopause symptoms, bones and joints and medical qigong.",
    "source": "shift",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Health rule still holds: her Shift courses are framed around bones and joints, her book Women's Qigong for Health and Longevity is sold on routines for insomnia, hypertension, menopause, breast health and cancer and osteoporosis (publisher description), and Kripalu describes her as an acupuncturist and medical intuitive; her old domain timelessbodyqigong.com only redirected to a Shift page. Almost nothing would pass the health-claim rule (re-checked 4 Nov 2026)."
   },
   {
    "rank": 8,
@@ -168,9 +168,9 @@
    "previous_rank": 310,
    "previous_skip": "Blocked: davemarkowitz.com's robots.txt says Disallow: / for ClaudeBot, Claude-User and anthropic-ai, so his site was not fetched; theshiftnetwork.com refuses our fetches, so a current Shift course could not be confirmed.",
    "source": "shift",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Blocked: davemarkowitz.com's robots.txt says Disallow: / for ClaudeBot, Claude-User and anthropic-ai, so his own site (the required source for email, base and offerings) was not fetched."
   },
   {
    "rank": 9,
@@ -189,9 +189,9 @@
    "previous_rank": 312,
    "previous_skip": "Shift course not confirmed current; theshiftnetwork.com refuses our fetches. Her website gratefulpowerfulstrong.com no longer resolves (DNS failure, 4 Nov 2026), so there is no own site, email or contact form to use.",
    "source": "shift",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Her website gratefulpowerfulstrong.com still does not resolve (no DNS record, re-checked 4 Nov 2026), so there is no own site, email or contact form to use."
   },
   {
    "rank": 10,
@@ -209,9 +209,9 @@
    "previous_rank": 313,
    "previous_skip": "No published email and no contact form on her site templedelarose.com (README 18.4), and no base town published (only 'the forests of France'). Her site does say she is Shift Network faculty and promotes a Shift course 'Living as a Sacred Elder' via an affiliate link.",
    "source": "shift",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "No published email or contact form (README 18.4): her site templedelarose.com is now a GoDaddy parked-domain page (re-checked 4 Nov 2026), and when it was live it published neither an email nor a contact form, nor a base town."
   },
   {
    "rank": 11,
@@ -231,9 +231,9 @@
    "previous_rank": 314,
    "previous_skip": "Shift course not confirmed current; theshiftnetwork.com refuses our fetches (403, 4 Nov 2026). Her own sites (eileenmckusick.com home and media-events page; biofieldtuning.com home and page sitemap) name no current Shift Network course.",
    "source": "shift",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Health and conspiracy rules: her own site sells her work as \"Electric Health\" and therapeutic sound (a Biofield Tuning clinic, vibrational medicine), and her YouTube channel @EMcKusick (looked over 4 Nov 2026) is partly condition-led (tinnitus, weight loss, German New Medicine) and features conspiracy-adjacent guests and themes (Sabrina Wallace, Old World Technology/cymatics). Too little would pass the health-claim rule."
   },
   {
    "rank": 12,
@@ -250,8 +250,8 @@
    "previous_rank": 315,
    "previous_skip": "Shift course not confirmed current; theshiftnetwork.com refuses our fetches (403, 4 Nov 2026). His own site (mediummichaelmayo.com home, events and media pages) names no current Shift Network course.",
    "source": "shift",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/michael-mayo.json",
    "skip_reason": null
   },
   {
@@ -270,8 +270,8 @@
    "previous_rank": 316,
    "previous_skip": "Shift course not confirmed current; theshiftnetwork.com refuses our fetches (403, 4 Nov 2026). Her own sites (meetisisindriya.com; academyoforaclearts.com home and classes page) name no current Shift Network course.",
    "source": "shift",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/isis-indriya.json",
    "skip_reason": null
   },
   {
@@ -290,8 +290,8 @@
    "previous_rank": 317,
    "previous_skip": "Shift course not confirmed current; theshiftnetwork.com refuses our fetches (403, 4 Nov 2026). Her own site (daniellemackinnon.com home, calendar, about, page sitemap) only says she has been a featured Shift Network teacher; no current or upcoming Shift course or summit is shown.",
    "source": "shift",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/danielle-mackinnon.json",
    "skip_reason": null
   },
   {
@@ -309,8 +309,8 @@
    "previous_rank": 318,
    "previous_skip": "Shift course not confirmed current; theshiftnetwork.com refuses our fetches (403, 4 Nov 2026). Her own site (animalthoughts.com home, calendar, workshops and events pages) names no current Shift Network course.",
    "source": "shift",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/pea-horsley.json",
    "skip_reason": null
   },
   {
@@ -328,8 +328,8 @@
    "previous_rank": 319,
    "previous_skip": "Shift course not confirmed current; theshiftnetwork.com refuses our fetches (403, 4 Nov 2026). Her own site (jocelynstarfeather.com home, about, online courses and sitemap) names no current Shift Network course.",
    "source": "shift",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/jocelyn-star-feather.json",
    "skip_reason": null
   },
   {
@@ -348,9 +348,9 @@
    "previous_rank": 320,
    "previous_skip": "Shift course not confirmed current; theshiftnetwork.com refuses our fetches (403, 4 Nov 2026). Her own site (brandygillmore.com home, courses page and page sitemap) names no current Shift Network course; her work is also framed mainly around healing the body and pain, which the health rule would likely rule out.",
    "source": "shift",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Health rule (re-checked 4 Nov 2026): her own site (brandygillmore.com home) is built around healing chronic pain and illness, with thermography before/after pain images and a free 'self-healing' masterclass for people 'struggling with chronic pain or illness'; almost nothing would pass the health-claim rule."
   },
   {
    "rank": 18,
@@ -367,9 +367,9 @@
    "previous_rank": 321,
    "previous_skip": "Her YouTube channel (@therachellangshow, The Rachel Lang Show) carries a run of political commentary in astrological form: the Epstein files with forecasts for Bill Clinton's and Trump's charts and the Democratic Party, 'Is Netanyahu Alive?' with dated 'health and attack' risk windows for him, the Iran conflict, and USA/NATO. Under the brief's YouTube rule (conspiracy or partisan political commentary) she is skipped; this is a judgement call the lead may overturn. Otherwise she nearly qualified: base Ojai, California (her about page), email published, Psychic Mediumship Certification starting 28 Jan 2027, membership, book Modern Day Magic confirmed on Open Library (ISBN 1784884618). Her Classes page lists a 7-week intuitive-astrology course linked through a Shift Network affiliate redirect (shiftnetwork.isrefer.com), not a theshiftnetwork.com URL; theshiftnetwork.com refuses our fetches (403, 4 Nov 2026).",
    "source": "shift",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Conspiracy/partisan rule, re-checked 4 Nov 2026 and still holds: her YouTube channel (@therachellangshow, 7.45K subscribers) still carries world-politics astrology among its recent uploads ('Is Netanyahu Alive? Astrology and the Deepfake Era', 'Astrology of the Epstein Files', 'Astrology of the Iran Conflict', 'Eclipse Season: Iran, US, and World Leaders', 'Astrology of Chaos: USA, NATO...'). Most of the channel is sign-by-sign astrology, so this is a judgement call the owner may overturn; she otherwise nearly qualifies (see previous skip at rank 321: base Ojai, California, email published, membership and certification course, book Modern Day Magic)."
   },
   {
    "rank": 19,
@@ -386,9 +386,9 @@
    "previous_rank": 322,
    "previous_skip": "Mainly therapy and health-led work: her own site (meghaworth.com) presents her as a transpersonal psychologist offering recovery from narcissistic abuse and complex trauma, with healing of illnesses, so it fails the health and psychotherapy rules. Her menu links only a generic Shift Network affiliate link, and theshiftnetwork.com refuses our fetches (403, 4 Nov 2026).",
    "source": "shift",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Health and psychotherapy rules (re-checked 4 Nov 2026): her own site (meghaworth.com home) presents her work as recovery from parental narcissistic abuse and complex trauma, and describes healing over a dozen illnesses and depression; the work is mainly therapy- and condition-led, so almost nothing would pass. (Her site does name The Shift Network.)"
   },
   {
    "rank": 20,
@@ -405,8 +405,8 @@
    "previous_rank": 323,
    "previous_skip": "Shift course not confirmed current; theshiftnetwork.com refuses our fetches (403, 4 Nov 2026). Her own site (akashicknowing.com home, about, page sitemap) has only a booking page of her consultants for Shift Network students; no current Shift course is named.",
    "source": "shift",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/lisa-barnett.json",
    "skip_reason": null
   },
   {
@@ -424,8 +424,8 @@
    "previous_rank": 324,
    "previous_skip": "Shift course not confirmed current; theshiftnetwork.com refuses our fetches (403, 4 Nov 2026). Her own site moniquebrignoni.com does not resolve (DNS failure, 4 Nov 2026), so nothing current could be confirmed, nor an email or photo.",
    "source": "shift",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/monique-brignoni.json",
    "skip_reason": null
   },
   {
@@ -443,8 +443,8 @@
    "previous_rank": 325,
    "previous_skip": "Shift course not confirmed current; theshiftnetwork.com refuses our fetches (403, 4 Nov 2026). His own site (johnholland.com home and events page) names no current Shift Network course.",
    "source": "shift",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/john-holland.json",
    "skip_reason": null
   },
   {
@@ -462,9 +462,9 @@
    "previous_rank": 326,
    "previous_skip": "Shift course not confirmed current; theshiftnetwork.com refuses our fetches (403, 4 Nov 2026). Her own site (doulagivers.com home, about, press page and page sitemap) names no current Shift Network course.",
    "source": "shift",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Health rule / not mainly spiritual teaching (new reason, 4 Nov 2026): her own site (doulagivers.com home and about) presents Doulagivers Institute as hospice-adjacent end-of-life caregiving education by a hospice and palliative-care nurse, framed around terminally ill patients, home hospice and the eldercare crisis, with The Good Death pitched to clinicians and families facing advanced illness. Almost every item is patient-care training, so it fails the strict health rule. Judgement call; the owner may overturn. (No Shift Network mention on her site either.)"
   },
   {
    "rank": 24,
@@ -481,9 +481,9 @@
    "previous_rank": 327,
    "previous_skip": "Shift course not confirmed current; theshiftnetwork.com refuses our fetches. A web search found no website of her own (only a university continuing-education bio describing a traditional Indigenous healing practice), so no own page shows a current Shift course.",
    "source": "shift",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Re-checked 4 Nov 2026: a web search again found no website of her own, so no published email or contact form of hers (only third-party faculty and speaker bios, e.g. aihm.org). Those bios also describe a curandera practice whose clients come for PTSD, panic, trauma and depression, so the health rule would rule her out as well."
   },
   {
    "rank": 25,
@@ -500,9 +500,9 @@
    "previous_rank": 328,
    "previous_skip": "Shift course not confirmed current; theshiftnetwork.com refuses our fetches. Her own site (drdivi.com, home and 2026 events pages) mentions no Shift Network course; it also frames her work around anxiety, depression and chronic health issues, which would fail the health rule.",
    "source": "shift",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Health rule (re-checked 4 Nov 2026): her own site (drdivi.com home) presents her as an MD in mind-body medicine whose focus is 'unhealthy mental patterns like anxiety, depression' and 'the root of their chronic health issues', and her programmes are framed as healing; her work is mainly condition-led, so it fails the strict health rule."
   },
   {
    "rank": 26,
@@ -519,9 +519,9 @@
    "previous_rank": 329,
    "previous_skip": "Shift course not confirmed current; theshiftnetwork.com refuses our fetches. His own site (adamapollo.com home, updates and work-with-me pages) mentions no Shift Network course.",
    "source": "shift",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Held for the owner (judgement call, 4 Nov 2026), not a rule skip: his own site (adamapollo.com) is reachable, has a contact form (/get-in-touch/), books (The Dragon Key; a chapter in Sacred Stories' Lifetimes) and a YouTube channel, but (1) its home page features his April 2026 statement 'On Sovereignty & Assault' answering public accusations by another spiritual speaker that a 2022 encounter was predatory, and (2) his current main offering, The Gatework Protocol, is about contacting 'Hyperintelligent Beings' channelled through ChatGPT. Listing him seems an owner decision; no Shift Network course is named on his site. His current paid offerings are thin (private weekend intensives, a waiting list; the USS Apollo course was March 2023). robots.txt asks for a 10-second crawl delay, which was kept."
   },
   {
    "rank": 27,
@@ -538,9 +538,9 @@
    "previous_rank": 330,
    "previous_skip": "Shift course not confirmed current; theshiftnetwork.com refuses our fetches. A web search found no website of his own and no other page naming him with his Shift course (shared with Cacina Meádu).",
    "source": "shift",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Re-checked 4 Nov 2026 with two web searches: still no website of his own and no published email or contact form, so the contact rule still stands. The only pages found are 2023 event listings (a Palos Verdes, California day workshop and the Mystics and Scientists Conference 2023 concert) naming Anders Holte and Cacina Meádu together as a music and sound duo, which also reads more as a music project than a teacher. If a site turns up, they would be one listing for the pair (they share the Shift course)."
   },
   {
    "rank": 28,
@@ -557,9 +557,9 @@
    "previous_rank": 331,
    "previous_skip": "Shift course not confirmed current; theshiftnetwork.com refuses our fetches. A web search found no website of her own and no other page naming her with her Shift course (shared with Anders Holte).",
    "source": "shift",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Re-checked 4 Nov 2026 with two web searches: still no website of her own and no published email or contact form, so the contact rule still stands. The only pages found are 2023 event listings (a Palos Verdes, California day workshop and the Mystics and Scientists Conference 2023 concert) naming Anders Holte and Cacina Meádu together as a music and sound duo, which also reads more as a music project than a teacher. If a site turns up, they would be one listing for the pair (they share the Shift course)."
   },
   {
    "rank": 29,
@@ -576,9 +576,9 @@
    "previous_rank": 332,
    "previous_skip": "Shift course not confirmed current; theshiftnetwork.com refuses our fetches. No own site was found within the sprint's search budget; her Shift course, Heart-Based Medical Intuition, is medical intuition, which the health rule leaves out, so she would likely be skipped on that rule too.",
    "source": "shift",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Her work is medical intuition: web search (4 Nov 2026) shows her as a medical doctor and medical intuitive whose paid sessions, podcast and live course (Heart-Based Medical Intuition, her Shift course) are all medical intuition, which the health rule leaves out, so almost nothing would pass. No own website was found in one search; nothing was opened beyond search results."
   },
   {
    "rank": 30,
@@ -595,9 +595,9 @@
    "previous_rank": 334,
    "previous_skip": "Shift course not confirmed current; theshiftnetwork.com refuses our fetches. Her only own site found (betsy-portfolio.emergent.host) is a JavaScript app with no readable content to an ordinary fetch, and her writing is on Substack, which we don't open; no readable page shows a current Shift course, email or photo.",
    "source": "shift",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Still no readable own site: her pages are a JavaScript app (betsy-portfolio.emergent.host, per the earlier run), a Patreon page and a Substack (Substack is never opened), so no own page gives a published email or contact form, a photo, a base or items we can check. A web search on 4 Nov 2026 found nothing else of hers."
   },
   {
    "rank": 31,
@@ -614,9 +614,9 @@
    "previous_rank": 335,
    "previous_skip": "Shift course not confirmed current; theshiftnetwork.com refuses our fetches. A web search found no website of her own (only a SoundCloud page that may be her as a Human Design trainer), so no own page shows a current Shift course.",
    "source": "shift",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Her own site (humandesignlife.squarespace.com, found by web search on 4 Nov 2026) is blocked to us: its robots.txt says 'User-agent: * Disallow: /', so it was not fetched (blocked-means-skip). Search snippets also show her Human Design teaching is framed around health and functional medicine (her Shift course is 'Your Bioenergetic Map for Vitality', with nervous-system claims), which would fail the health rule."
   },
   {
    "rank": 32,
@@ -633,8 +633,8 @@
    "previous_rank": 336,
    "previous_skip": "Shift course not confirmed current; theshiftnetwork.com refuses our fetches. Her own site (maureenstgermain.com, with and without www) returned a Cloudflare 525 error on 4 Nov 2026 and was not retried another way; a web search found no other page showing her Shift course as current.",
    "source": "shift",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/maureen-j-st-germain.json",
    "skip_reason": null
   },
   {
@@ -652,8 +652,8 @@
    "previous_rank": 337,
    "previous_skip": "Shift course not confirmed current; theshiftnetwork.com refuses our fetches. A web search found no website of hers and no page naming her with her Shift course.",
    "source": "shift",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/chitra-sukhu.json",
    "skip_reason": null
   },
   {
@@ -671,9 +671,9 @@
    "previous_rank": 338,
    "previous_skip": "Shift course not confirmed current; theshiftnetwork.com refuses our fetches. A web search found no website of her own, only a third-party course aggregator (moreblossom.com) listing her Shift course, which was not opened; her course title (Boost Your Spiritual Immune System) is also borderline under the health rule.",
    "source": "shift",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "No website of her own found: two web searches on 4 Nov 2026 turned up only a third-party course aggregator listing her Shift course (not opened), so there is no own page for an email or contact form, photo, base or items. Her course title, Boost Your Spiritual Immune System, is also borderline under the health rule."
   },
   {
    "rank": 35,
@@ -690,8 +690,8 @@
    "previous_rank": 339,
    "previous_skip": "Shift course not confirmed current; theshiftnetwork.com refuses our fetches. His own site (vincentgenna.com home, events and lectures pages) lists his own Zoom course but no Shift Network course; he also presents as a psychic therapist, which is borderline under the therapy rule.",
    "source": "shift",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/vincent-genna.json",
    "skip_reason": null
   },
   {
@@ -709,9 +709,9 @@
    "previous_rank": 341,
    "previous_skip": "Her work is sold on conditions: her own site (heididellaire.com, read 4 Nov 2026) presents her as an emotional health coach and 'Anxiety & Grief Support Specialist' whose offer is framed around anxiety, grief, triggers and physical pain, so almost nothing passes the health-claim rule. (theshiftnetwork.com refuses our fetches, so her Shift course was not checked there.)",
    "source": "shift",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Previous reason still holds: her own home page (heididellaire.com, robots.txt allows, re-read 4 Nov 2026) presents her as an emotional health coach offering 'Anxiety & Grief Support', framed around anxiety, grief, triggers and unexplained physical pain, so her work is sold on conditions and almost nothing passes the health rule."
   },
   {
    "rank": 37,
@@ -733,9 +733,9 @@
    "previous_rank": 342,
    "previous_skip": "Her work is mainly physical somatic education (the Feldenkrais Method and her Kinēsa process at the Asheville Movement Center, Asheville, North Carolina), and most of her own catalogue and classes are framed around conditions and body problems (back and neck pain, TMJ, fall prevention, eyesight, balance, chronic pain), so most items fail the health-claim rule; a few emotional and archetype courses and her Shift courses (Embodying Prayer, archetypes, sold on her site through a Shift affiliate link) are the exception. Borderline call: revisit if the owner wants somatic teachers whose spiritual items are a minority.",
    "source": "shift",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Previous reason still holds (her site was read earlier today, 4 Nov 2026, so not re-fetched): her work is mainly Feldenkrais somatic education whose catalogue is largely framed around body problems (back and neck pain, TMJ, balance and falls, eyesight, chronic pain), so most items fail the health rule. Borderline call: her archetype and prayer courses are clean, so the owner may want to revisit if somatic teachers with a spiritual minority should be listed."
   },
   {
    "rank": 38,
@@ -757,9 +757,9 @@
    "previous_rank": 343,
    "previous_skip": "Her work is mainly clinical and sold on health: search results describe her as a Doctor of Oriental Medicine with an integrative clinical practice (Well Within Natural Medicine, St. Petersburg, Florida) and an Eden Energy Medicine teacher, and every Shift course in the lead is health-framed (heart health, the ageing brain, the vagus nerve's 'power to heal', 5G electromagnetic resiliency), so almost nothing would pass the health-claim rule. No own website was found in one search, so nothing was confirmed on her own pages; theshiftnetwork.com refuses our fetches.",
    "source": "shift",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Previous reason still holds: a web search on 4 Nov 2026 again found no own website, only bios describing her as a Doctor of Oriental Medicine and acupuncture physician with an integrative clinical practice (Well Within Natural Medicine, St. Petersburg, Florida) and an Eden Energy Medicine teacher; all her Shift courses in the lead are health-framed (heart health, the ageing brain, the vagus nerve, 5G). Mainly clinical, health rule."
   },
   {
    "rank": 39,
@@ -777,9 +777,9 @@
    "previous_rank": 344,
    "previous_skip": "His public home is BioSonics (biosonics.com, read 4 Nov 2026), the tuning-fork company that sells his instruments and books; the site is mainly a shop, and its teaching material is framed largely around health (tinnitus and vagus nerve protocols, 'Working with Cancer and Health Challenges', a naturopathic doctor's clinical framing). That is a brand and health-led work, so it fails the health-claim and brand rules. His Shift course was not checked: theshiftnetwork.com refuses our fetches.",
    "source": "shift",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Previous reason still holds (biosonics.com was read earlier today, 4 Nov 2026, so not re-fetched): his public home is BioSonics, a tuning-fork shop, and its teaching material is largely health-framed (tinnitus and vagus nerve protocols, work with cancer, a naturopathic clinical framing), so it fails the brand and health rules."
   },
   {
    "rank": 40,
@@ -796,9 +796,9 @@
    "previous_rank": 346,
    "previous_skip": "Shift course not confirmed current; theshiftnetwork.com refuses our fetches. His own site, springforestqigong.com, also answered 403 to its robots.txt on 4 Nov 2026, so under the blocked-means-skip rule it was not fetched at all and nothing could be confirmed there. (His Shift course in the lead, 'Heal Yourself & Others With the Power of Qigong', is borderline health framing anyway.)",
    "source": "shift",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "His own site, springforestqigong.com, answered 403 to its robots.txt on 4 Nov 2026, so under the blocked-means-skip rule it was not fetched again (not retried in any form). No other own source to research from; his Shift course ('Heal Yourself & Others With the Power of Qigong') and Spring Forest Qigong's healing framing would also be borderline under the health rule."
   },
   {
    "rank": 41,
@@ -816,9 +816,9 @@
    "previous_rank": 347,
    "previous_skip": "Shift course not confirmed current; theshiftnetwork.com refuses our fetches. Her own site (deborahgair.com home and workshops pages, read 4 Nov 2026 within its 60-second crawl delay) names no current or upcoming Shift Network course, only her own Quantum-Touch workshops and sessions. (One of her Shift course titles in the lead, 'Reversing Aging With Quantum-Touch', would also fail the health-claim rule.)",
    "source": "shift",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Re-read her own site (deborahgair.com, respecting its 60-second crawl delay) on 4 Nov 2026: much of her Quantum-Touch teaching is framed around physical health (Level 2 includes 'reversed aging' and digestive health for weight loss, Level 3 promises symptoms go away, a Renewal course on 'limiting your health', the Infinity Vortex sold as an 'Ageless technology', testimonials about pain and inflammation). Once those are left out, only about three items with their own URL remain (Level 1 workshop page, sessions page, Black Whole Healing page), with no usable videos (one 1-minute clip), no books, no free resources, no published email (contact form only) and no published base. Too thin and largely health-framed: borderline call. Her site does name The Shift Network (black-whole-healing and infinity-vortex pages), if the owner wants to revisit."
   },
   {
    "rank": 42,
@@ -837,9 +837,9 @@
    "previous_rank": 348,
    "previous_skip": "Not a spiritual teacher: her work, through Thrive Academy (the company she runs with her husband Jesse Koren), is business and marketing coaching that helps coaches and holistic practitioners attract clients, and every Shift course in the lead is about that (The New Client Attraction Code, Heartselling). Her Shift course was not checked: theshiftnetwork.com refuses our fetches. Thrive Academy's site was not opened (judged from search results only).",
    "source": "shift",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Not a spiritual teacher (re-run, earlier reason stands): her work with her husband Jesse Koren through Thrive Academy is business and client-attraction coaching for coaches and practitioners, as are all three of her Shift courses; sharlajacobs.com (robots.txt allows us, read 4 Nov 2026) is now only a parked redirect to /lander with no content, and one web search found only a speaker profile describing the same coaching business."
   },
   {
    "rank": 43,
@@ -857,9 +857,9 @@
    "previous_rank": 350,
    "previous_skip": "Health rule: her own site (ellenmeredith.com / listening-in.com, read 4 Nov 2026) puts energy-medicine work for viruses and coronavirus symptoms on its home page (a free video class on resisting viruses, an 'enhanced immunity' programme), and her Shift courses are sold on the body's ability to heal; that is the condition-led framing the brief tells us to skip. Her site's only Shift course mention is a 7-week course that started on 5 January 2026, so a current Shift course is not confirmed either (theshiftnetwork.com refuses our fetches).",
    "source": "shift",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Health rule (re-run, earlier reason stands): her own home page (ellenmeredith.com, read 4 Nov 2026) still leads with a free class on the energetics of virus and 'energy medicine for coronavirus symptoms', and her book is presented as energy medicine to heal body, mind and spirit; that is the condition-led framing the brief tells us to skip."
   },
   {
    "rank": 44,
@@ -876,9 +876,9 @@
    "previous_rank": 351,
    "previous_skip": "Shift course not confirmed current; theshiftnetwork.com refuses our fetches. billbauman.com is an unbuilt hosting placeholder ('almost here'), and billbauman.net refused even its robots.txt with a 406 'blocked by Mod Security' on 4 Nov 2026, so under the blocked-means-skip rule it was not fetched. No other own site of his (he co-founded the Center for Soulful Living) turned up in one search, so nothing could be confirmed.",
    "source": "shift",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "No own site we can use (re-run, earlier reason stands): billbauman.com is still an unbuilt DreamHost placeholder (\"almost here\", read 4 Nov 2026), billbauman.net refused even its robots.txt with a 406 on 4 Nov 2026 so under the blocked-means-skip rule it was not fetched again, and one web search found only book listings and a podcast episode, so no published email or contact form, base or photo from his own pages could be confirmed."
   },
   {
    "rank": 45,
@@ -895,8 +895,8 @@
    "previous_rank": 352,
    "previous_skip": "Shift course not confirmed current; theshiftnetwork.com refuses our fetches. Her own site (mysticrichness.com home, about and courses pages, read 4 Nov 2026) names no Shift Network course: her current courses are the Vibrationship series hosted on Life With Ghosts (Vibrationship 3.0 runs 18 Feb – 1 Apr 2027). The only Shift mention found was on Mary-Anne Kennedy's site, which lists her as a speaker at The Shift Network's free Mediumship Summit, a summit rather than a course of hers. Otherwise she looks listable (published email, current courses), so worth revisiting if the Shift site opens.",
    "source": "shift",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/cheryl-a-page.json",
    "skip_reason": null
   },
   {
@@ -914,9 +914,9 @@
    "previous_rank": 353,
    "previous_skip": "Her work is mainly sold on health and conditions: her online courses page leads with Menopause Magic, Flu & Coronavirus Courses, REGENERATE! (CFS and Long COVID), Love Your Liver and a perimenopause course, and her site frames energy work as transforming health, so it fails the health-claim rule. (Her events page does link a Shift Network offering, Get to Know Your Energy Anatomy, undated; theshiftnetwork.com was not opened because it returns 403 to us.)",
    "source": "shift",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Health rule (re-run, earlier reason stands): her own home page (pruneharris.com, read 4 Nov 2026) opens with 'learning how to transform your health' and frames her energy work around health throughout, and her courses (per the earlier check) lead with menopause, flu and coronavirus, CFS and Long COVID and liver courses."
   },
   {
    "rank": 47,
@@ -933,8 +933,8 @@
    "previous_rank": 354,
    "previous_skip": "Shift course not confirmed current; theshiftnetwork.com refuses our fetches. Her own site (jamyeprice.com: home, classes, Learn Light Language, about, and its own search for \"shift network\") names no Shift Network course.",
    "source": "shift",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/jamye-price.json",
    "skip_reason": null
   },
   {
@@ -953,9 +953,9 @@
    "previous_rank": 355,
    "previous_skip": "Shift course not confirmed current; theshiftnetwork.com refuses our fetches. Her own sites (plantconsciousness.com: home, about, training, past events, healings; naturalesoterics.org home) mention only a past Shift Network summit talk from 2022, with no current or announced Shift course.",
    "source": "shift",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Health rule and too thin: her main paid service on her own site (plantconsciousness.com/healings, read 4 Nov 2026) is remote psychic-surgery clearings sold against a list of conditions (fatigue, undiagnosed body pain, anxieties, traumas, inability to heal, children's behavioural issues), her home page frames the work around physical and mental health, and her training programme is postponed until further notice; what is left (one book, a free e-book, flower-essence products) is under the ~3-item bar. Her about page does name The Shift Network (two past online courses and a 2022 summit), so she would have the hub link if listed later."
   },
   {
    "rank": 49,
@@ -973,9 +973,9 @@
    "previous_rank": 356,
    "previous_skip": "Shift course not confirmed current; theshiftnetwork.com refuses our fetches, and two web searches found no website or other public page of hers that could show a current Shift course, a base, an email or a photo.",
    "source": "shift",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "No own site found (re-run, earlier reason stands): two more web searches on 4 Nov 2026 (her name with \"bi-location\", and with \"PhD spiritual teacher\") again found no website, channel or other page of hers, so no published email or contact form, base or photo could be confirmed; theshiftnetwork.com was not opened."
   },
   {
    "rank": 50,
@@ -992,9 +992,9 @@
    "previous_rank": 357,
    "previous_skip": "Shift course not confirmed current; theshiftnetwork.com refuses our fetches. His own site (joshualeeds.com appearances and educator pages) lists his Shift Network course, Soundwork and Breath for Nervous System Regulation (28 April to 23 June 2025), and his other Shift work under Previous Events, with no current or announced Shift course; his educator page also carries a Shift affiliate link (shiftnetwork.isrefer.com), not opened.",
    "source": "shift",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Health rule, and his work is psychoacoustics rather than spiritual teaching: his own site (joshualeeds.com home, works, educator and Sound Breath Toolkit pages, read 4 Nov 2026) presents him as a music producer and educator for healthcare, education and therapy professionals, and his current flagship, the Sound Breath Toolkit and the book Sound & Breath for Autonomic Balance, is sold as anxiety and stress relief and a remedy for nervous system dysregulation; The Power of Sound is subtitled How to Be Healthy and Productive Using Music and Sound, and the rest is calming music for pets. Almost nothing would pass the health-claim rule. (His home page does name The Shift Network as a previous course venue.)"
   },
   {
    "rank": 51,
@@ -1011,8 +1011,8 @@
    "previous_rank": 359,
    "previous_skip": "Shift course not confirmed current; theshiftnetwork.com refuses our fetches. Her own Upcoming Events & Courses page (drlotte.com) lists both her Shift Network courses (Quantum Entanglement & Your Mother Wounds, from 30 September 2024, and Heal Your Ancestral Wounds through the Kindraya Method, from 23 February 2026) under Past Events & Courses; her only upcoming event is her own workshop. Her site also sells medical intuitive sessions, supplements and at-home tests.",
    "source": "shift",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/lotte-valentin.json",
    "skip_reason": null
   },
   {
@@ -1030,9 +1030,9 @@
    "previous_rank": 360,
    "previous_skip": "Her work is mainly medical: her own site (drcatherineclinton.com) presents her as a licensed naturopathic physician and quantum biology health educator, framed around health, chronic illness and her practice, and her book Optimize is a health and longevity plan, so almost nothing passes the health-claim and medical rules. (Her home page shows a Shift Network image, but theshiftnetwork.com was not opened because it returns 403 to us.)",
    "source": "shift",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Medical and health rule (re-run, earlier reason stands): her own home page (drcatherineclinton.com, read 4 Nov 2026) presents her as a licensed naturopathic physician and quantum biology health educator whose work and book (Optimize) are framed around health and chronic illness, so almost nothing would pass the health-claim and medical rules."
   },
   {
    "rank": 53,
@@ -1049,8 +1049,8 @@
    "previous_rank": 361,
    "previous_skip": "Shift course not confirmed current; theshiftnetwork.com refuses our fetches. His own site (jacobliberman.org: home, events, masterclass, speaking, about) names no Shift Network course; its events page lists only 2020 and 2021 events. (jacobliberman.com is a domain for sale, not his site.)",
    "source": "shift",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/jacob-israel-liberman.json",
    "skip_reason": null
   },
   {
@@ -1068,9 +1068,9 @@
    "previous_rank": 362,
    "previous_skip": "Shift course not confirmed current; theshiftnetwork.com refuses our fetches, and two web searches found no website or other public page of hers that could show a current Shift course, a base, an email or a photo.",
    "source": "shift",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "No own site found (re-run, earlier reason stands): two more web searches on 4 Nov 2026 (her name with \"Māori shamanic wisdom\", and \"Taiha\" Moetu grandmother teacher website) again found no website, channel or page of hers, so no published email or contact form, base or photo could be confirmed; theshiftnetwork.com was not opened."
   },
   {
    "rank": 55,
@@ -1087,9 +1087,9 @@
    "previous_rank": 363,
    "previous_skip": "Shift course not confirmed current; theshiftnetwork.com refuses our fetches. Her own site (debisilber.com, which thepbtinstitute.com redirects to; home and its own search for \"shift network\") names no Shift Network course. Her work is also mainly betrayal-trauma recovery coaching plus a bioenergetic health scan, close to the therapy and health-claim rules.",
    "source": "shift",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Health/therapy rule still stands: her own site (debisilber.com home, 4 Nov 2026) presents her work mainly as betrayal-recovery and wellness coaching built on 'Post Betrayal Syndrome', rebuilding 'physically, mentally, and emotionally', plus a Bioenergetic Health Scan, so it is recovery coaching rather than spiritual teaching and little would pass the health rule. Her site names no Shift Network course."
   },
   {
    "rank": 56,
@@ -1106,8 +1106,8 @@
    "previous_rank": 364,
    "previous_skip": "Shift course not confirmed current; theshiftnetwork.com refuses our fetches. His Shared Crossing Project site (sharedcrossing.com: home, founder pages, education, self-study, podcasts and presentations) mentions only a past Shift Network summit talk (Beyond the Veil, October 2021), with no current or announced Shift course.",
    "source": "shift",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/william-peters.json",
    "skip_reason": null
   },
   {
@@ -1125,9 +1125,9 @@
    "previous_rank": 365,
    "previous_skip": "Shift course not confirmed current; theshiftnetwork.com refuses our fetches. Her Conscious Dying Institute site (consciousdyinginstitute.com: home, courses and trainings, about, education and training, press, group events) names no Shift Network course, including The Art of Conscious Dying.",
    "source": "shift",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "No longer appears to teach: the Conscious Dying Institute site (consciousdyinginstitute.com about-me, courses-trainings, contact; 4 Nov 2026), now run as a nonprofit foundation, honours her as founder whose legacy it carries forward, and its current trainings, coaching and events are led by other faculty (Kelly Cummings, Christina Vair). No current programme of hers, no website or email of her own (the published address is the chair's), and a web search found nothing recent from her."
   },
   {
    "rank": 58,
@@ -1144,9 +1144,9 @@
    "previous_rank": 367,
    "previous_skip": "Shift course not confirmed current; theshiftnetwork.com refuses our fetches, and two web searches found no website of her own (or any other public page) showing The Witch's Cauldron or any current Shift course.",
    "source": "shift",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "No website, email or contact form of her own found: two more web searches (4 Nov 2026) found no public page for a Linda Rauch teaching witchcraft or The Witch's Cauldron (results point to Laura Tempest Zakroff's book of that name and to Linda Raedisch, a different author)."
   },
   {
    "rank": 59,
@@ -1163,8 +1163,8 @@
    "previous_rank": 369,
    "previous_skip": "Shift course not confirmed current; theshiftnetwork.com refuses our fetches, and his own site (jefferyolsen.com: home, videos, contact, checked 4 Nov 2026) does not mention Living After Loss or any Shift Network course. (The course is also grief-led, so it would likely fail the health rule.)",
    "source": "shift",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/jeffery-c-olsen.json",
    "skip_reason": null
   },
   {
@@ -1182,8 +1182,8 @@
    "previous_rank": 370,
    "previous_skip": "Shift course not confirmed current; theshiftnetwork.com refuses our fetches, and her own site (heartofsound.in) names Sanskrit Tuning for Mantra Lovers only in a list of past press and collaborations on https://www.heartofsound.in/press (with a Shift affiliate link), not as a course on sale now. Otherwise a strong candidate (Heart of Sound founder, many own courses, based in Hawai'i and India) if the owner accepts the press-page mention.",
    "source": "shift",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/anandra-george.json",
    "skip_reason": null
   },
   {
@@ -1201,9 +1201,9 @@
    "previous_rank": 371,
    "previous_skip": "Health/therapy rule: her work (Emotional Liberation) is presented publicly as cannabis- and psilocybin-assisted emotions therapy and trauma processing, with press framing it around relieving mood disorders, so almost nothing would pass the health-claim rule; also, theshiftnetwork.com refuses our fetches so the Shift course could not be confirmed. Her own site was not opened.",
    "source": "shift",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Health/therapy rule still stands: her own site (beccawilliams.org home, 4 Nov 2026) is headed 'Emotional Liberation: Trauma & Triggers Release', sells sessions to break cycles of anxiety and release 'trapped trauma', describes her as an emotions therapist, and centres on cannabis and psychedelic-assisted work, so almost nothing would pass the health-claim rule."
   },
   {
    "rank": 62,
@@ -1220,8 +1220,8 @@
    "previous_rank": 372,
    "previous_skip": "Shift course not confirmed current; theshiftnetwork.com refuses our fetches, and a web search found no website of her own or other public page linking a Miriam Peretz to Turning Toward the Heart (results point to an unrelated Israeli educator and to a Sufi book by another author).",
    "source": "shift",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/miriam-peretz.json",
    "skip_reason": null
   },
   {
@@ -1239,9 +1239,9 @@
    "previous_rank": 373,
    "previous_skip": "Health rule: his own site (letmagichappen.com, home page 4 Nov 2026) is mainly condition-led: frozen shoulder, autoimmune disease, pain syndromes, diabetes and other chronic illnesses, sold as coaching to 'heal physical illnesses'; his Shift course title ('The Chakra Self-Healing Protocol') is also a self-healing claim. Shift course not checked further (theshiftnetwork.com refuses our fetches).",
    "source": "shift",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Health rule still stands: his own site (letmagichappen.com home, 4 Nov 2026) is headed 'Heal Physical Illnesses' and is built around frozen shoulder (book and Facebook group), autoimmune disease, pain syndromes, diabetes and other chronic conditions sold as coaching."
   },
   {
    "rank": 64,
@@ -1258,8 +1258,8 @@
    "previous_rank": 374,
    "previous_skip": "Shift course not confirmed current; theshiftnetwork.com refuses our fetches, and his own site (stephengrayvision.com: home and events, 4 Nov 2026) shows no Shift Network course and no upcoming events (last event April 2023). Note: stephengray.ca is a different person (a film director).",
    "source": "shift",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/stephen-gray.json",
    "skip_reason": null
   },
   {
@@ -1277,9 +1277,9 @@
    "previous_rank": 375,
    "previous_skip": "Health/therapy rule: her own pages (https://www.thespiritseed.org/meetlindsay, 4 Nov 2026) present her work mainly as clinical flower-essence therapy, an 'integrative approach to mental and emotional healthcare' with a community clinic, clinical supervision and sessions addressing physical symptoms (she is a licensed acupuncturist), so it is mainly therapy rather than spiritual teaching. Her page does carry a Shift affiliate link (shiftnetwork.isrefer.com, not opened); theshiftnetwork.com refuses our fetches.",
    "source": "shift",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Health/therapy rule still stands: her own page (thespiritseed.org/meetlindsay, 4 Nov 2026) presents her as clinic director of a flower-essence therapy community clinic offering 'integrative therapies rooted in depth psychology and earth-based medicine', with remedies and practitioner certification, so her work is mainly clinical therapy rather than spiritual teaching."
   },
   {
    "rank": 66,
@@ -1296,9 +1296,9 @@
    "previous_rank": 376,
    "previous_skip": "Shift course not confirmed current; theshiftnetwork.com refuses our fetches. Her own site (lisabonnice.com, 4 Nov 2026) describes her as a writer, former stand-up comic and long-time Shift Network summit host (past summits named: Ancestral Healing, Beyond the Veil, Intuitive Medicine), with no course of her own on sale or announced; she is an interviewer and author (true crime, metaphysical comedy) rather than a teacher with programmes.",
    "source": "shift",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Not a teacher: her own site (lisabonnice.com home, 4 Nov 2026) presents her as a writer, former stand-up comic and long-time Shift Network summit and podcast host (true crime, a historical novel, metaphysical comedies, a weight-loss book), with no courses, classes or programmes of her own."
   },
   {
    "rank": 67,
@@ -1315,8 +1315,8 @@
    "previous_rank": 377,
    "previous_skip": "Shift course not confirmed current; theshiftnetwork.com refuses our fetches, and shaktidurga.com returns a Cloudflare bot check (403) even for robots.txt, so it was not fetched or retried; no other own page showing a current Shift course was checked (search budget used up). The queue lists her Shift course as self-paced from 2025.",
    "source": "shift",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/shakti-durga.json",
    "skip_reason": null
   },
   {
@@ -1342,8 +1342,8 @@
    "rank": 101,
    "source": "insight-timer",
    "hub": "insight-timer",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/eileen-rose-miles.json",
    "skip_reason": null
   },
   {
@@ -1369,9 +1369,9 @@
    "rank": 102,
    "source": "insight-timer",
    "hub": "insight-timer",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Duplicate: already on Spiritpedia as samaneri-jayasara (docs/content-audits/samaneri-jayasara.json, same Viveka Hermitage website), so no new plan was written."
   },
   {
    "name": "Elizabeth Pyjov",
@@ -1396,8 +1396,8 @@
    "rank": 103,
    "source": "insight-timer",
    "hub": "insight-timer",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/elizabeth-pyjov.json",
    "skip_reason": null
   },
   {
@@ -1423,9 +1423,9 @@
    "rank": 104,
    "source": "insight-timer",
    "hub": "insight-timer",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Health rule: her current work, as shown on her only site (linktr.ee/priestessofsource, now titled 'Donna Medicina'), is a nervous-system programme sold through a free call about the symptoms you are living with, plus a manual on leaving 'survival mode' as the base for any healing; her recent YouTube titles follow suit (nervous system healing, feeling anxiety, mental illness, body detox), so almost nothing current passes the strict health rule. She also has no website of her own beyond Linktree."
   },
   {
    "name": "William Cooper, M.Th., Licensed Professional Counselor",
@@ -1450,9 +1450,9 @@
    "rank": 105,
    "source": "insight-timer",
    "hub": "insight-timer",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Duplicate: already on Spiritpedia as william-cooper (docs/content-audits/william-cooper.json, same williamecooper.wordpress.com website), so no new plan was written."
   },
   {
    "name": "Kylee O'Donnell",
@@ -1477,8 +1477,8 @@
    "rank": 106,
    "source": "insight-timer",
    "hub": "insight-timer",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/kylee-odonnell.json",
    "skip_reason": null
   },
   {
@@ -1504,8 +1504,8 @@
    "rank": 107,
    "source": "insight-timer",
    "hub": "insight-timer",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/heceliza-perez.json",
    "skip_reason": null
   },
   {
@@ -1531,9 +1531,9 @@
    "rank": 108,
    "source": "insight-timer",
    "hub": "insight-timer",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Mainly a music project and too thin as a teacher: her own site (lydiasacredsong.com) is a single page about her mantra and folk releases and an album crowdfund; her kirtan, sound, Shakti Dance and Kundalini Yoga sessions are mentioned only with a 'Book me' link, with no page, dates or price of their own, her YouTube is music videos (music-only), and the site publishes no town for her base."
   },
   {
    "name": "Catherine Ingram",
@@ -1558,8 +1558,8 @@
    "rank": 109,
    "source": "insight-timer",
    "hub": "insight-timer",
-   "status": "todo",
-   "plan": null,
+   "status": "planned",
+   "plan": "docs/content-audits/catherine-ingram.json",
    "skip_reason": null
   },
   {
@@ -1585,9 +1585,9 @@
    "rank": 110,
    "source": "insight-timer",
    "hub": "insight-timer",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Health and therapy rule: although she is a long-time vipassana teacher (former IMS resident teacher, Dipa Ma book), her current work on her own site (amitaschmidt.com) is one-to-one sessions by telemedicine as a licensed clinical social worker and psychotherapist, she describes leading 'healing depression' workshops, one talks menu is 'Depression, Anxiety, and Trauma', and her YouTube titles as a whole are framed on trauma, difficult emotions and the pandemic; no retreats or events since 2022. A human may revisit if she resumes retreat teaching."
   },
   {
    "name": "Lisa Venable",
@@ -1612,8 +1612,8 @@
    "rank": 111,
    "source": "insight-timer",
    "hub": "insight-timer",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/lisa-venable.json",
    "skip_reason": null
   },
   {
@@ -1639,8 +1639,8 @@
    "rank": 112,
    "source": "insight-timer",
    "hub": "insight-timer",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/nandhiji.json",
    "skip_reason": null
   },
   {
@@ -1666,8 +1666,8 @@
    "rank": 113,
    "source": "insight-timer",
    "hub": "insight-timer",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/adele-satori.json",
    "skip_reason": null
   },
   {
@@ -1693,8 +1693,8 @@
    "rank": 114,
    "source": "insight-timer",
    "hub": "insight-timer",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/kelly-smith.json",
    "skip_reason": null
   },
   {
@@ -1720,9 +1720,9 @@
    "rank": 115,
    "source": "insight-timer",
    "hub": "insight-timer",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Health rule (re-checked 4 Nov 2026): her home page still sells the ALVA Method as releasing trauma and giving 'deep and profound healing' (as found in Insight Timer sprint 1, rank 250), and her only contact route is a call-booking page."
   },
   {
    "name": "Devon Kerns",
@@ -1747,9 +1747,9 @@
    "rank": 116,
    "source": "insight-timer",
    "hub": "insight-timer",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Already researched in Insight Timer sprint 1 (rank 251) and dropped by the owner on fit (mainly a life and leadership coach; contact only a clarity-call booking panel); the full plan is in docs/content-audits/insight-timer-sprint-1/dropped/devon-kerns.json if the owner wants to revive it. Not re-researched."
   },
   {
    "name": "Kali Basman",
@@ -1774,9 +1774,9 @@
    "rank": 117,
    "source": "insight-timer",
    "hub": "insight-timer",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Health/therapy rule (re-checked 4 Nov 2026): her own site's menu still sells 1:1 IFS therapy and a three-month IFS Circle, which Insight Timer sprint 1 (rank 256) found sold on trauma, anxiety and chronic pain; psychotherapy is a main part of her offer."
   },
   {
    "name": "Ipek Williamson",
@@ -1801,9 +1801,9 @@
    "rank": 118,
    "source": "insight-timer",
    "hub": "insight-timer",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Already researched in Insight Timer sprint 1 (rank 257) and dropped by the owner on fit (main offer is executive and leadership coaching); the full plan is in docs/content-audits/insight-timer-sprint-1/dropped/ipek-williamson.json if the owner wants to revive it. Not re-researched."
   },
   {
    "name": "Emma Mumford",
@@ -1828,9 +1828,9 @@
    "rank": 119,
    "source": "insight-timer",
    "hub": "insight-timer",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Health rule (re-checked 4 Nov 2026): her Manifestation Membership page still promises 'great health and miracle recoveries' and carries depression and anxiety testimonials, and her book Hurt, Healing, Healed is still on the home menu, as found in Insight Timer sprint 1 (rank 260)."
   },
   {
    "name": "Fallon Stone",
@@ -1855,9 +1855,9 @@
    "rank": 120,
    "source": "insight-timer",
    "hub": "insight-timer",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Health rule (re-checked 4 Nov 2026): her Nervous System Rewired course page (hereandawake.com/nervous-system-rewired/) is still sold to people with chronic illness, pain, fatigue, panic and anxiety, and she is a licensed psychotherapist, as found in Insight Timer sprint 1 (rank 263)."
   },
   {
    "name": "Sarah Dubow",
@@ -1882,9 +1882,9 @@
    "rank": 121,
    "source": "insight-timer",
    "hub": "insight-timer",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Health rule and too thin (re-checked 4 Nov 2026): her home page still presents her first as a health coach with health-transformation testimonials, and there is little else beyond her Insight Timer profile, as found in Insight Timer sprint 1 (rank 264)."
   },
   {
    "name": "Dennis Lang",
@@ -1909,9 +1909,9 @@
    "rank": 122,
    "source": "insight-timer",
    "hub": "insight-timer",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Duplicate: already planned in Insight Timer sprint 1 (rank 265) as the couple listing docs/content-audits/dennis-and-kathy-lang.json (Dennis and Kathy Lang); no new plan written."
   },
   {
    "name": "Jana Montanari",
@@ -1936,9 +1936,9 @@
    "rank": 123,
    "source": "insight-timer",
    "hub": "insight-timer",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Health rule: her own site (montanari-coaching.de, checked 4 Nov 2026) is now centred on menopause: the home page is headed with health tips for perimenopause naming sleep problems and weight gain, and its articles are on supplements and medicinal mushrooms for the menopause, so a listing would send people to condition-led pages."
   },
   {
    "name": "LunaHolistic",
@@ -1963,9 +1963,9 @@
    "rank": 124,
    "source": "insight-timer",
    "hub": "insight-timer",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Health rule: the Reiki centre's own course pages (checked 4 Nov 2026) sell its training on conditions: the courses overview says a short session can profoundly shift chronic pain and trauma, and the Level I page says students released life-threatening addictions and depression for good; the About page also frames the work around anxiety and depression. It is also a multi-practitioner centre (founded by Geneva Robins) rather than one teacher."
   },
   {
    "name": "Deanne Bennett",
@@ -1990,9 +1990,9 @@
    "rank": 125,
    "source": "insight-timer",
    "hub": "insight-timer",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Health rule (borderline, owner may overrule): her site, The Soulful Mentor (checked 4 Nov 2026), is titled and sold as healing from divorce and relationship trauma, its only paid offer (The Sovereign Self-Love Journey) is pitched on healing after divorce, betrayal and relationship trauma, and its featured testimonial describes being unable to sleep after a marriage ended; the rest is free meditations and an empty events page."
   },
   {
    "name": "Verna J. Fisher",
@@ -2017,9 +2017,9 @@
    "rank": 126,
    "source": "insight-timer",
    "hub": "insight-timer",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Health rule and too thin: the coaching site her own About page links to (integrativewisdom.org, checked 4 Nov 2026) welcomes people facing a medical crisis and offers ways out of pain, anxiety, depression or illness, and her Soul Catalyst site has only a card deck and guidebook, an intuitive-guidance coaching session booked by email and a $9.99 obsidian stone; her YouTube channel shows no videos."
   },
   {
    "name": "Dr Orna Triguboff",
@@ -2044,9 +2044,9 @@
    "rank": 127,
    "source": "insight-timer",
    "hub": "insight-timer",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Own site unusable: neshamalife.org (checked 4 Nov 2026) returns only database errors ('MySQL server has gone away') with no pages, photo, offerings or bio, so there is nothing of her own to research from; her recent classes are hosted on Emanuel Synagogue's platform and TryBooking (one free series there is described as giving tools for reducing anxiety and improving sleep). Worth a re-run if her site comes back."
   },
   {
    "name": "Grace Bryant",
@@ -2071,8 +2071,8 @@
    "rank": 128,
    "source": "insight-timer",
    "hub": "insight-timer",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/grace-bryant.json",
    "skip_reason": null
   },
   {
@@ -2098,8 +2098,8 @@
    "rank": 129,
    "source": "insight-timer",
    "hub": "insight-timer",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/athena-monet.json",
    "skip_reason": null
   },
   {
@@ -2125,8 +2125,8 @@
    "rank": 130,
    "source": "insight-timer",
    "hub": "insight-timer",
-   "status": "todo",
-   "plan": null,
+   "status": "planned",
+   "plan": "docs/content-audits/bodhipaksa.json",
    "skip_reason": null
   },
   {
@@ -2152,8 +2152,8 @@
    "rank": 131,
    "source": "insight-timer",
    "hub": "insight-timer",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/tanya-murphy.json",
    "skip_reason": null
   },
   {
@@ -2179,8 +2179,8 @@
    "rank": 132,
    "source": "insight-timer",
    "hub": "insight-timer",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/shannon-shine.json",
    "skip_reason": null
   },
   {
@@ -2206,9 +2206,9 @@
    "rank": 133,
    "source": "insight-timer",
    "hub": "insight-timer",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Conspiracy and partisan political content: her own YouTube channel (@laurenonearth, read 4 Nov 2026) carries episodes on Flat Earth, Archons and 'parasites', the Anunnaki, Hurricane Helene with Diddy and the election, and post-election party politics, and her site sells NAD+ and peptide 'detox' products with discount codes; skipped under the conspiracy and health rules."
   },
   {
    "name": "Chad Foreman",
@@ -2233,8 +2233,8 @@
    "rank": 134,
    "source": "insight-timer",
    "hub": "insight-timer",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/chad-foreman.json",
    "skip_reason": null
   },
   {
@@ -2260,9 +2260,9 @@
    "rank": 135,
    "source": "insight-timer",
    "hub": "insight-timer",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Too thin: her own site (arhealandtransform.wixsite.com/andrearoye, a single page last updated 2024) describes only group crystal-bowl sound baths with no dates, prices or page of their own, and no videos, books, courses or free resources were found; with the Insight Timer profile that is under 3 items. It also publishes no town (the queue's Whitstable/Canterbury is not on her site)."
   },
   {
    "name": "Jesse Flower-Ambroch",
@@ -2287,9 +2287,9 @@
    "rank": 136,
    "source": "insight-timer",
    "hub": "insight-timer",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Too thin: his own site jfasound.com (four pages, footer dated 2020) offers only sound meditation sessions booked by enquiry (no price, no separate offerings), plus a page of his audio-engineering work; no videos, books, courses or free resources of his own beyond the Insight Timer profile, so under 3 items."
   },
   {
    "name": "Sierra Laurel",
@@ -2314,8 +2314,8 @@
    "rank": 137,
    "source": "insight-timer",
    "hub": "insight-timer",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/sierra-wagner.json",
    "skip_reason": null
   },
   {
@@ -2341,9 +2341,9 @@
    "rank": 138,
    "source": "insight-timer",
    "hub": "insight-timer",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Health rule and no usable photo: a retired internist whose site frames his work as health and healing ('the traditional goals of medicine', Intensive Healing Retreats for a 'sudden change in health', mentoring health professionals, books Intentional Healing and Whole Healing on mind/body healing), and his main book Aware, Awake, Alive is sold on applying its practices to heart disease, depression, addiction, ADHD and PTSD (publisher page, paragonhouse.com); the only photo of him on his site is 120 px wide and no larger one was found."
   },
   {
    "name": "Tash Kain",
@@ -2368,9 +2368,9 @@
    "rank": 139,
    "source": "insight-timer",
    "hub": "insight-timer",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Too thin and mainly business coaching: her site tashkain.com (Soul Codes) now centres on business building for practitioners (a £997 launch mastermind and upgrade pages on marketing and sales); the only spiritual offer is the Well Kept monthly membership (£27), and there are no videos, books or free resources of her own beyond Insight Timer. Her email (service@soulcoding.co) appears only as the broken target of a 'Contact' link, not as published text, and no base is published."
   },
   {
    "name": "Swami Chidananda",
@@ -2395,8 +2395,8 @@
    "rank": 140,
    "source": "insight-timer",
    "hub": "insight-timer",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/swami-chidananda.json",
    "skip_reason": null
   },
   {
@@ -2422,9 +2422,9 @@
    "rank": 141,
    "source": "insight-timer",
    "hub": "insight-timer",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Mainly a music project and too thin under the rules: her site danadevi.com is chiefly about her mantra album and bookable concerts; the Sivananda yoga page lists no classes, times or prices, the booking page says 'nothing to book', the upcoming retreat afternoons and concerts share one events page with no page of their own, the YouTube videos on her site are music-only, and no town is published as her base. With the Insight Timer profile that is fewer than 3 items that pass."
   },
   {
    "name": "Evelin Ludwig",
@@ -2449,9 +2449,9 @@
    "rank": 142,
    "source": "insight-timer",
    "hub": "insight-timer",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Her own site (evenaris.com) sells sound sessions and Akari colour CDs on health claims (boosting the immune system, clearing blockages caused by trauma, addressing physical discomfort, weak red blood cells, the body repairing itself), so almost nothing passes the strict health rule; the rest is DJ sets, live performances and music releases with no current events, a performance/music project more than teaching."
   },
   {
    "name": "Stephen Procter",
@@ -2476,8 +2476,8 @@
    "rank": 143,
    "source": "insight-timer",
    "hub": "insight-timer",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/stephen-procter.json",
    "skip_reason": null
   },
   {
@@ -2503,9 +2503,9 @@
    "rank": 144,
    "source": "insight-timer",
    "hub": "insight-timer",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "His own site (integral8.com) is a senior-leadership and executive coaching practice (a former FTSE 250 CEO, Integral Coaching Canada trained); contemplative practice is only one background influence, with no meditation classes, spiritual teaching or free practices on offer, so he is not a spiritual teacher for Spiritpedia's purposes."
   },
   {
    "name": "Silas Day",
@@ -2530,9 +2530,9 @@
    "rank": 145,
    "source": "insight-timer",
    "hub": "insight-timer",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Too thin: his own site (silasday.com) only points to his Insight Timer talks and courses (hub programmes, which count once); he has no offerings, videos or books of his own, his social links are empty, and his site publishes no base."
   },
   {
    "name": "Michelle Coutinho",
@@ -2557,8 +2557,8 @@
    "rank": 146,
    "source": "insight-timer",
    "hub": "insight-timer",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/michelle-coutinho.json",
    "skip_reason": null
   },
   {
@@ -2584,9 +2584,9 @@
    "rank": 147,
    "source": "insight-timer",
    "hub": "insight-timer",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Health rule: her school, the BioMedical Institute of Yoga and Meditation (biyome.com.au), frames almost everything as medicine or therapy (lifestyle medicine, yoga therapy, BioMedical meditation therapy, embodied medicine, medicine-assisted and psychedelic-assisted therapy, a 'treatment centre'), and even the meditation teacher trainings are presented through lifestyle medicine; very little would pass the strict health and 'anything medical' rules."
   },
   {
    "name": "Lea Longo",
@@ -2611,9 +2611,9 @@
    "rank": 148,
    "source": "insight-timer",
    "hub": "insight-timer",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Her own site (lealongo.com, 'Lea Longo Live Singer') presents her mainly as a live singer and recording artist for weddings and events; the meditation work sits on a single quote-only Wellness page (private group, corporate and retreat sessions with no separate pages, the corporate offer sold on lowering anxiety), her contact page returns 404 and no email is published on her own site, so there is not enough teaching to make a proper page; a music project more than a teacher."
   },
   {
    "name": "Suzi von Mensenkampff",
@@ -2638,8 +2638,8 @@
    "rank": 149,
    "source": "insight-timer",
    "hub": "insight-timer",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/suzi-von-mensenkampff.json",
    "skip_reason": null
   },
   {
@@ -2665,9 +2665,9 @@
    "rank": 150,
    "source": "insight-timer",
    "hub": "insight-timer",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Health rule: her site (naturaltuning.com) sells sound therapy, ecotherapy and coaching as therapy to reduce stress and anxiety and improve health, and its recent blog posts warn of harm from 5G, WiFi and smart-meter electromagnetic fields; her work is mainly condition-framed therapy, so almost nothing passes the strict health rule."
   },
   {
    "name": "Irena Sekulska",
@@ -2692,9 +2692,9 @@
    "rank": 151,
    "source": "insight-timer",
    "hub": "insight-timer",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Mainly therapy: she presents herself first as a registered hypnotherapist and Leela therapist, and her main offering (1:1 MiST sessions, plus an 'emotional emergency room' session) is sold on meeting anxiety, stress, trauma and addiction and integrating psychedelic experiences; her listed yoga classes have all passed, leaving only one 2027 retreat (itself framed as therapeutic support) and member/free recordings, so under the strict health and therapy rules there is not enough for a page."
   },
   {
    "name": "Maura Cunningham",
@@ -2719,8 +2719,8 @@
    "rank": 152,
    "source": "insight-timer",
    "hub": "insight-timer",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/maura-cunningham.json",
    "skip_reason": null
   },
   {
@@ -2746,8 +2746,8 @@
    "rank": 153,
    "source": "insight-timer",
    "hub": "insight-timer",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/samantha-cooper.json",
    "skip_reason": null
   },
   {
@@ -2773,8 +2773,8 @@
    "rank": 154,
    "source": "insight-timer",
    "hub": "insight-timer",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/mahasukha.json",
    "skip_reason": null
   },
   {
@@ -2800,9 +2800,9 @@
    "rank": 155,
    "source": "insight-timer",
    "hub": "insight-timer",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Her own site (katymayspencer.com) now offers only personal and team leadership coaching with horses at a ranch in Ojai (a $1,500 team session and a $350 private session, with a tea ceremony as one optional part of a team offsite); it is a leadership coaching business rather than spiritual teaching, and with no videos, books, free practices or other offerings it is too thin for a page."
   },
   {
    "name": "Marc Gallagher",
@@ -2827,9 +2827,9 @@
    "rank": 156,
    "source": "insight-timer",
    "hub": "insight-timer",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Too thin: his own site (wildpilgrims.org) has only one current undated retreat page (Silence); the Atlas Mountains men's retreat (28 Sept-2 Oct 2026) has passed, two other retreats are marked not yet launched, and there are no videos, books or free resources besides Insight Timer. The site also publishes only 'Morocco' as a base, with no town."
   },
   {
    "name": "Matthew Sockolov",
@@ -2854,8 +2854,8 @@
    "rank": 157,
    "source": "insight-timer",
    "hub": "insight-timer",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/matthew-sockolov.json",
    "skip_reason": null
   },
   {
@@ -2881,8 +2881,8 @@
    "rank": 158,
    "source": "insight-timer",
    "hub": "insight-timer",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/will-caminada.json",
    "skip_reason": null
   },
   {
@@ -2908,8 +2908,8 @@
    "rank": 159,
    "source": "insight-timer",
    "hub": "insight-timer",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/amy-robeson.json",
    "skip_reason": null
   },
   {
@@ -2935,9 +2935,9 @@
    "rank": 160,
    "source": "insight-timer",
    "hub": "insight-timer",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Health rule: his two main offerings on giulianogeronymo.com, wellness coaching and shamanic sound healing, are sold on anxiety, depression, chronic pain relief, addictive behaviours and boosting the immune system; the rest is an art and apparel shop, music and events last dated 2020, so almost nothing passes."
   },
   {
    "name": "Cindy Glennon",
@@ -2962,8 +2962,8 @@
    "rank": 161,
    "source": "insight-timer",
    "hub": "insight-timer",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/cindy-glennon.json",
    "skip_reason": null
   },
   {
@@ -2989,9 +2989,9 @@
    "rank": 162,
    "source": "insight-timer",
    "hub": "insight-timer",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Blocked: yosoygaia.com's robots.txt says Disallow: / for ClaudeBot, Claude-Web and anthropic-ai, so her own site was not fetched (owner's rule: robots block = skip). The queue also describes her work as mainly menstrual-health programmes, which would likely fail the health rule anyway."
   },
   {
    "name": "Richard Miller",
@@ -3016,8 +3016,8 @@
    "rank": 163,
    "source": "insight-timer",
    "hub": "insight-timer",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/richard-miller.json",
    "skip_reason": null
   },
   {
@@ -3043,9 +3043,9 @@
    "rank": 164,
    "source": "insight-timer",
    "hub": "insight-timer",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Blocked: her own site naturaldharma.org (Natural Dharma Fellowship / Wonderwell Mountain Refuge) has a robots.txt group 'User-agent: ClaudeBot / Disallow: /', so it was not fetched, and a web search found no other personal site; her contact form, base and current programmes can't be confirmed from her own pages. Hub and publisher pages (Kripalu, Shambhala, Tara Mandala) are not a substitute under the brief."
   },
   {
    "name": "Krishna Das",
@@ -3070,8 +3070,8 @@
    "rank": 165,
    "source": "insight-timer",
    "hub": "insight-timer",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/krishna-das.json",
    "skip_reason": null
   },
   {
@@ -3097,8 +3097,8 @@
    "rank": 166,
    "source": "insight-timer",
    "hub": "insight-timer",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/peter-bolland.json",
    "skip_reason": null
   },
   {
@@ -3124,8 +3124,8 @@
    "rank": 167,
    "source": "insight-timer",
    "hub": "insight-timer",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/teresa-blythe.json",
    "skip_reason": null
   },
   {
@@ -3151,8 +3151,8 @@
    "rank": 168,
    "source": "insight-timer",
    "hub": "insight-timer",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/daniel-raphael-silverstein.json",
    "skip_reason": null
   },
   {
@@ -3172,8 +3172,8 @@
    ],
    "role": "course teacher",
    "note": "Shift faculty list (saved 30 Oct 2026); counts under the owner's rule of 4 Nov 2026. Research from their OWN site only (never open theshiftnetwork.com). Link to the-shift-network only if their own site mentions The Shift Network.",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/andrew-harvey.json",
    "skip_reason": null
   },
   {
@@ -3191,8 +3191,8 @@
    ],
    "role": "course teacher",
    "note": "Shift faculty list (saved 30 Oct 2026); counts under the owner's rule of 4 Nov 2026. Research from their OWN site only (never open theshiftnetwork.com). Link to the-shift-network only if their own site mentions The Shift Network.",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/sue-morter.json",
    "skip_reason": null
   },
   {
@@ -3212,8 +3212,8 @@
    ],
    "role": "course teacher + summit host",
    "note": "Shift faculty list (saved 30 Oct 2026); counts under the owner's rule of 4 Nov 2026. Research from their OWN site only (never open theshiftnetwork.com). Link to the-shift-network only if their own site mentions The Shift Network.",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/jessica-dibb.json",
    "skip_reason": null
   },
   {
@@ -3232,9 +3232,9 @@
    ],
    "role": "course teacher",
    "note": "Shift faculty list (saved 30 Oct 2026); counts under the owner's rule of 4 Nov 2026. Research from their OWN site only (never open theshiftnetwork.com). Link to the-shift-network only if their own site mentions The Shift Network.",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Health rule: his own site (chicenter.com) sells Wisdom Healing Qigong mainly as physical and emotional healing, with in-person 'Healing Intensive' retreats and home-page claims that stress is the ultimate cause of illness and chronic disease and that qigong lets you heal, improve balance and prevent falls (his Shift courses include immunity-building qigong); his work is mainly condition- and healing-framed, so almost nothing passes the strict health rule. His newer 'Embodied Awakening' book and Pure Consciousness immersion could be reconsidered by a human."
   },
   {
    "rank": 305,
@@ -3253,9 +3253,9 @@
    ],
    "role": "course teacher",
    "note": "Shift faculty list (saved 30 Oct 2026); counts under the owner's rule of 4 Nov 2026. Research from their OWN site only (never open theshiftnetwork.com). Link to the-shift-network only if their own site mentions The Shift Network.",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Too thin under the rules as they stand today: much of her current work (tirzahfirestone.com) is intergenerational trauma healing, so the Wounds into Wisdom book, ancestral-healing courses and practitioner circle fail the health rule; what is left is one current course (The Alchemy of Heartbreak, from 11 Nov 2026, $360, borderline because it is framed around grief) and her Shift on-demand courses (linked from her ancestral-healing page, counting once). Her clean books (The Receiving, With Roots in Heaven, The Woman's Kabbalah) could not be confirmed because Open Library refused our connections during this run, and she has no YouTube channel. Worth a re-run when Open Library answers: she has a published email (info@tirzahfirestone.com), one usable photo, and her site names Shift courses."
   },
   {
    "rank": 306,
@@ -3270,9 +3270,9 @@
    ],
    "role": "course teacher",
    "note": "Shift faculty list (saved 30 Oct 2026); counts under the owner's rule of 4 Nov 2026. Research from their OWN site only (never open theshiftnetwork.com). Link to the-shift-network only if their own site mentions The Shift Network.",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Health and therapy rule: her own site (drarielleschwartz.com) presents her as a clinical psychologist whose work is trauma recovery, EMDR and resilience-informed therapy for therapists and clients; her work is mainly psychotherapy framed around trauma, so almost nothing passes the strict health rule."
   },
   {
    "rank": 307,
@@ -3287,9 +3287,9 @@
    ],
    "role": "course teacher",
    "note": "Shift faculty list (saved 30 Oct 2026); counts under the owner's rule of 4 Nov 2026. Research from their OWN site only (never open theshiftnetwork.com). Link to the-shift-network only if their own site mentions The Shift Network.",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Health rule: his own site (soundhealingcenter.com, Globe Institute / Sound Healing Center, Sausalito) is built around sound therapy for specific conditions: a 'Medical Sound Association - New Medicine Based on Vibration', a therapy centre offering 'treatments for specific issues' and 'Treatments for Pain', music for pre-op, surgery and post-op, and Nutri-Energetics scans with 'Infoceutical Remedies'; his work is mainly therapeutic/clinical, so almost nothing passes the strict health rule."
   },
   {
    "rank": 308,
@@ -3304,8 +3304,8 @@
    ],
    "role": "course teacher",
    "note": "Shift faculty list (saved 30 Oct 2026); counts under the owner's rule of 4 Nov 2026. Research from their OWN site only (never open theshiftnetwork.com). Link to the-shift-network only if their own site mentions The Shift Network.",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/mark-matousek.json",
    "skip_reason": null
   },
   {
@@ -3322,9 +3322,9 @@
    ],
    "role": "course teacher",
    "note": "Shift faculty list (saved 30 Oct 2026); counts under the owner's rule of 4 Nov 2026. Research from their OWN site only (never open theshiftnetwork.com). Link to the-shift-network only if their own site mentions The Shift Network.",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Too thin: her own site (jeanhaner.com) offers no classes or sessions of her own any more; its Events page lists only three on-demand Shift Network courses (counting once), its Sessions page sends people to certified practitioners, and her energy-clearing workshop site (clearhomeclearheart.com) now points to another teacher, Melanie Mattison. No YouTube channel is linked, and her books could not be confirmed because Open Library refused our connections during this run; her newest book is also sold on releasing stress and clearing anxiety (health rule). She has a published email (contact@jeanhaner.com) and her site names The Shift Network, so a re-run could work if Open Library answers and her books are enough."
   },
   {
    "rank": 310,
@@ -3341,9 +3341,9 @@
    ],
    "role": "course teacher",
    "note": "Shift faculty list (saved 30 Oct 2026); counts under the owner's rule of 4 Nov 2026. Research from their OWN site only (never open theshiftnetwork.com). Link to the-shift-network only if their own site mentions The Shift Network.",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Health/therapy rule: her own site (suzannescurlock.com → Healing From the Core) is mainly bodywork-therapy training: continuing-education courses approved for massage and bodywork therapists (NCBTMB), courses and study groups for CranioSacral Therapists, a practitioner certification track, a 'Healing the Pelvic Core' programme, and sales of cold lasers and 'QiFi purifiers'. Her Soul Embodiment courses for everyone and free Ground & Fill meditations sit inside a therapy-led business, so it was skipped; a human could reconsider the non-clinical courses. Her site does name The Shift Network ('Courses with The Shift Network' menu)."
   },
   {
    "rank": 311,
@@ -3359,9 +3359,9 @@
    ],
    "role": "course teacher",
    "note": "Shift faculty list (saved 30 Oct 2026); counts under the owner's rule of 4 Nov 2026. Research from their OWN site only (never open theshiftnetwork.com). Link to the-shift-network only if their own site mentions The Shift Network.",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Health rule: his own site (mantakchia.com) carries direct medical claims: the About page says his Tao Garden spa (which he founded and runs in Chiang Mai) 'provides colon therapy, stem-cell cancer prevention, and natural cancer cure treatments', and the home page features a testimonial that the Healing Tao reversed osteoporosis. His system (Universal Healing Tao) is sold largely on healing, and his Shift courses are framed around 'luminous health', longevity and self-healing. Under the strict rule (cure claims on the teacher's own pages) he is skipped. A human may want to reconsider, given his stature (60+ books) and the clean Taoist inner-alchemy retreats (Darkroom Retreat Feb 2027, Winter Retreat Jan 2027); contact is a form only."
   },
   {
    "rank": 312,
@@ -3376,9 +3376,9 @@
    ],
    "role": "course teacher",
    "note": "Shift faculty list (saved 30 Oct 2026); counts under the owner's rule of 4 Nov 2026. Research from their OWN site only (never open theshiftnetwork.com). Link to the-shift-network only if their own site mentions The Shift Network.",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Too thin: her own site (beatricechestnut.com) offers only Enneagram leadership coaching for organisations, speaking via an agency, and articles; it lists no courses or classes of her own and links no YouTube channel. The Chestnut Paes Enneagram Academy she co-founded (cpenneagram.com) says she and Uranio Paes are ending their partnership and it will run no retreats or workshops after 2026 (its last ones are professional trainings for practitioners). Her books (The Complete Enneagram, The Enneagram Guide to Waking Up) could not be confirmed because Open Library refused our connections during this run. Her site does mention a past Shift Network course (posts/shadow). Possible re-run if she launches new offerings of her own."
   },
   {
    "rank": 313,
@@ -3392,9 +3392,9 @@
    ],
    "role": "course teacher",
    "note": "Shift faculty list (saved 30 Oct 2026); counts under the owner's rule of 4 Nov 2026. Research from their OWN site only (never open theshiftnetwork.com). Link to the-shift-network only if their own site mentions The Shift Network.",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Couple/duplicate plus health rule: karennewell.com is an empty placeholder; her work is Sacred Acoustics (sacredacoustics.com), the brainwave-entrainment audio brand she runs with her partner Dr. Eben Alexander, who is already on Spiritpedia (dev slug dr-eben-alexander), and her Shift course on near-death experience is taught with him; a couple who teach together stay one listing. Sacred Acoustics is also sold mainly on conditions (its home page asks about stress, anxiety and insomnia and promises better sleep, less anxiety and improved health). She could be mentioned in Eben Alexander's bio instead."
   },
   {
    "rank": 314,
@@ -3408,9 +3408,9 @@
    ],
    "role": "course teacher",
    "note": "Shift faculty list (saved 30 Oct 2026); counts under the owner's rule of 4 Nov 2026. Research from their OWN site only (never open theshiftnetwork.com). Link to the-shift-network only if their own site mentions The Shift Network.",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Health rule: her main work is medical intuition and clinical subtle-energy therapy (she is described as a 'spiritual and medical intuition counselor', 'master clinical past lives therapist' and 'medical intuitive, clinician, and researcher of biofield therapies' at HEAL and THRIVE in Encinitas, California, per search results from Kripalu's presenter page and VoiceAmerica; pages not opened). Anything 'medical' is left out, so almost nothing would pass. No own website was found (tiffanybarsotti.com does not answer; two web searches), so no email or contact form could be confirmed either."
   },
   {
    "rank": 315,
@@ -3425,9 +3425,9 @@
    ],
    "role": "course teacher",
    "note": "Shift faculty list (saved 30 Oct 2026); counts under the owner's rule of 4 Nov 2026. Research from their OWN site only (never open theshiftnetwork.com). Link to the-shift-network only if their own site mentions The Shift Network.",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Health and plant-medicine rules: his own site (christopherhobbs.com, 4 Nov 2026) presents him as a clinical herbalist and acupuncturist, with an ailments database, telehealth consultations, and articles on hepatitis C and Covid-19; his Shift courses were on magic mushrooms. His work is mainly herbal medicine and medicinal or psychedelic mushrooms, so almost nothing passes the strict health rule."
   },
   {
    "rank": 316,
@@ -3442,8 +3442,8 @@
    ],
    "role": "course teacher",
    "note": "Shift faculty list (saved 30 Oct 2026); counts under the owner's rule of 4 Nov 2026. Research from their OWN site only (never open theshiftnetwork.com). Link to the-shift-network only if their own site mentions The Shift Network.",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/brian-thomas-swimme.json",
    "skip_reason": null
   },
   {
@@ -3459,8 +3459,8 @@
    ],
    "role": "course teacher",
    "note": "Shift faculty list (saved 30 Oct 2026); counts under the owner's rule of 4 Nov 2026. Research from their OWN site only (never open theshiftnetwork.com). Link to the-shift-network only if their own site mentions The Shift Network.",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/stewart-pearce.json",
    "skip_reason": null
   },
   {
@@ -3476,9 +3476,9 @@
    ],
    "role": "course teacher",
    "note": "Shift faculty list (saved 30 Oct 2026); counts under the owner's rule of 4 Nov 2026. Research from their OWN site only (never open theshiftnetwork.com). Link to the-shift-network only if their own site mentions The Shift Network.",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "No own website: helanewahbeh.com does not resolve and searches point only to her staff profile at the Institute of Noetic Sciences (noetic.org/profile/helane-wahbeh, 4 Nov 2026), where she is Director of Research. That profile links social accounts but publishes no email or contact form of hers (only IONS's general contact page), and her work there is mainly scientific research on consciousness and health rather than her own teaching programme. Could be revisited as an IONS-linked listing if the owner wants, using her book The Science of Channeling."
   },
   {
    "rank": 319,
@@ -3492,8 +3492,8 @@
    ],
    "role": "course teacher",
    "note": "Shift faculty list (saved 30 Oct 2026); counts under the owner's rule of 4 Nov 2026. Research from their OWN site only (never open theshiftnetwork.com). Link to the-shift-network only if their own site mentions The Shift Network.",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/anthony-abbagnano.json",
    "skip_reason": null
   },
   {
@@ -3509,8 +3509,8 @@
    ],
    "role": "course teacher",
    "note": "Shift faculty list (saved 30 Oct 2026); counts under the owner's rule of 4 Nov 2026. Research from their OWN site only (never open theshiftnetwork.com). Link to the-shift-network only if their own site mentions The Shift Network.",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/robin-rose-bennett.json",
    "skip_reason": null
   },
   {
@@ -3525,8 +3525,8 @@
    ],
    "role": "course teacher",
    "note": "Shift faculty list (saved 30 Oct 2026); counts under the owner's rule of 4 Nov 2026. Research from their OWN site only (never open theshiftnetwork.com). Link to the-shift-network only if their own site mentions The Shift Network.",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/roel-crabbe.json",
    "skip_reason": null
   },
   {
@@ -3543,9 +3543,9 @@
    ],
    "role": "course teacher",
    "note": "Shift faculty list (saved 30 Oct 2026); counts under the owner's rule of 4 Nov 2026. Research from their OWN site only (never open theshiftnetwork.com). Link to the-shift-network only if their own site mentions The Shift Network.",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Health rule: her own site (chanchalcabrera.com, 4 Nov 2026) presents her as a medical herbalist with a health clinic, clinical mentoring and on-demand courses in holistic cancer care; her work is mainly clinical herbal medicine, so almost nothing passes the strict health rule."
   },
   {
    "rank": 323,
@@ -3559,9 +3559,9 @@
    ],
    "role": "course teacher",
    "note": "Shift faculty list (saved 30 Oct 2026); counts under the owner's rule of 4 Nov 2026. Research from their OWN site only (never open theshiftnetwork.com). Link to the-shift-network only if their own site mentions The Shift Network.",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Not mainly a spiritual teacher now: her own site (sheilavijeyarasa.com redirects to sheilav.co, 4 Nov 2026) presents her as a corporate keynote speaker and resilient-leadership expert. Spiritual items are limited to intuitive sessions and a spiritual business accelerator, her 'Brave Through IVF' programme fails the health rule, and nothing on the site covers channelling or spirit guides (her Shift course topic), so too little remains for a proper spiritual-teacher page."
   },
   {
    "rank": 324,
@@ -3575,9 +3575,9 @@
    ],
    "role": "course teacher",
    "note": "Shift faculty list (saved 30 Oct 2026); counts under the owner's rule of 4 Nov 2026. Research from their OWN site only (never open theshiftnetwork.com). Link to the-shift-network only if their own site mentions The Shift Network.",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "No own website found (two web searches, 4 Nov 2026): he appears only on third-party pages as a Tampa jazz vocalist, storyteller and arts-in-health programme manager (Straz Center, UCSF Sound Health Network, hospital 'music as medicine' events), so there is no published email or contact form of his own, and his work there is framed mainly as arts in health care rather than spiritual teaching. The name is also shared with other musicians, so identity could not be confirmed."
   },
   {
    "rank": 325,
@@ -3592,9 +3592,9 @@
    ],
    "role": "course teacher",
    "note": "Shift faculty list (saved 30 Oct 2026); counts under the owner's rule of 4 Nov 2026. Research from their OWN site only (never open theshiftnetwork.com). Link to the-shift-network only if their own site mentions The Shift Network.",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Blocked: her own site's robots.txt (drmarthaeddy.com, reached from marthaeddy.com, read 4 Nov 2026) has 'Disallow: /' for ClaudeBot, anthropic-ai and Claude-Web, so it was not fetched (owner's rule: robots block = skip). Her work (somatic movement therapy, nervous-system regulation) would also have been borderline under the health and therapy rules."
   },
   {
    "rank": 326,
@@ -3608,9 +3608,9 @@
    ],
    "role": "course teacher",
    "note": "Shift faculty list (saved 30 Oct 2026); counts under the owner's rule of 4 Nov 2026. Research from their OWN site only (never open theshiftnetwork.com). Link to the-shift-network only if their own site mentions The Shift Network.",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Health rule: her site Living Somatics (livingsomatics.com, 4 Nov 2026; the site named on her own Shift handout) is framed around clinical somatics, osteopathy, pain release, chronic pain relief and eyesight, offering 'Clinical Somatics' trainings and consultations; her work is mainly therapeutic bodywork sold on conditions, so almost nothing passes the strict health rule."
   },
   {
    "rank": 327,
@@ -3625,8 +3625,8 @@
    ],
    "role": "course teacher",
    "note": "Shift faculty list (saved 30 Oct 2026); counts under the owner's rule of 4 Nov 2026. Research from their OWN site only (never open theshiftnetwork.com). Link to the-shift-network only if their own site mentions The Shift Network.",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/matthew-cohen.json",
    "skip_reason": null
   },
   {
@@ -3641,9 +3641,9 @@
    ],
    "role": "course teacher",
    "note": "Shift faculty list (saved 30 Oct 2026); counts under the owner's rule of 4 Nov 2026. Research from their OWN site only (never open theshiftnetwork.com). Link to the-shift-network only if their own site mentions The Shift Network.",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Blocked: her own site's robots.txt (phylliscurott.com, read 4 Nov 2026) has 'Disallow: /' for a group naming ClaudeBot and anthropic-ai, so it was not fetched (owner's rule: robots block = skip)."
   },
   {
    "rank": 329,
@@ -3657,9 +3657,9 @@
    ],
    "role": "course teacher",
    "note": "Shift faculty list (saved 30 Oct 2026); counts under the owner's rule of 4 Nov 2026. Research from their OWN site only (never open theshiftnetwork.com). Link to the-shift-network only if their own site mentions The Shift Network.",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Main work is health-framed breathwork (his own site presents it as healing chronic illness and improving health, physically and emotionally), and his courses and events sit on somabreath.com, which answers us with a bot check (4 Nov 2026), so it was not fetched; health rule plus too little reachable on his own site."
   },
   {
    "rank": 330,
@@ -3673,9 +3673,9 @@
    ],
    "role": "course teacher",
    "note": "Shift faculty list (saved 30 Oct 2026); counts under the owner's rule of 4 Nov 2026. Research from their OWN site only (never open theshiftnetwork.com). Link to the-shift-network only if their own site mentions The Shift Network.",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Her current site, quantumhumandesign.com, blocks ClaudeBot, anthropic-ai and Claude-Web in robots.txt (read 4 Nov 2026), so it was not fetched; karencurryparker.com is an old 2014 page with placeholder contact details, so no current base, email or offerings could be confirmed from her own site."
   },
   {
    "rank": 331,
@@ -3689,9 +3689,9 @@
    ],
    "role": "course teacher",
    "note": "Shift faculty list (saved 30 Oct 2026); counts under the owner's rule of 4 Nov 2026. Research from their OWN site only (never open theshiftnetwork.com). Link to the-shift-network only if their own site mentions The Shift Network.",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "No own website found (two web searches, 4 Nov 2026): she appears only as a staff programme designer at the Institute of Noetic Sciences, so there is no own site for a base, email or contact form, photo or offerings. Co-taught her Shift course with Kerstin Sjoquist (rank 332)."
   },
   {
    "rank": 332,
@@ -3705,9 +3705,9 @@
    ],
    "role": "course teacher",
    "note": "Shift faculty list (saved 30 Oct 2026); counts under the owner's rule of 4 Nov 2026. Research from their OWN site only (never open theshiftnetwork.com). Link to the-shift-network only if their own site mentions The Shift Network.",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "No own website found (two web searches, 4 Nov 2026): she appears as Director of Experience and Engagement at the Institute of Noetic Sciences; her IONS profile names a company, Consciousness Arts, but no site for it turned up, so there is no own source for a base, email or contact form, photo or offerings. Co-taught her Shift course with Nina Fry-Kizler (rank 331)."
   },
   {
    "rank": 333,
@@ -3721,9 +3721,9 @@
    ],
    "role": "course teacher",
    "note": "Shift faculty list (saved 30 Oct 2026); counts under the owner's rule of 4 Nov 2026. Research from their OWN site only (never open theshiftnetwork.com). Link to the-shift-network only if their own site mentions The Shift Network.",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "No usable own site: bodhistarwater.com is a parked lander and soundsofbodhi.com says 'coming soon' (4 Nov 2026). The only live site, starwaterandsol.com, is a duo music act's page (Starwater & Sol, with Christopher Sol Parnell) listing past concerts and albums, and its sound-healing course page returned 403 to us (CloudFront block), so we stopped fetching it. Too little that is his own, current and reachable, and the live site is a music project rather than a teacher's page; his book '5 Elements of Sound Healing' could not be confirmed from his own or the publisher's site."
   },
   {
    "rank": 334,
@@ -3737,8 +3737,8 @@
    ],
    "role": "course teacher",
    "note": "Shift faculty list (saved 30 Oct 2026); counts under the owner's rule of 4 Nov 2026. Research from their OWN site only (never open theshiftnetwork.com). Link to the-shift-network only if their own site mentions The Shift Network.",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/natalie-southgate.json",
    "skip_reason": null
   },
   {
@@ -3753,8 +3753,8 @@
    ],
    "role": "course teacher",
    "note": "Shift faculty list (saved 30 Oct 2026); counts under the owner's rule of 4 Nov 2026. Research from their OWN site only (never open theshiftnetwork.com). Link to the-shift-network only if their own site mentions The Shift Network.",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/anja-steensig.json",
    "skip_reason": null
   },
   {
@@ -3769,8 +3769,8 @@
    ],
    "role": "course teacher",
    "note": "Shift faculty list (saved 30 Oct 2026); counts under the owner's rule of 4 Nov 2026. Research from their OWN site only (never open theshiftnetwork.com). Link to the-shift-network only if their own site mentions The Shift Network.",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/laura-plumb.json",
    "skip_reason": null
   },
   {
@@ -3785,8 +3785,8 @@
    ],
    "role": "course teacher",
    "note": "Shift faculty list (saved 30 Oct 2026); counts under the owner's rule of 4 Nov 2026. Research from their OWN site only (never open theshiftnetwork.com). Link to the-shift-network only if their own site mentions The Shift Network.",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/jennifer-hadley.json",
    "skip_reason": null
   },
   {
@@ -3801,9 +3801,9 @@
    ],
    "role": "course teacher",
    "note": "Shift faculty list (saved 30 Oct 2026); counts under the owner's rule of 4 Nov 2026. Research from their OWN site only (never open theshiftnetwork.com). Link to the-shift-network only if their own site mentions The Shift Network.",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Health rule: her own site (brigittemars.com, 4 Nov 2026) presents her as a herbalist and professor of herbal medicine, and its classes and books are sold on conditions (immune health, common ailments, addictions, children's health; a book on anxiety, depression, insomnia, PTSD and more). She also lists herself as a psychedelic sitter (plant-medicine rule). Almost nothing would pass the health-claim rule."
   },
   {
    "rank": 339,
@@ -3818,9 +3818,9 @@
    ],
    "role": "course teacher",
    "note": "Shift faculty list (saved 30 Oct 2026); counts under the owner's rule of 4 Nov 2026. Research from their OWN site only (never open theshiftnetwork.com). Link to the-shift-network only if their own site mentions The Shift Network.",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Health rule and brand: her work is published through Anima Mundi Herbals, a herbal apothecary product brand (shops in Brooklyn), and her teaching and book (The Rainforest Herbal Apothecary) are on medicinal plants and herbal healing; her Shift courses are on herbalism and 'indigenous plant medicine'. No personal teacher site was found (adrianaayales.com did not answer, 4 Nov 2026), so nothing was fetched from the brand shop."
   },
   {
    "rank": 340,
@@ -3836,8 +3836,8 @@
    ],
    "role": "course teacher",
    "note": "Shift faculty list (saved 30 Oct 2026); counts under the owner's rule of 4 Nov 2026. Research from their OWN site only (never open theshiftnetwork.com). Link to the-shift-network only if their own site mentions The Shift Network.",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/jane-burns.json",
    "skip_reason": null
   },
   {
@@ -3853,9 +3853,9 @@
    ],
    "role": "course teacher",
    "note": "Shift faculty list (saved 30 Oct 2026); counts under the owner's rule of 4 Nov 2026. Research from their OWN site only (never open theshiftnetwork.com). Link to the-shift-network only if their own site mentions The Shift Network.",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "No own website (web search, 4 Nov 2026): every listing points to heartmath.org, where he is director of research of the HeartMath Institute, an organisation rather than his own teaching site, so there is no personal base, email or contact form, or offerings of his own. He is a research scientist and his work is presented largely as stress and health research rather than spiritual teaching. Not fetched."
   },
   {
    "rank": 342,
@@ -3872,8 +3872,8 @@
    ],
    "role": "course teacher",
    "note": "Shift faculty list (saved 30 Oct 2026); counts under the owner's rule of 4 Nov 2026. Research from their OWN site only (never open theshiftnetwork.com). Link to the-shift-network only if their own site mentions The Shift Network.",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/jean-shinoda-bolen.json",
    "skip_reason": null
   },
   {
@@ -3890,9 +3890,9 @@
    ],
    "role": "course teacher",
    "note": "Shift faculty list (saved 30 Oct 2026); counts under the owner's rule of 4 Nov 2026. Research from their OWN site only (never open theshiftnetwork.com). Link to the-shift-network only if their own site mentions The Shift Network.",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "His own site (biodynamicbreath.com, read 4 Nov 2026) presents his work as the BioDynamic Breath and Trauma Release System: trauma-informed breathwork facilitator certification and trauma-release retreats, and his book is 'Feel to Heal: Releasing Trauma...'; the main work is sold on trauma release, so almost nothing passes the health-claim rule."
   },
   {
    "rank": 344,
@@ -3907,9 +3907,9 @@
    ],
    "role": "course teacher",
    "note": "Shift faculty list (saved 30 Oct 2026); counts under the owner's rule of 4 Nov 2026. Research from their OWN site only (never open theshiftnetwork.com). Link to the-shift-network only if their own site mentions The Shift Network.",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "A bodyworker offering Biodynamic Craniosacral Therapy and TRE treatments (London and Geneva), whose books are titled on conditions (Pain Is Really Strange, Anxiety Is Really Strange, Trauma Is Really Strange); main work is clinical bodywork sold on conditions (health rule). His old site stevehaines.net now carries an unrelated essay-writing page, so no own site was found for a contact or base."
   },
   {
    "rank": 345,
@@ -3923,9 +3923,9 @@
    ],
    "role": "course teacher",
    "note": "Shift faculty list (saved 30 Oct 2026); counts under the owner's rule of 4 Nov 2026. Research from their OWN site only (never open theshiftnetwork.com). Link to the-shift-network only if their own site mentions The Shift Network.",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Her own site (alanefreund.com, read 4 Nov 2026) is a licensed marriage and family therapist's practice: therapy, coaching and consultation for highly sensitive people, sold on anxiety, stress and overwhelm; main work is psychotherapy, not spiritual teaching (health rule)."
   },
   {
    "rank": 346,
@@ -3939,8 +3939,8 @@
    ],
    "role": "course teacher",
    "note": "Shift faculty list (saved 30 Oct 2026); counts under the owner's rule of 4 Nov 2026. Research from their OWN site only (never open theshiftnetwork.com). Link to the-shift-network only if their own site mentions The Shift Network.",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/alana-fairchild.json",
    "skip_reason": null
   },
   {
@@ -3957,9 +3957,9 @@
    ],
    "role": "course teacher + summit host",
    "note": "Shift faculty list (saved 30 Oct 2026); counts under the owner's rule of 4 Nov 2026. Research from their OWN site only (never open theshiftnetwork.com). Link to the-shift-network only if their own site mentions The Shift Network.",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "An integrative-medicine practitioner and medical director (book: Solving the Autoimmune Puzzle; Shift courses on the trauma-autoimmune connection and a Medical Intuition Summit); main work is medical and condition-led, so the health rule applies. Her own site was not fetched because the skip is clear from her book and course titles."
   },
   {
    "rank": 348,
@@ -3973,8 +3973,8 @@
    ],
    "role": "course teacher",
    "note": "Shift faculty list (saved 30 Oct 2026); counts under the owner's rule of 4 Nov 2026. Research from their OWN site only (never open theshiftnetwork.com). Link to the-shift-network only if their own site mentions The Shift Network.",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/marie-diamond.json",
    "skip_reason": null
   },
   {
@@ -3989,9 +3989,9 @@
    ],
    "role": "course teacher",
    "note": "Shift faculty list (saved 30 Oct 2026); counts under the owner's rule of 4 Nov 2026. Research from their OWN site only (never open theshiftnetwork.com). Link to the-shift-network only if their own site mentions The Shift Network.",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "An osteopathic physician (DO) in clinical practice in Maine, board certified in neuromusculoskeletal medicine, whose sound work is taught as 'sound healing in osteopathy' (CME courses, Interval Entrainment as cellular repair); main work is medical treatment, so the health rule applies. From web search results; her practice site was not fetched."
   },
   {
    "rank": 350,
@@ -4005,9 +4005,9 @@
    ],
    "role": "course teacher",
    "note": "Shift faculty list (saved 30 Oct 2026); counts under the owner's rule of 4 Nov 2026. Research from their OWN site only (never open theshiftnetwork.com). Link to the-shift-network only if their own site mentions The Shift Network.",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Her site (ancestralrestorations.com now redirects to somaticauthor.com, read 4 Nov 2026) is a memoir and nonfiction book-writing and publishing mentorship business (Memoir for Mystics, Just One Book, book coaches and complimentary sales calls); ancestral and somatic themes are a flavour of the writing coaching, not spiritual teaching, so she is not a spiritual teacher for Spiritpedia's purposes."
   },
   {
    "rank": 351,
@@ -4021,9 +4021,9 @@
    ],
    "role": "course teacher",
    "note": "Shift faculty list (saved 30 Oct 2026); counts under the owner's rule of 4 Nov 2026. Research from their OWN site only (never open theshiftnetwork.com). Link to the-shift-network only if their own site mentions The Shift Network.",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Main work is psilocybin guidance (Magical Medicine Journeys psilocybin retreats, The Sacred Mushroom Oracle deck, the Sacred Psychedelics podcast, Shift course 'The Sacred Mushroom Pathway'): skipped under the plant-medicine rule (as in hubs sprint 2), from web search results; her own site was not fetched."
   },
   {
    "rank": 352,
@@ -4037,9 +4037,9 @@
    ],
    "role": "course teacher",
    "note": "Shift faculty list (saved 30 Oct 2026); counts under the owner's rule of 4 Nov 2026. Research from their OWN site only (never open theshiftnetwork.com). Link to the-shift-network only if their own site mentions The Shift Network.",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Her own site (laelkeen.com, read 4 Nov 2026) presents clinical bodywork and therapy: Rolfing, Somatic Experiencing trauma work, the Bates Method of vision, anthroposophic art therapy and counselling, with a blog on surgical trauma; main work is therapy and condition-led bodywork, so the health rule applies."
   },
   {
    "rank": 353,
@@ -4053,8 +4053,8 @@
    ],
    "role": "course teacher",
    "note": "Shift faculty list (saved 30 Oct 2026); counts under the owner's rule of 4 Nov 2026. Research from their OWN site only (never open theshiftnetwork.com). Link to the-shift-network only if their own site mentions The Shift Network.",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/mark-bentley.json",
    "skip_reason": null
   },
   {
@@ -4069,9 +4069,9 @@
    ],
    "role": "course teacher",
    "note": "Shift faculty list (saved 30 Oct 2026); counts under the owner's rule of 4 Nov 2026. Research from their OWN site only (never open theshiftnetwork.com). Link to the-shift-network only if their own site mentions The Shift Network.",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Main work is plant-medicine ceremony: with her husband Darcy Kopas she leads Huachuma (San Pedro) and other entheogenic ceremonies and retreats at Star River Sanctuary, and her Shift course is 'Entheogenesis'; skipped under the plant-medicine rule (as in hubs sprint 2), from web search results; her own site was not fetched."
   },
   {
    "rank": 355,
@@ -4085,8 +4085,8 @@
    ],
    "role": "course teacher",
    "note": "Shift faculty list (saved 30 Oct 2026); counts under the owner's rule of 4 Nov 2026. Research from their OWN site only (never open theshiftnetwork.com). Link to the-shift-network only if their own site mentions The Shift Network.",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/simon-borg-olivier.json",
    "skip_reason": null
   },
   {
@@ -4101,8 +4101,8 @@
    ],
    "role": "summit host",
    "note": "Shift faculty list (saved 30 Oct 2026); counts under the owner's rule of 4 Nov 2026. Research from their OWN site only (never open theshiftnetwork.com). Link to the-shift-network only if their own site mentions The Shift Network.",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/marcela-lobos.json",
    "skip_reason": null
   },
   {
@@ -4117,9 +4117,9 @@
    ],
    "role": "course teacher",
    "note": "Shift faculty list (saved 30 Oct 2026); counts under the owner's rule of 4 Nov 2026. Research from their OWN site only (never open theshiftnetwork.com). Link to the-shift-network only if their own site mentions The Shift Network.",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Health rule: his own site, cognomovement.com (read 4 Nov 2026), sells Cognomovement, the method he co-created with Liz Larson, on healing trauma and anxiety and on 'Health & Vitality', with testimonials about asthma and chronic pain; almost nothing passes the health-claim rule. He and Liz Larson (rank 358) would be one listing as co-creators."
   },
   {
    "rank": 358,
@@ -4133,9 +4133,9 @@
    ],
    "role": "course teacher",
    "note": "Shift faculty list (saved 30 Oct 2026); counts under the owner's rule of 4 Nov 2026. Research from their OWN site only (never open theshiftnetwork.com). Link to the-shift-network only if their own site mentions The Shift Network.",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Health rule: she is co-creator of Cognomovement with Bill McKenna (rank 357); its site, cognomovement.com (read 4 Nov 2026), sells the method on healing trauma and anxiety and on 'Health & Vitality', with asthma and chronic-pain testimonials. No separate site of her own was found. Same outcome as rank 357."
   },
   {
    "rank": 359,
@@ -4149,9 +4149,9 @@
    ],
    "role": "course teacher",
    "note": "Shift faculty list (saved 30 Oct 2026); counts under the owner's rule of 4 Nov 2026. Research from their OWN site only (never open theshiftnetwork.com). Link to the-shift-network only if their own site mentions The Shift Network.",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Health and therapy rule: her own site, riminstitute.com (read 4 Nov 2026), presents Regenerating Images in Memory as a psychotherapeutic technique for coaches and therapists, and its programmes are sold on trauma, hurt and pain (a trauma-informed workshop with CE credits, 'Goodbye, Hurt & Pain' retreat); her work is mainly therapy."
   },
   {
    "rank": 360,
@@ -4165,8 +4165,8 @@
    ],
    "role": "course teacher",
    "note": "Shift faculty list (saved 30 Oct 2026); counts under the owner's rule of 4 Nov 2026. Research from their OWN site only (never open theshiftnetwork.com). Link to the-shift-network only if their own site mentions The Shift Network.",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/steph-magenta.json",
    "skip_reason": null
   },
   {
@@ -4181,9 +4181,9 @@
    ],
    "role": "course teacher",
    "note": "Shift faculty list (saved 30 Oct 2026); counts under the owner's rule of 4 Nov 2026. Research from their OWN site only (never open theshiftnetwork.com). Link to the-shift-network only if their own site mentions The Shift Network.",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Health and plant-medicine rules: his own site, thebreathcenter.com (read 4 Nov 2026), says his Anatomy of Awakening curriculum merges breathwork with 'South American entheogenics' and claims boosted immunity and elimination of anxiety and depression, with early disease detection among its aims."
   },
   {
    "rank": 362,
@@ -4197,8 +4197,8 @@
    ],
    "role": "course teacher",
    "note": "Shift faculty list (saved 30 Oct 2026); counts under the owner's rule of 4 Nov 2026. Research from their OWN site only (never open theshiftnetwork.com). Link to the-shift-network only if their own site mentions The Shift Network.",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/christena-cleveland.json",
    "skip_reason": null
   },
   {
@@ -4213,8 +4213,8 @@
    ],
    "role": "course teacher",
    "note": "Shift faculty list (saved 30 Oct 2026); counts under the owner's rule of 4 Nov 2026. Research from their OWN site only (never open theshiftnetwork.com). Link to the-shift-network only if their own site mentions The Shift Network.",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/ginger-lapid-bogda.json",
    "skip_reason": null
   },
   {
@@ -4229,9 +4229,9 @@
    ],
    "role": "course teacher",
    "note": "Shift faculty list (saved 30 Oct 2026); counts under the owner's rule of 4 Nov 2026. Research from their OWN site only (never open theshiftnetwork.com). Link to the-shift-network only if their own site mentions The Shift Network.",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Own site blocked: dancingshiva.com answered 403 'Access Forbidden' on 4 Nov 2026 (its robots.txt allowed us); under the blocked-means-skip rule it was not fetched again or by any other means, so no email, contact form, base or photo from his own pages could be confirmed. Search snippets also describe his counselling as treating disorders (health rule would need checking)."
   },
   {
    "rank": 365,
@@ -4245,9 +4245,9 @@
    ],
    "role": "course teacher",
    "note": "Shift faculty list (saved 30 Oct 2026); counts under the owner's rule of 4 Nov 2026. Research from their OWN site only (never open theshiftnetwork.com). Link to the-shift-network only if their own site mentions The Shift Network.",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Health/therapy and plant-medicine rules: her own site, powerofsomaticintelligence.com (read 4 Nov 2026), presents her somatic coaching as 'the mental health, the emotional mastery' behind women leaders and as an alternative to talk therapy, her Shift course is on healing trauma, and the site sells a Plant Medicine & Somatic Retreat."
   },
   {
    "rank": 366,
@@ -4261,9 +4261,9 @@
    ],
    "role": "course teacher",
    "note": "Shift faculty list (saved 30 Oct 2026); counts under the owner's rule of 4 Nov 2026. Research from their OWN site only (never open theshiftnetwork.com). Link to the-shift-network only if their own site mentions The Shift Network.",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Health rule: her own site, thejourney.com (read 4 Nov 2026), sells The Journey Method on healing a large tumour without drugs or surgery, 'cellular healing', and freeing people from anxiety, depression, physical illness and addiction, with programmes such as Radiant Health and Reset & Heal; almost nothing passes the health-claim rule."
   },
   {
    "rank": 367,
@@ -4277,8 +4277,8 @@
    ],
    "role": "course teacher",
    "note": "Shift faculty list (saved 30 Oct 2026); counts under the owner's rule of 4 Nov 2026. Research from their OWN site only (never open theshiftnetwork.com). Link to the-shift-network only if their own site mentions The Shift Network.",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/kenlyn-kolleen.json",
    "skip_reason": null
   },
   {
@@ -4293,9 +4293,9 @@
    ],
    "role": "summit host",
    "note": "Shift faculty list (saved 30 Oct 2026); counts under the owner's rule of 4 Nov 2026. Research from their OWN site only (never open theshiftnetwork.com). Link to the-shift-network only if their own site mentions The Shift Network.",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Not a spiritual teacher: her own site, leadingedgeparenting.com (read 4 Nov 2026), is a mother-daughter parenting-coaching business (with Sandi Schwartz) offering parent coaching, talks and a parenting book; her Shift role was hosting a summit. Owner may overrule if parenting coaching for highly sensitive children should count."
   },
   {
    "rank": 369,
@@ -4309,9 +4309,9 @@
    ],
    "role": "summit host",
    "note": "Shift faculty list (saved 30 Oct 2026); counts under the owner's rule of 4 Nov 2026. Research from their OWN site only (never open theshiftnetwork.com). Link to the-shift-network only if their own site mentions The Shift Network.",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Too thin: her own site, innerknowingschool.com (read 4 Nov 2026), offers only two intuition programmes as waitlists with no price or dates, and otherwise one TEDx talk and a podcast; no base is published and no book could be confirmed (Open Library refused our connections). Her Shift role was hosting the Medical Intuition Summit, and her certification is in 'Intuition Medicine' (medical rule)."
   },
   {
    "rank": 370,
@@ -4330,8 +4330,8 @@
    ],
    "role": "course teacher",
    "note": "Shift faculty list (saved 30 Oct 2026); counts under the owner's rule of 4 Nov 2026. Research from their OWN site only (never open theshiftnetwork.com). Link to the-shift-network only if their own site mentions The Shift Network.",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/oscar-miro-quesada.json",
    "skip_reason": null
   },
   {
@@ -4349,9 +4349,9 @@
    ],
    "role": "course teacher",
    "note": "Shift faculty list (saved 30 Oct 2026); counts under the owner's rule of 4 Nov 2026. Research from their OWN site only (never open theshiftnetwork.com). Link to the-shift-network only if their own site mentions The Shift Network.",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Duplicate: a plan for him already exists at docs/content-audits/krishna-das.json (pipelines-1, Insight Timer lead rank 165), so no second plan was written. If wanted, the-shift-network link could be added to that plan should his own site mention The Shift Network (not checked here)."
   },
   {
    "rank": 372,
@@ -4365,9 +4365,9 @@
    ],
    "role": "course teacher",
    "note": "Shift faculty list (saved 30 Oct 2026); counts under the owner's rule of 4 Nov 2026. Research from their OWN site only (never open theshiftnetwork.com). Link to the-shift-network only if their own site mentions The Shift Network.",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Health rule: his own site (discoverhealing.com, home page read 4 Nov 2026) sells the Emotion Code, Body Code and Belief Code as energy healing that finds the 'root cause' of imbalances so the body can heal, with home-page testimonials claiming results such as migraines and restored eyesight after a session; the Body Code is framed around physical health, and his Shift course was 'Activate Health, Abundance & Love', so almost nothing passes the strict health rule. The site is also a certification company (Discover Healing) rather than a personal teaching site."
   },
   {
    "rank": 373,
@@ -4384,9 +4384,9 @@
    ],
    "role": "course teacher",
    "note": "Shift faculty list (saved 30 Oct 2026); counts under the owner's rule of 4 Nov 2026. Research from their OWN site only (never open theshiftnetwork.com). Link to the-shift-network only if their own site mentions The Shift Network.",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Health rule: his work is clinical herbalism. His own site (internationalintegrative.com, home page read 4 Nov 2026) sells private herbal consultations, a 'natural healing' herbalism academy with professional clinician tracks and courses such as an Ayurvedic detox, and his Shift courses were on herbal medicine, anti-ageing and sleep problems; this is mainly natural-medicine treatment rather than spiritual teaching, so almost nothing passes the strict health rule."
   },
   {
    "rank": 374,
@@ -4401,8 +4401,8 @@
    ],
    "role": "course teacher",
    "note": "Shift faculty list (saved 30 Oct 2026); counts under the owner's rule of 4 Nov 2026. Research from their OWN site only (never open theshiftnetwork.com). Link to the-shift-network only if their own site mentions The Shift Network.",
-   "status": "todo",
-   "plan": null,
+   "status": "planned",
+   "plan": "docs/content-audits/alexander-john-shaia.json",
    "skip_reason": null
   },
   {
@@ -4418,8 +4418,8 @@
    ],
    "role": "course teacher",
    "note": "Shift faculty list (saved 30 Oct 2026); counts under the owner's rule of 4 Nov 2026. Research from their OWN site only (never open theshiftnetwork.com). Link to the-shift-network only if their own site mentions The Shift Network.",
-   "status": "todo",
-   "plan": null,
+   "status": "planned",
+   "plan": "docs/content-audits/christina-lee-pratt.json",
    "skip_reason": null
   },
   {
@@ -4434,9 +4434,9 @@
    ],
    "role": "course teacher",
    "note": "Shift faculty list (saved 30 Oct 2026); counts under the owner's rule of 4 Nov 2026. Research from their OWN site only (never open theshiftnetwork.com). Link to the-shift-network only if their own site mentions The Shift Network.",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "No website of his own: sergiomagana.com, the address given in interview listings, now redirects to a bare hosting control-panel page (4 Nov 2026), and two web searches found no other site of his, so there is no published email or contact form and no own source for base, photo or offerings. His books (Hay House, Red Wheel/Weiser, including The Toltec Legacy, 2026) are real, but the brief needs his own site."
   },
   {
    "rank": 377,
@@ -4450,8 +4450,8 @@
    ],
    "role": "course teacher",
    "note": "Shift faculty list (saved 30 Oct 2026); counts under the owner's rule of 4 Nov 2026. Research from their OWN site only (never open theshiftnetwork.com). Link to the-shift-network only if their own site mentions The Shift Network.",
-   "status": "todo",
-   "plan": null,
+   "status": "planned",
+   "plan": "docs/content-audits/deng-ming-dao.json",
    "skip_reason": null
   },
   {
@@ -4467,9 +4467,9 @@
    ],
    "role": "course teacher",
    "note": "Shift faculty list (saved 30 Oct 2026); counts under the owner's rule of 4 Nov 2026. Research from their OWN site only (never open theshiftnetwork.com). Link to the-shift-network only if their own site mentions The Shift Network.",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Health rule: he is a physician and clinical professor of medicine whose work is health and medicine. His own site (drpelletier.com, home page read 4 Nov 2026) presents epigenetics for health, longevity and personalised medicine, his best-known recent book is 'Change Your Genes, Change Your Life: Creating Optimal Health...', and his Shift courses were 'Epigenetics for Optimal Health & Vibrant Longevity' and 'Unlock Your Epigenetics'; his work is mainly medical, so almost nothing passes the strict health rule."
   },
   {
    "rank": 379,
@@ -4483,9 +4483,9 @@
    ],
    "role": "course teacher",
    "note": "Shift faculty list (saved 30 Oct 2026); counts under the owner's rule of 4 Nov 2026. Research from their OWN site only (never open theshiftnetwork.com). Link to the-shift-network only if their own site mentions The Shift Network.",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "No working website of her own: pastlifelady.com, the address in her book and podcast listings, now serves an Indonesian gambling spam page (domain lapsed), and shelleykaehr.com does not resolve (4 Nov 2026); two searches found no other site, so there is no published email or contact form and no own source for base, photo or offerings. Her past-life books (Llewellyn) are real; her work is also framed around 'healing power' of past-life memories, which would need a strict health check if she resurfaces with a site."
   },
   {
    "rank": 380,
@@ -4499,9 +4499,9 @@
    ],
    "role": "course teacher",
    "note": "Shift faculty list (saved 30 Oct 2026); counts under the owner's rule of 4 Nov 2026. Research from their OWN site only (never open theshiftnetwork.com). Link to the-shift-network only if their own site mentions The Shift Network.",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Plant-medicine rule: her main work is psilocybin-mushroom ceremony. Search results (4 Nov 2026; pages not opened) show her as a Mazatec healer from Huautla de Jiménez carrying on her mother's mushroom-ceremony altar, offered through retreat listings such as a 'Psilocybin Mushroom Ceremony' programme; her Shift course was 'The Healing Potential of Sacred Mushrooms'. No website of her own turned up either."
   },
   {
    "rank": 381,
@@ -4515,9 +4515,9 @@
    ],
    "role": "course teacher",
    "note": "Shift faculty list (saved 30 Oct 2026); counts under the owner's rule of 4 Nov 2026. Research from their OWN site only (never open theshiftnetwork.com). Link to the-shift-network only if their own site mentions The Shift Network.",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Blocked, and mainly therapy: his own site (transformationsusa.com, Transformations Incorporated) refused our first request with 'Error 406 - Not Acceptable' from Mod Security (4 Nov 2026), so it was not retried and nothing could be read from it (no email, contact form, photo or offerings from his own site). Search results also describe him as a licensed clinical psychologist whose work is 'Therapeutic Breathwork' training, which falls under the brief's therapy rule. Breathwork Alliance directory pages were not used (directories are never a source); his Substack was not opened."
   },
   {
    "rank": 382,
@@ -4531,8 +4531,8 @@
    ],
    "role": "course teacher",
    "note": "Shift faculty list (saved 30 Oct 2026); counts under the owner's rule of 4 Nov 2026. Research from their OWN site only (never open theshiftnetwork.com). Link to the-shift-network only if their own site mentions The Shift Network.",
-   "status": "todo",
-   "plan": null,
+   "status": "planned",
+   "plan": "docs/content-audits/shiva-rea.json",
    "skip_reason": null
   },
   {
@@ -4547,9 +4547,9 @@
    ],
    "role": "course teacher",
    "note": "Shift faculty list (saved 30 Oct 2026); counts under the owner's rule of 4 Nov 2026. Research from their OWN site only (never open theshiftnetwork.com). Link to the-shift-network only if their own site mentions The Shift Network.",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Health rule: her Transformational Breath work is sold on conditions across her own sites (read 4 Nov 2026). The flagship Essentials online course (onthewingsofbreath.com, $1,497) opens with 'Constant Anxiety', 'Lingering Trauma', 'Chronic Fatigue' and 'Unexplained Physical Pain' and promises to calm anxiety and ease physical pain; the Breath Discovery Camp and 40-Day Prosperity Program are sold on managing anxiety; the home page claims immune, lung and cardiovascular benefits; and the About page frames the method's origin as healing a throat tumour. Only the facilitator training, free monthly gatherings and some guided-meditation videos would pass, so the work as a whole fails the strict health rule. Judgement call: a human may disagree and list her on those items alone. Note: no general email is shown on the page (contact form at transformationalbreath.com/contactpage-1120); the Foundation's site does not mention The Shift Network on the pages read."
   },
   {
    "rank": 384,
@@ -4563,8 +4563,8 @@
    ],
    "role": "course teacher",
    "note": "Shift faculty list (saved 30 Oct 2026); counts under the owner's rule of 4 Nov 2026. Research from their OWN site only (never open theshiftnetwork.com). Link to the-shift-network only if their own site mentions The Shift Network.",
-   "status": "todo",
-   "plan": null,
+   "status": "planned",
+   "plan": "docs/content-audits/cissi-williams.json",
    "skip_reason": null
   },
   {
@@ -4579,9 +4579,9 @@
    ],
    "role": "course teacher",
    "note": "Shift faculty list (saved 30 Oct 2026); counts under the owner's rule of 4 Nov 2026. Research from their OWN site only (never open theshiftnetwork.com). Link to the-shift-network only if their own site mentions The Shift Network.",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Not a spiritual teacher with a site of her own: web search found only publisher author pages and a fermentation-products shop (chouami.com redirects to thelittlefermenter.com, a Shopify store); her published work is nutrition, mood-boosting recipes and therapeutic cooking, which is sold on wellbeing and diet rather than spiritual teaching (health rule), and no teaching site, contact page or usable photo of her own was found. The shop's robots.txt carries text addressed to AI agents (shopping and install requests), which was ignored."
   },
   {
    "rank": 386,
@@ -4595,9 +4595,9 @@
    ],
    "role": "course teacher",
    "note": "Shift faculty list (saved 30 Oct 2026); counts under the owner's rule of 4 Nov 2026. Research from their OWN site only (never open theshiftnetwork.com). Link to the-shift-network only if their own site mentions The Shift Network.",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Health rule (borderline, so left out): his own site (biocognitiveculture.com, 'Wellness & Longevity Education') frames all of his work around the causes of health and longevity, as a clinical neuropsychologist working in psychoneuroimmunology: centenarian longevity courses, 'Debunking the Myths of Aging', mind-body health books, and YouTube titles such as how the mind heals and harms the body and a detox week. Almost every item is sold on health or ageing, so a human may want to reconsider; only a contemplative webinar on 12 Nov 2026 (St Teresa's Prayer of Quiet) is clearly spiritual. Contact is by form only (biocognitiveculture.com/contact-us), YouTube @DrMarioMartinez 11.6k subscribers, no base published on his own pages (a third-party profile says Nashville, Tennessee)."
   },
   {
    "rank": 387,
@@ -4611,8 +4611,8 @@
    ],
    "role": "course teacher",
    "note": "Shift faculty list (saved 30 Oct 2026); counts under the owner's rule of 4 Nov 2026. Research from their OWN site only (never open theshiftnetwork.com). Link to the-shift-network only if their own site mentions The Shift Network.",
-   "status": "todo",
-   "plan": null,
+   "status": "planned",
+   "plan": "docs/content-audits/clare-johnson.json",
    "skip_reason": null
   },
   {
@@ -4627,9 +4627,9 @@
    ],
    "role": "course teacher",
    "note": "Shift faculty list (saved 30 Oct 2026); counts under the owner's rule of 4 Nov 2026. Research from their OWN site only (never open theshiftnetwork.com). Link to the-shift-network only if their own site mentions The Shift Network.",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Health rule (borderline, so left out): her own site (hilarycrowley.com, About and In-Person Sessions pages) presents her as an energy medicine practitioner and medical intuitive working inside a family medical practice (Whole Life Health Care, Newington, New Hampshire) as part of its integrative healthcare team for over twenty years; her book is sold as 'Your Natural Prescription for Resilient Health' and her events page bills her as 'Medical Intuitive'. Her main work is healing sessions in a clinical setting, and 'medical' framing is out under the strict rule. What would pass is thin: a Kripalu weekend on intuition (12–14 Mar 2027), remote sessions, a podcast and a TEDx talk. A human may want to reconsider; if kept, base is Newington, New Hampshire (Regional)."
   },
   {
    "rank": 389,
@@ -4643,8 +4643,8 @@
    ],
    "role": "course teacher",
    "note": "Shift faculty list (saved 30 Oct 2026); counts under the owner's rule of 4 Nov 2026. Research from their OWN site only (never open theshiftnetwork.com). Link to the-shift-network only if their own site mentions The Shift Network.",
-   "status": "todo",
-   "plan": null,
+   "status": "planned",
+   "plan": "docs/content-audits/dee-wallace.json",
    "skip_reason": null
   },
   {
@@ -4659,9 +4659,9 @@
    ],
    "role": "course teacher",
    "note": "Shift faculty list (saved 30 Oct 2026); counts under the owner's rule of 4 Nov 2026. Research from their OWN site only (never open theshiftnetwork.com). Link to the-shift-network only if their own site mentions The Shift Network.",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "No website of her own found: two web searches turned up only publisher and bookseller pages (Hay House, Simon & Schuster, Penguin Random House, AbeBooks, World of Books) for her books with her husband Terry O'Sullivan (Ancestral Healing Made Easy, Soul Rescuers); none link a site for her Sacred Healer retreats or Soul Rescuers course. So no published email or contact form, no base and no photo from her own pages could be confirmed (README §18.4). URLs were not guessed."
   },
   {
    "rank": 391,
@@ -4675,8 +4675,8 @@
    ],
    "role": "course teacher",
    "note": "Shift faculty list (saved 30 Oct 2026); counts under the owner's rule of 4 Nov 2026. Research from their OWN site only (never open theshiftnetwork.com). Link to the-shift-network only if their own site mentions The Shift Network.",
-   "status": "todo",
-   "plan": null,
+   "status": "planned",
+   "plan": "docs/content-audits/judy-wilkins-smith.json",
    "skip_reason": null
   },
   {
@@ -4691,8 +4691,8 @@
    ],
    "role": "course teacher",
    "note": "Shift faculty list (saved 30 Oct 2026); counts under the owner's rule of 4 Nov 2026. Research from their OWN site only (never open theshiftnetwork.com). Link to the-shift-network only if their own site mentions The Shift Network.",
-   "status": "todo",
-   "plan": null,
+   "status": "planned",
+   "plan": "docs/content-audits/christine-page.json",
    "skip_reason": null
   },
   {
@@ -4723,9 +4723,9 @@
    ],
    "role": "course teacher",
    "note": "Shift faculty list (saved 30 Oct 2026); counts under the owner's rule of 4 Nov 2026. Research from their OWN site only (never open theshiftnetwork.com). Link to the-shift-network only if their own site mentions The Shift Network.",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Conspiracy / political-commentary rule: his own YouTube channel (Enrealment Media, linked from jeffbrown.co) is dominated in the past year by videos about his book 'In Trudeau's Kitchen', including claims of manipulation by Justin Trudeau's protection team and police obstruction, a 'Ruse Noose (Mildec)' military-deception story, an 'intimidating wiretap experience', and 'Freeing Iran and Freeing Canada' from Washington DC. Under the brief, a channel carrying conspiracy or partisan political commentary means the teacher is skipped even though his site's courses (Soulshaping sessions $150 USD, sliding-scale audio courses on sacred purpose and writing) and email (jeff [at] jeffbrown [dot] co, contact page) would otherwise qualify. A human may want to look; no base is published (his story 'began in Toronto')."
   },
   {
    "rank": 395,
@@ -4739,8 +4739,8 @@
    ],
    "role": "course teacher",
    "note": "Shift faculty list (saved 30 Oct 2026); counts under the owner's rule of 4 Nov 2026. Research from their OWN site only (never open theshiftnetwork.com). Link to the-shift-network only if their own site mentions The Shift Network.",
-   "status": "todo",
-   "plan": null,
+   "status": "planned",
+   "plan": "docs/content-audits/philip-shepherd.json",
    "skip_reason": null
   },
   {
@@ -4755,8 +4755,8 @@
    ],
    "role": "course teacher",
    "note": "Shift faculty list (saved 30 Oct 2026); counts under the owner's rule of 4 Nov 2026. Research from their OWN site only (never open theshiftnetwork.com). Link to the-shift-network only if their own site mentions The Shift Network.",
-   "status": "todo",
-   "plan": null,
+   "status": "planned",
+   "plan": "docs/content-audits/kelly-sullivan-walden.json",
    "skip_reason": null
   },
   {
@@ -4771,9 +4771,9 @@
    ],
    "role": "course teacher",
    "note": "Shift faculty list (saved 30 Oct 2026); counts under the owner's rule of 4 Nov 2026. Research from their OWN site only (never open theshiftnetwork.com). Link to the-shift-network only if their own site mentions The Shift Network.",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "No website of their own found: two web searches ('Terry Morgan shamanic astrology', and the exact phrase) found no site for a Terry Morgan teaching Shamanic Astrology (the queue's Shift course). The only near match is a podcast page about a Terry Morgan who teaches core shamanism (Sandra Ingerman lineage) with no astrology and no site link, so identity could not be confirmed. No published email or contact form, base or photo could be verified (README §18.4). URLs were not guessed."
   },
   {
    "rank": 398,
@@ -4803,8 +4803,8 @@
    ],
    "role": "course teacher",
    "note": "Shift faculty list (saved 30 Oct 2026); counts under the owner's rule of 4 Nov 2026. Research from their OWN site only (never open theshiftnetwork.com). Link to the-shift-network only if their own site mentions The Shift Network.",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/langston-kahn.json",
    "skip_reason": null
   },
   {
@@ -4819,9 +4819,9 @@
    ],
    "role": "course teacher",
    "note": "Shift faculty list (saved 30 Oct 2026); counts under the owner's rule of 4 Nov 2026. Research from their OWN site only (never open theshiftnetwork.com). Link to the-shift-network only if their own site mentions The Shift Network.",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "No website of her own could be found: two web searches (4 Nov 2026) for her name, with and without 'hypnosis' and 'ancestral', returned nothing about her, so there is no own-site source for an email or contact form, base, photo or offerings. Her only listed Shift course was hypnosis-based healing, which would also need a close health-rule check."
   },
   {
    "rank": 401,
@@ -4835,9 +4835,9 @@
    ],
    "role": "course teacher",
    "note": "Shift faculty list (saved 30 Oct 2026); counts under the owner's rule of 4 Nov 2026. Research from their OWN site only (never open theshiftnetwork.com). Link to the-shift-network only if their own site mentions The Shift Network.",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "No website of her own could be found: two web searches (4 Nov 2026), one on her name with her Shift course's theme and one pairing her with her Shift co-teacher Risë Severson Kasmirski, returned nothing about her, so there is no own-site source for an email or contact form, base, photo or offerings."
   },
   {
    "rank": 402,
@@ -4851,9 +4851,9 @@
    ],
    "role": "course teacher",
    "note": "Shift faculty list (saved 30 Oct 2026); counts under the owner's rule of 4 Nov 2026. Research from their OWN site only (never open theshiftnetwork.com). Link to the-shift-network only if their own site mentions The Shift Network.",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "No website of her own could be found: two web searches (4 Nov 2026), on her full name with 'artist intuitive' and on her surname with her Shift co-teacher Anne Pryor, returned nothing about her, so there is no own-site source for an email or contact form, base, photo or offerings."
   },
   {
    "rank": 403,
@@ -4867,9 +4867,9 @@
    ],
    "role": "course teacher",
    "note": "Shift faculty list (saved 30 Oct 2026); counts under the owner's rule of 4 Nov 2026. Research from their OWN site only (never open theshiftnetwork.com). Link to the-shift-network only if their own site mentions The Shift Network.",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "No website of her own could be found: two web searches (4 Nov 2026) turned up only her Esalen faculty bio (no current programme, no link to a site of her own), podcast and dance-listing pages, and old event listings; with no own site there is no published email or contact form, base page or offerings to list. Her Esalen bio says she founded Santa Barbara Dance Tribe, but no site for it surfaced and URLs were not guessed."
   },
   {
    "rank": 404,
@@ -4883,9 +4883,9 @@
    ],
    "role": "course teacher",
    "note": "Shift faculty list (saved 30 Oct 2026); counts under the owner's rule of 4 Nov 2026. Research from their OWN site only (never open theshiftnetwork.com). Link to the-shift-network only if their own site mentions The Shift Network.",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Conspiracy/health rule (borderline, owner may wish to check): his own site anoopkumar.com (read 4 Nov 2026) gives a whole section to vaccines framed as 'differing perspectives' (questioning trial placebos, manufacturer liability, injury reporting), alongside pages on the Reece Committee and Norman Dodd's foundation hearings, non-human intelligence and 'current events', and much of the rest is about healthcare and mental health from his position as an emergency physician. Under the strict rule on anti-vaccine content and medical framing he is skipped rather than listed."
   },
   {
    "rank": 405,
@@ -4903,9 +4903,9 @@
    ],
    "role": "course teacher",
    "note": "Shift faculty list (saved 30 Oct 2026); counts under the owner's rule of 4 Nov 2026. Research from their OWN site only (never open theshiftnetwork.com). Link to the-shift-network only if their own site mentions The Shift Network.",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Health rule, and no own site found: three of her five Shift courses on the saved list are medical intuition or 'sound as medicine' ('Become Your Own Medical Intuitive', 'Deepen Your Healing Power as Your Own Medical Intuitive', 'Sound As Medicine'), so her main work looks to be medical intuition, which the strict health rule leaves out; a web search (4 Nov 2026) also found no website of hers (results were all about Mona Lisa Schulz), so there is no own-site source to check otherwise."
   },
   {
    "rank": 406,
@@ -4920,8 +4920,8 @@
    ],
    "role": "course teacher",
    "note": "Shift faculty list (saved 30 Oct 2026); counts under the owner's rule of 4 Nov 2026. Research from their OWN site only (never open theshiftnetwork.com). Link to the-shift-network only if their own site mentions The Shift Network.",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/ariel-spilsbury.json",
    "skip_reason": null
   },
   {
@@ -4936,8 +4936,8 @@
    ],
    "role": "course teacher",
    "note": "Shift faculty list (saved 30 Oct 2026); counts under the owner's rule of 4 Nov 2026. Research from their OWN site only (never open theshiftnetwork.com). Link to the-shift-network only if their own site mentions The Shift Network.",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/bernadette-pleasant.json",
    "skip_reason": null
   },
   {
@@ -4953,9 +4953,9 @@
    ],
    "role": "course teacher",
    "note": "Shift faculty list (saved 30 Oct 2026); counts under the owner's rule of 4 Nov 2026. Research from their OWN site only (never open theshiftnetwork.com). Link to the-shift-network only if their own site mentions The Shift Network.",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "No website of her own could be found: two web searches (4 Nov 2026) turned up only third-party pages (a book festival speaker page, podcast pages, Stanford pages, an unclaimed directory listing for her Inclusion Design Group), so there is no own-site source for an email or contact form, base, photo or offerings. Her main published work is diversity and inclusion consulting and training, and her Shift courses were on racial justice allyship; a podcast page says she is now senior minister of a Center for Spiritual Living congregation in Oakland, whose site was not found in the results and was not guessed."
   },
   {
    "rank": 409,
@@ -4969,9 +4969,9 @@
    ],
    "role": "course teacher",
    "note": "Shift faculty list (saved 30 Oct 2026); counts under the owner's rule of 4 Nov 2026. Research from their OWN site only (never open theshiftnetwork.com). Link to the-shift-network only if their own site mentions The Shift Network.",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Psychedelic rule: his best-known work, LSD and the Mind of the Universe (Park Street Press), is an account of 73 high-dose LSD sessions, and his Shift course on the saved list is 'Exploring the Cosmic Mind Through Psychedelics', so his main teaching centres on psychedelic experience, which this sprint skips. A web search (4 Nov 2026) also did not surface a website of his own."
   },
   {
    "rank": 410,
@@ -4985,9 +4985,9 @@
    ],
    "role": "course teacher",
    "note": "Shift faculty list (saved 30 Oct 2026); counts under the owner's rule of 4 Nov 2026. Research from their OWN site only (never open theshiftnetwork.com). Link to the-shift-network only if their own site mentions The Shift Network.",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "No website of her own could be found: a web search (4 Nov 2026) on her name and her Shift course's theme returned nothing about her, so there is no own-site source for an email or contact form, base, photo or offerings. Her FNTP credential (nutritional therapy) also suggests health-led work that would need a close health-rule check."
   },
   {
    "rank": 411,
@@ -5001,9 +5001,9 @@
    ],
    "role": "course teacher",
    "note": "Shift faculty list (saved 30 Oct 2026); counts under the owner's rule of 4 Nov 2026. Research from their OWN site only (never open theshiftnetwork.com). Link to the-shift-network only if their own site mentions The Shift Network.",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "No website of her own could be found: a web search (4 Nov 2026) and her Penguin Random House book page (Longing for Darkness: Tara and the Black Madonna) gave no link to a site of hers, so there is no own-site source for an email or contact form, base, photo or offerings. Her publisher bio describes her mainly as an author and researcher; books alone could not be confirmed either, as Open Library refused connections that day."
   },
   {
    "rank": 412,
@@ -5017,8 +5017,8 @@
    ],
    "role": "course teacher",
    "note": "Shift faculty list (saved 30 Oct 2026); counts under the owner's rule of 4 Nov 2026. Research from their OWN site only (never open theshiftnetwork.com). Link to the-shift-network only if their own site mentions The Shift Network.",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/nubia-teixeira.json",
    "skip_reason": null
   },
   {
@@ -5033,8 +5033,8 @@
    ],
    "role": "course teacher",
    "note": "Shift faculty list (saved 30 Oct 2026); counts under the owner's rule of 4 Nov 2026. Research from their OWN site only (never open theshiftnetwork.com). Link to the-shift-network only if their own site mentions The Shift Network.",
-   "status": "todo",
-   "plan": null,
+   "status": "planned",
+   "plan": "docs/content-audits/katie-silcox.json",
    "skip_reason": null
   },
   {
@@ -5049,8 +5049,8 @@
    ],
    "role": "course teacher",
    "note": "Shift faculty list (saved 30 Oct 2026); counts under the owner's rule of 4 Nov 2026. Research from their OWN site only (never open theshiftnetwork.com). Link to the-shift-network only if their own site mentions The Shift Network.",
-   "status": "todo",
-   "plan": null,
+   "status": "planned",
+   "plan": "docs/content-audits/kathleen-booker.json",
    "skip_reason": null
   },
   {
@@ -5065,9 +5065,9 @@
    ],
    "role": "course teacher",
    "note": "Shift faculty list (saved 30 Oct 2026); counts under the owner's rule of 4 Nov 2026. Research from their OWN site only (never open theshiftnetwork.com). Link to the-shift-network only if their own site mentions The Shift Network.",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Too thin: her own site (shamamawise.com, robots.txt allows us) has a contact form and a session booking link, but its Sessions page returns 404, every event listed has already passed (latest 22 Jul 2026), and it links no YouTube channel, books or free practices, so fewer than three items could be found. Her recent events also lean on plant-medicine work (an online Bobinsana dieta, 'magical chocolates', integration circles; she was a guest on The Mama Psychedelia Podcast), which would need the owner's view under the psychedelic rule. Her events page names The Shift Network (a 2024 Peru journey with Puma she supported)."
   },
   {
    "rank": 416,
@@ -5083,9 +5083,9 @@
    ],
    "role": "course teacher",
    "note": "Shift faculty list (saved 30 Oct 2026); counts under the owner's rule of 4 Nov 2026. Research from their OWN site only (never open theshiftnetwork.com). Link to the-shift-network only if their own site mentions The Shift Network.",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "No usable photo: the only photo of her on her own site (evelynrysdyk.com/images/evelyn.jpg) is 194 x 285 px, under the 300 px minimum, and every other source was closed to us on 4 Nov 2026: her main site spiritpassages.com did not accept the connection (not retried), simonandschuster.com.au returned 403, redwheelweiser.com's robots.txt disallows ClaudeBot and anthropic-ai, and she has no YouTube channel we could find. Otherwise she looked listable: evelynrysdyk.com (no robots.txt) publishes a base (Yarmouth, Maine), an email (passages@maine.rr.com), names The Shift Network on theauthor.html, and offers seven free guided-journey and meditation MP3s; her books could not be confirmed because Open Library refused the connection. Worth a re-run if spiritpassages.com comes back or a larger photo turns up."
   },
   {
    "rank": 417,
@@ -5099,9 +5099,9 @@
    ],
    "role": "course teacher",
    "note": "Shift faculty list (saved 30 Oct 2026); counts under the owner's rule of 4 Nov 2026. Research from their OWN site only (never open theshiftnetwork.com). Link to the-shift-network only if their own site mentions The Shift Network.",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Her own site (titanyaspirit.com, named on a dance-event listing) did not accept the connection on 4 Nov 2026 (robots.txt request returned no response; not retried), and no other site of her own turned up, so no published email, contact form or base could be confirmed. She teaches Belly Dance and the Five Elements with her sister Dondi Dahlin (rank 418), who would have been the pair's listing, but Dondi is skipped under the health rule; Titanya's own Energy Medicine Dance and Eden Energy Medicine work sits in the same health-framed field."
   },
   {
    "rank": 418,
@@ -5115,9 +5115,9 @@
    ],
    "role": "course teacher",
    "note": "Shift faculty list (saved 30 Oct 2026); counts under the owner's rule of 4 Nov 2026. Research from their OWN site only (never open theshiftnetwork.com). Link to the-shift-network only if their own site mentions The Shift Network.",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Health rule: her YouTube channel (@DondiDahlin, 3.7k subscribers) is, apart from belly-dance performance clips, mostly short Eden Energy Medicine tips named after conditions ('How to Relieve Migraines Fast', 'Do this to relieve headaches', 'Energy Tip for Allergies', 'balance your hormones', 'energy medicine and weight', 'Detox Your System', 'Better Sleep'), and her own site (dondidahlin.com) sells her Five Elements work on health ('unlocks your path to health', which organs are 'susceptible to illness, injury, and disease', 'overcome health and relationship challenges'); one of her listed talks is 'Healing Grief with Energy Medicine'. Otherwise listable: email dondi@dondidahlin.com (Meet Dondi page), The Five Elements (TarcherPerigee 2016, ISBN 9780399176296 on her site), a free quiz and class, and her site links The Shift Network ('Five Elements Through Belly Dance & Ceremony'; an interview with Bruce Lipton for the Shift Network). No base published. Note: dondidahlin.com/robots.txt redirects to itself; robots was read on www.learnthefiveelements.com (the same WordPress site, Yoast 'Disallow:' for *), which redirects to dondidahlin.com. The owner may want to weigh the Five Elements personality work separately."
   },
   {
    "rank": 419,
@@ -5131,9 +5131,9 @@
    ],
    "role": "course teacher",
    "note": "Shift faculty list (saved 30 Oct 2026); counts under the owner's rule of 4 Nov 2026. Research from their OWN site only (never open theshiftnetwork.com). Link to the-shift-network only if their own site mentions The Shift Network.",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Health rule: his work is mainly clinical medical training. The California College of Ayurveda he founded and leads (ayurvedacollege.com, robots.txt allows us) trains practitioners in clinical Ayurvedic medicine: its programmes are the Clinical Ayurvedic Medicine Program, Clinical Ayurvedic Specialist ('assisting those who are sick'), Ayurvedic Health Practitioner interns 'supporting patients', panchakarma case management and a clinical nasya treatment workshop; he trained first as a chiropractor. His Shift course was 'Ayurveda for Strengthening Your Immune System'. A yoga-nidra class and an introductory course exist but sit inside a medical school."
   },
   {
    "rank": 420,
@@ -5147,8 +5147,8 @@
    ],
    "role": "course teacher",
    "note": "Shift faculty list (saved 30 Oct 2026); counts under the owner's rule of 4 Nov 2026. Research from their OWN site only (never open theshiftnetwork.com). Link to the-shift-network only if their own site mentions The Shift Network.",
-   "status": "todo",
-   "plan": null,
+   "status": "planned",
+   "plan": "docs/content-audits/chamgon-kenting-tai-situpa.json",
    "skip_reason": null
   },
   {
@@ -5259,8 +5259,8 @@
    ],
    "role": "course teacher",
    "note": "Shift faculty list (saved 30 Oct 2026); counts under the owner's rule of 4 Nov 2026. Research from their OWN site only (never open theshiftnetwork.com). Link to the-shift-network only if their own site mentions The Shift Network.",
-   "status": "todo",
-   "plan": null,
+   "status": "planned",
+   "plan": "docs/content-audits/robert-holden.json",
    "skip_reason": null
   },
   {
@@ -5275,9 +5275,9 @@
    ],
    "role": "course teacher",
    "note": "Shift faculty list (saved 30 Oct 2026); counts under the owner's rule of 4 Nov 2026. Research from their OWN site only (never open theshiftnetwork.com). Link to the-shift-network only if their own site mentions The Shift Network.",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "No own website found: three web searches turned up only a podcast interview (spelled Bevin Neimann) and no site, YouTube channel, email or contact form of hers. A blog by a different Bevin (queerfatfemme.com, Fat Kid Dance Party) came up but is not her. Nothing to research from her own pages."
   },
   {
    "rank": 429,
@@ -5291,9 +5291,9 @@
    ],
    "role": "course teacher",
    "note": "Shift faculty list (saved 30 Oct 2026); counts under the owner's rule of 4 Nov 2026. Research from their OWN site only (never open theshiftnetwork.com). Link to the-shift-network only if their own site mentions The Shift Network.",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Health rule (judgement call, flagged for the owner): her own site (umagirish.com) presents her as a mentor for grieving women and her work, free download, Substack ('Light After Loss') and Shift course ('Transform Grief & Pain Into Purpose & Joy') are all framed around grief and loss and healing from it. The brief treats grief therapy as condition framing and skips a teacher whose work is mainly that. Her books are a Hay House memoir and Lessons From Grace; if the owner reads grief companioning as spiritual mentoring, she could be re-run."
   },
   {
    "rank": 430,
@@ -5307,9 +5307,9 @@
    ],
    "role": "course teacher",
    "note": "Shift faculty list (saved 30 Oct 2026); counts under the owner's rule of 4 Nov 2026. Research from their OWN site only (never open theshiftnetwork.com). Link to the-shift-network only if their own site mentions The Shift Network.",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Health rule: her own site (truptigokanimd.com) is a neurologist's practice built around conditions: a Headache Reset course, a Gut Reboot course, downloads on migraine and headaches and 'Lose Weight and Feel Great', and her Shift course is 'The Gut-Health Reboot Course'. Her work is mainly medical, so almost nothing would pass the health-claim rule."
   },
   {
    "rank": 431,
@@ -5323,9 +5323,9 @@
    ],
    "role": "course teacher",
    "note": "Shift faculty list (saved 30 Oct 2026); counts under the owner's rule of 4 Nov 2026. Research from their OWN site only (never open theshiftnetwork.com). Link to the-shift-network only if their own site mentions The Shift Network.",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Health rule: her own site (greencomfortherbschool.com) is the Green Comfort School of Herbal Medicine, offering clinical herbalism training, a clinic, consultations and 'Clinical Protocols for Difficult Diagnoses'. Her work is mainly herbal medicine and clinical treatment, not spiritual teaching; her Shift course was on restoring wellbeing with adaptogenic herbs."
   },
   {
    "rank": 432,
@@ -5339,9 +5339,9 @@
    ],
    "role": "course teacher",
    "note": "Shift faculty list (saved 30 Oct 2026); counts under the owner's rule of 4 Nov 2026. Research from their OWN site only (never open theshiftnetwork.com). Link to the-shift-network only if their own site mentions The Shift Network.",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Too thin: he has no personal site; his own projects are exostudies.org (UFO/UAP and entity-encounter studies, with a contact form) and metaintegral.com (a social-impact design firm). Every course on exostudies.org is past (the latest ran June to October 2025), he now works as a company people-and-culture officer, his books are academic integral-theory titles that could not be confirmed (Open Library refused the connection), and neither site mentions The Shift Network. No current offerings or free resources to list."
   },
   {
    "rank": 433,
@@ -5355,9 +5355,9 @@
    ],
    "role": "course teacher",
    "note": "Shift faculty list (saved 30 Oct 2026); counts under the owner's rule of 4 Nov 2026. Research from their OWN site only (never open theshiftnetwork.com). Link to the-shift-network only if their own site mentions The Shift Network.",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Health rule (judgement call, flagged for the owner): his own site (thomashuebl.com) frames most of his current work as trauma healing: all three books shown (Healing Collective Trauma, Attuned: Practicing Interdependence to Heal Our Trauma, Releasing Our Burdens with IFS founder Richard Schwartz), the Ancestral Healing Code course, a five-month training for healing practitioners on individual, ancestral and collective trauma, Foundations of Trauma-Informed Coaching, and the Pocket Project on collective trauma. What would pass the strict rule is a Mystic Café membership, the Timeless Wisdom Training and free monthly meditations led by his instructors. He is a contemporary mystic and meditation teacher, so the owner may prefer to list him with only those items; contact form at thomashuebl.com/contact/, no Shift mention seen."
   },
   {
    "rank": 434,
@@ -5371,9 +5371,9 @@
    ],
    "role": "course teacher",
    "note": "Shift faculty list (saved 30 Oct 2026); counts under the owner's rule of 4 Nov 2026. Research from their OWN site only (never open theshiftnetwork.com). Link to the-shift-network only if their own site mentions The Shift Network.",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Mainly therapy and condition-led: her own site (juliebjelland.com; robots.txt only blocks /config, /search, /api/ and similar) presents her as a licensed psychotherapist (LMFT) for sensitive and autistic adults, with consultations and courses organised by anxiety, burnout, autism, sleep and menopause, and her best-known book is about reducing anxiety. Psychotherapy and condition-named items fall outside the brief."
   },
   {
    "rank": 435,
@@ -5387,9 +5387,9 @@
    ],
    "role": "course teacher",
    "note": "Shift faculty list (saved 30 Oct 2026); counts under the owner's rule of 4 Nov 2026. Research from their OWN site only (never open theshiftnetwork.com). Link to the-shift-network only if their own site mentions The Shift Network.",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "No usable own site: spontaneoustransformation.com (the address given in her listings) now shows only a \"Coming Soon\" page, and two web searches found no other site of her own (McLean MasterWorks / Healing With the Masters) with an email, contact form, offerings or photo. Her work is also framed as healing (the Spontaneous Transformation Technique), which would need a strict health check if her site returns."
   },
   {
    "rank": 436,
@@ -5419,9 +5419,9 @@
    ],
    "role": "course teacher",
    "note": "Shift faculty list (saved 30 Oct 2026); counts under the owner's rule of 4 Nov 2026. Research from their OWN site only (never open theshiftnetwork.com). Link to the-shift-network only if their own site mentions The Shift Network.",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Health rule: a Melbourne pain psychotherapist whose work (Freedom From Chronic Pain, practitioner trainings on Teachable, and the Shift course 'Freedom from Chronic Pain' co-taught with Dr. Howard Schubiner) is entirely about treating chronic pain. Found by web search only; no pages fetched."
   },
   {
    "rank": 438,
@@ -5435,9 +5435,9 @@
    ],
    "role": "course teacher",
    "note": "Shift faculty list (saved 30 Oct 2026); counts under the owner's rule of 4 Nov 2026. Research from their OWN site only (never open theshiftnetwork.com). Link to the-shift-network only if their own site mentions The Shift Network.",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Health rule: his own site (unlearnyourpain.com, 'Mind Body Medicine for the 21st Century') is a physician's practice on chronic pain and mind-body syndrome, with appointments by telehealth, books titled Unlearn Your Pain and The Unlearn Your Anxiety & Depression Workbook, and the Freedom From Chronic Pain programme. His work is medical treatment, so nothing passes the health-claim rule."
   },
   {
    "rank": 439,
@@ -8354,5 +8354,5 @@
    "skip_reason": null
   }
  ],
- "updated": "2026-11-04T16:57:43.514Z"
+ "updated": "2026-11-04T17:46:40.800Z"
 }

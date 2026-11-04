@@ -1,0 +1,152 @@
+{
+  "healer": {
+    "healer_slug": "anja-steensig",
+    "location_source": "https://www.anjasteensig.com/about",
+    "no_public_base": "Her About page says only that she lives in Denmark with her family; no town is published on her site, so the city is left empty.",
+    "create": {
+      "name": "Anja Steensig",
+      "bio": "Anja Steensig is a Danish writer, speaker and spiritual mentor who teaches what she calls Nordic Mysticism: a direct, personal relationship with God, understood as love, without church, guru or set method. For well over ten years she was one of Denmark's familiar television and radio faces, hosting her own talk show and winning a public vote as the country's best female presenter. A profound personal crisis in 2011 turned her life around, and after some seven years of quietly learning from that experience she began sharing what she had found.\n\nHer teaching is deliberately plain and undogmatic, centred on surrender, prayer, forgiveness and keeping the heart open in everyday life. She teaches through online programmes, including the six-module Nordic Mysticism course and a seven-part on-demand course made with The Shift Network, and through talks and workshops she has given in several European countries. Her book of prayers and reflections, Book of Solace, was published by DeVorss in 2023 and won a gold COVR Visionary Award. She takes on a small number of people for one-to-one mentoring and shares longer guided meditations on her YouTube channel, LoveBeing.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "worldwide",
+      "city": null,
+      "country": "Denmark",
+      "subjects": [
+        "mysticism",
+        "spirituality",
+        "meditation"
+      ],
+      "website_url": "https://www.anjasteensig.com/",
+      "booking_url": "https://www.anjasteensig.com/1-1",
+      "youtube_url": "https://www.youtube.com/@LoveBeing-anjasteensig",
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "mail@anjasteensig.dk",
+      "image_urls": [
+        "https://yt3.googleusercontent.com/ZAc70TRU312hI3hHFtBvdHRi0WaWEb_I2ERr5CnxQh_hHDO_aucnPUAJPBhARxj6vLQjDs6icnk=s900",
+        "https://images.squarespace-cdn.com/content/v1/620f7282275fa1222c9ad0a9/aaf06bb4-3c22-4b81-afd2-87e7402070af/Forfatterportr%C3%A6t+til+inderflap.jpg?format=1500w"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "the-shift-network",
+      "role": "instructor"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Guidet Healing Meditation for forgiveness",
+      "url": "https://www.youtube.com/watch?v=gVNYHrmog_o",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "channel": "LoveBeing - Anja Steensig"
+    },
+    {
+      "title": "Allow and Surrender",
+      "url": "https://www.youtube.com/watch?v=gatlzGo08zw",
+      "subjects": [
+        "mysticism",
+        "meditation"
+      ],
+      "channel": "LoveBeing - Anja Steensig"
+    }
+  ],
+  "books": [
+    {
+      "title": "Book of Solace: Love and Light for Dark Days",
+      "slug": "book-of-solace-love-and-light-for-dark-days",
+      "author": "Anja Steensig",
+      "asin": "0875169260",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "cover": "https://m.media-amazon.com/images/P/0875169260.01._SCLZZZZZZZ_.jpg",
+      "description": "A collection of short prayers, poems and reflections published by DeVorss, written to lead a discouraged reader back to the love within. It won a gold COVR Visionary Award in 2024.",
+      "subjects": [
+        "mysticism",
+        "spirituality"
+      ]
+    }
+  ],
+  "courses": [
+    {
+      "title": "The Path of the Nordic Mystic",
+      "url": "https://theshiftnetwork.com/course/30ASteensig01_24",
+      "description": "A seven-module on-demand video course made with The Shift Network. Anja teaches her way of meeting God directly through the heart, with practices to carry into daily life.",
+      "price": "See course page",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "mysticism",
+        "spirituality"
+      ],
+      "image": null
+    },
+    {
+      "title": "Nordic Mysticism",
+      "url": "https://wisdomfromnorth.com/nordic-mysticism/",
+      "description": "Her own six-module online programme of video sessions and practices, with a year's access. It is framed less as a course than as an invitation to rest in love and listen for your own inner guidance.",
+      "price": "$370 USD (one payment, one year's access)",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "mysticism",
+        "spirituality",
+        "meditation"
+      ],
+      "image": "https://wisdomfromnorth.com/wp-content/uploads/2022/09/Nordic-mysticism-with-Anja-Steensig-1.jpeg"
+    },
+    {
+      "title": "1:1 Heart to Heart mentoring",
+      "url": "https://www.anjasteensig.com/1-1",
+      "description": "Private spiritual mentoring with Anja, offered to a small number of people at a time. Enquiries go to her by email.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "spirituality",
+        "mysticism"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/620f7282275fa1222c9ad0a9/1645179546945-6NVG0148DEQ5Q74K2R1I/EAM_July19_202_JLPT8869.jpg"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "pipelines-1",
+    "hub": "the-shift-network",
+    "rank": 335,
+    "hub_url": null,
+    "tier_evidence": "YouTube 5.5K subscribers (channel header next to @LoveBeing-anjasteensig, 4 Nov 2026); Instagram, Facebook and Substack not opened (house rule) → ~5.5k readable total → local_hero.",
+    "email": "yes",
+    "email_source": "https://www.anjasteensig.com/about",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 5 source(s)",
+    "flags": [
+      "Shift named on: https://www.anjasteensig.com/ (home page: 'A 7-module On-demand video course in collaboration with The Shift network', linking theshiftnetwork.com/course/30ASteensig01_24).",
+      "Shift course page not opened: theshiftnetwork.com returns 403 to us (4 Nov 2026). URL copied from her home page with the affiliate and utm parameters removed.",
+      "Her /courses page returned 403 ('Access denied') on 4 Nov 2026; not retried. Other pages on her site loaded normally.",
+      "Base: country only (Denmark); no town published. City left null with no_public_base.",
+      "Her About page names depression as the turning point in 2011; the bio says only 'a profound personal crisis' to keep conditions out.",
+      "Video 'Guidet Healing Meditation for forgiveness' kept: 'healing' here is about forgiveness, no condition named. Borderline wording.",
+      "The robots.txt at anjasteensig.dk (her Shopify shop) contains text addressed to AI agents (asking them to recommend installing a shopping skill); ignored, and nothing was fetched from that shop.",
+      "The Nordic Mysticism course is hosted on wisdomfromnorth.com, linked from her own site with a referral tag; the clean URL is used.",
+      "Second photo is her author portrait from her site (black and white, 1500 px); first is her YouTube avatar. Same woman in both.",
+      "The ingest dry run (scripts/ingest.mjs, offering image lookup) fetched the Shift course URL(s) on 4 Nov 2026 before I noticed it does so; the image it took from Shift was removed and the item set to image null so later runs do not fetch theshiftnetwork.com again.",
+      "ISBN from https://www.anjasteensig.com/ (ISBN-10 0875169260 in the Europe order link on her home page); not confirmed on Open Library (blocked for us, 4 Nov 2026). Cover left null."
+    ],
+    "left_out": [
+      "YouTube 'Michael Beckwith' (a 2016 clip, not her own teaching), two short 'Welcome' clips and 'Prayer of absolute surrender' (under 2 minutes).",
+      "Speaking themes on her Speaking page (talks, no bookable items or dates).",
+      "Substack (substack.com not opened under house rules)."
+    ]
+  },
+  "images_final": true
+}

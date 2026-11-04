@@ -1,0 +1,122 @@
+{
+  "healer": {
+    "healer_slug": "lisa-venable",
+    "location_source": "https://www.lisavenable.com",
+    "create": {
+      "name": "Lisa Venable",
+      "bio": "Lisa Venable is a teacher, author and storyteller in Minneapolis, Minnesota, whose work grows out of A Course in Miracles. She trained in child development and later took a master's degree in counselling psychotherapy, and for more than twenty-five years she has given workshops and talks for colleges, community groups and care settings; she has also taught as adjunct faculty at the Adler Graduate School and campaigned for young children's needs.\n\nAt the heart of her teaching is what she calls spiritual self-talk: noticing the fearful, critical voice of the ego and learning to hear a quieter, loving inner guidance instead. She teaches this through an online course with a workbook, a self-care programme for caregivers and helping professionals that carries continuing-education credit, and one-to-one sessions on Zoom for people seeking spiritual guidance. Her guided meditations on themes from the Course, such as forgiveness, innocence and letting go of fear, are free on Insight Timer. She is the author of God for President, a parable about love as the basis of public life, and Messages from Love, and as 'Grammy Lisa' she writes and records stories for small children about kindness and courage.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local_online",
+      "city": "Minneapolis, Minnesota",
+      "country": "United States",
+      "subjects": [
+        "spirituality",
+        "meditation",
+        "channelled-teachings"
+      ],
+      "website_url": "https://www.lisavenable.com",
+      "booking_url": "https://www.lisavenable.com",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "lisaven22@gmail.com",
+      "image_urls": [
+        "https://img1.wsimg.com/isteam/ip/116424d2-bd99-49ce-a982-39b4ee1396dd/Lisa%20Self%20Prof.jpg"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "insight-timer",
+      "role": "instructor"
+    }
+  ],
+  "videos": [],
+  "books": [
+    {
+      "title": "God for President: A Parable about the Power of Love",
+      "slug": "god-for-president",
+      "author": "Lisa Venable",
+      "asin": "1573243698",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "A short novel imagining a nation run on cooperation and care rather than competition, written from the outlook of A Course in Miracles. First self-published in 2004 and reissued by Red Wheel/Weiser in 2008.",
+      "subjects": [
+        "spirituality",
+        "channelled-teachings"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1573243698.01._SCLZZZZZZZ_.jpg"
+    }
+  ],
+  "courses": [
+    {
+      "title": "Spiritual Guidance Sessions with Lisa (Zoom)",
+      "url": "https://www.lisavenable.com",
+      "description": "One-to-one sessions on Zoom for people wanting to listen more closely to their own inner guidance, drawing on A Course in Miracles. Booked by email.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "spirituality",
+        "channelled-teachings"
+      ],
+      "image": "https://img1.wsimg.com/isteam/ip/116424d2-bd99-49ce-a982-39b4ee1396dd/Lisa%20Self%20Prof.jpg"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Lisa Venable on Insight Timer",
+      "url": "https://insighttimer.com/lisaven22",
+      "description": "Her Insight Timer profile, with guided meditations on themes from A Course in Miracles such as forgiveness, oneness and letting go of fear. The tracks are free to play.",
+      "featured": true,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation",
+        "channelled-teachings"
+      ],
+      "image": "https://img1.wsimg.com/isteam/ip/116424d2-bd99-49ce-a982-39b4ee1396dd/Lisa%20Self%20Prof.jpg"
+    },
+    {
+      "title": "Be Kind! Be Brave! Be Green! Stories for Young Children",
+      "url": "https://open.spotify.com/album/30UjW7CqDwzmHVmwlQz9fb",
+      "description": "Lisa's audio stories for pre-school children, featuring Mr. Green Pony, about courage, kindness and friendship with nature. Free to stream.",
+      "featured": false,
+      "resource_type": "download",
+      "subjects": [
+        "spirituality"
+      ],
+      "image": "https://i.scdn.co/image/ab67616d0000b27307f414d67b0a2027bd2d1458"
+    }
+  ],
+  "sprint": {
+    "sprint": "pipelines-1",
+    "hub": "insight-timer",
+    "rank": 111,
+    "hub_url": "https://insighttimer.com/lisaven22",
+    "tier_evidence": "Insight Timer 2.1k followers (queue entry, read 1 Nov 2026); no YouTube, Instagram or X linked from her site; Facebook pages (Messages from Love, God for President) not opened (facebook.com off limits) → ~2.1k readable → local_hero",
+    "email": "yes",
+    "email_source": "https://www.lisavenable.com",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 1 source(s)",
+    "flags": [
+      "Thin listing (4 items): her site is a single page, so the Spiritual Self-Talk online course and the CEU self-care course have no URL of their own and are only described in the bio; the one offering uses the home page URL.",
+      "Only one photo (her profile photo on her site, 2560x1920); no other source to cross-check.",
+      "Subjects: 'channelled-teachings' chosen because her work is built on A Course in Miracles (a channelled text); a human may prefer 'spirituality' alone.",
+      "Her site calls the Zoom sessions 'healing sessions' (healing with Spirit); listed as spiritual guidance, with no health wording. One testimonial on her page mentions anxiety medication; not used.",
+      "Book confirmed on Open Library: https://openlibrary.org/isbn/1573243698 (God for President, Red Wheel/Weiser 2008).",
+      "The children's stories resource is a Spotify album linked from her site."
+    ],
+    "left_out": [
+      "Messages from Love: A Course in Spiritual Self-Talk (book): no ISBN found on her site or Open Library.",
+      "The Magical Adventures of Mr. Green Pony (book): children's book, no ISBN found on Open Library.",
+      "Spiritual Self-Talk Online Course and Mindful Self Care CEU course: no page or price of their own ('contact Lisa to sign up').",
+      "Art cards on Fine Art America: merchandise, not teaching."
+    ]
+  },
+  "images_final": true
+}

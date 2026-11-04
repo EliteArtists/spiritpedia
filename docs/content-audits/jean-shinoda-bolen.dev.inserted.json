@@ -1,0 +1,39 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 843,
+    "healer_slug": "jean-shinoda-bolen"
+  },
+  "rows": [
+    {
+      "table": "videos",
+      "id": 7462,
+      "slug": "becoming-who-you-are-meant-to-be-with-jean-shinoda-bolen-md",
+      "title": "Becoming Who You Are Meant to Be with Jean Shinoda Bolen, MD"
+    },
+    {
+      "table": "courses",
+      "id": "92afdfd9-b13a-4319-920a-0c29c6fb2726",
+      "slug": "path-of-the-soul",
+      "title": "Path of the Soul"
+    },
+    {
+      "table": "courses",
+      "id": "3589c64b-de66-4fbc-aeb8-14c19157d867",
+      "slug": "making-meaning-of-the-numinous",
+      "title": "Making Meaning of the Numinous"
+    },
+    {
+      "table": "courses",
+      "id": "8d3a3450-1e07-4f5b-805c-e918bb73972b",
+      "slug": "catching-fire-imagination-creativity-activism",
+      "title": "Catching Fire: Imagination, Creativity, Activism"
+    },
+    {
+      "table": "hub_teachers",
+      "id": "3c80e895-358a-4227-b442-789461d6f32d",
+      "title": "jean-shinoda-bolen teaches at The Shift Network"
+    }
+  ],
+  "at": "2026-11-04T17:46:24.178Z"
+}

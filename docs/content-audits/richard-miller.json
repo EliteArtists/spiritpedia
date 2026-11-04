@@ -1,0 +1,182 @@
+{
+  "healer": {
+    "healer_slug": "richard-miller",
+    "location_source": null,
+    "no_public_base": "His own site (explorationsinstillness.com) gives no home town; the iRest Institute's site, which the queue took San Rafael from, rate-limited us on 4 Nov 2026 and was not fetched again, so the base could not be confirmed.",
+    "create": {
+      "name": "Dr. Richard Miller",
+      "bio": "Dr. Richard Miller is an American clinical psychologist and yogic scholar who has taught meditation for more than fifty years, drawing on Advaita Vedanta, Kashmir Shaivism, Tantra, Taoism and Buddhism and setting them beside Western psychology. He created Integrative Restoration, known as iRest, a modern form of the old yogic practice of yoga nidra, and founded the iRest Institute to train teachers in it. He also helped found the International Association of Yoga Therapists and was the first editor of its journal.\n\nIn recent years his own teaching has centred on nondual meditation, which he now offers through Explorations in Stillness. Its aim, as he frames it, is less self-improvement than recognising a wholeness that is already present beneath thought and effort, approached both directly and step by step through guided practice and self-inquiry. He leads year-long online study groups, silent and residential retreats in California and further afield, and a self-paced course on pranayama for yoga teachers and practitioners. His books with Sounds True include Yoga Nidra: The Meditative Heart of Yoga and a revised edition built around the iRest method, and his guided practices are widely shared on Insight Timer.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "worldwide",
+      "city": null,
+      "country": null,
+      "subjects": [
+        "non-duality",
+        "meditation",
+        "yoga"
+      ],
+      "website_url": "https://www.explorationsinstillness.com/",
+      "booking_url": "https://www.explorationsinstillness.com/all-courses",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": null,
+      "image_urls": [
+        "https://images.squarespace-cdn.com/content/v1/696abdccb4ab8214f848f39d/34bcbf67-3be6-47bc-a679-0ff9025d785e/RolfGibbs+003.jpg",
+        "https://images.squarespace-cdn.com/content/v1/696abdccb4ab8214f848f39d/797a027a-e872-4ad9-b0cf-48fd99733049/RolfGibbs+034.jpg"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "insight-timer",
+      "role": "instructor"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Reflections on the path to healing, Richard Miller",
+      "url": "https://www.youtube.com/watch?v=ZPM0vJmOTXA",
+      "subjects": [
+        "non-duality",
+        "consciousness"
+      ],
+      "channel": "Science and Nonduality"
+    },
+    {
+      "title": "The Awakening and Healing Power of Yoga Nidra by Richard C. Miller, PhD",
+      "url": "https://www.youtube.com/watch?v=mzj_x3kBF1c",
+      "subjects": [
+        "yoga",
+        "meditation",
+        "spiritual-awakening"
+      ],
+      "channel": "Indica Yoga"
+    },
+    {
+      "title": "Interactive Workshop: iRest Yoga Nidra Living, Healing and Dying In Wholeness - Richard Miller, PhD",
+      "url": "https://www.youtube.com/watch?v=JAMlp_0oYXg",
+      "subjects": [
+        "meditation",
+        "death-the-afterlife",
+        "non-duality"
+      ],
+      "channel": "Stanford Contemplation by Design"
+    },
+    {
+      "title": "iPause 3.24 iRest Yoga Nidra with Richard Miller, PhD",
+      "url": "https://www.youtube.com/watch?v=x6-D_h-CVZs",
+      "subjects": [
+        "meditation",
+        "yoga"
+      ],
+      "channel": "Stanford Contemplation by Design"
+    },
+    {
+      "title": "DR RICHARD MILLER \"YOGA NIDRA AND EMOTIONS AS MESSENGERS\"",
+      "url": "https://www.youtube.com/watch?v=2RnVrNMWagU",
+      "subjects": [
+        "yoga",
+        "meditation"
+      ],
+      "channel": "Deconstructing Sentience"
+    }
+  ],
+  "books": [
+    {
+      "title": "Yoga Nidra: The Meditative Heart of Yoga",
+      "slug": "yoga-nidra-the-meditative-heart-of-yoga",
+      "author": "Richard Miller",
+      "asin": "1591793793",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "His first Sounds True book on yoga nidra, presenting the practice as a path of self-inquiry rooted in nondual teaching rather than only a relaxation method. It comes with guided recordings.",
+      "subjects": [
+        "yoga",
+        "meditation",
+        "non-duality"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1591793793.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "Yoga Nidra: The iRest Meditative Practice for Deep Relaxation and Healing",
+      "slug": "yoga-nidra-the-irest-meditative-practice",
+      "author": "Richard Miller",
+      "asin": "1683648978",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "A revised edition of his yoga nidra guide, rebuilt around the stages of the iRest method. It leads readers through the practice step by step towards resting in their essential nature.",
+      "subjects": [
+        "yoga",
+        "meditation"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1683648978.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "Resting in Stillness: Integrative Restoration - iRest Yoga Nidra",
+      "slug": "resting-in-stillness",
+      "author": "Richard Miller",
+      "asin": "1893099091",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "An earlier, shorter guide to the iRest form of yoga nidra published by Anahata Press. It sets out the practice and the thinking behind it.",
+      "subjects": [
+        "yoga",
+        "meditation"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1893099091.01._SCLZZZZZZZ_.jpg"
+    }
+  ],
+  "courses": [],
+  "free_resources": [
+    {
+      "title": "Dr. Richard Miller on Insight Timer",
+      "url": "https://insighttimer.com/richardmiller",
+      "description": "His free guided iRest yoga nidra and meditation practices on the Insight Timer app.",
+      "featured": true,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation",
+        "yoga"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/696abdccb4ab8214f848f39d/34bcbf67-3be6-47bc-a679-0ff9025d785e/RolfGibbs+003.jpg"
+    }
+  ],
+  "sprint": {
+    "sprint": "pipelines-1",
+    "hub": "insight-timer",
+    "rank": 163,
+    "hub_url": "https://insighttimer.com/richardmiller",
+    "tier_evidence": "Insight Timer 18k followers (queue entry, read 1 Nov 2026); no personal YouTube channel found; iRest Institute's social accounts are the organisation's (not counted) and were not opened → ~18k readable total → local_hero",
+    "tier_override": null,
+    "email": "contact form",
+    "email_source": null,
+    "contact_form_url": "https://www.explorationsinstillness.com/contact",
+    "bio_check": "OK: no 8-word runs against 19 source(s)",
+    "flags": [
+      "Possible editorial stature: founder of iRest and long-standing nondual author with Sounds True; owner may want a higher tier (no override applied).",
+      "Robots/agent text: shop.irest.org's robots.txt contains instructions addressed to AI agents (install a shopping skill, use their MCP endpoint); ignored.",
+      "shop.irest.org returned 'local_rate_limited' on 4 Nov 2026 after a few pages; not retried. All research then done from his own site explorationsinstillness.com.",
+      "The iRest Institute site is largely sold on conditions (pages on depression, anxiety, chronic pain, trauma, sleep, military settings); his own site Explorations in Stillness is centred on nondual meditation, so he is listed on that basis. A human may want to confirm.",
+      "No offerings: every dated retreat on his calendar has passed, the 2026-27 year-long course began on 26 Feb 2026, and the Breathing for Life course was left out (see left_out). Listing rests on videos, books and Insight Timer.",
+      "Videos are from other channels where he is the sole speaker: Science and Nonduality, Indica Yoga, Stanford Contemplation by Design, Deconstructing Sentience.",
+      "Open Library: https://openlibrary.org/books/OL8857199M.json (1591793793), https://openlibrary.org/books/OL36007130M.json (1683648978, no cover), https://openlibrary.org/books/OL37770067M.json (1893099091, no cover).",
+      "Photos (two portraits by Rolf Gibbs) from his own site; same man in both, consistent with the site's About page."
+    ],
+    "left_out": [
+      "Breathing for Life: Pranayama for Health, Healing, and Self-Realization ($599 USD, self-paced): course page promises resilience against stress and anxiety and nervous-system regulation; borderline, left out.",
+      "2026-2027 Explorations in Stillness year-long course ($899 USD): began 26 Feb 2026.",
+      "Retreats (Oceanside May 2026, Costa Rica and Danville July 2026, Alberta Oct 2026): all passed.",
+      "The iRest Program for Healing PTSD (book) and 42 iRest Yoga Nidra Meditations (based on that book): health rule.",
+      "iRest Meditation: Restorative Practices for Health, Healing, and Well-Being: ISBN not confirmed on Open Library.",
+      "iRest Institute trainings: organisation's programmes, mostly taught by other faculty, and site rate-limited."
+    ]
+  },
+  "images_final": true
+}

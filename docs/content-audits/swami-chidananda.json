@@ -1,0 +1,121 @@
+{
+  "healer": {
+    "healer_slug": "swami-chidananda",
+    "location_source": null,
+    "no_public_base": "His own sites (swami.love, justlovepilgrimage.com, linkpop.com/swami) publish no town or country; he teaches online and leads pilgrimages abroad. The queue's 'Elmira, New York' (a Bhakti Marga ashram location) is not confirmed on his own pages.",
+    "create": {
+      "name": "Swami Chidananda",
+      "bio": "Swami Chidananda is a monk in the Hari Bhakta Vedic lineage, initiated by his guru Paramahamsa Vishwananda, the founder of Bhakti Marga. Before taking monastic vows he worked in finance, on mergers and acquisitions in investment banking, and he often draws on that working life when he speaks about bringing spiritual practice into busy modern routines. His title of Swami marks his formal place within the order.\n\nThe heart of his teaching is bhakti, the path of devotion, which he presents less as a set of ideas than as a lived relationship with the Divine grounded in love. He teaches mantra chanting as a daily practice: members of his online community are given a personal mantra with an explanation of its meaning, short teaching videos, and the chance to chant with him live in a group chat when he is not travelling, as well as one-to-one guidance. On his podcast, Path of a Swami, he talks about meditation, devotion and the Bhagavad Gita. He also leads small pilgrimages, by application, to holy places in India such as the Himalayan north, combining temple visits with daily spiritual practice, and shares guided practices on Insight Timer.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "worldwide",
+      "city": null,
+      "country": null,
+      "subjects": [
+        "meditation",
+        "ancient-wisdom",
+        "spirituality"
+      ],
+      "website_url": "https://www.swami.love",
+      "booking_url": "https://www.swami.love/community",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "info@swami.love",
+      "image_urls": [
+        "https://images.squarespace-cdn.com/content/v1/642e05ad42f8fd2b843ed25e/81c53e48-f76a-4fd8-80c2-f339972cad52/4b5be6bda8ba8dc9714712fc9a1a62a3.jpeg",
+        "https://images.squarespace-cdn.com/content/v1/642e05ad42f8fd2b843ed25e/cb0bf2f2-a60f-43a7-b3c2-4582ab2075c2/Love_pilmgrinage_all-545.jpg"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "insight-timer",
+      "role": "instructor"
+    }
+  ],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Spiritual Journey, Shared Together: Swami Chidananda's Patreon Community",
+      "url": "https://www.patreon.com/swamichidananda/membership",
+      "description": "An online membership for learning a daily mantra chanting practice. Members receive teaching videos and a personal mantra with its meaning, can chant live with Swami in a private group chat, are included in monthly prayers and can ask for one-to-one guidance.",
+      "price": "See membership page",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "ancient-wisdom"
+      ],
+      "image": "https://www.patreon.com/ig/card-teaser-image/creator/14009109.png?v=cyvnni"
+    },
+    {
+      "title": "10-Day Journey to India's High North",
+      "url": "https://www.justlovepilgrimage.com/march2027",
+      "description": "A ten-day pilgrimage with Swami Chidananda to sacred caves and temples of the Indian Himalaya, with daily spiritual practice along the way. Places are by application, and the cost is sent on request.",
+      "price": "Contact for pricing",
+      "product_type": "retreat",
+      "start_date": "2027-03-14",
+      "end_date": "2027-03-23",
+      "subjects": [
+        "spirituality",
+        "ancient-wisdom"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/65d93078be31a8689d21f88f/1768240846186-019AF0JLE1PM5O4VHOZ6/unsplash-image-dXqbPIiJvYc.jpg"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Swami Chidananda on Insight Timer",
+      "url": "https://insighttimer.com/swamichidananda",
+      "description": "Swami Chidananda's free Insight Timer page, where his talks, mantra chanting and guided practices can be played in the app or a web browser at no cost.",
+      "featured": true,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation",
+        "ancient-wisdom"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/642e05ad42f8fd2b843ed25e/81c53e48-f76a-4fd8-80c2-f339972cad52/4b5be6bda8ba8dc9714712fc9a1a62a3.jpeg"
+    },
+    {
+      "title": "Path of a Swami Podcast",
+      "url": "https://open.spotify.com/show/7z1Aj1jqZjfTA2jep2hqOa",
+      "description": "Swami Chidananda's free podcast of talks on devotion, meditation and yogic scripture, with episodes on the Bhagavad Gita.",
+      "featured": false,
+      "resource_type": "practice",
+      "subjects": [
+        "spirituality",
+        "ancient-wisdom"
+      ],
+      "image": "https://i.scdn.co/image/ab6765630000ba8ad526ad60a93f1481ffacfae3"
+    }
+  ],
+  "sprint": {
+    "sprint": "pipelines-1",
+    "hub": "insight-timer",
+    "rank": 140,
+    "hub_url": "https://insighttimer.com/swamichidananda",
+    "tier_evidence": "Insight Timer 4.4k followers (queue entry, read 1 Nov 2026); Instagram @swami_chidananda linked but not opened; no YouTube channel found on his pages → ~4.4k total → local_hero",
+    "email": "yes",
+    "email_source": "https://www.justlovepilgrimage.com/march2027",
+    "contact_form_url": "https://www.swami.love/",
+    "bio_check": "OK: no 8-word runs against 8 source(s)",
+    "flags": [
+      "The queue's website (linkpop.com/swami) is a link page; his own site is swami.love. The queue's contact form URL (courses.bhaktimarga.us/swamichidananda) now returns 404; swami.love has a contact form on its home page and info@swami.love is published on the pilgrimage page.",
+      "Patreon membership: link copied from his site, Patreon not opened, so no price.",
+      "Photos: two from swami.love and his pilgrimage site show a monk in orange robes with a shaved head, tied-back hair and beard; not captioned, but they are the only portraits on his own pages. One (outdoor at sunset) may be a styled or edited image.",
+      "Podcast resource type set to 'practice' for want of a podcast type.",
+      "Possible overlap with the Bhakti Marga organisation (his guru's movement); listed as an individual teacher."
+    ],
+    "left_out": [
+      "Swami.love links for About and Podcast pages return 404; the Bhakti Marga course page also 404.",
+      "Kriya initiation and ashram visits (named in the queue entry): not on his own pages.",
+      "No YouTube videos or books found."
+    ]
+  },
+  "images_final": true
+}

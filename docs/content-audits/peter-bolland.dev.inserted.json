@@ -1,0 +1,39 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 815,
+    "healer_slug": "peter-bolland"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "fbaeb098-fc50-4756-9420-0395fae659c1",
+      "slug": "the-great-philosophers-jean-paul-sartre",
+      "title": "The Great Philosophers: Jean-Paul Sartre"
+    },
+    {
+      "table": "courses",
+      "id": "27696ada-062b-4007-ae68-b1791c536823",
+      "slug": "the-great-philosophers-albert-camus",
+      "title": "The Great Philosophers: Albert Camus"
+    },
+    {
+      "table": "free_resources",
+      "id": "a2258fa8-1b96-454b-a707-a8e2ec7fce79",
+      "slug": "peter-bolland-on-insight-timer",
+      "title": "Peter Bolland on Insight Timer"
+    },
+    {
+      "table": "free_resources",
+      "id": "5a169cb4-5a3e-4b31-bba0-b99388c788ac",
+      "slug": "the-seven-stone-path-workbook",
+      "title": "The Seven Stone Path Workbook"
+    },
+    {
+      "table": "hub_teachers",
+      "id": "8dbc069d-c84e-42fb-82ff-dbfbe987334e",
+      "title": "peter-bolland teaches at Insight Timer"
+    }
+  ],
+  "at": "2026-11-04T17:31:03.158Z"
+}

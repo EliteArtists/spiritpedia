@@ -1,0 +1,223 @@
+{
+  "healer": {
+    "healer_slug": "athena-monet",
+    "location_source": "https://www.seasideshaman.com/contact",
+    "create": {
+      "name": "Athena Monet",
+      "bio": "Athena Monet is a shamanic practitioner who works as the Seaside Shaman from Lewes, on the Delaware coast. She trained in interior architecture at Ohio State and spent about ten years in commercial design in Washington, DC, before moving to the shore. A period of bereavement and ill health there led her to a local medicine woman, and that meeting turned her towards shamanic work, drawing on a sense of second sight she says runs in the women of her family. She has since studied with Sandra Ingerman and in past-life regression with Brian Weiss.\n\nHer approach is informal and humorous, aimed mainly at women in the middle of a big life change. One-to-one sessions, held remotely or in person, use shamanic journeying with helping spirits, soul and destiny retrieval, cord release and regression, and end with practical next steps. She also runs online trainings for people developing their own spiritual practice, teaches Usui Reiki, hosts a weekly online circle she calls Soul Medicine, and leads seasonal women's day retreats at a camp near Lewes that mix sound, gentle yoga, breath, journaling and ceremony. Short talks on her YouTube channel cover seasonal intentions, manifesting and knowing when to let go.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local_online",
+      "city": "Lewes, Delaware",
+      "country": "United States",
+      "subjects": [
+        "shamanism",
+        "manifestation",
+        "reiki"
+      ],
+      "website_url": "https://www.seasideshaman.com",
+      "booking_url": "https://www.seasideshaman.com/services",
+      "youtube_url": "https://www.youtube.com/@theseasideshaman",
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "info@seasideshaman.com",
+      "image_urls": [
+        "https://yt3.googleusercontent.com/ZFPnpA327IV7zzhae4nFp_1E-VBEbL7SMImALthqDtgU96KcsqxyedjBP2eoAVZTrXnOxEJkQQ=s900-c-k-c0x00ffffff-no-rj",
+        "https://images.squarespace-cdn.com/content/v1/6339a304fe260346db1dbb1d/5e715629-bad8-4129-b55a-3b7e1d9028f8/Athena+red+top+photo.png"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "insight-timer",
+      "role": "instructor"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Seaside Shaman What is a shaman",
+      "url": "https://www.youtube.com/watch?v=m3Y3FTKUsQs",
+      "subjects": [
+        "shamanism"
+      ],
+      "channel": "The Seaside Shaman"
+    },
+    {
+      "title": "How to know when it's time to leave a relationship",
+      "url": "https://www.youtube.com/watch?v=_vrdptkLYpI",
+      "subjects": [
+        "conscious-relationships"
+      ],
+      "channel": "The Seaside Shaman"
+    },
+    {
+      "title": "Purging and Disconnecting This Season to Create Space for the New",
+      "url": "https://www.youtube.com/watch?v=Uv6rhkEouFs",
+      "subjects": [
+        "manifestation",
+        "spirituality"
+      ],
+      "channel": "The Seaside Shaman"
+    },
+    {
+      "title": "Creating Your Garden of Heaven on Earth - Spring Manifesting Guide Pt#1 of 4 - Make a Decision",
+      "url": "https://www.youtube.com/watch?v=vm4oQA9u_Z0",
+      "subjects": [
+        "manifestation"
+      ],
+      "channel": "The Seaside Shaman"
+    },
+    {
+      "title": "Words of Wisdom for 2024",
+      "url": "https://www.youtube.com/watch?v=A871Ud1Xums",
+      "subjects": [
+        "spirituality"
+      ],
+      "channel": "The Seaside Shaman"
+    },
+    {
+      "title": "Seaside Shaman Spring Energy refresh",
+      "url": "https://www.youtube.com/watch?v=nivLjsbHiwo",
+      "subjects": [
+        "energy-medicine",
+        "shamanism"
+      ],
+      "channel": "The Seaside Shaman"
+    }
+  ],
+  "books": [],
+  "courses": [
+    {
+      "title": "Breakthrough Sessions",
+      "url": "https://www.seasideshaman.com/services",
+      "description": "Private sessions of one or two hours, remote or in Lewes, in which Athena journeys with her helping spirits on the question you bring. Session types include soul retrieval, destiny retrieval, cord release and ancestral or past-life regression, and each ends with a plan for what to do next.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "shamanism"
+      ],
+      "image": "http://static1.squarespace.com/static/6339a304fe260346db1dbb1d/t/638e34df8aa1c84a043f44f4/1670264031235/Logo_SeasideShaman_2023_1000x1000.png?format=1500w"
+    },
+    {
+      "title": "Breakthrough by Email",
+      "url": "https://www.seasideshaman.com/shop/p/breakthrough-by-email",
+      "description": "You send up to five questions and Athena replies within three days with a private recorded reading of ten to fifteen minutes plus a transcript. There is no live call, so it suits anyone who wants a short reading in their own time.",
+      "price": "$55 USD",
+      "product_type": "download",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "shamanism",
+        "soul-purpose"
+      ],
+      "image": "http://static1.squarespace.com/static/6339a304fe260346db1dbb1d/65431207c1623968465a81fa/683e043521ba4c0a94531540/1787992195001/2021+02-1383.jpg?format=1500w"
+    },
+    {
+      "title": "Integrative Shaman Training",
+      "url": "https://www.seasideshaman.com/integrative-shaman-training",
+      "description": "A twelve-week live online training for people who already work as readers, mediums or energy practitioners. It covers channelling, soul retrieval, ancestral work and the Akashic records, with recordings, a printable manual and a private group; new dates are still to be announced.",
+      "price": "$495 USD (or two payments of $250 USD)",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "shamanism",
+        "akashic-records",
+        "channelled-teachings"
+      ],
+      "image": "http://static1.squarespace.com/static/6339a304fe260346db1dbb1d/t/6631cc4ac0cf1226770f0c47/1694573814132/15_DT_Athena_Allread_Maria_DeForrest.JPG?format=1500w"
+    },
+    {
+      "title": "The Autumn Exhale Retreat",
+      "url": "https://www.seasideshaman.com/fall-retreat",
+      "description": "A one-day women's retreat at Camp Arrowhead near Lewes for slowing down as the year turns. The day moves through an opening circle, gentle movement and breath, a guided practice among the trees, journaling, quiet time and a shared lunch.",
+      "price": "$225 USD",
+      "product_type": "retreat",
+      "start_date": "2026-11-13",
+      "end_date": "2026-11-13",
+      "subjects": [
+        "shamanism",
+        "breathwork"
+      ],
+      "image": "http://static1.squarespace.com/static/6339a304fe260346db1dbb1d/t/638e34df8aa1c84a043f44f4/1670264031235/Logo_SeasideShaman_2023_1000x1000.png?format=1500w"
+    },
+    {
+      "title": "Glow Through The Snow Winter Day Retreat",
+      "url": "https://www.seasideshaman.com/winter-retreat",
+      "description": "A winter day for women at Camp Arrowhead in Lewes with a sound bath, fireside yoga, journaling, a beach or labyrinth walk and an afternoon shamanic journey. It closes with intention setting, art journaling and a fireside ceremony.",
+      "price": "$225 USD",
+      "product_type": "retreat",
+      "start_date": "2027-01-09",
+      "end_date": "2027-01-09",
+      "subjects": [
+        "shamanism",
+        "sound-healing",
+        "yoga"
+      ],
+      "image": "http://static1.squarespace.com/static/6339a304fe260346db1dbb1d/t/65b05e1a65eea235b725787b/1708195055143/Work%2Bwith%2Bme%2Bimage%2B-%2Bwalking%2B-%2Blarge%2B%25286%2529.jpg?format=1500w"
+    },
+    {
+      "title": "Embody the Goddess Retreat 2027",
+      "url": "https://www.seasideshaman.com/goddess-retreat",
+      "description": "Athena's yearly women's gathering at Camp Arrowhead, given over this time to living more fully in the body. Expect sound, breath, gentle and chair yoga, guided movement, creative work and shamanic journeying, at whatever pace suits you.",
+      "price": "$225 USD early bird; $275 USD after 31 January",
+      "product_type": "retreat",
+      "start_date": "2027-03-27",
+      "end_date": "2027-03-27",
+      "subjects": [
+        "shamanism",
+        "breathwork",
+        "yoga"
+      ],
+      "image": "http://static1.squarespace.com/static/6339a304fe260346db1dbb1d/t/638e34df8aa1c84a043f44f4/1670264031235/Logo_SeasideShaman_2023_1000x1000.png?format=1500w"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Athena Monet on Insight Timer",
+      "url": "https://insighttimer.com/seasideshaman",
+      "description": "Athena's free Insight Timer page, where her guided shamanic journeys and talks can be played in the app or a web browser at no cost.",
+      "featured": true,
+      "resource_type": "meditation",
+      "subjects": [
+        "shamanism",
+        "meditation"
+      ],
+      "image": "https://yt3.googleusercontent.com/ZFPnpA327IV7zzhae4nFp_1E-VBEbL7SMImALthqDtgU96KcsqxyedjBP2eoAVZTrXnOxEJkQQ=s900-c-k-c0x00ffffff-no-rj"
+    }
+  ],
+  "sprint": {
+    "sprint": "pipelines-1",
+    "hub": "insight-timer",
+    "rank": 129,
+    "hub_url": "https://insighttimer.com/seasideshaman",
+    "tier_evidence": "Insight Timer 641 followers (queue entry, read 1 Nov 2026); YouTube @theseasideshaman 130 subscribers (channel header, 4 Nov 2026); Instagram @theseasideshaman and Facebook counts not readable without logging in (not opened) → ~771 total → local_hero",
+    "email": "yes",
+    "email_source": "https://www.seasideshaman.com/contact",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 14 source(s)",
+    "flags": [
+      "Regional: Lewes, Delaware (small coastal town; her published business address is in Lewes and her retreats are at Camp Arrowhead, Lewes).",
+      "Photos: YouTube avatar and the 'Athena red top photo' from her site show the same woman (same tattoo on the upper arm). A third photo named athena.jpg on her home page looked like a stock image and was not used. The second photo has a decorative white border with gold flecks.",
+      "Health rule, borderline: her site frames much of the work as healing (trauma, grief, a feminine bloodline workshop naming genetic disease, infertility and anxiety). Those items are left out; my descriptions avoid healing claims. Her YouTube channel has 5 of 19 condition-named videos (trauma, depression, anxiety, suicide, constipation): not most of it, so she is listed, but a human may want to look.",
+      "Embody the Goddess page heads with 27 March 2027 but its details box says 'March 27th, 2025' (an old date left in); 2027 used.",
+      "She says on her About page she has taught at the Omega Institute, but no current Omega programme is shown, so no Omega hub link.",
+      "Instagram and Facebook links found on her site but not opened (off limits), so left null.",
+      "Ingest dry run: Lewes, Delaware is not in places (under 5,000 people); needs a place alias for Near You."
+    ],
+    "left_out": [
+      "Emerging Shaman Training: the current 8-week round began 26 October 2026 (already started).",
+      "Workshops page (Shamanic Identity Attunement, Quantum Alignment, Feminine Activation & Ancestral Healing, Spring Equinox Activation): dates without a year, and the ancestral workshop names genetic disease, infertility, anxiety and trauma (health rule).",
+      "Usui Reiki I and Prosperous Shaman trainings: no dates or prices seen.",
+      "Soul Medicine membership (soulmedicine.studio, a separate site): not fetched, kept to her main site.",
+      "Free Breakthrough Toolkit: given only in exchange for a newsletter sign-up.",
+      "YouTube videos naming trauma, depression, anxiety, suicide or constipation (health rule); retreat promo clips (under 3 minutes, promotional).",
+      "She calls herself an author but no book was found."
+    ]
+  },
+  "images_final": true
+}

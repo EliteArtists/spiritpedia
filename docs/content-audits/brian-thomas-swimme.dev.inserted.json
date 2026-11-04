@@ -1,0 +1,40 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 827,
+    "healer_slug": "brian-thomas-swimme"
+  },
+  "rows": [
+    {
+      "table": "books",
+      "id": 1893,
+      "slug": "cosmogenesis-an-unveiling-of-the-expanding-universe",
+      "title": "Cosmogenesis: An Unveiling of the Expanding Universe"
+    },
+    {
+      "table": "free_resources",
+      "id": "ef8b90e4-baed-4254-9f8b-4d4ec7ee9fea",
+      "slug": "the-powers-of-the-universe",
+      "title": "The Powers of the Universe"
+    },
+    {
+      "table": "free_resources",
+      "id": "7b6f2d08-15c2-4feb-b983-8a82f1e8b0b7",
+      "slug": "canticle-to-the-cosmos",
+      "title": "Canticle to the Cosmos"
+    },
+    {
+      "table": "free_resources",
+      "id": "59461b12-5fb5-4fd5-bebe-62b902e4ec80",
+      "slug": "the-earths-imagination",
+      "title": "The Earth's Imagination"
+    },
+    {
+      "table": "free_resources",
+      "id": "11ac8169-746d-4668-bb76-de8480cfed92",
+      "slug": "the-hidden-heart-of-the-cosmos",
+      "title": "The Hidden Heart of the Cosmos"
+    }
+  ],
+  "at": "2026-11-04T17:42:32.323Z"
+}

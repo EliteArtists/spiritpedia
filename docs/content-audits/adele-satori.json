@@ -1,0 +1,125 @@
+{
+  "healer": {
+    "healer_slug": "adele-satori",
+    "location_source": null,
+    "no_public_base": "Her site (craftingthespirit.com) and her Linktree publish no town or country; sessions are held over video call. The queue's 'Los Angeles' could not be confirmed on her own pages, so it is left empty.",
+    "create": {
+      "name": "Adele Satori",
+      "bio": "Adele Satori is a musician, writer and artist who teaches meditation as a 500-hour authorised teacher of Instinctive Meditation, an approach that invites people to follow what feels natural and restful to them instead of fixed postures, mantras or efforts to empty the mind. Her own practice reconnected her with parts of herself she had set aside, and she now brings the same spirit of curiosity to others, treating music, walking in nature, drawing or a remembered moment as possible doorways into meditation.\n\nThrough her project Crafting the Spirit she offers one-to-one meditation coaching by video call, beginning with a free consultation and continuing with hour-long sessions or shorter refreshers, as well as guidance for couples, groups and teams. She also leads sound experiences with acoustic and electronic instruments for gatherings, and classes that use creative practice as a way of finding out more about oneself and one's purpose. Her ambient and meditative music, including improvisations and a piece built on The Radiance Sutras, is shared on Insight Timer, where she has been a featured musician, on YouTube and on Bandcamp, and she writes regularly about creativity and attention on her blog.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "worldwide",
+      "city": null,
+      "country": null,
+      "subjects": [
+        "meditation",
+        "sound-healing"
+      ],
+      "website_url": "https://craftingthespirit.com/",
+      "booking_url": "https://craftingthespirit.com/services-2/",
+      "youtube_url": "https://www.youtube.com/@adelesatori4728",
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "adelesatori@gmail.com",
+      "image_urls": [
+        "https://craftingthespirit.com/wp-content/uploads/2024/05/315290617_10160474246858537_7714354052663205684_n.jpg"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "insight-timer",
+      "role": "instructor"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Sutra 16, The Radiance Sutras",
+      "url": "https://www.youtube.com/watch?v=AdGKrdMTdkc",
+      "subjects": [
+        "meditation"
+      ],
+      "channel": "Adele Satori"
+    }
+  ],
+  "books": [],
+  "courses": [
+    {
+      "title": "One-Hour Meditation Coaching Session",
+      "url": "https://cal.com/adele-satori-knoukk/one-hour-meditation-coaching-session",
+      "description": "A one-to-one hour by video call to explore a meditation practice suited to you, in the Instinctive Meditation approach. Booked after a free 30-minute introductory call.",
+      "price": "$100 USD",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://cal.com/api/social/og/image?type=meeting&title=Single+one-hour+meditation+coaching+session&meetingProfileName=Adele+Satori&meetingImage=https%3A%2F%2Flh3.googleusercontent.com%2Fa%2FACg8ocJqY6BjCo0iY0rvPauTZi_m8dWmY8ayRg20du5udbz-lW65Z0bm3A%3Ds96-c&names=Adele+Satori&usernames=adele-satori-knoukk&v=84f5340f"
+    },
+    {
+      "title": "30-Minute Meditation Refresh",
+      "url": "https://cal.com/adele-satori-knoukk/30-minue-refresh",
+      "description": "A shorter session by video call to rest and re-tune your practice, for people who have already had a full session with Adele.",
+      "price": "$50 USD",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://cal.com/api/social/og/image?type=meeting&title=30+Minute+Refresh&meetingProfileName=Adele+Satori&meetingImage=https%3A%2F%2Flh3.googleusercontent.com%2Fa%2FACg8ocJqY6BjCo0iY0rvPauTZi_m8dWmY8ayRg20du5udbz-lW65Z0bm3A%3Ds96-c&names=Adele+Satori&usernames=adele-satori-knoukk&v=84f5340f"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Adele Satori on Insight Timer",
+      "url": "https://insighttimer.com/craftngthespirit",
+      "description": "Her Insight Timer profile, with her ambient music and guided meditations. The tracks are free to play.",
+      "featured": true,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation",
+        "sound-healing"
+      ],
+      "image": "https://craftingthespirit.com/wp-content/uploads/2024/05/315290617_10160474246858537_7714354052663205684_n.jpg"
+    },
+    {
+      "title": "Free 30-Minute Initial Consultation",
+      "url": "https://cal.com/adele-satori-knoukk/30min",
+      "description": "A free half-hour video call to talk about what you are looking for in meditation and whether working together suits you.",
+      "featured": false,
+      "resource_type": "workshop",
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://cal.com/api/social/og/image?type=meeting&title=30+min+curiosity+call&meetingProfileName=Adele+Satori&meetingImage=https%3A%2F%2Flh3.googleusercontent.com%2Fa%2FACg8ocJqY6BjCo0iY0rvPauTZi_m8dWmY8ayRg20du5udbz-lW65Z0bm3A%3Ds96-c&names=Adele+Satori&usernames=adele-satori-knoukk&v=84f5340f"
+    }
+  ],
+  "sprint": {
+    "sprint": "pipelines-1",
+    "hub": "insight-timer",
+    "rank": 113,
+    "hub_url": "https://insighttimer.com/craftngthespirit",
+    "tier_evidence": "Insight Timer 270 followers (queue entry, read 1 Nov 2026); YouTube @adelesatori4728 43 subscribers (channel header, 4 Nov 2026); Instagram @alien_stepchild not read (instagram.com off limits) → ~0.3k readable → local_hero",
+    "email": "yes",
+    "email_source": "https://craftingthespirit.com/contact/",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 7 source(s)",
+    "flags": [
+      "Thin listing (5 items, one of them a free consultation call); her YouTube is mostly ambient music, so only one video (a Radiance Sutras reading) is used.",
+      "No base published on her own site or Linktree; queue said Los Angeles. no_public_base set.",
+      "Second photo is her Linktree avatar (547 px), same woman as the photo on her About page; the YouTube avatar (hands over face) was not used.",
+      "Lead, 4 Nov 2026: Linktree photo removed. linktr.ee's robots.txt says Disallow: / for '*', the group that applies to our curl fetches, so its pages shouldn't have been fetched (research slip, reported)."
+    ],
+    "left_out": [
+      "Sound Experiences and Classes: no page, dates or price of their own (enquire by email).",
+      "Events page: none listed.",
+      "YouTube music videos and sound baths (music-only).",
+      "Bandcamp album: music."
+    ]
+  },
+  "images_final": true
+}

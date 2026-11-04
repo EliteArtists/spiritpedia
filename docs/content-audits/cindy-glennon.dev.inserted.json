@@ -1,0 +1,39 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 812,
+    "healer_slug": "cindy-glennon"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "2b458f6c-b9b0-423a-b5f9-9450165ed429",
+      "slug": "all-access-yoga-video-library",
+      "title": "All Access Yoga Video Library"
+    },
+    {
+      "table": "courses",
+      "id": "9d4af11b-2c94-4fad-869a-667eaadfc821",
+      "slug": "yoga-video-bundles",
+      "title": "Yoga Video Bundles"
+    },
+    {
+      "table": "courses",
+      "id": "a3016828-585c-4ac0-ae7f-7438f40b7a88",
+      "slug": "private-yoga-and-meditation-sessions",
+      "title": "Private Yoga and Meditation Sessions"
+    },
+    {
+      "table": "free_resources",
+      "id": "af0b665d-9cbc-4d6f-be7a-331d74c8f08e",
+      "slug": "cindy-glennon-on-insight-timer",
+      "title": "Cindy Glennon on Insight Timer"
+    },
+    {
+      "table": "hub_teachers",
+      "id": "5ce0f4e4-c140-46ab-a84a-9c1f7df6d987",
+      "title": "cindy-glennon teaches at Insight Timer"
+    }
+  ],
+  "at": "2026-11-04T17:30:39.449Z"
+}

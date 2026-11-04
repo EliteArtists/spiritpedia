@@ -1,0 +1,39 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 787,
+    "healer_slug": "lisa-venable"
+  },
+  "rows": [
+    {
+      "table": "books",
+      "id": 1874,
+      "slug": "god-for-president",
+      "title": "God for President: A Parable about the Power of Love"
+    },
+    {
+      "table": "courses",
+      "id": "562466f6-763a-462c-b50b-788bfb0481b5",
+      "slug": "spiritual-guidance-sessions-with-lisa-zoom",
+      "title": "Spiritual Guidance Sessions with Lisa (Zoom)"
+    },
+    {
+      "table": "free_resources",
+      "id": "aab9a979-cfe8-4fdd-a6f2-b95ea4214d99",
+      "slug": "lisa-venable-on-insight-timer",
+      "title": "Lisa Venable on Insight Timer"
+    },
+    {
+      "table": "free_resources",
+      "id": "47eaceaf-8996-4e5b-af1c-91d625ee7a3b",
+      "slug": "be-kind-be-brave-be-green-stories-for-young-children",
+      "title": "Be Kind! Be Brave! Be Green! Stories for Young Children"
+    },
+    {
+      "table": "hub_teachers",
+      "id": "6f8f6830-cffe-400e-b4f1-4db9c92ad4cb",
+      "title": "lisa-venable teaches at Insight Timer"
+    }
+  ],
+  "at": "2026-11-04T17:27:25.515Z"
+}

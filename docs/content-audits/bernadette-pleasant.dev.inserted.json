@@ -1,0 +1,51 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 846,
+    "healer_slug": "bernadette-pleasant"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "6520872c-d3ca-4e67-b945-0a516374afbc",
+      "slug": "the-emotional-tour",
+      "title": "The Emotional Tour"
+    },
+    {
+      "table": "courses",
+      "id": "799ad91f-0279-40fa-9450-ac8a225644be",
+      "slug": "sacred-grief-rituals-online",
+      "title": "Sacred Grief Rituals (Online)"
+    },
+    {
+      "table": "courses",
+      "id": "6892fbdb-6340-41e3-b335-af29e9b7ed68",
+      "slug": "sacred-grief-ritual-guidebook-pdf",
+      "title": "Sacred Grief Ritual Guidebook (PDF)"
+    },
+    {
+      "table": "courses",
+      "id": "c05d858c-e7fd-434b-9f0c-0214624a1535",
+      "slug": "tei-teacher-training-and-certification",
+      "title": "TEI Teacher Training and Certification"
+    },
+    {
+      "table": "courses",
+      "id": "77890056-b1ef-4f15-bf39-379c370f7fa8",
+      "slug": "kauai-private-retreat",
+      "title": "Kauai Private Retreat"
+    },
+    {
+      "table": "free_resources",
+      "id": "0e5ad272-1926-45ad-a6db-a2997c82f0e2",
+      "slug": "the-heart-of-storytelling",
+      "title": "The HEART of Storytelling"
+    },
+    {
+      "table": "hub_teachers",
+      "id": "befd49ed-5be6-40b4-a812-bb4b96a7411e",
+      "title": "bernadette-pleasant teaches at The Shift Network"
+    }
+  ],
+  "at": "2026-11-04T17:46:34.960Z"
+}

@@ -1,0 +1,123 @@
+{
+  "healer": {
+    "healer_slug": "cindy-glennon",
+    "location_source": "https://www.cindyglennonwellness.com/schedule",
+    "create": {
+      "name": "Cindy Glennon",
+      "bio": "Cindy Glennon is a yoga and meditation teacher on the North Shore of Massachusetts. She holds the 500-hour yoga teaching qualification, having trained first with Jacqui Bonwell and then with Willa Worsfold, and has further certification in yoga nidra, yin yoga and meditation from Sagel Urlacher, along with study of anatomy and functional movement. She is also a second-degree Reiki practitioner and has been taking part in a nature-centred mentorship with the Gaia Wisdom School. Before teaching she spent about twenty years in office roles in science and healthcare companies, after degrees in biology, neuroscience and public health.\n\nHer teaching is gentle and exploratory, moving between body, breath and the subtler layers of experience, and she likes to tie practice to the seasons and the rhythms of nature. Alongside studio classes in her area, she teaches small groups at her home studio and gives private sessions for individuals and families. Her online library holds more than eighty recorded classes, from five-minute pieces to ninety-minute yin practices, sold singly, in themed series such as a seasonal vinyasa set and a yin chakra series, or as one all-access pass. Her guided meditations, including a yoga nidra practice, are free on Insight Timer.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local_online",
+      "city": "Marblehead, Massachusetts",
+      "country": "United States",
+      "subjects": [
+        "yoga",
+        "meditation",
+        "chakra-healing"
+      ],
+      "website_url": "https://www.cindyglennonwellness.com/",
+      "booking_url": "https://www.cindyglennonwellness.com/my-approach",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "cindyglennonyoga@gmail.com",
+      "image_urls": [
+        "https://static.wixstatic.com/media/510b3d_b7f376e9bce0416ba43305e0673a1373~mv2.jpg",
+        "https://static.wixstatic.com/media/510b3d_9db8e6b1b5bd4f30bb533b5eeb809af3~mv2.jpg"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "insight-timer",
+      "role": "instructor"
+    }
+  ],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "All Access Yoga Video Library",
+      "url": "https://www.cindyglennonwellness.com/videos",
+      "description": "One purchase opens her whole library of more than eighty recorded classes, over twenty-five hours in all. Styles include yin, vinyasa, breathwork, short targeted sessions and seasonal themes.",
+      "price": "$108 USD",
+      "product_type": "download",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga",
+        "breathwork"
+      ],
+      "image": "https://static.wixstatic.com/media/510b3d_629d32d5454b4db7ace118654a4001ee~mv2.jpg/v1/fill/w_2500,h_3748,al_c/510b3d_629d32d5454b4db7ace118654a4001ee~mv2.jpg"
+    },
+    {
+      "title": "Yoga Video Bundles",
+      "url": "https://www.cindyglennonwellness.com/videos-bundles",
+      "description": "Themed series of recorded classes sold as a set, among them a seasonal vinyasa series and a yin series moving through the chakras. Each bundle is a one-off purchase that can be downloaded.",
+      "price": "See course page",
+      "product_type": "download",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga",
+        "chakra-healing"
+      ],
+      "image": "https://static.wixstatic.com/media/510b3d_3f83e059e60d4395b03bd1a77013964e%7Emv2.jpg/v1/fit/w_2500,h_1330,al_c/510b3d_3f83e059e60d4395b03bd1a77013964e%7Emv2.jpg"
+    },
+    {
+      "title": "Private Yoga and Meditation Sessions",
+      "url": "https://www.cindyglennonwellness.com/my-approach",
+      "description": "One-to-one or family sessions shaped around each client's goals, drawing on yoga, meditation and simple ways of settling the mind. She also teaches small groups from her home studio.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga",
+        "meditation"
+      ],
+      "image": "https://static.wixstatic.com/media/510b3d_9db8e6b1b5bd4f30bb533b5eeb809af3~mv2.jpg/v1/fill/w_1600,h_1067,al_c/510b3d_9db8e6b1b5bd4f30bb533b5eeb809af3~mv2.jpg"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Cindy Glennon on Insight Timer",
+      "url": "https://insighttimer.com/cindyglennonwellness1",
+      "description": "Her free guided meditations and yoga nidra practices on the Insight Timer app.",
+      "featured": true,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation",
+        "yoga"
+      ],
+      "image": "https://static.wixstatic.com/media/510b3d_b7f376e9bce0416ba43305e0673a1373~mv2.jpg"
+    }
+  ],
+  "sprint": {
+    "sprint": "pipelines-1",
+    "hub": "insight-timer",
+    "rank": 161,
+    "hub_url": "https://insighttimer.com/cindyglennonwellness1",
+    "tier_evidence": "Insight Timer 193 followers (queue entry, read 1 Nov 2026); no YouTube channel linked; Instagram @cin_glen and Facebook not readable (not opened) → ~0.2k readable total → local_hero",
+    "email": "yes",
+    "email_source": "https://www.cindyglennonwellness.com/about-me",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 9 source(s)",
+    "flags": [
+      "Regional: North Shore of Massachusetts.",
+      "Base: her site says she teaches on the North Shore, Massachusetts, with her weekly studio class at The Yoga Loft in Marblehead; no home town is published (queue said Salem). Marblehead recorded as the published teaching town; please check.",
+      "Studio schedule is headed 'Fall 2025' and may be out of date, so the studio class is not listed as an offering.",
+      "Photos are from her own site's About and Approach pages and show the same woman, but no caption names her; fairly sure it is her.",
+      "Thin listing: 3 offerings plus Insight Timer, no videos or books; a human may want to confirm it is worth a full page.",
+      "Tier counts mostly unreadable (Instagram/Facebook not opened)."
+    ],
+    "left_out": [
+      "Studio class at The Yoga Loft, Marblehead: schedule labelled Fall 2025, may not be current.",
+      "Workplace stress-management programmes: no page or details of their own.",
+      "Insight Timer tracks listed on her meditations page (not copied)."
+    ]
+  },
+  "images_final": true
+}

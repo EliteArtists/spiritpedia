@@ -1,0 +1,106 @@
+{
+  "healer": {
+    "healer_slug": "maura-cunningham",
+    "location_source": null,
+    "no_public_base": "Her site says all individual sessions are held on Zoom and group sessions are given at the client's location; it publishes no town or country. The queue entry gives Boston, Massachusetts (from Insight Timer), not confirmed on her own site.",
+    "create": {
+      "name": "Maura Cunningham",
+      "bio": "Maura Cunningham is an American energy healer, intuitive reader and medium who has worked for more than twenty-five years under the name Pravaha Energy Healing & Insight. Pravaha is a Sanskrit word for a current or stream, and her work rests on the idea that a person's life energy should move freely; when it is blocked, she aims to help it flow again. Her sessions bring together channelled energy work, Reiki, spiritual guidance and shamanic practice, and she describes herself as a neutral channel for that energy rather than as someone who steers it.\n\nAlongside the energy work she offers what she calls insight: impressions, images and messages she picks up intuitively, which she shares at the end of a session to give the client a fresh angle on their life. She also teaches a four-week class in intuitive and spiritual development covering meditation with guides and higher consciousness, the psychic senses, mediumship, automatic writing and the ethics of working with spirit, with more advanced levels to follow. She works with individuals over Zoom and with larger groups in person, and shares free guided meditations recorded over crystal-bowl sound on her site and on Insight Timer.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "worldwide",
+      "city": null,
+      "country": null,
+      "subjects": [
+        "energy-medicine",
+        "mediumship-spirits",
+        "channelled-teachings"
+      ],
+      "website_url": "https://www.pravahahealing.com",
+      "booking_url": "https://www.pravahahealing.com/book",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "maura@pravahahealing.com",
+      "image_urls": [
+        "https://images.squarespace-cdn.com/content/v1/5e30742cbc70f54135962c65/1597761570761-HU9PAKDRXLJ60UH2DXIN/MauraHS%281%29.jpeg?format=1000w"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "insight-timer",
+      "role": "instructor"
+    }
+  ],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Intuitive and spiritual development class",
+      "url": "https://www.pravahahealing.com/classes",
+      "description": "A four-week class that builds week by week: meditations for meeting guides and higher consciousness, the psychic senses, mediumship, automatic writing and the ethics of spiritual work in groups. Email Maura to hear about the next dates.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "subjects": [
+        "mediumship-spirits",
+        "channelled-teachings",
+        "meditation"
+      ],
+      "start_date": null,
+      "end_date": null,
+      "image": "https://images.squarespace-cdn.com/content/v1/5e30742cbc70f54135962c65/1580404236392-W1C9BNVCUEA7IC58BWSP/image-asset.jpeg"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Free guided meditations",
+      "url": "https://www.pravahahealing.com/meditations",
+      "description": "Two downloadable guided meditations by Maura, one for grounding and centring and one for filling yourself with light, each set to crystal-bowl sound by Philippe Garnier.",
+      "featured": true,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation",
+        "energy-medicine"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/5e30742cbc70f54135962c65/1596128391466-SF0L2W1Q0ORCMK6L9GQ5/sabine-schulte-unsplash.jpg"
+    },
+    {
+      "title": "Maura Cunningham on Insight Timer",
+      "url": "https://insighttimer.com/pravaha",
+      "description": "Guided meditations from Maura, free to listen to in the app or online.",
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation"
+      ],
+      "featured": false,
+      "image": "https://images.squarespace-cdn.com/content/v1/5e30742cbc70f54135962c65/1597761570761-HU9PAKDRXLJ60UH2DXIN/MauraHS%281%29.jpeg?format=1000w"
+    }
+  ],
+  "sprint": {
+    "sprint": "pipelines-1",
+    "hub": "insight-timer",
+    "rank": 152,
+    "hub_url": "https://insighttimer.com/pravaha",
+    "tier_evidence": "Insight Timer 1.3k followers (queue entry, read 1 Nov 2026); no YouTube, Instagram, Facebook, X or TikTok linked from her site → ~1.3k total → local_hero.",
+    "email": "yes",
+    "email_source": "https://www.pravahahealing.com/classes",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 7 source(s)",
+    "flags": [
+      "Her main offering, Energy Healing & Insight sessions, is left out: her home page lists relieving physical pain and sleeping easily among the benefits. The listing therefore rests on her class and free meditations; a human may want to judge whether that is enough.",
+      "No published base: city and country left null (see no_public_base).",
+      "Only one photo (her headshot from her own site); no second source found.",
+      "Class has no current dates; listed undated with 'Contact for pricing' because the page asks people to email for dates.",
+      "Bio says she uses a 'trauma informed' approach (her bio page); not mentioned in the listing."
+    ],
+    "left_out": [
+      "Energy Healing & Insight sessions (home page claims relief of physical pain and easier sleep).",
+      "Gift certificates (not a teaching item).",
+      "Videos and books: none found on her site."
+    ]
+  },
+  "images_final": true
+}

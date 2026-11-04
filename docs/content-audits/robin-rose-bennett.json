@@ -1,0 +1,173 @@
+{
+  "healer": {
+    "healer_slug": "robin-rose-bennett",
+    "location_source": "https://www.robinrosebennett.com/",
+    "create": {
+      "name": "Robin Rose Bennett",
+      "bio": "Robin Rose Bennett is a green witch, herbalist and writer from northern New Jersey who teaches an earth-based spirituality centred on relationship with plants. She was not raised close to the land and describes discovering, as an adult, how many useful and sacred plants had always grown around her. Her first spiritual teachers were a pair of interfaith ministers she met in her late teens, and she has since spent decades learning and passing on the wise-woman tradition of plant lore, seasonal ritual and ceremony.\n\nFor her, plants are teachers in their own right, and her classes invite people to slow down, listen to them and live in step with the moon and the seasons. She runs Plants as Portals, a series of online workshops where participants sip a plant's tea, meet it in guided meditation and then write, and she sells a recorded journey for meeting a personal plant ally. She also holds ritual circles locally and officiates as an earth priestess at weddings, handfastings, blessings and memorials. Her books include Healing Magic, a green witch guide to conscious living, a pocket book of short life tips, and The Young Green Witch's Guide to Plant Magic for younger readers, and a first novel is due in 2027.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local_online",
+      "city": "Hewitt, New Jersey",
+      "country": "United States",
+      "subjects": [
+        "shamanism",
+        "ancient-wisdom",
+        "spirituality"
+      ],
+      "website_url": "https://www.robinrosebennett.com/",
+      "booking_url": "https://www.robinrosebennett.com/featured-teachings",
+      "youtube_url": "https://www.youtube.com/robinrosebennett/",
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "admin@robinrosebennett.com",
+      "image_urls": [
+        "https://images.squarespace-cdn.com/content/v1/620e63b3eef0db3969699504/30d100ac-5d7e-4bca-a576-8fdbfeeee6af/795A8263_websize.jpg",
+        "https://images.squarespace-cdn.com/content/v1/620e63b3eef0db3969699504/5cd2670b-f142-469d-b3ca-d02445ffa852/795A6899_websize.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [
+    {
+      "title": "Plant Medicine Series: Snippet from an herbalist’s daily life - Touring the herb room",
+      "url": "https://www.youtube.com/watch?v=vr2wHxNbF2Y",
+      "subjects": [
+        "spirituality"
+      ],
+      "channel": "Robin Rose Bennett"
+    },
+    {
+      "title": "Good Morning! Wild Plants in my Kitchen",
+      "url": "https://www.youtube.com/watch?v=nacUJwW1cM0",
+      "subjects": [
+        "spirituality"
+      ],
+      "channel": "Robin Rose Bennett"
+    }
+  ],
+  "books": [
+    {
+      "title": "Healing Magic: A Green Witch Guidebook to Conscious Living",
+      "slug": "healing-magic-a-green-witch-guidebook-to-conscious-living",
+      "author": "Robin Rose Bennett",
+      "asin": "1583948376",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "Her guide to the green witch path, now in a tenth-anniversary edition. It covers moon rituals, women's wisdom, herbal baths and infusions, a medicine wheel of magic and creating rituals for a community.",
+      "subjects": [
+        "ancient-wisdom",
+        "spiritual-awakening"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1583948376.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "A Green Witch's Pocket Book of Wisdom: Big Little Life Tips",
+      "slug": "a-green-witchs-pocket-book-of-wisdom",
+      "author": "Robin Rose Bennett",
+      "asin": "0982108257",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "A small book of short reflections and practices drawn from her decades on the green witch path. Each entry offers a piece of earthy spiritual advice for everyday life.",
+      "subjects": [
+        "spirituality"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/0982108257.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "The Young Green Witch's Guide to Plant Magic: Rituals and Recipes from Nature",
+      "slug": "the-young-green-witchs-guide-to-plant-magic",
+      "author": "Robin Rose Bennett",
+      "asin": "0762483806",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "Written for children and young teenagers, this book introduces plant magic, simple herbal recipes and nature rituals as ways to build confidence and connection with the Earth. It won a silver Nautilus Book Award in 2025.",
+      "subjects": [
+        "spirituality",
+        "mindfulness"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/0762483806.01._SCLZZZZZZZ_.jpg"
+    }
+  ],
+  "courses": [
+    {
+      "title": "Plants as Portals: Online Writing Workshops",
+      "url": "https://www.robinrosebennett.com/plants-as-portals-online-writing-workshops",
+      "description": "An ongoing series of evening workshops online, each devoted to one plant. Participants drink its tea, meet the plant in a guided meditation, then write and share what emerges; recordings are available.",
+      "price": "See course page",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "image": "http://static1.squarespace.com/static/620e63b3eef0db3969699504/t/6219ac541115a775a5b9bba0/1645849684505/WWLogo-Cauldron-000000-Black-300px.png?format=1500w"
+    },
+    {
+      "title": "Meet Your Plant Ally: Guided Meditation + Workbook",
+      "url": "https://www.robinrosebennett.com/meet-your-plant-ally",
+      "description": "A recorded guided journey to meet the plant that comes forward as your companion and teacher, with a downloadable workbook for reflecting on the experience and building a relationship with that plant.",
+      "price": "$36 USD",
+      "product_type": "download",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "shamanism"
+      ],
+      "image": "http://static1.squarespace.com/static/620e63b3eef0db3969699504/t/6219ac541115a775a5b9bba0/1645849684505/WWLogo-Cauldron-000000-Black-300px.png?format=1500w"
+    },
+    {
+      "title": "Earth Priestess Rituals and Ceremonies",
+      "url": "https://www.robinrosebennett.com/ritual-ceremony",
+      "description": "Robin Rose creates and officiates nature-based ceremonies, including weddings, handfastings, blessings for babies and homes, and memorials, invoking the four elements and weaving in family traditions.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "ancient-wisdom",
+        "spirituality"
+      ],
+      "image": "http://static1.squarespace.com/static/620e63b3eef0db3969699504/t/6219ac541115a775a5b9bba0/1645849684505/WWLogo-Cauldron-000000-Black-300px.png?format=1500w"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "pipelines-1",
+    "hub": "the-shift-network",
+    "rank": 320,
+    "hub_url": null,
+    "tier_evidence": "YouTube youtube.com/robinrosebennett 9.18k subscribers ('9,18 mil subscritores', channel header, 4 Nov 2026); Instagram @robinrosebennett and Facebook wisewomanhealingways not opened (blocked sites) → ~9k readable → local_hero",
+    "email": "yes",
+    "email_source": "https://www.robinrosebennett.com/consultations",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 11 source(s)",
+    "flags": [
+      "No Shift mention on own site: listed without the link.",
+      "Health rule, borderline: much of her work is herbal medicine (Saturday herbal clinic for symptoms, a year-long apprenticeship in herbal medicine, the $499 Green Witch's Apothecary course on remedy-making for health, The Gift of Healing Herbs). All of that was left out; what remains is plant spirituality, ritual and writing. The owner may judge her work to be mainly herbal medicine.",
+      "Email admin@robinrosebennett.com is her assistant's scheduling address, published as a mailto link on the consultations page.",
+      "Base: Hewitt, New Jersey is the town of her published PO box (site footer); it is an unincorporated community in West Milford, likely under 5,000 people, so please map it. Her local ritual circle meets in Pompton Lakes, NJ.",
+      "Regional: northern New Jersey (outside the big coastal cities).",
+      "Subjects: there is no herbalism or witchcraft subject; shamanism, ancient-wisdom and spirituality used as nearest fits.",
+      "Videos: her channel is mainly a 'Plant Medicine Series' of short herb clips; only two longer, non-remedy clips kept (both 5-6 minutes). Not checked with oEmbed by me (the permission system refused my oEmbed call earlier); the dry run checks it.",
+      "Book ISBN-10s are from the Amazon links on her own books page (https://www.robinrosebennett.com/books); not opened on Amazon and NOT confirmed on Open Library (openlibrary.org served a human-verification page on 4 Nov 2026, so I stopped using it).",
+      "Photos by Mikaela Mar (credited on her site)."
+    ],
+    "left_out": [
+      "Herbal consultations (Saturday clinic): framed around symptoms and health challenges (health rule).",
+      "The Green Witch's Apothecary ($499) and the 2027 Green Witch Path of Herbal Medicine apprenticeship: herbal medicine and remedy-making for health; borderline, so left out.",
+      "The Gift of Healing Herbs (book): subtitle promises home remedies for a healthy life (health rule).",
+      "New Moon Ritual Circle at Weyward Market, 6 November 2026: dated before 7 November.",
+      "EARTHSONG (novel, March 2027): not yet published, no ISBN.",
+      "Plant-remedy YouTube clips (infusions, oxymels, 'medicine' series) and clips under 2 minutes."
+    ]
+  },
+  "images_final": true
+}

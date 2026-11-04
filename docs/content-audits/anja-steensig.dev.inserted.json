@@ -1,0 +1,51 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 839,
+    "healer_slug": "anja-steensig"
+  },
+  "rows": [
+    {
+      "table": "videos",
+      "id": 7446,
+      "slug": "guidet-healing-meditation-for-forgiveness",
+      "title": "Guidet Healing Meditation for forgiveness"
+    },
+    {
+      "table": "videos",
+      "id": 7447,
+      "slug": "allow-and-surrender",
+      "title": "Allow and Surrender"
+    },
+    {
+      "table": "books",
+      "id": 1910,
+      "slug": "book-of-solace-love-and-light-for-dark-days",
+      "title": "Book of Solace: Love and Light for Dark Days"
+    },
+    {
+      "table": "courses",
+      "id": "e7db4dd4-14c2-4f25-b3f4-8fe9ac41e5a8",
+      "slug": "the-path-of-the-nordic-mystic",
+      "title": "The Path of the Nordic Mystic"
+    },
+    {
+      "table": "courses",
+      "id": "e02ea19b-3115-4694-b6bb-9b77903f8b41",
+      "slug": "nordic-mysticism",
+      "title": "Nordic Mysticism"
+    },
+    {
+      "table": "courses",
+      "id": "601bcb26-13d3-4e43-b1cf-ccaf96a0d969",
+      "slug": "11-heart-to-heart-mentoring",
+      "title": "1:1 Heart to Heart mentoring"
+    },
+    {
+      "table": "hub_teachers",
+      "id": "0dc39034-4292-4ec1-bfe7-0ca58df1d88f",
+      "title": "anja-steensig teaches at The Shift Network"
+    }
+  ],
+  "at": "2026-11-04T17:45:58.154Z"
+}

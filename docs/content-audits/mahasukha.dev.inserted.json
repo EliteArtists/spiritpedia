@@ -1,0 +1,51 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 803,
+    "healer_slug": "mahasukha"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "657df5fe-57b5-4323-a89c-e50bc5ecc298",
+      "slug": "soulful-singing-workshops",
+      "title": "Soulful Singing workshops"
+    },
+    {
+      "table": "courses",
+      "id": "6f088fee-fd50-4fa8-98c8-a09128ca740b",
+      "slug": "beauty-of-mantra",
+      "title": "Beauty of Mantra"
+    },
+    {
+      "table": "courses",
+      "id": "7edb07bf-4b76-4155-926a-1cfdd268e8f2",
+      "slug": "11-mantra-sessions",
+      "title": "1:1 Mantra sessions"
+    },
+    {
+      "table": "courses",
+      "id": "62bf42eb-00a3-42a2-808d-91eb0f1f8971",
+      "slug": "guided-meditation-sessions",
+      "title": "Guided meditation sessions"
+    },
+    {
+      "table": "courses",
+      "id": "6ff357f5-2f3d-48e7-8317-ee7de593d4ae",
+      "slug": "the-embodied-voice",
+      "title": "The Embodied Voice"
+    },
+    {
+      "table": "free_resources",
+      "id": "e8ded0e6-62cc-4c15-aab7-b5eb84cca5fe",
+      "slug": "mahasukha-on-insight-timer",
+      "title": "Mahasukha on Insight Timer"
+    },
+    {
+      "table": "hub_teachers",
+      "id": "edd5a767-4ca0-4ca5-b605-dd8fe5e9a316",
+      "title": "mahasukha teaches at Insight Timer"
+    }
+  ],
+  "at": "2026-11-04T17:29:12.302Z"
+}

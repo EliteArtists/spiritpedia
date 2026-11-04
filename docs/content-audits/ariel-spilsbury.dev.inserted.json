@@ -1,0 +1,46 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 845,
+    "healer_slug": "ariel-spilsbury"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "2a13c1c7-07d4-47c5-a2fa-59a9200d9564",
+      "slug": "feminine-alchemy",
+      "title": "Feminine Alchemy"
+    },
+    {
+      "table": "courses",
+      "id": "0e6278f7-dad9-4e67-9f47-038bd9edb9b8",
+      "slug": "inter-dimensional-sound",
+      "title": "Inter-Dimensional Sound"
+    },
+    {
+      "table": "courses",
+      "id": "6a00c68d-f416-46b4-aca9-dbc0af796e9b",
+      "slug": "sacred-geometry",
+      "title": "Sacred Geometry"
+    },
+    {
+      "table": "courses",
+      "id": "ad23e57d-d017-4f72-997f-facda84fae09",
+      "slug": "13-moon-oracle-course",
+      "title": "13 Moon Oracle Course"
+    },
+    {
+      "table": "free_resources",
+      "id": "2ef42ef3-a9d6-470f-9228-4517170f9c31",
+      "slug": "13-moon-oracle-online-deck",
+      "title": "13 Moon Oracle Online Deck"
+    },
+    {
+      "table": "free_resources",
+      "id": "f7ceac94-e066-450a-beba-d66e591af746",
+      "slug": "guidebook-for-a-modern-priestess",
+      "title": "Guidebook for a Modern Priestess"
+    }
+  ],
+  "at": "2026-11-04T17:46:31.287Z"
+}

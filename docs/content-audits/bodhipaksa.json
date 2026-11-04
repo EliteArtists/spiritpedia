@@ -1,0 +1,174 @@
+{
+  "healer": {
+    "healer_slug": "bodhipaksa",
+    "location_source": "https://www.wildmind.org/contact",
+    "create": {
+      "name": "Bodhipaksa",
+      "bio": "Bodhipaksa is a Scottish-born Buddhist teacher who has lived in New Hampshire for many years. He began meditating in 1982 and was ordained into the Triratna Buddhist Order in 1993, receiving a name that means 'wings of enlightenment'. Before settling in the United States he ran the Dhanakosa retreat centre in the Scottish Highlands and then the Edinburgh Buddhist Centre, and later spent three years teaching Buddhist meditation to students in Montana's university religion programme while finishing a master's degree.\n\nOut of that university work grew Wildmind, an online meditation centre he started in 2000 and still runs from Newmarket. Its free pages give step-by-step instruction in mindfulness of breathing, lovingkindness, walking meditation and the six element reflection, along with notes on posture. A small monthly contribution from supporters keeps the site free of advertising and gives them daily sits on Zoom, a private community, regular mini-retreats and a library of more than forty courses. Among his books are Living as a River, which looks at impermanence and not-self; This Difficult Thing of Being Human, a guide to being kinder to oneself; and a book of daily readings, A Year of Buddha's Wisdom; and he has recorded several albums of guided meditation. He also teaches at meditation centres in person.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "worldwide",
+      "city": "Newmarket, New Hampshire",
+      "country": "United States",
+      "subjects": [
+        "meditation",
+        "mindfulness",
+        "non-duality"
+      ],
+      "website_url": "https://www.wildmind.org/",
+      "booking_url": "https://www.wildmind.org/the-initiative",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": null,
+      "image_urls": [
+        "https://www.wildmind.org/wp-content/uploads/2018/06/DSC_4122-crop-landscape.jpg"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "insight-timer",
+      "role": "instructor"
+    }
+  ],
+  "videos": [],
+  "books": [
+    {
+      "title": "This Difficult Thing of Being Human: The Art of Self-Compassion",
+      "slug": "this-difficult-thing-of-being-human",
+      "author": "Bodhipaksa",
+      "asin": "1946764515",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "A practical book on self-compassion drawn from Buddhist practice. Bodhipaksa explains why kindness towards ourselves matters and offers short exercises for meeting difficult moments with more care.",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1946764515.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "Living as a River: Finding Fearlessness in the Face of Change",
+      "slug": "living-as-a-river",
+      "author": "Bodhipaksa",
+      "asin": "1591799104",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "An exploration of the Buddhist teaching of not-self built around the traditional six element reflection. Readers are led through earth, water, fire, air, space and consciousness to see how little of what we take as 'me' is fixed.",
+      "subjects": [
+        "non-duality",
+        "meditation"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1591799104.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "Wildmind: A Step-by-Step Guide to Meditation",
+      "slug": "wildmind-a-step-by-step-guide-to-meditation",
+      "author": "Bodhipaksa",
+      "asin": "1899579915",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "An illustrated beginner's manual that grew out of the Wildmind website. It sets out posture and the two core Buddhist practices of mindfulness of breathing and lovingkindness in clear stages.",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1899579915.01._SCLZZZZZZZ_.jpg"
+    }
+  ],
+  "courses": [
+    {
+      "title": "Wildmind Community-Supported Meditation Initiative",
+      "url": "https://www.wildmind.org/the-initiative",
+      "description": "Supporters fund the ad-free Wildmind site and in return join daily meditation sittings on Zoom, a private online community and monthly mini-retreats. They also get rolling access to more than forty of Bodhipaksa's online courses, from a ten-day introduction to month-long series on kindness and compassion.",
+      "price": "$8 USD a month, plus a one-time $40 USD joining fee",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://m.media-amazon.com/images/P/1899579915.01._SCLZZZZZZZ_.jpg"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Bodhipaksa on Insight Timer",
+      "url": "https://insighttimer.com/bodhipaksa",
+      "description": "Bodhipaksa's free Insight Timer page, where his guided Buddhist meditations and talks can be played in the app or a web browser at no cost.",
+      "featured": false,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation"
+      ]
+    },
+    {
+      "title": "Learn the Mindfulness of Breathing Meditation",
+      "url": "https://www.wildmind.org/mindfulness",
+      "description": "A free, staged written guide to the most widely taught Buddhist sitting practice, attending to the physical feel of the breath. Each of the four stages has its own page with tips on common difficulties.",
+      "featured": true,
+      "resource_type": "practice",
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ]
+    },
+    {
+      "title": "A complete guide to lovingkindness meditation",
+      "url": "https://www.wildmind.org/metta",
+      "description": "Wildmind's free step-by-step introduction to metta bhavana, the practice of developing kindness, moving from oneself to a friend, a stranger, someone difficult and finally all beings.",
+      "featured": false,
+      "resource_type": "practice",
+      "subjects": [
+        "meditation"
+      ]
+    },
+    {
+      "title": "The six element practice",
+      "url": "https://www.wildmind.org/six-elements",
+      "description": "A free written guide to a reflection from the Pali canon on earth, water, fire, air, space and consciousness, used to loosen the sense of a fixed self.",
+      "featured": false,
+      "resource_type": "practice",
+      "subjects": [
+        "non-duality",
+        "meditation"
+      ]
+    }
+  ],
+  "sprint": {
+    "sprint": "pipelines-1",
+    "hub": "insight-timer",
+    "rank": 130,
+    "hub_url": "https://insighttimer.com/bodhipaksa",
+    "tier_evidence": "Insight Timer 83.8k followers (queue entry, read 1 Nov 2026); no YouTube channel or other personal social accounts found on his site; Wildmind visitor figures not counted → ~83.8k total → local_hero",
+    "email": "contact form",
+    "email_source": null,
+    "contact_form_url": "https://www.wildmind.org/contact",
+    "bio_check": "OK: no 8-word runs against 9 source(s)",
+    "flags": [
+      "Tier borderline: ~83.8k from Insight Timer alone (80k–150k band). He is a long-standing author with Sounds True and Parallax Press; the owner may judge editorial stature.",
+      "His personal site bodhipaksa.com (which his About page says carries his YouTube links and coaching) returned a 500 server error on robots.txt (4 Nov 2026), so it was not fetched; videos and coaching left out.",
+      "Wildmind has free sections on meditation and depression, pain and stress; those were not used (health rule). The site as a whole is general meditation teaching.",
+      "Books confirmed on Open Library: https://openlibrary.org/isbn/1946764515, https://openlibrary.org/isbn/1591799104, https://openlibrary.org/isbn/1899579915 (ISBN-10s found via bookseller listings in web search).",
+      "Only one photo used: the Wildmind About-page portrait. A second Wildmind image of him has promotional text across it.",
+      "Name is a single Buddhist ordination name; slug 'bodhipaksa'.",
+      "Base: the contact page says he is located in Newmarket, New Hampshire.",
+      "Books: no cover set by the dry run (ingest leaves book covers to its own lookup); check covers at insert."
+    ],
+    "left_out": [
+      "A Year of Buddha's Wisdom, Vegetarianism and I Can't Believe It's Not Buddha!: ISBNs not confirmed within the search budget.",
+      "Individual Wildmind courses: they have no pages of their own (all inside the membership).",
+      "Meditation coaching on bodhipaksa.com: site returned a server error.",
+      "YouTube videos: no channel URL found on his reachable pages.",
+      "Wildmind pages on depression and pain management (health rule)."
+    ],
+    "held": "Ingest dry run (4 Nov 2026): the only usable photo, on wildmind.org, does not load for the ingest (the site refuses its request), so the healer has no photo. Per the brief, held rather than worked around; a human may supply another photo source."
+  }
+}

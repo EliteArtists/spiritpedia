@@ -1,0 +1,141 @@
+{
+  "healer": {
+    "healer_slug": "michelle-coutinho",
+    "location_source": null,
+    "no_public_base": "Her own site and YouTube channel publish no home base (she grew up in Fort Lauderdale; 'Austin TX' on her site belongs to a client testimonial). The Insight Timer queue entry gives Austin, Texas, but the profile was not opened in this sprint.",
+    "create": {
+      "name": "Michelle Coutinho",
+      "bio": "Michelle Coutinho, who goes by Michelle Infinity online, is an American voice mentor, devotional singer and meditation teacher. She met Ram Dass's recorded talks as a teenager and Reiki even earlier, and later joined his Open Heart conversations and spent time with him on Maui, which shaped her sense of what a spiritual teacher does. Over some twenty years she has worked as a college lecturer in interface design, a creative consultant, a yoga and meditation teacher and a retreat leader, and she has sung in ceremony for more than fifteen years, including leading group voicework inside the Great Pyramid.\n\nHer chanting draws on Bhakti yoga and on prayers in Sanskrit, Hebrew, Aramaic and Tibetan, sung in many languages. Her main offering is a private, application-based mentorship she calls vocal empowerment: a soul-centred coaching process that helps leaders, healers and creative people trust their own voice, speak with presence and act from integrity, with longer immersions for those who want them. On her YouTube channel, Tuning to Wisdom, she shares mantra teachings, guided meditations, voice workshops and astrology talks, and she also offers meditations on Insight Timer.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "worldwide",
+      "city": null,
+      "country": null,
+      "subjects": [
+        "sound-healing",
+        "meditation",
+        "life-coaching"
+      ],
+      "website_url": "https://michellecoutinho.com",
+      "booking_url": "https://michellecoutinho.com/listen",
+      "youtube_url": "https://www.youtube.com/michelleinfinitytv",
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "michelle@michellecoutinho.com",
+      "image_urls": [
+        "https://yt3.googleusercontent.com/ink89IQGHTX-GGJBL4k-hpMTLP4ViHkt-PPGPjLE2q6DEU9uRDz_sBh0Zt9njijI9KOhk4Ompg=s900",
+        "https://images.squarespace-cdn.com/content/v1/5deef1adb2178b0eae4bfe4e/993e4284-5729-48c8-8c3b-bbd43fca372f/egypt+me.jpg?format=1000w"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "insight-timer",
+      "role": "instructor"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Meditation on Discernment from Medicine Woman Tarot - Michelle Infinity",
+      "url": "https://www.youtube.com/watch?v=HPczx9RI6oM",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "channel": "Michelle Infinity 🌙 Tuning to Wisdom"
+    },
+    {
+      "title": "Gate Gate Mantra • Full Moon in Capricorn • Sound Healing Transmission + Teaching",
+      "url": "https://www.youtube.com/watch?v=JPb1U6QNOLY",
+      "subjects": [
+        "sound-healing",
+        "ancient-wisdom"
+      ],
+      "channel": "Michelle Infinity 🌙 Tuning to Wisdom"
+    },
+    {
+      "title": "Free Your Voice | Vocal Healing Workshop + Guided Ritual | Release Stuck Emotion With Your Voice",
+      "url": "https://www.youtube.com/watch?v=gt4LvoMlHGw",
+      "subjects": [
+        "sound-healing",
+        "self-healing"
+      ],
+      "channel": "Michelle Infinity 🌙 Tuning to Wisdom"
+    },
+    {
+      "title": "Transmission on The Dark Masculine: And how we got here speaking and teaching on Tantra",
+      "url": "https://www.youtube.com/watch?v=MFSO9wNh-0s",
+      "subjects": [
+        "conscious-relationships",
+        "spirituality"
+      ],
+      "channel": "Michelle Infinity 🌙 Tuning to Wisdom"
+    },
+    {
+      "title": "The Power of Embodied Ritual: Bypass Your Mind + Create Space for Healing",
+      "url": "https://www.youtube.com/watch?v=lhxw2atQ8V4",
+      "subjects": [
+        "spirituality",
+        "self-healing"
+      ],
+      "channel": "Michelle Infinity 🌙 Tuning to Wisdom"
+    }
+  ],
+  "books": [],
+  "courses": [
+    {
+      "title": "1:1 Vocal Empowerment Mentorship",
+      "url": "https://michellecoutinho.com/listen",
+      "description": "Private mentorship by application, working with voice, ceremony and coaching to help people trust their self-expression and lead from the heart. Clients can go on to a longer six-month immersion.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "subjects": [
+        "sound-healing",
+        "life-coaching"
+      ],
+      "start_date": null,
+      "end_date": null,
+      "image": "http://static1.squarespace.com/static/5deef1adb2178b0eae4bfe4e/t/6953b26c3a0c95476cd1567c/1767092844091/michelle+infinity+coutinho.PNG?format=1500w"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Michelle Coutinho on Insight Timer",
+      "url": "https://insighttimer.com/michelleinfinity",
+      "description": "Guided meditations and voice practices from Michelle, free to listen to in the app or online.",
+      "featured": true,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation",
+        "sound-healing"
+      ],
+      "image": "https://yt3.googleusercontent.com/ink89IQGHTX-GGJBL4k-hpMTLP4ViHkt-PPGPjLE2q6DEU9uRDz_sBh0Zt9njijI9KOhk4Ompg=s900"
+    }
+  ],
+  "sprint": {
+    "sprint": "pipelines-1",
+    "hub": "insight-timer",
+    "rank": 146,
+    "hub_url": "https://insighttimer.com/michelleinfinity",
+    "tier_evidence": "Insight Timer 3.2k followers (queue entry, read 1 Nov 2026); YouTube 991 subscribers (channel header, 4 Nov 2026); Instagram @michelleinfinity not read (instagram.com is off limits) → ~4.2k readable total → local_hero.",
+    "email": "yes",
+    "email_source": "https://michellecoutinho.com/contact",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 5 source(s)",
+    "flags": [
+      "No published base: city and country left null (see no_public_base).",
+      "Her home page says she helps clients heal their relationship with their parents and move on from childhood trauma; the coaching carries a not-therapy disclaimer. Kept as spiritual coaching (voice, ceremony, mantra), but a human may want to judge it.",
+      "She has sung in plant-medicine ceremonies (stated on her site); no plant-medicine offering is listed.",
+      "Only one confirmed own photo on her site besides the YouTube avatar; other faces on her pages are clients.",
+      "Mentorship application is a Typeform (michelle324439.typeform.com); the offering links her own page that presents it."
+    ],
+    "left_out": [
+      "Substack (michelleinfinity.substack.com): substack.com is off limits, not opened.",
+      "YouTube: dated astrology forecasts (e.g. July 2026 eclipse season), hosted interviews where she is not the main speaker, music-only chants and a 1:41 clip.",
+      "'Healing the Witch Wound' ritual video (left out as borderline healing framing)."
+    ]
+  },
+  "images_final": true
+}

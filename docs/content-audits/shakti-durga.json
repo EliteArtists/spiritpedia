@@ -1,0 +1,130 @@
+{
+  "healer": {
+    "healer_slug": "shakti-durga",
+    "location_source": "https://shantimission.org/pages/shakti-durga",
+    "create": {
+      "name": "Shakti Durga",
+      "bio": "Shakti Durga, who earlier taught under her birth name Kim Fraser, is the founder and spiritual director of Shanti Mission, a meditation and devotional community in Australia with groups in the UK, the United States and India. She came to spiritual practice in the 1990s while working as a lawyer and raising a family after a divorce, and went on to train in meditation, personal development and energy healing under several teachers. She teaches in an Eastern devotional style, and shaktipat blessings are part of Shanti Mission's festival intensives.\n\nHer teaching blends Indian mantra, kirtan and goddess worship with Western mystical traditions, and centres on practical ways to bring more peace into relationships, work and daily life. She has written five books, including Spiritual Mastery and Ignite Your Spirit, and her Path of Ease and Grace seminars are built on them. She leads intensives, fire ceremonies and festival programmes at the Harmony Centre near Cooranbong in New South Wales, where she lives with her husband, and holds retreats abroad. Shanti Mission also runs weekly satsang, meditation sessions and an online channelled teaching series she has led since 2020.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local_online",
+      "city": "Cooranbong, New South Wales",
+      "country": "Australia",
+      "subjects": [
+        "spirituality",
+        "meditation",
+        "channelled-teachings"
+      ],
+      "website_url": "https://shantimission.org/pages/shakti-durga",
+      "booking_url": "https://shantimission.org/pages/spiritual-retreats",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "info@shantimission.org",
+      "image_urls": [
+        "https://shantimission.org/cdn/shop/files/shakti-durga-3.jpg",
+        "https://shantimission.org/cdn/shop/files/shakti-durga-4.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [
+    {
+      "title": "Spiritual Mastery: Twelve Hallmarks of Spiritual Mastery",
+      "slug": "spiritual-mastery-shakti-durga",
+      "author": "Shakti Durga",
+      "asin": "097569779X",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "Shakti Durga sets out twelve qualities she sees in people who have matured on the spiritual path, with reflections and practices for growing into each. Published in 2020 by her own imprint, Higher Guidance.",
+      "subjects": [
+        "spirituality",
+        "spiritual-awakening"
+      ],
+      "cover": "https://covers.openlibrary.org/b/isbn/097569779X-L.jpg?default=false"
+    },
+    {
+      "title": "Ignite Your Spirit: Energy Healing - Realise Your Highest Potential",
+      "slug": "ignite-your-spirit",
+      "author": "Shakti Durga",
+      "asin": "0975697749",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "Her guide to the energy-healing system she teaches, with explanations of the subtle body and exercises for clearing and strengthening one's own energy. It was first published under the name Kim Fraser.",
+      "subjects": [
+        "energy-medicine",
+        "chakra-healing"
+      ],
+      "cover": null
+    }
+  ],
+  "courses": [
+    {
+      "title": "The Solar Gateway Spiritual Intensive with Shakti Durga",
+      "url": "https://shantimission.org/pages/the-solar-gateway",
+      "description": "Three summer-solstice mornings of fire ceremony, initiation and teaching with Shakti Durga at the Harmony Centre in Cooranbong or online. Each day turns to a different aspect of the Divine Mother: Durga, Saraswati and Maha Lakshmi.",
+      "price": "Contact for pricing",
+      "product_type": "retreat",
+      "start_date": "2026-12-20",
+      "end_date": "2026-12-22",
+      "subjects": [
+        "spirituality",
+        "channelled-teachings"
+      ],
+      "image": "https://shantimission.org/cdn/shop/files/Community_Attend_1000x1000.jpg?v=1793070759"
+    },
+    {
+      "title": "Satsang at Shanti Mission",
+      "url": "https://shantimission.org/pages/satsang",
+      "description": "Shanti Mission's weekly Sunday gathering at the Harmony Centre, open to anyone. It brings together song, a short teaching, guided meditation and a group blessing from long-standing practitioners.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "image": "https://shantimission.org/cdn/shop/files/satsang-gallery-1_1000x1000.jpg?v=1734487914"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "pipelines-1",
+    "hub": "the-shift-network",
+    "rank": 67,
+    "hub_url": "https://theshiftnetwork.com/ondemands",
+    "tier_evidence": "No YouTube channel linked from shantimission.org; Instagram shantimissioninternational and Facebook shantimission are the organisation's accounts and could not be read (blocked sites); her own site shaktidurga.com was not fetched (Cloudflare 403 earlier) → 0 readable → local_hero",
+    "email": "yes",
+    "email_source": "https://shantimission.org/pages/shanti-harmony-centre",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 14 source(s)",
+    "flags": [
+      "No Shift mention on own site: listed without the link. Her personal site shaktidurga.com returned a Cloudflare bot check (403) in hubs sprint 2, so it was not fetched at all this time; only Shanti Mission's site (shantimission.org, which she founded) was used.",
+      "Counts couldn't be read for any main account; tier total is 0 readable. As founder of a multi-country mission the owner may consider editorial stature (no override set).",
+      "Founder rule applied: she founded Shanti Mission, so its programmes at the Harmony Centre count for her; only the Solar Gateway intensive is clearly led by her, and Satsang is run by the mission's facilitators.",
+      "Regional: Cooranbong, New South Wales (Lake Macquarie, about an hour north of Sydney); a small town, please check it maps. Her page says she lives in Cooranbong.",
+      "Email info@shantimission.org is the Shanti Mission organisation inbox.",
+      "Prices for the Solar Gateway are on shantishop.org product pages, which were not read (see left_out); 'Contact for pricing' used.",
+      "Energy healing is one strand of her work (Ignite Your Spirit and the Path of Healing); the Path of Healing page names clients with chronic illness and is left out. Book 'Ignite Your Spirit: Energy Healing' kept as its title makes no condition claim; please check.",
+      "Books confirmed on Open Library: https://openlibrary.org/isbn/097569779X (Spiritual Mastery, Higher Guidance 2020) and https://openlibrary.org/isbn/0975697749 (Ignite Your Spirit, Higher Guidance 2013; an earlier 2007 Findhorn Press edition as Kim Fraser is ISBN 1844091066). ISBNs from Open Library; her site lists five books but the shop page was not read. Covers not checked.",
+      "Channelled teaching: her site says the goddess Artha has been channelled through her in weekly Mystery School classes since 2020 (The Book of Artha, due 2027).",
+      "Photos are from Shanti Mission's site (one shows her teaching, one in a garden); the same woman appears in both and in the site's 'Shakti Durga' banner.",
+      "No cover found for Ignite Your Spirit (0975697749): cover set to null."
+    ],
+    "left_out": [
+      "Shanti Meditation online sessions: run for The Well Being Initiative, a charity framed around energy healing for 'shifts in health' (borderline health framing), and mostly led by other teachers.",
+      "The Path of Healing / Ignite Your Spirit healer training: page names clients with chronic illness (health rule).",
+      "Emotional Liberation online course (starts 11 Nov 2026): taught by Gayatri, not by her, and framed as emotional healing.",
+      "Glastonbury 'Inner Avalon' retreat: September, past.",
+      "The Book of Artha: not published until 2027.",
+      "shantishop.org pages (book list, event prices): one request returned 'local_rate_limited'; not used further."
+    ]
+  },
+  "images_final": true
+}

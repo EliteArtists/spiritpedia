@@ -1,0 +1,209 @@
+{
+  "healer": {
+    "healer_slug": "chad-foreman",
+    "location_source": "https://www.thewayofmeditation.com.au/online-meditation-courses",
+    "create": {
+      "name": "Chad Foreman",
+      "bio": "Chad Foreman is an Australian meditation teacher and former Buddhist monk who runs The Way of Meditation on Queensland's Sunshine Coast. His interest in Buddhism began with mindfulness exercises he used while training as a tennis player, and in 2000 he left Brisbane for Chenrezig Institute, a Tibetan Buddhist community in the Sunshine Coast hinterland. There he lived for six years in a remote retreat hut, studying and practising full time under Khensur Rinpoche Geshe Tashi Tsering, who later gave his blessing for Chad to teach. He has led classes since about 2002, beginning by standing in for a nun at a local group in Maroochydore.\n\nHis teaching presents Tibetan methods in plain, secular language: calm abiding and mindfulness, breath-work to settle the body, inner-fire (tummo) practice, sky gazing, and resting in open awareness as taught in the natural-state traditions. Students can follow his online courses at their own pace, including a 21-day programme that moves step by step from relaxation to the nature of mind, or book one-hour coaching calls to talk through their practice. He also leads day and weekend retreats in the hinterland when dates allow, writes a long-running blog, and is the author of the Sky Wisdom oracle cards.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local_online",
+      "city": "Sunshine Coast, Queensland",
+      "country": "Australia",
+      "subjects": [
+        "meditation",
+        "mindfulness",
+        "breathwork"
+      ],
+      "website_url": "https://www.thewayofmeditation.com.au",
+      "booking_url": "https://www.thewayofmeditation.com.au/private-meditation-lessons",
+      "youtube_url": "https://www.youtube.com/@thewayofmeditation",
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "chad@thewayofmeditation.com.au",
+      "image_urls": [
+        "https://irp.cdn-website.com//013c49cb/dms3rep/multi/opt/chad+profile-1920w.jpg",
+        "https://irp.cdn-website.com//013c49cb/dms3rep/multi/opt/chad-1920w.jpg"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "insight-timer",
+      "role": "instructor"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Guided Meditation with Chad Foreman featuring Ashley Christudason's digital art",
+      "url": "https://www.youtube.com/watch?v=cX7XZOr6lgk",
+      "subjects": [
+        "meditation"
+      ],
+      "channel": "The Way of Meditation"
+    },
+    {
+      "title": "Tibetan Buddhist Sky Gazing Meditation",
+      "url": "https://www.youtube.com/watch?v=AAjsK533uyA",
+      "subjects": [
+        "meditation",
+        "non-duality"
+      ],
+      "channel": "The Way of Meditation"
+    },
+    {
+      "title": "How To Do Mindfulness Meditation",
+      "url": "https://www.youtube.com/watch?v=y5tSBbl5Ed8",
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "channel": "The Way of Meditation"
+    },
+    {
+      "title": "Enlightenment Is Having A Good Sense Of Humour",
+      "url": "https://www.youtube.com/watch?v=nJqxkdN1Iaw",
+      "subjects": [
+        "spiritual-awakening"
+      ],
+      "channel": "The Way of Meditation"
+    }
+  ],
+  "books": [
+    {
+      "title": "Sky Wisdom Oracle Cards: Connect with the Healing Power of the Sky",
+      "slug": "sky-wisdom-oracle-cards",
+      "author": "Chad Foreman",
+      "asin": "1801292930",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "An oracle deck with a guidebook, published by Welbeck in 2023, that takes the open sky as its theme. It grows out of the sky-gazing meditation Chad teaches.",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1801292930.01._SCLZZZZZZZ_.jpg"
+    }
+  ],
+  "courses": [
+    {
+      "title": "The 21 Day Meditation Challenge",
+      "url": "https://the-way-of-meditation1.teachable.com/p/21-day-meditation-challenge1",
+      "description": "A self-paced online programme of daily guided sessions that starts with relaxation and mindfulness and works gradually towards resting in awareness. It draws on Tibetan Buddhist methods explained in everyday language.",
+      "price": "$39 USD",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://uploads.teachablecdn.com/attachments/TCJxIqUFS7KiLcROShWt_buddhists-456269_1280.jpg"
+    },
+    {
+      "title": "Tummo: The Bliss of Inner Fire",
+      "url": "https://the-way-of-meditation1.teachable.com/p/tummo-the-bliss-of-inner-fire",
+      "description": "An online course in the Tibetan inner-fire practice, combining breath retention, visualisation and energy work. It is taught step by step so that newcomers can try it safely.",
+      "price": "$29 USD",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "breathwork",
+        "meditation"
+      ],
+      "image": "https://uploads.teachablecdn.com/attachments/KqDUSpD0TtKKq5N273rI_cropped+tummo+with+short+A.png"
+    },
+    {
+      "title": "Breath-Work Meditation with Chad Foreman",
+      "url": "https://the-way-of-meditation1.teachable.com/p/breath-work-meditation-with-chad-foreman",
+      "description": "Recorded breath-work sessions for people who find sitting still hard, using the breath to settle the body before moving into quiet meditation.",
+      "price": "$39 USD",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "breathwork",
+        "meditation"
+      ],
+      "image": "https://uploads.teachablecdn.com/attachments/D3uAKiWuS5S93JXwdMbZ_the-caucasus-5299607_1920.jpg"
+    },
+    {
+      "title": "Online Meditation Coaching",
+      "url": "https://www.thewayofmeditation.com.au/private-meditation-lessons",
+      "description": "One-hour video calls with Chad to talk through your practice, obstacles and next steps, for beginners and seasoned meditators alike. Single sessions can be booked without a package.",
+      "price": "$69 USD per hour",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://irp.cdn-website.com//013c49cb/dms3rep/multi/opt/_DSC0471-1920w.jpg"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Chad Foreman on Insight Timer",
+      "url": "https://insighttimer.com/buddhachad",
+      "description": "Chad's free Insight Timer page, where his guided Buddhist meditations can be played in the app or a web browser at no cost.",
+      "featured": false,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://irp.cdn-website.com//013c49cb/dms3rep/multi/opt/chad+profile-1920w.jpg"
+    },
+    {
+      "title": "The Path To Peace",
+      "url": "https://the-way-of-meditation1.teachable.com/p/the-path-to-peace",
+      "description": "A free online course of four guided classes of about 45 minutes each, moving from calm abiding and mindfulness towards insight into the nature of mind.",
+      "featured": true,
+      "resource_type": "mini_course",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://uploads.teachablecdn.com/attachments/0zkIz5mhSaOmwLRbQcKr_ISS_4644_00177.jpg"
+    },
+    {
+      "title": "Free Guided Meditations",
+      "url": "https://www.thewayofmeditation.com.au/free-guided-meditations",
+      "description": "A page of recorded meditations from Chad's courses and live classes, including loving-kindness and forgiveness and the Tibetan inner-fire practice.",
+      "featured": false,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://irp.cdn-website.com//013c49cb/dms3rep/multi/opt/fractal-1674486_1280-1920w.jpg"
+    }
+  ],
+  "sprint": {
+    "sprint": "pipelines-1",
+    "hub": "insight-timer",
+    "rank": 134,
+    "hub_url": "https://insighttimer.com/buddhachad",
+    "tier_evidence": "Insight Timer 4.8k followers (queue entry, read 1 Nov 2026); YouTube @thewayofmeditation 261 subscribers (channel header, 4 Nov 2026); Instagram, Facebook and X linked but not opened → ~5.1k total → local_hero",
+    "email": "yes",
+    "email_source": "https://www.thewayofmeditation.com.au/retreats",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 17 source(s)",
+    "flags": [
+      "Base: his site says his live classes are recorded 'on the Sunshine Coast, Australia'; no single town is published. Sunshine Coast is a council area of about 350,000, recorded as 'Sunshine Coast, Queensland'; may need a place alias.",
+      "Teachable prices show a bare '$'; USD assumed (his coaching page states '$69usd').",
+      "Sky Wisdom Oracle Cards: ISBN-10 1801292930 taken from the store link on his own site (link not opened); confirmed on Open Library https://openlibrary.org/isbn/1801292930 (Welbeck, 2023). No cover on Open Library.",
+      "The YouTube channel is the brand channel The Way of Meditation, which is his own teaching; most of its 13 videos are short clips.",
+      "Retreat pages (one-day and weekend) say 'coming soon' with no dates; left out.",
+      "Also lists two other teachers (Oska Phoenix, Adriana Spataru) on an Instructors page; listing is for Chad alone."
+    ],
+    "left_out": [
+      "One Day and Weekend Meditation Retreats: 'coming soon', no dates or prices.",
+      "YouTube clips under 2 minutes; the discussion with Adriana Spataru on psychology and emotional healing (borderline therapy framing).",
+      "Free e-book Insights Along The Way: hosted on an Adobe document link, not a page of its own."
+    ]
+  },
+  "images_final": true
+}

@@ -1,0 +1,45 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 789,
+    "healer_slug": "adele-satori"
+  },
+  "rows": [
+    {
+      "table": "videos",
+      "id": 7190,
+      "slug": "sutra-16-the-radiance-sutras",
+      "title": "Sutra 16, The Radiance Sutras"
+    },
+    {
+      "table": "courses",
+      "id": "2a8030be-cb42-4e53-878d-c3a714cdaaac",
+      "slug": "one-hour-meditation-coaching-session",
+      "title": "One-Hour Meditation Coaching Session"
+    },
+    {
+      "table": "courses",
+      "id": "e0c7c80e-57a9-43d5-86c1-d7c135566b94",
+      "slug": "30-minute-meditation-refresh",
+      "title": "30-Minute Meditation Refresh"
+    },
+    {
+      "table": "free_resources",
+      "id": "d6d847d9-bc17-4051-b5e4-17cfef27f63f",
+      "slug": "adele-satori-on-insight-timer",
+      "title": "Adele Satori on Insight Timer"
+    },
+    {
+      "table": "free_resources",
+      "id": "d9322673-b0f2-4ad8-8960-dd83fe62b120",
+      "slug": "free-30-minute-initial-consultation",
+      "title": "Free 30-Minute Initial Consultation"
+    },
+    {
+      "table": "hub_teachers",
+      "id": "4c2a75b2-426d-4dd5-af99-99cc43307104",
+      "title": "adele-satori teaches at Insight Timer"
+    }
+  ],
+  "at": "2026-11-04T17:27:41.882Z"
+}

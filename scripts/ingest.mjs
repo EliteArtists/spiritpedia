@@ -331,7 +331,12 @@ for (const v of plan.videos || []) {
 // disallows Claude's agents, 3 Nov 2026), so an ISBN-10 ASIN is checked on
 // Open Library instead; a Kindle ASIN (B0…) can't be checked and is listed.
 // The store is amazon.com unless the plan says otherwise.
+// Open Library served our agents a human-verification page on 4 Nov 2026, so
+// it is blocked for us (blocked means skip): no calls to openlibrary.org or
+// covers.openlibrary.org until that's lifted. Set this back to false then.
+const OPEN_LIBRARY_BLOCKED = true;
 async function openLibraryHas(isbn) {
+  if (OPEN_LIBRARY_BLOCKED) return 0;
   try {
     const r = await fetch(`https://openlibrary.org/isbn/${isbn}.json`, { headers: { 'User-Agent': UA }, signal: timed() });
     return r.status;
@@ -354,7 +359,7 @@ for (const b of plan.books || []) {
     if (built) { b.cover = built; return; }
     if (b.cover && !/\/images\/G\//.test(b.cover) && (await probeImage(b.cover)).ok) return;
     // An ISBN-10 ASIN: Open Library's cover for that ISBN (404 when none).
-    if (/^\d{9}[\dX]$/.test(b.asin)) {
+    if (!OPEN_LIBRARY_BLOCKED && /^\d{9}[\dX]$/.test(b.asin)) {
       const ol = `https://covers.openlibrary.org/b/isbn/${b.asin}-L.jpg?default=false`;
       if ((await probeImage(ol)).ok) { b.cover = ol; decisions.push(`${label('book', b)}: cover from Open Library (none on Amazon)`); return; }
     }

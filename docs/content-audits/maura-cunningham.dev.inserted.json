@@ -1,0 +1,33 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 801,
+    "healer_slug": "maura-cunningham"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "872cd3b8-39f4-4a68-a30a-af0a764727fa",
+      "slug": "intuitive-and-spiritual-development-class",
+      "title": "Intuitive and spiritual development class"
+    },
+    {
+      "table": "free_resources",
+      "id": "63cf34c1-c4b0-4dc7-bd1f-93d27ac62067",
+      "slug": "free-guided-meditations-4",
+      "title": "Free guided meditations"
+    },
+    {
+      "table": "free_resources",
+      "id": "4c390483-72e7-4b7c-94f5-7890ce539808",
+      "slug": "maura-cunningham-on-insight-timer",
+      "title": "Maura Cunningham on Insight Timer"
+    },
+    {
+      "table": "hub_teachers",
+      "id": "5f2828b7-3916-4dae-9aec-e6e96a7bc6e8",
+      "title": "maura-cunningham teaches at Insight Timer"
+    }
+  ],
+  "at": "2026-11-04T17:28:59.760Z"
+}
