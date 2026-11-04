@@ -25,7 +25,7 @@
    "email_or_form_seen": "contact page (https://www.celesteyoung.com/connect); no email on home page",
    "content_signal": "Insight Meditation and Dharma classes, retreats, events page, online private sessions; Instagram @celestebyoung",
    "note": "Theravada/Insight teacher empowered at InsightLA. Hollyhock programme is a silent retreat.",
-   "status": "dev",
+   "status": "live",
    "plan": "docs/content-audits/celeste-young.json",
    "skip_reason": null
   },
@@ -55,7 +55,7 @@
    "email_or_form_seen": "contact page (https://valeriebrown.us/contact)",
    "content_signal": "Books page (Hope Leans Forward; co-author of Healing Our Way Home), events page with retreats and online courses",
    "note": "Buddhist-Quaker Dharma teacher in the Plum Village tradition; also an executive/leadership coach (keep the listing on the Dharma work). Website found by web search. Search results also showed teacher pages at Omega (eomega.org) and Spirit Rock: check Omega for a current programme; never open spiritrock.org. New Hope is a small borough: researcher to flag for mapping.",
-   "status": "dev",
+   "status": "live",
    "plan": "docs/content-audits/valerie-brown.json",
    "skip_reason": null
   },
@@ -79,7 +79,7 @@
    "email_or_form_seen": "contact section on the home page (#contact); no email seen",
    "content_signal": "Book Reclaim Your Mind (bookshop.org, Apple Books, Audible links); Insight Timer profile (insighttimer.com/jayvidyarthi); podcast guest spots; Instagram, LinkedIn",
    "note": "Secular mindfulness teacher and designer of mindfulness technology. No base seen on the home page (likely Canada: Apple Books link is /ca/); researcher to find a published base.",
-   "status": "dev",
+   "status": "live",
    "plan": "docs/content-audits/jay-vidyarthi.json",
    "skip_reason": null
   },
@@ -103,7 +103,7 @@
    "email_or_form_seen": "email seen on home page (admin@andreamenard.com); contact page /contact",
    "content_signal": "Sacred Feminine Learning Lodge; Seeds from the Sacred Feminine Wisdom Cards; booking page; YouTube andreamenardmusic; TEDx talk",
    "note": "Métis performer, singer and teacher of sacred-feminine and land-based practice. Much of the site is music and acting: check the spiritual teaching is a main part of her work. Base not seen on home page (Vancouver mentioned only as a theatre venue).",
-   "status": "dev",
+   "status": "live",
    "plan": "docs/content-audits/andrea-menard.json",
    "skip_reason": null
   },
@@ -127,7 +127,7 @@
    "email_or_form_seen": "email seen on home page (info@childrenofthe7rays.com, organisation inbox)",
    "content_signal": "Children of the Seven Rays (co-founder): Andean ceremonies, pilgrimages, Heart of the Condor podcast; YouTube @childrenofthe7rays",
    "note": "Andean curandero (Wachuma/Apu Wachumita and mesa lineages). Researcher: check whether retreats include plant-medicine ceremonies and apply the content rules; may be best listed as himself rather than the organisation (or the couple/organisation, see brief). Regional: Cusco.",
-   "status": "dev",
+   "status": "live",
    "plan": "docs/content-audits/jhaimy-alvarez-acosta.json",
    "skip_reason": null
   },
@@ -259,7 +259,7 @@
    "email_or_form_seen": "none seen on home page; programme page gives crossingthethreshold.booking@gmail.com (booking inbox)",
    "content_signal": "Events pages (Crossing the Threshold, Homecoming 2027, song trainings, singing sessions); songbooks and CDs; Dances of Universal Peace leader; Taizé singing",
    "note": "Devotional music and sacred dance teacher, long-time music director at the Findhorn Ecovillage. Co-leads with Jilani Cordelia, who is already on Spiritpedia. Check that sound/music items pass the 'no music-only' rule.",
-   "status": "dev",
+   "status": "live",
    "plan": "docs/content-audits/barbara-swetina.json",
    "skip_reason": null
   },
@@ -295,7 +295,7 @@
    "email_or_form_seen": "Support@craighamiltonglobal.com (footer 'Contact Us' link; support inbox)",
    "content_signal": "YouTube @CraigHamiltonTV 8.64K (98 videos); podcast Meditation Changes Everything (~60 episodes); free online class; 12-week course and membership; '16,000 graduates'",
    "note": "Co-founder of Evolving Wisdom: role 'founder' in teaches_at. His site is copyright Evolving Wisdom, so its terms (no copying) may apply: own words only, check images carefully. A web search snippet says he lives in San Rafael, California (where Evolving Wisdom is based): needs a published source.",
-   "status": "planned",
+   "status": "live",
    "plan": "docs/content-audits/craig-hamilton.json",
    "skip_reason": null
   },
@@ -546,7 +546,7 @@
    ],
    "role": "course teacher",
    "note": "From the-shift-network-faculty.json (built 30 Oct 2026). Confirm a Shift course is still on sale or announced; check their own site for base, email, photo.",
-   "status": "dev",
+   "status": "live",
    "plan": "docs/content-audits/charleene-closshey.json",
    "skip_reason": null
   },
@@ -907,7 +907,7 @@
    ],
    "role": "course teacher",
    "note": "From the-shift-network-faculty.json (built 30 Oct 2026). Confirm a Shift course is still on sale or announced; check their own site for base, email, photo.",
-   "status": "dev",
+   "status": "live",
    "plan": "docs/content-audits/martha-jo-atkins.json",
    "skip_reason": null
   },
@@ -1019,7 +1019,7 @@
    ],
    "role": "course teacher",
    "note": "From the-shift-network-faculty.json (built 30 Oct 2026). Confirm a Shift course is still on sale or announced; check their own site for base, email, photo.",
-   "status": "dev",
+   "status": "live",
    "plan": "docs/content-audits/mary-anne-kennedy.json",
    "skip_reason": null
   },
@@ -1112,7 +1112,7 @@
    ],
    "role": "course teacher",
    "note": "From the-shift-network-faculty.json (built 30 Oct 2026). Confirm a Shift course is still on sale or announced; check their own site for base, email, photo.",
-   "status": "dev",
+   "status": "live",
    "plan": "docs/content-audits/jeralyn-glass.json",
    "skip_reason": null
   },
@@ -1182,7 +1182,7 @@
    ],
    "role": "course teacher + summit host",
    "note": "From the-shift-network-faculty.json (built 30 Oct 2026). Confirm a Shift course is still on sale or announced; check their own site for base, email, photo.",
-   "status": "dev",
+   "status": "live",
    "plan": "docs/content-audits/scott-m-taylor.json",
    "skip_reason": null
   },
@@ -1329,7 +1329,7 @@
    ],
    "role": "course teacher",
    "note": "From the-shift-network-faculty.json (built 30 Oct 2026). Confirm a Shift course is still on sale or announced; check their own site for base, email, photo.",
-   "status": "dev",
+   "status": "live",
    "plan": "docs/content-audits/laura-inserra.json",
    "skip_reason": null
   },
@@ -1457,7 +1457,7 @@
    ],
    "role": "course teacher",
    "note": "From the-shift-network-faculty.json (built 30 Oct 2026). Confirm a Shift course is still on sale or announced; check their own site for base, email, photo.",
-   "status": "dev",
+   "status": "live",
    "plan": "docs/content-audits/rose-cole.json",
    "skip_reason": null
   },
@@ -1489,7 +1489,7 @@
    ],
    "role": "course teacher",
    "note": "From the-shift-network-faculty.json (built 30 Oct 2026). Confirm a Shift course is still on sale or announced; check their own site for base, email, photo.",
-   "status": "dev",
+   "status": "live",
    "plan": "docs/content-audits/jamie-butler.json",
    "skip_reason": null
   },
@@ -1638,5 +1638,5 @@
    "skip_reason": "Shift course not confirmed current; theshiftnetwork.com refuses our fetches, and shaktidurga.com returns a Cloudflare bot check (403) even for robots.txt, so it was not fetched or retried; no other own page showing a current Shift course was checked (search budget used up). The queue lists her Shift course as self-paced from 2025."
   }
  ],
- "updated": "2026-11-04T14:36:20.023Z"
+ "updated": "2026-11-04T16:54:52.419Z"
 }

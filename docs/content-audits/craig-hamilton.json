@@ -28,12 +28,7 @@
       ]
     }
   },
-  "teaches_at": [
-    {
-      "hub": "evolving-wisdom",
-      "role": "founder"
-    }
-  ],
+  "teaches_at": [],
   "videos": [
     {
       "title": "Let It Be: Discovering Freedom Through Surrender Meditation (Episode 40)",
@@ -41,7 +36,8 @@
       "subjects": [
         "meditation",
         "spiritual-awakening"
-      ]
+      ],
+      "channel": "Craig Hamilton"
     },
     {
       "title": "Awakening Beyond the Mind: Freedom from the Trance of Thought (Episode 45)",
@@ -49,7 +45,8 @@
       "subjects": [
         "spiritual-awakening",
         "meditation"
-      ]
+      ],
+      "channel": "Craig Hamilton"
     },
     {
       "title": "The Perfection of This Moment: A Meditative Journey into Wholenes (Episode 43)",
@@ -57,7 +54,8 @@
       "subjects": [
         "meditation",
         "spiritual-awakening"
-      ]
+      ],
+      "channel": "Craig Hamilton"
     },
     {
       "title": "The Practice of Emotional Freedom: Feeling Without Resistance (Episode 42)",
@@ -65,7 +63,8 @@
       "subjects": [
         "meditation",
         "spiritual-awakening"
-      ]
+      ],
+      "channel": "Craig Hamilton"
     },
     {
       "title": "A Beginner’s Mind: The Practice of Living in the Unknown (Episode 41)",
@@ -73,7 +72,8 @@
       "subjects": [
         "spiritual-awakening",
         "meditation"
-      ]
+      ],
+      "channel": "Craig Hamilton"
     },
     {
       "title": "Dissolving the Separate Self: The Practice of Emptiness (Episode 50)",
@@ -81,7 +81,8 @@
       "subjects": [
         "non-duality",
         "meditation"
-      ]
+      ],
+      "channel": "Craig Hamilton"
     },
     {
       "title": "Beyond the Story of Self: Four Meditations to Loosen the Ego's Grip (Episode 37)",
@@ -89,14 +90,16 @@
       "subjects": [
         "meditation",
         "spiritual-awakening"
-      ]
+      ],
+      "channel": "Craig Hamilton"
     },
     {
       "title": "Unlocking the Power of Stillness: Equanimity Meditation (Episode 34)",
       "url": "https://www.youtube.com/watch?v=mp19dRFBEgE",
       "subjects": [
         "meditation"
-      ]
+      ],
+      "channel": "Craig Hamilton"
     },
     {
       "title": "The Undivided Heart: Releasing Our Resistance to Awakening (Episode 31)",
@@ -104,7 +107,8 @@
       "subjects": [
         "spiritual-awakening",
         "meditation"
-      ]
+      ],
+      "channel": "Craig Hamilton"
     },
     {
       "title": "Letting Go of Wanting: A Guided Meditation (Episode 46)",
@@ -112,7 +116,8 @@
       "subjects": [
         "meditation",
         "spiritual-awakening"
-      ]
+      ],
+      "channel": "Craig Hamilton"
     }
   ],
   "books": [],
@@ -128,7 +133,8 @@
       "subjects": [
         "meditation",
         "spiritual-awakening"
-      ]
+      ],
+      "image": "https://craighamiltonglobal.com/hs-fs/hubfs/IC-Landing%20Pages/LP%2018/introagain.jpg?width=300&height=300&name=introagain.jpg"
     },
     {
       "title": "Awakened Life Monthly Membership",
@@ -141,7 +147,8 @@
       "subjects": [
         "meditation",
         "spiritual-awakening"
-      ]
+      ],
+      "image": "https://craighamiltonglobal.com/hs-fs/hubfs/CraigHamilton_May2025/images/craig_subbanner-v2.jpg?width=942&height=118&name=craig_subbanner-v2.jpg"
     }
   ],
   "free_resources": [
@@ -154,7 +161,8 @@
       "subjects": [
         "meditation",
         "spiritual-awakening"
-      ]
+      ],
+      "image": "https://yt3.googleusercontent.com/iU1ua5RcLB3rH89EIRyBdA-CN4uPCV4-N67ZlSMTaWDmRPPsiK3NdQ2h3CjZZ1EYnY5Qv_cOyA=s900"
     },
     {
       "title": "Meditation Changes Everything (podcast)",
@@ -165,7 +173,8 @@
       "subjects": [
         "meditation",
         "spiritual-awakening"
-      ]
+      ],
+      "image": "https://craighamiltonglobal.com/hs-fs/hubfs/CraigHamilton_May2025/images/MeditationChangesEverything-Orange.png?width=1920&height=1920&name=MeditationChangesEverything-Orange.png"
     }
   ],
   "sprint": {
@@ -186,7 +195,8 @@
       "Possible related listing: married to Claire Zammit (rank 202, same hub). They teach separately (meditation vs Feminine Power), so I kept them as two listings.",
       "His site is copyright Evolving Wisdom, whose terms forbid copying: all wording is my own, and the only photo is his YouTube avatar (no image taken from craighamiltonglobal.com or evolvingwisdom.com). The avatar is served at 551 px, the largest available.",
       "Videos: the channel shows only its 30 most recent of 98 videos without scripted requests; the 10 kept are the most viewed of those 30 (watch-page view counts, 4 Nov 2026). Older uploads may have more views.",
-      "The YouTube channel page served auto-translated Portuguese titles by default; titles here are the English originals (channel page with hl=en, which matches oEmbed). A zero-width character was removed from 'Dissolving the Separate Self'."
+      "The YouTube channel page served auto-translated Portuguese titles by default; titles here are the English originals (channel page with hl=en, which matches oEmbed). A zero-width character was removed from 'Dissolving the Separate Self'.",
+      "Owner, 4 Nov 2026: insert without the Evolving Wisdom hub link; Evolving Wisdom itself is left out."
     ],
     "left_out": [
       "Integral Enlightenment (9-week course): only an Infusionsoft order form link, no page of its own; not opened.",
@@ -194,5 +204,6 @@
       "Books: none authored by him found.",
       "Older YouTube uploads (68 of 98) not reviewed for view counts."
     ]
-  }
+  },
+  "images_final": true
 }
