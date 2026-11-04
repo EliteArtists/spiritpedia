@@ -1,0 +1,34 @@
+{
+  "env": "live",
+  "healer": {
+    "id": 699,
+    "healer_slug": "genevieve-tregor"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "4c7d2469-1136-4ebe-8403-2a1343090ca9",
+      "slug": "insight-meditation-daylong-retreat-the-gift-of-presence",
+      "title": "Insight Meditation Daylong Retreat: The Gift of Presence"
+    },
+    {
+      "table": "courses",
+      "id": "3ee055e0-3be9-4f62-bc2d-7d13843a03b0",
+      "slug": "cultivating-a-peaceful-heart-the-practice-of-loving-kindness-metta",
+      "title": "Cultivating A Peaceful Heart: The Practice of Loving-kindness (Metta)"
+    },
+    {
+      "table": "courses",
+      "id": "662a7dac-2d72-4bb7-ae61-7a2f6a1f0f15",
+      "slug": "freeing-the-heart-awakening-insight",
+      "title": "Freeing the Heart, Awakening Insight"
+    },
+    {
+      "table": "free_resources",
+      "id": "3a59d798-5702-420b-96d5-76b6a7e0301e",
+      "slug": "from-letting-go-to-being-present-reclaiming-the-cliches",
+      "title": "From 'Letting Go' to 'Being Present': Reclaiming the Clichés"
+    }
+  ],
+  "at": "2026-11-04T12:04:37.159Z"
+}

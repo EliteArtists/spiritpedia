@@ -1,0 +1,51 @@
+{
+  "env": "live",
+  "healer": {
+    "id": 702,
+    "healer_slug": "dawn-mauricio"
+  },
+  "rows": [
+    {
+      "table": "books",
+      "id": 1871,
+      "slug": "mindfulness-meditation-for-beginners-dawn-mauricio",
+      "title": "Mindfulness Meditation for Beginners: 50 Meditations to Practice Awareness, Acceptance, and Peace"
+    },
+    {
+      "table": "courses",
+      "id": "8f37fe74-a708-42d5-a6b0-4f79b491d8a6",
+      "slug": "everyday-dhamma-community",
+      "title": "Everyday Dhamma Community"
+    },
+    {
+      "table": "courses",
+      "id": "9ab4263e-b6b4-45ae-ac50-13981efab9de",
+      "slug": "retreats-classes-and-online-series-with-dawn-mauricio",
+      "title": "Retreats, Classes and Online Series with Dawn Mauricio"
+    },
+    {
+      "table": "free_resources",
+      "id": "915b0570-2f8d-453e-bb69-614a8205ea1c",
+      "slug": "mindfulness-of-breath",
+      "title": "Mindfulness Of Breath"
+    },
+    {
+      "table": "free_resources",
+      "id": "ffc2a17f-2085-47c9-bb6e-08214e340349",
+      "slug": "setting-an-intention",
+      "title": "Setting An Intention"
+    },
+    {
+      "table": "free_resources",
+      "id": "e0b05d0d-3e9f-40a6-bd16-deababa50808",
+      "slug": "dawn-mauricios-dharma-talks-on-dharma-seed",
+      "title": "Dawn Mauricio's Dharma Talks on Dharma Seed"
+    },
+    {
+      "table": "hub_teachers",
+      "id": "7a27f652-83b8-4a45-b3a3-24bfb23fa026",
+      "title": "dawn-mauricio teaches at Insight Timer"
+    }
+  ],
+  "at": "2026-11-04T12:04:47.018Z"
+}

@@ -1,0 +1,57 @@
+{
+  "env": "live",
+  "healer": {
+    "id": 688,
+    "healer_slug": "kelley-weber"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "a235ea77-1558-4bd5-a980-da3dbc3d2828",
+      "slug": "spiritual-direction",
+      "title": "Spiritual Direction"
+    },
+    {
+      "table": "courses",
+      "id": "19861735-12b4-4bf9-900e-6d3cdd0d51ce",
+      "slug": "enneagram-coaching",
+      "title": "Enneagram Coaching"
+    },
+    {
+      "table": "courses",
+      "id": "c6a75cf8-0441-4f36-a343-0ece7693eb79",
+      "slug": "the-somatic-enneagram-day-retreat",
+      "title": "The Somatic Enneagram (Day Retreat)"
+    },
+    {
+      "table": "free_resources",
+      "id": "2b5fe385-657a-4751-b69b-1434a4a57f2e",
+      "slug": "where-has-god-been-all-my-life-a-spiritual-autobiography-course",
+      "title": "Where Has God Been All My Life? A Spiritual Autobiography Course"
+    },
+    {
+      "table": "free_resources",
+      "id": "15b99316-7c5b-4281-8689-c8a858e81a57",
+      "slug": "introduction-to-mindfulness-attention-awareness-and-the-paradigm-of-the-seeds",
+      "title": "Introduction to Mindfulness: Attention, Awareness and the Paradigm of the Seeds"
+    },
+    {
+      "table": "free_resources",
+      "id": "185c4530-a2f4-4e1e-a638-9a2582ea1c03",
+      "slug": "a-practice-in-contentment-enneagram",
+      "title": "A Practice In Contentment: Enneagram"
+    },
+    {
+      "table": "free_resources",
+      "id": "a328dc0d-dd63-44cb-890a-9e09fbcc9dcd",
+      "slug": "the-generosity-of-silence-listening",
+      "title": "The Generosity Of Silence & Listening"
+    },
+    {
+      "table": "hub_teachers",
+      "id": "caa7daa1-4353-43bf-8a17-41fb5355283b",
+      "title": "kelley-weber teaches at Insight Timer"
+    }
+  ],
+  "at": "2026-11-04T12:03:57.653Z"
+}

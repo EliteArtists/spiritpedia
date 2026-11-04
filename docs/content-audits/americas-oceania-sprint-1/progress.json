@@ -19,7 +19,7 @@
    "email_or_form_seen": "info@zlmc.org (centre)",
    "content_signal": "teisho on centre YouTube, dated retreats, Sunday programme",
    "note": "Co-abbot with wife June Ryushin Tanoue: one listing",
-   "status": "dev",
+   "status": "live",
    "plan": "docs/content-audits/robert-joshin-althouse.json",
    "skip_reason": null
   },
@@ -37,7 +37,7 @@
    "email_or_form_seen": "contact form https://www.jewelheart.org/contact-us/",
    "content_signal": "Jewel Heart talks, courses, retreats",
    "note": "Spiritual Director of Jewel Heart",
-   "status": "dev",
+   "status": "live",
    "plan": "docs/content-audits/demo-rinpoche.json",
    "skip_reason": null
   },
@@ -55,7 +55,7 @@
    "email_or_form_seen": "trueoceanofgrace@gmail.com",
    "content_signal": "Insight Timer tracks, dharma songs; Plum Village dharma teacher",
    "note": "Musician as well as dharma teacher: check it is not mainly a music project",
-   "status": "dev",
+   "status": "live",
    "plan": "docs/content-audits/joe-reilly.json",
    "skip_reason": null
   },
@@ -73,7 +73,7 @@
    "email_or_form_seen": "info@meditation-indianapolis.org (centre)",
    "content_signal": "KMC Indianapolis classes, Foundation Program, retreats",
    "note": "Resident teacher (Kadampa teachers move between centres); likely thin",
-   "status": "dev",
+   "status": "live",
    "plan": "docs/content-audits/gen-kelsang-chokyi.json",
    "skip_reason": null
   },
@@ -109,7 +109,7 @@
    "email_or_form_seen": "contact@chicagozen.org (centre)",
    "content_signal": "2 books, sesshin, weekly sittings",
    "note": "Lead was Sevan Ross; current abbot is Shodhin Geiman",
-   "status": "dev",
+   "status": "live",
    "plan": "docs/content-audits/shodhin-geiman.json",
    "skip_reason": null
   },
@@ -253,9 +253,9 @@
    "email_or_form_seen": "to check",
    "content_signal": "IT 3.6k; reiki, shamanic, past-life work, guided meditations",
    "note": "Spiritual/energy healing",
-   "status": "dev",
-   "plan": "docs/content-audits/andrea-belzer.json",
-   "skip_reason": null
+   "status": "skipped",
+   "plan": null,
+   "skip_reason": "Dropped by the owner (4 Nov 2026): her depossession page claims physical healing, as with Carmen Ng. Was on dev, rolled back; plan in dropped/."
   },
   {
    "rank": 205,
@@ -307,7 +307,7 @@
    "email_or_form_seen": "to check",
    "content_signal": "IT 590; spiritual direction, contemplative talks",
    "note": "Spiritual director, Enneagram",
-   "status": "dev",
+   "status": "live",
    "plan": "docs/content-audits/kelley-weber.json",
    "skip_reason": null
   },
@@ -343,7 +343,7 @@
    "email_or_form_seen": "to check",
    "content_signal": "Trimatri Reiki founder, author",
    "note": "Reiki/akashic; base needs own-site confirmation",
-   "status": "dev",
+   "status": "live",
    "plan": "docs/content-audits/gina-kitzmiller.json",
    "skip_reason": null
   },
@@ -433,7 +433,7 @@
    "email_or_form_seen": "email on own site",
    "content_signal": "IT 1k; YouTube yoga classes; Human Design, Reiki, mentoring",
    "note": "Yoga/Ayurveda/Reiki/Human Design; wellness-coaching leaning",
-   "status": "dev",
+   "status": "live",
    "plan": "docs/content-audits/melinda-vankirk.json",
    "skip_reason": null
   },
@@ -486,7 +486,7 @@
    "email_or_form_seen": "to check (dawnmountain.org/contact)",
    "content_signal": "several books (Snow Lion/Wisdom), Dawn Mountain programmes, webcasts",
    "note": "Lama Rigzin Drolma; teaches with husband Harvey Aronson (one listing)",
-   "status": "dev",
+   "status": "live",
    "plan": "docs/content-audits/anne-carolyn-klein.json",
    "skip_reason": null
   },
@@ -537,7 +537,7 @@
    "email_or_form_seen": "to check",
    "content_signal": "dharma talks on HZC site; no books known",
    "note": "may be thin",
-   "status": "dev",
+   "status": "live",
    "plan": "docs/content-audits/gaelyn-godwin.json",
    "skip_reason": null
   },
@@ -605,7 +605,7 @@
    "email_or_form_seen": "unknown",
    "content_signal": "unknown",
    "note": "own site not yet found",
-   "status": "dev",
+   "status": "live",
    "plan": "docs/content-audits/gena-davis.json",
    "skip_reason": null
   },
@@ -741,7 +741,7 @@
    "email_or_form_seen": "email on home page",
    "content_signal": "founder of One Dharma Nashville; retreats (Bethany Hills Dec, Big Bear Nov), weekly classes, dharma talks, Lion's Roar/Tricycle articles, SoundCloud",
    "note": "Insight teacher; Spirit Rock-trained (do not open spiritrock.org)",
-   "status": "dev",
+   "status": "live",
    "plan": "docs/content-audits/lisa-ernst.json",
    "skip_reason": null
   },
@@ -758,7 +758,7 @@
    "email_or_form_seen": "contact page to check",
    "content_signal": "weekly talks (Zoom and in person), audio talks page, vihara YouTube channel, Dharma Seed talks",
    "note": "Theravada bhikkhuni, abbess; site crawl-delay 60",
-   "status": "dev",
+   "status": "live",
    "plan": "docs/content-audits/ayya-sudhamma.json",
    "skip_reason": null
   },
@@ -775,7 +775,7 @@
    "email_or_form_seen": "contact page to check",
    "content_signal": "guiding teacher Wild Heart; podcast; centre YouTube; retreats and classes",
    "note": "listing may be the teacher not the centre; addiction-centre work to watch for health rule",
-   "status": "dev",
+   "status": "live",
    "plan": "docs/content-audits/mikey-noechel.json",
    "skip_reason": null
   },
@@ -826,7 +826,7 @@
    "email_or_form_seen": "unknown",
    "content_signal": "weekly groups, workshops, podcast talks",
    "note": "also a social worker; may be mainly therapy",
-   "status": "dev",
+   "status": "live",
    "plan": "docs/content-audits/andrew-chapman.json",
    "skip_reason": null
   },
@@ -946,7 +946,7 @@
    "email_or_form_seen": "email cultivatemeditation@gmail.com (contact page)",
    "content_signal": "YouTube 400+ talks, 5+ online courses, weekly studio classes, book Brave Awareness",
    "note": "Former spiritual director, Kansas City Buddhist Center (closed 2023); ordained ngakpa",
-   "status": "dev",
+   "status": "live",
    "plan": "docs/content-audits/ronn-pawo-mclane.json",
    "skip_reason": null
   },
@@ -964,7 +964,7 @@
    "email_or_form_seen": "email info@solutionmindfulness.com",
    "content_signal": "daylong retreats, online metta course, One World Mindfulness online retreats",
    "note": "Founding teacher, Insight Meditation Scottsdale; MMTCP faculty",
-   "status": "dev",
+   "status": "live",
    "plan": "docs/content-audits/genevieve-tregor.json",
    "skip_reason": null
   },
@@ -982,7 +982,7 @@
    "email_or_form_seen": "email debra@healingdebra.com",
    "content_signal": "weekly YouTube meditations, Reiki I/II/Master trainings, book Amazing Intuition",
    "note": "Psychic medium and Reiki Master",
-   "status": "dev",
+   "status": "live",
    "plan": "docs/content-audits/debra-busemeyer-baker.json",
    "skip_reason": null
   },
@@ -1000,7 +1000,7 @@
    "email_or_form_seen": "email cindy@cindynovelo.com",
    "content_signal": "weekly yoga classes online and in Lawrence, monthly women's sangha, private sessions",
    "note": "MMTCP-certified mindfulness teacher, yoga teacher, singer-songwriter",
-   "status": "dev",
+   "status": "live",
    "plan": "docs/content-audits/cindy-novelo.json",
    "skip_reason": null
   },
@@ -1144,7 +1144,7 @@
    "email_or_form_seen": "contact form",
    "content_signal": "book (Mindfulness Meditation for Beginners), membership, Insight Timer tracks, Dharma Seed talks",
    "note": "Insight teacher (Spirit Rock trained), teaches in English",
-   "status": "dev",
+   "status": "live",
    "plan": "docs/content-audits/dawn-mauricio.json",
    "skip_reason": null
   },
@@ -1180,7 +1180,7 @@
    "email_or_form_seen": "reception@divineclarity.com",
    "content_signal": "many dated workshops at Divine Clarity, YouTube channel, readings",
    "note": "evidential medium, founder of Divine Clarity",
-   "status": "dev",
+   "status": "live",
    "plan": "docs/content-audits/kristel-kernaghan.json",
    "skip_reason": null
   },
@@ -1234,7 +1234,7 @@
    "email_or_form_seen": "contact form",
    "content_signal": "many YouTube talks (English and French), Sangha Live course, Dharma Seed",
    "note": "TNI co-founder; bilingual",
-   "status": "dev",
+   "status": "live",
    "plan": "docs/content-audits/pascal-auclair.json",
    "skip_reason": null
   },
@@ -1252,7 +1252,7 @@
    "email_or_form_seen": "contact form",
    "content_signal": "retreats 2026/2027, Sunday Sangha, YouTube talks, Dharma Seed",
    "note": "TNI co-founder; teaches in English",
-   "status": "dev",
+   "status": "live",
    "plan": "docs/content-audits/daryl-lynn-ross.json",
    "skip_reason": null
   },
@@ -1270,7 +1270,7 @@
    "email_or_form_seen": "BSWA contact pages (to confirm)",
    "content_signal": "major author (4+ books), many talks on BSWA YouTube, guided meditations",
    "note": "Abbot of Bodhinyana; personal social accounts unclear, BSWA channel is shared",
-   "status": "dev",
+   "status": "live",
    "plan": "docs/content-audits/ajahn-brahm.json",
    "skip_reason": null
   },
@@ -1288,7 +1288,7 @@
    "email_or_form_seen": "BSWA contact a monastic (to confirm)",
    "content_signal": "sutta classes and retreats on BSWA YouTube",
    "note": "same monastery as 701",
-   "status": "dev",
+   "status": "live",
    "plan": "docs/content-audits/ajahn-brahmali.json",
    "skip_reason": null
   },
@@ -1509,5 +1509,5 @@
    "skip_reason": "No usable photo: her BSWA teacher page shows only a group Kathina photo, bswa.org images close the connection to the ingest photo check, and the only other photos found (Nalanda Buddhist Society, Malaysia) are group shots that do not clearly identify her."
   }
  ],
- "updated": "2026-11-03T19:53:06.566Z"
+ "updated": "2026-11-04T12:05:05.776Z"
 }

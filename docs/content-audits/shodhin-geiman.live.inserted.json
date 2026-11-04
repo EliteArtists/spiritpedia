@@ -1,0 +1,34 @@
+{
+  "env": "live",
+  "healer": {
+    "id": 687,
+    "healer_slug": "shodhin-geiman"
+  },
+  "rows": [
+    {
+      "table": "books",
+      "id": 1863,
+      "slug": "alone-in-a-world-of-wounds",
+      "title": "Alone in a World of Wounds: A Dharmic Response to the Ills of Sentient Beings"
+    },
+    {
+      "table": "books",
+      "id": 1864,
+      "slug": "obstacles-to-stillness",
+      "title": "Obstacles to Stillness: Thoughts, Hindrances, and Self-Surrender in Evagrius and the Buddha"
+    },
+    {
+      "table": "courses",
+      "id": "8929cd8d-42ca-4b65-9b1c-6055373001be",
+      "slug": "rohatsu-sesshin",
+      "title": "Rohatsu Sesshin"
+    },
+    {
+      "table": "free_resources",
+      "id": "89a4ea17-ef29-4a82-a246-671fbf56e130",
+      "slug": "a-typical-week-at-the-chicago-zen-center",
+      "title": "A Typical Week at the Chicago Zen Center"
+    }
+  ],
+  "at": "2026-11-04T12:03:55.233Z"
+}

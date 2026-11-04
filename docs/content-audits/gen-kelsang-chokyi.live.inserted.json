@@ -1,0 +1,28 @@
+{
+  "env": "live",
+  "healer": {
+    "id": 686,
+    "healer_slug": "gen-kelsang-chokyi"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "6aa79679-4ac2-4f0f-83cc-68913e1330e0",
+      "slug": "cultivating-inner-stability-sunday-morning-meditation-class",
+      "title": "Cultivating Inner Stability: Sunday Morning Meditation Class"
+    },
+    {
+      "table": "courses",
+      "id": "2114a5d5-9e91-4016-8b8d-001c4adca4ff",
+      "slug": "beginner-workshop-the-art-of-acceptance",
+      "title": "Beginner Workshop: The Art of Acceptance"
+    },
+    {
+      "table": "courses",
+      "id": "a1d03608-7069-464b-bba1-597cc6a948aa",
+      "slug": "cincy-workshop-discovering-strength-within",
+      "title": "Cincy Workshop: Discovering Strength Within"
+    }
+  ],
+  "at": "2026-11-04T12:03:53.210Z"
+}

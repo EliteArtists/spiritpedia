@@ -1,0 +1,52 @@
+{
+  "env": "live",
+  "healer": {
+    "id": 691,
+    "healer_slug": "anne-carolyn-klein"
+  },
+  "rows": [
+    {
+      "table": "books",
+      "id": 1865,
+      "slug": "being-human-and-a-buddha-too",
+      "title": "Being Human and a Buddha Too: Longchenpa's Seven Trainings for a Sunlit Sky"
+    },
+    {
+      "table": "books",
+      "id": 1866,
+      "slug": "meeting-the-great-bliss-queen",
+      "title": "Meeting the Great Bliss Queen: Buddhists, Feminists, and the Art of the Self"
+    },
+    {
+      "table": "books",
+      "id": 1867,
+      "slug": "knowledge-and-liberation",
+      "title": "Knowledge and Liberation: Tibetan Buddhist Epistemology in Support of Transformative Religious Experience"
+    },
+    {
+      "table": "books",
+      "id": 1868,
+      "slug": "heart-essence-of-the-vast-expanse",
+      "title": "Heart Essence of the Vast Expanse: A Story of Transmission"
+    },
+    {
+      "table": "books",
+      "id": 1869,
+      "slug": "strand-of-jewels",
+      "title": "Strand of Jewels: My Teachers' Essential Guidance on Dzogchen"
+    },
+    {
+      "table": "courses",
+      "id": "022b4ebb-5f6b-4e3f-aaab-483320d19289",
+      "slug": "attention-and-connection-online-course",
+      "title": "Attention and Connection (online course)"
+    },
+    {
+      "table": "courses",
+      "id": "cf4bf5e2-731d-4fbc-a569-be9e7d4abd50",
+      "slug": "dzogchen-cycles",
+      "title": "Dzogchen Cycles"
+    }
+  ],
+  "at": "2026-11-04T12:04:11.436Z"
+}

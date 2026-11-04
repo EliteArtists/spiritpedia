@@ -260,6 +260,18 @@ The list to pick up from. Each points to where the detail lives.
     - **Contact coverage:** published email / contact form only / none.
     - **Hub links:** total teacher–hub links.
     These feed decisions such as the hero banner rotation (job #21).
+26. **Affiliate expansion (after launch;** owner, 4 Nov 2026). Join
+    mission-aligned programmes via Awin and others:
+    - **Spiritual publishing and learning:** Sounds True, Mindvalley, Gaia,
+      World of Books.
+    - **Meditation apps:** Headspace, Calm.
+    - **Retreats and experiences:** referral fees.
+    - **Ross:** The Shift Network Referral Partner programme, and an Insight
+      Timer partnership email.
+    **Guardrails:** no pharma or prescription weight loss; no wellness gadgets
+    or products sold on health claims; no banner or pop-up ad networks.
+    Featured content is never chosen by commission, and affiliate links never
+    go in emails.
 
 ---
 
@@ -304,7 +316,7 @@ how-to is `docs/admin-guide.md`; the personalisation rules are
 | **Website** | Live at **https://www.spiritpedia.co** (Next.js on Vercel). Every push that changes `web/` deploys to production |
 | **App (iOS)** | Flutter, iPhone and iPad. **1.0** is in Apple review. **1.0.0 (27)** is on TestFlight (`app/build/ios-release/Spiritpedia-1.0.0-27.ipa`; archive in Xcode's Archives, `2026-10-28/Spiritpedia 1.0.0 (27).xcarchive`, 28 Oct 2026). Build 24's archive (`2026-10-22/Runner 3.xcarchive`) is kept while 1.0 is in review; 25 and 26 were never uploaded and their files were deleted on 28 Oct |
 | **App (Android)** | The same code. The **closed test is live with 15 testers**; the production application is due about 9–10 Nov 2026 (§10.15, §12.8, `docs/google-play.md`). **1.0.0 (25)** (version code 25, `app/build/android-release/Spiritpedia-1.0.0-25.aab`) has been in the closed test since **31 Oct 2026**. Not yet in production |
-| **Database** | Supabase. Two projects: **live** (`uzmvcgew…`) and **dev** (`khtpbnof…`). Migrations `0000`–`0035` are on both; **`0036`** (Serpentine alias, Sprint B) is for the owner to run, dev first |
+| **Database** | Supabase. Two projects: **live** (`uzmvcgew…`) and **dev** (`khtpbnof…`). Migrations `0000`–`0036` are on both |
 | **Push** | Firebase Cloud Messaging only, with an APNs key. Moved on 22 Oct 2026 to two Firebase projects owned by **love@spiritpedia.co** (live `spiritpedia-ad62b`, dev `spiritpedia-dev-5e4d5`); checked end to end on iPhone, iPad and Android |
 | **Emails** | The approved copy of 21–22 Oct 2026 is live (§9.7). The outreach journey is eight emails, redirected to a test inbox by `JOURNEY_TEST_EMAIL` until the solicitor has checked cold email; no journey is running. Day 4 is live. Personal discovery editions are built but **off** until `DISCOVERY_EDITIONS=on` is set on Vercel (§9.7a) |
 | **Repository** | `https://github.com/EliteArtists/spiritpedia`, branch `main` only. No staging environment, no feature flags |
@@ -608,7 +620,7 @@ editor **on dev first, then live**, by the project owner. Dev is checked with
 throwaway users created through the Admin API (no email) and deleted
 afterwards; live is checked read-only.
 
-### 8.1 0012–0036 (0012–0035 on dev and live; 0036 to run)
+### 8.1 0012–0036 (all on dev and live)
 
 **`0012_favourites_slugs`** — data only, in one transaction.
 - Rewrites legacy `user_favourites.content_slug` values (numeric ids for books,
@@ -873,8 +885,8 @@ row: aliases (53), listings with a town, of those still without a place.
 on dev and live the same day). One alias: Bakewell → Matlock (12 km).
 Backfill and check row as in 0034 (aliases 54).
 
-**`0036_place_aliases_serpentine`** (3 Nov 2026, Sprint B; owner to run dev
-then live, before Sprint B goes live). One alias: Serpentine, Western
+**`0036_place_aliases_serpentine`** (3 Nov 2026, Sprint B; run by the owner
+on dev and live on 4 Nov 2026). One alias: Serpentine, Western
 Australia (Bodhinyana Monastery) → Baldivis (15 km). Check row aliases 55.
 
 ### 8.2 0000–0011
@@ -2832,7 +2844,7 @@ dev, give the pages to check, stop. Live after their OK, as for healers.
 
 | Regional Sprint A, UK, Ireland and Western Europe (`uk-europe-1`, after the location audit; the plan in `docs/reports/2026-11-03-regional-coverage.md`): 25 new teachers with a published base in a gap city (Barcelona, Amsterdam, Cardiff, Belfast, Dublin, Galway, Brighton, Oslo, Stockholm, Helsinki, Vienna, Cologne, St. Gallen, Nidau, Bordeaux and the Dordogne, Findhorn, Shropshire, Hebden Bridge; Gordon Smith UK only). Queue, brief, skips and per-teacher detail in `docs/content-audits/uk-europe-sprint-1/` (`REPORT.md`), report `docs/reports/2026-11-03-uk-europe-sprint-1.md` | 3 Nov 2026: 138 videos, 37 books, 68 offerings, 60 free resources, 10 hub links (IMS, Insight Timer). 3 Luminary by editorial override (John Philip Newell, Stephen Batchelor; Gordon Smith raised by the owner, 23 books and 1M+ sold, `owner-fixes-uk-europe-2026-11-03.mjs`, logged), 22 Local Hero. Owner kept Stephen Batchelor (retired from courses; talks and books) and Lisette Schuitemaker; Bordeaux for the Batchelors and Gordon Smith with no town accepted. Email: 18 published, 7 contact form. 32 skipped (mostly no published base or no contact route; health rule; too thin), Sarah Gregg dropped (health rule). `0034` run by the owner on dev (53, 366, 2) | 3 Nov 2026, the same (`0034` on live first, 53, 342, 2); 24 with a place for Near You, Gordon Smith country only |
 | Regional Sprint A2, city first (`uk-europe-2`; the cities Sprint A left empty): 22 new teachers, at least one in or beside each of Birmingham, Nottingham, Sheffield (Bakewell), Manchester, Leeds, Liverpool, Glasgow, Edinburgh (Penicuik), Cork, Berlin, Copenhagen, Paris (and Montreuil), Lisbon (and Almada). Folder `docs/content-audits/uk-europe-sprint-2/` (brief, queue of 83 leads, skips, `REPORT.md`), report `docs/reports/2026-11-03-uk-europe-sprint-2.md` | 3 Nov 2026: 103 videos, 14 books, 80 offerings, 38 free resources, 11 Insight Timer links. 2 Luminary by count (Shai Tubali, John Butler), 20 Local Hero. Email: 20 published, 2 contact form. 59 skipped (no own site or contact, mainly therapy or fitness, health rule, no base in the city, robots.txt blocks). Owner decisions (`owner-fixes-uk-europe-2-2026-11-03.mjs`, logged): Steve Taylor Luminary by editorial stature; Adam Dacey's website_url and booking_url empty while mindspace.org.uk is hacked (tell him); Wendy Moran dropped (rolled back on dev, plan in `dropped/`). Ani Rinchen Khandro waits: edinburgh.samye.org's firewall refuses the ingest's honest user agent, so her only photos can't be checked (blocked means skip) | 3 Nov 2026: 21 teachers (Wendy Moran out), the same as dev; `0035` run by the owner on dev and live (54, 388, 2; 54, 366, 2); all 21 have a place. 3 Luminary, 18 Local Hero |
-| Regional Sprint B, city first (`regional-b-1`): US interior and South, Canada, Australia. 26 new teachers in or beside Chicago, Detroit, Indianapolis, Pittsburgh, St. Louis, Columbus, Houston, Nashville, Charlotte, Kansas City, Phoenix, Montréal, Winnipeg and Perth; nobody yet in Dallas, San Antonio, Tampa, Edmonton, Brisbane/Gold Coast or Adelaide. Folder `docs/content-audits/americas-oceania-sprint-1/` (brief, queue of 85 leads, skips, `REPORT.md`), report `docs/reports/2026-11-03-sprint-b.md` | 3 Nov 2026: 126 videos, 9 books, 73 offerings, 37 free resources, 6 Insight Timer links. 1 Luminary (Ajahn Brahm, editorial override; owner to confirm), 25 Local Hero. Email: 20 published, 6 contact form. 53 skipped. Yoga Alliance and ICRT directories not used (terms unconfirmed). The helpers' web searches are capped per session, which limited discovery. Needs `0036` for Serpentine | Waiting for the owner's OK and `0036` on live |
+| Regional Sprint B, city first (`regional-b-1`): US interior and South, Canada, Australia. 25 teachers in or beside Chicago, Detroit, Indianapolis, Pittsburgh, St. Louis, Columbus, Houston, Nashville, Charlotte, Kansas City, Phoenix, Montréal, Winnipeg and Perth; nobody yet in Dallas, San Antonio, Tampa, Edmonton, Brisbane/Gold Coast or Adelaide (the top-up runs with Sprint C). Folder `docs/content-audits/americas-oceania-sprint-1/` (brief, queue of 85 leads, skips, `REPORT.md`), report `docs/reports/2026-11-03-sprint-b.md` | 3 Nov 2026 on dev; **live 4 Nov 2026** after `0036` (owner, dev and live) and the owner's OK. 115 videos, 9 books, 68 offerings, 37 free resources, 5 Insight Timer links. 1 Luminary (Ajahn Brahm, editorial override, confirmed by the owner), 24 Local Hero. Owner decisions: Andrea Belzer dropped (her depossession page claims physical healing, as with Carmen Ng; rolled back on dev, plan in `dropped/`); Anne Carolyn Klein's Kindle ASINs accepted (linked from her centre); everything else kept as researched; Allison DuBois stays out. Yoga Alliance and ICRT directories not used (terms unconfirmed) | Live |
 
 ### 18.7 Hub-by-hub sprints (the standard method)
 
