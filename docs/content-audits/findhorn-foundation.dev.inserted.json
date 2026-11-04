@@ -1,0 +1,82 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 749,
+    "healer_slug": "findhorn-foundation"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "bb89a756-d7c0-4d43-9a5a-069f48df88c0",
+      "slug": "when-were-64-a-living-story",
+      "title": "When We're 64: A Living Story"
+    },
+    {
+      "table": "courses",
+      "id": "e865ab89-eaa0-4696-9597-90ec1ecbda83",
+      "slug": "experience-week-from-i-to-we-december-2026",
+      "title": "Experience Week: From I to We (December 2026)"
+    },
+    {
+      "table": "courses",
+      "id": "98e92992-5d28-45a8-9295-cb6474d052ce",
+      "slug": "crossing-the-threshold-a-new-years-celebration-in-community",
+      "title": "Crossing the Threshold: A New Year's Celebration in Community"
+    },
+    {
+      "table": "courses",
+      "id": "a0f7739e-85a7-4b62-9a1b-f5db4e6c0f52",
+      "slug": "experience-week-from-i-to-we-february-2027",
+      "title": "Experience Week: From I to We (February 2027)"
+    },
+    {
+      "table": "courses",
+      "id": "9d24c551-6d0c-4226-8e8e-153462658333",
+      "slug": "experience-week-from-i-to-we-march-2027",
+      "title": "Experience Week: From I to We (March 2027)"
+    },
+    {
+      "table": "courses",
+      "id": "bf33d888-72ec-47b0-9627-650515f9c598",
+      "slug": "following-your-calling-discovering-purpose-through-inner-listening",
+      "title": "Following your Calling: Discovering purpose through Inner Listening"
+    },
+    {
+      "table": "courses",
+      "id": "53a89f29-7420-4524-8e56-83c6a639637b",
+      "slug": "seeds-of-light",
+      "title": "Seeds of Light"
+    },
+    {
+      "table": "free_resources",
+      "id": "50dc7ab0-41ad-4fa3-b837-cc038d3c312f",
+      "slug": "meditate-with-us",
+      "title": "Meditate with us"
+    },
+    {
+      "table": "free_resources",
+      "id": "25dc7a09-fbc3-4008-ba41-d4d94e64a72c",
+      "slug": "weekday-meditation-replays",
+      "title": "Weekday meditation replays"
+    },
+    {
+      "table": "free_resources",
+      "id": "7be5cae1-a078-4c9b-81f4-07d380bdfff2",
+      "slug": "guidance-from-eileen-caddy",
+      "title": "Guidance from Eileen Caddy"
+    },
+    {
+      "table": "free_resources",
+      "id": "cd2abfe0-7836-489e-bbae-40d7ea25c0e0",
+      "slug": "daily-inspiration-cards",
+      "title": "Daily Inspiration Cards"
+    },
+    {
+      "table": "free_resources",
+      "id": "c48ae48e-a0e2-4af0-8baa-1ea8ee96b7e0",
+      "slug": "findhorn-foundation-on-youtube",
+      "title": "Findhorn Foundation on YouTube"
+    }
+  ],
+  "at": "2026-11-04T14:14:00.606Z"
+}

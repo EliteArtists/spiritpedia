@@ -1,0 +1,106 @@
+{
+ "hub": "evolving-wisdom",
+ "source": "evolvingwisdom.com home page (the site is now a single page; sitemap lists only it, legal pages and /recip/ opt-out pages) and the linked sister site craighamiltonglobal.com, read 4 Nov 2026; robots.txt read first on both (HubSpot defaults). Course links on evolvingwisdom.com go to Infusionsoft order forms, which were not opened. Evolving Wisdom's terms forbid copying its content: names, titles and links only.",
+ "how_ranked": "Current faculty = teacher of a course offered on evolvingwisdom.com now (evergreen, undated). Founders first.",
+ "on_spiritpedia_current": [
+  "neale-donald-walsch"
+ ],
+ "not_on_spiritpedia": [
+  "Craig Hamilton",
+  "Claire Zammit",
+  "Jean Houston"
+ ],
+ "current_faculty": [
+  {
+   "name": "Neale Donald Walsch",
+   "slug": "neale-donald-walsch",
+   "on_spiritpedia": true,
+   "hub_url": "https://evolvingwisdom.com/",
+   "programmes": [
+    [
+     "Conversations with God",
+     null,
+     null,
+     "https://nb303.infusionsoft.com/app/orderForms/ef0d7080-b3f6-451c-aa2e-a9dec7fe22b7"
+    ],
+    [
+     "Living From Your Soul",
+     null,
+     null,
+     "https://nb303.infusionsoft.com/app/orderForms/efb68a25-4cf8-48de-9ec5-d9c9437ce53f"
+    ]
+   ],
+   "status": "linked (instructor)"
+  },
+  {
+   "name": "Craig Hamilton",
+   "on_spiritpedia": false,
+   "role": "founder",
+   "hub_url": "https://evolvingwisdom.com/",
+   "programmes": [
+    [
+     "Practice of Direct Awakening",
+     null,
+     null,
+     "https://craighamiltonglobal.com/directawakening/enroll"
+    ],
+    [
+     "Integral Enlightenment",
+     null,
+     null,
+     "https://nb303.infusionsoft.com/app/orderForms/a7fb6ac0-994d-4d47-8ec0-efa6769e80cd"
+    ],
+    [
+     "Awakened Life Monthly Membership",
+     null,
+     null,
+     "https://craighamiltonglobal.com/awakened-life"
+    ]
+   ],
+   "status": "queued (rank 201)"
+  },
+  {
+   "name": "Claire Zammit",
+   "on_spiritpedia": false,
+   "role": "founder",
+   "hub_url": "https://evolvingwisdom.com/",
+   "programmes": [
+    [
+     "Feminine Power: The Essential Course for the Awakening Woman",
+     null,
+     null,
+     "https://nb303.infusionsoft.com/app/orderForms/a0a35283-398d-4b59-9007-e4520716e38c"
+    ],
+    [
+     "The Influencer's Masterclass (with Jean Houston)",
+     null,
+     null,
+     "https://nb303.infusionsoft.com/app/orderForms/e128f43c-e9af-4677-b4b1-f2b918ac18cd"
+    ]
+   ],
+   "status": "queued (rank 202)"
+  },
+  {
+   "name": "Jean Houston",
+   "on_spiritpedia": false,
+   "hub_url": "https://evolvingwisdom.com/",
+   "programmes": [
+    [
+     "Unlock Your Quantum Powers",
+     null,
+     null,
+     "https://nb303.infusionsoft.com/app/orderForms/16f15272-2683-4136-92bb-7f43003592d5"
+    ],
+    [
+     "Awakening to Your Life's Purpose",
+     null,
+     null,
+     "https://nb303.infusionsoft.com/app/orderForms/cd16592e-f548-4c6e-ae67-b9685a53904a"
+    ]
+   ],
+   "status": "queued (rank 203)"
+  }
+ ],
+ "past_faculty_seen": [],
+ "past_faculty_note": "No past faculty visible: the old course pages now redirect to the home page. The /recip/ opt-out pages name reciprocal mailing partners (e.g. Jeanna Gabellini, Christian Mickelsen, Eben Pagan, Peter Sage, Jason Prall, Derek Rydall, Mind Movies), who are not Evolving Wisdom faculty."
+}

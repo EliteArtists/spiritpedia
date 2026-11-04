@@ -1,0 +1,103 @@
+{
+  "healer": {
+    "healer_slug": "barbara-swetina",
+    "location_source": "https://sacredsongs.net/",
+    "create": {
+      "name": "Barbara Swetina",
+      "bio": "Barbara Swetina is a Vienna-born musician who has made her home in the Findhorn community in the north of Scotland since 1984, and for many years has directed the ecovillage's music. She studied music and music education in Salzburg, plays several instruments, and leads the Dances of Universal Peace, circle dances that set short sacred phrases from many faiths to simple tunes and steps. More than thirty years ago she started a daily half-hour of Taizé-style devotional singing at Findhorn, and it still opens the community's mornings.\n\nShe treats singing and dancing together as a form of prayer, and as one of the quickest ways for a room of strangers to become a community. With John Rees she compiled two interfaith songbooks drawn from the Findhorn repertoire, and she has recorded several albums of chants and peace songs. At Findhorn she leads a New Year gathering of song, dance and ritual with Jilani Cordelia and a summer week of music and stillness with the pianist Joachim Goerke; she also trains song and dance leaders in Switzerland and hosts an online singing circle for friends around the world. Her MusicTrain game grew out of her own early struggle to read music.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local_online",
+      "city": "Findhorn",
+      "country": "United Kingdom",
+      "subjects": ["spirituality", "sound-healing", "mysticism"],
+      "website_url": "https://sacredsongs.net/",
+      "booking_url": "https://sacredsongs.net/events/index.html",
+      "youtube_url": "https://www.youtube.com/@BarbaraSwetina",
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "barbara@barbaraswetina.com",
+      "image_urls": [
+        "https://yt3.googleusercontent.com/zHAkRku2qy2X6bOHHjrFUXmGcK10mGjWLrOQK2RlHdG0ggxYrKI0pM2dRXDx8bzA_rFiCBGEiWc=s900"
+      ]
+    }
+  },
+  "teaches_at": [
+    { "hub": "findhorn-foundation", "role": "instructor" }
+  ],
+  "videos": [
+    {
+      "title": "Crossing the Threshold 2025 In Conversation with Barbara Swetina & Jilani Cordelia - Song & Dance",
+      "url": "https://www.youtube.com/watch?v=cNe_809OQ7o",
+      "subjects": ["spirituality", "mysticism"]
+    }
+  ],
+  "books": [],
+  "courses": [
+    {
+      "title": "Crossing the Threshold: A New Year Celebration in Song and Dance",
+      "url": "https://findhorn-foundation.secure.retreat.guru/program/partner-crossing-the-threshold-a-new-years-celebration-in-community/",
+      "description": "A six-day residential gathering at Findhorn over the turn of the year, co-led with Jilani Cordelia. The days mix Dances of Universal Peace, community singing, story, ritual and quiet reflection in nature, and end with the community's New Year's Eve celebration in the Universal Hall.",
+      "price": "£360 GBP discounted / £390 GBP regular / £430 GBP supporting (accommodation and meals extra)",
+      "product_type": "retreat",
+      "start_date": "2026-12-28",
+      "end_date": "2027-01-03",
+      "subjects": ["spirituality", "mysticism"]
+    },
+    {
+      "title": "Homecoming in Song & Stillness",
+      "url": "https://sacredsongs.net/events/homecoming27.html",
+      "description": "A seven-day summer retreat in the Universal Hall at Findhorn, led with the German pianist and mantra-song composer Joachim Goerke. Participants sing in harmony, learn new songs and peace dances, share evening concerts and spend time in silence and in nature. No musical experience is needed.",
+      "price": "£480 GBP standard; £420 GBP early bird (book before 15 April)",
+      "product_type": "retreat",
+      "start_date": "2027-07-12",
+      "end_date": "2027-07-18",
+      "subjects": ["sound-healing", "spirituality", "meditation"]
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "International Singing Family on Zoom",
+      "url": "https://sacredsongs.net/events/singing_sessions/singing_sesssions.html",
+      "description": "An online singing circle that began during the pandemic and carries on Findhorn's devotional singing for people anywhere. Sessions open with an attunement and move through songs, prayers and the odd poem, using Barbara's community songbooks. Joining is by email and gifts are welcome but not required.",
+      "featured": true,
+      "resource_type": "practice",
+      "subjects": ["spirituality", "sound-healing"]
+    }
+  ],
+  "sprint": {
+    "sprint": "hubs-2",
+    "hub": "findhorn-foundation",
+    "rank": 103,
+    "hub_url": "https://findhorn-foundation.secure.retreat.guru/teacher/barbara-swetina/",
+    "tier_evidence": "YouTube @BarbaraSwetina 26 subscribers (channel header row, 4 Nov 2026); YouTube @swetinamusic3380 'Swetina Music' 64 subscribers (channel header row, 4 Nov 2026); no Instagram, Facebook or X linked from her site → ~90 total → local_hero",
+    "email": "yes",
+    "email_source": "https://sacredsongs.net/music_train/index.html",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 9 source(s)",
+    "flags": [
+      "Regional: based in the Findhorn community, Moray, north-east Scotland, where Spiritpedia has few teachers.",
+      "Findhorn is a village (well under 5,000 people) next to Forres; recorded as published ('lived in the Findhorn Community since 1984'), needs mapping. Her site's footer gives the Foundation's address at The Park, Forres.",
+      "Possible overlap: Jilani Cordelia (already on Spiritpedia) co-leads Crossing the Threshold; her plan stores the same programme under an older URL without '/program/' (https://findhorn-foundation.secure.retreat.guru/partner-crossing-the-threshold-a-new-years-celebration-in-community). Shared offering links are allowed (migration 0031).",
+      "Mainly a devotional music and sacred-dance teacher rather than a speaker: she passes as a teacher (song and dance as spiritual practice, leader trainings), but her albums are music-only and left out. Please confirm she fits.",
+      "Subject 'sound-healing' chosen as the nearest fit for devotional singing; there is no music subject. The site's testimonials speak of healing, but no condition is named in anything kept.",
+      "Only one photo confirmed at 300 px or more: her YouTube avatar (same shot as the hub headshot, which is only 209 px wide). Other people are blurred in the background; she is the clear subject.",
+      "The free Zoom singing circle is donation-based (suggested £8–15); listed as a free resource because giving is optional.",
+      "The one video is a conversation about the 2025 edition of Crossing the Threshold (12 min, The Centrepiece Sessions channel); she and Jilani Cordelia are the speakers. It is partly promotional.",
+      "Two YouTube channels appear to be hers (@BarbaraSwetina and @swetinamusic3380 'Swetina Music', which carries her MusicTrain videos); both counted.",
+      "Thin listing: 4 items (2 offerings, 1 free resource, 1 video)."
+    ],
+    "left_out": [
+      "Community Song and Dance Leadership Training 2026/27 (Sennrüti, Switzerland): first module started 29 Sep 2026, before 7 Nov 2026.",
+      "MusicTrain box set and online course (themusictrain.learnworlds.com): music-notation teaching, not spiritual teaching; not opened.",
+      "Albums (Love One Another, Soul Weavers, Garden of the Goddess, Songs of Heaven and Earth and others) and the free song download 'We Are The Ones We Have Been Waiting For': music-only.",
+      "Heaven and Earth Community Songbooks Vol 1 and 2: self-published songbooks with no ISBN found; not books under the Open Library rule.",
+      "Video 'Songs of heaven and earth, Findhorn 2018' (4 min): mostly singing footage (music-only).",
+      "Videos 'Music for Peace Leadership Training Programme', 'Insights into the Music for Peace Leadership Training' and 'Invitation to our free January 28th Music and Info Call': promotion for a dated training that has started or an info call that has passed.",
+      "MusicTrain videos on @swetinamusic3380: music-notation teaching, not spiritual.",
+      "Video 'Glimpses of The Universal Hall, Findhorn' (linked from her site): another channel's film about the hall, she is not the main speaker."
+    ]
+  }
+}

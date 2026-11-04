@@ -1,0 +1,212 @@
+{
+ "hub": "findhorn-foundation",
+ "source": "findhorn.org sitemap and pages (workshops, experiences, group-experiences, our-locations/iona, history, about-us, faq) and the Foundation's booking site findhorn-foundation.secure.retreat.guru (programme list, each programme page, teachers index of 15 names), read 4 Nov 2026. robots.txt read first on both hosts (findhorn.org: Squarespace defaults, ordinary pages open; retreat.guru: only /wp-admin/ disallowed). Iona: no dated programmes listed ('Spirit of Iona' page returns 404).",
+ "how_ranked": "Current faculty = named facilitator ('focaliser') of a Findhorn programme on sale now or starting after 7 Nov 2026. Queue: resident Findhorn focalisers first by number of current programmes, then partner-programme leaders. Leadership, youth-work, theatre and ecovillage-design facilitators excluded.",
+ "on_spiritpedia_current": [
+  "john-philip-newell",
+  "jilani-cordelia",
+  "lisette-schuitemaker"
+ ],
+ "not_on_spiritpedia": [
+  "Christine Lines",
+  "Mary Inglis",
+  "Barbara Swetina",
+  "Bridget O'Donnell",
+  "Gill Emslie",
+  "Sally Bogale",
+  "Laura Pasetti",
+  "Adelle (Dell) Horler"
+ ],
+ "current_faculty": [
+  {
+   "name": "John Philip Newell",
+   "slug": "john-philip-newell",
+   "on_spiritpedia": true,
+   "hub_url": "https://findhorn-foundation.secure.retreat.guru/teacher/john-philip-newell/",
+   "programmes": [
+    [
+     "Celtic Wisdom: ONLINE",
+     "2026-11-03",
+     "2027-03-16",
+     "https://findhorn-foundation.secure.retreat.guru/program/celtic-wisdom-online-with-john-philip-newell"
+    ]
+   ],
+   "status": "linked (instructor); series running now (started 3 Nov 2026), so not usable as a dated offering"
+  },
+  {
+   "name": "Jilani Cordelia",
+   "slug": "jilani-cordelia",
+   "on_spiritpedia": true,
+   "hub_url": "https://findhorn-foundation.secure.retreat.guru/program/partner-crossing-the-threshold-a-new-years-celebration-in-community/",
+   "programmes": [
+    [
+     "Crossing the Threshold: A New Year's Celebration in Community",
+     "2026-12-28",
+     "2027-01-03",
+     "https://findhorn-foundation.secure.retreat.guru/program/partner-crossing-the-threshold-a-new-years-celebration-in-community/"
+    ]
+   ],
+   "status": "linked (instructor); partner programme"
+  },
+  {
+   "name": "Lisette Schuitemaker",
+   "slug": "lisette-schuitemaker",
+   "on_spiritpedia": true,
+   "hub_url": "https://findhorn-foundation.secure.retreat.guru/program/partner-eldest-daughter-retreat-2027/",
+   "programmes": [
+    [
+     "Partner: Eldest Daughter Retreat 2027",
+     "2027-03-05",
+     "2027-03-08",
+     "https://findhorn-foundation.secure.retreat.guru/program/partner-eldest-daughter-retreat-2027/"
+    ]
+   ],
+   "status": "linked (instructor); co-host of a partner programme framed around women's leadership; former Findhorn Foundation chair"
+  },
+  {
+   "name": "Christine Lines",
+   "on_spiritpedia": false,
+   "hub_url": "https://findhorn-foundation.secure.retreat.guru/teacher/christine-lines/",
+   "programmes": [
+    [
+     "Experience Week: From I to We",
+     "2026-12-13",
+     "2026-12-18",
+     "https://findhorn-foundation.secure.retreat.guru/program/experience-week-from-i-to-we-dec/"
+    ],
+    [
+     "Following your Calling: Discovering purpose through Inner Listening",
+     "2027-04-10",
+     "2027-04-17",
+     "https://findhorn-foundation.secure.retreat.guru/program/following-your-calling-discovering-purpose-through-inner-listening/"
+    ],
+    [
+     "Mini Ecovillage Design Education (EDE)",
+     "2027-04-24",
+     "2027-05-01",
+     "https://findhorn-foundation.secure.retreat.guru/program/mini-ede/"
+    ]
+   ],
+   "status": "queued (rank 101)"
+  },
+  {
+   "name": "Mary Inglis",
+   "on_spiritpedia": false,
+   "hub_url": "https://findhorn-foundation.secure.retreat.guru/teacher/mary-inglis/",
+   "programmes": [
+    [
+     "Following your Calling: Discovering purpose through Inner Listening",
+     "2027-04-10",
+     "2027-04-17",
+     "https://findhorn-foundation.secure.retreat.guru/program/following-your-calling-discovering-purpose-through-inner-listening/"
+    ]
+   ],
+   "status": "queued (rank 102)"
+  },
+  {
+   "name": "Barbara Swetina",
+   "on_spiritpedia": false,
+   "hub_url": "https://findhorn-foundation.secure.retreat.guru/teacher/barbara-swetina/",
+   "programmes": [
+    [
+     "Crossing the Threshold: A New Year's Celebration in Community",
+     "2026-12-28",
+     "2027-01-03",
+     "https://findhorn-foundation.secure.retreat.guru/program/partner-crossing-the-threshold-a-new-years-celebration-in-community/"
+    ]
+   ],
+   "status": "queued (rank 103)"
+  },
+  {
+   "name": "Bridget O'Donnell",
+   "on_spiritpedia": false,
+   "hub_url": "https://findhorn-foundation.secure.retreat.guru/teacher/bridget-odonnell/",
+   "programmes": [
+    [
+     "Experience Week: From I to We",
+     "2026-12-13",
+     "2026-12-18",
+     "https://findhorn-foundation.secure.retreat.guru/program/experience-week-from-i-to-we-dec/"
+    ]
+   ],
+   "status": "excluded: Nonviolent Communication trainer and coach (communication skills, not spiritual teaching; owner may add)"
+  },
+  {
+   "name": "Gill Emslie",
+   "on_spiritpedia": false,
+   "hub_url": "https://findhorn-foundation.secure.retreat.guru/program/partner-eldest-daughter-retreat-2027/",
+   "programmes": [
+    [
+     "Partner: Eldest Daughter Retreat 2027",
+     "2027-03-05",
+     "2027-03-08",
+     "https://findhorn-foundation.secure.retreat.guru/program/partner-eldest-daughter-retreat-2027/"
+    ]
+   ],
+   "status": "excluded: women's leadership retreat; process-oriented psychology"
+  },
+  {
+   "name": "Sally Bogale",
+   "on_spiritpedia": false,
+   "hub_url": "https://findhorn-foundation.secure.retreat.guru/teacher/sally-bogale/",
+   "programmes": [
+    [
+     "Mini Ecovillage Design Education (EDE)",
+     "2027-04-24",
+     "2027-05-01",
+     "https://findhorn-foundation.secure.retreat.guru/program/mini-ede/"
+    ]
+   ],
+   "status": "excluded: ecovillage / sustainability education"
+  },
+  {
+   "name": "Laura Pasetti",
+   "on_spiritpedia": false,
+   "hub_url": "https://findhorn-foundation.secure.retreat.guru/teacher/laura-pasetti/",
+   "programmes": [
+    [
+     "The Journey into Place – TheatreQuest",
+     "2026-10-24",
+     "2027-01-30",
+     "https://findhorn-foundation.secure.retreat.guru/program/the-journey-into-place-3-month-residential/"
+    ]
+   ],
+   "status": "excluded: theatre (art); started October 2026"
+  },
+  {
+   "name": "Adelle (Dell) Horler",
+   "on_spiritpedia": false,
+   "hub_url": "https://findhorn-foundation.secure.retreat.guru/teacher/adelle-horler/",
+   "programmes": [
+    [
+     "Partner: Growing2gether: Professional CPD Training in Transformational Work with Young People (online)",
+     "2027-01-29",
+     "2027-04-16",
+     "https://findhorn-foundation.secure.retreat.guru/program/partner-growing2gether-professional-cpd-training-in-transformational-work-with-young-people-online/"
+    ]
+   ],
+   "status": "excluded: professional youth-work training (psychology)"
+  }
+ ],
+ "past_faculty_seen": [
+  "Diana Whitmore (Finding Inner Sanctuary, Oct 2026, as inspiration)",
+  "Anya-Heidi Oravasaari",
+  "Britta Schmitz",
+  "Fi Luray",
+  "Joachim Goerke",
+  "Jorn Fiebig",
+  "Yuko Sato"
+ ],
+ "past_faculty_note": "Past = on the booking site's teachers index with no current programme (names only). None are on Spiritpedia.",
+ "founders_and_early_teachers_not_on_spiritpedia": [
+  "Peter Caddy (died 1994)",
+  "Eileen Caddy (died 2006)",
+  "Dorothy Maclean (died 2020)",
+  "David Spangler (early teacher, 1970–73; Lorian Association)"
+ ],
+ "guest_speakers_not_faculty": [
+  "Michael Lindfield",
+  "Christian Sarti",
+  "Simon Divecha"
+ ]
+}

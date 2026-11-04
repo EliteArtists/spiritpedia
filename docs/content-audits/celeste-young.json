@@ -1,0 +1,172 @@
+{
+  "healer": {
+    "healer_slug": "celeste-young",
+    "location_source": "https://www.celesteyoung.com/",
+    "create": {
+      "name": "Celeste Young",
+      "bio": "Celeste Young teaches Insight Meditation and the Dharma in the Theravada tradition from Los Angeles. She began sitting Buddhist retreats in 2002 and in 2011 joined InsightLA's first group of trainee teachers under its founder, Trudy Goodman. For most of the following decade she led InsightLA's introductory mindfulness courses several times a week, and in 2017 Trudy Goodman and Jack Kornfield authorised her to teach in their lineage. Her own practice rests on long silent retreats, often one to three months each year, and she has also mentored trainee teachers on the Kornfield and Brach certification programme run with Sounds True.\n\nHer teaching is gentle and practical: guided sittings, walking practice, Dharma talks and small-group meetings, offered in weekly online drop-in sittings, daylongs and residential retreats in California, Canada and Europe, and at Hollyhock on Cortes Island most springs. Alongside the meditation work she is a trained Life Balance Strategist in the approach developed by Phillip Moffitt, and she uses it in online one-to-one sessions and workshops for people working through a change of direction. She also brings mindfulness into workplaces and non-profits, and her short guided meditations are free to stream from her website.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local_online",
+      "city": "Los Angeles, California",
+      "country": "United States",
+      "subjects": ["mindfulness", "meditation", "spiritual-awakening"],
+      "website_url": "https://www.celesteyoung.com/",
+      "booking_url": "https://www.celesteyoung.com/events",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "celeste@insightla.org",
+      "image_urls": [
+        "https://hollyhock.ca/wp-content/uploads/2026/09/Celeste-Young-bio-photo-web.jpg",
+        "https://images.squarespace-cdn.com/content/v1/5894cdea46c3c49482372e4b/1598736091313-5275OKILCC1X8KUTQ6ZO/IMG_8250.jpg?format=1000w"
+      ]
+    }
+  },
+  "teaches_at": [
+    { "hub": "hollyhock", "role": "instructor" }
+  ],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Awake in Our Lives: A Silent Meditation Retreat",
+      "url": "https://hollyhock.ca/programs/8874/awake-in-our-lives-27/",
+      "description": "A five-night silent Insight Meditation retreat at Hollyhock on Cortes Island. Mornings work with the four foundations of mindfulness and afternoons with heart practices, with a daily Dharma talk, walking periods and small-group meetings with Celeste.",
+      "price": "All-inclusive package (tuition, lodging and meals); price depends on accommodation and is shown at registration",
+      "product_type": "retreat",
+      "start_date": "2027-05-21",
+      "end_date": "2027-05-26",
+      "subjects": ["meditation", "mindfulness"]
+    },
+    {
+      "title": "Opening to Inner & Outer Change: A Life Balance Retreat at Hollyhock",
+      "url": "https://www.celesteyoung.com/events/hollyhock2027lifebalanceretreat",
+      "description": "A short, non-silent workshop retreat at Hollyhock straight after the silent week, for people facing a change in their lives. It mixes brief guided sittings with teaching, written reflections from the Life Balance approach, partner exercises and free time outdoors.",
+      "price": "Contact for pricing",
+      "product_type": "retreat",
+      "start_date": "2027-05-27",
+      "end_date": "2027-05-30",
+      "subjects": ["mindfulness", "life-coaching"]
+    },
+    {
+      "title": "Wise Intention in the New Year Weekend Retreat",
+      "url": "https://www.celesteyoung.com/events/2024/wise-intention-in-the-new-year-weekend-retreat-6cplp",
+      "description": "A non-residential silent weekend at InsightLA's Benedict Canyon retreat house, also open online. Through sitting, walking and kindness practice it looks at setting intentions for the year from acceptance rather than self-improvement.",
+      "price": "Contact for pricing",
+      "product_type": "retreat",
+      "start_date": "2027-01-16",
+      "end_date": "2027-01-17",
+      "subjects": ["meditation", "mindfulness"]
+    },
+    {
+      "title": "Weekend Retreat with Celeste & Phillip Moffitt",
+      "url": "https://www.celesteyoung.com/events/2024/wise-intention-in-the-new-year-weekend-retreat-6cplp-htht4",
+      "description": "A spring weekend of Insight Meditation practice in Los Angeles, co-taught with the senior teacher Phillip Moffitt and offered both in person and online. It follows the usual pattern of silent sittings, walking periods and Dharma talks.",
+      "price": "Contact for pricing",
+      "product_type": "retreat",
+      "start_date": "2027-04-10",
+      "end_date": "2027-04-11",
+      "subjects": ["meditation", "mindfulness"]
+    },
+    {
+      "title": "Love & Awareness: The Heart That Knows",
+      "url": "https://www.celesteyoung.com/events/insightretreat2026-4mje8",
+      "description": "A six-night residential Vipassana retreat in the San Bernardino mountains, taught with Vance Pryor. It joins mindfulness with loving-kindness practice through guided and silent sittings, walking, talks and small-group meetings.",
+      "price": "Contact for pricing",
+      "product_type": "retreat",
+      "start_date": "2027-07-15",
+      "end_date": "2027-07-21",
+      "subjects": ["meditation", "mindfulness"]
+    },
+    {
+      "title": "Resting in Equanimity: Silent Insight Meditation & Yoga Retreat in France",
+      "url": "https://www.celesteyoung.com/events/2027franceretreat",
+      "description": "A week of silent Insight practice at Moulin de Chaves in south-west France, co-led with Christiane Wolf, with mindful yoga taught by Viveka Blom Nygren. The theme is equanimity, and the retreat is open to everyone as well as to trainee mindfulness teachers who need retreat hours.",
+      "price": "Contact for pricing",
+      "product_type": "retreat",
+      "start_date": "2027-09-27",
+      "end_date": "2027-10-04",
+      "subjects": ["meditation", "mindfulness", "yoga"]
+    },
+    {
+      "title": "Online: 6th Annual International Insight Retreat",
+      "url": "https://www.celesteyoung.com/events/internationalinsightretreat2026-96ek8",
+      "description": "A five-day retreat held at home over Zoom with Celeste, Christiane Wolf and Jake Dartington, timed to suit several time zones. Days follow a residential rhythm of sitting, walking and eating meditation with Dharma talks.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": "2027-10-22",
+      "end_date": "2027-10-26",
+      "subjects": ["meditation", "mindfulness"]
+    },
+    {
+      "title": "New Years Retreat: The Four Protective Meditations",
+      "url": "https://www.celesteyoung.com/events/2025/newyearsretreat",
+      "description": "A silent residential retreat at Big Bear over the turn of the year, taught with the nun Ayya Santacitta. It works with four classical protective reflections, including loving-kindness and recollection of the Buddha, with chanting, simple ritual and optional precepts.",
+      "price": "Contact for pricing",
+      "product_type": "retreat",
+      "start_date": "2027-12-28",
+      "end_date": "2028-01-02",
+      "subjects": ["meditation", "spirituality"]
+    },
+    {
+      "title": "Drop in Meditation & Dharma",
+      "url": "https://www.celesteyoung.com/classes/dropins",
+      "description": "A weekly hour online with a guided sitting, a short talk on a seasonal theme from the Buddha's teaching and time for discussion. Each week is booked on its own and paid by donation.",
+      "price": "Suggested donation $10 - $25 USD per session",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": ["meditation", "mindfulness"]
+    },
+    {
+      "title": "Life Balance Sessions",
+      "url": "https://www.celesteyoung.com/life-balance-sessions",
+      "description": "One-to-one online sessions in the Life Balance method she trained in with Phillip Moffitt and Jennifer Ward. They combine short mindfulness practices with reflective exercises to clarify values and priorities during a period of change.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": ["life-coaching", "mindfulness"]
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Guided Audio",
+      "url": "https://www.celesteyoung.com/guided-audio",
+      "description": "Three short guided meditations from Celeste, on the breath, the body and loving-kindness, each between twelve and fifteen minutes. They play on her website, with more of her recordings on InsightLA's audio pages.",
+      "featured": true,
+      "resource_type": "meditation",
+      "subjects": ["meditation", "mindfulness"]
+    }
+  ],
+  "sprint": {
+    "sprint": "hubs-2",
+    "hub": "hollyhock",
+    "rank": 1,
+    "hub_url": "https://hollyhock.ca/presenter/celeste-young/",
+    "tier_evidence": "Instagram @celestebyoung linked from her site but not opened (instagram.com is a blocked host); no YouTube channel, Facebook, X or TikTok found on her site or in one web search (4 Nov 2026) → 0 readable followers → local_hero",
+    "email": "yes",
+    "email_source": "https://www.celesteyoung.com/connect",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 16 source(s)",
+    "flags": [
+      "Main follower count (Instagram @celestebyoung) could not be read: instagram.com is blocked, so the readable total is 0; local_hero is almost certainly right for a teacher of this size but is not evidenced by a count.",
+      "Published email is on the InsightLA domain (celeste@insightla.org), shown on her own Connect page as her personal address; not a general inbox.",
+      "Instagram URL left null because it was not opened (blocked host), although her site links https://www.instagram.com/celestebyoung/.",
+      "Prices for her own retreats are not published on her event pages (registration goes through each retreat centre), so they read 'Contact for pricing'.",
+      "The Hollyhock Life Balance retreat (27-30 May 2027) is listed from her own site; I did not find it on hollyhock.ca's lead list, so it is linked to her event page rather than a Hollyhock programme page. Its content is mindfulness-based change work (life-coaching), not therapy.",
+      "Her about page mentions Spirit Rock's Advanced Practitioner Program and Somatic Experiencing training; spiritrock.org was not opened, and Somatic Experiencing is left out of the bio as a therapy method.",
+      "Second photo (from her about page) shows her seated in meditation, not a studio headshot; same person as the Hollyhock headshot."
+    ],
+    "left_out": [
+      "Deepening the Path (InsightLA yearlong programme, 2027, $1,950): a multi-teacher InsightLA programme in which she teaches one weekend, so not her own offering.",
+      "Daylongs for the Meditation & Buddhist Practice Program (Nov 2026 - May 2027): open only to enrolled students of an InsightLA programme that has already started.",
+      "Dated drop-in sessions and events that started before 7 Nov 2026; the drop-ins go in once, undated.",
+      "Private Dharma mentoring and Workspace (corporate) sessions: mentoring is listed as fully booked and corporate work is not public teaching.",
+      "No YouTube videos found (no channel on her site; one web search found only Dharma Seed and InsightLA audio pages); no books."
+    ]
+  }
+}
