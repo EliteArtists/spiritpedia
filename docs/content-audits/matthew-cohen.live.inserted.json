@@ -1,0 +1,45 @@
+{
+  "env": "live",
+  "healer": {
+    "id": 796,
+    "healer_slug": "matthew-cohen"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "725fe56d-0271-4986-bf87-1a7a732440c4",
+      "slug": "weekly-qigong-class-zoom",
+      "title": "Weekly Qigong Class (Zoom)"
+    },
+    {
+      "table": "courses",
+      "id": "dd2117fa-01c8-4752-9f6d-ea61b8ae91e8",
+      "slug": "breath-inside-the-breath-zoom",
+      "title": "Breath Inside the Breath (Zoom)"
+    },
+    {
+      "table": "courses",
+      "id": "e42d3d0e-d00a-48b1-bcd7-67d97c2da1a4",
+      "slug": "five-elements-qigong",
+      "title": "Five Elements Qigong"
+    },
+    {
+      "table": "courses",
+      "id": "3964f428-f08b-487d-8495-5b0779d8de53",
+      "slug": "yoga-qigong-flow-at-yoga-soup",
+      "title": "Yoga & Qigong Flow at Yoga Soup"
+    },
+    {
+      "table": "courses",
+      "id": "04a21454-5120-4955-baa6-497251aa74fb",
+      "slug": "private-sessions-with-matthew",
+      "title": "Private Sessions with Matthew"
+    },
+    {
+      "table": "hub_teachers",
+      "id": "e655da29-d6ac-4193-8607-a536dab39ce7",
+      "title": "matthew-cohen teaches at The Shift Network"
+    }
+  ],
+  "at": "2026-11-05T14:02:48.316Z"
+}

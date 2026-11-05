@@ -1,0 +1,39 @@
+{
+  "env": "live",
+  "healer": {
+    "id": 805,
+    "healer_slug": "nubia-teixeira"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "0734784a-f0a8-4ce4-916f-d24e3d6f0c16",
+      "slug": "mother-goddess-yoga-online-patreon",
+      "title": "Mother Goddess Yoga Online (Patreon)"
+    },
+    {
+      "table": "courses",
+      "id": "f3a0acc7-751a-4cd7-b175-5620c930af9e",
+      "slug": "mother-goddess-yoga-immersion-at-omega-institute",
+      "title": "Mother Goddess Yoga Immersion at Omega Institute"
+    },
+    {
+      "table": "free_resources",
+      "id": "28310a3e-4395-40aa-a346-7fe6a4f32fc9",
+      "slug": "mudras-in-yoga",
+      "title": "Mudras in Yoga"
+    },
+    {
+      "table": "free_resources",
+      "id": "44082f82-b578-41d1-b7ab-c2e4ea270e90",
+      "slug": "what-is-bhakti-yoga",
+      "title": "What is Bhakti Yoga?"
+    },
+    {
+      "table": "hub_teachers",
+      "id": "f7f9ead7-4012-4448-b3cd-073c7760f1cd",
+      "title": "nubia-teixeira teaches at Omega Institute"
+    }
+  ],
+  "at": "2026-11-05T14:03:25.280Z"
+}

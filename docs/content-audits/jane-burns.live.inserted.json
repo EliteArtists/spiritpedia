@@ -1,0 +1,45 @@
+{
+  "env": "live",
+  "healer": {
+    "id": 772,
+    "healer_slug": "jane-burns"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "cafc3bd2-516b-4195-b15b-efa1e495e353",
+      "slug": "shamanic-healing-session",
+      "title": "Shamanic healing session"
+    },
+    {
+      "table": "courses",
+      "id": "9425e296-8750-4339-bb30-efd5ab8aac26",
+      "slug": "mentorship-program-2",
+      "title": "Mentorship Program"
+    },
+    {
+      "table": "courses",
+      "id": "f3336261-0a94-4f41-acd2-c15cc00f8d35",
+      "slug": "the-powerful-transformations-hidden-in-the-betwixt-and-between",
+      "title": "The Powerful Transformations Hidden in the Betwixt and Between"
+    },
+    {
+      "table": "courses",
+      "id": "d0fdc8ca-b604-4a17-b455-b45c09260764",
+      "slug": "celtic-shamanism-rituals-myths-and-journeys-for-reclaiming-your-sovereignty",
+      "title": "Celtic Shamanism: Rituals, Myths and Journeys for Reclaiming Your Sovereignty"
+    },
+    {
+      "table": "courses",
+      "id": "d7becb55-aa80-4ecd-b8af-09284d6492ca",
+      "slug": "celtic-virtues-to-cultivate-lasting-peace",
+      "title": "Celtic Virtues to Cultivate Lasting Peace"
+    },
+    {
+      "table": "hub_teachers",
+      "id": "e5224e2a-acf9-4e07-a723-f03c54a71bb2",
+      "title": "jane-burns teaches at The Shift Network"
+    }
+  ],
+  "at": "2026-11-05T14:00:59.611Z"
+}

@@ -1,0 +1,51 @@
+{
+  "env": "live",
+  "healer": {
+    "id": 769,
+    "healer_slug": "heceliza-perez"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "e9a7056a-c40f-4457-a779-b059d70db958",
+      "slug": "virtual-energy-healing-reiki-session",
+      "title": "Virtual Energy Healing - Reiki Session"
+    },
+    {
+      "table": "courses",
+      "id": "4f503ad4-9a51-42e5-9503-73bcdd0d21b1",
+      "slug": "virtual-11-breathwork-session",
+      "title": "Virtual 1:1 Breathwork Session"
+    },
+    {
+      "table": "courses",
+      "id": "cd18202e-88c4-4617-aa16-b1457714416a",
+      "slug": "wellness-in-the-workplace",
+      "title": "Wellness in the Workplace"
+    },
+    {
+      "table": "courses",
+      "id": "a9833528-52d9-4aed-b34f-824b7d5e010d",
+      "slug": "partner-work-and-group-circles",
+      "title": "Partner Work and Group Circles"
+    },
+    {
+      "table": "free_resources",
+      "id": "30632f46-5254-482a-a9cf-86f50710675e",
+      "slug": "heceliza-perez-on-insight-timer",
+      "title": "Heceliza Perez on Insight Timer"
+    },
+    {
+      "table": "free_resources",
+      "id": "6ba01270-189d-4ddb-8ae3-424857aec451",
+      "slug": "free-energy-and-intuition-meditation",
+      "title": "Free Energy and Intuition Meditation"
+    },
+    {
+      "table": "hub_teachers",
+      "id": "3c042f04-d29e-417b-ade3-ddb2ee778c08",
+      "title": "heceliza-perez teaches at Insight Timer"
+    }
+  ],
+  "at": "2026-11-05T14:00:45.953Z"
+}

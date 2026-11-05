@@ -1,0 +1,39 @@
+{
+  "env": "live",
+  "healer": {
+    "id": 832,
+    "healer_slug": "tanya-murphy"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "314bece9-32c3-4c51-ad7b-6fa04102a5ac",
+      "slug": "the-sanctuary",
+      "title": "The Sanctuary"
+    },
+    {
+      "table": "courses",
+      "id": "fdf424cf-2c59-4ba7-a8ad-4142ced78d70",
+      "slug": "five-days-of-soul-care-for-women",
+      "title": "Five Days of Soul Care For Women"
+    },
+    {
+      "table": "free_resources",
+      "id": "f2e3d0da-9f4d-4484-8011-8c8e5c781cd4",
+      "slug": "tanya-murphy-on-insight-timer",
+      "title": "Tanya Murphy on Insight Timer"
+    },
+    {
+      "table": "free_resources",
+      "id": "e6c11d55-7d4e-41e2-a12d-a881cb1541b8",
+      "slug": "tuesday-afternoon-rest",
+      "title": "Tuesday Afternoon Rest"
+    },
+    {
+      "table": "hub_teachers",
+      "id": "e31b12c7-4d65-45f8-8c17-49e91e5f4461",
+      "title": "tanya-murphy teaches at Insight Timer"
+    }
+  ],
+  "at": "2026-11-05T14:05:18.630Z"
+}

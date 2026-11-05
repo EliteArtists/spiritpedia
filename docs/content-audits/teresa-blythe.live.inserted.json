@@ -1,0 +1,81 @@
+{
+  "env": "live",
+  "healer": {
+    "id": 833,
+    "healer_slug": "teresa-blythe"
+  },
+  "rows": [
+    {
+      "table": "videos",
+      "id": 7496,
+      "slug": "passion-of-christ-guided-meditation",
+      "title": "Passion of Christ guided meditation"
+    },
+    {
+      "table": "videos",
+      "id": 7497,
+      "slug": "praying-the-ignatian-examen",
+      "title": "Praying the Ignatian Examen"
+    },
+    {
+      "table": "videos",
+      "id": 7498,
+      "slug": "developing-spiritual-awareness-through-meditation-and-prayer",
+      "title": "Developing Spiritual Awareness through Meditation and Prayer"
+    },
+    {
+      "table": "courses",
+      "id": "0d1a353e-dcbd-49b8-9bef-1bd38f5b45fa",
+      "slug": "individual-spiritual-direction",
+      "title": "Individual Spiritual Direction"
+    },
+    {
+      "table": "courses",
+      "id": "78a7754f-587f-4730-81fd-48703975a98f",
+      "slug": "group-spiritual-direction",
+      "title": "Group Spiritual Direction"
+    },
+    {
+      "table": "courses",
+      "id": "71c8e056-9665-4870-a04b-0d8dc2c79d4f",
+      "slug": "discernment-coaching",
+      "title": "Discernment Coaching"
+    },
+    {
+      "table": "courses",
+      "id": "81d61337-9564-4538-80e7-b52b1a0e8324",
+      "slug": "supervision-for-spiritual-directors",
+      "title": "Supervision for Spiritual Directors"
+    },
+    {
+      "table": "courses",
+      "id": "015bf444-d736-48d7-b1ee-90204208aec3",
+      "slug": "apprentice-training-program-for-spiritual-directors",
+      "title": "Apprentice Training Program for Spiritual Directors"
+    },
+    {
+      "table": "free_resources",
+      "id": "872d9cf1-7d0b-4f12-a84d-a0d6b7b47119",
+      "slug": "teresa-blythe-on-insight-timer",
+      "title": "Teresa Blythe on Insight Timer"
+    },
+    {
+      "table": "free_resources",
+      "id": "95fdd052-19c8-4e2f-aee3-53a0612ce99c",
+      "slug": "spiritual-direction-a-guide-for-seekers",
+      "title": "Spiritual Direction: A Guide for Seekers"
+    },
+    {
+      "table": "free_resources",
+      "id": "501b5d9b-e014-4e1e-895c-0df17778546f",
+      "slug": "prayer-practices-from-50-ways-to-pray",
+      "title": "Prayer Practices from 50 Ways to Pray"
+    },
+    {
+      "table": "hub_teachers",
+      "id": "ace641da-7cfc-45e6-ac2a-dcf250fa985c",
+      "title": "teresa-blythe teaches at Insight Timer"
+    }
+  ],
+  "at": "2026-11-05T14:05:21.413Z"
+}

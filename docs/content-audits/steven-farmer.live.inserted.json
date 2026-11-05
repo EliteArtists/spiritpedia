@@ -1,0 +1,58 @@
+{
+  "env": "live",
+  "healer": {
+    "id": 827,
+    "healer_slug": "steven-farmer"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "cf9d308e-0c5b-4227-bcc4-0d6ce01bce9c",
+      "slug": "3-month-spiritual-mentorship-program",
+      "title": "3-Month Spiritual Mentorship Program"
+    },
+    {
+      "table": "courses",
+      "id": "b01401e6-1450-4a5d-ad63-2b0f05d00b6d",
+      "slug": "6-month-spiritual-mentorship-program",
+      "title": "6-Month Spiritual Mentorship Program"
+    },
+    {
+      "table": "courses",
+      "id": "a5d00329-599c-49de-aa63-fbaf4db44069",
+      "slug": "12-month-spiritual-mentorship-program",
+      "title": "12-Month Spiritual Mentorship Program"
+    },
+    {
+      "table": "courses",
+      "id": "42738266-c1e1-4927-b7a0-9662dfde1eab",
+      "slug": "the-path-of-the-shaman",
+      "title": "The Path of the Shaman"
+    },
+    {
+      "table": "courses",
+      "id": "9debe945-14c3-4fa3-a387-a7f576247d67",
+      "slug": "animal-spirit-guides-online-course",
+      "title": "Animal Spirit Guides Online Course"
+    },
+    {
+      "table": "free_resources",
+      "id": "b5f42e78-a8fd-46c1-8e37-52c94534a1ba",
+      "slug": "free-power-animal-oracle-reading",
+      "title": "Free Power Animal Oracle Reading"
+    },
+    {
+      "table": "free_resources",
+      "id": "ff8d0931-d21e-434c-8448-df9247dd2e31",
+      "slug": "free-animal-spirit-guides-oracle-reading",
+      "title": "Free Animal Spirit Guides Oracle Reading"
+    },
+    {
+      "table": "free_resources",
+      "id": "b9dca955-104d-4cca-aa28-0b2ceb92007f",
+      "slug": "free-earth-magic-oracle-reading",
+      "title": "Free Earth Magic Oracle Reading"
+    }
+  ],
+  "at": "2026-11-05T14:04:57.521Z"
+}

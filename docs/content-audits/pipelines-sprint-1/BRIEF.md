@@ -26,6 +26,10 @@ output files named below. Never print or read any `.env` file.
   loads empty. Don't open the profile at all. Use the name and the details
   in the queue entry, and research from their own site.
 
+**Do not revive** (owner, 5 Nov 2026): never research, plan or add
+Nandhiji, Devon Kerns or Ipek Williamson, from any list. If a lead has one of
+these names, skip it on sight with the reason "do not revive (README §18.7)".
+
 **Blocked means skip, every time (owner's standing rule, 1 Nov 2026).** Before
 fetching from any site, read its robots.txt; if it blocks you, don't fetch it.
 If a page or site refuses you (403, 401, a bot check, a Cloudflare challenge,

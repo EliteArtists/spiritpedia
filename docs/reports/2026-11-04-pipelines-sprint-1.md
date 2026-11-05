@@ -245,3 +245,26 @@ The tier evidence, contact source and every research flag for each teacher are i
   - §18.6 has this sprint's row;
   - §8.1 covers 0038.
 - **Sprint folder** `docs/content-audits/pipelines-sprint-1/`: brief, runner, leads, 178 skips and REPORT.md.
+
+## Update, 5 Nov 2026: live
+
+- **0038** was run by the owner on dev (69, 497, 2) and live (69, 439, 2).
+  - After the changes below, both read **69, 494, 2**. That is the 55 new live teachers that publish a town; dev lost the 3 dropped or held teachers that had one.
+- **Owner decisions, applied:**
+  - **Tiers:** Marie Diamond, Robert Holden and Jean Shinoda Bolen are confirmed as Luminary. Andrew Harvey is raised to Luminary by editorial stature (on dev too). Krishna Das stays Superhero. No other raises.
+  - **Dropped, rolled back on dev:** Nandhiji, Jacob Liberman, Stephen Gray and Kylee O'Donnell. Their plans are in `docs/content-audits/pipelines-sprint-1/dropped/`, and each has a skip file with the reason.
+  - **Do not revive:** Nandhiji was dropped on 1 Nov and should never have come back. A new list in README §18.7 and the brief now names Nandhiji, Devon Kerns and Ipek Williamson, so they are skipped on sight.
+  - **Held, not on live:**
+    - Catherine Ingram and Doniel Katz stay out.
+    - Bodhipaksa, Deng Ming-Dao and Theresa Cheung are left out for now.
+    - Mahasukha is held because his photos are unconfirmed (now rolled back on dev too).
+  - **Paul Levy** is kept. The Madness of George W. Bush was never in his plan.
+  - **Kept:** all other teachers, including the thin pages; the books with ISBNs from the teacher's or publisher's own page; and all skips.
+  - **Shift images on live:** the fix is applied to Martha Jo Atkins, Jamie Butler and Laura Inserra (3 rows; log `docs/content-audits/lead-fixes-shift-images-2026-11-04.live.log.json`).
+  - **Jean Houston** waits for a usable photo.
+- **On live: 101 new teachers.**
+  - 522 videos, 96 books, 433 offerings and 138 free resources.
+  - Tiers: 1 Superhero, 6 Luminary and 94 Local Hero.
+  - Email: 73 published, 28 contact form.
+  - Links: 23 Shift, 27 Insight Timer and 1 Omega.
+  - All 101 inserted cleanly; a spot check confirms the tiers and that none of the left-out teachers is on live.

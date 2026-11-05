@@ -1,0 +1,40 @@
+{
+  "env": "live",
+  "healer": {
+    "id": 787,
+    "healer_slug": "langston-kahn"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "a0120134-2888-4c5b-9008-75ea991438cd",
+      "slug": "shamanic-healing-sessions-2",
+      "title": "Shamanic Healing Sessions"
+    },
+    {
+      "table": "courses",
+      "id": "31e3fafd-1dca-45bb-9690-aa130cc25e39",
+      "slug": "ancestral-liberation-sessions",
+      "title": "Ancestral Liberation Sessions"
+    },
+    {
+      "table": "courses",
+      "id": "7389ddcf-a739-40da-8880-d4a61564fca9",
+      "slug": "energy-body-mastery",
+      "title": "Energy Body Mastery"
+    },
+    {
+      "table": "free_resources",
+      "id": "33d1a679-b4b7-4698-ad55-30ba77004162",
+      "slug": "how-to-start-shamanic-journeying",
+      "title": "How to Start Shamanic Journeying"
+    },
+    {
+      "table": "free_resources",
+      "id": "254a5dc6-7550-4f4a-abc6-5a2f585b8c2e",
+      "slug": "what-is-emotional-clearing-video-interview",
+      "title": "What is Emotional Clearing? (Video Interview)"
+    }
+  ],
+  "at": "2026-11-05T14:02:06.381Z"
+}

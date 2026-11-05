@@ -1,0 +1,57 @@
+{
+  "env": "live",
+  "healer": {
+    "id": 745,
+    "healer_slug": "anthony-abbagnano"
+  },
+  "rows": [
+    {
+      "table": "books",
+      "id": 1888,
+      "slug": "outer-chaos-inner-calm",
+      "title": "Outer Chaos, Inner Calm"
+    },
+    {
+      "table": "courses",
+      "id": "f789602d-ef11-4752-86be-1786231130b9",
+      "slug": "online-breathwork-facilitator-training",
+      "title": "Online Breathwork Facilitator Training"
+    },
+    {
+      "table": "courses",
+      "id": "283c8a2d-2c69-4cad-a483-3e684ffd23dc",
+      "slug": "live-residential-breathwork-facilitator-training-at-asha-tuscany",
+      "title": "Live Residential Breathwork Facilitator Training at ASHA, Tuscany"
+    },
+    {
+      "table": "courses",
+      "id": "12ba7c3d-7d69-4b54-9e3e-b128d47f8cf3",
+      "slug": "the-alchemist-an-inner-journey-to-yourself",
+      "title": "The Alchemist: An Inner Journey to Yourself"
+    },
+    {
+      "table": "courses",
+      "id": "9d65008c-fe9a-4e73-9b64-aed3ad1f5e76",
+      "slug": "alchemy-meditation",
+      "title": "Alchemy Meditation"
+    },
+    {
+      "table": "free_resources",
+      "id": "ac407612-711c-4457-be53-f89524535a43",
+      "slug": "breathe-the-world-free-sunday-breathwork",
+      "title": "Breathe the World: Free Sunday Breathwork"
+    },
+    {
+      "table": "free_resources",
+      "id": "93e1e599-def5-46c5-8666-8b7deccf5da5",
+      "slug": "breathwork-fundamentals-course",
+      "title": "Breathwork Fundamentals Course"
+    },
+    {
+      "table": "hub_teachers",
+      "id": "d54f1c71-f1b6-406f-bfc6-41fe26351b02",
+      "title": "anthony-abbagnano teaches at The Shift Network"
+    }
+  ],
+  "at": "2026-11-05T13:58:57.535Z"
+}

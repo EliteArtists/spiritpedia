@@ -1,0 +1,34 @@
+{
+  "env": "live",
+  "healer": {
+    "id": 776,
+    "healer_slug": "jessica-dibb"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "3e6ac986-aa82-4a2e-b899-805b03c47869",
+      "slug": "8-week-awakening-maryland",
+      "title": "8-Week Awakening (Maryland)"
+    },
+    {
+      "table": "courses",
+      "id": "6802d86d-5d14-41ca-8336-5a27fa8fb9b8",
+      "slug": "virtual-breathwork-sessions",
+      "title": "Virtual Breathwork Sessions"
+    },
+    {
+      "table": "courses",
+      "id": "6b7df23e-72de-4de4-9457-ba6255cbcbc1",
+      "slug": "integrative-breathing-journey-in-nyc",
+      "title": "Integrative Breathing Journey in NYC"
+    },
+    {
+      "table": "courses",
+      "id": "5c6ae32f-14fc-4b81-9c0c-99f6382df4ba",
+      "slug": "womens-breathing-journey",
+      "title": "Women's Breathing Journey"
+    }
+  ],
+  "at": "2026-11-05T14:01:19.818Z"
+}

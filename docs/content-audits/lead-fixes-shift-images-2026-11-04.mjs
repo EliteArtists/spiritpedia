@@ -40,6 +40,7 @@ if (mode === 'rollback') {
 const rows = [];
 for (const slug of PLANS) {
   const file = `docs/content-audits/${slug}.json`;
+  if (!fs.existsSync(file)) continue; // dropped since (Jacob Liberman, 5 Nov 2026): plan moved to pipelines-sprint-1/dropped/
   const plan = JSON.parse(fs.readFileSync(file, 'utf8'));
   const photo = plan.healer.create?.image_urls?.[0] || null;
   let changed = false;
