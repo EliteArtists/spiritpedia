@@ -1,0 +1,107 @@
+{
+  "healer": {
+    "healer_slug": "jason-mcgrice",
+    "location_source": "https://www.jasonmcgrice.com/about",
+    "create": {
+      "name": "Jason McGrice",
+      "bio": "Jason McGrice is an Australian meditation teacher, Reiki master and mentor based in Adelaide. Drawn to spiritual practice from childhood, he took up meditation seriously in his early twenties and has worked with Reiki for more than twenty years, alongside training as a Spinal Energetics practitioner. His teaching centres on simple, effortless meditation and on energy work, offered with a warm, down-to-earth manner that makes the practices feel approachable for people who think meditation is not for them.\n\nHe is best known for his guided meditations and courses on Insight Timer, where his recordings have been played millions of times by a large community of students. Online, he teaches a three-day introduction to meditation over Zoom in the effortless 'being' technique of the 1 Giant Mind school, built around three ninety-minute sessions that lay the ground for a daily practice. He also mentors individuals one to one over a month, three months or a year, combining meditation, energy practice and mindful living, and has led residential Reiki Master retreats in South Australia. As a speaker and facilitator he runs group and mass meditation sessions and talks about resilience and finding meaning in everyday life.",
+      "tier": "luminary",
+      "entity_type": "individual",
+      "availability": "local_online",
+      "city": "Adelaide, South Australia",
+      "country": "Australia",
+      "subjects": [
+        "meditation",
+        "reiki",
+        "spirituality"
+      ],
+      "website_url": "https://www.jasonmcgrice.com/",
+      "booking_url": "https://www.jasonmcgrice.com/services",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": null,
+      "image_urls": [
+        "https://images.squarespace-cdn.com/content/v1/664bff88eb949e544da616d2/142f36de-51a0-4a3f-9a07-e1d1f2be09a2/AmyAgnewPortraits-JasonMcGrice2024-10.jpg",
+        "https://images.squarespace-cdn.com/content/v1/664bff88eb949e544da616d2/4aeb94b3-22e1-4d0e-9a0d-189454b8ec42/AmyAgnewPortraits-JasonMcGrice2024-13.jpg"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "insight-timer",
+      "role": "instructor"
+    }
+  ],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Learn to Meditate",
+      "url": "https://www.jasonmcgrice.com/learn-to-meditate",
+      "description": "A three-day beginners' course on Zoom, with a ninety-minute session each day. Jason teaches the effortless 'being' technique from 1 Giant Mind and shows how to carry it into a daily practice after the course ends.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/664bff88eb949e544da616d2/9efafbc9-054f-4590-b7de-0f670fbb6555/AmyAgnewPortraits-JasonMcGrice2024-20+%281%29.jpg"
+    },
+    {
+      "title": "1:1 Mentoring",
+      "url": "https://www.jasonmcgrice.com/coachingpackages",
+      "description": "Private mentoring with Jason over one, three or twelve months, with regular sessions and message support in between. The work combines meditation, energy practice and practical steps towards your aims.",
+      "price": "From $1,466 AUD ($1,000 USD)",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "life-coaching",
+        "meditation"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/664bff88eb949e544da616d2/ff8d9645-20dc-4363-be37-32e787622c86/kiryl-khamitski-asfns_2Rqg8-unsplash.jpg"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Jason McGrice on Insight Timer",
+      "url": "https://insighttimer.com/jasonmcgrice",
+      "description": "His Insight Timer profile, with a large library of guided meditations and courses. The tracks are free to play.",
+      "featured": true,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/664bff88eb949e544da616d2/142f36de-51a0-4a3f-9a07-e1d1f2be09a2/AmyAgnewPortraits-JasonMcGrice2024-10.jpg"
+    }
+  ],
+  "sprint": {
+    "sprint": "pipelines-2",
+    "hub": "insight-timer",
+    "rank": 58,
+    "hub_url": "https://insighttimer.com/jasonmcgrice",
+    "tier_evidence": "Insight Timer 176.6k followers (queue entry, read 1 Nov 2026); Instagram and Facebook (@jasonmcgrice) not read (off limits); no YouTube linked → ~177k readable → luminary",
+    "email": "contact form",
+    "email_source": null,
+    "contact_form_url": "https://www.jasonmcgrice.com/contact",
+    "bio_check": "OK: no 8-word runs against 9 source(s)",
+    "flags": [
+      "Parked entry: contact route now found, a Squarespace form (Name, Email, Message) on https://www.jasonmcgrice.com/contact. No email published.",
+      "Thin listing: 2 offerings plus the Insight Timer resource (3 items). No YouTube channel linked from his site; his /meditate page is a 404.",
+      "His About page frames his own story around anxiety, depression and healing 'pain and trauma'; none of that is in the bio or items. Spinal Energetics is mentioned only as a training, not offered as an item.",
+      "Learn to Meditate: the booking button points to a ThriveCart page named 'learn-to-meditate-september' (not opened); no current dates or price on his page, so listed undated with 'Contact for pricing'.",
+      "1:1 Mentoring: his three package buttons point to clearchannelclub.com pages that return 404, so the packages page itself is used as one item; prices as published there ($1,466 AUD / $1,000 USD for one month up to $5,500 AUD for twelve).",
+      "Regional: Adelaide, South Australia."
+    ],
+    "left_out": [
+      "Reiki Masters Retreat (Herrings House, Willunga, 7-9 Aug 2024): past.",
+      "1 Month Sprint / 3 Month Training Camp / 12 Month Marathon booking pages: 404 on clearchannelclub.com.",
+      "Speaking: no page of its own."
+    ]
+  },
+  "images_final": true
+}

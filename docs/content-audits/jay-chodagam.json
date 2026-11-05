@@ -1,0 +1,188 @@
+{
+  "healer": {
+    "healer_slug": "jay-chodagam",
+    "location_source": "https://about.me/chodagam",
+    "create": {
+      "name": "Jay Chodagam",
+      "bio": "Jay Chodagam is a meditation teacher in the San Francisco Bay Area who spent eighteen years living in an ashram and training as a monk before returning to ordinary working life. He also studied engineering at the University of Texas at Austin, and has been teaching meditation since 2004, in more than sixty countries. His teaching pairs contemplative practice with what neuroscience has found about attention and emotion, and he frames it around what he calls spiritual quotient: being as well as doing.\n\nEvery other Sunday morning he leads a free live guided meditation, streamed on YouTube and Insight Timer, and his recorded library covers breathwork, loving-kindness, forgiveness, gratitude and meeting difficult emotions, along with talks on themes such as spiritual bypassing and dreams. In the Bay Area he hosts small Heartful Dinner Conversations in Mountain View and occasional Zen dinner gatherings in Marin that combine meditation, breathwork and conversation, and over the past decade he has led more than a hundred retreats, from Italy and Montana to Bali. He has spoken at TEDxGoldenGatePark, has led sessions for companies such as Google and Gap, and runs the Joyful Living community group on Insight Timer.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local_online",
+      "city": "San Francisco, California",
+      "country": "United States",
+      "subjects": [
+        "meditation",
+        "breathwork",
+        "mindfulness"
+      ],
+      "website_url": "https://joywithjay.com/",
+      "booking_url": "https://joywithjay.com/",
+      "youtube_url": "https://www.youtube.com/@JayChodagam",
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": null,
+      "image_urls": [
+        "https://joywithjay.com/assets/img/headshot.jpg",
+        "https://yt3.googleusercontent.com/bHaD1Q7TVD2fcZPCY8VuqwS2l-vWbCh392B6rpNbG2a2vdeLqJeuBO21EC1aAx_pIlGsn7o3=s900"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "insight-timer",
+      "role": "instructor"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Being Before Doing: Jay Chodagam at TEDxGoldenGatePark",
+      "url": "https://www.youtube.com/watch?v=Jpi17x0T5x8",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "channel": "TEDx Talks"
+    },
+    {
+      "title": "Breath work & Meditation for Grounded Spaciousness",
+      "url": "https://www.youtube.com/watch?v=69AM43V_Sz4",
+      "subjects": [
+        "breathwork",
+        "meditation"
+      ],
+      "channel": "Meditate with Jay"
+    },
+    {
+      "title": "Secrets to Authentic Happiness | Breathwork + Meditation",
+      "url": "https://www.youtube.com/watch?v=PkY1D7qPPII",
+      "subjects": [
+        "breathwork",
+        "meditation"
+      ],
+      "channel": "Meditate with Jay"
+    },
+    {
+      "title": "How to Set Boundaries and Cultivate an Empathetic Shield | Breathwork + Meditation",
+      "url": "https://www.youtube.com/watch?v=zwishsPsFEQ",
+      "subjects": [
+        "breathwork",
+        "meditation"
+      ],
+      "channel": "Meditate with Jay"
+    },
+    {
+      "title": "Spiritual Bypassing and Toxic Positivity | Breath work and Meditation",
+      "url": "https://www.youtube.com/watch?v=srkXQtAaOyg",
+      "subjects": [
+        "shadow-work",
+        "breathwork"
+      ],
+      "channel": "Meditate with Jay"
+    },
+    {
+      "title": "Interpreting Dreams: Your Private Shadow Theater",
+      "url": "https://www.youtube.com/watch?v=qWCO7u_Jh6U",
+      "subjects": [
+        "dreamwork",
+        "shadow-work"
+      ],
+      "channel": "Meditate with Jay"
+    },
+    {
+      "title": "Self-Love and Compassion | 25-Minute Guided Meditation",
+      "url": "https://www.youtube.com/watch?v=DaP_oPOFTYw",
+      "subjects": [
+        "meditation"
+      ],
+      "channel": "Meditate with Jay"
+    },
+    {
+      "title": "Forgiveness: The Freedom of Letting the Heart Breathe | 35-Minutes Guided Meditation",
+      "url": "https://www.youtube.com/watch?v=-NKKmqhb46M",
+      "subjects": [
+        "meditation"
+      ],
+      "channel": "Meditate with Jay"
+    },
+    {
+      "title": "Loving Kindness and Connection | 25-Minute Guided Meditation",
+      "url": "https://www.youtube.com/watch?v=SQTbCtM09V8",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "channel": "Meditate with Jay"
+    },
+    {
+      "title": "Awakening Inner Power: Trusting the Flow of Change | 25-Minute Guided Meditation",
+      "url": "https://www.youtube.com/watch?v=omHnP8BQr_U",
+      "subjects": [
+        "meditation"
+      ],
+      "channel": "Meditate with Jay"
+    },
+    {
+      "title": "5 Minute Morning Glory Gratitude Meditation",
+      "url": "https://www.youtube.com/watch?v=6UJ7UWNfiZk",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "channel": "Meditate with Jay"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [
+    {
+      "title": "Jay Chodagam on Insight Timer",
+      "url": "https://insighttimer.com/jaychodagam",
+      "description": "His Insight Timer profile, with guided meditations, talks and several ten-day courses. The tracks are free to play.",
+      "featured": true,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://joywithjay.com/assets/img/headshot.jpg"
+    },
+    {
+      "title": "Sunday Morning Joy (live meditation)",
+      "url": "https://www.youtube.com/jaychodagam/live",
+      "description": "A free live guided meditation every other Sunday at 9am Pacific time, streamed on his YouTube channel and on Insight Timer, with time for questions.",
+      "featured": false,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://yt3.googleusercontent.com/bHaD1Q7TVD2fcZPCY8VuqwS2l-vWbCh392B6rpNbG2a2vdeLqJeuBO21EC1aAx_pIlGsn7o3=s900-c-k-c0x00ffffff-no-rj"
+    }
+  ],
+  "sprint": {
+    "sprint": "pipelines-2",
+    "hub": "insight-timer",
+    "rank": 96,
+    "hub_url": "https://insighttimer.com/jaychodagam",
+    "tier_evidence": "Insight Timer 37.1k followers (queue entry, read 1 Nov 2026); YouTube @JayChodagam 1.63K subscribers (channel header, 5 Nov 2026); his site also states Simple Habit 10k (not counted, app platform); Instagram not read → ~38.7k → local_hero",
+    "email": "contact form",
+    "email_source": null,
+    "contact_form_url": "https://joywithjay.com/",
+    "bio_check": "OK: no 8-word runs against 3 source(s)",
+    "flags": [
+      "The queue's email (jay.chodagam@gmail.com) came from his Linktree, which is off limits, so it is not used. His own site joywithjay.com (linked from his YouTube channel header) shows info@joywithjay.com only inside a form's error message, so it is not counted as published; contact is the 'Ask Jay privately' form on the home page.",
+      "Base: San Francisco, California from his own about.me profile; joywithjay.com says only 'Silicon Valley', with dinners held in Mountain View and Marin.",
+      "Photos: site headshot (clean-shaven) and YouTube avatar (bearded); same man, I believe, but flag for a look.",
+      "No paid offerings with pages of their own: the dinners and gatherings are by invitation from a list on the home page, and retreats are 'resting for now'. Listing rests on videos and free resources.",
+      "His site also promotes his real-estate work and an AI leaders' club; not used."
+    ],
+    "left_out": [
+      "Heartful Dinner Conversations and Zen Dinner Party: by invitation, no page or price of their own.",
+      "21-Day Meditation Challenge: 'coming soon' on Insight Timer.",
+      "Grief, divorce, job-loss and betrayal meditations: condition- or loss-led titles.",
+      "Sleep & Well-being workshop and 2022 Italy retreat: dated, past.",
+      "Wing-foiling and Shorts."
+    ]
+  },
+  "images_final": true
+}

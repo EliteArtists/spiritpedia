@@ -1,0 +1,58 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 880,
+    "healer_slug": "lottie-moore"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "3617192b-087e-488a-a227-13b90bc7240f",
+      "slug": "firewalk-instructor-training",
+      "title": "Firewalk Instructor Training"
+    },
+    {
+      "table": "courses",
+      "id": "0c049afa-a72c-458b-8fe3-f7f5fee4c321",
+      "slug": "master-firewalk-instructor-training",
+      "title": "Master Firewalk Instructor Training"
+    },
+    {
+      "table": "courses",
+      "id": "ce68ba30-7328-4a2b-876a-d90bbe168361",
+      "slug": "tine-na-sinsear-advanced-firewalk-ritualist",
+      "title": "Tine Na Sinsear ~ Advanced Firewalk Ritualist"
+    },
+    {
+      "table": "courses",
+      "id": "1e97dcc2-7ab2-4965-a951-5c99fc2435c0",
+      "slug": "sweat-lodge-keeper-training",
+      "title": "Sweat Lodge Keeper Training"
+    },
+    {
+      "table": "courses",
+      "id": "7e359278-26c0-4a83-944c-c19feadb4148",
+      "slug": "fire-quest",
+      "title": "Fire Quest"
+    },
+    {
+      "table": "courses",
+      "id": "64cf670f-e09b-4af4-aced-12da006e8bce",
+      "slug": "mna-na-tine-women-of-the-fire",
+      "title": "Mná Na Tine (Women of the Fire)"
+    },
+    {
+      "table": "courses",
+      "id": "beac0078-a14c-49b5-9f38-997518fa6cd4",
+      "slug": "new-year-revival-of-joy-firewalk",
+      "title": "New Year Revival of Joy Firewalk"
+    },
+    {
+      "table": "courses",
+      "id": "1ae717ef-96a4-43f7-bf32-20757770310f",
+      "slug": "medicine-carriers",
+      "title": "Medicine Carriers"
+    }
+  ],
+  "at": "2026-11-05T15:43:41.259Z"
+}

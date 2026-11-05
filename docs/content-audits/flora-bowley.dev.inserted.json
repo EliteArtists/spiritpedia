@@ -1,0 +1,82 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 871,
+    "healer_slug": "flora-bowley"
+  },
+  "rows": [
+    {
+      "table": "books",
+      "id": 1945,
+      "slug": "brave-intuitive-painting",
+      "title": "Brave Intuitive Painting"
+    },
+    {
+      "table": "books",
+      "id": 1946,
+      "slug": "creative-revolution",
+      "title": "Creative Revolution"
+    },
+    {
+      "table": "books",
+      "id": 1947,
+      "slug": "fresh-paint",
+      "title": "Fresh Paint"
+    },
+    {
+      "table": "books",
+      "id": 1948,
+      "slug": "the-art-of-aliveness",
+      "title": "The Art of Aliveness"
+    },
+    {
+      "table": "courses",
+      "id": "d8a96e7d-7b21-4bc7-9b5c-4121e98f9203",
+      "slug": "reunite",
+      "title": "Reunite"
+    },
+    {
+      "table": "courses",
+      "id": "03642f16-e159-4e7b-9a5d-f12ac3a344d0",
+      "slug": "creative-revolution-e-course",
+      "title": "Creative Revolution e-course"
+    },
+    {
+      "table": "courses",
+      "id": "2254814f-fb3b-4558-ba0a-ee169500474f",
+      "slug": "fresh-paint",
+      "title": "Fresh Paint"
+    },
+    {
+      "table": "courses",
+      "id": "93c7a134-9202-4916-8b53-12574b9296d2",
+      "slug": "the-painting-sessions",
+      "title": "The Painting Sessions"
+    },
+    {
+      "table": "courses",
+      "id": "5d64974f-cf68-4f78-a471-184b3e3f9a69",
+      "slug": "free-flo-community",
+      "title": "FREE FLO Community"
+    },
+    {
+      "table": "courses",
+      "id": "80e0e2a0-b7b5-4f75-95cc-a775ffa8b7bc",
+      "slug": "the-art-of-aliveness-retreat-ubud-bali",
+      "title": "The Art of Aliveness Retreat: Ubud, Bali"
+    },
+    {
+      "table": "courses",
+      "id": "4edbef73-550d-4d50-a1c3-0be061c55769",
+      "slug": "the-art-of-aliveness-retreat-agadir-morocco",
+      "title": "The Art of Aliveness Retreat: Agadir, Morocco"
+    },
+    {
+      "table": "courses",
+      "id": "75cad3d7-ec67-471b-bfb5-0c345c9ed43b",
+      "slug": "the-art-of-aliveness-retreat-thailand",
+      "title": "The Art of Aliveness Retreat: Thailand"
+    }
+  ],
+  "at": "2026-11-05T15:42:16.465Z"
+}

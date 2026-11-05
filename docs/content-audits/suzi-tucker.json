@@ -1,0 +1,250 @@
+{
+  "healer": {
+    "healer_slug": "suzi-tucker",
+    "location_source": "https://www.suzitucker.com/contact",
+    "create": {
+      "name": "Suzi Tucker",
+      "bio": "Suzi Tucker is an American teacher, facilitator and writer in Family Constellation, a systemic way of looking at how the patterns of a family and its generations live on in each person's choices and relationships. She came to the work through publishing: in 1998 she co-founded the press Zeig, Tucker & Theisen with Jeffrey K. Zeig, and as its editor she received an early manuscript of Bert Hellinger's Love's Hidden Symmetry. She went on to help bring most of Hellinger's English-language books into print and, with Harald Hohnen, set up the Bert Hellinger Institute in the United States, before developing a voice of her own beyond the method's origins.\n\nToday she trains new facilitators through a sixteen-month course that meets in New York and on Zoom, runs supervision for practitioners and a writing group, and gives weekend presentations online on themes such as boundaries, guilt and the dreams we inherit from others. She also leads constellation days in New York and Washington, and residential programmes at places such as the Sivananda Ashram in the Bahamas and the Omega Institute. Her books include the essay collection Gather Enough Fireflies and Take Every Step, a guide to the art and practice of constellation work for students. She is based in Connecticut.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local_online",
+      "city": "Redding Ridge, Connecticut",
+      "country": "United States",
+      "subjects": [
+        "conscious-relationships",
+        "life-coaching",
+        "spirituality"
+      ],
+      "website_url": "https://www.suzitucker.com/",
+      "booking_url": "https://www.suzitucker.com/calendar",
+      "youtube_url": "https://www.youtube.com/@suzitucker",
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "suzituckerinfo@gmail.com",
+      "image_urls": [
+        "https://images.squarespace-cdn.com/content/v1/608079d738219e13eefa9aa6/b05558e0-24ba-49ea-91c4-1b6f49720103/suzi-tucker.png",
+        "https://images.squarespace-cdn.com/content/v1/608079d738219e13eefa9aa6/0564cd0d-ce20-4d2e-9b52-268f4c1fe86a/suzi-tucker_2026-07_01.png"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "omega-institute",
+      "role": "instructor"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Suzi Tucker on Anger",
+      "url": "https://www.youtube.com/watch?v=ju-qO75W7tY",
+      "subjects": [
+        "shadow-work",
+        "conscious-relationships"
+      ],
+      "channel": "Suzi Tucker"
+    },
+    {
+      "title": "Suzi Tucker on Peace",
+      "url": "https://www.youtube.com/watch?v=Jm61JVJgu7Q",
+      "subjects": [
+        "spirituality"
+      ],
+      "channel": "Suzi Tucker"
+    },
+    {
+      "title": "Suzi Tucker on Shame & Guilt",
+      "url": "https://www.youtube.com/watch?v=hXkGhZngF1M",
+      "subjects": [
+        "shadow-work"
+      ],
+      "channel": "Suzi Tucker"
+    },
+    {
+      "title": "Suzi Tucker on Money",
+      "url": "https://www.youtube.com/watch?v=l2xXibclmQs",
+      "subjects": [
+        "life-coaching"
+      ],
+      "channel": "Suzi Tucker"
+    },
+    {
+      "title": "The Mother-Child Dyad and Its Systemic Influence",
+      "url": "https://www.youtube.com/watch?v=W8knJ4Yq8n8",
+      "subjects": [
+        "conscious-relationships"
+      ],
+      "channel": "Suzi Tucker"
+    },
+    {
+      "title": "Suzi Tucker on Perfectionism & Avoidance",
+      "url": "https://www.youtube.com/watch?v=XmbpCjftY8M",
+      "subjects": [
+        "shadow-work"
+      ],
+      "channel": "Suzi Tucker"
+    },
+    {
+      "title": "Suzi Tucker on Entitlement",
+      "url": "https://www.youtube.com/watch?v=tpDWJchmLsw",
+      "subjects": [
+        "shadow-work"
+      ],
+      "channel": "Suzi Tucker"
+    },
+    {
+      "title": "Family Conflict Runs Deeper Than You Realize",
+      "url": "https://www.youtube.com/watch?v=Fht-C94bqJs",
+      "subjects": [
+        "conscious-relationships"
+      ],
+      "channel": "Suzi Tucker"
+    },
+    {
+      "title": "Living with the ghost of a sibling",
+      "url": "https://www.youtube.com/watch?v=J3jwWbiO0OU",
+      "subjects": [
+        "conscious-relationships"
+      ],
+      "channel": "Suzi Tucker"
+    }
+  ],
+  "books": [
+    {
+      "title": "Gather Enough Fireflies",
+      "slug": "gather-enough-fireflies",
+      "author": "Suzi Tucker",
+      "asin": "0990773329",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "A collection of short reflective prompts on ordinary life, from raising children to facing death. Tucker writes as a systemic thinker but keeps the method in the background, letting the questions do the work.",
+      "subjects": [
+        "conscious-relationships",
+        "spirituality"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/0990773329.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "Take Every Step: The Art and Practice of Family Constellation",
+      "slug": "take-every-step-the-art-and-practice-of-family-constellation",
+      "author": "Suzi Tucker",
+      "asin": "B0H8VT86YJ",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "Written with her students in mind, this book looks at the deeper layers of constellation work rather than step-by-step technique. It is meant for newer facilitators and for general readers curious about a gentler, more systemic way of seeing their lives.",
+      "subjects": [
+        "conscious-relationships",
+        "spirituality"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/B0H8VT86YJ.01._SCLZZZZZZZ_.jpg"
+    }
+  ],
+  "courses": [
+    {
+      "title": "Boundaries and Love (Experiential Conversations)",
+      "url": "https://app.acuityscheduling.com/schedule/125442fb/?appointmentTypeIds[]=95284677",
+      "description": "A two-session online presentation over a weekend on why boundaries are hard to hold, especially within families. Tucker traces where guilt and fear first take hold and works on language that leaves room for both love and freedom. Sessions are recorded and available for three weeks.",
+      "price": "$129 USD",
+      "product_type": "course",
+      "start_date": "2026-12-19",
+      "end_date": "2026-12-20",
+      "subjects": [
+        "conscious-relationships",
+        "shadow-work"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/608079d738219e13eefa9aa6/b05558e0-24ba-49ea-91c4-1b6f49720103/suzi-tucker.png"
+    },
+    {
+      "title": "Daydream Interpretation (Experiential Conversations)",
+      "url": "https://app.acuityscheduling.com/schedule/125442fb/?appointmentTypeIds[]=95284921",
+      "description": "A weekend presentation on Zoom about the hopes we carry that were not really ours to begin with, and how they shape our sense of success and failure. Two two-hour sessions, recorded for those who cannot attend live.",
+      "price": "$129 USD",
+      "product_type": "course",
+      "start_date": "2027-01-16",
+      "end_date": "2027-01-17",
+      "subjects": [
+        "soul-purpose",
+        "shadow-work"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/608079d738219e13eefa9aa6/b05558e0-24ba-49ea-91c4-1b6f49720103/suzi-tucker.png"
+    },
+    {
+      "title": "The NYC Constellation Studio",
+      "url": "https://www.suzitucker.com/the-nyc-constellation-studio",
+      "description": "Two full days in Manhattan for new and experienced constellation facilitators and committed students. Participants practise together, bring their own personal and professional questions, and work with exercises Tucker offers along the way.",
+      "price": "$175 USD",
+      "product_type": "course",
+      "start_date": "2027-02-13",
+      "end_date": "2027-02-14",
+      "subjects": [
+        "conscious-relationships",
+        "life-coaching"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/608079d738219e13eefa9aa6/b05558e0-24ba-49ea-91c4-1b6f49720103/suzi-tucker.png"
+    },
+    {
+      "title": "Family Constellations: Your Voice is A Chorus",
+      "url": "https://sivanandabahamas.org/course/family-constellation-your-voice-is-a-chorus-january-2027/",
+      "description": "A four-day residential programme at the Sivananda Ashram Yoga Retreat on Paradise Island, Bahamas. Using constellation work, the group explores how stories handed down through a family show up in present-day relationships and work. Tuition is shown; lodging is booked separately.",
+      "price": "$495 USD",
+      "product_type": "retreat",
+      "start_date": "2027-01-04",
+      "end_date": "2027-01-07",
+      "subjects": [
+        "conscious-relationships",
+        "spirituality"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/608079d738219e13eefa9aa6/b05558e0-24ba-49ea-91c4-1b6f49720103/suzi-tucker.png"
+    },
+    {
+      "title": "Family Constellations: Whose Life Is This Anyway?",
+      "url": "https://www.newcenterny.org/event/family-constellations-whose-life-is-this-anyway-1-30-27/",
+      "description": "A one-day in-person workshop at the New Center for Holistic Learning in Manhattan, using constellations to look at which parts of the life we live were handed to us. The same day runs again on 6 February 2027.",
+      "price": "$285 USD (members $240 USD)",
+      "product_type": "course",
+      "start_date": "2027-01-30",
+      "end_date": "2027-01-30",
+      "subjects": [
+        "conscious-relationships",
+        "soul-purpose"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/608079d738219e13eefa9aa6/b05558e0-24ba-49ea-91c4-1b6f49720103/suzi-tucker.png"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "pipelines-2",
+    "hub": "the-shift-network",
+    "rank": 41,
+    "hub_url": null,
+    "tier_evidence": "YouTube @suzitucker 356 subscribers (channel header, 5 Nov 2026); Instagram @suzitucker.constellations not read (instagram.com off limits); LinkedIn not counted → ~0.4k readable → local_hero",
+    "email": "yes",
+    "email_source": "https://www.suzitucker.com/contact",
+    "contact_form_url": "https://www.suzitucker.com/contact",
+    "bio_check": "OK: no 8-word runs against 15 source(s)",
+    "flags": [
+      "No Shift mention on own site: listed without the link.",
+      "Omega Institute: her own site lists 'Release and Reclaim: Interrupting Ancestral Patterns Through Family Constellation', Omega, NY, 11-16 July 2027 (https://www.suzitucker.com/retreats; no link yet, 'stay tuned'), so teaches_at omega-institute was added; the Omega programme is not an offering because there is no page for it yet.",
+      "Base from her contact page's postal address (a P.O. box in Redding Ridge, CT; city only recorded). Redding Ridge is a village within the town of Redding, Connecticut: please map it. She teaches in person in New York and Washington DC and online, hence local_online.",
+      "Regional: Redding Ridge / Redding, Connecticut (Fairfield County).",
+      "A second address, info@suzitucker.com, is published on her Experiential Conversations page; the contact page's suzituckerinfo@gmail.com was used.",
+      "Take Every Step: ASIN B0H8VT86YJ copied from the Amazon link on her books page (not opened); she says it is available on 1 December, so it may not be on sale yet. Gather Enough Fireflies: ISBN-10 0990773329 from the Amazon link on https://www.suzitucker.com/books, not confirmed elsewhere. Covers from her own site.",
+      "Second photo is a speaking shot (holding a microphone) from her home page; same woman as the portrait on her Voice page. YouTube avatar not used (looks older and differently styled).",
+      "Her home page calls her a 'leading teacher'; not echoed in the bio."
+    ],
+    "left_out": [
+      "When the Body Tires (Experiential Conversations, 14-15 Nov 2026): framed around illness, left out under the health rule.",
+      "Suzi Tucker on Grief and On Co-Dependence (YouTube): condition-adjacent titles, left out to be safe.",
+      "The Art and Practice of Constellation (16-month course from July/Aug 2026), The Writing Studio (from 3 Jul 2026), Widevision Circle cohort 18 (from 28 Sep 2026): already started.",
+      "Open Constellation Workshop and Practice Studio, Washington DC (12-13 Dec 2026): Eventbrite page not opened, price unknown.",
+      "Family Constellations Training & Certification, Online Constellation Intensive (Mar/Apr 2027): run by another organisation's facilitator training page, not opened.",
+      "My Voice Is A Chorus, Lancaster PA (Sep 2027) and the Omega programme (Jul 2027): no page yet.",
+      "A Stitch in Time and There Is A Way in Which (late 2027): no ISBN or ASIN on her site.",
+      "Interviews on Iris Shaham's channel: she is a guest, own channel used instead."
+    ]
+  },
+  "images_final": true
+}

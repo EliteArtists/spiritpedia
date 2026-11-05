@@ -1,0 +1,239 @@
+{
+  "healer": {
+    "healer_slug": "michael-mackintosh",
+    "location_source": "https://awakenedacademy.com/about/michael-mackintosh",
+    "create": {
+      "name": "Michael Mackintosh",
+      "bio": "Michael Mackintosh is a meditation teacher and spiritual life coach who has been teaching since 2004, when he began holding small meditation and coaching groups in Cambridge after several years of practice that took him repeatedly to India to live and study with yogis. In 2011 he moved to Hawaii to work on his teaching full time, and in 2014 he and his partner, Arielle Hecht, founded Awakened Academy, an online school that trains and certifies spiritual and holistic life coaches.\n\nHis teaching is built around dharma, the idea that each person has a particular path and contribution, and around practical steps for living it: meditation, soul-purpose inquiry, coaching skills, and building meaningful work. He mentors certification students one to one, takes on a small number of private mentoring clients, and wrote The Dharma Keys, a short book on finding one's path. His guided meditations, recorded since 2014 and many of them on Insight Timer, include practices for gratitude, letting go and soul consciousness, and he co-hosts the Spiritual Sense and Daily Meditation podcasts with the meditation teacher Shireen Chada. He lives on Kauai.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "worldwide",
+      "city": "Kauai, Hawaii",
+      "country": "United States",
+      "subjects": [
+        "life-coaching",
+        "soul-purpose",
+        "meditation"
+      ],
+      "website_url": "https://awakenedacademy.com/",
+      "booking_url": "https://awakenedacademy.com/mentoring-with-michael",
+      "youtube_url": "https://www.youtube.com/@AwakenedAcademy",
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "success@awakenedacademy.com",
+      "image_urls": [
+        "https://awakenedacademy.com/images/michael-beach.jpg"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "insight-timer",
+      "role": "instructor"
+    }
+  ],
+  "videos": [
+    {
+      "title": "The Easy Way to Start a Daily Meditation Practice | Tips to Start Meditation Practice",
+      "url": "https://www.youtube.com/watch?v=-zoKttctnHY",
+      "subjects": [
+        "meditation"
+      ],
+      "channel": "Awakened Academy"
+    },
+    {
+      "title": "How to be Your Authentic Self? In life and work | Bringing Your Authentic Self to Work",
+      "url": "https://www.youtube.com/watch?v=yW87zvWnDiI",
+      "subjects": [
+        "soul-purpose",
+        "life-coaching"
+      ],
+      "channel": "Awakened Academy"
+    },
+    {
+      "title": "How I 'Invented' Spiritual Life Coaching | Spiritual Life Coach | 3 Ways To Start Your Coaching",
+      "url": "https://www.youtube.com/watch?v=pBRAKn3pk60",
+      "subjects": [
+        "life-coaching"
+      ],
+      "channel": "Awakened Academy"
+    },
+    {
+      "title": "How to Raise your Level of Consciousness and let go | Advanced Law Of Attraction Secret",
+      "url": "https://www.youtube.com/watch?v=8uWJgb91dcI",
+      "subjects": [
+        "law-of-attraction",
+        "consciousness"
+      ],
+      "channel": "Awakened Academy"
+    },
+    {
+      "title": "Follow the Signs.... How I used LOA to move to Hawaii (Advanced Law of Attraction secrets #4)",
+      "url": "https://www.youtube.com/watch?v=eHJdSOaiP2s",
+      "subjects": [
+        "law-of-attraction"
+      ],
+      "channel": "Awakened Academy"
+    },
+    {
+      "title": "The 2 Ways Of Manifesting... Only ONE works... [Advanced Law Of Attraction #5 - Feel Good First]",
+      "url": "https://www.youtube.com/watch?v=HmXhrquZQd0",
+      "subjects": [
+        "manifestation",
+        "law-of-attraction"
+      ],
+      "channel": "Awakened Academy"
+    },
+    {
+      "title": "The FEELING is the secret... [Advanced Law Of Attraction Secret #2]",
+      "url": "https://www.youtube.com/watch?v=3_eW_oNUsJQ",
+      "subjects": [
+        "law-of-attraction"
+      ],
+      "channel": "Awakened Academy"
+    },
+    {
+      "title": "The more you do THIS the more success you'll have.... [Advanced Law Of Attraction Secret #3]",
+      "url": "https://www.youtube.com/watch?v=gV-F7UcBqMA",
+      "subjects": [
+        "law-of-attraction"
+      ],
+      "channel": "Awakened Academy"
+    },
+    {
+      "title": "3 Ways To Start Serving Today | Awakened Academy | Purpose of serving others",
+      "url": "https://www.youtube.com/watch?v=klQWwsr_Hbg",
+      "subjects": [
+        "soul-purpose"
+      ],
+      "channel": "Awakened Academy"
+    }
+  ],
+  "books": [
+    {
+      "title": "The Dharma Keys: Find Your Path with a Heart & Unlock Your True Calling in a World Gone Crazy",
+      "slug": "the-dharma-keys",
+      "author": "Michael Mackintosh",
+      "asin": "1522862501",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "A short guide to dharma as a personal path, that asks the reader to look at their identity, their reason for being here and the work that is theirs to do. It moves from questioning inherited expectations to taking first steps towards work that suits your gifts.",
+      "subjects": [
+        "soul-purpose",
+        "spirituality"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1522862501.01._SCLZZZZZZZ_.jpg"
+    }
+  ],
+  "courses": [
+    {
+      "title": "Spiritual Life Coach Certification",
+      "url": "https://awakenedacademy.com/spiritual-life-coach-certification",
+      "description": "Awakened Academy's original self-paced online certification, running since 2012. It covers inner practice, coaching craft, dharma and the business side of a coaching practice, with one-to-one mentoring from Michael.",
+      "price": "From $2,500 USD",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "life-coaching",
+        "soul-purpose"
+      ],
+      "image": "https://awakenedacademy.com/images/golden-light.jpg"
+    },
+    {
+      "title": "Holistic Life Coach Certification",
+      "url": "https://awakenedacademy.com/holistic-life-coach-certification",
+      "description": "A self-paced online certification that trains coaches to work with the whole person, looking at how work, relationships, money and inner life affect one another. It is offered in tiers.",
+      "price": "From $2,500 USD",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "life-coaching"
+      ],
+      "image": "https://awakenedacademy.com/_next/image?url=%2Fimages%2Fblessing-heroes%2Fphotos-kauai%2Fkauai-72.jpg&w=3840&q=82"
+    },
+    {
+      "title": "Private Mentoring with Michael",
+      "url": "https://awakenedacademy.com/mentoring-with-michael",
+      "description": "A season of one-to-one mentoring for people who want to act on a sense of calling, entered by a short written application that Michael reads himself.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "soul-purpose",
+        "life-coaching"
+      ],
+      "image": "https://awakenedacademy.com/_next/image?url=%2Fimages%2Fgolden-light.jpg&w=3840&q=75"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Michael Mackintosh on Insight Timer",
+      "url": "https://insighttimer.com/michaelmackintosh",
+      "description": "His Insight Timer profile, with guided meditations recorded with Awakened Academy. The tracks are free to play.",
+      "featured": true,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://awakenedacademy.com/images/michael-beach.jpg"
+    },
+    {
+      "title": "Discover Your Dharma",
+      "url": "https://awakenedacademy.com/dharma/course",
+      "description": "A free short email course on finding the work you feel called to and the people you might serve, with the first lesson sent on sign-up.",
+      "featured": false,
+      "resource_type": "mini_course",
+      "subjects": [
+        "soul-purpose"
+      ],
+      "image": "https://awakenedacademy.com/_next/image?url=%2Fimg%2Fgifts%2Flotus-pool.jpg&w=3840&q=75"
+    },
+    {
+      "title": "Spiritual Sense podcast",
+      "url": "https://awakenedacademy.com/spiritual-sense",
+      "description": "A weekly conversation between Michael and Shireen Chada that takes one spiritual idea at a time and looks at how to use it in ordinary life. Free on Apple Podcasts and Spotify.",
+      "featured": false,
+      "resource_type": "practice",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "image": "https://awakenedacademy.com/images/podcast-cover-spiritual-sense.jpg"
+    }
+  ],
+  "sprint": {
+    "sprint": "pipelines-2",
+    "hub": "insight-timer",
+    "rank": 82,
+    "hub_url": "https://insighttimer.com/michaelmackintosh",
+    "tier_evidence": "Insight Timer 48.1k followers (queue entry, read 1 Nov 2026); YouTube @AwakenedAcademy 2.5K subscribers (channel header, 5 Nov 2026) is the school's channel, not counted; Instagram/Facebook @awakenedacademy not read (off limits, also company accounts) → ~48k → local_hero",
+    "email": "yes",
+    "email_source": "https://awakenedacademy.com/contact",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 15 source(s)",
+    "flags": [
+      "The queue's website michaelmackintosh.com is broken (expired TLS certificate; over http it returns a WordPress PHP error 500). His current site is his school, awakenedacademy.com, found via the links on his podcast pages (castos.com).",
+      "Email success@awakenedacademy.com is the school's general inbox (brand inbox), published on its Contact page and footer; no contact form on the site.",
+      "Regional: none. Base: his profile says he lives on the island of Kauai (no town named); recorded as 'Kauai, Hawaii' for mapping. The school's mailing address is a PO box in Sedona, Arizona (the queue's base).",
+      "Couple: his partner and Awakened Academy co-founder Arielle Hecht is rank 100 in this sprint (Arielle Margalit Hecht); she was skipped because her own site publishes no email or contact form. Owner may want her folded into this listing as a teaching couple.",
+      "Videos are from the Awakened Academy channel (the school's), where Michael is the speaker; business-marketing videos (YouTube tips, ChatGPT, billionaires) left out.",
+      "Book: ASIN 1522862501 linked by his own Dharma Keys page (an Amazon review link, not opened); ISBN from awakenedacademy.com/dharma-keys-book, not confirmed elsewhere. Cover not looked up.",
+      "Free-book page carries a developer note ('Placeholder form — not connected. Dan: swap this block…'); not addressed to us, ignored.",
+      "His Insight Timer catalogue includes condition-named tracks (e.g. 'Pain Relief Meditation', 'Total Anxiety Cure') listed on his /meditations page; most of the catalogue is not condition-led, so he is kept, but that page is not used as a resource."
+    ],
+    "left_out": [
+      "Free Meditations page (/meditations): features condition-named tracks (pain relief, anxiety cure, healing batch).",
+      "Sleep Naturally page: sleep-problem framing.",
+      "Daily Meditation podcast: no page of its own on his site (castos only).",
+      "Business and marketing videos (content creation, ChatGPT, publishing, wealth).",
+      "The Dharma Keys $17 book-and-training bundle as a separate offering: the book is listed instead."
+    ]
+  },
+  "images_final": true
+}

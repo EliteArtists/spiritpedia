@@ -18,8 +18,8 @@
    "note": "Shift faculty list (saved 30 Oct 2026); counts under the owner's rule (README §18.7). Research from their OWN site only (never open theshiftnetwork.com). Link to the-shift-network only if their own site mentions The Shift Network.",
    "sprint1_rank": 455,
    "rank": 1,
-   "status": "todo",
-   "plan": null,
+   "status": "planned",
+   "plan": "docs/content-audits/ken-page.json",
    "skip_reason": null
   },
   {
@@ -47,9 +47,9 @@
    "parked": false,
    "source": "insight-timer",
    "hub": "insight-timer",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Enchanted Journeys with Sarah Robinson (sentiayoga.com) is already on Spiritpedia as sarah-robinson (docs/content-audits/sarah-robinson.json, same website); duplicate."
   },
   {
    "name": "Dr. John Ryan, MD",
@@ -62,8 +62,8 @@
    "note": "Shift faculty list (saved 30 Oct 2026); counts under the owner's rule (README §18.7). Research from their OWN site only (never open theshiftnetwork.com). Link to the-shift-network only if their own site mentions The Shift Network.",
    "sprint1_rank": 456,
    "rank": 3,
-   "status": "todo",
-   "plan": null,
+   "status": "planned",
+   "plan": "docs/content-audits/john-ryan.json",
    "skip_reason": null
   },
   {
@@ -91,9 +91,9 @@
    "parked": false,
    "source": "insight-timer",
    "hub": "insight-timer",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Aaron Michael Pyne is already on Spiritpedia as aaron-michael-pyne (docs/content-audits/aaron-michael-pyne.json, same website); duplicate."
   },
   {
    "name": "Grand Master Nan Lu",
@@ -106,9 +106,9 @@
    "note": "Shift faculty list (saved 30 Oct 2026); counts under the owner's rule (README §18.7). Research from their OWN site only (never open theshiftnetwork.com). Link to the-shift-network only if their own site mentions The Shift Network.",
    "sprint1_rank": 457,
    "rank": 5,
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Health rule: his own site (grandmasternanlu.com) presents him as a licensed acupuncturist and doctor of traditional Chinese medicine running a New York clinic and foundation, and his offerings are framed around health outcomes: medical qigong and meridian therapy trainings, a Women, Qigong and Breast Health course on breast cancer, the Tao of Morning Qigong page listing blood sugar, blood pressure, prostate and hot-flush results, and Dragon's Way with an eating plan and herbal supplements. Almost nothing passes the health-claim rule, so he is skipped as mainly medical. (No Shift mention seen; robots.txt open with crawl-delay 3, respected.)"
   },
   {
    "name": "DAYANA",
@@ -135,9 +135,9 @@
    "parked": false,
    "source": "insight-timer",
    "hub": "insight-timer",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "DAYANA (dayana.io) is already on Spiritpedia as Dayana Pereira, dayana-pereira (docs/content-audits/dayana-pereira.json, same website); duplicate."
   },
   {
    "name": "Nancy Rebecca, RN",
@@ -150,9 +150,9 @@
    "note": "Shift faculty list (saved 30 Oct 2026); counts under the owner's rule (README §18.7). Research from their OWN site only (never open theshiftnetwork.com). Link to the-shift-network only if their own site mentions The Shift Network.",
    "sprint1_rank": 458,
    "rank": 7,
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Her own site, intuitivemind.org (found via web search), has a robots.txt naming ClaudeBot, anthropic-ai and Claude-Web with Disallow: /, so the whole site is off limits to us (owner, 5 Nov 2026) and the teacher is skipped. Only robots.txt was read; nothing else fetched."
   },
   {
    "name": "Kristof Lambregts - Akshara Soundhealing",
@@ -179,9 +179,9 @@
    "parked": false,
    "source": "insight-timer",
    "hub": "insight-timer",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Kristof Lambregts (Akshara Soundhealing) is already on Spiritpedia as kristof-lambregts (docs/content-audits/kristof-lambregts.json, same website); duplicate."
   },
   {
    "name": "Dr. Katie Hendricks",
@@ -196,8 +196,8 @@
    "note": "Shift faculty list (saved 30 Oct 2026); counts under the owner's rule (README §18.7). Research from their OWN site only (never open theshiftnetwork.com). Link to the-shift-network only if their own site mentions The Shift Network.",
    "sprint1_rank": 459,
    "rank": 9,
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/katie-hendricks.json",
    "skip_reason": null
   },
   {
@@ -225,9 +225,9 @@
    "parked": false,
    "source": "insight-timer",
    "hub": "insight-timer",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Ashley of Awake In Wellness (awake-in-wellness.com) is already on Spiritpedia as Ashley Nguyen, ashley-nguyen (docs/content-audits/ashley-nguyen.json, same website); duplicate."
   },
   {
    "name": "Dr. Dan Siegel",
@@ -240,8 +240,8 @@
    "note": "Shift faculty list (saved 30 Oct 2026); counts under the owner's rule (README §18.7). Research from their OWN site only (never open theshiftnetwork.com). Link to the-shift-network only if their own site mentions The Shift Network.",
    "sprint1_rank": 460,
    "rank": 11,
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/dan-siegel.json",
    "skip_reason": null
   },
   {
@@ -269,9 +269,9 @@
    "parked": false,
    "source": "insight-timer",
    "hub": "insight-timer",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Rae Caroline Calnan is already on Spiritpedia as Rae Calnan, rae-calnan (docs/content-audits/rae-calnan.json, same website radiantangelenergy.co.uk); duplicate."
   },
   {
    "name": "Michelle Masters",
@@ -284,8 +284,8 @@
    "note": "Shift faculty list (saved 30 Oct 2026); counts under the owner's rule (README §18.7). Research from their OWN site only (never open theshiftnetwork.com). Link to the-shift-network only if their own site mentions The Shift Network.",
    "sprint1_rank": 461,
    "rank": 13,
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/michelle-masters.json",
    "skip_reason": null
   },
   {
@@ -313,9 +313,9 @@
    "parked": false,
    "source": "insight-timer",
    "hub": "insight-timer",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Bion (Bodhipatha) is already on Spiritpedia as Kandō Bion Boncutiu, kando-bion-boncutiu (docs/content-audits/kando-bion-boncutiu.json, same website bodhipatha.net); duplicate."
   },
   {
    "name": "Maryn Azoff",
@@ -328,9 +328,9 @@
    "note": "Shift faculty list (saved 30 Oct 2026); counts under the owner's rule (README §18.7). Research from their OWN site only (never open theshiftnetwork.com). Link to the-shift-network only if their own site mentions The Shift Network.",
    "sprint1_rank": 462,
    "rank": 15,
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "No own website found: two web searches turned up only directory and booking listings (retreat.guru, bookretreats, WeTravel trips), hub pages (Omega, Kripalu) and podcasts, none with a published email or contact form of her own. Without her own site there is no source for email, base or bio under the brief (README §18.4), so she is skipped. URLs were not guessed. She teaches Vocal Transformation and has Omega and Kripalu programmes, so she could be revisited if her own site turns up."
   },
   {
    "name": "Kim Newing - Mama Goddess",
@@ -357,9 +357,9 @@
    "parked": false,
    "source": "insight-timer",
    "hub": "insight-timer",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Kim Newing (Mama Goddess) is already on Spiritpedia as kim-newing (docs/content-audits/kim-newing.json, same website mamagoddess.com.au); duplicate."
   },
   {
    "name": "Alan Steinfeld",
@@ -372,9 +372,9 @@
    "note": "Shift faculty list (saved 30 Oct 2026); counts under the owner's rule (README §18.7). Research from their OWN site only (never open theshiftnetwork.com). Link to the-shift-network only if their own site mentions The Shift Network.",
    "sprint1_rank": 463,
    "rank": 17,
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "No own website found in two web searches (only podcast listings, an IONS profile and a Publishers Weekly page), so there is no own-site source for email, contact form, base or bio. He is also mainly the host and producer of the New Realities interview show and channel, centred on extraterrestrial contact and UFO disclosure, and the editor (not author) of the anthology Making Contact, so he reads as a media/interview project rather than a teacher, with UFO-disclosure framing close to the conspiracy rule. Skipped; no URLs guessed."
   },
   {
    "name": "Sagittarius Way",
@@ -401,9 +401,9 @@
    "parked": false,
    "source": "insight-timer",
    "hub": "insight-timer",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Sagittarius Way is Renée Vos de Wael, already on Spiritpedia as renee-vos-de-wael (docs/content-audits/renee-vos-de-wael.json, same website sagittariusway.com, with dev and live insert records); duplicate."
   },
   {
    "name": "Tom Condon",
@@ -418,8 +418,8 @@
    "note": "Shift faculty list (saved 30 Oct 2026); counts under the owner's rule (README §18.7). Research from their OWN site only (never open theshiftnetwork.com). Link to the-shift-network only if their own site mentions The Shift Network.",
    "sprint1_rank": 464,
    "rank": 19,
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/tom-condon.json",
    "skip_reason": null
   },
   {
@@ -447,9 +447,9 @@
    "parked": false,
    "source": "insight-timer",
    "hub": "insight-timer",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Everything Is Energy (everythingisenergyapothecary.com) is already on Spiritpedia as Lisa Marie Haley, lisa-marie-haley (docs/content-audits/lisa-marie-haley.json, same website); duplicate."
   },
   {
    "name": "Gloria Latham",
@@ -462,9 +462,9 @@
    "note": "Shift faculty list (saved 30 Oct 2026); counts under the owner's rule (README §18.7). Research from their OWN site only (never open theshiftnetwork.com). Link to the-shift-network only if their own site mentions The Shift Network.",
    "sprint1_rank": 465,
    "rank": 21,
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "No longer teaching: her own home page (glorialatham.com, read 5 Nov 2026) says that after more than thirty years of teaching this chapter is now paused."
   },
   {
    "name": "Julie Murphy Yogaressa",
@@ -491,9 +491,9 @@
    "parked": false,
    "source": "insight-timer",
    "hub": "insight-timer",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Already on Spiritpedia: dev listing julie-murphy (docs/content-audits/julie-murphy.json, same Insight Timer profile), so not researched again."
   },
   {
    "name": "Flora Bowley",
@@ -506,8 +506,8 @@
    "note": "Shift faculty list (saved 30 Oct 2026); counts under the owner's rule (README §18.7). Research from their OWN site only (never open theshiftnetwork.com). Link to the-shift-network only if their own site mentions The Shift Network.",
    "sprint1_rank": 466,
    "rank": 23,
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/flora-bowley.json",
    "skip_reason": null
   },
   {
@@ -535,9 +535,9 @@
    "parked": false,
    "source": "insight-timer",
    "hub": "insight-timer",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Already on Spiritpedia: dev listing sura-kim (docs/content-audits/sura-kim.json, same Insight Timer profile), so not researched again."
   },
   {
    "name": "Wendy Black Stern, C-IAYT",
@@ -550,9 +550,9 @@
    "note": "Shift faculty list (saved 30 Oct 2026); counts under the owner's rule (README §18.7). Research from their OWN site only (never open theshiftnetwork.com). Link to the-shift-network only if their own site mentions The Shift Network.",
    "sprint1_rank": 467,
    "rank": 25,
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Health rule: her own site (Center for Somatic Grieving, centerforsomaticgrieving.com) is built entirely around grief support and grief therapy (grief programmes, child-loss support, grief retreats, grief-focused yoga therapy training, one-to-one somatic grief sessions), so almost nothing passes the condition-named-item rule and her work is mainly therapeutic."
   },
   {
    "name": "Tess - Being Moved",
@@ -579,9 +579,9 @@
    "parked": false,
    "source": "insight-timer",
    "hub": "insight-timer",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Already on Spiritpedia: dev listing tess-howell (docs/content-audits/tess-howell.json, same Insight Timer profile), so not researched again."
   },
   {
    "name": "Kim Chestney",
@@ -594,8 +594,8 @@
    "note": "Shift faculty list (saved 30 Oct 2026); counts under the owner's rule (README §18.7). Research from their OWN site only (never open theshiftnetwork.com). Link to the-shift-network only if their own site mentions The Shift Network.",
    "sprint1_rank": 468,
    "rank": 27,
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/kim-chestney.json",
    "skip_reason": null
   },
   {
@@ -623,9 +623,9 @@
    "parked": false,
    "source": "insight-timer",
    "hub": "insight-timer",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Already on Spiritpedia: dev listing douglas-cardwell (docs/content-audits/douglas-cardwell.json, same Insight Timer profile), so not researched again."
   },
   {
    "name": "JJ Brighton",
@@ -638,9 +638,9 @@
    "note": "Shift faculty list (saved 30 Oct 2026); counts under the owner's rule (README §18.7). Research from their OWN site only (never open theshiftnetwork.com). Link to the-shift-network only if their own site mentions The Shift Network.",
    "sprint1_rank": 469,
    "rank": 29,
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "No own website, contact route or teaching profile could be found: two web searches (5 Nov 2026) returned no page about a teacher of this name, and the queue entry gives no website or courses. Nothing to research from their own site."
   },
   {
    "name": "Tanis",
@@ -667,9 +667,9 @@
    "parked": false,
    "source": "insight-timer",
    "hub": "insight-timer",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Already on Spiritpedia: dev listing tanis-fishman (docs/content-audits/tanis-fishman.json, same Insight Timer profile), so not researched again."
   },
   {
    "name": "Katherine Chernick Fauvre",
@@ -682,9 +682,9 @@
    "note": "Shift faculty list (saved 30 Oct 2026); counts under the owner's rule (README §18.7). Research from their OWN site only (never open theshiftnetwork.com). Link to the-shift-network only if their own site mentions The Shift Network.",
    "sprint1_rank": 470,
    "rank": 31,
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Blocked: her own site katherinefauvre.com has a robots.txt group naming ClaudeBot and anthropic-ai with Disallow: / (read 5 Nov 2026), so under the owner's rule the whole site is off limits and the teacher is skipped. (Research slip: the home page was fetched once before the block was spotted; nothing from it was kept and the saved copy was deleted.)"
   },
   {
    "name": "Lyndsay Toensing - The Unfinished Human™",
@@ -711,9 +711,9 @@
    "parked": false,
    "source": "insight-timer",
    "hub": "insight-timer",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Already on Spiritpedia: dev listing lyndsay-toensing (docs/content-audits/lyndsay-toensing.json, same Insight Timer profile), so not researched again."
   },
   {
    "name": "Sita PK",
@@ -726,9 +726,9 @@
    "note": "Shift faculty list (saved 30 Oct 2026); counts under the owner's rule (README §18.7). Research from their OWN site only (never open theshiftnetwork.com). Link to the-shift-network only if their own site mentions The Shift Network.",
    "sprint1_rank": 471,
    "rank": 33,
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "No own website, contact route or teaching profile could be found: two web searches (5 Nov 2026) returned no page about a teacher of this name, and the queue entry gives no website or courses."
   },
   {
    "name": "Mythological Goddess",
@@ -755,9 +755,9 @@
    "parked": false,
    "source": "insight-timer",
    "hub": "insight-timer",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Health rule: her own site (niamhdevine.com, read 5 Nov 2026) is framed around physical healing: it leads with healing paralysis, a course on what physical symptoms are communicating, mentoring sold on becoming pain-free and moving from illness to health, and its shop items are chakra transmissions \"for Physical Health\". Almost nothing passes the strict health-claim rule beyond an Ireland pilgrimage and one workshop. Owner may wish to review (pilgrimage and a core-values workshop on 15 Nov would pass)."
   },
   {
    "name": "Dr. Christine Schaffner",
@@ -770,9 +770,9 @@
    "note": "Shift faculty list (saved 30 Oct 2026); counts under the owner's rule (README §18.7). Research from their OWN site only (never open theshiftnetwork.com). Link to the-shift-network only if their own site mentions The Shift Network.",
    "sprint1_rank": 472,
    "rank": 35,
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Health rule: her own site (drchristineschaffner.com, read 5 Nov 2026) presents her as a naturopathic physician treating complex chronic illness (Lyme disease, long COVID, mould illness, MCAS, POTS and similar), with supplements and a chronic-illness podcast. Her work is mainly medical treatment, so almost nothing passes."
   },
   {
    "name": "Mel Collins - HSP",
@@ -799,9 +799,9 @@
    "parked": false,
    "source": "insight-timer",
    "hub": "insight-timer",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Already on Spiritpedia: dev listing mel-collins (docs/content-audits/mel-collins.json, same Insight Timer profile), so not researched again."
   },
   {
    "name": "Reya Manna",
@@ -814,9 +814,9 @@
    "note": "Shift faculty list (saved 30 Oct 2026); counts under the owner's rule (README §18.7). Research from their OWN site only (never open theshiftnetwork.com). Link to the-shift-network only if their own site mentions The Shift Network.",
    "sprint1_rank": 473,
    "rank": 37,
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Conspiracy rule (borderline, owner may review): her own site (reyamanna.com, read 5 Nov 2026) carries sovereign-citizen style material: the Seminary and Mount Shasta pages urge readers to \"stand under Divine Jurisdiction\" as \"sentient men and women\" in a private ministry association and say \"WE are the currency of the system\"; her about page lists DisclosureFest and partner events with David Wolfe. In addition, every dated event on her calendar has passed (latest June to August 2026), leaving only the membership, sessions and two online courses."
   },
   {
    "name": "Burgs & The Art of Meditation",
@@ -843,8 +843,8 @@
    "parked": false,
    "source": "insight-timer",
    "hub": "insight-timer",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/burgs.json",
    "skip_reason": null
   },
   {
@@ -858,9 +858,9 @@
    "note": "Shift faculty list (saved 30 Oct 2026); counts under the owner's rule (README §18.7). Research from their OWN site only (never open theshiftnetwork.com). Link to the-shift-network only if their own site mentions The Shift Network.",
    "sprint1_rank": 474,
    "rank": 39,
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "No own website, contact route or teaching profile could be found: two web searches (5 Nov 2026) returned only other people named Marla, and the queue entry gives no website or courses."
   },
   {
    "name": "Inner Shift",
@@ -887,9 +887,9 @@
    "parked": false,
    "source": "insight-timer",
    "hub": "insight-timer",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Already on Spiritpedia: dev listing melinda-quesenberry (docs/content-audits/melinda-quesenberry.json, same Insight Timer profile), so not researched again."
   },
   {
    "name": "Suzi Tucker",
@@ -902,8 +902,8 @@
    "note": "Shift faculty list (saved 30 Oct 2026); counts under the owner's rule (README §18.7). Research from their OWN site only (never open theshiftnetwork.com). Link to the-shift-network only if their own site mentions The Shift Network.",
    "sprint1_rank": 475,
    "rank": 41,
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/suzi-tucker.json",
    "skip_reason": null
   },
   {
@@ -931,9 +931,9 @@
    "parked": false,
    "source": "insight-timer",
    "hub": "insight-timer",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Already on Spiritpedia as Jessica Prestia (docs/content-audits/jessica-prestia.json, inserted on dev and live, same Insight Timer profile insighttimer.com/jess), so this is a duplicate."
   },
   {
    "name": "Jeilene Tracey",
@@ -946,9 +946,9 @@
    "note": "Shift faculty list (saved 30 Oct 2026); counts under the owner's rule (README §18.7). Research from their OWN site only (never open theshiftnetwork.com). Link to the-shift-network only if their own site mentions The Shift Network.",
    "sprint1_rank": 476,
    "rank": 43,
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "No own website or other public trace could be found (two web searches under 'Jeilene Tracey' and 'Jeilene Tracy' returned only other people), so there is no source for a base, contact route, photo or offerings."
   },
   {
    "name": "Eric Zimmer - The One You Feed",
@@ -975,9 +975,9 @@
    "parked": false,
    "source": "insight-timer",
    "hub": "insight-timer",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Already on Spiritpedia: Eric Zimmer is listed (docs/content-audits/eric-zimmer.json, inserted on dev and live), so this is a duplicate."
   },
   {
    "name": "Gayle Scott",
@@ -990,9 +990,9 @@
    "note": "Shift faculty list (saved 30 Oct 2026); counts under the owner's rule (README §18.7). Research from their OWN site only (never open theshiftnetwork.com). Link to the-shift-network only if their own site mentions The Shift Network.",
    "sprint1_rank": 477,
    "rank": 45,
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Could not identify which Gayle Scott this is or find a website of hers about spiritual teaching: two web searches turned up only a business facilitator (Impact Week, Authentic Business Catalyst) with no link to spiritual work or The Shift Network, so there is no confirmed own site to research from."
   },
   {
    "name": "Whitney Durrant E-RYT",
@@ -1019,9 +1019,9 @@
    "parked": false,
    "source": "insight-timer",
    "hub": "insight-timer",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Owner left her out on 1 Nov 2026 as inactive (rolled back on dev, plan in insight-timer-sprint-1/dropped/), and nothing has changed: moonwandering.com still shows '© 2021 Moon Wandering', its newest blog posts are from 2020-2022 and the sitemap was last updated in 2024, so she does not appear to be teaching now. Not re-planned; owner may override."
   },
   {
    "name": "Lisa Williams",
@@ -1034,8 +1034,8 @@
    "note": "Shift faculty list (saved 30 Oct 2026); counts under the owner's rule (README §18.7). Research from their OWN site only (never open theshiftnetwork.com). Link to the-shift-network only if their own site mentions The Shift Network.",
    "sprint1_rank": 478,
    "rank": 47,
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/lisa-williams.json",
    "skip_reason": null
   },
   {
@@ -1063,9 +1063,9 @@
    "parked": false,
    "source": "insight-timer",
    "hub": "insight-timer",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Already on Spiritpedia as Sierra Wagner (docs/content-audits/sierra-wagner.json, inserted on dev and live): same person, site sierralaurelyoga.com and Insight Timer profile insighttimer.com/sierralaurel. Duplicate."
   },
   {
    "name": "Dr. Deborah Ooten",
@@ -1078,8 +1078,8 @@
    "note": "Shift faculty list (saved 30 Oct 2026); counts under the owner's rule (README §18.7). Research from their OWN site only (never open theshiftnetwork.com). Link to the-shift-network only if their own site mentions The Shift Network.",
    "sprint1_rank": 479,
    "rank": 49,
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/deborah-ooten.json",
    "skip_reason": null
   },
   {
@@ -1106,9 +1106,9 @@
    "source": "insight-timer",
    "hub": "insight-timer",
    "rank": 50,
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Parked entry, still no contact route: his own site evolveawake.carrd.co (checked 5 Nov 2026) is a single newsletter sign-up page with no published email, no contact form and no offerings, base or photo of its own."
   },
   {
    "name": "Matt and Joy Kahn",
@@ -1121,9 +1121,9 @@
    "note": "Shift faculty list (saved 30 Oct 2026); counts under the owner's rule (README §18.7). Research from their OWN site only (never open theshiftnetwork.com). Link to the-shift-network only if their own site mentions The Shift Network.",
    "sprint1_rank": 480,
    "rank": 51,
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Own site blocks Claude's agents: truedivinenature.com's robots.txt has groups for ClaudeBot, anthropic-ai and Claude-Web with Disallow: / (read 5 Nov 2026), so nothing was fetched from it. The domain podcasts give for him, mattkahn.org, now serves an unrelated Korean link-directory page, so there is no usable own site."
   },
   {
    "name": "Bethany Auriel-Hagan",
@@ -1149,9 +1149,9 @@
    "source": "insight-timer",
    "hub": "insight-timer",
    "rank": 52,
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Parked entry, still no contact route: the website in the queue (crystaltreeroad.com, with or without www) now redirects to her Insight Timer link (insig.ht/crystaltreeroad), which we don't open, and a web search found no other site, email or contact form of hers."
   },
   {
    "name": "Dr. Janine Kreft",
@@ -1164,9 +1164,9 @@
    "note": "Shift faculty list (saved 30 Oct 2026); counts under the owner's rule (README §18.7). Research from their OWN site only (never open theshiftnetwork.com). Link to the-shift-network only if their own site mentions The Shift Network.",
    "sprint1_rank": 481,
    "rank": 53,
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Work is mainly therapy: her own course site (learn-on-kreftscouch.teachable.com) presents her as a licensed clinical psychologist specialising in trauma and healing, with self-paced courses drawn from her therapy practice; podcast and event listings describe nervous-system and trauma work. Psychotherapy is not spiritual teaching and most items would fail the health rule. No main website, published email or contact form was found either."
   },
   {
    "name": "Andrew Johnson",
@@ -1192,9 +1192,9 @@
    "source": "insight-timer",
    "hub": "insight-timer",
    "rank": 54,
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Own site blocks Claude's agents: relaxchangecreate.app's robots.txt has ClaudeBot, anthropic-ai and Claude-Web groups with Disallow: / (read 5 Nov 2026), so nothing was taken from it. His work (hypnotherapy relaxation apps) is also largely sold on conditions such as sleep, smoking and weight, which the health rule would exclude."
   },
   {
    "name": "Jade Shaw",
@@ -1207,9 +1207,9 @@
    "note": "Shift faculty list (saved 30 Oct 2026); counts under the owner's rule (README §18.7). Research from their OWN site only (never open theshiftnetwork.com). Link to the-shift-network only if their own site mentions The Shift Network.",
    "sprint1_rank": 482,
    "rank": 55,
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "No contact route and almost nothing current on her own site: jadeshaw.com (5 Nov 2026) is a 'coming soon' page plus one programme, Elevate, which began on 20 September and is mainly taught by six guest teachers; learn.jadeshaw.com says 'website under construction'. No published email or contact form, no base, and too few items of her own for a page."
   },
   {
    "name": "Glenn Harrold",
@@ -1235,9 +1235,9 @@
    "source": "insight-timer",
    "hub": "insight-timer",
    "rank": 56,
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Health rule: his own site (glennharrold.com, 5 Nov 2026) presents him as a hypnotherapist and sells hypnosis audio largely on conditions; its home page quotes clients on sugar cravings and 'chocolate addiction', and his YouTube channel's recent titles include 'Mental Health Meditation … Anxiety Relief', 'Deep Healing' sleep tracks and addiction testimonials. Mainly clinical hypnotherapy sold on conditions, so skipped even though a contact form and sales@hypnosisaudio.com are now published."
   },
   {
    "name": "Lisa Wimberger",
@@ -1250,9 +1250,9 @@
    "note": "Shift faculty list (saved 30 Oct 2026); counts under the owner's rule (README §18.7). Research from their OWN site only (never open theshiftnetwork.com). Link to the-shift-network only if their own site mentions The Shift Network.",
    "sprint1_rank": 483,
    "rank": 57,
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Health rule: her own site (neurosculpting.com, 5 Nov 2026) sells Neurosculpting as a nervous-system method framed around conditions: a '7-Day Anxiety Reset Challenge', helping people 'move through trauma', her own story of stress-induced seizures, onsite and remote therapy, and books such as 'Neurosculpting: A Whole-Brain Approach to Heal Trauma'. Mainly condition-led, so almost nothing would pass."
   },
   {
    "name": "Jason McGrice",
@@ -1279,8 +1279,8 @@
    "source": "insight-timer",
    "hub": "insight-timer",
    "rank": 58,
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/jason-mcgrice.json",
    "skip_reason": null
   },
   {
@@ -1294,9 +1294,9 @@
    "note": "Shift faculty list (saved 30 Oct 2026); counts under the owner's rule (README §18.7). Research from their OWN site only (never open theshiftnetwork.com). Link to the-shift-network only if their own site mentions The Shift Network.",
    "sprint1_rank": 484,
    "rank": 59,
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Own site blocks Claude's agents: www.ameliavogler.com's robots.txt has ClaudeBot and anthropic-ai groups with Disallow: / (read 5 Nov 2026), so nothing was fetched or taken from it."
   },
   {
    "name": "Cory Morgan (formerly Cory Cochiolo)",
@@ -1322,9 +1322,9 @@
    "source": "insight-timer",
    "hub": "insight-timer",
    "rank": 60,
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Work is mainly therapy sold on conditions: her own site (ajnahypnotherapy.com, 5 Nov 2026) offers hypnotherapy, counselling, talk therapy and couples therapy after a consultation 'before any treatment plan', framed around stress, anxiety, phobias and healing, plus a hypnotherapy training programme; one of her two books is sold on helping children get to sleep. A contact route exists (coryannecochiolo@gmail.com on the home page), but under the therapy and health rules almost nothing would pass. Owner may override if her Insight Timer meditation work (141.8k followers) should count."
   },
   {
    "name": "Dana Dharma Devi",
@@ -1337,9 +1337,9 @@
    "note": "Shift faculty list (saved 30 Oct 2026); counts under the owner's rule (README §18.7). Research from their OWN site only (never open theshiftnetwork.com). Link to the-shift-network only if their own site mentions The Shift Network.",
    "sprint1_rank": 485,
    "rank": 61,
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Teaches as a pair with Ashanna Solaris (rank 63): the two co-founded and co-lead Clarity Breathwork from one shared site, so they are one listing under Ashanna Solaris (ashanna-solaris.json), with Dana in the bio."
   },
   {
    "name": "Aluna Moon",
@@ -1365,9 +1365,9 @@
    "source": "insight-timer",
    "hub": "insight-timer",
    "rank": 62,
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Aluna Moon is a brand (a meditation and course label co-founded by Samantha Redgrave Hogg and another person), not a teacher; wombonthebroom.com now redirects to Samantha's writer portfolio, which presents her as a hypnotherapist and mental-health writer with no current spiritual offerings, and the Insight Timer channel's last upload was six years ago, so there is too little for a page."
   },
   {
    "name": "Ashanna Solaris",
@@ -1380,8 +1380,8 @@
    "note": "Shift faculty list (saved 30 Oct 2026); counts under the owner's rule (README §18.7). Research from their OWN site only (never open theshiftnetwork.com). Link to the-shift-network only if their own site mentions The Shift Network.",
    "sprint1_rank": 486,
    "rank": 63,
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/ashanna-solaris.json",
    "skip_reason": null
   },
   {
@@ -1408,9 +1408,9 @@
    "source": "insight-timer",
    "hub": "insight-timer",
    "rank": 64,
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Health rule: her own site presents her as a hypnotherapist and sells her guided imagery largely on conditions (surgery preparation, pain management, anxiety, insomnia, Lyme disease, osteoporosis, emotional eating, trauma), so the work is mainly condition-led and too little would pass."
   },
   {
    "name": "Larisa Gosla",
@@ -1423,9 +1423,9 @@
    "note": "Shift faculty list (saved 30 Oct 2026); counts under the owner's rule (README §18.7). Research from their OWN site only (never open theshiftnetwork.com). Link to the-shift-network only if their own site mentions The Shift Network.",
    "sprint1_rank": 487,
    "rank": 65,
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "No own website found in three web searches (only festival line-ups, a retreat directory profile and podcast pages, none of which may be used as sources), so no published email or contact form and nothing of her own to research from; she presents mainly as a vocalist and ceremonial musician (the duo Indigo River)."
   },
   {
    "name": "Pura Rasa",
@@ -1451,9 +1451,9 @@
    "source": "insight-timer",
    "hub": "insight-timer",
    "rank": 66,
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Parked entry, still no contact route: Pura Rasa (Rasa Lukosiute) has no website of her own (the older meditationsbyrasa.com no longer resolves, and the Pura Rasa app belongs to its developer, Breakthrough Apps), and her YouTube channel's readable page shows no published email or contact form."
   },
   {
    "name": "Amy B. Scher",
@@ -1466,9 +1466,9 @@
    "note": "Shift faculty list (saved 30 Oct 2026); counts under the owner's rule (README §18.7). Research from their OWN site only (never open theshiftnetwork.com). Link to the-shift-network only if their own site mentions The Shift Network.",
    "sprint1_rank": 488,
    "rank": 67,
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Health rule: her own site presents her as an energy therapist whose work and books are framed around recovering from chronic illness (her own Lyme disease), with the 'How to Heal Yourself' series sold on chronic illness, anxiety and depression; the rest is memoir, travel writing, a YA novel and author coaching, so too little would pass."
   },
   {
    "name": "Gisele Bündchen",
@@ -1494,9 +1494,9 @@
    "source": "insight-timer",
    "hub": "insight-timer",
    "rank": 68,
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Not a spiritual teacher: a fashion model and public figure with a single meditation track on Insight Timer (added five years ago); parked entry with no website in the queue and no teaching offerings, published email or contact form of her own for this work."
   },
   {
    "name": "Charlie Morley",
@@ -1509,8 +1509,8 @@
    "note": "Shift faculty list (saved 30 Oct 2026); counts under the owner's rule (README §18.7). Research from their OWN site only (never open theshiftnetwork.com). Link to the-shift-network only if their own site mentions The Shift Network.",
    "sprint1_rank": 489,
    "rank": 69,
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/charlie-morley.json",
    "skip_reason": null
   },
   {
@@ -1537,9 +1537,9 @@
    "source": "insight-timer",
    "hub": "insight-timer",
    "rank": 70,
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Health rule: her own site is titled 'Narcissistic Abuse & Codependency Recovery' and sells her Above the Veil Method on recovery from codependency, narcissistic abuse, anxiety and childhood wounds (therapy-style recovery coaching rather than spiritual teaching), so too little would pass."
   },
   {
    "name": "Lottie Moore",
@@ -1552,8 +1552,8 @@
    "note": "Shift faculty list (saved 30 Oct 2026); counts under the owner's rule (README §18.7). Research from their OWN site only (never open theshiftnetwork.com). Link to the-shift-network only if their own site mentions The Shift Network.",
    "sprint1_rank": 490,
    "rank": 71,
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/lottie-moore.json",
    "skip_reason": null
   },
   {
@@ -1580,8 +1580,8 @@
    "source": "insight-timer",
    "hub": "insight-timer",
    "rank": 72,
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/ajahn-achalo.json",
    "skip_reason": null
   },
   {
@@ -1595,9 +1595,9 @@
    "note": "Shift faculty list (saved 30 Oct 2026); counts under the owner's rule (README §18.7). Research from their OWN site only (never open theshiftnetwork.com). Link to the-shift-network only if their own site mentions The Shift Network.",
    "sprint1_rank": 491,
    "rank": 73,
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "No own website found in two web searches (only retreat-directory profiles and a nonprofit filings page for her foundation, The HeartWay, none usable as a source, and its site address wasn't published in the results; URLs are never guessed), so no published email or contact form could be confirmed."
   },
   {
    "name": "Desh",
@@ -1623,9 +1623,9 @@
    "source": "insight-timer",
    "hub": "insight-timer",
    "rank": 74,
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Parked entry, still no contact route: the queue gives no website, a web search for a teacher of this single name in Portland found nothing of their own, and the Insight Timer profile may not be opened, so there is no published email, contact form or own site to research from (last upload three years ago)."
   },
   {
    "name": "C.J. Llewelyn, M.Ed., LPC",
@@ -1638,9 +1638,9 @@
    "note": "Shift faculty list (saved 30 Oct 2026); counts under the owner's rule (README §18.7). Research from their OWN site only (never open theshiftnetwork.com). Link to the-shift-network only if their own site mentions The Shift Network.",
    "sprint1_rank": 492,
    "rank": 75,
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Therapy rule, and no own site found: two web searches found no website of their own, and the publisher's author page (penguin.de, seen only as a search result) presents C.J. Llewelyn as a licensed counsellor and family and couples therapist (IFS, EMDR) whose book links the vagus nerve and the chakras to healing trauma, so the work is mainly psychotherapy and condition-led."
   },
   {
    "name": "Franko Heke",
@@ -1666,9 +1666,9 @@
    "source": "insight-timer",
    "hub": "insight-timer",
    "rank": 76,
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "A music act rather than a teacher: his own site presents him as a performing artist (concerts, kirtan, festivals, a booking agency, a songbook and clothing), and his YouTube channel is live performances and an interview podcast; the only teaching items are one 21-day voice course and free online sound ceremonies, and the site publishes no base. For the owner: the podcast's recent guests include Dr. Zach Bush and Terrence Howard."
   },
   {
    "name": "Henri Rand Furgiuele",
@@ -1681,9 +1681,9 @@
    "note": "Shift faculty list (saved 30 Oct 2026); counts under the owner's rule (README §18.7). Research from their OWN site only (never open theshiftnetwork.com). Link to the-shift-network only if their own site mentions The Shift Network.",
    "sprint1_rank": 493,
    "rank": 77,
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "No own website found in two web searches (only a radio-show guest profile describing him as an early Quantum-Touch instructor), so no published email or contact form and nothing of his own to research from."
   },
   {
    "name": "Steve Nobel",
@@ -1709,8 +1709,8 @@
    "source": "insight-timer",
    "hub": "insight-timer",
    "rank": 78,
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/steve-nobel.json",
    "skip_reason": null
   },
   {
@@ -1724,8 +1724,8 @@
    "note": "Shift faculty list (saved 30 Oct 2026); counts under the owner's rule (README §18.7). Research from their OWN site only (never open theshiftnetwork.com). Link to the-shift-network only if their own site mentions The Shift Network.",
    "sprint1_rank": 494,
    "rank": 79,
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/joseph-selbie.json",
    "skip_reason": null
   },
   {
@@ -1752,9 +1752,9 @@
    "source": "insight-timer",
    "hub": "insight-timer",
    "rank": 80,
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "His only own site, yesherabgye.com, is a Substack publication (the server headers say it is served by Substack); substack.com is on the never-fetch list, so it was treated as off limits and not read beyond its robots.txt (which itself would allow us). With no other own site, there is nothing to research from and no contact route confirmed. Owner may want to decide whether Substack custom domains count as substack.com."
   },
   {
    "name": "Darren Austin Hall",
@@ -1767,8 +1767,8 @@
    "note": "Shift faculty list (saved 30 Oct 2026); counts under the owner's rule (README §18.7). Research from their OWN site only (never open theshiftnetwork.com). Link to the-shift-network only if their own site mentions The Shift Network.",
    "sprint1_rank": 495,
    "rank": 81,
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/darren-austin-hall.json",
    "skip_reason": null
   },
   {
@@ -1795,8 +1795,8 @@
    "source": "insight-timer",
    "hub": "insight-timer",
    "rank": 82,
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/michael-mackintosh.json",
    "skip_reason": null
   },
   {
@@ -1810,9 +1810,9 @@
    "note": "Shift faculty list (saved 30 Oct 2026); counts under the owner's rule (README §18.7). Research from their OWN site only (never open theshiftnetwork.com). Link to the-shift-network only if their own site mentions The Shift Network.",
    "sprint1_rank": 496,
    "rank": 83,
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "No website of her own could be found (three web searches; podcast pages that might have linked one are gone), so there is no published email or contact form, no published base and no photo source; only her 2020 book The Evidential Medium turns up."
   },
   {
    "name": "Amanda Sellers",
@@ -1838,9 +1838,9 @@
    "source": "insight-timer",
    "hub": "insight-timer",
    "rank": 84,
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Parked entry: still no contact route. Her only listed website is Instagram (off limits) and two web searches found no site of her own, so there is no published email or contact form."
   },
   {
    "name": "Sharon Smith",
@@ -1853,8 +1853,8 @@
    "note": "Shift faculty list (saved 30 Oct 2026); counts under the owner's rule (README §18.7). Research from their OWN site only (never open theshiftnetwork.com). Link to the-shift-network only if their own site mentions The Shift Network.",
    "sprint1_rank": 497,
    "rank": 85,
-   "status": "todo",
-   "plan": null,
+   "status": "planned",
+   "plan": "docs/content-audits/sharon-smith.json",
    "skip_reason": null
   },
   {
@@ -1881,9 +1881,9 @@
    "source": "insight-timer",
    "hub": "insight-timer",
    "rank": 86,
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "His own site's robots.txt (www.vazsriharan.com, Cloudflare-managed) has groups for ClaudeBot, anthropic-ai and Claude-Web with Disallow: /, so under the owner's 5 Nov 2026 rule the site is off limits and he is skipped; nothing beyond robots.txt was fetched."
   },
   {
    "name": "Amit Goswami, PhD",
@@ -1896,8 +1896,8 @@
    "note": "Shift faculty list (saved 30 Oct 2026); counts under the owner's rule (README §18.7). Research from their OWN site only (never open theshiftnetwork.com). Link to the-shift-network only if their own site mentions The Shift Network.",
    "sprint1_rank": 498,
    "rank": 87,
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/amit-goswami.json",
    "skip_reason": null
   },
   {
@@ -1924,9 +1924,9 @@
    "source": "insight-timer",
    "hub": "insight-timer",
    "rank": 88,
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "His own site's robots.txt (www.oliverjamesjenkin.com) says Disallow: / for its whole group, which names ClaudeBot and anthropic-ai and also covers User-agent: *, so the site is off limits to us; it is his only source for contact, base and offerings, so he is skipped. Nothing beyond robots.txt was fetched."
   },
   {
    "name": "Desiree Hurtak, PhD",
@@ -1939,9 +1939,9 @@
    "note": "Shift faculty list (saved 30 Oct 2026); counts under the owner's rule (README §18.7). Research from their OWN site only (never open theshiftnetwork.com). Link to the-shift-network only if their own site mentions The Shift Network.",
    "sprint1_rank": 499,
    "rank": 89,
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "She teaches as a couple with her husband J.J. Hurtak (rank 91) through the Academy for Future Science and The Keys of Enoch, so they would be one listing; that listing is skipped under the conspiracy rule (see j-j-hurtak.json): their own sites carry UFO 'disclosure' and cover-up material ('Many Faces on Mars', 'Re-examining the Lost Mars Probes', biblical 'Giants', a 2027 Easter seminar built partly on UFO disclosure). Borderline: owner may overrule; if so, one listing under J.J. Hurtak with Desiree in the bio. Sources were keysofenoch.org and futurescience.org (robots allow)."
   },
   {
    "name": "Lisa Abramson",
@@ -1967,9 +1967,9 @@
    "source": "insight-timer",
    "hub": "insight-timer",
    "rank": 90,
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Her own site (lisaabramson.com) now presents her as an executive coach for tech leaders (coaching, NLP, hypnosis, mindset), with speaking and maternal mental health advocacy (postpartum depression and psychosis) as the other strands; there are no current meditation or spiritual offerings, so she is not a spiritual teacher on her own pages and what is there is business coaching or condition-led."
   },
   {
    "name": "J.J. Hurtak, PhD",
@@ -1982,9 +1982,9 @@
    "note": "Shift faculty list (saved 30 Oct 2026); counts under the owner's rule (README §18.7). Research from their OWN site only (never open theshiftnetwork.com). Link to the-shift-network only if their own site mentions The Shift Network.",
    "sprint1_rank": 500,
    "rank": 91,
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Skipped under the conspiracy rule (owner, 5 Nov 2026), borderline: his own sites (keysofenoch.org, futurescience.org) give a large share of their pages to UFO 'disclosure' and cover-up themes (Many Faces on Mars, Re-examining the Lost Mars Probes of 1989-1993, Brazil and the ETI Reality, biblical 'Giants'), his bio leads on extraterrestrial investigation and disclosure conferences, and the next Easter 2027 seminar is framed partly around UFO disclosure. Otherwise he would qualify (published emails info@keysofenoch.org / affs@affs.org, contact form at keysofenoch.org/the-academy/contact/, The Keys of Enoch and some thirty books, study groups); no Shift Network mention found. If the owner overrules, make one listing for him with Desiree Hurtak (rank 89) in the bio."
   },
   {
    "name": "Naomi Goodlet",
@@ -2010,9 +2010,9 @@
    "source": "insight-timer",
    "hub": "insight-timer",
    "rank": 92,
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Her own site (naomigoodlet.com) presents her as a therapist: her paid work is one-to-one therapy (ACT, polyvagal, parts and inner-child work, EFT), alongside a psychology and habits podcast; her free meditations began as between-session practices for clients. Work that is mainly therapy is skipped under the brief's health rule."
   },
   {
    "name": "Michelle Clare",
@@ -2025,8 +2025,8 @@
    "note": "Shift faculty list (saved 30 Oct 2026); counts under the owner's rule (README §18.7). Research from their OWN site only (never open theshiftnetwork.com). Link to the-shift-network only if their own site mentions The Shift Network.",
    "sprint1_rank": 501,
    "rank": 93,
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/michelle-clare.json",
    "skip_reason": null
   },
   {
@@ -2053,9 +2053,9 @@
    "source": "insight-timer",
    "hub": "insight-timer",
    "rank": 94,
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Parked entry: still no contact route. No website of his own turned up in two web searches (only his Insight Timer profile, not opened, and his RoundGlass Living teacher pages), so there is no published email or contact form."
   },
   {
    "name": "Mellissa Seaman, JD",
@@ -2068,8 +2068,8 @@
    "note": "Shift faculty list (saved 30 Oct 2026); counts under the owner's rule (README §18.7). Research from their OWN site only (never open theshiftnetwork.com). Link to the-shift-network only if their own site mentions The Shift Network.",
    "sprint1_rank": 502,
    "rank": 95,
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/mellissa-seaman.json",
    "skip_reason": null
   },
   {
@@ -2096,8 +2096,8 @@
    "source": "insight-timer",
    "hub": "insight-timer",
    "rank": 96,
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/jay-chodagam.json",
    "skip_reason": null
   },
   {
@@ -2113,9 +2113,9 @@
    "note": "Shift faculty list (saved 30 Oct 2026); counts under the owner's rule (README §18.7). Research from their OWN site only (never open theshiftnetwork.com). Link to the-shift-network only if their own site mentions The Shift Network.",
    "sprint1_rank": 503,
    "rank": 97,
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Too thin as a spiritual listing once the rules are applied. Her own site (earthwisecentre.org, now redirecting to earthwise.global, Mauritius-based) presents her mainly as a systems scientist and architect of AI/AGI governance (EARTHwise Constitution, AI Arena, Elowyn strategy game); her one personal paid offer, one-to-one coaching, is sold on 'deep healing' of trauma, stress and physical wellbeing, which fails the strict health rule; her books (Love Letters from Mother Earth, the Future Humans trilogy with Jean Houston) carry no ISBN or ASIN on her pages; her YouTube channel is mostly governance, constitution and game launches. No Shift mention found. Contact exists (info@earthwisecentre.org on /connect, plus a form). Judgement call: owner may revisit."
   },
   {
    "name": "Tramaine Cato",
@@ -2141,9 +2141,9 @@
    "source": "insight-timer",
    "hub": "insight-timer",
    "rank": 98,
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Parked entry: still no contact route. Two web searches found no website of her own, only Insight Timer profiles (not opened) and a Fitness Pro Travel profile whose messaging needs a login, so there is no published email or contact form."
   },
   {
    "name": "RamDev Dale Borglum",
@@ -2156,9 +2156,9 @@
    "note": "Shift faculty list (saved 30 Oct 2026); counts under the owner's rule (README §18.7). Research from their OWN site only (never open theshiftnetwork.com). Link to the-shift-network only if their own site mentions The Shift Network.",
    "sprint1_rank": 504,
    "rank": 99,
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "His own site, the Living/Dying Project (www.livingdying.org; robots.txt allows all), answered our first page request with a Cloudflare 'Just a moment' challenge (403, 5 Nov 2026). Under the blocked-means-skip rule it was not retried and nothing more was fetched from it; no other site of his own turned up in two searches (only hub pages such as Hollyhock and Menla, and podcast pages), so there is no usable published email or contact form, base or photo source. Note for the owner: his work is centred on spiritual care for the dying (Living/Dying Project, conscious dying), framed partly around life-threatening illness, which would also need a careful health-rule pass."
   },
   {
    "name": "Arielle Margalit Hecht",
@@ -2184,9 +2184,9 @@
    "source": "insight-timer",
    "hub": "insight-timer",
    "rank": 100,
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Parked entry: still no contact route of her own. Her site ariellemargalit.com (a Kit landing page; robots.txt absent) has only a newsletter sign-up and two course sales pages (A Course in Love, $44; A Course in Surrender), with no published email and no contact form. The only published inbox is success@awakenedacademy.com, the school she co-founded with her partner Michael Mackintosh (rank 82, planned as michael-mackintosh.json); if the owner prefers, she could be folded into his listing as a teaching couple or listed using that school inbox."
   },
   {
    "name": "Julie Reisler",
@@ -2227,9 +2227,9 @@
    "source": "insight-timer",
    "hub": "insight-timer",
    "rank": 102,
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Health rule: his own site (yogibryan.com, read 5 Nov 2026) presents him as a hypnotherapist and NLP trainer who helps people sleep better and rewire their minds, and his YouTube channel ('Sleep Hypnosis & Yoga Nidra', 23.1K) is largely condition-led (anxiety and panic relief, sobriety, weight loss, grief healing hypnosis); his other offers are an app and business mentorship for wellness coaches. Contact route found (booking form, app support inbox), so not parked any more, but too little passes the health rule for a spiritual teacher's page. Judgement call for the owner."
   },
   {
    "name": "Dr. Velma Love",
@@ -2242,9 +2242,9 @@
    "note": "Shift faculty list (saved 30 Oct 2026); counts under the owner's rule (README §18.7). Research from their OWN site only (never open theshiftnetwork.com). Link to the-shift-network only if their own site mentions The Shift Network.",
    "sprint1_rank": 506,
    "rank": 103,
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "No own website, published email or contact form found (two web searches, 5 Nov 2026): only her academic book Divining the Self (Penn State University Press) and her Howard University School of Divinity project role turn up, so there is no own site to research from and no contact route (README §18.4)."
   },
   {
    "name": "Owen",
@@ -2270,9 +2270,9 @@
    "source": "insight-timer",
    "hub": "insight-timer",
    "rank": 104,
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "A nature-sound recording project rather than a teacher, with no own website, published email or contact form found (queue entry has no website; one web search, 5 Nov 2026, turned up nothing beyond the Insight Timer profile, which was not opened). Parked entry still has no contact route."
   },
   {
    "name": "Donnalea Van Vleet Goelz, PhD",
@@ -2285,9 +2285,9 @@
    "note": "Shift faculty list (saved 30 Oct 2026); counts under the owner's rule (README §18.7). Research from their OWN site only (never open theshiftnetwork.com). Link to the-shift-network only if their own site mentions The Shift Network.",
    "sprint1_rank": 507,
    "rank": 105,
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "No own website, published email or contact form found: two web searches (5 Nov 2026) returned nothing about her at all, so there is no own site to research from and no contact route (README §18.4)."
   },
   {
    "name": "Ellen Mouton",
@@ -2313,9 +2313,9 @@
    "source": "insight-timer",
    "hub": "insight-timer",
    "rank": 106,
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Parked entry, still no contact route: her listed website bio.solangekiema.com redirects to beacons.ai, which returned a Cloudflare 403 block to us (5 Nov 2026), so it was not retried and nothing else was fetched from beacons.ai; her Gumroad store (goingbackhome.gumroad.com) shows only her name without scripts, and one web search found no other own site, email or contact form. Search results suggest Ellen Mouton is a name used by Solange Kiéma (not confirmed)."
   },
   {
    "name": "Arthur Samuel Joseph",
@@ -2629,8 +2629,8 @@
    "note": "Shift faculty list (saved 30 Oct 2026); counts under the owner's rule (README §18.7). Research from their OWN site only (never open theshiftnetwork.com). Link to the-shift-network only if their own site mentions The Shift Network.",
    "sprint1_rank": 515,
    "rank": 121,
-   "status": "todo",
-   "plan": null,
+   "status": "planned",
+   "plan": "docs/content-audits/suzanne-dion.json",
    "skip_reason": null
   },
   {
@@ -2657,9 +2657,9 @@
    "source": "insight-timer",
    "hub": "insight-timer",
    "rank": 122,
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Parked entry looked at again: her own site, inbloom.love, is a script-only app that serves no readable text (no email, contact form, base, photo or offerings) to curl or WebFetch, and a web search found no other own page, so there is still no published email or contact form."
   },
   {
    "name": "Seraphina Capranos",
@@ -3059,8 +3059,8 @@
    "note": "Shift faculty list (saved 30 Oct 2026); counts under the owner's rule (README §18.7). Research from their OWN site only (never open theshiftnetwork.com). Link to the-shift-network only if their own site mentions The Shift Network.",
    "sprint1_rank": 525,
    "rank": 141,
-   "status": "todo",
-   "plan": null,
+   "status": "planned",
+   "plan": "docs/content-audits/natasja-pelgrom.json",
    "skip_reason": null
   },
   {
@@ -3489,8 +3489,8 @@
    "note": "Shift faculty list (saved 30 Oct 2026); counts under the owner's rule (README §18.7). Research from their OWN site only (never open theshiftnetwork.com). Link to the-shift-network only if their own site mentions The Shift Network.",
    "sprint1_rank": 535,
    "rank": 161,
-   "status": "todo",
-   "plan": null,
+   "status": "planned",
+   "plan": "docs/content-audits/sue-brayne.json",
    "skip_reason": null
   },
   {
@@ -10586,5 +10586,5 @@
    "skip_reason": null
   }
  ],
- "updated": "2026-11-05T15:14:25.499Z"
+ "updated": "2026-11-05T15:46:29.827Z"
 }

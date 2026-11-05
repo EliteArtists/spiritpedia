@@ -1,0 +1,238 @@
+{
+  "healer": {
+    "healer_slug": "flora-bowley",
+    "location_source": "https://florabowley.com/about",
+    "create": {
+      "name": "Flora Bowley",
+      "bio": "Flora Bowley is a painter, author and creative guide from Portland, Oregon, whose teaching treats intuitive painting as a way into presence, self-trust and a fuller sense of being alive. Raised in Green Bay, Wisconsin, she took a degree in painting and drawing and spent around a decade living and making work along the West Coast, while also studying yoga and massage, sitting long meditation retreats and travelling widely. She changed her first name from Shannon to Flora as she neared thirty, and in 2010 she led her first painting workshop, which set the direction of her later work.\n\nHer approach mixes layered, process-led painting with movement, breathwork, free writing and group sharing, and asks students to let go of perfectionism and follow curiosity rather than a fixed plan. She has written Brave Intuitive Painting, Creative Revolution, Fresh Paint (with Lynzee Lynx) and the memoir-style The Art of Aliveness. Today she teaches through self-paced online courses, a monthly online community called FREE FLO with live sessions and guest teachers, and small week-long residential retreats in places such as Bali, Morocco and Thailand.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "worldwide",
+      "city": "Portland, Oregon",
+      "country": "United States",
+      "subjects": [
+        "spirituality",
+        "soul-purpose",
+        "mindfulness"
+      ],
+      "website_url": "https://florabowley.com/",
+      "booking_url": "https://florabowley.com/retreats",
+      "youtube_url": null,
+      "instagram_url": "https://www.instagram.com/florabowley/",
+      "facebook_url": "https://www.facebook.com/florabowleydesigns",
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "teamlove@florabowley.com",
+      "image_urls": [
+        "https://cdn.sanity.io/images/0g70qxh1/production/dc07697765e521e38e3a9d2ca1cbaeb27e264f9c-1450x967.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [
+    {
+      "title": "Brave Intuitive Painting",
+      "slug": "brave-intuitive-painting",
+      "author": "Flora Bowley",
+      "asin": "1592537685",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "cover": "https://m.media-amazon.com/images/P/1592537685.01._SCLZZZZZZZ_.jpg",
+      "description": "Her first book, a hands-on guide to painting in layers without planning the outcome, with exercises for loosening up, working with colour and building a personal style.",
+      "subjects": [
+        "spirituality",
+        "mindfulness"
+      ]
+    },
+    {
+      "title": "Creative Revolution",
+      "slug": "creative-revolution",
+      "author": "Flora Bowley",
+      "asin": "1631592599",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "cover": "https://m.media-amazon.com/images/P/1631592599.01._SCLZZZZZZZ_.jpg",
+      "description": "A follow-up that carries her painting approach into daily life, pairing studio exercises with reflections on curiosity, change and living more creatively.",
+      "subjects": [
+        "spirituality",
+        "soul-purpose"
+      ]
+    },
+    {
+      "title": "Fresh Paint",
+      "slug": "fresh-paint",
+      "author": "Flora Bowley, Lynzee Lynx",
+      "asin": "0760370680",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "cover": "https://m.media-amazon.com/images/P/0760370680.01._SCLZZZZZZZ_.jpg",
+      "description": "Written with fellow painter Lynzee Lynx, it guides readers through making a long series of small mixed-media pieces as a way to find a style of their own.",
+      "subjects": [
+        "spirituality"
+      ]
+    },
+    {
+      "title": "The Art of Aliveness",
+      "slug": "the-art-of-aliveness",
+      "author": "Flora Bowley",
+      "asin": "1950253104",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "cover": "https://m.media-amazon.com/images/P/1950253104.01._SCLZZZZZZZ_.jpg",
+      "description": "A personal book in which she tells formative stories from her own life and draws out what years of painting and teaching have shown her about living fully.",
+      "subjects": [
+        "spirituality",
+        "soul-purpose"
+      ]
+    }
+  ],
+  "courses": [
+    {
+      "title": "Reunite",
+      "url": "https://florabowley.com/courses/reunite",
+      "description": "A self-paced online course that walks through her whole intuitive painting process as taught on her in-person retreats, with around thirty hours of recorded teaching and lifetime access.",
+      "price": "$297 USD",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "spirituality",
+        "mindfulness"
+      ],
+      "image": "https://cdn.sanity.io/images/0g70qxh1/production/b62d58a19134f960c5aad03f9307a1274d3526e1-2000x1333.jpg"
+    },
+    {
+      "title": "Creative Revolution e-course",
+      "url": "https://florabowley.com/courses/creative-revolution-e-course",
+      "description": "Recorded online programme of guided art, movement and mindful exercises meant to bring creativity into everyday life, with a printable workbook of prompts.",
+      "price": "$390 USD",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "spirituality",
+        "mindfulness"
+      ],
+      "image": "https://cdn.sanity.io/images/0g70qxh1/production/c900e5397ed5e3261ac73e206074c1b12bf3024f-2000x1333.jpg"
+    },
+    {
+      "title": "Fresh Paint",
+      "url": "https://florabowley.com/courses/fresh-paint",
+      "description": "An in-depth recorded course, co-created with Lynzee Lynx, in which students make a hundred small mixed-media paintings to discover their own visual voice.",
+      "price": "$345 USD",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "spirituality"
+      ],
+      "image": "https://cdn.sanity.io/images/0g70qxh1/production/4c0fd698edef11714b185fb968ad0715630846c5-2000x1195.jpg"
+    },
+    {
+      "title": "The Painting Sessions",
+      "url": "https://florabowley.com/courses/the-painting-sessions",
+      "description": "Twelve themed videos following paintings from blank canvas to finish with her commentary, for people who learn best by watching. Sessions can also be bought singly.",
+      "price": "$345 USD",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "spirituality",
+        "mindfulness"
+      ],
+      "image": "https://cdn.sanity.io/images/0g70qxh1/production/abdbe9b41c4d4f27a800129cfb946d654de9e2dd-2000x1195.jpg"
+    },
+    {
+      "title": "FREE FLO Community",
+      "url": "https://florabowley.com/free-flo-community",
+      "description": "Her online membership with monthly themes, live creative gatherings, guest teachers and a library of more than a hundred recorded sessions. The first week is free.",
+      "price": "$40 USD per month",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "spirituality",
+        "mindfulness"
+      ],
+      "image": "https://cdn.sanity.io/images/0g70qxh1/production/28a4bb6dc8a2bec9026e5c2fce89e750b44e8c64-2000x1237.jpg"
+    },
+    {
+      "title": "The Art of Aliveness Retreat: Ubud, Bali",
+      "url": "https://florabowley.com/retreats/the-art-of-aliveness-bali-2027",
+      "description": "An eight-day residential retreat at an eco-cottage venue in Ubud combining intuitive painting, writing, breathwork, movement and time to explore local culture.",
+      "price": "Contact for pricing",
+      "product_type": "retreat",
+      "start_date": "2027-02-23",
+      "end_date": "2027-03-02",
+      "subjects": [
+        "spirituality",
+        "breathwork"
+      ],
+      "image": "https://cdn.sanity.io/images/0g70qxh1/production/a811aaa62ca2c8b54904c7418ac102dc59c32b02-3840x2557.avif"
+    },
+    {
+      "title": "The Art of Aliveness Retreat: Agadir, Morocco",
+      "url": "https://florabowley.com/retreats/the-art-of-aliveness-morocco",
+      "description": "Eight days and seven nights near the Atlas foothills for a small group of up to seventeen, mixing painting, movement, writing and creative play.",
+      "price": "Contact for pricing",
+      "product_type": "retreat",
+      "start_date": "2027-10-26",
+      "end_date": "2027-11-02",
+      "subjects": [
+        "spirituality",
+        "breathwork"
+      ],
+      "image": "https://cdn.sanity.io/images/0g70qxh1/production/f89c2542d56aa5108c3459aad3f69fddb6633160-1100x821.jpg"
+    },
+    {
+      "title": "The Art of Aliveness Retreat: Thailand",
+      "url": "https://florabowley.com/retreats/the-art-of-aliveness-thailand-2028",
+      "description": "A week by the sea on Thailand's central coast with daily expressive painting, community time and space to rest.",
+      "price": "Contact for pricing",
+      "product_type": "retreat",
+      "start_date": "2028-02-02",
+      "end_date": "2028-02-09",
+      "subjects": [
+        "spirituality"
+      ],
+      "image": "https://cdn.sanity.io/images/0g70qxh1/production/79a7e95be24b896e2fb62cd9a25c4c370b2d88b3-1450x1096.jpg"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "pipelines-2",
+    "hub": "the-shift-network",
+    "rank": 23,
+    "hub_url": null,
+    "tier_evidence": "No YouTube channel linked from her site; Instagram @florabowley and Facebook florabowleydesigns not opened (Meta sites off limits); Pinterest not counted → 0 readable → local_hero",
+    "email": "yes",
+    "email_source": "https://florabowley.com/",
+    "contact_form_url": "https://florabowley.com/?popup=form%3Ageneral-contact-form",
+    "bio_check": "OK: no 8-word runs against 19 source(s)",
+    "flags": [
+      "No Shift mention on own site: listed without the link (searched home, about, courses, retreats, books and community pages).",
+      "Counts unreadable for her main accounts (Instagram, Facebook); tier set at local_hero on 0 readable followers. As the author of four books from mainstream craft publishers she may merit more; owner to decide.",
+      "Her work is intuitive painting and creativity as personal practice; no exact subject exists, so spirituality, soul-purpose and mindfulness were used. Owner may judge whether a painting teacher fits Spiritpedia.",
+      "Email teamlove@florabowley.com is her team inbox (footer mailto on every page).",
+      "Contact form is a pop-up on the home page (?popup=form:general-contact-form).",
+      "ISBN from https://florabowley.com/books/brave-intuitive-painting-the-book (her Amazon US link gp/product/1592537685), not confirmed elsewhere. Cover left null.",
+      "ISBN from https://florabowley.com/books/creative-revolution-the-book (her Amazon US link gp/product/1631592599), not confirmed elsewhere. Cover left null.",
+      "ISBN from https://florabowley.com/books/fresh-paint-the-book (her Amazon US link gp/product/0760370680), not confirmed elsewhere. Cover left null.",
+      "ISBN from https://florabowley.com/books/the-art-of-aliveness-book (her Amazon US link gp/product/1950253104), not confirmed elsewhere. Cover left null.",
+      "Retreat prices are not shown on the retreat pages (booking buttons only), so 'Contact for pricing'.",
+      "One photo only: the 'Portrait of artist Flora Bowley' image on her About page; the other images are paintings or old snapshots."
+    ],
+    "left_out": [
+      "Earth Is Holding You (Pixie Lighthorse, listed on her site): she says she has written four books and this one is credited to Pixie Lighthorse, so it is treated as not authored by her.",
+      "Creative Revolution Tour, Santa Barbara (7 Nov 2026): starts before 9 Nov 2026.",
+      "Paintings, prints and tour flags in her shop: products, not teaching.",
+      "No YouTube channel or free practice found on her own site; the FREE FLO free week is a trial of the paid membership, not listed separately."
+    ]
+  },
+  "images_final": true
+}

@@ -1,0 +1,259 @@
+{
+  "healer": {
+    "healer_slug": "dan-siegel",
+    "location_source": "https://drdansiegel.com/biography/",
+    "create": {
+      "name": "Dr. Dan Siegel",
+      "bio": "Dr. Dan Siegel is a psychiatrist and educator who studied medicine at Harvard and trained at UCLA, where he became a clinical professor of psychiatry and helped found the university's research centre on mindful awareness. His central project is interpersonal neurobiology, a way of looking at the mind that draws on brain science, attachment research and contemplative practice and treats wellbeing as a matter of integration: linking differentiated parts of ourselves and our relationships. He calls the capacity to perceive one's own and others' inner lives 'mindsight'.\n\nFor general readers his best-known contribution is the Wheel of Awareness, a guided reflection that moves attention from the senses, the body and the mind to awareness itself and then to a sense of connection with others; he sets it out in his book Aware and offers recordings of it free on his website. His other books include Mindsight, The Mindful Brain, IntraConnected, and, with Tina Payne Bryson, The Whole-Brain Child, and several have been New York Times bestsellers. With Caroline Welch he founded the Mindsight Institute, which runs online learning, and he speaks widely to educators, parents, clinicians and contemplative audiences. His office is in Santa Monica, California.",
+      "tier": "luminary",
+      "entity_type": "individual",
+      "availability": "worldwide",
+      "city": "Santa Monica, California",
+      "country": "United States",
+      "subjects": [
+        "mindfulness",
+        "consciousness",
+        "meditation"
+      ],
+      "website_url": "https://drdansiegel.com/",
+      "booking_url": "https://drdansiegel.com/schedule/",
+      "youtube_url": "https://www.youtube.com/user/mindsightinstitute/",
+      "instagram_url": "https://www.instagram.com/drdansiegel/",
+      "facebook_url": "https://www.facebook.com/drdansiegel/",
+      "twitter_url": "https://twitter.com/DrDanSiegel",
+      "tiktok_url": null,
+      "contact_email": "info@drdansiegel.com",
+      "image_urls": [
+        "https://yt3.googleusercontent.com/ytc/AIdro_lBlNVsbQPGmIJ-xo-oAzUttOPwU2xpYGBagGFW6jP0Pw=s900",
+        "https://eadn-wc01-10021800.nxedge.io/wp-content/uploads/2020/09/Dr.-Dan-Siegel.jpeg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [
+    {
+      "title": "\"The Power of Showing Up\" talk at Powell's Book Store in Portland, OR - January 2020",
+      "url": "https://www.youtube.com/watch?v=-Swk-koHhoc",
+      "subjects": [
+        "conscious-relationships",
+        "mindfulness"
+      ],
+      "channel": "Dr. Dan Siegel"
+    },
+    {
+      "title": "Dr. Dan Siegel's Hand Model of the Brain",
+      "url": "https://www.youtube.com/watch?v=f-m2YcdMdFw",
+      "subjects": [
+        "mindfulness",
+        "conscious-science"
+      ],
+      "channel": "Dr. Dan Siegel"
+    },
+    {
+      "title": "The Science Behind Aware",
+      "url": "https://www.youtube.com/watch?v=bYyycix5LGg",
+      "subjects": [
+        "meditation",
+        "conscious-science"
+      ],
+      "channel": "Dr. Dan Siegel"
+    },
+    {
+      "title": "Welcome to Aware!",
+      "url": "https://www.youtube.com/watch?v=CkjlQ4XzsGA",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "channel": "Dr. Dan Siegel"
+    },
+    {
+      "title": "Dan Siegel: Soul & Synapse at the Garrison Institute",
+      "url": "https://www.youtube.com/watch?v=XZbIt6jCVeY",
+      "subjects": [
+        "consciousness",
+        "conscious-science"
+      ],
+      "channel": "Dr. Dan Siegel"
+    },
+    {
+      "title": "MIND: Consciousness and the Arrow of Time",
+      "url": "https://www.youtube.com/watch?v=LRgf7d5TU5E",
+      "subjects": [
+        "consciousness"
+      ],
+      "channel": "Dr. Dan Siegel"
+    },
+    {
+      "title": "MIND: The Ws and Time",
+      "url": "https://www.youtube.com/watch?v=VZo2wXx6Pn0",
+      "subjects": [
+        "consciousness"
+      ],
+      "channel": "Dr. Dan Siegel"
+    },
+    {
+      "title": "Mindsight Immersion Weekend with Dr. Dan Siegel",
+      "url": "https://www.youtube.com/watch?v=RKC8huzhWGM",
+      "subjects": [
+        "mindfulness"
+      ],
+      "channel": "Dr. Dan Siegel"
+    }
+  ],
+  "books": [
+    {
+      "title": "Aware: The Science and Practice of Presence",
+      "slug": "aware",
+      "author": "Daniel J. Siegel",
+      "asin": "1101993049",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "Siegel's full guide to the Wheel of Awareness meditation, with the research behind it and reflections on what awareness itself might be. Readers are guided through the practice step by step.",
+      "subjects": [
+        "meditation",
+        "consciousness",
+        "mindfulness"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1101993049.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "Mindsight: The New Science of Personal Transformation",
+      "slug": "mindsight",
+      "author": "Daniel J. Siegel",
+      "asin": "0553804707",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "An accessible introduction to his idea of mindsight, the ability to sense and shape one's own inner life and attune to other people, told through stories and simple models of the brain.",
+      "subjects": [
+        "mindfulness",
+        "conscious-relationships"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/0553804707.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "IntraConnected: MWe (Me + We) as the Integration of Self, Identity, and Belonging",
+      "slug": "intraconnected",
+      "author": "Daniel J. Siegel",
+      "asin": "0393711692",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "An essay on widening the sense of self beyond the individual body, so that identity includes our relationships and the natural world, which he names 'MWe'.",
+      "subjects": [
+        "consciousness",
+        "spirituality"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/0393711692.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "The Mindful Brain: Reflection and Attunement in the Cultivation of Well-Being",
+      "slug": "the-mindful-brain",
+      "author": "Daniel J. Siegel",
+      "asin": "039370470X",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "Siegel's earlier exploration of mindful awareness, drawing on his own experience of meditation retreats alongside research on attention and attunement.",
+      "subjects": [
+        "mindfulness",
+        "meditation",
+        "conscious-science"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/039370470X.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "Mind: A Journey to the Heart of Being Human",
+      "slug": "mind",
+      "author": "Daniel J. Siegel",
+      "asin": "039371053X",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "A personal and scientific inquiry into what the mind is, weaving his own life story with a working definition of mind as something both embodied and relational.",
+      "subjects": [
+        "consciousness",
+        "conscious-science"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/039371053X.01._SCLZZZZZZZ_.jpg"
+    }
+  ],
+  "courses": [
+    {
+      "title": "Blue Spirit – Wisdom & Wellbeing: The Wisdom and Science of an Open Heart",
+      "url": "https://bluespiritcostarica.com/retreat/the-wisdom-and-science-of-an-open-heart/",
+      "description": "A week-long multi-teacher retreat at Blue Spirit in Nosara, Costa Rica, combining meditation, cognitive science and interpersonal neurobiology, with Dan Siegel among the faculty. Prices depend on the room booked.",
+      "price": "Contact for pricing",
+      "product_type": "retreat",
+      "start_date": "2027-02-06",
+      "end_date": "2027-02-13",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://bluespiritcostarica.com/wp-content/uploads/2026/07/feb_the_wisdom_and_science_of_an_open_heart-ok.webp"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Wheel of Awareness",
+      "url": "https://drdansiegel.com/wheel-of-awareness/",
+      "description": "Free guided recordings of his Wheel of Awareness practice in several lengths, from a short consolidated version to a full thirty-minute practice and an advanced version. An image of the wheel explains the idea.",
+      "featured": true,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation",
+        "mindfulness",
+        "consciousness"
+      ],
+      "image": "https://eadn-wc01-10021800.nxedge.io/wp-content/uploads/2020/04/DrDanSiegel_WheelOfAwareness.jpg"
+    },
+    {
+      "title": "Everyday Mindsight Tools",
+      "url": "https://drdansiegel.com/everyday-mindsight-tools/",
+      "description": "Short audio recordings from Dan Siegel on breath awareness, with a talk on why attention to the breath matters. Free on his website.",
+      "featured": false,
+      "resource_type": "practice",
+      "subjects": [
+        "mindfulness",
+        "breathwork"
+      ],
+      "image": "https://eadn-wc01-10021800.nxedge.io/wp-content/uploads/2020/10/speaker-icon-300x300.png"
+    }
+  ],
+  "sprint": {
+    "sprint": "pipelines-2",
+    "hub": "the-shift-network",
+    "rank": 11,
+    "hub_url": null,
+    "tier_evidence": "YouTube @drdansiegel-MYB 35.3K subscribers (channel header, 5 Nov 2026); Instagram @drdansiegel, Facebook and X not read (off limits) → ~35k readable → local_hero by count",
+    "tier_override": "Editorial stature: author of five New York Times bestsellers translated into over forty languages and founding editor of the Norton series on interpersonal neurobiology (drdansiegel.com home page); raised to luminary for the owner to confirm.",
+    "email": "yes",
+    "email_source": "https://drdansiegel.com/contact-us/",
+    "contact_form_url": "https://drdansiegel.com/contact-us/",
+    "bio_check": "OK: no 8-word runs against 17 source(s)",
+    "flags": [
+      "No Shift mention on own site: listed without the link (drdansiegel.com pages checked).",
+      "Therapy question: he is a psychiatrist and the Mindsight Institute is now mainly continuing-education training for clinicians. The listing covers his mindfulness and awareness teaching (Wheel of Awareness, Aware, Mindsight, IntraConnected) and leaves the therapy-focused work out; owner may want to confirm he fits.",
+      "Tier raised above the readable count on editorial stature (tier_override); main socials (Instagram, Facebook, X) could not be read.",
+      "Email info@drdansiegel.com is the office address of Mind Your Brain, Inc. (speaking, media and business enquiries), published on the contact page with a form.",
+      "Base is the office of his company Mind Your Brain in Santa Monica (contact page and biography); city only recorded.",
+      "Books: each ASIN is the Amazon link on his own book page (drdansiegel.com/book/...); not confirmed elsewhere.",
+      "Blue Spirit retreat: linked from his own Events page; multi-teacher week, price depends on room (not shown in the page text).",
+      "His own YouTube channel's views are low and mostly short clips; longer talks on other channels were not searched.",
+      "Ingest note: a book titled 'Mind: A Journey to the Heart of Being Human' already exists under breathe-and-flow-bre-flo-niedhammer (id 117); probably the same Siegel book attached to another listing, worth checking."
+    ],
+    "left_out": [
+      "Becoming Aware: A 21-Day Mindfulness Program for Reducing Anxiety and Cultivating Calm (0143111817): condition named in the subtitle.",
+      "Personality & Wholeness in Therapy, The Developing Mind, The Mindful Therapist, Pocket Guide to Interpersonal Neurobiology: written for clinicians.",
+      "Parenting books (The Whole-Brain Child, No-Drama Discipline, The Yes Brain, Parenting from the Inside Out, The Power of Showing Up, Brainstorm): parenting rather than spiritual practice; mentioned only in the bio.",
+      "Innovations in Psychotherapy 2026 (10-13 Nov, Anaheim) and The Mindful Therapist (8 Dec, virtual): professional therapy events.",
+      "Mindsight Institute courses: continuing-education training for clinicians; the course page he links (The Mindsight Approach to Well-Being) now redirects to a search page; 'Transforming Anxiety and Stress' is condition-named.",
+      "Short promo clips and parenting videos on YouTube.",
+      "Healthy Mind Platter: no page of its own found."
+    ]
+  },
+  "images_final": true
+}
