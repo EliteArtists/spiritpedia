@@ -1,0 +1,18 @@
+{
+  "n": 217,
+  "slug": "christine-page",
+  "name": "Dr. Christine Page",
+  "outcome": "form",
+  "email": null,
+  "email_source": null,
+  "email_kind": null,
+  "saved_source": null,
+  "contact_form_url": "https://christinepage.com/contact-us-form/",
+  "checked": [
+    "https://christinepage.com/robots.txt (path blocks only)",
+    "https://christinepage.com/contact-us-form/",
+    "https://christinepage.com/"
+  ],
+  "notes": "Contact page has a Divi contact form. No email printed in the visible text. info@christinepage.com appears only in the site's schema.org JSON-LD (Organization 'email' field, Yoast SEO data), not as text on the page, so it is not recorded as the outcome. A third-party address on the home page (a hotmail address in page data) is not hers and was ignored.",
+  "doubtful": "info@christinepage.com is declared in the site's structured data only; a person may decide whether that counts as published."
+}

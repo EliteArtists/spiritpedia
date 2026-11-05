@@ -1,0 +1,25 @@
+{
+  "n": 201,
+  "slug": "richard-miller",
+  "name": "Dr. Richard Miller",
+  "outcome": "form",
+  "email": null,
+  "email_source": null,
+  "email_kind": null,
+  "saved_source": null,
+  "contact_form_url": "https://www.explorationsinstillness.com/contact",
+  "checked": [
+    "https://www.explorationsinstillness.com/robots.txt (Squarespace; path blocks only)",
+    "https://www.explorationsinstillness.com/contact",
+    "https://www.explorationsinstillness.com/all-courses",
+    "https://www.explorationsinstillness.com/",
+    "https://www.irest.org/robots.txt (allows; site 301s to shop.irest.org)",
+    "https://www.irest.org/pages/contact (redirected to shop.irest.org, 404)",
+    "https://shop.irest.org/robots.txt (allows)",
+    "https://shop.irest.org/",
+    "https://shop.irest.org/pages/contact-irest-institute",
+    "https://shop.irest.org/policies/contact-information"
+  ],
+  "notes": "Own site is Squarespace with a contact form on /contact and no email (only the Squarespace placeholder user@domain.com). Also checked the iRest Institute, which he founded: no email printed on its contact or contact-information pages.",
+  "doubtful": null
+}

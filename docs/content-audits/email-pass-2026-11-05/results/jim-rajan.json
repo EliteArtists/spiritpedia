@@ -1,0 +1,17 @@
+{
+  "n": 124,
+  "slug": "jim-rajan",
+  "name": "Jim Rajan",
+  "outcome": "form",
+  "email": null,
+  "email_source": null,
+  "email_kind": null,
+  "saved_source": null,
+  "contact_form_url": "https://jimrajan.com/work-with-me/#contact",
+  "checked": [
+    "https://jimrajan.com/robots.txt (robots block: User-agent: * Disallow: /, generated 2026-11-05)",
+    "web search: Jim Rajan Subtle Qualities School contact email (nothing relevant)"
+  ],
+  "notes": "robots.txt now blocks all crawlers, so nothing else on jimrajan.com was fetched. Form URL from earlier research, not reconfirmed. No email found by search.",
+  "doubtful": "robots.txt blocks the site; form URL from earlier research not reconfirmed."
+}

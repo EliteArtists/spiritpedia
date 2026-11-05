@@ -1,0 +1,17 @@
+{
+  "n": 160,
+  "slug": "walt-opie",
+  "name": "Walt Opie",
+  "outcome": "form",
+  "email": null,
+  "email_source": null,
+  "email_kind": null,
+  "saved_source": "/private/tmp/claude-501/-Users-SundaySouLounge-Sites-spiritpedia/1c8d8473-2fb4-4889-ac09-5e475bd51fa9/scratchpad/ep-work-141/walt-opie-contact.html",
+  "contact_form_url": "https://www.waltopie.com/contact",
+  "checked": [
+    "https://www.waltopie.com/robots.txt (allows)",
+    "https://www.waltopie.com/contact"
+  ],
+  "notes": "Contact page asks people to use its form ('please contact me using this form'). The page source has a mailto:walt@buddhistpathways.org link, but it wraps only a zero-width space (no visible text), so it is not treated as published, as in earlier research.",
+  "doubtful": "An invisible mailto (walt@buddhistpathways.org) sits on his contact page; the owner may decide whether that counts as published."
+}

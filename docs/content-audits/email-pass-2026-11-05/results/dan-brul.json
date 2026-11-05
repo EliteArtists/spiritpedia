@@ -1,0 +1,18 @@
+{
+  "n": 43,
+  "slug": "dan-brul",
+  "name": "Dan Brulé",
+  "outcome": "email",
+  "email": "office@breathmastery.com",
+  "email_source": "https://breathmastery.com/contact/",
+  "email_kind": "business",
+  "saved_source": "/private/tmp/claude-501/-Users-SundaySouLounge-Sites-spiritpedia/1c8d8473-2fb4-4889-ac09-5e475bd51fa9/scratchpad/ep-work-29/brule-contact.html",
+  "contact_form_url": "https://breathmastery.com/contact/",
+  "checked": [
+    "https://breathmastery.com/robots.txt (allows)",
+    "https://breathmastery.com/",
+    "https://breathmastery.com/contact/"
+  ],
+  "notes": "\"Contact Us: office@breathmastery.com\" shown as text on his Breath Mastery site (home and contact pages); contact page also has a form. dan@breathmastery.com appears only in the page's hidden structured data (JSON-LD), not visibly, so not used as the main address.",
+  "doubtful": "Office inbox of his own company Breath Mastery rather than personal."
+}

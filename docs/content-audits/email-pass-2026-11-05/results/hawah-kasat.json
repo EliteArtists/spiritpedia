@@ -1,0 +1,20 @@
+{
+  "n": 146,
+  "slug": "hawah-kasat",
+  "name": "Hawah Kasat",
+  "outcome": "form",
+  "email": null,
+  "email_source": null,
+  "email_kind": null,
+  "saved_source": null,
+  "contact_form_url": "https://hawahkasat.com/contact-hawah/",
+  "checked": [
+    "https://hawahkasat.com/robots.txt (allows)",
+    "https://hawahkasat.com/contact-hawah/ (HTTP 403, Cloudflare 'Just a moment' challenge; not retried)",
+    "https://hawahkasat.com/ (HTTP 403, Cloudflare challenge; not retried)",
+    "https://kripalu.org/people/hawah-kasat",
+    "web search: Hawah Kasat speaking booking contact email (no relevant results)"
+  ],
+  "notes": "His own site now serves a Cloudflare challenge to us, so the site was skipped per the standing rule. Kripalu profile shows only Kripalu's registration inbox. No email found elsewhere. The contact form URL is carried over from earlier research (it was a speaking-enquiry form) but could not be re-confirmed today.",
+  "doubtful": "Form URL not re-confirmed: hawahkasat.com returned a Cloudflare challenge (403) to us on 5 Nov 2026; a person should check it loads in a browser."
+}

@@ -1,0 +1,19 @@
+{
+  "n": 210,
+  "slug": "jennifer-hadley",
+  "name": "Jennifer Hadley",
+  "outcome": "form",
+  "email": null,
+  "email_source": null,
+  "email_kind": null,
+  "saved_source": null,
+  "contact_form_url": "https://powerofloveministry.net/contact/",
+  "checked": [
+    "https://powerofloveministry.net/robots.txt (allows)",
+    "https://powerofloveministry.net/contact/",
+    "https://powerofloveministry.net/",
+    "https://jenniferhadley.com/robots.txt (redirects to powerofloveministry.net home; same site)"
+  ],
+  "notes": "Power of Love Ministry is her own ministry. Contact page has Contact Form 7 message forms; no email printed as visible text on contact or home page. Earlier research saw admin@jenniferhadley.com only inside script data, so not used. jenniferhadley.com now redirects to the ministry site.",
+  "doubtful": null
+}

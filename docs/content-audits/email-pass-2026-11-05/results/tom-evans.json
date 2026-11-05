@@ -1,0 +1,22 @@
+{
+  "n": 165,
+  "slug": "tom-evans",
+  "name": "Tom Evans",
+  "outcome": "none",
+  "email": null,
+  "email_source": null,
+  "email_kind": null,
+  "saved_source": null,
+  "contact_form_url": null,
+  "checked": [
+    "https://www.tomevans.co/robots.txt (allows)",
+    "https://www.tomevans.co/contact-me/ (page loads but now has no form or email: only menu and social links)",
+    "https://www.tomevans.co/",
+    "https://www.tomevans.co/creator-briefings/ (webinar sign-up only)",
+    "web search: Tom Evans meditation author contact email",
+    "https://allianceindependentauthors.org/robots.txt (allows)",
+    "https://allianceindependentauthors.org/members/tom-evans-1/author-profile (HTTP 404)"
+  ],
+  "notes": "Earlier research's form at tomevans.co/contact-me/ is gone: the page now shows no form, no email, only Facebook/RSS links. No email on home or creator-briefings pages. Search found no published address for him (one podcast page lists an address belonging to a different business; not used). Insight Timer not opened per the brief.",
+  "doubtful": "Contact page may load a form with JavaScript we cannot see; a person could check https://www.tomevans.co/contact-me/ in a browser."
+}

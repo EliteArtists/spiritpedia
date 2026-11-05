@@ -1,0 +1,19 @@
+{
+  "n": 14,
+  "slug": "jake-mace",
+  "name": "Jake Mace",
+  "outcome": "none",
+  "email": null,
+  "email_source": null,
+  "email_kind": null,
+  "saved_source": null,
+  "contact_form_url": null,
+  "checked": [
+    "https://www.jakemace.com/robots.txt (allows)",
+    "https://www.jakemace.com/ (JS redirect to /lander)",
+    "https://www.jakemace.com/lander (GoDaddy parking page)",
+    "web search x1"
+  ],
+  "notes": "jakemace.com is now a parked domain, so no own contact page. A search result showed an address from his YouTube channel description, but only via an unofficial YouTube mirror site, so not used (not opened, not recorded).",
+  "doubtful": "Website URL on the listing is a parked domain; listing's website_url may need fixing."
+}

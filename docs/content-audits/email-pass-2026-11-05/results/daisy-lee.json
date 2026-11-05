@@ -1,0 +1,25 @@
+{
+  "n": 101,
+  "slug": "daisy-lee",
+  "name": "Daisy Lee",
+  "outcome": "none",
+  "email": null,
+  "email_source": null,
+  "email_kind": null,
+  "saved_source": null,
+  "contact_form_url": null,
+  "checked": [
+    "https://www.radiantlotusqigong.com/robots.txt (allowed)",
+    "https://www.radiantlotusqigong.com/ (200)",
+    "https://www.radiantlotusqigong.com/contact (404)",
+    "https://www.radiantlotusqigong.com/meet-daisy (200)",
+    "https://kripalu.org/robots.txt (allowed)",
+    "https://kripalu.org/presenters-programs/wuji-hundun-qigong-ancient-healing-practice (404)",
+    "https://kripalu.org/people/daisy-lee (200, only Kripalu registration@ inbox)",
+    "https://ymaa.com/robots.txt (allowed)",
+    "https://ymaa.com/publishing/author/daisy-lee (HTTP 403, not retried)",
+    "web search: Daisy Lee Radiant Lotus Qigong contact email"
+  ],
+  "notes": "Her site has only a newsletter sign-up, no email or contact form. Kripalu profile shows only Kripalu's own registration address. Publisher YMAA author page refused (403). National Qigong Association listing was 403 in earlier research, so not tried.",
+  "doubtful": null
+}

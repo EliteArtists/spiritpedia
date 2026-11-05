@@ -155,6 +155,13 @@ The list to pick up from. Each points to where the detail lives.
     construct one; the contact-form URL as the fallback; skip Ascended
     Masters and estates. The rule itself is in §18.4 (owner, 31 Oct 2026).
     Also an admin **"No email"** filter.
+    **Researched 5 Nov 2026** (all 220 living listings without an email):
+    53 published emails, 150 contact forms, 17 nothing. Folder
+    `docs/content-audits/email-pass-2026-11-05/`, report
+    `docs/reports/2026-11-05-email-pass.md`. The filter is built (Admin →
+    Content). Waiting for `0039` on dev, then applied on dev
+    (`apply.mjs`); live after the owner's OK. Then ingestion writes the
+    two new columns from each plan.
 17. **Tier audit.** Check every listing's tier against follower evidence
     (Rod Stryker already fixed by the owner in admin), with the
     editorial-stature rule (§17.1) for raises. **What ingestion does today:**
@@ -316,7 +323,7 @@ how-to is `docs/admin-guide.md`; the personalisation rules are
 | **Website** | Live at **https://www.spiritpedia.co** (Next.js on Vercel). Every push that changes `web/` deploys to production |
 | **App (iOS)** | Flutter, iPhone and iPad. **1.0** is in Apple review. **1.0.0 (27)** is on TestFlight (`app/build/ios-release/Spiritpedia-1.0.0-27.ipa`; archive in Xcode's Archives, `2026-10-28/Spiritpedia 1.0.0 (27).xcarchive`, 28 Oct 2026). Build 24's archive (`2026-10-22/Runner 3.xcarchive`) is kept while 1.0 is in review; 25 and 26 were never uploaded and their files were deleted on 28 Oct |
 | **App (Android)** | The same code. The **closed test is live with 15 testers**; the production application is due about 9–10 Nov 2026 (§10.15, §12.8, `docs/google-play.md`). **1.0.0 (25)** (version code 25, `app/build/android-release/Spiritpedia-1.0.0-25.aab`) has been in the closed test since **31 Oct 2026**. Not yet in production |
-| **Database** | Supabase. Two projects: **live** (`uzmvcgew…`) and **dev** (`khtpbnof…`). Migrations `0000`–`0038` are on both |
+| **Database** | Supabase. Two projects: **live** (`uzmvcgew…`) and **dev** (`khtpbnof…`). Migrations `0000`–`0038` are on both; `0039` is written and waiting for the owner |
 | **Push** | Firebase Cloud Messaging only, with an APNs key. Moved on 22 Oct 2026 to two Firebase projects owned by **love@spiritpedia.co** (live `spiritpedia-ad62b`, dev `spiritpedia-dev-5e4d5`); checked end to end on iPhone, iPad and Android |
 | **Emails** | The approved copy of 21–22 Oct 2026 is live (§9.7). The outreach journey is eight emails, redirected to a test inbox by `JOURNEY_TEST_EMAIL` until the solicitor has checked cold email; no journey is running. Day 4 is live. Personal discovery editions are built but **off** until `DISCOVERY_EDITIONS=on` is set on Vercel (§9.7a) |
 | **Repository** | `https://github.com/EliteArtists/spiritpedia`, branch `main` only. No staging environment, no feature flags |
@@ -620,7 +627,7 @@ editor **on dev first, then live**, by the project owner. Dev is checked with
 throwaway users created through the Admin API (no email) and deleted
 afterwards; live is checked read-only.
 
-### 8.1 0012–0038 (all on dev and live)
+### 8.1 0012–0039 (all on dev and live except 0039, waiting for the owner)
 
 **`0012_favourites_slugs`** — data only, in one transaction.
 - Rewrites legacy `user_favourites.content_slug` values (numeric ids for books,
@@ -901,6 +908,13 @@ Bandon, Tzur Hadassa → Qiryat Ye'arim, Avalon Beach → Newport,
 Castell'Azzara → Abbadia San Salvatore, Hewitt → West Milford, Laakdal →
 Vorst, Upper Bhattu → Jogindarnagar. Check row: dev 69, 497, 2; live 69, 439,
 2 (until the sprint goes live).
+
+**`0039_contact_sources`** (5 Nov 2026, email pass; not yet run). Adds
+`healers.contact_email_source` (the page where the email is published) and
+`healers.contact_form_url` (the fallback when none is). No policy changes.
+Check row: 2 new columns; 220 living listings without an email on both
+before the pass is applied (167 after). Admin → Content's "No email" filter
+reads `contact_form_url`, so `web/` isn't pushed before 0039 is on live.
 
 ### 8.2 0000–0011
 

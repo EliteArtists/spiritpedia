@@ -1,0 +1,18 @@
+{
+  "n": 112,
+  "slug": "nicole-bayliss",
+  "name": "Nicole Bayliss",
+  "outcome": "form",
+  "email": null,
+  "email_source": null,
+  "email_kind": null,
+  "saved_source": null,
+  "contact_form_url": "https://nicolebayliss.com.au/contact-nicole-bayliss-sydney/",
+  "checked": [
+    "https://nicolebayliss.com.au/robots.txt (allowed)",
+    "https://nicolebayliss.com.au/ (200)",
+    "https://nicolebayliss.com.au/contact-nicole-bayliss-sydney/ (200)"
+  ],
+  "notes": "Address is in her own site's structured data (JSON-LD \"email\": \"nicole@nicolebayliss.com.au\") on the contact page and home page, not as visible text. Contact page also has a form. Lead's review (5 Nov): nicole@nicolebayliss.com.au not used: it is only in hidden structured data, not shown on the page. The contact form is the route.",
+  "doubtful": "Email is published only in the page's hidden structured data, not visible text; earlier research chose the form for that reason. A person should decide whether that counts."
+}

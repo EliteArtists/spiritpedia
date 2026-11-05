@@ -1,0 +1,21 @@
+{
+  "n": 205,
+  "slug": "sue-morter",
+  "name": "Dr. Sue Morter",
+  "outcome": "form",
+  "email": null,
+  "email_source": null,
+  "email_kind": null,
+  "saved_source": null,
+  "contact_form_url": "https://drsuemorter.com/contact-us/",
+  "checked": [
+    "https://drsuemorter.com/robots.txt (allows)",
+    "https://drsuemorter.com/contact-us/",
+    "https://drsuemorter.com/",
+    "https://drsuemorter.com/press-and-media/",
+    "web search: \"Sue Morter\" Morter Institute email",
+    "https://dsmiresources.s3.amazonaws.com/robots.txt (HTTP 403; treated as a refusal, nothing else fetched from that host)"
+  ],
+  "notes": "Her site prints no email on contact, home or press pages; the Contact Us page has a message form. A web-search summary said a 2017 bio PDF on her resources bucket (dsmiresources.s3.amazonaws.com/DrSueBio-10-2017.pdf) lists an info@ address under booking/press; that host refused robots.txt with 403, so the PDF was not opened and no address is recorded.",
+  "doubtful": "A booking/press address may exist in her 2017 bio PDF (not opened because the host returned 403); a person could check it by hand."
+}

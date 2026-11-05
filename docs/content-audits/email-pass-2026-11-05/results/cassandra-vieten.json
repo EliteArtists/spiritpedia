@@ -1,0 +1,18 @@
+{
+  "n": 98,
+  "slug": "cassandra-vieten",
+  "name": "Cassandra Vieten",
+  "outcome": "form",
+  "email": null,
+  "email_source": null,
+  "email_kind": null,
+  "saved_source": null,
+  "contact_form_url": "https://cassandravieten.com/contact-us/",
+  "checked": [
+    "https://cassandravieten.com/robots.txt (allowed, crawl-delay 10)",
+    "https://cassandravieten.com/contact-us/ (200)",
+    "https://cassandravieten.com/ (200)"
+  ],
+  "notes": "Contact page says \"use the contact form below, send an email, or connect with us through the social links\" but no address appears in the page source; form has name, phone, email, message.",
+  "doubtful": null
+}

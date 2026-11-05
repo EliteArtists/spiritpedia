@@ -1,0 +1,20 @@
+{
+  "n": 104,
+  "slug": "john-stuart-reid",
+  "name": "John Stuart Reid",
+  "outcome": "form",
+  "email": null,
+  "email_source": null,
+  "email_kind": null,
+  "saved_source": null,
+  "contact_form_url": "https://cymascope.com/contact/",
+  "checked": [
+    "https://cymascope.com/robots.txt (allowed)",
+    "https://cymascope.com/ (200)",
+    "https://cymascope.com/contact/ (200)",
+    "https://soundmadevisible.com/robots.txt (allowed)",
+    "https://soundmadevisible.com/ (200)"
+  ],
+  "notes": "No email shown. CymaScope contact page has enquiry forms; note it says consultancy questions may carry a $25 to $50 fee.",
+  "doubtful": "CymaScope enquiry form may route to the company, and mentions paid consultancy for questions."
+}

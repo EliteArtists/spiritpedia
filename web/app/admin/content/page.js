@@ -25,7 +25,9 @@ const PAGE = 1000;
 
 // Only what the list renders. `bio` and `image_urls` are the two fat columns
 // and neither appears here — pulling them would be ~400KB for a list of names.
-const COLUMNS = 'id, name, healer_slug, tier, subject_slugs';
+// The contact columns feed the "No email" filter (contact_form_url is
+// migration 0039).
+const COLUMNS = 'id, name, healer_slug, tier, subject_slugs, death_year, contact_email, contact_form_url';
 
 const TIER_LABELS = {
   superhero: 'Superhero',
@@ -46,6 +48,24 @@ const CLAIM_FILTERS = [
   { key: 'claimed', label: 'Claimed' },
   { key: 'unclaimed', label: 'Unclaimed' },
 ];
+
+// Outreach needs a way to reach every living listing (README §18.4). Ascended
+// Masters and estates are never written to, so "No email" leaves them out.
+const CONTACT_FILTERS = [
+  { key: 'all', label: 'Any contact' },
+  { key: 'no_email', label: 'No email' },
+  { key: 'form_only', label: 'No email: contact form only' },
+  { key: 'nothing', label: 'No email: nothing at all' },
+];
+
+const hasText = (v) => String(v || '').trim() !== '';
+
+// null for listings outreach never writes to.
+function contactState(h) {
+  if (h.tier === 'ascended_master' || h.death_year) return null;
+  if (hasText(h.contact_email)) return 'email';
+  return hasText(h.contact_form_url) ? 'form_only' : 'nothing';
+}
 
 function Badge({ className, children }) {
   return (
@@ -70,6 +90,7 @@ export default function AdminContentPage() {
   const [query, setQuery] = useState('');
   const [subject, setSubject] = useState('all');
   const [claim, setClaim] = useState('all');
+  const [contact, setContact] = useState('all');
 
   useEffect(() => {
     let cancelled = false;
@@ -143,10 +164,15 @@ export default function AdminContentPage() {
         if (claim === 'unclaimed' && isClaimed) return false;
       }
 
+      if (contact !== 'all') {
+        const state = contactState(h);
+        if (contact === 'no_email' ? !['form_only', 'nothing'].includes(state) : state !== contact) return false;
+      }
+
       if (!q) return true;
       return String(h.name || '').toLowerCase().includes(q);
     });
-  }, [healers, query, subject, claim, claimedSlugs]);
+  }, [healers, query, subject, claim, contact, claimedSlugs]);
 
   const total = Array.isArray(healers) ? healers.length : 0;
 
@@ -204,6 +230,19 @@ export default function AdminContentPage() {
                 </option>
               ))}
             </select>
+
+            <select
+              value={contact}
+              onChange={(e) => setContact(e.target.value)}
+              aria-label="Filter by contact route"
+              className="rounded-full border border-white/10 bg-[#111827] px-4 py-2 text-sm text-white"
+            >
+              {CONTACT_FILTERS.map((f) => (
+                <option key={f.key} value={f.key}>
+                  {f.label}
+                </option>
+              ))}
+            </select>
           </div>
 
           <p className="mb-3 text-xs text-slate-500">
@@ -217,6 +256,7 @@ export default function AdminContentPage() {
               {rows.map((h) => {
                 const slugs = h.subject_slugs || [];
                 const claimed = claimedSlugs ? claimedSlugs.has(h.healer_slug) : null;
+                const reach = contactState(h);
 
                 return (
                   <li
@@ -241,6 +281,18 @@ export default function AdminContentPage() {
                       {h.tier && (
                         <Badge className={TIER_STYLES[h.tier] || 'border-slate-700 bg-slate-800 text-slate-400'}>
                           {TIER_LABELS[h.tier] || h.tier}
+                        </Badge>
+                      )}
+
+                      {(reach === 'form_only' || reach === 'nothing') && (
+                        <Badge
+                          className={
+                            reach === 'form_only'
+                              ? 'border-sky-500/40 bg-sky-500/10 text-sky-300'
+                              : 'border-rose-500/40 bg-rose-500/10 text-rose-300'
+                          }
+                        >
+                          {reach === 'form_only' ? 'Form only' : 'No contact'}
                         </Badge>
                       )}
 

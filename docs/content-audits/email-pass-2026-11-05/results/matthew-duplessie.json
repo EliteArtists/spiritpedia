@@ -1,0 +1,18 @@
+{
+  "n": 113,
+  "slug": "matthew-duplessie",
+  "name": "Matthew Duplessie",
+  "outcome": "form",
+  "email": null,
+  "email_source": null,
+  "email_kind": null,
+  "saved_source": null,
+  "contact_form_url": "https://audiosoulhealing.com/bookasession/",
+  "checked": [
+    "https://audiosoulhealing.com/robots.txt (200, robots.txt allows)",
+    "audiosoulhealing.com pages not fetched: earlier research recorded HTTP 403 to curl on this site, so skipped under the standing rule",
+    "web search: Matthew Duplessie Audio Soul Healing contact email (nothing usable)"
+  ],
+  "notes": "Site refused curl (HTTP 403) in earlier research; under the blocked-means-skip rule I did not fetch it again. Form URL taken from earlier research (site navigation), not reconfirmed. Search found no published email (Bandcamp has only a message option; Insight Timer not opened).",
+  "doubtful": "Contact form URL not reconfirmed (site refuses curl); a person should check /bookasession/ loads and has a form."
+}

@@ -1,0 +1,24 @@
+{
+  "n": 18,
+  "slug": "deepak-chopra",
+  "name": "Deepak Chopra",
+  "outcome": "none",
+  "email": null,
+  "email_source": null,
+  "email_kind": null,
+  "saved_source": null,
+  "contact_form_url": null,
+  "checked": [
+    "https://www.deepakchopra.com/robots.txt (Squarespace; * group blocks only /config etc.)",
+    "https://www.deepakchopra.com/",
+    "https://www.deepakchopra.com/contact",
+    "https://www.deepakchopra.com/brand-portal (HTTP 401, password page, skipped)",
+    "https://forms.deepakchopra.com/robots.txt (allows)",
+    "https://forms.deepakchopra.com/r/wAEOGW",
+    "https://choprafoundation.org/robots.txt and www. (no connection)",
+    "https://chopra.com/robots.txt (404) and https://chopra.com/ (redirects to deepakchopra.com)",
+    "web search x1 (only third-party speaker bureaus, not his own)"
+  ],
+  "notes": "His contact page is only 'Customer Support' linking a Tally form 'Help Accessing Your 21 Day Meditations' (purchase-access only, not a message form). No email on his site. Speaker bureaus (Front Row, NMP Live, AAE) list their own general booking routes but are not his own agent page, so not recorded.",
+  "doubtful": "A person may want to choose one of the speaker bureaus or the Chopra Foundation (site unreachable to us)."
+}

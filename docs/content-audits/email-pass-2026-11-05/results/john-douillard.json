@@ -1,0 +1,17 @@
+{
+  "n": 93,
+  "slug": "john-douillard",
+  "name": "Dr. John Douillard",
+  "outcome": "none",
+  "email": null,
+  "email_source": null,
+  "email_kind": null,
+  "saved_source": null,
+  "contact_form_url": null,
+  "checked": [
+    "https://lifespa.com/robots.txt (HTTP 403: site skipped, nothing else fetched from it)",
+    "web search: John Douillard LifeSpa contact email press media"
+  ],
+  "notes": "lifespa.com refused even robots.txt (403), so the site was skipped. Search snippets say LifeSpa pages ask for speaking and interview requests at admin@lifespa.com (eatwheat.lifespa.com/press and lifespa.com/dr-john-douillard/), but I did not open those (same blocked site / its subdomain), so it is not recorded.",
+  "doubtful": "A person should confirm admin@lifespa.com on lifespa.com/dr-john-douillard/ (press kit section) in a normal browser; it looks like the right press/booking address."
+}

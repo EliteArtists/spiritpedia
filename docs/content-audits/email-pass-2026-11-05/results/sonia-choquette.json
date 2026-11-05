@@ -1,0 +1,22 @@
+{
+  "n": 219,
+  "slug": "sonia-choquette",
+  "name": "Sonia Choquette",
+  "outcome": "email",
+  "email": "assistant@soniachoquette.com",
+  "email_source": "https://www.soniachoquette.net/privacy",
+  "email_kind": "business",
+  "saved_source": "/private/tmp/claude-501/-Users-SundaySouLounge-Sites-spiritpedia/1c8d8473-2fb4-4889-ac09-5e475bd51fa9/scratchpad/ep-work-197/sc-privacy.html",
+  "contact_form_url": "https://www.soniachoquette.net/speaking",
+  "checked": [
+    "https://www.soniachoquette.net/robots.txt (allows)",
+    "https://www.soniachoquette.net/speaking",
+    "https://www.soniachoquette.net/contact (HTTP 404)",
+    "https://www.soniachoquette.net/",
+    "https://www.soniachoquette.net/book-an-appointment",
+    "https://www.soniachoquette.net/privacy",
+    "https://www.soniachoquette.net/podcast"
+  ],
+  "notes": "Privacy page on her own site, 'CONTACTING US': 'you may contact us at [email] or by writing us at Sonia Choquette, 830 West Route 22 #35, Lake Zurich, IL'. The address is behind Cloudflare email protection; decoded data-cfemail 7f1e0c0c160c0b1e110b3f0c1011161e1c17100e0a1a0b0b1a511c1012 (and the matching email-protection# link) to assistant@soniachoquette.com, her assistant's address on her own domain. Forms also exist: 'Book Sonia to Speak' on /speaking and a podcast inquiry form on /podcast.",
+  "doubtful": "Published as the privacy-policy contact; it is her assistant's inbox, so outreach may reach her team rather than her."
+}

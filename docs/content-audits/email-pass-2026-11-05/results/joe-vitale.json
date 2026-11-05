@@ -1,0 +1,20 @@
+{
+  "n": 28,
+  "slug": "joe-vitale",
+  "name": "Joe Vitale",
+  "outcome": "email",
+  "email": "support@ZeroLimitsEmail.com",
+  "email_source": "https://joevitalesupport.com/",
+  "email_kind": "business",
+  "saved_source": "/private/tmp/claude-501/-Users-SundaySouLounge-Sites-spiritpedia/1c8d8473-2fb4-4889-ac09-5e475bd51fa9/scratchpad/ep-work-1/pages/joe-vitale/support.html",
+  "contact_form_url": "https://joevitale.com/booking",
+  "checked": [
+    "https://joevitale.com/robots.txt (allows)",
+    "https://joevitale.com/",
+    "https://joevitale.com/booking",
+    "https://joevitalesupport.com/robots.txt (empty)",
+    "https://joevitalesupport.com/"
+  ],
+  "notes": "joevitalesupport.com ('Dr. Joe Vitale's Zero Limits Support', linked from his site) shows a Cloudflare-protected address: data-cfemail 2655535656495452667c4354496a4f4b4f5255634b474f4a0845494b decodes to support@ZeroLimitsEmail.com. joevitale.com/booking has a 'Public Speaking info' form (recorded as the form). The booking page's form settings also contain recipient addresses (office@mrfire.com and others) but they are hidden form configuration, not shown on the page, so not used.",
+  "doubtful": "Product/customer-support inbox for his Zero Limits programmes; the speaking form may be the better outreach route."
+}

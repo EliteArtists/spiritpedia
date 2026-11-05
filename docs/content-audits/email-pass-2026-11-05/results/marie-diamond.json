@@ -1,0 +1,24 @@
+{
+  "n": 203,
+  "slug": "marie-diamond",
+  "name": "Marie Diamond",
+  "outcome": "form",
+  "email": null,
+  "email_source": null,
+  "email_kind": null,
+  "saved_source": null,
+  "contact_form_url": "https://www.mariediamond.com/contact",
+  "checked": [
+    "https://www.mariediamond.com/robots.txt (Squarespace; path blocks only)",
+    "https://www.mariediamond.com/contact",
+    "https://www.mariediamond.com/",
+    "https://www.mariediamond.com/media (redirects to /articles)",
+    "https://www.mariediamond.com/media-kit",
+    "https://www.mariediamond.com/speaking",
+    "web search: \"Marie Diamond\" feng shui email contact booking speaking",
+    "https://business.dptribune.com/robots.txt (no connection; not fetched further)",
+    "https://business.mammothtimes.com/robots.txt (no connection; not fetched further)"
+  ],
+  "notes": "Her Squarespace site has a contact form on /contact and prints no email on contact, media kit or speaking pages. A web-search summary mentioned info@ and publishing@ addresses on her domain from syndicated press releases, but those pages could not be reached, so nothing was confirmed on a page and no address is recorded.",
+  "doubtful": null
+}

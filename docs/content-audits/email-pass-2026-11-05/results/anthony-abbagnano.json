@@ -1,0 +1,21 @@
+{
+  "n": 207,
+  "slug": "anthony-abbagnano",
+  "name": "Anthony Abbagnano",
+  "outcome": "form",
+  "email": null,
+  "email_source": null,
+  "email_kind": null,
+  "saved_source": null,
+  "contact_form_url": "https://alchemyofbreath.com/contact/",
+  "checked": [
+    "https://alchemyofbreath.com/robots.txt (allows)",
+    "https://alchemyofbreath.com/contact/",
+    "https://alchemyofbreath.com/",
+    "web search: \"Alchemy of Breath\" email",
+    "https://retreat.guru/robots.txt (* group: path blocks only)",
+    "https://retreat.guru/events/4977-569/functional-breathing-retreat-7-day-breathcamp-2 (event gone; redirected to /search, a robots-blocked path; discarded)"
+  ],
+  "notes": "Alchemy of Breath is the organisation he founded (contact page says so). Its contact page has a message form ('Use this form to reach out to us') and prints no email. A search summary mentioned an info@ address for Alchemy of Breath on a retreat listing and Trustpilot, but the listing has been removed and Trustpilot replies were not treated as a published source, so no address is recorded.",
+  "doubtful": null
+}

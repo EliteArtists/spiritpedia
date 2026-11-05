@@ -1,0 +1,18 @@
+{
+  "n": 45,
+  "slug": "graham-hancock",
+  "name": "Graham Hancock",
+  "outcome": "email",
+  "email": "graham@grahamhancock.com",
+  "email_source": "https://grahamhancock.com/mail/",
+  "email_kind": "own",
+  "saved_source": "/private/tmp/claude-501/-Users-SundaySouLounge-Sites-spiritpedia/1c8d8473-2fb4-4889-ac09-5e475bd51fa9/scratchpad/ep-work-29/hancock-mail.html",
+  "contact_form_url": null,
+  "checked": [
+    "https://grahamhancock.com/robots.txt (* allowed, crawl-delay 120 respected)",
+    "https://grahamhancock.com/",
+    "https://grahamhancock.com/mail/"
+  ],
+  "notes": "Behind Cloudflare email protection on the Mail page; decoded from data-cfemail/email-protection hex d6b1a4b7beb7bb96b1a4b7beb7bbbeb7b8b5b9b5bdf8b5b9bb (key d6) -> graham@grahamhancock.com. Page text: \"If you would like to e-mail Graham you can do so on ...\" and notes mail goes via the site editor. No contact form.",
+  "doubtful": null
+}

@@ -49,6 +49,10 @@ const AVAILABILITY = [
 const TEXT_FIELDS = [
   ['name', 'Name'],
   ['contact_email', 'Contact email'],
+  // Where the email is published (never guessed), and the contact form used
+  // when there is none. Migration 0039; the email pass of 5 Nov 2026 fills them.
+  ['contact_email_source', 'Email source (page URL)'],
+  ['contact_form_url', 'Contact form'],
   ['contact_phone', 'Contact phone'],
   ['website_url', 'Website'],
   ['booking_url', 'Booking URL'],

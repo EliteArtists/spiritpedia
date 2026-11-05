@@ -1,0 +1,21 @@
+{
+  "n": 200,
+  "slug": "will-caminada",
+  "name": "Will Caminada",
+  "outcome": "email",
+  "email": "guiwilluk@gmail.com",
+  "email_source": "https://liinks.co/willcaminada",
+  "email_kind": "own",
+  "saved_source": "/private/tmp/claude-501/-Users-SundaySouLounge-Sites-spiritpedia/1c8d8473-2fb4-4889-ac09-5e475bd51fa9/scratchpad/ep-work-197/will-liinks.html",
+  "contact_form_url": "https://www.willcaminada.com/contact",
+  "checked": [
+    "https://www.willcaminada.com/robots.txt (allows)",
+    "https://www.willcaminada.com/contact",
+    "https://www.willcaminada.com/services",
+    "https://www.willcaminada.com/",
+    "https://liinks.co/robots.txt (allows)",
+    "https://liinks.co/willcaminada (redirects to www.liinks.co)"
+  ],
+  "notes": "His own site (Wix) shows no email; contact page has a Wix message form. His link-in-bio page liinks.co/willcaminada lists the address as a link of type EMAIL (an email button) next to his website, newsletter and Instagram (guiwill) links; the address is in the page source, rendered as a button rather than printed text.",
+  "doubtful": "The address is an email button on his link-in-bio page, not printed as visible text; earlier research chose the contact form for that reason. A person should decide whether the button counts as published. If not, use the contact form."
+}

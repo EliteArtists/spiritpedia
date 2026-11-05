@@ -1,0 +1,19 @@
+{
+  "n": 31,
+  "slug": "rupert-sheldrake",
+  "name": "Rupert Sheldrake",
+  "outcome": "email",
+  "email": "sheldrake@sheldrake.org",
+  "email_source": "https://www.sheldrake.org/about-rupert-sheldrake/contact",
+  "email_kind": "own",
+  "saved_source": "/private/tmp/claude-501/-Users-SundaySouLounge-Sites-spiritpedia/1c8d8473-2fb4-4889-ac09-5e475bd51fa9/scratchpad/ep-work-29/sheldrake-contact.html",
+  "contact_form_url": null,
+  "checked": [
+    "https://www.sheldrake.org/robots.txt (allows these paths)",
+    "https://www.sheldrake.org/",
+    "https://www.sheldrake.org/about-rupert-sheldrake/contact"
+  ],
+  "notes": "Contact Rupert page renders the address with a small script to deter scrapers: document.write(\"<a class=btn href=mailto:\" + \"sheldrake\" + \"@\" + \"sheldrake.org>\" ...). Rendered on the page as sheldrake@sheldrake.org with the note \"When you email Rupert, please keep your message brief.\" No contact form (only newsletter sign-up).",
+  "doubtful": null,
+  "verified_by_hand": "Lead, 5 Nov: the saved page writes it with document.write(\"mailto:\" + \"sheldrake\" + \"@\" + \"sheldrake.org\"), so a reader sees sheldrake@sheldrake.org."
+}

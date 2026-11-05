@@ -1,0 +1,21 @@
+{
+  "n": 153,
+  "slug": "raj-balkaran",
+  "name": "Dr. Raj Balkaran",
+  "outcome": "email",
+  "email": "raj@rajbalkaran.com",
+  "email_source": "https://www.indianwisdomschool.com/site/contact",
+  "email_kind": "own",
+  "saved_source": "/private/tmp/claude-501/-Users-SundaySouLounge-Sites-spiritpedia/1c8d8473-2fb4-4889-ac09-5e475bd51fa9/scratchpad/ep-work-141/raj-balkaran-iws-contact.html",
+  "contact_form_url": "https://rajbalkaran.com/contact",
+  "checked": [
+    "https://rajbalkaran.com/robots.txt (allows)",
+    "https://rajbalkaran.com/contact",
+    "https://www.indianwisdomschool.com/robots.txt (allows)",
+    "https://www.indianwisdomschool.com/",
+    "https://www.indianwisdomschool.com/site/contact",
+    "https://www.indianwisdomschool.com/site/about"
+  ],
+  "notes": "Found on the contact page of The Indian Wisdom School (the school he founded: 'Reach Out ... I'm at your service'), shown behind Cloudflare email protection. Decoded data-cfemail 'c4b6a5ae84b6a5aea6a5a8afa5b6a5aaeaa7aba9' (XOR key 0xc4) = raj@rajbalkaran.com. His own site rajbalkaran.com/contact has a form and no visible email.",
+  "doubtful": null
+}

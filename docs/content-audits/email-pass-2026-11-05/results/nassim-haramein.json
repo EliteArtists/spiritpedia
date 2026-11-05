@@ -1,0 +1,22 @@
+{
+  "n": 33,
+  "slug": "nassim-haramein",
+  "name": "Nassim Haramein",
+  "outcome": "form",
+  "email": null,
+  "email_source": null,
+  "email_kind": null,
+  "saved_source": "/private/tmp/claude-501/-Users-SundaySouLounge-Sites-spiritpedia/1c8d8473-2fb4-4889-ac09-5e475bd51fa9/scratchpad/ep-work-29/haramein-contact.html",
+  "contact_form_url": "https://nassimharamein.com/contact/",
+  "checked": [
+    "https://www.resonancescience.org/robots.txt (DNS does not resolve, not fetched further)",
+    "https://resonancescience.org/robots.txt (DNS does not resolve)",
+    "web search x1",
+    "https://www.theresonanceproject.org/robots.txt (no connection)",
+    "https://www.nassimharamein.com/robots.txt (* allowed; AI-training bots blocked)",
+    "https://www.nassimharamein.com/",
+    "https://nassimharamein.com/contact/"
+  ],
+  "notes": "Listed website resonancescience.org no longer resolves (DNS failure on www and bare domain), so the listing URL may need updating. His own site nassimharamein.com has a \"Connect with Nassim / Book Nassim\" form on /contact/. No email shown.",
+  "doubtful": "Listing website_url resonancescience.org is dead (DNS); consider nassimharamein.com."
+}

@@ -1,0 +1,18 @@
+{
+  "n": 128,
+  "slug": "emma-estrela",
+  "name": "Emma Estrela",
+  "outcome": "email",
+  "email": "Emma@emmaestrela.com",
+  "email_source": "https://www.emmaestrela.com",
+  "email_kind": "own",
+  "saved_source": "/private/tmp/claude-501/-Users-SundaySouLounge-Sites-spiritpedia/1c8d8473-2fb4-4889-ac09-5e475bd51fa9/scratchpad/ep-work-113/pages/emma-estrela/www.emmaestrela.com.html",
+  "contact_form_url": "https://www.emmaestrela.com/contact",
+  "checked": [
+    "https://www.emmaestrela.com/robots.txt (* group no root block)",
+    "https://www.emmaestrela.com",
+    "https://www.emmaestrela.com/contact"
+  ],
+  "notes": "Address is published as a mailto link on a home-page button (Corporate Workshop / Event Enquiry, subject pre-filled), not as plain text. Earlier research did not count mailto-only; I count it as published because it is a link meant for visitors to email her. Contact form also on /contact.",
+  "doubtful": "Email shown only via mailto button, not as visible text; a person may want to confirm this counts."
+}

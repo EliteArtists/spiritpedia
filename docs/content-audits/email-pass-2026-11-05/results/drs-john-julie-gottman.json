@@ -1,0 +1,22 @@
+{
+  "n": 61,
+  "slug": "drs-john-julie-gottman",
+  "name": "Drs. John & Julie Gottman",
+  "outcome": "form",
+  "email": null,
+  "email_source": null,
+  "email_kind": null,
+  "saved_source": "/private/tmp/claude-501/-Users-SundaySouLounge-Sites-spiritpedia/1c8d8473-2fb4-4889-ac09-5e475bd51fa9/scratchpad/ep-work-57/pages/gottman-speakreq.html",
+  "contact_form_url": "https://www.gottman.com/gottman-speakers/submit-request/",
+  "checked": [
+    "https://www.gottman.com/robots.txt",
+    "https://www.gottman.com/",
+    "https://www.gottman.com/contact/",
+    "https://www.gottman.com/gottman-speakers/",
+    "https://www.gottman.com/about/in-the-media/",
+    "https://www.gottman.com/about/speakers/submit-request/ (redirects to /gottman-speakers/submit-request/)",
+    "https://www.gottman.com/about/in-the-media/media-requests/"
+  ],
+  "notes": "No published email on the Gottman Institute site (which they co-founded). The contact page sends people to the Zendesk help centre (support.gottman.com, not fetched). Speaker booking request form (Typeform embed) at /gottman-speakers/submit-request/; a media request form (Typeform) is at /about/in-the-media/media-requests/.",
+  "doubtful": "Forms go to the Gottman Institute's team, not directly to John and Julie."
+}

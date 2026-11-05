@@ -1,0 +1,22 @@
+{
+  "n": 66,
+  "slug": "stanislav-grof",
+  "name": "Stanislav Grof",
+  "outcome": "none",
+  "email": null,
+  "email_source": null,
+  "email_kind": null,
+  "saved_source": null,
+  "contact_form_url": null,
+  "checked": [
+    "https://www.stangrof.com/robots.txt (allowed)",
+    "https://www.stangrof.com/ (BLOCKED: Sucuri CloudProxy JavaScript bot check, 'You are being redirected... Javascript is required'; skipped, not retried)",
+    "web search: 'Stanislav Grof contact email Grof Legacy Training'",
+    "https://www.grof-legacy-training.com/robots.txt",
+    "https://grof-legacy-training.com/robots.txt",
+    "https://grof-legacy-training.com/",
+    "https://grof-legacy-training.com/contact/"
+  ],
+  "notes": "His own site sits behind a Sucuri bot check, so skipped under the standing rule. Grof Legacy Training (which he co-founded with Brigitte Grof) has a contact page with no email or form; it only says to contact the teachers in each country. Grof Transpersonal Training (holotropic.com) lists him as emeritus, so its inbox was not used.",
+  "doubtful": "His own site could not be read (bot check); a person with a normal browser may find a contact route there."
+}

@@ -1,0 +1,22 @@
+{
+  "n": 208,
+  "slug": "christena-cleveland",
+  "name": "Dr. Christena Cleveland",
+  "outcome": "form",
+  "email": null,
+  "email_source": null,
+  "email_kind": null,
+  "saved_source": null,
+  "contact_form_url": "https://www.christenacleveland.com/speakerinquiry",
+  "checked": [
+    "https://www.christenacleveland.com/robots.txt (Squarespace; path blocks only)",
+    "https://www.christenacleveland.com/speakerinquiry (redirects to apex domain)",
+    "https://www.christenacleveland.com/contact (HTTP 404)",
+    "https://www.christenacleveland.com/",
+    "https://christenacleveland.com/booking (redirects to /bmretreat)",
+    "https://christenacleveland.com/speakerinformation",
+    "web search: \"Christena Cleveland\" speaking booking agent email"
+  ],
+  "notes": "No email printed anywhere checked (only Squarespace placeholder user@domain.com). Her own Speaker Inquiry page has a Squarespace form; a podcast inquiry form exists at /podcast. Search shows only buyer-side speakers' bureaus (All American Speakers says it is not her agency), so nothing recorded from them.",
+  "doubtful": null
+}

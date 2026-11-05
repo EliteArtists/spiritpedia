@@ -1,0 +1,21 @@
+{
+  "n": 206,
+  "slug": "brian-thomas-swimme",
+  "name": "Brian Thomas Swimme",
+  "outcome": "form",
+  "email": null,
+  "email_source": null,
+  "email_kind": null,
+  "saved_source": null,
+  "contact_form_url": "https://storyoftheuniverse.org/contact/",
+  "checked": [
+    "https://storyoftheuniverse.org/robots.txt (allows)",
+    "https://storyoftheuniverse.org/contact/",
+    "https://storyoftheuniverse.org/",
+    "web search: Brian Swimme CIIS faculty profile email",
+    "https://www.ciis.edu/robots.txt (Disallow: /profiles/)",
+    "https://www.ciis.edu/faculty-and-staff-directory/brian-thomas-swimme (redirected to /profiles/brian-thomas-swimme, a robots-blocked path; result discarded and the saved copy deleted)"
+  ],
+  "notes": "Story of the Universe (his own project) has an Elementor contact form on /contact/ and prints no email. His CIIS faculty-directory URL redirects into /profiles/, which CIIS's robots.txt disallows, so that page was not used (the redirect was only seen after the fetch).",
+  "doubtful": "A search summary says his CIIS (emeritus) directory profile lists a ciis.edu address, but that page sits under a robots-blocked path, so it is not recorded; the owner may decide whether to look by hand."
+}

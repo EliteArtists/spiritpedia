@@ -1,0 +1,21 @@
+{
+  "n": 204,
+  "slug": "marcela-lobos",
+  "name": "Marcela Lobos",
+  "outcome": "email",
+  "email": "contact@marcelalobos.com",
+  "email_source": "https://thefourwinds.com/contact-us/",
+  "email_kind": "own",
+  "saved_source": "/private/tmp/claude-501/-Users-SundaySouLounge-Sites-spiritpedia/1c8d8473-2fb4-4889-ac09-5e475bd51fa9/scratchpad/ep-work-197/ml-fw-contact.html",
+  "contact_form_url": "https://marcelalobos.com/contact/",
+  "checked": [
+    "https://marcelalobos.com/robots.txt (allows)",
+    "https://marcelalobos.com/",
+    "https://marcelalobos.com/contact/ (fetched twice: first save failed on a local filename error, not a block)",
+    "web search: \"Marcela Lobos\" shaman contact email",
+    "https://thefourwinds.com/robots.txt (allows)",
+    "https://thefourwinds.com/contact-us/"
+  ],
+  "notes": "The Four Winds Society (where she is Vision Keeper and lead faculty) lists its teachers' contacts on its Contact Us page; under her bio (same person: Los Lobos Sanctuary in Chile with husband Alberto Villoldo) it prints contact@marcelalobos.com as a mailto link. Address is on her own domain. Her own site has a Contact Form 7 message form on /contact/ and prints no email.",
+  "doubtful": null
+}

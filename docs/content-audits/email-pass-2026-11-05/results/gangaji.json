@@ -1,0 +1,17 @@
+{
+  "n": 25,
+  "slug": "gangaji",
+  "name": "Gangaji",
+  "outcome": "none",
+  "email": null,
+  "email_source": null,
+  "email_kind": null,
+  "saved_source": null,
+  "contact_form_url": null,
+  "checked": [
+    "https://gangaji.org/robots.txt (HTTP 403, so whole site skipped)",
+    "web search x1"
+  ],
+  "notes": "gangaji.org refused us at robots.txt (403), so per the standing rule nothing was fetched from it. A search summary says the Gangaji Foundation (which she founded) lists info@gangaji.org on its site and brochure, and that letters to Gangaji personally go by post (PO Box 716, Ashland, OR). Not recorded because the source page could not be read or saved.",
+  "doubtful": "info@gangaji.org (Gangaji Foundation, founder) is very likely the right address; a person should confirm it on gangaji.org in a browser."
+}

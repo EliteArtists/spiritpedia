@@ -1,0 +1,19 @@
+{
+  "n": 52,
+  "slug": "dr-raymond-moody",
+  "name": "Dr. Raymond Moody",
+  "outcome": "form",
+  "email": null,
+  "email_source": null,
+  "email_kind": null,
+  "saved_source": "/private/tmp/claude-501/-Users-SundaySouLounge-Sites-spiritpedia/1c8d8473-2fb4-4889-ac09-5e475bd51fa9/scratchpad/ep-work-29/moody-booking.html",
+  "contact_form_url": "https://www.lifeafterlife.com/booking-interviews",
+  "checked": [
+    "https://www.lifeafterlife.com/robots.txt (allows)",
+    "https://www.lifeafterlife.com/",
+    "https://www.lifeafterlife.com/contact-us",
+    "https://www.lifeafterlife.com/booking-interviews"
+  ],
+  "notes": "Contact page says they no longer answer individual emails; to hire Raymond for interviews \"reach out to his manager Lisa Smartt\", linking to the booking-interviews page, which asks you to \"request an interview using the form on this page\" then schedule (Calendly). No email shown.",
+  "doubtful": "Form is script-rendered (Kajabi) and leads to scheduling; he is elderly and retired from field research."
+}

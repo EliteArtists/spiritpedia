@@ -1,0 +1,18 @@
+{
+  "n": 15,
+  "slug": "jillian-the-lune-innate",
+  "name": "Jillian (The Lune INNATE)",
+  "outcome": "form",
+  "email": null,
+  "email_source": null,
+  "email_kind": null,
+  "saved_source": "/private/tmp/claude-501/-Users-SundaySouLounge-Sites-spiritpedia/1c8d8473-2fb4-4889-ac09-5e475bd51fa9/scratchpad/ep-work-1/pages/jillian-the-lune-innate/support.html",
+  "contact_form_url": "https://www.luneinnate.com/support",
+  "checked": [
+    "https://www.luneinnate.com/robots.txt (Squarespace; * group blocks only /config, /api etc.)",
+    "https://www.luneinnate.com/",
+    "https://www.luneinnate.com/support"
+  ],
+  "notes": "Support LI page: 'Contact Us. Use the form on the right to contact us.' with a Squarespace form block (formId 5743a7371bbee07d9fb7a81e). The 'user@domain.com' in the HTML is a Squarespace placeholder. No real email shown.",
+  "doubtful": "Form is rendered by script; confirmed from page markup, not seen rendered."
+}

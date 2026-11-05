@@ -1,0 +1,19 @@
+{
+  "n": 106,
+  "slug": "sonic-yogi",
+  "name": "Sonic Yogi",
+  "outcome": "form",
+  "email": null,
+  "email_source": null,
+  "email_kind": null,
+  "saved_source": null,
+  "contact_form_url": "https://sonicyogi.com/contact",
+  "checked": [
+    "https://sonicyogi.com/robots.txt (allowed)",
+    "https://sonicyogi.com/ (200)",
+    "https://sonicyogi.com/contact (200)",
+    "https://sonicyogi.com/press-kit (200)"
+  ],
+  "notes": "No email on home, contact or press-kit pages; contact page has a form.",
+  "doubtful": null
+}

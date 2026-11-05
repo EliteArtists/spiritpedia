@@ -1,0 +1,19 @@
+{
+  "n": 209,
+  "slug": "natalie-southgate",
+  "name": "Natalie Southgate",
+  "outcome": "form",
+  "email": null,
+  "email_source": null,
+  "email_kind": null,
+  "saved_source": null,
+  "contact_form_url": "https://www.chakradance.com/contact/",
+  "checked": [
+    "https://www.chakradance.com/robots.txt (allows)",
+    "https://www.chakradance.com/contact/",
+    "https://www.chakradance.com/",
+    "https://www.chakradance.com/privacy/"
+  ],
+  "notes": "Chakradance is the practice and company she founded. Contact page has a Gravity Forms message form (with a Cloudflare Turnstile box on the form itself, not a page challenge); no email printed on contact, home or privacy pages.",
+  "doubtful": null
+}

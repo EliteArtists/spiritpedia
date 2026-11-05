@@ -1,0 +1,24 @@
+{
+  "n": 21,
+  "slug": "sadhguru",
+  "name": "Sadhguru",
+  "outcome": "form",
+  "email": null,
+  "email_source": null,
+  "email_kind": null,
+  "saved_source": "/private/tmp/claude-501/-Users-SundaySouLounge-Sites-spiritpedia/1c8d8473-2fb4-4889-ac09-5e475bd51fa9/scratchpad/ep-work-1/pages/sadhguru/local-center.html",
+  "contact_form_url": "https://support.ishafoundation.org",
+  "checked": [
+    "https://isha.sadhguru.org/robots.txt (allows these paths)",
+    "https://isha.sadhguru.org/ (-> /eu/en)",
+    "https://isha.sadhguru.org/global/en/contact-us (404)",
+    "https://isha.sadhguru.org/contact-us (-> /en/center/local-center)",
+    "https://isha.sadhguru.org/global/en/media (404)",
+    "https://isha.sadhguru.org/global/en/outreach (-> consciousplanet.org)",
+    "https://isha.sadhguru.org/en/center/local-center",
+    "https://support.ishafoundation.org/robots.txt (no robots file, serves the app)",
+    "web search x1"
+  ],
+  "notes": "Isha Foundation (founded by Sadhguru). Its contact page lists the main Isha Yoga Centre, Coimbatore (phones) and US Isha Institute of Inner-Sciences with 'support.ishafoundation.org' (the Isha Help Center) as the contact route, plus ~125 regional centre inboxes (e.g. africa@ishafoundation.org) that are for local programmes, so not recorded. A search showed uk@ishafoundation.org on the UK Charity Commission register (not his own site, not opened).",
+  "doubtful": "Help Center is a script app; ticket/contact form not seen rendered. A centre route, unlikely to reach him directly."
+}

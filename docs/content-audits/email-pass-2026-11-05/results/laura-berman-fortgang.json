@@ -1,0 +1,22 @@
+{
+  "n": 147,
+  "slug": "laura-berman-fortgang",
+  "name": "Laura Berman Fortgang",
+  "outcome": "form",
+  "email": null,
+  "email_source": null,
+  "email_kind": null,
+  "saved_source": null,
+  "contact_form_url": "https://laurabermanfortgang.com/connect/",
+  "checked": [
+    "https://laurabermanfortgang.com/robots.txt (HTTP 406, Mod Security block; site skipped, nothing else fetched from it)",
+    "https://kripalu.org/people/laura-berman-fortgang",
+    "web search: Laura Berman Fortgang speaker booking contact",
+    "https://speakers.com/robots.txt (allows)",
+    "https://speakers.com/speakers/laura-berman-fortgang/",
+    "https://www.wcspeakers.com/robots.txt (allows)",
+    "https://www.wcspeakers.com/speaker/laura-b-fortgang-mcc/ (no email; booking form only)"
+  ],
+  "notes": "Her own site refused us (406 on robots.txt), so it was skipped. Speakers.com's profile of her (same person: coach, author of 'Now What?') says for bookings contact service@speakers.com. That is the bureau's general booking inbox, not a personal agent. Contact form URL is from earlier research and could not be re-confirmed because her site blocks us. Lead's review (5 Nov): service@speakers.com not used: it is Speakers.com's general inbox for every speaker it lists, not her agent. The contact form is the route.",
+  "doubtful": "service@speakers.com is a speakers bureau's general inbox that lists many speakers; it may not be an exclusive agent for her. Her own form (laurabermanfortgang.com/connect/) could not be re-checked (site returns 406)."
+}

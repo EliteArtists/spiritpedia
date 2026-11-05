@@ -1,0 +1,19 @@
+{
+  "n": 162,
+  "slug": "tuere-sala",
+  "name": "Tuere Sala",
+  "outcome": "form",
+  "email": null,
+  "email_source": null,
+  "email_kind": null,
+  "saved_source": "/private/tmp/claude-501/-Users-SundaySouLounge-Sites-spiritpedia/1c8d8473-2fb4-4889-ac09-5e475bd51fa9/scratchpad/ep-work-141/tuere-sala-dg-contact.html",
+  "contact_form_url": "https://www.dharmaground.org/contact",
+  "checked": [
+    "https://www.tueresala.org/robots.txt (allows)",
+    "https://www.tueresala.org/ (HTTP 403, Cloudflare 'Just a moment' challenge; not retried, site skipped)",
+    "https://www.dharmaground.org/robots.txt (allows)",
+    "https://www.dharmaground.org/contact"
+  ],
+  "notes": "Her own site served a Cloudflare challenge, so it was skipped. Dharma Ground (the non-profit she co-founded) contact page has a form (name, email, message) and no email.",
+  "doubtful": "Form is Dharma Ground's general form, not hers alone; her own site could not be checked (403)."
+}

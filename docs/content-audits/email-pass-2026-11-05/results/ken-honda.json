@@ -1,0 +1,24 @@
+{
+  "n": 220,
+  "slug": "ken-honda",
+  "name": "Ken Honda",
+  "outcome": "form",
+  "email": null,
+  "email_source": null,
+  "email_kind": null,
+  "saved_source": null,
+  "contact_form_url": "https://kenhonda.com/contact/",
+  "checked": [
+    "https://kenhonda.com/robots.txt (allows; Crawl-delay 30)",
+    "https://kenhonda.com/contact/",
+    "https://kenhonda.com/",
+    "https://kenhonda.com/speaking/",
+    "web search: \"Ken Honda\" happy money speaking booking email contact",
+    "https://www.24-7pressrelease.com/robots.txt (this path not blocked)",
+    "https://www.24-7pressrelease.com/press-release/461645/creator-of-the-happymoney-movement-launches-online-press-kit (no email)",
+    "https://arigato.kenhonda.com/robots.txt (allows)",
+    "https://arigato.kenhonda.com/book-event"
+  ],
+  "notes": "His site has a Contact Form 7 message form on /contact/ and prints no email. His speaking page links to a Kajabi 'Book an Event With Ken Honda' form (https://arigato.kenhonda.com/book-event), also a valid route for speaking/interview requests. Search found only BigSpeak's general bureau inbox (a speakers' bureau's company inbox, not a named agent for him), so not recorded.",
+  "doubtful": null
+}

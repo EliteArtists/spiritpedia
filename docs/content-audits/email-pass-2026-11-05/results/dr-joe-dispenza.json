@@ -1,0 +1,21 @@
+{
+  "n": 6,
+  "slug": "dr-joe-dispenza",
+  "name": "Dr Joe Dispenza",
+  "outcome": "form",
+  "email": null,
+  "email_source": null,
+  "email_kind": null,
+  "saved_source": "/private/tmp/claude-501/-Users-SundaySouLounge-Sites-spiritpedia/1c8d8473-2fb4-4889-ac09-5e475bd51fa9/scratchpad/ep-work-1/pages/dr-joe-dispenza/privacy.html",
+  "contact_form_url": "https://support.drjoedispenza.com/hc/en-us/requests/new",
+  "checked": [
+    "https://drjoedispenza.com/robots.txt (allows these paths)",
+    "https://drjoedispenza.com",
+    "https://drjoedispenza.com/privacy-policy",
+    "https://encephalon.zendesk.com/robots.txt (Disallow /hc/*/requests/ for *)",
+    "https://encephalon.zendesk.com/hc/en-us (HTTP 403, skipped)",
+    "web search x1 (no own email; a paid contact directory came up and was not opened)"
+  ],
+  "notes": "His site links a support request form: footer links to https://encephalon.zendesk.com/hc/en-us/requests/new and the privacy policy links https://support.drjoedispenza.com/hc/en-us/requests/new (Encephalon is his company). Not fetched: robots.txt disallows /hc/*/requests/ and the help centre returned 403. Privacy policy shows dataprotection@drjoedispenza.com, a data-protection address only, so not recorded.",
+  "doubtful": "Form URL taken from links on his own site; not loaded (robots disallow + 403). It is a customer-support desk, may not reach him for outreach."
+}

@@ -1,0 +1,18 @@
+{
+  "n": 48,
+  "slug": "donna-eden",
+  "name": "Donna Eden",
+  "outcome": "email",
+  "email": "support@edenmethod.com",
+  "email_source": "https://edenmethod.com/contact/",
+  "email_kind": "business",
+  "saved_source": "/private/tmp/claude-501/-Users-SundaySouLounge-Sites-spiritpedia/1c8d8473-2fb4-4889-ac09-5e475bd51fa9/scratchpad/ep-work-29/eden-contact.html",
+  "contact_form_url": null,
+  "checked": [
+    "https://edenmethod.com/robots.txt (allows)",
+    "https://edenmethod.com/",
+    "https://edenmethod.com/contact/"
+  ],
+  "notes": "Behind Cloudflare email protection; decoded e1929491918e9395a18485848f8c8495898e85cf828e8c (key e1) -> support@edenmethod.com, labelled \"Customer Service\" (also given for outside-US help). Page also links a help-desk ticket form (edenenergymedicine.freshdesk.com/support/tickets/new, not fetched). Eden Method is her own organisation.",
+  "doubtful": "Customer-service inbox of her organisation rather than personal."
+}

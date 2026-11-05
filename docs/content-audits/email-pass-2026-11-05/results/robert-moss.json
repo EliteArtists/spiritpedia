@@ -1,0 +1,21 @@
+{
+  "n": 88,
+  "slug": "robert-moss",
+  "name": "Robert Moss",
+  "outcome": "none",
+  "email": null,
+  "email_source": null,
+  "email_kind": null,
+  "saved_source": null,
+  "contact_form_url": null,
+  "checked": [
+    "https://www.mossdreams.com/robots.txt (HTTP 403: site skipped, nothing else fetched from it)",
+    "https://www.eomega.org/robots.txt (allowed)",
+    "https://www.eomega.org/workshops/teachers/robert-moss (200, no email)",
+    "https://newworldlibrary.com/robots.txt (allowed)",
+    "https://newworldlibrary.com/shop/authors/robert-moss (200, publisher page, no email)",
+    "web search: Robert Moss workshops contact email"
+  ],
+  "notes": "His own site mossdreams.com refused even robots.txt (403), so it was skipped under the standing rule. Omega teacher page and New World Library author page show no email or contact form for him.",
+  "doubtful": "A person should look at mossdreams.com in a normal browser; it is his main site and likely has a contact route."
+}

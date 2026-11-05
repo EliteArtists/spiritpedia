@@ -1,0 +1,18 @@
+{
+  "n": 22,
+  "slug": "adyashanti",
+  "name": "Adyashanti",
+  "outcome": "none",
+  "email": null,
+  "email_source": null,
+  "email_kind": null,
+  "saved_source": null,
+  "contact_form_url": null,
+  "checked": [
+    "https://adyashanti.opengatesangha.org/robots.txt (allows)",
+    "https://adyashanti.opengatesangha.org/ (HTTP 403, skipped; whole opengatesangha.org site not fetched after that)",
+    "web search x1"
+  ],
+  "notes": "His site (Open Gate Sangha, which he co-founded) refused us with 403, so per the standing rule nothing more was fetched from it, including www.opengatesangha.org. Search snippets suggest a press page (/community/press) and a staff contact on the site, but they were not opened.",
+  "doubtful": "A person could look at https://adyashanti.opengatesangha.org/community/press in a browser; it likely has a contact route."
+}

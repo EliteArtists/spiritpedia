@@ -1,0 +1,20 @@
+{
+  "n": 95,
+  "slug": "david-bower",
+  "name": "David Bower",
+  "outcome": "form",
+  "email": null,
+  "email_source": null,
+  "email_kind": null,
+  "saved_source": null,
+  "contact_form_url": "https://davidbower.com/contact/",
+  "checked": [
+    "https://davidbower.com/robots.txt (allowed)",
+    "https://davidbower.com/ (200)",
+    "https://davidbower.com/contact/ (200)",
+    "https://lemurianhealing.com/robots.txt (allowed)",
+    "https://lemurianhealing.com/sessions (200)"
+  ],
+  "notes": "No email shown. Contact page: \"Please use this form to contact me about anything\", embedded Formstack form (lemuria.formstack.com, david_bower_contact_form).",
+  "doubtful": null
+}

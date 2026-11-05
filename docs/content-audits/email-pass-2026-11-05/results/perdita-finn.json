@@ -1,0 +1,18 @@
+{
+  "n": 94,
+  "slug": "perdita-finn",
+  "name": "Perdita Finn",
+  "outcome": "form",
+  "email": null,
+  "email_source": null,
+  "email_kind": null,
+  "saved_source": null,
+  "contact_form_url": "https://takebackthemagic.com/contact-me/",
+  "checked": [
+    "https://takebackthemagic.com/robots.txt (allowed)",
+    "https://takebackthemagic.com/ (HTTP 403)",
+    "https://takebackthemagic.com/contact-me/ (HTTP 403)"
+  ],
+  "notes": "Site refused curl with 403 (bot protection), so no email check was possible and the form could not be confirmed. Form URL is the one from earlier research.",
+  "doubtful": "Contact form URL not re-confirmed this pass (site returns 403); a person should check takebackthemagic.com/contact-me/ for a form or email."
+}

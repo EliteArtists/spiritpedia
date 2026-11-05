@@ -1,0 +1,18 @@
+{
+  "n": 123,
+  "slug": "tiger-singleton",
+  "name": "Tiger Singleton",
+  "outcome": "form",
+  "email": null,
+  "email_source": null,
+  "email_kind": null,
+  "saved_source": "/private/tmp/claude-501/-Users-SundaySouLounge-Sites-spiritpedia/1c8d8473-2fb4-4889-ac09-5e475bd51fa9/scratchpad/ep-work-113/pages/tiger-singleton/www.tigmonk.com_contact-tiger.html",
+  "contact_form_url": "https://www.tigmonk.com/contact-tiger",
+  "checked": [
+    "https://www.tigmonk.com/robots.txt (robots.txt allows)",
+    "https://www.tigmonk.com/",
+    "https://www.tigmonk.com/contact-tiger"
+  ],
+  "notes": "No visible email. inbox@onlygodisreal.com appears only as a hidden form field (forward_response_to_email) on the contact page, so not used. Contact form on /contact-tiger (some nav links point to onlygodisreal.com/contact-tiger, not fetched).",
+  "doubtful": null
+}

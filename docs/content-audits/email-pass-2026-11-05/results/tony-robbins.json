@@ -1,0 +1,20 @@
+{
+  "n": 20,
+  "slug": "tony-robbins",
+  "name": "Tony Robbins",
+  "outcome": "form",
+  "email": null,
+  "email_source": null,
+  "email_kind": null,
+  "saved_source": null,
+  "contact_form_url": "https://tonyrobbins.typeform.com/to/wQXsAslo",
+  "checked": [
+    "https://www.tonyrobbins.com/robots.txt (allows these paths)",
+    "https://www.tonyrobbins.com/",
+    "https://www.tonyrobbins.com/media-inquiries",
+    "https://tonyrobbins.typeform.com/robots.txt (none, redirects)",
+    "https://tonyrobbins.typeform.com/to/wQXsAslo"
+  ],
+  "notes": "tonyrobbins.com/media-inquiries: 'For all media requests related to Tony and Sage Robbins, please complete the form below' -> Typeform 'Tony and Sage Robbins Media Inquiries'. The form's thank-you screen text says: 'For extremely urgent media inquiries or requests for comment about Robbins Research International, Tony Robbins, or his business and philanthropic work, please contact Jenn Connelly at (646) 922-7755 or jconnelly@jconnelly.com.' Lead's review (5 Nov): jconnelly@jconnelly.com not used: a visitor sees it only on the thank-you screen after submitting, so it is not published. The contact form is the route.",
+  "doubtful": "The address is in the published form, but a visitor sees it only on the thank-you screen after submitting; it is his PR agency (Jenn Connelly), for urgent media only. The form itself may be the better route."
+}

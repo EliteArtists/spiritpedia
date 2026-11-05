@@ -1,0 +1,17 @@
+{
+  "n": 56,
+  "slug": "elizabeth-gilbert",
+  "name": "Elizabeth Gilbert",
+  "outcome": "none",
+  "email": null,
+  "email_source": null,
+  "email_kind": null,
+  "saved_source": null,
+  "contact_form_url": null,
+  "checked": [
+    "https://www.elizabethgilbert.com/robots.txt (HTTP 406 Mod Security block, site skipped)",
+    "web search x1"
+  ],
+  "notes": "Her site refused even robots.txt (406, Mod Security), so it was skipped and not retried. Substack is off-limits. Search found only a data-broker style booking directory (not used). No published email or form found from allowed sources.",
+  "doubtful": null
+}

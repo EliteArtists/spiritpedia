@@ -1,0 +1,20 @@
+{
+  "n": 7,
+  "slug": "gregg-braden",
+  "name": "Gregg Braden",
+  "outcome": "form",
+  "email": null,
+  "email_source": null,
+  "email_kind": null,
+  "saved_source": "/private/tmp/claude-501/-Users-SundaySouLounge-Sites-spiritpedia/1c8d8473-2fb4-4889-ac09-5e475bd51fa9/scratchpad/ep-work-1/pages/gregg-braden/contact.html",
+  "contact_form_url": "https://greggbraden.com/contact-us/",
+  "checked": [
+    "https://greggbraden.com/robots.txt (allows)",
+    "https://greggbraden.com",
+    "https://greggbraden.com/contact-us/ (HTTP 406 status but full page content served)",
+    "http://greggbraden.com/press/ (404 -> 406.shtml)",
+    "web search x1 (All American Speakers bureau profile: phone and availability form only, not opened)"
+  ],
+  "notes": "Contact Us page has a form with name, email, phone, website and a Notes field; footer gives 'Wisdom Traditions, Office of Gregg Braden, PO Box 14668 North Palm Beach, FL 33408, 561.799.9337'. No email on the page. Because the site answered with 406 I stopped fetching it (did not open /requests/ 'Interview, Film & Online Requests' or /press-bio/ 'Press & Bookings', which may hold a better route).",
+  "doubtful": "The form text says submitters agree to receive communication from Gregg Braden, so it may be a list sign-up with a notes box; /requests/ page (not fetched) may be the proper interview route. Site returned 406 to us."
+}

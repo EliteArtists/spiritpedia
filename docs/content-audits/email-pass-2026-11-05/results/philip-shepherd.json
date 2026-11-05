@@ -1,0 +1,21 @@
+{
+  "n": 218,
+  "slug": "philip-shepherd",
+  "name": "Philip Shepherd",
+  "outcome": "form",
+  "email": null,
+  "email_source": null,
+  "email_kind": null,
+  "saved_source": null,
+  "contact_form_url": "https://embodiedpresent.com/pages/contact",
+  "checked": [
+    "https://embodiedpresent.com/robots.txt (allows; fetched once before deciding to skip the site)",
+    "embodiedpresent.com pages: NOT fetched (site rate-limited us with HTTP 429 on 4 Nov 2026, so treated as blocked)",
+    "web search: \"Philip Shepherd\" embodied present process contact email",
+    "https://philipshepherd.com/robots.txt (404, no rules)",
+    "https://philipshepherd.com/ (301 to embodiedpresent.com; redirect not followed)",
+    "https://www.tepp.life/robots.txt (HTTP 403; skipped)"
+  ],
+  "notes": "His own site embodiedpresent.com refused us with a 429 rate limit on 4 Nov, so under the standing rule its pages were not fetched again. philipshepherd.com redirects there (not followed); tepp.life returned 403 (skipped). The contact-form URL is the one from the 4 Nov research and could not be re-confirmed. Web search found no published email.",
+  "doubtful": "Contact form URL not re-checked today because the site is treated as blocked (429 on 4 Nov); a person should confirm it loads."
+}

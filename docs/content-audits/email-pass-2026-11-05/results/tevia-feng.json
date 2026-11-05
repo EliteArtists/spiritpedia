@@ -1,0 +1,18 @@
+{
+  "n": 85,
+  "slug": "tevia-feng",
+  "name": "Tevia Feng",
+  "outcome": "email",
+  "email": "info@whitetigerqigong.com",
+  "email_source": "https://www.whitetigerqigong.com/pages/contact",
+  "email_kind": "centre (founder)",
+  "saved_source": "/private/tmp/claude-501/-Users-SundaySouLounge-Sites-spiritpedia/1c8d8473-2fb4-4889-ac09-5e475bd51fa9/scratchpad/ep-work-85/html/wtq-contact.html",
+  "contact_form_url": "https://forms.clickup.com/3713465/f/3hadt-2511/Q65FDKYZJ73SL2JIAD",
+  "checked": [
+    "https://www.whitetigerqigong.com/robots.txt (allowed)",
+    "https://www.whitetigerqigong.com/ (200)",
+    "https://www.whitetigerqigong.com/pages/contact (200)"
+  ],
+  "notes": "White Tiger Qigong contact page lists \"For General Questions: info@whitetigerqigong.com\" and \"For Other Concerns: Support@whitetigerqigong.com\". The site names Tevia Feng as Founder & Master Instructor (JSON-LD and About the Founder page), so the school inbox counts as centre (founder). The page also links a ClickUp \"Submit a Request or Feedback\" form (support requests); not fetched.",
+  "doubtful": "School general inbox, not personal; may reach customer support rather than Tevia."
+}
