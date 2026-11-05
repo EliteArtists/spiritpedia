@@ -70,6 +70,13 @@ that applies says `Disallow: /`. Squarespace sites list AI crawlers in the
 same group as `*` followed by `Disallow: /config` and the like; that blocks
 only those paths.
 
+**A robots.txt that names Claude's agents blocks us** (owner, 5 Nov 2026):
+if a group naming ClaudeBot, Claude-User, Claude-Web or anthropic-ai says
+`Disallow: /`, the whole site is off limits, even though our fetches identify
+as curl. Treat it like Spirit Rock: fetch nothing more and take nothing from
+it. Known: bashar.org, thesecret.tv, cirak.com, highermind.com,
+bewholebehappy.com, nassimharamein.com, ymaa.com.
+
 **No fake user agents anywhere.**
 - Use one honest fetch: curl's default user agent, or WebFetch. Never send
   `-A`/`User-Agent` with a browser's or the ingest's string.

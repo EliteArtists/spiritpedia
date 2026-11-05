@@ -1,0 +1,2323 @@
+{
+ "env": "dev",
+ "at": "2026-11-05T14:56:32.597Z",
+ "rows": [
+  {
+   "id": 7,
+   "slug": "abraham-hicks",
+   "outcome": "email",
+   "before": {
+    "contact_email": null,
+    "contact_email_source": null,
+    "contact_form_url": null
+   },
+   "after": {
+    "contact_email": "support@abraham-hicks.com",
+    "contact_email_source": "https://abraham-hicks.com/contact-us/",
+    "contact_form_url": "https://abraham-hicks.com/contact-us/"
+   }
+  },
+  {
+   "id": 175,
+   "slug": "adi-kanda",
+   "outcome": "form",
+   "before": {
+    "contact_form_url": null
+   },
+   "after": {
+    "contact_form_url": "https://www.worldwithoutfear.org/contact"
+   }
+  },
+  {
+   "id": 592,
+   "slug": "ajahn-canda",
+   "outcome": "form",
+   "before": {
+    "contact_form_url": null
+   },
+   "after": {
+    "contact_form_url": "https://anukampaproject.org/contact/"
+   }
+  },
+  {
+   "id": 165,
+   "slug": "amanda-johnson",
+   "outcome": "form",
+   "before": {
+    "contact_form_url": null
+   },
+   "after": {
+    "contact_form_url": "https://www.amandajohnson.tv/contact"
+   }
+  },
+  {
+   "id": 169,
+   "slug": "amy-belair",
+   "outcome": "form",
+   "before": {
+    "contact_form_url": null
+   },
+   "after": {
+    "contact_form_url": "https://amybelair.com/contact"
+   }
+  },
+  {
+   "id": 91,
+   "slug": "anodea-judith",
+   "outcome": "email",
+   "before": {
+    "contact_email": null,
+    "contact_email_source": null
+   },
+   "after": {
+    "contact_email": "scacademycoordinator@gmail.com",
+    "contact_email_source": "https://www.sacredcentersacademy.com/contact"
+   }
+  },
+  {
+   "id": 829,
+   "slug": "anthony-abbagnano",
+   "outcome": "form",
+   "before": {
+    "contact_form_url": null
+   },
+   "after": {
+    "contact_form_url": "https://alchemyofbreath.com/contact/"
+   }
+  },
+  {
+   "id": 50,
+   "slug": "asa-source-vibrations",
+   "outcome": "email",
+   "before": {
+    "contact_email": null,
+    "contact_email_source": null
+   },
+   "after": {
+    "contact_email": "info@sourcevibrations.com",
+    "contact_email_source": "https://www.sourcevibrations.com/"
+   }
+  },
+  {
+   "id": 420,
+   "slug": "asha-nayaswami",
+   "outcome": "form",
+   "before": {
+    "contact_form_url": null
+   },
+   "after": {
+    "contact_form_url": "https://www.ashajoy.org/contact"
+   }
+  },
+  {
+   "id": 722,
+   "slug": "ayya-sudhamma",
+   "outcome": "form",
+   "before": {
+    "contact_form_url": null
+   },
+   "after": {
+    "contact_form_url": "https://www.charlottebuddhistvihara.org/contact-us/"
+   }
+  },
+  {
+   "id": 662,
+   "slug": "bernat-font",
+   "outcome": "email",
+   "before": {
+    "contact_email": null,
+    "contact_email_source": null,
+    "contact_form_url": null
+   },
+   "after": {
+    "contact_email": "hola@espaisati.org",
+    "contact_email_source": "https://espaisati.org/mes-qui-som/",
+    "contact_form_url": "https://dharma.cat/contact-2/"
+   }
+  },
+  {
+   "id": 657,
+   "slug": "beth-bradford",
+   "outcome": "form",
+   "before": {
+    "contact_form_url": null
+   },
+   "after": {
+    "contact_form_url": "https://www.brad4d-wellness.com/"
+   }
+  },
+  {
+   "id": 36,
+   "slug": "brad-yates",
+   "outcome": "form",
+   "before": {
+    "contact_form_url": null
+   },
+   "after": {
+    "contact_form_url": "https://www.tapwithbrad.com/contactbrad"
+   }
+  },
+  {
+   "id": 419,
+   "slug": "brenda-rose",
+   "outcome": "form",
+   "before": {
+    "contact_form_url": null
+   },
+   "after": {
+    "contact_form_url": "https://www.brenda-rose.com/contact/"
+   }
+  },
+  {
+   "id": 827,
+   "slug": "brian-thomas-swimme",
+   "outcome": "form",
+   "before": {
+    "contact_form_url": null
+   },
+   "after": {
+    "contact_form_url": "https://storyoftheuniverse.org/contact/"
+   }
+  },
+  {
+   "id": 681,
+   "slug": "brother-phap-huu",
+   "outcome": "form",
+   "before": {
+    "contact_form_url": null
+   },
+   "after": {
+    "contact_form_url": "https://plumvillage.org/contact-us"
+   }
+  },
+  {
+   "id": 685,
+   "slug": "brother-phap-linh",
+   "outcome": "form",
+   "before": {
+    "contact_form_url": null
+   },
+   "after": {
+    "contact_form_url": "https://plumvillage.org/contact-us"
+   }
+  },
+  {
+   "id": 23,
+   "slug": "bruce-h-lipton-phd",
+   "outcome": "form",
+   "before": {
+    "contact_form_url": null
+   },
+   "after": {
+    "contact_form_url": "https://www.brucelipton.com/contact/"
+   }
+  },
+  {
+   "id": 58,
+   "slug": "byron-katie",
+   "outcome": "email",
+   "before": {
+    "contact_email": null,
+    "contact_email_source": null,
+    "contact_form_url": null
+   },
+   "after": {
+    "contact_email": "customercare@thework.com",
+    "contact_email_source": "https://thework.com/contact/",
+    "contact_form_url": "https://thework.com/request-media-interview/"
+   }
+  },
+  {
+   "id": 88,
+   "slug": "caroline-myss",
+   "outcome": "form",
+   "before": {
+    "contact_form_url": null
+   },
+   "after": {
+    "contact_form_url": "https://myss.com/customer-support/contact-us/"
+   }
+  },
+  {
+   "id": 258,
+   "slug": "cassandra-vieten",
+   "outcome": "form",
+   "before": {
+    "contact_form_url": null
+   },
+   "after": {
+    "contact_form_url": "https://cassandravieten.com/contact-us/"
+   }
+  },
+  {
+   "id": 559,
+   "slug": "catherine-wilde",
+   "outcome": "form",
+   "before": {
+    "contact_form_url": null
+   },
+   "after": {
+    "contact_form_url": "https://www.soulcaremom.com/contact/"
+   }
+  },
+  {
+   "id": 750,
+   "slug": "charleene-closshey",
+   "outcome": "form",
+   "before": {
+    "contact_form_url": null
+   },
+   "after": {
+    "contact_form_url": "https://charleene.com/contact/"
+   }
+  },
+  {
+   "id": 406,
+   "slug": "charlotte-rotterdam-pieter-oosthuizen",
+   "outcome": "form",
+   "before": {
+    "contact_form_url": null
+   },
+   "after": {
+    "contact_form_url": "https://skymind.us/"
+   }
+  },
+  {
+   "id": 106,
+   "slug": "chris-brennan",
+   "outcome": "email",
+   "before": {
+    "contact_email": null,
+    "contact_email_source": null
+   },
+   "after": {
+    "contact_email": "theastrologypodcast@gmail.com",
+    "contact_email_source": "https://theastrologypodcast.com/contact/"
+   }
+  },
+  {
+   "id": 834,
+   "slug": "christena-cleveland",
+   "outcome": "form",
+   "before": {
+    "contact_form_url": null
+   },
+   "after": {
+    "contact_form_url": "https://www.christenacleveland.com/speakerinquiry"
+   }
+  },
+  {
+   "id": 855,
+   "slug": "christine-page",
+   "outcome": "form",
+   "before": {
+    "contact_form_url": null
+   },
+   "after": {
+    "contact_form_url": "https://christinepage.com/contact-us-form/"
+   }
+  },
+  {
+   "id": 377,
+   "slug": "claire-creighton",
+   "outcome": "form",
+   "before": {
+    "contact_form_url": null
+   },
+   "after": {
+    "contact_form_url": "https://www.clairecreighton.com/contact"
+   }
+  },
+  {
+   "id": 852,
+   "slug": "clare-johnson",
+   "outcome": "form",
+   "before": {
+    "contact_form_url": null
+   },
+   "after": {
+    "contact_form_url": "https://deepluciddreaming.com/contact/"
+   }
+  },
+  {
+   "id": 516,
+   "slug": "coby-kozlowski",
+   "outcome": "form",
+   "before": {
+    "contact_form_url": null
+   },
+   "after": {
+    "contact_form_url": "https://www.cobyk.com/connect/"
+   }
+  },
+  {
+   "id": 539,
+   "slug": "cristi-christensen",
+   "outcome": "email",
+   "before": {
+    "contact_email": null,
+    "contact_email_source": null,
+    "contact_form_url": null
+   },
+   "after": {
+    "contact_email": "ashley@shpny.com",
+    "contact_email_source": "https://www.cristichristensen.com/contact",
+    "contact_form_url": "https://www.cristichristensen.com/contact"
+   }
+  },
+  {
+   "id": 363,
+   "slug": "dakota-earth-cloud-walker",
+   "outcome": "form",
+   "before": {
+    "contact_form_url": null
+   },
+   "after": {
+    "contact_form_url": "https://dakotaearthcloud.com/contact-us/"
+   }
+  },
+  {
+   "id": 82,
+   "slug": "dan-brul",
+   "outcome": "email",
+   "before": {
+    "contact_email": null,
+    "contact_email_source": null,
+    "contact_form_url": null
+   },
+   "after": {
+    "contact_email": "office@breathmastery.com",
+    "contact_email_source": "https://breathmastery.com/contact/",
+    "contact_form_url": "https://breathmastery.com/contact/"
+   }
+  },
+  {
+   "id": 817,
+   "slug": "daniel-raphael-silverstein",
+   "outcome": "form",
+   "before": {
+    "contact_form_url": null
+   },
+   "after": {
+    "contact_form_url": "https://www.appliedjewishspirituality.org/contact"
+   }
+  },
+  {
+   "id": 769,
+   "slug": "danielle-mackinnon",
+   "outcome": "email",
+   "before": {
+    "contact_email": null,
+    "contact_email_source": null,
+    "contact_form_url": null
+   },
+   "after": {
+    "contact_email": "media@daniellemackinnon.com",
+    "contact_email_source": "https://www.daniellemackinnon.com/contact-us/",
+    "contact_form_url": "https://www.daniellemackinnon.com/contact-us/"
+   }
+  },
+  {
+   "id": 732,
+   "slug": "daryl-lynn-ross",
+   "outcome": "email",
+   "before": {
+    "contact_email": null,
+    "contact_email_source": null,
+    "contact_form_url": null
+   },
+   "after": {
+    "contact_email": "info@truenorthinsight.org",
+    "contact_email_source": "https://www.daryllynnross.org/event/abiding-mindfully-in-the-body-meditation-and-yoga-retreat-2027/",
+    "contact_form_url": "https://www.daryllynnross.org/#contact"
+   }
+  },
+  {
+   "id": 245,
+   "slug": "david-bower",
+   "outcome": "form",
+   "before": {
+    "contact_form_url": null
+   },
+   "after": {
+    "contact_form_url": "https://davidbower.com/contact/"
+   }
+  },
+  {
+   "id": 110,
+   "slug": "david-deida",
+   "outcome": "form",
+   "before": {
+    "contact_form_url": null
+   },
+   "after": {
+    "contact_form_url": "https://deida.info/contact-us/"
+   }
+  },
+  {
+   "id": 426,
+   "slug": "david-elliott",
+   "outcome": "form",
+   "before": {
+    "contact_form_url": null
+   },
+   "after": {
+    "contact_form_url": "https://www.davidelliott.com/contact-us/"
+   }
+  },
+  {
+   "id": 729,
+   "slug": "dawn-mauricio",
+   "outcome": "form",
+   "before": {
+    "contact_form_url": null
+   },
+   "after": {
+    "contact_form_url": "https://dawnmauricio.com/contact"
+   }
+  },
+  {
+   "id": 65,
+   "slug": "dawson-church",
+   "outcome": "email",
+   "before": {
+    "contact_email": null,
+    "contact_email_source": null
+   },
+   "after": {
+    "contact_email": "support@eftuniverse.com",
+    "contact_email_source": "https://dawsonchurch.com/contact/"
+   }
+  },
+  {
+   "id": 67,
+   "slug": "dean-radin",
+   "outcome": "form",
+   "before": {
+    "contact_form_url": null
+   },
+   "after": {
+    "contact_form_url": "https://www.deanradin.com/contact"
+   }
+  },
+  {
+   "id": 710,
+   "slug": "demo-rinpoche",
+   "outcome": "form",
+   "before": {
+    "contact_form_url": null
+   },
+   "after": {
+    "contact_form_url": "https://www.jewelheart.org/contact-us/"
+   }
+  },
+  {
+   "id": 290,
+   "slug": "devaa-haley-mitchell",
+   "outcome": "form",
+   "before": {
+    "contact_form_url": null
+   },
+   "after": {
+    "contact_form_url": "https://devaa.com/contact-2/"
+   }
+  },
+  {
+   "id": 84,
+   "slug": "don-miguel-ruiz",
+   "outcome": "email",
+   "before": {
+    "contact_email": null,
+    "contact_email_source": null,
+    "contact_form_url": null
+   },
+   "after": {
+    "contact_email": "support@miguelruiz.com",
+    "contact_email_source": "https://www.miguelruiz.com/contact/",
+    "contact_form_url": "https://www.miguelruiz.com/contact/"
+   }
+  },
+  {
+   "id": 89,
+   "slug": "donna-eden",
+   "outcome": "email",
+   "before": {
+    "contact_email": null,
+    "contact_email_source": null
+   },
+   "after": {
+    "contact_email": "support@edenmethod.com",
+    "contact_email_source": "https://edenmethod.com/contact/"
+   }
+  },
+  {
+   "id": 226,
+   "slug": "donna-lozito",
+   "outcome": "form",
+   "before": {
+    "contact_form_url": null
+   },
+   "after": {
+    "contact_form_url": "https://donnalozito.com/contact/"
+   }
+  },
+  {
+   "id": 414,
+   "slug": "donnabelle-casis",
+   "outcome": "form",
+   "before": {
+    "contact_form_url": null
+   },
+   "after": {
+    "contact_form_url": "https://sonorouslight.com/contact/"
+   }
+  },
+  {
+   "id": 93,
+   "slug": "dr-eben-alexander",
+   "outcome": "form",
+   "before": {
+    "contact_form_url": null
+   },
+   "after": {
+    "contact_form_url": "https://ebenalexander.com/contact/"
+   }
+  },
+  {
+   "id": 111,
+   "slug": "dr-gary-chapman",
+   "outcome": "email",
+   "before": {
+    "contact_email": null,
+    "contact_email_source": null,
+    "contact_form_url": null
+   },
+   "after": {
+    "contact_email": "garychapman@moody.edu",
+    "contact_email_source": "https://www.moodyradio.org/programs/a-love-language-minute/contact",
+    "contact_form_url": "https://5lovelanguages.com/contact"
+   }
+  },
+  {
+   "id": 21,
+   "slug": "dr-joe-dispenza",
+   "outcome": "form",
+   "before": {
+    "contact_form_url": null
+   },
+   "after": {
+    "contact_form_url": "https://support.drjoedispenza.com/hc/en-us/requests/new"
+   }
+  },
+  {
+   "id": 94,
+   "slug": "dr-raymond-moody",
+   "outcome": "form",
+   "before": {
+    "contact_form_url": null
+   },
+   "after": {
+    "contact_form_url": "https://www.lifeafterlife.com/booking-interviews"
+   }
+  },
+  {
+   "id": 109,
+   "slug": "drs-john-julie-gottman",
+   "outcome": "form",
+   "before": {
+    "contact_form_url": null
+   },
+   "after": {
+    "contact_form_url": "https://www.gottman.com/gottman-speakers/submit-request/"
+   }
+  },
+  {
+   "id": 736,
+   "slug": "duncan-rice",
+   "outcome": "form",
+   "before": {
+    "contact_form_url": null
+   },
+   "after": {
+    "contact_form_url": "https://yogamyoga.com/contact/"
+   }
+  },
+  {
+   "id": 6,
+   "slug": "eckhart-tolle",
+   "outcome": "email",
+   "before": {
+    "contact_email": null,
+    "contact_email_source": null
+   },
+   "after": {
+    "contact_email": "proposals@eckharttolle.com",
+    "contact_email_source": "https://eckharttolle.com/contact/"
+   }
+  },
+  {
+   "id": 400,
+   "slug": "emma-estrela",
+   "outcome": "email",
+   "before": {
+    "contact_email": null,
+    "contact_email_source": null,
+    "contact_form_url": null
+   },
+   "after": {
+    "contact_email": "Emma@emmaestrela.com",
+    "contact_email_source": "https://www.emmaestrela.com",
+    "contact_form_url": "https://www.emmaestrela.com/contact"
+   }
+  },
+  {
+   "id": 636,
+   "slug": "eric-zimmer",
+   "outcome": "form",
+   "before": {
+    "contact_form_url": null
+   },
+   "after": {
+    "contact_form_url": "https://www.oneyoufeed.net/contact/"
+   }
+  },
+  {
+   "id": 108,
+   "slug": "esther-perel",
+   "outcome": "email",
+   "before": {
+    "contact_email": null,
+    "contact_email_source": null,
+    "contact_form_url": null
+   },
+   "after": {
+    "contact_email": "support@estherperel.com",
+    "contact_email_source": "https://www.estherperel.com/contact",
+    "contact_form_url": "https://www.estherperel.com/contact"
+   }
+  },
+  {
+   "id": 185,
+   "slug": "frans-stiene",
+   "outcome": "email",
+   "before": {
+    "contact_email": null,
+    "contact_email_source": null,
+    "contact_form_url": null
+   },
+   "after": {
+    "contact_email": "info@ihreiki.com",
+    "contact_email_source": "https://ihreiki.com/contact-us/",
+    "contact_form_url": "https://ihreiki.com/contact-us/"
+   }
+  },
+  {
+   "id": 389,
+   "slug": "frits-evelein",
+   "outcome": "form",
+   "before": {
+    "contact_form_url": null
+   },
+   "after": {
+    "contact_form_url": "https://fritsevelein.com/contact/"
+   }
+  },
+  {
+   "id": 62,
+   "slug": "gabby-bernstein",
+   "outcome": "form",
+   "before": {
+    "contact_form_url": null
+   },
+   "after": {
+    "contact_form_url": "https://www.harrywalker.com/contact-us"
+   }
+  },
+  {
+   "id": 167,
+   "slug": "gabriella-cacciatore",
+   "outcome": "email",
+   "before": {
+    "contact_email": null,
+    "contact_email_source": null
+   },
+   "after": {
+    "contact_email": "gabcacciatore@gmail.com",
+    "contact_email_source": "https://www.gabriellacacciatore.com/"
+   }
+  },
+  {
+   "id": 610,
+   "slug": "gaia-hope-good",
+   "outcome": "form",
+   "before": {
+    "contact_form_url": null
+   },
+   "after": {
+    "contact_form_url": "https://www.evolutionaryastrologyacademy.com/contact"
+   }
+  },
+  {
+   "id": 168,
+   "slug": "gayle-wilson",
+   "outcome": "email",
+   "before": {
+    "contact_email": null,
+    "contact_email_source": null,
+    "contact_form_url": null
+   },
+   "after": {
+    "contact_email": "hello@gaylewilson.com.au",
+    "contact_email_source": "https://gaylewilson.com.au/",
+    "contact_form_url": "https://gaylewilson.com.au/contact"
+   }
+  },
+  {
+   "id": 86,
+   "slug": "graham-hancock",
+   "outcome": "email",
+   "before": {
+    "contact_email": null,
+    "contact_email_source": null
+   },
+   "after": {
+    "contact_email": "graham@grahamhancock.com",
+    "contact_email_source": "https://grahamhancock.com/mail/"
+   }
+  },
+  {
+   "id": 22,
+   "slug": "gregg-braden",
+   "outcome": "form",
+   "before": {
+    "contact_form_url": null
+   },
+   "after": {
+    "contact_form_url": "https://greggbraden.com/contact-us/"
+   }
+  },
+  {
+   "id": 523,
+   "slug": "hawah-kasat",
+   "outcome": "form",
+   "before": {
+    "contact_form_url": null
+   },
+   "after": {
+    "contact_form_url": "https://hawahkasat.com/contact-hawah/"
+   }
+  },
+  {
+   "id": 47,
+   "slug": "healing-vibrations",
+   "outcome": "email",
+   "before": {
+    "contact_email": null,
+    "contact_email_source": null,
+    "contact_form_url": null
+   },
+   "after": {
+    "contact_email": "info@healingvibrationsmedia.com",
+    "contact_email_source": "https://www.healingvibrationsmusic.com/policies/contact-information",
+    "contact_form_url": "https://www.healingvibrationsmusic.com/pages/contact"
+   }
+  },
+  {
+   "id": 35,
+   "slug": "heidi-priebe",
+   "outcome": "form",
+   "before": {
+    "contact_form_url": null
+   },
+   "after": {
+    "contact_form_url": "https://www.heidipriebe.com/collaborate"
+   }
+  },
+  {
+   "id": 292,
+   "slug": "insight-timer",
+   "outcome": "email",
+   "before": {
+    "contact_email": null,
+    "contact_email_source": null
+   },
+   "after": {
+    "contact_email": "press@insighttimer.com",
+    "contact_email_source": "https://insighttimer.com/blog/insight-timer-named-best-meditation-app-by-sensor-tower-apac-awards-2025/"
+   }
+  },
+  {
+   "id": 71,
+   "slug": "jack-kornfield",
+   "outcome": "email",
+   "before": {
+    "contact_email": null,
+    "contact_email_source": null,
+    "contact_form_url": null
+   },
+   "after": {
+    "contact_email": "info@jackkornfield.com",
+    "contact_email_source": "https://jackkornfield.com/contact-us/",
+    "contact_form_url": "https://jackkornfield.com/contact-us/"
+   }
+  },
+  {
+   "id": 655,
+   "slug": "jaime-tan",
+   "outcome": "form",
+   "before": {
+    "contact_form_url": null
+   },
+   "after": {
+    "contact_form_url": "https://enlightenedspoon.com/contact"
+   }
+  },
+  {
+   "id": 81,
+   "slug": "james-nestor",
+   "outcome": "form",
+   "before": {
+    "contact_form_url": null
+   },
+   "after": {
+    "contact_form_url": "https://www.mrjamesnestor.com/contact"
+   }
+  },
+  {
+   "id": 95,
+   "slug": "james-van-praagh",
+   "outcome": "form",
+   "before": {
+    "contact_form_url": null
+   },
+   "after": {
+    "contact_form_url": "https://vanpraagh.com/contact/"
+   }
+  },
+  {
+   "id": 774,
+   "slug": "jamye-price",
+   "outcome": "form",
+   "before": {
+    "contact_form_url": null
+   },
+   "after": {
+    "contact_form_url": "https://jamyeprice.com/contact/"
+   }
+  },
+  {
+   "id": 842,
+   "slug": "jane-burns",
+   "outcome": "form",
+   "before": {
+    "contact_form_url": null
+   },
+   "after": {
+    "contact_form_url": "https://journeystothesoul.com/contact-jane-burns/"
+   }
+  },
+  {
+   "id": 382,
+   "slug": "janette-freeman",
+   "outcome": "form",
+   "before": {
+    "contact_form_url": null
+   },
+   "after": {
+    "contact_form_url": "https://janettefreeman.com/"
+   }
+  },
+  {
+   "id": 75,
+   "slug": "jay-shetty",
+   "outcome": "form",
+   "before": {
+    "contact_form_url": null
+   },
+   "after": {
+    "contact_form_url": "https://www.jayshetty.me/speaking"
+   }
+  },
+  {
+   "id": 761,
+   "slug": "jay-vidyarthi",
+   "outcome": "form",
+   "before": {
+    "contact_form_url": null
+   },
+   "after": {
+    "contact_form_url": "https://www.jayvidyarthi.com/#contact"
+   }
+  },
+  {
+   "id": 843,
+   "slug": "jean-shinoda-bolen",
+   "outcome": "form",
+   "before": {
+    "contact_form_url": null
+   },
+   "after": {
+    "contact_form_url": "https://www.jeanbolen.com/message-jean"
+   }
+  },
+  {
+   "id": 421,
+   "slug": "jeff-warren",
+   "outcome": "form",
+   "before": {
+    "contact_form_url": null
+   },
+   "after": {
+    "contact_form_url": "https://jeffwarren.org/contact"
+   }
+  },
+  {
+   "id": 388,
+   "slug": "jeffrey-eisen",
+   "outcome": "form",
+   "before": {
+    "contact_form_url": null
+   },
+   "after": {
+    "contact_form_url": "https://jeffreyeisen.com/connect/"
+   }
+  },
+  {
+   "id": 841,
+   "slug": "jennifer-hadley",
+   "outcome": "form",
+   "before": {
+    "contact_form_url": null
+   },
+   "after": {
+    "contact_form_url": "https://powerofloveministry.net/contact/"
+   }
+  },
+  {
+   "id": 172,
+   "slug": "jia-apple",
+   "outcome": "form",
+   "before": {
+    "contact_form_url": null
+   },
+   "after": {
+    "contact_form_url": "https://jiaapple.weebly.com/contact.html"
+   }
+  },
+  {
+   "id": 584,
+   "slug": "jill-shepherd",
+   "outcome": "form",
+   "before": {
+    "contact_form_url": null
+   },
+   "after": {
+    "contact_form_url": "https://jill0shepherd-insightmeditation.com/contact/"
+   }
+  },
+  {
+   "id": 45,
+   "slug": "jillian-the-lune-innate",
+   "outcome": "form",
+   "before": {
+    "contact_form_url": null
+   },
+   "after": {
+    "contact_form_url": "https://www.luneinnate.com/support"
+   }
+  },
+  {
+   "id": 385,
+   "slug": "jim-rajan",
+   "outcome": "form",
+   "before": {
+    "contact_form_url": null
+   },
+   "after": {
+    "contact_form_url": "https://jimrajan.com/work-with-me/#contact"
+   }
+  },
+  {
+   "id": 190,
+   "slug": "joanne-faulkner",
+   "outcome": "email",
+   "before": {
+    "contact_email": null,
+    "contact_email_source": null,
+    "contact_form_url": null
+   },
+   "after": {
+    "contact_email": "joanne@joannefaulkner.ie",
+    "contact_email_source": "https://joannefaulkner.ie/contact/",
+    "contact_form_url": "https://joannefaulkner.ie/contact/"
+   }
+  },
+  {
+   "id": 63,
+   "slug": "joe-vitale",
+   "outcome": "email",
+   "before": {
+    "contact_email": null,
+    "contact_email_source": null,
+    "contact_form_url": null
+   },
+   "after": {
+    "contact_email": "support@ZeroLimitsEmail.com",
+    "contact_email_source": "https://joevitalesupport.com/",
+    "contact_form_url": "https://joevitale.com/booking"
+   }
+  },
+  {
+   "id": 370,
+   "slug": "joel-cross",
+   "outcome": "form",
+   "before": {
+    "contact_form_url": null
+   },
+   "after": {
+    "contact_form_url": "https://www.asoulcalledjoel.com/contact"
+   }
+  },
+  {
+   "id": 291,
+   "slug": "john-stuart-reid",
+   "outcome": "form",
+   "before": {
+    "contact_form_url": null
+   },
+   "after": {
+    "contact_form_url": "https://cymascope.com/contact/"
+   }
+  },
+  {
+   "id": 549,
+   "slug": "john-vosler",
+   "outcome": "form",
+   "before": {
+    "contact_form_url": null
+   },
+   "after": {
+    "contact_form_url": "https://www.johnvosler.com/contact"
+   }
+  },
+  {
+   "id": 113,
+   "slug": "jonathan-goldman",
+   "outcome": "email",
+   "before": {
+    "contact_email": null,
+    "contact_email_source": null,
+    "contact_form_url": null
+   },
+   "after": {
+    "contact_email": "info@SoundHealersAssociation.org",
+    "contact_email_source": "https://www.soundhealersassociation.org/resources/about-us.html",
+    "contact_form_url": "https://www.healingsounds.com/contact-us-2/"
+   }
+  },
+  {
+   "id": 854,
+   "slug": "judy-wilkins-smith",
+   "outcome": "form",
+   "before": {
+    "contact_form_url": null
+   },
+   "after": {
+    "contact_form_url": "https://judywilkins-smith.com/contact/"
+   }
+  },
+  {
+   "id": 680,
+   "slug": "juha-penttila",
+   "outcome": "form",
+   "before": {
+    "contact_form_url": null
+   },
+   "after": {
+    "contact_form_url": "https://www.juhapenttila.fi/individual-sessions"
+   }
+  },
+  {
+   "id": 639,
+   "slug": "julian-daizan-skinner",
+   "outcome": "form",
+   "before": {
+    "contact_form_url": null
+   },
+   "after": {
+    "contact_form_url": "https://zenways.org/contact/"
+   }
+  },
+  {
+   "id": 38,
+   "slug": "julie-schiffman",
+   "outcome": "form",
+   "before": {
+    "contact_form_url": null
+   },
+   "after": {
+    "contact_form_url": "https://www.julieschiffman.com/contact-1"
+   }
+  },
+  {
+   "id": 509,
+   "slug": "kaitlin-curtice",
+   "outcome": "form",
+   "before": {
+    "contact_form_url": null
+   },
+   "after": {
+    "contact_form_url": "https://www.kaitlincurtice.com/contact/"
+   }
+  },
+  {
+   "id": 866,
+   "slug": "ken-honda",
+   "outcome": "form",
+   "before": {
+    "contact_form_url": null
+   },
+   "after": {
+    "contact_form_url": "https://kenhonda.com/contact/"
+   }
+  },
+  {
+   "id": 530,
+   "slug": "ken-nelson",
+   "outcome": "form",
+   "before": {
+    "contact_form_url": null
+   },
+   "after": {
+    "contact_form_url": "https://kennelsonphd.com/contact-1"
+   }
+  },
+  {
+   "id": 77,
+   "slug": "kino-macgregor",
+   "outcome": "form",
+   "before": {
+    "contact_form_url": null
+   },
+   "after": {
+    "contact_form_url": "https://kinoyoga.com/contact/"
+   }
+  },
+  {
+   "id": 844,
+   "slug": "langston-kahn",
+   "outcome": "form",
+   "before": {
+    "contact_form_url": null
+   },
+   "after": {
+    "contact_form_url": "https://langstonkahn.com/contact/"
+   }
+  },
+  {
+   "id": 527,
+   "slug": "laura-berman-fortgang",
+   "outcome": "form",
+   "before": {
+    "contact_form_url": null
+   },
+   "after": {
+    "contact_form_url": "https://laurabermanfortgang.com/connect/"
+   }
+  },
+  {
+   "id": 220,
+   "slug": "laura-koniver",
+   "outcome": "form",
+   "before": {
+    "contact_form_url": null
+   },
+   "after": {
+    "contact_form_url": "https://intuition-physician.com/contact/"
+   }
+  },
+  {
+   "id": 265,
+   "slug": "lauren-rainbow",
+   "outcome": "form",
+   "before": {
+    "contact_form_url": null
+   },
+   "after": {
+    "contact_form_url": "https://laurenrainbow.com/contact/"
+   }
+  },
+  {
+   "id": 19,
+   "slug": "leeor-alexandra",
+   "outcome": "form",
+   "before": {
+    "contact_form_url": null
+   },
+   "after": {
+    "contact_form_url": "https://www.leeoralexandra.com/contact"
+   }
+  },
+  {
+   "id": 282,
+   "slug": "lindsey-wei",
+   "outcome": "form",
+   "before": {
+    "contact_form_url": null
+   },
+   "after": {
+    "contact_form_url": "https://www.wudangwhitehorse.com/contact"
+   }
+  },
+  {
+   "id": 178,
+   "slug": "lisa-powers",
+   "outcome": "email",
+   "before": {
+    "contact_email": null,
+    "contact_email_source": null
+   },
+   "after": {
+    "contact_email": "info@onlinereikicourse.com",
+    "contact_email_source": "https://lisapowers.co/support/"
+   }
+  },
+  {
+   "id": 351,
+   "slug": "liza-colpa",
+   "outcome": "form",
+   "before": {
+    "contact_form_url": null
+   },
+   "after": {
+    "contact_form_url": "https://www.lizacolpa.com/contact"
+   }
+  },
+  {
+   "id": 413,
+   "slug": "lynne-goldberg",
+   "outcome": "form",
+   "before": {
+    "contact_form_url": null
+   },
+   "after": {
+    "contact_form_url": "https://lynnegoldbergmeditation.com/work-with-me/"
+   }
+  },
+  {
+   "id": 64,
+   "slug": "lynne-mctaggart",
+   "outcome": "form",
+   "before": {
+    "contact_form_url": null
+   },
+   "after": {
+    "contact_form_url": "https://lynnemctaggart.com/contact/"
+   }
+  },
+  {
+   "id": 358,
+   "slug": "manoj-dias",
+   "outcome": "form",
+   "before": {
+    "contact_form_url": null
+   },
+   "after": {
+    "contact_form_url": "https://www.manojdias.com.au/contact"
+   }
+  },
+  {
+   "id": 822,
+   "slug": "marcela-lobos",
+   "outcome": "email",
+   "before": {
+    "contact_email": null,
+    "contact_email_source": null,
+    "contact_form_url": null
+   },
+   "after": {
+    "contact_email": "contact@marcelalobos.com",
+    "contact_email_source": "https://thefourwinds.com/contact-us/",
+    "contact_form_url": "https://marcelalobos.com/contact/"
+   }
+  },
+  {
+   "id": 266,
+   "slug": "maria-furlano",
+   "outcome": "form",
+   "before": {
+    "contact_form_url": null
+   },
+   "after": {
+    "contact_form_url": "https://www.theartoftuningin.com/site/contact"
+   }
+  },
+  {
+   "id": 819,
+   "slug": "marie-diamond",
+   "outcome": "form",
+   "before": {
+    "contact_form_url": null
+   },
+   "after": {
+    "contact_form_url": "https://www.mariediamond.com/contact"
+   }
+  },
+  {
+   "id": 206,
+   "slug": "marie-mbouni",
+   "outcome": "form",
+   "before": {
+    "contact_form_url": null
+   },
+   "after": {
+    "contact_form_url": "https://mariembouni.com/apply-now"
+   }
+  },
+  {
+   "id": 249,
+   "slug": "marion-gilbert",
+   "outcome": "form",
+   "before": {
+    "contact_form_url": null
+   },
+   "after": {
+    "contact_form_url": "https://www.somaticenneagram.com/contact"
+   }
+  },
+  {
+   "id": 649,
+   "slug": "mark-zelinsky",
+   "outcome": "form",
+   "before": {
+    "contact_form_url": null
+   },
+   "after": {
+    "contact_form_url": "https://markzelinsky.com/contact/"
+   }
+  },
+  {
+   "id": 679,
+   "slug": "martin-aylward",
+   "outcome": "email",
+   "before": {
+    "contact_email": null,
+    "contact_email_source": null,
+    "contact_form_url": null
+   },
+   "after": {
+    "contact_email": "moulindechaves@gmail.com",
+    "contact_email_source": "https://www.moulindechaves.org/contact/",
+    "contact_form_url": "https://martinaylward.com/#contact"
+   }
+  },
+  {
+   "id": 677,
+   "slug": "martine-batchelor",
+   "outcome": "form",
+   "before": {
+    "contact_form_url": null
+   },
+   "after": {
+    "contact_form_url": "https://martinebatchelor.org/#subscription-and-contact"
+   }
+  },
+  {
+   "id": 581,
+   "slug": "matthew-brensilver",
+   "outcome": "form",
+   "before": {
+    "contact_form_url": null
+   },
+   "after": {
+    "contact_form_url": "https://www.matthewbrensilver.org/inquiries"
+   }
+  },
+  {
+   "id": 367,
+   "slug": "matthew-duplessie",
+   "outcome": "form",
+   "before": {
+    "contact_form_url": null
+   },
+   "after": {
+    "contact_form_url": "https://audiosoulhealing.com/bookasession/"
+   }
+  },
+  {
+   "id": 183,
+   "slug": "melissa-crowhurst",
+   "outcome": "form",
+   "before": {
+    "contact_form_url": null
+   },
+   "after": {
+    "contact_form_url": "https://naturalhealer.com.au/contact-us/"
+   }
+  },
+  {
+   "id": 57,
+   "slug": "michael-a-singer",
+   "outcome": "email",
+   "before": {
+    "contact_email": null,
+    "contact_email_source": null
+   },
+   "after": {
+    "contact_email": "contact@shantipub.com",
+    "contact_email_source": "https://untetheredsoul.com/contact"
+   }
+  },
+  {
+   "id": 386,
+   "slug": "michael-lobsang-tenpa",
+   "outcome": "form",
+   "before": {
+    "contact_form_url": null
+   },
+   "after": {
+    "contact_form_url": "https://lobsangtenpa.com/contact"
+   }
+  },
+  {
+   "id": 173,
+   "slug": "michael-mcginnis",
+   "outcome": "form",
+   "before": {
+    "contact_form_url": null
+   },
+   "after": {
+    "contact_form_url": "https://www.michaelmcginnis.com/contact"
+   }
+  },
+  {
+   "id": 376,
+   "slug": "michelle-robertson",
+   "outcome": "form",
+   "before": {
+    "contact_form_url": null
+   },
+   "after": {
+    "contact_form_url": "https://www.theyinside.com.au/contact-4"
+   }
+  },
+  {
+   "id": 555,
+   "slug": "mirabai-starr",
+   "outcome": "form",
+   "before": {
+    "contact_form_url": null
+   },
+   "after": {
+    "contact_form_url": "https://mirabaistarr.com/contact/"
+   }
+  },
+  {
+   "id": 24,
+   "slug": "mooji",
+   "outcome": "form",
+   "before": {
+    "contact_form_url": null
+   },
+   "after": {
+    "contact_form_url": "https://mooji.org/contact-us"
+   }
+  },
+  {
+   "id": 838,
+   "slug": "natalie-southgate",
+   "outcome": "form",
+   "before": {
+    "contact_form_url": null
+   },
+   "after": {
+    "contact_form_url": "https://www.chakradance.com/contact/"
+   }
+  },
+  {
+   "id": 517,
+   "slug": "natasha-rizopoulos",
+   "outcome": "form",
+   "before": {
+    "contact_form_url": null
+   },
+   "after": {
+    "contact_form_url": "https://www.natasharizopoulos.com/consultation"
+   }
+  },
+  {
+   "id": 134,
+   "slug": "neale-donald-walsch",
+   "outcome": "email",
+   "before": {
+    "contact_email": null,
+    "contact_email_source": null,
+    "contact_form_url": null
+   },
+   "after": {
+    "contact_email": "neale@nealedonaldwalsch.com",
+    "contact_email_source": "https://www.nealedonaldwalsch.com/",
+    "contact_form_url": "https://www.nealedonaldwalsch.com/About/Contact"
+   }
+  },
+  {
+   "id": 232,
+   "slug": "neil-douglas-klotz",
+   "outcome": "form",
+   "before": {
+    "contact_form_url": null
+   },
+   "after": {
+    "contact_form_url": "https://abwoon.org/abwoon-community/contact-us/"
+   }
+  },
+  {
+   "id": 115,
+   "slug": "nick-ortner",
+   "outcome": "email",
+   "before": {
+    "contact_email": null,
+    "contact_email_source": null
+   },
+   "after": {
+    "contact_email": "contact@thetappingsolution.com",
+    "contact_email_source": "https://www.thetappingsolution.com/"
+   }
+  },
+  {
+   "id": 380,
+   "slug": "nicky-sutton",
+   "outcome": "form",
+   "before": {
+    "contact_form_url": null
+   },
+   "after": {
+    "contact_form_url": "https://www.nickysutton.com/contact"
+   }
+  },
+  {
+   "id": 366,
+   "slug": "nicole-bayliss",
+   "outcome": "form",
+   "before": {
+    "contact_form_url": null
+   },
+   "after": {
+    "contact_form_url": "https://nicolebayliss.com.au/contact-nicole-bayliss-sydney/"
+   }
+  },
+  {
+   "id": 602,
+   "slug": "nid-ra",
+   "outcome": "form",
+   "before": {
+    "contact_form_url": null
+   },
+   "after": {
+    "contact_form_url": "https://awakeningspiral.com/contact"
+   }
+  },
+  {
+   "id": 556,
+   "slug": "nikki-mirghafori",
+   "outcome": "form",
+   "before": {
+    "contact_form_url": null
+   },
+   "after": {
+    "contact_form_url": "https://www.nikkimirghafori.com/contact"
+   }
+  },
+  {
+   "id": 640,
+   "slug": "nina-rao",
+   "outcome": "form",
+   "before": {
+    "contact_form_url": null
+   },
+   "after": {
+    "contact_form_url": "https://www.ninaraochant.com/contact"
+   }
+  },
+  {
+   "id": 652,
+   "slug": "nola-bloom",
+   "outcome": "form",
+   "before": {
+    "contact_form_url": null
+   },
+   "after": {
+    "contact_form_url": "https://www.bloomingspiritjourneys.com/contact"
+   }
+  },
+  {
+   "id": 179,
+   "slug": "pamela-miles",
+   "outcome": "form",
+   "before": {
+    "contact_form_url": null
+   },
+   "after": {
+    "contact_form_url": "https://reikiinmedicine.org/contact/"
+   }
+  },
+  {
+   "id": 731,
+   "slug": "pascal-auclair",
+   "outcome": "email",
+   "before": {
+    "contact_email": null,
+    "contact_email_source": null,
+    "contact_form_url": null
+   },
+   "after": {
+    "contact_email": "info@truenorthinsight.org",
+    "contact_email_source": "https://www.daryllynnross.org/event/abiding-mindfully-in-the-body-meditation-and-yoga-retreat-2027/",
+    "contact_form_url": "https://www.pascalauclair.org/contact-5/?lang=en"
+   }
+  },
+  {
+   "id": 766,
+   "slug": "paul-levy",
+   "outcome": "form",
+   "before": {
+    "contact_form_url": null
+   },
+   "after": {
+    "contact_form_url": "https://www.awakeninthedream.com/contact"
+   }
+  },
+  {
+   "id": 87,
+   "slug": "paul-stamets",
+   "outcome": "email",
+   "before": {
+    "contact_email": null,
+    "contact_email_source": null,
+    "contact_form_url": null
+   },
+   "after": {
+    "contact_email": "info@fungi.com",
+    "contact_email_source": "https://fungi.com/pages/contact-us",
+    "contact_form_url": "https://fungi.com/pages/contact-us"
+   }
+  },
+  {
+   "id": 804,
+   "slug": "pea-horsley",
+   "outcome": "email",
+   "before": {
+    "contact_email": null,
+    "contact_email_source": null,
+    "contact_form_url": null
+   },
+   "after": {
+    "contact_email": "pea@animalthoughts.com",
+    "contact_email_source": "https://animalthoughts.com/contact/media-kit/",
+    "contact_form_url": "https://animalthoughts.com/contact/"
+   }
+  },
+  {
+   "id": 235,
+   "slug": "perdita-finn",
+   "outcome": "form",
+   "before": {
+    "contact_form_url": null
+   },
+   "after": {
+    "contact_form_url": "https://takebackthemagic.com/contact-me/"
+   }
+  },
+  {
+   "id": 170,
+   "slug": "phil-williams",
+   "outcome": "form",
+   "before": {
+    "contact_form_url": null
+   },
+   "after": {
+    "contact_form_url": "https://www.philwilliamswrites.com/contact-me"
+   }
+  },
+  {
+   "id": 856,
+   "slug": "philip-shepherd",
+   "outcome": "form",
+   "before": {
+    "contact_form_url": null
+   },
+   "after": {
+    "contact_form_url": "https://embodiedpresent.com/pages/contact"
+   }
+  },
+  {
+   "id": 557,
+   "slug": "raj-balkaran",
+   "outcome": "email",
+   "before": {
+    "contact_email": null,
+    "contact_email_source": null,
+    "contact_form_url": null
+   },
+   "after": {
+    "contact_email": "raj@rajbalkaran.com",
+    "contact_email_source": "https://www.indianwisdomschool.com/site/contact",
+    "contact_form_url": "https://rajbalkaran.com/contact"
+   }
+  },
+  {
+   "id": 161,
+   "slug": "rajan-sankaran",
+   "outcome": "email",
+   "before": {
+    "contact_email": null,
+    "contact_email_source": null
+   },
+   "after": {
+    "contact_email": "hello@rajansankaran.com",
+    "contact_email_source": "https://rajansankaran.com/contact/"
+   }
+  },
+  {
+   "id": 813,
+   "slug": "richard-miller",
+   "outcome": "form",
+   "before": {
+    "contact_form_url": null
+   },
+   "after": {
+    "contact_form_url": "https://www.explorationsinstillness.com/contact"
+   }
+  },
+  {
+   "id": 408,
+   "slug": "richard-rudd",
+   "outcome": "form",
+   "before": {
+    "contact_form_url": null
+   },
+   "after": {
+    "contact_form_url": "https://genekeys.com/contact/"
+   }
+  },
+  {
+   "id": 381,
+   "slug": "robert-aceves",
+   "outcome": "form",
+   "before": {
+    "contact_form_url": null
+   },
+   "after": {
+    "contact_form_url": "https://mividazen.com/contact"
+   }
+  },
+  {
+   "id": 518,
+   "slug": "rudy-peirce",
+   "outcome": "form",
+   "before": {
+    "contact_form_url": null
+   },
+   "after": {
+    "contact_form_url": "https://www.gentle-yogis.com/contact/"
+   }
+  },
+  {
+   "id": 66,
+   "slug": "rupert-sheldrake",
+   "outcome": "email",
+   "before": {
+    "contact_email": null,
+    "contact_email_source": null
+   },
+   "after": {
+    "contact_email": "sheldrake@sheldrake.org",
+    "contact_email_source": "https://www.sheldrake.org/about-rupert-sheldrake/contact"
+   }
+  },
+  {
+   "id": 558,
+   "slug": "russ-hudson",
+   "outcome": "email",
+   "before": {
+    "contact_email": null,
+    "contact_email_source": null,
+    "contact_form_url": null
+   },
+   "after": {
+    "contact_email": "support@enneagraminstitute.com",
+    "contact_email_source": "https://www.enneagraminstitute.com/contact/",
+    "contact_form_url": "https://russhudson.com/contact-us/"
+   }
+  },
+  {
+   "id": 654,
+   "slug": "ryan-t-schmidt",
+   "outcome": "form",
+   "before": {
+    "contact_form_url": null
+   },
+   "after": {
+    "contact_form_url": "https://www.ryantschmidt.com/contact-%26-booking"
+   }
+  },
+  {
+   "id": 55,
+   "slug": "sadhguru",
+   "outcome": "form",
+   "before": {
+    "contact_form_url": null
+   },
+   "after": {
+    "contact_form_url": "https://support.ishafoundation.org"
+   }
+  },
+  {
+   "id": 511,
+   "slug": "sadhvi-bhagawati-saraswati",
+   "outcome": "form",
+   "before": {
+    "contact_form_url": null
+   },
+   "after": {
+    "contact_form_url": "https://sadhviji.org/press-and-media/"
+   }
+  },
+  {
+   "id": 26,
+   "slug": "sandra-ingerman",
+   "outcome": "email",
+   "before": {
+    "contact_email": null,
+    "contact_email_source": null,
+    "contact_form_url": null
+   },
+   "after": {
+    "contact_email": "info@shamanicteachers.com",
+    "contact_email_source": "https://www.shamanicteachers.com/links-contact-us/",
+    "contact_form_url": "https://www.sandraingerman.com/links-contact-sandra/"
+   }
+  },
+  {
+   "id": 513,
+   "slug": "sasha-graham",
+   "outcome": "form",
+   "before": {
+    "contact_form_url": null
+   },
+   "after": {
+    "contact_form_url": "https://www.sashagraham.com"
+   }
+  },
+  {
+   "id": 754,
+   "slug": "scott-m-taylor",
+   "outcome": "form",
+   "before": {
+    "contact_form_url": null
+   },
+   "after": {
+    "contact_form_url": "https://neardeathmeditations.com/contact"
+   }
+  },
+  {
+   "id": 78,
+   "slug": "seane-corn",
+   "outcome": "form",
+   "before": {
+    "contact_form_url": null
+   },
+   "after": {
+    "contact_form_url": "https://seanecorn.com/contact/"
+   }
+  },
+  {
+   "id": 361,
+   "slug": "selena-lael",
+   "outcome": "form",
+   "before": {
+    "contact_form_url": null
+   },
+   "after": {
+    "contact_form_url": "https://www.selenalael.com/contact"
+   }
+  },
+  {
+   "id": 247,
+   "slug": "shamini-jain",
+   "outcome": "email",
+   "before": {
+    "contact_email": null,
+    "contact_email_source": null,
+    "contact_form_url": null
+   },
+   "after": {
+    "contact_email": "chloe@chi.is",
+    "contact_email_source": "https://www.shaminijain.com/media/press",
+    "contact_form_url": "https://www.shaminijain.com/connect#contact-form"
+   }
+  },
+  {
+   "id": 72,
+   "slug": "sharon-salzberg",
+   "outcome": "email",
+   "before": {
+    "contact_email": null,
+    "contact_email_source": null
+   },
+   "after": {
+    "contact_email": "rc@dharma.org",
+    "contact_email_source": "https://www.dharma.org/contact-us/"
+   }
+  },
+  {
+   "id": 514,
+   "slug": "sherianna-boyle",
+   "outcome": "form",
+   "before": {
+    "contact_form_url": null
+   },
+   "after": {
+    "contact_form_url": "https://www.sheriannaboyle.com/contact"
+   }
+  },
+  {
+   "id": 850,
+   "slug": "shiva-rea",
+   "outcome": "form",
+   "before": {
+    "contact_form_url": null
+   },
+   "after": {
+    "contact_form_url": "https://shivarea.com/contact-us"
+   }
+  },
+  {
+   "id": 860,
+   "slug": "sonia-choquette",
+   "outcome": "email",
+   "before": {
+    "contact_email": null,
+    "contact_email_source": null,
+    "contact_form_url": null
+   },
+   "after": {
+    "contact_email": "assistant@soniachoquette.com",
+    "contact_email_source": "https://www.soniachoquette.net/privacy",
+    "contact_form_url": "https://www.soniachoquette.net/speaking"
+   }
+  },
+  {
+   "id": 330,
+   "slug": "sonic-yogi",
+   "outcome": "form",
+   "before": {
+    "contact_form_url": null
+   },
+   "after": {
+    "contact_form_url": "https://sonicyogi.com/contact"
+   }
+  },
+  {
+   "id": 678,
+   "slug": "stephen-batchelor",
+   "outcome": "form",
+   "before": {
+    "contact_form_url": null
+   },
+   "after": {
+    "contact_form_url": "https://stephenbatchelor.org/contact/"
+   }
+  },
+  {
+   "id": 798,
+   "slug": "stephen-procter",
+   "outcome": "form",
+   "before": {
+    "contact_form_url": null
+   },
+   "after": {
+    "contact_form_url": "https://midlmeditation.com/contact-us"
+   }
+  },
+  {
+   "id": 692,
+   "slug": "steve-taylor",
+   "outcome": "form",
+   "before": {
+    "contact_form_url": null
+   },
+   "after": {
+    "contact_form_url": "https://www.stevenmtaylor.com/contact/"
+   }
+  },
+  {
+   "id": 824,
+   "slug": "sue-morter",
+   "outcome": "form",
+   "before": {
+    "contact_form_url": null
+   },
+   "after": {
+    "contact_form_url": "https://drsuemorter.com/contact-us/"
+   }
+  },
+  {
+   "id": 371,
+   "slug": "sura-kim",
+   "outcome": "form",
+   "before": {
+    "contact_form_url": null
+   },
+   "after": {
+    "contact_form_url": "https://suraflow.org/contact/"
+   }
+  },
+  {
+   "id": 103,
+   "slug": "susan-miller",
+   "outcome": "email",
+   "before": {
+    "contact_email": null,
+    "contact_email_source": null,
+    "contact_form_url": null
+   },
+   "after": {
+    "contact_email": "susanmiller@astrologyzone.com",
+    "contact_email_source": "https://www.astrologyzone.com/contact/",
+    "contact_form_url": "https://www.astrologyzone.com/contact/"
+   }
+  },
+  {
+   "id": 793,
+   "slug": "tanya-murphy",
+   "outcome": "form",
+   "before": {
+    "contact_form_url": null
+   },
+   "after": {
+    "contact_form_url": "https://www.restinhispresence.com/contact"
+   }
+  },
+  {
+   "id": 70,
+   "slug": "tara-brach",
+   "outcome": "email",
+   "before": {
+    "contact_email": null,
+    "contact_email_source": null
+   },
+   "after": {
+    "contact_email": "contact@tarabrach.com",
+    "contact_email_source": "https://www.tarabrach.com/contact/"
+   }
+  },
+  {
+   "id": 583,
+   "slug": "tara-mulay",
+   "outcome": "form",
+   "before": {
+    "contact_form_url": null
+   },
+   "after": {
+    "contact_form_url": "https://www.taramulay.com/contact"
+   }
+  },
+  {
+   "id": 373,
+   "slug": "tess-howell",
+   "outcome": "form",
+   "before": {
+    "contact_form_url": null
+   },
+   "after": {
+    "contact_form_url": "https://beingmoved.org/"
+   }
+  },
+  {
+   "id": 187,
+   "slug": "tevia-feng",
+   "outcome": "email",
+   "before": {
+    "contact_email": null,
+    "contact_email_source": null,
+    "contact_form_url": null
+   },
+   "after": {
+    "contact_email": "info@whitetigerqigong.com",
+    "contact_email_source": "https://www.whitetigerqigong.com/pages/contact",
+    "contact_form_url": "https://forms.clickup.com/3713465/f/3hadt-2511/Q65FDKYZJ73SL2JIAD"
+   }
+  },
+  {
+   "id": 105,
+   "slug": "the-astrotwins",
+   "outcome": "email",
+   "before": {
+    "contact_email": null,
+    "contact_email_source": null
+   },
+   "after": {
+    "contact_email": "astrotwins@astrostyle.com",
+    "contact_email_source": "https://astrostyle.com/contact/"
+   }
+  },
+  {
+   "id": 384,
+   "slug": "tiger-singleton",
+   "outcome": "form",
+   "before": {
+    "contact_form_url": null
+   },
+   "after": {
+    "contact_form_url": "https://www.tigmonk.com/contact-tiger"
+   }
+  },
+  {
+   "id": 378,
+   "slug": "tomek-wyczesany",
+   "outcome": "form",
+   "before": {
+    "contact_form_url": null
+   },
+   "after": {
+    "contact_form_url": "https://tomekwyczesany.com/"
+   }
+  },
+  {
+   "id": 54,
+   "slug": "tony-robbins",
+   "outcome": "form",
+   "before": {
+    "contact_form_url": null
+   },
+   "after": {
+    "contact_form_url": "https://tonyrobbins.typeform.com/to/wQXsAslo"
+   }
+  },
+  {
+   "id": 182,
+   "slug": "torsten-lange",
+   "outcome": "form",
+   "before": {
+    "contact_form_url": null
+   },
+   "after": {
+    "contact_form_url": "https://www.thereikiacademy.com/contactus"
+   }
+  },
+  {
+   "id": 593,
+   "slug": "tuere-sala",
+   "outcome": "form",
+   "before": {
+    "contact_form_url": null
+   },
+   "after": {
+    "contact_form_url": "https://www.dharmaground.org/contact"
+   }
+  },
+  {
+   "id": 97,
+   "slug": "tyler-henry",
+   "outcome": "email",
+   "before": {
+    "contact_email": null,
+    "contact_email_source": null,
+    "contact_form_url": null
+   },
+   "after": {
+    "contact_email": "info@TylerHenryHollywoodMedium.com",
+    "contact_email_source": "https://www.thetylerhenrymedium.com/",
+    "contact_form_url": "https://www.thetylerhenrymedium.com/appearances-event-inquiries/"
+   }
+  },
+  {
+   "id": 760,
+   "slug": "valerie-brown",
+   "outcome": "form",
+   "before": {
+    "contact_form_url": null
+   },
+   "after": {
+    "contact_form_url": "https://valeriebrown.us/contact/"
+   }
+  },
+  {
+   "id": 191,
+   "slug": "vince-sauter",
+   "outcome": "email",
+   "before": {
+    "contact_email": null,
+    "contact_email_source": null,
+    "contact_form_url": null
+   },
+   "after": {
+    "contact_email": "vincesauter@gmail.com",
+    "contact_email_source": "https://clearstreamtaichi.com/contact-us",
+    "contact_form_url": "https://clearstreamtaichi.com/contact-us"
+   }
+  },
+  {
+   "id": 587,
+   "slug": "walt-opie",
+   "outcome": "form",
+   "before": {
+    "contact_form_url": null
+   },
+   "after": {
+    "contact_form_url": "https://www.waltopie.com/contact"
+   }
+  },
+  {
+   "id": 810,
+   "slug": "will-caminada",
+   "outcome": "email",
+   "before": {
+    "contact_email": null,
+    "contact_email_source": null,
+    "contact_form_url": null
+   },
+   "after": {
+    "contact_email": "guiwilluk@gmail.com",
+    "contact_email_source": "https://liinks.co/willcaminada",
+    "contact_form_url": "https://www.willcaminada.com/contact"
+   }
+  },
+  {
+   "id": 565,
+   "slug": "william-donius",
+   "outcome": "form",
+   "before": {
+    "contact_form_url": null
+   },
+   "after": {
+    "contact_form_url": "https://williamdonius.com/collaborate/"
+   }
+  },
+  {
+   "id": 12,
+   "slug": "wim-hof",
+   "outcome": "email",
+   "before": {
+    "contact_email": null,
+    "contact_email_source": null
+   },
+   "after": {
+    "contact_email": "support@wimhofmethod.com",
+    "contact_email_source": "https://www.wimhofmethod.com/media"
+   }
+  },
+  {
+   "id": 521,
+   "slug": "yura-sapi",
+   "outcome": "form",
+   "before": {
+    "contact_form_url": null
+   },
+   "after": {
+    "contact_form_url": "https://yurasapi.com/contact"
+   }
+  }
+ ]
+}

@@ -2,17 +2,17 @@
   "n": 111,
   "slug": "giovanni-dienstmann",
   "name": "Giovanni Dienstmann",
-  "outcome": "form",
+  "outcome": "none",
   "email": null,
   "email_source": null,
   "email_kind": null,
   "saved_source": null,
-  "contact_form_url": "https://www.highermind.com/contact-us/",
+  "contact_form_url": null,
   "checked": [
     "https://www.highermind.com/robots.txt (allowed for *; AI crawlers disallowed, we are curl)",
     "https://www.highermind.com/ (200)",
     "https://www.highermind.com/contact-us/ (200)"
   ],
-  "notes": "No email shown. Contact form for coaching, retreats, speaking, partnerships and interviews with Giovanni.",
-  "doubtful": null
+  "notes": "No email shown. Contact form for coaching, retreats, speaking, partnerships and interviews with Giovanni. Owner, 5 Nov 2026: highermind.com's robots.txt blocks Claude's agents by name (ClaudeBot, anthropic-ai), so the site counts as blocked (README §18.4) and its form is not used.",
+  "doubtful": "highermind.com blocks Claude's agents by name; the owner may check a route in a browser"
 }

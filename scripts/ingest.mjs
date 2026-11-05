@@ -539,6 +539,11 @@ if (create) {
     availability_type: AVAILABILITY[availability],
     city: isAscended ? null : create.city || null, country: isAscended ? null : create.country || null,
     contact_email: create.contact_email || null, booking_url: create.booking_url || null,
+    // Where the email is published, and the contact form when there is none
+    // (owner, 5 Nov 2026; migration 0039). Only URLs: some older plans
+    // describe the source in words.
+    contact_email_source: create.contact_email && /^https?:\/\//.test(plan.sprint?.email_source || '') ? plan.sprint.email_source : null,
+    contact_form_url: /^https?:\/\//.test(plan.sprint?.contact_form_url || '') ? plan.sprint.contact_form_url : null,
     website_url: create.website_url || null, youtube_url: create.youtube_url || null,
     instagram_url: create.instagram_url || null, facebook_url: create.facebook_url || null,
     twitter_url: create.twitter_url || null, tiktok_url: create.tiktok_url || null,

@@ -367,6 +367,13 @@ what's public and flag the rest.
 **Insight Timer profiles are not opened in this sprint** (owner, 4 Nov
 2026): use the queue entry's details and the teacher's own site.
 
+**A robots.txt that names Claude's agents blocks us** (owner, 5 Nov 2026):
+if a group naming ClaudeBot, Claude-User, Claude-Web or anthropic-ai says
+`Disallow: /`, the whole site is off limits, even though our fetches identify
+as curl. Treat it like Spirit Rock: fetch nothing more and take nothing from
+it. Known: bashar.org, thesecret.tv, cirak.com, highermind.com,
+bewholebehappy.com, nassimharamein.com, ymaa.com.
+
 **No fake user agents anywhere**, for any site. Use one honest fetch (curl's
 default user agent, or WebFetch). Never search YouTube (`/results` is
 blocked by its robots.txt); open a channel or video page you found elsewhere.

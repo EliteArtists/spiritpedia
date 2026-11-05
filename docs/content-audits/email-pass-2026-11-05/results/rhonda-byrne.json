@@ -2,12 +2,12 @@
   "n": 26,
   "slug": "rhonda-byrne",
   "name": "Rhonda Byrne",
-  "outcome": "form",
+  "outcome": "none",
   "email": null,
   "email_source": null,
   "email_kind": null,
   "saved_source": "/private/tmp/claude-501/-Users-SundaySouLounge-Sites-spiritpedia/1c8d8473-2fb4-4889-ac09-5e475bd51fa9/scratchpad/ep-work-1/pages/rhonda-byrne/thesecret-contact.html",
-  "contact_form_url": "https://www.thesecret.tv/contact-us/",
+  "contact_form_url": null,
   "checked": [
     "https://www.rhondabyrne.com/robots.txt (Squarespace; * blocks only /config etc.)",
     "https://www.rhondabyrne.com/",
@@ -17,6 +17,6 @@
     "https://www.thesecret.tv/contact-us/",
     "https://www.thesecret.tv/media/"
   ],
-  "notes": "rhondabyrne.com has no contact details. Her company's site The Secret (thesecret.tv, which she created) has a 'Send us your message' form with topics 'Media and Press Inquiries' and 'Business Inquiries'. Media page has no email.",
-  "doubtful": null
+  "notes": "rhondabyrne.com has no contact details. Her company's site The Secret (thesecret.tv, which she created) has a 'Send us your message' form with topics 'Media and Press Inquiries' and 'Business Inquiries'. Media page has no email. Owner, 5 Nov 2026: thesecret.tv's robots.txt blocks Claude's agents by name (ClaudeBot, anthropic-ai), so the site counts as blocked (README §18.4) and its form is not used.",
+  "doubtful": "thesecret.tv blocks Claude's agents by name; the owner may check a route in a browser"
 }

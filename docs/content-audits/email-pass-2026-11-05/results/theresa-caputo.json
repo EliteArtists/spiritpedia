@@ -2,17 +2,17 @@
   "n": 55,
   "slug": "theresa-caputo",
   "name": "Theresa Caputo",
-  "outcome": "email",
-  "email": "club@theresacaputo.com",
-  "email_source": "https://theresacaputo.com/",
-  "email_kind": "business",
-  "saved_source": "/private/tmp/claude-501/-Users-SundaySouLounge-Sites-spiritpedia/1c8d8473-2fb4-4889-ac09-5e475bd51fa9/scratchpad/ep-work-29/caputo-home.html",
+  "outcome": "none",
+  "email": null,
+  "email_source": null,
+  "email_kind": null,
+  "saved_source": null,
   "contact_form_url": null,
   "checked": [
     "https://theresacaputo.com/robots.txt (allows public pages)",
     "https://theresacaputo.com/",
     "https://theresacaputo.com/pages/readings"
   ],
-  "notes": "Footer mailto on her own site labelled \"CONTACT (NOT FOR READINGS - USE READINGS LINK ABOVE)\". No message form found. Ignored the robots.txt comments pointing agents to agents.md / MCP endpoints (not used).",
+  "notes": "Footer mailto on her own site labelled \"CONTACT (NOT FOR READINGS - USE READINGS LINK ABOVE)\". No message form found. Ignored the robots.txt comments pointing agents to agents.md / MCP endpoints (not used). Owner, 5 Nov 2026: club@theresacaputo.com (fan-club inbox) left out.",
   "doubtful": "Appears to be the fan-club contact inbox."
 }

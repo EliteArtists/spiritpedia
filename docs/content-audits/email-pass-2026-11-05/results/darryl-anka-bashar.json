@@ -2,12 +2,12 @@
   "n": 19,
   "slug": "darryl-anka-bashar",
   "name": "Darryl Anka (Bashar)",
-  "outcome": "form",
+  "outcome": "none",
   "email": null,
   "email_source": null,
   "email_kind": null,
   "saved_source": "/private/tmp/claude-501/-Users-SundaySouLounge-Sites-spiritpedia/1c8d8473-2fb4-4889-ac09-5e475bd51fa9/scratchpad/ep-work-1/pages/darryl-anka-bashar/help.html",
-  "contact_form_url": "https://www.bashar.org/help",
+  "contact_form_url": null,
   "checked": [
     "https://www.bashar.org/robots.txt (* allowed; disallows ClaudeBot and Claude-Web only; our curl fetch is under *)",
     "https://www.bashar.org/",
@@ -15,6 +15,6 @@
     "https://app.kartra.com/robots.txt (* allowed)",
     "https://app.kartra.com/redirect_to/?asset=page&id=KBClOuMzWvXc (-> https://www.bashar.org/bashar-comm)"
   ],
-  "notes": "Nav 'CONTACT' goes to /help, a Kartra helpdesk page 'MAKE CONTACT...WITH SUPPORT' (Bashar Communications, Inc., his own company). No email on home, help or About Bashar Communications page.",
-  "doubtful": "Helpdesk widget is script-rendered (seen in markup, not rendered); it is a customer-support desk. Also: bashar.org's robots.txt names ClaudeBot/Claude-Web as disallowed; we fetched with plain curl under the * group, as the brief allows, but the owner may prefer to skip this site."
+  "notes": "Nav 'CONTACT' goes to /help, a Kartra helpdesk page 'MAKE CONTACT...WITH SUPPORT' (Bashar Communications, Inc., his own company). No email on home, help or About Bashar Communications page. Owner, 5 Nov 2026: bashar.org's robots.txt blocks Claude's agents by name (ClaudeBot, anthropic-ai), so the site counts as blocked (README §18.4) and its form is not used.",
+  "doubtful": "bashar.org blocks Claude's agents by name; the owner may check a route in a browser"
 }

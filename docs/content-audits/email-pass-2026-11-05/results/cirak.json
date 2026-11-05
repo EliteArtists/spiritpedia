@@ -2,16 +2,16 @@
   "n": 136,
   "slug": "cirak",
   "name": "Cirak",
-  "outcome": "form",
+  "outcome": "none",
   "email": null,
   "email_source": null,
   "email_kind": null,
   "saved_source": "/private/tmp/claude-501/-Users-SundaySouLounge-Sites-spiritpedia/1c8d8473-2fb4-4889-ac09-5e475bd51fa9/scratchpad/ep-work-113/pages/cirak/cirak.com_contact.html",
-  "contact_form_url": "https://cirak.com/contact/",
+  "contact_form_url": null,
   "checked": [
     "https://cirak.com/robots.txt (robots.txt allows)",
     "https://cirak.com/contact/"
   ],
-  "notes": "No email; contact form and WhatsApp link only.",
-  "doubtful": null
+  "notes": "No email; contact form and WhatsApp link only. Owner, 5 Nov 2026: cirak.com's robots.txt blocks Claude's agents by name (ClaudeBot, anthropic-ai), so the site counts as blocked (README §18.4) and its form is not used.",
+  "doubtful": "cirak.com blocks Claude's agents by name; the owner may check a route in a browser"
 }

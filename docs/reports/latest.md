@@ -151,3 +151,40 @@ Each was checked on their own site, any hub we may read, and up to 2 web searche
 - **Migration `0039_contact_sources.sql`.**
 - **Admin:** `web/app/admin/content/page.js` has the "No email" filter; the edit page has the two new fields.
 - **Ingestion:** it doesn't write the two new columns yet, so a live insert can't fail before 0039 is on live. Once 0039 is on both, I'll have it save each plan's email source and form URL.
+
+## Update, 5 Nov 2026: applied on dev and live
+
+**0039** was run by the owner on dev (2, 220) and live (2, 220).
+
+**Owner decisions, applied:**
+1. **Adam Dacey:** mindspace.org.uk is treated as hacked, and its form is not used.
+2. **The inboxes listed above are accepted** (company support, centre offices, press, assistants). The exception is **Theresa Caputo's** fan-club inbox (club@), which is left out.
+3. **Clickable mailto buttons count** (Emma Estrela, Will Caminada, Rupert Sheldrake).
+4. **Hidden or unpublished addresses** stay unused.
+5. **Organisation forms:** fine.
+6. **Websites fixed on dev and live** (`fix-websites.mjs`, logged):
+   - Nassim Haramein: nassimharamein.com;
+   - Jake Mace: emptied (parked domain).
+7. **New rule (README §18.4, every brief and helper prompt):** a robots.txt that names Claude's agents (ClaudeBot, Claude-User, Claude-Web, anthropic-ai) with `Disallow: /` blocks the whole site, as with Spirit Rock.
+   - A scan of every robots.txt saved in this pass found 7 such sites:
+     - bashar.org, thesecret.tv, cirak.com, highermind.com;
+     - bewholebehappy.com, nassimharamein.com, ymaa.com.
+   - Their forms are no longer used. So **Darryl Anka (Bashar), Rhonda Byrne, Cirak, Giovanni Dienstmann, Grace Bryant and Nassim Haramein** move to "nothing at all". Daisy Lee was already there.
+
+**Written on dev and live** (same 195 rows; logs `apply.dev.*.log.json` and `apply.live.*.log.json`; `--rollback` restores them):
+- **52 emails**, each with its source page;
+- **143 contact forms** (plus the form URL kept beside 34 of the emails).
+
+**168 living listings are now without an email; 25 of them have no route at all:**
+- the 17 above;
+- the 6 sites that block Claude's agents;
+- Theresa Caputo;
+- Adam Dacey.
+
+**Also done:**
+- **Ingestion:** it now saves each plan's `sprint.email_source` (when it is a URL) and `sprint.contact_form_url` into the two new columns.
+- **Admin:** the "No email" filter and the two edit fields are pushed (`web/` deploys).
+
+**For a later look (not changed):**
+- Cirak, Giovanni Dienstmann and Grace Bryant were researched from their own sites in earlier sprints. Those sites block Claude's agents by name, so under the new rule their bios, photos and items came from blocked sites.
+- Say if you'd like them reviewed or redone from other sources.
