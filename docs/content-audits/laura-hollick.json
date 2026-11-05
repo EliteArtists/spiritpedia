@@ -1,0 +1,129 @@
+{
+  "healer": {
+    "healer_slug": "laura-hollick",
+    "location_source": null,
+    "no_public_base": "Her own site (laurahollick.com) and her company's site (soulartstudio.com) publish no city or country; a third-party podcast page calls her Canada-based, which is not her own source, so no base is recorded.",
+    "create": {
+      "name": "Laura Hollick",
+      "bio": "Laura Hollick is an artist and creative guide who weaves painting, collage, ritual and guided visualisation into a spiritual practice she calls Soul Art. Her training began at Dundas Valley's art school, followed by a fine arts degree at McMaster University, and she credits a vision quest made on foot, some ten thousand kilometres long, with showing her what her work should be. She then set up Soul Art Studio, the company through which she runs her teaching and her large online art gatherings, such as the Global Vision Quest, Yoni Art Fest and an annual International Soul Art Day.\n\nIn her teaching, making art becomes a way of meeting the inner life: students are led through visualisations, journalling and creative rituals that help them get clear about what they want to bring into the world. Nearly all of it happens online, through Soul Art School, a year-long membership with a library of recorded rituals and a live session each month, through guided audio meditations, and through trainings in Soul Art and Yoni Art for people who want to guide others with her methods. Alongside this she makes embodiment imagery with the photographer Kevin Thom, has hosted hundreds of episodes of an arts radio programme and has given a TEDx talk.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "worldwide",
+      "city": null,
+      "country": null,
+      "subjects": [
+        "spirituality",
+        "soul-purpose",
+        "meditation"
+      ],
+      "website_url": "https://www.laurahollick.com/",
+      "booking_url": "https://www.laurahollick.com/journeys/",
+      "youtube_url": "https://www.youtube.com/channel/UCuFe1EHJtR3diK6KgjQAsMw",
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": null,
+      "image_urls": [
+        "https://www.laurahollick.com/wp-content/uploads/2022/12/laura-hollick-with-feather.png"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [
+    {
+      "title": "Meet Your Future Self Guided Soul Art Visualization",
+      "url": "https://www.youtube.com/watch?v=XafHqkaaLzs",
+      "subjects": [
+        "soul-purpose",
+        "meditation"
+      ],
+      "channel": "Soul Art Studio"
+    }
+  ],
+  "books": [],
+  "courses": [
+    {
+      "title": "Soul Art School",
+      "url": "https://soulartschool.com/",
+      "description": "A one-year online membership built around a library of recorded Soul Art rituals, with a new live ritual each month and a private community space. Members work through monthly themes using creative practices aimed at finding their purpose and expressing it.",
+      "price": "$1,997 USD",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "soul-purpose",
+        "spirituality"
+      ],
+      "image": "https://soulartschool.com/wp-content/uploads/2022/01/video-placeholder.png"
+    },
+    {
+      "title": "Reimagine Your Life Meditation",
+      "url": "https://www.soulartstudio.com/reimagine/",
+      "description": "A thirty-minute guided audio meditation, bought once and downloaded. It invites the listener to treat fear and doubt as openings and to look for fresh ideas about the shape of their life.",
+      "price": "$19.99 USD",
+      "product_type": "download",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://soulartstudio.com/reimagine/assets/optimized/lotus-ghost.png"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Meet Your Future Self",
+      "url": "https://www.soulartstudio.com/meet-your-future-self/",
+      "description": "A free guided Soul Art visualisation with a downloadable journal, given in exchange for joining her newsletter. It takes the listener to meet an image of who they are becoming and to ask what comes next.",
+      "featured": true,
+      "resource_type": "meditation",
+      "subjects": [
+        "soul-purpose",
+        "meditation"
+      ],
+      "image": "https://www.soulartstudio.com/wp-content/uploads/2026/02/Meet-Your-Future-Self-Journal-2.png"
+    },
+    {
+      "title": "Light Body Activation",
+      "url": "https://www.soulartstudio.com/light/",
+      "description": "A short free guided meditation with a journal, offered through her newsletter sign-up. It centres on sensing light within the body and a felt connection to the divine.",
+      "featured": false,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "image": "https://www.soulartstudio.com/wp-content/uploads/2025/08/light-body-activation.png"
+    }
+  ],
+  "sprint": {
+    "sprint": "pipelines-2",
+    "hub": "the-shift-network",
+    "rank": 181,
+    "hub_url": null,
+    "tier_evidence": "Her own site footer (laurahollick.com, 5 Nov 2026): Facebook 20.1k, Pinterest 11.6k, Instagram 4.6k, YouTube 1.2k; YouTube 1.24K on the channel header next to @soul.art.studio (5 Nov 2026) → ~37.5k total → local_hero",
+    "email": "contact form",
+    "email_source": null,
+    "contact_form_url": "https://www.laurahollick.com/laura-hollick-contact/",
+    "bio_check": "OK: no 8-word runs against 14 source(s)",
+    "flags": [
+      "No Shift mention on own site: listed without the link.",
+      "No published email on laurahollick.com or soulartstudio.com; contact form only.",
+      "No public base: neither of her own sites names a city or country, so city and country are null (no_public_base).",
+      "Only one photo: the YouTube avatar is a collage logo and the Reimagine page image is a stylised double exposure.",
+      "Thin on videos: her YouTube channel (@soul.art.studio) is small and mostly short promos; only one long teaching video kept. Her TEDx talk was not found without searching YouTube.",
+      "Health rule, borderline: two of her programmes are framed around healing wounds and trauma (see left_out); her main work is creative spiritual practice, so she is kept with those left out. Please check.",
+      "Facebook, Instagram and Pinterest figures are taken from her own site's footer widget, not read on those platforms (off limits to us)."
+    ],
+    "left_out": [
+      "Heal with Art 12-Week Journey ($597 USD, soulartschool.com/hwa/): framed around healing trauma and wounds.",
+      "Heal Your Core Wound with Soul Art (free ritual): its page names depression and dis-ease as symptoms.",
+      "Light Body Cleanse: framed as restoring the body; borderline, left out.",
+      "Soul Art Certification: registration closed (priority list only).",
+      "Yoni Art Certification: yoniartcertification.com did not respond to the robots.txt fetch, so not used.",
+      "YouTube promo clips under about two minutes and course trailers."
+    ]
+  },
+  "images_final": true
+}

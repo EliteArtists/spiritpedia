@@ -1,0 +1,182 @@
+{
+  "healer": {
+    "healer_slug": "fleet-maull",
+    "location_source": "https://www.heartmind.co/",
+    "create": {
+      "name": "Fleet Maull",
+      "bio": "Fleet Maull is an American Buddhist teacher, author and trainer who carries teaching authority in both Tibetan and Zen lines: he is an Acharya, or senior teacher, in the Shambhala tradition, and a Roshi and ordained Soto Zen priest in the Zen Peacemaker Order. He was a close student and attendant of Chögyam Trungpa Rinpoche and became a Dharma successor of Bernie Glassman, and he has taught meditation since 1981. While serving fourteen years in federal prison for drug trafficking he began sharing meditation with other prisoners, and from there founded Prison Dharma Network and the National Prison Hospice Association, and later set up training bodies that bring mindfulness to prisons and to public safety workers.\n\nFrom 1999 to 2010 he taught engaged Buddhism and contemplative peacemaking at Naropa University in Boulder, and he has led well over a hundred retreats around the world, including bearing witness retreats in Rwanda. His book Radical Responsibility describes a practice of moving from blame towards owning one's choices, and Dharma in Hell gathers his writing from prison. He now runs Heart Mind Institute, the online school he founded, from western Massachusetts, and also works as an executive coach and speaker on mindfulness and emotional intelligence in organisations. Recordings of his retreat teachings at Drala Mountain Center are freely available online.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "worldwide",
+      "city": "Hatfield, Massachusetts",
+      "country": "United States",
+      "subjects": [
+        "meditation",
+        "mindfulness",
+        "spirituality"
+      ],
+      "website_url": "https://www.fleetmaull.com/",
+      "booking_url": "https://www.fleetmaull.com/contact",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "info@fleetmaull.com",
+      "image_urls": [
+        "https://static.wixstatic.com/media/99dd65_01ff3f1921104723b5fab486834d8d74~mv2.jpg/v1/crop/x_544,y_0,w_1344,h_1622/fill/w_474,h_572,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/20180328_FM_07_043.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [
+    {
+      "title": "Fleet Maull Live: Radical Responsibility",
+      "url": "https://www.youtube.com/watch?v=lk_a2iWWoVQ",
+      "subjects": [
+        "spirituality",
+        "mindfulness"
+      ],
+      "channel": "Drala Mountain Center"
+    },
+    {
+      "title": "Beyond Mindfulness Day 1: Live with Acharya Fleet Maull",
+      "url": "https://www.youtube.com/watch?v=ZnZHt3qch60",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "channel": "Drala Mountain Center"
+    },
+    {
+      "title": "Beyond Mindfulness Day 2: Live with Acharya Fleet Maull",
+      "url": "https://www.youtube.com/watch?v=r95QTYlyfcM",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "channel": "Drala Mountain Center"
+    },
+    {
+      "title": "Beyond Mindfulness Day 3: Live with Acharya Fleet Maull",
+      "url": "https://www.youtube.com/watch?v=pS8P9A79La4",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "channel": "Drala Mountain Center"
+    },
+    {
+      "title": "Beyond Mindfulness Day 4: Live with Acharya Fleet Maull",
+      "url": "https://www.youtube.com/watch?v=q_aIQ44Gqcg",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "channel": "Drala Mountain Center"
+    },
+    {
+      "title": "Beyond Mindfulness Day 5: Live with Acharya Fleet Maull",
+      "url": "https://www.youtube.com/watch?v=yE922vFBifo",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "channel": "Drala Mountain Center"
+    },
+    {
+      "title": "Acharya Fleet Maull Mindfulness Meditation",
+      "url": "https://www.youtube.com/watch?v=s4BujzVu8K0",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "channel": "Drala Mountain Center"
+    },
+    {
+      "title": "Acharya Fleet Maull Presentation",
+      "url": "https://www.youtube.com/watch?v=InE1B2LnCMs",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "channel": "Drala Mountain Center"
+    },
+    {
+      "title": "Compassion is not a Luxury: Fleet Maull on Dharma and Prisons.",
+      "url": "https://www.youtube.com/watch?v=pjl--Mfh1EM",
+      "subjects": [
+        "spirituality",
+        "meditation"
+      ],
+      "channel": "Elephant Journal"
+    },
+    {
+      "title": "Fleet Maull on Socially Engaged Buddhism",
+      "url": "https://www.youtube.com/watch?v=cncqpuTMKBY",
+      "subjects": [
+        "spirituality"
+      ],
+      "channel": "PrisonDharmaNetwork"
+    },
+    {
+      "title": "Fleet Maull: Service as Path",
+      "url": "https://www.youtube.com/watch?v=etL0SgR5XAs",
+      "subjects": [
+        "spirituality"
+      ],
+      "channel": "PrisonDharmaNetwork"
+    }
+  ],
+  "books": [
+    {
+      "title": "Dharma in Hell: The Prison Writings of Fleet Maull",
+      "slug": "dharma-in-hell",
+      "author": "Fleet Maull",
+      "asin": "0971814317",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "Writings from his fourteen years in a federal prison, where he kept up his meditation practice and began serving other prisoners and the dying. The pieces dwell on basic goodness and on practice in the hardest of places.",
+      "subjects": [
+        "spirituality",
+        "meditation"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/0971814317.01._SCLZZZZZZZ_.jpg"
+    }
+  ],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "pipelines-2",
+    "hub": "the-shift-network",
+    "rank": 175,
+    "hub_url": null,
+    "tier_evidence": "No personal follower counts readable: Instagram and Facebook need login; the YouTube channel linked from his site (@heartmindinstitute) is Heart Mind Institute's, not counted → total unreadable → local_hero",
+    "email": "yes",
+    "email_source": "https://www.fleetmaull.com/",
+    "contact_form_url": "https://www.fleetmaull.com/contact",
+    "bio_check": "OK: no 8-word runs against 10 source(s)",
+    "flags": [
+      "No Shift mention on own site: listed without the link (checked home, About, Books, Video, Contact).",
+      "Email info@fleetmaull.com is shown as 'Email Support' in the footer of his site (Cloudflare-obfuscated, decoded as the brief allows).",
+      "Base: Hatfield, Massachusetts, the main office of Heart Mind Institute (which he founded and leads) on heartmind.co; his own site gives no town. Regional: western Massachusetts (Pioneer Valley).",
+      "Name: known as Roshi Fleet Maull, Acharya Fleet Maull and Dr. Fleet Maull; listed as plain 'Fleet Maull' (owner may prefer 'Roshi Fleet Maull').",
+      "Tier: counts unreadable for his main accounts; editorial stature possible (founder of Prison Dharma Network and Heart Mind Institute, Shambhala Acharya, Zen Roshi), not raised.",
+      "Heart Mind Institute's site is heavily trauma-healing and psychedelic-therapy led; its courses (Neuro-Somatic Mindfulness, Rewiring Your Brain, Resilience Challenge) were left out and only named in the bio as his school.",
+      "Videos are on other channels (Drala Mountain Center, Prison Dharma Network, Elephant Journal) and linked from his own Video page; he is the main speaker in each.",
+      "Only one photo used (headshot from his home page, 474 px); the other home-page photo is a group shot.",
+      "radicalresponsibilitybook.com (his book site) has ClaudeBot, anthropic-ai and Claude-Web groups with Disallow: /, so nothing was taken from it.",
+      "Sounds True returned 429 (rate limit) for one page; not retried.",
+      "Dry run: 'Hatfield, Massachusetts' is not in places (a town of about 3,300); needs a place alias or mapping to Northampton."
+    ],
+    "left_out": [
+      "Radical Responsibility (Sounds True, 2019): no ISBN from a page we could use (his book site is Claude-blocked, Sounds True rate-limited us); left out.",
+      "The Mindful C.O. (2021): aimed at correctional officers' stress and wellness; no buy link or ISBN on his site.",
+      "Executive coaching, consulting and keynote speaking: business services, not spiritual offerings.",
+      "Heart Mind Institute membership and courses: trauma-healing framing; course links are tracking redirects.",
+      "Short clips (death in custody 1 min, workaholism 1 min, Imagining Peace 2 min, Elevision 3 min) and the 2013 Shambhala London event video."
+    ]
+  },
+  "images_final": true
+}

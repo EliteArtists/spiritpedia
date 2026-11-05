@@ -1,190 +1,259 @@
-# Email pass (5 Nov 2026)
+# Pipelines sprint 2: The Shift Network and Insight Timer lists (5 Nov 2026)
 
-**220 living listings had no email, the same 220 on dev and live.** Ascended Masters are left out, and no estate is among them. All 220 were researched again:
-
-| Outcome | Count | Notes |
-| :--- | :--- | :--- |
-| **Published email found** | **53** | 16 their own, 18 business, 12 a centre they founded or co-lead, 5 press, 2 booking |
-| **Contact form only** | **150** | Each is their own form URL (or their agent's, centre's or team's). 1 is held: Adam Dacey (below) |
-| **Nothing at all** | **17** | Names below |
-
-**Nothing is written yet, even on dev.** Two columns are needed first:
-- the page where the email is published;
-- the contact-form URL.
-
-These come in migration `0039`. Everything else is ready: verified results, the apply script with a log and rollback, and the admin filter.
+**80 new teachers are on dev, short of the target of 100.** Both saved lists are now used up: all 431 leads were researched. Nothing from this sprint is live yet.
+- **Held:** 7 more plans, for your decision (below).
+- **Left as they are, as you asked:** Cirak, Giovanni Dienstmann and Grace Bryant.
+- **Skipped:** none from the do-not-revive list (Nandhiji, Devon Kerns, Ipek Williamson).
 
 ## Your steps
 
-1. **Run `supabase/migrations/0039_contact_sources.sql` on dev** (SQL editor, whole file).
-   - It adds `contact_email_source` and `contact_form_url` to `healers`.
-   - There are no policy changes; healers stay public-read, as before.
-   - The check row should read **2, 220**.
-2. **Tell me it's done.** I then apply on dev:
-   - 53 emails with their sources;
-   - 149 contact forms (all but Adam Dacey's).
+1. **Run `supabase/migrations/0040_place_aliases_pipelines_sprint_2.sql` on dev** (SQL editor, whole file).
+   - It adds 16 aliases for bases that are villages, islands or a region, for example Beatenberg → Unterseen, Malmsbury → Kyneton, Kauai → Lihue and "Bay Area" → San Francisco.
+   - The dev check row (aliases; listings with a town; of those, still without a place) should read **85, 540, 2**. The 2 are older listings (Beth Bradford's "Sussex County" and Marybeth Hyland's "Salmon").
+2. **Look at the pages on localhost** (5 random ones are below, and every page is in the table) and answer the decisions in one message.
+3. **After your OK:**
+   - you run 0040 on **live** (check row **85, 494, 2**);
+   - then I insert the 80 on live, leaving out the held ones.
 
-   After that, the check row's second number reads **167**.
-3. **Look at Admin → Content on localhost** with the new **contact** filter. Its options are:
-   - Any contact;
-   - No email;
-   - No email: contact form only;
-   - No email: nothing at all.
+**5 random pages** (each loads with HTTP 200 on localhost):
+- http://localhost:3000/healers/joseph-selbie
+- http://localhost:3000/healers/amit-goswami
+- http://localhost:3000/healers/john-weddepohl
+- http://localhost:3000/healers/charlie-morley
+- http://localhost:3000/healers/stephanie-red-feather
 
-   "No email" leaves out Ascended Masters, and rows with no email show a "Form only" or "No contact" badge. The edit page also gets the two new fields.
-4. **Answer the decisions below.** After your OK:
-   - you run 0039 on **live** (check row 2, 220);
-   - I apply on live;
-   - then the admin change can be pushed. The admin page reads `contact_form_url`, so **don't push `web/` before 0039 is on live**.
+## The 80 (dev)
 
-## Nothing at all (17)
+**Totals:** 479 videos, 109 books, 291 offerings and 114 free resources.
 
-Each was checked on their own site, any hub we may read, and up to 2 web searches.
+**Where they came from:** 46 from the Shift faculty list and 34 from our Insight Timer names. The two lists were taken in turn until Shift ran out at rank 234.
 
-**Their site refuses us (403, 406 or a bot check), so it was skipped under the standing rule.** A quick look in your own browser would probably find a route for most of these:
-- **Adyashanti:** try his Open Gate Sangha press page.
-- **Gangaji:** a search summary shows info@gangaji.org (her foundation); confirm it on gangaji.org.
-- **Pema Chödrön:** her foundation site.
-- **Elizabeth Gilbert.**
-- **Stanislav Grof:** his site shows a Sucuri bot check. Grof Legacy Training shows nothing.
-- **Robert Moss:** mossdreams.com.
-- **John Douillard:** search snippets show admin@lifespa.com for press and speaking, but we couldn't open the page.
+**Links:**
+- 34 are linked "Teaches on Insight Timer".
+- 13 are linked "Teaches on The Shift Network", each because their own site names Shift. On Cynthia James's site, Shift appears only as a logo.
+- 1 is linked to Omega (Suzi Tucker).
+- No page on theshiftnetwork.com was fetched.
 
-**No route published anywhere we can read:**
-- **Jon Kabat-Zinn:** no contact page, form or email.
-- **Dr Brian Weiss:** his site says he can no longer reply to messages.
-- **Deepak Chopra:** his only form is for help with past purchases.
-- **Justin Perry:** a bare Teachable school.
-- **Jake Mace:** jakemace.com is now a parked domain, so his `website_url` needs fixing.
-- **Amron Bevels:** a text and WhatsApp number only.
-- **Marjorie Warkentin:** no website, only YouTube.
-- **Bronwen Logan:** no email or form; the International House of Reiki inbox might still reach her.
-- **Daisy Lee:** a newsletter sign-up only.
-- **Tom Evans:** the old form at tomevans.co/contact-me/ is gone. It may now load by script.
+**Tiers:** 6 Luminary, 74 Local Hero.
+- **By count:** Steve Nobel (YouTube 198k + Insight Timer 55.6k) and Jason McGrice (Insight Timer 176.6k).
+- **Raised for editorial stature (please confirm):**
+  - Dan Siegel (Mindsight; YouTube only 35k);
+  - Amit Goswami (The Self-Aware Universe; no readable counts);
+  - Michael Berg (Kabbalah Centre co-director);
+  - Ken Wilber (integral theory).
 
-## For you to decide
+**Email:** 63 published, 17 contact form only. Each plan saves its source page, and the ingest wrote it to `contact_email_source` and `contact_form_url`.
 
-1. **Adam Dacey (held):** the About page on mindspace.org.uk carries casino spam links, so the site may be hacked. His contact form is there. Should we use it, or treat the site as hacked (website and booking links stay empty, which they already are)?
-2. **Inboxes the rules allow but that may not reach the person.** Written on dev unless you say otherwise:
-   - **Company support inboxes:** Abraham Hicks, Wim Hof (named for media), Dawson Church, Joe Vitale, Donna Eden, Paul Stamets (Fungi Perfecti), Tyler Henry (membership support), Esther Perel (support@; press@ also listed).
-   - **Theresa Caputo:** club@, a fan-club inbox.
-   - **Centres they founded or co-lead:**
-     - Sharon Salzberg (IMS front office);
-     - Byron Katie (customer care);
-     - Russ Hudson (Enneagram Institute support; he also has his own form, recorded);
-     - Jonathan Goldman (Sound Healers Association);
-     - Tevia Feng (White Tiger Qigong);
-     - Anodea Judith (her academy's coordinator, a gmail address);
-     - Frans Stiene (IHReiki);
-     - Bernat Font (Espai Sati);
-     - Martin Aylward (Moulin de Chaves office);
-     - Pascal Auclair and Daryl Lynn Ross (True North Insight's inbox, shown on her site).
-   - **Press-only addresses:** Shamini Jain (a named CHI staff member), Cristi Christensen (her PR agency), Danielle MacKinnon (media@).
-   - **Dr Gary Chapman:** his Moody Radio programme's listener inbox. There's also a form on 5lovelanguages.com.
-   - **Assistants:** Sonia Choquette (assistant@) and Pea Horsley (reaches "Pea's team").
-3. **Addresses that are clickable but not printed as text:**
-   - Emma Estrela: a mailto button on her home page;
-   - Will Caminada: an email button on his link page.
+**Base:** 31 publish no town, so they show worldwide only.
 
-   I counted both as published. Rupert Sheldrake's address is assembled by a short script but shows as text when the page loads, which I confirmed on the saved page. OK?
-4. **Addresses I did not use** (the contact form is recorded instead):
-   - **Tony Robbins:** his PR agency's address appears only after submitting the form.
-   - **Nicole Bayliss:** her address is only in hidden page data.
-   - **Judy Wilkins-Smith:** her address is only in the page's meta description.
-   - **Laura Berman Fortgang:** the address is Speakers.com's general inbox, not her agent's.
-   - **Not used for the same reasons** (all forms):
-     - Michelle Robertson, Christine Page, Walt Opie: hidden page data or an invisible link;
-     - Eric Zimmer: guest@oneyoufeed.net, for podcast pitches only.
+The tier evidence and every research flag for each teacher are in `docs/content-audits/pipelines-sprint-2/REPORT.md` and in each plan.
 
-   Say if you'd like any of these used.
-5. **Forms that may not reach the person, or not re-confirmed today:**
-   - **Organisation forms:**
-     - Plum Village (Brother Phap Huu, Brother Phap Linh);
-     - Jewel Heart (Demo Rinpoche);
-     - Gottman Institute;
-     - Gene Keys support (Richard Rudd);
-     - Isha Help Center (Sadhguru);
-     - Joe Dispenza's support desk;
-     - Bashar's helpdesk;
-     - Dharma Ground (Tuere Sala);
-     - Yogam Yoga (Duncan Rice);
-     - The Reiki Academy (Torsten Lange);
-     - CymaScope (John Stuart Reid).
-   - **Melissa Crowhurst:** her chat widget says it doesn't reach her.
-   - **Gabby Bernstein:** her speaking agent's form (Harry Walker); her own site refuses us.
-   - **Marie Mbouni:** an application-call booking.
-   - **Gregg Braden:** the form may add you to his list.
-   - **Not re-confirmed** (their sites now refuse us or rate-limit us), so these keep the form URL from last week's research:
-     - Matthew Duplessie, Jim Rajan, Perdita Finn, Hawah Kasat, Philip Shepherd, Laura Berman Fortgang.
+| # | From | Teacher | Tier | Base as published | Videos · books · offerings · free | Email | Hub link | Page |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| 9 | Shift | Dr. Katie Hendricks | Local Hero | Ojai, California, United States | 7 · 1 · 3 · 3 | published | no | http://localhost:3000/healers/katie-hendricks |
+| 11 | Shift | Dr. Dan Siegel | **Luminary** | Santa Monica, California, United States | 8 · 5 · 1 · 2 | published | no | http://localhost:3000/healers/dan-siegel |
+| 13 | Shift | Michelle Masters | Local Hero | no base published | 8 · 1 · 3 · 2 | published | Shift | http://localhost:3000/healers/michelle-masters |
+| 19 | Shift | Tom Condon | Local Hero | Bend, Oregon, United States | 9 · 0 · 3 · 0 | published | Shift | http://localhost:3000/healers/tom-condon |
+| 23 | Shift | Flora Bowley | Local Hero | Portland, Oregon, United States | 0 · 4 · 8 · 0 | published | no | http://localhost:3000/healers/flora-bowley |
+| 27 | Shift | Kim Chestney | Local Hero | no base published | 10 · 3 · 6 · 3 | form only | Shift | http://localhost:3000/healers/kim-chestney |
+| 38 | Insight Timer | Burgs | Local Hero | no base published | 10 · 0 · 6 · 3 | published | Insight Timer | http://localhost:3000/healers/burgs |
+| 41 | Shift | Suzi Tucker | Local Hero | Redding Ridge, Connecticut, United States | 9 · 2 · 5 · 0 | published | Omega | http://localhost:3000/healers/suzi-tucker |
+| 47 | Shift | Lisa Williams | Local Hero | Beverly Hills, California, United States | 8 · 1 · 6 · 0 | published | no | http://localhost:3000/healers/lisa-williams |
+| 49 | Shift | Dr. Deborah Ooten | Local Hero | Cincinnati, Ohio, United States | 3 · 0 · 5 · 1 | form only | no | http://localhost:3000/healers/deborah-ooten |
+| 58 | Insight Timer | Jason McGrice | **Luminary** | Adelaide, South Australia, Australia | 0 · 0 · 2 · 1 | form only | Insight Timer | http://localhost:3000/healers/jason-mcgrice |
+| 63 | Shift | Ashanna Solaris | Local Hero | Maui, Hawaii, United States | 8 · 0 · 7 · 0 | published | no | http://localhost:3000/healers/ashanna-solaris |
+| 69 | Shift | Charlie Morley | Local Hero | London, United Kingdom | 5 · 3 · 7 · 1 | published | no | http://localhost:3000/healers/charlie-morley |
+| 71 | Shift | Lottie Moore | Local Hero | no base published | 0 · 0 · 8 · 0 | form only | no | http://localhost:3000/healers/lottie-moore |
+| 72 | Insight Timer | Ajahn Achalo | Local Hero | Thailand | 10 · 0 · 0 · 5 | published | Insight Timer | http://localhost:3000/healers/ajahn-achalo |
+| 78 | Insight Timer | Steve Nobel | **Luminary** | no base published | 10 · 6 · 8 · 2 | published | Insight Timer | http://localhost:3000/healers/steve-nobel |
+| 79 | Shift | Joseph Selbie | Local Hero | no base published | 10 · 3 · 0 · 1 | published | no | http://localhost:3000/healers/joseph-selbie |
+| 81 | Shift | Darren Austin Hall | Local Hero | no base published | 8 · 0 · 4 · 1 | published | no | http://localhost:3000/healers/darren-austin-hall |
+| 82 | Insight Timer | Michael Mackintosh | Local Hero | Kauai, Hawaii, United States | 9 · 1 · 3 · 3 | published | Insight Timer | http://localhost:3000/healers/michael-mackintosh |
+| 87 | Shift | Dr. Amit Goswami | **Luminary** | no base published | 0 · 9 · 2 · 0 | published | no | http://localhost:3000/healers/amit-goswami |
+| 93 | Shift | Michelle Clare | Local Hero | Phoenix, Arizona, United States | 7 · 2 · 4 · 1 | published | Shift | http://localhost:3000/healers/michelle-clare |
+| 95 | Shift | Mellissa Seaman | Local Hero | Nevada City, California, United States | 8 · 0 · 4 · 2 | form only | no | http://localhost:3000/healers/mellissa-seaman |
+| 96 | Insight Timer | Jay Chodagam | Local Hero | San Francisco, California, United States | 11 · 0 · 0 · 2 | form only | Insight Timer | http://localhost:3000/healers/jay-chodagam |
+| 101 | Shift | Julie Reisler | Local Hero | United States | 5 · 1 · 4 · 2 | published | Shift | http://localhost:3000/healers/julie-reisler |
+| 107 | Shift | Arthur Samuel Joseph | Local Hero | no base published | 2 · 4 · 4 · 1 | published | no | http://localhost:3000/healers/arthur-samuel-joseph |
+| 109 | Shift | Corin Grillo | Local Hero | Mount Shasta, California, United States | 0 · 2 · 2 · 2 | published | no | http://localhost:3000/healers/corin-grillo |
+| 110 | Insight Timer | Hilary Jackendoff | Local Hero | Los Angeles, California, United States | 0 · 0 · 5 · 1 | published | Insight Timer | http://localhost:3000/healers/hilary-jackendoff |
+| 111 | Shift | Susan Grau | Local Hero | Tustin, California, United States | 10 · 1 · 4 · 1 | published | no | http://localhost:3000/healers/susan-grau |
+| 113 | Shift | Dr. Amber Mele’ha Wolf | Local Hero | United States | 0 · 0 · 4 · 2 | published | no | http://localhost:3000/healers/amber-meleha-wolf |
+| 121 | Shift | Suzanne Dion | Local Hero | no base published | 0 · 1 · 5 · 0 | published | Shift | http://localhost:3000/healers/suzanne-dion |
+| 125 | Shift | Rev. Dr. Hillary Raining | Local Hero | Washington, DC, United States | 6 · 0 · 3 · 1 | form only | Shift | http://localhost:3000/healers/hillary-raining |
+| 145 | Shift | Sarah Janes | Local Hero | Ancient Epidavros, Greece | 6 · 1 · 6 · 0 | published | Shift | http://localhost:3000/healers/sarah-janes |
+| 149 | Shift | Fay Johnstone | Local Hero | Culross, United Kingdom | 9 · 3 · 5 · 0 | published | no | http://localhost:3000/healers/fay-johnstone |
+| 153 | Shift | Sister Jenna | Local Hero | Washington, DC, United States | 6 · 1 · 1 · 1 | published | Shift | http://localhost:3000/healers/sister-jenna |
+| 155 | Shift | Shelly Reef | Local Hero | no base published | 7 · 0 · 0 · 0 | form only | Shift | http://localhost:3000/healers/shelly-reef |
+| 161 | Shift | Sue Brayne | Local Hero | no base published | 11 · 3 · 1 · 1 | form only | no | http://localhost:3000/healers/sue-brayne |
+| 163 | Shift | Dr. Carmen Acevedo Butcher | Local Hero | Bay Area, California, United States | 10 · 7 · 0 · 0 | form only | Shift | http://localhost:3000/healers/carmen-acevedo-butcher |
+| 171 | Shift | Chetan Parkyn | Local Hero | Escondido, California, United States | 8 · 4 · 6 · 2 | published | no | http://localhost:3000/healers/chetan-parkyn |
+| 173 | Shift | Russill Paul | Local Hero | no base published | 2 · 1 · 7 · 0 | form only | no | http://localhost:3000/healers/russill-paul |
+| 174 | Insight Timer | Gordon Burnham | Local Hero | La Crescenta, California, United States | 0 · 6 · 2 · 1 | published | Insight Timer | http://localhost:3000/healers/gordon-burnham |
+| 175 | Shift | Fleet Maull | Local Hero | Hatfield, Massachusetts, United States | 11 · 1 · 0 · 0 | published | no | http://localhost:3000/healers/fleet-maull |
+| 177 | Shift | Jonathan Hammond | Local Hero | Kihei, Hawaii, United States | 8 · 1 · 4 · 0 | form only | Shift | http://localhost:3000/healers/jonathan-hammond |
+| 181 | Shift | Laura Hollick | Local Hero | no base published | 1 · 0 · 2 · 2 | form only | no | http://localhost:3000/healers/laura-hollick |
+| 183 | Shift | Tanya Carroll Richardson | Local Hero | no base published | 0 · 8 · 2 · 0 | published | no | http://localhost:3000/healers/tanya-carroll-richardson |
+| 185 | Shift | Chris Niebauer | Local Hero | Slippery Rock, Pennsylvania, United States | 10 · 3 · 0 · 0 | form only | no | http://localhost:3000/healers/chris-niebauer |
+| 186 | Insight Timer | Josephine Sorciere | Local Hero | Adelaide, South Australia, Australia | 0 · 0 · 3 · 1 | published | Insight Timer | http://localhost:3000/healers/josephine-sorciere |
+| 187 | Shift | Dr. Jennifer Freed | Local Hero | Santa Barbara, California, United States | 0 · 3 · 2 · 0 | published | no | http://localhost:3000/healers/jennifer-freed |
+| 195 | Shift | Jeddah Mali | Local Hero | no base published | 5 · 0 · 0 · 0 | published | no | http://localhost:3000/healers/jeddah-mali |
+| 202 | Insight Timer | Carmen Warrington | Local Hero | Malmsbury, Victoria, Australia | 12 · 2 · 1 · 3 | published | Insight Timer | http://localhost:3000/healers/carmen-warrington |
+| 204 | Insight Timer | Johnson Chong | Local Hero | Sydney, New South Wales, Australia | 2 · 0 · 6 · 2 | form only | Insight Timer | http://localhost:3000/healers/johnson-chong |
+| 207 | Shift | Cynthia James | Local Hero | no base published | 4 · 2 · 4 · 1 | published | Shift | http://localhost:3000/healers/cynthia-james |
+| 209 | Shift | Deb Sheppard | Local Hero | no base published | 10 · 0 · 3 · 1 | published | no | http://localhost:3000/healers/deb-sheppard |
+| 213 | Shift | Rev. Dr. Stephanie Red Feather | Local Hero | no base published | 10 · 2 · 3 · 1 | published | no | http://localhost:3000/healers/stephanie-red-feather |
+| 215 | Shift | Karina Schelde | Local Hero | no base published | 8 · 0 · 5 · 2 | published | no | http://localhost:3000/healers/karina-schelde |
+| 221 | Shift | Dr. Lise Janelle | Local Hero | Toronto, Ontario, Canada | 11 · 1 · 8 · 3 | published | no | http://localhost:3000/healers/lise-janelle |
+| 223 | Shift | Giovanni Bartolomeo | Local Hero | Bolton, Ontario, Canada | 9 · 0 · 3 · 2 | published | no | http://localhost:3000/healers/giovanni-bartolomeo |
+| 226 | Insight Timer | Buddha-Haus | Local Hero | Oy-Mittelberg, Germany | 8 · 0 · 4 · 1 | published | Insight Timer | http://localhost:3000/healers/buddha-haus |
+| 231 | Shift | Alison Armstrong | Local Hero | no base published | 11 · 0 · 7 · 2 | published | no | http://localhost:3000/healers/alison-armstrong |
+| 235 | Insight Timer | Mindfulness Northwest | Local Hero | Bellingham, Washington, United States | 1 · 0 · 8 · 4 | published | Insight Timer | http://localhost:3000/healers/mindfulness-northwest |
+| 242 | Insight Timer | Clive Freeman | Local Hero | no base published | 0 · 0 · 1 · 5 | published | Insight Timer | http://localhost:3000/healers/clive-freeman |
+| 255 | Insight Timer | Amrit Yoga Institute | Local Hero | Salt Springs, Florida, United States | 10 · 0 · 5 · 2 | published | Insight Timer | http://localhost:3000/healers/amrit-yoga-institute |
+| 279 | Insight Timer | Scott Snibbe | Local Hero | Berkeley, California, United States | 2 · 1 · 5 · 3 | form only | Insight Timer | http://localhost:3000/healers/scott-snibbe |
+| 282 | Insight Timer | Victoria Ucele | Local Hero | Swansea, United Kingdom | 12 · 0 · 2 · 1 | published | Insight Timer | http://localhost:3000/healers/victoria-ucele |
+| 295 | Insight Timer | Michael Berg | **Luminary** | New York, New York, United States | 0 · 0 · 1 · 2 | published | Insight Timer | http://localhost:3000/healers/michael-berg |
+| 296 | Insight Timer | Michael Drake | Local Hero | no base published | 0 · 2 · 0 · 3 | published | Insight Timer | http://localhost:3000/healers/michael-drake |
+| 301 | Insight Timer | Ronan Rooney | Local Hero | no base published | 10 · 0 · 4 · 2 | published | Insight Timer | http://localhost:3000/healers/ronan-rooney |
+| 307 | Insight Timer | Sarah Noble | Local Hero | no base published | 10 · 0 · 5 · 2 | published | Insight Timer | http://localhost:3000/healers/sarah-noble |
+| 333 | Insight Timer | Ken Wilber | **Luminary** | Denver, Colorado, United States | 12 · 7 · 5 · 2 | published | Insight Timer | http://localhost:3000/healers/ken-wilber |
+| 336 | Insight Timer | Deb Poole | Local Hero | no base published | 0 · 0 · 2 · 1 | published | Insight Timer | http://localhost:3000/healers/deb-poole |
+| 347 | Insight Timer | Swami Viditatmananda | Local Hero | Saylorsburg, Pennsylvania, United States | 5 · 0 · 2 · 1 | published | Insight Timer | http://localhost:3000/healers/swami-viditatmananda |
+| 366 | Insight Timer | Lama Dvora | Local Hero | Tzofar, Israel | 5 · 0 · 0 · 1 | published | Insight Timer | http://localhost:3000/healers/lama-dvora |
+| 370 | Insight Timer | Yogi Charu | Local Hero | no base published | 10 · 0 · 7 · 3 | form only | Insight Timer | http://localhost:3000/healers/yogi-charu |
+| 377 | Insight Timer | Shannon Murphy | Local Hero | no base published | 0 · 0 · 6 · 3 | published | Insight Timer | http://localhost:3000/healers/shannon-murphy |
+| 380 | Insight Timer | Sacha Heath | Local Hero | no base published | 8 · 0 · 3 · 2 | published | Insight Timer | http://localhost:3000/healers/sacha-heath |
+| 388 | Insight Timer | Nathan Maingard | Local Hero | Cape Town, Western Cape, South Africa | 5 · 0 · 2 · 1 | published | Insight Timer | http://localhost:3000/healers/nathan-maingard |
+| 391 | Insight Timer | Astrid Blankenburg | Local Hero | no base published | 0 · 0 · 5 · 1 | published | Insight Timer | http://localhost:3000/healers/astrid-blankenburg |
+| 394 | Insight Timer | Mahip Rathore | Local Hero | Amherst, Massachusetts, United States | 12 · 0 · 2 · 3 | published | Insight Timer | http://localhost:3000/healers/mahip-rathore |
+| 401 | Insight Timer | John Weddepohl | Local Hero | Byron Bay, New South Wales, Australia | 3 · 0 · 2 · 1 | published | Insight Timer | http://localhost:3000/healers/john-weddepohl |
+| 423 | Insight Timer | Fred von Allmen | Local Hero | Beatenberg, Switzerland | 12 · 0 · 9 · 1 | published | Insight Timer | http://localhost:3000/healers/fred-von-allmen |
+| 428 | Insight Timer | Marta Metrass | Local Hero | no base published | 2 · 0 · 4 · 1 | published | Insight Timer | http://localhost:3000/healers/marta-metrass |
 
-**Also found:** Nassim Haramein's `website_url` (resonancescience.org) no longer resolves; nassimharamein.com is live. Jake Mace's site is parked. Neither is changed; say if you'd like them fixed.
+## FLAGGED: for you to decide
+
+1. **Tiers:**
+   - **The four editorial raises above:** confirm them, or put them back to Local Hero.
+   - **Possible raises:**
+     - Lisa Williams (YouTube 13.8k; a long-running TV medium);
+     - Chetan Parkyn (co-founder of Human Design America);
+     - Fleet Maull (Prison Mindfulness Institute founder; no readable counts).
+2. **Held (7, not inserted):**
+   - **Ken Page, Dr. John Ryan and Sharon Smith:** their photo hosts drop the ingest's connection. As before, I didn't look for a workaround. Options: photos you save by hand and we host, or leave them out.
+   - **Catherine Andrews:** her About page is heavy on conditions, and she offers psilocybin microdosing mentoring.
+   - **Natasja Pelgrom:** her work is psilocybin and 5-MeO-DMT retreats. Her Shift link rests on a logo only.
+   - **Jamie Wozny:** her flagship programme is framed around chronic symptoms (health rule).
+   - **Ihsan Alexander:** political podcast episodes, and an Andrew Tate image on his site.
+3. **Health, fit or content (listed, borderline items left out, your call):**
+   - **Johnson Chong:** the Peru ayahuasca retreat was removed from his plan, in line with the Stephen Gray decision.
+   - **Lisa Williams:** her testimonials include cancer claims. They aren't used.
+   - **Sarah Janes:** her channel has a "PSYOP" video. It isn't in her plan.
+   - **Alison Armstrong:** her site's menu links to Dennis Prager shows. Is that political content?
+   - **Corin Grillo:** her Substack offers "cultural commentary" (not opened).
+   - **Amrit Yoga Institute:** Amrit Desai left Kripalu in 1994 after misconduct allegations. Nothing about it is on the page.
+   - **Lama Dvora:**
+     - her centre holds Jewish–Arab "One Heart" peace gatherings, which the bio calls dialogue work (no news reports used);
+     - she names Geshe Michael Roach among her teachers;
+     - her two current courses start before 9 Nov, so the page rests on 5 videos.
+   - **Fit:**
+     - Flora Bowley (intuitive painting);
+     - Nathan Maingard (as much musician as teacher);
+     - Shannon Murphy (mostly money-mindset coaching; her Reiki and past-life health claims are not repeated);
+     - Sacha Heath (much of her site is music and voice coaching);
+     - Mahip Rathore (also a psychotherapist; only his yoga and meditation work is listed).
+4. **Contact sources to check:**
+   - **Burgs:** his email appears only in his Patreon text.
+   - **John Weddepohl:** his email, base and offerings come from rachelzinmanyoga.com, the site he runs jointly with his wife, which his own site links to. His own site has no contact route.
+   - **Fred von Allmen:** info@karuna.ch, the office of Meditationszentrum Beatenberg, which he co-founded. His own site loads only by script.
+   - **Sacha Heath:** her email is printed on her site but uses her older domain, yogawithsacha.com.
+   - **Marta Metrass:** her email comes from a mail button, with the Cloudflare-protected address decoded.
+5. **Possible miscredited books already on dev** (older listings, not from this sprint):
+   - "Human Design" sits under jenna-zoe, but it is Chetan Parkyn's book;
+   - a book titled "Mind" sits under book id 117;
+   - Sister Jenna's book has the same title as one listed under jack-kornfield.
+
+   Say if you'd like me to check and fix them.
+6. **Small things:**
+   - **Yogi Charu:** the retreat year (Dec 2026 to Jan 2027) is inferred from the upload dates.
+   - **Sacha Heath:** her Corfu retreat dates conflict between two pages, so they are left empty.
+   - **Fred von Allmen:** his only photo is 232 px wide.
+   - **Books:** books whose ISBN came from the teacher's or publisher's own page are flagged "not confirmed on Open Library", as you agreed in sprint 1. Fred von Allmen's German books, which have no ISBN on a publisher page, are left out.
+
+## Skips (344)
+
+Each skip file has its reason, in `docs/content-audits/pipelines-sprint-2/skipped/`. Grouped roughly:
+
+| Reason | About |
+| :--- | :--- |
+| No own site or contact route (parked, dead, Linktree or Instagram only) | 147 |
+| Health rule (therapy, medical, condition-framed) | 78 |
+| Site blocks us (robots.txt, including Claude-named blocks, or a 403 or bot check) | 69 |
+| Already on Spiritpedia | 24 |
+| Other (not a teacher, a music project, no usable photo, no longer teaching) | 23 |
+| Political or conspiracy-centred | 3 |
+
+**Skips you may want to overrule:**
+- **Their own sites block us:**
+  - Thubten Chodron, Reggie Ray, RamDev Dale Borglum, Jane Hardwicke Collings, Namrata (Sati Yoga);
+  - by naming Claude's agents: Nancy Rebecca, Katherine Fauvre and Matt Kahn.
+- **Eli Jaxon-Bear:**
+  - leelaschool.org (his school's site, with his events) blocks ClaudeBot;
+  - leela.org allows us and publishes an office email (leigh@leela.org).
+
+  Is leela.org alone enough?
+- **Ruth King:**
+  - She is an insight meditation teacher. Her site is now the Mindful of Race Institute, centred on racism, so the helper skipped her as political-centred.
+  - Her site allows us, and it has a contact form.
+
+  Say if this isn't political, and I'll research her in full.
+- **J.J. Hurtak and Desiree Hurtak.**
+- **Reya Manna:** sovereign-citizen wording on her site.
+- **Lama Yeshe Rabgye:** his site is a Substack on his own domain.
+- **Michael Sapiro, Cheryl Brown, Julie Smith and Salimah Kassim-Lakha:** borderline health or fit.
+- **Charlotte Duerr James:** psychedelic-medicine trainings (Kambo, Bwiti, microdosing) and no contact route.
+
+## Why 80, not 100
+
+- **Both saved lists are used up.** The Shift list ran out at rank 234, and after that the queue was Insight Timer only.
+- **The Insight Timer names were mostly parked entries**: names set aside in earlier sprints because no contact route was found. Only about 1 in 10 of those yielded a teacher, against about 1 in 4 on the mixed ranks. Most still have no site of their own, or only a Linktree or Instagram page.
+- **More sites block us now.** Your 5 Nov rule on Claude-named robots.txt blocks adds to the usual robots.txt and 403 skips.
+
+**Other sources that could close the gap** (each would need your OK as a new list under §18.7 or as a hub sprint):
+- Insight Timer names not yet saved (new, larger-following teachers, read from the public pages we may use);
+- faculty lists from hubs we may read (Omega, Kripalu, Esalen, Hollyhock, Findhorn, IMS) beyond the ones already done;
+- Sounds True and Hay House author pages, for teachers with books;
+- regional sprints for countries still thin on Near You.
 
 ## Research slips (reported; nothing from them used)
 
-- **Second requests to a site that had just refused us.** Each used the same plain curl, never another identity:
-  - takebackthemagic.com: a contact page queued after the home page returned 403;
-  - hawahkasat.com: same pattern;
-  - greggbraden.com: /press after a 406;
-  - resonancescience.org: robots.txt retried once after a DNS failure.
-- **Robots.txt not read first on a redirect host:**
-  - Most www/bare-domain redirects and iRest's shop host had their robots.txt read only after landing. All of these allowed us.
-  - Two redirects landed on paths robots.txt disallows (CIIS /profiles/, retreat.guru /search). Both copies were deleted and nothing from them was used.
-  - One robots.txt and HEAD request went out in the same command (forms.deepakchopra.com); robots.txt allowed it.
-- **One page re-fetched with `--compressed`** (Ken Nelson's team site), after it came back gzip-compressed and unreadable. It was not a refusal, and the user agent was the same.
-- **Crawl delays missed** between two quick requests at Ken Honda's (30 s) and Jon Kabat-Zinn's (3 s) sites.
-- **Guessed URLs on Sadhguru's site:** four guessed page paths (contact, media and similar), not email addresses.
-- **bashar.org's robots.txt names ClaudeBot and Claude-Web** but not curl. We read it under the `*` group, as the brief allows. Say if you'd rather we skip sites that name Claude's agents at all.
-- **Search budget:** a few listings had a third search.
-- **Rules kept:** no fake user agents, proxies, archives, logins, contact-finder sites or forms submitted, and no off-limits site fetched.
-- **Text on pages kept as data:** theresacaputo.com's robots.txt tells AI agents to use its own endpoints. It was ignored.
+- **Redirects followed before reading the new host's robots.txt:**
+  - pauline.life → fiorediloto.jimdofree.com (allows us; its 5-second crawl delay was kept from then on);
+  - billbelanger.com → healbright.com (nothing more fetched).
+  - In the first wave, a few www/bare-domain hops did the same; all allowed us.
+- **One HEAD request** to a site that blocks us went out in the same command as its robots.txt. Nothing from it was used.
+- **One retry over plain HTTP** after an HTTPS handshake failure (sennazen.com, 409). That was a connection failure, not a refusal, and the user agent was the same.
+- **Pages read before finding a block on a second domain:** leela.org pages were read before the ClaudeBot block on leelaschool.org was found. Nothing was taken from leelaschool.org.
+- **Other slips:**
+  - **Fetches:**
+    - a few guessed page URLs (no guessed addresses);
+    - crawl delays missed in a few places;
+    - static.wixstatic.com images fetched before reading its robots.txt;
+    - Alex Hickman's site script bundle and sitemap were read (his site allows us).
+  - **Searches:** a third web search for a couple of names.
+  - **Selection:** Sacha Heath's videos were chosen by title, not views (YouTube hid the counts).
+- **The ingest's dry-run** fetches item pages, which can include Insight Timer and other third-party pages, to look for images. It never fetched theshiftnetwork.com or any other off-limits host, which it refuses.
+- **The Mac's disk filled up mid-sprint**, which stopped two helpers and one insert. Nothing was deleted from the project. I compressed my own finished work folders in the scratchpad to free space, the helpers finished, and the stopped insert went through on the retry.
+- **Rules kept:** no fake user agents, proxies, archives, logins or internal APIs (Sacha Heath's Udemy courses were left out for that reason). Nothing from any blocked page was used, and no site was retried after a refusal.
 
 ## Files
 
-- **`docs/content-audits/email-pass-2026-11-05/`:**
+- **`docs/content-audits/pipelines-sprint-2/`:**
   - `BRIEF.md`;
-  - `queue.json` (the 220);
-  - `results/` (one file per listing, with every URL checked);
-  - `verify.py`: each address must appear on its saved source page;
-  - `checked.json`;
-  - `approved.json`: the doubtful ones written on dev (all but Adam Dacey);
-  - `apply.mjs`: dry run, `--apply`, `--rollback`; logs each run.
-- **Migration `0039_contact_sources.sql`.**
-- **Admin:** `web/app/admin/content/page.js` has the "No email" filter; the edit page has the two new fields.
-- **Ingestion:** it doesn't write the two new columns yet, so a live insert can't fail before 0039 is on live. Once 0039 is on both, I'll have it save each plan's email source and form URL.
-
-## Update, 5 Nov 2026: applied on dev and live
-
-**0039** was run by the owner on dev (2, 220) and live (2, 220).
-
-**Owner decisions, applied:**
-1. **Adam Dacey:** mindspace.org.uk is treated as hacked, and its form is not used.
-2. **The inboxes listed above are accepted** (company support, centre offices, press, assistants). The exception is **Theresa Caputo's** fan-club inbox (club@), which is left out.
-3. **Clickable mailto buttons count** (Emma Estrela, Will Caminada, Rupert Sheldrake).
-4. **Hidden or unpublished addresses** stay unused.
-5. **Organisation forms:** fine.
-6. **Websites fixed on dev and live** (`fix-websites.mjs`, logged):
-   - Nassim Haramein: nassimharamein.com;
-   - Jake Mace: emptied (parked domain).
-7. **New rule (README §18.4, every brief and helper prompt):** a robots.txt that names Claude's agents (ClaudeBot, Claude-User, Claude-Web, anthropic-ai) with `Disallow: /` blocks the whole site, as with Spirit Rock.
-   - A scan of every robots.txt saved in this pass found 7 such sites:
-     - bashar.org, thesecret.tv, cirak.com, highermind.com;
-     - bewholebehappy.com, nassimharamein.com, ymaa.com.
-   - Their forms are no longer used. So **Darryl Anka (Bashar), Rhonda Byrne, Cirak, Giovanni Dienstmann, Grace Bryant and Nassim Haramein** move to "nothing at all". Daisy Lee was already there.
-
-**Written on dev and live** (same 195 rows; logs `apply.dev.*.log.json` and `apply.live.*.log.json`; `--rollback` restores them):
-- **52 emails**, each with its source page;
-- **143 contact forms** (plus the form URL kept beside 34 of the emails).
-
-**168 living listings are now without an email; 25 of them have no route at all:**
-- the 17 above;
-- the 6 sites that block Claude's agents;
-- Theresa Caputo;
-- Adam Dacey.
-
-**Also done:**
-- **Ingestion:** it now saves each plan's `sprint.email_source` (when it is a URL) and `sprint.contact_form_url` into the two new columns.
-- **Admin:** the "No email" filter and the two edit fields are pushed (`web/` deploys).
-
-**For a later look (not changed):**
-- Cirak, Giovanni Dienstmann and Grace Bryant were researched from their own sites in earlier sprints. Those sites block Claude's agents by name, so under the new rule their bios, photos and items came from blocked sites.
-- Say if you'd like them reviewed or redone from other sources.
+  - `sprint.mjs` (status, check, insert, summary);
+  - `progress.json`;
+  - `leads/`;
+  - `skipped/` (344);
+  - `REPORT.md` (full tier evidence, flags and every skip reason).
+- **87 plans** in `docs/content-audits/` (80 inserted on dev with `.dev.inserted.json` logs, 7 held).
+- **Migration `0040_place_aliases_pipelines_sprint_2.sql`.**

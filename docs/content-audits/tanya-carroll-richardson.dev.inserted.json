@@ -1,0 +1,70 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 903,
+    "healer_slug": "tanya-carroll-richardson"
+  },
+  "rows": [
+    {
+      "table": "books",
+      "id": 1995,
+      "slug": "angel-intuition",
+      "title": "Angel Intuition: A Psychic's Guide to the Language of Angels"
+    },
+    {
+      "table": "books",
+      "id": 1996,
+      "slug": "are-you-an-earth-angel",
+      "title": "Are You an Earth Angel?: Understand Your Sensitive & Empathic Nature & Live with Divine Purpose"
+    },
+    {
+      "table": "books",
+      "id": 1997,
+      "slug": "empath-heart",
+      "title": "Empath Heart: Relationship Strategies for Sensitive People"
+    },
+    {
+      "table": "books",
+      "id": 1998,
+      "slug": "love-notes-to-my-self",
+      "title": "Love Notes to My Self: Meditations and Inspirations for Self-Compassion and Self-Care"
+    },
+    {
+      "table": "books",
+      "id": 1999,
+      "slug": "zen-teen",
+      "title": "Zen Teen: 40 Ways to Stay Calm When Life Gets Stressful"
+    },
+    {
+      "table": "books",
+      "id": 2000,
+      "slug": "self-care-for-the-soul",
+      "title": "Self-Care for the Soul: 111 Exercises, Rituals & Invitations for Spiritual Well-Being"
+    },
+    {
+      "table": "books",
+      "id": 2001,
+      "slug": "awakening-intuition-oracle-deck",
+      "title": "Awakening Intuition: Oracle Deck and Guidebook"
+    },
+    {
+      "table": "books",
+      "id": 2002,
+      "slug": "the-comforting-wisdom-oracle",
+      "title": "The Comforting Wisdom Oracle"
+    },
+    {
+      "table": "courses",
+      "id": "536cf764-735c-4cdb-a3ae-a607b65acaa7",
+      "slug": "intuitive-readings-with-tanya",
+      "title": "Intuitive Readings with Tanya"
+    },
+    {
+      "table": "courses",
+      "id": "bd4173e4-e8bd-4565-8867-892b29c72dd0",
+      "slug": "angel-energy-clearings",
+      "title": "Angel Energy Clearings"
+    }
+  ],
+  "at": "2026-11-05T16:04:31.713Z"
+}

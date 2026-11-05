@@ -1,0 +1,132 @@
+{
+  "healer": {
+    "healer_slug": "shelly-reef",
+    "location_source": null,
+    "no_public_base": "Her site's about and contact pages give no home town or base, and the site then rate-limited us, so no further pages were read. Her YouTube videos show sessions in Sedona, Joshua Tree and San Diego, which are event locations, not a stated base.",
+    "create": {
+      "name": "Shelly Reef",
+      "bio": "Shelly Reef is a sound healer, musician and meditation teacher who has taught for over twenty years in more than twenty-five countries. Her main instrument is the harp: she created the Therapy Harp approach, a way of playing a small lap harp for meditation and sound sessions, and trains other practitioners in it through beginner, advanced and certification courses. She also works with crystal bowls, chimes and monochords, and for about fifteen years has taught courses in telepathy and remote viewing as part of her interest in consciousness beyond the senses.\n\nAlongside her own teaching she co-developed AntiGravity Restorative Aerial Yoga, has taught for The Shift Network, and contributed music to the film Frequency: The Secret of Everything. She offers private sound sessions and empathic readings, and her YouTube channel carries long guided sound meditations with harp, bowls and voice as well as shorter teaching clips. A collaborative album with Christine Stevens and a memoir about interdimensional contact are both described on her site as forthcoming.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "worldwide",
+      "city": null,
+      "country": null,
+      "subjects": [
+        "sound-healing",
+        "meditation",
+        "consciousness"
+      ],
+      "website_url": "https://shellyreef.com/",
+      "booking_url": "https://shellyreef.com/",
+      "youtube_url": "https://www.youtube.com/@ShellyReef",
+      "instagram_url": "https://www.instagram.com/shellyreef/",
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": null,
+      "image_urls": [
+        "https://yt3.googleusercontent.com/ytc/AIdro_l-JAZYHB1_rMiG_4z5ris5yZWvLqamJi2kkEGwlsH5=s900"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "the-shift-network",
+      "role": "instructor"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Harp and Light Sound Healing | 45-Minute Guided Meditation",
+      "url": "https://www.youtube.com/watch?v=QwZJwMteP5A",
+      "subjects": [
+        "sound-healing",
+        "meditation"
+      ],
+      "channel": "Shelly Reef"
+    },
+    {
+      "title": "Share and receive LOVE!  ~ Global Light Meditation",
+      "url": "https://www.youtube.com/watch?v=MAFZclHLydg",
+      "subjects": [
+        "meditation",
+        "sound-healing"
+      ],
+      "channel": "Shelly Reef"
+    },
+    {
+      "title": "Journey into Harmonic Overtones",
+      "url": "https://www.youtube.com/watch?v=2cLkSxFl5x8",
+      "subjects": [
+        "sound-healing"
+      ],
+      "channel": "Shelly Reef"
+    },
+    {
+      "title": "Monochord Sound Healing Meditation | The Eternal Tone – Shelly Reef",
+      "url": "https://www.youtube.com/watch?v=-qZjTMOFSQM",
+      "subjects": [
+        "sound-healing",
+        "meditation"
+      ],
+      "channel": "Shelly Reef"
+    },
+    {
+      "title": "RESTORE WHOLENESS to every aspect of you, right now",
+      "url": "https://www.youtube.com/watch?v=rxaIDJI6JH4",
+      "subjects": [
+        "sound-healing",
+        "meditation"
+      ],
+      "channel": "Shelly Reef"
+    },
+    {
+      "title": "Cosmic Contact Sound Journey",
+      "url": "https://www.youtube.com/watch?v=tWQxX8KIsnU",
+      "subjects": [
+        "sound-healing",
+        "consciousness"
+      ],
+      "channel": "Shelly Reef"
+    },
+    {
+      "title": "Sonic Sojourn: All you need is breathing you right now",
+      "url": "https://www.youtube.com/watch?v=Vo0_07c-V8Y",
+      "subjects": [
+        "sound-healing",
+        "breathwork"
+      ],
+      "channel": "Shelly Reef"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "pipelines-2",
+    "hub": "the-shift-network",
+    "rank": 155,
+    "hub_url": null,
+    "tier_evidence": "YouTube @ShellyReef 923 subscribers (channel header, 5 Nov 2026); Instagram and Facebook not read (off limits) → ~900 readable → local_hero",
+    "email": "contact form",
+    "email_source": null,
+    "contact_form_url": "https://shellyreef.com/pages/contact",
+    "bio_check": "OK: no 8-word runs against 3 source(s)",
+    "flags": [
+      "Shift named on: https://shellyreef.com/pages/about-shelly ('taught ... for the Shift Network'); her YouTube channel also has a Shift Network clip.",
+      "shellyreef.com returned 'local_rate_limited' on the Therapy Harp Beginners Course and Empathic Reading product pages (5 Nov 2026); not retried and no further pages fetched from the site. Offerings (Therapy Harp courses and certification, private sound sessions, empathic readings, telepathy and remote viewing training) could therefore not be confirmed and are left out; a human may want to add them.",
+      "Base not published on the pages read (see no_public_base).",
+      "Only one photo: her YouTube channel avatar. The images on her site's home and about pages are named 'ChatGPT_Image…' (apparently AI-generated) and were not used. A second, confirmed headshot would help.",
+      "Much of her site is a shop for therapy harps and sound instruments; the listing covers her teaching and sound meditation only.",
+      "Listing has videos only (no offerings, books or free resources confirmed) because of the rate limit."
+    ],
+    "left_out": [
+      "Therapy Harp Mastery (Nov 7-8 & 14-15, 2026, $700): starts before 9 Nov 2026.",
+      "Therapy Harp Beginners Course, certification, Empathic Reading, private sound sessions: pages rate-limited, not confirmed.",
+      "Telepathy & Remote Viewing Training: Eventbrite page (third-party), not opened.",
+      "Instrument sales (therapy harps, crystal bar chimes, monochords).",
+      "YouTube clips under ~2 minutes, product demos, the 'Relax Instantly' 3-minute clip and 'Therapy Harp Healing' promo."
+    ]
+  },
+  "images_final": true
+}

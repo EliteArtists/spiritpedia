@@ -1,0 +1,39 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 905,
+    "healer_slug": "josephine-sorciere"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "d6c3f8cd-f330-4cf7-8b98-90740340dcad",
+      "slug": "the-enigma-initiation",
+      "title": "The Enigma Initiation"
+    },
+    {
+      "table": "courses",
+      "id": "3d68d2ab-8f5e-4d07-b8a6-d1396f68b3e6",
+      "slug": "potent-disruptors",
+      "title": "Potent Disruptors"
+    },
+    {
+      "table": "courses",
+      "id": "6897fb44-c4c1-41c7-9300-c754eb03efdd",
+      "slug": "wandering-enrichment-e-book",
+      "title": "Wandering Enrichment (e-book)"
+    },
+    {
+      "table": "free_resources",
+      "id": "970f53e8-1e4b-494c-a6a5-7f8cef59523b",
+      "slug": "josephine-sorciere-on-insight-timer",
+      "title": "Josephine Sorciere on Insight Timer"
+    },
+    {
+      "table": "hub_teachers",
+      "id": "c317e88f-4576-4a56-89b4-e511839380df",
+      "title": "josephine-sorciere teaches at Insight Timer"
+    }
+  ],
+  "at": "2026-11-05T16:04:49.010Z"
+}

@@ -1,0 +1,181 @@
+{
+  "healer": {
+    "healer_slug": "hillary-raining",
+    "location_source": "https://www.hillaryraining.com/",
+    "create": {
+      "name": "Rev. Dr. Hillary Raining",
+      "bio": "Hillary Raining is an Episcopal priest who is rector at St. Columba's, a large Episcopal parish in Washington, DC, and who brings yoga, meditation and time in nature into Christian spiritual practice. She traces her sense of vocation to her earliest childhood memory, studied at Yale and its Institute of Sacred Music, and earned a Doctorate in Ministry at Drew University with research on worship, preaching and reconciliation. She has taught at the General Theological Seminary, where she directed its doctoral ministry programme and its Center of Christian Spirituality, and has written on confession and on Christian yoga.\n\nShe is a registered yoga teacher working mainly in the Ashtanga style, a meditation teacher, a spiritual director and a certified forest therapy guide, and she also keeps bees. That last interest gave its name to The Hive, the online community she founded for progressive Christians, which offers monthly classes, guided meditations, yoga sessions, book groups and recorded courses on the mystics, scripture and contemplative practice. She preaches most Sundays in her parish, leads retreats and talks for churches and conferences, and has taught online for The Shift Network on practices drawn from the Christian mystics. She is also a Sault Ste. Marie Chippewa tribal member.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local_online",
+      "city": "Washington, DC",
+      "country": "United States",
+      "subjects": [
+        "mysticism",
+        "meditation",
+        "yoga"
+      ],
+      "website_url": "https://www.hillaryraining.com/",
+      "booking_url": "https://www.thehiveapiary.com/pricing-plans/plans-pricing",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": null,
+      "image_urls": [
+        "https://images.squarespace-cdn.com/content/v1/599b3987f9a61e6421e6bae7/08a5f7ed-f86e-4160-b39c-36ceb477ea51/Raining+Headshot.jpg?format=1000w",
+        "https://images.squarespace-cdn.com/content/v1/599b3987f9a61e6421e6bae7/1505320835057-9OJTF658YREDIAEBLICL/170720_Yoga+with+A+Twist%2C+Part+2+Head+Shots+and+Book+Cover_St.+David%27s+Episcopal+Church+PA_Bill+Ecklund_328-Edit-Edit-ExposureX170720_Yoga+with+A+Twist%2C+Part+2+Head+Shots+and+Book+Cover_St.+David%27s+Episcopal+Ch.jpg?format=1000w"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "the-shift-network",
+      "role": "instructor"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Faith at Home Series - Meditation",
+      "url": "https://www.youtube.com/watch?v=apLXwm6qvoU",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "channel": "The Hive"
+    },
+    {
+      "title": "Life Transformed - The Way of Love in Lent (Intro)",
+      "url": "https://www.youtube.com/watch?v=TpzoSqjhd_o",
+      "subjects": [
+        "spirituality"
+      ],
+      "channel": "The Hive"
+    },
+    {
+      "title": "Easter Sunday Sermon -The Rev. Dr. Hillary Raining  (April 5, 2026)",
+      "url": "https://www.youtube.com/watch?v=3JBdiPOEU6Y",
+      "subjects": [
+        "spirituality"
+      ],
+      "channel": "St. Columba's Episcopal Church"
+    },
+    {
+      "title": "Christmas Eve Sermon - The Rev  Dr.  Hillary Raining (2025)",
+      "url": "https://www.youtube.com/watch?v=3M1gU5oHqk4",
+      "subjects": [
+        "spirituality"
+      ],
+      "channel": "St. Columba's Episcopal Church"
+    },
+    {
+      "title": "2019 Clergy Retreat (Bless & Rest) - The Rev. Dr. Hillary Raining",
+      "url": "https://www.youtube.com/watch?v=sNFVrIO9_q0",
+      "subjects": [
+        "spirituality",
+        "meditation"
+      ],
+      "channel": "Episcopal Diocese of Upper South Carolina"
+    },
+    {
+      "title": "1 Hillary Raining: A Conversation on Wellness Practices for Women (11-4-23)",
+      "url": "https://www.youtube.com/watch?v=TBVtqxfeK14",
+      "subjects": [
+        "spirituality",
+        "yoga"
+      ],
+      "channel": "Trinity Spiritual Center"
+    }
+  ],
+  "books": [],
+  "courses": [
+    {
+      "title": "The Hive Membership",
+      "url": "https://www.thehiveapiary.com/pricing-plans/plans-pricing",
+      "description": "Monthly membership of the online community she founded, with new classes each month and a library of past courses, meditations, talks, yoga sessions and book discussions. A seven-day free trial is offered.",
+      "price": "$24.99 USD per month",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "spirituality",
+        "meditation",
+        "yoga"
+      ],
+      "image": "https://static.wixstatic.com/media/cd18e5_a6f6053a35e64ea4a6d22bfbe8afc56e%7Emv2.png/v1/fit/w_2500,h_1330,al_c/cd18e5_a6f6053a35e64ea4a6d22bfbe8afc56e%7Emv2.png"
+    },
+    {
+      "title": "Joy in Confession: Freedom in Forgiveness",
+      "url": "https://www.thehiveapiary.com/all-courses/joy-in-confession",
+      "description": "A six-part recorded workshop on forgiveness and reconciliation, read through scripture, church tradition and spiritual practice. Each session pairs a short meditation with a practice to try, and a booklet doubles as a journal.",
+      "price": "Included in The Hive membership",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "spirituality",
+        "meditation"
+      ],
+      "image": "https://static.wixstatic.com/media/cd18e5_70366f4104b043ef88d2a6d7dd2bcba0~mv2.png/v1/fill/w_1600,h_1080,al_c/JIC%20Cover%20no%20box%20VM.png"
+    },
+    {
+      "title": "The Science of Hope and Joy",
+      "url": "https://www.thehiveapiary.com/all-courses/the-science-of-hope-and-joy",
+      "description": "A five-week course, now available as replays, built on Paul's letter to the Philippians. It sets that letter beside research on hope and joy and uses prayerful exercises to practise a more hopeful outlook.",
+      "price": "Included in The Hive membership",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "spirituality"
+      ],
+      "image": "https://static.wixstatic.com/media/cd18e5_f03773939a08481b8ade50cfa501a290~mv2.png/v1/fill/w_940,h_788,al_c/The%20Science%20of%20Hope%20and%20Joy%20(Facebook%20Post)%20(1).png"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Free Yoga Class",
+      "url": "https://www.subscribepage.com/freeyogaclass",
+      "description": "A free yoga class offered from her writings page in exchange for signing up to her mailing list.",
+      "featured": true,
+      "resource_type": "practice",
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://bucket.mlcdn.com/a/1568/1568200/images/4747e2acfffeb968a781049a90a3532583e13d85.png"
+    }
+  ],
+  "sprint": {
+    "sprint": "pipelines-2",
+    "hub": "the-shift-network",
+    "rank": 125,
+    "hub_url": null,
+    "tier_evidence": "No personal social accounts linked from her site; The Hive's Facebook and Instagram are the community's accounts (not counted, and off limits); The Hive's and St. Columba's YouTube channels are organisation channels (not counted) → 0 readable personal counts → local_hero",
+    "email": "contact form",
+    "email_source": null,
+    "contact_form_url": "https://www.hillaryraining.com/connect",
+    "bio_check": "OK: no 8-word runs against 12 source(s)",
+    "flags": [
+      "Shift named on: https://www.hillaryraining.com/writings (Mystical Summit talk, 2022, and a seven-part Hive Christianity class, 2023).",
+      "Follower counts could not be read for any personal account (none linked); tier local_hero.",
+      "Name kept as 'Rev. Dr. Hillary Raining' because she presents with the title throughout her site and Hive pages; owner may prefer 'Hillary Raining'.",
+      "Christian (Episcopal) priest: her teaching is Christian contemplative practice with yoga and meditation; subjects mysticism, meditation, yoga.",
+      "Base: her home page says she serves as rector of St. Columba's Episcopal Church, Washington, DC (her place of work and parish, not a retreat venue). Availability local_online (parish in person, The Hive online).",
+      "No email published: her connect page has a contact form only (the 'user@domain.com' in the page is a form placeholder).",
+      "Videos: three from The Hive's own channel and her sermons on St. Columba's channel, all embedded on her own site; she is the main speaker in each. Durations not checked individually (sermons and talks, well over 2 minutes).",
+      "The Hive is the online community she founded, so its courses count as hers (owner's 4 Nov rule).",
+      "Free yoga class is a sign-up page on subscribepage.com linked from her writings page; not opened."
+    ],
+    "left_out": [
+      "Books (Joy in Confession, Faith with a Twist, and contributions to Invite Welcome Connect, Reclaiming Christianity and The Disciple's Way): the Forward Movement links on her site now return 404 and no ISBN is published on her own pages.",
+      "Center for Creative Resilience: Underground Seminary (began Wednesday 4 November 2026): dated, already started.",
+      "Hive Christianity class and Mystical Summit talk on The Shift Network (2022–2023): past, presented as past on her site; Shift page not opened.",
+      "A Meditation for Gratitude in Times of Stress (Hive video): stress framing, left out to be safe.",
+      "Home Altar During a Pandemic (Hive video): pandemic framing.",
+      "Hive classes by other teachers (Healing Jephthah's Daughters, Run the Race and others).",
+      "Sermons other than the two festival sermons, to keep the list varied."
+    ]
+  },
+  "images_final": true
+}

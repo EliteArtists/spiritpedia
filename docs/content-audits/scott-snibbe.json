@@ -1,0 +1,209 @@
+{
+  "healer": {
+    "healer_slug": "scott-snibbe",
+    "location_source": "https://www.snibbe.com/contact",
+    "create": {
+      "name": "Scott Snibbe",
+      "bio": "Scott Snibbe is a Berkeley-based meditation teacher, author and new media artist who has practised Tibetan Buddhism for about twenty-five years, with the Dalai Lama and Lama Zopa Rinpoche among his teachers. He teaches analytical meditation, the reflective style of practice found in the Tibetan tradition, in which you think a theme through step by step (the value of this life, change and impermanence, how the mind builds its stories, love for others) rather than only resting attention on the breath. He presents it in plain, secular language for people who are curious about Buddhist ideas but wary of religious belief.\n\nHow to Train a Happy Mind, his 2024 book with a foreword by the Dalai Lama, sets out the whole path, and he hosts a weekly podcast of the same name with guided meditations, solo talks and conversations with other teachers. Through the nonprofit he leads, A Skeptic's Path to Enlightenment, he runs an online community with a live Sunday meditation and discussion, recorded courses and occasional retreats in California. Alongside this he has a long career as an interactive artist, with work held by the Museum of Modern Art and the Whitney in New York.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "worldwide",
+      "city": "Berkeley, California",
+      "country": "United States",
+      "subjects": [
+        "meditation",
+        "spirituality",
+        "consciousness"
+      ],
+      "website_url": "https://trainahappymind.org/",
+      "booking_url": "https://community.trainahappymind.org/p/join",
+      "youtube_url": "https://www.youtube.com/@trainahappymind",
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": null,
+      "image_urls": [
+        "https://trainahappymind.org/wp-content/uploads/2026/01/Scott-happy-square-scaled.jpg",
+        "https://images.squarespace-cdn.com/content/v1/6196ff78e26b392cbfa37cff/1735058050197-QR0HBIX8RVFC81EQDWLH/Scott-SF-2024.jpg"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "insight-timer",
+      "role": "instructor"
+    }
+  ],
+  "videos": [
+    {
+      "title": "What Buddhism Says the Mind Really Is",
+      "url": "https://www.youtube.com/watch?v=Rgwb25WXsFs",
+      "subjects": [
+        "consciousness",
+        "meditation"
+      ],
+      "channel": "How to Train a Happy Mind"
+    },
+    {
+      "title": "Return to Your Body, Return to Yourself | Meditation",
+      "url": "https://www.youtube.com/watch?v=rnjqzD3JjTU",
+      "subjects": [
+        "meditation"
+      ],
+      "channel": "How to Train a Happy Mind"
+    }
+  ],
+  "books": [
+    {
+      "title": "How to Train a Happy Mind: A Skeptic's Path to Enlightenment",
+      "slug": "how-to-train-a-happy-mind",
+      "author": "Scott Snibbe",
+      "asin": "1786787466",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "A step-by-step course in analytical meditation drawn from Tibetan Buddhist practice and written for a secular reader, with a foreword by the Dalai Lama. Each chapter works through one reflection, from appreciating this life to letting go of unhelpful habits, with guided meditations to practise.",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1786787466.01._SCLZZZZZZZ_.jpg"
+    }
+  ],
+  "courses": [
+    {
+      "title": "Train a Happy Mind Community Membership",
+      "url": "https://community.trainahappymind.org/p/join",
+      "description": "Membership of the online community run by Scott's nonprofit. It includes the live weekly meditation and discussion, the recorded courses and member forums, with a free two-week trial.",
+      "price": "$9/month or $99/year USD (Joyful Minds tier $29/month or $299/year USD)",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://community.trainahappymind.org/content-assets/public/eyJhbGciOiJIUzI1NiJ9.eyJvYmplY3Rfa2V5IjoiNXFyajJxaGNjcWVjaHFqZnFxa3g2aHh2OTVoNCIsImRvbWFpbiI6ImNvbW11bml0eS50cmFpbmFoYXBweW1pbmQub3JnIn0.Vp5DkdoqaTeETe0rUldOpYJyZ2lSd9VaHZJuUS91-Do"
+    },
+    {
+      "title": "Live Weekly Meditation & Discussion with Scott Snibbe",
+      "url": "https://community.trainahappymind.org/live-weekly-meditation-discussion-with-scott-snibbe",
+      "description": "A live online session every Sunday morning, Pacific time, in which Scott guides an analytical meditation and then opens a group conversation. The sessions work in turn through the eight themes of his book.",
+      "price": "$199 USD",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://community.trainahappymind.org/content-assets/public/eyJhbGciOiJIUzI1NiJ9.eyJvYmplY3Rfa2V5IjoiYnoxOGdob2hyb3FvNTVqY2M2Zm9ydnFneDJkaSIsImRvbWFpbiI6ImNvbW11bml0eS50cmFpbmFoYXBweW1pbmQub3JnIn0.gyQo4h9ZbHmobsZWtRG0zUh577OnN0eWLSkz-kyH1h0"
+    },
+    {
+      "title": "A Skeptic's Path to Enlightenment in 9 Meditations",
+      "url": "https://community.trainahappymind.org/spte-9-meditations-fall-2023",
+      "description": "A recorded twelve-week course that takes you through a sequence of nine analytical meditations, from the nature of the mind to impermanence and compassion. Each class pairs teaching with a guided practice.",
+      "price": "$99 USD",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "consciousness"
+      ],
+      "image": "https://community.trainahappymind.org/content-assets/public/eyJhbGciOiJIUzI1NiJ9.eyJvYmplY3Rfa2V5IjoicG9kNWE1d3JxZ3dsaDUzNWF5c3V0MG52eHZmaCIsImRvbWFpbiI6ImNvbW11bml0eS50cmFpbmFoYXBweW1pbmQub3JnIn0.W-FaBOSHJnm2rUCzqOT0OggyH_UjCDXzN3ytiSVQN9Y"
+    },
+    {
+      "title": "How to Train a Happy Mind Guided Meditations",
+      "url": "https://community.trainahappymind.org/how-to-train-a-happy-mind-guided-meditation-videos",
+      "description": "Video and audio recordings of every meditation in the book, made at his first retreat on the book at Vajrapani Institute in 2024. The audio can be downloaded for your own practice.",
+      "price": "$49 USD",
+      "product_type": "download",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://community.trainahappymind.org/content-assets/public/eyJhbGciOiJIUzI1NiJ9.eyJvYmplY3Rfa2V5IjoiZWxtZHM5bmdjaGM2dzNyNzF1ZGk4MGFpZWJldiIsImRvbWFpbiI6ImNvbW11bml0eS50cmFpbmFoYXBweW1pbmQub3JnIn0.7tmm4TgTrFoxN-09WCcu9hay6Mp_mism4ULVb5BN3ao"
+    },
+    {
+      "title": "Cultivating Patience",
+      "url": "https://community.trainahappymind.org/cultivating-patience",
+      "description": "A recorded course on patience as Buddhism understands it, drawing on the eighth-century teacher Shantideva. Scott looks at how to meet difficult people and situations without passing harm on, and without becoming passive.",
+      "price": "$39 USD",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "image": "https://community.trainahappymind.org/content-assets/public/eyJhbGciOiJIUzI1NiJ9.eyJvYmplY3Rfa2V5IjoiOXQzdWI1eDBrZnRwczM3ZThtempoY29jdG5raSIsImRvbWFpbiI6ImNvbW11bml0eS50cmFpbmFoYXBweW1pbmQub3JnIn0.9ApWTb5vib3W7nxFdySALEoDDyOTuDRRiF6nFMg2dA4"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Scott Snibbe on Insight Timer",
+      "url": "https://insighttimer.com/trainahappymind",
+      "description": "The How to Train a Happy Mind profile on Insight Timer, with guided analytical meditations and podcast episodes. The tracks are free to play.",
+      "featured": false,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://trainahappymind.org/wp-content/uploads/2026/01/Scott-happy-square-scaled.jpg"
+    },
+    {
+      "title": "How to Train a Happy Mind Podcast",
+      "url": "https://trainahappymind.org/podcast/",
+      "description": "Scott's free weekly podcast, mixing guided meditations, short teachings and conversations with Buddhist teachers, scientists and artists. Episodes are also on YouTube and the main podcast apps.",
+      "featured": true,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "image": "https://m.media-amazon.com/images/P/1786787466.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "Try a Guided Analytical Meditation",
+      "url": "https://trainahappymind.org/practice/",
+      "description": "A short selection of free guided meditations for newcomers, on themes such as what matters most in life, love as wishing others well, and seeing other people's lives in full.",
+      "featured": false,
+      "resource_type": "practice",
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://trainahappymind.org/wp-content/uploads/2026/01/Scott-happy-square-scaled.jpg"
+    }
+  ],
+  "sprint": {
+    "sprint": "pipelines-2",
+    "hub": "insight-timer",
+    "rank": 279,
+    "hub_url": "https://insighttimer.com/trainahappymind",
+    "tier_evidence": "YouTube @trainahappymind 8.08k subscribers (channel header, read 5 Nov 2026; his project's channel, which he hosts); Insight Timer 3.9k followers (queue entry, read 1 Nov 2026); Instagram, Facebook and TikTok @trainahappymind not read (off limits) → ~12k readable → local_hero",
+    "email": "contact form",
+    "email_source": null,
+    "contact_form_url": "https://trainahappymind.org/contact/",
+    "bio_check": "OK: no 8-word runs against 28 source(s)",
+    "flags": [
+      "Naming: the queue entry is the brand 'How to Train a Happy Mind' (Insight Timer slug trainahappymind); listed as the teacher behind it, Scott Snibbe, who hosts the podcast, wrote the book and leads the community. The Insight Timer free resource is titled with his name; the owner may prefer the brand name.",
+      "Parked entry: contact route now found, a form (subject, email, name, message) on https://trainahappymind.org/contact/. No email published on trainahappymind.org or snibbe.com (snibbe.com/contact also has a form, for art and speaking enquiries).",
+      "Base: Berkeley, California, from the studio address on https://www.snibbe.com/contact (city only used; a street address is published there). The queue said San Rafael; not used. Listed worldwide since the teaching is online.",
+      "YouTube channel and social accounts belong to the How to Train a Happy Mind project, not a personal account; counted because the listing is in effect that project. Many videos on the channel are guest interviews; only two that appear to be his own solo episodes were picked (no guest named; YouTube showed auto-translated Portuguese titles to us, so English titles taken from oEmbed). View counts on the channel page could not be read; the two picked show 310 and 571 views.",
+      "Book: ASIN 1786787466 from the Amazon link on his own book page https://trainahappymind.org/how-to-train-a-happy-mind-book/ (not opened), matching ISBN 978-1786787460 shown there and on the linked Red Wheel/Weiser page (not opened); not confirmed elsewhere. Cover URL follows the Amazon image-CDN pattern other plans use; not opened or checked.",
+      "A web search result showed a Penguin Random House listing for 'A Skeptic's Path to Enlightenment' by him; it looks like an earlier title for the same book, so not added.",
+      "His snibbe.com site is mostly about his art career (MoMA, Whitney, Headlands residency); only the meditation work is listed here.",
+      "'How to Find Peace in a World at War' (weekly group talk prompted by a new war) left out as topical and close to current affairs.",
+      "Photos: from trainahappymind.org (2026 headshot) and snibbe.com (2024 at a microphone); same man in both, checked by eye."
+    ],
+    "left_out": [
+      "How to Train a Happy Mind retreat at Vajrapani Institute (search snippet said August 2026): past.",
+      "Guest-led videos and meditations on the channel (Shireen Mansouri, Aproteem Choudhury, Lodro Rinzler, Robert Thurman and others): not his teaching.",
+      "'The Surprising Geometry Behind Buddhist Art' and other art-focused episodes: about his art, not teaching.",
+      "'Healthy Masculinity: A Meditation on Sex, Strength, and Love': guest-led.",
+      "Instagram, Facebook, TikTok, X and the Substack profile on substack.com: off limits, not opened."
+    ]
+  },
+  "images_final": true
+}

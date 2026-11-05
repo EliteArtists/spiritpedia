@@ -1,0 +1,164 @@
+{
+  "healer": {
+    "healer_slug": "marta-metrass",
+    "location_source": "https://www.yogaofemotions.com/founder",
+    "no_public_base": "Her founder page says only that Thailand is where she and her family now live; no town is published, so city and country are left null for mapping.",
+    "create": {
+      "name": "Marta Metrass",
+      "bio": "Marta Metrass is a yoga teacher and the creator of Yoga of Emotions, an approach that treats a yoga class as a place to notice and work with feeling as well as posture. She holds a master's degree in dance from a Portuguese university of human kinetics and is registered with Yoga Alliance as an experienced 500-hour teacher and continuing-education provider. She came to yoga after a career in a creative industry, then moved to Thailand with her young family to study and teach full time.\n\nFor about seven years she lived in Bali, where she opened a practice space of her own, The Temple of Emotions, before returning to Thailand, which is now home. Each of her classes is built around a theme, combining flowing vinyasa and hatha sequences with breathing, meditation, mantra, chakra work and simple ritual. She offers recorded courses at beginner, intermediate and advanced levels, a membership with a weekly live class on Zoom, pilgrimages and retreats in Asia, and a 200-hour teacher training held in Thailand. She also creates personal ceremonies for life transitions, and has guided practices on Insight Timer and talks in Portuguese and English on her YouTube channel.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "worldwide",
+      "city": null,
+      "country": null,
+      "subjects": [
+        "yoga",
+        "meditation",
+        "chakra-healing"
+      ],
+      "website_url": "https://yogaofemotions.com/",
+      "booking_url": "https://www.yogaofemotions.com/online-class",
+      "youtube_url": "https://www.youtube.com/channel/UCj5RqbUY7S4F0WVUKsHmQvA",
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "info@martametrass.com",
+      "image_urls": [
+        "https://yt3.googleusercontent.com/XPOZs8Hipg5pF4DWsrRsC4MGzvd5JLVZAJp-0rjjORw3agqAy6FHpyNKygGMAeJ3nXvj1SljgQ=s900",
+        "https://storage.googleapis.com/msgsndr/XUTLnJH3nMpx5huFlGr2/media/6964beaf02f1be6690d28872.jpg",
+        "https://assets.cdn.filesafe.space/XUTLnJH3nMpx5huFlGr2/media/696662eb574eb2a78471b34d.jpg"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "insight-timer",
+      "role": "instructor"
+    }
+  ],
+  "videos": [
+    {
+      "title": "15m Bali inspired Flow - Marta Metrass",
+      "url": "https://www.youtube.com/watch?v=hvkbeTX-0S4",
+      "subjects": [
+        "yoga"
+      ],
+      "channel": "Marta Metrass Yoga of Emotions"
+    },
+    {
+      "title": "Masterclass - O corpo e as Emoções",
+      "url": "https://www.youtube.com/watch?v=LWM9VAxmD1o",
+      "subjects": [
+        "yoga",
+        "meditation"
+      ],
+      "channel": "Marta Metrass Yoga of Emotions"
+    }
+  ],
+  "books": [],
+  "courses": [
+    {
+      "title": "Yoga of Emotions Online Courses",
+      "url": "https://www.yogaofemotions.com/online-course",
+      "description": "A three-level series of recorded courses, beginner to advanced, that pairs yoga sequences with breath and emotional awareness, each level building on the last. The beginner level is open now with lifetime access; the intermediate and advanced levels are offered on pre-order for 2027.",
+      "price": "From $88 USD (beginner level)",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga",
+        "meditation"
+      ],
+      "image": "https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/XUTLnJH3nMpx5huFlGr2/media/69243556e7b094cb3e0f02bb.png"
+    },
+    {
+      "title": "Yoga of Emotions Online Classes Membership",
+      "url": "https://www.yogaofemotions.com/online-class",
+      "description": "A membership built around one live class a week on Zoom, with replays and a library of recorded practices on themes such as the chakras, mantra, the elements, breathwork and yogic philosophy, added to every month.",
+      "price": "$43 USD per month or $430 USD per year",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga",
+        "chakra-healing",
+        "breathwork"
+      ],
+      "image": "https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/XUTLnJH3nMpx5huFlGr2/media/69243556e7b094cb3e0f02bb.png"
+    },
+    {
+      "title": "Ma - A Sacred Immersion in Rishikesh & Haridwar",
+      "url": "https://www.yogaofemotions.com/india-retreat",
+      "description": "A six-night devotional journey in two of India's holy cities on the Ganges, co-led with Nhi Nhi Le. Days combine yoga and meditation with temple visits, the evening Ganga Aarti, kirtan, a tea ceremony and time outdoors.",
+      "price": "$1,400 USD shared room, $1,600 USD private room (standard price)",
+      "product_type": "retreat",
+      "start_date": "2026-11-14",
+      "end_date": "2026-11-20",
+      "subjects": [
+        "yoga",
+        "meditation",
+        "spirituality"
+      ],
+      "image": "https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/XUTLnJH3nMpx5huFlGr2/media/69c1f5e63e56b91f5ba2b49f.jpg"
+    },
+    {
+      "title": "Yoga of Emotions 200-Hour Teacher Training",
+      "url": "https://yogaofemotions.com/yoga-of-emotions",
+      "description": "A 21-day residential training certified by Yoga Alliance, held at a beachfront retreat centre in Thailand, covering vinyasa and hatha, philosophy, meditation, chakras and breath, and how to teach classes shaped around a theme.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": "2027-04-04",
+      "end_date": "2027-04-24",
+      "subjects": [
+        "yoga",
+        "meditation"
+      ],
+      "image": "https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/XUTLnJH3nMpx5huFlGr2/media/6ac8b13fc478ac55356546a7.png"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Marta Metrass on Insight Timer",
+      "url": "https://insighttimer.com/martametrass",
+      "description": "Her guided meditations and yoga practices on the Insight Timer app, free to play.",
+      "featured": true,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation",
+        "yoga"
+      ],
+      "image": "https://yt3.googleusercontent.com/XPOZs8Hipg5pF4DWsrRsC4MGzvd5JLVZAJp-0rjjORw3agqAy6FHpyNKygGMAeJ3nXvj1SljgQ=s900"
+    }
+  ],
+  "sprint": {
+    "sprint": "pipelines-2",
+    "hub": "insight-timer",
+    "rank": 428,
+    "hub_url": "https://insighttimer.com/martametrass",
+    "tier_evidence": "YouTube (channel UCj5RqbUY7S4F0WVUKsHmQvA, @martametrassyogadancelove1052) 275 subscribers (channel header, read 5 Nov 2026; page served in Portuguese). Insight Timer followers not recorded in the queue. Instagram (@martametrass_yogaofemotions, linked from her site) not read (off limits). Total ~275 readable → local_hero.",
+    "email": "yes",
+    "email_source": "https://yogaofemotions.com/",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 7 source(s)",
+    "flags": [
+      "Parked entry: contact route now found. Her home page has a clickable email button whose label and Cloudflare-protected link decode to info@martametrass.com (decoded from data-cfemail, also in the button's aria-label). A second address (martametrass@gmail.com) appears only in hidden page data, so it is not used. No contact form found (the retreats page 'Contact Me' button has no form).",
+      "Base: only 'Thailand' is published (founder page), no town; listed with no_public_base and availability worldwide (online offerings plus retreats and trainings abroad).",
+      "Teacher training venue: 'The Sanctuary Thailand' (beachfront retreat centre) is a venue, not used as her base.",
+      "Photos: the YouTube channel avatar (900 px headshot) and two images from her founder page (close-up portrait with a flower on her forehead; on a beach with arms open). Same woman in all three; the beach image is a very large original (8510 px wide).",
+      "Health wording: her site speaks of 'somatic healing', 'nervous system regulation', 'trauma-informed Yin' and 'dance therapy'; item descriptions avoid these. Her main work is yoga classes, courses and trainings, so not skipped under the therapy rule.",
+      "Two-figure prices on the online-course page (e.g. '$157 $88', '$197 $97') read as a crossed-out price and a sale price for two options; 'From $88 USD' used. A human may want to check.",
+      "Ma retreat (14–20 Nov 2026) starts after 9 Nov 2026; early-bird prices had expired (15 Sep 2026), so the standard prices are given. Co-leader Nhi Nhi Le's own bio mentions ThetaHealing; not part of the description.",
+      "Videos: only two teaching videos over two minutes on her channel; the rest are promos, testimonials or under two minutes. One is in Portuguese.",
+      "Regional: none (no town published)."
+    ],
+    "left_out": [
+      "1:1 Mentorship ($222 USD per two-hour session, yogaofemotions.com/tailor-made-7799): the page frames it around emotional regulation, stress and healing, with dance therapy and emotional processing among the methods; left out as borderline therapy.",
+      "Bespoke Ceremonies: shares the same page as the mentorship (no unique URL) and no price; mentioned in the bio only.",
+      "Masterclass 'Como usar os chakras para a nossa cura interna' (title names inner healing, 'cura'): left out as borderline.",
+      "Hare Krishna Mantra video (devotional chant, music-led) and promotional/testimonial videos for the teacher training and retreats; videos under two minutes.",
+      "Earlier 13 May – 2 June 2026 teacher training: past."
+    ]
+  },
+  "images_final": true
+}

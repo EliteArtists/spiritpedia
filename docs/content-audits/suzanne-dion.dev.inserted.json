@@ -1,0 +1,51 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 894,
+    "healer_slug": "suzanne-dion"
+  },
+  "rows": [
+    {
+      "table": "books",
+      "id": 1986,
+      "slug": "the-enneagram-relationships-and-intimacy",
+      "title": "The Enneagram, Relationships, and Intimacy: Understanding One Another Leads to Loving Better and Living More Fully"
+    },
+    {
+      "table": "courses",
+      "id": "36b59c2e-cb4f-4118-9933-6665bef1ed29",
+      "slug": "enneagram-coaching-2",
+      "title": "Enneagram Coaching"
+    },
+    {
+      "table": "courses",
+      "id": "de17d3ad-bef5-4b59-a64e-de15d2260b74",
+      "slug": "enneagram-self-discovery-interview",
+      "title": "Enneagram Self-Discovery Interview"
+    },
+    {
+      "table": "courses",
+      "id": "830a8b2f-6344-4669-a1b1-0681a0ed5ae2",
+      "slug": "workshops-and-trainings",
+      "title": "Workshops and Trainings"
+    },
+    {
+      "table": "courses",
+      "id": "9e66f6e3-4738-4733-82f0-4a41e911870d",
+      "slug": "transforming-relationship-dynamics",
+      "title": "Transforming Relationship Dynamics"
+    },
+    {
+      "table": "courses",
+      "id": "a62017ce-acc1-4fe4-bd55-06fe6ed24e2e",
+      "slug": "pdp-wholeness-and-the-enneagram",
+      "title": "PDP, Wholeness and The Enneagram"
+    },
+    {
+      "table": "hub_teachers",
+      "id": "edbc52af-17c6-47b6-a4ec-e163430c30ce",
+      "title": "suzanne-dion teaches at The Shift Network"
+    }
+  ],
+  "at": "2026-11-05T15:57:47.552Z"
+}

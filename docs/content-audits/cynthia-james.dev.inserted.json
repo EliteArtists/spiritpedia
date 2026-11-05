@@ -1,0 +1,81 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 934,
+    "healer_slug": "cynthia-james"
+  },
+  "rows": [
+    {
+      "table": "videos",
+      "id": 7952,
+      "slug": "finding-your-voice",
+      "title": "Finding Your Voice"
+    },
+    {
+      "table": "videos",
+      "id": 7953,
+      "slug": "finding-your-voice-part-2",
+      "title": "Finding Your Voice Part 2"
+    },
+    {
+      "table": "videos",
+      "id": 7954,
+      "slug": "connecting-to-purpose",
+      "title": "Connecting To Purpose"
+    },
+    {
+      "table": "videos",
+      "id": 7955,
+      "slug": "i-choose-me",
+      "title": "I Choose Me"
+    },
+    {
+      "table": "books",
+      "id": 2043,
+      "slug": "the-kingdom-of-magic-and-mystery",
+      "title": "The Kingdom of Magic and Mystery: 7 Castles of Revelation, Inspiration and Creativity to Activate Joy and Freedom"
+    },
+    {
+      "table": "books",
+      "id": 2044,
+      "slug": "i-choose-me",
+      "title": "I Choose Me: The Art of Being a Phenomenally Successful Woman at Home and at Work"
+    },
+    {
+      "table": "courses",
+      "id": "1a5de879-cef1-403a-9a40-edc1372870e3",
+      "slug": "finding-your-voice",
+      "title": "Finding Your Voice"
+    },
+    {
+      "table": "courses",
+      "id": "d4edd516-2b02-4e10-b919-f84f31601039",
+      "slug": "reveal-your-purpose-self-discovery-introductory-course",
+      "title": "Reveal Your Purpose: Self Discovery Introductory Course"
+    },
+    {
+      "table": "courses",
+      "id": "8a1720c6-26ee-4c74-bb39-94bca297d252",
+      "slug": "revealing-your-purpose-intensive",
+      "title": "Revealing Your Purpose Intensive"
+    },
+    {
+      "table": "courses",
+      "id": "bc087da0-f74b-4846-8e00-0683811e12d0",
+      "slug": "coaching-and-emotional-integration-sessions",
+      "title": "Coaching and Emotional Integration Sessions"
+    },
+    {
+      "table": "free_resources",
+      "id": "344b6a1a-e58d-4e12-ae47-43325f5a5494",
+      "slug": "reflection-reset-gathering",
+      "title": "Reflection & Reset Gathering"
+    },
+    {
+      "table": "hub_teachers",
+      "id": "8597e65a-dc71-446d-bbd8-8bf30461ae26",
+      "title": "cynthia-james teaches at The Shift Network"
+    }
+  ],
+  "at": "2026-11-05T16:31:51.309Z"
+}

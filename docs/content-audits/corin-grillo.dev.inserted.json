@@ -1,0 +1,46 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 898,
+    "healer_slug": "corin-grillo"
+  },
+  "rows": [
+    {
+      "table": "books",
+      "id": 1992,
+      "slug": "the-angel-experiment",
+      "title": "The Angel Experiment: A 21-Day Magical Adventure to Heal Your Life"
+    },
+    {
+      "table": "books",
+      "id": 1993,
+      "slug": "angel-wealth-magic",
+      "title": "Angel Wealth Magic: Simple Steps to Hire the Divine & Unlock Your Miraculous Financial Flow"
+    },
+    {
+      "table": "courses",
+      "id": "df602d61-20ab-40f5-8b34-28af4dcc7038",
+      "slug": "the-inner-sanctum",
+      "title": "The Inner Sanctum"
+    },
+    {
+      "table": "courses",
+      "id": "617eef38-f247-4c5a-88ba-f4f535ee47e4",
+      "slug": "private-modern-vision-quest-at-casa-condor",
+      "title": "Private Modern Vision Quest at Casa Condor"
+    },
+    {
+      "table": "free_resources",
+      "id": "be814581-b3a0-4f95-b68a-fa416780397d",
+      "slug": "7-day-miracle-experiment",
+      "title": "7-Day Miracle Experiment"
+    },
+    {
+      "table": "free_resources",
+      "id": "dfa927f8-178e-46ed-ae27-e2f74864d0fe",
+      "slug": "the-corin-grillo-podcast",
+      "title": "The Corin Grillo Podcast"
+    }
+  ],
+  "at": "2026-11-05T16:03:21.036Z"
+}

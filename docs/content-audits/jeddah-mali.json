@@ -1,0 +1,108 @@
+{
+  "healer": {
+    "healer_slug": "jeddah-mali",
+    "location_source": null,
+    "no_public_base": "Her own domain (jeddahmali.com) now redirects to her organisation's site, intelligent.life, which names no city or country for her or its office.",
+    "create": {
+      "name": "Jeddah Mali",
+      "bio": "Jeddah Mali is the founder and executive director of Intelligent Life, an organisation built around her model of what she calls Natural Intelligence: the view that the laws governing energy in nature also describe how human thinking and behaviour work. For around thirty-five years she has mentored and advised chief executives, thought leaders and others working for change, and her clients come from more than sixty countries.\n\nHer teaching takes energy as the basic stuff of life and turns the patterns that keep living systems going into working principles for people and organisations. Students move through a three-stage method, first grasping an idea, then testing it in their own experience and finally applying it to everyday situations, and the material is gathered into an online curriculum called Oasis. She has given a TEDx talk at a Findhorn salon on what makes life work, and her organisation shares free talks and a short guided meditation on present-moment awareness through its YouTube channel.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "worldwide",
+      "city": null,
+      "country": null,
+      "subjects": [
+        "consciousness",
+        "spirituality",
+        "meditation"
+      ],
+      "website_url": "https://www.intelligent.life/",
+      "booking_url": "https://www.intelligent.life/new-connect",
+      "youtube_url": "https://www.youtube.com/@intelligentlife2273",
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "welcome@intelligent.life",
+      "image_urls": [
+        "https://static.wixstatic.com/media/351e56_edf48eaaea4c45f894fb9d4bd14fbbf9~mv2.jpeg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [
+    {
+      "title": "What Makes Life Work? | Jeddah Mali | TEDxFindhornSalon",
+      "url": "https://www.youtube.com/watch?v=l24PkSU3Y2Y",
+      "subjects": [
+        "consciousness"
+      ],
+      "channel": "TEDx Talks"
+    },
+    {
+      "title": "Life's Hidden Energy | Jeddah Mali",
+      "url": "https://www.youtube.com/watch?v=iBwdmdqIF9I",
+      "subjects": [
+        "consciousness",
+        "spirituality"
+      ],
+      "channel": "Sustainable Human"
+    },
+    {
+      "title": "Short Meditation | Conscious Awareness In The Present Moment",
+      "url": "https://www.youtube.com/watch?v=8x1Jn3xP3KQ",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "channel": "Intelligent Life"
+    },
+    {
+      "title": "Natural Intelligence",
+      "url": "https://www.youtube.com/watch?v=EWo2TeWZjB4",
+      "subjects": [
+        "consciousness"
+      ],
+      "channel": "Intelligent Life"
+    },
+    {
+      "title": "Steadiness & Resilience in Turbulent Times/Session 2: Steadiness: Cultivating Presence and Alignment",
+      "url": "https://www.youtube.com/watch?v=LytkrPZx_q0",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "channel": "Intelligent Life"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "pipelines-2",
+    "hub": "the-shift-network",
+    "rank": 195,
+    "hub_url": null,
+    "tier_evidence": "YouTube 157 (channel header next to @intelligentlife2273, the organisation's channel, 5 Nov 2026); Instagram, Facebook and LinkedIn not readable (off limits to us) → ~0.2k counted → local_hero",
+    "email": "yes",
+    "email_source": "https://www.intelligent.life/new-connect",
+    "contact_form_url": "https://www.intelligent.life/new-connect",
+    "bio_check": "OK: no 8-word runs against 7 source(s)",
+    "flags": [
+      "No Shift mention on own site: listed without the link.",
+      "Her personal domain jeddahmali.com redirects to intelligent.life (her organisation); robots.txt read for each host before fetching pages.",
+      "The email is the organisation's general inbox (welcome@intelligent.life).",
+      "No public base: neither site names a city or country.",
+      "Thin on items: no priced offering has its own page (the Oasis learning platform is described but not linked or priced), so the listing rests on five videos. Please check she merits a page.",
+      "Two videos are on other channels (TEDx Talks and Sustainable Human); both are embedded on her organisation's resources page and she is the speaker.",
+      "Only one photo (the founder photo on the About page); the YouTube avatar is the organisation's logo.",
+      "Possible listing as an organisation instead (Intelligent Life has a team of six); listed as her, since she founded it and the work is hers."
+    ],
+    "left_out": [
+      "The Oasis learning platform: no page, URL or price published.",
+      "'Jeddah talks about Understanding Life Retreat': promotion for a past retreat.",
+      "Newsletters (Mailchimp archives) and the organisation's mapping and consultancy work for businesses."
+    ]
+  },
+  "images_final": true
+}

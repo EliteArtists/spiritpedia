@@ -1,0 +1,140 @@
+{
+  "healer": {
+    "healer_slug": "john-weddepohl",
+    "location_source": "https://rachelzinmanyoga.com/about-john/",
+    "create": {
+      "name": "John Weddepohl",
+      "bio": "John Weddepohl is a South African-born teacher of Atma Vidya, the Self-knowledge of the Upanishads and Vedanta, who also goes by the name Siddharthan. He started teaching yoga in Johannesburg as a teenager in 1969, but his first school was closed under apartheid, and for years he worked as a singer, songwriter and composer for film and television. After travelling to India in the mid-2000s he met the guru who initiated him, spent around seven years studying in Tiruvannamalai, and was asked to pass the teaching on.\n\nHe calls his approach ISHTAM, a name he gave it in 2011, and it rests on three strands: Atma Vidya, traditional study of the scriptures that points to the Self behind the word 'I'; Ishta Mala, a short daily yoga sequence; and Siddha Kriya, a breathing method from the Tamil Siddha tradition. From a home studio in Byron Bay, New South Wales, he gives private and group classes and six-session mentoring packages, and with his wife, the yoga teacher Rachel Zinman, he runs Sundaram Online Ashram, a membership with weekly live classes, Upasana meditation, pranayama and recorded Self-knowledge courses.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local_online",
+      "city": "Byron Bay, New South Wales",
+      "country": "Australia",
+      "subjects": [
+        "non-duality",
+        "ancient-wisdom",
+        "yoga"
+      ],
+      "website_url": "https://www.theyogaco.com/",
+      "booking_url": "https://rachelzinmanyoga.com/mentoring-with-john/",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "info@rachelzinmanyoga.com",
+      "image_urls": [
+        "https://i0.wp.com/www.theyogaco.com/wp-content/uploads/2022/08/John-in-goa-1.jpg?resize=790%2C690&ssl=1",
+        "https://i0.wp.com/rachelzinmanyoga.com/wp-content/uploads/2023/04/John-teaching-for-web-about-page.jpg?resize=800%2C603&ssl=1",
+        "https://i0.wp.com/rachelzinmanyoga.com/wp-content/uploads/2022/12/4.jpg?resize=1080%2C727&ssl=1"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "insight-timer",
+      "role": "instructor"
+    }
+  ],
+  "videos": [
+    {
+      "title": "The Source of Gratitude | John Weddepohl on Atma Vidya",
+      "url": "https://www.youtube.com/watch?v=8OF0ktI68Yo",
+      "subjects": [
+        "non-duality",
+        "ancient-wisdom"
+      ],
+      "channel": "Rachel Zinman"
+    },
+    {
+      "title": "What is the Point of a Guru? | John Weddepohl",
+      "url": "https://www.youtube.com/watch?v=j7ho5fBmoJY",
+      "subjects": [
+        "non-duality",
+        "spirituality"
+      ],
+      "channel": "Rachel Zinman"
+    },
+    {
+      "title": "Self Knowledge and the Nature of Happiness | John Weddepohl on Atma Vidya",
+      "url": "https://www.youtube.com/watch?v=v01jHCOgI90",
+      "subjects": [
+        "non-duality",
+        "ancient-wisdom"
+      ],
+      "channel": "Rachel Zinman"
+    }
+  ],
+  "books": [],
+  "courses": [
+    {
+      "title": "One-on-One Mentoring with John Weddepohl",
+      "url": "https://rachelzinmanyoga.com/mentoring-with-john/",
+      "description": "Six one-hour sessions with John, online or in Byron Bay, combining Self-knowledge study with Siddha Kriya breathing shaped to the student, plus text support between sessions through a Slack group.",
+      "price": "$900 AUD",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "non-duality",
+        "breathwork"
+      ],
+      "image": "https://rachelzinmanyoga.com/wp-content/uploads/2015/12/Rachel-and-John-slider-2.jpg"
+    },
+    {
+      "title": "Sundaram Online Ashram membership",
+      "url": "https://rachelzinmanyoga.com/membership/",
+      "description": "The online membership John runs with Rachel Zinman: a library of recorded Self-knowledge courses, Upasana meditations and yoga classes, with weekly live sessions and a members' community on the higher tiers.",
+      "price": "$29 AUD a month (Sunflower) or $49 AUD a month (Lotus)",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "non-duality",
+        "meditation",
+        "yoga"
+      ],
+      "image": "https://rachelzinmanyoga.com/wp-content/uploads/2015/12/Rachel-and-John-slider-2.jpg"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "John Weddepohl on Insight Timer",
+      "url": "https://insighttimer.com/johnweddepohl",
+      "description": "His guided meditations and talks on the Insight Timer app, free to play.",
+      "featured": true,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation",
+        "non-duality"
+      ],
+      "image": "https://i0.wp.com/www.theyogaco.com/wp-content/uploads/2022/08/John-in-goa-1.jpg?resize=790%2C690&ssl=1"
+    }
+  ],
+  "sprint": {
+    "sprint": "pipelines-2",
+    "hub": "insight-timer",
+    "rank": 401,
+    "hub_url": "https://insighttimer.com/johnweddepohl",
+    "tier_evidence": "Insight Timer 418 followers (queue entry, read 1 Nov 2026); Instagram @johnweddepohl not readable without logging in; the YouTube videos sit on Rachel Zinman's channel (767 subscribers, not his own, not counted) → under 1k readable → local_hero",
+    "email": "yes",
+    "email_source": "https://rachelzinmanyoga.com/contact",
+    "contact_form_url": "https://rachelzinmanyoga.com/contact",
+    "bio_check": "OK: no 8-word runs against 13 source(s)",
+    "flags": [
+      "Parked entry: his own site theyogaco.com still has no email or contact form (only a comment box); the email and contact form are on rachelzinmanyoga.com, the joint ISHTA / Sundaram site he runs with his wife Rachel Zinman, which his own site links for his courses. It is a studio inbox (info@), and the mentoring page says to email Rachel.",
+      "Teaching pair: John and Rachel Zinman run the Sundaram membership together; listed as John (the queue lead), with Rachel in the bio. Rachel is not on Spiritpedia; her own work includes yoga for diabetes, which is left out here.",
+      "Videos are from Rachel Zinman's YouTube channel (@RachelZinmanYoga), where John is the sole speaker; youtube_url left null as it is not his own channel.",
+      "Base: Byron Bay, from rachelzinmanyoga.com/about-john ('home studio in Byron Bay'); the queue said Sydney.",
+      "Regional: Byron Bay, New South Wales (outside Sydney/Melbourne).",
+      "Membership price taken from the membership page; an annual option is also shown. Prices shown with $ on an Australian site, recorded as AUD (the mentoring page states AUD).",
+      "Photos 2 and 3 are from rachelzinmanyoga.com (joint site); all three show the same man and match his own site's About photo."
+    ],
+    "left_out": [
+      "Four ISHTAM online courses linked from theyogaco.com: their rachelzinmanyoga.com pages return 404.",
+      "Yoga for Over 50s (Rachel's course, dated 7-28 Sep 2026, past) and other workshops led by Rachel.",
+      "Music videos (Let's Dance) and a 1-minute clip on the same channel."
+    ]
+  },
+  "images_final": true
+}

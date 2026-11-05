@@ -1,0 +1,113 @@
+{
+  "healer": {
+    "healer_slug": "deb-poole",
+    "location_source": null,
+    "no_public_base": "Her site (wildrestalchemy.com) names no town or country; the queue's Fairfield, Connecticut came from her Insight Timer profile, which was not opened in this sprint, so it is not confirmed.",
+    "create": {
+      "name": "Deb Poole",
+      "bio": "Deb Poole (who also writes as Deb Lauren Poole) is a meditation and breathwork facilitator whose work is built around rest as a spiritual practice. She trained in Yoga Nidra with Santosha in 2017 and later qualified as a SHERPA breath and cold-water instructor, and in 2022 she opened The Plunge Houz, a community space for breathing practice, meditation and cold immersion. Her guided meditations on Insight Timer have been played more than 200,000 times.\n\nShe now teaches through Wild Rest Alchemy, her own practice. Its best-known offering is the Surround Sound Journey, a guided meditation heard on headphones that weaves music, story and imagery together, which she leads for events, retreats and private groups; she also hosts Sacred Suppers, small gatherings that combine a shared meal with ritual and music. Alongside this she has spent around seven years studying Human Design, and she writes long, personal chart readings called Living Maps. Her Attunement Sessions, a six-part one-to-one series, pair a modest fee with a piece of service work agreed with each person, on the view that looking outward is part of finding your footing.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "worldwide",
+      "city": null,
+      "country": null,
+      "subjects": [
+        "human-design",
+        "meditation",
+        "breathwork"
+      ],
+      "website_url": "https://wildrestalchemy.com/",
+      "booking_url": "https://wildrestalchemy.com/attunement",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "debpoole11@gmail.com",
+      "image_urls": [
+        "https://wildrestalchemy.com/assets/deb-in-wild-waterfront-BEUGTdz2.webp",
+        "https://wildrestalchemy.com/assets/deb-in-wild-facilitation-C2exsv9k.webp",
+        "https://wildrestalchemy.com/assets/IMG_0469_1779975681960-Ci8b043i.jpg"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "insight-timer",
+      "role": "instructor"
+    }
+  ],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "The Wild Rest Living Map (Human Design Reading)",
+      "url": "https://wildrestalchemy.com/",
+      "description": "A long written Human Design reading prepared for one person, combining analysis of their chart with reflection prompts and practical suggestions for the stage of life they describe when ordering. Payment plans are offered.",
+      "price": "$199 USD",
+      "product_type": "download",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "human-design",
+        "soul-purpose"
+      ],
+      "image": "https://wildrestalchemy.com/assets/deb-in-wild-waterfront-BEUGTdz2.webp"
+    },
+    {
+      "title": "Attunement Sessions",
+      "url": "https://wildrestalchemy.com/attunement",
+      "description": "A series of six one-to-one sessions for people who feel out of step with their own lives, drawing on Human Design, nervous-system awareness and time in nature. Part of the exchange is a piece of service work chosen together.",
+      "price": "$65 USD per session or $390 USD for six, plus agreed service",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "human-design",
+        "life-coaching",
+        "soul-purpose"
+      ],
+      "image": "https://wildrestalchemy.com/assets/deb-in-wild-waterfront-BEUGTdz2.webp"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Deb Poole on Insight Timer",
+      "url": "https://insighttimer.com/deborahlauren",
+      "description": "Her guided meditations for deep rest and calm on the Insight Timer app, free to play.",
+      "featured": true,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://wildrestalchemy.com/assets/deb-in-wild-waterfront-BEUGTdz2.webp"
+    }
+  ],
+  "sprint": {
+    "sprint": "pipelines-2",
+    "hub": "insight-timer",
+    "rank": 336,
+    "hub_url": "https://insighttimer.com/deborahlauren",
+    "tier_evidence": "Insight Timer 1.8k (queue, read 1 Nov 2026). Instagram (@wildrestsanctuary, linked from her site) not read (off limits). No YouTube channel found. Total ~1.8k → local_hero.",
+    "email": "yes",
+    "email_source": "https://wildrestalchemy.com/",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 1 source(s)",
+    "flags": [
+      "Parked entry: contact route now found. Her site is a JavaScript single-page app; its 'Get in Touch' section shows the address as visible text with a mailto link (also on the Attunement page's 'Ask Deb' button). The page HTML is an empty shell, so the text was read from the site's own script bundle (/assets/index-B9Emfy3r.js); a human may want to confirm it shows in a browser. No contact form (the Google Form is an order form for readings).",
+      "Name: her site presents her as 'Deb Poole' (footer and about section) and once as 'Deb Lauren Poole'; Insight Timer uses Deb Lauren Poole. Listed as Deb Poole, slug deb-poole.",
+      "robots.txt: wildrestalchemy.com has none (the path returns the app shell), so no restrictions apply.",
+      "Thin but meets ~3 items: two offerings and the Insight Timer resource. Surround Sound Journeys and Sacred Suppers are private-event offerings with no page of their own, so they are mentioned in the bio only.",
+      "Photos: three from her site (named deb-in-wild-*), same woman in each; the second and third are action shots (on stage with a microphone; leading a headphone meditation).",
+      "Health wording: the site frames rest as 'nervous system healing' and meditations as 'stress release'; item descriptions avoid those terms. Her earlier cold-plunge studio (The Plunge Houz) is mentioned only as background.",
+      "Regional: none (no base published)."
+    ],
+    "left_out": [
+      "Forthcoming book on Human Design and the 2027 transition: no title or ISBN published.",
+      "Substack journal (wildrestalchemy.substack.com): substack.com off limits, not opened.",
+      "Human Design Resources page: says no resources are available yet; client recordings there appear to be for clients.",
+      "Sunrise Meditations and Surround Sound Journeys / Sacred Suppers: no individual URLs or dates (private events)."
+    ]
+  },
+  "images_final": true
+}

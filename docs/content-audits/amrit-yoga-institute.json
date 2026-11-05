@@ -1,0 +1,260 @@
+{
+  "healer": {
+    "healer_slug": "amrit-yoga-institute",
+    "location_source": "https://amrityoga.org/contact-us/",
+    "create": {
+      "name": "Amrit Yoga Institute",
+      "bio": "Set in Salt Springs, the Amrit Yoga Institute is a charitable yoga school and ashram, among the forests of north-central Florida. It was founded by Yogi Amrit Desai, known to students as Gurudev Shri Amritji. A disciple of Swami Kripalu, he was among the first teachers to bring yoga to America from India, and the institute carries on his approach, called I AM Yoga, which treats postures, breath and attention as a single meditative practice rather than physical exercise alone. His daughter Kamini Desai leads much of its yoga nidra and training work, alongside a group of long-standing faculty.\n\nThe campus runs residential immersions and retreats through the year, on themes such as meditation in motion, the Yoga Sutras of Patanjali, yoga nidra and bringing yogic principles into working life, as well as yoga teacher trainings at several levels, kirtan and chanting, and initiation retreats in the lineage of Swami Kripalu. Each week it holds a Friday meditation and a Sunday practice and discourse with Amritji, open in person and by livestream. Recorded courses, a streaming service and a YouTube channel of short talks on consciousness, the ego and the Bhagavad Gita carry its teaching further afield.",
+      "tier": "local_hero",
+      "entity_type": "school",
+      "availability": "local_online",
+      "city": "Salt Springs, Florida",
+      "country": "United States",
+      "subjects": [
+        "yoga",
+        "meditation",
+        "ancient-wisdom"
+      ],
+      "website_url": "https://amrityoga.org/",
+      "booking_url": "https://amrityoga.org/upcoming-all/",
+      "youtube_url": "https://www.youtube.com/@AmritYoga",
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "admissions@amrityoga.org",
+      "image_urls": [
+        "https://amrityoga.org/wp-content/uploads/2023/01/amritji.jpg"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "insight-timer",
+      "role": "instructor"
+    }
+  ],
+  "videos": [
+    {
+      "title": "The Chakra System  An Evolutionary Map of Consciousness",
+      "url": "https://www.youtube.com/watch?v=M_R2mYYlokY",
+      "subjects": [
+        "chakra-healing",
+        "consciousness",
+        "yoga"
+      ],
+      "channel": "Amrit Yoga Institute"
+    },
+    {
+      "title": "The Hidden Prison of Time",
+      "url": "https://www.youtube.com/watch?v=KlhRoaxazI4",
+      "subjects": [
+        "spirituality",
+        "consciousness"
+      ],
+      "channel": "Amrit Yoga Institute"
+    },
+    {
+      "title": "The Science of Now: What Patanjali Really Taught",
+      "url": "https://www.youtube.com/watch?v=AskXexW0eDw",
+      "subjects": [
+        "yoga",
+        "ancient-wisdom"
+      ],
+      "channel": "Amrit Yoga Institute"
+    },
+    {
+      "title": "Yoga  Where Concentration Ends and Meditation Begins",
+      "url": "https://www.youtube.com/watch?v=atYZc7B7SG0",
+      "subjects": [
+        "yoga",
+        "meditation"
+      ],
+      "channel": "Amrit Yoga Institute"
+    },
+    {
+      "title": "Interrupting Negative Feedback Loops",
+      "url": "https://www.youtube.com/watch?v=w-UQmWEcDmM",
+      "subjects": [
+        "yoga",
+        "spirituality"
+      ],
+      "channel": "Amrit Yoga Institute"
+    },
+    {
+      "title": "Explication of the Bhagavad Gita  Chapter 2, Verse 47",
+      "url": "https://www.youtube.com/watch?v=2w-2Pw98NGM",
+      "subjects": [
+        "ancient-wisdom",
+        "yoga"
+      ],
+      "channel": "Amrit Yoga Institute"
+    },
+    {
+      "title": "Have You Been Practicing Yoga Backwards",
+      "url": "https://www.youtube.com/watch?v=d4jWX5jOHqs",
+      "subjects": [
+        "yoga"
+      ],
+      "channel": "Amrit Yoga Institute"
+    },
+    {
+      "title": "Why You Forget Who You Are (And How to Remember)",
+      "url": "https://www.youtube.com/watch?v=DgVrkhFizZU",
+      "subjects": [
+        "spiritual-awakening",
+        "yoga"
+      ],
+      "channel": "Amrit Yoga Institute"
+    },
+    {
+      "title": "Why You Never Reach the Horizon",
+      "url": "https://www.youtube.com/watch?v=7ZT42PSO6c4",
+      "subjects": [
+        "spirituality"
+      ],
+      "channel": "Amrit Yoga Institute"
+    },
+    {
+      "title": "In sleep you lose yourself unconsciously.  In meditation you arrive consciously.",
+      "url": "https://www.youtube.com/watch?v=G1h137XJhq8",
+      "subjects": [
+        "meditation",
+        "yoga"
+      ],
+      "channel": "Amrit Yoga Institute"
+    }
+  ],
+  "books": [],
+  "courses": [
+    {
+      "title": "December Community Overnight Retreat",
+      "url": "https://amrityoga.org/programs/2078/december-community-overnight-retreat/",
+      "description": "A one-night community retreat on the Salt Springs campus with satsang, evening and morning sessions and time with Amritji. Lodging, dinner and breakfast are included.",
+      "price": "$169 USD",
+      "product_type": "retreat",
+      "start_date": "2026-12-12",
+      "end_date": "2026-12-13",
+      "subjects": [
+        "yoga",
+        "meditation"
+      ],
+      "image": "https://amrityoga.secure.retreat.guru/wp-content/uploads/sites/462/2026/01/Meditation-On-Demand-14-300x245.jpg"
+    },
+    {
+      "title": "I AM Yoga® Meditation in Motion® Immersion",
+      "url": "https://amrityoga.org/programs/2204/i-am-yoga-meditation-in-motion-immersion/",
+      "description": "A six-day residential immersion with Indu Heather Arena and Amritji in the institute's signature practice, where hatha postures are held as moving meditation. Prices depend on the room chosen.",
+      "price": "From $899 USD (local, no lodging) to $1,539 USD",
+      "product_type": "retreat",
+      "start_date": "2027-01-12",
+      "end_date": "2027-01-17",
+      "subjects": [
+        "yoga",
+        "meditation"
+      ],
+      "image": "https://amrityoga.secure.retreat.guru/wp-content/uploads/sites/462/2023/07/Yoga-Live-MiM-300x245.png"
+    },
+    {
+      "title": "I AM Yoga® Yoga Sutras Immersion Retreat",
+      "url": "https://amrityoga.org/programs/2131/i-am-yoga-immersion-retreat/",
+      "description": "Five days of study and practice of Patanjali's Yoga Sutras with Nirali Lauren McCrea and Amritji at the Florida campus. The hours count towards a 200-hour teacher training.",
+      "price": "From $899 USD (commuter) to $1,539 USD",
+      "product_type": "retreat",
+      "start_date": "2027-05-12",
+      "end_date": "2027-05-16",
+      "subjects": [
+        "yoga",
+        "ancient-wisdom"
+      ],
+      "image": "https://amrityoga.secure.retreat.guru/wp-content/uploads/sites/462/2026/01/Yoga-Live-14-300x245.png"
+    },
+    {
+      "title": "Spirit at Work: Bringing the Wisdom of Yoga into the World of Work",
+      "url": "https://amrityoga.org/programs/2130/spirit-at-work/",
+      "description": "A five-day programme with Kamini Desai and Amritji on applying yogic ideas about energy and attention to professional life, so that work comes from presence rather than pressure.",
+      "price": "From $799 USD (local, no lodging) to $1,439 USD",
+      "product_type": "retreat",
+      "start_date": "2027-08-04",
+      "end_date": "2027-08-08",
+      "subjects": [
+        "yoga",
+        "spirituality"
+      ],
+      "image": "https://amrityoga.secure.retreat.guru/wp-content/uploads/sites/462/2026/07/Yoga-Nidra-On-Demand-2-300x245.jpg"
+    },
+    {
+      "title": "The Yoga Nidra Deep Dive",
+      "url": "https://amrityoga.org/programs/2222/the-yoga-nidra-deep-dive/",
+      "description": "A weekend immersion in yoga nidra with John Vosler, mixing sessions, guided practice and a closing darshan with Amritji.",
+      "price": "From $399 USD (local, no lodging) to $1,039 USD",
+      "product_type": "retreat",
+      "start_date": "2027-09-17",
+      "end_date": "2027-09-19",
+      "subjects": [
+        "yoga",
+        "meditation"
+      ],
+      "image": "https://amrityoga.secure.retreat.guru/wp-content/uploads/sites/462/2026/09/Yoga-Nidra-On-Demand-4-300x245.jpg"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Amrit Yoga Institute on Insight Timer",
+      "url": "https://insighttimer.com/amrityogainstitute",
+      "description": "The institute's teacher page on the free Insight Timer app, with its recorded meditations and yoga nidra practices.",
+      "featured": false,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation",
+        "yoga"
+      ],
+      "image": "https://amrityoga.org/wp-content/uploads/2023/01/amritji.jpg"
+    },
+    {
+      "title": "Weekly Meditation and Discourse with Gurudev",
+      "url": "https://amrityoga.org/free-weekly-live-classes/",
+      "description": "A Friday half-hour meditation and a Sunday hour of discourse with Amritji, plus a Sunday all-levels practice, open in person at the ashram or by livestream.",
+      "featured": true,
+      "resource_type": "workshop",
+      "subjects": [
+        "meditation",
+        "yoga"
+      ],
+      "image": "https://amrityoga.org/wp-content/uploads/2022/11/Quantum-breath-meditation-003.png"
+    }
+  ],
+  "sprint": {
+    "sprint": "pipelines-2",
+    "hub": "insight-timer",
+    "rank": 255,
+    "hub_url": "https://insighttimer.com/amrityogainstitute",
+    "tier_evidence": "Insight Timer 5.8k followers (queue entry, read 1 Nov 2026); YouTube @AmritYoga 35.4K subscribers (channel header, 5 Nov 2026); Facebook/Instagram/X not readable without login → ~41.2k total → local_hero",
+    "email": "yes",
+    "email_source": "https://amrityoga.org/contact-us/",
+    "contact_form_url": "https://amrityoga.org/contact-us/",
+    "bio_check": "OK: no 8-word runs against 19 source(s)",
+    "flags": [
+      "Listed as a school (entity_type school), not an individual: the queue entry is the institute's own Insight Timer channel. Owner may prefer to hold organisations until the organisations shelf rule applies.",
+      "Possible overlap: Kamini Desai (Amrit Desai's daughter) is already on Spiritpedia (kamini-desai) and leads several of the institute's programmes; she is mentioned in the bio.",
+      "Email admissions@amrityoga.org is an organisation inbox, shown via Cloudflare email protection (decoded, clickable mailto) on the contact page; the same page has a contact form.",
+      "Base: Salt Springs, Florida (campus address on the contact page, recorded at town level only); Salt Springs is a small community (likely under 5,000 people), please map it.",
+      "Regional: north-central Florida (Marion County, near Ocala), outside the big coastal cities.",
+      "Only one photo: a 400px headshot of the founder, Gurudev Shri Amritji (Yogi Amrit Desai), from the institute's site; other site images are icons, logos or a blurred class photo.",
+      "Tier: the founder is a well-known figure in American yoga (editorial stature could be argued); not raised, owner decides.",
+      "For the owner's awareness: Amrit Desai left Kripalu in 1994 after admitting sexual relationships with students; this is public history, not mentioned in the bio.",
+      "YouTube titles copied as shown (some contain double spaces where the channel uses them); the channel also posts very short clips, which were left out."
+    ],
+    "left_out": [
+      "I AM Yoga Nidra Advanced Training (Sep 2027) and the on-demand Yoga Nidra Certification: pages describe protocols for PTSD, trauma, addiction, depression, anxiety and insomnia (health rule).",
+      "I AM Yoga Therapy I and II trainings and the Feel to Heal course: therapy framing (health rule, borderline).",
+      "Lineage of Light: Initiation Retreat (Feb 2027): its page describes karmic blocks as post-traumatic stress disorder; borderline, left out.",
+      "Ecstatic Chants (6-7 Nov 2026): starts before 9 Nov.",
+      "Jamaica 25th anniversary reunion and Amritji's 95th birthday: celebrations rather than teaching programmes.",
+      "200-hour teacher training: its 2026 module dates have passed and no later dates were shown.",
+      "On-demand 'Build Your Immunity to Anxiety': condition-named.",
+      "YouTube clips under about two minutes, and 'Remember We're Whole by Susan Charu Hendrix' (another teacher, likely music)."
+    ]
+  },
+  "images_final": true
+}

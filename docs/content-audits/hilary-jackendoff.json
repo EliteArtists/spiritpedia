@@ -1,0 +1,152 @@
+{
+  "healer": {
+    "healer_slug": "hilary-jackendoff",
+    "location_source": "https://www.meditationchick.com/about",
+    "create": {
+      "name": "Hilary Jackendoff",
+      "bio": "Hilary Jackendoff is a yoga nidra and meditation teacher, teacher trainer and Human Design reader who works from Los Angeles under the name Meditation Chick. She read philosophy, mysticism and religion at university, then in 2008 began formal training in a Tantric yoga tradition, taking initiation in the Saraswati order and living as a monastic at an ashram for two years while completing a long residential teacher training. After eight years inside a guru-based lineage she stepped back from it, and she now calls her approach post-lineage: rooted in tradition but not bound to it.\n\nHer teaching is relaxed, irreverent and practical, with self-inquiry at its centre. She offers Human Design readings and coaching sessions that use the chart as a starting point for looking at habits and beliefs, a fifty-hour meditation teacher training, a three-month group mentorship for women who teach, and one-to-one mentoring for teachers building their work. She also leads workshops, chanting series and occasional retreats in person and online, and shares guided practices on Insight Timer.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local_online",
+      "city": "Los Angeles, California",
+      "country": "United States",
+      "subjects": [
+        "yoga",
+        "human-design",
+        "meditation"
+      ],
+      "website_url": "https://www.meditationchick.com/",
+      "booking_url": "https://www.meditationchick.com/selfinquiry",
+      "youtube_url": null,
+      "instagram_url": "https://www.instagram.com/meditationchick/",
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "hilary@meditationchick.com",
+      "image_urls": [
+        "https://images.squarespace-cdn.com/content/v1/60fe0dd6bfe7053842354311/075c3382-bd37-4a1d-8f40-0798df9c8cd1/HilaryLaughingHoldingBamboo.jpg?format=1500w",
+        "https://images.squarespace-cdn.com/content/v1/60fe0dd6bfe7053842354311/0298a2ab-e7b6-4044-91ab-f74be198e3cc/HilaryLookingJoyful.jpg?format=1500w"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "insight-timer",
+      "role": "instructor"
+    }
+  ],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Human Design Readings",
+      "url": "https://www.meditationchick.com/humandesign",
+      "description": "One-to-one readings of your Human Design chart, from a first look at type, strategy and authority to follow-ups and readings for relationships.",
+      "price": "$200 USD (60 min); relationship reading $300 USD",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "human-design",
+        "self-healing"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/60fe0dd6bfe7053842354311/9b91f5a6-2741-48bd-b7bb-0c3fd62ebaaa/HumanDesignHero.jpg"
+    },
+    {
+      "title": "Self-Inquiry Sessions",
+      "url": "https://www.meditationchick.com/selfinquiry",
+      "description": "Coaching sessions that use your Human Design chart as a shared map for looking at habits, beliefs and decisions, and for learning to trust your own inner guidance.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "human-design",
+        "life-coaching",
+        "shadow-work"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/60fe0dd6bfe7053842354311/4bdb6dec-5abf-4923-930c-d6e52bd17f59/SelfInquiryHero.jpg"
+    },
+    {
+      "title": "Meditation Teacher Training (50-hour Foundations)",
+      "url": "https://www.meditationchick.com/meditationteachertraining",
+      "description": "A fifty-hour training in teaching beginners' meditation, covering how to hold space, guide practices, record meditations and work with private clients.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/60fe0dd6bfe7053842354311/ce9ff639-6395-4a14-b408-eb47bd9076e0/MeditationTeacherTrainingHero.jpg"
+    },
+    {
+      "title": "Sacred Spiral Mentorship",
+      "url": "https://www.meditationchick.com/sacredspiral",
+      "description": "A three-month group mentorship for women who teach, combining self-inquiry through Human Design with clear intentions, shared accountability and community.",
+      "price": "$800 USD",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "human-design",
+        "soul-purpose"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/60fe0dd6bfe7053842354311/1630357489159-I8DORIHIDRD3ZO6RG1OJ/dreamstime_s_187287245.jpg"
+    },
+    {
+      "title": "Teacher Mentorship",
+      "url": "https://www.meditationchick.com/mentorship",
+      "description": "Monthly one-to-one mentoring for yoga and meditation teachers, in three- or six-month packages, mixing practical guidance with inner work.",
+      "price": "$600 USD or $1200 USD (3 or 6 months)",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "life-coaching"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/60fe0dd6bfe7053842354311/6df473d7-d534-4927-a734-7f9ab013764b/TeacherMentorship.jpg"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Hilary Jackendoff on Insight Timer",
+      "url": "https://insighttimer.com/hilaryjackendoff",
+      "description": "Her guided yoga nidra and meditation practices on the Insight Timer app, free to play.",
+      "featured": true,
+      "resource_type": "meditation",
+      "subjects": [
+        "yoga",
+        "meditation"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/60fe0dd6bfe7053842354311/075c3382-bd37-4a1d-8f40-0798df9c8cd1/HilaryLaughingHoldingBamboo.jpg?format=1500w"
+    }
+  ],
+  "sprint": {
+    "sprint": "pipelines-2",
+    "hub": "insight-timer",
+    "rank": 110,
+    "hub_url": "https://insighttimer.com/hilaryjackendoff",
+    "tier_evidence": "Insight Timer 30.5k (queue, read 1 Nov 2026); Instagram @meditationchick not read (off limits); no YouTube linked → ~30.5k readable → local_hero",
+    "email": "yes",
+    "email_source": "https://www.meditationchick.com/contact",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 13 source(s)",
+    "flags": [
+      "Parked entry: contact route now found: hilary@meditationchick.com is published as a mailto on her contact page and site footer (the queue's website was a linktr.ee link, not opened).",
+      "Her about page says the transformative yoga nidra experience was at an ashram in New Zealand and the training in India, while her professional bio on the same page says the two years were at an ashram in Australia; the bio avoids naming the country.",
+      "Her yoga nidra page and teacher-training page make health claims (insomnia, anxiety, immunity, PTSD); those pages are left out, and the listing leads with Human Design, self-inquiry and teacher training. Sleep is a big theme of her work (Good Morning America on sleep).",
+      "Last Insight Timer upload about four years ago per the queue; her site is current (2024 events).",
+      "Photos: three from her about page, the same woman in each."
+    ],
+    "left_out": [
+      "Yoga Nidra page/sessions: benefits copy names insomnia, anxiety and immune claims.",
+      "Yoga Nidra Teacher Training: page says '2025 dates coming soon' (stale) and frames the practice against PTSD and trauma.",
+      "Top 10 Tips For Sleep and 10 Things Every Meditation Teacher Should Know: opt-in pages with no content readable; sleep tips borderline.",
+      "Past events (Magical Month of Meditation, Nov 2024; Human Design for Self Love, Feb 2023).",
+      "Corporate wellness: business service."
+    ]
+  },
+  "images_final": true
+}

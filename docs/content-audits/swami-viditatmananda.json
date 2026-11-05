@@ -1,0 +1,160 @@
+{
+  "healer": {
+    "healer_slug": "swami-viditatmananda",
+    "location_source": "https://arshavidya.org/swami-viditatmananda/",
+    "create": {
+      "name": "Swami Viditatmananda",
+      "bio": "Swami Viditatmananda is a monk in the Advaita Vedanta teaching line of Swami Dayananda Saraswati and serves as president of Arsha Vidya Gurukulam, the residential centre for traditional scriptural study that his teacher opened at Saylorsburg, Pennsylvania, in 1986. Before taking the vows of a renunciate he lived and worked in the United States for some years, and in 1978 he completed the long residential Vedanta course Swami Dayananda ran in Bombay. That mix of Indian and Western experience shows in how he teaches: he takes the Upanishads and the Bhagavad Gita slowly, in plain language, and ties them to ordinary questions of duty, values and inner maturity.\n\nIn India his work is centred on Gujarat. He gives public talks there under the name Adhyatma Vidya Mandir, runs Tattvatirtha, his ashram on the western edge of Ahmedabad, and has led seminars on what Vedanta has to say to managers. At the Gurukulam he is listed among the resident acharyas, and many of his classes, from a 2000 series on the vision of the Upanishads to family retreat talks on Tattva Bodha and satsang question-and-answer sessions, are kept on the centre's YouTube channel. The Gurukulam's bookstore carries his commentaries on texts such as Drg Drsya Viveka, Advaita Makaranda and the Isavasya Upanishad.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local_online",
+      "city": "Saylorsburg, Pennsylvania",
+      "country": "United States",
+      "subjects": [
+        "non-duality",
+        "ancient-wisdom",
+        "spirituality"
+      ],
+      "website_url": "https://arshavidya.org/swami-viditatmananda/",
+      "booking_url": "https://arshavidya.org/avg-course-registration-2026/",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "avpoffice@gmail.com",
+      "image_urls": [
+        "https://arshavidya.org/wp-content/uploads/SWAMI-VIDITATMANANDA-1.png"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "insight-timer",
+      "role": "instructor"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Vision Of Upanisads 01",
+      "url": "https://www.youtube.com/watch?v=eTjfZOnd16A",
+      "subjects": [
+        "non-duality",
+        "ancient-wisdom"
+      ],
+      "channel": "Arsha Vidya Pitham"
+    },
+    {
+      "title": "Vision Of Upanisads 02",
+      "url": "https://www.youtube.com/watch?v=YCBGOu1sOws",
+      "subjects": [
+        "non-duality",
+        "ancient-wisdom"
+      ],
+      "channel": "Arsha Vidya Pitham"
+    },
+    {
+      "title": "Vision Of Upanisads 03",
+      "url": "https://www.youtube.com/watch?v=t_s-gdmYcyU",
+      "subjects": [
+        "non-duality",
+        "ancient-wisdom"
+      ],
+      "channel": "Arsha Vidya Pitham"
+    },
+    {
+      "title": "Vision Of Upanisads 04",
+      "url": "https://www.youtube.com/watch?v=GkGDOOnBIIE",
+      "subjects": [
+        "non-duality",
+        "ancient-wisdom"
+      ],
+      "channel": "Arsha Vidya Pitham"
+    },
+    {
+      "title": "Vision Of Upanisads 05",
+      "url": "https://www.youtube.com/watch?v=zETZ43ssQ0w",
+      "subjects": [
+        "non-duality",
+        "ancient-wisdom"
+      ],
+      "channel": "Arsha Vidya Pitham"
+    }
+  ],
+  "books": [],
+  "courses": [
+    {
+      "title": "Vedanta Retreats at Arsha Vidya Gurukulam",
+      "url": "https://arshavidya.org/avg-course-registration-2026/",
+      "description": "Residential Vedanta courses at the Saylorsburg Gurukulam he presides over, from fortnightly family weekends to one- and two-week retreats on the Upanishads and the Bhagavad Gita, with daily meditation and satsang. One application form covers all courses; fees are confirmed by the office after review.",
+      "price": "Contact for pricing",
+      "product_type": "retreat",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "non-duality",
+        "ancient-wisdom",
+        "meditation"
+      ],
+      "image": "https://arshavidya.org/wp-content/uploads/swamiji_layout.png"
+    },
+    {
+      "title": "Isavasya Upanisad E-Book",
+      "url": "https://avgbooks.org/shop/isavasya-upanisad-2022-e-book/",
+      "description": "An e-book of his teaching on the Isavasya Upanishad, published by Adhyatma Vidya Mandir and sold through the Gurukulam's bookstore.",
+      "price": "$18.95 USD",
+      "product_type": "download",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "non-duality",
+        "ancient-wisdom"
+      ],
+      "image": "https://avgbooks.org/wp-content/uploads/2023/01/Isavasya-Upnisad-2022.jpeg"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Swami Viditatmananda on Insight Timer",
+      "url": "https://insighttimer.com/swamiji",
+      "description": "His channel on Insight Timer, where his recordings can be played free.",
+      "featured": true,
+      "resource_type": "meditation",
+      "subjects": [
+        "non-duality",
+        "meditation"
+      ],
+      "image": "https://arshavidya.org/wp-content/uploads/SWAMI-VIDITATMANANDA-1.png"
+    }
+  ],
+  "sprint": {
+    "sprint": "pipelines-2",
+    "hub": "insight-timer",
+    "rank": 347,
+    "hub_url": "https://insighttimer.com/swamiji",
+    "tier_evidence": "Insight Timer 1.5k followers (queue entry, read 1 Nov 2026); no personal social accounts found; the Arsha Vidya Pitham YouTube channel is the Gurukulam's shared channel and is not counted (subscriber count not shown in the page we fetched) → ~1.5k → local_hero",
+    "email": "yes",
+    "email_source": "https://arshavidya.org/contact-us/",
+    "contact_form_url": "https://arshavidya.org/contact-us/",
+    "bio_check": "OK: no 8-word runs against 6 source(s)",
+    "flags": [
+      "Email is the Gurukulam office inbox (avpoffice@gmail.com, Cloudflare-obfuscated on the contact page and decoded); the 2027 calendar PDF also gives admin@arshavidyagurukulam.org. Organisation inbox, not his own.",
+      "Base: Saylorsburg, Pennsylvania (his page names him President of Arsha Vidya Gurukulam, Saylorsburg, and the site lists him among the resident acharyas). Saylorsburg is a small unincorporated community, probably under 5,000. He also runs Tattvatirtha Ashram near Ahmedabad, Gujarat, and teaches mainly in Gujarat, so his time is split; owner may prefer Ahmedabad.",
+      "Regional: rural north-east Pennsylvania (Monroe County).",
+      "Name: listed as 'Swami Viditatmananda' (the site uses both that and 'Swami Viditatmananda Saraswati'), following the existing 'Swami Sarvapriyananda' pattern.",
+      "Related listing: Swamini Svatmavidyananda (already on Spiritpedia) is a visiting teacher at the same Gurukulam.",
+      "Only one photo: the round-cropped portrait (448 px) on the Gurukulam home and teacher pages. The other image on his page is a Mother's Day graphic and was not used.",
+      "Videos are from the Gurukulam's shared channel (Arsha Vidya Pitham), from the 'Vision of Upanisads' 2000 playlist linked on his own page; each is about an hour long. View counts could not be compared, as the channel's video list did not include older uploads.",
+      "Retreat offering: the 2027 calendar does not name the teacher for each course; it is included as his centre's programme (he is president and a resident acharya).",
+      "Insight Timer handle is 'swamiji' (queue entry); profile not opened."
+    ],
+    "left_out": [
+      "Books: the AVG bookstore lists about 40 of his printed titles (e.g. Drg Drsya Viveka, Advaita Makaranda, Bhaja Govindam, Emotional Maturity) but shows only SKUs, no ISBNs, so none could be added as books.",
+      "MP3 and DVD sets on avgbooks.org: old recordings of dated camps; left out.",
+      "Thanksgiving Family Vedanta Retreat (26–29 Nov 2026) and other dated 2026–27 courses: teacher not named on the calendar; covered by the single retreats item.",
+      "Mother's Day Wishes video: a short greeting, not teaching.",
+      "Articles on his teacher page (satsang texts): text pages, not free resources of the kinds listed."
+    ]
+  },
+  "images_final": true
+}

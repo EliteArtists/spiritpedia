@@ -1,0 +1,51 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 942,
+    "healer_slug": "astrid-blankenburg"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "8095576b-ddbc-45e6-a4af-ed3fb180a207",
+      "slug": "witchcraft-foundation-course",
+      "title": "Witchcraft Foundation Course"
+    },
+    {
+      "table": "courses",
+      "id": "cdb467ff-7183-4b83-a400-99927511cb68",
+      "slug": "the-20-day-intuitive-tarot-masterclass",
+      "title": "The 20-Day Intuitive Tarot Masterclass"
+    },
+    {
+      "table": "courses",
+      "id": "c358c39d-bb16-4ac3-bbc5-ba675be89e64",
+      "slug": "psychic-development-for-beginners",
+      "title": "Psychic Development for Beginners"
+    },
+    {
+      "table": "courses",
+      "id": "67e06dc4-1ec5-4e95-a0ef-3728e3b2aa3e",
+      "slug": "aura-analysis-reading-training",
+      "title": "Aura Analysis & Reading Training"
+    },
+    {
+      "table": "courses",
+      "id": "fb22d5ab-8bc6-4674-8c1c-b6229e89a477",
+      "slug": "green-witchcraft-working-with-magical-herbs",
+      "title": "Green Witchcraft: Working with Magical Herbs"
+    },
+    {
+      "table": "free_resources",
+      "id": "a5f0a0d2-ec0f-4162-a94f-337f6423131e",
+      "slug": "astrid-blankenburg-on-insight-timer",
+      "title": "Astrid Blankenburg on Insight Timer"
+    },
+    {
+      "table": "hub_teachers",
+      "id": "f359df09-acda-4a52-813d-b973ac0302b0",
+      "title": "astrid-blankenburg teaches at Insight Timer"
+    }
+  ],
+  "at": "2026-11-05T16:42:06.889Z"
+}

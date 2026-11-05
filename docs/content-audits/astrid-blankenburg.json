@@ -1,0 +1,151 @@
+{
+  "healer": {
+    "healer_slug": "astrid-blankenburg",
+    "location_source": null,
+    "no_public_base": "Her school's site and course pages publish no city or country where she lives; the only place named is London, where her instructor note says she has taught in-person esoteric classes, while the Insight Timer queue entry gives Los Angeles. Neither is stated as her base, so left blank.",
+    "create": {
+      "name": "Astrid Blankenburg",
+      "bio": "Astrid Blankenburg, who teaches under the name Astrid the Psychic Witch, is a tarot reader and esoteric teacher and the co-founder of the School of Holistic Mastery, also called the Magick & Witchcraft Academy. Before moving her teaching online she ran in-person classes on esoteric subjects in London, and she has hosted a radio show. The school has offered recorded video courses since 2015 and says more than 24,000 students have completed one.\n\nHer courses are aimed at beginners and are self-paced, with lifetime access and a completion certificate. She covers the groundwork of a personal witchcraft practice, including spell structure, moon phases, correspondences and keeping a Book of Shadows, without tying it to any single tradition. Other courses teach intuitive tarot over twenty daily lessons, the first steps of psychic development and clairvoyance, how to perceive and interpret the aura, and the magical uses of herbs in green witchcraft. Students can also join an optional online community where live rituals and group gatherings are held.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "worldwide",
+      "city": null,
+      "country": null,
+      "subjects": [
+        "mediumship-spirits",
+        "energy-medicine",
+        "spirituality"
+      ],
+      "website_url": "https://schoolofholisticmastery.com/",
+      "booking_url": "https://courses.schoolofholisticmastery.com/pages/certified-online-courses",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "astridsphinx@gmail.com",
+      "image_urls": [
+        "https://schoolofholisticmastery.com/wp-content/uploads/2025/12/offitial-portrait.jpg"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "insight-timer",
+      "role": "instructor"
+    }
+  ],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Witchcraft Foundation Course",
+      "url": "https://courses.schoolofholisticmastery.com/courses/witchcraft-foundation-course",
+      "description": "A self-paced video course on the basics of a witchcraft practice: how a spell is built, intention, correspondences, moon phases and the Book of Shadows. It follows no single tradition.",
+      "price": "$24 USD",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "spirituality",
+        "ancient-wisdom"
+      ],
+      "image": "https://import.cdn.thinkific.com/5283/W7vbfDKRWUEqOPbP8JLA_Photorealistic%20altar%20of%20a%20witch_%20candles_%20crystals%20and%20pentagram.%20Bright%20not%20dark..jpg"
+    },
+    {
+      "title": "The 20-Day Intuitive Tarot Masterclass",
+      "url": "https://courses.schoolofholisticmastery.com/courses/intuitive-tarot-masterclass-learn-tarot-reading-in-20-days",
+      "description": "Twenty daily lessons on reading tarot by intuition, starting from choosing and caring for a deck and building towards full readings.",
+      "price": "$24 USD",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "spirituality"
+      ],
+      "image": "https://import.cdn.thinkific.com/5283/U2fGRHdTrqQcZHP1bI0O_Emerald%20Tarot%20Reading%20Table.png"
+    },
+    {
+      "title": "Psychic Development for Beginners",
+      "url": "https://courses.schoolofholisticmastery.com/courses/clairvoyance-and-psychic-development",
+      "description": "An introductory course on recognising and training intuitive and psychic senses, with practical exercises for each stage.",
+      "price": "$24 USD",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "mediumship-spirits",
+        "spirituality"
+      ],
+      "image": "https://import.cdn.thinkific.com/5283/XS9jcaxRQYCk7RYZxJzH_third%20eye%202.jpg"
+    },
+    {
+      "title": "Aura Analysis & Reading Training",
+      "url": "https://courses.schoolofholisticmastery.com/courses/aura-reading-and-analysis-course",
+      "description": "Recorded lessons on perceiving the aura and interpreting its colours and qualities, with printable analysis sheets for practising on friends or clients.",
+      "price": "$24 USD",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "energy-medicine",
+        "chakra-healing"
+      ],
+      "image": "https://import.cdn.thinkific.com/5283/OBQUtLVPQKpJ375RTK3f_aura%20reading.jpg"
+    },
+    {
+      "title": "Green Witchcraft: Working with Magical Herbs",
+      "url": "https://courses.schoolofholisticmastery.com/courses/green-witch-working-with-magical-herbs",
+      "description": "A course on the place of herbs in spellwork: the commonly used magical herbs, simple forms of herbal spells, and growing or sourcing herbs for a witch's kit.",
+      "price": "$24 USD",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "spirituality",
+        "ancient-wisdom"
+      ],
+      "image": "https://import.cdn.thinkific.com/5283/yd7Zx0poRUpjNoyVhirw_utjGBf2HQruOYSALiGKX_Copy%20of%20Copy%20of%20Audio%20Book%20Thubnail.jpg"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Astrid Blankenburg on Insight Timer",
+      "url": "https://insighttimer.com/Astrid-The-Psychic-Witch",
+      "description": "Her teacher page on the free Insight Timer app, where she shares recorded guided meditations.",
+      "featured": true,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "image": "https://schoolofholisticmastery.com/wp-content/uploads/2025/12/offitial-portrait.jpg"
+    }
+  ],
+  "sprint": {
+    "sprint": "pipelines-2",
+    "hub": "insight-timer",
+    "rank": 391,
+    "hub_url": "https://insighttimer.com/Astrid-The-Psychic-Witch",
+    "tier_evidence": "Insight Timer 571 followers (queue entry, read 1 Nov 2026); no own YouTube, Instagram or other account linked from her school's pages; the school states 24,000+ students/graduates (home page, 5 Nov 2026), still under 100k → local_hero",
+    "email": "yes",
+    "email_source": "https://courses.schoolofholisticmastery.com/pages/certified-online-courses",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 8 source(s)",
+    "flags": [
+      "Email astridsphinx@gmail.com is the footer 'Contact' mailto link on the school's course pages, Cloudflare-obfuscated and decoded (XOR with the first byte); a personal Gmail used as the school's contact address.",
+      "Name: her own pages call her only 'Astrid' / 'Astrid aka The Psychic Witch'; the surname Blankenburg comes from the queue entry (her Insight Timer name), not confirmed on her site.",
+      "Only one photo: the 'official portrait' on the school home page beside 'Astrid, Co-Founder', the same image the course pages show as the instructor (Astrid the Psychic Witch).",
+      "No published base: London is named only as where she has taught in-person classes; the queue gave Los Angeles. Listed worldwide with no_public_base.",
+      "Course prices are a site-wide 'Seasonal SALE' price of $24 (aura course also shows $84); may change.",
+      "The school is co-founded (she is 'Co-Founder'); another teacher (Matthew) leads at least one course. Listed as Astrid, the IT queue entry, not as the school.",
+      "Sales copy promises 'real magic that works' and cites IPHM accreditation; no health claims kept in items, but a human may want to judge the fit of witchcraft/spellwork courses."
+    ],
+    "left_out": [
+      "Lightworker Foundation course: taught by another instructor (Matthew), and it includes 'energy healing' and distance-healing sessions.",
+      "Audiobooks and the Skool community (skool.com, not opened): not separately verified.",
+      "Aura course modules on 'aura healing' not described in the item."
+    ]
+  },
+  "images_final": true
+}

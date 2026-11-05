@@ -1,0 +1,168 @@
+{
+  "healer": {
+    "healer_slug": "sister-jenna",
+    "location_source": "https://www.americameditating.org/contact.html",
+    "create": {
+      "name": "Sister Jenna",
+      "bio": "Sister Jenna is a meditation teacher in the Brahma Kumaris tradition, the Raja Yoga movement that began in India, and leads its work in the Washington, D.C. area. She founded the Brahma Kumaris Meditation Museum, with centres in Maryland and Virginia, and she has travelled to more than ninety countries to teach. An honorary doctorate from St. Thomas Aquinas College recognised her years of service, and she is also known as Sister Dr. Jenna.\n\nShe hosts the America Meditating radio show and its video channel, where she talks with authors, scientists, entrepreneurs and spiritual teachers, and has led regular guided meditations there on themes such as letting go, peace of mind and inner power. She has hosted online summits, including one for The Shift Network, and runs civic projects such as Meditate the Vote and Pause for Peace that invite people to bring calm reflection into public life. Her written work includes a book of meditations published by Sacred Stories and a memoir about her mother, Sister Gita, and she has released several albums of guided meditation commentary.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local_online",
+      "city": "Washington, DC",
+      "country": "United States",
+      "subjects": [
+        "meditation",
+        "spirituality",
+        "yoga"
+      ],
+      "website_url": "https://www.americameditating.org/",
+      "booking_url": "https://www.americameditating.org/online-programs-with-sister-jenna.html",
+      "youtube_url": "https://www.youtube.com/@AmericaMeditating",
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "info@americameditating.org",
+      "image_urls": [
+        "https://www.americameditating.org/uploads/1/0/9/8/109818160/img-4950_orig.jpg"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "the-shift-network",
+      "role": "instructor"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Rebroadcast: Meditation Monday with Sister Jenna",
+      "url": "https://www.youtube.com/watch?v=Z_stvw_jrpU",
+      "subjects": [
+        "meditation"
+      ],
+      "channel": "America Meditating Radio"
+    },
+    {
+      "title": "Positive Friday - Letting Go of Anger",
+      "url": "https://www.youtube.com/watch?v=UR3xSI_bd58",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "channel": "America Meditating Radio"
+    },
+    {
+      "title": "Updated: Mystical Goes Mainstream with Sister Jenna & Special Guests",
+      "url": "https://www.youtube.com/watch?v=dR-XJbWZBPg",
+      "subjects": [
+        "mysticism",
+        "spirituality"
+      ],
+      "channel": "America Meditating Radio"
+    },
+    {
+      "title": "A Confluence of Great Awakening with Sister Jayanti and Sister Jenna",
+      "url": "https://www.youtube.com/watch?v=ntcGkgzz2no",
+      "subjects": [
+        "spiritual-awakening",
+        "meditation"
+      ],
+      "channel": "America Meditating Radio"
+    },
+    {
+      "title": "How Consciousness Creates the Material World with Dr. Amit Goswami & Sister Jenna",
+      "url": "https://www.youtube.com/watch?v=2o7n5-G5HMA",
+      "subjects": [
+        "consciousness",
+        "conscious-science"
+      ],
+      "channel": "America Meditating Radio"
+    },
+    {
+      "title": "Inclusion Revolution - Title Meditation",
+      "url": "https://www.youtube.com/watch?v=EXJa-ei0nl4",
+      "subjects": [
+        "meditation"
+      ],
+      "channel": "America Meditating Radio"
+    }
+  ],
+  "books": [
+    {
+      "title": "Meditation: Intimate Experiences with the Divine through Contemplative Practices",
+      "slug": "meditation-intimate-experiences-with-the-divine",
+      "author": "Sister Dr. Jenna",
+      "asin": "194502691X",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "A book of meditations and short reflections from Sister Jenna, drawn from her Raja Yoga practice, for building a daily habit of turning inwards. Published by Sacred Stories in 2022.",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/194502691X.01._SCLZZZZZZZ_.jpg"
+    }
+  ],
+  "courses": [
+    {
+      "title": "Guided Meditation Albums by Sister Jenna",
+      "url": "https://www.americameditating.org/shop.html",
+      "description": "Downloadable albums of her guided meditation commentaries, including Your Inner World, Off The Grid, Off To Work and Inclusion Revolution. Each album is a set of spoken reflections for quiet practice at home or at work.",
+      "price": "$8.91 USD to $9.99 USD",
+      "product_type": "download",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://www.americameditating.org/uploads/1/0/9/8/109818160/yourinnerworldhigres-orig_orig.jpg"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Seven-Day Meditations with Sister Jenna",
+      "url": "https://www.americameditating.org/meditate-with-sister-jenna.html",
+      "description": "A free series of short guided meditation commentaries, one for each day of a week, on themes such as belief and benevolence. The page also introduces what meditation is in the Raja Yoga approach.",
+      "featured": true,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://www.americameditating.org/uploads/1/0/9/8/109818160/quoteracism5-orig.jpg"
+    }
+  ],
+  "sprint": {
+    "sprint": "pipelines-2",
+    "hub": "the-shift-network",
+    "rank": 153,
+    "hub_url": null,
+    "tier_evidence": "YouTube @AmericaMeditating (her radio show's channel) 3.7K subscribers (channel header, 5 Nov 2026); the Brahma Kumaris Meditation Museum channel (32.4K) is the centre's, not counted; Facebook, Instagram and X not read (off limits) → ~3.7k readable → local_hero",
+    "email": "yes",
+    "email_source": "https://www.americameditating.org/contact.html",
+    "contact_form_url": "https://www.americameditating.org/contact.html",
+    "bio_check": "OK: no 8-word runs against 12 source(s)",
+    "flags": [
+      "Shift named on: https://www.americameditating.org/events.html (the 'Awakening with Spirit' online summit she hosted for The Shift Network; past, not added as an offering).",
+      "Name: listed as 'Sister Jenna' (slug sister-jenna), the form she and her site use most; 'Sister Dr. Jenna' (honorary doctorate) appears too and is mentioned in the bio. Third-party pages give her family name as Jenna Marajh/Mahraj.",
+      "Email info@americameditating.org is the general inbox of America Meditating Inc. (her radio show's organisation), published Cloudflare-obfuscated on the contact page and decoded; the same page has a contact form.",
+      "Base: the contact page gives 'Metropolitan Washington, D.C.'; recorded as Washington, DC. Her Meditation Museum centres are in Maryland and Virginia.",
+      "Her site promotes Viome ('Better Health Awaits'), a health-testing product, and runs civic projects (Meditate the Vote, Soul Talk on the Hill with members of Congress). These are framed as non-partisan; nothing partisan was seen, and those items are left out. A human may want to look.",
+      "Only one photo could be confirmed (img-4950_orig.jpg, the og:image of her Sister Jenna page); other site images are posters or panel collages.",
+      "Book ASIN 194502691X is linked from her own site's read page (Amazon link not opened), not confirmed elsewhere.",
+      "The dev dry-run notes a book with a matching title already under jack-kornfield (id 358); probably a loose title match on 'Meditation', but a human should check before insert.",
+      "Videos are from her show's channel; several are conversations with guests where she is host. Most are about five years old."
+    ],
+    "left_out": [
+      "Viome promotion and 'Better Health with Viome' video (health product).",
+      "Meditate the Vote and Soul Talk on the Hill items (civic/political framing).",
+      "Positive Friday - Stress Free Living video and the 'age of anxiety' Medium article (borderline condition wording).",
+      "The Sister Gita Effect memoir: no ISBN or ASIN on her own pages; its blurb also mentions mental health and grief.",
+      "Awakening with Spirit summit (Shift Network, past) and 'What We Have in Karma' free program (a third party's series, page not hers).",
+      "The Next Normal daily online show: schedule from 2020; current status unclear.",
+      "Brahma Kumaris Meditation Museum classes: on the centre's own site, not checked in this pass."
+    ]
+  },
+  "images_final": true
+}

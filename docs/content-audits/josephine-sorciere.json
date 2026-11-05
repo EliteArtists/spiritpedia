@@ -1,0 +1,125 @@
+{
+  "healer": {
+    "healer_slug": "josephine-sorciere",
+    "location_source": "https://josephinesorciere.com/contact/",
+    "create": {
+      "name": "Josephine Sorciere",
+      "bio": "Josephine Sorciere is an English-born mentor and writer living in Adelaide, South Australia, who works with people at turning points in their lives and with the founders and leaders of new ventures. She calls her approach Signature Frequency: the idea that each person carries an original resonance underneath their choices and relationships, and that life and work run more smoothly once they are lived from it. An earlier strand of her teaching, which she named Portalism, rests on the notion that people can draw on gifts they glimpsed in former lifetimes.\n\nHer main one-to-one offering is the Enigma Initiation, a single long Zoom session of up to two hours in which she reads what lies beneath a client's story and sets out to wake their deeper sense of direction. Through Potent Disruptors she mentors founders and executives, and lately she has turned the same way of seeing towards ventures and land projects under the name Relational Coherence. She runs a small imprint of her own, Ancient Future Publishing, which has brought out two volumes of reflections on 2020 and Wandering Enrichment, a memoir of four months of house-sitting around England told through the Gene Keys.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "worldwide",
+      "city": "Adelaide, South Australia",
+      "country": "Australia",
+      "subjects": [
+        "soul-purpose",
+        "spiritual-awakening",
+        "life-coaching"
+      ],
+      "website_url": "https://josephinesorciere.com/",
+      "booking_url": "https://josephinesorciere.com/the-enigma-initiation/",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "josephine@josephinesorciere.com",
+      "image_urls": [
+        "https://josephinesorciere.com/wp-content/uploads/2021/05/CK-chair-2602-x-3904-scaled.jpg",
+        "https://josephinesorciere.com/wp-content/uploads/2015/02/ACI_7767-cropped-scaled.jpg"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "insight-timer",
+      "role": "instructor"
+    }
+  ],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "The Enigma Initiation",
+      "url": "https://josephinesorciere.com/the-enigma-initiation/",
+      "description": "A single private session on Zoom lasting up to two hours. She looks at the patterns a client has outgrown and the abilities they have yet to use, with the aim of switching on what she calls their Signature Frequency.",
+      "price": "$495 USD",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "soul-purpose",
+        "spiritual-awakening"
+      ],
+      "image": "https://josephinesorciere.com/wp-content/uploads/2022/03/what-is-an-enigma.jpg"
+    },
+    {
+      "title": "Potent Disruptors",
+      "url": "https://josephinesorciere.com/potent-disruptors/",
+      "description": "Mentoring for founders, executives and others who lead organisations. She works on the inner side of leadership, helping clients steady their vision and act from a clearer sense of who they are.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "life-coaching",
+        "soul-purpose"
+      ],
+      "image": "https://josephinesorciere.com/wp-content/uploads/2025/01/dark-disruptor-square.jpg"
+    },
+    {
+      "title": "Wandering Enrichment (e-book)",
+      "url": "https://josephinesorciere.com/product/wandering-enrichment-book/",
+      "description": "Her 2024 memoir of a four-month return to England spent house-sitting, sold directly from her site as a PDF or paperback. She threads ideas from the Gene Keys through the journey.",
+      "price": "$9.99 USD",
+      "product_type": "download",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "soul-purpose"
+      ],
+      "image": "https://josephinesorciere.com/wp-content/uploads/2024/11/B-0440-scaled.jpg"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Josephine Sorciere on Insight Timer",
+      "url": "https://insighttimer.com/soulvisionary",
+      "description": "Her free guided meditations and talks on the Insight Timer app.",
+      "featured": true,
+      "resource_type": "meditation",
+      "subjects": [
+        "spiritual-awakening",
+        "meditation"
+      ],
+      "image": "https://josephinesorciere.com/wp-content/uploads/2021/05/CK-chair-2602-x-3904-scaled.jpg"
+    }
+  ],
+  "sprint": {
+    "sprint": "pipelines-2",
+    "hub": "insight-timer",
+    "rank": 186,
+    "hub_url": "https://insighttimer.com/soulvisionary",
+    "tier_evidence": "Insight Timer 11.3k followers (queue entry, read 1 Nov 2026); no other own accounts linked from her site except a 31-subscriber travel channel (@WanderingEnrichment, 5 Nov 2026) → ~11.3k total → local_hero",
+    "email": "yes",
+    "email_source": "https://josephinesorciere.com/contact/",
+    "contact_form_url": "https://josephinesorciere.com/contact/",
+    "bio_check": "OK: no 8-word runs against 13 source(s)",
+    "flags": [
+      "Parked lead re-checked: her contact page now shows a postal base (Adelaide, SA 5065) and an email written with spaces as 'josephine @ josephinesorciere.com' in the page text, plus a contact form. The address was rejoined without spaces; nothing was guessed.",
+      "Item count is borderline: one spiritual session, a leadership mentoring programme, a travel memoir sold as an e-book and the Insight Timer link. Please check she merits a page.",
+      "Her site now leans towards business and venture consulting (Coherence Diagnostic, Relational Coherence), which was left out; please check she still reads as a spiritual teacher.",
+      "Her two-volume 2020: The Alchemists' Awakening is described as reading the 'world events of 2020' and calls readers to be 'Disruptor[s] of the new normal'; not read further and left out as possibly COVID-era framing close to the conspiracy rule. Please check.",
+      "Her YouTube channel (@WanderingEnrichment) is travel vlogs, so no videos were taken.",
+      "Her writing now lives on Substack (not fetched, off limits).",
+      "Wandering Enrichment has no ISBN on her site (only amzn.to short links), so it is listed as an offering from her own shop, not as a book."
+    ],
+    "left_out": [
+      "The Coherence Diagnostic and Relational Coherence: business and venture assessment, not spiritual teaching.",
+      "2020: The Alchemists' Awakening (two volumes): possible conspiracy-adjacent framing (see flags), and no ISBN on her site.",
+      "Keynote speaking and Brainz contributor pages: not offerings.",
+      "Wandering Enrichment YouTube travel videos: not teaching.",
+      "Third photo (fedora slider) is a composite with a graphic background."
+    ]
+  },
+  "images_final": true
+}

@@ -1,0 +1,152 @@
+{
+  "healer": {
+    "healer_slug": "nathan-maingard",
+    "location_source": "https://nathanmaingard.com/leaders",
+    "create": {
+      "name": "Nathan Maingard",
+      "bio": "Nathan Maingard is a South African singer-songwriter, coach and facilitator who lives in Cape Town. He trained as a breathwork facilitator and holds coaching certifications in the Body-Based Breakthrough and InnerLifeSkills approaches. At the centre of his work is an idea he calls worth-ship, taken from the old meaning of the word worship: that a person's worth is already given rather than earned, and that much of the inner work is simply remembering it.\n\nHe works in a few connected ways. One-to-one clients meet him for coaching that draws on breath, presence and candid conversation, sometimes for a single session and sometimes over several months. Each Tuesday afternoon, Cape Town time, he hosts a free livestream on Insight Timer mixing songs, breathing practice and open sharing. He also designs workshops, keynotes and retreats for business leadership forums, combining breathwork, cold-water immersion and a song he writes on the spot from the group's own words. His YouTube channel carries short reflections, guided breathwork, a spoken prayer and episodes of his podcast, We Are Already Free.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local_online",
+      "city": "Cape Town, Western Cape",
+      "country": "South Africa",
+      "subjects": [
+        "breathwork",
+        "life-coaching",
+        "spirituality"
+      ],
+      "website_url": "https://nathanmaingard.com/",
+      "booking_url": "https://nathanmaingard.com/coaching-testimonials",
+      "youtube_url": "https://www.youtube.com/@nathanmaingard",
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "nathan@nathanmaingard.com",
+      "image_urls": [
+        "https://nathanmaingard.com/images/DSC05242.jpg",
+        "https://nathanmaingard.com/images/DSC00156.jpg"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "insight-timer",
+      "role": "instructor"
+    }
+  ],
+  "videos": [
+    {
+      "title": "A Prayer for When Life Feels Overwhelming: Finding Peace in the Chaos",
+      "url": "https://www.youtube.com/watch?v=POKq8gnfIqg",
+      "subjects": [
+        "spirituality"
+      ],
+      "channel": "Nathan Maingard | Medicine Music & Honest Living"
+    },
+    {
+      "title": "How to Find Your Worthiness Amidst The Chaos: A Journey of Homecoming #77",
+      "url": "https://www.youtube.com/watch?v=1SnUni2NtuE",
+      "subjects": [
+        "spirituality",
+        "life-coaching"
+      ],
+      "channel": "Nathan Maingard | Medicine Music & Honest Living"
+    },
+    {
+      "title": "Revitalizing Guided Breathwork Escape in the Forest | Release Stress & Reconnect",
+      "url": "https://www.youtube.com/watch?v=leQqZekttFE",
+      "subjects": [
+        "breathwork"
+      ],
+      "channel": "Nathan Maingard | Medicine Music & Honest Living"
+    },
+    {
+      "title": "Speak Your Truth or Stay Small: The High Price of Hiding Your Voice...",
+      "url": "https://www.youtube.com/watch?v=UnOOqI1slOc",
+      "subjects": [
+        "life-coaching"
+      ],
+      "channel": "Nathan Maingard | Medicine Music & Honest Living"
+    },
+    {
+      "title": "Feeling Disconnected, Powerless, and Alone? Start Here",
+      "url": "https://www.youtube.com/watch?v=YQEkk2zn7-I",
+      "subjects": [
+        "life-coaching",
+        "spirituality"
+      ],
+      "channel": "Nathan Maingard | Medicine Music & Honest Living"
+    }
+  ],
+  "books": [],
+  "courses": [
+    {
+      "title": "One-to-one coaching with Nathan Maingard",
+      "url": "https://nathanmaingard.com/coaching-testimonials",
+      "description": "Private coaching built around breath, presence and frank conversation, arranged as a single session or as ongoing work over months. It begins with a free introductory chat about whether the fit is right.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "life-coaching",
+        "breathwork"
+      ],
+      "image": "https://nathanmaingard.com/images/DSC00156.jpg"
+    },
+    {
+      "title": "Experiences for leadership groups and forums",
+      "url": "https://nathanmaingard.com/leaders",
+      "description": "Keynotes, half-day and full-day workshops and custom retreats for business forums and leadership teams. Sessions combine breathwork, ice baths and a song composed live from what participants write.",
+      "price": "Contact for pricing",
+      "product_type": "retreat",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "breathwork",
+        "life-coaching"
+      ],
+      "image": "https://nathanmaingard.com/images/Ignite/EO%20Ignite%20Cape%20Town%202026-148.jpg"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Nathan Maingard on Insight Timer",
+      "url": "https://insighttimer.com/nathanmaingard",
+      "description": "His teacher page on the free Insight Timer app, which also hosts his weekly Songs for Joy livestream of music, breathing practice and sharing.",
+      "featured": true,
+      "resource_type": "meditation",
+      "subjects": [
+        "breathwork",
+        "spirituality"
+      ],
+      "image": "https://nathanmaingard.com/images/DSC05242.jpg"
+    }
+  ],
+  "sprint": {
+    "sprint": "pipelines-2",
+    "hub": "insight-timer",
+    "rank": 388,
+    "hub_url": "https://insighttimer.com/nathanmaingard",
+    "tier_evidence": "Insight Timer 638 followers (queue entry, read 1 Nov 2026); YouTube @nathanmaingard 5.6k subscribers (channel header, 5 Nov 2026); Instagram/Facebook not opened (off limits) → ~6.2k total → local_hero",
+    "email": "yes",
+    "email_source": "https://nathanmaingard.com/",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 6 source(s)",
+    "flags": [
+      "Insight Timer URL taken from the queue's insight_timer_url (it_slug nathanmaingard); his site's livestream link nathan.live/web-insight redirects to insighttimer.com/nathanmaingard/events (not opened).",
+      "Borderline fit: he presents himself as a singer-songwriter, coach and facilitator; the spiritual side is breathwork, a spoken prayer and his 'worth-ship' idea. Owner may judge him more coach/musician than spiritual teacher.",
+      "Testimonials on his home and songs pages mention depression and illness; no item or bio line repeats them, but a human may want to look.",
+      "His podcast (nathan.live/podcast) redirects to a substack.com publication, which is off limits; podcast not listed as an item. The queue's website nathan.live itself also redirects there (see slips).",
+      "Booking is by WhatsApp (nathan.live/landing-chat redirects to api.whatsapp.com, not opened) or email; no web contact form, so contact_form_url is null.",
+      "Patreon membership exists (patreon.com/nathanmaingard) but was not opened or listed."
+    ],
+    "left_out": [
+      "Most YouTube uploads are podcast interviews where the guest is the main speaker (left out); 'The Cure for Burnout is NOT More Self-Care' and a guest episode on leaving 'the medical system' left out (health rule); songs left out (music-only).",
+      "'Get the songs' free download (nathanmaingard.com/songs) left out: music only, behind an email sign-up.",
+      "Weekly Songs for Joy livestream not listed separately: it runs on Insight Timer and is covered by the Insight Timer resource."
+    ]
+  },
+  "images_final": true
+}

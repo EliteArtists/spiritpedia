@@ -1,0 +1,135 @@
+{
+  "healer": {
+    "healer_slug": "michael-drake",
+    "location_source": null,
+    "no_public_base": "His site (shamanicdrumming.com) and blog name no town, state or country for him or for Talking Drum Publications; the queue's Rainier, Oregon could not be confirmed on his own pages.",
+    "create": {
+      "name": "Michael Drake",
+      "bio": "Michael Drake is an American shamanic drummer, author and publisher. He grew up in a Southern Baptist church, where a moment of rapture at a revival meeting as a young man set him searching, and over the following decades he read widely in Christianity, Taoism, Buddhism and modern science before shamanic drumming became the centre of his practice. He went on to study with Native elders and shamans, and in 1991 he set up Talking Drum Publications to publish teaching books and drumming recordings.\n\nHis approach treats the drum as a vehicle for trance: a steady beat, usually between three and seven strikes a second, that helps a person journey inward, meet helping spirits and ask for guidance. He has led drum circles and experiential workshops across the United States for some thirty years. His books include The Shamanic Drum, Shamanic Drumming: Calling the Spirits, a guide to running drumming circles and the memoir Riding Spirit Horse, and since 2001 he has written about shamanism, ritual and the seasons on his website and blog. His drumming tracks for journeying are also on Insight Timer.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "worldwide",
+      "city": null,
+      "country": null,
+      "subjects": [
+        "shamanism",
+        "sound-healing",
+        "ancient-wisdom"
+      ],
+      "website_url": "https://www.shamanicdrumming.com/",
+      "booking_url": "https://www.shamanicdrumming.com/our_store.html",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "talkingdrumpub@yahoo.com",
+      "image_urls": [
+        "https://www.shamanicdrumming.com/about-us.jpg"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "insight-timer",
+      "role": "instructor"
+    }
+  ],
+  "videos": [],
+  "books": [
+    {
+      "title": "The Shamanic Drum: A Guide to Sacred Drumming",
+      "slug": "the-shamanic-drum-a-guide-to-sacred-drumming",
+      "author": "Michael Drake",
+      "asin": "0962900206",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "His first practical handbook on drumming as a spiritual practice. Short lessons and exercises cover making sacred space, journeying with the drum, power animals and starting a drum circle, and no musical background is assumed.",
+      "subjects": [
+        "shamanism",
+        "sound-healing"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/0962900206.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "Shamanic Drumming: Calling the Spirits",
+      "slug": "shamanic-drumming-calling-the-spirits",
+      "author": "Michael Drake",
+      "asin": "0962900230",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "A follow-up to The Shamanic Drum, written for readers who feel drawn to shamanic work. He tells the story of his own calling and gives further exercises for working with helping spirits through the drum and within a community.",
+      "subjects": [
+        "shamanism",
+        "mediumship-spirits"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/0962900230.01._SCLZZZZZZZ_.jpg"
+    }
+  ],
+  "courses": [],
+  "free_resources": [
+    {
+      "title": "Shamanic Journeying guide",
+      "url": "https://www.shamanicdrumming.com/shamanic_journeying.html",
+      "description": "A free introduction on his site to the shamanic journey: what it is, why people undertake one and how a steady drumbeat is used to enter and come back from the trance.",
+      "featured": true,
+      "resource_type": "practice",
+      "subjects": [
+        "shamanism"
+      ],
+      "image": "https://shamanicdrumming.com/site-banner.jpg"
+    },
+    {
+      "title": "Shamanic Drumming Circles Guide",
+      "url": "https://www.shamanicdrumming.com/drum-circle-guide.html",
+      "description": "Free step-by-step guidance on starting or deepening a shamanic drumming circle, from how a circle is held to what it offers its members, with a list of circles around the world.",
+      "featured": false,
+      "resource_type": "practice",
+      "subjects": [
+        "shamanism",
+        "sound-healing"
+      ],
+      "image": "https://shamanicdrumming.com/site-banner.jpg"
+    },
+    {
+      "title": "Michael Drake on Insight Timer",
+      "url": "https://insighttimer.com/michaeldrake",
+      "description": "His free shamanic drumming tracks on Insight Timer, recorded for journeying and meditation.",
+      "featured": false,
+      "resource_type": "meditation",
+      "subjects": [
+        "shamanism",
+        "sound-healing"
+      ],
+      "image": "https://www.shamanicdrumming.com/about-us.jpg"
+    }
+  ],
+  "sprint": {
+    "sprint": "pipelines-2",
+    "hub": "insight-timer",
+    "rank": 296,
+    "hub_url": "https://insighttimer.com/michaeldrake",
+    "tier_evidence": "Insight Timer 3.1k followers (queue entry, read 1 Nov 2026, 'as summarised'); no own YouTube teaching channel (his YouTube Music channel is music only and was not opened); no other socials linked from his site → ~3.1k → local_hero",
+    "email": "yes",
+    "email_source": "https://www.shamanicdrumming.com/aboutus.html",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 8 source(s)",
+    "flags": [
+      "Parked lead re-checked: his About page publishes 'Contact email: talkingdrumpub(at)yahoo.com' in plain text; written here with @ in place of (at). It is the inbox of his imprint, Talking Drum Publications.",
+      "No public base on his own pages; the queue's Rainier, Oregon is unconfirmed.",
+      "Only one photo: the About page image captioned 'Michael Drake', showing him drumming at a large drum in a hall; a few people sit out of focus in the background. Not a headshot; please check it is acceptable.",
+      "Book ISBNs from the meta descriptions of his own book pages on shamanicdrumming.com (Talking Drum Publications is his imprint), converted from ISBN-13 to ISBN-10; not confirmed elsewhere. Covers not found.",
+      "Blog (shamanicdrumming.blogspot.com, robots.txt allows us) is mainly shamanism and drumming; a few posts touch activism or politics (e.g. 'Music as a Political Act', 'A Spiritual Perspective on Political Grief', 'The Movement to Decolonize AI'), not the centre of his work. Some posts use 'healing' framing (drum therapy, energy healing); none were used as items.",
+      "Availability set to worldwide: no current in-person programme is listed on his site, though he says he has led drum circles and workshops nationwide."
+    ],
+    "left_out": [
+      "Riding Spirit Horse and Shamanic Journeys: An Anthology: their ISBNs on his pages start 979, so no ISBN-10 to convert and no ASIN published.",
+      "Shamanic Drumming Circles Guide, I Ching: The Tao of Drumming and The Great Shift books: no ISBN found on the pages opened.",
+      "Music albums (Bandcamp, Apple, Insight Timer) and the ARAW drum shop: music and products, not teaching.",
+      "YouTube: the video linked from his memoir page and his YouTube Music channel are music/drumming tracks, not teaching."
+    ]
+  },
+  "images_final": true
+}

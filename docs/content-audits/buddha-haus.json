@@ -1,0 +1,207 @@
+{
+  "healer": {
+    "healer_slug": "buddha-haus",
+    "location_source": "https://www.buddha-haus.de/kontakt/",
+    "create": {
+      "name": "Buddha-Haus",
+      "bio": "Buddha-Haus is a German Buddhist meditation and study association rooted in the Theravada teaching of Ayya Khema, the Berlin-born nun who returned to Germany after five decades abroad and ordained in Sri Lanka in her fifties. She and a small circle of students turned a guesthouse in the Allgäu, in the Bavarian foothills of the Alps, into a seminar house and taught the first retreat there in 1989. A publishing house, Jhana Verlag, followed to keep her books in print, then a city centre in Munich, and in 1997 the Metta Vihara, a forest monastery a short drive away and the first of its kind in Germany. A centre in Stuttgart opened in 1999.\n\nAfter Ayya Khema's death in 1997 her long-time companion Nyanabodhi took on the spiritual direction; he gave up monastic robes in 2020 and teaches today as Roland Nyanabodhi, alongside a wide group of lay teachers she encouraged to teach. The Allgäu house runs a full year of silent retreats on mindfulness, insight, loving-kindness and the absorptions, as well as donation-based Wednesday meditation evenings that can also be followed online. Guests can stay at the Metta Vihara for guided or self-led retreat time. The association also supports a meditation centre and charitable work in Ladakh, and shares its teaching on YouTube and Insight Timer.",
+      "tier": "local_hero",
+      "entity_type": "organisation",
+      "founded_year": 1989,
+      "availability": "worldwide",
+      "city": "Oy-Mittelberg",
+      "country": "Germany",
+      "subjects": [
+        "meditation",
+        "mindfulness",
+        "spirituality"
+      ],
+      "website_url": "https://www.buddha-haus.de/",
+      "booking_url": "https://www.buddha-haus.de/buddha-haus-allgaeu/vorschau-2027/",
+      "youtube_url": "https://www.youtube.com/user/mettaviharatube",
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "info@buddha-haus.de",
+      "image_urls": [
+        "https://www.buddha-haus.de/wp-content/uploads/2019/05/kachel-seminarzentrum.jpg",
+        "https://www.buddha-haus.de/wp-content/uploads/2019/05/kachel-metta-vihara.jpg"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "insight-timer",
+      "role": "instructor"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Getanes & Ungetanes - Ayya Khema - Letzter Vortrag vom 04.10.1997",
+      "url": "https://www.youtube.com/watch?v=gsARFUGH-ag",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "channel": "Buddha-Haus Metta Vihara"
+    },
+    {
+      "title": "Willkommen in der MettaVihara",
+      "url": "https://www.youtube.com/watch?v=mIrTuqUw6RU",
+      "subjects": [
+        "meditation"
+      ],
+      "channel": "Buddha-Haus Metta Vihara"
+    },
+    {
+      "title": "Being nobody, going nowhere - Vortrag - Tag 8 Video 2 - Osterkurs 2021 - Roland Nyanabodhi",
+      "url": "https://www.youtube.com/watch?v=LN2mYdkkIA0",
+      "subjects": [
+        "meditation",
+        "non-duality"
+      ],
+      "channel": "Buddha-Haus Metta Vihara"
+    },
+    {
+      "title": "Die 7 Erleuchtungsfaktoren im Alltag - Abschlussvortrag - Tag 10 Video 2 - Osterkurs 21 - R. N.",
+      "url": "https://www.youtube.com/watch?v=DeGRxsVsfvk",
+      "subjects": [
+        "mindfulness",
+        "spiritual-awakening"
+      ],
+      "channel": "Buddha-Haus Metta Vihara"
+    },
+    {
+      "title": "Frieden und Freiheit sein, samadhi & upekkha - Vortrag - Tag 9 Video 2 - Osterkurs 21 - R. N.",
+      "url": "https://www.youtube.com/watch?v=F5FVKx3m7K0",
+      "subjects": [
+        "meditation"
+      ],
+      "channel": "Buddha-Haus Metta Vihara"
+    },
+    {
+      "title": "Stille und Frieden - Hineinführung I - Tag 9 Video 1 - Osterkurs 2021 - Roland Nyanabodhi",
+      "url": "https://www.youtube.com/watch?v=DpCtpmy3pMs",
+      "subjects": [
+        "meditation"
+      ],
+      "channel": "Buddha-Haus Metta Vihara"
+    },
+    {
+      "title": "All Eins sein - Metta Meditation - Tag 8 Video 6 - Osterkurs 2021 - Roland Nyanabodhi",
+      "url": "https://www.youtube.com/watch?v=JncMFQ3kUBA",
+      "subjects": [
+        "meditation"
+      ],
+      "channel": "Buddha-Haus Metta Vihara"
+    },
+    {
+      "title": "Verschmelzen mit der Natur - Metta Meditation - Tag 9 Video 6 - Osterkurs 2021 - Roland Nyanabodhi",
+      "url": "https://www.youtube.com/watch?v=1b2s-HPp1rY",
+      "subjects": [
+        "meditation"
+      ],
+      "channel": "Buddha-Haus Metta Vihara"
+    }
+  ],
+  "books": [],
+  "courses": [
+    {
+      "title": "Retreats at Buddha-Haus Allgäu: 2027 Programme",
+      "url": "https://www.buddha-haus.de/buddha-haus-allgaeu/vorschau-2027/",
+      "description": "The seminar house's year of residential courses, most held in noble silence, led by teachers in Ayya Khema's tradition. Themes for 2027 include the four foundations of mindfulness, vipassana, loving-kindness, breath meditation and an Easter retreat with Roland Nyanabodhi; booking opens on 9 November 2026 and is taught in German.",
+      "price": "Varies by course and room, e.g. €742–€952 EUR for 7 days with board",
+      "product_type": "retreat",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://www.buddha-haus.de/wp-content/uploads/2019/10/Volkmar-Ruth_Trennlinie.jpg"
+    },
+    {
+      "title": "Open Meditation Evening (Wednesdays)",
+      "url": "https://www.buddha-haus.de/buddha-haus-allgaeu/offener-meditationsabend-2/",
+      "description": "A two-hour evening of shared sitting and a short talk at the Allgäu house, given in turn by teachers connected with Buddha-Haus. Beginners are welcome, and most evenings can also be joined online.",
+      "price": "Donation (dana)",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://www.buddha-haus.de/wp-content/uploads/2019/05/kachel-seminarzentrum.jpg"
+    },
+    {
+      "title": "Retreat Stays at the Metta Vihara Forest Monastery",
+      "url": "https://www.buddha-haus.de/metta-vihara/aufenthalt/",
+      "description": "Individual stays at the forest monastery, with three hours of group sitting a day, walking meditation in the grounds and a share in community work. At set times a visiting teacher is present for talks and personal interviews; guests stay in single rooms.",
+      "price": "Suggested gift €280–€720 EUR per week, depending on the kind of stay",
+      "product_type": "retreat",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "image": "https://www.buddha-haus.de/wp-content/uploads/2019/07/2014DSC04995-mario-dobelmann-1024x682.jpg"
+    },
+    {
+      "title": "Winter Self-Retreat at the Metta Vihara",
+      "url": "https://www.buddha-haus.de/metta-vihara/programm-2026/",
+      "description": "A quiet winter period in which meditators who already know the monastery can practise on their own, with a minimum length of stay. It is unaccompanied by a teacher.",
+      "price": "Contact for pricing",
+      "product_type": "retreat",
+      "start_date": "2026-12-13",
+      "end_date": "2027-03-19",
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://www.buddha-haus.de/wp-content/uploads/2025/09/MV_Programm_2026-153x300.jpg"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Buddha-Haus on Insight Timer",
+      "url": "https://insighttimer.com/buddha-haus",
+      "description": "Guided meditations from the Buddha-Haus teachers on Insight Timer, free to play.",
+      "featured": true,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://www.buddha-haus.de/wp-content/uploads/2019/05/kachel-seminarzentrum.jpg"
+    }
+  ],
+  "sprint": {
+    "sprint": "pipelines-2",
+    "hub": "insight-timer",
+    "rank": 226,
+    "hub_url": "https://insighttimer.com/buddha-haus",
+    "tier_evidence": "Insight Timer 7.9k followers (queue entry, read 1 Nov 2026); YouTube @BuddhaHausMettaVihara 9.68k subscribers (channel header, 5 Nov 2026); Instagram @buddhahaus not readable (off limits) → ~17.6k → local_hero",
+    "email": "yes",
+    "email_source": "https://www.buddha-haus.de/kontakt/",
+    "contact_form_url": "https://www.buddha-haus.de/kontakt/",
+    "bio_check": "OK: no 8-word runs against 13 source(s)",
+    "flags": [
+      "Listed as an organisation (a Buddhist meditation association with a seminar house, a forest monastery and city centres), not an individual; the queue entry is the organisation's own Insight Timer channel. Owner may prefer to hold organisations until the organisations shelf rule applies.",
+      "Email: the contact page shows 'info(at)buddha-haus.de' (written with (at)); the home page carries info@buddha-haus.de in plain text. Organisation inbox.",
+      "Photos are of places, not a person: the Allgäu meditation hall and the Metta Vihara pagoda, both 600px from the home page. The YouTube avatar is a lotus drawing (logo-like) and was not used.",
+      "Base: Oy-Mittelberg, Bavaria (registered office and seminar house; a municipality of about 4,500, under the 5,000 mark). Regional: rural Allgäu, Germany.",
+      "Teaching is in German; videos and course titles are German.",
+      "The site links to Ayya Khema's books in its own shop (buddha-haus-shop.de, Jhana Verlag) but the shop was not fetched, so no books were added; the founder has died, and her books are hers rather than the organisation's.",
+      "YouTube page notes there are three Buddha-Haus channels; only the Metta Vihara channel linked from the home page was used."
+    ],
+    "left_out": [
+      "Kursprogramm 2026 courses: dated and past or started by 9 Nov 2026.",
+      "Individual 2027 courses: they share one programme page with no unique URLs, so they go in as one item.",
+      "Munich and Stuttgart city centres: their programmes are on separate websites (buddhahaus-muenchen.de, buddhahaus-stuttgart.de), not fetched.",
+      "Winter retreat of the Young Buddhist Network at the Metta Vihara (Feb 2027): run and booked by another organisation.",
+      "Videos with 'Sexsucht', 'Warum Schmerz?' and 'Mit Liebe heilen' in the title: condition or healing framing.",
+      "Mahabodhi charity project in Ladakh: charitable work, not an offering."
+    ]
+  },
+  "images_final": true
+}

@@ -1,0 +1,51 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 947,
+    "healer_slug": "john-weddepohl"
+  },
+  "rows": [
+    {
+      "table": "videos",
+      "id": 8033,
+      "slug": "the-source-of-gratitude-john-weddepohl-on-atma-vidya",
+      "title": "The Source of Gratitude | John Weddepohl on Atma Vidya"
+    },
+    {
+      "table": "videos",
+      "id": 8034,
+      "slug": "what-is-the-point-of-a-guru-john-weddepohl",
+      "title": "What is the Point of a Guru? | John Weddepohl"
+    },
+    {
+      "table": "videos",
+      "id": 8035,
+      "slug": "self-knowledge-and-the-nature-of-happiness-john-weddepohl-on-atma-vidya",
+      "title": "Self Knowledge and the Nature of Happiness | John Weddepohl on Atma Vidya"
+    },
+    {
+      "table": "courses",
+      "id": "79a91718-c59b-4205-9d42-36e849d46caf",
+      "slug": "one-on-one-mentoring-with-john-weddepohl",
+      "title": "One-on-One Mentoring with John Weddepohl"
+    },
+    {
+      "table": "courses",
+      "id": "88c58d28-0df1-449e-8c2c-5204e779ddc4",
+      "slug": "sundaram-online-ashram-membership",
+      "title": "Sundaram Online Ashram membership"
+    },
+    {
+      "table": "free_resources",
+      "id": "bd8f35f4-0bfd-4954-b909-5853b9dd4514",
+      "slug": "john-weddepohl-on-insight-timer",
+      "title": "John Weddepohl on Insight Timer"
+    },
+    {
+      "table": "hub_teachers",
+      "id": "d4581832-6256-4597-bc81-b9bd19682b10",
+      "title": "john-weddepohl teaches at Insight Timer"
+    }
+  ],
+  "at": "2026-11-05T16:49:20.114Z"
+}

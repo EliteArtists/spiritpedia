@@ -1,0 +1,205 @@
+{
+  "healer": {
+    "healer_slug": "johnson-chong",
+    "location_source": "https://www.johnsonchong.com/shamanic-breathwork-dearmoring-training/",
+    "create": {
+      "name": "Johnson Chong",
+      "bio": "Johnson Chong is a New York-born breathwork teacher, yoga teacher and shamanic practitioner who now lives and works in Sydney. Over some twenty years he has trained in coaching, yoga (he is an experienced registered teacher who also trains new yoga, breathwork and meditation teachers), Reiki and other energy practices, and Human Design, and he was initiated into the shamanic lineage of the Q'ero people of the Peruvian Andes. He has lived on three continents, has given a TEDx talk on difficult family relationships, and wrote the book Sage Sapien: From Karma to Dharma.\n\nHis approach, which he calls the SAGE Journey, draws on the Andean medicine wheel together with Buddhist and yogic practice, breathwork, hands-on energy work and coaching, with the aim of helping people notice inherited family patterns and live with more freedom. He teaches through short self-paced online courses on breathwork, meditation and the basics of Buddhism, through workshops and trainings in Sydney, and through one-to-one mentoring by application. He has led group journeys to sacred places since 2012, including Bali, Nepal, Tibet and India; his current retreats are in the Blue Mountains, in Bhutan and in Peru's Sacred Valley, where he works alongside Andean teachers.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local_online",
+      "city": "Sydney, New South Wales",
+      "country": "Australia",
+      "subjects": [
+        "shamanism",
+        "breathwork",
+        "meditation"
+      ],
+      "website_url": "https://www.johnsonchong.com/",
+      "booking_url": "https://www.johnsonchong.com/work-with-me/",
+      "youtube_url": "https://www.youtube.com/@johnsonchong_sagesapien",
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": null,
+      "image_urls": [
+        "https://www.johnsonchong.com/wp-content/uploads/2023/07/Johnson-Chong-scaled-e1688530812277.jpg",
+        "https://yt3.googleusercontent.com/VieuiwAASz4wpqqrpTOgMkbhiNq9eY9hwM-9FwkzYgbzTgS9Q26RmdjrlJo_mHxzjTAhy7XN1g=s900"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "insight-timer",
+      "role": "instructor"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Shamanic Energy Healing, Andean Medicine Wheel & Chakra Assessment",
+      "url": "https://www.youtube.com/watch?v=C11zwlJO4mM",
+      "subjects": [
+        "shamanism",
+        "chakra-healing",
+        "energy-medicine"
+      ],
+      "channel": "Johnson Chong"
+    },
+    {
+      "title": "How to deal with toxic family relationships | Johnson Chong | TEDxRolandPark",
+      "url": "https://www.youtube.com/watch?v=k2oDeOmNqbA",
+      "subjects": [
+        "conscious-relationships",
+        "spirituality"
+      ],
+      "channel": "TEDx Talks"
+    }
+  ],
+  "books": [],
+  "courses": [
+    {
+      "title": "SAGE Shamanic Breathwork Journey through the Medicine Wheel",
+      "url": "https://www.johnsonchong.com/courses/sage-shamanic-breathwork-journey-through-the-medicine-wheel/",
+      "description": "A self-paced online course of fifteen lessons that moves through six stages of the Andean medicine wheel, pairing each direction with breath practices, self-inquiry and reflection.",
+      "price": "$49 AUD",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "breathwork",
+        "shamanism"
+      ],
+      "image": "https://www.johnsonchong.com/wp-content/uploads/2026/05/SAGE-Shamanic-Breathwork-Journey-1024x576.png"
+    },
+    {
+      "title": "7 Day Transformational Breathwork & Meditation Course",
+      "url": "https://www.johnsonchong.com/courses/transformational-breathwork-meditation-course/",
+      "description": "A one-week online programme for busy people: each day has a short lesson video, a breathwork or meditation practice of ten to twenty minutes and a journaling exercise, on themes such as presence, non-attachment and gratitude.",
+      "price": "$19.99 AUD",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "breathwork",
+        "meditation"
+      ],
+      "image": "https://www.johnsonchong.com/wp-content/uploads/2023/09/7-Day-Transformational-Breathwork-Cover.jpg"
+    },
+    {
+      "title": "Intro to Buddhism & Meditation Course",
+      "url": "https://www.johnsonchong.com/courses/buddhism-meditation-course/",
+      "description": "A ten-module online introduction to Buddhist thought and practice, from the life of the Buddha and karma to meditation methods, written partly for people preparing for retreats in the Himalaya.",
+      "price": "$29.99 AUD",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "image": "https://www.johnsonchong.com/wp-content/uploads/2024/07/Intro-to-Buddhism-meditation.jpg"
+    },
+    {
+      "title": "1:1 Shamanic Expansion Mentorship",
+      "url": "https://www.johnsonchong.com/shamanic-expansion-mentorship/",
+      "description": "One-to-one mentoring by application that combines shamanic energy work, coaching, breathwork and a Human Design reading, with assignments and an online library between sessions.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "shamanism",
+        "life-coaching",
+        "human-design"
+      ],
+      "image": "https://www.johnsonchong.com/wp-content/uploads/2023/06/Johnson-Speaking-768x354.jpg"
+    },
+    {
+      "title": "Shamanic Medicine Retreat, Blue Mountains",
+      "url": "https://www.johnsonchong.com/blue-mountains-shamanic-medicine-retreat-march-2027/",
+      "description": "A four-day residential retreat in the Blue Mountains west of Sydney using breathwork, ceremony and body-based practice to look at patterns passed down through families. Places are offered after a short call.",
+      "price": "From $1,111 AUD",
+      "product_type": "retreat",
+      "start_date": "2027-03-12",
+      "end_date": "2027-03-15",
+      "subjects": [
+        "shamanism",
+        "breathwork"
+      ],
+      "image": "https://img.youtube.com/vi/8Azn3ogr6cE/maxresdefault.jpg"
+    },
+    {
+      "title": "Bhutan Awaken Retreat",
+      "url": "https://www.johnsonchong.com/bhutan-awaken-spirit-retreat/",
+      "description": "An eight-day small-group pilgrimage based near Paro, visiting Buddhist temples and Tiger's Nest with daily practice and teaching woven around the visits.",
+      "price": "From $4,299 USD",
+      "product_type": "retreat",
+      "start_date": "2027-05-26",
+      "end_date": "2027-06-02",
+      "subjects": [
+        "meditation",
+        "shamanism",
+        "spirituality"
+      ],
+      "image": "https://img.youtube.com/vi/OHSUU_V0knI/maxresdefault.jpg"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Johnson Chong on Insight Timer",
+      "url": "https://insighttimer.com/sagesapien",
+      "description": "His free guided meditations and breathwork tracks on the Insight Timer app.",
+      "featured": true,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation",
+        "breathwork"
+      ],
+      "image": "https://www.johnsonchong.com/wp-content/uploads/2023/07/Johnson-Chong-scaled-e1688530812277.jpg"
+    },
+    {
+      "title": "Free 7 Day Shamanic Journey for Inner Freedom Challenge",
+      "url": "https://johnson-chong.kit.com/3703f6c868",
+      "description": "A free week of short guided practices sent by email, drawn from his shamanic and breathwork teaching.",
+      "featured": false,
+      "resource_type": "mini_course",
+      "subjects": [
+        "shamanism",
+        "breathwork"
+      ],
+      "image": "https://www.johnsonchong.com/wp-content/uploads/2023/07/Johnson-Chong-scaled-e1688530812277.jpg"
+    }
+  ],
+  "sprint": {
+    "sprint": "pipelines-2",
+    "hub": "insight-timer",
+    "rank": 204,
+    "hub_url": "https://insighttimer.com/sagesapien",
+    "tier_evidence": "Insight Timer 9.1k followers (queue entry, read 1 Nov 2026); YouTube @johnsonchong_sagesapien 485 subscribers (channel header, 5 Nov 2026); Instagram and Facebook linked from his site but not readable (off limits) → ~9.6k readable → local_hero",
+    "email": "contact form",
+    "email_source": null,
+    "contact_form_url": "https://docs.google.com/forms/d/e/1FAIpQLSc_UZMnXw9cMvjva27bcDMwBfDH-fXy5cUv3or0a3E-zzjRmg/viewform?usp=sf_link",
+    "bio_check": "OK: no 8-word runs against 15 source(s)",
+    "flags": [
+      "Parked lead re-checked: no email published anywhere on johnsonchong.com; his Work with Me page links Google Forms for keynote, custom-retreat and podcast/media enquiries and a 1:1 application. The keynote 'Inquiry Form' is used as the contact form (Google Form, not opened). The site's own on-page form is a newsletter sign-up only.",
+      "Base: 'currently is based in Sydney, Australia' in his bio on the Dearmoring Training and Bhutan pages; his workshops are in Surry Hills and Bondi.",
+      "johnsonchong.com sets Crawl-delay 10: respected (10 s between fetches).",
+      "Peru retreat includes optional plant-medicine ceremonies (ayahuasca, huachuma/San Pedro) with Andean teachers, as stated on its page; kept with the plant-medicine subject. Owner may prefer to leave it out.",
+      "SAGE Shamanic Breathwork course price: the page shows '$24.50 AUD (50% off from $49 ends Oct 30)'; the sale has ended, so the full $49 AUD is given. The two other course prices ($19.99, $29.99) carry no currency on the page; the store's currency setting is AUD.",
+      "Course pages show enrolments (302, 64 and 48 students): too few to affect the tier.",
+      "Free challenge is a Kit (ConvertKit) sign-up page linked from his site's menu; not opened.",
+      "Few teaching videos: his YouTube channel is mostly retreat testimonials and short promos under two minutes."
+    ],
+    "left_out": [
+      "Shamanic Spinal Sessions: the page promises that anxiety decreases and chronic tension softens (health claims).",
+      "Shamanic Breathwork Dearmoring Training (Sydney, 21–22 Nov 2026): hands-on bodywork training using acupressure and body reading for practitioners; borderline therapeutic framing, left out to be safe.",
+      "SAGE Oracle Deck: limited first edition sold from his site, no ISBN.",
+      "Book Sage Sapien: From Karma to Dharma: no ISBN on his own pages and none found from a publisher.",
+      "YouTube: retreat testimonials, promos under two minutes, and 'On Mescaline, San Pedro and Expanded Shamanic States' (a conversation about a psychoactive substance, left out to be safe).",
+      "Keynote speaking and custom retreats for companies: not public offerings.",
+      "Lead, 5 Nov 2026: \"Shamanic Expansion Retreat, Peru\" left out (includes optional ayahuasca and San Pedro ceremonies; owner's psychedelics decision)."
+    ]
+  },
+  "images_final": true
+}

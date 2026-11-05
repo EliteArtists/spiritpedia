@@ -1,0 +1,139 @@
+{
+  "healer": {
+    "healer_slug": "clive-freeman",
+    "location_source": null,
+    "no_public_base": "His own site (presentminutes.co.uk: home, about, meditations and blog posts) publishes no town or country; he teaches over Zoom to people anywhere. The queue's 'Helmsley, UK' came from his Insight Timer profile, which was not opened in this sprint, so it is not used.",
+    "create": {
+      "name": "Clive Freeman",
+      "bio": "Clive Freeman is a meditation teacher who runs Present Minutes, a small project about carrying the calm of formal practice into ordinary, busy days. His starting point is that most of us cannot live on a quiet beach, so the work is to fit attention and kindness around jobs, children, inboxes and long to-do lists. He writes in a friendly, personal voice, drawing on Buddhist ideas such as loving-kindness and equanimity, on non-dual teaching, and on books he has returned to over decades, among them Douglas Harding's On Having No Head and Culadasa's The Mind Illuminated.\n\nHe has recorded a set of free guided meditations, from ten-minute body scans, breath practices and loving-kindness sessions to longer sits that train awareness of one's own thinking, along with yoga nidra style relaxation. He also teaches regular meditation and mindfulness sessions online by video, open to people in any country, and has lately been teaching the 24-movement Tai Chi form, which he presents as a moving meditation. His blog ranges from chess ratings and household chores to doubt and change, always asking how a few present minutes can shift the rest of the day.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "worldwide",
+      "city": null,
+      "country": null,
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "website_url": "https://presentminutes.co.uk/",
+      "booking_url": "https://presentminutes.co.uk/posts/welcome/",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "clive@presentminutes.co.uk",
+      "image_urls": [
+        "https://presentminutes.co.uk/clive-sitting-in-thailand.jpg"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "insight-timer",
+      "role": "instructor"
+    }
+  ],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Meditation and Mindfulness Sessions on Zoom",
+      "url": "https://presentminutes.co.uk/posts/welcome/",
+      "description": "Regular group meditation and mindfulness sessions he leads by video call for people in any country. Those interested are asked to write to him by email to join.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://presentminutes.co.uk/clive-sitting-in-thailand.jpg"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Clive Freeman on Insight Timer",
+      "url": "https://insighttimer.com/clivefreeman",
+      "description": "His teacher page on the free Insight Timer app, where his recorded guided meditations can be played.",
+      "featured": false,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://presentminutes.co.uk/clive-sitting-in-thailand.jpg"
+    },
+    {
+      "title": "Ten Minute Guided Body Scan",
+      "url": "https://presentminutes.co.uk/meditations/Simple-10-minute-body-scan.mp3",
+      "description": "A short recorded body scan for beginners, moving attention slowly through the body. Free to play from his guided meditations page.",
+      "featured": true,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://presentminutes.co.uk/clive-sitting-in-thailand.jpg"
+    },
+    {
+      "title": "Ten Minute Guided Breath Meditation",
+      "url": "https://presentminutes.co.uk/meditations/10-minute-breathing-meditation.mp3",
+      "description": "A beginner's recording that rests attention on the breath for ten minutes. Free to play from his guided meditations page.",
+      "featured": false,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://presentminutes.co.uk/clive-sitting-in-thailand.jpg"
+    },
+    {
+      "title": "Ten Minute Guided Loving-Kindness Meditation",
+      "url": "https://presentminutes.co.uk/meditations/10-minutes-loving-kindness.mp3",
+      "description": "A short loving-kindness practice for newcomers, wishing goodwill to oneself and others. Free to play from his guided meditations page.",
+      "featured": false,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://presentminutes.co.uk/clive-sitting-in-thailand.jpg"
+    },
+    {
+      "title": "Twenty Minute Guided Meditation with Checking In",
+      "url": "https://presentminutes.co.uk/meditations/20m_with_check-ins.mp3",
+      "description": "A longer sit with pauses for noticing what the mind is doing, aimed at building awareness of one's own thinking. Free to play from his guided meditations page.",
+      "featured": false,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://presentminutes.co.uk/clive-sitting-in-thailand.jpg"
+    }
+  ],
+  "sprint": {
+    "sprint": "pipelines-2",
+    "hub": "insight-timer",
+    "rank": 242,
+    "hub_url": "https://insighttimer.com/clivefreeman",
+    "tier_evidence": "Insight Timer 6.8k followers (queue entry, read 1 Nov 2026); no personal social accounts linked from his site → ~6.8k total → local_hero",
+    "email": "yes",
+    "email_source": "https://presentminutes.co.uk/posts/welcome/",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 18 source(s)",
+    "flags": [
+      "Parked entry: an email (clickable mailto) is now published on his own about page, so he is no longer parked.",
+      "Only one photo: the site's header image, file named clive-sitting-in-thailand.jpg (a man sitting cross-legged by a bay); it is a wide banner (1440x642) with the face small, so it may need cropping. Other images on the site are illustrations, not him.",
+      "No public base on his own site (see no_public_base); the queue's Helmsley, UK comes from the unopened Insight Timer profile.",
+      "His about page dates from January 2022; the Zoom sessions are described as 'right now', and the footer says 2025, so check they still run.",
+      "Insight Timer last upload about 7 years ago (queue)."
+    ],
+    "left_out": [
+      "Two sleep meditations (Eight minutes to fall asleep; Fourteen minutes to sleep and deep relaxation): framed on his page around people who have problems getting to sleep, left out under the health rule.",
+      "Twelve minute joy-and-breath and twenty minute breath meditations: beyond the five-resource limit.",
+      "Blog post 'Navigating Anxiety': condition-named, not used.",
+      "Tai Chi teaching: mentioned in a January 2025 blog post with no class page, so not listed as an offering."
+    ]
+  },
+  "images_final": true
+}

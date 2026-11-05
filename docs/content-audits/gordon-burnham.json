@@ -1,0 +1,201 @@
+{
+  "healer": {
+    "healer_slug": "gordon-burnham",
+    "location_source": "http://gordonburnham.com/speaker.html",
+    "create": {
+      "name": "Gordon Burnham",
+      "bio": "Gordon Burnham is an American musician, poet and meditation teacher rooted in the Vedanta tradition of Swami Paramananda. Raised in Michigan, where he studied psychology and music, he settled on the south shore of Boston and from 1976 spent twenty years as music director of the Vedanta Centre in Cohasset under Srimata Gayatri Devi, who gave him the spiritual name Jaidev. During that time he was also on the music therapy staff at Northeastern University in Boston and, with the encouragement of Joan and Miron Borysenko, released his first album and began co-leading workshops with Joan in centres around the country.\n\nHe is now based in La Crescenta, California, where he leads music and speaks regularly at Ananda Ashrama. He leads kirtan, the call-and-response chanting of Sanskrit mantras and prayers from Hindu, Buddhist and Native American traditions, and gives talks on contemplation, surrender and finding peace within. His guided meditations, which pair breath awareness and visualisation with quiet music, are on Insight Timer. His books include a year of daily verses and reflections, a practical meditation handbook, and several collections of contemplative poetry written in the grounds of the ashram.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local_online",
+      "city": "La Crescenta, California",
+      "country": "United States",
+      "subjects": [
+        "meditation",
+        "spirituality",
+        "sound-healing"
+      ],
+      "website_url": "http://gordonburnham.com/",
+      "booking_url": "http://gordonburnham.com/concerts-kirtans.html",
+      "youtube_url": "https://www.youtube.com/channel/UCVB9Ev8ekSLyBD8xhKET-7g",
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "gb@gburnham.com",
+      "image_urls": [
+        "http://gordonburnham.com/assets/images/gordon-burnham-jaidev2-300x417.jpg",
+        "https://yt3.googleusercontent.com/ytc/AIdro_k62pAhDGGkDlYvasWQwlxJQYfu49PdOzjdeI-erzrHDvE=s900-c-k-c0x00ffffff-no-rj"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "insight-timer",
+      "role": "instructor"
+    }
+  ],
+  "videos": [],
+  "books": [
+    {
+      "title": "Inspirations & Meditations: 365 Daily Verses and Reflections",
+      "slug": "inspirations-and-meditations-365-daily-verses",
+      "author": "Gordon Burnham",
+      "asin": "1484152972",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "One page for each day of the year, pairing a short poem drawn from nature or from Rumi, Hafiz, Emerson and others with a reflection grounded in Vedanta and other world teachings. It is written to be spiritual without belonging to any one religion.",
+      "subjects": [
+        "spirituality",
+        "meditation"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1484152972.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "Meditation Tips 'n Techniques: Simple Methods, Guides & Aids",
+      "slug": "meditation-tips-n-techniques",
+      "author": "Gordon Burnham",
+      "asin": "B00H4I7C16",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "A practical handbook of simple meditation methods for beginners and seasoned meditators alike, with help for getting past common obstacles and a plain account of the thinking behind the practice.",
+      "subjects": [
+        "meditation"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/B00H4I7C16.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "Whispers of Light",
+      "slug": "whispers-of-light",
+      "author": "Gordon Burnham",
+      "asin": "B00DCDCKWI",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "A collection of short contemplative poems on nature and spirit, several of which he also reads on his guided-meditation album.",
+      "subjects": [
+        "spirituality",
+        "mysticism"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/B00DCDCKWI.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "The Mystical Dance",
+      "slug": "the-mystical-dance",
+      "author": "Gordon Burnham",
+      "asin": "B0050CM2FE",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "Devotional and mystical poetry written out of his years of practice in the Vedanta tradition.",
+      "subjects": [
+        "mysticism",
+        "spirituality"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/B0050CM2FE.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "Something the River Says",
+      "slug": "something-the-river-says",
+      "author": "Gordon Burnham",
+      "asin": "B0164WGB5A",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "Poems of spiritual awakening drawn from time in nature and quiet reflection, in the same spirit as his daily verses.",
+      "subjects": [
+        "spiritual-awakening",
+        "spirituality"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/B0164WGB5A.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "Spirit of the Mountain",
+      "slug": "spirit-of-the-mountain",
+      "author": "Gordon Burnham",
+      "asin": "B01FPXWHDY",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "Short inspirational writings composed in the grounds of Ananda Ashrama in the foothills above La Crescenta.",
+      "subjects": [
+        "spirituality"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/B01FPXWHDY.01._SCLZZZZZZZ_.jpg"
+    }
+  ],
+  "courses": [
+    {
+      "title": "Kirtan and Sacred Chant Concerts",
+      "url": "http://gordonburnham.com/concerts-kirtans.html",
+      "description": "Gordon leads evenings of call-and-response chanting in Sanskrit and other traditions for spiritual centres, churches and groups; no musical experience is needed to join in. Bookings are arranged one by one.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "sound-healing",
+        "spirituality"
+      ],
+      "image": "http://gordonburnham.com/assets/images/gordon-burnham-jaidev2-300x417.jpg"
+    },
+    {
+      "title": "Spiritual Talks",
+      "url": "http://gordonburnham.com/speaker.html",
+      "description": "Talks for groups and centres on themes such as contemplation, letting go, the power of the mind and finding peace in hard times, booked individually.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "spirituality",
+        "meditation"
+      ],
+      "image": "http://gordonburnham.com/assets/images/gordon-burnham-jaidev2-300x417.jpg"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Gordon Burnham on Insight Timer",
+      "url": "https://insighttimer.com/gordonburnham",
+      "description": "His free guided meditations on Insight Timer, using breath, mindfulness and visualisation set to soft background music.",
+      "featured": true,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "http://gordonburnham.com/assets/images/gordon-burnham-jaidev2-300x417.jpg"
+    }
+  ],
+  "sprint": {
+    "sprint": "pipelines-2",
+    "hub": "insight-timer",
+    "rank": 174,
+    "hub_url": "https://insighttimer.com/gordonburnham",
+    "tier_evidence": "Insight Timer 14.2k followers (queue entry, read 1 Nov 2026); YouTube @gordonburnham 186 subscribers (channel header, 5 Nov 2026); X and Facebook not readable without login → ~14.4k → local_hero",
+    "email": "yes",
+    "email_source": "http://gordonburnham.com/",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 8 source(s)",
+    "flags": [
+      "Parked lead re-checked: his own site publishes gb@gburnham.com as a mailto link on every page ('Inquiries & Booking'), so it has a contact route now.",
+      "gordonburnham.com serves a self-signed certificate on https; used over http (its robots.txt is 404 there, so nothing is disallowed).",
+      "Activity: site footer says © 2020 and his last Insight Timer upload was about nine years ago; About page says he 'currently leads music' at Ananda Ashrama. Owner may want to confirm he still teaches.",
+      "Base: La Crescenta, California, from the c/o Blue Jewel Music mailing address on his pages (city level only); also where Ananda Ashrama is. Regional: Los Angeles foothills (Crescenta Valley).",
+      "Availability set to local_online: in-person kirtans and talks plus online guided meditations.",
+      "Book ASINs from the amazon.com links on his own Books page (not opened); not confirmed elsewhere. Only Inspirations & Meditations has a print ISBN-10; the others link Kindle ASINs. Covers not found for the four poetry books.",
+      "YouTube channel is chant and music only, so no videos were used; first photo (300 x 417) is just at the size floor.",
+      "Insight Timer description on his site mentions meditations for deep sleep and 'releasing anxiety'; the free-resource description avoids that wording.",
+      "Dry run: 'La Crescenta, California' is not in places (it is the La Crescenta-Montrose CDP, about 20,000 people); needs a place alias."
+    ],
+    "left_out": [
+      "Music albums and Psalms for Singing (music products).",
+      "Healing and Spiritual Awakening Through Music essay page: 'healing' framing, borderline.",
+      "All YouTube videos: music-only, local history or under 2 minutes."
+    ]
+  },
+  "images_final": true
+}

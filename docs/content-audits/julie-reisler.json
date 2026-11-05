@@ -1,0 +1,211 @@
+{
+  "healer": {
+    "healer_slug": "julie-reisler",
+    "location_source": "https://juliereisler.com/step-into-your-highest-self/",
+    "no_public_base": "Her site says only that clients can visit her for VIP days 'in the DC/Maryland area'; no city is published, so city is left null and country set to United States.",
+    "create": {
+      "name": "Julie Reisler",
+      "bio": "Julie Reisler is an intuitive coach, author and podcaster who teaches people to recognise and trust their own inner guidance. After years in corporate recruiting she retrained as a coach, completing graduate training and board certification as a wellness coach, and she now teaches on Georgetown University's coaching programme. Around fifteen years ago a spiritual awakening opened her to intuitive and channelled work, and she has since built a method she calls Intuition Language, which helps people notice whether their intuition speaks to them through body sensation, imagery, inner knowing or an inner voice.\n\nShe trains other coaches through her Intuitive Life Designer Coach Academy, runs a monthly live membership called Alchemy for practising intuition together, offers a self-paced Intuition School and works privately with clients in intensives and longer coaching programmes. She hosts The You-est You podcast, where she talks with teachers, mediums and authors about spiritual life, and posts conversations, short guided meditations and weekly card readings on YouTube. She is the author of the Get a PhD in YOU books and a two-time TEDx speaker.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "worldwide",
+      "city": null,
+      "country": "United States",
+      "subjects": [
+        "soul-purpose",
+        "life-coaching",
+        "channelled-teachings"
+      ],
+      "website_url": "https://juliereisler.com/",
+      "booking_url": "https://juliereisler.com/step-into-your-highest-self/",
+      "youtube_url": "https://www.youtube.com/@JulieReisler",
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "team@juliereisler.com",
+      "image_urls": [
+        "https://yt3.googleusercontent.com/ZCG_duk8gU2XGDRkgqdqrgqvuWORK9js01hpjptr9lFoTAy-wuYdJvJUE0Wag42hEhzdxZlUmmQ=s900",
+        "https://juliereisler.com/wp-content/uploads/2025/10/JulieR_8.17.24_475-scaled-Edited-980x1470.png"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "the-shift-network",
+      "role": "instructor"
+    }
+  ],
+  "videos": [
+    {
+      "title": "The KEY to Emotional Freedom: Feel Before You Reveal",
+      "url": "https://www.youtube.com/watch?v=9Zwnl9RprZ4",
+      "subjects": [
+        "self-healing",
+        "spirituality"
+      ],
+      "channel": "Julie Reisler | Intuition on Demand"
+    },
+    {
+      "title": "The Hidden Pattern That Proved My Intuition Was Trying to Get My Attention",
+      "url": "https://www.youtube.com/watch?v=e3O8yi1CvsI",
+      "subjects": [
+        "spirituality",
+        "soul-purpose"
+      ],
+      "channel": "Julie Reisler | Intuition on Demand"
+    },
+    {
+      "title": "Are You Actually Overriding Your Body?",
+      "url": "https://www.youtube.com/watch?v=LCnOB94nmXQ",
+      "subjects": [
+        "spirituality"
+      ],
+      "channel": "Julie Reisler | Intuition on Demand"
+    },
+    {
+      "title": "Crystal Temple Activation Meditation",
+      "url": "https://www.youtube.com/watch?v=p07UHz3JJes",
+      "subjects": [
+        "meditation"
+      ],
+      "channel": "Julie Reisler | Intuition on Demand"
+    },
+    {
+      "title": "Grounded Expansion: Rooted Yet Infinite",
+      "url": "https://www.youtube.com/watch?v=R-Uks0WSJRQ",
+      "subjects": [
+        "meditation"
+      ],
+      "channel": "Julie Reisler | Intuition on Demand"
+    }
+  ],
+  "books": [
+    {
+      "title": "Get a PhD in YOU: Business Edition",
+      "slug": "get-a-phd-in-you-business-edition",
+      "author": "Julie Reisler",
+      "asin": "0692166947",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "A workplace version of her self-discovery book, with exercises for bringing self-knowledge and values into the way you work and lead.",
+      "subjects": [
+        "life-coaching",
+        "soul-purpose"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/0692166947.01._SCLZZZZZZZ_.jpg"
+    }
+  ],
+  "courses": [
+    {
+      "title": "Alchemy: Intuition on Demand",
+      "url": "https://juliereisler.com/alchemy/",
+      "description": "A monthly ninety-minute live lab and online community for practising intuition and acting on what you receive. You can cancel at any time.",
+      "price": "$47 USD a month",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "spirituality",
+        "channelled-teachings"
+      ],
+      "image": "https://juliereisler.com/wp-content/uploads/2022/07/LDCA-logo.jpg"
+    },
+    {
+      "title": "Intuition School",
+      "url": "https://juliereisler.com/intuitionschool/",
+      "description": "A self-paced course in nine modules on her intuition framework, with worksheets, videos, meditations and lifetime access to the recordings.",
+      "price": "See course page",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "spirituality",
+        "spiritual-awakening"
+      ],
+      "image": "https://juliereisler.com/wp-content/uploads/2024/08/INTUITION-School-Julie-Reisler.png"
+    },
+    {
+      "title": "Intuitive Life Designer Coach Certification",
+      "url": "https://juliereisler.com/certification/",
+      "description": "Her coach training programme, which combines evidence-based coaching skills with full training in Intuition Language and group coaching.",
+      "price": "$9,997 USD (payment plan available)",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "life-coaching",
+        "soul-purpose"
+      ],
+      "image": "https://juliereisler.com/wp-content/uploads/2026/03/As-Seen-In-Mar-2026.png"
+    },
+    {
+      "title": "Soul Alignment Intensive and 1:1 Coaching",
+      "url": "https://juliereisler.com/step-into-your-highest-self/",
+      "description": "A ninety-minute intuitive session on your next step, with longer private coaching programmes for those who want to go further.",
+      "price": "$888 USD (90-minute intensive)",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "life-coaching",
+        "channelled-teachings"
+      ],
+      "image": "https://juliereisler.com/wp-content/uploads/2026/05/1on1-Header_Mobile.png"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Free Intuition Language Test",
+      "url": "https://juliereisler.com/intuitiontest/",
+      "description": "A short quiz that suggests whether you mainly feel, know, see or hear your intuition, with pointers for working with it.",
+      "featured": true,
+      "resource_type": "practice",
+      "subjects": [
+        "spirituality"
+      ],
+      "image": "https://juliereisler.com/wp-content/uploads/2025/02/Julie-Reisler-Empowered-Living.png"
+    },
+    {
+      "title": "The You-est You Podcast",
+      "url": "https://juliereisler.com/podcast/",
+      "description": "Her long-running podcast of conversations with spiritual teachers, mediums and authors about intuition, purpose and inner life.",
+      "featured": false,
+      "resource_type": "practice",
+      "subjects": [
+        "spirituality",
+        "soul-purpose"
+      ],
+      "image": "https://juliereisler.com/wp-content/uploads/2019/05/unleash-mockup.png"
+    }
+  ],
+  "sprint": {
+    "sprint": "pipelines-2",
+    "hub": "the-shift-network",
+    "rank": 101,
+    "hub_url": null,
+    "tier_evidence": "YouTube 60K (channel header next to @JulieReisler, 5 Nov 2026); Instagram @juliereisler and Facebook not read (off limits) → ~60k readable → local_hero",
+    "email": "yes",
+    "email_source": "https://juliereisler.com/",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 11 source(s)",
+    "flags": [
+      "Shift named on: https://juliereisler.com/certification/ (says she teaches her Intuition Language framework 'at Georgetown University and on The Shift Network').",
+      "juliereisler.com robots.txt sets Crawl-delay: 60; pages were fetched one at a time 61 seconds apart.",
+      "Tier: Instagram and Facebook counts unreadable; YouTube alone is 60K, so an Instagram following above ~20k would put her near or over 80k.",
+      "Base: only 'DC/Maryland area' published (VIP-day note on her coaching page); city null, country United States.",
+      "Her about page tells her story of emotional eating and a thyroid diagnosis; the bio leaves health history out.",
+      "Book: ISBN-10 0692166947 from the Amazon link on her shop page (copied, not opened), not confirmed elsewhere; cover image on her shop page. The main Get a PhD in YOU book is linked only through an amzn.to short link (off limits), so it is left out.",
+      "Most of her YouTube uploads are podcast interviews where the guest is the main speaker; only her own solo talks and meditations were picked.",
+      "No contact form seen; email is a team inbox (team@juliereisler.com, mailto in the site footer)."
+    ],
+    "left_out": [
+      "Hungry for More course and the free 'throat chakra / thyroid meditation': condition-led (emotional eating, thyroid).",
+      "Get a PhD in YOU (main edition) and the journal: no ISBN/ASIN on her pages (amzn.to short link only).",
+      "Podcast interview videos where a guest is the main speaker; weekly card-pull shorts.",
+      "Corporate and speaking pages: business services."
+    ]
+  },
+  "images_final": true
+}

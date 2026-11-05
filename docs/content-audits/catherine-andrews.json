@@ -1,0 +1,192 @@
+{
+  "healer": {
+    "healer_slug": "catherine-andrews",
+    "location_source": "https://www.catherinedandrews.com/about",
+    "create": {
+      "name": "Catherine Andrews",
+      "bio": "Catherine Andrews is a Tarot reader, feng shui consultant and spiritual coach who works mainly with highly sensitive and neurodivergent women. She worked for years in senior corporate roles while living in Washington, DC, and describes herself as having been an atheist until a gradual and somewhat reluctant awakening in her late thirties, which began when a Tarot deck started to make unexpected sense to her. She went on to train in Reiki levels one and two, feng shui and space clearing, and later in nutritional therapy, and she now lives in an old cottage in the Virginia countryside.\n\nHer teaching is practical and down to earth: Tarot as a tool for reflection, the home as a partner in intention-setting, simple seasonal rituals, journaling, shadow work and manifestation for people who feel things strongly. She offers ninety-minute intuitive coaching calls that draw on Tarot, astrology and feng shui, live and recorded readings, and home consultations over Zoom. Alongside these sit self-paced courses such as The Joyful Tarot, Practical Spirituality and The Intentional Home, a library of hour-long recorded workshops, a shared membership with a friend, and occasional in-person moon circles in Loudoun County. She also writes a weekly newsletter and hosts a podcast, both called The New Sensitive.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local_online",
+      "city": "Loudoun County, Virginia",
+      "country": "United States",
+      "subjects": [
+        "spirituality",
+        "manifestation",
+        "life-coaching"
+      ],
+      "website_url": "https://www.catherinedandrews.com/",
+      "booking_url": "https://www.catherinedandrews.com/services",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": null,
+      "image_urls": [
+        "https://images.squarespace-cdn.com/content/v1/65d378eb906b017857cc1309/315085b0-9cfe-467c-a5c9-78115e7beb17/Mask+Group+9.png?format=1000w",
+        "https://images.squarespace-cdn.com/content/v1/65d378eb906b017857cc1309/984997e3-38e8-499d-87c0-d7d2faf11778/CatherineAndrews140.png?format=1000w"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Intuitive Coaching Call",
+      "url": "https://www.catherinedandrews.com/services",
+      "description": "A single ninety-minute call that combines Tarot, astrology, feng shui and channelled guidance with plain practical coaching to work through a block or a turning point. The recording and a follow-up email with next steps are included.",
+      "price": "$333 USD",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "life-coaching",
+        "astrology",
+        "channelled-teachings"
+      ],
+      "image": "http://static1.squarespace.com/static/65d378eb906b017857cc1309/t/65e9d7a2daa3fd22ee26afbd/1709823906596/Paper-Sizes.png?format=1500w"
+    },
+    {
+      "title": "The Joyful Tarot",
+      "url": "https://catherine-andrews.mykajabi.com/offers/8Ro6TDzY",
+      "description": "A seven-week self-paced course on reading Tarot in an intuitive, supportive and enjoyable way, for beginners and returning readers alike.",
+      "price": "$497 USD",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "spirituality"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/65d378eb906b017857cc1309/315085b0-9cfe-467c-a5c9-78115e7beb17/Mask+Group+9.png?format=1000w"
+    },
+    {
+      "title": "Practical Spirituality",
+      "url": "https://catherine-andrews.mykajabi.com/offers/jLtyqT9A",
+      "description": "A six-week self-paced course on building a personal reflection practice and a felt connection with the inner and outer worlds, using simple spiritual tools.",
+      "price": "$297 USD",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "spirituality",
+        "spiritual-awakening"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/65d378eb906b017857cc1309/315085b0-9cfe-467c-a5c9-78115e7beb17/Mask+Group+9.png?format=1000w"
+    },
+    {
+      "title": "The Intentional Home",
+      "url": "https://catherine-andrews.mykajabi.com/offers/f4NSDnF9",
+      "description": "An eight-week course that simplifies feng shui, energy work and home ritual into practical steps anyone can use in their own living space.",
+      "price": "$800 USD",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "manifestation",
+        "spirituality"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/65d378eb906b017857cc1309/315085b0-9cfe-467c-a5c9-78115e7beb17/Mask+Group+9.png?format=1000w"
+    },
+    {
+      "title": "Tarot for Beginners",
+      "url": "https://catherine-andrews.mykajabi.com/offers/8pp8YWzj",
+      "description": "A recorded one-hour workshop introducing the Tarot deck and some first practical ways to work with the cards.",
+      "price": "$77 USD",
+      "product_type": "download",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "spirituality"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/65d378eb906b017857cc1309/315085b0-9cfe-467c-a5c9-78115e7beb17/Mask+Group+9.png?format=1000w"
+    },
+    {
+      "title": "How to Do Shadow Work",
+      "url": "https://catherine-andrews.mykajabi.com/offers/Fd7gVsoj",
+      "description": "A recorded workshop explaining what shadow work is and offering exercises to begin noticing and integrating the disowned parts of oneself.",
+      "price": "$77 USD",
+      "product_type": "download",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "shadow-work"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/65d378eb906b017857cc1309/315085b0-9cfe-467c-a5c9-78115e7beb17/Mask+Group+9.png?format=1000w"
+    },
+    {
+      "title": "Finding Your North Node",
+      "url": "https://catherine-andrews.mykajabi.com/offers/f4cN42py",
+      "description": "A recorded workshop on the North Node in a birth chart, what its sign and house suggest about life direction, and how the South Node shows older habits.",
+      "price": "$77 USD",
+      "product_type": "download",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "astrology",
+        "soul-purpose"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/65d378eb906b017857cc1309/315085b0-9cfe-467c-a5c9-78115e7beb17/Mask+Group+9.png?format=1000w"
+    },
+    {
+      "title": "Manifestation for Highly Sensitive People",
+      "url": "https://catherine-andrews.mykajabi.com/offers/H2ofskup",
+      "description": "A recorded workshop setting out twelve steps for manifesting, adapted for sensitive temperaments, with examples from her own life.",
+      "price": "$77 USD",
+      "product_type": "download",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "manifestation",
+        "law-of-attraction"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/65d378eb906b017857cc1309/315085b0-9cfe-467c-a5c9-78115e7beb17/Mask+Group+9.png?format=1000w"
+    },
+    {
+      "title": "How to Run a Magical Home",
+      "url": "https://catherine-andrews.mykajabi.com/offers/aQJamwLm",
+      "description": "A recorded workshop on treating a house as a partner in everyday ritual and intention, drawing on feng shui and simple home magic.",
+      "price": "$77 USD",
+      "product_type": "download",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "manifestation",
+        "spirituality"
+      ],
+      "image": "https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/file-uploads/site/2147559394/images/032804-c6b5-035-53ff-7eaaab7bd4_How_to_Run_a_Magical_Home.png"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "pipelines-2",
+    "hub": "the-shift-network",
+    "rank": 137,
+    "hub_url": null,
+    "tier_evidence": "Instagram @catherineandrews linked from her site, not read (off limits); her newsletter is on Substack (off limits) and the podcast's audience is not counted; no YouTube channel found → 0 readable → local_hero",
+    "email": "contact form",
+    "email_source": null,
+    "contact_form_url": "https://www.catherinedandrews.com/contact",
+    "bio_check": "OK: no 8-word runs against 6 source(s)",
+    "flags": [
+      "No Shift mention on own site: listed without the link (home, about, services, contact and both course pages checked).",
+      "Identity: found through a web search on her name (podcast page names catherinedandrews.com); the Shift list entry has no other detail to confirm it is the same Catherine Andrews.",
+      "HEALTH, please look: her About page tells her own story at length in condition terms (back pain, perimenopause, adrenal depletion, hair loss, sobriety) and describes her as a Nutritional Therapy Practitioner and holistic health coach; several workshops are nervous-system, EFT or anxiety themed. All of those are left out; what remains is Tarot, feng shui, astrology and spirituality teaching, which is most of her course list. Owner may prefer to skip her under the health rule.",
+      "Her About page also calls her an 'advocate of and mentor for microdosing psilocybin'; nothing of that is in the plan.",
+      "Base: her About page says she lives and works in Loudoun County, Virginia (a county, not a town); recorded as published for mapping. A New Moon circle in Leesburg, VA (in the same county) is her in-person work. Availability local_online.",
+      "Photos: two from her own site of the same woman (sitting on grass; on a porch). A third site photo was not used because a house number is visible.",
+      "Course and workshop URLs are Kajabi checkout ('offers') links taken from her own course pages; each is unique."
+    ],
+    "left_out": [
+      "New Moon Journal and Tarot Circle, Leesburg, VA (9 November 2026): dated, by the sprint margin.",
+      "Free 5-Day Vision Your Year Challenge (6–10 December): free but dated and email-based; left out to keep the list evergreen.",
+      "Workshops on EFT, the nervous system and the fawn response, telling anxiety from intuition, healing the inner child or inner critic, and Recharge Your Light: condition or healing framing.",
+      "Intentional Dating (course blurb names anxiety), Highly Sensitive Person Leadership Academy, Intentional Living, Secretly Ambitious and goal-setting/journaling/abundance workshops: business, dating or general coaching rather than spiritual teaching, or kept out to stay within ten.",
+      "Feng Shui consultation and Tarot readings (services page): same page as the coaching call, so one item only.",
+      "Trust the Universe membership (shared with Missy Toy Ozeas) and her Substack (substack.com off limits).",
+      "Podcast episodes: not on YouTube."
+    ],
+    "held": "Lead, 5 Nov 2026: held for the owner. Her About page is condition-heavy and she mentors psilocybin microdosing (health rule and plant-medicine fit)."
+  }
+}

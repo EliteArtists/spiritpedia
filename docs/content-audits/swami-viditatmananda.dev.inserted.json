@@ -1,0 +1,63 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 938,
+    "healer_slug": "swami-viditatmananda"
+  },
+  "rows": [
+    {
+      "table": "videos",
+      "id": 7984,
+      "slug": "vision-of-upanisads-01",
+      "title": "Vision Of Upanisads 01"
+    },
+    {
+      "table": "videos",
+      "id": 7985,
+      "slug": "vision-of-upanisads-02",
+      "title": "Vision Of Upanisads 02"
+    },
+    {
+      "table": "videos",
+      "id": 7986,
+      "slug": "vision-of-upanisads-03",
+      "title": "Vision Of Upanisads 03"
+    },
+    {
+      "table": "videos",
+      "id": 7987,
+      "slug": "vision-of-upanisads-04",
+      "title": "Vision Of Upanisads 04"
+    },
+    {
+      "table": "videos",
+      "id": 7988,
+      "slug": "vision-of-upanisads-05",
+      "title": "Vision Of Upanisads 05"
+    },
+    {
+      "table": "courses",
+      "id": "1d8d33e3-5cea-4282-8543-8a7ccb5f53ed",
+      "slug": "vedanta-retreats-at-arsha-vidya-gurukulam",
+      "title": "Vedanta Retreats at Arsha Vidya Gurukulam"
+    },
+    {
+      "table": "courses",
+      "id": "4ff5834d-57e3-4c64-b39b-8a1c8c7585f7",
+      "slug": "isavasya-upanisad-e-book",
+      "title": "Isavasya Upanisad E-Book"
+    },
+    {
+      "table": "free_resources",
+      "id": "763304a7-f773-4204-8422-ca4a8a0d27d8",
+      "slug": "swami-viditatmananda-on-insight-timer",
+      "title": "Swami Viditatmananda on Insight Timer"
+    },
+    {
+      "table": "hub_teachers",
+      "id": "047cbdf8-6257-4c21-ac55-150bd5ebe7f9",
+      "title": "swami-viditatmananda teaches at Insight Timer"
+    }
+  ],
+  "at": "2026-11-05T16:37:53.349Z"
+}

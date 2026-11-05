@@ -1,0 +1,233 @@
+{
+  "healer": {
+    "healer_slug": "sarah-janes",
+    "location_source": "https://themysteries.org/sarah-janes",
+    "create": {
+      "name": "Sarah Janes",
+      "bio": "Sarah Janes is an English writer, researcher and retreat leader whose subject is dreaming: its history in the ancient world, the temple-sleep rites of Greece and Egypt, and how people today can work with dreams. A lucid dreamer from childhood, she researches the oracles, sanctuaries and mystery religions of antiquity, and has joined Rupert Sheldrake and the British Pilgrimage Trust in reviving dream incubation at sacred places in Britain. Inner Traditions published her book on the subject, Initiation into Dream Mysteries, in 2022.\n\nShe lives mainly in the village of Ancient Epidavros in the Peloponnese, near the old Sanctuary of Asklepios, and also spends time in Istanbul and on the south coast of England. Under the name Dream Mysteries she leads residential dream retreats at Greek sites such as Epidavros, Delphi and Elefsina, a training retreat for people who want to use dreamwork with others, online courses and recorded hypnagogic meditations, one-to-one dream sessions and themed walks around the British Museum. In 2023 she was one of the founders of Dream Palace Athens, and she hosts a monthly online panel series, along with the Explorers Egyptology talks, on her YouTube channel.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local_online",
+      "city": "Ancient Epidavros",
+      "country": "Greece",
+      "subjects": [
+        "dreamwork",
+        "ancient-wisdom",
+        "mysticism"
+      ],
+      "website_url": "https://themysteries.org/",
+      "booking_url": "https://themysteries.org/retreats",
+      "youtube_url": "https://www.youtube.com/@sarahjanesvideos",
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "sarahjanes@themysteries.org",
+      "image_urls": [
+        "https://yt3.googleusercontent.com/DyMpSNJsXa4e3pY9-GdtzJghWQa6vHGRseuIPZ9iqNpmQ6AMxdD_zGL5AHlCYuV23a9-7-XQTw=s900",
+        "https://images.squarespace-cdn.com/content/v1/5a3128ace45a7cb0bee73637/6e66a054-1e30-41a3-80df-8690dc4f0e0b/SJ1.jpg"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "the-shift-network",
+      "role": "instructor"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Oracle Dream Retreat and Lucid Dreaming Studies with Prof. David Luke",
+      "url": "https://www.youtube.com/watch?v=eW5qpkvI0Gs",
+      "subjects": [
+        "dreamwork",
+        "consciousness"
+      ],
+      "channel": "Sarah Janes"
+    },
+    {
+      "title": "ORACLE: A Panel Conversation",
+      "url": "https://www.youtube.com/watch?v=KCZ7ICcIk3Q",
+      "subjects": [
+        "dreamwork",
+        "ancient-wisdom"
+      ],
+      "channel": "Sarah Janes"
+    },
+    {
+      "title": "MYSTERY: A Panel Conversation",
+      "url": "https://www.youtube.com/watch?v=EKkASPx9Yi8",
+      "subjects": [
+        "mysticism",
+        "ancient-wisdom"
+      ],
+      "channel": "Sarah Janes"
+    },
+    {
+      "title": "MAGIC: A Panel Conversation",
+      "url": "https://www.youtube.com/watch?v=U6aIvqdT6PA",
+      "subjects": [
+        "hermeticism",
+        "mysticism"
+      ],
+      "channel": "Sarah Janes"
+    },
+    {
+      "title": "SPIRIT: A Panel Conversation",
+      "url": "https://www.youtube.com/watch?v=lHYFof8Nbk4",
+      "subjects": [
+        "spirituality",
+        "consciousness"
+      ],
+      "channel": "Sarah Janes"
+    },
+    {
+      "title": "Memory:  A Panel Conversation",
+      "url": "https://www.youtube.com/watch?v=4PmabNSvoOk",
+      "subjects": [
+        "dreamwork",
+        "consciousness"
+      ],
+      "channel": "Sarah Janes"
+    }
+  ],
+  "books": [
+    {
+      "title": "Initiation into Dream Mysteries: Drinking from the Pool of Mnemosyne",
+      "slug": "initiation-into-dream-mysteries",
+      "author": "Sarah Janes",
+      "asin": "164411514X",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "Sarah Janes traces how dreaming was understood and practised in the Western esoteric tradition, from ancient temple sleep to the present day. The book mixes history with her own experience and with exercises for lucid and incubated dreaming.",
+      "subjects": [
+        "dreamwork",
+        "ancient-wisdom",
+        "hermeticism"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/164411514X.01._SCLZZZZZZZ_.jpg"
+    }
+  ],
+  "courses": [
+    {
+      "title": "Songlines of Sleep: Dream Mysteries Training Retreat",
+      "url": "https://themysteries.org/training-retreats",
+      "description": "A ten-night residential training in Ancient Epidavros for facilitators, artists, teachers and others who want to work with sleep and dreams. The group uses story, myth, ritual, writing, divination and voicework alongside visits to nearby ancient sites.",
+      "price": "£2850 GBP to £3300 GBP",
+      "product_type": "retreat",
+      "start_date": "2027-04-12",
+      "end_date": "2027-04-22",
+      "subjects": [
+        "dreamwork",
+        "ancient-wisdom"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/5a3128ace45a7cb0bee73637/32c476c0-d510-46cb-ba11-9c2c570ffb6e/themysteries.png"
+    },
+    {
+      "title": "Oracle Dream Retreat 2027",
+      "url": "https://themysteries.org/oracle-dream-retreat",
+      "description": "Her yearly dream retreat in Greece, visiting oracle and sanctuary sites with guest speakers on magic, psychedelic research and mythic astrology. Days combine site visits, talks and group dreamwork aimed at precognitive and oracular dreaming.",
+      "price": "£2850 GBP to £3950 GBP",
+      "product_type": "retreat",
+      "start_date": "2027-05-08",
+      "end_date": "2027-05-18",
+      "subjects": [
+        "dreamwork",
+        "ancient-wisdom",
+        "mysticism"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/5a3128ace45a7cb0bee73637/32c476c0-d510-46cb-ba11-9c2c570ffb6e/themysteries.png"
+    },
+    {
+      "title": "Dream Hieroglyphs Full Course",
+      "url": "https://themysteries.org/store/dream-hieroglyphs-full-course",
+      "description": "Nine recorded two-hour sessions, each on one Egyptian hieroglyph, its sound and its layers of meaning. Includes guided hypnagogic meditations, home exercises and an online group dreamwork space, building towards a personal dreambook.",
+      "price": "£270.00 GBP",
+      "product_type": "download",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "dreamwork",
+        "ancient-wisdom",
+        "meditation"
+      ],
+      "image": "http://static1.squarespace.com/static/5a3128ace45a7cb0bee73637/696772ef4ac5d4669642a608/69dd34b1e8c53572a3ee0934/1776105308953/504002335_18504686899020380_8609588667808291121_n.jpg?format=1500w"
+    },
+    {
+      "title": "Dream Museum: A Guided Oneiric Odyssey Around the British Museum",
+      "url": "https://themysteries.org/museum-tours",
+      "description": "A four-hour small-group walk through the British Museum in London looking at objects linked to dreams, sleep and the ancient mystery cults. Places are limited to ten, and a guided audio track follows for home practice.",
+      "price": "£80 GBP",
+      "product_type": "course",
+      "start_date": "2026-11-25",
+      "end_date": "2026-11-25",
+      "subjects": [
+        "dreamwork",
+        "ancient-wisdom"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/5a3128ace45a7cb0bee73637/32c476c0-d510-46cb-ba11-9c2c570ffb6e/themysteries.png"
+    },
+    {
+      "title": "Oneiromancy 1:1",
+      "url": "https://themysteries.org/new-page-1",
+      "description": "One-to-one dreamwork sessions in which she helps a dreamer build a closer relationship with their dreams, using her own oneiromantic method. Each process is shaped around the individual's dreams and themes.",
+      "price": "£300 GBP",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "dreamwork"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/5a3128ace45a7cb0bee73637/32c476c0-d510-46cb-ba11-9c2c570ffb6e/themysteries.png"
+    },
+    {
+      "title": "Hypnagogic Meditation Session for a Divine Dream",
+      "url": "https://themysteries.org/hypnagogic-meditation",
+      "description": "A recorded guided meditation for the drowsy state before sleep, built around an ancient Egyptian dream image from a scribe's dreambook. The audio file is sent by email after purchase.",
+      "price": "£40 GBP",
+      "product_type": "download",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "dreamwork",
+        "meditation"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/5a3128ace45a7cb0bee73637/32c476c0-d510-46cb-ba11-9c2c570ffb6e/themysteries.png"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "pipelines-2",
+    "hub": "the-shift-network",
+    "rank": 145,
+    "hub_url": null,
+    "tier_evidence": "YouTube @sarahjanesvideos 2.22K subscribers (channel header, 5 Nov 2026); Instagram, Facebook and X not read (off limits) → ~2.2k readable → local_hero",
+    "email": "yes",
+    "email_source": "https://themysteries.org/retreats",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 16 source(s)",
+    "flags": [
+      "Shift named on: https://themysteries.org/ (home page carries a Shift Network logo linking to an affiliate link for the Shift course 'Dreaming Gods & Goddesses'). The Shift course page was not opened (theshiftnetwork.com returns 403 to us, 4 Nov 2026) and is not added as an offering, as the page does not present it as on sale or coming up.",
+      "Email sarahjanes@themysteries.org is a mailto on the retreats and other pages; her site also shows 22sarahjanes22@gmail.com on the about page. No contact form.",
+      "Base: she says she lives in the small village of Ancient Epidavros (Archaia Epidavros), Peloponnese, Greece; recorded as published. It is a village, not a town of 5,000+, so it needs mapping. She also spends time in Istanbul and St Leonards-on-Sea/Hastings, England.",
+      "Regional: Ancient Epidavros, Peloponnese, Greece (no Spiritpedia teachers nearby).",
+      "Photo 1 is her YouTube avatar (a selfie with a pyramid backdrop); photo 2 (SJ1.jpg on her home page) shows one woman in the theatre at Epidavros, small in frame. Identity looks consistent but a human may want a better headshot.",
+      "Videos: most are monthly panel conversations she hosts with guests, not solo teaching; she is host and convener.",
+      "Her YouTube panel list includes one titled 'PSYOP', and her home page promotes her Substack with a short paragraph criticising media manipulation. Not centred on politics or conspiracy as far as seen, but a human may want to look.",
+      "Book ISBN 9781644115145 from the Waterstones link on her own home page (ISBN-10 164411514X converted), not confirmed elsewhere; Inner Traditions author page returned 403 and was not retried.",
+      "Dream Museum tour is dated 25 November with no year on the page; taken as 2026 (25 Nov 2026 is a Wednesday, as the page says)."
+    ],
+    "left_out": [
+      "Shift course 'Dreaming Gods & Goddesses' (affiliate link only; page not opened).",
+      "Seed Talks online presentation on the Eleusinian Mysteries (8 Nov): starts before 9 Nov 2026.",
+      "Dreamworld Philosophies talk with The Psychedelic Society (2 Dec 2026): on Dandelion, a third-party platform, not her own booking page.",
+      "Dream Mysteries of Asklepios and Moon of Artemis online sessions: old dates or recordings without their own pages.",
+      "Goddess and the Bull retreat deposit (Turkey, June 2026): past.",
+      "Dream Hieroglyphs course for the Paul Chek community: a duplicate of the full course for another group.",
+      "Free downloads: none clearly offered on her site (Lucid Dreaming 101 recording is on Dandelion).",
+      "Explorers Egyptology guest lectures marked PRIVATE or UNLISTED; guest-led talks where she is not the main speaker."
+    ]
+  },
+  "images_final": true
+}

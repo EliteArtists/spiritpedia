@@ -1,0 +1,69 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 916,
+    "healer_slug": "gordon-burnham"
+  },
+  "rows": [
+    {
+      "table": "books",
+      "id": 2029,
+      "slug": "inspirations-and-meditations-365-daily-verses",
+      "title": "Inspirations & Meditations: 365 Daily Verses and Reflections"
+    },
+    {
+      "table": "books",
+      "id": 2030,
+      "slug": "meditation-tips-n-techniques",
+      "title": "Meditation Tips 'n Techniques: Simple Methods, Guides & Aids"
+    },
+    {
+      "table": "books",
+      "id": 2031,
+      "slug": "whispers-of-light",
+      "title": "Whispers of Light"
+    },
+    {
+      "table": "books",
+      "id": 2032,
+      "slug": "the-mystical-dance",
+      "title": "The Mystical Dance"
+    },
+    {
+      "table": "books",
+      "id": 2033,
+      "slug": "something-the-river-says",
+      "title": "Something the River Says"
+    },
+    {
+      "table": "books",
+      "id": 2034,
+      "slug": "spirit-of-the-mountain",
+      "title": "Spirit of the Mountain"
+    },
+    {
+      "table": "courses",
+      "id": "ce3c5096-bdf8-455b-ab1a-8613e4c78d29",
+      "slug": "kirtan-and-sacred-chant-concerts",
+      "title": "Kirtan and Sacred Chant Concerts"
+    },
+    {
+      "table": "courses",
+      "id": "9d6fdc0d-9806-417d-9284-bb963ea1abb8",
+      "slug": "spiritual-talks",
+      "title": "Spiritual Talks"
+    },
+    {
+      "table": "free_resources",
+      "id": "ac4d826e-82ed-41fd-94b4-d97b15787738",
+      "slug": "gordon-burnham-on-insight-timer",
+      "title": "Gordon Burnham on Insight Timer"
+    },
+    {
+      "table": "hub_teachers",
+      "id": "d51f9732-5a92-4ce6-a497-38b7c82d546a",
+      "title": "gordon-burnham teaches at Insight Timer"
+    }
+  ],
+  "at": "2026-11-05T16:13:21.601Z"
+}

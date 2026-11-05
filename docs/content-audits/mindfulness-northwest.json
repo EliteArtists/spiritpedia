@@ -1,0 +1,237 @@
+{
+  "healer": {
+    "healer_slug": "mindfulness-northwest",
+    "location_source": "https://mindfulnessnorthwest.com/",
+    "create": {
+      "name": "Mindfulness Northwest",
+      "bio": "Mindfulness Northwest is a non-profit school for mindfulness and compassion practice, based in Bellingham, Washington, with classes in Seattle and around Puget Sound as well as online. It was started in 2011 by Tim Burnett, a long-time meditator who had studied Buddhist-rooted practice since the 1980s and wanted to find out whether those practices could help people well beyond the meditation hall. Karen Schwisow now leads it as executive director, with a team of core and visiting teachers.\n\nIts core programmes are the eight-week courses in Mindfulness-Based Stress Reduction, the secular course Jon Kabat-Zinn developed in 1979, and Mindful Self-Compassion, each run several times a year in person and on Zoom. Around them sit free introductory evenings, weekly drop-in sits offered by donation, half-day and day retreats, and silent residential retreats in the Cascade foothills, on Samish Island and, once a year, in the Costa Rican rainforest. A modular training pathway prepares people to teach mindfulness themselves, and the school also works with workplaces and offers continuing education for clinicians. Fees run on a sliding scale backed by an accessibility fund, and the website holds a free library of more than a hundred recorded practices.",
+      "tier": "local_hero",
+      "entity_type": "school",
+      "founded_year": 2011,
+      "availability": "worldwide",
+      "city": "Bellingham, Washington",
+      "country": "United States",
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "website_url": "https://mindfulnessnorthwest.com/",
+      "booking_url": "https://mindfulnessnorthwest.com/programs/",
+      "youtube_url": "https://www.youtube.com/@MindfulnessNorthwest",
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "office@mindfulnessnorthwest.com",
+      "image_urls": [
+        "https://mindfulnessnorthwest.com/wp-content/uploads/2020/10/TimBurnett.jpg"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "insight-timer",
+      "role": "instructor"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Introduction to Mindful Self-Compassion",
+      "url": "https://www.youtube.com/watch?v=3pNalB3dbeI",
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "channel": "Mindfulness Northwest"
+    }
+  ],
+  "books": [],
+  "courses": [
+    {
+      "title": "Mindfulness-Based Stress Reduction (MBSR)",
+      "url": "https://mindfulnessnorthwest.com/programs/mbsr/",
+      "description": "The eight-week foundation course in mindfulness, run every quarter online and in person in Seattle. Weekly classes teach body scan, sitting meditation and mindful movement, with daily home practice between sessions.",
+      "price": "$415 – $625 USD sliding scale (online course, January 2027)",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "image": "https://mindfulnessnorthwest.com/wp-content/uploads/2022/02/MBSR-on-Zoom-2022-02-13.jpg"
+    },
+    {
+      "title": "Mindful Self-Compassion (MSC)",
+      "url": "https://mindfulnessnorthwest.com/programs/msc/",
+      "description": "An eight-week course that pairs mindfulness with practices for treating yourself kindly, especially in hard moments. It runs online and in person in Bellingham.",
+      "price": "See course page",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "image": "https://mindfulnessnorthwest.com/wp-content/uploads/2022/02/MBSR-on-Zoom-2022-02-13.jpg"
+    },
+    {
+      "title": "Warm Heart, Clear Mind: Online Half-Day Retreat",
+      "url": "https://mindfulnessnorthwest.com/events/warm-heart-clear-mind-retreat-dec-12-26-carolyn/",
+      "description": "A live online half-day of guided practice with Carolyn McCarthy, combining steady attention with warmth towards oneself and others.",
+      "price": "$65 – $95 USD sliding scale",
+      "product_type": "retreat",
+      "start_date": "2026-12-12",
+      "end_date": "2026-12-12",
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "image": "https://mindfulnessnorthwest.com/wp-content/uploads/2023/06/Warm-Heart-Clear-Mind.jpg"
+    },
+    {
+      "title": "Roots of Compassion Retreat",
+      "url": "https://mindfulnessnorthwest.com/events/roots-of-compassion-jan-29-27-tim-nikki/",
+      "description": "A five-day silent retreat at Rainbow Lodge near North Bend, Washington, with Tim Burnett and Nikki Dvorak Larsen as teachers. Sitting and walking meditation, mindful movement and short talks explore patience and compassion.",
+      "price": "$1,125 – $2,020 USD sliding scale",
+      "product_type": "retreat",
+      "start_date": "2027-01-29",
+      "end_date": "2027-02-03",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://mindfulnessnorthwest.com/wp-content/uploads/2021/05/RootsCompassion2.jpg"
+    },
+    {
+      "title": "Spring Weekend Retreat on Samish Island",
+      "url": "https://mindfulnessnorthwest.com/events/spring-weekend-retreat-samish-mar-26-27-tim/",
+      "description": "A weekend residential retreat with Tim Burnett at the Samish Island retreat centre, with periods of silent practice by the water.",
+      "price": "$380 – $685 USD sliding scale",
+      "product_type": "retreat",
+      "start_date": "2027-03-26",
+      "end_date": "2027-03-28",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://mindfulnessnorthwest.com/wp-content/uploads/2022/10/Spring-Weekend-Retreat.jpg"
+    },
+    {
+      "title": "Fierce Compassion: Women's Retreat",
+      "url": "https://mindfulnessnorthwest.com/events/fierce-compassion-retreat-may-7-27-south-puget-karen-carolyn/",
+      "description": "A weekend retreat for women at Sacred Waters in South Puget Sound with Karen Schwisow and Carolyn McCarthy, on the protective, active side of compassion as well as its tender side.",
+      "price": "$895 – $1,145 USD single occupancy (sliding scale; shared rooms less)",
+      "product_type": "retreat",
+      "start_date": "2027-05-07",
+      "end_date": "2027-05-09",
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "image": "https://mindfulnessnorthwest.com/wp-content/uploads/2021/07/Email-Header.jpg"
+    },
+    {
+      "title": "Rainforest Retreat in Costa Rica",
+      "url": "https://mindfulnessnorthwest.com/events/rainforest-retreat-costa-rica-may-9-27-tim-raizelah/",
+      "description": "A week of mindfulness practice, reflection and time in nature at Selva Verde Lodge in Costa Rica, led by Tim Burnett and Raizelah Bayen. It also raises money for the school's accessibility fund.",
+      "price": "$1,800 – $2,790 USD sliding scale",
+      "product_type": "retreat",
+      "start_date": "2027-05-09",
+      "end_date": "2027-05-16",
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "image": "https://mindfulnessnorthwest.com/wp-content/uploads/2022/07/Costa-Rican-Retreat-The-Web-of-Life-4.jpg"
+    },
+    {
+      "title": "Mindfulness Teacher Training Pathways",
+      "url": "https://mindfulnessnorthwest.com/programs/mindfulness-training-pathways/",
+      "description": "Modular training for people who want to teach mindfulness, either through the school's own teaching pathway or a dedicated MBSR teacher-training route. Free online information sessions are held before each intake.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "mindfulness"
+      ],
+      "image": "https://mindfulnessnorthwest.com/wp-content/uploads/2021/07/Email-Header.jpg"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Free Practice Library",
+      "url": "https://mindfulnessnorthwest.com/practice/",
+      "description": "More than a hundred recorded guided practices from the school's teachers, searchable by length, teacher and type, from body scans to loving-kindness and open awareness.",
+      "featured": true,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://mindfulnessnorthwest.com/wp-content/uploads/2021/07/Email-Header.jpg"
+    },
+    {
+      "title": "Midday Mindfulness (weekly online drop-in)",
+      "url": "https://mindfulnessnorthwest.com/events/midday-mindfulness/",
+      "description": "An hour of guided practice online every Wednesday at noon Pacific time, offered without a fee; donations are welcome.",
+      "featured": false,
+      "resource_type": "workshop",
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "image": "https://mindfulnessnorthwest.com/wp-content/uploads/2021/07/Email-Header.jpg"
+    },
+    {
+      "title": "Sunday Sit (weekly online drop-in)",
+      "url": "https://mindfulnessnorthwest.com/events/sunday-sit/",
+      "description": "A weekly Sunday evening sitting group on Zoom, open to all levels and offered by donation.",
+      "featured": false,
+      "resource_type": "workshop",
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://mindfulnessnorthwest.com/wp-content/uploads/2024/11/Sunset-Bare-Tree.jpg"
+    },
+    {
+      "title": "Mindfulness Northwest on Insight Timer",
+      "url": "https://insighttimer.com/mindfulnessnorthwest",
+      "description": "Guided meditations from the school's teachers on Insight Timer, free to play.",
+      "featured": false,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://mindfulnessnorthwest.com/wp-content/uploads/2020/10/TimBurnett.jpg"
+    }
+  ],
+  "sprint": {
+    "sprint": "pipelines-2",
+    "hub": "insight-timer",
+    "rank": 235,
+    "hub_url": "https://insighttimer.com/mindfulnessnorthwest",
+    "tier_evidence": "Insight Timer 7.6k followers (queue entry, read 1 Nov 2026); YouTube @MindfulnessNorthwest 3 subscribers (channel header, 5 Nov 2026); Facebook, Instagram and LinkedIn linked but not readable (off limits) → ~7.6k → local_hero",
+    "email": "yes",
+    "email_source": "https://mindfulnessnorthwest.com/",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 17 source(s)",
+    "flags": [
+      "Listed as a school (non-profit mindfulness training centre with teacher training), not an individual; the queue entry is its own Insight Timer channel.",
+      "Photo is of the founder, Tim Burnett (400px, About page), since the school's other images are nature or stock-style pictures and its avatar is a heron logo; owner may prefer a different image for a school listing.",
+      "Email office@mindfulnessnorthwest.com is the school's general inbox (site footer); no contact form found.",
+      "MBSR is a secular programme whose name includes 'stress'; kept, as stress is not on the condition list and the course is general mindfulness training. Its price is from the January 2027 online course page.",
+      "The school offers continuing-education credits for clinicians and a healthcare-professional track; those were left out.",
+      "Regional: Bellingham, Washington (outside the big coastal cities)."
+    ],
+    "left_out": [
+      "Self-Compassion for Shame course and its intro workshop: framed around healing shame; left out to be safe.",
+      "Mindfulness for Healthcare Professionals (MHP) programmes and continuing-education pages: clinical audience.",
+      "Coming Home to Yourself day retreat in Olympia (7 Nov 2026) and the Bellingham fall group (started 2 Nov 2026): dated, within the margin or started.",
+      "Roots of Compassion retreat listed as 19–24 January 2027 on one line of the retreats page conflicts with the event page (29 Jan – 3 Feb 2027); the event page dates were used.",
+      "Workplace programmes: for organisations, not individuals."
+    ]
+  },
+  "images_final": true
+}

@@ -1,0 +1,110 @@
+{
+  "healer": {
+    "healer_slug": "michael-berg",
+    "location_source": "https://www.spirituallyhungrypodcast.com/about",
+    "create": {
+      "name": "Michael Berg",
+      "bio": "Michael Berg is a rabbi, scholar and teacher of Kabbalah and co-director of The Kabbalah Centre International. He is the son of the centre's founders, Rav and Karen Berg, and began studying with his father as a teenager, often through the small hours of the night. Fluent in Hebrew and Aramaic, he spent about a decade, starting at eighteen, editing and translating the first complete English edition of the Zohar in 23 volumes, and has also translated works by Rav Ashlag.\n\nHis teaching presents Kabbalah as a practical path: learning to align with the Creator's Light, take on spiritual work and find a lasting sense of purpose. He has written close to twenty books, among them The Way, Becoming Like God and Secrets of the Zohar, and he started the Zohar Project, which gives copies of the Zohar away around the world. He oversees Kabbalah.com, the centre's online school, where his classes sit alongside those of other teachers. With his wife, the author Monica Berg, he hosts the Spiritually Hungry podcast, answering listeners' questions about everyday life. They live in New York with their four children.",
+      "tier": "luminary",
+      "entity_type": "individual",
+      "availability": "worldwide",
+      "city": "New York, New York",
+      "country": "United States",
+      "subjects": [
+        "mysticism",
+        "ancient-wisdom",
+        "spirituality"
+      ],
+      "website_url": "https://www.spirituallyhungrypodcast.com/",
+      "booking_url": "https://www.kabbalah.com/en/courses/consciousness-is-everything/",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "monicaandmichael@kabbalah.com",
+      "image_urls": [
+        "https://my.kabbalah.com/master-class-website/Images/teacher_headshots/michael_berg_square.webp"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "insight-timer",
+      "role": "instructor"
+    }
+  ],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Consciousness is Everything with Michael Berg",
+      "url": "https://www.kabbalah.com/en/courses/consciousness-is-everything/",
+      "description": "A seven-lesson video course of just under an hour on Kabbalah.com. Michael Berg tells how he came to Kabbalah and explains its view of the Creator as a constant presence of Light, and how a person can bring their life into line with it.",
+      "price": "From $1 USD a month (Kabbalah.com membership)",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "mysticism",
+        "consciousness",
+        "soul-purpose"
+      ],
+      "image": "https://my.kabbalah.com/master-class-website/pages/authenticated-home-page/temporary-course-images/course_img-Auth_Cosciousness.jpg"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Spiritually Hungry Podcast",
+      "url": "https://www.spirituallyhungrypodcast.com/",
+      "description": "Michael and Monica Berg's podcast of relaxed conversations on the big questions of life, drawing on Kabbalah and taking questions sent in by listeners. Episodes are free on Spotify, Apple Podcasts and YouTube.",
+      "featured": true,
+      "resource_type": "workshop",
+      "subjects": [
+        "spirituality",
+        "mysticism"
+      ],
+      "image": "https://static.wixstatic.com/media/297d6c_a979dc771c33426383f76798e06cb060%7Emv2.jpg/v1/fit/w_2500,h_1330,al_c/297d6c_a979dc771c33426383f76798e06cb060%7Emv2.jpg"
+    },
+    {
+      "title": "Michael Berg on Insight Timer",
+      "url": "https://insighttimer.com/spirituallyhungrypodcast",
+      "description": "Free talks from the Spiritually Hungry podcast that he hosts with Monica Berg, published on Insight Timer.",
+      "featured": false,
+      "resource_type": "meditation",
+      "subjects": [
+        "spirituality"
+      ],
+      "image": "https://my.kabbalah.com/master-class-website/Images/teacher_headshots/michael_berg_square.webp"
+    }
+  ],
+  "sprint": {
+    "sprint": "pipelines-2",
+    "hub": "insight-timer",
+    "rank": 295,
+    "hub_url": "https://insighttimer.com/spirituallyhungrypodcast",
+    "tier_evidence": "Insight Timer 3.2k followers for the Spiritually Hungry Podcast account (queue entry, read 1 Nov 2026); YouTube channel pages (podcast and The Kabbalah Centre) showed no subscriber figure to us, and the centre's channel is a company account anyway; his Instagram, Facebook, X and TikTok not readable (off limits) → ~3.2k counted → local_hero by count",
+    "tier_override": "Editorial stature: editor and translator of the first unabridged 23-volume English Zohar, author of nearly 20 books (The Way, Becoming Like God, Secrets of the Zohar) and co-director of The Kabbalah Centre International. Proposed luminary; owner to decide.",
+    "email": "yes",
+    "email_source": "https://www.spirituallyhungrypodcast.com/",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 5 source(s)",
+    "flags": [
+      "Queue entry is a podcast brand (Spiritually Hungry Podcast) hosted by the couple Monica and Michael Berg. Listed as one listing under Michael Berg, the better-known partner; Monica is named in the bio. Monica Berg (author of Rethink Love, Fear Is Not an Option) could merit a listing of her own.",
+      "Parked lead re-checked: the podcast site publishes monicaandmichael@kabbalah.com as a mailto ('Ask Monica and Michael!'). It is a questions inbox for the show at The Kabbalah Centre's domain, not a personal or booking address.",
+      "Base: New York, from the podcast's About page ('currently lives in New York with his wife Monica').",
+      "Photo is his headshot from Kabbalah.com's Teachers page (my.kabbalah.com, robots.txt 404 so nothing is disallowed); 750 x 750 WebP. Only one photo: the podcast site's images are on static.wixstatic.com (robots.txt 403, not used).",
+      "Kabbalah.com is The Kabbalah Centre's site, which he co-directs and whose online platform the podcast site says he created and directs; used as his own organisation's site.",
+      "No videos: all the podcast channel clips tried failed oEmbed (401, embedding disabled), and The Kabbalah Centre channel's uploads don't name the speaker in their titles.",
+      "No books: Kabbalah.com's shop pages for Becoming Like God, Secrets of the Zohar and The Secret History of the Zohar publish no ISBN for the English editions (the only ISBNs in the HTML are in image file names of Spanish editions), and no publisher page was opened.",
+      "The Kabbalah Centre has a history of public controversy; nothing conspiracy- or politics-centred was seen on the pages used, but the owner may want to look."
+    ],
+    "left_out": [
+      "Books (The Way, Becoming Like God, Secrets of the Zohar, The Secret History of the Zohar and others): no ISBN on his or the publisher's own pages that we opened.",
+      "Rethink It: Love and Love Unplugged on Kabbalah.com: Monica Berg's courses, not his.",
+      "Podcast YouTube clips: fail oEmbed (401). One clip about the pandemic's effect on relationships would have been left out anyway.",
+      "Spirituallyhungry.life (the Rethink It: Love course site): Monica's course."
+    ]
+  },
+  "images_final": true
+}

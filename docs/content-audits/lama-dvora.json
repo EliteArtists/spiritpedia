@@ -1,0 +1,125 @@
+{
+  "healer": {
+    "healer_slug": "lama-dvora",
+    "location_source": "https://www.ehvam.org/lama-dvora/",
+    "create": {
+      "name": "Lama Dvora",
+      "bio": "Lama Dvora, also known as Lama Dvora-hla, is a Tibetan Buddhist teacher in Israel. Before turning to the Dharma she earned master's and doctoral degrees in mathematics and computer science and worked in universities, research and finance. In 1998 she met her root teacher, Khen Rinpoche Geshe Lobsang Tharchin, in New Jersey, and later studied with his students Geshe Michael Roach and Art Engle, with Gyumed Khensur Rinpoche Lobsang Jampa and with the Dzogchen teacher Lama Drimed Norbu. She has rendered thousands of pages of Tibetan texts into Hebrew, and these translations are offered free online.\n\nAfter beginning to teach in Israel she set up the Heart of Dharma school, whose study groups across the country are now led by teachers she trained. She is the spiritual director of the Method and Wisdom association and of the Arava Spiritual Center at Moa in the southern Arava desert, a community with Israel's first resident monastic sangha, where she leads meditation courses, weekend gatherings and Shabbat evenings, mostly in Hebrew and offered on a donation basis. She is also behind Ehvam, a planned international retreat and peace centre near the Jordanian border, and the One Heart gatherings that bring Jewish and Arab participants together for dialogue.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local",
+      "city": "Tzofar",
+      "country": "Israel",
+      "subjects": [
+        "meditation",
+        "mindfulness",
+        "ancient-wisdom"
+      ],
+      "website_url": "https://www.ehvam.org/",
+      "booking_url": "https://moar.org.il/he/visit",
+      "youtube_url": "https://www.youtube.com/channel/UCVSNnh4YTyeTUPLVhe4N5_g",
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "info@ehvam.org",
+      "image_urls": [
+        "https://www.ehvam.org/wp-content/uploads/2018/08/LamaDvora_main2-e1535548403632.jpg"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "insight-timer",
+      "role": "instructor"
+    }
+  ],
+  "videos": [
+    {
+      "title": "מדיטציית טונגלן (לקיחה ונתינה) تأمل التونغلان Tonglen (أخذ وعطاء) 10.10.23",
+      "url": "https://www.youtube.com/watch?v=sbui-ojvfpE",
+      "subjects": [
+        "meditation"
+      ],
+      "channel": "מרכז רוחני ערבה במואה Arava Spiritual Center"
+    },
+    {
+      "title": "מדיטצית עוצמת האור עם לאמה דבורה הלה 8.10.23",
+      "url": "https://www.youtube.com/watch?v=_ucO1AAJaVg",
+      "subjects": [
+        "meditation"
+      ],
+      "channel": "מרכז רוחני ערבה במואה Arava Spiritual Center"
+    },
+    {
+      "title": "מדיטציה - איך לשמור על לב אוהב, Медитация - Как сохранить любящее сердце",
+      "url": "https://www.youtube.com/watch?v=oyFYcx4w3T4",
+      "subjects": [
+        "meditation"
+      ],
+      "channel": "מרכז רוחני ערבה במואה Arava Spiritual Center"
+    },
+    {
+      "title": "אובדן ומהות\" עם לאמה דבורה\", \"Loss and Essence\" with Lama Dvora, \"Утрата и суть\" с Лама Двора",
+      "url": "https://www.youtube.com/watch?v=YnAA7IV5H6I",
+      "subjects": [
+        "spirituality",
+        "meditation"
+      ],
+      "channel": "מרכז רוחני ערבה במואה Arava Spiritual Center"
+    },
+    {
+      "title": "לאמה דבורה על 'אוואם - מרכז רוחני בינלאומי לשלום'",
+      "url": "https://www.youtube.com/watch?v=tBA7W1YNn90",
+      "subjects": [
+        "spirituality"
+      ],
+      "channel": "מרכז רוחני ערבה במואה Arava Spiritual Center"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [
+    {
+      "title": "Lama Dvora on Insight Timer",
+      "url": "https://insighttimer.com/lamadvorahla",
+      "description": "Her guided meditations and talks on the Insight Timer app, free to play.",
+      "featured": true,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://www.ehvam.org/wp-content/uploads/2018/08/LamaDvora_main2-e1535548403632.jpg"
+    }
+  ],
+  "sprint": {
+    "sprint": "pipelines-2",
+    "hub": "insight-timer",
+    "rank": 366,
+    "hub_url": "https://insighttimer.com/lamadvorahla",
+    "tier_evidence": "Insight Timer 1.2k (queue, read 1 Nov 2026); the YouTube channel (109 subscribers, header next to @MoarArava, 5 Nov 2026) belongs to the Arava Spiritual Center, so not counted; Instagram/Facebook not checked (off limits) → ~1.2k total → local_hero",
+    "email": "yes",
+    "email_source": "https://www.ehvam.org/lama-dvora/",
+    "contact_form_url": "https://moar.org.il/he/contact_us",
+    "bio_check": "OK: no 8-word runs against 12 source(s)",
+    "flags": [
+      "Parked entry: contact route now found. info@ehvam.org is the Ehvam centre's inbox (an organisation address, not hers personally), published as a mailto link in the footer of every ehvam.org page (Cloudflare-obfuscated, decoded). The contact form is the Arava Spiritual Center's (moar.org.il, Hebrew).",
+      "Base: the ehvam.org footer gives a PO box in Tzofar, Arava, Israel, and the Arava Spiritual Center she directs is at Moa next door. Tzofar is a small moshav (village, well under 5,000 people): recorded as published, please map. Regional: southern Arava, Israel.",
+      "Availability 'local': the current programmes are in person at the Arava Spiritual Center; I found no current online course (the ehvam.org 'online teaching' page is an empty template).",
+      "ehvam.org is largely a 2018 placeholder site; the current programme details come from moar.org.il (Hebrew), the centre she founded and directs.",
+      "Videos are from the Arava Spiritual Center's YouTube channel (the centre she founded); I kept only ones where she teaches or speaks. Titles are in Hebrew/Arabic/Russian, copied as they are.",
+      "Lineage note for the reviewer: she names Geshe Michael Roach among her teachers.",
+      "Honorific kept: 'Lama' is how she is known; her full name is not given on her sites.",
+      "Peace work: the centre runs Jewish-Arab 'One Heart' peace gatherings; I mention them in the bio as dialogue work, but left the news reports about them out (see left_out). Owner may want to check this sits within the no-political-content rule.",
+      "No books: her Hebrew translations are published by her students' press (lev-hadharmapress.org.il) with no ISBN on her pages; not opened.",
+      "Borderline kept: 'Loss and Essence' is a Dharma talk on loss and what is essential (not grief therapy); left in, owner may drop it."
+    ],
+    "left_out": [
+      "Mindfulness course with Lama Dvora (https://moar.org.il/he/node/5827) and Shabbat with the Lama (https://moar.org.il/he/node/4839): current semester, but both start on 6 Nov 2026, before the 9 Nov cut-off.",
+      "i24News reports ('The inspiring life of Lama Dvora', One Heart peace convention reports): third-party news items, not her teaching; the peace-convention reports also touch on politics.",
+      "'Together, We Make Room for Kindness' (2:04) and other short centre promos and guest-teacher videos.",
+      "Heart of Dharma School, Israeli Center of Yoga Studies, Karmic Management Center and the free translations site (heart-dharma.org.il): not opened, so not listed."
+    ]
+  },
+  "images_final": true
+}
