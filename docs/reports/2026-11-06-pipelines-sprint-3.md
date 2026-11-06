@@ -258,3 +258,10 @@ The tier evidence and every research flag for each teacher are in `docs/content-
 
   Of their authors, only Christine Stevens, Silvia Nakkach, Dana Ullman and Michael W. Taft aren't already linked another way. Say if you want those four linked.
 - **Oren Jay Sofer** (new in this sprint) is the book's third co-author. He wasn't added, because you named only JoAnna Hardy.
+
+## Follow-ups, 6 Nov 2026
+
+All three were done on dev and live:
+- **Sounds True:** Christine Stevens, Silvia Nakkach, Dana Ullman and Michael W. Taft are linked (older prefixes 1-56455 and 1-60407), so 76 teachers are now linked.
+- **Co-author:** Oren Jay Sofer is now co-author of *Teaching Mindfulness to Empower Adolescents*, alongside JoAnna Hardy.
+- **Don Miguel Ruiz's photo:** his three Google thumbnails were replaced with the solo portrait from his own teacher page (`miguelruiz.com/wp-content/uploads/2024/04/donMiguelRuiz2023.jpeg`, 622 × 852, looked at). The site's share card wasn't used: it shows him with his two sons. The before and after are in `docs/content-audits/don-miguel-ruiz.photo-2026-11-06.json`.
