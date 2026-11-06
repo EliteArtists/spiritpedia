@@ -1,0 +1,33 @@
+{
+  "env": "live",
+  "healer": {
+    "id": 849,
+    "healer_slug": "jason-mcgrice"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "00814504-9673-4667-87c6-1458662d16bf",
+      "slug": "learn-to-meditate-2",
+      "title": "Learn to Meditate"
+    },
+    {
+      "table": "courses",
+      "id": "e05b0b2c-1449-4f5c-9707-0377f344934f",
+      "slug": "11-mentoring",
+      "title": "1:1 Mentoring"
+    },
+    {
+      "table": "free_resources",
+      "id": "192d27bc-4e5b-4e8d-8dbc-8b059e4ebf3d",
+      "slug": "jason-mcgrice-on-insight-timer",
+      "title": "Jason McGrice on Insight Timer"
+    },
+    {
+      "table": "hub_teachers",
+      "id": "9d72cea5-d446-4dd9-91e5-8fc810275e76",
+      "title": "jason-mcgrice teaches at Insight Timer"
+    }
+  ],
+  "at": "2026-11-06T13:28:58.999Z"
+}

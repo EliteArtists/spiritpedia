@@ -424,7 +424,9 @@ for (const b of plan.books || []) {
   if (sameTitle) { notes.push(`skip ${label('book', b)}: another edition is already in ("${sameTitle.title}")`); continue; }
   if (removed.has(amazon_url)) { notes.push(`skip ${label('book', b)}: the owner removed it`); continue; }
   const stem = b.title.split(/[:(]/)[0].trim().replace(/[*,()]/g, '');
-  const elsewhere = await get(`books?select=id,healer_slug&title=ilike.${encodeURIComponent(stem)}*`);
+  // Same main title (before any colon or bracket), not just the same first words ("Mind" vs "Mindful Maternity").
+  const elsewhere = (await get(`books?select=id,healer_slug,title&title=ilike.${encodeURIComponent(stem)}*`))
+    .filter((x) => x.title.split(/[:(]/)[0].trim().replace(/[*,()]/g, '').toLowerCase() === stem.toLowerCase());
   if (elsewhere.length) notes.push(`${label('book', b)}: a book with this title is already in under ${elsewhere[0].healer_slug || 'no healer'} (id ${elsewhere[0].id}); added anyway`);
   const row = {
     title: b.title, amazon_url, author: b.author || null, mock_cover_url: b.cover || null,

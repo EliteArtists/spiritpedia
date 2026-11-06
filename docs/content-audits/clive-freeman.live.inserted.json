@@ -1,0 +1,51 @@
+{
+  "env": "live",
+  "healer": {
+    "id": 898,
+    "healer_slug": "clive-freeman"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "a9e1e489-61f9-41de-84e5-9a99fb93c02a",
+      "slug": "meditation-and-mindfulness-sessions-on-zoom",
+      "title": "Meditation and Mindfulness Sessions on Zoom"
+    },
+    {
+      "table": "free_resources",
+      "id": "1bcbbfe5-b582-4ac4-b4ac-6e9b644b3314",
+      "slug": "clive-freeman-on-insight-timer",
+      "title": "Clive Freeman on Insight Timer"
+    },
+    {
+      "table": "free_resources",
+      "id": "d0f46b0e-b250-4043-8d2a-947e79e76acd",
+      "slug": "ten-minute-guided-body-scan",
+      "title": "Ten Minute Guided Body Scan"
+    },
+    {
+      "table": "free_resources",
+      "id": "0c4bde67-a953-4a86-9d89-5f1f2a8fe1fa",
+      "slug": "ten-minute-guided-breath-meditation",
+      "title": "Ten Minute Guided Breath Meditation"
+    },
+    {
+      "table": "free_resources",
+      "id": "a470c1d6-3b5b-4c59-9435-cbe7064d7c2f",
+      "slug": "ten-minute-guided-loving-kindness-meditation",
+      "title": "Ten Minute Guided Loving-Kindness Meditation"
+    },
+    {
+      "table": "free_resources",
+      "id": "ada5ca7e-83d3-40b8-908b-5c86e59f5f92",
+      "slug": "twenty-minute-guided-meditation-with-checking-in",
+      "title": "Twenty Minute Guided Meditation with Checking In"
+    },
+    {
+      "table": "hub_teachers",
+      "id": "27cce261-020e-48da-905e-7e644c35ebd5",
+      "title": "clive-freeman teaches at Insight Timer"
+    }
+  ],
+  "at": "2026-11-06T13:32:27.442Z"
+}

@@ -1,0 +1,40 @@
+{
+  "env": "live",
+  "healer": {
+    "id": 885,
+    "healer_slug": "jennifer-freed"
+  },
+  "rows": [
+    {
+      "table": "books",
+      "id": 2069,
+      "slug": "use-your-planets-wisely",
+      "title": "Use Your Planets Wisely: Master Your Cosmic DNA and Grow into Your Highest Potential"
+    },
+    {
+      "table": "books",
+      "id": 2070,
+      "slug": "a-map-to-your-soul",
+      "title": "A Map to Your Soul: Using the Astrology of Fire, Earth, Air, and Water to Live Deeply and Fully"
+    },
+    {
+      "table": "books",
+      "id": 2071,
+      "slug": "astrology-oracle-jennifer-freed",
+      "title": "Astrology Oracle"
+    },
+    {
+      "table": "courses",
+      "id": "46580f2b-f43f-4d05-a76d-9cb7571fde68",
+      "slug": "psychological-astrology-coaching-sessions",
+      "title": "Psychological Astrology Coaching Sessions"
+    },
+    {
+      "table": "courses",
+      "id": "0e4ebfb3-add2-4a00-8034-750bf7a0a10a",
+      "slug": "transforming-tools-a-journey-into-your-highest-potential",
+      "title": "Transforming Tools: A Journey into Your Highest Potential"
+    }
+  ],
+  "at": "2026-11-06T13:31:28.540Z"
+}

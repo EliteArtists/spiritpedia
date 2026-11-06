@@ -1,0 +1,33 @@
+{
+  "env": "live",
+  "healer": {
+    "id": 902,
+    "healer_slug": "michael-berg"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "7c6d4ba7-a272-4fc6-8ec1-a6f6a08d0a03",
+      "slug": "consciousness-is-everything-with-michael-berg",
+      "title": "Consciousness is Everything with Michael Berg"
+    },
+    {
+      "table": "free_resources",
+      "id": "179f5b4d-0c92-4e7d-8943-7026552af87c",
+      "slug": "spiritually-hungry-podcast",
+      "title": "Spiritually Hungry Podcast"
+    },
+    {
+      "table": "free_resources",
+      "id": "a8ac75d6-295a-4f53-8e5d-292e66af9aaf",
+      "slug": "michael-berg-on-insight-timer",
+      "title": "Michael Berg on Insight Timer"
+    },
+    {
+      "table": "hub_teachers",
+      "id": "d5cbbc5f-6134-4430-b090-d04106e4f8bc",
+      "title": "michael-berg teaches at Insight Timer"
+    }
+  ],
+  "at": "2026-11-06T13:32:44.874Z"
+}

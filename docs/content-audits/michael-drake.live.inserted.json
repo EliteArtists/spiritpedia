@@ -1,0 +1,45 @@
+{
+  "env": "live",
+  "healer": {
+    "id": 903,
+    "healer_slug": "michael-drake"
+  },
+  "rows": [
+    {
+      "table": "books",
+      "id": 2080,
+      "slug": "the-shamanic-drum-a-guide-to-sacred-drumming",
+      "title": "The Shamanic Drum: A Guide to Sacred Drumming"
+    },
+    {
+      "table": "books",
+      "id": 2081,
+      "slug": "shamanic-drumming-calling-the-spirits",
+      "title": "Shamanic Drumming: Calling the Spirits"
+    },
+    {
+      "table": "free_resources",
+      "id": "d9fc6f24-eaec-4866-a7d2-67f8cfb260d7",
+      "slug": "shamanic-journeying-guide",
+      "title": "Shamanic Journeying guide"
+    },
+    {
+      "table": "free_resources",
+      "id": "17bb7e49-69b1-4de4-a46e-09d21cf23708",
+      "slug": "shamanic-drumming-circles-guide",
+      "title": "Shamanic Drumming Circles Guide"
+    },
+    {
+      "table": "free_resources",
+      "id": "70904ce0-8a56-425e-9497-9ae73db0ad4d",
+      "slug": "michael-drake-on-insight-timer",
+      "title": "Michael Drake on Insight Timer"
+    },
+    {
+      "table": "hub_teachers",
+      "id": "3cd66123-eb5d-4892-9848-b67207a1d1d0",
+      "title": "michael-drake teaches at Insight Timer"
+    }
+  ],
+  "at": "2026-11-06T13:32:47.027Z"
+}

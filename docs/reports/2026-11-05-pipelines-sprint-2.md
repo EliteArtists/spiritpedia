@@ -257,3 +257,34 @@ Each skip file has its reason, in `docs/content-audits/pipelines-sprint-2/skippe
   - `REPORT.md` (full tier evidence, flags and every skip reason).
 - **87 plans** in `docs/content-audits/` (80 inserted on dev with `.dev.inserted.json` logs, 7 held).
 - **Migration `0040_place_aliases_pipelines_sprint_2.sql`.**
+
+## Update, 6 Nov 2026: live
+
+**0040** was run by the owner on dev (85, 540, 2) and live (85, 494, 2).
+
+**Owner decisions, applied:**
+1. **Tiers:** Dan Siegel, Amit Goswami, Michael Berg and Ken Wilber confirmed as Luminary. No raises for Lisa Williams, Chetan Parkyn or Fleet Maull.
+2. **Held, left out:** Catherine Andrews, Natasja Pelgrom, Jamie Wozny, Ihsan Alexander, Ken Page, John Ryan and Sharon Smith. Their plans stay held and were not inserted on live.
+3. **Borderline listings:** kept as they are.
+4. **Contact sources:** all accepted.
+5. **The "miscredited" books were false alarms.** Every book is credited correctly:
+   - book 173 is Jenna Zoe's own *Human Design* (2022), not Chetan Parkyn's;
+   - "id 117" was the book *Mindful Maternity* (Bre Niedhammer), not a listing that held Dan Siegel's *Mind*;
+   - Sister Jenna's *Meditation: Intimate Experiences…* only shares its first word with Jack Kornfield's *Meditation for Beginners*.
+
+   The ingest's check matched any title that merely began with the same words. It now flags only the same main title (`scripts/ingest.mjs`). Nothing was changed in the data.
+6. **Eli Jaxon-Bear added** (dev and live), researched from leela.org only. Nothing was fetched from leelaschool.org.
+   - **Contact:** the Leela Foundation office inbox from the leela.org footer.
+   - **Base:** Ashland, Oregon (the foundation's office).
+   - **Items:** 10 videos from the school's YouTube channel, 5 talks from the leela.org shop, and 3 free resources, including Insight Timer.
+   - **Left empty:**
+     - no books: his publisher's site, redwheelweiser.com, blocks Claude's agents by name, and leela.org gives no ISBNs;
+     - `youtube_url`: the channel is the foundation's, not his own.
+   - Ruth King stays skipped (the same line as Rachel Ricketts). All other skips stay.
+
+**Inserted on live:** 81 teachers. All 80 that were on dev went in, plus Eli Jaxon-Bear:
+- 489 videos, 109 books, 296 offerings and 117 free resources;
+- 6 Luminary and 75 Local Hero;
+- email: 64 published, 17 contact form only.
+
+The check row now reads **85, 541, 2** on dev and live. Each teacher has its `.live.inserted.json` log, and `--rollback` undoes it.

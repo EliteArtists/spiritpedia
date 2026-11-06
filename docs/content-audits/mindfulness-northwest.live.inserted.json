@@ -1,0 +1,93 @@
+{
+  "env": "live",
+  "healer": {
+    "id": 897,
+    "healer_slug": "mindfulness-northwest"
+  },
+  "rows": [
+    {
+      "table": "videos",
+      "id": 7885,
+      "slug": "introduction-to-mindful-self-compassion",
+      "title": "Introduction to Mindful Self-Compassion"
+    },
+    {
+      "table": "courses",
+      "id": "0ad99e50-2e82-4c92-9290-c60578e85b75",
+      "slug": "mindfulness-based-stress-reduction-mbsr",
+      "title": "Mindfulness-Based Stress Reduction (MBSR)"
+    },
+    {
+      "table": "courses",
+      "id": "aad8288e-07bf-4e58-8db0-2b9c6557aceb",
+      "slug": "mindful-self-compassion-msc",
+      "title": "Mindful Self-Compassion (MSC)"
+    },
+    {
+      "table": "courses",
+      "id": "d343cca9-8988-4690-be3d-d7c95cfb359f",
+      "slug": "warm-heart-clear-mind-online-half-day-retreat",
+      "title": "Warm Heart, Clear Mind: Online Half-Day Retreat"
+    },
+    {
+      "table": "courses",
+      "id": "fd8b4e41-bd05-4039-a643-3b4c2c02d5c9",
+      "slug": "roots-of-compassion-retreat",
+      "title": "Roots of Compassion Retreat"
+    },
+    {
+      "table": "courses",
+      "id": "8797d043-fe9e-4920-b270-05bfb41d9c97",
+      "slug": "spring-weekend-retreat-on-samish-island",
+      "title": "Spring Weekend Retreat on Samish Island"
+    },
+    {
+      "table": "courses",
+      "id": "7d8a83ea-bb64-4511-8470-06e3d96369d9",
+      "slug": "fierce-compassion-womens-retreat",
+      "title": "Fierce Compassion: Women's Retreat"
+    },
+    {
+      "table": "courses",
+      "id": "980eb528-77b5-49bb-b573-06290637ee44",
+      "slug": "rainforest-retreat-in-costa-rica",
+      "title": "Rainforest Retreat in Costa Rica"
+    },
+    {
+      "table": "courses",
+      "id": "72a257a8-91f3-4211-ad26-9c6ab3cdf0f8",
+      "slug": "mindfulness-teacher-training-pathways",
+      "title": "Mindfulness Teacher Training Pathways"
+    },
+    {
+      "table": "free_resources",
+      "id": "c3aee8cf-3539-4386-8a6d-fbd207512d00",
+      "slug": "free-practice-library",
+      "title": "Free Practice Library"
+    },
+    {
+      "table": "free_resources",
+      "id": "96335e5a-aa07-436c-9d22-a1671dbfcecc",
+      "slug": "midday-mindfulness-weekly-online-drop-in",
+      "title": "Midday Mindfulness (weekly online drop-in)"
+    },
+    {
+      "table": "free_resources",
+      "id": "dbcef30b-2b68-4c8b-9361-d25964777c9b",
+      "slug": "sunday-sit-weekly-online-drop-in",
+      "title": "Sunday Sit (weekly online drop-in)"
+    },
+    {
+      "table": "free_resources",
+      "id": "5a489115-9b9b-4d86-811a-78b0e8d5a3c1",
+      "slug": "mindfulness-northwest-on-insight-timer",
+      "title": "Mindfulness Northwest on Insight Timer"
+    },
+    {
+      "table": "hub_teachers",
+      "id": "955a0eac-8411-4105-9c54-126c747c001d",
+      "title": "mindfulness-northwest teaches at Insight Timer"
+    }
+  ],
+  "at": "2026-11-06T13:32:22.494Z"
+}

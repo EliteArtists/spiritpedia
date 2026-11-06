@@ -1,0 +1,51 @@
+{
+  "env": "live",
+  "healer": {
+    "id": 865,
+    "healer_slug": "hilary-jackendoff"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "dd3189c1-1400-461d-b7af-76871ca2bd5e",
+      "slug": "human-design-readings",
+      "title": "Human Design Readings"
+    },
+    {
+      "table": "courses",
+      "id": "18f40787-a766-471a-a62c-2f0129807d17",
+      "slug": "self-inquiry-sessions",
+      "title": "Self-Inquiry Sessions"
+    },
+    {
+      "table": "courses",
+      "id": "4d29f74f-b9eb-4432-a713-dcbac4b52147",
+      "slug": "meditation-teacher-training-50-hour-foundations",
+      "title": "Meditation Teacher Training (50-hour Foundations)"
+    },
+    {
+      "table": "courses",
+      "id": "ef3ae566-d563-4138-a22a-6674eab12fa9",
+      "slug": "sacred-spiral-mentorship",
+      "title": "Sacred Spiral Mentorship"
+    },
+    {
+      "table": "courses",
+      "id": "5a27a6a4-4b0a-4ed7-91a7-55f1e8c0b645",
+      "slug": "teacher-mentorship",
+      "title": "Teacher Mentorship"
+    },
+    {
+      "table": "free_resources",
+      "id": "8c9a14d5-64e7-4b2f-866c-5c4b6245a1a1",
+      "slug": "hilary-jackendoff-on-insight-timer",
+      "title": "Hilary Jackendoff on Insight Timer"
+    },
+    {
+      "table": "hub_teachers",
+      "id": "6daa6daf-29dd-409d-b67b-ecfa271764e7",
+      "title": "hilary-jackendoff teaches at Insight Timer"
+    }
+  ],
+  "at": "2026-11-06T13:30:08.374Z"
+}

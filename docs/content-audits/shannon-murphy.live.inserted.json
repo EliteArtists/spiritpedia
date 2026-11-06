@@ -1,0 +1,69 @@
+{
+  "env": "live",
+  "healer": {
+    "id": 911,
+    "healer_slug": "shannon-murphy"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "8547532d-b0db-4cab-aa37-2aaf7179fddb",
+      "slug": "conscious-money-course",
+      "title": "Conscious Money Course"
+    },
+    {
+      "table": "courses",
+      "id": "0672620f-5542-47ec-bf93-1c2942f892f8",
+      "slug": "conscious-money-mastermind",
+      "title": "Conscious Money Mastermind"
+    },
+    {
+      "table": "courses",
+      "id": "685074e7-76dc-4111-be91-d539910e3c15",
+      "slug": "past-life-regression-session",
+      "title": "Past Life Regression Session"
+    },
+    {
+      "table": "courses",
+      "id": "ed2723d6-4b4b-4a79-92b7-3412e1685d91",
+      "slug": "remembering-your-souls-plan-a-guided-journey",
+      "title": "Remembering Your Soul's Plan: A Guided Journey"
+    },
+    {
+      "table": "courses",
+      "id": "591926f3-2545-43e8-a2d3-25370af64a95",
+      "slug": "cutting-energetic-cords",
+      "title": "Cutting Energetic Cords"
+    },
+    {
+      "table": "courses",
+      "id": "d2bae97c-e5af-4870-b663-b3a735c211e4",
+      "slug": "reiki-distance-session",
+      "title": "Reiki Distance Session"
+    },
+    {
+      "table": "free_resources",
+      "id": "1cadbcec-1965-453d-9196-21f4fbf4e1eb",
+      "slug": "shannon-murphy-on-insight-timer",
+      "title": "Shannon Murphy on Insight Timer"
+    },
+    {
+      "table": "free_resources",
+      "id": "f965fffe-812a-487e-b2f8-efc43eeeae0a",
+      "slug": "healing-limiting-money-beliefs-tapping-meditation",
+      "title": "Healing Limiting Money Beliefs Tapping Meditation"
+    },
+    {
+      "table": "free_resources",
+      "id": "aa713e84-dd84-446a-bd9d-4c8489f352eb",
+      "slug": "morning-eft-tapping-meditation",
+      "title": "Morning EFT Tapping Meditation"
+    },
+    {
+      "table": "hub_teachers",
+      "id": "6aadf523-bb7f-4fe6-b608-33f01cf43b53",
+      "title": "shannon-murphy teaches at Insight Timer"
+    }
+  ],
+  "at": "2026-11-06T13:33:20.621Z"
+}

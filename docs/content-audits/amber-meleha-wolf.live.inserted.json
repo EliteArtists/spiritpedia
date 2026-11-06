@@ -1,0 +1,46 @@
+{
+  "env": "live",
+  "healer": {
+    "id": 867,
+    "healer_slug": "amber-meleha-wolf"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "fae7c805-36dc-41b9-b335-01f7060de962",
+      "slug": "the-12-foundational-classes",
+      "title": "The 12 Foundational Classes"
+    },
+    {
+      "table": "courses",
+      "id": "b0ff8a0d-4612-47ca-b50c-d9d69876bd91",
+      "slug": "we-are-the-next-lemuria",
+      "title": "We Are the Next Lemuria"
+    },
+    {
+      "table": "courses",
+      "id": "a9d41d1d-dbe3-40a6-a8ba-4126dd0f29e8",
+      "slug": "the-shamanic-teaching-wheel",
+      "title": "The Shamanic Teaching Wheel"
+    },
+    {
+      "table": "courses",
+      "id": "4ef899a8-6484-495b-a9fc-ec2113305e7d",
+      "slug": "lemurian-wisdom-circles-membership",
+      "title": "Lemurian Wisdom Circles Membership"
+    },
+    {
+      "table": "free_resources",
+      "id": "0cbc27ef-64f0-42bc-8916-3926d06130b8",
+      "slug": "kryon-channels-to-the-lemurian-sisterhood-audio-and-transcripts",
+      "title": "Kryon Channels to the Lemurian Sisterhood: Audio and Transcripts"
+    },
+    {
+      "table": "free_resources",
+      "id": "a31e41e7-2f05-4620-af1d-932eaaf75c62",
+      "slug": "are-you-lemurian-quiz",
+      "title": "Are You Lemurian? Quiz"
+    }
+  ],
+  "at": "2026-11-06T13:30:16.302Z"
+}

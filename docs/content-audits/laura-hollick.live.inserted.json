@@ -1,0 +1,40 @@
+{
+  "env": "live",
+  "healer": {
+    "id": 881,
+    "healer_slug": "laura-hollick"
+  },
+  "rows": [
+    {
+      "table": "videos",
+      "id": 7784,
+      "slug": "meet-your-future-self-guided-soul-art-visualization",
+      "title": "Meet Your Future Self Guided Soul Art Visualization"
+    },
+    {
+      "table": "courses",
+      "id": "c56f723e-b551-4a87-9b28-d420e877b18d",
+      "slug": "soul-art-school",
+      "title": "Soul Art School"
+    },
+    {
+      "table": "courses",
+      "id": "7052c045-86cc-472b-8021-5505db8d0501",
+      "slug": "reimagine-your-life-meditation",
+      "title": "Reimagine Your Life Meditation"
+    },
+    {
+      "table": "free_resources",
+      "id": "7b4393fc-353d-4336-9561-62cfe4e78a7e",
+      "slug": "meet-your-future-self",
+      "title": "Meet Your Future Self"
+    },
+    {
+      "table": "free_resources",
+      "id": "100243af-4d7d-4852-a1bf-42091266c033",
+      "slug": "light-body-activation",
+      "title": "Light Body Activation"
+    }
+  ],
+  "at": "2026-11-06T13:31:15.652Z"
+}

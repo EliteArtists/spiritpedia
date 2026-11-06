@@ -1,0 +1,76 @@
+{
+  "env": "live",
+  "healer": {
+    "id": 858,
+    "healer_slug": "amit-goswami"
+  },
+  "rows": [
+    {
+      "table": "books",
+      "id": 2010,
+      "slug": "the-self-aware-universe",
+      "title": "The Self-Aware Universe: How Consciousness Creates the Material World"
+    },
+    {
+      "table": "books",
+      "id": 2011,
+      "slug": "physics-of-the-soul",
+      "title": "Physics of the Soul"
+    },
+    {
+      "table": "books",
+      "id": 2012,
+      "slug": "god-is-not-dead",
+      "title": "God Is Not Dead: What Quantum Physics Tells Us about Our Origins and How We Should Live"
+    },
+    {
+      "table": "books",
+      "id": 2013,
+      "slug": "quantum-creativity",
+      "title": "Quantum Creativity"
+    },
+    {
+      "table": "books",
+      "id": 2014,
+      "slug": "the-everything-answer-book",
+      "title": "The Everything Answer Book"
+    },
+    {
+      "table": "books",
+      "id": 2015,
+      "slug": "quantum-spirituality-goswami",
+      "title": "Quantum Spirituality"
+    },
+    {
+      "table": "books",
+      "id": 2016,
+      "slug": "the-visionary-window",
+      "title": "The Visionary Window: A Quantum Physicist's Guide to Enlightenment"
+    },
+    {
+      "table": "books",
+      "id": 2017,
+      "slug": "how-quantum-activism-can-save-civilization",
+      "title": "How Quantum Activism Can Save Civilization"
+    },
+    {
+      "table": "books",
+      "id": 2018,
+      "slug": "the-return-of-the-archetypes",
+      "title": "The Return of the Archetypes"
+    },
+    {
+      "table": "courses",
+      "id": "de28c880-31fc-497d-8138-4281702857fc",
+      "slug": "quantum-activism-online-course-curso-online-de-ativismo-quantico",
+      "title": "Quantum Activism online course (Curso Online de Ativismo Quântico)"
+    },
+    {
+      "table": "courses",
+      "id": "4ae17f65-094e-43b6-a40b-1b892083039b",
+      "slug": "the-power-of-the-archetypes-o-poder-dos-arquetipos",
+      "title": "The Power of the Archetypes (O Poder dos Arquétipos)"
+    }
+  ],
+  "at": "2026-11-06T13:29:41.856Z"
+}

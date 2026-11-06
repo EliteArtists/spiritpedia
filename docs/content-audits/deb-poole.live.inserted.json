@@ -1,0 +1,33 @@
+{
+  "env": "live",
+  "healer": {
+    "id": 907,
+    "healer_slug": "deb-poole"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "0884b004-edd3-4dce-b07f-f89336d21673",
+      "slug": "the-wild-rest-living-map-human-design-reading",
+      "title": "The Wild Rest Living Map (Human Design Reading)"
+    },
+    {
+      "table": "courses",
+      "id": "4b357a4b-d11f-4048-a3d8-f24d636a1025",
+      "slug": "attunement-sessions",
+      "title": "Attunement Sessions"
+    },
+    {
+      "table": "free_resources",
+      "id": "8f06bcb8-6d14-4640-9bab-9ef0446fe9f8",
+      "slug": "deb-poole-on-insight-timer",
+      "title": "Deb Poole on Insight Timer"
+    },
+    {
+      "table": "hub_teachers",
+      "id": "f6a504a6-1fdb-42ca-ab8e-ecf0288e5096",
+      "title": "deb-poole teaches at Insight Timer"
+    }
+  ],
+  "at": "2026-11-06T13:33:06.911Z"
+}
