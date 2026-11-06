@@ -1,0 +1,34 @@
+{
+  "env": "live",
+  "healer": {
+    "id": 1029,
+    "healer_slug": "tessa-bielecki"
+  },
+  "rows": [
+    {
+      "table": "books",
+      "id": 2333,
+      "slug": "holy-daring",
+      "title": "Holy Daring: The Earthy Mysticism of St. Teresa, the Wild Woman of Avila"
+    },
+    {
+      "table": "books",
+      "id": 2334,
+      "slug": "teresa-of-avila-ecstasy-and-common-sense",
+      "title": "Teresa of Avila: Ecstasy and Common Sense"
+    },
+    {
+      "table": "books",
+      "id": 2335,
+      "slug": "teresa-of-avila-mystical-writings",
+      "title": "Teresa of Avila: Mystical Writings"
+    },
+    {
+      "table": "books",
+      "id": 2336,
+      "slug": "season-of-glad-songs",
+      "title": "Season of Glad Songs: A Christmas Anthology"
+    }
+  ],
+  "at": "2026-11-06T20:33:55.500Z"
+}

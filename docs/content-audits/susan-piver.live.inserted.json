@@ -1,0 +1,88 @@
+{
+  "env": "live",
+  "healer": {
+    "id": 950,
+    "healer_slug": "susan-piver"
+  },
+  "rows": [
+    {
+      "table": "books",
+      "id": 2126,
+      "slug": "start-here-now",
+      "title": "Start Here Now: An Open-Hearted Guide to the Path and Practice of Meditation"
+    },
+    {
+      "table": "books",
+      "id": 2127,
+      "slug": "inexplicable-magic",
+      "title": "Inexplicable Magic: Meditation for Mystics"
+    },
+    {
+      "table": "books",
+      "id": 2128,
+      "slug": "inexplicable-joy",
+      "title": "Inexplicable Joy: On the Heart Sutra"
+    },
+    {
+      "table": "books",
+      "id": 2129,
+      "slug": "the-four-noble-truths-of-love",
+      "title": "The Four Noble Truths of Love: Buddhist Wisdom for Modern Relationships"
+    },
+    {
+      "table": "books",
+      "id": 2130,
+      "slug": "the-buddhist-enneagram",
+      "title": "The Buddhist Enneagram: Nine Paths to Warriorship"
+    },
+    {
+      "table": "books",
+      "id": 2131,
+      "slug": "how-not-to-be-afraid-of-your-own-life",
+      "title": "How Not to Be Afraid of Your Own Life"
+    },
+    {
+      "table": "books",
+      "id": 2132,
+      "slug": "the-hard-questions",
+      "title": "The Hard Questions: 100 Essential Questions to Ask Before You Say \"I Do\""
+    },
+    {
+      "table": "courses",
+      "id": "4c0efbcf-ba8b-4407-8dfc-33d82c3264e1",
+      "slug": "open-heart-project-sangha",
+      "title": "Open Heart Project Sangha"
+    },
+    {
+      "table": "courses",
+      "id": "6df568c0-73f1-4fee-bf5d-f5cff3a6b12f",
+      "slug": "fearless-creativity-a-writing-and-meditation-retreat",
+      "title": "Fearless Creativity: A Writing and Meditation Retreat"
+    },
+    {
+      "table": "free_resources",
+      "id": "326212b7-a776-454e-8705-dff2038043ee",
+      "slug": "how-to-set-up-a-home-meditation-practice",
+      "title": "How to Set Up a Home Meditation Practice"
+    },
+    {
+      "table": "free_resources",
+      "id": "15119ce4-dafa-481d-9a7d-f5459bb60b7e",
+      "slug": "the-three-biggest-meditation-misconceptions",
+      "title": "The Three Biggest Meditation Misconceptions"
+    },
+    {
+      "table": "free_resources",
+      "id": "73cc30d0-5c00-4c15-a451-4f2dae3146bd",
+      "slug": "meditation-and-writing-retreat-weekend-at-home",
+      "title": "Meditation and Writing Retreat Weekend at Home"
+    },
+    {
+      "table": "free_resources",
+      "id": "450ffc9b-6166-41ec-816b-3f0b541636e1",
+      "slug": "buddhism-beyond-belief-with-susan-piver-podcast",
+      "title": "Buddhism Beyond Belief with Susan Piver (podcast)"
+    }
+  ],
+  "at": "2026-11-06T20:28:34.312Z"
+}

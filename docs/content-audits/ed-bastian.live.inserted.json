@@ -1,0 +1,64 @@
+{
+  "env": "live",
+  "healer": {
+    "id": 1020,
+    "healer_slug": "ed-bastian"
+  },
+  "rows": [
+    {
+      "table": "videos",
+      "id": 8556,
+      "slug": "ed-bastian-aspen-chapel-april-28-2103",
+      "title": "Ed Bastian, Aspen Chapel, April 28 2103"
+    },
+    {
+      "table": "videos",
+      "id": 8557,
+      "slug": "a-conversation-between-father-son-dr-ed-bastian-and-jonathan-bastian",
+      "title": "A Conversation between Father & Son - Dr. Ed Bastian and Jonathan Bastian"
+    },
+    {
+      "table": "videos",
+      "id": 8558,
+      "slug": "spiritual-paths-foundation-programs",
+      "title": "Spiritual Paths Foundation Programs"
+    },
+    {
+      "table": "books",
+      "id": 2316,
+      "slug": "interspiritual-meditation",
+      "title": "InterSpiritual Meditation: A Seven-Step Process from the World's Spiritual Traditions"
+    },
+    {
+      "table": "books",
+      "id": 2317,
+      "slug": "mandala-creating-an-authentic-spiritual-path",
+      "title": "Mandala: Creating an Authentic Spiritual Path"
+    },
+    {
+      "table": "books",
+      "id": 2318,
+      "slug": "living-fully-dying-well",
+      "title": "Living Fully, Dying Well: Reflecting on Death to Find Your Life's Meaning"
+    },
+    {
+      "table": "courses",
+      "id": "664ca5f2-c899-428e-8061-bc690525875d",
+      "slug": "interspiritual-meditation-course",
+      "title": "InterSpiritual Meditation Course"
+    },
+    {
+      "table": "courses",
+      "id": "bdb56780-0c22-4c20-9b69-8b74bd2d0b12",
+      "slug": "interspiritual-mandala-course",
+      "title": "InterSpiritual Mandala Course"
+    },
+    {
+      "table": "free_resources",
+      "id": "4c40aef7-2414-40e5-9a3c-94ac6b62cc37",
+      "slug": "interspiritual-meditation-guided-meditations",
+      "title": "InterSpiritual Meditation: Guided Meditations"
+    }
+  ],
+  "at": "2026-11-06T20:33:29.889Z"
+}

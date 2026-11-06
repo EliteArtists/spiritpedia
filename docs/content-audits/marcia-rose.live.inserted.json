@@ -1,0 +1,51 @@
+{
+  "env": "live",
+  "healer": {
+    "id": 937,
+    "healer_slug": "marcia-rose"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "db916c29-3218-4c93-87cb-c13d4bf29bb5",
+      "slug": "sunday-international-sangha-immersion-in-life-death-with-presence-wisdom-2027",
+      "title": "Sunday International Sangha: Immersion in Life & Death with Presence & Wisdom (2027)"
+    },
+    {
+      "table": "free_resources",
+      "id": "c262f8e6-426f-4822-8b3b-3593cda74bfe",
+      "slug": "mountain-hermitage-dharma-talks-and-guided-meditations",
+      "title": "Mountain Hermitage Dharma Talks and Guided Meditations"
+    },
+    {
+      "table": "free_resources",
+      "id": "16fde037-1cec-4f1f-8bad-3a76848a28de",
+      "slug": "immersion-in-life-death-with-presence-wisdom-recordings-and-practice-notes",
+      "title": "Immersion in Life & Death with Presence & Wisdom: recordings and practice notes"
+    },
+    {
+      "table": "free_resources",
+      "id": "40b4c7ad-9620-4f4d-b2db-97c766a001bf",
+      "slug": "the-heart-of-the-matter-metta-mudita-online-retreat",
+      "title": "The Heart of the Matter: Metta & Mudita Online Retreat"
+    },
+    {
+      "table": "free_resources",
+      "id": "4058aefe-3170-48a0-98f8-35c0c7050577",
+      "slug": "death-awareness-practice",
+      "title": "Death Awareness Practice"
+    },
+    {
+      "table": "free_resources",
+      "id": "84427e98-e0a5-4f81-929f-f3d73d632607",
+      "slug": "marcia-rose-on-living-with-uncertainty-and-impermanence",
+      "title": "Marcia Rose on Living with Uncertainty and Impermanence"
+    },
+    {
+      "table": "hub_teachers",
+      "id": "7ae2aa77-0c44-4821-a5b9-d2d856ff1cc1",
+      "title": "marcia-rose teaches at Insight Meditation Society"
+    }
+  ],
+  "at": "2026-11-06T20:27:26.911Z"
+}

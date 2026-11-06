@@ -158,7 +158,8 @@
       "Much of her teaching ties meditation to social and racial justice; it is spiritual teaching rather than political commentary, but an owner glance is welcome. Her site links a Ten Percent Happier episode titled 'How to Engage Corona-Deniers' (a podcast, not listed).",
       "Book ISBN from wwnorton.com/books/9780393713794 linked on her own site (converted to ISBN-10), not confirmed elsewhere; cover not checked.",
       "The dharma.org headshot was dropped by the ingest's photo check (not retried); one own-site photo kept.",
-      "Book already on Spiritpedia (id 1735, same ASIN): the ingest skips it, so it should attach to her as co-author only if the owner wants."
+      "Book already on Spiritpedia (id 1735, same ASIN): the ingest skips it, so it should attach to her as co-author only if the owner wants.",
+      "Owner, 6 Nov 2026: attach her as co-author of Teaching Mindfulness to Empower Adolescents (Matthew Brensilver's listing; book 1735 on dev, 1763 on live). Set directly on each database after her insert (a co_authorships entry fails the check before she exists)."
     ],
     "left_out": [
       "Belonging to the Earth online series (June–July sessions, Spirit Rock): dated and already past.",

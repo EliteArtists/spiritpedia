@@ -1,0 +1,70 @@
+{
+  "env": "live",
+  "healer": {
+    "id": 980,
+    "healer_slug": "rob-bell"
+  },
+  "rows": [
+    {
+      "table": "books",
+      "id": 2211,
+      "slug": "love-wins",
+      "title": "Love Wins"
+    },
+    {
+      "table": "books",
+      "id": 2212,
+      "slug": "velvet-elvis",
+      "title": "Velvet Elvis: Repainting the Christian Faith"
+    },
+    {
+      "table": "books",
+      "id": 2213,
+      "slug": "what-we-talk-about-when-we-talk-about-god",
+      "title": "What We Talk About When We Talk About God"
+    },
+    {
+      "table": "books",
+      "id": 2214,
+      "slug": "what-is-the-bible",
+      "title": "What Is the Bible?"
+    },
+    {
+      "table": "books",
+      "id": 2215,
+      "slug": "how-to-be-here",
+      "title": "How to Be Here"
+    },
+    {
+      "table": "books",
+      "id": 2216,
+      "slug": "everything-is-spiritual",
+      "title": "Everything Is Spiritual"
+    },
+    {
+      "table": "courses",
+      "id": "5c6f1cf8-4605-405f-be10-256618a79475",
+      "slug": "and-then-we-kept-going-a-retreat-with-rob-bell",
+      "title": "And Then We Kept Going: A Retreat with Rob Bell"
+    },
+    {
+      "table": "courses",
+      "id": "2a2e5f5e-e5ef-41fa-8b7b-cb1a9911f659",
+      "slug": "mea-workshop-in-mexico",
+      "title": "MEA Workshop in Mexico"
+    },
+    {
+      "table": "courses",
+      "id": "86c78cf7-e8ae-4387-a9a7-baf970b276e2",
+      "slug": "find-me-a-straight-river-a-3-hour-audiobook-on-fear-and-failure",
+      "title": "Find Me a Straight River: A 3 Hour Audiobook on Fear and Failure"
+    },
+    {
+      "table": "free_resources",
+      "id": "159eb2ca-ba7e-40b2-bae5-97875332dbee",
+      "slug": "the-robcast",
+      "title": "The RobCast"
+    }
+  ],
+  "at": "2026-11-06T20:30:54.239Z"
+}

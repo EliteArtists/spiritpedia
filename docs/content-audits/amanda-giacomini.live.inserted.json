@@ -1,0 +1,28 @@
+{
+  "env": "live",
+  "healer": {
+    "id": 1018,
+    "healer_slug": "amanda-giacomini"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "4ec7a6c5-dbfd-4aa2-9393-a73ffc96b11a",
+      "slug": "resource-restorative-yoga-teacher-training",
+      "title": "RESOURCE: Restorative Yoga Teacher Training"
+    },
+    {
+      "table": "courses",
+      "id": "334f773c-8ebb-43dc-9f6a-605b76432a81",
+      "slug": "nourish-yin-yoga-training-in-point-reyes",
+      "title": "NOURISH: Yin Yoga Training in Point Reyes"
+    },
+    {
+      "table": "courses",
+      "id": "fc689495-c807-4444-b8ca-60712215d046",
+      "slug": "ireland-retreat-with-amanda-radha",
+      "title": "Ireland Retreat with Amanda & Radha"
+    }
+  ],
+  "at": "2026-11-06T20:33:25.339Z"
+}

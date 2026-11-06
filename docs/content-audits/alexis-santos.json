@@ -27,12 +27,7 @@
       ]
     }
   },
-  "teaches_at": [
-    {
-      "hub": "insight-meditation-society",
-      "role": "instructor"
-    }
-  ],
+  "teaches_at": [],
   "videos": [],
   "books": [],
   "courses": [
@@ -121,7 +116,8 @@
       "No YouTube channel or videos of him as main speaker found by one web search; his recordings are on Crowdcast, Dharma Seed and the Ten Percent Happier app.",
       "Crowdcast day-long links: the October link is as on his site (it redirects to a /c/ address, like the September one, whose redirect target was opened and is a 2021 recording page; the replay may need a free Crowdcast sign-up).",
       "Possible link to another sprint teacher: Susa Talan (rank 9) co-founded Open Door with him; they have co-led daily-life retreats there.",
-      "The dharma.org photo was dropped by the ingest dry run (dharma.org dropped the ingest's connection, UND_ERR_SOCKET, 6 Nov 2026), so only the photo(s) left in image_urls will be used."
+      "The dharma.org photo was dropped by the ingest dry run (dharma.org dropped the ingest's connection, UND_ERR_SOCKET, 6 Nov 2026), so only the photo(s) left in image_urls will be used.",
+      "Owner, 6 Nov 2026: IMS link removed (teacher training isn't teaching at IMS); removed on dev the same day."
     ],
     "left_out": [
       "Monthly daylong schedule PDF (mcusercontent.com): its robots.txt disallows all for '*', not opened.",

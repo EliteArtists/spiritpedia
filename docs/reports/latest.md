@@ -214,3 +214,47 @@ The tier evidence and every research flag for each teacher are in `docs/content-
 | 307 | Sounds True | Cynthia Bourgeault | Local Hero | Stonington, Maine, United States | 0 · 8 · 2 · 1 | form only | no | http://localhost:3000/healers/cynthia-bourgeault |
 | 309 | Sounds True | Laurence Freeman | Local Hero | Marçay, France | 4 · 0 · 3 · 0 | published | no | http://localhost:3000/healers/laurence-freeman |
 | 311 | Sounds True | Tessa Bielecki | Local Hero | Tucson, Arizona, United States | 0 · 4 · 0 · 0 | published | no | http://localhost:3000/healers/tessa-bielecki |
+
+## Update, 6 Nov 2026: live
+
+**The 110 are on live.** You ran 0041 on dev (92, 605, 2) and live (92, 541, 2). After the insert both read **92, 605, 2**. **Live now has 1,013 listings: 988 teachers and 25 hubs, schools, channels and apps.**
+
+**Your decisions, as applied on dev and live:**
+1. **Luminary confirmed:** Julia Cameron, Rick Hanson, Thomas Moore and Elizabeth Lesser. Laura Day stays Local Hero.
+2. **Left out for content:** Marci Moberg, Miles Neale, Will Johnson, Erika Rosenberg, Margot Anand, Sai Maa, Wu De and Starhawk.
+3. **Left out for now:** the 14 held for photos.
+4. **Skips:** all kept. Don Jose Ruiz's two events were added to don Miguel Ruiz's listing, read from miguelruiz.com after its robots.txt:
+   - The Art & Mastery of Life, Boone NC, 13–15 Nov 2026;
+   - Teotihuacan Power Journey, 28 Dec 2026 – 1 Jan 2027. Its early pricing ended 31 Oct, so standard prices are listed.
+
+   The ingest also proposed replacing don Miguel's three Google-thumbnail photos with his site's share card. That was left out, because teacher photos need your OK.
+5. **IMS links removed:** Alexis Santos and Ronya Fakhoury Banks. Storm Faerywolf's Omega link stays.
+6. **JoAnna Hardy:** now co-author of *Teaching Mindfulness to Empower Adolescents*. Book ids differ between the databases: it is 1735 on dev and 1763 on live (1735 on live is a different book).
+
+## Sounds True publisher links (your point 7)
+
+**How a book was confirmed.** Book records have no publisher field, so the evidence is in the record itself:
+- **Descriptions:** 12 books say "published by Sounds True" or "a Sounds True programme".
+- **ISBNs:** all 12 use one of four Sounds True ISBN prefixes: 1-59179, 1-62203, 1-64963 and 1-68364. An ISBN prefix belongs to a single publisher, so every book whose ISBN-10 (in its Amazon link) starts with one of these counts as Sounds True.
+- **Not counted:** Alan Watts's *Out of Your Mind* only mentions the Sounds True audio archive and has another publisher's ISBN.
+- **No list used:** nothing came from the Sounds True author list, and soundstrue.com was not fetched.
+
+**Result, the same on dev and live:**
+- 105 Sounds True books by 66 teachers. 10 were already linked; **56 links were added**, so 72 teachers are now linked on each database.
+- Logs: `docs/content-audits/sounds-true-publisher-links.dev.inserted.json` and `.live.inserted.json`.
+- The publisher page loads (HTTP 200): http://localhost:3000/publishers/sounds-true
+
+**Left for you:**
+- **6 older links** have no Sounds True book on Spiritpedia: Thich Nhat Hanh, Jon Kabat-Zinn, Eckhart Tolle, Caroline Myss, Wim Hof and Michael A. Singer. They are left as they were. Several have Sounds True audio, which isn't listed as books.
+- **9 books** use the older prefixes 1-56455 and 1-60407. These were Sounds True prefixes, but none of our book descriptions confirms it, so they are **not linked**:
+  - Jeff Foster, *The Deepest Acceptance*;
+  - Jon Kabat-Zinn, *Mindfulness for Beginners*;
+  - Anodea Judith, *Creating on Purpose*;
+  - Dana Ullman, *Homeopathy and Self-Healing*;
+  - Cyndi Dale, *Energetic Boundaries* and *The Subtle Body Practice Manual*;
+  - Christine Stevens, *Music Medicine*;
+  - Silvia Nakkach, *Free Your Voice*;
+  - Michael W. Taft, *Ego*.
+
+  Of their authors, only Christine Stevens, Silvia Nakkach, Dana Ullman and Michael W. Taft aren't already linked another way. Say if you want those four linked.
+- **Oren Jay Sofer** (new in this sprint) is the book's third co-author. He wasn't added, because you named only JoAnna Hardy.

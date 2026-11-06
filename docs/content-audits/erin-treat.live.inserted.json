@@ -1,0 +1,33 @@
+{
+  "env": "live",
+  "healer": {
+    "id": 932,
+    "healer_slug": "erin-treat"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "4cc5f2b5-31f7-4101-8294-b3f6cb445d31",
+      "slug": "the-quiet-advantage-a-silent-retreat-for-leaders",
+      "title": "The Quiet Advantage: A Silent Retreat for Leaders"
+    },
+    {
+      "table": "courses",
+      "id": "f92255d7-3bb3-4bdf-9482-fc1698b707b2",
+      "slug": "land-as-dharma-teacher-vallecitos-2027",
+      "title": "Land as Dharma Teacher (Vallecitos 2027)"
+    },
+    {
+      "table": "free_resources",
+      "id": "e4b518ea-af91-41b3-891c-26c7e02b0d8a",
+      "slug": "erin-treats-talks-at-vallecitos-dharma-seed",
+      "title": "Erin Treat's talks at Vallecitos (Dharma Seed)"
+    },
+    {
+      "table": "hub_teachers",
+      "id": "c5e864f4-dd1f-49a6-a0e9-49a161ff5c42",
+      "title": "erin-treat teaches at Insight Meditation Society"
+    }
+  ],
+  "at": "2026-11-06T20:27:09.539Z"
+}

@@ -1,0 +1,76 @@
+{
+  "env": "live",
+  "healer": {
+    "id": 1027,
+    "healer_slug": "cynthia-bourgeault"
+  },
+  "rows": [
+    {
+      "table": "books",
+      "id": 2325,
+      "slug": "the-wisdom-jesus",
+      "title": "The Wisdom Jesus: Transforming Heart and Mind"
+    },
+    {
+      "table": "books",
+      "id": 2326,
+      "slug": "the-heart-of-centering-prayer",
+      "title": "The Heart of Centering Prayer: Nondual Christianity in Theory and Practice"
+    },
+    {
+      "table": "books",
+      "id": 2327,
+      "slug": "the-wisdom-way-of-knowing",
+      "title": "The Wisdom Way of Knowing: Reclaiming an Ancient Tradition to Awaken the Heart"
+    },
+    {
+      "table": "books",
+      "id": 2328,
+      "slug": "the-holy-trinity-and-the-law-of-three",
+      "title": "The Holy Trinity and the Law of Three"
+    },
+    {
+      "table": "books",
+      "id": 2329,
+      "slug": "the-meaning-of-mary-magdalene",
+      "title": "The Meaning of Mary Magdalene"
+    },
+    {
+      "table": "books",
+      "id": 2330,
+      "slug": "mystical-hope",
+      "title": "Mystical Hope: Trusting in the Mercy of God"
+    },
+    {
+      "table": "books",
+      "id": 2331,
+      "slug": "eye-of-the-heart",
+      "title": "Eye of the Heart: A Spiritual Journey into the Imaginal Realm"
+    },
+    {
+      "table": "books",
+      "id": 2332,
+      "slug": "love-is-stronger-than-death",
+      "title": "Love Is Stronger Than Death: The Mystical Union of Two Souls"
+    },
+    {
+      "table": "courses",
+      "id": "450dde36-1b95-4d1c-aefb-8063ec8bd56c",
+      "slug": "introductory-wisdom-school",
+      "title": "Introductory Wisdom School"
+    },
+    {
+      "table": "courses",
+      "id": "37ab501d-c621-4b16-91f8-8e48e5772b61",
+      "slug": "a-teaching-with-cynthia-bourgeault-eye-of-the-heart",
+      "title": "A Teaching with Cynthia Bourgeault: Eye of the Heart"
+    },
+    {
+      "table": "free_resources",
+      "id": "8501ac8e-0076-41c6-9f97-e8b3ed02d5cf",
+      "slug": "metis-teaching-by-cynthia-bourgeault",
+      "title": "Metis Teaching by Cynthia Bourgeault"
+    }
+  ],
+  "at": "2026-11-06T20:33:49.720Z"
+}

@@ -1,0 +1,58 @@
+{
+  "env": "live",
+  "healer": {
+    "id": 961,
+    "healer_slug": "diana-winston"
+  },
+  "rows": [
+    {
+      "table": "videos",
+      "id": 8252,
+      "slug": "tedxsunsetpark-diana-winston-the-practice-of-mindfulness",
+      "title": "TEDxSunsetPark - Diana Winston - The Practice of Mindfulness"
+    },
+    {
+      "table": "books",
+      "id": 2167,
+      "slug": "the-little-book-of-being",
+      "title": "The Little Book of Being: Practices and Guidance for Uncovering Your Natural Awareness"
+    },
+    {
+      "table": "books",
+      "id": 2168,
+      "slug": "glimpses-of-being",
+      "title": "Glimpses of Being: A Training Course in Expanding Mindful Awareness"
+    },
+    {
+      "table": "books",
+      "id": 2169,
+      "slug": "fully-present",
+      "title": "Fully Present: The Science, Art, and Practice of Mindfulness"
+    },
+    {
+      "table": "books",
+      "id": 2170,
+      "slug": "wide-awake-a-buddhist-guide-for-teens",
+      "title": "Wide Awake: A Buddhist Guide for Teens"
+    },
+    {
+      "table": "courses",
+      "id": "db45f9de-d436-491d-813f-eae0b8f92088",
+      "slug": "befriending-your-mind-emotions-the-essential-guide-to-mindfulness-practice",
+      "title": "Befriending Your Mind & Emotions: The Essential Guide to Mindfulness Practice"
+    },
+    {
+      "table": "free_resources",
+      "id": "39f2a9fc-4721-4509-81a3-c6dbc6d4a5a6",
+      "slug": "free-weekly-mindful-awareness-meditation-at-the-hammer-museum",
+      "title": "Free Weekly Mindful Awareness Meditation at the Hammer Museum"
+    },
+    {
+      "table": "free_resources",
+      "id": "d8e47562-ec0e-46d7-94d5-a18cf67867dd",
+      "slug": "guided-meditations-with-diana-winston",
+      "title": "Guided Meditations with Diana Winston"
+    }
+  ],
+  "at": "2026-11-06T20:29:37.345Z"
+}

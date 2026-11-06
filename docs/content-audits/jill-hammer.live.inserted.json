@@ -1,0 +1,34 @@
+{
+  "env": "live",
+  "healer": {
+    "id": 1002,
+    "healer_slug": "jill-hammer"
+  },
+  "rows": [
+    {
+      "table": "books",
+      "id": 2279,
+      "slug": "the-hebrew-priestess",
+      "title": "The Hebrew Priestess: Ancient and New Visions of Jewish Women's Spiritual Leadership"
+    },
+    {
+      "table": "books",
+      "id": 2280,
+      "slug": "return-to-the-place",
+      "title": "Return to the Place: The Magic, Meditation, and Mystery of Sefer Yetzirah"
+    },
+    {
+      "table": "courses",
+      "id": "c654d89b-ed30-4b3a-b2e3-cda70def42b8",
+      "slug": "beit-kohenet-dream-circle-with-rabbi-jill-hammer",
+      "title": "Beit Kohenet Dream Circle with Rabbi Jill Hammer"
+    },
+    {
+      "table": "courses",
+      "id": "1b396ba4-3bd1-4231-bba1-24ac0be70d84",
+      "slug": "private-dreamwork-sessions",
+      "title": "Private Dreamwork Sessions"
+    }
+  ],
+  "at": "2026-11-06T20:32:28.422Z"
+}

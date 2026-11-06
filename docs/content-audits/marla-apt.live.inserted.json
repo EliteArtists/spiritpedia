@@ -1,0 +1,34 @@
+{
+  "env": "live",
+  "healer": {
+    "id": 1017,
+    "healer_slug": "marla-apt"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "c40c6747-6c6b-4cd7-ba72-e1b60c23d259",
+      "slug": "live-online-iyengar-yoga-classes",
+      "title": "Live online Iyengar Yoga classes"
+    },
+    {
+      "table": "courses",
+      "id": "bb3c309c-6f0e-4d02-b7a6-89669128ae05",
+      "slug": "recorded-class-library",
+      "title": "Recorded class library"
+    },
+    {
+      "table": "courses",
+      "id": "7dc8fd07-3e3a-4be4-ae7e-a1af157af0b4",
+      "slug": "online-yoga-teacher-study-sessions",
+      "title": "Online Yoga Teacher Study Sessions"
+    },
+    {
+      "table": "courses",
+      "id": "d6144822-4154-43e5-ab87-50319b09edcb",
+      "slug": "iyengar-yoga-retreat-at-feathered-pipe-ranch-montana-2027",
+      "title": "Iyengar Yoga Retreat at Feathered Pipe Ranch, Montana (2027)"
+    }
+  ],
+  "at": "2026-11-06T20:33:23.747Z"
+}

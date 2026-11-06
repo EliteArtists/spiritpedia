@@ -1,0 +1,42 @@
+{
+  "healer": {
+    "healer_slug": "don-miguel-ruiz"
+  },
+  "courses": [
+    {
+      "title": "The Art & Mastery of Life (Boone, North Carolina)",
+      "slug": "the-art-and-mastery-of-life-boone",
+      "description": "A weekend retreat in Boone, North Carolina, led by don Jose Ruiz and don Miguel Ruiz Jr. Drawing on Toltec teaching, it works on letting go of fear and self-judgment, handling thoughts and emotions with more awareness, and returning to unconditional self-love.",
+      "url": "https://www.miguelruiz.com/event/the-art-mastery-of-life-boone-nc/",
+      "price": "From $395 tuition plus $616 lodging and meals, plus tax",
+      "image": "https://i0.wp.com/www.miguelruiz.com/wp-content/uploads/2026/05/Boone-2026-e1780005421708.png?fit=636%2C441&#038;quality=80&#038;ssl=1",
+      "subjects": [
+        "ancient-wisdom",
+        "self-healing"
+      ],
+      "product_type": "retreat",
+      "start_date": "2026-11-13",
+      "end_date": "2026-11-15"
+    },
+    {
+      "title": "Teotihuacan Power Journey (New Year 2026–27)",
+      "slug": "teotihuacan-power-journey-new-year-2026",
+      "description": "The family's New Year retreat at Teotihuacan, the City of the Gods near Mexico City, guided by don Jose Ruiz, don Miguel Ruiz Jr., Aaron Landman and Karla Ruiz. Four nights of Toltec ceremonies, teachings and reflection among the pyramids, with lodging, breakfast and the airport shuttle included.",
+      "url": "https://www.miguelruiz.com/event/teotihuacan-power-journey-4/",
+      "price": "From $2,395 (double room) to $2,795 (single room)",
+      "image": "https://i0.wp.com/www.miguelruiz.com/wp-content/uploads/2026/06/Teo-Banner-Dec-2026.png?fit=1200%2C666&#038;quality=80&#038;ssl=1",
+      "subjects": [
+        "ancient-wisdom",
+        "shamanism",
+        "self-healing"
+      ],
+      "product_type": "retreat",
+      "start_date": "2026-12-28",
+      "end_date": "2027-01-01"
+    }
+  ],
+  "sprint": {
+    "note": "Owner, 6 Nov 2026 (pipelines sprint 3, point 4): don Jose Ruiz stays skipped (no site of his own); his two upcoming events go on his father's listing. Source: https://www.miguelruiz.com/teacher/don-jose-ruiz/ and the two event pages, read 6 Nov 2026 after robots.txt (open). Teotihuacan early pricing ended 31 Oct, so standard prices are listed. The ingest's dry run proposed replacing his three Google-thumbnail photos with the site's share card; left out (teacher photos need the owner)."
+  },
+  "images_final": true
+}

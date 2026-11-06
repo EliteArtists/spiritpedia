@@ -1,0 +1,57 @@
+{
+  "env": "live",
+  "healer": {
+    "id": 928,
+    "healer_slug": "jeanne-corrigal"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "0e90e15c-6819-42b7-ac12-d324b208d763",
+      "slug": "a-simple-quiet-day-december-daylong",
+      "title": "A Simple, Quiet Day: December Daylong"
+    },
+    {
+      "table": "courses",
+      "id": "a2c25484-f31a-4fd3-9b9b-68dcfd603417",
+      "slug": "compassion-and-resilience-in-our-times-january-daylong",
+      "title": "Compassion and Resilience in Our Times: January Daylong"
+    },
+    {
+      "table": "courses",
+      "id": "ef8b82d8-485e-44d0-bdd3-c53b4b0e6ffd",
+      "slug": "indigenous-insight-the-four-elements",
+      "title": "Indigenous Insight: The Four Elements"
+    },
+    {
+      "table": "courses",
+      "id": "68a0f0f2-0d52-4de5-851e-98d9673ed13a",
+      "slug": "the-wise-and-awakened-heart-june-metta-retreat",
+      "title": "The Wise and Awakened Heart: June Metta Retreat"
+    },
+    {
+      "table": "courses",
+      "id": "972b8f24-95f0-43ad-98cf-e455816b9453",
+      "slug": "steady-warm-and-spacious-june-insight-retreat",
+      "title": "Steady, Warm, and Spacious: June Insight Retreat"
+    },
+    {
+      "table": "free_resources",
+      "id": "a544fb50-b9b8-4414-bb26-db2cbc02360b",
+      "slug": "wednesday-night-talks-recordings",
+      "title": "Wednesday Night Talks (recordings)"
+    },
+    {
+      "table": "free_resources",
+      "id": "03ecec6d-76e2-42f3-ac64-82e69af9b737",
+      "slug": "wednesday-evening-sitting-and-talk",
+      "title": "Wednesday Evening Sitting and Talk"
+    },
+    {
+      "table": "hub_teachers",
+      "id": "3ed513eb-5b41-4d22-81fc-dceaa9bfffb0",
+      "title": "jeanne-corrigal teaches at Insight Meditation Society"
+    }
+  ],
+  "at": "2026-11-06T20:26:55.760Z"
+}

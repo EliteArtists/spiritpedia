@@ -1,0 +1,45 @@
+{
+  "env": "live",
+  "healer": {
+    "id": 1023,
+    "healer_slug": "michelle-cassandra-johnson"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "b97b5779-5568-46e2-a2c7-4f29f00d7f50",
+      "slug": "spiritual-direction-with-michelle-cassandra-johnson",
+      "title": "Spiritual Direction with Michelle Cassandra Johnson"
+    },
+    {
+      "table": "courses",
+      "id": "6af8c113-34dd-46cd-9809-a1ac89f54cb4",
+      "slug": "akashic-readings",
+      "title": "Akashic Readings"
+    },
+    {
+      "table": "courses",
+      "id": "257c9518-7135-44f3-8dc0-00a440c3095b",
+      "slug": "where-the-wild-things-teach-wonder-play-rest-aliveness",
+      "title": "Where the Wild Things Teach: Wonder, Play, Rest, & Aliveness"
+    },
+    {
+      "table": "courses",
+      "id": "f7cf1c55-a9a3-4f7e-adb7-978be7d00708",
+      "slug": "restore-return-rediscovering-our-interconnectedness",
+      "title": "Restore + Return: Rediscovering Our Interconnectedness"
+    },
+    {
+      "table": "free_resources",
+      "id": "8858677f-b7a7-42df-982e-aa09b9848366",
+      "slug": "finding-refuge-podcast",
+      "title": "Finding Refuge Podcast"
+    },
+    {
+      "table": "hub_teachers",
+      "id": "b113df96-466e-4155-a2cb-de9d34aec918",
+      "title": "michelle-cassandra-johnson teaches at Kripalu Center for Yoga & Health"
+    }
+  ],
+  "at": "2026-11-06T20:33:39.339Z"
+}

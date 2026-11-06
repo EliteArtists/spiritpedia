@@ -1,0 +1,40 @@
+{
+  "env": "live",
+  "healer": {
+    "id": 1026,
+    "healer_slug": "david-frenette"
+  },
+  "rows": [
+    {
+      "table": "books",
+      "id": 2324,
+      "slug": "the-path-of-centering-prayer",
+      "title": "The Path of Centering Prayer: Deepening Your Experience of God"
+    },
+    {
+      "table": "courses",
+      "id": "3598222c-988e-436a-80ba-da5c5229eb61",
+      "slug": "opening-to-the-god-of-unity-a-centering-prayer-retreat-with-david-frenette-mary-dwyer",
+      "title": "Opening to the God of Unity: A Centering Prayer Retreat with David Frenette & Mary Dwyer"
+    },
+    {
+      "table": "courses",
+      "id": "c50fcd0d-e3b0-48d2-b133-2435e2a48814",
+      "slug": "online-saturday-series-centering-prayer-and-the-god-of-unity-consciousness",
+      "title": "Online Saturday Series: Centering Prayer and the God of Unity Consciousness"
+    },
+    {
+      "table": "courses",
+      "id": "b7e8e688-be19-4a3d-900b-655266710048",
+      "slug": "silence-speaking-stillness-acting-centering-prayer-contemplative-petition-and-unity",
+      "title": "Silence Speaking, Stillness Acting: Centering Prayer, Contemplative Petition and Unity"
+    },
+    {
+      "table": "free_resources",
+      "id": "46468ee2-1f1f-42c2-b2b3-6edcbdcd15ce",
+      "slug": "getting-started-with-heart-intention",
+      "title": "Getting Started with Heart Intention"
+    }
+  ],
+  "at": "2026-11-06T20:33:46.397Z"
+}

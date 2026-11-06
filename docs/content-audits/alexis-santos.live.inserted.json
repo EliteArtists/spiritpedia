@@ -1,0 +1,40 @@
+{
+  "env": "live",
+  "healer": {
+    "id": 921,
+    "healer_slug": "alexis-santos"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "84a8cb75-98f0-447f-9550-b8d1d724a958",
+      "slug": "online-day-of-meditation",
+      "title": "Online Day of Meditation"
+    },
+    {
+      "table": "free_resources",
+      "id": "f473e0d8-2043-4bb1-8059-9fb9a0e9f798",
+      "slug": "day-long-with-alexis-18-september-2021-recordings",
+      "title": "Day-long with Alexis, 18 September 2021 (recordings)"
+    },
+    {
+      "table": "free_resources",
+      "id": "0caeaee8-2069-461d-8e3d-a9c9c1c6ad88",
+      "slug": "day-long-with-alexis-17-october-2021-recordings",
+      "title": "Day-long with Alexis, 17 October 2021 (recordings)"
+    },
+    {
+      "table": "free_resources",
+      "id": "47b49645-0f25-48e1-91b2-8d261edf531a",
+      "slug": "alexis-santoss-dharma-talks-on-dharma-seed",
+      "title": "Alexis Santos's dharma talks on Dharma Seed"
+    },
+    {
+      "table": "free_resources",
+      "id": "a7e10c5f-2ac8-40b6-9843-4888573a1910",
+      "slug": "one-hour-online-meeting",
+      "title": "One-hour online meeting"
+    }
+  ],
+  "at": "2026-11-06T20:26:35.962Z"
+}
