@@ -1,0 +1,123 @@
+{
+  "healer": {
+    "healer_slug": "annie-carpenter",
+    "location_source": null,
+    "no_public_base": "Her own site says only that she is 'based in California' with a 'primary focus in the San Francisco Bay Area' (teaching at studios in Oakland and San Francisco); no town is published.",
+    "create": {
+      "name": "Annie Carpenter",
+      "bio": "Annie Carpenter is an American yoga teacher and the creator of SmartFLOW, a method that joins classical hatha yoga with a dancer's understanding of movement, functional anatomy and attention to the breath and subtle body. She came to yoga as a teenager and trained first as a dancer, performing and teaching at the Martha Graham studio in New York while practising at Swami Satchidananda's Integral Yoga Institute. Later study took in Iyengar yoga, the Ashtanga teaching of Pattabhi Jois, and years at YogaWorks in Los Angeles, where she led its teacher trainings through the 2000s.\n\nShe is known as a teachers' teacher: much of her work now is running SmartFLOW trainings, from foundation courses through advanced modules that add up to a 500-hour certificate, together with mentorships that pair asana and pranayama with study of texts such as the Upanishads. Her classes are precise but playful, with options to make each pose easier or harder, and she tends to frame practice as self-inquiry rather than performance. She teaches mainly in the San Francisco Bay Area, at studios in Oakland and San Francisco, leads workshops and retreats in the US and abroad, and also offers recorded courses online.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "worldwide",
+      "city": null,
+      "country": null,
+      "subjects": [
+        "yoga"
+      ],
+      "website_url": "https://www.smartflowyoga.com/",
+      "booking_url": "https://www.smartflowyoga.com/calendar",
+      "youtube_url": null,
+      "instagram_url": "https://instagram.com/anniecarpentersmartflow",
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "annie@anniecarpenter.com",
+      "image_urls": [
+        "https://images.squarespace-cdn.com/content/v1/6675cc2131dfc16d58a1ad25/10f9b24f-ed35-41ca-b7b3-56b55c73ae96/Annie+High+Res-104.jpg",
+        "https://images.squarespace-cdn.com/content/v1/6675cc2131dfc16d58a1ad25/e5c6a450-df85-4d41-b8d0-877a350532cf/Annie+High+Res-50.jpg"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "esalen",
+      "role": "instructor"
+    }
+  ],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Svadhyaya: SmartFlow Mentorship",
+      "url": "https://www.smartflowyoga.com/calendar/svadhyaya-mentorship",
+      "description": "A ten-week mentorship for yoga teachers and committed students, with small-group meetings, regular classes, teaching feedback and study of the Upanishads. It can be joined in person, by livestream or by recording, and counts as 100 hours towards her advanced training.",
+      "price": "$2199 before November 30th; $2499 full price",
+      "product_type": "course",
+      "start_date": "2027-01-18",
+      "end_date": "2027-03-29",
+      "subjects": [
+        "yoga"
+      ],
+      "image": "http://static1.squarespace.com/static/6675cc2131dfc16d58a1ad25/6876f6b74f3b2a3302445fd6/696bc6b3e7a3504388147dbf/1793225523633/AnnieCarpenterSmartFLOW-2.jpg?format=1500w"
+    },
+    {
+      "title": "SamKrama: The Art of Sequencing",
+      "url": "https://www.smartflowyoga.com/calendar/samkrama-art-of-sequencing",
+      "description": "A four-day, 30-hour module at NEST Yoga in Oakland on building yoga classes with a clear arc, from a strong morning practice to afternoons spent mapping sequences and variations. It is also available by livestream with 30 days of recordings.",
+      "price": "$699 Full Price; $625 Early Bird before February 1, 2027",
+      "product_type": "course",
+      "start_date": "2027-04-22",
+      "end_date": "2027-04-25",
+      "subjects": [
+        "yoga"
+      ],
+      "image": "http://static1.squarespace.com/static/6675cc2131dfc16d58a1ad25/6876f6b74f3b2a3302445fd6/6ae273335b7d2668ecca773a/1793227537921/SamKrama.png?format=1500w"
+    },
+    {
+      "title": "300 Hour SmartFLOW Teacher Training",
+      "url": "https://www.smartflowyoga.com/300-hour-teacher-training",
+      "description": "An advanced, modular training for teachers who already hold a 200-hour certificate, taken at their own pace over one to three years. Completing it with a 200-hour course leads to a 500-hour SmartFLOW certificate.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/6675cc2131dfc16d58a1ad25/198a1421-bd3c-47f7-9d39-3f6a9fbab9f4/Asset+30.1%40350x.png?format=1500w"
+    },
+    {
+      "title": "SmartFLOW online courses",
+      "url": "https://www.smartflowyoga.com/online-modules",
+      "description": "Recorded video courses for students and teachers: two Heart of SmartFLOW courses on the method's foundations and a shorter course on the bandhas, also sold as a bundle. They are the online prerequisite for her advanced training.",
+      "price": "Contact for pricing",
+      "product_type": "download",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/6675cc2131dfc16d58a1ad25/198a1421-bd3c-47f7-9d39-3f6a9fbab9f4/Asset+30.1%40350x.png?format=1500w"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "pipelines-3",
+    "hub": "esalen",
+    "rank": 155,
+    "hub_url": "https://www.esalen.org/faculty/annie-carpenter",
+    "tier_evidence": "Instagram @anniecarpentersmartflow linked from her site; count not readable without logging in (not fetched, 6 Nov 2026); no YouTube, Facebook or X linked → 0 readable → local_hero",
+    "email": "yes",
+    "email_source": "https://www.smartflowyoga.com/contact",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 10 source(s)",
+    "flags": [
+      "Esalen named on: https://www.smartflowyoga.com/calendar (workshop 'Evolving the Inner Witness' at Esalen Institute, 17-19 July 2026, now past).",
+      "Own site: anniecarpenter.com (linked from Esalen) redirects to smartflowyoga.com; both robots.txt files read (Squarespace, * group open).",
+      "No town published, so no_public_base is set and availability is worldwide; she teaches in person mainly at NEST Yoga (Oakland) and HAUM (San Francisco), so the owner may want to map her to Oakland or San Francisco and make her local_online.",
+      "Yoga teacher training is her main work; site copy mentions a 'trauma-sensitive approach' and the tagline 'Flow Into Lifelong Health', not used. Several past workshops were framed around backs and 'prehab'; none kept.",
+      "Prices written as published ('$' with no currency code).",
+      "Photos: two from her own site (practising in a redwood forest), looked at, same woman; one photo only shows her blurred, left out.",
+      "Her about page quotes Trudy Goodman (rank 153 in this chunk); no shared listing implied."
+    ],
+    "left_out": [
+      "Pranify (HAUM, 6-15 Nov 2026): started before 10 Nov 2026.",
+      "All 2025 and earlier-2026 workshops on her calendar (Esalen, Montana retreat, Chicago, Paris, Vienna, Stockholm, Brisbane, Sydney and others): past.",
+      "200 Hour Teacher Training: page says none are scheduled at this time.",
+      "Glo.com classes: a third-party platform page, not opened.",
+      "Videos: no YouTube channel of hers found on her site; none added.",
+      "Books: none found."
+    ]
+  },
+  "images_final": true
+}

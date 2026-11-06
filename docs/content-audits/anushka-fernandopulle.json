@@ -1,0 +1,134 @@
+{
+  "healer": {
+    "healer_slug": "anushka-fernandopulle",
+    "location_source": "https://www.anushkaf.org/teaching-schedule/mindfulness/",
+    "create": {
+      "name": "Anushka Fernandopulle",
+      "bio": "Anushka Fernandopulle is a teacher of insight meditation in the Theravada Buddhist tradition, based in the San Francisco Bay Area. She studied Buddhism at Harvard and then spent four years in full-time meditation practice in the United States, India and Sri Lanka. She was first invited to teach in 1998, went on to complete a four-year teacher training whose leaders included Jack Kornfield and Joseph Goldstein, and has sat on the teachers' council at Spirit Rock since 2011.\n\nShe leads residential retreats of a weekend to a month, including retreats on loving-kindness and insight and retreats for LGBTQIA+ practitioners, at centres in California, Massachusetts and British Columbia. Alongside retreat teaching she gives everyday talks that apply the Buddha's teaching to modern life, from shopping and technology to sport and the news, many of them freely available online. She also works as an organisational consultant and leadership coach, with an MBA from Yale, bringing mindfulness into workplaces and leadership programmes, and she has written for Tricycle, Lion's Roar and Inquiring Mind.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local_online",
+      "city": "San Francisco, California",
+      "country": "United States",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "website_url": "https://www.anushkaf.org/",
+      "booking_url": "https://www.anushkaf.org/",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "anushkasangha@gmail.com",
+      "image_urls": [
+        "https://www.anushkaf.org/wp-content/uploads/2021/05/Anushka-headshot-garden.jpeg",
+        "https://www.anushkaf.org/wp-content/uploads/2021/05/Anushka-fernandopulle-picture.jpg"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "insight-meditation-society",
+      "role": "instructor"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Awakening Joy: Anushka Fernandopulle on \"Mindfulness\"",
+      "url": "https://www.youtube.com/watch?v=aE0pfWizPoE",
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "channel": "Awakening Joy"
+    }
+  ],
+  "books": [],
+  "courses": [
+    {
+      "title": "February Monthlong Insight Meditation Retreat, Spirit Rock",
+      "url": "https://www.spiritrock.org/programs/retreats/210x27-2027-february-insight-meditation-1-month-retreat-application",
+      "description": "A month of silent residential insight meditation practice in California, listed on her teaching schedule for February 2027. It is an application retreat, and she suggests some prior class and daylong experience before a long retreat.",
+      "price": "Contact for pricing",
+      "product_type": "retreat",
+      "start_date": "2027-02-02",
+      "end_date": "2027-03-01",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://www.anushkaf.org/wp-content/uploads/2021/05/Anushka-headshot-garden.jpeg"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Talks",
+      "url": "https://www.anushkaf.org/teaching-schedule/talkswritings/",
+      "description": "Her page of free recorded dharma talks, gathered by theme: everyday life, the eightfold path, the heart practices and more, with links on to her retreat talks.",
+      "featured": true,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://www.anushkaf.org/wp-content/uploads/2010/04/IMGP0910-300x225.jpg"
+    },
+    {
+      "title": "Anushka Fernandopulle's talks on Dharma Seed",
+      "url": "http://www.dharmaseed.org/teacher/222/",
+      "description": "The archive of her retreat talks and guided meditations, free to stream or download.",
+      "featured": false,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://www.anushkaf.org/wp-content/uploads/2021/05/Anushka-headshot-garden.jpeg"
+    },
+    {
+      "title": "What Is Mindfulness?",
+      "url": "https://www.anushkaf.org/teaching-schedule/mindfulness/",
+      "description": "A short introduction on her site to mindfulness as a trainable quality of mind rooted in the Pali word sati, with reading suggestions and a short video.",
+      "featured": false,
+      "resource_type": "practice",
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "image": "https://www.anushkaf.org/wp-content/uploads/2021/05/Anushka-headshot-garden.jpeg"
+    }
+  ],
+  "sprint": {
+    "sprint": "pipelines-3",
+    "hub": "ims",
+    "rank": 15,
+    "hub_url": "https://www.dharma.org/teacher/anushka-fernandopulle/",
+    "tier_evidence": "Instagram @anushka_dharma and Facebook AnushkaDharma linked from her site but not opened (never fetched), counts unreadable; no YouTube channel of her own (6 Nov 2026) → 0 readable → local_hero",
+    "email": "yes",
+    "email_source": "https://www.anushkaf.org/connect/",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 7 source(s)",
+    "flags": [
+      "IMS named on: https://www.anushkaf.org/ (2027 teaching schedule: Labor Day retreat and LGBTQIA+ retreat at IMS with Pascal Auclair, September 2027).",
+      "Email is written on her Connect page as 'anushkasangha(at)gmail.com' for enquiries about teaching a meditation group (she says she does not answer practice questions by email); recorded with @. Her separate consulting address (anushkaconsulting(at)gmail.com) is not used.",
+      "Base: San Francisco. Her own site invites Bay Area readers to her Monday Night Dharma group and mentions her San Francisco mayoral commission appointment; the dharma.org page says she lives in San Francisco. City level only.",
+      "Tier counts unreadable for her main accounts (Instagram, Facebook).",
+      "The only offering is the Spirit Rock monthlong retreat, linked from her schedule; spiritrock.org was not opened (its robots.txt blocks Claude agents) and is kept as a plain URL, as the brief allows. Spirit Rock is not a Spiritpedia hub, so no link.",
+      "She also works as a leadership coach and organisational consultant; her meditation teaching is the larger part of her site, so she is kept as a teacher. Owner may wish to check.",
+      "Some talk titles touch public life (Martin Luther King Jr Day, 'Occupy the Six Senses', watching the news); none is political commentary and none is used as an item.",
+      "Video is on the Awakening Joy channel (oEmbed 200, 6 Nov 2026); she is the main speaker. Duration and views not read.",
+      "Photos: two headshots from her site (1280 x 854 garden photo, 561 x 561 portrait) and the dharma.org photo (593 x 854); all looked at, same woman.",
+      "The dharma.org photo was dropped by the ingest dry run (dharma.org dropped the ingest's connection, UND_ERR_SOCKET, 6 Nov 2026), so only the photo(s) left in image_urls will be used."
+    ],
+    "left_out": [
+      "Other 2027 retreats on her schedule (BCIMS Vancouver weekend, July Spirit Rock metta and insight retreats, IMS Labor Day and LGBTQIA+ retreats, October Spirit Rock retreat): no page of their own linked from her site (only the BCIMS home page or no link).",
+      "Video talk '13 Ways of Looking at Dharma Practice': hosted on seattleinsight.org, not YouTube.",
+      "Tricycle 'Dharma of Leadership' video series (on dharma.org): Tricycle membership content, not her own page.",
+      "Leadership coaching, consulting and organisational workshops: business coaching, not spiritual teaching.",
+      "AudioDharma archive: left out to keep free resources to her own and her main archive."
+    ]
+  },
+  "images_final": true
+}

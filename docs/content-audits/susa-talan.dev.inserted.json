@@ -1,0 +1,34 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 953,
+    "healer_slug": "susa-talan"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "820fe0d7-cad5-4186-8048-2c92967278bc",
+      "slug": "meditation-mentoring",
+      "title": "Meditation mentoring"
+    },
+    {
+      "table": "courses",
+      "id": "963aa607-979d-4184-8c6c-4ee4e11e0826",
+      "slug": "thursday-evening-meditation-2",
+      "title": "Thursday evening meditation"
+    },
+    {
+      "table": "courses",
+      "id": "5816999a-0412-4b2a-aafa-1bad0f2170db",
+      "slug": "monthly-online-daylong-retreat-with-alexis-santos",
+      "title": "Monthly online daylong retreat with Alexis Santos"
+    },
+    {
+      "table": "free_resources",
+      "id": "f368e77c-cca7-40d6-afa4-ed9c50d2a15e",
+      "slug": "about-meditation",
+      "title": "About meditation"
+    }
+  ],
+  "at": "2026-11-06T14:13:31.052Z"
+}

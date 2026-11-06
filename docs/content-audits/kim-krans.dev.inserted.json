@@ -1,0 +1,40 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 1029,
+    "healer_slug": "kim-krans"
+  },
+  "rows": [
+    {
+      "table": "books",
+      "id": 2227,
+      "slug": "the-wild-unknown-tarot",
+      "title": "The Wild Unknown Tarot Deck and Guidebook"
+    },
+    {
+      "table": "books",
+      "id": 2228,
+      "slug": "the-wild-unknown-animal-spirit",
+      "title": "The Wild Unknown Animal Spirit Deck and Guidebook"
+    },
+    {
+      "table": "books",
+      "id": 2229,
+      "slug": "the-wild-unknown-archetypes",
+      "title": "The Wild Unknown Archetypes Deck and Guidebook"
+    },
+    {
+      "table": "books",
+      "id": 2230,
+      "slug": "the-wild-unknown-alchemy",
+      "title": "The Wild Unknown Alchemy Deck and Guidebook"
+    },
+    {
+      "table": "books",
+      "id": 2231,
+      "slug": "the-wild-unknown-journal",
+      "title": "The Wild Unknown Journal"
+    }
+  ],
+  "at": "2026-11-06T16:46:14.952Z"
+}

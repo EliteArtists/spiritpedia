@@ -1,0 +1,266 @@
+{
+  "healer": {
+    "healer_slug": "marc-lesser",
+    "location_source": "https://millvalleyzen.com/",
+    "create": {
+      "name": "Marc Lesser",
+      "bio": "Marc Lesser is a Zen priest who brings meditation into working life. He spent ten years living at San Francisco Zen Center and served as director of Tassajara, its mountain monastery, before taking an MBA and starting and running several businesses. He helped create Search Inside Yourself, the mindfulness and emotional intelligence course first taught inside Google, and was the founding chief executive of the institute that grew from it; today he runs ZBA Associates, a leadership development firm.\n\nHis teaching joins sitting practice with everyday questions of work, conflict and relationships. He hosts Mill Valley Zen, a free weekly online sitting group with a talk and discussion, leads half-day retreats in Mill Valley, two-month practice periods online and residential practice periods at Green Gulch Farm, and offers a year-long one-to-one mentorship for leaders as well as recorded audio courses. He presents the Zen Bones podcast, and his five books run from Z.B.A., an early look at business as practice, through Less and Seven Practices of a Mindful Leader to Finding Clarity, on compassionate accountability.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local_online",
+      "city": "Mill Valley, California",
+      "country": "United States",
+      "subjects": [
+        "meditation",
+        "mindfulness",
+        "spirituality"
+      ],
+      "website_url": "https://marclesser.net/",
+      "booking_url": "https://marclesser.net/events/",
+      "youtube_url": null,
+      "instagram_url": "https://www.instagram.com/marclesser",
+      "facebook_url": "https://www.facebook.com/marclesserzba/",
+      "twitter_url": "https://twitter.com/marclesser",
+      "tiktok_url": null,
+      "contact_email": null,
+      "image_urls": [
+        "https://marclesser.net/wp-content/uploads/2023/04/DSCF2935-1024x768.jpg",
+        "https://millvalleyzen.com/wp-content/uploads/2019/06/photo.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [
+    {
+      "title": "Living A Full Life — Marc Lesser — Dharma Talk at Beginner's Mind Temple",
+      "url": "https://www.youtube.com/watch?v=M_pqDKu6VHM",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "channel": "San Francisco Zen Center"
+    },
+    {
+      "title": "Marc Lesser: How to Be an Emotional Jedi",
+      "url": "https://www.youtube.com/watch?v=okUTNp7OuB4",
+      "subjects": [
+        "mindfulness"
+      ],
+      "channel": "Greater Good Science Center"
+    },
+    {
+      "title": "Marc Lesser : Zen, Mindfulness + Emotional Intelligence (#43)",
+      "url": "https://www.youtube.com/watch?v=Tn1m82_VG6w",
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "channel": "eastforestmusic"
+    },
+    {
+      "title": "Marc Lesser on the Essentials of Mindful Leadership | Noble Mind Ep 62",
+      "url": "https://www.youtube.com/watch?v=fcbjCHoIHU8",
+      "subjects": [
+        "mindfulness"
+      ],
+      "channel": "Noble Mind Podcast"
+    }
+  ],
+  "books": [
+    {
+      "title": "Finding Clarity: How Compassionate Accountability Builds Vibrant Relationships, Thriving Workplaces, and Meaningful Lives",
+      "slug": "finding-clarity",
+      "author": "Marc Lesser",
+      "asin": "160868833X",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "His most recent book offers a practice he calls compassionate accountability: a way of naming tension and difficult conversations honestly while keeping care for everyone involved, at work and at home.",
+      "subjects": [
+        "mindfulness",
+        "conscious-relationships"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/160868833X.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "Seven Practices of a Mindful Leader: Lessons from Google and a Zen Monastery Kitchen",
+      "slug": "seven-practices-of-a-mindful-leader",
+      "author": "Marc Lesser",
+      "asin": "1608685195",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "Seven practices for leading with presence, drawn from his years in a Zen monastery kitchen and in teaching mindfulness at Google.",
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1608685195.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "Know Yourself, Forget Yourself",
+      "slug": "know-yourself-forget-yourself",
+      "author": "Marc Lesser",
+      "asin": "1608680819",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "A book that applies Zen practice to the way we work and relate, balancing self-knowledge with letting go of a fixed sense of self.",
+      "subjects": [
+        "mindfulness",
+        "spirituality"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1608680819.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "Less: Accomplishing More by Doing Less",
+      "slug": "less",
+      "author": "Marc Lesser",
+      "asin": "1577316177",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "An invitation to do less of what is unnecessary, using simple contemplative practice to find more room and focus in a crowded life.",
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1577316177.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "Z.B.A.: Zen of Business Administration",
+      "slug": "z-b-a",
+      "author": "Marc Lesser",
+      "asin": "1577314697",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "His first book looks at running a business as a form of practice, bringing Zen attitudes to work, money and decisions.",
+      "subjects": [
+        "mindfulness",
+        "spirituality"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1577314697.01._SCLZZZZZZZ_.jpg"
+    }
+  ],
+  "courses": [
+    {
+      "title": "2-Month Practice Period: Zen in Everyday Life (online)",
+      "url": "https://marclesser.net/event/2-month-practice-period-zen-in-everyday-life-january-7th-march-4th-online/",
+      "description": "Weekly Thursday evening online meetings for two months, each opening with lightly guided meditation, to begin or deepen a sitting practice and carry it into work and home life.",
+      "price": "$220.00",
+      "product_type": "course",
+      "start_date": "2027-01-07",
+      "end_date": "2027-03-04",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://marclesser.net/wp-content/uploads/2023/04/DSCF2935-1024x768.jpg"
+    },
+    {
+      "title": "3-Week Practice Period at Green Gulch Farm",
+      "url": "https://marclesser.net/event/3-week-practice-period-at-green-gulch-farm-march-11th-april-5th-2027/",
+      "description": "A residential Zen practice period at San Francisco Zen Center's Green Gulch Farm, with daily zazen, work practice, study and one-to-one meetings with him, ending in a five-day sesshin. Registration is through the Zen Center.",
+      "price": "Contact for pricing",
+      "product_type": "retreat",
+      "start_date": "2027-03-11",
+      "end_date": "2027-04-05",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "image": "https://marclesser.net/wp-content/uploads/2023/04/DSCF2935-1024x768.jpg"
+    },
+    {
+      "title": "Zen of Leadership: A Year of Transformation",
+      "url": "https://marclesser.net/zen-of-leadership/",
+      "description": "A year of one-to-one mentoring with Marc for leaders and others who want a steady personal meditation practice and clearer values in how they live and lead.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://marclesser.net/wp-content/uploads/2023/04/DSCF2923.jpg"
+    },
+    {
+      "title": "Seven Practices of a Mindful Leader – Guided Audio Course",
+      "url": "https://marclesser.net/product/seven-practices-of-a-mindful-leader-guided-audio/",
+      "description": "A seven-week audio course on his seven practices, with guided exercises on awareness, communication and trust, for leaders at any level.",
+      "price": "$39.00",
+      "product_type": "download",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "mindfulness"
+      ],
+      "image": "https://marclesser.net/wp-content/uploads/2024/12/7-prac.webp"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Mill Valley Zen weekly meditation group",
+      "url": "https://millvalleyzen.com/",
+      "description": "A free weekly online sitting led by Marc: half an hour of meditation, then a talk or discussion. Open to beginners; donations welcome.",
+      "featured": true,
+      "resource_type": "practice",
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://millvalleyzen.com/wp-content/uploads/2019/06/photo.jpg"
+    },
+    {
+      "title": "Mill Valley Zen guided meditations",
+      "url": "https://millvalleyzen.com/guided-meditations/",
+      "description": "Recorded guided meditations from his weekly group, on themes such as letting go and cultivating appreciation.",
+      "featured": false,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://marclesser.net/wp-content/uploads/2023/04/DSCF2935-1024x768.jpg"
+    },
+    {
+      "title": "Zen Bones podcast",
+      "url": "https://marclesser.net/zen-bones-podcast/",
+      "description": "His podcast of conversations and short practices on bringing old contemplative wisdom into modern work and life.",
+      "featured": false,
+      "resource_type": "practice",
+      "subjects": [
+        "mindfulness",
+        "spirituality"
+      ],
+      "image": "https://marclesser.net/wp-content/uploads/2022/09/Zen-Edited.png"
+    }
+  ],
+  "sprint": {
+    "sprint": "pipelines-3",
+    "hub": "esalen",
+    "rank": 275,
+    "hub_url": "https://www.esalen.org/faculty/marc-lesser",
+    "tier_evidence": "No YouTube channel of his own found; Instagram, Facebook and X linked from marclesser.net but not readable without login → readable total 0 → local_hero",
+    "email": "contact form",
+    "email_source": null,
+    "contact_form_url": "https://marclesser.net/contact/",
+    "bio_check": "OK: no 8-word runs against 12 source(s)",
+    "flags": [
+      "No Esalen mention on marclesser.net or millvalleyzen.com pages read: listed without the link.",
+      "Base: Mill Valley, California, from millvalleyzen.com ('a regular sitting group in Mill Valley') and the in-person half-day retreats in Mill Valley on his events page; his weekly group now meets on Zoom.",
+      "Tier counts 0: no readable follower counts (main accounts need login).",
+      "Much of his work is leadership training for companies; the listing keeps to his Zen teaching, practice periods and books.",
+      "Videos are interviews and talks on other channels (San Francisco Zen Center, Greater Good Science Center, East Forest, Noble Mind Podcast) where he is the main speaker; found by web search, not linked from his site.",
+      "Green Gulch practice period is run by San Francisco Zen Center (sfzc.org page not opened); price not on his page.",
+      "Books: ISBN-10s taken from the amazon.com links on his books page (marclesser.net/books/); not confirmed elsewhere."
+    ],
+    "left_out": [
+      "Zen of Coaching (started 23 Oct 2026) and the Mill Valley half-day retreat (8 Nov 2026): started before 10 Nov.",
+      "Finding Your Power guided audio course and Thinkific courses: not opened.",
+      "Office Zen free e-book: given only after an email form; not opened.",
+      "Training for organisations and speaking: corporate services, not teaching for individuals."
+    ]
+  },
+  "images_final": true
+}

@@ -1,0 +1,28 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 1057,
+    "healer_slug": "stephen-jenkinson"
+  },
+  "rows": [
+    {
+      "table": "books",
+      "id": 2287,
+      "slug": "die-wise",
+      "title": "Die Wise: A Manifesto for Sanity and Soul"
+    },
+    {
+      "table": "books",
+      "id": 2288,
+      "slug": "come-of-age",
+      "title": "Come of Age: The Case for Elderhood in a Time of Trouble"
+    },
+    {
+      "table": "courses",
+      "id": "66ebe220-3d24-4f50-992f-f382f1f63f4d",
+      "slug": "the-post-then-the-beam-the-2027-boreal-session",
+      "title": "The Post, Then the Beam: The 2027 Boreal Session"
+    }
+  ],
+  "at": "2026-11-06T17:40:24.282Z"
+}

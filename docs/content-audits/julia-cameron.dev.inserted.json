@@ -1,0 +1,52 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 1016,
+    "healer_slug": "julia-cameron"
+  },
+  "rows": [
+    {
+      "table": "books",
+      "id": 2191,
+      "slug": "the-artists-way",
+      "title": "The Artist's Way: A Spiritual Path to Higher Creativity"
+    },
+    {
+      "table": "books",
+      "id": 2192,
+      "slug": "the-artists-way-workbook",
+      "title": "The Artist's Way Workbook"
+    },
+    {
+      "table": "books",
+      "id": 2193,
+      "slug": "the-artists-way-morning-pages-journal",
+      "title": "The Artist's Way Morning Pages Journal"
+    },
+    {
+      "table": "books",
+      "id": 2194,
+      "slug": "the-artists-date-book",
+      "title": "The Artist's Date Book"
+    },
+    {
+      "table": "courses",
+      "id": "75d57ad4-2fba-466e-8015-e10082882cb6",
+      "slug": "the-artists-way-video-course",
+      "title": "The Artist's Way Video Course"
+    },
+    {
+      "table": "courses",
+      "id": "b7254627-6cd2-46ec-b509-c0102936bd68",
+      "slug": "the-right-to-write-video-course",
+      "title": "The Right to Write Video Course"
+    },
+    {
+      "table": "courses",
+      "id": "e41f5f70-94c9-477c-b29c-607eda0aa476",
+      "slug": "the-essential-tools-video-course",
+      "title": "The Essential Tools Video Course"
+    }
+  ],
+  "at": "2026-11-06T16:22:45.289Z"
+}

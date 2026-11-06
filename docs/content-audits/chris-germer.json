@@ -1,0 +1,235 @@
+{
+  "healer": {
+    "healer_slug": "chris-germer",
+    "location_source": "https://chrisgermer.com/about/",
+    "create": {
+      "name": "Dr. Chris Germer",
+      "bio": "Chris Germer is a clinical psychologist in Cambridge, Massachusetts, best known as co-creator, with Kristin Neff, of Mindful Self-Compassion (MSC), an eight-week course for the general public that began in 2010 and is now taught in more than thirty languages. His own practice goes back to the 1970s, when he spent years travelling in India exploring yoga and meditation and first learned mindfulness at a hermitage in Sri Lanka. He later joined a Cambridge study group on meditation and therapy, and he teaches part-time on psychiatry at Harvard Medical School.\n\nSelf-compassion, as he teaches it, is mindfulness turned warm: meeting our own failures and hard moments with the kind of care we would offer a friend. MSC combines short talks, guided meditations such as affectionate breathing and loving-kindness phrases, and small everyday practices like the self-compassion break. With four senior MSC teachers he has more recently developed a follow-on course on working kindly with shame. He now spends most of his time leading workshops around the world and supporting MSC teachers. His books include The Mindful Path to Self-Compassion, The Mindful Self-Compassion Workbook, written with Neff, and Self-Compassion for Shame.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "worldwide",
+      "city": "Cambridge, Massachusetts",
+      "country": "United States",
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "website_url": "https://chrisgermer.com/",
+      "booking_url": "https://chrisgermer.com/events/",
+      "youtube_url": "https://www.youtube.com/@christophergermerphd",
+      "instagram_url": null,
+      "facebook_url": "https://www.facebook.com/Chris-Germer-PhD-Mindful-Self-Compassion-141943624277",
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": null,
+      "image_urls": [
+        "https://yt3.googleusercontent.com/IDMk8_Ro1kXyAJ1ypXuGWGXFnneWnfVVhcg8vYAgxNIR9gNjj21F4wf-5ecB-EZ8CAs3ZSHw5A=s900",
+        "https://chrisgermer.com/wp-content/uploads/2026/01/20250722_ChristopherGermer_0155-scaled.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [
+    {
+      "title": "Self-Compassion: An Antidote to Shame",
+      "url": "https://www.youtube.com/watch?v=rTFN8t9SXiQ",
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "channel": "Christopher Germer, Ph.D."
+    },
+    {
+      "title": "MSC Session 1 - Practicing Self-Compassion with Chris Germer (1 of 8)",
+      "url": "https://www.youtube.com/watch?v=sCccKLjwCwk",
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "channel": "Christopher Germer, Ph.D."
+    },
+    {
+      "title": "Introduction and Genesis of Mindful Self-Compassion with Chris Germer",
+      "url": "https://www.youtube.com/watch?v=2SKKRq2WXfk",
+      "subjects": [
+        "mindfulness"
+      ],
+      "channel": "Christopher Germer, Ph.D."
+    },
+    {
+      "title": "Self-Compassion Break (Audio Meditation)",
+      "url": "https://www.youtube.com/watch?v=T_80y_CT32c",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "channel": "Christopher Germer, Ph.D."
+    },
+    {
+      "title": "Compassionate Body Scan (Audio Meditation)",
+      "url": "https://www.youtube.com/watch?v=AmZdRE83tVU",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "channel": "Christopher Germer, Ph.D."
+    },
+    {
+      "title": "Soften Soothe Allow (Audio Meditation)",
+      "url": "https://www.youtube.com/watch?v=hmQi3VQCdCQ",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "channel": "Christopher Germer, Ph.D."
+    },
+    {
+      "title": "Giving and Receiving Compassion (Audio Meditation)",
+      "url": "https://www.youtube.com/watch?v=R5uGzt6LD4I",
+      "subjects": [
+        "meditation"
+      ],
+      "channel": "Christopher Germer, Ph.D."
+    }
+  ],
+  "books": [
+    {
+      "title": "The Mindful Self-Compassion Workbook: A Proven Way to Accept Yourself, Build Inner Strength, and Thrive",
+      "slug": "the-mindful-self-compassion-workbook",
+      "author": "Kristin Neff, Christopher Germer",
+      "asin": "1462526780",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "A self-guided version of the eight-week MSC course, written with Kristin Neff. Each chapter pairs a short explanation with meditations and informal exercises a reader can work through alone.",
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1462526780.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "The Mindful Path to Self-Compassion: Freeing Yourself from Destructive Thoughts and Emotions",
+      "slug": "the-mindful-path-to-self-compassion",
+      "author": "Christopher Germer",
+      "asin": "1593859759",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "His first book for general readers, written before MSC took shape. It explains why kindness toward ourselves matters and offers loving-kindness practices and everyday exercises for meeting hard feelings.",
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1593859759.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "Self-Compassion for Shame: A Step-by-Step Guide to Inner Freedom",
+      "slug": "self-compassion-for-shame",
+      "author": "Christopher Germer",
+      "asin": "1462557880",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "His 2026 book, drawn from the follow-on course he developed with senior MSC teachers. Short chapters explain what shame is and lead the reader through guided practices for meeting it with kindness.",
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1462557880.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "Teaching the Mindful Self-Compassion Program: A Guide for Professionals",
+      "slug": "teaching-the-mindful-self-compassion-program",
+      "author": "Christopher Germer, Kristin Neff",
+      "asin": "1462538894",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "A detailed handbook for people training to teach MSC, written with Kristin Neff. It sets out the course session by session along with the thinking behind it.",
+      "subjects": [
+        "mindfulness"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1462538894.01._SCLZZZZZZZ_.jpg"
+    }
+  ],
+  "courses": [],
+  "free_resources": [
+    {
+      "title": "Affectionate Breathing (guided meditation)",
+      "url": "https://chrisgermer.com/wp-content/uploads/2026/05/AffectionateBreathing18.24ckgamplified12-14-14.mp3",
+      "description": "An 18-minute recorded meditation from his site that pairs attention to the breath with a gentle, kind attitude. It is one of the core practices in MSC, with written instructions alongside.",
+      "featured": true,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://yt3.googleusercontent.com/IDMk8_Ro1kXyAJ1ypXuGWGXFnneWnfVVhcg8vYAgxNIR9gNjj21F4wf-5ecB-EZ8CAs3ZSHw5A=s900"
+    },
+    {
+      "title": "Loving-Kindness for Ourselves (guided meditation)",
+      "url": "https://chrisgermer.com/wp-content/uploads/2026/05/Loving-KindnessforOurselves20.41ckgamplified12-14-14.mp3",
+      "description": "A free audio practice of offering warm wishes to oneself using simple repeated phrases, as taught in the MSC programme.",
+      "featured": false,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://yt3.googleusercontent.com/IDMk8_Ro1kXyAJ1ypXuGWGXFnneWnfVVhcg8vYAgxNIR9gNjj21F4wf-5ecB-EZ8CAs3ZSHw5A=s900"
+    },
+    {
+      "title": "Compassionate Friend (guided meditation)",
+      "url": "https://chrisgermer.com/wp-content/uploads/2026/05/Compassionate-Friend-15-min.mp3",
+      "description": "A 15-minute guided visualisation in which you imagine meeting a wise and caring presence and listen for what it has to say to you.",
+      "featured": false,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://yt3.googleusercontent.com/IDMk8_Ro1kXyAJ1ypXuGWGXFnneWnfVVhcg8vYAgxNIR9gNjj21F4wf-5ecB-EZ8CAs3ZSHw5A=s900"
+    },
+    {
+      "title": "Self-Compassion Break (guided meditation)",
+      "url": "https://chrisgermer.com/wp-content/uploads/2026/05/Self-Compassion-Break-13-min-.mp3",
+      "description": "A 13-minute version of a short practice you can use in any difficult moment: noticing the difficulty, remembering others feel it too, and offering yourself kindness.",
+      "featured": false,
+      "resource_type": "meditation",
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "image": "https://yt3.googleusercontent.com/IDMk8_Ro1kXyAJ1ypXuGWGXFnneWnfVVhcg8vYAgxNIR9gNjj21F4wf-5ecB-EZ8CAs3ZSHw5A=s900"
+    }
+  ],
+  "sprint": {
+    "sprint": "pipelines-3",
+    "hub": "sounds-true",
+    "rank": 215,
+    "hub_url": "https://www.soundstrue.com/collections/authors-chris-germer",
+    "tier_evidence": "YouTube @christophergermerphd 47K subscribers (channel header, 6 Nov 2026); Facebook and Instagram linked from chrisgermer.com but not readable without login → readable total ~47k → local_hero",
+    "email": "contact form",
+    "email_source": null,
+    "contact_form_url": "https://chrisgermer.com/contact/",
+    "bio_check": "OK: no 8-word runs against 9 source(s)",
+    "flags": [
+      "Tier: only YouTube readable (47K). His site says MSC has been taught to over 250,000 people, but that is the whole programme, not his own students; left at local_hero, owner may raise.",
+      "He is a clinical psychologist with a small psychotherapy practice and a 'Therapy' section on his site; listed for Mindful Self-Compassion teaching and meditation, not therapy. Therapy-focused videos and books left out.",
+      "Shame: his current work centres on self-compassion for shame. I treated shame as an emotion, not a medical condition, and kept the book and the most-viewed talk; owner may judge it borderline.",
+      "Co-author overlap with Kristin Neff (rank 216): the MSC Workbook and Teaching the MSC Program are shared books.",
+      "No own paid offerings: his only listed event (8 Nov 2026 online workshop) has started by 10 Nov; MSC courses on his home page link to the Center for Mindful Self-Compassion and are taught by many teachers, so not listed as his.",
+      "His event link redirects to spirit-rock.secure.retreat.guru (Spirit Rock): not followed or opened.",
+      "Books: ISBNs from guilford.com (the Self-Compassion for Shame page his site links, and the other Germer titles listed on it), not confirmed elsewhere.",
+      "Name: 'Chris Germer, PhD' on his site, shown as 'Dr. Chris Germer' per house style; slug chris-germer."
+    ],
+    "left_out": [
+      "Mindful Self-Compassion for Burnout (book and video): burnout is condition-framed.",
+      "Mindfulness and Psychotherapy; Wisdom and Compassion in Psychotherapy: professional therapy texts.",
+      "Videos on compassion in therapy (keynotes, 'Self-Compassion in Therapy' overview): therapy-focused.",
+      "Self-Compassion for Shame online workshop, 8 Nov 2026 (dated before 10 Nov) and the 8-week course from 21 Oct (already started); MSC Intensive in Elspeet, 13-18 Oct 2026 (past).",
+      "Guided meditations for body shame and childhood shame: borderline, left out."
+    ]
+  },
+  "images_final": true
+}

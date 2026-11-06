@@ -1,0 +1,192 @@
+{
+  "healer": {
+    "healer_slug": "elizabeth-lesser",
+    "location_source": "https://www.elizabethlesser.org/contact",
+    "create": {
+      "name": "Elizabeth Lesser",
+      "bio": "Elizabeth Lesser is an author and one of the founders, in 1977, of Omega Institute, the retreat and conference centre in Rhinebeck, New York. Before Omega she worked as a midwife and birth educator. Over the decades she helped shape Omega's programmes in meditation, yoga, spirituality, the arts and social change, and she later helped found its centre for women's leadership, an offshoot of Omega's Women & Power gatherings.\n\nHer writing turns on how ordinary people grow through hard times and how spiritual life can be lived without dogma. The Seeker's Guide draws on what she learned from the many teachers and traditions that passed through Omega. Broken Open, her best-known book, looks at how loss, illness, divorce and other upheavals can become openings to a fuller life. Marrow is a memoir about her relationship with her younger sister, and Cassandra Speaks asks what changes when women tell the stories a culture lives by. She speaks widely, has appeared on Oprah Winfrey's SuperSoul Sunday and TED, and leads occasional retreats; her talks are warm, frank and full of stories.",
+      "tier": "luminary",
+      "entity_type": "individual",
+      "availability": "worldwide",
+      "city": "Rhinebeck, New York",
+      "country": "United States",
+      "subjects": [
+        "spirituality",
+        "spiritual-awakening",
+        "conscious-relationships"
+      ],
+      "website_url": "https://www.elizabethlesser.org/",
+      "booking_url": "https://www.elizabethlesser.org/events",
+      "youtube_url": null,
+      "instagram_url": "https://www.instagram.com/elizlesser/",
+      "facebook_url": "https://www.facebook.com/ElizLesser",
+      "twitter_url": "https://twitter.com/ElizabethLesser",
+      "tiktok_url": null,
+      "contact_email": "lesserelizabeth@gmail.com",
+      "image_urls": [
+        "https://images.squarespace-cdn.com/content/v1/52f436ade4b0096dbeac67f2/1596940285049-B6GM32G242M3N4LZ84HR/ElizLesser-34WEB.jpg"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "omega-institute",
+      "role": "instructor"
+    }
+  ],
+  "videos": [
+    {
+      "title": "What It Means to Be Broken Open",
+      "url": "https://www.youtube.com/watch?v=qR4CpZHBc_Y",
+      "subjects": [
+        "spiritual-awakening",
+        "spirituality"
+      ],
+      "channel": "OWN"
+    },
+    {
+      "title": "The 4-Letter Word Elizabeth Lesser Lives By",
+      "url": "https://www.youtube.com/watch?v=nvMipfExt8w",
+      "subjects": [
+        "spirituality"
+      ],
+      "channel": "OWN"
+    },
+    {
+      "title": "The Negative Stories That Can Poison a Relationship",
+      "url": "https://www.youtube.com/watch?v=pb4Xwcy3ZrM",
+      "subjects": [
+        "conscious-relationships"
+      ],
+      "channel": "OWN"
+    },
+    {
+      "title": "Elizabeth Lesser: How History Treated Bold Women",
+      "url": "https://www.youtube.com/watch?v=0E69OWWOts0",
+      "subjects": [
+        "spirituality"
+      ],
+      "channel": "Omega Institute for Holistic Studies"
+    },
+    {
+      "title": "Elizabeth Lesser: Shattering Myths & Stereotypes",
+      "url": "https://www.youtube.com/watch?v=I-_CTZRXJ9w",
+      "subjects": [
+        "spirituality"
+      ],
+      "channel": "Omega Institute for Holistic Studies"
+    },
+    {
+      "title": "Elizabeth Lesser Interview by Kristen Noel for Best Self Magazine",
+      "url": "https://www.youtube.com/watch?v=txlm9wPhgEY",
+      "subjects": [
+        "spirituality",
+        "spiritual-awakening"
+      ],
+      "channel": "Best Self Magazine"
+    },
+    {
+      "title": "ELIZABETH LESSER, Co-founder of Omega Institute and Best-Selling Author of MARROW",
+      "url": "https://www.youtube.com/watch?v=xUw9Wc_9hB8",
+      "subjects": [
+        "spirituality",
+        "conscious-relationships"
+      ],
+      "channel": "3-Minute Storyteller"
+    }
+  ],
+  "books": [
+    {
+      "title": "Broken Open: How Difficult Times Can Help Us Grow",
+      "slug": "broken-open",
+      "author": "Elizabeth Lesser",
+      "asin": "0375759913",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "Her best-known book, drawing on her own life and others' to show how loss and upheaval can lead to a deeper and more honest way of living.",
+      "subjects": [
+        "spiritual-awakening",
+        "spirituality"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/0375759913.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "The Seeker's Guide",
+      "slug": "the-seekers-guide",
+      "author": "Elizabeth Lesser",
+      "asin": "0679783598",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "Her first book, a guide to building a personal spiritual life, distilled from her years among the teachers and traditions that came through Omega.",
+      "subjects": [
+        "spirituality",
+        "meditation"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/0679783598.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "Cassandra Speaks: When Women Are the Storytellers, the Human Story Changes",
+      "slug": "cassandra-speaks",
+      "author": "Elizabeth Lesser",
+      "asin": "0062887181",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "A look at the old myths and origin stories that still shape how we live, and an invitation for women to trust their own voices and tell new ones.",
+      "subjects": [
+        "spirituality",
+        "ancient-wisdom"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/0062887181.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "Marrow: Love, Loss, and What Matters Most",
+      "slug": "marrow",
+      "author": "Elizabeth Lesser",
+      "asin": "006236765X",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "A memoir of her bond with her younger sister, Maggie, and of what the two of them learned about love and honesty during a hard time in their lives.",
+      "subjects": [
+        "conscious-relationships",
+        "death-the-afterlife"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/006236765X.01._SCLZZZZZZZ_.jpg"
+    }
+  ],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "pipelines-3",
+    "hub": "sounds-true",
+    "rank": 263,
+    "hub_url": "https://www.soundstrue.com/collections/authors-elizabeth-lesser",
+    "tier_evidence": "No YouTube channel of her own; Instagram @elizlesser, Facebook ElizLesser and X @ElizabethLesser not readable without login → 0 readable",
+    "tier_override": "Editorial stature: co-founder of Omega Institute (a Spiritpedia hub) and author of the New York Times bestseller Broken Open (over 300,000 copies, 20 languages, per her site). Owner to confirm luminary.",
+    "email": "yes",
+    "email_source": "https://www.elizabethlesser.org/contact",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 9 source(s)",
+    "flags": [
+      "Omega named on: https://www.elizabethlesser.org/about (co-founder); omega-institute link added. Omega pages not opened: eomega.org returns 403 to us (6 Nov 2026).",
+      "Tier raised to luminary on editorial stature (Omega co-founder, bestselling author) with no readable follower counts; owner to decide.",
+      "Base: her published mailing address is c/o Omega Institute, Rhinebeck, New York; recorded as Rhinebeck. Rhinebeck may be under 5,000 people (village).",
+      "Regional: Rhinebeck, Hudson Valley, likely has few Spiritpedia teachers.",
+      "Her site's content runs to 2024 and its events page lists only a 2023 retreat; no current offerings found.",
+      "Videos are all on other channels (OWN SuperSoul Sunday, Omega, Best Self Magazine, 3-Minute Storyteller) where she is the main speaker.",
+      "Marrow is a memoir about a bone marrow donation to her sister; kept as the title and blurb make no health claim, owner may prefer to drop it.",
+      "ISBNs from bookshop.org/retailer links on her own book pages (converted from ISBN-13), not confirmed elsewhere.",
+      "Cassandra Speaks is a feminist book about culture's stories; not political commentary in the brief's sense, but flagged."
+    ],
+    "left_out": [
+      "'For Healing from Cancer' toolbox page (health).",
+      "Town Hall Seattle talk with Jane Fonda (activism framing) and one video whose oEmbed returned 401; Vimeo clips (YouTube only).",
+      "Mii Amo retreat in Sedona (January 2023, past).",
+      "Omega programmes: none linked from her site as upcoming."
+    ]
+  },
+  "images_final": true
+}

@@ -1,0 +1,164 @@
+{
+  "healer": {
+    "healer_slug": "jason-crandell",
+    "location_source": "https://jasonyoga.com/online-yoga-teacher-training/",
+    "create": {
+      "name": "Jason Crandell",
+      "bio": "Jason Crandell is a yoga teacher and teacher trainer with more than two decades of teaching behind him. His main teacher was Rodney Yee, and he was a staff teacher at Yoga Journal, where he met his wife and teaching partner, the writer Andrea Ferretti. Over the years he has also learned from physical therapists, sports-medicine specialists and other movement researchers, and his trademark is clear, practical instruction that joins classical yoga philosophy with current understanding of how bodies move and change.\n\nTogether he and Andrea run the Jason Crandell Yoga Method, an online school for yoga education, and Yogaland, a long-running podcast on practising and teaching yoga that has passed several million downloads. Jason's Yoga Alliance-accredited 200- and 300-hour online teacher trainings and shorter courses cover sequencing, breathwork and pranayama, anatomy and teaching beginners, and he leads occasional in-person immersions and retreats, including in San Francisco and London. His YouTube channel mixes teaching tips, practice sequences, strength and mobility work, and conversations on yoga philosophy and the life of a teacher.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local_online",
+      "city": "San Francisco, California",
+      "country": "United States",
+      "subjects": [
+        "yoga",
+        "breathwork",
+        "mindfulness"
+      ],
+      "website_url": "https://jasonyoga.com/",
+      "booking_url": "https://jasonyoga.com/online-yoga-teacher-training/",
+      "youtube_url": "https://www.youtube.com/@JasonCrandellYoga",
+      "instagram_url": "https://www.instagram.com/jason_crandell/",
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "support@jasonyoga.com",
+      "image_urls": [
+        "https://jasonyoga.com/wp-content/uploads/low_lunge_portrait.webp",
+        "https://jasonyoga.com/wp-content/uploads/bharad3.webp"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [
+    {
+      "title": "Yoga Philosophy Explained — The 6 Core Teachings That Unite Every Tradition",
+      "url": "https://www.youtube.com/watch?v=CsnmOMiLkWk",
+      "subjects": [
+        "yoga",
+        "ancient-wisdom"
+      ],
+      "channel": "Jason Crandell Yoga"
+    },
+    {
+      "title": "Why Yoga Philosophy Matters — Yoga Is More Than Just Poses",
+      "url": "https://www.youtube.com/watch?v=OI4DzsRhdVg",
+      "subjects": [
+        "yoga",
+        "ancient-wisdom"
+      ],
+      "channel": "Jason Crandell Yoga"
+    },
+    {
+      "title": "3 Breathwork and Pranayama Techniques for Yoga Teachers Who Keep Putting It Off",
+      "url": "https://www.youtube.com/watch?v=eGqaWKeaCn8",
+      "subjects": [
+        "breathwork",
+        "yoga"
+      ],
+      "channel": "Jason Crandell Yoga"
+    },
+    {
+      "title": "Why Breathwork Matters",
+      "url": "https://www.youtube.com/watch?v=hgLYc4RivOU",
+      "subjects": [
+        "breathwork"
+      ],
+      "channel": "Jason Crandell Yoga"
+    },
+    {
+      "title": "The Yoga Teachings That Have Endured — 10 Years and 8 Million Downloads Later",
+      "url": "https://www.youtube.com/watch?v=NmgNVXhWTI8",
+      "subjects": [
+        "yoga"
+      ],
+      "channel": "Jason Crandell Yoga"
+    },
+    {
+      "title": "Yoga Taught Me Self-Compassion (Here’s How It Changed Everything) | 5-Minute Yoga Insight",
+      "url": "https://www.youtube.com/watch?v=ypYjCIUuXLw",
+      "subjects": [
+        "yoga",
+        "mindfulness"
+      ],
+      "channel": "Jason Crandell Yoga"
+    },
+    {
+      "title": "Moon Joy, the Overview Effect, and Why Astronauts Sound Like Meditators",
+      "url": "https://www.youtube.com/watch?v=KeiMWkx7GMQ",
+      "subjects": [
+        "meditation",
+        "consciousness"
+      ],
+      "channel": "Jason Crandell Yoga"
+    },
+    {
+      "title": "How to Build a Yoga Strength Class — The 6-Phase Structure Every Yoga Teacher Needs",
+      "url": "https://www.youtube.com/watch?v=H_IhqvukVtY",
+      "subjects": [
+        "yoga"
+      ],
+      "channel": "Jason Crandell Yoga"
+    },
+    {
+      "title": "Yoga Arm Balances: 6 Strength Exercises for Crow Pose, Side Plank & Twisting Arm Balances",
+      "url": "https://www.youtube.com/watch?v=cAO6gK3n_Cw",
+      "subjects": [
+        "yoga"
+      ],
+      "channel": "Jason Crandell Yoga"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [
+    {
+      "title": "Yogaland Podcast",
+      "url": "https://jasonyoga.com/yogaland-podcast/",
+      "description": "Jason and Andrea's long-running podcast on yoga practice, philosophy, sequencing and teaching, with guests from across the yoga world.",
+      "featured": true,
+      "resource_type": "workshop",
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://jasonyoga.com/wp-content/uploads/sm_yogaland_grey_lavendar_white.png"
+    },
+    {
+      "title": "Free Yoga Sequences",
+      "url": "https://jasonyoga.com/blog/yoga-sequences/",
+      "description": "A collection of practice sequences on his blog, with photos and notes, for home practice or for teachers planning classes.",
+      "featured": false,
+      "resource_type": "practice",
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://jasonyoga.com/wp-content/uploads/injury-management-3-768x432.webp"
+    }
+  ],
+  "sprint": {
+    "sprint": "pipelines-3",
+    "hub": "kripalu",
+    "rank": 129,
+    "hub_url": "https://kripalu.org/people/jason-crandell",
+    "tier_evidence": "YouTube 31.5K (@JasonCrandellYoga header, 6 Nov 2026; channel shared with his wife Andrea Ferretti); Instagram not readable without login → ~32K readable → local_hero",
+    "email": "yes",
+    "email_source": "https://jasonyoga.com/contact/",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 5 source(s)",
+    "flags": [
+      "No Kripalu mention on own site: listed without the link.",
+      "learn.jasonyoga.com (his course platform: 200/300-hour trainings, sequencing, breathwork, anatomy courses) has a robots.txt group for ClaudeBot, anthropic-ai and Claude-Web saying Disallow: /; per the owner's 5 Nov rule nothing was taken from it, so no paid offerings are listed. The main site jasonyoga.com does not block us.",
+      "Teaching pair: Jason Crandell and his wife Andrea Ferretti run the school and podcast together; one listing under Jason (the list's name), Andrea named in the bio. The YouTube avatar shows them both, so it was not used as a photo.",
+      "Email support@jasonyoga.com is the school's support inbox, decoded from a Cloudflare-protected address on the contact page.",
+      "Base: San Francisco, from his in-person teaching there (Castro Yoga Room); the site doesn't state where he lives. Please check.",
+      "Much of his channel is anatomy, strength and mobility teaching; spiritual content is lighter than for most listings."
+    ],
+    "left_out": [
+      "All paid courses and trainings: on learn.jasonyoga.com, which blocks Claude agents.",
+      "San Francisco immersion (24–26 April 2026) and London retreat (6–10 June 2026): past.",
+      "Videos on hamstrings, flexibility science and 'Instability and Love: ... Addiction, and Recovery': borderline condition or recovery framing.",
+      "Practice with Jason on Glo: third-party platform."
+    ]
+  },
+  "images_final": true
+}

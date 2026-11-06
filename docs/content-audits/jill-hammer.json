@@ -1,0 +1,125 @@
+{
+  "healer": {
+    "healer_slug": "jill-hammer",
+    "location_source": "https://jillhammer.net/",
+    "create": {
+      "name": "Rabbi Jill Hammer",
+      "bio": "Rabbi Jill Hammer is a teacher, writer, ritualist and scholar of Jewish mysticism whose work is rooted in an earth-based, mythic reading of Jewish tradition. Ordained at the Jewish Theological Seminary in 2001, she also holds a doctorate in social psychology. At the Academy for Jewish Religion, a cross-denominational seminary in Yonkers, New York, she directs spiritual education and teaches midrash, mysticism and ritual. She co-founded the Kohenet movement, which trains Hebrew priestesses, and leads learning and ritual at its community, Beit Kohenet.\n\nHer approach brings sacred text together with poetry, storytelling and meditation. She teaches guided spirit journeys into biblical stories and myth, works with dreams as a spiritual practice through dream circles and private sessions, and creates seasonal and life-cycle ceremonies, from new-moon circles to weddings. She has written nine books, among them The Hebrew Priestess, on the history of Jewish women's spiritual leadership; Return to the Place, a study and practice guide to the early mystical text Sefer Yetzirah; Undertorah, a Kabbalah of dreams; and The Jewish Book of Days. She also visits congregations as a scholar-in-residence. Her home is in Manhattan, where she and her wife, Shoshana Jedwab, are raising their daughter.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local_online",
+      "city": "New York, New York",
+      "country": "United States",
+      "subjects": [
+        "mysticism",
+        "dreamwork",
+        "meditation"
+      ],
+      "website_url": "https://jillhammer.net",
+      "booking_url": "https://jillhammer.net/dreamwork/",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "contact@jillhammer.net",
+      "image_urls": [
+        "https://jillhammer.net/wp-content/uploads/2013/11/hammer1-r1-029-13.jpg",
+        "https://jillhammer.net/wp-content/uploads/2022/09/temp-jill-by-offering-stream-vik-iceland.jpeg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [
+    {
+      "title": "The Hebrew Priestess: Ancient and New Visions of Jewish Women's Spiritual Leadership",
+      "slug": "the-hebrew-priestess",
+      "author": "Jill Hammer",
+      "asin": "1934730467",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "Written with Taya Shere, a history of women's sacred roles in Jewish tradition, from biblical prophetesses to shrine-keepers, with practices for bringing that legacy into spiritual life today.",
+      "subjects": [
+        "mysticism",
+        "ancient-wisdom"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1934730467.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "Return to the Place: The Magic, Meditation, and Mystery of Sefer Yetzirah",
+      "slug": "return-to-the-place",
+      "author": "Jill Hammer",
+      "asin": "1934730068",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "Jill's translation of and commentary on Sefer Yetzirah, the ancient Book of Creation, with meditations that turn its letters, numbers and cosmology into contemplative practice.",
+      "subjects": [
+        "mysticism",
+        "meditation"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1934730068.01._SCLZZZZZZZ_.jpg"
+    }
+  ],
+  "courses": [
+    {
+      "title": "Beit Kohenet Dream Circle with Rabbi Jill Hammer",
+      "url": "https://www.beitkohenet.org/monthlycircles",
+      "description": "A monthly hour on Zoom that pairs teaching on Jewish dream traditions with a carefully held circle for sharing dreams and hearing one another's insights. Remaining dates in 2026 are 20 November and 18 December.",
+      "price": "$12-18 (sliding scale) per session",
+      "product_type": "course",
+      "start_date": "2026-11-20",
+      "end_date": "2026-12-18",
+      "subjects": [
+        "dreamwork",
+        "mysticism"
+      ],
+      "image": "http://static1.squarespace.com/static/64a845e89946257494ea5e30/t/657b3baf4bf40c5c12d6b30b/1702575023889/bkcreamgreen.jpg?format=1500w"
+    },
+    {
+      "title": "Private Dreamwork Sessions",
+      "url": "https://jillhammer.net/dreamwork/",
+      "description": "A limited number of one-to-one appointments with Rabbi Jill for individuals or communities who want to explore dreams as a spiritual practice.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "dreamwork"
+      ],
+      "image": "https://i0.wp.com/jillhammer.net/wp-content/uploads/2022/09/trees-with-lights-for-shir.jpg?fit=1200%2C900&#038;ssl=1"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "pipelines-3",
+    "hub": "kripalu",
+    "rank": 251,
+    "hub_url": "https://kripalu.org/people/rabbi-jill-hammer",
+    "tier_evidence": "No YouTube channel or social accounts linked from her site; no readable counts → local_hero on readable evidence (newsletter shows 714 blog followers)",
+    "email": "yes",
+    "email_source": "https://jillhammer.net/contact/",
+    "contact_form_url": "https://jillhammer.net/contact/",
+    "bio_check": "OK: no 8-word runs against 17 source(s)",
+    "flags": [
+      "No Kripalu mention on own site: listed without the link.",
+      "Kripalu lists rabbijillhammer.com; it redirects to jillhammer.net, which was used. Kripalu's kohenet.org link now redirects to an unrelated domain (multicastmedia.com) and was not used; her site names beitkohenet.org.",
+      "Partly academic: she directs spiritual education at a rabbinical seminary (AJR) and publishes academic articles; the listing rests on her mysticism, dreamwork and ritual teaching.",
+      "Dream Circle runs at Beit Kohenet, where her site says she is Director of Learning and Ritual (counts as her own programme under the resident-teacher rule).",
+      "Regional: Manhattan, New York (her about page says she lives there).",
+      "No videos: none linked from her site and none found in one web search; tier evidence is thin.",
+      "ISBNs: The Hebrew Priestess from the Amazon link on her book page; Return to the Place ISBN 9781934730065 (converted to 1934730068) from the Ben Yehuda Press book page. The Hebrew Priestess was co-written with Taya Shere (author set to Jill only).",
+      "Beit Kohenet also runs a Jewish Witches membership and folk-magic classes led by others; not part of this listing."
+    ],
+    "left_out": [
+      "Sefer Yetzirah course at Beit Kohenet (8 Oct to 10 Dec 2026): already under way.",
+      "Undertorah (Ayin Press shop link, no ISBN on her page), The Jewish Book of Days, Sisters at Sinai and other books: no ISBN on the pages read.",
+      "Scholar-in-residence topics: speaker booking, not a public offering.",
+      "Spirit Journey page: describes guided visualisations but no current class or recording.",
+      "Mystics' Room interviews: written interviews with guests."
+    ]
+  },
+  "images_final": true
+}

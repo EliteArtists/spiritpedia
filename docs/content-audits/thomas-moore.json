@@ -1,0 +1,196 @@
+{
+  "healer": {
+    "healer_slug": "thomas-moore",
+    "location_source": null,
+    "no_public_base": "His own about page (thomasmooresoul.com/about) says only that he has lived in New Hampshire for thirty years; no town is published (the bookshop he uses for signed copies, in Peterborough, is not stated as his home).",
+    "create": {
+      "name": "Thomas Moore",
+      "bio": "Thomas Moore wrote Care of the Soul, the 1992 book that brought the old idea of tending the soul back into everyday conversation and stayed on the New York Times list for most of a year. In his youth he spent years in a Catholic religious order and trained in composing music; afterwards he earned a doctorate in religious studies at Syracuse, taught at university, and trained as a psychotherapist in the tradition of C. G. Jung and James Hillman. He has since written some thirty books.\n\nHis work weaves together spirituality, Greek myth, depth psychology and the arts, and he puts imagination and images at the centre of inner life. Rather than fixing problems, he encourages people to give their ordinary lives more depth: through work, love, ageing, religion of one's own making, and attention to dreams and beauty. He has written fresh translations of the Gospels with commentary, books on silence and emptiness, and a new book on Thoreau. He lectures widely, often online, and teaches Imaginal Psychology, a series of six-week online courses on the soul, myth and archetypes, from his home in New Hampshire.",
+      "tier": "luminary",
+      "entity_type": "individual",
+      "availability": "worldwide",
+      "city": null,
+      "country": null,
+      "subjects": [
+        "spirituality",
+        "mysticism",
+        "ancient-wisdom"
+      ],
+      "website_url": "https://www.thomasmooresoul.com/",
+      "booking_url": "https://www.thomasmooresoul.com/courses",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": "https://twitter.com/thomasmooreSoul",
+      "tiktok_url": null,
+      "contact_email": null,
+      "image_urls": [
+        "https://images.squarespace-cdn.com/content/v1/61ae75a0fdb4d93654034af6/34eda120-87e5-4cb9-8b1a-3d952fc0f347/thomas.moore_.high_.res_.6-1100x1646.jpg",
+        "https://images.squarespace-cdn.com/content/v1/61ae75a0fdb4d93654034af6/5d4a3e59-163a-4caa-8644-cc3ffebf9f44/thomas.moore_.high_.res_-1100x735.jpg",
+        "https://images.squarespace-cdn.com/content/v1/61ae75a0fdb4d93654034af6/b7eaf3df-382e-401d-9bcd-8b62f9e9e8fb/thomas.moore_.high_.res_.3-1100x1646.jpg"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "kripalu",
+      "role": "instructor"
+    },
+    {
+      "hub": "omega-institute",
+      "role": "instructor"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Thomas Moore ~ Soul Therapy",
+      "url": "https://www.youtube.com/watch?v=VNlInSfq40s",
+      "subjects": [
+        "spirituality",
+        "mysticism"
+      ],
+      "channel": "Banyen Books & Sound"
+    }
+  ],
+  "books": [
+    {
+      "title": "The Eloquence of Silence: Discovering the Power of Emptiness",
+      "slug": "the-eloquence-of-silence",
+      "author": "Thomas Moore",
+      "asin": "1608688666",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "Draws on Taoist, Buddhist and Christian sources to suggest that emptiness and quiet are not a lack but something to welcome, and that letting go of striving can make life lighter.",
+      "subjects": [
+        "mysticism",
+        "spirituality"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1608688666.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "Ageless Soul: The Lifelong Journey Toward Meaning and Joy",
+      "slug": "ageless-soul",
+      "author": "Thomas Moore",
+      "asin": "1250135818",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "Looks at growing older as a chance to become more fully oneself rather than a loss, with reflections on friendship, purpose, memory and the inner life in later years.",
+      "subjects": [
+        "soul-purpose",
+        "spirituality"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1250135818.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "Gospel: The Book of Mark",
+      "slug": "gospel-the-book-of-mark",
+      "author": "Thomas Moore",
+      "asin": "1594736308",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "A fresh translation of Mark with commentary that sets aside doctrinal readings and reads the text as a radical picture of how to live, open to readers of any tradition.",
+      "subjects": [
+        "spirituality",
+        "ancient-wisdom"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1594736308.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "Gospel: The Book of Matthew",
+      "slug": "gospel-the-book-of-matthew",
+      "author": "Thomas Moore",
+      "asin": "1594736200",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "His translation of Matthew with spiritual and psychological notes, bringing out the universal meaning of familiar passages and key words.",
+      "subjects": [
+        "spirituality",
+        "ancient-wisdom"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1594736200.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "The Book of Job",
+      "slug": "the-book-of-job-thomas-moore",
+      "author": "Thomas Moore",
+      "asin": "1573226742",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "An edition of the biblical Book of Job with his introduction, reading the story of loss and questioning through the lens of the soul.",
+      "subjects": [
+        "spirituality",
+        "ancient-wisdom"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1573226742.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "The Soul of Christmas",
+      "slug": "the-soul-of-christmas",
+      "author": "Thomas Moore",
+      "asin": "1632531208",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "A short book on the images of the Christmas story, from the divine child to the star, as symbols with meaning for people of any faith or none.",
+      "subjects": [
+        "spirituality",
+        "mysticism"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1632531208.01._SCLZZZZZZZ_.jpg"
+    }
+  ],
+  "courses": [
+    {
+      "title": "Imaginal Psychology: online course series",
+      "url": "https://www.thomasmooresoul.com/courses",
+      "description": "A sequence of six online courses, each six weeks long, on the soul, Jung and Hillman, Greek myth, dreams, alchemy and the spiritual traditions. Each week brings short readings, a live talk with questions, and ongoing written conversation among participants; finishing all six earns his certificate.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "mysticism",
+        "ancient-wisdom",
+        "dreamwork"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/61ae75a0fdb4d93654034af6/2119bbfc-2673-4424-b1d0-2e9e53a9ed47/Sheen+Falls+water.JPG"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "pipelines-3",
+    "hub": "sounds-true",
+    "rank": 228,
+    "hub_url": "https://www.soundstrue.com/collections/authors-thomas-moore",
+    "tier_evidence": "No YouTube channel; X (@thomasmooreSoul) and LinkedIn linked from his site but not readable without login → 0 readable followers → local_hero on counts",
+    "tier_override": "Editorial stature: author of Care of the Soul, a No. 1 New York Times bestseller (his own about page), with some thirty books; proposed luminary, owner decides.",
+    "email": "contact form",
+    "email_source": null,
+    "contact_form_url": "https://www.thomasmooresoul.com/press",
+    "bio_check": "OK: no 8-word runs against 7 source(s)",
+    "flags": [
+      "Tier: no readable follower counts at all; luminary proposed on editorial stature only, owner decides.",
+      "Kripalu and Omega Institute named on his own site's press page (thomasmooresoul.com/press) in a list of venues where he has given workshops and lectures; hub links added for both.",
+      "He is also a psychotherapist (Jung/Hillman); listed as a spiritual writer and teacher. His online course says it is partly a way of working with personal issues; kept as a study course on soul and myth.",
+      "Contact: 'Contact Me' form on his Press Kit & Inquiries page; no email published.",
+      "Course price not shown on his site (registration is on Ruzuku, not opened); Course 3 began on 6 Nov 2026, so the series is listed undated.",
+      "harpercollins.com returned 403 to us (6 Nov 2026) on the Care of the Soul page his site links: not retried, nothing taken.",
+      "Books: ISBNs/ASINs from links on his own Books page (Macmillan, SkyLight Paths, IndieBound and Amazon links, not opened), not confirmed elsewhere; covers from the Amazon image CDN.",
+      "Name: common name; the Care of the Soul author confirmed by his own site."
+    ],
+    "left_out": [
+      "Care of the Soul and other HarperCollins titles (Soul Mates, The Soul of Sex, Original Self, etc.): ISBN only on harpercollins.com, which refused us (403).",
+      "Dark Nights of the Soul: framed around depression (health rule).",
+      "Care of the Soul in Medicine and Soul Therapy (book): medicine/therapy-framed.",
+      "Dark Eros, The Planets Within, A Blue Fire (Hillman reader): academic/professional or edited works.",
+      "Imaginal Psychology Course 3 (from 6 Nov 2026): started before 10 Nov.",
+      "Events page: all past (latest June 2026)."
+    ]
+  },
+  "images_final": true
+}

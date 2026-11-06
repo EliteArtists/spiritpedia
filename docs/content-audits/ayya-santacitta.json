@@ -1,0 +1,199 @@
+{
+  "healer": {
+    "healer_slug": "ayya-santacitta",
+    "location_source": "https://alokavihara.org/ayya-santacitta/",
+    "create": {
+      "name": "Ayya Santacitta",
+      "bio": "Ayya Santacitta is an Austrian-born Theravada Buddhist nun (bhikkhuni) who lives and teaches at the Aloka Earth Room in San Rafael, California. Before ordaining she studied cultural anthropology, with a focus on dance, theatre and ritual, and worked in experimental dance theatre. Meeting Ajahn Buddhadasa in southern Thailand in 1988 turned her towards monastic life, and from the early 1990s until 2009 she trained in the Thai Forest lineage of Ajahn Chah at Amaravati and Chithurst in England. She has also studied in the Tibetan Shechen lineage since 2002. In 2009 she and Ayya Anandabodhi were invited to start Aloka Vihara, a community for Theravada nuns in San Francisco, and both took full bhikkhuni ordination in 2011.\n\nAfter the forest monastery the community later moved to was damaged by the 2021 Caldor Fire, she set up the Aloka Earth Room, a small temple space that brings together the Buddha's teaching and an awareness of the Earth as a living teacher. She gives a weekly online talk and guided meditation, hosts small in-person listening circles, and leads retreats in North America and Europe. What Are You Waiting For?, her book of dialogues on Buddhism with the journalist Irmgard Kirchner, has been published in English by Windhorse.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local_online",
+      "city": "San Rafael, California",
+      "country": "United States",
+      "subjects": [
+        "meditation",
+        "ancient-wisdom",
+        "mindfulness"
+      ],
+      "website_url": "https://alokavihara.org/",
+      "booking_url": "https://alokavihara.org/aloka-earth-room-events/",
+      "youtube_url": "https://www.youtube.com/@Alokavihara",
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": null,
+      "image_urls": [
+        "https://alokavihara.org/wp-content/uploads/2023/02/ayya-santacitta.jpg",
+        "https://www.dharma.org/wp-content/uploads/Ayya-Santacitta-April-2022-1.webp"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "insight-meditation-society",
+      "role": "instructor"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Iddhipada I: The Four Bases of Power ~ An Overview",
+      "url": "https://www.youtube.com/watch?v=K9iJsIa1dfo",
+      "subjects": [
+        "meditation",
+        "ancient-wisdom"
+      ],
+      "channel": "Aloka Earth Room "
+    },
+    {
+      "title": "Reframing Perception I",
+      "url": "https://www.youtube.com/watch?v=__kZFLK_kNQ",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "channel": "Aloka Earth Room "
+    },
+    {
+      "title": "New Ways of Looking: Earth As Teacher",
+      "url": "https://www.youtube.com/watch?v=Y4-wKQZW9zs",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "channel": "Aloka Earth Room "
+    },
+    {
+      "title": "The SOS (Sound of Silence) as a Doorway into the Web of Life",
+      "url": "https://www.youtube.com/watch?v=Ewa3rvYeuwI",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "channel": "Aloka Earth Room "
+    },
+    {
+      "title": "Moving at the Speed of Trust",
+      "url": "https://www.youtube.com/watch?v=bBIb6wRahPA",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "channel": "Aloka Earth Room "
+    },
+    {
+      "title": "A Life That Is Onward-Leading",
+      "url": "https://www.youtube.com/watch?v=mFOYn-9XQV8",
+      "subjects": [
+        "meditation",
+        "ancient-wisdom"
+      ],
+      "channel": "Aloka Earth Room "
+    }
+  ],
+  "books": [
+    {
+      "title": "What Are You Waiting For? A Conversation about Buddhism between Two Old Friends",
+      "slug": "what-are-you-waiting-for-a-conversation-about-buddhism-between-two-old-friends",
+      "author": "Irmgard Kirchner, Santacitta Bhikkhuni",
+      "asin": "1915342554",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "A book of conversations between Ayya Santacitta and an old friend from her youth, now a journalist, who puts sceptical questions to her about the Middle Way, emptiness, karma and mindfulness and about her own road to monastic life. It was first written in German and is aimed at readers new to Buddhism.",
+      "subjects": [
+        "ancient-wisdom",
+        "meditation"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1915342554.01._SCLZZZZZZZ_.jpg"
+    }
+  ],
+  "courses": [
+    {
+      "title": "Wednesday online meetings at the Aloka Earth Room",
+      "url": "https://alokavihara.org/earth-room-events/",
+      "description": "A weekly hour on Zoom with a short reflection and guided meditation, followed by an optional quarter-hour of practice discussion. Recordings go up afterwards on YouTube and Dharma Seed.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://yt3.googleusercontent.com/Nz5c0mWXtUKXI9a55XkB9P10zgLeK2sNi7WP7oNssf7GHIgT7O2DWDluwz0kXycXoImx7zNI3rg=s900-c-k-c0x00ffffff-no-rj"
+    },
+    {
+      "title": "Earth Listening Circles at the Earth Room",
+      "url": "https://alokavihara.org/in-person-events-earth-listening-circles-for-bay-area-locals/",
+      "description": "Small Saturday circles of up to ten people at the Earth Room in San Rafael, for listening inwardly, to each other and to the Earth. Places are by personal invitation after a short written request, and some meditation experience with body awareness is expected.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "image": "https://yt3.googleusercontent.com/Nz5c0mWXtUKXI9a55XkB9P10zgLeK2sNi7WP7oNssf7GHIgT7O2DWDluwz0kXycXoImx7zNI3rg=s900-c-k-c0x00ffffff-no-rj"
+    },
+    {
+      "title": "Monastic residential retreat at Progetto PienEssere, Graglia",
+      "url": "https://progettopienessere.org/ritiri-eventi/ritiro-con-venerabile-santacitta/",
+      "description": "A residential retreat in northern Italy, taught in English with Italian translation, listed on her schedule of European teaching for early 2027.",
+      "price": "Contact for pricing",
+      "product_type": "retreat",
+      "start_date": "2027-01-27",
+      "end_date": "2027-01-31",
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://progettopienessere.org/wp-content/uploads/2025/08/VenerabileSantacitta-1024x424.jpg"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Ayya Santacitta's talks on Dharma Seed",
+      "url": "https://dharmaseed.org/teacher/278/?language_filter=1",
+      "description": "Audio recordings of her weekly Earth Room talks and retreat teachings, free to stream or download.",
+      "featured": true,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://yt3.googleusercontent.com/Nz5c0mWXtUKXI9a55XkB9P10zgLeK2sNi7WP7oNssf7GHIgT7O2DWDluwz0kXycXoImx7zNI3rg=s900-c-k-c0x00ffffff-no-rj"
+    }
+  ],
+  "sprint": {
+    "sprint": "pipelines-3",
+    "hub": "ims",
+    "rank": 17,
+    "hub_url": "https://www.dharma.org/teacher/ayya-santacitta/",
+    "tier_evidence": "YouTube @Alokavihara (Aloka Earth Room's channel, which carries her weekly talks): subscriber count not found in the /videos page data (page served in Portuguese, 6 Nov 2026), unreadable; recent videos show tens to low hundreds of views; no personal social accounts found → 0 readable → local_hero",
+    "email": "contact form",
+    "email_source": null,
+    "contact_form_url": "https://alokavihara.org/contact-aloka-earth-room/",
+    "bio_check": "OK: no 8-word runs against 13 source(s)",
+    "flags": [
+      "Resident teacher rule: alokavihara.org is now the site of the Aloka Earth Room, which she founded and leads as spiritual director; its programmes are counted as hers and it is treated as her own site.",
+      "IMS named on: https://alokavihara.org/aloka-earth-room-events/ (monastic residential retreat at IMS, Barre, 26 March to 4 April 2027, and another with Ayya Anandabodhi in April 2028). Neither IMS retreat is linked from her page, so neither is listed as an offering.",
+      "No published email of her own: the site has only a contact form (with a sum to solve); a Belgian contact's address on the Europe page is for one event and is not used.",
+      "YouTube channel @Alokavihara is the community's channel, not a personal one; it is the listing's channel in practice because her events page says her Wednesday talks are recorded there. Subscriber count unreadable. Videos chosen from the most recent 30 (all about 50 to 56 minutes, oEmbed 200 with author Aloka Earth Room); a most-viewed sort was not available in the page served, so 'most-viewed' is not confirmed.",
+      "Possible link to another sprint teacher: Ayya Anandabodhi (rank 16) co-founded Aloka Vihara with her; they now lead separate communities and are separate listings.",
+      "Book ISBN from https://www.windhorsepublications.com/product/what-are-you-waiting-for-pb/ (ISBN-13 9781915342553, converted to ISBN-10 1915342554), not confirmed elsewhere. Cover on the publisher page.",
+      "The Earth Room's framing mentions 'healing ourselves, healing the Earth' and contemporary Indigenous wisdom traditions; this is ecological and spiritual, not a health claim. The 'Braided Wisdom Original Medicine' gathering is left out because of the word 'medicine'.",
+      "Prices are not published for any of her events (a monastic who teaches for donations, but the pages do not say so), so all say 'Contact for pricing'.",
+      "Photos: her profile photo on alokavihara.org (500 x 600) and the dharma.org photo from the same shoot (1558 x 2127 WebP); both looked at."
+    ],
+    "left_out": [
+      "Empty Cloud Monastery weekend retreat (9–11 April 2027): emptycloud.org's robots.txt says 'User-agent: *' 'Disallow: /' (read 6 Nov 2026), so its page was not opened or used.",
+      "Cloud Mountain retreat 6–12 Nov 2026 and Clear Mountain teaching 14 Nov 2026: start before or close to 10 Nov 2026 / no own page beyond the centre home page.",
+      "Ānāpānasati online course (Oct–Nov 2026): taught by Kittisaro, not her, and already started.",
+      "Other European dates (Salzburg, Krieglach, Vienna, Graz, Beatenberg, Scheibbs, Gent, Tilorien) and 2027–28 US dates (IMS, Spirit Rock, Napa, Sacramento, Mountain Stream, Big Bear, Sacred Mountain Sangha): no own event page linked, a German-language event whose title I could not confirm, or Spirit Rock (not opened).",
+      "Braided Wisdom Original Medicine gathering: 'medicine' in the title.",
+      "German edition 'Fang einfach an' (Edition Steinrich): the English edition is listed instead."
+    ],
+    "held": "Both photos failed in the ingest dry run (6 Nov 2026) with 'unreachable (UND_ERR_SOCKET)': alokavihara.org and dharma.org dropped the ingest's connection, though both loaded with curl minutes earlier. The ingest then fell back to the @Alokavihara YouTube avatar (a community channel picture, not checked as her face); I put my two checked photos back. Not re-run, per the brief."
+  }
+}

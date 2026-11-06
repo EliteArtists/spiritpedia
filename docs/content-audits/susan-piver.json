@@ -1,0 +1,245 @@
+{
+  "healer": {
+    "healer_slug": "susan-piver",
+    "location_source": null,
+    "no_public_base": "Her own site (openheartproject.com about, contact and home pages) gives no city or region; the Open Heart Project is an online sangha and her contact page is a form only.",
+    "create": {
+      "name": "Susan Piver",
+      "bio": "Susan Piver is a Buddhist meditation teacher and writer whose practice has its roots in the Nyingma school of Tibetan Buddhism, where her principal guide has been Tulku Thondup Rinpoche. She began meditating in 1993, took refuge two years later, completed a Buddhist seminary programme in 2004 and was authorised to teach meditation the following year. In the early 2010s she started the Open Heart Project, an online sangha that has grown to many thousands of members around the world.\n\nShe teaches meditation as a spiritual path rather than a self-improvement technique, and applies the dharma to everyday questions of love, creativity and fear. Her many books include Start Here Now, The Four Noble Truths of Love, The Buddhist Enneagram and How Not to Be Afraid of Your Own Life, and her recent Buddhism Beyond Belief series, which began with Inexplicable Joy on the Heart Sutra, now includes Inexplicable Magic. Through the sangha she leads a weekly dharma gathering and online retreats, alongside daily live sittings with other teachers, and she also hosts writing and meditation retreats in person and a podcast.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "worldwide",
+      "city": null,
+      "country": null,
+      "subjects": [
+        "meditation",
+        "mindfulness",
+        "conscious-relationships"
+      ],
+      "website_url": "https://openheartproject.com/",
+      "booking_url": "https://openheartproject.com/open-heart-project/",
+      "youtube_url": null,
+      "instagram_url": "https://instagram.com/susan.piver/",
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": null,
+      "image_urls": [
+        "https://openheartproject.com/wp-content/uploads/2024/07/SusanPiver2023-69-scaled.jpg",
+        "https://openheartproject.com/wp-content/uploads/2023/05/Susan_Porch.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [
+    {
+      "title": "Start Here Now: An Open-Hearted Guide to the Path and Practice of Meditation",
+      "slug": "start-here-now",
+      "author": "Susan Piver",
+      "asin": "1611802679",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "A beginner's handbook to sitting meditation, covering posture, working with thoughts and how to keep going, set within the wider Buddhist view of the path.",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1611802679.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "Inexplicable Magic: Meditation for Mystics",
+      "slug": "inexplicable-magic",
+      "author": "Susan Piver",
+      "asin": "1736943952",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "Explores seven principles of spiritual practice and how they can turn ordinary life, from housework to relationships and money, into ground for awakening. Part of her Buddhism Beyond Belief series.",
+      "subjects": [
+        "meditation",
+        "mysticism",
+        "spiritual-awakening"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1736943952.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "Inexplicable Joy: On the Heart Sutra",
+      "slug": "inexplicable-joy",
+      "author": "Susan Piver",
+      "asin": "1736943936",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "A short, readable commentary on the Heart Sutra, one of the best-known texts of Mahayana Buddhism, opening its teaching on emptiness for modern practitioners.",
+      "subjects": [
+        "non-duality",
+        "meditation"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1736943936.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "The Four Noble Truths of Love: Buddhist Wisdom for Modern Relationships",
+      "slug": "the-four-noble-truths-of-love",
+      "author": "Susan Piver",
+      "asin": "1732277605",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "Applies the Buddha's first teaching to partnership, suggesting that accepting the shifting nature of a relationship is what lets it stay alive.",
+      "subjects": [
+        "conscious-relationships",
+        "meditation"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1732277605.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "The Buddhist Enneagram: Nine Paths to Warriorship",
+      "slug": "the-buddhist-enneagram",
+      "author": "Susan Piver",
+      "asin": "173694391X",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "Brings together the Enneagram personality types and Tibetan Buddhist teachings, showing how each type's habits can become a doorway to wisdom.",
+      "subjects": [
+        "spirituality",
+        "shadow-work"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/173694391X.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "How Not to Be Afraid of Your Own Life",
+      "slug": "how-not-to-be-afraid-of-your-own-life",
+      "author": "Susan Piver",
+      "asin": "0312355971",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "An early book that uses meditation and Buddhist ideas to help readers meet uncertainty with an open heart instead of bracing against it.",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/0312355971.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "The Hard Questions: 100 Essential Questions to Ask Before You Say \"I Do\"",
+      "slug": "the-hard-questions",
+      "author": "Susan Piver",
+      "asin": "0593418875",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "A set of searching questions for couples to work through together before committing, on everything from money and home to sex, work and faith.",
+      "subjects": [
+        "conscious-relationships"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/0593418875.01._SCLZZZZZZZ_.jpg"
+    }
+  ],
+  "courses": [
+    {
+      "title": "Open Heart Project Sangha",
+      "url": "https://openheartproject.com/open-heart-project/",
+      "description": "Her online meditation community: daily live sittings with Buddhist teachers, a weekly dharma gathering with Susan, a library of recorded practices and talks, peer practice groups and most online retreats included.",
+      "price": "$27/month or $270/year",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": null
+    },
+    {
+      "title": "Fearless Creativity: A Writing and Meditation Retreat",
+      "url": "https://www.dralamountain.org/program/fc227-fearless-creativity-a-writing-and-meditation-retreat/",
+      "description": "An in-person retreat with Susan at Drala Mountain Center in the Colorado Rockies, giving unbroken time to write and meditate in a supportive group. Bring a project or just the wish to write.",
+      "price": "Contact for pricing",
+      "product_type": "retreat",
+      "start_date": "2027-02-18",
+      "end_date": "2027-02-21",
+      "subjects": [
+        "meditation"
+      ],
+      "image": null
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "How to Set Up a Home Meditation Practice",
+      "url": "https://openheartproject.com/free-home-meditation-guide/",
+      "description": "A free guide, sent by email, to setting up a simple and lasting meditation routine at home.",
+      "featured": true,
+      "resource_type": "download",
+      "subjects": [
+        "meditation"
+      ],
+      "image": null
+    },
+    {
+      "title": "The Three Biggest Meditation Misconceptions",
+      "url": "https://openheartproject.com/free-guide-three-biggest-meditation-misconceptions/",
+      "description": "A free short guide clearing up common misunderstandings that make people give up on meditation.",
+      "featured": false,
+      "resource_type": "download",
+      "subjects": [
+        "meditation"
+      ],
+      "image": null
+    },
+    {
+      "title": "Meditation and Writing Retreat Weekend at Home",
+      "url": "https://openheartproject.com/free-guide-meditation-and-writing-retreat-weekend-at-home/",
+      "description": "A free plan for a self-led weekend at home that alternates sitting practice with writing time.",
+      "featured": false,
+      "resource_type": "download",
+      "subjects": [
+        "meditation"
+      ],
+      "image": null
+    },
+    {
+      "title": "Buddhism Beyond Belief with Susan Piver (podcast)",
+      "url": "https://podcasts.apple.com/us/podcast/buddhism-beyond-belief-with-susan-piver/id1798818779",
+      "description": "Her podcast on Buddhist teachings and practice as a living spiritual path.",
+      "featured": false,
+      "resource_type": "workshop",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "image": "https://openheartproject.com/wp-content/uploads/2024/07/SusanPiver2023-69-scaled.jpg"
+    }
+  ],
+  "sprint": {
+    "sprint": "pipelines-3",
+    "hub": "kripalu",
+    "rank": 119,
+    "hub_url": "https://kripalu.org/people/susan-piver",
+    "tier_evidence": "No YouTube channel linked from her site; Instagram (susan.piver) and Bluesky not readable without login → 0 readable → local_hero. Her about page states the Open Heart Project has 'nearly 20000 members' (published student count; doesn't change the tier).",
+    "email": "contact form",
+    "email_source": null,
+    "contact_form_url": "https://openheartproject.com/contact/",
+    "bio_check": "OK: no 8-word runs against 6 source(s)",
+    "flags": [
+      "No Kripalu mention on own site: listed without the link.",
+      "openheartproject.com robots.txt sets Crawl-delay: 30; respected for my fetches (31 s apart). Item images on that site set to null so the ingest doesn't hit it in parallel; the two healer photos are still probed by the ingest.",
+      "Drala Mountain Center (dralamountain.org) returned 406 for robots.txt; treated as blocked and not opened. Retreat title, dates and URL taken from her home page; price unread ('Contact for pricing').",
+      "Tier: counts couldn't be read for her main accounts (Instagram).",
+      "ISBNs from bookshop.org / barnesandnoble.com / amazon links on her own books page, not confirmed elsewhere; Amazon not opened.",
+      "Her substack (susanpiver.substack.com) is linked from Kripalu; substack not fetched.",
+      "No videos: her site links no YouTube channel."
+    ],
+    "left_out": [
+      "The Wisdom of a Broken Heart (book): subtitle frames it around turning breakup pain into 'healing'; borderline, left out.",
+      "Quiet Mind (Sakyong Mipham; she edited): not her own authored book.",
+      "Full Fathom Five (14 Nov 2026): led by Kevin Townley, not Susan.",
+      "Meditation & writing retreat early-bird note ('Only offered once in 2022'): stale page text."
+    ]
+  },
+  "images_final": true
+}

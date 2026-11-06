@@ -1,0 +1,75 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 1001,
+    "healer_slug": "stephen-cope"
+  },
+  "rows": [
+    {
+      "table": "videos",
+      "id": 8324,
+      "slug": "what-is-your-sacred-duty",
+      "title": "What is your sacred duty?"
+    },
+    {
+      "table": "videos",
+      "id": 8325,
+      "slug": "stephen-cope-soul-friends",
+      "title": "Stephen Cope: Soul Friends"
+    },
+    {
+      "table": "videos",
+      "id": 8326,
+      "slug": "stephen-cope-the-dharma-in-difficult-times",
+      "title": "Stephen Cope ~ The Dharma in Difficult Times"
+    },
+    {
+      "table": "books",
+      "id": 2153,
+      "slug": "the-great-work-of-your-life",
+      "title": "The Great Work of Your Life: A Guide for the Journey to Your True Calling"
+    },
+    {
+      "table": "books",
+      "id": 2154,
+      "slug": "yoga-and-the-quest-for-the-true-self",
+      "title": "Yoga and the Quest for the True Self"
+    },
+    {
+      "table": "books",
+      "id": 2155,
+      "slug": "the-wisdom-of-yoga",
+      "title": "The Wisdom of Yoga: A Seeker's Guide to Extraordinary Living"
+    },
+    {
+      "table": "books",
+      "id": 2156,
+      "slug": "the-dharma-in-difficult-times",
+      "title": "The Dharma in Difficult Times: Finding Your Calling in Times of Loss, Change, Struggle, and Doubt"
+    },
+    {
+      "table": "books",
+      "id": 2157,
+      "slug": "soul-friends-stephen-cope",
+      "title": "Soul Friends: The Transforming Power of Deep Human Connection"
+    },
+    {
+      "table": "books",
+      "id": 2158,
+      "slug": "dharma-dog",
+      "title": "Dharma Dog: When Your Spiritual Teacher Has Four Legs"
+    },
+    {
+      "table": "courses",
+      "id": "1281fd59-2cec-416c-88ba-269a12af069a",
+      "slug": "your-true-calling-essential-teachings-of-yoga-to-find-your-path-in-the-world",
+      "title": "Your True Calling: Essential Teachings of Yoga to Find Your Path in the World"
+    },
+    {
+      "table": "hub_teachers",
+      "id": "338804ac-e3dc-459f-bcb0-435b21c65ab4",
+      "title": "stephen-cope teaches at Kripalu Center for Yoga & Health"
+    }
+  ],
+  "at": "2026-11-06T15:41:32.306Z"
+}

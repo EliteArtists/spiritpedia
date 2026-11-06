@@ -1,0 +1,51 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 959,
+    "healer_slug": "kamala-masters"
+  },
+  "rows": [
+    {
+      "table": "videos",
+      "id": 8102,
+      "slug": "how-to-be-ok-no-matter-what",
+      "title": "How To Be OK No Matter What"
+    },
+    {
+      "table": "videos",
+      "id": 8103,
+      "slug": "kamala-masters-equanimity-resting-the-mind-before-it-falls-into-extremes",
+      "title": "Kamala Masters | Equanimity : Resting The Mind Before It Falls Into Extremes"
+    },
+    {
+      "table": "free_resources",
+      "id": "29d5eb36-f04c-4aa0-ad4f-b9a9a7aaca60",
+      "slug": "vipassana-metta-at-home",
+      "title": "Vipassana Metta at Home"
+    },
+    {
+      "table": "free_resources",
+      "id": "4d490de7-5b13-45a2-8391-73db5111003d",
+      "slug": "guided-metta-meditation",
+      "title": "Guided Metta Meditation"
+    },
+    {
+      "table": "free_resources",
+      "id": "7438624c-346c-4f1e-a773-d6c15a4ca22d",
+      "slug": "understanding-equanimity-guided-meditation",
+      "title": "Understanding Equanimity – Guided Meditation"
+    },
+    {
+      "table": "free_resources",
+      "id": "dc9fe786-fe6d-4bae-8620-f11a21b04dd2",
+      "slug": "guided-metta-for-turbulent-times",
+      "title": "Guided Metta for Turbulent Times"
+    },
+    {
+      "table": "hub_teachers",
+      "id": "322ee1f4-19be-4c0a-9aea-d1a34bc88ba6",
+      "title": "kamala-masters teaches at Insight Meditation Society"
+    }
+  ],
+  "at": "2026-11-06T14:17:57.717Z"
+}

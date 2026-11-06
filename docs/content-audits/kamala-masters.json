@@ -1,0 +1,134 @@
+{
+  "healer": {
+    "healer_slug": "kamala-masters",
+    "location_source": "https://vipassanametta.org/wp/teachers/",
+    "create": {
+      "name": "Kamala Masters",
+      "bio": "Kamala Masters has practised Buddhist meditation since the mid-1970s, mainly in the Burmese Theravada lineages that grew from Mahasi Sayadaw. Her early teachers were Anagarika Munindra and Sayadaw U Pandita, under whom she trained intensively in insight and loving-kindness practice, both as a laywoman and as a nun, in the United States, Australia and Burma; she now continues her practice with Sayadaw U Tejaniya. With her partner Steve Armstrong, a former monk and long-serving teacher in the same lineage, she founded the Vipassana Metta Foundation on Maui, where the two are the principal teachers.\n\nShe leads silent retreats at centres around the world and serves as one of the guiding teachers of the Insight Meditation Society in Barre, Massachusetts. Her teaching joins careful attention with warmth, aiming to make the Buddha's path feel practical and humane in ordinary life. Through the foundation she guides Vipassana Metta at Home, a weekly online sitting and talk with occasional half-day retreats, offered freely on a donation basis, and the foundation's website keeps a library of her recorded talks and guided meditations. She raised four children on Maui and has seven grandchildren.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "worldwide",
+      "city": "Kula, Hawaii",
+      "country": "United States",
+      "subjects": [
+        "meditation",
+        "mindfulness",
+        "spirituality"
+      ],
+      "website_url": "https://vipassanametta.org/wp/",
+      "booking_url": "https://vipassanametta.org/wp/vipassana-metta-at-home/",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "meditate@maui.net",
+      "image_urls": [
+        "https://vipassanametta.org/wp/wp-content/uploads/2017/02/Kamala-Masters-forweb.jpg"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "insight-meditation-society",
+      "role": "instructor"
+    }
+  ],
+  "videos": [
+    {
+      "title": "How To Be OK No Matter What",
+      "url": "https://www.youtube.com/watch?v=aiEOuDYc16M",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "channel": "10% Happier"
+    },
+    {
+      "title": "Kamala Masters | Equanimity : Resting The Mind Before It Falls Into Extremes",
+      "url": "https://www.youtube.com/watch?v=Z5TgQvHnNGc",
+      "subjects": [
+        "meditation"
+      ],
+      "channel": "Culture Exchange Blog"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [
+    {
+      "title": "Vipassana Metta at Home",
+      "url": "https://vipassanametta.org/wp/vipassana-metta-at-home/",
+      "description": "A weekly one-hour online gathering on Zoom with a guided sitting and a short talk or questions, plus half-day weekend retreats every month or so. It is offered on a donation basis, and recordings are kept for those who cannot join live.",
+      "featured": true,
+      "resource_type": "workshop",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://vipassanametta.org/wp/wp-content/themes/twentysixteen-child/images/header4.jpg"
+    },
+    {
+      "title": "Guided Metta Meditation",
+      "url": "https://vipassanametta.org/talks/20090929-Kamala_Masters-IMSFR-guided_metta_meditation.mp3",
+      "description": "An audio recording of Kamala leading a loving-kindness sitting, from the foundation's talk library. Free to stream or download.",
+      "featured": false,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://vipassanametta.org/wp/wp-content/uploads/2017/02/Kamala-Masters-forweb.jpg"
+    },
+    {
+      "title": "Understanding Equanimity – Guided Meditation",
+      "url": "https://vipassanametta.org/talks/20110812-Kamala_equanimity_guided_meditation.mp3",
+      "description": "A guided sitting on steadiness and balance of mind, recorded on retreat. One of several of her recordings freely available on the foundation's website.",
+      "featured": false,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://vipassanametta.org/wp/wp-content/uploads/2017/02/Kamala-Masters-forweb.jpg"
+    },
+    {
+      "title": "Guided Metta for Turbulent Times",
+      "url": "https://vipassanametta.org/wp/wp-content/KamalaMasters_GuidedMetta_20200605.mp4",
+      "description": "A video of Kamala guiding loving-kindness practice on Maui. A gentle way in for anyone new to metta.",
+      "featured": false,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://vipassanametta.org/wp/wp-content/uploads/2017/02/Kamala-Masters-forweb.jpg"
+    }
+  ],
+  "sprint": {
+    "sprint": "pipelines-3",
+    "hub": "ims",
+    "rank": 24,
+    "hub_url": "https://www.dharma.org/teacher/kamala-masters/",
+    "tier_evidence": "No social accounts of her own found on her site or in searches; no YouTube channel of her own → 0 readable → local_hero",
+    "email": "yes",
+    "email_source": "https://vipassanametta.org/wp/contact-us/",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 12 source(s)",
+    "flags": [
+      "Insight Meditation Society named on: https://vipassanametta.org/wp/teachers/ (guiding teacher at IMS, Barre).",
+      "Email is the Vipassana Metta Foundation's general inbox; she co-founded the foundation and is its principal teacher.",
+      "Teaching pair: Kamala Masters and Steve Armstrong co-found and lead the Vipassana Metta Foundation; one listing under Kamala (the list's name), Steve named in the bio.",
+      "Base: Kula, Maui (the foundation's P.O. Box town; the teachers page says she lives on Maui). Kula is a small upcountry community; please map it.",
+      "Regional: Maui, Hawaii, has few or no Spiritpedia teachers.",
+      "Three videos are on AudioBuddha, a third-party channel that posts dharma talks; she is the only speaker, but the upload may not be authorised by her. The other two are on 10% Happier and Culture Exchange Blog.",
+      "No follower counts found for a main account (she has none listed); tier set from 0 readable.",
+      "Only one usable photo (the other site photos are group or two-person shots); dharma.org headshot not used.",
+      "Lead, 6 Nov 2026: the three AudioBuddha videos were removed (third-party re-uploads, possibly unauthorised); 2 videos remain."
+    ],
+    "left_out": [
+      "All 2026 retreats on her schedule page (Spirit Rock April, Cloud Mountain June and September, IMS August): dated and already past.",
+      "Fireside Chat with Kamala Masters & Sharon Salzberg (Be Here Now Network): Sharon Salzberg is the host; left out to keep to talks where Kamala is the main speaker.",
+      "Essential Mindfulness module video (IMS, 4 min): a course promo, and the course itself is not on her site.",
+      "Steve Armstrong's talks and the Burma Schools Project: his work, not hers."
+    ]
+  },
+  "images_final": true
+}

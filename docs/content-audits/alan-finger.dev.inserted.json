@@ -1,0 +1,34 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 998,
+    "healer_slug": "alan-finger"
+  },
+  "rows": [
+    {
+      "table": "videos",
+      "id": 8322,
+      "slug": "alan-finger-ishta-diksha",
+      "title": "Alan Finger ISHTA Diksha"
+    },
+    {
+      "table": "books",
+      "id": 2140,
+      "slug": "chakra-yoga-alan-finger",
+      "title": "Chakra Yoga"
+    },
+    {
+      "table": "courses",
+      "id": "d043afc5-de6e-40f3-83a0-22776a1377e2",
+      "slug": "ishta-dinacharya-retreat-with-alan-and-sarah-finger",
+      "title": "ISHTA Dinacharya Retreat with Alan and Sarah Finger"
+    },
+    {
+      "table": "courses",
+      "id": "085c18fc-62ed-4bdd-a681-23d3d794e606",
+      "slug": "ishta-masters-program-yoga-through-the-lens-of-the-koshas",
+      "title": "ISHTA Masters Program: Yoga through the Lens of the Koshas"
+    }
+  ],
+  "at": "2026-11-06T15:41:12.860Z"
+}

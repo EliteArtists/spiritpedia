@@ -1,0 +1,140 @@
+{
+  "healer": {
+    "healer_slug": "jakusho-kwong",
+    "location_source": "https://www.smzc.org/contact",
+    "create": {
+      "name": "Jakusho Kwong-roshi",
+      "bio": "Jakusho Kwong-roshi is a Soto Zen teacher who founded Sonoma Mountain Zen Center, also called Genjoji, a lay practice centre high on Sonoma Mountain near Santa Rosa, California. Born in Santa Rosa in 1935 and raised in Palo Alto, he began sitting with Shunryu Suzuki-roshi at Sokoji in San Francisco in 1959, as one of his first students. Suzuki-roshi recognised him as an heir shortly before his death, and Hoitsu Suzuki-roshi, his teacher's son, completed the transmission in Japan in 1978. Kwong-roshi, his family and a handful of students then turned eighty-one acres of hillside into a residential Zen temple in his teacher's memory.\n\nThe centre keeps a traditional schedule built around zazen, or just sitting, with daily periods on site and on Zoom, monthly intensives, Saturday talks and temple stays. Since 2023 his son, Nyoze Kwong, has served as abbot, while Kwong-roshi, as founder, still gives sesshin talks and meets students for dokusan in person or online. Over the decades he has taught across America and Asia and in Poland and Iceland, where practice groups grew from his visits, and he has kept warm ties with teachers of other lineages and faiths. He is the author of No Beginning, No End and Mind Sky, and his recorded talks, Breath Sweeps Mind, came out on Sounds True.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local_online",
+      "city": "Santa Rosa, California",
+      "country": "United States",
+      "subjects": [
+        "meditation",
+        "spiritual-awakening",
+        "mindfulness"
+      ],
+      "website_url": "https://www.smzc.org/",
+      "booking_url": "https://www.smzc.org/online-zendo",
+      "youtube_url": "https://www.youtube.com/channel/UCrvwn0idss2vOd3ug-Vwu6g",
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "office@smzc.org",
+      "image_urls": [
+        "https://yt3.googleusercontent.com/ytc/AIdro_lGXWrf6MTHeBbzhHqrIPuccKIpXXXC48Q2hwRdbr0tig=s900-c-k-c0x00ffffff-no-rj"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [
+    {
+      "title": "Summer Ango Sesshin Dharma Talk \"Faith In Mind\" by Jakusho Kwong-roshi on September 18, 2026",
+      "url": "https://www.youtube.com/watch?v=R9bYMxBXXPU",
+      "subjects": [
+        "meditation",
+        "spiritual-awakening"
+      ],
+      "channel": "Sonoma Mountain Zen Center"
+    },
+    {
+      "title": "Sesshin Dharma Talk by Jakusho Kwong roshi on April 3, 2026",
+      "url": "https://www.youtube.com/watch?v=Pwik7RKLQd4",
+      "subjects": [
+        "meditation",
+        "spiritual-awakening"
+      ],
+      "channel": "Sonoma Mountain Zen Center"
+    },
+    {
+      "title": "Winter Ango Sesshin Dharma Talk by Jakusho Kwong roshi on February 20, 2026",
+      "url": "https://www.youtube.com/watch?v=9CyMb6VC8ao",
+      "subjects": [
+        "meditation",
+        "spiritual-awakening"
+      ],
+      "channel": "Sonoma Mountain Zen Center"
+    },
+    {
+      "title": "Saturday Community Talk by Jakusho Kwong roshi on November 15, 2025",
+      "url": "https://www.youtube.com/watch?v=c3i2SiEsO0c",
+      "subjects": [
+        "meditation",
+        "spiritual-awakening"
+      ],
+      "channel": "Sonoma Mountain Zen Center"
+    }
+  ],
+  "books": [],
+  "courses": [
+    {
+      "title": "Saturday Community: Meditation and Dharma Talk",
+      "url": "https://www.smzc.org/saturday-community",
+      "description": "A weekly morning of sitting, a talk and a vegetarian lunch at the temple, also open on Zoom, with meditation instruction beforehand for newcomers.",
+      "price": "$15 Admission",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://yt3.googleusercontent.com/ytc/AIdro_lGXWrf6MTHeBbzhHqrIPuccKIpXXXC48Q2hwRdbr0tig=s900-c-k-c0x00ffffff-no-rj"
+    },
+    {
+      "title": "Temple Stay",
+      "url": "https://www.smzc.org/temple-stay",
+      "description": "An overnight stay at the mountain temple, usually from a Friday, joining the sitting periods, services and formal meals of daily Zen life, with instruction in meditation and oryoki.",
+      "price": "Contact for pricing",
+      "product_type": "retreat",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://yt3.googleusercontent.com/ytc/AIdro_lGXWrf6MTHeBbzhHqrIPuccKIpXXXC48Q2hwRdbr0tig=s900-c-k-c0x00ffffff-no-rj"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Online Zendo: Daily Zazen on Zoom",
+      "url": "https://www.smzc.org/online-zendo",
+      "description": "The temple's morning and evening sitting periods, with walking meditation and chanting, streamed on Zoom from Monday to Saturday for anyone to join.",
+      "featured": true,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://yt3.googleusercontent.com/ytc/AIdro_lGXWrf6MTHeBbzhHqrIPuccKIpXXXC48Q2hwRdbr0tig=s900-c-k-c0x00ffffff-no-rj"
+    }
+  ],
+  "sprint": {
+    "sprint": "pipelines-3",
+    "hub": "sounds-true",
+    "rank": 296,
+    "hub_url": "https://www.soundstrue.com/collections/authors-jakusho-kwong-roshi",
+    "held": "No usable photo: Sonoma Mountain Zen Center's site is on Wix (static.wixstatic.com refuses our robots.txt request), the centre's YouTube avatar is its crest, and the only other photo found (Wikimedia Commons, Jakusho_Kwong.JPG) is 212 x 269 px, under the 300 px minimum. Books also had no ISBN on a page we may use. Plan kept for the owner to supply a photo.",
+    "tier_evidence": "Sonoma Mountain Zen Center YouTube (@sonomamountainzencenter, the centre's channel, not his own): subscriber count not shown in the page served (6 Nov 2026); no personal social accounts found → local_hero",
+    "email": "yes",
+    "email_source": "https://www.smzc.org/contact",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 6 source(s)",
+    "flags": [
+      "Email is the centre's general office inbox (office@smzc.org); he founded the centre, so it counts (brief: founder's centre inbox).",
+      "Since September 2023 his son Nyoze Kwong is abbot; Jakusho Kwong-roshi is listed as founder but still gives sesshin and Saturday talks (latest on the channel 18 Sep 2026) and offers dokusan in person or on Zoom (smzc.org/online-zendo).",
+      "Base is the centre's published address (Santa Rosa, California, city level only), as the centre he founded.",
+      "Regional: Santa Rosa / Sonoma County, California is outside the big coastal-city hubs.",
+      "Videos are from the centre's own channel, where he is the speaker.",
+      "Photo: none usable; see held. Wikimedia Commons photo found on en.wikipedia.org/wiki/Jakusho_Kwong is 212 px.",
+      "Name keeps 'Kwong-roshi' as he is known by it (centre's usage); slug jakusho-kwong.",
+      "Dry run: with no image_urls the ingest falls back to the centre's YouTube avatar, which is its crest, not him. Don't insert until a real photo is supplied."
+    ],
+    "left_out": [
+      "No Beginning, No End (Harmony/Random House, 2003) and Mind Sky (Wisdom Publications, 2022): sold in the centre's store but no ISBN on any page we opened; ISBNs seen only in search snippets (simonandschuster, booksellers), which don't count.",
+      "Breath Sweeps Mind (Sounds True audio): Sounds True is names only.",
+      "Sesshins and study groups on the event calendar: dated, mostly started or led by others.",
+      "Dokusan ($30 requested donation): a members' and practitioners' interview, not a standalone offering; mentioned in the bio instead."
+    ]
+  }
+}

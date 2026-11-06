@@ -1,0 +1,111 @@
+{
+  "healer": {
+    "healer_slug": "stephen-jenkinson",
+    "location_source": null,
+    "no_public_base": "His site (orphanwisdom.com) names only a region: the Orphan Wisdom School met in the Ottawa Valley, and the January 2027 session is at the 'Orphan Wisdom Hall, Ontario'. No town is published. Not guessed.",
+    "create": {
+      "name": "Stephen Jenkinson",
+      "bio": "Stephen Jenkinson is a Canadian teacher, author and storyteller whose work turns on dying, grief, elderhood and the place of ritual in a culture he sees as having lost its bearings. He studied theology at Harvard and social work in Toronto, earning a master's in each, and as a young man he served an apprenticeship with a master storyteller. For many years he sat with dying people and their families, directed a programme at a large Canadian hospital and taught at a medical school.\n\nIn 2010 he and his wife, Nathalie Roy, began the Orphan Wisdom School, which for fourteen years gathered students twice a year in Ontario and also in the Gulf Islands, Wales and Iceland. With the singer-songwriter Gregory Hoskins he created Nights of Grief and Mystery, a touring evening of songs, stories and ceremony that has travelled through North America, Europe and Australasia. His books include Die Wise, on dying well and the culture around it, Come of Age, on what real elderhood asks of us, and Trembling, Still, his most recent. He farms off-grid, builds traditional canoes and sculpts, and he still leads small in-person sessions at the Orphan Wisdom Hall in Ontario, now centred on ritual and ceremony.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "worldwide",
+      "city": null,
+      "country": null,
+      "subjects": [
+        "death-the-afterlife",
+        "spirituality",
+        "ancient-wisdom"
+      ],
+      "website_url": "https://orphanwisdom.com/",
+      "booking_url": "https://orphanwisdom.com/events/",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": null,
+      "image_urls": [
+        "https://orphanwisdom.com/wp-content/uploads/2025/09/HeatherPollock-OrphanWisdom-Stephen-9289-2-1-1.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [
+    {
+      "title": "Die Wise: A Manifesto for Sanity and Soul",
+      "slug": "die-wise",
+      "author": "Stephen Jenkinson",
+      "asin": "1583949739",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "His best-known book, drawing on years beside dying people to argue that dying well is a skill and a duty, and that how a culture handles death shapes how it lives.",
+      "subjects": [
+        "death-the-afterlife",
+        "spirituality"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1583949739.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "Come of Age: The Case for Elderhood in a Time of Trouble",
+      "slug": "come-of-age",
+      "author": "Stephen Jenkinson",
+      "asin": "1623172098",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "A reflection on the gap between growing old and becoming an elder, and on what genuine elders could offer a troubled time.",
+      "subjects": [
+        "spirituality",
+        "ancient-wisdom"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1623172098.01._SCLZZZZZZZ_.jpg"
+    }
+  ],
+  "courses": [
+    {
+      "title": "The Post, Then the Beam: The 2027 Boreal Session",
+      "url": "https://orphanwisdom.com/event/the-post-then-the-beam/",
+      "description": "A winter gathering at the Orphan Wisdom Hall exploring ritual as a practice and practice as a ritual, offered as a full week, a weekend, or a weekend livestream.",
+      "price": "$1,100 (full session); $200 (weekend); $180 (weekend livestream)",
+      "product_type": "retreat",
+      "start_date": "2027-01-12",
+      "end_date": "2027-01-17",
+      "subjects": [
+        "spirituality",
+        "ancient-wisdom"
+      ],
+      "image": "https://orphanwisdom.com/wp-content/uploads/2026/09/8D4937B5-C036-4897-AFD9-A070A5AF6321_1_105_c.png"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "pipelines-3",
+    "hub": "sounds-true",
+    "rank": 303,
+    "hub_url": "https://www.soundstrue.com/collections/authors-stephen-jenkinson",
+    "tier_evidence": "No personal social accounts or YouTube channel linked from orphanwisdom.com (home, about, contact) → no counts to read → local_hero",
+    "email": "contact form",
+    "email_source": null,
+    "contact_form_url": "https://orphanwisdom.com/contact/",
+    "bio_check": "OK: no 8-word runs against 10 source(s)",
+    "flags": [
+      "Queue duplicate: ranks 303 ('Stephen Jenkinson') and 304 ('Stephen Jenkinson Mts Msw') are the same person; one plan here, 304 skipped as a duplicate.",
+      "Health / psychedelics: his recent work and interviews centre on his own neurodegeneration (Parkinson's), including a September 2026 podcast titled 'Facing Mortality – Parkinson's, Ibogaine Therapy & the Art of Letting Go' featured on his home page, and his 2026 book Trembling, Still is about it. He does not offer ibogaine; the interview and the book were left out. Owner may want to look.",
+      "Regional: Ottawa Valley, Ontario (rural Canada), though no town is published.",
+      "Thin listing: 2 books and 1 offering (exactly at the ~3 item threshold); no videos or free resources usable.",
+      "Book ISBNs from North Atlantic Books' own pages (northatlanticbooks.com/shop/die-wise/ and /shop/come-of-age/), converted from ISBN-13; not confirmed elsewhere.",
+      "Prices written as published ('$1,100', '$200', '$180'); the page does not state the currency (the venue is in Canada).",
+      "availability set to worldwide because no town is published (local_online needs a city); he teaches in person in Ontario with a livestream option."
+    ],
+    "left_out": [
+      "Trembling, Still: The Awful Clarity of a Mind in Eclipse (2026): about his neurodegeneration; health rule.",
+      "Matrimony, Reckoning (with Kimberly Ann Johnson), A Generation's Worth: no ISBN on a page we may use (Matrimony is a Sounds True book).",
+      "Interviews page: recent interviews centre on Parkinson's and ibogaine; not used as a free resource.",
+      "Films (Griefwalker and others) and Nights of Grief and Mystery music: not teaching items in our formats; the Caldera tour (October 2026) is past.",
+      "The Scriptorium (thescriptorium.orphanwisdom.com): a separate subdomain, not opened."
+    ]
+  },
+  "images_final": true
+}

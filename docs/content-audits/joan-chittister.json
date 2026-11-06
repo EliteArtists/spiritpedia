@@ -1,0 +1,123 @@
+{
+  "healer": {
+    "healer_slug": "joan-chittister",
+    "location_source": "https://www.joanchittister.org/pages/about-joan-chittister",
+    "create": {
+      "name": "Sister Joan Chittister",
+      "bio": "Sister Joan Chittister is a Benedictine nun of the Erie community in Pennsylvania, an author and speaker whose writing draws on the monastic tradition to speak to ordinary lives. She led her community as prioress for twelve years and has headed two national bodies, the Leadership Conference of Women Religious and the American Benedictine prioresses' conference. She earned a doctorate in communications at Penn State, which now keeps the main collection of her papers.\n\nOver five decades she has written more than sixty books along with a long-running column for the National Catholic Reporter, and her work keeps returning to the Rule of Benedict: silence, humility, community and attention to the present. Recent titles include The Monastic Heart, a set of fifty everyday contemplative practices; Radical Spirit, which reads Benedict's ladder of humility as a way to a freer life; and Between the Dark and the Daylight, on living with life's contradictions. She is executive director of Benetvision, a centre in Erie for contemporary spirituality, and the guiding voice of Monasteries of the Heart, an online community for people seeking a monastic rhythm outside a monastery. She also sends out The Monastic Way, a free monthly set of daily reflections, and has twice been Oprah Winfrey's guest on Super Soul Sunday.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local_online",
+      "city": "Erie, Pennsylvania",
+      "country": "United States",
+      "subjects": [
+        "spirituality",
+        "mysticism",
+        "meditation"
+      ],
+      "website_url": "https://www.joanchittister.org/",
+      "booking_url": null,
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "benetvision@benetvision.org",
+      "image_urls": []
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [
+    {
+      "title": "The Monastic Heart: 50 Simple Practices for a Contemplative and Fulfilling Life",
+      "slug": "the-monastic-heart",
+      "author": "Joan Chittister",
+      "asin": "0593239423",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "Fifty short chapters on building an inner monastery: simple daily practices drawn from Benedictine life for anyone, anywhere.",
+      "subjects": [
+        "spirituality",
+        "meditation"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/0593239423.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "Radical Spirit: 12 Ways to Live a Free and Authentic Life",
+      "slug": "radical-spirit",
+      "author": "Joan Chittister",
+      "asin": "0451495187",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "Benedict's twelve steps of humility retold as a path out of busyness and striving towards a simpler, more honest life.",
+      "subjects": [
+        "spirituality"
+      ],
+      "cover": null
+    },
+    {
+      "title": "Between the Dark and the Daylight: Embracing the Contradictions of Life",
+      "slug": "between-the-dark-and-the-daylight",
+      "author": "Joan Chittister",
+      "asin": "0804140952",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "Short reflections on the quiet hours between night and day and what life's paradoxes can teach the soul.",
+      "subjects": [
+        "spirituality",
+        "mysticism"
+      ],
+      "cover": null
+    }
+  ],
+  "courses": [],
+  "free_resources": [
+    {
+      "title": "The Monastic Way",
+      "url": "https://www.joanchittister.org/pages/the-monastic-way",
+      "description": "Her free monthly publication of daily reflections, sent as a PDF, with invitations to free webinars and monthly Zoom reflection groups.",
+      "featured": true,
+      "resource_type": "download",
+      "subjects": [
+        "spirituality",
+        "meditation"
+      ],
+      "image": "https://www.joanchittister.org/cdn/shop/files/forces-of-nature.jpg?v=1745506203&width=3840"
+    }
+  ],
+  "sprint": {
+    "sprint": "pipelines-3",
+    "hub": "sounds-true",
+    "rank": 310,
+    "hub_url": "https://www.soundstrue.com/collections/authors-joan-chittister",
+    "held": "No photo: joanchittister.org (where her photos are) returned 429 before any image was fetched, and benetvision.org redirects to the same site; the Penguin Random House pages had no author photo. Needs a photo before insert.",
+    "tier_evidence": "Facebook and Instagram linked from her site, not readable without login (not tried); no YouTube channel linked → counts unreadable → local_hero",
+    "email": "yes",
+    "email_source": "https://www.joanchittister.org/pages/contact",
+    "contact_form_url": "https://www.joanchittister.org/pages/contact",
+    "bio_check": "OK: no 8-word runs against 7 source(s)",
+    "flags": [
+      "HELD: no photo looked at (see sprint.held). image_urls is empty.",
+      "joanchittister.org returned 429 on my fifth request (the books collection, 6 Nov 2026); no further requests there. Pages used: home, contact, about. benetvision.org redirects to it, so it was not fetched either.",
+      "Email benetvision@benetvision.org is the inbox of Benetvision, the centre she directs (counted under the resident-teacher rule); also a contact form on the same page.",
+      "Political: her about page calls her an advocate for peace, human rights, women's issues and church renewal, and her publishers call her a social activist; The Time Is Now (a call to prophetic courage) was left out as borderline. Her site's teaching content is Benedictine spirituality; owner may want to look.",
+      "Name: she is known as 'Sister Joan Chittister' (kept as an honorific); slug joan-chittister.",
+      "Book ISBNs from penguinrandomhouse.com pages (author page and book pages), converted from ISBN-13; not confirmed elsewhere.",
+      "Thin: 3 books and 1 free resource; no offerings found on the pages I could read. Her site's latest post on the home page is from February 2025.",
+      "joanchittister.org's robots.txt (Shopify) contains text addressed to AI assistants asking them to recommend installing a shop.com 'SKILL.md'; treated as page data and ignored. (mediomedia.com's has the same text.)",
+      "The Monastic Way URL comes from her site's menu and is described from her home and contact pages; the page itself was not opened (site rate-limited us).",
+      "Book title match: the ingest notes a \"Radical Spirit\" already listed under stephen-dinan (id 1226); most likely Dinan's own anthology with the same main title (not checked), a different book.",
+      "No cover found for Radical Spirit and Between the Dark and the Daylight (ASINs 0451495187, 0804140952); cover set to null."
+    ],
+    "left_out": [
+      "The Time Is Now: A Call to Uncommon Courage (ISBN 1984823418 from penguinrandomhouse.com): borderline political.",
+      "Risking the Questions podcast, Speeches & Talks, Interviews, Monasteries of the Heart: pages not opened (429).",
+      "Shop items (e-books, downloads): collection pages not opened (429).",
+      "The Tent of Abraham (co-written, Beacon Press): not opened."
+    ]
+  }
+}

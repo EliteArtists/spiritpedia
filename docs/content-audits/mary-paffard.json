@@ -1,0 +1,184 @@
+{
+  "healer": {
+    "healer_slug": "mary-paffard",
+    "location_source": "https://www.maryyoga.com/calendar/sarvangasana",
+    "create": {
+      "name": "Mary Paffard",
+      "bio": "Mary Paffard is a yoga teacher and teacher trainer whose practice began in Iyengar classes in London in the early 1970s. After moving to the United States in 1983 she trained at the Iyengar Institute in San Francisco, and in the years that followed Vipassana meditation, along with the gentler, inward-listening approach of teachers such as Angela Farmer and Victor van Kooten, changed the way she practised and taught. In Ukiah she helped found Yoga Mendocino, a community-run, non-profit studio, ran its teacher training for a decade, and has trained in Buddhist eco-chaplaincy; for many years she has also led the movement sessions on meditation retreats.\n\nHer classes pair close attention to posture and breath with a meditative, earth-centred outlook, and she draws on ecology, poetry and the arts as much as on yoga texts. She teaches live online classes several times a week, holds occasional local sessions in Mendocino County, and leads residential and outdoor retreats in the area, among them an off-grid meditation and yoga retreat on the land where she lives and a summer retreat in the Anderson Valley. She has kept up a long exchange with yoga and meditation practitioners in Cuba, and has lived for over forty years on a shared apple farm in Northern California.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local_online",
+      "city": "Yorkville, California",
+      "country": "United States",
+      "subjects": [
+        "yoga",
+        "meditation",
+        "mindfulness"
+      ],
+      "website_url": "https://www.maryyoga.com/",
+      "booking_url": "https://www.maryyoga.com/calendar",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "info@maryyoga.com",
+      "image_urls": [
+        "https://images.squarespace-cdn.com/content/v1/63758d49861c142544752035/e02c7ffd-3023-4f82-9bc5-9f626d30fc30/IMG_6570.jpeg?format=1000w"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Online Yoga Classes",
+      "url": "https://www.maryyoga.com/calendar/nov26",
+      "description": "Her live Zoom classes each month: Saturday sessions for more experienced students, Wednesday vinyasa and basics classes, a monthly gentle and restorative class, and a guest teacher's Tuesday class. Students can drop in, buy a month, or subscribe to get recordings as well.",
+      "price": "$20 USD drop-in; $60 USD per month; $50–$70 USD per month by subscription",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga"
+      ],
+      "image": "http://static1.squarespace.com/static/63758d49861c142544752035/6377cefac06f132ec0f98f03/6add27bb5f03f847f730c105/1792878739040/image.jpeg?format=1500w"
+    },
+    {
+      "title": "Sarvangasana: A Forum for Discovery",
+      "url": "https://www.maryyoga.com/calendar/sarvangasana",
+      "description": "An online session devoted to shoulderstand, mixing active practice with discussion of how and why the pose is done. It is free to her online subscribers and open to others who register.",
+      "price": "Free for online subscribers; others contact for pricing",
+      "product_type": "course",
+      "start_date": "2026-11-14",
+      "end_date": "2026-11-14",
+      "subjects": [
+        "yoga"
+      ],
+      "image": "http://static1.squarespace.com/static/63758d49861c142544752035/6377cefac06f132ec0f98f03/6a3454ce39b06c1cbaefd8ae/1790371730398/MP+Headstand+half+leg+-080.jpeg?format=1500w"
+    },
+    {
+      "title": "Off the Grid Outdoor Meditation and Yoga Retreat",
+      "url": "https://www.maryyoga.com/calendar/ptretreat27",
+      "description": "A small, silent spring retreat held outdoors on a shared homestead in Mendocino County, combining Insight meditation, hatha yoga and time in nature. Places are limited to twenty and the ground is rough in places.",
+      "price": "Contact for pricing",
+      "product_type": "retreat",
+      "start_date": "2027-04-21",
+      "end_date": "2027-04-25",
+      "subjects": [
+        "meditation",
+        "yoga",
+        "mindfulness"
+      ],
+      "image": "http://static1.squarespace.com/static/63758d49861c142544752035/6377cefac06f132ec0f98f03/6a1b320df15a761b22864a1b/1791921321753/unsplash-image-o7MAvPaGFhA.jpg?format=1500w"
+    },
+    {
+      "title": "Gray Bear: Presence in Yoga",
+      "url": "https://www.maryyoga.com/calendar/presence27",
+      "description": "A six-day residential yoga retreat at Gray Bear, opening with a day of conversation and then moving into partial silence, with morning asana, pranayama and gentler afternoon practice.",
+      "price": "Contact for pricing",
+      "product_type": "retreat",
+      "start_date": "2027-05-11",
+      "end_date": "2027-05-17",
+      "subjects": [
+        "yoga",
+        "meditation"
+      ],
+      "image": "http://static1.squarespace.com/static/63758d49861c142544752035/6377cefac06f132ec0f98f03/6a1b33e3eab6dd5168aa97a9/1789700676420/03driveway.jpg?format=1500w"
+    },
+    {
+      "title": "2027 Summer Retreat at Rivers Bend",
+      "url": "https://www.maryyoga.com/calendar/summer27",
+      "description": "A five-night residential yoga and meditation retreat at River's Bend near Philo in Mendocino County, with vegetarian meals, periods of silence and time in the redwood forest. A deposit secures a place.",
+      "price": "$600 USD deposit; contact for full price",
+      "product_type": "retreat",
+      "start_date": "2027-07-01",
+      "end_date": "2027-07-06",
+      "subjects": [
+        "yoga",
+        "meditation"
+      ],
+      "image": "http://static1.squarespace.com/static/63758d49861c142544752035/6377cefac06f132ec0f98f03/6a9c624ff87e8e149152312f/1790954430265/Drone-+Farmhouse.jpg?format=1500w"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Mary Paffard Yoga Podcast",
+      "url": "https://www.maryyoga.com/podcast",
+      "description": "A free library on her site of recorded yoga classes, meditations and reflections, from vinyasa sequences to poetry-led sittings.",
+      "featured": true,
+      "resource_type": "practice",
+      "subjects": [
+        "yoga",
+        "meditation"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/63758d49861c142544752035/1685512361738-RJOH5COQOCQPRTWZYAYP/image-asset.jpeg/"
+    },
+    {
+      "title": "Peace of Wild Things Meditation",
+      "url": "https://www.maryyoga.com/podcast/peace-wild-things",
+      "description": "A guided meditation built around a Wendell Berry poem about finding rest in the natural world.",
+      "featured": false,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "http://static1.squarespace.com/static/63758d49861c142544752035/644c3bd80509310e683bfca8/6476656c1e5d771994a3a0e4/1685481240375/unsplash-image-xg8z_KhSorQ.jpg?format=1500w"
+    },
+    {
+      "title": "Tonglen Reflection",
+      "url": "https://www.maryyoga.com/podcast/tonglen-relections",
+      "description": "A 17-minute practice of tonglen, the Tibetan practice of giving and taking, recorded as a year-end bonfire meditation.",
+      "featured": false,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation"
+      ],
+      "image": "http://static1.squarespace.com/static/63758d49861c142544752035/644c3bd80509310e683bfca8/647667b94d5f744d62510113/1685511951010/unsplash-image-xg8z_KhSorQ.jpg?format=1500w"
+    },
+    {
+      "title": "Make Yourself A Light",
+      "url": "https://www.maryyoga.com/podcast/make-yourself-light",
+      "description": "An 18-minute meditation woven around poetry.",
+      "featured": false,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation"
+      ],
+      "image": "http://static1.squarespace.com/static/63758d49861c142544752035/644c3bd80509310e683bfca8/647671286b3d26126ba6a24f/1685483994789/unsplash-image-xg8z_KhSorQ.jpg?format=1500w"
+    }
+  ],
+  "sprint": {
+    "sprint": "pipelines-3",
+    "hub": "ims",
+    "rank": 82,
+    "hub_url": "https://www.dharma.org/teacher/mary-paffard/",
+    "tier_evidence": "No YouTube channel found; no social accounts linked from her site that could be read without logging in (6 Nov 2026) → 0 readable → local_hero",
+    "email": "yes",
+    "email_source": "https://www.maryyoga.com/contact",
+    "contact_form_url": "https://www.maryyoga.com/contact",
+    "bio_check": "OK: no 8-word runs against 23 source(s)",
+    "flags": [
+      "No IMS mention on own site: listed without the link.",
+      "Political content: her blog carries some partisan posts among the yoga newsletters (e.g. /midterms on canvassing for a Democratic Senate candidate, /blog/cuba-and-the-elections, /blog/conversations-on-the-road-campaigning). Her work is plainly yoga and meditation, so she is kept; none of those pages is linked, and a human may want to confirm this is acceptable.",
+      "Base: the address shown on her own event pages is 'Yorkville, CA, 95494' (a PO box, shown in the map block of e.g. /calendar/sarvangasana). Yorkville is a small unincorporated community in Mendocino County, well under 5,000 people; recorded as published for mapping. Her local classes have been in Ukiah.",
+      "Regional: Mendocino County, California, outside the big US coastal cities.",
+      "Online classes include a Tuesday class taught by a guest teacher (Michelle Marlahan); the item is described as her class programme.",
+      "Email info@maryyoga.com is her studio's general inbox (mailto on the contact and about pages).",
+      "Photos: her own about-page photo (960 x 1280, seated, face partly in shadow) is the one kept. The dharma.org headshot (600 x 600, looked at, same woman) was dropped by the ingest dry run (dharma.org drops the ingest's connection)."
+    ],
+    "left_out": [
+      "Videos: no YouTube channel found on her site.",
+      "Books: none found.",
+      "Podcast episode 'Calm Adrenals' vinyasa: names a body organ in a health-like way; left out as borderline.",
+      "Celebrating the Winter Solstice (20 Dec 2026, SoBo Studio): no event page link in the calendar list, so no unique URL confirmed.",
+      "Free Thanksgiving Yoga Online (26 Nov 2026): a one-off free class, not a lasting resource.",
+      "One-2-One programme: the page describes a Fall 2025 run (Nov to Jan); not clearly current.",
+      "Cuba trips: no current dated programme found.",
+      "Political blog posts (see flags)."
+    ]
+  },
+  "images_final": true
+}

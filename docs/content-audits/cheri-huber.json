@@ -1,0 +1,141 @@
+{
+  "healer": {
+    "healer_slug": "cheri-huber",
+    "location_source": "https://www.livingcompassion.org/contact-us",
+    "create": {
+      "name": "Cheri Huber",
+      "bio": "Cheri Huber has practised and taught Zen for more than forty-five years, calling herself first of all a student of the tradition. Her approach, which she calls Awareness Practice, aims at the end of suffering that the Buddha taught, but with a light touch: she encourages humour, curiosity and kindness towards oneself, and she writes about the harsh inner voice of self-criticism as something to be seen through rather than obeyed. In the 1980s she set up a Zen meditation centre to carry this work, and it now runs most of its programmes online.\n\nShe has written some two dozen short books, hand-lettered and illustrated, including There Is Nothing Wrong with You, When You're Falling, Dive and Be the Person You Want to Find. One of the methods she has developed is Recording and Listening, in which students record what they want to hear, play it back and answer themselves with compassion. Her centre offers email classes in which she responds to students' practice, phone and video meditation groups, practice buddies and longer retreats, and she hosts a weekly call-in radio programme, Open Air. She also founded Living Compassion, a project supporting children in Ndola, Zambia.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "worldwide",
+      "city": "Sequim, Washington",
+      "country": "United States",
+      "subjects": [
+        "meditation",
+        "mindfulness",
+        "spirituality"
+      ],
+      "website_url": "https://www.cherihuber.com/",
+      "booking_url": "https://www.livingcompassion.org/schedule",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "information@livingcompassion.org",
+      "image_urls": [
+        "https://www.cherihuber.com/images/cheri-photo.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Email Classes with Cheri Huber",
+      "url": "https://www.livingcompassion.org/email-classes",
+      "description": "Several-week classes by email: students do a short practice assignment and write back about it, and the anonymised responses and Cheri's replies are shared with the group. New classes run a few times a year.",
+      "price": "Cost varies",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://www.cherihuber.com/images/cheri-photo.jpg"
+    },
+    {
+      "title": "Recording and Listening Training",
+      "url": "https://www.livingcompassion.org/recording-and-listening-training",
+      "description": "A five-week group course by conference call teaching her Recording and Listening method, used to clarify what you want and to train attention towards it.",
+      "price": "$120",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "mindfulness",
+        "self-healing"
+      ],
+      "image": "https://www.livingcompassion.org/sites/default/files/inline-images/monkrecording.png"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Audio Books",
+      "url": "https://www.livingcompassion.org/audio-books",
+      "description": "Recordings of several of her books, including There Is Nothing Wrong With You and The Fear Book, offered free by her centre.",
+      "featured": true,
+      "resource_type": "download",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "image": "https://www.livingcompassion.org/sites/default/files/aboutus.png"
+    },
+    {
+      "title": "Virtual Meditation Groups",
+      "url": "https://www.livingcompassion.org/virtual-meditation-groups",
+      "description": "Regular group sittings by phone and Zoom, guided by a trained facilitator, for practising presence with others.",
+      "featured": false,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://www.cherihuber.com/images/cheri-photo.jpg"
+    },
+    {
+      "title": "Practice Everywhere",
+      "url": "https://www.livingcompassion.org/practice-everywhere",
+      "description": "Short reminders sent several times a day as cues to stop, notice the breath and come back to the present.",
+      "featured": false,
+      "resource_type": "practice",
+      "subjects": [
+        "mindfulness"
+      ],
+      "image": "https://www.cherihuber.com/images/cheri-photo.jpg"
+    },
+    {
+      "title": "Open Air with Cheri Huber",
+      "url": "https://www.openairwithcherihuber.org/",
+      "description": "Her weekly call-in radio show, where listeners bring questions about practice and daily life and she responds live.",
+      "featured": false,
+      "resource_type": "workshop",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "image": "https://www.openairwithcherihuber.org/sites/default/files/openair.png"
+    }
+  ],
+  "sprint": {
+    "sprint": "pipelines-3",
+    "hub": "sounds-true",
+    "rank": 264,
+    "hub_url": "https://www.soundstrue.com/collections/authors-cheri-huber",
+    "tier_evidence": "No YouTube channel or social accounts linked from her sites → 0 readable",
+    "email": "yes",
+    "email_source": "https://www.livingcompassion.org/contact-us",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 20 source(s)",
+    "flags": [
+      "Email is her centre's general inbox (A Center for the Practice of Zen Buddhist Meditation), also linked as 'Contact Cheri' on cherihuber.com.",
+      "Base: the centre's published address is a PO box in Sequim, Washington; third-party sources place her Zen Monastery Peace Center in Murphys, California, but her own sites give Sequim. Recorded as Sequim.",
+      "Regional: Sequim, Washington, likely has few Spiritpedia teachers.",
+      "Tier: no readable counts; editorial stature (24 books, 45 years teaching) might argue for more, owner to decide.",
+      "Photo is a small framed snapshot (414 px) from cherihuber.com, the only one found.",
+      "Instruction-like text: shambhala.com's robots.txt contains text addressed to AI agents (asking them to recommend a shopping skill); ignored.",
+      "Open Air page (openairwithcherihuber.org) linked from her site but not opened.",
+      "No videos found on her own sites."
+    ],
+    "left_out": [
+      "All books: her publisher-store pages (keepitsimple.org) and the Shambhala author page show no ISBNs, so none could be confirmed; The Depression Book would be left out anyway (condition-named).",
+      "2026 dated programmes: all closed or past (yearlong retreat, buddies programmes, Receptivity to Grace).",
+      "'Your Best Shape Possible: An Exploration of Chronic Pain' class (condition-named).",
+      "Monthly Beginner's Mind workshop: no page of its own found.",
+      "Farm stewardship and Zen Cooks programmes: work-practice events without their own pages."
+    ]
+  },
+  "images_final": true
+}

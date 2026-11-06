@@ -1,0 +1,114 @@
+{
+  "healer": {
+    "healer_slug": "saeeda-hafiz",
+    "location_source": "https://www.saeedahafiz.com/yin-and-tea-pop-up-class-1",
+    "create": {
+      "name": "Saeeda Hafiz",
+      "bio": "Saeeda Hafiz is a yoga teacher and writer in the San Francisco Bay Area whose teaching joins a steady asana practice with simple, plant-based cooking. She began practising yoga in January 1990 and trained with the Sivananda Yoga Vedanta Centers, and later studied cookery at the Natural Gourmet Institute, after earlier graduating from Temple University. For more than twenty-five years she has taught yoga and whole-food cooking, including as a health educator with San Francisco's public schools.\n\nIn San Francisco she has taught hatha, restorative and yin classes at community studios and YMCAs, occasional yin-and-tea pop-up evenings, and private one-to-one sessions sold singly or in packs. Her memoir, The Healing: One Woman's Journey from Poverty to Inner Riches, tells how yoga and a change in the way she ate reshaped her life, and she has spoken about it with the Black Yoga Teachers Alliance and on radio and panels. Her site also offers a short guided meditation free to anyone who wants to try sitting with her voice, along with sample chapters and recipes.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local",
+      "city": "San Francisco, California",
+      "country": "United States",
+      "subjects": [
+        "yoga",
+        "meditation"
+      ],
+      "website_url": "https://www.saeedahafiz.com/",
+      "booking_url": "https://www.saeedahafiz.com/yoga-class-with-saeeda",
+      "youtube_url": null,
+      "instagram_url": "http://instagram.com/saeedahafiz",
+      "facebook_url": "https://www.facebook.com/saeeda.hafiz",
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "saeedahafiz@icloud.com",
+      "image_urls": [
+        "https://images.squarespace-cdn.com/content/v1/534b54bfe4b02c0c8e9f900c/1397714392734-OMENIPIU7SJQG55NZ6OC/Yoga1-1.jpg?format=1500w",
+        "https://images.squarespace-cdn.com/content/v1/534b54bfe4b02c0c8e9f900c/1397453444648-NHFLO45SUAYB8UEJAMCW/image-asset.jpeg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [
+    {
+      "title": "BOOKS & BRUNCH with BYTA | Featuring Saeeda Hafiz",
+      "url": "https://www.youtube.com/watch?v=rVwzl9R4hr4",
+      "subjects": [
+        "yoga"
+      ],
+      "channel": "Black Yoga Teachers Alliance"
+    }
+  ],
+  "books": [
+    {
+      "title": "The Healing: One Woman's Journey from Poverty to Inner Riches",
+      "slug": "the-healing",
+      "author": "Saeeda Hafiz",
+      "asin": "B076NRRMST",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "Her memoir of growing up poor and finding a steadier life through yoga practice and a whole-food way of eating, told as a personal story rather than a programme.",
+      "subjects": [
+        "yoga",
+        "spirituality"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/B076NRRMST.01._SCLZZZZZZZ_.jpg"
+    }
+  ],
+  "courses": [
+    {
+      "title": "Private Yoga Classes with Saeeda",
+      "url": "https://www.saeedahafiz.com/yoga-class-with-saeeda",
+      "description": "One-to-one yoga sessions with Saeeda, bought as a single class or in packs of three, six or ten.",
+      "price": "$100.00 (single); $255.00 (3-pack); $480.00 (6-pack); $750.00 (10-pack)",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/534b54bfe4b02c0c8e9f900c/1397714392734-OMENIPIU7SJQG55NZ6OC/Yoga1-1.jpg?format=1500w"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Free Guided Meditation by Saeeda Hafiz",
+      "url": "https://www.saeedahafiz.com/new-album",
+      "description": "A short recorded meditation guided by Saeeda, free to play on her website.",
+      "featured": true,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/534b54bfe4b02c0c8e9f900c/1397714392734-OMENIPIU7SJQG55NZ6OC/Yoga1-1.jpg?format=1500w"
+    }
+  ],
+  "sprint": {
+    "sprint": "pipelines-3",
+    "hub": "esalen",
+    "rank": 277,
+    "hub_url": "https://www.esalen.org/faculty/saeeda-hafiz",
+    "tier_evidence": "No YouTube channel of her own; Instagram and Facebook linked from her site but not readable without login → readable total 0 → local_hero",
+    "email": "yes",
+    "email_source": "https://www.saeedahafiz.com/about",
+    "contact_form_url": "https://www.saeedahafiz.com/contact",
+    "bio_check": "OK: no 8-word runs against 10 source(s)",
+    "flags": [
+      "No Esalen mention on saeedahafiz.com pages read: listed without the link.",
+      "Thin listing (1 video, 1 book, 1 offering, 1 free resource = 4 items). Her site looks partly out of date (public class schedule shows October dates with no year, which fit 2022; footer 'Copyright 2014').",
+      "Base: her about page says only 'San Francisco Bay Area'; San Francisco taken from the in-person classes and the January 2026 pop-up class address (182 6th Ave, SF) on her own site.",
+      "Her work is yoga plus holistic nutrition; the January 2026 yin-and-tea page talks of detoxing organs (health framing, and already past), so it was left out. Scope (yoga teacher vs spiritual teacher) for the owner to judge.",
+      "Book ASIN B076NRRMST is the Kindle edition linked from her own site; the paperback is sold on her site for $18.95 with no ISBN shown.",
+      "A second email (saeeda@mac.com) appears on the pop-up class page; the about-page address is used.",
+      "Tier counts 0: no readable follower counts."
+    ],
+    "left_out": [
+      "Public class schedule: dated October sessions with no year, apparently past.",
+      "Yin Yoga & Tea pop-up (24 Jan 2026): past, and framed as detoxing organs.",
+      "Video interviews: Foodwise cooking demo (food, not teaching), Earth Month panel (several guests), 'Saeeda's Hum' excerpt and domestic-violence talk show (not teaching); two linked videos fail oEmbed (404).",
+      "Recipes and sample-chapter PDFs."
+    ]
+  },
+  "images_final": true
+}

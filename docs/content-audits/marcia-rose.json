@@ -1,0 +1,144 @@
+{
+  "healer": {
+    "healer_slug": "marcia-rose",
+    "location_source": "https://mountainhermitage.org/",
+    "create": {
+      "name": "Marcia Rose",
+      "bio": "Marcia Rose is a Theravada Buddhist meditation teacher based in Taos, New Mexico, where she founded The Mountain Hermitage, a small organisation that runs long retreats for committed practitioners, as well as the local Taos Mountain Sangha. She has practised since 1970 with Asian and Western teachers, mainly in the Vipassana tradition of the Burmese Mahasi lineage and the Pa-Auk Forest Monastery, and Venerable Pa Auk Sayadaw authorised her to teach concentration, jhana and the brahma viharas. Alongside this she has studied Dzogchen with Tibetan teachers, among them Tsoknyi Rinpoche, Nyoshul Khen Rinpoche and Tulku Urgyen Rinpoche.\n\nFrom 1991 to 1995 she was resident teacher for the staff at the Insight Meditation Society in Barre, Massachusetts, and for some years she helped lead its annual three-month retreat. For over three decades she has taught insight, concentration and lovingkindness retreats in the United States and abroad, along with retreats linking meditation and the creative process. Her retreats in Taos are often long and silent and aimed at experienced students, and she also teaches online through the Hermitage's Sunday International Sangha, most recently a course on meeting life and death with presence. Many of her talks and written reflections are freely available on the Hermitage website.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local_online",
+      "city": "Taos, New Mexico",
+      "country": "United States",
+      "subjects": [
+        "meditation",
+        "ancient-wisdom",
+        "death-the-afterlife"
+      ],
+      "website_url": "https://mountainhermitage.org/",
+      "booking_url": "https://mountainhermitage.org/retreat-event-schedule/",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "hermitage@MountainHermitage.org",
+      "image_urls": [
+        "https://mountainhermitage.org/wp-content/uploads/2018/10/Marcia-at-FR-fuller.jpg"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "insight-meditation-society",
+      "role": "instructor"
+    }
+  ],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Sunday International Sangha: Immersion in Life & Death with Presence & Wisdom (2027)",
+      "url": "https://mountainhermitage.org/retreat-event-schedule/",
+      "description": "An online course with a closing weekend retreat, run through the Hermitage's Sunday International Sangha, that works with Buddhist reflections on impermanence and dying as a way of living more fully. Dates and details for the spring 2027 run are still to be announced.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "death-the-afterlife"
+      ],
+      "image": "https://mountainhermitage.org/wp-content/uploads/2017/01/Monk-in-forest-e1485399841986.jpg"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Mountain Hermitage Dharma Talks and Guided Meditations",
+      "url": "https://mountainhermitage.org/dharma-talks/",
+      "description": "The Hermitage's free archive of recorded talks and guided meditations from its retreats, many of them hers, to stream or download.",
+      "featured": true,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation",
+        "ancient-wisdom"
+      ],
+      "image": "https://mountainhermitage.org/wp-content/uploads/2018/10/Marcia-at-FR-fuller.jpg"
+    },
+    {
+      "title": "Immersion in Life & Death with Presence & Wisdom: recordings and practice notes",
+      "url": "https://mountainhermitage.org/2026/05/27/sunday-international-sangha-immersion-in-life-death-with-presence-wisdom-with-marcia-rose/",
+      "description": "Audio from her spring 2026 online course, with the at-home practice sheets that went with each week.",
+      "featured": false,
+      "resource_type": "workshop",
+      "subjects": [
+        "death-the-afterlife",
+        "meditation"
+      ],
+      "image": "https://mountainhermitage.org/wp-content/uploads/2018/10/Marcia-at-FR-fuller.jpg"
+    },
+    {
+      "title": "The Heart of the Matter: Metta & Mudita Online Retreat",
+      "url": "https://mountainhermitage.org/2025/04/01/sunday-international-sangha-the-heart-of-the-matter-metta-mudita-online-retreat-with-marcia-rose/",
+      "description": "Recordings from her 2025 online weekend on lovingkindness and sympathetic joy.",
+      "featured": false,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://mountainhermitage.org/wp-content/uploads/2018/10/Marcia-at-FR-fuller.jpg"
+    },
+    {
+      "title": "Death Awareness Practice",
+      "url": "https://mountainhermitage.org/wp-content/uploads/2026/07/DEATH-AWARENESS-PRACTICE.pdf",
+      "description": "A short printable guide to the classical Buddhist reflections on death that she teaches, for use in daily practice.",
+      "featured": false,
+      "resource_type": "download",
+      "subjects": [
+        "death-the-afterlife",
+        "meditation"
+      ],
+      "image": "https://mountainhermitage.org/wp-content/uploads/2018/10/Marcia-at-FR-fuller.jpg"
+    },
+    {
+      "title": "Marcia Rose on Living with Uncertainty and Impermanence",
+      "url": "https://mountainhermitage.org/2026/05/29/marcia-rose-on-living-with-uncertainty-and-impermanence/",
+      "description": "An essay from her series on impermanence, closing with suggested practices for everyday life.",
+      "featured": false,
+      "resource_type": "practice",
+      "subjects": [
+        "mindfulness",
+        "death-the-afterlife"
+      ],
+      "image": "https://mountainhermitage.org/wp-content/uploads/2017/10/Marcia-FR-flipped.jpg"
+    }
+  ],
+  "sprint": {
+    "sprint": "pipelines-3",
+    "hub": "ims",
+    "rank": 86,
+    "hub_url": "https://www.dharma.org/teacher/marcia-rose/",
+    "tier_evidence": "No YouTube channel or social accounts found on the Hermitage site (6 Nov 2026) → 0 readable → local_hero",
+    "email": "yes",
+    "email_source": "https://mountainhermitage.org/",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 8 source(s)",
+    "flags": [
+      "Resident teacher rule: she is founding and guiding teacher of The Mountain Hermitage (https://mountainhermitage.org/guiding-teacher/), so its site is treated as her own; its general inbox hermitage@MountainHermitage.org (footer of the home page) is used as her email.",
+      "IMS named on: https://mountainhermitage.org/guiding-teacher/ (resident teacher for IMS staff 1991-1995, teacher on the three-month retreat, visiting teacher at the Forest Refuge).",
+      "Base: the Hermitage is in Taos, New Mexico (home page: 'Offering Buddhist retreats in Taos, New Mexico'; postal address Ranchos de Taos). Regional: Taos, New Mexico, outside the big US coastal cities.",
+      "Only one current offering: the spring 2027 online course is announced on the schedule page without dates or its own page ('Stay tuned'), so the schedule page is used as its URL. Her October 2026 retreat had started and was waitlist only. The listing rests mainly on free talks and writings; a human may judge whether that is enough.",
+      "Subject death-the-afterlife used because her current teaching centres on Buddhist death awareness; no health claims involved.",
+      "Possible link to another sprint teacher: Brian Lesage (docs/content-audits/brian-lesage.json) teaches a 2027 Mountain Hermitage retreat.",
+      "Photo: the Hermitage's portrait of her (400 x 479); the dharma.org photo is the same picture, so only one is used.",
+      "The Immersion recordings link out to Dharma Seed (dharmaseed.org/retreats/6819), which was not opened; the Hermitage page is used."
+    ],
+    "left_out": [
+      "10-day Anapanasati / Concentration Retreat (20-30 October 2026): already started and waitlist only.",
+      "Finding Freedom Through Insight Meditation retreat (February 2027): taught by Brian Lesage, not her.",
+      "Videos: none found.",
+      "Books: none found."
+    ]
+  },
+  "images_final": true
+}

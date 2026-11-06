@@ -1,0 +1,139 @@
+{
+  "healer": {
+    "healer_slug": "miles-neale",
+    "location_source": "https://www.gradualpath.com/foundations-of-the-buddhist-path",
+    "create": {
+      "name": "Dr. Miles Neale",
+      "bio": "Dr. Miles Neale is a teacher of Tibetan Buddhism and a psychologist who has spent his career bringing the classical lam rim, the stage-by-stage path to awakening, into conversation with Western psychology. He trained for more than two decades under the Tibetan teacher Geshe Tenzin Zopa, practised as a psychotherapist in New York City for many years and has taught contemplative psychology at several medical schools. In 2018 he launched his book Gradual Awakening at a nunnery in Kathmandu during a pilgrimage, and the study group that grew out of that trip became the Gradual Path, the learning community he now leads with Dr. Emily Wolf.\n\nHis courses move in order through the traditional stages, from refuge and renunciation to compassion and finally tantric visualisation, and draw on Carl Jung and Joseph Campbell to help students meet their own shadow rather than bypass it. Most teaching is online, either as on-demand series or live cohorts, alongside a long certificate programme. He also guides group pilgrimages each year, among them an annual journey to the Tsum Valley in Nepal with his teacher and walking pilgrimages in Spain and Japan, and he is now based in Bali. His latest book is Return with Elixir.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "worldwide",
+      "city": "Bali",
+      "country": "Indonesia",
+      "subjects": [
+        "meditation",
+        "spiritual-awakening",
+        "shadow-work"
+      ],
+      "website_url": "https://www.gradualpath.com/",
+      "booking_url": "https://www.gradualpath.com/study",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "connect@milesneale.com",
+      "image_urls": [
+        "https://images.squarespace-cdn.com/content/v1/63dc2f38ae9e652bfc1bf9a7/88e4d507-d9af-4a14-bf5f-ff0042ff7fd2/_SRL2977.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Jung and Tibetan Buddhism: Transformation Without Bypassing",
+      "url": "https://www.gradualpath.com/jung-and-tibetan-buddhism",
+      "description": "A twelve-week live online course on Tuesday evenings, moving through the Tibetan path from foundations to compassion to tantra, with Jung's depth psychology used as a guard against spiritual bypassing. Sessions are recorded.",
+      "price": "$360 (early bird, pay in full) or 3 × $150",
+      "product_type": "course",
+      "start_date": "2027-01-19",
+      "end_date": "2027-04-06",
+      "subjects": [
+        "meditation",
+        "shadow-work",
+        "spiritual-awakening"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/63dc2f38ae9e652bfc1bf9a7/88e4d507-d9af-4a14-bf5f-ff0042ff7fd2/_SRL2977.jpg"
+    },
+    {
+      "title": "The Contemplative Studies Immersion & Certificate",
+      "url": "https://www.gradualpath.com/tibetanbuddhism",
+      "description": "His full on-demand curriculum: eight courses of lectures, readings and guided meditation workshops, about 160 hours in all, that work step by step through the lam rim with a certificate at the end.",
+      "price": "$600.00 USD",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "ancient-wisdom"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/63dc2f38ae9e652bfc1bf9a7/88e4d507-d9af-4a14-bf5f-ff0042ff7fd2/_SRL2977.jpg"
+    },
+    {
+      "title": "Foundations of the Buddhist Path",
+      "url": "https://www.gradualpath.com/foundations-of-the-buddhist-path",
+      "description": "A six-class on-demand introduction to the opening stages of the lam rim, co-hosted with Tibet House US, covering refuge, renunciation and the first steps of compassion.",
+      "price": "USD $99",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "spiritual-awakening"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/63dc2f38ae9e652bfc1bf9a7/88e4d507-d9af-4a14-bf5f-ff0042ff7fd2/_SRL2977.jpg"
+    },
+    {
+      "title": "Enter the Mandala: Tsum Valley Pilgrimage 2027",
+      "url": "https://gradualpath.wetravel.com/trips/enter-the-mandala-tsum-valley-2027-gradual-path-9257576846",
+      "description": "His annual pilgrimage to the Tsum Valley in Nepal with Geshe Tenzin Zopa, with study, meditation and visits to holy sites; pilgrims can trek or fly in. Currently waitlist only.",
+      "price": "Contact for pricing",
+      "product_type": "retreat",
+      "start_date": "2027-04-15",
+      "end_date": "2027-04-28",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/63dc2f38ae9e652bfc1bf9a7/88e4d507-d9af-4a14-bf5f-ff0042ff7fd2/_SRL2977.jpg"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Wisdom Keeper Podcast",
+      "url": "https://podcasts.apple.com/us/podcast/wisdom-keeper-podcast/id1605486380",
+      "description": "His free podcast, linked from the Gradual Path site, with talks and conversations on Tibetan Buddhism, psychology and pilgrimage.",
+      "featured": true,
+      "resource_type": "practice",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/63dc2f38ae9e652bfc1bf9a7/88e4d507-d9af-4a14-bf5f-ff0042ff7fd2/_SRL2977.jpg"
+    }
+  ],
+  "sprint": {
+    "sprint": "pipelines-3",
+    "hub": "sounds-true",
+    "rank": 142,
+    "hub_url": "https://www.soundstrue.com/collections/authors-miles-neale",
+    "held": "Psychedelics: his own therapy page (milesneale.com/therapy) lists 'post-psychedelic and post-pilgrimage integration' among his services, and his latest book Return with Elixir is pitched to 'psychonauts' and 'psychedelic wayfarers' and covers integration after psychedelic ceremony. Held for the owner under the psychedelics rule. Note also that much of his work is psychotherapy.",
+    "tier_evidence": "No own YouTube channel found; Instagram/Facebook not linked or not readable → 0 readable → local_hero",
+    "email": "yes",
+    "email_source": "https://www.gradualpath.com/return-with-elixir-book",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 12 source(s)",
+    "flags": [
+      "HELD: psychedelic integration offered as part of his therapy work (see sprint.held).",
+      "Therapy: he offers one-to-one 'Buddhist therapy' (trauma-informed psychotherapy) on milesneale.com; not listed as an item. His courses and pilgrimages are spiritual teaching.",
+      "Base: 'based in Bali, Indonesia' on his own course page; Bali is an island/province, not a town. Recorded as 'Bali'; please map.",
+      "Regional: Bali, Indonesia.",
+      "Email connect@milesneale.com is published on gradualpath.com (book page) and milesneale.com (therapy page).",
+      "kajabi-storefronts-production.kajabi-cdn.com (his course site's image host) returned 403 for robots.txt, so no images were taken from it; the photo is from his Squarespace site milesneale.com.",
+      "No hub (Kripalu, Esalen, Omega, IMS) named on his own sites; listed without a hub link. Tibet House US co-hosts one course (not a Spiritpedia hub).",
+      "Only one clear headshot found.",
+      "No videos: no YouTube channel of his own was found."
+    ],
+    "left_out": [
+      "Return with Elixir (book): aimed partly at psychedelic users and integration after psychedelic ceremony (psychedelics rule).",
+      "Gradual Awakening (book): no ISBN on his or a publisher page I could open (only a.co Amazon short links, not opened).",
+      "Advances in Contemplative Psychotherapy (co-edited): psychotherapy text.",
+      "Buddhist therapy sessions: psychotherapy, not spiritual teaching.",
+      "Trauma-Informed Dharma course: condition-led title.",
+      "Camino de Santiago (May 2027) and Kumano Kodo (Oct 2027) walking pilgrimages: run with Sacred Earth Journeys; no own page link found to use.",
+      "Mystical Japan Walking Tour (Oct 2026): sold out and past."
+    ]
+  }
+}

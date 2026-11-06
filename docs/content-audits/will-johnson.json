@@ -1,0 +1,101 @@
+{
+  "healer": {
+    "healer_slug": "will-johnson",
+    "location_source": "https://www.embodiment.net/about",
+    "create": {
+      "name": "Will Johnson",
+      "bio": "Will Johnson is a meditation teacher and writer whose work joins Buddhist sitting practice, the devotional practices of the Sufi poet Rumi and a lifetime's study of the body. After studying art and archaeology at Princeton and working as an art critic in New York, he moved to the west coast, took up Buddhist practice in 1972 and later trained in Rolfing, the hands-on method of structural bodywork. In the mid-1990s he founded the Institute for Embodiment Training, which he still runs.\n\nHis approach, which he calls Hollow Bamboo Dharma, treats posture as the doorway to meditation: an upright, balanced spine, a deeply relaxed body, and small, constant movements that follow the breath, so that sitting becomes alive rather than rigid. He teaches breathing through the whole body, soft open-eyed gazing practices and a set of what he calls somatic koans. With his wife and practice partner Coco he lives near Montezuma on Costa Rica's Nicoya peninsula, where they host students for individual self-retreats of one to three weeks, and he offers recorded retreats and consultations online. His many books include The Posture of Meditation, Breathing Through the Whole Body and several on Rumi.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local_online",
+      "city": "Delicias, Puntarenas",
+      "country": "Costa Rica",
+      "subjects": [
+        "meditation",
+        "mysticism",
+        "breathwork"
+      ],
+      "website_url": "https://www.embodiment.net/",
+      "booking_url": "https://www.embodiment.net/blank",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "will@embodiment.net",
+      "image_urls": []
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Urban Retreat (audio recordings)",
+      "url": "https://www.embodiment.net/blank",
+      "description": "Three evenings of recorded instruction from his in-person urban retreats: setting up the posture of meditation, breathing through the whole body, and working with thoughts and sensations while sitting. He suggests listening over three days as a private retreat.",
+      "price": "$50",
+      "product_type": "download",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "breathwork"
+      ]
+    },
+    {
+      "title": "7-Day Video Retreat",
+      "url": "https://www.embodiment.net/audios",
+      "description": "Video recordings of a seven-day retreat he taught on Zoom, each session two to three hours, moving from building a meditation seat through alignment, relaxation and whole-body breathing. A guide to kasina meditation is included.",
+      "price": "$250",
+      "product_type": "download",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "breathwork"
+      ]
+    },
+    {
+      "title": "Self-retreats at Bambu Hueco (Hollow Bamboo Retreat Center), Costa Rica",
+      "url": "https://www.embodiment.net/about",
+      "description": "Intensive individual retreats of seven to twenty-one days at the small centre he and his wife run near Montezuma, Costa Rica, for committed meditation students.",
+      "price": "Contact for pricing",
+      "product_type": "retreat",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation"
+      ]
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "pipelines-3",
+    "hub": "sounds-true",
+    "rank": 226,
+    "hub_url": "https://www.soundstrue.com/collections/authors-will-johnson",
+    "held": "Two reasons. (1) Psychedelics: the fifth 'koan' of his teaching (embodiment.net/sacraments) openly invites students to decide whether to include entheogens (cannabis, psilocybin, MDMA, mescaline, LSD) in practice, and he wrote Cannabis in Spiritual Practice (2018). (2) No usable photo: his site is on Wix, static.wixstatic.com refuses our robots.txt request, and no YouTube channel or permitted publisher photo was found. Owner to decide.",
+    "tier_evidence": "No social accounts linked from embodiment.net and no YouTube channel found → 0 readable followers → local_hero",
+    "email": "yes",
+    "email_source": "https://www.embodiment.net/locations",
+    "contact_form_url": "https://www.embodiment.net/contact-me",
+    "bio_check": "OK: no 8-word runs against 8 source(s)",
+    "flags": [
+      "HELD: entheogen 'Sacraments' koan and a cannabis book; no usable photo (Wix).",
+      "Psychedelic content: the Sacraments page and Cannabis in Spiritual Practice left out; the rest of his teaching is posture, breath and gazing meditation.",
+      "Base: he lives in Delicias, just outside Montezuma, on the Nicoya peninsula (about page); Delicias is a village, recorded as published for mapping. Regional: Costa Rica has few or no Spiritpedia teachers.",
+      "Email will@embodiment.net is published on his Newsletter page (URL /locations) as the address to write to.",
+      "Rolfing sessions are sold in his store: bodywork, not listed.",
+      "Tier 0: no readable accounts.",
+      "Name: common name; identity confirmed by his site listing his Sounds True audio course Awakening the Body (2011)."
+    ],
+    "left_out": [
+      "Books (The Posture of Meditation, Breathing Through the Whole Body, Eyes Wide Open, Rumi titles, The Radical Path of Somatic Dharma and others): no ISBNs on his site and no publisher page opened, since the plan is held.",
+      "Cannabis in Spiritual Practice and the Sacraments koan: psychedelic content.",
+      "Rolfing Session (store): bodywork.",
+      "Private Consultation and Embodiment Letters (store): no item URL or price visible in the page HTML.",
+      "Dancing into Dreamtime: a guitar album."
+    ]
+  }
+}

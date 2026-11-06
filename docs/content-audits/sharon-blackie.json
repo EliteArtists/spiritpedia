@@ -1,0 +1,237 @@
+{
+  "healer": {
+    "healer_slug": "sharon-blackie",
+    "location_source": null,
+    "no_public_base": "Her about page says only that she lives in Cumbria, in the far north of England (a county), and her contact page describes a valley by the Pennines; no town is published.",
+    "create": {
+      "name": "Dr. Sharon Blackie",
+      "bio": "Sharon Blackie is a British writer and teacher whose work brings together myth, folklore, psychology and the natural world. She trained first as a scientist, taking a degree in psychology and a doctorate in behavioural neuroscience, and later turned to Celtic and European story traditions. The Royal Society of Arts made her a Fellow, the UK Association of Jungian Analysts gave her honorary membership, and she teaches online for Pacifica Graduate Institute.\n\nShe is best known for If Women Rose Rooted, a 2016 book that reads British and Celtic myth as a guide for women's spiritual lives and their bond with the land; Hagitude and Wise Women carry that inquiry into the later decades of life, and Ripening (2026) asks what fairy tales offer in uncertain times. She leads talks, courses and retreats on what she calls the mythic imagination, has taught at Esalen, the Garrison Institute and the Rowe Center, and gives a TEDx talk on the theme. Her current projects are The Art of Enchantment, a newsletter and membership community with salons and short courses, and Nostos, a programme exploring older Western contemplative traditions alongside depth psychology. She lives in Cumbria.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "worldwide",
+      "city": null,
+      "country": null,
+      "subjects": [
+        "ancient-wisdom",
+        "mysticism",
+        "spirituality"
+      ],
+      "website_url": "https://sharonblackie.net/",
+      "booking_url": "https://sharonblackie.net/courses-events/",
+      "youtube_url": "https://www.youtube.com/@DrSharonBlackie",
+      "instagram_url": "https://www.instagram.com/sharonblackiemythmakings/",
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "sharon@sharonblackie.net",
+      "image_urls": [
+        "https://sharonblackie.net/wp-content/uploads/Sharon-Blackie-indoors-square-4.jpg",
+        "https://sharonblackie.net/wp-content/uploads/Sharon-bookshelves-BW-web.jpg"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "esalen",
+      "role": "instructor"
+    }
+  ],
+  "videos": [
+    {
+      "title": "The Mythic Imagination | Sharon Blackie | TEDxStormontSalon",
+      "url": "https://www.youtube.com/watch?v=f5-b2__qRM8",
+      "subjects": [
+        "ancient-wisdom",
+        "spirituality"
+      ],
+      "channel": "TEDx Talks"
+    },
+    {
+      "title": "Dr Sharon Blackie – Cultivating the Mythic Imagination",
+      "url": "https://www.youtube.com/watch?v=KD2GvV_KLv8",
+      "subjects": [
+        "ancient-wisdom",
+        "mysticism"
+      ],
+      "channel": "Dr Sharon Blackie"
+    },
+    {
+      "title": "If Women Rose Rooted – a gathering in The Bone Cave",
+      "url": "https://www.youtube.com/watch?v=tokLGa4-1iQ",
+      "subjects": [
+        "ancient-wisdom",
+        "spirituality"
+      ],
+      "channel": "Dr Sharon Blackie"
+    },
+    {
+      "title": "Word Magic with Sharon Blackie and David Abram – Embercombe Online",
+      "url": "https://www.youtube.com/watch?v=yQiY2FlGCYE",
+      "subjects": [
+        "ancient-wisdom",
+        "mysticism"
+      ],
+      "channel": "Dr Sharon Blackie"
+    },
+    {
+      "title": "Live chat with Sarah Wilson about fairytales and collapse",
+      "url": "https://www.youtube.com/watch?v=YRAidYjRR80",
+      "subjects": [
+        "ancient-wisdom"
+      ],
+      "channel": "Dr Sharon Blackie"
+    },
+    {
+      "title": "The Enchanted Life",
+      "url": "https://www.youtube.com/watch?v=Syt_G4eC78Y",
+      "subjects": [
+        "spirituality",
+        "mysticism"
+      ],
+      "channel": "Dr Sharon Blackie"
+    },
+    {
+      "title": "Foxfire, Wolfskin & other Stories of Shapeshifting Women",
+      "url": "https://www.youtube.com/watch?v=a4pjzOdUM6Q",
+      "subjects": [
+        "ancient-wisdom"
+      ],
+      "channel": "Dr Sharon Blackie"
+    }
+  ],
+  "books": [
+    {
+      "title": "If Women Rose Rooted",
+      "slug": "if-women-rose-rooted",
+      "author": "Sharon Blackie",
+      "asin": "1912836017",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "Her best-known book mixes memoir with British and Celtic myth to map a path for women back to a sense of belonging to the land. Each stage of the journey is framed through an old story.",
+      "subjects": [
+        "ancient-wisdom",
+        "spirituality"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1912836017.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "Hagitude: Reimagining the Second Half of Life",
+      "slug": "hagitude",
+      "author": "Sharon Blackie",
+      "asin": "1608688437",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "Drawing on myths and folk tales of older women, this book offers images of the elder years as a time of creativity, authority and depth rather than decline.",
+      "subjects": [
+        "ancient-wisdom",
+        "spirituality"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1608688437.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "Wise Women: A New Mythology for Older Women",
+      "slug": "wise-women",
+      "author": "Sharon Blackie",
+      "asin": "1608689662",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "A gathering of retold stories and reflections about women in later life, from wise old figures of folklore to the archetypes she sees as needed today.",
+      "subjects": [
+        "ancient-wisdom"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1608689662.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "The Enchanted Life: Unlocking the Magic of the Everyday",
+      "slug": "the-enchanted-life",
+      "author": "Sharon Blackie",
+      "asin": "1487004079",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "An invitation to live with more wonder, using myth, creativity and attention to place to recover a sense that the world around us is alive.",
+      "subjects": [
+        "spirituality",
+        "mysticism"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1487004079.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "Foxfire, Wolfskin and Other Stories of Shapeshifting Women",
+      "slug": "foxfire-wolfskin-and-other-stories-of-shapeshifting-women",
+      "author": "Sharon Blackie",
+      "asin": "1912836246",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "A collection of her own retellings of folk and fairy tales about women who change shape, each followed by a short reflection on what the tale can mean now.",
+      "subjects": [
+        "ancient-wisdom"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1912836246.01._SCLZZZZZZZ_.jpg"
+    }
+  ],
+  "courses": [
+    {
+      "title": "The Art of Enchantment (premium membership)",
+      "url": "https://theartofenchantment.org/",
+      "description": "Her online community and publication. Paid members join myth and fairy-tale salons, short courses and masterclasses, summer schools and a forum, with recordings and her archive.",
+      "price": "£7/month or £70/year",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "ancient-wisdom",
+        "mysticism"
+      ],
+      "image": "https://sharonblackie.net/wp-content/uploads/Sharon-Blackie-indoors-square-4.jpg"
+    },
+    {
+      "title": "Sisters of Root and Leaf: a women's retreat",
+      "url": "https://broughtonsanctuary.co.uk/retreat/sisters-of-root-and-leaf-a-womens-retreat-with-sharon-blackie/",
+      "description": "A residential women's retreat at Broughton Sanctuary in North Yorkshire. Through story, song and time on the land, participants explore the archetypal paths open to women in unsettled times, with folk singer Emily Portman as guest.",
+      "price": "Contact for pricing",
+      "product_type": "retreat",
+      "start_date": "2027-10-08",
+      "end_date": "2027-10-13",
+      "subjects": [
+        "ancient-wisdom",
+        "spirituality"
+      ],
+      "image": "https://broughtonsanctuary.co.uk/wp-content/uploads/2026/11/sisters-root-and-leaf-listing.jpg"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "pipelines-3",
+    "hub": "esalen",
+    "rank": 273,
+    "hub_url": "https://www.esalen.org/faculty/sharon-blackie",
+    "tier_evidence": "YouTube @DrSharonBlackie 2.39K subscribers (channel header, 6 Nov 2026); Instagram @sharonblackiemythmakings linked from her site but not readable without login; her site says The Art of Enchantment reaches over 60,000 people, which is a newsletter readership, not counted → readable total ~2.4k → local_hero",
+    "email": "yes",
+    "email_source": "https://sharonblackie.net/contact/",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 11 source(s)",
+    "flags": [
+      "Esalen named on: https://sharonblackie.net/about/ (taught at 'major retreat centres such as the Esalen Institute').",
+      "Email: her contact page writes it as sharon[at]sharonblackie.net (for interviews, lectures and general correspondence); written here with @. No contact form.",
+      "Tier: her Art of Enchantment newsletter is said to reach 60,000+, and she is a well-known author in her field; owner may consider an editorial override. Instagram unreadable.",
+      "Books: ASINs from the amazon.com links on her own book pages (Hagitude 1608688437, Wise Women 1608689662, The Enchanted Life 1487004079, Foxfire Wolfskin 1912836246); If Women Rose Rooted from the ISBN 9781912836017 on her page (converted to 1912836017). Not confirmed elsewhere.",
+      "Hagitude and Wise Women are about the later decades of life; her site says they reimagine the stories of midlife and menopause; menopause is kept out of the descriptions here.",
+      "Retreat price not on her page; the Broughton Sanctuary page was not opened.",
+      "The YouTube channel had no view counts shown for most videos; all 7 non-trailer uploads used except the oracle reel."
+    ],
+    "left_out": [
+      "Ripening (2026): no ISBN or store link on her page.",
+      "The Long Delirious Burning Blue: a novel.",
+      "Fairy Tale Heroine Oracle and Rooted Woman Oracle: Hay House decks (Hay House left out).",
+      "Nostos retreat at Broughton Sanctuary (15–20 Nov): year not stated on her page and nostos.institute not opened.",
+      "Redgrave Theatre talk (19 Oct): past.",
+      "Rooted Woman Oracle reel (1:13, under 2 minutes)."
+    ]
+  },
+  "images_final": true
+}

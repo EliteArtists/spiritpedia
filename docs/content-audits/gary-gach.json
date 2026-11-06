@@ -1,0 +1,112 @@
+{
+  "healer": {
+    "healer_slug": "gary-gach",
+    "location_source": "https://garygach.com/about-gg/e-v-e-n-t-s/",
+    "create": {
+      "name": "Gary Gach",
+      "bio": "Gary Gach is a San Francisco writer and Zen practitioner whose main teacher is the Vietnamese monk Thich Nhat Hanh, in whose core community he has been ordained. His path into meditation started early: a Quaker retreat in 1964, an introduction to Zen from Paul Reps, and zazen training in San Francisco under Dainin Katagiri Roshi, with encounters along the way with Alan Watts and Shunryu Suzuki Roshi.\n\nHe is best known for The Complete Idiot's Guide to Buddhism, which he organised as two halves, first the Buddha, his teaching and the community, then how the path plays out in relationships, work, food and culture. His later book, Pause … Breathe … Smile, treats those three words as a whole practice: pausing to set an intention, breathing to bring body and mind together, and smiling as a doorway to wisdom. Gach is also a poet and translator, has compiled a collection of Buddhist poems from the Beats to hip-hop, and has rendered the Persian poet Hafez into English. For many years he has hosted a small weekly mindfulness group in the Plum Village style, with sitting, walking and sharing, and he leads mindfulness sessions at conferences and gatherings.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local",
+      "city": "San Francisco, California",
+      "country": "United States",
+      "subjects": [
+        "meditation",
+        "mindfulness",
+        "spirituality"
+      ],
+      "website_url": "https://garygach.com/",
+      "booking_url": "https://garygach.com/contact/",
+      "youtube_url": "https://www.youtube.com/channel/UCzYbHU19dZYhsS_JwLsNSSQ",
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "gary.gach@gmail.com",
+      "image_urls": [
+        "https://garygach.com/wp-content/uploads/2016/10/yourphoto-2-300x200.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [
+    {
+      "title": "See for Yourself ~ Three Marks of Reality",
+      "url": "https://www.youtube.com/watch?v=vwMS30n_mKI",
+      "subjects": [
+        "spirituality",
+        "meditation"
+      ],
+      "channel": "Gary Gach"
+    },
+    {
+      "title": "Sound Meditation",
+      "url": "https://www.youtube.com/watch?v=D8DLQFenD54",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "channel": "Gary Gach"
+    },
+    {
+      "title": "Pause … Breathe … Smile (intro)",
+      "url": "https://www.youtube.com/watch?v=3fUCNV-x4Qc",
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "channel": "Gary Gach"
+    },
+    {
+      "title": "Have You Met Hafez?",
+      "url": "https://www.youtube.com/watch?v=ZurAq7135rA",
+      "subjects": [
+        "mysticism"
+      ],
+      "channel": "Gary Gach"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [
+    {
+      "title": "Zen Mindfulness Fellowship",
+      "url": "https://garygach.com/about-gg/e-v-e-n-t-s/",
+      "description": "A small weekly practice group in the Plum Village tradition, meeting at the University of San Francisco for sitting, walking meditation and sharing. Email Gary a day ahead for directions.",
+      "featured": true,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation",
+        "mindfulness",
+        "spirituality"
+      ],
+      "image": "https://garygach.com/wp-content/uploads/2016/10/traffic.sign_.moon_.jpg"
+    }
+  ],
+  "sprint": {
+    "sprint": "pipelines-3",
+    "hub": "sounds-true",
+    "rank": 271,
+    "hub_url": "https://www.soundstrue.com/collections/authors-gary-gach",
+    "tier_evidence": "YouTube @GaryGach: 33 subscribers, 13 videos → local_hero",
+    "email": "yes",
+    "email_source": "https://garygach.com/contact/",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 6 source(s)",
+    "flags": [
+      "Site garygach.com found in a search snippet and confirmed by opening it (author pages and contact page name him).",
+      "Email is published in obfuscated form ('gary [dot] gach [at] gmail [dot] com') on the contact page; decoded.",
+      "Site looks little-updated (posts 2016-2018, PHP warnings on pages); the practice group is described as 'resumed following the Lockdown', but its day differs between pages (Wednesdays at USF on the events page, Tuesday mornings on the contact page). Current status unconfirmed.",
+      "Only one usable photo, a small 300x200 headshot from his own site; the 2023 upload is a qigong flyer, not usable.",
+      "availability set to local (in-person San Francisco group, no online offerings).",
+      "Thin listing: no paid offerings and no confirmable ISBNs."
+    ],
+    "left_out": [
+      "All books (The Complete Idiot's Guide to Buddhism, Pause … Breathe … Smile, What Book!?, Hafez titles, Ko Un translations): his book pages link only to stores and show no ISBNs; Sounds True never fetched.",
+      "Longevity Stick Qi Gong sessions: the flyer on his site makes health claims (posture, circulation) and was a dated July series (health rule, past).",
+      "Past events on his events page (Bay Area Book Festival, book launches, Sacramento haiku playshop).",
+      "Short clips on his channel (stairwell, courtyard, 'IMG 1679', and similar)."
+    ]
+  },
+  "images_final": true
+}

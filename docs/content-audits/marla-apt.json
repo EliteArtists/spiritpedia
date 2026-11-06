@@ -1,0 +1,115 @@
+{
+  "healer": {
+    "healer_slug": "marla-apt",
+    "location_source": "https://yoganga.com/workshops-courses/",
+    "create": {
+      "name": "Marla Apt",
+      "bio": "Marla Apt is a senior certified Iyengar Yoga teacher based in Los Angeles. She began studying with B.K.S. Iyengar and his children Geeta and Prashant in India some thirty years ago, and has taught for more than a quarter of a century. Yoga Journal once picked her as one of twenty-one teachers likely to shape yoga's future. She has led the US national Iyengar association (IYNAUS) as its president, helped write its ethical guidelines and teaching standards, and sits on the board of Iyengar Yoga Therapeutics, a non-profit she helped form.\n\nShe runs live online asana classes three times a week at beginner, intermediate and mixed levels, keeps a library of recorded classes to rent, and leads study sessions for teachers working towards Iyengar certification. When in Los Angeles she teaches weekly classes at the Culver City Iyengar institute, and she travels to lead weekend workshops in the United States and Japan and residential retreats, including a summer week at Feathered Pipe Ranch in Montana.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local_online",
+      "city": "Los Angeles, California",
+      "country": "United States",
+      "subjects": [
+        "yoga"
+      ],
+      "website_url": "https://yoganga.com/",
+      "booking_url": "https://yoganga.com/schedule/",
+      "youtube_url": null,
+      "instagram_url": "https://www.instagram.com/marlaapt/",
+      "facebook_url": "https://www.facebook.com/marlaapt.yoga",
+      "twitter_url": "https://twitter.com/yoganga",
+      "tiktok_url": null,
+      "contact_email": "support@yoganga.com",
+      "image_urls": [
+        "https://yoganga.com/wp-content/uploads/2020/04/marla_2-768x512.png"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Live online Iyengar Yoga classes",
+      "url": "https://yoganga.com/schedule/",
+      "description": "Weekly live asana classes on Zoom: beginners on Tuesdays, intermediate on Thursdays and all levels on Sundays (Pacific time), booked through her class membership.",
+      "price": "Drop in: $18; 5 class pass: $81; Unlimited asana: $108/month",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://yoganga.com/wp-content/uploads/2020/04/marla_2-768x512.png"
+    },
+    {
+      "title": "Recorded class library",
+      "url": "https://yoganga.com/videos/",
+      "description": "Recordings of all her weekly online classes, for students who cannot attend live. Rent a single class or subscribe to the full library.",
+      "price": "Single class, 72-hour rental: $15; All videos, monthly unlimited: $108",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://yoganga.com/wp-content/uploads/2026/11/Urdhva-Prasarita-Padasana-90-Degrees-640x360.jpg"
+    },
+    {
+      "title": "Online Yoga Teacher Study Sessions",
+      "url": "https://yoganga.com/teacher-training/",
+      "description": "Sunday study groups for Iyengar teachers in training (Level 1) and certified teachers (Levels 2 and 3), focused on teaching skills and the syllabus. Recordings go to all who register.",
+      "price": "$75 for all 3 sessions. $30 for individual sessions",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://yoganga.com/wp-content/uploads/2020/04/marla_2-768x512.png"
+    },
+    {
+      "title": "Iyengar Yoga Retreat at Feathered Pipe Ranch, Montana (2027)",
+      "url": "https://featheredpipe.com/feathered_retreats/marla-apt-montana-iyengar-yoga-retreat-2027/",
+      "description": "Her week-long residential Iyengar intensive at Feathered Pipe Ranch near Helena, Montana.",
+      "price": "Contact for pricing",
+      "product_type": "retreat",
+      "start_date": "2027-07-17",
+      "end_date": "2027-07-23",
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://featheredpipe.com/wp-content/uploads/2026/10/KellyFogel-FeatheredPipe-MT-2026-7073_facebook.jpg"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "pipelines-3",
+    "hub": "esalen",
+    "rank": 279,
+    "hub_url": "https://www.esalen.org/faculty/marla-apt",
+    "tier_evidence": "No YouTube channel found; Instagram, Facebook and X linked from yoganga.com but not readable without login → readable total 0 → local_hero",
+    "email": "yes",
+    "email_source": "https://yoganga.com/schedule/",
+    "contact_form_url": "https://yoganga.com/contact/",
+    "bio_check": "OK: no 8-word runs against 8 source(s)",
+    "flags": [
+      "No Esalen mention on yoganga.com pages read: listed without the link.",
+      "Own site yoganga.com came from a search snippet; confirmed on the site itself (titled 'Yoganga - Marla Apt').",
+      "Email support@yoganga.com is her studio's support inbox, published on her schedule page for booking help and sliding-scale requests.",
+      "Photo: the only usable image of her on her site is a posed backbend shot (768x512), not a headshot; the site gives no caption, but it is on her own home page. Other site images are group or back views.",
+      "Her work is Iyengar asana; her about page mentions research on yoga for mental health and a therapeutics non-profit, and her in-studio schedule includes a class for injuries and conditions. Those were left out; the listing keeps to her general classes.",
+      "Feathered Pipe retreat: year taken from the retreat URL on her page (…retreat-2027); dates July 17–23 from her page; featheredpipe.com not opened, price not shown on her site.",
+      "Tier counts 0: no readable follower counts.",
+      "Thin on media: no videos or books of her own found."
+    ],
+    "left_out": [
+      "Tokyo workshop (23–25 Oct) and South Africa sadhana and safari (6–14 Nov, sold out): started before 10 Nov.",
+      "San Jose, Austin and Santa Barbara workshops and the Sonoma retreat: hosted on other studios' sites, year not stated.",
+      "Weekly classes at Iyengar Yoga Institute of Los Angeles, including the 'Specific Needs' class for injuries and conditions (health framing).",
+      "New Zealand teacher development: 2027 dates not set."
+    ]
+  },
+  "images_final": true
+}

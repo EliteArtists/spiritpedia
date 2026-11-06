@@ -1,0 +1,221 @@
+{
+  "healer": {
+    "healer_slug": "ethan-nichtern",
+    "location_source": "https://www.ethannichtern.com/about",
+    "create": {
+      "name": "Ethan Nichtern",
+      "bio": "Ethan Nichtern is a Buddhist teacher and writer from New York who presents classic Buddhist teaching in a direct, contemporary voice. He founded the Interdependence Project, a non-profit for secular Buddhist practice joined with the arts and social engagement, and has taught meditation and Buddhist psychology for many years in New York City and across North America and Europe. His books include The Road Home, a broad overview of the Buddhist path; The Dharma of The Princess Bride, which reads a much-loved film for lessons about friendship and relationships; One City, his first book on interdependence; and Confidence, an exploration of steadiness amid the eight worldly winds of gain and loss, praise and blame.\n\nMuch of his teaching now happens online. He leads a yearlong Buddhist studies programme of five six-week modules, taking students from the basics of the path through to emptiness and compassion, and he hosts The Road Home podcast, in which he talks with guests from the arts, science and spiritual life about practice in the real world. He also takes a small number of private students for at least six months of one-to-one meditation and study. He lives in Brooklyn with his daughter.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local_online",
+      "city": "Brooklyn, New York",
+      "country": "United States",
+      "subjects": [
+        "meditation",
+        "mindfulness",
+        "ancient-wisdom"
+      ],
+      "website_url": "https://www.ethannichtern.com/",
+      "booking_url": "https://www.ethannichtern.com/private-study",
+      "youtube_url": "https://www.youtube.com/@TheRoadHomewithEthanNichtern",
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "connect@ethannichtern.com",
+      "image_urls": [
+        "https://images.squarespace-cdn.com/content/v1/5eb3053c5415111622d166ac/232db15b-0df1-421c-909c-3b4b14648bbb/Ethan-Author+Photo+2023.jpg",
+        "https://images.squarespace-cdn.com/content/v1/5eb3053c5415111622d166ac/1588791488348-FLF6T3OL1PBDN3ZT3OOT/Ethan-Nichtern-36-FIX-e1501467874132.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [
+    {
+      "title": "A Buddhist Recipe For Confidence",
+      "url": "https://www.youtube.com/watch?v=ByREJXNRM2A",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "channel": "10% Happier"
+    },
+    {
+      "title": "Confidence: Holding Your Seat Through Life's Eight Worldly Winds – Talk with Ethan Nichtern",
+      "url": "https://www.youtube.com/watch?v=uo2qoDgU3Tw",
+      "subjects": [
+        "meditation",
+        "ancient-wisdom"
+      ],
+      "channel": "Rick Hanson"
+    },
+    {
+      "title": "The Dharma of The Princess Bride | Robert Wright & Ethan Nichtern [The Wright Show]",
+      "url": "https://www.youtube.com/watch?v=tSZsxOGeMjM",
+      "subjects": [
+        "conscious-relationships",
+        "spirituality"
+      ],
+      "channel": "NonzeroClips"
+    },
+    {
+      "title": "The Road Home with Ethan Nichtern | Ep. 88: Sharon Salzburg - Finding Stability in an Unstable World",
+      "url": "https://www.youtube.com/watch?v=l6tn-ElYSxs",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "channel": "The Road Home Podcast with Ethan Nichtern"
+    },
+    {
+      "title": "The Road Home with Ethan Nichtern | Ep. 90: Quitter's Day: Resolution, Intention and Aspiration",
+      "url": "https://www.youtube.com/watch?v=fgUIv02eHrs",
+      "subjects": [
+        "mindfulness",
+        "spirituality"
+      ],
+      "channel": "The Road Home Podcast with Ethan Nichtern"
+    },
+    {
+      "title": "The Road Home with Ethan Nichtern | Ep. 87: 2023 \"Wrapped\" - Contemplating & Reflecting on the Year",
+      "url": "https://www.youtube.com/watch?v=n1EAbiON0tk",
+      "subjects": [
+        "mindfulness"
+      ],
+      "channel": "The Road Home Podcast with Ethan Nichtern"
+    }
+  ],
+  "books": [
+    {
+      "title": "Confidence: Holding Your Seat Through Life's Eight Worldly Winds",
+      "slug": "confidence-holding-your-seat",
+      "author": "Ethan Nichtern",
+      "asin": "1608688542",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "Uses the Buddhist teaching on the eight worldly winds, the four pairs of opposites such as gain and loss or praise and blame, to show how to stay grounded in a shifting world. Funny and practical, with meditations along the way.",
+      "subjects": [
+        "meditation",
+        "ancient-wisdom"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1608688542.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "The Road Home: A Contemporary Exploration of the Buddhist Path",
+      "slug": "the-road-home-ethan-nichtern",
+      "author": "Ethan Nichtern",
+      "asin": "0374536716",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "A broad, readable map of the Buddhist path for modern practitioners, from meditation basics to compassion and engagement with the world. With a foreword by Sharon Salzberg.",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/0374536716.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "The Dharma of The Princess Bride",
+      "slug": "the-dharma-of-the-princess-bride",
+      "author": "Ethan Nichtern",
+      "asin": "0865477779",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "A playful look at friendship, love and relationship through Buddhist teachings, using the much-loved film as its frame.",
+      "subjects": [
+        "conscious-relationships",
+        "spirituality"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/0865477779.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "One City: A Declaration of Interdependence",
+      "slug": "one-city-a-declaration-of-interdependence",
+      "author": "Ethan Nichtern",
+      "asin": "0861715160",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "His first book, on the Buddhist idea of interdependence and what it means for how we live, consume and relate to one another.",
+      "subjects": [
+        "spirituality",
+        "mindfulness"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/0861715160.01._SCLZZZZZZZ_.jpg"
+    }
+  ],
+  "courses": [
+    {
+      "title": "Yearlong Buddhist Studies 2027",
+      "url": "https://www.amindful.world/yearlong-buddhist-studies",
+      "description": "A year of live online study of the Buddhist path in five six-week modules, meeting on Tuesday evenings, with small practice groups between sessions. Modules can also be taken one at a time.",
+      "price": "From $1,095.00 (full year, subsidised tier; standard $1495)",
+      "product_type": "course",
+      "start_date": "2027-01-26",
+      "end_date": "2027-12-07",
+      "subjects": [
+        "meditation",
+        "ancient-wisdom"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/6839ac718f962412dfb1b803/48c6f802-8287-48aa-8311-f2da87234868/A+MINDFUL+WORLD+-+STACKED+-+BLUE.png?format=1500w"
+    },
+    {
+      "title": "Private Study with Ethan Nichtern",
+      "url": "https://www.ethannichtern.com/private-study",
+      "description": "One-to-one meditation and study guidance over at least six months, meeting in New York City or online. One-off meetings are sometimes possible.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/5eb3053c5415111622d166ac/232db15b-0df1-421c-909c-3b4b14648bbb/Ethan-Author+Photo+2023.jpg"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "The Road Home Podcast",
+      "url": "https://www.ethannichtern.com/podcast",
+      "description": "His weekly podcast of conversations with guests from the arts, science and spiritual practice, exploring Buddhist teachings in everyday life.",
+      "featured": true,
+      "resource_type": "workshop",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/5eb3053c5415111622d166ac/65faf799-70bc-4463-b9af-4b2a74dc1c6f/The+Road+Home+podcast+artwork+FINAL.jpg"
+    }
+  ],
+  "sprint": {
+    "sprint": "pipelines-3",
+    "hub": "kripalu",
+    "rank": 121,
+    "hub_url": "https://kripalu.org/people/ethan-nichtern",
+    "tier_evidence": "YouTube 39 (@TheRoadHomewithEthanNichtern, header, 6 Nov 2026); no other social accounts linked from his site; substack not read → ~0 readable → local_hero",
+    "email": "yes",
+    "email_source": "https://www.ethannichtern.com/contact",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 14 source(s)",
+    "flags": [
+      "No Kripalu mention on own site: listed without the link.",
+      "Base recorded as published ('based in Brooklyn'); Brooklyn is a New York City borough, please map to New York.",
+      "Related to David Nichtern (rank 122): David is his father; separate teachers, separate listings.",
+      "Yearlong Buddhist Studies is hosted by A Mindful World (amindful.world), which his home page names as the 2027 host.",
+      "His own YouTube channel has only 39 subscribers; three videos are from other channels where he is the main speaker (10% Happier, Rick Hanson, The Wright Show clips).",
+      "ISBNs from his own book pages (bookshop links), not confirmed elsewhere.",
+      "Tier: editorial stature (four mainstream-published books, founder of the Interdependence Project) might argue for more; owner to decide."
+    ],
+    "left_out": [
+      "Guided meditations for 'Election Anxiety' and 'Compassion Meditation For Anxiety': condition-named / political.",
+      "Road Home episodes 'Coping Skills for the Apocalypse' and 'Is Dialogue Even Possible?': borderline political framing.",
+      "Thursday Morning Meditation Group: for paid Substack subscribers; Substack not opened.",
+      "Your Emoticons Won't Save You: novella/poetry, not teaching.",
+      "Free online gatherings on the events page: dated 2024–2025, past."
+    ]
+  },
+  "images_final": true
+}

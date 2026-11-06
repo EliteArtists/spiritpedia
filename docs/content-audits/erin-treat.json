@@ -1,0 +1,108 @@
+{
+  "healer": {
+    "healer_slug": "erin-treat",
+    "location_source": "https://www.vallecitos.org/guided-meditation-teachings/core-teachers/",
+    "create": {
+      "name": "Erin Treat",
+      "bio": "Erin Treat is a Buddhist meditation teacher in the Insight tradition who has practised for around thirty years. Since 2013 she has guided the teaching at Vallecitos, a wilderness retreat centre in the mountains of northern New Mexico, and for two decades she was among the leaders of the Durango Dharma Center's teaching council in Colorado. She sits on the Spirit Rock teachers' council and leads retreats there and at the Insight Meditation Society, and she has long studied the Diamond Approach of A. H. Almaas.\n\nThe land is central to how she teaches. Many of her retreats at Vallecitos take place in silence among forest and meadow, with nature treated as a teacher in its own right, and she pairs this with care for both personal and collective freedom. Her 2027 programme includes Land as Dharma Teacher with Brian Lesage, a retreat combining sitting practice and music with the singer Jennifer Berezan, and The Quiet Advantage, a five-day silent retreat for people carrying heavy responsibility at work, taught with Gullu Singh and Rolf Gates. Recordings of her talks are freely available through Dharma Seed. She lives in Durango, Colorado.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local",
+      "city": "Durango, Colorado",
+      "country": "United States",
+      "subjects": [
+        "meditation",
+        "mindfulness",
+        "spirituality"
+      ],
+      "website_url": "https://www.vallecitos.org/",
+      "booking_url": "https://www.vallecitos.org/retreats/1258/2027-retreat-schedule/",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "refuge@vallecitos.org",
+      "image_urls": [
+        "https://images.squarespace-cdn.com/content/v1/6a9af5e9e90df9750f5f0a92/dddeff5c-ee07-42db-86cb-2dd287030194/Erin2026.jpeg"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "insight-meditation-society",
+      "role": "instructor"
+    }
+  ],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "The Quiet Advantage: A Silent Retreat for Leaders",
+      "url": "https://www.quietadvantagevallecitos.com/",
+      "description": "A five-day silent retreat at Vallecitos for executives, founders and others with heavy responsibilities, limited to 24 people and joined by application. Days combine sitting and walking practice, mindful movement, time on the land and one-to-one meetings with the teachers; no experience is needed.",
+      "price": "$2,780 USD (meals, lodging and shuttle included)",
+      "product_type": "retreat",
+      "start_date": "2027-09-06",
+      "end_date": "2027-09-10",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/6a9af5e9e90df9750f5f0a92/4508de1a-6381-4832-ba0b-c0efcb6a2dd1/mountain.jpg"
+    },
+    {
+      "title": "Land as Dharma Teacher (Vallecitos 2027)",
+      "url": "https://www.vallecitos.org/retreats/1258/2027-retreat-schedule/",
+      "description": "A week-long silent retreat in the New Mexico mountains, taught with Brian Lesage, that treats the forest and the land itself as a source of teaching. It runs twice in 2027, in early July and early August; the centre's 2027 schedule also lists her retreat of meditation and music with Jennifer Berezan.",
+      "price": "Contact for pricing",
+      "product_type": "retreat",
+      "start_date": "2027-07-03",
+      "end_date": "2027-07-10",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/6a9af5e9e90df9750f5f0a92/dddeff5c-ee07-42db-86cb-2dd287030194/Erin2026.jpeg"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Erin Treat's talks at Vallecitos (Dharma Seed)",
+      "url": "https://vmrc.dharmaseed.org/teacher/458/",
+      "description": "Her recorded Dharma talks and guided sittings from retreats at Vallecitos, free to stream or download on Dharma Seed.",
+      "featured": true,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/6a9af5e9e90df9750f5f0a92/dddeff5c-ee07-42db-86cb-2dd287030194/Erin2026.jpeg"
+    }
+  ],
+  "sprint": {
+    "sprint": "pipelines-3",
+    "hub": "ims",
+    "rank": 77,
+    "hub_url": "https://www.dharma.org/teacher/erin-treat/",
+    "tier_evidence": "No personal social accounts or YouTube channel found; the Vallecitos Instagram and Facebook are the centre's (not counted, not opened) → 0 readable → local_hero",
+    "email": "yes",
+    "email_source": "https://www.vallecitos.org/retreats/1258/2027-retreat-schedule/",
+    "contact_form_url": "https://www.vallecitos.org/contact",
+    "bio_check": "OK: no 8-word runs against 7 source(s)",
+    "flags": [
+      "No website of her own: listed from Vallecitos Mountain Retreat Center, where she is guiding teacher (resident-teacher rule), and The Quiet Advantage retreat site. Dharma Seed's 'Erin Treat's Website' link points to the Durango Dharma Center, whose leadership page no longer lists her.",
+      "Insight Meditation Society named on: https://www.quietadvantagevallecitos.com/ (her bio there says she teaches regularly at Spirit Rock and IMS).",
+      "Email is Vallecitos's general inbox (refuge@vallecitos.org, mailto on the 2027 schedule and Quiet Advantage pages); she is the centre's guiding teacher.",
+      "Regional: Durango, Colorado, likely has few or no Spiritpedia teachers.",
+      "Vallecitos's 2027 retreats have no pages of their own (one schedule page, registration opens 13 January 2027), so only Land as Dharma Teacher is listed from it, with the July dates; the August repeat and the Jennifer Berezan retreat are mentioned in its description.",
+      "Photo from The Quiet Advantage site (Erin2026.jpeg, 886 px); the Vallecitos copy is 200 px.",
+      "Thin: three items. No YouTube videos found."
+    ],
+    "left_out": [
+      "Sacred Sound, Insight, and Silence (27–31 July 2027, with Jennifer Berezan) and Land as Dharma Teacher (August): no unique URLs.",
+      "Retreats at Spirit Rock (never fetched) and IMS: not linked from her pages.",
+      "Durango Dharma Center: she no longer appears in its leadership list."
+    ]
+  },
+  "images_final": true
+}

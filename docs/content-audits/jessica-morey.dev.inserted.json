@@ -1,0 +1,51 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 968,
+    "healer_slug": "jessica-morey"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "5af2e18f-bd10-4d7d-b3c2-c2628472898c",
+      "slug": "compassion-awareness-sangha",
+      "title": "Compassion + Awareness Sangha"
+    },
+    {
+      "table": "courses",
+      "id": "c5331d12-3d09-4a9a-8f5b-f59f213cb863",
+      "slug": "daylong-meditation-retreat-burlington",
+      "title": "Daylong Meditation Retreat (Burlington)"
+    },
+    {
+      "table": "courses",
+      "id": "1bd071ce-5438-42ae-a967-13686ff0d151",
+      "slug": "wednesday-evening-dharma-with-cambridge-insight",
+      "title": "Wednesday Evening Dharma with Cambridge Insight"
+    },
+    {
+      "table": "courses",
+      "id": "99959d23-ec24-48d6-bc9c-9cb3dfc7c1c0",
+      "slug": "deep-training-in-sustainable-compassion-and-wisdom",
+      "title": "Deep Training in Sustainable Compassion and Wisdom"
+    },
+    {
+      "table": "courses",
+      "id": "0bc3b25a-040a-4939-ab44-803f4810cefa",
+      "slug": "lovingkindness-retreat",
+      "title": "Lovingkindness Retreat"
+    },
+    {
+      "table": "courses",
+      "id": "4543b180-e361-41ac-bb13-784cd3b38b88",
+      "slug": "daylong-retreat-with-new-york-insight",
+      "title": "Daylong Retreat with New York Insight"
+    },
+    {
+      "table": "hub_teachers",
+      "id": "beb23bff-6b87-4fef-b8be-3498824b8b6d",
+      "title": "jessica-morey teaches at Insight Meditation Society"
+    }
+  ],
+  "at": "2026-11-06T14:45:42.819Z"
+}

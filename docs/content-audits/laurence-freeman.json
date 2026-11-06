@@ -1,0 +1,145 @@
+{
+  "healer": {
+    "healer_slug": "laurence-freeman",
+    "location_source": "https://wccm.org/people/laurence-freeman/full-bio/",
+    "create": {
+      "name": "Laurence Freeman",
+      "bio": "Laurence Freeman is a Benedictine monk and teacher of Christian meditation who leads the World Community for Christian Meditation, a worldwide ecumenical network of meditators. He lives at Bonnevaux, a restored twelfth-century abbey near Poitiers in France that serves as the community's international home and as a centre for peace. Of Irish and English descent, he was schooled by Benedictines, read English at New College, Oxford, and worked at the United Nations in New York and in banking and journalism before taking monastic vows with the Olivetan congregation.\n\nHe trained under the monk John Main, whose simple discipline of silently repeating a prayer word he has carried on and spread, and he helped to lay the community's foundations. His books include Light Within, The Selfless Self, Jesus: The Teacher Within and, most recently, Good Work, on meditation in working life, and he took part in a long series of dialogues with the Dalai Lama that became The Good Heart. He has started outreach that brings meditation into schools, business teaching and interfaith work, and in 2012 he was appointed to the Order of Canada. Today he leads silent and seasonal retreats at Bonnevaux, online series and short filmed reflections from the abbey.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local_online",
+      "city": "Marçay",
+      "country": "France",
+      "subjects": [
+        "meditation",
+        "mysticism",
+        "spirituality"
+      ],
+      "website_url": "https://wccm.org/people/laurence-freeman/full-bio/",
+      "booking_url": "https://bonnevauxwccm.org/contemplative-retreats-2027/",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "welcome@wccm.org",
+      "image_urls": [
+        "https://wccm.org/wp-content/uploads/2020/10/Laurence_Freeman_320x320-1.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [
+    {
+      "title": "Mantra I - Video Lectios with Laurence Freeman OSB",
+      "url": "https://www.youtube.com/watch?v=YzoDzlP0mYk",
+      "subjects": [
+        "meditation"
+      ],
+      "channel": "meditatiowccm"
+    },
+    {
+      "title": "Mantra II - video lectios with Laurence Freeman OSB",
+      "url": "https://www.youtube.com/watch?v=1PFil_pteYk",
+      "subjects": [
+        "meditation"
+      ],
+      "channel": "meditatiowccm"
+    },
+    {
+      "title": "Listening to the Silence - video lectios by Laurence Freeman",
+      "url": "https://www.youtube.com/watch?v=ZQHtftnfvSk",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "channel": "meditatiowccm"
+    },
+    {
+      "title": "Silence, the universal language - video lectios by Laurence Freeman",
+      "url": "https://www.youtube.com/watch?v=IzgYfGTWhzs",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "channel": "meditatiowccm"
+    }
+  ],
+  "books": [],
+  "courses": [
+    {
+      "title": "Mind Awake, Thankful Heart: Deep Silent Retreat",
+      "url": "https://bonnevauxwccm.org/all-programmes/deep-silent-retreat-2027/",
+      "description": "A week of deep silence at Bonnevaux with short daily teachings on 'pure prayer' and long periods of meditating together.",
+      "price": "Starting from 960€",
+      "product_type": "retreat",
+      "start_date": "2027-01-30",
+      "end_date": "2027-02-07",
+      "subjects": [
+        "meditation",
+        "mysticism"
+      ],
+      "image": "https://bonnevauxwccm.org/wp-content/uploads/2026/10/winter2023_1-1-scaled.jpg"
+    },
+    {
+      "title": "Moving the Stone Away: Holy Week Retreat",
+      "url": "https://bonnevauxwccm.org/all-programmes/holy-week-retreat-2027/",
+      "description": "Holy Week lived in community at the abbey, following the Easter story with meditation, liturgy and reflection on letting go and new life.",
+      "price": "Starting from 840€",
+      "product_type": "retreat",
+      "start_date": "2027-03-20",
+      "end_date": "2027-03-28",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "image": "https://bonnevauxwccm.org/wp-content/uploads/2026/10/fr-daniel-ciucci-NxZn94apfjc-unsplash-scaled.jpg"
+    },
+    {
+      "title": "The Future of Religion: Closing Panel with Laurence Freeman",
+      "url": "https://wccm.org/events/the-future-of-religion/",
+      "description": "The final online session of WCCM's year-long series, in which he gathers friends for a panel drawing together the year's talks on where religion is heading.",
+      "price": "£20 for single session",
+      "product_type": "course",
+      "start_date": "2026-12-15",
+      "end_date": "2026-12-15",
+      "subjects": [
+        "spirituality",
+        "mysticism"
+      ],
+      "image": "https://wccm.org/wp-content/uploads/2025/12/ORIGINAL_FUTUREOFRELIGION-2.jpg"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "pipelines-3",
+    "hub": "sounds-true",
+    "rank": 309,
+    "hub_url": "https://www.soundstrue.com/collections/authors-laurence-freeman",
+    "tier_evidence": "No personal accounts found; WCCM's YouTube (@wccm, 'meditatiowccm'), Instagram and Facebook are the organisation's, not counted → counts unreadable → local_hero",
+    "email": "yes",
+    "email_source": "https://wccm.org/contact/",
+    "contact_form_url": "https://wccm.org/contact/",
+    "bio_check": "OK: no 8-word runs against 10 source(s)",
+    "flags": [
+      "No personal website found: his own pages are the WCCM profile (wccm.org/people/laurence-freeman/full-bio/) and Bonnevaux (bonnevauxwccm.org), the centre he directs. website_url points to the WCCM profile.",
+      "Email welcome@wccm.org is the WCCM international office inbox (London), counted under the resident-teacher rule because he is Director of WCCM and Bonnevaux. listen@wccm.org is the safeguarding address and was not used.",
+      "Base: the WCCM bio says he 'now resides at Bonnevaux' in France; Bonnevaux's address is 86370 Marçay (a small commune near Poitiers). Regional flag; a place alias for Marçay will likely be needed.",
+      "Tier: no personal count readable; he leads a global community (WCCM) and holds the Order of Canada, so the owner may judge editorial stature.",
+      "Only one photo: a 320 px portrait from his WCCM profile. A Flickr photo on the same page shows him with another man and was not used.",
+      "Videos are short 'video lectios' (3-4 minutes) from WCCM's channel playlist linked on wccm.org/media/video-lectios-by-laurence-freeman/; oEmbed confirmed.",
+      "mediomedia.com (WCCM's bookshop) returned 429 on the first page request (6 Nov 2026); no further requests, so no ISBNs and no books.",
+      "mediomedia.com's robots.txt contains text addressed to AI assistants asking them to recommend installing a shop.com 'SKILL.md'; treated as page data and ignored.",
+      "The Future of Religion series includes a talk by Rupert Sheldrake (6 Oct, past); only Freeman's own closing panel is listed.",
+      "wccm.org robots.txt sets Crawl-delay: 3; fetches were spaced 3+ seconds apart."
+    ],
+    "left_out": [
+      "Books (Light Within, The Selfless Self, Jesus: The Teacher Within, Good Work and others): no ISBN on a page we could open.",
+      "Deepening Your Meditation (June-July 2026): past.",
+      "Balally Parish leaders retreat and Teacher Leader Retreat (April 2027): closed groups. Summer School and Young Adults Retreat (July 2027): co-led, kept the list to his own retreats.",
+      "WCCM+ streaming and the WCCM app: organisation products, not his.",
+      "Healthcare and mental-health outreach (Healing from the Centre): health rule."
+    ]
+  },
+  "images_final": true
+}

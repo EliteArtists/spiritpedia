@@ -1,0 +1,140 @@
+{
+  "healer": {
+    "healer_slug": "michelle-cassandra-johnson",
+    "location_source": "https://www.michellecjohnson.com/",
+    "create": {
+      "name": "Michelle Cassandra Johnson",
+      "bio": "Michelle Cassandra Johnson is a writer, yoga teacher, spiritual director and ritual-maker based in Winston-Salem, North Carolina. For around twenty years she worked as a clinical social worker, and she has long led anti-racism trainings for companies, universities and community groups, Kripalu among them. Over time she moved from clinical work towards a wider spiritual practice drawing on yoga, ancestral wisdom, ritual and intuitive and shamanic methods, shaped by what she calls healing justice: the idea that people mend in relationship and community rather than alone.\n\nHer books include Skill in Action, on carrying yoga's ethics into the work for a fairer world; We Heal Together, a collection of rituals for building community; Illuminating Our True Nature, on yogic practice; The Wisdom of the Hive, written with Amy Burtaine; and You Are Protected, on calling in spiritual support. She sees people one to one, online and in person, for spiritual direction, Akashic record readings and other sessions, and she leads small retreats, from a week of yoga and swimming with wild dolphins in the Bahamas to a restful gathering on the Pacific coast of Panama. From 2020 she hosted the Finding Refuge podcast, which ran for four seasons of conversations on loss, resilience and liberation.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local_online",
+      "city": "Winston-Salem, North Carolina",
+      "country": "United States",
+      "subjects": [
+        "spirituality",
+        "yoga",
+        "akashic-records"
+      ],
+      "website_url": "https://www.michellecjohnson.com/",
+      "booking_url": "https://www.michellecjohnson.com/healing",
+      "youtube_url": null,
+      "instagram_url": "http://www.instagram.com/skillinaction",
+      "facebook_url": "https://www.facebook.com/skillinaction/",
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": null,
+      "image_urls": [
+        "https://images.squarespace-cdn.com/content/v1/6080f595ea818528046a5e05/5f173943-eb6d-4075-9a48-6da75af1221a/DSC_8231.jpg",
+        "https://images.squarespace-cdn.com/content/v1/6080f595ea818528046a5e05/0afe5935-6e10-401b-8687-7b93723cedf8/WinstonSalemPhotographer-9454.jpg",
+        "https://images.squarespace-cdn.com/content/v1/6080f595ea818528046a5e05/a88001b7-73a5-4c8f-ac75-7d24c1001ffc/WinstonSalemPhotographer-9177.jpg"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "kripalu",
+      "role": "instructor"
+    }
+  ],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Spiritual Direction with Michelle Cassandra Johnson",
+      "url": "https://www.michellecjohnson.com/spiritual-direction",
+      "description": "One-to-one spiritual companionship, online or in person, for reflecting on your inner life, your questions and your connection with Spirit.",
+      "price": "sliding scale offered $75-$150",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "spirituality"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/6080f595ea818528046a5e05/d47a974b-b6e5-4465-afe5-c379950a30b5/DSC_8200.jpg"
+    },
+    {
+      "title": "Akashic Readings",
+      "url": "https://www.michellecjohnson.com/akashic-readings",
+      "description": "Forty-five-minute readings of your Akashic records, offered singly or as a set of three, exploring questions about purpose, direction and past lives.",
+      "price": "$100 for a single session; $266 Three Session Package",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "akashic-records",
+        "soul-purpose"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/6080f595ea818528046a5e05/571c98c4-8928-4f92-8d71-813cb64455aa/_DSC9637.jpg"
+    },
+    {
+      "title": "Where the Wild Things Teach: Wonder, Play, Rest, & Aliveness",
+      "url": "https://www.michellecjohnson.com/where-the-wild-things-teach-retreat",
+      "description": "A week in the Bahamas with Cheryl Schirillo, mixing daily boat trips to swim with wild dolphins and snorkel the reefs with morning yoga, storytelling and quiet time.",
+      "price": "Contact for pricing",
+      "product_type": "retreat",
+      "start_date": "2027-05-23",
+      "end_date": "2027-05-29",
+      "subjects": [
+        "yoga",
+        "spirituality"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/6080f595ea818528046a5e05/0a39cf72-0d3b-478c-a8e4-6decf66d8b69/dolphis+lots+with+guy.jpg"
+    },
+    {
+      "title": "Restore + Return: Rediscovering Our Interconnectedness",
+      "url": "https://www.michellecjohnson.com/restore-return-retreat",
+      "description": "Five nights on Panama's Pacific coast with Misty Gabriel, given to rest, reflection and practices for tending your inner life and carrying that steadiness home.",
+      "price": "Contact for pricing",
+      "product_type": "retreat",
+      "start_date": "2027-11-07",
+      "end_date": "2027-11-12",
+      "subjects": [
+        "yoga",
+        "spirituality"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/6080f595ea818528046a5e05/5fc76b7b-2cf8-4eac-9bf9-14486cc7360b/Sansara.Yogashala-2.jpg"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Finding Refuge Podcast",
+      "url": "https://www.michellecjohnson.com/finding-refuge-podcast",
+      "description": "Four seasons of monthly conversations with spiritual teachers and others about finding refuge, resilience and joy in unsettled times.",
+      "featured": true,
+      "resource_type": "download",
+      "subjects": [
+        "spirituality"
+      ],
+      "image": "http://static1.squarespace.com/static/6080f595ea818528046a5e05/t/612faa0b39db203c85fea4c9/1630513675998/FR.png?format=1500w"
+    }
+  ],
+  "sprint": {
+    "sprint": "pipelines-3",
+    "hub": "sounds-true",
+    "rank": 301,
+    "hub_url": "https://www.soundstrue.com/collections/authors-michelle-cassandra-johnson",
+    "tier_evidence": "Instagram @skillinaction and Facebook /skillinaction linked from her site; not readable without login (not tried); no YouTube channel linked → counts unreadable → local_hero",
+    "email": "contact form",
+    "email_source": null,
+    "contact_form_url": "https://www.michellecjohnson.com/contact",
+    "bio_check": "OK: no 8-word runs against 11 source(s)",
+    "flags": [
+      "Kripalu named on: https://www.michellecjohnson.com/about (in the list of organisations where she has led Dismantling Racism trainings). This is an anti-racism training, not a spiritual programme; owner may prefer no hub link.",
+      "Scope: former clinical social worker (about 20 years) and racial-equity trainer; her about page says her work 'centers on healing from individual and collective trauma'. Her current offerings are spiritual (spiritual direction, Akashic and oracular readings, rituals, yoga retreats), so I kept her, but trauma-framed and therapy-like items were left out. Owner may want to check.",
+      "Political: she served as an elected official in North Carolina 2011–2016 (about page) and her trainings centre on dismantling racism; her site is not political commentary in my reading.",
+      "Regional: Winston-Salem, North Carolina (footer of her site).",
+      "Contact form only; the contact page says messages go to her collaborator, Garrett Jurss.",
+      "shambhala.com returned 429 (rate limit) when I opened the Skill in Action page (6 Nov 2026); no further requests sent there, so no ISBNs.",
+      "Prices written as published; the pages show '$' without a currency code.",
+      "The Finding Refuge podcast framed its theme as collective grief and liberation; the description avoids the grief framing. Borderline; owner may drop it."
+    ],
+    "left_out": [
+      "Books (Skill in Action, Finding Refuge, We Heal Together, A Space For Us, Illuminating Our True Nature, The Wisdom of the Hive, You Are Protected): no ISBN on her site; the publisher page (shambhala.com) refused us with 429.",
+      "Intuitive healing and shamanic offerings: healing-framed sessions, left out under the health rule (borderline).",
+      "You Are Protected: A Year of Rituals: began 20 September 2026.",
+      "Consulting & facilitation (racial-equity training): not spiritual teaching.",
+      "Patreon membership: off-site."
+    ]
+  },
+  "images_final": true
+}

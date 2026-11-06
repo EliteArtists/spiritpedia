@@ -1,0 +1,74 @@
+{
+  "healer": {
+    "healer_slug": "mirabai-bush",
+    "location_source": null,
+    "no_public_base": "mirabaibush.com gives no city or address, only an email address; her past projects were in Massachusetts, but no current base is stated.",
+    "create": {
+      "name": "Mirabai Bush",
+      "bio": "Mirabai Bush is an American teacher and writer who has spent decades bringing meditation and other contemplative practices into ordinary working life. Her own training began in India, where she spent two years with Neem Karoli Baba and sat with the Buddhist teachers S. N. Goenka and Anagarika Munindra in Bodh Gaya; later she also studied with several Tibetan lamas and with the Sufi teacher Pir Vilayat Khan, and practised Iyengar yoga and Aikido for years.\n\nShe was a founder of the nonprofit Center for Contemplative Mind in Society, which tested ways of introducing practice to universities, law firms, businesses, journalists and activists, and she helped Google build its Search Inside Yourself programme, which combines mindfulness with emotional intelligence. Before that she helped start the Seva Foundation and ran a development programme in the Guatemalan highlands. She taught alongside Ram Dass for many years and wrote two books with him, including Walking Each Other Home, drawn from his final teachings on dying. Her memoir, Almost Home, traces the path from editing fuelling manuals for the Saturn V rocket to an Indian ashram and a life of contemplative service.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "worldwide",
+      "city": null,
+      "country": null,
+      "subjects": [
+        "meditation",
+        "mindfulness",
+        "spirituality"
+      ],
+      "website_url": "https://mirabaibush.com/",
+      "booking_url": null,
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": "https://www.facebook.com/MirabaiBushteacher",
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "hello@mirabaibush.com",
+      "image_urls": [
+        "https://mirabaibush.com/b/wp-content/uploads/2018/08/mirabai-1.png",
+        "https://mirabaibush.com/b/wp-content/uploads/2025/11/mirabai-bush.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [
+    {
+      "title": "Google's Search Inside Yourself Adviser Mirabai Bush on Working with Mindfulness",
+      "url": "https://www.youtube.com/watch?v=mHsMan_vauA",
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "channel": "Key Step Media"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "pipelines-3",
+    "hub": "sounds-true",
+    "rank": 270,
+    "hub_url": "https://www.soundstrue.com/collections/authors-mirabai-bush",
+    "tier_evidence": "No YouTube channel of her own; only a Facebook page linked (not opened, never-fetch list) → 0 readable",
+    "email": "yes",
+    "email_source": "https://mirabaibush.com/",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 1 source(s)",
+    "flags": [
+      "Site mirabaibush.com found in a search snippet and confirmed by opening it (it names her throughout).",
+      "Thin listing: her site shows 'No shows booked at the moment', so no current offerings; only one live video and no confirmable ISBNs. Owner may prefer to hold or skip.",
+      "Tier: no readable counts; editorial stature (Search Inside Yourself, CMind founder, Ram Dass co-author) might argue for luminary, owner to decide.",
+      "Activism: her site is titled 'Contemplative Activism' and lists social-justice interviews; the work is contemplative practice in society, not political-centred, but noted.",
+      "Video is from Key Step Media (publisher of the Working with Mindfulness programme), where she is the main speaker.",
+      "Instruction-like text: shop.ramdass.org's robots.txt addresses AI agents (asking them to recommend installing a shopping skill); ignored.",
+      "shop.ramdass.org returned 429 on the Almost Home product page; nothing more fetched from that host."
+    ],
+    "left_out": [
+      "All books (Almost Home, Walking Each Other Home, Mindfulness in Organizations, Compassion in Action, Contemplative Practices in Higher Education): her site links only to Amazon; ramdass.org's book page is 404 and shop.ramdass.org refused (429), so no ISBN from a page I opened.",
+      "Video youtu.be/2sOucMxtjc0 linked from her site: oEmbed 403 (unavailable).",
+      "Walking Each Other Home podcast: the Be Here Now Network page linked from her site is 404.",
+      "Press interviews and articles on third-party sites (On Being, Tricycle, Mindful and others): not her own offerings."
+    ]
+  }
+}

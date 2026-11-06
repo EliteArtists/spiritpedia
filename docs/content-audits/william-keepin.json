@@ -1,0 +1,157 @@
+{
+  "healer": {
+    "healer_slug": "william-keepin",
+    "location_source": null,
+    "no_public_base": "Neither Satyana Institute's sites nor his biography give a home town; the only address published is Satyana's mailing suite (a numbered box) in Seattle, which is not a base where he lives or teaches.",
+    "create": {
+      "name": "Dr. William Keepin",
+      "bio": "William Keepin, known as Will, is a teacher of interfaith spirituality and the co-founder, with Rev. Cynthia Brix, of the Satyana Institute and its Gender Equity and Reconciliation International (GERI) programme. He began as a scientist, with a doctorate in applied mathematics and a background in mathematical physics, and worked on energy and climate policy before turning to contemplative practice. He later took a master's degree in East-West psychology, holds a Findhorn Foundation fellowship, and has guided Grof breathwork sessions since 1989.\n\nGERI brings women and men of all orientations together in facilitated circles to speak honestly about how gender has shaped their lives and to listen across that divide, drawing on prayer, silence and the truth-and-reconciliation model associated with Desmond Tutu. It now trains facilitators internationally. Through Satyana's Dawn of InterSpirituality project he has also convened gatherings of teachers from several faiths and offers recorded guided meditations on divine love and a free weekly online sitting. His books include Belonging to God, on a universal path of divine love, Divine Duality, and Healing the Heart of Humanity, on reconciliation between masculine and feminine.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "worldwide",
+      "city": null,
+      "country": null,
+      "subjects": [
+        "spirituality",
+        "conscious-relationships",
+        "mysticism"
+      ],
+      "website_url": "https://satyana.org/",
+      "booking_url": "https://www.genderreconciliationinternational.org/programs-courses/",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "programs@satyana.org",
+      "image_urls": [
+        "https://www.genderreconciliationinternational.org/wp-content/uploads/2021/11/Will-headshot-cropped-1.jpeg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [
+    {
+      "title": "Thirty Years of Healing the Most Ancient Wound in the Human Family",
+      "url": "https://www.youtube.com/watch?v=-ygrJhEB6yg",
+      "subjects": [
+        "conscious-relationships",
+        "spirituality"
+      ],
+      "channel": "Gender Equity and Reconciliation International"
+    },
+    {
+      "title": "Cultivating the Inner Work of the Heart for Outer Service in the World (Part 1)",
+      "url": "https://www.youtube.com/watch?v=NZOsxaGoof8",
+      "subjects": [
+        "spirituality"
+      ],
+      "channel": "Gender Equity and Reconciliation International"
+    },
+    {
+      "title": "Cultivating the Inner Work of the Heart for the Outer Work of Service (Part 2)",
+      "url": "https://www.youtube.com/watch?v=9sX35gUbdFw",
+      "subjects": [
+        "spirituality"
+      ],
+      "channel": "Gender Equity and Reconciliation International"
+    },
+    {
+      "title": "Healing the Divide: Achieving Gender Equality through Transformative Community Process",
+      "url": "https://www.youtube.com/watch?v=_7G908ervx8",
+      "subjects": [
+        "conscious-relationships"
+      ],
+      "channel": "Gender Equity and Reconciliation International"
+    }
+  ],
+  "books": [
+    {
+      "title": "Healing the Heart of Humanity: The Outer and Inner Alchemy of Reconciliation between Masculine and Feminine",
+      "slug": "healing-the-heart-of-humanity",
+      "author": "William Keepin",
+      "asin": "1963433165",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "His newest book on the gender reconciliation work he has led for over three decades. It sets the circle process within a spiritual frame and argues that relations between women and men are a place where deep collective change can begin.",
+      "subjects": [
+        "conscious-relationships",
+        "spirituality"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1963433165.01._SCLZZZZZZZ_.jpg"
+    }
+  ],
+  "courses": [
+    {
+      "title": "GERI Professional Immersion and Facilitator Training (online track)",
+      "url": "https://www.genderreconciliationinternational.org/geri-facilitator-training-information/",
+      "description": "Satyana's professional training for people who want to lead gender reconciliation circles. The online track combines group modules with an internship; in-person cohorts run in four six-day modules in different regions.",
+      "price": "$4,450 (online); North America in-person $7,950",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "conscious-relationships",
+        "spirituality"
+      ],
+      "image": "https://www.genderreconciliationinternational.org/wp-content/uploads/2026/01/Module-3-ZA-Group-Photo-768x432.jpg"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Guided meditations from Dawn of InterSpirituality",
+      "url": "https://dawnofinterspirituality.org/guided-meditations/",
+      "description": "Recorded meditations of five to fifteen minutes led by Will Keepin, among them a Flame of Love practice and resting in the heart.",
+      "featured": true,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation",
+        "mysticism"
+      ],
+      "image": "https://www.genderreconciliationinternational.org/wp-content/uploads/2021/11/Will-headshot-cropped-1.jpeg"
+    },
+    {
+      "title": "Weekly meditation and prayerful connection",
+      "url": "https://dawnofinterspirituality.org/weekly-meditation/",
+      "description": "A free online sitting each Wednesday morning (Pacific time): half an hour of silent meditation and prayer, then a short spiritual reading and reflection. Open to all levels.",
+      "featured": false,
+      "resource_type": "practice",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "image": "https://dawnofinterspirituality.org/wp-content/uploads/2021/10/candles-300x191.jpg"
+    }
+  ],
+  "sprint": {
+    "sprint": "pipelines-3",
+    "hub": "esalen",
+    "rank": 274,
+    "hub_url": "https://www.esalen.org/faculty/william-keepin",
+    "tier_evidence": "No personal social accounts found. GERI's YouTube @GenderReconciliation has 7.6K subscribers (channel header, 6 Nov 2026) but is an organisation account, not counted → readable total 0 → local_hero",
+    "email": "yes",
+    "email_source": "https://dawnofinterspirituality.org/contact/",
+    "contact_form_url": "https://dawnofinterspirituality.org/contact/",
+    "bio_check": "OK: no 8-word runs against 14 source(s)",
+    "flags": [
+      "No Esalen mention on satyana.org, genderreconciliationinternational.org or dawnofinterspirituality.org pages read: listed without the link.",
+      "Findhorn Foundation (a Spiritpedia hub) is named on GERI's founding-directors page only as a fellowship, not as a place he teaches; no hub link added.",
+      "No personal website: his own sources are the sites of Satyana Institute, which he co-founded and co-directs (satyana.org, GERI and Dawn of InterSpirituality). Email is Satyana's programmes inbox (an organisation inbox).",
+      "Tier counts 0: he has no personal accounts; GERI's channel (7.6K) is an organisation account.",
+      "Videos are on GERI's channel; YouTube watch pages redirected to a consent page (not followed), so it could not be confirmed that he is the main speaker in each. Titles match his book and Satyana's mission; please check.",
+      "GERI's work addresses gender injustice and patriarchy in a spiritual, truth-and-reconciliation frame; not partisan commentary, but flagged for the owner under the political-content rule.",
+      "The facilitator-training page lists trauma and PTSD among curriculum topics; kept out of the description, flagged as borderline.",
+      "Co-founder Rev. Cynthia Brix co-leads Satyana and GERI; she is mentioned in the bio, not listed separately.",
+      "Book ASIN 1963433165 from the amazon.com link on GERI's home and new-book pages; not confirmed elsewhere."
+    ],
+    "left_out": [
+      "Tavira, Portugal in-person training: Module I starts 9 Nov 2026 (before 10 Nov).",
+      "Belonging to God, Divine Duality, Song of the Earth, Women Healing Women, Gender Equity & Reconciliation (2022): no ISBN on any page opened.",
+      "Heart of the Beloved retreats: no upcoming dates listed.",
+      "GERI events (private event, monthly circle): led by GERI facilitators, not shown as his.",
+      "GERI channel videos dated to a year ('Navigating 2026'), promos, gala recordings and clips under 2 minutes."
+    ]
+  },
+  "images_final": true
+}

@@ -1,0 +1,135 @@
+{
+  "healer": {
+    "healer_slug": "david-frenette",
+    "location_source": "https://www.davidfrenette.com/upcoming-on-line-events/",
+    "create": {
+      "name": "David Frenette",
+      "bio": "David Frenette is a Christian contemplative teacher and writer based in Portland, Oregon, and one of the senior teachers of Centering Prayer. From 1983 until 2018 the Trappist monk Thomas Keating, who founded the practice, was his spiritual father, and Keating wrote the preface to David's book. For a decade David lived as a monk in a contemplative retreat community he helped to start and lead; he later served as a trustee of Contemplative Outreach, taught as adjunct faculty at Naropa University, and worked for many years as a spiritual director and as a mentor to other directors. He also holds an MA in transpersonal counselling psychology.\n\nHis book The Path of Centering Prayer guides readers past the basic method into the deeper stages of silent prayer, and he has since developed Heart Intention, a practice of choosing words that express unity and letting them gently loosen the separate sense of self. He no longer travels to teach, so most of his work now happens online: donation-based live sessions on Zoom about Centering Prayer and unity consciousness, recorded workshops, among them a dialogue with Cynthia Bourgeault, and light-hearted interfaith conversations with his wife, Donna Zerner. He still co-leads an occasional retreat close to home in Oregon.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local_online",
+      "city": "Portland, Oregon",
+      "country": "United States",
+      "subjects": [
+        "meditation",
+        "mysticism",
+        "non-duality"
+      ],
+      "website_url": "https://www.davidfrenette.com/",
+      "booking_url": "https://www.davidfrenette.com/upcoming-on-line-events/",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": "https://www.facebook.com/ThePathOfCenteringPrayer",
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "erika.centeringprayer@gmail.com",
+      "image_urls": [
+        "https://www.davidfrenette.com/wp-content/uploads/2015/09/DavidFrenette_IMG_4765-Version-53-683x1024.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [
+    {
+      "title": "The Path of Centering Prayer: Deepening Your Experience of God",
+      "slug": "the-path-of-centering-prayer",
+      "author": "David Frenette",
+      "asin": "1622038665",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "A guide for people who already practise Centering Prayer, mapping how silent prayer can deepen over time, with a preface by Thomas Keating.",
+      "subjects": [
+        "meditation",
+        "mysticism"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1622038665.01._SCLZZZZZZZ_.jpg"
+    }
+  ],
+  "courses": [
+    {
+      "title": "Opening to the God of Unity: A Centering Prayer Retreat with David Frenette & Mary Dwyer",
+      "url": "https://www.davidfrenette.com/opening-to-god-of-unity-retreat-may-2027/",
+      "description": "Five days of silent practice and teaching at the Alton Collins Retreat Center in the forest at Eagle Creek, Oregon, drawing on Thomas Keating's later teachings.",
+      "price": "$1,125 private room; $850 shared",
+      "product_type": "retreat",
+      "start_date": "2027-05-07",
+      "end_date": "2027-05-11",
+      "subjects": [
+        "meditation",
+        "mysticism"
+      ],
+      "image": "https://www.davidfrenette.com/wp-content/uploads/2026/10/In-Person-5-Day-Centering-Prayer-Retreat-in-Eagle-Creek-OR_1stImage_28Oct2026.png"
+    },
+    {
+      "title": "Online Saturday Series: Centering Prayer and the God of Unity Consciousness",
+      "url": "https://www.davidfrenette.com/upcoming-on-line-events/",
+      "description": "Live Zoom sessions exploring how unity consciousness can deepen Centering Prayer and daily life, offered on a donation basis with replays posted afterwards.",
+      "price": "Donation based",
+      "product_type": "course",
+      "start_date": "2027-01-09",
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "non-duality"
+      ],
+      "image": "https://www.davidfrenette.com/wp-content/uploads/2024/11/cropped-David-Frenette_Website-Header_updated-24Nov2024.png"
+    },
+    {
+      "title": "Silence Speaking, Stillness Acting: Centering Prayer, Contemplative Petition and Unity",
+      "url": "https://www.davidfrenette.com/replays-and-on-line-self-paced-courses/",
+      "description": "A recorded Zoom workshop on Centering Prayer, contemplative petition and acting in the world from a sense of unity, available at a chosen donation.",
+      "price": "$25.00 USD / $35.00 USD / $45.00 USD (choose your donation)",
+      "product_type": "download",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "non-duality"
+      ],
+      "image": "https://www.davidfrenette.com/wp-content/uploads/2024/11/cropped-David-Frenette_Website-Header_updated-24Nov2024.png"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Getting Started with Heart Intention",
+      "url": "https://www.davidfrenette.com/heart-intention/getting-started-with-heart-intention/",
+      "description": "His introduction to Heart Intention, a meditation practice that begins by choosing a few words expressing what unity means to you.",
+      "featured": true,
+      "resource_type": "practice",
+      "subjects": [
+        "meditation",
+        "non-duality"
+      ],
+      "image": "https://www.davidfrenette.com/wp-content/uploads/2020/10/Mandala_from-Donna_thumbnail_IMG_0801-300x281.jpg"
+    }
+  ],
+  "sprint": {
+    "sprint": "pipelines-3",
+    "hub": "sounds-true",
+    "rank": 306,
+    "hub_url": "https://www.soundstrue.com/collections/authors-david-frenette",
+    "tier_evidence": "Facebook page /ThePathOfCenteringPrayer linked from his site, not readable without login (not tried); the YouTube handle linked on his site (@davidfrenette2475) returns 404 (6 Nov 2026) → counts unreadable; a small, mostly online teaching practice → local_hero",
+    "email": "yes",
+    "email_source": "https://www.davidfrenette.com/contact/",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 9 source(s)",
+    "flags": [
+      "Email is his assistant Erika's address (erika.centeringprayer@gmail.com), published on his contact page.",
+      "His contact and spiritual-direction pages say he no longer offers one-to-one spiritual direction; the about page says health limits stop him travelling to teach. He is still teaching online and co-leading a May 2027 retreat near Portland.",
+      "Co-teaches with Cynthia Bourgeault (rank 307 in this queue): a recorded dialogue on his replays page; search results also show a 2026 Garrison Institute retreat with her (not opened).",
+      "Only one photo used: a 2015 headshot on his About page. A 2022 'profile photo' on the same page shows an older man and may be him, but I couldn't be sure, so it was left out.",
+      "Book ASIN 1622038665 from the Amazon link on his own site (davidfrenette.com/products/book-the-path-of-centering-prayer/); Amazon not opened; not confirmed elsewhere.",
+      "The Saturday series and the replay share pages with other sessions (the events and replays pages each list several); each item uses the page that lists it.",
+      "davidfrenette.com robots.txt sets Crawl-delay: 10; fetches were spaced 10+ seconds apart."
+    ],
+    "left_out": [
+      "Videos: the YouTube handle on his site returns 404; the one linked video ('Behind the Scenes with Fr. Thomas Keating ...', Donna, David & the Divine channel) is a light-hearted look back, not teaching.",
+      "Cynthia and David in Dialogue replay (free): shares the replays page URL with the Silence Speaking replay; mentioned in the bio instead.",
+      "Interfaith explorations with Donna Zerner (5-6 Dec 2026): no page of its own.",
+      "Audio: Centering Prayer Meditations: product page not opened."
+    ]
+  },
+  "images_final": true
+}

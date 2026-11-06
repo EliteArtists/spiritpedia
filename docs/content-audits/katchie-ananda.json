@@ -1,0 +1,135 @@
+{
+  "healer": {
+    "healer_slug": "katchie-ananda",
+    "location_source": null,
+    "no_public_base": "Her about page says only that she lives 'in the Pacific Northwest' with her husband; no town is published.",
+    "create": {
+      "name": "Katchie Ananda",
+      "bio": "Katchie Ananda is a yoga and dharma teacher who has taught yoga full time since 1991. Her training spans several schools: she holds certifications in Integral, Jivamukti and Anusara yoga and completed Ashtanga trainings with Richard Freeman, and on the Buddhist side she studied Theravada practice with Jack Kornfield. In San Francisco she co-founded the studio Yoga Sangha, later known as Yoga Kula, and over the years she has led teacher trainings, workshops and festival sessions in many countries.\n\nShe calls her approach the Art of Awakening, joining physical practice with meditation, chanting, storytelling and short talks on a weekly theme drawn from yogic and Buddhist teaching. Students often mention her humour and directness. Much of her teaching is now online: her Patreon community receives a short dharma talk or guided meditation and a forty-minute themed yoga class each week, and she also teaches for the German platform YogaEasy. Her book The Art of Awakening, sold as an ebook through her website, gathers practices, stories and poetry from her years of teaching. She is now based in the Pacific Northwest.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "worldwide",
+      "city": null,
+      "country": null,
+      "subjects": [
+        "yoga",
+        "meditation"
+      ],
+      "website_url": "https://www.katchieananda.com/",
+      "booking_url": "https://www.katchieananda.com/online-yoga-dharma",
+      "youtube_url": "https://www.youtube.com/channel/UCc5pDMcv3rrUHiC_m0pDUvg",
+      "instagram_url": "http://instagram.com/katchieananda",
+      "facebook_url": "https://www.facebook.com/KatchieAnandaYogaAndDharma/",
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "katchie.ananda@gmail.com",
+      "image_urls": [
+        "https://images.squarespace-cdn.com/content/v1/5877b36d37c581ec1cb05125/1742520380595-NK0JZMHPW634KONYJDZS/TKP_0060.jpg",
+        "https://images.squarespace-cdn.com/content/v1/5877b36d37c581ec1cb05125/1742519708030-K2E5HRSGC1LR7NN7S6AR/Fuji+headshots+2+080.jpeg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [
+    {
+      "title": "Powerful Spiritual Practice For Awakening | Yoga teacher Katchie Ananda",
+      "url": "https://www.youtube.com/watch?v=r_A50dHvzP8",
+      "subjects": [
+        "spiritual-awakening",
+        "yoga"
+      ],
+      "channel": "Wisdom From North"
+    },
+    {
+      "title": "Katchie Ananda – Dharma Yoga",
+      "url": "https://www.youtube.com/watch?v=-8CGr1W8BuI",
+      "subjects": [
+        "yoga",
+        "spirituality"
+      ],
+      "channel": "Heart to Heart * Noah David Productions"
+    },
+    {
+      "title": "Katchie Ananda Dharma Talk 1",
+      "url": "https://www.youtube.com/watch?v=UvaMd7e0vrk",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "channel": "Katchie Ananda"
+    }
+  ],
+  "books": [],
+  "courses": [
+    {
+      "title": "Katchie Ananda on Patreon: weekly yoga and dharma",
+      "url": "https://www.patreon.com/katchieananda",
+      "description": "An online membership with a short dharma talk or guided meditation on a weekly theme and a forty-minute yoga class that includes postures, chanting, stories and a closing relaxation.",
+      "price": "Contact for pricing",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga",
+        "meditation"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/5877b36d37c581ec1cb05125/1742520380595-NK0JZMHPW634KONYJDZS/TKP_0060.jpg"
+    },
+    {
+      "title": "The Art of Awakening (eBook)",
+      "url": "https://www.katchieananda.com/store/the-art-of-awakening",
+      "description": "Her book in ebook form, mixing yoga and meditation instruction with philosophy, stories and poems as a guide to a way of living, sold directly from her site.",
+      "price": "$25.00",
+      "product_type": "download",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga",
+        "meditation"
+      ],
+      "image": "http://static1.squarespace.com/static/5877b36d37c581ec1cb05125/5b16d8f2562fa7121fbb3291/5b17ffdeaa4a997a291645e2/1528300412240/?format=1500w"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Dharma Talks & Videos",
+      "url": "https://www.katchieananda.com/dharmatalks",
+      "description": "A page of free dharma talks and interview videos, with links to her YouTube channel and SoundCloud recordings.",
+      "featured": true,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "image": "http://static1.squarespace.com/static/5877b36d37c581ec1cb05125/t/5c9e8d310852294afb109063/1553894706306/Katchie%27s+logo+Kopie+2.png?format=1500w"
+    }
+  ],
+  "sprint": {
+    "sprint": "pipelines-3",
+    "hub": "esalen",
+    "rank": 165,
+    "hub_url": "https://www.esalen.org/faculty/katchie-ananda",
+    "tier_evidence": "YouTube @katchieananda7465 200 subscribers (channel header, 6 Nov 2026); Instagram and Facebook linked but not readable without logging in → ~200 readable → local_hero",
+    "email": "yes",
+    "email_source": "https://www.katchieananda.com/contact",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 9 source(s)",
+    "flags": [
+      "Own site katchieananda.com found via podcast listings in a web search; bare host redirects to www, both robots.txt files read (Squarespace, * group open).",
+      "No Esalen (or other hub) mention on her own site: listed without the link.",
+      "Her site shows '© 2022' and may not be fully current; the Patreon page (not opened) is presented as her main current offering, and its price was not read.",
+      "Her site also sells doTERRA essential oils and recruits for a doTERRA team (multi-level marketing); left out entirely. Owner may want to look.",
+      "Her about page says she is 'dedicated to old school liberal values, like free speech, and especially women's rights and sovereignty', and one video blurb speaks of freeing yoga from 'the clutches of patriarchy'; her blog (blogspot) was not read. Not obviously political-centred, but flagged.",
+      "Instagram/Facebook not opened (off limits).",
+      "The Art of Awakening ebook has no ISBN on her page, so it is listed as a download offering, not a book.",
+      "Photos: two headshots from her own 'Portraits and headshots' gallery, looked at, same woman."
+    ],
+    "left_out": [
+      "doTERRA oils pages and team business.",
+      "YogaEasy classes (third-party platform, not opened).",
+      "Video 'Katchie Ananda Mahamrityunjaya Mantra' (a chant performance) and 'Katchie Ananda - Yoga & Dharma' (53 seconds).",
+      "Donation (dana) page."
+    ]
+  },
+  "images_final": true
+}

@@ -1,0 +1,162 @@
+{
+  "healer": {
+    "healer_slug": "rod-owens",
+    "location_source": null,
+    "no_public_base": "His own site (lamarod.com: about, contact, events) does not say where he lives or is based; it lists in-person events in Atlanta, London and Melbourne but no home base. Not guessed.",
+    "create": {
+      "name": "Lama Rod Owens",
+      "bio": "Lama Rod Owens is a Tibetan Buddhist teacher, authorised as a lama in the Kagyu lineage, a yoga teacher and an author whose teaching joins Buddhist practice with personal and social liberation. He holds a Master of Divinity in Buddhist studies from Harvard Divinity School, where his focus was the meeting point of identity, social change and spiritual life. In 2018 he co-founded Bhumisparsha, a community set up to make tantric practice open and inclusive for practitioners in North America. He calls himself, with typical humour, a Black Buddhist Southern queen, and lets his Southern roots shape the way he teaches.\n\nHis books are Radical Dharma, written with others, Love and Rage, on working with anger as a path to freedom, and The New Saints, which invites readers to become everyday spiritual warriors. Much of his teaching draws on Tibetan deity practice: he guides practices of Tara, Chenrezig and other figures, offers self-paced courses such as one on the Heart Sutra and what he calls spiritual abolition, and hosts Free Radicals, a free monthly online gathering first set up for friends in the UK. He also leads daylong retreats in person, has taught at Kripalu, and speaks at universities and organisations; his manner is warm, frank and often funny, aimed at meeting people where they are.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "worldwide",
+      "city": null,
+      "country": null,
+      "subjects": [
+        "meditation",
+        "spiritual-awakening",
+        "spirituality"
+      ],
+      "website_url": "https://www.lamarod.com/",
+      "booking_url": "https://www.lamarod.com/events",
+      "youtube_url": "https://www.youtube.com/channel/UCbmQZbvDyLSe5X9AsOn8F0w",
+      "instagram_url": "https://www.instagram.com/lamarodofficial/",
+      "facebook_url": "https://www.facebook.com/lamarod/",
+      "twitter_url": "https://twitter.com/LamaRod1",
+      "tiktok_url": null,
+      "contact_email": "bookings@lamarod.com",
+      "image_urls": [
+        "https://yt3.googleusercontent.com/Sb6I7gfExlFuA3PrZBYlYY842zWGqZ9CFcRLctGmIzb2I1IdFaFdwtduV4og3rSuKcS9TWoM=s900-c-k-c0x00ffffff-no-rj"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "kripalu",
+      "role": "instructor"
+    }
+  ],
+  "videos": [],
+  "books": [
+    {
+      "title": "The New Saints: From Broken Hearts to Spiritual Warriors",
+      "slug": "the-new-saints",
+      "author": "Lama Rod Owens",
+      "asin": "164963000X",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "His newest book, mixing personal stories, traditional teachings and contemplative and body-based practices, on how ordinary people can become saints and spiritual warriors for their time.",
+      "subjects": [
+        "spiritual-awakening",
+        "spirituality"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/164963000X.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "Love and Rage: The Path of Liberation Through Anger",
+      "slug": "love-and-rage",
+      "author": "Lama Rod Owens",
+      "asin": "1623174090",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "A Buddhist look at anger: rather than bypassing it, he shows how to meet it honestly, feel it in the body and let it become a source of freedom.",
+      "subjects": [
+        "meditation",
+        "spiritual-awakening"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1623174090.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "Radical Dharma: Talking Race, Love, and Liberation",
+      "slug": "radical-dharma",
+      "author": "Rev. angel Kyodo williams, Lama Rod Owens and Jasmine Syedullah",
+      "asin": "1623170982",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "A three-way conversation between Buddhist teachers and a scholar on how dharma practice and the work of social liberation belong together.",
+      "subjects": [
+        "spirituality",
+        "meditation"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1623170982.01._SCLZZZZZZZ_.jpg"
+    }
+  ],
+  "courses": [
+    {
+      "title": "The Heart of Ma Tara: A Self-Guided Practice of Liberation & Boundless Compassion",
+      "url": "https://www.lamarod.com/matarapractice",
+      "description": "A self-paced series of talks, guided rituals and energetic practices invoking Tara, the female Buddha of compassion, with altar-making and reflections on figures who carry her spirit.",
+      "price": "$189.00 USD",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "image": "https://yt3.googleusercontent.com/Sb6I7gfExlFuA3PrZBYlYY842zWGqZ9CFcRLctGmIzb2I1IdFaFdwtduV4og3rSuKcS9TWoM=s900-c-k-c0x00ffffff-no-rj"
+    },
+    {
+      "title": "The Dharma of Spiritual Abolition: Self-Guided Course on the Heart Sutra",
+      "url": "https://www.lamarod.com/spiritualabolition",
+      "description": "Recorded talks and guided practice on the Heart Sutra, exploring form and emptiness and how living with contradiction can serve freedom for ourselves and others.",
+      "price": "$99.00 USD",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "non-duality"
+      ],
+      "image": "https://yt3.googleusercontent.com/Sb6I7gfExlFuA3PrZBYlYY842zWGqZ9CFcRLctGmIzb2I1IdFaFdwtduV4og3rSuKcS9TWoM=s900-c-k-c0x00ffffff-no-rj"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Free Radicals: A Monthly Online Community Gathering",
+      "url": "https://www.lamarod.com/free-radicals",
+      "description": "A free hour of practice and community online on the first Thursday of each month, timed for the UK but open to all, with captions; donations are welcome but optional.",
+      "featured": true,
+      "resource_type": "practice",
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://yt3.googleusercontent.com/Sb6I7gfExlFuA3PrZBYlYY842zWGqZ9CFcRLctGmIzb2I1IdFaFdwtduV4og3rSuKcS9TWoM=s900-c-k-c0x00ffffff-no-rj"
+    }
+  ],
+  "sprint": {
+    "sprint": "pipelines-3",
+    "hub": "sounds-true",
+    "rank": 298,
+    "hub_url": "https://www.soundstrue.com/collections/authors-lama-rod-owens",
+    "tier_evidence": "YouTube @lamarod: subscriber count not shown in the channel page served (6 Nov 2026); Instagram @lamarodofficial, Facebook, X and LinkedIn not readable without logging in (not tried) → counts unreadable → local_hero by default of evidence",
+    "email": "yes",
+    "email_source": "https://www.lamarod.com/contact",
+    "contact_form_url": "https://www.lamarod.com/contact",
+    "bio_check": "OK: no 8-word runs against 9 source(s)",
+    "flags": [
+      "Tier: no follower count could be read for any main account (YouTube hides the count in the page served; Instagram/Facebook/X need a login). He is widely featured (CNN, PBS, NPR per his site), so the true total may be higher; owner to judge.",
+      "Kripalu named on: https://www.lamarod.com/events (links a Kripalu programme, 'Land, Ancestors, and the World Beyond: Practicing Spiritual Abolition'); Kripalu page not opened (only kripalu.org/people pages may be read), so the programme isn't listed.",
+      "Email is a bookings inbox (bookings@lamarod.com), Cloudflare-obfuscated on the contact page and decoded; the contact page also has a booking form.",
+      "Slug rod-owens (no titles in slugs); name kept as 'Lama Rod Owens', as he is known.",
+      "Photo is his YouTube avatar; his site's images are on kajabi-cdn.com, whose robots.txt returns 403 to us, so none were used.",
+      "Political: his resources page features a talk with Angela Davis and Prentis Hemphill on 'our current political moment after the November 2024 U.S. elections' (left out). His wider work frames practice around social liberation and 'spiritual abolition'; not centred on political commentary in my reading, but the owner may want to look.",
+      "Radical Dharma is co-authored with Rev. angel Kyodo williams (rank 299 in this queue) and Jasmine Syedullah.",
+      "Book ISBNs from the bookshop.org links on his own site (lamarod.com/books, home page), converted from ISBN-13; not confirmed elsewhere."
+    ],
+    "left_out": [
+      "YouTube videos: his channel is almost all weekly Medicine Buddha practice sessions (borderline under the 'medical' wording, so left out) and short trailers under 2 minutes; the 'Intimate Connections' interview (VuOIoZ5qZZw) is on BDSM and sexuality, left out.",
+      "Resiliency Through Change and Grief (Melbourne, 4-6 Dec 2026): title framed on grief; left out as borderline under the health rule.",
+      "Basic Grief Practice (guided meditation): grief-framed, left out as borderline.",
+      "Medicine Buddha weekly gathering and Chenrezig's Ring of Fire: Medicine Buddha left out as borderline; Chenrezig has no page of its own (only an anchor on /deity).",
+      "Love and Rage Self-Guided ($189.00 USD) and Werk recordings: no page of their own (cart offers only).",
+      "Sacred Erotic Self-Guided: left out (sexuality-focused).",
+      "Atlanta daylong (31 Oct 2026), London evening (6 Oct 2026), Passing of Spirit Ceremony (1 Nov 2026): already past.",
+      "Learning & Practice Community: hosted on lamarod.podia.com, not opened.",
+      "Angela Davis election talk: political (see flags)."
+    ]
+  },
+  "images_final": true
+}

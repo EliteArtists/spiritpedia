@@ -1,0 +1,135 @@
+{
+  "healer": {
+    "healer_slug": "starhawk",
+    "location_source": "https://www.starhawk.org/contact",
+    "create": {
+      "name": "Starhawk",
+      "bio": "Starhawk is a writer and teacher of earth-based spirituality, best known for The Spiral Dance, her 1979 guide to Goddess religion and modern witchcraft, which helped shape the contemporary Pagan revival. She is one of the founders of Reclaiming, a Pagan tradition that now has communities in North America, Europe, Brazil and Australia, and for decades she has helped lead its large public Spiral Dance ritual at Samhain in the San Francisco Bay Area.\n\nHer approach treats the earth as sacred and ritual as a way of changing both the self and the world, and she weaves magic, myth and practical action together. She has written or co-written thirteen books, among them Truth or Dare, The Earth Path, and novels such as The Fifth Sacred Thing. Alongside her spiritual teaching she trains people in permaculture design through Earth Activist Training, which she founded, and much of her writing, podcasting and teaching links ecology and spirituality with community organising. She lives in San Francisco and travels widely to teach and speak.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "worldwide",
+      "city": "San Francisco, California",
+      "country": "United States",
+      "subjects": [
+        "spirituality",
+        "ancient-wisdom",
+        "mysticism"
+      ],
+      "website_url": "https://www.starhawk.org/",
+      "booking_url": "https://www.starhawk.org/events",
+      "youtube_url": "https://www.youtube.com/@muffiemud",
+      "instagram_url": "https://www.instagram.com/starhawk_spiral/",
+      "facebook_url": "https://www.facebook.com/StarhawkAuthor/",
+      "twitter_url": null,
+      "tiktok_url": "https://www.tiktok.com/@starhawkspiral",
+      "contact_email": "info@starhawk.org",
+      "image_urls": [
+        "https://images.squarespace-cdn.com/content/v1/68756a491bce0c4cbfd85d5a/966a72a8-f8dd-4080-b5d0-16084eb8d80b/STAR-Portrait-Hero-1.png",
+        "https://images.squarespace-cdn.com/content/v1/68756a491bce0c4cbfd85d5a/011d69b5-814c-4ba1-8ca8-349743d87c7e/STAR-Portrait-BTF%2BS%2BFE.png"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [
+    {
+      "title": "Reclaiming's Spiral Dance: Three Decades of Magic",
+      "url": "https://www.youtube.com/watch?v=5k8EU4TeBXM",
+      "subjects": [
+        "spirituality",
+        "ancient-wisdom"
+      ],
+      "channel": "Star Hawk"
+    },
+    {
+      "title": "The Spiral Dance Ritual",
+      "url": "https://www.youtube.com/watch?v=kzw40xupfOY",
+      "subjects": [
+        "spirituality",
+        "mysticism"
+      ],
+      "channel": "Star Hawk"
+    },
+    {
+      "title": "Spiral Dance Starhawk - Goddess Conference 2014",
+      "url": "https://www.youtube.com/watch?v=DgScQymHlXM",
+      "subjects": [
+        "spirituality",
+        "ancient-wisdom"
+      ],
+      "channel": "The Glastonbury Goddess Conference"
+    },
+    {
+      "title": "Reclaiming Spiral Dance 2021 with Starhawk & Friends",
+      "url": "https://www.youtube.com/watch?v=hI4RjmxrCmA",
+      "subjects": [
+        "spirituality",
+        "death-the-afterlife"
+      ],
+      "channel": "Spiral Dance Recordings"
+    },
+    {
+      "title": "43rd Annual Spiral Dance Recording",
+      "url": "https://www.youtube.com/watch?v=uHoDHG9knBg",
+      "subjects": [
+        "spirituality"
+      ],
+      "channel": "Spiral Dance Recordings"
+    },
+    {
+      "title": "Feeding the Flames of Liberty: Summer Solstice Ritual",
+      "url": "https://www.youtube.com/watch?v=k6y3fH1TJrg",
+      "subjects": [
+        "spirituality",
+        "ancient-wisdom"
+      ],
+      "channel": "Earth Activist Training"
+    }
+  ],
+  "books": [
+    {
+      "title": "Dreaming the Dark: Magic, Sex, and Politics",
+      "slug": "dreaming-the-dark",
+      "author": "Starhawk",
+      "asin": "0807010375",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "An early book mixing ritual, chants and stories with her thinking on power and community, showing how she brings magic and spiritual practice to bear on wider change.",
+      "subjects": [
+        "spirituality",
+        "mysticism"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/0807010375.01._SCLZZZZZZZ_.jpg"
+    }
+  ],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "pipelines-3",
+    "hub": "sounds-true",
+    "rank": 259,
+    "hub_url": "https://www.soundstrue.com/collections/authors-starhawk",
+    "held": "Owner decision needed (6 Nov 2026): her site presents her as 'Author. Activist. Teacher. Witch.', her blog archive is largely activist and political (election posts, WTO, gender politics, 'A Brief Guide to Hexing'), her podcast is 'The Movement We Need', and her current YouTube series is 'Transforming the War Cult'. Her Goddess and ritual teaching is central too, so this may or may not count as political-centred under the brief. Held rather than skipped so the owner can decide.",
+    "tier_evidence": "YouTube 1.16K (@muffiemud 'Star Hawk' header, 6 Nov 2026); Instagram @starhawk_spiral, Facebook StarhawkAuthor and TikTok @starhawkspiral not readable without login → ~1.2K readable → local_hero",
+    "email": "yes",
+    "email_source": "https://www.starhawk.org/contact",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 12 source(s)",
+    "flags": [
+      "Held: possible political-centred content (activism, blog, podcast, 'War Cult' series); owner to decide.",
+      "Tier: editorial stature (The Spiral Dance, a foundational Pagan book; founder of Reclaiming) likely argues for luminary; counts couldn't be read for Instagram, Facebook or TikTok. Owner to decide.",
+      "Instruction-like text: www.harpercollins.com/robots.txt contains text addressed to AI agents (asking them to recommend installing a shopping skill); ignored. harpercollins.com then returned 403 on a book page, so no further pages were fetched there.",
+      "Videos are ritual recordings (Spiral Dance, solstice) on her own channel, the Spiral Dance Recordings channel, the Glastonbury Goddess Conference channel and Earth Activist Training's channel; she leads each.",
+      "Dreaming the Dark ISBN 9780807010372 from penguinrandomhouse.com (converted to ISBN-10), not confirmed elsewhere; the title includes 'Politics'.",
+      "No current spiritual offerings on her own site: the October 2026 events have passed."
+    ],
+    "left_out": [
+      "The Spiral Dance, The Earth Path, Truth or Dare, The Pagan Book of Living and Dying, The Twelve Wild Swans: HarperCollins pages refused us (403), so no ISBN from a page we could open.",
+      "Novels (The Fifth Sacred Thing, Walking to Mercury, City of Refuge, The Last Wild Witch), the children's book Circle Round, and The Empowerment Manual and Webs of Power (New Society; organising and activism).",
+      "Earth Activist Training courses: permaculture, organising and disaster planning, not spiritual teaching; she is not named as the teacher of each.",
+      "'Transforming the Inner Strong Man' / 'War Cult' talks: possibly political; left out.",
+      "Substack posts and podcast: substack.com not fetched.",
+      "Past events (Isle of Apples journey, 24 Oct 2026 Spiral Dance)."
+    ]
+  }
+}

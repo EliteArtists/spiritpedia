@@ -1,0 +1,203 @@
+{
+  "healer": {
+    "healer_slug": "storm-faerywolf",
+    "location_source": "https://faerywolf.com/bio/",
+    "create": {
+      "name": "Storm Faerywolf",
+      "bio": "Storm Faerywolf is a witch, author and teacher who calls himself a professional warlock. Over more than thirty years he has been initiated into several streams of practical witchcraft, above all the Faery (Feri) tradition, where he has been given the Black Wand, the tradition's mark of a master, and he is also a Reiki master and a trained folk magician. He co-founded Black Rose Witchcraft, serves as chancellor of the online school Modern Witch University, writes a column for The Wild Hunt and has lectured, taught and led ritual in the United States and Europe.\n\nHis books include Betwixt and Between and Forbidden Mysteries of Faery Witchcraft, both drawing on Faery lore and practice, The Witch's Name, on taking a magical name, and The Satyr's Kiss, on queer spirituality and sacred sexuality in the Craft; Claiming the Witchfire, on energy work for witches, is due in 2027. He teaches online classes and private apprenticeships, offers consultations and candle and sigil work over Zoom, and hosts Witch Power Daily, a podcast of short guided trances, meditations and rituals. He lives in the San Francisco Bay Area, where he and his partners run an online shop for magical supplies.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "worldwide",
+      "city": "Antioch, California",
+      "country": "United States",
+      "subjects": [
+        "shamanism",
+        "spirituality",
+        "meditation"
+      ],
+      "website_url": "https://faerywolf.com/",
+      "booking_url": "https://faerywolf.com/services/",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "storm@faerywolf.com",
+      "image_urls": [
+        "https://faerywolf.com/wp-content/uploads/2025/08/Storm-Promo-2025-A.jpg",
+        "https://faerywolf.com/wp-content/uploads/2025/05/Storm-May-2025-a-1024x1024.jpg",
+        "https://faerywolf.com/wp-content/uploads/2026/03/Storm-03-04-2026-A.jpg"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "omega-institute",
+      "role": "instructor"
+    }
+  ],
+  "videos": [],
+  "books": [
+    {
+      "title": "Betwixt and Between",
+      "slug": "betwixt-and-between",
+      "author": "Storm Faerywolf",
+      "asin": "0738750158",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "An introduction to the Faery (Feri) path of American traditional witchcraft that comes from Victor and Cora Anderson and Gwydion Pendderwen, covering its history, ideas and foundational practices.",
+      "subjects": [
+        "spirituality",
+        "ancient-wisdom"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/0738750158.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "Forbidden Mysteries of Faery Witchcraft",
+      "slug": "forbidden-mysteries-of-faery-witchcraft",
+      "author": "Storm Faerywolf",
+      "asin": "0738756520",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "Darker rites from the Faery tradition, framed as facing one's fears and shadows to strengthen magical will, including oracular work and helping spirits cross over.",
+      "subjects": [
+        "shadow-work",
+        "mediumship-spirits"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/0738756520.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "The Satyr's Kiss",
+      "slug": "the-satyrs-kiss",
+      "author": "Storm Faerywolf",
+      "asin": "0738767700",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "A queer-centred guide to witchcraft for men, with spells, rituals and rites of passage, and a strong emphasis on sexuality as part of magical practice.",
+      "subjects": [
+        "spirituality",
+        "conscious-relationships"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/0738767700.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "The Witch's Name (Revised & Expanded Edition)",
+      "slug": "the-witchs-name",
+      "author": "Storm Faerywolf",
+      "asin": "196818516X",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "Explores the history and mythology of magical names and offers exercises, ritual and journaling for choosing one, for individuals and for covens.",
+      "subjects": [
+        "spirituality"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/196818516X.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "The Stars Within the Earth",
+      "slug": "the-stars-within-the-earth",
+      "author": "Storm Faerywolf",
+      "asin": "0615588107",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "A book of his poetry written as a grimoire of prayers, invocations and spells, finding the sacred within everyday and earthly themes.",
+      "subjects": [
+        "spirituality",
+        "mysticism"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/0615588107.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "Claiming the Witchfire",
+      "slug": "claiming-the-witchfire",
+      "author": "Storm Faerywolf",
+      "asin": "0738785199",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "A forthcoming book on the energy centres of the body as taught in Anderson Faery witchcraft, with breath and energy practices for ritual, sigils and spirit work. Due June 2027.",
+      "subjects": [
+        "breathwork",
+        "chakra-healing",
+        "spirituality"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/0738785199.01._SCLZZZZZZZ_.jpg"
+    }
+  ],
+  "courses": [
+    {
+      "title": "Black Rose Private Apprenticeship",
+      "url": "https://www.modernwitchuniversity.com/black-rose-private-apprenticeships/",
+      "description": "A one-to-one apprenticeship in Black Rose Witchcraft through Modern Witch University, with regular check-ins and optional group chats and online events. Places are limited.",
+      "price": "$100 per month",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "spirituality",
+        "shamanism"
+      ],
+      "image": "https://www.modernwitchuniversity.com/wp-content/uploads/2026/01/Private-Apprenticeships.jpg"
+    },
+    {
+      "title": "Private Consultations and Magical Services",
+      "url": "https://faerywolf.com/services/",
+      "description": "Private sessions with Storm over Zoom, plus candle spells and custom sigils worked on a client's behalf for positive aims. He does not perform curses or break-up spells.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "spirituality"
+      ],
+      "image": "https://faerywolf.com/wp-content/uploads/2026/09/Storm-Promo-2026-C.png"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Witch Power Daily",
+      "url": "https://faerywolf.com/witch-power-daily/",
+      "description": "A podcast of short episodes, each taking one theme and closing with a guided trance, meditation or ritual, to help build a steady daily practice.",
+      "featured": true,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "image": "https://faerywolf.com/wp-content/uploads/2022/09/IMG_8282.jpg"
+    }
+  ],
+  "sprint": {
+    "sprint": "pipelines-3",
+    "hub": "omega",
+    "rank": 211,
+    "hub_url": "https://www.eomega.org/people/storm-faerywolf",
+    "tier_evidence": "No YouTube channel linked; Instagram @faerywolf and Facebook faerywolf not readable without logging in → 0 readable → local_hero",
+    "email": "yes",
+    "email_source": "https://faerywolf.com/events/",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 15 source(s)",
+    "flags": [
+      "Omega named on: https://www.modernwitchuniversity.com/black-rose-private-apprenticeships/ (menu of Modern Witch University, the school he is chancellor of, linking eomega.org retreats such as Magickally Queer, June 2025). Not named on faerywolf.com itself; owner may prefer to drop the link. Omega page not opened: eomega.org returns 403 to us (6 Nov 2026).",
+      "Base: Antioch, California is the business mailing address of Satyr's Inc. in his site footer (a numbered mailbox; street not used); his bio says he lives in the San Francisco Bay Area. Regional: Antioch, California.",
+      "Email storm@faerywolf.com appears as text and an encoded mailto on his events page (for booking enquiries).",
+      "Subjects: no witchcraft subject exists in the list; 'shamanism' used as the nearest fit for trance and spirit work. Owner may prefer only 'spirituality'.",
+      "Tier counts unreadable (Instagram, Facebook); no YouTube channel.",
+      "Books: ISBNs from his own books page (faerywolf.com/books/), not confirmed elsewhere. Claiming the Witchfire is a pre-order (releases 8 June 2027).",
+      "Datura Trading Co. (online shop he runs with his partners) is shared with Mat Auryn and Devin Hunter; Modern Witch University is co-run with them.",
+      "Forbidden Mysteries of Faery Witchcraft covers demonic rituals, possession and necromancy as shadow work, and The Satyr's Kiss covers sex magic; kept as published books, flagged for tone."
+    ],
+    "left_out": [
+      "BlueLotus Reiki trilogy (Awakening/Becoming the BlueLotus): Reiki books, left out to keep to his witchcraft teaching (no health claim checked).",
+      "Free spells page: includes items such as 'A Spell for Sleep' and 'The Stone of Healing' (health framing), so not listed as a whole.",
+      "2025 Omega retreats and February 2026 ConVocation workshops (past).",
+      "Candle-spell prices are on daturatrading.com (not opened)."
+    ]
+  },
+  "images_final": true
+}

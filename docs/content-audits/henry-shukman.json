@@ -1,0 +1,167 @@
+{
+  "healer": {
+    "healer_slug": "henry-shukman",
+    "location_source": null,
+    "no_public_base": "His own site (henryshukman.com: home, about) and The Way's site do not say where he lives; they name him spiritual director emeritus of Mountain Cloud Zen Center in Santa Fe, New Mexico, and his book page suggests a Santa Fe bookshop, but no current base is stated. Not guessed.",
+    "create": {
+      "name": "Henry Shukman",
+      "bio": "Henry Shukman is an English-born Zen teacher, poet and author, appointed a teacher in the Sanbo Zen lineage in 2010 by Yamada Roshi, its international abbot. Raised in Oxford, he came to meditation through a love of Chinese Zen poetry, and after a sudden awakening at nineteen he trained for many years with Roshis John Gaynor, Joan Rieck and Ruben Habito as well as Yamada Roshi. Shinzen Young has also authorised him to teach mindfulness. For years he guided the Mountain Cloud Zen Center, a Santa Fe sangha, and he now holds the title of spiritual director emeritus there.\n\nBefore teaching he worked as a full-time writer, publishing prize-winning poetry and fiction, and his poems and essays have appeared in the New Yorker, the Guardian and the New York Times. In One Blade of Grass he wrote about his years of Zen training, while Original Love lays out his teaching as a journey through four 'inns' of practice, from mindfulness and support to absorption and finally awakening. With his nephew Jack he co-founded The Way, a meditation app that leads students along a single graded path of daily sessions he guides himself, and he teaches live online courses and retreats through it. He has taught at Esalen, Google and Harvard Business School.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "worldwide",
+      "city": null,
+      "country": null,
+      "subjects": [
+        "meditation",
+        "spiritual-awakening",
+        "mindfulness"
+      ],
+      "website_url": "https://henryshukman.com/",
+      "booking_url": "https://www.thewayapp.com/events",
+      "youtube_url": null,
+      "instagram_url": "https://www.instagram.com/henryshukman",
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": "https://www.tiktok.com/@henry.shukman",
+      "contact_email": null,
+      "image_urls": [
+        "https://www.thewayapp.com/assets/the-way/henry-shukman-portrait-hq.jpg"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "esalen",
+      "role": "instructor"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Welcome difficult feelings | An introduction to meditation with Zen Master Henry Shukman",
+      "url": "https://www.youtube.com/watch?v=h4uAhexYf_M",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "channel": "The Way App"
+    },
+    {
+      "title": "Open to the soundscape around you | An introduction to meditation with Zen Master Henry Shukman",
+      "url": "https://www.youtube.com/watch?v=jVuonewTRCE",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "channel": "The Way App"
+    },
+    {
+      "title": "Meet your thoughts with curiosity | An introduction to meditation with Zen Master Henry Shukman",
+      "url": "https://www.youtube.com/watch?v=2CFaIegIX3k",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "channel": "The Way App"
+    },
+    {
+      "title": "Find your foundation: posture and ease | An introduction to meditation with Zen Master Henry Shukman",
+      "url": "https://www.youtube.com/watch?v=HAMO0wWiq4A",
+      "subjects": [
+        "meditation"
+      ],
+      "channel": "The Way App"
+    },
+    {
+      "title": "Use your breath as an anchor | An introduction to meditation with Zen Master Henry Shukman",
+      "url": "https://www.youtube.com/watch?v=mlTWf28MAzI",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "channel": "The Way App"
+    },
+    {
+      "title": "Feel more grounded in just 30 seconds | An introduction to meditation with Zen Master Henry Shukman",
+      "url": "https://www.youtube.com/watch?v=vxQotcqQp9E",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "channel": "The Way App"
+    }
+  ],
+  "books": [],
+  "courses": [
+    {
+      "title": "Rest & Renew: An Online Mini-Retreat with Henry Shukman and Kelly Boys",
+      "url": "https://www.thewayapp.com/events/rest-and-renew",
+      "description": "Three hours of live online practice with Kelly Boys: Henry leads a long sitting in open, unhurried awareness and Kelly guides a lying-down rest practice, with time for questions.",
+      "price": "$45",
+      "product_type": "retreat",
+      "start_date": "2026-12-05",
+      "end_date": "2026-12-05",
+      "subjects": [
+        "meditation",
+        "non-duality"
+      ],
+      "image": "https://images.ctfassets.net/db647e76yckr/3wg2YPGvEZxIo6pdU2wm1g/4195f8f414accdf2c744db04220c9dcb/annie-spratt-0ZMDEBuA6Mk-unsplash_3.webp?w=3840&q=75&fm=webp"
+    },
+    {
+      "title": "The Way: Lifetime Subscription",
+      "url": "https://www.thewayapp.com/lifetime-subscription",
+      "description": "Lifelong access to The Way, his meditation app, which leads you step by step along one path of daily guided sessions from first steps to deeper practice.",
+      "price": "$699",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "spiritual-awakening"
+      ],
+      "image": "https://images.ctfassets.net/db647e76yckr/5XSZvjckVZT3wiDwZljz56/53e475dd100757e54a78ec5a53b3ba73/The-Way-App_cover-img_2000x.webp"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Just Sitting: Sample Guided Meditation from The Way",
+      "url": "https://www.thewayapp.com/wp-content/uploads/2023/12/1.4.6.-Just-Sitting.mp3",
+      "description": "A ten-minute guided sitting from his app, offered free on his contact page as a way to try his teaching.",
+      "featured": true,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://www.thewayapp.com/assets/the-way/henry-shukman-portrait-hq.jpg"
+    }
+  ],
+  "sprint": {
+    "sprint": "pipelines-3",
+    "hub": "sounds-true",
+    "rank": 302,
+    "hub_url": "https://www.soundstrue.com/collections/authors-henry-shukman",
+    "tier_evidence": "Instagram @henryshukman and TikTok @henry.shukman not readable without login (not tried); his site lists YouTube @ShukmanHenry but that handle returns 404 (6 Nov 2026); The Way's YouTube (@TheWayApp) is a company account, not counted → counts unreadable → local_hero",
+    "email": "contact form",
+    "email_source": null,
+    "contact_form_url": "https://henryshukman.com/contact",
+    "bio_check": "OK: no 8-word runs against 10 source(s)",
+    "flags": [
+      "Esalen named on: https://henryshukman.com/about ('has taught meditation at ... Esalen Institute').",
+      "Tier: no personal count readable; he is a widely published author (HarperOne, Counterpoint) and co-founder of a large app, so the owner may judge editorial stature.",
+      "Email: hello@henryshukman.com appears only in the page's hidden schema data (JSON-LD), so it is not used; contact form instead.",
+      "henryshukman.com robots.txt sets crawl-delay: 30; fetches were spaced 30+ seconds apart.",
+      "Photo is from thewayapp.com (his app's About page, robots allows all); henryshukman.com images sit on a CDN (assetcdn.net) whose robots.txt I did not read, so none were used.",
+      "Videos are from The Way app's channel, where he is the sole teacher.",
+      "Psychedelics: his home page links a Tim Ferriss interview titled 'Zen, Ayahuasca vs. Meditation, and an Intro to Koans' (left out). A single item, not his work; flagged per the sprint rule.",
+      "Base: Santa Fe, New Mexico is likely (Mountain Cloud emeritus; 'In Santa Fe? Order from Garcia St Books') but not stated as his home; owner may set it.",
+      "The free resource URL is a direct .mp3 file on thewayapp.com, linked from his contact page."
+    ],
+    "left_out": [
+      "Original Love (ISBN 0063356104 from henryshukman.com/writing/original-love) and One Blade of Grass (ISBN 1640092625 from henryshukman.com/writing/one-blade-of-grass): the blurbs on his own pages present the books as reducing stress, anxiety and depression, and as his recovery from depression, anxiety and eczema, so both were left out under the strict health rule. The owner may want to restore them with neutral descriptions.",
+      "Realizing The Way retreat (Mount Madonna, 8-11 Oct 2026) and Rice in the Bowl deep dive (from 1 Nov 2026): past or started.",
+      "2026 Live Online Program: already under way.",
+      "Tim Ferriss interview (ayahuasca in title).",
+      "The Way's short clips and testimonials (under 2 minutes)."
+    ]
+  },
+  "images_final": true
+}

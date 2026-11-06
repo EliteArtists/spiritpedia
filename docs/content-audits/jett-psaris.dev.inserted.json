@@ -1,0 +1,46 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 1051,
+    "healer_slug": "jett-psaris"
+  },
+  "rows": [
+    {
+      "table": "videos",
+      "id": 8565,
+      "slug": "jett-psaris-midlife-mastery-summit-interview",
+      "title": "Jett Psaris Midlife Mastery Summit Interview"
+    },
+    {
+      "table": "books",
+      "id": 2279,
+      "slug": "hidden-blessings",
+      "title": "Hidden Blessings: Midlife Crisis as a Spiritual Awakening"
+    },
+    {
+      "table": "books",
+      "id": 2280,
+      "slug": "undefended-love",
+      "title": "Undefended Love"
+    },
+    {
+      "table": "courses",
+      "id": "4c3a6ad6-78b5-46cb-88f4-3f3846919042",
+      "slug": "taking-the-midlife-leap-one-step-at-a-time-full-course",
+      "title": "Taking the Midlife Leap, One Step at a Time (full course)"
+    },
+    {
+      "table": "courses",
+      "id": "7c863693-3b45-4d45-961e-98260418f304",
+      "slug": "sessions-with-jett-psaris",
+      "title": "Sessions with Jett Psaris"
+    },
+    {
+      "table": "free_resources",
+      "id": "a3d70a52-b7c1-4235-86cf-9b499537e4ec",
+      "slug": "hidden-blessings-self-inquiry-study-guide",
+      "title": "Hidden Blessings Self-Inquiry Study Guide"
+    }
+  ],
+  "at": "2026-11-06T17:00:33.462Z"
+}

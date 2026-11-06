@@ -1,0 +1,236 @@
+{
+  "healer": {
+    "healer_slug": "theresa-reed",
+    "location_source": "https://www.thetarotlady.com/about/",
+    "create": {
+      "name": "Theresa Reed",
+      "bio": "Theresa Reed, known online as The Tarot Lady, has worked with tarot and astrology for around forty years. She bought her first deck as a teenager in a Catholic household where omens and superstition were part of family life, and went on to give readings to thousands of clients. Her approach is plain-spoken and practical: she treats the cards and the chart as tools for seeing a situation clearly and making better choices, not as fixed fate, and she avoids jargon in favour of everyday language.\n\nIn recent years she has stepped back from public readings to concentrate on writing and teaching. Her books include Twist Your Fate, Astrology for Real Life, The Book of Astrological Returns, Tarot: No Questions Asked, The Weiser Tarot Journal and The Tarot Coloring Book, and she co-created The Uncommon Tarot deck with Shaheen Miro. She teaches online courses in astrology and tarot technique, has taught at a tarot conference at the Omega Institute, publishes free monthly forecasts and card-by-card tarot meanings on her site, and mentors writers who want to publish books on spiritual subjects. She co-hosts the Talking Shop podcast with Briana Saussy and is based in Milwaukee, Wisconsin.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "worldwide",
+      "city": "Milwaukee, Wisconsin",
+      "country": "United States",
+      "subjects": [
+        "astrology",
+        "spirituality",
+        "mysticism"
+      ],
+      "website_url": "https://www.thetarotlady.com/",
+      "booking_url": "https://www.thetarotlady.com/classes-and-workshops/",
+      "youtube_url": null,
+      "instagram_url": "https://www.instagram.com/thetarotlady/",
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "hello@thetarotlady.com",
+      "image_urls": [
+        "https://www.thetarotlady.com/wp-content/uploads/2021/02/TheresaReed_print-0629.jpg",
+        "https://www.thetarotlady.com/wp-content/uploads/2021/02/TheresaReed_print-0646.jpg"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "omega-institute",
+      "role": "instructor"
+    }
+  ],
+  "videos": [],
+  "books": [
+    {
+      "title": "Astrology for Real Life",
+      "slug": "astrology-for-real-life",
+      "author": "Theresa Reed",
+      "asin": "1578636566",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "A beginner's guide to reading a birth chart, written in a casual, jargon-free voice. It covers signs, planets, houses and aspects with everyday examples.",
+      "subjects": [
+        "astrology"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1578636566.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "The Book of Astrological Returns: Your Complete Guide to Every Life Cycle from the Sun to Pluto",
+      "slug": "the-book-of-astrological-returns",
+      "author": "Theresa Reed",
+      "asin": "157863900X",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "A reference on planetary returns, explaining what each cycle, from the yearly solar return to the long Saturn and Pluto cycles, can mean for a person's life and how to work with it.",
+      "subjects": [
+        "astrology"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/157863900X.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "Twist Your Fate: Manifest Success with Astrology and Tarot",
+      "slug": "twist-your-fate",
+      "author": "Theresa Reed",
+      "asin": "1578637686",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "Shows how to combine tarot spreads and astrological timing to plan changes, choose good moments to act and move a stuck situation forward.",
+      "subjects": [
+        "astrology",
+        "manifestation"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1578637686.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "Tarot: No Questions Asked: Mastering the Art of Intuitive Reading",
+      "slug": "tarot-no-questions-asked",
+      "author": "Theresa Reed",
+      "asin": "1578637139",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "A guide to reading tarot intuitively while keeping a solid grounding in the traditional meanings, with exercises for building confidence as a reader.",
+      "subjects": [
+        "spirituality",
+        "mysticism"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1578637139.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "The Weiser Tarot Journal",
+      "slug": "the-weiser-tarot-journal",
+      "author": "Theresa Reed",
+      "asin": "1578638143",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "A structured journal for recording readings and reflections, usable with any deck, with prompts and pages designed to track a tarot practice over time.",
+      "subjects": [
+        "spirituality"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1578638143.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "The Tarot Coloring Book",
+      "slug": "the-tarot-coloring-book",
+      "author": "Theresa Reed",
+      "asin": "1622037901",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "Line drawings of all seventy-eight cards to colour in, each paired with notes on its symbolism, as a hands-on way for beginners to learn the deck.",
+      "subjects": [
+        "spirituality"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1622037901.01._SCLZZZZZZZ_.jpg"
+    }
+  ],
+  "courses": [
+    {
+      "title": "Astrology School (8-week foundational course)",
+      "url": "https://22teachings.com/product/astroschool2027/",
+      "description": "An eight-week online course run with 22 Teachings that covers the building blocks of astrology so students can interpret a chart with confidence.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": "2027-01-07",
+      "end_date": null,
+      "subjects": [
+        "astrology"
+      ],
+      "image": "https://i0.wp.com/22teachings.com/wp-content/uploads/2026/10/Astro-promo.png?fit=1080%2C1080&#038;ssl=1"
+    },
+    {
+      "title": "Advanced Tarot Techniques",
+      "url": "https://hierophantpublishing.com/advanced-tarot-techniques-2027/ref/19/",
+      "description": "A four-week online course that adds astrological correspondences, decans and other advanced methods to an existing tarot practice, with replays for those who miss a live class.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": "2027-01-19",
+      "end_date": null,
+      "subjects": [
+        "astrology",
+        "spirituality"
+      ],
+      "image": "https://hierophantpublishing.com/wp-content/uploads/2026/10/TheresaReed_print-4110.jpg"
+    },
+    {
+      "title": "Book Mentoring with Theresa Reed",
+      "url": "https://www.thetarotlady.com/book-mentoring/",
+      "description": "Three one-to-one sessions and a short astrology reading for people writing a book on tarot, astrology or other spiritual topics, covering proposals, publishers, contracts and making time to write.",
+      "price": "$1500 USD",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "astrology",
+        "life-coaching"
+      ],
+      "image": "https://www.thetarotlady.com/wp-content/uploads/2024/06/TheresaReed_print-4015.jpg"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Tarot Card by Card",
+      "url": "https://www.thetarotlady.com/tarot-card-meanings/",
+      "description": "Her free card-by-card guide to tarot meanings, including reversals and practical advice for each card.",
+      "featured": true,
+      "resource_type": "practice",
+      "subjects": [
+        "spirituality",
+        "mysticism"
+      ],
+      "image": "https://www.thetarotlady.com/wp-content/uploads/2022/07/6rYe9q7M.jpeg"
+    },
+    {
+      "title": "Monthly Forecasts and Horoscopes",
+      "url": "https://www.thetarotlady.com/work-with-theresa/forecasts-and-predictions/",
+      "description": "Free monthly astrological forecasts that walk through the month's main transits, new and full moons and what they may bring.",
+      "featured": false,
+      "resource_type": "download",
+      "subjects": [
+        "astrology"
+      ],
+      "image": "https://www.thetarotlady.com/wp-content/uploads/2022/07/PtmvhFWk.jpeg"
+    },
+    {
+      "title": "Tarot by the Mouthful",
+      "url": "https://www.thetarotlady.com/tarot-by-the-mouthful/",
+      "description": "A free series, made with a food-loving co-author, that pairs each tarot card with a recipe, a story and reflections on its meaning.",
+      "featured": false,
+      "resource_type": "practice",
+      "subjects": [
+        "spirituality"
+      ],
+      "image": "https://www.thetarotlady.com/wp-content/uploads/2015/03/Tarot-by-the-Mouthful.png"
+    }
+  ],
+  "sprint": {
+    "sprint": "pipelines-3",
+    "hub": "sounds-true",
+    "rank": 106,
+    "hub_url": "https://www.soundstrue.com/collections/authors-theresa-reed",
+    "tier_evidence": "Instagram @thetarotlady, Facebook, X and Pinterest linked from her site; none readable without login (not tried); no YouTube channel linked → 0 readable → local_hero (counts unreadable for main accounts)",
+    "email": "yes",
+    "email_source": "https://www.thetarotlady.com/",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 15 source(s)",
+    "flags": [
+      "Sounds True list used as names only; soundstrue.com not opened (The Tarot Coloring Book is a Sounds True title; ISBN taken from her own page).",
+      "Omega named on own site: https://www.thetarotlady.com/about/ (taught at the Masters of Tarot conference at the Omega Institute); Omega link added.",
+      "Tier: no follower counts readable (Instagram is her main account); human check advised.",
+      "Possible pair: she co-hosts the Talking Shop podcast with Briana Saussy, who is the next lead (rank 107) in this chunk; they are separate teachers with separate sites, so separate listings.",
+      "Regional: Milwaukee, Wisconsin.",
+      "robots.txt asks for Crawl-delay 5; fetches were spaced 5 seconds apart.",
+      "Her Patreon mentions 'political astrology' among its posts; Patreon is not listed and nothing on the site is centred on politics.",
+      "Course pages at 22teachings.com and hierophantpublishing.com were linked from her classes page but not opened; prices unknown and the Hierophant link carries her referral code.",
+      "No videos: she has no YouTube channel linked from her site.",
+      "Book ISBNs/ASINs from the store links on her own book pages (thetarotlady.com), not confirmed elsewhere. redwheelweiser.com links on her pages were not opened (off limits)."
+    ],
+    "left_out": [
+      "The Cards You're Dealt: blurb on her site frames it around grief, illness and caregiving; left out under the health rule.",
+      "Tarot for Troubled Times, Tarot for Kids, Create Your Own Tarot Cards, The Uncommon Tarot deck: book pages not opened for ISBNs.",
+      "Patreon community and Astro-Biz Digest: subscription items, not opened.",
+      "One-to-one readings: on hiatus for the general public."
+    ]
+  },
+  "images_final": true
+}

@@ -1,0 +1,165 @@
+{
+  "healer": {
+    "healer_slug": "wu-de",
+    "location_source": "https://globalteahut.org/pages/about",
+    "create": {
+      "name": "Wu De",
+      "bio": "Wu De, born Aaron Fisher in a small Ohio town, is a teacher of Cha Dao, the Way of Tea, who treats the simple act of preparing and sharing tea as a form of Zen practice and self-cultivation. Martial arts first drew him towards Eastern traditions; he went on to read anthropology and Asian philosophy at college, began meditating, and after graduating spent several years in India before travelling on through Asia and settling first in Japan and then in Taiwan. His name is a short form of his Zen dharma name, Wu Wei Hai.\n\nFor over ten years the centre he helped found, Tea Sage Hut in Miaoli, ran free ten-day courses in tea and meditation on a donation basis, until it closed in 2019. He now works through Global Tea Hut, still based in Miaoli, where he edits its quarterly tea magazine, read in more than sixty countries, and records online courses ranging from ceremonial tea and gongfu brewing to guided meditation and the evening Zen talks once given on retreat. He also travels to lead tea workshops and gatherings, and the organisation is raising funds for a new centre in Taiwan, Light Meets Life.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "worldwide",
+      "city": "Miaoli",
+      "country": "Taiwan",
+      "subjects": [
+        "meditation",
+        "spirituality",
+        "ancient-wisdom"
+      ],
+      "website_url": "https://globalteahut.org/",
+      "booking_url": "https://www.teahutcourses.com/",
+      "youtube_url": "https://www.youtube.com/@globalteahut",
+      "instagram_url": "https://www.instagram.com/globalteahut/",
+      "facebook_url": "https://www.facebook.com/GlobalTeaHut",
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "connect@globalteahut.org",
+      "image_urls": [
+        "https://globalteahut.org/cdn/shop/files/Square-portrait-V3.jpg?v=1743818178&width=1200"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [
+    {
+      "title": "History of Bowl Tea Course: Part I",
+      "url": "https://www.youtube.com/watch?v=EAuH2rnrVOw",
+      "subjects": [
+        "ancient-wisdom",
+        "spirituality"
+      ],
+      "channel": "Global Tea Hut"
+    },
+    {
+      "title": "Thoughts on Leaves in a Bowl Tea",
+      "url": "https://www.youtube.com/watch?v=1LC837ycyIc",
+      "subjects": [
+        "meditation",
+        "ancient-wisdom"
+      ],
+      "channel": "Global Tea Hut"
+    },
+    {
+      "title": "Universe in a Tea Bowl",
+      "url": "https://www.youtube.com/watch?v=BQ6F3z2Gyjw",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "channel": "Global Tea Hut"
+    }
+  ],
+  "books": [],
+  "courses": [
+    {
+      "title": "Intro to Cha Dao",
+      "url": "https://www.teahutcourses.com/courses/wayoftea",
+      "description": "A self-paced online course in ceremonial tea as a daily practice: two traditional tea ceremonies, the details of water and leaf, tea as self-cultivation, and three meditation instructions plus a closing metta session, with about fourteen hours of teaching.",
+      "price": "$148",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "ancient-wisdom",
+        "spirituality"
+      ],
+      "image": "https://globalteahut.org/cdn/shop/files/Square-portrait-V3.jpg?v=1743818178&width=1200"
+    },
+    {
+      "title": "Meditation Instructions: Guided Audio Course with Wu De",
+      "url": "https://www.teahutcourses.com/courses/meditation-instructions",
+      "description": "Seven hour-long guided sittings, audio only, that move from posture and breath to working with a wandering mind and resting in awareness, giving less instruction and more silence as they go. A bonus bowl-tea meditation is included.",
+      "price": "$108",
+      "product_type": "download",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://globalteahut.org/cdn/shop/files/Square-portrait-V3.jpg?v=1743818178&width=1200"
+    },
+    {
+      "title": "Ten Day Discourses",
+      "url": "https://www.teahutcourses.com/courses/ten-day-discourses",
+      "description": "Recorded evening talks on Zen and daily life from the ten-day courses once held at Tea Sage Hut, with two meditation instructions, a closing metta, chants and a small course book; suited to a self-retreat at home.",
+      "price": "$98",
+      "product_type": "download",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "image": "https://globalteahut.org/cdn/shop/files/Square-portrait-V3.jpg?v=1743818178&width=1200"
+    },
+    {
+      "title": "Wu De at Ojai Tea Hut",
+      "url": "https://globalteahut.org/pages/events",
+      "description": "A week of tea gatherings and workshops with Wu De in Ojai, California: an open-house community gathering, then evening and weekend sessions on the Way of Tea, the seven genres of tea, gongfu brewing and Taiwanese tea, closing on the last morning with boiled tea and live musicians.",
+      "price": "Contact for pricing",
+      "product_type": "retreat",
+      "start_date": "2026-11-15",
+      "end_date": "2026-11-22",
+      "subjects": [
+        "meditation",
+        "ancient-wisdom"
+      ],
+      "image": "http://globalteahut.org/cdn/shop/files/Tea_Under_Plum_Blossoms_2a_21feaf39-dbb3-4cfb-93be-a4213edbe564.jpg?v=1674361912"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "History of Bowl Tea (free mini-course)",
+      "url": "https://www.teahutcourses.com/courses/historyofbowltea",
+      "description": "A short free online course of three lectures on the story of bowl tea, the first given by Wu De on modern tea culture, plus a bonus video on bowl tea and Buddhism.",
+      "featured": false,
+      "resource_type": "mini_course",
+      "subjects": [
+        "ancient-wisdom",
+        "spirituality"
+      ],
+      "image": "https://globalteahut.org/cdn/shop/files/Square-portrait-V3.jpg?v=1743818178&width=1200"
+    }
+  ],
+  "sprint": {
+    "sprint": "pipelines-3",
+    "hub": "esalen",
+    "rank": 291,
+    "hub_url": "https://www.esalen.org/faculty/wu-de",
+    "tier_evidence": "YouTube @globalteahut 13.8K subscribers (channel header, 6 Nov 2026; the organisation's channel); Instagram and Facebook linked but not readable without login → readable total ~13.8k → local_hero",
+    "email": "yes",
+    "email_source": "https://globalteahut.org/pages/about",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 10 source(s)",
+    "flags": [
+      "No Esalen mention on globalteahut.org or teahutcourses.com pages read: listed without the link.",
+      "Own site is his organisation's: globalteahut.org (a Shopify tea and teaware shop with a non-profit arm) and its course site teahutcourses.com; he is named there as founder-teacher and magazine editor. Email connect@globalteahut.org is the organisation's inbox.",
+      "Scope: much of the site is tea and teaware sales; the listing keeps to Cha Dao as Zen practice, meditation courses and talks. Owner may judge whether a tea teacher fits.",
+      "Health: the organisation frames tea as 'plant medicine' and one book is 'Tea Medicine'; the Tea, Zen & Qigong retreat course mentions acupuncture and Chinese herbs. Those were left out and kept out of descriptions.",
+      "Reputation: search snippets mention online criticism of 'cultism' around the community (Nick Kembel blog, a tea forum); not opened or verified, noted for the owner.",
+      "Base: Miaoli, Taiwan from the site footer ('Global Tea Hut · Miaoli, Taiwan') and the team bios; the organisation's base, taken as his. Regional gap: Taiwan.",
+      "Videos are on the Global Tea Hut channel; only 'History of Bowl Tea Course: Part I' is confirmed as his (course page says he gives the first lecture). The other two: speaker not confirmed.",
+      "Ojai week: event page shows only 'Sliding scale' for the open house and no prices for the workshops, so 'Contact for pricing'; two sessions already sold out. Registration is on ojaiteahut.com (not opened).",
+      "No books listed: no ISBN on any page opened."
+    ],
+    "left_out": [
+      "Orange County week with Village Tea Hut (7–13 Nov 2026): starts before 10 Nov.",
+      "Quarterly tea subscription ($98 per quarter): a tea box with the magazine, mainly a product sale.",
+      "Tea, Zen & Qigong course: acupuncture and herbs in its framing.",
+      "Charcoal, gongfu, seven genres, incense and boiled tea courses, and bundles: tea craft rather than teaching practice.",
+      "Books (The Way of Tea, Tea Medicine and others): no ISBN from an opened page; Tea Medicine also health-framed.",
+      "Teaware, tea and incense shop items; Wu De's paintings site (teadyedart.com, not opened)."
+    ],
+    "held": "Lead, 6 Nov 2026: held for the owner. Search results show online criticism of his tea community (Global Tea Hut) as cult-like (not opened or checked); two of his three videos have unconfirmed speakers. Same line as Sai Maa."
+  }
+}

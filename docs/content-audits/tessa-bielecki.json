@@ -1,0 +1,124 @@
+{
+  "healer": {
+    "healer_slug": "tessa-bielecki",
+    "location_source": "https://sandandsky.org/about/",
+    "create": {
+      "name": "Tessa Bielecki",
+      "bio": "Tessa Bielecki is a Christian contemplative, writer and retreat leader who now lives as an 'urban hermit' in Tucson, Arizona. Born in Connecticut, she studied languages with a career in diplomacy in mind, but in 1965 she met the Carmelite priest William McNamara and with him founded the Spiritual Life Institute, a monastic community open to both women and men. As its Mother Abbess for close to forty years she helped build hermitages in Arizona, Colorado, Nova Scotia and Ireland, and co-edited the community's magazine, Desert Call.\n\nHer teaching draws on three streams of Christian contemplation, Carmelite, Celtic and the desert mothers and fathers, and she is best known for her books on Teresa of Avila, including Holy Daring and Ecstasy and Common Sense, along with the Sounds True audio course Wild at Heart. After leaving the institute in 2005 she and her long-time colleague Fr Dave Denny set up the Desert Foundation, a small circle of friends exploring desert wisdom and fostering friendship between Jews, Christians and Muslims; together they wrote Season of Glad Songs and Desert Voices and taught a course on Christian mysticism at Colorado College. She still leads retreats and workshops and sends a monthly email called Seasons.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local_online",
+      "city": "Tucson, Arizona",
+      "country": "United States",
+      "subjects": [
+        "mysticism",
+        "spirituality",
+        "meditation"
+      ],
+      "website_url": "https://sandandsky.org/",
+      "booking_url": null,
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "info@desertfound.org",
+      "image_urls": [
+        "https://sandandsky.org/wp-content/uploads/2022/06/TaraCrop.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [
+    {
+      "title": "Holy Daring: The Earthy Mysticism of St. Teresa, the Wild Woman of Avila",
+      "slug": "holy-daring",
+      "author": "Tessa Bielecki",
+      "asin": "1939681596",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "A revised edition of her portrait of Teresa of Avila, showing how the saint's lively, down-to-earth life fed her mysticism.",
+      "subjects": [
+        "mysticism",
+        "spirituality"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1939681596.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "Teresa of Avila: Ecstasy and Common Sense",
+      "slug": "teresa-of-avila-ecstasy-and-common-sense",
+      "author": "Tessa Bielecki",
+      "asin": "1570621675",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "Selections from Teresa of Avila's writings with her commentary, balancing the saint's mystical fire with her practical good sense.",
+      "subjects": [
+        "mysticism"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1570621675.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "Teresa of Avila: Mystical Writings",
+      "slug": "teresa-of-avila-mystical-writings",
+      "author": "Tessa Bielecki",
+      "asin": "0824525043",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "An introduction to Teresa of Avila's mystical writings, presented and explained for today's readers.",
+      "subjects": [
+        "mysticism"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/0824525043.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "Season of Glad Songs: A Christmas Anthology",
+      "slug": "season-of-glad-songs",
+      "author": "Tessa Bielecki and David Denny",
+      "asin": "061591814X",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "Poems, essays, rituals, blessings and practical ideas for keeping Advent, Christmas and Epiphany as a quiet, soulful season.",
+      "subjects": [
+        "spirituality"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/061591814X.01._SCLZZZZZZZ_.jpg"
+    }
+  ],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "pipelines-3",
+    "hub": "sounds-true",
+    "rank": 311,
+    "hub_url": "https://www.soundstrue.com/collections/authors-tessa-bielecki",
+    "tier_evidence": "No social accounts or YouTube channel linked from sandandsky.org (home, about, connect show unlabelled 'Follow' buttons only) → counts unreadable → local_hero",
+    "email": "yes",
+    "email_source": "https://sandandsky.org/connect/",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 6 source(s)",
+    "flags": [
+      "No personal site: her about page says she is 'designing her own web site'. sandandsky.org is the Desert Foundation's site, which she co-founded and co-leads with Fr Dave Denny; it is linked as her site from her Monkfish author page. info@desertfound.org is the foundation's inbox (resident-teacher rule).",
+      "Political: the Desert Foundation blog has posts on justice and Israel-Palestine (e.g. 'Israel and Palestine: Broken Brothers Healing', Aug 2026) and Desert Voices speaks of peacemaking and social justice. Its focus is interfaith friendship and desert spirituality; left out Desert Voices and those posts. Owner may want to look.",
+      "Base: Tucson, Arizona from the Desert Foundation about page (site footer says © 2023); her Monkfish bio (2016 book page) still says Crestone, Colorado. The foundation's mailing address is a PO box in Cortaro, AZ (a Tucson area).",
+      "Photo file is named 'TaraCrop.jpg' (probably the photographer's name); it sits in her section of the About page and matches her Monkfish author photo, so I am fairly sure it is her. The Monkfish photo itself is 210 px and was not used.",
+      "Thin listing: 4 books only; no current offerings or free resources on pages I could read. She is in her early 80s and the site says she teaches retreats and workshops, but none are listed.",
+      "Book ASINs: Ecstasy and Common Sense, Mystical Writings and Season of Glad Songs from the Amazon links on sandandsky.org/about/; Holy Daring ISBN from monkfishpublishing.com/product/holy-daring/, converted from ISBN-13.",
+      "spiritualityandpractice.com (her e-course 'Wisdom of the Christian Mystics') served a Cloudflare challenge page instead of robots.txt; treated as blocked and not retried.",
+      "Ed Bastian (rank 294, ed-bastian.json): her about page links his Interspiritual Companioning page (spiritualpaths.net); an anthology link between them was noted earlier in this run but not re-checked.",
+      "Book title match: the ingest notes both Teresa of Avila books share a main title with a Mirabai Starr book (id 1713); hers are different books (Mirabai Starr translated Teresa separately)."
+    ],
+    "left_out": [
+      "Desert Voices: The Edge Effect (with Dave Denny): borderline political (peacemaking, Israel-Palestine).",
+      "Wild at Heart (Sounds True audio course): Sounds True is names only.",
+      "Wisdom of the Christian Mystics e-course (spiritualityandpractice.com): site blocked.",
+      "Podcasts on Messy Jesus Business and Contemplify, and the Fire and Light podcast: external pages not opened.",
+      "How Do You Pray? (Monkfish anthology): she is one contributor of many."
+    ]
+  },
+  "images_final": true
+}

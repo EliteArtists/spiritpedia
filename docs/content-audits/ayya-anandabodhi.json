@@ -1,0 +1,159 @@
+{
+  "healer": {
+    "healer_slug": "ayya-anandabodhi",
+    "location_source": "https://parayanavihara.org/",
+    "create": {
+      "name": "Ayya Anandabodhi",
+      "bio": "Ayya Anandabodhi is a Welsh-born Theravada Buddhist nun (bhikkhuni) and the spiritual director of Pārāyana Vihāra, a small residence for women monastics in Port Townsend, Washington. She grew up near the Preseli hills in west Wales and first met the Buddha's teaching as a teenager through a book on the Four Noble Truths. At twenty-four she began monastic training at Amaravati in England under Ajahn Sumedho, and spent around seventeen years in the Siladhara order of the Thai Forest tradition. In 2009 she moved to the United States with Ayya Santacitta to found Aloka Vihara, hoping to open more room for women in monastic life, and in 2011 the two received full bhikkhuni ordination.\n\nAfter the community's forest monastery in the Sierra foothills became unworkable following the 2021 Caldor Fire, she started Pārāyana Vihāra in 2023, where she now trains and ordains other nuns. Her teaching draws on the early Buddhist discourses, community life and the lessons of the natural world. At the vihara she leads a Sunday gathering with a shared meal, chanting, meditation and a talk, and a Wednesday evening puja, and her Sunday talks are posted online.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local_online",
+      "city": "Port Townsend, Washington",
+      "country": "United States",
+      "subjects": [
+        "meditation",
+        "ancient-wisdom",
+        "mindfulness"
+      ],
+      "website_url": "https://parayanavihara.org/",
+      "booking_url": "https://parayanavihara.org/events/",
+      "youtube_url": "https://www.youtube.com/@ParayanaVihara",
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": null,
+      "image_urls": [
+        "https://parayanavihara.org/wp-content/uploads/2025/01/Ayya-Anandabodhi.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [
+    {
+      "title": "Practicing with the Sound of Silence - Spirit Rock Retreat 05-19-26",
+      "url": "https://www.youtube.com/watch?v=HZtHIgO55Lk",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "channel": "Parayana Vihara"
+    },
+    {
+      "title": "Start Where You Are - Sunday Dhamma Talk 06-07-26",
+      "url": "https://www.youtube.com/watch?v=W1RNId4gi7Q",
+      "subjects": [
+        "meditation",
+        "ancient-wisdom"
+      ],
+      "channel": "Parayana Vihara"
+    },
+    {
+      "title": "Different Ways of Cultivating the Path - Sunday Dhamma Talk 06-14-26",
+      "url": "https://www.youtube.com/watch?v=R7em81mtgeM",
+      "subjects": [
+        "meditation",
+        "ancient-wisdom"
+      ],
+      "channel": "Parayana Vihara"
+    },
+    {
+      "title": "The Path of the Salmon - 4th Sunday Dhamma Talk 07 26 26",
+      "url": "https://www.youtube.com/watch?v=VMmNAZdeOvU",
+      "subjects": [
+        "spiritual-awakening",
+        "meditation"
+      ],
+      "channel": "Parayana Vihara"
+    },
+    {
+      "title": "Life is Messy - Sunday Dhamma Talk 09-20-26",
+      "url": "https://www.youtube.com/watch?v=OZuFvmxQBA0",
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "channel": "Parayana Vihara"
+    },
+    {
+      "title": "Inner and Outer Knowing - Sunday Dhamma Talk 09-27-26",
+      "url": "https://www.youtube.com/watch?v=OUiqX_uvAdA",
+      "subjects": [
+        "meditation",
+        "ancient-wisdom"
+      ],
+      "channel": "Parayana Vihara"
+    }
+  ],
+  "books": [],
+  "courses": [
+    {
+      "title": "Sunday at the Vihara",
+      "url": "https://parayanavihara.org/event/sunday-at-the-vihara-64/",
+      "description": "A weekly open day at the Port Townsend vihara: a shared meal offered to the nuns, time for tea and conversation, then an afternoon programme of chanting, meditation, a Dhamma talk and sharing. Everyone is welcome, and an RSVP helps with the meal.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "ancient-wisdom"
+      ],
+      "image": "https://parayanavihara.org/wp-content/uploads/2025/09/IMG_1549-scaled.jpeg"
+    },
+    {
+      "title": "Wednesday Evening Puja",
+      "url": "https://parayanavihara.org/event/wednesday-evening-puja-46/",
+      "description": "The community's regular evening practice of meditation and chanting at the vihara, open to visitors who arrive a few minutes before the start.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://parayanavihara.org/wp-content/uploads/2025/02/25.-HomageJPG-scaled.jpg"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Ayya Anandabodhi's talks on Dharma Seed",
+      "url": "https://dharmaseed.org/teacher/379/",
+      "description": "Her archive of recorded Dhamma talks and guided meditations, linked from the vihara's Past Teachings page and free to stream or download.",
+      "featured": true,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation",
+        "ancient-wisdom"
+      ],
+      "image": "https://parayanavihara.org/wp-content/uploads/2025/01/Ayya-Anandabodhi.jpg"
+    }
+  ],
+  "sprint": {
+    "sprint": "pipelines-3",
+    "hub": "ims",
+    "rank": 16,
+    "hub_url": "https://www.dharma.org/teacher/ayya-anandabodhi/",
+    "tier_evidence": "YouTube @ParayanaVihara (the vihara's channel, which carries her talks): subscriber count not found in the /videos page data (6 Nov 2026), unreadable; videos show roughly 50 to 280 views; Facebook group and Bluesky linked but not opened → 0 readable → local_hero",
+    "email": "contact form",
+    "email_source": null,
+    "contact_form_url": "https://parayanavihara.org/contact/",
+    "bio_check": "OK: no 8-word runs against 9 source(s)",
+    "flags": [
+      "Resident teacher rule: Pārāyana Vihāra is the monastery she founded and leads as spiritual director, so its site is treated as her own and its regular programmes count as hers. No published email; the site has a contact form only.",
+      "No IMS mention on own site: listed without the link. (Ayya Santacitta's site lists an IMS retreat the two will co-lead in April 2028, but that is not her own site.)",
+      "Regional: Port Townsend, Washington (Olympic Peninsula), outside the big US coastal cities.",
+      "YouTube channel @ParayanaVihara is the vihara's channel, not a personal one; each chosen video's description (watch page, read 6 Nov 2026) names Ayya Anandabodhi as the speaker, and all passed oEmbed (200). The channel serves some titles machine-translated into Portuguese in this region, so English titles were taken from oEmbed. Videos are all 2026 Sunday talks; a most-viewed sort was not available.",
+      "Course URLs are single dated instances of weekly events (Sunday 29 Nov and Wednesday 18 Nov 2026), as the site has no general page for each; listed undated as repeating programmes. The community is in winter retreat 15 Jan to 18 Mar each year.",
+      "Photos: the vihara's portrait of her (500 x 557, wearing glasses) and the dharma.org photo (2449 x 1999 WebP, without glasses); both looked at and appear to be the same woman, though the glasses make it a little less certain.",
+      "Possible link to another sprint teacher: Ayya Santacitta (rank 17) co-founded Aloka Vihara with her; separate communities now, separate listings.",
+      "The dharma.org photo was dropped by the ingest dry run (dharma.org dropped the ingest's connection, 6 Nov 2026); only the vihara's portrait remains."
+    ],
+    "left_out": [
+      "Saturday Almsround at the Port Townsend Farmers Market: an almsround for the nuns, not a teaching programme.",
+      "Portuguese-titled video uploads: same talks, translated titles.",
+      "Books: none found."
+    ]
+  },
+  "images_final": true
+}

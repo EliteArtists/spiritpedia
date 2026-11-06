@@ -1,0 +1,51 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 1053,
+    "healer_slug": "rod-owens"
+  },
+  "rows": [
+    {
+      "table": "books",
+      "id": 2284,
+      "slug": "the-new-saints",
+      "title": "The New Saints: From Broken Hearts to Spiritual Warriors"
+    },
+    {
+      "table": "books",
+      "id": 2285,
+      "slug": "love-and-rage",
+      "title": "Love and Rage: The Path of Liberation Through Anger"
+    },
+    {
+      "table": "books",
+      "id": 2286,
+      "slug": "radical-dharma",
+      "title": "Radical Dharma: Talking Race, Love, and Liberation"
+    },
+    {
+      "table": "courses",
+      "id": "5d7141b8-25ed-42fb-9d24-842d87a4c8a1",
+      "slug": "the-heart-of-ma-tara-a-self-guided-practice-of-liberation-boundless-compassion",
+      "title": "The Heart of Ma Tara: A Self-Guided Practice of Liberation & Boundless Compassion"
+    },
+    {
+      "table": "courses",
+      "id": "bdf2094d-7e06-4217-a065-cdbd0f9ed9a8",
+      "slug": "the-dharma-of-spiritual-abolition-self-guided-course-on-the-heart-sutra",
+      "title": "The Dharma of Spiritual Abolition: Self-Guided Course on the Heart Sutra"
+    },
+    {
+      "table": "free_resources",
+      "id": "6350cc36-7d11-4f9f-a1e3-97f0af5bc7b0",
+      "slug": "free-radicals-a-monthly-online-community-gathering",
+      "title": "Free Radicals: A Monthly Online Community Gathering"
+    },
+    {
+      "table": "hub_teachers",
+      "id": "0e5e96b6-41f6-4461-94df-312a3eb3db64",
+      "title": "rod-owens teaches at Kripalu Center for Yoga & Health"
+    }
+  ],
+  "at": "2026-11-06T17:40:01.665Z"
+}

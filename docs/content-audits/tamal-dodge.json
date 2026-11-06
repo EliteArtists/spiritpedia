@@ -1,0 +1,130 @@
+{
+  "healer": {
+    "healer_slug": "tamal-dodge",
+    "location_source": "https://www.yogasalt.com/contact/",
+    "create": {
+      "name": "Tamal Dodge",
+      "bio": "Tamal Dodge grew up in Hawaii inside his family's yoga ashram, so practice and teaching were part of daily life for him from childhood. He went on to found Yoga Salt, first as a Los Angeles studio and now as a vinyasa studio in downtown Wilmington, North Carolina, where he still leads classes alongside a team of teachers. Over the years he has also made several instructional yoga DVDs aimed at beginners and at energy and relaxation, and he has toured to give workshops and teacher trainings around the United States.\n\nTeacher training is the centre of his work. His 200-hour course mixes asana, breathing practice and alignment with yogic philosophy, meditation, the subtle body and the history of yoga, and the studio reports more than a thousand graduates. With JJ Cook he also runs an advanced 300-hour immersion in Costa Rica. Outside the classroom he hosts meditation sessions, and with his wife Victoria he wrote The Yoga Plate, a vegan cookbook built around ahimsa, the principle of not causing harm; the two are now planning plant-based cooking classes at the studio. He describes his aim as helping students live peacefully in the world without being swept along by it, and to treat yoga as a whole way of living.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local",
+      "city": "Wilmington, North Carolina",
+      "country": "United States",
+      "subjects": [
+        "yoga",
+        "meditation"
+      ],
+      "website_url": "https://www.yogasalt.com/",
+      "booking_url": "https://www.yogasalt.com/teacher-training/",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "yogasaltwilmington@gmail.com",
+      "image_urls": []
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [
+    {
+      "title": "The Yoga Plate",
+      "slug": "the-yoga-plate",
+      "author": "Tamal Dodge and Victoria Dodge",
+      "asin": "168364350X",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "A vegan cookbook written with his wife Victoria that ties everyday cooking to the yogic idea of non-harm. Its recipes are grouped to follow the rhythm of a day of practice, from morning smoothies to desserts.",
+      "subjects": [
+        "yoga"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/168364350X.01._SCLZZZZZZZ_.jpg"
+    }
+  ],
+  "courses": [
+    {
+      "title": "200-Hour Yoga Teacher Training with Tamal Dodge",
+      "url": "https://www.yogasalt.com/teacher-training/",
+      "description": "A ten-week weekend programme at Yoga Salt in Wilmington leading to the RYT200 certificate. It covers asana, sequencing, pranayama, anatomy, the subtle body, philosophy and meditation.",
+      "price": "$2500",
+      "product_type": "course",
+      "start_date": "2027-01-15",
+      "end_date": "2027-03-21",
+      "subjects": [
+        "yoga",
+        "meditation"
+      ],
+      "image": null
+    },
+    {
+      "title": "300-Hour Advanced Yoga Teacher Training Immersion",
+      "url": "https://www.yogasalt.com/300-hr/",
+      "description": "An advanced residential training in Santa Teresa, Costa Rica, led with JJ Cook for graduates of a 200-hour course. Room, board and meals are part of the fee.",
+      "price": "Prices start at $2995",
+      "product_type": "retreat",
+      "start_date": "2027-04-30",
+      "end_date": "2027-05-18",
+      "subjects": [
+        "yoga"
+      ],
+      "image": null
+    },
+    {
+      "title": "Private Yoga Sessions at Yoga Salt",
+      "url": "https://www.yogasalt.com/yoga-private-sessions-studio-rentals-wilmington-north-carolina/",
+      "description": "One-to-one or small-group sessions at the Wilmington studio, shaped around the student's own practice. Packages of three or five sessions are also offered.",
+      "price": "$125 per one-hour session",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga"
+      ],
+      "image": null
+    },
+    {
+      "title": "Yoga Salt Group Classes",
+      "url": "https://www.yogasalt.com/yoga-class-schedule-wilmington-north-carolina/",
+      "description": "Weekly vinyasa classes at the downtown Wilmington studio, from music-led flows and inversion practice to yin and restorative sessions. New students can start with an introductory offer.",
+      "price": "30 for $30 introductory offer (first-time students)",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga"
+      ],
+      "image": null
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "pipelines-3",
+    "hub": "sounds-true",
+    "rank": 173,
+    "hub_url": "https://www.soundstrue.com/collections/authors-tamal-dodge",
+    "tier_evidence": "No personal account readable: the site links only the studio Instagram @yogasaltwilmington (studio account, not counted, count not tried) and a YouTube channel 'BODHI' (@BODHIYogaNC) with no videos listed (6 Nov 2026) → 0 readable → local_hero",
+    "email": "yes",
+    "email_source": "https://www.yogasalt.com/contact/",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 11 source(s)",
+    "flags": [
+      "Sounds True list used as names only; soundstrue.com not opened. Website yogasalt.com found by web search (named in his author profiles).",
+      "Email is the studio's inbox (yogasaltwilmington@gmail.com), which he founded and leads; flagged as a studio inbox.",
+      "Counts unreadable for any main personal account; tier 0 readable → local_hero. The studio site claims 1,000+ teacher-training alumni, a possible student-count case for the owner.",
+      "Only one photo used: the other headshot on the teacher-training page shows him with a woman (likely Victoria Dodge), so it was left out.",
+      "Book ASIN 168364350X from the Amazon link on theyogaplate.com/book/ (link not opened), not confirmed elsewhere.",
+      "No hub named on his own site: listed without any hub link. Sounds True never linked.",
+      "Regional: Wilmington, North Carolina.",
+      "The 30 for $30 offer is from the home page; the class schedule page is a booking widget."
+    ],
+    "left_out": [
+      "His DVDs (Hatha and Flow Yoga for Beginners, Yoga for Energy and Relaxation, Intro to Yoga): no ISBN or own page found.",
+      "Plant-Based Cooking classes with Victoria: listed as coming soon, no date or price.",
+      "Videos: the YouTube channel linked from the site ('BODHI') shows no videos and is not clearly his own; none listed.",
+      "Studio rentals and gift certificates (not teaching)."
+    ],
+    "held": "The only usable photo (yogasalt.com) fails the ingest image check: the ingest's robots.txt request to www.yogasalt.com is dropped (UND_ERR_SOCKET, 6 Nov 2026), and he has no YouTube avatar or other allowed photo host. Not worked around."
+  }
+}

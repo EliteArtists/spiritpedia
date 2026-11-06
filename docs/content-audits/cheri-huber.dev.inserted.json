@@ -1,0 +1,46 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 1041,
+    "healer_slug": "cheri-huber"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "3f6ce74a-0618-4f0c-93f0-556b88f0d09a",
+      "slug": "email-classes-with-cheri-huber",
+      "title": "Email Classes with Cheri Huber"
+    },
+    {
+      "table": "courses",
+      "id": "155ea611-1d11-460b-9994-40b22143bf99",
+      "slug": "recording-and-listening-training",
+      "title": "Recording and Listening Training"
+    },
+    {
+      "table": "free_resources",
+      "id": "7fd0d41d-98e3-48d4-8a65-98d87254d449",
+      "slug": "audio-books",
+      "title": "Audio Books"
+    },
+    {
+      "table": "free_resources",
+      "id": "05b0d6c5-e632-4136-9807-0643eef5cfe6",
+      "slug": "virtual-meditation-groups",
+      "title": "Virtual Meditation Groups"
+    },
+    {
+      "table": "free_resources",
+      "id": "ccb6f8e9-b172-479b-8c00-3d24f3c5e641",
+      "slug": "practice-everywhere",
+      "title": "Practice Everywhere"
+    },
+    {
+      "table": "free_resources",
+      "id": "1233511d-8125-4276-b009-5cae29ea23f5",
+      "slug": "open-air-with-cheri-huber",
+      "title": "Open Air with Cheri Huber"
+    }
+  ],
+  "at": "2026-11-06T16:54:37.431Z"
+}

@@ -1,0 +1,180 @@
+{
+  "healer": {
+    "healer_slug": "ed-bastian",
+    "location_source": null,
+    "no_public_base": "His own site (spiritualpaths.net) does not say where he lives or where the foundation is based; his bio says only that he leads programmes in Santa Barbara, Aspen and retreat centres across North America, and lists civic roles in Santa Barbara. Not guessed.",
+    "create": {
+      "name": "Dr. Ed Bastian",
+      "bio": "Ed Bastian is an American meditation teacher and the founder and president of the Spiritual Paths Foundation, a non-profit that runs his interspiritual courses online. His training was in Buddhism: he earned a doctorate in Buddhist studies and Western philosophy at the University of Wisconsin–Madison, guided by Geshe Lhundup Sopa, spent the best part of a decade studying with monks in the United States, India and the Himalayas, and went to India as a Fulbright scholar to read Indian philosophy and translate Tibetan and Sanskrit texts. Later he directed programmes on religion at the Smithsonian and produced films on Asian religious life for the BBC and PBS.\n\nHis main method, InterSpiritual Meditation, is a seven-step sitting practice built from many contemplative traditions. It moves from intention and gratitude through compassion, breath awareness and wisdom to service, so that people of any faith, or none, can shape a meditation that fits them. A second process, the InterSpiritual Mandala, helps students map their spiritual styles and big questions into a path of their own. He teaches both as eight-week courses on Zoom, supported by trained mentors, and has written books on each, as well as Living Fully, Dying Well with Tina Staley. He has also taught Buddhism and mindfulness at Antioch University.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "worldwide",
+      "city": null,
+      "country": null,
+      "subjects": [
+        "meditation",
+        "spirituality",
+        "mindfulness"
+      ],
+      "website_url": "https://spiritualpaths.net/",
+      "booking_url": "https://spiritualpaths.net/ism/",
+      "youtube_url": "https://www.youtube.com/channel/UCc75llXQG07WexCtopS2oMg",
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": null,
+      "image_urls": [
+        "https://yt3.googleusercontent.com/zrkzmV-Sn0TAyqISarixFJtTN0wfI5V8kDUgfeRqTL3JjO7JLKeH_wmv_XQDdOncLwlND__fCw=s900-c-k-c0x00ffffff-no-rj"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [
+    {
+      "title": "Ed Bastian, Aspen Chapel, April 28 2103",
+      "url": "https://www.youtube.com/watch?v=TEF5BhN3c5s",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "channel": "Edward Bastian Films "
+    },
+    {
+      "title": "A Conversation between Father & Son - Dr. Ed Bastian and Jonathan Bastian",
+      "url": "https://www.youtube.com/watch?v=XybZf8zIEKY",
+      "subjects": [
+        "spirituality"
+      ],
+      "channel": "Festival of Faiths"
+    },
+    {
+      "title": "Spiritual Paths Foundation Programs",
+      "url": "https://www.youtube.com/watch?v=TuMV_DRA3u0",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "channel": "Edward Bastian Films "
+    }
+  ],
+  "books": [
+    {
+      "title": "InterSpiritual Meditation: A Seven-Step Process from the World's Spiritual Traditions",
+      "slug": "interspiritual-meditation",
+      "author": "Edward W. Bastian",
+      "asin": "069237843X",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "The handbook for his seven-step meditation, which draws on many faiths so that readers can put together a daily practice of their own and share it with others.",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/069237843X.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "Mandala: Creating an Authentic Spiritual Path",
+      "slug": "mandala-creating-an-authentic-spiritual-path",
+      "author": "Edward W. Bastian",
+      "asin": "0692242694",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "A workbook-style guide to his Mandala process, in which readers explore their own spiritual styles and questions and choose teachers and practices to match.",
+      "subjects": [
+        "spirituality",
+        "meditation"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/0692242694.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "Living Fully, Dying Well: Reflecting on Death to Find Your Life's Meaning",
+      "slug": "living-fully-dying-well",
+      "author": "Edward W. Bastian and Tina Staley",
+      "asin": "1591797012",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "Conversations with teachers from several traditions on facing our own mortality, and on how reflecting on death can deepen the way we live now.",
+      "subjects": [
+        "death-the-afterlife",
+        "spirituality"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1591797012.01._SCLZZZZZZZ_.jpg"
+    }
+  ],
+  "courses": [
+    {
+      "title": "InterSpiritual Meditation Course",
+      "url": "https://spiritualpaths.net/ism/",
+      "description": "An eight-week live course on Zoom in which students build their own seven-step meditation, with recordings, a journaling tool, forums and support from mentors.",
+      "price": "$129.00 (monthly membership required, payment options available)",
+      "product_type": "course",
+      "start_date": "2027-01-19",
+      "end_date": "2027-03-09",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "image": "https://spiritualpaths.net/wp-content/plugins/spf-portal/assets//images/ism.png"
+    },
+    {
+      "title": "InterSpiritual Mandala Course",
+      "url": "https://spiritualpaths.net/mandala-2/",
+      "description": "An eight-week course on finding a personal spiritual path by working through your spiritual styles and questions across many traditions, with live sessions and mentors.",
+      "price": "$129.00 (monthly membership required, payment options available)",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "spirituality",
+        "meditation"
+      ],
+      "image": "https://spiritualpaths.net/wp-content/plugins/spf-portal/elementor-integration//images/avatar.png"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "InterSpiritual Meditation: Guided Meditations",
+      "url": "https://spiritualpaths.net/guided-meditations/",
+      "description": "Free guided videos of the seven-step practice in several versions and lengths, in English and Spanish, with waves, silence or sacred music.",
+      "featured": true,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://spiritualpaths.net/wp-content/uploads/2020/04/geberd.png"
+    }
+  ],
+  "sprint": {
+    "sprint": "pipelines-3",
+    "hub": "sounds-true",
+    "rank": 294,
+    "hub_url": "https://www.soundstrue.com/collections/authors-edward-w-bastian",
+    "tier_evidence": "YouTube 'Edward Bastian Films' (@edwardbastianfilms1940): subscriber count not shown in the channel page we were served (6 Nov 2026); no other personal social accounts linked from his site; small channel (videos in the hundreds to tens of thousands of views) → well under 100k → local_hero",
+    "email": "contact form",
+    "email_source": null,
+    "contact_form_url": "https://spiritualpaths.net/contact/",
+    "bio_check": "OK: no 8-word runs against 6 source(s)",
+    "flags": [
+      "Listed as 'Dr. Ed Bastian', the name his own site uses throughout; the queue has 'Edward W Bastian' (his book byline). Slug ed-bastian.",
+      "No published base: the bio points to Santa Barbara (programmes there, President of the Interfaith Initiative of Santa Barbara, board of a Santa Barbara charity) but never says he lives there. Owner may want to set Santa Barbara, California.",
+      "Only one photo: his YouTube avatar (900 px, upscaled and a little soft); it matches the 200 px headshot on spiritualpaths.net/dr-ed-bastian-bio/, which is too small to use.",
+      "YouTube subscriber count could not be read (not in the page served).",
+      "Contact is the Spiritual Paths Institute's general form (his own organisation; the site is copyright Dr. Edward Bastian).",
+      "spiritualpaths.net robots.txt sets Crawl-delay: 10; fetches were spaced 10+ seconds apart.",
+      "Book ISBNs from the Amazon links on his own site (spiritualpaths.net/dr-ed-bastian-bio/), not confirmed elsewhere; Amazon not opened.",
+      "The courses run on a monthly membership; the price shown is as published ('$129.00 (monthly membership required, payment options available)'); the page does not state the currency code."
+    ],
+    "left_out": [
+      "Meditations for InterSpiritual Practice: edited by Netanel Miles-Yepez; he is one of about twenty contributors, not an author.",
+      "InterSpiritual Companionship Year 1 (began September 2026) and Year 2: already started or no current dates shown.",
+      "Advanced ISM Facilitator and Mentor Training: application-based trainings for existing students, not separate public offerings.",
+      "His documentary films on the channel (Tibetan Buddhism, Spiritual India, Land of the Thunder Dragon): failed oEmbed or are films rather than teaching; 'InterSpiritual Meditation with Ed Bastian' (MN2CtXTe1xw) failed oEmbed.",
+      "Spanish edition of InterSpiritual Meditation: no ISBN on his site."
+    ]
+  },
+  "images_final": true
+}

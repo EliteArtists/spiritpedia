@@ -1,0 +1,230 @@
+{
+  "healer": {
+    "healer_slug": "travis-eliot",
+    "location_source": "https://traviseliot.com/my-story/",
+    "create": {
+      "name": "Travis Eliot",
+      "bio": "Travis Eliot is a Los Angeles yoga and meditation teacher who first learned to meditate as a child, when his mother brought home guided recordings. He trained in filmmaking and worked in television before a first class at Santa Monica Power Yoga turned his attention to yoga; a near-death experience on Kauai and surviving the 2004 tsunami in Thailand later settled the direction of his life. He is also a kirtan musician and a certified Ayurveda practitioner, and holds the E-RYT 500 credential.\n\nWith his wife, the teacher Lauren Eckstrom, he co-founded Inner Dimension, an online platform of cinematic yoga and meditation programmes, and the pair co-wrote Holistic Yoga Flow; his solo book, A Journey Into Yin Yoga, explores the slower, held side of practice. His teaching moves between vigorous flowing classes, which he calls Holistic Yoga Flow and Chi Warrior Flow, and quiet yin and restorative sessions, with breathwork and short talks on applying the practice to daily life. His free YouTube channel carries hundreds of full-length classes, and he leads retreats in places such as New Zealand, Italy and Mexico as well as hybrid teacher trainings with Lauren.",
+      "tier": "luminary",
+      "entity_type": "individual",
+      "availability": "local_online",
+      "city": "Los Angeles, California",
+      "country": "United States",
+      "subjects": [
+        "yoga",
+        "meditation",
+        "ayurveda"
+      ],
+      "website_url": "https://traviseliot.com/",
+      "booking_url": "https://traviseliot.com/retreats/",
+      "youtube_url": "https://www.youtube.com/@traviseliotyoga",
+      "instagram_url": "https://www.instagram.com/realtraviseliot/",
+      "facebook_url": "https://www.facebook.com/traviseliot108",
+      "twitter_url": "https://twitter.com/traviseliot",
+      "tiktok_url": null,
+      "contact_email": "info@traviseliot.com",
+      "image_urls": [
+        "https://yt3.googleusercontent.com/IfRkJhkpP06Mjbbqh2y5m8jobeHNMlueZewChzgKHT8kgT5RkHRKBPAARrCCEDEY4MDceVdriQ=s900"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [
+    {
+      "title": "30 Min Daily Yoga Flow | Total Body Routine",
+      "url": "https://www.youtube.com/watch?v=wwGGfFwhujI",
+      "subjects": [
+        "yoga"
+      ],
+      "channel": "Travis Eliot"
+    },
+    {
+      "title": "30 Min Full Body Yin Yoga | Deep Fascia Stretch",
+      "url": "https://www.youtube.com/watch?v=_3KXHPj4mbA",
+      "subjects": [
+        "yoga"
+      ],
+      "channel": "Travis Eliot"
+    },
+    {
+      "title": "30 Min Morning Yoga Flow | Full Body Flexibility",
+      "url": "https://www.youtube.com/watch?v=cRC8jo4Q1Do",
+      "subjects": [
+        "yoga"
+      ],
+      "channel": "Travis Eliot"
+    },
+    {
+      "title": "30 Min Power Yoga Warrior Flow l Strength & Fire",
+      "url": "https://www.youtube.com/watch?v=_0YwXI5ciB8",
+      "subjects": [
+        "yoga"
+      ],
+      "channel": "Travis Eliot"
+    },
+    {
+      "title": "20 Min Gentle Yoga Routine | Full Body Slow Flow",
+      "url": "https://www.youtube.com/watch?v=tfAj_X6jx6w",
+      "subjects": [
+        "yoga"
+      ],
+      "channel": "Travis Eliot"
+    },
+    {
+      "title": "15 Min Yoga for DEEP RELAXATION l Recovery Routine",
+      "url": "https://www.youtube.com/watch?v=ydV5TPd3P6Y",
+      "subjects": [
+        "yoga"
+      ],
+      "channel": "Travis Eliot"
+    },
+    {
+      "title": "30 Min Power Yoga for Strength + Flexibility | Total Body Workout",
+      "url": "https://www.youtube.com/watch?v=qxKvLj3YX54",
+      "subjects": [
+        "yoga"
+      ],
+      "channel": "Travis Eliot"
+    },
+    {
+      "title": "20 Min Yoga Flow & Stretch l Full Body Routine",
+      "url": "https://www.youtube.com/watch?v=zMVZpB_m8rY",
+      "subjects": [
+        "yoga"
+      ],
+      "channel": "Travis Eliot"
+    }
+  ],
+  "books": [
+    {
+      "title": "Holistic Yoga Flow: The Path of Practice",
+      "slug": "holistic-yoga-flow",
+      "author": "Travis Eliot and Lauren Eckstrom",
+      "asin": "B077ZYWVW7",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "A full guide to the couple's flowing style of yoga, covering postures, sequencing, breath and meditation alongside the wider philosophy of practice. Useful for students and teachers alike.",
+      "subjects": [
+        "yoga",
+        "meditation"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/B077ZYWVW7.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "A Journey Into Yin Yoga",
+      "slug": "a-journey-into-yin-yoga",
+      "author": "Travis Eliot",
+      "asin": "1492557226",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "An introduction to yin yoga, the slow practice of holding floor postures for several minutes. He explains the poses and the reasoning behind them, and offers sequences to try at home.",
+      "subjects": [
+        "yoga"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1492557226.01._SCLZZZZZZZ_.jpg"
+    }
+  ],
+  "courses": [
+    {
+      "title": "Mexico Yoga Retreat – Regenerative Series with Travis Eliot",
+      "url": "https://www.innerdimensionyoga.com/retreats/mexico-yoga-retreat-2026/",
+      "description": "A week of yoga and rest in Zihuatanejo on Mexico's Pacific coast, led by Travis. Listed on his retreats page for December 2026.",
+      "price": "Contact for pricing",
+      "product_type": "retreat",
+      "start_date": "2026-12-05",
+      "end_date": "2026-12-10",
+      "subjects": [
+        "yoga"
+      ],
+      "image": null
+    },
+    {
+      "title": "New Zealand Yoga Retreat with Travis Eliot and Lauren Eckstrom",
+      "url": "https://www.innerdimensionyoga.com/retreats/new-zealand-yoga-retreat-1/",
+      "description": "A retreat in Queenstown with both teachers, combining daily practice with time in the mountains and lakes of New Zealand's South Island.",
+      "price": "Contact for pricing",
+      "product_type": "retreat",
+      "start_date": "2027-04-05",
+      "end_date": "2027-04-11",
+      "subjects": [
+        "yoga",
+        "meditation"
+      ],
+      "image": null
+    },
+    {
+      "title": "Yellowstone Yoga Retreat with Travis Eliot and Lauren Eckstrom",
+      "url": "https://www.innerdimensionyoga.com/yellowstone-yoga-retreat/",
+      "description": "A short retreat at Yellowstone National Park with the two teachers, setting yoga and meditation sessions against the park's wild landscape.",
+      "price": "Contact for pricing",
+      "product_type": "retreat",
+      "start_date": "2027-05-20",
+      "end_date": "2027-05-23",
+      "subjects": [
+        "yoga",
+        "meditation"
+      ],
+      "image": null
+    },
+    {
+      "title": "Puglia Yoga Retreat with Travis Eliot and Lauren Eckstrom",
+      "url": "https://www.innerdimensionyoga.com/puglia-yoga-retreat/",
+      "description": "A week in southern Italy with the couple, with daily yoga and meditation in the countryside of Puglia.",
+      "price": "Contact for pricing",
+      "product_type": "retreat",
+      "start_date": "2027-06-14",
+      "end_date": "2027-06-20",
+      "subjects": [
+        "yoga",
+        "meditation"
+      ],
+      "image": null
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "3 Free Classes with Travis Eliot",
+      "url": "https://traviseliot.com/travis-trifecta-sign-up-b/",
+      "description": "A sign-up page on his website for three free online classes: one power yoga, one yin yoga and one meditation.",
+      "featured": true,
+      "resource_type": "practice",
+      "subjects": [
+        "yoga",
+        "meditation"
+      ],
+      "image": "https://yt3.googleusercontent.com/IfRkJhkpP06Mjbbqh2y5m8jobeHNMlueZewChzgKHT8kgT5RkHRKBPAARrCCEDEY4MDceVdriQ=s900"
+    }
+  ],
+  "sprint": {
+    "sprint": "pipelines-3",
+    "hub": "kripalu",
+    "rank": 116,
+    "hub_url": "https://kripalu.org/people/travis-eliot",
+    "tier_evidence": "YouTube 568K (@traviseliotyoga channel header, 6 Nov 2026); Instagram, Facebook and X not readable without login → at least 568K → luminary",
+    "email": "yes",
+    "email_source": "https://traviseliot.com/contact/",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 8 source(s)",
+    "flags": [
+      "No Kripalu mention on own site: listed without the link.",
+      "Email info@traviseliot.com decoded from a Cloudflare-protected mailto link on his contact page.",
+      "Teaching pair: Travis Eliot and his wife Lauren Eckstrom co-lead Inner Dimension, its retreats and trainings; one listing under Travis (the list's name), Lauren named in the bio. Check that Lauren isn't listed separately.",
+      "innerdimensionyoga.com (Inner Dimension, the couple's own platform) returned 403 to curl on 6 Nov 2026; innerdimensiontv.com redirects there. Retreat titles, dates and URLs are taken from his own retreats page; prices couldn't be read, so 'Contact for pricing'. I fetched six of its pages in one loop before seeing the 403s; nothing was retried after.",
+      "Only the YouTube avatar used: the photos on his own site show him with Lauren.",
+      "Holistic Yoga Flow ASIN is the Kindle edition, as linked from his own site; A Journey Into Yin Yoga ISBN-10 also from his own site's link. Neither confirmed elsewhere.",
+      "His home page sales copy lists benefits such as 'Decrease Stress & Anxiety' and 'Fat Loss'; nothing of that kind was used in items.",
+      "Possible link to Bryan Kest (rank 115): Travis began at Santa Monica Power Yoga and has classes on PowerYoga.com.",
+      "Retreat items set to image null so the ingest doesn't fetch innerdimensionyoga.com, which refused us."
+    ],
+    "left_out": [
+      "Inner Dimension membership, Yoga 60 for 60, Flow & Stretch, Sadhana and other programmes: hosted on innerdimensionyoga.com / innerdimensiontv.com, which refused us (403); prices unreadable.",
+      "200 HR Hybrid Teacher Training (June–December 2027) and New Zealand hiking retreat: also on the refused site; kept the list to four retreats.",
+      "Power Yoga Sweat + Gratitude (26 Nov 2026) and Guadalajara event: one-off events on the refused site.",
+      "Yoga 'for deep sleep', 'stress relief' and 'neck & shoulders' videos: kept off as borderline condition wording.",
+      "Grow a Garden documentary: not teaching."
+    ]
+  },
+  "images_final": true
+}

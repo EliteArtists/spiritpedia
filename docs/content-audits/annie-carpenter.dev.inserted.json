@@ -1,0 +1,39 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 1003,
+    "healer_slug": "annie-carpenter"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "0e395e7b-01f0-42b8-a4b2-342969f96984",
+      "slug": "svadhyaya-smartflow-mentorship",
+      "title": "Svadhyaya: SmartFlow Mentorship"
+    },
+    {
+      "table": "courses",
+      "id": "1740fb81-5b91-48aa-9612-fda0c5019dcf",
+      "slug": "samkrama-the-art-of-sequencing",
+      "title": "SamKrama: The Art of Sequencing"
+    },
+    {
+      "table": "courses",
+      "id": "be9fef7b-2901-4b23-a898-33d995ed3675",
+      "slug": "300-hour-smartflow-teacher-training",
+      "title": "300 Hour SmartFLOW Teacher Training"
+    },
+    {
+      "table": "courses",
+      "id": "d2f49863-1404-4495-82ef-005c836c73fe",
+      "slug": "smartflow-online-courses",
+      "title": "SmartFLOW online courses"
+    },
+    {
+      "table": "hub_teachers",
+      "id": "da0f73c7-3463-467e-9754-bbff3c784f71",
+      "title": "annie-carpenter teaches at Esalen Institute"
+    }
+  ],
+  "at": "2026-11-06T15:52:05.170Z"
+}

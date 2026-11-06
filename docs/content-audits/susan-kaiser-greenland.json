@@ -1,0 +1,181 @@
+{
+  "healer": {
+    "healer_slug": "susan-kaiser-greenland",
+    "location_source": "https://susankaisergreenland.com/biography",
+    "create": {
+      "name": "Susan Kaiser Greenland",
+      "bio": "Susan Kaiser Greenland is an American mindfulness educator and author who came to meditation while working as a corporate lawyer. The practice reshaped her life, and she went on to adapt it for children, creating the Inner Kids model in the early 2000s: a playful, activity-based way of teaching attention, balance and compassion that became one of the first secular mindfulness programmes offered in schools and community settings, first around Southern California and later far beyond it.\n\nHer first book, The Mindful Child, set out that approach for parents, and Mindful Games, with its companion deck of activity cards, gathered dozens of simple games that families and teachers can use to build focus and steady emotions. Her more recent work speaks to adults as well. Real-World Enlightenment offers fifty short tools drawn from Buddhist teaching, other wisdom traditions and modern psychology, for people who want a calmer, kinder way of living without long retreats or elaborate routines. Her books have been translated into more than a dozen languages, her guided meditations appear on several meditation apps, and her YouTube channel carries short teaching clips and game demonstrations. She divides her time between Los Angeles and Brooklyn.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "online",
+      "city": "Los Angeles, California",
+      "country": "United States",
+      "subjects": [
+        "mindfulness",
+        "meditation",
+        "conscious-relationships"
+      ],
+      "website_url": "https://susankaisergreenland.com/",
+      "booking_url": null,
+      "youtube_url": "https://www.youtube.com/@realsusankaisergreenland",
+      "instagram_url": "https://www.instagram.com/susankaisergreenland/",
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": "https://www.tiktok.com/@susankgreenland",
+      "contact_email": "info@innerkids.com",
+      "image_urls": [
+        "https://images.squarespace-cdn.com/content/v1/65f3aed0e7bff6308aad39e7/dcd7fd09-517e-496a-9b81-8853d1b55d77/_DSC0155-Edit-2_web.png",
+        "https://yt3.googleusercontent.com/TaTsacOmji1VgonDuFB7GEDke2W0MamvW_5uxrqArqnV5xeJoNr8AAfeenWntc2vTokCaKIVsw=s800"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [
+    {
+      "title": "Real-World Enlightenment: The Book",
+      "url": "https://www.youtube.com/watch?v=oNOHThb7sw8",
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "channel": "Susan Kaiser Greenland"
+    },
+    {
+      "title": "Teaching the ABCs of Attention, Balance and Compassion: Susan Kaiser Greenland at TEDxStudioCityED",
+      "url": "https://www.youtube.com/watch?v=5V6VOMXH0Xk",
+      "subjects": [
+        "mindfulness"
+      ],
+      "channel": "Susan Kaiser Greenland"
+    },
+    {
+      "title": "Mindfulness & Movement - Susan Kaiser Greenland & Suzi Tortora",
+      "url": "https://www.youtube.com/watch?v=PR5TDggAHbU",
+      "subjects": [
+        "mindfulness"
+      ],
+      "channel": "Susan Kaiser Greenland"
+    },
+    {
+      "title": "Games from an Inner Kids Class",
+      "url": "https://www.youtube.com/watch?v=YWVkEVirYUg",
+      "subjects": [
+        "mindfulness"
+      ],
+      "channel": "Susan Kaiser Greenland"
+    },
+    {
+      "title": "Mindful Awareness Activities",
+      "url": "https://www.youtube.com/watch?v=5aOuxn7zASw",
+      "subjects": [
+        "mindfulness"
+      ],
+      "channel": "Susan Kaiser Greenland"
+    },
+    {
+      "title": "Whats Clouding Your Perspective? And What Helps!",
+      "url": "https://www.youtube.com/watch?v=8dMiv5B7I0Y",
+      "subjects": [
+        "mindfulness"
+      ],
+      "channel": "Susan Kaiser Greenland"
+    },
+    {
+      "title": "Susan Kaiser Greenland in conversation with Mallika Chopra",
+      "url": "https://www.youtube.com/watch?v=iq_Rx1fU6q8",
+      "subjects": [
+        "mindfulness",
+        "conscious-relationships"
+      ],
+      "channel": "Susan Kaiser Greenland"
+    }
+  ],
+  "books": [
+    {
+      "title": "Real-World Enlightenment: Discovering Ordinary Magic in Everyday Life",
+      "slug": "real-world-enlightenment",
+      "author": "Susan Kaiser Greenland",
+      "asin": "1611809355",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "Fifty short tools and reflections, drawn from Buddhism, other wisdom traditions and psychology, for bringing presence and kindness into busy everyday life.",
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1611809355.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "Mindful Games: Sharing Mindfulness and Meditation with Children, Teens, and Families",
+      "slug": "mindful-games",
+      "author": "Susan Kaiser Greenland",
+      "asin": "1611803691",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "Sixty simple games for children, teenagers and their carers that use play to practise focus, calm and compassion, with plain explanations of the ideas behind them.",
+      "subjects": [
+        "mindfulness",
+        "conscious-relationships"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1611803691.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "The Mindful Child",
+      "slug": "the-mindful-child",
+      "author": "Susan Kaiser Greenland",
+      "asin": "1416583009",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "Her first book, showing parents how to adapt mindful awareness practices for children of different ages through the activity-based Inner Kids approach.",
+      "subjects": [
+        "mindfulness",
+        "conscious-relationships"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1416583009.01._SCLZZZZZZZ_.jpg"
+    }
+  ],
+  "courses": [],
+  "free_resources": [
+    {
+      "title": "Mindfulness & Meditation Resources for Adults",
+      "url": "https://susankaisergreenland.com/mindfulness-resources-for-adults",
+      "description": "A free page of short practices, video lessons, presentations and podcast conversations gathered on her site for adults who want to build a simple daily practice.",
+      "featured": true,
+      "resource_type": "meditation",
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "image": "http://static1.squarespace.com/static/65f3aed0e7bff6308aad39e7/t/6638be3ba0c1655afec0f39d/1714994747121/Ensos_for+adults+copy.png?format=1500w"
+    }
+  ],
+  "sprint": {
+    "sprint": "pipelines-3",
+    "hub": "sounds-true",
+    "rank": 150,
+    "hub_url": "https://www.soundstrue.com/collections/authors-susan-kaiser-greenland",
+    "tier_evidence": "YouTube @realsusankaisergreenland 1.88K subscribers (6 Nov 2026); other socials not read → local_hero",
+    "email": "yes",
+    "email_source": "https://susankaisergreenland.com/contact",
+    "contact_form_url": null,
+    "flags": [
+      "No hub (Kripalu, Esalen, Omega, IMS) named on her own site; listed without a hub link.",
+      "Email info@innerkids.com is the Inner Kids address in her site footer (on every page, including /contact); no contact form found, only newsletter sign-ups.",
+      "Base: her biography says she 'spends time in Los Angeles, CA, and Brooklyn, NY'; Los Angeles used.",
+      "No paid courses, classes or events found on her site; 0 offerings. Item count rests on 7 videos, 3 books and 1 free resource.",
+      "Her home page features a blog post 'Democracy Lives in Daily Life' (civic theme); not used, and not central to her work.",
+      "Her Mindful Games book page contains an unrelated outbound link to carpicalcionews.it, which looks like injected spam; ignored and not opened.",
+      "Book ISBNs from the Bookshop.org, Barnes & Noble and IndieBound links on her own book pages; Amazon not opened.",
+      "Mindful Games Activity Cards (card deck) and the Mindful Parent, Mindful Child audio left out as non-book items."
+    ],
+    "left_out": [
+      "'How to Help Kids Understand What's Happening Now' video: title suggests current events, left out to be safe.",
+      "Blog post 'Democracy Lives in Daily Life': political/civic theme."
+    ],
+    "bio_check": "OK: no 8-word runs against 18 source(s)"
+  },
+  "images_final": true
+}

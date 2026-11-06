@@ -1,0 +1,112 @@
+{
+  "healer": {
+    "healer_slug": "ramona-lisa-ortiz-smith",
+    "location_source": "https://www.freespiritofferings.com/service-page/online-mentoring-session",
+    "create": {
+      "name": "Ramona Lisa Ortiz-Smith",
+      "bio": "Ramona Lisa Ortiz-Smith is a meditation teacher and mentor in the Theravada Buddhist tradition of insight (Vipassana) practice, with more than twenty-five years of practice behind her. Before her life in the Dharma she danced with Dance Theatre of Harlem, and she later took contemporary Upasika vows and spent several years living as a lay renunciate. She is part of the joint Insight Meditation Society and Spirit Rock teacher training that runs from 2025 to 2028, was one of five Black teachers chosen for the second Dharma Relief fellowship in 2023, and is a certified mindfulness teacher.\n\nHer teaching roles include resident teacher at Assaya Sangha, an insight community for women around the Bay Area, a community teacher at East Bay Meditation Center, and an assistant teacher on silent retreats at IMS and Spirit Rock. Through her own practice, Free Spirit, she offers classes, daylongs, retreats and one-to-one mentoring, online and in person, and she holds a monthly sit for BIPOC women. Her teaching draws on her own life with warmth, humour and directness, and some of her talks and guided meditations can be watched online. She is based in Fairfax, in Marin County, California.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local_online",
+      "city": "Fairfax, California",
+      "country": "United States",
+      "subjects": [
+        "meditation",
+        "mindfulness",
+        "ancient-wisdom"
+      ],
+      "website_url": "https://www.freespiritofferings.com/",
+      "booking_url": "https://www.freespiritofferings.com/projects-2",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "FreeSpiritRamonaLisa@gmail.com",
+      "image_urls": [
+        "https://www.dharma.org/wp-content/uploads/Ramona-1-600x940.webp"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "insight-meditation-society",
+      "role": "instructor"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Touching into the Qualities of Compassion & Joy",
+      "url": "https://www.youtube.com/watch?v=Qlvlm5L71rE",
+      "subjects": [
+        "meditation"
+      ],
+      "channel": "Buddhist Geeks"
+    },
+    {
+      "title": "Meditation with DTH Alumna Ramona Lisa Ortiz-Smith, MBA",
+      "url": "https://www.youtube.com/watch?v=EUmkIJ4fjGM",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "channel": "Dance Theatre of Harlem"
+    },
+    {
+      "title": "Meditation with DTH Alumna Ramona Lisa Ortiz-Smith, MBA (July 2020)",
+      "url": "https://www.youtube.com/watch?v=IRevwkMDGKw",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "channel": "Dance Theatre of Harlem"
+    }
+  ],
+  "books": [],
+  "courses": [
+    {
+      "title": "Second Sundays BIPOC Women's Sit (Assaya Sangha)",
+      "url": "https://www.freespiritofferings.com/projects-3",
+      "description": "A monthly meditation gathering for BIPOC women that she leads for Assaya Sangha on the second Sunday of each month.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://static.wixstatic.com/media/16659d_eb2d3ccae9f1431482f4ba3259d55a4c%7Emv2.jpeg/v1/fit/w_2500,h_1330,al_c/16659d_eb2d3ccae9f1431482f4ba3259d55a4c%7Emv2.jpeg"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "pipelines-3",
+    "hub": "ims",
+    "rank": 89,
+    "hub_url": "https://www.dharma.org/teacher/ramona-lisa-ortiz-smith/",
+    "tier_evidence": "No YouTube channel or social accounts of her own found on her site (6 Nov 2026) → 0 readable → local_hero",
+    "email": "yes",
+    "email_source": "https://www.freespiritofferings.com/service-page/online-mentoring-session",
+    "contact_form_url": "https://www.freespiritofferings.com/contact",
+    "bio_check": "OK: no 8-word runs against 12 source(s)",
+    "flags": [
+      "IMS named on: https://www.freespiritofferings.com/ (about text: assistant teacher on silent retreats for the Insight Meditation Society; IMS/Spirit Rock teacher training 2025-2028).",
+      "Own site freespiritofferings.com found via her Dance Theatre of Harlem alumni page (dancetheatreofharlem.org/?p=4631), which links it; dharma.org links no personal site.",
+      "Thin listing: only 4 items (3 YouTube videos and one monthly sit). Her site lists no dated classes or retreats, and her Assaya Sangha class page showed no upcoming events (6 Nov 2026). A human may judge whether this is enough for a full page.",
+      "Email FreeSpiritRamonaLisa@gmail.com is shown as visible text on her Online Mentoring Session page (a private booking page for programme participants); her site also has a contact form.",
+      "Base: Fairfax, CA 94978 shown on her contact and booking pages (a PO box); Fairfax is a Marin County town of about 7,500.",
+      "Videos are on other channels (Dance Theatre of Harlem, Buddhist Geeks) but linked from her own Videos & Recordings page; she is the main speaker in each and all passed oEmbed (200). The two DTH videos share a title; the second is marked with its July 2020 date (from her site) to tell them apart.",
+      "static.wixstatic.com (her site's image host) returned 403 for robots.txt, so no photos were taken from her site; the dharma.org portrait (600 x 940, looked at) is used.",
+      "Indigenous Focusing Oriented Therapy (IFOT) practitioner is one of her credentials; not used in the bio or as an item (therapy).",
+      "Possible duplicate concern: none found on Spiritpedia.",
+      "Dry run 6 Nov 2026: the ingest could not load the dharma.org photo and swapped in her website's share image from static.wixstatic.com (not looked at, and that host refused our robots.txt request with 403); the swap was reverted by hand and the plan is held."
+    ],
+    "left_out": [
+      "Online Mentoring Session: private, for Sanctuaries of the Heart participants only.",
+      "Zoom recording of a January 2023 Dharma talk: a passcode-protected Zoom link, not a lasting public page.",
+      "YouTube music link qvevftZZmC8: an accompanying music track, not her teaching.",
+      "Books: none found."
+    ],
+    "held": "Her only usable photo (dharma.org portrait, looked at) fails to load in the ingest (dharma.org drops the ingest's connection, as seen before); her own site's images are on static.wixstatic.com, whose robots.txt returned 403 to us, so none were used. The dry run substituted a wixstatic image from her site's share tags, which has been reverted. Held until a usable photo route exists."
+  }
+}

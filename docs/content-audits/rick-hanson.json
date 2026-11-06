@@ -1,0 +1,289 @@
+{
+  "healer": {
+    "healer_slug": "rick-hanson",
+    "location_source": null,
+    "no_public_base": "His own site (rickhanson.com/about-dr-rick-hanson/) says only that he and his wife live in northern California; no city is published, and the Wednesday sessions are on Zoom.",
+    "create": {
+      "name": "Dr. Rick Hanson",
+      "bio": "Rick Hanson is a psychologist and meditation teacher who brings together brain science and Buddhist practice. He has meditated since the mid-1970s, and his teaching draws openly on the insight tradition and on teachers such as Jack Kornfield, Tara Brach and Sylvia Boorstein. With the neurologist Rick Mendius he co-founded the Wellspring Institute, which looks at where neuroscience and contemplative practice meet, and he holds a senior fellowship at UC Berkeley's Greater Good Science Center. His books include Buddha's Brain, Hardwiring Happiness, Just One Thing, Resilient and Neurodharma.\n\nAt the centre of his approach is a simple idea: that by staying with good experiences a little longer, people gradually build lasting inner resources such as calm, contentment, kindness and a sense of worth. He calls this positive neuroplasticity and teaches it through a short four-step practice. His Neurodharma programme goes further, linking seven qualities found in deep contemplative states with what is known about the brain. Each Wednesday evening, Pacific time, he leads a free online meditation, talk and discussion that anyone may join, and he also offers recorded courses, a weekly newsletter of small practices and the Being Well podcast with his son Forrest.",
+      "tier": "luminary",
+      "entity_type": "individual",
+      "availability": "worldwide",
+      "city": null,
+      "country": null,
+      "subjects": [
+        "meditation",
+        "mindfulness",
+        "spirituality"
+      ],
+      "website_url": "https://rickhanson.com/",
+      "booking_url": "https://rickhanson.com/online-courses/",
+      "youtube_url": "https://www.youtube.com/@RickHanson",
+      "instagram_url": "https://www.instagram.com/rickhansonphd",
+      "facebook_url": "https://www.facebook.com/rickhansonphd/",
+      "twitter_url": "https://twitter.com/drrhanson/",
+      "tiktok_url": "https://www.tiktok.com/@dr.rick.hanson",
+      "contact_email": null,
+      "image_urls": [
+        "https://rickhanson.com/wp-content/uploads/2022/11/Rick-Hanson-Headshot-3-2020.jpg",
+        "https://yt3.googleusercontent.com/ytc/AIdro_nJvZyaTyCjhRpNuhITyG1JIjq-9d8w76tyvdYnoxQiYm4=s900"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [
+    {
+      "title": "5 Ways to Take Things Less Personally with Rick Hanson",
+      "url": "https://www.youtube.com/watch?v=LymFC6SDsmE",
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "channel": "Rick Hanson"
+    },
+    {
+      "title": "How to Feel That You've Done Enough - and Are Enough with Rick Hanson",
+      "url": "https://www.youtube.com/watch?v=G-F3qea7aVc",
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "channel": "Rick Hanson"
+    },
+    {
+      "title": "How to Find Peace in the Present Moment with Rick Hanson",
+      "url": "https://www.youtube.com/watch?v=3bTNRVrsnuc",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "channel": "Rick Hanson"
+    },
+    {
+      "title": "Steady, Quiet, and Whole: A Meditation for Inner Peace, with Dr. Rick Hanson",
+      "url": "https://www.youtube.com/watch?v=Zlvazp8QVkM",
+      "subjects": [
+        "meditation"
+      ],
+      "channel": "Rick Hanson"
+    },
+    {
+      "title": "Patience - Why We Need It, and How to Grow It with Rick Hanson",
+      "url": "https://www.youtube.com/watch?v=LWzzEHrt9Zw",
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "channel": "Rick Hanson"
+    },
+    {
+      "title": "The Two Keys to Any Kind of Change for the Better with Rick Hanson",
+      "url": "https://www.youtube.com/watch?v=qJdtYRRHO1s",
+      "subjects": [
+        "meditation",
+        "spiritual-awakening"
+      ],
+      "channel": "Rick Hanson"
+    },
+    {
+      "title": "A Meditation on Open Awareness, Settling into Stillness, with Dr Rick Hanson",
+      "url": "https://www.youtube.com/watch?v=Rjyl4rgHgVQ",
+      "subjects": [
+        "meditation"
+      ],
+      "channel": "Rick Hanson"
+    },
+    {
+      "title": "A Meditation on Tranquility & Spaciousness: Doorways into Stillness & Vastness, with Dr Rick Hanson",
+      "url": "https://www.youtube.com/watch?v=tocxY1sjOQ0",
+      "subjects": [
+        "meditation"
+      ],
+      "channel": "Rick Hanson"
+    }
+  ],
+  "books": [
+    {
+      "title": "Buddha's Brain: The Practical Neuroscience of Happiness, Love, and Wisdom",
+      "slug": "buddhas-brain",
+      "author": "Rick Hanson",
+      "asin": "1572246952",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "Written with the neurologist Rick Mendius, this book explains in plain terms what happens in the brain during contemplative practice, and offers exercises for steadying attention, warming the heart and growing insight.",
+      "subjects": [
+        "meditation",
+        "conscious-science",
+        "mindfulness"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1572246952.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "Hardwiring Happiness: The New Brain Science of Contentment, Calm, and Confidence",
+      "slug": "hardwiring-happiness",
+      "author": "Rick Hanson",
+      "asin": "0385347324",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "Sets out his four-step way of turning passing good moments into lasting inner strengths, and explains why the mind tends to hold on to bad experiences more readily than good ones.",
+      "subjects": [
+        "mindfulness",
+        "conscious-science"
+      ],
+      "cover": "https://rickhanson.com/wp-content/uploads/2022/07/HardwiringHappiness.png"
+    },
+    {
+      "title": "Just One Thing: Developing a Buddha Brain One Simple Practice at a Time",
+      "slug": "just-one-thing",
+      "author": "Rick Hanson",
+      "asin": "1608820319",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "A collection of short practices, each one small enough to try in a day, for growing kindness, calm and steadiness in ordinary life.",
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1608820319.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "Neurodharma: New Science, Ancient Wisdom, and Seven Practices of the Highest Happiness",
+      "slug": "neurodharma",
+      "author": "Rick Hanson",
+      "asin": "0593135466",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "Traces seven qualities found in deep meditation, from a steady mind to a sense of wholeness and timelessness, and pairs each with what is known about the brain and with practices to explore it.",
+      "subjects": [
+        "meditation",
+        "spiritual-awakening",
+        "conscious-science"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/0593135466.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "Resilient: How to Grow an Unshakable Core of Calm, Strength, and Happiness",
+      "slug": "resilient",
+      "author": "Rick Hanson, Forrest Hanson",
+      "asin": "0451498844",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "Written with his son Forrest, it describes twelve inner strengths, such as compassion, grit and gratitude, and shows how to build each through everyday experience.",
+      "subjects": [
+        "mindfulness",
+        "self-healing"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/0451498844.01._SCLZZZZZZZ_.jpg"
+    }
+  ],
+  "courses": [
+    {
+      "title": "Neurodharma Online Program",
+      "url": "https://rickhanson.com/online-courses/neurodharma-online-course/",
+      "description": "An eight-week recorded programme with over fifteen hours of talks and six hours of guided practice. It explores seven qualities of deep contemplative life through Buddhist teaching and brain science.",
+      "price": "$349",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "spiritual-awakening",
+        "conscious-science"
+      ],
+      "image": "https://rickhanson.com/wp-content/uploads/2023/12/Rick-Default.jpg"
+    },
+    {
+      "title": "The Positive Neuroplasticity Training",
+      "url": "https://rickhanson.com/online-courses/positive-neuroplasticity-training/",
+      "description": "A six-week recorded course in his core method for turning good experiences into lasting inner strengths. It includes guided practices, a handbook and discussion forums; a version with professional education credits costs more.",
+      "price": "$499",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "mindfulness",
+        "conscious-science"
+      ],
+      "image": "https://rickhanson.com/wp-content/uploads/2023/12/Rick-Default.jpg"
+    },
+    {
+      "title": "The Self-Worth Workshop",
+      "url": "https://rickhanson.com/online-courses/the-self-worth-workshop/",
+      "description": "A six-week recorded course on feeling at home in your own worth. Short talks, guided practices and a workbook focus on self-compassion, feeling cared about and letting go of harsh self-judgement.",
+      "price": "$299",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "mindfulness",
+        "self-healing"
+      ],
+      "image": "https://rickhanson.com/wp-content/uploads/2024/03/Self-WorthWorkshop-Event.jpg"
+    },
+    {
+      "title": "Just One Minute",
+      "url": "https://rickhanson.com/online-courses/just-one-minute/",
+      "description": "Fifty-seven very short practices, each introduced in a video of a minute or two, with an audio file, handout and weekly emails. The idea is to take up one small practice a day.",
+      "price": "$49",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "image": "https://rickhanson.com/wp-content/uploads/2023/12/Rick-Default.jpg"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Wednesday Meditations with Dr. Rick Hanson",
+      "url": "https://rickhanson.com/wednesday-meditations-with-dr-rick-hanson/",
+      "description": "A free weekly session on Zoom each Wednesday evening, Pacific time: a guided meditation, a talk with questions, and optional small-group discussion. Recordings are available to those who sign up.",
+      "featured": true,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://rickhanson.com/wp-content/uploads/2022/06/WednesdayMeditations_Rick_Featured2.jpg"
+    }
+  ],
+  "sprint": {
+    "sprint": "pipelines-3",
+    "hub": "sounds-true",
+    "rank": 214,
+    "hub_url": "https://www.soundstrue.com/collections/authors-rick-hanson",
+    "tier_evidence": "YouTube @RickHanson 47.8K subscribers (channel header, 6 Nov 2026); Instagram, Facebook, X and TikTok linked from rickhanson.com but not readable without login → readable total ~48k → local_hero on counts",
+    "tier_override": "Editorial stature: New York Times best-selling author whose own about page says his books are published in 33 languages with over a million copies in English; proposed luminary, owner decides.",
+    "email": "contact form",
+    "email_source": null,
+    "contact_form_url": "https://rickhanson.com/contact/",
+    "bio_check": "OK: no 8-word runs against 13 source(s)",
+    "flags": [
+      "Tier: readable followers only ~48k; luminary proposed on editorial stature, owner decides.",
+      "Health-rule borderline: his site's topic menu and several courses are framed by conditions (anxiety, depression, trauma, insecure attachment, grief, insomnia podcast episode); I judged his work mainly meditation and well-being teaching rather than condition-led, but the owner may disagree. All condition-named courses, talks and podcast episodes left out.",
+      "Political: his site has a 'Navigating Political Turmoil' topic page and he founded the Global Compassion Coalition; one topic among many, left out.",
+      "He is a psychologist (clinical practice now closed to new clients); listed for his meditation and Buddhist-informed teaching, not therapy.",
+      "Insight Meditation Society and Spirit Rock are named on his about page only in a list of organisations he is grateful to, not as places he teaches; no hub link added.",
+      "Contact is by form only; the page says personal questions cannot get individual replies.",
+      "Books: ISBNs from his own book pages on rickhanson.com, not confirmed elsewhere. Buddha's Brain uses the 2009 New Harbinger ISBN; his page also lists a newer edition (9781648485602). Covers are his site's 3D book images.",
+      "Name: presented as 'Dr. Rick Hanson' on his own site; the PhD is kept as 'Dr.' per house style, slug rick-hanson.",
+      "Possible cross-reference: Ethan Nichtern's plan (this sprint) lists videos from the Rick Hanson channel."
+    ],
+    "left_out": [
+      "Courses named for conditions: Trauma and the Healing Power of Love, Healing Insecure Attachment, Breaking Out of Rumination, Dealing with Anxiety, Grief and Loss (also dated, starts 21 Nov 2026, but condition-led).",
+      "Videos on anxiety, 'healing emotional baggage', 'heal what's been missing', rumination, boundaries: condition or therapy framing.",
+      "A Happy, Healthy Mom and Mother Nurture: maternal health books (health framing).",
+      "Making Great Relationships: no ISBN taken (book page not opened).",
+      "Foundations of Well-Being 2.0, Change Your Mind, Courage to Connect, Strong Heart: course pages not opened (enough items; crawl-delay 10).",
+      "Professional Course: for clinicians."
+    ]
+  },
+  "images_final": true
+}

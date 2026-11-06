@@ -1,0 +1,232 @@
+{
+  "healer": {
+    "healer_slug": "cynthia-bourgeault",
+    "location_source": "https://www.cynthiabourgeault.org/biography",
+    "create": {
+      "name": "Cynthia Bourgeault",
+      "bio": "Cynthia Bourgeault is an Episcopal priest, writer and teacher of Christian contemplation who lives on the coast of Maine, splitting her days between a small island hermitage and the village of Stonington, often crossing between them in her own boat. Raised near Philadelphia, she first met silence in Quaker meetings at school, later took a doctorate in medieval studies with a focus on early music, and was ordained in 1979.\n\nA ten-day retreat with Thomas Keating in 1990 changed her course: she became his pupil, then his editor and finally a colleague for some thirty years. The hermit Raphael Robin showed her how to join the monastic path with the self-observation of the Gurdjieff Work, and in 1999 she gave the first of her Wisdom Schools in British Columbia. Her books, among them The Wisdom Jesus, The Heart of Centering Prayer, Mystical Hope and Eye of the Heart, explore Centering Prayer, the inner side of Christianity and what she calls the imaginal realm. Today the Wisdom Waypoints network carries her work, with online courses such as a five-week Introductory Wisdom School, live talks and free recorded teachings. She is also emeritus faculty at the Center for Action and Contemplation.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local_online",
+      "city": "Stonington, Maine",
+      "country": "United States",
+      "subjects": [
+        "mysticism",
+        "meditation",
+        "spirituality"
+      ],
+      "website_url": "https://www.cynthiabourgeault.org/",
+      "booking_url": "https://wisdomwaypoints.org/events/cynthia-events/",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": "https://www.facebook.com/CynthiaBourgeault.public/",
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": null,
+      "image_urls": [
+        "https://images.squarespace-cdn.com/content/v1/6362e6b4b79ec030f466fba7/bf7b80de-81a2-4c02-bd37-e981d1a391eb/Meet+Cynthia+Bourgeault.png",
+        "https://images.squarespace-cdn.com/content/v1/6362e6b4b79ec030f466fba7/19ff8166-450b-40e0-9c62-e8b7075b28d5/cynthia_rocks_2200-2.jpg",
+        "https://images.squarespace-cdn.com/content/v1/6362e6b4b79ec030f466fba7/55049d94-6da7-4aeb-82dd-8767c86a96e4/cynthia_sea.png"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [
+    {
+      "title": "The Wisdom Jesus: Transforming Heart and Mind",
+      "slug": "the-wisdom-jesus",
+      "author": "Cynthia Bourgeault",
+      "asin": "1590305809",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "Her best-known introduction to Jesus as a teacher of inner transformation, read through the Christian Wisdom tradition.",
+      "subjects": [
+        "mysticism",
+        "spirituality"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1590305809.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "The Heart of Centering Prayer: Nondual Christianity in Theory and Practice",
+      "slug": "the-heart-of-centering-prayer",
+      "author": "Cynthia Bourgeault",
+      "asin": "1611803144",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "Instruction in Centering Prayer together with her account of what shifts in perception during the practice.",
+      "subjects": [
+        "meditation",
+        "non-duality"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1611803144.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "The Wisdom Way of Knowing: Reclaiming an Ancient Tradition to Awaken the Heart",
+      "slug": "the-wisdom-way-of-knowing",
+      "author": "Cynthia Bourgeault",
+      "asin": "078796896X",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "A short gateway book on Wisdom as a deeper, whole-person way of knowing, and the practices that support it.",
+      "subjects": [
+        "mysticism",
+        "spirituality"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/078796896X.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "The Holy Trinity and the Law of Three",
+      "slug": "the-holy-trinity-and-the-law-of-three",
+      "author": "Cynthia Bourgeault",
+      "asin": "1611800528",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "A rethinking of the Trinity in the light of Gurdjieff's Law of Three, as a pattern of ongoing creation.",
+      "subjects": [
+        "mysticism",
+        "spirituality"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1611800528.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "The Meaning of Mary Magdalene",
+      "slug": "the-meaning-of-mary-magdalene",
+      "author": "Cynthia Bourgeault",
+      "asin": "1590304950",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "A study of Mary Magdalene as a disciple and spiritual partner of Jesus, drawing on the Gospels and early texts.",
+      "subjects": [
+        "mysticism",
+        "spirituality"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1590304950.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "Mystical Hope: Trusting in the Mercy of God",
+      "slug": "mystical-hope",
+      "author": "Cynthia Bourgeault",
+      "asin": "1561011932",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "A brief book on hope as an inner presence found in contemplative practice rather than an expectation of outcomes.",
+      "subjects": [
+        "mysticism",
+        "meditation"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1561011932.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "Eye of the Heart: A Spiritual Journey into the Imaginal Realm",
+      "slug": "eye-of-the-heart",
+      "author": "Cynthia Bourgeault",
+      "asin": "1611806526",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "Her exploration of the imaginal realm known to the mystical traditions and how to perceive it with the heart.",
+      "subjects": [
+        "mysticism",
+        "spirituality"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1611806526.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "Love Is Stronger Than Death: The Mystical Union of Two Souls",
+      "slug": "love-is-stronger-than-death",
+      "author": "Cynthia Bourgeault",
+      "asin": "1939681359",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "Her first book, on her spiritual partnership with the hermit Raphael Robin and what continued after his death.",
+      "subjects": [
+        "mysticism",
+        "death-the-afterlife"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1939681359.01._SCLZZZZZZZ_.jpg"
+    }
+  ],
+  "courses": [
+    {
+      "title": "Introductory Wisdom School",
+      "url": "https://wisdomwaypoints.org/courses/introductory-wisdom-school/",
+      "description": "A newly filmed five-week online course introducing the Christian Wisdom tradition, from Benedictine prayer and work to Gurdjieff's three-centred awareness.",
+      "price": "$175",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "mysticism",
+        "spirituality"
+      ],
+      "image": "https://wisdomwaypoints.org/wp-content/uploads/2025/08/600x400-1.png"
+    },
+    {
+      "title": "A Teaching with Cynthia Bourgeault: Eye of the Heart",
+      "url": "https://wisdomwaypoints.org/2026/09/a-teaching-with-cynthia-bourgeault-eye-of-the-heart/",
+      "description": "A live ninety-minute Zoom session in which she teaches on the imaginal realm from her book, with centring practice and time for questions; recorded for all who sign up.",
+      "price": "A suggested donation of $25.00",
+      "product_type": "course",
+      "start_date": "2026-11-16",
+      "end_date": "2026-11-16",
+      "subjects": [
+        "mysticism"
+      ],
+      "image": "https://wisdomwaypoints.org/wp-content/uploads/2026/09/600x400.png"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Metis Teaching by Cynthia Bourgeault",
+      "url": "https://wisdomwaypoints.org/2024/08/metis-teaching-by-cynthia-bourgeault/",
+      "description": "A recorded talk from a Wisdom School in Ontario on métis, the skill of acting rightly in the moment from three-centred awareness.",
+      "featured": true,
+      "resource_type": "workshop",
+      "subjects": [
+        "mysticism",
+        "spirituality"
+      ],
+      "image": "https://wisdomwaypoints.org/wp-content/uploads/2024/08/iggie_greenery-768x514-1.jpg"
+    }
+  ],
+  "sprint": {
+    "sprint": "pipelines-3",
+    "hub": "sounds-true",
+    "rank": 307,
+    "hub_url": "https://www.soundstrue.com/collections/authors-cynthia-bourgeault",
+    "tier_evidence": "Facebook /CynthiaBourgeault.public linked from her site, not readable without login (not tried); no YouTube channel linked from her site; Substack not fetched (off limits) → counts unreadable → local_hero",
+    "email": "contact form",
+    "email_source": null,
+    "contact_form_url": "https://wisdomwaypoints.org/contact-us/",
+    "bio_check": "OK: no 8-word runs against 13 source(s)",
+    "flags": [
+      "Contact: cynthiabourgeault.org/contact has no form or email and sends people to Wisdom Waypoints (the non-profit that carries her work); its contact form is used. Many personal emails on the event pages belong to volunteers/circle hosts and were not used.",
+      "Regional: Stonington, Maine is a small village; her biography says she splits her time between it and an island hermitage.",
+      "Tier: no count readable; she is widely published and was on the Watkins 100 list in 2021 (her biography), so the owner may judge editorial stature.",
+      "Political: the Wisdom Waypoints menu carries a blog collection tagged 'Abortion and Pro-life' (not opened, left out).",
+      "Co-teaches with David Frenette (rank 306, plan david-frenette.json): a recorded dialogue on his replays page.",
+      "Center for Action and Contemplation (cac.org) is named in her biography as emeritus faculty; not a hub on our list and cac.org refused us earlier (403), so no link.",
+      "Book ASINs from the Amazon links on wisdomwaypoints.org/resource/cynthias-books/ (her organisation's page); Amazon not opened; not confirmed elsewhere.",
+      "Photos from her own site (squarespace CDN, 1000 px versions viewed). Photos 2 and 3 are outdoor shots (on rocks by the sea, on a boat) with her face clear but small.",
+      "wisdomwaypoints.org robots.txt sets Crawl-delay: 10; fetches were spaced 10+ seconds apart.",
+      "Place alias needed: the ingest says Stonington, Maine is not in places (under 5,000 people); add an alias (README §18.4).",
+      "The Metis teaching is a recorded Vimeo talk; typed as workshop because video is not an allowed resource_type."
+    ],
+    "left_out": [
+      "Imaginal Mysticism with Elizabeth Debold (27 Nov 2026): run by Evolve (evolve-world.org), not opened; Wisdom Waypoints lists it for information only.",
+      "Gurdjieff 'Conscience' talk (20 Nov 2026): page not opened.",
+      "Centering Prayer and Inner Awakening, The Corner of Fourth and Nondual, Chanting the Psalms: kept the list to eight books; Centering Prayer and Inner Awakening had no ASIN.",
+      "Other free teachings (Contemplative Practice in the Modern World, Holding our Planet, Gurdjieff and Teilhard, Exploring the Imaginal Realm): pages not opened.",
+      "Substack (cynthiabourgeault.substack.com): off limits."
+    ]
+  },
+  "images_final": true
+}

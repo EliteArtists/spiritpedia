@@ -1,0 +1,174 @@
+{
+  "healer": {
+    "healer_slug": "diana-winston",
+    "location_source": "https://dianawinston.com/upcoming",
+    "create": {
+      "name": "Diana Winston",
+      "bio": "Diana Winston is a mindfulness teacher and writer in Los Angeles who leads UCLA Mindful, the mindfulness education centre within UCLA Health. She began meditating in 1989, lived for a year as a nun in a Burmese monastery, and trained as a teacher under Jack Kornfield; she now sits on the teachers' council of a large insight meditation centre in Northern California. Over seventeen years at UCLA's Mindful Awareness Research Center she built the Mindful Awareness Practices curriculum and a facilitator training that has prepared hundreds of mindfulness teachers around the world, and she was among the early pioneers of meditation retreats for young people.\n\nIn recent years her teaching has turned towards what she calls natural awareness: a relaxed, open, effortless way of resting in awareness rather than holding attention on one object. She offers free weekly guided meditations in a Los Angeles museum close to UCLA and online, longer silent retreats, and recorded courses, and her guided practices reach a wide audience through the free UCLA Mindful app and other meditation apps. Her books include The Little Book of Being, Glimpses of Being, Wide Awake, a Buddhist guide for teenagers, and Fully Present, written with Susan Smalley.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local_online",
+      "city": "Los Angeles, California",
+      "country": "United States",
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "website_url": "https://dianawinston.com/",
+      "booking_url": "https://dianawinston.com/upcoming",
+      "youtube_url": null,
+      "instagram_url": "https://www.instagram.com/dianawinstonmindful",
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "info@dianawinston.com",
+      "image_urls": [
+        "https://static.showit.co/1200/bEFEsysbAJyHkGtyENOkAg/119620/dianawinstonnew_copy2.png",
+        "https://static.showit.co/1200/d3OhxHzyQ4SVeZ3Cf2G4-A/119620/dis-headshot.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [
+    {
+      "title": "TEDxSunsetPark - Diana Winston - The Practice of Mindfulness",
+      "url": "https://www.youtube.com/watch?v=oMlaSCxZPN4",
+      "subjects": [
+        "mindfulness"
+      ],
+      "channel": "TEDx Talks"
+    }
+  ],
+  "books": [
+    {
+      "title": "The Little Book of Being: Practices and Guidance for Uncovering Your Natural Awareness",
+      "slug": "the-little-book-of-being",
+      "author": "Diana Winston",
+      "asin": "1683642171",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "A short, practical guide to natural awareness, the open and effortless side of mindfulness. Each chapter pairs a brief explanation with a practice for resting in awareness during ordinary life.",
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1683642171.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "Glimpses of Being: A Training Course in Expanding Mindful Awareness",
+      "slug": "glimpses-of-being",
+      "author": "Diana Winston",
+      "asin": "1683647890",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "A step-by-step training in widening attention from focused mindfulness to a spacious, choiceless awareness, built from the way she teaches the subject in classes.",
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1683647890.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "Fully Present: The Science, Art, and Practice of Mindfulness",
+      "slug": "fully-present",
+      "author": "Susan L. Smalley, Diana Winston",
+      "asin": "0306829401",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "Co-written with the researcher Susan Smalley, this book sets out what science says about mindfulness alongside clear instructions for practising it in meditation and in daily activities such as walking and listening.",
+      "subjects": [
+        "mindfulness",
+        "conscious-science"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/0306829401.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "Wide Awake: A Buddhist Guide for Teens",
+      "slug": "wide-awake-a-buddhist-guide-for-teens",
+      "author": "Diana Winston",
+      "asin": "0399528970",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "An introduction to Buddhist ideas and meditation written for teenagers, with practical advice on peer pressure, honesty, relationships and making a difference in the world.",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/0399528970.01._SCLZZZZZZZ_.jpg"
+    }
+  ],
+  "courses": [
+    {
+      "title": "Befriending Your Mind & Emotions: The Essential Guide to Mindfulness Practice",
+      "url": "http://learn.lionsroar.com/p/befriending-your-mind-and-emotions-essential-guide-to-mindfulness-practice",
+      "description": "A self-paced online course with twenty-one teaching sessions and eleven guided practices, aimed at building a steady daily mindfulness habit and working wisely with thoughts and feelings. Lifetime access through Lion's Roar.",
+      "price": "$99",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "image": "https://uploads.teachablecdn.com/attachments/BjMx6jtxSdyLZNIeFpHV_25+OL+BYME_teachable+thumb.png"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Free Weekly Mindful Awareness Meditation at the Hammer Museum",
+      "url": "https://hammer.ucla.edu/programs-events/2014/05/mindful-awareness-meditation",
+      "description": "A free thirty-minute guided meditation most Thursdays at lunchtime, held at the Hammer Museum near UCLA and streamed live, led by Diana and colleagues.",
+      "featured": true,
+      "resource_type": "meditation",
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "image": "https://hammer.ucla.edu/sites/default/files/styles/hero_r_large/public/2025-02/HMBUILDING2016_05-04%20-%20X-Large%20%282000%20px%29.jpg?h=ee41355b&itok=hN-jWgq_"
+    },
+    {
+      "title": "Guided Meditations with Diana Winston",
+      "url": "https://dianawinston.com/meditations",
+      "description": "A page of free recorded practices on her site, from a five-minute breathing meditation to longer sessions on loving-kindness and natural awareness, plus links to her talks on Dharma Seed.",
+      "featured": false,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://static.showit.co/1200/YSYU7iTET76ubsvqu84aJg/119620/bowl3.jpg"
+    }
+  ],
+  "sprint": {
+    "sprint": "pipelines-3",
+    "hub": "sounds-true",
+    "rank": 145,
+    "hub_url": "https://www.soundstrue.com/collections/authors-diana-winston",
+    "tier_evidence": "No own YouTube channel found; Instagram @dianawinstonmindful not readable without login (6 Nov 2026) → 0 readable → local_hero",
+    "email": "yes",
+    "email_source": "https://dianawinston.com/contact",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 8 source(s)",
+    "flags": [
+      "No hub (Kripalu, Esalen, Omega, IMS) named on her own site; listed without a hub link. Her retreats are mainly at Spirit Rock, which is never fetched and not added as a hub.",
+      "Base: Los Angeles, from her own events page (weekly class at the Hammer Museum near UCLA, and her role as director of UCLA Mindful).",
+      "Tier: Instagram couldn't be read; she has no YouTube channel of her own, so counts are effectively unknown. Owner may consider editorial stature (director of UCLA Mindful; trained 500+ mindfulness teachers per her site).",
+      "Only one YouTube video of her as main speaker was linked from her own site (TEDx); no channel searched.",
+      "Lion's Roar course price ($99) read from learn.lionsroar.com after its robots.txt.",
+      "Book ISBNs from the Bookshop.org and Amazon links on her publications page, not confirmed elsewhere.",
+      "Health rule: her site frames mindfulness partly around stress and emotion regulation; her 'Working Mindfully with Body Pain' and 'Meditation for Sleep' recordings and the menopause guide were not used as items."
+    ],
+    "left_out": [
+      "Silent retreats at Spirit Rock (Jan 2027 and May 2027): Spirit Rock links not opened (its robots.txt blocks Claude agents) and no price available.",
+      "Lion's Roar guest teaching (October 2026) and the 'Expand your Mindfulness' day (22 Oct): past.",
+      "Cultivating Forgiveness (Mindful Online Learning): her site calls it a free mini course but the course page sells it; unclear, left out.",
+      "Happier's Mindful Menopause Guide: condition-named.",
+      "Free weekly online class (Wednesdays): no page of its own linked."
+    ]
+  },
+  "images_final": true
+}

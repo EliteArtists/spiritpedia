@@ -1,0 +1,64 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 967,
+    "healer_slug": "mary-paffard"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "b63adb11-4d81-4cac-96b6-71602e1798a9",
+      "slug": "online-yoga-classes",
+      "title": "Online Yoga Classes"
+    },
+    {
+      "table": "courses",
+      "id": "d12a7cce-60cc-4e64-ae8f-644b164cafdd",
+      "slug": "sarvangasana-a-forum-for-discovery",
+      "title": "Sarvangasana: A Forum for Discovery"
+    },
+    {
+      "table": "courses",
+      "id": "7a9e1b07-7c76-4cb5-830e-97680bbe9761",
+      "slug": "off-the-grid-outdoor-meditation-and-yoga-retreat",
+      "title": "Off the Grid Outdoor Meditation and Yoga Retreat"
+    },
+    {
+      "table": "courses",
+      "id": "b64b2c32-972f-41fa-859a-d89996aca8a5",
+      "slug": "gray-bear-presence-in-yoga",
+      "title": "Gray Bear: Presence in Yoga"
+    },
+    {
+      "table": "courses",
+      "id": "5e1d1e70-d811-44af-a242-00f5a3b0d893",
+      "slug": "2027-summer-retreat-at-rivers-bend",
+      "title": "2027 Summer Retreat at Rivers Bend"
+    },
+    {
+      "table": "free_resources",
+      "id": "9925d8ff-a848-4747-82ba-e32f0e547f9c",
+      "slug": "mary-paffard-yoga-podcast",
+      "title": "Mary Paffard Yoga Podcast"
+    },
+    {
+      "table": "free_resources",
+      "id": "9ba51a43-cac7-4146-a3b0-2c6cf6e2d606",
+      "slug": "peace-of-wild-things-meditation",
+      "title": "Peace of Wild Things Meditation"
+    },
+    {
+      "table": "free_resources",
+      "id": "818186c5-9e06-4790-bc60-8edd87f3cfe3",
+      "slug": "tonglen-reflection",
+      "title": "Tonglen Reflection"
+    },
+    {
+      "table": "free_resources",
+      "id": "9f40dce7-d568-4569-a7e5-28c8149fd010",
+      "slug": "make-yourself-a-light",
+      "title": "Make Yourself A Light"
+    }
+  ],
+  "at": "2026-11-06T14:45:27.503Z"
+}

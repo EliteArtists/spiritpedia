@@ -1,0 +1,188 @@
+{
+  "healer": {
+    "healer_slug": "yasmin-boland",
+    "location_source": null,
+    "no_public_base": "Her own site (home, about, contact, podcast pages) says only that she once held New Moon gatherings around Sydney and London and visits an ashram in southern India; it gives no current home city. Not guessed.",
+    "create": {
+      "name": "Yasmin Boland",
+      "bio": "Yasmin Boland is an astrologer and author who worked as a journalist and television producer before turning to astrology. In the late 1990s she began learning about lunar practice from women she met, from Moon circles and from her reading, and she came to centre her work on two simple rhythms: setting intentions at the New Moon and letting go at the Full Moon. She says these practices draw mostly on Celtic and Hindu sources, and since 2004 she has made regular visits to an ashram in southern India devoted to the goddesses Lakshmi, Saraswati and Durga.\n\nHer approach, which she calls Moonology, treats the Moon's phases and eclipses as a practical calendar for reflection and manifesting, and she writes with women especially in mind. Her books include Moonology, Astrology Made Easy and The Mercury Retrograde Book, and she created the Moonology oracle cards. She publishes free daily, weekly and monthly horoscopes, hosts the weekly Mainly Moonology podcast, which mixes the week's astrology with listener chart readings, and shares chants and short meditations for different points in the lunar and planetary cycle.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "worldwide",
+      "city": null,
+      "country": null,
+      "subjects": [
+        "astrology",
+        "manifestation"
+      ],
+      "website_url": "https://www.yasminboland.com/",
+      "booking_url": "https://www.yasminboland.com/",
+      "youtube_url": "https://www.youtube.com/@YasminBolandMoonology",
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": null,
+      "image_urls": [
+        "https://yt3.googleusercontent.com/fH8eFjNcD15WlcTF0hclNJUUykxA6I6kWQdE-lkeoX48fcbH33BGkQbCMLSofaGTFqxyo7qW8Q=s900"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [
+    {
+      "title": "Why New Moon manifesting works",
+      "url": "https://www.youtube.com/watch?v=vh1PukqFoEw",
+      "subjects": [
+        "astrology",
+        "manifestation"
+      ],
+      "channel": "Yasmin Boland"
+    },
+    {
+      "title": "The Moon phase most people skip - Dark Moon in Gemini (breathwork + card pull)",
+      "url": "https://www.youtube.com/watch?v=PzIt9qRxbes",
+      "subjects": [
+        "astrology",
+        "breathwork"
+      ],
+      "channel": "Yasmin Boland"
+    },
+    {
+      "title": "Eclipse Season Is Here: What This Means for You Now",
+      "url": "https://www.youtube.com/watch?v=6EZyxRQaB_g",
+      "subjects": [
+        "astrology"
+      ],
+      "channel": "Yasmin Boland"
+    }
+  ],
+  "books": [
+    {
+      "title": "Moonology: Working with the Magic of Lunar Cycles",
+      "slug": "moonology",
+      "author": "Yasmin Boland",
+      "asin": "1781807426",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "Her guide to following the Moon's phases, signs and eclipses as a framework for setting intentions and letting go. It explains New Moon wishing and Full Moon release step by step.",
+      "subjects": [
+        "astrology",
+        "manifestation"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1781807426.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "Moonology Oracle Cards",
+      "slug": "moonology-oracle-cards",
+      "author": "Yasmin Boland",
+      "asin": "1781809968",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "A deck of oracle cards built around the Moon's phases and signs, with a guidebook. It is meant for reflection and for planning around the lunar cycle.",
+      "subjects": [
+        "astrology",
+        "manifestation"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1781809968.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "Astrology Made Easy",
+      "slug": "astrology-made-easy",
+      "author": "Yasmin Boland",
+      "asin": "1788172485",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "A beginner's handbook to reading a birth chart, covering signs, planets, houses and aspects. Aimed at readers who want to interpret their own chart.",
+      "subjects": [
+        "astrology"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1788172485.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "The Mercury Retrograde Book",
+      "slug": "the-mercury-retrograde-book",
+      "author": "Yasmin Boland",
+      "asin": "1401958923",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "A short book on working with Mercury's retrograde periods instead of dreading them. It suggests ways to use these weeks to open up new opportunities.",
+      "subjects": [
+        "astrology"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1401958923.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "Angel Astrology 101",
+      "slug": "angel-astrology-101",
+      "author": "Doreen Virtue and Yasmin Boland",
+      "asin": "1401943055",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "Co-written with Doreen Virtue, it links the signs and planets of a birth chart with the angels traditionally associated with them. A light introduction for readers drawn to both astrology and angels.",
+      "subjects": [
+        "astrology",
+        "spirituality"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1401943055.01._SCLZZZZZZZ_.jpg"
+    }
+  ],
+  "courses": [],
+  "free_resources": [
+    {
+      "title": "Mainly Moonology Podcast",
+      "url": "https://www.yasminboland.com/podcast/",
+      "description": "Her free weekly show on the astrology of the week ahead, with listeners calling in for chart readings and guests from the astrology world.",
+      "featured": true,
+      "resource_type": "practice",
+      "subjects": [
+        "astrology"
+      ],
+      "image": "https://www.yasminboland.com/wp-content/uploads/2022/07/Mainly-Moonology-OG-Img.jpg"
+    },
+    {
+      "title": "Your Saraswati meditation for Mercury retrograde",
+      "url": "https://www.yasminboland.com/your-saraswati-meditation-for-mercury-retrograde/",
+      "description": "A free recorded meditation devoted to the goddess Saraswati, whom she pairs with Mercury as a patron of language and learning. Offered for use during any Mercury retrograde.",
+      "featured": false,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation",
+        "astrology"
+      ],
+      "image": "https://www.yasminboland.com/wp-content/uploads/2019/11/My-Post-34.png"
+    }
+  ],
+  "sprint": {
+    "sprint": "pipelines-3",
+    "hub": "omega",
+    "rank": 201,
+    "hub_url": "https://www.eomega.org/people/yasmin-boland",
+    "tier_evidence": "YouTube 15.8k (channel header next to @YasminBolandMoonology, 6 Nov 2026; served in Portuguese as '15,8 mil subscritores'); Instagram @planetyasminboland and Facebook yasminbolandmoonology not readable without logging in → 15.8k counted → local_hero",
+    "email": "contact form",
+    "email_source": null,
+    "contact_form_url": "https://www.yasminboland.com/contact/",
+    "bio_check": "OK: no 8-word runs against 8 source(s)",
+    "flags": [
+      "No Omega mention on own site: listed without the link (eomega.org not opened).",
+      "Tier counts unreadable for Instagram and Facebook, which look like her main accounts; the true total could be much higher. She is a Sunday Times best-selling astrology author, which may justify an editorial tier override (owner to decide).",
+      "Contact page asks people to 'send my team an email' but shows no address; its form (with a website-issues question first) is used as the contact route.",
+      "moonology.com (magic.moonology.com) and mainlymoonologymembership.com refused our robots.txt requests (403), so her membership, Moonology courses and free birth-chart offer there were not opened or listed.",
+      "Books: ISBNs from her own books page (yasminboland.com/books/), not confirmed elsewhere. Moonology ISBN 9781781807422 is the UK Hay House edition; the US edition was not checked. Angel Astrology 101 is co-written with Doreen Virtue.",
+      "Her YouTube channel is mostly dated astrology forecasts; only three more general videos were picked. Titles from oEmbed (the channel page was served in Portuguese).",
+      "Only one photo used (YouTube avatar); the site's own portrait has 'Welcome!' text over it."
+    ],
+    "left_out": [
+      "Moonology Certification and Astrology Made Easy online courses: sold through Hay House (hayhouse.co.uk / hayhouseu.com, not fetched).",
+      "Mainly Moonology membership, Moonology Manifesting Challenge and Venus retrograde mini-course: on hosts that refused our robots.txt request.",
+      "Dated horoscope and forecast videos; video 'The Moon rules food' (food cravings, borderline health).",
+      "Moonology Diary and calendars (dated yearly products)."
+    ]
+  },
+  "images_final": true
+}

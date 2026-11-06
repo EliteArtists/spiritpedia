@@ -1,0 +1,146 @@
+{
+  "healer": {
+    "healer_slug": "jett-psaris",
+    "location_source": null,
+    "no_public_base": "Her sites say only that the Conscious Living Center she co-founded is 'located in the San Francisco Bay Area' and give a 510 phone number; a region is not a published town.",
+    "create": {
+      "name": "Jett Psaris",
+      "bio": "Jett Psaris is a writer and guide who treats intimate relationships and the middle years of life as paths of inner and spiritual growth. She came to this work by an unusual route. After studying foreign service at Georgetown, she led sales and marketing at an early Silicon Valley computer start-up, then lost her fortune when it failed, paid off her debts and took an MBA. At thirty-two she stepped away for a year to question every belief she held, and from that inquiry grew a self-directed doctorate in psychology and a partnership with Marlena Lyons.\n\nTogether they founded the Conscious Living Center in the San Francisco Bay Area in 1990 and wrote Undefended Love, which treats conflict between partners as a chance to drop old defences and meet each other openly. Her later book, Hidden Blessings, reads the upheaval of midlife as a spiritual rebirth rather than a crisis to be endured, and won several independent book awards. She expanded it into Taking the Midlife Leap, a self-paced course of fourteen downloadable modules with meditations and writing practices. For more than three decades she has also worked with individuals and couples, now by phone and Zoom, and has led workshops in the United States and abroad.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "worldwide",
+      "city": null,
+      "country": null,
+      "subjects": [
+        "conscious-relationships",
+        "spiritual-awakening",
+        "spirituality"
+      ],
+      "website_url": "https://www.jettpsaris.com/",
+      "booking_url": "https://www.jettpsaris.com/purchase-ebooks/",
+      "youtube_url": "https://www.youtube.com/@jettpsaris9150",
+      "instagram_url": null,
+      "facebook_url": "https://www.facebook.com/Jett-Psaris-354997358213362/",
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "jett@jettpsaris.com",
+      "image_urls": [
+        "https://www.jettpsaris.com/wp-content/uploads/2016/10/jett-psaris-about.jpg",
+        "https://www.jettpsaris.com/wp-content/uploads/2016/03/jett-standing-cutout.png"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [
+    {
+      "title": "Jett Psaris Midlife Mastery Summit Interview",
+      "url": "https://www.youtube.com/watch?v=pFpZuhtydAc",
+      "subjects": [
+        "spiritual-awakening",
+        "spirituality"
+      ],
+      "channel": "Jett Psaris"
+    }
+  ],
+  "books": [
+    {
+      "title": "Hidden Blessings: Midlife Crisis as a Spiritual Awakening",
+      "slug": "hidden-blessings",
+      "author": "Jett Psaris",
+      "asin": "0998293520",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "Her guide to the midlife passage as a time when an old sense of self falls away and a more soulful one can emerge, mixing psychological insight with spiritual practice.",
+      "subjects": [
+        "spiritual-awakening",
+        "spirituality"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/0998293520.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "Undefended Love",
+      "slug": "undefended-love",
+      "author": "Jett Psaris and Marlena S. Lyons",
+      "asin": "1572242086",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "Written with Marlena Lyons, a book on using the friction of a close relationship to notice and lay down emotional defences, with case stories, self-inquiries and exercises.",
+      "subjects": [
+        "conscious-relationships",
+        "spirituality"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1572242086.01._SCLZZZZZZZ_.jpg"
+    }
+  ],
+  "courses": [
+    {
+      "title": "Taking the Midlife Leap, One Step at a Time (full course)",
+      "url": "https://www.jettpsaris.com/purchase-ebooks/",
+      "description": "A self-paced online course in fourteen PDF modules, an introduction, twelve stages and a closing, extending Hidden Blessings with meditations, contemplative practices and writing assignments for each stage of midlife.",
+      "price": "$95.00",
+      "product_type": "download",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "spiritual-awakening",
+        "spirituality"
+      ],
+      "image": "https://www.jettpsaris.com/wp-content/uploads/2016/10/JETT-PSARIS-LOGO.png"
+    },
+    {
+      "title": "Sessions with Jett Psaris",
+      "url": "https://www.undefendedlove.com/sessions-with-authors/",
+      "description": "Ongoing or as-needed sessions for individuals and couples by phone or Zoom, using her self-inquiry approach that joins Western psychology with Eastern spiritual traditions. Booked by email.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "conscious-relationships",
+        "spirituality"
+      ],
+      "image": "https://www.jettpsaris.com/wp-content/uploads/2016/10/jett-psaris-about.jpg"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Hidden Blessings Self-Inquiry Study Guide",
+      "url": "https://www.jettpsaris.com/wp-content/uploads/2017/06/Hidden_Blessing_Self-Inquiry.pdf",
+      "description": "A free PDF study guide of self-inquiry questions to use alongside Hidden Blessings.",
+      "featured": false,
+      "resource_type": "download",
+      "subjects": [
+        "spiritual-awakening"
+      ],
+      "image": "https://m.media-amazon.com/images/P/0998293520.01._SCLZZZZZZZ_.jpg"
+    }
+  ],
+  "sprint": {
+    "sprint": "pipelines-3",
+    "hub": "esalen",
+    "rank": 289,
+    "hub_url": "https://www.esalen.org/faculty/jett-psaris",
+    "tier_evidence": "YouTube @jettpsaris9150 10 subscribers (channel header, 6 Nov 2026); Facebook page linked but not readable without login → readable total ~0 → local_hero",
+    "email": "yes",
+    "email_source": "https://www.jettpsaris.com/contact-us/",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 8 source(s)",
+    "flags": [
+      "No Esalen mention on jettpsaris.com or undefendedlove.com pages read: listed without the link.",
+      "Own sites: undefendedlove.com came from a search snippet (GoodTherapy listing) and was confirmed on the site itself (her name, bio, email); it links to jettpsaris.com, her main site.",
+      "Scope: she has been 'in private practice working with couples and individuals' for 35 years; her doctorate is self-directed (Summit University of Louisiana) and her site frames the work as psycho-spiritual self-inquiry, not therapy. Owner may judge.",
+      "No workshops currently listed on either site; sites look little updated (pages dated 2021–2025).",
+      "Undefended Love is co-written with Marlena Lyons (not listed separately).",
+      "Photos: two on her own site (about-page portrait 250x352, home-page cutout 322x430); small.",
+      "Tier: under 100 readable."
+    ],
+    "left_out": [
+      "Single Midlife Leap modules ($9.95–$14.95 each): the full course is listed.",
+      "Audio interviews (mp3 on her site) and the Midlife Quiz page.",
+      "Book translations (Italian, Polish, Chinese)."
+    ]
+  },
+  "images_final": true
+}

@@ -1,0 +1,119 @@
+{
+  "healer": {
+    "healer_slug": "keri-pederson",
+    "location_source": "https://seattleinsight.org/teacher/keri-pederson-teacher/",
+    "create": {
+      "name": "Keri Pederson",
+      "bio": "Keri Pederson is an insight meditation teacher in the Theravada Buddhist tradition, based on Vashon Island near Seattle. She came to meditation in 1998 through yoga and a wish to understand why people suffer, and her first silent retreats were in the S. N. Goenka tradition. Since then she has sat retreats with lay and monastic teachers in the United States, Thailand and India. She began teaching in 2007 at the invitation of Rodney Smith, and was later authorised as a retreat teacher after the four-year training run by Spirit Rock and the Insight Meditation Society.\n\nToday she is one of the community guiding teachers of Seattle Insight Meditation Society, where she gives regular Monday evening talks, leads ceremonies such as refuges and forgiveness, and meets students one to one for practice interviews. Her talks range over the Buddha's core teachings, from mindfulness and patience to joy, tranquillity and the path to awakening, and are shared as recordings on the society's website and podcast. Alongside her teaching she works in elder care and describes herself as a student of the dharma first.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local_online",
+      "city": "Vashon, Washington",
+      "country": "United States",
+      "subjects": [
+        "meditation",
+        "mindfulness",
+        "spirituality"
+      ],
+      "website_url": "https://seattleinsight.org/teacher/keri-pederson-teacher/",
+      "booking_url": "https://seattleinsight.org/teachers/individual-practice-meetings/",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "keri@seattleinsight.org",
+      "image_urls": [
+        "https://seattleinsight.org/wp-content/uploads/2020/08/Keri-Pederson_2024_500.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [],
+  "free_resources": [
+    {
+      "title": "Dispassion, Passion, and the Feeling Life of Awakening",
+      "url": "https://seattleinsight.org/podcast/dispassion-passion-and-the-feeling-life-of-awakening/",
+      "description": "A recorded Monday evening dharma talk from October 2026 on how feeling and desire fit into the path of awakening. Free to stream from Seattle Insight's talk library.",
+      "featured": true,
+      "resource_type": "practice",
+      "subjects": [
+        "spiritual-awakening",
+        "meditation"
+      ],
+      "image": "https://seattleinsight.org/wp-content/uploads/2021/03/logo_horizontal.jpg"
+    },
+    {
+      "title": "Contentment with What's Here Already",
+      "url": "https://seattleinsight.org/podcast/contentment-with-whats-here-already/",
+      "description": "A short evening talk on finding ease in present experience rather than reaching for the next thing. Recorded at Seattle Insight and free to listen to.",
+      "featured": false,
+      "resource_type": "practice",
+      "subjects": [
+        "mindfulness"
+      ],
+      "image": "https://seattleinsight.org/wp-content/uploads/2021/03/logo_horizontal.jpg"
+    },
+    {
+      "title": "Spiritual Playfulness and Irrepressible Joy",
+      "url": "https://seattleinsight.org/podcast/spiritual-playfulness-and-irrepressible-joy/",
+      "description": "A talk on joy as a factor of awakening and a lighter, more playful attitude to practice. Free recording from the society's podcast.",
+      "featured": false,
+      "resource_type": "practice",
+      "subjects": [
+        "spirituality",
+        "meditation"
+      ],
+      "image": "https://seattleinsight.org/wp-content/uploads/2021/03/logo_horizontal.jpg"
+    },
+    {
+      "title": "Embodied Samadhi",
+      "url": "https://seattleinsight.org/podcast/embodied-samadhi/",
+      "description": "A talk on settling and collecting the mind through attention to the body. Free to stream.",
+      "featured": false,
+      "resource_type": "practice",
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://seattleinsight.org/wp-content/uploads/2021/03/logo_horizontal.jpg"
+    },
+    {
+      "title": "The Immediacy of Mindfulness",
+      "url": "https://seattleinsight.org/podcast/the-immediacy-of-mindfulness-2/",
+      "description": "An evening talk on meeting each moment directly with mindful attention. Recorded at Seattle Insight and freely available.",
+      "featured": false,
+      "resource_type": "practice",
+      "subjects": [
+        "mindfulness"
+      ],
+      "image": "https://seattleinsight.org/wp-content/uploads/2021/03/logo_horizontal.jpg"
+    }
+  ],
+  "sprint": {
+    "sprint": "pipelines-3",
+    "hub": "ims",
+    "rank": 25,
+    "hub_url": "https://www.dharma.org/teacher/keri-pederson/",
+    "tier_evidence": "No social accounts of her own found; no YouTube channel → 0 readable → local_hero",
+    "email": "yes",
+    "email_source": "https://seattleinsight.org/teacher/keri-pederson-teacher/",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 2 source(s)",
+    "flags": [
+      "No personal website found (one search); her teacher page at Seattle Insight Meditation Society, where she is a community guiding teacher, is used as her own page for base, email, photo and talks.",
+      "Email keri@seattleinsight.org is her own address on the Seattle Insight site (mailto on her teacher page).",
+      "No Insight Meditation Society mention on her page beyond being authorised through the Spirit Rock/IMS/IRC training: listed without the IMS link.",
+      "Base published as Vashon Island (lives there); recorded as Vashon, Washington; please map it (island community, Seattle area).",
+      "Items are all free recorded talks on Seattle Insight's site; no YouTube videos, books or paid offerings found. Talk descriptions are based on titles only, kept general.",
+      "No follower counts found (no own accounts); tier set from 0 readable.",
+      "Her page says she is 'primarily a student of the dharma, but teaches regularly when invited': a lighter teaching profile than most."
+    ],
+    "left_out": [
+      "Weekly Monday Meditation & Dharma at Seattle Insight: a centre programme with rotating teachers, not hers alone.",
+      "Ceremony recordings (refuges, forgiveness, Vesak), group interviews and the post-election reflections talk: not general teaching talks, or topical."
+    ]
+  },
+  "images_final": true
+}

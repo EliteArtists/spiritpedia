@@ -1,0 +1,130 @@
+{
+  "healer": {
+    "healer_slug": "lama-palden-drolma",
+    "location_source": "https://www.sukhasiddhi.org/contact",
+    "create": {
+      "name": "Lama Palden Drolma",
+      "bio": "Lama Palden Drolma is an American teacher of Tibetan Buddhism in the Shangpa and Karma Kagyu lineages. Drawn to many contemplative paths when young, including Zen, Sufism, Christian mysticism and yoga, she met the Tibetan master Kalu Rinpoche in her mid-twenties and followed him to Darjeeling, later living in Bhutan with her family and studying with other great lamas of that era. In the early 1980s she completed the traditional three-year retreat under Kalu Rinpoche on Salt Spring Island in Canada and was then authorised as a lama, among the first Western women to receive that title.\n\nIn 1997 she founded Sukhasiddhi Foundation in the San Francisco Bay Area, a Vajrayana centre now based in Novato, California, and she remains its senior lama, teaching advanced programmes, retreats and a long-running women's group, mostly online. Her best-known teaching is a heart practice from the Shangpa tradition, a form of tonglen in which one breathes in suffering and breathes out love, which she explains step by step in her book Love on Every Breath. She also offers one-to-one spiritual guidance, helping people of any tradition or none to shape and deepen a meditation practice.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local_online",
+      "city": "Novato, California",
+      "country": "United States",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "website_url": "https://lamapalden.com/",
+      "booking_url": "https://lamapalden.com/spiritual-counseling/",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "lamapaldendrolma@gmail.com",
+      "image_urls": []
+    }
+  },
+  "teaches_at": [],
+  "videos": [
+    {
+      "title": "Being Loving & Compassionate with Lama Palden Drolma | Inner Voice - Heartfelt Chat w/ Dr. Foojan",
+      "url": "https://www.youtube.com/watch?v=XKg1kU55E9U",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "channel": "Dr. Foojan Zeine"
+    },
+    {
+      "title": "#54 - Tonglen Meditation for Transforming Pain into Joy - Lama Palden Drolma",
+      "url": "https://www.youtube.com/watch?v=m3Zz1wI1HaU",
+      "subjects": [
+        "meditation"
+      ],
+      "channel": "Victoria M Gallagher - Manifestation Mastery"
+    },
+    {
+      "title": "Get Up Nation® Podcast Episode 71 Guest: Lama Palden Drolma",
+      "url": "https://www.youtube.com/watch?v=9lxRb-YKrqo",
+      "subjects": [
+        "spirituality",
+        "meditation"
+      ],
+      "channel": "Get Up Nation®️ Podcast"
+    }
+  ],
+  "books": [
+    {
+      "title": "Love on Every Breath: Tonglen Meditation for Transforming Pain into Joy",
+      "slug": "love-on-every-breath",
+      "author": "Lama Palden Drolma",
+      "asin": "1608685764",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "A step-by-step guide to an eight-stage tonglen meditation handed down in the Shangpa lineage, in which painful feelings are met with love on the in-breath and out-breath. It includes simpler and more advanced forms of the practice.",
+      "subjects": [
+        "meditation"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1608685764.01._SCLZZZZZZZ_.jpg"
+    }
+  ],
+  "courses": [
+    {
+      "title": "Spiritual Counseling/Teaching",
+      "url": "https://lamapalden.com/spiritual-counseling/",
+      "description": "One-to-one sessions in which she acts as a spiritual mentor, helping people of any faith or none reflect on their path and build or deepen a meditation practice suited to them.",
+      "price": "Sessions are $240 for (50 minutes)",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ]
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Love On Every Breath Meditation (audio)",
+      "url": "https://lamapalden.com/book/",
+      "description": "A free recording on her book page in which she guides the Love on Every Breath meditation.",
+      "featured": true,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://m.media-amazon.com/images/P/1608685764.01._SCLZZZZZZZ_.jpg"
+    }
+  ],
+  "sprint": {
+    "sprint": "pipelines-3",
+    "hub": "esalen",
+    "rank": 162,
+    "hub_url": "https://www.esalen.org/faculty/lama-palden-drolma",
+    "tier_evidence": "No social accounts linked from her own site (checked 6 Nov 2026); Sukhasiddhi's Facebook and Instagram are the centre's, not counted; no YouTube channel of hers → 0 readable → local_hero",
+    "email": "yes",
+    "email_source": "https://lamapalden.com/spiritual-counseling/",
+    "contact_form_url": "https://lamapalden.com/contact/",
+    "bio_check": "OK: no 8-word runs against 17 source(s)",
+    "flags": [
+      "Own site lamapalden.org (named in a podcast listing found by web search) redirects to lamapalden.com; both robots.txt files read (open).",
+      "Email lamapaldendrolma@gmail.com appears as plain text on her spiritual counseling page as the PayPal/Venmo address for session payments; her contact page has a form. Sukhasiddhi's admin@sukhasiddhi.org is also published.",
+      "Base: Novato, California is Sukhasiddhi Foundation's address (she founded it and is its Senior Lama); her own site says only 'SF Bay Area'. Used under the founder rule; owner may prefer no_public_base.",
+      "Spiritual counseling: she was a licensed psychotherapist and her session page uses words like 'inner healing' in a blog link, but the session offer itself is meditation mentoring and spiritual guidance, kept. Borderline under the therapy rule; owner may want to look.",
+      "No Esalen mention on her own site (home, about, contact, events, book, counseling, media pages): listed without the link.",
+      "Videos are podcast/interview channels where she is the only guest; one is on a 'Manifestation Mastery' channel. A Guru Viking interview mentioning 'dire warnings about the future of humanity' was not used.",
+      "Book: ASIN 1608685764 from the Amazon link on her own book page (ISBN-13 9781608685769, New World Library). Not confirmed elsewhere.",
+      "Photo: one, the banner on her About page (1300 x 568, standing by birch trees), looked at; the other images on her site are scenery."
+    ],
+    "left_out": [
+      "Sukhasiddhi Women's Group (six-month series from 17 Oct 2026, $300): started before 10 Nov 2026.",
+      "Bhutan pilgrimage (Sept 2026): past.",
+      "Sukhasiddhi Mahamudra Program: cancelled; other depth programmes are led by the resident lama, not her.",
+      "Video 1_pichHjun8: oEmbed 404.",
+      "Heart Wisdom Email free introductory meditation: sign-up only."
+    ],
+    "held": "The ingest cannot load her only confirmed photo: its robots.txt request to lamapalden.com fails with UND_ERR_SOCKET (twice, 6 Nov 2026), though curl reads it. The Sukhasiddhi teacher page has a photo (SCP_7903-Edit.jpeg) placed next to her bio, but it shows a much younger woman than her own About photo, so identity is not certain. Held for the owner."
+  }
+}

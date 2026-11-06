@@ -1,0 +1,52 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 978,
+    "healer_slug": "bryan-kest"
+  },
+  "rows": [
+    {
+      "table": "videos",
+      "id": 8182,
+      "slug": "hot-mess-class",
+      "title": "Hot Mess Class"
+    },
+    {
+      "table": "videos",
+      "id": 8183,
+      "slug": "next-level",
+      "title": "Next Level"
+    },
+    {
+      "table": "videos",
+      "id": 8184,
+      "slug": "the-essentials-class",
+      "title": "The Essentials Class"
+    },
+    {
+      "table": "videos",
+      "id": 8185,
+      "slug": "chair-yoga-sequence-class",
+      "title": "Chair Yoga Sequence Class"
+    },
+    {
+      "table": "courses",
+      "id": "f9d53849-e762-492e-b531-689752ec7ab6",
+      "slug": "30-days-to-a-new-you",
+      "title": "30 Days to a New You"
+    },
+    {
+      "table": "courses",
+      "id": "2f51835c-083b-4efa-99d4-b0e4fcfbbb20",
+      "slug": "holiday-sanity-challenge",
+      "title": "Holiday Sanity Challenge"
+    },
+    {
+      "table": "free_resources",
+      "id": "c463a2f4-a855-4034-bb53-17001f82033f",
+      "slug": "qas-and-lectures",
+      "title": "Q&As and Lectures"
+    }
+  ],
+  "at": "2026-11-06T15:00:55.531Z"
+}

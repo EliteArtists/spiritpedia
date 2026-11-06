@@ -1,0 +1,139 @@
+{
+  "healer": {
+    "healer_slug": "kim-krans",
+    "location_source": null,
+    "no_public_base": "Her own site (kimkrans.com about, contact, courses and shop pages) gives no city or region; she teaches online and at retreat centres.",
+    "create": {
+      "name": "Kim Krans",
+      "bio": "Kim Krans is an artist and author best known for The Wild Unknown, a family of hand-drawn oracle and tarot decks. She drew and self-published the first Wild Unknown Tarot in 2012; four years later HarperCollins released it with a guidebook and it became a New York Times bestseller, followed by Animal Spirit, Archetypes and Alchemy decks. Her black-and-white line drawings of animals, plants and symbols have made the decks some of the most widely used in contemporary tarot.\n\nShe trained as an artist, with a BFA in drawing from Cooper Union and an MFA from Hunter College, and later studied Jungian depth psychology and creativity at master's level at Pacifica Graduate Institute. Her own seeking has taken her to India, Africa, Europe and the UK to study Eastern philosophy and shamanic practice. Alongside drawing she works as a performer and musician, and she teaches workshops and live online courses that use art, meditation and Jungian dreamwork as tools for creative and inner change. She has also recorded a set of guided meditations on the cards of the Major Arcana and created Renunciation, a playful board game about karma and letting go.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "worldwide",
+      "city": null,
+      "country": null,
+      "subjects": [
+        "dreamwork",
+        "spirituality",
+        "shamanism"
+      ],
+      "website_url": "https://kimkrans.com",
+      "booking_url": "https://kimkrans.com/course",
+      "youtube_url": null,
+      "instagram_url": "https://www.instagram.com/kim_krans/",
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "studio@kimkrans.com",
+      "image_urls": [
+        "https://images.squarespace-cdn.com/content/v1/60ad64ad73b8c804314b50b4/dede584d-3bb8-468b-9352-4f2a8beefa51/KimKrans_2023_SevaJagat8jpg.jpeg?format=1000w"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [
+    {
+      "title": "The Wild Unknown Tarot Deck and Guidebook",
+      "slug": "the-wild-unknown-tarot",
+      "author": "Kim Krans",
+      "asin": "0062466593",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "Kim's hand-drawn tarot deck with its guidebook, first self-published in 2012 and later released by HarperCollins, where it became a New York Times bestseller.",
+      "subjects": [
+        "spirituality"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/0062466593.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "The Wild Unknown Animal Spirit Deck and Guidebook",
+      "slug": "the-wild-unknown-animal-spirit",
+      "author": "Kim Krans",
+      "asin": "0062742868",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "An oracle deck of animal guides in Kim's line-drawing style, with a guidebook to each card's meaning.",
+      "subjects": [
+        "shamanism",
+        "spirituality"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/0062742868.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "The Wild Unknown Archetypes Deck and Guidebook",
+      "slug": "the-wild-unknown-archetypes",
+      "author": "Kim Krans",
+      "asin": "0062871773",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "A Wild Unknown deck of archetypal figures, with a guidebook for exploring them in readings and reflection.",
+      "subjects": [
+        "dreamwork",
+        "spirituality"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/0062871773.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "The Wild Unknown Alchemy Deck and Guidebook",
+      "slug": "the-wild-unknown-alchemy",
+      "author": "Kim Krans",
+      "asin": "1797212575",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "A Wild Unknown deck drawn from the imagery of alchemy, with a guidebook, offered as a tool for contemplation.",
+      "subjects": [
+        "hermeticism",
+        "spirituality"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1797212575.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "The Wild Unknown Journal",
+      "slug": "the-wild-unknown-journal",
+      "author": "Kim Krans",
+      "asin": "0062871374",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "A companion journal in the Wild Unknown style for recording readings and reflections.",
+      "subjects": [
+        "dreamwork",
+        "spirituality"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/0062871374.01._SCLZZZZZZZ_.jpg"
+    }
+  ],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "pipelines-3",
+    "hub": "kripalu",
+    "rank": 240,
+    "hub_url": "https://kripalu.org/people/kim-krans",
+    "tier_evidence": "Instagram @kim_krans and @the_wild_unknown not read (not fetched); no YouTube channel linked from her site → no readable counts → local_hero on readable evidence only. Main accounts unread: the Wild Unknown following may be large (possible luminary); owner to decide.",
+    "email": "yes",
+    "email_source": "https://kimkrans.com/contact-1",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 6 source(s)",
+    "flags": [
+      "Borderline in scope: she presents mainly as an artist and deck creator. Her site says she teaches workshops and live online courses (art, meditation, Jungian dreamwork), but the courses page only invites people to join a list for upcoming courses; no current offering, no videos. The listing rests on five decks/books.",
+      "No Kripalu mention on own site: listed without the link.",
+      "Email studio@kimkrans.com is her studio inbox for press and professional enquiries.",
+      "No public base; no_public_base set.",
+      "Counts for main accounts (Instagram) could not be read; tier may be understated.",
+      "ASINs taken from Amazon links on her own shop page (kimkrans.com/shop); decks with guidebooks kept as allowed with an ISBN on the teacher's page. Not confirmed elsewhere.",
+      "Only one photo confirmed (black-and-white portrait on her home page)."
+    ],
+    "left_out": [
+      "Live online courses: none scheduled ('stay tuned' waitlist only).",
+      "Major Arcana Meditations: sold through Hay House (not fetched) and Audible; not linked.",
+      "Renunciation board game, children's books (ABC Dream, Whose Moon Is That?, Hello Sacred Life/Creatures) and Blossoms and Bones: games or children's titles rather than teaching; pocket deck editions duplicate the full decks.",
+      "Music: not teaching."
+    ]
+  },
+  "images_final": true
+}

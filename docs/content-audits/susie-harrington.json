@@ -1,0 +1,130 @@
+{
+  "healer": {
+    "healer_slug": "susie-harrington",
+    "location_source": "https://desertdharma.org/retreats/teachers.html",
+    "create": {
+      "name": "Susie Harrington",
+      "bio": "Susie Harrington is an insight meditation teacher based in Moab, Utah, and the guiding teacher of Desert Dharma, which brings Buddhist meditation groups and retreats to communities across Utah, western Colorado and the wider Southwest. She has practised in the insight tradition since 1989 and began teaching in 2005 at the invitation of three senior teachers, Jack Kornfield, Joseph Goldstein and Guy Armstrong. Other teachers she has learned from include Adyashanti and Tsoknyi Rinpoche, and she continues to explore the Diamond Approach of A. H. Almaas.\n\nBefore teaching full time she spent three decades working outdoors as a river guide, mountain guide and backcountry ranger, and the natural world sits at the centre of her teaching. Many of her retreats are held largely outside, in canyon country, the mountains of New Mexico or by the ocean, using the land and the elements as companions in practice. Her teaching is strongly rooted in the body and pays close attention to mindful speech, inquiry and daily life, and she mentors students through a two-year programme in everyday practice. She also teaches at insight centres across North America, including the Insight Meditation Society's online nature sangha and month-long silent retreats.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "worldwide",
+      "city": "Moab, Utah",
+      "country": "United States",
+      "subjects": [
+        "meditation",
+        "mindfulness",
+        "spirituality"
+      ],
+      "website_url": "https://desertdharma.org/",
+      "booking_url": "https://desertdharma.org/retreats/schedule.html",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "info@desertdharma.org",
+      "image_urls": [
+        "https://desertdharma.org/retreats/teachers_files/small-2459.jpg"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "insight-meditation-society",
+      "role": "instructor"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Guided Meditation: Space Element; Nature as Teacher: Space Element - Susie Harrington",
+      "url": "https://www.youtube.com/watch?v=Wh628injMZ8",
+      "subjects": [
+        "meditation"
+      ],
+      "channel": "Insight Meditation Center"
+    },
+    {
+      "title": "Susie Harrington's Two Day Retreat | Talk 1",
+      "url": "https://www.youtube.com/watch?v=JDXJWpu1BNw",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "channel": "Insight San Diego"
+    },
+    {
+      "title": "Susie Harrington's Two Day Retreat | Talk 2",
+      "url": "https://www.youtube.com/watch?v=h_DRsrjVunw",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "channel": "Insight San Diego"
+    },
+    {
+      "title": "Susie Harrington's Two Day Retreat | Talk 3",
+      "url": "https://www.youtube.com/watch?v=7Btx8eYaIYQ",
+      "subjects": [
+        "meditation"
+      ],
+      "channel": "Insight San Diego"
+    },
+    {
+      "title": "Susie Harrington's Two Day Retreat | Talk 4",
+      "url": "https://www.youtube.com/watch?v=F8PPiC-KzHQ",
+      "subjects": [
+        "meditation"
+      ],
+      "channel": "Insight San Diego"
+    }
+  ],
+  "books": [],
+  "courses": [
+    {
+      "title": "Bowing to Gaia: Dancing with the Aliveness of All Beings",
+      "url": "https://desertdharma.org/retreats/retreats/hi27.html",
+      "description": "A seven-day silent retreat on Hawaii's Big Island with Susie and Erin Selover, exploring interdependence with the natural world through the body and the elements. Days combine sitting and walking practice, talks, movement, small-group inquiry and ritual.",
+      "price": "$1,575 – $3,600 USD (sliding scale by room)",
+      "product_type": "retreat",
+      "start_date": "2027-02-03",
+      "end_date": "2027-02-10",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "image": "https://desertdharma.org/retreats/retreats/hi27_files/small-6104.jpg"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "pipelines-3",
+    "hub": "ims",
+    "rank": 40,
+    "hub_url": "https://www.dharma.org/teacher/susie-harrington/",
+    "tier_evidence": "No social accounts of her own found on Desert Dharma's site; no YouTube channel of her own → 0 readable → local_hero",
+    "email": "yes",
+    "email_source": "https://desertdharma.org/",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 5 source(s)",
+    "flags": [
+      "Insight Meditation Society named on: https://desertdharma.org/retreats/schedule.html (IMS Nature Sangha talk, July 2026) and https://desertdharma.org/ (IMS as the lineage's East Coast centre).",
+      "Email info@desertdharma.org is Desert Dharma's inbox (she is its guiding teacher); it sits behind the site's footer 'Contact' mailto link, assembled by a small script (RapidWeaver's anti-spam), decoded from the page.",
+      "Desert Dharma's site found through the dharma.org page's link (my first link filter had hidden it; corrected).",
+      "Regional: Moab, Utah, has few or no Spiritpedia teachers.",
+      "Photo is 300×310 px, at the minimum size; only one usable photo found.",
+      "Videos are on other centres' channels (Insight Meditation Center, Insight San Diego), where she is the only speaker.",
+      "Her retreat schedule page also lists anti-racism resources and a past daylong that gave half its teacher fees to Black Lives Matter: social-justice material, not the centre of her teaching.",
+      "Robots.txt Crawl-delay 10 respected (11 s between fetches).",
+      "No follower counts found (no own accounts); tier set from 0 readable."
+    ],
+    "left_out": [
+      "2026 events on her schedule (IMS Nature Sangha, poetry retreat, Revolutionary Dharma conversation, Awake in the Wild at Vallecitos): past.",
+      "March 2027 Monthlong at Spirit Rock: spiritrock.org is off limits (not opened).",
+      "Vallecitos May 2027 and Northern California June 2027 retreats: no registration page yet.",
+      "Buddhist Eco-Chaplaincy Retreat (programme members only).",
+      "Dharma in Daily Life two-year programme: no page for it found on her site.",
+      "In The Garden (UNC Wellness Centers) and a Zen Art Center video: a different 'Susie' / not her."
+    ]
+  },
+  "images_final": true
+}

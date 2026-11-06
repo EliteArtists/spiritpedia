@@ -1,0 +1,207 @@
+{
+  "healer": {
+    "healer_slug": "rob-bell",
+    "location_source": "https://robbell.com/about/",
+    "create": {
+      "name": "Rob Bell",
+      "bio": "Rob Bell is an author, speaker and spiritual teacher who spent some twenty years as a pastor before turning to writing and teaching full time. His books and plays, fourteen in all, have been translated into twenty-five languages and include Velvet Elvis and Love Wins, which reread the Christian story with an emphasis on God's love for everyone, What Is the Bible?, which approaches scripture as human writing that still carries surprising depth, and Everything Is Spiritual, which links the story of an expanding universe with the questions of an ordinary life.\n\nMuch of his recent teaching is about creativity, presence and finding the next step, as in his book How to Be Here. From his home in Ojai, California, he runs small two-day gatherings where each person brings a question about what they are making or saying and the group works through it together, and he leads occasional weekend retreats and week-long workshops elsewhere. He also hosts The RobCast, a long-running podcast of talks and conversations, releases longer audio teachings on communication, money, fear and failure, and makes visual art and music with his band Humans on the Floor.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local_online",
+      "city": "Ojai, California",
+      "country": "United States",
+      "subjects": [
+        "spirituality",
+        "soul-purpose"
+      ],
+      "website_url": "https://robbell.com/",
+      "booking_url": "https://robbell.com/events/",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "info@robbell.com",
+      "image_urls": [
+        "https://robbell.com/wp-content/uploads/2023/03/KT8C3884-e1680210218953-1024x1024.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [
+    {
+      "title": "Love Wins",
+      "slug": "love-wins",
+      "author": "Rob Bell",
+      "asin": "0062049658",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "He argues that the heart of Jesus' story is God's love for every person, and questions the narrower versions of the Christian message many readers grew up with.",
+      "subjects": [
+        "spirituality"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/0062049658.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "Velvet Elvis: Repainting the Christian Faith",
+      "slug": "velvet-elvis",
+      "author": "Rob Bell",
+      "asin": "0062197282",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "Presents Christian faith as a living tradition that keeps being explored and reworked, and invites readers to rethink belief, the Bible and hope.",
+      "subjects": [
+        "spirituality"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/0062197282.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "What We Talk About When We Talk About God",
+      "slug": "what-we-talk-about-when-we-talk-about-god",
+      "author": "Rob Bell",
+      "asin": "0062049682",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "Written from his years as a pastor, it looks at why the word God has become so loaded and offers a fresher way of thinking about the divine in everyday life.",
+      "subjects": [
+        "spirituality",
+        "mysticism"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/0062049682.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "What Is the Bible?",
+      "slug": "what-is-the-bible",
+      "author": "Rob Bell",
+      "asin": "0062194267",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "A New York Times bestseller that reads the Bible as a human library written over centuries. He shows how its stories carry ideas still ahead of their time.",
+      "subjects": [
+        "spirituality",
+        "ancient-wisdom"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/0062194267.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "How to Be Here",
+      "slug": "how-to-be-here",
+      "author": "Rob Bell",
+      "asin": "0062356291",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "A practical book about being fully present and making a meaningful life out of the work and days you already have.",
+      "subjects": [
+        "soul-purpose",
+        "mindfulness"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/0062356291.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "Everything Is Spiritual",
+      "slug": "everything-is-spiritual",
+      "author": "Rob Bell",
+      "asin": "1250620562",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "Traces where his ideas about an expanding universe came from in his own life story, and invites readers to grow and expand along with it.",
+      "subjects": [
+        "spirituality",
+        "consciousness"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1250620562.01._SCLZZZZZZZ_.jpg"
+    }
+  ],
+  "courses": [
+    {
+      "title": "And Then We Kept Going: A Retreat with Rob Bell",
+      "url": "https://robbell.com/event/and-then-we-kept-going-a-retreat-with-rob-bell/",
+      "description": "A weekend retreat at the Art of Living Retreat Center in Boone, North Carolina. Through conversation, journaling, simple drawing and questions, participants look again at old ideas of productivity, fear and failure.",
+      "price": "Contact for pricing",
+      "product_type": "retreat",
+      "start_date": "2027-04-02",
+      "end_date": "2027-04-04",
+      "subjects": [
+        "soul-purpose",
+        "spirituality"
+      ],
+      "image": "https://robbell.com/wp-content/uploads/2026/07/Boone-event.jpg"
+    },
+    {
+      "title": "MEA Workshop in Mexico",
+      "url": "https://robbell.com/event/mea-workshop-in-mexico/",
+      "description": "A week of teaching with Rob Bell at the Modern Elder Academy's seaside campus in Baja, Mexico, built around the question of what to do with the rest of your life.",
+      "price": "Contact for pricing",
+      "product_type": "retreat",
+      "start_date": "2027-02-15",
+      "end_date": "2027-02-20",
+      "subjects": [
+        "soul-purpose"
+      ],
+      "image": "https://robbell.com/wp-content/uploads/2025/08/Social-1080-Your-Life-As-a-Creative-Act-with-Rob-Bell.jpg"
+    },
+    {
+      "title": "Find Me a Straight River: A 3 Hour Audiobook on Fear and Failure",
+      "url": "https://robbell.com/audio/find-me-a-straight-river-a-3-hour-audiobook-on-fear-and-failure/",
+      "description": "A three-hour audio teaching that uses the winding of rivers and the patience of nature to look again at fear, failure and the sense of being behind in life.",
+      "price": "Contact for pricing",
+      "product_type": "download",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "spirituality",
+        "soul-purpose"
+      ],
+      "image": "https://robbell.com/wp-content/uploads/2022/07/IMG_6296.png"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "The RobCast",
+      "url": "https://robbell.com/podcast/",
+      "description": "His free podcast of talks and conversations, with more than four hundred episodes. New episodes reach Patreon supporters first and then the main podcast apps.",
+      "featured": true,
+      "resource_type": "practice",
+      "subjects": [
+        "spirituality"
+      ],
+      "image": "https://robbell.com/wp-content/uploads/2025/10/Unknown.png"
+    }
+  ],
+  "sprint": {
+    "sprint": "pipelines-3",
+    "hub": "omega",
+    "rank": 202,
+    "hub_url": "https://www.eomega.org/people/rob-bell",
+    "tier_evidence": "Instagram @realrobbell, Facebook realrobbell and X @realrobbell not readable without logging in; no YouTube channel linked from his site → 0 readable → local_hero",
+    "email": "yes",
+    "email_source": "https://robbell.com/event/2-days-in-ojai/",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 19 source(s)",
+    "flags": [
+      "No Omega mention on own site: listed without the link (eomega.org not opened).",
+      "His site names the Art of Living Retreat Center (Boone, North Carolina) as a retreat venue; it is not a Spiritpedia hub, so no link.",
+      "Tier counts unreadable for all his main accounts (Instagram, Facebook, X); total read is 0. As a New York Times best-selling author (Love Wins, What Is the Bible?) he may deserve an editorial tier override; owner to decide.",
+      "Email: info@robbell.com is a mailto link on his 2 Days in Ojai page; the contact page gives the same address written as 'info (at) robbell.com' for his web team (team inbox).",
+      "His work is rooted in progressive Christianity; included as spiritual teaching (on the Omega list). Not political-centred.",
+      "Books: ISBNs from his own book pages on robbell.com, not confirmed elsewhere.",
+      "No YouTube channel found on his site, so no videos.",
+      "Only one photo used (portrait on his site); other site images are covers and graphics."
+    ],
+    "left_out": [
+      "2 Days in Ojai ($600): all published dates (June, September, October 2026) have passed.",
+      "The Small Business of It (Laguna Beach, January 2027): a business workshop with his brother, not spiritual teaching.",
+      "Something to Say, Something to Write, Grabbin' the Bag (money), Handling Your Fire (burnout): audio courses on communication, money and work, or with burnout framing.",
+      "Plays and children's books (Spaceship, What's a Knucka?, Millones Cajones, We'll Get Back to You), film and art pages.",
+      "Audio download prices are not shown on the page, so 'Contact for pricing'."
+    ]
+  },
+  "images_final": true
+}

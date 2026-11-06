@@ -1,0 +1,262 @@
+{
+  "healer": {
+    "healer_slug": "shefali-tsabary",
+    "location_source": null,
+    "no_public_base": "Her own site (drshefali.com about, contact and events pages) publishes no city; she teaches online and at events in different places (San Francisco, Bali).",
+    "create": {
+      "name": "Dr. Shefali Tsabary",
+      "bio": "Dr. Shefali Tsabary, known simply as Dr. Shefali, is the founder of the Conscious Parenting approach, which treats raising children as a path of awakening for the parent as much as for the child. Trained as a clinical psychologist at Columbia University, she brings that background together with Eastern contemplative philosophy, and her central idea is that parents change their families most by noticing and outgrowing their own conditioning rather than by controlling their children.\n\nShe has written several books on this theme, among them The Conscious Parent, The Awakened Family, A Radical Awakening, aimed at women, and The Parenting Map, plus a recent pair on raising sons and daughters, and she hosts the Parenting & You podcast. Her teaching reaches people through a monthly online membership called the Conscious Circle, self-paced courses on parenting, relationships and self-worth, a five-month institute that certifies conscious parenting and life coaches, a yearly live gathering called EVOLVE, and occasional women's retreats. Her YouTube channel carries long conversations and short daily reflections on presence, solitude and seeing life as it is.",
+      "tier": "luminary",
+      "entity_type": "individual",
+      "availability": "worldwide",
+      "city": null,
+      "country": null,
+      "subjects": [
+        "conscious-relationships",
+        "spiritual-awakening",
+        "life-coaching"
+      ],
+      "website_url": "https://www.drshefali.com/",
+      "booking_url": "https://courses.drshefali.com/",
+      "youtube_url": "https://www.youtube.com/@doctorshefali",
+      "instagram_url": "https://www.instagram.com/doctorshefali",
+      "facebook_url": "https://www.facebook.com/doctorshefali",
+      "twitter_url": null,
+      "tiktok_url": "https://www.tiktok.com/@doctorshefali",
+      "contact_email": null,
+      "image_urls": [
+        "https://yt3.googleusercontent.com/ytc/AIdro_nBjbr7oz3QCbsfirlICOjwPRgQw6SagbLtoBahGD580Bk=s900"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [
+    {
+      "title": "Am I Helping My Child or Trying to Fix Him?",
+      "url": "https://www.youtube.com/watch?v=yJhUvmGMOos",
+      "subjects": [
+        "conscious-relationships"
+      ],
+      "channel": "Dr. Shefali"
+    },
+    {
+      "title": "Are We Doing Too Much for Our Kids?",
+      "url": "https://www.youtube.com/watch?v=fp0-BvHYww0",
+      "subjects": [
+        "conscious-relationships"
+      ],
+      "channel": "Dr. Shefali"
+    },
+    {
+      "title": "Can You Really Have it All? Marriage, Kids, Careers and Staying Happy",
+      "url": "https://www.youtube.com/watch?v=3stU3RscdeU",
+      "subjects": [
+        "conscious-relationships"
+      ],
+      "channel": "Dr. Shefali"
+    },
+    {
+      "title": "The Father Wound You Didn’t Know You Had",
+      "url": "https://www.youtube.com/watch?v=NDqNC-rcVjU",
+      "subjects": [
+        "shadow-work",
+        "conscious-relationships"
+      ],
+      "channel": "Dr. Shefali"
+    },
+    {
+      "title": "#50 - The Present Moment Is Eternal",
+      "url": "https://www.youtube.com/watch?v=gMh3sa8gaB8",
+      "subjects": [
+        "mindfulness",
+        "spirituality"
+      ],
+      "channel": "Dr. Shefali"
+    },
+    {
+      "title": "#48 - Intimacy With the Self",
+      "url": "https://www.youtube.com/watch?v=jeEB99fSwPE",
+      "subjects": [
+        "spirituality"
+      ],
+      "channel": "Dr. Shefali"
+    },
+    {
+      "title": "#46 - Solitude, Quietude, Present Moment",
+      "url": "https://www.youtube.com/watch?v=bqQholFea0M",
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "channel": "Dr. Shefali"
+    },
+    {
+      "title": "#52 - Mind Your Mind",
+      "url": "https://www.youtube.com/watch?v=nnK1jmT5oXs",
+      "subjects": [
+        "mindfulness"
+      ],
+      "channel": "Dr. Shefali"
+    },
+    {
+      "title": "#40 - The First and Second Arrow",
+      "url": "https://www.youtube.com/watch?v=OUN2OyHiC6I",
+      "subjects": [
+        "mindfulness",
+        "ancient-wisdom"
+      ],
+      "channel": "Dr. Shefali"
+    }
+  ],
+  "books": [],
+  "courses": [
+    {
+      "title": "The Conscious Circle",
+      "url": "https://courses.drshefali.com/consciouscircle",
+      "description": "Her online membership: monthly workshops and live question-and-answer sessions with Dr. Shefali, a library of past teachings and a members' community for parents and seekers.",
+      "price": "From $24/month",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "conscious-relationships",
+        "spiritual-awakening"
+      ],
+      "image": "https://yt3.googleusercontent.com/ytc/AIdro_nBjbr7oz3QCbsfirlICOjwPRgQw6SagbLtoBahGD580Bk=s900"
+    },
+    {
+      "title": "Conscious Coaching Institute (Cohort 15)",
+      "url": "https://coaching.drshefali.com/",
+      "description": "A five-month online certification for people who want to work as conscious parenting and life coaches, beginning with their own inner work. Applications close on 31 December.",
+      "price": "$9,849 USD (or 5 payments of $2,070 USD)",
+      "product_type": "course",
+      "start_date": "2027-01-04",
+      "end_date": null,
+      "subjects": [
+        "life-coaching",
+        "conscious-relationships"
+      ],
+      "image": "https://yt3.googleusercontent.com/ytc/AIdro_nBjbr7oz3QCbsfirlICOjwPRgQw6SagbLtoBahGD580Bk=s900"
+    },
+    {
+      "title": "EVOLVE 2027",
+      "url": "https://www.evolvewithdrshefali.com/",
+      "description": "Her yearly live weekend in San Francisco, with teaching, reflection and group practice, plus an optional meditation day for four-day and premium ticket holders.",
+      "price": "From $945.00 USD (early-bird 3-day ticket)",
+      "product_type": "retreat",
+      "start_date": "2027-03-05",
+      "end_date": "2027-03-08",
+      "subjects": [
+        "spiritual-awakening",
+        "conscious-relationships"
+      ],
+      "image": "https://yt3.googleusercontent.com/ytc/AIdro_nBjbr7oz3QCbsfirlICOjwPRgQw6SagbLtoBahGD580Bk=s900"
+    },
+    {
+      "title": "A Radical Awakening Retreat, Bali",
+      "url": "https://radicalawakeningbali.com/",
+      "description": "A women's retreat in Bali led by Dr. Shefali, combining her teachings with breathwork, rituals on the beach and time in community.",
+      "price": "Contact for pricing",
+      "product_type": "retreat",
+      "start_date": "2026-11-12",
+      "end_date": "2026-11-15",
+      "subjects": [
+        "spiritual-awakening",
+        "breathwork"
+      ],
+      "image": "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/f4040ad9-2a23-49b3-b342-56a57a5efa5c/id-preview-707b295a--781e9b64-ab36-4704-8b6c-a9d132789751.lovable.app-1771111738157.png"
+    },
+    {
+      "title": "A Radical Awakening 10-Day Deep Dive",
+      "url": "https://courses.drshefali.com/aradicalawakening",
+      "description": "A self-paced course of about fifteen hours, based on her book for women, on recognising inherited patterns and stepping into a freer sense of self.",
+      "price": "$480",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "spiritual-awakening",
+        "shadow-work"
+      ],
+      "image": "https://yt3.googleusercontent.com/ytc/AIdro_nBjbr7oz3QCbsfirlICOjwPRgQw6SagbLtoBahGD580Bk=s900"
+    },
+    {
+      "title": "The Awakened Heart",
+      "url": "https://courses.drshefali.com/theawakenedheart",
+      "description": "A guided online course that works inward layer by layer towards a sense of inner wholeness.",
+      "price": "$480",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "spiritual-awakening"
+      ],
+      "image": "https://yt3.googleusercontent.com/ytc/AIdro_nBjbr7oz3QCbsfirlICOjwPRgQw6SagbLtoBahGD580Bk=s900"
+    },
+    {
+      "title": "Conscious Parenting 2.0 (Level 1 & Level 2)",
+      "url": "https://courses.drshefali.com/thecp2method-full",
+      "description": "Her step-by-step parenting method as a recorded course, for parents who want to replace control and reaction with presence and connection.",
+      "price": "$237",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "conscious-relationships"
+      ],
+      "image": "https://yt3.googleusercontent.com/ytc/AIdro_nBjbr7oz3QCbsfirlICOjwPRgQw6SagbLtoBahGD580Bk=s900"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Free Courses and Meditations",
+      "url": "https://courses.drshefali.com/free-courses",
+      "description": "A page of free recordings, including a global meditation session and an informal series of meditations she offered to the public.",
+      "featured": true,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://yt3.googleusercontent.com/ytc/AIdro_nBjbr7oz3QCbsfirlICOjwPRgQw6SagbLtoBahGD580Bk=s900"
+    },
+    {
+      "title": "Parenting & You with Dr. Shefali (podcast)",
+      "url": "https://podcasts.apple.com/us/podcast/parenting-you-with-dr-shefali/id1742833210",
+      "description": "Her podcast of conversations and listener questions on parenting, relationships and personal growth.",
+      "featured": false,
+      "resource_type": "workshop",
+      "subjects": [
+        "conscious-relationships"
+      ],
+      "image": "https://yt3.googleusercontent.com/ytc/AIdro_nBjbr7oz3QCbsfirlICOjwPRgQw6SagbLtoBahGD580Bk=s900"
+    }
+  ],
+  "sprint": {
+    "sprint": "pipelines-3",
+    "hub": "kripalu",
+    "rank": 120,
+    "hub_url": "https://kripalu.org/people/dr-shefali-tsabary",
+    "tier_evidence": "YouTube 122K (@doctorshefali channel header, 6 Nov 2026); Instagram, Facebook and TikTok not readable without login → at least 122K → luminary",
+    "email": "contact form",
+    "email_source": null,
+    "contact_form_url": "https://www.drshefali.com/contact/",
+    "bio_check": "OK: no 8-word runs against 13 source(s)",
+    "flags": [
+      "No Kripalu mention on own site: listed without the link.",
+      "Scope: she is a clinical psychologist and her site calls her a 'therapist', but her offers are teaching, coaching and courses on conscious parenting and awakening, not psychotherapy; kept, but owner may wish to check.",
+      "Tier: YouTube alone 122K (within the 80k–150k flag band); her Instagram (doctorshefali) is likely much larger but couldn't be read. Superhero is possible; owner to decide.",
+      "Books left out: her own site has no ISBNs and links only to a tour page; publisher pages not found among pages read. Retailer ISBNs exist but aren't allowed by the brief.",
+      "Name kept as 'Dr. Shefali Tsabary' (she is known as Dr. Shefali); slug without the title.",
+      "Bali retreat page (radicalawakeningbali.com) shows no price without JavaScript; 'Contact for pricing'.",
+      "Several YouTube videos are short TV clips and book promos; only conversations and reflection episodes were taken."
+    ],
+    "left_out": [
+      "Raising Conscious Daughters (book and $47 course): subtitle 'in an Anxious World' names a condition; left out as borderline.",
+      "How Do You Survive Grief and Find a Way Forward? (video): grief framing, borderline.",
+      "Teens, screens and under-6 parenting mini-courses and the 7 Powerful Ways course: not checked individually; kept the list to her main courses.",
+      "Raising Conscious Children book tour and free summit: dated promotional events.",
+      "One-to-one sessions (schedule-a-session): page not opened; framed around 'healing' on contact page."
+    ]
+  },
+  "images_final": true
+}

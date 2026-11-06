@@ -1,0 +1,148 @@
+{
+  "healer": {
+    "healer_slug": "wayne-muller",
+    "location_source": "https://www.waynemuller.com/private_mentoring/private_retreats",
+    "create": {
+      "name": "Wayne Muller",
+      "bio": "Wayne Muller is a minister, writer and spiritual director best known for Sabbath, his book on recovering a rhythm of rest in a culture that prizes constant activity. He trained at Harvard Divinity School and spent decades working alongside people facing poverty, abuse, addiction, illness and loss, an experience that runs through his writing. He founded Bread for the Journey, a network that gives small grants for neighbourhood generosity, and has been a senior scholar at the Fetzer Institute.\n\nHis teaching is gentle and contemplative, drawing on Christian, Buddhist and other traditions. He invites people to slow down, to notice what is already enough, and to make space for prayer, stillness and delight rather than adding more effort. Today he works mainly as a private mentor and spiritual director with a small number of people and groups, in person, by phone or online, and he hosts tailored private retreats in Santa Fe, New Mexico, with unhurried days for reflection, walking and rest. Besides Sabbath, his books include Legacy of the Heart, Learning to Pray, How, Then, Shall We Live? and a later book on living with enough.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local_online",
+      "city": "Santa Fe, New Mexico",
+      "country": "United States",
+      "subjects": [
+        "spirituality",
+        "mindfulness",
+        "soul-purpose"
+      ],
+      "website_url": "https://www.waynemuller.com/",
+      "booking_url": "https://www.waynemuller.com/private_mentoring/individual_mentorship",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "wayne@waynemuller.com",
+      "image_urls": []
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [
+    {
+      "title": "Sabbath: Finding Rest, Renewal, and Delight in Our Busy Lives",
+      "slug": "sabbath-wayne-muller",
+      "author": "Wayne Muller",
+      "asin": "0553380117",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "His best-known book. It argues that rest is a spiritual necessity rather than a reward, and offers reflections and simple practices from many traditions for setting aside unhurried time.",
+      "subjects": [
+        "spirituality",
+        "mindfulness"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/0553380117.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "A Life of Being, Having, and Doing Enough",
+      "slug": "a-life-of-being-having-and-doing-enough",
+      "author": "Wayne Muller",
+      "asin": "030759002X",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "A reflection on how to recognise when we have done and have enough, and on letting that sense of sufficiency shape work, choices and relationships.",
+      "subjects": [
+        "spirituality",
+        "mindfulness"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/030759002X.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "How, Then, Shall We Live? Four Simple Questions That Reveal the Beauty and Meaning of Our Lives",
+      "slug": "how-then-shall-we-live",
+      "author": "Wayne Muller",
+      "asin": "0553375059",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "Built around four plain questions about who we are, what we love, how we will live and what we will leave behind, with stories and practices to explore each one.",
+      "subjects": [
+        "soul-purpose",
+        "spirituality"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/0553375059.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "Learning to Pray: How We Find Heaven on Earth",
+      "slug": "learning-to-pray",
+      "author": "Wayne Muller",
+      "asin": "0553378708",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "A slow, line-by-line meditation on the Lord's Prayer, offered as a way into listening and stillness rather than as doctrine.",
+      "subjects": [
+        "spirituality",
+        "mysticism"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/0553378708.01._SCLZZZZZZZ_.jpg"
+    }
+  ],
+  "courses": [
+    {
+      "title": "Individual mentorship and spiritual direction",
+      "url": "https://www.waynemuller.com/private_mentoring/individual_mentorship",
+      "description": "Ongoing one-to-one or small-group mentoring, in person, by phone or online, for people in a time of change who want to listen more closely to their sense of calling and meaning. Enquiries go through a form on his site.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "soul-purpose",
+        "spirituality"
+      ]
+    },
+    {
+      "title": "Private retreats in Santa Fe",
+      "url": "https://www.waynemuller.com/private_mentoring/private_retreats",
+      "description": "Retreats of unhurried days in Santa Fe, shaped around one person or a small group of friends or colleagues, with time for reflection, conversation, walking and rest, and follow-up sessions afterwards.",
+      "price": "Contact for pricing",
+      "product_type": "retreat",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "spirituality",
+        "mindfulness"
+      ]
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "pipelines-3",
+    "hub": "sounds-true",
+    "rank": 227,
+    "hub_url": "https://www.soundstrue.com/collections/authors-wayne-muller",
+    "held": "No usable photo: his site's robots.txt disallows /images and /image (where all its pictures are), he has no YouTube channel of his own (the clips on his site are on a third-party channel, @peterlz), and no publisher author page was found without guessing a URL. Owner to decide whether to supply a photo or drop him.",
+    "tier_evidence": "No social accounts linked from waynemuller.com and no own YouTube channel → 0 readable followers → local_hero",
+    "email": "yes",
+    "email_source": "https://www.waynemuller.com/about_wayne",
+    "contact_form_url": "https://www.waynemuller.com/contact",
+    "bio_check": "OK: no 8-word runs against 8 source(s)",
+    "flags": [
+      "HELD: no usable photo (site images disallowed by robots.txt; no own channel).",
+      "His site says a new website is on the way; current site is older (its public calendar lists undated past events).",
+      "He describes himself partly as a therapist; listed for spiritual direction, mentorship and contemplative teaching. One retreat testimonial calls him a therapist.",
+      "Base: private retreats are held in Santa Fe, New Mexico, and his phone number on the calendar is a New Mexico (505) number; Santa Fe used as base.",
+      "Books: ASINs from the Amazon links on his own Books and CDs page (not opened); covers from the Amazon image CDN. Title for 0553375059 inferred from the order of his page (How, Then, Shall We Live?), please check."
+    ],
+    "left_out": [
+      "Legacy of the Heart: The Spiritual Advantages of a Painful Childhood: framed around childhood pain/abuse, borderline under the health rule.",
+      "Touching the Divine and other CDs: Sounds True products.",
+      "Video clips on his site (Sabbath, Enough, Becoming Spacious, Caregiver, 23rd Psalm): hosted on a third-party channel (@peterlz) and 1-8 minutes long.",
+      "Calendar workshops: undated/past.",
+      "Institute of the Southwest organisational work: corporate consulting."
+    ]
+  }
+}

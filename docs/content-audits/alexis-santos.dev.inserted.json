@@ -1,0 +1,45 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 954,
+    "healer_slug": "alexis-santos"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "837b2634-fd3d-4fb6-b5b4-5f4ffffbf645",
+      "slug": "online-day-of-meditation",
+      "title": "Online Day of Meditation"
+    },
+    {
+      "table": "free_resources",
+      "id": "a6cf19ba-39a6-469c-b5ff-4e01f096494b",
+      "slug": "day-long-with-alexis-18-september-2021-recordings",
+      "title": "Day-long with Alexis, 18 September 2021 (recordings)"
+    },
+    {
+      "table": "free_resources",
+      "id": "e6e51f15-0e0c-4318-b5ec-1a1576573f33",
+      "slug": "day-long-with-alexis-17-october-2021-recordings",
+      "title": "Day-long with Alexis, 17 October 2021 (recordings)"
+    },
+    {
+      "table": "free_resources",
+      "id": "2ff0312b-a0b3-4a81-93be-cae16804bfcd",
+      "slug": "alexis-santoss-dharma-talks-on-dharma-seed",
+      "title": "Alexis Santos's dharma talks on Dharma Seed"
+    },
+    {
+      "table": "free_resources",
+      "id": "61e161c5-ae3f-41ec-a9b5-1700bd34f3bf",
+      "slug": "one-hour-online-meeting",
+      "title": "One-hour online meeting"
+    },
+    {
+      "table": "hub_teachers",
+      "id": "72b57bd5-5f21-4f42-87cb-9633ccc448bf",
+      "title": "alexis-santos teaches at Insight Meditation Society"
+    }
+  ],
+  "at": "2026-11-06T14:13:35.509Z"
+}

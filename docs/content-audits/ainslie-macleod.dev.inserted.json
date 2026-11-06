@@ -1,0 +1,52 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 999,
+    "healer_slug": "ainslie-macleod"
+  },
+  "rows": [
+    {
+      "table": "videos",
+      "id": 8323,
+      "slug": "past-life-psychic-ainslie-macleod-on-why-karma-shouldnt-be-considered-a-punishment",
+      "title": "Past-Life Psychic Ainslie MacLeod on Why Karma Shouldn't Be Considered a Punishment"
+    },
+    {
+      "table": "books",
+      "id": 2141,
+      "slug": "the-instruction-living-the-life-your-soul-intended",
+      "title": "The Instruction: Living the Life Your Soul Intended"
+    },
+    {
+      "table": "books",
+      "id": 2142,
+      "slug": "the-transformation-ainslie-macleod",
+      "title": "The Transformation: Healing Your Past Lives to Realize Your Soul's Potential"
+    },
+    {
+      "table": "courses",
+      "id": "5d376f85-64b7-4c84-b95d-223d40e35bb1",
+      "slug": "not-just-another-manifestation-course",
+      "title": "Not Just Another Manifestation Course"
+    },
+    {
+      "table": "courses",
+      "id": "45b2756d-d6c5-4837-a3df-1ec738865b52",
+      "slug": "connecting-with-your-spirit-guides-masterclass",
+      "title": "Connecting with Your Spirit Guides (Masterclass)"
+    },
+    {
+      "table": "courses",
+      "id": "3e9c45a4-4a25-4225-9657-4db33dbc3ff2",
+      "slug": "private-sessions-with-ainslie-macleod",
+      "title": "Private Sessions with Ainslie MacLeod"
+    },
+    {
+      "table": "free_resources",
+      "id": "3d227ff8-b307-426d-bf00-9a396766003a",
+      "slug": "soul-type-quiz",
+      "title": "Soul Type Quiz"
+    }
+  ],
+  "at": "2026-11-06T15:41:18.824Z"
+}

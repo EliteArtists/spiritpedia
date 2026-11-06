@@ -1,0 +1,87 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 976,
+    "healer_slug": "theresa-reed"
+  },
+  "rows": [
+    {
+      "table": "books",
+      "id": 2073,
+      "slug": "astrology-for-real-life",
+      "title": "Astrology for Real Life"
+    },
+    {
+      "table": "books",
+      "id": 2074,
+      "slug": "the-book-of-astrological-returns",
+      "title": "The Book of Astrological Returns: Your Complete Guide to Every Life Cycle from the Sun to Pluto"
+    },
+    {
+      "table": "books",
+      "id": 2075,
+      "slug": "twist-your-fate",
+      "title": "Twist Your Fate: Manifest Success with Astrology and Tarot"
+    },
+    {
+      "table": "books",
+      "id": 2076,
+      "slug": "tarot-no-questions-asked",
+      "title": "Tarot: No Questions Asked: Mastering the Art of Intuitive Reading"
+    },
+    {
+      "table": "books",
+      "id": 2077,
+      "slug": "the-weiser-tarot-journal",
+      "title": "The Weiser Tarot Journal"
+    },
+    {
+      "table": "books",
+      "id": 2078,
+      "slug": "the-tarot-coloring-book",
+      "title": "The Tarot Coloring Book"
+    },
+    {
+      "table": "courses",
+      "id": "d35e7a2c-abd9-4490-bfb9-83ac6a8b4fee",
+      "slug": "astrology-school-8-week-foundational-course",
+      "title": "Astrology School (8-week foundational course)"
+    },
+    {
+      "table": "courses",
+      "id": "941670f1-1fe9-4800-b1c9-7c61ba44f95e",
+      "slug": "advanced-tarot-techniques",
+      "title": "Advanced Tarot Techniques"
+    },
+    {
+      "table": "courses",
+      "id": "b916a040-4850-4d68-9d73-cd39d9995a9f",
+      "slug": "book-mentoring-with-theresa-reed",
+      "title": "Book Mentoring with Theresa Reed"
+    },
+    {
+      "table": "free_resources",
+      "id": "dafd8ca0-678a-4384-9561-5d94f01f2ce6",
+      "slug": "tarot-card-by-card",
+      "title": "Tarot Card by Card"
+    },
+    {
+      "table": "free_resources",
+      "id": "5306b191-c05e-4dae-bffc-8677db12562c",
+      "slug": "monthly-forecasts-and-horoscopes",
+      "title": "Monthly Forecasts and Horoscopes"
+    },
+    {
+      "table": "free_resources",
+      "id": "bbb34d8b-5167-4af7-bcae-9fcb782eeded",
+      "slug": "tarot-by-the-mouthful",
+      "title": "Tarot by the Mouthful"
+    },
+    {
+      "table": "hub_teachers",
+      "id": "ea274a8f-5042-4c37-b7f5-02761c346e49",
+      "title": "theresa-reed teaches at Omega Institute"
+    }
+  ],
+  "at": "2026-11-06T14:59:14.662Z"
+}

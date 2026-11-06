@@ -1,0 +1,172 @@
+{
+  "healer": {
+    "healer_slug": "shefa-gold",
+    "location_source": "https://www.rabbishefagold.com/about/rabbishefagold/",
+    "create": {
+      "name": "Rabbi Shefa Gold",
+      "bio": "Rabbi Shefa Gold is a teacher, composer and leading voice in Hebrew chant as a spiritual practice. From Jemez Springs in northern New Mexico she runs C-DEEP, her centre for devotional and ecstatic practice, and she plays a leading part in ALEPH, the main Jewish Renewal network. She was ordained by the Reconstructionist Rabbinical College and by Rabbi Zalman Schachter-Shalomi, the founder of Jewish Renewal, and her teaching also draws on Buddhist, Christian, Sufi and Native American paths she has walked.\n\nAt the heart of her work is the chant: a single sacred phrase from Torah, the Psalms or the liturgy, sung over and over until it becomes a doorway into meditation, open-hearted prayer and a felt sense of the Divine. She has composed chants for every one of the 150 Psalms, released ten albums and created apps for daily practice. For many years she trained rabbis, cantors and lay leaders as chant leaders through her two-year Kol Zimra programme. Her books include The Magic of Hebrew Chant, Torah Journeys, In the Fever of Love on the Song of Songs, and Are We There Yet?, on travel as a spiritual path. She now leads weekly online chanting sessions, retreats and interfaith gatherings on the Psalms, and occasional pilgrimages abroad.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local_online",
+      "city": "Jemez Springs, New Mexico",
+      "country": "United States",
+      "subjects": [
+        "mysticism",
+        "meditation",
+        "spirituality"
+      ],
+      "website_url": "https://www.rabbishefagold.com",
+      "booking_url": "https://www.rabbishefagold.com/schedule/",
+      "youtube_url": "https://www.youtube.com/@RabbiShefaGold",
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": null,
+      "image_urls": [
+        "https://yt3.googleusercontent.com/ytc/AIdro_mlIG37ft0Mhw4v4tNSIoxsep18lEGjGhQ1JadCgF8mzaA=s900",
+        "https://www.rabbishefagold.com/wp-content/uploads/2018/02/Shefa_leading.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [
+    {
+      "title": "Rabbi Shefa Gold teaches The Magic of Hebrew Chant: Through the Waters",
+      "url": "https://www.youtube.com/watch?v=9lwXjedIysQ",
+      "subjects": [
+        "meditation",
+        "mysticism"
+      ],
+      "channel": "Michael Comins"
+    },
+    {
+      "title": "Rabbi Shefa Gold Jewish Chanting Meditation",
+      "url": "https://www.youtube.com/watch?v=i2jom_88GQE",
+      "subjects": [
+        "meditation",
+        "mysticism"
+      ],
+      "channel": "Goldie Milgram"
+    },
+    {
+      "title": "Eagle's Wings - Rabbi Shefa Gold",
+      "url": "https://www.youtube.com/watch?v=YxbLsJKLzNY",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "channel": "Michael Comins"
+    },
+    {
+      "title": "magic and medicine of the psalms",
+      "url": "https://www.youtube.com/watch?v=B0oltnwuziw",
+      "subjects": [
+        "mysticism",
+        "spirituality"
+      ],
+      "channel": "Rabbi Shefa Gold"
+    },
+    {
+      "title": "May 14th KZOOM: In the Fever of Love",
+      "url": "https://www.youtube.com/watch?v=tBhdrI9xvK4",
+      "subjects": [
+        "meditation",
+        "mysticism"
+      ],
+      "channel": "Rabbi Shefa Gold"
+    }
+  ],
+  "books": [
+    {
+      "title": "Are We There Yet? Travel as a Spiritual Path",
+      "slug": "are-we-there-yet-shefa-gold",
+      "author": "Shefa Gold",
+      "asin": "1934730726",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "Rabbi Shefa's reflections from decades of journeys, treating travel as a spiritual practice that wakes us up to wonder, challenge and the sacred in unfamiliar places.",
+      "subjects": [
+        "spirituality",
+        "mysticism"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1934730726.01._SCLZZZZZZZ_.jpg"
+    }
+  ],
+  "courses": [
+    {
+      "title": "SOULIFT Retreat: Diving Deeper into the 8 Pathways of the Psalms",
+      "url": "https://www.rabbishefagold.com/soulift-winter-2027/",
+      "description": "A week-long residential retreat in Central Florida exploring eight ways of meeting life's challenges through the Psalms, from gratefulness and praise to lament and comfort, through chant, inquiry and celebration.",
+      "price": "Contact for pricing",
+      "product_type": "retreat",
+      "start_date": "2027-01-18",
+      "end_date": "2027-01-24",
+      "subjects": [
+        "mysticism",
+        "meditation"
+      ],
+      "image": "https://www.rabbishefagold.com/wp-content/uploads/2022/01/Shefa_Banner_2022.png"
+    },
+    {
+      "title": "Exploring the Magic and Medicine of the Psalms: A Common Heart Retreat",
+      "url": "https://www.rabbishefagold.com/schedule/",
+      "description": "An interfaith residential retreat at Holy Family Monastery in Hartford, Connecticut, led with Rev. Matthew Wright, using the Psalms shared by Jewish and Christian traditions as pathways of reflection and practice.",
+      "price": "Contact for pricing",
+      "product_type": "retreat",
+      "start_date": "2027-03-04",
+      "end_date": "2027-03-07",
+      "subjects": [
+        "mysticism",
+        "spirituality"
+      ],
+      "image": "https://www.rabbishefagold.com/wp-content/uploads/2022/01/Shefa_Banner_2022.png"
+    },
+    {
+      "title": "KZoom: Weekly Online Chanting Session",
+      "url": "https://lp.constantcontactpages.com/sl/sRqNDGd",
+      "description": "A weekly online gathering on Thursday evenings (US time) where Rabbi Shefa leads Hebrew chant and meditation on a theme. Details come by joining the KZoom mailing list.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "mysticism"
+      ],
+      "image": "https://www.rabbishefagold.com/wp-content/uploads/2022/01/Shefa_Banner_2022.png"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "pipelines-3",
+    "hub": "kripalu",
+    "rank": 250,
+    "hub_url": "https://kripalu.org/people/rabbi-shefa-gold",
+    "tier_evidence": "YouTube @RabbiShefaGold 753 subscribers (channel header, 6 Nov 2026); no other social accounts linked from her site → ~753 readable → local_hero",
+    "email": "contact form",
+    "email_source": null,
+    "contact_form_url": "https://www.rabbishefagold.com/contact/",
+    "bio_check": "OK: no 8-word runs against 16 source(s)",
+    "flags": [
+      "No Kripalu mention on own site: listed without the link.",
+      "Regional: Jemez Springs, New Mexico (her about page names C-DEEP there as the centre she directs; the contact page gives a PO box there).",
+      "No email published for her (addresses on her site belong to chant-circle leaders and alumni); contact form used.",
+      "Common Heart Retreat uses the schedule page URL (no separate page). KZoom item links to the KZoom mailing-list sign-up page linked from her schedule (Constant Contact page, not opened). SOULIFT 2027 page registers through ALEPH (aleph.org page not opened). No prices given.",
+      "Her about page lists 'Devotional Healing' among workshop topics and a book subtitle says 'Healing the Spirit'; spiritual framing only, not used as a claim.",
+      "Only one book listed: the ISBN 9781934730720 (converted to ISBN-10 1934730726) is on her Are We There Yet? page; the other book pages show no ISBN.",
+      "Subjects: there is no Jewish or chant subject; mapped to mysticism, meditation and spirituality.",
+      "Place alias needed: 'Jemez Springs, New Mexico' isn't in places (dry-run note, README §18.4)."
+    ],
+    "left_out": [
+      "The Magic of Hebrew Chant, Torah Journeys, In the Fever of Love and the Companion: no ISBN on her pages.",
+      "Kol Zimra chant-leader training: ended in 2018.",
+      "Spiritual coaching: limited to Kol Zimra alumni and ALEPH students.",
+      "Kol Zimra and SOULIFT alumni retreat (Sept 2027): alumni only. Argentina and Uruguay tour (Nov 2027): a travel tour.",
+      "Apps (Magic of Psalms and others), CDs and paintings: not opened.",
+      "Short clips (Ozi in Madagascar, 2.5 minutes) and JCC Manhattan concert recordings on a family member's channel."
+    ]
+  },
+  "images_final": true
+}

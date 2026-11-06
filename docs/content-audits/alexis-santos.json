@@ -1,0 +1,135 @@
+{
+  "healer": {
+    "healer_slug": "alexis-santos",
+    "location_source": "https://www.alexissantos.io/support",
+    "create": {
+      "name": "Alexis Santos",
+      "bio": "Alexis Santos is an insight meditation teacher based in Portland, Maine, whose main teacher is the Burmese meditation master Sayadaw U Tejaniya. He came to meditation while travelling in India, having left medical school, and from 2003 to 2005 he lived as a Buddhist monk in Burma under Sayadaw's guidance. He has also practised with Ajahn Sumedho in the Thai Forest tradition and with Yongey Mingyur Rinpoche, and he completed the four-year teacher training run jointly by Spirit Rock and the Insight Meditation Society. Sayadaw asked him to start teaching in 2012.\n\nHis teaching is about keeping awareness alive through ordinary days rather than only during formal sitting, an emphasis he takes from his teacher: the hard part, in this view, is not effort but simply remembering to notice. He leads residential retreats at centres in the United States and abroad, and through his website runs online days of practice, recorded sessions and short practice meetings, all offered for donations. In 2017 he co-founded the Open Door Meditation Community in Portland with Susa Talan and others, and his guided meditations, including a course for practising while on the move, are on the Ten Percent Happier app.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local_online",
+      "city": "Portland, Maine",
+      "country": "United States",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "website_url": "https://www.alexissantos.io/",
+      "booking_url": "https://www.alexissantos.io/practice",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "opendoormeditation207@gmail.com",
+      "image_urls": [
+        "https://images.squarespace-cdn.com/content/v1/667b176a87aabc236b3042c0/28d0fc52-d630-420f-a0ed-6edcee3dc724/Image.jpg"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "insight-meditation-society",
+      "role": "instructor"
+    }
+  ],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Online Day of Meditation",
+      "url": "https://www.alexissantos.io/practice",
+      "description": "A regular online daylong held over Zoom, with guided sittings, silent periods, some gentle movement and time for questions. It is meant to help people keep their practice going between retreats, and newcomers and experienced meditators are both welcome.",
+      "price": "Donation (dana)",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://static.wixstatic.com/media/b1d47a_ddbd393b37bf418ca9d08aa8b89031c2~mv2.jpg/v1/crop/x_0,y_2,w_500,h_112/fill/w_700,h_156,al_c,lg_1,q_80,enc_avif,quality_auto/Blue%252520Cushions_edited_edited.jpg"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Day-long with Alexis, 18 September 2021 (recordings)",
+      "url": "https://www.crowdcast.io/c/day-long-with-alexis-sept-18_1/1",
+      "description": "Recordings of a full online practice day in four sessions, linked from his site so people can follow the day on their own. Crowdcast may ask for a free sign-up before playing.",
+      "featured": true,
+      "resource_type": "workshop",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://cc-user-media-prod.s3.amazonaws.com/-Kf4aB-PfL8xWS1CqN99/event-cover-1521"
+    },
+    {
+      "title": "Day-long with Alexis, 17 October 2021 (recordings)",
+      "url": "https://www.crowdcast.io/e/day-long-with-alexis-oct-17/1",
+      "description": "A second recorded online practice day, again split into four sessions of sitting, guidance and discussion, offered freely from his audio page.",
+      "featured": false,
+      "resource_type": "workshop",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://cc-user-media-prod.s3.amazonaws.com/-Kf4aB-PfL8xWS1CqN99/event-cover-1521"
+    },
+    {
+      "title": "Alexis Santos's dharma talks on Dharma Seed",
+      "url": "http://dharmaseed.org/teacher/525/",
+      "description": "His archive of retreat talks and guided sittings, free to stream or download, many given at retreats in the style of Sayadaw U Tejaniya.",
+      "featured": false,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/667b176a87aabc236b3042c0/28d0fc52-d630-420f-a0ed-6edcee3dc724/Image.jpg"
+    },
+    {
+      "title": "One-hour online meeting",
+      "url": "https://www.alexissantos.io/book-online",
+      "description": "A free one-hour online meeting that can be booked through his website, listed there as a booking service.",
+      "featured": false,
+      "resource_type": "practice",
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/667b176a87aabc236b3042c0/28d0fc52-d630-420f-a0ed-6edcee3dc724/Image.jpg"
+    }
+  ],
+  "sprint": {
+    "sprint": "pipelines-3",
+    "hub": "ims",
+    "rank": 13,
+    "hub_url": "https://www.dharma.org/teacher/alexis-santos/",
+    "tier_evidence": "No accounts of his own found: his site links no YouTube, Instagram, Facebook or X (checked 6 Nov 2026); Open Door's Instagram is the community's, not counted → 0 readable → local_hero",
+    "email": "yes",
+    "email_source": "https://www.opendoorportland.org/founding-teachers",
+    "contact_form_url": "https://www.alexissantos.io/contact",
+    "bio_check": "OK: no 8-word runs against 11 source(s)",
+    "flags": [
+      "Email is the Open Door Meditation Community's general inbox (shown as plain text in the footer of opendoorportland.org, e.g. the Founding Teachers page), used under the resident/founder rule because he co-founded Open Door; his own site has only a contact form, which says it is for requesting a retreat or event.",
+      "IMS named on: https://www.alexissantos.io/about (his completion of the Spirit Rock/IMS four-year teacher training). It names IMS as a training programme, not a retreat he taught there: owner may prefer to drop the link.",
+      "Base: Portland, Maine, from the cheque address on his support page (city only kept) and his co-founding of Open Door in Portland.",
+      "Regional: Portland, Maine, outside the big US coastal cities.",
+      "His own site looks partly out of date (home page: an online day for 'Saturday, November 23rd', no year; practice page: January 2024), but Susa Talan's events page (https://www.susatalan.com/events-and-teaching, read 6 Nov 2026) lists the monthly online daylong she co-leads with him as running, next on 22 Nov 2026, with the same Zoom registration link as his home page; so it is listed undated as a repeating offering. His retreat schedule page loads by script, so no 2026 residential retreats could be read.",
+      "Photos: the Open Door Founding Teachers headshot (500 x 500, served as WebP under a .jpg name) and the dharma.org 2018 headshot (332 x 504 WebP); both looked at, same man.",
+      "His own site's images are on static.wixstatic.com, whose robots.txt returned 403 'Forbidden'; I fetched two of its images in the same command as that robots.txt before seeing the result (a slip), then deleted them and used neither.",
+      "No YouTube channel or videos of him as main speaker found by one web search; his recordings are on Crowdcast, Dharma Seed and the Ten Percent Happier app.",
+      "Crowdcast day-long links: the October link is as on his site (it redirects to a /c/ address, like the September one, whose redirect target was opened and is a 2021 recording page; the replay may need a free Crowdcast sign-up).",
+      "Possible link to another sprint teacher: Susa Talan (rank 9) co-founded Open Door with him; they have co-led daily-life retreats there.",
+      "The dharma.org photo was dropped by the ingest dry run (dharma.org dropped the ingest's connection, UND_ERR_SOCKET, 6 Nov 2026), so only the photo(s) left in image_urls will be used."
+    ],
+    "left_out": [
+      "Monthly daylong schedule PDF (mcusercontent.com): its robots.txt disallows all for '*', not opened.",
+      "Home Retreat, Live Q&A and Practice Pods pages: no current dates ('TBD' or 2018).",
+      "Open Door retreats with him (January and May 2025): past.",
+      "Ten Percent Happier course 'On the Go': no page of its own on his site (only the app's home page is linked).",
+      "Books: none found."
+    ]
+  },
+  "images_final": true
+}

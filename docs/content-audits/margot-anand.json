@@ -1,0 +1,173 @@
+{
+  "healer": {
+    "healer_slug": "margot-anand",
+    "location_source": null,
+    "no_public_base": "Her site (meet, contact, schedule) says she is French-born and Sorbonne-educated but gives no current home city; her seminars move between Costa Rica, Thailand, France, Germany and Brazil.",
+    "create": {
+      "name": "Margot Anand",
+      "bio": "Margot Anand is a French-born teacher of Tantra who has spent decades presenting it to Western students as a whole path rather than a set of bedroom techniques. After studying at the Sorbonne in Paris she trained in Gestalt work, bioenergetics, massage, Arica and Integral yoga, and in Hindu and Buddhist Tantra with several teachers, Osho among them, in India.\n\nFrom that mix she built SkyDancing Tantra, a modern or neo-Tantra that uses the chakras as its main map and combines breath, movement, music, visualisation, ritual and meditation with ideas from psychology and communication training. She founded a network of SkyDancing institutes around the world and still trains certified teachers in the method, alongside a longer programme she calls the Love and Ecstasy Training. Her books on intimacy, pleasure and awakening, among them The Art of Everyday Ecstasy and Love, Sex, and Awakening, have reached a large international readership. She also founded SpiritWorks, which runs pilgrimages and channels donations to local charities in the places it visits. Today she leads week-long residential seminars for singles and couples in several countries, offers an online video course, and keeps an archive of recorded lectures for members.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "worldwide",
+      "city": null,
+      "country": null,
+      "subjects": [
+        "conscious-relationships",
+        "chakra-healing",
+        "spirituality"
+      ],
+      "website_url": "https://margotanand.com/",
+      "booking_url": "https://margotanand.com/schedules/",
+      "youtube_url": null,
+      "instagram_url": "https://www.instagram.com/margotanand.official/",
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "info@margotanand.com",
+      "image_urls": [
+        "https://margotanand.com/wp-content/uploads/2016/05/MargotHead1.jpg"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "omega-institute",
+      "role": "instructor"
+    }
+  ],
+  "videos": [],
+  "books": [
+    {
+      "title": "The Art of Everyday Ecstasy",
+      "slug": "the-art-of-everyday-ecstasy",
+      "author": "Margot Anand",
+      "asin": "0767901649",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "Takes the Tantric practices of her earlier work out of the bedroom and into daily life, using the seven chakras as stages for bringing more joy and awareness into work, relationships and ordinary routines.",
+      "subjects": [
+        "chakra-healing",
+        "spirituality"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/0767901649.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "Love, Sex, and Awakening: An Erotic Journey from Tantra to Spiritual Ecstasy",
+      "slug": "love-sex-and-awakening",
+      "author": "Margot Anand",
+      "asin": "0738751715",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "A memoir told through twelve episodes from her own life that shaped her understanding of how intimacy and spiritual awakening meet.",
+      "subjects": [
+        "conscious-relationships",
+        "spiritual-awakening"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/0738751715.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "The Art of Sexual Ecstasy",
+      "slug": "the-art-of-sexual-ecstasy",
+      "author": "Margot Anand",
+      "asin": "0874775817",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "Her first and best-known book, a step-by-step course in SkyDancing Tantra for couples, built around breath, ritual, communication and meditation.",
+      "subjects": [
+        "conscious-relationships"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/0874775817.01._SCLZZZZZZZ_.jpg"
+    }
+  ],
+  "courses": [
+    {
+      "title": "The Five Secrets of Love",
+      "url": "https://margotanand.com/schedule/the-five-secrets-of-love/",
+      "description": "A seven-night residential seminar on the Pacific coast of Costa Rica, open to singles and couples, exploring self-love, meditation and embodied awareness as ways into deeper intimacy, with optional yoga or qigong each morning.",
+      "price": "Contact for pricing",
+      "product_type": "retreat",
+      "start_date": "2027-01-23",
+      "end_date": "2027-01-30",
+      "subjects": [
+        "conscious-relationships",
+        "meditation"
+      ],
+      "image": "https://margotanand.com/wp-content/uploads/2026/08/Margot-Anand-Costa-Rica.jpg"
+    },
+    {
+      "title": "The Five Secrets of Love – Thailand",
+      "url": "https://margotanand.com/schedule/the-five-secrets-of-love-thailand/",
+      "description": "A week-long version of her Five Secrets of Love seminar held in Chiang Mai, Thailand.",
+      "price": "Contact for pricing",
+      "product_type": "retreat",
+      "start_date": "2027-04-10",
+      "end_date": "2027-04-16",
+      "subjects": [
+        "conscious-relationships"
+      ],
+      "image": "https://margotanand.com/wp-content/uploads/2016/09/MargotRetinaLogo1.png"
+    },
+    {
+      "title": "Tantric University",
+      "url": "https://margotanand.com/schedule/tantric-university/",
+      "description": "A week-long residential programme at Domaine Le Hameau de l'Etoile in the south of France.",
+      "price": "Contact for pricing",
+      "product_type": "retreat",
+      "start_date": "2027-06-27",
+      "end_date": "2027-07-04",
+      "subjects": [
+        "conscious-relationships",
+        "spirituality"
+      ],
+      "image": "https://margotanand.com/wp-content/uploads/2016/09/MargotRetinaLogo1.png"
+    },
+    {
+      "title": "Margot's Treasures",
+      "url": "https://margotanand.com/margots-treasures/",
+      "description": "Lifetime online access to her archive of recorded lectures and audio seminars, interviews and a gallery of her paintings.",
+      "price": "$49",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "conscious-relationships",
+        "spirituality"
+      ],
+      "image": "https://margotanand.com/wp-content/uploads/2016/09/MargotRetinaLogo1.png"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "pipelines-3",
+    "hub": "sounds-true",
+    "rank": 110,
+    "hub_url": "https://www.soundstrue.com/collections/authors-margot-anand",
+    "tier_evidence": "Instagram @margotanand.official and Facebook linked from her site; neither readable without login (not tried); no own YouTube channel linked → 0 readable → local_hero (counts unreadable for main accounts)",
+    "email": "yes",
+    "email_source": "https://margotanand.com/meet-margot/",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 9 source(s)",
+    "flags": [
+      "Sounds True list used as names only; soundstrue.com not opened.",
+      "Omega named on own site: https://margotanand.com/meet-margot/ (keynote at the Body & Soul Conferences presented by Omega Institute); Omega link added. It was a keynote at Omega's conference rather than a workshop, so a human may prefer to drop the link.",
+      "OWNER CHECK: her work and book titles are centred on sexuality (The Art of Sexual Ecstasy, Sexual Ecstasy: The Art of Orgasm, Sexual Magic); listing kept to the least explicit items and wording, but the owner may judge it unsuitable for the app.",
+      "OWNER CHECK: her latest blog post (home page, 4 Nov 2026) promotes her appearance with Sacha Stone at his Lazarus Initiative symposium. The post itself is about Tantra and carries no conspiracy content, so not skipped, but Stone is widely described as a promoter of conspiracy theories. Margot's Corner (blog) not listed.",
+      "Tier: no follower counts readable; she is a long-established author (site says over a million books sold), so a human check of the tier is advised.",
+      "Book ASINs from the Amazon links on her own works page (https://margotanand.com/margots-works/), matched to titles by page position and publisher prefix; not confirmed elsewhere.",
+      "Photo is an older studio portrait from 2016 on her own site; no newer photo found.",
+      "Event prices are on the Blue Spirit page and other venue pages, not opened; Thailand and Tantric University pages say 'More information coming soon'."
+    ],
+    "left_out": [
+      "The Art of Sexual Magic, Sexual Ecstasy: The Art of Orgasm (158542028X), The New Art of Sexual Ecstasy (0007163835), The Sexual Ecstasy Workbook (1585423971): explicit titles, kept the book list to three; French editions and audio/DVD/CD items also left out.",
+      "Secret Keys to the Ultimate Love Life online course (livetantraacademy.com): page not opened, price unknown.",
+      "The Art of Everyday Ecstasy, São Paulo (Feb 2027), and the Southern France (June) and Germany (July) events: no dates confirmed or no details yet.",
+      "Video Q2yMAvnAZ4Q 'Meet Margot Anand' on Mallika Paritosh's channel: about 90 seconds, under the 2-minute minimum; she has no own YouTube channel linked.",
+      "SpiritWorks church and pilgrimages: charity programme, no bookable item.",
+      "No published base city."
+    ],
+    "held": "Lead, 6 Nov 2026: held for the owner. Her work and book titles centre on sexuality (tantra), and her 4 Nov 2026 blog post promotes an appearance at Sacha Stone's Lazarus Initiative event (Stone is widely seen as a conspiracy promoter); the post itself has no conspiracy content."
+  }
+}

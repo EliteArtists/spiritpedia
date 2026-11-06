@@ -1,0 +1,220 @@
+{
+  "healer": {
+    "healer_slug": "cyndi-lee",
+    "location_source": "https://www.cyndilee.com/about-cyndi-lee",
+    "create": {
+      "name": "Cyndi Lee",
+      "bio": "Cyndi Lee brings together hatha yoga and Tibetan Buddhist meditation, a pairing she has taught for some three decades. Her root teacher was the Tibetan lama Gelek Rimpoche, and she took ordination as a Buddhist chaplain in 2018 through Roshi Joan Halifax's programme at Upaya Zen Center. Before teaching full time she was a dancer and choreographer in New York's downtown scene, and from 1998 to 2012 she ran OM yoga Center in Manhattan, one of the first studios in the city to hold Buddhist meditation classes alongside postures.\n\nHer books include Yoga Body, Buddha Mind, the memoir May I Be Happy and, more recently, Long Life Yoga, and she writes for Yoga Journal and Lion's Roar. Her teaching is plain-spoken and kind, built around the idea of basic goodness: steady sitting practice, attention to the breath and gaze, and postures approached with curiosity rather than strain. She now lives with her husband in Santa Fe, New Mexico, and teaches mostly online, through the Lifting the Gaze sangha that meets several times a month, a cycle of short meditation retreats across the year, and recorded courses and teacher trainings, as well as an annual in-person retreat.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "worldwide",
+      "city": "Santa Fe, New Mexico",
+      "country": "United States",
+      "subjects": [
+        "meditation",
+        "yoga",
+        "mindfulness"
+      ],
+      "website_url": "https://www.cyndilee.com/",
+      "booking_url": "https://www.cyndilee.com/retreats",
+      "youtube_url": "https://www.youtube.com/@CyndiLeeYoga",
+      "instagram_url": "https://www.instagram.com/cyndisphere/",
+      "facebook_url": "https://www.facebook.com/Cyndi-Lee-43410636558/",
+      "twitter_url": "https://twitter.com/CyndiLeeyoga",
+      "tiktok_url": null,
+      "contact_email": "info@omyoga.com",
+      "image_urls": [
+        "https://images.squarespace-cdn.com/content/v1/5dab5dc8623efb77290f9505/1572872704778-GDCBMXE9P45B0VRIT8UU/cyndi-lee-tree.jpg",
+        "https://images.squarespace-cdn.com/content/v1/5dab5dc8623efb77290f9505/1769448818228-J7OCMGM9BRNPR8JPB7I2/1766850729_695000a93fb59.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [
+    {
+      "title": "Cyndi Lee- WTF!! is Yoga!?",
+      "url": "https://www.youtube.com/watch?v=aJr12sSrP64",
+      "subjects": [
+        "yoga",
+        "spirituality"
+      ],
+      "channel": "Cyndi Lee Yoga"
+    },
+    {
+      "title": "Cyndi Lee- What is Om Yoga?",
+      "url": "https://www.youtube.com/watch?v=i3Iq85vNxaw",
+      "subjects": [
+        "yoga",
+        "meditation"
+      ],
+      "channel": "Cyndi Lee Yoga"
+    },
+    {
+      "title": "Cyndi Lee-Action vs Position",
+      "url": "https://www.youtube.com/watch?v=gOky7B_Rntg",
+      "subjects": [
+        "yoga"
+      ],
+      "channel": "Cyndi Lee Yoga"
+    },
+    {
+      "title": "Cyndi Lee- Don't Teach What You Know!",
+      "url": "https://www.youtube.com/watch?v=e4jl9E4Xuvc",
+      "subjects": [
+        "yoga"
+      ],
+      "channel": "Cyndi Lee Yoga"
+    },
+    {
+      "title": "Cyndi Lee- Teaching vs Instruction",
+      "url": "https://www.youtube.com/watch?v=7ECMqpHVzqU",
+      "subjects": [
+        "yoga"
+      ],
+      "channel": "Cyndi Lee Yoga"
+    },
+    {
+      "title": "Cyndi Lee- Clarity of Speech",
+      "url": "https://www.youtube.com/watch?v=9sTWz1pkLpo",
+      "subjects": [
+        "yoga",
+        "mindfulness"
+      ],
+      "channel": "Cyndi Lee Yoga"
+    },
+    {
+      "title": "Cyndi Lee- The Practice of Teaching",
+      "url": "https://www.youtube.com/watch?v=l3aaQ-hMAaI",
+      "subjects": [
+        "yoga"
+      ],
+      "channel": "Cyndi Lee Yoga"
+    },
+    {
+      "title": "Cyndi Lee- The Pose Formerly known as Flatback",
+      "url": "https://www.youtube.com/watch?v=QQTLKrwTH9g",
+      "subjects": [
+        "yoga"
+      ],
+      "channel": "Cyndi Lee Yoga"
+    }
+  ],
+  "books": [
+    {
+      "title": "Yoga Body, Buddha Mind",
+      "slug": "yoga-body-buddha-mind",
+      "author": "Cyndi Lee",
+      "asin": "1594480249",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "Her guide to practising postures and meditation as one path, drawing on Tibetan Buddhist teachings. It includes sequences, sitting instruction and reflections on bringing awareness into everyday life.",
+      "subjects": [
+        "yoga",
+        "meditation"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1594480249.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "May I Be Happy: A Memoir of Love, Yoga, and Changing My Mind",
+      "slug": "may-i-be-happy",
+      "author": "Cyndi Lee",
+      "asin": "0142180424",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "A frank memoir about her own long struggle with self-criticism over her body, and how she turned to loving-kindness practice and her Buddhist teachers to soften it.",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/0142180424.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "Long Life Yoga: Essential Practices for Longevity, Well-Being, and Joy at Any Age",
+      "slug": "long-life-yoga",
+      "author": "Cyndi Lee",
+      "asin": "1797238183",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "A practical book of simple yoga and breathing practices for readers at any stage of life, with short routines that can be fitted into an ordinary day.",
+      "subjects": [
+        "yoga"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1797238183.01._SCLZZZZZZZ_.jpg"
+    }
+  ],
+  "courses": [
+    {
+      "title": "A Year of Mindful Retreating 2027",
+      "url": "https://www.cyndilee.com/events-and-workshops/year-of-retreating-2027",
+      "description": "Six online meditation retreats spread through 2027, each meeting for twenty minutes a day over five days. Book the whole year, a set of three or single retreats.",
+      "price": "$179 for the year ($115 for 3 retreats, $45 per retreat)",
+      "product_type": "retreat",
+      "start_date": "2027-01-11",
+      "end_date": "2027-12-10",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "http://static1.squarespace.com/static/5dab5dc8623efb77290f9505/5dbf287f7743ac695264225d/6aea96f82563d80bf64417c7/1793907450180/prayer+Large.jpeg?format=1500w"
+    },
+    {
+      "title": "Mindfulness Mini-Retreat (December)",
+      "url": "https://www.cyndilee.com/events-and-workshops/a-year-of-mindfulness-retreating-njgf5-ms3tb-5ajd8-mt92y-xb4y4",
+      "description": "Five days of short online sittings with Cyndi, each opening with a practical tip on posture, breath or working with obstacles. The last of her 2026 mini-retreats.",
+      "price": "$45",
+      "product_type": "retreat",
+      "start_date": "2026-12-07",
+      "end_date": "2026-12-11",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "http://static1.squarespace.com/static/5dab5dc8623efb77290f9505/5dbf287f7743ac695264225d/694b032ad3e8ab13f678180c/1793829457910/1766850729_695000a93fb59.jpg?format=1500w"
+    },
+    {
+      "title": "Lifting the Gaze Sangha",
+      "url": "https://www.cyndilee.com/lifting-the-gaze-sangha",
+      "description": "An online practice community that meets three times a month for meditation and dharma study with Cyndi. No Buddhist background is needed; membership comes in tiers.",
+      "price": "$55 per month or $600 per year (Moon level)",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/5dab5dc8623efb77290f9505/db2c9464-5e3d-4646-ad8f-ddfcab815b12/unnamed-1.jpg"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "pipelines-3",
+    "hub": "kripalu",
+    "rank": 118,
+    "hub_url": "https://kripalu.org/people/cyndi-lee",
+    "tier_evidence": "YouTube 1.13K (@CyndiLeeYoga header, 6 Nov 2026); Instagram, Facebook and X not readable without login → ~1K readable → local_hero",
+    "email": "yes",
+    "email_source": "https://www.cyndilee.com/contact",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 11 source(s)",
+    "flags": [
+      "No Kripalu mention on own site: listed without the link.",
+      "Email info@omyoga.com is her former studio's (OM yoga) address, published on her contact page as the way to write to her.",
+      "Regional: Santa Fe, New Mexico, likely has few Spiritpedia teachers.",
+      "Tier: Instagram/Facebook counts couldn't be read; editorial stature (six books, founder of OM yoga Center) might argue for more, owner to decide.",
+      "Her YouTube videos are about ten years old (teacher-training clips); evergreen but dated in look.",
+      "ISBNs from bookshop.org links on her own books page, not confirmed elsewhere.",
+      "Year of Mindful Retreating: dates are six separate weeks (11 Jan to 10 Dec 2027); start/end set to the first and last."
+    ],
+    "left_out": [
+      "Yoga International, Yoga Journal and Lion's Roar online courses and trainings: hosted by those publishers, not opened.",
+      "OM yoga Today talk series (Yoga International): third-party.",
+      "Contributions and forewords to other authors' books, including one on cancer recovery (health claim).",
+      "Restorative/teacher-training promo clips under ~2 minutes."
+    ]
+  },
+  "images_final": true
+}

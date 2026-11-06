@@ -1,0 +1,123 @@
+{
+  "healer": {
+    "healer_slug": "susa-talan",
+    "location_source": "https://www.susatalan.com/events-and-teaching",
+    "create": {
+      "name": "Susa Talan",
+      "bio": "Susa Talan is an insight meditation teacher, artist and writer in Portland, Maine. She was drawn to meditation by noticing how persuasive, and how unreliable, the stories in her own head could be, and that question led her to the Burmese teacher Sayadaw U Tejaniya, under whom she ordained for a short period in 2010 and with whom she has practised for close to twenty years. She has also received teachings from Yongey Mingyur Rinpoche in the Tibetan tradition, spent four years as a senior producer of meditation content for Dan Harris's meditation app, and in 2017 helped Alexis Santos and others found the Open Door Meditation Community in Portland.\n\nFollowing her teacher, she presents meditation less as a matter of posture than as looking after the mind through the whole day, with relaxed, steady awareness allowing understanding to grow by itself. She draws openly on her own life with ADHD when helping restless meditators find a way in. She offers one-to-one meditation mentoring on a sliding scale, a Thursday evening online sitting group, and a monthly online daylong co-led with Alexis Santos, as well as gentle movement classes drawing on qigong and yoga. Most of her teaching is given on a donation basis.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local_online",
+      "city": "Portland, Maine",
+      "country": "United States",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "website_url": "https://www.susatalan.com/",
+      "booking_url": "https://www.susatalan.com/what-i-offer",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "susadhamma@gmail.com",
+      "image_urls": [
+        "https://images.squarespace-cdn.com/content/v1/667b176a87aabc236b3042c0/fbcf0da8-0e54-4a56-ad59-46ef7842ee13/ST+bio+photo+april+2026.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Meditation mentoring",
+      "url": "https://www.susatalan.com/what-i-offer",
+      "description": "One-to-one online sessions for people starting a practice or wanting to deepen one, covering formal sitting and how to stay aware in everyday life. Sessions are 30 minutes and booked through her website.",
+      "price": "$60–$125 USD per 30-minute session (sliding scale)",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://static.wixstatic.com/media/1d0cda_ede23a15277e4c99ae43de44084636ae%7Emv2.jpg/v1/fit/w_2500,h_1330,al_c/1d0cda_ede23a15277e4c99ae43de44084636ae%7Emv2.jpg"
+    },
+    {
+      "title": "Thursday evening meditation",
+      "url": "https://us02web.zoom.us/meeting/register/Q08hlVHERUeJQNS7MYHV4Q",
+      "description": "An online evening group in which she guides a sitting, gives a short dharma reflection and then opens the floor for questions and practice discussion. Newcomers are welcome to come and simply listen.",
+      "price": "Donation",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/667b176a87aabc236b3042c0/fbcf0da8-0e54-4a56-ad59-46ef7842ee13/ST+bio+photo+april+2026.jpg"
+    },
+    {
+      "title": "Monthly online daylong retreat with Alexis Santos",
+      "url": "https://www.susatalan.com/events-and-teaching",
+      "description": "A day of online practice held once a month with her fellow teacher Alexis Santos, currently working through Sayadaw U Tejaniya's book Relax and Be Aware. People can join for part of the day or all of it.",
+      "price": "Donation",
+      "product_type": "retreat",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://static.wixstatic.com/media/1d0cda_ede23a15277e4c99ae43de44084636ae%7Emv2.jpg/v1/fit/w_2500,h_1330,al_c/1d0cda_ede23a15277e4c99ae43de44084636ae%7Emv2.jpg"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "About meditation",
+      "url": "https://www.susatalan.com/about-meditation",
+      "description": "A free page on her site introducing the approach she learned from Sayadaw U Tejaniya, with basic principles for caring for the mind and a reading list of his books and other dharma resources.",
+      "featured": true,
+      "resource_type": "practice",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://static.wixstatic.com/media/1d0cda_ede23a15277e4c99ae43de44084636ae%7Emv2.jpg/v1/fit/w_2500,h_1330,al_c/1d0cda_ede23a15277e4c99ae43de44084636ae%7Emv2.jpg"
+    }
+  ],
+  "sprint": {
+    "sprint": "pipelines-3",
+    "hub": "ims",
+    "rank": 9,
+    "hub_url": "https://www.dharma.org/teacher/susa-talan/",
+    "tier_evidence": "Instagram @susatalan linked from her site but not opened (instagram.com is never fetched), count unreadable; no YouTube, Facebook or X account found (6 Nov 2026) → 0 readable → local_hero",
+    "email": "yes",
+    "email_source": "https://www.susatalan.com/",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 9 source(s)",
+    "flags": [
+      "Found through the Open Door Meditation Community's Founding Teachers page (opendoorportland.org), which links her own site; I had first written a skip for her after two searches found no site, then removed it.",
+      "No IMS mention on own site (only a dharma.org link in a resource list on her About Meditation page, not a programme or 'has taught at'): listed without the link.",
+      "Base: Portland, Maine. Her events page lists an in-person Wednesday sangha at Open Door in Portland ('please join if you are local') and her About page says she co-founded the Portland community; she does not state in so many words where she lives.",
+      "Regional: Portland, Maine, outside the big US coastal cities.",
+      "Tier counts unreadable for her main account (Instagram).",
+      "Email susadhamma@gmail.com is the clickable 'CONTACT ME' mailto in her site footer (home page and others). No contact form (the contact page holds only a newsletter sign-up).",
+      "Her mentoring page lists possible session topics including health challenges and addiction recovery among many others; the work is meditation mentoring, not treatment, and the item description names no conditions. Borderline, kept.",
+      "Thursday evening meditation URL is its Zoom registration link (from her events page), as it has no page of its own; the monthly daylong uses her events page.",
+      "Her site images are on static.wixstatic.com (robots.txt 403), not used. Photos: Open Door Founding Teachers headshot (April 2026, 1024 x 1024) and her dharma.org movement-instructor photo (580 x 580 WebP); both looked at, same woman.",
+      "Possible link to another sprint teacher: Alexis Santos (rank 13) co-founded Open Door with her and co-leads the monthly daylong.",
+      "The dharma.org photo was dropped by the ingest dry run (dharma.org dropped the ingest's connection, UND_ERR_SOCKET, 6 Nov 2026), so only the photo(s) left in image_urls will be used."
+    ],
+    "left_out": [
+      "Movement with Awareness class (suggested donation $15–25): next class 'TBD', and it has no page of its own.",
+      "10% Happier podcast Q&A episode (29 May 2026): its title is framed around anxiety (condition-named), so left out.",
+      "Teacher of the Month events on 10% with Dan Harris (April 2026): past.",
+      "Wednesday Night Sangha at Open Door: a community programme she guides occasionally, not her own.",
+      "Greeting cards (Big Wheel Press): art, not teaching."
+    ]
+  },
+  "images_final": true
+}

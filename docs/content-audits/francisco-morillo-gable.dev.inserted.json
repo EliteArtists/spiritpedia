@@ -1,0 +1,33 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 963,
+    "healer_slug": "francisco-morillo-gable"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "cd412c5f-56c0-4da7-a2af-78e24d4e0b37",
+      "slug": "las-practicas-fundamentales-de-la-vision-clara-y-profunda-insight",
+      "title": "Las prácticas fundamentales de la visión clara y profunda (Insight)"
+    },
+    {
+      "table": "courses",
+      "id": "36685bcc-2c1b-418f-84ce-863a5cd0af33",
+      "slug": "quietud-y-claridad-retiro-de-insight",
+      "title": "Quietud y Claridad: Retiro de Insight"
+    },
+    {
+      "table": "free_resources",
+      "id": "feb170ee-f2e0-4eb7-84f6-82537ff5ce1e",
+      "slug": "presentacion-del-centro-de-meditacion-insight-recording",
+      "title": "Presentación del Centro de Meditación Insight (recording)"
+    },
+    {
+      "table": "hub_teachers",
+      "id": "ff5858fd-4dbf-4ae5-9bd1-7ad7069e0f21",
+      "title": "francisco-morillo-gable teaches at Insight Meditation Society"
+    }
+  ],
+  "at": "2026-11-06T14:20:20.736Z"
+}

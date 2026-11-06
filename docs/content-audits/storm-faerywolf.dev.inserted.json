@@ -1,0 +1,69 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 1015,
+    "healer_slug": "storm-faerywolf"
+  },
+  "rows": [
+    {
+      "table": "books",
+      "id": 2185,
+      "slug": "betwixt-and-between",
+      "title": "Betwixt and Between"
+    },
+    {
+      "table": "books",
+      "id": 2186,
+      "slug": "forbidden-mysteries-of-faery-witchcraft",
+      "title": "Forbidden Mysteries of Faery Witchcraft"
+    },
+    {
+      "table": "books",
+      "id": 2187,
+      "slug": "the-satyrs-kiss",
+      "title": "The Satyr's Kiss"
+    },
+    {
+      "table": "books",
+      "id": 2188,
+      "slug": "the-witchs-name",
+      "title": "The Witch's Name (Revised & Expanded Edition)"
+    },
+    {
+      "table": "books",
+      "id": 2189,
+      "slug": "the-stars-within-the-earth",
+      "title": "The Stars Within the Earth"
+    },
+    {
+      "table": "books",
+      "id": 2190,
+      "slug": "claiming-the-witchfire",
+      "title": "Claiming the Witchfire"
+    },
+    {
+      "table": "courses",
+      "id": "644c11e7-938e-4bf9-8557-f14c1cf47b3b",
+      "slug": "black-rose-private-apprenticeship",
+      "title": "Black Rose Private Apprenticeship"
+    },
+    {
+      "table": "courses",
+      "id": "1bb8a1f0-7d24-47b7-9645-d629c33d6c18",
+      "slug": "private-consultations-and-magical-services",
+      "title": "Private Consultations and Magical Services"
+    },
+    {
+      "table": "free_resources",
+      "id": "1f05afe1-55dc-4c2a-831a-d3139feae6e8",
+      "slug": "witch-power-daily",
+      "title": "Witch Power Daily"
+    },
+    {
+      "table": "hub_teachers",
+      "id": "e700a0f1-90bf-408f-b108-e76cacad0194",
+      "title": "storm-faerywolf teaches at Omega Institute"
+    }
+  ],
+  "at": "2026-11-06T16:13:19.429Z"
+}

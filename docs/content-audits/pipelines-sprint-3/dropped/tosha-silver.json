@@ -1,0 +1,113 @@
+{
+  "healer": {
+    "healer_slug": "tosha-silver",
+    "location_source": null,
+    "no_public_base": "Her own about page (https://toshasilver.com/pages/about-us) says only that she lives in New York, without saying whether that is the city or the state; older pages (Esalen) place her near San Francisco. Left for the owner to map.",
+    "create": {
+      "name": "Tosha Silver",
+      "bio": "Tosha Silver is an American writer and teacher whose work centres on one idea: inviting the Divine to lead daily life instead of trying to manage every outcome by force of will. She studied English literature at Yale, and along the way was drawn to yogic philosophy and devotional practice. For many years she worked as an astrologer and gave tens of thousands of readings, before setting that work aside in 2012 to concentrate on writing and teaching.\n\nShe is best known for Outrageous Openness and Change Me Prayers, books of short stories, prayers and reflections on surrender, and she later wrote It's Not Your Money, on treating money as something offered to the Divine. Her tone is light and informal, and she avoids spiritual jargon where she can. Her main teaching home is an online membership, the Living Outrageous Openness Forum, which meets weekly on Zoom for a talk with questions, keeps recordings for those who cannot attend live, and has a members' discussion group. She also runs occasional short online courses, some drawing on astrology and on goddess figures such as Kali.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "worldwide",
+      "city": null,
+      "country": null,
+      "subjects": [
+        "spirituality",
+        "spiritual-awakening",
+        "astrology"
+      ],
+      "website_url": "https://toshasilver.com/",
+      "booking_url": "https://toshasilver.com/pages/living-outrageous-openness",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "media@toshasilver.com",
+      "image_urls": [
+        "https://cdn.shopify.com/s/files/1/1259/0095/files/thumbnail_Tosha_Profile_New_480x480.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [
+    {
+      "title": "Outrageous Openness: Letting the Divine Take the Lead",
+      "slug": "outrageous-openness",
+      "author": "Tosha Silver",
+      "asin": "1476793484",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "Her first book, a collection of brief stories and reflections about handing everyday worries to a loving higher power and watching what follows. It is written in a playful voice and is meant to be dipped into.",
+      "subjects": [
+        "spirituality",
+        "spiritual-awakening"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1476793484.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "Change Me Prayers: The Hidden Power of Spiritual Surrender",
+      "slug": "change-me-prayers",
+      "author": "Tosha Silver",
+      "asin": "1476789762",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "A follow-up to Outrageous Openness built around short prayers that ask to be changed from within rather than for circumstances to change. Each prayer comes with stories about work, relationships, money and self-worth.",
+      "subjects": [
+        "spirituality",
+        "spiritual-awakening"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1476789762.01._SCLZZZZZZZ_.jpg"
+    }
+  ],
+  "courses": [
+    {
+      "title": "Living Outrageous Openness Forum",
+      "url": "https://toshasilver.com/pages/living-outrageous-openness",
+      "description": "An ongoing online membership with a weekly Zoom talk and question session led by Tosha, recorded for anyone who cannot join live. Members also get a private discussion group and discounts on her recorded classes.",
+      "price": "Contact for pricing",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "spirituality",
+        "spiritual-awakening"
+      ],
+      "image": "https://m.media-amazon.com/images/P/1476793484.01._SCLZZZZZZZ_.jpg"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "pipelines-3",
+    "hub": "esalen",
+    "rank": 152,
+    "hub_url": "https://www.esalen.org/faculty/tosha-silver",
+    "tier_evidence": "Her site links Twitter (@toshasil) and a Facebook author page; neither count can be read without logging in (not fetched, 6 Nov 2026); no YouTube channel linked → 0 readable → local_hero",
+    "email": "yes",
+    "email_source": "https://toshasilver.com/pages/contact",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 8 source(s)",
+    "flags": [
+      "Own site found through a web search summary of her Simon & Schuster author page, which names ToshaSilver.com; the home, about and contact pages confirm it is hers (Shopify store).",
+      "Email media@toshasilver.com is the address her contact page gives for speaking and events; the same page gives questions@toshasilver.com for customer service, and info@toshasilver.com is on the Forum page. Office/brand inboxes, not a personal address.",
+      "toshasilver.com returned 429 (rate limit) on /collections/classes and /collections/books after five pages; per the standing rule I fetched nothing more from it, so her classes and shop pages (recorded courses, prices) were not read.",
+      "Instruction-like text in toshasilver.com/robots.txt (Shopify's standard note addressed to AI agents about installing a shopping skill): ignored.",
+      "No Esalen mention on the own-site pages read (home, about, contact, events, Forum): listed without the link. The 429 stopped me reading the rest of the site.",
+      "Tier: no follower counts readable. She is a widely sold author (two Atria/Simon & Schuster books and a Hay House one); owner may want to consider an editorial-stature override.",
+      "Books: ISBN-13s taken from Simon & Schuster book-page URLs shown in web search results (simonandschuster.ca/.../9781476793481 and Publishers Weekly/S&S 9781476789767), converted to ISBN-10; pages not opened (simonandschuster.com.au refused us with a Cloudflare 403, so I did not try other S&S hosts). Not confirmed elsewhere; covers added by the ingest.",
+      "Photo: her site's profile image (480 x 480, sitting on tiled steps), looked at; only one usable photo (the other on her about page is 250 px).",
+      "Only three items (two books and the Forum); thin but at the ~3 threshold."
+    ],
+    "left_out": [
+      "It's Not Your Money (Hay House): ISBN only from a retailer listing in search results, and hayhouse.com is off limits.",
+      "Divine Feminine Rising pop-up course and the free Venus video opt-in: both on store.toshasilver.com, not opened after the 429 on her main site, so dates and prices unknown.",
+      "Forum price: not shown in the page text read.",
+      "Recorded classes (/collections/classes): 429, not read.",
+      "Videos: no channel of her own linked; a Talks at Google talk exists but no video ID was found without searching YouTube.",
+      "Events page: 'No events are currently scheduled.'"
+    ]
+  }
+}

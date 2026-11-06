@@ -1,0 +1,52 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 1060,
+    "healer_slug": "laurence-freeman"
+  },
+  "rows": [
+    {
+      "table": "videos",
+      "id": 8583,
+      "slug": "mantra-i-video-lectios-with-laurence-freeman-osb",
+      "title": "Mantra I - Video Lectios with Laurence Freeman OSB"
+    },
+    {
+      "table": "videos",
+      "id": 8584,
+      "slug": "mantra-ii-video-lectios-with-laurence-freeman-osb",
+      "title": "Mantra II - video lectios with Laurence Freeman OSB"
+    },
+    {
+      "table": "videos",
+      "id": 8585,
+      "slug": "listening-to-the-silence-video-lectios-by-laurence-freeman",
+      "title": "Listening to the Silence - video lectios by Laurence Freeman"
+    },
+    {
+      "table": "videos",
+      "id": 8586,
+      "slug": "silence-the-universal-language-video-lectios-by-laurence-freeman",
+      "title": "Silence, the universal language - video lectios by Laurence Freeman"
+    },
+    {
+      "table": "courses",
+      "id": "0aafbbd8-38a8-452d-9397-cd0e1d141931",
+      "slug": "mind-awake-thankful-heart-deep-silent-retreat",
+      "title": "Mind Awake, Thankful Heart: Deep Silent Retreat"
+    },
+    {
+      "table": "courses",
+      "id": "2c787f6a-3351-446b-a847-cf913d4c6a17",
+      "slug": "moving-the-stone-away-holy-week-retreat",
+      "title": "Moving the Stone Away: Holy Week Retreat"
+    },
+    {
+      "table": "courses",
+      "id": "283d4549-e1ba-4c2f-bda2-3cc07f157cc8",
+      "slug": "the-future-of-religion-closing-panel-with-laurence-freeman",
+      "title": "The Future of Religion: Closing Panel with Laurence Freeman"
+    }
+  ],
+  "at": "2026-11-06T17:40:46.231Z"
+}

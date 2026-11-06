@@ -1,0 +1,110 @@
+{
+  "healer": {
+    "healer_slug": "francisco-morillo-gable",
+    "location_source": null,
+    "no_public_base": "Neither his centre's site nor the dharma.org page publishes where he lives; the Centro de Meditación Insight is a Spanish association whose legal notice gives no town, and its January 2027 retreat is in Madrid (a venue, not a base).",
+    "create": {
+      "name": "Francisco Morillo Gable",
+      "bio": "Francisco Morillo Gable is an Insight meditation teacher whose work is grounded in the early Buddhist discourses and the Theravada canon. Born in the Dominican Republic, he moved to the United States as a boy and built a career as a senior director in San Francisco's technology industry until a serious accident in 2003 changed the course of his life and led him to meditation. He trained as a Dharma teacher in the classical programme of the Insight Meditation Center in Redwood City, and he leads retreats and courses at the Insight Meditation Society and the Barre Center for Buddhist Studies in Massachusetts and at centres in California.\n\nHe is especially committed to teaching in Spanish and to making the practice welcoming for disabled, queer and other under-served communities. In 2026 he became principal teacher of the Centro de Meditación Insight, a new non-profit that offers the Insight tradition to Spanish speakers through live online courses and silent retreats, run on a sliding scale with teachings given for dana. His teaching also draws on the arts and on qigong.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "worldwide",
+      "city": null,
+      "country": null,
+      "subjects": [
+        "meditation",
+        "mindfulness",
+        "ancient-wisdom"
+      ],
+      "website_url": "https://centrodemeditacioninsight.org/",
+      "booking_url": "https://centrodemeditacioninsight.org/tienda/",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "dharma@centrodemeditacioninsight.org",
+      "image_urls": [
+        "https://centrodemeditacioninsight.org/wp-content/uploads/2026/06/Spirit-Rock-Teacher-Francisco-Morillo-Gable_2025-02-19-213232_zemj.jpg"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "insight-meditation-society",
+      "role": "instructor"
+    }
+  ],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Las prácticas fundamentales de la visión clara y profunda (Insight)",
+      "url": "https://centrodemeditacioninsight.org/producto/las-practicas-fundamentales-de-la-vision-clara-y-profunda-insight/",
+      "description": "An eight-week live online course in Spanish, two hours each Wednesday evening (Central European Time), on the core meditation instructions of the Insight tradition: breath, body, emotions and thoughts. Classes mix teaching, guided practice and small-group discussion.",
+      "price": "€150–€250 EUR (three contribution levels)",
+      "product_type": "course",
+      "start_date": "2027-01-27",
+      "end_date": "2027-03-17",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://centrodemeditacioninsight.org/wp-content/uploads/2026/06/8-e1790784883159.jpg"
+    },
+    {
+      "title": "Quietud y Claridad: Retiro de Insight",
+      "url": "https://centrodemeditacioninsight.org/producto/quietud-y-claridad-retiro-de-insight-vipasanna/",
+      "description": "A four-day silent residential retreat near Madrid on calm and insight practice from early Buddhism, for people with some meditation experience. Guided and independent sittings alternate, with question time and small-group meetings; lodging is paid separately at the venue and teachings are offered for dana.",
+      "price": "€288 EUR registration (plus €231 EUR board and lodging)",
+      "product_type": "retreat",
+      "start_date": "2027-01-28",
+      "end_date": "2027-01-31",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://centrodemeditacioninsight.org/wp-content/uploads/2026/11/retiro_calma-y-claridad.jpg"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Presentación del Centro de Meditación Insight (recording)",
+      "url": "https://centrodemeditacioninsight.org/presentacion-cmi-23-de-mayo-2026/",
+      "description": "The recorded launch session of his Spanish-language centre, with meditation, conversation about the Insight lineage and guests including Rebecca Bradshaw. The recording is sent free on request through the centre's form.",
+      "featured": true,
+      "resource_type": "workshop",
+      "subjects": [
+        "meditation",
+        "ancient-wisdom"
+      ],
+      "image": "https://centrodemeditacioninsight.org/wp-content/uploads/2026/03/Rebecca.jpg"
+    }
+  ],
+  "sprint": {
+    "sprint": "pipelines-3",
+    "hub": "ims",
+    "rank": 71,
+    "hub_url": "https://www.dharma.org/teacher/francisco-gable/",
+    "tier_evidence": "No social accounts or YouTube channel found on his centre's site or in one search → 0 readable → local_hero",
+    "email": "yes",
+    "email_source": "https://centrodemeditacioninsight.org/",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 9 source(s)",
+    "flags": [
+      "Public name used: Francisco Morillo Gable (as on dharma.org and his centre's site); the list has 'Francisco Gable'.",
+      "Insight Meditation Society named on: https://centrodemeditacioninsight.org/ (teaches at IMS and the Barre Center for Buddhist Studies).",
+      "Website is the Centro de Meditación Insight, a Spanish non-profit founded in 2026 where he is principal teacher (maestro principal); email is the centre's general inbox.",
+      "No public base for him; listed worldwide with no city.",
+      "Thin: three items (two dated offerings and one free recording sent by form). No YouTube videos found; his talks are on AudioDharma and Dharma Seed (audio, not used).",
+      "His own bios mention post-injury PTSD and medical qigong; both left out of the bio and subjects under the health rule.",
+      "One photo only (on his centre's site, apparently a Spirit Rock portrait); same face as the dharma.org photo."
+    ],
+    "left_out": [
+      "Free presentation session for the course on 16 December 2026: dated, a one-off event.",
+      "Retreats and courses at IMS, Barre Center, Spirit Rock and Insight Retreat Center: not linked from his own site.",
+      "AudioDharma and Dharma Seed talks: audio archives, not YouTube."
+    ]
+  },
+  "images_final": true
+}

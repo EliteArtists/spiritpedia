@@ -1,0 +1,108 @@
+{
+  "healer": {
+    "healer_slug": "amanda-giacomini",
+    "location_source": "https://10000buddhas.com/connect",
+    "create": {
+      "name": "Amanda Giacomini",
+      "bio": "Amanda Giacomini is a yoga teacher and painter, known as an artist by the name of her project, 10,000 Buddhas. She has practised yoga for more than thirty years, meditated for longer, and taught for a quarter of a century; in 2001 she co-founded Point Reyes Yoga, a small studio on the coast of Marin County in Northern California, where she leads trainings. Her art began on a visit to the Ajanta caves in India, where an ancient mural of a thousand seated Buddhas moved her to set herself the task of painting ten thousand. She passed that number over about ten years, and her Buddhas now appear on walls in many American cities and abroad, as well as on canvas, paper and fabric.\n\nAs a teacher she favours slow, quiet practice, especially yin and restorative yoga, and likes to weave stories from Buddhist and yogic tradition into a class. At Point Reyes Yoga she co-leads, with Kimiko Tao Fujimoto, short in-person trainings in restorative and yin yoga, and she leads occasional retreats abroad, such as a week of yoga, storytelling and walks to holy wells on Ireland's west coast. She has taught at yoga festivals, museums and other public venues around the world.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local",
+      "city": "Point Reyes Station, California",
+      "country": "United States",
+      "subjects": [
+        "yoga",
+        "meditation"
+      ],
+      "website_url": "https://10000buddhas.com/",
+      "booking_url": "https://10000buddhas.com/connect",
+      "youtube_url": null,
+      "instagram_url": "https://www.instagram.com/10000buddhas/",
+      "facebook_url": "https://www.facebook.com/10000buddhas/",
+      "twitter_url": "https://twitter.com/10kbuddhas",
+      "tiktok_url": null,
+      "contact_email": "info@10000buddhas.com",
+      "image_urls": [
+        "https://images.squarespace-cdn.com/content/v1/5c7efd314d546e132e3977f4/86a89625-3914-42aa-b374-da1e740ed9ed/AmandaCliffs.jpg?format=1500w",
+        "https://images.squarespace-cdn.com/content/v1/5c7efd314d546e132e3977f4/ee0157ae-adf3-4d18-b369-a41f38d29f97/AmandaTree.jpg?format=1500w"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "RESOURCE: Restorative Yoga Teacher Training",
+      "url": "https://www.pointreyesyoga.com/events/resource2027",
+      "description": "A four-day, 30-hour training at Point Reyes Yoga with Amanda and Kimiko Tao Fujimoto. It covers the history and principles of restorative yoga, sequencing and class design, prop set-ups and cueing, and meditative presence.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": "2027-02-12",
+      "end_date": "2027-02-15",
+      "subjects": [
+        "yoga",
+        "meditation"
+      ],
+      "image": "http://static1.squarespace.com/static/58562194e6f2e1189ab3dea4/t/6a160def0acac42e525fc6a7/1779830255105/Amanda+Yin.png?format=1500w"
+    },
+    {
+      "title": "NOURISH: Yin Yoga Training in Point Reyes",
+      "url": "https://www.pointreyesyoga.com/events/yinyogatraining2027",
+      "description": "The studio's third annual yin yoga training with Amanda and Kimiko: classic yin postures, pranayama, mantra and meditation, and subtle-body ideas such as meridians and koshas, taught partly through story.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": "2027-05-20",
+      "end_date": "2027-05-24",
+      "subjects": [
+        "yoga",
+        "meditation"
+      ],
+      "image": "http://static1.squarespace.com/static/58562194e6f2e1189ab3dea4/58f907585016e1e19163a31a/6a1612c89184664fb5220b4e/1793384531149/amanda+yin+pose.png?format=1500w"
+    },
+    {
+      "title": "Ireland Retreat with Amanda & Radha",
+      "url": "https://10000buddhas.com/ireland-retreat-1",
+      "description": "A week on Ireland's west coast with Marisa Radha Weppner at the Cliffs of Moher Retreat Center: daily yoga and meditation, restorative practice with Celtic stories, coastal walks and visits to holy wells.",
+      "price": "From $3,300.00 (single room, shared bath); $500 deposit",
+      "product_type": "retreat",
+      "start_date": "2027-08-06",
+      "end_date": "2027-08-11",
+      "subjects": [
+        "yoga",
+        "spirituality"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/5c7efd314d546e132e3977f4/1551826407739-RLP58XUT655F0YQMBTCK/download.jpeg?format=1500w"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "pipelines-3",
+    "hub": "esalen",
+    "rank": 281,
+    "hub_url": "https://www.esalen.org/faculty/amanda-giacomini",
+    "tier_evidence": "No YouTube channel of her own found; Instagram @10000buddhas, Facebook and X linked from 10000buddhas.com but not readable without login → readable total 0 → local_hero",
+    "email": "yes",
+    "email_source": "https://10000buddhas.com/connect",
+    "contact_form_url": "https://10000buddhas.com/connect",
+    "bio_check": "OK: no 8-word runs against 8 source(s)",
+    "flags": [
+      "No Esalen mention for her on 10000buddhas.com: the Ireland retreat page names Esalen only in her co-leader Marisa Radha Weppner's bio. Listed without the link.",
+      "Own site 10000buddhas.com came from a search snippet; confirmed on the site itself (her name, bio and Point Reyes contact).",
+      "Base: Point Reyes Station, California (her PO box on the connect page; Point Reyes Yoga's studio address). It is a small village under 5,000 people; recorded as published for mapping. Regional: west Marin, outside the big coastal cities' cores.",
+      "Point Reyes Yoga is a studio she co-founded, so its trainings with her count as her programmes.",
+      "Photos: two images on her Ireland retreat page with file names 'AmandaCliffs' and 'AmandaTree'; not captioned beyond that, so identity is likely but not certain.",
+      "Trainings' pages list physical benefits (pain, sleep, immunity); kept out of the descriptions. Borderline items kept and flagged.",
+      "Ireland retreat: every room option shown was marked 'Sold out' on 6 Nov 2026; kept with the lowest listed price, owner may drop.",
+      "Co-leader of the Ireland retreat describes herself as a psychedelic therapist; the retreat itself has no psychedelic content.",
+      "Much of her site is about her art (murals, paintings, apparel); those are not listed."
+    ],
+    "left_out": [
+      "Video linked from her home page (dqL1pAGDxBk): oEmbed returned 403.",
+      "Art shop items (paintings, apparel, journals) on bigcartel.",
+      "'Herbal Medicine 101' retreat page: not opened ('medicine' framing).",
+      "Point Reyes Yoga solstice and other events led by other teachers."
+    ]
+  },
+  "images_final": true
+}

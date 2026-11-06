@@ -1,0 +1,34 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 1048,
+    "healer_slug": "saeeda-hafiz"
+  },
+  "rows": [
+    {
+      "table": "videos",
+      "id": 8564,
+      "slug": "books-brunch-with-byta-featuring-saeeda-hafiz",
+      "title": "BOOKS & BRUNCH with BYTA | Featuring Saeeda Hafiz"
+    },
+    {
+      "table": "books",
+      "id": 2278,
+      "slug": "the-healing",
+      "title": "The Healing: One Woman's Journey from Poverty to Inner Riches"
+    },
+    {
+      "table": "courses",
+      "id": "a63266bc-3a0b-4c2e-ad19-a25e5cfe2029",
+      "slug": "private-yoga-classes-with-saeeda",
+      "title": "Private Yoga Classes with Saeeda"
+    },
+    {
+      "table": "free_resources",
+      "id": "36d208e2-7e3d-453d-9707-0962c1f02eb9",
+      "slug": "free-guided-meditation-by-saeeda-hafiz",
+      "title": "Free Guided Meditation by Saeeda Hafiz"
+    }
+  ],
+  "at": "2026-11-06T17:00:09.823Z"
+}

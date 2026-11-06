@@ -1,0 +1,156 @@
+{
+  "healer": {
+    "healer_slug": "jessica-morey",
+    "location_source": null,
+    "no_public_base": "Her own site (home, contact and events pages, read 6 Nov 2026) does not say where she lives; she teaches online and at centres in Vermont, Massachusetts and New York, which are venues, not a published base.",
+    "create": {
+      "name": "Jessica Morey",
+      "bio": "Jessica Morey is an American meditation teacher and contemplative coach who first sat on teen retreats at the Insight Meditation Society and has now practised for around thirty years. Her grounding is Insight Meditation in the Burmese Mahasi style, and since 2013 she has also trained closely in Tibetan Vajrayana practice, including John Makransky's Sustainable Compassion approach. She completed the IMS teacher training in 2021. Before teaching full time she studied environmental engineering at Dartmouth and worked in clean-energy finance, and she went on to found Inward Bound Mindfulness Education (iBme), which runs retreats for teenagers and young adults.\n\nHer teaching is warm and often playful, with an emphasis on carrying meditation into relationships and everyday choices, and it draws on what she has learned from psychology, somatic work and needs-based communication. She leads an online compassion and awareness group twice a month, teaches silent retreats such as a week of lovingkindness practice at IMS, co-leads residential compassion training with John Makransky in Vermont, and gives daylongs and evening talks for Insight communities in Burlington, Cambridge and New York. She has also taught on the 10% Happier app and contributed a chapter to the anthology Blue Jean Buddha.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "worldwide",
+      "city": null,
+      "country": null,
+      "subjects": [
+        "meditation",
+        "mindfulness",
+        "conscious-relationships"
+      ],
+      "website_url": "https://jessicamorey.org/",
+      "booking_url": "https://jessicamorey.org/events-directory/",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": null,
+      "image_urls": [
+        "https://jessicamorey.org/wp-content/uploads/2019/03/DSC02145-e1748777594243.jpg"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "insight-meditation-society",
+      "role": "instructor"
+    }
+  ],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Compassion + Awareness Sangha",
+      "url": "https://jessicamorey.org/events-directory/",
+      "description": "An online group meeting on the second and fourth Monday evenings (Eastern time), working with the Sustainable Compassion practices of John Makransky alongside somatic and Insight practice. Each meeting has meditation, teaching and time for questions; drop-ins are welcome.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://jessicamorey.org/wp-content/uploads/2025/09/lions-brianna-r-_-54wJzpH6Q-unsplash-300x200.jpg"
+    },
+    {
+      "title": "Daylong Meditation Retreat (Burlington)",
+      "url": "https://jessicamorey.org/daylong-meditation-retreat-in-person/",
+      "description": "An in-person day of sitting and walking meditation, guided practice and reflection at the Quaker Meeting House in Burlington, Vermont, co-led with Zac Ispa-Landa for the Burlington Dharma Collective.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": "2026-12-12",
+      "end_date": "2026-12-12",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://jessicamorey.org/wp-content/uploads/2019/03/DSC02145-e1748777594243.jpg"
+    },
+    {
+      "title": "Wednesday Evening Dharma with Cambridge Insight",
+      "url": "https://jessicamorey.org/wednesday-evening-dharma-with-cambridge-insight-hybrid/",
+      "description": "An evening of led meditation followed by a Dharma talk and discussion at Cambridge Insight Meditation Center, open in person or online with no registration.",
+      "price": "Donation-based",
+      "product_type": "course",
+      "start_date": "2026-12-16",
+      "end_date": "2026-12-16",
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://jessicamorey.org/wp-content/uploads/2019/03/DSC02145-e1748777594243.jpg"
+    },
+    {
+      "title": "Deep Training in Sustainable Compassion and Wisdom",
+      "url": "https://jessicamorey.org/deep-training-in-sustainable-compassion-and-wisdom/",
+      "description": "A four-night residential retreat in Marlboro, Vermont, also open online, co-taught with John Makransky. It adapts Tibetan Buddhist compassion and awareness practice for practitioners of any background who already have some meditation experience.",
+      "price": "$525 USD (double room); $725 USD (single room)",
+      "product_type": "retreat",
+      "start_date": "2027-03-17",
+      "end_date": "2027-03-21",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "image": "https://jessicamorey.org/wp-content/uploads/2019/03/DSC02145-e1748777594243.jpg"
+    },
+    {
+      "title": "Lovingkindness Retreat",
+      "url": "https://jessicamorey.org/lovingkindness-retreat-2027/",
+      "description": "A week-long silent retreat in metta practice at the Insight Meditation Society in Barre, Massachusetts, with Oren Jay Sofer and Yong Oh as fellow teachers and a livestream option. Classical instructions in lovingkindness are given alongside sitting and walking practice.",
+      "price": "Contact for pricing",
+      "product_type": "retreat",
+      "start_date": "2027-05-28",
+      "end_date": "2027-06-04",
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://jessicamorey.org/wp-content/uploads/2019/03/DSC02145-e1748777594243.jpg"
+    },
+    {
+      "title": "Daylong Retreat with New York Insight",
+      "url": "https://jessicamorey.org/daylong-retreat-with-new-york-insight-hybrid/",
+      "description": "A hybrid daylong retreat hosted by New York Insight Meditation Center in Manhattan, open in person or online.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": "2027-11-06",
+      "end_date": "2027-11-06",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://jessicamorey.org/wp-content/uploads/2019/03/DSC02145-e1748777594243.jpg"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "pipelines-3",
+    "hub": "ims",
+    "rank": 85,
+    "hub_url": "https://www.dharma.org/teacher/jessica-morey/",
+    "tier_evidence": "No YouTube channel found; Insight Timer profile linked but not opened (off limits); no readable social counts (6 Nov 2026) → 0 readable → local_hero",
+    "email": "contact form",
+    "email_source": null,
+    "contact_form_url": "https://jessicamorey.org/contact/",
+    "bio_check": "OK: no 8-word runs against 11 source(s)",
+    "flags": [
+      "IMS named on: https://jessicamorey.org/lovingkindness-retreat-2027/ (retreat at the Insight Meditation Society, Barre, 28 May to 4 June 2027) and on her home page (teen retreats and teacher training at IMS).",
+      "Own site found via the Mind & Life podcast page (podcast.mindandlife.org/jessica-morey/), which links jessicamorey.org; dharma.org links only iBme and Insight Timer.",
+      "ibme.info (iBme, the organisation she founded) has a ClaudeBot / anthropic-ai / Claude-Web group with Disallow: / in robots.txt, so nothing was taken from it and it is not linked.",
+      "No published email; contact form only.",
+      "No public base (see no_public_base); availability set to worldwide.",
+      "Possible link to another sprint teacher: Oren Jay Sofer (rank 81) co-teaches the 2027 IMS Lovingkindness Retreat.",
+      "Photo: one portrait from her own site (2494 x 3805); the dharma.org photo is a crop of the same picture, so only one is used.",
+      "Compassion + Awareness Sangha has no page of its own; the events directory page is used as its URL.",
+      "Daylong in Burlington: her page gives 'Saturday December 12th' without a year; 12 December 2026 is a Saturday, so 2026 is assumed.",
+      "The Lovingkindness Retreat page links events.dharma.org for registration; not opened (blocked by robots.txt)."
+    ],
+    "left_out": [
+      "1:1 Contemplative Attachment Coaching ($250–$350 USD per session, waitlist): built on attachment repair and psychological protocols; left out as closer to therapy than spiritual teaching (borderline).",
+      "Compassionate Awareness half-day retreat (Santa Barbara, 12 April 2026): past.",
+      "Videos: no YouTube channel found; a Vimeo talk is linked but Vimeo is not a video source here.",
+      "Books: none authored (a chapter in Blue Jean Buddha and magazine articles only).",
+      "Insight Timer guided meditations: Insight Timer is not opened."
+    ]
+  },
+  "images_final": true
+}

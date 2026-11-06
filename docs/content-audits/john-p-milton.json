@@ -1,0 +1,177 @@
+{
+  "healer": {
+    "healer_slug": "john-p-milton",
+    "location_source": "https://www.wayofnature.com/site/connect",
+    "create": {
+      "name": "John P. Milton",
+      "bio": "John P. Milton is an ecologist turned meditation teacher who has spent most of his life leading people into wild places to practise alone. He trained in ecology at the University of Michigan in the early 1960s, then worked on the environmental effects of international development, helped start Friends of the Earth and wrote several early books on the subject. Alongside that career he studied with teachers from many traditions, among them a Lacandon Maya elder in Chiapas, the Tibetan masters Dilgo Khyentse Rinpoche and Lopon Tenzin Namdak, and the T'ai Chi teacher Ben Lo.\n\nOut of this he shaped Way of Nature, a path built on twelve guiding principles that he calls natural liberation. Its core programme is Sacred Passage: about twelve days that combine awareness training, qigong-style energy practice and a week of solo time in the wilderness. Shorter Nature Quests and long solo retreats of 28 or 44 days build on it. His book Sky Above, Earth Below sets out the practices for readers. Way of Nature is run from Crestone, Colorado, and he guides retreats with senior guides in the American Southwest, Baja California and elsewhere.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "worldwide",
+      "city": "Crestone, Colorado",
+      "country": "United States",
+      "subjects": [
+        "meditation",
+        "shamanism",
+        "qi-gong"
+      ],
+      "website_url": "https://www.wayofnature.com/",
+      "booking_url": "https://www.wayofnature.com/upcomingevents",
+      "youtube_url": "https://www.youtube.com/@WayofNature",
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "info.wayofnature@gmail.com",
+      "image_urls": [
+        "https://yt3.googleusercontent.com/ytc/AIdro_nqkxVREpMpJRoOBpWKdi-yRxG3W66i72U262-P1JsqgA=s900-c-k-c0x00ffffff-no-rj"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [
+    {
+      "title": "🌿Way of Nature Programs with John P. Milton",
+      "url": "https://www.youtube.com/watch?v=MZOuTbRve6U",
+      "subjects": [
+        "meditation",
+        "shamanism"
+      ],
+      "channel": "Way of Nature"
+    },
+    {
+      "title": "Way of Nature Tool Kit with John P. Milton",
+      "url": "https://www.youtube.com/watch?v=n79uQ76cToI",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "channel": "Way of Nature"
+    },
+    {
+      "title": "Connecting with the Elements of Nature with John P. Milton",
+      "url": "https://www.youtube.com/watch?v=I8STF8feOCU",
+      "subjects": [
+        "shamanism",
+        "spirituality"
+      ],
+      "channel": "Way of Nature"
+    },
+    {
+      "title": "Life is Collaborative with John P. Milton",
+      "url": "https://www.youtube.com/watch?v=CfAVW5PBSuY",
+      "subjects": [
+        "spirituality"
+      ],
+      "channel": "Way of Nature"
+    }
+  ],
+  "books": [
+    {
+      "title": "Sky Above, Earth Below: Spiritual Practice in Nature",
+      "slug": "sky-above-earth-below",
+      "author": "John P. Milton",
+      "asin": "B00OBZ1Q3K",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "His handbook for practising in the natural world, setting out the twelve principles behind Way of Nature and then working through relaxation, presence and energy cultivation step by step.",
+      "subjects": [
+        "meditation",
+        "qi-gong",
+        "spirituality"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/B00OBZ1Q3K.01._SCLZZZZZZZ_.jpg"
+    }
+  ],
+  "courses": [
+    {
+      "title": "Sacred Passage: Chiricahua Mountains, Arizona",
+      "url": "https://www.wayofnature.com/sacred-passage-arizona-nov-2026",
+      "description": "A twelve-day retreat in the Chiricahua canyons led by John P. Milton with guide Brad Kahland. Group awareness training prepares participants for seven days of solo time in nature and helps them settle back afterwards.",
+      "price": "$2750 USD",
+      "product_type": "retreat",
+      "start_date": "2026-11-17",
+      "end_date": "2026-11-29",
+      "subjects": [
+        "meditation",
+        "shamanism"
+      ],
+      "image": "https://yt3.googleusercontent.com/ytc/AIdro_nqkxVREpMpJRoOBpWKdi-yRxG3W66i72U262-P1JsqgA=s900-c-k-c0x00ffffff-no-rj"
+    },
+    {
+      "title": "Sacred Passage: Baja California, Mexico",
+      "url": "https://www.wayofnature.com/sacred-passage-baja-january-2027",
+      "description": "The same foundational retreat held on the Pacific coast of the Baja peninsula, led by Milton alongside his senior guide. It pairs awareness and energy practice with a week alone in the landscape.",
+      "price": "$3330 USD",
+      "product_type": "retreat",
+      "start_date": "2027-01-21",
+      "end_date": "2027-02-02",
+      "subjects": [
+        "meditation",
+        "shamanism"
+      ],
+      "image": "https://yt3.googleusercontent.com/ytc/AIdro_nqkxVREpMpJRoOBpWKdi-yRxG3W66i72U262-P1JsqgA=s900-c-k-c0x00ffffff-no-rj"
+    },
+    {
+      "title": "Nature Quest",
+      "url": "https://wayofnature.com/nature-quest",
+      "description": "A shorter version of the Sacred Passage format, lasting from a weekend up to nine days, often arranged for a particular group or region. It suits people who want solo time in nature without the full twelve days.",
+      "price": "Contact for pricing",
+      "product_type": "retreat",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "shamanism"
+      ],
+      "image": "https://yt3.googleusercontent.com/ytc/AIdro_nqkxVREpMpJRoOBpWKdi-yRxG3W66i72U262-P1JsqgA=s900-c-k-c0x00ffffff-no-rj"
+    },
+    {
+      "title": "28 & 44 Day AllOne Time Solo Wilderness Retreats",
+      "url": "https://wayofnature.com/advanced-programs",
+      "description": "Long solo retreats for people who have already done a Sacred Passage, taught by John P. Milton. They add Taoist energy practice, qigong and t'ai chi, and further shamanic and tantric methods to extended time alone.",
+      "price": "Contact for pricing",
+      "product_type": "retreat",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "qi-gong",
+        "shamanism",
+        "meditation"
+      ],
+      "image": "https://yt3.googleusercontent.com/ytc/AIdro_nqkxVREpMpJRoOBpWKdi-yRxG3W66i72U262-P1JsqgA=s900-c-k-c0x00ffffff-no-rj"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "pipelines-3",
+    "hub": "sounds-true",
+    "rank": 254,
+    "hub_url": "https://www.soundstrue.com/collections/authors-john-p-milton",
+    "held": "No usable photo: every photo of him on his own site (wayofnature.com, a Kajabi site) is served from kajabi-storefronts-production.kajabi-cdn.com, whose robots.txt answers 403 (6 Nov 2026), so the ingest will refuse them; the Way of Nature YouTube avatar is a collage of participants, and the retreat.guru booking subdomain's robots.txt returned a WordPress error page. Owner to decide (e.g. ask Way of Nature for a photo).",
+    "tier_evidence": "YouTube 621 (@WayofNature header, organisation channel he fronts, 6 Nov 2026); Instagram @johnpmilton and X @johnpmilton108 not readable without login → under 1K readable → local_hero",
+    "email": "yes",
+    "email_source": "https://www.wayofnature.com/site/connect",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 11 source(s)",
+    "flags": [
+      "Held: no usable photo (kajabi-cdn refuses our robots.txt request; YouTube avatar is a group collage).",
+      "Email info.wayofnature@gmail.com is Way of Nature's general inbox (Cloudflare-protected on the connect page, decoded).",
+      "Base is Way of Nature's published address in Crestone, Colorado (a P.O. box); recorded at city level as the organisation's base.",
+      "Regional: Crestone, Colorado, likely has few Spiritpedia teachers (small town, may be under 5,000 people).",
+      "YouTube channel is Way of Nature's, not a personal one; he is the main speaker in the videos kept.",
+      "Sky Above, Earth Below: Kindle ASIN B00OBZ1Q3K and ebook ISBN 9781591811428 from the Open Road Media publisher page, not confirmed elsewhere.",
+      "Tier: editorial stature (co-founder of Friends of the Earth, early environmental author) might argue for more; owner to decide.",
+      "He was born in the late 1930s by his own site's account (first vision quest in the mid-1940s at seven); his site says he continues to lead programmes."
+    ],
+    "left_out": [
+      "Seven teaching videos (the twelve-principles talks, Opening the Heart, Nature is the Greatest Teacher, Ecological Spirituality, Value of Solo Time, Mindhouse interview): oEmbed returned 401 (embedding disabled).",
+      "Participant testimonial videos and clips under two minutes; 'AI Revolution' and 'Business and The Environment' videos (not spiritual teaching).",
+      "Ecology books (Future Environments of North America, The Careless Technology, Ecological Principles for Economic Development): academic environmental works, not spiritual teaching.",
+      "Cultivating Natural Liberation card box set: no ISBN found on a page we may read.",
+      "Natural Renewal day and weekend programmes: no current dates or own booking page found.",
+      "Way of Nature podcast (Spotify): no fitting resource type; not added."
+    ]
+  }
+}

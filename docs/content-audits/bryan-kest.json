@@ -1,0 +1,139 @@
+{
+  "healer": {
+    "healer_slug": "bryan-kest",
+    "location_source": "https://poweryoga.com/about/",
+    "create": {
+      "name": "Bryan Kest",
+      "bio": "Bryan Kest began practising yoga in 1979 as a teenager on Maui, in one of the earliest Ashtanga classes held outside India, and went on to study with K. Pattabhi Jois in India. He has taught since the mid-1980s and is widely credited with shaping the style that became known as Power Yoga. In Santa Monica he opened what his site describes as the first donation-based yoga studio in the Western world, and he later moved much of his teaching online through PowerYoga.com, a streaming library of well over a thousand classes led by him and teachers he has chosen.\n\nHis approach treats yoga as a personal search for balance rather than a fitness routine: he pairs strong, flowing sessions with slow, gentle and restorative ones, folds meditation into ordinary practice, and encourages each student to find the right measure for their own body and stage of life. Alongside the online classes he runs self-paced programmes, an eight-week online teacher training and one-to-one mentoring calls, and he still tours studios across the United States giving in-person master classes and weekend workshops. Short talks and question-and-answer recordings on his site set out the thinking behind his teaching.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local_online",
+      "city": "Santa Monica, California",
+      "country": "United States",
+      "subjects": [
+        "yoga",
+        "meditation"
+      ],
+      "website_url": "https://poweryoga.com/",
+      "booking_url": "https://poweryoga.com/programs/",
+      "youtube_url": "https://www.youtube.com/channel/UCNjIZ4VXCOUD9DvmbfRNLrA",
+      "instagram_url": "https://www.instagram.com/bryankestpoweryoga/",
+      "facebook_url": "https://www.facebook.com/bryankestpoweryoga/",
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "kestbryan@yahoo.com",
+      "image_urls": [
+        "https://poweryoga.com/wp-content/uploads/2024/07/Bryan-Kest-teaching-meditation.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [
+    {
+      "title": "Hot Mess Class",
+      "url": "https://www.youtube.com/watch?v=XFXvR8MNw2U",
+      "subjects": [
+        "yoga"
+      ],
+      "channel": "Power Yoga"
+    },
+    {
+      "title": "Next Level",
+      "url": "https://www.youtube.com/watch?v=lYbOZQgnHmA",
+      "subjects": [
+        "yoga"
+      ],
+      "channel": "Power Yoga"
+    },
+    {
+      "title": "The Essentials Class",
+      "url": "https://www.youtube.com/watch?v=ZpXSyR6yZGo",
+      "subjects": [
+        "yoga"
+      ],
+      "channel": "Power Yoga"
+    },
+    {
+      "title": "Chair Yoga Sequence Class",
+      "url": "https://www.youtube.com/watch?v=p4YKV7C_-PM",
+      "subjects": [
+        "yoga"
+      ],
+      "channel": "Power Yoga"
+    }
+  ],
+  "books": [],
+  "courses": [
+    {
+      "title": "30 Days to a New You",
+      "url": "https://poweryoga.com/30-days-to-a-new-you/",
+      "description": "A self-paced month of Power Yoga with Bryan: twenty-six classes, a rest day each week and four guided meditations. Designed as a way back into regular practice at any level.",
+      "price": "$89 (included with membership)",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga",
+        "meditation"
+      ],
+      "image": "https://poweryoga.com/wp-content/uploads/2024/07/30day.jpg"
+    },
+    {
+      "title": "Holiday Sanity Challenge",
+      "url": "https://poweryoga.com/holiday-sanity-challenge/",
+      "description": "A six-week practice challenge that runs each year from Thanksgiving to New Year, to keep a steady routine of movement and breathing through the festive season. Open to Premium members.",
+      "price": "Free for Premium members",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga",
+        "mindfulness"
+      ],
+      "image": "https://poweryoga.com/wp-content/uploads/2024/07/Bryan_meditation-LS-scaled-186-2.jpg"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Q&As and Lectures",
+      "url": "https://poweryoga.com/lectures/",
+      "description": "A collection of short recorded answers and talks in which Bryan explains the ideas behind his practice, from what Power Yoga is to how to approach the mat.",
+      "featured": true,
+      "resource_type": "workshop",
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://poweryoga.com/media/bryan-banner.jpg"
+    }
+  ],
+  "sprint": {
+    "sprint": "pipelines-3",
+    "hub": "kripalu",
+    "rank": 115,
+    "hub_url": "https://kripalu.org/people/bryan-kest",
+    "tier_evidence": "YouTube 8.63K (@OfficialPowerYoga, his own Power Yoga brand channel, header, 6 Nov 2026); Instagram and Facebook not readable without login → ~9K readable → local_hero",
+    "email": "yes",
+    "email_source": "https://poweryoga.com/instructors/bryan-kest/",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 11 source(s)",
+    "flags": [
+      "No Kripalu mention on own site: listed without the link.",
+      "Base: Santa Monica, from the about page naming his donation studio 'Santa Monica Power Yoga'; the site doesn't say outright where he lives now (his tour events include Venice, California). Please check.",
+      "Tier: main Instagram/Facebook counts couldn't be read; the YouTube channel is the PowerYoga.com brand, counted because it is his own platform.",
+      "The site's support form (poweryoga.zendesk.com/hc/en-us/requests/new) served a Cloudflare 'Just a moment' 403; not retried, so no contact form recorded.",
+      "Only one photo kept: his site's other images were too small (280 px) or group shots; the YouTube avatar is the brand logo.",
+      "His one-to-one sessions are sold as 'Talk Therapy' (mentorship and coaching from a yogic view, but naming pain and injury); left out under the therapy and health rules.",
+      "The YouTube channel carries several promotional clips for a 'Weight Loss & Wellness' programme; the channel is mainly class videos and short yoga talks, so he was not skipped, but those items were left out.",
+      "Most online classes are on the PowerYoga.com membership; the membership price page is behind a link I couldn't identify on pages read, so the membership itself isn't listed."
+    ],
+    "left_out": [
+      "Weight Loss & Wellness Program ($195): health claim (weight loss).",
+      "Talk Therapy one-to-one sessions: therapy framing, names pain and injury.",
+      "Online Teacher Training, Fall 2026: began 19 October 2026.",
+      "Tour master classes and workshops at other studios (Venice CA, Boca Raton, Port Orange, Danbury): third-party venue pages not opened; left out.",
+      "Autobiography of an American Yogi (book): no ISBN found on his own or a publisher's page.",
+      "Short promotional clips and Shorts under ~2 minutes."
+    ]
+  },
+  "images_final": true
+}

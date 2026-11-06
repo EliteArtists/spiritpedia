@@ -1,0 +1,68 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 1021,
+    "healer_slug": "thomas-moore"
+  },
+  "rows": [
+    {
+      "table": "videos",
+      "id": 8445,
+      "slug": "thomas-moore-soul-therapy",
+      "title": "Thomas Moore ~ Soul Therapy"
+    },
+    {
+      "table": "books",
+      "id": 2209,
+      "slug": "the-eloquence-of-silence",
+      "title": "The Eloquence of Silence: Discovering the Power of Emptiness"
+    },
+    {
+      "table": "books",
+      "id": 2210,
+      "slug": "ageless-soul",
+      "title": "Ageless Soul: The Lifelong Journey Toward Meaning and Joy"
+    },
+    {
+      "table": "books",
+      "id": 2211,
+      "slug": "gospel-the-book-of-mark",
+      "title": "Gospel: The Book of Mark"
+    },
+    {
+      "table": "books",
+      "id": 2212,
+      "slug": "gospel-the-book-of-matthew",
+      "title": "Gospel: The Book of Matthew"
+    },
+    {
+      "table": "books",
+      "id": 2213,
+      "slug": "the-book-of-job-thomas-moore",
+      "title": "The Book of Job"
+    },
+    {
+      "table": "books",
+      "id": 2214,
+      "slug": "the-soul-of-christmas",
+      "title": "The Soul of Christmas"
+    },
+    {
+      "table": "courses",
+      "id": "b518f561-37b1-4e52-b921-8f9ef1b74084",
+      "slug": "imaginal-psychology-online-course-series",
+      "title": "Imaginal Psychology: online course series"
+    },
+    {
+      "table": "hub_teachers",
+      "id": "4c79c1bb-0d82-4255-9691-6d9314555080",
+      "title": "thomas-moore teaches at Kripalu Center for Yoga & Health"
+    },
+    {
+      "table": "hub_teachers",
+      "id": "7ef46dab-af84-48d1-aa00-a0eb2df88625",
+      "title": "thomas-moore teaches at Omega Institute"
+    }
+  ],
+  "at": "2026-11-06T16:23:35.833Z"
+}

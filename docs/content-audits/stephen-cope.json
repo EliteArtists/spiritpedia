@@ -1,0 +1,207 @@
+{
+  "healer": {
+    "healer_slug": "stephen-cope",
+    "location_source": "https://www.stephencope.com/schedule/",
+    "create": {
+      "name": "Stephen Cope",
+      "bio": "Stephen Cope is a writer and yoga teacher whose work brings together the contemplative traditions of the East and the psychology of the West. For close to thirty years he has been Scholar-in-Residence at Kripalu, the large yoga and retreat centre in Stockbridge, Massachusetts, where he also founded and for a time directed the Kripalu Institute for Extraordinary Living, a research programme studying how yoga and meditation work. He trained as a psychotherapist before he came to live and teach at Kripalu.\n\nHis books try to make classic yoga texts usable for ordinary readers. Yoga and the Quest for the True Self and The Wisdom of Yoga explore the philosophy and psychology of the path; The Great Work of Your Life reads the Bhagavad Gita as a guide to finding one's dharma, or calling,, and The Dharma in Difficult Times carries that theme into periods of loss and change. Soul Friends looks at the friendships that shape a life, and Dharma Dog, a memoir, tells what raising a spaniel puppy in his seventies taught him about love. As a teacher he pairs close study of texts with hatha yoga and mindfulness practice, and he often teaches lovingkindness meditation with Sharon Salzberg. He also offers an eight-week online course on finding one's calling.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local_online",
+      "city": "Stockbridge, Massachusetts",
+      "country": "United States",
+      "subjects": [
+        "yoga",
+        "meditation",
+        "soul-purpose"
+      ],
+      "website_url": "https://www.stephencope.com/",
+      "booking_url": "https://www.stephencope.com/schedule/",
+      "youtube_url": "https://www.youtube.com/@stephen_cope",
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": null,
+      "image_urls": [
+        "https://yt3.googleusercontent.com/K9mdaj9ArGKE3i2uS7FuFTBhz0fNAx8T6a-LwXpQAI5o0dECphtSr2mtop0is_yHpy1ZqyRGEA=s900",
+        "https://www.stephencope.com/wp-content/uploads/2018/03/stephen-library.jpg"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "kripalu",
+      "role": "instructor"
+    }
+  ],
+  "videos": [
+    {
+      "title": "What is your sacred duty?",
+      "url": "https://www.youtube.com/watch?v=WfLdGdSzaDs",
+      "subjects": [
+        "soul-purpose",
+        "yoga"
+      ],
+      "channel": "Stephen Cope"
+    },
+    {
+      "title": "Stephen Cope: Soul Friends",
+      "url": "https://www.youtube.com/watch?v=_ceJJVjWvPE",
+      "subjects": [
+        "conscious-relationships",
+        "spirituality"
+      ],
+      "channel": "Kripalu"
+    },
+    {
+      "title": "Stephen Cope ~ The Dharma in Difficult Times",
+      "url": "https://www.youtube.com/watch?v=5BM4np_gZkQ",
+      "subjects": [
+        "soul-purpose",
+        "yoga"
+      ],
+      "channel": "Banyen Books & Sound"
+    }
+  ],
+  "books": [
+    {
+      "title": "The Great Work of Your Life: A Guide for the Journey to Your True Calling",
+      "slug": "the-great-work-of-your-life",
+      "author": "Stephen Cope",
+      "asin": "0553386077",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "Uses the Bhagavad Gita, the dialogue between the archer Arjuna and his teacher Krishna, as a step-by-step map for discovering one's dharma, or deep purpose.",
+      "subjects": [
+        "soul-purpose",
+        "yoga",
+        "ancient-wisdom"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/0553386077.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "Yoga and the Quest for the True Self",
+      "slug": "yoga-and-the-quest-for-the-true-self",
+      "author": "Stephen Cope",
+      "asin": "055337835X",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "His first book, a lively account of yoga as a path of liberation rather than exercise, drawing on his years living at Kripalu and his background in psychotherapy.",
+      "subjects": [
+        "yoga",
+        "spiritual-awakening"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/055337835X.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "The Wisdom of Yoga: A Seeker's Guide to Extraordinary Living",
+      "slug": "the-wisdom-of-yoga",
+      "author": "Stephen Cope",
+      "asin": "0553380540",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "An introduction to the deeper teachings of the yoga tradition on the causes of suffering, on freedom and on what a fully lived life might look like.",
+      "subjects": [
+        "yoga",
+        "ancient-wisdom",
+        "consciousness"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/0553380540.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "The Dharma in Difficult Times: Finding Your Calling in Times of Loss, Change, Struggle, and Doubt",
+      "slug": "the-dharma-in-difficult-times",
+      "author": "Stephen Cope",
+      "asin": "1401957269",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "Picking up where The Great Work of Your Life left off, it argues that times of crisis can clarify a person's purpose instead of knocking them off course.",
+      "subjects": [
+        "soul-purpose",
+        "yoga"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1401957269.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "Soul Friends: The Transforming Power of Deep Human Connection",
+      "slug": "soul-friends-stephen-cope",
+      "author": "Stephen Cope",
+      "asin": "1401946526",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "Explores the handful of close friendships that shape who we become, and what makes such connections so formative.",
+      "subjects": [
+        "conscious-relationships",
+        "spirituality"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1401946526.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "Dharma Dog: When Your Spiritual Teacher Has Four Legs",
+      "slug": "dharma-dog",
+      "author": "Stephen Cope",
+      "asin": "B0HNTYWDLM",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "A memoir of helping to raise a spaniel puppy in his seventies, and of the lessons in love and ageing it brought him.",
+      "subjects": [
+        "spirituality"
+      ],
+      "cover": "https://www.stephencope.com/wp-content/uploads/2026/11/Dharma-Dog-cover-display.webp"
+    }
+  ],
+  "courses": [
+    {
+      "title": "Your True Calling: Essential Teachings of Yoga to Find Your Path in the World",
+      "url": "https://www.stephencope.com/schedule/online-offerings/your-true-calling-essential-teachings-of-yoga-to-find-your-path-in-the-world/",
+      "description": "An eight-week online course built on the Bhagavad Gita, with video sessions filmed at Kripalu, recorded question-and-answer sessions, guided meditation and journaling prompts for finding one's calling.",
+      "price": "$97 single payment (limited time), or 3 payments of $35",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "soul-purpose",
+        "yoga"
+      ],
+      "image": "https://www.stephencope.com/wp-content/uploads/2018/03/stephen-cope-logo-mobile.png"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "pipelines-3",
+    "hub": "sounds-true",
+    "rank": 190,
+    "hub_url": "https://www.soundstrue.com/collections/authors-stephen-cope",
+    "tier_evidence": "YouTube @stephen_cope 114 subscribers (channel header, 6 Nov 2026); Instagram @stephen_cope_author and Facebook linked from his site but counts not readable without login (not tried) → ~0.1k readable → local_hero",
+    "email": "contact form",
+    "email_source": null,
+    "contact_form_url": "https://www.stephencope.com/contact/",
+    "bio_check": "OK: no 8-word runs against 16 source(s)",
+    "flags": [
+      "Sounds True list used as names only; soundstrue.com not opened. Website stephencope.com found by web search.",
+      "Kripalu named on: https://www.stephencope.com/meet-stephen/ (Scholar-in-Residence) and https://www.stephencope.com/schedule/; added teaches_at kripalu (not the lead's hub).",
+      "His home page names the Insight Meditation Society only as Sharon Salzberg's centre; no IMS link added.",
+      "No published email; contact form used. The form page says he is pausing replies while finishing a book.",
+      "Base: his site's contact block gives his address as Scholar in Residence, Kripalu Center, Stockbridge, MA; used as his base (a workplace address). Regional: Stockbridge, Massachusetts.",
+      "Possible duplicate: John J. Prendergast's plan mentions a Stephen Cope blurb only; no listing for him found.",
+      "Tier: bestselling author and long-serving Kripalu scholar, but readable followers are small; left at local_hero, owner may consider editorial stature.",
+      "Book ISBNs/ASINs from his own shop pages (ISBN-10 shown or Amazon link on stephencope.com), not confirmed elsewhere. The Dharma in Difficult Times and Soul Friends are Hay House titles (hayhouse.com not fetched); Dharma Dog uses the ASIN from his own Amazon link (its ISBN-13 starts 979, no ISBN-10).",
+      "Bio mentions his psychotherapy training as background only; his current work is yoga teaching and writing.",
+      "Dharma Dog cover is the 3D book image from his own home page (stephencope.com), since the ingest found no cover for its ASIN."
+    ],
+    "left_out": [
+      "Deep Human Connection (2nd edition of Soul Friends) and Will Yoga & Meditation Really Change My Life? (edited anthology): duplicate edition / anthology.",
+      "Pacific Coast Center for Spiritual Living book talk (video yA4ogM9uSxo): oEmbed failed.",
+      "Podcast interviews where others host (Metta Hour, Inspired Living, David Nichtern): audio pages, not YouTube teaching videos.",
+      "No dated Kripalu programmes listed as upcoming on his schedule page."
+    ]
+  },
+  "images_final": true
+}
