@@ -15,6 +15,66 @@ export const timed = () => AbortSignal.timeout(TIMEOUT_MS);
 // isrefer.com carries The Shift Network's affiliate links, which redirect there.
 const OFF_LIMITS = /(^|\.)(theshiftnetwork\.com|isrefer\.com|mindvalley\.com|humanitysteam\.org|evolvingwisdom\.com|spiritrock\.org|openlibrary\.org|linktr\.ee|instagram\.com|facebook\.com|substack\.com|amazon\.com|amzn\.to|eomega\.org|soundstrue\.com|hayhouse\.com|events\.dharma\.org|redwheelweiser\.com|x\.com|twitter\.com|linkedin\.com|tiktok\.com)$/i;
 export const offLimits = (url) => { try { return OFF_LIMITS.test(new URL(url).hostname); } catch { return true; } };
+
+// robots.txt first, on every host (owner's blocked-means-skip rule; 6 Nov
+// 2026, after a fallback image came from a host that had refused our
+// robots.txt request). A host is blocked when its robots.txt is refused
+// (401, 403, 406, 429, 5xx) or unreachable, when a group naming Claude's
+// agents says "Disallow: /" (owner, 5 Nov 2026), or when the group that
+// applies to us (SpiritpediaIngest, else *) disallows the path. No
+// robots.txt (400, 404, 410) means allowed. One read per host per run.
+const CLAUDE_AGENTS = ['claudebot', 'claude-user', 'claude-web', 'anthropic-ai'];
+const robotsCache = new Map();
+function robotsGroups(text) {
+  const groups = []; let g = null; let lastWasAgent = false;
+  for (const raw of text.split(/\r?\n/)) {
+    const line = raw.replace(/#.*/, '').trim();
+    const m = line.match(/^([a-z-]+)\s*:\s*(.*)$/i);
+    if (!m) continue;
+    const [, key, value] = [m[0], m[1].toLowerCase(), m[2].trim()];
+    if (key === 'user-agent') {
+      if (!lastWasAgent) { g = { agents: [], rules: [] }; groups.push(g); }
+      g.agents.push(value.toLowerCase()); lastWasAgent = true;
+    } else {
+      lastWasAgent = false;
+      if (g && (key === 'allow' || key === 'disallow')) g.rules.push({ allow: key === 'allow', path: value });
+    }
+  }
+  return groups;
+}
+function ruleMatches(rule, path) {
+  if (!rule.path) return false; // "Disallow:" with nothing allows all
+  const re = new RegExp(`^${rule.path.replace(/[.+?^${}()|[\]\\]/g, '\\$&').replace(/\*/g, '.*').replace(/\\\$$/, '$')}`);
+  return re.test(path);
+}
+async function robotsFor(origin) {
+  if (robotsCache.has(origin)) return robotsCache.get(origin);
+  let result;
+  try {
+    const r = await fetch(`${origin}/robots.txt`, { headers: { 'User-Agent': UA }, signal: timed() });
+    // 400 is how Google's image hosts (yt3.googleusercontent.com) say they have no robots.txt.
+    if ([400, 404, 410].includes(r.status)) result = { groups: [] };
+    else if (!r.ok) result = { refused: `robots.txt answered HTTP ${r.status}` };
+    else result = { groups: robotsGroups(await r.text()) };
+  } catch (e) {
+    result = { refused: `robots.txt unreachable (${e.cause?.code || e.name})` };
+  }
+  robotsCache.set(origin, result);
+  return result;
+}
+// → null when we may fetch the URL, else the reason we may not.
+export async function robotsBlock(url) {
+  let u; try { u = new URL(url); } catch { return 'bad URL'; }
+  const rb = await robotsFor(u.origin);
+  if (rb.refused) return rb.refused;
+  const named = rb.groups.filter((g) => g.agents.some((a) => CLAUDE_AGENTS.includes(a)));
+  if (named.some((g) => g.rules.some((r) => !r.allow && r.path === '/'))) return "robots.txt blocks Claude's agents";
+  const ours = rb.groups.filter((g) => g.agents.includes('spiritpediaingest'));
+  const rules = (ours.length ? ours : rb.groups.filter((g) => g.agents.includes('*'))).flatMap((g) => g.rules);
+  const path = u.pathname + u.search;
+  const hits = rules.filter((r) => ruleMatches(r, path)).sort((a, b) => b.path.length - a.path.length || (a.allow ? -1 : 1));
+  return hits.length && !hits[0].allow ? 'robots.txt disallows it' : null;
+}
 export const decode = (s) => s.replace(/&amp;/g, '&').replace(/&#0?39;/g, "'").replace(/&quot;/g, '"');
 
 // Width and height from the first bytes of a JPEG, PNG, GIF or WebP.
@@ -47,6 +107,8 @@ export async function probeImage(url, { minPx = MIN_IMAGE_PX } = {}) {
   if (!url) return { ok: false, why: 'none' };
   if (/encrypted-tbn\d*\.gstatic\.com/.test(url)) return { ok: false, why: 'Google thumbnail' };
   if (offLimits(url)) return { ok: false, why: 'off-limits host, not fetched' };
+  const blocked = await robotsBlock(url);
+  if (blocked) return { ok: false, why: `${blocked}, not fetched` };
   try {
     const r = await fetch(url, { headers: { 'User-Agent': UA, Accept: 'image/*,*/*' }, signal: timed() });
     if (!r.ok) return { ok: false, why: `HTTP ${r.status}` };
@@ -64,14 +126,14 @@ export async function probeImage(url, { minPx = MIN_IMAGE_PX } = {}) {
 
 // A page's share image, else its first large image. → url or null.
 export async function pageImage(pageUrl, { shareOnly = false } = {}) {
-  if (offLimits(pageUrl)) return null;
+  if (offLimits(pageUrl) || await robotsBlock(pageUrl)) return null;
   let r;
   try {
     r = await fetch(pageUrl, { headers: { 'User-Agent': UA, Accept: 'text/html' }, redirect: 'manual', signal: timed() });
-    // Follow redirects ourselves, so an off-limits host is never requested.
+    // Follow redirects ourselves, so an off-limits or robots-blocked host is never requested.
     for (let hops = 0; r.status >= 300 && r.status < 400 && r.headers.get('location') && hops < 5; hops += 1) {
       const next = new URL(r.headers.get('location'), pageUrl).href;
-      if (offLimits(next)) return null;
+      if (offLimits(next) || await robotsBlock(next)) return null;
       pageUrl = next;
       r = await fetch(next, { headers: { 'User-Agent': UA, Accept: 'text/html' }, redirect: 'manual', signal: timed() });
     }
@@ -112,7 +174,7 @@ export async function amazonCover(asin) {
 // first, Wix and similar image services asked for a larger copy; the share
 // image only when there is no usable icon. → url or null.
 export async function publisherLogo(siteUrl) {
-  if (offLimits(siteUrl)) return null;
+  if (offLimits(siteUrl) || await robotsBlock(siteUrl)) return null;
   let html; let base;
   try {
     const r = await fetch(siteUrl, { headers: { 'User-Agent': UA, Accept: 'text/html' }, signal: timed() });
