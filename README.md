@@ -2959,6 +2959,27 @@ change, 4 Nov 2026; replaces "current faculty only" for these two lists):
   rule, a published base, photos, and original bios (§18.4). First run:
   `docs/content-audits/pipelines-sprint-1/` (4 Nov 2026).
 
+**More saved lists** (owner, 6 Nov 2026). The lists saved on 6 Nov 2026 in
+`docs/content-audits/lead-sources-2026-11-06/` count the same way, under
+the same rules:
+- **Past faculty count.** Kripalu, Esalen, IMS (Insight Meditation
+  Society) and Hollyhock: being on the saved list is enough, with no
+  current-faculty check.
+- **Omega:** only the 948 newer names (`/people/` URLs) in the saved list.
+  **Never fetch eomega.org** (it has refused us with 403 since 6 Nov 2026).
+- **Hub link** ("Teaches at Kripalu", Esalen, IMS, Hollyhock or Omega) only
+  where the teacher's own site names that hub. Otherwise they're listed
+  without it.
+- **Research each from their own website.** Kripalu, Esalen, IMS
+  (dharma.org) and Hollyhock person pages may be read where robots.txt
+  allows them, to confirm who someone is.
+- **Sounds True:** its author list is used as names only. Nothing is
+  copied, no Sounds True page is linked, and soundstrue.com isn't fetched
+  for research.
+- **Hay House:** left out (robots.txt answered 503 on 6 Nov 2026).
+
+First run: `docs/content-audits/pipelines-sprint-3/` (6 Nov 2026).
+
 **Do not revive** (owner, 5 Nov 2026). These were dropped by the owner and
 are never researched, planned or added again, from any list or hub. Their
 old plans stay in `dropped/` folders as a record only. Every brief says so;

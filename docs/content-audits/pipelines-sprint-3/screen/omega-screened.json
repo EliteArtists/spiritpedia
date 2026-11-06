@@ -1,0 +1,1407 @@
+{
+ "keep": [
+  "Rick Hanson",
+  "Chris Germer",
+  "Sharon Gannon",
+  "Henry Shukman",
+  "Max Strom",
+  "Kute Blackson",
+  "Sara Landon",
+  "Judith Blackstone",
+  "Scott Kiloby",
+  "Chunyi Lin",
+  "Eric Pearl",
+  "Sai Maa",
+  "Mat Auryn",
+  "Yasmin Boland",
+  "Sadie Nardini",
+  "Amy Ippoliti",
+  "Koya Webb",
+  "Karena Virginia",
+  "Rob Bell",
+  "Nadia Bolz Weber",
+  "Cheryl Richardson",
+  "Kaira Jewel Lingo",
+  "Christiane Wolf",
+  "Cory Muscara",
+  "Lee Carroll",
+  "Sara Auster",
+  "Barb Schmidt",
+  "Mark Anthony",
+  "Ivo Dominguez Jr",
+  "Storm Faerywolf",
+  "Devin Hunter",
+  "Gahl Sasson",
+  "Aliza Kelly",
+  "Jennifer Racioppi",
+  "Emily Trinkaus",
+  "Arielle Guttman",
+  "Lynn Bell",
+  "Glynis Mccants",
+  "Ethony Dawn",
+  "Jenna Matlin",
+  "T Susan Chang",
+  "Robert M Place",
+  "Nancy Hendrickson",
+  "Michelle Welch",
+  "Jaymi Elford",
+  "Mark Horn",
+  "Austyn Wells",
+  "Cindy Kaza",
+  "Kimberly Meredith",
+  "George Lizos",
+  "Christian De La Huerta",
+  "Josh Schrei",
+  "Daniel Foor",
+  "Rochelle Schieck",
+  "Dimitri Moraitis",
+  "Judy Satori",
+  "Rikka Zimmerman",
+  "Leslie Booker",
+  "Valerie Vimalasara Mason John",
+  "La Sarmiento",
+  "Ronald Alexander",
+  "Radhule Weininger",
+  "Trish Magyari",
+  "Oneika Mays",
+  "Benjamin W Decker",
+  "Brenda Salgado",
+  "Lee Mirabai Harrington",
+  "Ananta Ripa Ajmera",
+  "Karen Frazier",
+  "Arin Murphy Hiscock",
+  "Veronica Varlow",
+  "Enfys J Book",
+  "Bakara Wintner",
+  "Nancy Antenucci",
+  "Jeff Firewalker Schmitt",
+  "Hari Kaur Khalsa",
+  "Cortland Dahl",
+  "Bayo Akomolafe",
+  "Omid Safi",
+  "Lama Justin Von Bujdoss",
+  "Monika Muranyi",
+  "Dan Zigmond",
+  "Satish Kumar",
+  "Tricia Hersey",
+  "Peggy Rowe Ward",
+  "Hari Kirtana Das",
+  "Dzigar Kongtrul Rinpoche",
+  "Nizam Un Nisa Ayeda Husain",
+  "Shams Al Haqq Farzad Attar Jafari",
+  "Mindahi Bastida",
+  "Sister Peace",
+  "Brother Phap Luu",
+  "Sister Nghiem",
+  "Nelida Vilca Huaman",
+  "Rebelino Huaman Cjuiro"
+ ],
+ "unsure": [
+  "Joshua Pollock",
+  "Dante Stewart",
+  "Dianne Thomas",
+  "Susan Hughes",
+  "Simone Gonyea",
+  "Mychal Mills",
+  "Jeremy Trinchere",
+  "Julie Thom",
+  "Richard W Sears",
+  "Ben Curtis",
+  "Adam M Lamb",
+  "Ven Dr Omalpe Sobhita Maha Thero",
+  "Stefanie Mcauliffe",
+  "Kesse Humphreys",
+  "Erica Berry",
+  "Nanci Arvizu",
+  "Rebecca Barrett",
+  "Shaunta Grimes",
+  "T Kent Jones",
+  "Emily Kimelman",
+  "David Milgrim",
+  "Carol Lennox",
+  "Anne Jennings Paris",
+  "Andrew Rodwin",
+  "Stephanie Wilson",
+  "Toni Crowe",
+  "Lisa Cooper Ellison",
+  "Amy Culberg",
+  "Gail Garceau",
+  "Melissa Delaney Del Valle",
+  "Kathryn Dunn",
+  "Brian Melito",
+  "Suzzette Ortiz",
+  "Goussy Celestin",
+  "Julia Bentz",
+  "Melinda Malone",
+  "Lisa Vander Kaay",
+  "Owen Ash",
+  "Elayna Bengall",
+  "Laura Elian",
+  "Sharyn Hahn",
+  "Kathleen Kraft",
+  "Julia Schwartz Leeper",
+  "Mike Keighley",
+  "Tasha Schumann",
+  "Jamie Davis",
+  "Justin Carter",
+  "Rena Anakwe",
+  "Sarah Sherwood",
+  "Hannah Dela Cruz Abrams",
+  "Browndevin",
+  "Arji Oceananda",
+  "Caren Bayer",
+  "Hussein Kassim",
+  "Lara Love Hardin",
+  "Bethany Ryker",
+  "Rahla Xenopoulos",
+  "George Locker",
+  "Colby Rebel",
+  "Travis Holp",
+  "Jaclyn Conklin",
+  "Nico Allen",
+  "Jennifer Averill Moffitt",
+  "Lisa Thomas Prince",
+  "Heidemarie Laurent",
+  "Aaron Schultz",
+  "Erika Lim",
+  "Greg Hedler",
+  "Francis Comesanas",
+  "Susan B Katz",
+  "Cameron Marshall",
+  "Paul Hrkal",
+  "Melinda Krynen Hill",
+  "Linda Thunberg",
+  "Suzi Lula",
+  "Jenny Hwang",
+  "Nadine Majano",
+  "Cynthia Santiago Borbon",
+  "Alison Midollo",
+  "Sharon Shelton",
+  "Beck Sydow",
+  "Barbara Bogatin",
+  "Dipal Shah",
+  "Lakshmi Rengarajan",
+  "Nya Patrinos",
+  "James Mccrae",
+  "Daniela Miranda",
+  "Bunny Michael",
+  "Sarah Anne Wilkinson",
+  "Bob Soulliere",
+  "Bam Lionheart",
+  "Gary Halperin",
+  "Laurnie Wilson",
+  "Michelle Maros",
+  "Jacob L Cooper",
+  "Jim Donovan",
+  "Kathy Cherry",
+  "Paul Perry",
+  "Shawn Leonard",
+  "Zsuzsi Evans",
+  "Matt Cooke",
+  "Danielle Dionne",
+  "Aly Kravetz",
+  "Nandini Austin",
+  "Dene Logan",
+  "Kasumi Kato",
+  "Melissa Minnich",
+  "Cheryl Ann Fulton",
+  "Hanna Tanajura",
+  "Charles Thompson",
+  "Estelle Bingham",
+  "Laurie Doctor",
+  "Nadiya Shah",
+  "Alison Leipzig",
+  "Eduardo Placer",
+  "Caroline Zwickson",
+  "Arvolyn Hill",
+  "Lindsay Gurley",
+  "Jamie Ridler",
+  "Ann L Sinko",
+  "Mindy Veissid",
+  "Krista Williams",
+  "Alexandria Salomon",
+  "Leah Guzman",
+  "Tymothi Tymi Howard",
+  "Sarah Ashley Wheeler",
+  "Toby Sola",
+  "Allison Snowden",
+  "Jemarc Axinto",
+  "Edmund Bagnell",
+  "Miles Taylour Sweeny",
+  "Karen Bell",
+  "Lisa Cypers Kamen",
+  "Alexandra Ahlay Blakely",
+  "Aimee Ringle",
+  "Claire Bidwell Smith",
+  "Mia Luz",
+  "Melanie Ryan",
+  "Liza Bertini",
+  "Betsy Marzahn Ramos",
+  "Annie Lalla",
+  "Ari Levitt",
+  "Rachel Lidskog Lim",
+  "Elise Bernhardt",
+  "Drumloop Daffodil Meadow Scanlan",
+  "Garry Lineham",
+  "George J Felos",
+  "Judith Grodowitz",
+  "Pamela Madsen",
+  "Court Vox",
+  "Elizabeth Clark",
+  "Lisa B Kelley",
+  "Jaguar Mary X",
+  "Rosemerry Wahtola Trommer",
+  "Katie Down",
+  "Libby Vlasic",
+  "Beth Frankl",
+  "Sara Bercholz",
+  "Mona Patel",
+  "Amanda Ludington",
+  "Melissa Romano",
+  "Christina Weber",
+  "Rod Hairston",
+  "Nina Manolson",
+  "Candace Dalton",
+  "Nandini Sikand",
+  "Danielle Cohen",
+  "Lisa Wiggins",
+  "Julie Hannon",
+  "Amy Polacko",
+  "Heather Sheree Sanders",
+  "Roya Darling",
+  "Radhika Vekaria",
+  "Samir Langus",
+  "Chris La Tray",
+  "Julie Greiner Ferris",
+  "Manjit Khalsa",
+  "Lauren Roberts",
+  "Tom Roberts",
+  "Ellen Pavloff",
+  "Erica Woolley",
+  "Roman Wasylyk",
+  "Nicole Perepeluk",
+  "Amanni Sitz",
+  "Danielle Davenport",
+  "Gabrielle Davenport",
+  "Evan Hanczor",
+  "Chi Nguyen",
+  "Martha Belardo",
+  "Jo Ann Levitt",
+  "Taryn Marie Stejskal",
+  "Sophie Strand",
+  "Leslie Mackrell",
+  "Thelonius Garcia",
+  "Rebecca Tadikonda",
+  "Ajay Relan",
+  "Sarah Salem",
+  "Dana Haines",
+  "Chris Bruce",
+  "Jess Perlman",
+  "Dana B Myers",
+  "Erika Siegel",
+  "Ofosu Jones Quartey Born I",
+  "Scott Woolley",
+  "Elena Crescia",
+  "Abena Koomson Davis",
+  "Vanessa Mincolla",
+  "Meredith Scott Lynn",
+  "Moreau Halliburton",
+  "Anilee List",
+  "Sabrina Asch",
+  "Eugene Kwak",
+  "Megan Larmer",
+  "Anne Bloomfield",
+  "Stuart Farr",
+  "Christina Chan",
+  "Bug Nichols",
+  "Rae Gomes",
+  "Kyra Kristof",
+  "Jesse Marksohn",
+  "David Devaughn",
+  "Reginaldo Haslett Marroquin",
+  "Nora Allen",
+  "Lauren Kaplan",
+  "Jerry Hill",
+  "Mays Imad",
+  "Kenny Perkins",
+  "Ben Shute",
+  "Angela Schellenberg",
+  "Jordan Schmidt",
+  "Monti Lawson",
+  "Chris Mauricio",
+  "Rica Bryan",
+  "Patrick Shaw Kitch",
+  "Michelle Keinan",
+  "Danielle Courier",
+  "Jason Callahan",
+  "Valoria Walker",
+  "Amy Chan",
+  "Blaine Wilkes",
+  "Carmen Turner Schott",
+  "Jenny Santa Maria",
+  "Juliana Hauser",
+  "Jill Burynski",
+  "Elizabeth Greenwood",
+  "Raun K Kaufman",
+  "Kate C Wilde",
+  "Christine Lang",
+  "Tom Holmes",
+  "Steven Gross",
+  "Marci Wolff Ober",
+  "Courtney Jessica Ober",
+  "Tori Olds",
+  "Amina Aitai",
+  "Nitika Chopra",
+  "Maryanne Rimbao",
+  "Daniel Santi",
+  "Anna Runkle",
+  "Felicia Flanagan",
+  "Haydn Hasty",
+  "Terry Hasty",
+  "David Zemach Bersin",
+  "Mitch Horowitz",
+  "Suze Shaner Brodax",
+  "Sarah Dewitt",
+  "Sheniqua Trotman",
+  "Grant Faulkner",
+  "Hope Edelman",
+  "Vandorn Hinnant",
+  "Nico Hase",
+  "Mory Fontanez",
+  "Lea Bender",
+  "Christina Thyssen",
+  "Caitlin Langstaff",
+  "Katie Todd",
+  "Marissa Perkins",
+  "Melissa Spamer",
+  "Heather Dolland Tamam",
+  "Rochelle Calvert",
+  "Elise Loehnen",
+  "Satya Doyle Byock",
+  "Steph Hanson",
+  "Annette Franks",
+  "Geoff Fitzpatrick",
+  "Sarah Hirigoyen",
+  "Missy Bateson",
+  "Jennifer Brown",
+  "Tevis Rose Trower",
+  "Heather Doyle Fraser",
+  "Gloria Baraquio",
+  "Rebecca Kase",
+  "Merryman Cassels",
+  "Kerry Burnight",
+  "Veronique Ory",
+  "Corinne Lemal Faza",
+  "Leslie Traub",
+  "Chris Oneal",
+  "Karisha Longaker",
+  "Ericka Tiffany Phillips",
+  "Gabriel Kaigen Wilson",
+  "Alayna Bellquist",
+  "Kari Cardinale",
+  "Derek Gehl",
+  "Ben Katt",
+  "Paul Condon",
+  "Juliane Taylor Shore",
+  "Andy Steigmeier",
+  "Melissa Hewitt",
+  "Rachel Krentzman",
+  "Joanne Case",
+  "Mirabai Trent",
+  "Theresa Scott",
+  "Steve Farrell",
+  "Jeffrey Avinash Barnes",
+  "Kimberly R Mascaro",
+  "Padme",
+  "Anu Gupta",
+  "Charles Harrington",
+  "Alixa Garcia",
+  "Nick Werber",
+  "Kate Winch",
+  "Sophie Frabotta",
+  "Terence Dunn",
+  "Rahshaana Green",
+  "Cindy Yasmine Rahmana Libman",
+  "Nasir Anton Possenig",
+  "Rahma Laila Monica Lang",
+  "Sarah Rot",
+  "Chelsea Horton",
+  "Jaya Lakshmi",
+  "Luke Wallace",
+  "Bruce Ncube",
+  "Sorah Nutting",
+  "Felice Chan",
+  "Maria Pinto",
+  "Nicholas Triolo",
+  "Sarah Berry",
+  "Nathalie Niddam",
+  "Peter Lovatt",
+  "James Ducharm",
+  "Michele Doucette",
+  "Amanda Pisetzner",
+  "Martina Fuchs",
+  "Brandon Lee",
+  "Kingsley M",
+  "Annabelle Manalo Morgan",
+  "Jonathan Rosenthal",
+  "Jim Murphy",
+  "Laura Norman",
+  "Brandy Love",
+  "Sue Barrett",
+  "Elisabeth Nails",
+  "Phillip T Nails",
+  "Ashana",
+  "Emma Jones",
+  "Rachelle Robinett",
+  "Layne Dalfen",
+  "Ana Del Castillo",
+  "Trudy Callaghan",
+  "Lenaya Smith Crawford",
+  "Lisa Austin",
+  "Aditi Shah",
+  "Teja Anand",
+  "Manail Anis Ahmed",
+  "Tamala Floyd",
+  "Jataunia Schweitzer",
+  "Jennifer Farmer",
+  "Jeannine Welton",
+  "Deidre Freer",
+  "Jenna Cain",
+  "Hayley Foster",
+  "Brian Valenza",
+  "Mary Mcquaid",
+  "Fran Conway",
+  "Rachel Jonte",
+  "Stephanie Burg",
+  "Jeff Tkach",
+  "Nora Latorre",
+  "Johanna Hellrigl",
+  "Kamara Thomas",
+  "Aaron Dawson",
+  "Justin Senense",
+  "Marcos Stafne",
+  "Stephen Brooks",
+  "Jen Abra",
+  "Taylor Parker",
+  "Joanne Audyatis",
+  "Todd Audyatis",
+  "Ryan Porter Logiudice",
+  "Sheila Magalhaes",
+  "Cat Rasid",
+  "Robin Rose",
+  "Kate Mcguire",
+  "Marilyn Kirschner",
+  "Remina Panjwani",
+  "Scott Macphie",
+  "Samantha Gerson",
+  "Sonali Fiske",
+  "Charlotte Rotterdam",
+  "Pieter Oosthuizen",
+  "Sara Raymond",
+  "Catherine Barrett",
+  "Norma J Burton",
+  "Nisha Burton",
+  "Elizabeth Winkler",
+  "Sunil Mehrotra",
+  "Richa Gawande",
+  "Michael Gayner",
+  "Christine Hales",
+  "Michele Ridella",
+  "Dana Rini",
+  "Trish Hart",
+  "Karin Hadadan",
+  "Osi Mizrahi",
+  "Rihaku",
+  "Siddharth Ramakrishnan",
+  "Sherry Delia",
+  "Linda Facci",
+  "Shelby Kirillin",
+  "Christian Andrade",
+  "Bryce Ziskin",
+  "Kim Stravers",
+  "Neiasha Russell",
+  "Barbara Tint",
+  "Dave Tarnowski",
+  "Helen Denham",
+  "Kailen Rosenberg",
+  "Cindy Barg",
+  "Natureza Gabriel Kram",
+  "Bettina Shultz Jobe",
+  "Tim Jobe",
+  "Cali Alpert",
+  "Steven Washington",
+  "Kristan Sargeant",
+  "Magali Morales",
+  "Karen Kissel Wegela",
+  "Shelley Lawrence Kirkwood",
+  "Michelle Lepak",
+  "Megan Bathory Peeler",
+  "Joy Lynn Okoye",
+  "Esther Freinkel Tishman",
+  "Dr Lindamichellebaron",
+  "Yogini Jaima",
+  "Linda Yael Schiller",
+  "Haleh Liza Gafori",
+  "Jeremy Wolff",
+  "Dimitri Mugianis",
+  "John Maclean",
+  "Deganit Nuur",
+  "Nancy Winston",
+  "Jessie Asya Kanzer",
+  "Cori Thomas",
+  "Betsy Murphy",
+  "Kim Thai",
+  "Ayman Mukerji",
+  "Lynn Rossy",
+  "Luke Simon",
+  "Elizabeth Trinkaus",
+  "Lisa Pressman",
+  "Susan Stover",
+  "Mary Latham",
+  "Cindy Beers",
+  "Liz Curran",
+  "Karla Mans Giroux",
+  "Lena Franklin",
+  "Micah Walters",
+  "Juan C Lopez Berrios",
+  "Bernard Ablola",
+  "Queen Afua",
+  "Aviva Luz Argote",
+  "Erica Garcia",
+  "Dan Mclintock",
+  "Alan S Questel",
+  "Elizabeth Hembree",
+  "Marine Selenee",
+  "Donald Weiner",
+  "Diane Weiner",
+  "John Wesley Wright",
+  "Danielle Cumming",
+  "Sharon Macleod Sithearan Nicleoid",
+  "Ricky Robertson",
+  "Amber Warner",
+  "Mirjam Paninski",
+  "Pooja Virani",
+  "Patrick Oneill",
+  "Ava Taylor",
+  "Susan Weis Bohlen",
+  "Makasa Looking Horse",
+  "Tiokasin Ghosthorse",
+  "Kelly Kamm",
+  "Tashi Chodron",
+  "Janine Adams",
+  "Michael Andre Ford",
+  "Formica Coriandolo",
+  "Amber Lee Forrester",
+  "Grege Morris",
+  "Lenett Partlow Myrick",
+  "Kasey Hendriks Crown",
+  "Nico Cary",
+  "Andrew Villamil",
+  "Sara King",
+  "Barnaby Willett",
+  "Jennifer Bloom",
+  "Angel Acosta",
+  "Tim Lopez",
+  "Artemio Guerra",
+  "Melle Powers",
+  "Bonnie Levison",
+  "Nichol Chase",
+  "Aaron Warner",
+  "Anna Roberts",
+  "Danny Martin",
+  "Curtiss Sarikey",
+  "Carlos Monteagudo",
+  "Selma Quist Moller",
+  "Jane Hsu",
+  "Monique Chapman",
+  "Paula Lightsey",
+  "Carolyn Cushing",
+  "Janel Norton",
+  "Ozioma Egwuonwu",
+  "Roxy Manning",
+  "June Jumakae Kaewsith",
+  "Drima Starlight",
+  "Marjorie Fein",
+  "Linda Lopes",
+  "Tisha Samuels",
+  "Ana Harvey",
+  "C Finley",
+  "Jan Guarino",
+  "Nadine Kenney Johnstone",
+  "Elyce Neuhauser",
+  "Satira Streeter Corbitt",
+  "Lucas Handwerker",
+  "Leslie Giuliani",
+  "Mojisola Edu",
+  "Francine Reynolds",
+  "Liana Naima",
+  "Ellen Lorenzi Prince",
+  "Lily Marquez",
+  "Elise Brenner",
+  "Amy Irvine",
+  "Joanne Randolph",
+  "Cathy Hettwer",
+  "Mark Levine",
+  "Stephen R Andrew",
+  "Arnae Batson",
+  "Tuti B Scott",
+  "Gwendolyn Vansant",
+  "Jill Stocker",
+  "Clare Gustavsson",
+  "Alison Taylor",
+  "Avalon",
+  "George Walsh",
+  "Omni Kitts Ferrara",
+  "Christopher Franza",
+  "Micheline Anderson",
+  "Suza Scalora",
+  "Anthony Arkin",
+  "Amelia Campbell",
+  "Anne Mcgrath",
+  "David Lehman",
+  "Kele Baker",
+  "Jon Marro",
+  "Jennifer Nadel",
+  "Janice Zito",
+  "Jennifer Adler",
+  "Kumiko Yamada",
+  "Janna Wagner",
+  "Jessica Sager",
+  "Kiah Williams",
+  "Holly Fogle",
+  "S Mona Sinha",
+  "Chris Sholar",
+  "Jennifer Knox",
+  "Mijan Celie Tho Biaz",
+  "Bob Parsons",
+  "Marcus Bridgewater",
+  "Moun Dsimone",
+  "Jiling Lin",
+  "Aileen Gural",
+  "Nixa De Bellis",
+  "Hali Lee",
+  "Elizabeth Barajas Roman",
+  "Kofi Charu Nat Turner",
+  "Dickson Thom",
+  "Kathleen Finlay",
+  "Sue Doan Brewer",
+  "Vivian Williams Kurutz",
+  "Jahnavi Harrison",
+  "Patrisia Gonzales",
+  "Tyson Yunkaporta",
+  "Nicole Heidbreder",
+  "Racquel Joseph",
+  "Lauryn Franzoni",
+  "Caroline Goulding",
+  "Olivia Watkins",
+  "Margo Miller",
+  "Danielle Furst",
+  "Kanchan Koya",
+  "Xander Schultz",
+  "Gigi Cockell",
+  "Emiliya Zhivotovskaya",
+  "Maame Boakye",
+  "Kwame Scruggs",
+  "Travis Sullivan",
+  "Sabrina Hayeem Ladani",
+  "Tim Mchenry",
+  "Sylvester Jones Jr",
+  "Monica Aleman",
+  "Zoraida Lopez Diago",
+  "Aaron Pereira",
+  "Sezelle Gereau",
+  "Nathan Moore",
+  "Devdutt Pattanaik",
+  "Austin Sanderson",
+  "Kate Szekely",
+  "Catherine Miranda",
+  "Lori Zucker",
+  "Ellen Zambo Anderson",
+  "Amy Kandall",
+  "Traci S Jackson",
+  "Theo Edmonds",
+  "Elizabeth Kriynovich",
+  "Renee Metty",
+  "Andrew Jordan Nance",
+  "Dzung X Vo",
+  "Sifu Matthew Cohen",
+  "Phyllicia Victoria",
+  "Pam Allen Leblanc",
+  "Wilka Roig",
+  "Amanda Ree",
+  "Judy Liu Ramsey",
+  "Char Grossman",
+  "Linda Tucker",
+  "Amir Bey",
+  "Cathleen King",
+  "Patrick Surdam",
+  "Mike Mitchell",
+  "Dawn Kenney",
+  "James Jim Jackson",
+  "Andrea Kantrowitz",
+  "Chan Park",
+  "Eugenia Park",
+  "Alan Bonebrake",
+  "Ann Canela",
+  "Karen Brailsford",
+  "Francesca Lynn Arnoldy",
+  "Ruthie Ackerman",
+  "Judy Cornish",
+  "Lara Land",
+  "Sarah Walko",
+  "Phyllis Hicks",
+  "Valerie Weir",
+  "Susan Brearley",
+  "Gary Chapin",
+  "Lisa Hillary Johnson",
+  "Toni Porrello",
+  "Elizabeth Pearson",
+  "Jaime Mahler",
+  "Shirin Eskandani",
+  "Dana Jeri Maier",
+  "Dianne E Horgan",
+  "Eric Lopez Maya",
+  "John Del Cueto",
+  "Sara Tarana Jobin",
+  "Julianna Takacs",
+  "Ben Saltzman",
+  "Samantha Skelly",
+  "Jo Jayson",
+  "Avenelle Archille",
+  "Steven Weiss",
+  "Brittany Mondido",
+  "Josie Weaver",
+  "Glenn J Mendoza",
+  "Dawn M Myers",
+  "Kaline Alayna Kelly",
+  "Santi Kelly Brust",
+  "Caroline Klebl",
+  "Nadia Colburn",
+  "Holly Wren Spaulding",
+  "German Henry",
+  "Karen K Moon",
+  "Debra Krumholz",
+  "Bruce Fertman",
+  "Janet Galipo",
+  "Myriam Baker",
+  "Keith Van Damm",
+  "Amanda Kate Nisenson",
+  "Christopher Jordan",
+  "Tiffany Iris",
+  "Orlando Mendez",
+  "Radhika Das",
+  "Vandana Hart",
+  "Atasiea",
+  "Molly Adams",
+  "Meghadeepa Maity",
+  "Mary E Knysh",
+  "David Rudge",
+  "Mary Rothfusz"
+ ],
+ "out": [
+  {
+   "name": "Tony Stubblebine",
+   "why": "tech CEO"
+  },
+  {
+   "name": "Scott Dikkers",
+   "why": "humor writer"
+  },
+  {
+   "name": "Margaret Renkl",
+   "why": "essayist"
+  },
+  {
+   "name": "Erica Gies",
+   "why": "journalist"
+  },
+  {
+   "name": "Maud Newton",
+   "why": "writer"
+  },
+  {
+   "name": "Keith Block",
+   "why": "oncologist"
+  },
+  {
+   "name": "Bethany Yarrow",
+   "why": "mainly musician"
+  },
+  {
+   "name": "Laraaji",
+   "why": "mainly musician"
+  },
+  {
+   "name": "Susan Choi",
+   "why": "novelist"
+  },
+  {
+   "name": "Susan Cheever",
+   "why": "writer"
+  },
+  {
+   "name": "Howard C Cutler",
+   "why": "psychiatrist and author"
+  },
+  {
+   "name": "Nessi Gomes",
+   "why": "mainly musician"
+  },
+  {
+   "name": "Chip Conley",
+   "why": "hospitality business leader"
+  },
+  {
+   "name": "Don Waisanen",
+   "why": "communications academic"
+  },
+  {
+   "name": "Morra Aarons Mele",
+   "why": "business author"
+  },
+  {
+   "name": "Clifford Saron",
+   "why": "neuroscientist"
+  },
+  {
+   "name": "Ramani Durvasula",
+   "why": "clinical psychologist"
+  },
+  {
+   "name": "Rachel True",
+   "why": "actress"
+  },
+  {
+   "name": "Naima Green",
+   "why": "photographer"
+  },
+  {
+   "name": "Meghan Riordan Jarvis",
+   "why": "grief psychotherapist"
+  },
+  {
+   "name": "Laura Berman",
+   "why": "sex therapist, media figure"
+  },
+  {
+   "name": "Akira Armstrong",
+   "why": "dancer, fitness"
+  },
+  {
+   "name": "Kevin Allison",
+   "why": "comedian"
+  },
+  {
+   "name": "Jeffrey Long",
+   "why": "physician, NDE researcher"
+  },
+  {
+   "name": "Putsata Reang",
+   "why": "journalist and memoirist"
+  },
+  {
+   "name": "Eben Pagan",
+   "why": "business marketer"
+  },
+  {
+   "name": "Aurora Halal",
+   "why": "DJ and producer"
+  },
+  {
+   "name": "Dave Asprey",
+   "why": "biohacking entrepreneur"
+  },
+  {
+   "name": "Vienna Pharaon",
+   "why": "marriage and family therapist"
+  },
+  {
+   "name": "Connor Beaton",
+   "why": "men's relationship coach"
+  },
+  {
+   "name": "Emeran Mayer",
+   "why": "medical doctor, gut researcher"
+  },
+  {
+   "name": "Bari Tessler",
+   "why": "financial therapist"
+  },
+  {
+   "name": "Brad Reedy",
+   "why": "family therapist"
+  },
+  {
+   "name": "Tara Mohr",
+   "why": "leadership coach"
+  },
+  {
+   "name": "Mary Gauthier",
+   "why": "mainly musician"
+  },
+  {
+   "name": "Suzanne Gilberg Lenz",
+   "why": "medical doctor"
+  },
+  {
+   "name": "Ellen Vora",
+   "why": "psychiatrist"
+  },
+  {
+   "name": "Peia Luzzi",
+   "why": "mainly musician"
+  },
+  {
+   "name": "Sabrina Imbler",
+   "why": "science writer"
+  },
+  {
+   "name": "Trudi Lebron",
+   "why": "business coach"
+  },
+  {
+   "name": "Hillary Jordan",
+   "why": "novelist"
+  },
+  {
+   "name": "Alyson Palmer",
+   "why": "musician in band Betty"
+  },
+  {
+   "name": "Elizabeth Ziff",
+   "why": "musician in band Betty"
+  },
+  {
+   "name": "Amy Ziff",
+   "why": "musician in band Betty"
+  },
+  {
+   "name": "Betty",
+   "why": "band name, not a person"
+  },
+  {
+   "name": "Beth Comstock",
+   "why": "business executive"
+  },
+  {
+   "name": "Seth Goldman",
+   "why": "beverage entrepreneur"
+  },
+  {
+   "name": "Miranda Massie",
+   "why": "climate museum director"
+  },
+  {
+   "name": "Ken Meter",
+   "why": "food economist"
+  },
+  {
+   "name": "Will Yandik",
+   "why": "farmer"
+  },
+  {
+   "name": "Chellie Pingree",
+   "why": "politician"
+  },
+  {
+   "name": "Robin Greenfield",
+   "why": "environmental activist"
+  },
+  {
+   "name": "Tammy Nelson",
+   "why": "sex and couples therapist"
+  },
+  {
+   "name": "Bianca Sparacino",
+   "why": "writer"
+  },
+  {
+   "name": "John Cameron Mitchell",
+   "why": "actor and filmmaker"
+  },
+  {
+   "name": "Hitendra Wadhwa",
+   "why": "leadership professor"
+  },
+  {
+   "name": "Johann Urb",
+   "why": "actor"
+  },
+  {
+   "name": "Michaela Watkins",
+   "why": "actress"
+  },
+  {
+   "name": "Jamila Norman",
+   "why": "farmer"
+  },
+  {
+   "name": "Sara Thomsen",
+   "why": "mainly musician"
+  },
+  {
+   "name": "Isle Mcelroy",
+   "why": "novelist"
+  },
+  {
+   "name": "Roger Reeves",
+   "why": "poet"
+  },
+  {
+   "name": "Rhonda Patrick",
+   "why": "nutrition scientist"
+  },
+  {
+   "name": "William Li",
+   "why": "medical doctor"
+  },
+  {
+   "name": "Vera Gorbunova",
+   "why": "biologist"
+  },
+  {
+   "name": "Derya Unutmaz",
+   "why": "immunologist"
+  },
+  {
+   "name": "Shafia Monroe",
+   "why": "midwife"
+  },
+  {
+   "name": "Maejor",
+   "why": "mainly musician"
+  },
+  {
+   "name": "Concetta Tomaino",
+   "why": "music therapist"
+  },
+  {
+   "name": "Dawn Mussallem",
+   "why": "medical doctor"
+  },
+  {
+   "name": "Mentora Institute",
+   "why": "organisation"
+  },
+  {
+   "name": "India Hicks",
+   "why": "celebrity designer"
+  },
+  {
+   "name": "Beth Van Bladel Cpa",
+   "why": "accountant"
+  },
+  {
+   "name": "Miki Agrawal",
+   "why": "entrepreneur"
+  },
+  {
+   "name": "Lara Devgan",
+   "why": "plastic surgeon"
+  },
+  {
+   "name": "Sherwin Parikh",
+   "why": "dermatologist"
+  },
+  {
+   "name": "Monastics Blue Cliff Monastery",
+   "why": "organisation, not a person"
+  },
+  {
+   "name": "Aparna Nancherla",
+   "why": "comedian"
+  },
+  {
+   "name": "Dana Goldberg",
+   "why": "comedian"
+  },
+  {
+   "name": "Asher Perlman",
+   "why": "comedian"
+  },
+  {
+   "name": "Center Mindful Self Compassion",
+   "why": "organisation"
+  },
+  {
+   "name": "Thich Nhat Hanh Center Mindfulness Public Health",
+   "why": "organisation"
+  },
+  {
+   "name": "Global Compassion Coalition",
+   "why": "organisation"
+  },
+  {
+   "name": "Kay Gardner",
+   "why": "deceased musician"
+  },
+  {
+   "name": "Chris Guillebeau",
+   "why": "business and travel author"
+  },
+  {
+   "name": "Board Of Directors",
+   "why": "junk entry"
+  },
+  {
+   "name": "Executive Team",
+   "why": "junk entry"
+  },
+  {
+   "name": "Staff Directory",
+   "why": "junk entry"
+  },
+  {
+   "name": "Caroline Leaf",
+   "why": "neuroscientist author"
+  },
+  {
+   "name": "Lisa Miller",
+   "why": "academic psychologist"
+  },
+  {
+   "name": "Alex Korb",
+   "why": "neuroscientist"
+  },
+  {
+   "name": "Jane Goodall",
+   "why": "deceased; scientist"
+  },
+  {
+   "name": "Elizabeth Bradfield",
+   "why": "poet"
+  },
+  {
+   "name": "Geffrey Davis",
+   "why": "poet"
+  },
+  {
+   "name": "Michael Kleber Diggs",
+   "why": "poet"
+  },
+  {
+   "name": "Katrina Vandenberg",
+   "why": "poet"
+  },
+  {
+   "name": "Julie Holland",
+   "why": "psychiatrist"
+  },
+  {
+   "name": "Ross Ellenhorn",
+   "why": "psychotherapist"
+  },
+  {
+   "name": "Regina Louise",
+   "why": "memoirist"
+  },
+  {
+   "name": "Sheila Nicholls",
+   "why": "mainly musician"
+  },
+  {
+   "name": "Michael Kearney",
+   "why": "palliative care physician"
+  },
+  {
+   "name": "Elayne Fluker",
+   "why": "business coach"
+  },
+  {
+   "name": "Ada Calhoun",
+   "why": "writer"
+  },
+  {
+   "name": "Deanna Minich",
+   "why": "nutrition scientist"
+  },
+  {
+   "name": "Najwa Zebian",
+   "why": "poet"
+  },
+  {
+   "name": "Edgar Villanueva",
+   "why": "philanthropy activist"
+  },
+  {
+   "name": "Eriel Tchekwie Deranger",
+   "why": "climate activist"
+  },
+  {
+   "name": "Jeremy Dutcher",
+   "why": "mainly musician"
+  },
+  {
+   "name": "13 Hands Equine Rescue",
+   "why": "organisation"
+  },
+  {
+   "name": "Tiq Milan",
+   "why": "activist and writer"
+  },
+  {
+   "name": "Jake Wesley Rogers",
+   "why": "mainly musician"
+  },
+  {
+   "name": "John Roedel",
+   "why": "poet"
+  },
+  {
+   "name": "Emily Mcdowell",
+   "why": "greeting card entrepreneur"
+  },
+  {
+   "name": "Francisco Cantu",
+   "why": "writer"
+  },
+  {
+   "name": "Jennifer Elise Foerster",
+   "why": "poet"
+  },
+  {
+   "name": "J Drew Lanham",
+   "why": "ornithologist and poet"
+  },
+  {
+   "name": "Nadia Owusu",
+   "why": "memoirist"
+  },
+  {
+   "name": "Terry Jenoure",
+   "why": "mainly musician"
+  },
+  {
+   "name": "Elliott Landy",
+   "why": "photographer"
+  },
+  {
+   "name": "Iain S Thomas",
+   "why": "poet"
+  },
+  {
+   "name": "Hannah L Drake",
+   "why": "poet and activist"
+  },
+  {
+   "name": "Tunde Wey",
+   "why": "chef"
+  },
+  {
+   "name": "Mark Bittman",
+   "why": "food journalist"
+  },
+  {
+   "name": "Zoe Adjonyoh",
+   "why": "chef"
+  },
+  {
+   "name": "Ndidi Okonkwo Nwuneli",
+   "why": "business and food policy"
+  },
+  {
+   "name": "Sean Sherman",
+   "why": "chef"
+  },
+  {
+   "name": "Ruth Reichl",
+   "why": "food writer"
+  },
+  {
+   "name": "Laura Lengnick",
+   "why": "soil scientist"
+  },
+  {
+   "name": "Richard J Davidson",
+   "why": "neuroscientist"
+  },
+  {
+   "name": "Deepa Iyer",
+   "why": "activist"
+  },
+  {
+   "name": "Marika Hughes",
+   "why": "mainly musician"
+  },
+  {
+   "name": "Trina Basu",
+   "why": "mainly musician"
+  },
+  {
+   "name": "Roy Steiner",
+   "why": "foundation executive"
+  },
+  {
+   "name": "Liza Donnelly",
+   "why": "cartoonist"
+  },
+  {
+   "name": "Carrie Rebora Barratt",
+   "why": "museum director"
+  },
+  {
+   "name": "Emmanuel Vaughan Lee",
+   "why": "filmmaker"
+  },
+  {
+   "name": "Anais Maviel",
+   "why": "mainly musician"
+  },
+  {
+   "name": "Thema S Bryant",
+   "why": "clinical psychologist"
+  },
+  {
+   "name": "Elizabeth Nielson",
+   "why": "psychologist, psychedelic research"
+  },
+  {
+   "name": "Ingmar Gorman",
+   "why": "psychologist, psychedelic research"
+  },
+  {
+   "name": "Amber Rubarth",
+   "why": "mainly musician"
+  },
+  {
+   "name": "Jeffrey L Gurian",
+   "why": "comedian"
+  },
+  {
+   "name": "Lee Tilghman",
+   "why": "wellness influencer"
+  },
+  {
+   "name": "Neha Sangwan",
+   "why": "physician, communication coach"
+  },
+  {
+   "name": "Alison Hawthorne Deming",
+   "why": "poet"
+  },
+  {
+   "name": "Alexandra Kleeman",
+   "why": "novelist"
+  },
+  {
+   "name": "Kathryn Miles",
+   "why": "journalist"
+  },
+  {
+   "name": "Stephanie Chandler",
+   "why": "business author"
+  },
+  {
+   "name": "Felicia Zamora",
+   "why": "poet"
+  },
+  {
+   "name": "Sara Bareilles",
+   "why": "mainly musician"
+  },
+  {
+   "name": "Celisse",
+   "why": "mainly musician"
+  }
+ ]
+}

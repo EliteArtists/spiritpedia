@@ -13,7 +13,7 @@ export const timed = () => AbortSignal.timeout(TIMEOUT_MS);
 // Hosts we never fetch (owner's blocked-means-skip rule and README §18.7):
 // they refuse us, their robots.txt blocks us, or their terms forbid reuse.
 // isrefer.com carries The Shift Network's affiliate links, which redirect there.
-const OFF_LIMITS = /(^|\.)(theshiftnetwork\.com|isrefer\.com|mindvalley\.com|humanitysteam\.org|evolvingwisdom\.com|spiritrock\.org|openlibrary\.org|linktr\.ee|instagram\.com|facebook\.com|substack\.com|amazon\.com|amzn\.to)$/i;
+const OFF_LIMITS = /(^|\.)(theshiftnetwork\.com|isrefer\.com|mindvalley\.com|humanitysteam\.org|evolvingwisdom\.com|spiritrock\.org|openlibrary\.org|linktr\.ee|instagram\.com|facebook\.com|substack\.com|amazon\.com|amzn\.to|eomega\.org|soundstrue\.com|hayhouse\.com|events\.dharma\.org|redwheelweiser\.com|x\.com|twitter\.com|linkedin\.com|tiktok\.com)$/i;
 export const offLimits = (url) => { try { return OFF_LIMITS.test(new URL(url).hostname); } catch { return true; } };
 export const decode = (s) => s.replace(/&amp;/g, '&').replace(/&#0?39;/g, "'").replace(/&quot;/g, '"');
 

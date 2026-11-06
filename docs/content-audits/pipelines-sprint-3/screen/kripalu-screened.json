@@ -1,0 +1,1711 @@
+{
+ "keep": [
+  "Joan Borysenko",
+  "Gabrielle Bernstein",
+  "Colette Baron Reid",
+  "Matt Kahn",
+  "Dan Millman",
+  "Elena Brower",
+  "Sadie Nardini",
+  "Amy Ippoliti",
+  "Bryan Kest",
+  "Travis Eliot",
+  "Kia Miller",
+  "Cyndi Lee",
+  "Susan Piver",
+  "Paul Selig",
+  "Dr Shefali Tsabary",
+  "Lama Rod Owens",
+  "Ethan Nichtern",
+  "David Nichtern",
+  "Stephen Cope",
+  "Barbara De Angelis",
+  "Amy Weintraub",
+  "Pandit Rajmani Tigunait",
+  "Ishan Tigunait",
+  "Guru Singh",
+  "Lorin Roche",
+  "Kyle Cease",
+  "Julia Cameron",
+  "Thomas Moore",
+  "Margaret Paul",
+  "Raphael Cushnir",
+  "Jason Crandell",
+  "Dianne Bondy",
+  "Jessamyn Stanley",
+  "Koya Webb",
+  "Octavia Raheem",
+  "Sara Auster",
+  "Mingtong Gu",
+  "Don Jose Ruiz",
+  "Radleigh Valentine",
+  "Karen Paolino Correia",
+  "Bill Philipps",
+  "Dougall Fraser",
+  "Ainslie Macleod",
+  "Kim Krans",
+  "Lisa Lister",
+  "Adriana Rizzolo",
+  "Alexandra Roxo",
+  "Ruby Warrington",
+  "Rachel Estapa",
+  "Xavier Dagba",
+  "Caverly Morgan",
+  "Jeffrey Warren",
+  "Ralph De La Rosa",
+  "John J Prendergast",
+  "Craig Holliday",
+  "James Swartz",
+  "Sundari Swartz",
+  "Philip Goldberg",
+  "Rabbi Shefa Gold",
+  "Rabbi Jill Hammer",
+  "Rabbi Sheila Peltz Weinberg",
+  "Rev Angel Kyodo Williams",
+  "Leslie Booker",
+  "Kate Johnson",
+  "Rashid Hughes",
+  "Lopon Chandra Easton",
+  "Thupten Jinpa",
+  "Ji Hyang Padma",
+  "Robert Meikyo Rosenbaum",
+  "Jonathan Foust Sudhir",
+  "David Harshada Wagner",
+  "Tara Bennett Goleman",
+  "Mirabai Bush",
+  "Arawana Hayashi",
+  "Michelle Cassandra Johnson",
+  "Anusha Wijeyakumar",
+  "Lauren Ash",
+  "Lizzie Lasater",
+  "Indu Arora",
+  "Melina Meza",
+  "Beryl Bender",
+  "Leslie Kaminoff",
+  "Baxter Bell",
+  "Elise Browning Miller",
+  "Carol Krucoff",
+  "Shelly Prosko",
+  "Antonio Sausys",
+  "Barrie Risman",
+  "Gail Parker",
+  "Joseph Le Page",
+  "Lilian Le Page",
+  "Megha Nancy Buttenheim",
+  "Peggy Cappy",
+  "Rochelle Schieck",
+  "Camille Maurine",
+  "Shakta Khalsa",
+  "Krishna Kaur",
+  "Maya Tiwari",
+  "Queen Afua",
+  "Zhenevere Sophia Dao",
+  "Anjie Cho",
+  "Gina Breedlove",
+  "Amos Clifford",
+  "Machiel Klerk",
+  "Mark Mincolla",
+  "Itzhak Beery",
+  "Libby Barnett",
+  "Rick Barrett",
+  "Bess Matassa",
+  "Geneen Roth",
+  "Judith Valente",
+  "Donald Altman",
+  "Richard Faulds",
+  "Danna Faulds",
+  "Yoganand Michael Carroll",
+  "Bhavani Lorraine Nelson",
+  "Atma Jo Ann Levitt",
+  "Rabbi Claudia Kreiman",
+  "Don Sebastian Pauccar Flores"
+ ],
+ "unsure": [
+  "Marcy Balter",
+  "John Chu",
+  "Dorothy Cochrane",
+  "Steve Dinkelaker",
+  "Marcia Feuer",
+  "Christine Fuchs",
+  "Joan Kopperl",
+  "Erin Tunnicliffe",
+  "Linda Bloom",
+  "Greg Dilisio",
+  "Lisa B Nelson",
+  "Hilary Garivaltis",
+  "David Harp",
+  "Christine Warren",
+  "Lee Albert",
+  "Beth Weinstock",
+  "Catherine Calderon",
+  "Charlie Bloom",
+  "Linda Graham",
+  "Jane Shure",
+  "Jeff Prabhakar Migdow",
+  "Linda Aranda Belliveau",
+  "Linda Trichter Metcalf",
+  "Linda Novick",
+  "Rachel Schaeffer",
+  "Rhonda Britten",
+  "Shaun Laframboise",
+  "Martha Abbot",
+  "Joanne Spence",
+  "Monique Lang",
+  "Rosy Mann",
+  "Ray Crist",
+  "Vandita Kate Marchesiello",
+  "Allison Gemmel Laframboise",
+  "Matthew Daniell",
+  "Maria Mendola",
+  "Marc Mandel",
+  "Karen Arp Sandel",
+  "Debra Jensen",
+  "Dian Killian",
+  "Mary Northey",
+  "Aimee Gelinas",
+  "Lesley Desaulniers",
+  "Freddy Zental Weaver",
+  "Elsbeth Meuth",
+  "Maria Broom",
+  "Cleora Francis Oconnor",
+  "Satta Jallah",
+  "Eric Maisel",
+  "Kimberly Carson",
+  "Demetri Velisarius",
+  "Mimi Solaire",
+  "Lillee Chandra",
+  "Erica Mather",
+  "Elysabeth Williamson",
+  "Heidi Spear",
+  "Heather Sellers",
+  "Sarah B Stewart",
+  "Shrila Leslie Luppino",
+  "Karen Soltes",
+  "Terry Roth Schaff",
+  "Diane Kovanda",
+  "Shiva Das",
+  "Ronnie Roc",
+  "Cat Pacini",
+  "Leslie Salmon Jones",
+  "Jeff W Jones",
+  "Dinneen Viggiano",
+  "Lara Tupper",
+  "Steven Leonard",
+  "Owen O Suilleabhain",
+  "David Bedrick",
+  "Meg Agnew",
+  "Cindy L Parrish",
+  "Rajeshwari Gretchen Carmel",
+  "Nadine Mcneil",
+  "Niisa Morton",
+  "Deborah Lubetkin",
+  "Licia Sky",
+  "Sage Brody",
+  "Heather Bilotta",
+  "Jan L Watkins",
+  "Catherine Cook Cottone",
+  "Mark Roule",
+  "Allison English",
+  "Jeanne Heileman",
+  "Marc Weiner",
+  "Toshiro Miura",
+  "Melody Moore",
+  "Timothy J Beyer",
+  "Phoebe Atkinson",
+  "John C Platt",
+  "Lisa Weinert",
+  "Rose Kress",
+  "Jana Long",
+  "Andres Gonzalez",
+  "Portland Helmich",
+  "Becky Cushing",
+  "Monique Schubert",
+  "Crystal Mccreary",
+  "Jacalyn Prete",
+  "Ananda Das",
+  "Jaya Lakshmi",
+  "Chris Streeter",
+  "Teo Drake",
+  "Devadas Labreque",
+  "Dory Cote",
+  "Jim White",
+  "Stephen Redmon",
+  "Ann Swanson",
+  "Kim Childs",
+  "Karlee Fain",
+  "Kyla Pearce",
+  "Kim Baker",
+  "Arturo Peal",
+  "Sarah Platt Finger",
+  "Keshia Abraham",
+  "Mantra Marz",
+  "Tymi Howard Bender",
+  "Niyonu Spann",
+  "Abigail Ifatola Jefferson",
+  "Sil Reynolds",
+  "Eliza Reynolds",
+  "Erica Arce",
+  "Kathryn Costa",
+  "Keshav Chauhan",
+  "Barbara Vacarr",
+  "Marla Teyolia",
+  "Tasuma Laura Goodwin",
+  "Allie Middleton",
+  "Natasha Tasha Judson",
+  "Liz Mazlish",
+  "Lisa Jakub",
+  "Anne Novak",
+  "Paul Browde",
+  "Karen Abramson",
+  "Stephanie Lopez",
+  "Rose Weaver",
+  "Ramsay Pierce",
+  "Mary Hannah Parkman",
+  "Lara Heimann",
+  "Antra Kalnins Borofsky",
+  "Jonathan Fitzgordon",
+  "Richard Borofsky",
+  "Liana Sterling",
+  "Shawn Godfrey",
+  "Paul Mills",
+  "Dianne Neumark Sztainer",
+  "Sundar Balasubramanian",
+  "Moun Dsimone",
+  "Bethany Ryker",
+  "Michael Hebb",
+  "Suzanne Duran Crelin",
+  "Angel Grant",
+  "Ira Israel",
+  "Nina Crist",
+  "Ron Young",
+  "Ann Fleuchaus",
+  "Andy Cahill",
+  "Sally Taylor",
+  "Eliza Lay Ryan",
+  "Sarah Gigante",
+  "Jayson Gaddis",
+  "Susannah Beattie",
+  "John Seelye",
+  "Dana Campbell",
+  "Laura Sewall",
+  "Candace Jennings",
+  "Cecilia Nugent",
+  "Yogacharya Ellen Grace Obrian",
+  "Amy Dilalla",
+  "Danielle Rothman",
+  "Mindy Veissid",
+  "Stacey Hoffer",
+  "Sigrid Olsen",
+  "Michael Sein",
+  "Melanie Burns",
+  "Rose Cratsley",
+  "Tom Gillette",
+  "Alexandra Desiato",
+  "Liza Bertini",
+  "Glen De Los Reyes",
+  "Jennifer Webb",
+  "Jennifer Hanawald",
+  "Mary Hammerstein Shantprem",
+  "Leigh F Hanke",
+  "Aaron Rose",
+  "Ahmed Jabali Nash",
+  "Carrie Grossman Dayashila",
+  "Cantor Lizzie Shammash",
+  "Lisette Cooper",
+  "Melinda Matzell Grannan",
+  "Rha Goddess",
+  "Leslie E Korn",
+  "Carl Rubino",
+  "Robert Mulhall",
+  "Latham Thomas",
+  "Brianna Rose",
+  "Sherry Sidoti",
+  "Ken Wentworth",
+  "Liz Witham",
+  "Cynthia Maltenfort",
+  "Nancy Macphee",
+  "Zachary Adams",
+  "Mark Gerow",
+  "Londin Angel Winters",
+  "Justin Patrick Pierce",
+  "Leslie Kelson",
+  "Amah Devi",
+  "Robyn Tiger",
+  "Aaron Wolf",
+  "Rj Sadowski Jr",
+  "Giulia Pline",
+  "Christopher Byrne",
+  "Lawrence Stern",
+  "Lisa Danahy",
+  "Donna Bernadine",
+  "Jessica Valant",
+  "Kimberly Ann Johnson",
+  "Bee Bosnak",
+  "Adama Sesay",
+  "Brandon Alter",
+  "Jackie Farrell",
+  "Leah Guy",
+  "Muneeza Ahmed",
+  "Meredith Stephens",
+  "John Smrtic",
+  "Dan Doty",
+  "Owen Marcus",
+  "Kathleen Williams",
+  "Lindsay Ashmun",
+  "Romy Phillips",
+  "Adam Jackson",
+  "Jason Mackenzie",
+  "Aubert Bastiat",
+  "Christiane Prendergast",
+  "Sarah Anfora",
+  "Kimberli Boyd",
+  "Kelley Palmer",
+  "Natanya Bittman",
+  "Regina",
+  "Akasha",
+  "Gayle Karen Young",
+  "Elissa Berrol",
+  "Rona Luo",
+  "Karen Mahon Carrington",
+  "Nick Demeris",
+  "Rebekka Goldsmith",
+  "Nneka Julia",
+  "Alexandra Elle",
+  "Jamila Reddy",
+  "Josefina Sanders",
+  "Akaya Windwood",
+  "Sarah Crowell",
+  "Devyani Saltzman",
+  "Brynn Saito",
+  "Ana Krieger",
+  "Gina Paige",
+  "Sanovia Muhammad",
+  "Tamara Cress",
+  "Ebony Qualls",
+  "Jacqueline Oselen",
+  "Malaika Maitland",
+  "Paula Hines",
+  "Phyllis Jeffers Coly",
+  "Robin Downes",
+  "Tamara Jeffries",
+  "Ericka Harris",
+  "Terry Harris",
+  "Darius Naigamwalla",
+  "Karen Detemple",
+  "Sherri Doucette",
+  "Prema Mckeever",
+  "Nirodha Stearns",
+  "Neil Niten Ferguson",
+  "Polly Jiacovelli",
+  "Pooja Virani",
+  "Raudhah Rahman",
+  "Nichol Joy Chase",
+  "Joy Okoye",
+  "Suzanne Jones",
+  "Abdul Muhammad",
+  "Sole",
+  "Eniafe Isis Adewale",
+  "Mia Park",
+  "Millana Snow",
+  "Seher Sikandar",
+  "Yoli Maya Yeh",
+  "Mia Herndon",
+  "Tanya Markul",
+  "Sarah Suatoni",
+  "Kelli Love",
+  "David Yuan",
+  "Jai Sugrim",
+  "Sharon Landrith",
+  "Concetta Troskie",
+  "Sangeeta Vallabhan",
+  "Yuri Hernandez",
+  "Emily Cohen",
+  "Ellen Rose",
+  "Stacy Mclean",
+  "Eli Buren",
+  "Brooke Sullivan",
+  "Esther Alley",
+  "Lisa Love",
+  "Dinabandhu Patton Sarley",
+  "Shannon Kaiser",
+  "Amanda Masterpaul",
+  "Franklin Ellis",
+  "Mike Sagun",
+  "John Oconnor",
+  "Brad Golphenee",
+  "Junauda Petrus",
+  "Liz Oppedijk",
+  "Holly Mccormack",
+  "Anne Cox",
+  "Shilpa Babbar",
+  "Aaron Athey",
+  "Chief Jake Singer",
+  "Lev Natan",
+  "Lauren Harkness",
+  "Zachary Kraft Shinn",
+  "Suzen Wolf",
+  "Balachundhar Subramaniam",
+  "Akshay Anand",
+  "Daheia Barr Anderson",
+  "Phyllicia Bonanno",
+  "Brendan Morgan",
+  "Erica Jago",
+  "Victoria Erickson",
+  "Kathryn Leblanc",
+  "Cindy Beers",
+  "Donna Y Ferris",
+  "Christine Alfred",
+  "Earth Ephect",
+  "Justin Morreale",
+  "Carol Oneil",
+  "Margaret Behan",
+  "Kristine Hill",
+  "Diane Malaspina",
+  "Lisa Long",
+  "Julia Pearring",
+  "Finlay Wilson",
+  "Tristan Katz",
+  "Maryann Dimarco",
+  "Clearlight Gerald",
+  "Kristoffer Kc Carter",
+  "David Kam",
+  "Steven Hosking",
+  "Johnny Gillespie",
+  "Erica Garcia Abergel",
+  "Nicole Rafferty",
+  "Samantha Diver",
+  "David Sauvage",
+  "Thorald Koren",
+  "Isaac Koren",
+  "Lara Land",
+  "Jill Stratton",
+  "Jenna Lindbo",
+  "Lisanne Finston",
+  "Tiokasin Ghosthorse",
+  "Ietef Vita",
+  "Ian Sanderson",
+  "Antonia Estela Perez",
+  "Nazirahk Amen",
+  "Cynthia Price",
+  "Aisha Shillingford",
+  "Joan White Hansen",
+  "Andrea Cole",
+  "Mary Platt",
+  "Lisa Howard",
+  "Alison M Whitehead",
+  "Megan Mack Nicholson",
+  "Prue Rustean",
+  "Lara Christine",
+  "Dra Rocio Rosales Meza",
+  "Lisa Kim",
+  "Amba Alianahi",
+  "Steve Sherman",
+  "Nisha Moodley",
+  "Danny Fluker",
+  "Kathryn Tucker",
+  "Shawn J Moore",
+  "Catherine Justice",
+  "Lacretia Dye",
+  "Rachelle Pean",
+  "Amaratma Singh Khalsa",
+  "Herpreet Kaur Thind",
+  "Shoshana Jedwab",
+  "Keren Eldad",
+  "Jean Jacques Gabriel",
+  "Amina Naru",
+  "Kwasi Boaitey",
+  "Jean Jyotika Skeels",
+  "Janeen Anderson",
+  "Elisha Tichelle",
+  "Jillian Walker",
+  "Gwen Rebbeck",
+  "Michael Brown",
+  "Donna Rustigian Mac",
+  "Rebecca Smanga",
+  "Ava Taylor",
+  "Leslie Baker",
+  "Carole Murko",
+  "Halli Faulkner",
+  "Catherine Miller",
+  "Meryl Hayton",
+  "Lillian Lennox",
+  "Kaveri Barros",
+  "Justin Green",
+  "Caroline Duncan",
+  "Matthew Lyons",
+  "Monica Singh Avram",
+  "Mary Egan",
+  "Shirronda Almeida",
+  "Tara Lanich Labrie",
+  "Abigail Hurst",
+  "Nami Soga",
+  "Michell C Clark",
+  "Jameela Hill",
+  "Jaye Martin",
+  "Manu River Del Prete",
+  "Oneika Mays",
+  "Cherie Johnson",
+  "Tobi Brown",
+  "Abigail Santamaria",
+  "Barbara Stepniak",
+  "Denise Becker",
+  "Theresa Bates",
+  "Paris Alexandra",
+  "Meredith Oppenheim",
+  "Josie Gardiner",
+  "Lindsay Davison",
+  "Annika Tara Hansche",
+  "Mary Reynolds Thompson",
+  "Joanne Randolph",
+  "Lisa Vander Kaay",
+  "Kelli Bethel",
+  "Iana Velez",
+  "Audi Gozlan",
+  "Sriya Bhattacharyya",
+  "Gail Larsen",
+  "Cris Caivano",
+  "Alex Lai",
+  "Dr Sat Hon",
+  "Melba Nicholson Sullivan",
+  "Nicole Hudson",
+  "Amber Chand",
+  "Chetna Mehta",
+  "Tejal Patel",
+  "Pooja Prema",
+  "Mx Puja Singh",
+  "Laura Schmidt",
+  "Carla Goldstein",
+  "David Sobel",
+  "Brett Cotter",
+  "Don Martin Qespi Machacca",
+  "Dona Agustina Ccapa Champi",
+  "Fredy Conde Huallpa",
+  "Alissa Cedar Waterfall Johnson",
+  "Chris Gunderson",
+  "Connie Wilson",
+  "Elise Manzo",
+  "Julie Pellerin Herrera",
+  "Kerry Mcginn",
+  "Michelle Hebert",
+  "Miki Vysohlid",
+  "Mindy Dow",
+  "Nancy Whitman",
+  "Nora Fenner",
+  "Roshni Rama",
+  "Karin Otto",
+  "Crysta Bloom",
+  "Sunder Ashni",
+  "Marilyn Peppers Citizen",
+  "Ursula Kelly",
+  "Shanina Carmichael",
+  "Angell Deer",
+  "Vladimir Tchakarov",
+  "Alexandra S Wimberly",
+  "Maggie Langrick",
+  "Atman Smith",
+  "Ali Smith",
+  "Timothy Lewis",
+  "Rimi Chakraborty",
+  "Matthew Weston",
+  "Cat Bigney",
+  "Sabrina Allard",
+  "Tasha Blank",
+  "Nico Allen",
+  "Jac Okeeffe",
+  "Mona Mowafi",
+  "Sarah Brothwell",
+  "Nathalie Rodriguez",
+  "Malu Doherty",
+  "Jennifer Mann",
+  "Celia Hilson",
+  "Edward Phillips",
+  "Samantha Anderson",
+  "Maira Martinez",
+  "Dan Getman",
+  "Monica Meehan Mcnamara",
+  "Prema Shakti",
+  "Jill Tamminen",
+  "Nya Patrinos",
+  "Whitney Ullom",
+  "Charlene Lam",
+  "Dene Logan",
+  "Paola Mendoza",
+  "Margie Mcsweeney",
+  "Kelly Mcdaniel",
+  "Eva Armour",
+  "Lisa Fazio",
+  "Zoe Galle",
+  "Lynne Nicole Smith",
+  "Katerina Sakelliou",
+  "Diana May",
+  "Mariah Rooney",
+  "Luna Ray",
+  "Laura Billings",
+  "Rachel Dewan",
+  "Morena Cardoso",
+  "Malia Scharf",
+  "Shaun Galanos",
+  "Felice Chan",
+  "Oley Smith",
+  "Jennifer Weiss",
+  "Akilah Richards",
+  "Abiola Abrams",
+  "Candace Mickens",
+  "Dr Jaiya John",
+  "Asher Silverwolff",
+  "Joe Dambrosi",
+  "Carla Fernandez",
+  "Christina Semple",
+  "Marcia Ramoutar",
+  "Lee Mirabai Harrington",
+  "Bethany Trozzo",
+  "Marybeth Bonfiglio",
+  "Susan Weis Bohlen",
+  "Chance York",
+  "Yera Gomes",
+  "Ori Flomin",
+  "Tricia Hersey",
+  "Djuna Devereaux",
+  "Jasmine Nyende",
+  "Sation Konchellah",
+  "Laura Morris",
+  "Elizabeth G Magnavita",
+  "Marika Clymer",
+  "Dr Larry Ward",
+  "Mara Branscombe",
+  "Crystal Higgins",
+  "Juliana Luna",
+  "Allison Strickland",
+  "Carmen Lobue",
+  "Carolyn Michelle Smith",
+  "Christopher Emin Faroe",
+  "Deone",
+  "Janelle Belgrave",
+  "Luna",
+  "Julissa Contreras",
+  "Kazimi",
+  "Malcolm Bradford",
+  "Melanie Santos",
+  "Melinda Stone",
+  "Michelle Marrion",
+  "Natasha Roya Azizi",
+  "Amy Wright Glenn",
+  "Noor Amiry",
+  "Philip Jayoni",
+  "Tiffany Curtis",
+  "Michael Wilson",
+  "Koa Kalish",
+  "Becca Piastrelli",
+  "Sarah Maclean Bicknell",
+  "Madeline Giles",
+  "Dr Jeevan Singh",
+  "Marissa Correia Sep",
+  "Kimberly Giunta Cap",
+  "Adaku Utah",
+  "Chief Shaka Zulu",
+  "Fimo Mitchell",
+  "Carolyn Sharp",
+  "Ashley Brockington",
+  "Yulia Meshoyrer",
+  "Shayna Hiller",
+  "John Stockberger",
+  "Christen Poole",
+  "Scott Simon",
+  "Betsy Debany",
+  "Daniel Sharman",
+  "Bonnie Buckner Phd",
+  "Kiana Reeves",
+  "Patrick Surdam",
+  "Jeremy Schewe",
+  "Kirsten Mowrey Lmt",
+  "Devin Franklin",
+  "Michelle Apland",
+  "John Onwuchekwa",
+  "Thomas Breiter",
+  "Carrie Lumi Schewe",
+  "Carolyn Sheehan",
+  "Lucian Schloss",
+  "Elizabeth Weingarten",
+  "Lea Motlow",
+  "Nelida Vilca Huaman",
+  "Tracy Williams",
+  "Chris Collura",
+  "Mark Rodovick",
+  "Shelby Drosehn",
+  "Patti Mccabe",
+  "Lise Lawrence",
+  "Anthony Sgueglia",
+  "Connie Keegan",
+  "Hannah Wilken",
+  "Alex Dalby",
+  "Ling Lo",
+  "Jenna Larkin",
+  "Jennifer Joyce",
+  "Julia Weiss",
+  "Christina Anello",
+  "Kevin Hoosier",
+  "Dr Sandra Musial",
+  "Laura Klein",
+  "Michael Potts",
+  "Allison Furkey",
+  "Austin Clark",
+  "Kari Cardinale",
+  "Russ Cohen",
+  "Gina Lee",
+  "Astrid Schmidt",
+  "Olivia Therese Fromm",
+  "Drisana Mcdaniel",
+  "Audra Mace",
+  "Caitlin Krause",
+  "Tami Lynn Kent",
+  "Andrew Mcgonigle",
+  "Satya Scainetti",
+  "Michael Morton",
+  "Polly Weiss",
+  "Stephon J Bradberry",
+  "Jessie Harrold",
+  "Cara Trezise",
+  "Martin Thomson Jones",
+  "Jay Dufrechou",
+  "Sarah Peyton",
+  "Shireen Mansouri",
+  "Lisa Sullivan",
+  "Shannon Plummer",
+  "Bob Sima",
+  "Ysmael Merino",
+  "Marybeth Heatwole Moore",
+  "Elena Mansour",
+  "Kimberly Marks",
+  "Kristi Sullivan",
+  "Marla Dobbs Hawkins",
+  "Madhuri Kasat Shors",
+  "Jennifer Yarro",
+  "Josh Young",
+  "Paul Belsito",
+  "Saima Siddiqi",
+  "Philip B Morrison",
+  "Stephen Parker",
+  "Kal Prakashini",
+  "Adi Shakti",
+  "Carla Olla",
+  "Hannah Morano",
+  "Eliana Fiore",
+  "Morley Kamen",
+  "Ananda Hargeet Kaur",
+  "Cassandra Cureton",
+  "Jayne Mattingly",
+  "Madeleine Macgillivray",
+  "Morgan Lennox Whitehead",
+  "Anne Walsh",
+  "Liz Haley",
+  "Rev Dr Shelley D Best",
+  "Kimberly Richardson",
+  "Stefanie Cotter",
+  "Danielle Bensimhon",
+  "Jon Young",
+  "Jacqueline Michelle",
+  "Colleen Temple",
+  "Devynn Visionary",
+  "Michaela Himelfarb",
+  "Courtney Hayes",
+  "Cat Lynch Capowski",
+  "Mike Riley",
+  "Justin Senense",
+  "Jordan Grinstein",
+  "Joanne Audyatis",
+  "Todd Audyatis",
+  "Melissa Helm",
+  "Kendra Lacroix",
+  "Yasmine Cheyenne",
+  "Barbara Dague",
+  "Nandini Austin",
+  "Lin Wang Gordon",
+  "Jj Luceno"
+ ],
+ "out": [
+  {
+   "name": "Richard P Brown",
+   "why": "psychiatrist"
+  },
+  {
+   "name": "Daniel Goleman",
+   "why": "psychologist and science journalist"
+  },
+  {
+   "name": "Danny Dreyer",
+   "why": "running coach"
+  },
+  {
+   "name": "Elaine N Aron",
+   "why": "research psychologist"
+  },
+  {
+   "name": "Jill Miller",
+   "why": "fitness, body mobility"
+  },
+  {
+   "name": "Sally Kempton",
+   "why": "deceased (2023)"
+  },
+  {
+   "name": "Snatam Kaur",
+   "why": "mainly musician"
+  },
+  {
+   "name": "Bonnie Gintis",
+   "why": "osteopathic physician"
+  },
+  {
+   "name": "Arlene Schmid",
+   "why": "academic researcher"
+  },
+  {
+   "name": "Nicole Culos Reed",
+   "why": "academic researcher"
+  },
+  {
+   "name": "Kdz Kripalu Drummers",
+   "why": "drumming group, not person"
+  },
+  {
+   "name": "Jean Kristeller",
+   "why": "clinical psychologist, researcher"
+  },
+  {
+   "name": "Deany Laliotis",
+   "why": "EMDR psychotherapist"
+  },
+  {
+   "name": "Kripalu Faculty",
+   "why": "organisation, not person"
+  },
+  {
+   "name": "National Parkinson Foundation",
+   "why": "organisation"
+  },
+  {
+   "name": "Timothy Mccall",
+   "why": "medical doctor"
+  },
+  {
+   "name": "Daniel J Siegel",
+   "why": "psychiatrist"
+  },
+  {
+   "name": "Janis Abrahms Spring",
+   "why": "clinical psychologist"
+  },
+  {
+   "name": "Patricia L Gerbarg",
+   "why": "psychiatrist"
+  },
+  {
+   "name": "Laurie Gerber",
+   "why": "life and business coach"
+  },
+  {
+   "name": "Annie B Kay",
+   "why": "nutritionist"
+  },
+  {
+   "name": "Andrea Lieberstein",
+   "why": "dietitian"
+  },
+  {
+   "name": "Karen Drucker",
+   "why": "singer-songwriter"
+  },
+  {
+   "name": "Margrit Mikulis Nd",
+   "why": "naturopathic doctor"
+  },
+  {
+   "name": "Kim Innes",
+   "why": "academic researcher"
+  },
+  {
+   "name": "James S Gordon",
+   "why": "psychiatrist"
+  },
+  {
+   "name": "Mark Pettus",
+   "why": "medical doctor"
+  },
+  {
+   "name": "Peter Levine",
+   "why": "trauma therapist"
+  },
+  {
+   "name": "Deb Dana",
+   "why": "clinical therapist"
+  },
+  {
+   "name": "Aviva Romm",
+   "why": "medical doctor"
+  },
+  {
+   "name": "Ronald J Frederick",
+   "why": "clinical psychologist"
+  },
+  {
+   "name": "Suellen Hamkins",
+   "why": "psychiatrist"
+  },
+  {
+   "name": "Dana Sturtevant",
+   "why": "dietitian"
+  },
+  {
+   "name": "David Whyte",
+   "why": "poet"
+  },
+  {
+   "name": "Drew Ramsey Md",
+   "why": "psychiatrist"
+  },
+  {
+   "name": "Howard C Cutler",
+   "why": "psychiatrist"
+  },
+  {
+   "name": "Todd Boston",
+   "why": "musician"
+  },
+  {
+   "name": "Esther Gokhale",
+   "why": "posture method"
+  },
+  {
+   "name": "Shirley Telles",
+   "why": "yoga scientist"
+  },
+  {
+   "name": "Matthew Dicks",
+   "why": "storyteller, novelist"
+  },
+  {
+   "name": "Hilary Kinavey",
+   "why": "weight-inclusive health coach"
+  },
+  {
+   "name": "Patricia Kinser",
+   "why": "nursing researcher"
+  },
+  {
+   "name": "B N Gangadhar",
+   "why": "psychiatrist, researcher"
+  },
+  {
+   "name": "Noirin Ni Riain",
+   "why": "singer"
+  },
+  {
+   "name": "Vicki R",
+   "why": "surname missing; unusable entry"
+  },
+  {
+   "name": "Linda W",
+   "why": "surname missing; unusable entry"
+  },
+  {
+   "name": "Tzivia G",
+   "why": "surname missing; unusable entry"
+  },
+  {
+   "name": "Tracey E",
+   "why": "surname missing; unusable entry"
+  },
+  {
+   "name": "Marsha L",
+   "why": "surname missing; unusable entry"
+  },
+  {
+   "name": "Elizabeth H",
+   "why": "surname missing; unusable entry"
+  },
+  {
+   "name": "Bobbe E",
+   "why": "surname missing; unusable entry"
+  },
+  {
+   "name": "Anne H",
+   "why": "surname missing; unusable entry"
+  },
+  {
+   "name": "Joyce B",
+   "why": "surname missing; unusable entry"
+  },
+  {
+   "name": "Lauren M",
+   "why": "surname missing; unusable entry"
+  },
+  {
+   "name": "David S",
+   "why": "surname missing; unusable entry"
+  },
+  {
+   "name": "Gina K",
+   "why": "surname missing; unusable entry"
+  },
+  {
+   "name": "Sandy P",
+   "why": "surname missing; unusable entry"
+  },
+  {
+   "name": "Patrice F",
+   "why": "surname missing; unusable entry"
+  },
+  {
+   "name": "Socorro C",
+   "why": "surname missing; unusable entry"
+  },
+  {
+   "name": "Amy S",
+   "why": "surname missing; unusable entry"
+  },
+  {
+   "name": "Laurel M",
+   "why": "surname missing; unusable entry"
+  },
+  {
+   "name": "John L",
+   "why": "surname missing; unusable entry"
+  },
+  {
+   "name": "Joyce T",
+   "why": "surname missing; unusable entry"
+  },
+  {
+   "name": "Chrisanne D",
+   "why": "surname missing; unusable entry"
+  },
+  {
+   "name": "Carrie Ann B",
+   "why": "surname missing; unusable entry"
+  },
+  {
+   "name": "Ilene G",
+   "why": "surname missing; unusable entry"
+  },
+  {
+   "name": "Cynthia B",
+   "why": "surname missing; unusable entry"
+  },
+  {
+   "name": "Janine D",
+   "why": "surname missing; unusable entry"
+  },
+  {
+   "name": "Mackenzie W",
+   "why": "surname missing; unusable entry"
+  },
+  {
+   "name": "Mike E",
+   "why": "surname missing; unusable entry"
+  },
+  {
+   "name": "Azadeh T",
+   "why": "surname missing; unusable entry"
+  },
+  {
+   "name": "Sultana C",
+   "why": "surname missing; unusable entry"
+  },
+  {
+   "name": "Arthur G",
+   "why": "surname missing; unusable entry"
+  },
+  {
+   "name": "Mario M",
+   "why": "surname missing; unusable entry"
+  },
+  {
+   "name": "Kateryna S",
+   "why": "surname missing; unusable entry"
+  },
+  {
+   "name": "Lauren Z",
+   "why": "surname missing; unusable entry"
+  },
+  {
+   "name": "Darlene R",
+   "why": "surname missing; unusable entry"
+  },
+  {
+   "name": "Decora S",
+   "why": "surname missing; unusable entry"
+  },
+  {
+   "name": "Kristen S And Mike K",
+   "why": "surname missing; unusable entry"
+  },
+  {
+   "name": "Phyllis S",
+   "why": "surname missing; unusable entry"
+  },
+  {
+   "name": "John W",
+   "why": "surname missing; unusable entry"
+  },
+  {
+   "name": "Emily S",
+   "why": "surname missing; unusable entry"
+  },
+  {
+   "name": "Yvonne B",
+   "why": "surname missing; unusable entry"
+  },
+  {
+   "name": "Lin W",
+   "why": "surname missing; unusable entry"
+  },
+  {
+   "name": "Randy S",
+   "why": "surname missing; unusable entry"
+  },
+  {
+   "name": "Josh W",
+   "why": "surname missing; unusable entry"
+  },
+  {
+   "name": "Rachel S",
+   "why": "surname missing; unusable entry"
+  },
+  {
+   "name": "Kate S",
+   "why": "surname missing; unusable entry"
+  },
+  {
+   "name": "Daren S",
+   "why": "surname missing; unusable entry"
+  },
+  {
+   "name": "Aron S",
+   "why": "surname missing; unusable entry"
+  },
+  {
+   "name": "John M And Rhumdoul R",
+   "why": "surname missing; unusable entry"
+  },
+  {
+   "name": "Sharon S",
+   "why": "surname missing; unusable entry"
+  },
+  {
+   "name": "Gabriel G",
+   "why": "surname missing; unusable entry"
+  },
+  {
+   "name": "Sandra H",
+   "why": "surname missing; unusable entry"
+  },
+  {
+   "name": "Toshiro M",
+   "why": "surname missing; unusable entry"
+  },
+  {
+   "name": "Lorraine C",
+   "why": "surname missing; unusable entry"
+  },
+  {
+   "name": "Dr Robert Saper",
+   "why": "medical doctor"
+  },
+  {
+   "name": "Gerard C Buffo Md Facr",
+   "why": "medical doctor"
+  },
+  {
+   "name": "Suzanne Koven",
+   "why": "medical doctor, writer"
+  },
+  {
+   "name": "Mary Beth O",
+   "why": "surname missing; unusable entry"
+  },
+  {
+   "name": "Michael And Phyllis",
+   "why": "surname missing; unusable entry"
+  },
+  {
+   "name": "Christina P",
+   "why": "surname missing; unusable entry"
+  },
+  {
+   "name": "Beth J",
+   "why": "surname missing; unusable entry"
+  },
+  {
+   "name": "Jennifer K",
+   "why": "surname missing; unusable entry"
+  },
+  {
+   "name": "Steffany Moonaz",
+   "why": "yoga researcher"
+  },
+  {
+   "name": "Neha Gothe",
+   "why": "exercise researcher"
+  },
+  {
+   "name": "Suzanne Danhauer",
+   "why": "academic researcher"
+  },
+  {
+   "name": "Erik Groessl",
+   "why": "academic researcher"
+  },
+  {
+   "name": "Michael R",
+   "why": "surname missing; unusable entry"
+  },
+  {
+   "name": "Jenny W",
+   "why": "surname missing; unusable entry"
+  },
+  {
+   "name": "Reza G",
+   "why": "surname missing; unusable entry"
+  },
+  {
+   "name": "Carolyne O",
+   "why": "surname missing; unusable entry"
+  },
+  {
+   "name": "Lisa Uebelacker",
+   "why": "academic psychologist"
+  },
+  {
+   "name": "Karen Mustian",
+   "why": "academic researcher"
+  },
+  {
+   "name": "Stephanie Sohl",
+   "why": "academic researcher"
+  },
+  {
+   "name": "Maeve M",
+   "why": "surname missing; unusable entry"
+  },
+  {
+   "name": "Suleika Jaouad",
+   "why": "writer, memoirist"
+  },
+  {
+   "name": "Kathie Madonna Swift",
+   "why": "nutritionist"
+  },
+  {
+   "name": "Megan M And Mollie M",
+   "why": "surname missing; unusable entry"
+  },
+  {
+   "name": "Dayna J",
+   "why": "surname missing; unusable entry"
+  },
+  {
+   "name": "Feather P",
+   "why": "surname missing; unusable entry"
+  },
+  {
+   "name": "Tom Myers",
+   "why": "fascia anatomy educator"
+  },
+  {
+   "name": "Kristen C",
+   "why": "surname missing; unusable entry"
+  },
+  {
+   "name": "Ross Rosenberg",
+   "why": "psychotherapist"
+  },
+  {
+   "name": "Macy C",
+   "why": "surname missing; unusable entry"
+  },
+  {
+   "name": "Shasta Nelson",
+   "why": "friendship expert, coach"
+  },
+  {
+   "name": "Robyn Youkilis",
+   "why": "health coach, nutrition"
+  },
+  {
+   "name": "Raei B",
+   "why": "surname missing; unusable entry"
+  },
+  {
+   "name": "Deron D",
+   "why": "surname missing; unusable entry"
+  },
+  {
+   "name": "Cindy O",
+   "why": "surname missing; unusable entry"
+  },
+  {
+   "name": "Cathy W",
+   "why": "surname missing; unusable entry"
+  },
+  {
+   "name": "Suzy Becker",
+   "why": "illustrator, author"
+  },
+  {
+   "name": "Brian H",
+   "why": "surname missing; unusable entry"
+  },
+  {
+   "name": "Michael B",
+   "why": "surname missing; unusable entry"
+  },
+  {
+   "name": "Crystal L Park",
+   "why": "academic psychologist"
+  },
+  {
+   "name": "Nya P",
+   "why": "surname missing; unusable entry"
+  },
+  {
+   "name": "Valarie Kaur",
+   "why": "activist, lawyer"
+  },
+  {
+   "name": "Paul Foxman Phd",
+   "why": "psychologist"
+  },
+  {
+   "name": "Lisa C",
+   "why": "surname missing; unusable entry"
+  },
+  {
+   "name": "Trishan H",
+   "why": "surname missing; unusable entry"
+  },
+  {
+   "name": "Eileen L",
+   "why": "surname missing; unusable entry"
+  },
+  {
+   "name": "Rachel Cargle",
+   "why": "activist"
+  },
+  {
+   "name": "Guayana P",
+   "why": "surname missing; unusable entry"
+  },
+  {
+   "name": "Ruth Q Wolever",
+   "why": "academic researcher"
+  },
+  {
+   "name": "Beth Bock",
+   "why": "academic researcher"
+  },
+  {
+   "name": "Jojo Yy Kwok",
+   "why": "academic researcher"
+  },
+  {
+   "name": "Robin Wall Kimmerer",
+   "why": "botanist and author"
+  },
+  {
+   "name": "Nathan And Brett",
+   "why": "surname missing; unusable entry"
+  },
+  {
+   "name": "Marion F",
+   "why": "surname missing; unusable entry"
+  },
+  {
+   "name": "Stan Strickland",
+   "why": "musician"
+  },
+  {
+   "name": "Melina Laboucan Massimo",
+   "why": "climate activist"
+  },
+  {
+   "name": "Corey Kupfer",
+   "why": "business coach"
+  },
+  {
+   "name": "Mariel Buque",
+   "why": "psychologist"
+  },
+  {
+   "name": "Jonah Paquette",
+   "why": "clinical psychologist"
+  },
+  {
+   "name": "Adrienne Maree Brown",
+   "why": "activist, writer"
+  },
+  {
+   "name": "Holistic Centers Network",
+   "why": "organisation"
+  },
+  {
+   "name": "Shyam Ranganathan",
+   "why": "academic philosopher"
+  },
+  {
+   "name": "Wah",
+   "why": "musician"
+  },
+  {
+   "name": "Spiritual Gayz",
+   "why": "podcast brand, not person"
+  },
+  {
+   "name": "Tracy Gaudet",
+   "why": "medical doctor"
+  },
+  {
+   "name": "John Roedel",
+   "why": "poet"
+  },
+  {
+   "name": "Chip Conley",
+   "why": "hospitality business leader"
+  },
+  {
+   "name": "Heather Bruegl",
+   "why": "historian"
+  },
+  {
+   "name": "Claire Bidwell Smith",
+   "why": "grief therapist"
+  },
+  {
+   "name": "Mari Andrew",
+   "why": "illustrator, writer"
+  },
+  {
+   "name": "Mark T Vande Hei",
+   "why": "astronaut"
+  },
+  {
+   "name": "Farrah Fawcett",
+   "why": "deceased actress"
+  },
+  {
+   "name": "Waylon Lewis",
+   "why": "media publisher"
+  },
+  {
+   "name": "Susan Masino Phd",
+   "why": "neuroscientist"
+  },
+  {
+   "name": "Georgia Ede Md",
+   "why": "psychiatrist, nutrition"
+  },
+  {
+   "name": "Jeffrey D Rediger Md Mdiv",
+   "why": "psychiatrist"
+  },
+  {
+   "name": "Jus Crea Giammarino Nd",
+   "why": "naturopathic doctor"
+  },
+  {
+   "name": "Laurie Heatherington Phd",
+   "why": "psychology academic"
+  },
+  {
+   "name": "Rowen White",
+   "why": "seed sovereignty activist"
+  },
+  {
+   "name": "Tererai Trent",
+   "why": "education activist"
+  },
+  {
+   "name": "Jane Esselstyn",
+   "why": "plant-based nutrition"
+  },
+  {
+   "name": "Ann Crile Esselstyn",
+   "why": "plant-based nutrition"
+  },
+  {
+   "name": "Peter Wayne",
+   "why": "academic researcher"
+  },
+  {
+   "name": "Eric J Roseen Dc Phd",
+   "why": "chiropractor, researcher"
+  },
+  {
+   "name": "Doreen Dodgen Magee",
+   "why": "psychologist"
+  },
+  {
+   "name": "Tembi Locke",
+   "why": "actor and memoirist"
+  },
+  {
+   "name": "Allison Gilbert",
+   "why": "journalist, author"
+  },
+  {
+   "name": "Thenmozhi Soundararajan",
+   "why": "activist"
+  },
+  {
+   "name": "Brandon Copeland",
+   "why": "NFL player"
+  },
+  {
+   "name": "Dr Heather Tallman Ruhm",
+   "why": "medical doctor"
+  },
+  {
+   "name": "Dr Romy Lauche",
+   "why": "academic researcher"
+  },
+  {
+   "name": "Dr Jack Feldman",
+   "why": "neuroscientist"
+  },
+  {
+   "name": "Ting Bao",
+   "why": "oncologist researcher"
+  },
+  {
+   "name": "David H Rosmarin",
+   "why": "clinical psychologist"
+  },
+  {
+   "name": "Perry Garfinkel",
+   "why": "journalist"
+  },
+  {
+   "name": "Dj Cavem",
+   "why": "DJ, musician"
+  },
+  {
+   "name": "Victoria Moran",
+   "why": "vegan lifestyle author"
+  },
+  {
+   "name": "Meghan Riordan Jarvis Ma Lcsw",
+   "why": "psychotherapist"
+  },
+  {
+   "name": "Gina Moffa Lcsw",
+   "why": "psychotherapist"
+  },
+  {
+   "name": "Linda Thai",
+   "why": "trauma therapist"
+  },
+  {
+   "name": "Bryant Terry",
+   "why": "chef"
+  },
+  {
+   "name": "Jeffrey J Magnavita Phd",
+   "why": "clinical psychologist"
+  },
+  {
+   "name": "Sonya Renee Taylor",
+   "why": "activist, poet"
+  },
+  {
+   "name": "Glennon Doyle",
+   "why": "memoirist, celebrity author"
+  },
+  {
+   "name": "Brian F",
+   "why": "surname missing; unusable entry"
+  },
+  {
+   "name": "Ian N",
+   "why": "surname missing; unusable entry"
+  },
+  {
+   "name": "Jean B",
+   "why": "surname missing; unusable entry"
+  },
+  {
+   "name": "Raury",
+   "why": "musician"
+  },
+  {
+   "name": "Kris Gonzalez Lac",
+   "why": "acupuncturist, clinical"
+  },
+  {
+   "name": "Daniel Vitalis",
+   "why": "rewilding, food"
+  },
+  {
+   "name": "Samuel Thayer",
+   "why": "wild-food forager"
+  },
+  {
+   "name": "Jennifer Boyd Pa",
+   "why": "physician assistant"
+  },
+  {
+   "name": "Richard Louv",
+   "why": "journalist, nature author"
+  },
+  {
+   "name": "Aimon Kopera Md",
+   "why": "medical doctor"
+  },
+  {
+   "name": "Jw Terry Freiberg Phd Jd",
+   "why": "academic credentials, not teacher"
+  },
+  {
+   "name": "Jennifer Wallace",
+   "why": "journalist"
+  },
+  {
+   "name": "Noor Tagouri",
+   "why": "journalist"
+  },
+  {
+   "name": "Rani Banik Md Ifmcp",
+   "why": "medical doctor"
+  },
+  {
+   "name": "Ramani Durvasula",
+   "why": "clinical psychologist"
+  },
+  {
+   "name": "Merlin Sheldrake",
+   "why": "biologist and author"
+  },
+  {
+   "name": "Sonny Singh",
+   "why": "musician"
+  },
+  {
+   "name": "Michele Tugade",
+   "why": "academic psychologist"
+  },
+  {
+   "name": "Jedidiah Jenkins",
+   "why": "travel writer"
+  },
+  {
+   "name": "Dj Shango",
+   "why": "DJ"
+  },
+  {
+   "name": "Anu Gupta",
+   "why": "bias training business"
+  },
+  {
+   "name": "Jeremy David Engels",
+   "why": "academic"
+  }
+ ]
+}
