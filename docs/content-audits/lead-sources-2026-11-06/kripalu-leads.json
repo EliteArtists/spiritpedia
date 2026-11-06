@@ -1,0 +1,5216 @@
+{
+"source": "kripalu",
+"built": "2026-11-06",
+"note": "names from URL slugs (no accents/capitals); status current = on the hub faculty file current list, else past",
+"counts": {
+"total": 1426,
+"on_spiritpedia": 133,
+"handled": 253,
+"in_shift_or_it_pipeline": 0,
+"new": 1040,
+"new_current": 0,
+"new_past": 1040
+},
+"leads": [
+{
+"name": "Marcy Balter",
+"url": "https://kripalu.org/people/marcy-balter",
+"status": "past"
+},
+{
+"name": "John Chu",
+"url": "https://kripalu.org/people/john-chu",
+"status": "past"
+},
+{
+"name": "Dorothy Cochrane",
+"url": "https://kripalu.org/people/dorothy-cochrane",
+"status": "past"
+},
+{
+"name": "Steve Dinkelaker",
+"url": "https://kripalu.org/people/steve-dinkelaker",
+"status": "past"
+},
+{
+"name": "Marcia Feuer",
+"url": "https://kripalu.org/people/marcia-feuer",
+"status": "past"
+},
+{
+"name": "Christine Fuchs",
+"url": "https://kripalu.org/people/christine-fuchs",
+"status": "past"
+},
+{
+"name": "Joan Kopperl",
+"url": "https://kripalu.org/people/joan-kopperl",
+"status": "past"
+},
+{
+"name": "Erin Tunnicliffe",
+"url": "https://kripalu.org/people/erin-tunnicliffe",
+"status": "past"
+},
+{
+"name": "Libby Barnett",
+"url": "https://kripalu.org/people/libby-barnett",
+"status": "past"
+},
+{
+"name": "Beryl Bender",
+"url": "https://kripalu.org/people/beryl-bender",
+"status": "past"
+},
+{
+"name": "Rick Barrett",
+"url": "https://kripalu.org/people/rick-barrett",
+"status": "past"
+},
+{
+"name": "Linda Bloom",
+"url": "https://kripalu.org/people/linda-bloom",
+"status": "past"
+},
+{
+"name": "Joan Borysenko",
+"url": "https://kripalu.org/people/joan-borysenko",
+"status": "past"
+},
+{
+"name": "Megha Nancy Buttenheim",
+"url": "https://kripalu.org/people/megha-nancy-buttenheim",
+"status": "past"
+},
+{
+"name": "Julia Cameron",
+"url": "https://kripalu.org/people/julia-cameron",
+"status": "past"
+},
+{
+"name": "Peggy Cappy",
+"url": "https://kripalu.org/people/peggy-cappy",
+"status": "past"
+},
+{
+"name": "Yoganand Michael Carroll",
+"url": "https://kripalu.org/people/yoganand-michael-carroll",
+"status": "past"
+},
+{
+"name": "Gail Parker",
+"url": "https://kripalu.org/people/gail-parker",
+"status": "past"
+},
+{
+"name": "Raphael Cushnir",
+"url": "https://kripalu.org/people/raphael-cushnir",
+"status": "past"
+},
+{
+"name": "Greg Dilisio",
+"url": "https://kripalu.org/people/greg-dilisio",
+"status": "past"
+},
+{
+"name": "Lisa B Nelson",
+"url": "https://kripalu.org/people/lisa-b-nelson",
+"status": "past"
+},
+{
+"name": "Itzhak Beery",
+"url": "https://kripalu.org/people/itzhak-beery",
+"status": "past"
+},
+{
+"name": "Richard Faulds",
+"url": "https://kripalu.org/people/richard-faulds",
+"status": "past"
+},
+{
+"name": "Danna Faulds",
+"url": "https://kripalu.org/people/danna-faulds",
+"status": "past"
+},
+{
+"name": "Jonathan Foust Sudhir",
+"url": "https://kripalu.org/people/jonathan-foust-sudhir",
+"status": "past"
+},
+{
+"name": "Hilary Garivaltis",
+"url": "https://kripalu.org/people/hilary-garivaltis",
+"status": "past"
+},
+{
+"name": "David Harp",
+"url": "https://kripalu.org/people/david-harp",
+"status": "past"
+},
+{
+"name": "Shakta Khalsa",
+"url": "https://kripalu.org/people/shakta-khalsa",
+"status": "past"
+},
+{
+"name": "Cyndi Lee",
+"url": "https://kripalu.org/people/cyndi-lee",
+"status": "past"
+},
+{
+"name": "Bhavani Lorraine Nelson",
+"url": "https://kripalu.org/people/bhavani-lorraine-nelson",
+"status": "past"
+},
+{
+"name": "Christine Warren",
+"url": "https://kripalu.org/people/christine-warren",
+"status": "past"
+},
+{
+"name": "Amy Weintraub",
+"url": "https://kripalu.org/people/amy-weintraub",
+"status": "past"
+},
+{
+"name": "Richard P Brown",
+"url": "https://kripalu.org/people/richard-p-brown",
+"status": "past"
+},
+{
+"name": "Lee Albert",
+"url": "https://kripalu.org/people/lee-albert",
+"status": "past"
+},
+{
+"name": "Amy Ippoliti",
+"url": "https://kripalu.org/people/amy-ippoliti",
+"status": "past"
+},
+{
+"name": "Beth Weinstock",
+"url": "https://kripalu.org/people/beth-weinstock",
+"status": "past"
+},
+{
+"name": "Bryan Kest",
+"url": "https://kripalu.org/people/bryan-kest",
+"status": "past"
+},
+{
+"name": "Catherine Calderon",
+"url": "https://kripalu.org/people/catherine-calderon",
+"status": "past"
+},
+{
+"name": "Charlie Bloom",
+"url": "https://kripalu.org/people/charlie-bloom",
+"status": "past"
+},
+{
+"name": "Daniel Goleman",
+"url": "https://kripalu.org/people/daniel-goleman",
+"status": "past"
+},
+{
+"name": "Dan Millman",
+"url": "https://kripalu.org/people/dan-millman",
+"status": "past"
+},
+{
+"name": "Danny Dreyer",
+"url": "https://kripalu.org/people/danny-dreyer",
+"status": "past"
+},
+{
+"name": "Elaine N Aron",
+"url": "https://kripalu.org/people/elaine-n-aron",
+"status": "past"
+},
+{
+"name": "Elise Browning Miller",
+"url": "https://kripalu.org/people/elise-browning-miller",
+"status": "past"
+},
+{
+"name": "Geneen Roth",
+"url": "https://kripalu.org/people/geneen-roth",
+"status": "past"
+},
+{
+"name": "Linda Graham",
+"url": "https://kripalu.org/people/linda-graham",
+"status": "past"
+},
+{
+"name": "Jane Shure",
+"url": "https://kripalu.org/people/jane-shure",
+"status": "past"
+},
+{
+"name": "Jeff Prabhakar Migdow",
+"url": "https://kripalu.org/people/jeff-prabhakar-migdow",
+"status": "past"
+},
+{
+"name": "Jill Miller",
+"url": "https://kripalu.org/people/jill-miller",
+"status": "past"
+},
+{
+"name": "Joseph Le Page",
+"url": "https://kripalu.org/people/joseph-le-page",
+"status": "past"
+},
+{
+"name": "Krishna Kaur",
+"url": "https://kripalu.org/people/krishna-kaur",
+"status": "past"
+},
+{
+"name": "David Nichtern",
+"url": "https://kripalu.org/people/david-nichtern",
+"status": "past"
+},
+{
+"name": "Lilian Le Page",
+"url": "https://kripalu.org/people/lilian-le-page",
+"status": "past"
+},
+{
+"name": "Linda Aranda Belliveau",
+"url": "https://kripalu.org/people/linda-aranda-belliveau",
+"status": "past"
+},
+{
+"name": "Linda Trichter Metcalf",
+"url": "https://kripalu.org/people/linda-trichter-metcalf",
+"status": "past"
+},
+{
+"name": "Linda Novick",
+"url": "https://kripalu.org/people/linda-novick",
+"status": "past"
+},
+{
+"name": "Margaret Paul",
+"url": "https://kripalu.org/people/margaret-paul",
+"status": "past"
+},
+{
+"name": "Rachel Schaeffer",
+"url": "https://kripalu.org/people/rachel-schaeffer",
+"status": "past"
+},
+{
+"name": "Rhonda Britten",
+"url": "https://kripalu.org/people/rhonda-britten",
+"status": "past"
+},
+{
+"name": "Sally Kempton",
+"url": "https://kripalu.org/people/sally-kempton",
+"status": "past"
+},
+{
+"name": "Shaun Laframboise",
+"url": "https://kripalu.org/people/shaun-laframboise",
+"status": "past"
+},
+{
+"name": "Snatam Kaur",
+"url": "https://kripalu.org/people/snatam-kaur",
+"status": "past"
+},
+{
+"name": "Martha Abbot",
+"url": "https://kripalu.org/people/martha-abbot",
+"status": "past"
+},
+{
+"name": "Tara Bennett Goleman",
+"url": "https://kripalu.org/people/tara-bennett-goleman",
+"status": "past"
+},
+{
+"name": "Bonnie Gintis",
+"url": "https://kripalu.org/people/bonnie-gintis",
+"status": "past"
+},
+{
+"name": "Joanne Spence",
+"url": "https://kripalu.org/people/joanne-spence",
+"status": "past"
+},
+{
+"name": "Arlene Schmid",
+"url": "https://kripalu.org/people/arlene-schmid",
+"status": "past"
+},
+{
+"name": "Nicole Culos Reed",
+"url": "https://kripalu.org/people/nicole-culos-reed",
+"status": "past"
+},
+{
+"name": "Monique Lang",
+"url": "https://kripalu.org/people/monique-lang",
+"status": "past"
+},
+{
+"name": "Rosy Mann",
+"url": "https://kripalu.org/people/rosy-mann",
+"status": "past"
+},
+{
+"name": "Kdz Kripalu Drummers",
+"url": "https://kripalu.org/people/kdz-kripalu-drummers",
+"status": "past"
+},
+{
+"name": "Ray Crist",
+"url": "https://kripalu.org/people/ray-crist",
+"status": "past"
+},
+{
+"name": "Elena Brower",
+"url": "https://kripalu.org/people/elena-brower",
+"status": "past"
+},
+{
+"name": "Jean Kristeller",
+"url": "https://kripalu.org/people/jean-kristeller",
+"status": "past"
+},
+{
+"name": "Vandita Kate Marchesiello",
+"url": "https://kripalu.org/people/vandita-kate-marchesiello",
+"status": "past"
+},
+{
+"name": "Allison Gemmel Laframboise",
+"url": "https://kripalu.org/people/allison-gemmel-laframboise",
+"status": "past"
+},
+{
+"name": "Deany Laliotis",
+"url": "https://kripalu.org/people/deany-laliotis",
+"status": "past"
+},
+{
+"name": "Rochelle Schieck",
+"url": "https://kripalu.org/people/rochelle-schieck",
+"status": "past"
+},
+{
+"name": "Matthew Daniell",
+"url": "https://kripalu.org/people/matthew-daniell",
+"status": "past"
+},
+{
+"name": "Maria Mendola",
+"url": "https://kripalu.org/people/maria-mendola",
+"status": "past"
+},
+{
+"name": "Ethan Nichtern",
+"url": "https://kripalu.org/people/ethan-nichtern",
+"status": "past"
+},
+{
+"name": "Kripalu Faculty",
+"url": "https://kripalu.org/people/kripalu-faculty",
+"status": "past"
+},
+{
+"name": "Maya Tiwari",
+"url": "https://kripalu.org/people/maya-tiwari",
+"status": "past"
+},
+{
+"name": "National Parkinson Foundation",
+"url": "https://kripalu.org/people/national-parkinson-foundation",
+"status": "past"
+},
+{
+"name": "Thomas Moore",
+"url": "https://kripalu.org/people/thomas-moore",
+"status": "past"
+},
+{
+"name": "Marc Mandel",
+"url": "https://kripalu.org/people/marc-mandel",
+"status": "past"
+},
+{
+"name": "Timothy Mccall",
+"url": "https://kripalu.org/people/timothy-mccall",
+"status": "past"
+},
+{
+"name": "David Harshada Wagner",
+"url": "https://kripalu.org/people/david-harshada-wagner",
+"status": "past"
+},
+{
+"name": "Sadie Nardini",
+"url": "https://kripalu.org/people/sadie-nardini",
+"status": "past"
+},
+{
+"name": "Karen Arp Sandel",
+"url": "https://kripalu.org/people/karen-arp-sandel",
+"status": "past"
+},
+{
+"name": "Leslie Kaminoff",
+"url": "https://kripalu.org/people/leslie-kaminoff",
+"status": "past"
+},
+{
+"name": "Debra Jensen",
+"url": "https://kripalu.org/people/debra-jensen",
+"status": "past"
+},
+{
+"name": "Dian Killian",
+"url": "https://kripalu.org/people/dian-killian",
+"status": "past"
+},
+{
+"name": "Mary Northey",
+"url": "https://kripalu.org/people/mary-northey",
+"status": "past"
+},
+{
+"name": "Aimee Gelinas",
+"url": "https://kripalu.org/people/aimee-gelinas",
+"status": "past"
+},
+{
+"name": "Guru Singh",
+"url": "https://kripalu.org/people/guru-singh",
+"status": "past"
+},
+{
+"name": "Lorin Roche",
+"url": "https://kripalu.org/people/lorin-roche",
+"status": "past"
+},
+{
+"name": "Daniel J Siegel",
+"url": "https://kripalu.org/people/daniel-j-siegel",
+"status": "past"
+},
+{
+"name": "Lesley Desaulniers",
+"url": "https://kripalu.org/people/lesley-desaulniers",
+"status": "past"
+},
+{
+"name": "Freddy Zental Weaver",
+"url": "https://kripalu.org/people/freddy-zental-weaver",
+"status": "past"
+},
+{
+"name": "Elsbeth Meuth",
+"url": "https://kripalu.org/people/elsbeth-meuth",
+"status": "past"
+},
+{
+"name": "Maria Broom",
+"url": "https://kripalu.org/people/maria-broom",
+"status": "past"
+},
+{
+"name": "Janis Abrahms Spring",
+"url": "https://kripalu.org/people/janis-abrahms-spring",
+"status": "past"
+},
+{
+"name": "Pandit Rajmani Tigunait",
+"url": "https://kripalu.org/people/pandit-rajmani-tigunait",
+"status": "past"
+},
+{
+"name": "Cleora Francis Oconnor",
+"url": "https://kripalu.org/people/cleora-francis-oconnor",
+"status": "past"
+},
+{
+"name": "Satta Jallah",
+"url": "https://kripalu.org/people/satta-jallah",
+"status": "past"
+},
+{
+"name": "Ainslie Macleod",
+"url": "https://kripalu.org/people/ainslie-macleod",
+"status": "past"
+},
+{
+"name": "Patricia L Gerbarg",
+"url": "https://kripalu.org/people/patricia-l-gerbarg",
+"status": "past"
+},
+{
+"name": "Gabrielle Bernstein",
+"url": "https://kripalu.org/people/gabrielle-bernstein",
+"status": "past"
+},
+{
+"name": "Laurie Gerber",
+"url": "https://kripalu.org/people/laurie-gerber",
+"status": "past"
+},
+{
+"name": "Eric Maisel",
+"url": "https://kripalu.org/people/eric-maisel",
+"status": "past"
+},
+{
+"name": "Jason Crandell",
+"url": "https://kripalu.org/people/jason-crandell",
+"status": "past"
+},
+{
+"name": "Carol Krucoff",
+"url": "https://kripalu.org/people/carol-krucoff",
+"status": "past"
+},
+{
+"name": "Kimberly Carson",
+"url": "https://kripalu.org/people/kimberly-carson",
+"status": "past"
+},
+{
+"name": "Demetri Velisarius",
+"url": "https://kripalu.org/people/demetri-velisarius",
+"status": "past"
+},
+{
+"name": "Mimi Solaire",
+"url": "https://kripalu.org/people/mimi-solaire",
+"status": "past"
+},
+{
+"name": "Antonio Sausys",
+"url": "https://kripalu.org/people/antonio-sausys",
+"status": "past"
+},
+{
+"name": "Annie B Kay",
+"url": "https://kripalu.org/people/annie-b-kay",
+"status": "past"
+},
+{
+"name": "Lillee Chandra",
+"url": "https://kripalu.org/people/lillee-chandra",
+"status": "past"
+},
+{
+"name": "Erica Mather",
+"url": "https://kripalu.org/people/erica-mather",
+"status": "past"
+},
+{
+"name": "Elysabeth Williamson",
+"url": "https://kripalu.org/people/elysabeth-williamson",
+"status": "past"
+},
+{
+"name": "Heidi Spear",
+"url": "https://kripalu.org/people/heidi-spear",
+"status": "past"
+},
+{
+"name": "Andrea Lieberstein",
+"url": "https://kripalu.org/people/andrea-lieberstein",
+"status": "past"
+},
+{
+"name": "Heather Sellers",
+"url": "https://kripalu.org/people/heather-sellers",
+"status": "past"
+},
+{
+"name": "Karen Drucker",
+"url": "https://kripalu.org/people/karen-drucker",
+"status": "past"
+},
+{
+"name": "Atma Jo Ann Levitt",
+"url": "https://kripalu.org/people/atma-jo-ann-levitt",
+"status": "past"
+},
+{
+"name": "Sarah B Stewart",
+"url": "https://kripalu.org/people/sarah-b-stewart",
+"status": "past"
+},
+{
+"name": "Shrila Leslie Luppino",
+"url": "https://kripalu.org/people/shrila-leslie-luppino",
+"status": "past"
+},
+{
+"name": "Margrit Mikulis Nd",
+"url": "https://kripalu.org/people/margrit-mikulis-nd",
+"status": "past"
+},
+{
+"name": "Karen Soltes",
+"url": "https://kripalu.org/people/karen-soltes",
+"status": "past"
+},
+{
+"name": "Lopon Chandra Easton",
+"url": "https://kripalu.org/people/lopon-chandra-easton",
+"status": "past"
+},
+{
+"name": "Kim Innes",
+"url": "https://kripalu.org/people/kim-innes",
+"status": "past"
+},
+{
+"name": "James S Gordon",
+"url": "https://kripalu.org/people/james-s-gordon",
+"status": "past"
+},
+{
+"name": "Terry Roth Schaff",
+"url": "https://kripalu.org/people/terry-roth-schaff",
+"status": "past"
+},
+{
+"name": "Mark Pettus",
+"url": "https://kripalu.org/people/mark-pettus",
+"status": "past"
+},
+{
+"name": "Diane Kovanda",
+"url": "https://kripalu.org/people/diane-kovanda",
+"status": "past"
+},
+{
+"name": "Shiva Das",
+"url": "https://kripalu.org/people/shiva-das",
+"status": "past"
+},
+{
+"name": "Peter Levine",
+"url": "https://kripalu.org/people/peter-levine",
+"status": "past"
+},
+{
+"name": "Ronnie Roc",
+"url": "https://kripalu.org/people/ronnie-roc",
+"status": "past"
+},
+{
+"name": "Cat Pacini",
+"url": "https://kripalu.org/people/cat-pacini",
+"status": "past"
+},
+{
+"name": "Leslie Salmon Jones",
+"url": "https://kripalu.org/people/leslie-salmon-jones",
+"status": "past"
+},
+{
+"name": "Jeff W Jones",
+"url": "https://kripalu.org/people/jeff-w-jones",
+"status": "past"
+},
+{
+"name": "Deb Dana",
+"url": "https://kripalu.org/people/deb-dana",
+"status": "past"
+},
+{
+"name": "Aviva Romm",
+"url": "https://kripalu.org/people/aviva-romm",
+"status": "past"
+},
+{
+"name": "Dinneen Viggiano",
+"url": "https://kripalu.org/people/dinneen-viggiano",
+"status": "past"
+},
+{
+"name": "Lara Tupper",
+"url": "https://kripalu.org/people/lara-tupper",
+"status": "past"
+},
+{
+"name": "Ronald J Frederick",
+"url": "https://kripalu.org/people/ronald-j-frederick",
+"status": "past"
+},
+{
+"name": "Paul Selig",
+"url": "https://kripalu.org/people/paul-selig",
+"status": "past"
+},
+{
+"name": "Steven Leonard",
+"url": "https://kripalu.org/people/steven-leonard",
+"status": "past"
+},
+{
+"name": "Owen O Suilleabhain",
+"url": "https://kripalu.org/people/owen-o-suilleabhain",
+"status": "past"
+},
+{
+"name": "David Bedrick",
+"url": "https://kripalu.org/people/david-bedrick",
+"status": "past"
+},
+{
+"name": "Caverly Morgan",
+"url": "https://kripalu.org/people/caverly-morgan",
+"status": "past"
+},
+{
+"name": "Meg Agnew",
+"url": "https://kripalu.org/people/meg-agnew",
+"status": "past"
+},
+{
+"name": "Cindy L Parrish",
+"url": "https://kripalu.org/people/cindy-l-parrish",
+"status": "past"
+},
+{
+"name": "Suellen Hamkins",
+"url": "https://kripalu.org/people/suellen-hamkins",
+"status": "past"
+},
+{
+"name": "Kia Miller",
+"url": "https://kripalu.org/people/kia-miller",
+"status": "past"
+},
+{
+"name": "Robert Meikyo Rosenbaum",
+"url": "https://kripalu.org/people/robert-meikyo-rosenbaum",
+"status": "past"
+},
+{
+"name": "Dana Sturtevant",
+"url": "https://kripalu.org/people/dana-sturtevant",
+"status": "past"
+},
+{
+"name": "Rajeshwari Gretchen Carmel",
+"url": "https://kripalu.org/people/rajeshwari-gretchen-carmel",
+"status": "past"
+},
+{
+"name": "Colette Baron Reid",
+"url": "https://kripalu.org/people/colette-baron-reid",
+"status": "past"
+},
+{
+"name": "David Whyte",
+"url": "https://kripalu.org/people/david-whyte",
+"status": "past"
+},
+{
+"name": "Drew Ramsey Md",
+"url": "https://kripalu.org/people/drew-ramsey-md",
+"status": "past"
+},
+{
+"name": "Nadine Mcneil",
+"url": "https://kripalu.org/people/nadine-mcneil",
+"status": "past"
+},
+{
+"name": "Howard C Cutler",
+"url": "https://kripalu.org/people/howard-c-cutler",
+"status": "past"
+},
+{
+"name": "Niisa Morton",
+"url": "https://kripalu.org/people/niisa-morton",
+"status": "past"
+},
+{
+"name": "Deborah Lubetkin",
+"url": "https://kripalu.org/people/deborah-lubetkin",
+"status": "past"
+},
+{
+"name": "Licia Sky",
+"url": "https://kripalu.org/people/licia-sky",
+"status": "past"
+},
+{
+"name": "Todd Boston",
+"url": "https://kripalu.org/people/todd-boston",
+"status": "past"
+},
+{
+"name": "Sage Brody",
+"url": "https://kripalu.org/people/sage-brody",
+"status": "past"
+},
+{
+"name": "Heather Bilotta",
+"url": "https://kripalu.org/people/heather-bilotta",
+"status": "past"
+},
+{
+"name": "Jan L Watkins",
+"url": "https://kripalu.org/people/jan-l-watkins",
+"status": "past"
+},
+{
+"name": "Esther Gokhale",
+"url": "https://kripalu.org/people/esther-gokhale",
+"status": "past"
+},
+{
+"name": "Catherine Cook Cottone",
+"url": "https://kripalu.org/people/catherine-cook-cottone",
+"status": "past"
+},
+{
+"name": "Mark Roule",
+"url": "https://kripalu.org/people/mark-roule",
+"status": "past"
+},
+{
+"name": "Allison English",
+"url": "https://kripalu.org/people/allison-english",
+"status": "past"
+},
+{
+"name": "Shirley Telles",
+"url": "https://kripalu.org/people/shirley-telles",
+"status": "past"
+},
+{
+"name": "Matthew Dicks",
+"url": "https://kripalu.org/people/matthew-dicks",
+"status": "past"
+},
+{
+"name": "Jeanne Heileman",
+"url": "https://kripalu.org/people/jeanne-heileman",
+"status": "past"
+},
+{
+"name": "Hilary Kinavey",
+"url": "https://kripalu.org/people/hilary-kinavey",
+"status": "past"
+},
+{
+"name": "Patricia Kinser",
+"url": "https://kripalu.org/people/patricia-kinser",
+"status": "past"
+},
+{
+"name": "B N Gangadhar",
+"url": "https://kripalu.org/people/b-n-gangadhar",
+"status": "past"
+},
+{
+"name": "Noirin Ni Riain",
+"url": "https://kripalu.org/people/noirin-ni-riain",
+"status": "past"
+},
+{
+"name": "Marc Weiner",
+"url": "https://kripalu.org/people/marc-weiner",
+"status": "past"
+},
+{
+"name": "Karen Paolino Correia",
+"url": "https://kripalu.org/people/karen-paolino-correia",
+"status": "past"
+},
+{
+"name": "Toshiro Miura",
+"url": "https://kripalu.org/people/toshiro-miura",
+"status": "past"
+},
+{
+"name": "Vicki R",
+"url": "https://kripalu.org/people/vicki-r",
+"status": "past"
+},
+{
+"name": "Linda W",
+"url": "https://kripalu.org/people/linda-w",
+"status": "past"
+},
+{
+"name": "Tzivia G",
+"url": "https://kripalu.org/people/tzivia-g",
+"status": "past"
+},
+{
+"name": "Tracey E",
+"url": "https://kripalu.org/people/tracey-e",
+"status": "past"
+},
+{
+"name": "Marsha L",
+"url": "https://kripalu.org/people/marsha-l",
+"status": "past"
+},
+{
+"name": "Elizabeth H",
+"url": "https://kripalu.org/people/elizabeth-h",
+"status": "past"
+},
+{
+"name": "Bobbe E",
+"url": "https://kripalu.org/people/bobbe-e",
+"status": "past"
+},
+{
+"name": "Anne H",
+"url": "https://kripalu.org/people/anne-h",
+"status": "past"
+},
+{
+"name": "Joyce B",
+"url": "https://kripalu.org/people/joyce-b",
+"status": "past"
+},
+{
+"name": "Lauren M",
+"url": "https://kripalu.org/people/lauren-m",
+"status": "past"
+},
+{
+"name": "David S",
+"url": "https://kripalu.org/people/david-s",
+"status": "past"
+},
+{
+"name": "Gina K",
+"url": "https://kripalu.org/people/gina-k",
+"status": "past"
+},
+{
+"name": "Sandy P",
+"url": "https://kripalu.org/people/sandy-p",
+"status": "past"
+},
+{
+"name": "Patrice F",
+"url": "https://kripalu.org/people/patrice-f",
+"status": "past"
+},
+{
+"name": "Socorro C",
+"url": "https://kripalu.org/people/socorro-c",
+"status": "past"
+},
+{
+"name": "Amy S",
+"url": "https://kripalu.org/people/amy-s",
+"status": "past"
+},
+{
+"name": "Laurel M",
+"url": "https://kripalu.org/people/laurel-m",
+"status": "past"
+},
+{
+"name": "John L",
+"url": "https://kripalu.org/people/john-l",
+"status": "past"
+},
+{
+"name": "Joyce T",
+"url": "https://kripalu.org/people/joyce-t",
+"status": "past"
+},
+{
+"name": "Chrisanne D",
+"url": "https://kripalu.org/people/chrisanne-d",
+"status": "past"
+},
+{
+"name": "Carrie Ann B",
+"url": "https://kripalu.org/people/carrie-ann-b",
+"status": "past"
+},
+{
+"name": "Ilene G",
+"url": "https://kripalu.org/people/ilene-g",
+"status": "past"
+},
+{
+"name": "Cynthia B",
+"url": "https://kripalu.org/people/cynthia-b",
+"status": "past"
+},
+{
+"name": "Janine D",
+"url": "https://kripalu.org/people/janine-d",
+"status": "past"
+},
+{
+"name": "Mackenzie W",
+"url": "https://kripalu.org/people/mackenzie-w",
+"status": "past"
+},
+{
+"name": "Mike E",
+"url": "https://kripalu.org/people/mike-e",
+"status": "past"
+},
+{
+"name": "Azadeh T",
+"url": "https://kripalu.org/people/azadeh-t",
+"status": "past"
+},
+{
+"name": "Sultana C",
+"url": "https://kripalu.org/people/sultana-c",
+"status": "past"
+},
+{
+"name": "Arthur G",
+"url": "https://kripalu.org/people/arthur-g",
+"status": "past"
+},
+{
+"name": "Mario M",
+"url": "https://kripalu.org/people/mario-m",
+"status": "past"
+},
+{
+"name": "Kateryna S",
+"url": "https://kripalu.org/people/kateryna-s",
+"status": "past"
+},
+{
+"name": "Lauren Z",
+"url": "https://kripalu.org/people/lauren-z",
+"status": "past"
+},
+{
+"name": "Darlene R",
+"url": "https://kripalu.org/people/darlene-r",
+"status": "past"
+},
+{
+"name": "Decora S",
+"url": "https://kripalu.org/people/decora-s",
+"status": "past"
+},
+{
+"name": "Kristen S And Mike K",
+"url": "https://kripalu.org/people/kristen-s-and-mike-k",
+"status": "past"
+},
+{
+"name": "Phyllis S",
+"url": "https://kripalu.org/people/phyllis-s",
+"status": "past"
+},
+{
+"name": "John W",
+"url": "https://kripalu.org/people/john-w",
+"status": "past"
+},
+{
+"name": "Emily S",
+"url": "https://kripalu.org/people/emily-s",
+"status": "past"
+},
+{
+"name": "Yvonne B",
+"url": "https://kripalu.org/people/yvonne-b",
+"status": "past"
+},
+{
+"name": "Lin W",
+"url": "https://kripalu.org/people/lin-w",
+"status": "past"
+},
+{
+"name": "Randy S",
+"url": "https://kripalu.org/people/randy-s",
+"status": "past"
+},
+{
+"name": "Josh W",
+"url": "https://kripalu.org/people/josh-w",
+"status": "past"
+},
+{
+"name": "Rachel S",
+"url": "https://kripalu.org/people/rachel-s",
+"status": "past"
+},
+{
+"name": "Kate S",
+"url": "https://kripalu.org/people/kate-s",
+"status": "past"
+},
+{
+"name": "Daren S",
+"url": "https://kripalu.org/people/daren-s",
+"status": "past"
+},
+{
+"name": "Aron S",
+"url": "https://kripalu.org/people/aron-s",
+"status": "past"
+},
+{
+"name": "John M And Rhumdoul R",
+"url": "https://kripalu.org/people/john-m-and-rhumdoul-r",
+"status": "past"
+},
+{
+"name": "Sharon S",
+"url": "https://kripalu.org/people/sharon-s",
+"status": "past"
+},
+{
+"name": "Gabriel G",
+"url": "https://kripalu.org/people/gabriel-g",
+"status": "past"
+},
+{
+"name": "Sandra H",
+"url": "https://kripalu.org/people/sandra-h",
+"status": "past"
+},
+{
+"name": "Toshiro M",
+"url": "https://kripalu.org/people/toshiro-m",
+"status": "past"
+},
+{
+"name": "Lorraine C",
+"url": "https://kripalu.org/people/lorraine-c",
+"status": "past"
+},
+{
+"name": "Melody Moore",
+"url": "https://kripalu.org/people/melody-moore",
+"status": "past"
+},
+{
+"name": "Stephen Cope",
+"url": "https://kripalu.org/people/stephen-cope",
+"status": "past"
+},
+{
+"name": "Timothy J Beyer",
+"url": "https://kripalu.org/people/timothy-j-beyer",
+"status": "past"
+},
+{
+"name": "Dr Robert Saper",
+"url": "https://kripalu.org/people/dr-robert-saper",
+"status": "past"
+},
+{
+"name": "Gerard C Buffo Md Facr",
+"url": "https://kripalu.org/people/gerard-c-buffo-md-facr",
+"status": "past"
+},
+{
+"name": "Travis Eliot",
+"url": "https://kripalu.org/people/travis-eliot",
+"status": "past"
+},
+{
+"name": "Phoebe Atkinson",
+"url": "https://kripalu.org/people/phoebe-atkinson",
+"status": "past"
+},
+{
+"name": "John C Platt",
+"url": "https://kripalu.org/people/john-c-platt",
+"status": "past"
+},
+{
+"name": "Barbara De Angelis",
+"url": "https://kripalu.org/people/barbara-de-angelis",
+"status": "past"
+},
+{
+"name": "Don Sebastian Pauccar Flores",
+"url": "https://kripalu.org/people/don-sebastian-pauccar-flores",
+"status": "past"
+},
+{
+"name": "Suzanne Koven",
+"url": "https://kripalu.org/people/suzanne-koven",
+"status": "past"
+},
+{
+"name": "Lisa Weinert",
+"url": "https://kripalu.org/people/lisa-weinert",
+"status": "past"
+},
+{
+"name": "Rose Kress",
+"url": "https://kripalu.org/people/rose-kress",
+"status": "past"
+},
+{
+"name": "Jana Long",
+"url": "https://kripalu.org/people/jana-long",
+"status": "past"
+},
+{
+"name": "Andres Gonzalez",
+"url": "https://kripalu.org/people/andres-gonzalez",
+"status": "past"
+},
+{
+"name": "Portland Helmich",
+"url": "https://kripalu.org/people/portland-helmich",
+"status": "past"
+},
+{
+"name": "Mary Beth O",
+"url": "https://kripalu.org/people/mary-beth-o",
+"status": "past"
+},
+{
+"name": "Baxter Bell",
+"url": "https://kripalu.org/people/baxter-bell",
+"status": "past"
+},
+{
+"name": "Michael And Phyllis",
+"url": "https://kripalu.org/people/michael-and-phyllis",
+"status": "past"
+},
+{
+"name": "Christina P",
+"url": "https://kripalu.org/people/christina-p",
+"status": "past"
+},
+{
+"name": "Becky Cushing",
+"url": "https://kripalu.org/people/becky-cushing",
+"status": "past"
+},
+{
+"name": "Beth J",
+"url": "https://kripalu.org/people/beth-j",
+"status": "past"
+},
+{
+"name": "Monique Schubert",
+"url": "https://kripalu.org/people/monique-schubert",
+"status": "past"
+},
+{
+"name": "Crystal Mccreary",
+"url": "https://kripalu.org/people/crystal-mccreary",
+"status": "past"
+},
+{
+"name": "Jacalyn Prete",
+"url": "https://kripalu.org/people/jacalyn-prete",
+"status": "past"
+},
+{
+"name": "Jennifer K",
+"url": "https://kripalu.org/people/jennifer-k",
+"status": "past"
+},
+{
+"name": "Ananda Das",
+"url": "https://kripalu.org/people/ananda-das",
+"status": "past"
+},
+{
+"name": "Jaya Lakshmi",
+"url": "https://kripalu.org/people/jaya-lakshmi",
+"status": "past"
+},
+{
+"name": "Steffany Moonaz",
+"url": "https://kripalu.org/people/steffany-moonaz",
+"status": "past"
+},
+{
+"name": "Chris Streeter",
+"url": "https://kripalu.org/people/chris-streeter",
+"status": "past"
+},
+{
+"name": "Neha Gothe",
+"url": "https://kripalu.org/people/neha-gothe",
+"status": "past"
+},
+{
+"name": "Suzanne Danhauer",
+"url": "https://kripalu.org/people/suzanne-danhauer",
+"status": "past"
+},
+{
+"name": "Erik Groessl",
+"url": "https://kripalu.org/people/erik-groessl",
+"status": "past"
+},
+{
+"name": "Michael R",
+"url": "https://kripalu.org/people/michael-r",
+"status": "past"
+},
+{
+"name": "Jenny W",
+"url": "https://kripalu.org/people/jenny-w",
+"status": "past"
+},
+{
+"name": "Reza G",
+"url": "https://kripalu.org/people/reza-g",
+"status": "past"
+},
+{
+"name": "Dianne Bondy",
+"url": "https://kripalu.org/people/dianne-bondy",
+"status": "past"
+},
+{
+"name": "Teo Drake",
+"url": "https://kripalu.org/people/teo-drake",
+"status": "past"
+},
+{
+"name": "Devadas Labreque",
+"url": "https://kripalu.org/people/devadas-labreque",
+"status": "past"
+},
+{
+"name": "Dory Cote",
+"url": "https://kripalu.org/people/dory-cote",
+"status": "past"
+},
+{
+"name": "Jim White",
+"url": "https://kripalu.org/people/jim-white",
+"status": "past"
+},
+{
+"name": "Stephen Redmon",
+"url": "https://kripalu.org/people/stephen-redmon",
+"status": "past"
+},
+{
+"name": "Ann Swanson",
+"url": "https://kripalu.org/people/ann-swanson",
+"status": "past"
+},
+{
+"name": "Kim Childs",
+"url": "https://kripalu.org/people/kim-childs",
+"status": "past"
+},
+{
+"name": "Susan Piver",
+"url": "https://kripalu.org/people/susan-piver",
+"status": "past"
+},
+{
+"name": "Karlee Fain",
+"url": "https://kripalu.org/people/karlee-fain",
+"status": "past"
+},
+{
+"name": "Philip Goldberg",
+"url": "https://kripalu.org/people/philip-goldberg",
+"status": "past"
+},
+{
+"name": "Kyla Pearce",
+"url": "https://kripalu.org/people/kyla-pearce",
+"status": "past"
+},
+{
+"name": "Kim Baker",
+"url": "https://kripalu.org/people/kim-baker",
+"status": "past"
+},
+{
+"name": "Arturo Peal",
+"url": "https://kripalu.org/people/arturo-peal",
+"status": "past"
+},
+{
+"name": "Sarah Platt Finger",
+"url": "https://kripalu.org/people/sarah-platt-finger",
+"status": "past"
+},
+{
+"name": "Sara Auster",
+"url": "https://kripalu.org/people/sara-auster",
+"status": "past"
+},
+{
+"name": "Keshia Abraham",
+"url": "https://kripalu.org/people/keshia-abraham",
+"status": "past"
+},
+{
+"name": "Mantra Marz",
+"url": "https://kripalu.org/people/mantra-marz",
+"status": "past"
+},
+{
+"name": "Tymi Howard Bender",
+"url": "https://kripalu.org/people/tymi-howard-bender",
+"status": "past"
+},
+{
+"name": "Niyonu Spann",
+"url": "https://kripalu.org/people/niyonu-spann",
+"status": "past"
+},
+{
+"name": "Abigail Ifatola Jefferson",
+"url": "https://kripalu.org/people/abigail-ifatola-jefferson",
+"status": "past"
+},
+{
+"name": "Octavia Raheem",
+"url": "https://kripalu.org/people/octavia-raheem",
+"status": "past"
+},
+{
+"name": "Kyle Cease",
+"url": "https://kripalu.org/people/kyle-cease",
+"status": "past"
+},
+{
+"name": "Sil Reynolds",
+"url": "https://kripalu.org/people/sil-reynolds",
+"status": "past"
+},
+{
+"name": "Eliza Reynolds",
+"url": "https://kripalu.org/people/eliza-reynolds",
+"status": "past"
+},
+{
+"name": "Erica Arce",
+"url": "https://kripalu.org/people/erica-arce",
+"status": "past"
+},
+{
+"name": "Carolyne O",
+"url": "https://kripalu.org/people/carolyne-o",
+"status": "past"
+},
+{
+"name": "Kathryn Costa",
+"url": "https://kripalu.org/people/kathryn-costa",
+"status": "past"
+},
+{
+"name": "Keshav Chauhan",
+"url": "https://kripalu.org/people/keshav-chauhan",
+"status": "past"
+},
+{
+"name": "Barbara Vacarr",
+"url": "https://kripalu.org/people/barbara-vacarr",
+"status": "past"
+},
+{
+"name": "Marla Teyolia",
+"url": "https://kripalu.org/people/marla-teyolia",
+"status": "past"
+},
+{
+"name": "Tasuma Laura Goodwin",
+"url": "https://kripalu.org/people/tasuma-laura-goodwin",
+"status": "past"
+},
+{
+"name": "Allie Middleton",
+"url": "https://kripalu.org/people/allie-middleton",
+"status": "past"
+},
+{
+"name": "Lisa Uebelacker",
+"url": "https://kripalu.org/people/lisa-uebelacker",
+"status": "past"
+},
+{
+"name": "Karen Mustian",
+"url": "https://kripalu.org/people/karen-mustian",
+"status": "past"
+},
+{
+"name": "Stephanie Sohl",
+"url": "https://kripalu.org/people/stephanie-sohl",
+"status": "past"
+},
+{
+"name": "Rabbi Sheila Peltz Weinberg",
+"url": "https://kripalu.org/people/rabbi-sheila-peltz-weinberg",
+"status": "past"
+},
+{
+"name": "Natasha Tasha Judson",
+"url": "https://kripalu.org/people/natasha-tasha-judson",
+"status": "past"
+},
+{
+"name": "Liz Mazlish",
+"url": "https://kripalu.org/people/liz-mazlish",
+"status": "past"
+},
+{
+"name": "Ruby Warrington",
+"url": "https://kripalu.org/people/ruby-warrington",
+"status": "past"
+},
+{
+"name": "Alexandra Roxo",
+"url": "https://kripalu.org/people/alexandra-roxo",
+"status": "past"
+},
+{
+"name": "Lisa Jakub",
+"url": "https://kripalu.org/people/lisa-jakub",
+"status": "past"
+},
+{
+"name": "Melina Meza",
+"url": "https://kripalu.org/people/melina-meza",
+"status": "past"
+},
+{
+"name": "Mirabai Bush",
+"url": "https://kripalu.org/people/mirabai-bush",
+"status": "past"
+},
+{
+"name": "Anne Novak",
+"url": "https://kripalu.org/people/anne-novak",
+"status": "past"
+},
+{
+"name": "Paul Browde",
+"url": "https://kripalu.org/people/paul-browde",
+"status": "past"
+},
+{
+"name": "Karen Abramson",
+"url": "https://kripalu.org/people/karen-abramson",
+"status": "past"
+},
+{
+"name": "Stephanie Lopez",
+"url": "https://kripalu.org/people/stephanie-lopez",
+"status": "past"
+},
+{
+"name": "Maeve M",
+"url": "https://kripalu.org/people/maeve-m",
+"status": "past"
+},
+{
+"name": "Kate Johnson",
+"url": "https://kripalu.org/people/kate-johnson",
+"status": "past"
+},
+{
+"name": "Suleika Jaouad",
+"url": "https://kripalu.org/people/suleika-jaouad",
+"status": "past"
+},
+{
+"name": "Kathie Madonna Swift",
+"url": "https://kripalu.org/people/kathie-madonna-swift",
+"status": "past"
+},
+{
+"name": "Rose Weaver",
+"url": "https://kripalu.org/people/rose-weaver",
+"status": "past"
+},
+{
+"name": "Megan M And Mollie M",
+"url": "https://kripalu.org/people/megan-m-and-mollie-m",
+"status": "past"
+},
+{
+"name": "Ramsay Pierce",
+"url": "https://kripalu.org/people/ramsay-pierce",
+"status": "past"
+},
+{
+"name": "Mary Hannah Parkman",
+"url": "https://kripalu.org/people/mary-hannah-parkman",
+"status": "past"
+},
+{
+"name": "Bill Philipps",
+"url": "https://kripalu.org/people/bill-philipps",
+"status": "past"
+},
+{
+"name": "Lara Heimann",
+"url": "https://kripalu.org/people/lara-heimann",
+"status": "past"
+},
+{
+"name": "Antra Kalnins Borofsky",
+"url": "https://kripalu.org/people/antra-kalnins-borofsky",
+"status": "past"
+},
+{
+"name": "Jonathan Fitzgordon",
+"url": "https://kripalu.org/people/jonathan-fitzgordon",
+"status": "past"
+},
+{
+"name": "Richard Borofsky",
+"url": "https://kripalu.org/people/richard-borofsky",
+"status": "past"
+},
+{
+"name": "Dayna J",
+"url": "https://kripalu.org/people/dayna-j",
+"status": "past"
+},
+{
+"name": "Liana Sterling",
+"url": "https://kripalu.org/people/liana-sterling",
+"status": "past"
+},
+{
+"name": "Feather P",
+"url": "https://kripalu.org/people/feather-p",
+"status": "past"
+},
+{
+"name": "Camille Maurine",
+"url": "https://kripalu.org/people/camille-maurine",
+"status": "past"
+},
+{
+"name": "Shawn Godfrey",
+"url": "https://kripalu.org/people/shawn-godfrey",
+"status": "past"
+},
+{
+"name": "Paul Mills",
+"url": "https://kripalu.org/people/paul-mills",
+"status": "past"
+},
+{
+"name": "Dianne Neumark Sztainer",
+"url": "https://kripalu.org/people/dianne-neumark-sztainer",
+"status": "past"
+},
+{
+"name": "Sundar Balasubramanian",
+"url": "https://kripalu.org/people/sundar-balasubramanian",
+"status": "past"
+},
+{
+"name": "Moun Dsimone",
+"url": "https://kripalu.org/people/moun-dsimone",
+"status": "past"
+},
+{
+"name": "Tom Myers",
+"url": "https://kripalu.org/people/tom-myers",
+"status": "past"
+},
+{
+"name": "Bethany Ryker",
+"url": "https://kripalu.org/people/bethany-ryker",
+"status": "past"
+},
+{
+"name": "Dougall Fraser",
+"url": "https://kripalu.org/people/dougall-fraser",
+"status": "past"
+},
+{
+"name": "Michael Hebb",
+"url": "https://kripalu.org/people/michael-hebb",
+"status": "past"
+},
+{
+"name": "Suzanne Duran Crelin",
+"url": "https://kripalu.org/people/suzanne-duran-crelin",
+"status": "past"
+},
+{
+"name": "Angel Grant",
+"url": "https://kripalu.org/people/angel-grant",
+"status": "past"
+},
+{
+"name": "Ira Israel",
+"url": "https://kripalu.org/people/ira-israel",
+"status": "past"
+},
+{
+"name": "Nina Crist",
+"url": "https://kripalu.org/people/nina-crist",
+"status": "past"
+},
+{
+"name": "Ron Young",
+"url": "https://kripalu.org/people/ron-young",
+"status": "past"
+},
+{
+"name": "Ann Fleuchaus",
+"url": "https://kripalu.org/people/ann-fleuchaus",
+"status": "past"
+},
+{
+"name": "Ralph De La Rosa",
+"url": "https://kripalu.org/people/ralph-de-la-rosa",
+"status": "past"
+},
+{
+"name": "Andy Cahill",
+"url": "https://kripalu.org/people/andy-cahill",
+"status": "past"
+},
+{
+"name": "Sally Taylor",
+"url": "https://kripalu.org/people/sally-taylor",
+"status": "past"
+},
+{
+"name": "Eliza Lay Ryan",
+"url": "https://kripalu.org/people/eliza-lay-ryan",
+"status": "past"
+},
+{
+"name": "Sarah Gigante",
+"url": "https://kripalu.org/people/sarah-gigante",
+"status": "past"
+},
+{
+"name": "Jayson Gaddis",
+"url": "https://kripalu.org/people/jayson-gaddis",
+"status": "past"
+},
+{
+"name": "Kristen C",
+"url": "https://kripalu.org/people/kristen-c",
+"status": "past"
+},
+{
+"name": "Susannah Beattie",
+"url": "https://kripalu.org/people/susannah-beattie",
+"status": "past"
+},
+{
+"name": "John Seelye",
+"url": "https://kripalu.org/people/john-seelye",
+"status": "past"
+},
+{
+"name": "Matt Kahn",
+"url": "https://kripalu.org/people/matt-kahn",
+"status": "past"
+},
+{
+"name": "Ross Rosenberg",
+"url": "https://kripalu.org/people/ross-rosenberg",
+"status": "past"
+},
+{
+"name": "Indu Arora",
+"url": "https://kripalu.org/people/indu-arora",
+"status": "past"
+},
+{
+"name": "Macy C",
+"url": "https://kripalu.org/people/macy-c",
+"status": "past"
+},
+{
+"name": "Shasta Nelson",
+"url": "https://kripalu.org/people/shasta-nelson",
+"status": "past"
+},
+{
+"name": "Dana Campbell",
+"url": "https://kripalu.org/people/dana-campbell",
+"status": "past"
+},
+{
+"name": "Laura Sewall",
+"url": "https://kripalu.org/people/laura-sewall",
+"status": "past"
+},
+{
+"name": "Candace Jennings",
+"url": "https://kripalu.org/people/candace-jennings",
+"status": "past"
+},
+{
+"name": "Cecilia Nugent",
+"url": "https://kripalu.org/people/cecilia-nugent",
+"status": "past"
+},
+{
+"name": "Robyn Youkilis",
+"url": "https://kripalu.org/people/robyn-youkilis",
+"status": "past"
+},
+{
+"name": "Leslie Booker",
+"url": "https://kripalu.org/people/leslie-booker",
+"status": "past"
+},
+{
+"name": "Yogacharya Ellen Grace Obrian",
+"url": "https://kripalu.org/people/yogacharya-ellen-grace-obrian",
+"status": "past"
+},
+{
+"name": "Raei B",
+"url": "https://kripalu.org/people/raei-b",
+"status": "past"
+},
+{
+"name": "Deron D",
+"url": "https://kripalu.org/people/deron-d",
+"status": "past"
+},
+{
+"name": "Amy Dilalla",
+"url": "https://kripalu.org/people/amy-dilalla",
+"status": "past"
+},
+{
+"name": "Danielle Rothman",
+"url": "https://kripalu.org/people/danielle-rothman",
+"status": "past"
+},
+{
+"name": "Mindy Veissid",
+"url": "https://kripalu.org/people/mindy-veissid",
+"status": "past"
+},
+{
+"name": "Cindy O",
+"url": "https://kripalu.org/people/cindy-o",
+"status": "past"
+},
+{
+"name": "Cathy W",
+"url": "https://kripalu.org/people/cathy-w",
+"status": "past"
+},
+{
+"name": "Stacey Hoffer",
+"url": "https://kripalu.org/people/stacey-hoffer",
+"status": "past"
+},
+{
+"name": "Sigrid Olsen",
+"url": "https://kripalu.org/people/sigrid-olsen",
+"status": "past"
+},
+{
+"name": "Suzy Becker",
+"url": "https://kripalu.org/people/suzy-becker",
+"status": "past"
+},
+{
+"name": "Brian H",
+"url": "https://kripalu.org/people/brian-h",
+"status": "past"
+},
+{
+"name": "Michael B",
+"url": "https://kripalu.org/people/michael-b",
+"status": "past"
+},
+{
+"name": "Michael Sein",
+"url": "https://kripalu.org/people/michael-sein",
+"status": "past"
+},
+{
+"name": "Rev Angel Kyodo Williams",
+"url": "https://kripalu.org/people/rev-angel-kyodo-williams",
+"status": "past"
+},
+{
+"name": "Radleigh Valentine",
+"url": "https://kripalu.org/people/radleigh-valentine",
+"status": "past"
+},
+{
+"name": "Melanie Burns",
+"url": "https://kripalu.org/people/melanie-burns",
+"status": "past"
+},
+{
+"name": "Rose Cratsley",
+"url": "https://kripalu.org/people/rose-cratsley",
+"status": "past"
+},
+{
+"name": "Tom Gillette",
+"url": "https://kripalu.org/people/tom-gillette",
+"status": "past"
+},
+{
+"name": "Alexandra Desiato",
+"url": "https://kripalu.org/people/alexandra-desiato",
+"status": "past"
+},
+{
+"name": "Liza Bertini",
+"url": "https://kripalu.org/people/liza-bertini",
+"status": "past"
+},
+{
+"name": "Rachel Estapa",
+"url": "https://kripalu.org/people/rachel-estapa",
+"status": "past"
+},
+{
+"name": "Glen De Los Reyes",
+"url": "https://kripalu.org/people/glen-de-los-reyes",
+"status": "past"
+},
+{
+"name": "Crystal L Park",
+"url": "https://kripalu.org/people/crystal-l-park",
+"status": "past"
+},
+{
+"name": "Jennifer Webb",
+"url": "https://kripalu.org/people/jennifer-webb",
+"status": "past"
+},
+{
+"name": "Jennifer Hanawald",
+"url": "https://kripalu.org/people/jennifer-hanawald",
+"status": "past"
+},
+{
+"name": "Nya P",
+"url": "https://kripalu.org/people/nya-p",
+"status": "past"
+},
+{
+"name": "Valarie Kaur",
+"url": "https://kripalu.org/people/valarie-kaur",
+"status": "past"
+},
+{
+"name": "Mary Hammerstein Shantprem",
+"url": "https://kripalu.org/people/mary-hammerstein-shantprem",
+"status": "past"
+},
+{
+"name": "Leigh F Hanke",
+"url": "https://kripalu.org/people/leigh-f-hanke",
+"status": "past"
+},
+{
+"name": "Aaron Rose",
+"url": "https://kripalu.org/people/aaron-rose",
+"status": "past"
+},
+{
+"name": "Ahmed Jabali Nash",
+"url": "https://kripalu.org/people/ahmed-jabali-nash",
+"status": "past"
+},
+{
+"name": "Carrie Grossman Dayashila",
+"url": "https://kripalu.org/people/carrie-grossman-dayashila",
+"status": "past"
+},
+{
+"name": "Cantor Lizzie Shammash",
+"url": "https://kripalu.org/people/cantor-lizzie-shammash",
+"status": "past"
+},
+{
+"name": "Lisette Cooper",
+"url": "https://kripalu.org/people/lisette-cooper",
+"status": "past"
+},
+{
+"name": "Melinda Matzell Grannan",
+"url": "https://kripalu.org/people/melinda-matzell-grannan",
+"status": "past"
+},
+{
+"name": "Rha Goddess",
+"url": "https://kripalu.org/people/rha-goddess",
+"status": "past"
+},
+{
+"name": "Leslie E Korn",
+"url": "https://kripalu.org/people/leslie-e-korn",
+"status": "past"
+},
+{
+"name": "Carl Rubino",
+"url": "https://kripalu.org/people/carl-rubino",
+"status": "past"
+},
+{
+"name": "Rabbi Shefa Gold",
+"url": "https://kripalu.org/people/rabbi-shefa-gold",
+"status": "past"
+},
+{
+"name": "Robert Mulhall",
+"url": "https://kripalu.org/people/robert-mulhall",
+"status": "past"
+},
+{
+"name": "Latham Thomas",
+"url": "https://kripalu.org/people/latham-thomas",
+"status": "past"
+},
+{
+"name": "Brianna Rose",
+"url": "https://kripalu.org/people/brianna-rose",
+"status": "past"
+},
+{
+"name": "Sherry Sidoti",
+"url": "https://kripalu.org/people/sherry-sidoti",
+"status": "past"
+},
+{
+"name": "Paul Foxman Phd",
+"url": "https://kripalu.org/people/paul-foxman-phd",
+"status": "past"
+},
+{
+"name": "Ken Wentworth",
+"url": "https://kripalu.org/people/ken-wentworth",
+"status": "past"
+},
+{
+"name": "Liz Witham",
+"url": "https://kripalu.org/people/liz-witham",
+"status": "past"
+},
+{
+"name": "Cynthia Maltenfort",
+"url": "https://kripalu.org/people/cynthia-maltenfort",
+"status": "past"
+},
+{
+"name": "Nancy Macphee",
+"url": "https://kripalu.org/people/nancy-macphee",
+"status": "past"
+},
+{
+"name": "Zachary Adams",
+"url": "https://kripalu.org/people/zachary-adams",
+"status": "past"
+},
+{
+"name": "Mark Gerow",
+"url": "https://kripalu.org/people/mark-gerow",
+"status": "past"
+},
+{
+"name": "Lisa C",
+"url": "https://kripalu.org/people/lisa-c",
+"status": "past"
+},
+{
+"name": "Koya Webb",
+"url": "https://kripalu.org/people/koya-webb",
+"status": "past"
+},
+{
+"name": "Londin Angel Winters",
+"url": "https://kripalu.org/people/londin-angel-winters",
+"status": "past"
+},
+{
+"name": "Justin Patrick Pierce",
+"url": "https://kripalu.org/people/justin-patrick-pierce",
+"status": "past"
+},
+{
+"name": "Leslie Kelson",
+"url": "https://kripalu.org/people/leslie-kelson",
+"status": "past"
+},
+{
+"name": "Amah Devi",
+"url": "https://kripalu.org/people/amah-devi",
+"status": "past"
+},
+{
+"name": "Robyn Tiger",
+"url": "https://kripalu.org/people/robyn-tiger",
+"status": "past"
+},
+{
+"name": "Aaron Wolf",
+"url": "https://kripalu.org/people/aaron-wolf",
+"status": "past"
+},
+{
+"name": "Rj Sadowski Jr",
+"url": "https://kripalu.org/people/rj-sadowski-jr",
+"status": "past"
+},
+{
+"name": "Giulia Pline",
+"url": "https://kripalu.org/people/giulia-pline",
+"status": "past"
+},
+{
+"name": "Trishan H",
+"url": "https://kripalu.org/people/trishan-h",
+"status": "past"
+},
+{
+"name": "Christopher Byrne",
+"url": "https://kripalu.org/people/christopher-byrne",
+"status": "past"
+},
+{
+"name": "Lawrence Stern",
+"url": "https://kripalu.org/people/lawrence-stern",
+"status": "past"
+},
+{
+"name": "Kim Krans",
+"url": "https://kripalu.org/people/kim-krans",
+"status": "past"
+},
+{
+"name": "Lisa Danahy",
+"url": "https://kripalu.org/people/lisa-danahy",
+"status": "past"
+},
+{
+"name": "Donna Bernadine",
+"url": "https://kripalu.org/people/donna-bernadine",
+"status": "past"
+},
+{
+"name": "Jessica Valant",
+"url": "https://kripalu.org/people/jessica-valant",
+"status": "past"
+},
+{
+"name": "Kimberly Ann Johnson",
+"url": "https://kripalu.org/people/kimberly-ann-johnson",
+"status": "past"
+},
+{
+"name": "Bee Bosnak",
+"url": "https://kripalu.org/people/bee-bosnak",
+"status": "past"
+},
+{
+"name": "Bess Matassa",
+"url": "https://kripalu.org/people/bess-matassa",
+"status": "past"
+},
+{
+"name": "Adama Sesay",
+"url": "https://kripalu.org/people/adama-sesay",
+"status": "past"
+},
+{
+"name": "Brandon Alter",
+"url": "https://kripalu.org/people/brandon-alter",
+"status": "past"
+},
+{
+"name": "Jackie Farrell",
+"url": "https://kripalu.org/people/jackie-farrell",
+"status": "past"
+},
+{
+"name": "Leah Guy",
+"url": "https://kripalu.org/people/leah-guy",
+"status": "past"
+},
+{
+"name": "Muneeza Ahmed",
+"url": "https://kripalu.org/people/muneeza-ahmed",
+"status": "past"
+},
+{
+"name": "Meredith Stephens",
+"url": "https://kripalu.org/people/meredith-stephens",
+"status": "past"
+},
+{
+"name": "John Smrtic",
+"url": "https://kripalu.org/people/john-smrtic",
+"status": "past"
+},
+{
+"name": "Dan Doty",
+"url": "https://kripalu.org/people/dan-doty",
+"status": "past"
+},
+{
+"name": "Owen Marcus",
+"url": "https://kripalu.org/people/owen-marcus",
+"status": "past"
+},
+{
+"name": "Kathleen Williams",
+"url": "https://kripalu.org/people/kathleen-williams",
+"status": "past"
+},
+{
+"name": "Donald Altman",
+"url": "https://kripalu.org/people/donald-altman",
+"status": "past"
+},
+{
+"name": "Lindsay Ashmun",
+"url": "https://kripalu.org/people/lindsay-ashmun",
+"status": "past"
+},
+{
+"name": "Eileen L",
+"url": "https://kripalu.org/people/eileen-l",
+"status": "past"
+},
+{
+"name": "Romy Phillips",
+"url": "https://kripalu.org/people/romy-phillips",
+"status": "past"
+},
+{
+"name": "Adam Jackson",
+"url": "https://kripalu.org/people/adam-jackson",
+"status": "past"
+},
+{
+"name": "Jason Mackenzie",
+"url": "https://kripalu.org/people/jason-mackenzie",
+"status": "past"
+},
+{
+"name": "Aubert Bastiat",
+"url": "https://kripalu.org/people/aubert-bastiat",
+"status": "past"
+},
+{
+"name": "John J Prendergast",
+"url": "https://kripalu.org/people/john-j-prendergast",
+"status": "past"
+},
+{
+"name": "Christiane Prendergast",
+"url": "https://kripalu.org/people/christiane-prendergast",
+"status": "past"
+},
+{
+"name": "Rachel Cargle",
+"url": "https://kripalu.org/people/rachel-cargle",
+"status": "past"
+},
+{
+"name": "Guayana P",
+"url": "https://kripalu.org/people/guayana-p",
+"status": "past"
+},
+{
+"name": "Ruth Q Wolever",
+"url": "https://kripalu.org/people/ruth-q-wolever",
+"status": "past"
+},
+{
+"name": "Beth Bock",
+"url": "https://kripalu.org/people/beth-bock",
+"status": "past"
+},
+{
+"name": "Jojo Yy Kwok",
+"url": "https://kripalu.org/people/jojo-yy-kwok",
+"status": "past"
+},
+{
+"name": "Sarah Anfora",
+"url": "https://kripalu.org/people/sarah-anfora",
+"status": "past"
+},
+{
+"name": "Kimberli Boyd",
+"url": "https://kripalu.org/people/kimberli-boyd",
+"status": "past"
+},
+{
+"name": "Kelley Palmer",
+"url": "https://kripalu.org/people/kelley-palmer",
+"status": "past"
+},
+{
+"name": "Natanya Bittman",
+"url": "https://kripalu.org/people/natanya-bittman",
+"status": "past"
+},
+{
+"name": "Robin Wall Kimmerer",
+"url": "https://kripalu.org/people/robin-wall-kimmerer",
+"status": "past"
+},
+{
+"name": "Nathan And Brett",
+"url": "https://kripalu.org/people/nathan-and-brett",
+"status": "past"
+},
+{
+"name": "Michelle Cassandra Johnson",
+"url": "https://kripalu.org/people/michelle-cassandra-johnson",
+"status": "past"
+},
+{
+"name": "Marion F",
+"url": "https://kripalu.org/people/marion-f",
+"status": "past"
+},
+{
+"name": "Regina",
+"url": "https://kripalu.org/people/regina",
+"status": "past"
+},
+{
+"name": "Stan Strickland",
+"url": "https://kripalu.org/people/stan-strickland",
+"status": "past"
+},
+{
+"name": "Akasha",
+"url": "https://kripalu.org/people/akasha",
+"status": "past"
+},
+{
+"name": "Gayle Karen Young",
+"url": "https://kripalu.org/people/gayle-karen-young",
+"status": "past"
+},
+{
+"name": "Elissa Berrol",
+"url": "https://kripalu.org/people/elissa-berrol",
+"status": "past"
+},
+{
+"name": "Rona Luo",
+"url": "https://kripalu.org/people/rona-luo",
+"status": "past"
+},
+{
+"name": "Karen Mahon Carrington",
+"url": "https://kripalu.org/people/karen-mahon-carrington",
+"status": "past"
+},
+{
+"name": "Melina Laboucan Massimo",
+"url": "https://kripalu.org/people/melina-laboucan-massimo",
+"status": "past"
+},
+{
+"name": "Nick Demeris",
+"url": "https://kripalu.org/people/nick-demeris",
+"status": "past"
+},
+{
+"name": "Rebekka Goldsmith",
+"url": "https://kripalu.org/people/rebekka-goldsmith",
+"status": "past"
+},
+{
+"name": "Corey Kupfer",
+"url": "https://kripalu.org/people/corey-kupfer",
+"status": "past"
+},
+{
+"name": "Nneka Julia",
+"url": "https://kripalu.org/people/nneka-julia",
+"status": "past"
+},
+{
+"name": "Alexandra Elle",
+"url": "https://kripalu.org/people/alexandra-elle",
+"status": "past"
+},
+{
+"name": "Jamila Reddy",
+"url": "https://kripalu.org/people/jamila-reddy",
+"status": "past"
+},
+{
+"name": "Josefina Sanders",
+"url": "https://kripalu.org/people/josefina-sanders",
+"status": "past"
+},
+{
+"name": "Mariel Buque",
+"url": "https://kripalu.org/people/mariel-buque",
+"status": "past"
+},
+{
+"name": "Akaya Windwood",
+"url": "https://kripalu.org/people/akaya-windwood",
+"status": "past"
+},
+{
+"name": "Sarah Crowell",
+"url": "https://kripalu.org/people/sarah-crowell",
+"status": "past"
+},
+{
+"name": "Devyani Saltzman",
+"url": "https://kripalu.org/people/devyani-saltzman",
+"status": "past"
+},
+{
+"name": "Brynn Saito",
+"url": "https://kripalu.org/people/brynn-saito",
+"status": "past"
+},
+{
+"name": "Anusha Wijeyakumar",
+"url": "https://kripalu.org/people/anusha-wijeyakumar",
+"status": "past"
+},
+{
+"name": "Ana Krieger",
+"url": "https://kripalu.org/people/ana-krieger",
+"status": "past"
+},
+{
+"name": "Gina Paige",
+"url": "https://kripalu.org/people/gina-paige",
+"status": "past"
+},
+{
+"name": "Sanovia Muhammad",
+"url": "https://kripalu.org/people/sanovia-muhammad",
+"status": "past"
+},
+{
+"name": "Tamara Cress",
+"url": "https://kripalu.org/people/tamara-cress",
+"status": "past"
+},
+{
+"name": "Ebony Qualls",
+"url": "https://kripalu.org/people/ebony-qualls",
+"status": "past"
+},
+{
+"name": "Jacqueline Oselen",
+"url": "https://kripalu.org/people/jacqueline-oselen",
+"status": "past"
+},
+{
+"name": "Malaika Maitland",
+"url": "https://kripalu.org/people/malaika-maitland",
+"status": "past"
+},
+{
+"name": "Paula Hines",
+"url": "https://kripalu.org/people/paula-hines",
+"status": "past"
+},
+{
+"name": "Phyllis Jeffers Coly",
+"url": "https://kripalu.org/people/phyllis-jeffers-coly",
+"status": "past"
+},
+{
+"name": "Robin Downes",
+"url": "https://kripalu.org/people/robin-downes",
+"status": "past"
+},
+{
+"name": "Tamara Jeffries",
+"url": "https://kripalu.org/people/tamara-jeffries",
+"status": "past"
+},
+{
+"name": "Ericka Harris",
+"url": "https://kripalu.org/people/ericka-harris",
+"status": "past"
+},
+{
+"name": "Terry Harris",
+"url": "https://kripalu.org/people/terry-harris",
+"status": "past"
+},
+{
+"name": "Darius Naigamwalla",
+"url": "https://kripalu.org/people/darius-naigamwalla",
+"status": "past"
+},
+{
+"name": "Karen Detemple",
+"url": "https://kripalu.org/people/karen-detemple",
+"status": "past"
+},
+{
+"name": "Sherri Doucette",
+"url": "https://kripalu.org/people/sherri-doucette",
+"status": "past"
+},
+{
+"name": "Queen Afua",
+"url": "https://kripalu.org/people/queen-afua",
+"status": "past"
+},
+{
+"name": "Jessamyn Stanley",
+"url": "https://kripalu.org/people/jessamyn-stanley",
+"status": "past"
+},
+{
+"name": "Prema Mckeever",
+"url": "https://kripalu.org/people/prema-mckeever",
+"status": "past"
+},
+{
+"name": "Nirodha Stearns",
+"url": "https://kripalu.org/people/nirodha-stearns",
+"status": "past"
+},
+{
+"name": "Neil Niten Ferguson",
+"url": "https://kripalu.org/people/neil-niten-ferguson",
+"status": "past"
+},
+{
+"name": "Polly Jiacovelli",
+"url": "https://kripalu.org/people/polly-jiacovelli",
+"status": "past"
+},
+{
+"name": "Pooja Virani",
+"url": "https://kripalu.org/people/pooja-virani",
+"status": "past"
+},
+{
+"name": "Raudhah Rahman",
+"url": "https://kripalu.org/people/raudhah-rahman",
+"status": "past"
+},
+{
+"name": "Jonah Paquette",
+"url": "https://kripalu.org/people/jonah-paquette",
+"status": "past"
+},
+{
+"name": "Zhenevere Sophia Dao",
+"url": "https://kripalu.org/people/zhenevere-sophia-dao",
+"status": "past"
+},
+{
+"name": "Nichol Joy Chase",
+"url": "https://kripalu.org/people/nichol-joy-chase",
+"status": "past"
+},
+{
+"name": "Joy Okoye",
+"url": "https://kripalu.org/people/joy-okoye",
+"status": "past"
+},
+{
+"name": "Suzanne Jones",
+"url": "https://kripalu.org/people/suzanne-jones",
+"status": "past"
+},
+{
+"name": "Abdul Muhammad",
+"url": "https://kripalu.org/people/abdul-muhammad",
+"status": "past"
+},
+{
+"name": "Adrienne Maree Brown",
+"url": "https://kripalu.org/people/adrienne-maree-brown",
+"status": "past"
+},
+{
+"name": "Sole",
+"url": "https://kripalu.org/people/sole",
+"status": "past"
+},
+{
+"name": "Eniafe Isis Adewale",
+"url": "https://kripalu.org/people/eniafe-isis-adewale",
+"status": "past"
+},
+{
+"name": "Mia Park",
+"url": "https://kripalu.org/people/mia-park",
+"status": "past"
+},
+{
+"name": "Millana Snow",
+"url": "https://kripalu.org/people/millana-snow",
+"status": "past"
+},
+{
+"name": "Seher Sikandar",
+"url": "https://kripalu.org/people/seher-sikandar",
+"status": "past"
+},
+{
+"name": "Yoli Maya Yeh",
+"url": "https://kripalu.org/people/yoli-maya-yeh",
+"status": "past"
+},
+{
+"name": "Lizzie Lasater",
+"url": "https://kripalu.org/people/lizzie-lasater",
+"status": "past"
+},
+{
+"name": "Lauren Ash",
+"url": "https://kripalu.org/people/lauren-ash",
+"status": "past"
+},
+{
+"name": "Mia Herndon",
+"url": "https://kripalu.org/people/mia-herndon",
+"status": "past"
+},
+{
+"name": "Tanya Markul",
+"url": "https://kripalu.org/people/tanya-markul",
+"status": "past"
+},
+{
+"name": "Sarah Suatoni",
+"url": "https://kripalu.org/people/sarah-suatoni",
+"status": "past"
+},
+{
+"name": "Kelli Love",
+"url": "https://kripalu.org/people/kelli-love",
+"status": "past"
+},
+{
+"name": "David Yuan",
+"url": "https://kripalu.org/people/david-yuan",
+"status": "past"
+},
+{
+"name": "Jai Sugrim",
+"url": "https://kripalu.org/people/jai-sugrim",
+"status": "past"
+},
+{
+"name": "Sharon Landrith",
+"url": "https://kripalu.org/people/sharon-landrith",
+"status": "past"
+},
+{
+"name": "Concetta Troskie",
+"url": "https://kripalu.org/people/concetta-troskie",
+"status": "past"
+},
+{
+"name": "Holistic Centers Network",
+"url": "https://kripalu.org/people/holistic-centers-network",
+"status": "past"
+},
+{
+"name": "Sangeeta Vallabhan",
+"url": "https://kripalu.org/people/sangeeta-vallabhan",
+"status": "past"
+},
+{
+"name": "Yuri Hernandez",
+"url": "https://kripalu.org/people/yuri-hernandez",
+"status": "past"
+},
+{
+"name": "Emily Cohen",
+"url": "https://kripalu.org/people/emily-cohen",
+"status": "past"
+},
+{
+"name": "Ellen Rose",
+"url": "https://kripalu.org/people/ellen-rose",
+"status": "past"
+},
+{
+"name": "Stacy Mclean",
+"url": "https://kripalu.org/people/stacy-mclean",
+"status": "past"
+},
+{
+"name": "Eli Buren",
+"url": "https://kripalu.org/people/eli-buren",
+"status": "past"
+},
+{
+"name": "Craig Holliday",
+"url": "https://kripalu.org/people/craig-holliday",
+"status": "past"
+},
+{
+"name": "Brooke Sullivan",
+"url": "https://kripalu.org/people/brooke-sullivan",
+"status": "past"
+},
+{
+"name": "Shyam Ranganathan",
+"url": "https://kripalu.org/people/shyam-ranganathan",
+"status": "past"
+},
+{
+"name": "Esther Alley",
+"url": "https://kripalu.org/people/esther-alley",
+"status": "past"
+},
+{
+"name": "Mingtong Gu",
+"url": "https://kripalu.org/people/mingtong-gu",
+"status": "past"
+},
+{
+"name": "Lisa Love",
+"url": "https://kripalu.org/people/lisa-love",
+"status": "past"
+},
+{
+"name": "Dinabandhu Patton Sarley",
+"url": "https://kripalu.org/people/dinabandhu-patton-sarley",
+"status": "past"
+},
+{
+"name": "Shannon Kaiser",
+"url": "https://kripalu.org/people/shannon-kaiser",
+"status": "past"
+},
+{
+"name": "Amanda Masterpaul",
+"url": "https://kripalu.org/people/amanda-masterpaul",
+"status": "past"
+},
+{
+"name": "Franklin Ellis",
+"url": "https://kripalu.org/people/franklin-ellis",
+"status": "past"
+},
+{
+"name": "Mike Sagun",
+"url": "https://kripalu.org/people/mike-sagun",
+"status": "past"
+},
+{
+"name": "John Oconnor",
+"url": "https://kripalu.org/people/john-oconnor",
+"status": "past"
+},
+{
+"name": "Brad Golphenee",
+"url": "https://kripalu.org/people/brad-golphenee",
+"status": "past"
+},
+{
+"name": "Junauda Petrus",
+"url": "https://kripalu.org/people/junauda-petrus",
+"status": "past"
+},
+{
+"name": "Liz Oppedijk",
+"url": "https://kripalu.org/people/liz-oppedijk",
+"status": "past"
+},
+{
+"name": "Holly Mccormack",
+"url": "https://kripalu.org/people/holly-mccormack",
+"status": "past"
+},
+{
+"name": "Anne Cox",
+"url": "https://kripalu.org/people/anne-cox",
+"status": "past"
+},
+{
+"name": "Shilpa Babbar",
+"url": "https://kripalu.org/people/shilpa-babbar",
+"status": "past"
+},
+{
+"name": "Wah",
+"url": "https://kripalu.org/people/wah",
+"status": "past"
+},
+{
+"name": "Arawana Hayashi",
+"url": "https://kripalu.org/people/arawana-hayashi",
+"status": "past"
+},
+{
+"name": "Spiritual Gayz",
+"url": "https://kripalu.org/people/spiritual-gayz",
+"status": "past"
+},
+{
+"name": "Aaron Athey",
+"url": "https://kripalu.org/people/aaron-athey",
+"status": "past"
+},
+{
+"name": "Chief Jake Singer",
+"url": "https://kripalu.org/people/chief-jake-singer",
+"status": "past"
+},
+{
+"name": "Lev Natan",
+"url": "https://kripalu.org/people/lev-natan",
+"status": "past"
+},
+{
+"name": "Lauren Harkness",
+"url": "https://kripalu.org/people/lauren-harkness",
+"status": "past"
+},
+{
+"name": "Zachary Kraft Shinn",
+"url": "https://kripalu.org/people/zachary-kraft-shinn",
+"status": "past"
+},
+{
+"name": "Suzen Wolf",
+"url": "https://kripalu.org/people/suzen-wolf",
+"status": "past"
+},
+{
+"name": "Balachundhar Subramaniam",
+"url": "https://kripalu.org/people/balachundhar-subramaniam",
+"status": "past"
+},
+{
+"name": "Akshay Anand",
+"url": "https://kripalu.org/people/akshay-anand",
+"status": "past"
+},
+{
+"name": "Daheia Barr Anderson",
+"url": "https://kripalu.org/people/daheia-barr-anderson",
+"status": "past"
+},
+{
+"name": "Phyllicia Bonanno",
+"url": "https://kripalu.org/people/phyllicia-bonanno",
+"status": "past"
+},
+{
+"name": "Brendan Morgan",
+"url": "https://kripalu.org/people/brendan-morgan",
+"status": "past"
+},
+{
+"name": "Erica Jago",
+"url": "https://kripalu.org/people/erica-jago",
+"status": "past"
+},
+{
+"name": "Victoria Erickson",
+"url": "https://kripalu.org/people/victoria-erickson",
+"status": "past"
+},
+{
+"name": "Kathryn Leblanc",
+"url": "https://kripalu.org/people/kathryn-leblanc",
+"status": "past"
+},
+{
+"name": "Cindy Beers",
+"url": "https://kripalu.org/people/cindy-beers",
+"status": "past"
+},
+{
+"name": "Donna Y Ferris",
+"url": "https://kripalu.org/people/donna-y-ferris",
+"status": "past"
+},
+{
+"name": "Don Jose Ruiz",
+"url": "https://kripalu.org/people/don-jose-ruiz",
+"status": "past"
+},
+{
+"name": "Tracy Gaudet",
+"url": "https://kripalu.org/people/tracy-gaudet",
+"status": "past"
+},
+{
+"name": "John Roedel",
+"url": "https://kripalu.org/people/john-roedel",
+"status": "past"
+},
+{
+"name": "Christine Alfred",
+"url": "https://kripalu.org/people/christine-alfred",
+"status": "past"
+},
+{
+"name": "Lisa Lister",
+"url": "https://kripalu.org/people/lisa-lister",
+"status": "past"
+},
+{
+"name": "Earth Ephect",
+"url": "https://kripalu.org/people/earth-ephect",
+"status": "past"
+},
+{
+"name": "Chip Conley",
+"url": "https://kripalu.org/people/chip-conley",
+"status": "past"
+},
+{
+"name": "Machiel Klerk",
+"url": "https://kripalu.org/people/machiel-klerk",
+"status": "past"
+},
+{
+"name": "Justin Morreale",
+"url": "https://kripalu.org/people/justin-morreale",
+"status": "past"
+},
+{
+"name": "Carol Oneil",
+"url": "https://kripalu.org/people/carol-oneil",
+"status": "past"
+},
+{
+"name": "Margaret Behan",
+"url": "https://kripalu.org/people/margaret-behan",
+"status": "past"
+},
+{
+"name": "Heather Bruegl",
+"url": "https://kripalu.org/people/heather-bruegl",
+"status": "past"
+},
+{
+"name": "Kristine Hill",
+"url": "https://kripalu.org/people/kristine-hill",
+"status": "past"
+},
+{
+"name": "Diane Malaspina",
+"url": "https://kripalu.org/people/diane-malaspina",
+"status": "past"
+},
+{
+"name": "Claire Bidwell Smith",
+"url": "https://kripalu.org/people/claire-bidwell-smith",
+"status": "past"
+},
+{
+"name": "Mari Andrew",
+"url": "https://kripalu.org/people/mari-andrew",
+"status": "past"
+},
+{
+"name": "Lisa Long",
+"url": "https://kripalu.org/people/lisa-long",
+"status": "past"
+},
+{
+"name": "Julia Pearring",
+"url": "https://kripalu.org/people/julia-pearring",
+"status": "past"
+},
+{
+"name": "Mark T Vande Hei",
+"url": "https://kripalu.org/people/mark-t-vande-hei",
+"status": "past"
+},
+{
+"name": "Dr Shefali Tsabary",
+"url": "https://kripalu.org/people/dr-shefali-tsabary",
+"status": "past"
+},
+{
+"name": "Finlay Wilson",
+"url": "https://kripalu.org/people/finlay-wilson",
+"status": "past"
+},
+{
+"name": "Farrah Fawcett",
+"url": "https://kripalu.org/people/farrah-fawcett",
+"status": "past"
+},
+{
+"name": "Tristan Katz",
+"url": "https://kripalu.org/people/tristan-katz",
+"status": "past"
+},
+{
+"name": "Maryann Dimarco",
+"url": "https://kripalu.org/people/maryann-dimarco",
+"status": "past"
+},
+{
+"name": "Adriana Rizzolo",
+"url": "https://kripalu.org/people/adriana-rizzolo",
+"status": "past"
+},
+{
+"name": "Clearlight Gerald",
+"url": "https://kripalu.org/people/clearlight-gerald",
+"status": "past"
+},
+{
+"name": "Kristoffer Kc Carter",
+"url": "https://kripalu.org/people/kristoffer-kc-carter",
+"status": "past"
+},
+{
+"name": "David Kam",
+"url": "https://kripalu.org/people/david-kam",
+"status": "past"
+},
+{
+"name": "Rabbi Jill Hammer",
+"url": "https://kripalu.org/people/rabbi-jill-hammer",
+"status": "past"
+},
+{
+"name": "Steven Hosking",
+"url": "https://kripalu.org/people/steven-hosking",
+"status": "past"
+},
+{
+"name": "Shelly Prosko",
+"url": "https://kripalu.org/people/shelly-prosko",
+"status": "past"
+},
+{
+"name": "Johnny Gillespie",
+"url": "https://kripalu.org/people/johnny-gillespie",
+"status": "past"
+},
+{
+"name": "Erica Garcia Abergel",
+"url": "https://kripalu.org/people/erica-garcia-abergel",
+"status": "past"
+},
+{
+"name": "Nicole Rafferty",
+"url": "https://kripalu.org/people/nicole-rafferty",
+"status": "past"
+},
+{
+"name": "Samantha Diver",
+"url": "https://kripalu.org/people/samantha-diver",
+"status": "past"
+},
+{
+"name": "Waylon Lewis",
+"url": "https://kripalu.org/people/waylon-lewis",
+"status": "past"
+},
+{
+"name": "David Sauvage",
+"url": "https://kripalu.org/people/david-sauvage",
+"status": "past"
+},
+{
+"name": "Thorald Koren",
+"url": "https://kripalu.org/people/thorald-koren",
+"status": "past"
+},
+{
+"name": "Isaac Koren",
+"url": "https://kripalu.org/people/isaac-koren",
+"status": "past"
+},
+{
+"name": "Lara Land",
+"url": "https://kripalu.org/people/lara-land",
+"status": "past"
+},
+{
+"name": "Jill Stratton",
+"url": "https://kripalu.org/people/jill-stratton",
+"status": "past"
+},
+{
+"name": "Jenna Lindbo",
+"url": "https://kripalu.org/people/jenna-lindbo",
+"status": "past"
+},
+{
+"name": "Susan Masino Phd",
+"url": "https://kripalu.org/people/susan-masino-phd",
+"status": "past"
+},
+{
+"name": "Georgia Ede Md",
+"url": "https://kripalu.org/people/georgia-ede-md",
+"status": "past"
+},
+{
+"name": "Jeffrey D Rediger Md Mdiv",
+"url": "https://kripalu.org/people/jeffrey-d-rediger-md-mdiv",
+"status": "past"
+},
+{
+"name": "Jus Crea Giammarino Nd",
+"url": "https://kripalu.org/people/jus-crea-giammarino-nd",
+"status": "past"
+},
+{
+"name": "Laurie Heatherington Phd",
+"url": "https://kripalu.org/people/laurie-heatherington-phd",
+"status": "past"
+},
+{
+"name": "Lisanne Finston",
+"url": "https://kripalu.org/people/lisanne-finston",
+"status": "past"
+},
+{
+"name": "Tiokasin Ghosthorse",
+"url": "https://kripalu.org/people/tiokasin-ghosthorse",
+"status": "past"
+},
+{
+"name": "Ietef Vita",
+"url": "https://kripalu.org/people/ietef-vita",
+"status": "past"
+},
+{
+"name": "Ian Sanderson",
+"url": "https://kripalu.org/people/ian-sanderson",
+"status": "past"
+},
+{
+"name": "Antonia Estela Perez",
+"url": "https://kripalu.org/people/antonia-estela-perez",
+"status": "past"
+},
+{
+"name": "Rowen White",
+"url": "https://kripalu.org/people/rowen-white",
+"status": "past"
+},
+{
+"name": "Nazirahk Amen",
+"url": "https://kripalu.org/people/nazirahk-amen",
+"status": "past"
+},
+{
+"name": "Cynthia Price",
+"url": "https://kripalu.org/people/cynthia-price",
+"status": "past"
+},
+{
+"name": "Aisha Shillingford",
+"url": "https://kripalu.org/people/aisha-shillingford",
+"status": "past"
+},
+{
+"name": "Joan White Hansen",
+"url": "https://kripalu.org/people/joan-white-hansen",
+"status": "past"
+},
+{
+"name": "Andrea Cole",
+"url": "https://kripalu.org/people/andrea-cole",
+"status": "past"
+},
+{
+"name": "Mary Platt",
+"url": "https://kripalu.org/people/mary-platt",
+"status": "past"
+},
+{
+"name": "Lisa Howard",
+"url": "https://kripalu.org/people/lisa-howard",
+"status": "past"
+},
+{
+"name": "Alison M Whitehead",
+"url": "https://kripalu.org/people/alison-m-whitehead",
+"status": "past"
+},
+{
+"name": "Megan Mack Nicholson",
+"url": "https://kripalu.org/people/megan-mack-nicholson",
+"status": "past"
+},
+{
+"name": "Prue Rustean",
+"url": "https://kripalu.org/people/prue-rustean",
+"status": "past"
+},
+{
+"name": "Lara Christine",
+"url": "https://kripalu.org/people/lara-christine",
+"status": "past"
+},
+{
+"name": "Tererai Trent",
+"url": "https://kripalu.org/people/tererai-trent",
+"status": "past"
+},
+{
+"name": "Jane Esselstyn",
+"url": "https://kripalu.org/people/jane-esselstyn",
+"status": "past"
+},
+{
+"name": "Ann Crile Esselstyn",
+"url": "https://kripalu.org/people/ann-crile-esselstyn",
+"status": "past"
+},
+{
+"name": "Dra Rocio Rosales Meza",
+"url": "https://kripalu.org/people/dra-rocio-rosales-meza",
+"status": "past"
+},
+{
+"name": "Lisa Kim",
+"url": "https://kripalu.org/people/lisa-kim",
+"status": "past"
+},
+{
+"name": "Amba Alianahi",
+"url": "https://kripalu.org/people/amba-alianahi",
+"status": "past"
+},
+{
+"name": "Steve Sherman",
+"url": "https://kripalu.org/people/steve-sherman",
+"status": "past"
+},
+{
+"name": "Nisha Moodley",
+"url": "https://kripalu.org/people/nisha-moodley",
+"status": "past"
+},
+{
+"name": "Danny Fluker",
+"url": "https://kripalu.org/people/danny-fluker",
+"status": "past"
+},
+{
+"name": "Kathryn Tucker",
+"url": "https://kripalu.org/people/kathryn-tucker",
+"status": "past"
+},
+{
+"name": "Shawn J Moore",
+"url": "https://kripalu.org/people/shawn-j-moore",
+"status": "past"
+},
+{
+"name": "Peter Wayne",
+"url": "https://kripalu.org/people/peter-wayne",
+"status": "past"
+},
+{
+"name": "Catherine Justice",
+"url": "https://kripalu.org/people/catherine-justice",
+"status": "past"
+},
+{
+"name": "Lacretia Dye",
+"url": "https://kripalu.org/people/lacretia-dye",
+"status": "past"
+},
+{
+"name": "Rachelle Pean",
+"url": "https://kripalu.org/people/rachelle-pean",
+"status": "past"
+},
+{
+"name": "Amaratma Singh Khalsa",
+"url": "https://kripalu.org/people/amaratma-singh-khalsa",
+"status": "past"
+},
+{
+"name": "Herpreet Kaur Thind",
+"url": "https://kripalu.org/people/herpreet-kaur-thind",
+"status": "past"
+},
+{
+"name": "Shoshana Jedwab",
+"url": "https://kripalu.org/people/shoshana-jedwab",
+"status": "past"
+},
+{
+"name": "Keren Eldad",
+"url": "https://kripalu.org/people/keren-eldad",
+"status": "past"
+},
+{
+"name": "Eric J Roseen Dc Phd",
+"url": "https://kripalu.org/people/eric-j-roseen-dc-phd",
+"status": "past"
+},
+{
+"name": "Jean Jacques Gabriel",
+"url": "https://kripalu.org/people/jean-jacques-gabriel",
+"status": "past"
+},
+{
+"name": "Amina Naru",
+"url": "https://kripalu.org/people/amina-naru",
+"status": "past"
+},
+{
+"name": "Kwasi Boaitey",
+"url": "https://kripalu.org/people/kwasi-boaitey",
+"status": "past"
+},
+{
+"name": "Jean Jyotika Skeels",
+"url": "https://kripalu.org/people/jean-jyotika-skeels",
+"status": "past"
+},
+{
+"name": "Janeen Anderson",
+"url": "https://kripalu.org/people/janeen-anderson",
+"status": "past"
+},
+{
+"name": "Elisha Tichelle",
+"url": "https://kripalu.org/people/elisha-tichelle",
+"status": "past"
+},
+{
+"name": "Jillian Walker",
+"url": "https://kripalu.org/people/jillian-walker",
+"status": "past"
+},
+{
+"name": "Rabbi Claudia Kreiman",
+"url": "https://kripalu.org/people/rabbi-claudia-kreiman",
+"status": "past"
+},
+{
+"name": "Gwen Rebbeck",
+"url": "https://kripalu.org/people/gwen-rebbeck",
+"status": "past"
+},
+{
+"name": "Michael Brown",
+"url": "https://kripalu.org/people/michael-brown",
+"status": "past"
+},
+{
+"name": "Lama Rod Owens",
+"url": "https://kripalu.org/people/lama-rod-owens",
+"status": "past"
+},
+{
+"name": "Donna Rustigian Mac",
+"url": "https://kripalu.org/people/donna-rustigian-mac",
+"status": "past"
+},
+{
+"name": "Xavier Dagba",
+"url": "https://kripalu.org/people/xavier-dagba",
+"status": "past"
+},
+{
+"name": "Rebecca Smanga",
+"url": "https://kripalu.org/people/rebecca-smanga",
+"status": "past"
+},
+{
+"name": "Ava Taylor",
+"url": "https://kripalu.org/people/ava-taylor",
+"status": "past"
+},
+{
+"name": "Leslie Baker",
+"url": "https://kripalu.org/people/leslie-baker",
+"status": "past"
+},
+{
+"name": "Carole Murko",
+"url": "https://kripalu.org/people/carole-murko",
+"status": "past"
+},
+{
+"name": "Ji Hyang Padma",
+"url": "https://kripalu.org/people/ji-hyang-padma",
+"status": "past"
+},
+{
+"name": "Halli Faulkner",
+"url": "https://kripalu.org/people/halli-faulkner",
+"status": "past"
+},
+{
+"name": "Catherine Miller",
+"url": "https://kripalu.org/people/catherine-miller",
+"status": "past"
+},
+{
+"name": "Meryl Hayton",
+"url": "https://kripalu.org/people/meryl-hayton",
+"status": "past"
+},
+{
+"name": "Lillian Lennox",
+"url": "https://kripalu.org/people/lillian-lennox",
+"status": "past"
+},
+{
+"name": "Kaveri Barros",
+"url": "https://kripalu.org/people/kaveri-barros",
+"status": "past"
+},
+{
+"name": "Justin Green",
+"url": "https://kripalu.org/people/justin-green",
+"status": "past"
+},
+{
+"name": "Caroline Duncan",
+"url": "https://kripalu.org/people/caroline-duncan",
+"status": "past"
+},
+{
+"name": "Matthew Lyons",
+"url": "https://kripalu.org/people/matthew-lyons",
+"status": "past"
+},
+{
+"name": "Monica Singh Avram",
+"url": "https://kripalu.org/people/monica-singh-avram",
+"status": "past"
+},
+{
+"name": "Mary Egan",
+"url": "https://kripalu.org/people/mary-egan",
+"status": "past"
+},
+{
+"name": "Shirronda Almeida",
+"url": "https://kripalu.org/people/shirronda-almeida",
+"status": "past"
+},
+{
+"name": "Tara Lanich Labrie",
+"url": "https://kripalu.org/people/tara-lanich-labrie",
+"status": "past"
+},
+{
+"name": "Abigail Hurst",
+"url": "https://kripalu.org/people/abigail-hurst",
+"status": "past"
+},
+{
+"name": "Doreen Dodgen Magee",
+"url": "https://kripalu.org/people/doreen-dodgen-magee",
+"status": "past"
+},
+{
+"name": "Nami Soga",
+"url": "https://kripalu.org/people/nami-soga",
+"status": "past"
+},
+{
+"name": "Michell C Clark",
+"url": "https://kripalu.org/people/michell-c-clark",
+"status": "past"
+},
+{
+"name": "Jameela Hill",
+"url": "https://kripalu.org/people/jameela-hill",
+"status": "past"
+},
+{
+"name": "Jaye Martin",
+"url": "https://kripalu.org/people/jaye-martin",
+"status": "past"
+},
+{
+"name": "Manu River Del Prete",
+"url": "https://kripalu.org/people/manu-river-del-prete",
+"status": "past"
+},
+{
+"name": "Oneika Mays",
+"url": "https://kripalu.org/people/oneika-mays",
+"status": "past"
+},
+{
+"name": "Cherie Johnson",
+"url": "https://kripalu.org/people/cherie-johnson",
+"status": "past"
+},
+{
+"name": "Tobi Brown",
+"url": "https://kripalu.org/people/tobi-brown",
+"status": "past"
+},
+{
+"name": "Tembi Locke",
+"url": "https://kripalu.org/people/tembi-locke",
+"status": "past"
+},
+{
+"name": "Allison Gilbert",
+"url": "https://kripalu.org/people/allison-gilbert",
+"status": "past"
+},
+{
+"name": "Abigail Santamaria",
+"url": "https://kripalu.org/people/abigail-santamaria",
+"status": "past"
+},
+{
+"name": "Barbara Stepniak",
+"url": "https://kripalu.org/people/barbara-stepniak",
+"status": "past"
+},
+{
+"name": "Denise Becker",
+"url": "https://kripalu.org/people/denise-becker",
+"status": "past"
+},
+{
+"name": "Theresa Bates",
+"url": "https://kripalu.org/people/theresa-bates",
+"status": "past"
+},
+{
+"name": "Paris Alexandra",
+"url": "https://kripalu.org/people/paris-alexandra",
+"status": "past"
+},
+{
+"name": "Meredith Oppenheim",
+"url": "https://kripalu.org/people/meredith-oppenheim",
+"status": "past"
+},
+{
+"name": "Josie Gardiner",
+"url": "https://kripalu.org/people/josie-gardiner",
+"status": "past"
+},
+{
+"name": "Gina Breedlove",
+"url": "https://kripalu.org/people/gina-breedlove",
+"status": "past"
+},
+{
+"name": "Lindsay Davison",
+"url": "https://kripalu.org/people/lindsay-davison",
+"status": "past"
+},
+{
+"name": "Annika Tara Hansche",
+"url": "https://kripalu.org/people/annika-tara-hansche",
+"status": "past"
+},
+{
+"name": "Mary Reynolds Thompson",
+"url": "https://kripalu.org/people/mary-reynolds-thompson",
+"status": "past"
+},
+{
+"name": "Joanne Randolph",
+"url": "https://kripalu.org/people/joanne-randolph",
+"status": "past"
+},
+{
+"name": "Lisa Vander Kaay",
+"url": "https://kripalu.org/people/lisa-vander-kaay",
+"status": "past"
+},
+{
+"name": "Kelli Bethel",
+"url": "https://kripalu.org/people/kelli-bethel",
+"status": "past"
+},
+{
+"name": "Amos Clifford",
+"url": "https://kripalu.org/people/amos-clifford",
+"status": "past"
+},
+{
+"name": "Iana Velez",
+"url": "https://kripalu.org/people/iana-velez",
+"status": "past"
+},
+{
+"name": "Jeffrey Warren",
+"url": "https://kripalu.org/people/jeffrey-warren",
+"status": "past"
+},
+{
+"name": "Audi Gozlan",
+"url": "https://kripalu.org/people/audi-gozlan",
+"status": "past"
+},
+{
+"name": "Thenmozhi Soundararajan",
+"url": "https://kripalu.org/people/thenmozhi-soundararajan",
+"status": "past"
+},
+{
+"name": "Sriya Bhattacharyya",
+"url": "https://kripalu.org/people/sriya-bhattacharyya",
+"status": "past"
+},
+{
+"name": "Gail Larsen",
+"url": "https://kripalu.org/people/gail-larsen",
+"status": "past"
+},
+{
+"name": "Cris Caivano",
+"url": "https://kripalu.org/people/cris-caivano",
+"status": "past"
+},
+{
+"name": "Alex Lai",
+"url": "https://kripalu.org/people/alex-lai",
+"status": "past"
+},
+{
+"name": "Dr Sat Hon",
+"url": "https://kripalu.org/people/dr-sat-hon",
+"status": "past"
+},
+{
+"name": "Mark Mincolla",
+"url": "https://kripalu.org/people/mark-mincolla",
+"status": "past"
+},
+{
+"name": "Brandon Copeland",
+"url": "https://kripalu.org/people/brandon-copeland",
+"status": "past"
+},
+{
+"name": "Melba Nicholson Sullivan",
+"url": "https://kripalu.org/people/melba-nicholson-sullivan",
+"status": "past"
+},
+{
+"name": "Nicole Hudson",
+"url": "https://kripalu.org/people/nicole-hudson",
+"status": "past"
+},
+{
+"name": "Amber Chand",
+"url": "https://kripalu.org/people/amber-chand",
+"status": "past"
+},
+{
+"name": "Chetna Mehta",
+"url": "https://kripalu.org/people/chetna-mehta",
+"status": "past"
+},
+{
+"name": "Tejal Patel",
+"url": "https://kripalu.org/people/tejal-patel",
+"status": "past"
+},
+{
+"name": "Pooja Prema",
+"url": "https://kripalu.org/people/pooja-prema",
+"status": "past"
+},
+{
+"name": "Ishan Tigunait",
+"url": "https://kripalu.org/people/ishan-tigunait",
+"status": "past"
+},
+{
+"name": "Mx Puja Singh",
+"url": "https://kripalu.org/people/mx-puja-singh",
+"status": "past"
+},
+{
+"name": "Laura Schmidt",
+"url": "https://kripalu.org/people/laura-schmidt",
+"status": "past"
+},
+{
+"name": "Carla Goldstein",
+"url": "https://kripalu.org/people/carla-goldstein",
+"status": "past"
+},
+{
+"name": "Dr Heather Tallman Ruhm",
+"url": "https://kripalu.org/people/dr-heather-tallman-ruhm",
+"status": "past"
+},
+{
+"name": "David Sobel",
+"url": "https://kripalu.org/people/david-sobel",
+"status": "past"
+},
+{
+"name": "Brett Cotter",
+"url": "https://kripalu.org/people/brett-cotter",
+"status": "past"
+},
+{
+"name": "Don Martin Qespi Machacca",
+"url": "https://kripalu.org/people/don-martin-qespi-machacca",
+"status": "past"
+},
+{
+"name": "Dona Agustina Ccapa Champi",
+"url": "https://kripalu.org/people/dona-agustina-ccapa-champi",
+"status": "past"
+},
+{
+"name": "Fredy Conde Huallpa",
+"url": "https://kripalu.org/people/fredy-conde-huallpa",
+"status": "past"
+},
+{
+"name": "Alissa Cedar Waterfall Johnson",
+"url": "https://kripalu.org/people/alissa-cedar-waterfall-johnson",
+"status": "past"
+},
+{
+"name": "Chris Gunderson",
+"url": "https://kripalu.org/people/chris-gunderson",
+"status": "past"
+},
+{
+"name": "Connie Wilson",
+"url": "https://kripalu.org/people/connie-wilson",
+"status": "past"
+},
+{
+"name": "Elise Manzo",
+"url": "https://kripalu.org/people/elise-manzo",
+"status": "past"
+},
+{
+"name": "Julie Pellerin Herrera",
+"url": "https://kripalu.org/people/julie-pellerin-herrera",
+"status": "past"
+},
+{
+"name": "Kerry Mcginn",
+"url": "https://kripalu.org/people/kerry-mcginn",
+"status": "past"
+},
+{
+"name": "Michelle Hebert",
+"url": "https://kripalu.org/people/michelle-hebert",
+"status": "past"
+},
+{
+"name": "Miki Vysohlid",
+"url": "https://kripalu.org/people/miki-vysohlid",
+"status": "past"
+},
+{
+"name": "Mindy Dow",
+"url": "https://kripalu.org/people/mindy-dow",
+"status": "past"
+},
+{
+"name": "Nancy Whitman",
+"url": "https://kripalu.org/people/nancy-whitman",
+"status": "past"
+},
+{
+"name": "Nora Fenner",
+"url": "https://kripalu.org/people/nora-fenner",
+"status": "past"
+},
+{
+"name": "Roshni Rama",
+"url": "https://kripalu.org/people/roshni-rama",
+"status": "past"
+},
+{
+"name": "Karin Otto",
+"url": "https://kripalu.org/people/karin-otto",
+"status": "past"
+},
+{
+"name": "Crysta Bloom",
+"url": "https://kripalu.org/people/crysta-bloom",
+"status": "past"
+},
+{
+"name": "Sunder Ashni",
+"url": "https://kripalu.org/people/sunder-ashni-0",
+"status": "past"
+},
+{
+"name": "Marilyn Peppers Citizen",
+"url": "https://kripalu.org/people/marilyn-peppers-citizen",
+"status": "past"
+},
+{
+"name": "Dr Romy Lauche",
+"url": "https://kripalu.org/people/dr-romy-lauche",
+"status": "past"
+},
+{
+"name": "Dr Jack Feldman",
+"url": "https://kripalu.org/people/dr-jack-feldman",
+"status": "past"
+},
+{
+"name": "Ting Bao",
+"url": "https://kripalu.org/people/ting-bao",
+"status": "past"
+},
+{
+"name": "Ursula Kelly",
+"url": "https://kripalu.org/people/ursula-kelly",
+"status": "past"
+},
+{
+"name": "Shanina Carmichael",
+"url": "https://kripalu.org/people/shanina-carmichael",
+"status": "past"
+},
+{
+"name": "Angell Deer",
+"url": "https://kripalu.org/people/angell-deer",
+"status": "past"
+},
+{
+"name": "Vladimir Tchakarov",
+"url": "https://kripalu.org/people/vladimir-tchakarov",
+"status": "past"
+},
+{
+"name": "Alexandra S Wimberly",
+"url": "https://kripalu.org/people/alexandra-s-wimberly",
+"status": "past"
+},
+{
+"name": "David H Rosmarin",
+"url": "https://kripalu.org/people/david-h-rosmarin",
+"status": "past"
+},
+{
+"name": "Perry Garfinkel",
+"url": "https://kripalu.org/people/perry-garfinkel",
+"status": "past"
+},
+{
+"name": "Maggie Langrick",
+"url": "https://kripalu.org/people/maggie-langrick",
+"status": "past"
+},
+{
+"name": "Atman Smith",
+"url": "https://kripalu.org/people/atman-smith",
+"status": "past"
+},
+{
+"name": "Ali Smith",
+"url": "https://kripalu.org/people/ali-smith",
+"status": "past"
+},
+{
+"name": "Timothy Lewis",
+"url": "https://kripalu.org/people/timothy-lewis",
+"status": "past"
+},
+{
+"name": "Rimi Chakraborty",
+"url": "https://kripalu.org/people/rimi-chakraborty",
+"status": "past"
+},
+{
+"name": "Matthew Weston",
+"url": "https://kripalu.org/people/matthew-weston",
+"status": "past"
+},
+{
+"name": "Cat Bigney",
+"url": "https://kripalu.org/people/cat-bigney",
+"status": "past"
+},
+{
+"name": "Sabrina Allard",
+"url": "https://kripalu.org/people/sabrina-allard",
+"status": "past"
+},
+{
+"name": "Tasha Blank",
+"url": "https://kripalu.org/people/tasha-blank",
+"status": "past"
+},
+{
+"name": "Nico Allen",
+"url": "https://kripalu.org/people/nico-allen",
+"status": "past"
+},
+{
+"name": "Jac Okeeffe",
+"url": "https://kripalu.org/people/jac-okeeffe",
+"status": "past"
+},
+{
+"name": "Mona Mowafi",
+"url": "https://kripalu.org/people/mona-mowafi",
+"status": "past"
+},
+{
+"name": "Sarah Brothwell",
+"url": "https://kripalu.org/people/sarah-brothwell",
+"status": "past"
+},
+{
+"name": "Nathalie Rodriguez",
+"url": "https://kripalu.org/people/nathalie-rodriguez",
+"status": "past"
+},
+{
+"name": "Malu Doherty",
+"url": "https://kripalu.org/people/malu-doherty",
+"status": "past"
+},
+{
+"name": "Jennifer Mann",
+"url": "https://kripalu.org/people/jennifer-mann",
+"status": "past"
+},
+{
+"name": "Celia Hilson",
+"url": "https://kripalu.org/people/celia-hilson",
+"status": "past"
+},
+{
+"name": "Edward Phillips",
+"url": "https://kripalu.org/people/edward-phillips",
+"status": "past"
+},
+{
+"name": "Samantha Anderson",
+"url": "https://kripalu.org/people/samantha-anderson",
+"status": "past"
+},
+{
+"name": "Maira Martinez",
+"url": "https://kripalu.org/people/maira-martinez",
+"status": "past"
+},
+{
+"name": "Dan Getman",
+"url": "https://kripalu.org/people/dan-getman",
+"status": "past"
+},
+{
+"name": "Monica Meehan Mcnamara",
+"url": "https://kripalu.org/people/monica-meehan-mcnamara",
+"status": "past"
+},
+{
+"name": "Prema Shakti",
+"url": "https://kripalu.org/people/prema-shakti",
+"status": "past"
+},
+{
+"name": "Dj Cavem",
+"url": "https://kripalu.org/people/dj-cavem",
+"status": "past"
+},
+{
+"name": "Jill Tamminen",
+"url": "https://kripalu.org/people/jill-tamminen",
+"status": "past"
+},
+{
+"name": "Victoria Moran",
+"url": "https://kripalu.org/people/victoria-moran",
+"status": "past"
+},
+{
+"name": "Nya Patrinos",
+"url": "https://kripalu.org/people/nya-patrinos",
+"status": "past"
+},
+{
+"name": "Meghan Riordan Jarvis Ma Lcsw",
+"url": "https://kripalu.org/people/meghan-riordan-jarvis-ma-lcsw",
+"status": "past"
+},
+{
+"name": "Gina Moffa Lcsw",
+"url": "https://kripalu.org/people/gina-moffa-lcsw",
+"status": "past"
+},
+{
+"name": "Whitney Ullom",
+"url": "https://kripalu.org/people/whitney-ullom",
+"status": "past"
+},
+{
+"name": "Charlene Lam",
+"url": "https://kripalu.org/people/charlene-lam",
+"status": "past"
+},
+{
+"name": "Dene Logan",
+"url": "https://kripalu.org/people/dene-logan",
+"status": "past"
+},
+{
+"name": "Paola Mendoza",
+"url": "https://kripalu.org/people/paola-mendoza",
+"status": "past"
+},
+{
+"name": "Margie Mcsweeney",
+"url": "https://kripalu.org/people/margie-mcsweeney",
+"status": "past"
+},
+{
+"name": "Kelly Mcdaniel",
+"url": "https://kripalu.org/people/kelly-mcdaniel",
+"status": "past"
+},
+{
+"name": "Eva Armour",
+"url": "https://kripalu.org/people/eva-armour",
+"status": "past"
+},
+{
+"name": "Lisa Fazio",
+"url": "https://kripalu.org/people/lisa-fazio",
+"status": "past"
+},
+{
+"name": "Zoe Galle",
+"url": "https://kripalu.org/people/zoe-galle",
+"status": "past"
+},
+{
+"name": "Lynne Nicole Smith",
+"url": "https://kripalu.org/people/lynne-nicole-smith",
+"status": "past"
+},
+{
+"name": "Katerina Sakelliou",
+"url": "https://kripalu.org/people/katerina-sakelliou",
+"status": "past"
+},
+{
+"name": "Diana May",
+"url": "https://kripalu.org/people/diana-may",
+"status": "past"
+},
+{
+"name": "Linda Thai",
+"url": "https://kripalu.org/people/linda-thai",
+"status": "past"
+},
+{
+"name": "Mariah Rooney",
+"url": "https://kripalu.org/people/mariah-rooney",
+"status": "past"
+},
+{
+"name": "Luna Ray",
+"url": "https://kripalu.org/people/luna-ray",
+"status": "past"
+},
+{
+"name": "Laura Billings",
+"url": "https://kripalu.org/people/laura-billings",
+"status": "past"
+},
+{
+"name": "Rachel Dewan",
+"url": "https://kripalu.org/people/rachel-dewan",
+"status": "past"
+},
+{
+"name": "Morena Cardoso",
+"url": "https://kripalu.org/people/morena-cardoso",
+"status": "past"
+},
+{
+"name": "Malia Scharf",
+"url": "https://kripalu.org/people/malia-scharf",
+"status": "past"
+},
+{
+"name": "Shaun Galanos",
+"url": "https://kripalu.org/people/shaun-galanos",
+"status": "past"
+},
+{
+"name": "Felice Chan",
+"url": "https://kripalu.org/people/felice-chan",
+"status": "past"
+},
+{
+"name": "Oley Smith",
+"url": "https://kripalu.org/people/oley-smith",
+"status": "past"
+},
+{
+"name": "Jennifer Weiss",
+"url": "https://kripalu.org/people/jennifer-weiss",
+"status": "past"
+},
+{
+"name": "Akilah Richards",
+"url": "https://kripalu.org/people/akilah-richards",
+"status": "past"
+},
+{
+"name": "Abiola Abrams",
+"url": "https://kripalu.org/people/abiola-abrams",
+"status": "past"
+},
+{
+"name": "Candace Mickens",
+"url": "https://kripalu.org/people/candace-mickens",
+"status": "past"
+},
+{
+"name": "Dr Jaiya John",
+"url": "https://kripalu.org/people/dr-jaiya-john",
+"status": "past"
+},
+{
+"name": "Asher Silverwolff",
+"url": "https://kripalu.org/people/asher-silverwolff",
+"status": "past"
+},
+{
+"name": "Joe Dambrosi",
+"url": "https://kripalu.org/people/joe-dambrosi",
+"status": "past"
+},
+{
+"name": "Carla Fernandez",
+"url": "https://kripalu.org/people/carla-fernandez",
+"status": "past"
+},
+{
+"name": "Christina Semple",
+"url": "https://kripalu.org/people/christina-semple",
+"status": "past"
+},
+{
+"name": "Marcia Ramoutar",
+"url": "https://kripalu.org/people/marcia-ramoutar",
+"status": "past"
+},
+{
+"name": "James Swartz",
+"url": "https://kripalu.org/people/james-swartz",
+"status": "past"
+},
+{
+"name": "Sundari Swartz",
+"url": "https://kripalu.org/people/sundari-swartz",
+"status": "past"
+},
+{
+"name": "Lee Mirabai Harrington",
+"url": "https://kripalu.org/people/lee-mirabai-harrington",
+"status": "past"
+},
+{
+"name": "Bethany Trozzo",
+"url": "https://kripalu.org/people/bethany-trozzo",
+"status": "past"
+},
+{
+"name": "Marybeth Bonfiglio",
+"url": "https://kripalu.org/people/marybeth-bonfiglio",
+"status": "past"
+},
+{
+"name": "Susan Weis Bohlen",
+"url": "https://kripalu.org/people/susan-weis-bohlen",
+"status": "past"
+},
+{
+"name": "Chance York",
+"url": "https://kripalu.org/people/chance-york",
+"status": "past"
+},
+{
+"name": "Yera Gomes",
+"url": "https://kripalu.org/people/yera-gomes",
+"status": "past"
+},
+{
+"name": "Ori Flomin",
+"url": "https://kripalu.org/people/ori-flomin",
+"status": "past"
+},
+{
+"name": "Bryant Terry",
+"url": "https://kripalu.org/people/bryant-terry",
+"status": "past"
+},
+{
+"name": "Tricia Hersey",
+"url": "https://kripalu.org/people/tricia-hersey",
+"status": "past"
+},
+{
+"name": "Djuna Devereaux",
+"url": "https://kripalu.org/people/djuna-devereaux",
+"status": "past"
+},
+{
+"name": "Jasmine Nyende",
+"url": "https://kripalu.org/people/jasmine-nyende",
+"status": "past"
+},
+{
+"name": "Sation Konchellah",
+"url": "https://kripalu.org/people/sation-konchellah",
+"status": "past"
+},
+{
+"name": "Anjie Cho",
+"url": "https://kripalu.org/people/anjie-cho",
+"status": "past"
+},
+{
+"name": "Laura Morris",
+"url": "https://kripalu.org/people/laura-morris",
+"status": "past"
+},
+{
+"name": "Jeffrey J Magnavita Phd",
+"url": "https://kripalu.org/people/jeffrey-j-magnavita-phd",
+"status": "past"
+},
+{
+"name": "Elizabeth G Magnavita",
+"url": "https://kripalu.org/people/elizabeth-g-magnavita",
+"status": "past"
+},
+{
+"name": "Marika Clymer",
+"url": "https://kripalu.org/people/marika-clymer",
+"status": "past"
+},
+{
+"name": "Dr Larry Ward",
+"url": "https://kripalu.org/people/dr-larry-ward",
+"status": "past"
+},
+{
+"name": "Rashid Hughes",
+"url": "https://kripalu.org/people/rashid-hughes",
+"status": "past"
+},
+{
+"name": "Sonya Renee Taylor",
+"url": "https://kripalu.org/people/sonya-renee-taylor",
+"status": "past"
+},
+{
+"name": "Glennon Doyle",
+"url": "https://kripalu.org/people/glennon-doyle",
+"status": "past"
+},
+{
+"name": "Mara Branscombe",
+"url": "https://kripalu.org/people/mara-branscombe",
+"status": "past"
+},
+{
+"name": "Crystal Higgins",
+"url": "https://kripalu.org/people/crystal-higgins",
+"status": "past"
+},
+{
+"name": "Brian F",
+"url": "https://kripalu.org/people/brian-f",
+"status": "past"
+},
+{
+"name": "Ian N",
+"url": "https://kripalu.org/people/ian-n",
+"status": "past"
+},
+{
+"name": "Jean B",
+"url": "https://kripalu.org/people/jean-b",
+"status": "past"
+},
+{
+"name": "Juliana Luna",
+"url": "https://kripalu.org/people/juliana-luna",
+"status": "past"
+},
+{
+"name": "Allison Strickland",
+"url": "https://kripalu.org/people/allison-strickland",
+"status": "past"
+},
+{
+"name": "Carmen Lobue",
+"url": "https://kripalu.org/people/carmen-lobue",
+"status": "past"
+},
+{
+"name": "Carolyn Michelle Smith",
+"url": "https://kripalu.org/people/carolyn-michelle-smith",
+"status": "past"
+},
+{
+"name": "Christopher Emin Faroe",
+"url": "https://kripalu.org/people/christopher-emin-faroe",
+"status": "past"
+},
+{
+"name": "Deone",
+"url": "https://kripalu.org/people/deone",
+"status": "past"
+},
+{
+"name": "Janelle Belgrave",
+"url": "https://kripalu.org/people/janelle-belgrave",
+"status": "past"
+},
+{
+"name": "Luna",
+"url": "https://kripalu.org/people/luna",
+"status": "past"
+},
+{
+"name": "Julissa Contreras",
+"url": "https://kripalu.org/people/julissa-contreras",
+"status": "past"
+},
+{
+"name": "Kazimi",
+"url": "https://kripalu.org/people/kazimi",
+"status": "past"
+},
+{
+"name": "Malcolm Bradford",
+"url": "https://kripalu.org/people/malcolm-bradford",
+"status": "past"
+},
+{
+"name": "Melanie Santos",
+"url": "https://kripalu.org/people/melanie-santos",
+"status": "past"
+},
+{
+"name": "Melinda Stone",
+"url": "https://kripalu.org/people/melinda-stone",
+"status": "past"
+},
+{
+"name": "Michelle Marrion",
+"url": "https://kripalu.org/people/michelle-marrion",
+"status": "past"
+},
+{
+"name": "Natasha Roya Azizi",
+"url": "https://kripalu.org/people/natasha-roya-azizi",
+"status": "past"
+},
+{
+"name": "Amy Wright Glenn",
+"url": "https://kripalu.org/people/amy-wright-glenn",
+"status": "past"
+},
+{
+"name": "Noor Amiry",
+"url": "https://kripalu.org/people/noor-amiry",
+"status": "past"
+},
+{
+"name": "Philip Jayoni",
+"url": "https://kripalu.org/people/philip-jayoni",
+"status": "past"
+},
+{
+"name": "Raury",
+"url": "https://kripalu.org/people/raury",
+"status": "past"
+},
+{
+"name": "Tiffany Curtis",
+"url": "https://kripalu.org/people/tiffany-curtis",
+"status": "past"
+},
+{
+"name": "Michael Wilson",
+"url": "https://kripalu.org/people/michael-wilson",
+"status": "past"
+},
+{
+"name": "Koa Kalish",
+"url": "https://kripalu.org/people/koa-kalish",
+"status": "past"
+},
+{
+"name": "Becca Piastrelli",
+"url": "https://kripalu.org/people/becca-piastrelli",
+"status": "past"
+},
+{
+"name": "Barrie Risman",
+"url": "https://kripalu.org/people/barrie-risman",
+"status": "past"
+},
+{
+"name": "Sarah Maclean Bicknell",
+"url": "https://kripalu.org/people/sarah-maclean-bicknell",
+"status": "past"
+},
+{
+"name": "Madeline Giles",
+"url": "https://kripalu.org/people/madeline-giles",
+"status": "past"
+},
+{
+"name": "Dr Jeevan Singh",
+"url": "https://kripalu.org/people/dr-jeevan-singh",
+"status": "past"
+},
+{
+"name": "Kris Gonzalez Lac",
+"url": "https://kripalu.org/people/kris-gonzalez-lac",
+"status": "past"
+},
+{
+"name": "Marissa Correia Sep",
+"url": "https://kripalu.org/people/marissa-correia-sep",
+"status": "past"
+},
+{
+"name": "Daniel Vitalis",
+"url": "https://kripalu.org/people/daniel-vitalis",
+"status": "past"
+},
+{
+"name": "Samuel Thayer",
+"url": "https://kripalu.org/people/samuel-thayer",
+"status": "past"
+},
+{
+"name": "Jennifer Boyd Pa",
+"url": "https://kripalu.org/people/jennifer-boyd-pa",
+"status": "past"
+},
+{
+"name": "Kimberly Giunta Cap",
+"url": "https://kripalu.org/people/kimberly-giunta-cap",
+"status": "past"
+},
+{
+"name": "Richard Louv",
+"url": "https://kripalu.org/people/richard-louv",
+"status": "past"
+},
+{
+"name": "Adaku Utah",
+"url": "https://kripalu.org/people/adaku-utah",
+"status": "past"
+},
+{
+"name": "Chief Shaka Zulu",
+"url": "https://kripalu.org/people/chief-shaka-zulu",
+"status": "past"
+},
+{
+"name": "Fimo Mitchell",
+"url": "https://kripalu.org/people/fimo-mitchell",
+"status": "past"
+},
+{
+"name": "Carolyn Sharp",
+"url": "https://kripalu.org/people/carolyn-sharp",
+"status": "past"
+},
+{
+"name": "Ashley Brockington",
+"url": "https://kripalu.org/people/ashley-brockington",
+"status": "past"
+},
+{
+"name": "Aimon Kopera Md",
+"url": "https://kripalu.org/people/aimon-kopera-md",
+"status": "past"
+},
+{
+"name": "Yulia Meshoyrer",
+"url": "https://kripalu.org/people/yulia-meshoyrer",
+"status": "past"
+},
+{
+"name": "Shayna Hiller",
+"url": "https://kripalu.org/people/shayna-hiller",
+"status": "past"
+},
+{
+"name": "John Stockberger",
+"url": "https://kripalu.org/people/john-stockberger",
+"status": "past"
+},
+{
+"name": "Christen Poole",
+"url": "https://kripalu.org/people/christen-poole",
+"status": "past"
+},
+{
+"name": "Scott Simon",
+"url": "https://kripalu.org/people/scott-simon",
+"status": "past"
+},
+{
+"name": "Betsy Debany",
+"url": "https://kripalu.org/people/betsy-debany",
+"status": "past"
+},
+{
+"name": "Daniel Sharman",
+"url": "https://kripalu.org/people/daniel-sharman",
+"status": "past"
+},
+{
+"name": "Bonnie Buckner Phd",
+"url": "https://kripalu.org/people/bonnie-buckner-phd",
+"status": "past"
+},
+{
+"name": "Kiana Reeves",
+"url": "https://kripalu.org/people/kiana-reeves",
+"status": "past"
+},
+{
+"name": "Patrick Surdam",
+"url": "https://kripalu.org/people/patrick-surdam",
+"status": "past"
+},
+{
+"name": "Judith Valente",
+"url": "https://kripalu.org/people/judith-valente",
+"status": "past"
+},
+{
+"name": "Jeremy Schewe",
+"url": "https://kripalu.org/people/jeremy-schewe",
+"status": "past"
+},
+{
+"name": "Kirsten Mowrey Lmt",
+"url": "https://kripalu.org/people/kirsten-mowrey-lmt",
+"status": "past"
+},
+{
+"name": "Devin Franklin",
+"url": "https://kripalu.org/people/devin-franklin",
+"status": "past"
+},
+{
+"name": "Michelle Apland",
+"url": "https://kripalu.org/people/michelle-apland",
+"status": "past"
+},
+{
+"name": "John Onwuchekwa",
+"url": "https://kripalu.org/people/john-onwuchekwa",
+"status": "past"
+},
+{
+"name": "Jw Terry Freiberg Phd Jd",
+"url": "https://kripalu.org/people/jw-terry-freiberg-phd-jd",
+"status": "past"
+},
+{
+"name": "Thomas Breiter",
+"url": "https://kripalu.org/people/thomas-breiter",
+"status": "past"
+},
+{
+"name": "Carrie Lumi Schewe",
+"url": "https://kripalu.org/people/carrie-lumi-schewe",
+"status": "past"
+},
+{
+"name": "Carolyn Sheehan",
+"url": "https://kripalu.org/people/carolyn-sheehan",
+"status": "past"
+},
+{
+"name": "Lucian Schloss",
+"url": "https://kripalu.org/people/lucian-schloss",
+"status": "past"
+},
+{
+"name": "Elizabeth Weingarten",
+"url": "https://kripalu.org/people/elizabeth-weingarten",
+"status": "past"
+},
+{
+"name": "Lea Motlow",
+"url": "https://kripalu.org/people/lea-motlow",
+"status": "past"
+},
+{
+"name": "Nelida Vilca Huaman",
+"url": "https://kripalu.org/people/nelida-vilca-huaman",
+"status": "past"
+},
+{
+"name": "Jennifer Wallace",
+"url": "https://kripalu.org/people/jennifer-wallace",
+"status": "past"
+},
+{
+"name": "Tracy Williams",
+"url": "https://kripalu.org/people/tracy-williams",
+"status": "past"
+},
+{
+"name": "Chris Collura",
+"url": "https://kripalu.org/people/chris-collura",
+"status": "past"
+},
+{
+"name": "Mark Rodovick",
+"url": "https://kripalu.org/people/mark-rodovick",
+"status": "past"
+},
+{
+"name": "Shelby Drosehn",
+"url": "https://kripalu.org/people/shelby-drosehn",
+"status": "past"
+},
+{
+"name": "Patti Mccabe",
+"url": "https://kripalu.org/people/patti-mccabe",
+"status": "past"
+},
+{
+"name": "Lise Lawrence",
+"url": "https://kripalu.org/people/lise-lawrence",
+"status": "past"
+},
+{
+"name": "Anthony Sgueglia",
+"url": "https://kripalu.org/people/anthony-sgueglia",
+"status": "past"
+},
+{
+"name": "Connie Keegan",
+"url": "https://kripalu.org/people/connie-keegan",
+"status": "past"
+},
+{
+"name": "Hannah Wilken",
+"url": "https://kripalu.org/people/hannah-wilken",
+"status": "past"
+},
+{
+"name": "Alex Dalby",
+"url": "https://kripalu.org/people/alex-dalby",
+"status": "past"
+},
+{
+"name": "Ling Lo",
+"url": "https://kripalu.org/people/ling-lo",
+"status": "past"
+},
+{
+"name": "Jenna Larkin",
+"url": "https://kripalu.org/people/jenna-larkin",
+"status": "past"
+},
+{
+"name": "Jennifer Joyce",
+"url": "https://kripalu.org/people/jennifer-joyce",
+"status": "past"
+},
+{
+"name": "Julia Weiss",
+"url": "https://kripalu.org/people/julia-weiss",
+"status": "past"
+},
+{
+"name": "Christina Anello",
+"url": "https://kripalu.org/people/christina-anello",
+"status": "past"
+},
+{
+"name": "Kevin Hoosier",
+"url": "https://kripalu.org/people/kevin-hoosier",
+"status": "past"
+},
+{
+"name": "Dr Sandra Musial",
+"url": "https://kripalu.org/people/dr-sandra-musial",
+"status": "past"
+},
+{
+"name": "Laura Klein",
+"url": "https://kripalu.org/people/laura-klein",
+"status": "past"
+},
+{
+"name": "Michael Potts",
+"url": "https://kripalu.org/people/michael-potts",
+"status": "past"
+},
+{
+"name": "Allison Furkey",
+"url": "https://kripalu.org/people/allison-furkey",
+"status": "past"
+},
+{
+"name": "Austin Clark",
+"url": "https://kripalu.org/people/austin-clark",
+"status": "past"
+},
+{
+"name": "Kari Cardinale",
+"url": "https://kripalu.org/people/kari-cardinale",
+"status": "past"
+},
+{
+"name": "Russ Cohen",
+"url": "https://kripalu.org/people/russ-cohen",
+"status": "past"
+},
+{
+"name": "Gina Lee",
+"url": "https://kripalu.org/people/gina-lee",
+"status": "past"
+},
+{
+"name": "Astrid Schmidt",
+"url": "https://kripalu.org/people/astrid-schmidt",
+"status": "past"
+},
+{
+"name": "Olivia Therese Fromm",
+"url": "https://kripalu.org/people/olivia-therese-fromm",
+"status": "past"
+},
+{
+"name": "Noor Tagouri",
+"url": "https://kripalu.org/people/noor-tagouri",
+"status": "past"
+},
+{
+"name": "Drisana Mcdaniel",
+"url": "https://kripalu.org/people/drisana-mcdaniel",
+"status": "past"
+},
+{
+"name": "Audra Mace",
+"url": "https://kripalu.org/people/audra-mace",
+"status": "past"
+},
+{
+"name": "Caitlin Krause",
+"url": "https://kripalu.org/people/caitlin-krause",
+"status": "past"
+},
+{
+"name": "Tami Lynn Kent",
+"url": "https://kripalu.org/people/tami-lynn-kent",
+"status": "past"
+},
+{
+"name": "Andrew Mcgonigle",
+"url": "https://kripalu.org/people/andrew-mcgonigle",
+"status": "past"
+},
+{
+"name": "Satya Scainetti",
+"url": "https://kripalu.org/people/satya-scainetti",
+"status": "past"
+},
+{
+"name": "Rani Banik Md Ifmcp",
+"url": "https://kripalu.org/people/rani-banik-md-ifmcp",
+"status": "past"
+},
+{
+"name": "Michael Morton",
+"url": "https://kripalu.org/people/michael-morton",
+"status": "past"
+},
+{
+"name": "Polly Weiss",
+"url": "https://kripalu.org/people/polly-weiss",
+"status": "past"
+},
+{
+"name": "Ramani Durvasula",
+"url": "https://kripalu.org/people/ramani-durvasula",
+"status": "past"
+},
+{
+"name": "Stephon J Bradberry",
+"url": "https://kripalu.org/people/stephon-j-bradberry",
+"status": "past"
+},
+{
+"name": "Jessie Harrold",
+"url": "https://kripalu.org/people/jessie-harrold",
+"status": "past"
+},
+{
+"name": "Cara Trezise",
+"url": "https://kripalu.org/people/cara-trezise",
+"status": "past"
+},
+{
+"name": "Martin Thomson Jones",
+"url": "https://kripalu.org/people/martin-thomson-jones",
+"status": "past"
+},
+{
+"name": "Jay Dufrechou",
+"url": "https://kripalu.org/people/jay-dufrechou",
+"status": "past"
+},
+{
+"name": "Sarah Peyton",
+"url": "https://kripalu.org/people/sarah-peyton",
+"status": "past"
+},
+{
+"name": "Merlin Sheldrake",
+"url": "https://kripalu.org/people/merlin-sheldrake",
+"status": "past"
+},
+{
+"name": "Shireen Mansouri",
+"url": "https://kripalu.org/people/shireen-mansouri",
+"status": "past"
+},
+{
+"name": "Thupten Jinpa",
+"url": "https://kripalu.org/people/thupten-jinpa",
+"status": "past"
+},
+{
+"name": "Lisa Sullivan",
+"url": "https://kripalu.org/people/lisa-sullivan",
+"status": "past"
+},
+{
+"name": "Shannon Plummer",
+"url": "https://kripalu.org/people/shannon-plummer",
+"status": "past"
+},
+{
+"name": "Bob Sima",
+"url": "https://kripalu.org/people/bob-sima",
+"status": "past"
+},
+{
+"name": "Ysmael Merino",
+"url": "https://kripalu.org/people/ysmael-merino",
+"status": "past"
+},
+{
+"name": "Marybeth Heatwole Moore",
+"url": "https://kripalu.org/people/marybeth-heatwole-moore",
+"status": "past"
+},
+{
+"name": "Elena Mansour",
+"url": "https://kripalu.org/people/elena-mansour",
+"status": "past"
+},
+{
+"name": "Kimberly Marks",
+"url": "https://kripalu.org/people/kimberly-marks",
+"status": "past"
+},
+{
+"name": "Kristi Sullivan",
+"url": "https://kripalu.org/people/kristi-sullivan",
+"status": "past"
+},
+{
+"name": "Marla Dobbs Hawkins",
+"url": "https://kripalu.org/people/marla-dobbs-hawkins",
+"status": "past"
+},
+{
+"name": "Madhuri Kasat Shors",
+"url": "https://kripalu.org/people/madhuri-kasat-shors",
+"status": "past"
+},
+{
+"name": "Sonny Singh",
+"url": "https://kripalu.org/people/sonny-singh",
+"status": "past"
+},
+{
+"name": "Jennifer Yarro",
+"url": "https://kripalu.org/people/jennifer-yarro",
+"status": "past"
+},
+{
+"name": "Josh Young",
+"url": "https://kripalu.org/people/josh-young",
+"status": "past"
+},
+{
+"name": "Paul Belsito",
+"url": "https://kripalu.org/people/paul-belsito",
+"status": "past"
+},
+{
+"name": "Saima Siddiqi",
+"url": "https://kripalu.org/people/saima-siddiqi",
+"status": "past"
+},
+{
+"name": "Philip B Morrison",
+"url": "https://kripalu.org/people/philip-b-morrison",
+"status": "past"
+},
+{
+"name": "Stephen Parker",
+"url": "https://kripalu.org/people/stephen-parker",
+"status": "past"
+},
+{
+"name": "Kal Prakashini",
+"url": "https://kripalu.org/people/kal-prakashini",
+"status": "past"
+},
+{
+"name": "Adi Shakti",
+"url": "https://kripalu.org/people/adi-shakti",
+"status": "past"
+},
+{
+"name": "Michele Tugade",
+"url": "https://kripalu.org/people/michele-tugade",
+"status": "past"
+},
+{
+"name": "Carla Olla",
+"url": "https://kripalu.org/people/carla-olla",
+"status": "past"
+},
+{
+"name": "Jedidiah Jenkins",
+"url": "https://kripalu.org/people/jedidiah-jenkins",
+"status": "past"
+},
+{
+"name": "Hannah Morano",
+"url": "https://kripalu.org/people/hannah-morano",
+"status": "past"
+},
+{
+"name": "Eliana Fiore",
+"url": "https://kripalu.org/people/eliana-fiore",
+"status": "past"
+},
+{
+"name": "Morley Kamen",
+"url": "https://kripalu.org/people/morley-kamen",
+"status": "past"
+},
+{
+"name": "Ananda Hargeet Kaur",
+"url": "https://kripalu.org/people/ananda-hargeet-kaur",
+"status": "past"
+},
+{
+"name": "Cassandra Cureton",
+"url": "https://kripalu.org/people/cassandra-cureton",
+"status": "past"
+},
+{
+"name": "Jayne Mattingly",
+"url": "https://kripalu.org/people/jayne-mattingly",
+"status": "past"
+},
+{
+"name": "Madeleine Macgillivray",
+"url": "https://kripalu.org/people/madeleine-macgillivray",
+"status": "past"
+},
+{
+"name": "Morgan Lennox Whitehead",
+"url": "https://kripalu.org/people/morgan-lennox-whitehead",
+"status": "past"
+},
+{
+"name": "Anne Walsh",
+"url": "https://kripalu.org/people/anne-walsh",
+"status": "past"
+},
+{
+"name": "Liz Haley",
+"url": "https://kripalu.org/people/liz-haley",
+"status": "past"
+},
+{
+"name": "Rev Dr Shelley D Best",
+"url": "https://kripalu.org/people/rev-dr-shelley-d-best",
+"status": "past"
+},
+{
+"name": "Kimberly Richardson",
+"url": "https://kripalu.org/people/kimberly-richardson",
+"status": "past"
+},
+{
+"name": "Stefanie Cotter",
+"url": "https://kripalu.org/people/stefanie-cotter",
+"status": "past"
+},
+{
+"name": "Danielle Bensimhon",
+"url": "https://kripalu.org/people/danielle-bensimhon",
+"status": "past"
+},
+{
+"name": "Jon Young",
+"url": "https://kripalu.org/people/jon-young",
+"status": "past"
+},
+{
+"name": "Jacqueline Michelle",
+"url": "https://kripalu.org/people/jacqueline-michelle",
+"status": "past"
+},
+{
+"name": "Colleen Temple",
+"url": "https://kripalu.org/people/colleen-temple",
+"status": "past"
+},
+{
+"name": "Devynn Visionary",
+"url": "https://kripalu.org/people/devynn-visionary",
+"status": "past"
+},
+{
+"name": "Michaela Himelfarb",
+"url": "https://kripalu.org/people/michaela-himelfarb",
+"status": "past"
+},
+{
+"name": "Dj Shango",
+"url": "https://kripalu.org/people/dj-shango",
+"status": "past"
+},
+{
+"name": "Courtney Hayes",
+"url": "https://kripalu.org/people/courtney-hayes",
+"status": "past"
+},
+{
+"name": "Cat Lynch Capowski",
+"url": "https://kripalu.org/people/cat-lynch-capowski",
+"status": "past"
+},
+{
+"name": "Mike Riley",
+"url": "https://kripalu.org/people/mike-riley",
+"status": "past"
+},
+{
+"name": "Anu Gupta",
+"url": "https://kripalu.org/people/anu-gupta",
+"status": "past"
+},
+{
+"name": "Justin Senense",
+"url": "https://kripalu.org/people/justin-senense",
+"status": "past"
+},
+{
+"name": "Jordan Grinstein",
+"url": "https://kripalu.org/people/jordan-grinstein-0",
+"status": "past"
+},
+{
+"name": "Joanne Audyatis",
+"url": "https://kripalu.org/people/joanne-audyatis",
+"status": "past"
+},
+{
+"name": "Todd Audyatis",
+"url": "https://kripalu.org/people/todd-audyatis",
+"status": "past"
+},
+{
+"name": "Melissa Helm",
+"url": "https://kripalu.org/people/melissa-helm",
+"status": "past"
+},
+{
+"name": "Kendra Lacroix",
+"url": "https://kripalu.org/people/kendra-lacroix",
+"status": "past"
+},
+{
+"name": "Yasmine Cheyenne",
+"url": "https://kripalu.org/people/yasmine-cheyenne",
+"status": "past"
+},
+{
+"name": "Barbara Dague",
+"url": "https://kripalu.org/people/barbara-dague",
+"status": "past"
+},
+{
+"name": "Nandini Austin",
+"url": "https://kripalu.org/people/nandini-austin",
+"status": "past"
+},
+{
+"name": "Jeremy David Engels",
+"url": "https://kripalu.org/people/jeremy-david-engels",
+"status": "past"
+},
+{
+"name": "Lin Wang Gordon",
+"url": "https://kripalu.org/people/lin-wang-gordon",
+"status": "past"
+},
+{
+"name": "Jj Luceno",
+"url": "https://kripalu.org/people/jj-luceno",
+"status": "past"
+}
+]
+}

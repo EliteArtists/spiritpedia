@@ -2980,6 +2980,10 @@ Network and Insight Timer sprints carry on in between these. In order:
 2. **Omega Institute:** faculty and retreats. Sprint 1 live (31 Oct 2026):
    current teachers only (a 2026–27 workshop or an open livestream); past
    faculty listed in `omega-institute-faculty.json`, not linked.
+   **6 Nov 2026: eomega.org now answers our page fetches with 403** (its
+   sitemap still loads): blocked, so nothing more is read from it. Lead
+   counts for all hubs, Sounds True and Hay House (503, blocked) are in
+   `docs/reports/2026-11-06-lead-sources-plan.md`.
 3. **Commune** (onecommune.com). Sprint 1 live (31 Oct 2026); ranks 26–34
    done in the 1 Nov content run. Health-category courses never listed.
 4. **Kripalu, Esalen, 1440 Multiversity.** Live (1 Nov 2026): Kripalu and

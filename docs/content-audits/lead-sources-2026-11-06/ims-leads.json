@@ -1,0 +1,476 @@
+{
+"source": "ims",
+"built": "2026-11-06",
+"note": "names from URL slugs (no accents/capitals); status current = on the hub faculty file current list, else past",
+"counts": {
+"total": 138,
+"on_spiritpedia": 22,
+"handled": 24,
+"in_shift_or_it_pipeline": 0,
+"new": 92,
+"new_current": 0,
+"new_past": 92
+},
+"leads": [
+{
+"name": "Teacher",
+"url": "https://www.dharma.org/teacher/",
+"status": "past"
+},
+{
+"name": "Gina Sharpe",
+"url": "https://www.dharma.org/teacher/gina-sharpe/",
+"status": "past"
+},
+{
+"name": "John Martin",
+"url": "https://www.dharma.org/teacher/john-martin/",
+"status": "past"
+},
+{
+"name": "Juan Sosa",
+"url": "https://www.dharma.org/teacher/juan-sosa/",
+"status": "past"
+},
+{
+"name": "Kimberly Grocher",
+"url": "https://www.dharma.org/teacher/kimberly-grocher/",
+"status": "past"
+},
+{
+"name": "Max Erdstein",
+"url": "https://www.dharma.org/teacher/max-erdstein/",
+"status": "past"
+},
+{
+"name": "Phillip Moffitt",
+"url": "https://www.dharma.org/teacher/phillip-moffitt/",
+"status": "past"
+},
+{
+"name": "Rob Burbea",
+"url": "https://www.dharma.org/teacher/rob-burbea/",
+"status": "past"
+},
+{
+"name": "Sabra Saperstein",
+"url": "https://www.dharma.org/teacher/sabra-saperstein/",
+"status": "past"
+},
+{
+"name": "Susa Talan",
+"url": "https://www.dharma.org/teacher/susa-talan/",
+"status": "past"
+},
+{
+"name": "Susan Obrien",
+"url": "https://www.dharma.org/teacher/susan-obrien/",
+"status": "past"
+},
+{
+"name": "Ajahn Candasiri",
+"url": "https://www.dharma.org/teacher/ajahn-candasiri/",
+"status": "past"
+},
+{
+"name": "Akincano",
+"url": "https://www.dharma.org/teacher/akincano-2/",
+"status": "past"
+},
+{
+"name": "Alexis Santos",
+"url": "https://www.dharma.org/teacher/alexis-santos/",
+"status": "past"
+},
+{
+"name": "Andrea Castillo",
+"url": "https://www.dharma.org/teacher/andrea-castillo/",
+"status": "past"
+},
+{
+"name": "Anushka Fernandopulle",
+"url": "https://www.dharma.org/teacher/anushka-fernandopulle/",
+"status": "past"
+},
+{
+"name": "Ayya Anandabodhi",
+"url": "https://www.dharma.org/teacher/ayya-anandabodhi/",
+"status": "past"
+},
+{
+"name": "Ayya Santacitta",
+"url": "https://www.dharma.org/teacher/ayya-santacitta/",
+"status": "past"
+},
+{
+"name": "Brian Lesage",
+"url": "https://www.dharma.org/teacher/brian-lesage/",
+"status": "past"
+},
+{
+"name": "Catherine Mcgee",
+"url": "https://www.dharma.org/teacher/catherine-mcgee/",
+"status": "past"
+},
+{
+"name": "Christiane Wolf",
+"url": "https://www.dharma.org/teacher/christiane-wolf/",
+"status": "past"
+},
+{
+"name": "Gullu Singh",
+"url": "https://www.dharma.org/teacher/gullu-singh/",
+"status": "past"
+},
+{
+"name": "Howard Cohn",
+"url": "https://www.dharma.org/teacher/howard-cohn/",
+"status": "past"
+},
+{
+"name": "Joanna Hardy",
+"url": "https://www.dharma.org/teacher/joanna-hardy/",
+"status": "past"
+},
+{
+"name": "Kamala Masters",
+"url": "https://www.dharma.org/teacher/kamala-masters/",
+"status": "past"
+},
+{
+"name": "Keri Pederson",
+"url": "https://www.dharma.org/teacher/keri-pederson/",
+"status": "past"
+},
+{
+"name": "Madeline Klyne",
+"url": "https://www.dharma.org/teacher/madeline-klyne/",
+"status": "past"
+},
+{
+"name": "Michael Grady",
+"url": "https://www.dharma.org/teacher/michael-grady/",
+"status": "past"
+},
+{
+"name": "Neesha Patel",
+"url": "https://www.dharma.org/teacher/neesha-patel/",
+"status": "past"
+},
+{
+"name": "Nicola Redfern",
+"url": "https://www.dharma.org/teacher/nicola-redfern/",
+"status": "past"
+},
+{
+"name": "Shinmu Tamori Gibson",
+"url": "https://www.dharma.org/teacher/shinmu-tamori-gibson/",
+"status": "past"
+},
+{
+"name": "Tempel Smith",
+"url": "https://www.dharma.org/teacher/tempel-smith/",
+"status": "past"
+},
+{
+"name": "Victoria Cary",
+"url": "https://www.dharma.org/teacher/victoria-cary/",
+"status": "past"
+},
+{
+"name": "William Edelglass",
+"url": "https://www.dharma.org/teacher/william-edelglass/",
+"status": "past"
+},
+{
+"name": "Yanai Postelnik",
+"url": "https://www.dharma.org/teacher/yanai-postelnik/",
+"status": "past"
+},
+{
+"name": "Dawn Scott",
+"url": "https://www.dharma.org/teacher/dawn-scott/",
+"status": "past"
+},
+{
+"name": "Jeanne Corrigal",
+"url": "https://www.dharma.org/teacher/jeanne-corrigal/",
+"status": "past"
+},
+{
+"name": "Deborah Ratner Helzer",
+"url": "https://www.dharma.org/teacher/deborah-ratner-helzer/",
+"status": "past"
+},
+{
+"name": "Nakawe Cuebas",
+"url": "https://www.dharma.org/teacher/nakawe-cuebas/",
+"status": "past"
+},
+{
+"name": "Sayadaw U Vivekananda",
+"url": "https://www.dharma.org/teacher/sayadaw-u-vivekananda/",
+"status": "past"
+},
+{
+"name": "Susie Harrington",
+"url": "https://www.dharma.org/teacher/susie-harrington/",
+"status": "past"
+},
+{
+"name": "Tim Geil",
+"url": "https://www.dharma.org/teacher/tim-geil/",
+"status": "past"
+},
+{
+"name": "Gina Laroche",
+"url": "https://www.dharma.org/teacher/gina-laroche/",
+"status": "past"
+},
+{
+"name": "Kate Siber",
+"url": "https://www.dharma.org/teacher/kate-siber/",
+"status": "past"
+},
+{
+"name": "Margrit Pittman Polletta",
+"url": "https://www.dharma.org/teacher/margrit-pittman-polletta/",
+"status": "past"
+},
+{
+"name": "Melanie Cherng",
+"url": "https://www.dharma.org/teacher/melanie-cherng/",
+"status": "past"
+},
+{
+"name": "Nico Hase",
+"url": "https://www.dharma.org/teacher/nico-hase/",
+"status": "past"
+},
+{
+"name": "Rae Houseman",
+"url": "https://www.dharma.org/teacher/rae-houseman/",
+"status": "past"
+},
+{
+"name": "Thimo Wittich",
+"url": "https://www.dharma.org/teacher/thimo-wittich/",
+"status": "past"
+},
+{
+"name": "Zeenat Potia",
+"url": "https://www.dharma.org/teacher/zeenat-potia/",
+"status": "past"
+},
+{
+"name": "Wynn Fricke",
+"url": "https://www.dharma.org/teacher/wynn-fricke/",
+"status": "past"
+},
+{
+"name": "Isabel Adon",
+"url": "https://www.dharma.org/teacher/isabel-adon/",
+"status": "past"
+},
+{
+"name": "Alexa Redner",
+"url": "https://www.dharma.org/teacher/alexa-redner/",
+"status": "past"
+},
+{
+"name": "Brett Bethke",
+"url": "https://www.dharma.org/teacher/brett-bethke/",
+"status": "past"
+},
+{
+"name": "Emily Carpenter",
+"url": "https://www.dharma.org/teacher/emily-carpenter/",
+"status": "past"
+},
+{
+"name": "Kaira Jewel Lingo",
+"url": "https://www.dharma.org/teacher/kaira-jewel-lingo/",
+"status": "past"
+},
+{
+"name": "Diana Clark",
+"url": "https://www.dharma.org/teacher/diana-clark/",
+"status": "past"
+},
+{
+"name": "Peace Twesigye",
+"url": "https://www.dharma.org/teacher/peace-twesigye/",
+"status": "past"
+},
+{
+"name": "Aisha Shahidah Simmons",
+"url": "https://www.dharma.org/teacher/aisha-shahidah-simmons/",
+"status": "past"
+},
+{
+"name": "Jayson Chung",
+"url": "https://www.dharma.org/teacher/jayson-chung/",
+"status": "past"
+},
+{
+"name": "Amana Brembry Johnson",
+"url": "https://www.dharma.org/teacher/amana-brembry-johnson/",
+"status": "past"
+},
+{
+"name": "Ayya Santussika",
+"url": "https://www.dharma.org/teacher/ayya-santussika/",
+"status": "past"
+},
+{
+"name": "Ayya Cittananda",
+"url": "https://www.dharma.org/teacher/ayya-cittananda/",
+"status": "past"
+},
+{
+"name": "Marci Moberg",
+"url": "https://www.dharma.org/teacher/marci-moberg/",
+"status": "past"
+},
+{
+"name": "Malaika Tabors",
+"url": "https://www.dharma.org/teacher/malaika-tabors/",
+"status": "past"
+},
+{
+"name": "Natasha Judson",
+"url": "https://www.dharma.org/teacher/natasha-judson/",
+"status": "past"
+},
+{
+"name": "Isabelle Frenette",
+"url": "https://www.dharma.org/teacher/isabelle-frenette/",
+"status": "past"
+},
+{
+"name": "Marjolein Janssen",
+"url": "https://www.dharma.org/teacher/marjolein-janssen/",
+"status": "past"
+},
+{
+"name": "Jean Leonard",
+"url": "https://www.dharma.org/teacher/jean-leonard/",
+"status": "past"
+},
+{
+"name": "Lissa Edmond",
+"url": "https://www.dharma.org/teacher/lissa-edmond/",
+"status": "past"
+},
+{
+"name": "Mia Monos",
+"url": "https://www.dharma.org/teacher/mia-monos/",
+"status": "past"
+},
+{
+"name": "Francisco Gable",
+"url": "https://www.dharma.org/teacher/francisco-gable/",
+"status": "past"
+},
+{
+"name": "Noliwe Alexander",
+"url": "https://www.dharma.org/teacher/noliwe-alexander/",
+"status": "past"
+},
+{
+"name": "Marvin Belzer",
+"url": "https://www.dharma.org/teacher/marvin-belzer/",
+"status": "past"
+},
+{
+"name": "Namu",
+"url": "https://www.dharma.org/teacher/namu/",
+"status": "past"
+},
+{
+"name": "Lila Kate Wheeler",
+"url": "https://www.dharma.org/teacher/lila-kate-wheeler/",
+"status": "past"
+},
+{
+"name": "Rasika Martha Link",
+"url": "https://www.dharma.org/teacher/rasika-martha-link/",
+"status": "past"
+},
+{
+"name": "Erin Treat",
+"url": "https://www.dharma.org/teacher/erin-treat/",
+"status": "past"
+},
+{
+"name": "Ronya Fakhoury Banks",
+"url": "https://www.dharma.org/teacher/ronya-fakhoury-banks/",
+"status": "past"
+},
+{
+"name": "Monica Williams",
+"url": "https://www.dharma.org/teacher/monica-williams/",
+"status": "past"
+},
+{
+"name": "Jean Esther",
+"url": "https://www.dharma.org/teacher/jean-esther/",
+"status": "past"
+},
+{
+"name": "Oren Jay Sofer",
+"url": "https://www.dharma.org/teacher/oren-jay-sofer/",
+"status": "past"
+},
+{
+"name": "Mary Paffard",
+"url": "https://www.dharma.org/teacher/mary-paffard/",
+"status": "past"
+},
+{
+"name": "Vance Pryor",
+"url": "https://www.dharma.org/teacher/vance-pryor/",
+"status": "past"
+},
+{
+"name": "Dawn Neal",
+"url": "https://www.dharma.org/teacher/dawn-neal/",
+"status": "past"
+},
+{
+"name": "Jessica Morey",
+"url": "https://www.dharma.org/teacher/jessica-morey/",
+"status": "past"
+},
+{
+"name": "Marcia Rose",
+"url": "https://www.dharma.org/teacher/marcia-rose/",
+"status": "past"
+},
+{
+"name": "Shaila Catherine",
+"url": "https://www.dharma.org/teacher/shaila-catherine/",
+"status": "past"
+},
+{
+"name": "Vinny Ferraro",
+"url": "https://www.dharma.org/teacher/vinny-ferraro/",
+"status": "past"
+},
+{
+"name": "Ramona Lisa Ortiz Smith",
+"url": "https://www.dharma.org/teacher/ramona-lisa-ortiz-smith/",
+"status": "past"
+},
+{
+"name": "Narayan Liebenson",
+"url": "https://www.dharma.org/teacher/narayan-liebenson/",
+"status": "past"
+},
+{
+"name": "Anthony T Maes",
+"url": "https://www.dharma.org/teacher/anthony-t-maes/",
+"status": "past"
+}
+]
+}
