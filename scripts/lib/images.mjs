@@ -43,6 +43,7 @@ function robotsGroups(text) {
     } else {
       lastWasAgent = false;
       if (g && (key === 'allow' || key === 'disallow')) g.rules.push({ allow: key === 'allow', path: value });
+      if (g && key === 'crawl-delay' && Number(value) > 0) g.delay = Number(value);
     }
   }
   return groups;
@@ -64,8 +65,27 @@ async function robotsFor(origin) {
   } catch (e) {
     result = { refused: `robots.txt unreachable (${e.cause?.code || e.name})` };
   }
+  // Crawl-delay from the group that applies to us (SpiritpediaIngest, else *).
+  const ours = (result.groups || []).filter((g) => g.agents.includes('spiritpediaingest'));
+  const applies = ours.length ? ours : (result.groups || []).filter((g) => g.agents.includes('*'));
+  result.delay = Math.max(0, ...applies.map((g) => g.delay || 0));
+  if (result.delay) nextSlot.set(origin, Date.now() + result.delay * 1000);
   robotsCache.set(origin, result);
   return result;
+}
+
+// Honour Crawl-delay (9 Nov 2026): requests to a host that sets one are spaced
+// at least that far apart, counting the robots.txt request. Slots are taken in
+// call order, so parallel probes of one host queue up rather than burst.
+const nextSlot = new Map();
+async function polite(url) {
+  const { origin } = new URL(url);
+  const { delay } = await robotsFor(origin);
+  if (!delay) return;
+  const now = Date.now();
+  const at = Math.max(now, nextSlot.get(origin) || 0);
+  nextSlot.set(origin, at + delay * 1000);
+  if (at > now) await new Promise((res) => setTimeout(res, at - now));
 }
 // → null when we may fetch the URL, else the reason we may not.
 export async function robotsBlock(url) {
@@ -115,6 +135,7 @@ export async function probeImage(url, { minPx = MIN_IMAGE_PX } = {}) {
   const blocked = await robotsBlock(url);
   if (blocked) return { ok: false, why: `${blocked}, not fetched` };
   try {
+    await polite(url);
     const r = await fetch(url, { headers: { 'User-Agent': UA, Accept: 'image/*,*/*' }, signal: timed() });
     if (!r.ok) return { ok: false, why: `HTTP ${r.status}` };
     const b = Buffer.from(await r.arrayBuffer());
@@ -134,12 +155,14 @@ export async function pageImage(pageUrl, { shareOnly = false } = {}) {
   if (offLimits(pageUrl) || await robotsBlock(pageUrl)) return null;
   let r;
   try {
+    await polite(pageUrl);
     r = await fetch(pageUrl, { headers: { 'User-Agent': UA, Accept: 'text/html' }, redirect: 'manual', signal: timed() });
     // Follow redirects ourselves, so an off-limits or robots-blocked host is never requested.
     for (let hops = 0; r.status >= 300 && r.status < 400 && r.headers.get('location') && hops < 5; hops += 1) {
       const next = new URL(r.headers.get('location'), pageUrl).href;
       if (offLimits(next) || await robotsBlock(next)) return null;
       pageUrl = next;
+      await polite(next);
       r = await fetch(next, { headers: { 'User-Agent': UA, Accept: 'text/html' }, redirect: 'manual', signal: timed() });
     }
   } catch { return null; }
@@ -182,6 +205,7 @@ export async function publisherLogo(siteUrl) {
   if (offLimits(siteUrl) || await robotsBlock(siteUrl)) return null;
   let html; let base;
   try {
+    await polite(siteUrl);
     const r = await fetch(siteUrl, { headers: { 'User-Agent': UA, Accept: 'text/html' }, signal: timed() });
     html = await r.text(); base = r.url;
   } catch { return null; }
