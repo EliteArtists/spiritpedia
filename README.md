@@ -3057,6 +3057,29 @@ forbid reuse).
 offerings (`product_type: retreat`, with `start_date` and `end_date`), so
 they feed the Upcoming Retreats shelf (open job #24) and drop off when over.
 
+**Sprint queue** (owner, 9 Nov 2026). **Daily target: 100 new listings a day**
+(was 20). Next, in order:
+1. **Practice centres and apps** (from `docs/reports/2026-11-06-channels-apps-plan.md`):
+   - Practice centres (Insight Meditation Center, Common Ground and others) come in as
+     **Organisations** (hubs), with our teachers who teach there linked
+     (`scripts/link-hub.mjs`).
+   - Apps: genuine meditation, prayer and contemplative apps, each with a website and a
+     contact route. Headspace stays. Calm is allowed. As with Insight Timer, the listing
+     describes the meditation and leaves out sleep, anxiety and therapy claims.
+2. **Quantum-Touch sprint:** Quantum-Touch practitioners worldwide.
+   - Read the official practitioner directory's robots.txt and terms first.
+   - The health rule applies strictly: list the energy-healing work, never pain-relief
+     or condition claims.
+3. **Pipelines sprint 3's queue** continues from rank 312 (ranks 1–311, IMS included,
+   were done in sprint 3): Sounds True (title-screened, names only) alternating with
+   Kripalu and Esalen past faculty.
+4. **Yoga schools sprint:** physical yoga schools worldwide, each as a **School** with its
+   teachers linked ("Teaches at…") and its trainings and retreats as offerings. Spread
+   across countries to help Near You. All standing rules.
+5. **Channels:** waiting on the YouTube Data API key (the owner, 10 Nov 2026). From
+   this machine, YouTube channel pages redirect to a cookie-consent page for curl and
+   WebFetch alike, and consent pages are never accepted. Video oEmbed checks still work.
+
 ---
 
 ## 19. Fixing the broken-image queue (the morning routine)
