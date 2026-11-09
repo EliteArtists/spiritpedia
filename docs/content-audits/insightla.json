@@ -1,0 +1,253 @@
+{
+  "healer": {
+    "healer_slug": "insightla",
+    "location_source": "https://insightla.org/location/santa-monica-meditation-center/",
+    "create": {
+      "name": "InsightLA",
+      "bio": "InsightLA is a non-profit meditation community in Los Angeles that teaches insight meditation and Buddhist practice in the Theravada tradition, alongside secular courses in mindfulness and self-compassion. Trudy Goodman, a long-time vipassana teacher and psychotherapist, is its founding teacher, and the community has run classes, retreats and special events across the city for around twenty-five years. A Dharma Council of senior teachers, among them Jack Kornfield, supports its teaching, and a group of teachers trained within the community now leads much of the programme.\n\nIt has two homes: a meditation centre on Olympic Boulevard in Santa Monica, used for weekly sitting groups, classes and daylongs, and a retreat house in Benedict Canyon above Beverly Hills for weekend and non-residential retreats. Much of what it offers is hybrid, so people can join on Zoom as well. Weekly groups and many classes are offered on a donation basis, with pay-what-you-can places held back for those who need them; there are weekday morning sits, a Spanish-language group, affinity sanghas, longer residential retreats at hired centres and a year-long programme for experienced students. Recorded talks are shared on YouTube.",
+      "tier": "local_hero",
+      "entity_type": "organisation",
+      "founded_year": 2001,
+      "availability": "worldwide",
+      "city": "Santa Monica, California",
+      "country": "United States",
+      "subjects": [
+        "meditation",
+        "mindfulness",
+        "spiritual-awakening"
+      ],
+      "website_url": "https://insightla.org/",
+      "booking_url": "https://insightla.org/calendar/",
+      "youtube_url": "https://www.youtube.com/channel/UC2_v_7QQQyw63Mc7h7iW-xw",
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "office@insightla.org",
+      "image_urls": [
+        "https://insightla.org/wp-content/uploads/2024/02/IMG_6014-scaled.jpeg",
+        "https://insightla.org/wp-content/uploads/2024/07/InsightLADec8-10retreat-PhotoByDillonHowl-3982-scaled.jpg",
+        "https://insightla.org/wp-content/uploads/2024/03/IMG_3184-scaled.jpeg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "New Year's Retreat 2026-27",
+      "url": "https://insightla.org/event/new-years-retreat-2026-27/2026-12-28-15-00/",
+      "description": "A four-night silent residential retreat to see out the year, held at the Mary and Joseph Retreat Center, led by Melissa McKay and Dave Smith: sitting and walking practice, guided meditations, talks and question sessions, with vegetarian meals. The teachers are supported separately through dana.",
+      "price": "$1050 (single room), $805 (shared room)",
+      "product_type": "retreat",
+      "start_date": "2026-12-28",
+      "end_date": "2027-01-01",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://insightla.org/wp-content/uploads/2025/02/IMG_7552-scaled.jpeg"
+    },
+    {
+      "title": "(Hybrid: In-person) Wise Intention in the New Year Weekend Retreat",
+      "url": "https://insightla.org/event/in-person-wise-intention-2027/2027-01-16-10-00/",
+      "description": "A non-residential silent weekend at the Benedict Canyon Retreat House with Celeste Young, looking at New Year intentions from acceptance rather than self-improvement, through mindfulness, lovingkindness, inquiry and a daily talk. Also offered online.",
+      "price": "Suggested Donation: $170",
+      "product_type": "retreat",
+      "start_date": "2027-01-16",
+      "end_date": "2027-01-17",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://insightla.org/wp-content/uploads/2022/07/Wise-Buddha-blessing.jpg"
+    },
+    {
+      "title": "(Hybrid: In-person) Deepening the Path: A Yearlong Program for Experienced Practitioners (2027)",
+      "url": "https://insightla.org/event/in-person-deepening-the-path-2027/2027-01-23-10-00/",
+      "description": "A year-long cohort for students with solid silent-retreat experience: six non-residential weekends at Benedict Canyon, each led by senior insight teachers including Jack Kornfield and Trudy Goodman, Kamala Masters, Diana Winston, Celeste Young and James Baraz, mixing practice, talks and discussion.",
+      "price": "$1,950",
+      "product_type": "course",
+      "start_date": "2027-01-23",
+      "end_date": "2027-12-05",
+      "subjects": [
+        "meditation",
+        "spiritual-awakening",
+        "ancient-wisdom"
+      ],
+      "image": "https://insightla.org/wp-content/uploads/2024/12/buddha-window.jpg"
+    },
+    {
+      "title": "(Online) A Boundless Heart: A Metta Daylong",
+      "url": "https://insightla.org/event/online-a-boundless-heart-a-metta-daylong/2027-02-13-10-00/",
+      "description": "A day of lovingkindness practice on Zoom with Beth Sternlieb: what metta is and is not, the traditional phrases, walking practice, the companion qualities of compassion, joy and equanimity, and frank talk about what gets in the way. Open to beginners.",
+      "price": "Suggested donation: $125",
+      "product_type": "retreat",
+      "start_date": "2027-02-13",
+      "end_date": "2027-02-13",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://insightla.org/wp-content/uploads/2024/03/IMG_3184-scaled.jpeg"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Morning Community Sit – Every Monday through Friday",
+      "url": "https://insightla.org/event/morning/2026-11-10-07-30/",
+      "description": "Half an hour of guided meditation on Zoom each weekday at 7:30am Pacific with senior teacher Beth Sternlieb, then optional silent sitting and questions. Offered by donation; registration is needed.",
+      "featured": true,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://insightla.org/wp-content/uploads/2020/03/IMG_5605-e1705707007204.jpeg"
+    },
+    {
+      "title": "Sunday Morning Group",
+      "url": "https://insightla.org/event/in-person-sunday-morning-group-trudy-friends/2026-11-15-10-00/",
+      "description": "A weekly Sunday practice group at the Santa Monica centre and online, led in rotation by a small teacher team: guided sitting, a talk on the month's theme, then questions and sharing. Drop-in and donation-based; all levels welcome.",
+      "featured": false,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "image": "https://insightla.org/wp-content/uploads/2025/01/IMG_6017-scaled-e1737688586739.jpeg"
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "centre",
+    "rank": 14,
+    "hub": null,
+    "tier_evidence": "YouTube channel UC2_v_7QQQyw63Mc7h7iW-xw (linked from its own site): unreadable (consent page, 9 Nov 2026); other accounts not fetched → 0 readable → local_hero",
+    "email": "yes",
+    "email_source": "https://insightla.org/",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 11 source(s)",
+    "flags": [
+      "Main YouTube count unreadable (consent page, 9 Nov 2026).",
+      "Possible editorial-stature override: Trudy Goodman's community with Jack Kornfield on its Dharma Council, a leading US insight centre; owner to decide.",
+      "Email office@insightla.org is the office inbox (mailto in the site footer).",
+      "Founded year 2001 is worked out from the About page's 'For 25 years'; another line on the same site says 'over 20 years'. Owner may wish to confirm (2002 is often given).",
+      "Base: Santa Monica Meditation Center, 1430 Olympic Blvd, Santa Monica; it also has a retreat house in Benedict Canyon (Beverly Hills).",
+      "Hub links: Trudy Goodman (marked 'Founding Teacher' on the site) as founder; Jack Kornfield, Kamala Masters, Diana Winston, Celeste Young and James Baraz as instructors, all named as teaching weekends in the 2027 Deepening the Path programme (Celeste Young also leads the January weekend retreat). Stephen Batchelor (in the lead) appears only in a book talk on its channel; Jon Kabat-Zinn is on the Dharma Council but not named as teaching; neither is linked.",
+      "Prices copied as published; '$' is shown without a stated currency, so no currency code. The New Year's retreat page also lists a $400 financial-support rate.",
+      "Deepening the Path end date taken as the last listed weekend (4-5 Dec 2027); the event page itself is dated 23 Jan 2027.",
+      "Some event pages carry a stress-reduction or health framing (MBSR, Unwinding Anxiety); none of those is used.",
+      "All 11 videos are already on dev under Trudy Goodman and Stephen Batchelor, so the dry run adds 0 videos."
+    ],
+    "left_out": [
+      "MBSR 2027, Unwinding Anxiety (MBHC), 'Stress' and Mindful Support: condition- or stress-framed.",
+      "Recovery Dharma group: addiction recovery is on the condition list.",
+      "Qigong for Meditators and short weekly classes such as Calm the Mind: not opened.",
+      "Thanksgiving, Lanterns of Lovingkindness and other events in the home-page list: not opened, to keep the plan short.",
+      "Affinity and age-based groups: not opened."
+    ]
+  },
+  "videos": [
+    {
+      "title": "Trudy Goodman and Jack Kornfield // Meditation & Dharma Talk // Sunday Sitting Group",
+      "url": "https://www.youtube.com/watch?v=aKJuFq9AWHU",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "channel": "InsightLA Meditation"
+    },
+    {
+      "title": "Sunday Practice Group with Trudy Goodman | 5/22: 3 Ways to Hold The Suffering of the World",
+      "url": "https://www.youtube.com/watch?v=Fzom_fkAvvQ",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "channel": "InsightLA Meditation"
+    },
+    {
+      "title": "Acts of Love w/ Trudy Goodman and Jack Kornfield // Meditation & Dharma Talk // Sunday Sitting Group",
+      "url": "https://www.youtube.com/watch?v=MqeAdp29xt0",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "channel": "InsightLA Meditation"
+    },
+    {
+      "title": "Thich Nhat Hanh with Trudy Goodman // Meditation & Dharma Talk // Sunday Sitting Group",
+      "url": "https://www.youtube.com/watch?v=tQsSOMuGsmc",
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "channel": "InsightLA Meditation"
+    },
+    {
+      "title": "Life Blooms In The Midst Of Suffering w/ Trudy Goodman / Meditation & Dharma Talk",
+      "url": "https://www.youtube.com/watch?v=IZkPvZQMiUQ",
+      "subjects": [
+        "spirituality",
+        "meditation"
+      ],
+      "channel": "InsightLA Meditation"
+    },
+    {
+      "title": "Open Hearted Welcoming with Trudy Goodman and Jack Kornfield // Meditation and Dharma Talk",
+      "url": "https://www.youtube.com/watch?v=zYs2Hy0_h-0",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "channel": "InsightLA Meditation"
+    },
+    {
+      "title": "Classic Teachings with Trudy Goodman // Meditation & Dharma Talk // Sunday Sitting Group",
+      "url": "https://www.youtube.com/watch?v=5x-8MuGB94Y",
+      "subjects": [
+        "ancient-wisdom",
+        "meditation"
+      ],
+      "channel": "InsightLA Meditation"
+    },
+    {
+      "title": "The Truth Of This Moment with Trudy Goodman // Meditation & Dharma Talk // Sunday Sitting Group",
+      "url": "https://www.youtube.com/watch?v=xKVVu9-fHOo",
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "channel": "InsightLA Meditation"
+    },
+    {
+      "title": "This Moment is a Dharma Door with Trudy Goodman // Meditation & Dharma Talk // Sunday Sitting Group",
+      "url": "https://www.youtube.com/watch?v=K51YmPBrzUs",
+      "subjects": [
+        "spiritual-awakening",
+        "meditation"
+      ],
+      "channel": "InsightLA Meditation"
+    },
+    {
+      "title": "A Place of Steadiness with Trudy Goodman // Meditation & Dharma Talk // Sunday Sitting Group",
+      "url": "https://www.youtube.com/watch?v=3ZnmS9D7sA4",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "channel": "InsightLA Meditation"
+    },
+    {
+      "title": "Join Stephen Batchelor for a talk on his latest book, The Art of Solitude",
+      "url": "https://www.youtube.com/watch?v=qxoKU8uo2OU",
+      "subjects": [
+        "spirituality",
+        "meditation"
+      ],
+      "channel": "InsightLA Meditation"
+    }
+  ],
+  "images_final": true
+}

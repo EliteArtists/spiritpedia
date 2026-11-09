@@ -1,0 +1,78 @@
+{
+  "healer": {
+    "healer_slug": "sattva",
+    "location_source": null,
+    "no_public_base": "No company city or country published on sattva.life's home page; the publisher (reported in app-store snippets as Shankara Multimedia Services, part of the Art of Living) was not confirmed on a page we opened.",
+    "create": {
+      "name": "Sattva",
+      "bio": "Sattva is a meditation app rooted in the Vedic tradition, built around the teachings of the spiritual teacher Gurudev Sri Sri Ravi Shankar. Where many meditation apps lean on secular mindfulness, Sattva draws on Sanskrit chanting, mantra and classical yogic practice, with recordings voiced by Sanskrit scholars as well as by Gurudev himself, who leads a large share of its guided sessions.\n\nIts library brings together guided meditations of different lengths, starting at about six minutes for newcomers, along with traditional chants, Vedic mantras, devotional and meditative music, and mudra practices that use hand gestures to work with the flow of energy in the body. Listeners can follow curated collections chosen by time of day or mood, or build their own playlists. A built-in timer and tracker logs practice on a calendar, map and charts, and users can set goals, take on challenges and earn milestones. A community side lets friends share playlists and meditate together in group sessions and live video events. Sattva runs on iOS and Android, with a web version for desktop use.",
+      "tier": "local_hero",
+      "entity_type": "app",
+      "availability": "worldwide",
+      "city": null,
+      "country": null,
+      "subjects": [
+        "meditation",
+        "ancient-wisdom",
+        "sound-healing"
+      ],
+      "website_url": "https://www.sattva.life/",
+      "booking_url": "https://www.sattva.life/webapp",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "we@sattva.life",
+      "image_urls": [
+        "https://sattva.life/images/contents_v7/1.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Sattva Web App and Subscription",
+      "url": "https://www.sattva.life/webapp",
+      "description": "The full Sattva library in a browser: guided meditations, Vedic chants and mantras, mudra practices and music, with the practice timer and tracker. Some content is free and the rest sits behind a paid subscription.",
+      "price": "Contact for pricing",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "ancient-wisdom"
+      ],
+      "image": "https://www.sattva.life/webapp/images/fb_connect.png"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "app",
+    "rank": 54,
+    "hub": null,
+    "tier_evidence": "No readable follower counts (Instagram, Facebook, X not fetched; no YouTube link on the site) → 0 → local_hero.",
+    "email": "yes",
+    "email_source": "https://sattva.life/",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 1 source(s)",
+    "flags": [
+      "Thin: one item; the site has no price, free practices or video IDs (practice content sits inside the app). Store pages (search snippets) show $12.99 monthly / $49.99 yearly, not confirmed on its own site and not used.",
+      "Email we@sattva.life is the app's brand inbox (mailto on the home page).",
+      "Teacher: Gurudev Sri Sri Ravi Shankar leads many sessions; he is not on Spiritpedia (dev names checked).",
+      "Image is an app-store screenshot from the site ('meditations led by Gurudev'); the site's own icon is only 42 px.",
+      "Subject 'sound-healing' chosen for chants and mantras; owner may prefer 'spirituality'.",
+      "sattva.life has no robots.txt (404); www.sattva.life links not fetched separately.",
+      "Unrelated text on the site navigation ('Beverages') looks like leftover template; ignored.",
+      "No base published: no_public_base set."
+    ],
+    "left_out": [
+      "Prices from app-store snippets: not from a page opened.",
+      "Mood-based collections: described generally, no condition named."
+    ]
+  },
+  "images_final": true
+}

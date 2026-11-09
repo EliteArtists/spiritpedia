@@ -1,0 +1,52 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 1078,
+    "healer_slug": "monroe-institute"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "76aa38a8-1a80-45a8-936d-756a2128e7a3",
+      "slug": "gateway-voyage",
+      "title": "Gateway Voyage"
+    },
+    {
+      "table": "courses",
+      "id": "2de12e29-80c8-49ef-aa98-79bcecf6ac8c",
+      "slug": "gateway-voyage-online",
+      "title": "Gateway Voyage Online"
+    },
+    {
+      "table": "courses",
+      "id": "a8724217-cb0d-4258-8f0d-bba5b9cf448b",
+      "slug": "discovery",
+      "title": "Discovery"
+    },
+    {
+      "table": "courses",
+      "id": "06eafeb6-afa6-4664-b0eb-829ff600c0e2",
+      "slug": "exploring-consciousness",
+      "title": "Exploring Consciousness"
+    },
+    {
+      "table": "free_resources",
+      "id": "372fbf13-55a6-487f-9d7c-bd68efaa0627",
+      "slug": "free-meditations-2",
+      "title": "Free Meditations"
+    },
+    {
+      "table": "free_resources",
+      "id": "fd5c67c8-3ec6-497a-bcd7-009497b80715",
+      "slug": "lucid-dream",
+      "title": "Lucid Dream"
+    },
+    {
+      "table": "free_resources",
+      "id": "62d9726f-f7b1-4b0f-bd1b-24682f54c53e",
+      "slug": "expanding-on-consciousness-podcast",
+      "title": "Expanding on Consciousness Podcast"
+    }
+  ],
+  "at": "2026-11-09T23:43:29.128Z"
+}

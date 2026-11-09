@@ -1,0 +1,28 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 1065,
+    "healer_slug": "plum-village-app"
+  },
+  "rows": [
+    {
+      "table": "videos",
+      "id": 8605,
+      "slug": "plum-village-app-introduction-brother-phap-luu",
+      "title": "Plum Village App Introduction | Brother Phap Luu"
+    },
+    {
+      "table": "courses",
+      "id": "96810f2d-c0ff-4ff3-a8f5-1eab7bd6ab93",
+      "slug": "the-oak-forest-family",
+      "title": "The Oak Forest Family"
+    },
+    {
+      "table": "free_resources",
+      "id": "058f0ef9-58f8-4ae6-b5da-caa0be7af363",
+      "slug": "plum-village-app-web-version",
+      "title": "Plum Village App (web version)"
+    }
+  ],
+  "at": "2026-11-09T23:25:56.938Z"
+}

@@ -1,0 +1,46 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 1081,
+    "healer_slug": "tara-mandala"
+  },
+  "rows": [
+    {
+      "table": "videos",
+      "id": 8612,
+      "slug": "how-to-practice-shamatha-meditation-calm-abiding-with-lama-tsultrim-allione",
+      "title": "How to Practice Shamatha Meditation: Calm Abiding with Lama Tsultrim Allione"
+    },
+    {
+      "table": "courses",
+      "id": "6a247f41-3477-4e9b-8e5d-70f2cb8d3902",
+      "slug": "zhitro-practice-revisited",
+      "title": "Zhitro Practice Revisited"
+    },
+    {
+      "table": "courses",
+      "id": "8dd37f21-b4fc-4dcc-8ec4-16fc8d521d15",
+      "slug": "the-heart-of-buddhism-the-awakened-heart",
+      "title": "The Heart of Buddhism: The Awakened Heart"
+    },
+    {
+      "table": "courses",
+      "id": "2b68b547-9e0e-4d68-8eb6-ab6f38889da4",
+      "slug": "the-heart-of-buddhism-sacred-view-sacred-world",
+      "title": "The Heart of Buddhism: Sacred View Sacred World"
+    },
+    {
+      "table": "courses",
+      "id": "26ab7d34-dcfe-4997-9d07-aaf93783314a",
+      "slug": "the-heart-of-buddhism-the-great-perfection",
+      "title": "The Heart of Buddhism: The Great Perfection"
+    },
+    {
+      "table": "free_resources",
+      "id": "bff3807d-3970-43f4-9b98-12d60fe529a3",
+      "slug": "tibetan-buddhism-for-beginners",
+      "title": "Tibetan Buddhism for Beginners"
+    }
+  ],
+  "at": "2026-11-09T23:43:45.367Z"
+}

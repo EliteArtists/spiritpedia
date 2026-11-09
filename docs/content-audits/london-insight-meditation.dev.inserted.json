@@ -1,0 +1,40 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 1091,
+    "healer_slug": "london-insight-meditation"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "5cfa899b-34b7-4ab8-822f-287515389476",
+      "slug": "in-person-this-precious-human-life-contemplating-our-mortality",
+      "title": "In-person: This Precious Human Life – Contemplating Our Mortality"
+    },
+    {
+      "table": "courses",
+      "id": "0e7c9ff5-9e75-4144-9fc8-ee7da7691916",
+      "slug": "in-person-a-cool-head-a-warm-heart",
+      "title": "In-person: A Cool Head, A Warm Heart"
+    },
+    {
+      "table": "courses",
+      "id": "50433a34-76e5-403e-b574-01ca74a26a7e",
+      "slug": "online-the-six-sense-bases-clarity-and-wisdom",
+      "title": "Online: The Six Sense Bases – Clarity and Wisdom"
+    },
+    {
+      "table": "free_resources",
+      "id": "5a3ab256-f18f-42c4-bda2-86be30548e90",
+      "slug": "lim-dharma-circle",
+      "title": "LIM Dharma Circle"
+    },
+    {
+      "table": "free_resources",
+      "id": "96d14ecd-ee3a-4a64-b912-8bb0213b22fa",
+      "slug": "video",
+      "title": "Video"
+    }
+  ],
+  "at": "2026-11-09T23:51:54.523Z"
+}

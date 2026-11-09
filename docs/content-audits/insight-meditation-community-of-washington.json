@@ -1,0 +1,174 @@
+{
+  "healer": {
+    "healer_slug": "insight-meditation-community-of-washington",
+    "location_source": "https://imcw.org/about/",
+    "create": {
+      "name": "Insight Meditation Community of Washington",
+      "bio": "The Insight Meditation Community of Washington (IMCW) is one of the largest insight meditation communities in the United States, serving the greater Washington area across DC, Maryland and Virginia. Tara Brach founded it in 1997, and it still rests on the Theravada-rooted vipassana teachings she and many others brought west, with mindfulness as the core practice and a loving heart and clear seeing as the aim. A large body of trained teachers, staff and volunteers now runs it.\n\nThe scale is unusual: well over a hundred classes, retreats and gatherings each month, in person, online and hybrid. Drop-in meditation classes run morning, midday and evening; dharma class series range from first steps to close study of the suttas; and three silent week-long retreats each year, in spring, autumn and at New Year, are joined by daylongs and weekend retreats. There are Spiritual Friends groups, sanghas for particular communities and ages, one-to-one mentoring and secular courses in mindfulness and self-compassion. IMCW also looks after Seven Oaks, a retreat centre it is developing in the Blue Ridge foothills of Virginia, and shares a large free archive of talks and guided meditations.",
+      "tier": "local_hero",
+      "entity_type": "organisation",
+      "founded_year": 1997,
+      "availability": "worldwide",
+      "city": "Washington, D.C.",
+      "country": "United States",
+      "subjects": [
+        "meditation",
+        "mindfulness",
+        "spiritual-awakening"
+      ],
+      "website_url": "https://imcw.org/",
+      "booking_url": "https://imcw.org/communities/drop-in-classes/",
+      "youtube_url": "https://www.youtube.com/c/InsightMeditationCommunityofWashington",
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": null,
+      "image_urls": [
+        "https://imcw.org/wp-content/uploads/2022/05/Visit-Insight-Meditation-Community-of-Washington.png"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Meditation Retreats",
+      "url": "https://imcw.org/programs/meditation-retreats/?categoryId=101",
+      "description": "IMCW's retreat programme: daylong, weekend and longer retreats, plus three silent week-long retreats each year in spring, autumn and over the New Year, with daily talks, sitting and walking practice, and small-group meetings with a teacher.",
+      "price": "Contact for pricing",
+      "product_type": "retreat",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://imcw.org/wp-content/uploads/2022/05/Visit-Insight-Meditation-Community-of-Washington.png"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Drop-in Classes",
+      "url": "https://imcw.org/communities/drop-in-classes/",
+      "description": "Several drop-in meditation classes every day, morning, midday and evening, online and in person or hybrid in DC, Maryland and Virginia, each led by an experienced teacher. Newcomers can simply turn up and will be shown the basics.",
+      "featured": true,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://imcw.org/wp-content/uploads/2022/05/Visit-Insight-Meditation-Community-of-Washington.png"
+    },
+    {
+      "title": "Talks",
+      "url": "https://imcw.org/talks/",
+      "description": "IMCW's library of recorded dharma talks and guided meditations, with an archive going back over ten years, a video series on the elements of practice with Tara Brach, and recorded conversations with visiting teachers.",
+      "featured": false,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "image": "https://imcw.org/wp-content/uploads/2022/05/Visit-Insight-Meditation-Community-of-Washington.png"
+    },
+    {
+      "title": "Learn to Meditate",
+      "url": "https://imcw.org/programs/learn-to-meditate/",
+      "description": "A starting page for beginners, with basic instruction from founder Tara Brach and pointers to nearby and online classes where newcomers are welcome.",
+      "featured": false,
+      "resource_type": "practice",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://imcw.org/wp-content/uploads/2022/05/Visit-Insight-Meditation-Community-of-Washington.png"
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "centre",
+    "rank": 13,
+    "hub": null,
+    "tier_evidence": "YouTube @InsightMeditationCommunityofWashington (linked from its own site): unreadable (consent page, 9 Nov 2026); Facebook and Instagram linked but never fetched → 0 readable → local_hero",
+    "email": "contact form",
+    "email_source": null,
+    "contact_form_url": "https://imcw.org/contact/",
+    "bio_check": "OK: no 8-word runs against 15 source(s)",
+    "flags": [
+      "Main YouTube count unreadable (consent page, 9 Nov 2026).",
+      "Possible editorial-stature override: Tara Brach's community and one of the largest insight meditation communities in the US; owner to decide.",
+      "No published email; the contact page offers a form (and a voicemail-only phone line).",
+      "www.imcw.org did not connect; the bare host imcw.org (as found in search) answered and its pages name the community, which confirms the domain.",
+      "Overlap with lead 11: the Center for Mindful Living DC is a project of IMCW; owner may prefer a parent link.",
+      "Dated offerings: the events calendar and teacher list load by script and were not readable from the pages, so no dated retreats or classes are listed; the retreat programme is given as one undated item.",
+      "Hub links: Tara Brach (founder, About page). Hugh Byrne linked as instructor on the strength of the Center for Mindful Living site (an IMCW project) calling him an 'IMCW teacher'; his talks are also on IMCW's channel. Owner may want a firmer source. Mark Nunberg (in the lead) appears only in one talk on its channel; Tuere Sala and Joseph Goldstein appear only as interviewees in a recorded series, so none of them is linked.",
+      "Photo: only the community's logo; its other images are stock-style. Owner may prefer the YouTube avatar once readable.",
+      "Mission page speaks of dismantling systems of oppression; not used in the plan.",
+      "All 6 videos are already on dev under Hugh Byrne and Mark Nunberg, so the dry run adds 0 videos."
+    ],
+    "left_out": [
+      "MBSR and Mindful Self-Compassion courses: framed around stress reduction (a health claim area).",
+      "True Refuge Companions: support for people living with illness and at the end of life (condition-framed).",
+      "Seven Oaks Retreat Center: fundraising page only.",
+      "HEAR Council: governance."
+    ]
+  },
+  "videos": [
+    {
+      "title": "Mark Nunberg | Four Decades of Dharma",
+      "url": "https://www.youtube.com/watch?v=bPa-zjxwkvY",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "channel": "Insight Meditation Community of Washington, D.C."
+    },
+    {
+      "title": "Hugh Byrne | Nothing Can Do You More Good Than A Trained Mind",
+      "url": "https://www.youtube.com/watch?v=ihPGkfW7t8k",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "channel": "Insight Meditation Community of Washington, D.C."
+    },
+    {
+      "title": "Hugh Byrne | Class with Meditation and Talk: Finding Refuge in Difficult Times",
+      "url": "https://www.youtube.com/watch?v=fneAc6AmYxw",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "channel": "Insight Meditation Community of Washington, D.C."
+    },
+    {
+      "title": "Hugh Byrne | Class with Meditation and Talk: A Path of Happiness to the Deepest Happiness",
+      "url": "https://www.youtube.com/watch?v=G3GWMalN39I",
+      "subjects": [
+        "meditation",
+        "spiritual-awakening"
+      ],
+      "channel": "Insight Meditation Community of Washington, D.C."
+    },
+    {
+      "title": "Hugh Byrne | Cultivating Wise Effort: The Four Great Endeavors",
+      "url": "https://www.youtube.com/watch?v=_pW0BROB8b4",
+      "subjects": [
+        "meditation",
+        "ancient-wisdom"
+      ],
+      "channel": "Insight Meditation Community of Washington, D.C."
+    },
+    {
+      "title": "Interconnectedness: Compassion for Ourselves, Others and the World",
+      "url": "https://www.youtube.com/watch?v=D_TJp91Bp84",
+      "subjects": [
+        "mindfulness",
+        "spirituality"
+      ],
+      "channel": "Insight Meditation Community of Washington, D.C."
+    }
+  ],
+  "images_final": true
+}

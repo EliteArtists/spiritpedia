@@ -1,0 +1,223 @@
+{
+  "healer": {
+    "healer_slug": "common-ground-meditation-center",
+    "location_source": "https://www.commongroundmeditation.org/",
+    "create": {
+      "name": "Common Ground Meditation Center",
+      "bio": "Common Ground Meditation Center is an insight meditation community in Minneapolis, grounded in the early Buddhist teachings and in the Western vipassana lineage carried by the Insight Meditation Society and Spirit Rock. Mark Nunberg and his partner Wynn Fricke started it in 1993 in a small storefront that was also their home, and Mark still leads it as co-guiding teacher alongside Shelly Graf, who joined him in that role in 2021. A wider circle of dharma teachers and trained lay leaders, several of them graduates of its own leadership programme, teaches with them.\n\nSince 2009 the centre has occupied a converted diner on East 26th Street in the Seward area, where drop-in sits, yoga, weekly practice groups with talks, introductory mindfulness courses and half-day and daylong retreats take place, most with a Zoom option. Peer-led community groups meet around shared identities and interests. In 2013 the community bought 46 wooded acres near Prairie Farm in western Wisconsin and turned the old barn into a meditation hall for residential retreats and practice periods. Nothing is charged: the centre runs on generosity, and hundreds of recorded talks are shared on YouTube and Dharma Seed.",
+      "tier": "local_hero",
+      "entity_type": "organisation",
+      "founded_year": 1993,
+      "availability": "worldwide",
+      "city": "Minneapolis, Minnesota",
+      "country": "United States",
+      "subjects": [
+        "meditation",
+        "mindfulness",
+        "spiritual-awakening"
+      ],
+      "website_url": "https://www.commongroundmeditation.org/",
+      "booking_url": "https://www.commongroundmeditation.org/calendar",
+      "youtube_url": "https://www.youtube.com/c/commongroundmeditationcenter",
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "info@commongroundmeditation.org",
+      "image_urls": [
+        "https://cdn.sanity.io/images/4tyz2xuc/production/e60165d53716314e58e5bfedb688fcc80029ebc3-2592x1944.jpg",
+        "https://cdn.sanity.io/images/4tyz2xuc/production/5dd2e672ac0a15befe76bd7e79784d5d58582d8e-4500x3000.jpg",
+        "https://cdn.sanity.io/images/4tyz2xuc/production/06ebed08fdc1b847c8d716756f521aedc247b66f-1600x1067.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Residential Retreats at Common Ground Retreat Center",
+      "url": "https://www.commongroundmeditation.org/retreat-center",
+      "description": "Teacher-led silent retreats and peer-led practice periods on 46 acres of woods and fields near Prairie Farm, Wisconsin, about 80 miles from the city centre. Retreatants share the cooking and cleaning, and the converted barn serves as the meditation hall.",
+      "price": "Free (offered on a donation basis)",
+      "product_type": "retreat",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://cdn.sanity.io/images/4tyz2xuc/production/e60165d53716314e58e5bfedb688fcc80029ebc3-2592x1944.jpg"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "New to meditation?",
+      "url": "https://www.commongroundmeditation.org/new-to-meditation-guide",
+      "description": "Common Ground's starting page for beginners, pointing to its multi-week introductory mindfulness course, weekly practice groups and peer-led community groups, plus recordings of a recent introductory course taught by Mark Nunberg.",
+      "featured": true,
+      "resource_type": "mini_course",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://cdn.sanity.io/images/4tyz2xuc/production/e60165d53716314e58e5bfedb688fcc80029ebc3-2592x1944.jpg"
+    },
+    {
+      "title": "What is mindful awareness practice?",
+      "url": "https://www.commongroundmeditation.org/what-is-mindful-awareness-practice",
+      "description": "A short essay by guiding teacher Mark Nunberg on what mindfulness asks of us, from settling the heart and mind to returning to the present again and again, on the cushion and in everyday life.",
+      "featured": false,
+      "resource_type": "practice",
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "image": "https://www.commongroundmeditation.org/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2F4tyz2xuc%2Fproduction%2F3e8eafe5785a0f1721effa12591e4d3eaa297a2f-1280x960.jpg%3Frect%3D0%2C115%2C1280%2C731%26w%3D700%26h%3D400&w=1920&q=75"
+    },
+    {
+      "title": "Sitting and Check-In Community Group",
+      "url": "https://www.commongroundmeditation.org/calendar/event/sitting-and-check-in-community-group-soonest",
+      "description": "An hour of silent sitting on Zoom every weekday morning, hosted by a rotating group of community members, with an optional check-in about practice afterwards. Drop in at any point during the hour.",
+      "featured": false,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://cdn.sanity.io/images/4tyz2xuc/production/e60165d53716314e58e5bfedb688fcc80029ebc3-2592x1944.jpg"
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "centre",
+    "rank": 7,
+    "hub": null,
+    "tier_evidence": "YouTube @commongroundmeditationcenter (linked from its own site): unreadable (consent page, 9 Nov 2026); no other accounts linked → 0 readable → local_hero",
+    "email": "yes",
+    "email_source": "https://www.commongroundmeditation.org/contact",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 13 source(s)",
+    "flags": [
+      "Main YouTube count unreadable (consent page, 9 Nov 2026).",
+      "Email info@commongroundmeditation.org is the centre's general inbox (mailto on the contact page).",
+      "Dated retreats could not be listed: the calendar loads from /api/ (disallowed in robots.txt), and the event URLs in the sitemap answered 404 on the www host, so no dated programme was checked. The one offering is the retreat centre as a whole.",
+      "Hub links: only Mark Nunberg (co-founder, history page). Rebecca Bradshaw and Tuere Sala have talks on its YouTube channel, but no page I could open names them as teaching there (a June 2026 'BIPOC retreat with Tuere Sala' appears only as a sitemap URL that answered 404). Owner may wish to add them.",
+      "The site carries a personal update about Rebecca Bradshaw's recovery after an accident; not opened further or used.",
+      "Regional: Minneapolis, Minnesota (outside the big coastal cities)."
+    ],
+    "left_out": [
+      "Mindfulness and Depression community group: condition-named.",
+      "Daylong retreat for activists and organizers: activism-framed and past.",
+      "All dated retreats (year-end 2026, 2027 residential retreats): pages not reachable (404), so not verified."
+    ]
+  },
+  "videos": [
+    {
+      "title": "Wise View, Part 1, by Mark Nunberg - Sunday, March 1, 2026",
+      "url": "https://www.youtube.com/watch?v=ghhHMfTtS5o",
+      "subjects": [
+        "meditation",
+        "spiritual-awakening"
+      ],
+      "channel": "Common Ground Meditation Center"
+    },
+    {
+      "title": "Awakening as a Natural Process, by Mark Nunberg - Tuesday, June 30, 2026",
+      "url": "https://www.youtube.com/watch?v=LCKQW6T1pas",
+      "subjects": [
+        "spiritual-awakening",
+        "meditation"
+      ],
+      "channel": "Common Ground Meditation Center"
+    },
+    {
+      "title": "Releasing the Heavy Weight of Attachment, Part 1, by Mark Nunberg - Sunday, April 12, 2026",
+      "url": "https://www.youtube.com/watch?v=SX0O10ZHhiM",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "channel": "Common Ground Meditation Center"
+    },
+    {
+      "title": "Relating Wisely to the Proliferating Mind, by Mark Nunberg - Tuesday, December 23, 2025",
+      "url": "https://www.youtube.com/watch?v=hCd86CAzMb4",
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "channel": "Common Ground Meditation Center"
+    },
+    {
+      "title": "Anatta: The Buddha's Teachings on Impersonal Nature, Part 1, by Mark Nunberg - Sunday 11/30/25",
+      "url": "https://www.youtube.com/watch?v=Jg5t-I9Q_qg",
+      "subjects": [
+        "non-duality",
+        "meditation"
+      ],
+      "channel": "Common Ground Meditation Center"
+    },
+    {
+      "title": "Mindfulness of Breathing, Week 7: Quieting the Thinking Mind, part 1, by Mark Nunberg - 9/8/2026",
+      "url": "https://www.youtube.com/watch?v=OzN92Q-jqKU",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "channel": "Common Ground Meditation Center"
+    },
+    {
+      "title": "The Sublime Resting Place of Goodwill, by Mark Nunberg - Tuesday, September 15, 2026",
+      "url": "https://www.youtube.com/watch?v=1liD0G2K944",
+      "subjects": [
+        "meditation"
+      ],
+      "channel": "Common Ground Meditation Center"
+    },
+    {
+      "title": "The Spiritual Pleasure of Seclusion, by Mark Nunberg - Sunday, June 7, 2026",
+      "url": "https://www.youtube.com/watch?v=scF9FCln8H8",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "channel": "Common Ground Meditation Center"
+    },
+    {
+      "title": "Rebecca Bradshaw: \"Freeing the Heart\" - 2/2/2022",
+      "url": "https://www.youtube.com/watch?v=f0dgOCM6e0M",
+      "subjects": [
+        "meditation",
+        "spiritual-awakening"
+      ],
+      "channel": "Common Ground Meditation Center"
+    },
+    {
+      "title": "The Importance of Mindfulness in Difficult Times, by Tuere Sala - Wednesday, July 2, 2025",
+      "url": "https://www.youtube.com/watch?v=lw-4quDn1AY",
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "channel": "Common Ground Meditation Center"
+    },
+    {
+      "title": "The First Noble Truth with Tuere Sala from BIPOC Retreat 2024",
+      "url": "https://www.youtube.com/watch?v=H6EbpDRCKCQ",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "channel": "Common Ground Meditation Center"
+    },
+    {
+      "title": "Buddhist Studies: Understanding the Entangling Power of Craving, Wk 1 of 6 - Mark Nunberg, 9/14/2026",
+      "url": "https://www.youtube.com/watch?v=U8XMgFItsas",
+      "subjects": [
+        "meditation",
+        "ancient-wisdom"
+      ],
+      "channel": "Common Ground Meditation Center"
+    }
+  ],
+  "images_final": true
+}

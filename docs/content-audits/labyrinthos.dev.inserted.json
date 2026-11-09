@@ -1,0 +1,28 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 1085,
+    "healer_slug": "labyrinthos"
+  },
+  "rows": [
+    {
+      "table": "free_resources",
+      "id": "9ebc12fe-f8f1-4298-8178-e7e78abf75e8",
+      "slug": "how-to-read-tarot-cards-a-guide-on-how-tarot-works",
+      "title": "How to Read Tarot Cards: A Guide on How Tarot Works"
+    },
+    {
+      "table": "free_resources",
+      "id": "18801dd5-c2ae-47e2-9531-2ae07fb7cbd6",
+      "slug": "tarot-card-meanings-list",
+      "title": "Tarot Card Meanings List"
+    },
+    {
+      "table": "free_resources",
+      "id": "b43a9983-ae7a-4b97-a6f2-4396d78fc595",
+      "slug": "tarot-spreads-list",
+      "title": "Tarot Spreads List"
+    }
+  ],
+  "at": "2026-11-09T23:49:12.326Z"
+}

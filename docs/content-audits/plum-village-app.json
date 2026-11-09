@@ -1,0 +1,103 @@
+{
+  "healer": {
+    "healer_slug": "plum-village-app",
+    "location_source": null,
+    "no_public_base": "No headquarters city published on the pages read: the publisher, Centre for Applied Ethics Ltd, lists only bank-account addresses in three countries for donations; the monastic community is described as based in France without a town.",
+    "create": {
+      "name": "Plum Village App",
+      "bio": "The Plum Village App brings the practice of the Plum Village tradition, the Zen community founded by Thich Nhat Hanh, to phones and computers at no cost. Thay, as his students call him, had imagined an online monastery where people could feel what it is like to practise in one of his centres from wherever they are, and the app is offered as a step towards that idea. It is produced by a small team working closely with the monastic community in France and published by the Centre for Applied Ethics.\n\nInside are hundreds of recordings: guided sitting meditations, total relaxations, chanting by monks and nuns, the cheerful practice songs familiar to anyone who has been on a Plum Village retreat, and a large archive of Thich Nhat Hanh answering questions put to him by students. Teachings cover everyday mindfulness, eating and walking meditation, and caring for strong emotions. There is a web version, and browser extensions show one of Thay's calligraphies in each new tab. Everything is free, with no paid tier; the work is funded by donors, including a monthly giving circle called the Oak Forest Family. The team also publishes regular news of new content and app releases on its blog.",
+      "tier": "local_hero",
+      "entity_type": "app",
+      "availability": "worldwide",
+      "city": null,
+      "country": null,
+      "subjects": [
+        "mindfulness",
+        "meditation",
+        "spirituality"
+      ],
+      "website_url": "https://plumvillage.app/",
+      "booking_url": "https://web.plumvillage.app/",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": null,
+      "image_urls": [
+        "https://plumvillage.app/wp-content/uploads/2023/12/Screenshot-2023-12-25-at-17.14.52.png",
+        "https://plumvillage.app/wp-content/uploads/2020/06/footer-1024x576.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [
+    {
+      "title": "Plum Village App Introduction | Brother Phap Luu",
+      "url": "https://www.youtube.com/watch?v=s7xfWQo_cPo",
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "channel": "Plum Village App"
+    }
+  ],
+  "books": [],
+  "courses": [
+    {
+      "title": "The Oak Forest Family",
+      "url": "https://plumvillage.app/donations/",
+      "description": "A monthly giving circle that keeps the app and its content free for everyone. Supporters choose a level that covers running costs or helps fund new recordings and features; one-off gifts are also possible.",
+      "price": "Young Oak $7 / Month; Majestic Oak $12 / Month; Legendary Oak: amount of your choice",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "mindfulness"
+      ],
+      "image": "https://plumvillage.app/wp-content/uploads/2020/06/jizo-small.png"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Plum Village App (web version)",
+      "url": "https://web.plumvillage.app/",
+      "description": "The full app in a web browser, with guided meditations, relaxations, chants, practice songs and question-and-answer sessions with Thich Nhat Hanh. Free to use.",
+      "featured": true,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://pvapp.b-cdn.net/share-preview-audio.jpg"
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "app",
+    "rank": 50,
+    "hub": null,
+    "tier_evidence": "No readable follower counts (Instagram, Facebook, X not fetched; YouTube unreadable, consent page, 9 Nov 2026) → 0 → local_hero. Published figure, for information: 'downloaded by more than 500,000 people' (plumvillage.app/about-the-plum-village-app/).",
+    "email": "contact form",
+    "email_source": null,
+    "contact_form_url": "https://plumvillage.app/contact-us/",
+    "bio_check": "OK: no 8-word runs against 5 source(s)",
+    "flags": [
+      "possible override by published user numbers (500,000+ downloads, About the App page).",
+      "Teachers already on Spiritpedia: Thich Nhat Hanh, Brother Phap Linh (guided meditation on the home page) and Brother Phap Huu (Plum Village monastic).",
+      "No email published; contact form used.",
+      "Images are product images (app screenshots), not a logo; the site logo is only 180 px.",
+      "Video is the app's own short introduction from its channel @plumvillageapp (oEmbed OK); length not checked.",
+      "Possible duplicate in the sprint queue: the Plum Village community itself (plumvillage.org) may be listed separately as an organisation.",
+      "No HQ published: no_public_base set.",
+      "Thin: three items (membership, web app, one video); the app's practice content sits inside the app."
+    ],
+    "left_out": [
+      "Blog post 'Trauma Informed Practices on the App': therapy framing.",
+      "Peace and Protest Poems post: news of app content, and protest framing; not used.",
+      "The Way Out Is In podcast: hosted on plumvillage.org, not the app's own site.",
+      "'Taking Care of Feelings' guided meditation (home page player): the home page URL is already on dev as a resource link, so the ingest would skip it."
+    ]
+  },
+  "images_final": true
+}

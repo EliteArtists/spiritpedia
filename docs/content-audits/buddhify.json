@@ -1,0 +1,79 @@
+{
+  "healer": {
+    "healer_slug": "buddhify",
+    "location_source": "https://buddhify.com/",
+    "create": {
+      "name": "Buddhify",
+      "bio": "Buddhify is a mindfulness app made by a small, self-funded family company in Glasgow, run by Rohan Gunatillake and Lucy Gunatillake. Rohan began meditating at university in 2003 and, after years of retreats and study alongside a career in technology, set out to adapt classical mindfulness techniques to busy city life. That idea of practice on the move, on a train, at a desk or out walking, is still the heart of the app, and Rohan has also written a book on the same theme, Modern Mindfulness.\n\nThe guided sessions sit on a wheel sorted by what you are doing at the time, such as walking, travelling, a work break, waking up or eating, and run from a few minutes to about half an hour. They are written and voiced by a group of chosen teachers. Alongside them are short lessons on the principles of meditation, an unguided solo timer, practices meant for two people or a group, and a separate set of sessions for children. An optional yearly membership adds a wheel of formal technique training, weekly video material and a feature that lets members read meditations aloud to others in their own voice.",
+      "tier": "local_hero",
+      "entity_type": "app",
+      "founded_year": null,
+      "availability": "worldwide",
+      "city": "Glasgow",
+      "country": "United Kingdom",
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "website_url": "https://buddhify.com/",
+      "booking_url": "https://buddhify.com/the-app/",
+      "youtube_url": "https://www.youtube.com/channel/UCan27SnZK5ITNHaGwLlp6xA",
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "support@buddhify.com",
+      "image_urls": [
+        "https://buddhify.com/wp-content/uploads/2017/12/1024x1024.png"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Buddhify Membership",
+      "url": "https://buddhify.com/membership/",
+      "description": "An optional yearly membership bought inside the app. It adds a wheel of eighteen sessions that teach six core formal meditation techniques as short courses, weekly video courses and practice themes, and a read-aloud feature for sharing meditations in your own voice.",
+      "price": "$30 a year (US); £24 (UK); $40 (AUS); €24 (EU); $30 (CAN)",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://buddhify.com/wp-content/uploads/2018/05/MembershipCarousel2.jpg"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "app",
+    "rank": 62,
+    "hub": null,
+    "held": "buddhify.com's blog (buddhify.com/blog/) now lists gambling and casino spam posts (Melbet, Mostbet, online casino and betting pieces) in place of meditation articles, so the site looks compromised or no longer looked after; owner to decide whether to link to it.",
+    "tier_evidence": "No readable follower counts (Instagram, Facebook, X not fetched; YouTube unreadable, consent page, 9 Nov 2026) → 0 → local_hero. Published figure, for information: 'used and loved by hundreds of thousands of people' and over 70 million minutes of meditation (buddhify.com/our-story/).",
+    "email": "yes",
+    "email_source": "https://buddhify.com/support/what-is-buddhify/",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 7 source(s)",
+    "flags": [
+      "Held: the site's blog carries gambling/casino spam posts (see held).",
+      "Brand inbox: support@buddhify.com (support page); press@buddhify.com is on https://buddhify.com/press-kit/.",
+      "Thin: one offering only; the two YouTube IDs embedded on the site (xWCQ2YDqchc, x78hnZKB_ek) both fail oEmbed (404), and the blog has no usable practice posts.",
+      "Health rule: the site sells sessions for stress, sleep, anxiety, pain and difficult emotions; none of that is in the bio or items.",
+      "Possible override by published user numbers ('hundreds of thousands' of users).",
+      "Creator Rohan Gunatillake is not on Spiritpedia; his book Modern Mindfulness is mentioned in the bio from the our-people page.",
+      "youtube_url taken from the site's footer link; not opened.",
+      "founded_year not published on the pages read.",
+      "Regional: Glasgow, Scotland."
+    ],
+    "left_out": [
+      "The one-off app purchase price: only seen in a search snippet ($4.99) and informally as '$5' on the membership page; not stated as a price on its own site.",
+      "Blog posts: the blog index shows only gambling spam.",
+      "Videos: both embedded IDs fail oEmbed (404)."
+    ]
+  }
+}

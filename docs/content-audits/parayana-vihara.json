@@ -1,0 +1,156 @@
+{
+  "healer": {
+    "healer_slug": "parayana-vihara",
+    "location_source": "https://parayanavihara.org/contact/",
+    "create": {
+      "name": "Pārāyana Vihāra",
+      "bio": "Pārāyana Vihāra is a small Theravada monastery for women in Port Townsend, on Washington's Olympic Peninsula, whose name means 'the way to the beyond'. Its spiritual director, the Welsh-born nun Ayya Ānandabodhī, trained for many years in the Thai Forest lineage of Ajahn Chah at Amaravati and Chithurst in England, then moved to the United States, where she took full bhikkhunī ordination in 2011 and co-founded the Aloka Vihara communities in San Francisco and later in the Sierra foothills. After the forest monastery closed in 2023 she came to Port Townsend on sabbatical, found a welcoming lay and monastic community there and decided to stay and found Pārāyana. A small group of resident nuns now share the life of practice with her.\n\nThe vihara tries to balance quiet monastic life with a welcome for visitors. On Sundays the public can come for a shared meal offering and an afternoon of chanting, meditation and Dhamma, and there is a Wednesday evening puja of sitting and chanting. Visitors may also use its Buddhist library, offer food, join the Saturday almsround or attend a retreat. The community lives on dana, keeps a three-month rains retreat and a winter retreat each year, and shares its talks on YouTube and its chanting online.",
+      "tier": "local_hero",
+      "entity_type": "organisation",
+      "founded_year": 2023,
+      "availability": "worldwide",
+      "city": "Port Townsend, Washington",
+      "country": "United States",
+      "subjects": [
+        "meditation",
+        "mindfulness",
+        "ancient-wisdom"
+      ],
+      "website_url": "https://parayanavihara.org/",
+      "booking_url": "https://parayanavihara.org/events/",
+      "youtube_url": "https://www.youtube.com/@ParayanaVihara",
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": null,
+      "image_urls": [
+        "https://parayanavihara.org/wp-content/uploads/2024/12/pv_bluehorizontal_rebuild.png"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [
+    {
+      "title": "Start Where You Are - Sunday Dhamma Talk 06-07-26",
+      "url": "https://www.youtube.com/watch?v=W1RNId4gi7Q",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "channel": "Parayana Vihara"
+    },
+    {
+      "title": "Different Ways of Cultivating the Path - Sunday Dhamma Talk 06-14-26",
+      "url": "https://www.youtube.com/watch?v=R7em81mtgeM",
+      "subjects": [
+        "meditation",
+        "ancient-wisdom"
+      ],
+      "channel": "Parayana Vihara"
+    },
+    {
+      "title": "The Path of the Salmon - 4th Sunday Dhamma Talk 07 26 26",
+      "url": "https://www.youtube.com/watch?v=VMmNAZdeOvU",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "channel": "Parayana Vihara"
+    },
+    {
+      "title": "Life is Messy - Sunday Dhamma Talk 09-20-26",
+      "url": "https://www.youtube.com/watch?v=OZuFvmxQBA0",
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "channel": "Parayana Vihara"
+    },
+    {
+      "title": "Inner and Outer Knowing - Sunday Dhamma Talk 09-27-26",
+      "url": "https://www.youtube.com/watch?v=OUiqX_uvAdA",
+      "subjects": [
+        "meditation",
+        "spiritual-awakening"
+      ],
+      "channel": "Parayana Vihara"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [
+    {
+      "title": "Sunday at the Vihara",
+      "url": "https://parayanavihara.org/event/sunday-at-the-vihara-61/",
+      "description": "The weekly open day: a shared meal offering to the nuns around eleven, tea and conversation, then an afternoon programme of chanting, sitting and Dhamma reflection. Everyone is welcome; the library stays open afterwards.",
+      "featured": true,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "image": "https://parayanavihara.org/wp-content/uploads/2025/09/IMG_1549-scaled.jpeg"
+    },
+    {
+      "title": "Wednesday Evening Puja",
+      "url": "https://parayanavihara.org/event/wednesday-evening-puja-44/",
+      "description": "The community's regular evening practice of meditation and devotional chanting, open to visitors; cushions, benches and chairs are provided.",
+      "featured": false,
+      "resource_type": "practice",
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://parayanavihara.org/wp-content/uploads/2025/02/25.-HomageJPG-scaled.jpg"
+    },
+    {
+      "title": "Chanting",
+      "url": "https://parayanavihara.org/chanting/",
+      "description": "Downloadable recordings and texts of the daily morning and evening chants in Pali and English, and a recollection of the early arahant nuns.",
+      "featured": false,
+      "resource_type": "practice",
+      "subjects": [
+        "ancient-wisdom",
+        "meditation"
+      ],
+      "image": "https://parayanavihara.org/wp-content/uploads/2025/01/light-a-candle-images.jpg"
+    },
+    {
+      "title": "Learn: Dhamma Resources",
+      "url": "https://parayanavihara.org/learn/",
+      "description": "A starting list of foundational Buddhist readings, material on women in Buddhism and books by the community's teachers.",
+      "featured": false,
+      "resource_type": "practice",
+      "subjects": [
+        "ancient-wisdom"
+      ],
+      "image": "https://parayanavihara.org/wp-content/uploads/2025/01/light-a-candle-images.jpg"
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "centre",
+    "rank": 35,
+    "hub": null,
+    "tier_evidence": "YouTube unreadable (consent page, 9 Nov 2026); Facebook not fetched; no readable counts → local_hero",
+    "email": "contact form",
+    "email_source": null,
+    "contact_form_url": "https://parayanavihara.org/contact/",
+    "bio_check": "OK: no 8-word runs against 10 source(s)",
+    "flags": [
+      "founded_year 2023 is inferred: the history page says the forest monastery ended in January 2023, after which Ayya Anandabodhi came to Port Townsend and decided to establish Pārāyana Vihāra; no exact year is stated. Owner may prefer null.",
+      "Regional: Port Townsend, Washington (Olympic Peninsula); Port Townsend has about 10,000 people.",
+      "Overlap: Ayya Anandabodhi's own listing uses parayanavihara.org as her website; the 5 videos come from our ayya-anandabodhi plan (oEmbed author 'Parayana Vihara') and are already on dev under her.",
+      "No email published; contact form only, checked once a day during retreats.",
+      "Photo: only the vihara's logo is clearly this centre; group photos on the site are mostly from the earlier Aloka Vihara.",
+      "Dated free items (Sunday at the Vihara, Wednesday Puja) use one event page each; they recur weekly. The community is in winter retreat 15 Jan to 18 Mar.",
+      "Hub link: ayya-anandabodhi as founder (Our History: she decided to stay in Port Townsend and establish Pārāyana Vihāra)."
+    ],
+    "left_out": [
+      "Finding Refuge retreat (23-29 Oct 2026): past.",
+      "Saturday Almsround and Meal Offerings: lay support activities, not teaching.",
+      "Past teachings on Dharma Seed: not opened."
+    ]
+  },
+  "images_final": true
+}

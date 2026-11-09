@@ -1,0 +1,198 @@
+{
+  "healer": {
+    "healer_slug": "insight-san-diego",
+    "location_source": "https://www.insightsd.org/sitting-group-sd-central",
+    "create": {
+      "name": "Insight San Diego",
+      "bio": "Insight San Diego is a lay Buddhist community in southern California practising in the vipassana, or insight meditation, tradition. It is a volunteer-run non-profit with a board of directors and a set of committees, and its groups are led by experienced lay practitioners rather than a resident teacher. Visiting dharma teachers from the wider insight network, including teachers trained at Spirit Rock and the Insight Meditation Society, come to lead its retreats, daylongs, classes and talk series.\n\nIn person, the community gathers each Saturday morning at the First Unitarian Universalist Church in Hillcrest for meditation, a recorded or live dharma talk and shared reflection, with a second sitting group in Solana Beach in North County. Other groups include a weekly online lunchtime sit, several affinity groups, among them one for Black, Indigenous and people of colour, plus a book club and an ethics study circle. All teaching is offered on a donation basis. Its website also hosts a library of talks recorded at its own events and a step-by-step self-study guide for newcomers to the dharma.",
+      "tier": "local_hero",
+      "entity_type": "organisation",
+      "availability": "worldwide",
+      "city": "San Diego, California",
+      "country": "United States",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "website_url": "https://www.insightsd.org/",
+      "booking_url": "https://www.insightsd.org/daylong-harth-2026",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "hello@insightsd.org",
+      "image_urls": [
+        "https://images.squarespace-cdn.com/content/v1/5f43212dc951f24569b367cf/1602215127535-261ELXZ70TS8IKYY9ARR/NEW%2BINSIGHT%2BSD%2BLOGO%2BCOLOR.jpg",
+        "https://images.squarespace-cdn.com/content/v1/5f43212dc951f24569b367cf/1733118356002-XH49CYP5837ADEKQY337/IMG_7607.jpeg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "The Four Elements: A Path to Belonging (Daylong with Noriko Morita Harth)",
+      "url": "https://www.insightsd.org/daylong-harth-2026",
+      "description": "A Saturday of practice in Hillcrest built around the Buddha's contemplation of earth, water, fire and air. Sitting and walking meditation, gentle qigong and yoga, reflection and loving-kindness practice explore change and interconnection.",
+      "price": "Dāna (donation)",
+      "product_type": "retreat",
+      "start_date": "2026-12-12",
+      "end_date": "2026-12-12",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "http://static1.squarespace.com/static/5f43212dc951f24569b367cf/t/6873f360f9eff325eb4c8e51/1752429408944/NEW+INSIGHT+SD+LOGO+COLOR+-+transparent.png?format=1500w"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Dharma Talk Library",
+      "url": "https://www.insightsd.org/dharma-talk-library",
+      "description": "Recordings of talks given at the community's own events or by teachers connected with it, searchable by teacher, topic and date. Dozens of insight teachers are represented.",
+      "featured": true,
+      "resource_type": "workshop",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "image": "http://static1.squarespace.com/static/5f43212dc951f24569b367cf/t/6873f360f9eff325eb4c8e51/1752429408944/NEW+INSIGHT+SD+LOGO+COLOR+-+transparent.png?format=1500w"
+    },
+    {
+      "title": "Dharma Self-Study Guide",
+      "url": "https://www.insightsd.org/dharma-self-study-guide",
+      "description": "An ordered route through recorded instructions and talks, starting with short sitting and walking guidance and moving on to the basic Buddhist frameworks of suffering, its causes and the path out of it.",
+      "featured": false,
+      "resource_type": "mini_course",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "http://static1.squarespace.com/static/5f43212dc951f24569b367cf/t/6873f360f9eff325eb4c8e51/1752429408944/NEW+INSIGHT+SD+LOGO+COLOR+-+transparent.png?format=1500w"
+    },
+    {
+      "title": "Weekly Online Meditation",
+      "url": "https://www.insightsd.org/online-meditation-group",
+      "description": "A 45-minute drop-in sit on Zoom every Tuesday lunchtime, with a short check-in, a guided meditation and time to share about practice. Beginners are welcome.",
+      "featured": false,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "http://static1.squarespace.com/static/5f43212dc951f24569b367cf/t/6873f360f9eff325eb4c8e51/1752429408944/NEW+INSIGHT+SD+LOGO+COLOR+-+transparent.png?format=1500w"
+    },
+    {
+      "title": "Sitting Group – Central San Diego",
+      "url": "https://www.insightsd.org/sitting-group-sd-central",
+      "description": "The community's Saturday morning gathering in Hillcrest: optional silent sitting, a check-in, a dharma talk from a senior insight teacher and mindful group sharing. Drop-ins are welcome.",
+      "featured": false,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "http://static1.squarespace.com/static/5f43212dc951f24569b367cf/t/6873f360f9eff325eb4c8e51/1752429408944/NEW+INSIGHT+SD+LOGO+COLOR+-+transparent.png?format=1500w"
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "centre",
+    "rank": 2,
+    "hub": null,
+    "tier_evidence": "YouTube channel 'Insight San Diego': unreadable (consent page, 9 Nov 2026), and no YouTube link found on its own site; Instagram mentioned on its home page but never fetched → 0 readable → local_hero",
+    "email": "yes",
+    "email_source": "https://www.insightsd.org/",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 8 source(s)",
+    "flags": [
+      "Peer-led, all-volunteer community with no resident teacher; it hosts visiting teachers. In scope as a practice community, but the owner may judge it lighter than a centre.",
+      "Email hello@insightsd.org is shown as plain text in the site footer (not a mailto link); it is the community's general inbox.",
+      "No base building: groups meet at the First Unitarian Universalist Church of San Diego (Hillcrest); city is San Diego.",
+      "Founded year not published.",
+      "youtube_url left null: no link to its YouTube channel found on its own site; videos come from our earlier plans (its channel) and all passed oEmbed on 9 Nov 2026.",
+      "Hub links: the Dharma Talk Library says its talks were given live at Insight San Diego events or by teachers of its community; nine Spiritpedia teachers are named there. Owner may prefer to accept only the four from the lead (Devin Berry, Rebecca Bradshaw, Susie Harrington, Tuere Sala).",
+      "Photo 2 (a peer-led half-day) is 640 px wide and shows practitioners rather than a building; the logo is first."
+    ],
+    "left_out": [
+      "Gullu Singh teacher-in-residence weekend (October 2025) and Matthew Brensilver retreat (April 2026): past.",
+      "All-sangha picnic: cancelled and social, not teaching.",
+      "Affinity and study groups: kept to the two main sitting groups to avoid thin repeats."
+    ]
+  },
+  "videos": [
+    {
+      "title": "Receptive Mindfulness | Rebecca Bradshaw at Insight SD",
+      "url": "https://www.youtube.com/watch?v=AgcGzjis9z8",
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "channel": "Insight San Diego"
+    },
+    {
+      "title": "The Importance of Gladdening the Mind | Tuere Sala at Insight San Diego",
+      "url": "https://www.youtube.com/watch?v=7lvZog3p890",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "channel": "Insight San Diego"
+    },
+    {
+      "title": "The Truth and Nothing but the Truth | Devin Berry at Insight SD",
+      "url": "https://www.youtube.com/watch?v=vVHzE_YG6dc",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "channel": "Insight San Diego"
+    },
+    {
+      "title": "Everyday Samadhi | Devin Berry at Insight San Diego",
+      "url": "https://www.youtube.com/watch?v=4vtEoq4b8kY",
+      "subjects": [
+        "meditation"
+      ],
+      "channel": "Insight San Diego"
+    },
+    {
+      "title": "Susie Harrington's Two Day Retreat | Talk 1",
+      "url": "https://www.youtube.com/watch?v=JDXJWpu1BNw",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "channel": "Insight San Diego"
+    },
+    {
+      "title": "Susie Harrington's Two Day Retreat | Talk 2",
+      "url": "https://www.youtube.com/watch?v=h_DRsrjVunw",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "channel": "Insight San Diego"
+    },
+    {
+      "title": "Susie Harrington's Two Day Retreat | Talk 3",
+      "url": "https://www.youtube.com/watch?v=7Btx8eYaIYQ",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "channel": "Insight San Diego"
+    },
+    {
+      "title": "Susie Harrington's Two Day Retreat | Talk 4",
+      "url": "https://www.youtube.com/watch?v=F8PPiC-KzHQ",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "channel": "Insight San Diego"
+    }
+  ],
+  "images_final": true
+}

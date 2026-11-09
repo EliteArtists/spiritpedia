@@ -1,0 +1,77 @@
+{
+  "healer": {
+    "healer_slug": "waking-up",
+    "location_source": null,
+    "no_public_base": "No headquarters city or country published on the wakingup.com pages read (home, about, teachers, introductory course, scholarship).",
+    "create": {
+      "name": "Waking Up",
+      "bio": "Waking Up is a meditation and philosophy app started in 2018 by the writer and neuroscientist Sam Harris, building on ideas from his book of the same name. Its approach is secular and inquiry-led, and its centre of gravity is nondual practice: recognising the open, impersonal character of awareness and seeing through the sense of a separate self, with clear explanation of what each exercise is for.\n\nThe app holds several hundred hours of audio. New members usually begin with Harris's own introductory course, then move on to series by a wide range of teachers drawn from Vipassana, Zen, Tibetan Buddhism and Western contemplative circles, including Joseph Goldstein, Diana Winston, Jayasāra and John Astin, alongside talks and conversations with scientists, philosophers and scholars on subjects such as free will, the self and Stoicism. Content is grouped by tradition and theme, from loving-kindness to the art of noticing. Membership is paid yearly, with partial or full scholarships available on request, and the company gives at least a tenth of its profits to charity.",
+      "tier": "local_hero",
+      "entity_type": "app",
+      "founded_year": 2018,
+      "availability": "worldwide",
+      "city": null,
+      "country": null,
+      "subjects": [
+        "meditation",
+        "non-duality",
+        "mindfulness"
+      ],
+      "website_url": "https://www.wakingup.com/",
+      "booking_url": "https://www.wakingup.com/scholarship",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "support@wakingup.com",
+      "image_urls": []
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Waking Up Membership",
+      "url": "https://www.wakingup.com/scholarship",
+      "description": "Annual membership that unlocks the full audio library, from the introductory course to series by guest teachers and recorded conversations. A partial scholarship rate is offered, and a full scholarship can be requested without proof of income.",
+      "price": "$129.99/year (partial scholarship $79.99/year)",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "non-duality"
+      ]
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "app",
+    "rank": 48,
+    "hub": null,
+    "held": "No usable image: the site's images (logo, share image, artwork) are all served from assets.wakingup.com, whose robots.txt request is refused (403 Access Denied), so they can't be used; the one www.wakingup.com image link (/images/logo.png) returns 404 and the favicons are 192 px or smaller. Also thin (one item).",
+    "tier_evidence": "No readable follower counts (Instagram and Facebook not fetched; no YouTube link on the site) → 0 → local_hero. Published figures, for information only: 'over 100,000 5-star ratings' and 'helped millions of people' (wakingup.com/about, /teachers) – store ratings are not followers.",
+    "email": "yes",
+    "email_source": "https://www.wakingup.com/",
+    "contact_form_url": "https://help.wakingup.com",
+    "bio_check": "OK: no 8-word runs against 5 source(s)",
+    "flags": [
+      "possible override by published user numbers ('millions of people', /teachers page).",
+      "Founders or teachers already on Spiritpedia: Sam Harris (founder), Dan Harris, Joseph Goldstein, Diana Winston, Tuere Sala, Martha Beck, Samaneri Jayasāra, Ayya Anandabodhi all appear on its teachers list or home page.",
+      "Email support@wakingup.com is a brand support inbox (mailto in the site footer).",
+      "Health rule: the site has topic pages on anxiety, worry and stress, and on sleep; none used, and the bio describes the practice only.",
+      "Psychedelics: the site has a 'psychedelics' topic among many others; not mentioned and not listed, flagged for the owner.",
+      "Thin: one offering; no free resources or videos on the site itself (practice content sits inside the app).",
+      "No HQ published on pages read: no_public_base set."
+    ],
+    "left_out": [
+      "Topic pages on anxiety, worry and stress, and on sleep: health rule.",
+      "Psychedelics topic page.",
+      "Meditations for Sleep series: sleep framing.",
+      "App-store pages not opened; price taken from the site's scholarship page."
+    ]
+  }
+}

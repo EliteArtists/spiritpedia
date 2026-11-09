@@ -1,0 +1,95 @@
+{
+  "healer": {
+    "healer_slug": "sadhguru-app",
+    "location_source": "https://isha.sadhguru.org/in/en/sadhguru-app",
+    "create": {
+      "name": "Sadhguru App",
+      "bio": "The Sadhguru App is the main mobile app of the Isha Foundation, the yoga organisation founded by Sadhguru, whose chief centre lies at the foot of the Velliangiri hills near Coimbatore in Tamil Nadu. It gathers his teaching and Isha's practices in one place and is offered in thirteen languages, from English, Hindi and Tamil to German, Spanish and Russian.\n\nFree material in the app includes short guided meditations such as Isha Kriya, a twelve-minute daily practice, along with brief yoga tools designed by Sadhguru, a daily stream of his talks, articles and audio, and a library of songs and chants from the Sounds of Isha group. Practitioners who have learnt Shambhavi Mahamudra at an Isha programme can use a guided version with reminders and a practice log. Paid sections include Inner Engineering, Isha's online foundation course, and Sadhguru Exclusive, a subscription library of hours of otherwise unreleased video on yoga, mysticism and his own life, which opens with a free week. A programme finder points users to Isha classes held near them.",
+      "tier": "local_hero",
+      "entity_type": "app",
+      "founded_year": null,
+      "availability": "worldwide",
+      "city": "Coimbatore, Tamil Nadu",
+      "country": "India",
+      "subjects": [
+        "meditation",
+        "yoga",
+        "mysticism"
+      ],
+      "website_url": "https://isha.sadhguru.org/in/en/sadhguru-app",
+      "booking_url": "https://isha.sadhguru.org/in/en/sadhguru-app",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": null,
+      "image_urls": [
+        "https://static.sadhguru.org/d/46272/1688543612-sadhguru-app-icon.png",
+        "https://static.sadhguru.org/d/46272/1657883098-app-banner.png"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Sadhguru Exclusive",
+      "url": "https://isha.sadhguru.org/eu/en/sadhguru-exclusive/free-trial/sadhguru-unfiltered",
+      "description": "A monthly subscription library inside the app and on the web with over a hundred hours of Sadhguru videos not released elsewhere, arranged in series on yoga, mysticism and his life. It begins with a seven-day free trial and can be cancelled at any time.",
+      "price": "Contact for pricing",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "mysticism",
+        "yoga"
+      ],
+      "image": "https://static.sadhguru.org/d/46272/1688543612-sadhguru-app-icon.png"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Isha Kriya",
+      "url": "https://isha.sadhguru.org/yoga-meditation/in/en/isha-kriya-meditation",
+      "description": "A free guided meditation from Sadhguru of about twelve to fourteen minutes, open to anyone from twelve years of age, with a guided practice video on the page and in the app. It is meant as a short daily practice for clarity and inner steadiness.",
+      "featured": true,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation",
+        "yoga"
+      ],
+      "image": "https://static.sadhguru.org/d/46272/1780902449-palmsopen.png?auto=format&fit=max&w=1200"
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "app",
+    "rank": 74,
+    "hub": null,
+    "tier_evidence": "No readable follower counts (social accounts not fetched; YouTube unreadable, consent page, 9 Nov 2026) → 0 → local_hero. Published on the app page, for information: 'Over 5 Million Downloads'. Sadhguru Exclusive page: '60,000+ subscribers'.",
+    "email": "contact form",
+    "email_source": null,
+    "contact_form_url": "https://support.sadhguru.org/",
+    "bio_check": "OK: no 8-word runs against 4 source(s)",
+    "flags": [
+      "Possible duplicate: Sadhguru is already on Spiritpedia as an individual (sadhguru, website isha.sadhguru.org); this app's items (Isha Kriya, Inner Engineering, Sadhguru Exclusive) overlap with his work. Owner to decide whether a separate app listing is wanted.",
+      "possible override by published user numbers (5 million downloads, app page).",
+      "Contact: no email on the pages read; the site footer links to the Isha help centre (support.ishafoundation.org, which redirects to support.sadhguru.org, a JavaScript help centre with no robots.txt). I could not see a form in its HTML; flagging as uncertain. A search snippet of the store listing gives apps@ishafoundation.org (not used, not on a page I opened).",
+      "Thin: one offering (no price published; the subscription page's price is filled by script) and one free resource. The app-page video (1VOQXjoWSgg, 'Sadhguru App', passes oEmbed) looks like a short promo, so left out.",
+      "Health rule: the Isha Kriya page lists 'health' among its aims and the site has an 'Isha Health Solutions' arm; not used. The sister app Miracle of Mind is framed on mental wellbeing, sleep and anxiety; not covered here.",
+      "Base: the Isha Yoga Centre near Coimbatore (address in the app page footer), recorded at city level. The app's store provider is Isha Foundation, Inc.",
+      "Regional: Coimbatore, Tamil Nadu, India.",
+      "isha.sadhguru.org geo-redirects (/in/en, /eu/en); URLs recorded as served to us.",
+      "founded_year not published."
+    ],
+    "left_out": [
+      "Inner Engineering: its page redirected to a regional version I did not open; no price seen.",
+      "Free 5-minute yoga tools: described on the page with physical and psychological benefits (health rule, borderline).",
+      "Miracle of Mind: a separate app, condition-framed.",
+      "App promo video 1VOQXjoWSgg: probably under two minutes."
+    ],
+    "held": "Lead, 9 Nov 2026: held for the owner. Its items overlap the existing sadhguru listing: list the app separately, or add to his listing?"
+  }
+}

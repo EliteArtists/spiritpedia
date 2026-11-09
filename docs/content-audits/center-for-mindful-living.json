@@ -1,0 +1,213 @@
+{
+  "healer": {
+    "healer_slug": "center-for-mindful-living",
+    "location_source": "https://living-mindfully.org/livingdharmacircle",
+    "create": {
+      "name": "The Center for Mindful Living",
+      "bio": "The Center for Mindful Living is a Washington, DC meditation community rooted in the Buddhist insight tradition, with room too for secular mindfulness. Hugh Byrne, a long-time insight teacher and author, is its founding and guiding teacher, and Regina Flanigan, whom he mentored, now guides it with him. It opened in the city in 2012, belongs to the wider Insight Meditation Community of Washington network, and describes itself as a collective of teachers and practitioners who value spiritual friendship and an open door.\n\nSince the pandemic most of its life has been online. A large rota of volunteer teachers leads short drop-in sits on Zoom from early morning to evening on most days of the week, with a longer Sunday class that includes a dharma talk, and the recordings are shared on YouTube. On Saturdays a Living Dharma Circle meets in person near Tenleytown, mixing sitting, a talk, gentle movement and shared reflection. There is a Spanish-language meditation group every other Wednesday, beginners' courses a few times a year, and a lively set of peer-led gatherings, from a poetry sangha to a book group. Teachings are offered freely, supported by donations.",
+      "tier": "local_hero",
+      "entity_type": "organisation",
+      "founded_year": 2012,
+      "availability": "worldwide",
+      "city": "Washington, D.C.",
+      "country": "United States",
+      "subjects": [
+        "meditation",
+        "mindfulness",
+        "spiritual-awakening"
+      ],
+      "website_url": "https://living-mindfully.org/",
+      "booking_url": "https://living-mindfully.org/meditation",
+      "youtube_url": "https://www.youtube.com/@CenterforMindfulLiving",
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "info@living-mindfully.org",
+      "image_urls": [
+        "https://images.squarespace-cdn.com/content/v1/59a9e442ccc5c59341572f3b/1518124491092-W5YYCI3XLE9K3K9U25MX/The+Center+for+Mindful+Living+DC.png?format=1500w",
+        "https://images.squarespace-cdn.com/content/v1/59a9e442ccc5c59341572f3b/1538248075482-UJTVF11FTPCOIQN1BKC5/The+Center+for+Mindful+Living+-+Washington+DC.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "books": [],
+  "courses": [],
+  "free_resources": [
+    {
+      "title": "Meditation & Dharma Classes",
+      "url": "https://living-mindfully.org/meditation",
+      "description": "The weekly timetable of drop-in online sits, each led by one of the centre's volunteer teachers: short morning, noon and early-evening sessions on weekdays and a longer Sunday class with a talk. Times are US Eastern; beginners are welcome.",
+      "featured": true,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/59a9e442ccc5c59341572f3b/1518124491092-W5YYCI3XLE9K3K9U25MX/The+Center+for+Mindful+Living+DC.png?format=1500w"
+    },
+    {
+      "title": "In-Person Living Dharma Circle",
+      "url": "https://living-mindfully.org/livingdharmacircle",
+      "description": "A Saturday morning gathering in north-west Washington with rotating teachers: sitting practice, a talk on the teachings, some gentle movement and time to reflect together. Open to newcomers and seasoned meditators; a donation is suggested but any amount is welcome.",
+      "featured": false,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/59a9e442ccc5c59341572f3b/1518124491092-W5YYCI3XLE9K3K9U25MX/The+Center+for+Mindful+Living+DC.png?format=1500w"
+    },
+    {
+      "title": "Grupo de Meditación",
+      "url": "https://living-mindfully.org/grupodemeditacion",
+      "description": "A free Spanish-language meditation group on Zoom every other Wednesday evening, guided by trained instructors, with time to share experiences. No prior experience is needed; registration is required.",
+      "featured": false,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/59a9e442ccc5c59341572f3b/1518124491092-W5YYCI3XLE9K3K9U25MX/The+Center+for+Mindful+Living+DC.png?format=1500w"
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "centre",
+    "rank": 11,
+    "hub": null,
+    "tier_evidence": "YouTube @CenterforMindfulLiving (linked from its own site): unreadable (consent page, 9 Nov 2026); no other accounts read → 0 readable → local_hero",
+    "email": "yes",
+    "email_source": "https://living-mindfully.org/contact",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 10 source(s)",
+    "flags": [
+      "Main YouTube count unreadable (consent page, 9 Nov 2026).",
+      "Email info@living-mindfully.org is the centre's general inbox (mailto on the contact page; also given on the Saturday class page).",
+      "Domain confirmed from the sitemap line in cml-dc.squarespace.com's robots.txt and the site's own og:url (living-mindfully.org).",
+      "Overlap with lead 13: the centre is a project of the Insight Meditation Community of Washington (IMCW), per its own footer. Owner may prefer one listing or a parent link.",
+      "Photos: the site's logo and its home-page banner (a seedling on moss, stock-style); no photos of the community or venue were found. Owner may prefer the YouTube avatar once readable.",
+      "Hub links: Hugh Byrne (founding and guiding teacher, Meet Our Teachers) as founder; Laurie Cameron (2nd-Sunday class, Meditation & Dharma Classes page) as instructor. Tara Brach, Jack Kornfield and others are named only as other teachers' trainers.",
+      "Hugh Byrne's own bio on the site mentions social activism; not used in the plan.",
+      "Base: Washington, D.C. (the Saturday class meets at 4125 Albemarle St NW); most programmes are online.",
+      "All 12 videos (from the centre's channel) are already on dev under Laurie Cameron and Hugh Byrne, so the dry run adds 0 videos; owner may wish to attach them to the centre too."
+    ],
+    "left_out": [
+      "Introduction to Mindfulness Meditation (14 Oct – 18 Nov 2026): already started.",
+      "Mindfulness in Recovery group: addiction recovery is on the condition list.",
+      "Contemplating Death Sangha, game nights and other peer-led social gatherings: peer-led, not teaching offerings.",
+      "Support for You page: not opened."
+    ]
+  },
+  "videos": [
+    {
+      "title": "How We Can Meet Anger and Hurt in Relationships with Loving Awareness with Laurie Cameron",
+      "url": "https://www.youtube.com/watch?v=Jtdg6kofIyk",
+      "subjects": [
+        "spirituality",
+        "meditation"
+      ],
+      "channel": "Center for Mindful Living DC"
+    },
+    {
+      "title": "Cultivating Calm Laurie Cameron",
+      "url": "https://www.youtube.com/watch?v=cacpaPD1Tk0",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "channel": "Center for Mindful Living DC"
+    },
+    {
+      "title": "Staying Present In the Midst of Loss with Laurie Cameron",
+      "url": "https://www.youtube.com/watch?v=NOr_hvqUNnA",
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "channel": "Center for Mindful Living DC"
+    },
+    {
+      "title": "Laurie Cameron Impermanence As A Refuge",
+      "url": "https://www.youtube.com/watch?v=kibxrGr8ROM",
+      "subjects": [
+        "spirituality",
+        "meditation"
+      ],
+      "channel": "Center for Mindful Living DC"
+    },
+    {
+      "title": "Way of Surrender with Laurie Cameron",
+      "url": "https://www.youtube.com/watch?v=cfD3LCNCZio",
+      "subjects": [
+        "spiritual-awakening",
+        "meditation"
+      ],
+      "channel": "Center for Mindful Living DC"
+    },
+    {
+      "title": "Awareness & Acceptance with Laurie Cameron",
+      "url": "https://www.youtube.com/watch?v=vYfs5bMCLqo",
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "channel": "Center for Mindful Living DC"
+    },
+    {
+      "title": "Laurie Cameron The Direct Path",
+      "url": "https://www.youtube.com/watch?v=_46KLaSgE7I",
+      "subjects": [
+        "non-duality",
+        "spiritual-awakening"
+      ],
+      "channel": "Center for Mindful Living DC"
+    },
+    {
+      "title": "Being Peace with Laurie Cameron",
+      "url": "https://www.youtube.com/watch?v=W9XaQV3gjE4",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "channel": "Center for Mindful Living DC"
+    },
+    {
+      "title": "Ending Our Conflict With Life As a Path to Freedom with Hugh Byrne",
+      "url": "https://www.youtube.com/watch?v=g9JMEHHPquo",
+      "subjects": [
+        "spiritual-awakening",
+        "meditation"
+      ],
+      "channel": "Center for Mindful Living DC"
+    },
+    {
+      "title": "Gladdening the Heart: Cultivating Gratitude and Joy with Hugh Byrne",
+      "url": "https://www.youtube.com/watch?v=3x0Xt-vaxwA",
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "channel": "Center for Mindful Living DC"
+    },
+    {
+      "title": "The Gift of Loving-kindness in Troubled Times with Hugh Byrne",
+      "url": "https://www.youtube.com/watch?v=7H4SiL9IA7c",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "channel": "Center for Mindful Living DC"
+    },
+    {
+      "title": "Saying Yes In Turbulent Times with Hugh Byrne",
+      "url": "https://www.youtube.com/watch?v=hXvXrrKW0VA",
+      "subjects": [
+        "mindfulness",
+        "spirituality"
+      ],
+      "channel": "Center for Mindful Living DC"
+    }
+  ],
+  "images_final": true
+}

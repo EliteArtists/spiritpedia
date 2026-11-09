@@ -1,0 +1,164 @@
+{
+  "healer": {
+    "healer_slug": "vedanta-society-of-new-york",
+    "location_source": "https://www.vedantany.org/history",
+    "create": {
+      "name": "Vedanta Society of New York",
+      "bio": "The Vedanta Society of New York is the oldest Vedanta centre in the West and the first centre of the Ramakrishna Order anywhere. Swami Vivekananda started it in 1894, the year after his celebrated addresses at the World's Parliament of Religions in Chicago, when a group of American students began meeting with him in a couple of rented rooms in Manhattan. After several moves it settled in 1921 in the house on West 71st Street that it still occupies, and a line of monks of the Order has led it ever since.\n\nIts teaching follows Vedanta as lived and explained by Sri Ramakrishna and Vivekananda: that every person is at heart divine, that the world's religions are different roads to the same truth, and that each seeker may follow the yoga of knowledge, devotion, work or meditation that suits them. Since 2017 its resident minister has been Swami Sarvapriyananda, whose talks on Advaita Vedanta reach a very large audience online. Sunday morning lectures, weekday classes on the Bhagavad Gita and the Gospel of Sri Ramakrishna, evening vespers with meditation and festival worship take place at the society, and most talks are streamed and archived on YouTube.",
+      "tier": "local_hero",
+      "entity_type": "organisation",
+      "founded_year": 1894,
+      "availability": "worldwide",
+      "city": "New York, New York",
+      "country": "United States",
+      "subjects": [
+        "non-duality",
+        "ancient-wisdom",
+        "spirituality"
+      ],
+      "website_url": "https://www.vedantany.org/",
+      "booking_url": "https://www.vedantany.org/events",
+      "youtube_url": "https://www.youtube.com/@vedantany",
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "mail@vedantany.org",
+      "image_urls": [
+        "https://images.squarespace-cdn.com/content/v1/6302837d1ce871273c7849b4/d3a29982-2294-416b-a4bd-9a4adec1f548/Front-Facade.jpeg",
+        "https://images.squarespace-cdn.com/content/v1/6302837d1ce871273c7849b4/b2830606-5290-4f69-9e09-de05a0b64e3a/Home+Page+Images-15.png"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "books": [],
+  "courses": [],
+  "free_resources": [
+    {
+      "title": "Upcoming Events",
+      "url": "https://www.vedantany.org/events",
+      "description": "The society's regular programme in Manhattan, mostly livestreamed: an hour-long Sunday lecture, usually by the resident minister, weekday classes reading the Bhagavad Gita and the Gospel of Sri Ramakrishna with time for questions, evening arati with meditation, and festival worship.",
+      "featured": true,
+      "resource_type": "workshop",
+      "subjects": [
+        "ancient-wisdom",
+        "non-duality",
+        "spirituality"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/6302837d1ce871273c7849b4/df39f1a2-d65a-4c1f-ad09-576a34e1a0c6/brighter_and_bolder_phase2.png?format=1500w"
+    },
+    {
+      "title": "Introductory Lectures",
+      "url": "https://www.vedantany.org/introductory-lectures",
+      "description": "A starting set of recorded talks for newcomers on the four yogas, Advaita Vedanta, practical Vedanta and the harmony of religions, each with a short introduction to the theme.",
+      "featured": false,
+      "resource_type": "mini_course",
+      "subjects": [
+        "non-duality",
+        "ancient-wisdom"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/6302837d1ce871273c7849b4/df39f1a2-d65a-4c1f-ad09-576a34e1a0c6/brighter_and_bolder_phase2.png?format=1500w"
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "centre",
+    "rank": 19,
+    "hub": null,
+    "tier_evidence": "YouTube @vedantany (linked from its own site): unreadable (consent page, 9 Nov 2026); other accounts not fetched → 0 readable → local_hero",
+    "email": "yes",
+    "email_source": "https://www.vedantany.org/",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 7 source(s)",
+    "flags": [
+      "Main YouTube count unreadable (consent page, 9 Nov 2026). Swami Sarvapriyananda's talks there are widely watched; the true count could well be far above local_hero.",
+      "Possible editorial-stature override: the first Ramakrishna Order centre in the West (founded by Swami Vivekananda) and home of Swami Sarvapriyananda; owner to decide.",
+      "Duplicate check: our Swami Sarvapriyananda listing on dev uses vedantany.org as its website_url, so the centre's and the swami's links overlap.",
+      "Email mail@vedantany.org is the society's inbox (footer of every page).",
+      "Hub links: Swami Sarvapriyananda (resident minister since 2017, Resident Minister page) as instructor; not marked founder (Swami Vivekananda founded it in 1894). Philip Goldberg (in the lead) has a talk on its channel but is not named on the pages read, so not linked.",
+      "Base: Manhattan (West 71st Street), New York.",
+      "All 8 videos (7 under Swami Sarvapriyananda, 1 under Philip Goldberg) and one of the two free resources are already on dev, so the dry run adds 1 free resource and the healer.",
+      "Photos: the society's front facade (244 × 416, small but above the ingest minimum) and a portrait of Swami Sarvapriyananda from its home page."
+    ],
+    "left_out": [
+      "Swami's Schedule of Talks: his talks elsewhere (India tour), organised by other bodies.",
+      "Publications and books shop: not opened.",
+      "Ask Swami Q&A and Conversations: not opened."
+    ]
+  },
+  "videos": [
+    {
+      "title": "Meditate Better | Swami Sarvapriyananda",
+      "url": "https://www.youtube.com/watch?v=GGYGxdcdE40",
+      "subjects": [
+        "meditation",
+        "non-duality"
+      ],
+      "channel": "Vedanta Society of New York"
+    },
+    {
+      "title": "The Essence of All Vedanta by Swami Sarvapriyananda",
+      "url": "https://www.youtube.com/watch?v=ykcdg0Vd3I4",
+      "subjects": [
+        "non-duality",
+        "ancient-wisdom"
+      ],
+      "channel": "Vedanta Society of New York"
+    },
+    {
+      "title": "Do we have Free Will? by Swami Sarvapriyananda",
+      "url": "https://www.youtube.com/watch?v=VzbyeU3dK4g",
+      "subjects": [
+        "non-duality",
+        "consciousness"
+      ],
+      "channel": "Vedanta Society of New York"
+    },
+    {
+      "title": "Vedantic Meditation with Swami Sarvapriyananda",
+      "url": "https://www.youtube.com/watch?v=wm9gomNUi48",
+      "subjects": [
+        "meditation",
+        "non-duality"
+      ],
+      "channel": "Vedanta Society of New York"
+    },
+    {
+      "title": "The Real and the Apparent | Swami Sarvapriyananda",
+      "url": "https://www.youtube.com/watch?v=Femq2264px4",
+      "subjects": [
+        "non-duality",
+        "ancient-wisdom"
+      ],
+      "channel": "Vedanta Society of New York"
+    },
+    {
+      "title": "How can I transition from meditation as a chore to one of pure joy? | Ten Requisites for Joyful ...",
+      "url": "https://www.youtube.com/watch?v=7WJJ-lMCBtc",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "channel": "Vedanta Society of New York"
+    },
+    {
+      "title": "The Equation of Consciousness & The True Self | Swami Sarvapriyananda @ South Park Commons",
+      "url": "https://www.youtube.com/watch?v=BFdcxZ_T5mk",
+      "subjects": [
+        "consciousness",
+        "non-duality"
+      ],
+      "channel": "Vedanta Society of New York"
+    },
+    {
+      "title": "How Vivekananda Changed America | Philip Goldberg",
+      "url": "https://www.youtube.com/watch?v=SGpYRh53bTo",
+      "subjects": [
+        "ancient-wisdom",
+        "spirituality"
+      ],
+      "channel": "Vedanta Society of New York"
+    }
+  ],
+  "images_final": true
+}

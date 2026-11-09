@@ -1,0 +1,254 @@
+{
+  "healer": {
+    "healer_slug": "insight-meditation-center",
+    "location_source": "https://www.insightmeditationcenter.org/contact/",
+    "create": {
+      "name": "Insight Meditation Center",
+      "bio": "Insight Meditation Center, usually called IMC, is a non-residential Buddhist meditation centre in Redwood City, California, teaching insight (vipassana) practice in the Theravada-rooted Western tradition. It grew out of a small Palo Alto sitting group formed in 1986; Gil Fronsdal became its regular teacher in 1990, and he and Andrea Fella now serve as its guiding teachers, supported by a wide circle of trained dharma teachers and lay leaders. The community bought a former church on Birch Street in 2001 and opened it as a meditation hall the following year.\n\nEverything IMC offers is given freely and supported by donations and volunteers. Its week includes early-morning guided sits streamed on YouTube, evening sittings with talks, loving-kindness sessions on Zoom, beginners' instruction, yoga and a range of affinity and study groups, along with daylong retreats and year-long programmes such as the Eightfold Path course. Silent residential retreats run at its sister centre, the Insight Retreat Center near Santa Cruz, and decades of recorded talks are shared through AudioDharma, so people far from the Bay Area can follow the teaching online.",
+      "tier": "local_hero",
+      "entity_type": "organisation",
+      "founded_year": 1986,
+      "availability": "worldwide",
+      "city": "Redwood City, California",
+      "country": "United States",
+      "subjects": [
+        "meditation",
+        "mindfulness",
+        "spiritual-awakening"
+      ],
+      "website_url": "https://www.insightmeditationcenter.org/",
+      "booking_url": "https://www.insightmeditationcenter.org/programs-for-beginners/",
+      "youtube_url": "https://www.youtube.com/user/insightmed",
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "contact@insightmeditationcenter.org",
+      "image_urls": [
+        "https://www.insightmeditationcenter.org/wp-content/uploads/2019/08/20190710-DSCF8565-Pano.jpg",
+        "https://www.insightmeditationcenter.org/wp-content/uploads/2018/06/Contact-and-Directions-6.jpg",
+        "https://www.insightmeditationcenter.org/wp-content/uploads/2018/06/IMC-Interior.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Saturday Nov 21: Mindfulness Practice with Knowing, Allowing, Sensing, and Calming Daylong",
+      "url": "https://www.insightmeditationcenter.org/2026/10/saturday-nov-21-mindfulness-practice-with-knowing-allowing-sensing-and-calming-daylong/",
+      "description": "A day of silent practice at the Redwood City hall led by Tanya Wiser and Shelley Gault. Guided instructions on breath, body, emotions and thoughts alternate with sitting, walking, talks and small-group discussion; newcomers and experienced meditators are both welcome.",
+      "price": "Free (donations welcome)",
+      "product_type": "retreat",
+      "start_date": "2026-11-21",
+      "end_date": "2026-11-21",
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "image": "https://www.insightmeditationcenter.org/wp-content/uploads/2019/08/20190710-DSCF8565-Pano.jpg"
+    },
+    {
+      "title": "Saturday Dec 12: Embodied Presence Daylong with Kim Allen",
+      "url": "https://www.insightmeditationcenter.org/2026/10/saturday-dec-12-embodies-presence-daylong-with-kim-allen/",
+      "description": "An in-person day at IMC with Kim Allen exploring the body as a doorway into Buddhist practice. The day mixes guided and silent sitting, walking meditation and dharma teaching, with optional meetings with the teacher.",
+      "price": "Free (donations welcome)",
+      "product_type": "retreat",
+      "start_date": "2026-12-12",
+      "end_date": "2026-12-12",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://www.insightmeditationcenter.org/wp-content/uploads/2019/08/20190710-DSCF8565-Pano.jpg"
+    },
+    {
+      "title": "December 27-31: Non-residential Online Daily Life Retreat with Andrea Fella",
+      "url": "https://www.insightmeditationcenter.org/2026/11/non-residential-daily-life-online-retreat-with-andrea-fella/",
+      "description": "A five-day home retreat on Zoom with guiding teacher Andrea Fella, drawing on the approach of Sayadaw U Tejaniya. Each morning brings instruction, guided practice and discussion, with an optional afternoon question session, and the focus is on carrying relaxed awareness through ordinary activities.",
+      "price": "Free (registration required)",
+      "product_type": "retreat",
+      "start_date": "2026-12-27",
+      "end_date": "2026-12-31",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://www.insightmeditationcenter.org/wp-content/uploads/2019/08/20190710-DSCF8565-Pano.jpg"
+    },
+    {
+      "title": "Residential Retreats at the Insight Retreat Center",
+      "url": "https://www.insightmeditationcenter.org/residential-retreats/",
+      "description": "IMC's sister retreat house just outside Santa Cruz holds silent insight meditation retreats through the year, run by volunteers. Places are offered without a fee and the retreats are sustained by participants' donations.",
+      "price": "Free (donations welcome)",
+      "product_type": "retreat",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://www.insightmeditationcenter.org/wp-content/uploads/2019/08/20190710-DSCF8565-Pano.jpg"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Beginning Meditation Instruction",
+      "url": "https://www.insightmeditationcenter.org/programs-for-beginners/",
+      "description": "IMC's starting points for newcomers: a weekly drop-in instruction class at the centre, weekday loving-kindness sessions on Zoom and a self-paced five-week introduction built from Gil Fronsdal's recorded course and handouts.",
+      "featured": true,
+      "resource_type": "mini_course",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://www.insightmeditationcenter.org/wp-content/uploads/2019/08/20190710-DSCF8565-Pano.jpg"
+    },
+    {
+      "title": "Introduction to Mindfulness Meditation",
+      "url": "https://www.insightmeditationcenter.org/introduction-to-mindfulness-meditation/",
+      "description": "A written course in five steps, moving from mindfulness of breathing to the body, emotions, thinking and daily life. Each section explains the practice and gives simple instructions to try.",
+      "featured": false,
+      "resource_type": "practice",
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "image": "https://www.insightmeditationcenter.org/wp-content/uploads/2019/08/20190710-DSCF8565-Pano.jpg"
+    },
+    {
+      "title": "Guided Meditations",
+      "url": "https://www.insightmeditationcenter.org/guided-meditations/",
+      "description": "A browsable gallery of recorded guided sittings by IMC teachers, drawn from the centre's video archive for anyone practising at home.",
+      "featured": false,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://www.insightmeditationcenter.org/wp-content/uploads/2019/08/20190710-DSCF8565-Pano.jpg"
+    },
+    {
+      "title": "7am Guided Sit & Talk",
+      "url": "https://www.insightmeditationcenter.org/7am-guided-sit-talk/",
+      "description": "An archive of the weekday morning livestreams, each pairing half an hour of lightly guided sitting with a short reflection on that week's theme. Hundreds of past sessions can be browsed and replayed.",
+      "featured": false,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://www.insightmeditationcenter.org/wp-content/uploads/2019/08/20190710-DSCF8565-Pano.jpg"
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "centre",
+    "rank": 1,
+    "hub": null,
+    "tier_evidence": "YouTube (youtube.com/user/insightmed, linked from its own site): unreadable (consent page, 9 Nov 2026); Facebook linked but never fetched; no other readable counts → 0 readable → local_hero",
+    "email": "yes",
+    "email_source": "https://www.insightmeditationcenter.org/contact/",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 17 source(s)",
+    "flags": [
+      "Main YouTube count unreadable (consent page, 9 Nov 2026); tier is local_hero on zero readable followers.",
+      "Possible editorial-stature override: IMC and its AudioDharma talk archive (Gil Fronsdal) are widely known in Western insight meditation; owner to decide.",
+      "Email contact@insightmeditationcenter.org is the centre's general inbox.",
+      "Hub links: Matthew Brensilver, Nikki Mirghafori and Francisco Morillo Gable are named on the Teachers and Dharma Leaders page; Walt Opie is named as co-leader of a 24 Oct 2026 daylong on IMC's own event page (past event, but it names him teaching there).",
+      "Susie Harrington, Tara Mulay and Devin Berry have talks on IMC's YouTube channel but are not named as teachers on its site, so they are not linked.",
+      "Videos from IMC's own channel: two embedded on its Featured Videos page (one used) and others already in our teacher plans; all passed oEmbed on 9 Nov 2026."
+    ],
+    "left_out": [
+      "2026-27 Eightfold Path Program and Deepening Meditation Program: already started (October 2026).",
+      "Daylongs on 7 Nov, 24 Oct and 31 Oct 2026: past or within the 12 Nov margin.",
+      "Support groups for life-threatening illness and the Buddhism and Recovery group: condition-led.",
+      "Featured video 'Gil Speaks about the state of IMC': a centre news update, not teaching.",
+      "5-night retreat at Quaker Center (19-24 Oct 2026): past, and run by Insight Santa Cruz."
+    ]
+  },
+  "videos": [
+    {
+      "title": "Gil Fronsdal: Sheltering in Place as a Retreat",
+      "url": "https://www.youtube.com/watch?v=qmYBsU-ti9I",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "channel": "Insight Meditation Center"
+    },
+    {
+      "title": "Nikki Mirghafori: Awakening",
+      "url": "https://www.youtube.com/watch?v=q9vA8P6_69E",
+      "subjects": [
+        "spiritual-awakening",
+        "meditation"
+      ],
+      "channel": "Insight Meditation Center"
+    },
+    {
+      "title": "Matthew Brensilver: Loving the Self to Death",
+      "url": "https://www.youtube.com/watch?v=0ra4KKogj9U",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "channel": "Insight Meditation Center"
+    },
+    {
+      "title": "Matthew Brensilver Guided Sit - Establishing Tranquility; Dharmette: Faith in Our Dharma Practice",
+      "url": "https://www.youtube.com/watch?v=Zo61ZbS0wtA",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "channel": "Insight Meditation Center"
+    },
+    {
+      "title": "Guided Meditation with Tara Mulay; Dharma Talk: Caring Enough to Truly Live",
+      "url": "https://www.youtube.com/watch?v=P2orG03MtVA",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "channel": "Insight Meditation Center"
+    },
+    {
+      "title": "Guided Meditation with Devin Berry; Dharma Talk: Why Metta?",
+      "url": "https://www.youtube.com/watch?v=g6dZxSdKbbA",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "channel": "Insight Meditation Center"
+    },
+    {
+      "title": "Guided Meditation: Space Element; Nature as Teacher: Space Element - Susie Harrington",
+      "url": "https://www.youtube.com/watch?v=Wh628injMZ8",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "channel": "Insight Meditation Center"
+    },
+    {
+      "title": "Nikki Mirghafori: Wise Livelihood",
+      "url": "https://www.youtube.com/watch?v=M0L8UzkbvHY",
+      "subjects": [
+        "mindfulness",
+        "spirituality"
+      ],
+      "channel": "Insight Meditation Center"
+    },
+    {
+      "title": "Working with the Thinking Mind ~ Walt Opie",
+      "url": "https://www.youtube.com/watch?v=cg3z0_LwUsg",
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "channel": "Insight Meditation Center"
+    }
+  ],
+  "images_final": true
+}

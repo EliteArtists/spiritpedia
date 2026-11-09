@@ -1,0 +1,132 @@
+{
+  "healer": {
+    "healer_slug": "sivananda-ashram-yoga-retreat-bahamas",
+    "location_source": "https://sivanandabahamas.org/contact/",
+    "create": {
+      "name": "Sivananda Ashram Yoga Retreat Bahamas",
+      "bio": "The Sivananda Ashram Yoga Retreat sits on Paradise Island, across the bay from Nassau, on a beachfront plot of some five and a half acres of tropical gardens. Swami Vishnudevananda established it in 1967, and it belongs to the International Sivananda Yoga Vedanta Centres, the family of ashrams and centres that carries his teacher Swami Sivananda's classical yoga worldwide. It describes itself as both a traditional ashram and a modern retreat: a resident community of staff who have committed themselves to a spiritual life live, practise and work together to run the place, with peace through yoga as their shared aim.\n\nGuests follow a set daily rhythm of meditation, pranayama, asana and study, with vegetarian meals, morning and evening satsang, and a yearly calendar of several hundred courses, talks and performances given by senior Sivananda teachers and visiting presenters. Its month-long 200-hour teacher training course runs nine times a year, and there is an advanced 300-hour course and a residential karma yoga programme for longer stays. For people who cannot travel, the twice-daily satsang of silent sitting, chanting and a talk is streamed free on its online platform, alongside paid online courses and an online teacher training.",
+      "tier": "local_hero",
+      "entity_type": "organisation",
+      "founded_year": 1967,
+      "availability": "worldwide",
+      "city": "Paradise Island, Nassau",
+      "country": "Bahamas",
+      "subjects": [
+        "yoga",
+        "meditation",
+        "ancient-wisdom"
+      ],
+      "website_url": "https://sivanandabahamas.org/",
+      "booking_url": "https://sivanandabahamas.org/visiting-the-ashram/yoga-vacation-program-2-3/",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "nassau@sivananda.org",
+      "image_urls": []
+    }
+  },
+  "teaches_at": [],
+  "videos": [
+    {
+      "title": "Sufi Dance of Oneness with Banafsheh Sayyad",
+      "url": "https://www.youtube.com/watch?v=n0qFWCefIEE",
+      "subjects": [
+        "mysticism",
+        "meditation"
+      ],
+      "channel": "Sivananda Ashram Yoga Retreat Bahamas"
+    }
+  ],
+  "books": [],
+  "courses": [
+    {
+      "title": "Yoga Teacher Training Course (200-hour)",
+      "url": "https://sivanandabahamas.org/yoga-teacher-training-course-2/",
+      "description": "The ashram's residential month-long Sivananda teacher training, taught by swamis and senior staff and run nine times a year; the next intake begins on 4 December 2026, with further dates through 2027. A $500 deposit holds a place.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": "2026-12-04",
+      "end_date": "2026-12-31",
+      "subjects": [
+        "yoga",
+        "meditation",
+        "ancient-wisdom"
+      ],
+      "image": "https://sivanandabahamas.org/wp-content/uploads/TTC-Image-Homepage.jpg"
+    },
+    {
+      "title": "An Ocean of Song: Mantra, Poetry, and Creative Practice",
+      "url": "https://sivanandabahamas.org/course/an-ocean-of-song-mantra-poetry-and-creative-practice-march-2027/",
+      "description": "A four-day Yoga Vacation Program with singer Jahnavi Harrison and musicians: noon workshops on the verse of old and modern saint-poets, and evening satsangs given over to call-and-response kirtan.",
+      "price": "Contact for pricing",
+      "product_type": "retreat",
+      "start_date": "2027-03-31",
+      "end_date": "2027-04-03",
+      "subjects": [
+        "spirituality",
+        "mysticism"
+      ],
+      "image": "https://sivanandabahamas.org/wp-content/uploads/Jahnavi-Harrison1.jpg"
+    },
+    {
+      "title": "Dance of Oneness: Whirling into the Infinite",
+      "url": "https://sivanandabahamas.org/course/dance-of-oneness-whirling-into-the-infinite-april-2027/",
+      "description": "A four-day experiential course with Banafsheh Sayyad on sacred dance and feminine whirling in the tradition of Sama, drawing on Rumi's poetry in Persian and English and Iranian mysticism, with live music from Tony Khalife.",
+      "price": "Tuition: $495",
+      "product_type": "retreat",
+      "start_date": "2027-04-13",
+      "end_date": "2027-04-16",
+      "subjects": [
+        "mysticism",
+        "spiritual-awakening"
+      ],
+      "image": null
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Live Satsang",
+      "url": "https://online.sivanandabahamas.org/courses/live-satsang/",
+      "description": "The ashram's daily satsang streamed on Zoom at 6:00am and 8:00pm ET: half an hour of silent meditation, chanting, a teaching and closing prayers. Free to join after enrolling on the online platform; recordings are included.",
+      "featured": true,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "image": "https://sivanandabahamas.org/wp-content/uploads/Live-Satsang-Swami-Swaroopananda-Banner-scaled-1960x892.jpg"
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "centre",
+    "rank": 37,
+    "hub": null,
+    "tier_evidence": "YouTube unreadable (consent page, 9 Nov 2026); Instagram/Facebook not fetched; no readable counts → local_hero",
+    "email": "yes",
+    "email_source": "https://sivanandabahamas.org/contact/",
+    "contact_form_url": "https://sivanandabahamas.org/contact/",
+    "bio_check": "OK: no 8-word runs against 12 source(s)",
+    "held": "Owner decision: the Sivananda organisation's founder Swami Vishnudevananda has been the subject of publicly reported sexual-abuse allegations (raised in 2019, after his death). Not verified in this session; the ashram's site carries a misconduct policy page. Brief says hold for abuse allegations. Also: every image on sivanandabahamas.org failed the ingest's image check on the dry run (9 Nov 2026), though plain curl loaded them earlier (viewed); reason not probed, not retried.",
+    "flags": [
+      "possible editorial-stature override: one of the best-known yoga ashrams in the Western hemisphere.",
+      "Regional: Paradise Island, Nassau, Bahamas.",
+      "Hub link: banafsheh-sayyad as instructor. Evidence: her own site danceofoneness.org links to her April 2027 course on sivanandabahamas.org, and the course page names her.",
+      "Email nassau@sivananda.org decoded from Cloudflare email protection on the contact page.",
+      "founded_year 1967 from the About page (a third-party search result said 1968).",
+      "Several programmes make health claims and were left out (see left_out). The Snatam Kaur page promises stress relief and self-healing; left out.",
+      "Paradise Island not in places table: needs a place alias (README §18.4)."
+    ],
+    "left_out": [
+      "Heart of the Universe with Snatam Kaur (22–25 Dec 2026): page claims stress relief and healing on every level (health rule).",
+      "Divine Yoga, Meditation & Chanting with MC Yogi (Jan 2027): nervous-system and stress claims (health rule).",
+      "Freedom from the Mind with Sadhvi Bhagawati Saraswati (Feb 2027): framed around anxiety and overthinking (health rule).",
+      "Alchemy of Healing (trauma), Longevity Reset, Energy Medicine, Ayurveda whole-person healing symposia, detox cleanse retreats: health rule.",
+      "Beyond the Veil (NDE) symposium and Anita Moorjani afterlife retreat: healing framing; not reviewed further.",
+      "Private Yoga & Healing Sessions and Well Being Center: health rule.",
+      "Yoga Vacation Program prices depend on room rates; not read, so 'Contact for pricing'."
+    ]
+  }
+}

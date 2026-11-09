@@ -1,0 +1,46 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 1075,
+    "healer_slug": "houston-zen-center"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "fa45b65a-4edd-4cd9-95f8-d01466bd7a4a",
+      "slug": "rohatsu-sesshin-2026-2",
+      "title": "Rohatsu Sesshin 2026"
+    },
+    {
+      "table": "courses",
+      "id": "2d4e3c45-94ba-4b04-b349-d20801283ee6",
+      "slug": "introduction-to-zen-meditation-series-of-5-classes",
+      "title": "Introduction to Zen Meditation - Series of 5 classes"
+    },
+    {
+      "table": "courses",
+      "id": "ddf6eee3-899b-4b85-bcd3-a99a5bac195a",
+      "slug": "mind-to-mind-the-history-and-transmission-of-zen",
+      "title": "Mind to Mind: The History and Transmission of Zen"
+    },
+    {
+      "table": "courses",
+      "id": "3fff2871-f2a3-48e6-aca7-6fe7159b8e50",
+      "slug": "the-holy-upheaval-the-teaching-of-vimalakirti",
+      "title": "The Holy Upheaval: The Teaching of Vimalakirti"
+    },
+    {
+      "table": "free_resources",
+      "id": "dd3b99f8-e72e-4abf-b72e-05e4ac924cc4",
+      "slug": "zoom-zendo",
+      "title": "Zoom Zendo"
+    },
+    {
+      "table": "free_resources",
+      "id": "44d3da89-9ae9-4b0e-a1c0-b520e2b7f0ec",
+      "slug": "dharma-talks",
+      "title": "Dharma Talks"
+    }
+  ],
+  "at": "2026-11-09T23:43:19.718Z"
+}

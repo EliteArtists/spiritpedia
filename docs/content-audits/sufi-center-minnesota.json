@@ -1,0 +1,132 @@
+{
+  "healer": {
+    "healer_slug": "sufi-center-minnesota",
+    "location_source": "https://suficentermn.org/contact/",
+    "create": {
+      "name": "Sufi Center Minnesota",
+      "bio": "Sufi Center Minnesota is a Sufi community in the Twin Cities area, based in Bloomington, that follows the Shadhiliyya order, a path known for its emphasis on the heart. Its lineage runs through Sidi Shaykh Muhammad al-Jamal of Jerusalem, who guided the order until his death in 2015 and travelled widely from the 1990s to teach seekers of every background. The community has gathered since 1998, and its teachers include ministers, educators and others who have trained for years on the Sufi path; among the teachers it welcomes is Dr Ibrahim Jaffe, a Murshid of the order.\n\nThe centre presents Sufism as the mystical heart of Islam while welcoming people of any faith or none, without asking them to leave their own tradition. Its approach rests on a few simple supports: a direct sense of the One, steady daily practice, letting go of what blocks the heart, service and community. Most gatherings are on Zoom, with some in person: weekly remembrance (dhikr), a Monday reading group, study of the Divine Names, chanting evenings, a monthly guest teaching and occasional fifth-Sunday gatherings. Recorded talks are shared on its website and YouTube, and most events are offered for donations.",
+      "tier": "local_hero",
+      "entity_type": "organisation",
+      "founded_year": 1998,
+      "availability": "worldwide",
+      "city": "Bloomington, Minnesota",
+      "country": "United States",
+      "subjects": [
+        "mysticism",
+        "spirituality",
+        "meditation"
+      ],
+      "website_url": "https://suficentermn.org/",
+      "booking_url": "https://suficentermn.org/events/",
+      "youtube_url": "https://www.youtube.com/user/SufiCenterMinnesota",
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "info@suficentermn.org",
+      "image_urls": [
+        "https://suficentermn.org/wp-content/uploads/2023/10/SUfi-MNlarge.webp",
+        "https://suficentermn.org/wp-content/uploads/2023/10/SCMN-home-banner.webp"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "books": [],
+  "courses": [],
+  "free_resources": [
+    {
+      "title": "A Drop of the Love",
+      "url": "https://suficentermn.org/event/a-drop-of-the-love/2026-11-16/",
+      "description": "A weekly Monday-morning Zoom class (Central time) with Cindy Yasmine Rahmana Libman, reading a book on the Sufi path aloud from start to finish, with teaching and discussion. Registration brings links to earlier replays; all are welcome.",
+      "featured": true,
+      "resource_type": "workshop",
+      "subjects": [
+        "mysticism",
+        "spirituality"
+      ],
+      "image": "https://suficentermn.org/wp-content/uploads/2023/10/SUfi-MNlarge-330x56.webp"
+    },
+    {
+      "title": "Renewal Through Divine Chant",
+      "url": "https://suficentermn.org/event/renewal-through-divine-chant-3/2026-11-12/",
+      "description": "An in-person Thursday-evening gathering every other week for spoken Sufi chants and sung chants from the wider Abrahamic tradition, using voice, breath and movement as prayer.",
+      "featured": false,
+      "resource_type": "practice",
+      "subjects": [
+        "mysticism",
+        "spirituality"
+      ],
+      "image": "https://suficentermn.org/wp-content/uploads/2023/10/SUfi-MNlarge-330x56.webp"
+    },
+    {
+      "title": "Gathering in the Love: Special Fifth Sunday Topics",
+      "url": "https://suficentermn.org/event/gathering-in-the-love-special-fifth-sunday-topics/2026-11-29/",
+      "description": "A free Zoom gathering held on the occasional fifth Sunday of a month, built around a Sufi theme, with time for reflection, sharing and practical steps for daily life. Donations are welcome.",
+      "featured": false,
+      "resource_type": "workshop",
+      "subjects": [
+        "mysticism",
+        "spirituality"
+      ],
+      "image": "https://suficentermn.org/wp-content/uploads/2023/10/SUfi-MNlarge-330x56.webp"
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "centre",
+    "rank": 18,
+    "hub": null,
+    "tier_evidence": "YouTube user/SufiCenterMinnesota (linked from its own site): unreadable (consent page, 9 Nov 2026); other accounts not fetched → 0 readable → local_hero",
+    "email": "yes",
+    "email_source": "https://suficentermn.org/who-we-are/",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 11 source(s)",
+    "flags": [
+      "Main YouTube count unreadable (consent page, 9 Nov 2026).",
+      "Domain suficentermn.org first seen only in a search summary; confirmed on its own pages, which name Sufi Center Minnesota, its Bloomington, MN address and its YouTube channel.",
+      "Email info@suficentermn.org is the community inbox (Who We Are page and site header).",
+      "Health rule: the site often uses healing language (its weekly dhikr is called a 'Sufi healing circle', some teachers are described as healers, a 2023 course was titled 'Sufi Paths of Consciousness and Healing', and the Divine Names class is framed around healing). The plan avoids all of it; the dhikr is not listed. Owner may judge the listing too healing-framed overall.",
+      "Stale site: the home page still promotes a September 2023 weekend and an old year-long course; the Fifth Sunday page lists 2020-21 dates although the calendar carries it on 29 Nov 2026.",
+      "Hub links: Dr Ibrahim Jaffe, named on its own pages as teaching there (a weekend event at the centre and teaching videos on its Videos page). Yuval Ron (in the lead) is not named on the pages read, so not linked.",
+      "Videos: 3 of Ibrahim Jaffe's teachings from our plans (already on dev under him); Yuval Ron's 'Healing Sounds of the Wisdom Traditions' left out under the health rule.",
+      "Images: its logo banner and its home-page banner (a stock-style seascape); the only community photo is blurred.",
+      "Regional: Bloomington, Minnesota (Twin Cities)."
+    ],
+    "left_out": [
+      "Dhikr ('Sufi healing circle') and Prayer Circle: healing-framed or prayers for others' wellbeing.",
+      "Divine Qualities Series: framed around 'healing names' and healing blocked patterns.",
+      "Community Connection Day and Sufi Center Minnesota Presents: monthly guest slots with no named teacher on the pages read.",
+      "Special Weekend Event with Dr Ibrahim Jaffe (Sept 2023): past."
+    ]
+  },
+  "videos": [
+    {
+      "title": "Dr. Ibrahim Jaffe teaching on: 'Divine Light'",
+      "url": "https://www.youtube.com/watch?v=b98c4OTSA8c",
+      "subjects": [
+        "mysticism",
+        "spirituality"
+      ],
+      "channel": "Sufi Center Minnesota"
+    },
+    {
+      "title": "Dr. Ibrahim Jaffe: The Basic Tenets of Sufism",
+      "url": "https://www.youtube.com/watch?v=NkazNJ1eiZE",
+      "subjects": [
+        "mysticism",
+        "ancient-wisdom"
+      ],
+      "channel": "Sufi Center Minnesota"
+    },
+    {
+      "title": "Purifying the Heart - With Ibrahim Jaffe",
+      "url": "https://www.youtube.com/watch?v=kwGSTK_vYzo",
+      "subjects": [
+        "mysticism",
+        "spirituality"
+      ],
+      "channel": "Sufi Center Minnesota"
+    }
+  ],
+  "images_final": true
+}

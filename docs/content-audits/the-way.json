@@ -1,0 +1,139 @@
+{
+  "healer": {
+    "healer_slug": "the-way",
+    "location_source": "https://www.thewayapp.com/terms-and-conditions",
+    "no_public_base": "Only the country is published: the terms say the company is headquartered in the United States; no city is given on the pages read.",
+    "create": {
+      "name": "The Way",
+      "bio": "The Way is a meditation app built around one teacher and one route. Every session is guided by Henry Shukman, an authorised Zen master in the Sanbo Zen line who led Mountain Cloud Zen Center in Santa Fe and is now its emeritus spiritual director. He started the app in 2024 with his nephew Jack Shukman, who had come to meditation after a decade in finance and consulting and wanted a single, progressive path rather than a menu of unrelated courses.\n\nInstead of a library, the app leads users along a sequence of daily sits and occasional talks, grouped into trails and retreats that move from basic mindfulness of body and senses towards deeper awareness practice and the question of what the self is. The company also runs live programmes with Henry: multi-week online deep dives built around a Zen text or poem, half-day online retreats, and residential retreats in Britain and the United States. Two of his long-standing students offer small-group and one-to-one practice support online, including koan work with an assistant teacher of the lineage. The app is paid by monthly or yearly subscription, with a one-off lifetime option and scholarships for those who cannot afford it.",
+      "tier": "local_hero",
+      "entity_type": "app",
+      "founded_year": 2024,
+      "availability": "worldwide",
+      "city": null,
+      "country": "United States",
+      "subjects": [
+        "meditation",
+        "spiritual-awakening",
+        "mindfulness"
+      ],
+      "website_url": "https://www.thewayapp.com/",
+      "booking_url": "https://www.thewayapp.com/begin",
+      "youtube_url": "https://www.youtube.com/@thewayapp",
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "info@thewayapp.com",
+      "image_urls": [
+        "https://www.thewayapp.com/icon.png",
+        "https://images.ctfassets.net/db647e76yckr/7l5IltFCFTUrDfyKbwcGtb/0b62c92e2345c3b37105cd04ed139e73/2-phones.png"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "The Way subscription",
+      "url": "https://www.thewayapp.com/faq",
+      "description": "Monthly or yearly access to the full path of guided sits and talks with Henry Shukman, after a free trial. Prices differ slightly by country through the app stores.",
+      "price": "$12.99 (monthly) or $99.99 (annual) in the US",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://images.ctfassets.net/db647e76yckr/5XSZvjckVZT3wiDwZljz56/53e475dd100757e54a78ec5a53b3ba73/The-Way-App_cover-img_2000x.webp"
+    },
+    {
+      "title": "Lifetime Subscription",
+      "url": "https://www.thewayapp.com/lifetime-subscription",
+      "description": "A single payment that gives permanent access to The Way, in place of an ongoing subscription.",
+      "price": "$699",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://images.ctfassets.net/db647e76yckr/5XSZvjckVZT3wiDwZljz56/53e475dd100757e54a78ec5a53b3ba73/The-Way-App_cover-img_2000x.webp"
+    },
+    {
+      "title": "Rest and Renew: An Online Mini-Retreat with Henry Shukman and Kelly Boys",
+      "url": "https://www.thewayapp.com/events/rest-and-renew",
+      "description": "Three live hours online: Henry leads a long sit in open, spacious awareness, Kelly Boys guides a lying-down deep-rest practice, and the two finish with conversation and questions.",
+      "price": "$45",
+      "product_type": "retreat",
+      "start_date": "2026-12-05",
+      "end_date": "2026-12-05",
+      "subjects": [
+        "meditation",
+        "non-duality"
+      ],
+      "image": "https://images.ctfassets.net/db647e76yckr/3wg2YPGvEZxIo6pdU2wm1g/4195f8f414accdf2c744db04220c9dcb/annie-spratt-0ZMDEBuA6Mk-unsplash_3.webp?w=3840&q=75&fm=webp"
+    },
+    {
+      "title": "A 3-day residential retreat with Henry Shukman in the UK",
+      "url": "https://www.thewayapp.com/events/residential-retreat-uk-jan-2027",
+      "description": "Three days at The Vedanta retreat centre in Lincolnshire with two daily sessions of guided sitting, talks, questions and walking practice, early silent sits and optional movement, and teaching assistants on hand. The teaching moves through the four areas the app is built on, namely mindfulness, support, flow and awakening.",
+      "price": "£645-£1595",
+      "product_type": "retreat",
+      "start_date": "2027-01-29",
+      "end_date": "2027-02-01",
+      "subjects": [
+        "meditation",
+        "spiritual-awakening"
+      ],
+      "image": "https://images.ctfassets.net/db647e76yckr/2NjzO3TNVZZKfw2tgQLWPH/7f57212f0705fc788ceed5b15bf1cc5b/Web_Image_Vedanta-Retreat-Center_3.jpeg"
+    },
+    {
+      "title": "Practice support with Henry's Teaching Assistants",
+      "url": "https://www.thewayapp.com/practice-support",
+      "description": "Monthly online small-group sessions and bookable one-to-one calls with Luke Wientzen and Shana Smith, two long-time students of Henry, for questions about practice. Koan training is available with Shana, an assistant teacher in Sanbo Zen.",
+      "price": "Individual session $55-95; small group session $15",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://images.ctfassets.net/db647e76yckr/5XSZvjckVZT3wiDwZljz56/53e475dd100757e54a78ec5a53b3ba73/The-Way-App_cover-img_2000x.webp"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "app",
+    "rank": 65,
+    "hub": null,
+    "tier_evidence": "No readable follower counts (Instagram, TikTok, LinkedIn, Substack, Reddit not fetched; YouTube unreadable, consent page, 9 Nov 2026) → 0 → local_hero. No user numbers published beyond 'thousands of other meditators' (/begin).",
+    "email": "yes",
+    "email_source": "https://www.thewayapp.com/faq",
+    "contact_form_url": "https://www.thewayapp.com/contact",
+    "bio_check": "OK: no 8-word runs against 8 source(s)",
+    "flags": [
+      "Founder and sole teacher Henry Shukman is already on Spiritpedia (henry-shukman); his plan already lists the Lifetime Subscription and Rest and Renew pages, so these two offerings now appear on both listings. Apps aren't hubs, so no link made.",
+      "Kelly Boys (on Spiritpedia) co-leads Rest and Renew.",
+      "Brand inbox: info@thewayapp.com (FAQ); contact form at /contact.",
+      "Psychedelics: the sitemap lists a page /psychedelic-archives; not opened and not used. Owner may want to know before listing.",
+      "Thin on free material: the app's 30 free days are inside the app; no free practices on the site and no video IDs embedded (YouTube link only).",
+      "The New York retreat page (/events/a-3-day-residential-retreat-new-york-2027) gives Feb 18-21, 2027 in its header but September 10-13, 2026 in its event details, and the UK September 2027 page repeats the January dates in its details; both left out until the dates are fixed.",
+      "Prices for the $ items carry no currency code on the page; the subscription is stated as US pricing.",
+      "Images: app icon (512 px) and an app screenshot mock-up, both from its own site/CDN (images.ctfassets.net robots.txt returns 404, so no restrictions).",
+      "youtube_url from the site footer; not opened.",
+      "Base: country only (United States), from the terms page."
+    ],
+    "left_out": [
+      "Rice in the Bowl deep dive (Nov 1-15, 2026): already started.",
+      "California five-day retreat at Mount Madonna: no dates or price on the page.",
+      "New York (Menla) and UK September 2027 retreats: conflicting dates on their pages.",
+      "Psychedelic archives page: psychedelic rule.",
+      "The /about page's mention of trauma healing: health rule, not used in the bio."
+    ],
+    "held": "Lead, 9 Nov 2026: held for the owner. Henry Shukman is live, and two of these offerings (Lifetime Subscription, Rest and Renew) are already on his listing: list the app separately, or keep it on his listing?"
+  }
+}

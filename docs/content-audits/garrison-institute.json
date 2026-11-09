@@ -1,0 +1,219 @@
+{
+  "healer": {
+    "healer_slug": "garrison-institute",
+    "location_source": "https://www.garrisoninstitute.org/contact-us/",
+    "create": {
+      "name": "Garrison Institute",
+      "bio": "The Garrison Institute is a non-profit retreat and programme centre in the Hudson Valley, about fifty miles up the river from New York City. Diana Calthorpe Rose and Jonathan Rose started it in 2003 in a former Capuchin friary set on some 95 acres of woods and meadow above the Hudson, opposite West Point, with the aim of bringing what is learned on the cushion to bear on life in the wider world. It is non-sectarian, and its guiding values include daily contemplation, generosity, patience and careful attention to science.\n\nOver two decades the building, with its large meditation hall, labyrinth and room for around 165 overnight guests, has hosted more than a thousand retreats. Teachers have come from Tibetan Buddhism (the Dalai Lama visited three times), Christian contemplative prayer, Jewish and Sufi mysticism, Zen, insight meditation and Indigenous traditions, alongside scientists exploring the mind. Today its calendar mixes residential retreats with chant, silence or study at their centre, conversations between meditation teachers and researchers, and resilience training for front-line carers and aid workers. Donation-supported meditation groups meet weekly on Zoom, and talks are shared through a podcast and on YouTube.",
+      "tier": "local_hero",
+      "entity_type": "organisation",
+      "founded_year": 2003,
+      "availability": "worldwide",
+      "city": "Garrison, New York",
+      "country": "United States",
+      "subjects": [
+        "meditation",
+        "spirituality",
+        "mysticism"
+      ],
+      "website_url": "https://www.garrisoninstitute.org/",
+      "booking_url": "https://www.garrisoninstitute.org/events/",
+      "youtube_url": "https://www.youtube.com/user/GarrisonInstitute",
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "info@garrisoninstitute.org",
+      "image_urls": [
+        "https://www.garrisoninstitute.org/wp-content/uploads/2025/06/Aerial-Photo-of-Building_sunnier.jpg",
+        "https://www.garrisoninstitute.org/wp-content/uploads/2024/10/Photo-of-Med-Hall-copy.jpg",
+        "https://www.garrisoninstitute.org/wp-content/uploads/2025/05/Building-Front-Straightened-copy.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "The Experience of Genuine Happiness: A Daylong Gathering with Khandro Rinpoche, Dr. Richard Davidson. Dr. Daniel Goleman & other Leading Scientists",
+      "url": "https://www.garrisoninstitute.org/event/the-experience-of-genuine-happiness/",
+      "description": "A one-day conversation at Garrison between the Tibetan teacher Khandro Rinpoche, neuroscientist Richard Davidson, author Daniel Goleman and other researchers, asking how Buddhist practice and science each understand lasting happiness and how it can be lived. Lunch is included.",
+      "price": "Contact for pricing",
+      "product_type": "retreat",
+      "start_date": "2026-11-14",
+      "end_date": "2026-11-14",
+      "subjects": [
+        "conscious-science",
+        "meditation"
+      ],
+      "image": "https://www.garrisoninstitute.org/wp-content/uploads/2026/09/Khandro-la_Richie-Davidson_Daniel-Goleman.png"
+    },
+    {
+      "title": "Healing Our Way Home: A Retreat for Women of Color",
+      "url": "https://www.garrisoninstitute.org/event/healing-our-way-home-a-retreat-for-women-of-color-2026/",
+      "description": "A weekend retreat for women of colour, cis and trans, with three teachers, Kaira Jewel Lingo, Valerie Brown and Dr Marisela Gomez, in the Plum Village spirit: sitting and moving meditation, mindful walking and eating, chanting, reflective writing and small-group sharing on ancestors and joy.",
+      "price": "Contact for pricing",
+      "product_type": "retreat",
+      "start_date": "2026-11-20",
+      "end_date": "2026-11-22",
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "image": "https://www.garrisoninstitute.org/wp-content/uploads/2025/07/A-Retreat-for-Women-of-Color-2.png"
+    },
+    {
+      "title": "Voice as Practice with Meredith Monk & Ellen Fisher",
+      "url": "https://www.garrisoninstitute.org/event/voice-as-practice-with-meredith-monk-ellen-fisher-december-2026/",
+      "description": "A residential workshop with composer Meredith Monk and performer Ellen Fisher in which each session opens with meditation and moves into voice and movement exercises, listening closely to breath, tone and space. Meredith also talks about how her Buddhist practice and her art inform each other. Open to all.",
+      "price": "Contact for pricing",
+      "product_type": "retreat",
+      "start_date": "2026-12-11",
+      "end_date": "2026-12-14",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "image": "https://www.garrisoninstitute.org/wp-content/uploads/2025/08/meredith-monk-ellen-fisher.png"
+    },
+    {
+      "title": "LOVE is the Most Powerful Force in the Universe: A Virtual Retreat",
+      "url": "https://www.garrisoninstitute.org/event/love-is-the-most-powerful-force-in-the-universe-2027/",
+      "description": "An afternoon on Zoom with Sharon Salzberg and the founders of the Holistic Life Foundation, using lovingkindness meditation, yoga and other contemplative practices to look at self-acceptance, love with healthy boundaries and care for others. Beginners are welcome.",
+      "price": "Contact for pricing",
+      "product_type": "retreat",
+      "start_date": "2027-02-06",
+      "end_date": "2027-02-06",
+      "subjects": [
+        "meditation",
+        "conscious-relationships"
+      ],
+      "image": "https://www.garrisoninstitute.org/wp-content/uploads/2026/09/sharon-HLF-virtual-1.png"
+    },
+    {
+      "title": "The Heart of Devotion Retreat with Krishna Das (2027)",
+      "url": "https://www.garrisoninstitute.org/event/the-heart-of-devotion-retreat-with-krishna-das-2027/",
+      "description": "A weekend of devotional practice with Krishna Das: evening kirtan with his musicians, afternoon talks with questions, morning chanting led by Nina Rao, a rhythmic sound session with Arjun Bruggeman and gentle yoga to arrive.",
+      "price": "Contact for pricing",
+      "product_type": "retreat",
+      "start_date": "2027-02-26",
+      "end_date": "2027-03-01",
+      "subjects": [
+        "spirituality",
+        "yoga"
+      ],
+      "image": "https://www.garrisoninstitute.org/wp-content/uploads/2025/10/The-Heart-of-Devotion-Retreat-with-Krishna-Das-2026-1.png"
+    },
+    {
+      "title": "A 5-Day Silent Retreat with Cynthia Bourgeault",
+      "url": "https://www.garrisoninstitute.org/event/5-day-retreat-with-reverend-cynthia-bourgeault-2027/",
+      "description": "A silent Centering Prayer retreat in which Cynthia Bourgeault traces how Fr Thomas Keating's understanding of consciousness developed over his last decades, through teaching, dialogue and long periods of prayer. Practitioners of any sitting practice are welcome.",
+      "price": "Contact for pricing",
+      "product_type": "retreat",
+      "start_date": "2027-03-17",
+      "end_date": "2027-03-21",
+      "subjects": [
+        "mysticism",
+        "non-duality",
+        "meditation"
+      ],
+      "image": "https://www.garrisoninstitute.org/wp-content/uploads/2026/10/Retreat-with-Cynthia-Bourgeault.png"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Wednesday Community Meditation Sessions",
+      "url": "https://www.garrisoninstitute.org/online-communities/",
+      "description": "Donation-supported sitting groups on Zoom: an open mindfulness session every Wednesday morning (US Eastern time), plus a weekly BIPOC sangha and a monthly LGBTQIA+ sangha, each with experienced teachers. Registration is through the page.",
+      "featured": true,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://www.garrisoninstitute.org/wp-content/uploads/2025/05/54091240368_c24d71f1d9_o-e1746121842505.jpg"
+    },
+    {
+      "title": "The Garrison Institute Presents: The Common Good",
+      "url": "https://www.garrisoninstitute.org/podcasts/",
+      "description": "The institute's podcast, hosted by co-founder Jonathan Rose, with guests such as Rupert Spira, Roshi Joan Halifax, Dan Siegel and Sharon Salzberg on the nature of mind, interdependence and compassion.",
+      "featured": false,
+      "resource_type": "workshop",
+      "subjects": [
+        "spirituality",
+        "consciousness"
+      ],
+      "image": "https://www.garrisoninstitute.org/wp-content/uploads/2024/09/gi-lockup-rgb.png"
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "centre",
+    "rank": 12,
+    "hub": null,
+    "tier_evidence": "YouTube user/GarrisonInstitute (linked from its own site): unreadable (consent page, 9 Nov 2026); other accounts not fetched → 0 readable → local_hero",
+    "email": "yes",
+    "email_source": "https://www.garrisoninstitute.org/contact-us/",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 19 source(s)",
+    "flags": [
+      "Main YouTube count unreadable (consent page, 9 Nov 2026).",
+      "Possible editorial-stature override: a well-known US contemplative retreat centre (three visits by the Dalai Lama, long list of leading teachers); owner to decide.",
+      "Email info@garrisoninstitute.org is the general inbox on the contact page; events@ handles registration.",
+      "Domain garrisoninstitute.org first seen in a search result; confirmed by its own home and contact pages, which name the institute and its Garrison, NY address.",
+      "Political and activism content: much of the site frames contemplation as a route to social and environmental change (Spirituality & Social Change, a 'Beyond the ballot' article, post-activism and antiracism videos, a 'Love Letters to the Movement' event). None of that is used; the plan sticks to retreats, meditation groups and non-political talks. Owner may judge the listing too close to activism overall.",
+      "Prices: none of the event pages shows a price in the page text (registration runs through a booking widget), so every retreat says 'Contact for pricing'.",
+      "Hub links: Kaira Jewel Lingo and Valerie Brown (20-22 Nov 2026 retreat), Sharon Salzberg (6 Feb 2027 virtual retreat), Krishna Das and Nina Rao (Feb 2027 retreat) and Cynthia Bourgeault (Mar 2027 retreat), all named as teaching on the institute's own event pages. Josh Korda and Shelly Tygielski (in the lead) appear only in book-event videos, so they are not linked.",
+      "Healing Our Way Home: 'healing' is the title of the book the retreat is built on; the description makes no health claim. Its teachers' bios on the page mention social-justice activism (not used).",
+      "Only 4 videos: the site's Watch page lists 6 and our plans hold 2; 4 left out as political or activism-framed.",
+      "Place: Garrison, New York is not in places (small hamlet); a place alias is needed so Near You finds it (README §18.4)."
+    ],
+    "left_out": [
+      "Opening the Wisdom Within (11-14 Nov 2026) and Changemakers 2026 (from 4 Nov): already started or start before 13 Nov.",
+      "Love Letters to the Movement (14 Dec 2026) and Artificial Intelligence and Our Spiritual Imagination (hosted by another institute): movement-framed or another organisation's.",
+      "Three Empowerments for the Spiritual Healer: healer-framed, not opened.",
+      "Village Zendo, New York Zen Center and Westchester Meditation Center retreats: other organisations renting the facility.",
+      "Videos: Practicing Antiracism with the Engaged Eightfold Path; Love, Lineage, and Justice; Bayo Akomolafe on post-activism; Sit Down to Rise Up book event: political or activism-framed.",
+      "Contemplative-Based Resilience and Pathways to Planetary Health programmes: professional and environmental-policy programmes."
+    ]
+  },
+  "videos": [
+    {
+      "title": "Sharon Salzberg - Lovingkindness in Difficult Times",
+      "url": "https://www.youtube.com/watch?v=sfDGxlpic9s",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "channel": "Garrison Institute"
+    },
+    {
+      "title": "\"Mind, Self and Consciousness” with Dr. Dan Siegel  |  Pathways to Planetary Health 2020",
+      "url": "https://www.youtube.com/watch?v=y79ktPcWPdc",
+      "subjects": [
+        "consciousness",
+        "conscious-science"
+      ],
+      "channel": "Garrison Institute"
+    },
+    {
+      "title": "Collective Rest in Times of Frenzy With Kelly Boys and Dr. Angel Acosta",
+      "url": "https://www.youtube.com/watch?v=a3nfxerOPK4",
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "channel": "Garrison Institute"
+    },
+    {
+      "title": "Josh Korda speaks with Koshin Paley Ellison about his new book \"Unsubscribe\"",
+      "url": "https://www.youtube.com/watch?v=7t-CfPTmEvY",
+      "subjects": [
+        "spirituality",
+        "mindfulness"
+      ],
+      "channel": "Garrison Institute"
+    }
+  ],
+  "images_final": true
+}

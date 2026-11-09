@@ -1,0 +1,128 @@
+{
+  "healer": {
+    "healer_slug": "mountain-stream-meditation",
+    "location_source": "https://www.mtstream.org/",
+    "create": {
+      "name": "Mountain Stream Meditation",
+      "bio": "Mountain Stream Meditation is an insight meditation community in Nevada City, in the Sierra Nevada foothills of Northern California. Its founding teacher, John Travis, trained for years with Tibetan and Theravada masters in Asia and later completed senior teacher training with Jack Kornfield; he began leading a weekly sitting group in the area in 1986. The group became a non-profit in 1994, and in 2013 it opened the Nevada City Insight Center on Zion Street, a remodelled property that now serves as its community temple. Adam Stonebraker, whose teaching draws on the Thai Forest lineage of Ajahn Chah, is resident guiding teacher, working with a council of local teachers.\n\nThe weekly rhythm includes a Monday evening talk with Adam or a visiting teacher, a Tuesday sit, an early-morning online group on weekdays and an open temple on Fridays, most of it in person and on Zoom. There are also half-day and daylong retreats, study series, two residential retreats a year, eco-dharma activities, a queer sangha and a Dzogchen circle. Much is offered by donation with sliding-scale fees for longer events, and recorded talks are shared on the website and YouTube.",
+      "tier": "local_hero",
+      "entity_type": "organisation",
+      "founded_year": 1994,
+      "availability": "worldwide",
+      "city": "Nevada City, California",
+      "country": "United States",
+      "subjects": [
+        "meditation",
+        "mindfulness",
+        "spiritual-awakening"
+      ],
+      "website_url": "https://www.mtstream.org/",
+      "booking_url": "https://www.mtstream.org/nc-daily-schedule",
+      "youtube_url": "https://www.youtube.com/@mountainstreammeditation9608",
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "info@mtstream.org",
+      "image_urls": [
+        "https://images.squarespace-cdn.com/content/v1/57474200859fd0d6f666823b/1464897416435-9RHAVG4G59ASUFCFCL2N/contact-page.jpg",
+        "https://images.squarespace-cdn.com/content/v1/57474200859fd0d6f666823b/1465671082897-QQ9G4S2IGT7ICFKOTKZ7/about-banner.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Bhāvanā: A Year of Committed Practice with Adam Stonebraker",
+      "url": "https://www.mtstream.org/bhavana-a-year-of-committed-practice-2027",
+      "description": "A year-long cohort for committed meditators led by Adam Stonebraker, working through concentration, the four foundations of mindfulness and the four heart qualities. Twelve monthly gatherings, three four-week workshops and three daylongs, in person or online, with personal meetings with the teacher. Entry is by application.",
+      "price": "Donation-based (monthly giving, no minimum or maximum)",
+      "product_type": "course",
+      "start_date": "2027-01-02",
+      "end_date": "2027-12-04",
+      "subjects": [
+        "meditation",
+        "mindfulness",
+        "ancient-wisdom"
+      ],
+      "image": "http://static1.squarespace.com/static/57474200859fd0d6f666823b/t/6a03fafcabafa91709c62659/1778645756129/Logo+round+thumbnail+%282+x+2+in%29+%283%29.png?format=1500w"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Rise & Reflect, Onward",
+      "url": "https://www.mtstream.org/rise-reflect-onward",
+      "description": "A half-hour online sitting group every weekday morning (Pacific time), peer-led with guidance from the centre's teachers: a short reading, then silent meditation, with optional sharing on Fridays. A small donation is suggested.",
+      "featured": true,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "http://static1.squarespace.com/static/57474200859fd0d6f666823b/t/6a03fafcabafa91709c62659/1778645756129/Logo+round+thumbnail+%282+x+2+in%29+%283%29.png?format=1500w"
+    },
+    {
+      "title": "Audio Talks",
+      "url": "https://www.mtstream.org/audio-talks",
+      "description": "Recorded Monday-night dharma talks from Mountain Stream by Adam Stonebraker, members of its teacher council and visiting insight teachers, plus older talks by founding teacher John Travis, free to stream.",
+      "featured": false,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "image": "http://static1.squarespace.com/static/57474200859fd0d6f666823b/t/6a03fafcabafa91709c62659/1778645756129/Logo+round+thumbnail+%282+x+2+in%29+%283%29.png?format=1500w"
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "centre",
+    "rank": 16,
+    "hub": null,
+    "tier_evidence": "YouTube @mountainstreammeditation9608 (linked from its own site): unreadable (consent page, 9 Nov 2026); Facebook and Instagram linked but never fetched → 0 readable → local_hero",
+    "email": "yes",
+    "email_source": "https://www.mtstream.org/contact",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 10 source(s)",
+    "flags": [
+      "Main YouTube count unreadable (consent page, 9 Nov 2026).",
+      "Domain mtstream.org first seen only in a search summary; confirmed through the sitemap line in robots.txt of jeanne-duerst-f2fr.squarespace.com and then by the site's own pages, which name Mountain Stream Meditation and its Nevada City address.",
+      "Email info@mtstream.org is the centre inbox (in the footer of every page, including Contact).",
+      "Founded year 1994 = incorporation as a non-profit; John Travis began the sitting group in 1986 and the Nevada City Insight Center opened in 2013. Owner may prefer 1986.",
+      "Hub links: Devin Berry (guest teacher, 19 Oct 2026 Monday talk, on its schedule page), Dawn Mauricio (several Monday talks in 2024-25) and Tuere Sala (Oct 2024 Monday talk), both on its Audio Talks page. Devon & Nico Hase (in the lead) gave a Monday talk on its YouTube channel in April 2026, but no page I read names them, so they are not linked. Founding teacher John Travis and guiding teacher Adam Stonebraker are not in the dev names file.",
+      "Only 2 videos (from our plans; the channel itself is unreadable).",
+      "Regional: Nevada City, California (Sierra foothills); the dry run raised no place note. Both videos are already on dev (under Devin Berry and Devon & Nico Hase).",
+      "Price for Bhāvanā copied in substance: the page asks accepted applicants to become monthly givers with 'no minimum/maximum monthly amount', so there is no fixed fee."
+    ],
+    "left_out": [
+      "Healing and Awakening daylong with Ken Bradford (5 Dec 2026): framed around trauma, stress and emotional healing (health rule).",
+      "Honor Earth & Water half-day (21 Nov 2026): full, and includes sound-healing claims.",
+      "Sound Healing Meditation evenings and video: healing-framed.",
+      "Room to Breathe recovery sangha: addiction recovery is on the condition list.",
+      "Green Tara Circle, Winter Solstice Labyrinth Walk, Queer Sangha and Open Temple: not opened individually.",
+      "Dependent Origination series: already under way."
+    ]
+  },
+  "videos": [
+    {
+      "title": "Devin Berry Monday Dharma Talk 10/19/26:  Samadhi",
+      "url": "https://www.youtube.com/watch?v=iH6Jfu0Nox4",
+      "subjects": [
+        "meditation",
+        "spiritual-awakening"
+      ],
+      "channel": "Mountain Stream Meditation"
+    },
+    {
+      "title": "devon & nico hase Monday Dharma Talk 4/27/26:  This Messy, Gorgeous Love",
+      "url": "https://www.youtube.com/watch?v=ytKv0bn670U",
+      "subjects": [
+        "spirituality",
+        "meditation"
+      ],
+      "channel": "Mountain Stream Meditation"
+    }
+  ],
+  "images_final": true
+}

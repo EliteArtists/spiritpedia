@@ -1,0 +1,206 @@
+{
+  "healer": {
+    "healer_slug": "london-insight-meditation",
+    "location_source": "https://www.londoninsight.org/about-us/about-lim/",
+    "create": {
+      "name": "London Insight Meditation",
+      "bio": "London Insight Meditation is a small independent charity that brings insight (vipassana) meditation and early Buddhist teaching to London. It began in 1995, when two practitioners travelling back from Gaia House saw that busy Londoners needed teaching closer to home; Christina Feldman put them in touch with Yanai Postelnik, and the early days of 'London Retreats', as it was first called, also drew teachers such as Christopher Titmuss and Stephen and Martine Batchelor. It is now run by volunteer coordinators and trustees with a part-time manager.\n\nThe charity has no building of its own. It hires venues in London for day retreats and workshops and runs further courses online, led by a rotating group of experienced insight teachers, many connected with Gaia House, while keeping friendly links with Amaravati and Satipanya. Ritual plays little part; the emphasis is on presenting the teachings plainly for Western practitioners without thinning them out. Events are priced on a sponsor, standard and supported scale and the teachers are supported through dana. A free twice-monthly Dharma Circle meets on Zoom, and recorded talks and guided meditations are shared on Dharma Seed and YouTube.",
+      "tier": "local_hero",
+      "entity_type": "organisation",
+      "founded_year": 1995,
+      "availability": "worldwide",
+      "city": "London",
+      "country": "United Kingdom",
+      "subjects": [
+        "meditation",
+        "mindfulness",
+        "spiritual-awakening"
+      ],
+      "website_url": "https://www.londoninsight.org/",
+      "booking_url": "https://www.londoninsight.org/",
+      "youtube_url": "https://www.youtube.com/channel/UC-l_PL6TPt5KrsE0AZj3o8A",
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": null,
+      "image_urls": [
+        "https://www.londoninsight.org/wp-content/uploads/2021/12/logo-color-web.png"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "In-person: This Precious Human Life – Contemplating Our Mortality",
+      "url": "https://www.londoninsight.org/event/in-person-this-precious-human-life-contemplating-our-mortality/",
+      "description": "A day retreat in north-west London with Yanai Postelnik on the Buddhist practice of reflecting on death as a way of seeing what matters. Teaching and guided exercises alternate with silent meditation; some experience of silent practice is expected.",
+      "price": "£15.00 – £50.00",
+      "product_type": "retreat",
+      "start_date": "2026-11-14",
+      "end_date": "2026-11-14",
+      "subjects": [
+        "meditation",
+        "death-the-afterlife"
+      ],
+      "image": "https://www.londoninsight.org/wp-content/uploads/2021/12/logo-color-web.png"
+    },
+    {
+      "title": "In-person: A Cool Head, A Warm Heart",
+      "url": "https://www.londoninsight.org/event/in-person-a-cool-head-a-warm-heart/",
+      "description": "Christina Feldman leads a day on equanimity warmed by kindness, joy and compassion, as a way of meeting an unsettled world. The day mixes practice periods, teaching and time for questions.",
+      "price": "£15.00 – £50.00",
+      "product_type": "retreat",
+      "start_date": "2026-11-28",
+      "end_date": "2026-11-28",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "image": "https://www.londoninsight.org/wp-content/uploads/2021/12/logo-color-web.png"
+    },
+    {
+      "title": "Online: The Six Sense Bases – Clarity and Wisdom",
+      "url": "https://www.londoninsight.org/event/online-the-six-sense-bases-clarity-and-wisdom/",
+      "description": "A two-afternoon online course with Leigh Brasington on a less familiar part of the Buddha's teaching: the five physical senses and the mind as the ground of attachment and of insight, explored through several suttas.",
+      "price": "£12.00 – £30.00",
+      "product_type": "course",
+      "start_date": "2026-12-05",
+      "end_date": "2026-12-06",
+      "subjects": [
+        "ancient-wisdom",
+        "meditation"
+      ],
+      "image": "https://www.londoninsight.org/wp-content/uploads/2021/12/logo-color-web.png"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "LIM Dharma Circle",
+      "url": "https://www.londoninsight.org/lim-dharma-circle/",
+      "description": "A free Zoom drop-in twice a month on Monday evenings, hosted by James Blake or one of the charity's community dharma leaders, combining sitting practice with shared reflection on a theme. Just log on; there is nothing to book.",
+      "featured": true,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://www.londoninsight.org/wp-content/uploads/2022/01/Cushion-small-crop.jpg"
+    },
+    {
+      "title": "Video",
+      "url": "https://www.londoninsight.org/resources/video/",
+      "description": "LIM's page for its YouTube library of recorded talks and guided meditations by its visiting teachers, free to watch.",
+      "featured": false,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://www.londoninsight.org/wp-content/uploads/2022/11/Video-example-thumbnails-v2.png"
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "centre",
+    "rank": 8,
+    "hub": null,
+    "tier_evidence": "YouTube channel UC-l_PL6TPt5KrsE0AZj3o8A (linked from its own site): unreadable (consent page, 9 Nov 2026); Facebook, X and Instagram linked but never fetched → 0 readable → local_hero",
+    "email": "contact form",
+    "email_source": null,
+    "contact_form_url": "https://www.londoninsight.org/contact/",
+    "bio_check": "OK: no 8-word runs against 10 source(s)",
+    "flags": [
+      "Main YouTube count unreadable (consent page, 9 Nov 2026).",
+      "No published email; contact form only.",
+      "Photo: only the charity's logo (300 × 58 px) clearly belongs to LIM; its other images are stock-style (a Buddha face, a cushion). It hires venues, so there is no hall to show. Owner may prefer the YouTube avatar once the channel can be read.",
+      "Domain confirmed from the link on lim.dharmaseed.org; Crawl-delay: 10 respected on londoninsight.org.",
+      "No centre building: day events are held at hired venues (currently King Alfred School, North End Road, NW11); base is London.",
+      "Hub links from its Our Teachers page: Jill Shepherd, Ajahn Canda (listed as Venerable Canda), Bernat Font, Bhante Bodhidhamma, Kaira Jewel Lingo, Martin Aylward and Mimi Kuo-Deemer. James Baraz (in the lead) is not named on its site, so not linked; Stephen Batchelor is named only in its early history.",
+      "The 14 Nov day retreat on mortality uses death-the-afterlife as a subject; it is a contemplative practice day, not grief therapy."
+    ],
+    "left_out": [
+      "Residential retreats and online learning pages: lists of other organisations' offerings.",
+      "Meditation groups in London page: a directory of other groups."
+    ]
+  },
+  "videos": [
+    {
+      "title": "Jill Shepherd – Guided Loving-Kindness (Mettā) Meditation",
+      "url": "https://www.youtube.com/watch?v=NPC3MVQ9mdg",
+      "subjects": [
+        "meditation"
+      ],
+      "channel": "London Insight Meditation"
+    },
+    {
+      "title": "Jill Shepherd – Guided Equanimity (Upekkha) Meditation",
+      "url": "https://www.youtube.com/watch?v=Rfjz4ZawZ4o",
+      "subjects": [
+        "meditation"
+      ],
+      "channel": "London Insight Meditation"
+    },
+    {
+      "title": "Ven Canda – Guided Loving-Kindness (Mettā) Meditation",
+      "url": "https://www.youtube.com/watch?v=1l7JDiMES14",
+      "subjects": [
+        "meditation"
+      ],
+      "channel": "London Insight Meditation"
+    },
+    {
+      "title": "Jill Shepherd - The Brahmavihārā Heart Qualities",
+      "url": "https://www.youtube.com/watch?v=XUESpLmxJ_g",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "channel": "London Insight Meditation"
+    },
+    {
+      "title": "Jill Shepherd – Compassion (Karuṇā)",
+      "url": "https://www.youtube.com/watch?v=2nh9eLwlpkw",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "channel": "London Insight Meditation"
+    },
+    {
+      "title": "Jill Shepherd – Appreciative Joy (Muditā)",
+      "url": "https://www.youtube.com/watch?v=Vdqq82dDrAo",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "channel": "London Insight Meditation"
+    },
+    {
+      "title": "Jill Shepherd – Equanimity (Upekkha)",
+      "url": "https://www.youtube.com/watch?v=v5cFvK87GsY",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "channel": "London Insight Meditation"
+    },
+    {
+      "title": "Jill Shepherd - Generosity As a Radical Dharma Practice",
+      "url": "https://www.youtube.com/watch?v=QGGlcA-_nFE",
+      "subjects": [
+        "spirituality"
+      ],
+      "channel": "London Insight Meditation"
+    },
+    {
+      "title": "James Baraz – Awakening and the importance of action",
+      "url": "https://www.youtube.com/watch?v=47eGpIyMrfA",
+      "subjects": [
+        "spiritual-awakening"
+      ],
+      "channel": "London Insight Meditation"
+    }
+  ],
+  "images_final": true
+}

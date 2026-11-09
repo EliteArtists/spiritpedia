@@ -1,0 +1,113 @@
+{
+  "healer": {
+    "healer_slug": "san-francisco-zen-center",
+    "location_source": "https://www.sfzc.org/about-san-francisco-zen-center/contact/",
+    "create": {
+      "name": "San Francisco Zen Center",
+      "bio": "San Francisco Zen Center is a Soto Zen community whose founder was the Japanese teacher Shunryu Suzuki Roshi, who died in 1971 and whose talks still shape the way it practises. Its stated purpose is to make the wisdom and compassion of the Buddha available and to live them out, treating formal sitting and everyday activity as equal expressions of the bodhisattva path, and honouring lay and monastic life alike. It looks after three practice places: City Center, an urban temple on Page Street in the middle of San Francisco; Green Gulch Farm, an organic farm and garden in a coastal valley in Marin County; and Tassajara, a monastery and retreat centre deep in the Ventana Wilderness, bought after a fundraising drive that began in November 1966.\n\nA large residential community trains at all three sites, and the centre sees preparing future Zen teachers as part of its core work. For those further away, SFZC Online runs a daily online zendo with live zazen, chanting and talks that are free and need no sign-up, along with weekly drop-in sessions with teachers, live courses on Buddhist texts and practice, and self-paced recorded study. An extensive archive of Dharma talks from its teachers and guests is open to everyone, and a network of affiliated groups, Branching Streams, carries the lineage further afield.",
+      "tier": "local_hero",
+      "entity_type": "organisation",
+      "founded_year": null,
+      "availability": "worldwide",
+      "city": "San Francisco, California",
+      "country": "United States",
+      "subjects": [
+        "meditation",
+        "spiritual-awakening",
+        "non-duality"
+      ],
+      "website_url": "https://www.sfzc.org/",
+      "booking_url": "https://www.sfzc.org/calendar/",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "ccoffice@sfzc.org",
+      "image_urls": []
+    }
+  },
+  "teaches_at": [],
+  "videos": [
+    {
+      "title": "Living A Full Life — Marc Lesser — Dharma Talk at Beginner's Mind Temple",
+      "url": "https://www.youtube.com/watch?v=M_pqDKu6VHM",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "channel": "San Francisco Zen Center"
+    }
+  ],
+  "books": [],
+  "courses": [
+    {
+      "title": "The Zen of Poetry and the Poetry of Zen, Online 11/16–12/21",
+      "url": "https://www.sfzc.org/event/the-zen-of-poetry-and-the-poetry-of-zen-online-11-16-12-21/2026-11-16/",
+      "description": "A six-week Monday morning course on Zoom with Koji Vanessa Able, reading old Chinese and Japanese Buddhist verse beside modern poets and trying short guided writing exercises on themes such as nature, perception and not-knowing. Newcomers to poetry are welcome.",
+      "price": "Benefactor $420; Standard $336; Member $302; Supported $202; Deeply Supported $84",
+      "product_type": "course",
+      "start_date": "2026-11-16",
+      "end_date": "2026-12-21",
+      "subjects": [
+        "meditation",
+        "ancient-wisdom"
+      ],
+      "image": null
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Online Zendo and Livestream Practice",
+      "url": "https://www.sfzc.org/online-page/",
+      "description": "SFZC Online's hub: livestreamed daily zazen, chanting, ceremonies and Dharma talks that are free with no registration, plus links to drop-in practice sessions with teachers.",
+      "featured": true,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://www.sfzc.org/wp-content/uploads/2026/05/OZ-Zazen-354x243-1.png"
+    },
+    {
+      "title": "Entering Practice",
+      "url": "https://www.sfzc.org/offerings/entering-practice/",
+      "description": "A starting point for newcomers: recorded zazen instruction from several teachers, a beginners' reading list, temple sounds, films of Suzuki Roshi and a recorded class series on Buddhist and Zen basics.",
+      "featured": false,
+      "resource_type": "practice",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "image": "https://www.sfzc.org/wp-content/uploads/2026/05/New-to-Practice-354x243-1.png"
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "centre",
+    "rank": 36,
+    "hub": null,
+    "tier_evidence": "YouTube unreadable (consent page, 9 Nov 2026); Instagram/Facebook not fetched; no readable counts → local_hero",
+    "email": "yes",
+    "email_source": "https://www.sfzc.org/about-san-francisco-zen-center/contact/",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 11 source(s)",
+    "flags": [
+      "possible editorial-stature override: San Francisco Zen Center is one of the best-known Zen centres in the West.",
+      "Hub link: marc-lesser as instructor (named on the Green Gulch Farm teachers page).",
+      "founded_year left null: the pages read name Suzuki Roshi as founder and mention the 1966 Tassajara campaign but give no founding year for the organisation.",
+      "Main office inbox ccoffice@sfzc.org (City Center, 300 Page Street); separate inboxes exist for Green Gulch and conferences.",
+      "Only one healer image (City Center courtyard, 354x243, viewed); the homepage tiles are 250px and below the 300px minimum. Poetry course image set to null (teacher photo is 288px).",
+      "Video M_pqDKu6VHM oEmbed-checked (San Francisco Zen Center channel); youtube_url left null as no channel link was used.",
+      "Ingest image check got HTTP 429 from sfzc.org; plan held per brief. Rerun the dry run later from a quiet session."
+    ],
+    "left_out": [
+      "Close At Hand: Meditation and Drawing (14 Nov 2026): the description claims brain-health and restorative effects (health rule).",
+      "Meditation in Recovery weekly meetings: recovery-focused (health rule).",
+      "Deeper Rest: Exploring Relaxation in Daily Life: began 8 Nov 2026.",
+      "Heart Sutra, Sandokai, Noble Eightfold Path courses and November sesshin: started before 12 Nov 2026.",
+      "Zenefit 2026 (13 Nov): fundraiser concert, not teaching.",
+      "Dharma Talk Archive: redirects to sfzc.engagewisdom.com, a separate host not checked."
+    ],
+    "held": "sfzc.org refused the ingest's image requests with HTTP 429 (rate limit) on the dry run, 9 Nov 2026, so no image loads; not retried. Images were viewed via plain curl earlier."
+  }
+}

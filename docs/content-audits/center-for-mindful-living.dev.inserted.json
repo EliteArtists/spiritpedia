@@ -1,0 +1,28 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 1093,
+    "healer_slug": "center-for-mindful-living"
+  },
+  "rows": [
+    {
+      "table": "free_resources",
+      "id": "ec78658c-a7aa-4c62-8378-a270134a6161",
+      "slug": "meditation-dharma-classes",
+      "title": "Meditation & Dharma Classes"
+    },
+    {
+      "table": "free_resources",
+      "id": "b0361b5d-ede1-44c6-8157-4998e8c5fe3b",
+      "slug": "in-person-living-dharma-circle",
+      "title": "In-Person Living Dharma Circle"
+    },
+    {
+      "table": "free_resources",
+      "id": "2e6d3002-b27e-49dc-938b-e1149dbe28eb",
+      "slug": "grupo-de-meditacion",
+      "title": "Grupo de Meditación"
+    }
+  ],
+  "at": "2026-11-09T23:52:02.536Z"
+}

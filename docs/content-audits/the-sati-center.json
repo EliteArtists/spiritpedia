@@ -1,0 +1,137 @@
+{
+  "healer": {
+    "healer_slug": "the-sati-center",
+    "location_source": "https://sati.org/about/",
+    "create": {
+      "name": "The Sati Center",
+      "bio": "Based in Redwood City, California, the Sati Center for Buddhist Studies is a non-profit set up to bring careful study of the Buddha's teachings together with meditation and with service in the wider world. Its outlook is mostly Theravada, though not only that, and it works closely with its neighbour, the Insight Meditation Center, while keeping its own board and programmes. Gil Fronsdal is part of its core faculty, together with a group of lay Dharma teachers and scholars.\n\nIts offerings fall into two strands. One is textual and contemplative: short online series on the Pali suttas, the poems of the early nuns, renunciation and the Pali language, often offered on a donation basis, and a part-time certificate in Theravada Buddhist studies that runs over several years and includes a silent retreat. The other is applied: a year-long introduction to Buddhist chaplaincy, held in person in Redwood City or on Zoom, with eco-chaplaincy and spiritual care training alongside a monthly speaker series for chaplains. Many classes are recorded and shared freely through an online audio archive and a YouTube channel.",
+      "tier": "local_hero",
+      "entity_type": "organisation",
+      "availability": "worldwide",
+      "city": "Redwood City, California",
+      "country": "United States",
+      "subjects": [
+        "meditation",
+        "ancient-wisdom",
+        "mindfulness"
+      ],
+      "website_url": "https://sati.org/",
+      "booking_url": "https://sati.org/online-courses/",
+      "youtube_url": "https://www.youtube.com/@TheSatiCenter",
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "karuna@sati.org",
+      "image_urls": [
+        "https://sati.org/wp-content/uploads/2026/05/cropped-sati-logo-1.png"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [
+    {
+      "title": "To Be More Free, Reflect on Your Finitude (Maranasati) with Nikki Mirghafori",
+      "url": "https://www.youtube.com/watch?v=FKUJNvYL3EA",
+      "subjects": [
+        "meditation",
+        "death-the-afterlife"
+      ],
+      "channel": "The Sati Center"
+    },
+    {
+      "title": "Introduction to Buddhist Chaplaincy",
+      "url": "https://www.youtube.com/watch?v=lkJPpBQDn8Y",
+      "subjects": [
+        "spirituality",
+        "ancient-wisdom"
+      ],
+      "channel": "The Sati Center"
+    }
+  ],
+  "books": [],
+  "courses": [
+    {
+      "title": "Certificate in Theravada Buddhist Studies",
+      "url": "https://sati.org/certificate/theravada/",
+      "description": "A part-time course of study lasting at least three years, built from units on ethics, meditation, the Eightfold Path and the suttas. Students also sit a week-long silent retreat as a practicum. Entry is by application and interview.",
+      "price": "$500-800 per unit",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "ancient-wisdom",
+        "meditation"
+      ],
+      "image": "https://yt3.googleusercontent.com/ZfomxeU8uV3jWvbPYBQZliZdoDscMPfMotpk65TR6_h6xbbXblo9rTFt2e1uYNXq3c70-5HNeA=s900-c-k-c0x00ffffff-no-rj"
+    },
+    {
+      "title": "Introduction to Buddhist Chaplaincy Training",
+      "url": "https://sati.org/chaplaincy/buddhist-chaplaincy/",
+      "description": "A year-long grounding in spiritual care shaped by Buddhist teaching, for people drawn to volunteer or professional chaplaincy. It runs in two separate groups, one in person in Redwood City and one on Zoom.",
+      "price": "$2,000-4,000, on a sliding scale",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "spirituality",
+        "ancient-wisdom"
+      ],
+      "image": "https://yt3.googleusercontent.com/ZfomxeU8uV3jWvbPYBQZliZdoDscMPfMotpk65TR6_h6xbbXblo9rTFt2e1uYNXq3c70-5HNeA=s900-c-k-c0x00ffffff-no-rj"
+    },
+    {
+      "title": "Layers of Renunciation with Kim Allen",
+      "url": "https://sati.org/event/layers-of-renunciation/2027-01-07/",
+      "description": "Three weekly Zoom sessions on nekkhamma, the Pali idea usually translated as renunciation, and what it means for lay practitioners. Sessions mix sutta reading, reflection questions and meditation.",
+      "price": "Dāna (donation)",
+      "product_type": "course",
+      "start_date": "2027-01-07",
+      "end_date": "2027-01-21",
+      "subjects": [
+        "ancient-wisdom",
+        "meditation"
+      ],
+      "image": "https://yt3.googleusercontent.com/ZfomxeU8uV3jWvbPYBQZliZdoDscMPfMotpk65TR6_h6xbbXblo9rTFt2e1uYNXq3c70-5HNeA=s900-c-k-c0x00ffffff-no-rj"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Sati Center Class Recordings",
+      "url": "https://sati.audiodharma.org/",
+      "description": "An audio archive of the centre's past classes, retreats and chaplaincy talks, free to stream. Recent series include sutta study and the poetry of the early Buddhist nuns.",
+      "featured": true,
+      "resource_type": "practice",
+      "subjects": [
+        "ancient-wisdom",
+        "meditation"
+      ],
+      "image": "https://yt3.googleusercontent.com/ZfomxeU8uV3jWvbPYBQZliZdoDscMPfMotpk65TR6_h6xbbXblo9rTFt2e1uYNXq3c70-5HNeA=s900-c-k-c0x00ffffff-no-rj"
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "centre",
+    "rank": 41,
+    "hub": null,
+    "tier_evidence": "YouTube unreadable (consent page, 9 Nov 2026); Facebook not fetched; no other readable counts → 0 readable → local_hero",
+    "email": "yes",
+    "email_source": "https://sati.org/about/",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 9 source(s)",
+    "flags": [
+      "Email karuna@sati.org is published in the privacy policy on the About page as the address for data requests; a centre inbox, not a general enquiries line (bct@sati.org is published on the chaplaincy page for that training). The /contact/ page shows no form.",
+      "No hub links: Nikki Mirghafori's video is on its channel, but neither sati.org pages read nor her own site's home, bio and calendar pages name her as teaching at the Sati Center; teachers file written with an empty list.",
+      "Only image is the centre's logo; no photo of a hall or building was found on the pages read.",
+      "Founded year left null: GuideStar gives incorporation in 1998, but the centre's own pages read do not state it.",
+      "YouTube subscriber count unreadable (consent page, 9 Nov 2026).",
+      "Regional: Redwood City, California (Bay Area peninsula).",
+      "Dry run: with the logo refused, the ingest fell back to the YouTube channel page (youtube_url) and took its avatar (yt3.googleusercontent.com); that avatar was removed from the plan because YouTube channel pages are off limits from this machine, and the plan's image is back to the logo."
+    ],
+    "left_out": [
+      "Therīgāthā course with Gil Fronsdal and Caste, Class, and Liberation series: started before 12 Nov 2026.",
+      "Certificate in Buddhist Spiritual Care, Eco-Chaplaincy and Ordinary Ritual: pages not opened, prices unverified.",
+      "Video FkTZzfkkTEA on the chaplaincy page is from another organisation's channel (NACC)."
+    ],
+    "held": "The ingest's image check could not read sati.org's robots.txt (socket closed: 'robots.txt unreachable (UND_ERR_SOCKET)'), so the centre's own logo was refused and no image is usable; not retried. Owner to decide whether to retry later or accept another image."
+  }
+}

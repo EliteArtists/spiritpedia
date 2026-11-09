@@ -1,0 +1,212 @@
+{
+  "healer": {
+    "healer_slug": "wild-heart-meditation-center",
+    "location_source": "https://www.wildheartmeditationcenter.org/contact",
+    "create": {
+      "name": "Wild Heart Meditation Center",
+      "bio": "Wild Heart Meditation Center is a non-profit Buddhist community in East Nashville, Tennessee, rooted in early Buddhist teaching and the Western insight tradition. Its story starts in 2010, when founding teacher Dave Smith began a weekly beginners' sit at a local dharma centre that sometimes drew nobody at all; the group grew, became a non-profit in 2013 and opened its present centre on Gallatin Pike in 2017. Rev. Mikey Noechel, ordained as a lay dharma teacher by Ven. Pannavati and Ven. Pannadipa, is now guiding teacher and co-director, and Andrew Chapman, his predecessor in that role, still teaches groups, workshops and study courses.\n\nThe name draws on the idea of rewilding: practice as a return of the heart to its natural, unhindered state. Most of what happens is free and drop-in. Silent sits run on weekday mornings, there are evening classes with a guided meditation, a talk and open discussion, and groups for people of colour, LGBTQIA+ practitioners and women. A team of trained facilitators supports the teachers, a sister group meets weekly in Detroit, and longer silent retreats are held at a rented retreat centre. Talks are shared through a podcast and on YouTube.",
+      "tier": "local_hero",
+      "entity_type": "organisation",
+      "founded_year": 2013,
+      "availability": "worldwide",
+      "city": "Nashville, Tennessee",
+      "country": "United States",
+      "subjects": [
+        "meditation",
+        "mindfulness",
+        "spiritual-awakening"
+      ],
+      "website_url": "https://www.wildheartmeditationcenter.org/",
+      "booking_url": "https://www.wildheartmeditationcenter.org/weeklyprogramming",
+      "youtube_url": "https://www.youtube.com/@wildheartnashville",
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "info@wildheartmeditationcenter.org",
+      "image_urls": [
+        "https://images.squarespace-cdn.com/content/v1/6182ee8b83f1f124f9acee35/d7ad8cd6-d607-4e53-8774-f97b2cb5d835/P1051970.jpg",
+        "https://images.squarespace-cdn.com/content/v1/6182ee8b83f1f124f9acee35/925fa5a2-65bf-439b-95e1-53fbd621425b/ATS.finaledits%2B%2812%2Bof%2B18%29.jpg",
+        "https://images.squarespace-cdn.com/content/v1/6182ee8b83f1f124f9acee35/62f682bd-5755-4989-9cbc-e9c92be2928e/P1051912.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "THE UNIFICATION OF MIND Cultivation of Samadhi Silent Meditation Retreat with Mikey Noechel and Andrew Chapman",
+      "url": "https://www.wildheartmeditationcenter.org/events/befriendchange2026-azgg2-tz2zc",
+      "description": "A five-day silent winter retreat with the centre's two senior teachers, devoted to gathering and steadying the mind. As distraction quietens, the teaching turns towards the insight that a collected mind makes possible.",
+      "price": "Contact for pricing",
+      "product_type": "retreat",
+      "start_date": "2027-01-27",
+      "end_date": "2027-01-31",
+      "subjects": [
+        "meditation",
+        "spiritual-awakening"
+      ],
+      "image": "http://static1.squarespace.com/static/6182ee8b83f1f124f9acee35/t/6ad1bb5cbdcf6160773f2905/1792129884583/unimind.png?format=1500w"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Weekly Programming",
+      "url": "https://www.wildheartmeditationcenter.org/weeklyprogramming",
+      "description": "The centre's weekly timetable of drop-in sessions in Nashville and on Zoom: early-morning silent sits, evening classes with meditation, talk and discussion, and affinity groups. No registration is needed for most.",
+      "featured": true,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "http://static1.squarespace.com/static/6182ee8b83f1f124f9acee35/t/6a502f9bdb14522882938d0d/1783639963152/WHMC.png?format=1500w"
+    },
+    {
+      "title": "WHMC Podcast",
+      "url": "https://www.wildheartmeditationcenter.org/podcast",
+      "description": "Recorded talks by Wild Heart's teachers and facilitators, offering down-to-earth Buddhist teaching and instruction for ordinary daily life.",
+      "featured": false,
+      "resource_type": "workshop",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "image": "http://static1.squarespace.com/static/6182ee8b83f1f124f9acee35/t/6a503288ccea7361280b1360/1783640712470/WHMC.png?format=1500w"
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "centre",
+    "rank": 10,
+    "hub": null,
+    "tier_evidence": "YouTube @wildheartnashville (linked from its own site): unreadable (consent page, 9 Nov 2026); Instagram, Facebook and TikTok linked but never fetched → 0 readable → local_hero",
+    "email": "yes",
+    "email_source": "https://www.wildheartmeditationcenter.org/contact",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 9 source(s)",
+    "flags": [
+      "Main YouTube count unreadable (consent page, 9 Nov 2026).",
+      "Email info@wildheartmeditationcenter.org is shown as text on the contact page (centre inbox).",
+      "Founded year 2013 = the non-profit (then Against the Stream Nashville); the first weekly group began in 2010 and the Wild Heart centre opened in 2017. Owner may prefer 2010.",
+      "Duplicate check: our plans for Andrew Chapman and Mikey Noechel use wildheartmeditationcenter.org as their website, so the centre's and the teachers' links overlap.",
+      "Hub links: Rev. Mikey Noechel (guiding teacher and co-director) and Andrew Chapman (former guiding teacher, still facilitating), both on the Our Team page. Devon and Nico Hase (in the lead) are not named on the pages read; JoAnna Hardy is named only as Mikey's trainer at Against the Stream.",
+      "Peer-led recovery meetings (Recovery Dharma) are part of the weekly programme; not listed as an item.",
+      "Regional: Nashville, Tennessee."
+    ],
+    "left_out": [
+      "What Becomes of the Broken Hearted? New Year's Eve retreat (29 Dec 2026 – 2 Jan 2027): framed around heartbreak and pain, with strong language on the page; left out to be safe.",
+      "'A scientific approach to pain' events: condition-named (and past).",
+      "Recovery Dharma group: addiction recovery is on the condition list."
+    ]
+  },
+  "videos": [
+    {
+      "title": "Mindfulness: The Four Applications of Sati with Rev. Mikey Noechel",
+      "url": "https://www.youtube.com/watch?v=CAXfyMC7F70",
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "channel": "Wild Heart Meditation Center"
+    },
+    {
+      "title": "What is Mindfulness? with Rev. Mikey Noechel",
+      "url": "https://www.youtube.com/watch?v=gn7naimFmwc",
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "channel": "Wild Heart Meditation Center"
+    },
+    {
+      "title": "Mindfulness of Death - Maraṇasati - with Rev. Mikey Noechel",
+      "url": "https://www.youtube.com/watch?v=dglmFg-w1CE",
+      "subjects": [
+        "death-the-afterlife",
+        "meditation"
+      ],
+      "channel": "Wild Heart Meditation Center"
+    },
+    {
+      "title": "The Five Spiritual Faculties w/ Rev. Mikey Noechel",
+      "url": "https://www.youtube.com/watch?v=vDAhyGvNrTU",
+      "subjects": [
+        "spirituality",
+        "meditation"
+      ],
+      "channel": "Wild Heart Meditation Center"
+    },
+    {
+      "title": "The Dharma of Happiness w/ Rev. Mikey",
+      "url": "https://www.youtube.com/watch?v=l8Lfybt4YtE",
+      "subjects": [
+        "spirituality",
+        "meditation"
+      ],
+      "channel": "Wild Heart Meditation Center"
+    },
+    {
+      "title": "Self-Compassion with Rev. Mikey Noechel",
+      "url": "https://www.youtube.com/watch?v=mKZ-tgMeQeA",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "channel": "Wild Heart Meditation Center"
+    },
+    {
+      "title": "The Buddha & The Devil with Rev. Mikey",
+      "url": "https://www.youtube.com/watch?v=bxOe4idREAU",
+      "subjects": [
+        "spirituality"
+      ],
+      "channel": "Wild Heart Meditation Center"
+    },
+    {
+      "title": "Your Garden Grows At Midnight w/ Devon and Nico Hase",
+      "url": "https://www.youtube.com/watch?v=HYi1w1wC2Xw",
+      "subjects": [
+        "spirituality",
+        "meditation"
+      ],
+      "channel": "Wild Heart Meditation Center"
+    },
+    {
+      "title": "Buddhist Wisdom with Andrew Chapman",
+      "url": "https://www.youtube.com/watch?v=n4WtHoEUFkc",
+      "subjects": [
+        "spirituality",
+        "meditation"
+      ],
+      "channel": "Wild Heart Meditation Center"
+    },
+    {
+      "title": "The Parami of Equanimity with Andrew Chapman",
+      "url": "https://www.youtube.com/watch?v=fw4x-oR_AcE",
+      "subjects": [
+        "spirituality",
+        "meditation"
+      ],
+      "channel": "Wild Heart Meditation Center"
+    },
+    {
+      "title": "The Parami of Truthfulness with Andrew Chapman",
+      "url": "https://www.youtube.com/watch?v=No4skMF2SjY",
+      "subjects": [
+        "spirituality"
+      ],
+      "channel": "Wild Heart Meditation Center"
+    },
+    {
+      "title": "Two Kinds of Thought w/ Andrew Chapman",
+      "url": "https://www.youtube.com/watch?v=qX2mYHGBNOU",
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "channel": "Wild Heart Meditation Center"
+    }
+  ],
+  "images_final": true
+}

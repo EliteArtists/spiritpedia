@@ -1,0 +1,123 @@
+{
+  "healer": {
+    "healer_slug": "open",
+    "location_source": "https://o-p-e-n.com/breathwork",
+    "create": {
+      "name": "Open",
+      "bio": "Open is a mindfulness studio and app from Los Angeles that blends breathwork, guided meditation, movement and sound, usually set to music. Co-founded by the meditation teacher Manoj Dias, it sets out to make practice feel social and sensory rather than silent and solemn, drawing on older contemplative traditions alongside new technology. Its teachers come from mindfulness, yoga and breathwork backgrounds in several countries.\n\nClasses follow three main formats. Meditate pairs a guided sit with light breathing and music; Move adds a flowing, yoga-based sequence treated as moving meditation; and Breathe is a longer, immersive breathwork session. Sessions run from five minutes to an hour and are streamed live or on demand through the iOS app and a web app, with a subscription giving access to the full digital library. In person, Open runs a flagship studio by Venice Beach, where classes are booked with credits and the timetable centres on its signature Move classes. The site also carries a blog with introductory articles on breathwork and meditation written by its teachers.",
+      "tier": "local_hero",
+      "entity_type": "app",
+      "availability": "worldwide",
+      "city": "Los Angeles, California",
+      "country": "United States",
+      "subjects": [
+        "breathwork",
+        "meditation",
+        "mindfulness"
+      ],
+      "website_url": "https://o-p-e-n.com/",
+      "booking_url": "https://o-p-e-n.com/in-person",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "support@o-p-e-n.com",
+      "image_urls": [
+        "https://open-together.imgix.net/classes/breathe/Link_Preview_Web-Home.png"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [
+    {
+      "title": "How to Meditate w/ Manoj Dias",
+      "url": "https://www.youtube.com/watch?v=JjGjywCrTxY",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "channel": "Open"
+    },
+    {
+      "title": "Still Together w/ Yung Pueblo + Manoj Dias",
+      "url": "https://www.youtube.com/watch?v=1SzRQFtNnFY",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "channel": "Open"
+    }
+  ],
+  "books": [],
+  "courses": [
+    {
+      "title": "Open Subscription",
+      "url": "https://o-p-e-n.com/all",
+      "description": "Access to all of Open's digital classes in the app and on the web, live and on demand, from short breathing sessions to hour-long classes. Renews monthly or yearly and can be cancelled at any time.",
+      "price": "$20 USD/month or $150 USD/year",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "breathwork",
+        "meditation"
+      ],
+      "image": "https://open-together.imgix.net/classes/breathe/Link_Preview_Web-Home.png"
+    },
+    {
+      "title": "In-Person Class Credits (Venice studio)",
+      "url": "https://o-p-e-n.com/in-person/credits?step=credit-pack",
+      "description": "Credits for classes at Open's studio in Venice, Los Angeles, where the timetable centres on its Move formats of breathwork, music and mindful movement. Single credits, an intro pack and recurring memberships are offered.",
+      "price": "$36 per single credit",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "breathwork",
+        "yoga",
+        "meditation"
+      ],
+      "image": "https://open-together.imgix.net/classes/breathe/Link_Preview_Web-Home.png"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Breathwork for Beginners",
+      "url": "https://o-p-e-n.com/blog/breathwork-for-beginners",
+      "description": "An introductory article by Manoj Dias on what breathwork is and how to begin, with simple techniques to try at home.",
+      "featured": true,
+      "resource_type": "practice",
+      "subjects": [
+        "breathwork"
+      ],
+      "image": "https://open-together.imgix.net/articles/a1369627-9d27-4475-b12d-4be59ae92309/heroabfb1700-37e2-11ee-9c2a-61ea56822ea9.jpeg"
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "app",
+    "rank": 53,
+    "hub": null,
+    "tier_evidence": "No readable follower counts (Instagram not fetched; YouTube unreadable, consent page, 9 Nov 2026) → 0 → local_hero.",
+    "email": "yes",
+    "email_source": "https://o-p-e-n.com/",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 7 source(s)",
+    "flags": [
+      "Founders or teachers already on Spiritpedia: Manoj Dias (Open co-founder; the site quotes him as such on /meditation). Yung Pueblo appears in one video.",
+      "Email support@o-p-e-n.com is a brand support inbox (home page footer and FAQ); venice@o-p-e-n.com for the studio.",
+      "Health rule: Open's breathwork and meditation pages and the beginners article make strong health claims (stress, anxiety, sleep, blood pressure, chronic pain); none is repeated in the bio or items. The free-resource article itself contains such claims; owner may prefer to drop it.",
+      "Both videos are from Open's channel (@openeveryday per oEmbed) and are already in Manoj Dias's plan; the ingest may skip them as already in.",
+      "Image is Open's share image (brand wordmark over a black-and-white photo).",
+      "In-person studio offers Hot+Cold sessions (sauna/cold plunge); not listed.",
+      "youtube_url left null: no YouTube link on the pages read."
+    ],
+    "left_out": [
+      "'Guided Meditation for Sleep w/ Manoj Dias' video: sleep framing.",
+      "Hot+Cold sessions: not a spiritual practice.",
+      "Free trial: not a resource."
+    ]
+  },
+  "images_final": true
+}

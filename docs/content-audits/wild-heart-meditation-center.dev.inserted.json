@@ -1,0 +1,28 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 1092,
+    "healer_slug": "wild-heart-meditation-center"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "8b76e58a-d0d8-47d5-8197-17cf91ed4d1f",
+      "slug": "the-unification-of-mind-cultivation-of-samadhi-silent-meditation-retreat-with-mikey-noechel-and-andrew-chapman",
+      "title": "THE UNIFICATION OF MIND Cultivation of Samadhi Silent Meditation Retreat with Mikey Noechel and Andrew Chapman"
+    },
+    {
+      "table": "free_resources",
+      "id": "d1581900-62e9-439e-a3ff-aaf1a22cb0b5",
+      "slug": "weekly-programming",
+      "title": "Weekly Programming"
+    },
+    {
+      "table": "free_resources",
+      "id": "db7ebdf7-a907-4f3d-9b0f-d027d4748c64",
+      "slug": "whmc-podcast",
+      "title": "WHMC Podcast"
+    }
+  ],
+  "at": "2026-11-09T23:51:58.502Z"
+}

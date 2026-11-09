@@ -1,0 +1,34 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 1095,
+    "healer_slug": "insight-meditation-community-of-washington"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "da56710c-742c-4278-be44-5ed3b7b4ff65",
+      "slug": "meditation-retreats",
+      "title": "Meditation Retreats"
+    },
+    {
+      "table": "free_resources",
+      "id": "a978e58a-a3a8-4d9f-b13f-0e3eb720cfdc",
+      "slug": "drop-in-classes",
+      "title": "Drop-in Classes"
+    },
+    {
+      "table": "free_resources",
+      "id": "3e6a6a7e-e124-430e-9655-24acb9f92968",
+      "slug": "talks-3",
+      "title": "Talks"
+    },
+    {
+      "table": "free_resources",
+      "id": "a814f3e1-9b88-420d-a0ba-9251016f0cff",
+      "slug": "learn-to-meditate-3",
+      "title": "Learn to Meditate"
+    }
+  ],
+  "at": "2026-11-09T23:52:14.218Z"
+}

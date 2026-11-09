@@ -1,0 +1,22 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 1071,
+    "healer_slug": "charlotte-buddhist-vihara"
+  },
+  "rows": [
+    {
+      "table": "free_resources",
+      "id": "12c8522a-e6f1-468d-9a08-1078f05da862",
+      "slug": "meditate-with-a-monk-weekly-talks-and-meditation",
+      "title": "Meditate with a Monk: weekly talks and meditation"
+    },
+    {
+      "table": "free_resources",
+      "id": "947586ac-34d4-4304-b15a-cf351fa39d1b",
+      "slug": "talks-chants",
+      "title": "Talks & Chants"
+    }
+  ],
+  "at": "2026-11-09T23:43:02.355Z"
+}

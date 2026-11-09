@@ -1,0 +1,169 @@
+{
+  "healer": {
+    "healer_slug": "charlotte-buddhist-vihara",
+    "location_source": "https://www.charlottebuddhistvihara.org/",
+    "create": {
+      "name": "Charlotte Buddhist Vihara",
+      "bio": "Charlotte Buddhist Vihara is a small Theravada monastic residence and meditation house in north-east Charlotte, North Carolina, opened in 2013 and kept going by its lay community so that ordained Buddhist women can live and teach in the city. Its resident teacher, Ayya Sudhamma, grew up in Charlotte and practised law before going forth in 1998; she took novice vows with Bhante Gunaratana at the Bhavana Society, received full bhikkhuni ordination in Sri Lanka in 2003 and spent eight and a half years as resident monastic at a vihara in Greenville, South Carolina, before coming home. The vihara exists to house and support its monastics, who in turn offer the teaching freely.\n\nThree times a week the nuns lead a talk and sitting session open to people of any religion or none, with no attempt to convert anyone; sessions are announced through the group's Meetup page. Alongside meditation instruction they teach Buddhist scripture, ethics and history, offer one-to-one spiritual guidance, and hold traditional South-east Asian observances such as full-moon days, Vesak and the Kathina robe offering. Everything is given without charge and the community lives on dana. Recorded talks and Pali chants are shared on the website and on its YouTube channel.",
+      "tier": "local_hero",
+      "entity_type": "organisation",
+      "founded_year": 2013,
+      "availability": "worldwide",
+      "city": "Charlotte, North Carolina",
+      "country": "United States",
+      "subjects": [
+        "meditation",
+        "mindfulness",
+        "ancient-wisdom"
+      ],
+      "website_url": "https://www.charlottebuddhistvihara.org/",
+      "booking_url": "https://www.charlottebuddhistvihara.org/",
+      "youtube_url": "https://www.youtube.com/channel/UC47G0uXaoGzshTT6B3ADPig",
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": null,
+      "image_urls": [
+        "https://www.charlottebuddhistvihara.org/wp-content/uploads/10498220_668165439928412_2180189007231646299_o.jpg",
+        "https://www.charlottebuddhistvihara.org/wp-content/uploads/PXL_20240303_115340629.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [
+    {
+      "title": "Guided Meditation on the 32 Parts of the Body",
+      "url": "https://www.youtube.com/watch?v=-ou3vVZWhFk",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "channel": "Charlotte Buddhist Vihara"
+    },
+    {
+      "title": "The Quickest Way to See Impermanence with Ayya Sudhamma",
+      "url": "https://www.youtube.com/watch?v=hK_FrYFCczo",
+      "subjects": [
+        "meditation",
+        "ancient-wisdom"
+      ],
+      "channel": "Charlotte Buddhist Vihara"
+    },
+    {
+      "title": "Meditation isn't Buddhism",
+      "url": "https://www.youtube.com/watch?v=iFkiTi9aEDU",
+      "subjects": [
+        "meditation",
+        "ancient-wisdom"
+      ],
+      "channel": "Charlotte Buddhist Vihara"
+    },
+    {
+      "title": "Enlightenment not Self-Improvement",
+      "url": "https://www.youtube.com/watch?v=rVxMyK3vn7s",
+      "subjects": [
+        "spiritual-awakening",
+        "meditation"
+      ],
+      "channel": "Charlotte Buddhist Vihara"
+    },
+    {
+      "title": "The Eight Worldly Conditions with Ayya Sudhamma",
+      "url": "https://www.youtube.com/watch?v=AKWNOLtt7k0",
+      "subjects": [
+        "ancient-wisdom",
+        "mindfulness"
+      ],
+      "channel": "Charlotte Buddhist Vihara"
+    },
+    {
+      "title": "The Five Spiritual Faculties with Ayya Suvijjana & Ayya Sudhamma",
+      "url": "https://www.youtube.com/watch?v=Tf21sqMV1SQ",
+      "subjects": [
+        "meditation",
+        "ancient-wisdom"
+      ],
+      "channel": "Charlotte Buddhist Vihara"
+    },
+    {
+      "title": "A Refuge for Our Heart with Ayya Sudhamma",
+      "url": "https://www.youtube.com/watch?v=m8iiHCUCBWw",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "channel": "Charlotte Buddhist Vihara"
+    },
+    {
+      "title": "Part 1: Kisa Gotami- Her Story by Ayya Sudhamma-Therigatha Festival",
+      "url": "https://www.youtube.com/watch?v=ULtlD3-Ea9k",
+      "subjects": [
+        "ancient-wisdom"
+      ],
+      "channel": "Charlotte Buddhist Vihara"
+    },
+    {
+      "title": "Part 2: Kisa Gotami - Her Poem by Ayya Sudhamma - Therigatha Festival",
+      "url": "https://www.youtube.com/watch?v=KJYhPilZ2bs",
+      "subjects": [
+        "ancient-wisdom"
+      ],
+      "channel": "Charlotte Buddhist Vihara"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [
+    {
+      "title": "Meditate with a Monk: weekly talks and meditation",
+      "url": "https://www.charlottebuddhistvihara.org/",
+      "description": "Three free sessions each week, on Tuesday and Thursday evenings and Saturday afternoon, each pairing a Dharma talk with sitting practice led by the resident nuns. Booking is through the vihara's Meetup group.",
+      "featured": true,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://www.charlottebuddhistvihara.org/wp-content/uploads/DSC_6238.jpg"
+    },
+    {
+      "title": "Talks & Chants",
+      "url": "https://www.charlottebuddhistvihara.org/audio-talks-and-chants/",
+      "description": "Audio recordings from the vihara: Pali chants honouring the early arahant nuns, with printed words, and recorded talks by Ayya Sudhamma on the Eightfold Path and the Sutta Nipata.",
+      "featured": false,
+      "resource_type": "practice",
+      "subjects": [
+        "ancient-wisdom",
+        "meditation"
+      ],
+      "image": "https://www.charlottebuddhistvihara.org/wp-content/uploads/10498220_668165439928412_2180189007231646299_o.jpg"
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "centre",
+    "rank": 25,
+    "hub": null,
+    "tier_evidence": "YouTube unreadable (consent page, 9 Nov 2026); Instagram/Facebook not fetched; no readable counts → local_hero",
+    "email": "contact form",
+    "email_source": null,
+    "contact_form_url": "https://www.charlottebuddhistvihara.org/contact-us/",
+    "bio_check": "OK: no 8-word runs against 8 source(s)",
+    "flags": [
+      "robots.txt sets Crawl-delay: 60; I fetched one page or image per 61 seconds. The ingest dry run was NOT run for this plan because the ingest does not honour Crawl-delay and would request several pages and images from this host within seconds; run it later with that in mind, or with the owner's agreement.",
+      "Overlap: Ayya Sudhamma's own Spiritpedia listing uses charlottebuddhistvihara.org as her website; all videos are from our ayya-sudhamma plan (oEmbed author 'Charlotte Buddhist Vihara') and are already on dev under her. The vihara is a separate community-supported organisation, so listed, but owner may prefer to keep only her listing.",
+      "Thin: no paid offerings; weekly sessions are booked on Meetup (not fetched), so only 2 free resources on its own site plus 9 videos.",
+      "No email published; contact form only. The Contact page says many meetings take place at a private residence.",
+      "The Our Mission page mentions counselling for anxious young adults, healing rituals and letting go of stress and grief; none of that is used in the bio or items.",
+      "Regional: Charlotte, North Carolina.",
+      "Hub link: ayya-sudhamma as instructor (Residents page names her as resident bhikkhuni)."
+    ],
+    "left_out": [
+      "Spiritual counselling, healing rituals and funeral services (Our Mission page): health/therapy framing or ceremonies, not listed.",
+      "Kathina and Vesak announcements: past dated events.",
+      "Videos 'Guilt, Shame, and the V.O.M', 'Over Cooked Rice Crust? Gossip?' and 'The Fable of the Old Weaver- A Dhamma Talk for Difficult Times': kept the list to the clearest teaching titles."
+    ]
+  },
+  "images_final": true
+}

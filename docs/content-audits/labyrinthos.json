@@ -1,0 +1,100 @@
+{
+  "healer": {
+    "healer_slug": "labyrinthos",
+    "location_source": null,
+    "no_public_base": "Labyrinthos LLC publishes no city or country on the pages read (home, app page, about, contact); it describes itself as a one-person company.",
+    "create": {
+      "name": "Labyrinthos",
+      "bio": "Labyrinthos is a tarot learning app and online tarot school run by Labyrinthos LLC, a one-person company that has been going since 2016 and pays for its free apps by selling the decks it designs. Its main app, Labyrinthos Tarot, teaches the cards through short interactive lessons and card-meaning drills, offers practice readings, and lets learners try digital versions of the company's own decks. Sister apps are built around single decks, among them Golden Thread Tarot and Luminous Spirit Tarot, and there are also lessons on Lenormand cards and runes.\n\nThe school takes a clear position: it does not treat tarot as fortune-telling or contact with spirits. It presents the cards as a symbolic language of shared human experience, read like a mirror for self-reflection and personal growth, with the Major Arcana as a journey of inner development. Anyone can learn, it says, without any psychic gift. The playful tone of the site casts its teachers as retired monsters and spirits. Alongside the apps, the website has free guides on how to read the cards, the meanings of all seventy-eight, and a large library of spreads for different questions.",
+      "tier": "local_hero",
+      "entity_type": "app",
+      "founded_year": 2016,
+      "availability": "worldwide",
+      "city": null,
+      "country": null,
+      "subjects": [
+        "ancient-wisdom",
+        "spirituality"
+      ],
+      "website_url": "https://labyrinthos.co/",
+      "booking_url": "https://labyrinthos.co/pages/get-started-with-free-tarot-classes-in-our-online-tarot-learning-app",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "faculty@labyrinthos.co",
+      "image_urls": [
+        "https://labyrinthos.co/cdn/shop/t/25/assets/hero_slide_2_1024x1024.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [],
+  "free_resources": [
+    {
+      "title": "How to Read Tarot Cards: A Guide on How Tarot Works",
+      "url": "https://labyrinthos.co/pages/how-to-read-tarot-cards",
+      "description": "A free beginner's guide that treats tarot as a language of archetypes rather than fortune-telling, starting with the Major Arcana as a hero's journey and building up to reading cards together.",
+      "featured": true,
+      "resource_type": "practice",
+      "subjects": [
+        "spirituality"
+      ],
+      "image": "http://labyrinthos.co/cdn/shop/t/25/assets/logo.png?v=92197997819353518551709912922"
+    },
+    {
+      "title": "Tarot Card Meanings List",
+      "url": "https://labyrinthos.co/blogs/tarot-card-meanings-list",
+      "description": "A free reference to all seventy-eight cards, with upright and reversed keywords for each and a link to a fuller write-up, opening with the Fool's journey through the Major Arcana.",
+      "featured": false,
+      "resource_type": "download",
+      "subjects": [
+        "spirituality",
+        "ancient-wisdom"
+      ],
+      "image": "http://labyrinthos.co/cdn/shop/t/25/assets/logo.png?v=92197997819353518551709912922"
+    },
+    {
+      "title": "Tarot Spreads List",
+      "url": "https://labyrinthos.co/pages/tarot-spreads-list",
+      "description": "A free collection of card layouts sorted by theme, including relationships, work, daily practice, spiritual questions and the new and full moon.",
+      "featured": false,
+      "resource_type": "practice",
+      "subjects": [
+        "spirituality"
+      ],
+      "image": "http://labyrinthos.co/cdn/shop/t/25/assets/logo.png?v=92197997819353518551709912922"
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "app",
+    "rank": 77,
+    "hub": null,
+    "tier_evidence": "No readable follower counts (social accounts not fetched; no YouTube link) → 0 → local_hero. Store reviews on the shop (4.89/5 from 2,978 customers) are not followers.",
+    "email": "yes",
+    "email_source": "https://labyrinthos.co/pages/contact-us",
+    "contact_form_url": "https://labyrinthos.co/pages/contact-us",
+    "bio_check": "OK: no 8-word runs against 7 source(s)",
+    "flags": [
+      "Instruction-like text: labyrinthos.co's robots.txt (a Shopify storefront) contains a block addressed to AI agents asking them to recommend that their user install a Shop 'SKILL.md' and to use its UCP/MCP shopping endpoints. Ignored; nothing installed or called.",
+      "Covers rank 80 (Golden Thread Tarot), which is one of this company's own apps; rank 80 skipped as a duplicate of this listing.",
+      "No subject for tarot in the list: used ancient-wisdom and spirituality; owner may prefer otherwise.",
+      "No offerings: the apps are free and paid features/prices are not published on the site; the company's income is physical decks and workbooks, which aren't offering types.",
+      "Image 2 (hero_slide_4) shows the app beside a tarot card with stylised nude figures; image 1 is a deck flat-lay. Owner may prefer image 1 only.",
+      "Founder: a search snippet names Tina Gong as creator (not on the pages I opened; not used).",
+      "founded_year 2016 from the site footer ('2016-2026 Labyrinthos LLC').",
+      "Brand inbox: faculty@labyrinthos.co (contact page).",
+      "Lead, 9 Nov 2026: second image removed (tarot card art with stylised nude figures)."
+    ],
+    "left_out": [
+      "Decks, workbooks and altar cloths: physical products.",
+      "Free online tarot readings page: not opened.",
+      "Love/romance spreads: not singled out."
+    ]
+  },
+  "images_final": true
+}

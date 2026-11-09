@@ -1,0 +1,127 @@
+{
+  "healer": {
+    "healer_slug": "sangha-live",
+    "location_source": null,
+    "no_public_base": "Sangha Live is an online-only community; its site, contact page and privacy notice (legal entity Sangha Live, Inc.) publish no town, country or office address, and its sessions are timed for Europe and North America alike. Left empty rather than guessed.",
+    "create": {
+      "name": "Sangha Live",
+      "bio": "Sangha Live is an online Buddhist meditation community that meets entirely on the internet, bringing people together from many countries with teachers drawn mostly from the insight (vipassana) world and related traditions. It describes itself as the largest Dharma practice group of its kind online, and its roster of past and present teachers runs to well over a hundred names, from senior figures such as Joseph Goldstein, Tara Brach and Jack Kornfield to a younger generation of insight teachers in Europe and the Americas.\n\nThe rhythm is simple. Each weekday morning, European time, there is an hour of live practice with guided meditation and a short teaching, led for a week at a time by one teacher around a theme. On Sundays a ninety-minute session brings a different teacher with a talk and questions. Both are free and supported by donations. Monthly three-hour Days of Practice go deeper, with long sits, on a sliding scale. There are also live multi-week courses, self-paced short courses and a free library of more than a thousand hours of recorded sessions, plus an online space where members can share between sits.",
+      "tier": "local_hero",
+      "entity_type": "organisation",
+      "founded_year": null,
+      "availability": "worldwide",
+      "city": null,
+      "country": null,
+      "subjects": [
+        "meditation",
+        "mindfulness",
+        "spiritual-awakening"
+      ],
+      "website_url": "https://sangha.live/",
+      "booking_url": "https://sangha.live/our-offerings/",
+      "youtube_url": "https://www.youtube.com/channel/UCp4HZqoHkTXALLD354TVciA",
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "info@sangha.live",
+      "image_urls": [
+        "https://sangha.live/wp-content/uploads/2021/06/cropped-logo-horizontal-red-300x300.png",
+        "https://sangha.live/wp-content/uploads/2026/11/reconnecting-meditation.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Day of Practice with Peace Twesigye – November 21 2026",
+      "url": "https://sangha.live/free_live/day-of-practice-with-peace-twesigye-november-21-2026/",
+      "description": "A live three-hour online session with Insight Dialogue teacher Peace Twesigye on receptive awareness: longer sits, movement and relational practice, a teaching on wise attention and time for questions. A replay is sent to everyone registered.",
+      "price": "Sliding scale, suggested rate $35",
+      "product_type": "course",
+      "start_date": "2026-11-21",
+      "end_date": "2026-11-21",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://sangha.live/wp-content/uploads/2025/08/Peace-Twesigye1756572720.jpg"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Daily Meditation",
+      "url": "https://sangha.live/daily-meditation/",
+      "description": "An hour of live online practice every weekday morning (European time), each week led by a different teacher around a theme, with guided meditation, a short teaching and live chat. Past sessions can be replayed from the same page. Free, with donations welcome.",
+      "featured": true,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://sangha.live/wp-content/uploads/2020/01/ulla-koenig-2025-500x500.jpeg"
+    },
+    {
+      "title": "Our Offerings",
+      "url": "https://sangha.live/our-offerings/",
+      "description": "Sangha Live's overview of its programme: the free Sunday Sangha talks and weekday sits, sliding-scale Days of Practice, live and on-demand courses, a free Dharma Library of recorded sessions and its members' community space.",
+      "featured": false,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "image": "https://sangha.live/wp-content/uploads/2021/06/cropped-logo-horizontal-red-300x300.png"
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "centre",
+    "rank": 17,
+    "hub": null,
+    "tier_evidence": "YouTube channel UCp4HZqoHkTXALLD354TVciA (linked from its own site): unreadable (consent page, 9 Nov 2026); other accounts not fetched → 0 readable → local_hero",
+    "email": "yes",
+    "email_source": "https://sangha.live/privacy-policy-2/",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 8 source(s)",
+    "flags": [
+      "Main YouTube count unreadable (consent page, 9 Nov 2026).",
+      "Possible editorial-stature override: a large online insight community with many leading teachers; owner to decide.",
+      "No public base: online only, no town or country published (no_public_base set). Not a regional pick-up.",
+      "Domain sangha.live taken from our own plans (Bart van Melik, James Baraz, Pascal Auclair and others link to it); the site names Sangha Live throughout.",
+      "Email info@sangha.live is published on the privacy notice and on event pages; the contact page also offers a form.",
+      "Founded year left null: no founding date found on the pages read.",
+      "Hub links: 34 of our teachers appear on its Dharma Teachers page (the list of teachers who teach on Sangha Live), including James Baraz and Bart van Melik from the lead. All are linked as instructors; owner may prefer to trim to recent teachers.",
+      "Only 2 videos (from our plans; both already on dev under James Baraz and Bart van Melik).",
+      "Photo: its logo (300 px, just at the ingest minimum) and its November 2026 theme image (stock-style hands); no photo of people or place exists for an online-only community.",
+      "Home page shows a stale 'SUMMERPRACTICE' discount banner; not used."
+    ],
+    "left_out": [
+      "Short and Deep Dharma courses: prices not read; several are framed around anxiety or stress.",
+      "Sunday Sangha sessions: covered by the Our Offerings page rather than listed one by one.",
+      "Sangha Live Connect: a members' platform, not opened."
+    ]
+  },
+  "videos": [
+    {
+      "title": "Equanimity: Finding Balance in Uncertain Times - Sunday Sangha w/ James Baraz",
+      "url": "https://www.youtube.com/watch?v=Y_RZGwDTVs4",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "channel": "Sangha Live • Meditation"
+    },
+    {
+      "title": "Trusting Impermanence - Sunday Sangha w/ Bart van Melik",
+      "url": "https://www.youtube.com/watch?v=3cpYdPEA3mA",
+      "subjects": [
+        "meditation",
+        "spiritual-awakening"
+      ],
+      "channel": "Sangha Live • Meditation"
+    }
+  ],
+  "images_final": true
+}

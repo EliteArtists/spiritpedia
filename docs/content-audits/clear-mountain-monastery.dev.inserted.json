@@ -1,0 +1,34 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 1089,
+    "healer_slug": "clear-mountain-monastery"
+  },
+  "rows": [
+    {
+      "table": "free_resources",
+      "id": "06b6d7cf-745b-4390-8f35-14dd321c964f",
+      "slug": "mission-majjhima-sunday-evening-sutta-teaching-discussion-youtube-zoom",
+      "title": "Mission Majjhima! – Sunday Evening Sutta Teaching & Discussion (YouTube & Zoom)"
+    },
+    {
+      "table": "free_resources",
+      "id": "736b8f7f-de5f-4330-90b4-4cfae06d5ce0",
+      "slug": "wednesday-evening-online-teaching-discussion-youtube-zoom",
+      "title": "Wednesday Evening Online Teaching & Discussion (YouTube & Zoom)"
+    },
+    {
+      "table": "free_resources",
+      "id": "e57ad50f-0488-4315-9dcb-15df818e4511",
+      "slug": "morning-late-afternoon-daily-zoom-meditations-silent",
+      "title": "Morning & Late Afternoon Daily Zoom Meditations (Silent)"
+    },
+    {
+      "table": "free_resources",
+      "id": "e2971012-c853-4702-aeb8-34f05da8d212",
+      "slug": "saturday-morning-meditation-teaching-coffee-social-online-in-person",
+      "title": "Saturday Morning Meditation, Teaching, & Coffee Social (Online & In-Person)"
+    }
+  ],
+  "at": "2026-11-09T23:49:45.539Z"
+}

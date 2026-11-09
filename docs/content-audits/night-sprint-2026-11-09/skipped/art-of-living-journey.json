@@ -1,0 +1,5 @@
+{
+  "name": "Art of Living Journey",
+  "rank": 72,
+  "reason": "Own site serves us nothing: www.artofliving.org returns 404 from CloudFront/nginx for every request we made, including robots.txt, the home page and the app page found in search (/us-en/art-living-app-iphone); treated as a refusal, not retried under any other identity, and nothing else fetched. No own-site source for bio, pricing, contact or image. Founder Gurudev Sri Sri Ravi Shankar is not on Spiritpedia."
+}

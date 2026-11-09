@@ -1,0 +1,102 @@
+{
+  "healer": {
+    "healer_slug": "pray-as-you-go",
+    "location_source": "https://prayasyougo.org/contact",
+    "no_public_base": "Only the country is published: Pray As You Go is run by Jesuits in Britain, a charity registered in England and Wales and in Scotland (site footer); no city is given on the pages read.",
+    "create": {
+      "name": "Pray As You Go",
+      "bio": "Pray As You Go is a free daily audio prayer app run by the Jesuits in Britain. It began in 2006 as a podcast made by Fr Peter Scally SJ, a British Jesuit, as a Lent experiment to give commuters a short time of reflection; it spread far beyond Britain, and the app followed in 2014. Versions are now produced in many other languages by partner teams.\n\nEach day brings a new session of around ten to thirteen minutes that sets a passage of Scripture between pieces of music, from chant and choral works to contemporary songs, with a few questions to ponder. It is meant as a framework for the listener's own prayer, not a sermon or Bible study. The approach comes from the Spiritual Exercises of St Ignatius of Loyola: praying with the imagination by placing yourself inside a Gospel scene, and looking back over the day to notice where God was present. Beyond the daily prayer there are guided Examens, imaginative contemplations, Lectio Divina guides, retreat paths of several sessions, prayers for children and families, and prayers in British Sign Language. Everything is free and funded by donations.",
+      "tier": "local_hero",
+      "entity_type": "app",
+      "founded_year": 2006,
+      "availability": "worldwide",
+      "city": null,
+      "country": "United Kingdom",
+      "subjects": [
+        "meditation",
+        "mysticism",
+        "spirituality"
+      ],
+      "website_url": "https://prayasyougo.org/",
+      "booking_url": "https://prayasyougo.org/",
+      "youtube_url": "https://www.youtube.com/@PrayAsYouGo-official",
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": null,
+      "image_urls": [
+        "https://prayasyougo.org/icon.png",
+        "https://prayasyougo.org/images/phone-mockup.png"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [],
+  "free_resources": [
+    {
+      "title": "Imaginative Contemplation Exercises",
+      "url": "https://prayasyougo.org/series/imaginative-contemplation-exercises-9",
+      "description": "Nine free audio sessions of fifteen to eighteen minutes, each guiding the listener into a Gospel scene, such as the Upper Room or Jesus walking on the water, to meet Christ there through the imagination in the Ignatian way.",
+      "featured": true,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation",
+        "mysticism"
+      ],
+      "image": "https://prayasyougo.org/cdn-cgi/image/width=1200,height=630,quality=95,fit=crop,gravity=center/https://cdn.prayasyougo.org/series/images/633993da-4982-4758-b8e2-8bad667dd4ba.jpg"
+    },
+    {
+      "title": "How to Pray with Lectio Divina",
+      "url": "https://prayasyougo.org/series/how-to-pray-with-lectio-divina-8",
+      "description": "Two short free audio tracks: an explanation of Lectio Divina, the slow, prayerful reading of Scripture, followed by a guided session that leads you through it.",
+      "featured": false,
+      "resource_type": "practice",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "image": "https://prayasyougo.org/cdn-cgi/image/width=1200,height=630,quality=95,fit=crop,gravity=center/https://cdn.prayasyougo.org/series/images/0d50a956-b59a-4cd4-976d-96a0b9b9db92.jpg"
+    },
+    {
+      "title": "Examens",
+      "url": "https://prayasyougo.org/category/examens-19",
+      "description": "A free collection of guided Examens, the Ignatian review of the day or week, including versions for young people and themed reviews, for noticing where God has been at work in daily life.",
+      "featured": false,
+      "resource_type": "practice",
+      "subjects": [
+        "spirituality",
+        "meditation"
+      ],
+      "image": "https://prayasyougo.org/opengraph-image.jpg"
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "app",
+    "rank": 69,
+    "hub": null,
+    "tier_evidence": "No readable follower counts (social accounts not fetched; YouTube unreadable, consent page, 9 Nov 2026) → 0 → local_hero. Published figures elsewhere (jesuit.org.uk headline in a search result, not opened): 'a global community of over half a million'.",
+    "email": "contact form",
+    "email_source": null,
+    "contact_form_url": "https://prayasyougo.org/contact",
+    "bio_check": "OK: no 8-word runs against 6 source(s)",
+    "flags": [
+      "possible override by published user numbers (search result: over half a million users; not on the pages I opened).",
+      "No email published: the contact page has a form only (the address shown is a placeholder, john@email.com).",
+      "Christian (Ignatian) prayer app: subjects meditation, mysticism, spirituality, as there is no Christian-prayer subject.",
+      "Health rule: the site has a 'Mental Health' category, prayers 'for anxious days' and an Examen called 'The Gift of Sleep'; none used.",
+      "No offerings: everything is free (donations only). No video IDs on the site; youtube_url from the footer link, not opened.",
+      "Base: country only (United Kingdom), from the charity registration in the footer."
+    ],
+    "left_out": [
+      "Mental Health category and 'Mental Health Awareness Exercises' series: health rule.",
+      "The Gift of Sleep examen: health rule.",
+      "Daily prayer pages: dated, change each day.",
+      "Donations: not an offering."
+    ]
+  },
+  "images_final": true
+}

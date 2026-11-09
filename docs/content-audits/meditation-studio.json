@@ -1,0 +1,90 @@
+{
+  "healer": {
+    "healer_slug": "meditation-studio",
+    "location_source": "https://meditationstudioapp.com/terms",
+    "create": {
+      "name": "Meditation Studio",
+      "bio": "Meditation Studio is a guided meditation app started by Cyd Crouse and Patricia Karpas, who set out to make meditation easy to begin. In 2018 they sold it to Interaxon, the Toronto company behind the Muse headband, which runs it today. Karpas continues as head of content and co-hosts the app's weekly podcast, Untangle, with Interaxon's Ariel Garten.\n\nThe library is built from recordings by roughly seventy teachers of mindfulness, yoga and contemplative practice, among them Mark Coleman, Hugh Byrne, Susan Piver, Elisha Goldstein, Chrissy Carter and Koshin Paley Ellison. Listeners can follow step-by-step courses, such as a ten-session starter series, a twenty-part grounding in mindfulness and a deeper practice track, or browse themed collections on compassion, gratitude, joy, focus, mantra, Zen and sound bowls. There is also an unguided timer that can be paired with music. Most of the catalogue sits behind a subscription bought inside the app on Apple or Android devices, and the podcast, which mixes interviews with short guided practices on Meditation Mondays, is free to all.",
+      "tier": "local_hero",
+      "entity_type": "app",
+      "availability": "worldwide",
+      "city": "Toronto, Ontario",
+      "country": "Canada",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "website_url": "https://meditationstudioapp.com/",
+      "booking_url": "https://meditationstudioapp.com/courses",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "support@meditationstudioapp.com",
+      "image_urls": [
+        "https://meditationstudioapp.com/assets/img/logo/MSbyMuseLogo-4ffc1d117f2a9b9d2a282e89a1096585e0b827ad16a962f666ff5e9c13750fbb.png"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Meditation Studio subscription",
+      "url": "https://meditationstudioapp.com/courses",
+      "description": "A subscription opens the full library inside the app, including the multi-session courses led by teachers such as Mark Coleman and Elisha Goldstein, with new meditations added each month. It is billed through the app stores monthly, quarterly or yearly; the website does not state the price.",
+      "price": "Contact for pricing",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://meditationstudioapp.com/assets/img/logo/MSbyMuseLogo-4ffc1d117f2a9b9d2a282e89a1096585e0b827ad16a962f666ff5e9c13750fbb.png"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Untangle podcast",
+      "url": "https://meditationstudioapp.com/podcasts",
+      "description": "The app's free weekly podcast, hosted by Patricia Karpas and Ariel Garten, with conversations about mindfulness and contemplative life. Some episodes, released as Meditation Mondays, are short guided practices led by the app's teachers.",
+      "featured": true,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://meditationstudioapp.com/assets/img/logo/MSbyMuseLogo-4ffc1d117f2a9b9d2a282e89a1096585e0b827ad16a962f666ff5e9c13750fbb.png"
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "app",
+    "rank": 81,
+    "hub": null,
+    "tier_evidence": "No readable follower counts (Instagram, Facebook, X not fetched; no YouTube link on the site) → 0 → local_hero. Founders page says the app 'has helped millions of people start a meditation practice' (no figure).",
+    "email": "yes",
+    "email_source": "https://meditationstudioapp.com/contact",
+    "contact_form_url": "https://meditationstudioapp.com/contact",
+    "bio_check": "OK: no 8-word runs against 8 source(s)",
+    "flags": [
+      "Brand inbox: support@meditationstudioapp.com (contact page; also on the terms page).",
+      "Health rule borderline: the about page and the collections page market the app on stress, anxiety and insomnia, and collections include Pain, Fertility, Cancer Comfort, Sleep and Anxiety. None of that is in the bio or items. Judged a general meditation library like Calm (allowed on practice-only terms); owner may prefer to skip it with Breethe, Aura and Balance.",
+      "Thin: 1 offering and 1 free resource. Courses and collections have no own URLs on the site (in-app only); podcast episodes have no separate pages; no YouTube video IDs on the site.",
+      "Subscription offering uses the /courses page as its URL (the site has no pricing or subscribe page; 'Subscribe now' links nowhere and /web redirects to sign-in).",
+      "Photo: only the wordmark logo (477x60 px, 'Meditation Studio by Muse'); the other images are signed, expiring Google Cloud Storage links. Owner may want a better image.",
+      "Owned by Interaxon Inc. (Muse) since 2018; base is Interaxon's Toronto address from the terms page (city only used).",
+      "Teachers on the app already on Spiritpedia (apps aren't hubs, no links made): Mark Coleman, Hugh Byrne, Susan Piver, Cassandra Vieten, Dawn Mauricio, Faith Hunter, Dr. Alejandro Chaoul, Rodney Yee & Colleen Saidman Yee.",
+      "Podcast is still active (episodes numbered past 600 listed under 2026) but leans to brain-health interviews; kept as a free resource for its guided Meditation Monday episodes."
+    ],
+    "left_out": [
+      "Collections on sleep, stress, anxiety, pain, fertility, cancer comfort and eating: health rule.",
+      "Course 'Sleep Basics' and 'Neuroscience and Wellbeing': sleep/condition framing and no own URLs.",
+      "founded_year: not published on the site.",
+      "Store prices: not on the site; app store pages not used."
+    ]
+  }
+}

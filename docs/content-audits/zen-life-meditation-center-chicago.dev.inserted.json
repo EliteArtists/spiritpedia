@@ -1,0 +1,46 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 1070,
+    "healer_slug": "zen-life-meditation-center-chicago"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "c95a5d5d-10a7-4f99-a77d-f7c076f7bb3b",
+      "slug": "winter-7-3-day-retreat-nov-29-dec-5",
+      "title": "Winter 7/3 Day Retreat, Nov 29 - Dec. 5"
+    },
+    {
+      "table": "courses",
+      "id": "d353de89-eca1-4986-b853-ac17248ec48c",
+      "slug": "bodhidharma-barebones-retreat-dec-27-30-2",
+      "title": "Bodhidharma Barebones Retreat - Dec. 27-30"
+    },
+    {
+      "table": "courses",
+      "id": "3cca9db1-a124-4f74-bb53-d0254260916d",
+      "slug": "meditation-for-everyone-begins-jan-12",
+      "title": "Meditation for Everyone, begins Jan 12"
+    },
+    {
+      "table": "courses",
+      "id": "3e8e3960-4b3d-40c3-b0aa-da5299a3386e",
+      "slug": "yoga-for-meditators",
+      "title": "Yoga for Meditators"
+    },
+    {
+      "table": "courses",
+      "id": "c37bbb1f-29df-4ed8-a0b2-8d0b25373358",
+      "slug": "membership-practitioner",
+      "title": "Membership Practitioner"
+    },
+    {
+      "table": "free_resources",
+      "id": "c3b02f11-b39d-4452-880b-01792929927a",
+      "slug": "weekly-meditation",
+      "title": "Weekly Meditation"
+    }
+  ],
+  "at": "2026-11-09T23:36:58.126Z"
+}

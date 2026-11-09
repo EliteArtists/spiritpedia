@@ -1,0 +1,182 @@
+{
+  "healer": {
+    "healer_slug": "village-zendo",
+    "location_source": "https://villagezendo.org/teachers/",
+    "create": {
+      "name": "Village Zendo",
+      "bio": "The Village Zendo, also known by its Japanese temple name Dotoku-ji, is a Soto Zen community in lower Manhattan. It was started in 1986 by two teachers, Pat Enkyo O'Hara and Barbara Joshin O'Hara. Enkyo Roshi is a Dharma heir of Bernie Glassman, in the White Plum line that comes down from Taizan Maezumi, so the practice is Soto at heart with some Rinzai elements. She now serves as abbot emerita, many of the teachers she trained make up today's teaching circle, and Roshi Sinclair Shinryu Thomson is the current abbot.\n\nThe zendo, now on West Broadway in Tribeca, holds sitting meditation on weekday mornings and evenings, a Thursday Dharma talk and Sunday services with talks, and runs a parallel online zendo on Zoom with a Monday class for beginners and dedicated sitting groups. Through the year it offers monthly one-day retreats, an urban sesshin in March, and summer and winter practice periods with residential retreats outside the city. Members support the community with monthly dues and get priority for private meetings with teachers. Talks are shared as podcasts, transcripts and videos, and the community also brings Zen into the arts, writing and social action.",
+      "tier": "local_hero",
+      "entity_type": "organisation",
+      "founded_year": 1986,
+      "availability": "worldwide",
+      "city": "New York, New York",
+      "country": "United States",
+      "subjects": [
+        "meditation",
+        "mindfulness",
+        "spiritual-awakening"
+      ],
+      "website_url": "https://villagezendo.org/",
+      "booking_url": "https://villagezendo.org/calendar/",
+      "youtube_url": "https://www.youtube.com/channel/UCnLm-h61eiLhnqik4osBVcA",
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "info@villagezendo.org",
+      "image_urls": [
+        "https://villagezendo.org/wp-content/uploads/2021/06/masthead-seiki.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [
+    {
+      "title": "Ryoshin Sensei's Dharma Talk, “Every Branch of Coral,” October 11, 2026",
+      "url": "https://www.youtube.com/watch?v=AXbnEtpL5cs",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "channel": "Village Zendo"
+    },
+    {
+      "title": "Tokuyu Sensei’s Dharma Talk, “To VZ, with Love,” October 1, 2026",
+      "url": "https://www.youtube.com/watch?v=VwUCXNpXD8k",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "channel": "Village Zendo"
+    },
+    {
+      "title": "Jo An Sensei's Dharma Talk, \"Body Exposed,\" October 18, 2026",
+      "url": "https://www.youtube.com/watch?v=xjH_aVS3ePg",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "channel": "Village Zendo"
+    },
+    {
+      "title": "Ryugin's Dharma Talk, “Who Are You Waiting for to Give You Permission?” October 8, 2026",
+      "url": "https://www.youtube.com/watch?v=Ipko7cr1eMY",
+      "subjects": [
+        "spirituality",
+        "meditation"
+      ],
+      "channel": "Village Zendo"
+    },
+    {
+      "title": "HonGō's Dharma Talk, \"Right One Moment Wrong the Next,\" October 22, 2026",
+      "url": "https://www.youtube.com/watch?v=19aZ96euiCo",
+      "subjects": [
+        "meditation",
+        "non-duality"
+      ],
+      "channel": "Village Zendo"
+    },
+    {
+      "title": "Jiryu's Dharma Talk, \"Huineng Didn't Win the Poetry Contest,\" Aug 30, 2026",
+      "url": "https://www.youtube.com/watch?v=Y5SoAkDktuo",
+      "subjects": [
+        "spiritual-awakening",
+        "meditation"
+      ],
+      "channel": "Village Zendo"
+    }
+  ],
+  "books": [],
+  "courses": [
+    {
+      "title": "Village Zendo Membership",
+      "url": "https://villagezendo.org/membership/",
+      "description": "Monthly membership that supports the community and gives priority for private interviews with teachers, plus discounts on programmes and retreats. Anyone may join after an introductory conversation with a teacher; no one needs to be a member to sit with the sangha.",
+      "price": "$108 per month (distance members $65 per month; under 25 or over 70 $54 per month)",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://villagezendo.org/wp-content/uploads/2021/06/masthead-seiki.jpg"
+    },
+    {
+      "title": "Winter Sesshin: The Web of Interdependency",
+      "url": "https://villagezendo.org/events/winter-sesshin-2026/",
+      "description": "The zendo's year-end residential retreat at the Garrison Institute in the Hudson Valley, with long periods of zazen, daily talks and individual meetings with teachers. A half-retreat option covers the first three days. Room and board are booked separately with the venue.",
+      "price": "Full retreat: Members $390, Non-Members $440; Half retreat: Members $195, Non-Members $225 (programme fees; room and board extra)",
+      "product_type": "retreat",
+      "start_date": "2026-12-26",
+      "end_date": "2027-01-01",
+      "subjects": [
+        "meditation",
+        "spiritual-awakening"
+      ],
+      "image": "https://villagezendo.org/wp-content/uploads/2022/09/square.jpg"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Learn to Meditate",
+      "url": "https://villagezendo.org/events/learn-to-meditate/",
+      "description": "A weekly online session on Monday evenings for newcomers and those wanting a refresher in Zen sitting. It covers posture, how to begin a regular practice and walking meditation, with time for questions.",
+      "featured": true,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://villagezendo.org/wp-content/uploads/2021/11/by-jiryu-2.jpg"
+    },
+    {
+      "title": "Online Zendo",
+      "url": "https://villagezendo.org/online-zendo/",
+      "description": "Twice-daily silent sitting on Zoom through the week, with Dharma talks on Thursday evenings and Sunday mornings. Open to anyone who keeps to the zendo's guidelines.",
+      "featured": false,
+      "resource_type": "practice",
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://villagezendo.org/wp-content/uploads/2021/10/Screen-Shot-2021-10-22-at-1.35.17-PM.jpg"
+    },
+    {
+      "title": "Transcribed Talks",
+      "url": "https://villagezendo.org/media-archive/talks/",
+      "description": "Written versions of Dharma talks by the zendo's teachers, free to read online.",
+      "featured": false,
+      "resource_type": "download",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "image": "https://villagezendo.org/wp-content/uploads/2009/11/5328820503_07b7448b33_z.jpg"
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "centre",
+    "rank": 43,
+    "hub": null,
+    "tier_evidence": "YouTube unreadable (consent page, 9 Nov 2026); Instagram, Facebook and X not fetched; no readable counts → 0 → local_hero",
+    "email": "yes",
+    "email_source": "https://villagezendo.org/teachers/",
+    "contact_form_url": "https://villagezendo.org/connect-with-us/",
+    "bio_check": "OK: no 8-word runs against 10 source(s)",
+    "flags": [
+      "Email info@villagezendo.org is the zendo's general inbox (brand inbox); published in the footer and as a mailto link.",
+      "No hub links: Cuong Lu's video is on its channel, but the Village Zendo teachers page does not name him and his own site's home page (mindonly.nl) does not mention the zendo; teachers file written with an empty list. No other names on the teachers page match a Spiritpedia teacher.",
+      "Only one image (the zendo's meditation room masthead); the other site images were a street map and the logo strip.",
+      "Transcribed Talks URL and Online Zendo are free resources; the online sessions are dana-supported but no fee is stated.",
+      "YouTube subscriber count unreadable (consent page, 9 Nov 2026).",
+      "possible editorial-stature override: a well-known New York Zen centre founded by Pat Enkyo O'Hara (1986)."
+    ],
+    "left_out": [
+      "Jisei Hoshi's talk \"OLD AGE, SICKNESS, and DEATH\": title names sickness; left out to be safe under the health rule.",
+      "\"Zen Activist Pat Enkyo O'Hara\" (The Lo-Down New York) and a SOTOZENNET video: other channels, not the centre's teaching.",
+      "Zazenkai and Dharma Talk by Torei (14 Nov 2026): price not checked; monthly zazenkai described in the bio instead.",
+      "Transcribed Talks page itself was not opened (link from the site menu)."
+    ]
+  },
+  "images_final": true
+}

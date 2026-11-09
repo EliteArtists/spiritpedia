@@ -1,0 +1,52 @@
+{
+  "env": "dev",
+  "hub": "community-meditation-center",
+  "rows": [
+    {
+      "id": "48c607c9-86f2-4fc2-b3c0-764451359275",
+      "teacher": "Bart van Melik",
+      "role": "instructor"
+    },
+    {
+      "id": "a2b6acec-e874-4eb0-8e53-9e44804aa50a",
+      "teacher": "Stephen Batchelor",
+      "role": "instructor"
+    },
+    {
+      "id": "9b611dbc-de07-4f39-90d5-0df4dd2e2351",
+      "teacher": "Devin Berry",
+      "role": "instructor"
+    },
+    {
+      "id": "1ff2405d-9b89-4a67-a65d-69366c9a9da6",
+      "teacher": "Joseph Goldstein",
+      "role": "instructor"
+    },
+    {
+      "id": "73d54503-bbc5-4187-98e0-bc81282ac444",
+      "teacher": "Cara Lai",
+      "role": "instructor"
+    },
+    {
+      "id": "c35f9e3e-5190-4c91-b500-a530fcc458c7",
+      "teacher": "Kaira Jewel Lingo",
+      "role": "instructor"
+    },
+    {
+      "id": "1215edae-7d65-4e18-98d2-24042848ad2b",
+      "teacher": "Tuere Sala",
+      "role": "instructor"
+    },
+    {
+      "id": "b0a554d1-f757-42d8-ac0b-b09444fe6945",
+      "teacher": "Sharon Salzberg",
+      "role": "instructor"
+    },
+    {
+      "id": "2bf7f600-493b-47fc-8d66-24a6c34af41b",
+      "teacher": "Oren Jay Sofer",
+      "role": "instructor"
+    }
+  ],
+  "at": "2026-11-09T23:44:23.422Z"
+}

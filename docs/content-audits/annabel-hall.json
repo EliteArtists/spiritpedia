@@ -1,0 +1,94 @@
+{
+  "healer": {
+    "healer_slug": "annabel-hall",
+    "location_source": "https://www.reenergizement.com/upcoming-events.html",
+    "create": {
+      "name": "Annabel Hall",
+      "bio": "Annabel Hall is a Quantum-Touch practitioner and instructor based in Mesa, Arizona, where she runs a practice called Reenergizement. She came to energy work after twenty-two years as a public-school teacher of children with learning differences, and after a hard stretch in her own life during which she studied with the energy healer Kate Mire Johnson. She became a certified Quantum-Touch practitioner in 2008 and qualified to teach the Level 1 workshop two years later.\n\nHer sessions combine Quantum-Touch, a hands-on method that works with breath, body awareness and focused intention to move life-force energy, with other holistic approaches, and are offered as single appointments or as series. Clients see her in person in Mesa, and she also works at a distance. As a teacher she holds the two-day Becoming Energized (Level 1) workshop several times a year at her home in Mesa, open to newcomers and to bodyworkers, nurses and other practitioners who want to add the method to their work, and she leads the Becoming Heart Conscious (Level 4) class in person and online, which goes further into distance work, intuition and the higher chakras. A mother of nine and grandmother of many, she enjoys exploring Arizona's historic places with her husband.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local_online",
+      "city": "Mesa, Arizona",
+      "country": "United States",
+      "subjects": ["quantum-touch", "energy-medicine", "chakra-healing"],
+      "website_url": "https://www.reenergizement.com/",
+      "booking_url": "https://www.reenergizement.com/services.html",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "annabel.hall@yahoo.com",
+      "image_urls": [
+        "https://www.reenergizement.com/uploads/1/2/5/9/125916050/annabel-051926-50percent_orig.jpg",
+        "https://quantumtouch.com/images/ProfilePictures/AnnabelHall2026.png"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [
+    {
+      "title": "Introducing Annabel Hall and the Quantum Touch Level 1 class.",
+      "url": "https://www.youtube.com/watch?v=SA6bre97-mg",
+      "subjects": ["quantum-touch", "energy-medicine"]
+    }
+  ],
+  "books": [],
+  "courses": [
+    {
+      "title": "Quantum-Touch energy sessions",
+      "url": "https://www.reenergizement.com/services.html",
+      "description": "Individual Quantum-Touch sessions in Mesa, starting with a ninety-minute first appointment, then sixty-minute follow-ups. Sessions can be booked singly or in packages of three, six or twelve.",
+      "price": "$200",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": ["quantum-touch", "energy-medicine"]
+    },
+    {
+      "title": "Quantum-Touch Becoming Energized (Level 1)",
+      "url": "https://www.reenergizement.com/upcoming-events.html",
+      "description": "Annabel's two-day introductory workshop, held in person in Mesa several times a year. Students learn the core breathing and awareness techniques for running life-force energy through the hands, with plenty of hands-on practice.",
+      "price": "$450",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": ["quantum-touch", "energy-medicine"]
+    },
+    {
+      "title": "Quantum-Touch Becoming Heart Conscious (Level 4)",
+      "url": "https://www.reenergizement.com/class-schedule.html",
+      "description": "A two-day class for students who have done Level 1, offered in person in Mesa and online. It covers distance work, developing intuition and study of chakras eight to twelve.",
+      "price": "$550 (in person); $450 (virtual)",
+      "product_type": "course",
+      "start_date": "2027-01-15",
+      "end_date": "2027-01-16",
+      "subjects": ["quantum-touch", "chakra-healing"]
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "quantum-touch",
+    "rank": 85,
+    "hub": null,
+    "tier_evidence": "No readable follower counts (no Instagram/Facebook/X links on her site; YouTube channel @AnnabelHall-qt unreadable, consent page, 9 Nov 2026) → 0 → local_hero.",
+    "email": "yes",
+    "email_source": "https://www.reenergizement.com/",
+    "contact_form_url": "https://www.reenergizement.com/contact.html",
+    "bio_check": "OK: no 8-word runs against 6 source(s)",
+    "flags": [
+      "Email is Cloudflare-protected on her home page (decoded: Annabel.hall@yahoo.com, written lowercase); the same address is on her Quantum-Touch profile.",
+      "Second photo is her Quantum-Touch profile photo (same portrait as on her site, different background).",
+      "Level 1 dates on her schedule page run through the year (next: 13-14 Nov 2026), so listed undated as a repeating workshop; Level 4 listed with its next date, 15-16 Jan 2027, on the class-schedule page.",
+      "Health rule: her home page asks about trauma, fear and anxiety, and quotes a testimonial on pain relief; none of that is used. Package titles mention 'Emotional / Physical' healing; the session item is written as energy work only.",
+      "Video is the only one linked on her site (about 4 minutes, her own channel per oEmbed).",
+      "Regional: Mesa, Arizona."
+    ],
+    "left_out": [
+      "Quantum-Touch store links (malas, pendant) on her Quantum Touch Direct page: affiliate products, not her offerings.",
+      "Two quantumtouch.com workshop pages linked from her site (Level 3 with Henri Rand Furgiuele, July 2024; Level 6 with Richard Gordon, Feb 2024): past and not hers.",
+      "Session packages listed separately: folded into the one sessions item."
+    ]
+  }
+}

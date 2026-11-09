@@ -1,0 +1,115 @@
+{
+  "healer": {
+    "healer_slug": "mindfulness-com",
+    "location_source": "https://mindfulness.com/terms-and-conditions",
+    "no_public_base": "Only the country can be inferred: the site is run by Mindfulness United Pty Ltd, an Australian company under Australian Consumer Law (terms page); no city is published on the pages read.",
+    "create": {
+      "name": "Mindfulness.com",
+      "bio": "Mindfulness.com is a mindfulness app and learning site started by mindfulness teacher Melli O'Brien and technology entrepreneur Matt Dickinson, who first worked together in 2015 on an online gathering of teachers called The Mindfulness Summit. The app itself opened in 2020. The company behind it, Mindfulness United, is Australian, and it still runs the yearly Summit alongside the app and a library of free articles.\n\nInside the app are well over a thousand guided practices, talks and courses, along with breathing exercises, short gratitude practices, music, nature soundscapes and an always-on stream called Mindful Radio. The teaching is mostly secular mindfulness, drawn from both the insight meditation world and the research community: contributors include Tara Brach, Jack Kornfield, Sharon Salzberg, Joseph Goldstein, Jon Kabat-Zinn, Kristin Neff and Rick Hanson, with O'Brien and Cory Muscara as the main hosts. O'Brien also leads a thirty-day course on the basics of practice. There are two yearly plans, each with a seven-day trial; the fuller one adds a short coached practice chosen for each day of the year and the complete course library.",
+      "tier": "local_hero",
+      "entity_type": "app",
+      "founded_year": 2020,
+      "availability": "worldwide",
+      "city": null,
+      "country": "Australia",
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "website_url": "https://mindfulness.com/",
+      "booking_url": "https://mindfulness.com/#pricing",
+      "youtube_url": "https://youtube.com/@mindfulness_com",
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "support@mindfulness.com",
+      "image_urls": [
+        "https://mindfulness.com/images/homepage/og-home.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [
+    {
+      "title": "How to Start and Sustain a Daily Mindfulness and Meditation Practice",
+      "url": "https://www.youtube.com/watch?v=fMfUq8LBBPY",
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "channel": "Mindfulness"
+    }
+  ],
+  "books": [],
+  "courses": [
+    {
+      "title": "Mindfulness.com Basics and Plus+ subscriptions",
+      "url": "https://mindfulness.com/#pricing",
+      "description": "Two yearly plans for the app, each opening with a seven-day trial. Basics covers Mindful Radio, podcasts, music and nature sounds, breathing exercises and short gratitude practices; Plus+ adds the full library of guided meditations and courses and a daily coached practice.",
+      "price": "Basics $24.99 /year (USD); Plus+ $84.99 /year (USD)",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "image": "https://mindfulness.com/images/homepage/og-home.jpg"
+    },
+    {
+      "title": "Foundations of Mindfulness",
+      "url": "https://mindfulness.com/program/foundations-of-mindfulness",
+      "description": "A self-paced thirty-day course with Melli O'Brien, fifteen minutes a day. The sessions move from the basics of attention and presence through mental noting, non-judgement and equanimity to bringing awareness into ordinary activity.",
+      "price": "Included in Plus+ ($84.99 /year USD)",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "image": "https://cdn.sanity.io/images/rfohr4xm/prod/cc9037f278e5a08ff88b670b12e40f749120407e-1000x603.jpg?rect=0,40,1000,525&w=1200&h=630&auto=format"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "How to Meditate: Meditation 101 for Beginners",
+      "url": "https://mindfulness.com/meditation/how-to-meditate",
+      "description": "A free beginner's article that walks through a first sitting: posture, resting the hands, softening the gaze and following the breath for two minutes, then returning to it whenever the mind wanders. It also introduces ten styles of meditation, from loving-kindness to body scan.",
+      "featured": true,
+      "resource_type": "practice",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://cdn.sanity.io/images/rfohr4xm/prod/2b7a55ed75ab2e9bb34b8a40c0ccd921751445c7-1080x479.png?rect=84,0,912,479&w=1200&h=630&auto=format"
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "app",
+    "rank": 64,
+    "hub": null,
+    "tier_evidence": "No readable follower counts (Instagram, Facebook, X, TikTok not fetched; YouTube unreadable, consent page, 9 Nov 2026) → 0 → local_hero. Published figures, for information: 'Join 1M+ members' (home) and 'over 1 million+ customers globally' (press page).",
+    "email": "yes",
+    "email_source": "https://mindfulness.com/program/foundations-of-mindfulness",
+    "contact_form_url": "https://mindfulness.com/contact",
+    "bio_check": "OK: no 8-word runs against 6 source(s)",
+    "flags": [
+      "Health rule, borderline: the home page markets the app heavily on conditions (compares mindfulness with CBT and SSRI antidepressants; tabs for 'Ease anxiety', 'Sleep', 'Pain & illness'; member survey on stress and anxiety), and the Plus+ plan lists 'courses for anxiety, stress and more'. None of this is in the bio or items. Judged a teacher-led mindfulness app like Calm/Headspace rather than therapy-led; owner may prefer to skip it as with Aura and Breethe.",
+      "Brand inbox: support@mindfulness.com, shown as a mailto in the FAQ on the Foundations of Mindfulness page; also a contact form at /contact.",
+      "Possible override by published user numbers (1M+ members).",
+      "Teachers already on Spiritpedia who appear in the app: Cory Muscara (co-host), Tara Brach, Jack Kornfield, Sharon Salzberg, Joseph Goldstein, Jon Kabat-Zinn, Dr. Kristin Neff, Dr. Rick Hanson, Dr. Dan Siegel, Kelly Boys, Mark Coleman. Co-founder Melli O'Brien is not on Spiritpedia. Apps aren't hubs, so no links made.",
+      "youtube_url from the site footer (youtube.com/@mindfulness_com); not opened. The oEmbed author_url for the video is youtube.com/@mindfulnesscom, so the footer handle may be out of date.",
+      "Base: country only (Australia), inferred from the operating company; no city.",
+      "Images: the ingest replaced my app icon (180 px) and logo (268 px), both under its size floor, with the site's og image (mindfulness.com/images/homepage/og-home.jpg, 1200x630), which I looked at: a product mock-up with Melli O'Brien on a phone screen, but its tiles read 'Ease Anxiety' and 'Better Sleep'. Owner may want a different image."
+    ],
+    "left_out": [
+      "Mindfulness 101: A Beginner's Guide: the article lists benefits for depression, chronic pain and blood pressure (health rule).",
+      "Sleep and anxiety articles and playlists: health rule.",
+      "The Mindfulness Summit: no current dated page opened."
+    ],
+    "held": "Lead, 9 Nov 2026: held for the owner. Borderline on the health rule (the home page compares mindfulness with CBT and SSRIs and has 'Pain & illness' tabs), and the only image the ingest accepted is the share image with 'Ease Anxiety' and 'Better Sleep' tiles."
+  }
+}

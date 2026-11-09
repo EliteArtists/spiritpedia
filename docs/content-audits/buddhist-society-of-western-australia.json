@@ -1,0 +1,238 @@
+{
+  "healer": {
+    "healer_slug": "buddhist-society-of-western-australia",
+    "location_source": "https://bswa.org/location/dhammaloka-city-centre/",
+    "create": {
+      "name": "Buddhist Society of Western Australia",
+      "bio": "The Buddhist Society of Western Australia (BSWA) is a Perth-based non-profit that supports the Thai Forest tradition of Theravada Buddhism, the lineage of Ajahn Chah. Founded on Vesak Day 1973, it invited monks from Wat Nanachat in Thailand to Perth in the early 1980s, and Ajahn Jagaro and later Ajahn Brahm built up its forest monastery at Serpentine. Ajahn Brahm has served as spiritual director since the mid-1990s, and Ajahn Brahmali, Ajahn Vayama and other senior monks and nuns teach alongside him.\n\nThe society now runs a network of places. Its teaching hub is the Dhammaloka centre in Nollamara, a converted church in Perth's northern suburbs with a large Dhamma hall and library, where Friday evening talks, Saturday meditation classes and festivals are held without charge. It supports Bodhinyana Monastery for monks and Dhammasara Monastery for nuns, several hermitages, and Jhana Grove, a purpose-built retreat centre near Serpentine where members book silent retreats led by monastics. Many talks, guided meditations and retreats are streamed and archived on its YouTube channel and podcasts, and a Zoom meditation group meets weekly.",
+      "tier": "local_hero",
+      "entity_type": "organisation",
+      "founded_year": 1973,
+      "availability": "worldwide",
+      "city": "Perth, Western Australia",
+      "country": "Australia",
+      "subjects": [
+        "meditation",
+        "mindfulness",
+        "spiritual-awakening"
+      ],
+      "website_url": "https://bswa.org/",
+      "booking_url": "https://bswa.org/location/jhana-grove-retreat-centre/",
+      "youtube_url": "https://www.youtube.com/user/BuddhistSocietyWA/",
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "admin@bswa.org",
+      "image_urls": [
+        "https://yt3.googleusercontent.com/ytc/AIdro_mtx0xx4J5LE5QnFj8L-B7WBzxnqRbsFxNVC-kvcelOHqM=s900-c-k-c0x00ffffff-no-rj"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "BSWA 5-day Retreat with Ayya Hasapanna 20-25 November 2026",
+      "url": "https://bswa.org/event/bswa-5-day-retreat-ajahn-hasapanna-20-25-nov-2026/",
+      "description": "A five-day silent retreat at Jhana Grove taught by Ajahn Hasapanna, pitched between the society's weekend retreats and its nine-day retreats. Booking opens first to BSWA members.",
+      "price": "Contact for pricing",
+      "product_type": "retreat",
+      "start_date": "2026-11-20",
+      "end_date": "2026-11-25",
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://yt3.googleusercontent.com/ytc/AIdro_mtx0xx4J5LE5QnFj8L-B7WBzxnqRbsFxNVC-kvcelOHqM=s900-c-k-c0x00ffffff-no-rj"
+    },
+    {
+      "title": "BSWA Weekend Retreat 11 – 13 December 2026",
+      "url": "https://bswa.org/event/bswa-weekend-retreat-11-13-dec-2026/",
+      "description": "A weekend of silent meditation at Jhana Grove with Ayya Seri. Sessions are usually streamed on the society's YouTube channel, and places are booked through the members' system.",
+      "price": "Contact for pricing",
+      "product_type": "retreat",
+      "start_date": "2026-12-11",
+      "end_date": "2026-12-13",
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://yt3.googleusercontent.com/ytc/AIdro_mtx0xx4J5LE5QnFj8L-B7WBzxnqRbsFxNVC-kvcelOHqM=s900-c-k-c0x00ffffff-no-rj"
+    },
+    {
+      "title": "BSWA 9 day Retreat with Ajahn Sunyo 25 December 2026 – 3 January 2027",
+      "url": "https://bswa.org/event/25-dec-2026-3-jan-2027-bswa-ajahn-sunyo-9-day-retreat/",
+      "description": "The longer summer retreat at Jhana Grove, nine days of silent practice taught by Ajahn Sunyo across the New Year. It is open to full BSWA members.",
+      "price": "Contact for pricing",
+      "product_type": "retreat",
+      "start_date": "2026-12-25",
+      "end_date": "2027-01-03",
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://yt3.googleusercontent.com/ytc/AIdro_mtx0xx4J5LE5QnFj8L-B7WBzxnqRbsFxNVC-kvcelOHqM=s900-c-k-c0x00ffffff-no-rj"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Introduction to Meditation Series – Parts 1 to 5 | Ajahn Brahmali (Video/Audio)",
+      "url": "https://bswa.org/practices/introduction-meditation-series-parts-1-5-ajahn-brahmali/",
+      "description": "Five recorded sessions by Ajahn Brahmali for beginners, each pairing a short teaching with a guided sit: getting set up, present-moment awareness, the breath, working with obstacles and other meditation methods.",
+      "featured": true,
+      "resource_type": "mini_course",
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://yt3.googleusercontent.com/ytc/AIdro_mtx0xx4J5LE5QnFj8L-B7WBzxnqRbsFxNVC-kvcelOHqM=s900-c-k-c0x00ffffff-no-rj"
+    },
+    {
+      "title": "Dhammaloka City Centre",
+      "url": "https://bswa.org/location/dhammaloka-city-centre/",
+      "description": "The society's main teaching centre in Nollamara, north of central Perth, open to all without charge: Friday evening talks, Saturday afternoon meditation classes for beginners and regulars, festivals and a lending library.",
+      "featured": false,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "image": "https://yt3.googleusercontent.com/ytc/AIdro_mtx0xx4J5LE5QnFj8L-B7WBzxnqRbsFxNVC-kvcelOHqM=s900-c-k-c0x00ffffff-no-rj"
+    },
+    {
+      "title": "Practice",
+      "url": "https://bswa.org/practice/",
+      "description": "BSWA's guide to its recorded teachings, sorted by stage: beginners' series on Buddhism and meditation by Ajahn Brahm and Ajahn Brahmali, then material for daily-life and deeper practice.",
+      "featured": false,
+      "resource_type": "practice",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "image": "https://yt3.googleusercontent.com/ytc/AIdro_mtx0xx4J5LE5QnFj8L-B7WBzxnqRbsFxNVC-kvcelOHqM=s900-c-k-c0x00ffffff-no-rj"
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "centre",
+    "rank": 5,
+    "hub": null,
+    "tier_evidence": "YouTube @BuddhistSocietyWA (linked from its own site): unreadable (consent page, 9 Nov 2026); Facebook group linked but never fetched → 0 readable → local_hero",
+    "email": "yes",
+    "email_source": "https://bswa.org/contact-us/",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 13 source(s)",
+    "flags": [
+      "Main YouTube count unreadable (consent page, 9 Nov 2026). This is the channel that carries Ajahn Brahm's talks and is likely very large; the true total could put it well above local_hero once the API key arrives.",
+      "Possible editorial-stature override: BSWA is Ajahn Brahm's organisation and one of the best-known Theravada bodies in the West; owner to decide.",
+      "Email admin@bswa.org is the society's office inbox (mailto on the contact page); the contact form is suspended, per the page.",
+      "City given as Perth, Western Australia; the Dhammaloka centre is in the suburb of Nollamara.",
+      "Retreat prices are not published (members-only booking via jgbookings.tidyhq.com), so 'Contact for pricing' is used.",
+      "Crawl-delay: 10 on bswa.org respected (10 s between requests).",
+      "Hub links: Ajahn Brahm and Ajahn Brahmali are on its Teachers page; Ajahn Canda is linked from the site's teachings archive (talks recorded at BSWA, listed under 'teacher'), owner may wish to confirm. Bhante Buddharakkhita is also in that archive list but not in the lead, so he is not linked.",
+      "Ajahn Brahm is not marked founder: the history page says BSWA was formed in 1973 and he arrived later as a monk and became spiritual director in 1995.",
+      "Jhana Grove page carries a health claim about meditation (not used anywhere in the plan).",
+      "Ingest dry run (9 Nov 2026): every bswa.org image refused (robots.txt unreachable for the ingest, UND_ERR_SOCKET), even though my curl reads of bswa.org/robots.txt and the images succeeded. The ingest then fetched the YouTube channel page itself for an avatar; that fallback is the ingest's, not mine."
+    ],
+    "left_out": [
+      "A Dependently Originated Christmas with Ajahn Mudito (25-28 Dec 2026): page gives no format, venue or booking details.",
+      "Ajahn Brahm's UK tour (10-27 Nov 2026): a tour, not a BSWA offering.",
+      "Kalyana Friendship Group and Bodhinyana busy-bee days: social and volunteer events.",
+      "Ko-fi donations and memberships: support, not teaching."
+    ],
+    "held": "All three photos from bswa.org fail the ingest's image check: its robots.txt request to bswa.org ends in a socket error (UND_ERR_SOCKET) for the ingest, so the host counts as refusing it; per the brief, held rather than worked around. The dry run fell back to the YouTube channel avatar, which was not chosen or looked at by me."
+  },
+  "videos": [
+    {
+      "title": "Effortless Meditation | Ajahn Brahm | 30 October 2026",
+      "url": "https://www.youtube.com/watch?v=VrxbtSV3gZ8",
+      "subjects": [
+        "meditation"
+      ],
+      "channel": "Buddhist Society of Western Australia"
+    },
+    {
+      "title": "Factors of Enlightenment | Ajahn Brahm | 3 July 2026",
+      "url": "https://www.youtube.com/watch?v=bMrqHgqN_vQ",
+      "subjects": [
+        "spiritual-awakening",
+        "meditation"
+      ],
+      "channel": "Buddhist Society of Western Australia"
+    },
+    {
+      "title": "Living a Happy and Peaceful Life | Ajahn Brahm | 10 July 2026",
+      "url": "https://www.youtube.com/watch?v=_17-u_j6w9Q",
+      "subjects": [
+        "spirituality",
+        "meditation"
+      ],
+      "channel": "Buddhist Society of Western Australia"
+    },
+    {
+      "title": "Introduction to Meditation: Session 1 - Setting yourself up + guided meditation | Ajahn Brahmali",
+      "url": "https://www.youtube.com/watch?v=dyUCvFlDL8w",
+      "subjects": [
+        "meditation"
+      ],
+      "channel": "Buddhist Society of Western Australia"
+    },
+    {
+      "title": "Introduction to Meditation: Session 2 - Present awareness + guided meditation | Ajahn Brahmali",
+      "url": "https://www.youtube.com/watch?v=mm4QnrIGNZQ",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "channel": "Buddhist Society of Western Australia"
+    },
+    {
+      "title": "Introduction to Meditation: Session 3 - Breath meditation + guided meditation | Ajahn Brahmali",
+      "url": "https://www.youtube.com/watch?v=HK4ZU-qg0ls",
+      "subjects": [
+        "meditation"
+      ],
+      "channel": "Buddhist Society of Western Australia"
+    },
+    {
+      "title": "How to Cultivate Mindfulness in Buddhism | Ajahn Brahmali | 16 May 2025",
+      "url": "https://www.youtube.com/watch?v=1yhpNxzR8Xo",
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "channel": "Buddhist Society of Western Australia"
+    },
+    {
+      "title": "Free Will and Conditioning | Ajahn Brahmali | 10 January 2025",
+      "url": "https://www.youtube.com/watch?v=i7s7JdmDke8",
+      "subjects": [
+        "spirituality",
+        "ancient-wisdom"
+      ],
+      "channel": "Buddhist Society of Western Australia"
+    },
+    {
+      "title": "Softening Suffering with Compassion | Ajahn Canda | 6 December 2024",
+      "url": "https://www.youtube.com/watch?v=820fvB-gydI",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "channel": "Buddhist Society of Western Australia"
+    },
+    {
+      "title": "Friday Night Guided Meditation | Ajahn Canda | 6 December 2024",
+      "url": "https://www.youtube.com/watch?v=8mdxW6I-yHU",
+      "subjects": [
+        "meditation"
+      ],
+      "channel": "Buddhist Society of Western Australia"
+    },
+    {
+      "title": "An Introduction to Jhana Grove Meditation Retreat Centre",
+      "url": "https://www.youtube.com/watch?v=KeZdpyoCiW0",
+      "subjects": [
+        "meditation"
+      ],
+      "channel": "BSWA Retreats 2011-15 & Media"
+    }
+  ]
+}

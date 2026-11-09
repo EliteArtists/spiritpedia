@@ -1,0 +1,34 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 1082,
+    "healer_slug": "hallow"
+  },
+  "rows": [
+    {
+      "table": "videos",
+      "id": 8613,
+      "slug": "how-to-pray-the-rosary-step-by-step-guided-rosary",
+      "title": "How to Pray the Rosary Step by Step | Guided Rosary"
+    },
+    {
+      "table": "courses",
+      "id": "02dbd3c8-9312-4db6-bfde-20b7cd2c19f2",
+      "slug": "hallow-subscription",
+      "title": "Hallow Subscription"
+    },
+    {
+      "table": "free_resources",
+      "id": "88555e52-2bc1-45ba-ae57-2e4d20376cf0",
+      "slug": "how-to-pray-the-rosary-guide-to-the-rosary-prayer",
+      "title": "How to Pray the Rosary: Guide to the Rosary Prayer"
+    },
+    {
+      "table": "free_resources",
+      "id": "9be9a31d-eed3-4a32-9055-54977d6fb747",
+      "slug": "how-to-pray",
+      "title": "How to Pray"
+    }
+  ],
+  "at": "2026-11-09T23:49:03.293Z"
+}

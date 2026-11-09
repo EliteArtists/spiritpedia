@@ -1,0 +1,154 @@
+{
+  "healer": {
+    "healer_slug": "tara-mandala",
+    "location_source": "https://www.taramandala.org/about/contact-tara-mandala/",
+    "create": {
+      "name": "Tara Mandala",
+      "bio": "Tara Mandala is a Tibetan Buddhist retreat centre and international practice community set on 700 acres of mountain land near Pagosa Springs in south-western Colorado. Lama Tsultrim Allione, among the first American women to take ordination as a Tibetan Buddhist nun, founded it in 1993, and what began with a single canvas yurt is now a campus with a three-storey temple, cabins for solitary retreat and a worldwide network of local sanghas. Its teaching gives a central place to the sacred feminine and to the lineage of Machig Labdrön, the eleventh-century Tibetan woman teacher of Chöd, and it welcomes people of every background.\n\nOn the land it hosts group retreats, from short programmes to long immersions, and individual retreats in solitary cabins. Much of the teaching also happens online, through Zoom courses and yana, its digital Dharma hub, where self-paced programmes on Green Tara, Zhitro, the Heart Sutra and Chöd sit alongside live practice groups. Students can follow long-term study paths such as Magyu, the Mother Lineage, the Ösel Nyingtig luminosity path and a Gateway programme, or train in Feeding Your Demons, the five-step practice Lama Tsultrim developed for meeting inner struggle with compassion. A yearlong introduction, The Heart of Buddhism, covers the core teachings, and scholarships widen access.",
+      "tier": "local_hero",
+      "entity_type": "organisation",
+      "founded_year": 1993,
+      "availability": "worldwide",
+      "city": "Pagosa Springs, Colorado",
+      "country": "United States",
+      "subjects": [
+        "meditation",
+        "spiritual-awakening",
+        "ancient-wisdom"
+      ],
+      "website_url": "https://www.taramandala.org/",
+      "booking_url": "https://www.taramandala.org/calendar/",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": null,
+      "image_urls": [
+        "https://www.taramandala.org/wp-content/uploads/land-retreat-center.jpg",
+        "https://www.taramandala.org/wp-content/uploads/Temple_40.webp"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [
+    {
+      "title": "How to Practice Shamatha Meditation: Calm Abiding with Lama Tsultrim Allione",
+      "url": "https://www.youtube.com/watch?v=ZBgGzo2zyo8",
+      "subjects": [
+        "meditation"
+      ],
+      "channel": "Tara Mandala"
+    },
+    {
+      "title": "Lama Live! January 8, 2023 with Guest Teacher, Dorje Lopön Chandra Easton",
+      "url": "https://www.youtube.com/watch?v=ErKUyqazNI4",
+      "subjects": [
+        "meditation",
+        "ancient-wisdom"
+      ],
+      "channel": "Tara Mandala"
+    }
+  ],
+  "books": [],
+  "courses": [
+    {
+      "title": "Zhitro Practice Revisited",
+      "url": "https://www.taramandala.org/programs-2/16962/events/zhitro-practice-revisited/",
+      "description": "An online daylong with Lopön Polly Ryan for people who have already received the Zhitro transmission: group practice of the sadhana, which is done on behalf of those who have died, with further teaching and time for questions.",
+      "price": "$85 Standard Tuition; $65 Community Supported Tuition",
+      "product_type": "course",
+      "start_date": "2026-11-22",
+      "end_date": "2026-11-22",
+      "subjects": [
+        "death-the-afterlife",
+        "meditation"
+      ],
+      "image": "https://taramandala.secure.retreat.guru/wp-content/uploads/sites/157/2026/07/Zhitro-500x500.png"
+    },
+    {
+      "title": "The Heart of Buddhism: The Awakened Heart",
+      "url": "https://www.taramandala.org/programs-2/16504/events/the-awakened-heart/",
+      "description": "Five Friday sessions on Zoom taught by Zoketsu Norman Fischer, Lopön Karla Jackson-Brewer and Dorje Lopön Chandra Easton; the third course of the centre's yearlong Heart of Buddhism series on the Buddha's path and taking refuge.",
+      "price": "$295 Standard Tuition; $195 Community Supported Tuition",
+      "product_type": "course",
+      "start_date": "2027-01-22",
+      "end_date": "2027-02-26",
+      "subjects": [
+        "ancient-wisdom",
+        "meditation"
+      ],
+      "image": "https://taramandala.secure.retreat.guru/wp-content/uploads/sites/157/2026/07/HOB-The-Awakened-Heart-1-500x500.png"
+    },
+    {
+      "title": "The Heart of Buddhism: Sacred View Sacred World",
+      "url": "https://www.taramandala.org/programs-2/16518/events/sacred-view-sacred-world/",
+      "description": "The fourth course of the Heart of Buddhism series, taught online by Dorje Lopön Charlotte Rotterdam over five Fridays, with the option of formally taking the Refuge Vow.",
+      "price": "$295 Standard Tuition; $195 Community Supported Tuition",
+      "product_type": "course",
+      "start_date": "2027-03-05",
+      "end_date": "2027-04-11",
+      "subjects": [
+        "ancient-wisdom",
+        "meditation"
+      ],
+      "image": "https://taramandala.secure.retreat.guru/wp-content/uploads/sites/157/2026/07/HOB-Sacred-View-Sacred-Word-500x500.png"
+    },
+    {
+      "title": "The Heart of Buddhism: The Great Perfection",
+      "url": "https://www.taramandala.org/programs-2/16529/events/the-great-perfection/",
+      "description": "The closing course of the Heart of Buddhism year, on Dzogchen, taught on Zoom across five Fridays by Sangye Khandro, Tulku Ösel Dorje and Lama Tsultrim Allione.",
+      "price": "$295 Standard Tuition; $195 Community Supported Tuition",
+      "product_type": "course",
+      "start_date": "2027-04-16",
+      "end_date": "2027-05-23",
+      "subjects": [
+        "non-duality",
+        "ancient-wisdom"
+      ],
+      "image": "https://taramandala.secure.retreat.guru/wp-content/uploads/sites/157/2026/07/HOB-The-Great-Perfection-1-500x500.png"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Tibetan Buddhism for Beginners",
+      "url": "https://www.taramandala.org/learn/tibetan-buddhism-beginners-guide/",
+      "description": "An introductory guide to shamatha and vipashyana meditation and to the Feeding Your Demons process, with a video of Lama Tsultrim Allione giving calm-abiding instructions.",
+      "featured": true,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://www.taramandala.org/wp-content/uploads/whereToStart_000a.jpg"
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "centre",
+    "rank": 39,
+    "hub": null,
+    "tier_evidence": "YouTube unreadable (consent page, 9 Nov 2026); Instagram/Facebook not fetched; no readable counts → local_hero",
+    "email": "contact form",
+    "email_source": null,
+    "contact_form_url": "https://www.taramandala.org/about/contact-tara-mandala/",
+    "bio_check": "OK: no 8-word runs against 12 source(s)",
+    "flags": [
+      "possible editorial-stature override: a well-known Tibetan Buddhist retreat centre founded by Lama Tsultrim Allione.",
+      "Regional: Pagosa Springs, Colorado.",
+      "Hub link: chandra-easton as instructor (named as teacher of The Awakened Heart and the 21 Taras programme). Lama Tsultrim Allione, the founder, is not on Spiritpedia dev: owner may want her as a new teacher.",
+      "No published email; contact form only (phone 970.731.3711).",
+      "Centre also runs professional Feeding Your Demons training and certification for therapists and coaches; not listed as an item (therapy-adjacent).",
+      "Offering images from the centre's Retreat Guru host taramandala.secure.retreat.guru (robots read: allows).",
+      "Pagosa Springs not in places table: needs a place alias (README §18.4)."
+    ],
+    "left_out": [
+      "Machig Labdrön's Longevity Sadhana (5–6 Dec 2026): framed around restoring life force lost to trauma and increasing longevity (health rule).",
+      "Facing the Fear of Death Through Feeding Your Demons (5 Dec 2026): led by a psychotherapist with a therapeutic framing; left out under the health rule.",
+      "Demons in Love (relationship challenges), A Cup of Tea with Your Demons: not opened.",
+      "Skymind Yearlong (from 21 Mar 2027): tuition not shown on the page read.",
+      "Embodying the 21 Taras, Treasury of Precious Qualities, What the Buddha Taught, Reclaiming Wholeness: started before 12 Nov 2026.",
+      "Books on dakinistore.taramandala.org: not opened, no ISBNs."
+    ]
+  },
+  "images_final": true
+}

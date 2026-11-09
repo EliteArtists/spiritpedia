@@ -1,0 +1,187 @@
+{
+  "healer": {
+    "healer_slug": "institute-of-noetic-sciences",
+    "location_source": "https://noetic.org/contact/",
+    "create": {
+      "name": "Institute of Noetic Sciences",
+      "bio": "The Institute of Noetic Sciences, usually called IONS, is a non-profit research centre in Novato, California, founded in 1973 by the Apollo 14 astronaut Edgar Mitchell after a profound personal experience of discovery. Its work sits where scientific method meets direct inner experience: its own scientists run laboratory studies on meditation, intuition, channelling, intention and other experiences that mainstream research tends to pass over, and publish the results.\n\nAlongside the research, IONS offers an experiential side for the public. Most of it is online: a free e-course introducing noetic topics, free live webinars with its scientists and guests, and paid self-paced courses, among them a nine-module course on working with the wandering mind led by neuroscientist Arnaud Delorme. Members give on a sliding scale and in return join a worldwide community, with access to a large library of recorded talks and conference sessions, members-only gatherings and discounts on programmes and conferences. The institute also supports a network of community groups, and it shares its talks and research explainers on YouTube.",
+      "tier": "local_hero",
+      "entity_type": "organisation",
+      "founded_year": 1973,
+      "availability": "worldwide",
+      "city": "Novato, California",
+      "country": "United States",
+      "subjects": [
+        "conscious-science",
+        "consciousness",
+        "meditation"
+      ],
+      "website_url": "https://noetic.org/",
+      "booking_url": "https://noetic.org/experience/",
+      "youtube_url": "https://www.youtube.com/user/thenoeticsciences",
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "info@noetic.org",
+      "image_urls": [
+        "https://noetic.org/wp-content/uploads/2019/05/IONS_OriginalLogo-Blue@300x-100.jpg",
+        "https://noetic.org/wp-content/uploads/2019/02/LNS_4824-1024x683.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [
+    {
+      "title": "Meditation and Extraordinary Experiences ~ Dean Radin",
+      "url": "https://www.youtube.com/watch?v=YQcCOv6i_l0",
+      "subjects": [
+        "meditation",
+        "conscious-science"
+      ],
+      "channel": "Institute of Noetic Sciences"
+    },
+    {
+      "title": "Meditation and Our True Nature ~ Fred Travis",
+      "url": "https://www.youtube.com/watch?v=Fa-ykQLCHKY",
+      "subjects": [
+        "meditation",
+        "consciousness"
+      ],
+      "channel": "Institute of Noetic Sciences"
+    },
+    {
+      "title": "Meditation and Human Evolution ~ Shamini Jain",
+      "url": "https://www.youtube.com/watch?v=yiFYUVArm7c",
+      "subjects": [
+        "meditation",
+        "consciousness"
+      ],
+      "channel": "Institute of Noetic Sciences"
+    },
+    {
+      "title": "Psychic Abilities and the Illusion of Separation ~ Dean Radin PhD",
+      "url": "https://www.youtube.com/watch?v=_NpAJ6Zg9Xs",
+      "subjects": [
+        "conscious-science",
+        "consciousness"
+      ],
+      "channel": "Institute of Noetic Sciences"
+    },
+    {
+      "title": "The Science of Consciousness - Helané Wahbeh",
+      "url": "https://www.youtube.com/watch?v=zP8CO7n9Okk",
+      "subjects": [
+        "conscious-science",
+        "consciousness"
+      ],
+      "channel": "Institute of Noetic Sciences"
+    },
+    {
+      "title": "Consciousness and the Observer Effect | Dean Radin Ph.D | IONS",
+      "url": "https://www.youtube.com/watch?v=hB_2Qd5xNvE",
+      "subjects": [
+        "conscious-science",
+        "consciousness"
+      ],
+      "channel": "Institute of Noetic Sciences"
+    },
+    {
+      "title": "Dean Radin - The Future of Consciousness Research",
+      "url": "https://www.youtube.com/watch?v=PT8H7eNKIH8",
+      "subjects": [
+        "conscious-science"
+      ],
+      "channel": "Institute of Noetic Sciences"
+    }
+  ],
+  "books": [],
+  "courses": [
+    {
+      "title": "IONS Membership",
+      "url": "https://noetic.org/support/membership/",
+      "description": "Sliding-scale membership that funds the institute's research. Members can watch a library of recorded webinars and conference talks, join members-only online gatherings, and receive discounts and early access to programmes and conferences.",
+      "price": "CORE: annual gift of $60 to $999 or monthly gift of $10 to $83; CIRCLE: annual gift of $1,000 or more or monthly gift of $84 or more",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "conscious-science",
+        "consciousness"
+      ],
+      "image": "https://noetic.org/wp-content/uploads/2025/07/iStock-1198049185-e1753743605609.jpg"
+    },
+    {
+      "title": "Taming the Wandering Mind: Cultivating Clarity and Focus",
+      "url": "https://noetic.org/experience/taming-the-wandering-mind-course/",
+      "description": "A self-paced online course in nine modules with neuroscientist Arnaud Delorme on how attention moves and how to work with a wandering mind. Each module closes with a guided practice drawn from meditation and contemplative traditions.",
+      "price": "$59",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "mindfulness",
+        "conscious-science"
+      ],
+      "image": "https://noetic.org/wp-content/uploads/2019/02/dennis-rochel-730217-unsplash-800x720.jpg"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Noetics 101: The Science and Experience of Interconnection",
+      "url": "https://noetic.org/experience/noetics-101/",
+      "description": "A free e-course of fifteen short modules sent every other day over a month. Each one introduces a noetic topic such as intuition, intention or meditation, with exercises to try and suggestions for further reading.",
+      "featured": true,
+      "resource_type": "mini_course",
+      "subjects": [
+        "conscious-science",
+        "consciousness"
+      ],
+      "image": "https://noetic.org/wp-content/uploads/2019/05/IONS_OriginalLogo-Blue@300x-100.jpg"
+    },
+    {
+      "title": "ConnectIONS Live",
+      "url": "https://noetic.org/experience/connections-live/",
+      "description": "Free online webinars, held regularly, in which IONS scientists and guest speakers present research and practices, followed by questions from the audience.",
+      "featured": false,
+      "resource_type": "workshop",
+      "subjects": [
+        "consciousness",
+        "conscious-science"
+      ],
+      "image": "https://noetic.org/wp-content/uploads/2026/07/iStock-2182031117-300x300.jpg"
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "centre",
+    "rank": 46,
+    "hub": null,
+    "tier_evidence": "YouTube unreadable (consent page, 9 Nov 2026); Facebook, Instagram and X not fetched; no readable counts → 0 → local_hero",
+    "email": "yes",
+    "email_source": "https://noetic.org/contact/",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 13 source(s)",
+    "flags": [
+      "possible editorial-stature override: IONS is widely known (founded by astronaut Edgar Mitchell, 1973).",
+      "Scope: IONS is mainly a research institute with an experiential programme arm rather than a practice community; included because it runs courses, webinars, membership and community groups. Owner may judge it out of scope for 'centre'.",
+      "Email info@noetic.org is the general information desk (brand inbox); programs@noetic.org also published for programme questions.",
+      "No hub links: Cassandra Vieten (former IONS president per her existing plan) and Puma Fredy Quispe Singona appear in its videos, but the IONS pages read (staff, scientists and fellows, about) do not name either as a teacher there; teachers file written with an empty list.",
+      "Some IONS content touches fringe topics (a UAP research prize, a December webinar on Wilhelm Reich, orgone energy and UFOs); not conspiracy or political in the sense of the brief, but left out of the items. Owner may want to look.",
+      "Psychedelics: one recorded webinar (6 Nov 2026) on psychedelic-assisted therapy with Joe Tafur; a single item among much other work, left out and flagged.",
+      "Second image is an IONS lab photo showing a scientist (likely Dean Radin) at an experiment; first image is the logo.",
+      "Base: headquarters at Novato, California (footer address); the EarthRise campus in Petaluma is not mentioned on pages read.",
+      "YouTube subscriber count unreadable (consent page, 9 Nov 2026)."
+    ],
+    "left_out": [
+      "Mindfulness Meditation with IMMI ($79): framed as an 'Internet Mindfulness Meditation Intervention' to reduce stress, with health and mental-health research claims; left out under the health rule.",
+      "iRest – Integrative Restoration Meditation: framed around emotional resilience and rest; page not opened, left out to be safe.",
+      "Lucid Dreaming and Living Lucidly: run through a third party (Glidewing) with October dates; not current.",
+      "ConnectIONS Live: Biofield Therapy & Energy Healing video, Spontaneous Remission Bibliography: health framing.",
+      "Psychedelic webinar replay (Spiritual Healing and the Psychedelic Renaissance): psychedelics rule.",
+      "Videos from other channels on the videos page (New Thinking Allowed, Google TechTalks, Science and Nonduality, metaRising, The Moore Show), short 'I Am IONS' clips, and we7LVHJnXRE (failed oEmbed)."
+    ]
+  },
+  "images_final": true
+}

@@ -1,0 +1,71 @@
+{
+  "healer": {
+    "healer_slug": "the-pattern",
+    "location_source": null,
+    "no_public_base": "Pattern Home, Inc. publishes no headquarters city or country on the pages read; the contact page gives support hours in Eastern time only.",
+    "create": {
+      "name": "The Pattern",
+      "bio": "The Pattern is a personal astrology app made by Pattern Home, Inc. From a user's date, time and place of birth it builds a natal chart and turns it into plain-language readings, avoiding the usual astrological jargon. Its makers say they draw on long study of astrology and present the readings as material for self-reflection rather than forecasts or verdicts, so that users can recognise their own strengths and difficulties more clearly.\n\nThe core reading, called Your Pattern, describes character traits and tendencies. Transits follow the planetary cycles a person is moving through, past, present and to come, and a Time Travel tool shows the astrology of any chosen date. Bonds compares two charts to explore friendships and romantic relationships, with a separate feature for the changing cycles of a couple, and the app also carries a daily reading, audio episodes and new-moon guides through each month. Newer additions include an AI conversation feature informed by the user's chart and a feature for meeting people with compatible charts. The company's website offers a free natal chart calculator using whole-sign houses, and the app itself is free to download with paid tiers inside it.",
+      "tier": "local_hero",
+      "entity_type": "app",
+      "founded_year": null,
+      "availability": "worldwide",
+      "city": null,
+      "country": null,
+      "subjects": [
+        "astrology",
+        "soul-purpose",
+        "conscious-relationships"
+      ],
+      "website_url": "https://www.thepattern.com/",
+      "booking_url": "https://www.thepattern.com/app-features",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "contact@thepattern.com",
+      "image_urls": []
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [],
+  "free_resources": [
+    {
+      "title": "Your Natal Chart",
+      "url": "https://www.thepattern.com/natalchart",
+      "description": "A free birth chart calculator on the company's site: enter a name, birth date, time and place to see a chart drawn in the whole-sign house system, with a short note on why charts differ between house systems.",
+      "featured": true,
+      "resource_type": "download",
+      "subjects": [
+        "astrology"
+      ]
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "app",
+    "rank": 76,
+    "hub": null,
+    "held": "No usable image: every image on thepattern.com (a Wix site), including its logo and app icon, is served from static.wixstatic.com, which refuses our robots.txt request (403), and no other host carries its icon on the pages read. Also thin (one free resource, no published prices).",
+    "tier_evidence": "No readable follower counts (social accounts not fetched; YouTube unreadable, consent page, 9 Nov 2026) → 0 → local_hero. Published, for information: 'Used by millions worldwide' and Google Play Best of 2020 (site footer and about page).",
+    "email": "yes",
+    "email_source": "https://www.thepattern.com/contact-us",
+    "contact_form_url": "https://thepattern.zendesk.com/hc/en-us",
+    "bio_check": "OK: no 8-word runs against 5 source(s)",
+    "flags": [
+      "Held: no image from a host that allows us (Wix).",
+      "Thin: no offering with a published price (paid tiers are in-app only); one free resource; no video IDs on the site (the contact page mentions a YouTube channel but links none I could read).",
+      "Brand inbox: contact@thepattern.com (contact page, mailto). Help centre on Zendesk (not opened).",
+      "Features to note: an AI chat feature ('In-Depth') and a dating/connection feature ('Connect'); the bio mentions both neutrally. Owner may prefer to leave such an app out.",
+      "possible override by published user numbers ('used by millions worldwide').",
+      "Subjects: astrology, soul-purpose, conscious-relationships (relationship compatibility is a main feature)."
+    ],
+    "left_out": [
+      "Subscriptions (Go Deeper, Connect+, names from an app-store search snippet): prices not published on the site.",
+      "Images: all on static.wixstatic.com (refuses us)."
+    ]
+  }
+}

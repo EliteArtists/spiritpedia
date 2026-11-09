@@ -1,0 +1,103 @@
+{
+  "healer": {
+    "healer_slug": "arava-spiritual-center",
+    "location_source": "https://www.ehvam.org/moar/",
+    "create": {
+      "name": "Arava Spiritual Center",
+      "bio": "The Arava Spiritual Center, known in Hebrew by the short name MOAR, is a Tibetan Buddhist and yoga community at Moa Oasis near Tzofar, in the desert of Israel's central Arava valley, a few kilometres from the Jordanian border. It was opened in November 2014 as a temporary home for the planned Ehvam International Spiritual Center for Peace, and its halls and residences were built by the students themselves with ecological methods. Its founder and spiritual director is Lama Dvora-hla (Dvora Tzvieli), who earlier set up a network of Dharma study groups across Israel, and the centre is run by a non-profit association called Method and Wisdom.\n\nA community of around ninety students, including a small group of ordained monastics, gathers at the oasis for study terms through the year, learning Buddhist texts, meditation and yoga, and taking care of the site and its vegetarian kitchen together. Outside the terms many of them lead study groups elsewhere. Guests can join open evenings at the start and end of Shabbat, with singing, shared meals and talks by visiting teachers from different traditions, along with morning movement practice. Recordings of guided meditations and talks are shared on its YouTube channel, mostly in Hebrew.",
+      "tier": "local_hero",
+      "entity_type": "organisation",
+      "founded_year": 2014,
+      "availability": "worldwide",
+      "city": "Tzofar",
+      "country": "Israel",
+      "subjects": [
+        "meditation",
+        "yoga",
+        "spirituality"
+      ],
+      "website_url": "http://moar.org.il/he",
+      "booking_url": "http://moar.org.il/he/visit",
+      "youtube_url": "https://www.youtube.com/channel/UCVSNnh4YTyeTUPLVhe4N5_g",
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": null,
+      "image_urls": [
+        "http://moar.org.il/sites/default/files/sangha.JPG"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [
+    {
+      "title": "לאמה דבורה על 'אוואם - מרכז רוחני בינלאומי לשלום'",
+      "url": "https://www.youtube.com/watch?v=tBA7W1YNn90",
+      "subjects": [
+        "spirituality"
+      ],
+      "channel": "מרכז רוחני ערבה במואה Arava Spiritual Center"
+    },
+    {
+      "title": "מדיטציית טונגלן (לקיחה ונתינה) تأمل التونغلان Tonglen (أخذ وعطاء) 10.10.23",
+      "url": "https://www.youtube.com/watch?v=sbui-ojvfpE",
+      "subjects": [
+        "meditation"
+      ],
+      "channel": "מרכז רוחני ערבה במואה Arava Spiritual Center"
+    },
+    {
+      "title": "מדיטצית עוצמת האור עם לאמה דבורה הלה 8.10.23",
+      "url": "https://www.youtube.com/watch?v=_ucO1AAJaVg",
+      "subjects": [
+        "meditation"
+      ],
+      "channel": "מרכז רוחני ערבה במואה Arava Spiritual Center"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [
+    {
+      "title": "Shabbat with the Lama (open evenings)",
+      "url": "http://moar.org.il/he/node/4839",
+      "description": "Open gatherings at the start and close of Shabbat in the centre's main hall, with communal singing, music, a shared supper and talks by students and visiting teachers from several traditions. A short body practice session, including yoga, is held on Saturday mornings. Advance registration is required.",
+      "featured": true,
+      "resource_type": "practice",
+      "subjects": [
+        "spirituality",
+        "meditation"
+      ],
+      "image": "http://moar.org.il/sites/default/files/styles/large/public/%D7%A8%D7%99%D7%91%D7%95%D7%A2%20%D7%AA%D7%9E%D7%95%D7%A0%D7%94%20%D7%9C%D7%93%D7%A3%20%D7%94%D7%91%D7%99%D7%AA%20%D7%90%D7%AA%D7%A8%20%D7%9E%D7%95%D7%A2%D7%A8%20%D7%A9%D7%91%D7%AA%20%D7%A2%D7%9D%20%D7%94%D7%9C%D7%90%D7%9E%D7%94.png?itok=E02jcss1"
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "centre",
+    "rank": 44,
+    "hub": null,
+    "held": "Allegations about the current leadership in a reputable source: Wikipedia's article on Ehvam (https://en.wikipedia.org/wiki/Ehvam_-_International_Spiritual_Center_for_Peace) summarises a Haaretz report in which at least ten former students and relatives criticised the centre's methods under its founder and spiritual director Dvora Tzvieli (Lama Dvora): demands of unreserved loyalty, services expected of students, shunning of those who left, students turning to the Israeli Center for Cult Victims, and a reported 'tantric relationship' episode. Brief: hold for the owner. The same concerns bear on the existing lama-dvora listing.",
+    "tier_evidence": "YouTube unreadable (consent page, 9 Nov 2026); Facebook and Instagram not fetched; no readable counts → 0 → local_hero",
+    "email": "contact form",
+    "email_source": null,
+    "contact_form_url": "http://moar.org.il/he/contact_us",
+    "bio_check": "OK: no 8-word runs against 7 source(s)",
+    "flags": [
+      "HELD: cult-style allegations about the founder (Haaretz, via Wikipedia); Lama Dvora is already listed on Spiritpedia (lama-dvora), so the owner may want to review that listing too.",
+      "Hub link written for lama-dvora as founder (evidence: https://www.ehvam.org/ names her founder and spiritual director of the Arava Spiritual Center); apply only if the owner releases the hold.",
+      "Thin: no offerings after 12 Nov 2026 (the autumn mindfulness course with Lama Dvora began on 6 Nov 2026); one free resource and three videos, all three videos already on Lama Dvora's listing on dev.",
+      "moar.org.il is mostly in Hebrew and parts are stale (the home page still announces the 2017 study year); the site redirects https://www → http://moar.org.il/he.",
+      "Base: Moa Oasis near Tzofar, a moshav well under 5,000 people in the Central Arava; recorded as Tzofar for mapping.",
+      "Regional: southern Israel (Central Arava).",
+      "No email published on the pages read; the contact form appears on every moar.org.il page. linktr.ee contact link not opened.",
+      "Founded year 2014 is the opening of the Arava centre (ehvam.org/moar); Wikipedia gives 2013 for Ehvam.",
+      "YouTube subscriber count unreadable (consent page, 9 Nov 2026)."
+    ],
+    "left_out": [
+      "Mindfulness course with Lama Dvora (Fridays from 6 Nov 2026): started before 12 Nov 2026.",
+      "Video oyFYcx4w3T4 and YnAA7IV5H6I: already on Lama Dvora's listing; not repeated.",
+      "Ehvam's planned permanent centre and fundraising pages: not offerings."
+    ]
+  }
+}

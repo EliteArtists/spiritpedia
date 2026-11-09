@@ -1,0 +1,203 @@
+{
+  "healer": {
+    "healer_slug": "wild-flower-zen-sangha",
+    "location_source": "https://wildflowerzen.org/wild-flower-zen-sangha/",
+    "create": {
+      "name": "Wild Flower Zen Sangha",
+      "bio": "Wild Flower Zen Sangha is a lay Zen community based in Paris, with affiliated groups in Portugal and practitioners who join online from elsewhere. It was founded by Roshi Amy Hollowell, an American-born Zen teacher and poet who has lived in France since 1981, after she received dharma transmission in 2004 from Roshi Catherine Genno Pagès of the Dana Sangha near Paris. Sensei Joa Scetbon, her successor, also teaches for the sangha, leading a weekly evening sit in Paris and retreats of his own.\n\nThe community deliberately does without monks, priests, robes and a building of its own; its idea is that practice happens wherever life happens, and its name comes from the way wild flowers belong to their own place while growing everywhere. Each week there are early-morning sits on Zoom, a Thursday evening session with meditation and a dharma talk, a Saturday study group, and in-person sitting in Paris, Arles and the Drôme. Through the year it runs days of practice in Paris and residential retreats in France and Portugal, including 'retreats in the heart of life' held in everyday surroundings. The sangha is a French non-profit association; activities are offered for suggested donations.",
+      "tier": "local_hero",
+      "entity_type": "organisation",
+      "founded_year": 2004,
+      "availability": "worldwide",
+      "city": "Paris",
+      "country": "France",
+      "subjects": [
+        "meditation",
+        "spiritual-awakening",
+        "non-duality"
+      ],
+      "website_url": "https://wildflowerzen.org/",
+      "booking_url": "https://wildflowerzen.org/wfz-retraites/",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "info@wildflowerzen.org",
+      "image_urls": [
+        "https://wildflowerzen.org/wp-content/uploads/2015/03/Meditation_sur_la_plage_500px.jpg",
+        "https://wildflowerzen.org/wp-content/uploads/2019/06/IMG_2160-e1561546810156.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Retreats and Day Practice",
+      "url": "https://wildflowerzen.org/wfz-retraites/",
+      "description": "The sangha's retreat programme, mostly led by Roshi Amy Hollowell with some by Sensei Joa Scetbon: days of practice in Paris that can also be joined online, and weekend and week-long residential retreats in France and Portugal. Participants become members of the association.",
+      "price": "Montant suggéré : 20€/jour",
+      "product_type": "retreat",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "spiritual-awakening"
+      ],
+      "image": "https://wildflowerzen.org/wp-content/uploads/2017/04/Logo_WLZ_Relooking2_H60.png"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "WFZ-Méditations",
+      "url": "https://wildflowerzen.org/wfz-meditations/",
+      "description": "How to join the sangha's regular sitting: weekday early-morning meditation and a Thursday evening dharma session on Zoom (Paris time), plus in-person groups in Paris, Arles and the Drôme. Online practice is by donation; email for the Zoom link.",
+      "featured": true,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://wildflowerzen.org/wp-content/uploads/2017/04/Logo_WLZ_Relooking2_H60.png"
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "centre",
+    "rank": 20,
+    "hub": null,
+    "tier_evidence": "No YouTube channel is linked from its own site; the lead's channel 'Wild Flower Zen Sangha' (where our videos come from) is unreadable (consent page, 9 Nov 2026) → 0 readable → local_hero",
+    "email": "yes",
+    "email_source": "https://wildflowerzen.org/",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 7 source(s)",
+    "flags": [
+      "Main YouTube count unreadable (consent page, 9 Nov 2026); youtube_url left null because the site does not link the channel and I did not open channel pages.",
+      "Domain from our own Amy Hollowell plan; the site names Wild Flower Zen Sangha throughout.",
+      "Duplicate check: our Amy Hollowell plan uses wildflowerzen.org, so the centre's and the teacher's links overlap.",
+      "Email info@wildflowerzen.org is the sangha inbox (mailto on the home page; footer on every page).",
+      "Retreat dates not listed: the retreats page (last updated March 2026) gives day-and-month dates with no year, and the home page announces a new 2026-27 programme, so I could not be sure the dates are current. Registration runs through Google Forms (not opened). One undated retreat item is used; its price is the published suggested donation for retreats.",
+      "Founded year 2004: the teachers page says Amy Hollowell founded Wild Flower Zen after receiving transmission in 2004.",
+      "Hub links: Amy Hollowell (founder) and Joa Scetbon (instructor), both on the teachers page. Catherine Genno Pagès is named only as Amy's teacher, so not linked.",
+      "Site is bilingual (French and English); the price is copied in its French form as published.",
+      "All 12 videos are already on dev (11 under Amy Hollowell, 1 under Joa Scetbon); 'Buddhism for the Environmental Crisis' left out to stay clear of political framing.",
+      "Photos: a beach sit from its retreats page and a garden photo from its home page; no portrait of a building, since the sangha has none."
+    ],
+    "left_out": [
+      "Retreat in the time of coronavirus and other old blog posts: past.",
+      "Dated retreats (Dec, Feb, Apr, May, Jul): year unconfirmed, see flags.",
+      "Coimbra and other Portuguese retreats: run with the Portuguese affiliate (sanghazenpt.org, not opened)."
+    ]
+  },
+  "videos": [
+    {
+      "title": "Into the Wild Path of Zen (2015)",
+      "url": "https://www.youtube.com/watch?v=CXd8j2ZWyWU",
+      "subjects": [
+        "meditation",
+        "spiritual-awakening"
+      ],
+      "channel": "Wild Flower Zen Sangha"
+    },
+    {
+      "title": "Who Am I - Roshi Amy Hollowell",
+      "url": "https://www.youtube.com/watch?v=VfnnuX6f2XM",
+      "subjects": [
+        "non-duality",
+        "spiritual-awakening"
+      ],
+      "channel": "Wild Flower Zen Sangha"
+    },
+    {
+      "title": "Letting Go (2015)",
+      "url": "https://www.youtube.com/watch?v=NQoPsHytLkU",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "channel": "Wild Flower Zen Sangha"
+    },
+    {
+      "title": "How did Wild Flower Start?",
+      "url": "https://www.youtube.com/watch?v=YEbKl1KLwaI",
+      "subjects": [
+        "spirituality",
+        "meditation"
+      ],
+      "channel": "Wild Flower Zen Sangha"
+    },
+    {
+      "title": "Be Home Where You Are - Wildflower Zen",
+      "url": "https://www.youtube.com/watch?v=bjogNur2clg",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "channel": "Wild Flower Zen Sangha"
+    },
+    {
+      "title": "Cultivating Stillness - Wildflower Zen",
+      "url": "https://www.youtube.com/watch?v=qKrbqPpTGPs",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "channel": "Wild Flower Zen Sangha"
+    },
+    {
+      "title": "Into The Heart of Life - Roshi Amy - with Zen Sangha Belgium",
+      "url": "https://www.youtube.com/watch?v=RwEzw-LBgAQ",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "channel": "Wild Flower Zen Sangha"
+    },
+    {
+      "title": "Just This - Wildflower Zen",
+      "url": "https://www.youtube.com/watch?v=gwFbblRMeLU",
+      "subjects": [
+        "non-duality",
+        "meditation"
+      ],
+      "channel": "Wild Flower Zen Sangha"
+    },
+    {
+      "title": "On the Precepts - Part I (2016)",
+      "url": "https://www.youtube.com/watch?v=OnsoeBMF8nw",
+      "subjects": [
+        "ancient-wisdom",
+        "spirituality"
+      ],
+      "channel": "Wild Flower Zen Sangha"
+    },
+    {
+      "title": "On the Heart Sutra Part I - Nowness (2015)",
+      "url": "https://www.youtube.com/watch?v=OPvdW4FEtJg",
+      "subjects": [
+        "ancient-wisdom",
+        "non-duality"
+      ],
+      "channel": "Wild Flower Zen Sangha"
+    },
+    {
+      "title": "On the Precepts - Part II (2016)",
+      "url": "https://www.youtube.com/watch?v=L42752W3Dmw",
+      "subjects": [
+        "ancient-wisdom",
+        "spirituality"
+      ],
+      "channel": "Wild Flower Zen Sangha"
+    },
+    {
+      "title": "A Tiny Bit of Space - Wildflower Zen",
+      "url": "https://www.youtube.com/watch?v=0kxSlXDbILk",
+      "subjects": [
+        "meditation",
+        "spiritual-awakening"
+      ],
+      "channel": "Wild Flower Zen Sangha"
+    }
+  ],
+  "images_final": true
+}

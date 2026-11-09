@@ -1,0 +1,28 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 1097,
+    "healer_slug": "mountain-stream-meditation"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "c27dc1e3-3fb0-4783-bde1-bda23c9b9bd7",
+      "slug": "bhavana-a-year-of-committed-practice-with-adam-stonebraker",
+      "title": "Bhāvanā: A Year of Committed Practice with Adam Stonebraker"
+    },
+    {
+      "table": "free_resources",
+      "id": "2beb576e-b610-4076-9109-232fa5d4d1f1",
+      "slug": "rise-reflect-onward",
+      "title": "Rise & Reflect, Onward"
+    },
+    {
+      "table": "free_resources",
+      "id": "161b4f86-b77a-4652-9c96-eed8a3ac37b4",
+      "slug": "audio-talks-3",
+      "title": "Audio Talks"
+    }
+  ],
+  "at": "2026-11-09T23:52:21.737Z"
+}

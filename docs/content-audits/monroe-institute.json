@@ -1,0 +1,171 @@
+{
+  "healer": {
+    "healer_slug": "monroe-institute",
+    "location_source": "https://www.monroeinstitute.org/pages/contact",
+    "create": {
+      "name": "Monroe Institute",
+      "bio": "The Monroe Institute is a non-profit centre for the exploration of consciousness, established in 1971 by the broadcasting businessman Robert A. Monroe, whose own out-of-body experiences led him to research how sound could guide people into expanded states of awareness. Its method rests on what it now calls Monroe Sound Science, layered binaural audio that encourages the brain into particular states, combined with guided imagery and group work, and it describes no belief requirement beyond an open mind and a sense that life extends beyond the physical.\n\nThe home campus covers several hundred acres in the Blue Ridge foothills of Nelson County, Virginia, with two retreat houses, walking paths, a labyrinth and a lake. Its best-known residential programme is the Gateway Voyage, a week-long introduction that leads on to advanced courses on themes such as guidance, intuition and the states beyond death, and there is an EEG-monitored research programme called Discovery. Programmes also run at partner venues in the United States and abroad, and certified trainers lead weekend workshops worldwide. For home practice it offers an online version of Gateway, a meditation app, free audio meditations and a podcast, and it works with researchers on studies of altered states.",
+      "tier": "local_hero",
+      "entity_type": "organisation",
+      "founded_year": 1971,
+      "availability": "worldwide",
+      "city": "Faber, Virginia",
+      "country": "United States",
+      "subjects": [
+        "consciousness",
+        "meditation",
+        "dreamwork"
+      ],
+      "website_url": "https://www.monroeinstitute.org/",
+      "booking_url": "https://www.monroeinstitute.org/pages/programs",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "info@monroeinstitute.org",
+      "image_urls": [
+        "https://www.monroeinstitute.org/cdn/shop/files/DSC_4357_web.png",
+        "https://www.monroeinstitute.org/cdn/shop/files/6eab7085b7d1e77fc09aaa07d75fc8827fc18814_2000x.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [
+    {
+      "title": "The Relationship Between NDEs and OBEs. Scott Taylor at Monroe Institute",
+      "url": "https://www.youtube.com/watch?v=15k5RVDdd74",
+      "subjects": [
+        "nde",
+        "consciousness"
+      ],
+      "channel": "Monroe Institute"
+    }
+  ],
+  "books": [],
+  "courses": [
+    {
+      "title": "Gateway Voyage",
+      "url": "https://www.monroeinstitute.org/products/gateway-voyage",
+      "description": "The institute's foundational residential programme: six nights of guided audio exercises, group sharing and talks that introduce expanded states of awareness and the non-physical. It is the gateway to most of the advanced courses and runs on the Virginia campus and at partner venues.",
+      "price": "Residential Program $2,695.00 USD",
+      "product_type": "retreat",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "consciousness",
+        "meditation"
+      ],
+      "image": "http://www.monroeinstitute.org/cdn/shop/files/Consciousness_Advanced.png?v=1714413608"
+    },
+    {
+      "title": "Gateway Voyage Online",
+      "url": "https://www.monroeinstitute.org/products/gateway-voyage-online",
+      "description": "A self-paced online version of Gateway taken over eight to twelve weeks, with exercises narrated by Robert Monroe himself. It can be started at any time from home.",
+      "price": "Tuition: $595",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "consciousness",
+        "meditation"
+      ],
+      "image": "http://www.monroeinstitute.org/cdn/shop/files/GVonlinecroppedv2.png?v=1756149238"
+    },
+    {
+      "title": "Discovery",
+      "url": "https://www.monroeinstitute.org/products/discovery",
+      "description": "A residential research programme in which participants' brainwaves are recorded by EEG while they work with the institute's audio exercises, so that changes in state can be observed as they happen.",
+      "price": "Residential Program $2,895.00 USD",
+      "product_type": "retreat",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "consciousness",
+        "conscious-science"
+      ],
+      "image": "http://www.monroeinstitute.org/cdn/shop/products/Discovery.png?v=1576263917"
+    },
+    {
+      "title": "Exploring Consciousness",
+      "url": "https://www.monroeinstitute.org/products/exploring-consciousness",
+      "description": "A regional weekend workshop led by certified Monroe trainers in many countries, offering a first taste of the institute's methods closer to home.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "consciousness",
+        "meditation"
+      ],
+      "image": "http://www.monroeinstitute.org/cdn/shop/products/New-Year.png?v=1576265689"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Free Meditations",
+      "url": "https://www.monroeinstitute.org/blogs/free-meditations",
+      "description": "A library of free audio journeys from the institute, from ambient soundscapes to guided pieces on contemplation, gratitude and lucid dreaming.",
+      "featured": true,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation",
+        "consciousness"
+      ],
+      "image": "https://cdn.shopify.com/s/files/1/0263/5926/7437/files/v5Social_sharing_image_1200x628_1x_ed299361-e7a1-4433-9712-80907a9b5b91.png?v=1793200399"
+    },
+    {
+      "title": "Lucid Dream",
+      "url": "https://www.monroeinstitute.org/blogs/free-meditations/lucid-dream",
+      "description": "A free audio piece from the institute's collection for exploring dreaming in an expanded state of awareness.",
+      "featured": false,
+      "resource_type": "meditation",
+      "subjects": [
+        "dreamwork",
+        "consciousness"
+      ],
+      "image": "http://www.monroeinstitute.org/cdn/shop/articles/MD_Thumbnail.png?v=1750959903"
+    },
+    {
+      "title": "Expanding on Consciousness Podcast",
+      "url": "https://www.monroeinstitute.org/blogs/podcasts",
+      "description": "The institute's podcast of conversations about consciousness, out-of-body experience and its programmes.",
+      "featured": false,
+      "resource_type": "practice",
+      "subjects": [
+        "consciousness"
+      ],
+      "image": "https://cdn.shopify.com/s/files/1/0263/5926/7437/files/v5Social_sharing_image_1200x628_1x_ed299361-e7a1-4433-9712-80907a9b5b91.png?v=1793200399"
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "centre",
+    "rank": 34,
+    "hub": null,
+    "tier_evidence": "YouTube unreadable (consent page, 9 Nov 2026); Instagram/Facebook not fetched; no readable counts → local_hero. Home page publishes '50,000+ Monroe Program Attendees' and '1M Global Community'.",
+    "tier_override": null,
+    "email": "yes",
+    "email_source": "https://www.monroeinstitute.org/pages/contact",
+    "contact_form_url": "https://www.monroeinstitute.org/pages/contact",
+    "bio_check": "OK: no 8-word runs against 12 source(s)",
+    "flags": [
+      "Instruction-like text: the site's robots.txt (Shopify storefront boilerplate) carries text addressed to AI agents about shopping tools; ignored.",
+      "Possible override by published student counts: '50,000+ Monroe Program Attendees' on the home page (would support luminary); not raised.",
+      "Possible editorial-stature override: well-known institute (Gateway Experience, Hemi-Sync).",
+      "In scope? A consciousness-exploration institute using binaural audio rather than a traditional practice community; owner to confirm it fits as a centre.",
+      "Health rule: the site promotes Distant Healing (Dolphin Energy Club), an Energy Medicine course and 'Going Home' (support around death and dying); all left out.",
+      "Scott M Taylor appears only in a video title on its channel (already on dev under scott-m-taylor); the site does not name him, so no hub link.",
+      "Base: Faber, Virginia (Contact page address); Faber is a small community, likely under 5,000 people. Regional: rural central Virginia.",
+      "Brand inbox: info@monroeinstitute.org.",
+      "No youtube_url: the pages read did not link the channel."
+    ],
+    "left_out": [
+      "Dolphin Energy Club distant healing, Energy Medicine and Energy Medicine Practicum: health rule.",
+      "Going Home: framed around dying and life-threatening illness.",
+      "Exploring Past Lives Virtual, Connecting With Your Guides and other advanced programmes: kept to the four core entry programmes.",
+      "Expand app: a separate product; not listed as an item."
+    ]
+  },
+  "images_final": true
+}

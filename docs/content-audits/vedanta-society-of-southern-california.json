@@ -1,0 +1,179 @@
+{
+  "healer": {
+    "healer_slug": "vedanta-society-of-southern-california",
+    "location_source": "https://vedanta.org/vedanta-society/",
+    "create": {
+      "name": "Vedanta Society of Southern California",
+      "bio": "The Vedanta Society of Southern California is a branch of the Ramakrishna Order of India, the monastic movement that follows Sri Ramakrishna, Sri Sarada Devi and Swami Vivekananda. Swami Prabhavananda came to Hollywood in 1929 to begin the work, on land given by a family who had hosted Vivekananda on his visit to Los Angeles three decades earlier, and the small white temple with its three domes was dedicated in 1938. Writers such as Aldous Huxley, Gerald Heard and Christopher Isherwood were drawn to it in the 1940s. Swami Swahananda led it from 1976 to 2012, and Swami Sarvadevananda is its minister today.\n\nFrom its Hollywood headquarters, where the temple stands beside a monastery, a convent, a library and a bookshop, the society runs branch centres in San Diego, Santa Barbara, Trabuco Canyon and South Pasadena, and a retreat house at Piñon Hills. Monks and nuns lead free weekly classes on the Bhagavad Gita, the Upanishads and the Gospel of Sri Ramakrishna, alongside daily meditation and worship, Sunday talks, festivals and day retreats. Many classes are streamed live, and recorded talks are kept online as video and audio. Students can also stay at a monastery for up to six weeks of study and practice.",
+      "tier": "local_hero",
+      "entity_type": "organisation",
+      "founded_year": 1929,
+      "availability": "worldwide",
+      "city": "Los Angeles, California",
+      "country": "United States",
+      "subjects": [
+        "non-duality",
+        "ancient-wisdom",
+        "meditation"
+      ],
+      "website_url": "https://vedanta.org/",
+      "booking_url": "https://vedanta.org/classes/",
+      "youtube_url": "https://www.youtube.com/channel/UCoeQClkDRaj9uABKHfHJUdw",
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "info@vedanta.org",
+      "image_urls": [
+        "https://vedanta.org/wp-content/uploads/2014/02/VedantaTemple3-1.jpg",
+        "https://vedanta.org/wp-content/uploads/2016/03/01steps_and_temple.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [
+    {
+      "title": "Unconditional Love of Jesus and Ma Sarada by Swami Sarvadevananda",
+      "url": "https://www.youtube.com/watch?v=84lWmJO0PDQ",
+      "subjects": [
+        "spirituality",
+        "mysticism"
+      ],
+      "channel": "Vedanta Society of Southern California"
+    },
+    {
+      "title": "How do we know we have reached enlightenment? —Swami Sarvadevananda",
+      "url": "https://www.youtube.com/watch?v=U59uFtHCqnE",
+      "subjects": [
+        "spiritual-awakening",
+        "non-duality"
+      ],
+      "channel": "Vedanta Society of Southern California"
+    },
+    {
+      "title": "Vivekananda’s Hymns on Ramakrishna · Swami Yogatmananda",
+      "url": "https://www.youtube.com/watch?v=O-c4NsfoA_M",
+      "subjects": [
+        "ancient-wisdom",
+        "spirituality"
+      ],
+      "channel": "Vedanta Society of Southern California"
+    },
+    {
+      "title": "The Challenge of Self-Acceptance - Swami Dhyanayogananda",
+      "url": "https://www.youtube.com/watch?v=WAvw_lHSgnM",
+      "subjects": [
+        "spirituality",
+        "ancient-wisdom"
+      ],
+      "channel": "Ramakrishna Monastery"
+    },
+    {
+      "title": "Maha Kumbha Mela: A Pilgrim’s Journey into India’s Sacred Heart · Swami Chidekananda",
+      "url": "https://www.youtube.com/watch?v=i0571zmwGYw",
+      "subjects": [
+        "spirituality",
+        "ancient-wisdom"
+      ],
+      "channel": "Vedanta Society of Southern California"
+    }
+  ],
+  "books": [],
+  "courses": [
+    {
+      "title": "Student Program",
+      "url": "https://vedanta.org/student-program/",
+      "description": "A stay of up to six weeks at one of the society's monasteries, sharing the monks' daily routine while studying Vedanta, scripture, comparative religion or Sanskrit. Room and board and library use are provided, with meditation guidance on request.",
+      "price": "Contact for pricing",
+      "product_type": "retreat",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "ancient-wisdom",
+        "meditation"
+      ],
+      "image": "https://vedanta.org/wp-content/uploads/2014/02/VedantaTemple3-1.jpg"
+    },
+    {
+      "title": "Antaryoga Retreats at Piñon Hills",
+      "url": "https://vedanta.org/pujas-retreats-and-other-events/",
+      "description": "Day retreats on chosen Saturdays at the society's retreat house in the high desert, led by Pravrajika Dayaprana. Scripture is read aloud and reflected on, with group chanting, silence and a shared meal. Registration is by email.",
+      "price": "Contact for pricing",
+      "product_type": "retreat",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "ancient-wisdom"
+      ],
+      "image": "https://vedanta.org/wp-content/uploads/2016/07/11-300x230.jpg?x34508"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Weekly Scripture Classes",
+      "url": "https://vedanta.org/classes/",
+      "description": "Free, drop-in classes led by monks and nuns on the Bhagavad Gita, the Upanishads, the Gospel of Sri Ramakrishna and Vivekananda's writings, with time for questions. They meet in Hollywood, San Diego and Trabuco Canyon each week and in Santa Barbara monthly, and several are streamed.",
+      "featured": true,
+      "resource_type": "workshop",
+      "subjects": [
+        "ancient-wisdom",
+        "non-duality"
+      ],
+      "image": "https://vedanta.org/wp-content/uploads/2014/02/VedantaTemple3-1.jpg"
+    },
+    {
+      "title": "Video Talks",
+      "url": "https://vedanta.org/video-talks/",
+      "description": "Playlists of recorded Sunday talks, weekly classes and guest lectures from the Hollywood, Santa Barbara and Trabuco Canyon centres, free to watch.",
+      "featured": false,
+      "resource_type": "practice",
+      "subjects": [
+        "spirituality",
+        "ancient-wisdom"
+      ],
+      "image": "https://vedanta.org/wp-content/uploads/2014/02/VedantaTemple3-1.jpg"
+    },
+    {
+      "title": "Audio Talks",
+      "url": "https://vedanta.org/audio-talks/",
+      "description": "An archive of recorded talks by the society's ministers, resident monks and nuns, and visiting swamis, arranged by speaker.",
+      "featured": false,
+      "resource_type": "practice",
+      "subjects": [
+        "spirituality",
+        "non-duality"
+      ],
+      "image": "https://vedanta.org/wp-content/uploads/2014/02/VedantaTemple3-1.jpg"
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "centre",
+    "rank": 42,
+    "hub": null,
+    "tier_evidence": "YouTube unreadable (consent page, 9 Nov 2026); Facebook not fetched; no other readable counts → 0 readable → local_hero",
+    "email": "yes",
+    "email_source": "https://vedanta.org/contact/",
+    "contact_form_url": "https://vedanta.org/contact/",
+    "bio_check": "OK: no 8-word runs against 9 source(s)",
+    "flags": [
+      "possible editorial-stature override: a long-established Ramakrishna Order centre (from 1929) with a well-known history (Huxley, Heard, Isherwood).",
+      "Email info@vedanta.org is the society's general inbox (brand inbox).",
+      "No hub links: Swami Sarvapriyananda appears in the Audio Talks list (https://vedanta.org/audio-talks/), but the contact page says he no longer lives there and is now minister of the Vedanta Society of New York; not linked as a current teacher. Owner to decide whether a former-teacher link is wanted.",
+      "Founding year: the society's history page says 1929 (Prabhavananda's arrival; incorporated 1934); the student programme page says founded 1930. Used 1929.",
+      "Base recorded as Los Angeles, California: headquarters are in Hollywood, a district of Los Angeles.",
+      "youtube_url is the channel linked across vedanta.org (channel ID form); the site also links branch channels @RamakrishnaMonastery and @SantaBarbaraVedantaTemple. One video (Ramakrishna Monastery, Trabuco Canyon branch) is from a branch channel.",
+      "Images: the first is a darkened hero banner of the Hollywood temple; the second, a smaller (375 px) photo of the temple steps.",
+      "YouTube subscriber count unreadable (consent page, 9 Nov 2026)."
+    ],
+    "left_out": [
+      "Video 4z1Ds1WWXuI: failed oEmbed.",
+      "Santa Barbara retreat video (part 4 of a series): left out as a fragment.",
+      "Swami Sarvapriyananda video hNQTj64PPvI is already on his own listing.",
+      "Membership: page not opened; no fee published on pages read.",
+      "Pujas and festivals: dated by the Hindu calendar; not listed."
+    ]
+  },
+  "images_final": true
+}

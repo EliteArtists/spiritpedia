@@ -1,0 +1,34 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 1079,
+    "healer_slug": "parayana-vihara"
+  },
+  "rows": [
+    {
+      "table": "free_resources",
+      "id": "fb6e76a6-7704-40e9-8af9-3442383c0ec5",
+      "slug": "sunday-at-the-vihara",
+      "title": "Sunday at the Vihara"
+    },
+    {
+      "table": "free_resources",
+      "id": "a9729cd8-3ff9-4922-a207-dee1aa2b91b7",
+      "slug": "wednesday-evening-puja",
+      "title": "Wednesday Evening Puja"
+    },
+    {
+      "table": "free_resources",
+      "id": "3d1c0c60-5125-41de-ac9b-03c82af88a30",
+      "slug": "chanting",
+      "title": "Chanting"
+    },
+    {
+      "table": "free_resources",
+      "id": "0e2ad953-5101-4bf0-aad5-48eae1c2d075",
+      "slug": "learn-dhamma-resources",
+      "title": "Learn: Dhamma Resources"
+    }
+  ],
+  "at": "2026-11-09T23:43:35.966Z"
+}

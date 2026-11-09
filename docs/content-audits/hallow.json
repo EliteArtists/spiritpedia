@@ -1,0 +1,116 @@
+{
+  "healer": {
+    "healer_slug": "hallow",
+    "location_source": null,
+    "no_public_base": "Hallow, Inc. publishes no headquarters city or country on the pages read (home, about, press, help-centre pricing articles).",
+    "create": {
+      "name": "Hallow",
+      "bio": "Hallow is a Catholic prayer and meditation app made by Hallow, Inc. Its chief executive and co-founder, Alex Jones, grew up Catholic, drifted away and became interested in secular meditation before going looking for the meeting point between meditation and faith. He and a small team left their jobs to build the app, which launched at the end of 2018 and draws on the Church's own contemplative methods rather than secular techniques.\n\nThe app holds audio-guided sessions of many kinds of Christian prayer: the Rosary and Divine Mercy Chaplet, the daily Examen, Lectio Divina, Christian meditation in silence, the Liturgy of the Hours, novenas and the daily Gospel and Mass readings. Long series such as Bible in a Year and Catechism in a Year with Fr. Mike Schmitz sit beside short daily reflections, sacred music and audiobooks of spiritual classics, and well-known Catholic voices, including the actor Jonathan Roumie, lead some of the sessions. Seasonal community challenges run through Lent and Advent. Much of the content is free; a paid subscription opens the full library, and parishes and schools can arrange group access. Its website carries free step-by-step guides to many traditional prayers.",
+      "tier": "local_hero",
+      "entity_type": "app",
+      "founded_year": 2018,
+      "availability": "worldwide",
+      "city": null,
+      "country": null,
+      "subjects": [
+        "meditation",
+        "mysticism",
+        "spirituality"
+      ],
+      "website_url": "https://hallow.com/",
+      "booking_url": "https://hallow.com/how-to-pray/",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "info@hallow.app",
+      "image_urls": [
+        "https://hallow.com/opengraph-image.png"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [
+    {
+      "title": "How to Pray the Rosary Step by Step | Guided Rosary",
+      "url": "https://www.youtube.com/watch?v=agv8noofrvg",
+      "subjects": [
+        "meditation",
+        "mysticism"
+      ],
+      "channel": "Hallow: Prayer & Meditation"
+    }
+  ],
+  "books": [],
+  "courses": [
+    {
+      "title": "Hallow Subscription",
+      "url": "https://help.hallow.com/en/articles/2880438-how-much-does-the-subscription-cost",
+      "description": "An optional paid plan on top of the free app, starting with a free trial for individuals. It opens the full set of daily reflections, rosaries and chaplets, night prayers, music radio, the Lent and Advent challenges and audiobooks; a family plan covers up to six people.",
+      "price": "Individual Annual Plan: $69.99/year; Individual Monthly Plan: $9.99/month; Friends & Family Annual Plan: $119.99/year (United States)",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "image": "https://hallow.com/opengraph-image.png"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "How to Pray the Rosary: Guide to the Rosary Prayer",
+      "url": "https://hallow.com/blog/how-to-pray-the-rosary/",
+      "description": "An illustrated, step-by-step guide to praying the Rosary, from the Sign of the Cross and the Creed through the five decades to the closing prayer, with the text of each prayer and the four sets of Mysteries to reflect on.",
+      "featured": true,
+      "resource_type": "practice",
+      "subjects": [
+        "meditation",
+        "mysticism"
+      ],
+      "image": "https://hallow.com/wp-content/uploads/2019/09/image.png"
+    },
+    {
+      "title": "How to Pray",
+      "url": "https://hallow.com/how-to-pray/",
+      "description": "A free index of short guides to traditional Christian prayer forms, including the daily Examen, Lectio Divina, silent Christian meditation, the Liturgy of the Hours, novenas and praying with the Gospels.",
+      "featured": false,
+      "resource_type": "practice",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "image": "https://hallow.com/wp-content/uploads/2021/06/31_l-1024x611.png"
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "app",
+    "rank": 66,
+    "hub": null,
+    "tier_evidence": "No readable follower counts (social accounts not fetched; YouTube unreadable, consent page, 9 Nov 2026) → 0 → local_hero. No user numbers published on the pages read beyond '#1 prayer app' and 'hundreds of thousands of rosaries' a day (rosary guide).",
+    "email": "yes",
+    "email_source": "https://hallow.com/about/",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 7 source(s)",
+    "flags": [
+      "possible editorial-stature override / possible override by published user numbers: widely reported as a top-ranked app (press page headlines); no user count published on its own pages.",
+      "Brand inbox: info@hallow.app (mailto on the About page); press@hallow.app on /press/; support@hallow.app appears in page data only.",
+      "Christian (Catholic) prayer app: subjects chosen as meditation, mysticism, spirituality since the list has no Christian-prayer subject; owner may prefer otherwise.",
+      "Health rule: the site and subscription include a 'Sleep' section and the title mentions sleep; left out of the bio and items ('night prayer' mentioned only as prayer).",
+      "Political check: the rosary guide mentions an archbishop's Election Day 'Rosary for Peace' in passing; not political-centred, nothing used.",
+      "Pricing is from help.hallow.com (its help centre, robots allows, Crawl-delay 1 respected).",
+      "Press videos on /press/ are third-party interviews about the app (EWTN, CatholicTV etc.); only Hallow's own rosary video used.",
+      "Image is the site's own og image (product mock-up with the text 'The #1 Catholic Meditation App').",
+      "Base: not published; city and country null."
+    ],
+    "left_out": [
+      "Sleep prayers and meditations: health rule.",
+      "Third-party press videos.",
+      "Fr. Mike Schmitz, Bishop Barron, Jonathan Roumie and Mark Wahlberg: not on Spiritpedia; named only where the help centre names them (Roumie and Fr. Mike in the bio)."
+    ]
+  },
+  "images_final": true
+}

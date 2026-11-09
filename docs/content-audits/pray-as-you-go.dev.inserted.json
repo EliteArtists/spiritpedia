@@ -1,0 +1,28 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 1083,
+    "healer_slug": "pray-as-you-go"
+  },
+  "rows": [
+    {
+      "table": "free_resources",
+      "id": "00273a36-0995-444e-a6a7-e8d7c67ec493",
+      "slug": "imaginative-contemplation-exercises",
+      "title": "Imaginative Contemplation Exercises"
+    },
+    {
+      "table": "free_resources",
+      "id": "812deed2-2df8-476c-80de-e77dfcfd22ea",
+      "slug": "how-to-pray-with-lectio-divina",
+      "title": "How to Pray with Lectio Divina"
+    },
+    {
+      "table": "free_resources",
+      "id": "ed423aef-b9fc-4248-84d4-4cd65b0dba4c",
+      "slug": "examens",
+      "title": "Examens"
+    }
+  ],
+  "at": "2026-11-09T23:49:07.192Z"
+}

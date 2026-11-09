@@ -1,0 +1,169 @@
+{
+  "healer": {
+    "healer_slug": "mission-dharma",
+    "location_source": "https://www.missiondharma.org/",
+    "create": {
+      "name": "Mission Dharma",
+      "bio": "Mission Dharma is a long-standing insight meditation sangha that grew up in the Mission District of San Francisco and has now met for close to four decades. Its guiding teacher is Howard 'Howie' Cohn, a senior teacher at Spirit Rock who has practised since 1972 and led vipassana retreats since the mid-1980s; his own study has ranged across Theravada, Zen, Dzogchen and Advaita, with a strong influence from H.W.L. Poonja. A volunteer leadership group and board look after the community's practical life.\n\nThe heart of Mission Dharma is a Tuesday evening gathering: a forty-minute sit, then questions and a dharma talk from Howie or a guest teacher. It now meets on Zoom and is streamed live on YouTube, and occasional half-day retreats bring people together in person in San Francisco. Everything runs on generosity, with a small suggested donation that no one is required to give. Over the years many well-known insight teachers have given talks there, and a long archive of recorded talks going back more than a decade is shared freely on the website and YouTube. Howie also teaches residential retreats at Spirit Rock, which the sangha's website lists for its members.",
+      "tier": "local_hero",
+      "entity_type": "organisation",
+      "founded_year": 1988,
+      "availability": "worldwide",
+      "city": "San Francisco, California",
+      "country": "United States",
+      "subjects": [
+        "meditation",
+        "mindfulness",
+        "spiritual-awakening"
+      ],
+      "website_url": "https://www.missiondharma.org/",
+      "booking_url": "https://www.missiondharma.org/tuesday-night-schedule.html",
+      "youtube_url": "https://www.youtube.com/@missiondharma415",
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": null,
+      "image_urls": []
+    }
+  },
+  "teaches_at": [],
+  "books": [],
+  "courses": [],
+  "free_resources": [
+    {
+      "title": "Tuesday Night Schedule",
+      "url": "https://www.missiondharma.org/tuesday-night-schedule.html",
+      "description": "The sangha's weekly Tuesday evening meeting on Zoom (Pacific time), usually led by Howie Cohn: a period of sitting meditation, then questions and a dharma talk. The link comes with the weekly email; a small donation is suggested but never expected.",
+      "featured": true,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ]
+    },
+    {
+      "title": "Dharma Talks and Videos",
+      "url": "https://www.missiondharma.org/dharma-talks-and-videos.html",
+      "description": "An archive of Tuesday-night dharma talks recorded at Mission Dharma over many years, mostly by Howie Cohn with talks from visiting insight teachers, free to stream or download, plus a pointer to the newer talks on YouTube.",
+      "featured": false,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ]
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "centre",
+    "rank": 15,
+    "hub": null,
+    "tier_evidence": "YouTube @missiondharma415 (linked from its own site): unreadable (consent page, 9 Nov 2026); no other accounts linked → 0 readable → local_hero",
+    "email": "contact form",
+    "email_source": null,
+    "contact_form_url": "https://www.missiondharma.org/contact.html",
+    "bio_check": "OK: no 8-word runs against 9 source(s)",
+    "flags": [
+      "Main YouTube count unreadable (consent page, 9 Nov 2026).",
+      "Contact form used: the only published address (sf.mission.dharma@gmail.com, behind Cloudflare email protection on the contact page) is given as Howie's own address for interviews, mentoring and counselling, so it is not used as the centre's email. Owner may decide otherwise.",
+      "Domain from our own Howard Cohn plan; the site names Mission Dharma throughout.",
+      "Duplicate check: our Howard Cohn plan uses missiondharma.org as its website, so the centre's and the teacher's links overlap.",
+      "Founded year 1988 worked out from the home page's 'over 38 years'; no founding date is published.",
+      "Photo: the only usable image is a small (174 × 220) portrait of Howie Cohn, under the ingest's 300 px minimum, so the dry run reports no profile photo (UNSOLVED). The other image is his book cover. Owner to supply one (the YouTube avatar once readable) before insert.",
+      "No dated offerings: the half-day retreat page gives no date or price, the daylong page says none are scheduled, and the multi-day retreats are Spirit Rock's (a never-fetch site), so they are left out.",
+      "Hub links: Howard Cohn (guiding teacher; not marked founder, the site does not say who started the group) plus Tara Mulay, Tuere Sala and Anushka Fernandopulle, each listed on its talks page as giving Tuesday-night talks at Mission Dharma (Tara Mulay and Tuere Sala in 2021, Anushka Fernandopulle several times 2010-2016). Devin Berry, Chandra Easton and Mark Coleman each gave a single talk there and are not linked; owner may add them.",
+      "Base: San Francisco (Mission District); meetings are now on Zoom, with in-person half-days at the San Francisco Dharma Collective.",
+      "All 9 videos and both free resources are already on dev (under Howard Cohn and Tara Mulay), so the dry run adds only the healer."
+    ],
+    "left_out": [
+      "Howie's retreats at Spirit Rock (Nov 2026, Jan 2027): another organisation's retreats.",
+      "Half-Day Hybrid Retreat: no date or price on the page.",
+      "Howie's book (Invitation to Meditation): belongs on the teacher's listing.",
+      "Dana page: robots.txt has an odd rule naming it, so it was not fetched."
+    ],
+    "held": "Lead, 9 Nov 2026: no usable image (the site's only image is 174 x 220, under the ingest's 300 px minimum)."
+  },
+  "videos": [
+    {
+      "title": "Meditation & Dharma Talk w/ Howie Cohn 08/08/23",
+      "url": "https://www.youtube.com/watch?v=6APCuwD9rKs",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "channel": "Mission Dharma"
+    },
+    {
+      "title": "The Joy of Concentration - 8/2/22 - Howie Cohn",
+      "url": "https://www.youtube.com/watch?v=i4xP09vNrI4",
+      "subjects": [
+        "meditation"
+      ],
+      "channel": "Mission Dharma"
+    },
+    {
+      "title": "Meditation & Dharma Talk w/ Howie Cohn 08/15/23",
+      "url": "https://www.youtube.com/watch?v=sVuPpWEa9_c",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "channel": "Mission Dharma"
+    },
+    {
+      "title": "Meditation & Dharma Talk w/ Howie Cohn 8/22/23",
+      "url": "https://www.youtube.com/watch?v=l43GF-E9gUY",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "channel": "Mission Dharma"
+    },
+    {
+      "title": "Meditation & Dharma Talk w/ Howie Cohn - 2/22/22",
+      "url": "https://www.youtube.com/watch?v=21uMP42nfj4",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "channel": "Mission Dharma"
+    },
+    {
+      "title": "Meditation & Dharma Talk w/ Howie Cohn 11/14/23",
+      "url": "https://www.youtube.com/watch?v=F7qqtRpkVXM",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "channel": "Mission Dharma"
+    },
+    {
+      "title": "Meditation & Dharma Talk w/ Howie Cohn 08/29/23",
+      "url": "https://www.youtube.com/watch?v=kyUTE49c3MA",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "channel": "Mission Dharma"
+    },
+    {
+      "title": "Meditation & Dharma Talk w/ Howie Cohn - 4/5/22",
+      "url": "https://www.youtube.com/watch?v=Y_kBqiJi1T4",
+      "subjects": [
+        "meditation",
+        "spiritual-awakening"
+      ],
+      "channel": "Mission Dharma"
+    },
+    {
+      "title": "Meditation and Dharma Talk with Tara Mulay - 8/17/21",
+      "url": "https://www.youtube.com/watch?v=Df6u6wIWV6k",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "channel": "Mission Dharma"
+    }
+  ]
+}

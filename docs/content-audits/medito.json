@@ -1,0 +1,76 @@
+{
+  "healer": {
+    "healer_slug": "medito",
+    "location_source": "https://meditofoundation.org/",
+    "no_public_base": "Only the country is published (Stichting Medito, a non-profit registered in the Netherlands, site footer); no city given on the pages read.",
+    "create": {
+      "name": "Medito",
+      "bio": "Medito is a meditation app made by the Medito Foundation, a non-profit registered in the Netherlands and launched in 2020. Everything in it is free: there is no subscription, no premium tier, no advertising and no need to create an account. The app's code is open source, and much of the work is done by volunteers from around the world, with the foundation funded by donations.\n\nThe practice content is mainly secular mindfulness. It includes guided meditations for beginners and more experienced practitioners, short courses and three thirty-day challenges (one on mindfulness, one on compassion and one on becoming more active), a fresh guided session each day, breathing exercises, and an unguided timer with ambient sounds. Users can choose between different narrators' voices. The foundation develops its material with mindfulness researchers and experienced teachers and works with universities on studies of its programmes. Its website also carries plain introductory guides to meditation, such as a step-by-step page for newcomers that starts with five minutes of attention to the breath.",
+      "tier": "local_hero",
+      "entity_type": "app",
+      "founded_year": 2020,
+      "availability": "worldwide",
+      "city": null,
+      "country": "Netherlands",
+      "subjects": [
+        "mindfulness",
+        "meditation",
+        "breathwork"
+      ],
+      "website_url": "https://meditofoundation.org/",
+      "booking_url": "https://meditofoundation.org/medito-app/",
+      "youtube_url": "https://www.youtube.com/@Medito",
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "hello@meditofoundation.org",
+      "image_urls": [
+        "https://meditofoundation.org/logo.png"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [],
+  "free_resources": [
+    {
+      "title": "Meditation for Beginners",
+      "url": "https://meditofoundation.org/meditation-for-beginners/",
+      "description": "A free step-by-step guide on the foundation's site for starting a daily practice, beginning with five minutes of resting attention on the breath. It answers common first-week worries, such as busy thoughts or not knowing whether you are doing it right.",
+      "featured": true,
+      "resource_type": "practice",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://meditofoundation.org/logo.png"
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "app",
+    "rank": 51,
+    "hub": null,
+    "tier_evidence": "No readable follower counts (Instagram, Facebook, X not fetched; YouTube unreadable, consent page, 9 Nov 2026) → 0 → local_hero. Published figures, for information: '4.1M+ people reached' and '4.1M+ downloads' (meditofoundation.org home and /medito-app/).",
+    "email": "yes",
+    "email_source": "https://meditofoundation.org/contact/",
+    "contact_form_url": "https://medito.support.site/",
+    "bio_check": "OK: no 8-word runs against 6 source(s)",
+    "flags": [
+      "possible override by published user numbers (4.1M+ people reached).",
+      "Email is published as 'hello [at] meditofoundation.org' on the contact page for general enquiries; written here as hello@meditofoundation.org (brand inbox). Search snippet showed hi@meditofoundation.org, not used.",
+      "Thin: the app is entirely free, so there are no offerings; one free resource on its own site; no video IDs on the site (YouTube link only).",
+      "Health rule: the app and site market sleep, stress and anxiety sessions and the about page cites depression and anxiety research; none of that is in the bio or items. Borderline whether it is 'condition-led'; I judged it a general meditation app like Calm.",
+      "youtube_url taken from the site footer link (youtube.com/@Medito/videos), trimmed to the channel; not opened.",
+      "Base: country only (Netherlands); city unpublished."
+    ],
+    "left_out": [
+      "Meditation for Anxiety and Meditation for Sleep pages: health rule.",
+      "30-Day Meditation Challenge: runs inside the app; the 'Getting Active' challenge is exercise-led.",
+      "Donations: not an offering."
+    ]
+  },
+  "images_final": true
+}

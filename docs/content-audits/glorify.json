@@ -1,0 +1,89 @@
+{
+  "healer": {
+    "healer_slug": "glorify",
+    "location_source": "https://www.glorify.global/legal/terms-of-service",
+    "no_public_base": "Only the country is published: Glorify is operated by TUPOE Ltd, a company incorporated in the United Kingdom (terms of service); no city is given on the pages read.",
+    "create": {
+      "name": "Glorify",
+      "bio": "Glorify is a Christian devotional app run by TUPOE Ltd, a company registered in the United Kingdom, with its material also offered in Spanish and Portuguese. It aims to help people build a steady daily habit of time with God, whatever their stage of faith, and says its content is checked by a team of theologians for faithfulness to Scripture.\n\nThe heart of the app is a short daily routine: an opening quote, a Bible passage, a written and audio devotional on that passage, a song of worship and a biblical affirmation to carry through the day. Alongside this are guided audio meditations, including a scripture walk set against filmed landscapes, quiet breathing practices that turn attention to Jesus, multi-part courses with pastors and teachers on matters of faith, and a worship music library. A community space lets members share prayer requests, give thanks for answered prayers and discuss a daily question. The app is free to download, with a paid membership for the full library. The company has recently merged with Confidein and now also sells a prayer ring, a separate product not covered here. Its blog carries free collections of prayers and Bible verses for reflection.",
+      "tier": "local_hero",
+      "entity_type": "app",
+      "founded_year": null,
+      "availability": "worldwide",
+      "city": null,
+      "country": "United Kingdom",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "website_url": "https://www.glorify.global/app/the-app",
+      "booking_url": "https://www.glorify.global/app/the-app",
+      "youtube_url": "https://www.youtube.com/@glorifyglobal",
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "support@glorify.global",
+      "image_urls": [
+        "https://cdn.sanity.io/images/ktl0y5fs/production/846e1ac398408d2f7332acb39b94ee5ef86457e0-1024x292.png"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [],
+  "free_resources": [
+    {
+      "title": "11 Inspirational Prayers for Inner Peace and Guidance",
+      "url": "https://www.glorify.global/app/blog/11-inspirational-prayers-for-inner-peace-and-guidance",
+      "description": "A free blog collection of short Christian prayers, starting with the Lord's Prayer and including prayers for strength, guidance and peace, with a note on adapting them into your own words.",
+      "featured": true,
+      "resource_type": "practice",
+      "subjects": [
+        "spirituality"
+      ],
+      "image": "https://www.glorify.global/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fktl0y5fs%2Fproduction%2Fa2cae7be4aebaed725e38b57a3e4d436c8acb224-1920x1080.png&w=3840&q=75&dpl=dpl_7jZg2uapKZV3wKE1eHFKkLeVRtsR"
+    },
+    {
+      "title": "24 Christmas Bible Verses For Meditation",
+      "url": "https://www.glorify.global/app/blog/25-christmas-bible-verses-for-meditation",
+      "description": "A free set of Christmas Scripture passages from the prophets and the Gospels, each grouped with a short prompt for quiet reflection on the birth of Jesus.",
+      "featured": false,
+      "resource_type": "practice",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "image": "https://www.glorify.global/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fktl0y5fs%2Fproduction%2F63a0a3d6bed810f0ef9bc7b31f78c546994e484b-2560x1440.jpg&w=3840&q=75&dpl=dpl_7jZg2uapKZV3wKE1eHFKkLeVRtsR"
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "app",
+    "rank": 70,
+    "hub": null,
+    "tier_evidence": "No readable follower counts (Instagram, TikTok, X, Facebook, LinkedIn not fetched; YouTube unreadable, consent page, 9 Nov 2026) → 0 → local_hero. A search snippet cites 'over 20 million Christians' (not seen on the pages I opened).",
+    "email": "yes",
+    "email_source": "https://www.glorify.global/support/contact",
+    "contact_form_url": "https://www.glorify.global/support/contact",
+    "bio_check": "OK: no 8-word runs against 6 source(s)",
+    "flags": [
+      "Thin: no offering with its own page or published price (the paid membership's price is not on the site; 'Membership Terms' not opened); two free blog resources; no video IDs on the site.",
+      "possible override by published user numbers (search snippet: over 20 million users).",
+      "Brand inbox: support@glorify.global (shown on /support/contact, which also has a form).",
+      "Health rule: the app page mentions 'mental health content' and biblical sleep stories, and the blog has posts on sleep and anxiety; none used.",
+      "The company now also sells a 'Glorify Ring' (hardware, after merging with Confidein); left out as not a practice offering.",
+      "Image: the site's own download banner (wordmark plus app screenshot), 1024x292, from cdn.sanity.io (robots allows images). The site has no app icon or og image; its other images are lifestyle photos.",
+      "website_url is the app section (/app/the-app); the domain root now leads with the ring.",
+      "Christian devotional app: subjects meditation and spirituality only.",
+      "founded_year not published on the pages read."
+    ],
+    "left_out": [
+      "Membership: price not published on the site.",
+      "Glorify Ring: hardware product.",
+      "Blog posts on sleep, anxiety and anger: health rule."
+    ]
+  },
+  "images_final": true
+}

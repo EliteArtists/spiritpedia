@@ -1,0 +1,141 @@
+{
+  "healer": {
+    "healer_slug": "clear-mountain-monastery",
+    "location_source": "https://www.clearmountain.org/the-monastery/",
+    "create": {
+      "name": "Clear Mountain Monastery",
+      "bio": "Clear Mountain is a young Theravada forest monastery in the Pacific Northwest, rooted in the Thai Forest lineage of Ajahn Chah though run as an independent community. Its founding monks are Ajahn Nisabho, a Washington native ordained in Thailand under Ajahn Anan, who came home in 2021 to start the project, and Ajahn Kovilo, ordained at Abhayagiri and later a student of Pali at Dharma Realm Buddhist University. For five years they lived around Seattle, walking for alms at Pike Place Market and teaching on Saturday mornings beside St Mark's Cathedral.\n\nIn 2026 the community bought 90 acres of forest in North Bend, about forty minutes east of the city, where it plans a monastery for up to twenty monastics with a temple, a hall, a guest residence for nuns and forest paths, and the monks have now moved there. Everything is offered freely and sustained by lay generosity. Alongside occasional alms offerings on the land, the community keeps up long daily silent sits on Zoom, a Wednesday evening teaching and question session streamed on YouTube, and 'Mission Majjhima!', a Sunday study series working through all 152 discourses of the Middle Length Discourses. Guest monastics from other monasteries are regularly invited to teach.",
+      "tier": "local_hero",
+      "entity_type": "organisation",
+      "founded_year": 2021,
+      "availability": "worldwide",
+      "city": "North Bend, Washington",
+      "country": "United States",
+      "subjects": [
+        "meditation",
+        "spiritual-awakening",
+        "ancient-wisdom"
+      ],
+      "website_url": "https://www.clearmountain.org/",
+      "booking_url": "https://www.clearmountain.org/calendar/",
+      "youtube_url": "https://www.youtube.com/c/ClearMountainMonastery",
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "steward@friendsofclearmountain.org",
+      "image_urls": [
+        "https://www.clearmountain.org/wp-content/uploads/2026/05/land_group_photo-1080x675.jpg",
+        "https://www.clearmountain.org/wp-content/uploads/2026/09/Walk_Feature-1080x675.jpg",
+        "https://www.clearmountain.org/wp-content/uploads/2026/08/CM_Logo.png"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "books": [],
+  "courses": [],
+  "free_resources": [
+    {
+      "title": "Mission Majjhima! – Sunday Evening Sutta Teaching & Discussion (YouTube & Zoom)",
+      "url": "https://www.clearmountain.org/events/sunday-sutta-study/",
+      "description": "A weekly study series in which the two founding monks introduce one discourse of the Majjhima Nikāya in a ten-minute YouTube premiere, followed by group discussion on Zoom and an optional hour of silent sitting. Newcomers can join at any point.",
+      "featured": true,
+      "resource_type": "workshop",
+      "subjects": [
+        "ancient-wisdom",
+        "meditation"
+      ],
+      "image": "https://www.clearmountain.org/wp-content/uploads/2026/05/land_group_photo-1080x675.jpg"
+    },
+    {
+      "title": "Wednesday Evening Online Teaching & Discussion (YouTube & Zoom)",
+      "url": "https://www.clearmountain.org/events/wednesday/",
+      "description": "Each Wednesday a monastic teaching and question-and-answer session premieres on the monastery's YouTube channel, followed by a smaller Zoom conversation with Ajahn Nisabho or Ajahn Kovilo.",
+      "featured": false,
+      "resource_type": "workshop",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "image": "https://www.clearmountain.org/wp-content/uploads/2026/05/land_group_photo-1080x675.jpg"
+    },
+    {
+      "title": "Morning & Late Afternoon Daily Zoom Meditations (Silent)",
+      "url": "https://www.clearmountain.org/events/morning-afternoon-daily-zoom-meditations-silent-2/",
+      "description": "Two open, muted Zoom rooms every day, early morning and late afternoon Pacific time, where people sit together in silence for as long as they like, usually with a monk present on camera.",
+      "featured": false,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://www.clearmountain.org/wp-content/uploads/2026/05/land_group_photo-1080x675.jpg"
+    },
+    {
+      "title": "Saturday Morning Meditation, Teaching, & Coffee Social (Online & In-Person)",
+      "url": "https://www.clearmountain.org/events/saturday/",
+      "description": "The community's long-running Saturday gathering beside St Mark's Cathedral in Seattle: a guided sit open to any practice, a dharma talk with questions, then conversation over coffee. It can also be followed on Zoom or the YouTube livestream.",
+      "featured": false,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "image": "https://www.clearmountain.org/wp-content/uploads/2026/05/land_group_photo-1080x675.jpg"
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "centre",
+    "rank": 6,
+    "hub": null,
+    "tier_evidence": "YouTube @ClearMountainMonastery (linked from its own site): unreadable (consent page, 9 Nov 2026); Facebook linked but never fetched → 0 readable → local_hero",
+    "email": "yes",
+    "email_source": "https://www.clearmountain.org/",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 8 source(s)",
+    "flags": [
+      "Main YouTube count unreadable (consent page, 9 Nov 2026).",
+      "Transition: the site says the schedule is 'temporarily on hold' while the monks settle in North Bend, with hours unfolding in November 2026, yet its calendar still lists the weekly events. The Saturday in-person gathering in Seattle may have changed; owner may wish to recheck before publishing.",
+      "Found via northwestdharma.org, which links clearmountainmonastery.org; that domain redirects to www.clearmountain.org (robots.txt read on each host).",
+      "Email steward@friendsofclearmountain.org is the community steward's inbox (mailto on the home page), run by the support charity Friends of Clear Mountain.",
+      "Founded year 2021 = when Ajahn Nisabho returned to Seattle to start the project (community page); no formal founding date published.",
+      "No hub links: none of our teachers in the lead (Bhante Buddharakkhita, James Baraz, Tuere Sala) is named as teaching there on its site; their videos are guest talks on its channel. Ajahn Anan is named only as Ajahn Nisabho's preceptor. Teachers file written with an empty list.",
+      "Only three videos (from our earlier plans, its own channel); thin on videos but four free programmes give a fair page. No paid offerings: everything is offered freely."
+    ],
+    "left_out": [
+      "Saturday talk with Thubten Chodron (2025): past.",
+      "Daily alms and dana list: support, not teaching.",
+      "Writings by the monks: not opened individually."
+    ]
+  },
+  "videos": [
+    {
+      "title": "From Uganda to the Dalai Lama: The Chronicles of an African Seeker in India | Bhante Buddharakkhita",
+      "url": "https://www.youtube.com/watch?v=BY9i5lUpwQg",
+      "subjects": [
+        "spirituality",
+        "meditation"
+      ],
+      "channel": "Clear Mountain Monastery"
+    },
+    {
+      "title": "10,000 Joys & 10,000 Sorrows: DEAD Serious Practice to Abundant Enoughness | James Baraz Q&A",
+      "url": "https://www.youtube.com/watch?v=OjWmJqaaGnk",
+      "subjects": [
+        "spirituality",
+        "meditation"
+      ],
+      "channel": "Clear Mountain Monastery"
+    },
+    {
+      "title": "What's Your Brahmavihāra? And Locating Your Lineage! | Tuere Sala Q&A",
+      "url": "https://www.youtube.com/watch?v=eXOD5mtUl38",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "channel": "Clear Mountain Monastery"
+    }
+  ],
+  "images_final": true
+}

@@ -1,0 +1,139 @@
+{
+  "healer": {
+    "healer_slug": "east-bay-meditation-center",
+    "location_source": "https://eastbaymeditation.org/contact-us",
+    "create": {
+      "name": "East Bay Meditation Center",
+      "bio": "East Bay Meditation Center is a Buddhist practice community in downtown Oakland, California, set up in 2007 to give a spiritual home to people of colour, LGBTQI practitioners and people with disabilities, groups that had often felt on the margins of American meditation halls. Its teaching draws mainly on Buddhist insight practice in the spirit of socially engaged Buddhism, alongside other contemplative traditions, and today everyone is welcome. It began in a small storefront, moved to a larger hall in 2012 and has since been looking for a permanent building of its own.\n\nMost of the centre's life happens in weekly practice groups, several of them for particular communities: a BIPOC Sangha that has met on Thursdays since late 2006, an Alphabet Sangha led by LGBTQIA+ teachers, a peer-led midday sitting group and others, meeting in person on 17th Street, on Zoom or both. It also runs daylongs and multi-week classes, a year-long practice programme and a two-year training for people who lead Dharma groups. Everything is offered on a dana basis, so no one is turned away for lack of money, and the hall is wheelchair accessible and fragrance free.",
+      "tier": "local_hero",
+      "entity_type": "organisation",
+      "founded_year": 2007,
+      "availability": "worldwide",
+      "city": "Oakland, California",
+      "country": "United States",
+      "subjects": [
+        "meditation",
+        "mindfulness",
+        "spirituality"
+      ],
+      "website_url": "https://eastbaymeditation.org/",
+      "booking_url": "https://eastbaymeditation.org/calendar",
+      "youtube_url": "https://www.youtube.com/channel/UC15CtUCAHSZBqlBZDvWoh2g",
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "admin@eastbaymeditation.org",
+      "image_urls": [
+        "https://yt3.googleusercontent.com/ck6geVfoDtldy6Ed-OFbDMV8sFnW_Gu6FhWbx4_cAsD_MjBd5V-cedUEAdZFALczgDtuimmG=s900-c-k-c0x00ffffff-no-rj"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [
+    {
+      "title": "Tuere Sala: Unmasking Anger",
+      "url": "https://www.youtube.com/watch?v=B-Z9impBZGI",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "channel": "BIPOC Sangha at East Bay Meditation Center"
+    }
+  ],
+  "books": [],
+  "courses": [
+    {
+      "title": "Finding Liberation in Relationship",
+      "url": "https://eastbaymeditation.org/event/finding-liberation-in-relationship-part-1",
+      "description": "A four-week online evening class with Dawn Haney and René Rivera that brings Buddhist meditation and body awareness to friendships, partnerships and community life. Offered by donation, with suggested tiers.",
+      "price": "Dana (suggested donation tiers)",
+      "product_type": "course",
+      "start_date": "2026-11-30",
+      "end_date": "2026-12-21",
+      "subjects": [
+        "meditation",
+        "conscious-relationships",
+        "mindfulness"
+      ],
+      "image": "https://yt3.googleusercontent.com/ck6geVfoDtldy6Ed-OFbDMV8sFnW_Gu6FhWbx4_cAsD_MjBd5V-cedUEAdZFALczgDtuimmG=s900-c-k-c0x00ffffff-no-rj"
+    },
+    {
+      "title": "Spiritual Teacher and Leadership Training",
+      "url": "https://eastbaymeditation.org/programs/stl",
+      "description": "A two-year training for committed practitioners who lead or coordinate Dharma groups, with monthly meetings, two week-long residential retreats and shorter retreats. Guiding teachers give the core curriculum.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "image": "https://yt3.googleusercontent.com/ck6geVfoDtldy6Ed-OFbDMV8sFnW_Gu6FhWbx4_cAsD_MjBd5V-cedUEAdZFALczgDtuimmG=s900-c-k-c0x00ffffff-no-rj"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "BIPOC Sangha",
+      "url": "https://eastbaymeditation.org/programs/bipoc-sangha",
+      "description": "A weekly Thursday meditation and Dharma group for Black, Indigenous and People of Color, meeting in person and online, open to beginners and long-time meditators. Offered on a dana basis.",
+      "featured": true,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://yt3.googleusercontent.com/ck6geVfoDtldy6Ed-OFbDMV8sFnW_Gu6FhWbx4_cAsD_MjBd5V-cedUEAdZFALczgDtuimmG=s900-c-k-c0x00ffffff-no-rj"
+    },
+    {
+      "title": "Alphabet Sangha",
+      "url": "https://eastbaymeditation.org/programs/alphabet-sangha",
+      "description": "A weekly practice group with guided meditation and Dharma talks from LGBTQIA+ teachers, for queer, trans and same-gender-loving practitioners. Some meetings are hybrid.",
+      "featured": false,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://yt3.googleusercontent.com/ck6geVfoDtldy6Ed-OFbDMV8sFnW_Gu6FhWbx4_cAsD_MjBd5V-cedUEAdZFALczgDtuimmG=s900-c-k-c0x00ffffff-no-rj"
+    },
+    {
+      "title": "Midday Sangha",
+      "url": "https://eastbaymeditation.org/programs/midday-sangha",
+      "description": "A peer-led Wednesday lunchtime group for silent sitting and Dharma discussion, mostly on Zoom with an in-person meeting once a month. Drop in for as long as suits you.",
+      "featured": false,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://yt3.googleusercontent.com/ck6geVfoDtldy6Ed-OFbDMV8sFnW_Gu6FhWbx4_cAsD_MjBd5V-cedUEAdZFALczgDtuimmG=s900-c-k-c0x00ffffff-no-rj"
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "centre",
+    "rank": 23,
+    "hub": null,
+    "held": "Owner decision needed: the centre frames its dharma practice strongly around social justice (a published 'stance on Gaza' post, a white-identity group, a Practice in Transformative Action programme for organisers). It is a meditation centre first, but the owner should decide whether this counts as political-centred.",
+    "tier_evidence": "YouTube unreadable (consent page, 9 Nov 2026); Instagram/Facebook not fetched; no readable counts → local_hero",
+    "email": "yes",
+    "email_source": "https://eastbaymeditation.org/contact-us",
+    "contact_form_url": "https://eastbaymeditation.org/contact-us",
+    "bio_check": "OK: no 8-word runs against 12 source(s)",
+    "flags": [
+      "The lead is 'BIPOC Sangha at East Bay Meditation Center' (a YouTube channel of one of its groups); the listing is made for the centre itself, East Bay Meditation Center.",
+      "The centre's teachers page is a 'photos coming soon' placeholder, and Tuere Sala is not named anywhere on the pages read; tueresala.org returned 403 (not retried). No hub links.",
+      "Political framing: blog post 'EBMC's Stance on Gaza', a 'White and Awakening' group about white supremacy culture and the PiTA programme for organisers are left out of the items; see held.",
+      "Only video found: one on the BIPOC Sangha channel, already on dev under tuere-sala. youtube_url is EBMC's own channel link from its footer; subscriber count unreadable (consent page, 9 Nov 2026).",
+      "Some practice groups require masks in person (site policy); not a health claim, noted only.",
+      "General inbox admin@eastbaymeditation.org is a brand inbox.",
+      "Photo: the logo is the YouTube channel avatar (yt3.googleusercontent.com), which the ingest dry run picked from the youtube_url by itself (I did not fetch the channel page); I downloaded and looked at it: the EBMC rainbow-and-lotus logo, 900 px."
+    ],
+    "left_out": [
+      "Practice in Transformative Action (PiTA) and White and Awakening Monthly Sangha: activist or identity-politics framing.",
+      "Commit 2 Dharma 2026-27: started September 2026.",
+      "Merritt Dialogue Series blog post and Gaza stance post: not teaching items / political.",
+      "Photos on eastbaymeditation.org: all served from cdn.prod.website-files.com, whose robots.txt returns 403 to us, so none were downloaded."
+    ]
+  }
+}

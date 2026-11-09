@@ -1,0 +1,28 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 1076,
+    "healer_slug": "insight-meditation-community-of-charlottesville"
+  },
+  "rows": [
+    {
+      "table": "free_resources",
+      "id": "04139974-97c1-493e-b654-eb54f3e24448",
+      "slug": "tuesday-nights-guided-meditation-and-dharma-talk",
+      "title": "Tuesday Nights: Guided Meditation and Dharma Talk"
+    },
+    {
+      "table": "free_resources",
+      "id": "21fadbfe-03ee-443a-aab2-ff3b646027e9",
+      "slug": "virtual-noon-meditations",
+      "title": "Virtual Noon Meditations"
+    },
+    {
+      "table": "free_resources",
+      "id": "3374aa4a-cb30-4ddc-a1b5-c0b035644bff",
+      "slug": "meditation-101",
+      "title": "Meditation 101"
+    }
+  ],
+  "at": "2026-11-09T23:43:22.889Z"
+}

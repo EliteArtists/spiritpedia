@@ -1,0 +1,139 @@
+{
+  "healer": {
+    "healer_slug": "center-for-spiritual-awareness",
+    "location_source": "https://csa-davis.org/contact/",
+    "create": {
+      "name": "Center for Spiritual Awareness",
+      "bio": "The Center for Spiritual Awareness is a Kriya Yoga ministry and retreat centre in the low mountains of Rabun County, north-east Georgia, about ninety miles north of Atlanta. It was set up by Roy Eugene Davis, one of the last personal disciples of Paramahansa Yogananda to teach in the West, and was incorporated as a non-profit in 1964. Since Davis's death in 2019 the work has been carried on by its spiritual director Marty Wuttke and a body of ministers he trained, in the line that runs from Babaji through Lahiri Mahasaya, Sri Yukteswar and Yogananda. Its outlook is non-sectarian: it holds that each person's essential nature is one with the Infinite, and it welcomes people of every faith.\n\nThe wooded grounds near Lake Rabun hold a meditation temple, a meeting hall where vegetarian meals are served, a hatha yoga dome, guest houses, two library buildings and a bookstore. From spring to the Christmas season it holds weekend and longer meditation retreats, many with a three-hour group meditation streamed on Zoom, and all of them offered by donation. Online there is a self-paced introductory course, a library of recorded talks and guided meditations, a monthly podcast and the Truth Journal.",
+      "tier": "local_hero",
+      "entity_type": "organisation",
+      "founded_year": 1964,
+      "availability": "worldwide",
+      "city": "Lakemont, Georgia",
+      "country": "United States",
+      "subjects": [
+        "meditation",
+        "yoga",
+        "ancient-wisdom"
+      ],
+      "website_url": "https://csa-davis.org/",
+      "booking_url": "https://csa-davis.org/registration/",
+      "youtube_url": "https://www.youtube.com/@nliten108",
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "info@csa-davis.org",
+      "image_urls": [
+        "https://csa-davis.org/wp-content/uploads/2025/12/hall-closeup.jpg",
+        "https://csa-davis.org/wp-content/uploads/2025/12/Dogwoods_color-corr.jpg",
+        "https://csa-davis.org/wp-content/uploads/2025/12/YogaHaus-about.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [
+    {
+      "title": "American Veda by Philip Goldberg",
+      "url": "https://www.youtube.com/watch?v=wWEIVw7cH44",
+      "subjects": [
+        "yoga",
+        "ancient-wisdom"
+      ],
+      "channel": "Center for Spiritual Awareness"
+    }
+  ],
+  "books": [],
+  "courses": [
+    {
+      "title": "Holy Season 3-hour Meditation and Weekend Retreat",
+      "url": "https://csa-davis.org/retreats/",
+      "description": "A weekend on the Lakemont grounds built around a three-hour group meditation led in turn by the spiritual director and two ministers, also streamed on Zoom. Stay for the weekend or join the long sitting online; offered by donation.",
+      "price": "Donation basis",
+      "product_type": "retreat",
+      "start_date": "2026-12-04",
+      "end_date": "2026-12-06",
+      "subjects": [
+        "meditation",
+        "yoga"
+      ],
+      "image": "https://csa-davis.org/wp-content/uploads/2026/02/Reatreats-BenefitsFlower-WEB.jpg"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Wake Up with Roy Eugene Davis",
+      "url": "https://csa-davis.org/course-wakeup-with-roy/",
+      "description": "A free, self-paced online course in five parts, made of short talks and guided meditations by the centre's founder. No registration is needed; donations are welcome.",
+      "featured": true,
+      "resource_type": "mini_course",
+      "subjects": [
+        "meditation",
+        "yoga"
+      ],
+      "image": "https://csa-davis.org/wp-content/uploads/2025/12/hall-closeup.jpg"
+    },
+    {
+      "title": "Guided Meditations",
+      "url": "https://csa-davis.org/guided-meditations/",
+      "description": "Recorded audio and video meditations from the centre's library, including breath and mantra practice and chakra meditations led by Roy Eugene Davis, and an inner smile meditation with Marty Wuttke.",
+      "featured": false,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation",
+        "chakra-healing"
+      ],
+      "image": "https://csa-davis.org/wp-content/uploads/2026/07/Pics-300x300_InnerSmile1.jpg"
+    },
+    {
+      "title": "Kriya Yoga Teachers & Lineage",
+      "url": "https://csa-davis.org/library-teachers/",
+      "description": "Short and long recorded talks on the Kriya Yoga line of teachers, including Roy Eugene Davis's memories of Paramahansa Yogananda.",
+      "featured": false,
+      "resource_type": "practice",
+      "subjects": [
+        "yoga",
+        "ancient-wisdom"
+      ],
+      "image": "https://csa-davis.org/wp-content/uploads/2025/12/hall-closeup.jpg"
+    },
+    {
+      "title": "Podcast",
+      "url": "https://csa-davis.org/podcast/",
+      "description": "The centre's monthly Kriya Yoga podcast with talks from its ministers.",
+      "featured": false,
+      "resource_type": "practice",
+      "subjects": [
+        "yoga",
+        "meditation"
+      ],
+      "image": "https://csa-davis.org/wp-content/uploads/2025/12/hall-closeup.jpg"
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "centre",
+    "rank": 27,
+    "hub": null,
+    "tier_evidence": "YouTube unreadable (consent page, 9 Nov 2026); Instagram/Facebook not fetched; no readable counts → local_hero",
+    "email": "yes",
+    "email_source": "https://csa-davis.org/contact/",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 8 source(s)",
+    "flags": [
+      "founded_year 1964 is the year the About page gives for incorporation; a search summary (encyclopedia entry) said the Lakemont headquarters dates from 1972.",
+      "Regional: Lakemont, Georgia (rural north-east Georgia); Lakemont is a small community, likely under 5,000 people, recorded as published.",
+      "Philip Goldberg appears only in one video on the channel (already on dev under philip-goldberg); the site does not name him as a teacher, so no hub links.",
+      "Roy Eugene Davis (founder, died 2019) and Marty Wuttke are not on Spiritpedia.",
+      "Brand inbox: info@csa-davis.org.",
+      "Possible editorial-stature override: long-established Kriya Yoga centre from a direct disciple of Yogananda."
+    ],
+    "left_out": [
+      "In Tune with the Infinite: Sound Healing & Meditation Retreat (April 2026, past; also uses 'sound therapy' language).",
+      "Discover the Benefits of Meditation online class (October 2026, past; its page lists immune-system claims).",
+      "Celebration of Mr. Davis weekend, March 26-28, 2027: shares the retreats page URL with the Holy Season retreat (no unique URL).",
+      "Truth Journal subscription and shop items: not teaching programmes."
+    ]
+  },
+  "images_final": true
+}

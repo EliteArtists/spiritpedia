@@ -1,0 +1,108 @@
+{
+  "healer": {
+    "healer_slug": "insight-meditation-community-of-charlottesville",
+    "location_source": "https://www.imeditation.org/",
+    "create": {
+      "name": "Insight Meditation Community of Charlottesville",
+      "bio": "The Insight Meditation Community of Charlottesville, known as IMCC, has been sharing vipassana practice in central Virginia since 1996. It belongs to the Insight tradition rooted in the Buddha's early teachings, and presents meditation as open to anyone whatever their beliefs; one of its co-founders, the psychologist and Insight Dialogue teacher Sharon Beckman-Brindley, still teaches there. Teaching is planned by a Guiding Teachers Council and shared among a group of local teachers, with well-known visiting teachers invited each year to lead classes and retreats.\n\nThe main weekly gathering is on Tuesday evening at the Unitarian Universalist church on Rugby Road, with a guided sitting followed by a Dharma talk, and the same session is streamed on Zoom. Through the week, volunteers host short midday sits online, and smaller peer groups meet for spiritual friendship, families and socially engaged practice. The community runs classes, daylongs and retreats, and has built up an archive of several hundred recorded talks and meditations on YouTube. Its programmes are offered on a donation basis.",
+      "tier": "local_hero",
+      "entity_type": "organisation",
+      "founded_year": 1996,
+      "availability": "worldwide",
+      "city": "Charlottesville, Virginia",
+      "country": "United States",
+      "subjects": [
+        "meditation",
+        "mindfulness",
+        "spirituality"
+      ],
+      "website_url": "https://www.imeditation.org/",
+      "booking_url": "https://www.imeditation.org/calendar",
+      "youtube_url": "https://www.youtube.com/@insightmeditationcommunity8752",
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "opsdirector@imeditation.org",
+      "image_urls": [
+        "https://images.squarespace-cdn.com/content/v1/6a5e3f55c53838201bece12a/be6a3ab0-c457-492d-8aea-2a61e7314591/IMCC+Teachers+at+UU.png"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [
+    {
+      "title": "Dhamma is More Than Meditation with Tuere Sala",
+      "url": "https://www.youtube.com/watch?v=-OTKpzLTSlo",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "channel": "Insight Meditation Community of Charlottesville"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [
+    {
+      "title": "Tuesday Nights: Guided Meditation and Dharma Talk",
+      "url": "https://www.imeditation.org/tuesday",
+      "description": "A weekly evening of guided sitting and a Buddhist talk from one of the community's teachers, held at the Unitarian church in Charlottesville and on Zoom. Open to newcomers and long-time meditators.",
+      "featured": true,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "http://static1.squarespace.com/static/6a5e3f55c53838201bece12a/t/6a95f9b16def2d15a4b9f9c7/1788213681271/IMCC_LOGOMARK_BLACK-1920PX.png?format=1500w"
+    },
+    {
+      "title": "Virtual Noon Meditations",
+      "url": "https://www.imeditation.org/virtual-noon-meditations",
+      "description": "Short lunchtime group sits on Zoom on several days each week, hosted by volunteer facilitators. Free, with donations welcome.",
+      "featured": false,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation"
+      ],
+      "image": "http://static1.squarespace.com/static/6a5e3f55c53838201bece12a/t/6a95f9b16def2d15a4b9f9c7/1788213681271/IMCC_LOGOMARK_BLACK-1920PX.png?format=1500w"
+    },
+    {
+      "title": "Meditation 101",
+      "url": "https://www.imeditation.org/meditation101",
+      "description": "Written step-by-step instructions for breath meditation, from settling the body and noticing mood to resting attention on breathing.",
+      "featured": false,
+      "resource_type": "practice",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "http://static1.squarespace.com/static/6a5e3f55c53838201bece12a/t/6a95f9b16def2d15a4b9f9c7/1788213681271/IMCC_LOGOMARK_BLACK-1920PX.png?format=1500w"
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "centre",
+    "rank": 31,
+    "hub": null,
+    "tier_evidence": "YouTube unreadable (consent page, 9 Nov 2026); Instagram/Facebook not fetched; no readable counts → local_hero",
+    "email": "yes",
+    "email_source": "https://www.imeditation.org/",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 7 source(s)",
+    "flags": [
+      "Regional: Charlottesville, Virginia.",
+      "imcc.wildapricot.org (its older members' site) refused our robots.txt request with 403; not retried, nothing taken from it.",
+      "Thin on paid items: no dated class or retreat with its own page was listed on the calendar beyond weekly Tuesday talks; 3 free resources and 1 video (already on dev under tuere-sala). Recorded-talk archive is on YouTube (over 650 talks per the home page).",
+      "Hub links: tuere-sala and caverly-morgan named as recent guest teachers on the Teachers page (role instructor). The same page lists past guest teachers who are on Spiritpedia: sharon-salzberg, joseph-goldstein, tara-brach, hugh-byrne, kaira-jewel-lingo; not linked, owner to decide.",
+      "Photo: the one image clearly of the community (its teachers seated at the UU church); other site images are Unsplash stock.",
+      "Brand inbox: opsdirector@imeditation.org.",
+      "Site has racial-affinity and socially engaged Buddhism groups; practice-centred overall, not political-centred."
+    ],
+    "left_out": [
+      "Recovery Resources page and Racial Awareness Resources: health rule / not teaching items.",
+      "Individual dated Tuesday talks: covered by the Tuesday Nights free resource."
+    ]
+  },
+  "images_final": true
+}

@@ -17,8 +17,8 @@
     "walt-opie"
    ],
    "screen": "keep",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/insight-meditation-center.json",
    "skip_reason": null
   },
   {
@@ -33,8 +33,8 @@
     "tuere-sala"
    ],
    "screen": "keep",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/insight-san-diego.json",
    "skip_reason": null
   },
   {
@@ -49,9 +49,9 @@
     "tama-kieves"
    ],
    "screen": "keep",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Site blocks us: theosophical.org's robots.txt (read 9 Nov 2026) has groups for ClaudeBot, anthropic-ai and Claude-Web with Disallow: /, so nothing was fetched or taken from it (owner's robots rule, 5 Nov 2026). Possible editorial-stature listing if the owner ever finds another route."
   },
   {
    "rank": 4,
@@ -65,8 +65,8 @@
     "roxanne-dault"
    ],
    "screen": "keep",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/true-north-insight.json",
    "skip_reason": null
   },
   {
@@ -80,8 +80,8 @@
     "ajahn-canda"
    ],
    "screen": "keep",
-   "status": "todo",
-   "plan": null,
+   "status": "planned",
+   "plan": "docs/content-audits/buddhist-society-of-western-australia.json",
    "skip_reason": null
   },
   {
@@ -95,8 +95,8 @@
     "tuere-sala"
    ],
    "screen": "keep",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/clear-mountain-monastery.json",
    "skip_reason": null
   },
   {
@@ -110,8 +110,8 @@
     "tuere-sala"
    ],
    "screen": "keep",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/common-ground-meditation-center.json",
    "skip_reason": null
   },
   {
@@ -125,8 +125,8 @@
     "jill-shepherd"
    ],
    "screen": "keep",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/london-insight-meditation.json",
    "skip_reason": null
   },
   {
@@ -140,9 +140,9 @@
     "devin-berry"
    ],
    "screen": "keep",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "No usable own site: the site found by search (sites.google.com/view/sfdharmacollective) redirects to a Google sign-in page, which counts as a refusal, and the domain sfdharmacollective.org appeared only in a search summary and could not be confirmed on a page we may read (a Humanitix event page does not link it). Without the centre's own pages there is no confirmed contact, base, photo or teacher evidence. Owner may supply the URL for a later sprint."
   },
   {
    "rank": 10,
@@ -155,8 +155,8 @@
     "mikey-noechel"
    ],
    "screen": "keep",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/wild-heart-meditation-center.json",
    "skip_reason": null
   },
   {
@@ -169,8 +169,8 @@
     "laurie-cameron"
    ],
    "screen": "keep",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/center-for-mindful-living.json",
    "skip_reason": null
   },
   {
@@ -183,8 +183,8 @@
     "shelly-tygielski"
    ],
    "screen": "keep",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/garrison-institute.json",
    "skip_reason": null
   },
   {
@@ -197,8 +197,8 @@
     "mark-nunberg"
    ],
    "screen": "keep",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/insight-meditation-community-of-washington.json",
    "skip_reason": null
   },
   {
@@ -211,8 +211,8 @@
     "trudy-goodman"
    ],
    "screen": "keep",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/insightla.json",
    "skip_reason": null
   },
   {
@@ -225,8 +225,8 @@
     "tara-mulay"
    ],
    "screen": "keep",
-   "status": "todo",
-   "plan": null,
+   "status": "planned",
+   "plan": "docs/content-audits/mission-dharma.json",
    "skip_reason": null
   },
   {
@@ -239,8 +239,8 @@
     "devon-and-nico-hase"
    ],
    "screen": "keep",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/mountain-stream-meditation.json",
    "skip_reason": null
   },
   {
@@ -253,8 +253,8 @@
     "james-baraz"
    ],
    "screen": "keep",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/sangha-live.json",
    "skip_reason": null
   },
   {
@@ -267,8 +267,8 @@
     "yuval-ron"
    ],
    "screen": "keep",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/sufi-center-minnesota.json",
    "skip_reason": null
   },
   {
@@ -281,8 +281,8 @@
     "swami-sarvapriyananda"
    ],
    "screen": "keep",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/vedanta-society-of-new-york.json",
    "skip_reason": null
   },
   {
@@ -295,8 +295,8 @@
     "joa-scetbon"
    ],
    "screen": "keep",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/wild-flower-zen-sangha.json",
    "skip_reason": null
   },
   {
@@ -309,8 +309,8 @@
     "robert-joshin-althouse"
    ],
    "screen": "keep",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/zen-life-meditation-center-chicago.json",
    "skip_reason": null
   },
   {
@@ -322,9 +322,9 @@
     "tuere-sala"
    ],
    "screen": "keep",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "No usable photo: bellinghaminsight.org has only a 70-80 px logo, a 200 px Buddha image and small committee headshots (nothing at 300 px or more), and the sangha has no hall of its own (it meets at Sansui-ji Zen temple). Items are also thin (free Tuesday sits, one day retreat on 14 Nov 2026, an April 2027 retreat without its own page). Tuere Sala is not named on its site, and tueresala.org returned 403 to us (not retried)."
   },
   {
    "rank": 23,
@@ -335,8 +335,8 @@
     "tuere-sala"
    ],
    "screen": "keep",
-   "status": "todo",
-   "plan": null,
+   "status": "planned",
+   "plan": "docs/content-audits/east-bay-meditation-center.json",
    "skip_reason": null
   },
   {
@@ -348,9 +348,9 @@
     "finnbarr-kennedy"
    ],
    "screen": "keep",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Effectively a duplicate of Finnbarr Kennedy's listing: brightheartmeditation.com is his personal site (already his website_url on Spiritpedia), the 'centre' is his hermitage yurt in Zalaszentlászló, Hungary, and its YouTube channel, online sittings and book are his own. As a separate organisation it would be too thin (donation-based online sittings and informal retreats with no pages of their own)."
   },
   {
    "rank": 25,
@@ -361,8 +361,8 @@
     "ayya-sudhamma"
    ],
    "screen": "keep",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/charlotte-buddhist-vihara.json",
    "skip_reason": null
   },
   {
@@ -374,8 +374,8 @@
     "bart-van-melik"
    ],
    "screen": "keep",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/community-meditation-center.json",
    "skip_reason": null
   },
   {
@@ -387,8 +387,8 @@
     "philip-goldberg"
    ],
    "screen": "keep",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/center-for-spiritual-awareness.json",
    "skip_reason": null
   },
   {
@@ -400,9 +400,9 @@
     "fleet-maull"
    ],
    "screen": "keep",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Site blocks us: www.dralamountain.org/robots.txt answered 406 Not Acceptable, so the whole domain is treated as refusing us (not retried, no other pages fetched). Note: the centre was formerly Shambhala Mountain Center; an owner call on that history would have been needed anyway. A search result (Wikiwand) carried text addressed to AI assistants; ignored."
   },
   {
    "rank": 29,
@@ -413,8 +413,8 @@
     "kristina-bare"
    ],
    "screen": "keep",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/edmonton-insight-meditation.json",
    "skip_reason": null
   },
   {
@@ -426,8 +426,8 @@
     "gaelyn-godwin"
    ],
    "screen": "keep",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/houston-zen-center.json",
    "skip_reason": null
   },
   {
@@ -439,8 +439,8 @@
     "tuere-sala"
    ],
    "screen": "keep",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/insight-meditation-community-of-charlottesville.json",
    "skip_reason": null
   },
   {
@@ -452,9 +452,9 @@
     "shaila-catherine"
    ],
    "screen": "keep",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "No usable photo: imsb.org has no hall of its own (it meets in churches in Mountain View, Los Altos and Saratoga), its only logo is a 365x22 text banner, other images are Shaila Catherine's portrait, her book cover and landscape art, and the site links no YouTube channel. Every current programme (2027 retreats in California and Georgia, half-day sittings, online courses via Bodhi Courses) is taught by its founder Shaila Catherine, already on Spiritpedia with the same videos, so as a separate listing it would largely duplicate hers. Owner may revisit: published contact is sit@imsb.org (domain part shown as an image) on https://www.imsb.org/about-us/contact-us/."
   },
   {
    "rank": 33,
@@ -465,8 +465,8 @@
     "tenzin-wangyal-rinpoche"
    ],
    "screen": "keep",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/ligmincha-international.json",
    "skip_reason": null
   },
   {
@@ -478,8 +478,8 @@
     "scott-m-taylor"
    ],
    "screen": "keep",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/monroe-institute.json",
    "skip_reason": null
   },
   {
@@ -491,8 +491,8 @@
     "ayya-anandabodhi"
    ],
    "screen": "keep",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/parayana-vihara.json",
    "skip_reason": null
   },
   {
@@ -504,8 +504,8 @@
     "marc-lesser"
    ],
    "screen": "keep",
-   "status": "todo",
-   "plan": null,
+   "status": "planned",
+   "plan": "docs/content-audits/san-francisco-zen-center.json",
    "skip_reason": null
   },
   {
@@ -517,8 +517,8 @@
     "banafsheh-sayyad"
    ],
    "screen": "keep",
-   "status": "todo",
-   "plan": null,
+   "status": "planned",
+   "plan": "docs/content-audits/sivananda-ashram-yoga-retreat-bahamas.json",
    "skip_reason": null
   },
   {
@@ -530,8 +530,8 @@
     "guo-gu"
    ],
    "screen": "keep",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/tallahassee-chan-center.json",
    "skip_reason": null
   },
   {
@@ -543,8 +543,8 @@
     "chandra-easton"
    ],
    "screen": "keep",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/tara-mandala.json",
    "skip_reason": null
   },
   {
@@ -556,9 +556,9 @@
     "luisa-muhr"
    ],
    "screen": "keep",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Robots block: rowecenter.org/robots.txt (read 9 Nov 2026) has a group naming ClaudeBot and anthropic-ai with Disallow: /, which blocks the whole site for us under the owner's 5 Nov rule. Nothing else fetched from the site. Also note from web search only: it is a Unitarian Universalist camp and conference centre largely hosting group rentals and camps, so it may be thin on its own teaching items anyway. Teacher on its channel: luisa-muhr (no link written)."
   },
   {
    "rank": 41,
@@ -569,8 +569,8 @@
     "nikki-mirghafori"
    ],
    "screen": "keep",
-   "status": "todo",
-   "plan": null,
+   "status": "planned",
+   "plan": "docs/content-audits/the-sati-center.json",
    "skip_reason": null
   },
   {
@@ -582,8 +582,8 @@
     "swami-sarvapriyananda"
    ],
    "screen": "keep",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/vedanta-society-of-southern-california.json",
    "skip_reason": null
   },
   {
@@ -595,8 +595,8 @@
     "cuong-lu"
    ],
    "screen": "keep",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/village-zendo.json",
    "skip_reason": null
   },
   {
@@ -608,8 +608,8 @@
     "lama-dvora"
    ],
    "screen": "keep",
-   "status": "todo",
-   "plan": null,
+   "status": "planned",
+   "plan": "docs/content-audits/arava-spiritual-center.json",
    "skip_reason": null
   },
   {
@@ -625,9 +625,9 @@
     "tuere-sala"
    ],
    "screen": "keep",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Site blocks us: its only website found (turbot-vibraphone-hjhs.squarespace.com) has a robots.txt group naming ClaudeBot and anthropic-ai (and *) with Disallow: /, so nothing was fetched from it; no other own site found in two searches (Eventbrite listings are not a source). Video teachers on its channel: devin-berry, kristina-bare, nikki-mirghafori, tara-mulay, tuere-sala."
   },
   {
    "rank": 46,
@@ -639,8 +639,8 @@
     "puma-fredy-quispe-singona"
    ],
    "screen": "keep",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/institute-of-noetic-sciences.json",
    "skip_reason": null
   },
   {
@@ -648,17 +648,17 @@
    "kind": "app",
    "name": "Calm",
    "screen": "keep",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Site refuses us: www.calm.com returned 403 to our first page request (its robots.txt allowed the path); not retried, and nothing else fetched from calm.com, so no own-site source for bio, pricing, contact or image."
   },
   {
    "rank": 48,
    "kind": "app",
    "name": "Waking Up",
    "screen": "keep",
-   "status": "todo",
-   "plan": null,
+   "status": "planned",
+   "plan": "docs/content-audits/waking-up.json",
    "skip_reason": null
   },
   {
@@ -666,17 +666,17 @@
    "kind": "app",
    "name": "Ten Percent Happier",
    "screen": "keep",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Site blocks us: tenpercent.com redirects to www.meditatehappier.com, whose robots.txt has a ClaudeBot group with Disallow: / (owner rule, 5 Nov 2026); nothing fetched from it."
   },
   {
    "rank": 50,
    "kind": "app",
    "name": "Plum Village App",
    "screen": "keep",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/plum-village-app.json",
    "skip_reason": null
   },
   {
@@ -684,8 +684,8 @@
    "kind": "app",
    "name": "Medito",
    "screen": "keep",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/medito.json",
    "skip_reason": null
   },
   {
@@ -693,17 +693,17 @@
    "kind": "app",
    "name": "Balance",
    "screen": "keep",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Condition-led and too thin: balanceapp.com redirects to The Mind Company (themindcompany.com/apps/balance), which sells Balance as a personalised \"mental fitness\" programme to improve stress, sleep, focus and mood, with no tradition or practice content describable without those claims; its own pages publish no price, no free practices, no video IDs, and no email (only a per-app help centre link). Owner may revisit if wanted."
   },
   {
    "rank": 53,
    "kind": "app",
    "name": "Open",
    "screen": "keep",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/open.json",
    "skip_reason": null
   },
   {
@@ -711,8 +711,8 @@
    "kind": "app",
    "name": "Sattva",
    "screen": "keep",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/sattva.json",
    "skip_reason": null
   },
   {
@@ -720,8 +720,8 @@
    "kind": "app",
    "name": "Tergar Meditation App",
    "screen": "keep",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/tergar-meditation-app.json",
    "skip_reason": null
   },
   {
@@ -729,62 +729,62 @@
    "kind": "app",
    "name": "Liberate",
    "screen": "keep",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "No reachable own website: a web search did not confirm an official domain (results were press articles and store listings), and the one host tried did not respond; with no own site there is no source for bio, pricing, contact or image. Some press frames it around racial trauma (health rule would need care if revisited)."
   },
   {
    "rank": 57,
    "kind": "app",
    "name": "Healthy Minds Program",
    "screen": "keep",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Condition-led and clinical-science framing: the app's own page (humin.org/wellbeing-tools/app; Healthy Minds Innovations is now Humin) sells it on research results for depression, loneliness and stress reduction, and its paid companion course lists Mood & Depression Support, Addiction and Burnout Recovery; the practice is presented as secular wellbeing training rather than a contemplative or spiritual tradition. Owner may revisit (old domain hminnovations.org no longer resolves; contact support@humin.org and a contact form exist)."
   },
   {
    "rank": 58,
    "kind": "app",
    "name": "Aura",
    "screen": "keep",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Mainly therapy and condition-led: aurahealth.io presents Aura as a mental-wellness and sleep app (\"Healing Starts Here\") offering CBT, therapy, coaching and hypnosis (including weight-loss and sleep hypnosis) alongside meditation; the app-store title is \"Aura: Meditation & Sleep, CBT\". Skipped under the app health rule."
   },
   {
    "rank": 59,
    "kind": "app",
    "name": "Breethe",
    "screen": "keep",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Condition-led: breethe.com presents itself as an all-in-one mental wellness app (\"Feel better. Sleep better.\"), led by easing anxiety and helping sleep, with hypnotherapy sessions as a main content type; almost nothing on its own site can be described without sleep, anxiety or therapy claims. Founder and lead teacher Lynne Goldberg has a Spiritpedia plan (lynne-goldberg). Owner may revisit, since Calm-style apps are allowed on practice-only terms."
   },
   {
    "rank": 60,
    "kind": "app",
    "name": "Oak",
    "screen": "keep",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "No own website found: a web search returned only press and Product Hunt pages from its 2017-2018 launch by Kevin Rose and no official site, so there is no source for bio, pricing, contact or image; the app may no longer be maintained. Not researched further (no domain guessed)."
   },
   {
    "rank": 61,
    "kind": "app",
    "name": "Smiling Mind",
    "screen": "keep",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Condition-led mental-health framing, as with Healthy Minds: smilingmind.com.au presents Smiling Mind as an Australian mental-health not-for-profit whose free app is a psychologist-designed 'mental fitness' toolkit, sold on preventing mental ill-health, sleep, managing stress and big emotions, rather than a contemplative or spiritual practice. Robots.txt allows us (Squarespace); contact via its FAQ/help pages. Owner may revisit."
   },
   {
    "rank": 62,
    "kind": "app",
    "name": "Buddhify",
    "screen": "keep",
-   "status": "todo",
-   "plan": null,
+   "status": "planned",
+   "plan": "docs/content-audits/buddhify.json",
    "skip_reason": null
   },
   {
@@ -792,17 +792,17 @@
    "kind": "app",
    "name": "Simple Habit",
    "screen": "keep",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Condition-led and stale: simplehabit.com's home page (still marked (c) 2017) gives its mission as helping people 'stress less', the app-store title is 'Simple Habit Sleep, Meditation', and its help centre (per search results) presents it as a mental-wellness destination with licensed therapists among its experts; the site has almost no practice content describable under the health rule. Search snippets show the app is now published by Ingenio, LLC. Owner may revisit."
   },
   {
    "rank": 64,
    "kind": "app",
    "name": "Mindfulness.com",
    "screen": "keep",
-   "status": "todo",
-   "plan": null,
+   "status": "planned",
+   "plan": "docs/content-audits/mindfulness-com.json",
    "skip_reason": null
   },
   {
@@ -810,8 +810,8 @@
    "kind": "app",
    "name": "The Way (Henry Shukman)",
    "screen": "keep",
-   "status": "todo",
-   "plan": null,
+   "status": "planned",
+   "plan": "docs/content-audits/the-way.json",
    "skip_reason": null
   },
   {
@@ -819,8 +819,8 @@
    "kind": "app",
    "name": "Hallow",
    "screen": "keep",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/hallow.json",
    "skip_reason": null
   },
   {
@@ -828,26 +828,26 @@
    "kind": "app",
    "name": "Abide",
    "screen": "keep",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Condition-led marketing, as with Breethe: abide.com (a division of Guideposts; robots.txt allows us) titles itself 'Sleep Meditation Bible', leads its home page with user-survey claims of improvement in depression, insomnia and stress, routes visitors by Anxiety, Grief, Sleep and Stress, and its 'Why Meditate?' page leads with mental and physical health benefits. The underlying content is biblical meditation and audio Bible (Yearly $39.99/yr offer, Monthly $9.99/mo on its home page; help form at help.abide.com), so the owner may revisit on Calm-style practice-only terms."
   },
   {
    "rank": 68,
    "kind": "app",
    "name": "Lectio 365",
    "screen": "keep",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Sites refuse us: www.lectio365.com returned 403 to our robots.txt request, and so did www.24-7prayer.com (the maker, 24-7 Prayer); not retried and nothing else fetched from either domain, so there is no own-site source for bio, contact or image."
   },
   {
    "rank": 69,
    "kind": "app",
    "name": "Pray as you go",
    "screen": "keep",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/pray-as-you-go.json",
    "skip_reason": null
   },
   {
@@ -855,8 +855,8 @@
    "kind": "app",
    "name": "Glorify",
    "screen": "keep",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/glorify.json",
    "skip_reason": null
   },
   {
@@ -864,35 +864,35 @@
    "kind": "app",
    "name": "Heartfulness",
    "screen": "keep",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "App's own site refuses us: www.heartfulnessapp.org (the site the app-store listing names) returned 503 to our robots.txt request; not retried and nothing fetched from it. The parent organisation's site heartfulness.org allows us but has no page about the app itself (it covers the movement, Daaji, centres, free masterclasses; contact info@heartfulness.org on /global/connect-with-us/; it states 20M practitioners, 160 countries, 5K centres). Owner may prefer to list Heartfulness (Shri Ram Chandra Mission, Kanha Shanti Vanam) as an organisation instead; Daaji (Kamlesh D. Patel) is not on Spiritpedia."
   },
   {
    "rank": 72,
    "kind": "app",
    "name": "Art of Living Journey",
    "screen": "keep",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Own site serves us nothing: www.artofliving.org returns 404 from CloudFront/nginx for every request we made, including robots.txt, the home page and the app page found in search (/us-en/art-living-app-iphone); treated as a refusal, not retried under any other identity, and nothing else fetched. No own-site source for bio, pricing, contact or image. Founder Gurudev Sri Sri Ravi Shankar is not on Spiritpedia."
   },
   {
    "rank": 73,
    "kind": "app",
    "name": "Sahaja Online",
    "screen": "keep",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Condition-led, health rule: sahajaonline.com (robots allows us; domain found via a Sahaja meetup listing and confirmed on the site itself) leads with 'Guided Meditation for health' promising 'holistic healing' and relief of stress, anxiety and depression, addiction recovery and better sleep, and its main menu has pages on cancer, diabetes, HIV/AIDS, epilepsy, asthma, chronic pain, immunity and weight loss. It is also a free live online-class service rather than an app (no app-store listing named 'Sahaja Online' found)."
   },
   {
    "rank": 74,
    "kind": "app",
    "name": "Sadhguru App",
    "screen": "keep",
-   "status": "todo",
-   "plan": null,
+   "status": "planned",
+   "plan": "docs/content-audits/sadhguru-app.json",
    "skip_reason": null
   },
   {
@@ -900,17 +900,17 @@
    "kind": "app",
    "name": "CHANI",
    "screen": "keep",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Site blocks us: www.chani.com (chaninicholas.com redirects there) has a robots.txt group 'User-agent: anthropic-ai' with Disallow: / (owner rule, 5 Nov 2026); nothing else fetched from it. Note: Chani Nicholas is already on Spiritpedia (chani-nicholas, website chaninicholas.com), and that site now redirects to the blocking domain; owner may want to review her listing's links."
   },
   {
    "rank": 76,
    "kind": "app",
    "name": "The Pattern",
    "screen": "keep",
-   "status": "todo",
-   "plan": null,
+   "status": "planned",
+   "plan": "docs/content-audits/the-pattern.json",
    "skip_reason": null
   },
   {
@@ -918,8 +918,8 @@
    "kind": "app",
    "name": "Labyrinthos",
    "screen": "keep",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/labyrinthos.json",
    "skip_reason": null
   },
   {
@@ -927,18 +927,18 @@
    "kind": "app",
    "name": "Co–Star",
    "screen": "keep",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "No readable own-site content: www.costarastrology.com (robots.txt allows all) serves only a 1 KB script shell for every page we requested (home, about, contact, faq, advanced-readings, how-does-astrology-work), with the text rendered by JavaScript, so there is no own-site source for bio, contact, prices or image. We did not try other tools or the site's internal scripts. Owner may revisit with a browser-rendered read if allowed."
   },
   {
    "rank": 79,
    "kind": "app",
    "name": "Sanctuary",
    "screen": "keep",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Out of scope as it stands now: www.sanctuaryworld.co (robots.txt allows us; domain confirmed on its own home page) and its app-store title 'Sanctuary Psychic Reading' present it as a pay-per-minute marketplace of psychic, tarot, astrology and mediumship readers ('first reading for $1 / min', readers at $2.99-$19.99/min), not a practice or learning app, and its signature programmes are framed on healing after a breakup. Owner may revisit if paid psychic-reading marketplaces are wanted."
   },
   {
    "rank": 80,
@@ -954,8 +954,8 @@
    "kind": "app",
    "name": "Meditation Studio",
    "screen": "keep",
-   "status": "todo",
-   "plan": null,
+   "status": "planned",
+   "plan": "docs/content-audits/meditation-studio.json",
    "skip_reason": null
   },
   {
@@ -963,9 +963,9 @@
    "kind": "app",
    "name": "Wild Journey",
    "screen": "keep",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Too thin to list: it is mainly a nature-sounds app by Wild Ventures (a two-person Dutch studio). Its maker's site (wildventures.nl) gives it one sentence about landscape nature sounds, with no meditation content, pricing, free practices or videos of its own, so the bio, offering and items could only come from the App Store page."
   },
   {
    "rank": 83,
@@ -975,9 +975,9 @@
    "qt_role": "instructor",
    "qt_profile": "https://quantumtouch.com/en/practitioners/practitioner-2749",
    "screen": "keep",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Health rule: her own site (alisonzeidler.com) presents her mainly as a reflexologist and Muscle Tuner specialist and sells its sessions and workshops on burnout, anxiety, pain relief, headaches and sleep (home and sessions pages; a menopause package; even the Quantum-Touch workshop blurb promises pain relief), so too little would pass the strict energy-healing-only rule."
   },
   {
    "rank": 84,
@@ -987,9 +987,9 @@
    "qt_role": "instructor",
    "qt_profile": "https://quantumtouch.com/en/practitioners/practitioner-4008",
    "screen": "keep",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "No own site: her Quantum-Touch profile gives only Kowloon, Hong Kong (no website, email or photo), and a web search found no site of hers naming Quantum-Touch."
   },
   {
    "rank": 85,
@@ -999,8 +999,8 @@
    "qt_role": "instructor",
    "qt_profile": "https://quantumtouch.com/en/practitioners/practitioner-2087",
    "screen": "keep",
-   "status": "todo",
-   "plan": null,
+   "status": "planned",
+   "plan": "docs/content-audits/annabel-hall.json",
    "skip_reason": null
   },
   {
@@ -5828,5 +5828,5 @@
    "skip_reason": null
   }
  ],
- "updated": "2026-11-09T22:47:03.328Z"
+ "updated": "2026-11-09T23:56:13.518Z"
 }
