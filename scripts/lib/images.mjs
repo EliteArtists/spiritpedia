@@ -14,7 +14,12 @@ export const timed = () => AbortSignal.timeout(TIMEOUT_MS);
 // they refuse us, their robots.txt blocks us, or their terms forbid reuse.
 // isrefer.com carries The Shift Network's affiliate links, which redirect there.
 const OFF_LIMITS = /(^|\.)(theshiftnetwork\.com|isrefer\.com|mindvalley\.com|humanitysteam\.org|evolvingwisdom\.com|spiritrock\.org|openlibrary\.org|linktr\.ee|instagram\.com|facebook\.com|substack\.com|amazon\.com|amzn\.to|eomega\.org|soundstrue\.com|hayhouse\.com|events\.dharma\.org|redwheelweiser\.com|x\.com|twitter\.com|linkedin\.com|tiktok\.com)$/i;
-export const offLimits = (url) => { try { return OFF_LIMITS.test(new URL(url).hostname); } catch { return true; } };
+// YouTube channel pages redirect this machine to consent.youtube.com (9 Nov 2026),
+// and consent pages are never answered: no channel page is requested at all.
+// Video oEmbed and yt3 avatars are unaffected.
+const CONSENT_GATED = (u) => u.hostname === 'consent.youtube.com'
+  || (/(^|\.)youtube\.com$/i.test(u.hostname) && /^\/(@|channel\/|c\/|user\/)/.test(u.pathname));
+export const offLimits = (url) => { try { const u = new URL(url); return OFF_LIMITS.test(u.hostname) || CONSENT_GATED(u); } catch { return true; } };
 
 // robots.txt first, on every host (owner's blocked-means-skip rule; 6 Nov
 // 2026, after a fallback image came from a host that had refused our
