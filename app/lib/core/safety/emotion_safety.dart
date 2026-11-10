@@ -419,9 +419,22 @@ class EmotionSafety {
       RegExp('(?:^|\\b)${_escapeForRegex(phrase)}(?:\\b|\$)');
 
   /// The crisis category this matches, or null. First category wins.
+  ///
+  /// Hyphens count as spaces here (owner, 10 Nov 2026), as on the website
+  /// (emotionSearchPatterns.js → checkCrisis): the normaliser keeps them, so
+  /// "self-harm" and "kill-myself" slipped past phrases stored with spaces.
+  /// Both forms are tested, so a stored phrase with a hyphen still matches.
   String? checkCrisis(String normalised) {
+    final spaced = normalised
+        .replaceAll('-', ' ')
+        .replaceAll(RegExp(r'\s+'), ' ')
+        .trim();
     for (final c in _crisisCompiled) {
-      if (c.regexes.any((re) => re.hasMatch(normalised))) return c.category;
+      if (c.regexes.any(
+        (re) => re.hasMatch(normalised) || re.hasMatch(spaced),
+      )) {
+        return c.category;
+      }
     }
     return null;
   }
