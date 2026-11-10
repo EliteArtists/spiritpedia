@@ -4,6 +4,7 @@ import BookCard from '../../../components/BookCard.js';
 import ContentShelf from '../../../components/ContentShelf.js';
 import FreeResourceCard from '../../../components/FreeResourceCard.js';
 import HealerCard from '../../../components/HealerCard.js';
+import SubjectHealersShelf from '../../../components/SubjectHealersShelf.jsx';
 import OfferingCard from '../../../components/OfferingCard.js';
 import VideoShelves from '../../../components/VideoShelves.jsx';
 import ShareButton from '../../../components/ShareButton.jsx';
@@ -48,7 +49,7 @@ export default async function SubjectPage({ params }) {
     getHealerNames(),
   ]);
 
-  const { healers, books, courses, freeResources } = content;
+  const { healers, places, books, courses, freeResources } = content;
   // byId for the offering and free-resource cards, bySlug for the video cards —
   // the two tables point at a healer differently. See getHealerNames().
   const { byId: healerNameById, bySlug: healerNamesBySlug } = healerNames;
@@ -125,16 +126,13 @@ export default async function SubjectPage({ params }) {
           // the page to the full un-wrapped width of every shelf.
           // Shelf order mirrors the homepage so the two pages read identically.
           <main className="grid grid-cols-1 gap-14">
-            <ContentShelf
-              title="Healers"
-              subtitle="Practitioners & Teachers"
-              items={healers.filter((h) => !isPlatform(h))}
-              renderItem={(healer) => <HealerCard healer={healer} />}
-              itemWidthClass="w-[260px]"
-            />
+            {/* Tier order, then by name; nearest first within each tier once
+                the visitor has set an area (a client component, because the
+                area lives in the browser). */}
+            <SubjectHealersShelf healers={healers.filter((h) => !isPlatform(h))} places={places} />
 
             {/* Channels, apps and organisations apart from the teachers, as on
-                the homepage; Spiritpedia's own first. */}
+                the homepage; Spiritpedia's own first, then by tier and name. */}
             <ContentShelf
               title="Channels"
               subtitle="Channels, Apps & Organisations"

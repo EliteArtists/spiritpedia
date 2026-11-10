@@ -20,6 +20,7 @@ import { SITE_URL, DEFAULT_TITLE } from '../utils/seo.js';
 // every visitor. utils/supabase.js exists precisely to be stateless, and this
 // was the one place that bypassed it.
 import { supabase } from '../utils/supabase.js';
+import { selectAllHealers } from '../data/subjects.js';
 import { authorCount, isPlatform, isSchool, officialFirst, splitOrganisations, teacherCount } from '../utils/listings.js';
 
 const DEFAULT_AVATAR = 'https://placehold.co/400x400?text=Spiritpedia';
@@ -46,7 +47,9 @@ export default async function HomePage({ initialSubjectSlug, initialSearch = '' 
   // document and the great majority of its images.
   const [subjectsRes, healersRes, publishersRes, schoolTeachersRes] = await Promise.all([
     supabase.from('subjects').select('*').order('name', { ascending: true }),
-    supabase.from('healers').select('*'),
+    // Paged: an unpaged select stops at 1,000 rows without a word, and live
+    // has more healers than that (data/subjects.js → selectAllHealers).
+    selectAllHealers('*'),
     // The embed brings each publisher's linked listings' types in the same
     // round trip, so the card can say "18 authors", counting people only
     // (utils/listings.js → authorCount).

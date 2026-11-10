@@ -63,7 +63,8 @@ function TierTooltip({ tier, children, placement = 'above' }) {
 // one image (or none) it renders the static card exactly as before, so the prop
 // is safe to pass for a whole shelf.
 //
-// `distance` ("320 km away") is a line under the name, for "Closest to you".
+// `distance` ("320 km away") is a line under the name, once a visitor has set
+// an area (Near You, Closest to you, subject pages).
 export default function HealerCard({ healer, portrait, heightClass = 'h-72', rotate = false, distance }) {
   // Saved by slug — the same key the app and user_favourites use.
   const [favorited, toggleSaved] = useFavorite(FAVORITE_KEYS.healers, healer.healer_slug);

@@ -92,7 +92,22 @@ export function teacherCount(hub, links) {
 // the shelf is never a one-card row (README job #13).
 export const ORGANISATION_SHELF_MIN = 5;
 
+// The site's tier order: Superhero, Ascended Master, Luminary, then Local
+// Hero and anything untiered.
 const TIER_RANK = { superhero: 0, ascended_master: 1, luminary: 2 };
+export const tierRank = (h) => TIER_RANK[h?.tier] ?? 3;
+
+// A list in tier order, then by name (a stable order for ties). Subject
+// pages (owner, 10 Nov 2026); a new array, the given one is left alone.
+export function byTier(healers) {
+  const list = Array.isArray(healers) ? healers : [];
+  return list
+    .map((h, i) => ({ h, i }))
+    .sort((a, b) => tierRank(a.h) - tierRank(b.h)
+      || String(a.h.name || '').localeCompare(String(b.h.name || ''), 'en', { sensitivity: 'base' })
+      || a.i - b.i)
+    .map(({ h }) => h);
+}
 
 // Takes Explore These Channels' list (channels, apps, organisations) and moves
 // the organisations onto their own shelf when there are enough of them:
@@ -102,11 +117,10 @@ export function splitOrganisations(platforms, links) {
   const list = Array.isArray(platforms) ? platforms : [];
   const orgs = list.filter((h) => h?.entity_type === 'organisation');
   if (orgs.length < ORGANISATION_SHELF_MIN) return { organisations: [], platforms: list };
-  const rank = (h) => TIER_RANK[h.tier] ?? 3;
   const organisations = orgs
     .map((h, i) => ({ h, i, n: teacherCount(h, links) }))
     .sort((a, b) => (b.h.official ? 1 : 0) - (a.h.official ? 1 : 0)
-      || rank(a.h) - rank(b.h)
+      || tierRank(a.h) - tierRank(b.h)
       || b.n - a.n
       || a.i - b.i)
     .map(({ h }) => h);

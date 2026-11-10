@@ -78,30 +78,38 @@ export function distanceKm(a, b) {
 // The website's own test for online sessions (the healer profile badge).
 export const offersOnline = (h) => (h.availability_type || '').toLowerCase().includes('online');
 
-// Practitioners Near You for someone in `area`: those within NEAR_RADIUS_KM,
-// nearest first; then everyone who offers sessions online, from anywhere, in
-// the order given. Local-only practitioners elsewhere are left out. `places`
-// maps place id → place. No area: the list as it is.
+// Practitioners Near You for someone in `area` (owner, 10 Nov 2026): sorted,
+// never filtered. Everyone given stays. Those with a town come first, nearest
+// first, each with its distance in km; then everyone with no town (km null),
+// in the order given. `places` maps place id → place. No area: the list as it
+// is, with no distances. The app follows in 1.0.2 (shelf_rules.dart → nearYou
+// still filters until then).
 export function nearYou(practitioners, area, places) {
-  if (!area) return { near: practitioners, online: [] };
-  const near = [];
-  practitioners.forEach((h, i) => {
-    const town = places[h.place_id];
-    if (!town) return;
-    const km = distanceKm(area, town);
-    if (km <= NEAR_RADIUS_KM) near.push({ h, km, i });
-  });
-  near.sort((a, b) => a.km - b.km || a.i - b.i);
-  const nearOnes = near.map((n) => n.h);
-  const shown = new Set(nearOnes.map((h) => h.id));
-  return {
-    near: nearOnes,
-    online: practitioners.filter((h) => offersOnline(h) && !shown.has(h.id)),
-  };
+  if (!area) return practitioners.map((h) => ({ healer: h, km: null }));
+  return nearestFirst(practitioners, area, places);
 }
 
-// How many "Closest to you" shows when nobody is within NEAR_RADIUS_KM.
-export const CLOSEST_COUNT = 10;
+// The sort under Near You and the subject pages. `rank` groups first (the
+// subject pages pass the tier, utils/listings.js → tierRank); within a group,
+// those with a town nearest first, then those with none; ties keep the order
+// given. Returns { healer, km } with km null for no town.
+export function nearestFirst(list, area, places, rank = () => 0) {
+  return list
+    .map((h, i) => {
+      const town = places[h.place_id];
+      return { h, i, r: rank(h), km: town ? distanceKm(area, town) : null };
+    })
+    .sort((a, b) =>
+      a.r - b.r
+      || (a.km === null) - (b.km === null)
+      || (a.km ?? 0) - (b.km ?? 0)
+      || a.i - b.i)
+    .map(({ h, km }) => ({ healer: h, km }));
+}
+
+// True when anyone in a nearYou() list is within NEAR_RADIUS_KM: the shelf is
+// then "Practitioners Near You", otherwise "Closest to you".
+export const anyNear = (sorted) => sorted.some((s) => s.km !== null && s.km <= NEAR_RADIUS_KM);
 
 // Countries whose people think in miles; everyone else gets kilometres. Read
 // from the area's own country (places.country), never the browser's locale.
@@ -114,19 +122,4 @@ export function distanceLabel(km, country) {
   const unit = distanceUnitFor(country);
   const n = Math.max(1, Math.round(unit === 'miles' ? km / 1.609344 : km));
   return `${n.toLocaleString('en-GB')} ${unit === 'miles' ? (n === 1 ? 'mile' : 'miles') : 'km'} away`;
-}
-
-// "Closest to you", for when nobody is within NEAR_RADIUS_KM of the area: the
-// CLOSEST_COUNT practitioners nearest it, town centre to town centre, nearest
-// first, each with its distance. Practitioners with no town can't be placed,
-// so they are left out. Empty when nobody in the list has a town.
-export function closestTo(practitioners, area, places, count = CLOSEST_COUNT) {
-  if (!area) return [];
-  return practitioners
-    .map((h, i) => ({ h, i, town: places[h.place_id] }))
-    .filter(({ town }) => town)
-    .map(({ h, i, town }) => ({ h, i, km: distanceKm(area, town) }))
-    .sort((a, b) => a.km - b.km || a.i - b.i)
-    .slice(0, count)
-    .map(({ h, km }) => ({ healer: h, km }));
 }

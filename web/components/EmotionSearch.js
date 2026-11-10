@@ -18,6 +18,7 @@ import {
   MEDICAL_DISCLAIMER,
 } from '../utils/emotionSearchPatterns.js';
 import { trackSearch } from '../utils/activity.js';
+import { matchSubjectsByName } from '../utils/subjectSearch.js';
 import { isPerson, typeLabel } from '../utils/badges.js';
 
 // Subject slugs are hyphenated db keys; these render as friendly labels. Anything
@@ -62,6 +63,34 @@ const EMPTY_UNIVERSAL = { healers: [], books: [], videos: [], subjects: [] };
 // The search dropdown is a homepage-level entry point, so any detail page it
 // opens gets "← Back to Spiritpedia" as its contextual back link.
 const SEARCH_BACK = backContextQuery('/', 'Spiritpedia');
+
+// Subjects by name, ignoring spaces, hyphens and capitals (utils/subjectSearch.js),
+// so "Quantum-Touch", "quantumtouch" and "breath work" find their subjects. An
+// ilike on the typed text cannot do that, so the list (a few dozen short
+// rows) is fetched once per page and matched here. A failed fetch is not kept,
+// so the next search tries again.
+let subjectList = null;
+function allSubjects() {
+  if (!subjectList) {
+    subjectList = supabase
+      .from('subjects')
+      .select('id, name, slug')
+      .order('name', { ascending: true })
+      .then(({ data, error }) => {
+        if (error) throw error;
+        return data || [];
+      })
+      .catch(() => {
+        subjectList = null;
+        return [];
+      });
+  }
+  return subjectList;
+}
+
+async function lookupSubjectsByName(term) {
+  return { data: matchSubjectsByName(await allSubjects(), term, 3) };
+}
 
 // Exact-match lookup — the contract resolveEmotionSearch() expects. The
 // candidate cascade calls this once per candidate and stops at the first with
@@ -371,7 +400,7 @@ export default function EmotionSearch() {
           .limit(4),
         supabase.from('books').select('id, title, slug, mock_cover_url').ilike('title', `%${term}%`).limit(4),
         supabase.from('videos').select('id, title, platform_url').ilike('title', `%${term}%`).limit(3),
-        supabase.from('subjects').select('id, name, slug').ilike('name', `%${term}%`).limit(3),
+        lookupSubjectsByName(term),
       ]);
 
       let resolved = emotionRes;

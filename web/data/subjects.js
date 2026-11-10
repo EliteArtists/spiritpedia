@@ -1,4 +1,5 @@
 import { supabase } from '../utils/supabase.js';
+import { byTier } from '../utils/listings.js';
 
 // Function to fetch all subjects from the Supabase database (used by homepage and static generator)
 export async function getAllSubjects() {
@@ -15,6 +16,28 @@ export async function getAllSubjects() {
   return subjects;
 }
 
+// Every healer row, `columns` wide. PostgREST caps a response at 1,000 rows
+// and truncates WITHOUT an error, and live passed that in Nov 2026 (1,013
+// healers), so a plain select() silently lost the rest from the home page.
+// Paged by `id` as web/app/sitemap.js does: id is unique, so pages neither
+// overlap nor skip (created_at is not; bulk imports share a timestamp).
+// `refine` narrows the query before it is paged. Returns { data, error }
+// like a single query; a failed page returns what came before it.
+const PAGE = 1000;
+
+export async function selectAllHealers(columns = '*', refine = (q) => q) {
+  const rows = [];
+  for (let from = 0; ; from += PAGE) {
+    const { data, error } = await refine(
+      supabase.from('healers').select(columns).order('id', { ascending: true })
+    ).range(from, from + PAGE - 1);
+    if (error) return { data: rows.length ? rows : null, error };
+    rows.push(...(data || []));
+    if (!data || data.length < PAGE) break;
+  }
+  return { data: rows, error: null };
+}
+
 // Display names for every healer on the platform, keyed BOTH ways, because the
 // content tables do not agree on how they point at a healer:
 //
@@ -27,13 +50,14 @@ export async function getAllSubjects() {
 //
 // Deliberately spans the whole table, not the subject-filtered set: a course's
 // author must still be nameable when the author themselves is not tagged with
-// the subject being viewed, and a video's healer likewise.
+// the subject being viewed, and a video's healer likewise. Paged
+// (selectAllHealers), so nobody past the first 1,000 loses their name.
 export async function getHealerNames() {
-  const { data, error } = await supabase.from('healers').select('id, name, healer_slug');
+  const { data, error } = await selectAllHealers('id, name, healer_slug');
 
   if (error) {
     console.error('Error fetching healer names:', error);
-    return { byId: new Map(), bySlug: [] };
+    if (!data) return { byId: new Map(), bySlug: [] };
   }
 
   return {
@@ -58,9 +82,10 @@ export async function getHealerNames() {
 // lifts the thousand-row ceiling that was silently costing self-healing 45 of
 // its 1,045 videos.
 //
-// TODO — the four queries below still have that ceiling. PostgREST caps a
+// TODO — the books, courses and free resources queries below still have that
+// ceiling (healers are paged now, selectAllHealers). PostgREST caps a
 // response at 1,000 rows and reports no error when it truncates, so the first
-// subject whose books, courses, free resources or healers cross that line will
+// subject whose books, courses or free resources cross that line will
 // quietly lose the remainder. self-healing is already at 547 courses and 465
 // books, and consciousness at 386 courses. The fix is `.range()` paging on a
 // unique, ordered column (id — created_at is not unique, bulk imports share a
@@ -76,7 +101,7 @@ export async function getContentBySubjectSlug(subjectSlug) {
   const [booksResult, healersResult, coursesResult, freeResourcesResult] =
     await Promise.all([
       supabase.from('books').select('*').contains('subject_slugs', [subjectSlug]),
-      supabase.from('healers').select('*').contains('subject_slugs', [subjectSlug]),
+      selectAllHealers('*', (q) => q.contains('subject_slugs', [subjectSlug])),
       supabase
         .from('courses')
         .select('*')
@@ -98,12 +123,23 @@ export async function getContentBySubjectSlug(subjectSlug) {
   const failure = results.find((r) => r.error);
   if (failure) {
     console.error('Error in content query:', failure.error);
-    return { books: [], healers: [], courses: [], freeResources: [] };
+    return { books: [], healers: [], courses: [], freeResources: [], places: {} };
   }
+
+  // Teachers in the site's tier order, then by name (owner, 10 Nov 2026); the
+  // page re-sorts within each tier, nearest first, once the visitor's area is
+  // known in the browser (components/SubjectHealersShelf.jsx). That needs
+  // their towns, which come back as `places` (place id → place).
+  const healers = byTier(healersResult.data);
+  const placeIds = [...new Set(healers.map((h) => h.place_id).filter(Boolean))];
+  const { data: placeRows } = placeIds.length
+    ? await supabase.from('places').select('id, name, region, country, lat, lng').in('id', placeIds)
+    : { data: [] };
 
   return {
     books: booksResult.data,
-    healers: healersResult.data,
+    healers,
+    places: Object.fromEntries((placeRows || []).map((p) => [p.id, p])),
     courses: coursesResult.data,
     freeResources: freeResourcesResult.data,
   };

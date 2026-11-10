@@ -1,6 +1,6 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { closestTo, distanceKm, distanceLabel, distanceUnitFor, nearYou, readArea, writeArea, roundForPrivacy } from './area.js';
+import { anyNear, distanceKm, distanceLabel, distanceUnitFor, nearestFirst, nearYou, readArea, writeArea, roundForPrivacy } from './area.js';
 
 const london = { id: 2643743, name: 'London', region: 'England', country: 'United Kingdom', lat: 51.5085, lng: -0.1257 };
 const croydon = { id: 2652053, name: 'Croydon', region: 'England', country: 'United Kingdom', lat: 51.3816, lng: -0.0981 };
@@ -21,20 +21,25 @@ test('distances between town centres', () => {
   assert.ok(Math.abs(distanceKm(london, manchester) - 262) < 5);
 });
 
-test('no area: everyone, as they were', () => {
-  assert.deepEqual(nearYou(all, null, places), { near: all, online: [] });
+const people = (r) => r.map((s) => s.healer);
+
+test('no area: everyone, as they were, with no distances', () => {
+  const r = nearYou(all, null, places);
+  assert.deepEqual(people(r), all);
+  assert.ok(r.every((s) => s.km === null));
 });
 
-test('in London: near in person first, then online from anywhere; local-only elsewhere left out', () => {
+test('in London: everyone stays; towns nearest first, then no town', () => {
   const r = nearYou(all, london, places);
-  assert.deepEqual(r.near, [inLondon, inCroydon]);
-  assert.deepEqual(r.online, [manchesterOnline, nowhere]);
+  assert.deepEqual(people(r), [inLondon, inCroydon, manchesterLocal, manchesterOnline, nowhere]);
+  assert.equal(r[0].km, 0);
+  assert.equal(r[4].km, null);
+  assert.ok(anyNear(r));
 });
 
-test('the same as the app in Manchester', () => {
+test('the same in Manchester: local-only people elsewhere are kept, further down', () => {
   const r = nearYou(all, manchester, places);
-  assert.deepEqual(r.near, [manchesterLocal, manchesterOnline]);
-  assert.deepEqual(r.online, [inLondon, nowhere]);
+  assert.deepEqual(people(r), [manchesterLocal, manchesterOnline, inLondon, inCroydon, nowhere]);
 });
 
 test('kept as a town only; a position leaves rounded to about 1 km', () => {
@@ -50,14 +55,33 @@ test('kept as a town only; a position leaves rounded to about 1 km', () => {
 const paris = { id: 2988507, name: 'Paris', region: 'Île-de-France', country: 'France', lat: 48.8534, lng: 2.3488 };
 const edinburgh = { id: 2650225, name: 'Edinburgh', region: 'Scotland', country: 'United Kingdom', lat: 55.9521, lng: -3.1965 };
 
-test('closest to you: nearest first, with distances, towns only, ten at most', () => {
-  const r = closestTo(all, edinburgh, places);
-  assert.deepEqual(r.map((c) => c.healer), [manchesterLocal, manchesterOnline, inLondon, inCroydon]);
+const newYork = { id: 5128581, name: 'New York', region: 'New York', country: 'United States', lat: 40.7143, lng: -74.006 };
+
+test('closest to you: nobody within 50 km, so the same full list, nearest first, with distances', () => {
+  const r = nearYou(all, edinburgh, places);
+  assert.ok(!anyNear(r));
+  assert.deepEqual(people(r), [manchesterLocal, manchesterOnline, inLondon, inCroydon, nowhere]);
   assert.ok(Math.abs(r[0].km - 282) < 5);
-  assert.equal(closestTo(all, null, places).length, 0);
+  // No longer capped at ten.
   const many = Array.from({ length: 14 }, (_, i) => h(100 + i, london, 'Local Only (In-Person)'));
-  assert.equal(closestTo(many, paris, places).length, 10);
-  assert.deepEqual(closestTo([nowhere], paris, places), []);
+  assert.equal(nearYou(many, paris, places).length, 14);
+  // Nobody with a town: still everyone, none with a distance.
+  assert.deepEqual(people(nearYou([nowhere], paris, places)), [nowhere]);
+});
+
+test('someone 5,000 km away and someone with no base both stay, after nearer people', () => {
+  const far = h(6, newYork, 'Local Only (In-Person)');
+  const noBase = h(7, null, 'Local Only (In-Person)');
+  const r = nearYou([noBase, far, inCroydon, inLondon], london, { ...places, [newYork.id]: newYork });
+  assert.deepEqual(people(r), [inLondon, inCroydon, far, noBase]);
+  assert.ok(r[2].km > 5000);
+  assert.equal(r[3].km, null);
+});
+
+test('nearestFirst groups by rank first, then nearest, then no town, ties in the order given', () => {
+  const rank = (x) => (x.id === 1 || x.id === 5 ? 0 : 1);
+  const r = nearestFirst(all, london, places, rank);
+  assert.deepEqual(people(r), [manchesterLocal, nowhere, inLondon, inCroydon, manchesterOnline]);
 });
 
 test('miles in the United Kingdom and the United States, kilometres elsewhere', () => {
