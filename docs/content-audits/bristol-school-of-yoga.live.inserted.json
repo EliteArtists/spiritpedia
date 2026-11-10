@@ -1,0 +1,28 @@
+{
+  "env": "live",
+  "healer": {
+    "id": 1093,
+    "healer_slug": "bristol-school-of-yoga"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "2b25f13d-e655-4b08-b207-74d532a5c769",
+      "slug": "vinyasa-and-yin-200hr-yoga-teacher-training",
+      "title": "Vinyasa and Yin 200hr Yoga Teacher Training"
+    },
+    {
+      "table": "courses",
+      "id": "1423a58b-5059-4bee-8fd5-70a18b28b196",
+      "slug": "yoga-in-depth",
+      "title": "Yoga in Depth"
+    },
+    {
+      "table": "courses",
+      "id": "0efd9428-ade1-44ae-a485-f16c61b7c20f",
+      "slug": "earth-membership",
+      "title": "Earth Membership"
+    }
+  ],
+  "at": "2026-11-10T11:18:57.142Z"
+}

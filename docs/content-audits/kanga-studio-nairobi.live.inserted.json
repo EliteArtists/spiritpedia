@@ -1,0 +1,40 @@
+{
+  "env": "live",
+  "healer": {
+    "id": 1085,
+    "healer_slug": "kanga-studio-nairobi"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "6c3aa655-3d19-462d-b373-d49ef095f70d",
+      "slug": "kanga-yoga-teacher-training-50-hour-in-person-course-nairobi",
+      "title": "Kanga Yoga Teacher Training: 50-Hour In-Person Course, Nairobi"
+    },
+    {
+      "table": "courses",
+      "id": "2be7bada-3db9-48cd-9e5a-17cde009e697",
+      "slug": "rishikesh-yoga-ayurveda-retreat-with-emma-bonnici",
+      "title": "Rishikesh Yoga & Ayurveda Retreat with Emma Bonnici"
+    },
+    {
+      "table": "courses",
+      "id": "4913a108-439a-4d00-9f78-cee58ad4844e",
+      "slug": "om-chanting-with-khilan-shah",
+      "title": "Om Chanting with Khilan Shah"
+    },
+    {
+      "table": "courses",
+      "id": "5724a8f2-cf47-4df4-86a4-cb99508906ae",
+      "slug": "jivamukti-spiritual-warrior",
+      "title": "Jivamukti Spiritual Warrior"
+    },
+    {
+      "table": "courses",
+      "id": "4cc7f7ba-9e09-4154-a19b-86ea6c893c27",
+      "slug": "studio-classes-and-packages",
+      "title": "Studio classes and packages"
+    }
+  ],
+  "at": "2026-11-10T11:18:39.965Z"
+}

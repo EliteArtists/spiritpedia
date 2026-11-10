@@ -1,0 +1,22 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 1164,
+    "healer_slug": "tergar"
+  },
+  "rows": [
+    {
+      "table": "free_resources",
+      "id": "e64e4070-1d91-464f-a590-985455dde9ad",
+      "slug": "tergar-meditation-tracker",
+      "title": "Tergar Meditation Tracker"
+    },
+    {
+      "table": "free_resources",
+      "id": "909e2cbf-1567-4d69-9327-d9bdabe0fa22",
+      "slug": "feel-better-now-a-3-day-mini-meditation-journey-with-mingyur-rinpoche",
+      "title": "Feel Better Now: A 3-Day Mini Meditation Journey with Mingyur Rinpoche"
+    }
+  ],
+  "at": "2026-11-10T11:08:59.018Z"
+}

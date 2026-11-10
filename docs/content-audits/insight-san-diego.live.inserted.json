@@ -1,0 +1,40 @@
+{
+  "env": "live",
+  "healer": {
+    "id": 1031,
+    "healer_slug": "insight-san-diego"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "58dfe85c-1264-431d-8a10-8f868835caeb",
+      "slug": "the-four-elements-a-path-to-belonging-daylong-with-noriko-morita-harth",
+      "title": "The Four Elements: A Path to Belonging (Daylong with Noriko Morita Harth)"
+    },
+    {
+      "table": "free_resources",
+      "id": "8ca7f492-b60f-49b7-828d-2299807020f7",
+      "slug": "dharma-talk-library",
+      "title": "Dharma Talk Library"
+    },
+    {
+      "table": "free_resources",
+      "id": "e38b630c-d664-411a-ae87-058ce5b47c7f",
+      "slug": "dharma-self-study-guide",
+      "title": "Dharma Self-Study Guide"
+    },
+    {
+      "table": "free_resources",
+      "id": "d66a6f69-d48e-4bf4-b773-46db3ea1c1ab",
+      "slug": "weekly-online-meditation",
+      "title": "Weekly Online Meditation"
+    },
+    {
+      "table": "free_resources",
+      "id": "1eb4d9d3-300c-4ab3-867c-f479e74686c8",
+      "slug": "sitting-group-central-san-diego",
+      "title": "Sitting Group – Central San Diego"
+    }
+  ],
+  "at": "2026-11-10T11:16:24.540Z"
+}

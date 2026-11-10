@@ -1,0 +1,28 @@
+{
+  "env": "live",
+  "healer": {
+    "id": 1048,
+    "healer_slug": "community-meditation-center"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "18449a45-197e-4892-8b3e-89f9e2b115f5",
+      "slug": "a-day-of-kindness-a-celebration-and-annual-fundraiser-for-cmc",
+      "title": "A Day of Kindness: A Celebration and Annual Fundraiser for CMC"
+    },
+    {
+      "table": "free_resources",
+      "id": "79516df6-6ef5-4713-b243-9397d20b8617",
+      "slug": "sacred-sunday-pause",
+      "title": "Sacred Sunday Pause"
+    },
+    {
+      "table": "free_resources",
+      "id": "4a742502-02e7-4db9-a9c6-61d0547aa028",
+      "slug": "teaching-archive",
+      "title": "Teaching Archive"
+    }
+  ],
+  "at": "2026-11-10T11:17:15.485Z"
+}

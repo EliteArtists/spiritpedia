@@ -1,0 +1,54 @@
+{
+  "env": "live",
+  "healer": {
+    "id": 1124,
+    "healer_slug": "camille-maurine"
+  },
+  "rows": [
+    {
+      "table": "books",
+      "id": 2380,
+      "slug": "meditation-secrets-for-women",
+      "title": "Meditation Secrets for Women: Discovering Your Passion, Pleasure, and Inner Peace"
+    },
+    {
+      "table": "books",
+      "id": 2381,
+      "slug": "meditation-24-7",
+      "title": "Meditation 24/7: Practices to Enlighten Every Moment of the Day"
+    },
+    {
+      "table": "courses",
+      "id": "b282387d-d8b1-4e16-9e7e-eaaae0d86256",
+      "slug": "private-sessions-in-soulful-embodiment-with-camille-maurine",
+      "title": "Private Sessions in Soulful Embodiment with Camille Maurine"
+    },
+    {
+      "table": "courses",
+      "id": "09f1b739-e32b-4255-9edb-fe99316d5327",
+      "slug": "radiance-sutras-meditation-teacher-training-200-hours-online",
+      "title": "Radiance Sutras Meditation Teacher Training (200 hours, online)"
+    },
+    {
+      "table": "hub_teachers",
+      "id": "96fc9aa0-0466-4230-9f70-a9ee1fcdd051",
+      "title": "camille-maurine teaches at Kripalu Center for Yoga & Health"
+    },
+    {
+      "table": "hub_teachers",
+      "id": "9682edeb-2dea-4319-a902-f05f31d8270d",
+      "title": "camille-maurine teaches at Esalen Institute"
+    },
+    {
+      "table": "hub_teachers",
+      "id": "8a85c239-0822-4bf5-a92f-972a7970c66c",
+      "title": "camille-maurine teaches at 1440 Multiversity"
+    },
+    {
+      "table": "hub_teachers",
+      "id": "db63b849-f853-472f-b222-de0033f4e0ba",
+      "title": "camille-maurine teaches at The Shift Network"
+    }
+  ],
+  "at": "2026-11-10T11:20:40.086Z"
+}

@@ -1,0 +1,22 @@
+{
+  "env": "live",
+  "healer": {
+    "id": 1045,
+    "healer_slug": "wild-flower-zen-sangha"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "71934516-f0ec-4266-9405-6aa81ab0f3aa",
+      "slug": "retreats-and-day-practice",
+      "title": "Retreats and Day Practice"
+    },
+    {
+      "table": "free_resources",
+      "id": "f7a60c94-8d1a-4193-b01b-1d9444ac63aa",
+      "slug": "wfz-meditations",
+      "title": "WFZ-Méditations"
+    }
+  ],
+  "at": "2026-11-10T11:17:07.580Z"
+}

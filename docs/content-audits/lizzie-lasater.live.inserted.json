@@ -1,0 +1,70 @@
+{
+  "env": "live",
+  "healer": {
+    "id": 1114,
+    "healer_slug": "lizzie-lasater"
+  },
+  "rows": [
+    {
+      "table": "books",
+      "id": 2375,
+      "slug": "savasana-the-practice-of-radical-rest",
+      "title": "Savasana: The Practice of Radical Rest"
+    },
+    {
+      "table": "courses",
+      "id": "1488cb0f-36d0-4a79-9351-c74497de2e7a",
+      "slug": "winter-reset-embody-inspire-utrecht",
+      "title": "Winter Reset: Embody & Inspire (Utrecht)"
+    },
+    {
+      "table": "courses",
+      "id": "64213cb8-3436-4324-89db-2eb67d8c0058",
+      "slug": "living-your-yoga-a-retreat-in-italy",
+      "title": "Living Your Yoga: A Retreat in Italy"
+    },
+    {
+      "table": "courses",
+      "id": "e1995db9-f6ac-47cb-a1bf-45a84e86e100",
+      "slug": "yoga-summer-camp-finding-connection-and-creativity",
+      "title": "Yoga Summer Camp: Finding Connection and Creativity"
+    },
+    {
+      "table": "courses",
+      "id": "4e4c9cd4-f503-442e-b350-a21291a84121",
+      "slug": "savasana-intensive",
+      "title": "Savasana Intensive"
+    },
+    {
+      "table": "courses",
+      "id": "1366e641-6e23-48b9-b42f-151f4f7742fc",
+      "slug": "pranayama-intensive",
+      "title": "Pranayama Intensive"
+    },
+    {
+      "table": "courses",
+      "id": "8b28b972-095e-4259-918b-dcf35467b647",
+      "slug": "meditation-intensive",
+      "title": "Meditation Intensive"
+    },
+    {
+      "table": "courses",
+      "id": "3b9c6f01-562b-417a-96fe-b35aecc3cba5",
+      "slug": "restorative-teacher-training-50-hour-certification",
+      "title": "Restorative Teacher Training (50 Hour Certification)"
+    },
+    {
+      "table": "free_resources",
+      "id": "b6274474-0ad6-4d39-aab7-27181f37c80a",
+      "slug": "savasana-summit",
+      "title": "Savasana Summit"
+    },
+    {
+      "table": "free_resources",
+      "id": "8dbd615c-be74-4f56-bf2f-65b8a0778989",
+      "slug": "rest-for-real-free-savasana-class",
+      "title": "Rest for Real: Free Savasana Class"
+    }
+  ],
+  "at": "2026-11-10T11:20:04.928Z"
+}

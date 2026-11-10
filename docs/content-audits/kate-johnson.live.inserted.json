@@ -1,0 +1,50 @@
+{
+  "env": "live",
+  "healer": {
+    "id": 1108,
+    "healer_slug": "kate-johnson"
+  },
+  "rows": [
+    {
+      "table": "books",
+      "id": 2371,
+      "slug": "radical-friendship",
+      "title": "Radical Friendship: Seven Ways to Love Yourself and Find Your People in an Unjust World"
+    },
+    {
+      "table": "courses",
+      "id": "a2e935f3-c01a-4e80-bd4d-d14dfbbcae21",
+      "slug": "already-good-a-bipoc-retreat-on-bodhicitta-true-north-insight",
+      "title": "Already Good: A BIPOC Retreat on Bodhicitta (True North Insight)"
+    },
+    {
+      "table": "courses",
+      "id": "27cb9681-8fb4-48cf-8112-a9bcd1280b3c",
+      "slug": "the-spirit-of-creativity-awakening-the-heart-through-meditation-qigong-story-and-song",
+      "title": "The Spirit of Creativity: Awakening the Heart through Meditation, Qigong, Story, and Song"
+    },
+    {
+      "table": "courses",
+      "id": "fd2b637e-63dd-4029-bab8-496337638366",
+      "slug": "rest-renewal-and-liberation-a-womens-meditation-retreat",
+      "title": "Rest, Renewal, and Liberation: A Women's Meditation Retreat"
+    },
+    {
+      "table": "courses",
+      "id": "c6721232-2d86-41e9-830d-df7be952afa8",
+      "slug": "one-on-one-meditation-mentorship",
+      "title": "One on One Meditation Mentorship"
+    },
+    {
+      "table": "hub_teachers",
+      "id": "2051b263-375b-4d5b-8222-e14a8af62d90",
+      "title": "kate-johnson teaches at Kripalu Center for Yoga & Health"
+    },
+    {
+      "table": "hub_teachers",
+      "id": "c0806088-d170-4fb8-97b1-e1552ed01b04",
+      "title": "kate-johnson teaches at Omega Institute"
+    }
+  ],
+  "at": "2026-11-10T11:19:48.449Z"
+}

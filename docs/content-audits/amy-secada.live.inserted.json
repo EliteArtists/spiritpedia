@@ -1,0 +1,33 @@
+{
+  "env": "live",
+  "healer": {
+    "id": 1119,
+    "healer_slug": "amy-secada"
+  },
+  "rows": [
+    {
+      "table": "videos",
+      "id": 8663,
+      "slug": "what-is-dance-of-the-chakras",
+      "title": "WHAT IS DANCE OF THE CHAKRAS?"
+    },
+    {
+      "table": "courses",
+      "id": "c36fb985-5072-468f-bb1e-7c16ee448adf",
+      "slug": "dance-of-the-chakras-method-online-course",
+      "title": "Dance of the Chakras Method (online course)"
+    },
+    {
+      "table": "courses",
+      "id": "0a2f8079-d805-4c83-8abf-e96f998322f2",
+      "slug": "dance-of-the-chakras-teacher-training-level-1-somatic-dance-practitioner",
+      "title": "Dance of the Chakras Teacher Training, Level 1: Somatic Dance Practitioner"
+    },
+    {
+      "table": "hub_teachers",
+      "id": "973820dd-0045-43a9-ba62-c0c6aa36b5e2",
+      "title": "amy-secada teaches at Esalen Institute"
+    }
+  ],
+  "at": "2026-11-10T11:20:21.392Z"
+}

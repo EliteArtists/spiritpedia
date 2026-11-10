@@ -49,7 +49,7 @@
     "kind": "app",
     "rank": 76,
     "hub": null,
-    "held": "No usable image: every image on thepattern.com (a Wix site), including its logo and app icon, is served from static.wixstatic.com, which refuses our robots.txt request (403), and no other host carries its icon on the pages read. Also thin (one free resource, no published prices).",
+    "held": "Dropped by the owner (10 Nov 2026): leave out. Previous hold: No usable image: every image on thepattern.com (a Wix site), including its logo and app icon, is served from static.wixstatic.com, which refuses our robots.txt request (403), and no other host carries its icon on the pages read. Also thin (one free resource, no published prices).",
     "tier_evidence": "No readable follower counts (social accounts not fetched; YouTube unreadable, consent page, 9 Nov 2026) → 0 → local_hero. Published, for information: 'Used by millions worldwide' and Google Play Best of 2020 (site footer and about page).",
     "email": "yes",
     "email_source": "https://www.thepattern.com/contact-us",
@@ -66,6 +66,7 @@
     "left_out": [
       "Subscriptions (Go Deeper, Connect+, names from an app-store search snippet): prices not published on the site.",
       "Images: all on static.wixstatic.com (refuses us)."
-    ]
+    ],
+    "dropped": true
   }
 }

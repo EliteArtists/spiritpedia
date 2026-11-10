@@ -393,3 +393,5 @@ step, never in the same command.
 When finished, reply with one line per teacher:
 `<rank> <name> → <slug>.json | tier | V/B/O/F counts | email yes/contact form | bio check OK | flags: n`
 or `<rank> <name> → SKIPPED: reason`.
+
+**Owner, 10 Nov 2026:** never decode protected or obfuscated emails (Cloudflare email protection, script-built addresses), ever: use the contact form, or hold the plan. Find a site's real domain directly (a search result or a page naming it), never through a Squarespace preview address.

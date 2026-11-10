@@ -1,0 +1,28 @@
+{
+  "env": "live",
+  "healer": {
+    "id": 1063,
+    "healer_slug": "open"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "fb2b0218-e049-4bea-870e-50787ec1a4d7",
+      "slug": "open-subscription",
+      "title": "Open Subscription"
+    },
+    {
+      "table": "courses",
+      "id": "3c7a0fdc-b98d-4627-bcc4-afb1e388ae3b",
+      "slug": "in-person-class-credits-venice-studio",
+      "title": "In-Person Class Credits (Venice studio)"
+    },
+    {
+      "table": "free_resources",
+      "id": "39cf39ed-3254-4c3d-9bf7-b8464e1bde07",
+      "slug": "breathwork-for-beginners",
+      "title": "Breathwork for Beginners"
+    }
+  ],
+  "at": "2026-11-10T11:17:58.465Z"
+}

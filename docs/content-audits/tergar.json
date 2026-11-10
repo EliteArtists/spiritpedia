@@ -1,0 +1,85 @@
+{
+  "healer": {
+    "healer_slug": "tergar",
+    "location_source": "https://tergar.org/contact",
+    "create": {
+      "name": "Tergar Meditation Community",
+      "bio": "Tergar Meditation Community is the international network built around the teaching of the Tibetan Buddhist meditation master Yongey Mingyur Rinpoche. Its programmes lead students step by step along two main paths, the Joy of Living and the Path of Liberation, with practice requirements at each level, and a profile feature called My Path records which levels and commitments a student has completed before they register for further courses and retreats.\n\nThe community is run by Tergar International, whose office is in Minneapolis. Newcomers can start with a free three-day introductory course of short video teachings and guided meditations by Mingyur Rinpoche, and monthly teachings are shared online. Paid study programmes add live sessions led by Tergar's instructors, and the free Tergar Meditation App lets practitioners log their sessions, track time spent on each practice and build a steady daily habit.",
+      "tier": "local_hero",
+      "entity_type": "organisation",
+      "availability": "worldwide",
+      "city": "Minneapolis, Minnesota",
+      "country": "United States",
+      "subjects": [
+        "meditation",
+        "mindfulness",
+        "spiritual-awakening"
+      ],
+      "website_url": "https://app.tergar.org/",
+      "booking_url": "https://tergar.org/feel-better-now",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "App@tergar.org",
+      "image_urls": [
+        "https://images.squarespace-cdn.com/content/v1/6544fb32e4b6c344b1ad0840/93da7cd6-7d86-4685-9659-e2c9ca4a3398/logo-color-horizontal.png?format=1500w"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [],
+  "free_resources": [
+    {
+      "title": "Tergar Meditation Tracker",
+      "url": "https://app.tergar.org/",
+      "description": "The free web version of the app, for logging meditation sessions and following one's practice over time.",
+      "featured": false,
+      "resource_type": "practice",
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/6544fb32e4b6c344b1ad0840/93da7cd6-7d86-4685-9659-e2c9ca4a3398/logo-color-horizontal.png?format=1500w"
+    },
+    {
+      "title": "Feel Better Now: A 3-Day Mini Meditation Journey with Mingyur Rinpoche",
+      "url": "https://tergar.org/feel-better-now",
+      "description": "A free three-day introduction with a short video teaching from Mingyur Rinpoche each day, a simple practice, a guided meditation and a reflection to carry into daily life. It centres on resting in awareness and meeting thoughts and emotions with curiosity.",
+      "featured": true,
+      "resource_type": "mini_course",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "http://static1.squarespace.com/static/6544fb32e4b6c344b1ad0840/t/6688326c10c0560a9ea5a671/1720201836846/ymr-bodhgaya.jpg?format=1500w"
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "app",
+    "rank": 55,
+    "hub": null,
+    "tier_evidence": "No readable follower counts (Facebook, Instagram, X not fetched; YouTube unreadable, consent page, 9 Nov 2026) → 0 → local_hero.",
+    "email": "yes",
+    "email_source": "https://tergar.org/contact",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 5 source(s)",
+    "flags": [
+      "Email App@tergar.org ('Tergar App Support') decoded from a Cloudflare-protected address on the contact page; brand support inbox. General inbox info@tergar.org also published.",
+      "Thin and uncertain scope: app.tergar.org is a script-only page whose description calls it a meditation tracker; the site says only 'our free mobile meditation app' and gives no feature list, so the bio leans on Tergar's wider programmes. Owner may prefer a Tergar Meditation Community organisation listing instead.",
+      "Teacher: Yongey Mingyur Rinpoche is not on Spiritpedia (dev names checked).",
+      "Image is the Tergar logo from tergar.org (images.squarespace-cdn.com); the app's own share image did not load as an image.",
+      "Feel Better Now title: 'feel better' is not a condition, but day 2 mentions anxiety and restlessness; description kept free of it. Borderline, flagged.",
+      "No offerings: the app is free; paid programmes (Joy of Living Online, Vajrayana Online) are on other Tergar hosts not opened.",
+      "Owner, 10 Nov 2026: list Tergar as an organisation, not an app. Renamed from 'Tergar Meditation App' (slug tergar-meditation-app); bio rewritten by the lead from the plan's own sourced facts; the app is now one part of the listing."
+    ],
+    "left_out": [
+      "Joy of Living Online, Vajrayana Online, Meditation Teacher Program: separate subdomains not opened; belong to the organisation rather than the app.",
+      "App-store pages not opened."
+    ]
+  },
+  "images_final": true
+}

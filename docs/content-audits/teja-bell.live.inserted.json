@@ -1,0 +1,34 @@
+{
+  "env": "live",
+  "healer": {
+    "id": 1118,
+    "healer_slug": "teja-bell"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "2cdb2bc5-a890-40cc-a8d4-44fd8019e105",
+      "slug": "qigongdharma-weekly-online-class",
+      "title": "QigongDharma Weekly Online Class"
+    },
+    {
+      "table": "courses",
+      "id": "4029f210-46e7-4048-aa07-3efdd0dcac3e",
+      "slug": "radiant-heart-qigong-in-depth-training-and-teacher-training",
+      "title": "Radiant Heart Qigong In-Depth Training and Teacher Training"
+    },
+    {
+      "table": "free_resources",
+      "id": "110e8877-6fd7-4bca-a2eb-43dfffb4905b",
+      "slug": "the-seven-directions-meditation",
+      "title": "The Seven Directions Meditation"
+    },
+    {
+      "table": "free_resources",
+      "id": "19347366-f439-4666-b5fd-8631d3a95c76",
+      "slug": "knowing-for-yourself-part-1-the-four-reliances",
+      "title": "Knowing for Yourself, Part 1: The Four Reliances"
+    }
+  ],
+  "at": "2026-11-10T11:20:19.631Z"
+}

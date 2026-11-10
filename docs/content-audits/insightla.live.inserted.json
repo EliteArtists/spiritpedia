@@ -1,0 +1,46 @@
+{
+  "env": "live",
+  "healer": {
+    "id": 1040,
+    "healer_slug": "insightla"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "4c5cc230-ad60-42db-bd11-abdec0c60ea9",
+      "slug": "new-years-retreat-2026-27",
+      "title": "New Year's Retreat 2026-27"
+    },
+    {
+      "table": "courses",
+      "id": "5b2ad574-a5c7-4e2a-9902-884f9f03137a",
+      "slug": "hybrid-in-person-wise-intention-in-the-new-year-weekend-retreat",
+      "title": "(Hybrid: In-person) Wise Intention in the New Year Weekend Retreat"
+    },
+    {
+      "table": "courses",
+      "id": "95c3fd7b-cfca-43c2-9cb8-95d7b8caaf8e",
+      "slug": "hybrid-in-person-deepening-the-path-a-yearlong-program-for-experienced-practitioners-2027",
+      "title": "(Hybrid: In-person) Deepening the Path: A Yearlong Program for Experienced Practitioners (2027)"
+    },
+    {
+      "table": "courses",
+      "id": "c3499636-c789-4879-90e9-f2454bc3fc9a",
+      "slug": "online-a-boundless-heart-a-metta-daylong",
+      "title": "(Online) A Boundless Heart: A Metta Daylong"
+    },
+    {
+      "table": "free_resources",
+      "id": "fbe5d2b0-fe40-494c-b021-87f78d9ad0b9",
+      "slug": "morning-community-sit-every-monday-through-friday",
+      "title": "Morning Community Sit – Every Monday through Friday"
+    },
+    {
+      "table": "free_resources",
+      "id": "49aa35ed-6fea-4c17-acc7-105e767c6844",
+      "slug": "sunday-morning-group",
+      "title": "Sunday Morning Group"
+    }
+  ],
+  "at": "2026-11-10T11:16:55.602Z"
+}

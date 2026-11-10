@@ -1,0 +1,34 @@
+{
+  "env": "live",
+  "healer": {
+    "id": 1099,
+    "healer_slug": "anandi-ma"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "808d326d-7aad-453b-ab41-f2dce447f9c4",
+      "slug": "tratak-2-disc-set",
+      "title": "Tratak (2-disc set)"
+    },
+    {
+      "table": "courses",
+      "id": "70950cfb-2609-4dfb-93a7-af0b322361c8",
+      "slug": "pranayama-2-disc-set",
+      "title": "Pranayama (2-disc set)"
+    },
+    {
+      "table": "free_resources",
+      "id": "e7203536-544d-4341-ac27-10f19bbae39a",
+      "slug": "sunday-meditation-with-anandi-ma",
+      "title": "Sunday Meditation with Anandi Ma"
+    },
+    {
+      "table": "free_resources",
+      "id": "be67e099-b98a-4b47-b2b2-0535df95caea",
+      "slug": "satsang-replays",
+      "title": "Satsang Replays"
+    }
+  ],
+  "at": "2026-11-10T11:19:18.047Z"
+}

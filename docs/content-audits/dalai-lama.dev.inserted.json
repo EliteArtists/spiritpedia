@@ -1,0 +1,28 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 1165,
+    "healer_slug": "dalai-lama"
+  },
+  "rows": [
+    {
+      "table": "videos",
+      "id": 8697,
+      "slug": "facing-lifes-problems",
+      "title": "Facing Life's Problems"
+    },
+    {
+      "table": "videos",
+      "id": 8698,
+      "slug": "warm-heartedness-is-the-key",
+      "title": "Warm Heartedness Is the Key"
+    },
+    {
+      "table": "videos",
+      "id": 8699,
+      "slug": "the-true-meaning-of-non-violence",
+      "title": "The True Meaning of Non-Violence"
+    }
+  ],
+  "at": "2026-11-10T11:09:50.802Z"
+}

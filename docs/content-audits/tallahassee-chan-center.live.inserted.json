@@ -1,0 +1,34 @@
+{
+  "env": "live",
+  "healer": {
+    "id": 1056,
+    "healer_slug": "tallahassee-chan-center"
+  },
+  "rows": [
+    {
+      "table": "videos",
+      "id": 8586,
+      "slug": "loving-kindness-meditation-evening-1-with-tom-ledermann",
+      "title": "Loving Kindness Meditation. Evening #1 with Tom Ledermann"
+    },
+    {
+      "table": "courses",
+      "id": "3491cba7-cbc5-49e2-86da-3314ff4476ec",
+      "slug": "7-day-intensive-chan-retreat-in-person-and-online",
+      "title": "7-Day Intensive Chan Retreat (In Person and Online)"
+    },
+    {
+      "table": "courses",
+      "id": "df2380bd-65b3-41bd-a3b1-410756fef17f",
+      "slug": "chan-summer-residency-program-27",
+      "title": "Chan Summer Residency Program '27"
+    },
+    {
+      "table": "free_resources",
+      "id": "5b2354ea-930d-4e4c-8d6c-d042f4e77f4e",
+      "slug": "dharma-talks-2",
+      "title": "Dharma Talks"
+    }
+  ],
+  "at": "2026-11-10T11:17:39.252Z"
+}

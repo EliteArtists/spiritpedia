@@ -1,0 +1,40 @@
+{
+  "env": "live",
+  "healer": {
+    "id": 1092,
+    "healer_slug": "byron-yoga-centre"
+  },
+  "rows": [
+    {
+      "table": "videos",
+      "id": 8621,
+      "slug": "about-byron-yoga-centre",
+      "title": "About Byron Yoga Centre ❤"
+    },
+    {
+      "table": "courses",
+      "id": "65a216bc-cf68-498e-b9b1-cfc924e20e1b",
+      "slug": "level-1-200hr-yoga-teacher-training",
+      "title": "Level 1 200hr Yoga Teacher Training"
+    },
+    {
+      "table": "courses",
+      "id": "244b0d19-83ed-4a5d-8a6b-c90e90ea9897",
+      "slug": "level-2-300hr-yoga-teacher-training",
+      "title": "Level 2 300hr Yoga Teacher Training"
+    },
+    {
+      "table": "courses",
+      "id": "e0d4c757-40cf-4caa-b734-31d8099feda9",
+      "slug": "6-day-meditation-immersion",
+      "title": "6 Day Meditation Immersion"
+    },
+    {
+      "table": "courses",
+      "id": "7193548c-0904-455c-abce-527e04d49781",
+      "slug": "5-day-yoga-retreat",
+      "title": "5 Day Yoga Retreat"
+    }
+  ],
+  "at": "2026-11-10T11:18:55.316Z"
+}

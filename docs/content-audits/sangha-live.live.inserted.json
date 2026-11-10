@@ -1,0 +1,28 @@
+{
+  "env": "live",
+  "healer": {
+    "id": 1042,
+    "healer_slug": "sangha-live"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "3f151552-a4ad-4ff9-a131-b0783821ec88",
+      "slug": "day-of-practice-with-peace-twesigye-november-21-2026",
+      "title": "Day of Practice with Peace Twesigye – November 21 2026"
+    },
+    {
+      "table": "free_resources",
+      "id": "5f45a60a-285d-4923-8425-02f70d0e4f66",
+      "slug": "daily-meditation",
+      "title": "Daily Meditation"
+    },
+    {
+      "table": "free_resources",
+      "id": "2f66b8ab-0d01-4d2e-9618-b8fd4595fc81",
+      "slug": "our-offerings",
+      "title": "Our Offerings"
+    }
+  ],
+  "at": "2026-11-10T11:17:00.180Z"
+}

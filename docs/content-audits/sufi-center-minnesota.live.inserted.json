@@ -1,0 +1,28 @@
+{
+  "env": "live",
+  "healer": {
+    "id": 1043,
+    "healer_slug": "sufi-center-minnesota"
+  },
+  "rows": [
+    {
+      "table": "free_resources",
+      "id": "47c6d39b-c551-4450-8075-4d0df0a4f8e4",
+      "slug": "a-drop-of-the-love",
+      "title": "A Drop of the Love"
+    },
+    {
+      "table": "free_resources",
+      "id": "4ea2fbed-70c0-457e-8e6f-7568540dd28e",
+      "slug": "renewal-through-divine-chant",
+      "title": "Renewal Through Divine Chant"
+    },
+    {
+      "table": "free_resources",
+      "id": "8d48d81f-5080-4bc7-9a89-6134d1c53b45",
+      "slug": "gathering-in-the-love-special-fifth-sunday-topics",
+      "title": "Gathering in the Love: Special Fifth Sunday Topics"
+    }
+  ],
+  "at": "2026-11-10T11:17:02.596Z"
+}

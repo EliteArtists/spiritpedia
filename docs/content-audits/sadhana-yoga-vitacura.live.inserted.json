@@ -1,0 +1,28 @@
+{
+  "env": "live",
+  "healer": {
+    "id": 1088,
+    "healer_slug": "sadhana-yoga-vitacura"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "30b5a015-b6ec-4e9d-806b-f32327d98c72",
+      "slug": "formacion-de-profesores-de-yoga-2027",
+      "title": "Formación de Profesores de Yoga 2027"
+    },
+    {
+      "table": "courses",
+      "id": "11b90fce-874a-4951-9f85-693cb6ae9863",
+      "slug": "weekly-classes-in-vitacura-and-online",
+      "title": "Weekly classes in Vitacura and online"
+    },
+    {
+      "table": "free_resources",
+      "id": "aef3cb6e-8c51-44b5-9dd8-3366040efe4c",
+      "slug": "free-friday-meditation-and-yoga-sutras-study-circle",
+      "title": "Free Friday meditation and Yoga Sutras study circle"
+    }
+  ],
+  "at": "2026-11-10T11:18:47.460Z"
+}

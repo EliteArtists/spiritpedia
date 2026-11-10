@@ -1,8 +1,22 @@
 {
   "hub": "mountain-stream-meditation",
-  "links": [
-    { "teacher": "devin-berry", "role": "instructor", "evidence": "https://www.mtstream.org/nc-daily-schedule" },
-    { "teacher": "dawn-mauricio", "role": "instructor", "evidence": "https://www.mtstream.org/audio-talks" },
-    { "teacher": "tuere-sala", "role": "instructor", "evidence": "https://www.mtstream.org/audio-talks" }
-  ]
+  "links": [],
+  "dropped_links": [
+    {
+      "teacher": "devin-berry",
+      "role": "instructor",
+      "evidence": "https://www.mtstream.org/nc-daily-schedule"
+    },
+    {
+      "teacher": "dawn-mauricio",
+      "role": "instructor",
+      "evidence": "https://www.mtstream.org/audio-talks"
+    },
+    {
+      "teacher": "tuere-sala",
+      "role": "instructor",
+      "evidence": "https://www.mtstream.org/audio-talks"
+    }
+  ],
+  "owner": "Owner, 10 Nov 2026: drop the guest-talk links (Devin Berry, Dawn Mauricio, Tuere Sala). Rolled back on dev; never on live."
 }

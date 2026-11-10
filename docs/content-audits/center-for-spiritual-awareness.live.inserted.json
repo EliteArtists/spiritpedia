@@ -1,0 +1,40 @@
+{
+  "env": "live",
+  "healer": {
+    "id": 1049,
+    "healer_slug": "center-for-spiritual-awareness"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "da02efdb-9d45-4c5b-9d8e-c3954817b034",
+      "slug": "holy-season-3-hour-meditation-and-weekend-retreat",
+      "title": "Holy Season 3-hour Meditation and Weekend Retreat"
+    },
+    {
+      "table": "free_resources",
+      "id": "269c5b87-1471-47dd-a767-ae9d57678895",
+      "slug": "wake-up-with-roy-eugene-davis",
+      "title": "Wake Up with Roy Eugene Davis"
+    },
+    {
+      "table": "free_resources",
+      "id": "2cd87b43-8ac2-487d-94db-3f89b0b98609",
+      "slug": "guided-meditations-4",
+      "title": "Guided Meditations"
+    },
+    {
+      "table": "free_resources",
+      "id": "b2d0ed3d-044c-4a8e-b1ab-4e4a8dddf818",
+      "slug": "kriya-yoga-teachers-lineage",
+      "title": "Kriya Yoga Teachers & Lineage"
+    },
+    {
+      "table": "free_resources",
+      "id": "a4396cc2-92f5-403d-8622-bf657c1d57e6",
+      "slug": "podcast",
+      "title": "Podcast"
+    }
+  ],
+  "at": "2026-11-10T11:17:17.901Z"
+}

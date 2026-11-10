@@ -1,0 +1,44 @@
+{
+  "env": "live",
+  "healer": {
+    "id": 1132,
+    "healer_slug": "jo-ann-levitt"
+  },
+  "rows": [
+    {
+      "table": "books",
+      "id": 2398,
+      "slug": "the-spiritual-path-of-aging-jo-ann-levitt",
+      "title": "The Spiritual Path of Aging"
+    },
+    {
+      "table": "books",
+      "id": 2399,
+      "slug": "awakening-to-the-power-of-source-jo-ann-levitt",
+      "title": "Awakening to the Power of Source: Your Guide to Co-Creating with the Divine"
+    },
+    {
+      "table": "courses",
+      "id": "aab09207-7d2a-4a19-8641-20ffbac1d588",
+      "slug": "private-zoom-sessions-spiritual-guidance-healing-touch-and-tarot",
+      "title": "Private Zoom Sessions: Spiritual Guidance, Healing Touch and Tarot"
+    },
+    {
+      "table": "free_resources",
+      "id": "af925114-6044-430c-92d8-c28af059d0e1",
+      "slug": "the-awakening-channel-podcast",
+      "title": "The Awakening Channel (podcast)"
+    },
+    {
+      "table": "hub_teachers",
+      "id": "17441142-4858-4947-9c21-4d7b93da6744",
+      "title": "jo-ann-levitt teaches at Kripalu Center for Yoga & Health"
+    },
+    {
+      "table": "hub_teachers",
+      "id": "6aa93b32-2e78-4db5-bf0f-a97daac6b139",
+      "title": "jo-ann-levitt teaches at Omega Institute"
+    }
+  ],
+  "at": "2026-11-10T11:21:03.048Z"
+}

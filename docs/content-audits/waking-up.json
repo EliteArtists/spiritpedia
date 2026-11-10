@@ -52,7 +52,7 @@
     "kind": "app",
     "rank": 48,
     "hub": null,
-    "held": "No usable image: the site's images (logo, share image, artwork) are all served from assets.wakingup.com, whose robots.txt request is refused (403 Access Denied), so they can't be used; the one www.wakingup.com image link (/images/logo.png) returns 404 and the favicons are 192 px or smaller. Also thin (one item).",
+    "held": "Dropped by the owner (10 Nov 2026): leave out. Previous hold: No usable image: the site's images (logo, share image, artwork) are all served from assets.wakingup.com, whose robots.txt request is refused (403 Access Denied), so they can't be used; the one www.wakingup.com image link (/images/logo.png) returns 404 and the favicons are 192 px or smaller. Also thin (one item).",
     "tier_evidence": "No readable follower counts (Instagram and Facebook not fetched; no YouTube link on the site) → 0 → local_hero. Published figures, for information only: 'over 100,000 5-star ratings' and 'helped millions of people' (wakingup.com/about, /teachers) – store ratings are not followers.",
     "email": "yes",
     "email_source": "https://www.wakingup.com/",
@@ -72,6 +72,7 @@
       "Psychedelics topic page.",
       "Meditations for Sleep series: sleep framing.",
       "App-store pages not opened; price taken from the site's scholarship page."
-    ]
+    ],
+    "dropped": true
   }
 }

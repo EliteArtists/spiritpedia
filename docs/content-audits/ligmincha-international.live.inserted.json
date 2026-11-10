@@ -1,0 +1,40 @@
+{
+  "env": "live",
+  "healer": {
+    "id": 1053,
+    "healer_slug": "ligmincha-international"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "b2aac40d-2bc1-406c-90b1-b58ef285bbeb",
+      "slug": "embracing-our-living-questions-3-doors-annual-online-weekend-retreat",
+      "title": "Embracing Our Living Questions: 3 Doors Annual Online Weekend Retreat"
+    },
+    {
+      "table": "courses",
+      "id": "b98cd5fa-7628-40f2-9df1-e1fce7b64432",
+      "slug": "2027-winter-retreat",
+      "title": "2027 Winter Retreat"
+    },
+    {
+      "table": "courses",
+      "id": "25709aa1-7726-4f60-8013-667609b3438d",
+      "slug": "tibetan-dream-yoga-2",
+      "title": "Tibetan Dream Yoga"
+    },
+    {
+      "table": "courses",
+      "id": "42bce440-0df1-4fa0-be24-e8289014598a",
+      "slug": "annual-summer-retreat",
+      "title": "Annual Summer Retreat"
+    },
+    {
+      "table": "free_resources",
+      "id": "90f422f8-46b5-43a7-81bc-e83060dce9ce",
+      "slug": "getting-started",
+      "title": "Getting Started"
+    }
+  ],
+  "at": "2026-11-10T11:17:30.915Z"
+}

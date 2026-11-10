@@ -438,3 +438,5 @@ Each lead is a **target city** (`target_city`, `target_country`). Find **one** p
   - Put the school's other named lead teachers in a flag starting "Possible future listings:" (names only).
 - **Health and fitness rule:** leave out therapeutic, injury or condition-led items (yoga therapy for back pain and the like), prenatal medical claims and weight loss. Skip a school sold mainly as fitness or therapy.
 - `sprint.kind` "yoga-school"; `sprint.rank` the lead's rank. A skipped city gets `skipped/yoga-<city>.json` with the reason.
+
+**Owner, 10 Nov 2026:** never decode protected or obfuscated emails (Cloudflare email protection, script-built addresses), ever: use the contact form, or hold the plan. Find a site's real domain directly (a search result or a page naming it), never through a Squarespace preview address.

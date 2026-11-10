@@ -1,0 +1,34 @@
+{
+  "env": "live",
+  "healer": {
+    "id": 1074,
+    "healer_slug": "carol-wetherill"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "02753e80-e547-4b7e-a9db-62bb581cd4fb",
+      "slug": "quantum-touch-sessions",
+      "title": "Quantum-Touch sessions"
+    },
+    {
+      "table": "courses",
+      "id": "b9588c70-3af9-4c55-b630-bd75b08a7168",
+      "slug": "quantum-touch-level-4-becoming-heart-conscious-2-day-virtual-class",
+      "title": "Quantum-Touch Level 4: Becoming Heart Conscious (2-day virtual class)"
+    },
+    {
+      "table": "courses",
+      "id": "88797f69-5f28-4d60-bbaf-eebdb90fd6b3",
+      "slug": "quantum-touch-level-1-becoming-energized-2-day-virtual-class",
+      "title": "Quantum-Touch Level 1: Becoming Energized (2-day virtual class)"
+    },
+    {
+      "table": "free_resources",
+      "id": "1dd11cae-83be-405f-bb47-ba0c69634cd0",
+      "slug": "quantum-touch-community-circles",
+      "title": "Quantum-Touch community circles"
+    }
+  ],
+  "at": "2026-11-10T11:18:18.796Z"
+}

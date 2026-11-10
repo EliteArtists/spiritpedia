@@ -1,0 +1,34 @@
+{
+  "env": "live",
+  "healer": {
+    "id": 1034,
+    "healer_slug": "common-ground-meditation-center"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "ccd79aae-3d1b-4f7a-a3e4-87ecb035e73d",
+      "slug": "residential-retreats-at-common-ground-retreat-center",
+      "title": "Residential Retreats at Common Ground Retreat Center"
+    },
+    {
+      "table": "free_resources",
+      "id": "4903171c-6fec-4c70-889d-586f6a5ce54f",
+      "slug": "new-to-meditation",
+      "title": "New to meditation?"
+    },
+    {
+      "table": "free_resources",
+      "id": "cb0a6552-c1f1-4e6d-b3c3-4bd10755bc9e",
+      "slug": "what-is-mindful-awareness-practice",
+      "title": "What is mindful awareness practice?"
+    },
+    {
+      "table": "free_resources",
+      "id": "32e95bc2-7098-4ad0-893b-ddf5b1c6e243",
+      "slug": "sitting-and-check-in-community-group",
+      "title": "Sitting and Check-In Community Group"
+    }
+  ],
+  "at": "2026-11-10T11:16:34.911Z"
+}

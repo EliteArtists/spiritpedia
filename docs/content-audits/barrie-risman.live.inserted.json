@@ -1,0 +1,33 @@
+{
+  "env": "live",
+  "healer": {
+    "id": 1120,
+    "healer_slug": "barrie-risman"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "18eb7c79-8f4d-445f-bb97-ddef7450ff6c",
+      "slug": "yoga-for-turbulent-times-online-class-subscription",
+      "title": "Yoga for Turbulent Times: Online Class Subscription"
+    },
+    {
+      "table": "courses",
+      "id": "f2bda406-9d02-475e-922f-954ed7d345ff",
+      "slug": "yoga-for-turbulent-times-monthly-satsang",
+      "title": "Yoga for Turbulent Times Monthly Satsang"
+    },
+    {
+      "table": "free_resources",
+      "id": "fe80a160-b435-4740-a4ae-3e4451578fb4",
+      "slug": "the-yoga-we-need-now-free-video-series",
+      "title": "The Yoga We Need Now: Free Video Series"
+    },
+    {
+      "table": "hub_teachers",
+      "id": "1c1f6584-3730-4cec-81be-1f67c3615a3d",
+      "title": "barrie-risman teaches at Kripalu Center for Yoga & Health"
+    }
+  ],
+  "at": "2026-11-10T11:20:23.062Z"
+}

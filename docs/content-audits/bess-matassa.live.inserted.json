@@ -1,0 +1,76 @@
+{
+  "env": "live",
+  "healer": {
+    "id": 1128,
+    "healer_slug": "bess-matassa"
+  },
+  "rows": [
+    {
+      "table": "books",
+      "id": 2383,
+      "slug": "the-tarot-almanac-bess-matassa",
+      "title": "The Tarot Almanac: A Seasonal Guide to Divining with Your Cards"
+    },
+    {
+      "table": "books",
+      "id": 2384,
+      "slug": "nyc-tarot-bess-matassa",
+      "title": "NYC Tarot: Divination from the Greatest City on Earth"
+    },
+    {
+      "table": "books",
+      "id": 2385,
+      "slug": "zodiac-signs-leo-bess-matassa",
+      "title": "Zodiac Signs: Leo"
+    },
+    {
+      "table": "books",
+      "id": 2386,
+      "slug": "zodiac-signs-virgo-bess-matassa",
+      "title": "Zodiac Signs: Virgo"
+    },
+    {
+      "table": "books",
+      "id": 2387,
+      "slug": "the-numinous-astro-deck-bess-matassa",
+      "title": "The Numinous Astro Deck"
+    },
+    {
+      "table": "books",
+      "id": 2388,
+      "slug": "star-charting-bess-matassa",
+      "title": "Star Charting"
+    },
+    {
+      "table": "courses",
+      "id": "cd66ce6a-c969-409c-9628-dcb2ee16b387",
+      "slug": "astro-tarot-reading",
+      "title": "Astro + Tarot Reading"
+    },
+    {
+      "table": "courses",
+      "id": "65f4c2e7-a2fb-4e90-ab25-5ae3e9fa369c",
+      "slug": "mini-mystic-reading",
+      "title": "Mini Mystic Reading"
+    },
+    {
+      "table": "courses",
+      "id": "d60aadb2-32ff-414a-9f83-3e5bc875b81d",
+      "slug": "partnership-reading",
+      "title": "Partnership Reading"
+    },
+    {
+      "table": "courses",
+      "id": "d2a53ec9-52ea-4a06-adb5-c9610a690554",
+      "slug": "astrological-tour",
+      "title": "Astrological Tour"
+    },
+    {
+      "table": "courses",
+      "id": "3099ad0b-f03b-4198-8414-16475ac7cec5",
+      "slug": "mystical-mentorship",
+      "title": "Mystical Mentorship"
+    }
+  ],
+  "at": "2026-11-10T11:20:51.013Z"
+}

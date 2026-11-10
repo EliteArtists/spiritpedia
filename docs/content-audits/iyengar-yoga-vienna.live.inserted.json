@@ -1,0 +1,34 @@
+{
+  "env": "live",
+  "healer": {
+    "id": 1095,
+    "healer_slug": "iyengar-yoga-vienna"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "5c7b786e-db34-4b7d-b904-9cb0cad9ff36",
+      "slug": "iyengar-yoga-ausbildung-grundlagenkurs-1-ab-herbst-2027",
+      "title": "Iyengar Yoga Ausbildung: Grundlagenkurs 1 (ab Herbst 2027)"
+    },
+    {
+      "table": "courses",
+      "id": "0a6740cb-ddf1-489b-878a-1f4a5bddd6d1",
+      "slug": "iyengar-yoga-intensive-an-himmelfahrt-im-kremstal",
+      "title": "Iyengar Yoga-Intensive an Himmelfahrt im Kremstal"
+    },
+    {
+      "table": "courses",
+      "id": "9fda2528-f64e-42c3-b4c1-a4502bf91324",
+      "slug": "yoga-samstage",
+      "title": "Yoga-Samstage"
+    },
+    {
+      "table": "courses",
+      "id": "68fde88c-689b-4244-8623-c34187c49e9c",
+      "slug": "10-einheiten-1-jahr-gultig",
+      "title": "10 Einheiten (1 Jahr gültig)"
+    }
+  ],
+  "at": "2026-11-10T11:19:01.064Z"
+}

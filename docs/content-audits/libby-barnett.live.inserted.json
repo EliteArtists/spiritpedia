@@ -1,0 +1,45 @@
+{
+  "env": "live",
+  "healer": {
+    "id": 1126,
+    "healer_slug": "libby-barnett"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "172eed29-c4dd-4f22-af35-b7197542920a",
+      "slug": "reiki-i-certification-class",
+      "title": "Reiki I Certification Class"
+    },
+    {
+      "table": "courses",
+      "id": "9a280a9d-6d08-49a4-992a-390f5ab87b0c",
+      "slug": "reiki-ii-certification-class",
+      "title": "Reiki II Certification Class"
+    },
+    {
+      "table": "courses",
+      "id": "30058bf1-ef4c-4efd-a674-e7894384cd76",
+      "slug": "reiki-master-class",
+      "title": "Reiki Master Class"
+    },
+    {
+      "table": "courses",
+      "id": "982bb4ec-47b4-45c6-a56a-2e9f0afa7af6",
+      "slug": "reiki-master-teacher-class",
+      "title": "Reiki Master Teacher Class"
+    },
+    {
+      "table": "courses",
+      "id": "c1524c50-043a-4dc1-8e9e-20b062a4fd8f",
+      "slug": "reiki-master-of-masters-class",
+      "title": "Reiki Master of Masters Class"
+    },
+    {
+      "table": "hub_teachers",
+      "id": "81c581df-6746-4d8b-b54e-61dee9db7dd2",
+      "title": "libby-barnett teaches at Kripalu Center for Yoga & Health"
+    }
+  ],
+  "at": "2026-11-10T11:20:44.066Z"
+}

@@ -1,0 +1,46 @@
+{
+  "env": "live",
+  "healer": {
+    "id": 1100,
+    "healer_slug": "lhanang-rinpoche"
+  },
+  "rows": [
+    {
+      "table": "books",
+      "id": 2353,
+      "slug": "the-tibetan-book-of-the-dead-for-beginners",
+      "title": "The Tibetan Book of the Dead for Beginners: A Guide to Living and Dying"
+    },
+    {
+      "table": "books",
+      "id": 2354,
+      "slug": "the-beginners-guide-to-karma",
+      "title": "The Beginner's Guide to Karma"
+    },
+    {
+      "table": "books",
+      "id": 2355,
+      "slug": "the-buddha-in-you",
+      "title": "The Buddha in You"
+    },
+    {
+      "table": "courses",
+      "id": "95dd11b3-78b5-47b0-9ec8-59e605e08fc8",
+      "slug": "meditation-teacher-training-program-with-lama-lhanang",
+      "title": "Meditation Teacher Training Program with Lama Lhanang"
+    },
+    {
+      "table": "courses",
+      "id": "6fc53a88-d426-496e-97df-25c8af973220",
+      "slug": "buddhist-kit-for-living-dying",
+      "title": "Buddhist Kit for Living & Dying"
+    },
+    {
+      "table": "free_resources",
+      "id": "5f91dc6e-1044-42c8-9ce9-ba4094d5a741",
+      "slug": "weekly-classes-and-practice",
+      "title": "Weekly Classes and Practice"
+    }
+  ],
+  "at": "2026-11-10T11:19:20.655Z"
+}

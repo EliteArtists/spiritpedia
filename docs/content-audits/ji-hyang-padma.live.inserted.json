@@ -1,0 +1,40 @@
+{
+  "env": "live",
+  "healer": {
+    "id": 1110,
+    "healer_slug": "ji-hyang-padma"
+  },
+  "rows": [
+    {
+      "table": "videos",
+      "id": 8647,
+      "slug": "buddhism-buddhist-healing-with-ji-hyang-padme-belfast-real-ep21",
+      "title": "Buddhism & Buddhist Healing with JI Hyang Padme.  Belfast Real #EP21"
+    },
+    {
+      "table": "books",
+      "id": 2372,
+      "slug": "field-of-blessings",
+      "title": "Field of Blessings: Ritual and Consciousness in the Work of Buddhist Healers"
+    },
+    {
+      "table": "books",
+      "id": 2373,
+      "slug": "living-the-season",
+      "title": "Living the Season: Zen Practice for Transformative Times"
+    },
+    {
+      "table": "courses",
+      "id": "6651cfe5-2c8c-439a-bb6b-76aa5374158b",
+      "slug": "step-by-step-zen-circle",
+      "title": "Step by Step Zen Circle"
+    },
+    {
+      "table": "free_resources",
+      "id": "8bcf1c61-2fb1-4f75-8774-1a95feb3812c",
+      "slug": "zen-meditation-instruction",
+      "title": "Zen Meditation Instruction"
+    }
+  ],
+  "at": "2026-11-10T11:19:53.949Z"
+}

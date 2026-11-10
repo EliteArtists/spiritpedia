@@ -4,7 +4,7 @@
     "location_source": "https://www.dalailama.com/office/contact",
     "create": {
       "name": "His Holiness the Dalai Lama",
-      "bio": "Tenzin Gyatso, the 14th Dalai Lama, calls himself a simple Buddhist monk. He was born Lhamo Dhondup in 1935 into a farming family in Amdo, in north-eastern Tibet, and was recognised at the age of two as the rebirth of the 13th Dalai Lama. His monastic training began when he was six and followed the Nalanda curriculum, centred on Buddhist philosophy, and in 1959 he passed his final examination in Lhasa and received the Geshe Lharampa degree. Since going into exile that same year he has lived in Dharamsala, in northern India.\n\nHis teaching rests on three commitments he describes on his own site. As a human being, he encourages people to be happy by training the mind and growing warm-heartedness, compassion, forgiveness, patience and contentment, values he calls secular ethics because they can help anyone, whether or not they follow a religion. As a monk, he works for harmony and respect between the world's faiths. As a Tibetan, he cares for the language and culture that came down from the masters of Nalanda. He also takes a keen interest in what ancient Indian understanding of the mind and practices such as meditation can offer modern education. His talks and teachings are free of charge, and his office shares many of them as videos online.",
+      "bio": "Tenzin Gyatso, the 14th Dalai Lama, calls himself a simple Buddhist monk. He was born Lhamo Dhondup in 1935 into a farming family in Amdo, in north-eastern Tibet, and was recognised at the age of two as the rebirth of the 13th Dalai Lama. His monastic training began when he was six and followed the Nalanda curriculum, centred on Buddhist philosophy, and in 1959 he passed his final examination in Lhasa and received the Geshe Lharampa degree. Since 1959 he has lived in Dharamsala, in northern India.\n\nHis teaching rests on three commitments he describes on his own site. As a human being, he encourages people to be happy by training the mind and growing warm-heartedness, compassion, forgiveness, patience and contentment, values he calls secular ethics because they can help anyone, whether or not they follow a religion. As a monk, he works for harmony and respect between the world's faiths. As a Tibetan, he cares for the language and culture that came down from the masters of Nalanda. He also takes a keen interest in what ancient Indian understanding of the mind and practices such as meditation can offer modern education. His talks and teachings are free of charge, and his office shares many of them as videos online.",
       "tier": "local_hero",
       "entity_type": "individual",
       "availability": "local_online",
@@ -76,7 +76,8 @@
       "Email ohhdl@dalailama.com is the Office of His Holiness (contact page); base Dharamsala from the office mailing address (McLeod Ganj) and his brief biography.",
       "No offerings: his talks and teachings are free and public (schedule page); the only upcoming item is a Long Life Prayer ceremony on 24 Feb 2027, not a teaching. availability set to local_online (teachings in Dharamsala, webcasts online).",
       "Videos from dalailama.com video pages (his office's own channel), checked with oEmbed.",
-      "Regional: Dharamsala, Himachal Pradesh, India."
+      "Regional: Dharamsala, Himachal Pradesh, India.",
+      "Owner, 10 Nov 2026: add, teachings only, no Tibet politics; contact via his office's published route (the Office of His Holiness contact page). Lead removed the word 'exile' from the bio to keep it to teachings."
     ],
     "left_out": [
       "Books: dalailama.com lists 142 books but gives no ISBNs or store links; none added.",
@@ -84,7 +85,7 @@
       "Political videos, statements and messages on Tibet, reincarnation politics and the Shugden issue.",
       "Live webcasts page not opened."
     ],
-    "bio_check": "OK: no 8-word runs against 10 source(s)",
-    "held": "Held for the owner (night sprint, 10 Nov 2026): much of his own site is Tibet politics; does the listing fit the no-political-content rule?"
-  }
+    "bio_check": "OK: no 8-word runs against 10 source(s)"
+  },
+  "images_final": true
 }

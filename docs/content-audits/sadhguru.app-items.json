@@ -1,0 +1,43 @@
+{
+  "healer": {
+    "healer_slug": "sadhguru"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Sadhguru Exclusive",
+      "url": "https://isha.sadhguru.org/eu/en/sadhguru-exclusive/free-trial/sadhguru-unfiltered",
+      "description": "A monthly subscription library inside the app and on the web with over a hundred hours of Sadhguru videos not released elsewhere, arranged in series on yoga, mysticism and his life. It begins with a seven-day free trial and can be cancelled at any time.",
+      "price": "Contact for pricing",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "mysticism",
+        "yoga"
+      ],
+      "image": "https://static.sadhguru.org/d/46272/1688543612-sadhguru-app-icon.png"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Isha Kriya",
+      "url": "https://isha.sadhguru.org/yoga-meditation/in/en/isha-kriya-meditation",
+      "description": "A free guided meditation from Sadhguru of about twelve to fourteen minutes, open to anyone from twelve years of age, with a guided practice video on the page and in the app. It is meant as a short daily practice for clarity and inner steadiness.",
+      "featured": true,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation",
+        "yoga"
+      ],
+      "image": "https://static.sadhguru.org/d/46272/1780902449-palmsopen.png?auto=format&fit=max&w=1200"
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "merge",
+    "note": "Owner, 10 Nov 2026: merge the Sadhguru App items into the existing sadhguru listing instead of a separate listing. Items copied from sadhguru-app.json; items already on the listing are skipped by the ingest's own duplicate check."
+  },
+  "images_final": true
+}

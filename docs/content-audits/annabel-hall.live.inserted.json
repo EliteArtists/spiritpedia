@@ -1,0 +1,34 @@
+{
+  "env": "live",
+  "healer": {
+    "id": 1070,
+    "healer_slug": "annabel-hall"
+  },
+  "rows": [
+    {
+      "table": "videos",
+      "id": 8608,
+      "slug": "introducing-annabel-hall-and-the-quantum-touch-level-1-class",
+      "title": "Introducing Annabel Hall and the Quantum Touch Level 1 class."
+    },
+    {
+      "table": "courses",
+      "id": "093c14d2-14d5-4a32-81a2-6fc95e15360b",
+      "slug": "quantum-touch-energy-sessions",
+      "title": "Quantum-Touch energy sessions"
+    },
+    {
+      "table": "courses",
+      "id": "b63c11fa-669e-4fbe-b777-f977a63e41f4",
+      "slug": "quantum-touch-becoming-energized-level-1",
+      "title": "Quantum-Touch Becoming Energized (Level 1)"
+    },
+    {
+      "table": "courses",
+      "id": "b56d0f0c-63f5-4972-b554-12b4d73db8a1",
+      "slug": "quantum-touch-becoming-heart-conscious-level-4",
+      "title": "Quantum-Touch Becoming Heart Conscious (Level 4)"
+    }
+  ],
+  "at": "2026-11-10T11:18:09.365Z"
+}

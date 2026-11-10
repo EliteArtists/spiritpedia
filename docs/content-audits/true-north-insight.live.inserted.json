@@ -1,0 +1,52 @@
+{
+  "env": "live",
+  "healer": {
+    "id": 1032,
+    "healer_slug": "true-north-insight"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "14685e18-b2aa-464b-977f-825a2a837dfb",
+      "slug": "cur-vaste-esprit-libre-pascal-auclair",
+      "title": "Cœur vaste, esprit libre (Pascal Auclair)"
+    },
+    {
+      "table": "courses",
+      "id": "8be3352a-b871-4071-93e0-c881ecfca49d",
+      "slug": "new-years-insight-meditation-retreat-jill-davey",
+      "title": "New Year's Insight Meditation Retreat (Jill Davey)"
+    },
+    {
+      "table": "courses",
+      "id": "db2910e2-8918-4a75-9503-8745d8f905ee",
+      "slug": "a-heart-that-resonates-pascal-auclair",
+      "title": "A Heart That Resonates (Pascal Auclair)"
+    },
+    {
+      "table": "courses",
+      "id": "036cfd6d-93f4-4523-b579-2054bb0530e4",
+      "slug": "already-good-a-bipoc-retreat-on-bodhicitta-kate-johnson",
+      "title": "Already Good: A BIPOC Retreat on Bodhicitta (Kate Johnson)"
+    },
+    {
+      "table": "courses",
+      "id": "6fe9c6cd-5657-43e2-af9f-eb0482d72909",
+      "slug": "abiding-mindfully-in-the-body-meditation-and-yoga-retreat-2027-2",
+      "title": "Abiding Mindfully in the Body: Meditation and Yoga Retreat (2027)"
+    },
+    {
+      "table": "free_resources",
+      "id": "efbf0ccc-8447-4b38-9b84-ac31b0da824a",
+      "slug": "tni-weekly-practice-groups",
+      "title": "TNI Weekly Practice Groups"
+    },
+    {
+      "table": "free_resources",
+      "id": "cd4e9f54-ffa2-49bd-b3fe-2f895414de09",
+      "slug": "audio-talks",
+      "title": "Audio Talks"
+    }
+  ],
+  "at": "2026-11-10T11:16:27.920Z"
+}

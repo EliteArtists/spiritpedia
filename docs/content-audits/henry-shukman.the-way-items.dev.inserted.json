@@ -1,0 +1,25 @@
+{
+  "env": "dev",
+  "healer": null,
+  "rows": [
+    {
+      "table": "courses",
+      "id": "645cc874-0082-4dbb-8ed7-0f951ffb0881",
+      "slug": "the-way-subscription",
+      "title": "The Way subscription"
+    },
+    {
+      "table": "courses",
+      "id": "a8f735da-9db2-462f-a4c5-27fffeddcf6b",
+      "slug": "a-3-day-residential-retreat-with-henry-shukman-in-the-uk",
+      "title": "A 3-day residential retreat with Henry Shukman in the UK"
+    },
+    {
+      "table": "courses",
+      "id": "049603d9-f1c1-43cf-8ee3-db4727b6f937",
+      "slug": "practice-support-with-henrys-teaching-assistants",
+      "title": "Practice support with Henry's Teaching Assistants"
+    }
+  ],
+  "at": "2026-11-10T11:09:26.395Z"
+}

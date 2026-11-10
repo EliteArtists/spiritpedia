@@ -1,0 +1,64 @@
+{
+  "env": "live",
+  "healer": {
+    "id": 1030,
+    "healer_slug": "insight-meditation-center"
+  },
+  "rows": [
+    {
+      "table": "videos",
+      "id": 8577,
+      "slug": "gil-fronsdal-sheltering-in-place-as-a-retreat",
+      "title": "Gil Fronsdal: Sheltering in Place as a Retreat"
+    },
+    {
+      "table": "courses",
+      "id": "6aef4165-fa82-44e7-b0ff-bda03bfc2a6c",
+      "slug": "saturday-nov-21-mindfulness-practice-with-knowing-allowing-sensing-and-calming-daylong",
+      "title": "Saturday Nov 21: Mindfulness Practice with Knowing, Allowing, Sensing, and Calming Daylong"
+    },
+    {
+      "table": "courses",
+      "id": "fe96a022-c6ea-4dbb-80b0-35d81d247e71",
+      "slug": "saturday-dec-12-embodied-presence-daylong-with-kim-allen",
+      "title": "Saturday Dec 12: Embodied Presence Daylong with Kim Allen"
+    },
+    {
+      "table": "courses",
+      "id": "befcb4b8-b42d-4ca7-8038-12384b159685",
+      "slug": "december-27-31-non-residential-online-daily-life-retreat-with-andrea-fella",
+      "title": "December 27-31: Non-residential Online Daily Life Retreat with Andrea Fella"
+    },
+    {
+      "table": "courses",
+      "id": "a86a67ee-2476-4fc1-a87b-3bc51f1e9404",
+      "slug": "residential-retreats-at-the-insight-retreat-center",
+      "title": "Residential Retreats at the Insight Retreat Center"
+    },
+    {
+      "table": "free_resources",
+      "id": "46987496-050c-4740-85b8-50faa5849797",
+      "slug": "beginning-meditation-instruction",
+      "title": "Beginning Meditation Instruction"
+    },
+    {
+      "table": "free_resources",
+      "id": "58e4c519-3819-4647-bb6a-62dc583a1e1e",
+      "slug": "introduction-to-mindfulness-meditation",
+      "title": "Introduction to Mindfulness Meditation"
+    },
+    {
+      "table": "free_resources",
+      "id": "cc7c2a79-5c72-4927-a52f-47a040f3370b",
+      "slug": "guided-meditations-3",
+      "title": "Guided Meditations"
+    },
+    {
+      "table": "free_resources",
+      "id": "84bcb5c3-bb88-461c-9061-c6f71bb3813e",
+      "slug": "7am-guided-sit-talk",
+      "title": "7am Guided Sit & Talk"
+    }
+  ],
+  "at": "2026-11-10T11:16:20.336Z"
+}

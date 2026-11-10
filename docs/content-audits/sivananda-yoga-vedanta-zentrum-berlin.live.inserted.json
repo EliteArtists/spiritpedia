@@ -1,0 +1,46 @@
+{
+  "env": "live",
+  "healer": {
+    "id": 1094,
+    "healer_slug": "sivananda-yoga-vedanta-zentrum-berlin"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "924f968e-b018-4f57-9116-effdb2dc01a2",
+      "slug": "internationale-sivananda-yogalehrer-ausbildung-ttc",
+      "title": "Internationale Sivananda Yogalehrer-Ausbildung (TTC)"
+    },
+    {
+      "table": "courses",
+      "id": "cf0334aa-86c8-4f5b-9412-68518ddd9f02",
+      "slug": "fruhjahrs-retreat-in-der-breitenteicher-muhle",
+      "title": "Frühjahrs-Retreat in der Breitenteicher Mühle"
+    },
+    {
+      "table": "courses",
+      "id": "dece97ee-fb8e-4a78-8284-2b019ce2c0c8",
+      "slug": "yogakurse-fur-anfanger-und-geubte",
+      "title": "Yogakurse für Anfänger und Geübte"
+    },
+    {
+      "table": "courses",
+      "id": "0b8ed731-2e53-4544-9012-43cd2ae37f0f",
+      "slug": "flatrate-6-monate",
+      "title": "Flatrate 6 Monate"
+    },
+    {
+      "table": "free_resources",
+      "id": "21e67b88-b01d-4018-99a4-828260e23fd9",
+      "slug": "meditations-abende-satsang",
+      "title": "Meditations-Abende (Satsang)"
+    },
+    {
+      "table": "free_resources",
+      "id": "69a0d801-8af4-4ab2-9185-a3f2d7174a6d",
+      "slug": "audio-archives-swami-vishnudevananda",
+      "title": "Audio Archives: Swami Vishnudevananda"
+    }
+  ],
+  "at": "2026-11-10T11:18:58.792Z"
+}
