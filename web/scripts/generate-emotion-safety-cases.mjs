@@ -58,6 +58,9 @@ const templates = (e) => [e, `i feel ${e}`, `i’ve been feeling ${e} lately`, `
 
 const inputs = new Set([...realistic, ...edge, ...special]);
 for (const ph of special) { inputs.add(`i feel like ${ph} right now`); inputs.add(ph.toUpperCase()); inputs.add(ph.replace(/nt\b/g, "n't")); }
+// Hyphenated forms of every crisis phrase (owner, 10 Nov 2026): they must be caught too.
+for (const ph of crisis) { inputs.add(ph.replace(/ /g, '-')); inputs.add(`i want to ${ph.replace(/ /g, '-')}`); }
+inputs.add('kill-myself'); inputs.add('end-it-all'); inputs.add('i want to self-harm');
 for (const e of sampleEmotions) for (const t of templates(e)) inputs.add(t);
 
 // ── a fixed vocabulary for the full-search cases ──

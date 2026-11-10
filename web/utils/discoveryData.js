@@ -13,10 +13,13 @@
 
 const PAGE = 1000;
 
-async function everyRow(query) {
+// Every row, a page at a time. Ordered by a unique column (`key`, id unless
+// the table is keyed otherwise): without an order, PostgREST pages may
+// overlap or skip rows.
+async function everyRow(query, key = 'id') {
   const rows = [];
   for (let from = 0; ; from += PAGE) {
-    const { data, error } = await query().range(from, from + PAGE - 1);
+    const { data, error } = await query().order(key, { ascending: true }).range(from, from + PAGE - 1);
     if (error) throw new Error(error.message);
     rows.push(...(data || []));
     if (!data || data.length < PAGE) return rows;

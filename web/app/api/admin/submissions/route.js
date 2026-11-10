@@ -1,6 +1,7 @@
 import { NextResponse } from 'next/server';
 import { adminClient, isAdminRequest, NOT_CONFIGURED } from '@/utils/supabaseAdmin';
 import { firstNameFrom, sendSubmissionDecision } from '@/utils/email';
+import { selectAllHealers } from '@/data/subjects';
 import {
   IMAGE_COLUMNS,
   REJECT_REASONS,
@@ -135,7 +136,9 @@ export async function GET(request) {
     row.status === 'pending' && (!live || link !== live[URL_COLUMNS[row.content_type]]) ? checkLink(row.content_type, link) : null,
     holdingImageUrl(supabase, row.image_path),
     row.author_pending
-      ? supabase.from('healers').select('healer_slug, name').order('name').then((r) => r.data || [])
+      ? selectAllHealers('healer_slug, name', (q) => q, supabase).then((r) =>
+          (r.data || []).sort((x, y) => (x.name || '').localeCompare(y.name || ''))
+        )
       : [],
   ]);
 

@@ -40,10 +40,13 @@ const HISTORY_DAYS = 120;
 const ACCOUNT_KINDS = new Set(['first_visit', 'review_approved', 'listing_approved', 'claim_approved']);
 export const switchFor = (kind) => (ACCOUNT_KINDS.has(kind) ? 'general' : 'discoveries');
 
-async function everyRow(query) {
+// Every row, a page at a time. Ordered by a unique column (`key`, id unless
+// the table is keyed otherwise): without an order, PostgREST pages may
+// overlap or skip rows.
+async function everyRow(query, key = 'id') {
   const rows = [];
   for (let from = 0; ; from += PAGE) {
-    const { data, error } = await query().range(from, from + PAGE - 1);
+    const { data, error } = await query().order(key, { ascending: true }).range(from, from + PAGE - 1);
     if (error) throw new Error(error.message);
     rows.push(...(data || []));
     if (!data || data.length < PAGE) return rows;
@@ -250,8 +253,8 @@ export async function runPushHour(supabase, { now = new Date(), dry = false, ...
 
   // Only people whose clock says 10:00 or 19:00 now, and who have a phone.
   const states = await everyRow(() =>
-    supabase.from('push_state').select('user_id, utc_offset_minutes, last_opened_at, first_visit_at').not('utc_offset_minutes', 'is', null)
-  );
+    supabase.from('push_state').select('user_id, utc_offset_minutes, last_opened_at, first_visit_at').not('utc_offset_minutes', 'is', null),
+  'user_id');
   const due = states.filter((s) => [DISCOVERY_HOUR, WELCOME_HOUR].includes(localClock(now, s.utc_offset_minutes).hour));
   if (!due.length) return summary;
   const withPhone = await withPhones(supabase, due.map((s) => s.user_id));
@@ -329,7 +332,7 @@ export async function composeAdminPush(supabase, message, { testUserId = null, d
     return { test: true, ...result };
   }
 
-  const prefs = await everyRow(() => supabase.from('notification_preferences').select('user_id').eq('discoveries', true));
+  const prefs = await everyRow(() => supabase.from('notification_preferences').select('user_id').eq('discoveries', true), 'user_id');
   const audience = [...(await withPhones(supabase, prefs.map((r) => r.user_id)))];
   const out = { audience: audience.length, sent: 0, queued: 0, skipped_limit: 0, failed: 0 };
   const since = new Date(now.getTime() - 8 * DAY).toISOString();

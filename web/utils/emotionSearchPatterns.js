@@ -366,9 +366,14 @@ const CRISIS_COMPILED = Object.entries(CRISIS_PATTERNS).map(([category, phrases]
   regexes: phrases.map(buildPhraseRegex),
 }));
 
+/* Hyphens count as spaces here (owner, 10 Nov 2026): normaliseQuery keeps
+ * them, so "self-harm", "kill-myself" and "end-it-all" slipped past phrases
+ * stored with spaces. Both forms are tested, so a stored phrase that has a
+ * hyphen still matches, and nothing outside the crisis check changes. */
 function checkCrisis(normalised) {
+  const spaced = normalised.replace(/-/g, ' ').replace(/\s+/g, ' ').trim();
   for (const { category, regexes } of CRISIS_COMPILED) {
-    if (regexes.some((re) => re.test(normalised))) return { intercept: true, category };
+    if (regexes.some((re) => re.test(normalised) || re.test(spaced))) return { intercept: true, category };
   }
   return { intercept: false };
 }

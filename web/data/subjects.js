@@ -21,15 +21,23 @@ export async function getAllSubjects() {
 // healers), so a plain select() silently lost the rest from the home page.
 // Paged by `id` as web/app/sitemap.js does: id is unique, so pages neither
 // overlap nor skip (created_at is not; bulk imports share a timestamp).
-// `refine` narrows the query before it is paged. Returns { data, error }
-// like a single query; a failed page returns what came before it.
+// `refine` narrows the query before it is paged; `client` is the public
+// client unless a caller (an admin route) passes its own. Returns
+// { data, error } like a single query; a failed page returns what came
+// before it.
 const PAGE = 1000;
 
-export async function selectAllHealers(columns = '*', refine = (q) => q) {
+export async function selectAllHealers(columns = '*', refine = (q) => q, client = supabase) {
+  return selectAllRows('healers', columns, refine, client);
+}
+
+// The same paging for any table with a unique `id` (books, courses, free
+// resources on the subject pages).
+export async function selectAllRows(table, columns = '*', refine = (q) => q, client = supabase) {
   const rows = [];
   for (let from = 0; ; from += PAGE) {
     const { data, error } = await refine(
-      supabase.from('healers').select(columns).order('id', { ascending: true })
+      client.from(table).select(columns).order('id', { ascending: true })
     ).range(from, from + PAGE - 1);
     if (error) return { data: rows.length ? rows : null, error };
     rows.push(...(data || []));
@@ -82,14 +90,16 @@ export async function getHealerNames() {
 // lifts the thousand-row ceiling that was silently costing self-healing 45 of
 // its 1,045 videos.
 //
-// TODO — the books, courses and free resources queries below still have that
-// ceiling (healers are paged now, selectAllHealers). PostgREST caps a
-// response at 1,000 rows and reports no error when it truncates, so the first
-// subject whose books, courses or free resources cross that line will
-// quietly lose the remainder. self-healing is already at 547 courses and 465
-// books, and consciousness at 386 courses. The fix is `.range()` paging on a
-// unique, ordered column (id — created_at is not unique, bulk imports share a
-// timestamp), as web/app/sitemap.js does. Out of scope here; a separate task.
+// Books, courses, free resources and healers are all paged (selectAllRows):
+// PostgREST caps a response at 1,000 rows and reports no error when it
+// truncates, and self-healing was already at 547 courses and 465 books.
+// Only what the cards read (BookCard, OfferingCard, FreeResourceCard,
+// ContentShelf's id): with every row paged in, `*` made /subject/meditation
+// (2,068 live courses, 1,022 free resources) far heavier than it needs to be.
+const BOOK_COLUMNS = 'id, slug, title, description, mock_cover_url';
+const COURSE_COLUMNS = 'id, slug, title, description, image_url, price, product_type, healer_id';
+const FREE_COLUMNS = 'id, slug, title, description, image_url, resource_type, healer_id';
+
 export async function getContentBySubjectSlug(subjectSlug) {
   // EXPIRATION WINDOW — mirrors the homepage: a paid offering or free resource
   // only surfaces while it is live (is_active, and either evergreen or not yet
@@ -100,23 +110,17 @@ export async function getContentBySubjectSlug(subjectSlug) {
   // Every query issued concurrently — one round trip's latency for the whole page.
   const [booksResult, healersResult, coursesResult, freeResourcesResult] =
     await Promise.all([
-      supabase.from('books').select('*').contains('subject_slugs', [subjectSlug]),
+      selectAllRows('books', BOOK_COLUMNS, (q) => q.contains('subject_slugs', [subjectSlug])),
       selectAllHealers('*', (q) => q.contains('subject_slugs', [subjectSlug])),
-      supabase
-        .from('courses')
-        .select('*')
-        .contains('subject_slugs', [subjectSlug])
-        .eq('is_active', true)
-        .or(liveWindow),
+      selectAllRows('courses', COURSE_COLUMNS, (q) =>
+        q.contains('subject_slugs', [subjectSlug]).eq('is_active', true).or(liveWindow)
+      ),
       // NOTE: no is_featured filter here. That flag is a homepage curation
       // control; on a subject page the visitor asked for this subject explicitly,
       // so they should see every live free resource carrying the tag.
-      supabase
-        .from('free_resources')
-        .select('*')
-        .contains('subject_slugs', [subjectSlug])
-        .eq('is_active', true)
-        .or(liveWindow),
+      selectAllRows('free_resources', FREE_COLUMNS, (q) =>
+        q.contains('subject_slugs', [subjectSlug]).eq('is_active', true).or(liveWindow)
+      ),
     ]);
 
   const results = [booksResult, healersResult, coursesResult, freeResourcesResult];
