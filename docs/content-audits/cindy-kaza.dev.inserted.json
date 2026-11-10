@@ -1,0 +1,34 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 1183,
+    "healer_slug": "cindy-kaza"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "c235f5ba-a63c-4fdb-a211-afb400266edf",
+      "slug": "a-mediums-guide-to-connecting-to-automatic-writing",
+      "title": "A Medium's Guide To Connecting To Automatic Writing"
+    },
+    {
+      "table": "courses",
+      "id": "a27da6dc-35dc-45ea-8f9b-2fcd9236090f",
+      "slug": "individual-mediumship-development-december-2026",
+      "title": "Individual Mediumship Development: December, 2026"
+    },
+    {
+      "table": "courses",
+      "id": "0e104e21-4976-4b16-a0ee-01ee4b806add",
+      "slug": "individual-mediumship-development-january-2027",
+      "title": "Individual Mediumship Development: January, 2027"
+    },
+    {
+      "table": "courses",
+      "id": "c9ae52d9-a084-45b4-9859-206d02e539db",
+      "slug": "mystical-egypt-20",
+      "title": "Mystical Egypt 2.0"
+    }
+  ],
+  "at": "2026-11-10T12:44:55.915Z"
+}

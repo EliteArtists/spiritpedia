@@ -1,0 +1,122 @@
+{
+  "healer": {
+    "healer_slug": "ashtanga-yoga-malmo",
+    "location_source": "https://www.ashtangayogamalmo.se/kontakt/kontakta-oss",
+    "create": {
+      "name": "Ashtanga Yoga Malmö",
+      "bio": "Ashtanga Yoga Malmö is a yoga school in Malmö, Sweden, founded in 2013 by Isabella Nitschke after years abroad working in international affairs and studying yoga. It began by teaching in both Malmö and Lund, and in 2018 it settled in its own shala near Värnhemstorget, run in partnership with Medborgarskolan. Isabella, its head teacher, has taught full time since 2009, received Sharath Jois's permission to teach the first and second series in 2014, joined his two-month teacher course in 2016 and assisted him in Mysore in 2018 and 2019.\n\nMost of the timetable is Mysore-style self-practice with personal guidance, which the school approaches in a flexible, non-dogmatic way, adapting the sequence to each person. Eight-week beginners' and continuation courses run each term, and a day-long city retreat on the breath in January 2027 combines pranayama, practice and talks. The shala also holds a charity class of 108 sun salutations and community gatherings, and a small team of assistant teachers supports the daily classes.",
+      "tier": "local_hero",
+      "entity_type": "school",
+      "founded_year": 2013,
+      "availability": "local",
+      "city": "Malmö",
+      "country": "Sweden",
+      "subjects": [
+        "yoga",
+        "breathwork"
+      ],
+      "website_url": "https://www.ashtangayogamalmo.se/",
+      "booking_url": "https://www.ashtangayogamalmo.se/kurser-se/kurser-workshops",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": null,
+      "image_urls": [
+        "https://www.ashtangayogamalmo.se/images/bilder/OmOss_24A6453b.jpg",
+        "https://www.ashtangayogamalmo.se/images/bilder/Start_Yoga_24A6160_.jpg",
+        "https://www.ashtangayogamalmo.se/images/bilder/Galleri/2025-08-Mysore_DSF4374.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Mysore classes: cards and memberships",
+      "url": "https://www.ashtangayogamalmo.se/om-oss/priser",
+      "description": "Drop-in daily Mysore classes with monthly cards, a ten-class card and a weekly pass for visiting practitioners with an established Ashtanga practice. Student, pensioner and job-seeker reductions are offered.",
+      "price": "1-månad = 1450kr; 3-månader = 3400kr; 5-månader = 5450kr; 10-gångers klippkort = 1850kr; Drop-in = 195kr; 850kr för 1 vecka (gäster)",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://www.ashtangayogamalmo.se/images/bilder/OmOss_24A6453b.jpg"
+    },
+    {
+      "title": "STADSRETREAT – Kickoff 2027",
+      "url": "https://www.ashtangayogamalmo.se/kurser-se/kurser-workshops/338-stadsretreat-kickoff-2027",
+      "description": "A one-day city retreat at the shala on the theme 'everything starts with the breath', with an introduction to pranayama, Ashtanga practice and theory sessions. For students who already know the sun salutations and standing sequence.",
+      "price": "750 kr",
+      "product_type": "retreat",
+      "start_date": "2027-01-10",
+      "end_date": "2027-01-10",
+      "subjects": [
+        "yoga",
+        "breathwork"
+      ],
+      "image": "https://www.ashtangayogamalmo.se/images/icagenda/frontend/images/img-6601.jpg"
+    },
+    {
+      "title": "Ashtangayoga grundkurs (beginners)",
+      "url": "https://www.ashtangayogamalmo.se/kurser-se/kurser-workshops/332-ashtangayoga-grundkurs-3",
+      "description": "An eight-week Monday evening course introducing the foundations of Ashtanga: a little philosophy, sun salutations and standing postures, linking breath and movement, bandhas and drishti. One free Mysore class a week is included.",
+      "price": "1250kr",
+      "product_type": "course",
+      "start_date": "2027-01-18",
+      "end_date": null,
+      "subjects": [
+        "yoga",
+        "breathwork"
+      ],
+      "image": "https://www.ashtangayogamalmo.se/images/icagenda/frontend/images/dsc1223-2.jpg"
+    },
+    {
+      "title": "Ashtangayoga grundkurs/fortsättning (continuation)",
+      "url": "https://www.ashtangayogamalmo.se/kurser-se/kurser-workshops/333-ashtangayoga-grundkurs-fortsaettning-3",
+      "description": "An eight-week Wednesday course for students who have done a beginners' course, mixing a slower guided standing sequence with time to practise Mysore style, so they learn the vinyasa and breath and become more independent.",
+      "price": "1250",
+      "product_type": "course",
+      "start_date": "2027-01-20",
+      "end_date": null,
+      "subjects": [
+        "yoga",
+        "breathwork"
+      ],
+      "image": "https://www.ashtangayogamalmo.se/images/icagenda/frontend/images/dsc1704.jpg"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "yoga-school",
+    "rank": 1015,
+    "hub": null,
+    "tier_evidence": "No YouTube channel linked from the pages read; Instagram and Facebook not fetched; no readable followers → local_hero.",
+    "email": "contact form",
+    "email_source": null,
+    "contact_form_url": "https://www.ashtangayogamalmo.se/kontakt/kontakta-oss",
+    "bio_check": "OK: no 8-word runs against 11 source(s)",
+    "flags": [
+      "Lead from the Sharath Yoga Centre authorised-teacher list (Isabella Nitschke and Sara Björs, Ashtanga Yoga Malmo); facts from the school's own site (ashtangayogamalmo.se redirects to www; robots.txt allows us on both).",
+      "The site's email address is hidden by Joomla's script-built email cloaking ('protected from spambots'); per the rule it was not decoded, so the contact form on the contact page is used.",
+      "Prices are published as 'Priser 2025-26'; the continuation course price is given as '1250' without a currency, copied as published.",
+      "Course and retreat registration goes through the partner Medborgarskolan.",
+      "Head teacher Isabella Nitschke is also a certified yoga therapist for mental health (Minded Institute, Trauma-adapted Yoga Sweden); the school offers trauma-adapted yoga and stress-reduction classes, which are left out. The school's main work is Ashtanga, so it is kept.",
+      "Photos are of classes in the shala (two black-and-white, one 2025 gallery shot), from its own site.",
+      "Possible future listings: Isabella Nitschke (founder and head teacher), Sara Björs, Katie Anderson Ahlstedt, Helena Frentzell.",
+      "No Spiritpedia teachers are named on the site, so the teachers file has no links.",
+      "Regional: Malmö; Spiritpedia has few listings in Sweden."
+    ],
+    "left_out": [
+      "Traumaanpassad yoga (trauma-adapted yoga), yoga for stress reduction, and the 'physical activity on prescription' scheme: health rule.",
+      "108 sun salutations donation class (9 Dec 2026) and Advent brunch (6 Dec 2026): a charity class and a social gathering.",
+      "Private and corporate teaching: contact for pricing, no page of its own."
+    ]
+  },
+  "images_final": true
+}

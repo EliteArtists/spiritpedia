@@ -1,0 +1,181 @@
+{
+  "healer": {
+    "healer_slug": "sivananda-yoga-retreat-house-tyrol",
+    "location_source": "https://www.sivananda.at/en/contact-us/",
+    "create": {
+      "name": "Sivananda Yoga Retreat House Tyrol",
+      "bio": "The Sivananda Yoga Retreat House sits on a south-facing meadow above the village of Reith bei Kitzbühel in the Austrian Tyrol, a few kilometres from Kitzbühel. Swami Durgananda, a long-standing disciple of Swami Vishnudevananda who directs the Sivananda Yoga Vedanta Centres in Europe, opened it in 1998 as one of the residential ashrams of the international organisation Vishnudevananda founded in 1957. Swami Ramapriyananda now runs the house, and Swami Sivadasananda, another senior disciple and author of Sivananda beginners' guides, teaches here and online.\n\nThe house is best known for the four-week Sivananda Teachers' Training Course, run in English and German several times a year with guests lodging at an organic hotel across the road. Between courses it hosts year-round yoga holidays built around the Sivananda day of meditation, chanting, two asana classes and talks on the five points of yoga, plus themed retreats on meditation and positive thinking and a long festive retreat over Christmas and New Year. A small studio on site runs daily drop-in classes for local people and visitors, with a free trial class at weekends, and the team streams live classes and a free weekend workshop to students in other countries.",
+      "tier": "local_hero",
+      "entity_type": "school",
+      "availability": "local_online",
+      "founded_year": 1998,
+      "city": "Reith bei Kitzbühel",
+      "country": "Austria",
+      "subjects": [
+        "yoga",
+        "meditation",
+        "breathwork"
+      ],
+      "website_url": "https://www.sivananda.at/en/",
+      "booking_url": "https://www.sivananda.at/en/vacation/",
+      "youtube_url": "https://www.youtube.com/@sivanandaeurope",
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "tyrol-reception@sivananda.net",
+      "image_urls": [
+        "https://www.sivananda.at/wp-content/uploads/2023/08/das-yoga-seminarhaus-1.jpg",
+        "https://www.sivananda.at/wp-content/uploads/asana-plattform-drone-1.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [
+    {
+      "title": "Yoga Teacher Training experiences at the Sivananda Yoga Retreat House in Austria",
+      "url": "https://www.youtube.com/watch?v=NpSnFDt9jjI",
+      "subjects": [
+        "yoga"
+      ],
+      "channel": "Sivananda Yoga Europe"
+    },
+    {
+      "title": "Experience Yoga - Sivananda Yoga Teacher Training in the Himalayas",
+      "url": "https://www.youtube.com/watch?v=r_CVnNVoB4U",
+      "subjects": [
+        "yoga"
+      ],
+      "channel": "Sivananda Yoga Europe"
+    }
+  ],
+  "books": [],
+  "courses": [
+    {
+      "title": "Sivananda Yoga Teachers' Training Course in Tyrol",
+      "url": "https://www.sivananda.at/en/yoga-teacher-training-in-tyrol-austria/",
+      "description": "A four-week residential course in classical Sivananda hatha yoga, philosophy and teaching method, taught in English and German at the retreat house. It leads to the certificate of the International Sivananda Yoga Vedanta Centres; further intakes run through 2027.",
+      "price": "from €2,671 including room and board",
+      "product_type": "course",
+      "start_date": "2026-12-19",
+      "end_date": "2027-01-17",
+      "subjects": [
+        "yoga",
+        "meditation"
+      ],
+      "image": "https://www.sivananda.at/wp-content/uploads/2021/09/Yoga-Lehrer-Ausbildung.jpg"
+    },
+    {
+      "title": "Christmas & New Year Retreat 2026/27",
+      "url": "https://www.sivananda.at/en/vacation/yoga-at-christmas-new-year/",
+      "description": "A festive retreat over the holidays with Swami Durgananda, Swami Sivadasananda and visiting swamis. Days hold two yoga classes, silent meditation and chanting morning and evening, and talks, with a programme of devotional chanting to close.",
+      "price": "Contact for pricing",
+      "product_type": "retreat",
+      "start_date": "2026-12-18",
+      "end_date": "2027-01-06",
+      "subjects": [
+        "yoga",
+        "meditation"
+      ],
+      "image": "https://www.sivananda.at/wp-content/uploads/Weihnachtsyoga_600x600.png"
+    },
+    {
+      "title": "Serenity through Positive Thinking",
+      "url": "https://www.sivananda.at/en/event/serenity-through-positive-thinking_27-nov-2026/",
+      "description": "A weekend retreat at the house that pairs the daily yoga holiday schedule with talks and practice on positive thinking, one of the five points of Sivananda yoga.",
+      "price": "Contact for pricing",
+      "product_type": "retreat",
+      "start_date": "2026-11-27",
+      "end_date": "2026-11-29",
+      "subjects": [
+        "yoga",
+        "meditation"
+      ],
+      "image": "https://www.sivananda.at/wp-content/uploads/IMG_20240427_101557-scaled-e1772552232926.jpg"
+    },
+    {
+      "title": "Intensive Meditation Retreat",
+      "url": "https://www.sivananda.at/en/event/meditation-retreat/2027-05-18/",
+      "description": "Five days of three silent sittings a day alongside the yoga holiday programme, with talks on different meditation methods and optional one-to-one guidance.",
+      "price": "Contact for pricing",
+      "product_type": "retreat",
+      "start_date": "2027-05-18",
+      "end_date": "2027-05-22",
+      "subjects": [
+        "meditation",
+        "yoga"
+      ],
+      "image": "https://www.sivananda.at/wp-content/uploads/meditation-am-morgen-schwarzsee.jpg"
+    },
+    {
+      "title": "Yoga vacation at the retreat house",
+      "url": "https://www.sivananda.at/en/vacation/",
+      "description": "A stay of two nights or more on your own dates, following the ashram day of meditation, chanting, two asana classes and a talk, with meals and rooms at the eco-hotel across the road.",
+      "price": "Contact for pricing",
+      "product_type": "retreat",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga",
+        "meditation"
+      ],
+      "image": "https://www.sivananda.at/wp-content/uploads/reith-urlaub-600x600-1.jpg"
+    },
+    {
+      "title": "Online live class flatrate",
+      "url": "https://www.sivananda.at/en/live-drop-in-classes/",
+      "description": "Live-streamed Sivananda classes from the Austrian and German centres, in English on two days a week and in German most days, paid as a monthly flatrate or a day pass.",
+      "price": "€47 /month (all German and English classes); €29 /month (English classes); €10 /day",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://www.sivananda.at/wp-content/uploads/2023/08/online-dropin-stunden-1.jpg"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "The Fire of Yoga – free live workshop",
+      "url": "https://www.sivananda.at/en/free-yoga-online/",
+      "description": "A free weekend workshop on Zoom led by Swami Sivadasananda, working on asanas and pranayama for home practice, taught in English with translation.",
+      "featured": true,
+      "resource_type": "workshop",
+      "subjects": [
+        "yoga",
+        "breathwork"
+      ],
+      "image": "https://www.sivananda.at/wp-content/uploads/online-dropin-stunden-1.jpg"
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "yoga-school",
+    "rank": 756,
+    "hub": null,
+    "tier_evidence": "YouTube @sivanandaeurope (Sivananda Yoga Europe, linked in the site footer) 2,440 subscribers (YouTube Data API, 10 Nov 2026); Instagram, Facebook and Pinterest not fetched → ~2.4k → local_hero",
+    "email": "yes",
+    "email_source": "https://www.sivananda.at/en/contact-us/",
+    "contact_form_url": "https://www.sivananda.at/en/contact-us/",
+    "bio_check": "OK: no 8-word runs against 11 source(s)",
+    "flags": [
+      "Lead from the Sivananda organisation's own ashram list (sivananda.org/locations/ashrams/, link sivananda.org/tyrol, which now 404s); the site www.sivananda.at was found as a link on sivanandayogavietnam.org/community (the organisation's international community page). robots.txt (* group) disallows only wp-admin and calendar query URLs.",
+      "The site also serves the organisation's other European programmes (Mittersill and Pill in Austria, Málaga, India trainings, online classes); only the Reith house's own programmes are used here. The YouTube channel is Sivananda Yoga Europe's, run from this house; counted for tier as the site's own linked channel.",
+      "Email tyrol-reception@sivananda.net is the reception inbox (mailto on the contact page); the about page also gives reith-office@sivananda.net. A contact form is on the same page.",
+      "The yoga-vacation daily rates page says its rates (yoga €69 a day plus room and meals) were valid until 30 Sep 2026, so 'Contact for pricing' is used. Retreat prices are in the booking system, not opened.",
+      "The TTC item carries the first future intake (19 Dec 2026 – 17 Jan 2027); later intakes run Jan, Feb, May, Jun, Jul, Sep and Dec 2027 on the same page.",
+      "Possible future listings: Swami Durgananda (founder, director of the European Sivananda centres), Swami Sivadasananda, Swami Ramapriyananda (director of the house).",
+      "No Spiritpedia teachers are named on the site, so the teachers file has no links.",
+      "Regional: Reith bei Kitzbühel, Tyrol (a village of under 5,000 people near Kitzbühel); Spiritpedia has few listings in the Alps."
+    ],
+    "left_out": [
+      "Massage and bodywork, Yoga & Wellness and Yoga & Winter Sports packages: wellness or sport add-ons.",
+      "Meditation retreat page quotes on cortisol and stress; the retreat 'Meditation – Experiencing Inner Balance' (29 Nov 2026) cites scientific studies, left out to keep the list short.",
+      "Other venues (Mittersill, Pill, Málaga, Rudraprayag) and the Centenary pilgrimage in India: not at this house.",
+      "Shop books (Yoga: Your Home Practice Companion, Practical Ayurveda): organisation titles, ISBNs not read; Practical Ayurveda's blurb mentions sleep problems.",
+      "Further YouTube uploads: mostly short promos under 2 minutes, testimonials or German-only."
+    ]
+  },
+  "images_final": true
+}

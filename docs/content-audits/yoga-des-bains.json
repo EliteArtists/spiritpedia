@@ -1,0 +1,108 @@
+{
+  "healer": {
+    "healer_slug": "yoga-des-bains",
+    "location_source": "https://yoga-des-bains.ch/inscription/",
+    "create": {
+      "name": "Yoga des Bains",
+      "bio": "Yoga des Bains is an Iyengar yoga studio in Geneva, on the first floor of a courtyard building on Rue Gourgas, offering classes since 2005. It is run by two Iyengar teachers. Alain Jean-Mairet came to yoga through books and travel in India and Nepal, found the Iyengar method in 1996 and trained in Bern before many study trips to Indian teachers. Dominique Zuni-Fornara met the method in San Francisco while working in software, studied at the Iyengar Yoga Institute there, completed her certification in Switzerland in 2010 and spent a month at the Pune institute the same year.\n\nThe room is set up with wall ropes and shelves of bolsters, blankets and other props. The weekly timetable covers general and level 1–2 classes, lunchtime sessions, a Zoom class and longer Saturday practices, paid by the class or with a ten-class card. The studio also hosts visiting teachers: senior Iyengar teachers for weekend intensives, and Marina Bergamin, who teaches traditional hatha yoga in the line of Acharya Venkatesha, for weekend workshops and a year-long practitioners' course.",
+      "tier": "local_hero",
+      "entity_type": "school",
+      "availability": "local_online",
+      "founded_year": 2005,
+      "city": "Geneva",
+      "country": "Switzerland",
+      "subjects": [
+        "yoga",
+        "breathwork"
+      ],
+      "website_url": "https://yoga-des-bains.ch/",
+      "booking_url": "https://yoga-des-bains.ch/informations/",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "info@yoga-des-bains.ch",
+      "image_urls": [
+        "https://yoga-des-bains.ch/wp-content/uploads/2020/01/studio-bw.jpg",
+        "https://yoga-des-bains.ch/wp-content/uploads/2020/09/20200825_172940.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Horaires & Tarifs (weekly Iyengar classes)",
+      "url": "https://yoga-des-bains.ch/informations/",
+      "description": "The studio's weekly Iyengar classes with Alain and Dominique, from lunchtime and evening sessions to a Zoom class and three-hour Saturday practices. Reduced rates apply for pensioners, students and the unemployed.",
+      "price": "Cours individuel CHF 30.-; Premier cours CHF 20.-; 10 cours CHF 250.- (AVS, étudiants, chômeurs: CHF 23.- / CHF 15.- / CHF 220.-)",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://yoga-des-bains.ch/wp-content/uploads/2020/01/studio-bw.jpg"
+    },
+    {
+      "title": "Week-end de Hatha Yoga traditionnel avec Marina Bergamin – 21-22 novembre 2026",
+      "url": "https://yoga-des-bains.ch/week-end-de-hatha-yoga-traditionnel-avec-marina-bergamin/",
+      "description": "A weekend of asana, pranayama and concentration practice with the visiting teacher Marina Bergamin, a full Saturday and a Sunday morning in the Geneva studio. Single days and half days can also be booked.",
+      "price": "250 Fr. week-end entier",
+      "product_type": "course",
+      "start_date": "2026-11-21",
+      "end_date": "2026-11-22",
+      "subjects": [
+        "yoga",
+        "breathwork"
+      ],
+      "image": "https://yoga-des-bains.ch/wp-content/uploads/2024/11/Image1.jpg"
+    },
+    {
+      "title": "Formation du pratiquant 2027 avec Marina Bergamin",
+      "url": "https://yoga-des-bains.ch/formation-du-pratiquant-2027-avec-marina-bergamin/",
+      "description": "A course of seven weekends through 2027 for practitioners who want to build an independent home practice, with a personal asana and pranayama sequence, guided meditation, chanting, mudra, yoga nidra and philosophy.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": "2027-01-30",
+      "end_date": "2027-11-14",
+      "subjects": [
+        "yoga",
+        "meditation",
+        "breathwork"
+      ],
+      "image": "https://yoga-des-bains.ch/wp-content/uploads/2026/09/FormPrat2627.jpg"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "yoga-school",
+    "rank": 1605,
+    "hub": null,
+    "tier_evidence": "No YouTube channel linked; Instagram and Facebook not fetched → 0 readable → local_hero.",
+    "email": "yes",
+    "email_source": "https://yoga-des-bains.ch/inscription/",
+    "contact_form_url": "https://yoga-des-bains.ch/inscription/",
+    "bio_check": "OK: no 8-word runs against 8 source(s)",
+    "flags": [
+      "Lead from Iyengar Yoga Schweiz's list of certified teachers (Dominique Zuni, Yoga des Bains, 23 rue Gourgas, Genève; listed under yogalac.ch, which redirects to yoga-des-bains.ch). Facts from the studio's own site (robots.txt allows us).",
+      "The studio does not run a teacher training; it is listed as an Iyengar lineage school with a full programme (two Iyengar teachers, one listed as certified by the national association, weekly classes, guest intensives and a year-long practitioners' course).",
+      "The email is shown as plain text in the site footer and on the contact page (not a mailto link); it is not obfuscated.",
+      "Marina Bergamin teaches traditional hatha yoga, not the Iyengar method; her two items are kept as yoga teaching hosted by the studio.",
+      "'Formation du pratiquant 2027' gives seven weekend dates (30–31 January to 13–14 November 2027) but no price.",
+      "Possible future listings: Alain Jean-Mairet, Dominique Zuni-Fornara.",
+      "No Spiritpedia teachers are named on the site, so the teachers file has no links.",
+      "Regional: Geneva; Spiritpedia has few Iyengar listings in French-speaking Switzerland."
+    ],
+    "left_out": [
+      "Week-end de yoga avec June Whittaker (6–8 November 2026): passed.",
+      "Méditation Pleine Présence avec André: presented as a tool of fasciatherapy (therapy rule).",
+      "Atelier du dimanche 22 novembre with Marina Bergamin: part of the same weekend, not listed twice.",
+      "Room hire: not a teaching offering."
+    ]
+  },
+  "images_final": true
+}

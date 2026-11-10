@@ -1,0 +1,181 @@
+{
+  "healer": {
+    "healer_slug": "deer-park-monastery",
+    "location_source": "https://deerparkmonastery.org/about-us/",
+    "create": {
+      "name": "Deer Park Monastery",
+      "bio": "Deer Park Monastery is a practice centre and training monastery in the Plum Village tradition of the Vietnamese Zen teacher Thich Nhat Hanh, set on about 400 acres of oak-covered hills near Escondido in southern California. It was set up in 2000 and was the first of the community's three American monasteries; resident monks and nuns lead its days of mindfulness, retreats and ceremonies, and lay practitioners, families and young adults come to stay and practise with them.\n\nThe monastery's YouTube channel, started in 2020, carries the monastics' Sunday Dharma talks in English, Spanish and Vietnamese, talks from retreats such as its family and young-adult weeks, recordings of ordinations and festivals, and the talks from its yearly symposium on Buddhism and science. Its website adds online courses, including a free self-paced introduction to the core practices, guided meditations, podcasts and a journal. In 2026 the monks and nuns began appealing for help with a renewal of the buildings needed before the monastery can fully reopen to guests.",
+      "tier": "local_hero",
+      "entity_type": "organisation",
+      "founded_year": 2000,
+      "availability": "worldwide",
+      "city": "Escondido, California",
+      "country": "United States",
+      "subjects": [
+        "mindfulness",
+        "meditation",
+        "spirituality"
+      ],
+      "website_url": "https://deerparkmonastery.org/",
+      "booking_url": "https://deerparkmonastery.org/online-courses/",
+      "youtube_url": "https://www.youtube.com/@deerparkmonastery",
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": null,
+      "image_urls": [
+        "https://yt3.ggpht.com/_NA0tBmQNRv7j8Lsm8vxVIoCckM91NhTFN11kDm1Tk7wiy1h-UexUy4wBXCpGVQvkkZrc-6vNA=s800-c-k-c0x00ffffff-no-rj"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [
+    {
+      "title": "Be Still and Know | Br. Phap Dung | 2026-03-18",
+      "url": "https://www.youtube.com/watch?v=6S9AmjHVTJE",
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "channel": "Deer Park Monastery"
+    },
+    {
+      "title": "Live Beautifully, Die Beautifully | Sr. Dang Nghiem | 2026-06-28",
+      "url": "https://www.youtube.com/watch?v=kLe2jhDY-qI",
+      "subjects": [
+        "death-the-afterlife",
+        "mindfulness"
+      ],
+      "channel": "Deer Park Monastery"
+    },
+    {
+      "title": "Love in Training | Sister Đẳng Nghiêm | True Love Heals Online Retreat 2026",
+      "url": "https://www.youtube.com/watch?v=czVQhg4x7o8",
+      "subjects": [
+        "conscious-relationships",
+        "mindfulness"
+      ],
+      "channel": "Deer Park Monastery"
+    },
+    {
+      "title": "Froglessness | Brother Phap Dung | 2026-10-18",
+      "url": "https://www.youtube.com/watch?v=NmgfZ0xYoJo",
+      "subjects": [
+        "mindfulness",
+        "spirituality"
+      ],
+      "channel": "Deer Park Monastery"
+    },
+    {
+      "title": "Leading Oneself, Leading Others | Sr. Dang Nghiem | 2026-05-17",
+      "url": "https://www.youtube.com/watch?v=8bCOv1usVp4",
+      "subjects": [
+        "mindfulness",
+        "spirituality"
+      ],
+      "channel": "Deer Park Monastery"
+    },
+    {
+      "title": "The Gifts of Being Present | Br. Dao Son | 2026-04-26",
+      "url": "https://www.youtube.com/watch?v=6OwPD2oZ1W4",
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "channel": "Deer Park Monastery"
+    },
+    {
+      "title": "Our True Power | Sister Kính Nghiêm | 2026-07-12",
+      "url": "https://www.youtube.com/watch?v=C22Gv7Pur_4",
+      "subjects": [
+        "mindfulness",
+        "spirituality"
+      ],
+      "channel": "Deer Park Monastery"
+    },
+    {
+      "title": "Mindful Gathas For Daily Life | Sr. Phu Nghiem | 2026-04-19",
+      "url": "https://www.youtube.com/watch?v=1KIKtxajwy8",
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "channel": "Deer Park Monastery"
+    },
+    {
+      "title": "Tenderness, Interbeing, & What Counts as Knowing | The Buddha the Scientist | Dharmacharya Meena",
+      "url": "https://www.youtube.com/watch?v=89nz4R8fbqU",
+      "subjects": [
+        "consciousness",
+        "mindfulness"
+      ],
+      "channel": "Deer Park Monastery"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [
+    {
+      "title": "The Essentials of Mindful Living (free online course)",
+      "url": "https://deerparkmonastery.org/courses/the-essentials-of-mindful-living/",
+      "description": "A free self-paced course of short video trainings covering the community's everyday practices, among them conscious breathing, walking meditation, keeping silence, sharing in a group and the five mindfulness trainings.",
+      "featured": true,
+      "resource_type": "mini_course",
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "image": "https://content.deerparkmonastery.org/uploads/Group-of-People-HolidayRetreat20250101-13.jpg"
+    },
+    {
+      "title": "Guided meditations",
+      "url": "https://deerparkmonastery.org/mindfulness/guided-meditations/",
+      "description": "A page of guided meditations in the Plum Village style, with links to recordings from Deer Park and its sister centres.",
+      "featured": false,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://content.deerparkmonastery.org/uploads/output_image.jpg"
+    },
+    {
+      "title": "Deer Park podcasts",
+      "url": "https://deerparkmonastery.org/podcasts/",
+      "description": "Free audio of talks and conversations with the monastics of Deer Park.",
+      "featured": false,
+      "resource_type": "workshop",
+      "subjects": [
+        "mindfulness",
+        "spirituality"
+      ],
+      "image": "https://content.deerparkmonastery.org/uploads/output_image.jpg"
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "channel",
+    "rank": 803,
+    "hub": null,
+    "tier_evidence": "YouTube 30,300 subscribers (YouTube Data API, 10 Nov 2026); no other counts read → ~30k → local_hero",
+    "email": "contact form",
+    "email_source": null,
+    "contact_form_url": "https://deerparkmonastery.org/contact-us/",
+    "bio_check": "OK: no 8-word runs against 9 source(s)",
+    "flags": [
+      "deerparkmonastery.org serves no robots.txt (the path returns an HTML page), so no rules apply; pages read normally.",
+      "Contact form only: addresses such as office@deerparkmonastery.org appear only in the contact form's hidden settings, so they were not used.",
+      "The monastery is fundraising to 'reopen' after a facilities renewal (news post, 22 Sep 2026), though days of mindfulness are still scheduled for Nov-Dec 2026. Owner may want to check its status.",
+      "Possible duplicate family: Thich Nhat Hanh is listed (his channel is Plum Village Online) and the Plum Village App is listed. Deer Park is a separate monastery with its own channel. Sister centres Blue Cliff, Magnolia Grove and EIAB are also in this queue.",
+      "Teachers file links thich-nhat-hanh as founder: the about page says Deer Park was founded by Thich Nhat Hanh (and set up in July 2000 by the Plum Village four-fold Sangha).",
+      "Photo is the channel avatar (the monastery's stained-glass style emblem)."
+    ],
+    "left_out": [
+      "Paid online courses 'Who Is Thich Nhat Hanh? Cohort 3' (began 11 Oct 2026, $297) and 'Peace is Every Bite' (registration closed) left out as started or closed.",
+      "Talks on AI, war and a brain-and-meditation science talk left out as off-topic, political-leaning or health-framed.",
+      "Retreat registration not listed while the monastery is closed for renewal."
+    ]
+  },
+  "images_final": true
+}

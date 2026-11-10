@@ -1,0 +1,131 @@
+{
+  "healer": {
+    "healer_slug": "ashtanga-yoga-vancouver",
+    "location_source": "https://www.ashtangayogavancouver.com/",
+    "create": {
+      "name": "Ashtanga Yoga Vancouver",
+      "bio": "Ashtanga Yoga Vancouver, or AYV, grew out of the early-morning Mysore programme that Fiona Stang began in the city in 2000. She had first travelled to Mysore in 1999 to learn from the Jois family, was authorised to teach the following year, and started the programme with encouragement from the senior teacher Hamish Hendry, although even those closest to her doubted that dawn classes could work in a dark, rainy city. In 2009 she was one of the first forty students in the world to receive Level 2 authorisation, and her other teachers over the years include Tim Miller, David Swenson, John Scott and Sharmila Desai.\n\nThe shala's stated values are to honour the lineage, to treat every student as a person with their own needs, and to keep passing knowledge on. Mysore classes run from Monday to Thursday at 5:30 in the morning, both in the studio and online, while Friday brings an online counted full primary class with optional chanting beforehand. Newcomers are asked to begin with the school's introductory video course before joining. Fiona teaches with a small team that includes Saori Moue and Shivaun Berg, and she also leads workshops abroad. The school keeps a video library for pass holders and shares free counted classes, guided meditations and chanting on its YouTube channel.",
+      "tier": "local_hero",
+      "entity_type": "school",
+      "founded_year": null,
+      "availability": "local_online",
+      "city": "Vancouver, British Columbia",
+      "country": "Canada",
+      "subjects": [
+        "yoga",
+        "breathwork",
+        "meditation"
+      ],
+      "website_url": "https://www.ashtangayogavancouver.com/",
+      "booking_url": "https://www.ashtangayogavancouver.com/pricing",
+      "youtube_url": "https://www.youtube.com/@ashtangayogavancouver4804",
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "ayv@ashtangayogavancouver.com",
+      "image_urls": [
+        "https://images.squarespace-cdn.com/content/v1/5c35cec65cfd79bd5f2cab13/1563288879872-SLHKJ2K5YAMPYL62OO59/AYV_Assist_WEB.jpg",
+        "https://images.squarespace-cdn.com/content/v1/5c35cec65cfd79bd5f2cab13/1563288728320-LW58R83EHHKMOW9G8U1M/AYV_YogaMudra_WEB.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [
+    {
+      "title": "Why I Practice - Fiona Stang",
+      "url": "https://www.youtube.com/watch?v=L4z1F9h7D_Y",
+      "subjects": [
+        "yoga"
+      ],
+      "channel": "Ashtanga Yoga Vancouver"
+    },
+    {
+      "title": "The Yoga Tradition: Ashtanga Yoga with Fiona Stang",
+      "url": "https://www.youtube.com/watch?v=a9i0dYCkLW8",
+      "subjects": [
+        "yoga",
+        "ancient-wisdom"
+      ],
+      "channel": "Rachel Scott"
+    },
+    {
+      "title": "Chanting for Peace - Holiday 2023 AYV",
+      "url": "https://www.youtube.com/watch?v=dCat_YgokpY",
+      "subjects": [
+        "yoga",
+        "ancient-wisdom"
+      ],
+      "channel": "Ashtanga Yoga Vancouver"
+    },
+    {
+      "title": "Falling Snow & Birdsong Meditation",
+      "url": "https://www.youtube.com/watch?v=_YosJHoXliw",
+      "subjects": [
+        "meditation"
+      ],
+      "channel": "Ashtanga Yoga Vancouver"
+    }
+  ],
+  "books": [],
+  "courses": [
+    {
+      "title": "Passes: in-studio and online Mysore classes and video library",
+      "url": "https://www.ashtangayogavancouver.com/pricing",
+      "description": "Monthly, three-month and annual passes, class packs and a video-library subscription covering in-studio and online Mysore classes, the Friday online led class and the school's tutorial library. GST is added at checkout.",
+      "price": "1-Month Pass (Automatic Renewal) $160.00 every month; 3-Month Pass (Automatic Renewal) $427.00 every 3 months; Annual Pass (Automatic Renewal) $1,550.00 every 12 months; 1-Month Student/Senior Pass $126.00 every month; Video Subscription $65.00 every month; 1-Month Pass $180.00; 3-Month Pass $475.00; Annual Pass $1,750.00; 5-Class Pass $160.00; 10-Class Pass $280.00",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga"
+      ],
+      "image": "http://static1.squarespace.com/static/5c35cec65cfd79bd5f2cab13/t/5cdb5c47e5e5f0b078ce7923/1557879880615/AYV_Emblem_BLUE%402x.png?format=1500w"
+    },
+    {
+      "title": "Introduction to Ashtanga Yoga (online beginner course)",
+      "url": "https://ayv.thinkific.com/courses/intro-to-ashtanga-yoga",
+      "description": "A self-paced video course for newcomers: breathing and bandha fundamentals, detailed sun salutations A and B, the standing postures, the three closing postures, a guided practice and a guided deep relaxation. It is the school's recommended starting point before joining Mysore classes.",
+      "price": "$80.00",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga",
+        "breathwork"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/5c35cec65cfd79bd5f2cab13/1563288728320-LW58R83EHHKMOW9G8U1M/AYV_YogaMudra_WEB.jpg"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "yoga-school",
+    "rank": 1019,
+    "hub": null,
+    "tier_evidence": "YouTube 1,650 subscribers (@ashtangayogavancouver4804, Data API, 10 Nov 2026); Instagram and Facebook not fetched → ~1,650 total → local_hero.",
+    "email": "yes",
+    "email_source": "https://www.ashtangayogavancouver.com/",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 9 source(s)",
+    "flags": [
+      "Lead from the Sharath Yoga Centre authorised-teacher list (Fiona Stang, Ashtanga Yoga Vancouver); facts from the school's own site (www.ashtangayogavancouver.com, Squarespace; robots.txt groups Claude agents with '*', no full disallow) and its Thinkific course page (ayv.thinkific.com; robots.txt allows /courses/).",
+      "Founding year conflict: the founder's text says the Mysore programme began in 2000, the site description says 'since 2004'; founded_year left empty.",
+      "Prices are shown with '$' and no currency code; 5% GST added (as published).",
+      "Videos checked with yt.mjs and oEmbed (all 200). 'The Yoga Tradition' is a 64-minute conversation on another channel (Rachel Scott) featuring Fiona Stang, embedded on the school's videos page. Short clips under 2 minutes skipped.",
+      "The home page calls AYV 'a community of healers' and speaks of healing in a general sense; no condition claims are used.",
+      "Workshops and Fiona's international schedule pages had no listed events when read; nothing dated is offered.",
+      "Possible future listings: Fiona Stang (Level 2 authorised founder), Saori Moue, Shivaun Berg.",
+      "Hamish Hendry, Sharmila Desai, John Scott, David Swenson, Tim Miller are named as Fiona's teachers, not as teachers at the school; no teachers file links.",
+      "Regional: Vancouver; Spiritpedia has few Ashtanga schools in Canada."
+    ],
+    "left_out": [
+      "'Yoga for Life', Fiona's video course for women launching this November: no price or page of its own, and it is tied to her articles on perimenopause and menopause (health rule).",
+      "Asana at Home guest articles on yoga, perimenopause and menopause: health rule.",
+      "'Simple Stress Release' guided video: health rule.",
+      "Mat storage subscription.",
+      "Evening Mysore classes at another studio (Yoga Circle, a separate business)."
+    ]
+  },
+  "images_final": true
+}

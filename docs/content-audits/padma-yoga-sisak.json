@@ -1,0 +1,115 @@
+{
+  "healer": {
+    "healer_slug": "padma-yoga-sisak",
+    "location_source": "https://yogasisak.com/kontakt/",
+    "create": {
+      "name": "Padma Yoga Sisak",
+      "bio": "Padma Yoga is a small Ashtanga school in Sisak, Croatia. It teaches only Ashtanga in the tradition of K. Pattabhi Jois and R. Sharath Jois, under the guidance of Ružica Matagić, who first met the method through David Swenson in 2008, trained with several teachers in Europe and the United States, and received Level 2 authorisation from Sharath Jois at the end of 2019. Angelina Tkalčić, also authorised, teaches alongside her, and the team travels to Mysore each year to continue its own study.\n\nMornings and evenings are given to Mysore-style practice, in which beginners and experienced students work through the sequence at their own pace with individual help, and led classes run twice a week. A gentler slow-flow class and yoga nidra sessions round out the week. The school says its aim is to prepare students who may one day travel to Mysore themselves. In October 2024 it opened a new practice hall in the Viktorovac neighbourhood, and its site carries plain-language guides in Croatian to pranayama and to starting out in Ashtanga.",
+      "tier": "local_hero",
+      "entity_type": "school",
+      "founded_year": null,
+      "availability": "local",
+      "city": "Sisak",
+      "country": "Croatia",
+      "subjects": [
+        "yoga",
+        "breathwork"
+      ],
+      "website_url": "https://yogasisak.com/",
+      "booking_url": "https://yogasisak.com/programi/raspored/",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "padmasisak@gmail.com",
+      "image_urls": [
+        "https://yogasisak.com/wp-content/uploads/2012/03/MG_0643-Pano-1024x499.jpg",
+        "https://yogasisak.com/wp-content/uploads/2012/03/MG_0663-1024x683.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Članarine (class passes)",
+      "url": "https://yogasisak.com/programi/clanarine/",
+      "description": "Monthly passes and single classes for the timetable of Mysore-style and led Ashtanga, slow flow and yoga nidra, with private sessions on request. The price list is dated October 2026.",
+      "price": "NEOGRANIČENO 45,00 €; 8 TERMINA 40,00 €; 4 TERMINA 35,00 €; POJEDINAČNI SAT 15,00 €; PRIVATNI SAT (75min) 60,00 €",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://yogasisak.com/wp-content/uploads/2012/03/MG_0643-Pano-1024x499.jpg"
+    },
+    {
+      "title": "Ashtanga Mysore",
+      "url": "https://yogasisak.com/programi/satovi/ashtanga-mysore/",
+      "description": "The school's main class: self-paced practice of the Ashtanga sequence in a group, with the teacher giving each student breath and technique guidance and adding new postures as earlier ones settle. Complete beginners start here with sun salutations.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga",
+        "breathwork"
+      ],
+      "image": "https://yogasisak.com/wp-content/uploads/2012/03/MG_0643-Pano-1024x499.jpg"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Pranayama – vodič za početnike",
+      "url": "https://yogasisak.com/o-yogi/pranayama/",
+      "description": "A free beginner's guide in Croatian to pranayama: what the word means, the three phases of the breath (puraka, rechaka and kumbhaka) and how to start a simple breathing practice.",
+      "featured": true,
+      "resource_type": "practice",
+      "subjects": [
+        "breathwork",
+        "yoga"
+      ],
+      "image": "https://yogasisak.com/wp-content/uploads/2012/03/MG_0643-Pano-1024x499.jpg"
+    },
+    {
+      "title": "Upute za početnike",
+      "url": "https://yogasisak.com/programi/upute-za-pocetnike/",
+      "description": "Practical first-steps advice for newcomers to Ashtanga at the school: which classes suit complete beginners, what to bring, and how Mysore sessions work without booking.",
+      "featured": false,
+      "resource_type": "practice",
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://yogasisak.com/wp-content/uploads/2012/03/MG_0643-Pano-1024x499.jpg"
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "yoga-school",
+    "rank": 1009,
+    "hub": null,
+    "tier_evidence": "No YouTube channel linked from the pages read; Instagram and Facebook not fetched; no readable followers → local_hero.",
+    "email": "yes",
+    "email_source": "https://yogasisak.com/kontakt/",
+    "contact_form_url": "https://yogasisak.com/kontakt/",
+    "bio_check": "OK: no 8-word runs against 13 source(s)",
+    "flags": [
+      "Lead from the Sharath Yoga Centre authorised-teacher list (Angelina Tkalcic and Ruzica Matagic, Padma Yoga Sisak); facts from the school's own site only (www.yogasisak.com redirects to yogasisak.com; robots.txt allows us on both).",
+      "Address: the news page (16 Oct 2024) announces a move to Ivane Brlić Mažuranić 23 (Viktorovac), but the contact page and footer still give S. i A. Radića 2. City is Sisak either way.",
+      "Photos are from the site's gallery (an empty practice hall panorama and a detail of the room); they may show the earlier hall, before the 2024 move.",
+      "Thin-ish: one paid offering (class passes, price list dated 1 Oct 2026) plus the Mysore class page and two free guides; no trainings or workshops currently listed.",
+      "Possible future listings: Ružica Matagić (Level 2 authorised), Angelina Tkalčić, Željka Harčević.",
+      "No Spiritpedia teachers are named on the site, so the teachers file has no links.",
+      "Regional: Sisak, Croatia; Spiritpedia has few listings in the Balkans."
+    ],
+    "left_out": [
+      "Meditation guide page (frames meditation around stress reduction and health) and the 'Yoga i zdravlje' (yoga and health) page: health rule.",
+      "Ashtanga retreat on Hvar (May 2021) and other old news: passed.",
+      "Yoga nidra and slow flow classes: covered by the passes item."
+    ]
+  },
+  "images_final": true
+}

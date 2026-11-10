@@ -1,0 +1,78 @@
+{
+  "healer": {
+    "healer_slug": "yogaji-iyengar-yoga-zentrum-koeln",
+    "location_source": "https://www.yogaji.de/kontakt/",
+    "create": {
+      "name": "YOGAJI – Iyengar Yoga Zentrum Köln",
+      "bio": "YOGAJI is an Iyengar yoga centre in Cologne's inner city, tucked into a courtyard on Moltkestraße. Its name explains its spirit: in Indian usage the suffix \"ji\" is added to a name as a mark of respect, as in Guruji or Gandhiji, and here it is offered to yoga itself.\n\nClasses are kept small so that teachers can watch each student closely, and they are graded by level, with a first conversation or trial class used to find the right one. Ropes on the wall, blocks, bolsters and blankets support the precise alignment the Iyengar method is known for. The week runs from morning to evening, with general classes for every level, a restorative class, a Sunday morning session, a beginners' class taught in Persian and an evening hour of breathing practice and meditation. Most classes can also be joined live on Zoom, and anyone short of money is invited to ask about a reduced rate.\n\nThe centre is led by Afshin Amirsadri, an IT graduate whose spiritual search took him through Sufi meditation and Ashtanga yoga before he trained in Iyengar yoga in Germany and France and became a certified teacher. He teaches alongside Sasan Shaheen, who first met yoga in Mysore in 1995 and completed an Iyengar training in Cologne between 2013 and 2016.",
+      "tier": "local_hero",
+      "entity_type": "school",
+      "availability": "local_online",
+      "founded_year": null,
+      "city": "Cologne",
+      "country": "Germany",
+      "subjects": [
+        "yoga",
+        "meditation"
+      ],
+      "website_url": "https://www.yogaji.de/",
+      "booking_url": "https://www.yogaji.de/kontakt/",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "info@yogaji.de",
+      "image_urls": [
+        "https://www.yogaji.de/s/cc_images/cache_12540401.JPG?t=1534123625",
+        "https://www.yogaji.de/s/cc_images/cache_12540403.JPG?t=1534123630"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Iyengar yoga classes in Cologne and online",
+      "url": "https://www.yogaji.de/kurse-preise/",
+      "description": "Small-group Iyengar classes from Level 1 to Level 3, plus all-level, restorative and Sunday sessions and a weekly breathing and meditation class. Most classes are also streamed on Zoom; booking ahead is required.",
+      "price": "10er-Karte 165 €; 3-Probestunden 40 €; Einzelstunde 20 €; Probestunde 10 €",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga",
+        "meditation"
+      ],
+      "image": "https://www.yogaji.de/s/misc/logo.jpg?t=1790774836"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "yoga-school",
+    "rank": 762,
+    "hub": null,
+    "tier_evidence": "No YouTube or social links on the site; no readable followers → local_hero",
+    "email": "yes",
+    "email_source": "https://www.yogaji.de/kontakt/",
+    "contact_form_url": "https://www.yogaji.de/kontakt/",
+    "bio_check": "OK: no 8-word runs against 5 source(s)",
+    "flags": [
+      "Lead from Iyengar Yoga Deutschland's own studio list (iyengar-yoga-deutschland.de/studioliste/). robots.txt for www.yogaji.de allows us; photos are on www.yogaji.de itself.",
+      "Email info@yogaji.de is a plain mailto on every page; contact form on /kontakt/.",
+      "Very thin: one offering (the class timetable and prices). The Workshops & Events page lists only past workshops (2021–2024).",
+      "The home page has a 'Wohltuend & Heilend' panel about easing complaints; not used in the bio.",
+      "Possible future listings: Afshin Amirsadri (lead teacher), Sasan Shaheen.",
+      "No Spiritpedia teachers are named on the site, so the teachers file has no links.",
+      "Footer says © Yogaji 2023 and workshops stop in 2024, but the timetable and prices are current-looking; owner may want to confirm the centre is still active.",
+      "Regional: Cologne."
+    ],
+    "left_out": [
+      "Past workshops (Sliding into the New Year Dec 2024, Change of Season Oct 2024, Intense Iyengar Workshop Mar 2024): dates have passed.",
+      "Private lessons: price on request, no page of their own."
+    ],
+    "held": "Held by Claude (10 Nov 2026): too thin, one offering and its workshops are all from 2024 or earlier."
+  }
+}

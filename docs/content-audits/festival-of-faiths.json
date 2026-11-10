@@ -1,0 +1,164 @@
+{
+  "healer": {
+    "healer_slug": "festival-of-faiths",
+    "location_source": "https://festivaloffaiths.org/",
+    "create": {
+      "name": "Festival of Faiths",
+      "bio": "The Festival of Faiths is a yearly interfaith gathering in Louisville, Kentucky, organised by the city's Center for Interfaith Relations; its thirtieth edition takes place in November 2026 at the Kentucky Center for the Performing Arts. Over several days it brings together teachers and scholars from Buddhist, Christian, Hindu, Jewish, Muslim, Indigenous and other traditions for conversations, workshops, music, poetry and film, built each year around a shared theme such as love, belonging or sacred courage.\n\nThe festival's YouTube channel, running since 2013, keeps recordings of its talks and sessions. Alongside keynote conversations there are hour-long spiritual practice sessions led from inside particular traditions, such as Buddhist teaching on the four immeasurables, Christian chant, Hindu yoga and Jewish practice, and talks by figures including Thupten Jinpa, Anam Thubten, Judith Simmer-Brown, Omid Safi, Anantanand Rambachan and Lynne Twist. Recent uploads lean towards short clips, with full sessions from each year's programme following later.",
+      "tier": "local_hero",
+      "entity_type": "channel",
+      "availability": "worldwide",
+      "city": "Louisville, Kentucky",
+      "country": "United States",
+      "subjects": [
+        "spirituality",
+        "meditation",
+        "mysticism"
+      ],
+      "website_url": "https://festivaloffaiths.org/",
+      "booking_url": "https://festivaloffaiths.org/",
+      "youtube_url": "https://www.youtube.com/@festivaloffaiths",
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "info@interfaithrelations.org",
+      "image_urls": [
+        "https://yt3.ggpht.com/ytc/AIdro_lFPStpVWQvm8Vu2wmvRPjcycgeYd8TY7S7Xr4S5hMyBdw=s800-c-k-c0x00ffffff-no-rj"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [
+    {
+      "title": "We must ‘consciously cultivate’ love | Thupten Jinpa at #FOF2023",
+      "url": "https://www.youtube.com/watch?v=J9MydpBBB1U",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "channel": "Festival of Faiths"
+    },
+    {
+      "title": "“In messiness you will find purity” | Anam Thubten at #FOF2022",
+      "url": "https://www.youtube.com/watch?v=L4TU1dmMbgI",
+      "subjects": [
+        "meditation",
+        "non-duality"
+      ],
+      "channel": "Festival of Faiths"
+    },
+    {
+      "title": "‘Humans have the divine power to imagine’ | Anam Thubten | #FOF2024",
+      "url": "https://www.youtube.com/watch?v=fcon1F_w4HI",
+      "subjects": [
+        "spirituality"
+      ],
+      "channel": "Festival of Faiths"
+    },
+    {
+      "title": "Buddhist Spiritual Practice – The Four Immeasurables | #FOF2022",
+      "url": "https://www.youtube.com/watch?v=0UldECkIljM",
+      "subjects": [
+        "meditation"
+      ],
+      "channel": "Festival of Faiths"
+    },
+    {
+      "title": "Buddhist Spiritual Practice: Gerardo Abboud | #FOF2025",
+      "url": "https://www.youtube.com/watch?v=sQ6om1mp9Kk",
+      "subjects": [
+        "meditation"
+      ],
+      "channel": "Festival of Faiths"
+    },
+    {
+      "title": "Christian Spiritual Practice – Chant and Calling | #FOF2022",
+      "url": "https://www.youtube.com/watch?v=7LUtE5db3XQ",
+      "subjects": [
+        "mysticism",
+        "sound-healing"
+      ],
+      "channel": "Festival of Faiths"
+    },
+    {
+      "title": "Hindu Spiritual Practice – Yoga | #FOF2022",
+      "url": "https://www.youtube.com/watch?v=lMPTOm-bGRU",
+      "subjects": [
+        "yoga"
+      ],
+      "channel": "Festival of Faiths"
+    },
+    {
+      "title": "Jewish Spiritual Practice: Rabbi Matt Derrenbacher | #FOF2025",
+      "url": "https://www.youtube.com/watch?v=9I-JpNpa4jE",
+      "subjects": [
+        "spirituality",
+        "mysticism"
+      ],
+      "channel": "Festival of Faiths"
+    },
+    {
+      "title": "Unity is “at the heart of all reality” | Anantanand Rambachan at #FOF2022",
+      "url": "https://www.youtube.com/watch?v=6fu-Viv_0Pg",
+      "subjects": [
+        "non-duality",
+        "ancient-wisdom"
+      ],
+      "channel": "Festival of Faiths"
+    },
+    {
+      "title": "‘Love is not a feeling… you embody it’ | Omid Safi at #FOF2023",
+      "url": "https://www.youtube.com/watch?v=OpMA8tN41DI",
+      "subjects": [
+        "mysticism"
+      ],
+      "channel": "Festival of Faiths"
+    },
+    {
+      "title": "“In the heart of every emotion is wisdom” | Judith Simmer-Brown at #FOF2022",
+      "url": "https://www.youtube.com/watch?v=ZanzCQzgtgk",
+      "subjects": [
+        "meditation"
+      ],
+      "channel": "Festival of Faiths"
+    },
+    {
+      "title": "\"What is the True Meaning of Wealth?\" | Lynne Twist",
+      "url": "https://www.youtube.com/watch?v=8vj8f3i3INg",
+      "subjects": [
+        "spirituality",
+        "soul-purpose"
+      ],
+      "channel": "Festival of Faiths"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "channel",
+    "rank": 644,
+    "hub": null,
+    "tier_evidence": "YouTube 33,100 subscribers (YouTube Data API, 10 Nov 2026); no other counts published on its site → ~33k total → local_hero",
+    "email": "yes",
+    "email_source": "https://festivaloffaiths.org/",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 2 source(s)",
+    "flags": [
+      "Videos only: the 2026 festival (11–13 Nov 2026, passes $175 / $100) starts before the 12 Nov cut-off, so no offering was listed; the 2027 festival is not yet published. Owner may accept a videos-only channel or wait.",
+      "Organisation inbox used (info@interfaithrelations.org, Center for Interfaith Relations).",
+      "Part of its recent programme is social-justice and political (immigration, ICE detention, 'Rest Is Resistance', activism); those videos were left out. Not mainly political, but the owner may want to look.",
+      "Spiritpedia teachers on the channel: Ed Bastian (ed-bastian) and Lynne Twist (lynne-twist).",
+      "Recent uploads are mostly Shorts; full sessions are fewer."
+    ],
+    "left_out": [
+      "Festival of Faiths 2026 passes (starts 11 Nov 2026)",
+      "Political and activist sessions (immigration, ICE, othering)",
+      "Shorts",
+      "2014 Ed Bastian conversation (older, very long; could be added)"
+    ]
+  },
+  "images_final": true
+}

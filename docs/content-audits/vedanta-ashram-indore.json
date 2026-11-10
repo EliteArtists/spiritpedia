@@ -1,0 +1,166 @@
+{
+  "healer": {
+    "healer_slug": "vedanta-ashram-indore",
+    "location_source": "https://www.vmission.org.in/introduction/",
+    "create": {
+      "name": "Vedanta Ashram, Indore (Vedanta Mission)",
+      "bio": "Vedanta Ashram is a small gurukula for the study of Advaita Vedanta in the Sudama Nagar area of Indore, Madhya Pradesh. Swami Atmananda Saraswati, known to students as Poojya Guruji, set it up in 1992 as a place for himself and his disciples to live, study and practise, and it has grown into the headquarters of the International Vedanta Mission, run by a charitable public trust. Around six resident students live there, some of them initiated into sannyasa, with room for about twenty visitors during camps, a satsang and meditation hall, a library and a Shiva temple. Teaching is shared with the swaminis Amitananda, Poornananda and Samatananda.\n\nThe ashram runs a long-term Vedanta course and short residential camps, daily Gita classes with the classical commentary (bhashya), weekly online classes on the Gita and Atma-bodha, and correspondence-style online courses on Tattva Bodha and the Gita whose first lesson is free. It also publishes e-books and two e-magazines. Its YouTube channel, running since 2014, carries complete recorded series of Guruji's talks on the Upanishads and the Bhagavad Gita, mainly in Hindi with some in Gujarati.",
+      "tier": "local_hero",
+      "entity_type": "organisation",
+      "availability": "local_online",
+      "city": "Indore, Madhya Pradesh",
+      "country": "India",
+      "subjects": [
+        "non-duality",
+        "ancient-wisdom",
+        "meditation"
+      ],
+      "website_url": "https://www.vmission.org.in/",
+      "booking_url": "https://www.vmission.org.in/online-courses/",
+      "youtube_url": "https://www.youtube.com/@vedantaashram",
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": null,
+      "image_urls": [
+        "https://www.vmission.org.in/wp-content/uploads/2019/11/IMG_6161_800x533.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [
+    {
+      "title": "ईशावास्योपनिषद : प्रवचन-1",
+      "url": "https://www.youtube.com/watch?v=8_DScEc7XDU",
+      "subjects": [
+        "non-duality",
+        "ancient-wisdom"
+      ],
+      "channel": "Vedanta Ashram"
+    },
+    {
+      "title": "ईशावास्योपनिषद : प्रवचन-2",
+      "url": "https://www.youtube.com/watch?v=ZDkSWklnCe4",
+      "subjects": [
+        "non-duality",
+        "ancient-wisdom"
+      ],
+      "channel": "Vedanta Ashram"
+    },
+    {
+      "title": "भगवद गीता - अध्याय-8: प्रवचन-1",
+      "url": "https://www.youtube.com/watch?v=bWvprqKkD2Y",
+      "subjects": [
+        "ancient-wisdom",
+        "spirituality"
+      ],
+      "channel": "Vedanta Ashram"
+    },
+    {
+      "title": "भगवद गीता - अध्याय-8: प्रवचन-2",
+      "url": "https://www.youtube.com/watch?v=Iv_jthpskDA",
+      "subjects": [
+        "ancient-wisdom",
+        "spirituality"
+      ],
+      "channel": "Vedanta Ashram"
+    },
+    {
+      "title": "भगवद गीता - अध्याय-7 : प्रवचन-1",
+      "url": "https://www.youtube.com/watch?v=NGWcN2Hm0Hs",
+      "subjects": [
+        "ancient-wisdom",
+        "non-duality"
+      ],
+      "channel": "Vedanta Ashram"
+    },
+    {
+      "title": "નાટકદીપ  / પ્રવચન - 1",
+      "url": "https://www.youtube.com/watch?v=T1K5JpChkKw",
+      "subjects": [
+        "non-duality",
+        "ancient-wisdom"
+      ],
+      "channel": "Vedanta Ashram"
+    }
+  ],
+  "books": [],
+  "courses": [
+    {
+      "title": "Tattva Bodha & Gita Intro online courses",
+      "url": "https://www.vmission.org.in/online-courses/",
+      "description": "Two self-paced Vedanta courses by email: Tattva Bodha in four parts of ten lessons, and a ten-lesson introduction to the Bhagavad Gita. After the free first lesson, students send in answers and register with a small contribution to continue.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "non-duality",
+        "ancient-wisdom"
+      ],
+      "image": "https://www.vmission.org.in/wp-content/uploads/2019/11/IMG_6161_800x533.jpg"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Atma-bodha Lessons",
+      "url": "https://www.vmission.org.in/atmabodha-talks/",
+      "description": "Recorded lessons on the Atma-bodha, a short introductory text of Advaita Vedanta, from the ashram's audio library.",
+      "featured": true,
+      "resource_type": "practice",
+      "subjects": [
+        "non-duality",
+        "ancient-wisdom"
+      ],
+      "image": "https://www.vmission.org.in/wp-content/uploads/2020/02/03-04_600x400.png"
+    },
+    {
+      "title": "Meditation: introduction and guidance",
+      "url": "https://www.vmission.org.in/meditation/",
+      "description": "Audio talks by Swami Atmananda on meditation and japa practice, in Hindi, with archive links.",
+      "featured": false,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://www.vmission.org.in/wp-content/uploads/2019/11/IMG_6161_800x533.jpg"
+    },
+    {
+      "title": "Publications (ebooks)",
+      "url": "https://www.vmission.org.in/e-books/",
+      "description": "The mission's free e-books, including the Tattva Bodha text with English and Hindi translations.",
+      "featured": false,
+      "resource_type": "download",
+      "subjects": [
+        "ancient-wisdom"
+      ],
+      "image": "https://www.vmission.org.in/wp-content/uploads/2021/06/vsn-722x1024.jpg"
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "channel",
+    "rank": 1213,
+    "hub": null,
+    "tier_evidence": "YouTube 3,430 subscribers (YouTube Data API, 10 Nov 2026); no other counts read → ~3k → local_hero",
+    "email": "contact form",
+    "email_source": null,
+    "contact_form_url": "https://www.vmission.org.in/contact-us/",
+    "bio_check": "OK: no 8-word runs against 8 source(s)",
+    "flags": [
+      "No email published on the pages read; contact is the site's contact form (and WhatsApp).",
+      "Founding year: the site says 1992; the YouTube description says 1995. The bio follows the site.",
+      "Not the same person as Swami Atmananda Udasin (already listed): this is Swami Atmananda Saraswati of Indore. Neither he nor the three swaminis are on Spiritpedia: possible future listings. Teachers file empty.",
+      "Only one usable photo: the ashram's acharyas together in the satsang hall (facilities page). Site banners carry overlaid text; the channel avatar is a sun-face emblem not explained on the site.",
+      "Videos are Hindi and Gujarati, titles kept as published; each series is long (10–15 talks), so the first talks were chosen.",
+      "Atma-bodha and e-books pages were linked but not opened; descriptions follow the link text and the online-courses page.",
+      "Regional: Indore, Madhya Pradesh."
+    ],
+    "left_out": [
+      "Residential meditation camp (26–29 July 2026, past) and Holistic Living Day (13 Dec, a talks event).",
+      "Bal Samskar children's camp; Hanuman Chalisa and Sundarkand talk series (devotional), chanting and bhajans."
+    ]
+  },
+  "images_final": true
+}

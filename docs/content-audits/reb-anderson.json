@@ -1,0 +1,179 @@
+{
+  "healer": {
+    "healer_slug": "reb-anderson",
+    "location_source": "https://rebanderson.org/about-tenshin-roshi/",
+    "create": {
+      "name": "Tenshin Reb Anderson",
+      "bio": "Tenshin Reb Anderson is a Soto Zen teacher in the line of Shunryu Suzuki Roshi. Born in Mississippi in 1943 and raised in Minnesota, he gave up graduate work in mathematics and psychology in 1967 to train with Suzuki Roshi in San Francisco, was ordained a priest by him in 1970, and later received Dharma transmission. He went on to serve as abbot of San Francisco Zen Center and, over more than fifty years, lived and taught at its Green Gulch Farm in Marin County, leading long practice periods there and at Tassajara and training many priests and lay students.\n\nHaving left residence at Green Gulch, he now teaches from No Abode Hermitage in Mill Valley, California, where he holds monthly one-day sittings of zazen, walking meditation, work and two talks, and gives Dharma talks online; he also leads retreats and sesshin as a guest of sanghas in the United States and Europe. His books include Warm Smiles from Cold Mountains and Being Upright. His YouTube channel, active since 2013, carries his recent talks on zazen, bodhisattva practice and the Flower Adornment Scripture.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local_online",
+      "city": "Mill Valley, California",
+      "country": "United States",
+      "subjects": [
+        "meditation",
+        "ancient-wisdom",
+        "spirituality"
+      ],
+      "website_url": "https://rebanderson.org/",
+      "booking_url": "https://rebanderson.org/one-day-sittings/",
+      "youtube_url": "https://www.youtube.com/@tenshinrebanderson",
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "noabodesangha@gmail.com",
+      "image_urls": [
+        "https://yt3.ggpht.com/ytc/AIdro_lUROB57KV5b5LWwksx85svtxAkJzrurRbb4VBpiMEERA=s800-c-k-c0x00ffffff-no-rj"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [
+    {
+      "title": "Turning the Three Realms on the Three Realms",
+      "url": "https://www.youtube.com/watch?v=OJARsKEQpcI",
+      "subjects": [
+        "meditation",
+        "non-duality"
+      ],
+      "channel": "TenshinRebAnderson"
+    },
+    {
+      "title": "What Is Your Art Form?",
+      "url": "https://www.youtube.com/watch?v=lOXSQtTZ5JI",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "channel": "TenshinRebAnderson"
+    },
+    {
+      "title": "Just Sitting",
+      "url": "https://www.youtube.com/watch?v=XUvtuAEKQaw",
+      "subjects": [
+        "meditation"
+      ],
+      "channel": "TenshinRebAnderson"
+    },
+    {
+      "title": "What's the Point?",
+      "url": "https://www.youtube.com/watch?v=s-KuGEIgygA",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "channel": "TenshinRebAnderson"
+    },
+    {
+      "title": "Entering the Samadhi of Buddha’s Radiance",
+      "url": "https://www.youtube.com/watch?v=N-Qk7kSyCiM",
+      "subjects": [
+        "meditation",
+        "ancient-wisdom"
+      ],
+      "channel": "TenshinRebAnderson"
+    },
+    {
+      "title": "Drinking Tea and Sitting in Bodhisattva Samadhi",
+      "url": "https://www.youtube.com/watch?v=ocn_dNpDTHk",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "channel": "TenshinRebAnderson"
+    },
+    {
+      "title": "Bodhisattva Love",
+      "url": "https://www.youtube.com/watch?v=2PnUgMBFqNw",
+      "subjects": [
+        "spirituality",
+        "meditation"
+      ],
+      "channel": "TenshinRebAnderson"
+    },
+    {
+      "title": "Sitting in the Presence of Buddha",
+      "url": "https://www.youtube.com/watch?v=O2jXo8edtmQ",
+      "subjects": [
+        "meditation"
+      ],
+      "channel": "TenshinRebAnderson"
+    },
+    {
+      "title": "Faith: The Door and Heart of the Buddha Way",
+      "url": "https://www.youtube.com/watch?v=EDEAXepg0AA",
+      "subjects": [
+        "spirituality",
+        "ancient-wisdom"
+      ],
+      "channel": "TenshinRebAnderson"
+    }
+  ],
+  "books": [],
+  "courses": [
+    {
+      "title": "No Abode one-day sittings",
+      "url": "https://rebanderson.org/one-day-sittings/",
+      "description": "Monthly full-day sittings at No Abode Hermitage with periods of sitting and walking zazen, a morning and an afternoon talk, lunch and a work period.",
+      "price": "Contact for pricing",
+      "product_type": "retreat",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://rebanderson.org/wp-content/uploads/diagonal-facing-altar-300x204.png"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Video talks",
+      "url": "https://rebanderson.org/video-talks/",
+      "description": "His recorded Dharma talks, gathered on his site with links to the full archive on YouTube.",
+      "featured": true,
+      "resource_type": "workshop",
+      "subjects": [
+        "meditation",
+        "ancient-wisdom"
+      ],
+      "image": "https://yt3.ggpht.com/ytc/AIdro_lUROB57KV5b5LWwksx85svtxAkJzrurRbb4VBpiMEERA=s800-c-k-c0x00ffffff-no-rj"
+    },
+    {
+      "title": "Audio talks",
+      "url": "https://rebanderson.org/audio-talks/",
+      "description": "An archive of his Dharma talks as free audio recordings.",
+      "featured": false,
+      "resource_type": "workshop",
+      "subjects": [
+        "meditation",
+        "ancient-wisdom"
+      ],
+      "image": "https://yt3.ggpht.com/ytc/AIdro_lUROB57KV5b5LWwksx85svtxAkJzrurRbb4VBpiMEERA=s800-c-k-c0x00ffffff-no-rj"
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "channel",
+    "rank": 817,
+    "hub": null,
+    "tier_evidence": "YouTube 1,260 subscribers (YouTube Data API, 10 Nov 2026); no other counts read → ~1k → local_hero",
+    "email": "yes",
+    "email_source": "https://rebanderson.org/one-day-sittings/",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 7 source(s)",
+    "flags": [
+      "Possible editorial-stature override: former abbot of San Francisco Zen Center and an author with Shambhala Publications; YouTube alone is 1.3k. Not raised.",
+      "Email noabodesangha@gmail.com is the No Abode sangha inbox (mailto on the one-day sittings page), not a personal address.",
+      "San Francisco Zen Center has a plan in docs/content-audits (san-francisco-zen-center.json); he could be linked there as a former abbot if the owner wants.",
+      "Photo is his own channel avatar (a real photo of him in robes). A second site photo (holding an embroidered robe, rebanderson.org) shows the same man but was not used as it is not a headshot.",
+      "Regional: Mill Valley is in Marin County, near San Francisco."
+    ],
+    "left_out": [
+      "Books (Warm Smiles from Cold Mountains, Being Upright, The Third Turning of the Wheel, Entering the Mind of Buddha): no ISBN on his own site; the publisher page was not opened.",
+      "Climate-crisis talk left out as close to political.",
+      "One-day sitting price is in the registration email, not on the page."
+    ]
+  },
+  "images_final": true
+}

@@ -1,0 +1,118 @@
+{
+  "healer": {
+    "healer_slug": "studie-yoga",
+    "location_source": "https://studieyoga.dk/find-vej-til-studie-yoga/",
+    "create": {
+      "name": "Studie Yoga",
+      "bio": "Studie Yoga is an Iyengar yoga studio in Allerød, north of Copenhagen, opened in September 2008 by Kirsten Millington. She holds the Senior Level 3 Iyengar certificate, trained with Theresa Rowland in Madison in the United States, has continued her studies with Jayne Orton in Birmingham and has taught since 2006. She also teaches on the Iyengar teacher training and acts as an assessor at Iyengar examinations in Europe. Lucie Schultz, a Level 1 teacher who began her own practice with Kirsten and completed a three-year mentorship, teaches regular classes and Saturday workshops, with Helle Moesgaard Andersen, Level 2, covering classes from time to time.\n\nClasses run at several levels in a first-floor studio in the town, and almost all of them, workshops included, can also be joined live on Zoom. Through the year the studio adds themed workshops and three-day residential retreats at a refuge on the edge of Tisvilde Hegn forest, close to the sea, with vegetarian meals and sound-bowl meditation alongside the Iyengar practice. One retreat is aimed at experienced practitioners and teachers who want to study the postures in fine detail; others suit students building their foundations or ready to go deeper.",
+      "tier": "local_hero",
+      "entity_type": "school",
+      "availability": "local_online",
+      "founded_year": 2008,
+      "city": "Allerød",
+      "country": "Denmark",
+      "subjects": [
+        "yoga",
+        "breathwork"
+      ],
+      "website_url": "https://studieyoga.dk/",
+      "booking_url": "https://studieyoga.yogo.dk/frontend/index.html#/login",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "info@studieyoga.dk",
+      "image_urls": [
+        "https://studieyoga.dk/wp-content/uploads/42P5242-scaled.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "YogaLab Retreat – 16–18 April 2027",
+      "url": "https://studieyoga.dk/yogalab-retreat/",
+      "description": "Three days of detailed Iyengar practice for experienced practitioners and teachers with at least five years' practice, staying at a refuge by Tisvilde Hegn with home-cooked vegetarian meals. Limited to twelve participants.",
+      "price": "Contact for pricing",
+      "product_type": "retreat",
+      "start_date": "2027-04-16",
+      "end_date": "2027-04-18",
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://studieyoga.dk/wp-content/uploads/IMG_7322-300x300.jpeg"
+    },
+    {
+      "title": "Fundament & Nærvær Retreat – 30 April–2 maj 2027",
+      "url": "https://studieyoga.dk/ved-vandet-retreat/",
+      "description": "A weekend retreat on the foundations of the postures, building stability step by step and refining attention to the breath, with sound-bowl meditation and walks by the forest and sea.",
+      "price": "Contact for pricing",
+      "product_type": "retreat",
+      "start_date": "2027-04-30",
+      "end_date": "2027-05-02",
+      "subjects": [
+        "yoga",
+        "breathwork"
+      ],
+      "image": "https://studieyoga.dk/wp-content/uploads/42P5242-scaled.jpg"
+    },
+    {
+      "title": "Fordybelses Retreat – 24–26 September 2027",
+      "url": "https://studieyoga.dk/andalusien-retreat/",
+      "description": "Three days for students at Yoga 2 or 3 level who already practise head and shoulder balance, staying longer in familiar postures and exploring some more demanding ones in a small group.",
+      "price": "Contact for pricing",
+      "product_type": "retreat",
+      "start_date": "2027-09-24",
+      "end_date": "2027-09-26",
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://studieyoga.dk/wp-content/uploads/IMG_6751-scaled-1.jpeg"
+    },
+    {
+      "title": "Online Yoga (live classes and workshops on Zoom)",
+      "url": "https://studieyoga.dk/online-yoga/",
+      "description": "Nearly all of the studio's classes and workshops can be joined live on Zoom through the booking system, with a short list of home props suggested.",
+      "price": "Contact for pricing",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://studieyoga.dk/wp-content/uploads/online-yoga-class-unrecognizable-woman-in-lotus-p-2026-03-24-02-21-38-utc-scaled.jpg"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "yoga-school",
+    "rank": 1611,
+    "hub": null,
+    "tier_evidence": "No YouTube channel linked; Instagram and Facebook not fetched → 0 readable → local_hero.",
+    "email": "yes",
+    "email_source": "https://studieyoga.dk/find-vej-til-studie-yoga/",
+    "contact_form_url": "https://studieyoga.dk/find-vej-til-studie-yoga/",
+    "bio_check": "OK: no 8-word runs against 9 source(s)",
+    "flags": [
+      "Lead from the Danish Iyengar association's teacher list (Kirsten Dalsgaard Millington, Level 3, studieyoga.dk, Allerød); facts from the studio's own site (robots.txt allows us, Crawl-delay 10 respected).",
+      "The prices and workshop pages load their content from the booking system and show nothing readable, so class prices are 'Contact for pricing'; the retreat pages also say to contact the studio for prices.",
+      "The studio also sells yoga massage and Ayurvedic lifestyle consultations; these are left out (therapy and health).",
+      "The founder's page mentions past special classes for back, knee and shoulder problems; not used.",
+      "Only one photo is used (a class seated in the studio); the people in it are not named.",
+      "City recorded as Allerød, as published (3450 Allerød).",
+      "Possible future listings: Kirsten Millington.",
+      "No Spiritpedia teachers are named on the site, so the teachers file has no links.",
+      "Regional: Allerød, North Zealand; Spiritpedia has no listings there."
+    ],
+    "left_out": [
+      "Ayurveda pages, Ayurvedic lifestyle analysis and yoga massage (health and therapy).",
+      "Workshop dates (booking widget, not readable).",
+      "Yoga niveauer and Ny i Studie Yoga pages: informational, folded into the bio."
+    ]
+  },
+  "images_final": true
+}

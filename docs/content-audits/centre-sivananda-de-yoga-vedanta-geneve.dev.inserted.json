@@ -1,0 +1,40 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 1243,
+    "healer_slug": "centre-sivananda-de-yoga-vedanta-geneve"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "478db8f1-a09e-4746-ba41-cf980e936e19",
+      "slug": "yoga-pour-debutants-beginners-workshops",
+      "title": "Yoga pour débutants (beginners' workshops)"
+    },
+    {
+      "table": "courses",
+      "id": "a6639dfa-2168-428a-8aa2-16041d2ed63d",
+      "slug": "cours-dessai-trial-class",
+      "title": "Cours d'essai (trial class)"
+    },
+    {
+      "table": "courses",
+      "id": "5635d598-b6bf-4a1b-8775-8da6ce60fa6a",
+      "slug": "stage-de-meditation-introduction-to-meditation",
+      "title": "Stage de méditation (introduction to meditation)"
+    },
+    {
+      "table": "courses",
+      "id": "386e2c72-bd3f-4024-b3ac-8baa7f6f5eb1",
+      "slug": "atelier-de-cuisine-vegetarienne-saveurs-sacrees-de-linde",
+      "title": "Atelier de cuisine végétarienne: Saveurs sacrées de l'Inde"
+    },
+    {
+      "table": "free_resources",
+      "id": "9dfb7622-bc75-4cbc-96d5-19eb3e1edd91",
+      "slug": "meditation-de-groupe-et-satsang-free-group-meditation",
+      "title": "Méditation de groupe et satsang (free group meditation)"
+    }
+  ],
+  "at": "2026-11-10T15:45:30.330Z"
+}

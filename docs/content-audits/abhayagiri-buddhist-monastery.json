@@ -1,0 +1,169 @@
+{
+  "healer": {
+    "healer_slug": "abhayagiri-buddhist-monastery",
+    "location_source": "https://www.abhayagiri.org/visiting/directions",
+    "create": {
+      "name": "Abhayagiri Buddhist Monastery",
+      "bio": "Abhayagiri is a Theravada forest monastery in the hills of Mendocino County, northern California, belonging to the Thai Forest lineage of Ajahn Chah. Ajahn Pasanno and Ajahn Amaro led it together as co-abbots from 1996; Ajahn Amaro later left to head Amaravati in England, and after Ajahn Pasanno stepped back he stayed on as guiding elder, with Ajahn Nyaniko now serving as abbot. Monks, novices, postulants and lay residents keep a simple daily round of chanting, meditation, shared work and a single meal, and the community lives on what visitors freely give.\n\nGuests may come for the day or ask to stay overnight, and on Saturday evenings the community holds chanting, meditation and a Dhamma talk that anyone can attend. The YouTube channel, started in 2016, is busy: it carries those Saturday talks, shorter reflections from the senior monks, readings from the forest tradition and recordings of ceremonies. The website keeps a large free archive of talks, written reflections and books given away for free distribution.",
+      "tier": "local_hero",
+      "entity_type": "organisation",
+      "founded_year": 1996,
+      "availability": "worldwide",
+      "city": "Redwood Valley, California",
+      "country": "United States",
+      "subjects": [
+        "meditation",
+        "ancient-wisdom",
+        "spirituality"
+      ],
+      "website_url": "https://www.abhayagiri.org/",
+      "booking_url": "https://www.abhayagiri.org/visiting",
+      "youtube_url": "https://www.youtube.com/@abhayagiribuddhistmonastery",
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": null,
+      "image_urls": [
+        "https://yt3.ggpht.com/xHUuSw5KnduqOB_AXDLdobCH925r8qdQMRAzok4uyVdh5YKQUZYMRqWtauS7TGma8h3DmGhNcU8=s800-c-k-c0x00ffffff-no-rj"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [
+    {
+      "title": "A Path of Relinquishment | Ajahn Pasanno",
+      "url": "https://www.youtube.com/watch?v=WANIOz2apIs",
+      "subjects": [
+        "meditation",
+        "ancient-wisdom"
+      ],
+      "channel": "Abhayagiri"
+    },
+    {
+      "title": "Practice Like Still Flowing Water | Ajahn Pasanno",
+      "url": "https://www.youtube.com/watch?v=hEec1AR0yoc",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "channel": "Abhayagiri"
+    },
+    {
+      "title": "Buddha, Dhamma, Sangha as Refuge | Ajahn Nyaniko",
+      "url": "https://www.youtube.com/watch?v=RHNCaseGZ3I",
+      "subjects": [
+        "ancient-wisdom",
+        "spirituality"
+      ],
+      "channel": "Abhayagiri"
+    },
+    {
+      "title": "Being with the Knowing and the Unknowing | Ajahn Nyaniko",
+      "url": "https://www.youtube.com/watch?v=gIbLvyV4_v4",
+      "subjects": [
+        "meditation",
+        "consciousness"
+      ],
+      "channel": "Abhayagiri"
+    },
+    {
+      "title": "It Takes Time to Grow a Monk | Ajahn Nyaniko",
+      "url": "https://www.youtube.com/watch?v=sXKFnGE_iwY",
+      "subjects": [
+        "spirituality"
+      ],
+      "channel": "Abhayagiri"
+    },
+    {
+      "title": "Unraveling Dukkha | Ajahn Karunadhammo",
+      "url": "https://www.youtube.com/watch?v=xR0sPxWUkxg",
+      "subjects": [
+        "meditation",
+        "ancient-wisdom"
+      ],
+      "channel": "Abhayagiri"
+    },
+    {
+      "title": "Practice Even All Around | Ajahn Karunadhammo",
+      "url": "https://www.youtube.com/watch?v=4IVq3loLn1s",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "channel": "Abhayagiri"
+    },
+    {
+      "title": "Adaptability as the Way of Non-Suffering | Ajahn Nyaniko",
+      "url": "https://www.youtube.com/watch?v=lGF07RfBt94",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "channel": "Abhayagiri"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [
+    {
+      "title": "Dhamma talks archive",
+      "url": "https://www.abhayagiri.org/talks",
+      "description": "A large free library of recorded talks by the monastery's monks and visiting teachers, searchable by speaker and theme.",
+      "featured": true,
+      "resource_type": "workshop",
+      "subjects": [
+        "meditation",
+        "ancient-wisdom"
+      ],
+      "image": "https://www.abhayagiri.org/img/ui/header-en.jpg"
+    },
+    {
+      "title": "Free-distribution books",
+      "url": "https://www.abhayagiri.org/books",
+      "description": "Books by teachers of the forest tradition, from Ajahn Chah to the present abbots, offered free as downloads and in print.",
+      "featured": false,
+      "resource_type": "download",
+      "subjects": [
+        "ancient-wisdom",
+        "meditation"
+      ],
+      "image": "https://www.abhayagiri.org/img/ui/header-en.jpg"
+    },
+    {
+      "title": "Reflections",
+      "url": "https://www.abhayagiri.org/reflections",
+      "description": "Short written teachings from monastics of the lineage, posted regularly on the website.",
+      "featured": false,
+      "resource_type": "practice",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "image": "https://www.abhayagiri.org/img/ui/header-en.jpg"
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "channel",
+    "rank": 807,
+    "hub": null,
+    "tier_evidence": "YouTube 17,000 subscribers (YouTube Data API, 10 Nov 2026); no other counts read → ~17k → local_hero",
+    "email": "contact form",
+    "email_source": null,
+    "contact_form_url": "https://www.abhayagiri.org/contact",
+    "bio_check": "OK: no 8-word runs against 7 source(s)",
+    "flags": [
+      "Contact form only (https://www.abhayagiri.org/contact); no email published.",
+      "Regional: Redwood Valley, California, a small community north of Ukiah; recorded as published on the directions page.",
+      "Possible future listings: Ajahn Pasanno, Ajahn Nyaniko (not on Spiritpedia). Teachers file has no links.",
+      "Photo is the channel avatar, the monastery's hand-and-leaf logo.",
+      "The channel also runs a long chapter-by-chapter reading series ('The Island'); not used."
+    ],
+    "left_out": [
+      "No paid offerings: the monastery runs on donations and stays are free.",
+      "Ceremony recordings and the long reading series not used."
+    ]
+  },
+  "images_final": true
+}

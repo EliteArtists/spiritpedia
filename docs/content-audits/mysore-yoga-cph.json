@@ -1,0 +1,123 @@
+{
+  "healer": {
+    "healer_slug": "mysore-yoga-cph",
+    "location_source": "https://www.mysoreyogacph.dk/contact/",
+    "create": {
+      "name": "Mysore Yoga CPH",
+      "bio": "Mysore Yoga CPH is an Ashtanga shala in the Nørrebro district of Copenhagen, devoted to teaching the practice in the Mysore style. The name points to its two foundations: individual guidance within a group class, and its link to the city in India where the method is taught at source. It is led by Helena Hertz Melkjorsen, a former professional dancer who began yoga in 2000 and was authorised by R. Sharath Jois after repeated study in Mysore; she has also studied closely with Petri Räisänen and assisted his workshops, and a small team of experienced teachers works alongside her.\n\nDaily Mysore classes welcome complete beginners, who are taught the breathing and a short sequence from the first session and build up step by step, ideally over at least a month of two or three classes a week. A two-hour introduction workshop is offered for newcomers and returning students. Each year the shala hosts senior visiting teachers, among them Petri Räisänen, who has led an annual workshop there since 2012, as well as Adam Keen and Asta Caplan, with sessions mixing led practice, philosophy and the history of the method.",
+      "tier": "local_hero",
+      "entity_type": "school",
+      "founded_year": null,
+      "availability": "local",
+      "city": "Copenhagen",
+      "country": "Denmark",
+      "subjects": [
+        "yoga",
+        "breathwork",
+        "ancient-wisdom"
+      ],
+      "website_url": "https://www.mysoreyogacph.dk/",
+      "booking_url": "https://www.mysoreyogacph.dk/workshops/",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "info@mysoreyogacph.dk",
+      "image_urls": [
+        "https://www.mysoreyogacph.dk/wp-content/uploads/2016/06/DSC_4026-Edit-Edit-1200x801.jpg",
+        "https://www.mysoreyogacph.dk/wp-content/uploads/2017/04/DSC_4513-kopio-1200x801.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Mysore classes: memberships and class cards",
+      "url": "https://www.mysoreyogacph.dk/prices/",
+      "description": "Monthly, six- and twelve-month memberships and class cards for the daily Mysore-style classes, plus a one-month new student special; reduced prices for students, the unemployed and pensioners.",
+      "price": "Monthly Auto Pay kr. 700/600*; 1 month kr. 800/700*; 6 months 3900; 12 months 7500; 1 class kr. 130; 10 classes kr. 1200/1000*; New Student Special kr. 550 (*reduced price)",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://www.mysoreyogacph.dk/wp-content/uploads/2016/06/DSC_4026-Edit-Edit-1200x801.jpg"
+    },
+    {
+      "title": "Intro to Astanga Yoga (2-hour workshop)",
+      "url": "https://www.mysoreyogacph.dk/workshops/intro-to-astanga-yoga/",
+      "description": "A two-hour introduction for beginners and returning students to the breath, postures and gazing points, taught individually as in a Mysore class. It leads on to a discounted first month of Mysore practice. Held regularly, with dates on 14 November and 5 December.",
+      "price": "DKK 130",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga",
+        "breathwork"
+      ],
+      "image": "https://www.mysoreyogacph.dk/wp-content/uploads/2019/08/IMG_9862-411x600.jpg"
+    },
+    {
+      "title": "Adam Keen workshop May 22-23 2027",
+      "url": "https://www.mysoreyogacph.dk/workshops/adam-keen-workshop-may-22-23-2027/",
+      "description": "A weekend with visiting teacher Adam Keen on what traditional Ashtanga is: the history of the method from Krishnamacharya to Pattabhi Jois, its link to Patanjali's eight limbs, and the philosophy hidden inside asana practice.",
+      "price": "Saturday + Sunday 1300,- DKK; Saturday only 700,- DKK; Sunday only 700,- DKK",
+      "product_type": "retreat",
+      "start_date": "2027-05-22",
+      "end_date": "2027-05-23",
+      "subjects": [
+        "yoga",
+        "ancient-wisdom"
+      ],
+      "image": "https://www.mysoreyogacph.dk/wp-content/uploads/2021/12/AdamPortrait5-1-600x559.jpg"
+    },
+    {
+      "title": "Petri Räisänen workshop August 26th – 29th 2027",
+      "url": "https://www.mysoreyogacph.dk/workshops/petri-raisanen-workshop-2027/",
+      "description": "Four days with Petri Räisänen, who has taught at the shala every year since 2012: led primary series with traditional vinyasa counting and Sanskrit names, short meditations, and discussion of ahimsa, the Yoga Sutras and how teaching in the tradition has changed.",
+      "price": "Full workshop Thursday to Sunday 2100,- DKK; Friday + Saturday + Sunday 1950,- DKK; Weekend 1750,- DKK; Saturday only 800,- DKK",
+      "product_type": "retreat",
+      "start_date": "2027-08-26",
+      "end_date": "2027-08-29",
+      "subjects": [
+        "yoga",
+        "ancient-wisdom",
+        "meditation"
+      ],
+      "image": "https://www.mysoreyogacph.dk/wp-content/uploads/2020/08/IMG_6120-497x600.jpg"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "yoga-school",
+    "rank": 1016,
+    "hub": null,
+    "tier_evidence": "No YouTube channel linked from the pages read; Instagram and Facebook not fetched; no readable followers → local_hero.",
+    "email": "yes",
+    "email_source": "https://www.mysoreyogacph.dk/contact/",
+    "contact_form_url": "https://www.mysoreyogacph.dk/contact/",
+    "bio_check": "OK: no 8-word runs against 11 source(s)",
+    "flags": [
+      "Lead from the Sharath Yoga Centre authorised-teacher list (Helena Hertz Melkjorsen, Mysore Yoga CPH); facts from the school's own site (www.mysoreyogacph.dk; robots.txt allows us, Crawl-delay 3 honoured with 4-second pauses).",
+      "The contact page says classes are held at Satya Yoga (Hørsholmsgade, Copenhagen N); the shala shares that venue.",
+      "Intro workshop dates (14 Nov, 5 Dec) are recurring, so the item is undated.",
+      "Asta Caplan workshop (22-31 Oct 2027) is announced with registration not yet open; left out until it has prices.",
+      "The prices page markets company classes for stress management and wellbeing; that item is left out.",
+      "Photos: a black-and-white class with a teacher giving an assist (likely a visiting-teacher workshop), and a class seen from behind; both from the shala's own site, older uploads (2016-2017).",
+      "Possible future listings: Helena Hertz Melkjorsen (lead teacher), Petri Räisänen (visiting), Amina Mokrane, Adam Keen (visiting), Asta Caplan (visiting).",
+      "No Spiritpedia teachers are named on the site, so the teachers file has no links.",
+      "Regional: Copenhagen; Spiritpedia has few listings in Denmark."
+    ],
+    "left_out": [
+      "Company and group workshops described around stress release and therapeutic benefits: health rule.",
+      "Private classes (on the prices page only).",
+      "Asta Caplan workshop October 2027: registration not open, no price."
+    ]
+  },
+  "images_final": true
+}

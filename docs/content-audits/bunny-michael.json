@@ -1,0 +1,127 @@
+{
+  "healer": {
+    "healer_slug": "bunny-michael",
+    "location_source": null,
+    "no_public_base": "Their own site (home, retreats, book and Higher Self Healing Club pages) gives no city or country where they live or work; not guessed.",
+    "create": {
+      "name": "Bunny Michael",
+      "bio": "Bunny Michael is an artist, author and teacher whose work centres on what they call the Higher Self: the part of a person that already knows it is whole and worthy. Their own turn towards this way of seeing began in 2016, during a difficult period, and it grew out of the self-love memes they shared online before becoming a body of teaching. Alongside it they have made music, written and starred in a short web series, What Would Higher Self Do?, and hosted a talk show for Vice.\n\nA key idea in their teaching is Learned Hierarchical Beliefs, a phrase they coined for the cultural measures by which some people are judged more worthy than others. Their book Hello Higher Self, published by Little, Brown in 2024, follows those beliefs through eighteen areas of life, from creativity and work to relationships, race and pleasure, with reflective exercises along the way. They offer one-to-one Higher Self coaching over Zoom, a monthly online gathering with talks, questions and shared journaling, and the XO Higher Self advice podcast. They have also led in-person retreats on creativity and inner work, including one at the Omega Institute.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "worldwide",
+      "city": null,
+      "country": null,
+      "subjects": [
+        "spiritual-awakening",
+        "shadow-work",
+        "conscious-relationships"
+      ],
+      "website_url": "https://www.bunnymichael.com/",
+      "booking_url": "https://www.bunnymichael.com/",
+      "youtube_url": "https://www.youtube.com/@bunnymichaelhigherself",
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "info@bunnymichael.com",
+      "image_urls": [
+        "https://images.squarespace-cdn.com/content/v1/5527e9f6e4b07cd38927b9a2/1721138135230-B6V7FDKWN1CSFK5C0KQU/WYNNENEILLY-BUNNY-08122023-24-FINAL.jpg?format=1000w",
+        "https://yt3.ggpht.com/Xl0abIS_BXDGoVahklPQ16MsQGK4sJsj3PE_NMHyyGEOp-vbXqIefy4iA2KkResZcKJOZ028=s900-c-k-c0x00ffffff-no-rj"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "omega-institute",
+      "role": "instructor"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Your Breakup Is Your Awakening: the transformative power of heartbreak and how to let go",
+      "url": "https://www.youtube.com/watch?v=FwnKzT_It4Q",
+      "subjects": [
+        "conscious-relationships",
+        "spiritual-awakening"
+      ],
+      "channel": "Bunny Michael"
+    }
+  ],
+  "books": [
+    {
+      "title": "Hello Higher Self: An Outsider's Guide to Loving Yourself in a Tough World",
+      "slug": "hello-higher-self",
+      "author": "Bunny Michael",
+      "asin": "0316471569",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "Their first book, a guide to self-acceptance built around the idea of the Higher Self. It looks at how inherited ideas of worth show up in eighteen areas of life and pairs this with personal stories and written exercises.",
+      "subjects": [
+        "spiritual-awakening",
+        "shadow-work"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/0316471569.01._SCLZZZZZZZ_.jpg"
+    }
+  ],
+  "courses": [
+    {
+      "title": "Higher Self Coaching",
+      "url": "https://calendly.com/bunnymichael-info/45min",
+      "description": "One-to-one sessions on Zoom in which they help a client name the inherited beliefs behind a current struggle and look at it from the Higher Self's point of view. Each session ends with a plan for moving forward.",
+      "price": "Two 45 min coaching sessions on Zoom: $250; one 45 min session: $175",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "spiritual-awakening",
+        "life-coaching"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/5527e9f6e4b07cd38927b9a2/1721138135230-B6V7FDKWN1CSFK5C0KQU/WYNNENEILLY-BUNNY-08122023-24-FINAL.jpg?format=1000w"
+    },
+    {
+      "title": "Higher Self Healing Club",
+      "url": "https://www.bunnymichael.com/hshc",
+      "description": "A monthly online gathering for paid newsletter subscribers. Each meeting opens with a short talk on connecting with the Higher Self, then questions and two rounds of journaling and sharing, with recordings for those who miss it.",
+      "price": "$5/month or $50 for an entire year",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "spiritual-awakening",
+        "shadow-work"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/5527e9f6e4b07cd38927b9a2/a07650c5-51fd-41f8-9249-3e43cda104c0/HEALINGCLUBFLYERregs.jpg"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "pipelines-3",
+    "hub": "omega",
+    "rank": 1043,
+    "hub_url": "https://www.eomega.org/people/bunny-michael",
+    "tier_evidence": "YouTube @bunnymichaelhigherself 1,980 subscribers (Data API, 10 Nov 2026); Instagram @bunnymichael not readable without login (their own bio speaks of 'hundreds of thousands of followers', unverified) → ~1,980 readable → local_hero",
+    "email": "yes",
+    "email_source": "https://www.bunnymichael.com/",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 4 source(s)",
+    "flags": [
+      "Scope: unsure Omega name; presents as 'multi-disciplinary artist and spiritual teacher' and also as musician and coach. Kept as a teacher (book, coaching, monthly gathering), but much of their YouTube channel is music videos and Shorts; owner may want to check fit.",
+      "Tier: main account (Instagram) unreadable; own bio claims hundreds of thousands of followers, so the real total may be luminary. Not raised without readable evidence.",
+      "Omega named on: https://www.bunnymichael.com/retreats (creativity retreat at the Omega Institute, 30 June-4 July 2025, co-led with James McCrae). Omega page not opened: eomega.org returns 403 to us (6 Nov 2026).",
+      "Uses they/them on own site (the book page and bio); bio written with they/them.",
+      "Photos: site headshot (file named after photographer, Wynne Neilly) and YouTube avatar; both look like the same person but hair colour differs, so a quick human check is worthwhile.",
+      "Themes include race and queer identity alongside self-love; not partisan political commentary, so kept.",
+      "Higher Self Healing Club page describes members as working on 'wounds, trauma, relationship struggles'; kept as a support and journaling circle (not treatment), description written without condition words. Borderline: owner may drop it.",
+      "Book: ISBN-10 0316471569 from the US Amazon link on their own book page; Amazon not opened; not confirmed elsewhere.",
+      "Coaching offering links to their Calendly page (robots.txt allows it; not opened). Calendly path '45min' is linked from the 'Book 2 session package' button."
+    ],
+    "left_out": [
+      "Retreat at the Omega Institute (30 June-4 July 2025) and The Art of Your Higher Self retreat at the Art of Living Retreat Center (October, year not current): past.",
+      "YouTube music videos, the web-series trailer and Shorts (under 2 minutes) left out; only one long teaching video on their channel.",
+      "XO Higher Self podcast and Patreon: hosted off-site (Apple, Patreon), no own free page; Substack newsletter not fetched (substack off limits).",
+      "Short 'Hack for lessening social anxiety' left out under the health rule (also a Short)."
+    ]
+  },
+  "images_final": true
+}

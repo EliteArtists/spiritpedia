@@ -1,0 +1,271 @@
+{
+  "healer": {
+    "healer_slug": "bodhi-college",
+    "location_source": null,
+    "no_public_base": "Bodhi College publishes no city: it holds courses at retreat centres around Europe and online, and its contact page gives only a UK phone number and its charity numbers.",
+    "create": {
+      "name": "Bodhi College",
+      "bio": "Bodhi College is a non-sectarian Buddhist teaching charity that focuses on the Buddha's earliest teachings, as recorded in the Pali suttas, and on how they can be lived today. Its founders were Akincano Weber, John Peacock, Christina Feldman and Stephen Batchelor. The core faculty has since grown to take in Bernat Font, Martine Batchelor, River Wolton, Antonia Sumbundu, Yuka Nakamura, Jaya Rudgard and Christoph Köck, with visiting teachers alongside. It belongs to no single Buddhist school, and its teachers are encouraged to bring their own views, so students meet more than one reading of the texts.\n\nStudy and practice go together. Courses mix meditation with close reading of early discourses on subjects such as mettā, not-self, dependent arising and the history of Buddhism. Formats include silent residential retreats at venues such as ITC Naarden in the Netherlands, live online courses over several weeks, longer programmes for committed practitioners, group mentoring and self-paced e-courses, offered in English and German. Bursaries are available, several retreats meet European criteria for mindfulness teachers' annual practice, and the college also runs online sangha evenings and a series of public conversations.",
+      "tier": "local_hero",
+      "entity_type": "organisation",
+      "availability": "worldwide",
+      "city": null,
+      "country": null,
+      "subjects": [
+        "meditation",
+        "mindfulness",
+        "ancient-wisdom"
+      ],
+      "website_url": "https://bodhi-college.org/",
+      "booking_url": "https://bodhi-college.org/courses/",
+      "youtube_url": "https://www.youtube.com/@bodhicollege1708",
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": null,
+      "image_urls": [
+        "https://bodhi-college.org/wp-content/uploads/BC-Logo-Square1.png"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [
+    {
+      "title": "Am I a Buddhist? Stephen Batchelor reflects",
+      "url": "https://www.youtube.com/watch?v=zkW54t9cNgg",
+      "subjects": [
+        "ancient-wisdom",
+        "spirituality"
+      ],
+      "channel": "Bodhi College"
+    },
+    {
+      "title": "Why is Dependent Arising So Important? The bedrock of Buddhist wisdom.",
+      "url": "https://www.youtube.com/watch?v=kR1yZGrlSOw",
+      "subjects": [
+        "ancient-wisdom"
+      ],
+      "channel": "Bodhi College"
+    },
+    {
+      "title": "Opening session from our Dhammapada online course",
+      "url": "https://www.youtube.com/watch?v=JVpmTIT0j4Q",
+      "subjects": [
+        "ancient-wisdom",
+        "meditation"
+      ],
+      "channel": "Bodhi College"
+    },
+    {
+      "title": "Our teachers introduce each other",
+      "url": "https://www.youtube.com/watch?v=CgpLT8KBhWA",
+      "subjects": [
+        "meditation",
+        "ancient-wisdom"
+      ],
+      "channel": "Bodhi College"
+    },
+    {
+      "title": "Stephen Batchelor introduces himself",
+      "url": "https://www.youtube.com/watch?v=jZ9QPJ6lvhY",
+      "subjects": [
+        "ancient-wisdom",
+        "meditation"
+      ],
+      "channel": "Bodhi College"
+    },
+    {
+      "title": "Christina Feldman introduces herself",
+      "url": "https://www.youtube.com/watch?v=SS5oSAm9y-U",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "channel": "Bodhi College"
+    },
+    {
+      "title": "Martine Batchelor introduces herself",
+      "url": "https://www.youtube.com/watch?v=CljibEyeL8Q",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "channel": "Bodhi College"
+    },
+    {
+      "title": "Akincano Weber introduces himself",
+      "url": "https://www.youtube.com/watch?v=aW1W2IJxITQ",
+      "subjects": [
+        "meditation",
+        "ancient-wisdom"
+      ],
+      "channel": "Bodhi College"
+    },
+    {
+      "title": "What is Bodhi College?",
+      "url": "https://www.youtube.com/watch?v=Hxe7gUfPlHQ",
+      "subjects": [
+        "ancient-wisdom",
+        "meditation"
+      ],
+      "channel": "Bodhi College"
+    },
+    {
+      "title": "Introducing the Dhammapada",
+      "url": "https://www.youtube.com/watch?v=S2z-kHRDma8",
+      "subjects": [
+        "ancient-wisdom"
+      ],
+      "channel": "Bodhi College"
+    }
+  ],
+  "books": [],
+  "courses": [
+    {
+      "title": "The Thermals of Awakening",
+      "url": "https://bodhi-college.org/events/182-the-thermals-of-awakening/region-eu/",
+      "description": "A two-week residential course at ITC Naarden in the Netherlands with Ajahn Sucitto and Akincano Weber, following the step-by-step way the Buddha set out the path. Teacher dana is offered separately at the end.",
+      "price": "Single Room: €1890 (SOLD OUT) Twin Room: €1490",
+      "product_type": "retreat",
+      "start_date": "2026-11-29",
+      "end_date": "2026-12-13",
+      "subjects": [
+        "meditation",
+        "ancient-wisdom"
+      ],
+      "image": "https://bodhi-college.org/wp-content/uploads/bodhi-fb2.jpg"
+    },
+    {
+      "title": "The Measuring Mind: Unravelling the Dynamics of Selfing",
+      "url": "https://bodhi-college.org/events/192-the-measuring-mind-unravelling-the-dynamics-of-selfing/region-UK/",
+      "description": "A week-long online retreat with Akincano Weber and Ulla König, built around ordinary days so that sessions at either end frame practice at home and at work.",
+      "price": "Basic Rate: £89 Standard Rate: £99 Supporter Rate: £109",
+      "product_type": "retreat",
+      "start_date": "2027-01-24",
+      "end_date": "2027-01-30",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://bodhi-college.org/wp-content/uploads/bodhi-fb2.jpg"
+    },
+    {
+      "title": "Embodied Presence, Wise and Steady Heart",
+      "url": "https://bodhi-college.org/events/181-embodied-presence-wise-and-steady-heart/region-eu/",
+      "description": "A two-week silent retreat at ITC Naarden, near Amsterdam, in calm, insight and loving-kindness practice, with a one-week option.",
+      "price": "Single Room: €1690 Shared Room: €1390",
+      "product_type": "retreat",
+      "start_date": "2027-03-06",
+      "end_date": "2027-03-20",
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://bodhi-college.org/wp-content/uploads/bodhi-fb2.jpg"
+    },
+    {
+      "title": "Mettā in the Heart of Daily Life",
+      "url": "https://bodhi-college.org/events/190-metta-in-the-heart-of-daily-life/region-UK/",
+      "description": "An online week with Bernat Font and River Wolton on kindness and goodwill as a practice woven through everyday life.",
+      "price": "Basic Rate: £89 Standard Rate: £99 Supporter Rate: £109",
+      "product_type": "retreat",
+      "start_date": "2027-03-14",
+      "end_date": "2027-03-20",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://bodhi-college.org/wp-content/uploads/bodhi-fb2.jpg"
+    },
+    {
+      "title": "Buddhist Pasts and Buddhist Presents: History, Tradition and Contemporary Practice",
+      "url": "https://bodhi-college.org/events/193-buddhist-pasts-and-buddhist-presents-history-tradition-and-contemporary-practice/region-UK/",
+      "description": "Evening online sessions with Akincano Weber and John Peacock on the world the Buddha lived in and how his community grew, as a way into practising the teachings now.",
+      "price": "Basic rate: £115 Standard rate: £135 Supporter rate: £155",
+      "product_type": "course",
+      "start_date": "2027-03-22",
+      "end_date": "2027-04-12",
+      "subjects": [
+        "ancient-wisdom"
+      ],
+      "image": "https://bodhi-college.org/wp-content/uploads/bodhi-fb2.jpg"
+    },
+    {
+      "title": "Freedom with(out) Identity",
+      "url": "https://bodhi-college.org/events/199-freedom-without-identity/region-UK/",
+      "description": "A six-week online course, with Martine Batchelor among its teachers, on not-self and emptiness in the early texts and what makes up a sense of identity.",
+      "price": "Basic rate: £139 Standard rate: £159 Supporter rate: £179",
+      "product_type": "course",
+      "start_date": "2027-04-07",
+      "end_date": "2027-05-12",
+      "subjects": [
+        "ancient-wisdom",
+        "non-duality"
+      ],
+      "image": "https://bodhi-college.org/wp-content/uploads/bodhi-fb2.jpg"
+    },
+    {
+      "title": "After Buddhism and Beyond",
+      "url": "https://bodhi-college.org/events/124-after-buddhism-and-beyond-a-12-week-self-study-course-developed-by-stephen-batchelor/region-UK/",
+      "description": "A twelve-week self-study course of recorded lectures, reflections and discussions on secular dharma, developed by Stephen Batchelor and taken at one's own pace.",
+      "price": "£99.00 excl.",
+      "product_type": "download",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "ancient-wisdom",
+        "spirituality"
+      ],
+      "image": "https://bodhi-college.org/wp-content/uploads/bodhi-fb2.jpg"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Useful Links and Articles",
+      "url": "https://bodhi-college.org/community/buddhist-articles-videos-links/",
+      "description": "A reading and listening list picked by the teachers: sutta translation sites, talk archives, reading lists and recommended books on early Buddhism.",
+      "featured": true,
+      "resource_type": "download",
+      "subjects": [
+        "ancient-wisdom"
+      ],
+      "image": "https://bodhi-college.org/wp-content/uploads/bodhi-fb2.jpg"
+    },
+    {
+      "title": "Glossary",
+      "url": "https://bodhi-college.org/community/glossary/",
+      "description": "Short explanations of Pali and other Buddhist terms used on the college's courses.",
+      "featured": false,
+      "resource_type": "download",
+      "subjects": [
+        "ancient-wisdom"
+      ],
+      "image": "https://bodhi-college.org/wp-content/uploads/bodhi-fb2.jpg"
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "channel",
+    "rank": 1302,
+    "hub": null,
+    "tier_evidence": "YouTube 983 subscribers (YouTube Data API, 10 Nov 2026); no other counts read → <100k → local_hero",
+    "email": "contact form",
+    "email_source": null,
+    "contact_form_url": "https://bodhi-college.org/contact-us/",
+    "bio_check": "OK: no 8-word runs against 14 source(s)",
+    "flags": [
+      "The contact page shows its email address in an obfuscated (reversed) form; it was not decoded, so the contact form is used.",
+      "Teachers file links Stephen Batchelor and Akincano Weber as founders (About page) and Martine Batchelor and Bernat Font as core faculty (Courses and Teachers pages). Celeste Young is named as a visiting teacher, but a Celeste Young on Spiritpedia couldn't be confirmed as the same person, so she isn't linked. Possible future listings: Christina Feldman, John Peacock.",
+      "Possible editorial-stature override: founded by Stephen Batchelor and Christina Feldman.",
+      "Most recent uploads are short course trailers; the videos chosen are its longer teaching pieces and teacher introductions (2018-2024).",
+      "Photo is the college's logo; its other site photo is a group shot of teachers."
+    ],
+    "left_out": [
+      "'Meeting illness, loss, and death with awareness and care' (Jan 2027) left out under the health rule.",
+      "'A Brief History of Secular Dharma' left out: oEmbed returned 401.",
+      "Sangha Sundays, the Conversation Series and 'Not Your Typical Course on Mettā' left out: started before 13 Nov 2026.",
+      "Short promotional clips under about 2 minutes left out."
+    ]
+  },
+  "images_final": true
+}

@@ -1,0 +1,28 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 1302,
+    "healer_slug": "adelaide-ashtanga-yoga-shala"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "e5f2ddaf-31b3-4141-b3b2-3f56eeb85108",
+      "slug": "weekly-classes-and-pricing",
+      "title": "Weekly classes and pricing"
+    },
+    {
+      "table": "courses",
+      "id": "3af8f814-8179-44ba-8d28-17a3ad50f0db",
+      "slug": "infinity-plan-membership",
+      "title": "Infinity Plan membership"
+    },
+    {
+      "table": "free_resources",
+      "id": "f64269a1-2056-4d3a-9c04-5e69ce60c8dd",
+      "slug": "opening-and-closing-chants",
+      "title": "Opening and Closing Chants"
+    }
+  ],
+  "at": "2026-11-10T17:41:04.658Z"
+}

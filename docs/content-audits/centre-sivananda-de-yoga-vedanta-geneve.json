@@ -1,0 +1,134 @@
+{
+  "healer": {
+    "healer_slug": "centre-sivananda-de-yoga-vedanta-geneve",
+    "location_source": "https://www.sivananda.ch/",
+    "create": {
+      "name": "Centre Sivananda de Yoga Vedanta Genève",
+      "bio": "The Sivananda Yoga Vedanta Centre in Geneva has taught classical yoga in the city since 1975 and marked its fiftieth year in 2025. It is one of the city centres of the International Sivananda Yoga Vedanta Centres, the non-profit organisation Swami Vishnudevananda founded in 1957 in the name of his teacher, Swami Sivananda. The centre is led by Swami Sivadasananda, a long-time disciple of Vishnudevananda, and its classes are given by a team of about twenty teachers who trained on the organisation's own teacher training course. It occupies rooms on rue des Minoteries, close to the Place des Augustins.\n\nTeaching follows Vishnudevananda's five points: exercise, breathing, relaxation, diet, and positive thinking with meditation. Newcomers can try a gentle or intermediate class for a small fee and then take a four-session beginners' workshop, after which they join drop-in classes at gentle, intermediate and advanced levels, with sessions for seniors and students. There is an introductory meditation course, free group meditation with chanting and a talk on Sunday evenings, vegetarian cooking workshops, and live online classes and satsangs shared with the Paris centre. Students who want to teach are sent on to the organisation's four-week training at its ashrams in Orléans, Tyrol and India.",
+      "tier": "local_hero",
+      "entity_type": "school",
+      "availability": "local_online",
+      "founded_year": 1975,
+      "city": "Geneva",
+      "country": "Switzerland",
+      "subjects": [
+        "yoga",
+        "meditation",
+        "breathwork"
+      ],
+      "website_url": "https://www.sivananda.ch/",
+      "booking_url": "https://www.sivananda.ch/horaire-des-cours/",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "geneva@sivananda.net",
+      "image_urls": [
+        "https://www.sivananda.ch/wp-content/uploads/2019/06/pranayama-jetdeau-P1080644.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Yoga pour débutants (beginners' workshops)",
+      "url": "https://www.sivananda.ch/stages-de-yoga/yoga-pour-debutants/",
+      "description": "Four sessions of an hour and a half in small groups covering the basic postures, breathing exercises and relaxation, with an introduction to the five points of yoga. The pass is valid for three months, with sessions on Monday and Wednesday evenings.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga",
+        "breathwork"
+      ],
+      "image": "https://www.sivananda.ch/wp-content/uploads/2019/06/pranayama-jetdeau-P1080644.jpg"
+    },
+    {
+      "title": "Cours d'essai (trial class)",
+      "url": "https://www.sivananda.ch/comment-commencer/cours-dessai/",
+      "description": "A single gentle or intermediate class chosen from the timetable, for anyone who wants to see how the centre teaches before signing up.",
+      "price": "10chf",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://www.sivananda.ch/wp-content/uploads/2022/07/2013_08_0016_red-L-1.jpg"
+    },
+    {
+      "title": "Stage de méditation (introduction to meditation)",
+      "url": "https://www.sivananda.ch/meditation-geneve/stage-de-meditation/",
+      "description": "A beginners' course on concentration and guided meditation, covering the twelve steps of meditation and the use of mantras. It is open to students who have completed the first beginners' course.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://www.sivananda.ch/wp-content/uploads/2019/06/pranayama-jetdeau-P1080644.jpg"
+    },
+    {
+      "title": "Atelier de cuisine végétarienne: Saveurs sacrées de l'Inde",
+      "url": "https://www.sivananda.ch/cours-de-cuisine/",
+      "description": "An evening cooking workshop on the yogic vegetarian diet, with an introduction to its principles, a demonstration of simple Indian recipes and a shared tasting. Further dates follow in 2027.",
+      "price": "50chf",
+      "product_type": "course",
+      "start_date": "2026-11-26",
+      "end_date": "2026-11-26",
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://www.sivananda.ch/wp-content/uploads/2019/06/pranayama-jetdeau-P1080644.jpg"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Méditation de groupe et satsang (free group meditation)",
+      "url": "https://www.sivananda.ch/meditation-geneve/meditation-de-groupe/",
+      "description": "A free Sunday evening gathering at the centre: half an hour each of silent meditation, mantra chanting and a talk on yoga philosophy. Free online satsangs also run in the morning and evening.",
+      "featured": true,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "image": "https://www.sivananda.ch/wp-content/uploads/2022/03/meditation-gruppe.jpg"
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "yoga-school",
+    "rank": 757,
+    "hub": null,
+    "tier_evidence": "No YouTube channel linked on the centre's pages; Facebook and Instagram not fetched; no readable followers → local_hero",
+    "email": "yes",
+    "email_source": "https://www.sivananda.ch/",
+    "contact_form_url": "https://www.sivananda.ch/formulaire-de-contact/",
+    "bio_check": "OK: no 8-word runs against 13 source(s)",
+    "flags": [
+      "Lead from the Sivananda organisation's own centre list (sivananda.org/locations/centres/; its link sivananda.org/geneva 404s). The site sivananda.ch was named for the centre in a web search result; sivananda.ch redirects to www.sivananda.ch, whose robots.txt (* group) disallows only wp-admin.",
+      "Email geneva@sivananda.net is the centre's office inbox, shown in the site footer and on the trial-class page; there is also a contact form.",
+      "Price list page (/prix/) shows only bank details in its readable HTML; prices are 'Contact for pricing' apart from the trial class and cooking workshop.",
+      "One photo only: students practising alternate-nostril breathing by the Jet d'Eau, which clearly places it in Geneva. Studio photos on the site (cobra pose by a window, a group meditation room) could be stock shared across Sivananda sites, so they were not used.",
+      "Teacher training is not held in Geneva; the centre's training page lists the organisation's TTCs in Rudraprayag, Orléans and Reith, so no training item is listed here.",
+      "Possible future listings: Swami Sivadasananda (director).",
+      "No Spiritpedia teachers are named on the site, so the teachers file has no links.",
+      "Regional: Geneva; Spiritpedia has few listings in French-speaking Switzerland."
+    ],
+    "left_out": [
+      "La psychologie du yoga (21 and 28 Nov 2026): titled and described around mental health and depression (health rule).",
+      "Pranayama workshop (7 and 14 Nov 2026): started before 12 Nov.",
+      "Yoga prénatal and seniors classes: pregnancy/health framing.",
+      "Cooking workshops on 17 Apr 2027 ('antioxidant foods', immune system): health claim.",
+      "Small retreats on the Salève: no dates published.",
+      "Retreats in Orléans, Reith, Pill, Mittersill, Málaga and India: other venues of the organisation."
+    ]
+  },
+  "images_final": true
+}

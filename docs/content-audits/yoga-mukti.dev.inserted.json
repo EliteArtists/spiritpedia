@@ -1,0 +1,82 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 1317,
+    "healer_slug": "yoga-mukti"
+  },
+  "rows": [
+    {
+      "table": "videos",
+      "id": 9548,
+      "slug": "curso-introductorio-al-yoga-iyengar-semana-1-clase-1",
+      "title": "Curso Introductorio al Yoga Iyengar Semana 1 - Clase 1"
+    },
+    {
+      "table": "videos",
+      "id": 9549,
+      "slug": "curso-introductorio-al-yoga-iyengar-semana-2-clase-1",
+      "title": "Curso Introductorio al Yoga Iyengar Semana 2 - Clase 1"
+    },
+    {
+      "table": "videos",
+      "id": 9550,
+      "slug": "curso-introductorio-al-yoga-iyengar-semana-3-clase-1",
+      "title": "Curso Introductorio al Yoga Iyengar Semana 3 - Clase 1"
+    },
+    {
+      "table": "videos",
+      "id": 9551,
+      "slug": "curso-introductorio-al-yoga-iyengar-semana-4-clase-1",
+      "title": "Curso Introductorio al Yoga Iyengar Semana 4 - Clase 1"
+    },
+    {
+      "table": "videos",
+      "id": 9552,
+      "slug": "curso-pranayama-para-principiantes-clase1",
+      "title": "Curso pranayama para Principiantes Clase1"
+    },
+    {
+      "table": "videos",
+      "id": 9553,
+      "slug": "clase-general-con-clau-diaz-boitano",
+      "title": "Clase general con Clau Díaz Boitano"
+    },
+    {
+      "table": "videos",
+      "id": 9554,
+      "slug": "light-on-pranayama-1",
+      "title": "Light on Pranayama 1"
+    },
+    {
+      "table": "videos",
+      "id": 9555,
+      "slug": "charla-6-8-una-vida-de-luz-biografia-de-bks-iyengar",
+      "title": "Charla 6/8 Una vida de Luz, Biografía de BKS Iyengar"
+    },
+    {
+      "table": "videos",
+      "id": 9556,
+      "slug": "clase-grupal-profes-del-mukti-unidos-por-india",
+      "title": "Clase grupal profes del Mukti Unidos por India"
+    },
+    {
+      "table": "courses",
+      "id": "13036d0c-ecf1-41dd-aaec-0397a8e55154",
+      "slug": "planes-y-valores-monthly-plans-nunoa-las-condes-and-online",
+      "title": "Planes y Valores (monthly plans, Ñuñoa, Las Condes and online)"
+    },
+    {
+      "table": "courses",
+      "id": "a5c306f4-9bfd-4d39-b756-7aa9fd345f47",
+      "slug": "formacion-de-profesores-iyengar-teacher-mentorship",
+      "title": "Formación de profesores (Iyengar teacher mentorship)"
+    },
+    {
+      "table": "free_resources",
+      "id": "ffa7284a-f033-4ddc-bb60-a85f1ca8e89c",
+      "slug": "clases-gratuitas-en-youtube",
+      "title": "Clases gratuitas en YouTube"
+    }
+  ],
+  "at": "2026-11-10T18:21:25.338Z"
+}

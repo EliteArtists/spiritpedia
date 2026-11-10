@@ -1,0 +1,134 @@
+{
+  "healer": {
+    "healer_slug": "sivananda-yoga-vedanta-centre-thiruvananthapuram",
+    "location_source": "https://sivananda.org.in/trivandrum/",
+    "create": {
+      "name": "Sivananda Yoga Vedanta Centre Thiruvananthapuram",
+      "bio": "The Sivananda Yoga Vedanta Centre in Thiruvananthapuram, Kerala's capital, has taught classical hatha yoga since 1986 as one of the Indian city centres of the International Sivananda Yoga Vedanta Centres. It sits on Airport Road in the Fort area, a few minutes from the Sree Padmanabhaswamy Temple, and belongs to the same family as the organisation's Dhanwantari Ashram at Neyyar Dam, outside the city. Its airy practice halls have tiled floors and carved wooden windows, and its teachers trained within the Sivananda lineage of Swami Sivananda and Swami Vishnudevananda.\n\nTeaching follows Vishnudevananda's five points of yoga and is set out in clear stages. A free trial class runs every Sunday. Newcomers then take a six-week beginners' course of eighteen classes, or a version spread over four weekends, learning relaxation, pranayama, the sun salutation and the twelve basic postures. After that, students can join the daily morning and evening open classes on drop-in, ten-class or monthly passes. A five-day meditation course built on Vishnudevananda's book Meditation and Mantras is held most months, and short Sunday workshops explore single themes such as balancing postures or yogic cleansing. There are also children's classes at weekends, and students who want to teach are pointed towards the Sivananda Teachers' Training Course.",
+      "tier": "local_hero",
+      "entity_type": "school",
+      "availability": "local",
+      "founded_year": 1986,
+      "city": "Thiruvananthapuram, Kerala",
+      "country": "India",
+      "subjects": [
+        "yoga",
+        "meditation",
+        "breathwork"
+      ],
+      "website_url": "https://sivananda.org.in/trivandrum/",
+      "booking_url": "https://sivananda.org.in/trivandrum/courses/",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "trivandrum@sivananda.org.in",
+      "image_urls": [
+        "https://sivananda.org.in/trivandrum/wp-content/uploads/2026/08/sivananda-open-yoga-classes-trivandrum.webp",
+        "https://sivananda.org.in/trivandrum/wp-content/uploads/2026/08/sivananda-yoga-trivandrum-ashram-yoga-class.webp"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Beginners’ Course",
+      "url": "https://sivananda.org.in/trivandrum/courses/#beginners-course",
+      "description": "The centre's main introduction to classical Sivananda hatha yoga: eighteen ninety-minute classes over six weeks covering Yoga 1 and Yoga 2, plus ten open classes for repetition. It moves from relaxation and breathing to the twelve basic postures and the sun salutation. New groups start several times a month, including a ladies' morning batch.",
+      "price": "Indian: INR 5,000 | Foreigner: INR 8,000",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga",
+        "breathwork"
+      ],
+      "image": "https://sivananda.org.in/trivandrum/wp-content/uploads/2026/08/Sivananda_TrivandrumLogo.webp"
+    },
+    {
+      "title": "Weekend Beginners’ Course",
+      "url": "https://sivananda.org.in/trivandrum/courses/#beginners-weekend-course",
+      "description": "The same beginners' curriculum taught over four consecutive weekends, with longer sessions and time for questions, for people who cannot attend on weekdays.",
+      "price": "Indian: INR 4,000 | Foreigner: INR 5,000",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://sivananda.org.in/trivandrum/wp-content/uploads/2026/08/Sivananda_TrivandrumLogo.webp"
+    },
+    {
+      "title": "Meditation Course",
+      "url": "https://sivananda.org.in/trivandrum/courses/#meditation-course",
+      "description": "Five evening classes on Swami Sivananda's twelve steps to meditation: preparing the posture, calming the breath, concentration and mantra repetition, and setting up a daily routine. A copy of Meditation and Mantras by Swami Vishnudevananda is included.",
+      "price": "Indian: INR 2,500 | Foreigner: INR 3,500",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "ancient-wisdom"
+      ],
+      "image": "https://sivananda.org.in/trivandrum/wp-content/uploads/2026/08/Sivananda_TrivandrumLogo.webp"
+    },
+    {
+      "title": "Open Class – One Month Validity",
+      "url": "https://sivananda.org.in/trivandrum/classes/",
+      "description": "A month of daily morning and evening open classes for students who have finished the beginners' course, each built around breathing practice, sun salutations, the twelve classical asanas and a long final relaxation. Drop-in and ten-class passes are on the same page.",
+      "price": "Indian: INR 1,500 | Foreigner: INR 3,000",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://sivananda.org.in/trivandrum/wp-content/uploads/2026/08/Sivananda_TrivandrumLogo.webp"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Free Trial Yoga Class",
+      "url": "https://sivananda.org.in/trivandrum/classes/#free-trial",
+      "description": "A gentle introductory class every Sunday with simple postures, breathing and relaxation, free for members and non-members, for anyone thinking of joining the beginners' course. Booking ahead is required.",
+      "featured": true,
+      "resource_type": "practice",
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://sivananda.org.in/trivandrum/wp-content/uploads/2026/08/Sivananda_TrivandrumLogo.webp"
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "yoga-school",
+    "rank": 719,
+    "hub": null,
+    "tier_evidence": "No YouTube channel linked on the centre's pages; Instagram and Facebook not fetched (the footer links point to the South Delhi centre's accounts); no readable followers → local_hero",
+    "email": "yes",
+    "email_source": "https://sivananda.org.in/trivandrum/",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 7 source(s)",
+    "flags": [
+      "Lead from the Sivananda organisation's own centre list (sivananda.org/locations/centres/); its link sivananda.org/trivandrum returns 404. The centre's pages are on sivananda.org.in (the organisation's India site), found as a link on that site's home page; robots.txt allows us (including a group naming ClaudeBot and Claude-User with Allow: /).",
+      "The India site's Trivandrum pages reuse a template from the South Delhi (Nataraja) centre: the About page says 'Located at the heart of New Delhi', the contact page title names the Delhi centre and the footer social links are South Delhi's. Base taken from the Trivandrum address, phone and email in the page footer.",
+      "The free-trial and course fragments (#free-trial, #beginners-course etc.) are anchors on single pages; the course anchors come from the site's own menu, '#free-trial' is our label for the section on the classes page.",
+      "The home page's student quotes look generic; not used.",
+      "Teacher training is not run in Thiruvananthapuram on the pages read; the About page says students go on to the Teachers' Training Course (held at the organisation's ashrams, such as Neyyar Dam).",
+      "Email trivandrum@sivananda.org.in is the centre's office inbox (mailto link in the footer); there is no contact form on its pages.",
+      "Possible future listings: none named.",
+      "No Spiritpedia teachers are named on the centre's pages, so the teachers file has no links.",
+      "Regional: Thiruvananthapuram, Kerala; Spiritpedia has few listings in South India outside Mysuru."
+    ],
+    "left_out": [
+      "Pregnancy classes, gentle/special-needs classes and kids' summer programme: health framing or outside the core offer.",
+      "Shat Kriya (cleansing) and Deep Relaxation workshops: framed on respiratory health, digestion, detox, sleep and anxiety (health rule); Balancing Asanas workshop (15 Nov 2026): one-off Sunday class, left out as minor.",
+      "Yoga Vacation / accommodation page: not opened.",
+      "The meditation course page mentions reducing anxiety; not repeated in the item."
+    ]
+  },
+  "images_final": true
+}

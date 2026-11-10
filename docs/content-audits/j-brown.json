@@ -1,0 +1,214 @@
+{
+  "healer": {
+    "healer_slug": "j-brown",
+    "location_source": "https://www.jbrownyoga.com/contact",
+    "create": {
+      "name": "J. Brown",
+      "bio": "Based in Brooklyn, New York, where he founded Abhyasa Yoga Center, J. Brown teaches yoga, writes and hosts a podcast. He came to yoga while grieving his mother's death and trained first in Ashtanga and power vinyasa, then in an Iyengar-based approach, studying with teachers including Alison West and Richard Freeman, before settling on a slower, breath-led way of practising drawn from the tradition of T.K.V. Desikachar. His short motto is that slower is stronger and gentle is advanced, and he has taught for more than twenty-five years.\n\nHe now teaches weekly classes that are held in person and streamed live, runs a weekly discussion group for teachers, and leads a mentoring-based teacher training with 200, 300 and 500-hour routes. He is best known for J. Brown Yoga Talks, a long-running interview podcast that reached its 500th episode in 2026, in which he talks at length with yoga teachers, scholars and practitioners about philosophy, practice and the yoga business; full episodes also appear on his YouTube channel. His monthly essays, written over a decade, are collected on his blog and read aloud in a second show, Yoga Thoughts.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local_online",
+      "city": "Brooklyn, New York",
+      "country": "United States",
+      "subjects": [
+        "yoga",
+        "breathwork",
+        "meditation"
+      ],
+      "website_url": "https://www.jbrownyoga.com/",
+      "booking_url": "https://www.jbrownyoga.com/live-class",
+      "youtube_url": "https://www.youtube.com/@jbrownyogavideo",
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "j@jbrownyoga.com",
+      "image_urls": [
+        "https://images.squarespace-cdn.com/content/v1/52b6472ee4b056e96535210c/1733538892647-N8PVB45I94AEO3UM9PHY/jby-header-2024.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [
+    {
+      "title": "Rolf Gates - \"To Meet and Hold Suffering Wisely\"",
+      "url": "https://www.youtube.com/watch?v=iJDhfthaVnA",
+      "subjects": [
+        "yoga",
+        "meditation"
+      ],
+      "channel": "J. Brown Yoga"
+    },
+    {
+      "title": "Sarah Powers - \"An Inner Lens of Listening to Heart-Mind\"",
+      "url": "https://www.youtube.com/watch?v=iNPsyrPKYHQ",
+      "subjects": [
+        "yoga",
+        "meditation"
+      ],
+      "channel": "J. Brown Yoga"
+    },
+    {
+      "title": "David Swenson - \"Broke Hippies and Traditional Knowledge\"",
+      "url": "https://www.youtube.com/watch?v=wXFBDB1zjiw",
+      "subjects": [
+        "yoga"
+      ],
+      "channel": "J. Brown Yoga"
+    },
+    {
+      "title": "Coby Kozlowski - \"Kripalu Vinyasa and One Degree Revolution\"",
+      "url": "https://www.youtube.com/watch?v=CNR2ZLBXZx8",
+      "subjects": [
+        "yoga"
+      ],
+      "channel": "J. Brown Yoga"
+    },
+    {
+      "title": "J. Brown - \"10 Years, 500 Episodes, Challenges Ahead\"",
+      "url": "https://www.youtube.com/watch?v=tyohUtjMweM",
+      "subjects": [
+        "yoga"
+      ],
+      "channel": "J. Brown Yoga"
+    },
+    {
+      "title": "Anna Taylor - \"Teaching Presence More Than Poses\"",
+      "url": "https://www.youtube.com/watch?v=RfpN-co31pY",
+      "subjects": [
+        "yoga",
+        "mindfulness"
+      ],
+      "channel": "J. Brown Yoga"
+    },
+    {
+      "title": "Jahnavi (Claire) Missingham - \"Holding True to What You Know\"",
+      "url": "https://www.youtube.com/watch?v=-U9D5bu32OI",
+      "subjects": [
+        "yoga"
+      ],
+      "channel": "J. Brown Yoga"
+    },
+    {
+      "title": "Paul Bramadat - \"Skeptical Scholar, Devoted Practitioner\"",
+      "url": "https://www.youtube.com/watch?v=ChUU7iSnPSg",
+      "subjects": [
+        "yoga",
+        "spirituality"
+      ],
+      "channel": "J. Brown Yoga"
+    },
+    {
+      "title": "Aimee Echo - \"Mysore Lives in the Spirit of its Teachers\"",
+      "url": "https://www.youtube.com/watch?v=H8cWFhq8YOM",
+      "subjects": [
+        "yoga"
+      ],
+      "channel": "J. Brown Yoga"
+    }
+  ],
+  "books": [],
+  "courses": [
+    {
+      "title": "Live Class Subscription",
+      "url": "https://www.jbrownyoga.com/live-class",
+      "description": "Unlimited access to J. Brown's weekly classes, taught in person in Brooklyn and streamed at the same time, with a day's replay of the latest week. Slow, breath-led sessions open to students and teachers.",
+      "price": "$15/mo",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga",
+        "breathwork"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/52b6472ee4b056e96535210c/1569003874307-1XDTX40A3EVLA0DRZ9V3/J%2Bsmiling.jpg"
+    },
+    {
+      "title": "Teacher Training: 'Gentle is the New Advanced'",
+      "url": "https://www.jbrownyoga.com/training",
+      "description": "A rolling-admission deep-learning programme that mixes one-to-one mentoring, group discussion and a large on-demand library, leading to 200, 300 or 500-hour certification. Classes run live online and in person.",
+      "price": "$220/month",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga",
+        "breathwork"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/52b6472ee4b056e96535210c/1691544585580-9NENACL7NTYEB0TFLGPT/workshop-crop.jpg"
+    },
+    {
+      "title": "Yoga Talks Premium",
+      "url": "https://www.jbrownyoga.com/premium",
+      "description": "A listener subscription that opens the complete archive of full-length Yoga Talks conversations, most running ninety minutes or more, and helps fund the show.",
+      "price": "$5/mo",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/52b6472ee4b056e96535210c/1587770116938-YL5V11995HVDSF89S9OT/jby-people-header.jpg"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "J. Brown Yoga Talks podcast",
+      "url": "https://www.jbrownyoga.com/yoga-talks-podcast",
+      "description": "A weekly long-form interview show in which J. Brown talks with yoga teachers, scholars and practitioners about practice, teaching and the yoga world. Free episodes are published online.",
+      "featured": true,
+      "resource_type": "workshop",
+      "subjects": [
+        "yoga"
+      ],
+      "image": "http://static1.squarespace.com/static/52b6472ee4b056e96535210c/t/5f18cb3a96eae246cde2b8af/1595460414141/jby-podcast-header2.jpg?format=1500w"
+    },
+    {
+      "title": "Yoga Thoughts podcast",
+      "url": "https://www.jbrownyoga.com/yoga-thoughts-podcast",
+      "description": "His monthly blog essays read aloud by J. Brown himself, about ten years of writing on practice and on yoga's path into the mainstream. Free to listen to.",
+      "featured": false,
+      "resource_type": "workshop",
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/52b6472ee4b056e96535210c/1587924738147-SZFTE3PFU7C8RU0WHJTX/jby-blogcast-header3.jpg"
+    },
+    {
+      "title": "J. Brown's blog",
+      "url": "https://www.jbrownyoga.com/blog",
+      "description": "A decade of monthly essays on yoga practice, teaching and the yoga industry, free to read.",
+      "featured": false,
+      "resource_type": "workshop",
+      "subjects": [
+        "yoga"
+      ],
+      "image": "http://static1.squarespace.com/static/52b6472ee4b056e96535210c/t/60201eac83459e1ff54be111/1612717743968/jby-blog-header.jpg?format=1500w"
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "channel",
+    "rank": 617,
+    "hub": null,
+    "held": "Health framing for the owner to decide: his home page describes his teaching as 'a breath-centered therapeutic approach ... geared towards feeling well and a lessening of pain', and the channel description says the practice is 'based in healing' and eases 'the pains of life'. The plan itself names no condition and describes only the practice and the podcast, but under the rule that a teacher whose work is mainly condition-led is skipped, this needs the owner's call.",
+    "tier_evidence": "YouTube 1,270 subscribers (YouTube Data API, 10 Nov 2026); no other counts read (X account mentioned on his contact page, never fetched) → ~1.3k → local_hero",
+    "email": "yes",
+    "email_source": "https://www.jbrownyoga.com/training",
+    "contact_form_url": "https://www.jbrownyoga.com/contact",
+    "bio_check": "OK: no 8-word runs against 9 source(s)",
+    "flags": [
+      "Channel is one person (J. Brown Yoga), so this is an individual listing with youtube_url set.",
+      "Possible editorial-stature override: J. Brown Yoga Talks is a long-running, widely known yoga podcast (500+ episodes); YouTube views are tiny (tens per episode) because the show lives mainly on audio platforms. Not raised.",
+      "Photo identity: the 2024 header image on his about page shows one man, taken to be J. Brown (no caption). The YouTube avatar is a Sri Yantra logo and was not used. Squarespace serves the image as WebP.",
+      "Base: his contact page says to visit him at Abhyasa Yoga Center in Brooklyn, NY, and class times are New York time; the live-class page says classes are both in person and streamed.",
+      "Prices as published, with no currency code on the page.",
+      "Spiritpedia teachers on his channel: rolf-gates, coby-kozlowski, noah-maze."
+    ],
+    "left_out": [
+      "Episodes on psychedelic healing ('Holding Space for Psychedelic Healing'), acupuncture and a politics-titled episode left out.",
+      "Discussion group and on-demand workshop modules not listed (prices not read).",
+      "Books: none found on his own pages."
+    ]
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 1200,
+    "healer_slug": "radhule-weininger"
+  },
+  "rows": [
+    {
+      "table": "videos",
+      "id": 8874,
+      "slug": "the-deep-resilience-program-session-1-step-1",
+      "title": "The Deep Resilience Program: Session 1, Step 1"
+    },
+    {
+      "table": "videos",
+      "id": 8875,
+      "slug": "the-deep-resilience-program-session-2-step-2",
+      "title": "The Deep Resilience Program: Session 2, Step 2"
+    },
+    {
+      "table": "videos",
+      "id": 8876,
+      "slug": "step-6-luminous-resilience",
+      "title": "Step 6 Luminous resilience"
+    },
+    {
+      "table": "books",
+      "id": 2411,
+      "slug": "heart-medicine-weininger",
+      "title": "Heart Medicine"
+    },
+    {
+      "table": "books",
+      "id": 2412,
+      "slug": "heartwork-weininger",
+      "title": "Heartwork"
+    },
+    {
+      "table": "courses",
+      "id": "7b8c0d50-9bb4-4fe6-83e5-352866545fc3",
+      "slug": "effortless-mindfulness-and-sustainable-compassion-half-day-retreat",
+      "title": "Effortless Mindfulness and Sustainable Compassion: Half-Day Retreat"
+    },
+    {
+      "table": "free_resources",
+      "id": "663c8c90-b483-4c96-ae39-52efb0cd3163",
+      "slug": "mindful-heart-programs-recorded-meditations",
+      "title": "Mindful Heart Programs Recorded Meditations"
+    },
+    {
+      "table": "free_resources",
+      "id": "a14c442b-da18-4532-a2e5-d0787090a769",
+      "slug": "mindful-heart-programs-daily-online-meditations",
+      "title": "Mindful Heart Programs Daily Online Meditations"
+    },
+    {
+      "table": "free_resources",
+      "id": "0aa95e71-a949-4f5c-b1d3-4de107db76af",
+      "slug": "heart-medicine-audio-practices",
+      "title": "Heart Medicine Audio Practices"
+    },
+    {
+      "table": "hub_teachers",
+      "id": "160325b2-9261-4837-a2c0-8e3c8dd99a49",
+      "title": "radhule-weininger teaches at Omega Institute"
+    }
+  ],
+  "at": "2026-11-10T13:20:00.279Z"
+}

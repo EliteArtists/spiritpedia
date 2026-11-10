@@ -1,0 +1,171 @@
+{
+  "healer": {
+    "healer_slug": "george-lizos",
+    "location_source": "https://georgelizos.com/about-me",
+    "no_public_base": "His site (home, about, contact, work-with-me, offerings) gives no current city or country; it says only that he grew up in Cyprus. Teaching is online.",
+    "create": {
+      "name": "George Lizos",
+      "bio": "George Lizos is a Greek Cypriot spiritual teacher and author whose work centres on energy protection, intuition and a grounded, action-led approach to manifestation. Raised on Cyprus, he spent his late teens and early twenties studying energy work, psychic development, divination and past-life regression, and he also serves as a priest of the Hellenic Ethnic Religion, the revived tradition of the ancient Greek gods. Alongside his spiritual studies he holds degrees in geography, psychology and management. He left his previous job at the end of 2017 to teach full time.\n\nHe has written five books. Be The Guru and Lightworkers Gotta Work deal with self-reliance and finding a purpose; Protect Your Light sets out a step-by-step practice for clearing and shielding one's energy, including online; Secrets of Greek Mysticism presents the Greek deities from the standpoint of a practising believer; and Ancient Manifestation Secrets draws on Greek and Egyptian philosophy for its seven laws of manifestation. His teaching now runs mainly online, through a monthly community called the Energy Work Membership, a self-paced intuition course, a periodic practitioner training and private sessions, and he hosts the Energy Work podcast, which used to be called The Lit Up Lightworker.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "worldwide",
+      "city": null,
+      "country": null,
+      "subjects": [
+        "energy-medicine",
+        "manifestation",
+        "ancient-wisdom"
+      ],
+      "website_url": "https://georgelizos.com/",
+      "booking_url": "https://georgelizos.com/work-with-me",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": null,
+      "image_urls": [
+        "https://georgelizos.com/wp-content/uploads/2023/11/IMG_0395-1280x1920.jpg",
+        "https://georgelizos.com/wp-content/uploads/2026/08/george-lizos-times-square-scaled.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [
+    {
+      "title": "Secrets of Greek Mysticism",
+      "slug": "secrets-of-greek-mysticism",
+      "author": "George Lizos",
+      "asin": "1642970522",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "An introduction to Hellenic polytheism written from the inside, presenting the Greek gods and goddesses as living deities rather than myths, with the beliefs and rituals that go with them.",
+      "subjects": [
+        "ancient-wisdom",
+        "mysticism"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1642970522.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "Protect Your Light",
+      "slug": "protect-your-light",
+      "author": "George Lizos",
+      "asin": "1642970433",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "A practical system for clearing, shielding and strengthening personal energy, with a foreword by Diana Cooper; it also covers protecting one's energy on social media.",
+      "subjects": [
+        "energy-medicine",
+        "spirituality"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1642970433.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "Lightworkers Gotta Work",
+      "slug": "lightworkers-gotta-work",
+      "author": "George Lizos",
+      "asin": "1913479129",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "A handbook for spiritually minded people who want to find and act on a sense of purpose, working through fear and doubt to make practical change in the world.",
+      "subjects": [
+        "soul-purpose",
+        "spirituality"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1913479129.01._SCLZZZZZZZ_.jpg"
+    }
+  ],
+  "courses": [
+    {
+      "title": "Energy Work Membership",
+      "url": "https://georgelizos.com/energy-work-membership",
+      "description": "His online membership community for energy workers and empaths, with monthly teaching on clearing, protecting and working with energy and on manifestation.",
+      "price": "£22 GBP a month, or £237 GBP a year",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "energy-medicine",
+        "manifestation"
+      ],
+      "image": "https://georgelizos.com/wp-content/uploads/2025/03/eneegy-work-membership-mighty-networks.png"
+    },
+    {
+      "title": "Intuition Mastery School®",
+      "url": "https://georgelizos.com/intuition-mastery-school",
+      "description": "A self-paced online course in psychic and intuitive development, in five modules, with a certificate of completion and a members' group.",
+      "price": "£397 GBP",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "spirituality",
+        "channelled-teachings"
+      ],
+      "image": "https://georgelizos.com/wp-content/uploads/2021/03/unnamed-1.png"
+    },
+    {
+      "title": "The Next Chapter",
+      "url": "https://georgelizos.com/the-next-chapter",
+      "description": "Three months of private mentoring for people who feel they have outgrown their current life and want to make a change, combining his intuitive work with coaching. He takes three clients at a time.",
+      "price": "£4,997 GBP",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "life-coaching",
+        "soul-purpose"
+      ],
+      "image": "https://georgelizos.com/wp-content/uploads/2026/10/The-Next-Chapter-Logo.png"
+    },
+    {
+      "title": "Psychic Reading",
+      "url": "https://georgelizos.com/product/psychic-reading",
+      "description": "A private one-to-one psychic reading session booked through his site.",
+      "price": "£200 GBP",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "spirituality"
+      ],
+      "image": "https://georgelizos.com/wp-content/uploads/2019/06/psychic-reading.png"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "pipelines-3",
+    "hub": "omega",
+    "rank": 330,
+    "hub_url": "https://www.eomega.org/people/george-lizos",
+    "tier_evidence": "No readable follower counts: no YouTube channel linked from his site; Instagram/Facebook not read (login walls). His about page claims a community of 30,000+ energy workers (not a follower count). Total 0 readable → local_hero (counts unreadable).",
+    "email": "contact form",
+    "email_source": null,
+    "contact_form_url": "https://georgelizos.com/contact-me",
+    "bio_check": "OK: no 8-word runs against 15 source(s)",
+    "flags": [
+      "Tier borderline: five books with a large US/UK publisher, podcast, Times Square billboard; follower counts unreadable, could be luminary.",
+      "Health borderline: he describes himself as a 'psychic healer' and 'certified Trauma Specialist', and pages speak of healing 'from the inside out' and 'trauma-informed practices'. Descriptions avoid healing claims; Fear Buster and Psychic Clearing sessions and the Psychic Healing Practitioner Course left out.",
+      "His site and podcast page also promote Can't Host, his podcast about gay men's sex and relationships (adult content). Not listed; owner may want to look.",
+      "About page describes a suicide attempt in his teens; not used in the bio.",
+      "No Omega mention found on his own site (home, about, podcast, offerings, books, contact); no hub link added.",
+      "No public email; contact form only.",
+      "Books: ISBNs from his own book pages (georgelizos.com/greekmysticism, /protectyourlight, /lightwork), not confirmed elsewhere.",
+      "Photos from his own site: a 2023 portrait and a 2026 Times Square photo where he stands in front of a billboard of himself; identity clear."
+    ],
+    "left_out": [
+      "Ancient Manifestation Secrets: only a 979 ISBN-13 (9798888500903) and no ISBN-10/ASIN on his page; cannot convert.",
+      "Be The Guru: no book page or ISBN found on his site.",
+      "Psychic Healing Practitioner Course: enrolment closed until 2027; also borderline on the health rule.",
+      "Fear Buster, Psychic Clearing and Spiritual Business Mentoring sessions (£200 each): Fear Buster and clearing borderline on health; mentoring is business coaching.",
+      "Free guides (life purpose workbook, intuition starter kit, negative-energy guide): email-signup pop-ups with no page of their own.",
+      "Energy Work podcast: no own page URL beyond Apple embed; Apple not opened.",
+      "YouTube: no channel linked from his site; not searched."
+    ]
+  },
+  "images_final": true
+}

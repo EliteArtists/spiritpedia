@@ -279,9 +279,7 @@ URL in `sprint.contact_form_url`. Neither → skip. Record the contact form's
 URL in `sprint.contact_form_url` even when an email is found, if there is one
 (ingestion now saves both, with the email's page, on the listing). A clickable
 mailto button counts as published; an address only in hidden page data, a meta
-tag or shown after sending a form does not. A fan-club inbox doesn't count. Cloudflare-obfuscated
-addresses (`/cdn-cgi/l/email-protection#…`) may be decoded (XOR with the first
-byte); that is published, not guessed. An address found only in hidden page data
+tag or shown after sending a form does not. A fan-club inbox doesn't count. Cloudflare-protected or otherwise obfuscated addresses (`/cdn-cgi/l/email-protection#…`, script-built) are NEVER decoded (owner, 10 Nov 2026): use the contact form, or hold the plan. An address found only in hidden page data
 (JSON, form settings, scripts) is not published: use the contact form instead.
 Never accept consent or cookie pages to reach anything.
 
@@ -395,3 +393,5 @@ When finished, reply with one line per teacher:
 or `<rank> <name> → SKIPPED: reason`.
 
 **Owner, 10 Nov 2026:** never decode protected or obfuscated emails (Cloudflare email protection, script-built addresses), ever: use the contact form, or hold the plan. Find a site's real domain directly (a search result or a page naming it), never through a Squarespace preview address.
+
+- **robots.txt in its own command** (10 Nov 2026): read it, decide from what it says, and only then make any other request to that host, even a HEAD request to see whether it resolves. Never combine a robots.txt read with another request in one command (a helper once sent a HEAD request alongside a robots.txt that blocked us). If https fails, do not fall back to plain http: treat the site as unreachable.

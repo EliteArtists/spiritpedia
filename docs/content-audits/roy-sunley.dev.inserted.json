@@ -1,0 +1,28 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 1186,
+    "healer_slug": "roy-sunley"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "7e009084-2bce-4d02-8a2c-12b08a11be57",
+      "slug": "quantum-touch-level-1-course",
+      "title": "Quantum-Touch Level 1 course"
+    },
+    {
+      "table": "courses",
+      "id": "69c72be4-5096-4b8a-b013-d637d80816d6",
+      "slug": "mediumship-sittings",
+      "title": "Mediumship sittings"
+    },
+    {
+      "table": "courses",
+      "id": "0559a0f9-9c17-4fca-91c1-89d7137f7678",
+      "slug": "mediumship-spiritual-development-and-shamanic-workshops",
+      "title": "Mediumship, spiritual development and shamanic workshops"
+    }
+  ],
+  "at": "2026-11-10T13:06:24.071Z"
+}

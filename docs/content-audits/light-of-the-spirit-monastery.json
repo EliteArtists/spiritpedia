@@ -1,0 +1,182 @@
+{
+  "healer": {
+    "healer_slug": "light-of-the-spirit-monastery",
+    "location_source": "https://ocoy.org/about-ocoy-org/",
+    "create": {
+      "name": "Light of the Spirit Monastery",
+      "bio": "Light of the Spirit Monastery, also called Atma Jyoti Ashram, is a small community of monks in Cedar Crest, New Mexico, led by its abbot, Swami Nirmalananda Giri (Abbot George Burke). The monks belong to the Giri branch of the Shankara order of sannyasis, and their day starts with three hours of meditation. Their outlook draws on the Upanishads, the Bhagavad Gita, the Yoga Sutras and Sankhya philosophy, and they also write about what they call Original Christianity, reading the Gospels alongside the yogic traditions of India.\n\nThe monastery reaches people mainly through its website, OCOY.org, and its YouTube channel, Light of the Spirit, which has run since 2007. The channel carries the abbot's monthly video satsangs, a long series of Gita talks, short commentaries on the sayings of Anandamayi Ma, and pilgrimage films from India. The website adds articles, a weekly blog, recorded podcasts and a free e-library of the monastery's books as PDF downloads, with an introduction to Soham meditation for beginners.",
+      "tier": "local_hero",
+      "entity_type": "organisation",
+      "availability": "worldwide",
+      "city": "Cedar Crest, New Mexico",
+      "country": "United States",
+      "subjects": [
+        "meditation",
+        "yoga",
+        "ancient-wisdom"
+      ],
+      "website_url": "https://ocoy.org/",
+      "booking_url": "https://ocoy.org/video-satsangs/",
+      "youtube_url": "https://www.youtube.com/@lightofthespirit",
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": null,
+      "image_urls": [
+        "https://yt3.ggpht.com/9qFu--R-dKOYOrT3EMN6yzJyx_mxgeTLDuNluO_aqQd7z4oPSTtlWTeV6uegPcDYRtRLEiOSXX0=s800-c-k-c0x00ffffff-no-rj"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [
+    {
+      "title": "What It Was Like to Be with Anandamayi Ma | November Satsang",
+      "url": "https://www.youtube.com/watch?v=KfNABjeGbhM",
+      "subjects": [
+        "spirituality",
+        "meditation"
+      ],
+      "channel": "Light of the Spirit"
+    },
+    {
+      "title": "Kali Yuga, Consciousness & Spiritual Evolution | Swami Nirmalananda Giri",
+      "url": "https://www.youtube.com/watch?v=AUXQBWrCLhk",
+      "subjects": [
+        "consciousness",
+        "ancient-wisdom"
+      ],
+      "channel": "Light of the Spirit"
+    },
+    {
+      "title": "Let It Go: The Spiritual Secret to Inner Freedom | Swami Nirmalananda Giri",
+      "url": "https://www.youtube.com/watch?v=7-7DFUwRrRU",
+      "subjects": [
+        "spirituality",
+        "meditation"
+      ],
+      "channel": "Light of the Spirit"
+    },
+    {
+      "title": "Why Spiritual Life Isn't Complicated | August 2026 Satsang with Swami Nirmalananda Giri",
+      "url": "https://www.youtube.com/watch?v=EYKlV3KOXmw",
+      "subjects": [
+        "spirituality",
+        "yoga"
+      ],
+      "channel": "Light of the Spirit"
+    },
+    {
+      "title": "Meditation, Consciousness, and the Real Help for the World—July 2026 Satsang With Swami Nirmalananda",
+      "url": "https://www.youtube.com/watch?v=d_rGzL7La-Q",
+      "subjects": [
+        "meditation",
+        "consciousness"
+      ],
+      "channel": "Light of the Spirit"
+    },
+    {
+      "title": "Peace is Contagious | June 2026 Satsang with Swami Nirmalananda Giri",
+      "url": "https://www.youtube.com/watch?v=Tz0vsjpJj28",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "channel": "Light of the Spirit"
+    },
+    {
+      "title": "How to Keep Your Mind on God | Anandamayi Ma’s Matri Vani 12",
+      "url": "https://www.youtube.com/watch?v=gsaZAJoL4co",
+      "subjects": [
+        "spirituality",
+        "mysticism"
+      ],
+      "channel": "Light of the Spirit"
+    },
+    {
+      "title": "Sacred Imagery and the Divine Presence",
+      "url": "https://www.youtube.com/watch?v=3SuTka1RXis",
+      "subjects": [
+        "mysticism",
+        "spirituality"
+      ],
+      "channel": "Light of the Spirit"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [
+    {
+      "title": "How to Meditate: An Introduction to Soham Yoga Meditation",
+      "url": "https://ocoy.org/how-to-meditate-an-introduction/",
+      "description": "A free written guide to the monastery's main practice, Soham meditation, explaining its roots in the Upanishads and the Nath yogis and how to begin.",
+      "featured": true,
+      "resource_type": "practice",
+      "subjects": [
+        "meditation",
+        "yoga"
+      ],
+      "image": "https://ocoy.org/wp-content/uploads/how-to-meditate-featured.jpg"
+    },
+    {
+      "title": "E-Library of free ebooks",
+      "url": "https://ocoy.org/site/e-library/",
+      "description": "Free PDF downloads of the monastery's books on yoga, the Gita, other scriptures and the Christian mystical tradition, with paperbacks available to buy.",
+      "featured": false,
+      "resource_type": "download",
+      "subjects": [
+        "ancient-wisdom",
+        "yoga"
+      ],
+      "image": "https://ocoy.org/wp-content/uploads/e-library-bookends.jpg"
+    },
+    {
+      "title": "Spiritual podcasts",
+      "url": "https://ocoy.org/podcasts/",
+      "description": "Free recorded talks by Swami Nirmalananda Giri on meditation, practical spiritual life and the saints and teachers he has met.",
+      "featured": false,
+      "resource_type": "workshop",
+      "subjects": [
+        "spirituality",
+        "meditation"
+      ],
+      "image": "https://ocoy.org/wp-content/uploads/podcast-logo-400.jpg"
+    },
+    {
+      "title": "Video satsangs and Gita talks",
+      "url": "https://ocoy.org/video-satsangs/",
+      "description": "A page gathering the abbot's monthly satsangs, his series of talks on the Bhagavad Gita and shorter inspirational videos.",
+      "featured": false,
+      "resource_type": "workshop",
+      "subjects": [
+        "ancient-wisdom",
+        "meditation"
+      ],
+      "image": "https://ocoy.org/wp-content/uploads/satsang-featured2.jpg"
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "channel",
+    "rank": 802,
+    "hub": null,
+    "tier_evidence": "YouTube 37,400 subscribers (YouTube Data API, 10 Nov 2026); no other counts read → ~37k → local_hero",
+    "email": "contact form",
+    "email_source": null,
+    "contact_form_url": "https://ocoy.org/site/contact-us/",
+    "bio_check": "OK: no 8-word runs against 8 source(s)",
+    "flags": [
+      "Photo is the channel avatar, a painted image of Jesus seated in meditation with an Om symbol (the channel's emblem, not a photo of a person or building). The only monastery photo on the site is 119 px wide. Owner may prefer a different image.",
+      "Regional: Cedar Crest, New Mexico, is a small unincorporated community near Albuquerque; recorded as published on ocoy.org.",
+      "Contact form only (https://ocoy.org/site/contact-us/); no email published.",
+      "Listed as an organisation (the monastery behind the channel); teachers file written with no links. Possible future listing: Swami Nirmalananda Giri (Abbot George Burke).",
+      "Many recent uploads are under-1-minute shorts; only the longer satsangs and talks are used.",
+      "ocoy.org has Crawl-delay: 10; 11 s waited between requests."
+    ],
+    "left_out": [
+      "Books (sold on Amazon; ISBNs not taken).",
+      "Shorts under 2 minutes."
+    ]
+  },
+  "images_final": true
+}

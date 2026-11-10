@@ -1,0 +1,124 @@
+{
+  "healer": {
+    "healer_slug": "veronica-varlow",
+    "location_source": null,
+    "no_public_base": "Her own sites give no home city: the about page says only that she leads courses at an art house called Wonderland in New Orleans (a course venue, not stated as her home), and earlier pages name retreats at a house in Woodstock, New York.",
+    "create": {
+      "name": "Veronica Varlow",
+      "bio": "Veronica Varlow is an American witch, tarot reader and author who teaches what she calls love magick and bohemian witchcraft, and who also performs internationally as a burlesque artist. She traces her craft to the Czech-Romani folk magic of her grandmother Helen, and she describes herself as a fourth-generation intuitive. Before teaching took centre stage she toured stages across Europe and Australia, including thirteen world tours with the musician Emilie Autumn, and she worked as a confidence coach on an Emmy-winning season of MTV's Made.\n\nHer book Bohemian Magick, published by HarperCollins, is an illustrated handbook of spells, charms and rituals for confidence, self-love and making dreams real, written partly in her own hand. With her husband David she runs an online academy offering a ten-part tarot school, a course on writing and casting personal spells, and a virtual version of Witch Camp, in which students make their own illustrated grimoire of sigils, runes and spells. Witch Camp also runs in person, most recently at an art house in New Orleans, and she has led retreats in Mexico and Morocco. She also holds love and couples rituals at arts events in New York.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "worldwide",
+      "city": null,
+      "country": null,
+      "subjects": [
+        "mysticism",
+        "manifestation",
+        "spirituality"
+      ],
+      "website_url": "https://veronicavarlow.com/",
+      "booking_url": "https://academy.lovewitch.com/classes",
+      "youtube_url": "https://www.youtube.com/@veronicavarlow",
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": null,
+      "image_urls": [
+        "https://veronicavarlow.com/wp-content/uploads/2023/08/Veronica-Profile-2.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [
+    {
+      "title": "Bohemian Magick",
+      "slug": "bohemian-magick",
+      "author": "Veronica Varlow",
+      "asin": "0063027380",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "A richly illustrated, 240-page handbook of witchcraft drawn from her grandmother's Czech-Romani tradition, with step-by-step spellcasting, potions, charms and rituals for confidence, self-love and love.",
+      "subjects": [
+        "mysticism",
+        "manifestation"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/0063027380.01._SCLZZZZZZZ_.jpg"
+    }
+  ],
+  "courses": [
+    {
+      "title": "Love Witch Tarot School",
+      "url": "https://academy.lovewitch.com/love-witch-tarot-school",
+      "description": "A self-paced online course in ten modules that teaches the tarot card by card, with a workbook, aimed at making the cards personal rather than memorised.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "mysticism",
+        "spirituality"
+      ],
+      "image": "https://veronicavarlow.com/wp-content/uploads/2023/08/Veronica-Profile-2.jpg"
+    },
+    {
+      "title": "The Spectaculus School of Spellcasting",
+      "url": "https://academy.lovewitch.com/spectaculus-school-of-spellcasting",
+      "description": "Six video modules on writing and casting one's own spells, with homework and quizzes; the companion course to her book Bohemian Magick.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "manifestation",
+        "mysticism"
+      ],
+      "image": "https://veronicavarlow.com/wp-content/uploads/2023/08/Veronica-Profile-2.jpg"
+    },
+    {
+      "title": "Virtual Witch Camp: Crafting Your Own Enchanted Grimoire",
+      "url": "https://academy.lovewitch.com/virtual-witch-camp",
+      "description": "An online version of her Witch Camp, in which students build their own illustrated book of magic, with sigils, spells, wands and runes, and work on their intuition.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "mysticism",
+        "spirituality"
+      ],
+      "image": "https://veronicavarlow.com/wp-content/uploads/2023/08/Veronica-Profile-2.jpg"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "pipelines-3",
+    "hub": "omega",
+    "rank": 443,
+    "hub_url": "https://www.eomega.org/people/veronica-varlow",
+    "tier_evidence": "YouTube @veronicavarlow 2,280 subscribers (Data API, 10 Nov 2026); Instagram (@veronicavarlow) not read (off limits). Total ~2.3k → local_hero.",
+    "email": "contact form",
+    "email_source": null,
+    "contact_form_url": "https://veronicavarlow.com/contact/",
+    "bio_check": "OK: no 8-word runs against 10 source(s)",
+    "flags": [
+      "No Omega mention on own sites (veronicavarlow.com home, about, contact, book page; academy.lovewitch.com about and classes): listed without the link. Omega page not opened: eomega.org returns 403 to us (6 Nov 2026).",
+      "Scope: she is also a burlesque performer and 'confidence and sensuality coach'; her spiritual work is witchcraft, tarot and ritual. The Love Witch Academy course is billed as love, sensuality and sex magic: not listed. Owner may want to look.",
+      "Domains: lovewitch.com redirects to veronicavarlow.com; courses are on academy.lovewitch.com (Kajabi).",
+      "parlour.veronicavarlow.com (her new membership, 'The Parlour') returned 403 on 10 Nov 2026 after reading its robots.txt; not retried, not listed.",
+      "Course prices are not shown on the course pages (checkout only): 'Contact for pricing'.",
+      "Book ASIN 0063027380 from the Amazon link on her own book page; not confirmed elsewhere.",
+      "Only one usable photo (her profile portrait on veronicavarlow.com); the about-page banner has text over it.",
+      "Her YouTube channel is mainly old music and burlesque clips and short Witch Camp promos: no teaching videos listed, channel kept as a link."
+    ],
+    "left_out": [
+      "Love Witch Academy (ten-part love, sensuality and sex magic course): adult framing.",
+      "Witch Camp in New Orleans: latest dated session (fall 2025) has passed.",
+      "The Parlour membership: site refused us (403).",
+      "Videos: no teaching videos on her channel (music, burlesque, promos)."
+    ]
+  },
+  "images_final": true
+}

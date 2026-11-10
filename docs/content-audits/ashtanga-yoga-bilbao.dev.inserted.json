@@ -1,0 +1,46 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 1300,
+    "healer_slug": "ashtanga-yoga-bilbao"
+  },
+  "rows": [
+    {
+      "table": "videos",
+      "id": 9417,
+      "slug": "serie-intermedia-de-ashtanga-yoga-segunda-serie-con-fernando-gorostiza-de-ashtanga-yoga-bilbao",
+      "title": "Serie intermedia de Ashtanga Yoga (segunda serie) con Fernando Gorostiza de Ashtanga Yoga Bilbao."
+    },
+    {
+      "table": "videos",
+      "id": 9418,
+      "slug": "primera-serie-de-ashtanga-yoga-con-fernando-gorostiza-en-ashtanga-yoga-bilbao",
+      "title": "Primera serie de Ashtanga Yoga con Fernando Gorostiza en Ashtanga Yoga Bilbao."
+    },
+    {
+      "table": "videos",
+      "id": 9419,
+      "slug": "saludos-al-sol-y-secuencia-de-pie-de-ashtanga-yoga-con-nines-blazquez-de-ashtanga-yoga-bilbao",
+      "title": "Saludos al sol y secuencia de pie de Ashtanga Yoga con Nines Blázquez de Ashtanga Yoga Bilbao."
+    },
+    {
+      "table": "courses",
+      "id": "3461db98-82e6-43aa-9c00-d6287fc4b913",
+      "slug": "horarios-y-tarifas-monthly-passes-and-class-cards",
+      "title": "Horarios y tarifas (monthly passes and class cards)"
+    },
+    {
+      "table": "courses",
+      "id": "23502bd2-9c44-4d9a-a5f9-eb6f351b0c9b",
+      "slug": "ofertas-de-iniciacion",
+      "title": "Ofertas de iniciación"
+    },
+    {
+      "table": "courses",
+      "id": "c06007fd-3069-4a26-87d9-4e4fa7227648",
+      "slug": "la-isa-upanishad-con-anna-costanza",
+      "title": "La Isa Upanishad con Anna Costanza"
+    }
+  ],
+  "at": "2026-11-10T17:40:52.568Z"
+}

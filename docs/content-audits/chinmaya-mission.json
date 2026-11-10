@@ -1,0 +1,230 @@
+{
+  "healer": {
+    "healer_slug": "chinmaya-mission",
+    "location_source": "https://www.chinmayamission.com/global/themission",
+    "create": {
+      "name": "Chinmaya Mission",
+      "bio": "Chinmaya Mission is an Advaita Vedanta organisation started in India in 1953 by Swami Chinmayananda, a disciple of Swami Tapovan Maharaj in the Himalayas. His aim was to take the teaching of the Upanishads and the Bhagavad Gita out of the forest ashram and into ordinary city life, in plain language and with an emphasis on practice. After his death in 1993 the work passed to Swami Tejomayananda, and today Swami Swaroopananda guides it as global head. Its governing trust is based in Mumbai, and it runs more than 350 centres around the world.\n\nThe mission teaches through public lecture series known as jnana yajnas, weekly study groups, residential camps and ashram stays, and a free live-in Vedanta course in the gurukula style that has trained its teachers since 1963. There are classes for children and young adults, devotional singing and chanting, and distance-learning courses in Vedanta and Sanskrit. Its YouTube channel, running since 2009, carries English talk series on the Gita by Swami Swaroopananda, chanting and japa led by Swami Tejomayananda, archive footage of the founder and short clips, with some material in Hindi.",
+      "tier": "superhero",
+      "entity_type": "organisation",
+      "availability": "worldwide",
+      "founded_year": 1953,
+      "city": "Mumbai, Maharashtra",
+      "country": "India",
+      "subjects": [
+        "non-duality",
+        "ancient-wisdom",
+        "spirituality"
+      ],
+      "website_url": "https://www.chinmayamission.com/",
+      "booking_url": "https://www.chinmayamission.com/global/residential-vedanta-course",
+      "youtube_url": "https://www.youtube.com/@chinmayachannel",
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "ccmt@chinmayamission.com",
+      "image_urls": [
+        "https://yt3.ggpht.com/ytc/AIdro_kKqeVcq2-QWByPnJDoYLErmX3SCCfOTqkOKJ6SSXG3bLE=s800-c-k-c0x00ffffff-no-rj"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [
+    {
+      "title": "Life and Times of Swami Chinmayananda! | The Evolution of a Visionary",
+      "url": "https://www.youtube.com/watch?v=h6BKD9KLwd0",
+      "subjects": [
+        "ancient-wisdom",
+        "spirituality"
+      ],
+      "channel": "ChinmayaChannel"
+    },
+    {
+      "title": "Mahamantra Japa! | Swami Tejomayananda",
+      "url": "https://www.youtube.com/watch?v=uQm_CVVV3lY",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "channel": "ChinmayaChannel"
+    },
+    {
+      "title": "Vande Guru Paramparam! | Swami Tejomayananda",
+      "url": "https://www.youtube.com/watch?v=h47rJM2yXEE",
+      "subjects": [
+        "ancient-wisdom",
+        "spirituality"
+      ],
+      "channel": "ChinmayaChannel"
+    },
+    {
+      "title": "Kritagnyata | Gratitude for Guru! | Swami Tejomayananda",
+      "url": "https://www.youtube.com/watch?v=Myx9epTiw1g",
+      "subjects": [
+        "spirituality"
+      ],
+      "channel": "ChinmayaChannel"
+    },
+    {
+      "title": "Talk 11 | The Duty You're Ignoring | Gita Panchamrit | Swami Swaroopananda",
+      "url": "https://www.youtube.com/watch?v=mkAooA7Lm1c",
+      "subjects": [
+        "ancient-wisdom",
+        "non-duality"
+      ],
+      "channel": "ChinmayaChannel"
+    },
+    {
+      "title": "Talk 15 | Ego Kills Love | Gita Panchamrit | Swami Swaroopananda",
+      "url": "https://www.youtube.com/watch?v=ZKcpETa8IUA",
+      "subjects": [
+        "ancient-wisdom",
+        "non-duality"
+      ],
+      "channel": "ChinmayaChannel"
+    },
+    {
+      "title": "Talk 18 | God Is Closer Than You Think | Gita Panchamrit | Swami Swaroopananda",
+      "url": "https://www.youtube.com/watch?v=R-xz-_kuP0I",
+      "subjects": [
+        "ancient-wisdom",
+        "spirituality"
+      ],
+      "channel": "ChinmayaChannel"
+    },
+    {
+      "title": "Ep 27 | The Wisdom That Survived the Test of Time | Decoding Bhagavad Gita with Swami Swaroopananda",
+      "url": "https://www.youtube.com/watch?v=kk-5YWPTLhk",
+      "subjects": [
+        "ancient-wisdom"
+      ],
+      "channel": "ChinmayaChannel"
+    },
+    {
+      "title": "Ep 28 | Why Krishna Takes Avatar | Decoding Bhagavad Gita with Swami Swaroopananda",
+      "url": "https://www.youtube.com/watch?v=xTSq-7zJ6hk",
+      "subjects": [
+        "ancient-wisdom"
+      ],
+      "channel": "ChinmayaChannel"
+    },
+    {
+      "title": "Ep 32 | How Worship Trains the Mind | Decoding Bhagavad Gita with Swami Swaroopananda",
+      "url": "https://www.youtube.com/watch?v=SNte-DcN9Hk",
+      "subjects": [
+        "ancient-wisdom",
+        "spirituality"
+      ],
+      "channel": "ChinmayaChannel"
+    }
+  ],
+  "books": [],
+  "courses": [
+    {
+      "title": "Residential Vedanta Course",
+      "url": "https://www.chinmayamission.com/global/residential-vedanta-course",
+      "description": "A live-in gurukula course for committed students, centred on the Upanishads, the Bhagavad Gita and the Brahma Sutras, with Sanskrit, Vedic chanting and devotional texts. The mission provides board, lodging and books at no charge.",
+      "price": "Free",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "non-duality",
+        "ancient-wisdom"
+      ],
+      "image": "https://www.chinmayamission.com/_next/image?url=%2Fimages%2FVector.png&w=384&q=75"
+    },
+    {
+      "title": "Chinmaya Spiritual Camps",
+      "url": "https://www.chinmayamission.com/global/chinmaya-spiritual-camps",
+      "description": "Short live-in retreats at the mission's ashrams and centres for individuals, families and children, combining Vedanta classes, devotional practice and reflection. Individual stays at an ashram can also be arranged.",
+      "price": "Contact for pricing",
+      "product_type": "retreat",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "ancient-wisdom",
+        "spirituality"
+      ],
+      "image": "https://www.chinmayamission.com/_next/image?url=%2Fimages%2FVector.png&w=384&q=75"
+    },
+    {
+      "title": "Postal and eVedanta Courses",
+      "url": "https://www.chinmayamission.com/global/postal-evedanta-courses",
+      "description": "Home-study lessons in Vedanta first designed by Swami Chinmayananda, now offered online as well, covering the Gita, the Upanishads, Sanskrit and related subjects. The full course list is held by the Chinmaya International Foundation.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "ancient-wisdom",
+        "non-duality"
+      ],
+      "image": "https://www.chinmayamission.com/_next/image?url=https%3A%2F%2Fimages.chinmayamission.com%2Fuploads%2F620x300_E_vedanta_Postal_and_e_Vedanta_Courses_9cfb53b7c5.jpg&w=3840&q=75"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Study Groups and Devi Groups",
+      "url": "https://www.chinmayamission.com/global/study-and-devi-groups",
+      "description": "Small local circles of five to fifteen people who meet regularly to read a Vedanta text together, discuss it and chant. Devi Groups are the women's version.",
+      "featured": true,
+      "resource_type": "practice",
+      "subjects": [
+        "ancient-wisdom",
+        "spirituality"
+      ],
+      "image": "https://www.chinmayamission.com/_next/image?url=%2Fimages%2FVector.png&w=384&q=75"
+    },
+    {
+      "title": "Chinmaya Mission Articles",
+      "url": "https://www.chinmayamission.com/global/articles",
+      "description": "Short pieces on applying Vedanta to everyday life, from the mission's resources section.",
+      "featured": false,
+      "resource_type": "download",
+      "subjects": [
+        "ancient-wisdom"
+      ],
+      "image": "https://www.chinmayamission.com/_next/image?url=https%3A%2F%2Fimages.chinmayamission.com%2Fuploads%2Fevents_Banner_9ce0f87d55.png&w=3840&q=75"
+    },
+    {
+      "title": "Chinmaya Mission Downloadables",
+      "url": "https://www.chinmayamission.com/global/downloadables",
+      "description": "Free downloadable material from the mission, gathered on one page of its resources section.",
+      "featured": false,
+      "resource_type": "download",
+      "subjects": [
+        "ancient-wisdom"
+      ],
+      "image": "https://www.chinmayamission.com/_next/image?url=https%3A%2F%2Fimages.chinmayamission.com%2Fuploads%2Fevents_Banner_9ce0f87d55.png&w=3840&q=75"
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "channel",
+    "rank": 1501,
+    "hub": null,
+    "tier_evidence": "YouTube 1,010,000 subscribers (YouTube Data API, 10 Nov 2026); no other counts read → ≥1M → superhero",
+    "email": "yes",
+    "email_source": "https://www.chinmayamission.com/",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 11 source(s)",
+    "flags": [
+      "Tier borderline: 1.01M YouTube subscribers sits in the 0.8M–1.5M band; superhero by the count alone.",
+      "Email is the head office inbox of the Central Chinmaya Mission Trust, published in the site footer (organisation inbox).",
+      "Possible overlap with Chinmaya International Foundation (chinmaya-international-foundation), already listed: CIF is one of the mission's institutions with its own channel (@chinfochannel). This listing is the parent mission and its main channel.",
+      "Teachers file is empty: no Chinmaya teacher is on Spiritpedia yet. Possible future listings: Swami Swaroopananda (global head), Swami Tejomayananda.",
+      "Channel mixes English talks with Hindi bhajans and stories and many Shorts; only English long-form teaching videos were picked.",
+      "Regional: Mumbai, India.",
+      "Photo is the channel avatar (the mission's Om logo); no venue photo was taken from the site."
+    ],
+    "left_out": [
+      "'PM Modi Promises Chinmaya Yuva Kendra!' (Short) and the news item on the Prime Minister opening the global sammelan left out as political.",
+      "'Chinmaya Garbha Samskara' (pregnancy programme) left out under the health rule.",
+      "Corporate workshops, school and rural-development projects left out as not spiritual teaching.",
+      "Hindi-language videos and Shorts left out."
+    ]
+  },
+  "images_final": true
+}

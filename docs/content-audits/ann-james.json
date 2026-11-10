@@ -1,0 +1,104 @@
+{
+  "healer": {
+    "healer_slug": "ann-james",
+    "location_source": "https://mysticalenergies.com/events/",
+    "create": {
+      "name": "Ann James",
+      "bio": "Ann James is an energy worker and sound practitioner in Woodville, in the Big Thicket country of south-east Texas, where she runs Mystical Energies from a studio beside her rock shop. Her interest in inner practice began with Transcendental Meditation and yoga in the 1970s; years later, while working as a hospital dietitian, she was introduced to Reiki and went on to become a Reiki Master/Teacher in 1997. She certified as a Quantum-Touch practitioner in 2007 and as an instructor a year later, and has also trained in Healing Touch, Theta Healing, Access Bars and Vibrational Sound Therapy.\n\nHer individual sessions blend Reiki, Quantum-Touch, Healing Touch and colour work, sometimes with singing bowls, crystal pyramids or tuning forks, and can be held in person or at a distance. She teaches Reiki at every level up to Master/Teacher and runs one-day Access Bars classes. Much of her community work is sound: she plays Tibetan and quartz crystal bowls and gongs at regular sound baths and gong baths in her studio and at venues around Beaumont, and hosts private group sessions on request.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local_online",
+      "city": "Woodville, Texas",
+      "country": "United States",
+      "subjects": [
+        "quantum-touch",
+        "reiki",
+        "sound-healing"
+      ],
+      "website_url": "https://mysticalenergies.com/",
+      "booking_url": "https://mysticalenergies.com/services/sessions/",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "annmysticalenergies@gmail.com",
+      "image_urls": [
+        "https://mysticalenergies.com/wp-content/uploads/2014/04/Singing-bowls-and-Ann-pic-WCC.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Energy healing sessions",
+      "url": "https://mysticalenergies.com/services/sessions/",
+      "description": "Half-hour or hour sessions that combine Reiki, Quantum-Touch, Healing Touch and colour work, with singing bowls or tuning forks when it feels right. Sessions are held in her Woodville studio or at a distance, with an intake form beforehand.",
+      "price": "$75 (1/2 hr); $100 (1 hr)",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "quantum-touch",
+        "reiki",
+        "energy-medicine"
+      ],
+      "image": "https://mysticalenergies.com/wp-content/uploads/2017/08/reiki_session-603x400.jpg"
+    },
+    {
+      "title": "Reiki attunements and training",
+      "url": "https://mysticalenergies.com/services/workshops/",
+      "description": "Reiki classes at Level 1, Level 2, Master and Master/Teacher. Each class covers the teaching for that level, the attunement, course materials and hands-on practice.",
+      "price": "Level 1: $175; Level 2: $250; Reiki Master: $450 (one day); Reiki Master/Teacher: $650 (two days)",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "reiki"
+      ],
+      "image": "https://mysticalenergies.com/wp-content/uploads/2020/03/Learn-Access-Bars.jpg"
+    },
+    {
+      "title": "Sound for the Soul sound baths",
+      "url": "https://mysticalenergies.com/services/group-events/",
+      "description": "Group sound baths with Tibetan or quartz crystal singing bowls, held monthly at a venue in Beaumont and at other venues, plus private group sessions in her shop or at your own space. Bring a mat, blanket and pillow.",
+      "price": "$25/person",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "sound-healing",
+        "meditation"
+      ],
+      "image": "https://mysticalenergies.com/wp-content/uploads/2019/03/Pic-3-1-600x400.jpg"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "quantum-touch",
+    "rank": 208,
+    "hub": null,
+    "tier_evidence": "No readable follower counts: her site links only a Facebook page (never fetched); her YouTube channel (UClyoqu8Q7JNxRUuVpN2YzDg, found via the one video on her blog) has no readable uploads list via the Data API, 10 Nov 2026 → 0 → local_hero.",
+    "email": "yes",
+    "email_source": "https://mysticalenergies.com/services/sessions/",
+    "contact_form_url": "https://mysticalenergies.com/contact/",
+    "bio_check": "OK: no 8-word runs against 10 source(s)",
+    "flags": [
+      "Health rule: her Quantum-Touch page describes the method as reducing back pain, realigning structure and healing injuries and burns, and her gong-bath event text mentions trauma; none of that is used. Her site as a whole is Reiki, sound and Access Bars rather than condition-led.",
+      "Only one photo: her about-page picture among singing bowls and a gong (525x350); her Quantum-Touch profile has no photo.",
+      "Site blog is old (latest post 2019) but the events calendar shows gong baths up to 23 Nov 2025 and the footer reads 2026; no upcoming events listed today.",
+      "Regional: Woodville, Texas (a town of about 2,500, under the 5,000 guide); her monthly sound baths are in Beaumont.",
+      "Access Bars and Vibrational Sound Therapy sessions are on the same pages as other items, so not listed separately."
+    ],
+    "left_out": [
+      "Crystal Pyramid video (youtu.be/3h2jYcK913A, 1:13, sound only): under two minutes and music-only.",
+      "Access Bars class ($440) and Vibrational Sound Therapy / Access Bars sessions: share the workshops and sessions URLs with listed items.",
+      "Past gong baths (events page, Oct-Nov 2025).",
+      "Essential oils products page: product sales, not teaching."
+    ]
+  },
+  "images_final": true
+}

@@ -1,0 +1,104 @@
+{
+  "healer": {
+    "healer_slug": "yogamundi-iyengar-yoga-zentrum-heidelberg",
+    "location_source": "https://www.yogamundi.de/kontakt/",
+    "create": {
+      "name": "YogaMundi – Iyengar Yoga Zentrum Heidelberg",
+      "bio": "YogaMundi is an Iyengar yoga centre in Heidelberg run by certified Iyengar teachers. Since 2022 it has worked from a bright room in Wieblingen, a former fishing village on the western edge of the city, with a panoramic window and terrace looking across the Neckar towards the hills of the Odenwald. Its senior teacher, Liina Puustinen, has practised since 1999, has held Iyengar certification since 2008 and travels regularly to study at the Ramamani Iyengar Memorial Yoga Institute in Pune; she also trains, mentors and assesses new Iyengar teachers.\n\nThe weekly timetable runs from a step-by-step basics course for newcomers through general, experienced and advanced classes, using the ropes, belts, blocks and chairs that the method relies on, and classes can be joined in the room, online or in hybrid form. Longer Sunday sessions and a series on Level 2 postures give committed students time to go deeper, and guest teachers from Pune visit for weekend workshops. The centre also prepares students for Iyengar certification through mentoring, and leads summer retreats that combine yoga with hiking in the southern Black Forest.",
+      "tier": "local_hero",
+      "entity_type": "school",
+      "availability": "local_online",
+      "founded_year": null,
+      "city": "Heidelberg",
+      "country": "Germany",
+      "subjects": [
+        "yoga"
+      ],
+      "website_url": "https://www.yogamundi.de/",
+      "booking_url": "https://www.yogamundi.de/kurse/",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "info@yogamundi.de",
+      "image_urls": [
+        "https://www.yogamundi.de/wp-content/uploads/5851-0057-scaled.jpg",
+        "https://www.yogamundi.de/wp-content/uploads/Ueber-uns-header.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Iyengar yoga classes for all levels",
+      "url": "https://www.yogamundi.de/kurse/",
+      "description": "The centre's weekly timetable, from a methodical basics course for beginners to general, experienced and advanced classes, taught in the studio, online or both at once. Classes are booked through Eversports, by email or by message.",
+      "price": "Contact for pricing",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://www.yogamundi.de/wp-content/uploads/22013_YogaMundi_WortBildmarke_RZ.png"
+    },
+    {
+      "title": "Special Guest Workshop with Anjali Ratnaparkhe (Pune)",
+      "url": "https://www.yogamundi.de/workshop-mit-anjali-2027/",
+      "description": "A weekend of classes for all levels with a senior teacher from the Ramamani Iyengar Memorial Yoga Institute in Pune, limited to 25 places, with an extra day for teachers and advanced practitioners on 23 April.",
+      "price": "200 € (Early Bird 180 € until 28 Feb 2027); with teachers' day 300 €",
+      "product_type": "course",
+      "start_date": "2027-04-24",
+      "end_date": "2027-04-25",
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://www.yogamundi.de/wp-content/uploads/22013_YogaMundi_WortBildmarke_RZ.png"
+    },
+    {
+      "title": "Iyengar yoga teacher training and mentoring",
+      "url": "https://www.yogamundi.de/workshops/",
+      "description": "Preparation for Iyengar certification through mentoring with the centre's senior teacher, for students who have attended classes with certified teachers for at least three years and practise daily at home.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://www.yogamundi.de/wp-content/uploads/22013_YogaMundi_WortBildmarke_RZ.png"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "yoga-school",
+    "rank": 761,
+    "hub": null,
+    "tier_evidence": "No YouTube channel linked on the site; Instagram and Facebook not fetched; no readable followers → local_hero",
+    "email": "yes",
+    "email_source": "https://www.yogamundi.de/kontakt/",
+    "contact_form_url": "https://www.yogamundi.de/kontakt/",
+    "bio_check": "OK: no 8-word runs against 6 source(s)",
+    "flags": [
+      "Lead from Iyengar Yoga Deutschland's own studio list (iyengar-yoga-deutschland.de/studioliste/), which links yogamundi.de for 'YogaMundi - Iyengar Yoga Zentrum Heidelberg'. robots.txt (* group) disallows only wp-admin.",
+      "Email info@yogamundi.de is the studio inbox (mailto on every page); contact form on /kontakt/.",
+      "The site also sells therapeutically framed classes (Gesundheitskurs for back and neck pain, digestion and stress; private therapeutic sessions; women's classes around menstruation, pregnancy and menopause; a March 2027 workshop 'Yoga gegen Rückenschmerzen'). All left out; the core offer is general Iyengar classes. Owner may judge whether the health framing is too strong.",
+      "Class prices are in an image of the timetable, not readable text: 'Contact for pricing'.",
+      "The Black Forest retreats (19–26 Jun and 26 Jun – 3 Jul 2027) have no page of their own on the site, so no retreat item.",
+      "Thin: 3 offerings, no free resources or videos.",
+      "Possible future listings: Liina Puustinen (senior teacher, trainer and mentor); also Janine Zuberer.",
+      "No Spiritpedia teachers are named on the site, so the teachers file has no links.",
+      "Regional: Heidelberg; Spiritpedia has few listings in south-west Germany."
+    ],
+    "left_out": [
+      "Gesundheitskurs, Iyengar Yogatherapie / private therapeutic sessions, Yoga für Frauen, Sanftes Yoga (framed around health conditions): health rule.",
+      "Workshop 'Yoga gegen Rückenschmerzen' (6–7 Mar 2027): condition named in the title.",
+      "Sunday Sessions and Level 2 practice: no 2027 dates published yet."
+    ]
+  },
+  "images_final": true
+}

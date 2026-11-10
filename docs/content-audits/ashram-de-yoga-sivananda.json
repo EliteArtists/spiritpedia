@@ -1,0 +1,127 @@
+{
+  "healer": {
+    "healer_slug": "ashram-de-yoga-sivananda",
+    "location_source": "https://sivanandaorleans.org/fr/contactez-nous/",
+    "create": {
+      "name": "Ashram de Yoga Sivananda (Orléans)",
+      "bio": "The Ashram de Yoga Sivananda stands in wooded grounds at Neuville-aux-Bois, near Orléans, and has been home since 2003 to the first Sivananda ashram in Europe. It belongs to the International Sivananda Yoga Vedanta Centres, the non-profit body founded by Swami Vishnudevananda in honour of his teacher Swami Sivananda, and its resident community is registered in France as a monastic congregation. Swami Kailasananda, a disciple of Vishnudevananda who directs the organisation's centres in France and England, leads a team of long-standing volunteer teachers. The buildings can house up to about two hundred guests, with practice halls, a library, a shop and a permaculture garden that supplies the organic vegetarian kitchen.\n\nLife at the ashram follows a fixed day: two satsangs of silent meditation, chanting and readings, two classical hatha yoga classes, a talk on yoga philosophy and an optional hour of karma yoga. Guests come for retreats of a few nights or several weeks, while the month-long Sivananda Teachers' Training Course, taught in French, is run here several times a year. Graduates can go further with a three- or six-month immersion programme in yogic study and community life. From home, students can join free daily satsangs and a free weekend class on Zoom, plus a weekly French intermediate class.",
+      "tier": "local_hero",
+      "entity_type": "school",
+      "availability": "local_online",
+      "founded_year": 2003,
+      "city": "Neuville-aux-Bois",
+      "country": "France",
+      "subjects": [
+        "yoga",
+        "meditation",
+        "spirituality"
+      ],
+      "website_url": "https://sivanandaorleans.org/fr/",
+      "booking_url": "https://sivanandaorleans.org/fr/retraites/retraite-yoga/",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "orleans@sivananda.net",
+      "image_urls": []
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Formation de professeurs de yoga 200h (Sivananda TTC)",
+      "url": "https://sivanandaorleans.org/fr/formations/formation-yoga-200h/",
+      "description": "The month-long residential Sivananda Teachers' Training Course in French, combining daily meditation, asana and pranayama practice, teaching method and study of the four paths of yoga. Graduates receive the organisation's Yoga Siromani teaching title.",
+      "price": "A partir de 2430€ (training, lodging, meals, uniforms and manual)",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga",
+        "meditation"
+      ]
+    },
+    {
+      "title": "Retraite de yoga à l'ashram",
+      "url": "https://sivanandaorleans.org/fr/retraites/retraite-yoga/",
+      "description": "A flexible stay of two nights or more following the ashram day: two hatha yoga classes, two satsangs, a philosophy talk, organic vegetarian meals and optional karma yoga, with a weekly theme.",
+      "price": "Contact for pricing",
+      "product_type": "retreat",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga",
+        "meditation"
+      ]
+    },
+    {
+      "title": "Yoga LIT – immersion dans la vie yogique",
+      "url": "https://sivanandaorleans.org/fr/stages-yoga/immersion-vie-yogique/",
+      "description": "A three- or six-month programme for TTC graduates who want to live, study and serve in the ashram community, with modules on Vedanta, bhakti, raja and hatha yoga under a swami's guidance.",
+      "price": "12 semaines: 2 705€ (chambre partagée) to 4 700€ (chambre simple avec salle de bain)",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga",
+        "spirituality"
+      ]
+    },
+    {
+      "title": "Cours de yoga intermédiaire en ligne",
+      "url": "https://sivanandaorleans.org/fr/en-ligne/cours-de-yoga-en-ligne/",
+      "description": "A weekly live intermediate class in French on Zoom, an hour and a half of asanas and pranayama for students with some previous practice.",
+      "price": "12€ par cours",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga",
+        "breathwork"
+      ]
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Satsangs en ligne (free daily online satsang)",
+      "url": "https://sivanandaorleans.org/fr/en-ligne/satsang-en-ligne/",
+      "description": "Daily morning and evening sessions on Zoom of silent group meditation, Sanskrit chanting and a reading on yoga philosophy, open to anyone, with French translation in the evening.",
+      "featured": true,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ]
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "yoga-school",
+    "rank": 758,
+    "hub": null,
+    "tier_evidence": "No YouTube channel linked on the pages read; Facebook and Instagram not fetched; no readable followers → local_hero",
+    "email": "yes",
+    "email_source": "https://sivanandaorleans.org/fr/contactez-nous/",
+    "contact_form_url": "https://sivanandaorleans.org/fr/contactez-nous/",
+    "bio_check": "OK: no 8-word runs against 8 source(s)",
+    "flags": [
+      "Lead from the Sivananda organisation's own ashram list (sivananda.org/locations/ashrams/, link sivananda.org/orleans, now 404). Site sivanandaorleans.org found as a link on sivanandayogavietnam.org/community and on sivananda.at; robots.txt names only Googlebot (Disallow /nogooglebot/), so we are allowed.",
+      "Email orleans@sivananda.net is the ashram's office inbox (mailto in the site footer); a contact form is in the same footer.",
+      "TTC dates are not in the readable page HTML (the Geneva centre's site lists Orléans intakes 14 Nov – 13 Dec 2026, 9 Jan – 7 Feb 2027 and 13 Feb – 14 Mar 2027), so the TTC item is undated.",
+      "The free 'Feu du Yoga' weekend class is the same Zoom class run by the Tyrol house (planned separately at rank 756); not repeated here.",
+      "Possible future listings: Swami Kailasananda (director), Swami Bhagavatananda; TTC teachers Narayana Chaitanya, Gopala and others.",
+      "No Spiritpedia teachers are named on the pages read, so the teachers file has no links.",
+      "Regional: Neuville-aux-Bois (postcode 45170, near Orléans), recorded as published; may be under 5,000 people, so it may need a place alias. Spiritpedia has few listings in central France. Founded 2003 per the retreat page ('depuis 2003')."
+    ],
+    "left_out": [
+      "Ayurveda online course, permaculture course, youth programme, India pilgrimage and India trainings: off-site, health-framed or outside the core offer.",
+      "Harmonium lessons (35€/60€): minor add-on.",
+      "Christmas stay (flexible dates 20 Dec – 6 Jan): price not read.",
+      "TTC page satisfaction and pass-rate figures: not repeated."
+    ],
+    "held": "Dry run 10 Nov 2026: the ingest's own robots.txt request to sivanandaorleans.org was answered with HTTP 502, so every image was refused (my curl reads of robots.txt, pages and photos had succeeded minutes earlier). Not retried; held for the owner to re-run the dry run later or supply photos."
+  }
+}

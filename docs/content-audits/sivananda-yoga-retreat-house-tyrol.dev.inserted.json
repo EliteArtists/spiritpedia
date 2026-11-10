@@ -1,0 +1,64 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 1242,
+    "healer_slug": "sivananda-yoga-retreat-house-tyrol"
+  },
+  "rows": [
+    {
+      "table": "videos",
+      "id": 9103,
+      "slug": "yoga-teacher-training-experiences-at-the-sivananda-yoga-retreat-house-in-austria",
+      "title": "Yoga Teacher Training experiences at the Sivananda Yoga Retreat House in Austria"
+    },
+    {
+      "table": "videos",
+      "id": 9104,
+      "slug": "experience-yoga-sivananda-yoga-teacher-training-in-the-himalayas",
+      "title": "Experience Yoga - Sivananda Yoga Teacher Training in the Himalayas"
+    },
+    {
+      "table": "courses",
+      "id": "78a82505-f179-4d73-b23a-3db313c002a6",
+      "slug": "sivananda-yoga-teachers-training-course-in-tyrol",
+      "title": "Sivananda Yoga Teachers' Training Course in Tyrol"
+    },
+    {
+      "table": "courses",
+      "id": "b3da59a9-dce3-42c4-bb93-d8a75a05e0c3",
+      "slug": "christmas-new-year-retreat-2026-27",
+      "title": "Christmas & New Year Retreat 2026/27"
+    },
+    {
+      "table": "courses",
+      "id": "642a8cb7-3c4e-40ee-9353-b2fb5136e4a6",
+      "slug": "serenity-through-positive-thinking",
+      "title": "Serenity through Positive Thinking"
+    },
+    {
+      "table": "courses",
+      "id": "a8ae677e-f5e9-4997-a5a1-db921c464eed",
+      "slug": "intensive-meditation-retreat",
+      "title": "Intensive Meditation Retreat"
+    },
+    {
+      "table": "courses",
+      "id": "bc07e321-d16c-426d-aeb5-9aab9b74f211",
+      "slug": "yoga-vacation-at-the-retreat-house",
+      "title": "Yoga vacation at the retreat house"
+    },
+    {
+      "table": "courses",
+      "id": "37fd3215-5944-4018-a008-86c72e70a70a",
+      "slug": "online-live-class-flatrate",
+      "title": "Online live class flatrate"
+    },
+    {
+      "table": "free_resources",
+      "id": "7032c443-d019-4b73-a5c4-069125ebf071",
+      "slug": "the-fire-of-yoga-free-live-workshop",
+      "title": "The Fire of Yoga – free live workshop"
+    }
+  ],
+  "at": "2026-11-10T15:45:23.585Z"
+}

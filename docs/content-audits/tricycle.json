@@ -1,0 +1,249 @@
+{
+  "healer": {
+    "healer_slug": "tricycle",
+    "location_source": "https://tricycle.org/about/",
+    "create": {
+      "name": "Tricycle: The Buddhist Review",
+      "bio": "Tricycle: The Buddhist Review is an independent Buddhist magazine published by the Tricycle Foundation, a New York non-profit set up in 1990. The quarterly first appeared in 1991 with the aim of presenting Buddhist ideas to Western readers, and it remains unattached to any single teacher, school or lineage, so its pages run from Theravada and Zen to Tibetan and secular approaches. Its readers include long-time practitioners, people simply curious about meditation and many who do not call themselves Buddhist.\n\nAlongside the print issues, the foundation runs a website of articles and teachings, the Tricycle Talks podcast, a monthly film club, members' dharma talks and a catalogue of self-paced online courses with teachers such as Loch Kelly, Christina Feldman and Andrew Holecek. Its YouTube channel, active since 2012, carries recorded talks, guided meditations, a meditation group and short clips. The foundation also organises Buddhist pilgrimages and relies on donations, as it accepts advertising only from teachers, centres and businesses it judges to fit its aims.",
+      "tier": "local_hero",
+      "entity_type": "channel",
+      "founded_year": 1990,
+      "availability": "worldwide",
+      "city": "New York, New York",
+      "country": "United States",
+      "subjects": [
+        "meditation",
+        "mindfulness",
+        "spirituality"
+      ],
+      "website_url": "https://tricycle.org/",
+      "booking_url": "https://learn.tricycle.org/l/products",
+      "youtube_url": "https://www.youtube.com/@tricyclemag",
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "editorial@tricycle.org",
+      "image_urls": [
+        "https://tricycle.org/wp-content/uploads/2016/07/Trike-Social-Cover_1200x627.png"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [
+    {
+      "title": "Thich Nhat Hanh: Poet, Author, Scholar",
+      "url": "https://www.youtube.com/watch?v=tm3tb-c8Khc",
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "channel": "Tricycle"
+    },
+    {
+      "title": "Deepen Your Faith: A Workshop with Sharon Salzberg",
+      "url": "https://www.youtube.com/watch?v=B_qDh-CQQpI",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "channel": "Tricycle"
+    },
+    {
+      "title": "Preparing for Death and Dying: Naming Fears, Finding Peace with Sallie Jiko Tisdale",
+      "url": "https://www.youtube.com/watch?v=hUM43502AlI",
+      "subjects": [
+        "death-the-afterlife",
+        "meditation"
+      ],
+      "channel": "Tricycle"
+    },
+    {
+      "title": "Thoughts without a Thinker with Mark Epstein",
+      "url": "https://www.youtube.com/watch?v=UMjPN7Q7E_k",
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "channel": "Tricycle"
+    },
+    {
+      "title": "Rethinking the Dharma for a Secular Age with Stephen Batchelor",
+      "url": "https://www.youtube.com/watch?v=VUB2GGbVuvg",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "channel": "Tricycle"
+    },
+    {
+      "title": "Cuong Lu Guided Meditation",
+      "url": "https://www.youtube.com/watch?v=3v_HpHRYHU8",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "channel": "Tricycle"
+    },
+    {
+      "title": "Tricycle's Meditation Group – Yong Oh",
+      "url": "https://www.youtube.com/watch?v=stcqED8JpTI",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "channel": "Tricycle"
+    }
+  ],
+  "books": [],
+  "courses": [
+    {
+      "title": "Effortless Mindfulness",
+      "url": "https://learn.tricycle.org/p/effortless-mindfulness",
+      "description": "A self-paced online course in which Loch Kelly teaches ways to notice and rest in the awareness that is already present, rather than building concentration through effort.",
+      "price": "$159",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "mindfulness",
+        "non-duality",
+        "meditation"
+      ],
+      "image": "https://uploads.teachablecdn.com/attachments/4894OAUpThKciFoU0xaw_Loch-in-park-1000.jpg"
+    },
+    {
+      "title": "Meeting the Five Hindrances",
+      "url": "https://learn.tricycle.org/p/meeting-the-five-hindrances",
+      "description": "Three teachers, Christina Feldman, Yuka Nakamura and Christoph Köck, work through the five classic obstacles in meditation, from craving and ill will to doubt, with practices for each.",
+      "price": "$169",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://uploads.teachablecdn.com/attachments/13c410e15a674fb493239b4805a199ea.jpg"
+    },
+    {
+      "title": "Demystifying Nirvana",
+      "url": "https://learn.tricycle.org/p/demystifying-nirvana",
+      "description": "John Peacock, Christina Feldman and Jake Dartington look at what the early teachings mean by nirvana and treat awakening as something open to ordinary lives.",
+      "price": "$169",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "spiritual-awakening",
+        "meditation"
+      ],
+      "image": "https://uploads.teachablecdn.com/attachments/PrNw6JBVSTKLMrTJdYo1_Standing-1-coloured-PNG.png"
+    },
+    {
+      "title": "Dependent Arising",
+      "url": "https://learn.tricycle.org/p/dependent-arising",
+      "description": "A study course with the founders of Bodhi College on the Buddha's teaching that everything comes about through conditions, and how that view changes practice.",
+      "price": "$169",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "ancient-wisdom",
+        "meditation"
+      ],
+      "image": "https://uploads.teachablecdn.com/attachments/fcdbaXcyRTO1VW1PUj8l_daffodils.jpg"
+    },
+    {
+      "title": "Dream Yoga",
+      "url": "https://learn.tricycle.org/p/dream-yoga",
+      "description": "Andrew Holecek introduces the Tibetan night practices of lucid dreaming and dream yoga, using the hours spent asleep as part of meditation practice.",
+      "price": "$169",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "dreamwork",
+        "meditation"
+      ],
+      "image": "https://uploads.teachablecdn.com/attachments/TsG8LwUNSemzX9q5xYI4_DY-catalog-cover.jpg"
+    },
+    {
+      "title": "Tricycle membership",
+      "url": "https://tricycle.org/join/",
+      "description": "A subscription to the magazine that also opens the video dharma talks, monthly film screenings, e-books and the archive going back to 1991.",
+      "price": "Contact for pricing",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://tricycle.org/wp-content/uploads/2022/07/Tricycle-Subscribe-Image-1-scaled.jpg"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Tricycle Talks podcast",
+      "url": "https://tricycle.org/podcast/",
+      "description": "Free conversations between the magazine's editors and Buddhist teachers, scholars and writers, published regularly.",
+      "featured": true,
+      "resource_type": "workshop",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://tricycle.org/wp-content/uploads/2022/07/Tricycle-Subscribe-Image-1-scaled.jpg"
+    },
+    {
+      "title": "Buddhism for Beginners",
+      "url": "https://tricycle.org/buddhism-for-beginners/",
+      "description": "A free collection of plain introductions to Buddhist ideas and practices for newcomers, from what meditation involves to how the schools differ.",
+      "featured": false,
+      "resource_type": "workshop",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://tricycle.org/wp-content/uploads/2025/08/Gandhara_Buddha_tnm-scaled-e1756489832427.jpeg"
+    },
+    {
+      "title": "Daily Dharma and newsletters",
+      "url": "https://tricycle.org/newsletters/",
+      "description": "Free email newsletters, including a short daily quotation from a Buddhist teacher and a weekly round-up of the magazine's articles.",
+      "featured": false,
+      "resource_type": "workshop",
+      "subjects": [
+        "mindfulness"
+      ],
+      "image": "https://tricycle.org/wp-content/uploads/2026/05/THE-DAILY-DHARMA-NEWSLETTER_FB.png"
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "channel",
+    "rank": 609,
+    "hub": null,
+    "tier_evidence": "YouTube 19,600 subscribers (YouTube Data API, 10 Nov 2026); no other counts read (social accounts never fetched) → ~20k → local_hero",
+    "email": "yes",
+    "email_source": "https://tricycle.org/contact/",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 10 source(s)",
+    "flags": [
+      "Brand inbox: editorial@tricycle.org (for 'all other editorial and business inquiries' on the contact page).",
+      "Possible editorial-stature override: Tricycle is the best-known independent Buddhist magazine in the West (founded 1991); YouTube alone is small. Not raised.",
+      "Course prices are written as published ('$159', '$169'); the pages do not state a currency code.",
+      "Photo is the site's social cover image (wordmark with a red Buddha figure), from tricycle.org's own uploads. The YouTube avatar (an orange 'T' disc) was not used as it may be a default letter avatar.",
+      "Membership price is not shown on tricycle.org/join (checkout is on subscribe.tricycle.org, not fetched).",
+      "Spiritpedia teachers seen on its channel: cuong-lu, leslie-booker, nikki-mirghafori, stephen-batchelor, yong-oh (from our plans); Sharon Salzberg is also listed on Spiritpedia.",
+      "Most of the latest 100 uploads are under-1-minute shorts; only the long talks are used."
+    ],
+    "left_out": [
+      "Uploads on AI, ghost photography and a climate-policy event left out as off-topic or political.",
+      "Courses with condition-led titles (e.g. 'Freeing the Mind When the Body Hurts', 'Mindful Grieving') left out under the health rule.",
+      "Advertising and careers pages not items."
+    ]
+  },
+  "images_final": true
+}

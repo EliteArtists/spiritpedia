@@ -1,0 +1,118 @@
+{
+  "healer": {
+    "healer_slug": "centre-de-yoga-iyengar-de-paris",
+    "location_source": "https://centreiyengar-paris.fr/contact-et-infos/",
+    "create": {
+      "name": "Centre de Yoga Iyengar de Paris",
+      "bio": "Centre de Yoga Iyengar de Paris is one of the oldest Iyengar schools in France. Faeq Biria, a close student of B.K.S. Iyengar who helped set up Iyengar teacher training and certification in many countries and contributed to several of his teacher's books, opened it in 1980; since 1989 it has occupied a high-ceilinged ground-floor room on the avenue Victor Hugo in the 16th arrondissement, which Iyengar himself inaugurated in 1990. Since Faeq's death in 2022 it has been directed by Corine Biria, who began yoga in 1981, studied in Pune for many years and has led teacher trainings in France and abroad, with a team of teachers trained by Faeq.\n\nClasses run seven days a week at several levels, mostly ninety minutes long, with two-hour advanced sessions, classes for children, teenagers and older students, and some two-hour classes with Corine streamed online. Monthly Saturday workshops revisit the basics or one family of poses, seasonal intensives are held in winter, at Easter and in summer, and year-long study cycles deepen practice, teaching skill and philosophy, including a mentored path towards Iyengar certification.",
+      "tier": "local_hero",
+      "entity_type": "school",
+      "founded_year": 1980,
+      "availability": "local_online",
+      "city": "Paris",
+      "country": "France",
+      "subjects": [
+        "yoga",
+        "breathwork"
+      ],
+      "website_url": "https://centreiyengar-paris.fr/",
+      "booking_url": "https://centreiyengar-paris.fr/cours-de-yoga/",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": null,
+      "image_urls": [
+        "https://centreiyengar-paris.fr/wp-content/uploads/7-Photo-de-la-salle-pour-la-partie-Un-peu-dhistoire.jpg",
+        "https://centreiyengar-paris.fr/wp-content/uploads/3-0-presentation-les-cours-de-yoga.jpg",
+        "https://centreiyengar-paris.fr/wp-content/uploads/puja-iyengar-paris.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Cours de yoga: tarifs (classes, class cards and unlimited pass)",
+      "url": "https://centreiyengar-paris.fr/cours-de-yoga/",
+      "description": "Weekly Iyengar classes at the centre, from beginners to advanced, bought as single classes, class cards or a 30-day unlimited pass, with a few two-hour classes online. Reduced rates apply to students under 26, job seekers and people over 75.",
+      "price": "Cours d'essai d'1h30: 23 €; Pack Bienvenue (3 séances en 2 semaines): 49 €; Cours d'1h30: 34 € (réduit 23 €); Carte de 10 cours d'1h30: 300 € (réduit 201 €); Abonnement illimité: 220€/mois; Carte de 16 cours en ligne de 2h avec Corine: 400 €",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://centreiyengar-paris.fr/wp-content/uploads/3-0-presentation-les-cours-de-yoga.jpg"
+    },
+    {
+      "title": "Atelier Reprise des bases – Niveau 1 – 14 novembre",
+      "url": "https://centreiyengar-paris.fr/atelier-reprise-des-bases-niveau-1-14-novembre/",
+      "description": "A three-hour Saturday workshop for beginners that goes back over the foundations of the method, taught by Bhavisha Desai. Places are limited and booking is required.",
+      "price": "66€",
+      "product_type": "course",
+      "start_date": "2026-11-14",
+      "end_date": "2026-11-14",
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://centreiyengar-paris.fr/wp-content/uploads/%C2%A9AnnaMarchlewska8084.jpg"
+    },
+    {
+      "title": "Stage d'hiver 2026",
+      "url": "https://centreiyengar-paris.fr/stage-dhiver-2026/",
+      "description": "A weekend intensive at the centre for students at levels 3 and 3-4, led by Emily Megged over a Saturday afternoon and a full Sunday.",
+      "price": "250€ (tarif réduit 210€)",
+      "product_type": "course",
+      "start_date": "2026-12-05",
+      "end_date": "2026-12-06",
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://centreiyengar-paris.fr/wp-content/uploads/330px-Paris_Sous_la_neige_pont_alexandre_III_29786050448.jpg"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Quelques conseils (guidance before and after practice)",
+      "url": "https://centreiyengar-paris.fr/cours-de-yoga/conseils/",
+      "description": "The centre's French-language guidance on how to prepare for a class and how to carry its quiet into the rest of the day, treating practice as both physical work and a sacred discipline.",
+      "featured": true,
+      "resource_type": "practice",
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://centreiyengar-paris.fr/wp-content/uploads/sraswati-15pc-.png"
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "yoga-school",
+    "rank": 1058,
+    "hub": null,
+    "tier_evidence": "No YouTube channel linked from the pages read; Facebook and Instagram (linked from the contact page) not fetched; no readable followers → local_hero.",
+    "email": "contact form",
+    "email_source": null,
+    "contact_form_url": "https://centreiyengar-paris.fr/contact-et-infos/",
+    "bio_check": "OK: no 8-word runs against 14 source(s)",
+    "flags": [
+      "Lead from the Association Française de Yoga Iyengar's centre list (CYI de Paris, Corine Biria); facts from the centre's own site (centreiyengar-paris.fr; robots.txt allows us).",
+      "Possible editorial-stature override: founded in 1980 by Faeq Biria, a senior disciple of B.K.S. Iyengar, and inaugurated by Iyengar in person in 1990; the owner decides, tier left at local_hero.",
+      "No email is published; the contact form on the contact page is used.",
+      "Founder Faeq Biria died in 2022 (his page gives 1946-2022); the bio says so.",
+      "Bookings go through Bsport and Deciplus (not opened).",
+      "Possible future listings: Corine Biria (director), Emily Megged, Bhavisha Desai, Ileana Wirth, Patxi Lizardi.",
+      "No Spiritpedia teachers are named on the site, so the teachers file has no links."
+    ],
+    "left_out": [
+      "Yoga Vidya initiation 2026-2029 (mentored study cycle towards certification): no dates or price on its page and probably begun in autumn 2026; mentioned in the bio only.",
+      "Cycle de pratique et d'approfondissement 2026-2027 (900 €) and Yoga Vidya 2026-2027 advanced cycle (1 500 €): started 11 October and 3-4 October 2026.",
+      "Classes for pregnant women and for multiple sclerosis, and individual classes: health rule.",
+      "Workshops in Basel and Rio de Janeiro and the Yogakshema anniversary: held elsewhere or by other centres.",
+      "Podcast interviews with Corine Biria: on outside podcasts, not the centre's own content."
+    ]
+  },
+  "images_final": true
+}

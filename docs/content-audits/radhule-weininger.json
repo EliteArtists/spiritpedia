@@ -1,0 +1,182 @@
+{
+  "healer": {
+    "healer_slug": "radhule-weininger",
+    "location_source": "https://www.radhuleweiningerphd.com/about-me",
+    "create": {
+      "name": "Radhule Weininger",
+      "bio": "Radhule Weininger is a clinical psychologist and Buddhist meditation teacher based in Santa Barbara, California, and the co-founder and guiding teacher of Mindful Heart Programs, a non-profit that offers free daily meditation sittings online alongside local retreats and classes. She trained as a doctor in Germany, and an illness during her studies took her to Sri Lanka in 1980 to learn Buddhist meditation. After moving to the United States she qualified as a psychologist and has taught mindfulness at La Casa de Maria retreat centre for more than twenty years.\n\nHer teaching joins Theravada mindfulness and compassion practice with the awareness practices of Mahamudra and Dzogchen, which she presents step by step as Awake Awareness. She names Jack Kornfield and Joanna Macy among her mentors, and has studied awareness practice with Dan Brown, Alan Wallace, John Makransky and Loch Kelly. She is the author of two books from Shambhala: Heartwork, on self-compassion, and Heart Medicine, on working with recurring painful patterns through mindful, loving attention, which carries forewords by the Dalai Lama and Joanna Macy. She leads drop-in groups, half-day and longer retreats in and around Santa Barbara, and individual meditation guidance, and also keeps a psychotherapy practice.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local_online",
+      "city": "Santa Barbara, California",
+      "country": "United States",
+      "subjects": [
+        "meditation",
+        "mindfulness",
+        "non-duality"
+      ],
+      "website_url": "https://www.radhuleweiningerphd.com/",
+      "booking_url": "https://www.mindfulheartprograms.org/special-events",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "radhule@gmail.com",
+      "image_urls": [
+        "https://images.squarespace-cdn.com/content/v1/5ef3f4f45e9c8709a01416b1/5741d176-a514-4ef8-b37e-8d62f3bf97a3/YogaSoup-10.jpg"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "omega-institute",
+      "role": "instructor"
+    }
+  ],
+  "videos": [
+    {
+      "title": "The Deep Resilience Program: Session 1, Step 1",
+      "url": "https://www.youtube.com/watch?v=NhdwNF9TyME",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "channel": "Mindful Heart Programs"
+    },
+    {
+      "title": "The Deep Resilience Program: Session 2, Step 2",
+      "url": "https://www.youtube.com/watch?v=rzpzYNxrUfk",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "channel": "Mindful Heart Programs"
+    },
+    {
+      "title": "Step 6 Luminous resilience",
+      "url": "https://www.youtube.com/watch?v=b3II6yBIIoo",
+      "subjects": [
+        "meditation",
+        "non-duality"
+      ],
+      "channel": "Mindful Heart Programs"
+    }
+  ],
+  "books": [
+    {
+      "title": "Heart Medicine",
+      "slug": "heart-medicine-weininger",
+      "author": "Radhule Weininger",
+      "asin": "1611808235",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "Twelve steps for noticing and loosening the emotional and behavioural patterns that keep repeating in a life, using self-compassion, mindfulness and body awareness, with short practices in every chapter.",
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1611808235.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "Heartwork",
+      "slug": "heartwork-weininger",
+      "author": "Radhule Weininger",
+      "asin": "1611804817",
+      "store": "amazon.com",
+      "goodreads_url": "https://www.goodreads.com/book/show/32686217-heartwork",
+      "worldofbooks_url": null,
+      "description": "Nine practices for learning to meet oneself with kindness, drawing on stories from the author's life and work, on the view that compassion turned inward naturally widens to others.",
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1611804817.01._SCLZZZZZZZ_.jpg"
+    }
+  ],
+  "courses": [
+    {
+      "title": "Effortless Mindfulness and Sustainable Compassion: Half-Day Retreat",
+      "url": "https://www.essencemedspasb.com/event-details-1/heartwork-effortless-mindfulness-and-sustainable-compassion-with-radhule-weininger",
+      "description": "An afternoon meditation retreat in central Santa Barbara, held by Mindful Heart Programs, on resting in open awareness and on a kind of compassion that does not wear out. All are welcome.",
+      "price": "Suggested donation $35",
+      "product_type": "retreat",
+      "start_date": "2026-11-21",
+      "end_date": "2026-11-21",
+      "subjects": [
+        "meditation",
+        "mindfulness",
+        "non-duality"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/5ef3f4f45e9c8709a01416b1/5741d176-a514-4ef8-b37e-8d62f3bf97a3/YogaSoup-10.jpg"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Mindful Heart Programs Recorded Meditations",
+      "url": "https://www.mindfulheartprograms.org/recorded-meditations",
+      "description": "A free library of short guided meditations from the non-profit she co-founded, in mindfulness, compassion and Awake Awareness, several of them led by Radhule herself.",
+      "featured": true,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation",
+        "mindfulness",
+        "non-duality"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/6283f91ef9aeae392a6975bc/cbf2fdfb-2e18-4519-84d9-c8e3f85ba36a/Artboard+15+copy+9.png?format=1500w"
+    },
+    {
+      "title": "Mindful Heart Programs Daily Online Meditations",
+      "url": "https://www.mindfulheartprograms.org/meditate",
+      "description": "Free group sittings on Zoom every day of the week, led by Radhule and the Mindful Heart teachers; donations keep them running.",
+      "featured": false,
+      "resource_type": "practice",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/6283f91ef9aeae392a6975bc/cbf2fdfb-2e18-4519-84d9-c8e3f85ba36a/Artboard+15+copy+9.png?format=1500w"
+    },
+    {
+      "title": "Heart Medicine Audio Practices",
+      "url": "https://www.radhuleweiningerphd.com/audio-practices",
+      "description": "Free recordings of the awareness and heart practices from her book Heart Medicine, released by her publisher.",
+      "featured": false,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/5ef3f4f45e9c8709a01416b1/e2e37315-081f-4805-9ceb-c15321466ace/RADHULE+WEININGER%402x.png?format=1500w"
+    }
+  ],
+  "sprint": {
+    "sprint": "pipelines-3",
+    "hub": "omega",
+    "rank": 437,
+    "hub_url": "https://www.eomega.org/people/radhule-weininger",
+    "tier_evidence": "YouTube @mindfulheartprograms6343 172 subscribers (Data API, 10 Nov 2026; the non-profit she co-founded); her own site links no personal YouTube; Instagram and Facebook not read (off limits). Total ~0.2k → local_hero.",
+    "email": "yes",
+    "email_source": "https://www.radhuleweiningerphd.com/about-me",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 16 source(s)",
+    "flags": [
+      "Omega named on: https://www.radhuleweiningerphd.com/heart-medicine (book tour list: weekend retreat, Rhinebeck NY, linking https://www.eomega.org/workshops/heart-medicine-difficult-times). Omega page not opened: eomega.org returns 403 to us (6 Nov 2026).",
+      "She is also a practising psychotherapist (about page: full-time practice, clients with depression, anxiety and trauma). Her public teaching (Mindful Heart Programs, books, retreats) is meditation, so listed; therapy and condition-framed items left out. Owner may want to look.",
+      "Photo: a single-person portrait on her own about page (no caption); she appears to be the woman shown there and on the home page, but the image is not named.",
+      "Videos are from the Mindful Heart Programs channel (her non-profit); the Deep Resilience Program sessions appear to be her course, but the speaker was not confirmed from the API data.",
+      "Heartwork ISBN taken from the Apple Books link (isbn9781611804812) on her own Published Works page and converted; it may be the e-book ISBN. Heart Medicine ASIN 1611808235 from the Amazon link on her own Heart Medicine page. Neither confirmed elsewhere.",
+      "Half-day retreat registration link (essencemedspasb.com) copied from the Mindful Heart events page, not opened; the date (Saturday 21 November) is read as 2026 from the page's newsletter list.",
+      "Book blurbs mention trauma and healing; descriptions avoid this."
+    ],
+    "left_out": [
+      "Individual meditation sessions (personal-meditations page): the page sells them partly on anxiety, depression and physical illness (health rule).",
+      "Effortless Mindfulness and Field of Care Meditation, 20 November (Summerland): page says it is to cultivate healing; borderline, left out.",
+      "Yoga Soup afternoon retreat: no date on her pages.",
+      "Heart Medicine in Difficult Times series and the Omega weekend: past dates.",
+      "Older dated Zoom recordings on the Mindful Heart channel: untitled session dates."
+    ]
+  },
+  "images_final": true
+}

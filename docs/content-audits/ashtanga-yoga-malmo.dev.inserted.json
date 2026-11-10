@@ -1,0 +1,34 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 1278,
+    "healer_slug": "ashtanga-yoga-malmo"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "722b40b8-afed-4a11-a9f1-e542b1691236",
+      "slug": "mysore-classes-cards-and-memberships",
+      "title": "Mysore classes: cards and memberships"
+    },
+    {
+      "table": "courses",
+      "id": "ce182ade-ad2a-4640-94cf-da3b0890412f",
+      "slug": "stadsretreat-kickoff-2027",
+      "title": "STADSRETREAT – Kickoff 2027"
+    },
+    {
+      "table": "courses",
+      "id": "261fb445-c747-43b8-adc7-820f3b40cd4e",
+      "slug": "ashtangayoga-grundkurs-beginners",
+      "title": "Ashtangayoga grundkurs (beginners)"
+    },
+    {
+      "table": "courses",
+      "id": "44a45129-af38-4bab-8138-9f556f2cfbf8",
+      "slug": "ashtangayoga-grundkurs-fortsattning-continuation",
+      "title": "Ashtangayoga grundkurs/fortsättning (continuation)"
+    }
+  ],
+  "at": "2026-11-10T17:02:16.138Z"
+}

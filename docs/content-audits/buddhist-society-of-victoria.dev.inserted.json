@@ -1,0 +1,94 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 1252,
+    "healer_slug": "buddhist-society-of-victoria"
+  },
+  "rows": [
+    {
+      "table": "videos",
+      "id": 9111,
+      "slug": "live-dhamma-talk-bsv-ajahn-nissarano-27-sept-2026",
+      "title": "LIVE Dhamma talk - BSV | Ajahn Nissarano | 27 SEPT 2026"
+    },
+    {
+      "table": "videos",
+      "id": 9112,
+      "slug": "live-guided-meditation-bsv-ajahn-nissarano-28-sept-2026",
+      "title": "LIVE Guided Meditation - BSV | Ajahn Nissarano | 28 SEPT 2026"
+    },
+    {
+      "table": "videos",
+      "id": 9113,
+      "slug": "ajahn-nissarano-can-lay-people-reach-enlightenment-16-aug-2026",
+      "title": "Ajahn Nissarano | Can lay people reach enlightenment | 16 AUG 2026"
+    },
+    {
+      "table": "videos",
+      "id": 9114,
+      "slug": "interconnection-what-does-it-mean-for-karma-and-responsibility",
+      "title": "Interconnection: What does it mean for karma and responsibility?"
+    },
+    {
+      "table": "videos",
+      "id": 9115,
+      "slug": "live-dhamma-talk-bsv-ajahn-aranavihari-13-sept-2026",
+      "title": "LIVE Dhamma talk - BSV | Ajahn Aranavihari | 13 SEPT 2026"
+    },
+    {
+      "table": "videos",
+      "id": 9116,
+      "slug": "live-guided-meditation-bsv-ajahn-sadaro-31-aug-2026",
+      "title": "LIVE Guided Meditation - BSV | Ajahn Sādaro | 31 AUG 2026"
+    },
+    {
+      "table": "videos",
+      "id": 9117,
+      "slug": "live-dhamma-talk-bsv-venerable-pasadika-30-aug-2026",
+      "title": "LIVE Dhamma talk - BSV | Venerable Pasadika | 30 AUG 2026"
+    },
+    {
+      "table": "courses",
+      "id": "167afe11-a1ff-4b3f-8fc0-fa50b67dc169",
+      "slug": "relax-grow-5-day-retreat-with-bhante-cunda-and-bhante-bodhidhaja",
+      "title": "Relax & Grow: 5 Day Retreat with Bhante Cunda and Bhante Bodhidhaja"
+    },
+    {
+      "table": "courses",
+      "id": "42bd2372-3cb9-417c-970d-066510f47dbc",
+      "slug": "5-day-retreat-with-ajahn-sadaro",
+      "title": "5 Day Retreat with Ajahn Sadaro"
+    },
+    {
+      "table": "courses",
+      "id": "c5ad6da1-1598-406c-80e8-932f2d10849d",
+      "slug": "5-day-retreat-with-ajahn-mudito",
+      "title": "5 Day Retreat with Ajahn Mudito"
+    },
+    {
+      "table": "courses",
+      "id": "1667dac9-7cdf-4ef3-b686-1e70f75f8a9d",
+      "slug": "bsv-membership",
+      "title": "BSV membership"
+    },
+    {
+      "table": "free_resources",
+      "id": "6e1c91ec-60fd-45e4-8bae-ae721084df18",
+      "slug": "weeknight-guided-meditations",
+      "title": "Weeknight guided meditations"
+    },
+    {
+      "table": "free_resources",
+      "id": "dc2ac1c5-6560-48d1-b215-0161a3d3540c",
+      "slug": "dhamma-talks-podcast",
+      "title": "Dhamma Talks podcast"
+    },
+    {
+      "table": "free_resources",
+      "id": "5e23be0c-198b-4b4b-9a4c-b0345d7f0910",
+      "slug": "discover-buddhism",
+      "title": "Discover Buddhism"
+    }
+  ],
+  "at": "2026-11-10T16:03:47.221Z"
+}

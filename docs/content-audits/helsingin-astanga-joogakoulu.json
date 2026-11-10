@@ -1,0 +1,98 @@
+{
+  "healer": {
+    "healer_slug": "helsingin-astanga-joogakoulu",
+    "location_source": "https://astangajooga.fi/ota-yhteytta/",
+    "create": {
+      "name": "Helsingin Astanga Joogakoulu",
+      "bio": "Helsingin Astanga Joogakoulu, the Ashtanga Yoga School of Helsinki, was founded in 1997 and describes itself as one of the oldest schools in Europe devoted to Ashtanga yoga. Its practice rooms are in a courtyard building on Annankatu in the Kamppi district of central Helsinki, and classes are taught in Finnish and English.\n\nThe school's backbone is Mysore-style practice, where each student moves through the Ashtanga sequence at their own pace with individual help from the teacher. Newcomers begin with an introductory course, then move on to follow-up courses and graded led classes before joining the Mysore room. Alongside Ashtanga the timetable includes gentler yoga for all, yin yoga and some live online classes.\n\nSenior teachers Petri Räisänen and Juha Javanainen lead special events through the year. Over the turn of the year they run a Winter City Retreat in Helsinki that pairs morning Mysore practice with pranayama, meditation, chanting and talks on the spiritual side of yoga. Each July the school moves to Houtskär, an island in the archipelago of south-west Finland, for a summer retreat of up to three weeks with daily Mysore practice, yoga philosophy on the Yoga Sutras, pranayama and meditation, mostly vegan meals and an evening sauna by the sea; families are welcome and the classes are mainly in English.",
+      "tier": "local_hero",
+      "entity_type": "school",
+      "availability": "local_online",
+      "founded_year": 1997,
+      "city": "Helsinki",
+      "country": "Finland",
+      "subjects": [
+        "yoga",
+        "meditation"
+      ],
+      "website_url": "https://astangajooga.fi/",
+      "booking_url": "https://astangajooga.fi/ota-yhteytta/",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "info@astanga.fi",
+      "image_urls": [
+        "https://astangajooga.fi/wp-content/uploads/Petri-class-landscape-01-1280x576.jpg",
+        "https://astangajooga.fi/wp-content/uploads/Mysore-class-002-1280x774.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Winter City Retreat with Petri and Juha",
+      "url": "https://astangajooga.fi/ajankohtaista/city-retreat-helsinki-petri-juha-december/",
+      "description": "Six mornings of Mysore-style Ashtanga, led by Petri Räisänen together with Juha Javanainen, at the school's Annankatu studio, with late-morning pranayama, meditation and chanting and talks on yoga, mind and consciousness. Taught in English; days can be booked singly.",
+      "price": "Yoga 6 days and workshop 4 days: 286 € (reduced 259 €); Yoga and workshop 1 day: 89 € (reduced 79 €); Morning yoga drop-in: 41 € (reduced 37 €)",
+      "product_type": "course",
+      "start_date": "2026-12-26",
+      "end_date": "2026-12-31",
+      "subjects": [
+        "yoga",
+        "breathwork",
+        "meditation"
+      ],
+      "image": "https://astangajooga.fi/wp-content/uploads/Petri-class-landscape-01-1280x576.jpg"
+    },
+    {
+      "title": "Ashtanga Yoga Summer Retreat on Houtskär",
+      "url": "https://astangajooga.fi/summer-retreat/",
+      "description": "One to three weeks on an island in the southern Finnish archipelago: early-morning Mysore practice or a beginners' course, afternoon technique labs, pranayama and Yoga Sutra philosophy, mostly vegan meals and a sauna by the sea. Family friendly, taught mainly in English.",
+      "price": "Contact for pricing",
+      "product_type": "retreat",
+      "start_date": "2027-07-05",
+      "end_date": "2027-07-25",
+      "subjects": [
+        "yoga",
+        "meditation",
+        "breathwork"
+      ],
+      "image": "https://astangajooga.fi/wp-content/uploads/Houtskar-boat-peer-001-1280x577.jpg"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "yoga-school",
+    "rank": 767,
+    "hub": null,
+    "tier_evidence": "No YouTube channel linked on the site; Instagram and Facebook not fetched; no readable followers → local_hero",
+    "email": "yes",
+    "email_source": "https://astangajooga.fi/ota-yhteytta/",
+    "contact_form_url": "https://astangajooga.fi/ota-yhteytta/",
+    "bio_check": "OK: no 8-word runs against 11 source(s)",
+    "flags": [
+      "Lead from the Sharath Yoga Centre authorised-teacher directory (Finland), which names the school. astangajooga.fi robots.txt allows us; photos are on astangajooga.fi itself.",
+      "Email info@astanga.fi (plain mailto on every page); the contact page also has a course sign-up form.",
+      "Summer retreat dates 5–25 Jul 2027 come from the site's own menu ('Summer Retreat 5.-25.7.2027'); the retreat page body still describes earlier years and its prices are in an image, so 'Contact for pricing'.",
+      "Class-pass prices on /hinnasto/ are loaded by the shop and show as 0 € in the page, so no membership item.",
+      "The summer retreat's second and third weeks are themed 'Healing Bodywork' and 'Healing Arts'; not named in the item. The school's video library lists a 'therapeutic Ashtanga' course; left out.",
+      "Autumn Colours retreat at Konnevesi: menu says 23–26 Sept 2027 but the page says 24–27 Sept 2026; left out as unclear.",
+      "Possible future listings: Petri Räisänen, Juha Javanainen; also Tamara Ashley, Marke Murtomäki.",
+      "No Spiritpedia teachers are named on the site, so the teachers file has no links.",
+      "Also offers pilates and handstand classes; minor beside Ashtanga.",
+      "Regional: Helsinki; Finland is thin on Spiritpedia."
+    ],
+    "left_out": [
+      "Kausiliput ja krediitit (/hinnasto/): prices not readable in the page.",
+      "Yogaline video courses: the library says it is moving to a new service; includes a therapeutic Ashtanga course.",
+      "Autumn Colours Yoga Retreat: conflicting dates.",
+      "Pilates, Handstand & Core: fitness classes."
+    ]
+  },
+  "images_final": true
+}

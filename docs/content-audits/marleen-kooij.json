@@ -1,0 +1,105 @@
+{
+  "healer": {
+    "healer_slug": "marleen-kooij",
+    "location_source": "https://www.do-mana.nl/over/",
+    "create": {
+      "name": "Marleen Kooij",
+      "bio": "Marleen Kooij is a Dutch Quantum-Touch practitioner and teacher who runs her own practice, do mana, by the sea in Scheveningen, with a second room on the Kortenaerplein in Amsterdam. The name pairs 'do', meaning the way, with mana, a Hawaiian word for life-force energy, and her logo sets the Chinese character for the heart inside a labyrinth. Alongside the healing work she has a background in the arts and crafts, from ceramics and woodcuts to textiles and photography.\n\nHer one-to-one sessions use Quantum-Touch together with Quantum-Share, a broader approach developed by the QTouch Trainingen team, and can be given in her practice room, at a client's home in central or west Amsterdam, or at a distance. She most enjoys showing people how to do the work themselves, and she teaches the Quantum-Touch Level 1 course as a weekend in Scheveningen, covering breathing and visualisation methods, the use of colour, sound and the chakras, working with children and animals, and distance sessions. Each month she also holds new-moon and seasonal circles for women in Scheveningen and Amsterdam, with ceremony, shamanic journeys and time spent with the cycles of nature.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local_online",
+      "city": "Scheveningen",
+      "country": "Netherlands",
+      "subjects": [
+        "quantum-touch",
+        "energy-medicine",
+        "shamanism"
+      ],
+      "website_url": "https://www.do-mana.nl/",
+      "booking_url": "https://www.do-mana.nl/agenda/",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "marleenkooijdm@gmail.com",
+      "image_urls": [
+        "https://www.do-mana.nl/wp-content/uploads/2020/08/IMG-3341-1-e1596640975121-scaled.jpg",
+        "https://www.do-mana.nl/wp-content/uploads/2019/09/IMG_5898.jpeg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Quantum-Touch sessions",
+      "url": "https://www.do-mana.nl/quantum-touch/",
+      "description": "Hour-long hands-on energy sessions in her Scheveningen or Amsterdam practice room, or at home in central and west Amsterdam for a small extra fee. She also works at a distance at a lower rate.",
+      "price": "€65 per one-hour session; €40 distance session",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "quantum-touch",
+        "energy-medicine"
+      ],
+      "image": "https://www.do-mana.nl/wp-content/uploads/2018/09/IMG-2178-1024x228.jpg"
+    },
+    {
+      "title": "Quantum-Touch Level 1 weekend workshop",
+      "url": "https://www.do-mana.nl/quantum-touch-level-1-workshop/",
+      "description": "A two-day beginners' course in Scheveningen, with lots of practice in pairs, breathing and visualisation methods, colour and sound, and how to give distance sessions. Students receive a syllabus and a certificate; dates appear on her agenda.",
+      "price": "€325",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "quantum-touch",
+        "energy-medicine",
+        "self-healing"
+      ],
+      "image": "https://www.do-mana.nl/wp-content/uploads/2018/09/IMG_E1885-1-1024x230.jpg"
+    },
+    {
+      "title": "Maancirkel (women's moon circles)",
+      "url": "https://www.do-mana.nl/maancirkel/",
+      "description": "Monthly evening and afternoon circles for women in Scheveningen and Amsterdam, timed to the moon and the seasonal festivals. Each one brings ritual, a guided shamanic journey and sharing in a sacred space.",
+      "price": "€30",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "shamanism",
+        "spirituality"
+      ],
+      "image": "https://www.do-mana.nl/wp-content/uploads/2025/11/maanpanorama-1024x120.png"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "quantum-touch",
+    "rank": 144,
+    "hub": null,
+    "tier_evidence": "No YouTube channel linked from her site; Facebook (marleen.kooij) and Instagram linked, never fetched (rule) → 0 readable followers → local_hero. Main accounts unreadable.",
+    "email": "yes",
+    "email_source": "https://www.do-mana.nl/contact/",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 10 source(s)",
+    "flags": [
+      "Base: her practice address is in Scheveningen, a district of The Hague; recorded as published, may need mapping to The Hague. She also works from a practice room in Amsterdam.",
+      "Her agenda page uses a second address (marleenkooij@gmail.com) for sign-ups; the contact page's marleenkooijdm@gmail.com is used.",
+      "Workshop page says students learn to straighten a tilted pelvis; that line is left out of the description (alignment claim). Healing page opens with easing a sister's pain as a child; not used.",
+      "Level 1 workshop dates on the agenda (May and September 2026) have passed, so it is listed undated as a repeating course.",
+      "Quantum-Share text on her site is largely taken from QTouch Trainingen's site (she says so); not copied.",
+      "Regional: Scheveningen / The Hague."
+    ],
+    "left_out": [
+      "Quantum-Allergy sessions: condition-named (allergies).",
+      "Past Quantum-Touch Level 1 dates (May and September 2026)."
+    ]
+  },
+  "images_final": true
+}

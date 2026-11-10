@@ -1,0 +1,40 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 1212,
+    "healer_slug": "szkola-jogi-odrobina-dobrej-woli"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "7c5338fe-0bd8-4289-abb3-2aea3f257499",
+      "slug": "karnet-miesieczny-otwarty",
+      "title": "Karnet miesięczny otwarty"
+    },
+    {
+      "table": "courses",
+      "id": "5b1c436e-da4f-436f-b0aa-d0488b9ddd71",
+      "slug": "joga-tytu-w-przygotowaniu-dom-przebudzen",
+      "title": "Joga (tytuł w przygotowaniu), Dom Przebudzeń"
+    },
+    {
+      "table": "courses",
+      "id": "acc643b5-9ed6-4964-bbbd-02f15e569523",
+      "slug": "sztuka-bycia-zadowolonym-porabka-march-2027",
+      "title": "Sztuka bycia zadowolonym, Porąbka (March 2027)"
+    },
+    {
+      "table": "courses",
+      "id": "1bc51519-4e13-424e-ba78-e6910ebf507a",
+      "slug": "sztuka-bycia-zadowolonym-porabka-october-2027",
+      "title": "Sztuka bycia zadowolonym, Porąbka (October 2027)"
+    },
+    {
+      "table": "free_resources",
+      "id": "252bda67-0597-4f0b-a414-c3fecf27314c",
+      "slug": "pranayama-i-medytacja",
+      "title": "Pranayama i medytacja"
+    }
+  ],
+  "at": "2026-11-10T13:51:10.473Z"
+}

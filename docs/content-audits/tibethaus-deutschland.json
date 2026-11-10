@@ -1,0 +1,138 @@
+{
+  "healer": {
+    "healer_slug": "tibethaus-deutschland",
+    "location_source": "https://www.tibethaus.com/das-tibethaus/ueber-uns/",
+    "create": {
+      "name": "Tibethaus Deutschland",
+      "bio": "Tibethaus Deutschland is a Tibetan Buddhist cultural and educational institute in Frankfurt am Main, with the Dalai Lama as its patron. It grew out of Chödzong, a Buddhist centre in Franconia that ran for more than twenty years under Dagyab Rinpoche, a Tibetan scholar based in Berlin who once headed the first Tibet House in Delhi; from 2005 the work was rebuilt in Frankfurt as a Tibethaus, one of only two outside India recognised by the Tibet House cultural centre in New Delhi, the other being Tibet House US. In 2017 the association moved into its own late nineteenth-century villa near the city's trade fair grounds. Dagyab Rinpoche remains its spiritual guide, joined by the young Geshe Lharampa Zong Rinpoche.\n\nIts programme runs to roughly 350 evening classes, seminars, workshops and talks a year across Buddhism, Tibetan art and culture, personal development and dialogue with science, many of them streamed live. Structured study programmes in German include a long-term Buddhist training, a reading course on classic Buddhist texts and a Christian-Buddhist dialogue forum, alongside open meditation evenings in the house. The YouTube channel keeps German-language teachings by Dagyab Rinpoche, Dalai Lama teachings rendered in German from 2020 and recent talks by visiting Tibetan teachers, several interpreted into German.",
+      "tier": "local_hero",
+      "entity_type": "organisation",
+      "availability": "local_online",
+      "city": "Frankfurt am Main",
+      "country": "Germany",
+      "subjects": [
+        "ancient-wisdom",
+        "meditation",
+        "spirituality"
+      ],
+      "website_url": "https://www.tibethaus.com/",
+      "booking_url": "https://www.tibethaus.com/veranstaltungen/kalender/",
+      "youtube_url": "https://www.youtube.com/@tibethausdeutschland",
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "info@tibethaus.com",
+      "image_urls": [
+        "https://yt3.ggpht.com/ytc/AIdro_nTw4psB-XF7niXMFS1OHQKDN8BjQ3qDpzoo906ku-INA=s800-c-k-c0x00ffffff-no-rj"
+      ],
+      "founded_year": 2005
+    }
+  },
+  "teaches_at": [],
+  "videos": [
+    {
+      "title": "\"Der Stufenweg des XIV. Dalai Lama\" – Übersetzung des großen Werkes | S. E. Dagyab Kyabgön Rinpoche",
+      "url": "https://www.youtube.com/watch?v=pVUrenn5whs",
+      "subjects": [
+        "ancient-wisdom"
+      ],
+      "channel": "Tibethaus.Deutschland"
+    },
+    {
+      "title": "Open Session mit S. E. Dagyab Kyabgön Rinpoche und Dr. Monika Dräger zum Kurs \"Kraft des Herzens\"",
+      "url": "https://www.youtube.com/watch?v=nv_XpOudkB8",
+      "subjects": [
+        "spirituality"
+      ],
+      "channel": "Tibethaus.Deutschland"
+    },
+    {
+      "title": "Einfach relaxed bleiben - Grundsätzliche Gedanken von S. E. Dagyab Rinpoche aus dem Berliner Retreat",
+      "url": "https://www.youtube.com/watch?v=Xzkba-0SOYY",
+      "subjects": [
+        "meditation"
+      ],
+      "channel": "Tibethaus.Deutschland"
+    },
+    {
+      "title": "H. E. Zong Rinpoche - The foundation of all perfections - Part 1",
+      "url": "https://www.youtube.com/watch?v=aUkguPNlx4w",
+      "subjects": [
+        "ancient-wisdom"
+      ],
+      "channel": "Tibethaus.Deutschland"
+    },
+    {
+      "title": "The Story of Guru Rinpoche - Do Tulku Rinpoche",
+      "url": "https://www.youtube.com/watch?v=NrQi-G0lyW8",
+      "subjects": [
+        "ancient-wisdom",
+        "spirituality"
+      ],
+      "channel": "Tibethaus.Deutschland"
+    },
+    {
+      "title": "Inner Transformation - Serkong Rinpoche (EN/DEU)",
+      "url": "https://www.youtube.com/watch?v=x-rWBORVQOY",
+      "subjects": [
+        "spirituality"
+      ],
+      "channel": "Tibethaus.Deutschland"
+    },
+    {
+      "title": "Keeping a Calm Mind in Challenging Times |  H. E. Zong Rinpoche (en/eś/de/ru)",
+      "url": "https://www.youtube.com/watch?v=5I87LoP_hH4",
+      "subjects": [
+        "meditation"
+      ],
+      "channel": "Tibethaus.Deutschland"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [
+    {
+      "title": "Offene Meditation",
+      "url": "https://www.tibethaus.com/serien/offene-meditation-nur-vor-ort-4/",
+      "description": "A recurring open meditation evening held in person at the Tibethaus villa in Frankfurt.",
+      "featured": true,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation"
+      ],
+      "image": null
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "channel",
+    "rank": 1410,
+    "hub": null,
+    "tier_evidence": "YouTube 864 subscribers (YouTube Data API, 10 Nov 2026); no other counts read (Instagram never fetched) → <1k → local_hero",
+    "email": "yes",
+    "email_source": "https://www.tibethaus.com/impressum/",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 7 source(s)",
+    "flags": [
+      "tibethaus.com answered HTTP 429 on the 9th page request (an event page); stopped there and fetched nothing further from the site, including photos. Image is the YouTube avatar (Tibethaus wordmark logo); item images null.",
+      "info@tibethaus.com is shown in the site footer ('M: info@tibethaus.com') on the Impressum and other pages (brand inbox).",
+      "Language: older uploads are German (Dagyab Rinpoche; German-interpreted Dalai Lama teachings, 2020); recent uploads are mostly English talks, some with German interpretation. Owner may prefer to treat as mixed.",
+      "The German Dalai Lama videos (2020) are not embeddable (oEmbed 401), so none are included; chosen videos are therefore mostly English with German interpretation plus three German Dagyab Rinpoche videos.",
+      "Health rule: the institute also has a Tibetan medicine (Heilkunde) area; left out of the bio and items. The Feeding Your Demons course page names emotional blocks, fears and depression as examples; my description avoids them, but the course is taught by psychotherapists: borderline, owner may drop it.",
+      "Small channel (864 subscribers, 57 videos) but a large institute (about 350 events a year).",
+      "Offering dates (4–6 Dec 2026) read from the event's ticket code '26-12-04_06' and the page title 'dezember26'; please confirm on the page.",
+      "Open meditation free-resource description is thin: the series page listed 6 dates but the event page with details was the one refused (429). Price not confirmed as free.",
+      "Dagyab Rinpoche and Zong Rinpoche are not on Spiritpedia; teachers file empty."
+    ],
+    "left_out": [
+      "Study programmes that started before 12 Nov 2026 (Forum christlich-buddhistischer Dialog, from 4 Nov; Klassiker buddhistischer Literatur, from 9 Nov).",
+      "Info-evening and promo videos; Brodbeck economics lecture series.",
+      "Tibethaus+ streaming products (separate host, not opened)."
+    ]
+  },
+  "left_out": [
+    "Den Dämonen Nahrung geben (Feeding Your Demons, 4–6 Dec 2026): left out by Claude, 10 Nov 2026 — borderline for the health rule, and its dates came from a ticket code, not read on the page."
+  ],
+  "images_final": true
+}

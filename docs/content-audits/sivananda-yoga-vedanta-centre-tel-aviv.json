@@ -1,0 +1,111 @@
+{
+  "healer": {
+    "healer_slug": "sivananda-yoga-vedanta-centre-tel-aviv",
+    "location_source": "https://www.sivananda.co.il/yoga-tel-aviv-en/",
+    "create": {
+      "name": "Sivananda Yoga Vedanta Centre Tel Aviv",
+      "bio": "Sivananda's Tel Aviv centre opened in 1971 as a branch of the International Sivananda Yoga Vedanta Centres, the organisation founded by Swami Vishnudevananda, and it has grown into one of Israel's main schools of classical yoga. It describes itself as an urban ashram rather than a studio: a three-storey building on Leteris Street in central Tel Aviv, run as a non-profit association in which the managers, teachers and reception staff all serve as volunteers in the spirit of karma yoga. Thousands of Israelis have trained as Sivananda teachers through the wider organisation, and partner centres operate in Mata, Eilat and Herzliya.\n\nThe weekly timetable runs from morning to evening, with classic ninety-minute classes, shorter hour-long sessions, gentle classes and advanced practice that ends in meditation. Newcomers start with an eight-session introduction to the postures, breathing, relaxation and yogic diet, then continue to second- and third-level courses. Further courses cover meditation and japa, positive thinking, the philosophy of yoga and Patanjali's Yoga Sutras, and the centre trains teachers to lead yoga on chairs and for children. Senior teachers from the organisation's ashrams lead weekend retreats in the city, and some classes and courses are also offered online.",
+      "tier": "local_hero",
+      "entity_type": "school",
+      "availability": "local_online",
+      "founded_year": 1971,
+      "city": "Tel Aviv",
+      "country": "Israel",
+      "subjects": [
+        "yoga",
+        "meditation",
+        "ancient-wisdom"
+      ],
+      "website_url": "https://www.sivananda.co.il/",
+      "booking_url": "https://lp.sivananda.co.il/yoga-classes/",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": null,
+      "image_urls": [
+        "https://www.sivananda.co.il/wp-content/uploads/2016/11/wsi-imageoptim-img_3819.jpg",
+        "https://www.sivananda.co.il/wp-content/uploads/2016/12/wsi-imageoptim-wsi-imageoptim-img_4821-1.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "חפשי ללא הגבלה לחודש (unlimited monthly pass)",
+      "url": "https://lp.sivananda.co.il/yoga-classes/",
+      "description": "Unlimited open classes for a month by standing order, covering the centre's classic, short, gentle and advanced Sivananda classes. A ten-class card and single classes are also sold; booking ahead through the centre's app is required.",
+      "price": "₪ 220",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://lp.sivananda.co.il/wp-content/uploads/2022/01/video.png"
+    },
+    {
+      "title": "יוגה 1 – מבוא לשיבננדה יוגה",
+      "url": "https://lp.sivananda.co.il/mavo-yoga/",
+      "description": "An eight-week introduction to classical Sivananda practice, one meeting a week, building from the five principles, yogic breathing and relaxation through the sun salutation, kapalabhati and alternate-nostril breathing to the headstand. Morning and evening groups start through the year.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga",
+        "breathwork"
+      ],
+      "image": "https://lp.sivananda.co.il/wp-content/uploads/2022/01/video.png"
+    },
+    {
+      "title": "ריטריט עירוני נובמבר 2026 עם רוקמיני צ׳יטניה",
+      "url": "https://lp.sivananda.co.il/nov26r/",
+      "description": "A two-day city retreat at the Tel Aviv centre led by Rukmini Chaitanya, a senior teacher from the Sivananda ashram in the Bahamas, with yoga classes, meditation, chanting, talks on sustaining inspiration in practice, and vegetarian meals.",
+      "price": "Contact for pricing",
+      "product_type": "retreat",
+      "start_date": "2026-11-13",
+      "end_date": "2026-11-14",
+      "subjects": [
+        "yoga",
+        "meditation",
+        "spirituality"
+      ],
+      "image": "https://lp.sivananda.co.il/wp-content/uploads/2026/10/SVNDA_%D7%94%D7%90%D7%98%D7%94-%D7%99%D7%95%D7%92%D7%94_SQR-1.jpg"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "yoga-school",
+    "rank": 717,
+    "hub": null,
+    "tier_evidence": "No YouTube channel linked on the pages read; Instagram and Facebook not fetched; no readable followers → local_hero",
+    "email": "contact form",
+    "email_source": null,
+    "contact_form_url": "https://www.sivananda.co.il/yoga-tel-aviv-en/",
+    "bio_check": "OK: no 8-word runs against 9 source(s)",
+    "flags": [
+      "Lead from the Sivananda organisation's own centre list (sivananda.org/locations/centres/); its link sivananda.org/telaviv returns 404. The site sivananda.co.il came from the organisation's community page (sivanandayogavietnam.org/community); the bare host redirects to www, and both robots.txt files allow us. Course landing pages are on lp.sivananda.co.il, whose robots.txt also allows us.",
+      "Email on the site is Cloudflare-protected and was not decoded (owner rule); the enquiry form (name, phone, email, details) on the English page is used. Phone +972-3-6961810 is published.",
+      "The urban retreat starts 13 Nov 2026, one day after the sprint margin; owner may prefer to drop it if it is too close.",
+      "No prices are in the page text for the introductory course or the retreat ('Contact for pricing').",
+      "Photos are wide banner images from the site (a class doing wheel pose and a student in a seated stretch in what appears to be the centre's practice room); not certain they were taken at the Tel Aviv centre.",
+      "Possible future listings: Rukmini Chaitanya (senior teacher, Sivananda Ashram Bahamas); teachers named on the course page: Shankari Natalie, Maheshwara Nir, Omkara Yariv, Pranava Chaitanya, Mahadev Natan.",
+      "No Spiritpedia teachers are named on the pages read, so the teachers file has no links.",
+      "Tel Aviv was skipped as a target city in an earlier batch (rank 5xx); this is a different route to a school there.",
+      "Item titles kept in Hebrew as published, with an English gloss for the pass."
+    ],
+    "left_out": [
+      "Yoga therapy and Thai yoga therapy courses, yoga for pregnancy, Ayurveda and nutrition courses, guided imagery: therapy or health framing, or not core yoga teaching.",
+      "Kids yoga teacher training: next intake started 20 Oct 2026. Chair yoga teacher training: page not opened.",
+      "Sivananda Teacher Training Course: the menu links the Bahamas ashram's page, not run in Tel Aviv.",
+      "Election-day free open day: a one-off dated event.",
+      "Introductory course and class pages list stress and fatigue among reasons to join; not repeated."
+    ]
+  },
+  "images_final": true
+}

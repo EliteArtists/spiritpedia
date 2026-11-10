@@ -1,0 +1,125 @@
+{
+  "healer": {
+    "healer_slug": "sivananda-yoga-vedanta-zentrum-muenchen",
+    "location_source": "https://muenchen.sivananda.yoga/kontakt-formular/",
+    "create": {
+      "name": "Sivananda Yoga Vedanta Zentrum München",
+      "bio": "Sivananda Yoga Vedanta Zentrum München has offered classical yoga in Munich since 1974. It belongs to the International Sivananda Yoga Vedanta Centres, the organisation Swami Vishnudevananda set up in 1957 to spread the teaching of his own guru, Swami Sivananda of Rishikesh. The centre is a registered non-profit association, and its classes are given by a team of volunteer teachers trained in the Sivananda method. It occupies large, light practice rooms on Luisenstraße in Maxvorstadt, a few minutes on foot from Königsplatz and the Technical University.\n\nPractice follows Vishnudevananda's five points of exercise, breathing, relaxation, vegetarian diet, and positive thinking with meditation, set within the four paths of karma, bhakti, raja and jnana yoga. The weekly programme includes drop-in classes, four-week courses from first steps to advanced level, meditation and philosophy courses, chanting evenings, workshops and festival days, as well as live online classes. A free taster class runs most Saturday afternoons. Students who want to teach are prepared for the organisation's month-long teacher training, which is held at its ashrams in Tyrol, near Orléans and in the Himalayas rather than in Munich itself.",
+      "tier": "local_hero",
+      "entity_type": "school",
+      "availability": "local_online",
+      "founded_year": 1974,
+      "city": "Munich",
+      "country": "Germany",
+      "subjects": [
+        "yoga",
+        "meditation",
+        "ancient-wisdom"
+      ],
+      "website_url": "https://muenchen.sivananda.yoga/",
+      "booking_url": "https://muenchen.sivananda.yoga/stundenplan/",
+      "youtube_url": "https://www.youtube.com/channel/UCZG0juxSVDI61JHCXvaUMRQ",
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "munich@sivananda.net",
+      "image_urls": [
+        "https://muenchen.sivananda.yoga/wp-content/uploads/elementor/thumbs/SO_10007-scaled-e1792429166656-rv3eu5pjbmnmuiwibj2ufq4qw410y0itk6uvcqtaqo.jpg",
+        "https://muenchen.sivananda.yoga/wp-content/uploads/2026/09/yoga-pranayama-muenchen.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Internationale Sivananda Yogalehrer-Ausbildung (TTC)",
+      "url": "https://muenchen.sivananda.yoga/yogalehrer-ausbildung/",
+      "description": "The organisation's four-week residential teacher training, built on daily meditation, two asana and pranayama sessions, lectures on philosophy and anatomy, and an hour of karma yoga. Graduates receive the Sivananda diploma at the 200-hour standard. Courses run at the ashrams in Reith bei Kitzbühel, Rudraprayag and Orléans; the price shown is for Tyrol.",
+      "price": "ab 3.770 € / 2.671 € (ermäßigt, begrenzt verfügbar)",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga",
+        "meditation",
+        "ancient-wisdom"
+      ],
+      "image": "https://muenchen.sivananda.yoga/wp-content/uploads/2023/01/ttc-reith-with-playbutton.jpg"
+    },
+    {
+      "title": "Yogakurse für Anfänger und Geübte",
+      "url": "https://muenchen.sivananda.yoga/yoga-kurse/yoga-kurse-anfaenger/",
+      "description": "Four-week courses that meet once a week for ninety minutes in small fixed groups, moving from basic postures, belly breathing and deep relaxation to longer sequences, pranayama and a first taste of meditation. New groups start through the year.",
+      "price": "ab 66,- € für 4 Wochen",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga",
+        "breathwork"
+      ],
+      "image": "https://muenchen.sivananda.yoga/wp-content/uploads/2022/11/bogen-yogastellung.jpg"
+    },
+    {
+      "title": "Monatskarte",
+      "url": "https://muenchen.sivananda.yoga/preise/",
+      "description": "A month's pass for the drop-in classes at the Luisenstraße centre. Ten- and twenty-class cards, a half-year card, online flat rates and reduced rates are listed on the same page.",
+      "price": "130,-€",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://muenchen.sivananda.yoga/wp-content/uploads/2022/11/fortgeschrittene-yogastellung.jpg"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Yoga-Probestunde",
+      "url": "https://muenchen.sivananda.yoga/probestunde/",
+      "description": "A free ninety-minute introductory class on Saturday afternoons with simple postures, breathing and a long relaxation, followed by advice on how to continue. Experienced teachers lead it.",
+      "featured": true,
+      "resource_type": "practice",
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://muenchen.sivananda.yoga/wp-content/uploads/2022/11/fortgeschrittene-yogastellung.jpg"
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "yoga-school",
+    "rank": 707,
+    "hub": null,
+    "tier_evidence": "YouTube @sivanandayogamunchen5553: 60 subscribers (YouTube Data API, 10 Nov 2026); Instagram and Facebook not fetched; total ~60 → local_hero",
+    "email": "yes",
+    "email_source": "https://muenchen.sivananda.yoga/kontakt-formular/",
+    "contact_form_url": "https://muenchen.sivananda.yoga/kontakt-formular/",
+    "bio_check": "OK: no 8-word runs against 9 source(s)",
+    "flags": [
+      "Lead from the Sivananda organisation's own centre list (sivananda.org/locations/centres/); its link sivananda.org/munich now returns 404. The domain muenchen.sivananda.yoga came from a search summary and was confirmed on the site itself (title 'Yoga in München - Sivananda Yoga', Impressum names Sivananda Yoga Vedanta Zentrum München e.V., Luisenstraße 45).",
+      "Third city centre of the International Sivananda network (after Berlin and Paris); a lineage organisation rather than a commercial franchise, but the owner may want to check the network fits.",
+      "The four-week teacher training is held at the organisation's ashrams (Tyrol, Himalaya, Orléans), not in Munich; the Munich centre promotes it. Price copied as published for Reith bei Kitzbühel; Rudraprayag 'ab 3.100 €', Orléans 'ab 2.400 €'.",
+      "Email munich@sivananda.net is the centre's office inbox; a contact form is on the same page.",
+      "Its own YouTube channel holds 8 short promotional and testimonial clips (most under 3 minutes, last upload 2020), so no videos were taken.",
+      "Photos: a class in a practice room and a pranayama class, both from the centre's own site; neither shows the building's exterior, and the pranayama photo is a close crop of two students. The site's building photo (sivananda_luisen6423_600x400.jpg) returned 404.",
+      "The centre's pages make general health statements about yoga (stress, depression, chronic complaints); none are repeated in the bio or items.",
+      "Possible future listings: Swami Durgananda (chair of the association, per the Impressum).",
+      "No Spiritpedia teachers are named on the site, so the teachers file has no links.",
+      "Regional: Munich; Spiritpedia has few listings in southern Germany."
+    ],
+    "left_out": [
+      "Zweijährige Yogalehrer-Ausbildung: framed around recognition by German health insurers (ZPP); not opened.",
+      "Fortgeschrittene Yogalehrer-Ausbildung and Sadhana Intensiv: run abroad by the network; pages not opened.",
+      "Yoga für Schwangere, Kinderyoga, Ayurveda ('Nahrung als Medizin'), 'Gesundheit und Hatha Yoga' courses: health or condition framing, or outside the core offer.",
+      "Meditation evenings (Wednesday and Sunday): the page gives no price, so not listed as free.",
+      "Dated workshops on 7–8 Nov 2026: already past the sprint margin.",
+      "YouTube clips: promotional testimonials under ~4 minutes."
+    ]
+  },
+  "images_final": true
+}

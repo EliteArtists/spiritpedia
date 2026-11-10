@@ -1,0 +1,132 @@
+{
+  "healer": {
+    "healer_slug": "donna-shaw",
+    "location_source": "https://www.donnashaw.co/Quantum-Touch",
+    "create": {
+      "name": "Donna Shaw",
+      "bio": "Donna Shaw is a certified Quantum-Touch practitioner and intuitive energy guide who lives in Bucks County, Pennsylvania. She traces her route into the work to a single energy-clearing session some years ago, which left her feeling unexpectedly light, and to the years when her five children grew up and left home, a change that set her asking what came next and led her to take up energy healing as her calling.\n\nHer work is aimed chiefly at women going through a big change in life, such as an empty nest, the end of a marriage, bereavement or a new career. Alongside Quantum-Touch she draws on energy clearing, Court of Atonement processes, intention work and intuitive guidance, and she puts weight on teaching clients to tend their own energy. Private sessions run for an hour over Zoom; shorter remote Quantum-Touch sessions and a weekly group Quantum-Touch circle are also offered, as is THRIVE, a weekly online membership with a library of short recordings set to crystal singing bowls. Closer to home she brings crystal-bowl sound journeys to groups in their own homes or venues around Bucks County and leads a monthly public sound session in Doylestown.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "worldwide",
+      "city": null,
+      "country": "United States",
+      "subjects": [
+        "quantum-touch",
+        "energy-medicine",
+        "sound-healing"
+      ],
+      "website_url": "https://www.donnashaw.co/",
+      "booking_url": "https://www.donnashaw.co/work-with-donna",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "Donna@Donnashaw.co",
+      "image_urls": [
+        "https://quantumtouch.com/images/ProfilePictures/DonnaShaw.png"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Private energy healing sessions",
+      "url": "https://www.donnashaw.co/work-with-donna",
+      "description": "One-hour sessions on Zoom in which Donna works with your energy field to clear what is keeping you stuck and to align with what you want to create. Available singly or as a package of three, spaced at least a week apart.",
+      "price": "$175 (single session); $450 (3 sessions)",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "energy-medicine",
+        "life-coaching"
+      ],
+      "image": "https://quantumtouch.com/images/ProfilePictures/DonnaShaw.png"
+    },
+    {
+      "title": "Quantum-Touch sessions and community",
+      "url": "https://www.donnashaw.co/Quantum-Touch",
+      "description": "Remote Quantum-Touch: a 20-minute one-to-one session by Zoom or phone, or a place in her weekly group circle on Wednesday afternoons, where you set an intention and rest while she runs life-force energy.",
+      "price": "$111 (20-minute session); $200 (1-month community); $555 (3-month community)",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "quantum-touch",
+        "energy-medicine"
+      ],
+      "image": "https://quantumtouch.com/images/ProfilePictures/DonnaShaw.png"
+    },
+    {
+      "title": "THRIVE weekly membership",
+      "url": "https://www.donnashaw.co/quantum-touch-healing",
+      "description": "A live online group call every Wednesday for clearing, intention setting and reconnecting with yourself, with every session recorded. Members also get a library of short energy recordings set to crystal singing bowls.",
+      "price": "$79/month (founding-member rate)",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "energy-medicine",
+        "sound-healing",
+        "manifestation"
+      ],
+      "image": "https://quantumtouch.com/images/ProfilePictures/DonnaShaw.png"
+    },
+    {
+      "title": "Crystal bowl sound journeys",
+      "url": "https://www.donnashaw.co/sound-healing",
+      "description": "Group sound sessions with crystal singing bowls, held at the host's home or venue around Bucks County for 30 or 60 minutes, guided by her intuitive reading of the group. She also leads a monthly public session in Doylestown.",
+      "price": "$150 (30-minute group); $250 (60-minute group); $25/person (public sessions)",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "sound-healing",
+        "energy-medicine"
+      ],
+      "image": "https://quantumtouch.com/images/ProfilePictures/DonnaShaw.png"
+    },
+    {
+      "title": "Recorded group sessions",
+      "url": "https://www.donnashaw.co/Recordingsforpurchase",
+      "description": "Recordings of her past group energy sessions, sold for instant access, on themes such as gratitude, attitudes and the choices we make.",
+      "price": "$10.00 USD to $70.00 USD",
+      "product_type": "download",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "energy-medicine"
+      ],
+      "image": "https://quantumtouch.com/images/ProfilePictures/DonnaShaw.png"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "quantum-touch",
+    "rank": 256,
+    "hub": null,
+    "tier_evidence": "No readable follower counts: her site links no social or YouTube accounts → 0 → local_hero.",
+    "email": "yes",
+    "email_source": "https://quantumtouch.com/en/practitioners/practitioner-4578",
+    "contact_form_url": "https://www.donnashaw.co/contact",
+    "bio_check": "OK: no 8-word runs against 10 source(s)",
+    "flags": [
+      "Email from the Quantum-Touch profile: on her own site the address is Cloudflare-protected (not decoded), so the profile's mailto address (Donna@Donnashaw.co) is used; her site also has a contact form.",
+      "Base: her site says she lives in Bucks County, Pennsylvania, without a town; city left null (country set). Her monthly public sound session is in Doylestown, which the owner may prefer as the mapped town. Availability set to worldwide because no city is published (she also sees groups in person in Bucks County, so local_online would fit once a town is mapped).",
+      "Photo is her Quantum-Touch profile headshot: her own site's images sit on kajabi-storefronts-production.kajabi-cdn.com, whose robots.txt request was refused (403), so none were used.",
+      "Health rule: her Quantum-Touch page mentions pain relief and 'pain can disappear', her About and home pages mention Lyme disease and health challenges, and the Energy Evolution and sound pages mention sleep, stress and anxiety; none of that is used. Her site is led by life transitions, not conditions, so she was kept.",
+      "Her Quantum-Touch profile mentions 'my story on video' but links no video of hers; no videos were found on her site.",
+      "Abundance/money-flow framing appears in her sessions; kept as energy work, no financial promises used."
+    ],
+    "left_out": [
+      "Energy Evolution 7-week group programme ($395): the current round began 1 Oct 2026, before 12 Nov 2026; no later date published.",
+      "The Gratitude Shift free 11-minute audio: email sign-up pop-up with no page of its own.",
+      "Public sound session dates (monthly in Doylestown) folded into the sound-journeys item rather than listed one by one."
+    ]
+  },
+  "images_final": true
+}

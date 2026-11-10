@@ -296,9 +296,7 @@ URL in `sprint.contact_form_url`. Neither → skip. Record the contact form's
 URL in `sprint.contact_form_url` even when an email is found, if there is one
 (ingestion now saves both, with the email's page, on the listing). A clickable
 mailto button counts as published; an address only in hidden page data, a meta
-tag or shown after sending a form does not. A fan-club inbox doesn't count. Cloudflare-obfuscated
-addresses (`/cdn-cgi/l/email-protection#…`) may be decoded (XOR with the first
-byte); that is published, not guessed. An address found only in hidden page data
+tag or shown after sending a form does not. A fan-club inbox doesn't count. Cloudflare-protected or otherwise obfuscated addresses (`/cdn-cgi/l/email-protection#…`, script-built) are NEVER decoded (owner, 10 Nov 2026): use the contact form, or hold the plan. An address found only in hidden page data
 (JSON, form settings, scripts) is not published: use the contact form instead.
 Never accept consent or cookie pages to reach anything.
 
@@ -439,4 +437,28 @@ Each lead is a **target city** (`target_city`, `target_country`). Find **one** p
 - **Health and fitness rule:** leave out therapeutic, injury or condition-led items (yoga therapy for back pain and the like), prenatal medical claims and weight loss. Skip a school sold mainly as fitness or therapy.
 - `sprint.kind` "yoga-school"; `sprint.rank` the lead's rank. A skipped city gets `skipped/yoga-<city>.json` with the reason.
 
+## Kind: channel (owner, 10 Nov 2026; leads from rank 601)
+
+Channels that host 2 or more of our teachers (`docs/content-audits/channels-sprint-2026-11-10/candidates.txt`). Each lead has the channel's name, `our_teachers_on_its_channel` and `sample_videos` from our plans.
+- **Find the channel through the Data API, never its page:** `node scripts/yt.mjs video <sample video URL>` gives its channel id, then `node scripts/yt.mjs channel <id> --uploads 25`. Then find its own website (a link in the channel description, or one web search) and read that site's robots.txt first.
+- **In scope:** an interview show, podcast, magazine, centre or teacher channel that records its **own** content with a named presenter or organisation behind it: meditation, contemplative, spiritual or wellbeing-through-practice.
+- **Skip:**
+  - re-uploads or compilations of other people's talks, AI voice-overs, faceless "wisdom" narration (Eye of Wisdom was judged out on 10 Nov for this);
+  - no named presenter or organisation;
+  - no contact route outside YouTube (a website contact form or a published email; never "View email address");
+  - fewer than about 3 evergreen videos in the last 2 years, or no upload for 2 years;
+  - mainly business, marketing, fitness, therapy or politics;
+  - conspiracy, alien or channelled-prophecy content as the main subject;
+  - already listed (the dev names file), including under the presenter's own name.
+- **Hold** (`sprint.held`) psychedelic-centred channels and any with cult or abuse allegations in reputable sources.
+- **A channel that is one person** (their own name is the channel) is an `individual` listing with `youtube_url` set; otherwise `create.entity_type` "channel" (or "organisation" for a practice centre, as in the centre section, with its teachers file).
+- **Plan:** `youtube_url` the channel URL from the API; `availability` "worldwide" for a channel; a base only if its own site publishes one (else `no_public_base` with the reason).
+- **Tier:** the API's subscriber count plus any other platform counts the channel or its site publishes (§17.1); write `sprint.tier_evidence` with "YouTube Data API, 10 Nov 2026".
+- **Photo:** the channel avatar from the API (look at it; a real photo or a logo, never a default letter), or a logo or presenter photo from its own site.
+- **Videos:** 6–12 evergreen ones from its own uploads (`--uploads`), original content only, under the health and political rules; check each with oEmbed. Our teachers' interviews are good choices. Items (offerings, free resources) only from its own site.
+- **Bio:** own words: who presents it, what it covers, how long it has run (the API's start date), what format.
+- `sprint.kind` "channel"; `sprint.rank` the lead's rank. Skips go in `skipped/<slug>.json` with the reason.
+
 **Owner, 10 Nov 2026:** never decode protected or obfuscated emails (Cloudflare email protection, script-built addresses), ever: use the contact form, or hold the plan. Find a site's real domain directly (a search result or a page naming it), never through a Squarespace preview address.
+
+- **robots.txt in its own command** (10 Nov 2026): read it, decide from what it says, and only then make any other request to that host, even a HEAD request to see whether it resolves. Never combine a robots.txt read with another request in one command (a helper once sent a HEAD request alongside a robots.txt that blocked us). If https fails, do not fall back to plain http: treat the site as unreachable.

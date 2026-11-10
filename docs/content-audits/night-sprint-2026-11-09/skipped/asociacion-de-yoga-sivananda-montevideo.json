@@ -1,0 +1,5 @@
+{
+ "name": "Asociación de Yoga Sivananda (Montevideo)",
+ "rank": 701,
+ "reason": "Its own site sivananda.org.uy (named in a 2013 PRWeb release; the lineage list's sivananda.org/montevideo link now 404s) has a robots.txt group naming ClaudeBot, anthropic-ai and Claude-Web with Disallow: / on both the bare and www hosts, so the whole site is off limits; nothing fetched beyond robots.txt."
+}

@@ -1,0 +1,164 @@
+{
+  "healer": {
+    "healer_slug": "brother-phap-luu",
+    "location_source": "https://plumvillage.org/people/dharma-teachers/br-phap-luu",
+    "create": {
+      "name": "Brother Phap Luu",
+      "bio": "Brother Phap Luu is a monk in Thich Nhat Hanh's Plum Village community. He became a novice in December 2003, took full ordination as a bhikshu three years later, and in 2011 received the Lamp Transmission from Thay, which authorised him to teach as a Dharma teacher. His home monastery is Deer Park in southern California, where he mentors younger monks, teaches the sutras and the monastic code, and shares in the daily work of the community.\n\nMuch of his teaching has been aimed at young people and at education. He helped organise Wake Up tours that brought mindfulness practice to university students in the United States, Britain and Spain, and he works with the Wake Up Schools programme, hoping to make simple practices such as conscious breathing and caring for strong emotions part of schooling at every level. He has also been involved in the Happy Farm project at Upper Hamlet in France, which joins organic farming with community life and practice. He gives Dharma talks in English, French and Spanish; recorded talks range over the Diamond Sutra, the Four Noble Truths, emotions, fear and climate change, and a long online class series on core tenets of the Plum Village teaching.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local_online",
+      "city": "Escondido, California",
+      "country": "United States",
+      "subjects": [
+        "meditation",
+        "mindfulness",
+        "ancient-wisdom"
+      ],
+      "website_url": "https://plumvillage.org/people/dharma-teachers/br-phap-luu",
+      "booking_url": "https://plumvillage.org/retreats/retreats-calendar",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": null,
+      "image_urls": [
+        "https://plumvillage.org/wp-content/uploads/2015/04/Thay-Phap-Luu.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [
+    {
+      "title": "Establishing a Buddha Field | Dharma Talk by br Phap Luu",
+      "url": "https://www.youtube.com/watch?v=E20CaTQ1fMA",
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "channel": "Plum Village"
+    },
+    {
+      "title": "Nowhere to Go, Nothing to Do | Business Retreat, Brother Pháp Lưu 2019 06 07",
+      "url": "https://www.youtube.com/watch?v=V9m7oZlH2Lw",
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "channel": "Plum Village"
+    },
+    {
+      "title": "First-Person Applied Neuroscience: Dharma Talk by br Pháp Lưu, 2019-03-17",
+      "url": "https://www.youtube.com/watch?v=bDB4L68Pius",
+      "subjects": [
+        "mindfulness",
+        "conscious-science"
+      ],
+      "channel": "Plum Village"
+    },
+    {
+      "title": "Awakening to Non-Fear in a Climate Crisis | Dharma talk by Thay Phap Luu, 2019 07 25",
+      "url": "https://www.youtube.com/watch?v=1qUhu6350yk",
+      "subjects": [
+        "mindfulness",
+        "spirituality"
+      ],
+      "channel": "Plum Village"
+    },
+    {
+      "title": "Energy and the Evolution of Emotion - Br Pháp Lưu | 2017.12.03",
+      "url": "https://www.youtube.com/watch?v=DZxO1Ly-IN4",
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "channel": "Plum Village"
+    },
+    {
+      "title": "Guided Meditation On the 7 Factors of Awakening - Br Pháp Lưu | 2017.12.03",
+      "url": "https://www.youtube.com/watch?v=fofvLiaj8ik",
+      "subjects": [
+        "meditation",
+        "spiritual-awakening"
+      ],
+      "channel": "Plum Village"
+    },
+    {
+      "title": "Extinction Awakening | Thay Phap Luu",
+      "url": "https://www.youtube.com/watch?v=LsFcLHq4CDM",
+      "subjects": [
+        "mindfulness",
+        "spirituality"
+      ],
+      "channel": "Plum Village"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [
+    {
+      "title": "Class series: Plum Village Looks at Vulture's Peak (Class #1)",
+      "url": "https://plumvillage.org/library/classes/class-1-space-is-not-an-unconditioned-dharma-it-manifests-with-time-matter-and-consciousness",
+      "description": "The first of a series of recorded evening classes in which Brother Phap Luu works through the tenets of a book by Thich Nhat Hanh, one tenet per class. Free to watch in the Plum Village library.",
+      "featured": true,
+      "resource_type": "mini_course",
+      "subjects": [
+        "ancient-wisdom",
+        "mindfulness"
+      ],
+      "image": "https://plumvillage.org/wp-content/uploads/2022/07/maxresdefault.jpg"
+    },
+    {
+      "title": "The Diamond Sutra: The Practice of Signlessness",
+      "url": "https://plumvillage.org/library/dharma-talks/the-diamond-sutra-the-practice-of-signlessness-br-phap-luu-2018-12-06",
+      "description": "A recorded Dharma talk on the Diamond Sutra and the practice of looking beyond signs and appearances. Free in the Plum Village online library.",
+      "featured": false,
+      "resource_type": "practice",
+      "subjects": [
+        "ancient-wisdom",
+        "non-duality"
+      ],
+      "image": "https://plumvillage.org/wp-content/uploads/2020/02/maxresdefault-533.jpg"
+    },
+    {
+      "title": "Understanding the Nature of Suffering",
+      "url": "https://plumvillage.org/library/dharma-talks/understanding-the-nature-of-suffering-dharma-talk-by-br-phap-luu-2018-12-23",
+      "description": "A recorded Dharma talk on how suffering arises and how practice helps us look into it. Free in the Plum Village online library.",
+      "featured": false,
+      "resource_type": "practice",
+      "subjects": [
+        "mindfulness",
+        "ancient-wisdom"
+      ],
+      "image": "https://plumvillage.org/wp-content/uploads/2020/02/maxresdefault-526.jpg"
+    }
+  ],
+  "sprint": {
+    "sprint": "pipelines-3",
+    "hub": "omega",
+    "rank": 560,
+    "hub_url": "https://www.eomega.org/people/brother-phap-luu",
+    "tier_evidence": "No personal YouTube, Instagram, Facebook, X or TikTok account found or linked from his Plum Village page (10 Nov 2026); the Plum Village YouTube channel is an organisation account, not counted → 0 total → local_hero",
+    "email": "contact form",
+    "email_source": null,
+    "contact_form_url": "https://plumvillage.org/contact-us",
+    "bio_check": "OK: no 8-word runs against 1 source(s)",
+    "flags": [
+      "As a monastic he has no personal website; his Plum Village Dharma teacher page is used as the website, as in the brother-phap-huu and brother-phap-linh plans.",
+      "Contact is the Plum Village organisation's contact form; no personal email is published, as is usual for a monastic. Same approach as the brother-phap-linh plan.",
+      "Base: his Plum Village page says he is 'at home in Deer Park Monastery'; Deer Park's address (Plum Village page footer) is in Escondido, California.",
+      "No Omega mention on his Plum Village page: listed without the link (eomega.org not opened).",
+      "Possible relation to existing listings thich-nhat-hanh-insight-timer, brother-phap-huu, brother-phap-linh and plum-village-app (same community).",
+      "All videos are on the shared Plum Village YouTube channel, each linked from his own talk pages on plumvillage.org; he is the sole speaker (oEmbed 200, 10 Nov 2026). Titles drop the trailing '| Plum Village'.",
+      "Tier: 0 because all his public channels belong to Plum Village; the owner may consider an editorial-stature override, not applied.",
+      "Photo is from his Plum Village page (409×501), an older image (uploaded 2015)."
+    ],
+    "left_out": [
+      "Compassion and Connection amidst COVID-19 Isolation: names a health crisis in the title.",
+      "Mindfulness of Sexual Desire, talks for children, Q&A sessions shared with several monastics: not chosen.",
+      "Retreats: the Plum Village and Deer Park calendars were not checked for programmes he leads."
+    ]
+  },
+  "images_final": true
+}

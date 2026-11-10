@@ -1,0 +1,118 @@
+{
+  "healer": {
+    "healer_slug": "satya-yoga",
+    "location_source": "https://www.satya-yoga.dk/",
+    "create": {
+      "name": "Satya Yoga",
+      "bio": "Satya Yoga is an Iyengar yoga studio on Hørsholmsgade in Nørrebro, Copenhagen, run by Lone Kristensen. She came to the method in 1995 after training as a dancer in London, qualified at the city's long-established Iyengar school, taught on its faculty until 2010 and has travelled to the Pune institute to study with the Iyengar family since 2000. She has also completed a three-year course in the therapeutic application of the method. Anne Christine Remahl and Merete Stentebjerg Hansen teach alongside her, each with the full three-year Iyengar teacher training behind them.\n\nThe bright, white practice room is fitted with wall ropes and a full set of props, and groups are kept small so each student gets individual instruction. The timetable runs from introductory Yoga 1 classes and a gentler beginners' class to mixed and more experienced levels, and most classes can also be joined by livestream. Alongside the weekly schedule the studio offers private lessons, small-group and workplace teaching, workshops and residential retreats at a seaside farm on the island of Møn, south of Zealand.",
+      "tier": "local_hero",
+      "entity_type": "school",
+      "availability": "local_online",
+      "city": "Copenhagen",
+      "country": "Denmark",
+      "subjects": [
+        "yoga",
+        "breathwork"
+      ],
+      "website_url": "https://www.satya-yoga.dk/",
+      "booking_url": "https://www.satya-yoga.dk/skema-og-tilmelding/",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "post@satya-yoga.dk",
+      "image_urls": [
+        "https://www.satya-yoga.dk/wp-content/uploads/2015/08/IMG_00841.jpg",
+        "https://www.satya-yoga.dk/wp-content/uploads/2026/08/DSC_5989-scaled.jpg",
+        "https://www.satya-yoga.dk/wp-content/uploads/2019/08/DSC_6108.jpeg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Iyengar Yoga – Nye hold for begyndere (Start tilbud)",
+      "url": "https://www.satya-yoga.dk/iyengar-yoga-nye-elever/",
+      "description": "Three beginners' groups a week, each led by one of the studio's teachers, with an eight-class starter card that can be used flexibly across them. A shorter three-class introductory offer is also available.",
+      "price": "Start tilbud: 8 klasser på 10 uger for kr.560; Intro-tilbud: 3 klasser på 5 uger for kr 225",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://www.satya-yoga.dk/wp-content/uploads/2015/08/IMG_00841.jpg"
+    },
+    {
+      "title": "Priser: klippekort og månedskort",
+      "url": "https://www.satya-yoga.dk/priser/",
+      "description": "Class cards of five, ten or fifteen classes over three or four months, or a monthly card for unlimited classes, bought and booked through the studio's online system. Reduced prices are offered to students, the unemployed and pensioners.",
+      "price": "Contact for pricing",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://www.satya-yoga.dk/wp-content/uploads/2026/08/DSC_5989-scaled.jpg"
+    },
+    {
+      "title": "Eneundervisning og små grupper (private lessons and small groups)",
+      "url": "https://www.satya-yoga.dk/eneundervisning-og-sma-grupper/",
+      "description": "One-hour private Iyengar lessons shaped around the student, plus classes for small groups of up to eight and teaching at workplaces.",
+      "price": "1 time: 750.- kr.; 5 timer: 3500.- kr.",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://www.satya-yoga.dk/wp-content/uploads/2019/05/private-lesson-2-1024x684.jpg"
+    },
+    {
+      "title": "Livestream – Virtuel Yoga",
+      "url": "https://www.satya-yoga.dk/livestream-virtuel-yoga/",
+      "description": "Live online versions of the studio's classes and workshops, booked through the same system as in-person classes and joined from home with a mat and a few household props.",
+      "price": "Contact for pricing",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://www.satya-yoga.dk/wp-content/uploads/2020/12/medIMG_2602.jpg"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "yoga-school",
+    "rank": 1603,
+    "hub": null,
+    "tier_evidence": "No YouTube channel linked; Instagram and Facebook not fetched → 0 readable → local_hero.",
+    "email": "yes",
+    "email_source": "https://www.satya-yoga.dk/",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 11 source(s)",
+    "flags": [
+      "Lead from the Danish Iyengar association's teacher list (Lone Kristensen, Level 3, satya-yoga.dk, København N); facts from the studio's own site (robots.txt allows us).",
+      "Class-card and monthly prices sit inside the booking system and are not shown on the page, so 'Contact for pricing'.",
+      "The studio does not run a teacher training of its own; its 'Iyengar Yoga uddannelse' page explains the national mentorship route, so it is not listed as an offering.",
+      "The founder's page also offers craniosacral therapy and KMI structural integration sessions; those pages are left out under the therapy rule.",
+      "The 2026 Møn retreats (May and July 2026) have passed; no 2027 dates published yet.",
+      "Possible future listings: Lone Kristensen.",
+      "No Spiritpedia teachers are named on the site, so the teachers file has no links.",
+      "Regional: Copenhagen; Spiritpedia has few Iyengar listings in Denmark."
+    ],
+    "left_out": [
+      "Kranio Sakral Terapi pages (therapy).",
+      "Yoga 1 Blid class description: framed around injuries, stress and post-operative recovery.",
+      "Møn Yoga Retreats 2026: dates passed.",
+      "Workshops page: dates sit in the booking widget, none readable."
+    ]
+  },
+  "images_final": true
+}

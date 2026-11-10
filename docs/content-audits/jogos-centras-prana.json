@@ -1,0 +1,134 @@
+{
+  "healer": {
+    "healer_slug": "jogos-centras-prana",
+    "location_source": "https://www.pranajoga.lt/kontaktai",
+    "create": {
+      "name": "Jogos centras PRANA",
+      "bio": "Jogos centras PRANA is a classical Sivananda yoga studio in Kaunas, Lithuania's second city, run as a non-profit and recognised by the International Sivananda Yoga Vedanta Centres as an affiliated branch. Its teachers all completed the organisation's teacher training, and they pass on the method of Swami Sivananda and Swami Vishnudevananda in the form they received it. The centre's site honours senior Sivananda teachers such as Swami Sivadasananda and Swami Durgananda, and it works alongside the organisation's own centre in Vilnius. The studio is in the Šilainiai district, with a large wooden-floored practice hall and a small sitting room.\n\nNewcomers begin with Joga-1, a month-long course meeting twice a week that teaches the sun salutation, the twelve basic postures, two breathing practices and the principles behind them, followed by a continuation course, Joga-2. After that, students join open classes on weekday evenings and Saturday mornings. Satsang, with silent meditation, mantra chanting and a talk on Vedanta, is held early on several mornings each week without charge, after an introductory lecture. The centre also runs themed seminars, private lessons and two family yoga camps in the countryside each summer, with vegetarian meals and the choice of cabins or tents.",
+      "tier": "local_hero",
+      "entity_type": "school",
+      "availability": "local",
+      "city": "Kaunas",
+      "country": "Lithuania",
+      "subjects": [
+        "yoga",
+        "meditation",
+        "ancient-wisdom"
+      ],
+      "website_url": "https://www.pranajoga.lt/",
+      "booking_url": "https://www.pranajoga.lt/jogos-uzsiemimu-ir-gyvu-grupiniu-meditaciju-tvarkarastis",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "info@pranajoga.lt",
+      "image_urls": [
+        "https://www.pranajoga.lt/sites/default/files/images/galerija/img_0257.jpg",
+        "https://www.pranajoga.lt/sites/default/files/images/galerija/p1060565.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Joga pradedantiems (Joga-1)",
+      "url": "https://www.pranajoga.lt/joga-pradedantiems",
+      "description": "A month-long beginners' course meeting twice a week, open to complete newcomers and to people from other yoga styles. It covers the sun salutation, the twelve basic Sivananda postures, kapalabhati and alternate-nostril breathing, relaxation and the core ideas of the tradition. A new group starts each month.",
+      "price": "70 €",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga",
+        "breathwork"
+      ],
+      "image": "https://www.pranajoga.lt/sites/default/files/images/galerija/img_0257.jpg"
+    },
+    {
+      "title": "Sivananda joga kursas pažengusiems (Joga-2)",
+      "url": "https://www.pranajoga.lt/sivananda-joga-kursas-pazengusiems",
+      "description": "The follow-on month for those who have finished Joga-1, again meeting twice a week, adding knowledge and practice that prepare students for the open classes or for practising at home.",
+      "price": "70 €",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://www.pranajoga.lt/sites/default/files/images/galerija/img_0257.jpg"
+    },
+    {
+      "title": "10 kartų abonementas",
+      "url": "https://www.pranajoga.lt/jogos-uzsiemimu-ir-gyvu-grupiniu-meditaciju-tvarkarastis",
+      "description": "A ten-visit card for the open Sivananda classes, valid for three months. A monthly pass for up to five classes a week, single visits and private lessons are listed on the same timetable and price page.",
+      "price": "80 €",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://www.pranajoga.lt/sites/default/files/images/galerija/img_0257.jpg"
+    },
+    {
+      "title": "Vasaros jogos stovyklos",
+      "url": "https://www.pranajoga.lt/jogos-stovykla",
+      "description": "Two summer yoga camps each year in a quiet rural setting for the whole family, with yoga, meditation and vegetarian meals. Guests stay in cabins or bring a tent, and can join for the full week or a single day. Dates are announced by email.",
+      "price": "Contact for pricing",
+      "product_type": "retreat",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga",
+        "meditation"
+      ],
+      "image": "https://www.pranajoga.lt/sites/default/files/images/galerija/img_0257.jpg"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Meditacija – Satsangas",
+      "url": "https://www.pranajoga.lt/meditacija",
+      "description": "Group meditation at the studio in three parts: silent sitting, kirtan chanting and a reading or talk on Vedanta and yoga psychology. Attendance is free once you have heard the introductory lecture on meditation; the page also gives the chant texts.",
+      "featured": true,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation",
+        "ancient-wisdom"
+      ],
+      "image": "https://www.pranajoga.lt/sites/default/files/images/galerija/img_0257.jpg"
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "yoga-school",
+    "rank": 712,
+    "hub": null,
+    "tier_evidence": "No YouTube channel linked on the site; Facebook not fetched; no readable followers → local_hero",
+    "email": "yes",
+    "email_source": "https://www.pranajoga.lt/kontaktai",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 12 source(s)",
+    "flags": [
+      "Lead from the Sivananda organisation's list of affiliated centres (sivananda.org/locations/affiliated-centres/), which links www.prana.lt; that domain redirects to www.pranajoga.lt, whose robots.txt allows us with Crawl-delay: 10 (honoured). The site names itself 'Jogos centras PRANA, Sivananda jogos Vedantos centro filialas'.",
+      "Affiliated studio rather than a teacher-training school: its teachers are Sivananda TTC graduates, but it runs no training itself. Owner to decide whether it fits the school category.",
+      "Photos come from the site's own gallery album 'Jogos centras Prana 2008' (the practice hall and a sitting room); they are old and may not show the current rooms.",
+      "Joga-2 price taken from the timetable page's 'Jogos kursų kainos – Kurso kaina: 70 €', which covers the courses.",
+      "The centre's pages make general health statements about yoga (stress, recovering health); none are repeated in the bio or items.",
+      "Possible future listings: none named (the teachers page lists only Swami Sivananda, Swami Vishnudevananda, Swami Sivadasananda and Swami Durgananda, none of whom teach there as resident teachers).",
+      "No Spiritpedia teachers are named on the site, so the teachers file has no links.",
+      "Regional: Kaunas, Lithuania; Spiritpedia has no or very few listings in the Baltic states."
+    ],
+    "left_out": [
+      "Jogos kursai sveikai nugarai (yoga for a healthy back): condition framing, health rule.",
+      "Nemokama joga senjorams (free yoga for seniors from 9 Nov 2026): dated, started before the sprint margin.",
+      "Individualūs jogos užsiėmimai: described as tailored to the student's health condition; left out.",
+      "Online evening meditations (relayed from another Sivananda centre in English): page not opened.",
+      "Paskaita 'Meditacijos įvadas' and other dated events: one-off or already started."
+    ]
+  },
+  "images_final": true
+}

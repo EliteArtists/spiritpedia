@@ -1,0 +1,107 @@
+{
+  "healer": {
+    "healer_slug": "shakti-shala",
+    "location_source": "https://antiguayoga.com/contact-us/",
+    "create": {
+      "name": "Shakti Shala",
+      "bio": "Shakti Shala is a yoga studio in the colonial town of Antigua, Guatemala, that grew out of free weekly classes held in Tanque La Unión park in 2016 and opened its own room in 2017. Its practice draws on the Ashtanga lineage: a daily Mysore programme sits at the centre of the timetable, alongside led Ashtanga, Rocket and Vinyasa classes, with gentler slow-flow and candlelight sessions for newcomers. Lauren McKiddy, who co-founded the studio and has taught in Antigua for about ten years, leads it with a bilingual team teaching in English and Spanish, and authorised Ashtanga teachers are among its staff.\n\nBeyond the daily classes, the studio keeps a monthly round of community gatherings, including kirtan and breathwork, plus a weekly free meditation. It hosts visiting Ashtanga teachers for immersions, and it runs its own 200-hour hybrid teacher training in Ashtanga and Vinyasa: a self-paced online stage followed by two weeks in person in Antigua, covering philosophy, anatomy, pranayama, sequencing and the craft of teaching, with Lauren McKiddy and Silvana Vanfretti leading a small faculty of guest teachers.",
+      "tier": "local_hero",
+      "entity_type": "school",
+      "founded_year": 2017,
+      "availability": "local",
+      "city": "Antigua Guatemala",
+      "country": "Guatemala",
+      "subjects": [
+        "yoga",
+        "meditation",
+        "breathwork"
+      ],
+      "website_url": "https://antiguayoga.com/",
+      "booking_url": "https://antiguayoga.com/class-timetable/",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "shaktishalaantigua@gmail.com",
+      "image_urls": [
+        "https://antiguayoga.com/wp-content/uploads/2023/05/195A9717-1536x1024.jpg",
+        "https://antiguayoga.com/wp-content/uploads/2022/01/Shakti-Shala-Antigua-Team-570x380.jpeg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Shakti Shala 200HR Yoga Teacher Training 2027",
+      "url": "https://antiguayoga.com/shakti-shala-200hr-yoga-teacher-training-2027/",
+      "description": "A hybrid 200-hour training in Ashtanga and Vinyasa: online self-study opens in March 2027, then the cohort meets at the studio in Antigua for fifteen days. Daily practice runs alongside teaching labs, sequencing, pranayama, meditation, philosophy and a final practicum.",
+      "price": "$1,950 USD (early bird to 15 January 2027); $2,200 USD full tuition",
+      "product_type": "course",
+      "start_date": "2027-05-02",
+      "end_date": "2027-05-16",
+      "subjects": [
+        "yoga",
+        "breathwork",
+        "meditation"
+      ]
+    },
+    {
+      "title": "5-Day Adaptive Ashtanga Yoga Immersion",
+      "url": "https://antiguayoga.com/adaptive-ashtanga-vinyasa-yoga-immersion/",
+      "description": "Five days of led and Mysore-style Ashtanga with visiting teachers Christiane Coste Cacho and Brendan Smullen, with pranayama, journaling and afternoon workshops on transitions, backbends and hip opening. Taught in English and Spanish; open to all levels.",
+      "price": "$375 / Q2868 (full immersion)",
+      "product_type": "retreat",
+      "start_date": "2026-11-13",
+      "end_date": "2026-11-17",
+      "subjects": [
+        "yoga",
+        "breathwork"
+      ]
+    },
+    {
+      "title": "Classes and packages",
+      "url": "https://antiguayoga.com/prices/",
+      "description": "Drop-in classes and class packages for the daily timetable: Mysore, led Ashtanga, Rocket, Vinyasa, slow flow, candlelight flow and meditation. Packages are bought through the studio's online booking catalogue.",
+      "price": "Contact for pricing",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga",
+        "meditation"
+      ]
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "yoga-school",
+    "rank": 1001,
+    "hub": null,
+    "tier_evidence": "No YouTube channel linked from the pages read; Instagram and Facebook not fetched; no readable followers → local_hero.",
+    "email": "yes",
+    "email_source": "https://antiguayoga.com/contact-us/",
+    "contact_form_url": "https://antiguayoga.com/contact-us/",
+    "bio_check": "OK: no 8-word runs against 8 source(s)",
+    "flags": [
+      "Lead from the Sharath Yoga Centre authorised-teacher list (Aliya Umirbaeva and Irene Del Valle, Shakti Shala, Antigua); facts from the school's own site only (antiguayoga.com; robots.txt allows us).",
+      "The studio mixes Ashtanga (Mysore, led) with Rocket, Vinyasa and Power Vinyasa classes; the site says it draws inspiration from the Ashtanga lineage rather than teaching Ashtanga only.",
+      "City recorded as 'Antigua Guatemala' (the town's official name) to avoid confusion with Antigua and Barbuda.",
+      "The contact page has a form (Submit button) as well as the published email; the email is a Gmail studio inbox.",
+      "Class prices sit in an embedded Squarespace Scheduling catalogue that could not be read as page text, so 'Contact for pricing'.",
+      "Immersion starts 13 Nov 2026, one day after the sprint cut-off of 12 Nov, so it is kept with dates; drop it if the owner prefers a wider margin.",
+      "Second photo is a posed group shot of three teachers; first is a student in the practice room. Both from the studio's own site.",
+      "Possible future listings: Lauren McKiddy (co-founder), Silvana Vanfretti, Aliya Umirbaeva, Irene Del Valle.",
+      "No Spiritpedia teachers are named on the site, so the teachers file has no links.",
+      "Regional: Antigua Guatemala; Spiritpedia has few listings in Central America."
+    ],
+    "left_out": [
+      "Weekly free meditation and monthly kirtan, sound and breathwork events: mentioned on the about page only, no own pages.",
+      "Power Vinyasa and Rocket classes are not listed separately (covered by the classes item)."
+    ],
+    "held": "The ingest's own robots.txt request to antiguayoga.com fails with a dropped connection (UND_ERR_SOCKET, 10 Nov 2026) while plain curl gets 200, so the site appears to refuse our ingest; every image fails. Not retried under any other identity. Images listed are the ones I looked at."
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 1323,
+    "healer_slug": "studie-yoga"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "095e5fba-bfef-4927-bdbf-ea550b81c0c1",
+      "slug": "yogalab-retreat-16-18-april-2027",
+      "title": "YogaLab Retreat – 16–18 April 2027"
+    },
+    {
+      "table": "courses",
+      "id": "f7f81f68-ffd8-4c1d-9a44-e2f7c53bd723",
+      "slug": "fundament-nrvr-retreat-30-april-2-maj-2027",
+      "title": "Fundament & Nærvær Retreat – 30 April–2 maj 2027"
+    },
+    {
+      "table": "courses",
+      "id": "06601d72-23cf-463f-8af9-b58f1dc20eaa",
+      "slug": "fordybelses-retreat-24-26-september-2027",
+      "title": "Fordybelses Retreat – 24–26 September 2027"
+    },
+    {
+      "table": "courses",
+      "id": "2b87ee0c-cc8f-43ca-9fa2-4ac9b848b956",
+      "slug": "online-yoga-live-classes-and-workshops-on-zoom",
+      "title": "Online Yoga (live classes and workshops on Zoom)"
+    }
+  ],
+  "at": "2026-11-10T18:27:04.414Z"
+}

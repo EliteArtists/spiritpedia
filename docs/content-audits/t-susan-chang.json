@@ -1,0 +1,179 @@
+{
+  "healer": {
+    "healer_slug": "t-susan-chang",
+    "location_source": "https://www.tsusanchang.com/about",
+    "create": {
+      "name": "T. Susan Chang",
+      "bio": "T. Susan Chang, known to students as Susie, is a tarot reader, teacher and author living in western Massachusetts. She bought her first deck in New York in the mid-1990s, read weekly at a café in Hell's Kitchen, took classes at the Tarot School and was certified as a professional reader in 1999. After years of reading casually she came back to the cards seriously in 2015, and she now reads every week at a crystal shop in Northampton as well as online.\n\nHer books focus on the esoteric structure behind the cards: Tarot Correspondences maps elemental, astrological, numerical and Kabbalistic associations; 36 Secrets follows the decans through the minor arcana; Tarot Deciphered, written with Mel Meleen, decodes the symbolism of modern esoteric decks; The Living Tarot is her guide to teaching yourself to read; and 4 Stories takes an elemental approach to the deck. With Mel Meleen she hosts the weekly Fortune's Wheelhouse podcast, which works through tarot symbolism card by card. She teaches the self-paced Living Tarot online course and offers one-to-one readings and private lessons by Zoom, with in-person sessions in Amherst, Montague or Northampton on request. She also designed the Arcana Case for tarot decks.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local_online",
+      "city": "Northampton, Massachusetts",
+      "country": "United States",
+      "subjects": [
+        "astrology",
+        "ancient-wisdom",
+        "spirituality"
+      ],
+      "website_url": "https://www.tsusanchang.com/",
+      "booking_url": "https://www.tsusanchang.com/readings",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": null,
+      "image_urls": [
+        "https://images.squarespace-cdn.com/content/v1/5b6e6cba7c932730bd4ed017/1534204818883-XZAZ575XK166NG8IPD3L/bw+portrait+2016.jpg",
+        "https://images.squarespace-cdn.com/content/v1/5b6e6cba7c932730bd4ed017/1534737883222-06A596GT94FNJDGZ9X97/Level+Teaspoon+promo+BW.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [
+    {
+      "title": "Tarot Correspondences",
+      "slug": "tarot-correspondences",
+      "author": "T. Susan Chang",
+      "asin": "0738755125",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "A reference to the four systems built into most modern decks, the elements, astrology, number and Kabbalah, with tables for every card and exercises for using them in readings and ritual.",
+      "subjects": [
+        "astrology",
+        "ancient-wisdom"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/0738755125.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "36 Secrets",
+      "slug": "36-secrets",
+      "author": "T. Susan Chang",
+      "asin": "1716325099",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "A journey through the 36 decans of the zodiac as they appear in the numbered minor arcana, card by card.",
+      "subjects": [
+        "astrology",
+        "ancient-wisdom"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1716325099.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "Tarot Deciphered",
+      "slug": "tarot-deciphered",
+      "author": "T. Susan Chang and M. M. Meleen",
+      "asin": "0738764477",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "Written with Mel Meleen, a detailed key to the esoteric symbols in the Rider-Waite-Smith and Thoth traditions.",
+      "subjects": [
+        "ancient-wisdom",
+        "hermeticism"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/0738764477.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "The Living Tarot",
+      "slug": "the-living-tarot",
+      "author": "T. Susan Chang",
+      "asin": "0738772259",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "Her method for teaching yourself to read by linking each card to scenes from everyday life, so meanings are discovered rather than memorised.",
+      "subjects": [
+        "spirituality"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/0738772259.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "4 Stories",
+      "slug": "4-stories",
+      "author": "T. Susan Chang",
+      "asin": "1300646497",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "Her 2025 book on the four classical elements and how Fire, Water, Air and Earth shape the tarot.",
+      "subjects": [
+        "ancient-wisdom",
+        "spirituality"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1300646497.01._SCLZZZZZZZ_.jpg"
+    }
+  ],
+  "courses": [
+    {
+      "title": "The Living Tarot Online Course",
+      "url": "https://www.tsusanchang.com/class",
+      "description": "A self-paced course run on Google Classroom for new and experienced readers, using a Rider-Waite-Smith style deck and practical exercises to build fluent reading. Payment plans are available.",
+      "price": "$250.00",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "spirituality"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/5b6e6cba7c932730bd4ed017/1539130978964-2RXVHAEKCVLD3JX8Q7RX/The+Living+Tarot+short+banner+photo.jpg"
+    },
+    {
+      "title": "Tarot Readings and Private Lessons",
+      "url": "https://www.tsusanchang.com/readings",
+      "description": "One-to-one tarot counselling and private tarot lessons by Zoom, with in-person sessions in Amherst, Montague or Northampton on request. A short intake form helps focus the question.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "spirituality"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/5b6e6cba7c932730bd4ed017/1534044757278-HUG2KX83H195VUPANMUB/IMG_20180121_103532220_HDR.jpg"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Fortune's Wheelhouse podcast",
+      "url": "https://www.tsusanchang.com/podcast",
+      "description": "A free weekly esoteric tarot podcast she co-hosts with Mel Meleen, unpacking the symbolism and lore of the cards.",
+      "featured": true,
+      "resource_type": "workshop",
+      "subjects": [
+        "ancient-wisdom",
+        "astrology"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/5b6e6cba7c932730bd4ed017/1535133114597-OGV1URZ63W64XW0Q7OSL/ra%2Cunisex_tshirt%2Cx2200%2C462445_542506a2a5%2Cfront-c%2C392%2C146%2C750%2C1000-bg%2Cf8f8f8.u1.jpg"
+    }
+  ],
+  "sprint": {
+    "sprint": "pipelines-3",
+    "hub": "omega",
+    "rank": 321,
+    "hub_url": "https://www.eomega.org/people/t-susan-chang",
+    "tier_evidence": "No YouTube channel of her own found; Instagram (@tsusanchang) and Facebook not readable without login → 0 readable → local_hero (main account Instagram unreadable).",
+    "email": "contact form",
+    "email_source": null,
+    "contact_form_url": "https://www.tsusanchang.com/contact",
+    "bio_check": "OK: no 8-word runs against 8 source(s)",
+    "flags": [
+      "No Omega mention on own site: listed without the link.",
+      "Email on her contact page is written in obfuscated form ('admin[ at ]tsusanchang[ dot ]com'); not reassembled per the owner's no-decoding rule, so the contact form is used.",
+      "Base: she lives in western Massachusetts and reads weekly at a shop in Northampton (about page); in-person sessions in Amherst, Montague or Northampton (readings page). Northampton used. Regional: western Massachusetts.",
+      "Second photo (woman at a desk with a microphone) is from her home page and almost certainly her, but the face is partly turned; flag for review.",
+      "Reading prices are not shown on the readings page (likely in a booking widget that didn't load); recorded as Contact for pricing.",
+      "Tarot Deciphered is co-authored with Mel Meleen (M. M. Meleen).",
+      "Book ASINs from Amazon links on tsusanchang.com/books, not confirmed elsewhere. 36 Secrets and 4 Stories are self-published via Lulu."
+    ],
+    "left_out": [
+      "Videos: her videos page has Orphic Hymn recitations and Arcana Case craft clips, not teaching; no channel of her own identified.",
+      "Arcana Cases and Tarotista zodiac perfumes (shop): products, not teaching.",
+      "Gift certificates for readings and the course: duplicates.",
+      "Fortune's Wheelhouse Patreon: not opened."
+    ]
+  },
+  "images_final": true
+}

@@ -1,0 +1,134 @@
+{
+  "healer": {
+    "healer_slug": "ashtanga-yoga-bilbao",
+    "location_source": "https://ashtangayogabilbao.com/sobre-nosotros/",
+    "create": {
+      "name": "Ashtanga Yoga Bilbao",
+      "bio": "Ashtanga Yoga Bilbao is a traditional Ashtanga school run by Nines Blázquez and Fernando Gorostiza, who describe it as the first school of its kind in Bilbao and the Basque Country. The couple left Bilbao about a decade before opening it, practising in Madrid and in Mysore, India, and they present themselves as the only authorised Ashtanga teachers in the city. They teach the method in the form passed on by Sri K. Pattabhi Jois at his Mysore institute and later by his grandson Sharath.\n\nThe shala sits on the seventh floor of the Rascacielos Bailén in the Abando district, near the railway station, in a renovated sixty-square-metre room whose five windows look over the old town and the Arriaga theatre. Most sessions are Mysore style: each student works through their own sequence while a teacher gives individual guidance, with open arrival times from early morning to evening on weekdays and on Saturday mornings, plus a led class on Saturdays. Through the year the school also invites guest teachers for weekend courses in philosophy, Vedic chanting and asana, holds an urban summer retreat and a spring retreat, and posts recordings of the founders' practice on its YouTube channel.",
+      "tier": "local_hero",
+      "entity_type": "school",
+      "availability": "local",
+      "city": "Bilbao",
+      "country": "Spain",
+      "subjects": [
+        "yoga",
+        "breathwork",
+        "ancient-wisdom"
+      ],
+      "website_url": "https://ashtangayogabilbao.com/",
+      "booking_url": "https://ashtangayogabilbao.com/horarios-y-tarifas/",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "info@ashtangayogabilbao.com",
+      "image_urls": [
+        "https://ashtangayogabilbao.com/wp-content/uploads/2026/09/DSC00315-e1789837159459.jpg",
+        "https://ashtangayogabilbao.com/wp-content/uploads/2026/09/Nines-y-Fernando.jpg",
+        "https://ashtangayogabilbao.com/wp-content/uploads/2026/09/IMG_3432-scaled-e1789837021510.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [
+    {
+      "title": "Serie intermedia de Ashtanga Yoga (segunda serie) con Fernando Gorostiza de Ashtanga Yoga Bilbao.",
+      "url": "https://www.youtube.com/watch?v=18tf9dQTTLE",
+      "subjects": [
+        "yoga",
+        "breathwork"
+      ],
+      "channel": "Ashtanga Yoga Bilbao"
+    },
+    {
+      "title": "Primera serie de Ashtanga Yoga con Fernando Gorostiza en Ashtanga Yoga Bilbao.",
+      "url": "https://www.youtube.com/watch?v=AVQqYI4LE7k",
+      "subjects": [
+        "yoga",
+        "breathwork"
+      ],
+      "channel": "Ashtanga Yoga Bilbao"
+    },
+    {
+      "title": "Saludos al sol y secuencia de pie de Ashtanga Yoga con Nines Blázquez de Ashtanga Yoga Bilbao.",
+      "url": "https://www.youtube.com/watch?v=IE0eYnpwKWk",
+      "subjects": [
+        "yoga",
+        "breathwork"
+      ],
+      "channel": "Ashtanga Yoga Bilbao"
+    }
+  ],
+  "books": [],
+  "courses": [
+    {
+      "title": "Horarios y tarifas (monthly passes and class cards)",
+      "url": "https://ashtangayogabilbao.com/horarios-y-tarifas/",
+      "description": "Mysore-style classes Monday to Saturday and a led class on Saturdays, paid by monthly pass, by one- to three-week pass or with a class card.",
+      "price": "Bono de 8(+2) clases 70 €; Bono de 12(+3) clases 80 €; Bono ilimitado 90 €; 1 clase suelta 18 €; 5 clases 75 €; 10 clases 130 €; 20 clases 220 €",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://ashtangayogabilbao.com/wp-content/uploads/2026/09/Calendario-lunar-2026-657x1024.jpg"
+    },
+    {
+      "title": "Ofertas de iniciación",
+      "url": "https://ashtangayogabilbao.com/ofertas-iniciacion/",
+      "description": "Introductory passes for first-time students, counted from the first class: an unlimited week, month or two months of Mysore-style practice, with school registration included.",
+      "price": "1er mes ilimitado: 80 euros; 2º mes ilimitado: 75 euros; 2 meses ilimitados: 140 euros; 1 semana ilimitada: 75 euros",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://ashtangayogabilbao.com/wp-content/uploads/2026/08/oferta-septiembre-1.jpg"
+    },
+    {
+      "title": "La Isa Upanishad con Anna Costanza",
+      "url": "https://ashtangayogabilbao.com/la-isa-upanishad-con-anna-costanza/",
+      "description": "A weekend reading the eighteen verses of the Isha Upanishad in full with Anna Costanza, with two Mysore-style practices led by the school's teachers for students with an established practice.",
+      "price": "130 euros; 90 euros (solo la parte de filosofía)",
+      "product_type": "course",
+      "start_date": "2026-12-18",
+      "end_date": "2026-12-20",
+      "subjects": [
+        "yoga",
+        "ancient-wisdom"
+      ],
+      "image": "https://ashtangayogabilbao.com/wp-content/uploads/2026/10/Isa-Upanisad-diciembre-2026.jpg"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "yoga-school",
+    "rank": 1063,
+    "hub": null,
+    "tier_evidence": "YouTube channel Ashtanga Yoga Bilbao (linked from /contacto/): 156 subscribers, 32 videos (Data API, 10 Nov 2026); Instagram and Facebook not fetched → local_hero.",
+    "email": "yes",
+    "email_source": "https://ashtangayogabilbao.com/contacto/",
+    "contact_form_url": "https://ashtangayogabilbao.com/contacto/",
+    "bio_check": "OK: no 8-word runs against 5 source(s)",
+    "flags": [
+      "Lead from the Sharath Yoga Centre authorised-teacher list (Ángeles Blázquez Morcuende, Ashtanga Yoga Bilbao); facts from the school's own site (robots.txt allows us).",
+      "Teacher training: the school does not advertise a teacher training; it fits as an authorised Ashtanga lineage school.",
+      "Founding year not published.",
+      "Possible future listings: Nines (Ángeles) Blázquez, Fernando Gorostiza; guest teachers Anna Costanza, Susanna Finocchi.",
+      "No Spiritpedia teachers are named on the site, so the teachers file has no links.",
+      "Regional: Bilbao / Basque Country; Spiritpedia has few listings in northern Spain.",
+      "The Isa Upanishad page lists the Sunday session as 'Domingo 2 de octubre' (a typo on the page; the course runs 18–20 December 2026)."
+    ],
+    "left_out": [
+      "Yoga: Un Medio y un Fin with Susanna Finocchi (6–8 Nov 2026): passed.",
+      "Curso de seguimiento 2025-26: ends Nov 2026.",
+      "Retiro urbano de verano and Retiro de yoga en Amalurra 2026: passed.",
+      "Older YouTube uploads: three recent full-practice videos chosen."
+    ]
+  },
+  "images_final": true
+}

@@ -1,0 +1,193 @@
+{
+  "healer": {
+    "healer_slug": "devin-hunter",
+    "location_source": "https://www.modernwitchuniversity.com/black-rose-witchcraft/black-rose-teachers/",
+    "create": {
+      "name": "Devin Hunter",
+      "bio": "Devin Hunter is a witch, psychic medium and author who has worked professionally with spirits and clients for more than two decades. He holds third-degree initiations in the Northern Star tradition of Wicca and in the Dianic tradition, founded his own path, the Sacred Fires tradition, and is one of the three founders of the Black Rose school, alongside Storm Faerywolf and Chas Bogan. He also hosts the long-running Modern Witch podcast, which has introduced many listeners to practical magic.\n\nHis books, published by Llewellyn, begin with a trilogy on personal power, spirit allies and the deeper mysteries of the Craft, then turn to hands-on spellcraft in Modern Witch, crystals in Crystal Magic for the Modern Witch, plant lore in Houseplant Hortocculture and, most recently, cleansing and psychic protection in The Bad Vibes Field Guide. Through Modern Witch University, the online school he runs with his collaborators, he teaches the thirteen-month Black Rose Witchcraft course, in which the three founders talk through each month's theme in recorded sessions, and he also works with a small number of private students. The school is based in Antioch, in the San Francisco Bay Area.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "worldwide",
+      "city": "Antioch, California",
+      "country": "United States",
+      "subjects": [
+        "spirituality",
+        "mediumship-spirits",
+        "shadow-work"
+      ],
+      "website_url": "https://www.modernwitchuniversity.com/",
+      "booking_url": "https://www.modernwitchuniversity.com/online-classes/",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "university@modernwitch.com",
+      "image_urls": [
+        "https://www.modernwitchuniversity.com/wp-content/uploads/2024/02/DH24B-300x300.jpg"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "omega-institute",
+      "role": "instructor"
+    }
+  ],
+  "videos": [],
+  "books": [
+    {
+      "title": "The Witch's Book of Power",
+      "slug": "the-witchs-book-of-power",
+      "author": "Devin Hunter",
+      "asin": "0738748196",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "His first book, on finding and building a witch's personal power by working with one's own energy, cosmic forces and spirit allies.",
+      "subjects": [
+        "spirituality",
+        "mediumship-spirits"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/0738748196.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "The Witch's Book of Spirits",
+      "slug": "the-witchs-book-of-spirits",
+      "author": "Devin Hunter",
+      "asin": "0738751944",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "A guide to ritual and relationship with the unseen: guides, familiars, angels, the dead, faeries and other spirits, and how a witch can work alongside them.",
+      "subjects": [
+        "mediumship-spirits",
+        "spirituality"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/0738751944.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "The Witch's Book of Mysteries",
+      "slug": "the-witchs-book-of-mysteries",
+      "author": "Devin Hunter",
+      "asin": "0738756563",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "The third book in his Witch's Book series, drawing on his own book of shadows for deeper practices of self-orientation, inner sight and personal gnosis.",
+      "subjects": [
+        "mysticism",
+        "shadow-work",
+        "spirituality"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/0738756563.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "Modern Witch",
+      "slug": "modern-witch",
+      "author": "Devin Hunter",
+      "asin": "0738757241",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "A richly photographed collection of spells, charms, recipes and correspondences from his working grimoire, grouped by the main reasons people turn to magic.",
+      "subjects": [
+        "spirituality",
+        "manifestation"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/0738757241.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "Crystal Magic for the Modern Witch",
+      "slug": "crystal-magic-for-the-modern-witch",
+      "author": "Devin Hunter",
+      "asin": "0738768863",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "A colour reference to more than a hundred stones and metals, with their correspondences, grids and spells for using them in magical practice.",
+      "subjects": [
+        "spirituality",
+        "energy-medicine"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/0738768863.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "Houseplant Hortocculture",
+      "slug": "houseplant-hortocculture",
+      "author": "Devin Hunter",
+      "asin": "0738773972",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "Joins practical care of indoor plants with their occult lore, showing how to bring small magical acts into watering, potting and tending them.",
+      "subjects": [
+        "spirituality",
+        "shamanism"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/0738773972.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "The Bad Vibes Field Guide",
+      "slug": "the-bad-vibes-field-guide",
+      "author": "Devin Hunter",
+      "asin": "0738778419",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "His newest book, a step-by-step handbook on cleansing and shielding against unwanted energies and spirits, written for beginners and practising psychics alike.",
+      "subjects": [
+        "mediumship-spirits",
+        "energy-medicine"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/0738778419.01._SCLZZZZZZZ_.jpg"
+    }
+  ],
+  "courses": [
+    {
+      "title": "Black Rose Witchcraft",
+      "url": "https://www.modernwitchuniversity.com/black-rose-witchcraft/",
+      "description": "A thirteen-month online course with weekly lessons in witchcraft, magic and spiritual practice, taken at your own pace. Each month opens with a recorded discussion of its theme by the school's three founders, of whom Devin Hunter is one.",
+      "price": "$35 a month for twelve months, or $350 single payment",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "spirituality",
+        "mediumship-spirits"
+      ],
+      "image": "https://www.modernwitchuniversity.com/wp-content/uploads/2023/12/br24head.jpg"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "pipelines-3",
+    "hub": "omega",
+    "rank": 312,
+    "hub_url": "https://www.eomega.org/people/devin-hunter",
+    "tier_evidence": "No readable follower counts: no own YouTube channel found; Instagram/Facebook not read (login walls). Total 0 readable → local_hero (counts unreadable for main accounts).",
+    "email": "yes",
+    "email_source": "https://www.modernwitchuniversity.com/",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 9 source(s)",
+    "flags": [
+      "Own site: devinhunter.net redirects to modernwitch.com/devin/ (404), and modernwitch.com redirects to Modern Witch University, the school he co-runs; that school's site is used as his website.",
+      "Email university@modernwitch.com is the school's shared inbox (footer of every page), not a personal address.",
+      "Base: Antioch, California is the school's published contact address (a mailbox number); city only recorded. The teachers page says he is not taking appointments.",
+      "Omega named on: https://www.modernwitchuniversity.com/ (Events menu links Omega retreats of 2025 run by the Modern Witch crew); Omega pages not opened: eomega.org returns 403 to us (6 Nov 2026). The retreats are past, so none listed.",
+      "Shares Modern Witch University and Black Rose Witchcraft with Storm Faerywolf (already planned/listed): possible overlap of the Black Rose course on both listings.",
+      "Only one photo: 300x300 headshot from the school's teachers page.",
+      "Books: ISBNs from Amazon links on his books page (modernwitchuniversity.com/books-by-devin-hunter/), not confirmed elsewhere; covers from the same page.",
+      "Witchcraft and spell work: 'A Spell for a Correct Diagnosis' appears in the Modern Witch blurb; the book itself is kept, description avoids it."
+    ],
+    "left_out": [
+      "Psychic Witch, Magickally Queer, Fiber Spirit and Professional Psychic retreats (2025): past dates.",
+      "Algorithm Magick: teacher of part one not stated on the page; part two is by Azariel Flame.",
+      "Spiritual Cleansing and Guided Meditations: led by Storm Faerywolf.",
+      "Spellcasting 101 page redirects to login; not read.",
+      "Private apprenticeships: not checked as his; teachers page says he is not taking appointments.",
+      "Modern Witch podcast: not opened (buzzsprout host not checked)."
+    ]
+  },
+  "images_final": true
+}

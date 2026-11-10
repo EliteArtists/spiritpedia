@@ -1,0 +1,34 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 1296,
+    "healer_slug": "centre-de-yoga-iyengar-de-paris"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "a94d9a7b-9288-482c-8069-4f265eb3d898",
+      "slug": "cours-de-yoga-tarifs-classes-class-cards-and-unlimited-pass",
+      "title": "Cours de yoga: tarifs (classes, class cards and unlimited pass)"
+    },
+    {
+      "table": "courses",
+      "id": "1e670d15-626f-451b-bc69-bd581290a610",
+      "slug": "atelier-reprise-des-bases-niveau-1-14-novembre",
+      "title": "Atelier Reprise des bases – Niveau 1 – 14 novembre"
+    },
+    {
+      "table": "courses",
+      "id": "af52be21-c1e8-463d-9d67-c4af7d410f3e",
+      "slug": "stage-dhiver-2026",
+      "title": "Stage d'hiver 2026"
+    },
+    {
+      "table": "free_resources",
+      "id": "136e7677-8a33-4627-8d97-15e6ae79987f",
+      "slug": "quelques-conseils-guidance-before-and-after-practice",
+      "title": "Quelques conseils (guidance before and after practice)"
+    }
+  ],
+  "at": "2026-11-10T17:40:29.506Z"
+}

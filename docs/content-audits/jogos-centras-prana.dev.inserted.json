@@ -1,0 +1,40 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 1213,
+    "healer_slug": "jogos-centras-prana"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "d9f6a2f3-07a0-48d4-9625-a3b234883d51",
+      "slug": "joga-pradedantiems-joga-1",
+      "title": "Joga pradedantiems (Joga-1)"
+    },
+    {
+      "table": "courses",
+      "id": "dc040941-b37d-4567-9f88-2fa4eae8309c",
+      "slug": "sivananda-joga-kursas-pazengusiems-joga-2",
+      "title": "Sivananda joga kursas pažengusiems (Joga-2)"
+    },
+    {
+      "table": "courses",
+      "id": "892fe409-3519-43c2-b8a8-3259dfbc1f83",
+      "slug": "10-kartu-abonementas",
+      "title": "10 kartų abonementas"
+    },
+    {
+      "table": "courses",
+      "id": "639a2db2-00ef-4267-a3a1-3946e51517f3",
+      "slug": "vasaros-jogos-stovyklos",
+      "title": "Vasaros jogos stovyklos"
+    },
+    {
+      "table": "free_resources",
+      "id": "7580bdb8-d457-494a-87fc-73d6638c2c72",
+      "slug": "meditacija-satsangas",
+      "title": "Meditacija – Satsangas"
+    }
+  ],
+  "at": "2026-11-10T13:54:03.557Z"
+}

@@ -1,0 +1,34 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 1211,
+    "healer_slug": "sivananda-yoga-vedanta-zentrum-muenchen"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "c12e34d6-e8c9-4562-8798-1f91c6dc31a6",
+      "slug": "internationale-sivananda-yogalehrer-ausbildung-ttc-2",
+      "title": "Internationale Sivananda Yogalehrer-Ausbildung (TTC)"
+    },
+    {
+      "table": "courses",
+      "id": "578f1992-6e49-4253-a71a-21091147fc69",
+      "slug": "yogakurse-fur-anfanger-und-geubte-2",
+      "title": "Yogakurse für Anfänger und Geübte"
+    },
+    {
+      "table": "courses",
+      "id": "d9b52cfd-8c16-40d7-950f-178b97474cbc",
+      "slug": "monatskarte",
+      "title": "Monatskarte"
+    },
+    {
+      "table": "free_resources",
+      "id": "78265b32-fd11-4ff4-bc49-3549b8804e07",
+      "slug": "yoga-probestunde",
+      "title": "Yoga-Probestunde"
+    }
+  ],
+  "at": "2026-11-10T13:51:06.591Z"
+}

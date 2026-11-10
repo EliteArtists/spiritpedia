@@ -1,0 +1,134 @@
+{
+  "healer": {
+    "healer_slug": "sivananda-yoga-japan",
+    "location_source": "https://sivanandajp.org/getting-here/",
+    "create": {
+      "name": "Sivananda Yoga Japan (Tokyo Centre)",
+      "bio": "Sivananda Yoga Japan is the Tokyo centre of the International Sivananda Yoga Vedanta Centres, the organisation founded by Swami Vishnudevananda and run from its headquarters in Canada, and the only centre in Japan under its direct management. It opened in Yoyogi in 2007, moved to Koenji in 2011, closed for a time during the pandemic, and reopened in November 2023 in a quiet residential street near Chitose-Funabashi station in Setagaya. A few resident staff live at the centre, and in keeping with the organisation's ethos all of its staff and teachers work as volunteers in the spirit of karma yoga.\n\nThe day begins with an early satsang of meditation, chanting and a talk and ends with the evening arati. Newcomers are invited to a free open house with a beginners' class and vegetarian meal, or a ninety-minute taster class, before taking a five-week beginners' course on the twelve basic postures, breathing and the five points of yoga. Regular classes, most of them both in person and online, include all-level, early-morning, evening meditation and English-language sessions, alongside courses in Vedanta philosophy, Sanskrit and meditation and workshops with visiting teachers. The centre also helps Japanese students join Sivananda teacher training courses abroad with Japanese interpretation.",
+      "tier": "local_hero",
+      "entity_type": "school",
+      "availability": "local_online",
+      "founded_year": 2007,
+      "city": "Tokyo",
+      "country": "Japan",
+      "subjects": [
+        "yoga",
+        "meditation",
+        "ancient-wisdom"
+      ],
+      "website_url": "https://sivanandajp.org/",
+      "booking_url": "https://sivanandajp.org/forbeginner/",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "info@sivanandajp.org",
+      "image_urls": [
+        "https://sivanandajp.org/wp-content/uploads/2024/10/DSC_0254-scaled.jpg",
+        "https://sivanandajp.org/wp-content/uploads/2024/06/top_yoga_3.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "はじめてのシヴァーナンダヨーガコース (beginners' course, 5 sessions)",
+      "url": "https://sivanandajp.org/beginnercourse/",
+      "description": "A weekly course over five sessions that builds the Sivananda basics step by step: the five points of yoga, the twelve basic postures, breathing methods and the philosophy behind the practice.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga",
+        "breathwork"
+      ],
+      "image": "https://sivanandajp.org/wp-content/uploads/2026/07/SYVC_JP_header.png"
+    },
+    {
+      "title": "1ヵ月パス (one-month class pass)",
+      "url": "https://sivanandajp.org/yogadetail/",
+      "description": "A monthly pass for the centre's regular classes in Tokyo and its online morning and evening classes, used alongside the annual membership card.",
+      "price": "￥7000 (monthly direct debit) / ￥8000 (paid each month)",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga",
+        "meditation"
+      ],
+      "image": "https://sivanandajp.org/wp-content/uploads/2026/07/SYVC_JP_header.png"
+    },
+    {
+      "title": "年間会員 (annual membership card)",
+      "url": "https://sivanandajp.org/membership/",
+      "description": "A one-year membership that gives member prices on all classes and workshops at the Tokyo centre.",
+      "price": "¥5,500",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://sivanandajp.org/wp-content/uploads/2026/07/SYVC_JP_header.png"
+    },
+    {
+      "title": "TTC ヨガ講師養成コース (teacher training with Japanese interpretation)",
+      "url": "https://sivanandajp.org/ttc200/",
+      "description": "The four-week Sivananda Teachers' Training Course held at the organisation's ashrams abroad, with simultaneous Japanese interpretation of lectures and texts, homework and exams in Japanese. The Tokyo centre gives guidance and handles enquiries.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga",
+        "meditation"
+      ],
+      "image": "https://sivanandajp.org/wp-content/uploads/2026/07/SYVC_JP_header.png"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "オープンハウス (free open house)",
+      "url": "https://sivanandajp.org/forbeginner/",
+      "description": "A free introductory day at the Tokyo centre with a beginners' yoga class, a vegetarian meal and a short taster workshop based on the five points of yoga.",
+      "featured": true,
+      "resource_type": "practice",
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://sivanandajp.org/wp-content/uploads/2026/07/SYVC_JP_header.png"
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "yoga-school",
+    "rank": 760,
+    "hub": null,
+    "tier_evidence": "No YouTube channel linked on the pages read; Facebook, X and Instagram not fetched; no readable followers → local_hero",
+    "email": "yes",
+    "email_source": "https://sivanandajp.org/",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 9 source(s)",
+    "flags": [
+      "Lead from sivanandayogavietnam.org/community (the organisation's international community page), which links sivanandajp.org; sivananda.org's centre list names the Shojiko Retreat (sivananda.jp), which was not fetched. robots.txt (* group) disallows only wp-admin.",
+      "Site is in Japanese; the bio and descriptions are my own English summaries. Item titles keep the site's Japanese names with an English gloss.",
+      "Email info@sivanandajp.org is shown in the site header and footer (centre inbox).",
+      "Base: the centre's address is in Funabashi 4-chome, Setagaya-ku, Tokyo; recorded as Tokyo.",
+      "The TTC item is the organisation's training abroad with Japanese interpretation (USA, Vietnam, India, Thailand), not a course held in Tokyo.",
+      "The Shojiko Retreat by Lake Shoji (part of the same centre) currently offers lodging only, owing to a staff shortage; not listed.",
+      "Possible future listings: none named on the pages read.",
+      "No Spiritpedia teachers are named on the pages read, so the teachers file has no links.",
+      "Prices on the beginners' course page were not in the readable HTML."
+    ],
+    "left_out": [
+      "Yoga therapy, SYHET health-educator training and 'Yoga Health' private sessions: health framing.",
+      "やさしいヨガ (gentle yoga) is described for people recovering from illness: health framing.",
+      "Morning yoga paused per the home page; Shojiko lodging-only stays."
+    ]
+  },
+  "images_final": true
+}

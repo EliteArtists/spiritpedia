@@ -1,0 +1,34 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 1297,
+    "healer_slug": "ashtanga-yoga-eindhoven"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "bc1a71be-8a8c-4f47-8628-febe1cb83cb0",
+      "slug": "mysore-memberships-and-drop-in",
+      "title": "Mysore memberships and drop-in"
+    },
+    {
+      "table": "courses",
+      "id": "488dcef4-4d42-4cab-99a0-18f857753f18",
+      "slug": "ashtanga-yoga-beginners-course",
+      "title": "Ashtanga Yoga Beginners Course"
+    },
+    {
+      "table": "free_resources",
+      "id": "0ebd9d94-02a6-4c36-b856-4647fa3a9d70",
+      "slug": "mantras",
+      "title": "Mantras"
+    },
+    {
+      "table": "free_resources",
+      "id": "3ad30407-6c77-4629-a98f-482d3a6d7358",
+      "slug": "online-videos-home-practice-and-nadi-shodhana",
+      "title": "Online videos: home practice and nadi shodhana"
+    }
+  ],
+  "at": "2026-11-10T17:40:38.516Z"
+}

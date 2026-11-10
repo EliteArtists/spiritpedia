@@ -1,0 +1,120 @@
+{
+  "healer": {
+    "healer_slug": "iyengar-yoga-birmingham",
+    "location_source": "https://www.iyengaryoga.uk.com/our-teachers/jayne-orton",
+    "create": {
+      "name": "Iyengar Yoga Birmingham",
+      "bio": "Iyengar Yoga Birmingham began life in 2002 as the Iyengar Yoga Institute of Birmingham, a title B.K.S. Iyengar himself proposed when he gave the venture his blessing. Its director, Jayne Orton, met Iyengar as a teenager at a master class in Oxford and went on to travel to Pune more than twenty-five times from the early 1980s, studying with him and his family; in 2010 he granted her Advanced certification. She has taught for around forty-five years, leading intensives and national conventions across Europe and North America, and she runs study groups on Indian philosophy.\n\nThe school owns its building on Westley Road in Acocks Green, a bright studio kept for Iyengar teaching alone and stocked with all the props the method uses. A small team of certified teachers, all members of Iyengar Yoga (UK), takes classes from a six-week foundation course and beginner sessions through mixed-ability and two-hour intermediate classes to an advanced class for teachers, plus a women-only group and classes for children. Several of Jayne's classes are also streamed online. Through the year she leads hybrid workshops, a four-day Christmas intensive with asana, pranayama and some Patanjali, and mentoring days for teachers working towards their first certificate.",
+      "tier": "local_hero",
+      "entity_type": "school",
+      "availability": "local_online",
+      "founded_year": 2002,
+      "city": "Birmingham",
+      "country": "United Kingdom",
+      "subjects": [
+        "yoga"
+      ],
+      "website_url": "https://www.iyengaryoga.uk.com/",
+      "booking_url": "https://www.iyengaryoga.uk.com/book-a-class",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "info@iyengaryoga.uk.com",
+      "image_urls": [
+        "https://www.iyengaryoga.uk.com/wp-content/themes/iyengar/img/og-logo-iyb.png"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Beginner Level classes",
+      "url": "https://www.iyengaryoga.uk.com/classes/beginner-level",
+      "description": "Weekly classes for newcomers to the Iyengar method, introducing the basic asanas, taught in the studio and, for Jayne Orton's classes, online. Booked ahead by 8am on the day.",
+      "price": "£13",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://www.iyengaryoga.uk.com/wp-content/themes/iyengar/img/og-logo-iyb.png"
+    },
+    {
+      "title": "Yoga A Gem for Women (ladies only)",
+      "url": "https://www.iyengaryoga.uk.com/classes/foundation-course",
+      "description": "A women-only class open to both beginners and experienced students, offered as a drop-in or in a block with the teacher.",
+      "price": "£12",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://www.iyengaryoga.uk.com/wp-content/themes/iyengar/img/og-logo-iyb.png"
+    },
+    {
+      "title": "Advanced Workshop for Students and Teachers with Jayne Orton",
+      "url": "https://www.iyengaryoga.uk.com/classes/intensive-weekends",
+      "description": "A three-hour afternoon workshop, in the studio and online, for intermediate students and teachers of every level, working on poses from level 2 of the Iyengar certification syllabus, with tea afterwards.",
+      "price": "£36",
+      "product_type": "course",
+      "start_date": "2026-11-28",
+      "end_date": "2026-11-28",
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://www.iyengaryoga.uk.com/wp-content/themes/iyengar/img/og-logo-iyb.png"
+    },
+    {
+      "title": "New Year Light On Yoga Workshop with Jayne Orton",
+      "url": "https://www.iyengaryoga.uk.com/#new-year-light-on-yoga-workshop",
+      "description": "A morning of asana sequences drawn from the courses in Light on Yoga, followed by Jayne's talk on building a personal practice, with time for questions. In the studio and online.",
+      "price": "£30",
+      "product_type": "course",
+      "start_date": "2027-01-03",
+      "end_date": "2027-01-03",
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://www.iyengaryoga.uk.com/wp-content/themes/iyengar/img/og-logo-iyb.png"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "yoga-school",
+    "rank": 725,
+    "hub": null,
+    "tier_evidence": "No YouTube channel linked on the site; Facebook and Twitter linked but not fetched; no readable followers → local_hero",
+    "email": "yes",
+    "email_source": "https://www.iyengaryoga.uk.com/",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 5 source(s)",
+    "flags": [
+      "Lead from Iyengar Yoga (UK)'s own list of Iyengar Yoga Centres (iyengaryoga.org.uk/group-categories/iyengar-yoga-centre/). robots.txt of www.iyengaryoga.uk.com read first (bare host redirects to www); allows us.",
+      "Email info@iyengaryoga.uk.com is printed as plain text in the footer of every page (no mailto link); the site's /contact-us/ link returned 404.",
+      "Image: only the school's logo (og-logo-iyb.png, 997x514). The masthead photo is a portrait of B.K.S. Iyengar, not the school, and the class photos are under 300 px, so they were not used. Owner may want a studio photo later.",
+      "The New Year workshop URL is the home page with a # fragment (the events list has no per-event pages); the Advanced Workshop uses the Intensive Weekends page, which points to the events list.",
+      "Bank-transfer details for Jayne Orton Yoga Ltd are printed on the events list; not copied.",
+      "Possible future listings: Jayne Orton (director, Advanced Iyengar teacher); teachers Hannah Cliff, Andrew Hall, Natalie Cliff, Clare Preston.",
+      "No Spiritpedia teachers are named on the site, so the teachers file has no links.",
+      "Regional: Birmingham, West Midlands.",
+      "UK listing: the brief prefers schools outside the US, UK and Australia; included because the Iyengar lineage list read here is the UK one."
+    ],
+    "left_out": [
+      "Iyengar Yoga for Back Problems, Therapy classes with Jayne Orton and the medical class: condition-led (health rule).",
+      "Jayne Orton's work with a football club's injured players (teachers page): condition-led, not mentioned.",
+      "Level 1 Mentoring Workshop (5 Dec 2026 and 2027 dates, £30): for registered trainees only; mentioned in the bio.",
+      "Annual Christmas 4-day intensive (27-30 Dec 2026): course full, wait list only; mentioned in the bio.",
+      "New Year Light on Yoga Class (2 Jan 2027, £15): kept the longer workshop the next day instead.",
+      "Corporate classes and one-to-one tuition (£100): not general teaching items.",
+      "Mixed Ability, Intermediate and Teachers Advanced classes: covered by the bio and the beginner class item."
+    ]
+  },
+  "images_final": true
+}

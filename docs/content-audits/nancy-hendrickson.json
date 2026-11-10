@@ -1,0 +1,125 @@
+{
+  "healer": {
+    "healer_slug": "nancy-hendrickson",
+    "location_source": null,
+    "no_public_base": "Her site (sageandshadow.com home, about and contact pages) gives no city or country; it says only that she likes exploring the American Southwest, and her work is online.",
+    "create": {
+      "name": "Nancy Hendrickson",
+      "bio": "Nancy Hendrickson is a tarot reader, diviner and author whose work centres on connecting with ancestors. Known among readers as the ancestor person, she has worked with tarot and with the beloved dead for decades, and she reads for clients using tarot, oracle cards and charms, with a particular focus on ancestral and seasonal sabbat readings. Her writing blends family history with divination, showing people how to reach towards relatives they may know little about, beyond their grandparents.\n\nHer books form what she calls an ancestral trilogy: Ancestral Tarot, a guide to using the cards to uncover the stories and messages of your family line; Ancestral Grimoire, which turns to the magical practitioners in a person's heritage; and the Ancestral Magick divination kit, with expansion packs, a workbook and a pendulum board. She also created the Ofrenda Oracle. She teaches self-paced courses through the Tarot Readers Academy, including Ancestral Tarot in Practice, on ancestral mediumship with tarot and a pendulum, and The Witch's Workshop, on the fae, land spirits and past lives, and she writes the Hidden Path newsletter on divination and the supernatural. She loves exploring the ancient sites of the American Southwest.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "worldwide",
+      "city": null,
+      "country": null,
+      "subjects": [
+        "mediumship-spirits",
+        "ancient-wisdom",
+        "spirituality"
+      ],
+      "website_url": "https://sageandshadow.com/",
+      "booking_url": "https://sageandshadow.com/ancestral-tarot-course/",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": null,
+      "image_urls": [
+        "https://sageandshadow.com/wp-content/uploads/2020/04/nancy-hendrickson-copy-695x1024.jpg",
+        "https://sageandshadow.com/wp-content/uploads/2023/08/NancySageShadow-Tarot-Author-1024x1024.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [
+    {
+      "title": "Ancestral Tarot",
+      "slug": "ancestral-tarot",
+      "author": "Nancy Hendrickson",
+      "asin": "1578637414",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "A practical guide to using tarot to learn about and hear from your ancestors, with spreads and exercises that work even when little of the family history is known.",
+      "subjects": [
+        "mediumship-spirits",
+        "ancient-wisdom"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1578637414.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "Ancestral Grimoire",
+      "slug": "ancestral-grimoire",
+      "author": "Nancy Hendrickson",
+      "asin": "B09T9BNP3R",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "The second book in her ancestral series, turning to the magical practitioners in one's lineage and how to connect with them through divination and ritual.",
+      "subjects": [
+        "mediumship-spirits",
+        "ancient-wisdom"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/B09T9BNP3R.01._SCLZZZZZZZ_.jpg"
+    }
+  ],
+  "courses": [
+    {
+      "title": "Ancestral Tarot in Practice",
+      "url": "https://tarotreadersacademy.com/p/ancestral-tarot-in-practice",
+      "description": "A self-paced online course on building your own form of ancestral mediumship, using tarot and a pendulum to contact ancestors and receive their messages, for those who know much or nothing of their family history.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "mediumship-spirits",
+        "spirituality"
+      ],
+      "image": "https://uploads.teachablecdn.com/attachments/BeqBj3unRFetHFz2lmOX_Lenormand+Oracle+Divination+Course+%281%29.jpg"
+    },
+    {
+      "title": "The Witch's Workshop: The Fae, Land Spirits, Past Lives",
+      "url": "https://tarotreadersacademy.com/p/witches-workshop-fae-land-spirits",
+      "description": "A self-paced course on the folklore of the fae, communicating with spirits of the land and exploring past lives, with simple crafts made as magical tools along the way.",
+      "price": "$72 one-time, or 2 payments of $38",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "mediumship-spirits",
+        "shamanism"
+      ],
+      "image": "https://uploads.teachablecdn.com/attachments/IGUYP0DbQkSWjlFVwlS3_the+witchs+workshop+image.png"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "pipelines-3",
+    "hub": "omega",
+    "rank": 323,
+    "hub_url": "https://www.eomega.org/people/nancy-hendrickson",
+    "tier_evidence": "No YouTube channel found; Instagram (@nancysageshadow) and Substack not read → 0 readable → local_hero (main account Instagram unreadable).",
+    "email": "contact form",
+    "email_source": null,
+    "contact_form_url": "https://sageandshadow.com/need-help/",
+    "bio_check": "OK: no 8-word runs against 7 source(s)",
+    "flags": [
+      "No Omega mention on own site: listed without the link.",
+      "No published email; contact form on sageandshadow.com/need-help/.",
+      "No public base (see no_public_base).",
+      "Both courses are hosted on Ethony Dawn's Tarot Readers Academy (rank 319, planned in this chunk); her site links them with an affiliate code, which was dropped from the URL.",
+      "Ancestral Tarot in Practice price not shown on the course page; recorded as Contact for pricing.",
+      "Ancestral Grimoire ASIN is the Kindle edition linked from her about page; Ancestral Tarot ASIN is the paperback linked from her home page. Neither confirmed elsewhere.",
+      "Her site states services are 'for entertainment purposes only'."
+    ],
+    "left_out": [
+      "Ancestral Magick divination kit and Ofrenda Oracle: no ISBN on her own pages.",
+      "Readings: her site mentions ancestral and sabbat readings but has no booking page or prices.",
+      "Learn Lenormand (Tarot Readers Academy): taught by Erika Robinson, not her.",
+      "The Hidden Path newsletter: substack.com not fetched."
+    ]
+  },
+  "images_final": true
+}

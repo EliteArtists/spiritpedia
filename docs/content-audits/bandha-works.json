@@ -1,0 +1,134 @@
+{
+  "healer": {
+    "healer_slug": "bandha-works",
+    "location_source": "https://bandha.works/kapcsolat/",
+    "create": {
+      "name": "Bandha Works",
+      "bio": "Bandha Works is an Ashtanga yoga school in Budapest, set up in 2013 by three engineers who wanted to bring the traditional practice taught in Mysore to Hungary. It runs what it describes as the country's longest-standing morning Mysore programme, and its teachers, led by school head István Szalai, travel regularly to Mysore to keep learning within the lineage of K. Pattabhi Jois and R. Sharath Jois. R. Saraswathi Jois attended the blessing of its present shala in 2018, and the school has published Hungarian editions of two of Sharath Jois's books.\n\nThe heart of the week is Mysore-style self-practice with individual guidance, alongside afternoon Vinyasa Krama classes. Newcomers start with an eight-session beginners' course and can follow it with a four-week Mysore course that teaches the opening sequence and the etiquette of the shala. Visiting senior Ashtanga teachers give workshops through the year, a monthly free gathering covers yoga philosophy and lifestyle in conversation, and a scholarship offers three months of free practice to someone who could not otherwise afford it. The school's site also shares free series charts, a recording of a led class and the chants used in practice.",
+      "tier": "local_hero",
+      "entity_type": "school",
+      "founded_year": 2013,
+      "availability": "local",
+      "city": "Budapest",
+      "country": "Hungary",
+      "subjects": [
+        "yoga",
+        "breathwork",
+        "ancient-wisdom"
+      ],
+      "website_url": "https://bandha.works/",
+      "booking_url": "https://bandha.works/arak/",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": null,
+      "image_urls": [
+        "https://bandha.works/_astro/mysore_desktop.TkYHQufV.jpg",
+        "https://bandha.works/_astro/rolunk_desktop.Cle8cQsl.jpeg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Astanga Mysore-program passes",
+      "url": "https://bandha.works/arak/",
+      "description": "Passes for the morning Mysore programme, where each student works through the sequence at the pace of their own breath with individual teaching. Registration is needed before the first visit; passes are valid only for the morning Mysore sessions.",
+      "price": "Egy alkalom (drop in) 4.500.- Ft; Heti bérlet 20.000.- Ft; Havi bérlet 34.000.- Ft; Éves bérlet 320.000.- Ft",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga",
+        "breathwork"
+      ],
+      "image": "https://bandha.works/_astro/arak_desktop.DhMz4eho.jpg"
+    },
+    {
+      "title": "Astanga Kezdő Tanfolyam (Ashtanga beginners' course)",
+      "url": "https://bandha.works/astanga-kezdo-tanfolyam/",
+      "description": "An eight-session introduction to Ashtanga: its origins and theory, breathing and bandhas, the tristhana, and the primary series postures up to purvottanasana with their vinyasa count. It closes with how to build a long-term practice in led, Mysore and home settings.",
+      "price": "35.000.- Ft",
+      "product_type": "course",
+      "start_date": "2026-11-17",
+      "end_date": null,
+      "subjects": [
+        "yoga",
+        "breathwork"
+      ],
+      "image": "https://bandha.works/_astro/astanga-kezdo-tanfolyam-desktop.3ElOviuA.jpeg"
+    },
+    {
+      "title": "Astanga Mysore-kurzus",
+      "url": "https://bandha.works/astanga-mysore-kurzus/",
+      "description": "A four-week course after the beginners' course that teaches the standing and first seated postures of the primary series in Mysore style, with the vinyasa count, shala etiquette and a short talk and question time at each session.",
+      "price": "35.000.- Ft",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://bandha.works/_astro/mysore_kurzus_desktop.8ABgD9CB.jpg"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Letöltések (series charts and recordings)",
+      "url": "https://bandha.works/letoltesek/",
+      "description": "Free PDF charts of the Ashtanga primary and intermediate series and a 45-minute routine, Prana Vashya series charts, a moon-day poster and an mp3 of a led primary class by K. Pattabhi Jois from 1993.",
+      "featured": true,
+      "resource_type": "download",
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://bandha.works/_astro/letoltesek_desktop.E3TtTiNk.jpg"
+    },
+    {
+      "title": "Mantrák",
+      "url": "https://bandha.works/mantra/",
+      "description": "The opening and closing Ashtanga chants and others sung at the school, each with Sanskrit text, a Hungarian translation and a sung recording.",
+      "featured": false,
+      "resource_type": "practice",
+      "subjects": [
+        "yoga",
+        "ancient-wisdom",
+        "sound-healing"
+      ],
+      "image": "https://bandha.works/_astro/mantra_desktop.CPZDw_D7.jpg"
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "yoga-school",
+    "rank": 1008,
+    "hub": null,
+    "tier_evidence": "No YouTube channel linked from the pages read; Instagram and Facebook not fetched; no readable followers → local_hero.",
+    "email": "contact form",
+    "email_source": null,
+    "contact_form_url": "https://bandha.works/kapcsolat/",
+    "bio_check": "OK: no 8-word runs against 14 source(s)",
+    "flags": [
+      "Lead from the Sharath Yoga Centre authorised-teacher list (István Szalai and Andra's Imre Bimba, Bandha Works, Budapest); facts from the school's own site only (bandha.works; robots.txt allows us).",
+      "The contact page says the school deliberately publishes no email address and asks people to use its message form, so the contact form is used.",
+      "Beginners' course starts 17 Nov 2026 (after the 12 Nov cut-off); its end date is not published.",
+      "The school lists a 'shala psychologist' (Barna Kisanna) among its team; nothing therapeutic is listed here.",
+      "First photo is a duotone shot of practice in the shala; second is the school's 'three engineers' founders banner. Both from its own site.",
+      "Possible future listings: István Szalai (head of school), Gál Noémi Andrea, Fekete Ákos, Magos Eszter, Szabó Eszter Fáni.",
+      "No Spiritpedia teachers are named on the site, so the teachers file has no links.",
+      "Regional: Budapest; Spiritpedia has few listings in Central and Eastern Europe."
+    ],
+    "left_out": [
+      "Drámászana: a self-exploration circle around a hip-opening pose that warns of difficult emotions and advises against attending while on psychiatric medication; the January 2027 session is full (waiting list only) and it is too close to therapy under the health rule.",
+      "Christmas Thali meetup (19 Dec 2026): a social gathering.",
+      "Private sessions and 'yogic lifestyle counselling' (the latter marked as coming soon).",
+      "Vinyasa Krama class passes: on the price page but with no page of their own.",
+      "Hungarian editions of R. Sharath Jois's books: published by the school but not written by it."
+    ]
+  },
+  "images_final": true
+}

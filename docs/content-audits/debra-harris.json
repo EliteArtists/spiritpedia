@@ -1,0 +1,104 @@
+{
+  "healer": {
+    "healer_slug": "debra-harris",
+    "location_source": "https://opalescencereiki.com/contact-reiki-practitioner",
+    "create": {
+      "name": "Debra Harris",
+      "bio": "Debra Harris, known to clients as Debbie, is a Quantum-Touch practitioner and Reiki teacher based in Crescent Springs in Northern Kentucky, where her practice goes by the name Opalescence Reiki. Before she took up energy work she was a physician in conventional medicine, and she describes Reiki as the step from that hands-on, physical world into a quieter kind of work that also helped her know herself better.\n\nHer training is at master practitioner and teacher level in several Reiki lines: the Japanese Usui Reiki Ryoho, the Western Usui Shiki Ryoho system, and Holy Fire III and Holy Fire Karuna Reiki. She is also a certified Quantum-Touch practitioner. Clients can book either a Reiki or a Quantum-Touch session, given in person at her base in Crescent Springs or remotely by video call or phone, and she sees people from across the Cincinnati area. She teaches Reiki from first degree through to master level, to small groups or one person at a time, running Holy Fire III levels I and II together over two full days, and she is gathering interest for a regular Reiki share.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local_online",
+      "city": "Crescent Springs, Kentucky",
+      "country": "United States",
+      "subjects": [
+        "quantum-touch",
+        "reiki",
+        "energy-medicine"
+      ],
+      "website_url": "https://opalescencereiki.com/",
+      "booking_url": "https://opalescencereiki.com/services-reiki-practitioner",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "opalescencereiki@gmail.com",
+      "image_urls": [
+        "https://quantumtouch.com/images/ProfilePictures/DebraHarris.png"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Quantum-Touch sessions",
+      "url": "https://opalescencereiki.com/quantum-touch",
+      "description": "A 45-minute Quantum-Touch session with Debbie, given in person in Crescent Springs or at a distance online. She rests her hands on or just above the body and offers life-force energy while the client relaxes.",
+      "price": "$60 (45 minutes)",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "quantum-touch",
+        "energy-medicine"
+      ],
+      "image": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=768,h=512,fit=crop/YBg7rV0zEaSppRyo/quantun-touch-hands-mp84VMM8rqF0XbzP.png"
+    },
+    {
+      "title": "Reiki sessions",
+      "url": "https://opalescencereiki.com/services-reiki-practitioner",
+      "description": "Individual Reiki sessions, either on the table at her home practice in Crescent Springs or remotely by video call or phone. A 15-minute extension can be added, and there is a discount for veterans.",
+      "price": "$60 (45 minutes)",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "reiki",
+        "energy-medicine"
+      ],
+      "image": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=768,h=538,fit=crop/YBg7rV0zEaSppRyo/pic-of-person-getting-reiki-dWxvyP2GpQcw93ek.jpg"
+    },
+    {
+      "title": "Reiki I, II and Master classes",
+      "url": "https://opalescencereiki.com/reiki-classes",
+      "description": "Reiki training from first degree to master level, taught to small groups or one to one, with attunements, a manual and guided practice. Holy Fire III levels I and II can be taken together over two days or split into shorter sessions.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "reiki"
+      ],
+      "image": "https://quantumtouch.com/images/ProfilePictures/DebraHarris.png"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "quantum-touch",
+    "rank": 253,
+    "hub": null,
+    "tier_evidence": "No readable follower counts: her site links only a Facebook page (never fetched) and no YouTube channel → 0 → local_hero.",
+    "email": "yes",
+    "email_source": "https://opalescencereiki.com/",
+    "contact_form_url": "https://opalescencereiki.com/contact-reiki-practitioner",
+    "bio_check": "OK: no 8-word runs against 8 source(s)",
+    "flags": [
+      "Name: her Quantum-Touch profile says Debra Harris; her own site signs as Debbie Harris. Listed as Debra Harris.",
+      "Photo is her Quantum-Touch profile headshot only: her own site has no photo of her (only landscapes, hands and a logo).",
+      "Health rule: her home page lists conditions Reiki 'may help' (stress, anxiety, PTSD, depression, sleep problems, pain) and has a Reiki-and-ADHD section; none of that is used. The rest of the site (sessions, classes, Quantum-Touch page) is energy work, so she was kept. Borderline: owner may prefer to skip.",
+      "Bio mentions she was a physician before energy work (stated on her about page and Quantum-Touch profile); no medical claims are made.",
+      "Regional: Crescent Springs, Kentucky (a small city of about 4,000 in the Cincinnati area); recorded as published.",
+      "Session prices are written with '$' only; the page does not name a currency."
+    ],
+    "left_out": [
+      "Holy Fire III Level I and II class 'likely May or June 2026', $350: dated and past.",
+      "Planned Reiki share on the events page: not yet scheduled.",
+      "Reiki and ADHD section and links on the home page: condition-named.",
+      "OpalescenceReiki.square.site booking shop: not opened (booking platform)."
+    ]
+  },
+  "images_final": true
+}

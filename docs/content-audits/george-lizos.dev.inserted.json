@@ -1,0 +1,52 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 1184,
+    "healer_slug": "george-lizos"
+  },
+  "rows": [
+    {
+      "table": "books",
+      "id": 2404,
+      "slug": "secrets-of-greek-mysticism",
+      "title": "Secrets of Greek Mysticism"
+    },
+    {
+      "table": "books",
+      "id": 2405,
+      "slug": "protect-your-light",
+      "title": "Protect Your Light"
+    },
+    {
+      "table": "books",
+      "id": 2406,
+      "slug": "lightworkers-gotta-work",
+      "title": "Lightworkers Gotta Work"
+    },
+    {
+      "table": "courses",
+      "id": "6f1b7dee-e116-4b2f-acf1-b248d779ff71",
+      "slug": "energy-work-membership",
+      "title": "Energy Work Membership"
+    },
+    {
+      "table": "courses",
+      "id": "6a0283d9-4940-4055-8ce1-2e93324d7b63",
+      "slug": "intuition-mastery-school",
+      "title": "Intuition Mastery School®"
+    },
+    {
+      "table": "courses",
+      "id": "0c7586ac-780c-4efb-9fa1-7b193e45fbc2",
+      "slug": "the-next-chapter",
+      "title": "The Next Chapter"
+    },
+    {
+      "table": "courses",
+      "id": "a4929f04-d4ee-4dff-a092-3bcc30b946d2",
+      "slug": "psychic-reading-2",
+      "title": "Psychic Reading"
+    }
+  ],
+  "at": "2026-11-10T12:44:58.813Z"
+}

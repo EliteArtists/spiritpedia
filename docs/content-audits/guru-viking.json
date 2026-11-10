@@ -1,0 +1,161 @@
+{
+  "healer": {
+    "healer_slug": "guru-viking",
+    "location_source": null,
+    "no_public_base": "guruviking.com (about, contact pages) publishes no base; the podcast is recorded online and the channel has no country set.",
+    "create": {
+      "name": "Guru Viking Podcast",
+      "bio": "The Guru Viking Podcast is a long-form interview show hosted by Steve James, a researcher and writer on religion and belief who is studying for a doctorate in Asian and Middle Eastern Studies at Oxford after an MPhil there in Tibetan and Himalayan Studies. James trained as a yoga teacher, has studied meditation with Shinzen Young and Tibetan tradition with Glenn Mullin, and created the Movement Koan Method, which joins gentle movement with body-based mindfulness.\n\nRunning on YouTube since 2016, the show now has close to four hundred episodes, usually one to three hours long. Guests range across Buddhist meditation and jhana practice, Zen, Tibetan Vajrayana and Bon, Chan, Hindu tantra and Western esoteric traditions, and include teachers and scholars such as Guo Gu, Alejandro Chaoul, Leigh Brasington, Christopher Wallis, Ken Wilber and Glenn Mullin. James asks detailed questions about practice, lineage and the realities of spiritual communities, including the difficult ones. The website also hosts a free online meditation group, currently paused.",
+      "tier": "local_hero",
+      "entity_type": "channel",
+      "founded_year": null,
+      "availability": "worldwide",
+      "city": null,
+      "country": null,
+      "subjects": [
+        "meditation",
+        "mysticism",
+        "spiritual-awakening"
+      ],
+      "website_url": "https://www.guruviking.com/",
+      "booking_url": null,
+      "youtube_url": "https://www.youtube.com/@guruviking",
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": null,
+      "image_urls": [
+        "https://yt3.ggpht.com/ytc/AIdro_kr6T169eMlfzn23GSeSZuzAJqcalIJ6wEDYETaL40dLow=s800-c-k-c0x00ffffff-no-rj"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [
+    {
+      "title": "Ep129: Chan Master - Guo Gu",
+      "url": "https://www.youtube.com/watch?v=QeInQkKyGYc",
+      "subjects": [
+        "meditation",
+        "non-duality"
+      ],
+      "channel": "Guru Viking"
+    },
+    {
+      "title": "Ep92: Magical Movements of Tibet - Dr Alejandro Chaoul",
+      "url": "https://www.youtube.com/watch?v=rqJFuTXRavM",
+      "subjects": [
+        "yoga",
+        "meditation"
+      ],
+      "channel": "Guru Viking"
+    },
+    {
+      "title": "Ep378: Entering the Brahma Viharas - Leigh Brasington",
+      "url": "https://www.youtube.com/watch?v=ld9Q1IQ8E5c",
+      "subjects": [
+        "meditation"
+      ],
+      "channel": "Guru Viking"
+    },
+    {
+      "title": "Ep346: Tantric Scholar Practitioner - Dr Christopher “Hareesh” Wallis",
+      "url": "https://www.youtube.com/watch?v=OHrG1XkAmTk",
+      "subjects": [
+        "non-duality",
+        "yoga"
+      ],
+      "channel": "Guru Viking"
+    },
+    {
+      "title": "Ep356: Awakening to Wholeness - Ken Wilber",
+      "url": "https://www.youtube.com/watch?v=_8rn5tIUf9U",
+      "subjects": [
+        "spiritual-awakening",
+        "consciousness"
+      ],
+      "channel": "Guru Viking"
+    },
+    {
+      "title": "Ep328: Foundations of Vajrayana - Dr Nida Chenagtsang",
+      "url": "https://www.youtube.com/watch?v=B8upUlLWG7k",
+      "subjects": [
+        "meditation",
+        "ancient-wisdom"
+      ],
+      "channel": "Guru Viking"
+    },
+    {
+      "title": "Ep321: Tibetan Bon - Lama Vajranatha",
+      "url": "https://www.youtube.com/watch?v=C4x6I4ZvHR0",
+      "subjects": [
+        "ancient-wisdom",
+        "shamanism"
+      ],
+      "channel": "Guru Viking"
+    },
+    {
+      "title": "Ep369: Esoteric Pharping - Lama Glenn Mullin",
+      "url": "https://www.youtube.com/watch?v=XDA1vkvHyIs",
+      "subjects": [
+        "mysticism",
+        "ancient-wisdom"
+      ],
+      "channel": "Guru Viking"
+    },
+    {
+      "title": "Ep371: The Zen Life - Muho",
+      "url": "https://www.youtube.com/watch?v=XS8YqKxtNT8",
+      "subjects": [
+        "meditation"
+      ],
+      "channel": "Guru Viking"
+    },
+    {
+      "title": "Ep380: Cultivating the Jewel of Mindfulness - Har-Prakash Khalsa",
+      "url": "https://www.youtube.com/watch?v=R0dwpTNTJQE",
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "channel": "Guru Viking"
+    },
+    {
+      "title": "Ep292: Dharma Reunited - Daniel Ingram and Delson Armstrong 2",
+      "url": "https://www.youtube.com/watch?v=2kTOygQnDQE",
+      "subjects": [
+        "meditation",
+        "spiritual-awakening"
+      ],
+      "channel": "Guru Viking"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "channel",
+    "rank": 642,
+    "hub": null,
+    "tier_evidence": "YouTube 33,000 subscribers (YouTube Data API, 10 Nov 2026); no other counts published on its site → ~33k total → local_hero",
+    "email": "contact form",
+    "email_source": null,
+    "contact_form_url": "https://www.guruviking.com/contact",
+    "bio_check": "OK: no 8-word runs against 7 source(s)",
+    "flags": [
+      "Videos only: the Movement Koan Method videos are sold on michaelaboehm.com, whose robots.txt disallows ClaudeBot, anthropic-ai and Claude-Web, so they were not opened or listed. The free Guru Viking Meditation Club is on hiatus, so it was not listed. Owner may accept a videos-only channel listing.",
+      "Listed under the show's name; host Steve James (not on Spiritpedia) is named in the bio. The photo is the channel avatar, which appears to be Steve James.",
+      "Guests on Spiritpedia: Guo Gu (guo-gu) and Alejandro Chaoul (alejandro-chaoul).",
+      "Some episodes deal with ceremonial magick, the occult and controversies around gurus and consort practice; these were not chosen. 'Meditation Sickness' (Ep375) left out under the health rule.",
+      "The about page notes a Sowa Rigpa practitioner qualification; not used in the bio."
+    ],
+    "left_out": [
+      "Movement Koan Method videos (host site blocks Claude agents)",
+      "Guru Viking Meditation Club (on hiatus)",
+      "Guided meditations on Insight Timer (never opened)",
+      "Episodes on meditation sickness, consort practice and magick"
+    ]
+  },
+  "images_final": true
+}

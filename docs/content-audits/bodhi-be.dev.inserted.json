@@ -1,0 +1,40 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 1166,
+    "healer_slug": "bodhi-be"
+  },
+  "rows": [
+    {
+      "table": "videos",
+      "id": 8700,
+      "slug": "ram-dass-and-bodhi-be-a-conversation-on-dying",
+      "title": "Ram Dass and Bodhi Be - A Conversation on Dying"
+    },
+    {
+      "table": "videos",
+      "id": 8701,
+      "slug": "facing-death-alan-clements-in-conversation-with-reverend-bodhi-be-at-doorway-into-light",
+      "title": "Facing Death Alan Clements in Conversation with Reverend Bodhi Be at Doorway Into Light"
+    },
+    {
+      "table": "videos",
+      "id": 8702,
+      "slug": "ram-dass-webcast-with-bodhi-be",
+      "title": "Ram Dass Webcast with Bodhi Be"
+    },
+    {
+      "table": "books",
+      "id": 2365,
+      "slug": "facing-death-alan-clements-bodhi-be",
+      "title": "Facing Death: A Conversation with Reverend Bodhi Be"
+    },
+    {
+      "table": "courses",
+      "id": "1bef28dc-599c-478b-a403-8503746508ad",
+      "slug": "death-doula-certification-2027",
+      "title": "Death Doula Certification (2027)"
+    }
+  ],
+  "at": "2026-11-10T12:03:46.004Z"
+}

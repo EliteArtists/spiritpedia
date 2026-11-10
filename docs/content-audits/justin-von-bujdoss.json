@@ -1,0 +1,183 @@
+{
+  "healer": {
+    "healer_slug": "justin-von-bujdoss",
+    "location_source": "https://justinvonbujdoss.com/",
+    "create": {
+      "name": "Lama Justin von Bujdoss",
+      "bio": "Lama Justin von Bujdoss is an American teacher of Tibetan tantric Buddhism and a chaplain, who leads Yangti Yoga Retreat Center in Buckland, Massachusetts, a centre for dark retreat that he set up with Dr. Nida Chenagtsang. He took repa vows in the Karma Kamtsang lineage from Goshir Gyaltsab Rinpoche in 2011, receiving the name Repa Dorje Odzer, and was ordained a ngakpa in the Yuthok Nyingthig line in 2023. His teaching centres on Mahamudra, Dzogchen and the lay yogi tradition of Milarepa, offered in forms that fit modern lives without diluting them.\n\nFrom 2012 to 2017 he was resident lama of a Tsurphu dharma centre in New York. He then became the first staff chaplain at the New York City Department of Correction, later heading its chaplaincy and staff wellness division and bringing meditation to jail officers, and from 2018 to 2024 he blessed the dead buried on Hart Island, the city's public cemetery. He has also worked as a hospice chaplain and is trained in Clinical Pastoral Education. He wrote Modern Tantric Buddhism, has written widely for Tricycle and Lion's Roar, and now leads dark retreats, a monthly Mahamudra class and pilgrimages to Bhutan.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local_online",
+      "city": "Buckland, Massachusetts",
+      "country": "United States",
+      "subjects": [
+        "meditation",
+        "non-duality",
+        "death-the-afterlife"
+      ],
+      "website_url": "https://justinvonbujdoss.com/",
+      "booking_url": "https://www.yangtiyoga.com/dark-retreat",
+      "youtube_url": "https://www.youtube.com/@yangtiyoga",
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": null,
+      "image_urls": [
+        "https://images.squarespace-cdn.com/content/v1/598df52ce4fcb5afccaefd48/1729804147185-QGBXMKVL4N4CTWRFJQM0/Lama+Justin+von+Bujdoss.jpg",
+        "https://images.squarespace-cdn.com/content/v1/598df52ce4fcb5afccaefd48/1533806022481-E5PXUZ14OC5MJ7M9TP8T/ajdavis_20180613_002.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [
+    {
+      "title": "Ep205: My 49 Day Dark Retreat",
+      "url": "https://www.youtube.com/watch?v=_Uc5IHhTQ9Y",
+      "subjects": [
+        "meditation",
+        "non-duality"
+      ],
+      "channel": "Guru Viking"
+    },
+    {
+      "title": "Dark Meditation",
+      "url": "https://www.youtube.com/watch?v=w9X1-LyEMVo",
+      "subjects": [
+        "meditation"
+      ],
+      "channel": "Tricycle"
+    },
+    {
+      "title": "Ep196: Modern Tantric Buddhism",
+      "url": "https://www.youtube.com/watch?v=H2p9Q2NLoKk",
+      "subjects": [
+        "meditation",
+        "ancient-wisdom"
+      ],
+      "channel": "Guru Viking"
+    },
+    {
+      "title": "Ep228: Dzogchen & Dark Retreat",
+      "url": "https://www.youtube.com/watch?v=bB9lZGYPgZY",
+      "subjects": [
+        "non-duality",
+        "meditation"
+      ],
+      "channel": "Guru Viking"
+    },
+    {
+      "title": "Exploring Sem & Rigpa",
+      "url": "https://www.youtube.com/watch?v=REaepTJZYRc",
+      "subjects": [
+        "non-duality",
+        "meditation"
+      ],
+      "channel": "Yangti Yoga Retreat Center"
+    }
+  ],
+  "books": [
+    {
+      "title": "Modern Tantric Buddhism",
+      "slug": "modern-tantric-buddhism",
+      "author": "Justin von Bujdoss",
+      "asin": "1623173957",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "Essays on living Vajrayana practice today: how embodiment, authenticity and the lay yogi path of Tilopa and Milarepa can shape practice for Western students outside monastic life.",
+      "subjects": [
+        "meditation",
+        "ancient-wisdom"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1623173957.01._SCLZZZZZZZ_.jpg"
+    }
+  ],
+  "courses": [
+    {
+      "title": "Mandala Membership with Mahamudra for the People",
+      "url": "https://courses.yangtiyoga.com/courses/mandalamembership",
+      "description": "A monthly membership at Yangti that includes his two-hour Mahamudra for the People class every second Friday (recorded), the chance to book one-to-one or small-group time with him, and member discounts on Yangti events. Members choose a level that fits their means.",
+      "price": "$50, $100 or $150 a month",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "non-duality"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/598df52ce4fcb5afccaefd48/1729804147185-QGBXMKVL4N4CTWRFJQM0/Lama+Justin+von+Bujdoss.jpg"
+    },
+    {
+      "title": "Bhutan 2027: Pilgrimage to the Heart of Ati",
+      "url": "https://www.yangtiyoga.com/bhutan-pilgrimage",
+      "description": "An eighteen-day pilgrimage from Paro to Bumthang and Thimphu, led by him with H.E. Chung Tulku Rinpoche, visiting sacred sites linked to the Yangti Nakpo dark retreat lineage. Meals, lodging, internal travel and visa fees within Bhutan are included; no prior practice is required.",
+      "price": "Early bird (to 31 Jan 2027) $8,950 single / $7,950 double; standard $9,950 / $8,950; $1,500 deposit",
+      "product_type": "retreat",
+      "start_date": "2027-08-03",
+      "end_date": "2027-08-20",
+      "subjects": [
+        "spirituality",
+        "meditation"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/598df52ce4fcb5afccaefd48/1729804147185-QGBXMKVL4N4CTWRFJQM0/Lama+Justin+von+Bujdoss.jpg"
+    },
+    {
+      "title": "Dark Retreat at Yangti",
+      "url": "https://www.yangtiyoga.com/dark-retreat",
+      "description": "Individual retreat in complete darkness at the Buckland centre, taught as a Dzogchen thögal practice in the Yangti Nakpo and Yuthok Nyingthig lines, with guidance from the centre's teachers. Places are by application.",
+      "price": "Contact for pricing",
+      "product_type": "retreat",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "non-duality"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/598df52ce4fcb5afccaefd48/1533806022481-E5PXUZ14OC5MJ7M9TP8T/ajdavis_20180613_002.jpg"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Yangti Online Sangha",
+      "url": "https://www.yangtiyoga.com/online-sangha",
+      "description": "Free online group practice from his centre, timed to the lunar calendar, including an Ati Yoga session each full moon, open to anyone with no prior connection needed.",
+      "featured": true,
+      "resource_type": "practice",
+      "subjects": [
+        "meditation",
+        "non-duality"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/598df52ce4fcb5afccaefd48/1729804147185-QGBXMKVL4N4CTWRFJQM0/Lama+Justin+von+Bujdoss.jpg"
+    }
+  ],
+  "sprint": {
+    "sprint": "pipelines-3",
+    "hub": "omega",
+    "rank": 451,
+    "hub_url": "https://www.eomega.org/people/lama-justin-von-bujdoss",
+    "tier_evidence": "YouTube @yangtiyoga 72 subscribers (Data API, 10 Nov 2026; his centre's channel, no personal channel found); Instagram, X and Facebook linked from his site but not read (off limits). Total ~0.1k → local_hero.",
+    "email": "contact form",
+    "email_source": null,
+    "contact_form_url": "https://justinvonbujdoss.com/foundation",
+    "bio_check": "OK: no 8-word runs against 12 source(s)",
+    "flags": [
+      "No Omega mention on his own site (home, foundation, journal, gallery, schedule) or the Yangti pages read: listed without the link. Omega page not opened: eomega.org returns 403 to us (6 Nov 2026).",
+      "Regional: Buckland, Massachusetts (centre address 7 Mary Lyon Rd, Shelburne Falls, a village in Buckland), a small rural town in western Massachusetts.",
+      "Email: none on his own site, only the contact form. His centre publishes info@yangtiyoga.com (he is founder and spiritual director); not used as his personal email. Owner may prefer it.",
+      "Own site found via a link on a Guru Viking podcast page; his site's schedule page points to yangtiyoga.com for all current events.",
+      "Offerings are run by Yangti Yoga Retreat Center (his centre, co-founded with Dr. Nida Chenagtsang); Yangti is on Wix, so no Yangti images used; course images are his own-site photos.",
+      "Mandala Membership page also offers on-demand 'crisis' booking with him for members; the description leaves this out. Owner may want to look.",
+      "Dark retreat is long-duration sensory darkness; the page frames it as Dzogchen practice by application with screening. No health claims seen. Owner may want to look.",
+      "Photos: 'Lama Justin von Bujdoss' portrait from his home page, and a gallery photo of him seated in meditation (file named ajdavis_20180613_002, photographer credit not shown). A third gallery image shows a different person and was not used.",
+      "Book ASIN 1623173957 from the Amazon link on his own site; not confirmed elsewhere."
+    ],
+    "left_out": [
+      "Rangjung Dorje's Ati Yoga 2026 course: started January 2026; the 2027 round is not open.",
+      "Spiritual Care Clinic (counselling and spiritual care sessions): care service, health rule.",
+      "Vajrayana Spiritual Care Foundations and Clinical Pastoral Education programmes: seen only as menu items on yangtiyoga.com, not opened; chaplaincy training.",
+      "Press articles and podcast episodes listed on his home page (Tricycle, Lion's Roar, NYT): not videos or offerings."
+    ]
+  },
+  "images_final": true
+}

@@ -1,0 +1,131 @@
+{
+  "healer": {
+    "healer_slug": "ashtanga-yoga-belgrade",
+    "location_source": "https://www.ashtangayogaserbia.rs/kontakt.html",
+    "create": {
+      "name": "Ashtanga Yoga Belgrade",
+      "bio": "Ashtanga Yoga Belgrade is the shala of Vairagya Ranko Stoiljković in Belgrade, teaching Ashtanga in the line of Sri K. Pattabhi Jois and R. Sharath Jois. Ranko first came to yoga as a teenager alongside karate, spent years in the Satyananda tradition (he lived and trained at its ashram in Greece and took sannyasa as Swami Vairagyaratna Saraswati), and turned to Ashtanga in 2006. He has studied in Mysore most years since 2008 and holds Level 2 authorisation from the institute there; he has also trained with John Scott, David Swenson and Rolf Naujokat.\n\nThe shala keeps the traditional rhythm: Mysore-style self-practice from Monday to Saturday with individual guidance, a led primary series class on Saturdays, and rest on moon days. Nevena Stoiljković, an authorised teacher in Srivatsa Ramaswami's approach, adds a Vinyasa Krama programme in the line of T. Krishnamacharya with asana, pranayama, mantra and an introduction to meditation. Ranko also teaches workshops away from Belgrade, most recently in Skopje, and the school's site offers a free chart of the primary series and recordings of practice, kirtan and interviews.",
+      "tier": "local_hero",
+      "entity_type": "school",
+      "founded_year": null,
+      "availability": "local",
+      "city": "Belgrade",
+      "country": "Serbia",
+      "subjects": [
+        "yoga",
+        "breathwork",
+        "ancient-wisdom"
+      ],
+      "website_url": "https://www.ashtangayogaserbia.rs/",
+      "booking_url": "https://www.ashtangayogaserbia.rs/casovi.html",
+      "youtube_url": "https://www.youtube.com/@ashtangayogabelgrade7216",
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "vairagyaranko@gmail.com",
+      "image_urls": [
+        "https://www.ashtangayogaserbia.rs/images/slajd_3.jpg",
+        "https://www.ashtangayogaserbia.rs/images/slajd_1.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [
+    {
+      "title": "Led Primary at Ashtanga Yoga Shala Belgrade with Vairagya Ranko",
+      "url": "https://www.youtube.com/watch?v=HbIhmYa4k8g",
+      "subjects": [
+        "yoga",
+        "breathwork"
+      ],
+      "channel": "Ashtanga Yoga Belgrade"
+    },
+    {
+      "title": "Interview with Vairagya Ranko at Baya and Yoga TV Show - Episode 22",
+      "url": "https://www.youtube.com/watch?v=xcxjwpnQ0Zs",
+      "subjects": [
+        "yoga",
+        "ancient-wisdom"
+      ],
+      "channel": "Ashtanga Yoga Belgrade"
+    },
+    {
+      "title": "Kirtan and practice with Vairagya Ranko",
+      "url": "https://www.youtube.com/watch?v=LOG9t-ToWrk",
+      "subjects": [
+        "yoga",
+        "sound-healing"
+      ],
+      "channel": "Purple Valley Ashtanga Yoga"
+    },
+    {
+      "title": "Belgrade Yogies",
+      "url": "https://www.youtube.com/watch?v=j8WMfOcUmAI",
+      "subjects": [
+        "yoga"
+      ],
+      "channel": "Vairagya Ranko"
+    }
+  ],
+  "books": [],
+  "courses": [
+    {
+      "title": "Mysore and led Ashtanga classes (monthly passes)",
+      "url": "https://www.ashtangayogaserbia.rs/cene.html",
+      "description": "Monthly passes covering every class at the shala: daily Mysore-style self-practice with individual teaching, the Saturday led class and the other group classes. Residents of the former Yugoslavia pay in dinars; visitors from elsewhere pay in euros.",
+      "price": "1800 RSD per class; 5000 RSD for 4 classes; up to 10000 RSD for 20 or more a month (ex-Yugoslavia residents); 20 € per class, 100 € for 9 or more (other countries)",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga",
+        "breathwork"
+      ],
+      "image": "https://www.ashtangayogaserbia.rs/images/slajd_12.jpg"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Shematski prikaz asana prve serije Ashtanga Yoge",
+      "url": "https://www.ashtangayogaserbia.rs/pdf/ashtanga_yoga_asane_prva_serija.pdf",
+      "description": "A free PDF chart of the Ashtanga primary series postures in order, offered on the school's home page so students can learn the sequence.",
+      "featured": true,
+      "resource_type": "download",
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://www.ashtangayogaserbia.rs/images/slajd_3.jpg"
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "yoga-school",
+    "rank": 1007,
+    "hub": null,
+    "tier_evidence": "YouTube 224 subscribers (Ashtanga Yoga Belgrade channel, Data API, 10 Nov 2026); Instagram and Facebook not fetched → ~224 total → local_hero.",
+    "email": "yes",
+    "email_source": "https://www.ashtangayogaserbia.rs/kontakt.html",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 8 source(s)",
+    "flags": [
+      "Lead from the Sharath Yoga Centre authorised-teacher list (Ranko Stoiljkovic, Ashtanga Yoga Belgrade, website ashtangayogaserbia.rs); facts from the school's own site (robots.txt has no rules).",
+      "The YouTube channel description gives the address Dečanska 11 and the site ashtangayogabelgrade.com; the current site gives Kneza Miloša 81. City is Belgrade either way; the other domain was not requested.",
+      "Site footer says © 2016, but its workshops page lists a March 2026 workshop in Skopje, so the school is current.",
+      "Email is a personal Gmail address of the founder, published on the contact and prices pages.",
+      "Videos: two from the school's channel, one from Purple Valley Ashtanga Yoga's channel where Ranko leads, and one from his personal channel (Vairagya Ranko); all embedded on the school's video page and checked with oEmbed. 'Belgrade Yogies' (2013) title is vague; drop it if unwanted.",
+      "Prices: the RSD amounts are published under a 'dinars (RSD)' heading and the euro ones under 'euros'; summarised in one line.",
+      "Photos are wide collage banners of classes in the shala, from the school's own site.",
+      "Possible future listings: Vairagya Ranko Stoiljković (founder), Nevena Stoiljković.",
+      "No Spiritpedia teachers are named on the site, so the teachers file has no links.",
+      "Regional: Belgrade; Spiritpedia has few listings in the Balkans."
+    ],
+    "left_out": [
+      "Vinyasa Krama programme: described on the classes page only, with no page or price of its own.",
+      "Workshops: the only current-year one (Skopje, March 2026) has passed; the rest date from 2020.",
+      "Two 2013 Serbian TV appearances on his personal channel (talk-show guest spots).",
+      "Kirtan clips on the school's channel are short parts (under 2 minutes for several)."
+    ]
+  },
+  "images_final": true
+}

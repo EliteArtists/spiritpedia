@@ -1,0 +1,93 @@
+{
+  "healer": {
+    "healer_slug": "ashtanga-yoga-kyoto",
+    "location_source": "https://www.aykyo.com/access/",
+    "create": {
+      "name": "Ashtanga Yoga Kyoto – Sadhana Shala",
+      "bio": "Ashtanga Yoga Kyoto is a traditional Mysore-style shala in the Nakagyō ward of central Kyoto, led by Keigo Yamaguchi. He began studying with Sharath Jois in Mysore in January 2012, assisted there, and received level 2 authorisation from him in 2014. He started the school in April 2015 by borrowing a dance studio in Shijō Karasuma for early-morning practice, moved it to Demachiyanagi in 2017, and in June 2019 opened his own room near Karasuma Oike, which was blessed with a puja by Swami Chetanananda. He called it Sadhana Shala to show that posture practice is meant as a means of spiritual practice.\n\nStudents learn the sequence at their own pace with individual help in Mysore classes every weekday morning, and a weekend Mysore programme is taught by Kunio Nakatsukasa, who trained with Nancy Gilgoff, David Swenson and Keiko Armstrong on Maui before assisting at the shala; he also covers while Keigo is away. New students are asked to watch a class before starting. Guest teachers come for weekend workshops, and from 22 November 2026 the shala moves to a new third-floor room near Marutamachi station.",
+      "tier": "local_hero",
+      "entity_type": "school",
+      "founded_year": 2015,
+      "availability": "local",
+      "city": "Kyoto",
+      "country": "Japan",
+      "subjects": [
+        "yoga",
+        "breathwork"
+      ],
+      "website_url": "https://www.aykyo.com/",
+      "booking_url": "https://www.aykyo.com/price/",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": null,
+      "image_urls": [
+        "https://image.jimcdn.com/app/cms/image/transf/none/path/s803172f612e31007/backgroundarea/i478945bccdf6fbb0/version/1682563574/image.jpg",
+        "https://image.jimcdn.com/app/cms/image/transf/none/path/s803172f612e31007/backgroundarea/id213d33bb61778c2/version/1682562308/image.jpg",
+        "https://image.jimcdn.com/app/cms/image/transf/dimension=820x1024:format=jpg/path/s803172f612e31007/image/i87a46db36231a0bf/version/1765261979/image.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Price list 2026 (Mysore passes, tickets and weekend pass)",
+      "url": "https://www.aykyo.com/price/",
+      "description": "Monthly passes for the weekday Mysore classes, a weekend Mysore pass, four-class tickets, one- and two-week passes for visitors and drop-ins for experienced practitioners.",
+      "price": "FREE PASS 21,000円; LIGHT PASS 19,000円; TICKET ４回 11,000円; TRAVELER'S PASS 1 week 11,000円, 2 week 18,000円; DROP IN 3,500円; WEEKEND MYSORE PASS 13,000円",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://image.jimcdn.com/app/cms/image/transf/none/path/s803172f612e31007/backgroundarea/id213d33bb61778c2/version/1682562308/image.jpg"
+    },
+    {
+      "title": "Yuya Sarashina WS (12–13 December 2026)",
+      "url": "https://www.aykyo.com/yuya-sarashina-ws/",
+      "description": "A weekend with guest teacher Yuya Sarashina at the new shala: Mysore practice each morning and two 90-minute workshops, one on breath, drishti and vinyasa in the basic sequence and one on how primary practice relates to the later series. Beginners are welcome.",
+      "price": "マイソール ５,０００円 （AYK PASS練習生 ４,０００円）; WS ６,０００円 （AYK PASS練習生 ５,０００円）",
+      "product_type": "course",
+      "start_date": "2026-12-12",
+      "end_date": "2026-12-13",
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://image.jimcdn.com/app/cms/image/transf/none/path/s803172f612e31007/image/i49dc2d4c667a4c99/version/1766741493/image.jpg"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "yoga-school",
+    "rank": 1067,
+    "hub": null,
+    "tier_evidence": "No YouTube channel linked; Facebook page linked but not fetched; no readable followers → local_hero.",
+    "email": "contact form",
+    "email_source": null,
+    "contact_form_url": "https://www.aykyo.com/%E6%96%B0%E8%A6%8F%E7%B7%B4%E7%BF%92%E7%94%9F-%E8%A6%8B%E5%AD%A6%E3%83%95%E3%82%A9%E3%83%BC%E3%83%A0/",
+    "bio_check": "OK: no 8-word runs against 5 source(s)",
+    "flags": [
+      "Lead from the Sharath Yoga Centre authorised-teacher list (Keigo Yamaguchi, Ashtanga Yoga Kyoto); facts from the shala's own site (robots.txt allows us; photos on image.jimcdn.com, whose robots.txt allows /app/cms/image/transf/).",
+      "Moving: the shala leaves its Karasuma Oike room after 20 November 2026 and opens at FAZ BLD 3F, Higashinotōin-Takeyamachi, Nakagyō-ku from 22 November 2026 (access page). The two photos of the shala (interior and sign) show the old room.",
+      "The email on the site is Cloudflare-protected and was not decoded; the new-student / visit form is used as the contact route.",
+      "Keigo Yamaguchi's profile says that 'a new journey began with his family from August 2025' without saying more; Kunio Nakatsukasa covers long absences. Check who teaches day to day if this matters.",
+      "Teacher training: none advertised; included as an authorised Ashtanga lineage shala.",
+      "Possible future listings: Keigo Yamaguchi, Kunio Nakatsukasa; guest teacher Yuya Sarashina.",
+      "No Spiritpedia teachers are named on the site, so the teachers file has no links.",
+      "Regional: Kyoto, Japan.",
+      "The workshop page mentions health benefits of practice (avoiding illness); not repeated in the plan."
+    ],
+    "left_out": [
+      "入門コース (October introduction course): passed.",
+      "ENGLISH page: 'coming soon', no content.",
+      "Photo of the guest teacher on the workshop page: not of the school."
+    ]
+  },
+  "images_final": true
+}

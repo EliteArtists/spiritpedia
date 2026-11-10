@@ -1,0 +1,39 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 1210,
+    "healer_slug": "bunny-michael"
+  },
+  "rows": [
+    {
+      "table": "videos",
+      "id": 8927,
+      "slug": "your-breakup-is-your-awakening-the-transformative-power-of-heartbreak-and-how-to-let-go",
+      "title": "Your Breakup Is Your Awakening: the transformative power of heartbreak and how to let go"
+    },
+    {
+      "table": "books",
+      "id": 2426,
+      "slug": "hello-higher-self",
+      "title": "Hello Higher Self: An Outsider's Guide to Loving Yourself in a Tough World"
+    },
+    {
+      "table": "courses",
+      "id": "2ded7008-95fd-4892-8101-c009182b69f6",
+      "slug": "higher-self-coaching",
+      "title": "Higher Self Coaching"
+    },
+    {
+      "table": "courses",
+      "id": "c01c2a12-7dfc-4f7a-bdff-e1861f14043f",
+      "slug": "higher-self-healing-club",
+      "title": "Higher Self Healing Club"
+    },
+    {
+      "table": "hub_teachers",
+      "id": "7dc5972a-b387-4ee9-af9e-867a78fff4ce",
+      "title": "bunny-michael teaches at Omega Institute"
+    }
+  ],
+  "at": "2026-11-10T13:34:02.971Z"
+}

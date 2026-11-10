@@ -1,0 +1,22 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 1249,
+    "healer_slug": "yoga-academy-poznan"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "55000324-f9e9-48fb-ad8c-380587d8d85a",
+      "slug": "200-hour-yoga-teacher-training-nauczycielski-kurs-jogi",
+      "title": "200-hour yoga teacher training (Nauczycielski kurs jogi)"
+    },
+    {
+      "table": "courses",
+      "id": "7443de26-59a6-4eb2-8be5-1fa01402711a",
+      "slug": "yoga-academy-class-passes",
+      "title": "Yoga Academy class passes"
+    }
+  ],
+  "at": "2026-11-10T15:45:52.553Z"
+}

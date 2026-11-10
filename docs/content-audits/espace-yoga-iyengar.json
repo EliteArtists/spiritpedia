@@ -1,0 +1,105 @@
+{
+  "healer": {
+    "healer_slug": "espace-yoga-iyengar",
+    "location_source": "https://espaceyogaiyengar.ch/adresse-et-contact/",
+    "create": {
+      "name": "Espace Yoga Iyengar",
+      "bio": "Espace Yoga Iyengar is a studio on Avenue de Cour in Lausanne, led by Gaëtane Valazza, a Level 2 certified Iyengar teacher who has practised yoga for some twenty years. Trained in philosophy and the history of religions, she continues her own studies in Paris in a multi-year advanced cycle with Corine Biria, Jordi Marti and Patxi Lizardi, covering practice, philosophy and teaching, and she assists Corine Biria's classes there on alternate Tuesdays. A second teacher, Léa, shares the beginners' classes.\n\nThe room is a plain, open space lined with wall ropes, and the school provides mats and props. Small groups follow beginner, intermediate, advanced and all-levels classes through the school year, with a slower Thursday class built on supported postures held for longer and a Tuesday session for students who need an individual programme. Monthly Saturday-morning workshops each take one area of practice in depth. Gaëtane also leads residential retreats, including a week in the Ourika valley below the Atlas mountains near Marrakech, and a weekend retreat at the Caux Palace is planned for September 2027.",
+      "tier": "local_hero",
+      "entity_type": "school",
+      "availability": "local",
+      "city": "Lausanne",
+      "country": "Switzerland",
+      "subjects": [
+        "yoga",
+        "breathwork"
+      ],
+      "website_url": "https://espaceyogaiyengar.ch/",
+      "booking_url": "https://espaceyogaiyengar.ch/horaires-et-tarifs/",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": null,
+      "image_urls": [
+        "https://espaceyogaiyengar.ch/wp-content/uploads/2020/07/img_4680.jpg",
+        "https://espaceyogaiyengar.ch/wp-content/uploads/2025/07/img_1184.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Horaires et tarifs (weekly Iyengar classes)",
+      "url": "https://espaceyogaiyengar.ch/horaires-et-tarifs/",
+      "description": "Weekly classes at beginner, intermediate, advanced and all levels from mid-August to early July, taken by the term, by the year or as single classes. A trial class is offered and reduced rates apply.",
+      "price": "Cours d’essai: 20.-; Cours isolé: 35.- (réduit 28.-); Année: 850.- pour 1 cours semaine (réduit 765.-); Trimestre: 300.- (réduit 270.-); Cours supplémentaire: 15.-",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://i0.wp.com/espaceyogaiyengar.ch/wp-content/uploads/2025/08/img_2680.jpg?fit=1200%2C676&#038;ssl=1"
+    },
+    {
+      "title": "Ateliers du samedi matin à Lausanne",
+      "url": "https://espaceyogaiyengar.ch/stages/",
+      "description": "Three-hour Saturday-morning workshops with Gaëtane, roughly once a month, each exploring one family of postures or one part of the body in more depth than a weekly class allows.",
+      "price": "CHF 60.-",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://i0.wp.com/espaceyogaiyengar.ch/wp-content/uploads/2025/12/img_4056.jpg?fit=1200%2C676&#038;ssl=1"
+    },
+    {
+      "title": "Yoga et découverte du Maroc (29 mai – 5 juin 2027)",
+      "url": "https://espaceyogaiyengar.ch/wp-content/uploads/2026/07/informations-retraite-au-maroc-2027.pdf",
+      "description": "A week at a country estate in the Ourika valley near Marrakech, with morning pranayama and posture study, late-afternoon restorative work and inversions, and two days of excursions. Full board, teaching and airport transfers are included; flights are not.",
+      "price": "1150 CHF/pers. (chambre triple) à 1815 CHF/pers. (chambre simple, salle de bain privée)",
+      "product_type": "retreat",
+      "start_date": "2027-05-29",
+      "end_date": "2027-06-05",
+      "subjects": [
+        "yoga",
+        "breathwork"
+      ],
+      "image": "https://espaceyogaiyengar.ch/wp-content/uploads/2020/07/img_4680.jpg"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "yoga-school",
+    "rank": 1610,
+    "hub": null,
+    "tier_evidence": "No YouTube channel or social accounts linked from the pages read → 0 readable → local_hero.",
+    "email": "contact form",
+    "email_source": null,
+    "contact_form_url": "https://espaceyogaiyengar.ch/adresse-et-contact/",
+    "bio_check": "OK: no 8-word runs against 5 source(s)",
+    "flags": [
+      "Lead from Iyengar Yoga Schweiz's list of certified teachers (Gaëtane Valazza, Level 2, Espace Yoga Iyengar, Avenue de Cour 135, Lausanne); facts from the studio's own site (a WordPress.com site; robots.txt allows us).",
+      "Health framing is heavy on the site (the home page and the class-information page present the method as helpful for health problems, chronic back and knee pain, stress and period pain); none of that is used in the bio or items, and the class-information page is not listed.",
+      "No email is published; the contact form is used.",
+      "The studio does not run a teacher training; it is listed as an Iyengar lineage school with a full programme (two teachers, weekly classes, monthly workshops and retreats).",
+      "Founding year not published.",
+      "Possible future listings: Gaëtane Valazza.",
+      "No Spiritpedia teachers are named on the site, so the teachers file has no links.",
+      "Regional: Lausanne; Spiritpedia has few listings in French-speaking Switzerland."
+    ],
+    "left_out": [
+      "Cours individualisé du mardi: for students with specific (health) needs.",
+      "Week-end au Caux Palace (18–20 September 2027) and Yoga et découverte de l'Égypte (November 2027): details or prices not yet published.",
+      "Corine Biria's Swiss workshop (5–6 December 2026): no page or price on the studio's site.",
+      "Saturday 14 November 2026 workshop 'haut du dos et nuque': kept within the general workshop item, not listed singly."
+    ]
+  },
+  "images_final": true
+}

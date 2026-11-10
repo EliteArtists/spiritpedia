@@ -282,9 +282,7 @@ URL in `sprint.contact_form_url`. Neither → skip. Record the contact form's
 URL in `sprint.contact_form_url` even when an email is found, if there is one
 (ingestion now saves both, with the email's page, on the listing). A clickable
 mailto button counts as published; an address only in hidden page data, a meta
-tag or shown after sending a form does not. A fan-club inbox doesn't count. Cloudflare-obfuscated
-addresses (`/cdn-cgi/l/email-protection#…`) may be decoded (XOR with the first
-byte); that is published, not guessed. An address found only in hidden page data
+tag or shown after sending a form does not. A fan-club inbox doesn't count. Cloudflare-protected or otherwise obfuscated addresses (`/cdn-cgi/l/email-protection#…`, script-built) are NEVER decoded (owner, 10 Nov 2026): use the contact form, or hold the plan. An address found only in hidden page data
 (JSON, form settings, scripts) is not published: use the contact form instead.
 Never accept consent or cookie pages to reach anything.
 

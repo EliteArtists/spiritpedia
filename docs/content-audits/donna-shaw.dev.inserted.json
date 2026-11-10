@@ -1,0 +1,40 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 1234,
+    "healer_slug": "donna-shaw"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "a3778089-6a6a-4c4a-b9c9-474713481347",
+      "slug": "private-energy-healing-sessions",
+      "title": "Private energy healing sessions"
+    },
+    {
+      "table": "courses",
+      "id": "1835291d-fd37-4643-b80c-164ae69e606e",
+      "slug": "quantum-touch-sessions-and-community",
+      "title": "Quantum-Touch sessions and community"
+    },
+    {
+      "table": "courses",
+      "id": "de55d352-1039-4810-8193-606d737a3d1d",
+      "slug": "thrive-weekly-membership",
+      "title": "THRIVE weekly membership"
+    },
+    {
+      "table": "courses",
+      "id": "13459a6c-7aa2-4ff1-b5eb-9646fde0aad3",
+      "slug": "crystal-bowl-sound-journeys",
+      "title": "Crystal bowl sound journeys"
+    },
+    {
+      "table": "courses",
+      "id": "ee03aee4-cf04-4fa9-8334-4b303391339d",
+      "slug": "recorded-group-sessions",
+      "title": "Recorded group sessions"
+    }
+  ],
+  "at": "2026-11-10T14:22:35.315Z"
+}

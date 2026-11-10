@@ -1,0 +1,194 @@
+{
+  "healer": {
+    "healer_slug": "world-community-for-christian-meditation",
+    "location_source": "https://wccm.org/contact/",
+    "create": {
+      "name": "The World Community for Christian Meditation (WCCM)",
+      "bio": "The World Community for Christian Meditation is an international, ecumenical community that teaches a simple contemplative practice: sitting in silence twice a day and repeating a single prayer word. It traces its roots to the Benedictine monk John Main, whose teaching on meditation within the Christian tradition remains its starting point, and it is led today by the Benedictine Laurence Freeman from Bonnevaux, its retreat centre in western France. The community is a registered charity with an international office in London, national communities in many countries and a large network of local meditation groups.\n\nIts YouTube channel, meditatiowccm, has run since 2010 and carries a weekly contemplative Eucharist from Bonnevaux, homilies and talks by Laurence Freeman, conversations with guests on prayer and consciousness, and recordings from seminars and retreats. On its website the community offers a free introductory mini-course on how to meditate, paid online courses on Christian meditation, mysticism and Benedictine wisdom, a meditation app, weekly readings by email and a guide for starting a local group.",
+      "tier": "local_hero",
+      "entity_type": "organisation",
+      "availability": "worldwide",
+      "city": "London",
+      "country": "United Kingdom",
+      "subjects": [
+        "meditation",
+        "mysticism",
+        "spirituality"
+      ],
+      "website_url": "https://wccm.org/",
+      "booking_url": "https://wccm.org/courses/",
+      "youtube_url": "https://www.youtube.com/@wccm",
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "welcome@wccm.org",
+      "image_urls": [
+        "https://yt3.ggpht.com/ytc/AIdro_kLN7AMc_wCBrqUqSeOD1loE_QqEBwg28o8EAHsI4nx1pw=s800-c-k-c0x00ffffff-no-rj"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [
+    {
+      "title": "The Symbol of the Vineyard",
+      "url": "https://www.youtube.com/watch?v=oAgX1N7So70",
+      "subjects": [
+        "mysticism",
+        "spirituality"
+      ],
+      "channel": "meditatiowccm"
+    },
+    {
+      "title": "The Art of Reconciliation: Returning to Love",
+      "url": "https://www.youtube.com/watch?v=mmlAbLLScvc",
+      "subjects": [
+        "spirituality",
+        "conscious-relationships"
+      ],
+      "channel": "meditatiowccm"
+    },
+    {
+      "title": "Meditation and the Evolution of Consciousness | A Conversation with Cyprian Consiglio",
+      "url": "https://www.youtube.com/watch?v=8WxJ5ruqVK4",
+      "subjects": [
+        "meditation",
+        "consciousness"
+      ],
+      "channel": "meditatiowccm"
+    },
+    {
+      "title": "From Fragmentation to Wholeness: A Conversation with Pastor Tia Norman",
+      "url": "https://www.youtube.com/watch?v=mAQg8YcbnpA",
+      "subjects": [
+        "spirituality",
+        "meditation"
+      ],
+      "channel": "meditatiowccm"
+    },
+    {
+      "title": "Writing the Sacred with Fr Laurence Freeman on WCCM+",
+      "url": "https://www.youtube.com/watch?v=y1B1VTQ0il8",
+      "subjects": [
+        "mysticism",
+        "spirituality"
+      ],
+      "channel": "meditatiowccm"
+    },
+    {
+      "title": "Laurence Freeman's Homilies: The commandments of love",
+      "url": "https://www.youtube.com/watch?v=s13lSA9RM30",
+      "subjects": [
+        "spirituality",
+        "mysticism"
+      ],
+      "channel": "meditatiowccm"
+    },
+    {
+      "title": "Contemplative Eucharist: All Saints",
+      "url": "https://www.youtube.com/watch?v=RyDjZi4dcIw",
+      "subjects": [
+        "spirituality",
+        "meditation"
+      ],
+      "channel": "meditatiowccm"
+    }
+  ],
+  "books": [],
+  "courses": [
+    {
+      "title": "An Introduction to Christian Meditation",
+      "url": "https://wccm.org/offerings/an-introduction-to-christian-meditation/",
+      "description": "A six-week online course on how to sit with a prayer word and build a regular practice in the tradition taught by John Main.",
+      "price": "$59.99",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "image": "https://wccm.org/wp-content/uploads/2020/10/meditator-at-bonnevaux.jpg"
+    },
+    {
+      "title": "Benedictine Wisdom Here And Now",
+      "url": "https://wccm.org/offerings/benedictine-wisdom-here-and-now/",
+      "description": "A six-part online course on the Rule of St Benedict as a living way of life for people today.",
+      "price": "$69.99",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "mysticism",
+        "spirituality"
+      ],
+      "image": "https://wccm.org/wp-content/uploads/2020/12/St-Benedicts-Day-p0am6b8twu62koc9ns8vymq0m22bpp60mjwdm82wao-1.jpg"
+    },
+    {
+      "title": "Building the Meditation Habit",
+      "url": "https://wccm.org/offerings/building-the-meditation-habit/",
+      "description": "A three-part online course with practical tools for keeping up a daily meditation practice.",
+      "price": "34.99",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://wccm.org/wp-content/uploads/2020/10/meditation-crop.jpg"
+    },
+    {
+      "title": "The Roots of Christian Mysticism: Term 1",
+      "url": "https://wccm.org/offerings/the-roots-of-christian-mysticism/",
+      "description": "The first of three eight-part terms exploring the inner, mystical side of the Christian tradition and its teachers.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "mysticism",
+        "ancient-wisdom"
+      ],
+      "image": "https://wccm.org/wp-content/uploads/2020/12/51jeuG9QYL.jpeg"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "How to Meditate (free mini-course)",
+      "url": "https://wccm.org/offerings/how-to-meditate/",
+      "description": "A free three-part online introduction to starting a meditation practice with a prayer word.",
+      "featured": true,
+      "resource_type": "mini_course",
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://wccm.org/wp-content/uploads/elementor/thumbs/meditationnew-1024x725-1-ozuxpe5zdgd211lxjyej6jldvtac4kj03cc6ia3xts.jpg"
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "channel",
+    "rank": 806,
+    "hub": null,
+    "tier_evidence": "YouTube 17,300 subscribers (YouTube Data API, 10 Nov 2026); no other counts read → ~17k → local_hero",
+    "email": "yes",
+    "email_source": "https://wccm.org/contact/",
+    "contact_form_url": "https://wccm.org/contact/",
+    "bio_check": "OK: no 8-word runs against 7 source(s)",
+    "flags": [
+      "Laurence Freeman is already listed on Spiritpedia (his website field points at wccm.org). WCCM is the community he leads, with its own channel; teachers file links him as instructor (WCCM Director on the teachers page). Owner may see this as overlapping.",
+      "Brand inbox: welcome@wccm.org (International Office, contact page); the same page has a contact form.",
+      "Base is the International Office in London (contact page); its retreat centre and director are at Bonnevaux, France.",
+      "Possible editorial-stature override: worldwide community with national branches in many countries; YouTube alone is 17.3k. Not raised.",
+      "'Building the Meditation Habit' price shown as '34.99' with no currency symbol on the courses page; copied as published.",
+      "Photo is the channel avatar, the WCCM logo (two birds on a bowl)."
+    ],
+    "left_out": [
+      "Courses framed on health or trauma ('Meditation, Wellbeing and More', 'Meditation—A Healing Response to Trauma') left out under the health rule.",
+      "'Contemplating Earth' (climate-emergency course) left out as close to political.",
+      "Dated events not added.",
+      "wccm.org has Crawl-delay: 3; 4 s waited between requests."
+    ]
+  },
+  "images_final": true
+}

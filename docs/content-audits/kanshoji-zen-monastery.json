@@ -1,0 +1,197 @@
+{
+  "healer": {
+    "healer_slug": "kanshoji-zen-monastery",
+    "location_source": "https://www.kanshoji.org/contact/",
+    "create": {
+      "name": "Kanshoji Zen Monastery",
+      "bio": "Kanshoji, the Monastery of the Light of Kannon, is a Sōtō Zen monastery in the north of the Dordogne, inside the Périgord-Limousin regional nature park, set above a large lake ringed by forest. It was founded with the support of Dônin Minamisawa Zenji, abbot of Eiheiji, one of the two head temples of the Sōtō school, and one of its aims is to train monks and nuns who will pass the teaching on. Its abbot, Taiun Jean-Pierre Faure, was ordained in 1981 by Taisen Deshimaru, received Dharma transmission from Minamisawa Zenji in 2003 and has led the monastery since 2011.\n\nThe monastery describes itself as a school of life open to anyone who wants to discover or deepen Buddhist practice. Outside its programme, visitors can stay at any time of year and share the daily round of zazen, ceremonies, meals and work with the resident community. Through the year it holds silent sesshin led by the abbot, discovery weekends for newcomers, kesa-sewing workshops and a seminar on Dōgen's Shōbōgenzō. Teachings given during zazen, talks and question sessions are posted on its site, and every other Saturday it streams a session of Zazen Online on its YouTube channel.",
+      "tier": "local_hero",
+      "entity_type": "organisation",
+      "availability": "local_online",
+      "city": "La Coquille",
+      "country": "France",
+      "subjects": [
+        "meditation",
+        "ancient-wisdom",
+        "mindfulness"
+      ],
+      "website_url": "https://www.kanshoji.org/",
+      "booking_url": "https://www.kanshoji.org/calendrier/",
+      "youtube_url": "https://www.youtube.com/@kanshoji",
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "secretariat@kanshoji.org",
+      "image_urls": [
+        "https://www.kanshoji.org/wp-content/uploads/2024/12/Kanshoji.jpg",
+        "https://www.kanshoji.org/wp-content/uploads/2020/06/BouddhaButsuden-1-scaled-e1591994455438.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [
+    {
+      "title": "Zazen Online October 24th 2026 11h00",
+      "url": "https://www.youtube.com/watch?v=OL15O8MpJIU",
+      "subjects": [
+        "meditation"
+      ],
+      "channel": "Monastère Bouddhiste Kanshōji"
+    },
+    {
+      "title": "Zazen Online October 10th 2026 11h00",
+      "url": "https://www.youtube.com/watch?v=Kg02RP52xOs",
+      "subjects": [
+        "meditation"
+      ],
+      "channel": "Monastère Bouddhiste Kanshōji"
+    },
+    {
+      "title": "Zazen Online September 26th 2026 11h00",
+      "url": "https://www.youtube.com/watch?v=XMrYJwBV4nk",
+      "subjects": [
+        "meditation"
+      ],
+      "channel": "Monastère Bouddhiste Kanshōji"
+    },
+    {
+      "title": "Zazen Online June 6th 2026 11h00",
+      "url": "https://www.youtube.com/watch?v=FrRTp9z111M",
+      "subjects": [
+        "meditation"
+      ],
+      "channel": "Monastère Bouddhiste Kanshōji"
+    },
+    {
+      "title": "Zazen Online February 14th 2026 11h00",
+      "url": "https://www.youtube.com/watch?v=5xcyvac8Kp0",
+      "subjects": [
+        "meditation"
+      ],
+      "channel": "Monastère Bouddhiste Kanshōji"
+    },
+    {
+      "title": "Zazen Online December 13th 2025 11h00",
+      "url": "https://www.youtube.com/watch?v=0WnizImPOLw",
+      "subjects": [
+        "meditation"
+      ],
+      "channel": "Monastère Bouddhiste Kanshōji"
+    },
+    {
+      "title": "Une grande cloche (Bonshō) pour Kanshōji",
+      "url": "https://www.youtube.com/watch?v=EI38II-E0rs",
+      "subjects": [
+        "ancient-wisdom"
+      ],
+      "channel": "Monastère Bouddhiste Kanshōji"
+    }
+  ],
+  "books": [],
+  "courses": [
+    {
+      "title": "Retraite de l’Eveil du Bouddha",
+      "url": "https://www.kanshoji.org/kanshojievent/retraite-de-leveil-du-bouddha-2026/",
+      "description": "A silent week-long sesshin led by Taiun Jean-Pierre Faure, honouring the Buddha's awakening with successive periods of zazen and walking meditation and a closing ceremony.",
+      "price": "Chambre commune : 255€",
+      "product_type": "retreat",
+      "start_date": "2026-12-07",
+      "end_date": "2026-12-13",
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://www.kanshoji.org/wp-content/uploads/2018/02/nouveau-logo-01.jpg"
+    },
+    {
+      "title": "Retraite d'hiver",
+      "url": "https://www.kanshoji.org/kanshojievent/retraite-dhiver-2026/",
+      "description": "A sesshin spanning the turn of the year, closing one year and opening the next in zazen with the monastic community.",
+      "price": "Chambre commune : 152€",
+      "product_type": "retreat",
+      "start_date": "2026-12-29",
+      "end_date": "2027-01-01",
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://www.kanshoji.org/wp-content/uploads/2018/02/nouveau-logo-01.jpg"
+    },
+    {
+      "title": "Weekend découverte de février",
+      "url": "https://www.kanshoji.org/kanshojievent/weekend-decouverte-fevrier-2027/",
+      "description": "A weekend for people who have never practised zazen or never visited Kanshoji, introducing seated meditation and the monastery's daily life with the help of residents.",
+      "price": "Contact for pricing",
+      "product_type": "retreat",
+      "start_date": "2027-02-25",
+      "end_date": "2027-02-28",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://www.kanshoji.org/wp-content/uploads/2018/02/nouveau-logo-01.jpg"
+    },
+    {
+      "title": "Séminaire Shōbōgenzō 2027",
+      "url": "https://www.kanshoji.org/kanshojievent/seminaire-shobogenzo-2027/",
+      "description": "A study session with the abbot on Dōgen's Shōbōgenzō, starting with its first chapter, with periods of zazen between the study sessions.",
+      "price": "Chambre commune : 215€",
+      "product_type": "retreat",
+      "start_date": "2027-04-06",
+      "end_date": "2027-04-11",
+      "subjects": [
+        "ancient-wisdom",
+        "meditation"
+      ],
+      "image": "https://www.kanshoji.org/wp-content/uploads/2018/02/nouveau-logo-01.jpg"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Kusen",
+      "url": "https://www.kanshoji.org/category/kusen/",
+      "description": "Transcribed teachings given orally during zazen at the monastery, published on its site.",
+      "featured": true,
+      "resource_type": "practice",
+      "subjects": [
+        "meditation",
+        "ancient-wisdom"
+      ],
+      "image": "https://www.kanshoji.org/wp-content/uploads/2018/02/nouveau-logo-01.jpg"
+    },
+    {
+      "title": "Teishō et conférences",
+      "url": "https://www.kanshoji.org/category/teisho-conferences/",
+      "description": "Written versions of the abbot's formal Dharma talks and lectures.",
+      "featured": false,
+      "resource_type": "download",
+      "subjects": [
+        "ancient-wisdom"
+      ],
+      "image": "https://www.kanshoji.org/wp-content/uploads/2018/02/nouveau-logo-01.jpg"
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "channel",
+    "rank": 1405,
+    "hub": null,
+    "tier_evidence": "YouTube 1,400 subscribers (YouTube Data API, 10 Nov 2026); no other counts read → ~1.4k → local_hero",
+    "email": "yes",
+    "email_source": "https://www.kanshoji.org/contact/",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 13 source(s)",
+    "flags": [
+      "La Coquille is a small commune (under 5,000) in the northern Dordogne: may need a place alias. Regional: Périgord vert.",
+      "secretariat@kanshoji.org is the monastery's office inbox (brand inbox).",
+      "Channel is almost entirely fortnightly 'Zazen Online' livestreams (practice sessions); titles are in English, the site is mainly French. Few talk videos.",
+      "Kanshoji is linked with the Association Zen Internationale (UBF lists it as 'Kanshoji (AZI)').",
+      "Taiun Jean-Pierre Faure is not on Spiritpedia: possible future listing. Teachers file empty."
+    ],
+    "left_out": [
+      "Retraite de novembre (12–15 Nov 2026, starts by 12 Nov).",
+      "Kesa-sewing workshops and later 2027 retreats (kept to four).",
+      "'Samu' clip under a minute; upcoming-stream placeholder."
+    ]
+  },
+  "images_final": true
+}

@@ -1,0 +1,105 @@
+{
+  "healer": {
+    "healer_slug": "roy-sunley",
+    "location_source": "https://quantumtouch.com/en/practitioners/practitioner-2816",
+    "create": {
+      "name": "Roy Sunley",
+      "bio": "Roy Sunley is a healer, teacher and Spiritualist medium who works in London and the south-east of England. He turned to healing after a long senior career in business, beginning with Usui Reiki, in which he went on to qualify as a Master Teacher, and later adding Quantum-Touch, which he practises and teaches as a certified Level 1 instructor. He belongs to the College of Psychic Studies as a full member, and has also trained in mindfulness and meditation to diploma level. His travels in search of healing traditions have taken him to Peru, where he learned shamanic journeying, to Japan and to the Rongbuk Monastery near Everest.\n\nHe teaches small groups of six to eight at Horn Hill Village Hall near Chalfont St Peter in Buckinghamshire. His two-day Quantum-Touch Level 1 course covers the breathing and body-awareness techniques of the method, chakra work and distance healing, and ends with the official Level 1 certificate. As a medium he serves Spiritualist churches across London and the Home Counties, among them the London Spiritual Mission, and offers private sittings for those seeking contact with loved ones in spirit. He also runs one-day workshops in mediumship and spiritual development, and shamanic courses on journeying with spirit animals, guides and ancestors.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local",
+      "city": "London",
+      "country": "United Kingdom",
+      "subjects": [
+        "quantum-touch",
+        "reiki",
+        "mediumship-spirits"
+      ],
+      "website_url": "https://roysunley.co.uk/",
+      "booking_url": "https://roysunley.co.uk/courses.asp",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "Roy.sunley@yahoo.co.uk",
+      "image_urls": [
+        "https://roysunley.co.uk/images/HOME-Roy-With-Cat.JPG",
+        "https://roysunley.co.uk/images/ABOUT-Himalayas.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Quantum-Touch Level 1 course",
+      "url": "https://roysunley.co.uk/quantumtouch.asp",
+      "description": "A two-day Level 1 workshop for six to eight people at Horn Hill Village Hall in Buckinghamshire, ending with the official Level 1 certificate. It teaches the breathing and awareness techniques of the method, with chakra work and a spiritual element Roy brings to the class.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": "2026-11-28",
+      "end_date": "2026-11-29",
+      "subjects": [
+        "quantum-touch",
+        "energy-medicine"
+      ],
+      "image": "https://roysunley.co.uk/images/QuantumGroupPhoto2023.jpg"
+    },
+    {
+      "title": "Mediumship sittings",
+      "url": "https://roysunley.co.uk/mediumship.asp",
+      "description": "Private sittings in which Roy seeks messages from loved ones and guides in spirit, offered alongside his public demonstrations at Spiritualist churches. People often come for guidance at a turning point in relationships, home or work.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "mediumship-spirits"
+      ],
+      "image": "https://roysunley.co.uk/images/Roy-in-Cork.jpg"
+    },
+    {
+      "title": "Mediumship, spiritual development and shamanic workshops",
+      "url": "https://roysunley.co.uk/courses.asp",
+      "description": "One-day workshops for every level of experience on developing mediumship and working with spirit, usually held at the London Spiritual Mission. He also runs shamanic courses on journeying to meet spirit animals, guides and ancestors.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "mediumship-spirits",
+        "shamanism",
+        "spirituality"
+      ],
+      "image": "https://roysunley.co.uk/images/reiki_image.jpg"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "quantum-touch",
+    "rank": 175,
+    "hub": null,
+    "tier_evidence": "No readable public accounts: his site links no YouTube, Instagram, Facebook or X account, and none were found (10 Nov 2026) → 0 total → local_hero",
+    "email": "yes",
+    "email_source": "https://roysunley.co.uk/",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 7 source(s)",
+    "flags": [
+      "Health (borderline, kept): his Quantum-Touch, Reiki and courses pages carry long lists of conditions (chemotherapy side effects, arthritis, back pain, high blood pressure and more) and say the method reduces pain and heals injuries. The site as a whole centres on mediumship, Reiki and spiritual development rather than pain, so the plan is written, but none of that wording is used; the owner may prefer to skip under the strict rule.",
+      "Base: his Quantum-Touch profile gives (West) London; his own site publishes only his teaching venue (Horn Hill Village Hall, Chalfont St Peter, Buckinghamshire) and testimonials mention classes at his home, 'Kilnwood'. London used from the profile.",
+      "Thin: three offerings, no videos or free resources; course prices are only in brochure PDFs that robots.txt disallows (/brochure*), so not opened.",
+      "Crawl-delay 10 on roysunley.co.uk respected (11 s between requests).",
+      "Photos are from his own site; the Quantum-Touch profile photo is only 158 px wide, so not used. Both photos show the same man."
+    ],
+    "left_out": [
+      "Reiki courses: the Reiki page says none are planned and it is framed around a list of conditions.",
+      "Healing sessions: mentioned only in testimonials (his 'healing clinic'); no page of their own.",
+      "Course brochures (PDF): disallowed by robots.txt.",
+      "Diary items for church services (Windsor 10 Nov, London Spiritual Mission 6 Dec 2026): public church services, not offerings."
+    ]
+  },
+  "images_final": true
+}

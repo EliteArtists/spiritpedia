@@ -228,9 +228,7 @@ pages, booking pages, link pages, newsletter or press pages. Put it in
 **Never guess or construct an address.** Assistants', studios' or offices'
 published addresses are fine (flag a brand or support inbox). If none is
 published, `contact_email` null, `sprint.email` "contact form" and the form's
-URL in `sprint.contact_form_url`. Neither → skip. Cloudflare-obfuscated
-addresses (`/cdn-cgi/l/email-protection#…`) may be decoded (XOR with the first
-byte); that is published, not guessed. An address found only in hidden page data
+URL in `sprint.contact_form_url`. Neither → skip. Cloudflare-protected or otherwise obfuscated addresses (`/cdn-cgi/l/email-protection#…`, script-built) are NEVER decoded (owner, 10 Nov 2026): use the contact form, or hold the plan. An address found only in hidden page data
 (JSON, form settings, scripts) is not published: use the contact form instead.
 Never accept consent or cookie pages to reach anything.
 

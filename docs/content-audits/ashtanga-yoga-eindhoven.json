@@ -1,0 +1,115 @@
+{
+  "healer": {
+    "healer_slug": "ashtanga-yoga-eindhoven",
+    "location_source": "https://ashtangayogaeindhoven.nl/shala/",
+    "create": {
+      "name": "Ashtanga Yoga Eindhoven",
+      "bio": "Ashtanga Yoga Eindhoven is a small traditional shala in the Gestel district of Eindhoven, in the south of the Netherlands, run by Katia Garcia Gomez and Nick Evans. Both learned the method over many years in Mysore under Pattabhi Jois and later Sharath Jois, and both are authorised by the Sharath Yoga Centre. Katia began in 1999, travelled to Mysore every year from 2001, was authorised in 2006 and ran her own Mysore school in Oviedo, Spain, before teaching in cities from Lisbon to Helsinki. Since September 2026 she leads the daily classes, while Nick practises at the shala, covers classes and looks after its running.\n\nThe timetable is Mysore style from Monday to Thursday and on Sunday mornings, with a counted primary series class each Friday and no classes on moon days. Newcomers can start a two-month beginners' course on the first Monday of any month, learning the sun salutations, standing postures and the joining of breath, gaze and bandhas. Chanting is part of the practice: the teachers have recorded the opening and closing prayers and Vedic mantras they learned in Mysore so that students can chant along at home.",
+      "tier": "local_hero",
+      "entity_type": "school",
+      "availability": "local",
+      "city": "Eindhoven",
+      "country": "Netherlands",
+      "subjects": [
+        "yoga",
+        "breathwork"
+      ],
+      "website_url": "https://ashtangayogaeindhoven.nl/",
+      "booking_url": "https://ashtangayogaeindhoven.nl/prices/",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "info@ashtangayogaeindhoven.nl",
+      "image_urls": [
+        "https://ashtangayogaeindhoven.nl/wp-content/uploads/2022/02/image1-2.jpeg",
+        "https://ashtangayogaeindhoven.nl/wp-content/uploads/2022/03/C73AA5FB-8EF8-4128-9149-FF206D8EE992.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Mysore memberships and drop-in",
+      "url": "https://ashtangayogaeindhoven.nl/prices/",
+      "description": "Monthly memberships for unlimited Mysore practice or two classes a week, plus single classes for visitors or for trying the method. Students and job seekers can ask for a reduced rate.",
+      "price": "Membership: 20 euro's; Unlimited Mysore: 120 euro's (per month); Twice a Week Mysore: 90 euro's (per month); Single Mysore class: 25 euro's",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://ashtangayogaeindhoven.nl/wp-content/uploads/2026/09/A0156308-5FB8-42B2-A55E-6C80D7C1BB99-2.jpg"
+    },
+    {
+      "title": "Ashtanga Yoga Beginners Course",
+      "url": "https://ashtangayogaeindhoven.nl/beginners-package/",
+      "description": "A two-month course taught by Katia, three early-morning classes a week, introducing the Mysore method: breath, posture and gaze, the bandhas, and the sun salutations and standing sequence. It starts on the first Monday of each month.",
+      "price": "€100",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga",
+        "breathwork"
+      ],
+      "image": "https://ashtangayogaeindhoven.nl/wp-content/uploads/2026/09/A0156308-5FB8-42B2-A55E-6C80D7C1BB99-2.jpg"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Mantras",
+      "url": "https://ashtangayogaeindhoven.nl/mantras/",
+      "description": "Recordings of the Ganesha prayer, peace mantras and other Vedic chants the teachers learned from their chanting teacher in Mysore, with the Sanskrit text and meanings, to chant along with.",
+      "featured": true,
+      "resource_type": "practice",
+      "subjects": [
+        "yoga",
+        "ancient-wisdom"
+      ],
+      "image": "https://ashtangayogaeindhoven.nl/wp-content/uploads/2026/09/A0156308-5FB8-42B2-A55E-6C80D7C1BB99-2.jpg"
+    },
+    {
+      "title": "Online videos: home practice and nadi shodhana",
+      "url": "https://ashtangayogaeindhoven.nl/online/",
+      "description": "A short video talk on keeping up a home practice with an introduction to alternate-nostril breathing as taught in Mysore, followed by written step-by-step instructions, plus recordings of the opening and closing prayers.",
+      "featured": false,
+      "resource_type": "practice",
+      "subjects": [
+        "yoga",
+        "breathwork"
+      ],
+      "image": "https://ashtangayogaeindhoven.nl/wp-content/uploads/2026/09/A0156308-5FB8-42B2-A55E-6C80D7C1BB99-2.jpg"
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "yoga-school",
+    "rank": 1059,
+    "hub": null,
+    "tier_evidence": "No YouTube channel linked from the pages read; Facebook and Instagram (linked from the contact page) not fetched; no readable followers → local_hero.",
+    "email": "yes",
+    "email_source": "https://ashtangayogaeindhoven.nl/prices/",
+    "contact_form_url": "https://ashtangayogaeindhoven.nl/shala/",
+    "bio_check": "OK: no 8-word runs against 8 source(s)",
+    "flags": [
+      "Lead from the Sharath Yoga Centre authorised-teacher list (Katia Garcia Gomez and Nicholas Paul Evans, Ashtanga Yoga Eindhoven); facts from the shala's own site (robots.txt allows us).",
+      "Email published as plain text on the prices page; the contact form is on the contact/location page (/shala/).",
+      "Founding year not published.",
+      "Nick Evans's teacher bio is framed around recovery from a serious illness; none of it is used. The mantras page calls chanting 'mind medicine'; the description avoids that.",
+      "The online-videos page opens with advice from the Covid period; the description covers only the breathing practice and prayers.",
+      "Possible future listings: Katia Garcia Gomez, Nick Evans.",
+      "No Spiritpedia teachers are named on the site, so the teachers file has no links.",
+      "Regional: Eindhoven; Spiritpedia has few listings in the Netherlands outside Amsterdam."
+    ],
+    "left_out": [
+      "'Ashtanga benefits' page: framed on health benefits.",
+      "Classes for pregnant women and new mothers mentioned in Katia's bio: health rule caution, and no page of their own."
+    ]
+  },
+  "images_final": true
+}

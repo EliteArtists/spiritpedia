@@ -1,0 +1,34 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 1295,
+    "healer_slug": "centre-de-yoga-iyengar-de-strasbourg"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "4ea7a5b6-8a3b-46da-b802-6617cef8a737",
+      "slug": "formules-2026-2027-annual-monthly-and-term-memberships",
+      "title": "Formules 2026-2027 (annual, monthly and term memberships)"
+    },
+    {
+      "table": "courses",
+      "id": "980fa73f-215b-4986-a285-5d64228c7ad5",
+      "slug": "stages-et-ateliers-2026-2027-workshops-themed-weekends-and-summer-weeks",
+      "title": "Stages et ateliers 2026-2027 (workshops, themed weekends and summer weeks)"
+    },
+    {
+      "table": "free_resources",
+      "id": "0028186c-4348-48ac-aef0-3b9dc349f1a2",
+      "slug": "nom-des-postures",
+      "title": "Nom des Postures"
+    },
+    {
+      "table": "free_resources",
+      "id": "36cf3357-6dfe-4bbf-b79e-afc6aef05921",
+      "slug": "invocations",
+      "title": "Invocations"
+    }
+  ],
+  "at": "2026-11-10T17:40:25.606Z"
+}

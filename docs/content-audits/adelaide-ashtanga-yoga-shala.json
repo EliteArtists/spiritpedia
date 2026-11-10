@@ -1,0 +1,107 @@
+{
+  "healer": {
+    "healer_slug": "adelaide-ashtanga-yoga-shala",
+    "location_source": "https://www.adelaideashtangayoga.com/contact",
+    "create": {
+      "name": "Adelaide Ashtanga Yoga Shala",
+      "bio": "Adelaide Ashtanga Yoga Shala is an Ashtanga school on Magill Road in Stepney, Adelaide, run by the married teachers Youngblood and Maura Roche. Both hold level 2 authorisation in the Ashtanga method. Youngblood has practised for more than twenty-five years and studied over many trips to Mysore with Sri K. Pattabhi Jois and later with R. Sharath Jois; Maura came to Ashtanga from ballet, athletics and strength training, met Youngblood in Mysore, and has also taught movement to dancers of the Australian Dance Theatre.\n\nThe core of the timetable is a traditional Mysore programme on weekday and Sunday mornings, in which each student works through the series independently with individual guidance; newcomers commit to at least a month. Around it sit evening and weekend classes, among them a Primary Series class named after Patanjali and several dynamic flow classes themed on figures such as Shiva, Hanuman and Nataraja. Classes can be joined in the room or online, with live and recorded sessions included in the shala's yearly membership, and a smaller sister shala at Carrickalinga runs music-led Ashtanga flow classes on Fridays and Sundays. The website also shares the opening and closing chants with their Sanskrit text and translation.",
+      "tier": "local_hero",
+      "entity_type": "school",
+      "availability": "local_online",
+      "city": "Adelaide",
+      "country": "Australia",
+      "subjects": [
+        "yoga",
+        "breathwork"
+      ],
+      "website_url": "https://www.adelaideashtangayoga.com/",
+      "booking_url": "https://www.adelaideashtangayoga.com/classes",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "aays@me.com",
+      "image_urls": [
+        "https://images.squarespace-cdn.com/content/v1/5690e821e0327c8c42250f10/1455430083347-8XHFN0SFF5SEE7HAR6ZG/IMG_1934.JPG",
+        "https://images.squarespace-cdn.com/content/v1/5690e821e0327c8c42250f10/1489309153315-YI4QJ3X99BLS4QU2WLVI/IMG_0537.JPG",
+        "https://images.squarespace-cdn.com/content/v1/5690e821e0327c8c42250f10/1466851115982-Q2C8G4OD546EYQ6QZNPM/IMG_5167.JPG"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Weekly classes and pricing",
+      "url": "https://www.adelaideashtangayoga.com/classes",
+      "description": "The weekly timetable of Mysore, led Primary and flow classes, paid by trial pass, drop-in, class card or monthly unlimited pass.",
+      "price": "2-Week Trial Pass (Unlimited) $45 (available for all non-Mysore classes); Drop-in (IN-SHALA Only) $29; 4 class card (4-wk Expiry) $105; 10 class card (5-wk Expiry) $225; Monthly (Unlimited) $250",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/5690e821e0327c8c42250f10/a672fbe7-3cf1-4011-972d-5ff19235fe92/Forest+Magic+Diary+16+September+2026.png"
+    },
+    {
+      "title": "Infinity Plan membership",
+      "url": "https://www.adelaideashtangayoga.com/infinity-plan",
+      "description": "A rolling twelve-month membership with unlimited access to in-shala classes and to the live and recorded online classes, with holds and two weeks' notice to leave.",
+      "price": "12-Month Membership $36/week; 6-Month Membership $45/week; 3-Month Membership $54/week",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/5690e821e0327c8c42250f10/2f889f1d-95c2-4cab-ba21-afcd420331d6/Infinity+Symbol+2026.png"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Opening and Closing Chants",
+      "url": "https://www.adelaideashtangayoga.com/chants",
+      "description": "The traditional Ashtanga opening and closing chants, set out in Sanskrit script, in transliteration and in English translation for students learning them.",
+      "featured": true,
+      "resource_type": "practice",
+      "subjects": [
+        "yoga",
+        "ancient-wisdom"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/5690e821e0327c8c42250f10/ee6cd03d-0f3d-4d38-8e95-1ff70e4102cc/chants.jpeg"
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "yoga-school",
+    "rank": 1074,
+    "hub": null,
+    "tier_evidence": "No YouTube channel or follower counts on the pages read → local_hero.",
+    "email": "yes",
+    "email_source": "https://www.adelaideashtangayoga.com/contact",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 7 source(s)",
+    "flags": [
+      "Lead from the Sharath Yoga Centre authorised-teacher list (Youngblood Roche, Adelaide Ashtanga Yoga Shala); facts from the shala's own site (robots.txt allows us: ClaudeBot and anthropic-ai share the * group, which disallows only system paths; photos on images.squarespace-cdn.com).",
+      "Australia: the brief prefers schools outside the US, UK and Australia; kept because Adelaide is thin on Spiritpedia.",
+      "Youngblood Roche's profile says he is also a practising clinical psychologist; left out of the bio under the health rule.",
+      "Several timetable classes are vigorous flow classes ('one of the most physically demanding'); the school is still led by its Mysore programme, so not treated as fitness-led. Owner may judge.",
+      "Founding year not published.",
+      "Teacher training: none advertised; included as an authorised Ashtanga lineage shala.",
+      "Prices are in dollars as published (currency not stated; Australian site).",
+      "Possible future listings: Youngblood Roche, Maura Roche.",
+      "No Spiritpedia teachers are named on the site, so the teachers file has no links.",
+      "Regional: Adelaide, South Australia.",
+      "Gallery photos are older (about 2016–2017)."
+    ],
+    "left_out": [
+      "Sacred108 page: an old 2018 offer.",
+      "Carrickalinga shala classes: no prices on that page.",
+      "Shop items (bolsters, mats): not offerings."
+    ]
+  },
+  "images_final": true
+}

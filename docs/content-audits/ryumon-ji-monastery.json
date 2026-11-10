@@ -1,0 +1,216 @@
+{
+  "healer": {
+    "healer_slug": "ryumon-ji-monastery",
+    "location_source": "https://meditation-zen.org/en/monastery-welcome",
+    "create": {
+      "name": "Ryumon Ji Zen Monastery",
+      "bio": "Ryumon Ji, the Dragon Gate temple, is a Sōtō Zen monastery at Weiterswiller in northern Alsace, about fifty kilometres north of Strasbourg, on the edge of a large forest. Master Olivier Reigen Wang-Genh founded it in 1999 with practitioners from Alsace and south-west Germany. He began Zen in 1973 as a student of Taisen Deshimaru, who ordained him in 1977, later led the Strasbourg dojo, was given transmission by Dōshō Saikawa Rōshi in 2001, and remains the abbot. A resident community of monks and nuns lives there by the traditional Sōtō rule, and the temple is recognised by the Sōtō school in Japan. It works in French and German, translating teachings and helping English speakers where it can.\n\nThe temple is open all year. Visitors can join the daily round of zazen, silent meals and samu work on 'daily life' stays, or come for sesshin, intensive retreats of three to nine days led by the abbot with talks, questions and one-to-one interviews; there are also beginners' weekends, kesa sewing and family retreats. A larger dojo for 120 people opened in 2024. Its YouTube channel, running since 2012, carries daily livestreamed zazen from the temple and short answers by the abbot to practitioners' questions, in French with German.",
+      "tier": "local_hero",
+      "entity_type": "organisation",
+      "availability": "local_online",
+      "city": "Weiterswiller",
+      "country": "France",
+      "subjects": [
+        "meditation",
+        "ancient-wisdom",
+        "mindfulness"
+      ],
+      "website_url": "https://meditation-zen.org/en/monastery-welcome",
+      "booking_url": "https://meditation-zen.org/en/monastery-welcome/calendar-and-rates",
+      "youtube_url": "https://www.youtube.com/@bouddhismezensotoryumon-ji",
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "info@meditation-zen.org",
+      "image_urls": [
+        "https://meditation-zen.org/sites/default/files/styles/page/public/media/images/57561852-e2af-d4d9-f14a-19fa720373b1.jpeg?itok=HvlFKbgF",
+        "https://meditation-zen.org/sites/default/files/styles/page/public/media/images/d1c928f2f7d78114db40f0ca490089f7.jpeg?itok=_k5rXViA"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [
+    {
+      "title": "Cette fleur n'est pas une fleur, c'est pourquoi je l'appelle fleur   Diese Blume ist keine Blume, de",
+      "url": "https://www.youtube.com/watch?v=XCmH1XfdhLE",
+      "subjects": [
+        "meditation",
+        "non-duality"
+      ],
+      "channel": "Bouddhisme Zen Sôtô RYUMON-JI"
+    },
+    {
+      "title": "Comment savoir si on pratique zazen de la bonne manière   Wie weiß man, dass man richtig Zazen prakt",
+      "url": "https://www.youtube.com/watch?v=R_CF6ifDnjE",
+      "subjects": [
+        "meditation"
+      ],
+      "channel": "Bouddhisme Zen Sôtô RYUMON-JI"
+    },
+    {
+      "title": "Que veulent dire les deux premiers vers du chant du kesa - Was bedeuten die ersten beiden Verse des",
+      "url": "https://www.youtube.com/watch?v=-fTeVs6O7nM",
+      "subjects": [
+        "ancient-wisdom",
+        "meditation"
+      ],
+      "channel": "Bouddhisme Zen Sôtô RYUMON-JI"
+    },
+    {
+      "title": "Quel est le sens de la cérémonie des défunts - Was ist der Sinn der Totenzeremonie",
+      "url": "https://www.youtube.com/watch?v=GFU5U_fmGBo",
+      "subjects": [
+        "death-the-afterlife",
+        "ancient-wisdom"
+      ],
+      "channel": "Bouddhisme Zen Sôtô RYUMON-JI"
+    },
+    {
+      "title": "Pouvez vous expliquer les cérémonies de souvenir et d’Idaten - Was ist der Sinn der Toten- und",
+      "url": "https://www.youtube.com/watch?v=jI-W01g7F-E",
+      "subjects": [
+        "ancient-wisdom",
+        "spirituality"
+      ],
+      "channel": "Bouddhisme Zen Sôtô RYUMON-JI"
+    },
+    {
+      "title": "Pourquoi mangent on en silence - Warum essen wir im Schweigen",
+      "url": "https://www.youtube.com/watch?v=uJXkxtPndk0",
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "channel": "Bouddhisme Zen Sôtô RYUMON-JI"
+    },
+    {
+      "title": "Ryumonji Zen Temple - Zen Online Meditation Livestream",
+      "url": "https://www.youtube.com/watch?v=hHOhMhqYgJQ",
+      "subjects": [
+        "meditation"
+      ],
+      "channel": "Bouddhisme Zen Sôtô RYUMON-JI"
+    }
+  ],
+  "books": [],
+  "courses": [
+    {
+      "title": "Rôhatsu sesshin - Silent retreat",
+      "url": "https://meditation-zen.org/en/activites/rohatsu-sesshin-2026",
+      "description": "A week-long silent sesshin in early December, the monastery's most intensive retreat of the year, with several periods of zazen a day, silent meals and work practice.",
+      "price": "Contact for pricing",
+      "product_type": "retreat",
+      "start_date": "2026-11-29",
+      "end_date": "2026-12-05",
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://meditation-zen.org/sites/default/files/media/images/HEAD-rohatsu_0.jpg"
+    },
+    {
+      "title": "New Year Sesshin & New Year’s Eve",
+      "url": "https://meditation-zen.org/en/activites/sesshin-de-nouvel-an-2026",
+      "description": "A four-day sesshin spanning the turn of the year at the monastery, combining zazen, ceremonies and community life.",
+      "price": "Contact for pricing",
+      "product_type": "retreat",
+      "start_date": "2026-12-29",
+      "end_date": "2027-01-01",
+      "subjects": [
+        "meditation",
+        "ancient-wisdom"
+      ],
+      "image": "https://meditation-zen.org/sites/default/files/media/images/HEAD_Nouvel-an_0.jpg"
+    },
+    {
+      "title": "Teachings and transmission of the precepts of the bodhisattvas (Jukai)",
+      "url": "https://meditation-zen.org/en/SESSION-JUKAI-Janvier-2027",
+      "description": "Several days of teaching on the bodhisattva precepts, ending in the jukai ceremony in which practitioners formally take refuge and receive them.",
+      "price": "Contact for pricing",
+      "product_type": "retreat",
+      "start_date": "2027-01-13",
+      "end_date": "2027-01-17",
+      "subjects": [
+        "ancient-wisdom",
+        "spirituality"
+      ],
+      "image": "https://meditation-zen.org/sites/default/files/media/images/Head-Jukai_0.png"
+    },
+    {
+      "title": "MY FIRST ZEN RETREAT",
+      "url": "https://meditation-zen.org/en/Ma-premiere-sesshin-janvier-2027",
+      "description": "A weekend sesshin for people new to Zen, with an introduction to posture and the temple's forms alongside the regular schedule.",
+      "price": "Contact for pricing",
+      "product_type": "retreat",
+      "start_date": "2027-01-29",
+      "end_date": "2027-01-31",
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://meditation-zen.org/sites/default/files/media/images/modele_HEAD_5.png"
+    },
+    {
+      "title": "Retreat & daily life - GYOJI",
+      "url": "https://meditation-zen.org/en/retreat-and-daily-life-gyoji",
+      "description": "Stays outside the sesshin calendar, following the monks' and nuns' day with morning and evening zazen, silent meals and samu. Booked by email for set periods.",
+      "price": "Contact for pricing",
+      "product_type": "retreat",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://meditation-zen.org/sites/default/files/media/images/gyoji_ANG.jpg"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Zen online",
+      "url": "https://meditation-zen.org/en/zen-online",
+      "description": "Daily zazen and teachings streamed live from the temple, which anyone can sit with at home.",
+      "featured": true,
+      "resource_type": "practice",
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://meditation-zen.org/sites/default/files/media/images/ZLEKNVLKDNSL.png"
+    },
+    {
+      "title": "Videos: how to meditate with Master Wang-Genh",
+      "url": "https://meditation-zen.org/en/zen-meditation-seat/videos-how-to-meditate-with-master-wang-genh",
+      "description": "Short instruction videos from the abbot on zazen posture and practice.",
+      "featured": false,
+      "resource_type": "practice",
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://meditation-zen.org/themes/zenmeditation/images/sotoshu.png"
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "channel",
+    "rank": 1205,
+    "hub": null,
+    "tier_evidence": "YouTube 7,960 subscribers (YouTube Data API, 10 Nov 2026); no other counts read → ~8k → local_hero",
+    "email": "yes",
+    "email_source": "https://meditation-zen.org/en/monastery-welcome/calendar-and-rates",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 6 source(s)",
+    "flags": [
+      "Weiterswiller is a village (under 5,000) in Bas-Rhin, Alsace: may need a place alias. Regional: northern Alsace.",
+      "Retreat prices are published only as an image of the rates table: written 'Contact for pricing'. Membership of the ATZW association (15 euros/year) is required for all activities.",
+      "Master Olivier Reigen Wang-Genh (abbot, also long-time president of the Buddhist Union of France and of the AZI) is not on Spiritpedia: possible future listing. Teachers file empty.",
+      "Channel avatar is a Buddha statue, not clearly the monastery: not used. Photos are the monastery's own (outdoor zazen terrace and the dojo).",
+      "Channel is mostly daily livestreams with generic titles; the short Q&A clips have titles cut at YouTube's 100-character limit, copied as they are.",
+      "Daily ZEN (rank 1212, dailyzen.fr) appears to be a related French Zen channel from the same sangha: check for overlap."
+    ],
+    "left_out": [
+      "Dated retreats before 13 Nov 2026 (Discover Zen week 8–15 Nov, Autumn Sesshin 12–15 Nov) and later 2027 retreats beyond the first few.",
+      "Strasbourg Zen Centre programme (node pages) not read.",
+      "Short clips under 2 minutes and the open-day report."
+    ]
+  },
+  "images_final": true
+}

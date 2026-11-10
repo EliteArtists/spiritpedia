@@ -1,0 +1,138 @@
+{
+  "healer": {
+    "healer_slug": "szkola-jogi-odrobina-dobrej-woli",
+    "location_source": "https://yogopedia.org/kontakt/",
+    "create": {
+      "name": "Szkoła Jogi Odrobina Dobrej Woli",
+      "bio": "Odrobina Dobrej Woli (roughly 'a little goodwill') is a small yoga school in Kraków, affiliated to the International Sivananda Yoga Vedanta Centres and listed by the organisation among its affiliated centres. It is led by Piotr, who holds the Sivananda Yoga Acharya qualification for advanced teachers and has taught on the organisation's international teacher trainings in Ustka and in Lithuania. The school's own studio sits beside the Rudawa river in the west of the city, and its pages honour Swami Sivananda and Swami Vishnudevananda as the masters of the line.\n\nThe method is classical Sivananda hatha yoga, presented as an integral practice that works on body, mind and feelings through the five points of postures, breathing, relaxation, vegetarian diet, and positive thinking with meditation. Open ninety-minute classes run on most weekday evenings and on Saturday mornings, with short early-morning sessions, a slower class for older adults and six-week beginners' courses that teach the sun salutation and the twelve basic postures step by step. Students can stay on after class for free pranayama and meditation. Several times a year the school also leads weekend yoga retreats with meditation and walks at Dom Przebudzeń in Porąbka.",
+      "tier": "local_hero",
+      "entity_type": "school",
+      "availability": "local",
+      "city": "Kraków",
+      "country": "Poland",
+      "subjects": [
+        "yoga",
+        "meditation",
+        "breathwork"
+      ],
+      "website_url": "https://yogopedia.org/",
+      "booking_url": "https://yogopedia.org/zajecia/",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "omkar@yogopedia.org",
+      "image_urls": [
+        "https://yogopedia.org/dorosli/files/joga-dla-doros0142ych.png",
+        "https://yogopedia.org/files/tytulowa.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Karnet miesięczny otwarty",
+      "url": "https://yogopedia.org/zajecia/",
+      "description": "An open monthly pass for the school's regular ninety-minute Sivananda classes in Kraków, held on weekday evenings, Wednesday morning and Saturday morning. Single classes and four- or eight-class monthly passes are priced on the same page.",
+      "price": "350 zł",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://yogopedia.org/rw_common/themes/realmacsoftware06/images/bottom_grad.png"
+    },
+    {
+      "title": "Joga (tytuł w przygotowaniu), Dom Przebudzeń",
+      "url": "https://yogopedia.org/wydarzenia/",
+      "description": "A residential weekend of Sivananda yoga with five asana classes, four meditation or relaxation sessions, a long walk on Saturday and a shorter one on Sunday, with phones kept in flight mode. Open to beginners and experienced students alike.",
+      "price": "950 PLN w pokoju 3/4 osobowym, 1050 PLN w pokoju 2 osobowym",
+      "product_type": "retreat",
+      "start_date": "2026-11-27",
+      "end_date": "2026-11-29",
+      "subjects": [
+        "yoga",
+        "meditation"
+      ],
+      "image": "https://yogopedia.org/rw_common/themes/realmacsoftware06/images/bottom_grad.png"
+    },
+    {
+      "title": "Sztuka bycia zadowolonym, Porąbka (March 2027)",
+      "url": "https://yogopedia.org/wydarzenia/dp_maj/",
+      "description": "A spring weekend retreat at Dom Przebudzeń in Porąbka built around the art of contentment, with daily postures at every level, gentle breathing techniques, meditation and walks in the hills.",
+      "price": "950 PLN w pokoju 3/4 osobowym, 1050 PLN w pokoju 2 osobowym",
+      "product_type": "retreat",
+      "start_date": "2027-03-05",
+      "end_date": "2027-03-07",
+      "subjects": [
+        "yoga",
+        "meditation"
+      ],
+      "image": "https://yogopedia.org/rw_common/themes/realmacsoftware06/images/bottom_grad.png"
+    },
+    {
+      "title": "Sztuka bycia zadowolonym, Porąbka (October 2027)",
+      "url": "https://yogopedia.org/wydarzenia/dp_listopad/",
+      "description": "An autumn edition of the school's weekend retreat in Porąbka, with the same unhurried rhythm of asana classes, meditation or relaxation each evening and an excursion on Saturday.",
+      "price": "950 PLN w pokoju 3/4 osobowym, 1050 PLN w pokoju 2 osobowym",
+      "product_type": "retreat",
+      "start_date": "2027-10-01",
+      "end_date": "2027-10-03",
+      "subjects": [
+        "yoga",
+        "meditation"
+      ],
+      "image": "https://yogopedia.org/rw_common/themes/realmacsoftware06/images/bottom_grad.png"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Pranayama i medytacja",
+      "url": "https://yogopedia.org/zajecia/",
+      "description": "A free forty-five-minute session of breathing practice and meditation on Tuesday evenings, open to students who attend the school's classes; booking is by email or phone.",
+      "featured": true,
+      "resource_type": "meditation",
+      "subjects": [
+        "breathwork",
+        "meditation"
+      ],
+      "image": "https://yogopedia.org/rw_common/themes/realmacsoftware06/images/bottom_grad.png"
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "yoga-school",
+    "rank": 709,
+    "hub": null,
+    "tier_evidence": "No YouTube channel linked on the site; Facebook not fetched; no readable followers → local_hero",
+    "email": "yes",
+    "email_source": "https://yogopedia.org/kontakt/",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 10 source(s)",
+    "flags": [
+      "Lead from the Sivananda organisation's own list of affiliated centres (sivananda.org/locations/affiliated-centres/), which links yogopedia.org; the site names the school and calls itself 'Afiliowana szkoła jogi metodą Sivanandy'. robots.txt returns 404 (no restrictions).",
+      "Small affiliated studio rather than a teacher-training school: it prepares students for, and promotes, the Sivananda TTC abroad (its TTC page lists only a past 2025 course in Rudraprayag), but runs no training itself. Owner to decide whether it fits the school category.",
+      "The lead teacher is named only as 'Piotr' on the contact page (email omkar@yogopedia.org); the Acharya and TTC-teaching details come from the courses page.",
+      "Email omkar@yogopedia.org is the school's published address (contact page); there is no contact form.",
+      "The site footer reads '© 2017' and some pages are older (the beginners' course page shows a past September–October course), though the events page lists retreats into 2027.",
+      "Photos: a group of students in the school's brick-walled practice room, and a group sitting on a wooden deck (place not stated, probably a retreat). Group shots, not a building exterior; owner may prefer different images.",
+      "The 27–29 Nov 2026 retreat is listed on the events page as 'Joga (tytuł w przygotowaniu)' (title in preparation); the item keeps that title with the venue added.",
+      "Retreats are held at Dom Przebudzeń in Porąbka, outside Kraków; prices copied as published (PLN stated).",
+      "Possible future listings: none with a full name on the site.",
+      "No Spiritpedia teachers are named on the site, so the teachers file has no links.",
+      "Regional: Kraków, Poland; Spiritpedia has no or very few listings in Poland."
+    ],
+    "left_out": [
+      "Joga w ciąży (prenatal yoga): pregnancy framing, left out under the health rule.",
+      "Kurs dla początkujących: the only dates shown (16.09–21.10) have passed; 420 zł per course.",
+      "TTC w Rudraprayag: the page lists only the October–November 2025 course.",
+      "Starter poranny and the class for older adults: covered by the bio rather than separate items.",
+      "Weekend ze Swami event page: not opened."
+    ]
+  },
+  "images_final": true
+}

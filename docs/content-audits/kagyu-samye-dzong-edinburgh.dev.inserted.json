@@ -1,0 +1,100 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 1263,
+    "healer_slug": "kagyu-samye-dzong-edinburgh"
+  },
+  "rows": [
+    {
+      "table": "videos",
+      "id": 9215,
+      "slug": "the-four-noble-truths-session-1",
+      "title": "The Four Noble Truths -  Session 1"
+    },
+    {
+      "table": "videos",
+      "id": 9216,
+      "slug": "the-four-noble-truths-session-2",
+      "title": "The Four Noble Truths - Session 2"
+    },
+    {
+      "table": "videos",
+      "id": 9217,
+      "slug": "the-four-noble-truths-session-3",
+      "title": "The Four Noble Truths - Session 3"
+    },
+    {
+      "table": "videos",
+      "id": 9218,
+      "slug": "the-rain-of-wisdom-session-1",
+      "title": "The Rain of Wisdom: Session 1"
+    },
+    {
+      "table": "videos",
+      "id": 9219,
+      "slug": "the-rain-of-wisdom-session-3",
+      "title": "The Rain of Wisdom: Session 3"
+    },
+    {
+      "table": "videos",
+      "id": 9220,
+      "slug": "akong-rinpoche-living-the-legacy-session-2",
+      "title": "Akong RInpoche: Living the Legacy - Session 2"
+    },
+    {
+      "table": "videos",
+      "id": 9221,
+      "slug": "akong-rinpoche-living-the-legacy-session-3",
+      "title": "Akong RInpoche: Living the Legacy - Session 3"
+    },
+    {
+      "table": "videos",
+      "id": 9222,
+      "slug": "songs-of-milarepa-season-2-session-1",
+      "title": "Songs of Milarepa Season 2: Session 1"
+    },
+    {
+      "table": "videos",
+      "id": 9223,
+      "slug": "songs-of-milarepa-session-5",
+      "title": "Songs of Milarepa: Session 5"
+    },
+    {
+      "table": "courses",
+      "id": "7743ceb6-10fe-49e3-871d-2fddd7692ed2",
+      "slug": "audio-teaching-the-four-preliminary-foundations-part-1-precious-human-life",
+      "title": "Audio Teaching: The Four Preliminary Foundations – Part 1: Precious Human Life"
+    },
+    {
+      "table": "courses",
+      "id": "08793eb0-69db-4b6a-90d2-2a7ea440d6eb",
+      "slug": "audio-teaching-the-four-preliminary-foundations-part-3-karma-cause-and-effect",
+      "title": "Audio Teaching: The Four Preliminary Foundations – Part 3: Karma, Cause and Effect"
+    },
+    {
+      "table": "free_resources",
+      "id": "4a168ace-999a-4878-9b81-314664384e44",
+      "slug": "discovering-buddhism-online-course",
+      "title": "Discovering Buddhism (online course)"
+    },
+    {
+      "table": "free_resources",
+      "id": "ff0d824e-363a-47fe-8b23-279510a4ba1d",
+      "slug": "the-songs-of-milarepa-online-course",
+      "title": "The Songs of Milarepa (online course)"
+    },
+    {
+      "table": "free_resources",
+      "id": "964f8bb8-267e-452b-ac13-74b3305a9b05",
+      "slug": "guided-meditation-sessions",
+      "title": "Guided Meditation sessions"
+    },
+    {
+      "table": "free_resources",
+      "id": "3cdff065-326a-4d49-a167-41eeb540d373",
+      "slug": "ngondro-practice-day",
+      "title": "Ngondro Practice Day"
+    }
+  ],
+  "at": "2026-11-10T16:10:53.018Z"
+}

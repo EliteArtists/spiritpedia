@@ -1,0 +1,34 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 1218,
+    "healer_slug": "iyengar-yoga-birmingham"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "8e754c21-3d97-4390-ad98-60e44d11571d",
+      "slug": "beginner-level-classes",
+      "title": "Beginner Level classes"
+    },
+    {
+      "table": "courses",
+      "id": "2a0f9910-92dd-4b0e-8190-dafd5174ccfd",
+      "slug": "yoga-a-gem-for-women-ladies-only",
+      "title": "Yoga A Gem for Women (ladies only)"
+    },
+    {
+      "table": "courses",
+      "id": "b51b28e9-8982-43f7-a8d8-f23c9d2a9f49",
+      "slug": "advanced-workshop-for-students-and-teachers-with-jayne-orton",
+      "title": "Advanced Workshop for Students and Teachers with Jayne Orton"
+    },
+    {
+      "table": "courses",
+      "id": "e784859d-4e37-4411-9990-1212d4c118f4",
+      "slug": "new-year-light-on-yoga-workshop-with-jayne-orton",
+      "title": "New Year Light On Yoga Workshop with Jayne Orton"
+    }
+  ],
+  "at": "2026-11-10T13:54:32.509Z"
+}

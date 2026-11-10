@@ -16,13 +16,15 @@
       ],
       "website_url": "https://www.doorwayintolight.org/",
       "booking_url": "https://www.doorwayintolight.org/death-doula-certification-program",
-      "youtube_url": null,
+      "youtube_url": "https://www.youtube.com/@thedeathstore",
       "instagram_url": null,
       "facebook_url": null,
       "twitter_url": null,
       "tiktok_url": null,
       "contact_email": "info@doorwayintolight.org",
-      "image_urls": []
+      "image_urls": [
+        "https://yt3.ggpht.com/ytc/AIdro_nKbftDg4iWhlQe9LSUfQ8VC8zYs0iWcuc0CYi2-HBEYg=s800-c-k-c0x00ffffff-no-rj"
+      ]
     }
   },
   "teaches_at": [],
@@ -91,7 +93,6 @@
     "hub": "esalen",
     "rank": 394,
     "hub_url": "https://www.esalen.org/faculty/reverend-bodhi-be",
-    "held": "No usable photo: the photos on his site (and on Esalen's page) are served from cdn.prod.website-files.com, whose robots.txt returns 403 to us (10 Nov 2026), so the ingest will refuse them; his YouTube channel avatar could not be taken (channel pages not fetched from this machine). Not worked around.",
     "tier_evidence": "YouTube channel 'Bodhi Be': count unreadable (channel pages not fetched, 10 Nov 2026); Instagram/Facebook on the site belong to the funeral home's Death Store, not counted → 0 readable → local_hero",
     "email": "yes",
     "email_source": "https://www.doorwayintolight.org/contact",
@@ -107,13 +108,16 @@
       "Book: ISBN-10 1953508251 from the Amazon link on https://www.doorwayintolight.org/education/read-the-new-book (Barnes & Noble link there gives EAN 9781953508256); not confirmed elsewhere. Alan Clements is the lead author; listed as co-author by Bodhi Be. No cover.",
       "Video v6y-vVcT8uM is on the Ram Dass channel; he is co-speaker. All three video IDs come from his own site and pass oEmbed.",
       "Tier: no follower count could be read.",
-      "Ingest note: Haiku, Hawaii is not in the places table; needs a place alias (or map to Maui)."
+      "Ingest note: Haiku, Hawaii is not in the places table; needs a place alias (or map to Maui).",
+      "Photo (owner's plan, 10 Nov 2026): the avatar of his own YouTube channel 'Bodhi Be' (@thedeathstore, UCPxU9SJ3LvYQAyr8W1qvvVQ), read through the Data API; a real portrait, looked at by the lead. Two of the plan's videos are on that channel. 653 subscribers → local_hero."
     ],
     "left_out": [
       "Facing Death, Nourishing Life (online, 5 Oct - 19 Nov 2026): already started; one strand also covers caring for people with brain disorders.",
       "6th International Death Doula Training on Maui (Sept 2024): past.",
       "Deep Caregiving to the Dying talk (Vimeo, Final Passages): not YouTube.",
       "Certification price: only on the Zeffy registration page, which was not opened."
-    ]
-  }
+    ],
+    "tier_evidence_api": "YouTube 653 subscribers (Bodhi Be, UCPxU9SJ3LvYQAyr8W1qvvVQ; Data API, 10 Nov 2026); other platforms not read → local_hero"
+  },
+  "images_final": true
 }

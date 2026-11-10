@@ -1,0 +1,119 @@
+{
+  "healer": {
+    "healer_slug": "centre-de-yoga-iyengar-de-strasbourg",
+    "location_source": "https://yoga-iyengar-strasbourg.fr/contacts/",
+    "create": {
+      "name": "Centre de Yoga Iyengar de Strasbourg",
+      "bio": "Centre de Yoga Iyengar de Strasbourg teaches the method of B.K.S. Iyengar from a bright, rope-walled practice room on the quai Kléber in central Strasbourg, France. It is run as a non-profit association under Alsace-Moselle local law, governed collegially by an elected council of members, and it keeps fees income-linked so that regular practice stays open to everyone. Its senior teacher, Jean-Michel Kuhry, has practised since 1995, taught Iyengar yoga since 2009 and holds level 3 certification from the Ramamani Iyengar Memorial Yoga Institute in Pune; three more recently certified teachers share the timetable.\n\nWeekly classes run from beginners to experienced students, with a children's class on Wednesdays, and some sessions are streamed for members who practise from home, with a week of replays. Beyond the regular programme the centre holds Sunday workshops on one region of the body, themed weekends on the subtler kriyas of the practice for students of three years or more, and summer practice weeks graded by experience. Members also meet for reading circles on yoga texts, and the site shares illustrated pose names and the traditional opening invocations.",
+      "tier": "local_hero",
+      "entity_type": "school",
+      "availability": "local_online",
+      "city": "Strasbourg",
+      "country": "France",
+      "subjects": [
+        "yoga",
+        "breathwork"
+      ],
+      "website_url": "https://yoga-iyengar-strasbourg.fr/",
+      "booking_url": "https://yoga-iyengar-strasbourg.fr/calendrier-des-cours/",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": null,
+      "image_urls": [
+        "https://yoga-iyengar-strasbourg.fr/wp-content/uploads/2022/07/Centre-yoga-iyengar-10-scaled.jpg",
+        "https://yoga-iyengar-strasbourg.fr/wp-content/uploads/2022/07/Centre-yoga-iyengar-7-scaled.jpg",
+        "https://yoga-iyengar-strasbourg.fr/wp-content/uploads/2019/10/CYIS_quaiKleber_01.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Formules 2026-2027 (annual, monthly and term memberships)",
+      "url": "https://yoga-iyengar-strasbourg.fr/tarifs/",
+      "description": "Annual, monthly or term membership for one, two or more weekly classes, with online access and seven-day replays included, or an online-only plan. Association membership is included, and income-linked reductions are offered.",
+      "price": "Formule 1 cours 426 € (43 €/mois, trimestre 162 €); Formule 2 cours 606 € (61 €/mois); Formule Intensive 666 € (67 €/mois); Formule 100% en ligne 156 € (trimestre 62 €); Cours à l'unité 21 €; Carte de 8 cours 122 €; Cours enfant (trimestre) 82 €",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://yoga-iyengar-strasbourg.fr/wp-content/uploads/2026/09/tarifs-2026-27-1.jpg"
+    },
+    {
+      "title": "Stages et ateliers 2026-2027 (workshops, themed weekends and summer weeks)",
+      "url": "https://yoga-iyengar-strasbourg.fr/stages-informations-inscriptions/",
+      "description": "Sunday morning workshops each devoted to one area of the body, weekend intensives on the kriyas for students with at least three years of Iyengar practice, and summer weeks in July 2027 graded by years of practice.",
+      "price": "Weekends d'Approfondissement 130€ le week-end; Ateliers 40€; Stage d'été 280€ l'enseignement",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga",
+        "breathwork"
+      ],
+      "image": "https://yoga-iyengar-strasbourg.fr/wp-content/uploads/2022/07/Centre-yoga-iyengar-10-scaled.jpg"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Nom des Postures",
+      "url": "https://yoga-iyengar-strasbourg.fr/nom-des-postures/",
+      "description": "An illustrated reference to the main Iyengar postures, grouped into standing, seated and forward bends, lying and back bends, and inversions and balances, with the Sanskrit name of each.",
+      "featured": true,
+      "resource_type": "practice",
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://yoga-iyengar-strasbourg.fr/wp-content/uploads/2020/09/Tadasana.gif"
+    },
+    {
+      "title": "Invocations",
+      "url": "https://yoga-iyengar-strasbourg.fr/invocations/",
+      "description": "The Sanskrit invocations to Patanjali and to the guru that open Iyengar classes, transliterated and with a French translation.",
+      "featured": false,
+      "resource_type": "practice",
+      "subjects": [
+        "yoga",
+        "ancient-wisdom"
+      ],
+      "image": "https://yoga-iyengar-strasbourg.fr/wp-content/uploads/2022/07/Centre-yoga-iyengar-10-scaled.jpg"
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "yoga-school",
+    "rank": 1054,
+    "hub": null,
+    "tier_evidence": "No YouTube channel or social accounts linked from the pages read; no readable followers → local_hero.",
+    "email": "contact form",
+    "email_source": null,
+    "contact_form_url": "https://yoga-iyengar-strasbourg.fr/contacts/",
+    "bio_check": "OK: no 8-word runs against 10 source(s)",
+    "flags": [
+      "Lead from the Association Française de Yoga Iyengar's centre list (CYI de Strasbourg, Jean-Michel Kuhry); facts from the centre's own site (yoga-iyengar-strasbourg.fr; www redirects to the bare host, robots.txt read on both, allows us).",
+      "No general centre email is published; the contact form is used. The site also publishes the senior teacher's workshop inbox (stage@jean-michel-yoga.fr) and teachers' own addresses on the teachers page; not used.",
+      "Prices come from the 'Tarifs 2026-2027' image on the prices page, copied as shown.",
+      "Founding year not published.",
+      "Availability local_online: some classes are offered online with replays (prices page).",
+      "Class bookings go through Eversports (not opened).",
+      "Possible future listings: Jean-Michel Kuhry, Sabine Turchi, Ludovic Muller, Michael Hill.",
+      "No Spiritpedia teachers are named on the site, so the teachers file has no links.",
+      "Regional: Strasbourg; Spiritpedia has few listings in eastern France."
+    ],
+    "left_out": [
+      "Cours pré et post natal (prenatal and postnatal classes): left out under the health rule's caution on prenatal items.",
+      "Cours besoins spécifiques (classes for specific needs): condition-led.",
+      "Vidéos sur le yoga page: links to a France Culture radio broadcast and outside videos, not the centre's own content.",
+      "La revue du sādhaka: on a separate subdomain (sadhaka.yoga-iyengar-strasbourg.fr) not opened.",
+      "Cercles de lecture: dates shown are in 2025 (passed); members only."
+    ]
+  },
+  "images_final": true
+}

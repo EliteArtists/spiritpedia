@@ -1,0 +1,134 @@
+{
+  "healer": {
+    "healer_slug": "lind-yoga-studio",
+    "location_source": "https://lindyogastudio.dk/kontakt/",
+    "create": {
+      "name": "Lind Yoga Studio",
+      "bio": "Lind Yoga Studio is the Iyengar yoga school of Elin Marie Døfler Bruun, a Level III certified Iyengar teacher, on the main street of Lind on the edge of Herning in central Jutland. For years she taught at her family's farm under the name Yoga-Centret; in March 2026, after the farm was sold, she moved the school into a room on Lind Hovedgade, where props are provided and kept clean for every class.\n\nWeekly classes run in ten-week courses for beginners and continuing students, with small groups of up to twelve so that each person can be corrected individually. Through the year the studio holds evening and Saturday workshops on themes such as pranayama, chair work and a seasonal winter practice, and it invites guest teachers, including the visiting teacher Jayne Orton for long weekends. Elin also mentors aspiring teachers on the Iyengar route to Level 1 certification, and her trainees, along with any interested student, can study the Yoga Sutras of Patanjali with the scholar and teacher Gitte Poulsen.",
+      "tier": "local_hero",
+      "entity_type": "school",
+      "availability": "local",
+      "city": "Herning",
+      "country": "Denmark",
+      "subjects": [
+        "yoga",
+        "breathwork",
+        "ancient-wisdom"
+      ],
+      "website_url": "https://lindyogastudio.dk/",
+      "booking_url": "https://lindyogastudio.dk/tilmelding-til-yoga-hold/",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "mail@lindyogastudio.dk",
+      "image_urls": [
+        "https://lindyogastudio.dk/wp-content/uploads/2026/05/hold.jpg",
+        "https://lindyogastudio.dk/wp-content/uploads/2026/05/img_8748_924.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Iyengar® Yoga hold (ten-week courses)",
+      "url": "https://lindyogastudio.dk/tilmelding-til-yoga-hold/",
+      "description": "Weekly Iyengar classes on Monday, Tuesday and Wednesday, booked as ten-class courses: a two-hour class for beginners and continuing students, and a shorter class open to all levels.",
+      "price": "Trin I & II: Kr. 1250,00 for 10 gange; Yoga for Alle: Kr. 625,00 for 10 gange",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://lindyogastudio.dk/wp-content/uploads/2026/05/Profil-billede-1.jpg"
+    },
+    {
+      "title": "Iyengar® yoga uddannelsen Level 1 (teacher mentorship)",
+      "url": "https://lindyogastudio.dk/iyengar-yoga-uddannelsen-level-1/",
+      "description": "The Iyengar teacher training as a mentorship with a Level II or higher certified teacher, open to students with at least three years of Iyengar practice. Trainees attend their mentor's classes once or twice a week and build a daily home practice while learning to teach, demonstrate and correct.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://lindyogastudio.dk/wp-content/uploads/2026/05/img_8748_924.jpg"
+    },
+    {
+      "title": "Undervisning i Yoga Sutras by Patanjali ved Gitte Poulsen",
+      "url": "https://lindyogastudio.dk/yoga-sutras-by-patanjali/",
+      "description": "Study of the Yoga Sutras with Gitte Poulsen, part of the syllabus for the studio's teacher trainees and also open to other students who want to explore the philosophy behind the practice.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "ancient-wisdom",
+        "yoga"
+      ],
+      "image": "https://lindyogastudio.dk/wp-content/uploads/2026/05/hold.jpg"
+    },
+    {
+      "title": "Pranayama – Vejrtræknings workshop, 19. november 2026",
+      "url": "https://lindyogastudio.dk/pranayama-vejrtraeknings-workshop/",
+      "description": "An evening workshop on the basic Iyengar breathing practices, prepared for with asana, for students with at least two years of practice. Groups are capped at twelve.",
+      "price": "kr. 500,00",
+      "product_type": "course",
+      "start_date": "2026-11-19",
+      "end_date": "2026-11-19",
+      "subjects": [
+        "breathwork",
+        "yoga"
+      ],
+      "image": "https://lindyogastudio.dk/wp-content/uploads/2026/09/image-picker-c78f70ff-194e-422d-b2ee-a734db532144-10258-00000f158439a69c-rotated-1.jpg"
+    },
+    {
+      "title": "Jule Iyengar®Yoga – 12. december 2026",
+      "url": "https://lindyogastudio.dk/jule-iyengar-yoga-2026/",
+      "description": "A three-hour Saturday morning practice before Christmas for students with at least a year of yoga, taught by Elin Marie Døfler Bruun in the Lind studio.",
+      "price": "Kr. 625,00",
+      "product_type": "course",
+      "start_date": "2026-12-12",
+      "end_date": "2026-12-12",
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://lindyogastudio.dk/wp-content/uploads/2026/05/img_8748_924.jpg"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "yoga-school",
+    "rank": 1604,
+    "hub": null,
+    "tier_evidence": "No YouTube channel or readable social counts (Facebook only, not fetched) → 0 readable → local_hero.",
+    "email": "yes",
+    "email_source": "https://lindyogastudio.dk/kontakt/",
+    "contact_form_url": "https://lindyogastudio.dk/kontakt/",
+    "bio_check": "OK: no 8-word runs against 9 source(s)",
+    "flags": [
+      "Lead from the Danish Iyengar association's teacher list (Elin Døfler, Level 3, www.yoga-centret.dk, Herning, Arnborg); yoga-centret.dk now redirects to lindyogastudio.dk, which names the same teacher. Facts from the studio's own site (robots.txt allows us, Crawl-delay 20, respected with 21 s between requests).",
+      "One teacher runs the school, but it has a full programme (ten-week courses, priced workshops, guest-teacher weekends, teacher mentorship and Yoga Sutras study).",
+      "Photo 1 shows an Iyengar practice room set up with props; it may be the former farm studio rather than the new room in Lind (the site does not say). Photo 2 is the teacher in the studio.",
+      "Item 'image' fields set to the school's own photos so the ingest need not open each page (the site asks for a 20 s crawl delay).",
+      "Pranayama workshop: the page says Thursday 19 November 2026, 19–21.30; the workshop list says 30 November, 19–22. The workshop page's date is used.",
+      "Lind is a small town on the edge of Herning (published as 7400 Herning); city recorded as Herning.",
+      "Possible future listings: Elin Marie Døfler Bruun; Gitte Poulsen (Devi Mahal).",
+      "No Spiritpedia teachers are named on the site, so the teachers file has no links.",
+      "Regional: Herning, central Jutland; Spiritpedia has no listings there."
+    ],
+    "left_out": [
+      "Hensyntagende Iyengar Yoga for alle: described as for people with stress or depression (health rule).",
+      "Workshops on 19 September, 2–4 October and 8 October 2026: passed.",
+      "Pilates classes and equipment sales: not yoga teaching.",
+      "Room hire: not a teaching offering."
+    ]
+  },
+  "images_final": true
+}

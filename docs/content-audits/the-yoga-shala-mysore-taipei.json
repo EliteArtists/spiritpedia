@@ -1,0 +1,128 @@
+{
+  "healer": {
+    "healer_slug": "the-yoga-shala-mysore-taipei",
+    "location_source": "https://www.mysoretaipei.com/contact?lang=en",
+    "create": {
+      "name": "The Yoga Shala – Mysore Taipei",
+      "bio": "The Yoga Shala, known as Mysore Taipei, is an Ashtanga school in Taipei's Da'an district that opened in 2021. It was set up by Daniel Wu, who turned to Ashtanga after a pilgrimage to India in 2011 and received authorisation from Sharath Jois in 2014, and it is run with Benson Kao, his student since 2013, who has studied in Mysore since 2018 and became a Level 2 authorised teacher in 2024. The school sees itself as a shala in the Mysore sense, a place of discipline and tradition rather than a fitness studio, and a small team of teachers assists in the room.\n\nMysore-style practice runs every weekday morning, with new students asked to come at least three times a week, and a Saturday full primary class is followed by a talk and questions. Through the year the shala holds its own intensives and invites senior Ashtanga teachers from abroad for longer workshops, with Chinese translation. Its YouTube channel shares short teaching clips on individual postures, the Sanskrit names of the primary series and verses from the Yoga Sutras.",
+      "tier": "local_hero",
+      "entity_type": "school",
+      "founded_year": 2021,
+      "availability": "local",
+      "city": "Taipei",
+      "country": "Taiwan",
+      "subjects": [
+        "yoga",
+        "ancient-wisdom",
+        "breathwork"
+      ],
+      "website_url": "https://www.mysoretaipei.com/",
+      "booking_url": "https://www.mysoretaipei.com/classes?lang=en",
+      "youtube_url": "https://www.youtube.com/@mysoretaipei",
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "mysoretaipei@gmail.com",
+      "image_urls": [
+        "https://www.mysoretaipei.com/images/user/classroom-Carousel01.png",
+        "https://www.mysoretaipei.com/images/user/img-about_1.png"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [
+    {
+      "title": "第一級體位法梵文名稱，Ashtanga Yoga Primary Series",
+      "url": "https://www.youtube.com/watch?v=Q9C09mftZfk",
+      "subjects": [
+        "yoga",
+        "ancient-wisdom"
+      ],
+      "channel": "THE YOGA SHALA - MYSORE TAIPEI"
+    },
+    {
+      "title": "Maricāsana C、D，聖者馬里奇式 C 、D",
+      "url": "https://www.youtube.com/watch?v=lVzWRrlqUy4",
+      "subjects": [
+        "yoga"
+      ],
+      "channel": "THE YOGA SHALA - MYSORE TAIPEI"
+    },
+    {
+      "title": "Maricāsana A, B；聖者馬里奇式A, B",
+      "url": "https://www.youtube.com/watch?v=oM-7byfy0g0",
+      "subjects": [
+        "yoga"
+      ],
+      "channel": "THE YOGA SHALA - MYSORE TAIPEI"
+    },
+    {
+      "title": "ahimsāsatyāsteyabrahmacaryāparigrahāḥ yamāḥ",
+      "url": "https://www.youtube.com/watch?v=bLK6xqUIBXE",
+      "subjects": [
+        "ancient-wisdom",
+        "yoga"
+      ],
+      "channel": "THE YOGA SHALA - MYSORE TAIPEI"
+    }
+  ],
+  "books": [],
+  "courses": [
+    {
+      "title": "Tuition (Mysore programme passes)",
+      "url": "https://www.mysoretaipei.com/prices?lang=en",
+      "description": "Monthly, weekly and single-class fees for the weekday Mysore programme and the Saturday full primary class, with lower monthly rates on a year contract and for students.",
+      "price": "Monthly Fee (year contract) NT$4288; Student Discount (year contract) NT$2888; Monthly Fee NT$6088; Weekly Fee NT$2888; Single Class Fee NT$888",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://www.mysoretaipei.com/images/user/classroom-Carousel01.png"
+    },
+    {
+      "title": "Mysore practice and Saturday Full Primary with talk and Q&A",
+      "url": "https://www.mysoretaipei.com/classes?lang=en",
+      "description": "Self-paced Mysore practice from 6:00 to 10:00 on weekdays, open to beginners and experienced students alike, with individual teaching; new students are asked to commit to at least three mornings a week. On Saturdays a led full primary class is followed by a talk and question time.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga",
+        "breathwork"
+      ],
+      "image": "https://www.mysoretaipei.com/images/user/classroom-Carousel01.png"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "yoga-school",
+    "rank": 1011,
+    "hub": null,
+    "tier_evidence": "YouTube 631 subscribers (@mysoretaipei, Data API, 10 Nov 2026); Instagram and Facebook not fetched → ~631 total → local_hero.",
+    "email": "yes",
+    "email_source": "https://www.mysoretaipei.com/contact?lang=en",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 8 source(s)",
+    "flags": [
+      "Lead from the Sharath Yoga Centre authorised-teacher list (Benson Kao and Daniel Wu, The Yoga Shala - Mysore Taipei); facts from the school's own site (www.mysoretaipei.com; robots.txt allows us).",
+      "Some page images sit on the bare host mysoretaipei.com, whose robots.txt I did not read, so only images on the www host were used.",
+      "The news page announces 'The Craft of Asana' with Kino MacGregor and Tim Feldmann, 7-11 April 2027 (NT$27,500; early bird NT$24,500 to 31 Dec 2026), but it has no page of its own (only the news index shows it), so it is left out. Kino MacGregor is on Spiritpedia (kino-macgregor); she is a visiting workshop teacher here (2025 and 2027), so no hub link was made: owner may decide.",
+      "Videos are short (2-3 minutes) teaching clips in Chinese from the school's own channel, checked with oEmbed; most uploads are under 2 minutes and were skipped. Last upload May 2024.",
+      "Second photo shows Daniel Wu and Benson Kao with an older teacher in Mysore (not named on the page); first is the shala's reception and practice area.",
+      "Email is a Gmail school inbox.",
+      "Possible future listings: Daniel Wu, Benson Kao.",
+      "Regional: Taipei; Spiritpedia has few listings in Taiwan."
+    ],
+    "left_out": [
+      "Primary Series 40-hour intensive (5-10 Oct 2026): passed, and its page frames the series around healing illness and pain.",
+      "Kino MacGregor and Tim Feldmann workshop (April 2027): no page of its own.",
+      "Equipment rental prices."
+    ]
+  },
+  "images_final": true
+}

@@ -1,0 +1,167 @@
+{
+  "healer": {
+    "healer_slug": "ashtanga-yoga-shala-rishikesh",
+    "location_source": "https://aysrishikesh.com/teachers/",
+    "create": {
+      "name": "Ashtanga Yoga Shala Rishikesh",
+      "bio": "Ashtanga Yoga Shala Rishikesh, often shortened to AYS, is a Mysore-style shala in the Tapovan area of Rishikesh, in the foothills of the Himalayas. It is run by Sachin Badoni, who grew up in Rishikesh, studied yoga to master's level and taught in local ashrams before travelling to Mysore, and Liubov Badoni, a Moscow-trained geophysicist who came to Ashtanga in 2011. Both studied with Sharath Jois and were authorised by him, and they returned to Sachin's home town to open the shala with his blessing.\n\nMornings follow the traditional pattern: Mysore-style practice from Monday to Friday and a led primary class on Saturday, with Sundays and moon days off. Visitors can join a one-week beginners' intensive that starts any Monday in season, or longer 200-hour and 300-hour intensives built around daily practice with classes in philosophy, alignment, anatomy, the vinyasa count, Sanskrit and chanting. The shala is clear that these are courses for deepening practice and not teacher certification, which it says only the Mysore centre can grant. It also teaches live and recorded classes online and shares a free primary series chart.",
+      "tier": "local_hero",
+      "entity_type": "school",
+      "founded_year": null,
+      "availability": "local_online",
+      "city": "Rishikesh, Uttarakhand",
+      "country": "India",
+      "subjects": [
+        "yoga",
+        "breathwork",
+        "ancient-wisdom"
+      ],
+      "website_url": "https://aysrishikesh.com/",
+      "booking_url": "https://aysrishikesh.com/enroll/",
+      "youtube_url": "https://www.youtube.com/@aysrishikesh",
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "ashtangashalarishikesh@gmail.com",
+      "image_urls": [
+        "https://aysrishikesh.com/wp-content/uploads/2024/04/ays-304.jpg",
+        "https://aysrishikesh.com/wp-content/uploads/2024/04/ays-114.jpg",
+        "https://aysrishikesh.com/wp-content/uploads/2024/04/ays-89.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [
+    {
+      "title": "Ashtanga Yoga Primary series Led class",
+      "url": "https://www.youtube.com/watch?v=yH-RDLlvL30",
+      "subjects": [
+        "yoga",
+        "breathwork"
+      ],
+      "channel": "Ashtanga Yoga Shala Rishikesh"
+    },
+    {
+      "title": "Difference in Ashtanga “Mysore & Led”",
+      "url": "https://www.youtube.com/watch?v=GYW9oYeK2e4",
+      "subjects": [
+        "yoga"
+      ],
+      "channel": "Ashtanga Yoga Shala Rishikesh"
+    }
+  ],
+  "books": [],
+  "courses": [
+    {
+      "title": "200 Hour Ashtanga Intensive",
+      "url": "https://aysrishikesh.com/200-hour-yoga-course/",
+      "description": "A 23-day intensive for dedicated Mysore practitioners: daily practice plus philosophy, alignment and anatomy classes, the vinyasa method, Sanskrit and chanting with harmonium. Runs several times a year (dates for 2027 are published); the shala stresses it is not a teacher certification.",
+      "price": "€750 (international); INR 55,000 (Indian citizens)",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga",
+        "breathwork",
+        "ancient-wisdom"
+      ],
+      "image": "https://aysrishikesh.com/wp-content/uploads/2024/03/cropped-AYS-Logo.png"
+    },
+    {
+      "title": "300 Hour Ashtanga Intensive",
+      "url": "https://aysrishikesh.com/300-hour-yoga-course/",
+      "description": "A month-long intensive for experienced practitioners who want to study the method more deeply in the traditional way, with daily Mysore practice and theory, anatomy and alignment classes. Held twice in 2027; non-residential.",
+      "price": "€980 (international); INR 65,000 (Indian citizens)",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga",
+        "breathwork"
+      ],
+      "image": "https://aysrishikesh.com/wp-content/uploads/2024/03/cropped-AYS-Logo.png"
+    },
+    {
+      "title": "One Week Ashtanga Intensive (beginners)",
+      "url": "https://aysrishikesh.com/1-week-yoga/",
+      "description": "A Monday-to-Saturday introduction that can be joined any week in season: morning Mysore practice, a Saturday led class, and posture clinics and theory on vinyasa, bandhas, drishti and breath.",
+      "price": "€150 (international students); INR 12,000 (Indian students)",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga",
+        "breathwork"
+      ],
+      "image": "https://aysrishikesh.com/wp-content/uploads/2024/03/cropped-AYS-Logo.png"
+    },
+    {
+      "title": "Mysore drop-in classes",
+      "url": "https://aysrishikesh.com/daily-dropin/",
+      "description": "Morning Mysore classes at the shala for committed practitioners, bought singly, as class packs or by the month; newcomers to Mysore style take at least five classes.",
+      "price": "INR 800 (1 class); INR 3500 (5); INR 6000 (10); INR 8000 (15); INR 12000 (one month)",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://aysrishikesh.com/wp-content/uploads/2024/03/cropped-AYS-Logo.png"
+    },
+    {
+      "title": "Online Ashtanga Yoga classes",
+      "url": "https://aysrishikesh.com/online-ashtanga-yoga-classes/",
+      "description": "Live online drop-in classes and class packs, a recorded beginners' introduction course and a live ten-day teacher's assisting course.",
+      "price": "€7 (drop-in); €50 (10 classes); €70 (15 classes); €50 (recorded beginners' course); €350 (10 days teacher's assisting course)",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://aysrishikesh.com/wp-content/uploads/2024/03/cropped-AYS-Logo.png"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Primary series chart (PDF)",
+      "url": "https://aysrishikesh.com/wp-content/uploads/2024/05/final-primary-chart.pdf",
+      "description": "A free downloadable chart of the Ashtanga primary series, linked from the shala's site for students learning the sequence.",
+      "featured": true,
+      "resource_type": "download",
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://aysrishikesh.com/wp-content/uploads/2024/04/ays-304.jpg"
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "yoga-school",
+    "rank": 1014,
+    "hub": null,
+    "tier_evidence": "YouTube 538 subscribers (@aysrishikesh, Data API, 10 Nov 2026); Instagram and Facebook not fetched → ~538 total → local_hero. The site shows a Google rating widget ('150 reviews'), not followers.",
+    "email": "yes",
+    "email_source": "https://aysrishikesh.com/teachers/",
+    "contact_form_url": "https://aysrishikesh.com/contact/",
+    "bio_check": "OK: no 8-word runs against 9 source(s)",
+    "flags": [
+      "Lead from the Sharath Yoga Centre authorised-teacher list (Sachin Badoni and Liubov Badoni, Ashtanga Yoga Shala Rishikesh); facts from the school's own site (aysrishikesh.com; robots.txt allows us).",
+      "The 200- and 300-hour courses are 'intensives', and the site says plainly they are not teacher certification; they are listed as courses with repeating 2027 dates, undated.",
+      "Email is a Gmail school inbox in the site footer (also on the contact page, which has a form).",
+      "Photos are of classes and an assist in the shala's practice room (own site, 2024 uploads).",
+      "Online page also lists 'Mental Purification' as part of a package; not described further, nothing taken from it.",
+      "Possible future listings: Sachin Badoni (founder), Liubov Badoni (co-founder).",
+      "No Spiritpedia teachers are named on the site, so the teachers file has no links.",
+      "Regional: Rishikesh is already a well-known yoga town; Spiritpedia may already have other Rishikesh listings."
+    ],
+    "left_out": [
+      "Postpartum yoga therapy, 'yoga therapy across the menstrual cycle' and 'yoga therapy for the perinatal nervous system' pages: health rule.",
+      "YouTube video on Bhramari pranayama titled for stress, anxiety and insomnia: health rule.",
+      "Most other YouTube uploads are short clips or promotions under 2 minutes.",
+      "Accommodation and payment pages."
+    ]
+  },
+  "images_final": true
+}

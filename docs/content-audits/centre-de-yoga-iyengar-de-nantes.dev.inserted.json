@@ -1,0 +1,28 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 1298,
+    "healer_slug": "centre-de-yoga-iyengar-de-nantes"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "864746a0-4d69-4e40-b90a-4a00f66c5153",
+      "slug": "tarifs-cours-2026-2027-weekly-classes-in-person-or-on-zoom",
+      "title": "Tarifs cours 2026/2027 (weekly classes, in person or on Zoom)"
+    },
+    {
+      "table": "courses",
+      "id": "67f44be9-58e5-4918-849c-d9d82540f50b",
+      "slug": "stage-de-yoga-niveau-intermediaire-avance-15-novembre-2026",
+      "title": "Stage de Yoga Niveau Intermédiaire-Avancé – 15 novembre 2026"
+    },
+    {
+      "table": "courses",
+      "id": "c4db2bb6-76ca-439a-85e8-5e6c22c64892",
+      "slug": "les-stages-de-yoga-2026-2027-workshop-programme",
+      "title": "Les stages de yoga 2026/2027 (workshop programme)"
+    }
+  ],
+  "at": "2026-11-10T17:40:42.975Z"
+}

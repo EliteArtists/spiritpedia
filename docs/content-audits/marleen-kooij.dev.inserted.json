@@ -1,0 +1,28 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 1169,
+    "healer_slug": "marleen-kooij"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "cabc0ea8-b9d3-4c3a-9d76-3c4a789f2af4",
+      "slug": "quantum-touch-sessions-3",
+      "title": "Quantum-Touch sessions"
+    },
+    {
+      "table": "courses",
+      "id": "a59ee9cc-b526-474f-b687-d6dcb7c8148e",
+      "slug": "quantum-touch-level-1-weekend-workshop",
+      "title": "Quantum-Touch Level 1 weekend workshop"
+    },
+    {
+      "table": "courses",
+      "id": "7c452e01-29cc-411a-8a93-e5a5c8de8f7a",
+      "slug": "maancirkel-womens-moon-circles",
+      "title": "Maancirkel (women's moon circles)"
+    }
+  ],
+  "at": "2026-11-10T12:25:10.165Z"
+}

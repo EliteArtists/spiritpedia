@@ -1,0 +1,224 @@
+{
+  "healer": {
+    "healer_slug": "dhagpo-kagyu-ling",
+    "location_source": "https://dhagpo.org/contact/",
+    "create": {
+      "name": "Dhagpo Kagyu Ling",
+      "bio": "Dhagpo Kagyu Ling is a centre for Buddhist study and meditation in the Vézère valley of the Dordogne, in south-west France, and serves as the European seat of the Karma Kagyu school of Tibetan Buddhism. Land and a farmhouse were given to the 16th Karmapa in 1975; two years later he named the place and made it his base in Europe. The French state later recognised its monastic community as a Buddhist congregation. Its present spiritual guides are Thaye Dorje, the 17th Gyalwa Karmapa, and Lama Jigmé Rinpoché, who was born in eastern Tibet in 1949, trained under the 16th Karmapa and has taught in Europe for some fifty years.\n\nThe centre frames practice as three strands: learning the teachings, meditating on them and bringing them into everyday conduct. Its programme runs through the year with retreats, introductory weekends, a progressive Chenrezik study cycle and courses at its Institute, often taught in English or Tibetan with French translation. Daily practices in the temple are open to all, and the grounds, library and stupas can be visited. Its YouTube channel, running since 2012, streams many of these teachings live, including talks by Lama Jigmé Rinpoché and Thinley Rinpoché, with recorded guided practices in French.",
+      "tier": "local_hero",
+      "entity_type": "organisation",
+      "availability": "local_online",
+      "city": "Saint-Léon-sur-Vézère",
+      "country": "France",
+      "subjects": [
+        "meditation",
+        "ancient-wisdom",
+        "spirituality"
+      ],
+      "website_url": "https://dhagpo.org/",
+      "booking_url": "https://dhagpo.org/calendrier/",
+      "youtube_url": "https://www.youtube.com/@dhagpo",
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "contact@dhagpo.org",
+      "image_urls": [
+        "https://dhagpo.org/wp-content/uploads/2022/06/Journees-portes-ouvertes-04_1024x682.jpg",
+        "https://dhagpo.org/wp-content/uploads/2026/04/Dhagpo-logo.png"
+      ],
+      "founded_year": 1977
+    }
+  },
+  "teaches_at": [],
+  "videos": [
+    {
+      "title": "Cycle Chenrezik • 15/10/25 • 1/5 – Enseignement | Teaching - Lama Jigmé Rinpoché",
+      "url": "https://www.youtube.com/watch?v=d4p9DIMxaqQ",
+      "subjects": [
+        "meditation",
+        "ancient-wisdom"
+      ],
+      "channel": "Dhagpo Kagyu Ling"
+    },
+    {
+      "title": "[1/4] Clarté et compassion | Clarity and Compassion - 14/05/26",
+      "url": "https://www.youtube.com/watch?v=PYqPlX-dmlQ",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "channel": "Dhagpo Kagyu Ling"
+    },
+    {
+      "title": "[1/3] L’apparition en dépendance par Khenpo Wangdu | Clarté & compassion",
+      "url": "https://www.youtube.com/watch?v=WpXUKiK4KjM",
+      "subjects": [
+        "ancient-wisdom"
+      ],
+      "channel": "Dhagpo Kagyu Ling"
+    },
+    {
+      "title": "[1/6] Thinley Rinpoché - 11/09/2026 - S1",
+      "url": "https://www.youtube.com/watch?v=BR1NyW8pExM",
+      "subjects": [
+        "ancient-wisdom",
+        "spirituality"
+      ],
+      "channel": "Dhagpo Kagyu Ling"
+    },
+    {
+      "title": "[1/6] Thinley Rinpoché - 08/05/2026 - S1",
+      "url": "https://www.youtube.com/watch?v=x80LZYp5C7c",
+      "subjects": [
+        "ancient-wisdom",
+        "spirituality"
+      ],
+      "channel": "Dhagpo Kagyu Ling"
+    },
+    {
+      "title": "Saraha - Un éveil poétique",
+      "url": "https://www.youtube.com/watch?v=ueCm1Xxah_k",
+      "subjects": [
+        "spiritual-awakening",
+        "ancient-wisdom"
+      ],
+      "channel": "Dhagpo Kagyu Ling"
+    },
+    {
+      "title": "[FR] 25/02/2026 • 1/4  • Abhidharmakosha",
+      "url": "https://www.youtube.com/watch?v=z01YFa1Oakc",
+      "subjects": [
+        "ancient-wisdom"
+      ],
+      "channel": "Dhagpo Kagyu Ling"
+    },
+    {
+      "title": "[FR] Khenpo Chödrak R. – 15 juillet 1994 : lancement de l’Université d’été de Dhagpo Kagyu Ling",
+      "url": "https://www.youtube.com/watch?v=c5GgMcEjyeY",
+      "subjects": [
+        "ancient-wisdom"
+      ],
+      "channel": "Dhagpo Kagyu Ling"
+    }
+  ],
+  "books": [],
+  "courses": [
+    {
+      "title": "Retraite intensive de méditation bouddhique",
+      "url": "https://dhagpo.org/calendrier/retraite-intensive-meditation-bouddhique-nov-2026/",
+      "description": "A six-day residential meditation retreat for people who already have some experience of sitting practice, led by Sylvain Clénet, with early-morning and day-long sessions.",
+      "price": "23 € / jour",
+      "product_type": "retreat",
+      "start_date": "2026-11-24",
+      "end_date": "2026-11-29",
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://dhagpo.org/wp-content/uploads/2023/06/Programme_retraite-intensive-meditation.jpg"
+    },
+    {
+      "title": "Clarté et compassion – Retraite d’étude et de méditation (décembre 2026)",
+      "url": "https://dhagpo.org/calendrier/clarte-compassion-retraite-etude-meditation-dec-2026/",
+      "description": "Lama Jigmé Rinpoché leads this New Year study and meditation retreat, mixing talks, guided meditation and discussion. It can be joined at the centre or followed live online.",
+      "price": "28 € / jour",
+      "product_type": "retreat",
+      "start_date": "2026-12-30",
+      "end_date": "2027-01-01",
+      "subjects": [
+        "meditation",
+        "ancient-wisdom"
+      ],
+      "image": "https://dhagpo.org/wp-content/uploads/2025/08/Clarte-et-compassion_Jigme-Rinpoche.jpg"
+    },
+    {
+      "title": "Cursus progressif d’étude et de méditation – Cycle Chenrezik, année 9, stage 2",
+      "url": "https://dhagpo.org/calendrier/cursus-progressif-etude-meditation-cycle-chenrezik-annee-9-stage-2/",
+      "description": "Part of a multi-year study and meditation cycle on the practice of Chenrezik guided by Lama Jigmé Rinpoché, meant for practitioners who have taken refuge and join all three yearly sessions.",
+      "price": "25 € / jour",
+      "product_type": "retreat",
+      "start_date": "2027-02-10",
+      "end_date": "2027-02-14",
+      "subjects": [
+        "meditation",
+        "ancient-wisdom"
+      ],
+      "image": "https://dhagpo.org/wp-content/uploads/2023/07/Programme_cursus-chenrezik.jpg"
+    },
+    {
+      "title": "Clarté et compassion – Retraite d’étude et de méditation (mai 2027)",
+      "url": "https://dhagpo.org/calendrier/clarte-compassion-retraite-detude-meditation-mai-2027/",
+      "description": "A four-day spring retreat with Lama Jigmé Rinpoché on a theme from Buddhist teaching, taught in English with French translation, in person or online.",
+      "price": "28 € / jour",
+      "product_type": "retreat",
+      "start_date": "2027-05-06",
+      "end_date": "2027-05-09",
+      "subjects": [
+        "meditation",
+        "ancient-wisdom"
+      ],
+      "image": "https://dhagpo.org/wp-content/uploads/2025/08/Clarte-et-compassion_Jigme-Rinpoche.jpg"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Pratiques régulières",
+      "url": "https://dhagpo.org/programme/pratiques-regulieres/",
+      "description": "The daily and monthly practice timetable of the temple, open to anyone, with a short guide to each practice and links to recorded Green Tara and Chenrezik meditations.",
+      "featured": true,
+      "resource_type": "practice",
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://dhagpo.org/wp-content/uploads/2022/06/Journees-portes-ouvertes-04_1024x682.jpg"
+    },
+    {
+      "title": "Paroles des maîtres",
+      "url": "https://dhagpo.org/ressources/paroles-des-maitres/",
+      "description": "Transcripts of teachings given at the centre by Karma Kagyu masters, first printed in its Tendrel journal between 1982 and 2002 and now being republished online.",
+      "featured": false,
+      "resource_type": "download",
+      "subjects": [
+        "ancient-wisdom"
+      ],
+      "image": "https://dhagpo.org/wp-content/uploads/2023/08/ressources_paroles-maitres.jpg"
+    },
+    {
+      "title": "Visiter Dhagpo",
+      "url": "https://dhagpo.org/visiter/",
+      "description": "Free self-guided and guided visits to the temple, gardens, stupas and library, with an annual open day.",
+      "featured": false,
+      "resource_type": "practice",
+      "subjects": [
+        "spirituality"
+      ],
+      "image": "https://dhagpo.org/wp-content/uploads/2022/06/Journees-portes-ouvertes-16_1024x682.jpg"
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "channel",
+    "rank": 1401,
+    "hub": null,
+    "tier_evidence": "YouTube 16,500 subscribers (YouTube Data API, 10 Nov 2026); no other counts read → ~16.5k → local_hero",
+    "email": "yes",
+    "email_source": "https://dhagpo.org/contact/",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 14 source(s)",
+    "flags": [
+      "Saint-Léon-sur-Vézère is a village (well under 5,000) in the Dordogne: may need a place alias. Regional: rural Dordogne, south-west France.",
+      "Teaching language mixes French with English and Tibetan (translated into French); the channel is mainly French-language streams.",
+      "Lineage note: the centre follows Thaye Dorje as 17th Karmapa (one of two recognised claimants); this is a lineage matter, not an allegation.",
+      "contact@dhagpo.org is the centre's general inbox (brand inbox).",
+      "Photos: an open-day visit in the centre's library (with visitors' faces) and the centre's logo; no clear temple photo found on the pages read.",
+      "Lama Jigmé Rinpoché is not on Spiritpedia: possible future listing. Teachers file empty."
+    ],
+    "left_out": [
+      "'Explication de la pratique du bouddha Menla' (5–6 Dec 2026): its description speaks of pacifying the causes of illness (health rule).",
+      "Retreats starting on or before 12 Nov 2026 and later 2027 retreats beyond the four chosen.",
+      "Livrets de l'Institut on bibliotheque-dhagpo-kagyu.org (another host, not read).",
+      "Funeral/cremation and open-day clips on the channel."
+    ]
+  },
+  "images_final": true
+}

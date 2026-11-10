@@ -1,0 +1,137 @@
+{
+  "healer": {
+    "healer_slug": "udbodhan-ramakrishna-math-baghbazar",
+    "location_source": "https://udbodhan.org/mayer-bari",
+    "create": {
+      "name": "Udbodhan - Ramakrishna Math Baghbazar",
+      "bio": "Udbodhan is the branch of the Ramakrishna Math in Baghbazar, north Kolkata, and devotees know its house on Udbodhan Lane as Mayer Bari, the Holy Mother's House. Swami Saradananda, a close companion of Sri Ramakrishna, had it built near the Ganga so that Sri Sarada Devi would have a settled home in the city; she moved in on 23 May 1909 and spent much of her remaining life there, and he wrote his biography of Ramakrishna, the Lilaprasanga, in a small room downstairs. Her shrine room is still worshipped daily, and the house keeps a calendar of festivals including Durga, Kali and Saraswati Puja, Shivaratri and Christmas Eve, with readings from scripture on three evenings a week.\n\nUdbodhan is also the Bengali publishing arm of the Ramakrishna Order. It brings out Udbodhan Patrika, a monthly founded by Swami Vivekananda in 1899 and still in print, together with a large list of Bengali books on the Ramakrishna and Vivekananda tradition, some of which can be read online. Its Bengali-language YouTube channel, active since 2014, carries talks by monks of the Order, serialised audiobooks such as Vivekananda's Jnana Yoga, devotional songs and short explanations of the festivals.",
+      "tier": "local_hero",
+      "entity_type": "organisation",
+      "availability": "local_online",
+      "city": "Kolkata",
+      "country": "India",
+      "subjects": [
+        "spirituality",
+        "ancient-wisdom",
+        "non-duality"
+      ],
+      "website_url": "https://udbodhan.org/",
+      "booking_url": null,
+      "youtube_url": "https://www.youtube.com/@udbodhan_rkm",
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "baghbazar@rkmm.org",
+      "image_urls": [
+        "https://udbodhan.org/images/editorial/mayer-bari/mb1.jpg",
+        "https://udbodhan.org/images/editorial/mayer-bari/mb7.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [
+    {
+      "title": "স্মৃতির আলোয় প্রভু মহারাজ | Swami Nikhileswarananda",
+      "url": "https://www.youtube.com/watch?v=UiqK6nNcthc",
+      "subjects": [
+        "spirituality"
+      ],
+      "channel": "Udbodhan - Ramakrishna Math Baghbazar"
+    },
+    {
+      "title": "যন্ সাধন তন্ সিদ্ধি |  Swami Aryeshananda",
+      "url": "https://www.youtube.com/watch?v=jl3UIqb56DE",
+      "subjects": [
+        "spirituality",
+        "ancient-wisdom"
+      ],
+      "channel": "Udbodhan - Ramakrishna Math Baghbazar"
+    },
+    {
+      "title": "মানুষের যথার্থ স্বরূপ (১) | পর্ব ১১ | জ্ঞানযোগ | Audio Book | Jnana Yoga",
+      "url": "https://www.youtube.com/watch?v=k1ANdB7GjEM",
+      "subjects": [
+        "non-duality",
+        "ancient-wisdom"
+      ],
+      "channel": "Udbodhan - Ramakrishna Math Baghbazar"
+    },
+    {
+      "title": "মানুষের যথার্থ স্বরূপ (১) | পর্ব ৯ | জ্ঞানযোগ | Audio Book | Jnana Yoga",
+      "url": "https://www.youtube.com/watch?v=Y4xdAfAMugc",
+      "subjects": [
+        "non-duality",
+        "ancient-wisdom"
+      ],
+      "channel": "Udbodhan - Ramakrishna Math Baghbazar"
+    },
+    {
+      "title": "তিব্বতের পথে হিমালয়ে | পর্ব ৩ | স্বামী অখণ্ডানন্দ | Audio Book | Tibbater Pathe Himalaye",
+      "url": "https://www.youtube.com/watch?v=VszRMEndzXg",
+      "subjects": [
+        "spirituality"
+      ],
+      "channel": "Udbodhan - Ramakrishna Math Baghbazar"
+    },
+    {
+      "title": "শ্মশানে জাগিছে শ্যামা | Shmashane Jagiche Shyama | Chhandok Majumder | Shyama Sangeet",
+      "url": "https://www.youtube.com/watch?v=TcPaT9zlc4U",
+      "subjects": [
+        "spirituality"
+      ],
+      "channel": "Udbodhan - Ramakrishna Math Baghbazar"
+    },
+    {
+      "title": "রামকৃষ্ণ নামের জোয়ার এলো | Ramakrishna Namer Jowar Elo | Rajib Hembrom",
+      "url": "https://www.youtube.com/watch?v=w2-3jmoIpR8",
+      "subjects": [
+        "spirituality"
+      ],
+      "channel": "Udbodhan - Ramakrishna Math Baghbazar"
+    }
+  ],
+  "books": [],
+  "courses": [
+    {
+      "title": "Udbodhan Patrika subscription",
+      "url": "https://udbodhan.org/patrika/subscription",
+      "description": "A print or digital subscription to Udbodhan, the Ramakrishna Order's Bengali monthly published since 1899, which also unlocks the online archive of past issues.",
+      "price": "Contact for pricing",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "spirituality",
+        "ancient-wisdom"
+      ],
+      "image": "https://udbodhan.org/api/media/file/issue-68-cover.webp"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "channel",
+    "rank": 1407,
+    "hub": null,
+    "tier_evidence": "YouTube 97,100 subscribers (YouTube Data API, 10 Nov 2026); no other counts read → ~97k → local_hero (borderline, just under 100k)",
+    "email": "yes",
+    "email_source": "https://udbodhan.org/",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 7 source(s)",
+    "flags": [
+      "Tier borderline: 97,100 YouTube subscribers, just under the 100k luminary line; possible editorial-stature override (the Holy Mother's House is a major Ramakrishna Order site).",
+      "baghbazar@rkmm.org is the centre's office inbox, shown as a mailto link in the site footer (brand inbox).",
+      "Channel and site are in Bengali (site navigation in English). Many uploads are short festival clips and devotional songs; talks and audiobooks chosen.",
+      "Patrika subscription prices are not shown in the page's visible text (loaded by script), so 'Contact for pricing'.",
+      "No free resources: the online library is for subscribers only and the downloads page holds placeholder files.",
+      "Part of the Ramakrishna Math and Mission (Belur Math); check for overlap with any existing Ramakrishna/Vedanta listings."
+    ],
+    "left_out": [
+      "Bookshop titles (Bengali print books without ISBNs on the page; Boi Utsav discount prices are temporary).",
+      "Events page: no events scheduled.",
+      "Short festival clips under 2 minutes."
+    ]
+  },
+  "images_final": true
+}

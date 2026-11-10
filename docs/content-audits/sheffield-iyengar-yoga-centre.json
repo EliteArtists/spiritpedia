@@ -1,0 +1,121 @@
+{
+  "healer": {
+    "healer_slug": "sheffield-iyengar-yoga-centre",
+    "location_source": "https://sheffieldyogacentre.co.uk/find-us",
+    "create": {
+      "name": "Sheffield Iyengar Yoga Centre",
+      "bio": "Sheffield Iyengar Yoga Centre opened in June 2005, when its founder, Frances Homewood, took on a neglected former chapel in Walkley, facing Ruskin Park, and turned it into the city's first dedicated Iyengar yoga centre. Frances began practising young with a teacher from the first generation trained by B.K.S. Iyengar, and she has spent months studying at the Iyengar institute in Pune, taught by members of the Iyengar family and by Iyengar himself. The centre marked its twentieth year in 2025. It is an affiliated centre of Iyengar Yoga (UK) and is now run by directors Anna Cowlishaw and Carolyn Usher alongside a team of certified teachers, several of whom trained here with Frances.\n\nTwo high-ceilinged halls full of light hold the ropes, blocks and wooden props the method relies on. Classes run from Level 1 through to Level 3 and general classes with basic pranayama, many of them both in the hall and online, and most are booked in blocks of several weeks. Newcomers and returners start with a four-week course on the basic postures and breathing. Each month the centre also hosts workshops, visiting senior teachers from the UK and abroad, a class for teachers and a family yoga club.",
+      "tier": "local_hero",
+      "entity_type": "school",
+      "availability": "local_online",
+      "founded_year": 2005,
+      "city": "Sheffield",
+      "country": "United Kingdom",
+      "subjects": [
+        "yoga",
+        "breathwork"
+      ],
+      "website_url": "https://sheffieldyogacentre.co.uk/",
+      "booking_url": "https://sheffieldyogacentre.co.uk/book-a-class",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "info@sheffieldyogacentre.co.uk",
+      "image_urls": [
+        "https://images.squarespace-cdn.com/content/v1/655ddad9df998a39f46ed220/17f7848a-bfdb-4142-86ca-ca018cea6e62/Front+Hall.jpg",
+        "https://images.squarespace-cdn.com/content/v1/655ddad9df998a39f46ed220/11840d07-8630-4997-a9f8-4cc3f12ad43f/DSC_0340.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "New Starter/ Returner Course",
+      "url": "https://sheffieldyogacentre.co.uk/new-starter",
+      "description": "A four-week block of weekly one-hour classes for complete beginners and for people coming back after a long break, taught by certified Iyengar teachers. It covers the fundamental postures and simple breathing, ready for joining the Level 1 classes.",
+      "price": "£36.00",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga",
+        "breathwork"
+      ],
+      "image": "http://static1.squarespace.com/static/655ddad9df998a39f46ed220/t/689b0eaa18bdd572a34df2c4/1754992298415/class-26-.jpg?format=1500w"
+    },
+    {
+      "title": "Weekly Iyengar classes (block booking)",
+      "url": "https://sheffieldyogacentre.co.uk/book-a-class",
+      "description": "The centre's weekly timetable of Level 1, 2 and 3 and general classes, taught in the front hall and, for many classes, online at the same time. Classes are booked in blocks of several weeks or as drop-ins, and missed classes can be swapped or caught up by recording.",
+      "price": "Contact for pricing",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga"
+      ],
+      "image": "http://static1.squarespace.com/static/655ddad9df998a39f46ed220/t/692eae84450a884e78dd6616/1764667012595/social-share-logo.jpg?format=1500w"
+    },
+    {
+      "title": "Introduction to Pranayama with Emma Rattenbury",
+      "url": "https://sheffieldyogacentre.as.me/pranayama",
+      "description": "A workshop at the centre introducing the breathing practices of the Iyengar method, led by a visiting teacher.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": "2026-11-14",
+      "end_date": "2026-11-14",
+      "subjects": [
+        "breathwork",
+        "yoga"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/655ddad9df998a39f46ed220/17f7848a-bfdb-4142-86ca-ca018cea6e62/Front+Hall.jpg"
+    },
+    {
+      "title": "New Year, Online Workshops with Edgar Stringer",
+      "url": "https://sheffieldyogacentre.as.me/NewYear27",
+      "description": "Two days of online Iyengar workshops to open the year, bookable as a pair or as single days.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": "2027-01-02",
+      "end_date": "2027-01-03",
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/655ddad9df998a39f46ed220/17f7848a-bfdb-4142-86ca-ca018cea6e62/Front+Hall.jpg"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "yoga-school",
+    "rank": 724,
+    "hub": null,
+    "tier_evidence": "No YouTube channel linked on the site; Instagram and Facebook not fetched; no readable followers → local_hero",
+    "email": "yes",
+    "email_source": "https://sheffieldyogacentre.co.uk/find-us",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 8 source(s)",
+    "flags": [
+      "Lead from Iyengar Yoga (UK)'s own list of Iyengar Yoga Centres (iyengaryoga.org.uk/group-categories/iyengar-yoga-centre/), whose group page links sheffieldyogacentre.co.uk. Squarespace robots.txt: AI crawlers share the * group, which disallows only /config, /api/ and similar paths. images.squarespace-cdn.com robots.txt returns 404 (no restrictions).",
+      "Workshop prices and the class block prices are shown only in the Acuity booking pages (sheffieldyogacentre.as.me), which were not opened; 'Contact for pricing'. The two workshop URLs are the booking links on the centre's own events page.",
+      "The site also links pages on www.sheffieldyogacentre.com (family yoga, complaints policy); not opened.",
+      "Email info@sheffieldyogacentre.co.uk appears as a mailto link across the site (studio inbox).",
+      "Iyengar teacher training runs through Iyengar Yoga (UK)'s mentoring scheme; the team page says some teachers trained at the centre with Frances Homewood, but no training course is advertised.",
+      "Possible future listings: Frances Homewood (founder), Anna Cowlishaw, Carolyn Usher (directors); teachers Emma Norminton, Rachel Henthorn, Pascale Vacher, Nidhi Nanda.",
+      "No Spiritpedia teachers are named on the site, so the teachers file has no links.",
+      "Regional: Sheffield, South Yorkshire; Spiritpedia has few listings in the north of England.",
+      "UK listing: the brief prefers schools outside the US, UK and Australia; included because the Iyengar lineage list read here is the UK one."
+    ],
+    "left_out": [
+      "Therapeutic and restorative-for-conditions classes (mentioned on the events page) and 'Winter Restorative and Social' (6 Dec 2026): therapeutic framing or social event.",
+      "Family Yoga Club and Teachers Class: monthly, on another domain or for teachers only.",
+      "Room hire: not a teaching item.",
+      "Course page notes about posture and aches in student quotes; not repeated."
+    ]
+  },
+  "images_final": true
+}

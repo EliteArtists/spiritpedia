@@ -1,0 +1,95 @@
+{
+  "healer": {
+    "healer_slug": "iyoga-iyengar-yoga-centrum-antwerpen",
+    "location_source": "https://iyoga.be/contact-iyoga",
+    "create": {
+      "name": "iYoga – Iyengar Yoga Centrum Antwerpen",
+      "bio": "iYoga is the Iyengar Yoga Centrum of Antwerp, opened in 2002 by Ann Brosens in the Zuid district. The studio is a 60-square-metre room hidden behind the houses of Verschansingstraat, in what was once part of the city's horse stables, and its brick walls and quiet make it a calm refuge from the busy streets outside.\n\nAnn came to yoga by an unusual road. She trained as a musician at the Lemmens Institute in Leuven and taught classical guitar at the city's conservatory for around ten years, then met the Iyengar method in 1995 during a sabbatical at Gangotri, near the source of the Ganges. She retrained in Amsterdam, Cologne and Pune, holds the Level 3 certificate and still teaches daily. She works with a team that includes Ilythyia De Ligniere, a former dancer and choreographer who has taught here since 2010 and co-founded the non-profit Praan with Ann, along with several other certified teachers.\n\nThe timetable offers general classes of 60 to 120 minutes, pranayama, graded Level 1, 2 and 3 sessions and a monthly theme class, most of them streamed live as well as taught in the studio. A first basic or general class is free.",
+      "tier": "local_hero",
+      "entity_type": "school",
+      "availability": "local_online",
+      "founded_year": 2002,
+      "city": "Antwerp",
+      "country": "Belgium",
+      "subjects": [
+        "yoga",
+        "breathwork"
+      ],
+      "website_url": "https://iyoga.be/",
+      "booking_url": "https://www.momoyoga.com/iyengar-yoga-antwerpen/schedule",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "info@iyoga.be",
+      "image_urls": [
+        "https://images.squarespace-cdn.com/content/v1/5580062ae4b06c3bc95626d4/1500454751142-MG6AV0TRVPXWY7R6IHIU/DSC_1579-zw.jpg?format=1000w",
+        "https://images.squarespace-cdn.com/content/v1/5580062ae4b06c3bc95626d4/1439454213876-0DO3SN5NIUU93KIXMQKM/DSC_1581-zw.jpg?format=1000w"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Iyengar yoga classes in Antwerp and live online",
+      "url": "https://iyoga.be/lessen-prijzen",
+      "description": "A weekly timetable of general classes from 60 to 120 minutes, pranayama, and graded Level 1, 2 and 3 sessions, most taught hybrid: in the studio and streamed live at the same time. The first basic or general class is free; booking is through Momoyoga.",
+      "price": "Proefles gratis; losse les 60min 15€, 90min 20€, 120min 30€, 150min 35€; 10 x 90min 150€",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga",
+        "breathwork"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/5580062ae4b06c3bc95626d4/1500454751142-MG6AV0TRVPXWY7R6IHIU/DSC_1579-zw.jpg?format=1000w"
+    },
+    {
+      "title": "Christmas workshop with Ann Brosens",
+      "url": "https://iyoga.be/workshops",
+      "description": "A two-hour Sunday morning workshop with the centre's founder, one of the special sessions the studio adds alongside its monthly theme classes and graded Level 1–3 sessions.",
+      "price": "30€ via losse les / 27€ via 5 x 120min / 23€ via 10 x 120min / Opleidingskaart",
+      "product_type": "course",
+      "start_date": "2026-12-27",
+      "end_date": "2026-12-27",
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/5580062ae4b06c3bc95626d4/1439454070367-16L9WV3Z55FFUQGXFSYX/DSC_1572-zw.jpg"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "yoga-school",
+    "rank": 763,
+    "hub": null,
+    "tier_evidence": "No YouTube or social links on the site; no readable followers → local_hero",
+    "email": "yes",
+    "email_source": "https://iyoga.be/contact-iyoga",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 8 source(s)",
+    "flags": [
+      "Lead from the Belgian Iyengar Yoga Association's own centre list (iyengaryoga.be/en/find-iyengar-yoga-centre). iyoga.be robots.txt and images.squarespace-cdn.com robots.txt allow us.",
+      "Email info@iyoga.be is a plain mailto on every page; no contact form.",
+      "The centre sells recorded classes as Vimeo On Demand titles (vimeo.com/ondemand/basisles and others), but vimeo.com's robots.txt disallows ClaudeBot, Claude-Web and anthropic-ai, so these weren't opened and no prices are known; left out.",
+      "Some classes are framed around health ('Gezond ouder worden' – healthy ageing; 'Gezond ademen'; a November theme class on the immune system); left out and not named in the bio.",
+      "The workshops page lists a New Year workshop dated 01/01/26–03/01/26, presumably a typo for 2027; left out because the date is unclear.",
+      "Possible future listings: Ann Brosens (Level 3, founder), Ilythyia De Ligniere.",
+      "No Spiritpedia teachers are named on the site, so the teachers file has no links.",
+      "Regional: Antwerp; Belgium is thin on Spiritpedia.",
+      "Thin: 2 offerings."
+    ],
+    "left_out": [
+      "Vimeo On Demand video classes: vimeo.com blocks Claude in robots.txt.",
+      "'Gezond ouder worden', 'Gezond ademen' and the 'Immuunsysteem' theme class: health framing.",
+      "Monthly theme classes and Level 1/2/3 sessions on /workshops: share one page with the Christmas workshop, so only one item from that page.",
+      "New Year workshop: dates printed as 2026, unclear.",
+      "Praan vzw: no separate offering."
+    ]
+  },
+  "images_final": true
+}

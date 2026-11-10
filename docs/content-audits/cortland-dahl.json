@@ -1,0 +1,243 @@
+{
+  "healer": {
+    "healer_slug": "cortland-dahl",
+    "location_source": "https://cortlanddahl.com/about",
+    "create": {
+      "name": "Dr. Cortland Dahl",
+      "bio": "Cortland Dahl is an American meditation teacher, translator of Tibetan Buddhist texts and contemplative scientist, and the co-founder and executive director of Tergar International, the worldwide network of meditation groups linked to Yongey Mingyur Rinpoche. He first turned to meditation as a student in the early 1990s, practised in Japan, Thailand and Malaysia, took a master's in Buddhist Studies at Naropa University, and then spent about eight years in Tibetan communities in Nepal and India. There he learned Tibetan, trained under three Tibetan lamas, among them Chatral Rinpoche and Mingyur Rinpoche, spent over a year in solitary retreat, later publishing twelve volumes of translations with a focus on Dzogchen.\n\nWith Mingyur Rinpoche he helped shape the Joy of Living meditation programme. In 2010 he moved to Madison, Wisconsin, to work with the neuroscientist Richard Davidson, earned one of the first doctorates in contemplative science there, and went on to design the Healthy Minds Program app. His books are A Meditator's Guide to Buddhism and, written with Davidson, Born to Flourish, which treats wellbeing as a trainable skill, and the two co-host the Dharma Lab podcast. He teaches workshops and retreats in Madison and further afield, and splits his time between Wisconsin and northern Minnesota with his wife Kasumi.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local_online",
+      "city": "Madison, Wisconsin",
+      "country": "United States",
+      "subjects": [
+        "meditation",
+        "conscious-science",
+        "non-duality"
+      ],
+      "website_url": "https://cortlanddahl.com/",
+      "booking_url": "https://cortlanddahl.com/events",
+      "youtube_url": "https://www.youtube.com/@dharmalabco",
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": null,
+      "image_urls": [
+        "https://cortlanddahl.com/assets/cort-headshot-g_G5NasM.png"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "omega-institute",
+      "role": "instructor"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Are You Meta-Aware?",
+      "url": "https://www.youtube.com/watch?v=0p7OGrj6wb0",
+      "subjects": [
+        "meditation",
+        "conscious-science"
+      ],
+      "channel": "Dharma Lab: Dr. Richie Davidson & Dr Cortland Dahl"
+    },
+    {
+      "title": "Guided Meditation - Practice Hour on How Meditation Practice Maps to the Four Pillars of Wellbeing",
+      "url": "https://www.youtube.com/watch?v=galIri4XNCg",
+      "subjects": [
+        "meditation"
+      ],
+      "channel": "Dharma Lab: Dr. Richie Davidson & Dr Cortland Dahl"
+    },
+    {
+      "title": "Why Can't I Stay Focused?!",
+      "url": "https://www.youtube.com/watch?v=elJ3vqhjM9s",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "channel": "Dharma Lab: Dr. Richie Davidson & Dr Cortland Dahl"
+    },
+    {
+      "title": "Does Meditation Really Change Your Brain?",
+      "url": "https://www.youtube.com/watch?v=3dk-IYR_tbo",
+      "subjects": [
+        "conscious-science",
+        "meditation"
+      ],
+      "channel": "Dharma Lab: Dr. Richie Davidson & Dr Cortland Dahl"
+    },
+    {
+      "title": "The Shadow Side of Meditation",
+      "url": "https://www.youtube.com/watch?v=B38W_nS3PcY",
+      "subjects": [
+        "meditation",
+        "shadow-work"
+      ],
+      "channel": "Dharma Lab: Dr. Richie Davidson & Dr Cortland Dahl"
+    },
+    {
+      "title": "The Neuroscience of Gratitude - How Moments of Gratitude Reshape Your Mind",
+      "url": "https://www.youtube.com/watch?v=tyymZmzg2Yw",
+      "subjects": [
+        "conscious-science",
+        "mindfulness"
+      ],
+      "channel": "Dharma Lab: Dr. Richie Davidson & Dr Cortland Dahl"
+    },
+    {
+      "title": "The Shocking Brain Changes After Less Than 3 Hours of Meditation",
+      "url": "https://www.youtube.com/watch?v=nEww5yz7MK8",
+      "subjects": [
+        "conscious-science",
+        "meditation"
+      ],
+      "channel": "10% Happier"
+    }
+  ],
+  "books": [
+    {
+      "title": "A Meditator's Guide to Buddhism",
+      "slug": "a-meditators-guide-to-buddhism",
+      "author": "Cortland Dahl",
+      "asin": "1645470970",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "A practice-led tour of the Buddhist path, from the Four Noble Truths through compassion and buddha nature to emptiness, with personal stories and simple meditations along the way.",
+      "subjects": [
+        "meditation",
+        "ancient-wisdom"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1645470970.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "Born to Flourish",
+      "slug": "born-to-flourish",
+      "author": "Richard J. Davidson and Cortland Dahl",
+      "asin": "1668066238",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "Written with the neuroscientist Richard Davidson, it argues from research and contemplative practice that wellbeing can be learned, and sets out a four-part framework with short daily exercises.",
+      "subjects": [
+        "conscious-science",
+        "meditation"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1668066238.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "Deity, Mantra and Wisdom",
+      "slug": "deity-mantra-and-wisdom",
+      "author": "Dharmachakra Translation Committee (Cortland Dahl, volume editor and co-translator)",
+      "asin": "1559394978",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "Classic Tibetan writings on development-stage meditation in Buddhist tantra, translated with commentary; he edited the volume and shared the translation.",
+      "subjects": [
+        "ancient-wisdom",
+        "meditation"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1559394978.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "Middle Beyond Extremes",
+      "slug": "middle-beyond-extremes",
+      "author": "Dharmachakra Translation Committee (Cortland Dahl, volume editor and co-translator)",
+      "asin": "155939501X",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "Maitreya's Madhyantavibhanga, a key Mahayana text on the middle way, in English together with two Tibetan commentaries, by Khenpo Shenga and by Ju Mipham.",
+      "subjects": [
+        "ancient-wisdom",
+        "non-duality"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/155939501X.01._SCLZZZZZZZ_.jpg"
+    }
+  ],
+  "courses": [],
+  "free_resources": [
+    {
+      "title": "Open Awareness (guided meditation)",
+      "url": "https://soundcloud.com/tergar/resting-in-open-awareness",
+      "description": "A twenty-minute guided practice in letting effort go and simply resting in wide, open presence, shared on his site from Tergar's recordings.",
+      "featured": true,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation",
+        "non-duality"
+      ],
+      "image": "https://cortlanddahl.com/assets/cort-headshot-g_G5NasM.png"
+    },
+    {
+      "title": "Awareness and the Senses (guided meditation)",
+      "url": "https://soundcloud.com/tergar/cortland-dahl-a-guided-meditation-on-awareness-and-the-senses",
+      "description": "A guided session that uses sounds and sights as supports for steady, mindful awareness.",
+      "featured": false,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://cortlanddahl.com/assets/cort-headshot-g_G5NasM.png"
+    },
+    {
+      "title": "Guided Meditation on Awareness of Thoughts",
+      "url": "https://soundcloud.com/tergar/cortland-dahl-guided-meditation-on-awareness-of-thoughts",
+      "description": "A recorded practice in noticing thoughts as they come and go without being carried off by them.",
+      "featured": false,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://cortlanddahl.com/assets/cort-headshot-g_G5NasM.png"
+    },
+    {
+      "title": "Tergar Madison Thursday Night Talks",
+      "url": "https://soundcloud.com/tergar/sets/tergar-madison-thursday-night",
+      "description": "A free set of weekly talks recorded at Tergar Madison on meditation, the mind and Buddhist psychology in everyday life.",
+      "featured": false,
+      "resource_type": "workshop",
+      "subjects": [
+        "meditation",
+        "ancient-wisdom"
+      ],
+      "image": "https://cortlanddahl.com/assets/cort-headshot-g_G5NasM.png"
+    }
+  ],
+  "sprint": {
+    "sprint": "pipelines-3",
+    "hub": "omega",
+    "rank": 449,
+    "hub_url": "https://www.eomega.org/people/cortland-dahl",
+    "tier_evidence": "YouTube @dharmalabco 10,100 subscribers (Data API, 10 Nov 2026), but it is a shared channel co-hosted with Richard Davidson, so not counted by the rule; no solo channel; Instagram (@drcortlanddahl) and X not read (off limits). Own readable total 0 (10.1k with the shared channel) → local_hero. Counts unreadable for main accounts.",
+    "email": "contact form",
+    "email_source": null,
+    "contact_form_url": "https://cortlanddahl.com/consulting",
+    "bio_check": "OK: no 8-word runs against 2 source(s)",
+    "flags": [
+      "Omega named on: https://cortlanddahl.com/events (From Doing to Being, 3-day retreat at Omega Institute, Rhinebeck, 9-11 Oct 2026, now past). Omega page not opened: eomega.org returns 403 to us (6 Nov 2026).",
+      "His site is a JavaScript app: page text, events, resources and book links were read from the site's own published script bundle (cortlanddahl.com/assets/index-C75au3Dd.js), which renders the visible pages. Owner may want to confirm this is acceptable.",
+      "No published email: info@ and inquiries@cortlanddahl.com appear only in the forms' error messages, so not used; contact forms on /consulting and /speaking.",
+      "Possible link: Tergar (already a Spiritpedia organisation listing, per the 9 Nov night sprint) - he is its co-founder and executive director; no teaches_at link added as it is not a hub slug. Mingyur Rinpoche may also be listed.",
+      "Videos: from Dharma Lab (co-hosted with Richard Davidson; speaker per episode not confirmed) and one 10% Happier interview with Davidson and Dahl.",
+      "Scope: he is also a research scientist (Center for Healthy Minds, UW-Madison); listed as a meditation teacher and translator, which his site leads with.",
+      "Books: Meditator's Guide ISBN from the bookshop.org and Amazon links on his site; translations' ISBN-13s from the shambhala.com links on his site, converted; Born to Flourish ASIN from the Amazon link on flourishingbook.com (his book site). None confirmed elsewhere.",
+      "Photo: his headshot from his own site (single person, matches the about-page photos)."
+    ],
+    "left_out": [
+      "Events: From Doing to Being at Omega (9-11 Oct 2026) and at Tergar Madison (17 Oct 2026) have passed; no later events listed.",
+      "Healthy Minds Program app (free): product of Healthy Minds Innovations, not his own teaching page.",
+      "Dharma Lab newsletter/podcast: hosted on substack.com (off limits).",
+      "Other translations (Vajra Wisdom, Luminous Essence, The Ornament of Reason, Lalitavistara Sutra): no ISBN on his site.",
+      "Videos with anxiety or panic titles and Shorts."
+    ]
+  },
+  "images_final": true
+}

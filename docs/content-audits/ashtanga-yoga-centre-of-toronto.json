@@ -1,0 +1,92 @@
+{
+  "healer": {
+    "healer_slug": "ashtanga-yoga-centre-of-toronto",
+    "location_source": "https://www.ashtangatoronto.com/about/",
+    "create": {
+      "name": "Ashtanga Yoga Centre of Toronto",
+      "bio": "The Ashtanga Yoga Centre of Toronto, known as AYCT, has taught Ashtanga in the Mysore tradition since 2008, when it opened as a welcoming base for the city's Ashtanga community. Its Mysore programme, which the centre counts among the largest in the world, is led by David Robson and Jelena Vesić, both Level 2 authorised teachers. They are known for supporting long-term and advanced students, and they are just as keen to introduce the method to people trying it for the first time, for whom they also publish online resources.\n\nThe practice links the breath to a sequence of postures that grows steadily more demanding, and the centre puts its trust in consistent practice and steady teaching, holding that rigour can sit alongside a careful, safe approach. Mysore practice starts early on weekday mornings and a led primary class runs on Saturdays, with no Mysore class on new and full moon days, which the centre lists in advance. Newcomers can begin with an introductory workshop for up to 15 people that teaches the fundamentals slowly, or with a low-cost first week of unlimited classes. The studio is on Yonge Street, a few blocks north of Lawrence subway station.",
+      "tier": "local_hero",
+      "entity_type": "school",
+      "founded_year": 2008,
+      "availability": "local",
+      "city": "Toronto",
+      "country": "Canada",
+      "subjects": [
+        "yoga",
+        "breathwork"
+      ],
+      "website_url": "https://www.ashtangatoronto.com/",
+      "booking_url": "https://www.ashtangatoronto.com/fees/",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "info@ashtangatoronto.com",
+      "image_urls": [
+        "https://www.ashtangatoronto.com/wp-content/uploads/2017/11/mysore-room.jpg",
+        "https://www.ashtangatoronto.com/wp-content/uploads/2025/06/AYCT-new-1024x768.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Monthly memberships and class passes",
+      "url": "https://www.ashtangatoronto.com/fees/",
+      "description": "Monthly memberships (limited or unlimited access) and class passes for the centre's Mysore and led classes, plus a one-week introductory offer for first-time students in the Toronto area; student and senior rates are sold in the studio.",
+      "price": "Introductory Special $49; Limited Access $210 per month; Unlimited Access $235 per month; Student & Senior Access $175 per month; Single Pass $35; 1 Month Unlimited $260; 10 Class Card $280; 20 Class Card $485",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://www.ashtangatoronto.com/wp-content/uploads/2025/06/fees-new-r1.jpg"
+    },
+    {
+      "title": "Intro Workshop",
+      "url": "https://www.ashtangatoronto.com/new-to-ayct/",
+      "description": "An introduction to the fundamentals of Ashtanga, taught slowly and thoroughly to a group of no more than 15 students. Dates are given on the centre's schedule.",
+      "price": "$160",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga",
+        "breathwork"
+      ],
+      "image": "https://www.ashtangatoronto.com/wp-content/uploads/2017/04/New-to-Yoga.jpg"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "yoga-school",
+    "rank": 1018,
+    "hub": null,
+    "tier_evidence": "No YouTube channel linked from the pages read; Instagram and Facebook not fetched; no readable followers → local_hero.",
+    "email": "yes",
+    "email_source": "https://www.ashtangatoronto.com/about/",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 7 source(s)",
+    "flags": [
+      "Lead from the Sharath Yoga Centre authorised-teacher list (David Robson and Jelena Vesić, Ashtanga Yoga Centre of Toronto); facts from the school's own site (www.ashtangatoronto.com; robots.txt allows us).",
+      "Prices are shown with '$' and no currency code, copied as published.",
+      "The Teachers and Workshops pages were empty when read; the only dated content is the 2026 moon-day calendar, so the listing rests on the fees and New to AYCT pages (two offerings: fees and the intro workshop; the $49 intro week is folded into the fees item because it shares the New to AYCT link).",
+      "David and Jelena's beginners' bundle is on www.davidandjelenayoga.com, whose robots.txt disallows ClaudeBot, anthropic-ai and Claude-Web, so it was not fetched and is left out.",
+      "The about page describes the practice as detoxifying and anxiety-relieving; that wording is kept out of the bio and items (health rule).",
+      "Photos: the Mysore room during a class (2017 upload) and the studio's back-alley entrance with its sign (2025 upload); a map image was not used.",
+      "David Robson is already mentioned in another plan (mysore-room.json) but has no Spiritpedia listing; no teachers file links.",
+      "Possible future listings: David Robson, Jelena Vesić (Level 2 authorised).",
+      "Regional: Toronto; Spiritpedia has few Ashtanga schools in Canada."
+    ],
+    "left_out": [
+      "David and Jelena's online beginners' resources: robots.txt on their own site blocks Claude agents.",
+      "Student and senior class-pass rates (in-studio only); mat and towel rental."
+    ]
+  },
+  "images_final": true
+}

@@ -24,9 +24,10 @@ order, one at a time.
    - a management, agent, booking, press or business address for them;
    - a centre's or organisation's general inbox, **only if they founded or
      co-lead it** (say which in `email_kind` and `notes`);
-   - an address shown as text with "[at]"/"(dot)" or behind Cloudflare email
-     protection (`data-cfemail`: decode the hex, XOR with the first byte).
-     Say so in `notes`.
+   - an address shown as text with "[at]"/"(dot)". Say so in `notes`.
+   - Never decode an address behind Cloudflare email protection
+     (`data-cfemail`) or built by a script (owner, 10 Nov 2026): use the
+     contact form instead.
 2. **No email anywhere?** Record their own **contact form** URL: a page with a
    message form, or a booking or enquiry form that reaches them or their
    team. A newsletter sign-up is not a contact form.
@@ -39,8 +40,8 @@ order, one at a time.
   (RocketReach, ContactOut, Hunter and the like).
 
 The address must appear on the source page, exactly as you record it. Save
-that page as `.html` (curl) in your work folder. If you decoded it, also
-write the decoded address and the encoded string in `notes`.
+that page as `.html` (curl) in your work folder. (Decoding protected
+addresses is not allowed.)
 
 **Wrong person risk.** Make sure the page is about **this** listing (same
 person, same work). For a common name, check the photo, the books or the
@@ -119,7 +120,7 @@ Write `docs/content-audits/email-pass-2026-11-05/results/<slug>.json`:
   "saved_source": "work-folder path of the saved .html, or null",
   "contact_form_url": "their contact form URL (also when an email was found, if there is one), or null",
   "checked": ["every URL you fetched or tried, including blocked ones (say 'robots block' or 'HTTP 403')"],
-  "notes": "short: decoding, which centre, why the form counts, anything odd",
+  "notes": "short: which centre, why the form counts, anything odd",
   "doubtful": "null, or the reason a person should look at it (wrong-person risk, an address that may be a shop or a general company inbox, a form that may not reach them, a site that looks hacked or abandoned)"
 }
 ```

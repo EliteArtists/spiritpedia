@@ -1,0 +1,88 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 1312,
+    "healer_slug": "kanshoji-zen-monastery"
+  },
+  "rows": [
+    {
+      "table": "videos",
+      "id": 9511,
+      "slug": "zazen-online-october-24th-2026-11h00",
+      "title": "Zazen Online October 24th 2026 11h00"
+    },
+    {
+      "table": "videos",
+      "id": 9512,
+      "slug": "zazen-online-october-10th-2026-11h00",
+      "title": "Zazen Online October 10th 2026 11h00"
+    },
+    {
+      "table": "videos",
+      "id": 9513,
+      "slug": "zazen-online-september-26th-2026-11h00",
+      "title": "Zazen Online September 26th 2026 11h00"
+    },
+    {
+      "table": "videos",
+      "id": 9514,
+      "slug": "zazen-online-june-6th-2026-11h00",
+      "title": "Zazen Online June 6th 2026 11h00"
+    },
+    {
+      "table": "videos",
+      "id": 9515,
+      "slug": "zazen-online-february-14th-2026-11h00",
+      "title": "Zazen Online February 14th 2026 11h00"
+    },
+    {
+      "table": "videos",
+      "id": 9516,
+      "slug": "zazen-online-december-13th-2025-11h00",
+      "title": "Zazen Online December 13th 2025 11h00"
+    },
+    {
+      "table": "videos",
+      "id": 9517,
+      "slug": "une-grande-cloche-bonsho-pour-kanshoji",
+      "title": "Une grande cloche (Bonshō) pour Kanshōji"
+    },
+    {
+      "table": "courses",
+      "id": "4337af3d-5d9c-4c9b-b84c-7b6e798d3710",
+      "slug": "retraite-de-leveil-du-bouddha",
+      "title": "Retraite de l’Eveil du Bouddha"
+    },
+    {
+      "table": "courses",
+      "id": "ce1fa5c9-0b76-45d3-9782-e56ef14b631d",
+      "slug": "retraite-dhiver",
+      "title": "Retraite d'hiver"
+    },
+    {
+      "table": "courses",
+      "id": "46515e1e-ef28-403b-8539-facaf41be704",
+      "slug": "weekend-decouverte-de-fevrier",
+      "title": "Weekend découverte de février"
+    },
+    {
+      "table": "courses",
+      "id": "309054bd-a58a-41cd-abb7-a2e98c12658a",
+      "slug": "seminaire-shobogenzo-2027",
+      "title": "Séminaire Shōbōgenzō 2027"
+    },
+    {
+      "table": "free_resources",
+      "id": "bd25ee48-e543-45a9-9d43-c313810e0bea",
+      "slug": "kusen",
+      "title": "Kusen"
+    },
+    {
+      "table": "free_resources",
+      "id": "62a6efff-b20e-4c0e-9e1c-7d90aec0e747",
+      "slug": "teisho-et-conferences",
+      "title": "Teishō et conférences"
+    }
+  ],
+  "at": "2026-11-10T17:59:24.709Z"
+}

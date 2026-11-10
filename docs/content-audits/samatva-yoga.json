@@ -1,0 +1,93 @@
+{
+  "healer": {
+    "healer_slug": "samatva-yoga",
+    "location_source": "https://samatvayoga.com.br/contato/",
+    "create": {
+      "name": "Samatva Yoga",
+      "bio": "Samatva Yoga is an Ashtanga school on the island of Florianópolis in southern Brazil, founded in 2012 in Lagoa da Conceição by Ana Cláudia Lopes, known as Kaká. She had already taught Ashtanga for six years when she decided the island needed a school devoted to the method as it is taught in Mysore. She holds Level 2 authorisation from the Sharath Yoga Centre, has spent many seasons in India studying with R. Sharath Jois, and also studies Ayurveda, Vedic chanting and Vedanta. The school says it is the only one in Santa Catarina with teachers authorised by the Mysore institute.\n\nThe main shala in Lagoa da Conceição was joined by a second in the city centre in 2017 and a third, with a garden and café, in Novo Campeche in the south of the island in 2020. Mysore-style practice runs every weekday morning, noon and evening, with led classes on Saturdays, and beginners are welcome in every weekday session. Yin yoga and Sangraha, a contemporary approach developed by Eddie Stern, sit alongside Ashtanga.\n\nSince 2021 Samatva has also taught online, with live daily practice and study programmes on meditation, pranayama, mantra, mythology and the Yoga Sutra, and it regularly hosts visiting senior Ashtanga teachers for week-long workshops.",
+      "tier": "local_hero",
+      "entity_type": "school",
+      "availability": "local_online",
+      "founded_year": 2012,
+      "city": "Florianópolis",
+      "country": "Brazil",
+      "subjects": [
+        "yoga",
+        "meditation"
+      ],
+      "website_url": "https://samatvayoga.com.br/",
+      "booking_url": "https://samatvayoga.com.br/planos/",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "contato@samatvayoga.com.br",
+      "image_urls": [
+        "https://samatvayoga.com.br/wp-content/uploads/2020/05/n-Lagoa-3-1024x684.jpg",
+        "https://samatvayoga.com.br/wp-content/uploads/2020/05/n-lagoa-2-1024x684.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Samatva Yoga class plans (in person and online)",
+      "url": "https://samatvayoga.com.br/planos/",
+      "description": "Monthly, quarterly, half-yearly and annual plans for Mysore-style Ashtanga, led classes, yin and Sangraha at the three Florianópolis shalas or in the virtual shala, with talks and special classes included.",
+      "price": "Presencial mensal: 2x na semana R$ 378,00; Acesso Livre R$ 418,00. Online mensal: Acesso Livre R$ 396,00",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://samatvayoga.com.br/wp-content/uploads/2026/02/d-planos-scaled-1.jpg"
+    },
+    {
+      "title": "Ashtanga Yoga com Kino MacGregor & Tim Feldmann",
+      "url": "https://samatvayoga.com.br/evento/yoga-com-tim-e-kino/",
+      "description": "Six days at the Lagoa da Conceição shala with the founders of Miami Life Center: daily practice, meditation and theory sessions in morning and afternoon blocks.",
+      "price": "R$ 1.460,00 via PIX; 10x de R$ 168,00 (total R$ 1.680,00)",
+      "product_type": "course",
+      "start_date": "2026-12-08",
+      "end_date": "2026-12-13",
+      "subjects": [
+        "yoga",
+        "meditation"
+      ],
+      "image": "https://samatvayoga.com.br/wp-content/uploads/2026/01/mobile-eventos-.jpg"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "yoga-school",
+    "rank": 769,
+    "hub": null,
+    "tier_evidence": "YouTube link youtube.com/c/AshtangaYogaFloripa returned 'No channel found' via the Data API (scripts/yt.mjs, 10 Nov 2026); Instagram not fetched → local_hero",
+    "email": "yes",
+    "email_source": "https://samatvayoga.com.br/ashtanga-yoga-in-florianopolis/",
+    "contact_form_url": "https://samatvayoga.com.br/contato/",
+    "bio_check": "OK: no 8-word runs against 11 source(s)",
+    "flags": [
+      "Lead from the Sharath Yoga Centre authorised-teacher directory (Brazil). samatvayoga.com.br robots.txt (* group) allows all but wp-admin, search and login; photos are on the school's own host.",
+      "Email contato@samatvayoga.com.br is a plain mailto on the English page; the contact page has a form and WhatsApp.",
+      "Founding year: the founder section and English page say 2012; the opening paragraph of Sobre nós says 2011. Used 2012.",
+      "Teachers file links Kino MacGregor (instructor) on the evidence of the December 2026 workshop page; she is a visiting teacher, not resident. Owner may prefer to drop the link.",
+      "Online programmes include an Ayurveda course framed around 'health and longevity'; left out. A mindfulness course started on 9 Nov (before the 12 Nov cut-off); left out.",
+      "Some home-page wording calls Samatva 'the biggest reference among yoga schools in Latin America'; not repeated.",
+      "Possible future listings: Ana Cláudia Lopes (Kaká); also Monica Vianna, Valentina Asmus.",
+      "Regional: Florianópolis; southern Brazil is thin on Spiritpedia."
+    ],
+    "left_out": [
+      "Formação em Yin Yoga and Wade Oakley workshop: 'Aguarde novas datas'.",
+      "Online study programmes (O Yoga e a Mente, Introdução ao Pranayama, Mindfulness): already started.",
+      "Ayurveda programme: health framing; no dates.",
+      "Aula experimental R$80,00: no page of its own."
+    ]
+  },
+  "images_final": true
+}

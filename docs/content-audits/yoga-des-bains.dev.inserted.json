@@ -1,0 +1,28 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 1321,
+    "healer_slug": "yoga-des-bains"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "c2821a7b-0519-43b4-ac3b-75af694826ed",
+      "slug": "horaires-tarifs-weekly-iyengar-classes",
+      "title": "Horaires & Tarifs (weekly Iyengar classes)"
+    },
+    {
+      "table": "courses",
+      "id": "3bae2293-7505-4b04-9831-be911ae26324",
+      "slug": "week-end-de-hatha-yoga-traditionnel-avec-marina-bergamin-21-22-novembre-2026",
+      "title": "Week-end de Hatha Yoga traditionnel avec Marina Bergamin – 21-22 novembre 2026"
+    },
+    {
+      "table": "courses",
+      "id": "dd14dcc1-a3f9-40cf-be80-6ef5b0ebc403",
+      "slug": "formation-du-pratiquant-2027-avec-marina-bergamin",
+      "title": "Formation du pratiquant 2027 avec Marina Bergamin"
+    }
+  ],
+  "at": "2026-11-10T18:24:09.358Z"
+}

@@ -1,0 +1,40 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 1244,
+    "healer_slug": "sivananda-yoga-japan"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "b1ff96a4-b7aa-450d-ae14-738be7ff9508",
+      "slug": "beginners-course-5-sessions",
+      "title": "はじめてのシヴァーナンダヨーガコース (beginners' course, 5 sessions)"
+    },
+    {
+      "table": "courses",
+      "id": "5b77a4a8-215e-40ed-aa85-6da172cc0c33",
+      "slug": "1-one-month-class-pass",
+      "title": "1ヵ月パス (one-month class pass)"
+    },
+    {
+      "table": "courses",
+      "id": "90843c1a-3a20-4532-9aa4-c674dc48f9a8",
+      "slug": "annual-membership-card",
+      "title": "年間会員 (annual membership card)"
+    },
+    {
+      "table": "courses",
+      "id": "be80d460-3156-4eea-ab10-75b7ee5b9ae7",
+      "slug": "ttc-teacher-training-with-japanese-interpretation",
+      "title": "TTC ヨガ講師養成コース (teacher training with Japanese interpretation)"
+    },
+    {
+      "table": "free_resources",
+      "id": "4a8f78fb-3cd9-494e-8844-d7694154f1ae",
+      "slug": "free-open-house",
+      "title": "オープンハウス (free open house)"
+    }
+  ],
+  "at": "2026-11-10T15:45:37.198Z"
+}

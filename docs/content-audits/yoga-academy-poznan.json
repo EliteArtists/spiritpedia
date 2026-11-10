@@ -1,0 +1,95 @@
+{
+  "healer": {
+    "healer_slug": "yoga-academy-poznan",
+    "location_source": "https://yogaacademy.pl/kontakt/",
+    "create": {
+      "name": "Yoga Academy Poznań",
+      "bio": "Yoga Academy is a yoga school in the centre of Poznań, housed in an old tenement building on Święty Marcin. It opened in 2016, celebrating its tenth birthday with an open day in 2026, and was founded by Mateusz Deker, who met yoga as a child, finished his first teacher course at eighteen and later spent nine months in Mysore practising under R. Sharath Jois, who authorised him to teach both the Primary and Intermediate series of Ashtanga.\n\nAshtanga sits at the heart of the timetable, taught both as a gentle weekly introduction to the Primary Series and as Mysore-style practice in which each student follows the sequence at their own pace with individual guidance. Around it the school offers vinyasa, hatha and yin classes, meditation, courses for complete beginners, themed workshops and practice trips.\n\nThrough its sister project, Yoga Teachers' Academy, the school has trained yoga teachers since 2020, with a 200-hour foundation course, a 300-hour advanced course and shorter further-training modules in subjects such as the Ashtanga second series, yoga nidra and meditation. Ania Olszewska, who helps run the teacher-training programme and is a practising Tibetan Buddhist who trained in Dharamsala, teaches meditation and breathwork and leads an online meditation course rooted in that tradition.",
+      "tier": "local_hero",
+      "entity_type": "school",
+      "availability": "local_online",
+      "founded_year": 2016,
+      "city": "Poznań",
+      "country": "Poland",
+      "subjects": [
+        "yoga",
+        "meditation"
+      ],
+      "website_url": "https://yogaacademy.pl/",
+      "booking_url": "https://yogaacademy.pl/cennik/",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "info@yogaacademy.pl",
+      "image_urls": [
+        "https://yogaacademy.pl/wp-content/uploads/2023/02/Joga-Poznan-Yoga-Academy.jpg",
+        "https://yogaacademy.pl/wp-content/uploads/2022/02/DSC01268-2-1024x682.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "200-hour yoga teacher training (Nauczycielski kurs jogi)",
+      "url": "https://yogateachersacademy.pl/kurs-jogi-podstawowy/",
+      "description": "Yoga Teachers' Academy's foundation teacher course, taught mostly in person at the Poznań studio over monthly weekend sessions from February to September 2027, covering asana and alignment, anatomy and physiology, teaching method and yoga philosophy, and ending with exams.",
+      "price": "9500 PLN (Zaliczka 1500 PLN)",
+      "product_type": "course",
+      "start_date": "2027-02-26",
+      "end_date": "2027-09-12",
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://yogateachersacademy.pl/wp-content/uploads/2023/09/kurs-nauczyciela-jogi.png"
+    },
+    {
+      "title": "Yoga Academy class passes",
+      "url": "https://yogaacademy.pl/cennik/",
+      "description": "Class passes and open memberships for Ashtanga, vinyasa, hatha, yin and meditation classes at the Święty Marcin studio, including a two-week welcome pass for beginners.",
+      "price": "2 tygodnie PRIME OPEN 100 zł; 1 miesiąc open 290 zł; jednorazowe wejście 50 zł",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga",
+        "meditation"
+      ],
+      "image": "https://yogaacademy.pl/wp-content/uploads/2023/02/Joga-Poznan-Yoga-Academy.jpg"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "yoga-school",
+    "rank": 768,
+    "hub": null,
+    "tier_evidence": "YouTube channel UCD1ZmXG_pSVzTpLzvfD0ThA linked in the footer but not read (Data API not used, to save quota for a local school); Instagram not fetched → local_hero",
+    "email": "yes",
+    "email_source": "https://yogaacademy.pl/kontakt/",
+    "contact_form_url": "https://yogaacademy.pl/kontakt/",
+    "bio_check": "OK: no 8-word runs against 9 source(s)",
+    "flags": [
+      "Lead from the Sharath Yoga Centre authorised-teacher directory (Poland). yogaacademy.pl robots.txt (* group) disallows *elementor, *themes, *plugins, *feed, */js/; only normal pages and wp-content/uploads images were used. The teacher-training site yogateachersacademy.pl is linked from the school's own menu ('Zostań nauczycielem'); its robots.txt allows all and was read first.",
+      "Email info@yogaacademy.pl and a contact form on /kontakt/.",
+      "Health rule: the school combines yoga with physiotherapy (Rolfing sessions sold in the studio and on rolfingpoznan.pl), and its Ashtanga page stresses therapeutic and rehabilitation benefits; the teacher-training menu includes 'dysfunctional anatomy' and restorative modules. All left out; bio and items describe the yoga teaching only. Multi-style studio (vinyasa, hatha, yin) with Ashtanga at its core.",
+      "The 200h course says it is Yoga Alliance accredited; that is the school's own claim, no directory used.",
+      "Address: home page says Święty Marcin 35; contact page and footer say Św. Marcin 31/1a. City-level base unaffected.",
+      "Founding: home page says 'działamy od 2016 roku' and the 10th birthday is in Oct 2026, but another paragraph says teaching at the Święty Marcin building since 2018. Used 2016.",
+      "Online meditation course (Oct 2026 – Jun 2027) started before 12 Nov and its items link only to '#'; left out.",
+      "Possible future listings: Mateusz Deker, Ania Olszewska.",
+      "No Spiritpedia teachers are named on the site, so the teachers file has no links.",
+      "Regional: Poznań; Poland is thin on Spiritpedia."
+    ],
+    "left_out": [
+      "Rolfing / fizjoterapia: therapy.",
+      "Joga dla mam z bobasami (postnatal), sound-bowl relaxation concert, birthday open day, Wigilia: past or not teaching offers, and the events link only to '#'.",
+      "Medytacja 100h YACEP (Oct 2025 – Jun 2026): past.",
+      "Other YACEP modules: not individually checked for dates."
+    ]
+  },
+  "images_final": true
+}

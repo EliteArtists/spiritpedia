@@ -1,0 +1,34 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 1180,
+    "healer_slug": "nancy-hendrickson"
+  },
+  "rows": [
+    {
+      "table": "books",
+      "id": 2400,
+      "slug": "ancestral-tarot",
+      "title": "Ancestral Tarot"
+    },
+    {
+      "table": "books",
+      "id": 2401,
+      "slug": "ancestral-grimoire",
+      "title": "Ancestral Grimoire"
+    },
+    {
+      "table": "courses",
+      "id": "c88925e9-3303-448e-9bf4-3764f1574a05",
+      "slug": "ancestral-tarot-in-practice",
+      "title": "Ancestral Tarot in Practice"
+    },
+    {
+      "table": "courses",
+      "id": "aa5b37de-3810-4d41-9f52-ea3e4f33b0fc",
+      "slug": "the-witchs-workshop-the-fae-land-spirits-past-lives",
+      "title": "The Witch's Workshop: The Fae, Land Spirits, Past Lives"
+    }
+  ],
+  "at": "2026-11-10T12:44:42.255Z"
+}

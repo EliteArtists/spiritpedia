@@ -1,0 +1,129 @@
+{
+  "healer": {
+    "healer_slug": "yogabiel",
+    "location_source": "https://www.yogabiel.ch/kontakt/",
+    "create": {
+      "name": "yogabiel",
+      "bio": "yogabiel is an Iyengar yoga school in the centre of Biel/Bienne, in a large, light practice room on the second floor of a building overlooking the old town. It is led by Cristina Amstutz, who holds the Level 3 (Junior III) certificate, has taught the method for more than twenty years and works as a mentor and examiner within Iyengar Yoga Switzerland. Two further certified teachers, Laure Schwab and Jenny Pieth, share the timetable, with some classes given in French as well as Swiss German.\n\nThe weekly programme is graded into three levels, from beginners to students with four or more years of practice, with a seniors' class and long 2¼-hour sessions for experienced practitioners. Several times a year the school runs four-day intensives in the studio between terms, and it also takes a group to a village guesthouse above Martigny in Valais for a residential retreat of asana and pranayama. yogabiel is also a training centre: its three-year, mentorship-based teacher course of around 400 hours follows the Pune institute's guidelines, includes an annual study week in the French Jura and leads to the Swiss association's Level 1 assessment.",
+      "tier": "local_hero",
+      "entity_type": "school",
+      "availability": "local",
+      "city": "Biel/Bienne",
+      "country": "Switzerland",
+      "subjects": [
+        "yoga",
+        "breathwork"
+      ],
+      "website_url": "https://www.yogabiel.ch/",
+      "booking_url": "https://www.yogabiel.ch/kursangebot/",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "info@yogabiel.ch",
+      "image_urls": [
+        "https://www.yogabiel.ch/wp-content/uploads/2018/03/Raum_1.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Kursangebot und Abos (weekly Iyengar classes)",
+      "url": "https://www.yogabiel.ch/kursangebot/",
+      "description": "Regular classes at three levels plus a seniors' class, joined at any time, paid by the single class, a ten-class card, a half-year or a full-year subscription. Students and young people receive a reduction.",
+      "price": "Einzelpreis: 35.00 (1½ h) / 40.- (2¼ h); 10er-Abo: 350.- / 400.-; Halbjahresabo 1x pro Woche: 600.– / 700.–; Jahresabo 1x pro Woche: 1080.– / 1280.–; 1 Jahr unbeschränkt: 3000.–",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://www.yogabiel.ch/wp-content/uploads/2018/03/Raum_1-300x216.jpg"
+    },
+    {
+      "title": "Ausbildungsprogramm zur Iyengar Yoga Lehrer*in (three-year teacher training)",
+      "url": "https://www.yogabiel.ch/ausbildung/",
+      "description": "A three-year mentorship course of about 400 hours for students with at least three years of regular Iyengar practice, led in Biel by Cristina Amstutz with a yearly study week in the French Jura. Trainees practise, then assist, then teach their own beginners' class under supervision before the Swiss association's Level 1 assessment.",
+      "price": "1. Ausbildungsjahr: CHF 1’800.-; 2. Ausbildungsjahr: CHF 3’000.-; 3. Ausbildungsjahr: CHF 3’200.-",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://www.yogabiel.ch/wp-content/uploads/2017/12/cropped-icon.png"
+    },
+    {
+      "title": "Neujahrsworkshop 2027",
+      "url": "https://www.yogabiel.ch/wp-content/uploads/2026/09/yoganeujahr_2027.pdf",
+      "description": "A four-day intensive with Cristina Amstutz at the end of the winter break, with morning and afternoon practice from Thursday to Saturday and a Sunday morning session in the Biel studio.",
+      "price": "CHF 390.–",
+      "product_type": "course",
+      "start_date": "2027-01-07",
+      "end_date": "2027-01-10",
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://www.yogabiel.ch/wp-content/uploads/2018/03/Raum_1.jpg"
+    },
+    {
+      "title": "Sommerworkshop 2027",
+      "url": "https://www.yogabiel.ch/wp-content/uploads/2026/09/yogajuli_2027.pdf",
+      "description": "Four days of summer practice in the studio with Cristina Amstutz, structured like the New Year intensive with two sessions a day and a shorter Sunday.",
+      "price": "CHF 390.–",
+      "product_type": "course",
+      "start_date": "2027-07-15",
+      "end_date": "2027-07-18",
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://www.yogabiel.ch/wp-content/uploads/2018/03/Raum_1.jpg"
+    },
+    {
+      "title": "yogabiel im Wallis: Yoga Retreat 2027",
+      "url": "https://www.yogabiel.ch/wp-content/uploads/2026/09/yogaretreat_2027.pdf",
+      "description": "A residential retreat at a guesthouse in Chemin-Dessus above Martigny for students with at least a year of Iyengar practice, with daily pranayama and two asana sessions. Board, lodging and classes are included; travel is not.",
+      "price": "CHF 1’160.– im Einzelzimmer; CHF 1’030.– im Doppelzimmer; CHF 950.– im Mehrbettzimmer",
+      "product_type": "retreat",
+      "start_date": "2027-10-18",
+      "end_date": "2027-10-22",
+      "subjects": [
+        "yoga",
+        "breathwork"
+      ],
+      "image": "https://www.yogabiel.ch/wp-content/uploads/2018/03/Raum_1.jpg"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "yoga-school",
+    "rank": 1602,
+    "hub": null,
+    "tier_evidence": "No YouTube channel or readable social counts linked from the site (Facebook only, not fetched) → 0 readable → local_hero.",
+    "email": "yes",
+    "email_source": "https://www.yogabiel.ch/kontakt/",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 6 source(s)",
+    "flags": [
+      "Lead from Iyengar Yoga Schweiz's list of certified teachers (Cristina Amstutz, Level 3, yogabiel, Biel); facts from the school's own site (robots.txt allows us).",
+      "Three offerings link to the school's own PDF flyers (each its own file on yogabiel.ch); prices and dates read from the site and, for the retreat, from the flyer.",
+      "Only one photo: the studio during a class (964 px). The teacher portraits on the site are under 300 px.",
+      "The teacher training mentions therapeutic help for common pains in year 2; the bio and item leave that out.",
+      "Private lessons are offered only for health reasons, so they are left out under the health rule.",
+      "Possible future listings: Cristina Amstutz.",
+      "No Spiritpedia teachers are named on the site, so the teachers file has no links.",
+      "Regional: Biel/Bienne; Spiritpedia has few listings in Switzerland outside Zürich and Geneva."
+    ],
+    "left_out": [
+      "Swiss Iyengar Yoga Convention 2027 (organised by the national association, not the school).",
+      "Privatlektionen: offered only to people who cannot join a class for health reasons.",
+      "Room hire (Kursraum mieten): not a teaching offering."
+    ]
+  },
+  "images_final": true
+}

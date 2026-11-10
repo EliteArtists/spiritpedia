@@ -1,0 +1,230 @@
+{
+  "healer": {
+    "healer_slug": "ethony-dawn",
+    "location_source": "https://ethony.com/about/",
+    "create": {
+      "name": "Ethony Dawn",
+      "bio": "Ethony Dawn, who works simply as Ethony, is a tarot reader, author and teacher who has read cards for clients for more than two decades. Born in Canada and brought up in Australia, she now lives in Vancouver. She describes herself as a modern witch, and her approach to the cards mixes practical reading skill with spellwork and ritual. She is the headmistress of the Tarot Readers Academy, an online school she leads that runs self-paced courses in tarot, oracle and Lenormand reading, witchcraft and running a spiritual practice, with more than ten thousand students to date.\n\nHer books with Llewellyn are Your Tarot Court, which makes the court cards easier to read by treating them as modern personalities, and Tarot Grimoire, which pairs every card with its meaning, a spread and a simple spell; a third, Become an Exceptional Tarot Reader, followed in 2025. She has also designed several tarot and oracle decks. She reads privately over Zoom, including a yearly birthday reading that combines the natal chart with a sixteen-card spread, and on her long-running YouTube channel she reviews decks and books and talks about the craft of reading. She has taught at gatherings including Omega's Masters of the Tarot.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "worldwide",
+      "city": "Vancouver, British Columbia",
+      "country": "Canada",
+      "subjects": [
+        "spirituality",
+        "astrology",
+        "shadow-work"
+      ],
+      "website_url": "https://ethony.com/",
+      "booking_url": "https://ethony.com/tarot-readings/",
+      "youtube_url": "https://www.youtube.com/@ethony",
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": null,
+      "image_urls": [
+        "https://yt3.ggpht.com/laKpOvi67nfftqoBzJcb-amcLTZtyiOyQnk_0RhGHnhqHM47LxUher8n8hlX2741G-RtvdCj5A=s800-c-k-c0x00ffffff-no-rj",
+        "https://ethony.com/wp-content/uploads/2026/06/Ethony-Tarot-Reader-819x1024.png"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "omega-institute",
+      "role": "instructor"
+    }
+  ],
+  "videos": [
+    {
+      "title": "📚 11 Tarot Books Every Beginner Tarot Reader Needs to Read! 📚",
+      "url": "https://www.youtube.com/watch?v=-29fXpj12xE",
+      "subjects": [
+        "spirituality"
+      ],
+      "channel": "Ethony"
+    },
+    {
+      "title": "The Essential Guide to Choosing the Right Tarot Deck for Intuitive & Psychic Readings",
+      "url": "https://www.youtube.com/watch?v=RqMbRuCQSoY",
+      "subjects": [
+        "spirituality"
+      ],
+      "channel": "Ethony"
+    },
+    {
+      "title": "🖤 Top Tarot Decks for Shadow Work 🖤  2025 Edition 🖤",
+      "url": "https://www.youtube.com/watch?v=GgYJBIJErSY",
+      "subjects": [
+        "shadow-work",
+        "spirituality"
+      ],
+      "channel": "Ethony"
+    },
+    {
+      "title": "🌟 The Ultimate Beginner's Tarot Decks for 2026 🌟",
+      "url": "https://www.youtube.com/watch?v=9mRnQYDQWlk",
+      "subjects": [
+        "spirituality"
+      ],
+      "channel": "Ethony"
+    },
+    {
+      "title": "You’re Not a Tarot Reader If You Ignore The Actual Cards",
+      "url": "https://www.youtube.com/watch?v=YN3hp1VsY1w",
+      "subjects": [
+        "spirituality"
+      ],
+      "channel": "Ethony"
+    },
+    {
+      "title": "The Ethical Problem with AI-Generated Tarot Decks - You NEED to Watch This Video",
+      "url": "https://www.youtube.com/watch?v=hPDK7HKSCS8",
+      "subjects": [
+        "spirituality"
+      ],
+      "channel": "Ethony"
+    }
+  ],
+  "books": [
+    {
+      "title": "Your Tarot Court",
+      "slug": "your-tarot-court",
+      "author": "Ethony Dawn",
+      "asin": "0738758655",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "A guide to the sixteen court cards, recasting them as recognisable modern personalities and offering spreads and techniques for reading them with any deck.",
+      "subjects": [
+        "spirituality",
+        "ancient-wisdom"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/0738758655.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "Tarot Grimoire",
+      "slug": "tarot-grimoire",
+      "author": "Ethony Dawn",
+      "asin": "0738777048",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "Goes through all 78 cards with core meanings and keywords, and gives each card its own spread and a short spell, with tables of magical correspondences.",
+      "subjects": [
+        "spirituality",
+        "manifestation"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/0738777048.01._SCLZZZZZZZ_.jpg"
+    }
+  ],
+  "courses": [
+    {
+      "title": "Birthday Tarot Reading",
+      "url": "https://calendly.com/ethony/birthday-tarot-reading",
+      "description": "A one-to-one session of about an hour that looks at your birth chart and the year's transits, then lays a sixteen-card spread covering the four seasons of your coming year. Recorded, with photos of the cards.",
+      "price": "$199 USD",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "spirituality",
+        "astrology"
+      ],
+      "image": "https://yt3.ggpht.com/laKpOvi67nfftqoBzJcb-amcLTZtyiOyQnk_0RhGHnhqHM47LxUher8n8hlX2741G-RtvdCj5A=s800-c-k-c0x00ffffff-no-rj"
+    },
+    {
+      "title": "30 Minute Tarot Reading with Ethony",
+      "url": "https://calendly.com/ethony/30-min-tarot-reading-with-ethony",
+      "description": "A recorded half-hour tarot reading over Zoom focused on a question or situation you bring.",
+      "price": "$95",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "spirituality"
+      ],
+      "image": "https://yt3.ggpht.com/laKpOvi67nfftqoBzJcb-amcLTZtyiOyQnk_0RhGHnhqHM47LxUher8n8hlX2741G-RtvdCj5A=s800-c-k-c0x00ffffff-no-rj"
+    },
+    {
+      "title": "Tarot by the Moon 2027",
+      "url": "https://tarotreadersacademy.com/p/tarot-by-the-moon-2027",
+      "description": "Her annual lunar tarot guide, with new spreads for each new and full moon of the year, sold through the Tarot Readers Academy.",
+      "price": "$14.99",
+      "product_type": "download",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "spirituality",
+        "astrology"
+      ],
+      "image": "https://uploads.teachablecdn.com/attachments/55db1d423d8a407c89bb3b617f1e9124.png"
+    },
+    {
+      "title": "Money Magic Manifestation Cards Course",
+      "url": "https://tarotreadersacademy.com/p/money-magic-manfestation-cards-course",
+      "description": "A short self-paced course and bonus material to accompany her Money Magic Manifestation Cards deck.",
+      "price": "$25",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "manifestation",
+        "spirituality"
+      ],
+      "image": "https://uploads.teachablecdn.com/attachments/nrmLWTowTgy7Hq1PsKHJ_Untitled+design+%2812%29.jpg"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Free Tarot 101: Become A Confident Tarot Reader",
+      "url": "https://tarotreadersacademy.com/p/tarot-101-series",
+      "description": "A free beginners' series at her Tarot Readers Academy covering the basics of reading the cards.",
+      "featured": true,
+      "resource_type": "mini_course",
+      "subjects": [
+        "spirituality"
+      ],
+      "image": "https://uploads.teachablecdn.com/attachments/aZPQNATYQSuwOZ866pNN_TAROT+101+SERIES.png"
+    },
+    {
+      "title": "Fool's Journey Tarot Cheat Sheet",
+      "url": "https://ethony.com/fools-journey/",
+      "description": "A free poster and video lesson tracing the story of the major arcana, with keywords for each card and a printer-friendly version.",
+      "featured": false,
+      "resource_type": "download",
+      "subjects": [
+        "spirituality"
+      ],
+      "image": "https://ethony.com/wp-content/uploads/2022/02/The-Fools-Journey-Mockup.webp"
+    }
+  ],
+  "sprint": {
+    "sprint": "pipelines-3",
+    "hub": "omega",
+    "rank": 319,
+    "hub_url": "https://www.eomega.org/people/ethony-dawn",
+    "tier_evidence": "YouTube @ethony 35,600 subscribers (Data API, 10 Nov 2026); Instagram, Facebook and TikTok not readable without login → 35.6k readable → local_hero. Tarot Readers Academy states 10,000+ students (ethony.com/about/), below the luminary line.",
+    "email": "contact form",
+    "email_source": null,
+    "contact_form_url": "https://ethony.com/contact/",
+    "bio_check": "OK: no 8-word runs against 8 source(s)",
+    "flags": [
+      "Omega named on: https://ethony.com/teaching-omega-masters-of-tarot-2025/ (blog post 'I'm Teaching at Omega's Masters of Tarot in 2025', linked from ethony.com/events-published-books/). Omega page not opened: eomega.org returns 403 to us (6 Nov 2026). The 2025 conference is past, so no offering.",
+      "No published email (contact page and about page use a form; mailto links are empty), so contact form used.",
+      "Shares the Tarot Readers Academy with Nancy Hendrickson (rank 323 in this chunk), who teaches a course there.",
+      "Name: she brands herself 'Ethony'; full name Ethony Dawn used as on her books and the list.",
+      "Regional: Vancouver, British Columbia.",
+      "YouTube channel is mostly deck reviews and hauls; picked the most teaching-led videos. YouTube link on her site is youtube.com/ethony; the API resolves @ethony (title 'Ethony', country CA)."
+    ],
+    "left_out": [
+      "Become an Exceptional Tarot Reader (2025): ISBN seen only in a search snippet, not on her own or the publisher's page I could open; left out.",
+      "Soul Purpose Tarot Reading and Aura-Soma Tarot Reading ($189 USD): kept to two reading items.",
+      "Amityville Apothecary Samhain events (Oct 2025) and LlewellynCon 2025: past.",
+      "Courses by other teachers on Tarot Readers Academy (Thoth, Lenormand, Witch's Workshop).",
+      "Deck review and haul videos: not teaching.",
+      "Shop decks (shop.ethony.com): not checked."
+    ]
+  },
+  "images_final": true
+}

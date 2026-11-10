@@ -1,0 +1,171 @@
+{
+  "healer": {
+    "healer_slug": "nagarjuna-madrid",
+    "location_source": "https://www.nagarjunamadrid.org/meditacion-samatha-en-madrid/",
+    "create": {
+      "name": "Nagarjuna Madrid",
+      "bio": "Nagarjuna Madrid is a Tibetan Buddhist meditation and study centre in the Spanish capital, belonging to the Gelug school of Lama Tsong Khapa, the lineage of the Dalai Lama, whom it names as its inspiration. Lama Thubten Yeshe established it in 1983, and it remains affiliated to the Foundation for the Preservation of the Mahayana Tradition (FPMT), the international network he set up with Lama Zopa Rinpoche in 1975. Its resident teacher is Geshe Jamphel Gyaltsen, born in Kham in 1967, who fled to India in 1989 and spent over two decades at Sera Je Monastery before gaining the Geshe Lharampa degree in 2008. The centre is run by Fernando Fernández, who has guided its meditation courses for more than ten years.\n\nIts programme mixes structured Buddhist study with practice: weekend courses, often attended in person or online, weekly classes on mind training, Sunday morning intensives in calm-abiding meditation on the breath, retreats and a Wednesday evening cycle of sutra readings. Visiting lamas teach there regularly. The Spanish-language YouTube channel, running since 2011, keeps recordings of full teachings, including a multi-part commentary on the Diamond Sutra, a long Lam Rim retreat series, Mahamudra sessions and question-and-answer evenings with Geshe Gyaltsen.",
+      "tier": "local_hero",
+      "entity_type": "organisation",
+      "availability": "local_online",
+      "city": "Madrid",
+      "country": "Spain",
+      "subjects": [
+        "meditation",
+        "ancient-wisdom",
+        "mindfulness"
+      ],
+      "website_url": "https://www.nagarjunamadrid.org/",
+      "booking_url": "https://www.nagarjunamadrid.org/cursofinsemana/",
+      "youtube_url": "https://www.youtube.com/@nagarjunavideos",
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": null,
+      "image_urls": [
+        "https://yt3.ggpht.com/ytc/AIdro_nyUK6lNbkD9ti-phChZ2ll8j85pHQn08_oHzUKFgoyjO8=s800-c-k-c0x00ffffff-no-rj"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [
+    {
+      "title": "¿QUÉ ES MAHAMUDRA? Meditación en la Naturaleza de la Mente (sesión 1) - Javier Artime",
+      "url": "https://www.youtube.com/watch?v=DC8U4oCwxHg",
+      "subjects": [
+        "meditation",
+        "consciousness"
+      ],
+      "channel": "Nagarjuna Madrid"
+    },
+    {
+      "title": "03 PREGUNTAS A GUESHE GYALTSEN",
+      "url": "https://www.youtube.com/watch?v=8DX93Hdoths",
+      "subjects": [
+        "ancient-wisdom"
+      ],
+      "channel": "Nagarjuna Madrid"
+    },
+    {
+      "title": "1 EL SUTRA DEL CORTADOR VAJRA - Gueshe Tenzin Namdak",
+      "url": "https://www.youtube.com/watch?v=5-uo0-HsnVI",
+      "subjects": [
+        "ancient-wisdom",
+        "non-duality"
+      ],
+      "channel": "Nagarjuna Madrid"
+    },
+    {
+      "title": "MEDITACIÓN EN BODICHITA - Juan Manzanera",
+      "url": "https://www.youtube.com/watch?v=iJNx38c1oLM",
+      "subjects": [
+        "meditation"
+      ],
+      "channel": "Nagarjuna Madrid"
+    },
+    {
+      "title": "MEDITACIÓN EN MAHAMUDRA - Ven René Feusí",
+      "url": "https://www.youtube.com/watch?v=akqMgASseQE",
+      "subjects": [
+        "meditation"
+      ],
+      "channel": "Nagarjuna Madrid"
+    },
+    {
+      "title": "LA MEDITACION - Ven Sangye Khadro",
+      "url": "https://www.youtube.com/watch?v=C5bU1nPknv8",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "channel": "Nagarjuna Madrid"
+    },
+    {
+      "title": "1 KHANDRO TSERINGMA RIMPOCHÉ - Bodichita y Vacuidad",
+      "url": "https://www.youtube.com/watch?v=4hdooTYxP7Q",
+      "subjects": [
+        "ancient-wisdom",
+        "non-duality"
+      ],
+      "channel": "Nagarjuna Madrid"
+    },
+    {
+      "title": "LA MUERTE (SESION DE PREGUNTAS) - Gueshe Tenzin Zopa",
+      "url": "https://www.youtube.com/watch?v=J4jWq-1uRKI",
+      "subjects": [
+        "death-the-afterlife",
+        "ancient-wisdom"
+      ],
+      "channel": "Nagarjuna Madrid"
+    }
+  ],
+  "books": [],
+  "courses": [
+    {
+      "title": "Sutra del Corazón con S.E. Serkong Tsenshap Rimpoché",
+      "url": "https://www.nagarjunamadrid.org/curso-serkong-rimpoche-sutradelcorazon/",
+      "description": "A weekend of teachings from Serkong Tsenshap Rinpoche on the Heart Sutra, the condensed Prajnaparamita text on emptiness, attended in person in Madrid or online. Online attendance is 30€; members pay 30€ in person or 15€ online; ordained Sangha attend free.",
+      "price": "80€",
+      "product_type": "course",
+      "start_date": "2026-11-21",
+      "end_date": "2026-11-22",
+      "subjects": [
+        "ancient-wisdom",
+        "non-duality"
+      ],
+      "image": null
+    },
+    {
+      "title": "Intensivo de meditación de Sámatha",
+      "url": "https://www.nagarjunamadrid.org/meditacion-samatha-en-madrid/",
+      "description": "A Sunday morning of calm-abiding meditation on the breath, alternating sitting and walking sessions, led by the centre's director Fernando Fernández, with time for questions at the end. Free for members.",
+      "price": "20€",
+      "product_type": "course",
+      "start_date": "2026-11-29",
+      "end_date": "2026-11-29",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": null
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Recitación de Sutras",
+      "url": "https://www.nagarjunamadrid.org/recitacion-de-sutras/",
+      "description": "A weekly Wednesday evening session reading short sutras from the Pali canon together, with an online entry link on the page.",
+      "featured": true,
+      "resource_type": "practice",
+      "subjects": [
+        "ancient-wisdom"
+      ],
+      "image": null
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "channel",
+    "rank": 1406,
+    "hub": null,
+    "tier_evidence": "YouTube 3,040 subscribers (YouTube Data API, 10 Nov 2026); no other counts read → ~3k → local_hero",
+    "email": "contact form",
+    "email_source": null,
+    "contact_form_url": "https://www.nagarjunamadrid.org/contacto/",
+    "bio_check": "OK: no 8-word runs against 10 source(s)",
+    "flags": [
+      "Image is the YouTube avatar (the centre emblem); item images null: the ingest's robots request to nagarjunamadrid.org got HTTP 502 (robots.txt had read fine earlier). Site photos of the gompa (wp-content/uploads/2025/12/NAGARJUNA-MADRID-GOMPA-scaled.jpg) could be swapped in later.",
+      "No published email: info@ appears only in hidden page markup, so not used. Contact form at /contacto/ only.",
+      "Serkong Tsenshap Rinpoche (21–22 Nov) is the only dated course with a page; Geshe Gyaltsen's 19–20 Dec weekend has no separate page or price yet.",
+      "Channel mixes Spanish teachings with a few English-language ones (Khandro Tseringma in English, 'One Big Family').",
+      "Geshe Jamphel Gyaltsen is not on Spiritpedia: possible future listing. Teachers file empty."
+    ],
+    "left_out": [
+      "Short promo clips (under 2 minutes) and the 2026 astrological calendar video.",
+      "Siete Puntos del Entrenamiento Mental online course (started 23 Sep 2026).",
+      "Membership page (hazte-socio-nm)."
+    ]
+  },
+  "images_final": true
+}

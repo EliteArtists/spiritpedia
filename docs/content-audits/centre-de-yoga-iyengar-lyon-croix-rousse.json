@@ -1,0 +1,116 @@
+{
+  "healer": {
+    "healer_slug": "centre-de-yoga-iyengar-lyon-croix-rousse",
+    "location_source": "https://www.yogaiyengar-lyon.com/le-centre.html",
+    "create": {
+      "name": "Centre de Yoga Iyengar Lyon Croix-Rousse",
+      "bio": "Centre de Yoga Iyengar Lyon Croix-Rousse is a studio devoted solely to the Iyengar method, set in the Croix-Rousse quarter of Lyon, France. Stéphane Wintenberger opened it in 2016. He began yoga in 2004, first qualified as a hatha yoga instructor in Chile, and moved to Iyengar's approach after studying with Faeq Biria; he was certified in 2010, returned to France in 2012 and has kept training in Europe and in Pune with the Iyengar family. He is also a mentor for students working towards Iyengar teacher certification.\n\nSix certified teachers share a weekly timetable arranged by level: first-year classes for newcomers, intermediate groups where pranayama is gradually introduced, two-hour sessions for advanced students and slower classes for older practitioners. The room is fitted with wall ropes, chairs, bolsters, blocks and blankets, all supplied. Students join for a term or a whole year after a paid trial class, and the programme is rounded out by monthly themed workshops, weekend intensives with the senior teachers, holiday classes and summer retreats. A French-language blog offers short introductions to the method for beginners.",
+      "tier": "local_hero",
+      "entity_type": "school",
+      "founded_year": 2016,
+      "availability": "local",
+      "city": "Lyon",
+      "country": "France",
+      "subjects": [
+        "yoga",
+        "breathwork"
+      ],
+      "website_url": "https://www.yogaiyengar-lyon.com/",
+      "booking_url": "https://www.yogaiyengar-lyon.com/cours-planning.html",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "contact@yogaiyengar-lyon.com",
+      "image_urls": [
+        "https://www.yogaiyengar-lyon.com/images/studio/salle-yoga-iyengar-lyon-croix-rousse-5.jpg",
+        "https://www.yogaiyengar-lyon.com/images/studio/cours-yoga-iyengar-lyon-croix-rousse-8.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Abonnements: trimestre et année (term and year enrolment)",
+      "url": "https://www.yogaiyengar-lyon.com/tarifs.html",
+      "description": "Enrolment by the term or for the full year in one of the graded weekly classes, after a trial class. Prices vary by level and class length; a reduced rate is available on request.",
+      "price": "1 cours d'essai - 15 €; 1er trimestre (14 cours): Niveau 1 / Séniors 260 €, Niveau 2, 3 & 4 270 €, Niveau 4 & 5 305 €; Année complète (37 cours): Niveau 1 / Séniors 630 €, Niveau 2, 3 & 4 640 €, Niveau 4 & 5 740 €",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://www.yogaiyengar-lyon.com/images/studio/cours-yoga-iyengar-lyon-croix-rousse-45.jpg"
+    },
+    {
+      "title": "Cours, stages & ateliers (classes, workshops and weekend intensives)",
+      "url": "https://www.yogaiyengar-lyon.com/cours-planning.html",
+      "description": "The weekly Iyengar timetable from level 1 to levels 4-5, with seniors' classes, alongside monthly workshops on one family of postures or on pranayama and weekend intensives led by Gabriel Girard and Samuel Lenaerts. Each workshop states its level and fee.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga",
+        "breathwork"
+      ],
+      "image": "https://www.yogaiyengar-lyon.com/images/cordes/cours-yoga-iyengar-lyon-croix-rousse-cordes6.jpg"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Qu'est-ce que le Yoga Iyengar ?",
+      "url": "https://www.yogaiyengar-lyon.com/blog/quest-ce-que-le-yoga-iyengar.html",
+      "description": "A French-language introduction to where the Iyengar method comes from and the principles behind it, such as alignment, timing in the poses and the use of props.",
+      "featured": true,
+      "resource_type": "practice",
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://www.yogaiyengar-lyon.com/media/yootheme/cache/91/cours-yoga-iyengar-lyon-croix-rousse-10-91438d3b.jpg"
+    },
+    {
+      "title": "Faut-il être souple pour commencer le Yoga Iyengar ?",
+      "url": "https://www.yogaiyengar-lyon.com/blog/faut-il-etre-souple-pour-commencer-le-yoga-iyengar.html",
+      "description": "A short French article for hesitant beginners explaining why flexibility is not needed to start and how the first classes are built up step by step.",
+      "featured": false,
+      "resource_type": "practice",
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://www.yogaiyengar-lyon.com/media/yootheme/cache/96/cours-yoga-iyengar-lyon-croix-rousse-precision-3-96322449.jpg"
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "yoga-school",
+    "rank": 1052,
+    "hub": null,
+    "tier_evidence": "No YouTube channel linked from the pages read; Facebook (linked from the site) not fetched; no readable followers → local_hero.",
+    "email": "yes",
+    "email_source": "https://www.yogaiyengar-lyon.com/tarifs.html",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 9 source(s)",
+    "flags": [
+      "Lead from the Association Française de Yoga Iyengar's centre list (CYI de Lyon Croix-Rousse, Stéphane Wintenberger); facts from the centre's own site (robots.txt allows us).",
+      "Email from the clickable 'Nous contacter' mailto button on the prices page; the footer copy of the same address is hidden by Joomla's email cloaking and was not decoded.",
+      "Bookings go through the jyogui.com school page (not opened).",
+      "In scope as an Iyengar lineage school; it runs no teacher-training course of its own, but the founder mentors trainee Iyengar teachers (his teacher page).",
+      "The home and 'découvrir' pages mention benefits for back problems and stress-related conditions; none of that is used in the bio or items.",
+      "Prices are for the 2026-27 year as published (first-term dates 7 September to 19 December).",
+      "Possible future listings: Stéphane Wintenberger (founder), Charlotte Ibanez, Gabriel Girard, Samuel Lenaerts, Florence Larisse, Patricia Lavigne.",
+      "No Spiritpedia teachers are named on the site, so the teachers file has no links.",
+      "Regional: Lyon; Spiritpedia has few listings in France outside Paris."
+    ],
+    "left_out": [
+      "'Les bienfaits du Yoga Iyengar' blog post and benefits section: framed around back problems and stress-related conditions (health rule).",
+      "Summer retreats and holiday classes: described in general, no dated page of their own.",
+      "Mentorship towards Iyengar teacher certification: described on the founder's page only, no programme page or price."
+    ]
+  },
+  "images_final": true
+}
