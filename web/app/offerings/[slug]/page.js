@@ -7,6 +7,7 @@ import ShareButton from '@/components/ShareButton';
 import { buildMetadata, notFoundMetadata, pickImage, SITE_URL } from '@/utils/seo';
 import ReviewSection, { RatingRow } from '@/components/ReviewSection';
 import TrackOpen from '@/components/TrackOpen';
+import { amazonAffiliateUrl } from '@/utils/affiliate';
 
 // Hourly ceiling on staleness — see the note in app/page.js.
 export const revalidate = 3600;
@@ -62,6 +63,10 @@ export default async function OfferingDetail({ params, searchParams }) {
   const healer = offering.healers;
   const type = PRODUCT_TYPES[offering.product_type] || PRODUCT_TYPES.course;
   const subjects = Array.isArray(offering.subject_slugs) ? offering.subject_slugs : [];
+  // An offering whose link is an Amazon product (some downloads and audio
+  // courses are) earns like a book does (owner, 10 Nov 2026): the same helper
+  // decides the tag, and the same disclosure sits under the button.
+  const amazon = amazonAffiliateUrl(offering.course_url);
 
   return (
     <main className="relative min-h-screen bg-[#0a0f1d] text-white">
@@ -141,14 +146,24 @@ export default async function OfferingDetail({ params, searchParams }) {
           )}
 
           {offering.course_url ? (
-            <a
-              href={offering.course_url}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="mt-8 w-full py-4 px-8 bg-violet-600 hover:bg-violet-700 text-white font-bold text-base rounded-2xl transition-colors duration-200 text-center block"
-            >
-              {type.cta}
-            </a>
+            <>
+              <a
+                href={amazon ? amazon.url : offering.course_url}
+                target="_blank"
+                rel={amazon ? 'sponsored noopener noreferrer' : 'noopener noreferrer'}
+                className="mt-8 w-full py-4 px-8 bg-violet-600 hover:bg-violet-700 text-white font-bold text-base rounded-2xl transition-colors duration-200 text-center block"
+              >
+                {type.cta}
+              </a>
+              {amazon?.tagged && (
+                <p className="mt-2 text-xs leading-relaxed text-gray-500">
+                  <Link href="/affiliate-disclosure" className="transition-colors hover:text-gray-300">
+                    As an Amazon Associate, Spiritpedia earns from qualifying purchases. It never
+                    changes what we recommend.
+                  </Link>
+                </p>
+              )}
+            </>
           ) : (
             <span className="text-gray-400 text-center text-sm mt-8 block">
               Contact {healer ? healer.name : 'the healer'} directly for booking information.

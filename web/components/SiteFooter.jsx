@@ -29,6 +29,10 @@ export default function SiteFooter() {
           appropriate.
         </p>
 
+        {/* The Associates disclosure on every page (owner, 10 Nov 2026), not
+            only on book pages; the wording is the Operating Agreement's. */}
+        <p className="mt-4">As an Amazon Associate, Spiritpedia earns from qualifying purchases.</p>
+
         <p className="mt-4">
           © 2026 Spiritpedia
           <span aria-hidden="true"> · </span>

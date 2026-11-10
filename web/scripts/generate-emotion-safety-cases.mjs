@@ -61,6 +61,8 @@ for (const ph of special) { inputs.add(`i feel like ${ph} right now`); inputs.ad
 // Hyphenated forms of every crisis phrase (owner, 10 Nov 2026): they must be caught too.
 for (const ph of crisis) { inputs.add(ph.replace(/ /g, '-')); inputs.add(`i want to ${ph.replace(/ /g, '-')}`); }
 inputs.add('kill-myself'); inputs.add('end-it-all'); inputs.add('i want to self-harm');
+// Joined-up forms too (owner, 10 Nov 2026): "selfharm", "killmyself".
+for (const ph of crisis) if (/\s/.test(ph)) { inputs.add(ph.replace(/\s+/g, '')); inputs.add(`i want to ${ph.replace(/\s+/g, '')}`); }
 for (const e of sampleEmotions) for (const t of templates(e)) inputs.add(t);
 
 // ── a fixed vocabulary for the full-search cases ──

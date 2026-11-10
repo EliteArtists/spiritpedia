@@ -2,10 +2,9 @@ import { getContentBySubjectSlug, getAllSubjects, getHealerNames } from '../../.
 import { isPlatform, officialFirst } from '../../../utils/listings.js';
 import BookCard from '../../../components/BookCard.js';
 import ContentShelf from '../../../components/ContentShelf.js';
-import FreeResourceCard from '../../../components/FreeResourceCard.js';
 import HealerCard from '../../../components/HealerCard.js';
 import SubjectHealersShelf from '../../../components/SubjectHealersShelf.jsx';
-import OfferingCard from '../../../components/OfferingCard.js';
+import SubjectPagedShelf from '../../../components/SubjectPagedShelf.jsx';
 import VideoShelves from '../../../components/VideoShelves.jsx';
 import ShareButton from '../../../components/ShareButton.jsx';
 import SiteLogo from '../../../components/SiteLogo.jsx';
@@ -49,29 +48,28 @@ export default async function SubjectPage({ params }) {
     getHealerNames(),
   ]);
 
-  const { healers, places, books, courses, freeResources } = content;
-  // byId for the offering and free-resource cards, bySlug for the video cards —
-  // the two tables point at a healer differently. See getHealerNames().
-  const { byId: healerNameById, bySlug: healerNamesBySlug } = healerNames;
+  const { healers, places, books, counts } = content;
+  // The video cards name their healer by slug. See getHealerNames(); the
+  // offering and free-resource shelves bring their own names.
+  const { bySlug: healerNamesBySlug } = healerNames;
 
   // Prefer the subject's real display name ("EFT / Tapping") over a de-hyphenated
   // slug ("eft tapping"), which mangles anything with punctuation or casing.
   const title = subjects.find((s) => s.slug === slug)?.name || slug?.replace(/-/g, ' ') || 'Subject';
 
-  // The single `courses` table stores every paid offering, distinguished by
-  // product_type. Legacy rows predate the column, so an unset value is treated as
-  // a course (the admin default) rather than being silently dropped.
-  const courseOfferings = courses.filter((c) => !c.product_type || c.product_type === 'course');
-  const retreatOfferings = courses.filter((c) => c.product_type === 'retreat');
-  const downloadOfferings = courses.filter((c) => c.product_type === 'download');
-
   // Detail-page cards on this subject page carry the subject as their back-context.
   const fromSubject = `/subject/${slug}`;
 
-  const renderOffering = (item) => (
-    <OfferingCard
-      item={item}
-      healerName={healerNameById.get(item.healer_id)}
+  // Offerings and free resources load in the browser (SubjectPagedShelf); the
+  // server only counts them. The single `courses` table holds every paid
+  // offering, one shelf per product_type (utils/subjectShelves.js).
+  const pagedShelf = (kind, shelfTitle, subtitle) => (
+    <SubjectPagedShelf
+      kind={kind}
+      subjectSlug={slug}
+      total={counts[kind]}
+      title={shelfTitle}
+      subtitle={subtitle}
       from={fromSubject}
       fromTitle={title}
     />
@@ -85,8 +83,7 @@ export default async function SubjectPage({ params }) {
   const isEmpty =
     healers.length === 0 &&
     books.length === 0 &&
-    courses.length === 0 &&
-    freeResources.length === 0;
+    Object.values(counts).every((n) => !n);
 
   return (
     <div className="min-h-screen bg-[#0a0f1d] text-white font-sans">
@@ -141,19 +138,7 @@ export default async function SubjectPage({ params }) {
               itemWidthClass="w-[260px]"
             />
 
-            <ContentShelf
-              title="Free Resources"
-              subtitle="No Cost, No Catch"
-              items={freeResources}
-              renderItem={(item) => (
-                <FreeResourceCard
-                  item={item}
-                  healerName={healerNameById.get(item.healer_id)}
-                  from={fromSubject}
-                  fromTitle={title}
-                />
-              )}
-            />
+            {pagedShelf('free', 'Free Resources', 'No Cost, No Catch')}
 
             <ContentShelf
               title="Books & Literature"
@@ -163,26 +148,11 @@ export default async function SubjectPage({ params }) {
               itemWidthClass="w-[200px]"
             />
 
-            <ContentShelf
-              title="Courses & Programmes"
-              subtitle="Go Deeper"
-              items={courseOfferings}
-              renderItem={renderOffering}
-            />
+            {pagedShelf('course', 'Courses & Programmes', 'Go Deeper')}
 
-            <ContentShelf
-              title="Retreats & Live Events"
-              subtitle="In Person"
-              items={retreatOfferings}
-              renderItem={renderOffering}
-            />
+            {pagedShelf('retreat', 'Retreats & Live Events', 'In Person')}
 
-            <ContentShelf
-              title="Downloads & Audio"
-              subtitle="Take It With You"
-              items={downloadOfferings}
-              renderItem={renderOffering}
-            />
+            {pagedShelf('download', 'Downloads & Audio', 'Take It With You')}
 
             {/* Videos are the one high-volume collection — a popular subject
                 matches hundreds, self-healing over a thousand — so they are

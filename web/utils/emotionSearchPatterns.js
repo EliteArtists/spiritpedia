@@ -361,9 +361,13 @@ function buildPhraseRegex(phrase) {
   return new RegExp('(?:^|\\b)' + escapeForRegex(phrase) + '(?:\\b|$)');
 }
 
+/* Each phrase is also matched written as one word (owner, 10 Nov 2026):
+ * "selfharm", "killmyself", "enditall". */
+const joinedForms = (phrases) => phrases.filter((p) => /[\s-]/.test(p)).map((p) => p.replace(/[\s-]+/g, ''));
+
 const CRISIS_COMPILED = Object.entries(CRISIS_PATTERNS).map(([category, phrases]) => ({
   category,
-  regexes: phrases.map(buildPhraseRegex),
+  regexes: [...phrases, ...joinedForms(phrases)].map(buildPhraseRegex),
 }));
 
 /* Hyphens count as spaces here (owner, 10 Nov 2026): normaliseQuery keeps

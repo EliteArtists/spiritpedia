@@ -1,5 +1,6 @@
 import { supabase } from '../utils/supabase.js';
 import { byTier } from '../utils/listings.js';
+import { SHELVES, shelfQuery } from '../utils/subjectShelves.js';
 
 // Function to fetch all subjects from the Supabase database (used by homepage and static generator)
 export async function getAllSubjects() {
@@ -90,44 +91,31 @@ export async function getHealerNames() {
 // lifts the thousand-row ceiling that was silently costing self-healing 45 of
 // its 1,045 videos.
 //
-// Books, courses, free resources and healers are all paged (selectAllRows):
-// PostgREST caps a response at 1,000 rows and reports no error when it
-// truncates, and self-healing was already at 547 courses and 465 books.
-// Only what the cards read (BookCard, OfferingCard, FreeResourceCard,
-// ContentShelf's id): with every row paged in, `*` made /subject/meditation
-// (2,068 live courses, 1,022 free resources) far heavier than it needs to be.
+// OFFERINGS AND FREE RESOURCES ARE NOT HERE EITHER (owner, 10 Nov 2026).
+// /subject/meditation carried 2,000 live courses and 1,000 free resources in
+// its HTML; SubjectPagedShelf loads them in the browser a page at a time. Only
+// how many each shelf holds is counted here (`counts`), so an empty shelf is
+// not drawn and an empty subject still reads as empty.
+//
+// Books and healers are paged (selectAllRows): PostgREST caps a response at
+// 1,000 rows and reports no error when it truncates.
+// Only what BookCard and ContentShelf read.
 const BOOK_COLUMNS = 'id, slug, title, description, mock_cover_url';
-const COURSE_COLUMNS = 'id, slug, title, description, image_url, price, product_type, healer_id';
-const FREE_COLUMNS = 'id, slug, title, description, image_url, resource_type, healer_id';
 
 export async function getContentBySubjectSlug(subjectSlug) {
-  // EXPIRATION WINDOW — mirrors the homepage: a paid offering or free resource
-  // only surfaces while it is live (is_active, and either evergreen or not yet
-  // past its end date). Recomputed per request so the window rolls forward.
-  const today = new Date().toISOString().slice(0, 10);
-  const liveWindow = `end_date.is.null,end_date.gte.${today}`;
-
   // Every query issued concurrently — one round trip's latency for the whole page.
-  const [booksResult, healersResult, coursesResult, freeResourcesResult] =
-    await Promise.all([
-      selectAllRows('books', BOOK_COLUMNS, (q) => q.contains('subject_slugs', [subjectSlug])),
-      selectAllHealers('*', (q) => q.contains('subject_slugs', [subjectSlug])),
-      selectAllRows('courses', COURSE_COLUMNS, (q) =>
-        q.contains('subject_slugs', [subjectSlug]).eq('is_active', true).or(liveWindow)
-      ),
-      // NOTE: no is_featured filter here. That flag is a homepage curation
-      // control; on a subject page the visitor asked for this subject explicitly,
-      // so they should see every live free resource carrying the tag.
-      selectAllRows('free_resources', FREE_COLUMNS, (q) =>
-        q.contains('subject_slugs', [subjectSlug]).eq('is_active', true).or(liveWindow)
-      ),
-    ]);
+  const kinds = Object.keys(SHELVES);
+  const [booksResult, healersResult, ...countResults] = await Promise.all([
+    selectAllRows('books', BOOK_COLUMNS, (q) => q.contains('subject_slugs', [subjectSlug])),
+    selectAllHealers('*', (q) => q.contains('subject_slugs', [subjectSlug])),
+    ...kinds.map((kind) => shelfQuery(kind, subjectSlug, { columns: 'id', count: true })),
+  ]);
 
-  const results = [booksResult, healersResult, coursesResult, freeResourcesResult];
+  const results = [booksResult, healersResult, ...countResults];
   const failure = results.find((r) => r.error);
   if (failure) {
     console.error('Error in content query:', failure.error);
-    return { books: [], healers: [], courses: [], freeResources: [], places: {} };
+    return { books: [], healers: [], counts: {}, places: {} };
   }
 
   // Teachers in the site's tier order, then by name (owner, 10 Nov 2026); the
@@ -144,8 +132,7 @@ export async function getContentBySubjectSlug(subjectSlug) {
     books: booksResult.data,
     healers,
     places: Object.fromEntries((placeRows || []).map((p) => [p.id, p])),
-    courses: coursesResult.data,
-    freeResources: freeResourcesResult.data,
+    counts: Object.fromEntries(kinds.map((kind, i) => [kind, countResults[i].count || 0])),
   };
 }
 
