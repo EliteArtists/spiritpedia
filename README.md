@@ -455,8 +455,8 @@ None of these are secrets.
 
 | File / place | Holds | In git? |
 | :--- | :--- | :--- |
-| `web/.env.local` (points at **live**) | `NEXT_PUBLIC_SUPABASE_URL`, `NEXT_PUBLIC_SUPABASE_ANON_KEY`, `SUPABASE_SERVICE_ROLE_KEY`, `ADMIN_PASSWORD`, `ADMIN_NAME`, `RESEND_API_KEY`, `NEXT_PUBLIC_GA_MEASUREMENT_ID`, `JOURNEY_TEST_EMAIL`, `CRON_SECRET` | No (`.env*` in `web/.gitignore`) |
-| `web/.env.development.local` (points at **dev**; `next dev` loads it over `.env.local`) | `NEXT_PUBLIC_SUPABASE_URL`, `NEXT_PUBLIC_SUPABASE_ANON_KEY`, `SUPABASE_SERVICE_ROLE_KEY`, `RESEND_API_KEY`, `NEXT_PUBLIC_GA_MEASUREMENT_ID`, `FIREBASE_PROJECT_ID`, `FIREBASE_CLIENT_EMAIL`, `FIREBASE_PRIVATE_KEY` (the **dev** project `spiritpedia-dev-5e4d5`) | No |
+| `web/.env.local` (points at **live**) | `NEXT_PUBLIC_SUPABASE_URL`, `NEXT_PUBLIC_SUPABASE_ANON_KEY`, `SUPABASE_SERVICE_ROLE_KEY`, `ADMIN_PASSWORD`, `ADMIN_NAME`, `RESEND_API_KEY`, `NEXT_PUBLIC_GA_MEASUREMENT_ID`, `JOURNEY_TEST_EMAIL`, `CRON_SECRET`, `YOUTUBE_API_KEY` (YouTube Data API v3, Google Cloud project `spiritpedia-ad62b`; read by `scripts/` only, never by the site) | No (`.env*` in `web/.gitignore`) |
+| `web/.env.development.local` (points at **dev**; `next dev` loads it over `.env.local`) | `NEXT_PUBLIC_SUPABASE_URL`, `NEXT_PUBLIC_SUPABASE_ANON_KEY`, `SUPABASE_SERVICE_ROLE_KEY`, `RESEND_API_KEY`, `NEXT_PUBLIC_GA_MEASUREMENT_ID`, `FIREBASE_PROJECT_ID`, `FIREBASE_CLIENT_EMAIL`, `FIREBASE_PRIVATE_KEY` (the **dev** project `spiritpedia-dev-5e4d5`), `YOUTUBE_API_KEY` (the same key; scripts run with `--env dev` read it here) | No |
 | Vercel → `spiritpedia-e58y` → Settings → Environment Variables | Everything the live site needs: the Supabase three, `ADMIN_PASSWORD`, `ADMIN_NAME`, `RESEND_API_KEY`, `CRON_SECRET`, `NEXT_PUBLIC_GA_MEASUREMENT_ID`, `FIREBASE_PROJECT_ID` / `_CLIENT_EMAIL` / `_PRIVATE_KEY` (the **live** push service account lives only here), `AMAZON_TAG_US` / `_UK` / `_CA` / `_ES` / `_AU`, `JOURNEY_TEST_EMAIL` (Production and Preview), and `DISCOVERY_EDITIONS` once switched on | — |
 | `app/config/dev.json` | `APP_ENV`, `SUPABASE_URL`, `SUPABASE_ANON_KEY`, `API_BASE_URL` (dev; copy `dev.example.json`) | No (`app/.gitignore`) |
 | `app/config/prod.json` | The same four (live) plus `AMAZON_TAG_US` / `_UK` / `_CA` / `_ES` / `_AU` | **Yes, on purpose**: only public values |
@@ -3105,13 +3105,19 @@ they feed the Upcoming Retreats shelf (open job #24) and drop off when over.
 6. **Single names:** Judith Hanson Lasater.
 7. **Retry on another day** (never the same day): San Francisco Zen Center, the Sati
    Center, Centre Sivananda Paris, the Buddhist Society of Western Australia, Krishna
-   Kaur, Kathie and Paul Scott (the ingest's robots.txt request to quantumlife.ca failed).
+   Kaur, Kathie and Paul Scott (the ingest's robots.txt request to quantumlife.ca failed;
+   on the retry, look for a photo of both of them before using Paul's headshot).
    Sivananda Ashram Bahamas goes in once a usable photo loads.
 8. **Waiting:** Bodhi Be and Ally Bogard (YouTube avatars via the API); Yongey Mingyur
    Rinpoche (a clean contact route; decoded emails are never used); Aaravindha Himadra
    (a certain photo; use his contact form).
 
-**App 1.0.2** (owner, 10 Nov 2026; 1.0.1 is in review and stays as it is): the website's
+**App 1.0.2** (owner, 10 Nov 2026; 1.0.1 is in review and stays as it is; plan it as soon as
+1.0.1 is approved). Branch `release/1.0.2` (local, from `main`).
+**First item, done on the branch (71fe01c):** hyphens count as spaces in the crisis
+check (`emotion_safety.dart` → checkCrisis), as on the website since 10 Nov. The shared
+cases now pin "self-harm" as crisis, so **`flutter test` on `main` fails the safety test
+until this branch is merged**; on the branch it passes. Then the website's
 gap-check fixes, ported: Near You sorts and never filters, "Closest to you" is the full
 list (`shelf_rules.dart` nearYou/closest, `home_screen.dart`); subject-name search ignores
 spaces, hyphens and capitals (`content_search.dart`; the feelings normaliser stays as it
