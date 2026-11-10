@@ -164,7 +164,9 @@ the root README, "Test accounts must never cause an email".
 1. **Bump the build number** in `pubspec.yaml` (`version: 1.0.0+N`). Every
    TestFlight upload needs a new one.
 2. `flutter analyze` and `flutter test`, then check it in the simulator.
-3. `flutter build ipa --release --dart-define-from-file=config/prod.json`
+3. `tool/build_release.sh ios` (or `android`). It refuses to build unless
+   `config/prod.json` is there and complete, then runs
+   `flutter build ipa --release --dart-define-from-file=config/prod.json`.
 4. Check the IPA (unzip it): `CFBundleVersion` is N, and the entitlements say
    `aps-environment` **production**.
 5. Upload: either `open build/ios/archive/Runner.xcarchive` (Xcode adds it

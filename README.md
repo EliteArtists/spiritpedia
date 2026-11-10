@@ -1906,8 +1906,14 @@ A temporary integration test drives the real app (dev config) and prints
 
 ```bash
 cd app
-flutter build ipa --release --dart-define-from-file=config/prod.json
+tool/build_release.sh ios
 ```
+
+`tool/build_release.sh` (10 Nov 2026) is the only way to make a store build:
+it refuses unless `config/prod.json` is there with every key filled
+(APP_ENV prod, Supabase, website, the five AMAZON_TAG_* values) and always
+passes it, so a build can never ship without live data or untagged. It runs
+`flutter build ipa|appbundle --release --dart-define-from-file=config/prod.json`.
 
 This makes `build/ios/archive/Runner.xcarchive` and
 `build/ios/ipa/Spiritpedia.ipa`. Check the IPA:
@@ -1975,7 +1981,7 @@ email confirmed, deleted afterwards). Then **live**, checked read-only. Update
 
 ```bash
 cd app
-flutter build appbundle --release --dart-define-from-file=config/prod.json
+tool/build_release.sh android
 #   → build/app/outputs/bundle/release/app-release.aab, signed with the upload key
 ```
 
