@@ -15,12 +15,6 @@ import 'detail_providers.dart';
 import 'detail_widgets.dart';
 import '../../theme/layout.dart';
 
-/// The words the Associates Operating Agreement and FTC / UK ASA rules
-/// require wherever a tagged link appears — the website's wording.
-const amazonDisclosure =
-    'As an Amazon Associate, Spiritpedia earns from qualifying purchases. '
-    'It never changes what we recommend.';
-
 /// A book (web/app/books/[slug]/page.js).
 class BookScreen extends ConsumerWidget {
   const BookScreen({super.key, required this.slug, this.amazonTags});

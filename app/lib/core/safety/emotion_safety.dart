@@ -183,7 +183,14 @@ class EmotionSafety {
          for (final c in crisisCategories)
            (
              category: c.category,
-             regexes: [for (final p in c.phrases) _phraseRegex(p)],
+             // Each phrase is also matched written as one word, as on the
+             // website (owner, 10 Nov 2026): "selfharm", "killmyself".
+             regexes: [
+               for (final p in c.phrases) _phraseRegex(p),
+               for (final p in c.phrases)
+                 if (p.contains(RegExp(r'[\s-]')))
+                   _phraseRegex(p.replaceAll(RegExp(r'[\s-]+'), '')),
+             ],
            ),
        ],
        _ambiguousCompiled = [

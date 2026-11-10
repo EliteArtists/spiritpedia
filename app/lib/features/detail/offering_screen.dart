@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
+import '../../core/affiliate/amazon.dart';
+import '../../core/config.dart';
 import '../../core/format/dates.dart';
+import '../../core/links/open_link.dart';
 import '../../data/models.dart';
 import '../../data/providers.dart';
 import '../../shared/widgets/net_image.dart';
@@ -47,6 +50,9 @@ class OfferingScreen extends ConsumerWidget {
       shareTitle: (o) => o.title,
       builder: (context, o) {
         final type = _productTypes[o.productType] ?? _productTypes['course']!;
+        // An offering whose link is an Amazon product earns like a book
+        // (owner, 10 Nov 2026): the same tag, the same disclosure under it.
+        final amazon = amazonAffiliateUrl(o.url);
         return _OfferingLayout(
           badges: [
             _Pill(type.label, background: type.badge),
@@ -62,7 +68,8 @@ class OfferingScreen extends ConsumerWidget {
           imageUrl: o.imageUrl,
           description: o.description,
           ctaLabel: type.cta,
-          ctaUrl: o.url,
+          ctaUrl: amazon?.url ?? o.url,
+          amazonTagged: amazon?.tagged ?? false,
           missingCta: 'booking',
           subjects: o.subjectSlugs,
           reviews: offeringReviews(o.slug),
@@ -122,6 +129,7 @@ class _OfferingLayout extends ConsumerWidget {
     this.when,
     this.phase = DatePhase.undated,
     this.ends,
+    this.amazonTagged = false,
   });
 
   final List<Widget> badges;
@@ -131,6 +139,9 @@ class _OfferingLayout extends ConsumerWidget {
   final String? description;
   final String ctaLabel;
   final String? ctaUrl;
+
+  /// The call is a tagged Amazon link, so the disclosure goes under it.
+  final bool amazonTagged;
   final String missingCta;
   final List<String> subjects;
   final ReviewTarget reviews;
@@ -197,8 +208,27 @@ class _OfferingLayout extends ConsumerWidget {
                   foreground: SpColors.textMuted,
                   border: SpColors.border,
                 )
-              : OutboundButton(label: ctaLabel, url: ctaUrl!)
-        else
+              : OutboundButton(label: ctaLabel, url: ctaUrl!),
+        if (ctaUrl != null && amazonTagged)
+          Padding(
+            padding: const EdgeInsets.only(top: 14),
+            child: GestureDetector(
+              onTap: () => openExternal(
+                context,
+                '${AppConfig.siteUrl}/affiliate-disclosure',
+              ),
+              child: const Text(
+                amazonDisclosure,
+                key: ValueKey('amazon-disclosure'),
+                style: TextStyle(
+                  fontSize: 12,
+                  height: 1.5,
+                  color: SpColors.textFaint,
+                ),
+              ),
+            ),
+          ),
+        if (ctaUrl == null)
           Text(
             'Contact ${healer?.name ?? 'the healer'} directly for $missingCta information.',
             textAlign: TextAlign.center,
